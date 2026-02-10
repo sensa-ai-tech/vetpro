@@ -1,65 +1,146 @@
-import Image from "next/image";
+import Link from "next/link";
+import { db } from "@/db";
+import { diseases, speciesAffected } from "@/db/schema";
+import { eq } from "drizzle-orm";
+import SearchBar from "@/components/SearchBar";
+import DiseaseCard from "@/components/DiseaseCard";
 
-export default function Home() {
+const BODY_SYSTEMS = [
+  { id: "renal", label: "腎臟/泌尿", icon: "🫘" },
+  { id: "cardiac", label: "心臟", icon: "❤️" },
+  { id: "endocrine", label: "內分泌", icon: "🧬" },
+  { id: "gastrointestinal", label: "腸胃", icon: "🫁" },
+  { id: "hematology", label: "血液/免疫", icon: "🩸" },
+  { id: "dermatology", label: "皮膚", icon: "🧴" },
+  { id: "neurology", label: "神經", icon: "🧠" },
+  { id: "respiratory", label: "呼吸", icon: "💨" },
+  { id: "infectious", label: "傳染病", icon: "🦠" },
+  { id: "oncology", label: "腫瘤", icon: "🔬" },
+  { id: "orthopedic", label: "骨科", icon: "🦴" },
+  { id: "ophthalmology", label: "眼科", icon: "👁️" },
+];
+
+function getAllDiseases() {
+  const allDiseases = db.select().from(diseases).all();
+  return allDiseases.map((d) => {
+    const speciesList = db
+      .select()
+      .from(speciesAffected)
+      .where(eq(speciesAffected.diseaseId, d.id))
+      .all();
+    return {
+      ...d,
+      species: speciesList.map((s) => s.speciesCommon),
+    };
+  });
+}
+
+export default function HomePage() {
+  const allDiseases = getAllDiseases();
+
+  // Count by body system
+  const systemCounts: Record<string, number> = {};
+  for (const d of allDiseases) {
+    systemCounts[d.bodySystem] = (systemCounts[d.bodySystem] || 0) + 1;
+  }
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="space-y-10">
+      {/* Hero section */}
+      <section className="py-8 text-center">
+        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
+          <span className="text-primary">VetPro</span> 獸醫百科
+        </h1>
+        <p className="mx-auto mt-3 max-w-xl text-muted">
+          結構化獸醫疾病知識庫 — 彙整 PubMed、ACVIM、WSAVA、IRIS
+          等開源資源，持續自動追蹤最新文獻與 guidelines。
+        </p>
+
+        {/* Search bar */}
+        <div className="mx-auto mt-6 flex justify-center">
+          <SearchBar autoFocus />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+
+        {/* Stats */}
+        <div className="mt-4 flex justify-center gap-6 text-sm text-muted">
+          <span>
+            <strong className="text-foreground">{allDiseases.length}</strong> 個疾病
+          </span>
+          <span>
+            <strong className="text-foreground">
+              {Object.keys(systemCounts).length}
+            </strong>{" "}
+            個專科
+          </span>
+          <span>
+            <strong className="text-foreground">
+              {new Set(allDiseases.flatMap((d) => d.species)).size}
+            </strong>{" "}
+            個物種
+          </span>
+        </div>
+      </section>
+
+      {/* Browse by body system */}
+      <section>
+        <h2 className="mb-4 text-lg font-semibold">依專科瀏覽</h2>
+        <div className="grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-6">
+          {BODY_SYSTEMS.map((sys) => (
+            <Link
+              key={sys.id}
+              href={`/browse?system=${sys.id}`}
+              className="flex flex-col items-center gap-1 rounded-lg border border-border bg-card p-3 text-center transition-all hover:border-primary/30 hover:shadow-sm"
+            >
+              <span className="text-2xl">{sys.icon}</span>
+              <span className="text-xs font-medium">{sys.label}</span>
+              {systemCounts[sys.id] && (
+                <span className="text-xs text-muted">
+                  {systemCounts[sys.id]} 疾病
+                </span>
+              )}
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Quick species filter */}
+      <section>
+        <div className="mb-4 flex items-center gap-3">
+          <h2 className="text-lg font-semibold">快速篩選</h2>
+          <div className="flex gap-2">
+            <Link
+              href="/browse?species=dog"
+              className="rounded-full border border-border px-3 py-1 text-sm transition-colors hover:border-primary hover:text-primary"
+            >
+              🐕 犬
+            </Link>
+            <Link
+              href="/browse?species=cat"
+              className="rounded-full border border-border px-3 py-1 text-sm transition-colors hover:border-primary hover:text-primary"
+            >
+              🐈 貓
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* All diseases */}
+      <section>
+        <h2 className="mb-4 text-lg font-semibold">疾病列表</h2>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {allDiseases.map((d) => (
+            <DiseaseCard
+              key={d.slug}
+              slug={d.slug}
+              nameEn={d.nameEn}
+              nameZh={d.nameZh}
+              bodySystem={d.bodySystem}
+              description={d.description}
+              species={d.species}
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          ))}
         </div>
-      </main>
+      </section>
     </div>
   );
 }
