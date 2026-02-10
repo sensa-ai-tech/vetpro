@@ -1,0 +1,156 @@
+slug: chronic-kidney-disease
+nameEn: Chronic Kidney Disease
+nameZh: 慢性腎臟病
+bodySystem: renal
+description: 腎臟功能進行性且不可逆的喪失，為老年犬貓最常見的腎臟疾病。
+
+aliases:
+  - { alias: CKD, language: en }
+  - { alias: Chronic Renal Failure, language: en }
+  - { alias: CRF, language: en }
+  - { alias: 慢性腎衰竭, language: zh }
+
+species:
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 老年貓最常見死因，15 歲以上盛行率 >30%。
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 好發品種包括 CKCS、Cocker Spaniel、Bull Terrier。
+
+etiology:
+  categories:
+    - name: 先天性/遺傳性
+      examples:
+        - 多囊腎病 (PKD，波斯貓)
+        - 腎發育不全
+        - 類澱粉沉著症 (Abyssinian、Shar-Pei)
+    - name: 後天性
+      examples:
+        - 慢性腎小管間質性腎炎 (貓最常見)
+        - 腎絲球腎炎
+        - 腎盂腎炎
+        - 腎結石/輸尿管結石
+        - 腫瘤 (淋巴瘤)
+        - 高血壓性腎病
+    - name: 特發性
+      examples:
+        - 貓常無法找到明確病因
+
+clinicalSigns:
+  early:
+    - 多尿多渴 (PU/PD)
+    - 體重減輕
+    - 食慾下降
+  progressive:
+    - 嘔吐
+    - 口腔潰瘍
+    - 脫水
+    - 肌肉流失
+    - 被毛品質變差
+  late:
+    - 尿毒危象
+    - 痙攣
+    - 嚴重貧血 (非再生性)
+    - 代謝性酸中毒
+
+diagnosis:
+  primaryTests:
+    - name: Creatinine
+      notes: ">75% 腎元喪失才會升高；受肌肉量影響"
+    - name: SDMA
+      notes: "約 40% 腎元喪失即升高，不受肌肉量影響"
+    - name: BUN
+      notes: "受飲食、水合狀態、消化道出血影響"
+    - name: 尿液分析
+      notes: "USG 貓 <1.035、犬 <1.030 提示濃縮能力不足；UPC 評估蛋白尿"
+  imaging:
+    - name: 腹部超音波
+      notes: "小且不規則腎臟 (慢性)；評估結石、腫瘤、水腎"
+    - name: X 光
+      notes: "腎臟大小評估；腎結石"
+  additional:
+    - 血壓測量
+    - UPC ratio
+    - 電解質 (K+、磷、鈣)
+    - CBC (非再生性貧血)
+    - T4 (貓 — 排除甲亢掩蓋 CKD)
+
+stagingSystem:
+  name: IRIS CKD Staging
+  sourceUrl: https://www.iris-kidney.com/iris-staging-system
+  stages:
+    - stage: 1
+      label: 非氮血症期
+      creatinineDog: "<1.4 mg/dL (<125 μmol/L)"
+      creatinineCat: "<1.6 mg/dL (<140 μmol/L)"
+      sdma: "<18 μg/dL"
+      description: 存在腎臟異常但無氮血症
+    - stage: 2
+      label: 輕度腎性氮血症
+      creatinineDog: "1.4-2.8 mg/dL (125-250 μmol/L)"
+      creatinineCat: "1.6-2.8 mg/dL (140-250 μmol/L)"
+      sdma: "18-35 μg/dL"
+      description: 可能出現輕微臨床症狀
+    - stage: 3
+      label: 中度腎性氮血症
+      creatinineDog: "2.9-5.0 mg/dL (251-440 μmol/L)"
+      creatinineCat: "2.9-5.0 mg/dL (251-440 μmol/L)"
+      sdma: "36-54 μg/dL"
+      description: 預期出現全身性臨床症狀
+    - stage: 4
+      label: 重度腎性氮血症
+      creatinineDog: ">5.0 mg/dL (>440 μmol/L)"
+      creatinineCat: ">5.0 mg/dL (>440 μmol/L)"
+      sdma: ">54 μg/dL"
+      description: 尿毒危象風險高
+  substaging:
+    proteinuria:
+      - { category: 無蛋白尿, upcDog: "<0.2", upcCat: "<0.2" }
+      - { category: 邊緣性蛋白尿, upcDog: "0.2-0.5", upcCat: "0.2-0.4" }
+      - { category: 蛋白尿, upcDog: ">0.5", upcCat: ">0.4" }
+    bloodPressure:
+      - { category: 正常血壓, systolic: "<140 mmHg", risk: 低 }
+      - { category: 高血壓前期, systolic: "140-159 mmHg", risk: 低-中 }
+      - { category: 高血壓, systolic: "160-179 mmHg", risk: 中-高 }
+      - { category: 嚴重高血壓, systolic: "≥180 mmHg", risk: 高 }
+
+treatment:
+  principles:
+    - 治療為支持性，目標在減緩進展
+    - 根據 IRIS 分期針對各併發症處理
+  byStage:
+    stage1_2:
+      - 腎臟處方飲食 (限制磷與蛋白質)
+      - 確保充足水分攝取
+      - 蛋白尿管理 (ACEi：benazepril、enalapril)
+      - 定期監測血壓
+    stage3_4:
+      - 上述所有措施
+      - 磷結合劑 (若飲食控制仍高磷血症)
+      - 止吐藥 (maropitant、ondansetron)
+      - 食慾促進劑 (mirtazapine)
+      - 皮下輸液
+      - 紅血球生成素製劑 (嚴重貧血)
+      - 補鉀 (若低鉀血症)
+      - 矯正代謝性酸中毒
+
+prognosis: IRIS Stage 1-2 存活時間中位數可達數年；Stage 3-4 預後較差，中位存活時間數月至一年。早期診斷與積極管理可顯著延長存活時間。
+
+ontologyMappings:
+  - source: MONDO
+    code: "MONDO:0005300"
+    label: chronic kidney disease
+    confidence: exact
+
+guidelineRefs:
+  - sourceOrg: IRIS
+    title: IRIS CKD Staging and Treatment Guidelines
+    url: https://www.iris-kidney.com/iris-guidelines-1
+    type: guideline
+
+pubmedQueries:
+  - query: '"chronic kidney disease" AND (cat OR feline OR dog OR canine) AND "consensus statement"'
+    frequency: monthly

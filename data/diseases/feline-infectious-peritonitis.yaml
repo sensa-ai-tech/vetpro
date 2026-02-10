@@ -1,0 +1,101 @@
+slug: feline-infectious-peritonitis
+nameEn: Feline Infectious Peritonitis
+nameZh: 貓傳染性腹膜炎
+bodySystem: infectious
+description: 由貓冠狀病毒 (FCoV) 突變株引起的致命性全身性免疫介導疾病。近年抗病毒治療帶來革命性改變。
+
+aliases:
+  - { alias: FIP, language: en }
+  - { alias: 貓傳腹, language: zh }
+
+species:
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 好發於幼貓 (<2 歲) 及多貓家庭/收容所環境。純種貓風險較高。
+
+etiology:
+  categories:
+    - name: 病毒性
+      examples:
+        - 貓冠狀病毒 (FCoV) 體內突變為 FIPV
+        - 突變導致病毒可在巨噬細胞內複製
+        - 引發血管周圍肉芽腫性炎症與免疫複合體沉積
+    - name: 風險因素
+      examples:
+        - 多貓環境 (FCoV 感染率高)
+        - 幼齡 (<2 歲) 或老年 (>10 歲)
+        - 免疫抑制 (FeLV、FIV 共感染)
+        - 緊迫 (手術、搬家、新貓引入)
+
+clinicalSigns:
+  early:
+    - 反覆發燒 (對抗生素無反應)
+    - 食慾下降
+    - 體重減輕
+    - 嗜睡
+  progressive:
+    - 滲出型 (wet form)：腹水、胸水
+    - 非滲出型 (dry form)：肉芽腫病變 (眼睛、腎臟、肝臟、CNS)
+    - 混合型
+    - 黃疸
+    - 眼部病變 (前葡萄膜炎、視網膜血管炎)
+  late:
+    - 神經症狀 (步態不穩、癲癇、性格改變)
+    - 嚴重腹水/胸水導致呼吸困難
+    - 多器官衰竭
+
+diagnosis:
+  primaryTests:
+    - name: 積液分析
+      notes: "高蛋白 (>3.5 g/dL)、低細胞數、白蛋白/球蛋白比 <0.4。Rivalta test 陽性"
+    - name: 積液 FCoV RT-PCR
+      notes: "敏感度高，為確認滲出型 FIP 的重要工具"
+    - name: 血清生化
+      notes: "高球蛋白血症 (尤其 γ-globulin)、A/G ratio <0.8、高膽紅素"
+  imaging:
+    - name: 腹部超音波
+      notes: "腹水、腎臟/肝臟/腸繫膜淋巴結肉芽腫病變"
+    - name: MRI
+      notes: "神經型 FIP：腦膜增強、室管膜炎、腦積水"
+  additional:
+    - 免疫組織化學 (FCoV 抗原陽性 — 金標準但需組織樣本)
+    - 血清 FCoV 抗體效價 (高效價提示但非確診)
+    - AGP (Alpha-1 acid glycoprotein，急性期蛋白)
+    - CBC (淋巴球減少、非再生性貧血)
+    - 眼科檢查
+
+treatment:
+  principles:
+    - GS-441524 及其類似物徹底改變了 FIP 的預後
+    - 早期診斷早期治療
+    - 療程通常 12 週 (84 天)
+  medications:
+    - name: GS-441524
+      dose: "滲出型 4 mg/kg SC SID；非滲出型 6 mg/kg；眼型 8 mg/kg；神經型 10 mg/kg"
+      notes: 注射劑型。療程 84 天。注射部位反應常見
+    - name: Molnupiravir (EIDD-2801)
+      dose: "口服替代方案，劑量因製劑而異"
+      notes: 口服方便但效果相關研究仍在進行中
+    - name: GC376 (蛋白酶抑制劑)
+      dose: "15 mg/kg SC BID"
+      notes: 可與 GS-441524 合併用於難治型
+  general:
+    - 支持性治療 (營養支持、止吐)
+    - 腹水/胸水引流 (呼吸窘迫時)
+    - 定期監測 (體重、血球蛋白比、AGP)
+    - 療程結束後追蹤 3 個月觀察復發
+
+emergencyNotes: 嚴重胸水導致呼吸窘迫時需緊急胸腔穿刺引流。避免使用免疫抑制劑（類固醇僅在確診前短期使用）。
+
+prognosis: 未治療幾乎 100% 致死。GS-441524 治療緩解率約 80-90%。神經型預後較差 (緩解率約 60-70%)。復發率約 10-15%。
+
+guidelineRefs:
+  - sourceOrg: ABCD
+    title: "ABCD Guidelines on FIP (European Advisory Board on Cat Diseases)"
+    url: https://www.abcdcatsvets.org/feline-infectious-peritonitis/
+    type: guideline
+
+pubmedQueries:
+  - query: '"feline infectious peritonitis" AND ("GS-441524" OR "antiviral" OR "treatment")'
+    frequency: monthly

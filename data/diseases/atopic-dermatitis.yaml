@@ -1,0 +1,116 @@
+slug: atopic-dermatitis
+nameEn: Atopic Dermatitis
+nameZh: 異位性皮膚炎
+bodySystem: dermatology
+description: 遺傳易感個體對環境過敏原產生的慢性搔癢性皮膚病，為犬第二常見的過敏性皮膚病。
+
+aliases:
+  - { alias: CAD, language: en }
+  - { alias: Canine Atopic Dermatitis, language: en }
+  - { alias: Atopy, language: en }
+  - { alias: 犬異位性皮膚炎, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 盛行率約 10-15%。好發品種：French Bulldog、Labrador、Golden Retriever、German Shepherd、West Highland White Terrier。通常 6 個月至 3 歲間發病。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓較少確診，臨床表現不典型 (過度舔毛、粟粒性皮膚炎、嗜酸球性肉芽腫複合體)。
+
+etiology:
+  categories:
+    - name: 遺傳因素
+      examples:
+        - 皮膚屏障功能異常 (fillagrin 缺陷)
+        - Th2 免疫反應偏向
+        - 品種遺傳傾向
+    - name: 環境過敏原
+      examples:
+        - 塵蟎 (Dermatophagoides spp.)
+        - 花粉 (草、樹、雜草)
+        - 黴菌孢子
+        - 動物皮屑
+    - name: 加重因素
+      examples:
+        - 繼發性細菌/酵母菌感染
+        - 跳蚤過敏 (同時存在)
+        - 食物不良反應 (需排除)
+
+clinicalSigns:
+  early:
+    - 搔癢 (面部、耳朵、腋下、腹部、指間)
+    - 紅斑
+    - 反覆外耳炎
+  progressive:
+    - 脫毛 (搔抓/舔毛)
+    - 皮膚色素沉著
+    - 苔蘚化 (皮膚增厚)
+    - 反覆皮膚感染 (細菌性膿皮症)
+    - 反覆 Malassezia 感染
+  late:
+    - 慢性皮膚增厚與色素沉著
+    - 嚴重影響生活品質
+    - 繼發性行為問題
+
+diagnosis:
+  primaryTests:
+    - name: 臨床診斷 (排除法)
+      notes: "符合 Favrot's criteria（≥5/8 項即高度提示 CAD）"
+    - name: 排除跳蚤過敏
+      notes: "嚴格除蚤試驗至少 8 週"
+    - name: 排除食物不良反應
+      notes: "食物排除試驗 8-12 週 (水解蛋白或新型蛋白飲食)"
+  imaging: []
+  additional:
+    - 皮膚刮搔 (排除疥癬、毛囊蟲)
+    - 皮膚細胞學 (評估繼發感染)
+    - 過敏原特異性 IgE 檢測 (用於減敏治療選擇，非診斷用)
+    - 皮內過敏原測試 (金標準，用於減敏治療)
+
+treatment:
+  principles:
+    - 多模式治療策略
+    - 控制搔癢 + 修復皮膚屏障 + 管理繼發感染
+    - 長期管理，非治癒
+  medications:
+    - name: Oclacitinib (Apoquel)
+      dose: "0.4-0.6 mg/kg PO BID × 14 天，後改 SID"
+      notes: JAK 抑制劑，快速止癢。>12 月齡犬使用
+    - name: Lokivetmab (Cytopoint)
+      dose: "2 mg/kg SC 每 4-8 週"
+      notes: 抗 IL-31 單株抗體注射。安全性高，適合不易投藥的犬
+    - name: Cyclosporine
+      dose: "5 mg/kg PO SID × 4-6 週，後嘗試減量"
+      notes: 效果較慢 (4-6 週)，可能有腸胃副作用
+    - name: 短期 glucocorticoids
+      dose: "Prednisolone 0.5-1 mg/kg PO SID × 5-7 天後遞減"
+      notes: 急性發作短期使用，避免長期依賴
+  general:
+    - 過敏原特異性免疫治療 (ASIT/減敏療法) — 唯一可能改變疾病進程的治療
+    - 頻繁洗浴 (含藥用洗劑)
+    - 皮膚屏障修復 (phytosphingosine、ceramide 產品)
+    - 必需脂肪酸補充
+    - 環境過敏原控制 (減少塵蟎暴露)
+    - 繼發感染治療 (局部/全身抗生素或抗黴菌)
+
+prognosis: 不可治癒但可良好控制。多數犬在適當多模式治療下生活品質良好。減敏療法成功率約 60-70%。
+
+ontologyMappings:
+  - source: MONDO
+    code: "MONDO:0004980"
+    label: atopic dermatitis
+    confidence: exact
+
+guidelineRefs:
+  - sourceOrg: ICADA
+    title: "International Committee on Allergic Diseases of Animals (ICADA) Guidelines"
+    url: https://pubmed.ncbi.nlm.nih.gov/26183751/
+    type: guideline
+    pmid: "26183751"
+
+pubmedQueries:
+  - query: '"atopic dermatitis" AND (dog OR canine) AND ("guidelines" OR "consensus")'
+    frequency: monthly

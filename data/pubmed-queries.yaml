@@ -1,0 +1,41 @@
+# 全域 PubMed 搜尋策略
+# 由 GitHub Actions 每週執行，搜尋新發表的獸醫 guidelines 與 consensus statements
+
+globalQueries:
+  - name: acvim_consensus
+    query: '"ACVIM consensus statement"[Title/Abstract]'
+    frequency: weekly
+    sourceOrg: ACVIM
+
+  - name: wsava_guidelines
+    query: '"WSAVA" AND "guidelines"[Title/Abstract] AND (dog OR cat OR canine OR feline)'
+    frequency: monthly
+    sourceOrg: WSAVA
+
+  - name: veterinary_systematic_reviews
+    query: '"systematic review"[Publication Type] AND (veterinary OR "small animal" OR "companion animal")'
+    frequency: monthly
+
+  - name: iris_kidney
+    query: '"IRIS" AND ("kidney disease" OR "renal") AND (cat OR dog OR feline OR canine)'
+    frequency: monthly
+    sourceOrg: IRIS
+
+  - name: aaha_guidelines
+    query: '"AAHA" AND "guidelines"[Title/Abstract]'
+    frequency: monthly
+    sourceOrg: AAHA
+
+  - name: isfm_guidelines
+    query: '"ISFM" AND ("guidelines" OR "consensus") AND (cat OR feline)'
+    frequency: monthly
+    sourceOrg: ISFM
+
+  - name: acvd_guidelines
+    query: '"ACVD" AND ("guidelines" OR "consensus" OR "task force")'
+    frequency: monthly
+    sourceOrg: ACVD
+
+  - name: veterinary_evidence_based
+    query: '"evidence-based" AND "veterinary" AND ("practice guidelines" OR "clinical practice")'
+    frequency: monthly

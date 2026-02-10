@@ -1,0 +1,112 @@
+slug: diabetes-mellitus
+nameEn: Diabetes Mellitus
+nameZh: 糖尿病
+bodySystem: endocrine
+description: 胰島素分泌不足或作用異常導致的慢性高血糖症。犬以第一型為主，貓以第二型為主。
+
+aliases:
+  - { alias: DM, language: en }
+  - { alias: Sugar Diabetes, language: en }
+  - { alias: 糖尿, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 多為第一型 (免疫介導性 β 細胞破壞)。好發於 Samoyed、Australian Terrier、Poodle。未絕育母犬風險較高。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 多為第二型 (胰島素阻抗 + β 細胞功能障礙)。肥胖是最重要風險因子。約 30-50% 的貓可達到臨床緩解。
+
+etiology:
+  categories:
+    - name: 第一型 (犬為主)
+      examples:
+        - 免疫介導性 β 細胞破壞
+        - 胰臟炎繼發
+        - 特發性 β 細胞喪失
+    - name: 第二型 (貓為主)
+      examples:
+        - 胰島素阻抗 (肥胖、類固醇)
+        - β 細胞功能障礙 (類澱粉沉著)
+        - 葡萄糖毒性
+    - name: 繼發性
+      examples:
+        - 腎上腺皮質功能亢進 (庫欣氏症)
+        - 肢端肥大症 (貓)
+        - 黃體期/懷孕 (犬)
+        - 醫源性 (長期類固醇)
+
+clinicalSigns:
+  early:
+    - 多尿多渴 (PU/PD)
+    - 多食
+    - 體重減輕
+  progressive:
+    - 肌肉流失
+    - 被毛品質變差
+    - 肝腫大
+    - 後肢足底著地姿勢 (貓，糖尿病性神經病變)
+  late:
+    - 糖尿病酮酸中毒 (DKA)
+    - 嘔吐、虛弱、脫水
+    - 黃疸 (肝脂肪變性)
+
+diagnosis:
+  primaryTests:
+    - name: 血糖
+      notes: "持續性高血糖 >200 mg/dL (犬) 或 >300 mg/dL (貓，需排除壓力性高血糖)"
+    - name: Fructosamine
+      notes: "反映過去 2-3 週平均血糖，不受壓力影響。>400 μmol/L 支持糖尿病診斷"
+    - name: 尿液分析
+      notes: "持續性糖尿。可能伴隨酮尿"
+  imaging:
+    - name: 腹部超音波
+      notes: "評估胰臟 (胰臟炎)、腎上腺 (庫欣)、肝臟"
+  additional:
+    - CBC/Chemistry profile
+    - 血清脂肪酶/胰臟特異性脂肪酶 (Spec cPL/fPL)
+    - T4 (貓)
+    - 尿液培養 (UTI 篩檢)
+    - 腎上腺功能檢測 (若懷疑庫欣)
+
+treatment:
+  principles:
+    - 犬：終生胰島素治療為主
+    - 貓：胰島素 + 低碳水化合物飲食，目標臨床緩解
+    - 控制併發疾病
+  medications:
+    - name: Insulin (犬)
+      dose: "Vetsulin (Lente) 0.25-0.5 U/kg SC BID 或 NPH 0.5 U/kg SC BID"
+      notes: 起始低劑量，依血糖曲線調整
+    - name: Insulin (貓)
+      dose: "Glargine (Lantus) 1-2 U/cat SC BID 或 PZI 1-2 U/cat SC BID"
+      notes: Glargine 緩解率較高。低碳水飲食搭配效果最佳
+  general:
+    - 飲食管理 (犬：高纖維；貓：低碳水化合物高蛋白)
+    - 定期血糖曲線監測
+    - 居家尿糖/尿酮監測
+    - 未絕育母犬應進行卵巢子宮切除術
+    - 減重 (肥胖貓)
+
+emergencyNotes: 糖尿病酮酸中毒 (DKA) 為急症，需住院治療：IV 輸液矯正脫水與電解質、regular insulin CRI、密切監測血糖與電解質。
+
+prognosis: 犬 DM 經良好控制可維持良好生活品質數年。貓 DM 約 30-50% 可達臨床緩解。DKA 住院死亡率約 20-30%。
+
+ontologyMappings:
+  - source: MONDO
+    code: "MONDO:0005015"
+    label: diabetes mellitus
+    confidence: exact
+
+guidelineRefs:
+  - sourceOrg: AAHA
+    title: "AAHA Diabetes Management Guidelines for Dogs and Cats (2018)"
+    url: https://pubmed.ncbi.nlm.nih.gov/29314873/
+    type: guideline
+    pmid: "29314873"
+
+pubmedQueries:
+  - query: '"diabetes mellitus" AND (dog OR cat OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

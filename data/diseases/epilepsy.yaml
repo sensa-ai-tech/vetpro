@@ -1,0 +1,103 @@
+slug: epilepsy
+nameEn: Idiopathic Epilepsy
+nameZh: 特發性癲癇
+bodySystem: neurology
+description: 原因不明的反覆性癲癇發作，為犬最常見的慢性神經系統疾病。
+
+aliases:
+  - { alias: IE, language: en }
+  - { alias: Primary Epilepsy, language: en }
+  - { alias: Genetic Epilepsy, language: en }
+  - { alias: 原發性癲癇, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 盛行率約 0.5-5%。好發品種：Labrador、German Shepherd、Beagle、Belgian Tervuren、Border Collie。通常 6 個月至 6 歲間首次發作。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓較少診斷為特發性癲癇，需積極排除結構性原因 (腦膜瘤、FIP、海馬硬化)。
+
+etiology:
+  categories:
+    - name: 遺傳性
+      examples:
+        - 多基因遺傳模式 (多數品種)
+        - 已知基因突變 (Lagotto Romagnolo — LGI2 基因)
+    - name: 特發性
+      examples:
+        - 未知原因但疑似遺傳背景
+        - 排除結構性與代謝性原因後診斷
+
+clinicalSigns:
+  early:
+    - 全身性強直陣攣發作 (最常見)
+    - 發作前先兆 (不安、躲藏、尋找主人)
+    - 發作後期 (迷失方向、暫時失明、過度飲水)
+  progressive:
+    - 發作頻率增加
+    - 局灶性發作 (面部抽搐、咀嚼動作、四肢划水)
+    - 叢集性發作 (24 小時內 ≥2 次)
+  late:
+    - 癲癇重積狀態 (>5 分鐘持續發作)
+    - 藥物難治性癲癇
+    - 認知功能下降
+
+diagnosis:
+  primaryTests:
+    - name: 完整神經學檢查
+      notes: "發作間期應為正常 (特發性癲癇)"
+    - name: CBC + 生化 + 電解質
+      notes: "排除代謝性原因 (低血糖、肝腦症、低鈣血症)"
+    - name: MRI
+      notes: "排除結構性腦部疾病 (腫瘤、腦炎、水腦)。特發性癲癇 MRI 應為正常"
+  imaging:
+    - name: 腦部 MRI
+      notes: "金標準影像學檢查。需全身麻醉"
+  additional:
+    - 腦脊髓液分析 (排除腦炎)
+    - 空腹膽汁酸 (排除肝門體循環分流)
+    - 甲狀腺功能 (犬)
+    - 血壓測量
+    - 糞便/血液寄生蟲檢查
+
+treatment:
+  principles:
+    - 不是所有癲癇犬都需要抗癲癇藥物
+    - 開始治療指標：≥2 次發作/6 個月、叢集性發作、癲癇重積狀態
+    - 目標：減少發作頻率 ≥50%，而非完全消除
+  medications:
+    - name: Phenobarbital
+      dose: "2.5-3 mg/kg PO BID"
+      notes: 一線藥物。需定期監測血中濃度 (目標 20-35 μg/mL) 與肝功能
+    - name: Levetiracetam (Keppra)
+      dose: "20 mg/kg PO TID (或緩釋劑型 30 mg/kg BID)"
+      notes: 副作用少，安全性高。可作為一線或加購藥物。可能出現蜜月期效應
+    - name: Potassium bromide (KBr)
+      dose: "犬 30-40 mg/kg PO SID (負載：40-60 mg/kg/day × 5 天)"
+      notes: 常與 phenobarbital 合併使用。貓禁用 (引起哮喘)。血中半衰期很長
+    - name: Imepitoin (Pexion)
+      dose: "10-30 mg/kg PO BID"
+      notes: 歐洲核准用於犬特發性癲癇。對輕度癲癇效果尚可
+  general:
+    - 癲癇重積狀態急救：Diazepam 0.5-1 mg/kg IV 或經直腸、Midazolam 0.2 mg/kg IV/IM/IN
+    - 家庭急救教育 (經直腸 diazepam 或經鼻 midazolam)
+    - 癲癇日記記錄
+    - 定期血藥濃度監測
+
+emergencyNotes: 癲癇重積狀態為急症。Diazepam 0.5-1 mg/kg IV (可重複 2-3 次)。無效時使用 phenobarbital 16 mg/kg IV 緩慢推注或 levetiracetam 60 mg/kg IV。考慮 propofol CRI。
+
+prognosis: 約 15-30% 為藥物難治性。多數犬在治療下生活品質可接受。叢集性發作與早期發病的犬預後較差。
+
+guidelineRefs:
+  - sourceOrg: IVETF
+    title: "IVETF Consensus Statements on Canine Epilepsy"
+    url: https://pubmed.ncbi.nlm.nih.gov/25913458/
+    type: consensus
+    pmid: "25913458"
+
+pubmedQueries:
+  - query: '"idiopathic epilepsy" AND dog AND ("consensus" OR "guidelines")'
+    frequency: monthly

@@ -1,0 +1,95 @@
+slug: pancreatitis
+nameEn: Pancreatitis
+nameZh: 胰臟炎
+bodySystem: gastrointestinal
+description: 胰臟自體消化引起的炎症反應，分為急性與慢性。犬以急性為主，貓以慢性居多。
+
+aliases:
+  - { alias: 胰腺炎, language: zh }
+  - { alias: Acute Pancreatitis, language: en }
+  - { alias: Chronic Pancreatitis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 急性壞死性胰臟炎較常見。好發於中老年犬、肥胖犬、Miniature Schnauzer。高脂飲食為重要誘因。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 慢性低度胰臟炎較常見。常與 IBD、膽管炎並存 (triaditis)。臨床表現不典型。
+
+etiology:
+  categories:
+    - name: 犬常見病因
+      examples:
+        - 高脂飲食/食物不慎
+        - 高三酸甘油酯血症 (Schnauzer)
+        - 藥物 (L-asparaginase、azathioprine、鉀鹽)
+        - 內分泌疾病 (庫欣、甲低、DM)
+        - 特發性 (多數)
+    - name: 貓常見病因
+      examples:
+        - 多為特發性
+        - 與 IBD/膽管炎相關 (triaditis)
+        - 感染性 (弓蟲、FIP)
+        - 創傷
+
+clinicalSigns:
+  early:
+    - 嘔吐 (犬最常見；貓僅約 35%)
+    - 食慾下降
+    - 腹痛 (犬祈禱姿勢；貓不易辨識)
+  progressive:
+    - 下痢
+    - 脫水
+    - 發燒或低體溫
+    - 嗜睡
+    - 黃疸 (膽管阻塞或肝臟受累)
+  late:
+    - 全身性炎症反應 (SIRS)
+    - DIC
+    - 多器官衰竭
+    - 休克
+
+diagnosis:
+  primaryTests:
+    - name: Spec cPL / Spec fPL
+      notes: "物種特異性胰臟脂肪酶，敏感度與特異度最高。犬 >400 μg/L、貓 >5.4 μg/L 提示胰臟炎"
+    - name: SNAP cPL / fPL
+      notes: "院內快速測試，陰性預測值高，適合排除診斷"
+  imaging:
+    - name: 腹部超音波
+      notes: "胰臟腫大、低迴音、胰周脂肪高迴音、胰周積液。犬敏感度約 68%，貓較低"
+  additional:
+    - CBC (嗜中性球升高、左移)
+    - 生化 (肝指數升高、高膽紅素、電解質異常)
+    - 凝血功能 (若懷疑 DIC)
+
+treatment:
+  principles:
+    - 支持性治療為主
+    - 矯正脫水與電解質異常
+    - 止痛為重點
+    - 盡早恢復腸道營養
+  general:
+    - IV 輸液治療 (矯正脫水)
+    - 止痛 (buprenorphine、methadone；CRI fentanyl、lidocaine、ketamine 用於重症)
+    - 止吐 (maropitant 1 mg/kg SC SID)
+    - 早期營養支持 (不再建議長期禁食)
+    - 犬：轉換為低脂飲食
+    - 貓：治療併存疾病 (IBD、膽管炎)
+    - 嚴重壞死性胰臟炎可能需要手術
+
+prognosis: 輕度胰臟炎預後良好。重度壞死性胰臟炎死亡率可達 25-50%。復發率高，尤其有持續風險因子的犬。貓慢性胰臟炎需長期管理。
+
+guidelineRefs:
+  - sourceOrg: ACVIM
+    title: "ACVIM Consensus Statement on Pancreatitis in Cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/33098171/
+    type: consensus
+    pmid: "33098171"
+
+pubmedQueries:
+  - query: '"pancreatitis" AND (dog OR cat OR canine OR feline) AND ("consensus" OR "guidelines")'
+    frequency: monthly

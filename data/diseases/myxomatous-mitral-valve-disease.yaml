@@ -1,0 +1,125 @@
+slug: myxomatous-mitral-valve-disease
+nameEn: Myxomatous Mitral Valve Disease
+nameZh: 黏液瘤性二尖瓣膜病
+bodySystem: cardiac
+description: 犬最常見的後天性心臟病，以二尖瓣黏液瘤性退化為特徵，導致瓣膜閉鎖不全。
+
+aliases:
+  - { alias: MMVD, language: en }
+  - { alias: Degenerative Mitral Valve Disease, language: en }
+  - { alias: DMVD, language: en }
+  - { alias: Endocardiosis, language: en }
+  - { alias: 二尖瓣退化性疾病, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 佔所有犬心臟病 75%。好發於小型犬，尤其 CKCS、Dachshund、Poodle、Chihuahua。
+
+etiology:
+  categories:
+    - name: 退化性
+      examples:
+        - 二尖瓣黏液瘤性退化 (膠原纖維退化、醣胺聚醣沉積)
+        - 與年齡高度相關
+    - name: 遺傳因素
+      examples:
+        - CKCS 有明確遺傳傾向
+        - 多基因遺傳模式
+
+clinicalSigns:
+  early:
+    - 心雜音 (左心尖區收縮期雜音)
+    - 無臨床症狀 (B1 期)
+  progressive:
+    - 運動不耐
+    - 咳嗽 (左主支氣管壓迫)
+    - 呼吸急促
+    - 呼吸困難
+  late:
+    - 肺水腫
+    - 昏厥
+    - 心房顫動
+    - 右心衰竭 (腹水、頸靜脈怒張)
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔 X 光
+      notes: "評估心臟大小 (VHS)、左心房擴大、肺水腫"
+    - name: 心臟超音波
+      notes: "確認瓣膜病變、評估左心房大小 (LA/Ao)、LVIDDN、E peak velocity"
+    - name: NT-proBNP
+      notes: "心肌壓力指標，協助區分心因性與非心因性呼吸困難"
+  imaging:
+    - name: 心臟超音波
+      notes: "金標準。M-mode + 2D + Doppler 評估瓣膜反流程度"
+  additional:
+    - 心電圖 (評估心律)
+    - 血壓測量
+    - 腎功能指標 (治療監測)
+
+stagingSystem:
+  name: ACVIM MMVD Staging
+  sourceUrl: https://pubmed.ncbi.nlm.nih.gov/31430397/
+  stages:
+    - stage: A
+      label: 高風險但無結構性心臟病
+      description: 品種易感但目前無心雜音或心臟重塑
+    - stage: B1
+      label: 心雜音，無心臟重塑
+      description: 有心雜音但心臟超音波未見顯著擴大
+    - stage: B2
+      label: 心雜音，有心臟重塑
+      description: 左心房擴大 (LA/Ao ≥1.6) 且 LVIDDN ≥1.7，但無臨床症狀
+    - stage: C
+      label: 充血性心衰竭
+      description: 目前或曾經出現充血性心衰竭症狀
+    - stage: D
+      label: 難治性心衰竭
+      description: 對標準治療無反應的終末期心衰竭
+
+treatment:
+  principles:
+    - B1 期不需藥物治療
+    - B2 期開始 pimobendan (EPIC trial evidence)
+    - C/D 期為充血性心衰竭的積極管理
+  byStage:
+    stageA:
+      - 監測，無需藥物
+      - 建議品種篩檢
+    stageB1:
+      - 定期回診監測 (每 6-12 個月)
+      - 無需藥物治療
+    stageB2:
+      - Pimobendan 0.25-0.3 mg/kg PO BID
+      - 定期追蹤心臟超音波
+    stageC:
+      - Furosemide 1-2 mg/kg PO BID-TID (急性期可 IV)
+      - Pimobendan 0.25-0.3 mg/kg PO BID
+      - ACEi (benazepril 0.5 mg/kg 或 enalapril 0.5 mg/kg) PO BID
+      - Spironolactone 1-2 mg/kg PO SID-BID
+    stageD:
+      - 增加 furosemide 劑量
+      - 考慮加入 torasemide
+      - Sildenafil (肺高壓)
+      - 住院氧氣治療 (急性)
+
+prognosis: B2 期開始 pimobendan 可延緩 15 個月才進展至心衰竭 (EPIC trial)。C 期中位存活時間約 9-12 個月。D 期預後差。
+
+ontologyMappings:
+  - source: MONDO
+    code: "MONDO:0005279"
+    label: mitral valve insufficiency
+    confidence: broad
+
+guidelineRefs:
+  - sourceOrg: ACVIM
+    title: "ACVIM Consensus Guidelines for the Diagnosis and Treatment of MMVD in Dogs (2019)"
+    url: https://pubmed.ncbi.nlm.nih.gov/31430397/
+    type: consensus
+    pmid: "31430397"
+
+pubmedQueries:
+  - query: '"myxomatous mitral valve" AND dog AND "consensus"'
+    frequency: monthly

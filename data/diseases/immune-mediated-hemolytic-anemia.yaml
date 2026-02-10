@@ -1,0 +1,112 @@
+slug: immune-mediated-hemolytic-anemia
+nameEn: Immune-Mediated Hemolytic Anemia
+nameZh: 免疫介導性溶血性貧血
+bodySystem: hematology
+description: 免疫系統異常攻擊自身紅血球導致的溶血性貧血。犬常見，為最常見的自體免疫疾病之一。
+
+aliases:
+  - { alias: IMHA, language: en }
+  - { alias: Autoimmune Hemolytic Anemia, language: en }
+  - { alias: AIHA, language: en }
+  - { alias: 自體免疫溶血性貧血, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 好發於中年母犬。Cocker Spaniel、English Springer Spaniel、Poodle 風險較高。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓較少見，常與 FeLV、Mycoplasma haemofelis 等感染相關。
+
+etiology:
+  categories:
+    - name: 原發性 (自體免疫)
+      examples:
+        - 特發性 (約 60-75% 犬 IMHA)
+        - 免疫系統對自身紅血球表面抗原產生抗體
+    - name: 繼發性
+      examples:
+        - 感染 (Babesia、Mycoplasma、Ehrlichia)
+        - 藥物 (trimethoprim-sulfa、cephalosporins)
+        - 疫苗接種後 (罕見)
+        - 腫瘤 (淋巴瘤、血管肉瘤)
+        - 蜂螫
+
+clinicalSigns:
+  early:
+    - 虛弱、嗜睡
+    - 食慾下降
+    - 運動不耐
+  progressive:
+    - 蒼白黏膜
+    - 黃疸 (溶血性)
+    - 心搏過速
+    - 深色尿 (血紅素尿)
+    - 脾腫大
+  late:
+    - 發燒
+    - 呼吸困難
+    - 血栓栓塞 (肺動脈栓塞為主要死因)
+    - DIC
+
+diagnosis:
+  primaryTests:
+    - name: CBC
+      notes: "再生性貧血 (網狀紅血球增加)、球狀紅血球、自動凝集 (saline agglutination test)"
+    - name: 抹片檢查
+      notes: "球狀紅血球、多染性紅血球、嗜中性球左移"
+    - name: Coombs' test (直接抗球蛋白試驗)
+      notes: "陽性支持診斷，但陰性不能排除"
+  imaging:
+    - name: 腹部超音波
+      notes: "評估脾腫大、排除腫瘤 (血管肉瘤)"
+    - name: 胸腔 X 光
+      notes: "排除肺動脈栓塞、轉移性腫瘤"
+  additional:
+    - 生化 (膽紅素升高)
+    - 網狀紅血球計數
+    - 凝血功能 (PT/APTT、D-dimer、fibrinogen)
+    - 血型配對 (輸血前)
+    - PCR (Babesia、Mycoplasma)
+    - 尿液分析 (血紅素尿 vs 血尿)
+
+treatment:
+  principles:
+    - 免疫抑制治療為基石
+    - 穩定血液動力學 (輸血)
+    - 預防血栓栓塞併發症
+  medications:
+    - name: Prednisolone/Prednisone
+      dose: "2 mg/kg PO BID (初始免疫抑制劑量)"
+      notes: 穩定後逐漸減量，療程通常 3-6 個月
+    - name: Mycophenolate mofetil
+      dose: "10 mg/kg PO BID"
+      notes: 常作為第二線免疫抑制劑，減少類固醇用量
+    - name: Azathioprine (僅犬)
+      dose: "2 mg/kg PO SID × 2 週，後改隔日"
+      notes: 貓禁用 (骨髓抑制)
+    - name: Cyclosporine
+      dose: "5 mg/kg PO BID"
+      notes: 難治性案例的替代選擇
+  general:
+    - 輸血 (PCV <15% 或臨床嚴重不穩定時)
+    - 低劑量 aspirin (0.5 mg/kg PO SID) 或 clopidogrel (犬 2 mg/kg PO SID) 預防血栓
+    - 住院監測 (急性期)
+    - 排除繼發性原因
+
+emergencyNotes: 重度貧血 (PCV <12%) 需緊急輸血。注意肺動脈栓塞為主要死因。DIC 徵兆需積極處理。
+
+prognosis: 總死亡率約 30-40%。存活過第一週的犬預後改善。約 15% 會復發。併發血栓栓塞的預後較差。
+
+guidelineRefs:
+  - sourceOrg: ACVIM
+    title: "ACVIM Consensus Statement on the Diagnosis and Treatment of IMHA in Dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/30806491/
+    type: consensus
+    pmid: "30806491"
+
+pubmedQueries:
+  - query: '"immune-mediated hemolytic anemia" AND dog AND "consensus"'
+    frequency: monthly
