@@ -50,6 +50,12 @@ export default function RootLayout({
               >
                 瀏覽疾病
               </Link>
+              <Link
+                href="/references"
+                className="text-muted transition-colors hover:text-foreground"
+              >
+                文獻庫
+              </Link>
               <a
                 href="https://github.com/sensa-ai-tech/vetpro"
                 target="_blank"

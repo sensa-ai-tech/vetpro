@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { db } from "@/db";
+import { db, sqlite } from "@/db";
 import { diseases, speciesAffected } from "@/db/schema";
 import { eq } from "drizzle-orm";
 import SearchBar from "@/components/SearchBar";
@@ -35,8 +35,14 @@ function getAllDiseases() {
   });
 }
 
+function getReferenceCount(): number {
+  const result = sqlite.prepare('SELECT COUNT(*) as count FROM "references"').get() as { count: number };
+  return result.count;
+}
+
 export default function HomePage() {
   const allDiseases = getAllDiseases();
+  const refCount = getReferenceCount();
 
   // Count by body system
   const systemCounts: Record<string, number> = {};
@@ -78,6 +84,9 @@ export default function HomePage() {
             </strong>{" "}
             個物種
           </span>
+          <Link href="/references" className="transition-colors hover:text-primary">
+            <strong className="text-foreground">{refCount}</strong> 篇文獻
+          </Link>
         </div>
       </section>
 

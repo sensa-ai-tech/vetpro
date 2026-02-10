@@ -1,15 +1,17 @@
 import { XMLParser } from "fast-xml-parser";
 
 const EUTILS_BASE = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils";
+const MAX_RETRIES = 3;
+const RETRY_DELAY_MS = 2000;
 
-interface ESearchResult {
+export interface ESearchResult {
   idlist: string[];
   count: number;
   webenv?: string;
   querykey?: string;
 }
 
-interface PubMedArticle {
+export interface PubMedArticle {
   pmid: string;
   title: string;
   authors: string[];
@@ -24,6 +26,8 @@ const xmlParser = new XMLParser({
   attributeNamePrefix: "@_",
   isArray: (tagName) =>
     ["PubmedArticle", "Author", "ArticleId"].includes(tagName),
+  processEntities: true,
+  htmlEntities: true,
 });
 
 /**
@@ -41,7 +45,7 @@ export async function searchPubMed(
   const params = new URLSearchParams({
     db: "pubmed",
     term: query,
-    rettype: "json",
+    retmode: "json",
     retmax: String(options.maxResults || 50),
     usehistory: "y",
   });
@@ -51,15 +55,18 @@ export async function searchPubMed(
   if (options.minDate) params.set("mindate", options.minDate);
 
   const url = `${EUTILS_BASE}/esearch.fcgi?${params}`;
-  const res = await fetch(url);
-  const data = await res.json();
+  const data = (await fetchWithRetry(url, "json")) as Record<string, unknown>;
 
-  const result = data.esearchresult;
+  const result = data.esearchresult as Record<string, unknown> | undefined;
+  if (result?.ERROR) {
+    throw new Error(`PubMed search error: ${result.ERROR}`);
+  }
+
   return {
-    idlist: result.idlist || [],
-    count: parseInt(result.count) || 0,
-    webenv: result.webenv,
-    querykey: result.querykey,
+    idlist: (result?.idlist as string[]) || [],
+    count: parseInt(String(result?.count || "0")) || 0,
+    webenv: result?.webenv as string | undefined,
+    querykey: result?.querykey as string | undefined,
   };
 }
 
@@ -72,7 +79,6 @@ export async function fetchArticles(
 ): Promise<PubMedArticle[]> {
   if (pmids.length === 0) return [];
 
-  // Batch in groups of 100
   const articles: PubMedArticle[] = [];
   for (let i = 0; i < pmids.length; i += 100) {
     const batch = pmids.slice(i, i + 100);
@@ -87,8 +93,7 @@ export async function fetchArticles(
     if (options.email) params.set("email", options.email);
 
     const url = `${EUTILS_BASE}/efetch.fcgi?${params}`;
-    const res = await fetch(url);
-    const xml = await res.text();
+    const xml = (await fetchWithRetry(url, "text")) as string;
 
     const parsed = xmlParser.parse(xml);
     const pubmedArticles =
@@ -102,13 +107,59 @@ export async function fetchArticles(
       }
     }
 
-    // Rate limit: wait 100ms between batches (10 rps with key)
+    // Rate limit: wait between batches
+    // Without API key: 3 rps → 350ms; With key: 10 rps → 100ms
+    const delay = options.apiKey ? 100 : 350;
     if (i + 100 < pmids.length) {
-      await sleep(100);
+      await sleep(delay);
     }
   }
 
   return articles;
+}
+
+/**
+ * Fetch with automatic retry on transient errors
+ */
+async function fetchWithRetry(
+  url: string,
+  responseType: "json" | "text",
+  retries = MAX_RETRIES
+): Promise<unknown> {
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    try {
+      const res = await fetch(url);
+
+      if (res.status === 429) {
+        // Rate limited — wait and retry
+        const waitMs = RETRY_DELAY_MS * attempt;
+        console.warn(`Rate limited (429). Waiting ${waitMs}ms before retry ${attempt}/${retries}...`);
+        await sleep(waitMs);
+        continue;
+      }
+
+      if (res.status >= 500) {
+        // Server error — retry
+        const waitMs = RETRY_DELAY_MS * attempt;
+        console.warn(`Server error (${res.status}). Waiting ${waitMs}ms before retry ${attempt}/${retries}...`);
+        await sleep(waitMs);
+        continue;
+      }
+
+      if (!res.ok) {
+        throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+      }
+
+      return responseType === "json" ? await res.json() : await res.text();
+    } catch (err) {
+      if (attempt === retries) throw err;
+      const waitMs = RETRY_DELAY_MS * attempt;
+      console.warn(`Fetch error (attempt ${attempt}/${retries}): ${err}. Retrying in ${waitMs}ms...`);
+      await sleep(waitMs);
+    }
+  }
+
+  throw new Error("Max retries exceeded");
 }
 
 function parseArticle(article: Record<string, unknown>): PubMedArticle {
@@ -118,30 +169,35 @@ function parseArticle(article: Record<string, unknown>): PubMedArticle {
   );
   const articleData = medline?.Article as Record<string, unknown>;
 
-  // Title
-  const title = String(
-    (articleData?.ArticleTitle as Record<string, unknown>)?.["#text"] ||
-      articleData?.ArticleTitle ||
-      ""
-  );
+  // Title — handle mixed content (text with inline HTML tags)
+  const rawTitle = articleData?.ArticleTitle;
+  const title = extractText(rawTitle);
 
   // Authors
   const authorList = (articleData?.AuthorList as Record<string, unknown>)
     ?.Author as Record<string, unknown>[] | undefined;
-  const authors = (authorList || []).map((a) => {
-    const lastName = String(a.LastName || "");
-    const initials = String(a.Initials || "");
-    return `${lastName} ${initials}`.trim();
-  });
+  const authors = (authorList || [])
+    .map((a) => {
+      const lastName = String(a.LastName || "");
+      const initials = String(a.Initials || "");
+      return `${lastName} ${initials}`.trim();
+    })
+    .filter((a) => a.length > 0);
 
   // Journal
   const journalData = articleData?.Journal as Record<string, unknown>;
   const journal = String(journalData?.Title || journalData?.ISOAbbreviation || "");
 
-  // Year
+  // Year — try multiple locations
   const journalIssue = journalData?.JournalIssue as Record<string, unknown>;
   const pubDate = journalIssue?.PubDate as Record<string, unknown>;
-  const year = parseInt(String(pubDate?.Year || "0"));
+  let year = parseInt(String(pubDate?.Year || "0"));
+
+  // Fallback: MedlineDate "YYYY Mon-Mon" format
+  if (!year && pubDate?.MedlineDate) {
+    const match = String(pubDate.MedlineDate).match(/^(\d{4})/);
+    if (match) year = parseInt(match[1]);
+  }
 
   // DOI
   const articleIdList = (
@@ -154,12 +210,34 @@ function parseArticle(article: Record<string, unknown>): PubMedArticle {
   );
   const doi = doiEntry ? String(doiEntry["#text"] || "") : null;
 
-  // Open access check (simplified)
+  // Open access check (has PMC ID)
   const isOpenAccess = articleIdList?.some(
     (id) => id["@_IdType"] === "pmc"
   ) || false;
 
   return { pmid, title, authors, journal, year, doi, isOpenAccess };
+}
+
+/**
+ * Extract text from XML mixed content (handles inline tags like <i>, <sub>, etc.)
+ */
+function extractText(node: unknown): string {
+  if (node === null || node === undefined) return "";
+  if (typeof node === "string" || typeof node === "number") return String(node);
+
+  if (typeof node === "object") {
+    const obj = node as Record<string, unknown>;
+    // If it has #text, that's the main content
+    if ("#text" in obj) {
+      return String(obj["#text"]);
+    }
+    // Otherwise concatenate all text values
+    return Object.values(obj)
+      .map((v) => extractText(v))
+      .join("");
+  }
+
+  return String(node);
 }
 
 function sleep(ms: number): Promise<void> {
