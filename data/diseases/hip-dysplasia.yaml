@@ -1,0 +1,143 @@
+slug: hip-dysplasia
+nameEn: Hip Dysplasia
+nameZh: 髖關節發育不全
+bodySystem: orthopedic
+description: 髖關節發育異常導致關節不穩定與續發性退化性關節炎的遺傳性骨科疾病，為大型犬最常見的骨科發育疾病。
+
+aliases:
+  - { alias: CHD, language: en }
+  - { alias: Canine Hip Dysplasia, language: en }
+  - { alias: HD, language: en }
+  - { alias: 髖關節發育不良, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 好發大型至巨型犬種：German Shepherd、Labrador、Golden Retriever、Rottweiler、Saint Bernard、Bulldog。盛行率依品種而異 (15-70%)。通常 5-18 月齡出現臨床症狀。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓也會發生，但臨床症狀常不明顯。Maine Coon 品種盛行率較高。
+
+etiology:
+  categories:
+    - name: 遺傳因素
+      examples:
+        - 多基因遺傳 (polygenic inheritance)
+        - 影響關節鬆弛度的基因
+        - 影響髖臼深度與股骨頭覆蓋的基因
+    - name: 環境因素
+      examples:
+        - 快速生長 (高熱量飲食、過度餵食)
+        - 過度運動 (幼犬時期)
+        - 肥胖 (加速退化)
+    - name: 病理機制
+      examples:
+        - 關節鬆弛 (joint laxity) 為核心問題
+        - 股骨頭半脫位 (subluxation)
+        - 異常負重導致續發性骨關節炎
+        - 關節囊增厚、滑液膜炎
+
+clinicalSigns:
+  early:
+    - 後肢跛行 (幼犬期或成犬期)
+    - 兔跳步態 (bunny hopping gait)
+    - 久坐後起身困難
+    - 運動不耐
+  progressive:
+    - 後肢肌肉萎縮
+    - 髖關節活動範圍減少
+    - 髖關節伸展疼痛
+    - Ortolani sign 陽性 (幼犬)
+    - 活動力下降
+  late:
+    - 嚴重退化性關節炎
+    - 慢性疼痛
+    - 站立困難
+    - 嚴重肌肉萎縮
+    - 嚴重影響生活品質
+
+diagnosis:
+  primaryTests:
+    - name: 骨科檢查
+      notes: "Ortolani test (需鎮靜)、Barlow test、髖關節伸展疼痛、後肢肌肉萎縮評估"
+    - name: 骨盆 X 光 (ventrodorsal extended view)
+      notes: "標準 OFA view。評估股骨頭覆蓋、Norberg angle、骨關節炎程度。需深度鎮靜/麻醉"
+    - name: PennHIP distraction radiography
+      notes: "量化關節鬆弛度 (distraction index)。可在 16 週齡執行，早期篩檢價值高"
+  imaging:
+    - name: 骨盆 X 光
+      notes: "OFA 評估需 ≥24 月齡。評估 Norberg angle、骨關節炎分級"
+    - name: PennHIP
+      notes: "DI >0.3 為異常。16 週齡即可篩檢"
+    - name: CT
+      notes: "術前計畫 (TPO、DPO 手術前評估)"
+  additional:
+    - 步態分析
+    - 關節液分析 (排除感染性關節炎)
+
+stagingSystem:
+  name: OFA Hip Grading
+  sourceUrl: https://www.ofa.org/diseases/hip-dysplasia
+  stages:
+    - stage: 1
+      label: Excellent / Good / Fair
+      description: 正常髖關節。適合繁殖
+    - stage: 2
+      label: Borderline
+      description: 邊緣性變化。建議追蹤
+    - stage: 3
+      label: Mild Dysplasia
+      description: 輕度發育不全。股骨頭輕度半脫位
+    - stage: 4
+      label: Moderate Dysplasia
+      description: 中度發育不全。明顯半脫位與早期骨關節炎
+    - stage: 5
+      label: Severe Dysplasia
+      description: 嚴重發育不全。完全脫位與嚴重骨關節炎
+
+treatment:
+  principles:
+    - 治療取決於年齡、症狀嚴重度、骨關節炎程度
+    - 幼犬早期可行預防性手術 (JPS、DPO/TPO)
+    - 成犬以疼痛管理與功能維持為主
+    - 嚴重者考慮全髖關節置換或股骨頭切除
+  medications:
+    - name: NSAIDs (Meloxicam, Carprofen, Grapiprant)
+      dose: "依藥物標準劑量"
+      notes: 疼痛管理主力。Grapiprant (piprant 類) 腸胃副作用可能較少
+    - name: Gabapentin
+      dose: "5-10 mg/kg PO BID-TID"
+      notes: 慢性疼痛的輔助止痛
+    - name: Adequan (PSGAG)
+      dose: "5 mg/kg IM 每 3-5 天 × 8 次，後每月維持"
+      notes: 關節保護劑
+    - name: 關節補充品
+      dose: "Glucosamine + Chondroitin sulfate 依體重"
+      notes: 證據力中等，安全性高。可作為輔助
+  general:
+    - 幼犬手術：JPS (juvenile pubic symphysiodesis，<16-20 週)、DPO/TPO (double/triple pelvic osteotomy，5-10 月齡)
+    - 成犬手術：THR (total hip replacement，金標準) 或 FHO (femoral head ostectomy，小型犬或經濟考量)
+    - 體重管理 (最重要的非手術措施)
+    - 物理復健 (水中跑步機、游泳、肌力訓練)
+    - 環境調整 (防滑地墊、斜坡)
+    - 大型犬幼犬飲食管理 (避免過度餵食與快速生長)
+
+prognosis: THR 手術成功率 >90%，可恢復正常功能。FHO 小型犬效果較佳。保守治療多數犬可維持可接受的生活品質，但需終生管理。早期篩檢與繁殖計畫是預防的關鍵。
+
+ontologyMappings:
+  - source: MONDO
+    code: "MONDO:0008028"
+    label: hip dysplasia
+    confidence: exact
+
+guidelineRefs:
+  - sourceOrg: OFA
+    title: "Orthopedic Foundation for Animals — Hip Dysplasia"
+    url: https://www.ofa.org/diseases/hip-dysplasia
+    type: guideline
+
+pubmedQueries:
+  - query: '"hip dysplasia" AND (dog OR canine) AND ("treatment" OR "screening" OR "TPLO" OR "THR")'
+    frequency: monthly

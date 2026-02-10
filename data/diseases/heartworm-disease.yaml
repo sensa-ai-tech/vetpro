@@ -1,0 +1,146 @@
+slug: heartworm-disease
+nameEn: Heartworm Disease
+nameZh: 犬心絲蟲症
+bodySystem: infectious
+description: 由 Dirofilaria immitis 經蚊蟲傳播引起的寄生蟲感染，成蟲寄生於肺動脈與右心室，導致肺動脈高壓與心衰竭。
+
+aliases:
+  - { alias: Dirofilariasis, language: en }
+  - { alias: HWD, language: en }
+  - { alias: 犬絲蟲症, language: zh }
+  - { alias: 心絲蟲感染, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬為最終宿主。流行區盛行率可達 45%。所有犬種均感受性高。台灣為流行區。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓為非典型宿主，蟲體數少 (通常 1-6 隻)。可引起 HARD (Heartworm-Associated Respiratory Disease)。診斷困難，無核准殺成蟲藥物。
+  - speciesCommon: ferret
+    speciesScientific: Mustela putorius furo
+    prevalence: uncommon
+    notes: 雪貂高度感受性，少量蟲體即可致命。
+
+etiology:
+  categories:
+    - name: 寄生蟲
+      examples:
+        - Dirofilaria immitis (犬心絲蟲)
+        - 經蚊蟲 (Aedes、Culex、Anopheles 等) 叮咬傳播
+        - 感染性第三期仔蟲 (L3) 經蚊蟲叮咬注入
+        - 約 6-7 個月到達肺動脈成熟為成蟲
+    - name: 病理機制
+      examples:
+        - 成蟲引起肺動脈內膜炎與增生
+        - 肺動脈高壓
+        - 右心擴大與右心衰竭
+        - 微絲蟲引起免疫複合體腎絲球腎炎
+        - 後腔靜脈症候群 (caval syndrome，大量蟲體)
+
+clinicalSigns:
+  early:
+    - 無症狀 (輕度感染)
+    - 偶發性咳嗽
+    - 輕度運動不耐
+  progressive:
+    - 持續性咳嗽
+    - 運動不耐加重
+    - 體重減輕
+    - 呼吸急促
+    - 心雜音
+  late:
+    - 右心衰竭徵兆 (腹水、頸靜脈怒張)
+    - 咯血
+    - 嚴重呼吸困難
+    - 後腔靜脈症候群 (急性、致命)
+    - 肺血栓栓塞
+    - 暈厥
+
+diagnosis:
+  primaryTests:
+    - name: 心絲蟲抗原檢測 (Ag test)
+      notes: "偵測成蟲 (母蟲) 分泌抗原。感染後 5-6.5 個月才轉陽。敏感度高但全公蟲或低蟲量可能假陰性。可加熱處理增加敏感度"
+    - name: 微絲蟲檢測 (Modified Knott's / 濃縮法)
+      notes: "偵測周邊血微絲蟲。約 20% 感染犬為 occult (無微絲蟲血症)。需與 Acanthocheilonema 鑑別"
+    - name: CBC/生化/尿液分析
+      notes: "嗜酸球增多、貧血、蛋白尿。評估器官功能與治療風險"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "肺動脈擴大與迂曲、右心擴大、肺實質浸潤。評估疾病嚴重度與治療風險"
+    - name: 心臟超音波
+      notes: "右心擴大、可直接看到蟲體 (右心室與肺動脈)、三尖瓣逆流、肺動脈高壓。後腔靜脈症候群必做"
+  additional:
+    - 凝血功能
+    - 心絲蟲抗體檢測 (貓主要診斷工具)
+    - 血壓測量
+
+stagingSystem:
+  name: AHS (American Heartworm Society) Classification
+  sourceUrl: https://www.heartwormsociety.org
+  stages:
+    - stage: 1
+      label: 輕度
+      description: 無症狀或僅輕度咳嗽。X 光正常或輕微變化
+    - stage: 2
+      label: 中度
+      description: 咳嗽、輕度運動不耐。X 光可見肺動脈擴大
+    - stage: 3
+      label: 重度
+      description: 咳嗽、運動不耐、呼吸困難、右心衰竭徵兆。X 光嚴重變化
+    - stage: 4
+      label: 後腔靜脈症候群 (Caval Syndrome)
+      description: 大量蟲體阻塞三尖瓣/後腔靜脈。急性溶血性貧血、血紅素尿、休克。需緊急手術取蟲
+
+treatment:
+  principles:
+    - 遵循 AHS 治療指引
+    - 治療前評估疾病嚴重度
+    - Melarsomine 為唯一核准殺成蟲藥物
+    - 治療期間嚴格限制運動 (預防肺血栓栓塞)
+    - 合併 doxycycline 殺 Wolbachia 共生菌增加療效
+  medications:
+    - name: Melarsomine dihydrochloride (Immiticide)
+      dose: "AHS 三劑注射法：第一劑 2.5 mg/kg IM (腰椎旁肌)，30 天後第二劑 2.5 mg/kg IM，24 小時後第三劑 2.5 mg/kg IM (對側)"
+      notes: 唯一核准殺成蟲藥物。深層腰椎旁肌肉注射。注射部位疼痛常見
+    - name: Doxycycline
+      dose: "10 mg/kg PO BID × 4 週"
+      notes: 殺死 Wolbachia 內共生菌。在 melarsomine 前開始。減少肺部炎症反應
+    - name: Prednisolone
+      dose: "0.5 mg/kg PO SID × 第一週，後遞減"
+      notes: 治療肺部栓塞反應。按需使用
+    - name: 預防藥 (Ivermectin 類)
+      dose: "每月預防劑量"
+      notes: 治療開始時即給予。殺微絲蟲與預防新感染
+  general:
+    - 嚴格限制運動 (整個治療期間，尤其 melarsomine 注射後 6-8 週)
+    - AHS 建議預處理：Doxycycline 4 週 + 月預防藥 2 個月 → Melarsomine 三劑注射法
+    - 後腔靜脈症候群：緊急經頸靜脈手術取蟲
+    - 微絲蟲清除 (預防藥 + 治療後自然減少)
+    - 治療完成後 6 個月抗原追蹤
+
+emergencyNotes: 後腔靜脈症候群 (Caval Syndrome) 為急症，表現為急性溶血性貧血、血紅素尿、DIC、心血管休克。需緊急經頸靜脈手術取蟲 (surgical heartworm extraction)。肺血栓栓塞：絕對臥床、prednisolone、支持性治療。
+
+prognosis: Class 1-2 經三劑法治療成功率 >95%。Class 3 風險較高但多數仍可治療。Class 4 (Caval Syndrome) 手術取蟲死亡率約 15-40%。預防遠優於治療。
+
+ontologyMappings:
+  - source: MONDO
+    code: "MONDO:0001583"
+    label: dirofilariasis
+    confidence: exact
+
+guidelineRefs:
+  - sourceOrg: AHS
+    title: "AHS Current Canine Guidelines for the Prevention, Diagnosis, and Management of Heartworm Infection in Dogs"
+    url: https://www.heartwormsociety.org/veterinary-resources/american-heartworm-society-guidelines
+    type: guideline
+  - sourceOrg: AHS
+    title: "AHS Current Feline Guidelines for the Prevention, Diagnosis, and Management of Heartworm Infection in Cats"
+    url: https://www.heartwormsociety.org/veterinary-resources/american-heartworm-society-guidelines
+    type: guideline
+
+pubmedQueries:
+  - query: '"heartworm" OR "Dirofilaria immitis" AND (dog OR canine) AND ("treatment" OR "melarsomine" OR "guidelines")'
+    frequency: monthly

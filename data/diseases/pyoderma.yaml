@@ -1,0 +1,122 @@
+slug: pyoderma
+nameEn: Pyoderma
+nameZh: 膿皮症
+bodySystem: dermatology
+description: 皮膚的細菌感染，為犬最常見的皮膚病之一。常繼發於潛在疾病，需找出並治療根本原因。
+
+aliases:
+  - { alias: Bacterial Skin Infection, language: en }
+  - { alias: Superficial Pyoderma, language: en }
+  - { alias: Deep Pyoderma, language: en }
+  - { alias: 細菌性皮膚感染, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: very_common
+    notes: 犬最常見皮膚病之一。短毛犬種 (如 Shar-Pei、Bulldog、German Shepherd) 較好發。常繼發於過敏性皮膚病。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓較少見，發生時需考慮免疫抑制 (FIV、FeLV)、糖尿病或腫瘤等潛在原因。
+
+etiology:
+  categories:
+    - name: 致病菌
+      examples:
+        - Staphylococcus pseudintermedius (最常見)
+        - Staphylococcus aureus (偶見，需注意 MRSA)
+        - Staphylococcus schleiferi
+        - 革蘭氏陰性菌 (深層膿皮症，如 Pseudomonas、E. coli)
+    - name: 潛在疾病 (predisposing factors)
+      examples:
+        - 異位性皮膚炎 (最常見根本原因)
+        - 食物不良反應
+        - 內分泌疾病 (甲狀腺低下、庫欣氏症)
+        - 毛囊蟲症 (Demodex)
+        - 免疫缺陷
+    - name: 促發因素
+      examples:
+        - 皮膚屏障破損 (搔抓、潮濕環境)
+        - 皮膚皺褶 (Shar-Pei、Bulldog)
+        - 不當美容處理
+
+clinicalSigns:
+  early:
+    - 丘疹 (papules)
+    - 膿皰 (pustules)
+    - 表皮環形脫屑 (epidermal collarettes)
+    - 局部搔癢
+  progressive:
+    - 脫毛
+    - 結痂
+    - 色素沉著
+    - 表皮環形擴大融合
+    - 反覆發作
+  late:
+    - 深層膿皮症：癤 (furuncles)、蜂窩組織炎
+    - 竇道形成與化膿性排出物
+    - 疼痛
+    - 區域性淋巴結腫大
+    - 全身性感染徵兆 (發燒、嗜睡)
+
+diagnosis:
+  primaryTests:
+    - name: 皮膚細胞學 (impression smear / tape cytology)
+      notes: "球菌 (cocci)、嗜中性球吞噬細菌。簡單快速的診斷工具"
+    - name: 細菌培養與藥敏試驗
+      notes: "反覆發作、深層膿皮症、治療失敗時必須執行。注意 MRSP 盛行率上升"
+    - name: 皮膚刮搔
+      notes: "排除毛囊蟲症 (Demodex)"
+  imaging: []
+  additional:
+    - 黴菌培養 (排除皮癬菌)
+    - 甲狀腺功能檢測 (犬)
+    - 腎上腺功能檢測 (若懷疑庫欣)
+    - 食物排除試驗 (若懷疑食物過敏)
+    - 皮膚活檢 (深層膿皮症、非典型表現、排除自體免疫)
+
+treatment:
+  principles:
+    - 找出並治療潛在病因 (最關鍵)
+    - 表面型/表淺型可以局部治療為主
+    - 深層膿皮症需全身性抗生素
+    - 抗生素療程需足夠長 (症狀消退後至少再用 7-14 天)
+  medications:
+    - name: Cephalexin
+      dose: "22-30 mg/kg PO BID"
+      notes: 表淺膿皮症一線經驗性用藥。療程至少 3-4 週
+    - name: Amoxicillin-Clavulanate
+      dose: "12.5-25 mg/kg PO BID"
+      notes: 一線替代選擇
+    - name: Clindamycin
+      dose: "11 mg/kg PO SID-BID"
+      notes: 二線選擇，良好的皮膚穿透力
+    - name: Fluoroquinolones (Enrofloxacin, Marbofloxacin)
+      dose: "依藥敏結果使用"
+      notes: 僅在藥敏試驗支持且無其他選擇時使用。避免經驗性處方以減少抗藥性
+  general:
+    - 局部治療：含 chlorhexidine (2-4%) 或 benzoyl peroxide 洗劑，每週 2-3 次
+    - Mupirocin 或 fusidic acid 局部藥膏 (局部表淺病灶)
+    - 皮膚皺褶清潔與乾燥
+    - 控制潛在過敏性疾病
+    - 避免不必要的抗生素使用 (抗藥性管理)
+
+prognosis: 表淺膿皮症在找到並控制潛在原因後預後良好。深層膿皮症療程較長且可能反覆。MRSP 感染治療更具挑戰性。未解決根本原因者復發率高。
+
+ontologyMappings:
+  - source: MONDO
+    code: "MONDO:0006563"
+    label: pyoderma
+    confidence: exact
+
+guidelineRefs:
+  - sourceOrg: WAVD
+    title: "Antimicrobial Use Guidelines for Treatment of Superficial Bacterial Folliculitis in Dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/24720692/
+    type: guideline
+    pmid: "24720692"
+
+pubmedQueries:
+  - query: '"pyoderma" AND (dog OR canine) AND ("antimicrobial" OR "methicillin-resistant")'
+    frequency: monthly

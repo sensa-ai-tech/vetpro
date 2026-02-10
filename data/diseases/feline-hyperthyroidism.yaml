@@ -1,0 +1,118 @@
+slug: feline-hyperthyroidism
+nameEn: Feline Hyperthyroidism
+nameZh: 貓甲狀腺功能亢進
+bodySystem: endocrine
+description: 甲狀腺荷爾蒙過度分泌導致的多系統疾病，為中老年貓最常見的內分泌疾病。
+
+aliases:
+  - { alias: Hyperthyroidism, language: en }
+  - { alias: 貓甲亢, language: zh }
+  - { alias: Thyrotoxicosis, language: en }
+
+species:
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 中老年貓 (>8 歲) 盛行率約 10%。無明顯品種好發性。暹羅貓與喜馬拉雅貓風險略低。
+
+etiology:
+  categories:
+    - name: 良性腫瘤
+      examples:
+        - 甲狀腺腺瘤/腺瘤性增生 (>97%)
+        - 雙側病變佔約 70%
+    - name: 惡性腫瘤
+      examples:
+        - 甲狀腺癌 (<3%)
+        - 功能性甲狀腺癌伴轉移 (罕見)
+    - name: 可能風險因素
+      examples:
+        - 罐頭飲食 (BPA 內襯)
+        - 環境中多溴二苯醚 (PBDEs，阻燃劑)
+        - 碘攝取異常
+        - 貓砂類型
+
+clinicalSigns:
+  early:
+    - 體重減輕伴食慾增加 (多食消瘦)
+    - 被毛品質變差
+    - 活動力增加/躁動
+  progressive:
+    - 多尿多渴
+    - 嘔吐
+    - 下痢
+    - 心搏過速 (>240 bpm)
+    - 心雜音 (甲亢性心肌病)
+    - 甲狀腺可觸診腫大 (頸部)
+  late:
+    - 甲亢性心肌病 (LV 肥厚、CHF)
+    - 嚴重消瘦/惡病質
+    - 全身性高血壓 (視網膜剝離)
+    - 冷漠型甲亢 (apathetic hyperthyroidism)：嗜睡、食慾下降
+    - CKD 暴露 (治療甲亢後 GFR 下降)
+
+diagnosis:
+  primaryTests:
+    - name: 總 T4 (Total T4)
+      notes: "篩檢首選。升高 (>4 μg/dL) 即可確診。正常高值 (2.5-4.0) 可能為早期甲亢或非甲狀腺疾病干擾"
+    - name: 游離 T4 (Free T4 by ED)
+      notes: "T4 正常但臨床懷疑時追加。較敏感但特異度略低"
+    - name: TSH
+      notes: "犬 TSH 檢測可用於貓。甲亢時被抑制 (<0.05 ng/mL)"
+  imaging:
+    - name: 甲狀腺核醫掃描 (Tc-99m pertechnetate)
+      notes: "金標準定位病變。區分單側/雙側。偵測異位甲狀腺組織與轉移"
+    - name: 頸部超音波
+      notes: "評估甲狀腺大小，體積 >0.3 cm³ 提示增大"
+    - name: 心臟超音波
+      notes: "評估甲亢性心肌病 (LV 肥厚)、瓣膜功能"
+  additional:
+    - CBC、生化 (肝指數常升高、BUN/Crea 可能假性正常因高 GFR)
+    - 尿液分析 (USG 降低)
+    - 血壓測量
+    - T4 抑制試驗 (少用)
+
+treatment:
+  principles:
+    - 四種治療選擇：藥物、手術、放射碘、限碘飲食
+    - 放射碘 (I-131) 為金標準根治方法
+    - 治療前後須監測腎功能 (治療可能暴露潛在 CKD)
+  medications:
+    - name: Methimazole (Felimazole)
+      dose: "2.5 mg PO BID (起始)，根據 T4 調整至 SID-TID"
+      notes: 最常用藥物治療。副作用包括嘔吐、厭食、搔癢、肝毒性、骨髓抑制 (罕見)
+    - name: Carbimazole
+      dose: "10-15 mg PO SID (長效型)"
+      notes: Methimazole 前驅藥，歐洲較常用。胃腸副作用可能較少
+    - name: Transdermal Methimazole
+      dose: "2.5 mg per ear BID (耳廓內側塗抹)"
+      notes: 不能口服藥的貓的替代方案。吸收可能不穩定
+  general:
+    - 放射碘 I-131 (根治性，單次治療治癒率 >95%)
+    - 手術切除 (甲狀腺切除術，需先用藥物穩定)
+    - 限碘飲食 (Hill's y/d，輕度案例的替代方案)
+    - 治療後 2-4 週複檢 T4 與腎功能
+    - 治療前甲亢伴血壓升高：amlodipine 0.625-1.25 mg/cat PO SID
+    - β-blocker (atenolol 6.25-12.5 mg/cat PO BID) 控制心率
+
+prognosis: 治療預後良好。I-131 治癒率 >95%，大多數貓在治療後可正常生活數年。Methimazole 控制良好的貓中位存活約 2-4 年。主要限制因素為併存 CKD。甲狀腺癌預後較差。
+
+ontologyMappings:
+  - source: MONDO
+    code: "MONDO:0004425"
+    label: hyperthyroidism
+    confidence: broad
+
+guidelineRefs:
+  - sourceOrg: AAFP
+    title: "AAFP Guidelines for the Management of Feline Hyperthyroidism"
+    url: https://journals.sagepub.com/doi/10.1177/1098612X16643252
+    type: guideline
+  - sourceOrg: ECVIM
+    title: "Consensus on Feline Hyperthyroidism Management"
+    url: https://www.ecvim-ca.org
+    type: consensus
+
+pubmedQueries:
+  - query: '"hyperthyroidism" AND (cat OR feline) AND ("treatment" OR "radioiodine" OR "methimazole")'
+    frequency: monthly

@@ -1,0 +1,129 @@
+slug: addisons-disease
+nameEn: Hypoadrenocorticism (Addison's Disease)
+nameZh: 腎上腺皮質功能低下症
+bodySystem: endocrine
+description: 腎上腺皮質分泌不足 (糖皮質激素與/或鹽皮質激素) 導致的內分泌疾病，臨床表現多變，素有「偉大的模仿者」之稱。
+
+aliases:
+  - { alias: Addison's Disease, language: en }
+  - { alias: Hypoadrenocorticism, language: en }
+  - { alias: Adrenal Insufficiency, language: en }
+  - { alias: 愛迪生氏症, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 盛行率約 0.06-0.28%。好發品種：Standard Poodle、Portuguese Water Dog、Nova Scotia Duck Tolling Retriever、Bearded Collie、Great Dane。中年母犬好發 (約 70% 為母犬)。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓極少見。報告病例數有限。
+
+etiology:
+  categories:
+    - name: 原發性 (腎上腺破壞)
+      examples:
+        - 免疫介導性腎上腺皮質破壞 (最常見，犬)
+        - 特發性腎上腺萎縮
+        - 肉芽腫性疾病 (黴菌感染)
+        - 腫瘤轉移
+        - 出血/梗塞
+    - name: 繼發性 (ACTH 分泌不足)
+      examples:
+        - 長期外源性類固醇使用後突然停藥 (醫源性，最常見繼發原因)
+        - 腦下垂體腫瘤或破壞
+        - 僅缺乏糖皮質激素 (鹽皮質激素正常)
+    - name: 非典型
+      examples:
+        - 僅糖皮質激素缺乏 (電解質正常)
+        - 約 30% 的原發性 Addison's 初期表現為非典型
+        - 可能隨時間進展為典型型
+
+clinicalSigns:
+  early:
+    - 反覆嘔吐/腹瀉 (間歇性)
+    - 嗜睡、虛弱
+    - 食慾下降
+    - 體重減輕
+    - 症狀時好時壞 (waxing and waning)
+  progressive:
+    - 多尿多渴
+    - 脫水
+    - 肌肉無力/震顫
+    - 低體溫
+    - 腹部疼痛
+    - 對緊迫耐受力極差
+  late:
+    - Addisonian crisis (急性腎上腺危機)
+    - 低血容量性休克
+    - 嚴重心搏過緩 (高鉀血症)
+    - 心律不整 (高鉀血症)
+    - 低血糖
+    - 虛脫
+
+diagnosis:
+  primaryTests:
+    - name: 電解質
+      notes: "典型型：低鈉高鉀，Na:K ratio <27 (正常 27-40) 高度提示。非典型型電解質可能正常"
+    - name: ACTH stimulation test
+      notes: "金標準確診。Cortisol baseline 低且 ACTH 刺激後仍低 (<2 μg/dL)。使用 cosyntropin 5 μg/kg IV"
+    - name: 基礎 Cortisol
+      notes: "基礎 cortisol >2 μg/dL 可排除 Addison's (敏感度高)。<2 μg/dL 需 ACTH 刺激試驗確認"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "微小心臟 (microcardia)、後腔靜脈變窄 (低血容量)。微小心臟為重要線索"
+    - name: 腹部超音波
+      notes: "雙側腎上腺縮小。正常大小不排除"
+  additional:
+    - CBC (非再生性貧血、淋巴球增多、嗜酸球增多 — 缺少 stress leukogram 為線索)
+    - 生化 (BUN/Creatinine 升高 — 腎前性氮血症；低白蛋白；低血糖)
+    - ECG (高鉀血症心電圖變化：T 波高尖、QRS 增寬、P 波消失、心搏過緩)
+    - 內源性 ACTH 濃度 (鑑別原發/繼發性)
+    - 血壓測量 (低血壓)
+
+treatment:
+  principles:
+    - Addisonian crisis 為急症，需緊急液體復甦與類固醇補充
+    - 長期管理需補充鹽皮質激素 (典型型) 與/或糖皮質激素
+    - 治療後預後極佳
+    - 緊迫情境需增加糖皮質激素劑量
+  medications:
+    - name: DOCP (Desoxycorticosterone pivalate, Percorten-V / Zycortal)
+      dose: "2.2 mg/kg IM/SC 每 25-28 天"
+      notes: 鹽皮質激素補充首選。劑量依電解質調整。需搭配低劑量 prednisolone
+    - name: Fludrocortisone
+      dose: "0.01-0.02 mg/kg PO SID-BID"
+      notes: 口服替代。同時具有鹽皮質與糖皮質激素活性。部分犬仍需額外 prednisolone
+    - name: Prednisolone (維持)
+      dose: "0.1-0.2 mg/kg PO SID (緊迫時 2-10 倍)"
+      notes: 糖皮質激素補充。搭配 DOCP 使用。緊迫時 (旅行、手術、生病) 需增量
+    - name: Dexamethasone SP (急救)
+      dose: "0.5-2 mg/kg IV (Addisonian crisis)"
+      notes: 急性危機首選類固醇 (不干擾 ACTH 刺激試驗中 cortisol 測量)
+  general:
+    - Addisonian crisis 急救：積極 IV 輸液 (0.9% NaCl，休克劑量 60-90 mL/kg/hr) + Dexamethasone IV + 矯正高鉀血症 + 監測 ECG
+    - 高鉀血症急救：10% calcium gluconate 0.5-1.5 mL/kg IV 緩慢推注 (心肌保護) + regular insulin 0.1-0.25 U/kg IV + 50% dextrose
+    - 定期電解質監測 (DOCP 注射後 2 週、每次回診)
+    - 飼主教育：緊迫期間增加 prednisolone 劑量
+    - 醫療識別標籤建議
+
+emergencyNotes: Addisonian crisis 為急症。表現為低血容量性休克 + 心搏過緩 + 高鉀血症。立即大量 0.9% NaCl IV 輸液。Dexamethasone SP 0.5-2 mg/kg IV。高鉀血症 (>7-8 mEq/L 或 ECG 異常)：10% calcium gluconate 0.5-1.5 mL/kg IV 緩慢推注監測 ECG + regular insulin + dextrose。持續監測 ECG、電解質、血壓。
+
+prognosis: 一旦確診並開始適當治療，預後極佳。多數犬可維持正常壽命與良好生活品質。飼主依從性 (規律投藥與回診) 是長期管理成功的關鍵。Addisonian crisis 若及時治療預後良好。
+
+ontologyMappings:
+  - source: MONDO
+    code: "MONDO:0015070"
+    label: hypoadrenocorticism
+    confidence: exact
+
+guidelineRefs:
+  - sourceOrg: ACVIM
+    title: "ACVIM Consensus Statement on Diagnosis and Treatment of Canine Hypoadrenocorticism"
+    url: https://pubmed.ncbi.nlm.nih.gov/30806491/
+    type: consensus
+
+pubmedQueries:
+  - query: '"hypoadrenocorticism" OR "Addison" AND (dog OR canine) AND ("diagnosis" OR "treatment")'
+    frequency: monthly

@@ -1,0 +1,155 @@
+slug: acute-kidney-injury
+nameEn: Acute Kidney Injury
+nameZh: 急性腎損傷
+bodySystem: renal
+description: 腎功能急性惡化導致氮質血症與尿量異常，若及時診斷治療可能可逆。
+
+aliases:
+  - { alias: AKI, language: en }
+  - { alias: Acute Renal Failure, language: en }
+  - { alias: ARF, language: en }
+  - { alias: 急性腎衰竭, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 常見病因包括毒物攝入 (葡萄/葡萄乾、乙二醇、NSAIDs)、感染 (鉤端螺旋體)。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 百合中毒為貓特有且常見的致命原因。輸尿管阻塞 (CaOx 結石) 亦為重要病因。
+
+etiology:
+  categories:
+    - name: 腎前性
+      examples:
+        - 嚴重脫水
+        - 低血壓/休克
+        - 心輸出量不足
+        - 麻醉低血壓
+    - name: 腎性
+      examples:
+        - 腎毒素 (乙二醇、百合、NSAIDs、aminoglycosides)
+        - 感染性 (鉤端螺旋體、腎盂腎炎)
+        - 缺血性 (術中低血壓)
+        - 高鈣血症性腎病
+    - name: 腎後性
+      examples:
+        - 雙側輸尿管阻塞 (貓 CaOx 結石)
+        - 尿道阻塞
+        - 膀胱破裂
+        - 腹腔尿液滲漏
+
+clinicalSigns:
+  early:
+    - 突然食慾廢絕
+    - 嘔吐
+    - 嗜睡
+    - 寡尿或無尿 (部分案例)
+  progressive:
+    - 嚴重脫水
+    - 口腔潰瘍
+    - 尿毒症口臭
+    - 多尿期 (恢復階段)
+    - 腹痛 (腎腫大)
+  late:
+    - 無尿
+    - 痙攣
+    - 嚴重高血鉀 (心律不整)
+    - 肺水腫 (容量過負荷)
+    - 代謝性酸中毒
+
+diagnosis:
+  primaryTests:
+    - name: Creatinine / BUN
+      notes: "急性升高，需與 CKD 鑑別 (CKD 腎臟小且不規則；AKI 腎臟正常或腫大)"
+    - name: SDMA
+      notes: "較 creatinine 更早升高，有助早期偵測"
+    - name: 尿液分析
+      notes: "管型 (顆粒管型、上皮管型)、糖尿 (近端腎小管損傷)、等張尿"
+    - name: 電解質
+      notes: "高血鉀 (危及生命)、高磷血症、離子化鈣異常"
+  imaging:
+    - name: 腹部超音波
+      notes: "腎臟正常或腫大 (區別 CKD)、腎盂擴張、輸尿管結石、腎皮質迴音增強"
+    - name: X 光
+      notes: "腎臟大小、不透射結石、體腔積液"
+  additional:
+    - 血液氣體分析 (代謝性酸中毒)
+    - 凝血功能 (鉤端螺旋體相關)
+    - 鉤端螺旋體 PCR/MAT
+    - 乙二醇快速檢測
+    - 尿量監測 (尿管留置)
+
+stagingSystem:
+  name: IRIS AKI Grading
+  sourceUrl: https://www.iris-kidney.com/iris-staging-system
+  stages:
+    - stage: I
+      label: 非氮血症性 AKI
+      creatinine: "<1.6 mg/dL (犬) / <1.6 mg/dL (貓)"
+      description: 有 AKI 病史/風險但尚無氮血症，可能有寡尿/無尿
+    - stage: II
+      label: 輕度 AKI
+      creatinine: "1.7-2.5 mg/dL"
+      description: 輕度氮血症，進展中或對治療反應不足
+    - stage: III
+      label: 中度 AKI
+      creatinine: "2.6-5.0 mg/dL"
+      description: 中度氮血症，需積極治療
+    - stage: IV
+      label: 重度 AKI
+      creatinine: "5.1-10.0 mg/dL"
+      description: 重度氮血症，可能需要腎臟替代治療
+    - stage: V
+      label: 極重度 AKI
+      creatinine: ">10.0 mg/dL"
+      description: 極重度氮血症，預後極差，建議腎臟替代治療
+
+treatment:
+  principles:
+    - 去除病因 (停止腎毒素、解除阻塞)
+    - 積極輸液治療恢復腎臟灌流
+    - 矯正電解質與酸鹼異常
+    - 監測尿量以評估治療反應
+  medications:
+    - name: IV 晶體液 (LRS 或 0.9% NaCl)
+      dose: "矯正脫水 + 維持量 + 持續損失"
+      notes: 目標恢復正常水合狀態後再調整
+    - name: Mannitol
+      dose: "0.5-1 g/kg IV over 20 min"
+      notes: 利尿劑，限於容量恢復後仍寡尿的情況
+    - name: Furosemide
+      dose: "2-6 mg/kg IV bolus 或 CRI 0.5-1 mg/kg/h"
+      notes: 寡尿/無尿期嘗試，若無反應考慮血液透析
+    - name: 4-methylpyrazole (fomepizole)
+      dose: "犬初始 20 mg/kg IV；貓 125 mg/kg IV"
+      notes: 乙二醇中毒解毒劑，需在攝入後 8-12 小時內使用
+  general:
+    - 高血鉀緊急處理 (calcium gluconate、insulin+glucose、sodium bicarbonate)
+    - 止吐 (maropitant)
+    - 胃腸保護 (omeprazole)
+    - 營養支持 (經鼻胃管或食道管)
+    - 血液透析或腹膜透析 (藥物治療無效時)
+    - 鉤端螺旋體：doxycycline 5 mg/kg PO BID × 2 週
+
+emergencyNotes: 無尿性 AKI 為急診。高血鉀 (K+ >7 mEq/L) 需立即處理 (10% calcium gluconate 0.5-1 mL/kg IV slow)。乙二醇中毒需在攝入後數小時內開始解毒治療。百合中毒需立即積極輸液 (48-72 hr)。
+
+prognosis: 取決於病因與嚴重程度。腎前性 AKI 經適當治療預後良好。腎性 AKI 存活率約 40-60%。百合中毒若早期治療存活率可達 90%。乙二醇中毒延遲治療預後極差。部分存活動物可能進展為 CKD。
+
+ontologyMappings:
+  - source: MONDO
+    code: "MONDO:0002492"
+    label: acute kidney failure
+    confidence: exact
+
+guidelineRefs:
+  - sourceOrg: IRIS
+    title: IRIS AKI Grading and Treatment Recommendations
+    url: https://www.iris-kidney.com/iris-staging-system
+    type: guideline
+
+pubmedQueries:
+  - query: '"acute kidney injury" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "guidelines")'
+    frequency: monthly

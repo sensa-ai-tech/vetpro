@@ -1,0 +1,154 @@
+slug: lymphoma
+nameEn: Lymphoma
+nameZh: 淋巴瘤
+bodySystem: oncology
+description: 淋巴球惡性增殖性腫瘤，為犬貓最常見的血液腫瘤，可侵犯全身多種器官與組織。
+
+aliases:
+  - { alias: Lymphosarcoma, language: en }
+  - { alias: LSA, language: en }
+  - { alias: Non-Hodgkin Lymphoma, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 佔犬惡性腫瘤約 7-24%。多中心型最常見 (約 80%)。Golden Retriever、Boxer、Bullmastiff、Basset Hound 風險較高。中位年齡 6-9 歲。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓最常見腫瘤。消化道型最常見 (>50%)。FeLV 陽性貓風險高。中位年齡依型別差異大。
+
+etiology:
+  categories:
+    - name: 犬
+      examples:
+        - 多因素 (遺傳、環境)
+        - 品種好發性 (基因傾向)
+        - 環境因素 (除草劑 2,4-D 暴露有關聯)
+        - 免疫失調
+    - name: 貓
+      examples:
+        - FeLV 相關 (縱隔型，年輕貓)
+        - FIV (間接風險增加)
+        - 慢性炎症 (IBD → 消化道淋巴瘤轉化)
+        - 環境菸害 (epidemiologic association)
+    - name: 組織學分類
+      examples:
+        - B-cell (犬多中心型約 60-80%)
+        - T-cell (犬預後較差；貓縱隔型常見)
+        - 高度惡性 (large cell) vs 低度惡性 (small cell)
+        - 犬 WHO 分類參考人類 NHL
+
+clinicalSigns:
+  early:
+    - 犬多中心型：無痛性周邊淋巴結腫大 (下顎、前肩、膕窩)
+    - 貓消化道型：體重減輕、間歇性嘔吐/下痢
+    - 食慾下降
+  progressive:
+    - 嗜睡
+    - 肝脾腫大
+    - 犬消化道型：嘔吐、下痢、蛋白流失
+    - 貓縱隔型：呼吸困難、胸水
+    - 皮膚型：結節、斑塊、潰瘍
+    - 鼻腔型：單側鼻出血、鼻腔變形
+  late:
+    - 骨髓浸潤 (白血病期：循環腫瘤細胞)
+    - 多器官衰竭
+    - 腫瘤旁症候群 (高鈣血症 — T-cell lymphoma)
+    - 嚴重惡病質
+    - CNS 浸潤 (神經症狀)
+
+diagnosis:
+  primaryTests:
+    - name: 細針抽吸 (FNA) + 細胞學
+      notes: "淋巴結 FNA 診斷率約 90% (高度惡性)。中-大型淋巴母細胞為主。低度惡性小細胞淋巴瘤需組織病理"
+    - name: 組織病理 + 免疫組織化學
+      notes: "金標準。確定 B vs T cell、惡性度分級、Ki-67 增殖指數"
+    - name: Flow Cytometry
+      notes: "確定免疫表型 (B vs T cell)。犬 CD3 (T) vs CD79a/CD21 (B)"
+  imaging:
+    - name: 腹部超音波
+      notes: "肝脾浸潤、腸壁增厚 (消化道型)、腸繫膜淋巴結腫大、腎臟浸潤"
+    - name: 胸腔 X 光
+      notes: "前縱隔腫塊 (縱隔型)、胸水、氣管支氣管淋巴結腫大"
+  additional:
+    - CBC (循環腫瘤細胞、貧血、血小板減少)
+    - 生化 (離子化鈣↑↑ — T-cell；肝指數↑；BUN/Crea)
+    - PARR (PCR for Antigen Receptor Rearrangement — 分子確認 clonality)
+    - 骨髓抽吸/切片 (分期用)
+    - FeLV/FIV 檢測 (貓)
+    - 尿液分析 (高鈣血症性腎病)
+
+stagingSystem:
+  name: WHO Clinical Staging (犬淋巴瘤)
+  stages:
+    - stage: I
+      label: 單一淋巴結或單一器官
+      description: 限於單一淋巴結區域 (不含骨髓)
+    - stage: II
+      label: 多個同側淋巴結
+      description: 橫膈同側多個淋巴結區域受侵犯
+    - stage: III
+      label: 全身性淋巴結
+      description: 橫膈兩側淋巴結區域皆受侵犯
+    - stage: IV
+      label: 肝脾侵犯
+      description: Stage I-III 加上肝臟及/或脾臟侵犯
+    - stage: V
+      label: 骨髓/血液/其他器官
+      description: Stage I-IV 加上骨髓浸潤或其他非淋巴器官侵犯
+  substaging:
+    clinicalSubstage:
+      - { substage: a, description: 無全身症狀 }
+      - { substage: b, description: 有全身症狀 (食慾下降、嗜睡、體重減輕等) }
+
+treatment:
+  principles:
+    - 化療為犬多中心型淋巴瘤標準治療
+    - 貓低度惡性消化道淋巴瘤以 chlorambucil + prednisolone 為主
+    - 目標為達到完全緩解 (CR) 並延長生存期
+    - 高鈣血症需優先處理
+  medications:
+    - name: CHOP Protocol (犬，Wisconsin-Madison 修改版)
+      dose: "Cyclophosphamide 250 mg/m² + Doxorubicin 30 mg/m² + Vincristine 0.7 mg/m² + Prednisolone 2 mg/kg"
+      notes: 犬多中心型金標準。25 週療程。CR 率約 80-90%。中位存活 10-14 個月
+    - name: COP Protocol
+      dose: "Cyclophosphamide 200-250 mg/m² + Vincristine 0.7 mg/m² + Prednisolone"
+      notes: 無 doxorubicin 的替代方案。CR 率約 60-70%。中位存活 6-8 個月
+    - name: Chlorambucil + Prednisolone (貓低度惡性)
+      dose: "Chlorambucil 2 mg/cat PO 隔日 + Prednisolone 2 mg/kg PO SID (漸減至隔日)"
+      notes: 貓小細胞消化道淋巴瘤首選。CR/PR 率約 50-70%。中位存活 >2 年
+    - name: Lomustine (CCNU)
+      dose: "70-90 mg/m² PO q3wk"
+      notes: 救援治療。肝毒性風險，需監測肝指數
+    - name: Rabacfosadine (Tanovea)
+      dose: "1 mg/kg IV q3wk × 5 次"
+      notes: 犬淋巴瘤新型藥物。初治或復發型
+  general:
+    - 高鈣血症處理：IV saline diuresis、furosemide、prednisolone
+    - Prednisolone 單藥 (飼主拒絕化療)：中位存活 1-2 個月
+    - 放射治療 (鼻腔型、Stage I)
+    - 貓高度惡性消化道淋巴瘤：CHOP-based protocol
+    - 骨髓抑制監測 (化療前 CBC)
+    - 化療前 nadir CBC 評估 (每次化療前)
+    - 止吐預防 (maropitant、ondansetron)
+
+prognosis: 犬多中心型 B-cell CHOP 化療中位存活 10-14 個月，約 20-25% 存活 >2 年。T-cell 預後較差 (中位存活 6-9 個月)。Substage b 預後差於 a。貓低度惡性消化道淋巴瘤中位存活 >2 年。貓高度惡性中位存活 2-9 個月。未治療中位存活 4-6 週。
+
+ontologyMappings:
+  - source: MONDO
+    code: "MONDO:0005062"
+    label: lymphoma
+    confidence: exact
+
+guidelineRefs:
+  - sourceOrg: VCOG
+    title: "Veterinary Cooperative Oncology Group (VCOG) — Common Terminology Criteria for Adverse Events v2"
+    url: https://pubmed.ncbi.nlm.nih.gov/27529590/
+    type: guideline
+    pmid: "27529590"
+
+pubmedQueries:
+  - query: '"lymphoma" AND (dog OR cat OR canine OR feline) AND ("chemotherapy" OR "CHOP" OR "consensus")'
+    frequency: monthly

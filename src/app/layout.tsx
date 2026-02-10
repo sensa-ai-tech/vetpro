@@ -21,6 +21,16 @@ export const metadata: Metadata = {
   description:
     "結構化獸醫疾病知識庫，彙整 PubMed、ACVIM、WSAVA、IRIS 等開源資源，自動追蹤最新文獻。",
   keywords: ["獸醫", "百科", "veterinary", "disease", "ACVIM", "PubMed"],
+  openGraph: {
+    title: "VetPro — 獸醫百科",
+    description:
+      "結構化獸醫疾病知識庫，彙整 PubMed、ACVIM、WSAVA、IRIS 等開源資源，自動追蹤最新文獻。",
+    siteName: "VetPro",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+  },
 };
 
 export default function RootLayout({

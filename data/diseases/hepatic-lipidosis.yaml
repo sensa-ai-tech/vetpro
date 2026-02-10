@@ -1,0 +1,126 @@
+slug: hepatic-lipidosis
+nameEn: Hepatic Lipidosis
+nameZh: 肝臟脂肪變性
+bodySystem: gastrointestinal
+description: 貓特有的嚴重肝臟疾病，大量三酸甘油酯蓄積於肝細胞導致肝功能衰竭。為貓最常見的肝臟疾病。
+
+aliases:
+  - { alias: Fatty Liver Disease, language: en }
+  - { alias: Feline Hepatic Lipidosis, language: en }
+  - { alias: FHL, language: en }
+  - { alias: 貓脂肪肝, language: zh }
+
+species:
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓最常見肝臟疾病。好發中年肥胖貓。厭食 2-7 天即可誘發。60% 有潛在原發疾病 (繼發性)。
+
+etiology:
+  categories:
+    - name: 原發性 (特發性)
+      examples:
+        - 肥胖貓長時間 (>2-3 天) 厭食
+        - 突然飲食改變或壓力事件導致食慾廢絕
+        - 脂質代謝異常 (VLDL 組裝/分泌缺陷)
+    - name: 繼發性 (約 60%)
+      examples:
+        - 胰臟炎
+        - IBD / 慢性腸病
+        - 膽管炎/膽管肝炎
+        - 糖尿病
+        - 腎臟疾病
+        - 腫瘤
+        - 上呼吸道感染 (嗅覺喪失→厭食)
+    - name: 病理機轉
+      examples:
+        - 厭食→周邊脂肪動員→肝臟過度攝取脂肪酸
+        - 蛋白質/營養不足→VLDL 合成障礙→脂肪無法輸出
+        - 肝細胞 >80% 空泡化→膽汁淤滯→肝功能衰竭
+
+clinicalSigns:
+  early:
+    - 食慾下降/厭食 (2-7 天)
+    - 嗜睡
+    - 體重減輕 (肥胖貓急速消瘦)
+  progressive:
+    - 嘔吐
+    - 黃疸 (皮膚、黏膜、鞏膜黃染)
+    - 脫水
+    - 肝腫大 (可觸診)
+    - 肌肉萎縮
+  late:
+    - 肝性腦病 (行為改變、流涎、頭部壓牆)
+    - 凝血異常 (維生素 K 吸收障礙)
+    - 低鉀血症 (肌肉無力、頸部下垂)
+    - 嚴重膽汁淤滯
+
+diagnosis:
+  primaryTests:
+    - name: 肝指數 (ALT、AST、ALP、GGT)
+      notes: "ALP 顯著升高 (>500 U/L 常見)。GGT 正常或僅輕度升高 (GGT/ALP 比低為肝脂肪變性特徵；GGT↑↑提示膽管炎)"
+    - name: 膽紅素
+      notes: "明顯升高 (總膽紅素 >5 mg/dL 常見)"
+    - name: 細針抽吸 (FNA) 或肝臟切片
+      notes: "FNA 細胞學：肝細胞內大量脂肪空泡。確診標準。超音波導引安全性高"
+  imaging:
+    - name: 腹部超音波
+      notes: "肝臟瀰漫性高迴音 (較腎臟皮質亮)、肝腫大。評估膽道系統、胰臟、其他器官"
+  additional:
+    - CBC (非特異性變化)
+    - 生化 (低白蛋白、低 BUN、高膽固醇、電解質異常)
+    - 凝血功能 (PT/APTT 可能延長)
+    - 膽汁酸 (升高)
+    - 血氨 (肝性腦病時升高)
+    - 電解質 (低鉀、低磷、低鎂)
+
+treatment:
+  principles:
+    - 營養支持為治療核心 (放置食道管或鼻胃管)
+    - 矯正脫水與電解質異常
+    - 找出並治療潛在原發疾病
+    - 強制灌食至少 4-6 週
+  medications:
+    - name: Vitamin K1
+      dose: "0.5-1.5 mg/kg SC BID-TID × 3 劑"
+      notes: 矯正凝血異常。放置食道管前須先給予
+    - name: Mirtazapine
+      dose: "1.88 mg/cat PO q48h 或 transdermal 2 mg/cat q48h"
+      notes: 食慾促進劑，輔助恢復自主進食
+    - name: Maropitant
+      dose: "1 mg/kg SC/IV SID"
+      notes: 止吐
+    - name: SAMe (S-adenosylmethionine)
+      dose: "90 mg/cat PO SID 空腹"
+      notes: 肝臟保護、抗氧化
+    - name: L-Carnitine
+      dose: "250-500 mg/cat/day PO"
+      notes: 促進脂肪酸 β-氧化
+  general:
+    - 食道管 (esophagostomy tube) 放置 — 長期營養支持首選 (4-6 週)
+    - 管灌飲食：高蛋白 (30-40% ME)、適度脂肪，避免碳水化合物為主
+    - 初始少量多餐 (RER 的 25% 起始，3-5 天內漸增至 100%)
+    - 再餵食症候群預防：補充磷 (KPO4) 、鉀、鎂
+    - IV 輸液 (避免含 dextrose 的液體)
+    - Taurine 補充 (250 mg/cat/day)
+    - Thiamine (Vit B1) 補充 (100 mg/cat/day)
+    - 肝性腦病：lactulose 0.5 mL/kg PO BID-TID
+
+prognosis: 積極營養支持下存活率約 60-85%。食道管管灌飲食至少 4-6 週，部分需 8-12 週。預後取決於潛在原發疾病是否可控。原發性較繼發性預後略佳。自主進食恢復為停止管灌的指標。
+
+ontologyMappings:
+  - source: MONDO
+    code: "MONDO:0001146"
+    label: fatty liver disease
+    confidence: broad
+
+guidelineRefs:
+  - sourceOrg: ACVIM
+    title: "ACVIM Consensus Statement on the Management of Hepatic Disorders in Cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/19175084/
+    type: consensus
+    pmid: "19175084"
+
+pubmedQueries:
+  - query: '"hepatic lipidosis" AND (cat OR feline) AND ("treatment" OR "nutrition" OR "esophagostomy")'
+    frequency: monthly

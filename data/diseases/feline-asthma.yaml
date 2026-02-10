@@ -1,0 +1,112 @@
+slug: feline-asthma
+nameEn: Feline Asthma
+nameZh: 貓哮喘
+bodySystem: respiratory
+description: 貓下呼吸道的慢性過敏性炎症疾病，以可逆性支氣管收縮、氣道高反應性與嗜酸球浸潤為特徵。
+
+aliases:
+  - { alias: Feline Allergic Bronchitis, language: en }
+  - { alias: Feline Bronchial Disease, language: en }
+  - { alias: Feline Lower Airway Disease, language: en }
+  - { alias: 貓支氣管哮喘, language: zh }
+
+species:
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 盛行率約 1-5%。暹羅貓可能有品種傾向。通常 2-8 歲間發病。
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬罕見真正的哮喘。犬的慢性支氣管炎為不同疾病實體。
+
+etiology:
+  categories:
+    - name: 過敏性/免疫介導
+      examples:
+        - Th2 免疫反應驅動的氣道炎症
+        - 環境過敏原 (塵蟎、花粉、黴菌)
+        - 貓砂粉塵
+        - 香菸煙霧、芳香劑
+    - name: 促發/加重因素
+      examples:
+        - 二手菸暴露
+        - 室內空氣汙染
+        - 肥胖
+        - 緊迫
+        - 心絲蟲相關呼吸道疾病 (HARD)
+
+clinicalSigns:
+  early:
+    - 間歇性咳嗽 (蹲伏姿勢，頸部伸展)
+    - 輕度喘鳴 (wheezing)
+    - 偶發性呼吸急促
+  progressive:
+    - 咳嗽頻率增加
+    - 呼氣性呼吸困難
+    - 可聽診到呼氣相哮鳴音
+    - 運動不耐
+    - 開口呼吸 (貓的嚴重呼吸窘迫徵兆)
+  late:
+    - 急性呼吸窘迫 (哮喘發作)
+    - 發紺
+    - 黏液栓塞導致肺葉塌陷
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔 X 光
+      notes: "典型表現：支氣管壁增厚 (doughnut/tram line signs)、肺過度充氣、橫膈後移。可能正常"
+    - name: 支氣管肺泡灌洗 (BAL)
+      notes: "嗜酸球 >17% 高度提示。需全身麻醉 (在病情穩定時執行)"
+    - name: CBC
+      notes: "周邊血嗜酸球增多 (約 20-50% 病例)"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "首選影像。典型支氣管紋路增加與肺過度充氣"
+    - name: 胸腔 CT
+      notes: "可更敏感地偵測支氣管壁增厚與氣體滯留"
+  additional:
+    - 糞便浮游法 (排除肺蟲 Aelurostrongylus abstrusus)
+    - 心絲蟲抗體/抗原檢測 (排除 HARD)
+    - 心臟超音波 (排除心臟疾病)
+    - 過敏原檢測 (研究階段，臨床實用性有限)
+
+treatment:
+  principles:
+    - 減少氣道炎症 (抗炎治療為基石)
+    - 支氣管擴張 (急性發作)
+    - 環境過敏原控制
+    - 急性嚴重發作需緊急處理
+  medications:
+    - name: Fluticasone (吸入型)
+      dose: "110-220 μg BID (經 AeroKat 面罩)"
+      notes: 長期控制首選。副作用最少。需貓配合面罩使用
+    - name: Prednisolone (口服)
+      dose: "1-2 mg/kg PO SID × 5-7 天，後遞減至最低有效劑量"
+      notes: 無法使用吸入劑時的替代。長期使用注意糖尿病風險
+    - name: Albuterol/Salbutamol (吸入型)
+      dose: "100 μg/puff，1-2 puffs PRN (經 AeroKat 面罩)"
+      notes: 急性支氣管擴張救援用藥。不可單獨作為長期治療
+    - name: Terbutaline
+      dose: "0.01 mg/kg SC/IM (急救)；0.625-1.25 mg/cat PO BID (口服)"
+      notes: 注射型用於急性發作急救
+  general:
+    - AeroKat 面罩吸入治療訓練
+    - 環境控制 (無塵貓砂、空氣清淨機、禁菸)
+    - 體重管理
+    - 減少緊迫
+    - 排除並治療呼吸道寄生蟲
+
+emergencyNotes: 急性哮喘發作為急症。最小化壓力處理 (先氧氣補充)。Terbutaline 0.01 mg/kg SC/IM 快速支氣管擴張。Dexamethasone 0.25-0.5 mg/kg IV/IM。避免過度保定加重呼吸窘迫。
+
+prognosis: 多數貓在規律吸入型類固醇治療下可良好控制。少數嚴重病例可能進展為不可逆氣道重塑。急性嚴重發作若及時處理預後良好。
+
+ontologyMappings:
+  - source: MONDO
+    code: "MONDO:0004766"
+    label: asthma
+    confidence: broad
+
+pubmedQueries:
+  - query: '"feline asthma" OR "feline lower airway disease" AND (cat OR feline) AND ("treatment" OR "diagnosis")'
+    frequency: monthly

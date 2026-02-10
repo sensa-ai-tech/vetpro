@@ -1,0 +1,142 @@
+slug: intervertebral-disc-disease
+nameEn: Intervertebral Disc Disease
+nameZh: 椎間盤疾病
+bodySystem: neurology
+description: 椎間盤退化導致的脊髓壓迫性疾病，為犬最常見的脊髓疾病。依據退化類型分為 Hansen Type I 與 Type II。
+
+aliases:
+  - { alias: IVDD, language: en }
+  - { alias: Disc Herniation, language: en }
+  - { alias: Slipped Disc, language: en }
+  - { alias: 椎間盤突出, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: Hansen Type I 好發於軟骨發育不良品種 (Dachshund、French Bulldog、Beagle、Pekingese、Cocker Spaniel)。Dachshund 終生發病率約 19-24%。Type II 好發於大型犬。通常 3-7 歲發病。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓較少見。發生時多為胸腰段。臨床表現可能不典型。
+
+etiology:
+  categories:
+    - name: Hansen Type I (椎間盤脫出)
+      examples:
+        - 髓核軟骨樣變性 (chondroid metaplasia)
+        - 鈣化的髓核急性脫出穿過纖維環
+        - 好發於軟骨發育不良品種
+        - 急性脊髓壓迫與挫傷
+    - name: Hansen Type II (椎間盤突出)
+      examples:
+        - 髓核纖維樣變性 (fibroid metaplasia)
+        - 纖維環慢性突出
+        - 好發於大型犬
+        - 慢性進展性脊髓壓迫
+    - name: Hansen Type III (急性非壓迫性)
+      examples:
+        - 高速少量髓核脫出 (acute non-compressive nucleus pulposus extrusion)
+        - 引起脊髓挫傷但無持續壓迫
+        - 預後通常較佳
+
+clinicalSigns:
+  early:
+    - 脊柱疼痛 (頸部僵硬或背痛)
+    - 不願活動/跳躍
+    - 弓背姿勢
+    - 頸部低垂 (頸段 IVDD)
+  progressive:
+    - 運動失調 (ataxia)
+    - 本體感覺異常
+    - 不完全癱瘓 (paresis)
+    - 步態異常
+  late:
+    - 完全癱瘓 (plegia)
+    - 深層痛覺喪失 (最嚴重，預後差)
+    - 尿失禁/尿滯留
+    - 上行性脊髓軟化症 (罕見但致命)
+
+diagnosis:
+  primaryTests:
+    - name: 完整神經學檢查
+      notes: "定位病灶：頸段 (C1-C5, C6-T2)、胸腰段 (T3-L3)、腰薦段 (L4-S3)。評估深層痛覺"
+    - name: MRI
+      notes: "金標準。可評估脊髓壓迫程度、脊髓水腫/出血、精準定位。需全身麻醉"
+    - name: CT
+      notes: "可快速識別鈣化髓核脫出。CT myelography 可替代 MRI"
+  imaging:
+    - name: 脊髓 MRI
+      notes: "首選影像學。評估壓迫與脊髓變化"
+    - name: CT / CT myelography
+      notes: "MRI 無法取得時的替代選擇"
+    - name: X 光
+      notes: "可見椎間隙狹窄、髓核鈣化，但無法直接評估脊髓壓迫"
+  additional:
+    - 脊髓攝影 (myelography，目前少用)
+    - CBC/生化 (術前評估)
+    - 凝血功能
+
+stagingSystem:
+  name: Modified Frankel Scale (神經學分級)
+  stages:
+    - stage: 1
+      label: 僅疼痛
+      description: 脊柱疼痛但神經功能正常
+    - stage: 2
+      label: 輕度不全癱瘓
+      description: 運動失調，仍可行走 (ambulatory paresis)
+    - stage: 3
+      label: 重度不全癱瘓
+      description: 無法行走但有自主運動 (non-ambulatory paresis)
+    - stage: 4
+      label: 完全癱瘓，有深層痛覺
+      description: 完全癱瘓但深層痛覺存在
+    - stage: 5
+      label: 完全癱瘓，無深層痛覺
+      description: 完全癱瘓且深層痛覺喪失。預後最差
+
+treatment:
+  principles:
+    - 治療選擇取決於神經學分級
+    - Grade 1-2 可考慮內科保守治療
+    - Grade 3-5 建議手術減壓
+    - 深層痛覺喪失 >48 小時預後極差
+  medications:
+    - name: Gabapentin
+      dose: "5-10 mg/kg PO BID-TID"
+      notes: 疼痛管理。可與 NSAIDs 合併使用
+    - name: Methocarbamol
+      dose: "15-44 mg/kg PO BID-TID"
+      notes: 肌肉鬆弛劑，緩解肌肉痙攣
+    - name: NSAIDs (Meloxicam, Carprofen)
+      dose: "依藥物標準劑量"
+      notes: 抗炎止痛。避免與類固醇同時使用
+    - name: Prednisolone (爭議)
+      dose: "0.5-1 mg/kg PO SID (短期)"
+      notes: 目前證據不支持常規使用類固醇。避免與 NSAIDs 同時使用
+  general:
+    - 手術：hemilaminectomy (胸腰段)、ventral slot (頸段)
+    - 嚴格籠內休息 4-6 週 (保守治療或術後)
+    - 物理復健 (水中跑步機、被動關節活動、神經肌肉電刺激)
+    - 膀胱管理 (尿滯留時定時擠壓或導尿)
+    - 體重管理
+
+prognosis: Grade 1-3 手術成功率 >90%。Grade 4 手術成功率約 85-95%。Grade 5 (深層痛覺喪失) 手術成功率約 50-60%，深層痛覺喪失 >48 小時預後極差。保守治療復發率約 30-50%。
+
+ontologyMappings:
+  - source: MONDO
+    code: "MONDO:0005116"
+    label: intervertebral disc disease
+    confidence: exact
+
+guidelineRefs:
+  - sourceOrg: ACVIM
+    title: "ACVIM Small Animal Consensus Statement on Diagnosis and Treatment of IVDD"
+    url: https://pubmed.ncbi.nlm.nih.gov/32056285/
+    type: consensus
+    pmid: "32056285"
+
+pubmedQueries:
+  - query: '"intervertebral disc disease" AND dog AND ("surgery" OR "conservative" OR "consensus")'
+    frequency: monthly

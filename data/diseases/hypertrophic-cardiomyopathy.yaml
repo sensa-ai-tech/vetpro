@@ -1,0 +1,137 @@
+slug: hypertrophic-cardiomyopathy
+nameEn: Hypertrophic Cardiomyopathy
+nameZh: 肥厚性心肌病
+bodySystem: cardiac
+description: 左心室壁異常肥厚的原發性心肌疾病，為貓最常見的心臟病，亦可見於犬。
+
+aliases:
+  - { alias: HCM, language: en }
+  - { alias: 肥厚型心肌症, language: zh }
+  - { alias: Hypertrophic Obstructive Cardiomyopathy, language: en }
+  - { alias: HOCM, language: en }
+
+species:
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 盛行率約 15%。Maine Coon (MYBPC3 A31P)、Ragdoll (MYBPC3 R820W) 有已知基因突變。公貓風險較高。
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬少見。偶見於 GSD、Cavalier King Charles Spaniel。
+
+etiology:
+  categories:
+    - name: 原發性/遺傳性
+      examples:
+        - 肌節蛋白基因突變 (MYBPC3 為主)
+        - 體染色體顯性遺傳 (Maine Coon、Ragdoll)
+        - 多數貓為多基因/未知基因突變
+    - name: 繼發性 (需排除)
+      examples:
+        - 甲狀腺功能亢進
+        - 全身性高血壓
+        - 先天性主動脈瓣下狹窄
+        - 肢端肥大症 (GH 分泌腫瘤)
+
+clinicalSigns:
+  early:
+    - 多為無症狀 (偶然發現心雜音或奔馬音)
+    - 輕度活動力下降
+    - 心雜音 (動態性 SAM 造成)
+  progressive:
+    - 呼吸急促/費力
+    - 運動不耐
+    - 開口呼吸 (貓)
+    - 奔馬音 (S4 gallop)
+  late:
+    - 充血性心衰竭 (肺水腫、胸水)
+    - 動脈血栓栓塞 (ATE，主動脈分叉處鞍狀血栓)
+    - 後肢癱瘓與疼痛 (ATE)
+    - 猝死
+    - 心律不整
+
+diagnosis:
+  primaryTests:
+    - name: 心臟超音波 (Echocardiography)
+      notes: "金標準。LV 壁厚 ≥6 mm (貓)。評估 SAM、LVOTO、LA 擴大、diastolic function"
+    - name: proBNP (NT-proBNP)
+      notes: "篩檢工具。貓 >100 pmol/L 建議心超檢查。正常值不能排除輕度 HCM"
+    - name: Cardiac Troponin I
+      notes: "心肌損傷標記，升高提示活動性心肌損傷"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "Valentine 心型 (貓)、肺水腫、胸水、左心房擴大"
+    - name: 心電圖 (ECG)
+      notes: "左心室肥厚、心律不整 (心房顫動、VPCs)。部分正常"
+  additional:
+    - 血壓測量 (排除繼發性高血壓)
+    - T4 (排除甲亢)
+    - 基因檢測 (Maine Coon MYBPC3 A31P、Ragdoll MYBPC3 R820W)
+    - Holter 監測 (評估心律不整風險)
+
+stagingSystem:
+  name: ACVIM HCM Staging
+  stages:
+    - stage: A
+      label: 高風險品種
+      description: 無結構異常。基因檢測陽性或高風險品種
+    - stage: B1
+      label: 輕度 HCM
+      description: 心壁增厚但左心房大小正常，無症狀
+    - stage: B2
+      label: 中度 HCM
+      description: 心壁增厚伴左心房擴大，無臨床症狀
+    - stage: C
+      label: 症狀性心衰竭
+      description: 肺水腫、胸水或 ATE。需要治療
+    - stage: D
+      label: 難治性心衰竭
+      description: 對標準治療反應不佳的終末期心衰竭
+
+treatment:
+  principles:
+    - 無症狀 HCM 治療仍有爭議
+    - 症狀性 CHF 需積極利尿與減壓
+    - ATE 預防為重要目標 (LA 擴大時)
+  medications:
+    - name: Furosemide
+      dose: "1-4 mg/kg IV/IM (急性 CHF)；1-2 mg/kg PO BID-TID (維持)"
+      notes: CHF 治療基石。監測腎功能與電解質
+    - name: Atenolol
+      dose: "6.25-12.5 mg/cat PO BID"
+      notes: β-blocker，降低心率、改善舒張充盈。LVOTO 有益。急性 CHF 時禁用
+    - name: Clopidogrel
+      dose: "18.75 mg/cat PO SID"
+      notes: 抗血小板藥物，LA 擴大時預防 ATE。FAT CAT study 顯示優於 aspirin
+    - name: Pimobendan
+      dose: "0.25 mg/kg PO BID"
+      notes: ACVIM Stage B2 考慮使用。有 LVOTO 時謹慎使用
+    - name: Benazepril
+      dose: "0.5-1 mg/kg PO SID"
+      notes: ACEi，可能有助於心室重塑。證據仍有限
+  general:
+    - 急性 CHF：氧氣、furosemide、減少壓力
+    - 胸水引流 (胸腔穿刺)
+    - ATE 治療：止痛 (buprenorphine/methadone)、抗凝血 (clopidogrel + heparin)
+    - 限鈉飲食 (症狀性 CHF)
+    - 居家呼吸速率監測 (resting respiratory rate，正常 <30 次/分)
+
+prognosis: 無症狀輕度 HCM 可存活數年。CHF 中位存活時間約 12-18 個月。ATE 預後極差，7 天存活率約 33-39%。LA/Ao ratio >2.0 為負面預後因子。
+
+ontologyMappings:
+  - source: MONDO
+    code: "MONDO:0005045"
+    label: hypertrophic cardiomyopathy
+    confidence: exact
+
+guidelineRefs:
+  - sourceOrg: ACVIM
+    title: "ACVIM Consensus Statement — Guidelines for the Classification, Diagnosis, and Management of Cardiomyopathies in Cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/32243682/
+    type: consensus
+    pmid: "32243682"
+
+pubmedQueries:
+  - query: '"hypertrophic cardiomyopathy" AND (cat OR feline) AND ("consensus" OR "guidelines" OR "treatment")'
+    frequency: monthly

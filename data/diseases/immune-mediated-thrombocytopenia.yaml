@@ -1,0 +1,126 @@
+slug: immune-mediated-thrombocytopenia
+nameEn: Immune-Mediated Thrombocytopenia
+nameZh: 免疫介導性血小板減少症
+bodySystem: hematology
+description: 免疫系統異常破壞自身血小板或抑制骨髓血小板生成，導致血小板嚴重減少與出血傾向。
+
+aliases:
+  - { alias: ITP, language: en }
+  - { alias: IMT, language: en }
+  - { alias: Immune Thrombocytopenic Purpura, language: en }
+  - { alias: 免疫性血小板減少性紫癜, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 好發中年母犬。Cocker Spaniel、Old English Sheepdog、Poodle 風險較高。約 50% 為原發性。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓罕見。常為繼發性 (FeLV、FIV、Mycoplasma)。
+
+etiology:
+  categories:
+    - name: 原發性 (自體免疫)
+      examples:
+        - 特發性 (約 50%)
+        - 抗血小板抗體 (IgG) 介導的血小板破壞
+        - 脾臟與肝臟巨噬細胞清除
+    - name: 繼發性
+      examples:
+        - 感染 (Ehrlichia、Anaplasma、Babesia、Leishmania)
+        - 藥物 (trimethoprim-sulfa、cephalosporins、phenobarbital)
+        - 疫苗相關 (MLV 疫苗後 1-3 週，罕見)
+        - 腫瘤 (淋巴瘤、血管肉瘤)
+        - 其他自體免疫疾病 (SLE、Evans syndrome — IMT + IMHA)
+
+clinicalSigns:
+  early:
+    - 皮膚瘀斑/瘀點 (petechiae/ecchymoses)
+    - 黏膜瘀點 (口腔、結膜)
+    - 鼻出血
+  progressive:
+    - 血尿
+    - 黑便 (消化道出血)
+    - 牙齦出血
+    - 嗜睡、虛弱
+    - 注射部位過度出血
+  late:
+    - 嚴重消化道出血
+    - 視網膜出血 (視力異常)
+    - 腦出血 (神經症狀)
+    - 關節血腫
+    - 失血性貧血
+
+diagnosis:
+  primaryTests:
+    - name: CBC
+      notes: "血小板嚴重減少 (通常 <30,000/μL，常 <10,000/μL)。巨血小板 (MPV 增加) 提示骨髓反應"
+    - name: 血液抹片
+      notes: "確認血小板減少 (排除 EDTA 假性血小板減少、貓血小板凝集)。評估血小板大小與形態"
+    - name: 骨髓檢查
+      notes: "巨核球數量正常或增加 (破壞性)。減少提示骨髓抑制或免疫介導性巨核球破壞"
+  imaging:
+    - name: 腹部超音波
+      notes: "排除脾臟腫瘤、淋巴結腫大、其他腫瘤"
+    - name: 胸腔 X 光
+      notes: "排除轉移性腫瘤"
+  additional:
+    - 抗血小板抗體檢測 (PF-4/heparin ELISA — 可用性受限)
+    - 凝血功能 (PT/APTT — ITP 正常，DIC 異常)
+    - PCR (Ehrlichia、Anaplasma、Babesia)
+    - ANA (排除 SLE)
+    - Coombs' test (排除 Evans syndrome)
+    - 尿液分析 (血尿)
+    - 網狀紅血球計數 (若合併貧血)
+
+treatment:
+  principles:
+    - 免疫抑制治療為基石
+    - 排除繼發性原因
+    - 血小板 <30,000/μL 需限制活動
+    - 輸血小板效果短暫 (被快速破壞)
+  medications:
+    - name: Prednisolone/Dexamethasone
+      dose: "Prednisolone 2 mg/kg PO BID (初始)；急性可用 Dexamethasone 0.3 mg/kg IV"
+      notes: 一線免疫抑制。抑制巨噬細胞吞噬 + 降低抗體產生。穩定後逐漸減量 (3-6 個月)
+    - name: Mycophenolate mofetil
+      dose: "10 mg/kg PO BID"
+      notes: 常作為第二線免疫抑制劑與類固醇合併使用
+    - name: Human IV Immunoglobulin (hIVIG)
+      dose: "0.5-1 g/kg IV over 6-12 hr (單次)"
+      notes: 急性嚴重出血時使用。阻斷 Fc 受體，快速 (24-48 hr) 提升血小板。費用高
+    - name: Vincristine
+      dose: "0.02 mg/kg IV (單次)"
+      notes: 促進骨髓釋放血小板。危及生命出血時的輔助治療
+    - name: Azathioprine (僅犬)
+      dose: "2 mg/kg PO SID × 2 週，後改隔日"
+      notes: 貓禁用。第二線免疫抑制
+  general:
+    - 嚴格籠休 (避免外傷誘發出血)
+    - 避免 IM 注射與靜脈穿刺
+    - 輸血 (pRBC) 若失血性貧血
+    - 血小板輸注僅用於致命性出血 (效果短暫 <數小時)
+    - 胃腸保護 (omeprazole，因高劑量類固醇)
+    - 排除蜱蟲傳染疾病 (經驗性 doxycycline 可考慮)
+    - Evans syndrome (IMT + IMHA)：更積極的免疫抑制
+
+prognosis: 原發性 ITP 對免疫抑制治療反應率約 70-90%。多數 2-7 天內血小板開始回升。復發率約 20-30%。Evans syndrome 預後較差。致命性出血 (CNS、嚴重消化道) 為主要死因。長期預後良好，多數可逐步停藥。
+
+ontologyMappings:
+  - source: MONDO
+    code: "MONDO:0003843"
+    label: immune thrombocytopenic purpura
+    confidence: exact
+
+guidelineRefs:
+  - sourceOrg: ACVIM
+    title: "ACVIM Consensus Statement on the Treatment of Immune-Mediated Hemolytic Anemia and Immune Thrombocytopenia in Dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/30806491/
+    type: consensus
+    pmid: "30806491"
+
+pubmedQueries:
+  - query: '"immune thrombocytopenia" AND (dog OR canine) AND ("treatment" OR "immunosuppressive")'
+    frequency: monthly

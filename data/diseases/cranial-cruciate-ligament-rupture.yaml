@@ -1,0 +1,116 @@
+slug: cranial-cruciate-ligament-rupture
+nameEn: Cranial Cruciate Ligament Rupture
+nameZh: 前十字韌帶斷裂
+bodySystem: orthopedic
+description: 膝關節前十字韌帶的部分或完全斷裂，為犬最常見的後肢跛行原因與骨科手術指征。
+
+aliases:
+  - { alias: CCL Rupture, language: en }
+  - { alias: CCLR, language: en }
+  - { alias: ACL Tear, language: en }
+  - { alias: 十字韌帶斷裂, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: very_common
+    notes: 犬最常見骨科疾病之一。好發品種：Labrador、Rottweiler、Newfoundland、Staffordshire Terrier。大型犬、過重犬風險較高。30-50% 雙側發生。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓較少見，通常與外傷有關而非退化性。過重貓風險較高。
+
+etiology:
+  categories:
+    - name: 退化性 (犬最常見機制)
+      examples:
+        - 韌帶慢性退化 (最常見)
+        - 慢性滑膜炎與免疫介導性機制
+        - 進行性部分撕裂至完全斷裂
+    - name: 風險因素
+      examples:
+        - 肥胖
+        - 品種遺傳傾向
+        - 膝蓋骨脫位
+        - 脛骨平台角度過大 (tibial plateau angle)
+        - 未絕育 (早期絕育改變體型發育)
+    - name: 外傷性
+      examples:
+        - 急性扭傷 (貓較常見此機制)
+        - 劇烈運動時的超伸展或旋轉
+
+clinicalSigns:
+  early:
+    - 後肢跛行 (急性發作或漸進性)
+    - 久坐後起身困難
+    - 運動後跛行加重
+    - 患肢觸碰膝關節疼痛
+  progressive:
+    - 持續性跛行
+    - 肌肉萎縮 (大腿肌群)
+    - 膝關節腫脹/積液
+    - Medial buttress (膝內側纖維增厚)
+    - 對側肢體代償性負重
+  late:
+    - 嚴重退化性關節炎
+    - 半月板損傷 (cranial horn of medial meniscus)
+    - 對側 CCL 斷裂 (30-50%)
+    - 慢性疼痛
+
+diagnosis:
+  primaryTests:
+    - name: 骨科檢查
+      notes: "Cranial drawer test (前抽屜試驗) 與 tibial thrust test (脛骨推進試驗) 陽性。可能需鎮靜放鬆肌肉"
+    - name: 膝關節 X 光
+      notes: "關節積液 (fat pad sign 消失)、骨關節炎變化、脛骨前移"
+    - name: Stifle joint palpation
+      notes: "膝關節腫脹、medial buttress、疼痛反應"
+  imaging:
+    - name: X 光 (膝關節)
+      notes: "標準篩檢。評估骨關節炎程度。術前測量 TPA (tibial plateau angle)"
+    - name: MRI
+      notes: "可直接觀察韌帶與半月板。費用高，通常非必要"
+    - name: 關節鏡
+      notes: "診斷與治療性。可同時處理半月板損傷"
+  additional:
+    - 關節液分析 (非感染性炎症)
+    - 對側膝關節評估
+    - 骨盆肢 X 光 (排除其他跛行原因)
+
+treatment:
+  principles:
+    - 手術為大型犬的首選治療
+    - 小型犬 (<15 kg) 部分可保守治療成功
+    - 術式選擇取決於犬體型、活動需求與外科醫師經驗
+    - 術後復健對恢復至關重要
+  medications:
+    - name: NSAIDs (Meloxicam, Carprofen, Robenacoxib)
+      dose: "依藥物標準劑量"
+      notes: 疼痛管理與抗炎。術前術後皆可使用
+    - name: Gabapentin
+      dose: "5-10 mg/kg PO BID-TID"
+      notes: 多模式止痛的輔助用藥
+    - name: Adequan (polysulfated glycosaminoglycan)
+      dose: "5 mg/kg IM 每 3-5 天 × 8 次"
+      notes: 關節保護。可減緩退化性關節炎進展
+    - name: Omega-3 脂肪酸
+      dose: "EPA+DHA 依體重補充"
+      notes: 輔助抗炎與關節保護
+  general:
+    - 手術選擇：TPLO (tibial plateau leveling osteotomy，目前首選)、TTA (tibial tuberosity advancement)、Extracapsular repair (側副韌帶穩定術，小型犬)
+    - 術後復健計畫 (被動關節活動、水中跑步機、肌力訓練)
+    - 體重管理 (減輕關節負擔)
+    - 活動限制 (術後 8-12 週)
+    - 保守治療：嚴格限制活動 6-8 週 + 物理治療 + 止痛
+
+prognosis: TPLO/TTA 術後 >90% 的犬恢復良好的功能。保守治療在小型犬成功率較高 (約 85%)，大型犬較差。多數犬術後會有輕度退化性關節炎但功能良好。對側 CCL 斷裂風險需告知飼主。
+
+ontologyMappings:
+  - source: MONDO
+    code: "MONDO:0001558"
+    label: rupture of anterior cruciate ligament
+    confidence: broad
+
+pubmedQueries:
+  - query: '"cranial cruciate ligament" AND dog AND ("TPLO" OR "surgical" OR "treatment")'
+    frequency: monthly

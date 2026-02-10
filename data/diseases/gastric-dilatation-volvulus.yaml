@@ -1,0 +1,127 @@
+slug: gastric-dilatation-volvulus
+nameEn: Gastric Dilatation-Volvulus
+nameZh: 胃擴張扭轉
+bodySystem: gastrointestinal
+description: 胃急性擴張並沿腸繫膜軸扭轉的外科急症，好發於大型深胸犬，未治療致死率極高。
+
+aliases:
+  - { alias: GDV, language: en }
+  - { alias: Bloat, language: en }
+  - { alias: Gastric Torsion, language: en }
+  - { alias: 胃扭轉, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 好發大型/巨型深胸犬。Great Dane (一生發生率約 42%)、GSD、Standard Poodle、Irish Setter、Weimaraner。高齡、單次大量餵食、餐後運動為風險因子。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 極罕見。
+
+etiology:
+  categories:
+    - name: 解剖/體型因素
+      examples:
+        - 深胸體型 (深度/寬度比大)
+        - 肝胃韌帶鬆弛
+        - 脾胃韌帶異常
+    - name: 飲食/管理因素
+      examples:
+        - 單次大量餵食
+        - 快速進食/吞嚥空氣 (aerophagia)
+        - 餐後劇烈運動
+        - 使用高架食盆 (有爭議)
+        - 食物含大量發酵性碳水化合物
+    - name: 其他風險因子
+      examples:
+        - 品種遺傳傾向
+        - 高齡
+        - 焦慮型氣質
+        - 一等親有 GDV 病史
+        - 脾臟切除後 (爭議性)
+
+clinicalSigns:
+  early:
+    - 焦躁不安
+    - 嘗試嘔吐但無法吐出 (非生產性嘔吐/作嘔)
+    - 流涎
+    - 腹部膨脹 (尤其左側)
+  progressive:
+    - 明顯腹部膨脹 (叩診鼓音)
+    - 呼吸困難 (橫膈壓迫)
+    - 心搏過速
+    - 虛弱
+    - 蒼白黏膜/CRT 延長
+  late:
+    - 低血壓/分布性休克
+    - 心律不整 (VPCs，常在手術後 12-36 hr 出現)
+    - DIC
+    - 胃壁壞死
+    - 脾臟扭轉/梗塞
+    - 多器官衰竭
+
+diagnosis:
+  primaryTests:
+    - name: 理學檢查
+      notes: "腹部膨脹、叩診鼓音、非生產性嘔吐三聯徵。休克徵兆評估"
+    - name: 腹部 X 光 (右側躺)
+      notes: "經典 double bubble sign / shelf sign / compartmentalization。扭轉時幽門移位至背側"
+  imaging:
+    - name: 腹部 X 光
+      notes: "右側臥位最佳。評估胃擴張程度、是否扭轉、有無游離腹腔氣體 (胃穿孔)"
+  additional:
+    - 乳酸 (>6 mmol/L 提示胃壁壞死風險高)
+    - 血液氣體 (代謝性酸中毒)
+    - 電解質 (低鉀、低氯)
+    - CBC/生化 (基線)
+    - 凝血功能 (DIC 評估)
+    - ECG (心律不整監測，術前/術中/術後)
+
+treatment:
+  principles:
+    - 此為外科急症，穩定後盡快手術
+    - 休克復甦優先
+    - 胃減壓 (trocar 或胃管)
+    - 手術復位 + 胃固定術
+  medications:
+    - name: IV 晶體液 (LRS)
+      dose: "休克劑量 60-90 mL/kg/hr (犬)，快速靜脈通路 (雙靜脈管路)"
+      notes: 積極容量復甦。考慮膠體液 (HES 或 plasma)
+    - name: Lidocaine
+      dose: "2 mg/kg IV bolus，後 CRI 25-80 μg/kg/min"
+      notes: 術後心室性心律不整首選。抗心律不整 + 止痛 + 抗炎
+    - name: Methadone / Fentanyl
+      dose: "Methadone 0.2-0.5 mg/kg IV；Fentanyl CRI 2-5 μg/kg/hr"
+      notes: 止痛
+    - name: Maropitant
+      dose: "1 mg/kg IV"
+      notes: 止吐
+  general:
+    - 胃減壓 (18G 針頭 trocar 右側肋骨後方 或 口胃管)
+    - 手術：胃復位、評估胃壁及脾臟存活度、部分胃切除 (壞死時)、脾臟切除 (必要時)
+    - 右側切開胃固定術 (incisional gastropexy) — 預防復發 (必做)
+    - 術後心律不整監測 48-72 hr (VPCs 高峰在 12-36 hr 後)
+    - 術後逐漸恢復口服攝食
+    - 預防性胃固定術：高風險品種可在絕育手術時同時進行
+
+emergencyNotes: GDV 為真正的急診，延遲治療致死率極高。到院立即進行休克復甦 (雙靜脈管路、shock rate fluids)，同時胃減壓 (trocar 或胃管)。乳酸 >6 mmol/L 強烈提示胃壁壞死，術中評估存活度。術後 VPCs：Lidocaine bolus + CRI。R-on-T 現象需立即處理。
+
+prognosis: 總死亡率約 15-33% (含術中及術後)。無胃壁壞死存活率 >90%。需部分胃切除者死亡率升至 28-38%。脾臟切除不影響預後。未行胃固定術復發率 >75%。預防性胃固定術幾乎可完全預防扭轉。
+
+ontologyMappings:
+  - source: MONDO
+    code: "MONDO:0001956"
+    label: gastric volvulus
+    confidence: exact
+
+guidelineRefs:
+  - sourceOrg: ACVS
+    title: "ACVS — Gastric Dilatation-Volvulus"
+    url: https://www.acvs.org/small-animal/gastric-dilatation-volvulus
+    type: guideline
+
+pubmedQueries:
+  - query: '"gastric dilatation volvulus" AND dog AND ("gastropexy" OR "treatment" OR "prognosis")'
+    frequency: monthly

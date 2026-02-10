@@ -120,6 +120,21 @@ const BODY_SYSTEM_LABELS: Record<string, string> = {
   oncology: "腫瘤",
 };
 
+const BODY_SYSTEM_SPECIALTY: Record<string, string> = {
+  renal: "https://schema.org/Renal",
+  cardiac: "https://schema.org/Cardiovascular",
+  endocrine: "https://schema.org/Endocrine",
+  gastrointestinal: "https://schema.org/Gastroenterologic",
+  hematology: "https://schema.org/Hematologic",
+  dermatology: "https://schema.org/Dermatologic",
+  neurology: "https://schema.org/Neurologic",
+  respiratory: "https://schema.org/Pulmonary",
+  orthopedic: "https://schema.org/Musculoskeletal",
+  ophthalmology: "https://schema.org/Optometric",
+  infectious: "https://schema.org/InfectiousDisease",
+  oncology: "https://schema.org/Oncologic",
+};
+
 export default async function DiseasePage({
   params,
 }: {
@@ -135,8 +150,25 @@ export default async function DiseasePage({
   const treatment = parseJson(disease.treatment);
   const stagingSystem = parseJson(disease.stagingSystem);
 
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL || "https://vetpro.example.com";
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "MedicalCondition",
+    name: disease.nameEn,
+    alternateName: disease.nameZh || undefined,
+    description: disease.description || undefined,
+    url: `${siteUrl}/disease/${slug}`,
+    medicalSpecialty: BODY_SYSTEM_SPECIALTY[disease.bodySystem] || undefined,
+  };
+
   return (
     <div className="space-y-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Breadcrumb */}
       <nav className="text-sm text-muted">
         <Link href="/" className="hover:text-primary">

@@ -1,0 +1,145 @@
+slug: dilated-cardiomyopathy
+nameEn: Dilated Cardiomyopathy
+nameZh: 擴張性心肌病
+bodySystem: cardiac
+description: 心室擴張伴收縮功能障礙的心肌疾病，為大型犬最常見的後天性心臟病。
+
+aliases:
+  - { alias: DCM, language: en }
+  - { alias: 擴張型心肌症, language: zh }
+  - { alias: Congestive Cardiomyopathy, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 好發大型犬與巨型犬。Doberman Pinscher (盛行率高達 58%)、Great Dane、Irish Wolfhound、Boxer。公犬風險較高。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 因飼糧添加 taurine 後已大幅減少。仍偶見於 taurine 缺乏的飲食。
+
+etiology:
+  categories:
+    - name: 遺傳性/原發性
+      examples:
+        - Doberman (PDK4 基因突變、隱匿性心律不整型)
+        - Great Dane、Irish Wolfhound (品種好發)
+        - Boxer (ARVC 常歸類為 DCM 表型)
+    - name: 營養性
+      examples:
+        - Taurine 缺乏 (貓、美國 Cocker Spaniel、Golden Retriever)
+        - L-carnitine 缺乏 (Boxer)
+        - 無穀飲食相關 DCM (FDA 調查中，BEG diets)
+    - name: 其他
+      examples:
+        - Doxorubicin 心臟毒性
+        - 甲狀腺功能低下 (加重因子)
+        - 持續性心搏過速 (tachycardia-induced)
+        - 感染性心肌炎
+
+clinicalSigns:
+  early:
+    - 隱匿期：無明顯症狀 (尤其 Doberman 可持續數年)
+    - 運動不耐
+    - 輕度呼吸加快
+  progressive:
+    - 咳嗽 (左心衰竭，壓迫支氣管)
+    - 呼吸困難/急促
+    - 體重減輕/肌肉流失
+    - 腹部膨脹 (腹水，右心衰竭)
+  late:
+    - 充血性心衰竭 (肺水腫、胸水、腹水)
+    - 昏厥 (心律不整或低心輸出量)
+    - 猝死 (尤其 Doberman 心律不整型)
+    - 心因性休克
+
+diagnosis:
+  primaryTests:
+    - name: 心臟超音波 (Echocardiography)
+      notes: "金標準。LV 擴張、收縮功能降低 (FS <20%、EF <40%)、E-point septal separation (EPSS) 增大"
+    - name: NT-proBNP
+      notes: "篩檢隱匿期 DCM。犬 >900 pmol/L 高度懷疑"
+    - name: Cardiac Troponin I
+      notes: "心肌損傷標記，Doberman 隱匿期可能已升高"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "全心擴大 (VHS 增加)、肺靜脈擴張、肺水腫、胸水"
+    - name: 心電圖 (ECG)
+      notes: "心房顫動 (大型犬常見)、VPCs (Doberman >100/24hr Holter 為異常)"
+  additional:
+    - Holter 監測 24hr (Doberman 篩檢，VPCs >100/24hr)
+    - 全血 taurine 濃度 (懷疑營養性時)
+    - 基因檢測 (Doberman PDK4)
+    - 甲狀腺功能 (排除甲低)
+
+stagingSystem:
+  name: ACVIM DCM Staging
+  stages:
+    - stage: A
+      label: 高風險品種
+      description: 品種好發但無結構異常
+    - stage: B1
+      label: 隱匿期 (無心臟擴大)
+      description: 心律不整 (Doberman VPCs) 但無明顯結構變化
+    - stage: B2
+      label: 隱匿期 (心臟擴大)
+      description: 心室擴張、收縮功能下降但無臨床症狀
+    - stage: C
+      label: 症狀性心衰竭
+      description: 肺水腫、胸水或腹水。需要治療
+    - stage: D
+      label: 難治性心衰竭
+      description: 對標準治療反應不佳
+
+treatment:
+  principles:
+    - 隱匿期即應開始治療 (尤其 Doberman)
+    - CHF 以利尿、正性肌力、神經荷爾蒙拮抗為主
+    - 營養性 DCM 需補充 taurine/L-carnitine
+  medications:
+    - name: Pimobendan
+      dose: "0.25 mg/kg PO BID"
+      notes: 正性肌力 + 血管擴張。PROTECT study 顯示隱匿期 Doberman 延長 9 個月至 CHF。EPIC 參考
+    - name: Furosemide
+      dose: "2-4 mg/kg PO BID-TID (維持)；IV for acute CHF"
+      notes: CHF 必用。最低有效劑量
+    - name: Benazepril / Enalapril
+      dose: "Benazepril 0.5 mg/kg PO SID-BID；Enalapril 0.5 mg/kg PO BID"
+      notes: ACEi，降低後負荷、抑制 RAAS
+    - name: Spironolactone
+      dose: "1-2 mg/kg PO SID-BID"
+      notes: 醛固酮拮抗劑，與 furosemide 合用
+    - name: Sotalol / Mexiletine
+      dose: "Sotalol 2 mg/kg PO BID；Mexiletine 5-8 mg/kg PO TID"
+      notes: Doberman 心律不整 (VT) 控制。可合併使用
+  general:
+    - 急性 CHF：氧氣、IV furosemide、dobutamine CRI (重度低心輸出量)
+    - Taurine 補充 (250-500 mg PO BID，若缺乏)
+    - 限鈉飲食
+    - 適度運動限制
+    - 居家呼吸速率監測 (RRR)
+    - Doberman 品種建議每年 Holter + 心超篩檢
+
+prognosis: Doberman DCM 確診 CHF 後中位存活約 3-6 個月。其他大型犬 CHF 中位存活約 6-12 個月。Pimobendan 顯著改善存活時間。營養性 DCM (taurine 缺乏) 補充後可部分至完全恢復。猝死風險 (Doberman 約 30%) 為主要死因。
+
+ontologyMappings:
+  - source: MONDO
+    code: "MONDO:0005021"
+    label: dilated cardiomyopathy
+    confidence: exact
+
+guidelineRefs:
+  - sourceOrg: ACVIM
+    title: "ACVIM Consensus Statement — Guidelines for the Diagnosis and Treatment of Canine Chronic Valvular Heart Disease"
+    url: https://pubmed.ncbi.nlm.nih.gov/31846119/
+    type: consensus
+    pmid: "31846119"
+  - sourceOrg: ESVC
+    title: "Doberman Pinscher DCM Screening Guidelines"
+    url: https://www.esvc.org
+    type: guideline
+
+pubmedQueries:
+  - query: '"dilated cardiomyopathy" AND (dog OR canine) AND ("pimobendan" OR "treatment" OR "consensus")'
+    frequency: monthly
