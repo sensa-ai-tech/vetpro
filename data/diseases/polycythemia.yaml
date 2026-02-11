@@ -1,0 +1,119 @@
+slug: polycythemia
+nameEn: Polycythemia
+nameZh: 紅血球增多症
+bodySystem: hematology
+description: 紅血球壓積容積（PCV/HCT）異常升高的病理狀態。分為相對性（脫水）、絕對性原發性（真性紅血球增多症）與絕對性繼發性（EPO 介導）三類。高黏稠血液導致組織灌流不足與血栓風險。
+
+aliases:
+  - { alias: Erythrocytosis, language: en }
+  - { alias: Polycythemia Vera, language: en }
+  - { alias: PV, language: en }
+  - { alias: 真性紅血球增多症, language: zh }
+  - { alias: 紅血球過多症, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 原發性（真性）極罕見。繼發性較常見，可因慢性低血氧（心肺疾病）或 EPO 分泌腫瘤引起。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓亦可見原發性與繼發性紅血球增多症。腎臟腫瘤（腎細胞癌）為繼發性常見原因。
+
+etiology:
+  categories:
+    - name: 相對性紅血球增多症
+      examples:
+        - 脫水（血漿量減少，PCV 假性升高）
+        - 脾臟收縮（緊迫、epinephrine 釋放）
+    - name: 絕對性原發性（真性紅血球增多症）
+      examples:
+        - 骨髓紅血球系列自主性增殖（骨髓增殖性腫瘤）
+        - EPO 非依賴性
+        - JAK2 突變（人類已知，犬貓機制尚未完全確認）
+    - name: 絕對性繼發性（EPO 介導）
+      examples:
+        - 適當性：慢性低血氧（右至左心臟分流、慢性肺疾病、高海拔）
+        - 不適當性：EPO 分泌腫瘤（腎細胞癌、腎淋巴瘤、肝腫瘤）
+        - 腎囊腫或腎積水導致局部缺氧
+
+clinicalSigns:
+  early:
+    - 黏膜充血發紅（磚紅色）
+    - 嗜睡
+    - 食慾下降
+  progressive:
+    - 多渴多尿 (PU/PD)
+    - 視力異常（視網膜血管擴張、出血）
+    - 鼻出血 (epistaxis)
+    - 運動不耐
+    - 神經症狀（步態不穩、定向障礙）
+  late:
+    - 癲癇發作
+    - 血栓栓塞（腦血管、肺動脈）
+    - 心臟衰竭
+    - 多器官功能障礙
+
+diagnosis:
+  primaryTests:
+    - name: CBC
+      notes: "PCV/HCT 顯著升高（犬 >65%、貓 >50% 應高度懷疑）。確認非脫水造成（檢查總蛋白/白蛋白）"
+    - name: 血清 EPO 濃度
+      notes: "原發性：EPO 正常或降低。繼發性適當性：EPO 升高。繼發性不適當性：EPO 升高。區分原發 vs 繼發的關鍵"
+  imaging:
+    - name: 腹部超音波
+      notes: "評估腎臟腫瘤（腎細胞癌）、肝臟腫塊、腎囊腫"
+    - name: 心臟超音波
+      notes: "排除右至左心臟分流（如 Tetralogy of Fallot、反向 PDA）"
+    - name: 胸腔 X 光
+      notes: "排除慢性肺疾病、肺腫瘤"
+  additional:
+    - 動脈血氣分析（PaO2 評估低血氧性繼發性）
+    - 脈搏血氧儀（SpO2 初步篩檢低血氧）
+    - 骨髓穿刺（原發性：紅血球系列增生為主，無纖維化）
+    - 腹部 CT（偵測隱匿性 EPO 分泌腫瘤）
+    - 尿液分析
+
+treatment:
+  principles:
+    - 急性期以靜脈放血降低血液黏稠度
+    - 查找並治療根本病因
+    - 原發性以骨髓抑制藥物長期控制
+    - 維持 PCV 在安全範圍
+  medications:
+    - name: Hydroxyurea
+      dose: "30-50 mg/kg PO SID 初始，穩定後調降至最低有效劑量"
+      notes: 原發性紅血球增多症首選骨髓抑制劑。需每 1-2 週監測 CBC。副作用包括骨髓抑制、厭食。貓亦可使用
+  general:
+    - 靜脈放血 (phlebotomy)：急性期抽取 10-20 mL/kg 血液，同時等量晶體液補充
+    - 目標維持 PCV <60%（犬）或 <45%（貓）
+    - 繼發性：治療原發病因（手術切除 EPO 分泌腫瘤、矯正心臟分流）
+    - 低血氧性：氧氣補充、改善通氣
+    - 低劑量 aspirin (0.5 mg/kg PO SID 犬) 預防血栓
+    - 定期監測 PCV 與臨床症狀
+
+emergencyNotes: PCV >75% 為急症。立即靜脈放血 (10-20 mL/kg) 並以等量晶體液替換。監測血壓與神經狀態。癲癇發作以 diazepam 0.5-1 mg/kg IV 控制。
+
+prognosis: 相對性紅血球增多症矯正脫水後預後極佳。繼發性若能成功治療原發病因預後良好。原發性（真性紅血球增多症）以 hydroxyurea 加定期放血可維持數月至數年的生活品質。EPO 分泌腫瘤的預後取決於腫瘤類型與可切除性。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Primary erythrocytosis in dogs: a retrospective study"
+    url: https://pubmed.ncbi.nlm.nih.gov/23190170/
+    type: research
+    pmid: "23190170"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Polycythemia vera in a dog treated with hydroxyurea"
+    url: https://pubmed.ncbi.nlm.nih.gov/9436071/
+    type: case-report
+    pmid: "9436071"
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "Polycythaemia vera in a cat"
+    url: https://pubmed.ncbi.nlm.nih.gov/12765445/
+    type: case-report
+    pmid: "12765445"
+
+pubmedQueries:
+  - query: '"polycythemia" AND (dog OR cat OR canine OR feline) AND ("erythrocytosis" OR "hydroxyurea" OR "phlebotomy")'
+    frequency: monthly

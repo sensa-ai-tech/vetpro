@@ -1,0 +1,137 @@
+slug: permethrin-toxicosis
+nameEn: Permethrin Toxicosis
+nameZh: 百滅寧中毒（貓致命毒性）
+bodySystem: toxicology
+description: 貓暴露於高濃度百滅寧（permethrin）製品後引起的嚴重神經毒性中毒。犬用除蚤滴劑誤用於貓為最常見原因。貓缺乏有效的 glucuronidation 代謝能力，對 permethrin 極度敏感，未治療可致死。
+
+aliases:
+  - { alias: 百滅寧毒性, language: zh }
+  - { alias: 除蟲菊酯中毒, language: zh }
+  - { alias: 貓百滅寧中毒, language: zh }
+  - { alias: Pyrethroid Toxicosis, language: en }
+  - { alias: Permethrin Poisoning, language: en }
+  - { alias: Spot-on Toxicosis, language: en }
+
+species:
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓對 permethrin 極度敏感（致死劑量低至 50 mg/kg），因缺乏有效 glucuronyl transferase 代謝 permethrin。犬用高濃度除蚤滴劑（45-65% permethrin）誤用於貓為最常見致死原因。即使與施用犬同居接觸亦可中毒。
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬對 permethrin 耐受性良好，犬用劑量極少造成毒性。極高劑量或幼小犬可能出現輕度症狀。
+
+etiology:
+  categories:
+    - name: 暴露途徑
+      examples:
+        - 犬用高濃度 permethrin 滴劑誤用於貓（最常見）
+        - 貓與剛施用犬用 permethrin 滴劑的犬同居接觸（舔毛/親密接觸）
+        - 環境用殺蟲劑噴霧
+        - 含 permethrin 的紡織品處理劑
+    - name: 毒性劑量（貓）
+      examples:
+        - "毒性劑量：>50 mg/kg 即可出現症狀"
+        - "致死劑量：>100 mg/kg"
+        - 犬用滴劑含 45-65% permethrin，一管可含 250-1500 mg，對 3-5 kg 貓可達致死劑量
+    - name: 毒性機制
+      examples:
+        - Permethrin 為 Type I 合成除蟲菊酯
+        - 延遲鈉離子通道失活→神經持續去極化
+        - 貓缺乏有效 glucuronidation 代謝能力，清除極慢
+        - 造成中樞與周邊神經系統過度興奮
+
+clinicalSigns:
+  early:
+    - 耳朵震顫/抽動（通常為最早症狀，暴露後 1-12 小時）
+    - 皮膚肌肉顫動 (fasciculations)
+    - 耳廓過度敏感
+    - 躁動不安
+    - 流涎
+  progressive:
+    - 全身肌肉震顫 (generalized tremors)
+    - 步態不穩 (ataxia)
+    - 瞳孔散大 (mydriasis)
+    - 過度興奮/對刺激過度反應
+    - 嘔吐
+    - 下痢
+  late:
+    - 癲癇發作（全身性強直陣攣發作）
+    - 持續性癲癇重積 (status epilepticus)
+    - 高體溫（肌肉活動產熱）
+    - 橫紋肌溶解
+    - 呼吸衰竭
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 病史確認
+      notes: "詢問近期是否使用犬用除蚤產品於貓、是否與施用 permethrin 的犬同居、環境殺蟲劑使用。產品帶來確認成分與濃度"
+    - name: 臨床症狀辨識
+      notes: "貓出現耳朵震顫 + 全身肌肉顫動 + 近期除蚤產品暴露 = 高度懷疑 permethrin 中毒。為臨床診斷為主"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "排除吸入性肺炎（嚴重癲癇後可能發生）"
+  additional:
+    - 體溫監測（高體溫為嚴重指標）
+    - 血糖（癲癇發作可造成低血糖）
+    - CK (creatine kinase)——肌肉震顫/癲癇後升高
+    - 腎功能（橫紋肌溶解可導致急性腎損傷）
+    - 電解質（肌肉活動可造成高血鉀）
+    - 酸鹼/血氣分析（乳酸酸中毒）
+
+treatment:
+  principles:
+    - 控制震顫與癲癇為首要
+    - 去除皮膚殘留毒物
+    - 積極支持性治療
+    - 密切監測直至症狀完全消退
+  medications:
+    - name: Methocarbamol
+      dose: "55-220 mg/kg IV 緩慢給予（不超過 330 mg/kg/day）"
+      notes: 肌肉震顫首選治療。中樞性肌肉鬆弛劑。緩慢 IV 給予至效果（震顫控制）即停。可反覆給予
+    - name: Diazepam
+      dose: "0.5-1 mg/kg IV"
+      notes: 癲癇發作時使用。可與 methocarbamol 併用。短效，需監測是否復發
+    - name: Propofol
+      dose: "1-6 mg/kg IV bolus，後 CRI 0.1-0.4 mg/kg/min"
+      notes: 難治性癲癇或 methocarbamol + diazepam 無效時。需氣管插管準備。可用短期鎮靜
+    - name: Phenobarbital
+      dose: "2-4 mg/kg IV"
+      notes: 持續癲癇重積的替代藥物
+  general:
+    - 立即以溫水（非熱水）加洗碗精或貓用洗毛精徹底清洗皮膚去除殘留 permethrin
+    - 沐浴時避免貓體溫過低（保暖）
+    - 戴手套操作，避免人員經皮吸收
+    - IV 輸液維持水合與腎臟灌流
+    - 高體溫處理（主動降溫：濕毛巾、風扇、IV 室溫輸液。避免冰水浴致周邊血管收縮）
+    - 低刺激環境（暗室、減少噪音）
+    - 營養支持（震顫控制後提供食物，嚴重者鼻飼管）
+    - 住院監測至少 48-72 小時（症狀可持續 2-3 天）
+    - 返家前確認震顫完全消失至少 12 小時
+
+emergencyNotes: 貓 permethrin 中毒為急症。癲癇發作需立即以 diazepam 控制。高體溫 (>40°C) 需積極降溫。同時開始 methocarbamol IV 與皮膚清洗。Status epilepticus 考慮 propofol CRI 加氣管插管。橫紋肌溶解需積極輸液保護腎臟。
+
+prognosis: 及時治療（震顫/癲癇控制 + 去汙）預後良好，存活率 >90%。多數貓在 48-72 小時內完全恢復。併發 status epilepticus 或嚴重高體溫者預後較謹慎。未治療者死亡率高。橫紋肌溶解繼發急性腎損傷者預後較差。預防勝於治療——貓絕對不可使用犬用 permethrin 產品。
+
+guidelineRefs:
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "Permethrin spot-on intoxications in cats: a retrospective study"
+    url: https://pubmed.ncbi.nlm.nih.gov/20223679/
+    type: research
+    pmid: "20223679"
+  - sourceOrg: Veterinary Record
+    title: "Permethrin toxicosis in cats: retrospective study of 42 cases"
+    url: https://pubmed.ncbi.nlm.nih.gov/18849576/
+    type: research
+    pmid: "18849576"
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Pyrethrin and pyrethroid toxicosis in cats and dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/17316944/
+    type: review
+    pmid: "17316944"
+
+pubmedQueries:
+  - query: '"permethrin" AND (cat OR feline) AND ("toxicosis" OR "poisoning" OR "tremors" OR "seizures")'
+    frequency: monthly

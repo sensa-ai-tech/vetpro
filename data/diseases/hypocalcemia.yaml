@@ -1,0 +1,149 @@
+slug: hypocalcemia
+nameEn: Hypocalcemia
+nameZh: 低鈣血症
+bodySystem: electrolyte
+description: 血清離子化鈣濃度異常降低，可導致神經肌肉過度興奮、痙攣及致命性心律不整。最常見臨床場景為產後低鈣血症（子癲症）、副甲狀腺功能低下（術後）及急性胰臟炎。
+
+aliases:
+  - { alias: Hypocalcaemia, language: en }
+  - { alias: Low Calcium, language: en }
+  - { alias: Puerperal Tetany, language: en }
+  - { alias: Eclampsia, language: en }
+  - { alias: 低血鈣, language: zh }
+  - { alias: 鈣離子過低, language: zh }
+  - { alias: 子癲症, language: zh }
+  - { alias: 產後低鈣血症, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 子癲症（產後低鈣血症）好發於小型犬（Chihuahua、Yorkshire Terrier、Pomeranian），通常在分娩後 1-4 週。甲狀腺/副甲狀腺手術後醫源性低鈣亦常見。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 產後低鈣血症較犬少見但可發生。甲狀腺切除術後（治療甲亢）為重要病因。急性胰臟炎及 CKD 亦可引起。
+
+etiology:
+  categories:
+    - name: 副甲狀腺功能低下
+      examples:
+        - 甲狀腺/副甲狀腺手術後醫源性損傷（最常見的 hypoparathyroidism 原因）
+        - 原發性副甲狀腺功能低下（特發性、免疫介導性）
+        - 鎂缺乏導致 PTH 分泌障礙
+    - name: 產後低鈣血症（子癲症/Eclampsia）
+      examples:
+        - 泌乳期大量鈣流失（好發分娩後 1-4 週）
+        - 小型犬大胎數（Chihuahua、Toy breeds）
+        - 妊娠期過度鈣補充（抑制 PTH 分泌，反而加劇產後低鈣）
+    - name: 鈣螯合/沉積
+      examples:
+        - 急性胰臟炎（鈣皂化沉積）
+        - 乙二醇中毒（CaOx 結晶沉積）
+        - 大量輸血（枸櫞酸鈣螯合）
+        - 磷酸鈉灌腸劑（Fleet enema — 高磷導致鈣磷沉積，貓極危險）
+    - name: 維生素 D 缺乏/代謝障礙
+      examples:
+        - 慢性腎臟病（calcitriol 合成減少）
+        - 營養性（罕見，全肉飲食導致 Ca:P 失衡）
+    - name: 其他
+      examples:
+        - 腫瘤溶解症候群
+        - 急性腎衰竭
+        - 碱中毒（降低游離鈣比例）
+
+clinicalSigns:
+  early:
+    - 不安/焦躁
+    - 面部搔癢/摩擦（貓）
+    - 肌肉束攣（fasciculations）
+    - 步態僵硬
+    - 喘氣（犬）
+  progressive:
+    - 全身性肌肉震顫/痙攣
+    - 強直性痙攣（tetany）— 四肢僵直
+    - 高體溫（肌肉活動產熱）
+    - 心搏過速
+    - 過度流涎
+    - 瞳孔散大
+  late:
+    - 全身性癲癇發作
+    - 喉頭痙攣（呼吸困難）
+    - 嚴重心律不整（QT 延長、心室顫動）
+    - 心搏停止
+    - 死亡（未治療時）
+
+diagnosis:
+  primaryTests:
+    - name: 離子化鈣（iCa）
+      notes: "犬/貓正常 iCa：1.12-1.40 mmol/L（4.5-5.6 mg/dL）。臨床症狀通常出現在 iCa <0.8-0.9 mmol/L。iCa 較總鈣更準確反映生理活性鈣。低白蛋白時總鈣偏低但 iCa 可能正常"
+    - name: 血清總鈣
+      notes: "犬正常 9.0-11.5 mg/dL；貓正常 8.0-10.5 mg/dL。需考慮白蛋白校正值。總鈣 <7 mg/dL 通常有臨床症狀"
+    - name: 心電圖（ECG）
+      notes: "QT 間期延長為特徵性變化。嚴重時可見 ST 段異常、心室期外收縮"
+  imaging:
+    - name: 頸部超音波
+      notes: "評估副甲狀腺大小與回音性。術後 hypoparathyroidism 可見副甲狀腺縮小/缺失"
+    - name: 腹部超音波
+      notes: "評估腎臟（CKD）、胰臟（急性胰臟炎）"
+  additional:
+    - PTH（副甲狀腺素 — 低或不適當正常 = hypoparathyroidism）
+    - 磷（高磷合併低鈣提示 hypoparathyroidism 或腎衰竭）
+    - 鎂離子（低鎂可導致 PTH 抵抗與分泌障礙）
+    - 25-OH Vitamin D / Calcitriol
+    - 全血計數、生化（BUN/Cr、白蛋白、amylase/lipase）
+    - 哺乳史/手術史（子癲症/術後 hypoparathyroidism）
+
+treatment:
+  principles:
+    - 症狀性低鈣血症（痙攣/tetany）為急診
+    - 緩慢靜脈給予 calcium gluconate 並監測心電圖
+    - 急性期後轉換為口服鈣與維生素 D 維持
+    - 治療根本病因
+  medications:
+    - name: 10% Calcium gluconate（急性治療）
+      dose: "0.5-1.5 mL/kg IV slow（over 10-20 min），心電圖監控"
+      notes: 急性症狀性低鈣血症首選。靜推過快可致心搏過緩/心搏停止。監測心率，出現心搏過緩立即停止注射。可稀釋於等量 0.9% NaCl
+    - name: 10% Calcium gluconate CRI（維持）
+      dose: "5-15 mg/kg/hr elemental Ca IV CRI（約 60-90 mL/L 10% CaGluc 加入輸液）"
+      notes: 急性緩解後持續靜脈滴注維持。逐漸轉為口服。每 6-12 小時監測 iCa
+    - name: Calcium carbonate 口服
+      dose: "25-50 mg/kg/day elemental Ca PO，分 2-3 次（Tums 或碳酸鈣製劑）"
+      notes: 長期口服維持。與食物一起給予增加吸收
+    - name: Calcitriol（活性維生素 D3）
+      dose: "起始 20-30 ng/kg/day PO，維持 5-15 ng/kg/day"
+      notes: Hypoparathyroidism 長期治療必需。需 1-3 天起效。監測 iCa 避免過量致高鈣血症。比 ergocalciferol 起效快且調控容易
+    - name: Dihydrotachysterol（DHT）
+      dose: "0.02-0.03 mg/kg/day PO 起始，維持 0.01-0.02 mg/kg/day"
+      notes: 維生素 D 類似物，可替代 calcitriol。起效較 calcitriol 慢（1-7 天）
+  general:
+    - 子癲症：calcium gluconate IV + 停止哺乳（幼犬改人工餵養）
+    - 術後 hypoparathyroidism：calcitriol + 口服鈣長期替代
+    - 急性胰臟炎：治療胰臟炎，鈣通常隨病情改善而恢復
+    - 避免磷酸鈉灌腸劑（Fleet enema）用於貓（可致命性高磷低鈣）
+    - 妊娠期不應過度補鈣（抑制 PTH，加劇產後低鈣風險）
+    - 長期 calcitriol 治療需定期監測 iCa（每 1-2 週 → 穩定後每 3-6 個月）
+
+emergencyNotes: 症狀性低鈣血症（tetany/痙攣）為急診。10% calcium gluconate 0.5-1.5 mL/kg IV slow over 10-20 min，持續心電圖監控。子癲症母犬需立即 calcium gluconate IV 並停止哺乳。Fleet enema 造成的貓低鈣血症需同時處理高磷血症。
+
+prognosis: 子癲症經 calcium gluconate 治療後通常迅速改善，預後極佳。術後 hypoparathyroidism 若為暫時性（副甲狀腺挫傷/缺血），通常數天至數週恢復。永久性 hypoparathyroidism 需終身 calcitriol + 鈣補充，管理得當預後良好。急性胰臟炎相關低鈣通常隨胰臟炎恢復而改善。嚴重未治療的低鈣血症可致死。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Clinics of North America Small Animal Practice
+    title: "Disorders of calcium: hypercalcemia and hypocalcemia"
+    url: https://pubmed.ncbi.nlm.nih.gov/28012876/
+    type: review
+    pmid: "28012876"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Hypoparathyroidism in dogs and cats — clinical features and long-term management"
+    url: https://pubmed.ncbi.nlm.nih.gov/25818203/
+    type: research
+    pmid: "25818203"
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Puerperal tetany in small animals — eclampsia revisited"
+    url: https://pubmed.ncbi.nlm.nih.gov/23855441/
+    type: review
+    pmid: "23855441"
+pubmedQueries:
+  - query: '"hypocalcemia" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "eclampsia" OR "hypoparathyroidism")'
+    frequency: monthly

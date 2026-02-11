@@ -1,0 +1,143 @@
+slug: peripheral-neuropathy
+nameEn: Peripheral Neuropathy
+nameZh: 周邊神經病變
+bodySystem: neurology
+description: 周邊神經系統的結構或功能異常，包括運動神經、感覺神經或自主神經的病變。犬貓可為遺傳性、後天性或特發性。
+
+aliases:
+  - { alias: Polyneuropathy, language: en }
+  - { alias: Peripheral Nerve Disease, language: en }
+  - { alias: 多發性神經病變, language: zh }
+  - { alias: 末梢神經病變, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 遺傳性多發性神經病好發品種各異。後天性以免疫介導性最常見。急性多發性神經根神經炎 (Coonhound paralysis/AIPN) 臨床類似人類 Guillain-Barre 症候群。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓最常見為糖尿病性神經病變 (跗關節著地步態)。其他包括甲亢性、FIP 相關、副腫瘤性神經病變。
+
+etiology:
+  categories:
+    - name: 免疫介導性
+      examples:
+        - 急性多發性神經根神經炎 (acute idiopathic polyradiculoneuritis, AIPN)
+        - 慢性炎症性脫髓鞘性多發性神經病 (CIDP)
+        - 重症肌無力相關 (Myasthenia gravis)
+    - name: 代謝性/內分泌性
+      examples:
+        - 糖尿病性神經病變 (貓最常見)
+        - 甲狀腺功能低下性神經病 (犬)
+        - 胰島素瘤相關低血糖性神經病
+        - 高脂血症性神經病
+    - name: 遺傳性
+      examples:
+        - 遺傳性感覺運動神經病 (品種特異性)
+        - 巨型軸突神經病 (German Shepherd)
+        - 喉返神經麻痺-多發性神經病 (Dalmatian、Rottweiler)
+        - 遠端對稱性多發性神經病 (各品種)
+    - name: 中毒性
+      examples:
+        - 鉛中毒
+        - 有機磷/胺基甲酸酯
+        - 長春花生物鹼 (Vincristine 化療副作用)
+        - 蜱蟲麻痺 (tick paralysis)
+    - name: 副腫瘤性
+      examples:
+        - 胰島素瘤相關
+        - 淋巴瘤相關
+        - 其他腫瘤相關
+
+clinicalSigns:
+  early:
+    - 後肢無力 (通常對稱性)
+    - 運動不耐受
+    - 步態異常 (短步態、兔跳步態)
+    - 聲音改變 (喉返神經受累)
+  progressive:
+    - 四肢進行性無力 (下運動神經元型)
+    - 肌肉萎縮 (遠端為主的神經原性萎縮)
+    - 脊柱反射減弱或消失
+    - 跗關節著地步態 (plantigrade stance，貓糖尿病性神經病特徵)
+    - 吞嚥困難 (顱神經受累)
+  late:
+    - 四肢癱瘓 (弛緩性)
+    - 呼吸肌無力 (肋間肌、膈肌)
+    - 巨食道症 (迷走神經受累)
+    - 自主神經功能障礙 (心律不整、瞳孔異常、尿滯留)
+
+diagnosis:
+  primaryTests:
+    - name: 神經學檢查
+      notes: "下運動神經元徵象：反射減弱/消失、肌肉萎縮、肌張力低下。評估分布模式 (遠端/近端、對稱/不對稱)"
+    - name: 肌電圖 (EMG) + 神經傳導速度 (NCV)
+      notes: "金標準電生理學檢查。去神經電位 (fibrillation potentials、positive sharp waves)。NCV 減慢提示脫髓鞘，波幅降低提示軸突變性"
+    - name: 神經/肌肉活檢
+      notes: "確定診斷。區分軸突變性 vs 脫髓鞘。免疫組化評估炎症浸潤"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "評估巨食道症、吸入性肺炎風險"
+    - name: 腹部超音波
+      notes: "篩檢胰島素瘤或其他腫瘤"
+  additional:
+    - CBC/生化 (血糖、甲狀腺功能、肝腎功能)
+    - 空腹血糖 + 胰島素 (排除胰島素瘤)
+    - T4/TSH (排除甲狀腺功能低下)
+    - 果糖胺 (貓糖尿病)
+    - 乙醯膽鹼受體抗體 (排除重症肌無力)
+    - 蜱蟲篩檢 (排除蜱蟲麻痺)
+    - 腦脊髓液 (排除神經根病變)
+    - 基因檢測 (品種特異性遺傳神經病)
+
+treatment:
+  principles:
+    - 治療取決於病因
+    - 免疫介導性需免疫抑制
+    - 代謝性需矯正原發疾病
+    - 中毒性需移除毒素來源
+    - 支持療法與物理復健為所有類型的重要輔助
+  medications:
+    - name: Prednisolone (免疫介導性)
+      dose: "1-2 mg/kg PO BID (誘導)，逐步減量"
+      notes: CIDP 的一線治療。AIPN 類固醇效果有限 (多為自限性)
+    - name: Mycophenolate mofetil (免疫介導性)
+      dose: "10-20 mg/kg PO BID"
+      notes: CIDP 的二線免疫抑制
+    - name: 胰島素 (糖尿病性)
+      dose: "依糖尿病治療方案"
+      notes: 良好的血糖控制可逆轉貓糖尿病性神經病 (數週至數月)
+    - name: Methylcobalamin (維生素 B12)
+      dose: "犬 500-1000 μg/day PO; 貓 250 μg/day PO"
+      notes: 輔助神經修復。糖尿病性神經病可能有幫助
+  general:
+    - 物理復健 (被動關節活動、站立訓練、水中跑步機)
+    - 蜱蟲麻痺：移除所有蜱蟲後通常 24-72 小時內開始恢復
+    - 呼吸肌無力需監測 (嚴重時可能需機械通氣)
+    - 巨食道症管理 (立式餵食)
+    - AIPN 通常自限性，4-6 週開始恢復，完全恢復需數月
+    - 褥瘡預防
+
+prognosis: 差異極大，取決於病因。AIPN 多數可完全恢復 (4-12 週)，但恢復期長。CIDP 需長期免疫抑制，部分可控制。糖尿病性神經病在血糖控制良好後可逆轉 (貓)。遺傳性通常進行性，無治療方法。蜱蟲麻痺移除蜱蟲後預後良好。副腫瘤性取決於原發腫瘤控制。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Acute canine polyradiculoneuritis — clinical features, electrophysiology, and outcome"
+    url: https://pubmed.ncbi.nlm.nih.gov/20175766/
+    type: research
+    pmid: "20175766"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Diabetic neuropathy in cats — clinical and electrophysiological findings"
+    url: https://pubmed.ncbi.nlm.nih.gov/9316126/
+    type: research
+    pmid: "9316126"
+  - sourceOrg: Veterinary Clinics of North America Small Animal Practice
+    title: "Disorders of the peripheral nerves"
+    url: https://pubmed.ncbi.nlm.nih.gov/24766697/
+    type: review
+    pmid: "24766697"
+pubmedQueries:
+  - query: '"peripheral neuropathy" OR "polyneuropathy" AND (dog OR cat) AND ("diagnosis" OR "treatment" OR "review")'
+    frequency: monthly

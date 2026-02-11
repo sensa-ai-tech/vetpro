@@ -1,0 +1,130 @@
+slug: squamous-cell-carcinoma
+nameEn: Squamous Cell Carcinoma
+nameZh: 鱗狀細胞癌
+bodySystem: oncology
+description: 源自角質化上皮細胞的惡性腫瘤，為犬貓常見的皮膚及口腔惡性腫瘤，紫外線暴露與色素缺乏為重要風險因子。
+
+aliases:
+  - { alias: SCC, language: en }
+  - { alias: Squamous Cell Carcinoma, language: en }
+  - { alias: 鱗狀上皮細胞癌, language: zh }
+  - { alias: 扁平上皮癌, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬第二常見口腔腫瘤。皮膚 SCC 好發於淺色毛短毛犬 (Dalmatian、Bull Terrier、Beagle)。口腔 SCC 好發於大型犬。甲床 SCC 好發於黑色大型犬 (Standard Poodle、Giant Schnauzer、Labrador)。中老年犬。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓最常見口腔腫瘤 (約 70%)。皮膚 SCC 好發於白色或淺色貓的耳尖、鼻鏡、眼瞼。口腔 SCC 預後極差。Bowen 病 (多中心原位 SCC) 與 papillomavirus 相關。
+
+etiology:
+  categories:
+    - name: 紫外線暴露 (皮膚型)
+      examples:
+        - 慢性日光曝曬 (最重要的環境因素)
+        - 色素缺乏區域風險最高
+        - 白色/淺色皮膚動物好發
+        - 日光性角化症 (actinic keratosis) 為癌前病變
+    - name: 其他風險因素
+      examples:
+        - Papillomavirus (貓 Bowen 病、犬指間 SCC)
+        - 慢性炎症/傷口 (burn scar carcinoma)
+        - 環境致癌物 (二手菸與貓口腔 SCC 可能相關)
+    - name: 解剖位置分類
+      examples:
+        - 皮膚 SCC (鼻鏡、耳尖、腹部)
+        - 口腔 SCC (牙齦、舌頭、扁桃腺)
+        - 甲床 SCC (指/趾)
+        - 鼻腔/鼻竇 SCC
+
+pathophysiology: 鱗狀細胞癌起源於角質化上皮細胞的惡性轉化。紫外線 B (UVB) 造成 DNA 嘧啶二聚體形成，若 DNA 修復機制無法校正，可累積致癌突變 (TP53 常見)。腫瘤呈局部侵犯性生長，破壞周圍軟組織與骨骼。皮膚 SCC 遠端轉移率相對低 (犬 <20%)，但口腔 SCC (尤其貓、犬扁桃腺型) 轉移率較高。甲床 SCC 區域淋巴結轉移率約 10-30%。腫瘤可產生 PTHrP 導致副腫瘤性高血鈣。
+
+clinicalSigns:
+  early:
+    - 皮膚型：不癒合的結痂、紅斑、潰瘍 (日光暴露區)
+    - 口腔型：口腔腫塊、流涎、口臭
+    - 甲床型：指/趾腫脹、跛行、指甲脫落
+  progressive:
+    - 腫塊增大、潰瘍加深
+    - 口腔型：進食困難、血性流涎、牙齒鬆動
+    - 骨溶解 (口腔型侵犯下顎骨/上顎骨)
+    - 區域淋巴結腫大
+    - 鼻腔型：噴嚏、鼻出血、面部變形
+  late:
+    - 骨骼廣泛破壞
+    - 轉移 (肺、區域淋巴結)
+    - 副腫瘤性高血鈣 (部分案例)
+    - 惡病質
+    - 嚴重疼痛
+
+diagnosis:
+  primaryTests:
+    - name: 細針抽吸 (FNA) + 細胞學
+      notes: "角質化鱗狀上皮細胞，核型異常，可見角質化珠。皮膚型較易診斷"
+    - name: 組織病理學 (切片活檢)
+      notes: "確診金標準。評估分化程度、侵犯深度、血管/淋巴管侵犯"
+  imaging:
+    - name: 局部 X 光/CT
+      notes: "口腔型：評估骨溶解範圍。甲床型：指骨溶骨性病變 (P3 骨溶解)。CT 為術前計畫金標準"
+    - name: 胸腔 X 光
+      notes: "肺轉移篩檢 (皮膚型轉移率低，口腔型較高)"
+    - name: CT (頭部/鼻腔)
+      notes: "口腔與鼻腔 SCC 術前評估範圍。精確測量腫瘤邊界"
+  additional:
+    - 區域淋巴結 FNA (即使正常大小也建議)
+    - CBC/生化 (血鈣 — 排除高血鈣)
+    - 腹部超音波 (完整分期)
+
+treatment:
+  principles:
+    - 手術寬邊切除為首選 (可行時)
+    - 口腔型常需下顎或上顎切除
+    - 放射治療對淺表型效果佳
+    - 貓口腔 SCC 治療極具挑戰性
+  medications:
+    - name: NSAIDs (Piroxicam, Meloxicam)
+      dose: "Piroxicam 0.3 mg/kg PO SID (犬)"
+      notes: 可能有抗腫瘤效果 (COX-2 抑制)。常作為輔助治療
+    - name: Carboplatin
+      dose: "300 mg/m² IV 每 3 週 (犬) 或 intralesional 150 mg/m² 每 2 週"
+      notes: 不可切除或轉移性 SCC。貓耐受性需注意
+    - name: Toceranib (Palladia)
+      dose: "2.75 mg/kg PO 隔日"
+      notes: 部分 SCC 有反應。多用於不可手術案例
+    - name: 疼痛管理
+      dose: "NSAIDs + Gabapentin 5-10 mg/kg PO BID-TID"
+      notes: 多模式止痛，尤其口腔型
+  general:
+    - 手術寬邊切除 (皮膚型首選，側邊 ≥1-2 cm)
+    - 下顎切除 (mandibulectomy) 或上顎切除 (maxillectomy) — 口腔型
+    - 截趾 (digit amputation) — 甲床型 (預後相對佳)
+    - 放射治療 (淺表型：orthovoltage、鍶-90；侵犯性：megavoltage)
+    - 光動力治療 (photodynamic therapy) — 淺表型
+    - 貓鼻鏡/耳尖 SCC：手術或放射治療早期效果佳
+    - 防曬 (高風險動物避免日光暴露)
+    - 日光性角化症積極治療 (預防惡性轉化)
+
+prognosis: 皮膚型完全切除後預後佳 (轉移率低)。甲床型截趾後中位存活 >1 年，但多趾發生者需監測。犬口腔 SCC (非扁桃腺型) 前端下顎切除預後尚可 (中位存活 9-18 個月)。犬扁桃腺型預後極差。貓口腔 SCC 預後極差 (中位存活約 2-4 個月)。鼻腔 SCC 放射治療後中位存活約 12-18 個月。
+
+guidelineRefs:
+  - sourceOrg: Veterinary and comparative oncology
+    title: "Feline oral squamous cell carcinoma: an overview."
+    url: https://pubmed.ncbi.nlm.nih.gov/27061200/
+    type: review
+    pmid: "27061200"
+  - sourceOrg: Frontiers in veterinary science
+    title: "Canine and Feline Cutaneous Squamous Cell Carcinoma: A Comprehensive Review."
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10389706/
+    type: review
+    pmid: "37529445"
+  - sourceOrg: BMC veterinary research
+    title: "Prognostic factors in canine oral squamous cell carcinoma treated with mandibulectomy or maxillectomy."
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9068913/
+    type: retrospective
+    pmid: "35509042"
+pubmedQueries:
+  - query: '"squamous cell carcinoma" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "prognosis" OR "surgery")'
+    frequency: monthly

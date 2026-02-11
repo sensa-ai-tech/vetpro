@@ -1,0 +1,130 @@
+slug: ferret-lymphoma
+nameEn: Ferret Lymphoma
+nameZh: 雪貂淋巴瘤
+bodySystem: exotic
+description: 雪貂第三常見的腫瘤性疾病，為淋巴組織惡性增生，依年齡可分為幼年型 (急性淋巴母細胞型) 與成年型 (慢性淋巴球型)，臨床表現因受累器官而異，可侵犯多系統。
+
+aliases:
+  - { alias: 雪貂淋巴肉瘤, language: zh }
+  - { alias: 雪貂惡性淋巴瘤, language: zh }
+  - { alias: Ferret lymphosarcoma, language: en }
+  - { alias: Malignant lymphoma (ferret), language: en }
+  - { alias: LSA, language: en }
+
+species:
+  - speciesCommon: ferret
+    speciesScientific: Mustela putorius furo
+    prevalence: common
+    notes: 雪貂第三常見腫瘤 (次於腎上腺疾病與胰島素瘤)。幼年型 (<2 歲) 多為急性 T 細胞淋巴母細胞型，病程兇猛。成年型 (>3 歲) 多為慢性 B 或 T 細胞型，病程較緩。Helicobacter mustelae 感染可能與胃 MALT 淋巴瘤相關。
+
+etiology:
+  categories:
+    - name: 腫瘤性
+      examples:
+        - 淋巴球惡性增生 (B 細胞或 T 細胞來源)
+        - "幼年型：急性淋巴母細胞型 (多為 T 細胞，胸腺型常見)"
+        - "成年型：慢性小淋巴球型、免疫母細胞型、混合型"
+        - 多中心型、消化道型、縱隔型、皮膚型等解剖分型
+    - name: 可能相關因素
+      examples:
+        - 病因不明確 (可能多因子)
+        - 反轉錄病毒感染嫌疑 (但未確認)
+        - Helicobacter mustelae 慢性感染 (胃 MALT 淋巴瘤)
+        - Aleutian disease virus (ADV) 慢性免疫刺激
+        - 遺傳易感性
+
+clinicalSigns:
+  early:
+    - 周邊淋巴結腫大 (無痛性，可觸及)
+    - 食慾輕微下降
+    - 慢性體重減輕
+    - 間歇性嗜睡
+    - 脾腫大 (腹部觸診)
+  progressive:
+    - 多處淋巴結明顯腫大
+    - 顯著體重減輕與肌肉萎縮
+    - 脾臟顯著腫大
+    - 腹瀉或嘔吐 (消化道型)
+    - 呼吸困難 (縱隔型，胸腔占位)
+    - 後肢無力 (脊髓侵犯或副腫瘤症候群)
+  late:
+    - 嚴重惡病質
+    - 骨髓侵犯 (白血病化：循環中出現腫瘤細胞)
+    - 嚴重貧血、血小板減少
+    - 肝腎衰竭 (器官浸潤)
+    - 胸水/腹水
+    - 皮膚結節 (皮膚型)
+    - 多器官衰竭
+
+diagnosis:
+  primaryTests:
+    - name: 淋巴結細針抽吸 (FNA) 細胞學
+      notes: "大量均質淋巴母細胞或非典型淋巴球。快速初步診斷。幼年型常見大型淋巴母細胞"
+    - name: CBC 與血液抹片
+      notes: "白血球增多或減少。循環中非典型淋巴球 (白血病相)。貧血、血小板減少 (骨髓侵犯)"
+    - name: 組織病理學與免疫組織化學
+      notes: "淋巴結或病灶切除/切片活檢。確定淋巴瘤型態與免疫表型 (B vs T 細胞)。為確定診斷金標準"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "縱隔腫塊 (幼年型常見)、胸水、肺門淋巴結腫大"
+    - name: 腹部超音波
+      notes: "脾臟腫大與結構異常、腸系膜/腸繫膜淋巴結腫大、肝臟浸潤、腸壁增厚"
+  additional:
+    - 生化 (肝腎功能、LDH 升高)
+    - 骨髓穿刺 (分期：評估骨髓浸潤程度)
+    - 流式細胞儀 (免疫表型分析，B vs T 細胞)
+    - PCR (抗原受體基因重排，clonality 評估)
+    - 脾臟 FNA (脾臟腫大時)
+
+treatment:
+  principles:
+    - 化療為主要治療方式
+    - 幼年型預後差，需積極化療
+    - 成年慢性型可長期內科管理
+    - 局部病灶可考慮外科
+    - 支持性照護維持生活品質
+  medications:
+    - name: Prednisolone
+      dose: "1-2 mg/kg PO SID-BID"
+      notes: 化療基礎藥物。可作為單藥治療 (緩和) 或併入多藥方案。初期反應率高但單用維持時間短
+    - name: Cyclophosphamide
+      dose: "10 mg/kg PO 每 7-10 天一次"
+      notes: 烷化劑。多藥化療方案中常用。注意出血性膀胱炎風險
+    - name: Vincristine
+      dose: "0.07 mg/kg IV 每 7-14 天"
+      notes: 長春花鹼類。多藥方案組成。嚴格靜脈注射 (血管外滲出導致嚴重組織壞死)
+    - name: Doxorubicin
+      dose: "1 mg/kg IV 每 3 週"
+      notes: 蒽環類抗生素。用於侵犯性淋巴瘤。心臟毒性限制累積劑量
+    - name: Chlorambucil
+      dose: "2 mg/雪貂 PO 每 48-72 小時"
+      notes: 口服烷化劑。適用慢性低度型或年老雪貂。副作用較輕
+    - name: L-asparaginase
+      dose: "400 IU/kg IP 或 IM，誘導期使用"
+      notes: 誘導緩解效果佳。通常僅用於第一次誘導 (反覆使用易過敏反應)
+  general:
+    - 多藥聯合化療方案 (改良 COP 或 CHOP 方案) 效果優於單藥
+    - 脾臟切除 (巨脾症或脾臟為主要病灶時)
+    - 營養支持 (高蛋白高脂肪飲食)
+    - 輔助餵食 (食慾不振時)
+    - 化療期間定期 CBC 監測 (每 7-14 天，注意骨髓抑制)
+    - 同時管理腎上腺疾病或胰島素瘤 (常併發)
+    - 居家生活品質監測 (體重、食慾、活動力)
+
+prognosis: 幼年急性型預後差，即使化療中位存活約 3-6 個月。成年慢性型化療反應較好，中位存活 1-2 年。prednisolone 單藥中位存活約 2-3 個月。多藥化療較單藥延長存活。皮膚型預後相對較好。白血病化為不良預後因子。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Lymphoma in Ferrets: Diagnosis and Treatment"
+    url: https://pubmed.ncbi.nlm.nih.gov/30017695/
+    type: review
+    pmid: "30017695"
+  - sourceOrg: Journal of Exotic Pet Medicine
+    title: "Ferret oncology: diseases, diagnostics, and therapeutics"
+    url: https://pubmed.ncbi.nlm.nih.gov/28065407/
+    type: review
+    pmid: "28065407"
+
+pubmedQueries:
+  - query: '"ferret" AND "lymphoma" AND ("chemotherapy" OR "treatment" OR "prognosis")'
+    frequency: monthly

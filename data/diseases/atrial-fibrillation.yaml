@@ -1,0 +1,116 @@
+slug: atrial-fibrillation
+nameEn: Atrial Fibrillation
+nameZh: 心房顫動
+bodySystem: cardiac
+description: 心房顫動（AF）是犬隻最常見的持續性心律不整，以心房肌肉快速且不規則的電活動取代正常竇性節律為特徵。犬隻 AF 多繼發於嚴重心臟結構性疾病（如擴張性心肌病、二尖瓣退化性疾病），亦可見於無結構性心臟病的大型犬品種（lone AF）。控制心室率為治療核心。
+
+aliases:
+  - { alias: AF, language: en }
+  - { alias: AFib, language: en }
+  - { alias: 心房纖維顫動, language: zh }
+  - { alias: 房顫, language: zh }
+  - { alias: Auricular Fibrillation, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬隻最常見的持續性心律不整。大型犬與巨型犬好發（Irish Wolfhound 盛行率高達 30%）。多數為繼發性，與擴張性心肌病（DCM）或嚴重二尖瓣退化性疾病合併。Lone AF 見於大型犬品種（無明顯結構性心臟病）。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓隻心房顫動罕見，通常繼發於嚴重心肌病（如 HCM 或 DCM）伴顯著左心房擴大。貓 AF 的出現提示嚴重心臟疾病，預後不良。
+
+etiology:
+  categories:
+    - name: 繼發性（最常見）
+      examples:
+        - 擴張性心肌病（DCM）伴左心房擴大
+        - 慢性二尖瓣退化性疾病（MMVD）伴嚴重左心房擴大
+        - 肥厚性心肌病（HCM，貓）
+        - 先天性心臟病伴心房擴大（如二尖瓣發育不良、三尖瓣發育不良）
+    - name: 原發性（Lone AF）
+      examples:
+        - 無明顯結構性心臟病的大型犬
+        - Irish Wolfhound（遺傳傾向，盛行率高）
+        - 可能與心房肌纖維化或離子通道異常有關
+    - name: 其他觸發因素
+      examples:
+        - 電解質異常（低血鉀）
+        - 甲狀腺功能亢進（貓）
+        - 心包膜疾病
+        - 嚴重全身性疾病（敗血症、SIRS）
+
+clinicalSigns:
+  early:
+    - 心律絕對不規則（irregularly irregular rhythm）
+    - 脈搏缺損（pulse deficit，心尖搏動率高於觸診脈率）
+    - 輕度運動不耐（Lone AF 初期可無明顯症狀）
+  progressive:
+    - 運動不耐加重
+    - 呼吸急促或呼吸困難
+    - 嗜睡
+    - 食慾下降
+    - 體重減輕
+    - 心搏過速（未控制的快速心室率）
+  late:
+    - 充血性心衰竭（肺水腫、腹水）
+    - 心因性休克
+    - 昏厥
+    - 長期未控制可導致心搏過速引起的心肌病（tachycardia-induced cardiomyopathy）
+
+diagnosis:
+  primaryTests:
+    - name: 心電圖（ECG）
+      notes: "確診金標準。特徵性表現：(1) P 波消失，取代以快速不規則的基線波動（f 波）；(2) R-R 間距絕對不規則；(3) QRS 波群形態通常正常（窄 QRS）。心室率通常快速（犬 >160 bpm，大型犬 >140 bpm）。"
+    - name: 心臟超音波（Echocardiography）
+      notes: "評估基礎心臟疾病（DCM、MMVD、HCM）。測量左心房大小（LA/Ao ratio）。評估心室收縮功能。排除或確認結構性心臟病（Lone AF vs 繼發性 AF）。"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "評估心臟大小與肺部狀態。充血性心衰竭時可見肺水腫或胸水。左心房擴大可見背側氣管偏移。"
+    - name: 24 小時 Holter 監測
+      notes: "評估心室率控制效果（目標平均心室率 <125 bpm，犬）。偵測快速心室率的時段分佈。評估治療反應。"
+  additional:
+    - 血液生化學：電解質（鉀、鎂）、甲狀腺功能（尤其貓）
+    - NT-proBNP：評估心室充盈壓力與充血性心衰竭
+    - 血壓測量：評估心輸出量與灌流狀態
+
+treatment:
+  principles:
+    - AF 心室率控制（rate control）為治療核心
+    - 恢復竇性節律（rhythm control）在犬貓極難達成
+    - 同時治療基礎心臟病
+    - Lone AF 心室率控制後預後較繼發性佳
+  general:
+    - "Diltiazem 1.5-3.5 mg/kg PO q8h（鈣離子通道阻斷劑，減緩房室結傳導，為首選藥物之一）"
+    - "Digoxin 0.005-0.008 mg/kg PO q12h（減緩房室結傳導；監測血中濃度，目標 1.0-2.0 ng/mL；需注意毒性）"
+    - "Diltiazem + Digoxin 合併使用：單一藥物無法達到目標心率時"
+    - "Atenolol 0.25-1 mg/kg PO q12h（β-blocker，可與 digoxin 合併使用；禁忌：嚴重心衰竭或心收縮功能極低時慎用）"
+    - "心衰竭合併治療：Furosemide 2-4 mg/kg PO q8-12h + Pimobendan 0.25 mg/kg PO q12h + ACE inhibitor"
+    - "急性快速 AF 伴血流動力學不穩定：IV Diltiazem 0.15-0.25 mg/kg 緩慢靜脈注射，可重複；或 IV Esmolol"
+    - "目標心室率：犬 <140-160 bpm（休息時），理想 <125 bpm"
+    - "電擊復律（Electrical Cardioversion）：少數 Lone AF 病例可嘗試，但復發率高"
+
+prognosis: 繼發性 AF 預後取決於基礎心臟病的嚴重程度。DCM 合併 AF 預後較差，中位存活時間顯著縮短。MMVD 合併 AF 提示嚴重心房擴大與晚期疾病。Lone AF 若心室率控制良好，預後相對較佳，部分犬隻可維持數年良好生活品質。貓 AF 通常反映嚴重心肌病變，預後不良。持續不受控的快速心室率會導致心搏過速引起的心肌病，進一步惡化心功能。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Atrial fibrillation in dogs: prevalence, pathophysiology, and management"
+    url: https://pubmed.ncbi.nlm.nih.gov/19175735/
+    type: consensus
+    pmid: "19175735"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Lone atrial fibrillation in dogs: clinical features and outcome"
+    url: https://pubmed.ncbi.nlm.nih.gov/24372929/
+    type: consensus
+    pmid: "24372929"
+  - sourceOrg: Journal of Veterinary Cardiology
+    title: "Rate control of atrial fibrillation with diltiazem in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/18054845/
+    type: consensus
+    pmid: "18054845"
+pubmedQueries:
+  - query: '"atrial fibrillation" AND (dog OR canine) AND ("rate control" OR "diltiazem" OR "digoxin")'
+    frequency: monthly
+  - query: '"atrial fibrillation" AND (dog OR canine) AND ("lone" OR "prognosis" OR "outcome")'
+    frequency: monthly

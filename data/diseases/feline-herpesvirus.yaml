@@ -1,0 +1,143 @@
+slug: feline-herpesvirus
+nameEn: Feline Herpesvirus Infection
+nameZh: 貓疱疹病毒感染
+bodySystem: infectious
+description: 由第一型貓疱疹病毒 (FHV-1) 引起的高度傳染性上呼吸道與眼部感染。感染後終生潛伏於三叉神經節，緊迫時可再活化。為貓上呼吸道感染最重要的病原之一。
+
+aliases:
+  - { alias: FHV-1, language: en }
+  - { alias: Feline Viral Rhinotracheitis, language: en }
+  - { alias: FVR, language: en }
+  - { alias: Feline Herpesvirus-1, language: en }
+  - { alias: 貓疱疹病毒第一型, language: zh }
+  - { alias: 貓病毒性鼻氣管炎, language: zh }
+  - { alias: 貓鼻支氣管炎, language: zh }
+
+species:
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: very_common
+    notes: 全球分佈，為貓上呼吸道感染最常見病因之一 (與 FCV 並列)。多貓環境盛行率極高。約 80-90% 的感染貓成為終生潛伏帶原者。緊迫 (寄宿、搬家、疾病、類固醇使用) 可觸發再活化與排毒。幼貓 (6 週-6 月齡) 症狀最嚴重。
+
+etiology:
+  categories:
+    - name: 病毒性
+      examples:
+        - Felid alphaherpesvirus 1 (FHV-1)，疱疹病毒科 (Herpesviridae)，Alpha疱疹病毒亞科
+        - 雙股 DNA 病毒，有外套膜
+        - 僅有單一血清型 (所有分離株抗原相似)
+        - 環境中不穩定 (存活 <24 小時，對消毒劑敏感)
+        - 感染後在三叉神經節建立終生潛伏感染
+    - name: 傳播途徑
+      examples:
+        - 直接接觸 (口鼻分泌物、眼分泌物)
+        - 飛沫傳播 (短距離，約 1-2 公尺)
+        - 間接接觸 (fomites，但因環境不穩定性較 FCV 少見)
+        - 潛伏帶原貓再活化排毒 (緊迫後 1-2 週)
+        - 母貓垂直傳播 (經分娩過程)
+    - name: 風險因素
+      examples:
+        - 多貓環境 (收容所、繁殖場)
+        - 幼貓母源抗體下降期
+        - 緊迫事件
+        - 免疫抑制 (FIV、FeLV、類固醇使用)
+        - 未接種疫苗
+
+pathophysiology: FHV-1 經口鼻或結膜黏膜感染後，在上呼吸道上皮細胞 (鼻腔、咽部、氣管) 與結膜上皮細胞中大量複製。病毒具有強烈的細胞溶解性，造成廣泛的上皮壞死與黏膜潰瘍，引起嚴重的化膿性鼻炎、結膜炎與氣管炎。鼻甲骨上皮壞死可導致繼發性骨壞死與慢性鼻竇炎。眼部感染可引起角膜上皮樹突狀潰瘍 (dendritic ulcer)、角膜基質炎與結膜黏連 (symblepharon)。急性感染約 2-3 週後，存活的病毒沿感覺神經逆行至三叉神經節，建立潛伏感染。潛伏狀態下病毒基因組維持不活躍，不產生病毒蛋白，免疫系統無法偵測。緊迫事件觸發病毒再活化，沿神經順行至眼部與鼻部黏膜再次複製排毒。
+
+clinicalSigns:
+  early:
+    - 打噴嚏 (頻繁、劇烈)
+    - 漿液性眼鼻分泌物
+    - 結膜充血水腫
+    - 發燒 (39.5-40.5°C)
+    - 食慾下降
+    - 嗜睡
+  progressive:
+    - 黏膿性至膿性眼鼻分泌物 (繼發細菌感染)
+    - 嚴重鼻塞 (嗅覺喪失 → 食慾廢絕)
+    - 角膜潰瘍 (樹突狀潰瘍為 FHV 特徵)
+    - 結膜黏連 (symblepharon) — 幼貓嚴重結膜炎後遺症
+    - 口腔潰瘍 (較 FCV 少見)
+    - 流涎
+    - 呼吸困難 (嚴重鼻塞)
+  late:
+    - 新生幼貓：全身性疱疹感染 (肝壞死、肺炎、DIC) — 致命
+    - 慢性鼻竇炎 (鼻甲骨壞死後遺症)
+    - 角膜後遺症 (角膜斑痕、角膜隔離壞死、慢性角膜炎)
+    - 反覆發作 (緊迫觸發再活化)
+    - 嗜酸球性角膜炎 (免疫介導後遺症)
+
+diagnosis:
+  primaryTests:
+    - name: FHV-1 RT-PCR (結膜或口咽拭子)
+      notes: "敏感度最高。結膜拭子用於眼部症狀，口咽拭子用於呼吸道症狀。注意：潛伏帶原貓再活化時亦為陽性，需結合臨床判斷。活毒疫苗接種後可短暫陽性"
+    - name: 眼科檢查
+      notes: "螢光素染色可見特徵性樹突狀角膜潰瘍 (dendritic ulcer)。裂隙燈檢查評估角膜深度。Rose Bengal 染色評估角膜上皮損傷"
+    - name: 臨床表現
+      notes: "嚴重打噴嚏 + 膿性眼鼻分泌物 + 角膜潰瘍為高度提示 FHV。與 FCV 鑑別：FHV 以眼部與鼻部症狀為主，FCV 以口腔潰瘍為主"
+  imaging:
+    - name: 頭部 CT/X 光
+      notes: "慢性鼻竇炎病例評估鼻甲骨破壞與鼻竇液體蓄積"
+  additional:
+    - Schirmer 淚液測試 (評估乾眼症)
+    - 眼壓測量 (排除青光眼/前房積膿)
+    - FIV/FeLV 檢測
+    - CBC (嗜中性球增多提示繼發感染)
+    - 鼻腔沖洗細胞學/培養 (慢性鼻竇炎)
+
+treatment:
+  principles:
+    - 急性感染以支持性療法與抗病毒治療為主
+    - 維持營養攝取 (嗅覺喪失 → 不進食)
+    - 眼部病變需積極處理
+    - 預防繼發感染
+    - 減少緊迫以降低再活化頻率
+  medications:
+    - name: Famciclovir
+      dose: "40-90 mg/kg PO BID-TID (推薦 90 mg/kg BID)"
+      notes: 目前貓 FHV 最有效的全身性抗病毒藥物。安全性高。嚴重眼部或全身症狀時首選。療程至少 7-14 天
+    - name: Cidofovir 眼藥水
+      dose: "0.5% 溶液 每眼 1 滴 BID"
+      notes: 局部抗病毒。角膜潰瘍/結膜炎的局部治療首選之一
+    - name: L-Lysine
+      dose: "250-500 mg PO SID-BID"
+      notes: 曾廣泛使用但近年系統性回顧顯示效果不確定。部分臨床醫師仍建議使用
+    - name: 廣效抗生素
+      dose: "Doxycycline 5 mg/kg PO SID (同時覆蓋 Chlamydophila)；或 Amoxicillin-Clavulanate 12.5-25 mg/kg PO BID"
+      notes: 繼發性細菌感染治療。膿性分泌物為指標。Doxycycline 兼治可能合併的 Chlamydophila
+    - name: Buprenorphine
+      dose: "0.01-0.03 mg/kg OTM TID"
+      notes: 疼痛管理 (口腔潰瘍、角膜潰瘍疼痛)。維持進食意願
+  general:
+    - 霧化治療 (生理食鹽水，緩解鼻塞，BID-QID 每次 10-15 分鐘)
+    - 眼鼻分泌物溫敷清潔 (TID-QID)
+    - 營養支持 (加熱食物增加香氣、柔軟/流質食物)
+    - 食慾促進劑 (Mirtazapine 1.88 mg/cat PO 每 48 小時)
+    - 鼻胃管或食道管 (持續不進食 >48-72 小時)
+    - 眼科局部治療 (抗生素眼藥預防繼發感染 + 抗病毒眼藥)
+    - 減少環境緊迫 (Feliway 費洛蒙、安靜隔離空間)
+    - 疫苗接種 (核心疫苗 FVRCP — 降低感染嚴重度但不防止潛伏)
+
+emergencyNotes: 新生幼貓全身性疱疹感染為急症，死亡率極高。嚴重鼻塞導致持續不進食 >48 小時需緊急放置餵食管 (肝脂肪變性風險)。角膜穿孔需緊急眼科處理。嚴重結膜黏連 (symblepharon) 在形成早期 (24-48 小時內) 需嘗試剝離以保留眼球功能。
+
+prognosis: 多數免疫正常的成貓急性感染可在 2-3 週內恢復。幼貓症狀較嚴重，併發症風險較高。約 80-90% 感染貓成為終生潛伏帶原者，緊迫時可再活化。慢性眼部後遺症 (角膜斑痕、結膜黏連、乾眼症) 可永久影響視力。慢性鼻竇炎可能需長期管理。Famciclovir 的使用顯著改善了嚴重病例的預後。減少緊迫與適當環境管理可降低再活化頻率。
+
+guidelineRefs:
+  - sourceOrg: ABCD
+    title: "ABCD Guidelines on Feline Herpesvirus Infection"
+    url: https://www.abcdcatsvets.org/feline-herpesvirus/
+    type: guideline
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "Antiviral therapy for feline herpesvirus infections: a systematic review"
+    url: https://pubmed.ncbi.nlm.nih.gov/26323803/
+    type: review
+    pmid: "26323803"
+  - sourceOrg: Veterinary Ophthalmology
+    title: "Feline herpesvirus-1 ocular disease: an update on the pathogenesis, diagnosis and treatment"
+    url: https://pubmed.ncbi.nlm.nih.gov/25377143/
+    type: review
+    pmid: "25377143"
+pubmedQueries:
+  - query: '"feline herpesvirus" AND ("famciclovir" OR "treatment" OR "ocular" OR "vaccination")'
+    frequency: monthly

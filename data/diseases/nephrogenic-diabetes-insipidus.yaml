@@ -1,0 +1,142 @@
+slug: nephrogenic-diabetes-insipidus
+nameEn: Nephrogenic Diabetes Insipidus
+nameZh: 腎性尿崩症
+bodySystem: renal
+description: 腎臟集合管對抗利尿激素 (ADH/vasopressin) 反應不足，導致大量低滲透壓尿液排出與嚴重多尿多渴的罕見腎臟疾病。
+
+aliases:
+  - { alias: NDI, language: en }
+  - { alias: Nephrogenic DI, language: en }
+  - { alias: Vasopressin-Resistant Diabetes Insipidus, language: en }
+  - { alias: 腎源性尿崩症, language: zh }
+  - { alias: 抗利尿激素抵抗性尿崩症, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 原發性 (先天性) 極罕見，僅少數品種有報告（Siberian Husky 個案報告）。繼發性 NDI 較常見，因多種腎臟與代謝疾病引起。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓極罕見。繼發性 NDI 偶見於慢性腎臟病、甲亢、高鈣血症、低鉀血症等。
+
+etiology:
+  categories:
+    - name: 原發性 (先天性) NDI
+      examples:
+        - AQP2 (Aquaporin-2) 水通道蛋白基因突變
+        - V2 受體 (AVPR2) 基因突變
+        - 犬貓極罕見，多為個案報告
+        - 幼年起即表現嚴重 PU/PD
+    - name: 繼發性 (後天性) NDI — 腎臟疾病
+      examples:
+        - 慢性腎臟病 (CKD，腎髓質滲透壓梯度喪失)
+        - 腎盂腎炎
+        - 腎後性阻塞後 (post-obstructive diuresis)
+        - 腎澱粉樣變性
+        - 多囊腎病
+    - name: 繼發性 NDI — 代謝/電解質異常
+      examples:
+        - 高鈣血症 (最常見可逆原因之一 — 鈣拮抗 AQP2 表達)
+        - 低鉀血症 (干擾腎髓質濃縮機制)
+        - 肝衰竭 (尿素生成降低，腎髓質滲透壓下降)
+        - 甲亢（貓，增加腎血流沖刷腎髓質梯度）
+    - name: 藥物誘發性 NDI
+      examples:
+        - Lithium（干擾 AQP2 表達 — 人醫常見，獸醫少用）
+        - Demeclocycline
+        - Amphotericin B
+        - Glucocorticoids（增加 GFR + 干擾 ADH 作用）
+        - Phenobarbital（長期使用）
+
+pathophysiology: "正常水平衡中，ADH (arginine vasopressin) 由腦下垂體後葉釋放，作用於腎臟集合管基底側 V2 受體，透過 cAMP 訊號路徑促使 AQP2 水通道蛋白插入管腔膜，使水分從管腔回收至高滲透壓的腎髓質間質。NDI 中，此機制在受體層級 (V2 突變)、訊號傳導層級、或 AQP2 層級被破壞，導致集合管對 ADH 無反應。繼發性 NDI 中，腎髓質間質滲透壓梯度被沖刷或破壞（CKD 腎髓質纖維化；高鈣血症抑制 NaCl 在 thick ascending limb 的轉運），即使 AQP2 正常表達，水分也無法有效被動回收。結果為大量低滲透壓（稀釋）尿液排出，血漿滲透壓升高刺激渴感中樞，產生補償性多渴。若飲水受限或補償不足，可導致嚴重高鈉血症與脫水。"
+
+clinicalSigns:
+  early:
+    - 嚴重多尿 (PU，尿量可達 100-200 mL/kg/day)
+    - 嚴重多渴 (PD，飲水量 >100 mL/kg/day)
+    - 尿液極度稀釋（接近水的外觀）
+    - 先天性者自幼犬/幼貓期即表現
+  progressive:
+    - 夜間尿失禁（膀胱容量不足以容納整夜尿量）
+    - 脫水（飲水補償不足時）
+    - 體重減輕
+    - 食慾下降（繼發性 NDI，原發疾病進展）
+  late:
+    - 嚴重高鈉血症（飲水受限時 — Na⁺ >170 mEq/L）
+    - 神經症狀（高鈉血症：震顫、走不穩、痙攣、昏迷）
+    - 膀胱擴張（chronic overdistention）
+    - 水腎（嚴重尿量超過輸尿管排流能力，罕見）
+    - 原發疾病的晚期症狀
+
+diagnosis:
+  primaryTests:
+    - name: 水剝奪試驗 (Water Deprivation Test)
+      notes: "金標準鑑別多尿多渴原因。逐漸限水至 3-5% 體重脫水或 USG 不再上升。NDI 犬貓 USG 仍 <1.012。需住院密切監測體重、USG、水合狀態。有脫水與高鈉風險"
+    - name: DDAVP 反應試驗
+      notes: "外源性 ADH 類似物 (desmopressin) 給予後測 USG。中樞性 DI：USG 顯著上升 (>50% 增加)。NDI：USG 無顯著反應 (<10% 增加)。部分 NDI 可有輕度反應"
+    - name: 尿液比重 (USG)
+      notes: "NDI 特徵：持續性極低 USG (<1.006-1.008，接近等滲或低滲）。即使脫水時 USG 仍低"
+    - name: 血清滲透壓與電解質
+      notes: "血漿滲透壓正常/偏高。血鈉正常或偏高。排除高鈣血症、低鉀血症等繼發原因"
+  imaging:
+    - name: 腹部超音波
+      notes: "腎臟形態評估（CKD、多囊腎）。膀胱大小。腎上腺（排除 HAC）"
+    - name: 腦部 MRI
+      notes: "排除中樞性 DI（垂體腫瘤、創傷）。NDI 時垂體後葉 T1 亮點通常存在（中樞性 DI 消失）"
+  additional:
+    - 完整血液生化（鈣、鉀、BUN/Creatinine、肝指數、血糖）
+    - 內分泌篩檢（T4、ACTH 刺激試驗或 LDDS — 排除甲亢、HAC、Addison's）
+    - 尿液培養（排除腎盂腎炎）
+    - 血漿 ADH 濃度（研究用，臨床不普及。NDI 時 ADH 正常或升高；中樞性 DI 時 ADH 低）
+
+treatment:
+  principles:
+    - 治療潛在原因為首要（繼發性 NDI）
+    - 確保充足自由飲水（永遠不限制飲水！）
+    - 原發性 NDI 以飲食與藥物減少尿量
+    - 避免脫水與高鈉血症
+  medications:
+    - name: Hydrochlorothiazide (HCTZ)
+      dose: "2-4 mg/kg PO BID"
+      notes: 噻嗪類利尿劑。反直覺地減少 NDI 尿量約 30-50%。機制為減少近端腎小管鈉與水回收（代償性增加近端回收），降低遠端流量。低鉀副作用需監測
+    - name: Chlorothiazide
+      dose: "20-40 mg/kg PO BID"
+      notes: 替代 HCTZ。作用機制相同。液態製劑可用於小型犬貓劑量調整
+    - name: Indomethacin 或其他 NSAIDs
+      dose: "依體重調整（off-label，少用於獸醫）"
+      notes: 前列腺素抑制可增加腎髓質水回收。副作用風險高（GI 潰瘍、腎毒性）。僅在嚴重原發性 NDI 考慮
+    - name: Amiloride
+      dose: "與 thiazide 合併使用"
+      notes: 保鉀利尿劑。與 thiazide 合用可減少低鉀風險。亦可阻斷 lithium 進入集合管細胞（lithium 誘發 NDI 特別有效）
+  general:
+    - 永遠保持充足自由飲水（限水可致命！）
+    - 低鈉飲食（減少溶質排泄，降低尿量）
+    - 低蛋白飲食（減少尿素排泄，輔助降低尿量）
+    - 繼發性 NDI 治療潛在原因（矯正高鈣血症、補鉀、治療腎盂腎炎、控制甲亢等）
+    - 腎髓質沖刷效應在潛在原因矯正後需數天至數週才能恢復腎髓質滲透壓梯度
+    - 夜間管理（防水墊、多次放出機會）
+    - 定期電解質與 USG 監測
+
+prognosis: 原發性 (先天性) NDI 無法治愈，但以充足飲水與 thiazide 利尿劑管理後可維持合理生活品質。繼發性 NDI 預後取決於潛在原因是否可逆 — 高鈣血症矯正後腎臟濃縮功能通常可恢復；CKD 相關的 NDI 隨腎功能惡化而加重。主人依從性（隨時提供充足飲水）為影響預後的關鍵因素。高鈉血症若發展到神經症狀，矯正需緩慢（每小時降 Na⁺ ≤0.5-1.0 mEq/L）以避免腦水腫。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Congenital nephrogenic diabetes insipidus in a dog."
+    url: https://pubmed.ncbi.nlm.nih.gov/10196919/
+    type: research
+    pmid: "10196919"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Diagnosis of disorders of water balance in dogs and cats."
+    url: https://pubmed.ncbi.nlm.nih.gov/26158695/
+    type: review
+    pmid: "26158695"
+  - sourceOrg: Veterinary Clinics of North America Small Animal Practice
+    title: "Polyuria and polydipsia: diagnostic approach and problems associated with patient evaluation."
+    url: https://pubmed.ncbi.nlm.nih.gov/11838849/
+    type: review
+    pmid: "11838849"
+pubmedQueries:
+  - query: '"nephrogenic diabetes insipidus" AND (dog OR canine OR cat OR feline) AND ("aquaporin" OR "desmopressin" OR "diagnosis")'
+    frequency: monthly

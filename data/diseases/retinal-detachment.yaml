@@ -1,0 +1,137 @@
+slug: retinal-detachment
+nameEn: Retinal Detachment
+nameZh: 視網膜剝離
+bodySystem: ophthalmology
+description: 神經視網膜 (neurosensory retina) 從下方的視網膜色素上皮 (RPE) 分離，導致光感受器失去營養供應而退化，為犬貓急性或亞急性失明的重要原因。
+
+aliases:
+  - { alias: RD, language: en }
+  - { alias: Rhegmatogenous Retinal Detachment, language: en }
+  - { alias: Exudative Retinal Detachment, language: en }
+  - { alias: Tractional Retinal Detachment, language: en }
+  - { alias: 視網膜脫離, language: zh }
+  - { alias: 網膜剝離, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 原因多樣。好發品種包括 Shih Tzu (先天性視網膜發育不全)、Labrador Retriever、Australian Shepherd (膠原異常)。繼發於白內障手術 (3-10%)、高血壓或 Ehrlichia 感染。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓以高血壓性視網膜剝離最常見 (全身性高血壓，收縮壓 >160 mmHg)。慢性腎臟病與甲狀腺機能亢進為最常見的潛在原因。
+
+etiology:
+  categories:
+    - name: 滲出性/漿液性 (Exudative/Serous)
+      examples:
+        - 全身性高血壓 (貓最常見原因)
+        - 前葡萄膜炎/脈絡膜炎
+        - 感染性 (Ehrlichia、Rickettsia、Blastomyces、Cryptococcus)
+        - 眼內腫瘤 (脈絡膜黑色素瘤、淋巴瘤)
+        - 免疫介導性血管炎
+    - name: 裂孔性 (Rhegmatogenous)
+      examples:
+        - 視網膜裂孔或撕裂 (外傷、退化性)
+        - 白內障手術後 (超音波乳化術後 3-10%)
+        - 高度近視相關 (人較常見)
+    - name: 牽引性 (Tractional)
+      examples:
+        - 玻璃體纖維增生 (PVR — proliferative vitreoretinopathy)
+        - 糖尿病性視網膜病變 (犬少見)
+        - 眼內手術後
+    - name: 先天性/發育性
+      examples:
+        - 視網膜發育不全 (retinal dysplasia，Labrador、Springer Spaniel)
+        - 膠原異常 (Australian Shepherd — CEA/Collie Eye Anomaly 相關品種)
+
+clinicalSigns:
+  early:
+    - 突發性失明 (滲出性全剝離時)
+    - 瞳孔散大 (mydriasis)
+    - 對光反射減弱或消失
+    - 碰撞物體 (尤其暗處)
+  progressive:
+    - 眼底檢查見灰白色隆起的視網膜 (像帆布般飄動)
+    - 視網膜血管扭曲或走向異常
+    - 視網膜下液體積聚
+    - 合併前房反應 (aqueous flare)
+  late:
+    - 完全且不可逆的視網膜剝離
+    - 視網膜萎縮與退化
+    - 繼發性青光眼 (慢性剝離)
+    - 眼球萎縮 (phthisis bulbi，慢性末期)
+    - 白內障形成
+
+diagnosis:
+  primaryTests:
+    - name: 散瞳眼底檢查 (直接/間接眼底鏡)
+      notes: "金標準初步檢查。剝離的視網膜呈灰白色、隆起、可見皺摺。血管走向異常。部分剝離可見邊界"
+    - name: 眼部超音波 (B-scan)
+      notes: "當角膜混濁、前房出血或白內障無法透視眼底時必用。可見高回音的 V 型或帳篷狀結構 (視網膜)"
+    - name: 血壓測量
+      notes: "所有急性視網膜剝離患者必測。貓收縮壓 >160 mmHg 即為高血壓。犬 >160-180 mmHg"
+  imaging:
+    - name: 眼部超音波 (B-scan)
+      notes: "評估剝離範圍 (部分/全部)、視網膜下液體、玻璃體狀態、排除眼內腫瘤"
+    - name: OCT (光學同調斷層掃描)
+      notes: "可精確評估視網膜層次分離、黃斑區 (area centralis) 狀態"
+  additional:
+    - 完整血液學與生化 (腎功能、甲狀腺、血球計數)
+    - 尿液分析 + UPC (蛋白尿 — 腎臟病)
+    - T4 (貓甲狀腺機能亢進)
+    - 感染性疾病篩檢 (Ehrlichia、Rickettsia 血清學/PCR，黴菌抗原)
+    - 胸腹腔影像 (排除腫瘤)
+    - ERG (評估視網膜功能，判斷復位後視力恢復潛力)
+
+treatment:
+  principles:
+    - 找出並治療根本原因為最重要步驟
+    - 高血壓性剝離：控制血壓為第一優先
+    - 滲出性剝離：控制炎症/感染
+    - 裂孔性剝離：需手術 (視網膜復位)
+    - 時間是關鍵 — 視網膜剝離超過 24-48 小時光感受器退化顯著加速
+  medications:
+    - name: Amlodipine (貓高血壓)
+      dose: "0.625-1.25 mg/cat PO SID (起始)，可增至 2.5 mg/cat"
+      notes: 貓高血壓首選降壓藥。目標收縮壓 <160 mmHg。需 1-3 天降壓效果明顯。定期監測血壓
+    - name: Benazepril (犬高血壓輔助)
+      dose: "0.25-0.5 mg/kg PO SID-BID"
+      notes: ACE inhibitor。常作為犬高血壓或蛋白尿腎病的輔助降壓
+    - name: Prednisolone acetate 1% 眼藥水
+      dose: "Q6-12H"
+      notes: 控制伴隨的前葡萄膜炎/脈絡膜炎
+    - name: 全身性抗炎/免疫抑制
+      dose: "Prednisolone 1-2 mg/kg PO 漸減 (免疫介導性)"
+      notes: 免疫介導性脈絡膜炎/血管炎引起的滲出性剝離
+  general:
+    - 高血壓性視網膜剝離：積極降壓後約 50-60% 的貓視網膜可部分或完全復位
+    - 裂孔性剝離手術：玻璃體切除術 (vitrectomy) + 視網膜復位 + 雷射固定 (需專科設備)
+    - 感染性病因：針對性抗生素或抗黴菌治療
+    - 腫瘤性：視病灶範圍與類型決定治療 (雷射、眼球摘除)
+    - 定期追蹤眼底與血壓 (尤其慢性腎臟病患者)
+
+emergencyNotes: "急性雙側失明合併視網膜剝離為急症。立即測量血壓 — 高血壓性視網膜剝離需緊急降壓 (Amlodipine)。早期降壓可促進視網膜復位與視力恢復。發現後 24-48 小時內治療效果最佳。貓急性失明三大鑑別：高血壓性視網膜剝離、視網膜退化 (taurine deficiency/PRA)、視神經疾病。"
+
+prognosis: 高血壓性滲出性視網膜剝離若早期控制血壓，約 50-60% 可部分至完全復位，但視力恢復程度不一。裂孔性視網膜剝離手術成功率約 50-70% (獸醫眼科)。剝離時間越長、範圍越大，預後越差。慢性完全剝離 (>2-4 週) 多為不可逆。根本原因 (腎臟病、腫瘤) 的預後也直接影響整體結果。
+
+guidelineRefs:
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "ISFM consensus guidelines on the diagnosis and management of hypertension in cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/28438078/
+    type: consensus
+    pmid: "28438078"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "ACVIM consensus statement on the treatment of hypertension in cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/17564728/
+    type: consensus
+    pmid: "17564728"
+  - sourceOrg: Veterinary Ophthalmology
+    title: "Retinal detachment in dogs and cats: a review"
+    url: https://pubmed.ncbi.nlm.nih.gov/24112538/
+    type: review
+    pmid: "24112538"
+pubmedQueries:
+  - query: '"retinal detachment" AND (dog OR cat OR canine OR feline) AND ("hypertension" OR "surgery" OR "treatment")'
+    frequency: monthly

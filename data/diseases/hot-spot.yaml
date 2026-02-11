@@ -1,0 +1,130 @@
+slug: hot-spot
+nameEn: Acute Moist Dermatitis
+nameZh: 急性濕疹性皮膚炎
+bodySystem: dermatology
+description: 犬常見的急性局部表淺皮膚感染，因自我創傷 (搔抓、舔舐、啃咬) 快速發展，病灶潮濕、紅腫、疼痛，常於數小時內急速擴大。
+
+aliases:
+  - { alias: Hot Spot, language: en }
+  - { alias: Pyotraumatic Dermatitis, language: en }
+  - { alias: Moist Eczema, language: en }
+  - { alias: Summer Sore, language: en }
+  - { alias: 熱斑, language: zh }
+  - { alias: 急性濕性皮膚炎, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: very_common
+    notes: 犬極常見。長毛厚被品種好發：Golden Retriever、Labrador Retriever、German Shepherd、Saint Bernard、Newfoundland、Bernese Mountain Dog。夏季溫暖潮濕季節高峰。任何年齡。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓極少見。偶見於長毛貓過度舔毛後。
+
+etiology:
+  categories:
+    - name: 潛在誘因 (triggering cause)
+      examples:
+        - 跳蚤過敏 (最常見誘因)
+        - 異位性皮膚炎
+        - 食物過敏
+        - 外耳炎 (耳後方 hot spot)
+        - 肛門腺問題 (臀部/尾根 hot spot)
+    - name: 促發因素
+      examples:
+        - 潮濕 (游泳後、洗澡後未完全吹乾)
+        - 厚密被毛 (散熱差、通風不良)
+        - 夏季高溫高濕環境
+        - 糾結毛 (matting)
+        - 皮膚擦傷或蚊蟲叮咬
+    - name: 致病菌
+      examples:
+        - Staphylococcus pseudintermedius (最常見)
+        - 正常皮膚菌叢在自我創傷後機會性感染
+        - 表淺型限於表皮；深層型 (pyotraumatic folliculitis) 侵犯毛囊
+
+pathophysiology: 初始刺激源 (過敏、寄生蟲叮咬、局部疼痛) 引起動物搔抓或舔舐特定區域。機械性創傷破壞表皮屏障，加上潮濕環境與厚密被毛的封閉效應，為 Staphylococcus 等表面菌叢創造理想的增殖環境。細菌快速增殖引起急性表淺感染，釋放的毒素與炎症介質進一步加劇搔癢與疼痛，動物更加劇烈搔抓，形成「搔癢-搔抓-感染」的急性惡性循環。病灶可在數小時內從小面積擴展至手掌大小。表面被膿性滲出物與壞死碎屑覆蓋，被毛黏附其上。
+
+clinicalSigns:
+  early:
+    - 突然出現的局限性潮濕紅斑區
+    - 急性搔癢或疼痛 (持續搔抓/舔舐特定部位)
+    - 病灶快速擴大 (數小時內)
+    - 被毛潮濕糾結
+  progressive:
+    - 境界清楚的紅腫、潮濕、糜爛性病灶
+    - 表面膿性滲出物
+    - 被毛黏附脫落
+    - 劇烈疼痛 (觸摸迴避)
+    - 周圍皮膚紅斑
+    - 好發部位：面頰 (外耳炎相關)、頸側、臀部/尾根 (跳蚤相關)、大腿外側
+  late:
+    - 深層毛囊炎 (pyotraumatic folliculitis) — 尤見於 Golden Retriever
+    - 衛星病灶 (周圍丘疹/膿疱)
+    - 區域性淋巴結腫大
+    - 嚴重自我創傷擴大
+
+diagnosis:
+  primaryTests:
+    - name: 臨床表現
+      notes: "典型表現即可診斷：突然出現的局限性潮濕紅腫糜爛病灶 + 急性自我創傷。好發品種 + 季節因素支持診斷"
+    - name: 皮膚細胞學 (impression smear)
+      notes: "球菌為主、嗜中性球。評估感染深度。出現桿菌時提示深層感染"
+    - name: 評估潛在誘因
+      notes: "檢查跳蚤/蚤糞、耳道檢查 (面頰病灶)、肛門腺檢查 (臀部病灶)"
+  imaging: []
+  additional:
+    - 皮膚刮搔 (排除毛囊蟲，若非典型表現)
+    - 細菌培養+藥敏 (反覆發作或治療反應不佳時)
+    - 過敏檢查 (反覆發作者)
+
+treatment:
+  principles:
+    - 打斷搔癢-感染惡性循環
+    - 清創處理 (剃毛、清潔)
+    - 控制感染
+    - 找出並處理潛在誘因
+  medications:
+    - name: 局部治療 (Chlorhexidine)
+      dose: "2-4% Chlorhexidine 溶液清洗 BID"
+      notes: 剃毛後清潔病灶。首選局部抗菌劑。可搭配 chlorhexidine + miconazole 噴劑
+    - name: 短期 Prednisolone
+      dose: "0.5-1 mg/kg PO SID × 5-7 天後遞減"
+      notes: 快速止癢止炎。表淺型通常 5-7 天即可
+    - name: Cephalexin
+      dose: "22-30 mg/kg PO BID × 14-21 天"
+      notes: 深層毛囊炎 (pyotraumatic folliculitis) 時需全身性抗生素。表淺型通常局部治療即足夠
+    - name: 伊麗莎白圈
+      dose: "持續佩戴直至病灶完全癒合"
+      notes: 防止自我創傷為治療成功的關鍵
+  general:
+    - 剃毛 (病灶周圍至少 2-3 cm，暴露病灶邊界)
+    - 溫和清創 (移除壞死組織與黏附被毛)
+    - 局部抗菌噴劑或軟膏
+    - 除蚤 (若為跳蚤誘發)
+    - 治療外耳炎 (若為耳部問題誘發)
+    - 吹乾被毛 (游泳/洗澡後)
+    - 定期梳理避免糾結
+
+prognosis: 表淺型 hot spot 在適當清創與治療後 5-7 天即可明顯改善，預後極佳。深層毛囊炎型需較長治療期 (2-3 週) 但預後仍佳。關鍵在於找出並處理潛在誘因以預防復發。未控制根本原因者 (如未除蚤、未治療過敏) 復發率高，尤其在夏季。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Dermatology
+    title: "Pyotraumatic dermatitis and pyotraumatic folliculitis in the dog: a retrospective study"
+    url: https://pubmed.ncbi.nlm.nih.gov/14616523/
+    type: research
+    pmid: "14616523"
+  - sourceOrg: Veterinary Clinics of North America Small Animal Practice
+    title: "Bacterial skin diseases in dogs and cats: an update"
+    url: https://pubmed.ncbi.nlm.nih.gov/16904934/
+    type: review
+    pmid: "16904934"
+  - sourceOrg: Veterinary Dermatology
+    title: "Antimicrobial use guidelines for treatment of superficial bacterial folliculitis in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/24720692/
+    type: guideline
+    pmid: "24720692"
+pubmedQueries:
+  - query: '("hot spot" OR "pyotraumatic dermatitis" OR "acute moist dermatitis") AND (dog OR canine) AND "treatment"'
+    frequency: monthly

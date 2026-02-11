@@ -139,12 +139,19 @@ async function upsertDisease(data: DiseaseYaml): Promise<"added" | "updated" | "
   // Insert guideline references
   if (data.guidelineRefs) {
     for (const g of data.guidelineRefs) {
-      // Check if reference already exists by URL
-      const existingRef = db
+      // Check if reference already exists by URL or PMID
+      let existingRef = db
         .select()
         .from(references)
         .where(eq(references.url, g.url))
         .get();
+      if (!existingRef && g.pmid) {
+        existingRef = db
+          .select()
+          .from(references)
+          .where(eq(references.pmid, g.pmid))
+          .get();
+      }
 
       let refId: string;
       if (existingRef) {

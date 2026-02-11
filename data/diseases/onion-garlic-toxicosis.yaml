@@ -1,0 +1,120 @@
+slug: onion-garlic-toxicosis
+nameEn: Onion and Garlic Toxicosis
+nameZh: 蔥蒜中毒
+bodySystem: toxicology
+description: 蔥屬植物 (Allium spp.) 含有含硫有機化合物，氧化紅血球血紅素導致 Heinz body 形成與溶血性貧血。貓較犬敏感，所有形式（生、熟、脫水、粉末）均有毒性。
+
+aliases:
+  - { alias: 洋蔥中毒, language: zh }
+  - { alias: 大蒜中毒, language: zh }
+  - { alias: 蔥屬植物中毒, language: zh }
+  - { alias: Allium Toxicosis, language: en }
+  - { alias: Onion Poisoning, language: en }
+  - { alias: Heinz Body Anemia from Allium, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬因誤食含蔥蒜的人類食物而中毒常見。毒性劑量約 15-30 g/kg 洋蔥。日本品種犬（Akita、Shiba Inu）因紅血球穀胱甘肽濃度較低，特別敏感。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓對蔥屬植物較犬敏感（毒性劑量約 5 g/kg），但因對食物挑剔，自願攝入大量的機率較低。嬰兒食品中含洋蔥粉為潛在來源。
+
+etiology:
+  categories:
+    - name: 常見蔥屬植物
+      examples:
+        - 洋蔥 (Allium cepa) — 毒性最強
+        - 大蒜 (Allium sativum) — 毒性約為洋蔥的 3-5 倍（以等重量計）
+        - 青蔥/大蔥 (Allium fistulosum)
+        - 韭菜 (Allium tuberosum)
+        - 蝦夷蔥 (Allium schoenoprasum)
+    - name: 毒性劑量
+      examples:
+        - "犬：洋蔥 >15-30 g/kg；大蒜 >5 g/kg"
+        - "貓：洋蔥 >5 g/kg；大蒜 >1-2 g/kg"
+        - 所有形式（生、熟、脫水、粉末、汁液）均有毒性
+        - 脫水蔥蒜粉毒性更強（濃縮）
+    - name: 毒性機制
+      examples:
+        - 含硫有機化合物 (thiosulfinates, thiosulfonates)
+        - 氧化紅血球內血紅素
+        - Heinz body 形成（變性血紅素沉澱於紅血球膜）
+        - 偏心體 (eccentrocyte) 形成
+        - 脾臟移除受損紅血球導致溶血性貧血
+
+clinicalSigns:
+  early:
+    - 嘔吐
+    - 下痢
+    - 腹痛
+    - 食慾下降
+    - 口腔黏膜刺激
+  progressive:
+    - 嗜睡
+    - 蒼白黏膜或黃疸
+    - 心搏過速 (tachycardia)
+    - 呼吸急促 (tachypnea)
+    - 紅棕色尿液（血紅素尿）
+    - 運動不耐
+  late:
+    - 嚴重溶血性貧血 (PCV 顯著下降)
+    - 黃疸加重
+    - 脾腫大
+    - 呼吸困難
+    - 虛脫
+    - 死亡（嚴重未治療者）
+
+diagnosis:
+  primaryTests:
+    - name: 病史與暴露確認
+      notes: "詢問攝入的蔥屬植物種類、量、形式（生/熟/粉末）與時間。注意含蔥蒜的人類食物（肉汁、醬料、嬰兒食品）"
+    - name: 血液抹片
+      notes: "Heinz body（新亞甲藍染色最佳）、偏心體 (eccentrocyte)。貓正常可有少量 Heinz body，大量出現才具診斷意義"
+  imaging:
+    - name: 腹部超音波
+      notes: "脾腫大（溶血時髓外造血增加）。評估其他器官"
+  additional:
+    - CBC（貧血程度、網狀紅血球計數評估骨髓再生反應）
+    - 生化（膽紅素上升、肝指數）
+    - 尿液分析（血紅素尿、膽紅素尿）
+    - 網狀紅血球計數（再生性貧血）
+    - Coombs test（排除免疫介導性溶血）
+
+treatment:
+  principles:
+    - 減少毒物吸收
+    - 支持性治療為主（無特效解毒劑）
+    - 維持組織氧合
+    - 監測貧血進展
+  general:
+    - 催吐（攝入後 2 小時內，患畜無症狀時）
+    - 活性炭 1-2 g/kg PO（攝入後早期）
+    - IV 輸液支持（維持灌流與促進代謝物排泄）
+    - 密切監測 PCV/TS（每 6-12 小時）
+    - 嚴重貧血需輸血（PCV <15% 或急性下降伴血液動力學不穩定）
+    - 氧氣補充（嚴重貧血或呼吸困難時）
+    - 抗氧化支持（Vitamin E 10 IU/kg PO SID、SAMe 20 mg/kg PO SID）
+    - 止吐 (maropitant 1 mg/kg SC SID)
+    - 避免氧化壓力藥物（如 acetaminophen、propofol）
+    - 住院監測至 PCV 穩定（溶血高峰通常在攝入後 3-5 天）
+
+prognosis: 輕度攝入經支持治療後預後良好，多數在 1-2 週內恢復。嚴重貧血（PCV <10%）若未及時輸血預後差。慢性低劑量攝入可能導致隱匿性貧血。日本犬種因先天易感性預後需更加謹慎。
+
+guidelineRefs:
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Allium species poisoning in dogs and cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/15900007/
+    type: review
+    pmid: "15900007"
+  - sourceOrg: Veterinary Pathology
+    title: "Heinz body hemolytic anemia in dogs and cats caused by onion and garlic: a review"
+    url: https://pubmed.ncbi.nlm.nih.gov/16145209/
+    type: review
+    pmid: "16145209"
+
+pubmedQueries:
+  - query: '"onion" OR "garlic" OR "Allium" AND (dog OR cat OR canine OR feline) AND ("toxicosis" OR "Heinz body" OR "hemolytic anemia")'
+    frequency: monthly

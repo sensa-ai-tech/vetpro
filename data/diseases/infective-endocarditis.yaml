@@ -1,0 +1,126 @@
+slug: infective-endocarditis
+nameEn: Infective Endocarditis
+nameZh: 感染性心內膜炎
+bodySystem: cardiac
+description: 感染性心內膜炎（IE）是心臟瓣膜或心內膜表面的細菌感染，以贅生物（vegetation）形成為特徵。犬隻以主動脈瓣與二尖瓣最常受侵犯，大型犬好發。常見致病菌包括 Staphylococcus、Streptococcus、Escherichia coli 與 Bartonella spp.。診斷困難，死亡率高，需長期積極抗生素治療。
+
+aliases:
+  - { alias: IE, language: en }
+  - { alias: 心內膜炎, language: zh }
+  - { alias: 細菌性心內膜炎, language: zh }
+  - { alias: Bacterial Endocarditis, language: en }
+  - { alias: Valvular Endocarditis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 中大型犬好發，公犬略多。German Shepherd、Golden Retriever、Labrador Retriever、Rottweiler 等品種有較高報告率。先天性心臟病（尤其 SAS）增加 IE 風險。免疫抑制狀態為風險因子。主動脈瓣最常受侵犯（約 50-60%），其次為二尖瓣（約 30%）。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓隻感染性心內膜炎罕見。偶有報告，二尖瓣受侵犯較多。Bartonella henselae 為貓 IE 的重要致病菌。
+
+etiology:
+  categories:
+    - name: 常見致病菌（犬）
+      examples:
+        - Staphylococcus aureus 與 S. pseudintermedius（最常見，約 25-30%）
+        - Streptococcus spp.（約 15-20%）
+        - Escherichia coli（約 15-20%，常伴泌尿道感染源）
+        - Bartonella spp.（B. vinsonii subsp. berkhoffii，越來越受重視，血培養陰性的重要原因）
+        - Enterococcus spp.
+        - Erysipelothrix rhusiopathiae
+    - name: 風險因子
+      examples:
+        - 先天性心臟缺陷（尤其 SAS — 高速血流造成內皮損傷）
+        - 免疫抑制（長期類固醇使用、化療）
+        - 慢性感染灶（椎間盤炎、前列腺炎、泌尿道感染、牙周病）
+        - 侵入性醫療處置（靜脈導管、手術）
+        - 大型犬品種
+    - name: 病理機制
+      examples:
+        - 內皮損傷 → 血小板-纖維蛋白沈積 → 菌血症時細菌定殖
+        - 贅生物（vegetation）形成：細菌、血小板、纖維蛋白、炎性細胞
+        - 瓣膜破壞 → 瓣膜閉鎖不全 → 容量過負荷與心衰竭
+        - 贅生物碎片脫落 → 敗血性栓塞（腎臟、脾臟、腦、關節）
+        - 免疫複合物沉積 → 腎絲球腎炎、多發性關節炎
+
+clinicalSigns:
+  early:
+    - 不明原因發燒（間歇性或持續性）
+    - 嗜睡、食慾減退
+    - 新出現的心臟雜音或已有雜音性質改變
+    - 體重減輕
+  progressive:
+    - 間歇性跛行（敗血性關節炎或免疫複合物性多發性關節炎）
+    - 嘔吐/腹瀉
+    - 肌肉疼痛
+    - 多器官症狀（腎衰竭、神經症狀）
+    - 新出現或加重的心臟雜音
+  late:
+    - 充血性心衰竭（急性重度瓣膜閉鎖不全）
+    - 敗血性栓塞症狀：急性腎衰竭（腎臟梗塞）、神經症狀（腦栓塞）、肢體末端壞死
+    - 免疫介導性腎絲球腎炎（蛋白尿）
+    - 敗血症/敗血性休克
+    - 心律不整（主動脈瓣根部膿瘍侵犯傳導系統）
+    - 猝死（主動脈瓣破壞、冠狀動脈栓塞）
+
+diagnosis:
+  primaryTests:
+    - name: 心臟超音波（Echocardiography）
+      notes: "最重要的非侵入性診斷工具。可見瓣膜上振動性（oscillating）或不規則回音密度增加的贅生物附著。主動脈瓣與二尖瓣為最常見部位。評估瓣膜閉鎖不全嚴重度（彩色都卜勒）。贅生物大小與活動度與栓塞風險相關。敏感度約 50-80%（小贅生物可能無法偵測）。"
+    - name: 血液培養（Blood Culture）
+      notes: "確診金標準。至少採集 3 套血液培養（不同時間點，間隔 30-60 分鐘），在使用抗生素之前採集。包含需氧與厭氧培養。Bartonella 需特殊培養條件或 PCR。培養陰性率約 30-50%（先前抗生素使用或 Bartonella 感染）。"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "評估心臟大小與充血性心衰竭表現。肺水腫（主動脈瓣或二尖瓣 IE 伴左心衰竭）。"
+    - name: 腹部超音波
+      notes: "腎臟梗塞灶（楔形低回音區）。脾臟梗塞。腹腔積液。"
+  additional:
+    - CBC：白血球增多（嗜中性球增多伴左移）、貧血（慢性發炎性或免疫介導性溶血）、血小板減少
+    - 血液生化：氮血症（腎臟損傷）、低白蛋白血症、肝指數升高
+    - 尿液分析：蛋白尿（免疫複合物性腎絲球腎炎）、血尿
+    - CRP/SAA：顯著升高（急性期反應蛋白）
+    - Bartonella PCR 與血清學：血培養陰性時尤其重要
+    - 關節穿刺液分析：敗血性或免疫介導性關節炎
+
+treatment:
+  principles:
+    - 長期高劑量靜脈注射殺菌性抗生素（至少 6-8 週）
+    - 血液培養結果指導抗生素選擇
+    - 同時處理充血性心衰竭與併發症
+    - 預後嚴肅，需積極長期治療
+  general:
+    - "經驗性抗生素治療（等待培養結果期間）：Ampicillin 22 mg/kg IV q6-8h + Enrofloxacin 5-10 mg/kg IV q24h（覆蓋 Gram+、Gram- 與非典型菌）"
+    - "替代經驗性方案：Ampicillin-Sulbactam 30 mg/kg IV q8h + Gentamicin 6-8 mg/kg IV q24h（注意腎毒性，需監測腎功能）"
+    - "依據培養結果調整：Staphylococcus — Oxacillin 或 Cefazolin；Streptococcus — Ampicillin；E. coli — 依藥敏結果"
+    - "Bartonella IE：Azithromycin 5 mg/kg PO q24h × 6 週 + Doxycycline 5 mg/kg PO q12h × 6 週"
+    - "抗生素療程：最少 6-8 週，主動脈瓣 IE 建議 8-12 週"
+    - "靜脈抗生素至少 2 週後可考慮轉為口服（臨床穩定且發燒消退後）"
+    - "CHF 管理：Furosemide 2-4 mg/kg PO q8-12h + Pimobendan 0.25 mg/kg PO q12h（急性重度主動脈瓣閉鎖不全）"
+    - "監測治療反應：體溫、CRP/SAA、血液培養（治療後應轉陰）、心臟超音波追蹤贅生物變化"
+
+prognosis: 感染性心內膜炎預後嚴肅至不良。整體死亡率約 50-75%。主動脈瓣 IE 預後較二尖瓣 IE 差（急性重度閉鎖不全、主動脈根部膿瘍風險）。早期診斷與積極長期抗生素治療可改善存活率。敗血性栓塞（腎臟、腦）為常見致死原因。Bartonella IE 若確診並適當治療預後相對較佳。CHF 發展為預後不良指標。血培養陰性但臨床懷疑高的病例仍應經驗性治療。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Infective endocarditis in dogs: diagnosis and therapy"
+    url: https://pubmed.ncbi.nlm.nih.gov/15715585/
+    type: consensus
+    pmid: "15715585"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Bartonella-associated endocarditis and polyarthritis in a dog"
+    url: https://pubmed.ncbi.nlm.nih.gov/16231709/
+    type: consensus
+    pmid: "16231709"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Infective endocarditis in dogs: a retrospective study"
+    url: https://pubmed.ncbi.nlm.nih.gov/20412552/
+    type: consensus
+    pmid: "20412552"
+pubmedQueries:
+  - query: '"infective endocarditis" AND (dog OR canine) AND ("treatment" OR "diagnosis" OR "Bartonella")'
+    frequency: monthly
+  - query: '"bacterial endocarditis" AND (dog OR canine) AND ("prognosis" OR "outcome" OR "echocardiography")'
+    frequency: monthly

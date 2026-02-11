@@ -1,0 +1,102 @@
+slug: toad-toxicosis
+nameEn: Toad Toxicosis
+nameZh: 蟾蜍中毒
+bodySystem: toxicology
+description: 犬貓接觸蟾蜍（特別是 Bufo/Rhinella 屬）耳後腺分泌的毒素（bufotoxins）引起的急性中毒。毒素含強心苷類物質，可導致嚴重心律不整。犬最常見，好發於熱帶與亞熱帶地區。
+
+aliases:
+  - { alias: 蟾蜍毒素中毒, language: zh }
+  - { alias: 蛤蟆中毒, language: zh }
+  - { alias: Bufo Toad Poisoning, language: en }
+  - { alias: Bufotoxin Poisoning, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 好奇心強的犬最常見，尤其是幼犬和小型犬。口腔接觸蟾蜍後迅速吸收毒素。台灣以盤古蟾蜍（Bufo bankorensis）中毒最常見。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 較少見，但仍有報告。貓可能因捕食蟾蜍而中毒。
+
+etiology:
+  categories:
+    - name: 毒素來源
+      examples:
+        - "Bufo marinus（海蟾蜍/甘蔗蟾蜍）— 毒性最強"
+        - Bufo bankorensis（盤古蟾蜍）— 台灣常見
+        - Bufo alvarius（科羅拉多河蟾蜍）
+        - 蟾蜍耳後腺（parotoid glands）分泌物
+    - name: 毒素成分
+      examples:
+        - Bufadienolides（蟾蜍二烯內酯）— 強心苷類
+        - Bufotoxins（蟾蜍毒素）
+        - Bufotenine（蟾蜍色胺）— 擬交感神經作用
+        - Catecholamines（兒茶酚胺類）
+
+clinicalSigns:
+  early:
+    - 劇烈流涎
+    - 搔抓口腔
+    - 口腔黏膜充血
+    - 嘔吐
+  progressive:
+    - 心律不整（心搏過速或過緩）
+    - 共濟失調
+    - 瞳孔散大
+    - 發紺
+  late:
+    - 癲癇發作
+    - 肺水腫
+    - 心室顫動
+    - 心跳停止
+    - 死亡（可在 15 分鐘至數小時內）
+
+diagnosis:
+  primaryTests:
+    - name: 病史與臨床表現
+      notes: "目擊犬隻咬蟾蜍或口腔接觸蟾蜍 + 急性流涎、心律不整即高度懷疑"
+    - name: ECG
+      notes: "心律不整為關鍵發現：竇性心搏過緩、AV block、心室早期收縮(VPC)、心室頻脈(VT)。類似毛地黃中毒的ECG變化。"
+  imaging:
+    - name: 胸腔X光
+      notes: "評估肺水腫"
+  additional:
+    - 電解質（高鉀血症加重心臟毒性）
+    - 血糖（可能高血糖）
+    - 腎功能
+
+treatment:
+  principles:
+    - 立即大量清水沖洗口腔（向外沖，避免吞入）
+    - 心律不整處理為重點
+    - 支持性治療
+    - 無特異性解毒劑
+  general:
+    - "緊急口腔沖洗：大量清水由口角向外沖洗 10-15 分鐘"
+    - "Atropine 0.02-0.04 mg/kg IV（治療心搏過緩）"
+    - "Lidocaine 2 mg/kg IV bolus（犬，治療心室早期收縮/心室頻脈）"
+    - "IV 輸液支持"
+    - "止痙：Diazepam 0.5-1 mg/kg IV（若有癲癇發作）"
+    - 降溫（若有高體溫）
+    - 持續 ECG 監測至少 12-24 小時
+    - "嚴重病例可考慮 Digoxin-specific antibody fragments（Digibind®）— 成本高但有效"
+
+prognosis: 小型蟾蜍接觸預後良好。大型蟾蜍（B. marinus）中毒死亡率可達 100%（若未及時治療）。及時沖洗口腔並治療心律不整者預後改善。12 小時內存活者預後良好。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Toad intoxication in dogs: clinical features and outcome in 33 cases"
+    url: https://pubmed.ncbi.nlm.nih.gov/26391728/
+    type: study
+    pmid: "26391728"
+  - sourceOrg: Australian Veterinary Journal
+    title: "Cane toad toxicity in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/16749861/
+    type: review
+    pmid: "16749861"
+
+pubmedQueries:
+  - query: '"toad" AND "toxicosis" AND (dog OR canine) AND ("treatment" OR "bufotoxin")'
+    frequency: monthly

@@ -1,0 +1,148 @@
+slug: gastric-ulceration
+nameEn: Gastric Ulceration
+nameZh: 胃潰瘍
+bodySystem: gastrointestinal
+description: 胃黏膜缺損深達黏膜肌層或更深的病變，可引起嘔血、黑便及腹膜炎 (穿孔時)。常見原因包括 NSAIDs 使用、腫瘤 (肥大細胞瘤、胃泌素瘤)、肝腎疾病及壓力。
+
+aliases:
+  - { alias: GI Ulceration, language: en }
+  - { alias: Gastric Erosion, language: en }
+  - { alias: Gastroduodenal Ulceration, language: en }
+  - { alias: 胃十二指腸潰瘍, language: zh }
+  - { alias: 胃糜爛, language: zh }
+  - { alias: 消化性潰瘍, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: NSAIDs (尤其 ibuprofen、aspirin 人用劑量) 為最常見藥物性原因。肥大細胞瘤伴高組織胺血症為重要腫瘤性原因。大型犬腸繫膜淋巴瘤或肝臟疾病亦可引起。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓對 NSAIDs 極度敏感，低劑量即可引起胃潰瘍。腎衰竭相關尿毒性胃炎為貓的常見原因。
+
+etiology:
+  categories:
+    - name: 藥物性 (最常見)
+      examples:
+        - NSAIDs (ibuprofen、aspirin、meloxicam 過量、carprofen)
+        - 皮質類固醇 (尤其與 NSAIDs 併用)
+        - NSAIDs + 皮質類固醇併用 (風險大幅增加)
+    - name: 腫瘤相關
+      examples:
+        - 肥大細胞瘤 (組織胺促進胃酸分泌)
+        - 胃泌素瘤 (Zollinger-Ellison syndrome)
+        - 胃癌/胃淋巴瘤直接侵犯
+        - 肝臟腫瘤 (肝功能不全影響前列腺素代謝)
+    - name: 代謝性
+      examples:
+        - 腎衰竭 (尿毒症性胃炎)
+        - 肝衰竭
+        - Addison's disease 危象
+        - 休克/低灌流
+    - name: 壓力性
+      examples:
+        - 嚴重疾病/手術/外傷後
+        - 脊髓損傷後 (尤其椎間盤疾病)
+        - 運動犬高強度訓練
+
+clinicalSigns:
+  early:
+    - 食慾下降/厭食
+    - 間歇性嘔吐
+    - 腹部不適 (弓背、不願移動)
+    - 流涎
+  progressive:
+    - 嘔血 (hematemesis — 鮮紅色或咖啡渣樣)
+    - 黑便 (melena — 柏油樣便)
+    - 體重減輕
+    - 嗜睡
+    - 貧血症狀 (黏膜蒼白、心搏過速)
+  late:
+    - 急性腹痛 (穿孔)
+    - 腹膜炎 (發燒、腹肌僵硬、休克)
+    - 嚴重失血性貧血
+    - 低血容量性休克
+    - 敗血症 (穿孔後)
+
+diagnosis:
+  primaryTests:
+    - name: 上消化道內視鏡 (Esophagogastroduodenoscopy)
+      notes: "金標準。直接觀察胃黏膜潰瘍/糜爛位置、大小及數量。同時取切片排除腫瘤。評估十二指腸黏膜"
+    - name: CBC
+      notes: "再生性貧血 (失血性)。可見血小板增多 (慢性失血刺激)。嗜酸性球增多提示肥大細胞瘤"
+    - name: 糞便潛血檢測 (Fecal Occult Blood)
+      notes: "偵測少量消化道出血。敏感度高但特異度低 (飲食可干擾)"
+  imaging:
+    - name: 腹部超音波
+      notes: "評估胃壁增厚、腫塊。肝臟/脾臟腫瘤篩檢。偵測游離腹水 (穿孔)"
+    - name: 腹部 X 光
+      notes: "穿孔時可見游離氣體 (pneumoperitoneum)。評估胃擴張或異物"
+    - name: 腹部 CT
+      notes: "懷疑腫瘤或穿孔時。增強 CT 更精確"
+  additional:
+    - 生化 (BUN 升高可見於消化道出血、腎功能評估)
+    - 血清胃泌素濃度 (懷疑胃泌素瘤時)
+    - 凝血功能 (排除凝血異常性出血)
+    - 皮質醇 (排除 Addison's disease)
+    - 肥大細胞瘤篩檢 (腹部超音波、肝脾細針抽吸)
+
+treatment:
+  principles:
+    - 停用所有 NSAIDs 及皮質類固醇
+    - 質子幫浦抑制劑 (PPI) 為胃酸抑制首選
+    - 黏膜保護劑
+    - 穿孔為外科急症
+    - 治療根本原因
+  medications:
+    - name: Omeprazole
+      dose: "1-2 mg/kg PO BID"
+      notes: 質子幫浦抑制劑 (PPI)。胃潰瘍一線用藥。比 H2 blocker 更有效抑制胃酸
+    - name: Pantoprazole
+      dose: "1 mg/kg IV BID"
+      notes: 注射型 PPI。無法口服時使用 (嚴重嘔吐、術後)
+    - name: Sucralfate
+      dose: "犬 0.5-1 g PO TID；貓 0.25 g PO TID"
+      notes: 黏膜保護劑。與潰瘍面結合形成保護膜。需與其他口服藥間隔 2 小時
+    - name: Misoprostol
+      dose: "2-5 μg/kg PO TID"
+      notes: 前列腺素 E1 類似物。預防 NSAIDs 胃潰瘍最有效。孕畜禁用
+    - name: Famotidine
+      dose: "0.5-1 mg/kg PO/IV BID"
+      notes: H2 受體拮抗劑。效果不如 PPI，但可用於輕度病例
+  general:
+    - 立即停用 NSAIDs 及皮質類固醇
+    - PPI (omeprazole/pantoprazole) + sucralfate 為標準治療組合
+    - 嚴重出血：IV 輸液、輸血 (PCV <20% 或急性出血)
+    - 止吐：Maropitant 1 mg/kg IV/SC SID
+    - 穿孔：緊急剖腹手術修補 + 腹腔灌洗
+    - 少量多餐、易消化飲食
+    - PPI 治療至少 4-6 週，內視鏡追蹤確認癒合
+    - 肥大細胞瘤：同時給予 famotidine + omeprazole + 腫瘤治療
+
+emergencyNotes: 胃穿孔致急性腹膜炎為外科急症。急性大量嘔血需緊急輸血及靜脈 PPI。休克時積極液體復甦。穿孔手術前開始廣效抗生素。NSAIDs 中毒需立即催吐 (若近期攝入) 及活性碳。
+
+prognosis: 藥物性胃潰瘍停藥後加 PPI 治療預後良好，多數 2-4 週癒合。腫瘤性潰瘍取決於腫瘤類型及分期。胃穿孔伴腹膜炎手術死亡率約 50-70%。腎衰竭相關尿毒性胃炎需控制腎臟疾病。肥大細胞瘤引起的胃潰瘍需同時控制腫瘤及胃酸分泌。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "ACVIM consensus statement on the use of nonsteroidal anti-inflammatory drugs in dogs and cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/31532019/
+    type: consensus
+    pmid: "31532019"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Gastrointestinal tract perforation in dogs treated with corticosteroids and nonsteroidal anti-inflammatory drugs"
+    url: https://pubmed.ncbi.nlm.nih.gov/16579680/
+    type: research
+    pmid: "16579680"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Gastroduodenal ulceration in dogs: retrospective study of 43 cases and literature review"
+    url: https://pubmed.ncbi.nlm.nih.gov/18564224/
+    type: research
+    pmid: "18564224"
+pubmedQueries:
+  - query: '"gastric ulcer" AND (dog OR canine OR cat OR feline) AND ("NSAID" OR "treatment" OR "omeprazole")'
+    frequency: monthly
+  - query: '"gastrointestinal perforation" AND (dog OR canine) AND ("corticosteroid" OR "NSAID" OR "outcome")'
+    frequency: monthly

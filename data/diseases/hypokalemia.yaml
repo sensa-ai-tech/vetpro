@@ -1,0 +1,135 @@
+slug: hypokalemia
+nameEn: Hypokalemia
+nameZh: 低鉀血症
+bodySystem: electrolyte
+description: 血清鉀離子濃度異常降低，為小動物臨床最常見的電解質異常之一。可導致肌肉無力（貓特徵性頸部腹屈）、心律不整及腎濃縮功能障礙。常見於慢性腎臟病、嘔吐/腹瀉、利尿劑使用及糖尿病酮酸中毒治療後。
+
+aliases:
+  - { alias: Hypokalaemia, language: en }
+  - { alias: Low Potassium, language: en }
+  - { alias: Potassium Depletion, language: en }
+  - { alias: 低血鉀, language: zh }
+  - { alias: 鉀離子過低, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 常見於使用 loop diuretics（furosemide）的心臟病犬、慢性嘔吐/腹瀉、DKA 胰島素治療後。住院犬盛行率約 20-30%。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 慢性腎臟病貓極為常見（約 20-30% CKD 貓）。Burmese 品種有家族性低鉀血症肌病。特徵性頸部腹屈（ventroflexion）為貓低鉀血症的經典表現。
+
+etiology:
+  categories:
+    - name: 腎臟流失增加
+      examples:
+        - 慢性腎臟病（貓尤其常見，腎小管鉀回收能力下降）
+        - Loop diuretics（furosemide）
+        - 腎上腺功能亢進（Cushing's — 皮質醇具弱 mineralocorticoid 效果）
+        - 腎小管性酸中毒（RTA）
+        - 術後利尿期
+    - name: 胃腸道流失
+      examples:
+        - 慢性嘔吐
+        - 持續性腹瀉
+        - 胃腸道引流
+    - name: 細胞外向細胞內轉移
+      examples:
+        - 胰島素治療（DKA 治療後最常見）
+        - 代謝性鹼中毒
+        - Refeeding syndrome
+        - 兒茶酚胺/β-agonists
+    - name: 攝入不足
+      examples:
+        - 食慾廢絕/厭食
+        - 低鉀飲食
+    - name: 品種相關
+      examples:
+        - Burmese 家族性低鉀血症多發性肌病（Burmese Hypokalaemic Polymyopathy）
+
+clinicalSigns:
+  early:
+    - 輕度肌肉無力
+    - 嗜睡
+    - 食慾下降
+    - 多尿/多渴（低鉀導致腎濃縮功能障礙）
+  progressive:
+    - 頸部腹屈（ventroflexion，貓特徵性表現 — 無法抬頭）
+    - 全身性肌肉無力（四肢僵硬步態、不願行走）
+    - 肌肉疼痛
+    - 腸蠕動減少（ileus）
+    - 心律不整
+  late:
+    - 呼吸肌無力（呼吸困難）
+    - 橫紋肌溶解（CK 升高）
+    - 嚴重心律不整（心房/心室期外收縮、心房顫動）
+    - 低鉀性腎病（慢性低鉀血症導致腎小管空泡化）
+
+diagnosis:
+  primaryTests:
+    - name: 血清電解質
+      notes: "犬正常 K+：3.5-5.5 mEq/L；貓正常 K+：3.5-5.8 mEq/L。輕度低鉀 3.0-3.5 mEq/L；中度 2.5-3.0 mEq/L；重度 <2.5 mEq/L。溶血檢體可能假性正常化"
+    - name: 心電圖（ECG）
+      notes: "K+ <3.0 mEq/L：ST 段壓低、T 波平坦/倒置、U 波出現。嚴重時：QT 間期延長、心房/心室期外收縮"
+    - name: 血液氣體分析
+      notes: "評估酸鹼狀態。代謝性鹼中毒常伴隨低鉀血症（互為因果）"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "評估心臟大小（利尿劑相關低鉀血症）。嚴重低鉀可見腸蠕動減少/ileus"
+  additional:
+    - 全血計數與生化（BUN/Creatinine 評估腎功能）
+    - 尿液分析（尿比重低提示腎濃縮功能障礙）
+    - CK（creatine kinase 升高提示肌肉損傷/橫紋肌溶解）
+    - 鎂離子檢測（低鎂血症會使低鉀血症難以矯正）
+    - Aldosterone/Renin 比值（懷疑原發性醛固酮增多症時）
+
+treatment:
+  principles:
+    - 輕度低鉀血症可口服補充
+    - 中重度或有臨床症狀者需靜脈補充
+    - 靜脈補鉀速率不可過快（心律不整風險）
+    - 同時矯正低鎂血症（否則低鉀難以矯正）
+    - 治療根本病因
+  medications:
+    - name: KCl 靜脈補充
+      dose: "補充速率不超過 0.5 mEq/kg/hr。輕度：20 mEq/L 輸液添加；中度：40 mEq/L；重度：60-80 mEq/L（需 CRI pump 與心電圖監控）"
+      notes: 嚴禁 IV bolus 給予 KCl。速率過快可致致命性高鉀血症與心搏停止。周邊靜脈 KCl 濃度建議不超過 40 mEq/L（避免靜脈炎）
+    - name: Potassium gluconate 口服
+      dose: "犬/貓 2-6 mEq/day PO，分次給予（Tumil-K 或 RenaKare）"
+      notes: 適用於慢性/輕度低鉀血症。CKD 貓長期維持補充。粉劑可混入食物
+    - name: Potassium citrate 口服
+      dose: "犬 50-75 mg/kg PO BID-TID；貓 50 mg/kg PO BID"
+      notes: 同時具鹼化尿液效果，適用於合併代謝性酸中毒或 CaOx 結石風險患畜
+    - name: MgSO4（硫酸鎂）
+      dose: "0.75-1 mEq/kg/day CRI IV"
+      notes: 低鎂血症合併低鉀血症時必須同時矯正，否則低鉀難以糾正
+  general:
+    - DKA 胰島素治療時務必同時補鉀（胰島素驅使 K+ 進入細胞）
+    - Furosemide 長期使用者監測電解質並預防性補鉀
+    - CKD 貓的長期口服鉀補充
+    - 飲食調整（高鉀飲食/腎臟處方飼料）
+    - 監測血鉀每 4-6 小時直到穩定
+    - Burmese 品種低鉀血症：長期口服補鉀可有效控制
+
+prognosis: 輕至中度低鉀血症經適當補充預後極佳。CKD 貓的低鉀血症可透過長期口服補充有效管理。DKA 治療相關的低鉀血症在適當監測補充下預後良好。嚴重低鉀血症（<2.0 mEq/L）伴呼吸肌無力者需緊急處理。Burmese 家族性低鉀血症肌病在長期口服補鉀下可完全控制，但需終身補充。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Electrolyte disturbances in critically ill dogs and cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/23855441/
+    type: review
+    pmid: "23855441"
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "Hypokalaemia in cats: clinical signs and management"
+    url: https://pubmed.ncbi.nlm.nih.gov/24417798/
+    type: review
+    pmid: "24417798"
+  - sourceOrg: IRIS
+    title: "IRIS CKD Treatment Recommendations — Electrolyte Management"
+    url: https://www.iris-kidney.com/iris-staging-system
+    type: guideline
+pubmedQueries:
+  - query: '"hypokalemia" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "ventroflexion" OR "CKD")'
+    frequency: monthly

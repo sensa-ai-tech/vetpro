@@ -1,0 +1,127 @@
+slug: otitis-media
+nameEn: Otitis Media
+nameZh: 中耳炎
+bodySystem: ear
+description: 中耳（鼓室）的炎症性疾病，多為外耳炎的延伸或經鼓膜穿破蔓延而來。犬約 50-80% 的慢性外耳炎併發中耳炎，貓則常與鼻咽息肉或上呼吸道感染相關。
+
+aliases:
+  - { alias: OM, language: en }
+  - { alias: Middle Ear Infection, language: en }
+  - { alias: 鼓室炎, language: zh }
+  - { alias: 中耳感染, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 慢性外耳炎犬約 50-80% 併發中耳炎。Cocker Spaniel、Basset Hound 等垂耳品種高風險。多由外耳炎經鼓膜穿破蔓延。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 常見原因為鼻咽息肉（尤其幼貓）、上呼吸道感染經耳咽管上行。原發性中耳炎較犬常見。
+
+etiology:
+  categories:
+    - name: 續發於外耳炎（最常見，犬）
+      examples:
+        - 慢性/復發性外耳炎穿破鼓膜
+        - Pseudomonas aeruginosa 感染
+        - Staphylococcus 感染
+        - Malassezia 酵母菌感染
+    - name: 上行感染經耳咽管（貓較常見）
+      examples:
+        - 上呼吸道感染
+        - 鼻咽息肉
+        - 鼻竇炎
+    - name: 血行性感染（罕見）
+      examples:
+        - 全身性感染的血行播散
+    - name: 其他
+      examples:
+        - 膽脂瘤（cholesteatoma）
+        - 中耳腫瘤
+        - 異物穿入
+
+clinicalSigns:
+  early:
+    - 持續性搖頭/甩耳
+    - 耳部疼痛（觸碰耳根退縮）
+    - 外耳炎治療反應不佳
+    - 大量耳分泌物
+  progressive:
+    - 頭歪斜（向患側）
+    - Horner 氏症候群（縮瞳、第三眼瞼突出、眼裂縮小、眼球內陷）
+    - 顏面神經麻痺（患側眼瞼無法閉合、嘴唇下垂）
+    - 聽力下降
+    - 張口困難/疼痛（顳下頜關節鄰近鼓室）
+  late:
+    - 內耳炎（前庭症狀：眼球震顫、共濟失調、旋轉）
+    - 耳聾
+    - 慢性膿性耳漏
+    - 鼓室骨壁溶解
+
+diagnosis:
+  primaryTests:
+    - name: 耳鏡檢查（Otoscopy）
+      notes: "評估鼓膜完整性：正常鼓膜為半透明珍珠白色。鼓膜破裂、膨出、混濁、變色提示中耳炎。嚴重外耳炎可能因耳道腫脹無法觀察鼓膜"
+    - name: 影像耳鏡（Video Otoscopy）
+      notes: "放大觀察鼓膜與深部耳道。可執行鼓膜穿刺（myringotomy）取樣中耳內容物"
+    - name: 中耳分泌物細胞學與培養
+      notes: "經鼓膜穿刺取樣或破裂鼓膜取樣。細菌培養 + 藥敏試驗指導抗生素選擇。常見 Pseudomonas、Staphylococcus、Streptococcus"
+  imaging:
+    - name: CT（電腦斷層掃描）
+      notes: "中耳炎影像學金標準。評估鼓室充填、鼓泡壁增厚/硬化/溶解、鼓室內軟組織/液體密度。敏感度遠優於 X 光"
+    - name: MRI
+      notes: "評估軟組織，對內耳炎、腦幹侵犯較 CT 優。T2WI 顯示鼓室液體蓄積"
+    - name: 頭部 X 光（鼓泡投影）
+      notes: "鼓泡壁增厚/硬化、鼓室不透明化。敏感度低於 CT，約 25% 的中耳炎 X 光正常"
+  additional:
+    - 甲狀腺功能檢查（犬慢性復發性耳炎）
+    - 過敏評估（異位性皮膚炎為外耳炎最常見原發因素）
+    - 組織病理（排除膽脂瘤或腫瘤）
+
+treatment:
+  principles:
+    - 根據培養藥敏結果選擇抗生素
+    - 中耳沖洗清除蓄膿
+    - 同時處理外耳炎
+    - 鑑別並處理原發因素
+  medications:
+    - name: 全身性抗生素（根據 C&S 結果）
+      dose: "Fluoroquinolones（Enrofloxacin 5-20 mg/kg PO SID 犬；Marbofloxacin 2-5 mg/kg PO SID）或 Clindamycin 11 mg/kg PO BID"
+      notes: 療程通常 4-8 週。Pseudomonas 感染首選 fluoroquinolones。需穿透中耳組織
+    - name: 局部耳藥（鼓膜安全配方）
+      dose: "依產品指示"
+      notes: 鼓膜破裂時避免 aminoglycosides（gentamicin）及 chlorhexidine。TrizEDTA 沖洗安全且可增強抗生素效果
+    - name: 全身性消炎
+      dose: "Prednisolone 0.5-1 mg/kg PO SID，逐漸減量"
+      notes: 減少中耳炎症與水腫，改善引流
+  general:
+    - 鼓膜穿刺（myringotomy）+ 鼓室沖洗（溫生理食鹽水）
+    - 影像耳鏡下的深部耳道清潔
+    - 鼓泡骨切開術（ventral bulla osteotomy, VBO）— 藥物治療失敗或膽脂瘤
+    - 全耳道切除 + 外側鼓泡骨切開術（TECA-LBO）— 末期耳道合併中耳炎
+    - 鼻咽息肉摘除（貓，經口牽拉術 traction-avulsion）
+    - 長期管理基礎過敏性疾病
+
+prognosis: 急性中耳炎經適當抗生素治療與中耳沖洗，預後良好。慢性中耳炎伴末期耳道變化可能需 TECA-LBO 手術，術後預後佳但可能永久喪失聽力。Horner 氏症候群與顏面神經麻痺在治療後數週至數月可能改善。貓鼻咽息肉術後復發率約 30-50%（牽拉術）。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Clinics of North America
+    title: "Diagnosis and Management of Otitis Media in Dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/15325175/
+    type: review
+    pmid: "15325175"
+  - sourceOrg: Veterinary Dermatology
+    title: "Prevalence of otitis media in dogs with otitis externa — a CT study"
+    url: https://pubmed.ncbi.nlm.nih.gov/20178477/
+    type: research
+    pmid: "20178477"
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "Nasopharyngeal polyps in cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/19362458/
+    type: review
+    pmid: "19362458"
+pubmedQueries:
+  - query: '"otitis media" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "diagnosis" OR "CT")'
+    frequency: monthly

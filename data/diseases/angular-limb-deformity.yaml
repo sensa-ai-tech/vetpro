@@ -1,0 +1,120 @@
+slug: angular-limb-deformity
+nameEn: Angular Limb Deformity
+nameZh: 角肢畸形
+bodySystem: orthopedic
+description: 成對骨骼 (前臂橈骨/尺骨) 生長不同步導致的肢體角度異常，好發於軟骨營養障礙犬種及外傷後幼犬。
+
+aliases:
+  - { alias: ALD, language: en }
+  - { alias: Antebrachial Growth Deformity, language: en }
+  - { alias: Premature Physeal Closure, language: en }
+  - { alias: 前肢角度畸形, language: zh }
+  - { alias: 骨骺早閉, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 好發軟骨營養障礙品種 (chondrodystrophic)：Basset Hound、Dachshund、Shih Tzu、Lhasa Apso、Skye Terrier。大型犬因外傷致骨骺損傷後亦常見。通常 4-8 月齡生長期發現。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓罕見，通常與外傷後骨骺損傷相關。
+
+etiology:
+  categories:
+    - name: 先天性/品種因素
+      examples:
+        - 軟骨營養障礙品種 (遠端尺骨骨骺錐形異常)
+        - 遺傳性骨骺發育異常
+        - 不對稱生長板活性
+    - name: 後天性
+      examples:
+        - 外傷性骨骺損傷 (Salter-Harris 骨折)
+        - 醫源性 (不當骨折固定)
+        - 營養性 (過度鈣質補充、維生素 D 過量)
+        - 感染性骨骺炎
+    - name: 病理機制
+      examples:
+        - 遠端尺骨骨骺早閉 (最常見類型)
+        - 橈骨持續生長 → 橈骨外翻 (valgus)、前弓 (cranial bowing)
+        - 尺骨弓弦效應 (bowstring effect)
+        - 肘關節不一致 (incongruity)
+
+clinicalSigns:
+  early:
+    - 前肢輕微彎曲 (幼犬生長期)
+    - 步態輕微異常
+    - 前肢長度不對稱
+  progressive:
+    - 明顯前肢外翻 (valgus) 或內翻 (varus)
+    - 前臂弓形 (cranial bowing)
+    - 肘關節不一致導致跛行
+    - 腕關節外翻
+    - 肘關節活動受限或疼痛
+  late:
+    - 嚴重肢體畸形
+    - 肘關節退化性關節炎
+    - 腕關節退化性關節炎
+    - 患肢肌肉萎縮
+    - 功能障礙
+
+diagnosis:
+  primaryTests:
+    - name: 骨科檢查
+      notes: "肢體角度評估、肘/腕關節活動範圍、疼痛反應。與對側比較"
+    - name: 前肢 X 光 (正側位)
+      notes: "標準篩檢。評估橈骨/尺骨相對長度、角度偏差、肘關節一致性、骨骺閉合狀態"
+  imaging:
+    - name: X 光 (全前肢含肘關節與腕關節)
+      notes: "評估 CORA (center of rotation of angulation) 位置。測量解剖軸偏差角度。需包含對側正常肢做比較"
+    - name: CT + 3D 重建
+      notes: "術前計畫金標準。精確測量畸形角度與旋轉分量。CORA 定位更準確"
+  additional:
+    - 對側肢 X 光 (正常參考)
+    - 骨骺閉合評估 (判斷殘餘生長潛力)
+    - 肘關節評估 (fragmented coronoid process 或 ununited anconeal process 併發)
+
+treatment:
+  principles:
+    - 手術為主要治療，手術時機取決於剩餘生長潛力
+    - 幼犬 (骨骺未完全閉合) 可考慮尺骨截骨 ± 暫時性骨骺阻滯
+    - 成犬需矯正截骨 (corrective osteotomy)
+    - 同時處理肘關節不一致
+  medications:
+    - name: NSAIDs (Meloxicam, Carprofen)
+      dose: "依藥物標準劑量"
+      notes: 術後疼痛管理
+    - name: Gabapentin
+      dose: "5-10 mg/kg PO BID-TID"
+      notes: 多模式止痛輔助
+  general:
+    - 幼犬 (生長板仍開放)：遠端尺骨截骨術 (distal ulnar ostectomy) 釋放弓弦效應，允許橈骨自我矯正
+    - 暫時性骨骺阻滯 (transphyseal bridging)：選擇性抑制快速生長側
+    - 成犬矯正截骨：CORA-based corrective osteotomy + 骨板或外固定器固定
+    - 環形外固定器 (circular external fixator / Ilizarov) 適用於複雜多平面畸形
+    - 急性或漸進矯正 (distraction osteogenesis)
+    - 術後復健與活動限制 (6-12 週)
+    - 體重管理 (減輕關節負擔)
+
+prognosis: 幼犬早期尺骨截骨預後最佳，生長板仍有活性時可大幅自我矯正。成犬矯正截骨成功率高 (>85%) 但術後可能殘留輕度畸形。合併嚴重肘關節退化性關節炎時功能預後較差。術後需長期追蹤評估。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Surgery
+    title: "Corrective osteotomy for antebrachial angular and rotational deformities in dogs."
+    url: https://pubmed.ncbi.nlm.nih.gov/31506972/
+    type: research
+    pmid: "31506972"
+  - sourceOrg: Veterinary and comparative orthopaedics and traumatology
+    title: "Computer-assisted planning for corrective osteotomy of antebrachial deformities in dogs."
+    url: https://pubmed.ncbi.nlm.nih.gov/30071556/
+    type: research
+    pmid: "30071556"
+  - sourceOrg: Frontiers in veterinary science
+    title: "Three-Dimensional Printed Patient-Specific Osteotomy Guides for Correction of Antebrachial Angular Limb Deformity in Dogs."
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9748057/
+    type: research
+    pmid: "36532340"
+pubmedQueries:
+  - query: '"angular limb deformity" AND (dog OR canine) AND ("corrective osteotomy" OR "treatment")'
+    frequency: monthly

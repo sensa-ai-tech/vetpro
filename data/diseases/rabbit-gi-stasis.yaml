@@ -1,0 +1,131 @@
+slug: rabbit-gi-stasis
+nameEn: Rabbit Gastrointestinal Stasis
+nameZh: 兔消化道停滯
+bodySystem: exotic
+description: 兔消化道蠕動減慢或停止的綜合症候群，為家兔最常見且最危險的急症之一。高纖維飲食不足、壓力、疼痛或潛在疾病導致盲腸發酵異常，腸道菌群失衡，嚴重時可致肝臟脂肪變性、內毒素血症及死亡。
+
+aliases:
+  - { alias: 兔胃腸停滯, language: zh }
+  - { alias: 兔腸阻滯, language: zh }
+  - { alias: 兔消化道鬱滯, language: zh }
+  - { alias: GI Stasis, language: en }
+  - { alias: Rabbit Ileus, language: en }
+  - { alias: Gastrointestinal Hypomotility, language: en }
+  - { alias: Gut Stasis, language: en }
+
+species:
+  - speciesCommon: rabbit
+    speciesScientific: Oryctolagus cuniculus
+    prevalence: common
+    notes: 家兔最常見的急症之一。任何年齡、品種均可發生。長毛品種（Angora、Lionhead）因毛球攝入風險較高。肥胖兔、活動量不足的籠養兔風險較高。飲食中纖維不足為最大風險因素。
+
+etiology:
+  categories:
+    - name: 飲食因素（最常見）
+      examples:
+        - 乾草攝入量不足（纖維不足是首要原因）
+        - 過多顆粒飼料（高碳水化合物、低纖維）
+        - 過多零食或水果（高糖，促進有害菌過度生長）
+        - 飲水不足
+    - name: 壓力與環境
+      examples:
+        - 環境變化（搬家、新同伴、噪音）
+        - 疼痛（牙科疾病、泌尿道結石、骨折等任何疼痛源）
+        - 缺乏運動（長期籠養）
+        - 麻醉/手術後（腸蠕動抑制）
+    - name: 潛在疾病
+      examples:
+        - 牙科疾病（咬合不正導致進食困難→纖維攝入減少）
+        - 肥胖（腹腔脂肪壓迫消化道）
+        - 泌尿道疾病
+        - 呼吸道感染
+        - E. cuniculi 感染
+    - name: 病理機轉
+      examples:
+        - 腸蠕動減慢→盲腸內容物滯留→pH 值改變
+        - 盲腸正常菌群（纖維分解菌）死亡→產氣梭菌（Clostridium spp.）過度生長
+        - 產氣→腹脹→疼痛→進一步厭食→惡性循環
+        - 兔不能嘔吐——胃內容物無法排出
+        - 長期厭食→肝臟脂肪變性（兔極易發生，與貓相似）
+        - 嚴重時：腸道菌群移位→內毒素血症→多器官衰竭
+
+clinicalSigns:
+  early:
+    - 糞便量減少或顆粒變小
+    - 食慾下降（先拒顆粒飼料，後拒乾草）
+    - 活動量減少
+    - 姿勢異常（弓背、不願移動）
+  progressive:
+    - 完全厭食（>12 小時不進食為緊急狀況）
+    - 無糞便排出
+    - 腹部脹氣（觸診可感覺氣體膨脹）
+    - 腹痛（磨牙 bruxism、蜷縮）
+    - 嗜睡
+    - 體溫下降（正常 38.5-40°C，<37°C 為低體溫）
+  late:
+    - 嚴重脫水
+    - 低體溫（<37°C）
+    - 休克（黏膜蒼白、CRT 延長、心率加快後轉為心動過緩）
+    - 肝臟脂肪變性（黃疸，但兔難以觀察）
+    - 內毒素血症
+    - 死亡（可在 24-48 小時內發生）
+
+diagnosis:
+  primaryTests:
+    - name: 腹部觸診
+      notes: "胃內容物觸感（正常應為軟麵團狀）。脹氣的胃觸感如氣球。盲腸是否膨脹。腹部壓痛評估。兔腹部觸診為基礎診斷技術"
+    - name: 腹部 X 光
+      notes: "評估胃腸道氣體分布。正常兔胃應有少量氣體與食物。GI stasis：胃過度膨脹（氣體或食物堆積）、盲腸脹氣。鑑別腸阻塞（氣-液平面）"
+  imaging:
+    - name: 腹部超音波
+      notes: "評估腸蠕動（是否減慢或停止）。肝臟脂肪變性評估。腹腔積液。排除其他腹腔病變"
+  additional:
+    - CBC（嗜中性球升高或減少——敗血症指標）
+    - 生化（肝指數、腎指數、血糖——低血糖為嚴重徵兆）
+    - 電解質（鉀、鈣）
+    - 口腔檢查（排除牙科疾病——常需鎮靜下以耳鏡或專用口腔鏡檢查臼齒）
+    - 尿液分析（排除泌尿道疾病）
+    - 糞便寄生蟲檢查（排除球蟲等）
+
+treatment:
+  principles:
+    - GI stasis 為急症——早期積極治療顯著改善預後
+    - 恢復腸蠕動為核心目標
+    - 補液、止痛、營養支持並行
+    - 找出並治療潛在原因
+    - 兔禁食超過 12 小時即需緊急處理
+  general:
+    - "皮下輸液：0.9% NaCl 或 Lactated Ringer's 50-100 mL/kg/day SC 分 2-3 次（輕度脫水）"
+    - "嚴重脫水/休克：靜脈輸液 IV（耳靜脈或頭靜脈），10-15 mL/kg/hr 初期"
+    - "腸蠕動促進劑：Metoclopramide 0.5 mg/kg SC/PO q6-8h（禁忌於完全腸阻塞！）"
+    - "Cisapride 0.5 mg/kg PO q8-12h（促進全腸道蠕動，需確認非完全阻塞）"
+    - "止痛：Meloxicam 0.3-0.5 mg/kg SC/PO SID（兔 NSAID 首選）"
+    - "止痛加強：Buprenorphine 0.02-0.05 mg/kg SC/IV q6-8h（嚴重疼痛時，但鴉片類可能減緩腸蠕動）"
+    - "Simethicone 65-130 mg/rabbit PO q1h × 3 doses（消脹氣，安全無毒）"
+    - "強制灌食：Critical Care (Oxbow) 或類似草食動物營養粉，15-20 mL/kg q6-8h 注射器灌食"
+    - "腹部按摩（輕柔順時針，有助促進蠕動）"
+    - "鼓勵運動（放出籠子自由活動促進蠕動）"
+    - "環境保暖（低體溫兔需加溫墊）"
+    - "益生菌補充不建議——恢復正常飲食後菌群會自行恢復"
+
+prognosis: 早期診斷與積極治療下預後良好至謹慎。輕度 GI stasis 經適當補液、止痛、促蠕動治療後多數在 24-72 小時內恢復。延遲治療、已出現嚴重脹氣或低體溫時預後謹慎至不良。已發展為肝臟脂肪變性或內毒素血症/敗血症時預後極差。完全腸阻塞（真正的機械性阻塞）預後不良——手術存活率僅約 30%。預防（充足乾草、適當運動、減壓）遠優於治療。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Gastrointestinal diseases of rabbits"
+    url: https://pubmed.ncbi.nlm.nih.gov/24157570/
+    type: review
+    pmid: "24157570"
+  - sourceOrg: Journal of Exotic Pet Medicine
+    title: "Rabbit gastroenterology: diagnostics, therapeutics, and surgeries"
+    url: https://pubmed.ncbi.nlm.nih.gov/25015871/
+    type: review
+    pmid: "25015871"
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Critical care of the rabbit"
+    url: https://pubmed.ncbi.nlm.nih.gov/26611927/
+    type: review
+    pmid: "26611927"
+pubmedQueries:
+  - query: '"gastrointestinal stasis" AND rabbit AND ("treatment" OR "ileus" OR "motility")'
+    frequency: monthly

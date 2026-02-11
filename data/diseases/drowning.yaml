@@ -1,0 +1,151 @@
+slug: drowning
+nameEn: Drowning
+nameZh: 溺水
+bodySystem: emergency
+description: 液體浸沒導致呼吸損害的過程，可因吸入液體或喉痙攣導致窒息。即使初始復甦成功，續發性肺損傷（肺泡表面活性劑破壞、ARDS）可在事件後 24-72 小時出現，需密切監測。現行定義不再區分「溺斃」與「近溺水」，統一使用「溺水」一詞。
+
+aliases:
+  - { alias: Near-Drowning, language: en }
+  - { alias: Submersion Injury, language: en }
+  - { alias: Immersion Injury, language: en }
+  - { alias: 近溺水, language: zh }
+  - { alias: 溺水傷害, language: zh }
+  - { alias: 浸沒傷害, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 犬溺水多發生於游泳池（無法攀爬池壁脫困）、開放水域（疲勞、水流）、浴缸（幼犬/小型犬）。短頭種犬游泳能力差，風險特別高。Bulldog 等品種因體型結構幾乎無法游泳。癲癇犬水中發作亦為風險。淡水與海水溺水的臨床處理差異在獸醫臨床中意義不大（吸入量通常不足以造成顯著滲透壓差異）。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓溺水極罕見，因貓通常迴避水域。意外落入游泳池/水桶、洪水、幼貓意外為偶見情況。
+
+etiology:
+  categories:
+    - name: 意外溺水
+      examples:
+        - 游泳池（無法爬出 — 最常見）
+        - 開放水域（湖泊、河流、海洋 — 疲勞/水流）
+        - 浴缸/水桶（幼犬、小型犬）
+        - 洪水/天災
+        - 冰上行走破冰落水
+    - name: 淡水 vs 海水機制
+      examples:
+        - 淡水（低張）：沖洗肺泡表面活性劑 → 肺泡塌陷 → V/Q mismatch
+        - 海水（高張）：吸引血管內水分進入肺泡 → 肺水腫
+        - 臨床處理差異不大（吸入量通常不足以造成顯著電解質變化）
+    - name: 風險因子
+      examples:
+        - 短頭種犬（Bulldog、Pug — 游泳能力極差）
+        - 癲癇犬（水中發作）
+        - 幼年/老年動物
+        - 脊椎疾病/四肢無力
+        - 無人監督的水域活動
+
+pathophysiology: 浸沒 → 恐慌與掙扎 → 吸入液體（wet drowning，約 85-90%）或反射性喉痙攣（dry drowning，約 10-15%）→ 低血氧。吸入液體直接損害肺泡上皮與表面活性劑 (surfactant)。淡水：低張液體滲入肺泡 → 表面活性劑稀釋/失活 → 肺泡塌陷 → 肺不張 → V/Q mismatch。海水：高張液體吸引血管內水分進入肺泡 → 肺水腫 → 氣體交換障礙。兩者均導致嚴重低血氧。持續低血氧 → 缺氧性腦損傷（4-6 分鐘不可逆損傷開始）。吸入髒水/泥沙 → 化學性肺炎與續發性細菌性肺炎。表面活性劑破壞 → 續發性 ARDS（24-72 小時內出現）。低體溫常同時存在（尤其冷水溺水）— 低體溫可提供一定程度的腦保護（降低代謝需求），但也增加心律不整風險。
+
+clinicalSigns:
+  early:
+    - 意識改變（昏迷至清醒不等，取決於缺氧時間）
+    - 呼吸困難/呼吸急促
+    - 咳嗽（咳出水或泡沫狀液體）
+    - 心搏過速或過緩
+    - 低體溫
+    - 發紺
+    - 嘔吐
+  progressive:
+    - 持續低血氧（SpO₂ <90%）
+    - 肺部聽診：瀰漫性濕囉音 (crackles)
+    - 呼吸做功增加
+    - 代謝性酸中毒
+    - 精神狀態惡化
+    - 持續低體溫
+  late:
+    - ARDS（事件後 24-72 小時出現 — 續發性肺損傷）
+    - 嚴重呼吸衰竭
+    - 缺氧性腦損傷（昏迷、癲癇、瞳孔散大無反應）
+    - 肺炎（吸入髒水/異物）
+    - 非心因性肺水腫
+    - 多器官衰竭
+    - 心搏停止
+
+diagnosis:
+  primaryTests:
+    - name: 病史
+      notes: "確認浸沒時間（預後最重要因素）、水質（淡水/海水/游泳池/髒水）、水溫。到院前復甦措施"
+    - name: SpO₂/動脈血氣分析
+      notes: "低血氧為核心特徵。PaO₂/FiO₂ ratio 評估嚴重度。代謝性酸中毒（乳酸升高）。PaCO₂ 可升高（通氣不足）或降低（代償性過度通氣）"
+    - name: 胸腔 X 光
+      notes: "初始可能正常（異常可能延遲 6-12 小時出現）。典型表現：瀰漫性肺泡浸潤（非心因性肺水腫型態）。吸入異物評估"
+  imaging:
+    - name: 胸腔 X 光（連續追蹤）
+      notes: "每 6-12 小時重複。監測肺浸潤進展與 ARDS 發展。排除氣胸"
+    - name: 肺部超音波
+      notes: "B-lines 評估肺水腫。可床邊快速重複評估"
+  additional:
+    - CBC/生化/電解質（電解質失衡評估 — 臨床上淡水/海水差異通常不顯著）
+    - 核心體溫（低體溫評估與監測）
+    - 凝血功能（嚴重低體溫/缺氧可觸發 DIC）
+    - 血糖
+    - 乳酸（組織灌流與缺氧嚴重度）
+    - 神經學評估（瞳孔反射、意識狀態 — 腦損傷程度）
+
+treatment:
+  principles:
+    - ABC 復甦為最優先
+    - 氧療與呼吸支持
+    - 復溫（低體溫管理）
+    - 密切監測至少 48-72 小時（續發性 ARDS 風險）
+    - 無特異性治療 — 支持性照護為主
+  medications:
+    - name: 氧氣治療
+      dose: "Flow-by、鼻導管 (50-100 mL/kg/min)、氧氣籠。目標 SpO₂ >94%"
+      notes: 第一線治療。低血氧嚴重且無反應時考慮 CPAP 或機械通氣 (IPPV + PEEP)
+    - name: IV 晶體液
+      dose: "犬 10-20 mL/kg bolus，依灌流狀態調整"
+      notes: 維持灌流。保守輸液管理（避免加重肺水腫）
+    - name: 廣效抗生素
+      dose: "Ampicillin-Sulbactam 30 mg/kg IV TID（髒水吸入時）"
+      notes: 並非所有溺水均需預防性抗生素。髒水/泥水吸入或出現肺炎徵兆時給予
+    - name: 支氣管擴張劑
+      dose: "Albuterol/Salbutamol 霧化吸入；或 Terbutaline 0.01 mg/kg SC/IM"
+      notes: 支氣管痙攣時使用
+    - name: Maropitant
+      dose: "1 mg/kg IV SID"
+      notes: 止吐
+  general:
+    - 到院前：清除口腔異物/水、開始 CPR（如需要）、保暖
+    - 氣管插管與吸引（清除氣道內液體 — 僅在設備可用時）
+    - 低體溫管理：緩慢復溫（目標每小時升溫 0.5-1°C）。加溫輸液、加溫毯、暖風。避免快速復溫（core afterdrop 風險 — 周邊冷血回流導致核心溫度進一步下降 + 心律不整）
+    - PEEP (positive end-expiratory pressure) 維持肺泡擴張、改善氧合
+    - 不推薦嘗試排出吸入之液體（Heimlich maneuver 無效且延遲 CPR）
+    - 持續 SpO₂/ECG 監測
+    - 不推薦常規使用類固醇或利尿劑（無證據支持改善預後）
+    - 癲癇控制：Diazepam 0.5-1 mg/kg IV
+    - 住院觀察至少 48-72 小時（即使初始表現良好 — 續發性肺損傷/ARDS 可延遲出現）
+
+emergencyNotes: 溺水到院處理：(1) 立即 ABC 評估 — 無呼吸/心跳 → CPR；(2) 清除氣道分泌物/異物；(3) 100% 氧氣；(4) 核心體溫測量 — 低體溫 → 緩慢復溫；(5) 建立靜脈通路（保守輸液）；(6) 胸腔 X 光 + 血氣分析；(7) ECG 監測（低體溫性心律不整）；(8) 重要：初始表現良好不代表安全 — 續發性 ARDS 可在 24-72 小時後出現，必須住院觀察。冷水溺水：體溫 <30°C 時不可宣布死亡（低體溫提供腦保護），持續 CPR 直至復溫至 >32°C。
+
+prognosis: 預後主要取決於浸沒時間與缺氧持續時間。浸沒 <5 分鐘且迅速復甦者預後良好。浸沒 >10 分鐘者預後顯著惡化。到院時有自主呼吸與意識反應者存活率高。冷水溺水可能提供額外腦保護（低體溫降低代謝率）。續發性 ARDS 發生者死亡率高。永久性缺氧性腦損傷為存活者的主要長期後遺症。到院時瞳孔散大且無光反射為極不良預後指標。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Near-drowning and drowning in small animals"
+    url: https://pubmed.ncbi.nlm.nih.gov/26470842/
+    type: review
+    pmid: "26470842"
+  - sourceOrg: New England Journal of Medicine
+    title: "Drowning — a review of epidemiology, pathophysiology, treatment"
+    url: https://pubmed.ncbi.nlm.nih.gov/22762316/
+    type: review
+    pmid: "22762316"
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Acute lung injury and acute respiratory distress syndrome in veterinary medicine"
+    url: https://pubmed.ncbi.nlm.nih.gov/17352988/
+    type: review
+    pmid: "17352988"
+pubmedQueries:
+  - query: '"drowning" OR "near-drowning" AND (dog OR canine OR veterinary) AND ("treatment" OR "pulmonary" OR "outcome")'
+    frequency: monthly

@@ -1,0 +1,146 @@
+slug: colitis
+nameEn: Colitis
+nameZh: 結腸炎
+bodySystem: gastrointestinal
+description: 結腸黏膜炎症反應，以大腸型下痢為主要表現，包含排便急迫、黏液便、血便及排便頻率增加。可為急性（常具自限性）或慢性（需深入診斷），為犬貓大腸性下痢最常見的原因。
+
+aliases:
+  - { alias: Large Bowel Diarrhea, language: en }
+  - { alias: Chronic Colitis, language: en }
+  - { alias: Acute Colitis, language: en }
+  - { alias: 大腸炎, language: zh }
+  - { alias: 大腸性下痢, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 非常常見，急性結腸炎多為壓力性、飲食性或感染性。慢性結腸炎以淋巴球-漿細胞性或組織球性潰瘍性結腸炎為主。Boxer 好發組織球性潰瘍性結腸炎 (HUC)。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 常見。常為 IBD 的一部分。需與大腸型淋巴瘤鑑別（尤其老貓）。梨形鞭毛蟲 (Tritrichomonas foetus) 為貓隻重要病因。
+
+etiology:
+  categories:
+    - name: 感染性
+      examples:
+        - 鞭蟲 (Trichuris vulpis) — 犬最常見的寄生蟲性結腸炎病因
+        - 梨形鞭毛蟲 (Giardia spp.)
+        - Tritrichomonas foetus（貓）
+        - Clostridium perfringens / C. difficile
+        - Campylobacter spp.
+        - Histoplasma capsulatum（真菌性，流行區域）
+    - name: 飲食性/壓力性
+      examples:
+        - 飲食不當（垃圾、桌食、突然換食）
+        - 食物不耐受或食物過敏
+        - 壓力性結腸炎（寄宿、旅行、環境變化）
+        - 高纖維飲食不適應
+    - name: 免疫介導/特發性
+      examples:
+        - 淋巴球-漿細胞性結腸炎（最常見的慢性型態）
+        - 嗜酸性結腸炎
+        - 組織球性潰瘍性結腸炎 (HUC)（Boxer、French Bulldog 好發）
+        - 肉芽腫性結腸炎
+    - name: 其他
+      examples:
+        - 結腸腫瘤（腺癌、淋巴瘤）
+        - 纖維結腸鏡後刺激
+        - 盲腸翻轉 (cecal inversion)
+        - 藥物誘發（NSAIDs）
+
+clinicalSigns:
+  early:
+    - 排便急迫 (tenesmus)
+    - 排便頻率增加但每次量少
+    - 糞便帶黏液
+    - 鮮血附於糞便表面 (hematochezia)
+  progressive:
+    - 持續性黏液血便
+    - 排便疼痛 (dyschezia)
+    - 排便時過度用力
+    - 放屁增加 (flatulence)
+    - 體重通常維持正常（與小腸型下痢不同）
+  late:
+    - 慢性消瘦（嚴重或長期病例）
+    - 直腸脫垂（長期排便用力）
+    - 食慾減退
+    - HUC 可出現嚴重血便導致貧血
+
+diagnosis:
+  primaryTests:
+    - name: 糞便檢查
+      notes: "浮游法與直接抹片鏡檢。排除寄生蟲（鞭蟲卵、Giardia 囊體）。糞便 PCR 可檢測 Tritrichomonas、Giardia"
+    - name: 結腸鏡 + 組織病理
+      notes: "慢性結腸炎的金標準。評估黏膜外觀（充血、糜爛、潰瘍、顆粒狀）。多處切片行組織學分類與分級"
+    - name: 糞便培養與毒素檢測
+      notes: "Clostridium perfringens enterotoxin（CPE）ELISA、Campylobacter 培養"
+  imaging:
+    - name: 腹部超音波
+      notes: "評估結腸壁厚度（正常 <3 mm）、層次結構、局部淋巴結。排除腫塊性病灶"
+    - name: 腹部 X 光
+      notes: "排除異物、阻塞。急性結腸炎通常 X 光無特異發現"
+  additional:
+    - CBC、生化（通常正常；HUC 可見貧血）
+    - Spec cPL/fPL（排除胰臟炎）
+    - 糞便 PCR dysbiosis index（犬）
+    - 食物排除試驗（排除食物反應性）
+    - 直腸指診（觸及腫塊、狹窄、增厚）
+    - FISH 檢測（Boxer HUC 與 E. coli 黏膜侵入相關）
+
+treatment:
+  principles:
+    - 急性結腸炎多為自限性，以支持療法為主
+    - 慢性結腸炎需確定病因再針對治療
+    - 逐步診斷法：驅蟲 → 飲食試驗 → 抗生素 → 免疫抑制
+  medications:
+    - name: Fenbendazole
+      dose: "50 mg/kg PO SID × 3-5 天"
+      notes: 經驗性驅蟲（鞭蟲、梨形鞭毛蟲）。慢性大腸性下痢首先考慮
+    - name: Metronidazole
+      dose: "10-15 mg/kg PO BID × 7-14 天"
+      notes: "抗厭氧菌 + 免疫調節 + 抗 Giardia。常用於急性與慢性結腸炎"
+    - name: Tylosin
+      dose: "25 mg/kg PO BID"
+      notes: 抗生素反應性結腸炎。部分犬有顯著且持續的反應
+    - name: Sulfasalazine
+      dose: "犬 20-40 mg/kg PO TID × 3-4 週；貓禁用（水楊酸毒性）"
+      notes: 局部抗炎作用（5-ASA 於結腸釋放）。慢性結腸炎特異性治療
+    - name: Prednisolone
+      dose: "1-2 mg/kg PO SID × 2-4 週，漸減"
+      notes: 免疫介導性結腸炎（確診後）。食物/抗生素無反應時使用
+    - name: Enrofloxacin
+      dose: "5-10 mg/kg PO SID × 6-8 週"
+      notes: Boxer HUC 特異治療（E. coli 相關）。緩解率高
+  general:
+    - 急性：禁食 12-24 小時後給予溫和易消化飲食
+    - 高纖維飲食（可溶性纖維如車前子殼 psyllium 1-3 tsp/meal）
+    - 水解蛋白或新型蛋白飲食（食物反應性病例）
+    - 益生菌輔助
+    - 充足水分攝取
+
+prognosis: 急性結腸炎預後優良，多數在支持療法後 2-5 天緩解。慢性淋巴球-漿細胞性結腸炎經適當治療多可控制。飲食反應性結腸炎預後最佳。Boxer HUC 經 enrofloxacin 治療緩解率高（>80%），但可能需長期維持。寄生蟲性結腸炎驅蟲後預後優良。結腸腫瘤相關的結腸炎預後取決於腫瘤類型與分期。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Granulomatous colitis in French Bulldogs associated with invasive Escherichia coli and response to fluoroquinolone antimicrobials"
+    url: https://pubmed.ncbi.nlm.nih.gov/23952327/
+    type: research
+    pmid: "23952327"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Histopathologic and immunohistochemical characterization of large intestinal disease in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/20456098/
+    type: research
+    pmid: "20456098"
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "Tritrichomonas foetus infection in cats with diarrhoea in a rescue colony in Italy"
+    url: https://pubmed.ncbi.nlm.nih.gov/17254817/
+    type: research
+    pmid: "17254817"
+
+pubmedQueries:
+  - query: '"colitis" AND (dog OR canine) AND ("treatment" OR "histopathology" OR "granulomatous")'
+    frequency: monthly
+  - query: '"large bowel diarrhea" AND (dog OR cat) AND ("diagnosis" OR "fiber" OR "management")'
+    frequency: monthly

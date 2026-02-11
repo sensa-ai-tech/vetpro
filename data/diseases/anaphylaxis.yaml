@@ -1,0 +1,150 @@
+slug: anaphylaxis
+nameEn: Anaphylaxis
+nameZh: 過敏性休克
+bodySystem: emergency
+description: 由 IgE 介導的第 I 型過敏反應引起的急性全身性超敏反應，導致嚴重血管擴張、血管通透性增加及支氣管收縮，可在數分鐘內進展至心血管虛脫與死亡。犬的休克器官為肝臟（肝靜脈痙攣），貓的休克器官為肺臟。
+
+aliases:
+  - { alias: Anaphylactic Shock, language: en }
+  - { alias: Anaphylactic Reaction, language: en }
+  - { alias: Type I Hypersensitivity, language: en }
+  - { alias: 全身型過敏反應, language: zh }
+  - { alias: 過敏性反應, language: zh }
+  - { alias: 急性過敏, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 犬的主要休克器官為肝臟 — 肝靜脈痙攣導致門靜脈鬱血與內臟血液淤積，引起嚴重低血壓。常見觸發因素包括蟲咬（蜂螫、蛇咬）、藥物（疫苗、抗生素、NSAIDs）、食物、造影劑。腸道症狀（嘔吐、血便）為犬常見表現。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓的主要休克器官為肺臟 — 支氣管痙攣與肺血管收縮為主要病理機制。表現以急性呼吸窘迫為主。藥物（抗生素、疫苗）與昆蟲螫咬為常見觸發因素。
+
+etiology:
+  categories:
+    - name: 藥物/醫源性
+      examples:
+        - 疫苗反應（最常見的醫源性原因）
+        - 抗生素（青黴素類、頭孢菌素類、sulfonamides）
+        - NSAIDs
+        - 造影劑
+        - 血液製品/輸血反應
+        - 化療藥物（L-asparaginase、doxorubicin）
+    - name: 昆蟲/節肢動物
+      examples:
+        - 蜂螫 (Hymenoptera — 蜜蜂、黃蜂、胡蜂)
+        - 蛇咬
+        - 蜘蛛咬傷
+        - 火蟻螫
+    - name: 食物
+      examples:
+        - 食物過敏原（罕見引起全身性反應）
+    - name: 其他
+      examples:
+        - 橡膠乳膠
+        - 運動誘發性（罕見）
+        - 特發性（無法確認觸發因素）
+
+pathophysiology: 初次暴露於過敏原後，B 細胞產生特異性 IgE 抗體，結合於肥大細胞與嗜鹼性球表面的 FcεRI 受體（致敏化）。再次暴露時，過敏原交聯結合的 IgE 分子，觸發肥大細胞脫顆粒，釋放大量預形成介質（histamine、tryptase、heparin）與新合成介質（leukotrienes C4/D4/E4、prostaglandins、PAF）。犬：Histamine 作用於肝靜脈 H1/H2 受體 → 肝靜脈痙攣 → 門靜脈系統鬱血 → 約 60% 血容量淤積於內臟循環 → 嚴重低血壓與心輸出量急遽下降。同時腸道黏膜水腫與出血 → 嘔吐、血便。貓：支氣管平滑肌收縮與肺血管收縮為主 → 急性呼吸窘迫。血管通透性全身性增加 → 組織水腫、有效循環血量減少。嚴重者可導致心搏停止。Anaphylactoid reaction（非 IgE 介導）可發生於首次暴露，臨床表現與真正的 anaphylaxis 無法區分。
+
+clinicalSigns:
+  early:
+    - 突然發作（暴露後數秒至數分鐘）
+    - 面部/口唇水腫（血管性水腫 angioedema）
+    - 蕁麻疹（犬 — 全身紅疹/膨疹）
+    - 劇烈搔癢
+    - 流涎
+    - 嘔吐
+  progressive:
+    - 心搏過速
+    - 低血壓（黏膜蒼白、CRT 延長）
+    - 呼吸困難/呼吸急促
+    - 犬：嚴重嘔吐、血便（肝靜脈痙攣→門靜脈鬱血→腸道出血）
+    - 貓：嚴重呼吸困難（支氣管痙攣）
+    - 腹痛
+    - 虛弱/倒地
+  late:
+    - 心血管虛脫/分布性休克
+    - 嚴重呼吸衰竭
+    - 意識喪失
+    - 心搏停止
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 臨床診斷
+      notes: "急性發作的多系統症狀 + 已知過敏原暴露史即可臨床診斷。診斷為排除性 — 不需等待實驗室結果即應立即治療"
+    - name: 理學檢查
+      notes: "低血壓、心搏過速、黏膜蒼白、面部水腫、蕁麻疹。犬注意腹部膨脹（內臟鬱血）。貓注意呼吸型態"
+  imaging:
+    - name: 腹部超音波（AFAST）
+      notes: "犬：可見膽囊壁水腫 (halo sign)、腹腔積液、腸壁水腫"
+    - name: 胸腔 X 光
+      notes: "貓：支氣管型態、肺過度膨脹。犬：肺水腫評估"
+  additional:
+    - 血壓監測（低血壓為核心特徵）
+    - CBC/生化（基線評估）
+    - 凝血功能（嚴重案例評估 DIC 風險）
+    - 血氣分析（評估氧合與酸鹼狀態）
+    - 乳酸（組織灌流指標）
+    - 事後可測定血清 tryptase 或 histamine 確認（臨床實務中少用）
+
+treatment:
+  principles:
+    - Epinephrine 為第一線且最重要的治療
+    - 積極容量復甦對抗血管擴張與血管通透性增加
+    - 維持呼吸道通暢
+    - 時間就是生命 — 延遲 epinephrine 給予直接增加死亡率
+  medications:
+    - name: Epinephrine (Adrenaline)
+      dose: "0.01-0.02 mg/kg IM（1:1000 製劑）；嚴重休克時 0.01 mg/kg IV（1:10000 製劑，緩慢推注）"
+      notes: 第一線治療，應立即給予。IM 給予優先於 SC（吸收更快更可靠）。可每 5-15 分鐘重複。α 作用升壓 + β1 增加心輸出量 + β2 支氣管擴張 + 穩定肥大細胞膜
+    - name: IV 晶體液 (LRS)
+      dose: "休克劑量 60-90 mL/kg/hr (犬)，快速 bolus 20-30 mL/kg，依反應重複"
+      notes: 積極容量復甦對抗分布性休克。可能需大量輸液（因血管通透性增加，有效循環血量嚴重不足）
+    - name: Diphenhydramine (H1 blocker)
+      dose: "1-2 mg/kg IM 或緩慢 IV"
+      notes: 第二線輔助治療。阻斷 histamine H1 受體。不可替代 epinephrine
+    - name: Ranitidine/Famotidine (H2 blocker)
+      dose: "Famotidine 0.5-1 mg/kg IV BID"
+      notes: H2 受體阻斷輔助治療。與 H1 blocker 合併使用效果更佳
+    - name: Dexamethasone SP
+      dose: "0.1-0.5 mg/kg IV"
+      notes: 預防遲發性反應 (biphasic reaction)。起效慢（4-6 小時），不用於急性期搶救
+    - name: Atropine
+      dose: "0.02-0.04 mg/kg IV"
+      notes: 僅用於嚴重心搏過緩（迷走神經介導）
+  general:
+    - 立即停止/移除可疑過敏原（停止輸液/藥物注射、移除蜂螫刺等）
+    - 維持呼吸道通暢 — 嚴重喉頭水腫可能需緊急氣管插管或氣管切開
+    - 100% 氧氣供給
+    - 持續 ECG 與血壓監測
+    - 支氣管痙攣：Albuterol 霧化吸入或 Terbutaline 0.01 mg/kg SC/IM
+    - 觀察至少 12-24 小時（雙相反應可在初始反應後 4-72 小時出現）
+    - 記錄過敏原並標記於病歷，告知飼主未來避免暴露
+
+emergencyNotes: 過敏性休克為超級急症 — Epinephrine 必須在第一時間給予。處理步驟：(1) 立即 Epinephrine 0.01 mg/kg IM（不等實驗室結果）；(2) 建立靜脈通路、休克劑量輸液；(3) 維持呼吸道（喉頭水腫 → 插管/氣切）；(4) 100% O₂；(5) 持續血壓/ECG 監測；(6) 5-15 分鐘無反應 → 重複 Epinephrine；(7) Diphenhydramine + Famotidine 輔助；(8) Dexamethasone 預防雙相反應；(9) 觀察 12-24 小時。犬：注意腸道出血需積極輸液。貓：注意支氣管痙攣需 bronchodilator。
+
+prognosis: 及時給予 Epinephrine 並積極治療者存活率高。延遲治療者死亡率顯著上升。多數存活者在 24-48 小時內完全恢復。雙相反應 (biphasic reaction) 可在 4-72 小時後出現，需觀察。未來再次暴露同一過敏原有更嚴重反應的風險。疫苗反應者未來疫苗接種需預先給予抗組織胺、分次注射或更換疫苗廠牌。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Anaphylaxis in dogs and cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/26391764/
+    type: review
+    pmid: "26391764"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Adverse vaccine reactions in dogs and cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/16231710/
+    type: research
+    pmid: "16231710"
+  - sourceOrg: Veterinary Anaesthesia and Analgesia
+    title: "Perioperative anaphylaxis in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/28070997/
+    type: review
+    pmid: "28070997"
+pubmedQueries:
+  - query: '"anaphylaxis" AND (dog OR cat OR canine OR feline) AND ("epinephrine" OR "treatment" OR "vaccine reaction")'
+    frequency: monthly

@@ -1,0 +1,127 @@
+slug: hydrocephalus
+nameEn: Hydrocephalus
+nameZh: 水腦症
+bodySystem: neurology
+description: 腦室系統內腦脊髓液異常蓄積導致腦室擴張，造成腦實質壓迫與神經功能障礙。可為先天性或後天性。
+
+aliases:
+  - { alias: Water on the Brain, language: en }
+  - { alias: Ventriculomegaly, language: en }
+  - { alias: 腦積水, language: zh }
+  - { alias: 水頭症, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 先天性水腦好發於短頭種與玩具犬品種：Chihuahua、Yorkshire Terrier、Maltese、Pomeranian、English Bulldog、Boston Terrier、Pug。幼犬頭骨未閉合時前囟門可觸及。後天性可見於任何品種。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓少見。先天性可與宮內感染 (FPV 小腦發育不全) 相關。後天性多因腫瘤或炎症阻塞。
+
+etiology:
+  categories:
+    - name: 先天性 (阻塞性)
+      examples:
+        - 中腦導水管狹窄 (最常見先天原因)
+        - 第四腦室出口閉鎖 (Dandy-Walker 畸形)
+        - 顱底畸形 (Chiari-like malformation 相關)
+        - 宮內感染 (犬小病毒、FPV)
+    - name: 後天性 (阻塞性)
+      examples:
+        - 腦室內或腦室旁腫瘤 (脈絡叢乳頭狀瘤、室管膜瘤)
+        - 腦炎/腦膜炎後纖維化
+        - 腦室內出血後黏連
+    - name: 後天性 (交通性)
+      examples:
+        - 蛛網膜下腔吸收障礙
+        - 蛛網膜顆粒功能異常
+        - 腦膜炎後蛛網膜纖維化
+
+clinicalSigns:
+  early:
+    - 穹窿狀頭型 (dome-shaped skull，先天性)
+    - 前囟門開放 (先天性幼犬)
+    - 腹側外斜視 (setting sun sign)
+    - 學習/訓練能力差
+  progressive:
+    - 行為異常 (遲鈍、反應慢)
+    - 視力異常 (皮質性失明)
+    - 轉圈行為
+    - 癲癇發作
+    - 運動失調
+  late:
+    - 意識程度下降
+    - 嚴重前腦功能障礙
+    - 難治性癲癇
+    - 昏迷 (腦幹壓迫/天幕疝脫)
+
+diagnosis:
+  primaryTests:
+    - name: MRI
+      notes: "金標準。腦室擴張 (側腦室最明顯)、腦實質厚度減少。可評估阻塞原因 (腫瘤、導水管狹窄)。室旁水腫 (periventricular edema) 提示活動性水腦"
+    - name: 超音波 (幼犬，前囟門開放時)
+      notes: "經前囟門超音波可直接評估腦室大小。非侵入性、不需麻醉"
+    - name: 神經學檢查
+      notes: "前腦徵象為主：行為異常、視力障礙、癲癇。嚴重時腦幹壓迫徵象"
+  imaging:
+    - name: 腦部 MRI
+      notes: "首選影像。量化腦室/腦實質比 (V/B ratio)。評估阻塞原因"
+    - name: 頭部 X 光
+      notes: "可見穹窿狀頭骨、顱骨變薄 (ground glass appearance)。敏感度不如 MRI"
+    - name: 經前囟門超音波
+      notes: "幼犬首選篩檢。可反覆追蹤"
+  additional:
+    - 腦脊髓液分析 (排除感染/炎症)
+    - 腦壓監測 (研究性)
+    - CT (替代 MRI)
+    - CBC/生化 (全身評估)
+
+treatment:
+  principles:
+    - 輕度無症狀腦室擴張可能不需治療 (許多短頭種犬有代償性腦室擴張)
+    - 有臨床症狀的水腦需要介入
+    - 治療選擇包括內科保守治療與手術引流
+    - 後天性水腦需同時處理原發病因
+  medications:
+    - name: Omeprazole
+      dose: "0.7-1 mg/kg PO SID"
+      notes: 質子幫浦抑制劑，可減少脈絡叢 CSF 分泌。長期使用安全性可接受
+    - name: Prednisolone
+      dose: "0.25-0.5 mg/kg PO SID，逐步減量"
+      notes: 減少 CSF 分泌與腦水腫。短期使用或脈衝治療
+    - name: Acetazolamide
+      dose: "10 mg/kg PO TID"
+      notes: 碳酸酐酶抑制劑，減少 CSF 分泌。效果短暫，主要作為手術前過渡。可能引起代謝性酸中毒
+    - name: Furosemide
+      dose: "0.5-2 mg/kg PO BID"
+      notes: 輔助減少 CSF 分泌。注意電解質失衡
+  general:
+    - 腦室腹腔引流術 (ventriculoperitoneal shunt, VP shunt) — 手術首選
+    - VP shunt 併發症：阻塞、感染、過度引流、管路移位
+    - 腦室鏡第三腦室底造口術 (endoscopic third ventriculostomy, ETV) — 阻塞性水腦替代手術
+    - 抗癲癇藥物控制癲癇發作
+    - 後天性原因治療 (腫瘤切除、抗炎治療)
+
+prognosis: 先天性輕度水腦部分犬可長期穩定生活。VP shunt 手術成功率約 70-80%，但長期併發症常見 (shunt 阻塞約 20-50%)。後天性水腦預後取決於原發病因。嚴重腦實質萎縮預後較差。多數患犬需終生管理。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Radiology and Ultrasound
+    title: "Ventriculoperitoneal shunting for treatment of hydrocephalus in dogs — long-term outcome"
+    url: https://pubmed.ncbi.nlm.nih.gov/19400463/
+    type: research
+    pmid: "19400463"
+  - sourceOrg: Veterinary Surgery
+    title: "Ventriculoperitoneal shunt placement for hydrocephalus in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/21781098/
+    type: research
+    pmid: "21781098"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "MRI features of presumed congenital hydrocephalus in small-breed dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/22092611/
+    type: research
+    pmid: "22092611"
+pubmedQueries:
+  - query: '"hydrocephalus" AND (dog OR canine) AND ("ventriculoperitoneal shunt" OR "treatment" OR "MRI")'
+    frequency: monthly

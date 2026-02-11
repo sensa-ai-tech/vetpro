@@ -1,0 +1,125 @@
+slug: polymyositis
+nameEn: Polymyositis
+nameZh: 多發性肌炎
+bodySystem: immunology
+description: 免疫介導性骨骼肌廣泛炎症，導致全身性肌肉無力、疼痛與萎縮。與咀嚼肌炎不同，本病影響四肢與軀幹肌肉。可為特發性或繼發於感染、腫瘤等原因。
+
+aliases:
+  - { alias: 免疫介導性多發性肌炎, language: zh }
+  - { alias: 免疫介導性肌病, language: zh }
+  - { alias: Immune-Mediated Polymyositis, language: en }
+  - { alias: Idiopathic Inflammatory Myopathy, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 大型犬好發，尤其 Boxer、German Shepherd、Newfoundland、Hungarian Vizsla。中年犬多見。Boxer 品種有一種特殊的組織球型潰瘍性肌炎。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓罕見，但可發生。需排除弓蟲引起的感染性肌炎。
+
+etiology:
+  categories:
+    - name: 特發性免疫介導性
+      examples:
+        - 免疫系統攻擊骨骼肌纖維（T 細胞介導為主）
+        - 抗肌肉抗體的角色尚不完全明確
+        - 可能與 MHC 基因多型性相關
+    - name: 感染相關
+      examples:
+        - 弓蟲 (Toxoplasma gondii)
+        - 新孢蟲 (Neospora caninum)
+        - 利什曼原蟲 (Leishmania)
+        - 肝簇蟲 (Hepatozoon)
+    - name: 腫瘤相關 (Paraneoplastic)
+      examples:
+        - 胸腺瘤
+        - 淋巴瘤
+        - 其他惡性腫瘤
+    - name: 品種特異性
+      examples:
+        - Hungarian Vizsla (品種相關多發性肌炎)
+        - Boxer (組織球型潰瘍性肌炎)
+
+clinicalSigns:
+  early:
+    - 全身性肌肉僵硬
+    - 運動不耐受
+    - 步態僵硬短步
+    - 四肢肌肉疼痛（觸壓時疼痛反應）
+  progressive:
+    - 漸進性四肢肌肉萎縮
+    - 軀幹肌肉萎縮
+    - 虛弱、不願行走
+    - 吞嚥困難 (dysphagia，食道肌肉受累)
+    - 發聲改變 (dysphonia，喉肌受累)
+    - 發燒
+  late:
+    - 嚴重全身性肌萎縮
+    - 無法站立或行走
+    - 吸入性肺炎 (因巨食道或吞嚥困難)
+    - 呼吸肌無力
+    - 橫紋肌溶解 (myoglobinuria)
+
+diagnosis:
+  primaryTests:
+    - name: 血清 CK (肌酸激酶)
+      notes: "通常顯著升高 (可達正常值的 10-100 倍)。活動性肌炎的敏感指標，但非特異性"
+    - name: 肌肉切片 (muscle biopsy)
+      notes: "金標準。病理特徵：多灶性淋巴球漿細胞性浸潤、肌纖維壞死與再生、纖維化。需取多處活檢"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "排除胸腺瘤（前縱隔腫塊）。評估巨食道與吸入性肺炎"
+    - name: MRI
+      notes: "肌肉 T2 高信號與顯影增強，可指引活檢取樣位置"
+  additional:
+    - 肌電圖 EMG (自發性電位活動、纖維顫動、複合反覆放電)
+    - AST (天門冬胺酸轉胺酶，肌肉來源也會升高)
+    - 尿液分析 (肌紅蛋白尿提示橫紋肌溶解)
+    - 抗 2M 抗體 (排除咀嚼肌炎)
+    - 弓蟲/新孢蟲血清學 (排除感染性原因)
+    - ANA (排除 SLE)
+    - 腫瘤篩檢 (排除副腫瘤症候群)
+
+treatment:
+  principles:
+    - 免疫抑制劑為治療主軸
+    - 須排除感染性與腫瘤性病因後再開始免疫抑制
+    - 監測吞嚥功能，預防吸入性肺炎
+    - 長期治療，緩慢減藥
+  general:
+    - Prednisolone 2 mg/kg PO q12h 起始，持續 2-4 週
+    - 臨床改善與 CK 正常化後逐漸減量 (每 2-3 週減 25%)
+    - Azathioprine 2 mg/kg PO q24h (犬，類固醇節約劑)
+    - Mycophenolate mofetil 10-20 mg/kg PO q12h (替代方案)
+    - Cyclosporine 5 mg/kg PO q12h (難治型)
+    - 吞嚥困難者需抬高進食 (Bailey chair) 並給予軟食
+    - 吸入性肺炎需抗生素治療
+    - 物理治療 (被動關節活動、低強度運動)
+    - 感染性肌炎需針對病原治療 (如 clindamycin + pyrimethamine 用於弓蟲)
+    - 定期 CK 監測評估治療反應
+
+prognosis: 特發性免疫介導性多發性肌炎對免疫抑制治療反應良好者預後中等。約 70% 犬對治療有初始反應，但復發常見。巨食道與吸入性肺炎為主要致死原因。腫瘤相關型預後取決於原發腫瘤。感染性原因若及時治療預後較好。Hungarian Vizsla 品種型預後較差。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Inflammatory myopathy in dogs and cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/14515176/
+    type: review
+    pmid: "14515176"
+  - sourceOrg: Veterinary Pathology
+    title: "Canine inflammatory myopathies: a clinicopathologic review of 200 cases"
+    url: https://pubmed.ncbi.nlm.nih.gov/15232135/
+    type: retrospective
+    pmid: "15232135"
+  - sourceOrg: Journal of Small Animal Practice
+    title: "Immune-mediated polymyositis in Hungarian Vizsla dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/16573046/
+    type: case-series
+    pmid: "16573046"
+
+pubmedQueries:
+  - query: '"polymyositis" OR "inflammatory myopathy" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "diagnosis")'
+    frequency: monthly

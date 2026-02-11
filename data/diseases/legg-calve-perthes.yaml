@@ -1,0 +1,121 @@
+slug: legg-calve-perthes
+nameEn: "Legg-Calvé-Perthes Disease"
+nameZh: 股骨頭壞死
+bodySystem: orthopedic
+description: 幼犬股骨頭及頸部的無菌性缺血壞死 (avascular necrosis)，好發於小型犬，導致髖關節退化與後肢跛行。
+
+aliases:
+  - { alias: LCPD, language: en }
+  - { alias: Legg-Perthes Disease, language: en }
+  - { alias: Avascular Necrosis of Femoral Head, language: en }
+  - { alias: 股骨頭缺血性壞死, language: zh }
+  - { alias: 萊格-卡爾韋-佩爾特斯病, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 好發小型犬 (<12 kg)：Yorkshire Terrier、Miniature Pinscher、Miniature Poodle、West Highland White Terrier、Chihuahua、Manchester Terrier。通常 4-11 月齡發病。約 12-17% 為雙側性。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓極罕見，文獻報告極少。
+
+etiology:
+  categories:
+    - name: 血管因素
+      examples:
+        - 股骨頭骨骺血管供應中斷
+        - 側圓韌帶動脈 (artery of the ligament of the femoral head) 異常
+        - 骨內壓增高導致靜脈回流受阻
+    - name: 遺傳因素
+      examples:
+        - 體染色體隱性遺傳 (部分品種)
+        - 小型犬品種強烈好發傾向
+        - Manchester Terrier 品種研究支持遺傳基礎
+    - name: 病理過程
+      examples:
+        - 股骨頭骨骺缺血 → 壞死
+        - 壞死骨吸收與塌陷
+        - 續發性退化性關節炎
+        - 關節軟骨不規則與股骨頭變形
+
+clinicalSigns:
+  early:
+    - 輕度後肢跛行 (漸進性)
+    - 患肢活動力下降
+    - 髖關節外展/伸展時輕度疼痛
+  progressive:
+    - 跛行加重 (不願負重)
+    - 髖關節活動範圍明顯減少
+    - 大腿肌肉萎縮
+    - 髖關節伸展明顯疼痛
+    - 患肢觸摸時抗拒
+  late:
+    - 患肢完全不負重
+    - 嚴重肌肉萎縮
+    - 股骨頭塌陷與變形
+    - 嚴重退化性關節炎
+    - 後肢縮短
+
+diagnosis:
+  primaryTests:
+    - name: 骨科檢查
+      notes: "髖關節伸展與外展疼痛，活動範圍減少，捻髮音 (crepitus)。大腿肌肉萎縮。多數不需鎮靜即可觸診"
+    - name: 骨盆 X 光
+      notes: "早期：股骨頭密度不均、骨骺不規則。進展期：股骨頭扁平化、骨溶解、碎裂。晚期：股骨頭塌陷變形、髖臼繼發性改變"
+  imaging:
+    - name: X 光 (骨盆腹背位)
+      notes: "首選影像。需與對側比較。典型：股骨頭骨質密度增加/減少混合、輪廓不規則、關節間隙增寬"
+    - name: CT
+      notes: "更敏感偵測早期骨壞死變化、股骨頭塌陷程度評估"
+    - name: MRI
+      notes: "可偵測最早期的缺血變化 (骨髓水腫)，但臨床較少使用"
+  additional:
+    - 對側髖關節評估 (12-17% 雙側發生)
+    - CBC/生化 (通常正常，排除其他原因)
+
+treatment:
+  principles:
+    - 股骨頭切除術 (FHO) 為首選治療
+    - 保守治療效果差，僅適用於極輕微案例
+    - 術後物理復健極為重要
+    - 小型犬 FHO 預後良好
+  medications:
+    - name: NSAIDs (Meloxicam, Carprofen)
+      dose: "依藥物標準劑量"
+      notes: 術前/術後疼痛管理。保守治療期間使用
+    - name: Gabapentin
+      dose: "5-10 mg/kg PO BID-TID"
+      notes: 多模式止痛輔助
+    - name: Tramadol
+      dose: "2-5 mg/kg PO BID-TID"
+      notes: 術後短期疼痛管理
+  general:
+    - FHO (femoral head and neck ostectomy) 為標準治療
+    - 全髖關節置換 (THR) — 小型犬 micro/nano 系統可行但費用高
+    - 術後積極物理復健 (被動關節活動、肌力訓練、水中跑步機)
+    - 保守治療：嚴格休息 + 止痛 (效果通常不佳)
+    - 體重管理
+
+prognosis: FHO 術後預後良好，>90% 小型犬恢復正常或接近正常功能。術後需 4-8 週復健期。雙側發生者可分階段手術。保守治療成功率低，多數最終仍需手術。
+
+guidelineRefs:
+  - sourceOrg: Veterinary and comparative orthopaedics and traumatology
+    title: "Legg-Calvé-Perthes disease in dogs: a review."
+    url: https://pubmed.ncbi.nlm.nih.gov/19061698/
+    type: review
+    pmid: "19061698"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Femoral head and neck ostectomy for the treatment of canine Legg-Calvé-Perthes disease."
+    url: https://pubmed.ncbi.nlm.nih.gov/21916760/
+    type: research
+    pmid: "21916760"
+  - sourceOrg: PloS one
+    title: "A missense variant in LOXL4 in Jack Russell Terriers with Legg-Calvé-Perthes Disease."
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11245029/
+    type: research
+    pmid: "38995990"
+pubmedQueries:
+  - query: '"Legg-Calve-Perthes" AND (dog OR canine) AND ("femoral head" OR "avascular necrosis" OR "treatment")'
+    frequency: monthly

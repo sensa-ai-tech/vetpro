@@ -1,0 +1,129 @@
+slug: obesity
+nameEn: Obesity
+nameZh: 肥胖症
+bodySystem: metabolic
+description: 體脂肪過度蓄積導致體重超過理想體重 15-20% 以上的營養代謝性疾病。為小動物最常見的營養相關疾病，顯著增加糖尿病、骨關節疾病、心血管疾病及縮短壽命的風險。
+
+aliases:
+  - { alias: 過度肥胖, language: zh }
+  - { alias: 過重, language: zh }
+  - { alias: 體重過重, language: zh }
+  - { alias: Overweight, language: en }
+  - { alias: Canine Obesity, language: en }
+  - { alias: Feline Obesity, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 盛行率約 25-40%。好發品種包括 Labrador Retriever、Cavalier King Charles Spaniel、Cocker Spaniel、Beagle、Dachshund、Shetland Sheepdog。絕育犬風險顯著增加。中老年犬（5-10 歲）好發。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 盛行率約 30-45%。絕育公貓風險最高。室內貓活動量不足為主要風險因子。中年貓（5-11 歲）好發。混種貓與英國短毛貓等品種傾向較高。
+
+etiology:
+  categories:
+    - name: 能量失衡（主要原因）
+      examples:
+        - 過度餵食（熱量攝入超過消耗）
+        - 高熱量零食與人類食物
+        - 自由採食制
+        - 活動量不足（室內飼養、缺乏運動）
+    - name: 醫源性/荷爾蒙因素
+      examples:
+        - 絕育後代謝率下降 25-30%
+        - 糖皮質激素長期使用
+        - 甲狀腺功能低下（犬）
+        - 腎上腺皮質功能亢進（犬）
+        - 胰島素治療
+    - name: 病理生理
+      examples:
+        - 脂肪組織為活躍內分泌器官，分泌促炎性脂肪激素（leptin、TNF-α、IL-6）
+        - 慢性低度炎症狀態
+        - 胰島素阻抗→第二型糖尿病風險（貓尤為顯著）
+        - 關節負荷增加→退化性關節病加速
+
+clinicalSigns:
+  early:
+    - 體重逐漸增加
+    - 體態評分（BCS）增高（9 分制 ≥7 分）
+    - 肋骨不易觸摸
+    - 腰線消失
+  progressive:
+    - 運動耐受力下降
+    - 呼吸急促（尤其運動後）
+    - 跛行或行動遲緩（關節負荷增加）
+    - 毛髮品質下降（貓隻因無法自我理毛）
+    - 皮膚皺褶處皮膚炎
+  late:
+    - 嚴重運動不耐受
+    - 糖尿病發展（貓隻尤為常見）
+    - 肝臟脂肪變性風險（貓隻厭食時）
+    - 心血管功能障礙
+    - 呼吸困難（胸壁脂肪堆積）
+    - 尿失禁（犬隻）
+    - 壽命縮短（平均減少 1.8-2.5 年）
+
+diagnosis:
+  primaryTests:
+    - name: 體態評分（Body Condition Score, BCS）
+      notes: "9 分制最常用。1-3 過瘦、4-5 理想、6-7 過重、8-9 肥胖。評估肋骨觸診、腰線、腹部皺褶。標準化且可重複性高"
+    - name: 體重測量與追蹤
+      notes: "比較理想體重。超過理想體重 10-15% 為過重，>20% 為肥胖。定期體重追蹤趨勢更為重要"
+  imaging:
+    - name: DEXA 掃描（雙能量 X 光吸收儀）
+      notes: "精確測量體脂肪百分比。研究用途為主。犬正常體脂 15-25%，貓 10-30%"
+  additional:
+    - 全血球計數（通常正常）
+    - 生化（血糖、三酸甘油酯、膽固醇——代謝併發症篩檢）
+    - 甲狀腺功能檢測（犬，排除甲狀腺功能低下）
+    - 果糖胺或糖化血色素（貓，糖尿病篩檢）
+    - 尿液分析（糖尿篩檢）
+    - 關節 X 光（若有跛行——評估退化性關節病）
+
+treatment:
+  principles:
+    - 制定個別化減重計畫（目標每週減重 1-2% 體重）
+    - 熱量限制為核心策略
+    - 增加活動量
+    - 定期追蹤與調整
+    - 排除並治療內分泌疾病
+  general:
+    - "計算靜息能量需求（RER）= 70 × (理想體重 kg)^0.75 kcal/day"
+    - "減重期餵食量：RER × 0.8（犬）或 RER × 0.8（貓），依反應調整"
+    - "使用處方減重飼料（高蛋白、高纖維、低脂肪）——如 Hill's Metabolic、Royal Canin Satiety"
+    - "嚴格禁止零食或改用低熱量零食（蔬菜棒等）"
+    - "定量餵食（每日 2-3 餐定時定量，禁止自由採食）"
+    - "犬：逐步增加運動（每日散步 20-60 分鐘，從低強度開始）"
+    - "貓：環境豐富化促進活動（互動玩具、貓跳台、食物迷宮）"
+    - "每 2-4 週追蹤體重，每月評估 BCS"
+    - "達到理想體重後重新計算維持熱量需求（避免反彈）"
+    - "絕育犬貓：術後即減少餵食量 25-30%"
+
+prognosis: 減重計畫配合飼主依從性良好時，多數犬貓可在 6-12 個月達到理想體重。飼主教育與定期追蹤為成功關鍵。約 50% 飼主難以長期維持減重成果。減重可顯著改善糖尿病控制（貓隻糖尿病緩解率提高）、關節疼痛與活動力。預防勝於治療。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "AAHA Weight Management Guidelines for Dogs and Cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/24382021/
+    type: consensus
+    pmid: "24382021"
+  - sourceOrg: Veterinary Journal
+    title: "An epidemiological study of obesity in dogs visiting veterinary practices in the United Kingdom"
+    url: https://pubmed.ncbi.nlm.nih.gov/24680652/
+    type: retrospective
+    pmid: "24680652"
+  - sourceOrg: Journal of Small Animal Practice
+    title: "Prevalence of obesity in dogs and cats and its relationship with metabolic conditions"
+    url: https://pubmed.ncbi.nlm.nih.gov/20402841/
+    type: review
+    pmid: "20402841"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Effects of diet restriction on life span and age-related changes in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/12118874/
+    type: research
+    pmid: "12118874"
+pubmedQueries:
+  - query: '"obesity" AND (dog OR cat OR canine OR feline) AND ("weight management" OR "weight loss" OR "guidelines")'
+    frequency: monthly

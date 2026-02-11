@@ -1,0 +1,95 @@
+slug: feline-cognitive-dysfunction
+nameEn: Feline Cognitive Dysfunction Syndrome
+nameZh: 貓認知功能障礙症候群
+bodySystem: behavioral
+description: 老年貓的進行性神經退化性疾病，類似人類阿茲海默症。表現為行為改變，包括空間迷失、社交互動改變、睡眠-覺醒週期異常。盛行率隨年齡增加。
+
+aliases:
+  - { alias: 貓失智症, language: zh }
+  - { alias: 老年貓認知退化, language: zh }
+  - { alias: Feline CDS, language: en }
+  - { alias: Feline Dementia, language: en }
+
+species:
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 11-14 歲貓約 28% 出現症狀，15 歲以上可達 50% 以上。常與其他老年疾病（甲亢、CKD、高血壓）並存。
+
+etiology:
+  categories:
+    - name: 神經病理變化
+      examples:
+        - β-澱粉樣蛋白沉積
+        - Tau 蛋白過度磷酸化
+        - 腦萎縮（腦室擴大）
+        - 腦血管病變
+    - name: 危險因子
+      examples:
+        - 高齡
+        - 氧化壓力
+        - 缺乏環境刺激
+
+clinicalSigns:
+  early:
+    - 空間迷失（在熟悉環境中迷路）
+    - 睡眠-覺醒週期改變（夜間嚎叫）
+    - 活動量改變
+  progressive:
+    - 社交互動減少或增加
+    - 忘記貓砂盆位置（不適當排泄）
+    - 食慾改變
+    - 焦慮增加
+  late:
+    - 學習能力喪失
+    - 對飼主認知下降
+    - 持續夜間嚎叫
+    - 嚴重空間迷失
+
+diagnosis:
+  primaryTests:
+    - name: DISHAAL 評估量表
+      notes: "Disorientation、Interactions、Sleep-wake cycle、House-soiling、Activity、Anxiety、Learning/memory — 系統性行為評估"
+    - name: 排除診斷
+      notes: "必須先排除甲亢、CKD、高血壓、腦腫瘤、骨關節炎等可導致類似行為改變的疾病"
+  imaging:
+    - name: MRI
+      notes: "可見腦萎縮、腦室擴大，但非確診必需"
+  additional:
+    - 完整血檢（排除代謝性疾病）
+    - 甲狀腺功能檢查
+    - 血壓測量
+    - 尿液分析
+
+treatment:
+  principles:
+    - 排除並治療所有可治療的併存疾病
+    - 環境豐富化
+    - 營養補充支持
+    - 藥物輔助
+  general:
+    - 環境豐富化（互動玩具、貓跳台、定期遊戲）
+    - 維持穩定的日常作息
+    - "SAMe (S-adenosyl-L-methionine) 90 mg/cat PO SID"
+    - "抗氧化營養補充（維生素E、C、omega-3 脂肪酸）"
+    - 富含抗氧化劑的老年貓飲食配方
+    - "Selegiline（部分國家有使用報告，但貓適用性資料有限）"
+    - 夜間嚎叫處理：Gabapentin 25-50 mg/cat PO 睡前
+
+prognosis: 為進行性疾病，無法治癒。早期介入可延緩惡化速度並改善生活品質。多數貓在適當管理下仍可維持可接受的生活品質數月至數年。
+
+guidelineRefs:
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "AAFP Senior Care Guidelines"
+    url: https://pubmed.ncbi.nlm.nih.gov/33148146/
+    type: guideline
+    pmid: "33148146"
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "Cognitive dysfunction in cats: Update on neuropathological and behavioural changes plus clinical management"
+    url: https://pubmed.ncbi.nlm.nih.gov/33272107/
+    type: review
+    pmid: "33272107"
+
+pubmedQueries:
+  - query: '"cognitive dysfunction" AND (cat OR feline) AND ("diagnosis" OR "treatment" OR "management")'
+    frequency: monthly

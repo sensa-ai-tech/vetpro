@@ -1,0 +1,111 @@
+slug: ventricular-septal-defect
+nameEn: Ventricular Septal Defect
+nameZh: 心室中隔缺損
+bodySystem: cardiac
+description: 心室中隔缺損（VSD）為左右心室間隔存在異常開口，是犬貓第二常見的先天性心臟病。小型缺損因限制性分流通常臨床意義不大，但大型非限制性缺損可導致肺循環容量過負荷及充血性心衰竭。多數病例為膜周型缺損。
+
+aliases:
+  - { alias: VSD, language: en }
+  - { alias: 心室間隔缺損, language: zh }
+  - { alias: 室間隔缺損, language: zh }
+  - { alias: Interventricular Septal Defect, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 犬隻先天性心臟病中第二至第三常見。好發品種包括英國牛頭犬、Springer Spaniel 及 Keeshond。多數為小型限制性缺損，臨床影響有限。常與其他先天性心臟缺陷合併出現（如 Tetralogy of Fallot）。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓隻先天性心臟病中相對常見。通常為小型限制性缺損，多數貓隻無臨床症狀。偶爾與其他心臟缺陷合併出現。
+
+etiology:
+  categories:
+    - name: 胚胎發育異常
+      examples:
+        - 心室中隔在胚胎發育期間未能完全融合
+        - 膜周型缺損（Perimembranous）最常見，位於主動脈瓣下方
+        - 肌肉型缺損（Muscular）位於心室中隔肌肉部分
+        - 流出道型缺損（Outlet/Supracristal）位於肺動脈瓣下方
+    - name: 遺傳因素
+      examples:
+        - 多基因遺傳模式
+        - 英國牛頭犬有明確品種好發傾向
+        - 可伴隨其他先天性心臟缺陷（如主動脈騎跨、肺動脈狹窄）
+    - name: 血流動力學分類
+      examples:
+        - 限制性 VSD（小型）：缺損直徑小，左至右分流壓力梯度大，血流動力學影響小
+        - 非限制性 VSD（大型）：缺損直徑大，左至右分流量大，肺循環容量過負荷
+        - Eisenmenger 症候群：長期大量左至右分流導致肺動脈高壓，最終分流方向逆轉為右至左
+
+clinicalSigns:
+  early:
+    - 右側心前區收縮期雜音（第 3-4 肋間，胸骨旁）
+    - 小型限制性 VSD 通常無臨床症狀
+    - 雜音響亮程度不一定與缺損大小成正比（小缺損可產生響亮雜音）
+  progressive:
+    - 運動不耐（大型 VSD）
+    - 呼吸急促
+    - 生長遲緩
+    - 體重減輕
+  late:
+    - 充血性心衰竭（肺水腫、左心衰竭）
+    - Eisenmenger 症候群（右至左分流）：發紺、運動不耐、紅血球增多症
+    - 心律不整
+    - 猝死（罕見）
+
+diagnosis:
+  primaryTests:
+    - name: 心臟超音波（Echocardiography）
+      notes: "確診金標準。二維超音波可直接顯示心室中隔的缺損位置與大小。彩色都卜勒可見經缺損的左至右分流（或右至左分流）紊流訊號。評估左心房與左心室容量過負荷程度。連續波都卜勒測量分流壓力梯度，估算右心室壓力。"
+    - name: 胸腔聽診
+      notes: "右側胸骨旁第 3-4 肋間可聞及收縮期雜音。小型限制性 VSD 雜音通常為 Grade III-V/VI，高頻（高壓力梯度）。大型 VSD 雜音可能反而較低（壓力梯度小）。"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "小型 VSD 通常正常。中至大型 VSD 可見左心房與左心室擴大、肺血管過度充盈。Eisenmenger 症候群可見右心室擴大與肺動脈主幹擴張。"
+    - name: 心電圖（ECG）
+      notes: "小型 VSD 通常正常。大型 VSD 可見左心室容量過負荷圖形。Eisenmenger 症候群可見右心室肥厚圖形。"
+  additional:
+    - 心臟生物標記：NT-proBNP 可升高（大型 VSD 伴容量過負荷）
+    - 血氧飽和度監測（Eisenmenger 症候群時降低）
+    - 對比心臟超音波（氣泡試驗）：評估右至左分流
+
+treatment:
+  principles:
+    - 小型限制性 VSD 通常不需治療，定期監測即可
+    - 大型非限制性 VSD 考慮手術或介入封堵
+    - Eisenmenger 症候群禁忌關閉缺損
+    - 心衰竭以內科治療為主
+  general:
+    - "小型限制性 VSD：無需治療，每 6-12 個月心臟超音波追蹤"
+    - "經導管 VSD 封堵裝置（Amplatzer Septal Occluder）：適用於部分病例，但犬貓經驗有限"
+    - "開心手術修補：需體外循環，少數專科中心可執行，費用高且風險大"
+    - "肺動脈束帶術（Pulmonary Artery Banding）：姑息性手術，減少肺循環血流量"
+    - "心衰竭管理：Furosemide 2-4 mg/kg PO q12h + Pimobendan 0.25 mg/kg PO q12h + Benazepril 0.5 mg/kg PO q12-24h"
+    - "Eisenmenger 症候群：限制運動、Sildenafil 1-2 mg/kg PO q8-12h（降低肺動脈壓力）、放血術（PCV >70%）"
+    - "感染性心內膜炎預防：侵入性操作前預防性抗生素"
+
+prognosis: 小型限制性 VSD 預後極佳，多數犬貓可維持正常壽命，部分病例缺損可隨年齡自發性縮小甚至閉合。中型 VSD 預後謹慎至良好，需長期監測。大型非限制性 VSD 預後不良，易發展為充血性心衰竭或 Eisenmenger 症候群。Eisenmenger 症候群一旦形成，預後差，以支持性治療為主。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Ventricular septal defect in 60 dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/16496925/
+    type: consensus
+    pmid: "16496925"
+  - sourceOrg: Journal of Veterinary Cardiology
+    title: "Transcatheter closure of ventricular septal defects in 5 dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/16439207/
+    type: consensus
+    pmid: "16439207"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Congenital heart disease in dogs: a retrospective analysis"
+    url: https://pubmed.ncbi.nlm.nih.gov/10630685/
+    type: consensus
+    pmid: "10630685"
+pubmedQueries:
+  - query: '"ventricular septal defect" AND (dog OR canine OR cat OR feline) AND ("treatment" OR "outcome")'
+    frequency: monthly
+  - query: '"ventricular septal defect" AND (dog OR canine) AND ("echocardiography" OR "diagnosis")'
+    frequency: monthly

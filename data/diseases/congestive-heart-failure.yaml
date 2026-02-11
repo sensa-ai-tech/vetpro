@@ -1,0 +1,132 @@
+slug: congestive-heart-failure
+nameEn: Congestive Heart Failure
+nameZh: 充血性心衰竭
+bodySystem: cardiac
+description: 充血性心衰竭（CHF）是各種心臟疾病的終末臨床表現，非單一疾病診斷。當心臟無法維持足夠的心輸出量滿足組織代謝需求時，神經荷爾蒙代償機制（RAAS、交感神經）過度活化，導致體液滯留、靜脈壓升高，最終引發肺水腫（左心衰竭）、腹水或胸水（右心衰竭）。犬隻最常見原因為 MMVD 與 DCM，貓隻為 HCM。
+
+aliases:
+  - { alias: CHF, language: en }
+  - { alias: 心衰竭, language: zh }
+  - { alias: 鬱血性心臟衰竭, language: zh }
+  - { alias: 心臟衰竭, language: zh }
+  - { alias: Heart Failure, language: en }
+  - { alias: Congestive Cardiac Failure, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬隻心臟病的常見終末表現。MMVD 為最常見原因（小型犬，佔 CHF 的 75%），DCM 為第二常見（大型犬）。先天性心臟病亦可導致 CHF。犬隻 CHF 以左心衰竭（肺水腫）為主要表現。老年小型犬與大型犬好發。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓隻心臟病常見終末表現。HCM 為最常見原因。貓 CHF 常表現為胸水（比肺水腫更常見）。動脈血栓栓塞（ATE）可為首次表現。中老年貓好發，公貓略多。
+
+etiology:
+  categories:
+    - name: 犬隻常見原因
+      examples:
+        - 二尖瓣退化性疾病（MMVD，又稱 Myxomatous Mitral Valve Disease）
+        - 擴張性心肌病（DCM）
+        - 先天性心臟病（PDA、SAS、PS）
+        - 心包膜疾病
+        - 心律不整引起的心肌病
+    - name: 貓隻常見原因
+      examples:
+        - 肥厚性心肌病（HCM）
+        - 限制型心肌病（RCM）
+        - 擴張性心肌病（DCM，taurine 缺乏後已少見）
+        - 甲狀腺功能亢進性心臟病
+        - 未分類心肌病（UCM）
+    - name: 病理生理
+      examples:
+        - 心臟泵功能不全（收縮功能障礙或舒張功能障礙或瓣膜功能不全）
+        - RAAS 活化：醛固酮促進鈉與水滯留
+        - 交感神經系統活化：心搏過速、血管收縮
+        - ADH 分泌增加：水分滯留
+        - 左心衰竭：肺靜脈壓升高 → 肺水腫
+        - 右心衰竭：體靜脈壓升高 → 腹水、胸水、周邊水腫
+
+clinicalSigns:
+  early:
+    - 輕度運動不耐
+    - 輕度呼吸急促（安靜呼吸速率升高 >30 次/分）
+    - 咳嗽（犬，左心房壓迫支氣管）
+    - 夜間不安或姿勢改變
+  progressive:
+    - 呼吸困難（dyspnea）
+    - 持續性咳嗽（犬）
+    - 開口呼吸（貓）
+    - 運動不耐加重
+    - 食慾減退、體重減輕
+    - 腹部膨大（腹水 — 右心衰竭）
+    - 嗜睡
+  late:
+    - 端坐呼吸（orthopnea，無法平躺）
+    - 嚴重肺水腫（肺泡性水腫，呼吸困難伴泡沫狀鼻分泌物）
+    - 心因性休克（低血壓、蒼白黏膜、CRT 延長）
+    - 大量腹水/胸水
+    - 心因性惡病質（cachexia）
+    - 昏厥（低心輸出量或心律不整）
+    - 猝死
+
+diagnosis:
+  primaryTests:
+    - name: 心臟超音波（Echocardiography）
+      notes: "確認基礎心臟病的種類與嚴重度。評估收縮功能（FS%、EF%）、舒張功能（E/A ratio）、瓣膜功能。左心房大小（LA/Ao ratio）。右心評估（TAPSE）。可區分心源性與非心源性呼吸困難。"
+    - name: 胸腔 X 光
+      notes: "CHF 診斷的關鍵工具。左心衰竭：肺靜脈擴張、間質至肺泡型肺水腫（犬常為背尾肺葉分佈，貓為瀰漫性或斑片狀）。右心衰竭：後腔靜脈擴大、胸水、腹水。心影評估（VHS 增加）。"
+    - name: NT-proBNP
+      notes: "心室壁應力標記。犬 >900 pmol/L、貓 >270 pmol/L 高度提示 CHF。可用於區分心源性與呼吸道性呼吸困難（尤其急診時鑑別）。監測治療反應。"
+  imaging:
+    - name: 心電圖（ECG）
+      notes: "心律不整偵測（心房顫動、VPCs、SVT）。心房擴大圖形。心室肥厚圖形。竇性心搏過速（代償反應）。"
+    - name: 腹部超音波
+      notes: "評估腹水量。肝臟鬱血（肝靜脈擴張、肝臟腫大）。CFAST 掃描快速評估。"
+  additional:
+    - 血液生化：腎功能（BUN/Creatinine，利尿劑治療前後監測）、電解質（鉀、鈉）
+    - CBC：評估貧血（可加重心衰竭）
+    - 血壓測量：評估低血壓風險
+    - 居家安靜呼吸速率（RRR）：飼主日常監測，>30 次/分提示 CHF 惡化
+
+treatment:
+  principles:
+    - 急性 CHF 優先穩定呼吸與循環
+    - 利尿劑為 CHF 治療的基石
+    - 根據基礎心臟病選擇合適的治療策略
+    - 長期管理以神經荷爾蒙調節與正性肌力藥物為主
+  general:
+    - "急性 CHF：氧氣供應 + IV Furosemide 2-4 mg/kg（可每 1-2 小時重複至呼吸改善）。最低程度的壓力（reduce stress）。嚴重低心輸出量考慮 Dobutamine 2.5-10 μg/kg/min CRI"
+    - "Furosemide 2-4 mg/kg PO q8-12h（環利尿劑，CHF 治療基石。目標：最低有效劑量。監測腎功能與電解質）"
+    - "Pimobendan 0.25 mg/kg PO q12h（正性肌力 + 血管擴張。QUEST study 與 EPIC study 證實改善生存率。適用於 MMVD、DCM、貓 CHF）"
+    - "Benazepril 0.5 mg/kg PO q12-24h 或 Enalapril 0.5 mg/kg PO q12h（ACE 抑制劑，抑制 RAAS，降低後負荷。BENCH study 支持使用）"
+    - "Spironolactone 1-2 mg/kg PO q12-24h（醛固酮拮抗劑，抗纖維化，與 furosemide 合用減少低血鉀風險）"
+    - "Torasemide 0.1-0.3 mg/kg PO q12-24h（furosemide 抗藥性時替代，效力約為 furosemide 的 10-20 倍）"
+    - "貓 CHF 胸水管理：治療性胸腔穿刺（Thoracocentesis）迅速緩解呼吸困難"
+    - "抗血栓（貓）：Clopidogrel 18.75 mg/cat PO q24h 預防 ATE"
+    - "飲食管理：適度限鈉飲食（MMVD/DCM）、充足蛋白質攝取、維持適當體重"
+    - "居家呼吸速率監測：飼主每日記錄安靜時呼吸速率（RRR），>30 次/分提示 CHF 惡化需就醫"
+
+prognosis: 預後取決於基礎心臟病。MMVD CHF 犬隻中位存活約 6-14 個月（Pimobendan + 標準治療）。DCM CHF 預後較差，中位存活約 3-6 個月（Doberman）至 6-12 個月（其他大型犬）。貓 HCM CHF 中位存活約 6-18 個月。動脈血栓栓塞為貓 CHF 最嚴重併發症，預後極差。ISACHC/ACVIM Stage D（難治性 CHF）預後不良。早期診斷、規律用藥、居家呼吸速率監測可顯著改善生活品質與存活時間。
+
+guidelineRefs:
+  - sourceOrg: ACVIM
+    title: "ACVIM consensus statement: guidelines for the diagnosis and treatment of canine chronic valvular heart disease"
+    url: https://pubmed.ncbi.nlm.nih.gov/19909426/
+    type: consensus
+    pmid: "19909426"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Effect of pimobendan in dogs with preclinical myxomatous mitral valve disease (EPIC study)"
+    url: https://pubmed.ncbi.nlm.nih.gov/27565258/
+    type: consensus
+    pmid: "27565258"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "ACVIM consensus statement: guidelines for the diagnosis and treatment of dilated cardiomyopathy in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/31243798/
+    type: consensus
+    pmid: "31243798"
+pubmedQueries:
+  - query: '"congestive heart failure" AND (dog OR canine) AND ("pimobendan" OR "furosemide" OR "treatment guidelines")'
+    frequency: monthly
+  - query: '"heart failure" AND (cat OR feline) AND ("cardiomyopathy" OR "treatment" OR "prognosis")'
+    frequency: monthly

@@ -1,0 +1,129 @@
+slug: canine-influenza
+nameEn: Canine Influenza
+nameZh: 犬流感
+bodySystem: infectious
+description: 由犬流感病毒 (CIV) 引起的高度傳染性呼吸道感染。主要有 H3N8 與 H3N2 兩種亞型，後者具有跨物種傳播能力。多數感染犬為輕度呼吸道症狀，少數可發展為嚴重肺炎。
+
+aliases:
+  - { alias: CIV, language: en }
+  - { alias: Canine Flu, language: en }
+  - { alias: Dog Flu, language: en }
+  - { alias: 犬流行性感冒, language: zh }
+  - { alias: 狗流感, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: H3N8 亞型 2004 年首次於美國佛羅里達賽犬場確認 (源自馬流感病毒)。H3N2 亞型源自亞洲禽流感病毒，2015 年起在美國爆發。犬群中接觸感染率約 80%，約 20% 為無症狀感染。收容所、寄宿中心、犬日托中心為高風險環境。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: H3N2 亞型可感染貓 (與犬不同，H3N8 不感染貓)。貓感染後表現為上呼吸道症狀。亞洲國家偶有報告。
+
+etiology:
+  categories:
+    - name: 病毒性
+      examples:
+        - Influenza A virus, H3N8 亞型 (源自馬流感病毒跨種適應)
+        - Influenza A virus, H3N2 亞型 (源自禽流感病毒跨種適應)
+        - 正黏液病毒科 (Orthomyxoviridae)
+        - 透過飛沫傳播 (咳嗽、打噴嚏)、直接接觸、間接接觸 (fomites)
+        - 環境中存活約 24-48 小時 (表面)，對一般消毒劑敏感
+    - name: 風險因素
+      examples:
+        - 群體飼養環境 (收容所、寄宿中心、犬舍、犬日托)
+        - 犬聚集活動 (狗公園、犬展、競賽)
+        - 未接種疫苗
+        - 幼犬與老年犬
+        - 免疫抑制個體
+        - 短頭種犬 (呼吸道結構異常)
+
+pathophysiology: CIV 經呼吸道飛沫感染後，在鼻腔、氣管與支氣管上皮細胞表面的唾液酸受體結合並侵入細胞。病毒在呼吸道上皮細胞內大量複製，造成上皮壞死、脫落與黏膜下層暴露。損傷的呼吸道上皮失去黏膜纖毛清除功能，易繼發細菌感染。輕症病例限於上呼吸道，表現為氣管支氣管炎。嚴重病例病毒擴展至下呼吸道，引起出血性支氣管肺炎、肺泡水腫與壞死。病毒排放期為感染後 2-10 天 (H3N8) 或 2-21 天 (H3N2)，排毒高峰在症狀出現前 1-2 天即開始。
+
+clinicalSigns:
+  early:
+    - 咳嗽 (軟濕型咳嗽，持續 10-21 天)
+    - 漿液性鼻分泌物
+    - 輕度發燒
+    - 嗜睡
+    - 食慾略減
+  progressive:
+    - 黏膿性鼻分泌物 (繼發細菌感染)
+    - 持續性咳嗽 (可達 3 週)
+    - 明顯發燒 (39.5-40.5°C)
+    - 食慾下降
+    - 嗜睡加重
+  late:
+    - 嚴重型 (約 5-10%)：高燒 (>40.5°C)
+    - 呼吸困難/呼吸急促
+    - 出血性肺炎
+    - 繼發性細菌性肺炎
+    - 肺衰竭 (罕見但可致命)
+
+diagnosis:
+  primaryTests:
+    - name: CIV RT-PCR (鼻咽拭子)
+      notes: "敏感度與特異度最高。症狀出現後 1-7 天內採樣最佳。可區分 H3N8 與 H3N2 亞型"
+    - name: 快速抗原檢測
+      notes: "院內快速篩檢。敏感度中等 (約 50-70%)。陰性不排除感染"
+    - name: 急性期/恢復期血清抗體效價
+      notes: "配對血清 (間隔 2-3 週) 抗體效價 ≥4 倍上升可確診。回溯性診斷"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "輕症可能正常或輕度支氣管紋理增加。嚴重型：間質性至肺泡型浸潤、肺實質化"
+  additional:
+    - CBC (白血球增多或正常；嚴重型可見淋巴球減少)
+    - 病毒分離培養 (研究用，需 3-5 天)
+    - 氣管沖洗液細胞學與培養 (評估繼發細菌感染)
+
+treatment:
+  principles:
+    - 無特異性抗病毒治療 — 以支持性療法為主
+    - 多數病例為自限性 (7-21 天)
+    - 嚴重型需住院積極治療
+    - 隔離防止傳播
+  medications:
+    - name: 廣效抗生素 (繼發細菌感染)
+      dose: "Amoxicillin-Clavulanate 12.5-25 mg/kg PO BID；或 Doxycycline 5 mg/kg PO BID"
+      notes: 繼發性細菌感染時使用。黏膿性鼻分泌物或肺炎徵兆為指標
+    - name: Maropitant (Cerenia)
+      dose: "1 mg/kg SC/PO SID"
+      notes: 止吐。食慾不振時輔助
+    - name: 輸液治療 (嚴重型)
+      dose: "依脫水程度與維持需求調整"
+      notes: 住院病例維持水分與電解質平衡
+    - name: Oseltamivir (Tamiflu，off-label)
+      dose: "2 mg/kg PO BID × 5 天"
+      notes: 神經胺酸酶抑制劑。效果在犬的證據有限。部分臨床醫師在嚴重病例早期使用
+  general:
+    - 隔離 (至少症狀出現後 21 天或 PCR 陰性)
+    - 充分休息
+    - 營養支持
+    - 霧化治療 (humidification，緩解呼吸道症狀)
+    - 嚴重呼吸困難時氧氣支持
+    - 環境消毒 (一般消毒劑如 quaternary ammonium、漂白水即有效)
+    - 通知同住犬/接觸犬的飼主
+
+emergencyNotes: 嚴重肺炎病例可能需要緊急氧氣支持。出血性肺炎預後較差，需密切監測。繼發性敗血症按敗血症流程處理。短頭種犬更易發展為嚴重呼吸窘迫。
+
+prognosis: 整體死亡率低 (<5%)。多數感染犬 (約 80%) 為輕度呼吸道症狀，在支持性治療下 2-3 週可完全恢復。嚴重型 (出血性肺炎) 死亡率較高但整體罕見。幼犬、老年犬、免疫抑制犬及短頭種犬風險較高。疫苗可用 (H3N2 與 H3N8 雙價疫苗)，建議高風險犬接種。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Canine influenza virus: an emerging pathogen"
+    url: https://pubmed.ncbi.nlm.nih.gov/19175726/
+    type: review
+    pmid: "19175726"
+  - sourceOrg: AAHA
+    title: AAHA Canine Vaccination Guidelines
+    url: https://www.aaha.org/aaha-guidelines/vaccination-canine-configuration/vaccination-canine/
+    type: guideline
+  - sourceOrg: Emerging Infectious Diseases
+    title: "Transmission of influenza A(H3N2) virus from dogs to cats in South Korea, 2023"
+    url: https://pubmed.ncbi.nlm.nih.gov/27869592/
+    type: research
+    pmid: "27869592"
+pubmedQueries:
+  - query: '"canine influenza" AND ("H3N2" OR "H3N8" OR "CIV") AND ("treatment" OR "vaccination" OR "outbreak")'
+    frequency: monthly

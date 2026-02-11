@@ -1,0 +1,127 @@
+slug: vasculitis
+nameEn: Vasculitis
+nameZh: 血管炎
+bodySystem: immunology
+description: 血管壁的炎症反應，可為免疫介導性、感染性或藥物誘發性。病變累及不同口徑的血管，導致組織缺血、壞死與出血。犬較貓常見，臨床表現多樣，從皮膚病灶到多重器官衰竭均可發生。
+
+aliases:
+  - { alias: 血管發炎, language: zh }
+  - { alias: 免疫介導性血管炎, language: zh }
+  - { alias: 壞死性血管炎, language: zh }
+  - { alias: Cutaneous Vasculitis, language: en }
+  - { alias: Immune-Mediated Vasculitis, language: en }
+  - { alias: Necrotizing Vasculitis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 犬較貓常見。皮膚型血管炎最常見。好發品種包括 Jack Russell Terrier、German Shepherd、Rottweiler、Dachshund、Greyhound（疫苗誘發型）。任何年齡均可發生。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓隻較少見。可繼發於 FIP（冠狀病毒）或其他感染性疾病。臨床表現與犬相似但報告較少。
+
+etiology:
+  categories:
+    - name: 免疫介導性（最常見）
+      examples:
+        - 第三型過敏反應（免疫複合體沉積於血管壁）
+        - 自體免疫性疾病伴發（SLE、類風濕性關節炎）
+        - 特發性（多數犬隻皮膚型血管炎）
+    - name: 感染性
+      examples:
+        - 立克次體感染（Rickettsia rickettsii — 洛磯山斑點熱）
+        - Ehrlichia spp.
+        - Bartonella spp.
+        - FIP 病毒（貓，免疫複合體型）
+        - 細菌性心內膜炎（敗血性栓子）
+        - Leishmania spp.
+    - name: 藥物/疫苗誘發
+      examples:
+        - 疫苗注射後反應（尤其狂犬病疫苗，Greyhound 好發）
+        - 藥物過敏反應（sulfonamides、cephalosporins、NSAIDs）
+    - name: 病理機轉
+      examples:
+        - 免疫複合體沉積於血管壁→補體活化→嗜中性球浸潤
+        - 血管壁纖維素樣壞死→血管通透性增加→血栓形成
+        - 組織缺血與梗塞→潰瘍、壞死
+
+clinicalSigns:
+  early:
+    - 皮膚紫斑（petechiae、ecchymoses）
+    - 耳翼邊緣、足墊、鼻鏡的紅斑與水腫
+    - 發燒
+    - 嗜睡、食慾下降
+  progressive:
+    - 皮膚潰瘍（耳尖、尾端、足墊、口腔黏膜）
+    - 耳翼邊緣壞死與結痂
+    - 肢端水腫（四肢遠端）
+    - 關節腫痛（血管炎性多發性關節炎）
+    - 蛋白尿（腎絲球腎炎）
+  late:
+    - 廣泛性皮膚壞死與潰瘍
+    - 肢端乾性壞疽
+    - 多重器官損傷（腎臟、肺臟、腸道）
+    - 彌散性血管內凝血（DIC）
+    - 嚴重全身性炎症反應
+
+diagnosis:
+  primaryTests:
+    - name: 皮膚組織病理切片
+      notes: "確診金標準。可見血管壁纖維素樣壞死、嗜中性球或淋巴球浸潤血管壁（白血球碎裂性血管炎 leukocytoclastic vasculitis 最常見）。需取病灶邊緣組織"
+    - name: 直接免疫螢光（DIF）
+      notes: "血管壁免疫球蛋白（IgG、IgM）與補體（C3）沉積。輔助確認免疫複合體介導機制"
+  imaging:
+    - name: 腹部超音波
+      notes: "評估內臟器官受累。腎臟、腸道壁增厚等變化"
+    - name: 胸腔 X 光
+      notes: "評估肺部血管炎、肺出血或積液"
+  additional:
+    - CBC（嗜中性球升高或減少、血小板減少可能）
+    - 生化（BUN/Creatinine 升高提示腎臟受累、低白蛋白）
+    - 尿液分析（蛋白尿、尿蛋白/肌酐比升高）
+    - ANA 檢測（排除 SLE）
+    - 壁蝨媒介疾病篩檢（Ehrlichia、Anaplasma、Rickettsia 血清學）
+    - 凝血功能（PT/aPTT，排除 DIC）
+    - 關節液分析（若有關節腫脹）
+
+treatment:
+  principles:
+    - 找出並治療潛在病因（感染、藥物）
+    - 免疫抑制治療（特發性或免疫介導性）
+    - 傷口護理與疼痛管理
+    - 監測器官功能
+  general:
+    - "感染性病因：針對性抗生素/抗原蟲治療（如 Doxycycline 5-10 mg/kg PO BID 治療壁蝨媒介疾病）"
+    - "藥物誘發：立即停止可疑藥物或疫苗"
+    - "免疫抑制治療：Prednisolone 1-2 mg/kg PO BID（誘導期），緩解後逐步減量"
+    - "聯合免疫抑制：Azathioprine 2 mg/kg PO SID（犬）或 Mycophenolate mofetil 10-20 mg/kg PO BID"
+    - "Pentoxifylline 10-25 mg/kg PO BID-TID（改善微循環、抗炎，皮膚型血管炎的輔助用藥）"
+    - "Dapsone 1 mg/kg PO TID（犬，嗜中性球性血管炎，需監測 Heinz body 貧血）"
+    - "局部傷口護理：清創、濕潤敷料"
+    - "疼痛管理：適當止痛（避免 NSAIDs，可能加重病情）"
+    - "Omega-3 脂肪酸補充（EPA/DHA，輔助抗炎）"
+    - "監測 CBC/生化（免疫抑制藥物副作用）"
+
+prognosis: 預後取決於病因與嚴重程度。藥物或疫苗誘發型在停止暴露後預後較佳。感染性血管炎在有效抗生素治療下通常可控制。特發性/免疫介導性皮膚型血管炎經免疫抑制治療後多數可緩解，但部分需長期維持治療。系統性血管炎累及多器官時預後較差。嚴重壞死型或合併 DIC 時死亡率高。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Dermatology
+    title: "Cutaneous vasculitis in dogs: a retrospective study of 45 cases"
+    url: https://pubmed.ncbi.nlm.nih.gov/12753746/
+    type: retrospective
+    pmid: "12753746"
+  - sourceOrg: Veterinary Pathology
+    title: "Cutaneous vasculitis and vasculopathy in dogs: a review"
+    url: https://pubmed.ncbi.nlm.nih.gov/22262354/
+    type: review
+    pmid: "22262354"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Systemic reactive angioendotheliomatosis in a dog with vasculitis"
+    url: https://pubmed.ncbi.nlm.nih.gov/29285795/
+    type: case_report
+    pmid: "29285795"
+pubmedQueries:
+  - query: '"vasculitis" AND (dog OR canine OR feline) AND ("treatment" OR "immunosuppressive" OR "cutaneous")'
+    frequency: monthly

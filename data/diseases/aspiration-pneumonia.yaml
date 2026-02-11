@@ -1,0 +1,147 @@
+slug: aspiration-pneumonia
+nameEn: Aspiration Pneumonia
+nameZh: 吸入性肺炎
+bodySystem: respiratory
+description: 因吸入口咽分泌物、胃內容物或其他異物進入下呼吸道，引起化學性肺損傷及繼發性細菌感染的急性肺炎。為犬最常見的肺炎類型，常與巨食道症、喉麻痺、嘔吐或全身麻醉後誤嚥有關。
+
+aliases:
+  - { alias: AP, language: en }
+  - { alias: Aspiration Pneumonitis, language: en }
+  - { alias: Inhalation Pneumonia, language: en }
+  - { alias: 誤嚥性肺炎, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬最常見的肺炎類型。短頭種犬、巨食道症、喉麻痺、全身麻醉後嘔吐、強制灌食為主要風險因子。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓較少見，但強制灌藥、口咽疾病或嚴重嘔吐後可發生。
+
+etiology:
+  categories:
+    - name: 吸入物質分類
+      examples:
+        - 口咽分泌物 (含大量混合菌叢)
+        - 胃內容物 (酸性化學損傷 + 細菌感染)
+        - 食物或液體 (強制灌食不當)
+        - 異物 (少見)
+    - name: 常見致病菌
+      examples:
+        - Escherichia coli
+        - Pasteurella multocida
+        - Staphylococcus spp.
+        - Streptococcus spp.
+        - Mycoplasma spp.
+        - 厭氧菌 (Bacteroides、Fusobacterium)
+    - name: 風險因子
+      examples:
+        - 巨食道症 (megaesophagus)
+        - 喉麻痺 (laryngeal paralysis)
+        - 短頭種氣道症候群
+        - 全身麻醉後嘔吐/反流
+        - 持續性嘔吐
+        - 口咽疾病 (裂顎、口腔腫瘤)
+        - 神經肌肉疾病 (重症肌無力)
+        - 意識障礙 (癲癇發作後)
+
+clinicalSigns:
+  early:
+    - 急性發作的濕性咳嗽
+    - 發燒 (>39.5°C)
+    - 呼吸急促 (tachypnea)
+    - 食慾下降
+    - 嗜睡
+  progressive:
+    - 呼吸困難 (dyspnea)
+    - 肺部聽診濕囉音 (crackles)，尤其右前腹側
+    - 鼻分泌物 (黏膿性)
+    - 脫水
+    - 呼吸時腹式呼吸
+  late:
+    - 嚴重呼吸窘迫
+    - 發紺
+    - 敗血症/全身炎症反應症候群 (SIRS)
+    - 急性呼吸窘迫症候群 (ARDS)
+    - 休克
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔 X 光 (三向)
+      notes: "典型表現為右中肺葉及右前腹側肺葉的肺泡型浸潤與 air bronchograms。雙側受累亦常見。影像變化可能在吸入後 12-24 小時才明顯"
+    - name: 氣管內灌洗 (TTW) / 支氣管肺泡灌洗 (BAL)
+      notes: "細胞學見退化性嗜中性球伴胞內細菌。培養+藥敏為選擇抗生素的金標準。可見植物纖維或食物殘渣"
+    - name: CBC
+      notes: "嗜中性球增多伴左移。嚴重病例可見退化性左移 (degenerative left shift)"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "首選影像。右側位 + 左側位 + 腹背位。重力依賴性肺葉受累為特徵"
+    - name: 胸腔超音波
+      notes: "偵測肺實變、胸腔積液。引導穿刺"
+    - name: 胸腔 CT
+      notes: "複雜病例、懷疑肺膿瘍或異物時"
+  additional:
+    - 脈搏血氧飽和度 (SpO2) 或動脈血氣分析
+    - 生化檢查 (評估器官功能、脫水程度)
+    - 凝血功能 (懷疑 DIC 時)
+    - 血液培養 (懷疑敗血症時)
+    - 食道造影或透視 (評估巨食道症)
+
+treatment:
+  principles:
+    - 經驗性廣效抗生素涵蓋需氧菌及厭氧菌
+    - 支持性治療 (氧氣、輸液、營養)
+    - 找出並處理根本原因 (巨食道症、喉麻痺)
+    - 抗生素療程依培養結果調整，至少 3-4 週
+  medications:
+    - name: Ampicillin-Sulbactam
+      dose: "30 mg/kg IV TID"
+      notes: 住院病例靜脈一線用藥，廣效覆蓋含厭氧菌
+    - name: Amoxicillin-Clavulanate
+      dose: "12.5-25 mg/kg PO BID"
+      notes: 出院後口服轉換用藥
+    - name: Enrofloxacin
+      dose: "犬 5-20 mg/kg IV/PO SID"
+      notes: 革蘭氏陰性菌覆蓋。嚴重病例與 ampicillin 合併使用
+    - name: Metronidazole
+      dose: "10-15 mg/kg IV/PO BID"
+      notes: 強化厭氧菌覆蓋。懷疑嚴重厭氧菌感染時加用
+    - name: Maropitant
+      dose: "1 mg/kg IV/SC SID"
+      notes: 止吐。減少持續嘔吐引起的再次誤嚥風險
+  general:
+    - 氧氣治療 (SpO2 <94% 時，氧氣籠或鼻導管)
+    - 靜脈輸液 (注意避免過量加重肺水腫)
+    - 霧化治療 (0.9% saline nebulization) + coupage (叩擊排痰)
+    - 體位引流 (前低後高)
+    - 營養支持 (鼻飼管或食道造口管)
+    - 抗生素療程至少 3-4 週，X 光改善後再用 1-2 週
+    - 處理根本原因：巨食道症體位餵食、喉麻痺手術矯正
+
+emergencyNotes: 嚴重呼吸窘迫需立即氧氣補充。避免過度保定。急性大量誤嚥後立即行體位引流及氣管內吸引。廣效抗生素靜脈給藥。SpO2 持續 <90% 考慮機械通氣。
+
+prognosis: 輕至中度吸入性肺炎經適當抗生素與支持治療預後良好，存活率約 77-82%。合併嚴重敗血症或 ARDS 預後差。根本原因可控 (如麻醉後單次誤嚥) 預後優於持續性風險因子 (如巨食道症反覆誤嚥)。巨食道症犬反覆發生吸入性肺炎為常見死因。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Antimicrobial use Guidelines for Treatment of Respiratory Tract Disease in Dogs and Cats: Antimicrobial Guidelines Working Group of the International Society for Companion Animal Infectious Diseases"
+    url: https://pubmed.ncbi.nlm.nih.gov/28185306/
+    type: guideline
+    pmid: "28185306"
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Risk factors, outcome indicators, and outcome of aspiration pneumonia in dogs: 88 cases (2004-2006)"
+    url: https://pubmed.ncbi.nlm.nih.gov/19691569/
+    type: research
+    pmid: "19691569"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Aspiration pneumonia in dogs: pathophysiology, prevention, and diagnosis"
+    url: https://pubmed.ncbi.nlm.nih.gov/36808638/
+    type: review
+    pmid: "36808638"
+pubmedQueries:
+  - query: '"aspiration pneumonia" AND (dog OR canine) AND ("treatment" OR "outcome" OR "risk factors")'
+    frequency: monthly
+  - query: '"aspiration pneumonia" AND (dog OR canine OR cat OR feline) AND ("megaesophagus" OR "laryngeal paralysis")'
+    frequency: monthly

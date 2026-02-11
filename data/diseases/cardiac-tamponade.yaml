@@ -1,0 +1,132 @@
+slug: cardiac-tamponade
+nameEn: Cardiac Tamponade
+nameZh: 心包填塞
+bodySystem: cardiac
+description: 心包填塞為危及生命的急診狀況，因心包膜腔內液體急速或大量積聚，導致心包腔內壓力升高，壓迫心臟腔室（尤其右心房與右心室），嚴重限制心臟舒張期充盈，造成心輸出量急劇下降與循環衰竭。緊急心包穿刺（pericardiocentesis）為救命性治療。
+
+aliases:
+  - { alias: 心臟填塞, language: zh }
+  - { alias: 心包壓塞, language: zh }
+  - { alias: 心囊填塞, language: zh }
+  - { alias: Pericardial Tamponade, language: en }
+  - { alias: Tamponade, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 中大型犬好發。最常見原因為心臟腫瘤（血管肉瘤 HSA，佔 60-70%）與特發性心包積液。Golden Retriever 與 German Shepherd 為高風險品種。急性填塞常見於腫瘤破裂出血。中位年齡 7-12 歲。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓隻心包填塞罕見。可能原因包括充血性心衰竭（HCM）、淋巴瘤、FIP。貓心包積液通常量少，較少達到填塞程度。
+
+etiology:
+  categories:
+    - name: 腫瘤性出血（犬最常見）
+      examples:
+        - 血管肉瘤（Hemangiosarcoma）：右心耳起源，腫瘤破裂急性出血
+        - 心臟基底部腫瘤（Chemodectoma）：緩慢滲出
+        - 間皮瘤（Mesothelioma）：瀰漫性積液
+        - 淋巴瘤（貓較犬常見）
+    - name: 特發性
+      examples:
+        - 原因不明的出血性心包積液
+        - 可能與免疫介導性機制相關
+        - 常反覆發作
+    - name: 感染性
+      examples:
+        - 細菌性心包炎（穿刺異物如草芒）
+        - FIP（貓）
+    - name: 其他
+      examples:
+        - 左心房撕裂（小型犬晚期 MMVD）
+        - 抗凝血劑中毒
+        - 心臟穿孔（心導管術併發症）
+        - 外傷
+    - name: 病理生理
+      examples:
+        - 心包膜為不可伸展的纖維囊
+        - 急性積液少量即可引起填塞（心包膜無時間擴張代償）
+        - 右心房與右心室最先受壓（低壓系統）
+        - 心臟舒張期充盈受限導致心輸出量急劇下降
+        - 代償機制：心搏過速、周邊血管收縮、靜脈壓升高
+
+clinicalSigns:
+  early:
+    - 嗜睡、活力下降
+    - 食慾減退
+    - 輕度腹部膨大
+    - 心搏過速
+  progressive:
+    - 腹部膨大（腹水）
+    - 運動不耐加重
+    - 呼吸急促
+    - 頸靜脈怒張（JVD）
+    - 心音低沉（muffled heart sounds）
+    - 脈搏微弱
+  late:
+    - "Beck's Triad：低血壓 + 頸靜脈怒張 + 心音低沉（經典三聯症）"
+    - 奇脈（Pulsus paradoxus）：吸氣時收縮壓下降 >10 mmHg
+    - 循環衰竭/心因性休克
+    - 蒼白黏膜、CRT 延長 >3 秒
+    - 體溫下降
+    - 意識改變/虛脫
+    - 猝死（急性腫瘤破裂出血）
+
+diagnosis:
+  primaryTests:
+    - name: 心臟超音波（Echocardiography）— 急診 FAST/TFAST
+      notes: "確診金標準。急診 TFAST 掃描可在數分鐘內確認心包積液。無回音液體環繞心臟。右心房舒張期塌陷（RA diastolic collapse）= 填塞的血流動力學標誌。右心室舒張期塌陷。可同時評估心臟腫塊（右心耳 HSA、心基底部腫瘤）。引導穿刺部位。"
+    - name: 理學檢查
+      notes: "Beck's Triad（低血壓、頸靜脈怒張、心音低沉）。脈搏微弱、奇脈。心搏過速。腹部觸診可感受腹水波動。黏膜蒼白、CRT 延長。"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "球形心影（globoid cardiac silhouette）。肺血管正常或減少（與充血性心衰竭鑑別）。急診情況下不應延遲治療以等待 X 光。"
+    - name: 心電圖（ECG）
+      notes: "低電壓 QRS 波群（<1 mV lead II）。電性交替（Electrical Alternans）：QRS 振幅逐拍交替，高度提示填塞。竇性心搏過速。ST 段變化。"
+  additional:
+    - TFAST/AFAST 掃描：急診快速超音波評估，最快確認心包積液的方法
+    - 穿刺液分析：PCV（出血性為主）、細胞學、培養、蛋白質
+    - CBC：貧血（慢性失血、HSA 相關微血管性溶血）
+    - 凝血功能：排除凝血異常
+
+treatment:
+  principles:
+    - 心包穿刺（Pericardiocentesis）為救命性急救治療
+    - 絕對禁用利尿劑與血管擴張劑（會惡化填塞）
+    - 積極靜脈輸液增加前負荷
+    - 找出根本原因決定後續治療
+  general:
+    - "緊急心包穿刺（Pericardiocentesis）：右側第 4-6 肋間，肋骨頭側緣。超音波引導最佳。使用 14-16G 長導管或豬尾導管。ECG 監測（接觸心外膜時出現 ST 段抬高或 VPC）。引流少量即可顯著改善血流動力學"
+    - "靜脈輸液復甦：穿刺前先建立靜脈通路。晶體液（LRS/0.9% NaCl）20-30 mL/kg IV bolus。膠體液（Hetastarch）5-10 mL/kg IV"
+    - "絕對禁忌：利尿劑（Furosemide 等）— 降低前負荷惡化填塞；血管擴張劑 — 降低後負荷但無法改善充盈"
+    - "穿刺後密切監測再積聚（尤其腫瘤性）"
+    - "腫瘤性填塞後續：心臟超音波評估腫塊 + 腹部超音波（脾臟 HSA）+ 胸腹 CT 分期"
+    - "HSA 化療：Doxorubicin 30 mg/m² IV 每 3 週"
+    - "反覆特發性填塞：心包膜部分切除術（Subtotal Pericardiectomy）"
+    - "急性 HSA 破裂伴嚴重出血：可能需緊急手術（右心耳切除 + 心包切除）"
+
+prognosis: 心包填塞為危及生命的急症，未經治療致死率極高。及時心包穿刺可迅速改善血流動力學，為後續診斷與治療爭取時間。預後取決於根本病因。特發性心包積液穿刺後約 50% 不再復發，心包切除術後預後良好。心臟 HSA 預後最差，僅穿刺中位存活約 1 個月，穿刺加化療約 4-6 個月。Heart base tumor（chemodectoma）心包切除後中位存活 1-2 年。左心房撕裂預後極差，多數於急性期死亡。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Pericardial effusion and cardiac tamponade in dogs: diagnosis and management"
+    url: https://pubmed.ncbi.nlm.nih.gov/20487246/
+    type: consensus
+    pmid: "20487246"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Pericardial effusion in dogs: 143 cases (1985-2003)"
+    url: https://pubmed.ncbi.nlm.nih.gov/18564230/
+    type: consensus
+    pmid: "18564230"
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "RECOVER evidence and knowledge gap analysis on veterinary CPR: monitoring and post-cardiac arrest care"
+    url: https://pubmed.ncbi.nlm.nih.gov/22676108/
+    type: consensus
+    pmid: "22676108"
+pubmedQueries:
+  - query: '"cardiac tamponade" AND (dog OR canine) AND ("pericardiocentesis" OR "emergency" OR "treatment")'
+    frequency: monthly
+  - query: '"pericardial effusion" AND (dog OR canine) AND ("tamponade" OR "hemangiosarcoma" OR "outcome")'
+    frequency: monthly

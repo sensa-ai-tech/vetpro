@@ -1,0 +1,112 @@
+slug: rabbit-myxomatosis
+nameEn: Rabbit Myxomatosis
+nameZh: 兔黏液瘤病
+bodySystem: exotic
+description: 由黏液瘤病毒 (Myxoma virus) 引起的兔高致死性病毒感染症，以嚴重皮膚黏液瘤性腫脹、結膜炎及全身性免疫抑制為特徵，透過吸血節肢動物 (蚊、跳蚤) 傳播。
+
+aliases:
+  - { alias: 兔黏液瘤, language: zh }
+  - { alias: 多發性黏液瘤, language: zh }
+  - { alias: Myxo, language: en }
+  - { alias: Myxoma virus infection, language: en }
+
+species:
+  - speciesCommon: rabbit
+    speciesScientific: Oryctolagus cuniculus
+    prevalence: common
+    notes: 歐洲兔 (O. cuniculus) 高度易感，致死率可達 99% (經典毒株)。南美棉尾兔 (Sylvilagus spp.) 為天然宿主，通常僅輕症。澳洲、歐洲及部分地區為法定疫病。英國及歐洲大陸家兔常受威脅。
+
+etiology:
+  categories:
+    - name: 病毒性
+      examples:
+        - Myxoma virus (Poxviridae 科，Leporipoxvirus 屬)
+        - 主要經吸血昆蟲機械性傳播 (蚊子、跳蚤 Spilopsyllus cuniculi、蝨)
+        - 直接接觸傳播 (眼鼻分泌物)
+        - 氣溶膠傳播 (近距離)
+        - 病毒在環境中可存活數月
+    - name: 風險因素
+      examples:
+        - 戶外飼養或接觸野兔
+        - 蚊蟲活躍季節 (夏秋)
+        - 未接種疫苗
+        - 跳蚤感染
+
+clinicalSigns:
+  early:
+    - 食慾減退與精神沉鬱
+    - 結膜充血與漿液性眼分泌物
+    - 發燒 (可達 40-42°C)
+    - 眼瞼腫脹 (blepharoedema)
+  progressive:
+    - 嚴重結膜炎伴膿性分泌物 (眼睛閉合)
+    - 眼瞼、鼻部、唇部、耳基部黏液水腫性腫脹
+    - 肛門生殖區域水腫
+    - 皮膚多發性結節 (黏液瘤，尤其耳朵與體表)
+    - 繼發性細菌性肺炎
+  late:
+    - 嚴重全身水腫 (典型「獅面」外觀)
+    - 嚴重呼吸困難
+    - 全身性免疫抑制
+    - 出血性病變 (高毒力株)
+    - 多器官衰竭
+    - 死亡通常於感染後 10-14 天
+
+diagnosis:
+  primaryTests:
+    - name: PCR
+      notes: "取皮膚結節、眼分泌物或血液。高敏感度與特異性，為確診首選方法"
+    - name: 臨床表徵
+      notes: "典型病例 (黏液水腫性腫脹 + 結膜炎 + 皮膚結節) 臨床可高度懷疑"
+    - name: 組織病理學
+      notes: "皮膚/結節活檢：表皮增生、黏液水腫性間質變化、星狀細胞 (myxoma cells)、嗜酸性細胞質內包涵體"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "評估繼發性肺炎程度"
+  additional:
+    - 電子顯微鏡 (偵測痘病毒顆粒)
+    - 病毒分離 (研究用途)
+    - CBC (淋巴球減少、heterophilia)
+
+treatment:
+  principles:
+    - 無特異性抗病毒治療
+    - 以支持性照護與繼發感染控制為主
+    - 高致死率 (經典株)，預防 (疫苗接種) 遠比治療重要
+    - 弱毒株感染有較高存活機會
+  medications:
+    - name: Enrofloxacin
+      dose: "10-20 mg/kg PO/SC BID"
+      notes: 預防或治療繼發性細菌感染
+    - name: Meloxicam
+      dose: "0.3-0.5 mg/kg PO/SC SID"
+      notes: 抗炎止痛
+    - name: 眼藥水 (Fusidic acid 或 Chloramphenicol)
+      dose: "患眼 BID-QID"
+      notes: 防治繼發性細菌性結膜炎
+  general:
+    - 輔助餵食與補液 (維持營養與水分)
+    - 溫暖清潔環境
+    - 清潔眼鼻分泌物 (溫生理食鹽水)
+    - 疫苗接種為最重要預防措施 (活減毒或重組疫苗，每 6-12 個月補強)
+    - 防蚊防蚤措施 (蚊帳、環境除蟲)
+    - 嚴格隔離患兔
+    - 安樂死考量 (嚴重病例，動物福利)
+
+prognosis: 經典高毒力株感染致死率極高 (>95%)，預後極差。弱毒力株 (field-attenuated strains) 感染存活率較高 (約 30-50%)，存活者可能留有皮膚瘢痕。疫苗接種兔如感染通常症狀較輕。英國及歐洲有疫苗可用，但台灣、美國等地無核准疫苗。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Record
+    title: "Myxomatosis in pet rabbits: current concepts in diagnosis and treatment"
+    url: https://pubmed.ncbi.nlm.nih.gov/31636191/
+    type: review
+    pmid: "31636191"
+  - sourceOrg: Journal of General Virology
+    title: "Myxoma virus: biology and pathogenesis"
+    url: https://pubmed.ncbi.nlm.nih.gov/30427782/
+    type: review
+    pmid: "30427782"
+
+pubmedQueries:
+  - query: '"myxomatosis" AND "rabbit" AND ("treatment" OR "vaccination" OR "management")'
+    frequency: monthly

@@ -1,0 +1,129 @@
+slug: pituitary-tumor
+nameEn: Pituitary Tumor
+nameZh: 垂體腫瘤
+bodySystem: oncology
+description: 犬貓腦下垂體的腫瘤，以功能性垂體腺瘤（分泌 ACTH 導致庫欣氏症候群）最常見，大腫瘤可壓迫下視丘及周圍腦組織引起神經症狀。
+
+aliases:
+  - { alias: Pituitary Adenoma, language: en }
+  - { alias: Pituitary Macroadenoma, language: en }
+  - { alias: Pituitary Macrotumor, language: en }
+  - { alias: 腦下垂體腫瘤, language: zh }
+  - { alias: 垂體腺瘤, language: zh }
+  - { alias: 垂體大腫瘤, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 約 80-85% 犬自發性腎上腺皮質機能亢進 (Cushing's) 為垂體依賴性。垂體腫瘤依大小分為微腺瘤 (<10 mm) 及大腺瘤 (≥10 mm)。好發品種：Dachshund、Boxer、Boston Terrier、Poodle。中位年齡 8-12 歲。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓垂體腫瘤相對少見。多數與肢端肥大症 (acromegaly，GH 分泌型) 或庫欣氏症候群相關。肢端肥大症可導致難治性糖尿病。
+
+etiology:
+  categories:
+    - name: 腫瘤類型
+      examples:
+        - ACTH 分泌型腺瘤（最常見，犬 Cushing's 主因）
+        - GH 分泌型腺瘤（貓肢端肥大症主因）
+        - 非功能性腺瘤（不分泌活性荷爾蒙）
+        - 垂體癌（罕見，可轉移）
+    - name: 分子機制
+      examples:
+        - 犬 ACTH 腺瘤中 Tpit/Tbx19 轉錄因子過度表達
+        - 貓 GH 腺瘤可能與 AIP 基因突變相關
+        - 大多數為單克隆性增生（真性腫瘤）
+    - name: 大小分類
+      examples:
+        - 微腺瘤 (<10 mm)——多數犬垂體依賴性 Cushing's
+        - 大腺瘤 (≥10 mm)——約 15-50% 犬 PDH 病例
+        - 大腺瘤可向背側壓迫下視丘
+
+pathophysiology: 垂體腫瘤多起源於腺垂體 (pars distalis 或 pars intermedia)。ACTH 分泌型腺瘤持續分泌 ACTH，刺激雙側腎上腺皮質增生及過量皮質醇分泌，導致庫欣氏症候群。微腺瘤侷限於蝶鞍內，主要以內分泌症狀表現。大腺瘤向背側擴展壓迫下視丘、視交叉及周圍腦組織，可引起神經症狀（嗜睡、步態異常、視力障礙、癲癇、意識改變）。腫瘤擴大可壓迫正常垂體組織導致其他垂體荷爾蒙缺乏（垂體功能低下症）。貓 GH 分泌型腺瘤導致 IGF-1 過高，引起肢端肥大症及嚴重胰島素抗性糖尿病。
+
+clinicalSigns:
+  early:
+    - 庫欣氏症候群表現（犬最常見）：多飲多尿、多食、腹部膨大
+    - 皮膚症狀：對稱性脫毛、皮膚變薄、鈣質沉著
+    - 喘氣 (panting)
+    - 肝腫大
+  progressive:
+    - 肌肉萎縮、肌無力
+    - 反覆泌尿道感染
+    - 皮膚感染
+    - 大腺瘤神經症狀：嗜睡增加、步態異常、盤旋
+    - 貓肢端肥大症：面部/肢端增大、體重增加、難治性糖尿病
+  late:
+    - 垂體大腺瘤壓迫症狀：失明（視交叉壓迫）、嚴重嗜睡、昏迷
+    - 癲癇發作
+    - 下視丘功能障礙（體溫調節異常、食慾調節異常）
+    - 垂體功能低下症（甲狀腺低下、尿崩症）
+    - 全身衰弱
+
+diagnosis:
+  primaryTests:
+    - name: 腎上腺皮質功能檢查
+      notes: "低劑量 dexamethasone 抑制試驗 (LDDS)：篩檢 Cushing's 金標準。ACTH 刺激試驗：評估腎上腺儲備。高劑量 dexamethasone 抑制試驗 (HDDS)：鑑別垂體性 vs 腎上腺性"
+    - name: 內源性 ACTH 測定
+      notes: "垂體性 Cushing's：ACTH 正常或升高。腎上腺性 Cushing's：ACTH 抑制（<10 pg/mL）"
+    - name: 腦部 MRI
+      notes: "確診垂體腫瘤金標準。評估腫瘤大小 (P/B ratio — 垂體/腦比值)、壓迫程度、向周圍組織侵犯情況。>10 mm 定義為大腺瘤"
+  imaging:
+    - name: 腦部 MRI (對比增強)
+      notes: "首選影像檢查。T1 加權均勻強化。評估 P/B ratio、背側擴展"
+    - name: 腦部 CT (對比增強)
+      notes: "MRI 無法使用時的替代方案。偵測大腺瘤 (>8 mm) 靈敏度佳，微腺瘤偵測率較低"
+    - name: 腹部超音波
+      notes: "評估雙側腎上腺大小（垂體依賴性 Cushing's 雙側對稱性腫大）。排除腎上腺腫瘤"
+  additional:
+    - Urine Cortisol/Creatinine Ratio (UCCR)——高敏感度篩檢
+    - 甲狀腺功能 (T4, fT4)——評估垂體功能低下
+    - 貓：IGF-1 測定（>1000 ng/mL 高度提示肢端肥大症）
+    - 生化（ALP 升高、膽固醇升高、高血糖）
+
+treatment:
+  principles:
+    - 微腺瘤以內科治療控制庫欣氏症候群為主
+    - 大腺瘤合併神經症狀需考慮放射治療或手術
+    - 貓 GH 分泌型腺瘤以放射治療效果最佳
+    - 經蝶竇垂體切除術為根治性選擇（需專科中心）
+  medications:
+    - name: Trilostane
+      dose: "1-2 mg/kg PO BID（起始劑量，需個體化調整）"
+      notes: 3β-HSD 抑制劑，抑制皮質醇合成。犬垂體性 Cushing's 首選內科治療。需定期 ACTH 刺激試驗監測
+    - name: Mitotane (o,p'-DDD)
+      dose: "誘導期 25 mg/kg PO BID × 7-10 天（密切監測），維持期 25 mg/kg PO 每週 1-2 次"
+      notes: 腎上腺皮質溶解劑。療效確實但副作用較多。Trilostane 無效時的替代方案
+    - name: Cabergoline (貓)
+      dose: "5-10 μg/kg PO 每週 2 次"
+      notes: 多巴胺受體促效劑。貓垂體腫瘤部分病例可縮小腫瘤。效果不一致
+  general:
+    - 放射治療（垂體大腺瘤）：48-54 Gy 分 15-20 次——可縮小腫瘤、改善神經症狀
+    - 立體定向放射外科 (SRS/SRT)：單次或少次分割高劑量照射
+    - 經蝶竇垂體切除術 (Transsphenoidal Hypophysectomy)：根治性手術，術後需終生荷爾蒙替代
+    - 術後荷爾蒙替代：Desmopressin (尿崩症)、Hydrocortisone (腎上腺功能不足)、Levothyroxine (甲狀腺低下)
+    - 大腺瘤神經症狀急性惡化：Dexamethasone 0.1-0.25 mg/kg IV（減少腫瘤周圍水腫）
+
+prognosis: 微腺瘤以 Trilostane 內科治療中位存活約 2-2.5 年。大腺瘤未治療預後差，可能數週至數月。放射治療大腺瘤後中位存活約 1.5-2.5 年，多數神經症狀可獲改善。經蝶竇切除術後中位存活約 2-4 年。貓肢端肥大症放療後多數可改善糖尿病控制，中位存活 >2 年。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "ACVIM consensus statement on the diagnosis and treatment of canine Cushing's syndrome"
+    url: https://pubmed.ncbi.nlm.nih.gov/22775386/
+    type: guideline
+    pmid: "22775386"
+  - sourceOrg: Veterinary Radiology & Ultrasound
+    title: "Pituitary irradiation for dogs with pituitary-dependent hypercortisolism"
+    url: https://pubmed.ncbi.nlm.nih.gov/28940686/
+    type: research
+    pmid: "28940686"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Hypophysectomy in dogs with pituitary-dependent hypercortisolism: long-term follow-up"
+    url: https://pubmed.ncbi.nlm.nih.gov/18179557/
+    type: retrospective
+    pmid: "18179557"
+pubmedQueries:
+  - query: '"pituitary tumor" AND (dog OR canine) AND ("Cushing" OR "radiation" OR "hypophysectomy")'
+    frequency: monthly

@@ -1,0 +1,133 @@
+slug: pituitary-dwarfism
+nameEn: Pituitary Dwarfism
+nameZh: 垂體侏儒症
+bodySystem: endocrine
+description: 腦下垂體生長激素 (GH) 分泌不足導致的比例性侏儒症，為罕見的遺傳性內分泌疾病，以 German Shepherd Dog 最具代表性。
+
+aliases:
+  - { alias: Growth Hormone Deficiency, language: en }
+  - { alias: GH Deficiency, language: en }
+  - { alias: Hypopituitarism, language: en }
+  - { alias: Panhypopituitarism, language: en }
+  - { alias: 生長激素缺乏症, language: zh }
+  - { alias: 腦下垂體侏儒症, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: German Shepherd Dog 最常見（體染色體隱性遺傳，LHX3 基因突變）。其他好發品種 — Karelian Bear Dog、Saarloos Wolfdog、Czechoslovakian Wolfdog。通常 2-3 個月齡開始明顯矮小。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: very_rare
+    notes: 貓極罕見。偶有個案報告。
+
+etiology:
+  categories:
+    - name: 先天性腦下垂體囊腫 (最常見)
+      examples:
+        - Rathke's pouch 囊腫（GSD 最常見病因）
+        - 垂體前葉發育不全
+        - LHX3 基因突變（GSD — 體染色體隱性遺傳，7號外顯子 intron 保留突變）
+    - name: 單一 GH 缺乏
+      examples:
+        - 孤立性 GH 缺乏（其他垂體荷爾蒙正常）
+        - GHRH 受體缺陷
+    - name: 合併多重垂體荷爾蒙缺乏 (Panhypopituitarism)
+      examples:
+        - GH + TSH + PRL + 促性腺激素同時缺乏
+        - GSD 的 Rathke's pouch 囊腫常導致多重缺乏
+    - name: 後天性
+      examples:
+        - 腦下垂體腫瘤壓迫/破壞（成犬，罕見）
+        - 放射治療後垂體損傷
+
+pathophysiology: GH 經由肝臟產生的 IGF-1 (Insulin-like Growth Factor 1) 促進長骨生長板軟骨增生與骨化。GH 缺乏導致 IGF-1 低下，骨骼生長板提早閉合，造成比例性侏儒。GH 同時對毛囊生長週期至關重要，缺乏導致幼毛滯留（lanugo hair retention）與進行性脫毛。TSH 同時缺乏時產生繼發性甲低，進一步加重生長遲緩與皮膚症狀。促性腺激素缺乏導致性腺發育不全與不孕。Rathke's pouch 囊腫可進行性增大，壓迫周圍腦組織，最終導致神經症狀。
+
+clinicalSigns:
+  early:
+    - 同窩幼犬中明顯矮小（2-3 月齡起）
+    - 保留幼犬被毛 (puppy coat/lanugo hair)
+    - 換毛遲緩
+    - 體型比例正常但等比例縮小
+  progressive:
+    - 進行性對稱性軀幹脫毛
+    - 皮膚色素沉著加深 (hyperpigmentation)
+    - 皮膚變薄、失去彈性
+    - 乳齒滯留
+    - 骨骺閉合延遲（X 光可見）
+    - 尖銳的吠叫聲（喉部發育不全）
+    - 雙側隱睪或外陰發育不全
+  late:
+    - 繼發性甲狀腺功能低下症狀（嗜睡、怕冷）
+    - 繼發性腎上腺皮質功能低下（罕見，Rathke's cyst 擴大時）
+    - 腎臟功能異常（GFR 降低）
+    - 神經症狀（Rathke's cyst 擴大壓迫）— 行為改變、痙攣、失明
+    - 壽命明顯縮短（未治療通常 3-5 年）
+
+diagnosis:
+  primaryTests:
+    - name: IGF-1 (Insulin-like Growth Factor 1)
+      notes: "最實用的篩檢指標。GH 缺乏犬 IGF-1 極低 (<50 ng/mL)。不受脈衝式分泌影響。可區分 GH 缺乏 vs 其他侏儒原因"
+    - name: GH 刺激試驗
+      notes: "GHRH 或 clonidine 刺激後測 GH。缺乏犬 GH 不上升。但犬 GH assay 取得困難"
+    - name: LHX3 基因檢測
+      notes: "GSD 特異性基因檢測（DNA test）。可偵測帶原犬。繁殖篩檢建議"
+    - name: 甲狀腺功能檢查
+      notes: "T4 低 + TSH 低/正常 → 繼發性甲低（區別於原發性甲低 TSH 升高）"
+  imaging:
+    - name: 腦部 MRI
+      notes: "Rathke's pouch 囊腫（高信號囊性病灶於蝶鞍區）。垂體縮小。評估囊腫大小與壓迫程度"
+    - name: 全身 X 光
+      notes: "骨骺閉合延遲、骨骼發育不全。椎體方形化。骨密度降低"
+  additional:
+    - 完整垂體荷爾蒙 panel（GH、TSH、ACTH、LH/FSH、prolactin）
+    - 血液生化（低血糖風險、腎功能）
+    - CBC（通常正常）
+    - 皮膚切片（毛囊萎縮、角化過度、彈性纖維減少）
+
+treatment:
+  principles:
+    - GH 替代治療為理想方案但臨床取得困難
+    - 繼發性荷爾蒙缺乏需同時補充
+    - 早期治療效果較佳（生長板閉合前）
+    - 基因檢測與繁殖篩選為預防關鍵
+  medications:
+    - name: Porcine GH (pGH)
+      dose: "0.1 IU/kg SC 3 次/週 × 4-6 週"
+      notes: 效果佳但臨床取得極度困難。可誘發抗體產生而失效。治療後 IGF-1 監測。有誘發糖尿病風險
+    - name: Progestins (Medroxyprogesterone acetate)
+      dose: "2.5-5 mg/kg SC 每 3-6 週（或 10 mg/kg 單次）"
+      notes: 刺激乳腺組織產生 GH（off-label 替代療法）。可改善皮膚與被毛。副作用包括子宮蓄膿（未絕育母犬）、肢端肥大症、糖尿病
+    - name: Levothyroxine
+      dose: "0.02 mg/kg PO BID"
+      notes: 繼發性甲低補充治療。幾乎所有 panhypopituitarism 犬需要
+  general:
+    - 生長板閉合前開始治療效果最佳（<6 月齡）
+    - 治療後身高改善有限（骨骼已部分定型）
+    - 皮膚與被毛改善通常明顯
+    - 定期監測血糖（GH 治療期間）
+    - Rathke's cyst 進行性增大可考慮手術減壓（經蝶竇入路）
+    - 基因篩檢計畫 — 帶原犬不建議繁殖
+
+prognosis: 未治療犬壽命通常 3-5 年，主要因進行性腎功能衰竭與繼發感染。GH 替代治療可改善生活品質與延長壽命，但完整的身體發育難以恢復。Rathke's cyst 進行性增大者預後較差。合併 panhypopituitarism 者需終身多重荷爾蒙替代。基因檢測與帶原犬篩選可有效降低品種盛行率。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Pituitary dwarfism in German Shepherd Dogs: LHX3 mutation and response to treatment with porcine growth hormone."
+    url: https://pubmed.ncbi.nlm.nih.gov/18564225/
+    type: research
+    pmid: "18564225"
+  - sourceOrg: Domestic Animal Endocrinology
+    title: "Congenital GH deficiency and combined pituitary hormone deficiency in dogs and cats."
+    url: https://pubmed.ncbi.nlm.nih.gov/22521449/
+    type: review
+    pmid: "22521449"
+  - sourceOrg: Journal of Heredity
+    title: "A mutation in the LHX3 gene is responsible for pituitary dwarfism in German Shepherd Dogs and Saarloos Wolfdogs."
+    url: https://pubmed.ncbi.nlm.nih.gov/21846742/
+    type: research
+    pmid: "21846742"
+pubmedQueries:
+  - query: '"pituitary dwarfism" OR "growth hormone deficiency" AND (dog OR canine) AND ("LHX3" OR "treatment" OR "German Shepherd")'
+    frequency: monthly

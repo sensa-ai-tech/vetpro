@@ -1,0 +1,134 @@
+slug: feline-calicivirus
+nameEn: Feline Calicivirus Infection
+nameZh: 貓杯狀病毒感染
+bodySystem: infectious
+description: 由貓杯狀病毒 (FCV) 引起的常見上呼吸道與口腔感染。典型表現為口腔潰瘍與上呼吸道症狀。高毒力全身性株 (VS-FCV) 可引起致命性全身性疾病。
+
+aliases:
+  - { alias: FCV, language: en }
+  - { alias: Feline Calicivirus, language: en }
+  - { alias: 貓杯狀病毒, language: zh }
+  - { alias: 貓卡里西病毒, language: zh }
+
+species:
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: very_common
+    notes: 極常見的貓上呼吸道感染病原之一。多貓環境與收容所中盛行率極高。所有年齡均可感染，幼貓 (6 週-6 月齡) 症狀最嚴重。約 10-25% 的健康貓為慢性帶原者 (咽喉持續排毒)。疫苗可降低嚴重度但不完全預防感染。
+
+etiology:
+  categories:
+    - name: 病毒性
+      examples:
+        - Feline Calicivirus (FCV)，杯狀病毒科 (Caliciviridae)
+        - 單股正義 RNA 病毒，無外套膜
+        - 病毒株多樣性極高 (抗原漂移頻繁)
+        - 環境中穩定性高 (可存活 >28 天於乾燥環境)
+        - 對一般消毒劑有較強抵抗力 (需 1:32 漂白水或加速過氧化氫)
+    - name: 傳播途徑
+      examples:
+        - 直接接觸 (口鼻分泌物、飛沫)
+        - 間接接觸 (fomites — 食碗、砂盆、人的手/衣物)
+        - 慢性帶原貓為重要傳播源
+        - 潛伏期 2-10 天
+    - name: 風險因素
+      examples:
+        - 多貓環境 (收容所、繁殖場、貓咖啡)
+        - 幼貓母源抗體下降期 (6-16 週)
+        - 緊迫 (搬家、新貓引入、住院)
+        - 未接種疫苗或疫苗接種不完整
+        - 免疫抑制 (FIV/FeLV)
+
+pathophysiology: FCV 經口鼻黏膜進入後，主要在口咽部上皮細胞與舌部上皮複製。病毒引起上皮細胞壞死，形成特徵性口腔潰瘍 (尤其舌尖、硬顎、唇部)。病毒亦侵犯上呼吸道黏膜引起鼻炎與結膜炎，但程度通常較 FHV-1 輕。部分 FCV 株具有關節趨向性，可引起急性多發性關節炎 (尤其幼貓接種活毒疫苗後)。高毒力全身性株 (VS-FCV) 可引起嚴重的全身性血管炎、皮下水腫、肝壞死、DIC，死亡率可達 50-67%。慢性帶原貓的 FCV 持續在扁桃腺與咽喉部上皮細胞低度複製排毒，可持續數月至終生。
+
+clinicalSigns:
+  early:
+    - 口腔潰瘍 (舌尖、硬顎、牙齦 — FCV 最具特徵性表現)
+    - 流涎 (因口腔疼痛)
+    - 打噴嚏
+    - 漿液性鼻分泌物
+    - 輕度發燒
+    - 食慾下降
+  progressive:
+    - 口腔潰瘍擴大加深
+    - 食慾廢絕 (口腔疼痛)
+    - 黏膿性眼鼻分泌物
+    - 結膜炎 (較 FHV 輕)
+    - 嗜睡
+    - 跛行/關節腫脹 (FCV 相關多發性關節炎，尤見幼貓)
+  late:
+    - VS-FCV 全身性疾病：高燒、皮下水腫 (面部/四肢)、皮膚潰瘍
+    - 黃疸 (肝壞死)
+    - 出血傾向 (DIC)
+    - 肺炎
+    - 多器官衰竭
+    - 慢性口炎/齒齦炎 (部分慢性感染貓)
+
+diagnosis:
+  primaryTests:
+    - name: FCV RT-PCR (口咽拭子)
+      notes: "敏感度高。口咽部或結膜拭子。注意：疫苗株可能陽性 (活毒疫苗後 2-3 週)。慢性帶原貓亦會陽性 (需結合臨床解讀)"
+    - name: 病毒分離 (細胞培養)
+      notes: "傳統金標準。FCV 生長快速 (24-48 小時即可產生細胞病變)。可用於 VS-FCV 爆發時的病毒株鑑定"
+    - name: 臨床表現
+      notes: "口腔潰瘍 + 上呼吸道症狀為高度提示。純口腔潰瘍型在臨床上即可高度懷疑 FCV"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "懷疑肺炎時評估。嚴重病例可見間質性至肺泡型浸潤"
+  additional:
+    - CBC/血清生化 (VS-FCV：肝酵素升高、血小板減少、DIC 指標)
+    - 凝血功能檢測 (VS-FCV 懷疑 DIC 時)
+    - 口腔/病灶活檢 (慢性口炎鑑別診斷)
+    - FIV/FeLV 檢測 (評估免疫狀態)
+
+treatment:
+  principles:
+    - 多數急性感染為自限性 (1-2 週)
+    - 支持性療法為主
+    - 營養支持 (維持進食) 為關鍵
+    - VS-FCV 需積極住院治療
+  medications:
+    - name: Famciclovir
+      dose: "40-90 mg/kg PO BID-TID"
+      notes: 對 FCV 效果有限 (主要用於 FHV)，但部分臨床醫師在嚴重病例嘗試使用
+    - name: Buprenorphine
+      dose: "0.01-0.03 mg/kg 口腔黏膜 TID"
+      notes: 口腔疼痛管理。維持進食意願。經口腔黏膜吸收 (OTM) 方便給藥
+    - name: 廣效抗生素
+      dose: "Amoxicillin-Clavulanate 12.5-25 mg/kg PO BID；或 Doxycycline 5 mg/kg PO SID"
+      notes: 預防/治療繼發性細菌感染。嚴重上呼吸道症狀時使用
+    - name: Maropitant (Cerenia)
+      dose: "1 mg/kg SC/PO SID"
+      notes: 止吐。嚴重食慾不振時輔助
+  general:
+    - 營養支持 (柔軟或流質食物、微加熱增加香氣)
+    - 食慾促進 (Mirtazapine 1.88 mg/cat PO 每 48 小時)
+    - 鼻胃管或食道管 (持續不進食 >3 天時)
+    - 霧化治療 (生理食鹽水，緩解鼻塞)
+    - 眼鼻分泌物清潔
+    - 隔離感染貓 (尤其多貓環境)
+    - 嚴格環境消毒 (加速過氧化氫或 1:32 漂白水)
+    - 疫苗接種 (核心疫苗：FVRCP 含 FCV)
+
+emergencyNotes: VS-FCV 爆發為緊急狀況，需立即隔離感染貓並徹底消毒環境。出現 DIC 徵兆需積極處理 (新鮮冷凍血漿、肝素)。持續不進食 >48 小時的貓有肝脂肪變性風險，需盡早放置餵食管。
+
+prognosis: 一般急性 FCV 感染預後良好，多數免疫正常的成貓在 1-2 週內自行恢復。幼貓症狀較嚴重但多可恢復。VS-FCV 死亡率高達 50-67%，預後差。慢性口炎與 FCV 的關聯仍有爭議，但部分慢性帶原貓可能發展為難治性口炎。疫苗可有效降低嚴重度但因病毒株多樣性而無法完全預防感染。
+
+guidelineRefs:
+  - sourceOrg: ABCD
+    title: "ABCD Guidelines on Feline Calicivirus Infection"
+    url: https://www.abcdcatsvets.org/feline-calicivirus-infection/
+    type: guideline
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "2020 AAFP Feline Vaccination Guidelines"
+    url: https://pubmed.ncbi.nlm.nih.gov/32845213/
+    type: guideline
+    pmid: "32845213"
+  - sourceOrg: Veterinary Microbiology
+    title: "An update on feline calicivirus"
+    url: https://pubmed.ncbi.nlm.nih.gov/20580159/
+    type: review
+    pmid: "20580159"
+pubmedQueries:
+  - query: '"feline calicivirus" AND ("treatment" OR "virulent systemic" OR "vaccination" OR "outbreak")'
+    frequency: monthly

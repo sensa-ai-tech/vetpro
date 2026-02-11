@@ -1,0 +1,118 @@
+slug: thiamine-deficiency
+nameEn: Thiamine Deficiency
+nameZh: 硫胺素缺乏
+bodySystem: metabolic
+description: 維生素 B1（硫胺素）缺乏導致的神經系統疾病。貓較犬常見，主要因長期餵食生魚（含 thiaminase）、含亞硫酸鹽保存的肉品或營養不完整的飲食。未及時補充可造成不可逆的腦幹損傷。
+
+aliases:
+  - { alias: 維生素B1缺乏, language: zh }
+  - { alias: 硫胺缺乏症, language: zh }
+  - { alias: Vitamin B1 Deficiency, language: en }
+  - { alias: Thiamin Deficiency, language: en }
+  - { alias: Polioencephalomalacia, language: en }
+
+species:
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓較犬常見——貓的硫胺素需求量較高（約犬的 3 倍）且體內儲存量少。常因長期餵食生魚（含 thiaminase）、以微波加熱飼料（破壞硫胺素）或營養不完整的自製飲食引起。商業飼料維生素 B1 不足的批次也有群體發病報告。
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬較少見。可因長期餵食含亞硫酸鹽保存的肉品、劣質商業飼料或嚴重長期厭食引起。犬的硫胺素需求量較貓低且體內儲存較多。
+
+etiology:
+  categories:
+    - name: 飲食因素
+      examples:
+        - 長期餵食生魚（含 thiaminase 酶，分解硫胺素）
+        - 含亞硫酸鹽（sulfites）保存的肉品（破壞硫胺素）
+        - 高溫加工或微波加熱過度破壞硫胺素
+        - 營養不完整的自製飲食
+        - 商業飼料製造缺陷（維生素 B1 含量不足）
+    - name: 吸收障礙/消耗增加
+      examples:
+        - 慢性腸道疾病影響吸收
+        - 長期厭食
+        - 肝臟疾病
+        - 慢性腹瀉
+    - name: 病理機轉
+      examples:
+        - 硫胺素為丙酮酸脫氫酶與 α-酮戊二酸脫氫酶的輔酶
+        - 缺乏→有氧代謝障礙→腦組織能量供應不足
+        - 灰質壞死（polioencephalomalacia）——尤其前庭核、動眼核、尾狀核
+        - 腦幹對稱性出血壞死（Wernicke-like encephalopathy）
+
+clinicalSigns:
+  early:
+    - 食慾下降
+    - 嗜睡
+    - 嘔吐
+    - 瞳孔散大（貓特徵性早期表現）
+  progressive:
+    - 共濟失調（步態不穩）
+    - 頸部腹屈（ventroflexion）——貓特徵性表現
+    - 前庭症狀（頭歪斜、眼球震顫、旋轉）
+    - 瞳孔反射遲鈍
+    - 視力障礙
+  late:
+    - 癲癇發作
+    - 角弓反張（opisthotonus）
+    - 昏迷
+    - 呼吸衰竭（腦幹損傷）
+    - 死亡（未治療通常在 1-3 週內）
+
+diagnosis:
+  primaryTests:
+    - name: 全血硫胺素濃度
+      notes: "確診標準。可測定全血或紅血球硫胺素二磷酸（TDP）。貓正常 >40 nmol/L。結果需時數天，通常先依臨床與治療反應診斷"
+    - name: 治療性診斷
+      notes: "高度懷疑時立即給予硫胺素補充。若 24-48 小時內臨床顯著改善即支持診斷。為最實用的診斷方式"
+  imaging:
+    - name: 腦部 MRI
+      notes: "T2W/FLAIR 高信號病灶位於腦幹（尤其前庭核、動眼核、中腦導水管周圍灰質）。對稱性分布為特徵。類似人類 Wernicke 腦病的影像表現"
+  additional:
+    - CBC/生化（通常無特異性異常）
+    - 詳細飲食史詢問（關鍵！——生魚、自製飲食、飼料品牌）
+    - 紅血球轉酮醇酶活性（thiamine pyrophosphate effect，TPP effect >25% 異常）
+    - CSF 分析（通常正常或輕微蛋白升高）
+    - 排除其他神經疾病（中毒、感染性腦炎）
+
+treatment:
+  principles:
+    - 緊急硫胺素補充為治療關鍵
+    - 早期治療可完全逆轉症狀
+    - 矯正飲食為長期管理
+    - 晚期腦幹壞死為不可逆損傷
+  general:
+    - "Thiamine (Vitamin B1) 50-100 mg/cat 或 50-100 mg/dog IM/SC q12h × 3-5 天（急性期）"
+    - "急性期後：Thiamine 50 mg/cat 或 50-100 mg/dog PO SID × 2-4 週"
+    - "靜脈注射硫胺素需緩慢給予（快速 IV 可致低血壓、心律不整）"
+    - "B 群維生素複合補充（同時矯正其他可能的 B 群缺乏）"
+    - "癲癇控制：Diazepam 0.5-1 mg/kg IV（急性發作時）"
+    - "營養改正：停止餵食生魚或不完整飲食"
+    - "改為營養完整且均衡的商業飼料"
+    - "支持療法：靜脈輸液、防止低體溫"
+    - "住院監護至神經症狀顯著改善"
+
+prognosis: 早期診斷與治療（症狀出現後 24-48 小時內）預後良好，多數動物可完全康復。頸部腹屈與共濟失調通常在補充硫胺素後 24-72 小時內改善。已出現癲癇發作、角弓反張或昏迷時預後謹慎至不良，可能有永久性神經後遺症。延遲治療超過數天且已有腦幹壞死時預後極差。矯正飲食後復發罕見。
+
+guidelineRefs:
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "Thiamine deficiency in cats: a clinical review"
+    url: https://pubmed.ncbi.nlm.nih.gov/27036999/
+    type: review
+    pmid: "27036999"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Thiamine deficiency in cats and dogs associated with feeding pet foods containing sulfite preservatives"
+    url: https://pubmed.ncbi.nlm.nih.gov/21916754/
+    type: retrospective
+    pmid: "21916754"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "MRI findings in cats with thiamine deficiency"
+    url: https://pubmed.ncbi.nlm.nih.gov/24372965/
+    type: retrospective
+    pmid: "24372965"
+pubmedQueries:
+  - query: '"thiamine deficiency" AND (cat OR feline OR dog OR canine) AND ("treatment" OR "neurological" OR "polioencephalomalacia")'
+    frequency: monthly

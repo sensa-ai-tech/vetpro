@@ -1,0 +1,131 @@
+slug: histiocytic-sarcoma
+nameEn: Histiocytic Sarcoma
+nameZh: 組織球肉瘤
+bodySystem: oncology
+description: 源自樹突細胞或巨噬細胞系列的高度惡性腫瘤，分為局部型與播散型（惡性組織球增多症），具高度侵犯性與快速進展特性。Bernese Mountain Dog 等品種有強烈遺傳傾向。
+
+aliases:
+  - { alias: HS, language: en }
+  - { alias: Malignant Histiocytosis, language: en }
+  - { alias: Disseminated Histiocytic Sarcoma, language: en }
+  - { alias: 組織細胞肉瘤, language: zh }
+  - { alias: 惡性組織球增多症, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 強烈品種傾向：Bernese Mountain Dog（發病率高達 25%）、Flat-Coated Retriever（佔該品種腫瘤死亡約 50%）、Rottweiler、Golden Retriever。中位年齡 6-9 歲。局部型常見於四肢關節周圍；播散型侵犯脾、肝、肺、骨髓。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓罕見。報告的病例多為播散型，預後極差。
+
+etiology:
+  categories:
+    - name: 遺傳傾向
+      examples:
+        - Bernese Mountain Dog 具強烈遺傳基礎，GWAS 發現多個風險基因座 (CDKN2A/B 缺失)
+        - Flat-Coated Retriever 為高風險品種
+        - 家族性群聚現象明顯
+    - name: 細胞來源
+      examples:
+        - 局部型：起源於樹突細胞 (interstitial dendritic cell)
+        - 播散型 (惡性組織球增多症)：多器官同時或快速進展性侵犯
+        - 嗜血球性組織球肉瘤 (Hemophagocytic HS)：起源於脾臟紅髓巨噬細胞
+    - name: 分子機制
+      examples:
+        - CDKN2A/B (p16/p14) 基因缺失頻繁
+        - PTEN 缺失
+        - MAPK/ERK 信號通路活化
+        - TP53 突變
+
+pathophysiology: 組織球肉瘤起源於抗原呈遞樹突細胞或巨噬細胞系列的惡性轉化。局部型通常起源於四肢關節周圍（尤其肘關節）的皮下/關節周圍組織，呈局部浸潤性生長並可轉移至區域淋巴結及遠端器官。播散型（惡性組織球增多症）在多個器官同時出現惡性組織球浸潤（脾臟、肝臟、肺臟、骨髓），進展極為迅速。嗜血球性組織球肉瘤起源於脾臟紅髓巨噬細胞，特徵為腫瘤細胞吞噬紅血球（嗜血球現象），導致嚴重的再生性貧血、血小板減少及低白蛋白血症。CDKN2A/B 腫瘤抑制基因缺失導致細胞週期調控失常，為此腫瘤的核心分子機制。
+
+clinicalSigns:
+  early:
+    - 局部型：四肢（尤其肘關節周圍）緩慢增大的腫塊
+    - 跛行（關節周圍病變）
+    - 非特異性症狀：輕度嗜睡、食慾下降
+    - 播散型可能初期僅表現非特異性全身症狀
+  progressive:
+    - 腫塊增大、可能潰瘍
+    - 體重減輕
+    - 嗜睡加重
+    - 呼吸困難（肺臟侵犯）
+    - 脾腫大、肝腫大
+    - 嗜血球型：進行性貧血、黃疸
+  late:
+    - 播散型：多器官衰竭
+    - 嚴重貧血（嗜血球性 HS）
+    - 血小板減少、出血傾向
+    - 呼吸窘迫
+    - 嚴重惡病質
+    - 神經症狀（腦侵犯時）
+    - DIC
+
+diagnosis:
+  primaryTests:
+    - name: 組織病理學 + 免疫組化
+      notes: "確診金標準。異形性大型圓形/多形性細胞，豐富嗜酸性細胞質。免疫組化：CD18+、CD11d+（播散型）、Iba-1+。排除淋巴瘤、未分化癌"
+    - name: 細針抽吸 (FNA) + 細胞學
+      notes: "可見大型異形性圓形細胞，多核巨細胞常見。初步提示但確診需組織切片及免疫組化"
+    - name: CBC + 血液抹片
+      notes: "嗜血球性 HS：再生性貧血、血小板減少、低白蛋白。可見異常組織球或嗜血球現象"
+  imaging:
+    - name: 腹部超音波
+      notes: "脾臟腫大/結節、肝臟結節、腹腔淋巴結腫大。嗜血球性 HS 常表現為脾腫大"
+    - name: 胸腔 X 光
+      notes: "肺浸潤或結節（播散型常見）、胸腔積液、肺門淋巴結腫大"
+    - name: CT 掃描
+      notes: "全身分期：評估多器官侵犯範圍"
+  additional:
+    - 骨髓抽吸/切片（排除骨髓侵犯）
+    - 脾臟/肝臟 FNA（超音波異常時）
+    - Coombs test（排除免疫媒介溶血合併症）
+    - 關節液分析（關節周圍病變時）
+
+treatment:
+  principles:
+    - 局部型以手術切除為首選，術後化療
+    - 播散型以全身性化療為主
+    - 嗜血球性 HS 預後極差，治療反應有限
+    - 新標靶療法研究中 (如 BRAFi, MEKi)
+  medications:
+    - name: CCNU (Lomustine)
+      dose: "60-90 mg/m² PO 每 3 週"
+      notes: 目前最常用化療藥物。反應率約 40-50%（局部型）。需監測 CBC、肝指數（累積性肝毒性）
+    - name: Doxorubicin
+      dose: "30 mg/m² IV 每 3 週 × 5 次"
+      notes: 替代化療選擇。心臟毒性為累積劑量限制因素
+    - name: CCNU + Doxorubicin 交替
+      dose: "CCNU 60-80 mg/m² PO 與 Doxorubicin 30 mg/m² IV 每 3 週交替"
+      notes: 聯合化療方案，部分回顧性研究顯示可能改善反應
+  general:
+    - 局部型：寬邊界手術切除 + 術後化療
+    - 截肢（肢體局部型無法寬切除時）
+    - 脾臟切除（脾臟原發或嗜血球性 HS）
+    - 支持治療：輸血（貧血）、止血（血小板減少）
+    - 新藥物研究中：Trametinib (MEK 抑制劑)、Talazoparib (PARP 抑制劑)
+
+prognosis: 預後普遍不佳。局部型手術加化療中位存活約 6-12 個月。播散型中位存活約 2-4 個月。嗜血球性組織球肉瘤預後最差，中位存活僅數週至 2 個月。CCNU 化療反應者存活時間較非反應者顯著延長。Bernese Mountain Dog 因品種高發病率建議育種篩選。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Pathology
+    title: "An updated review on canine histiocytic diseases"
+    url: https://pubmed.ncbi.nlm.nih.gov/27099159/
+    type: review
+    pmid: "27099159"
+  - sourceOrg: Veterinary and Comparative Oncology
+    title: "Histiocytic sarcoma in dogs: clinical presentation, treatment, and outcome in 34 cases"
+    url: https://pubmed.ncbi.nlm.nih.gov/16539593/
+    type: retrospective
+    pmid: "16539593"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Evaluation of CCNU (lomustine) for treatment of histiocytic sarcoma in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/17564660/
+    type: research
+    pmid: "17564660"
+pubmedQueries:
+  - query: '"histiocytic sarcoma" AND (dog OR canine) AND ("lomustine" OR "treatment" OR "CDKN2A")'
+    frequency: monthly

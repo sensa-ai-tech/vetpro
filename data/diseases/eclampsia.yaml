@@ -1,0 +1,137 @@
+slug: eclampsia
+nameEn: Eclampsia
+nameZh: 產褥性低血鈣
+bodySystem: reproductive
+description: 產褥性低血鈣（Eclampsia）又稱產褥熱或泌乳性低血鈣，是哺乳期母犬貓因鈣質大量流失至乳汁而導致的急性低血鈣症。為真正的醫療急症，未及時治療可導致癲癇、高體溫及死亡。
+
+aliases:
+  - { alias: Puerperal Hypocalcemia, language: en }
+  - { alias: Puerperal Tetany, language: en }
+  - { alias: Lactation Tetany, language: en }
+  - { alias: Milk Fever, language: en }
+  - { alias: Periparturient Hypocalcemia, language: en }
+  - { alias: 產褥熱, language: zh }
+  - { alias: 泌乳性低血鈣, language: zh }
+  - { alias: 產後低鈣抽搐, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 好發於小型犬（Chihuahua、Toy Poodle、Miniature Pinscher、Pomeranian、Shih Tzu）。最常發生於泌乳高峰期（產後 1-4 週），但亦可在產前或產後 6 週內發生。產仔數多的母犬風險較高。初產母犬與營養不良者風險增加。懷孕期過度補鈣反而增加風險（抑制 PTH 反應）。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓較犬罕見。發生時臨床表現可能不典型，以嗜睡、食慾下降、步態僵硬為主。大量仔貓泌乳需求高時風險增加。
+
+etiology:
+  categories:
+    - name: 鈣質流失機制
+      examples:
+        - 泌乳期鈣質大量轉移至乳汁（乳汁含鈣約 1300 mg/L）
+        - 鈣質流失速度超過腸道吸收與骨骼動員能力
+        - 副甲狀腺素（PTH）代償反應不足或延遲
+    - name: 風險因素
+      examples:
+        - 小型犬品種（體型小但泌乳需求高）
+        - 產仔數多（泌乳量大）
+        - 懷孕期過度鈣質補充（下調 PTH 分泌與維生素 D 活化，降低代償能力）
+        - 不當飲食（低鈣飲食、全肉飲食）
+        - 初產或幼齡母犬
+    - name: 病理生理
+      examples:
+        - 低血鈣導致神經肌肉興奮性增加（鈣離子穩定細胞膜電位）
+        - 細胞外鈣降低 → 神經細胞膜去極化閾值降低 → 自發性肌肉收縮
+        - 嚴重低血鈣導致持續性肌肉痙攣（tetany）
+        - 持續肌肉痙攣導致高體溫（>41°C 可致死）
+
+clinicalSigns:
+  early:
+    - 焦躁不安、踱步
+    - 面部搔抓或摩擦
+    - 輕度肌肉顫抖
+    - 喘氣
+    - 暫時離開幼犬（對幼犬興趣降低）
+    - 步態僵硬
+  progressive:
+    - 全身肌肉震顫加劇
+    - 步態不穩（共濟失調樣）
+    - 肌肉僵硬（四肢伸直、強直性痙攣）
+    - 心搏過速
+    - 體溫升高
+    - 流口水
+    - 嘔吐
+  late:
+    - 全身性強直-陣攣性癲癇發作
+    - 嚴重高體溫（>41.5°C — 因持續肌肉痙攣產熱）
+    - 側臥、角弓反張（opisthotonos）
+    - 心律不整（低鈣影響心肌傳導）
+    - 喉頭痙攣導致呼吸困難
+    - 昏迷
+    - 死亡（未治療可在 12-24 小時內死亡）
+
+diagnosis:
+  primaryTests:
+    - name: 臨床症狀與病史
+      notes: "泌乳期母犬出現肌肉震顫、強直性痙攣或癲癇發作，具高度診斷價值。典型病例根據病史與臨床表現即可初步診斷並開始治療"
+    - name: 血清總鈣/離子鈣
+      notes: "確診依據：總鈣 <7 mg/dL（正常 9-11.5 mg/dL）或離子鈣 <0.8 mmol/L（正常 1.1-1.4 mmol/L）。離子鈣更具診斷價值。注意：不應等待檢驗結果才開始治療"
+    - name: 心電圖 (ECG)
+      notes: "低鈣心電圖變化：QT 間期延長、ST 段延長。嚴重時可見心律不整。治療前後監測"
+  additional:
+    - 血清磷（低鈣常伴隨高磷）
+    - 血糖（排除低血糖——小型犬泌乳期可合併低血糖）
+    - 血清鎂（低鎂可使低鈣難以糾正）
+    - 電解質全套
+    - CBC/生化基線
+
+treatment:
+  principles:
+    - 急性低血鈣為醫療急症——靜脈鈣劑緩慢注射為首要治療
+    - 鈣劑給予速度必須緩慢並監測心率（過快可致心律不整/心停止）
+    - 同時處理高體溫（>40°C 需積極降溫）
+    - 穩定後轉為口服鈣質與維生素 D 維持治療
+    - 暫時或永久停止哺乳（依嚴重度決定）
+  medications:
+    - name: 10% Calcium Gluconate
+      dose: "0.5-1.5 mL/kg IV 緩慢注射（10-30 分鐘），稀釋於等量生理食鹽水"
+      notes: "急救首選。必須緩慢給予（>10 分鐘）。全程監測心率——若出現心搏過緩、嘔吐或心律不整立即停止。避免使用 Calcium Chloride（組織壞死風險高）"
+    - name: 口服鈣質補充
+      dose: "Calcium Carbonate 25-50 mg/kg/day 元素鈣，分 2-3 次給予"
+      notes: 穩定後口服維持。視臨床反應調整劑量。搭配維生素 D 促進吸收
+    - name: Calcitriol（活性維生素 D3）
+      dose: "0.02-0.03 μg/kg PO q24h"
+      notes: 促進腸道鈣質吸收，嚴重或復發性病例使用。需監測血鈣避免高血鈣
+  general:
+    - 高體溫處理：濕毛巾降溫、風扇、避免冰浴（血管收縮反而不利散熱），目標降至 39.5°C 即停止
+    - 癲癇控制：Diazepam 0.5-1 mg/kg IV（低鈣性癲癇以鈣劑糾正為根本治療，Diazepam 為輔助）
+    - 靜脈輸液支持（LRS 或 0.9% NaCl）
+    - 幼犬管理：輕度病例穩定後可恢復哺乳但需減少哺乳頻率並補充人工奶；嚴重或復發性病例需完全停止哺乳，改為人工哺育
+    - 飲食調整：確保高品質泌乳期飼料，鈣磷比適當（1.2-1.4:1）
+    - 預防復發：口服鈣劑持續至斷奶。避免懷孕期過度補鈣
+
+emergencyNotes: 產褥性低血鈣為急症。處理順序：(1) 10% Calcium Gluconate 0.5-1.5 mL/kg IV 緩慢注射（>10 分鐘），全程監測心電圖或心率——心搏過緩或心律不整立即暫停；(2) 同時降溫（若體溫 >40°C）；(3) 癲癇持續發作時 Diazepam 0.5-1 mg/kg IV；(4) 靜脈輸液；(5) 穩定後轉為 Calcium Gluconate SC（稀釋後皮下注射維持 12 小時）或口服鈣劑；(6) 評估是否需停止哺乳。多數犬在靜脈鈣劑給予後 15-30 分鐘內臨床症狀顯著改善。
+
+prognosis: 及時診斷與適當治療下預後極佳，大多數犬在靜脈鈣劑治療後迅速恢復（15-30 分鐘內症狀改善）。復發率約 25-40%（同次泌乳期或下次懷孕）。嚴重且延遲治療者可因持續性高體溫（>42°C）導致腦損傷或多器官衰竭而預後不良。已發生 eclampsia 的母犬未來懷孕復發風險高，建議預防性管理或考慮絕育。
+
+guidelineRefs:
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Puerperal tetany in the bitch: a retrospective study of 26 cases"
+    url: https://pubmed.ncbi.nlm.nih.gov/9564386/
+    type: research
+    pmid: "9564386"
+  - sourceOrg: Veterinary Clinics of North America Small Animal Practice
+    title: "Emergency management of the small animal obstetric patient"
+    url: https://pubmed.ncbi.nlm.nih.gov/22381180/
+    type: review
+    pmid: "22381180"
+  - sourceOrg: Topics in Companion Animal Medicine
+    title: "Periparturient diseases in the dam"
+    url: https://pubmed.ncbi.nlm.nih.gov/27968831/
+    type: review
+    pmid: "27968831"
+pubmedQueries:
+  - query: '"eclampsia" OR "puerperal hypocalcemia" AND (dog OR canine) AND ("treatment" OR "calcium" OR "lactation")'
+    frequency: monthly
+  - query: '"lactation tetany" AND (canine OR dog OR cat OR feline) AND ("management" OR "emergency")'
+    frequency: monthly

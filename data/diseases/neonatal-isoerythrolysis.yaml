@@ -1,0 +1,124 @@
+slug: neonatal-isoerythrolysis
+nameEn: Neonatal Isoerythrolysis
+nameZh: 新生兒同種免疫溶血
+bodySystem: other
+description: 新生幼犬貓因母源抗體（經初乳攝取）攻擊自身紅血球而引起的急性溶血性貧血。在貓尤為重要，發生於 A 型或 AB 型幼貓吸食 B 型母貓的初乳時，B 型母貓天然具有高力價抗 A 抗體。為貓隻繁殖中最重要的血型不合問題。
+
+aliases:
+  - { alias: 新生兒溶血症, language: zh }
+  - { alias: 新生兒同種免疫溶血症, language: zh }
+  - { alias: NI, language: en }
+  - { alias: Neonatal Hemolytic Anemia, language: en }
+  - { alias: Blood Type Incompatibility, language: en }
+
+species:
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 在貓為臨床上最重要的物種。發生於 A 型（或 AB 型）幼貓 × B 型母貓的組合。B 型母貓天然具有高力價抗 A 同種抗體（anti-A alloantibodies）。B 型盛行率因品種而異：British Shorthair、Devon Rex、Cornish Rex、Exotic Shorthair、Birman、Persian 等品種 B 型比例可達 20-50%。
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬的 NI 極為罕見，因為犬的天然同種抗體力價通常很低。可能發生於 DEA 1 陰性母犬（曾接受 DEA 1 陽性血輸血後致敏化）所生的 DEA 1 陽性幼犬。首胎通常不受影響（除非母犬先前已致敏化）。
+
+etiology:
+  categories:
+    - name: 貓（主要機制）
+      examples:
+        - B 型母貓天然具有高力價抗 A 型 IgG 與 IgM 同種抗體
+        - A 型幼貓吸食含抗 A 抗體的初乳
+        - 抗體經腸道吸收（出生後 16-24 小時內腸壁通透性高）
+        - 抗體與幼貓 A 型紅血球表面抗原結合
+        - 引起補體活化與紅血球溶解（血管內溶血）及吞噬破壞（血管外溶血）
+    - name: 犬（罕見機制）
+      examples:
+        - 母犬先前因輸血或胎盤出血而對 DEA 1 抗原致敏化
+        - 產生抗 DEA 1 同種抗體並分泌至初乳
+        - DEA 1 陽性幼犬攝取初乳後發生溶血
+    - name: 風險因素
+      examples:
+        - 未進行繁殖前血型配對
+        - B 型比例高的貓品種（British Shorthair、Devon Rex 等）
+        - 母犬先前有輸血史（犬）
+        - 初乳攝取在出生後 24 小時內（腸壁通透期）
+
+clinicalSigns:
+  early:
+    - 出生後 12-24 小時內（攝取初乳後）出現症狀
+    - 吸吮意願下降或拒絕哺乳
+    - 精神沉鬱
+    - 深色尿液（褐色/紅棕色，血紅素尿）
+  progressive:
+    - 嚴重黃疸（24-48 小時內明顯）
+    - 黏膜蒼白
+    - 呼吸急促
+    - 心搏過速
+    - 虛弱無力
+    - 尾端壞死（尾尖壞死，為貓 NI 特徵性表現）
+  late:
+    - 嚴重貧血（PCV < 10%）
+    - DIC（瀰漫性血管內凝血）
+    - 急性腎損傷（血紅素腎病）
+    - 多器官衰竭
+    - 死亡（可在 24-72 小時內發生）
+
+diagnosis:
+  primaryTests:
+    - name: 母貓與幼貓血型測定
+      notes: "B 型母貓 + A 型幼貓的組合即確認高風險。血型卡片測試可快速完成。繁殖前應常規檢測所有種貓血型。"
+    - name: PCV/血紅素測定
+      notes: "急速下降的 PCV 證實溶血。正常新生幼貓出生時 PCV 約 35%，NI 可在數小時內降至 < 15%。"
+  imaging:
+    - name: 腹部超音波
+      notes: "可見脾腫大（血管外溶血）。排除其他先天性異常。"
+    - name: 無特異性影像學變化
+      notes: "NI 主要依靠血液學與血型檢測診斷。"
+  additional:
+    - 血液抹片：球狀紅血球、紅血球凝集
+    - "直接 Coombs' test：陽性（新生兒紅血球表面有母源抗體）"
+    - 血紅素尿確認（離心後上清液仍呈紅色）
+    - 膽紅素升高（以非結合型為主）
+    - 鑑別診斷：敗血症、CHV-1（犬）、FPV（貓）、先天性缺陷
+
+treatment:
+  principles:
+    - 立即停止哺乳（阻斷母源抗體攝取）為最關鍵步驟
+    - 支持性照護維持幼犬貓存活
+    - 嚴重貧血需輸血
+    - 預防永遠優於治療
+  general:
+    - "立即停止哺乳：將幼貓從母貓身邊移開，出生後至少 24-72 小時內禁止哺乳（待腸壁通透性關閉）"
+    - "替代餵食：使用代乳品（kitten milk replacer）管餵或瓶餵，每 2-3 小時一次"
+    - "輸血（嚴重貧血 PCV < 12%）：使用洗滌紅血球（washed RBCs）或 B 型全血（相容於母源抗體環境）"
+    - "體溫維持：保溫箱 30-32°C（新生兒無法自行調節體溫）"
+    - "低血糖預防：12.5% dextrose 1-2 mL PO q2-4h 或適時管餵"
+    - "脫水矯正：溫熱皮下輸液或骨髓內輸液"
+    - "DIC 處理：新鮮冷凍血漿 6-10 mL/kg IV"
+    - "急性腎損傷：靜脈輸液維持腎臟灌流"
+    - "繁殖前預防（最重要）：所有種貓繁殖前測血型，避免 B 型母貓 × A 型公貓配對"
+    - "已知高風險窩：出生後立即隔離幼貓 24-72 小時，以代乳品人工哺育或以 A 型乳母代哺"
+
+prognosis: 未診斷與未治療的 NI 死亡率極高（接近 100%）。若在症狀出現前即預防性隔離（已知高風險配對），幼貓存活率良好。輕度溶血（早期停止哺乳）預後佳。嚴重溶血伴 DIC 或腎衰竭者預後差。尾端壞死在存活幼貓為永久性損傷但不影響存活。繁殖前血型篩檢可完全預防此病。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Neonatal isoerythrolysis in cats: an update"
+    url: https://pubmed.ncbi.nlm.nih.gov/15209454/
+    type: review
+    pmid: "15209454"
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "Blood types and feline neonatal isoerythrolysis"
+    url: https://pubmed.ncbi.nlm.nih.gov/17223366/
+    type: review
+    pmid: "17223366"
+  - sourceOrg: Veterinary Clinics of North America Small Animal Practice
+    title: "Feline blood groups and transfusion medicine"
+    url: https://pubmed.ncbi.nlm.nih.gov/23561457/
+    type: review
+    pmid: "23561457"
+
+pubmedQueries:
+  - query: '"neonatal isoerythrolysis" AND (cat OR feline OR kitten) AND ("blood type" OR "transfusion")'
+    frequency: monthly
+  - query: '"neonatal isoerythrolysis" AND (dog OR cat) AND ("prevention" OR "treatment")'
+    frequency: monthly

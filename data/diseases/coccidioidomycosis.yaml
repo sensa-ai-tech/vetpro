@@ -1,0 +1,122 @@
+slug: coccidioidomycosis
+nameEn: Coccidioidomycosis
+nameZh: 球黴菌症
+bodySystem: infectious
+description: 球黴菌症是由雙相型真菌 Coccidioides immitis 或 C. posadasii 引起的全身性黴菌感染，又稱「山谷熱」。病原體存在於美國西南部及中南美洲乾旱地區的土壤中，動物吸入關節孢子後於肺部形成球體並引起肉芽腫性炎症。犬隻最易感染，骨骼病變為其特徵性表現。
+
+aliases:
+  - { alias: 谷熱, language: zh }
+  - { alias: 山谷熱, language: zh }
+  - { alias: Valley Fever, language: en }
+  - { alias: San Joaquin Valley Fever, language: en }
+  - { alias: Desert Rheumatism, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬隻為最易感染的家畜，流行區的犬隻血清陽性率可達 28-70%。Boxer、Doberman Pinscher 及其他大型犬品種似有較高感受性。好發於美國亞利桑那州、加州南部及德州。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓隻感染較犬少見，約為犬的五分之一。皮膚病變為貓最常見的表現。
+
+etiology:
+  categories:
+    - name: 病原體
+      examples:
+        - Coccidioides immitis（主要分布於加州聖乾金谷）
+        - Coccidioides posadasii（分布於美國西南部其他地區及中南美洲）
+    - name: 傳播途徑
+      examples:
+        - 吸入土壤中的關節孢子（arthroconidia，主要途徑）
+        - 皮膚傷口直接接種（罕見）
+        - 不會動物間直接傳播
+    - name: 風險因子
+      examples:
+        - 居住於流行地區（亞利桑那、加州南部、德州西部、新墨西哥）
+        - 大型犬品種
+        - 戶外活動及挖掘行為
+        - 雨季後乾燥期（孢子散播增加）
+        - 免疫抑制狀態
+
+clinicalSigns:
+  early:
+    - 咳嗽（乾咳為主）
+    - 發熱（間歇性或持續性）
+    - 食慾下降
+    - 精神沉鬱
+    - 體重減輕
+  progressive:
+    - 跛行（骨骼病變，好發長骨及椎體）
+    - 關節腫脹
+    - 皮膚結節、潰瘍或排膿性竇道
+    - 周邊淋巴結腫大
+    - 前葡萄膜炎
+    - 持續性低度發熱
+  late:
+    - 呼吸衰竭（瀰漫性肺炎）
+    - 脊椎骨髓炎致後肢癱瘓
+    - 中樞神經系統感染（腦膜炎）
+    - 心包膜炎
+    - 全身性瀰漫性感染
+    - 腎衰竭
+
+diagnosis:
+  primaryTests:
+    - name: 血清學檢測（AGID / ELISA）
+      notes: "瓊脂凝膠免疫擴散試驗（AGID）為標準血清學方法。IgM 抗體（TP 管沉澱素）提示急性感染，IgG 抗體（CF 補體結合）力價與疾病嚴重度相關。ELISA 敏感度較高但特異性較低。"
+    - name: 細胞學檢查
+      notes: "從病灶抽吸液或組織壓片觀察，可見直徑 20-200 μm 的大型球體（spherules）內含內孢子（endospores）。此為特徵性病理發現。"
+    - name: 組織病理學
+      notes: "活體切片可見化膿性至肉芽腫性炎症反應，以 PAS 或 GMS 染色可見球體與內孢子。"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "可見肺門淋巴結腫大、瀰漫性間質至結節狀浸潤。胸腔積液偶爾出現。約 65% 犬隻有放射學肺部病變。"
+    - name: 骨骼 X 光
+      notes: "骨溶解性及增生性混合病變，好發於長骨、椎體及扁平骨。骨膜反應明顯。骨骼病變為 coccidioidomycosis 的特徵表現。"
+  additional:
+    - 全血球計數：嗜中性球增多、單核球增多、輕度貧血
+    - 血液生化：高球蛋白血症、低白蛋白血症、ALP 升高
+    - 真菌培養：高度危險，需於 BSL-3 實驗室操作，不建議常規進行
+    - 關節液分析：混合性炎症反應，可能見到球體
+
+treatment:
+  principles:
+    - 長期抗真菌治療為基石，療程通常 6-12 個月以上
+    - 骨骼病變需更長療程，可能終身服藥
+    - Fluconazole 為犬首選口服抗真菌藥物
+    - 監測血清學力價評估治療反應
+  general:
+    - "Fluconazole 5-10 mg/kg PO q12h（犬首選，CNS 穿透力佳）"
+    - "替代方案：Itraconazole 5 mg/kg PO q12h"
+    - "替代方案：Ketoconazole 5-10 mg/kg PO q12h（較便宜但肝毒性較高）"
+    - "嚴重病例初始：Amphotericin B lipid complex 1 mg/kg IV 每週 3 次"
+    - "骨骼病變：療程至少 12 個月，部分需終身治療"
+    - "前葡萄膜炎：局部 Prednisolone acetate 1% q6-8h + Atropine 1% q12-24h"
+    - "疼痛管理：Gabapentin 5-10 mg/kg PO q8-12h 或 NSAIDs（骨骼疼痛）"
+    - "監測 AGID 力價評估治療反應，力價下降提示改善"
+
+prognosis: 僅有肺部病變且早期治療者預後良好，治癒率約 60-90%。瀰漫性感染（尤其骨骼受侵犯）預後謹慎至不良，約 20-30% 需終身抗真菌治療以防復發。中樞神經系統感染預後不良。血清學力價 ≥ 1:16 為不良預後因子。貓隻治療反應與犬相似。
+
+guidelineRefs:
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Coccidioidomycosis in dogs: 195 cases (1986-2005)"
+    url: https://pubmed.ncbi.nlm.nih.gov/17199435/
+    type: consensus
+    pmid: "17199435"
+  - sourceOrg: Mycopathologia
+    title: "Coccidioidomycosis in animals"
+    url: https://pubmed.ncbi.nlm.nih.gov/23553296/
+    type: review
+    pmid: "23553296"
+  - sourceOrg: Veterinary Pathology
+    title: "Coccidioidomycosis in 48 cats: a retrospective study (1984-1993)"
+    url: https://pubmed.ncbi.nlm.nih.gov/8578650/
+    type: consensus
+    pmid: "8578650"
+pubmedQueries:
+  - query: '"coccidioidomycosis" AND (dog OR canine) AND ("treatment" OR "fluconazole")'
+    frequency: monthly
+  - query: '"Coccidioides" AND (veterinary OR dog OR cat) AND ("diagnosis" OR "serology")'
+    frequency: monthly

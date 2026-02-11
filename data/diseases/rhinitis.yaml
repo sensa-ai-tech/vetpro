@@ -1,0 +1,144 @@
+slug: rhinitis
+nameEn: Rhinitis
+nameZh: 鼻炎
+bodySystem: respiratory
+description: 鼻腔黏膜的炎症性疾病，可由感染性 (病毒、細菌、黴菌)、過敏性、異物或腫瘤等多種原因引起。為犬貓鼻分泌物及噴嚏的最常見原因。慢性鼻炎需系統性鑑別診斷排除根本病因。
+
+aliases:
+  - { alias: Nasal Inflammation, language: en }
+  - { alias: Chronic Rhinitis, language: en }
+  - { alias: Lymphoplasmacytic Rhinitis, language: en }
+  - { alias: 慢性鼻炎, language: zh }
+  - { alias: 淋巴漿細胞性鼻炎, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 急性鼻炎常見於幼犬 (病毒性)。慢性淋巴漿細胞性鼻炎為犬最常見的慢性鼻炎類型。需排除鼻腔腫瘤、黴菌感染及異物。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓上呼吸道感染 (FHV-1、FCV) 為最常見急性原因。慢性鼻炎常繼發於病毒感染後的鼻甲骨永久損傷。鼻咽息肉需列入鑑別。
+
+etiology:
+  categories:
+    - name: 感染性
+      examples:
+        - 病毒：貓疱疹病毒 (FHV-1)、貓杯狀病毒 (FCV)、犬瘟熱 (CDV)、犬流感
+        - 細菌：繼發性細菌感染 (Bordetella、Pasteurella、Mycoplasma)
+        - 黴菌：Aspergillus fumigatus (犬)、Cryptococcus neoformans (貓)
+    - name: 異物
+      examples:
+        - 草芒 (foxtail awn) — 犬常見
+        - 植物碎片
+        - 食物逆流至鼻腔
+    - name: 過敏/免疫性
+      examples:
+        - 淋巴漿細胞性鼻炎 (犬最常見慢性鼻炎)
+        - 過敏性鼻炎
+        - 嗜酸性鼻炎
+    - name: 腫瘤 (需排除)
+      examples:
+        - 鼻腔腺癌/鱗狀細胞癌 (老年犬)
+        - 淋巴瘤 (貓)
+        - 纖維肉瘤
+    - name: 其他
+      examples:
+        - 齒根膿瘍 (口鼻廔管)
+        - 先天性 (裂顎)
+        - 鼻腔蟎 (Pneumonyssoides caninum)
+
+clinicalSigns:
+  early:
+    - 噴嚏
+    - 鼻分泌物 (漿液性)
+    - 鼻塞 (打鼾)
+    - 偶發反向噴嚏 (reverse sneezing)
+  progressive:
+    - 鼻分泌物轉為黏膿性或血性
+    - 由單側轉為雙側
+    - 反覆或持續鼻出血
+    - 食慾下降 (嗅覺喪失)
+    - 面部搔抓
+  late:
+    - 面部變形/腫脹 (腫瘤或嚴重黴菌感染)
+    - 眼睛分泌物增加 (鼻淚管受累)
+    - 嚴重鼻出血
+    - 口腔硬顎隆起 (腫瘤侵犯)
+    - 眼球突出 (腫瘤或黴菌眼眶侵犯)
+
+diagnosis:
+  primaryTests:
+    - name: 鼻腔 CT
+      notes: "慢性鼻炎最重要的影像。評估鼻甲骨破壞 (黴菌/腫瘤)、軟組織腫塊、篩板完整性。CT 引導切片定位"
+    - name: 鼻腔內視鏡 (Rhinoscopy)
+      notes: "前向 (anterograde) + 後向 (retrograde) 鼻腔鏡。直視黏膜狀態、取切片、移除異物。慢性鼻炎診斷必做"
+    - name: 組織病理學 (鼻腔切片)
+      notes: "區分淋巴漿細胞性鼻炎、黴菌感染、腫瘤。多處取樣提高診斷率"
+  imaging:
+    - name: CT (首選)
+      notes: "取代傳統 X 光。評估骨質破壞、腫塊範圍及額竇/眼眶侵犯"
+    - name: 頭部 X 光
+      notes: "僅基本篩檢。敏感度遠不如 CT"
+    - name: 口腔檢查 + 齒科 X 光
+      notes: "排除齒根膿瘍及口鼻廔管"
+  additional:
+    - 鼻分泌物細胞學 (初步篩檢)
+    - 黴菌培養及血清學 (Aspergillus AGID、Cryptococcus 抗原)
+    - FIV/FeLV 檢測 (貓)
+    - CBC/生化
+    - 凝血功能 (持續鼻出血時)
+    - 鼻腔灌洗液培養
+
+treatment:
+  principles:
+    - 治療根本原因為核心策略
+    - 感染性鼻炎以抗菌/抗病毒/抗黴菌為主
+    - 慢性淋巴漿細胞性鼻炎可能需要長期抗炎治療
+    - 異物需內視鏡移除
+  medications:
+    - name: Doxycycline
+      dose: "5-10 mg/kg PO BID × 4-6 週"
+      notes: 細菌性/Mycoplasma 鼻炎一線。抗炎作用亦有助
+    - name: Azithromycin
+      dose: "5-10 mg/kg PO SID × 3 天，後隔日 × 12 天"
+      notes: 替代 doxycycline。尤其慢性鼻竇炎有免疫調節作用
+    - name: Famciclovir (貓)
+      dose: "90 mg/kg PO BID"
+      notes: 貓疱疹病毒 (FHV-1) 相關鼻炎。減輕急性發作嚴重程度
+    - name: Piroxicam
+      dose: "犬 0.3 mg/kg PO SID"
+      notes: 淋巴漿細胞性鼻炎。抗發炎+部分抗腫瘤作用。腎臟及消化道副作用需監測
+  general:
+    - 鼻腔沖洗 (saline flush — 鎮靜下)
+    - 霧化治療 (saline nebulization) 促進分泌物排出
+    - 環境濕度管理
+    - 慢性淋巴漿細胞性鼻炎：NSAIDs (piroxicam) 或低劑量 doxycycline 長期
+    - 異物鼻腔內視鏡移除
+    - 齒根膿瘍拔牙及口鼻廔管修補
+    - 腫瘤轉介放射線治療或化療
+
+prognosis: 急性感染性鼻炎多數自限或治療後痊癒。慢性淋巴漿細胞性鼻炎為長期管理疾病，可控制症狀但難以根治。黴菌性鼻炎經局部灌注治療成功率高。鼻腔腫瘤 (腺癌) 放射線治療中位存活約 12-18 個月。貓 FHV-1 相關慢性鼻炎為終身反覆性。異物移除後預後極佳。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Chronic rhinitis in the dog and cat: a review of 42 cases"
+    url: https://pubmed.ncbi.nlm.nih.gov/16231710/
+    type: research
+    pmid: "16231710"
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "Feline upper respiratory disease: herpesvirus-1 and calicivirus - ABCD guidelines"
+    url: https://pubmed.ncbi.nlm.nih.gov/19481033/
+    type: guideline
+    pmid: "19481033"
+  - sourceOrg: Veterinary Clinics of North America Small Animal Practice
+    title: "Chronic nasal disease in the dog and cat: a systematic and evidence-based approach"
+    url: https://pubmed.ncbi.nlm.nih.gov/24766696/
+    type: review
+    pmid: "24766696"
+pubmedQueries:
+  - query: '"chronic rhinitis" AND (dog OR canine OR cat OR feline) AND ("diagnosis" OR "rhinoscopy" OR "CT")'
+    frequency: monthly
+  - query: '"lymphoplasmacytic rhinitis" AND (dog OR canine) AND ("treatment" OR "outcome")'
+    frequency: monthly

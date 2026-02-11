@@ -1,0 +1,138 @@
+slug: urinary-tract-infection
+nameEn: Urinary Tract Infection
+nameZh: 泌尿道感染
+bodySystem: renal
+description: 細菌定植於泌尿道（通常為膀胱）引起的感染性疾病，犬常見，貓年輕時罕見但老年貓較多。需區分單純性與複雜性感染以決定治療策略。
+
+aliases:
+  - { alias: UTI, language: en }
+  - { alias: Bacterial Cystitis, language: en }
+  - { alias: 細菌性膀胱炎, language: zh }
+  - { alias: 尿道感染, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 母犬盛行率約 14%。公犬較少見。E. coli 為最常見致病菌（約 40-50%）。年齡、絕育狀態、體型與品種均為風險因子。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 年輕貓 UTI 罕見 (<2%)。10 歲以上貓盛行率顯著升高。常與 CKD、糖尿病、甲亢等合併存在。無症狀菌尿 (subclinical bacteriuria) 在老年貓常見。
+
+etiology:
+  categories:
+    - name: 革蘭氏陰性菌 (最常見)
+      examples:
+        - Escherichia coli (40-50%)
+        - Proteus mirabilis
+        - Klebsiella pneumoniae
+        - Pseudomonas aeruginosa (抗藥性高)
+        - Enterobacter spp.
+    - name: 革蘭氏陽性菌
+      examples:
+        - Staphylococcus pseudintermedius
+        - Enterococcus spp.
+        - Streptococcus spp.
+    - name: 促發因素
+      examples:
+        - 解剖異常（外陰內陷、異位輸尿管）
+        - 內分泌疾病（糖尿病、HAC）
+        - 免疫抑制（化療、類固醇）
+        - 尿路結石
+        - 腫瘤（TCC）
+        - 長期留置尿管
+        - 尿液稀釋（CKD、甲亢）
+    - name: 混合感染
+      examples:
+        - 約 20-25% UTI 為多重菌株感染
+        - 複雜性 UTI 多重菌株比例更高
+
+pathophysiology: 致病菌多自會陰/生殖道逆行進入尿道與膀胱。正常防禦機制包括正常排尿沖刷、膀胱黏膜 GAG 層屏障、尿液高滲透壓與極端 pH、局部 IgA 免疫與上皮細胞脫落。當這些防禦機制被破壞時（解剖異常、免疫抑制、尿液稀釋），細菌得以定植並增殖。E. coli 的致病性黏附因子 (P fimbriae、Type 1 fimbriae) 使其能附著於尿路上皮。細菌引發炎症反應（嗜中性球浸潤、黏膜水腫、充血），產生膿尿、血尿與排尿症狀。Proteus 等尿素酶陽性菌分解尿素，鹼化尿液促進磷酸銨鎂 (struvite) 結石形成。
+
+clinicalSigns:
+  early:
+    - 頻尿 (pollakiuria)
+    - 排尿困難/排尿疼痛 (dysuria/stranguria)
+    - 血尿 (hematuria)
+    - 尿液混濁或異味
+  progressive:
+    - 不適當排尿 (periuria，在不該尿的地方尿)
+    - 舔舐外陰部
+    - 排尿後滴尿
+    - 下腹不適（膀胱觸診敏感）
+  late:
+    - 發燒（上行感染/腎盂腎炎）
+    - 食慾下降、嗜睡（全身性感染）
+    - 腰痛（腎盂腎炎）
+    - 部分犬貓可完全無症狀（subclinical bacteriuria）
+
+diagnosis:
+  primaryTests:
+    - name: 尿液培養 + 藥敏試驗 (C&S)
+      notes: "金標準。膀胱穿刺 (cystocentesis) 採樣最佳。>10³ CFU/mL (穿刺) 為陽性。首次單純性 UTI 可考慮經驗性治療，但複雜性/復發性必須培養"
+    - name: 尿液分析
+      notes: "膿尿 (WBC >5/HPF)、菌尿、血尿、蛋白尿。比重評估。pH (鹼性尿 + Proteus → struvite 風險)。尿液試紙亞硝酸鹽對犬貓不可靠"
+    - name: 尿沉渣顯微鏡
+      notes: "WBC、RBC、細菌 (桿菌/球菌)、結晶、圓柱體 (casts 提示上泌尿道受累)"
+  imaging:
+    - name: 腹部超音波
+      notes: "膀胱壁增厚。結石偵測。腎盂擴張（上行感染時）。膀胱腫瘤排除"
+    - name: 腹部 X 光
+      notes: "不透射結石偵測 (struvite, CaOx)。腎臟大小"
+  additional:
+    - 血液生化（排除糖尿病、CKD、甲亢等促發因素）
+    - 內分泌篩檢（復發性 UTI — LDDS、T4、fructosamine）
+    - 結石分析（若有結石排出或手術取出）
+    - 影像學排除解剖異常（復發性 UTI）
+
+treatment:
+  principles:
+    - 區分單純性 vs 複雜性 UTI
+    - 單純性首次 UTI 可短療程經驗性治療
+    - 複雜性/復發性必須依培養藥敏結果選藥
+    - 找出並矯正促發因素為預防復發關鍵
+  medications:
+    - name: Amoxicillin-Clavulanate
+      dose: "12.5-25 mg/kg PO BID"
+      notes: 單純性 UTI 經驗性首選。良好尿液濃度。涵蓋多數常見致病菌
+    - name: Trimethoprim-Sulfonamide
+      dose: "15-30 mg/kg PO BID"
+      notes: 替代經驗性選擇。注意磺胺藥副作用（KCS、肝毒性、骨髓抑制）。Doberman 避免使用（多型性關節炎風險）
+    - name: Enrofloxacin
+      dose: "犬 10-20 mg/kg PO SID"
+      notes: 保留給抗藥菌株或腎盂腎炎使用。避免作為經驗性首選（抗生素管理 stewardship）。貓 5 mg/kg SID（視網膜毒性）
+    - name: Nitrofurantoin
+      dose: "4.4 mg/kg PO TID"
+      notes: 僅用於下泌尿道感染（尿液濃縮型藥物，不適用腎盂腎炎）。對多重抗藥菌有效。GI 副作用
+  general:
+    - 單純性 UTI 療程 3-5 天（ISCAID 2019 指引）
+    - 複雜性 UTI 療程 7-14 天
+    - 腎盂腎炎療程 4-6 週
+    - 停藥後 5-7 天追蹤培養（確認治癒）
+    - 復發性 UTI 定義：6 個月內 ≥3 次或 12 個月內 ≥4 次
+    - 復發性 UTI 需完整促發因素評估
+    - 無症狀菌尿 (subclinical bacteriuria) 通常不需治療（除非即將進行泌尿道手術或有免疫抑制）
+    - 增加飲水量
+
+prognosis: 單純性 UTI 經適當抗生素治療預後極佳，治癒率 >90%。複雜性 UTI 預後取決於能否控制潛在促發因素。未矯正促發因素的復發率高。多重抗藥菌 (MDR) 感染治療選擇有限，預後較差。無症狀菌尿在多數情況下不影響預後。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "International Society for Companion Animal Infectious Diseases (ISCAID) guidelines for the diagnosis and management of bacterial urinary tract infections in dogs and cats."
+    url: https://pubmed.ncbi.nlm.nih.gov/30515172/
+    type: guideline
+    pmid: "30515172"
+  - sourceOrg: Veterinary Microbiology
+    title: "Antimicrobial resistance patterns of bacteria causing urinary tract infections in dogs and cats in Portugal."
+    url: https://pubmed.ncbi.nlm.nih.gov/32192780/
+    type: research
+    pmid: "32192780"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Subclinical bacteriuria in cats: prevalence, findings on contemporaneous urinalyses and clinical risk factors."
+    url: https://pubmed.ncbi.nlm.nih.gov/31601143/
+    type: research
+    pmid: "31601143"
+pubmedQueries:
+  - query: '"urinary tract infection" AND (dog OR canine OR cat OR feline) AND ("antimicrobial" OR "ISCAID" OR "resistance")'
+    frequency: monthly

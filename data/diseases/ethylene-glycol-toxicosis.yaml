@@ -1,0 +1,141 @@
+slug: ethylene-glycol-toxicosis
+nameEn: Ethylene Glycol Toxicosis
+nameZh: 乙二醇中毒
+bodySystem: toxicology
+description: 攝入乙二醇（汽車防凍液的主要成分）後經代謝產生有毒代謝物（乙醇醛、乙醛酸、草酸），導致嚴重代謝性酸中毒與急性腎小管壞死。甜味吸引犬貓攝入，為最致命的小動物中毒之一。
+
+aliases:
+  - { alias: 防凍液中毒, language: zh }
+  - { alias: 乙二醇毒性, language: zh }
+  - { alias: Antifreeze Poisoning, language: en }
+  - { alias: EG Toxicosis, language: en }
+  - { alias: Ethylene Glycol Poisoning, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 乙二醇嗜口性佳（甜味），犬常自願攝入洩漏的防凍液。致死劑量低（犬約 4.4-6.6 mL/kg undiluted antifreeze）。未治療死亡率極高。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓致死劑量更低（約 1.5 mL/kg），經毛髮沾染後舔毛即可攝入致死量。貓的預後通常比犬更差。
+
+etiology:
+  categories:
+    - name: 毒物來源
+      examples:
+        - 汽車防凍液/冷卻液（含 95% 以上乙二醇）
+        - 液壓煞車液
+        - 工業用溶劑
+        - 某些除冰劑
+        - 太陽能集熱器液
+    - name: 毒性劑量
+      examples:
+        - "犬最低致死量：約 4.4-6.6 mL/kg（未稀釋防凍液）"
+        - "貓最低致死量：約 1.5 mL/kg（未稀釋防凍液）"
+        - 極少量即可致命（一隻 4 kg 貓僅需約 6 mL）
+    - name: 毒性機制（三階段）
+      examples:
+        - 第一階段 (0.5-12 hr)：乙二醇本身造成中樞神經抑制（類似酒醉）
+        - 第二階段 (12-24 hr)：代謝物乙醇醛、乙醛酸造成嚴重代謝性酸中毒
+        - 第三階段 (24-72 hr)：草酸鈣結晶沉積於腎小管→急性腎小管壞死
+
+clinicalSigns:
+  early:
+    - 類似酒醉的步態不穩 (ataxia)，攝入後 30 分鐘至 12 小時
+    - 嘔吐
+    - 多飲多尿 (PU/PD)
+    - 嗜睡或躁動
+    - 呈現類似乙醇中毒的中樞神經抑制
+  progressive:
+    - 心搏過速
+    - 呼吸急促（代償性酸中毒所致）
+    - 脫水
+    - 低體溫
+    - 嘔吐持續
+    - 短暫假性好轉期（攝入後 12-24 小時症狀可能暫時減輕）
+  late:
+    - 嚴重寡尿至無尿（攝入後 24-72 小時）
+    - 嚴重代謝性酸中毒（高陰離子間隙）
+    - 低血鈣（草酸鈣結晶消耗鈣離子）
+    - 腎臟腫大與疼痛
+    - 口腔潰瘍（尿毒症）
+    - 癲癇發作
+    - 昏迷與死亡
+
+diagnosis:
+  primaryTests:
+    - name: 乙二醇快速檢測
+      notes: "商業檢測試紙 (EGT test kit) 可在攝入後 1-12 小時內偵測。犬敏感度約 96%。注意：propylene glycol 可造成偽陽性"
+    - name: 尿液鏡檢
+      notes: "偏光顯微鏡下可見草酸鈣一水合物結晶（啞鈴形或信封形）。攝入後 3-6 小時（貓）或 6-8 小時（犬）可見。高度特異性"
+    - name: 血氣分析
+      notes: "嚴重代謝性酸中毒（pH <7.2）、高陰離子間隙 (>25 mEq/L)、高滲透壓間隙"
+  imaging:
+    - name: 腹部超音波
+      notes: "腎臟皮質迴音增強（草酸鈣結晶沉積）、腎臟腫大。高度特徵性表現"
+    - name: 腹部 X 光
+      notes: "腎臟腫大"
+  additional:
+    - 血清滲透壓（早期升高，滲透壓間隙 >10 mOsm/kg）
+    - BUN/creatinine（攝入後 24-72 小時開始升高）
+    - 電解質（低血鈣、高血鉀）
+    - 尿液分析（等張尿或低比重尿、蛋白尿、糖尿、管型）
+    - 血清鈣（低血鈣，草酸鈣消耗）
+    - 乙二醇血清濃度（部分實驗室可測，但結果通常來不及指導即時治療）
+
+treatment:
+  principles:
+    - 時間是關鍵——越早治療預後越好
+    - Fomepizole 為首選解毒劑（阻斷乙二醇代謝）
+    - 矯正代謝性酸中毒
+    - 積極輸液維護腎功能
+    - 一旦出現無尿性腎衰竭，預後極差
+  medications:
+    - name: Fomepizole (4-methylpyrazole, 4-MP)
+      dose: "犬：20 mg/kg IV loading dose，後 15 mg/kg IV 於 12 hr 與 24 hr，10 mg/kg IV 於 36 hr"
+      notes: "首選解毒劑。競爭性抑制 alcohol dehydrogenase，阻止乙二醇代謝為有毒代謝物。犬效果極佳。須在腎損傷發生前使用（犬攝入後 8-12 小時內）"
+    - name: Fomepizole（貓劑量）
+      dose: "貓：125 mg/kg IV loading dose，後 31.25 mg/kg IV q12h × 3 次"
+      notes: 貓需要比犬高得多的劑量。4-MP 貓許可證資料有限，但為目前推薦。須在攝入後 3 小時內開始
+    - name: Ethanol (20%)
+      dose: "犬：5.5 mL/kg IV q4h × 5 次，後 q6h × 4 次。貓：5 mL/kg IV q6h × 5 次"
+      notes: Fomepizole 不可得時的替代。同樣競爭性抑制 alcohol dehydrogenase。副作用較多（中樞神經抑制、低血糖、脫水加重）。需密切監測
+    - name: Sodium bicarbonate
+      dose: "1-2 mEq/kg IV 緩慢給予，依血氣結果調整"
+      notes: 矯正嚴重代謝性酸中毒（pH <7.1-7.2）
+  general:
+    - 催吐（攝入後 1-2 小時內且無症狀時）
+    - 積極 IV 輸液治療（2-3 倍維持量，維持尿量 >2 mL/kg/hr）
+    - 矯正低血鈣 (10% calcium gluconate 0.5-1 mL/kg IV 緩慢給予，ECG 監測)
+    - 監測尿量（導尿管放置）
+    - 血氣分析每 4-6 小時追蹤
+    - 腎功能每 12-24 小時追蹤
+    - 發展為無尿性腎衰竭考慮血液透析
+    - 住院監測至少 48-72 小時
+
+emergencyNotes: 乙二醇中毒為最緊急的小動物中毒之一。犬須在攝入後 8-12 小時內開始 fomepizole，貓須在 3 小時內。延遲治療使腎損傷不可逆。一旦出現無尿（草酸鈣結晶已沉積腎小管），即使透析預後亦極差。疑似暴露即應開始治療，不需等待確認。
+
+prognosis: 攝入後 5 小時內（犬）或 3 小時內（貓）開始 fomepizole 治療預後良好至極佳。延遲超過 8-12 小時（犬）或 6 小時（貓）預後差。出現寡尿/無尿者即使透析死亡率仍 >50%。未治療者死亡率接近 100%。預後與治療開始的時間直接相關。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Ethylene glycol intoxication in dogs and cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/16740317/
+    type: review
+    pmid: "16740317"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Fomepizole for the treatment of ethylene glycol poisoning in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/9436071/
+    type: research
+    pmid: "9436071"
+  - sourceOrg: American Journal of Veterinary Research
+    title: "Fomepizole for treatment of ethylene glycol intoxication in cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/11131581/
+    type: research
+    pmid: "11131581"
+
+pubmedQueries:
+  - query: '"ethylene glycol" AND (dog OR cat OR canine OR feline) AND ("toxicosis" OR "fomepizole" OR "antifreeze" OR "nephrotoxicity")'
+    frequency: monthly

@@ -1,0 +1,136 @@
+slug: esophageal-stricture
+nameEn: Esophageal Stricture
+nameZh: 食道狹窄
+bodySystem: gastrointestinal
+description: 食道管腔因纖維化疤痕收縮而異常狹窄，導致食物通過困難。最常見原因為麻醉相關的胃食道逆流造成化學性食道炎後的疤痕性狹窄。反覆吐出未消化食物為典型表現。
+
+aliases:
+  - { alias: Esophageal Stenosis, language: en }
+  - { alias: Benign Esophageal Stricture, language: en }
+  - { alias: 食道狹窄症, language: zh }
+  - { alias: 食道疤痕性狹窄, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 不常見但臨床重要。最常見原因為全身麻醉後胃食道逆流造成的食道炎。好發部位為食道遠端 1/3。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 發生率與犬相當。麻醉後食道炎為最常見原因。貓隻給予口服 doxycycline 膠囊未配水亦可造成藥物性食道炎與狹窄。
+
+etiology:
+  categories:
+    - name: 麻醉相關（最常見）
+      examples:
+        - 全身麻醉期間胃食道逆流 → 化學性食道炎 → 疤痕狹窄
+        - 風險因子：麻醉時間長、頭低腳高體位、腹腔手術
+        - 通常在麻醉後 1-3 週出現症狀
+    - name: 化學性/藥物性
+      examples:
+        - Doxycycline 膠囊滯留食道（貓，未配水吞服）
+        - Clindamycin 膠囊
+        - 腐蝕性物質誤食
+        - 嚴重持續性胃食道逆流
+    - name: 異物/外傷
+      examples:
+        - 食道異物（骨頭、魚鈎）造成黏膜損傷
+        - 食道手術後吻合處狹窄
+        - 食道鏡檢查時醫源性損傷（罕見）
+    - name: 腫瘤性
+      examples:
+        - 食道腫瘤（鱗狀上皮細胞癌、平滑肌瘤）
+        - 縱隔腫瘤外壓
+        - Spirocerca lupi 肉芽腫（流行區域）
+
+clinicalSigns:
+  early:
+    - 吞嚥後數分鐘至數小時吐出未消化食物 (regurgitation)
+    - 固體食物比液體食物更易引起症狀
+    - 吞嚥困難 (dysphagia)
+    - 流涎增加
+  progressive:
+    - 進食頻率增加但體重持續下降
+    - 反覆吐出加劇
+    - 進食時不適或抗拒進食
+    - 吞嚥疼痛 (odynophagia)
+    - 營養不良
+  late:
+    - 嚴重消瘦與脫水
+    - 吸入性肺炎（反覆逆流導致）
+    - 食道近端擴張（狹窄上方）
+    - 完全無法進食固體食物
+
+diagnosis:
+  primaryTests:
+    - name: 食道鋇劑造影
+      notes: "口服液態鋇劑（或鋇劑混合食物）X 光追蹤。可見鋇劑通過狹窄處時管腔明顯縮小，近端食道可見擴張。定位狹窄位置與數量"
+    - name: 食道內視鏡
+      notes: "金標準。直接觀察狹窄程度、數量與位置。可同時行球囊擴張治療。評估黏膜狀態排除腫瘤"
+    - name: 胸腔 X 光
+      notes: "可見食道近端擴張（含氣體或食物）、狹窄部位。評估是否合併吸入性肺炎"
+  imaging:
+    - name: 食道鋇劑造影
+      notes: "首選篩檢。可識別狹窄位置、數量及嚴重程度。注意避免吸入鋇劑"
+    - name: 胸腔 X 光
+      notes: "評估肺部是否有吸入性肺炎徵象（右中肺葉最常受影響）"
+  additional:
+    - CBC、生化（評估營養狀態、感染指標）
+    - 食道內視鏡切片（排除腫瘤性狹窄）
+    - 麻醉紀錄回顧（確認是否有近期麻醉史）
+    - CT（複雜或多發性狹窄時評估）
+
+treatment:
+  principles:
+    - 球囊擴張術為首選治療
+    - 通常需要多次擴張（間隔 1-2 週）
+    - 併用抗逆流藥物與食道保護
+    - 吸入性肺炎需優先處理
+  medications:
+    - name: Omeprazole
+      dose: "1-2 mg/kg PO BID"
+      notes: 質子幫浦抑制劑，減少胃酸反流對食道黏膜的持續損傷
+    - name: Sucralfate
+      dose: "犬 0.5-1 g PO TID；貓 0.25 g PO TID"
+      notes: 食道黏膜保護劑，形成保護膜覆蓋受損黏膜
+    - name: Prednisolone
+      dose: "0.5-1 mg/kg PO BID × 2-3 週"
+      notes: 球囊擴張後使用，抑制纖維化與疤痕再形成。有助減少再狹窄
+    - name: Mitomycin C（局部塗抹）
+      dose: "局部塗抹 0.4 mg/mL 溶液於擴張後狹窄處 × 2-5 分鐘"
+      notes: 抗纖維化藥物，內視鏡下局部應用於頑固性狹窄。減少纖維母細胞增生
+  general:
+    - 內視鏡球囊擴張術（balloon dilation）：漸進式擴張，每次增加管徑不超過原管徑的 3 倍（rule of three 避免穿孔）
+    - 通常需 2-5 次擴張療程，間隔 7-14 天
+    - 擴張後進食軟食或流質飲食
+    - 高卡路里流質/泥狀飲食（嚴重狹窄時）
+    - 餵食後保持站立姿勢 15-20 分鐘
+    - 吸入性肺炎治療：廣效抗生素（Amoxicillin-Clavulanate 12.5-25 mg/kg PO BID）
+    - 食道放置支架（stent）：頑固性狹窄的替代方案（併發症率較高）
+    - 手術切除吻合：僅用於極頑固的短節段狹窄
+
+prognosis: 經球囊擴張治療，約 70-88% 的犬貓可達到良好至優良的長期結果。單一狹窄預後優於多發性狹窄。早期治療（症狀出現後 1-2 週內開始擴張）預後較佳。頑固性狹窄可能需要 5 次以上擴張。併發吸入性肺炎會增加死亡風險。腫瘤性狹窄預後取決於腫瘤類型。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Balloon dilation of benign esophageal strictures in dogs and cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/15715589/
+    type: research
+    pmid: "15715589"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Esophageal strictures in cats and dogs: results of balloon dilation in 43 cases"
+    url: https://pubmed.ncbi.nlm.nih.gov/16379210/
+    type: research
+    pmid: "16379210"
+  - sourceOrg: Veterinary Surgery
+    title: "Use of mitomycin C for treatment of recurrent esophageal strictures in dogs and cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/30411804/
+    type: research
+    pmid: "30411804"
+
+pubmedQueries:
+  - query: '"esophageal stricture" AND (dog OR cat) AND ("balloon dilation" OR "bougienage" OR "treatment")'
+    frequency: monthly
+  - query: '"esophageal stricture" AND (canine OR feline) AND ("anesthesia" OR "reflux" OR "outcome")'
+    frequency: monthly

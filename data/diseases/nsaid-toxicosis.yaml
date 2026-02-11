@@ -1,0 +1,140 @@
+slug: nsaid-toxicosis
+nameEn: NSAID Toxicosis
+nameZh: NSAID 中毒
+bodySystem: toxicology
+description: 非類固醇抗炎藥（NSAIDs）過量或不當使用導致的中毒，主要造成消化道潰瘍、急性腎損傷與肝毒性。犬貓攝入人用 NSAID（如 ibuprofen、naproxen）為常見急診。
+
+aliases:
+  - { alias: 非類固醇抗炎藥中毒, language: zh }
+  - { alias: NSAID 毒性, language: zh }
+  - { alias: Ibuprofen Toxicosis, language: en }
+  - { alias: Naproxen Toxicosis, language: en }
+  - { alias: NSAID Poisoning, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬因嗜口性佳常意外攝入人用 NSAID（糖衣 ibuprofen 錠劑）。Ibuprofen 為犬最常見的 NSAID 中毒原因。犬對 NSAID 消化道毒性敏感。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓缺乏 glucuronidation 能力，NSAID 代謝極慢，半衰期顯著延長。極低劑量即可造成嚴重毒性。貓禁用大部分人用 NSAID。
+
+etiology:
+  categories:
+    - name: 常見毒物來源
+      examples:
+        - Ibuprofen（人用，犬最常見中毒來源）
+        - Naproxen（人用）
+        - Aspirin（過量使用）
+        - Meloxicam（獸醫用，過量或貓反覆給予）
+        - Carprofen（獸醫用，過量）
+        - Diclofenac（人用）
+    - name: 毒性劑量（Ibuprofen，犬）
+      examples:
+        - "消化道症狀：>25 mg/kg"
+        - "腎毒性：>100 mg/kg"
+        - "中樞神經毒性：>400 mg/kg"
+        - "致死量：>600 mg/kg"
+    - name: 毒性機制
+      examples:
+        - 抑制 cyclooxygenase (COX-1/COX-2)
+        - COX-1 抑制導致消化道黏膜保護性前列腺素減少（潰瘍）
+        - COX-1 抑制減少腎臟前列腺素（腎血流量下降→急性腎損傷）
+        - 高劑量可直接造成肝細胞壞死
+        - 貓 glucuronidation 能力差，藥物蓄積
+
+clinicalSigns:
+  early:
+    - 嘔吐（常為首發症狀）
+    - 食慾下降
+    - 嗜睡
+    - 腹痛
+  progressive:
+    - 嘔血 (hematemesis) 或咖啡渣樣嘔吐物
+    - 黑便 (melena)
+    - 腹部壓痛
+    - 多飲多尿（腎損傷初期）
+    - 脫水
+  late:
+    - 急性腎衰竭（少尿/無尿）
+    - 消化道穿孔（腹膜炎徵兆）
+    - 癲癇發作（高劑量 ibuprofen）
+    - 肝衰竭
+    - 昏迷
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 病史確認
+      notes: "確認 NSAID 種類、攝入量 (mg/kg)、攝入時間。計算毒性劑量。包裝帶來有助確認成分與劑量"
+    - name: 腎功能指標
+      notes: "BUN、creatinine、SDMA 監測。可能在攝入後 12-24 小時開始升高"
+  imaging:
+    - name: 腹部 X 光
+      notes: "評估消化道穿孔（游離腹腔氣體）、腸阻塞"
+    - name: 腹部超音波
+      notes: "胃壁增厚、腎臟腫脹、腹腔積液（穿孔引起）"
+  additional:
+    - 肝功能 (ALT、ALP、bilirubin)
+    - 電解質（高血鉀與代謝性酸中毒見於腎衰竭）
+    - 糞便潛血
+    - 凝血功能（消化道出血或肝損傷）
+    - 尿液分析（管型、蛋白尿）
+    - 酸鹼/血氣分析
+
+treatment:
+  principles:
+    - 減少毒物吸收（催吐、活性炭）
+    - 保護消化道黏膜
+    - 維護腎功能
+    - 積極輸液治療
+  medications:
+    - name: Omeprazole
+      dose: "1-2 mg/kg PO 或 IV SID-BID"
+      notes: 質子幫浦抑制劑，降低胃酸分泌保護潰瘍。比 H2 blocker 更有效
+    - name: Sucralfate
+      dose: "犬：0.5-1 g PO TID；貓：0.25-0.5 g PO TID"
+      notes: 黏膜保護劑，在潰瘍表面形成保護屏障。與其他口服藥間隔 2 小時
+    - name: Misoprostol
+      dose: "2-5 μg/kg PO TID"
+      notes: 合成前列腺素 E1 類似物。對抗 NSAID 的前列腺素抑制效應。懷孕動物禁用（催產作用）
+    - name: Maropitant
+      dose: "1 mg/kg SC 或 IV SID"
+      notes: 止吐治療
+  general:
+    - 催吐（攝入後 1-2 小時內，患畜無症狀時）
+    - 活性炭 (1-2 g/kg PO，首次可加山梨醇)
+    - 積極 IV 輸液治療（維持腎臟灌流，初始 2-3 倍維持量）
+    - 監測尿量（目標 >2 mL/kg/hr）
+    - 止吐治療（嚴重嘔吐時）
+    - 消化道出血嚴重者可能需輸血
+    - 消化道穿孔需緊急手術
+    - 腎功能與消化道監測至少 48-72 小時
+    - 避免同時使用類固醇（加重消化道潰瘍風險）
+
+emergencyNotes: 大量攝入（犬 ibuprofen >100 mg/kg）為急症。立即催吐（攝入 <2 小時）。積極 IV 輸液保護腎臟。嘔血或黑便提示消化道潰瘍活動性出血。游離腹腔氣體提示穿孔需緊急手術。貓攝入任何劑量 ibuprofen 均應視為急症。
+
+prognosis: 輕度消化道症狀（<50 mg/kg ibuprofen 犬）經適當治療預後良好。腎損傷若及時積極輸液多可恢復。消化道穿孔需手術，預後謹慎。高劑量中樞神經毒性（>400 mg/kg）預後差。貓因代謝能力差，即使低劑量預後亦需謹慎評估。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Clinics of North America Small Animal Practice
+    title: "NSAID toxicosis in dogs and cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/22381180/
+    type: review
+    pmid: "22381180"
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Ibuprofen toxicosis in dogs, cats, and ferrets"
+    url: https://pubmed.ncbi.nlm.nih.gov/17316944/
+    type: review
+    pmid: "17316944"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Gastrointestinal tract perforation in dogs treated with NSAIDs"
+    url: https://pubmed.ncbi.nlm.nih.gov/15971260/
+    type: research
+    pmid: "15971260"
+
+pubmedQueries:
+  - query: '"NSAID" AND (dog OR cat OR canine OR feline) AND ("toxicosis" OR "poisoning" OR "ibuprofen" OR "gastrointestinal ulcer")'
+    frequency: monthly

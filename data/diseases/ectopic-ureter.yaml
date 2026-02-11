@@ -1,0 +1,124 @@
+slug: ectopic-ureter
+nameEn: Ectopic Ureter
+nameZh: 異位輸尿管
+bodySystem: renal
+description: 輸尿管未正確開口於膀胱三角區，而異位開口於尿道、前庭、陰道或子宮等位置的先天性泌尿道異常，為幼犬尿失禁最重要的先天性原因。
+
+aliases:
+  - { alias: Ureteral Ectopia, language: en }
+  - { alias: EU, language: en }
+  - { alias: 輸尿管異位, language: zh }
+  - { alias: 異位性輸尿管, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 母犬佔約 90% 以上。好發品種 — Siberian Husky、Labrador Retriever、Golden Retriever、Toy/Miniature Poodle、West Highland White Terrier、Fox Terrier、Skye Terrier。雙側約佔 20-50%。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓罕見。個案報告為主。臨床表現與犬相似。
+
+etiology:
+  categories:
+    - name: 壁內型 (Intramural，最常見)
+      examples:
+        - 輸尿管進入膀胱壁但在壁內隧道異常延伸，開口於膀胱頸或近端尿道
+        - 佔犬異位輸尿管約 95%
+        - CT 與膀胱鏡可準確分型
+    - name: 壁外型 (Extramural)
+      examples:
+        - 輸尿管完全繞過膀胱直接開口於尿道、陰道或前庭
+        - 較壁內型少見（約 5%）
+        - 通常需外科重建
+    - name: 合併異常
+      examples:
+        - 腎盂擴張/水腎（同側輸尿管排流不暢）
+        - 輸尿管膨大 (ureterocele)
+        - 腎發育不全
+        - 膀胱發育不全 (pelvic bladder)
+        - 尿道括約肌功能不全 (USMI)
+
+pathophysiology: 正常胚胎發育中，輸尿管芽 (ureteral bud) 自中腎管 (mesonephric duct) 分離後向頭側遷移至膀胱三角區。異位輸尿管的發育異常使輸尿管開口未能正確定位於膀胱三角區。壁內型中，輸尿管雖穿入膀胱壁但持續在黏膜下延伸至膀胱頸或尿道，使尿液直接進入膀胱頸以下區域，繞過正常儲尿機制。壁外型中，輸尿管完全未進入膀胱。兩者均導致尿液持續滴漏（括約肌以下開口）。長期異位輸尿管造成慢性泌尿道感染（開口處黏膜防禦減弱）。同側腎臟可能因慢性阻塞或發育不良而功能減損。
+
+clinicalSigns:
+  early:
+    - 自出生起持續性尿失禁（滴尿，尤其休息/睡覺時）
+    - 會陰部持續潮濕
+    - 尿灼傷（會陰/大腿內側皮膚炎）
+    - 正常自主排尿仍存在（膀胱功能正常時）
+  progressive:
+    - 反覆泌尿道感染
+    - 陰道分泌物
+    - 外陰舔舐過度
+    - 尿液異味
+  late:
+    - 慢性腎盂腎炎
+    - 水腎（嚴重阻塞型）
+    - 同側腎臟萎縮/功能喪失
+    - 絕育後尿失禁加重（雌激素下降）
+
+diagnosis:
+  primaryTests:
+    - name: CT 尿路攝影 (CT urography)
+      notes: "目前金標準。靜脈注射對比劑後連續掃描。準確偵測壁內 vs 壁外型。評估開口位置。偵測合併異常"
+    - name: 膀胱鏡 (Cystoscopy)
+      notes: "直視輸尿管開口位置。壁內型可同時以雷射矯正 (CLA)。評估尿道與前庭。母犬操作較易"
+    - name: 腹部超音波
+      notes: "輸尿管擴張與走向追蹤。腎盂擴張。腎臟大小與形態評估。但對異位輸尿管偵測率較 CT 低"
+  imaging:
+    - name: 排泄性尿路攝影 (IVP)
+      notes: "傳統方法。靜脈對比劑後連續 X 光。已多被 CT 取代。偵測率約 70-80%"
+    - name: 陰道鏡 (Vaginoscopy)
+      notes: "偵測開口於陰道/前庭的異位輸尿管口"
+  additional:
+    - 尿液培養（評估合併 UTI）
+    - BUN/Creatinine/SDMA（腎功能評估）
+    - 尿液分析
+    - 腎功能核醫掃描 (GFR scintigraphy — 評估各腎功能佔比)
+
+treatment:
+  principles:
+    - 壁內型首選膀胱鏡雷射消融 (CLA)
+    - 壁外型需外科重建 (neoureterostomy)
+    - 術後 USMI 可能仍需藥物控制
+    - 合併 UTI 需同時治療
+  medications:
+    - name: Phenylpropanolamine (PPA)
+      dose: "1-2 mg/kg PO BID-TID"
+      notes: α-adrenergic agonist。增加尿道括約肌張力。術後仍有尿失禁時使用。約 50% 術後犬需要 PPA
+    - name: Diethylstilbestrol (DES)
+      dose: "0.1-1.0 mg PO SID × 3-5 天，後維持每週 1 次"
+      notes: 雌激素補充增加尿道括約肌反應性。已絕育母犬使用。可與 PPA 合併
+    - name: Amoxicillin-Clavulanate
+      dose: "12.5-25 mg/kg PO BID"
+      notes: 合併 UTI 治療。依培養藥敏調整。手術/CLA 前後預防性使用
+  general:
+    - 膀胱鏡雷射消融 (Cystoscopic Laser Ablation, CLA) — 壁內型首選。微創。成功率約 47-77% 完全控制失禁。部分需多次
+    - 外科新輸尿管膀胱吻合術 (Neoureterostomy) — 壁外型或 CLA 失敗。傳統外科重建
+    - 嚴重腎臟功能喪失側可考慮腎輸尿管切除 (Nephroureterectomy) — 確認對側腎功能正常
+    - 術後尿失禁管理 — 約 40-65% 犬術後仍有不同程度尿失禁（USMI 合併存在）
+    - 定期尿培養追蹤
+
+prognosis: CLA 治療壁內型異位輸尿管約 47-77% 可完全控制尿失禁。外科 neoureterostomy 成功率相似。約 40-65% 犬術後仍有殘餘尿失禁（因合併 USMI），多數可用 PPA 控制。長期 UTI 復發風險存在。雙側異位合併嚴重腎發育不全者預後較差。總體而言，治療後生活品質顯著改善。
+
+guidelineRefs:
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Cystoscopic-guided laser ablation of ectopic ureters in female dogs: technique, results, and complications."
+    url: https://pubmed.ncbi.nlm.nih.gov/22394340/
+    type: research
+    pmid: "22394340"
+  - sourceOrg: Veterinary Surgery
+    title: "Ectopic ureters in dogs: clinical features, surgical techniques, and outcome."
+    url: https://pubmed.ncbi.nlm.nih.gov/15943594/
+    type: research
+    pmid: "15943594"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "CT findings in 44 dogs with ectopic ureters."
+    url: https://pubmed.ncbi.nlm.nih.gov/22092620/
+    type: research
+    pmid: "22092620"
+pubmedQueries:
+  - query: '"ectopic ureter" AND (dog OR canine) AND ("laser ablation" OR "cystoscopy" OR "surgery" OR "CT")'
+    frequency: monthly

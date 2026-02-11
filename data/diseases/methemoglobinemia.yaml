@@ -1,0 +1,132 @@
+slug: methemoglobinemia
+nameEn: Methemoglobinemia
+nameZh: 變性血紅素血症
+bodySystem: hematology
+description: 血液中變性血紅素（methemoglobin, MetHb）濃度異常升高的病理狀態。MetHb 中鐵離子被氧化為三價鐵（Fe³⁺），無法攜帶氧氣，導致功能性貧血與組織缺氧。常見原因為氧化性毒物暴露。
+
+aliases:
+  - { alias: MetHb 血症, language: zh }
+  - { alias: 高鐵血紅素血症, language: zh }
+  - { alias: MetHb, language: en }
+  - { alias: Methemoglobin Toxicosis, language: en }
+
+species:
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓對氧化性物質極度敏感，因貓血紅素含 8 個可氧化的 sulfhydryl groups（犬僅 2 個），且 MetHb 還原酶活性較低。Acetaminophen 為貓最常見原因。
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 犬較貓不易發生。常見原因包括 acetaminophen 高劑量、洋蔥/大蒜攝入、局部麻醉劑（benzocaine）暴露、萘（naphthalene，樟腦丸）。
+
+etiology:
+  categories:
+    - name: 藥物/化學物質
+      examples:
+        - Acetaminophen（貓：極低劑量即可致命 10 mg/kg；犬：>100 mg/kg）
+        - 局部麻醉劑（benzocaine、lidocaine 外用）
+        - Phenazopyridine
+        - Nitrite/nitrate（受汙染井水）
+    - name: 食物/植物
+      examples:
+        - 洋蔥、大蒜（Allium spp.，含 n-propyl disulfide 等有機硫化合物）
+        - 韭菜
+    - name: 環境毒物
+      examples:
+        - 萘 (naphthalene，樟腦丸)
+        - 鋅（penny 硬幣吞入）
+    - name: 遺傳性（罕見）
+      examples:
+        - 先天性 MetHb 還原酶 (NADH-cytochrome b5 reductase) 缺乏
+        - 已報告於部分犬種
+
+clinicalSigns:
+  early:
+    - 黏膜發紺呈巧克力棕色（非典型發紺）
+    - 嗜睡
+    - 呼吸急促
+    - 心搏過速
+  progressive:
+    - 嚴重呼吸困難
+    - 虛弱無力
+    - 運動不耐
+    - 嘔吐
+    - 臉部與四肢水腫（貓 acetaminophen 中毒特徵）
+  late:
+    - 昏迷
+    - 癲癇發作
+    - 嚴重組織缺氧
+    - Heinz body 溶血性貧血（氧化損傷紅血球）
+    - 肝壞死（acetaminophen）
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 血液外觀
+      notes: "抽取之血液呈巧克力棕色，暴露空氣後不轉為鮮紅色（正常血液暴露氧氣後變紅）。為快速初步判斷"
+    - name: MetHb 濃度（CO-oximetry）
+      notes: "金標準。正常 <3%。>10% 出現臨床症狀。>30% 嚴重缺氧。>50% 致命。脈搏血氧儀讀數不準確（會讀到約 85%）"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "排除其他發紺原因（肺水腫、胸腔積液）"
+  additional:
+    - CBC 與血液抹片（Heinz bodies、球狀紅血球、eccentrocytes）
+    - 肝功能指數 (ALT、ALP、bilirubin)——acetaminophen 可致肝壞死
+    - 腎功能
+    - 脈搏血氧儀（SpO2 讀數約 82-87% 且對氧療無反應為 MetHb 線索）
+    - 網狀紅血球計數
+
+treatment:
+  principles:
+    - 移除氧化性毒物來源
+    - Methylene blue 作為 MetHb 還原劑
+    - N-acetylcysteine 保護肝臟（acetaminophen 中毒）
+    - 氧氣支持
+    - 輸血（嚴重時）
+  medications:
+    - name: Methylene blue
+      dose: "犬：1-1.5 mg/kg IV 緩慢給予（1% 溶液）；可於 30 分鐘後重複一次"
+      notes: "MetHb >30% 時使用。貓使用需極度謹慎（1.5 mg/kg 單次），因貓紅血球對 methylene blue 本身敏感，過量可加重 Heinz body 形成。作用機制：作為電子載體加速 NADPH-MetHb 還原酶途徑"
+    - name: N-acetylcysteine (NAC)
+      dose: "140 mg/kg IV loading dose（以 5% 溶液緩慢 15-20 分鐘輸注），後 70 mg/kg IV q6h × 5-7 次"
+      notes: Acetaminophen 中毒必須使用。補充 glutathione 前驅物、保護肝臟。越早使用效果越好
+    - name: S-adenosylmethionine (SAMe)
+      dose: "20 mg/kg PO SID 空腹"
+      notes: 輔助肝保護與 glutathione 補充
+    - name: Ascorbic acid (Vitamin C)
+      dose: "30 mg/kg IV 或 PO"
+      notes: 可作為輔助還原劑，但效力遠不如 methylene blue
+  general:
+    - 催吐（若毒物攝入時間短且患畜穩定）
+    - 活性炭（1-2 g/kg PO，acetaminophen 攝入早期）
+    - 氧氣補充（鼻導管或氧氣籠）
+    - 嚴重貧血（PCV <15% 或 MetHb >50%）輸注 pRBC
+    - IV 輸液維持灌流
+    - 持續監測 MetHb 濃度直至 <10%
+    - 洋蔥中毒：Heinz body 形成後無特效治療，等待紅血球更新（數日至數週）
+
+emergencyNotes: MetHb >30% 為急症。立即 methylene blue 1 mg/kg IV 緩慢給予。同時氧氣補充。Acetaminophen 中毒立即開始 NAC。貓 methylene blue 用量不可超過 1.5 mg/kg（過量反而加重氧化損傷）。嚴重者需輸血。
+
+prognosis: 輕度至中度 MetHb（<30%）及時治療預後良好。Acetaminophen 中毒若於攝入 4 小時內開始 NAC 預後佳。合併嚴重肝壞死者預後謹慎至差。洋蔥中毒造成的 Heinz body 貧血通常需 1-3 週恢復。遺傳性 MetHb 還原酶缺乏需終身管理。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Acetaminophen toxicosis in dogs and cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/17316944/
+    type: review
+    pmid: "17316944"
+  - sourceOrg: Veterinary Clinics of North America Small Animal Practice
+    title: "Toxicology of oxidative stress in cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/16517793/
+    type: review
+    pmid: "16517793"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Heinz body anemia and methemoglobinemia from onion ingestion in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/15471770/
+    type: research
+    pmid: "15471770"
+
+pubmedQueries:
+  - query: '"methemoglobinemia" AND (dog OR cat OR canine OR feline) AND ("acetaminophen" OR "methylene blue" OR "oxidative")'
+    frequency: monthly

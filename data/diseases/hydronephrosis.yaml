@@ -1,0 +1,127 @@
+slug: hydronephrosis
+nameEn: Hydronephrosis
+nameZh: 腎水腫
+bodySystem: renal
+description: 因尿路阻塞導致腎盂與腎盞擴張積水，造成腎實質進行性萎縮與功能喪失。
+
+aliases:
+  - { alias: Renal Pelvis Dilation, language: en }
+  - { alias: Obstructive Uropathy, language: en }
+  - { alias: 水腎, language: zh }
+  - { alias: 腎盂積水, language: zh }
+
+species:
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 輸尿管結石 (草酸鈣) 為貓最常見原因，近年發病率持續上升。中老年貓好發。
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 犬較少單純輸尿管阻塞。可能原因包括異位輸尿管、輸尿管結石、腫瘤壓迫 (TCC) 或醫源性輸尿管結紮。
+
+etiology:
+  categories:
+    - name: 輸尿管阻塞
+      examples:
+        - 輸尿管結石 (貓以草酸鈣最常見)
+        - 乾燥凝固血塊
+        - 黏液栓塞 (subclinical pyelonephritis)
+        - 輸尿管狹窄
+    - name: 腫瘤性
+      examples:
+        - 移行細胞癌壓迫三角區
+        - 腎盂腫瘤
+        - 後腹腔淋巴瘤壓迫輸尿管
+    - name: 先天性
+      examples:
+        - 異位輸尿管
+        - 輸尿管膀胱接合處狹窄
+        - 輸尿管囊腫 (ureterocele)
+    - name: 醫源性
+      examples:
+        - 卵巢子宮切除術意外結紮輸尿管
+        - 膀胱手術後輸尿管損傷
+
+clinicalSigns:
+  early:
+    - 可能無明顯症狀 (單側腎水腫)
+    - 輕度腹痛
+    - 間歇性食慾下降
+  progressive:
+    - 嘔吐
+    - 嗜睡
+    - 體重減輕
+    - 腹部觸診可觸及腫大腎臟
+  late:
+    - 氮血症 (雙側阻塞或對側腎功能不全時)
+    - 尿毒症狀 (嘔吐、口腔潰瘍、痙攣)
+    - 無尿/少尿 (雙側完全阻塞)
+    - 敗血症 (合併腎盂腎炎)
+
+diagnosis:
+  primaryTests:
+    - name: 腹部超音波
+      notes: "首選檢查。腎盂擴張 >3 mm (貓)、>5 mm (犬) 提示腎水腫。可見輸尿管擴張與結石"
+    - name: BUN / Creatinine / SDMA
+      notes: "評估腎功能。單側腎水腫可能氮血症不明顯 (對側代償)"
+    - name: 尿液分析 + 尿液培養
+      notes: "評估感染。膿尿或細菌尿提示合併腎盂腎炎"
+  imaging:
+    - name: 腹部超音波
+      notes: "金標準篩檢。評估腎盂擴張程度、輸尿管結石、剩餘腎實質厚度"
+    - name: 腹部 X 光
+      notes: "放射線不透過結石可見。腎臟增大"
+    - name: CT / 順行性腎盂造影
+      notes: "術前規劃。精準定位阻塞點與評估輸尿管走向"
+  additional:
+    - 電解質 (K+ 升高常見於急性阻塞)
+    - CBC (白血球升高提示感染)
+    - 血壓測量
+    - GFR 測定 (核醫學，評估各腎功能比例)
+
+treatment:
+  principles:
+    - 解除阻塞為首要目標
+    - 單側腎水腫若對側腎功能正常，可選擇保守觀察或手術
+    - 雙側阻塞或合併氮血症需緊急介入
+    - 嚴重腎實質萎縮 (腎實質厚度 <2 mm) 恢復可能性低
+  medications:
+    - name: Mannitol
+      dose: "0.5-1 g/kg IV 緩慢推注"
+      notes: 阻塞解除後利尿，減少腎小管損傷。需先恢復水合狀態
+    - name: Amoxicillin-Clavulanate
+      dose: "12.5-25 mg/kg PO BID"
+      notes: 合併腎盂腎炎時經驗性抗生素，需依尿培養結果調整
+    - name: IV 等張晶體液
+      dose: "依脫水程度與電解質調整"
+      notes: 穩定血流動力學，矯正電解質異常。解除阻塞後注意阻塞後利尿 (post-obstructive diuresis)
+  general:
+    - 輸尿管支架置放 (ureteral stent)
+    - 皮下輸尿管旁路裝置 (SUB device，貓首選)
+    - 輸尿管切開取石 (ureterotomy)
+    - 輸尿管膀胱新吻合術 (ureteroneocystostomy)
+    - 腎臟切除 (單側嚴重腎水腫且對側腎功能正常)
+    - 阻塞解除後密切監測尿量與電解質
+
+prognosis: 取決於阻塞時間、單側/雙側、以及腎實質損傷程度。貓 SUB device 置放後中位存活約 498 天。早期介入 (阻塞 <1 週) 腎功能恢復機會較佳。長期阻塞 (>2-4 週) 腎功能恢復有限。合併腎盂腎炎或敗血症預後較差。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Outcome of cats with obstructive ureteral disease that received subcutaneous ureteral bypass device placement"
+    url: https://pubmed.ncbi.nlm.nih.gov/35758179/
+    type: research
+    pmid: "35758179"
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "Evaluation of outcomes for feline ureteral obstructions managed with ureteral stents or subcutaneous ureteral bypass devices"
+    url: https://pubmed.ncbi.nlm.nih.gov/34056959/
+    type: research
+    pmid: "34056959"
+  - sourceOrg: Veterinary Surgery
+    title: "Ureteral surgery in dogs and cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/33411362/
+    type: review
+    pmid: "33411362"
+pubmedQueries:
+  - query: '"hydronephrosis" AND (cat OR dog) AND ("ureteral obstruction" OR "SUB device" OR "stent")'
+    frequency: monthly

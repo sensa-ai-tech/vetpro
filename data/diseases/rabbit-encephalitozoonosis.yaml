@@ -1,0 +1,117 @@
+slug: rabbit-encephalitozoonosis
+nameEn: Rabbit Encephalitozoonosis
+nameZh: 兔腦包子蟲症
+bodySystem: exotic
+description: 由 Encephalitozoon cuniculi 微孢子蟲引起的兔常見慢性感染症，主要侵犯腎臟、腦部及水晶體，為家兔最常見的神經系統疾病原因之一。
+
+aliases:
+  - { alias: E. cuniculi 感染, language: zh }
+  - { alias: 兔腦炎微孢子蟲症, language: zh }
+  - { alias: 兔歪頭症, language: zh }
+  - { alias: E. cuniculi infection, language: en }
+  - { alias: Encephalitozoon cuniculi, language: en }
+  - { alias: EC, language: en }
+
+species:
+  - speciesCommon: rabbit
+    speciesScientific: Oryctolagus cuniculus
+    prevalence: common
+    notes: 血清盛行率可高達 50-80%。多數感染兔為無症狀帶原者，免疫抑制或緊迫時可能發病。垂直傳播與水平傳播 (經口攝入含孢子的尿液) 皆可發生。
+
+etiology:
+  categories:
+    - name: 寄生蟲性 (微孢子蟲)
+      examples:
+        - Encephalitozoon cuniculi (專性細胞內微孢子蟲)
+        - 經口攝入受汙染的孢子 (尿液為主要傳播途徑)
+        - 垂直傳播 (經胎盤感染)
+        - 孢子經血行散布至標的器官 (腎臟、腦部、水晶體)
+    - name: 風險因素
+      examples:
+        - 免疫抑制 (緊迫、併發疾病、類固醇使用)
+        - 幼兔 (垂直感染)
+        - 群養環境
+        - 衛生條件不佳
+
+clinicalSigns:
+  early:
+    - 輕微頭部傾斜 (head tilt)
+    - 間歇性平衡失調
+    - 後肢輕微無力
+    - 多尿/多飲 (腎臟受累)
+  progressive:
+    - 明顯前庭症狀 (頭部傾斜、眼球震顫、旋轉)
+    - 後肢輕癱至癱瘓
+    - 尿失禁
+    - 水晶體誘發性葡萄膜炎 (phacoclastic uveitis，單側白色水晶體團塊)
+    - 慢性腎病 (多尿、體重減輕)
+  late:
+    - 嚴重失衡無法站立或進食
+    - 持續性旋轉 (rolling)
+    - 腎衰竭
+    - 癲癇發作
+    - 嚴重脫水與惡病質
+
+diagnosis:
+  primaryTests:
+    - name: E. cuniculi 抗體力價 (IgG/IgM)
+      notes: "IgM 陽性提示活動性感染；IgG 陽性僅代表曾暴露。配對血清 (間隔 2-4 週) IgG 四倍上升有診斷意義。高血清盛行率使單次 IgG 陽性解讀困難"
+    - name: 尿液 PCR
+      notes: "偵測尿液中 E. cuniculi DNA。特異性高但敏感度中等 (間歇性排孢子)"
+    - name: CBC/生化
+      notes: "可見 BUN/Creatinine 升高 (腎臟受累)。白血球通常正常"
+  imaging:
+    - name: 頭部 MRI
+      notes: "腦部肉芽腫病變、腦幹或大腦白質異常信號。為評估神經症狀的首選影像學"
+    - name: 頭部 CT
+      notes: "敏感度不如 MRI，但可排除中耳/內耳疾病"
+  additional:
+    - 裂隙燈檢查 (水晶體內白色團塊，pathognomonic phacoclastic uveitis)
+    - 眼內壓測量 (排除續發性青光眼)
+    - 尿液分析 (等張尿、蛋白尿，腎小管功能異常)
+    - 組織病理學 (確定診斷，需活檢或屍檢：腎臟/腦部肉芽腫性炎症與孢子)
+
+treatment:
+  principles:
+    - 長期抗微孢子蟲藥物治療 (至少 28 天)
+    - 支持性照護與護理 (尤其前庭症狀嚴重者)
+    - 抗炎治療減輕免疫介導性損傷
+    - 水晶體受累時需眼科處理
+  medications:
+    - name: Fenbendazole
+      dose: "20 mg/kg PO SID，連續 28 天"
+      notes: 抗 E. cuniculi 首選藥物。可抑制微管蛋白聚合。安全性高
+    - name: Meloxicam
+      dose: "0.3-0.5 mg/kg PO/SC SID"
+      notes: NSAID 抗炎止痛。腎功能不全時需謹慎使用或降低劑量
+    - name: Dexamethasone (急性期)
+      dose: "0.1-0.2 mg/kg SC/IV，單次或短期"
+      notes: 僅用於嚴重急性前庭症狀初期減輕炎症反應。長期使用會加重免疫抑制
+    - name: Meclizine
+      dose: "2-12 mg/kg PO BID"
+      notes: 前庭抑制劑，減輕暈眩與噁心
+  general:
+    - 軟墊環境防止翻滾受傷 (毛巾捲固定)
+    - 輔助餵食 (無法自行進食者以針筒餵食草粉泥)
+    - 環境消毒 (1% 漂白水可殺滅孢子)
+    - 隔離患兔 (減少孢子排出汙染)
+    - 物理治療與復健 (慢性後肢無力者)
+    - 水晶體誘發性葡萄膜炎考慮水晶體乳化摘除術
+
+prognosis: 預後差異極大，取決於症狀嚴重程度與受累器官。輕度前庭症狀經治療後多數可改善，但殘留輕度頭部傾斜常見。嚴重旋轉或癱瘓病例預後謹慎。腎臟受累為慢性進展性。phacoclastic uveitis 手術預後良好。整體而言，約 50% 的神經症狀病例可獲臨床改善。
+
+guidelineRefs:
+  - sourceOrg: Journal of Exotic Pet Medicine
+    title: "Encephalitozoon cuniculi in pet rabbits: diagnosis and optimal management"
+    url: https://pubmed.ncbi.nlm.nih.gov/32487381/
+    type: review
+    pmid: "32487381"
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Neurologic Disease in Rabbits"
+    url: https://pubmed.ncbi.nlm.nih.gov/29655502/
+    type: review
+    pmid: "29655502"
+
+pubmedQueries:
+  - query: '"Encephalitozoon cuniculi" AND ("rabbit" OR "Oryctolagus") AND ("treatment" OR "diagnosis" OR "management")'
+    frequency: monthly

@@ -1,0 +1,122 @@
+slug: necrotizing-encephalitis
+nameEn: Necrotizing Encephalitis
+nameZh: 壞死性腦炎
+bodySystem: neurology
+description: 犬特發性非感染性腦炎，以腦實質壞死為特徵。包含壞死性腦膜腦炎 (NME/Pug Dog Encephalitis) 與壞死性白質腦炎 (NLE)，均屬 MUO 範疇。
+
+aliases:
+  - { alias: NME, language: en }
+  - { alias: NLE, language: en }
+  - { alias: Pug Dog Encephalitis, language: en }
+  - { alias: Necrotizing Meningoencephalitis, language: en }
+  - { alias: Necrotizing Leukoencephalitis, language: en }
+  - { alias: 壞死性腦膜腦炎, language: zh }
+  - { alias: 壞死性白質腦炎, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: "NME 好發品種：Pug、Maltese、Chihuahua、Shih Tzu、Papillon、French Bulldog。NLE 好發品種：Yorkshire Terrier、French Bulldog。通常幼至中年犬 (6 個月-7 歲)，好發 <4 歲。DLA class II 基因型與易感性相關。"
+
+etiology:
+  categories:
+    - name: 免疫介導性 (疑似)
+      examples:
+        - 自體免疫反應導致腦實質壞死
+        - DLA class II (犬白血球抗原) 基因多態性與易感性相關
+        - Pug 犬 DLA-DQB1*00103 等位基因為風險因子
+    - name: NME (壞死性腦膜腦炎)
+      examples:
+        - 主要累及大腦皮質灰質與軟腦膜
+        - 不對稱性壞死 (常從嗅腦或顳葉開始)
+        - 壞死區域伴隨單核球浸潤
+    - name: NLE (壞死性白質腦炎)
+      examples:
+        - 主要累及腦幹與大腦白質
+        - 白質內多灶性壞死
+        - 血管周圍淋巴球浸潤
+
+clinicalSigns:
+  early:
+    - 癲癇發作 (NME 最常見首發症狀)
+    - 視力異常 (皮質性失明)
+    - 行為改變 (前腦病灶)
+    - 嗜睡
+  progressive:
+    - 前腦症狀：轉圈行為、推牆行為 (head pressing)、意識改變
+    - 腦幹症狀 (NLE 較多)：頭部歪斜、眼球震顫、顱神經功能障礙
+    - 癲癇發作頻率與嚴重程度增加
+    - 運動失調
+  late:
+    - 叢集性癲癇或癲癇重積狀態
+    - 意識嚴重降低至昏迷
+    - 多灶性神經功能障礙
+    - 去大腦姿勢
+
+diagnosis:
+  primaryTests:
+    - name: MRI
+      notes: "NME：大腦皮質不對稱性 T2W/FLAIR 高信號，灰白質界面模糊，壞死區域 T1W 低信號。NLE：腦幹與皮質下白質多灶性 T2W 高信號"
+    - name: 腦脊髓液分析
+      notes: "單核球性細胞增多 (可顯著升高至 >100 cells/μL)，蛋白質升高。NME 的 CSF 細胞數通常高於 GME"
+    - name: 神經學檢查
+      notes: "前腦徵象為主 (NME)。多灶性徵象 (NLE)。急性至亞急性進展"
+  imaging:
+    - name: 腦部 MRI
+      notes: "首選影像。壞死區域特徵性表現有助於區分 NME/NLE 與 GME"
+  additional:
+    - 感染性疾病篩檢 (排除感染性腦炎)
+    - 腦脊髓液 PCR (CDV、Toxoplasma、Neospora)
+    - 抗膠質纖維酸性蛋白 (GFAP) 抗體 (NME 研究標記，尚未常規使用)
+    - 確定診斷需腦組織病理學
+
+treatment:
+  principles:
+    - 與 GME 類似，以免疫抑制治療為基礎
+    - NME 通常對治療反應較 GME 差
+    - 早期積極治療可改善短期預後
+    - 抗癲癇藥物控制癲癇發作為重要輔助
+  medications:
+    - name: Prednisolone
+      dose: "1-2 mg/kg PO BID (誘導)，逐步減量"
+      notes: 一線免疫抑制。NME 可能需要更高起始劑量
+    - name: Cytarabine (Ara-C)
+      dose: "50 mg/m² SC BID × 2 天，每 3-4 週"
+      notes: 與 prednisolone 聯合使用。穿越血腦屏障
+    - name: Mycophenolate mofetil
+      dose: "10-20 mg/kg PO BID"
+      notes: 二線免疫抑制劑。可替代或輔助 cytarabine
+    - name: Levetiracetam
+      dose: "20 mg/kg PO TID"
+      notes: 抗癲癇藥物。NME 常伴隨難治性癲癇
+    - name: Phenobarbital
+      dose: "2.5-3 mg/kg PO BID"
+      notes: 抗癲癇藥物。與 levetiracetam 可合併使用
+  general:
+    - 癲癇重積狀態急救 (Diazepam IV/IR、Midazolam IV/IM/IN)
+    - 顱內壓控制 (Mannitol)
+    - 支持療法 (輸液、營養支持)
+    - 定期神經學評估
+
+prognosis: 預後通常不佳。NME 中位存活約 1-6 個月，部分 Pug 犬可能在數週內快速惡化。NLE 預後略優於 NME，部分犬在治療下可存活 >12 個月。早期診斷與積極聯合免疫抑制可改善預後。難治性癲癇為主要致死原因之一。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Clinical presentation, MRI findings, and outcome in dogs with necrotizing meningoencephalitis"
+    url: https://pubmed.ncbi.nlm.nih.gov/17708392/
+    type: research
+    pmid: "17708392"
+  - sourceOrg: BMC Veterinary Research
+    title: "DLA class II haplotypes and risk of canine necrotizing meningoencephalitis in Pug dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/21044299/
+    type: research
+    pmid: "21044299"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Survival in dogs with meningoencephalomyelitis of unknown etiology receiving immunosuppressive protocols"
+    url: https://pubmed.ncbi.nlm.nih.gov/25929341/
+    type: research
+    pmid: "25929341"
+pubmedQueries:
+  - query: '"necrotizing meningoencephalitis" OR "necrotizing leukoencephalitis" AND dog AND ("treatment" OR "outcome")'
+    frequency: monthly

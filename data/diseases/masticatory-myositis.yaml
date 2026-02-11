@@ -1,0 +1,111 @@
+slug: masticatory-myositis
+nameEn: Masticatory Muscle Myositis
+nameZh: 咀嚼肌炎
+bodySystem: immunology
+description: 犬特有的免疫介導性炎症疾病，選擇性攻擊咀嚼肌群（顳肌、咬肌、翼狀肌）中的 Type 2M 肌纖維。急性期表現為咀嚼肌腫脹與開口疼痛，慢性期則出現肌肉萎縮與牙關緊閉。
+
+aliases:
+  - { alias: MMM, language: en }
+  - { alias: 咀嚼肌肌炎, language: zh }
+  - { alias: 嚼肌炎, language: zh }
+  - { alias: Masticatory Myositis, language: en }
+  - { alias: Eosinophilic Myositis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 大型犬好發，尤其 German Shepherd、Golden Retriever、Labrador Retriever、Cavalier King Charles Spaniel、Rottweiler。平均發病年齡約 3 歲，但各年齡皆可發生。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓極罕見，文獻僅有零星個案報告。貓咀嚼肌是否含 2M 纖維尚存爭議。
+
+etiology:
+  categories:
+    - name: 免疫病理機轉
+      examples:
+        - 自體抗體針對咀嚼肌特有的 Type 2M 肌纖維
+        - 2M 肌纖維僅存在於咀嚼肌群（與四肢肌肉不同）
+        - 免疫介導性攻擊導致肌纖維壞死與炎症浸潤
+        - 確切觸發因子不明
+    - name: 風險因子
+      examples:
+        - 品種遺傳易感性
+        - 可能與 MHC (主要組織相容性複合體) 相關
+        - 環境觸發因子不明
+
+clinicalSigns:
+  early:
+    - 咀嚼肌腫脹（顳肌、咬肌雙側對稱性腫大）
+    - 張口疼痛 (trismus)
+    - 不願進食或撿球
+    - 流涎
+  progressive:
+    - 眼球外突 (exophthalmos，因腫脹的翼狀肌推擠)
+    - 嚴重牙關緊閉 (麻醉下仍無法打開)
+    - 發燒
+    - 淋巴結腫大
+    - 漸進性肌肉萎縮
+  late:
+    - 嚴重咀嚼肌萎縮（顳肌凹陷，顴弓突出明顯）
+    - 纖維化導致永久性牙關緊閉
+    - 吞嚥困難
+    - 眼球內陷 (enophthalmos，肌肉萎縮後)
+    - 營養不良
+
+diagnosis:
+  primaryTests:
+    - name: 2M 抗體 ELISA
+      notes: "檢測抗 Type 2M 肌纖維抗體，敏感度約 85-90%，特異度高。為目前首選診斷方法 (UC San Diego CMMS 實驗室)"
+    - name: 咀嚼肌切片
+      notes: "病理特徵：淋巴球漿細胞性或嗜酸性球性浸潤、肌纖維壞死與再生、纖維化（慢性）。需在免疫抑制治療前採樣"
+  imaging:
+    - name: 頭部 MRI
+      notes: "急性期咀嚼肌信號增強（T2 高信號、顯影增強）。可排除腫瘤等其他病因"
+    - name: 頭部 CT
+      notes: "評估肌肉體積變化與排除骨性牙關緊閉"
+  additional:
+    - CK (肌酸激酶，急性期可升高，但非特異)
+    - CBC (嗜酸性球可能升高)
+    - 全身肌電圖 EMG (僅咀嚼肌出現自發性活動)
+
+treatment:
+  principles:
+    - 早期積極免疫抑制是關鍵
+    - 治療目標為恢復開口功能並防止纖維化
+    - 需長期治療，過早停藥易復發
+    - 慢性纖維化為不可逆，因此早期診斷極為重要
+  general:
+    - Prednisolone 2 mg/kg PO q12h 起始，持續 2-3 週
+    - 逐漸減量，每 2-3 週減 25%，持續至少 6 個月
+    - 維持劑量 (0.5-1 mg/kg q48h) 可能需持續 6-12 個月或更久
+    - 復發時回到有效抑制劑量重新開始
+    - Azathioprine 2 mg/kg PO q24h (類固醇節約劑，難治型或副作用嚴重時)
+    - Mycophenolate mofetil 10-20 mg/kg PO q12h (替代方案)
+    - 軟食或流質飲食 (急性期無法張口時)
+    - 嚴重牙關緊閉可能需麻醉下輕柔打開並開始物理治療
+    - 定期監測 CK 與 2M 抗體以評估治療反應
+
+prognosis: 急性期若及時開始免疫抑制治療，預後良好，多數犬可恢復正常開口功能。延誤治療導致纖維化者預後差，永久性牙關緊閉不可逆。約 25-30% 在類固醇減量過程中復發。需要長期用藥管理。大多數接受適當治療的犬可維持良好生活品質。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Masticatory muscle myositis: pathogenesis, diagnosis, and treatment"
+    url: https://pubmed.ncbi.nlm.nih.gov/15209441/
+    type: review
+    pmid: "15209441"
+  - sourceOrg: Neuromuscular Disorders
+    title: "Immune-mediated canine masticatory muscle myositis"
+    url: https://pubmed.ncbi.nlm.nih.gov/16005651/
+    type: review
+    pmid: "16005651"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Immunohistochemical identification of 2M fibers in canine masticatory muscle myositis"
+    url: https://pubmed.ncbi.nlm.nih.gov/1740729/
+    type: original-research
+    pmid: "1740729"
+
+pubmedQueries:
+  - query: '"masticatory myositis" OR "masticatory muscle myositis" AND (dog OR canine) AND ("treatment" OR "diagnosis")'
+    frequency: monthly

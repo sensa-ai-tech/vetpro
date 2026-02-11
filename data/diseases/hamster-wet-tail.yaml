@@ -1,0 +1,128 @@
+slug: hamster-wet-tail
+nameEn: Hamster Wet Tail
+nameZh: 倉鼠濕尾症
+bodySystem: exotic
+description: 倉鼠增殖性迴腸炎 (proliferative ileitis) 的俗稱，主要由 Lawsonia intracellularis 引起的急性嚴重腸炎，以會陰部及尾部被水樣糞便沾濕為特徵，為幼年敘利亞倉鼠 (黃金鼠) 致死率極高的疾病。
+
+aliases:
+  - { alias: 倉鼠增殖性迴腸炎, language: zh }
+  - { alias: 濕尾病, language: zh }
+  - { alias: 倉鼠腸炎, language: zh }
+  - { alias: Proliferative ileitis, language: en }
+  - { alias: Regional enteritis, language: en }
+  - { alias: Hamster enteritis, language: en }
+  - { alias: Transmissible ileal hyperplasia, language: en }
+
+species:
+  - speciesCommon: hamster
+    speciesScientific: Mesocricetus auratus
+    prevalence: common
+    notes: 主要影響敘利亞倉鼠 (黃金鼠)，3-8 週齡幼鼠最易感。侏儒倉鼠 (Phodopus spp.) 較少見但亦可發生。寵物店環境盛行率高。致死率可達 90% (未治療)。
+
+etiology:
+  categories:
+    - name: 感染性
+      examples:
+        - Lawsonia intracellularis (主要病原，專性細胞內細菌)
+        - Clostridium difficile (常見次要病原)
+        - Campylobacter jejuni (共感染)
+        - Escherichia coli (繼發感染)
+        - Cryptosporidium spp. (原蟲共感染)
+    - name: 風險因素
+      examples:
+        - 幼年 (3-8 週齡，尤其斷奶期)
+        - 緊迫 (斷奶、運輸、環境改變、擁擠)
+        - 衛生條件不佳
+        - 飲食突然改變
+        - 免疫系統未成熟
+        - 群養環境 (寵物店、繁殖場)
+
+clinicalSigns:
+  early:
+    - 軟便至水樣腹瀉
+    - 會陰部與尾基部潮濕 (典型「濕尾」外觀)
+    - 食慾減退
+    - 嗜睡
+    - 被毛蓬鬆雜亂
+  progressive:
+    - 嚴重水樣或黏液血性腹瀉
+    - 明顯脫水 (皮膚帳篷、眼睛凹陷)
+    - 腹部疼痛 (弓背、觸碰嚎叫)
+    - 肛門脫垂 (因持續腹瀉與裡急後重)
+    - 體重急速下降
+    - 刺激性皮膚炎 (會陰區)
+  late:
+    - 嚴重脫水與低體溫
+    - 敗血症
+    - 腸套疊
+    - 直腸脫出
+    - 肝臟壞死 (L. intracellularis 全身擴散)
+    - 休克與死亡 (病程可短至 24-48 小時)
+
+diagnosis:
+  primaryTests:
+    - name: 臨床表徵
+      notes: "幼年敘利亞倉鼠 + 急性水樣腹瀉 + 會陰沾濕 (濕尾) 即可高度臨床診斷。病程極快，常來不及等實驗室結果"
+    - name: 糞便直接抹片與浮游法
+      notes: "排除寄生蟲 (球蟲、隱孢子蟲、蠕蟲)。革蘭氏染色觀察細菌型態"
+    - name: PCR (Lawsonia intracellularis)
+      notes: "糞便或腸組織 PCR。確認 L. intracellularis 感染。多用於研究或屍檢確診"
+  imaging:
+    - name: 腹部 X 光
+      notes: "腸管擴張充液、腸壁增厚。排除腸套疊或腸阻塞"
+  additional:
+    - 糞便細菌培養 (L. intracellularis 為專性細胞內菌，常規培養不長)
+    - 組織病理學 (屍檢：迴腸增殖性病變、隱窩上皮增生、Warthin-Starry 銀染色見細胞內彎曲桿菌)
+    - 血糖監測 (低血糖常見於嚴重病例)
+
+treatment:
+  principles:
+    - 積極補液與電解質矯正 (最重要)
+    - 抗生素治療 (針對 L. intracellularis 與繼發菌)
+    - 保溫 (幼鼠極易低體溫)
+    - 營養支持
+    - 預後取決於早期積極介入
+  medications:
+    - name: Enrofloxacin
+      dose: "5-10 mg/kg PO BID"
+      notes: 廣效抗菌。對 L. intracellularis 有效。注意幼年動物軟骨毒性風險但危及生命時仍可使用
+    - name: Trimethoprim-Sulfamethoxazole
+      dose: "15-30 mg/kg PO BID"
+      notes: 替代抗生素選擇。對多數腸道病原有效
+    - name: Metronidazole
+      dose: "20 mg/kg PO BID"
+      notes: 抗厭氧菌與抗原蟲。對 C. difficile 有效
+    - name: 皮下輸液 (Lactated Ringer's 或 0.9% NaCl)
+      dose: "倉鼠體重 3-4% 的量 SC，每 8-12 小時"
+      notes: 小型嚙齒類靜脈通路困難，皮下輸液為主要補液途徑。嚴重脫水可骨髓內 (IO) 輸液
+    - name: Meloxicam
+      dose: "0.2-0.5 mg/kg PO/SC SID"
+      notes: 止痛 (腹部疼痛)。脫水時謹慎使用
+  general:
+    - 保溫 (維持環境溫度 28-30°C)
+    - 口服電解質補充液 (少量頻繁給予)
+    - 輔助餵食 (幼兒穀物泥、南瓜泥以注射器少量餵食)
+    - 維持血糖 (低血糖時口服葡萄糖溶液)
+    - 會陰區清潔乾燥 (避免刺激性皮膚炎)
+    - 肛門脫垂需復位並暫時荷包縫合
+    - 隔離患鼠 (傳染性高)
+    - 環境徹底消毒 (接觸過的籠具與用品)
+    - 益生菌可考慮作為輔助 (但證據有限)
+
+prognosis: 致死率極高，未治療近乎 100% 死亡。早期積極治療存活率約 20-50%。24 小時內出現嚴重脫水、低體溫或敗血症徵象預後極差。存活者可能發展為慢性腸炎或生長遲緩。預防 (減少緊迫、良好衛生、避免幼鼠斷奶過早) 至關重要。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Gastrointestinal Diseases of Hamsters"
+    url: https://pubmed.ncbi.nlm.nih.gov/24767746/
+    type: review
+    pmid: "24767746"
+  - sourceOrg: Lab Animal
+    title: "Proliferative ileitis in hamsters: pathogenesis and treatment"
+    url: https://pubmed.ncbi.nlm.nih.gov/10458822/
+    type: review
+    pmid: "10458822"
+
+pubmedQueries:
+  - query: '"hamster" AND ("wet tail" OR "proliferative ileitis" OR "Lawsonia intracellularis") AND ("treatment" OR "management")'
+    frequency: monthly

@@ -1,0 +1,134 @@
+slug: lymphangiectasia
+nameEn: Intestinal Lymphangiectasia
+nameZh: 淋巴管擴張症
+bodySystem: gastrointestinal
+description: 腸道淋巴管異常擴張導致富含蛋白質的淋巴液滲漏至腸腔，為犬隻蛋白流失性腸病 (PLE) 的重要病因。以低白蛋白血症、低球蛋白血症、低淋巴球血症及低膽固醇血症為特徵。
+
+aliases:
+  - { alias: IL, language: en }
+  - { alias: Protein-Losing Enteropathy, language: en }
+  - { alias: PLE, language: en }
+  - { alias: 腸淋巴管擴張, language: zh }
+  - { alias: 蛋白流失性腸病, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: Yorkshire Terrier 為最好發品種，其他好發品種包括 Soft-Coated Wheaten Terrier、Maltese、Shar-Pei、Rottweiler、Norwegian Lundehund。可為原發性或繼發於 IBD/淋巴瘤。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓隻罕見，多繼發於小腸淋巴瘤或嚴重 IBD。
+
+etiology:
+  categories:
+    - name: 原發性（先天性）
+      examples:
+        - 淋巴管先天發育異常
+        - 品種遺傳傾向（Yorkshire Terrier、Wheaten Terrier）
+        - Norwegian Lundehund 腸病綜合症
+    - name: 繼發性（後天性）
+      examples:
+        - 炎症性腸病 (IBD) 導致淋巴管阻塞
+        - 腸道淋巴瘤壓迫或浸潤淋巴管
+        - 右心衰竭導致中心靜脈壓升高
+        - 腸繫膜淋巴結病變
+        - 縮窄性心包炎
+    - name: 病理機制
+      examples:
+        - 淋巴管擴張 → 富含蛋白與脂肪的淋巴液滲入腸腔
+        - 白蛋白、球蛋白、淋巴球同時流失
+        - 脂溶性維生素（A、D、E、K）與鈣質吸收障礙
+        - 低蛋白血症導致膠體滲透壓下降 → 腹水/胸水/周邊水腫
+
+clinicalSigns:
+  early:
+    - 慢性間歇性軟便或下痢
+    - 輕度體重減輕
+    - 食慾可正常或稍減
+  progressive:
+    - 持續性下痢（脂肪便 steatorrhea）
+    - 明顯體重減輕
+    - 被毛品質變差
+    - 嘔吐
+    - 腹鳴增加
+  late:
+    - 腹水（低白蛋白血症所致）
+    - 胸水
+    - 四肢皮下水腫
+    - 嚴重消瘦與肌肉萎縮
+    - 血栓栓塞症（抗凝血酶 III 流失）
+    - 低鈣血症性抽搐
+
+diagnosis:
+  primaryTests:
+    - name: 血清白蛋白/球蛋白
+      notes: "低白蛋白血症（<2 g/dL）與低球蛋白血症同時出現為 PLE 特徵。白蛋白與球蛋白同降可與蛋白流失性腎病（PLN，僅白蛋白降低）區分"
+    - name: 內視鏡 + 組織病理
+      notes: "金標準。十二指腸黏膜白色粒狀或網狀突起（lipogranulomas）；組織學可見絨毛乳糜管與黏膜下淋巴管明顯擴張"
+    - name: 膽固醇
+      notes: "低膽固醇血症為淋巴管擴張的重要提示（乳糜微粒流失）"
+  imaging:
+    - name: 腹部超音波
+      notes: "腸壁黏膜層高回音條紋（hyperechoic mucosal striations）為特徵性發現；腸壁增厚；腹水；腸繫膜淋巴結腫大"
+  additional:
+    - CBC（淋巴球減少症 lymphopenia 為重要線索）
+    - 離子化鈣（常降低）
+    - 抗凝血酶 III（降低增加血栓風險）
+    - 糞便 α1-蛋白酶抑制劑（α1-PI）濃度（非侵入性 PLE 確認）
+    - Spec cPL（排除胰臟炎）
+    - 腹水分析（純漏出液或改良型漏出液，蛋白含量低）
+
+treatment:
+  principles:
+    - 超低脂飲食為治療核心
+    - 中鏈三酸甘油酯 (MCT) 可直接由門靜脈吸收，不經淋巴系統
+    - 繼發性需治療潛在病因（IBD 免疫抑制、淋巴瘤化療）
+    - 低白蛋白血症嚴重時需緊急支持治療
+  medications:
+    - name: Prednisolone
+      dose: "1-2 mg/kg PO BID × 2-4 週，之後逐漸減量"
+      notes: 合併 IBD 時為一線免疫抑制治療
+    - name: Chlorambucil
+      dose: "4-6 mg/m² PO 隔日"
+      notes: 類固醇反應不佳時加入。與 prednisolone 併用
+    - name: Mycophenolate Mofetil
+      dose: "10 mg/kg PO BID"
+      notes: 較新的免疫抑制替代選項，用於難治性 PLE
+    - name: Clopidogrel
+      dose: "1-2 mg/kg PO SID"
+      notes: 預防血栓栓塞。白蛋白 <1.5 g/dL 或抗凝血酶 III 降低時考慮
+  general:
+    - 超低脂飲食（脂肪 <15% DM，理想 <10% DM）
+    - MCT oil 補充（1 mL/kg/day 分次加入食物）
+    - 白蛋白 <1.5 g/dL：考慮輸注新鮮冷凍血漿或人血白蛋白（25% 溶液，2 mL/kg 慢速 IV）
+    - Cobalamin 補充（常吸收不良）
+    - 鈣與維生素 D 補充（低鈣血症）
+    - 腹水嚴重影響呼吸時可行腹腔穿刺引流
+    - 長期監測白蛋白、體重、糞便品質
+
+prognosis: 預後差異大，取決於病因與對治療的反應。原發性淋巴管擴張經適當飲食與免疫抑制管理，部分犬可長期控制（中位存活 1-2 年以上）。Yorkshire Terrier PLE 預後較差。白蛋白 <1.5 g/dL 為重要負面預後因子。繼發於淋巴瘤者預後不良。血栓栓塞為重要致死併發症。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Protein-losing enteropathy in Yorkshire Terriers: retrospective study"
+    url: https://pubmed.ncbi.nlm.nih.gov/20456098/
+    type: research
+    pmid: "20456098"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Ultrasonographic findings in dogs with protein-losing enteropathy"
+    url: https://pubmed.ncbi.nlm.nih.gov/17979554/
+    type: research
+    pmid: "17979554"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Intestinal lymphangiectasia in dogs: a retrospective study of 17 cases"
+    url: https://pubmed.ncbi.nlm.nih.gov/10563305/
+    type: research
+    pmid: "10563305"
+
+pubmedQueries:
+  - query: '"lymphangiectasia" AND (dog OR canine) AND ("protein-losing enteropathy" OR "treatment" OR "prognosis")'
+    frequency: monthly
+  - query: '"protein-losing enteropathy" AND (dog OR canine) AND ("diet" OR "immunosuppressive")'
+    frequency: monthly

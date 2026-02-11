@@ -1,0 +1,126 @@
+slug: vitamin-d-toxicosis
+nameEn: Vitamin D Toxicosis
+nameZh: 維生素D中毒
+bodySystem: metabolic
+description: 過量維生素 D（cholecalciferol）攝入或體內過度活化導致的高鈣血症與高磷血症。最常見原因為誤食含 cholecalciferol 的滅鼠劑或含過量維生素 D 的商業飼料。可造成嚴重的軟組織鈣化、急性腎損傷甚至死亡。
+
+aliases:
+  - { alias: 維生素D3中毒, language: zh }
+  - { alias: 膽鈣化醇中毒, language: zh }
+  - { alias: 高鈣血症（維生素D相關）, language: zh }
+  - { alias: Cholecalciferol Toxicosis, language: en }
+  - { alias: Vitamin D3 Poisoning, language: en }
+  - { alias: Hypervitaminosis D, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 犬最常見——因犬隻較常誤食滅鼠劑。Cholecalciferol 滅鼠劑中毒劑量犬約 0.5-3 mg/kg。犬對維生素 D 的敏感性高於貓。亦有商業飼料維生素 D 過量的群體中毒事件報告。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓較少見（較少接觸滅鼠劑）。可因外用含 calcipotriol/calcipotriene 的人用銀屑病藥膏經皮膚吸收或舔舐中毒。中毒劑量貓約 0.5 mg/kg。
+
+etiology:
+  categories:
+    - name: 外源性攝入
+      examples:
+        - Cholecalciferol（維生素 D3）滅鼠劑誤食（最常見原因）
+        - 含過量維生素 D 的商業寵物飼料（製造錯誤）
+        - 維生素 D 補充劑過量
+        - 外用 calcipotriol/calcipotriene 銀屑病藥膏（貓舔舐或皮膚吸收）
+    - name: 植物性來源
+      examples:
+        - Cestrum diurnum（日花夜香木）
+        - Solanum malacoxylon（含 1,25-dihydroxyvitamin D glycoside）
+        - Trisetum flavescens（黃三毛草）
+    - name: 病理機轉
+      examples:
+        - Cholecalciferol → 肝臟代謝為 25(OH)D3 → 腎臟轉化為 1,25(OH)2D3（活性型）
+        - 過量活性維生素 D → 腸道鈣磷吸收增加、骨骼鈣動員增加
+        - 高鈣血症 + 高磷血症 → 鈣磷乘積升高 → 軟組織礦質化
+        - 腎臟、胃黏膜、心肌、血管壁、肺臟的異營性鈣化
+
+clinicalSigns:
+  early:
+    - 食慾下降
+    - 嘔吐
+    - 多飲多尿（高鈣血症影響腎臟濃縮能力）
+    - 嗜睡
+    - 口渴
+  progressive:
+    - 持續嘔吐（可能血性嘔吐）
+    - 黑便或血便（胃腸道黏膜鈣化與壞死）
+    - 脫水
+    - 口臭（氮質血症）
+    - 少尿或無尿（急性腎損傷）
+    - 肌肉震顫
+  late:
+    - 急性腎衰竭（少尿或無尿）
+    - 心律不整（高鈣血症影響心肌傳導）
+    - 癲癇發作
+    - 軟組織廣泛鈣化（腎臟、心臟、肺臟、胃壁）
+    - 死亡（通常在攝入後 2-5 天，未治療時）
+
+diagnosis:
+  primaryTests:
+    - name: 血清鈣與離子鈣
+      notes: "高鈣血症為關鍵發現。總鈣 > 12 mg/dL（犬）或 > 11 mg/dL（貓）。離子鈣 > 1.4 mmol/L。鈣磷乘積 > 60-70 預後不良"
+    - name: 血清磷
+      notes: "高磷血症常見。與高鈣血症同時存在為維生素 D 中毒的特徵（與 PTH 相關性高鈣血症鑑別）"
+    - name: 腎指數（BUN、Creatinine、SDMA）
+      notes: "急性腎損傷時顯著升高。需連續監測以評估進展與治療反應"
+  imaging:
+    - name: 腹部 X 光
+      notes: "腎臟、胃壁、血管壁的礦質化（攝入後 2-4 天可見）。腎臟可見瀰漫性鈣化增白"
+    - name: 腹部超音波
+      notes: "腎臟皮質高迴音（腎臟鈣化）。胃壁高迴音帶。評估腎臟損傷程度"
+  additional:
+    - 25-hydroxyvitamin D 血清濃度（升高確認維生素 D 中毒，正常犬 24-86 ng/mL）
+    - PTH 測定（維生素 D 中毒時應被抑制，排除原發性副甲狀腺功能亢進）
+    - PTHrP（排除惡性腫瘤相關高鈣血症）
+    - 電解質（鉀、鎂、鈉）
+    - ECG（評估高鈣血症對心臟的影響——QT 間距縮短）
+    - 尿液分析（等張尿或稀釋尿、管型）
+
+treatment:
+  principles:
+    - 降低血鈣為治療核心
+    - 積極靜脈輸液促進鈣排泄
+    - 減少腸道鈣吸收
+    - 保護腎臟功能
+    - 攝入 72 小時內催吐/洗胃（若適用）
+  general:
+    - "急性攝入（<2-4 小時）：催吐（Apomorphine 0.03 mg/kg IV 犬；Dexmedetomidine 40 μg/m² IM 貓）+ 活性碳 1-2 g/kg PO"
+    - "積極靜脈輸液：0.9% NaCl 4-6 mL/kg/hr（促進鈣利尿，避免含鈣輸液）"
+    - "Furosemide 2-4 mg/kg IV q8-12h（促進鈣排泄，需先糾正脫水）"
+    - "Prednisolone 1-2 mg/kg PO/IV BID（減少腸道鈣吸收、減少骨骼鈣動員）"
+    - "Pamidronate 1.3-2 mg/kg IV 單次 2-4 小時輸注（雙磷酸鹽，抑制破骨細胞活性，嚴重高鈣血症首選）"
+    - "Calcitonin 4-6 IU/kg SC q8-12h（快速降鈣，但效果短暫，易產生耐受性）"
+    - "Aluminium hydroxide 30-90 mg/kg PO TID（腸道磷結合劑，降低血磷）"
+    - "低鈣低維生素 D 飲食"
+    - "連續監測離子鈣 q6-12h 直至穩定"
+    - "監測腎功能、電解質至少 2-4 週"
+
+prognosis: 預後取決於攝入劑量、就診時間與腎臟損傷程度。早期治療（攝入後 24 小時內）且腎功能未嚴重受損時預後良好至謹慎。已出現嚴重腎衰竭、鈣磷乘積 >70 或廣泛軟組織鈣化時預後不良。Cholecalciferol 的半衰期長（數週），需長期監測與治療。腎臟鈣化可能造成永久性慢性腎病。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Cholecalciferol rodenticide toxicosis in dogs: 58 cases"
+    url: https://pubmed.ncbi.nlm.nih.gov/21029297/
+    type: retrospective
+    pmid: "21029297"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Cholecalciferol toxicity in dogs: a retrospective study"
+    url: https://pubmed.ncbi.nlm.nih.gov/15900941/
+    type: retrospective
+    pmid: "15900941"
+  - sourceOrg: ASPCA Animal Poison Control Center
+    title: "Vitamin D toxicosis in dogs from commercially available pet food"
+    url: https://pubmed.ncbi.nlm.nih.gov/33030359/
+    type: retrospective
+    pmid: "33030359"
+pubmedQueries:
+  - query: '"vitamin D toxicosis" OR "cholecalciferol toxicosis" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "hypercalcemia")'
+    frequency: monthly

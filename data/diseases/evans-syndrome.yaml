@@ -1,0 +1,135 @@
+slug: evans-syndrome
+nameEn: Evans Syndrome
+nameZh: 乙凡氏症候群
+bodySystem: hematology
+description: 乙凡氏症候群是同時或依序發生免疫介導性溶血性貧血（IMHA）與免疫介導性血小板減少症（IMT）的嚴重自體免疫疾病。免疫系統同時產生抗紅血球及抗血小板抗體，導致溶血性貧血合併出血傾向。犬隻較貓常見，病情較單獨 IMHA 或 IMT 更嚴重，治療更困難，預後更差。
+
+aliases:
+  - { alias: 伊凡斯症候群, language: zh }
+  - { alias: 免疫介導性貧血合併血小板減少, language: zh }
+  - { alias: 併發IMHA及IMT, language: zh }
+  - { alias: Concurrent IMHA and IMT, language: en }
+  - { alias: Combined IMHA-ITP, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 約 15-30% 的 IMHA 犬隻同時併發 IMT（即 Evans syndrome）。好發品種與 IMHA 相似，包括 Cocker Spaniel、English Springer Spaniel、Poodle。中年母犬較多。預後較單獨 IMHA 或 IMT 顯著更差。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓隻 Evans syndrome 報告罕見。常與 FeLV 或 FIV 感染相關。診斷與犬相似但臨床經驗有限。
+
+etiology:
+  categories:
+    - name: 原發性（自體免疫）
+      examples:
+        - 特發性免疫失調，同時產生抗紅血球及抗血小板自體抗體
+        - 可能與系統性紅斑狼瘡（SLE）相關
+        - 抗體類型：IgG 及/或 IgM 針對紅血球及血小板表面抗原
+    - name: 繼發性
+      examples:
+        - 感染（Babesia、Ehrlichia、Anaplasma、Mycoplasma haemofelis）
+        - 腫瘤（淋巴瘤、血管肉瘤、白血病）
+        - 藥物（trimethoprim-sulfa、cephalosporins）
+        - 疫苗接種後（罕見）
+        - FeLV/FIV 感染（貓）
+    - name: 病理機制
+      examples:
+        - 抗紅血球抗體介導的溶血（血管外為主，脾臟巨噬細胞吞噬）
+        - 抗血小板抗體介導的血小板破壞（脾臟及肝臟）
+        - 補體活化可能加重溶血（血管內溶血）
+        - 骨髓可能同時受到免疫攻擊（巨核球及紅血球前驅細胞）
+
+clinicalSigns:
+  early:
+    - 急性虛弱與嗜睡
+    - 食慾下降
+    - 運動不耐
+    - 皮膚瘀斑或瘀點（血小板減少）
+    - 黏膜蒼白
+  progressive:
+    - 黃疸（溶血性）
+    - 心搏過速
+    - 深色尿液（血紅素尿）
+    - 鼻出血
+    - 黏膜瘀點
+    - 牙齦出血
+    - 脾腫大
+    - 發熱
+  late:
+    - 血栓栓塞（肺動脈栓塞為主要死因）
+    - 彌散性血管內凝血（DIC）
+    - 嚴重消化道出血（黑便、血便）
+    - 呼吸困難（貧血性缺氧或肺栓塞）
+    - 中樞神經系統出血
+    - 急性腎損傷（血紅素腎病）
+    - 多重器官衰竭
+
+diagnosis:
+  primaryTests:
+    - name: 全血球計數（CBC）
+      notes: "同時呈現再生性貧血（網狀紅血球增多）及嚴重血小板減少（< 30,000/μL）。球狀紅血球增多。PCV 常 < 20%。血小板常 < 10,000/μL。自動凝集試驗（saline agglutination test）常呈陽性。"
+    - name: 血液抹片
+      notes: "球狀紅血球、多染性紅血球（再生反應）、偶見紅血球碎片。血小板數量明顯減少。嗜中性球增多伴左移。偶見吞噬紅血球現象。"
+    - name: "Coombs' test（直接抗球蛋白試驗）"
+      notes: "陽性支持 IMHA 成分的診斷。配合血小板嚴重減少即支持 Evans syndrome 診斷。陰性不能完全排除（敏感度約 60-70%）。"
+  imaging:
+    - name: 腹部超音波
+      notes: "脾腫大常見。評估肝臟（排除血管肉瘤或其他腫瘤作為繼發原因）。可見膽囊壁水腫（非特異性）。"
+    - name: 胸腔 X 光
+      notes: "評估肺動脈栓塞徵象（肺血管截斷徵、局部缺血區域）。排除轉移性腫瘤。"
+  additional:
+    - 凝血功能：PT/aPTT（評估 DIC，D-dimer 升高、纖維蛋白原消耗）
+    - 血液生化：膽紅素升高、LDH 升高、BUN 升高（腎損傷時）
+    - 網狀紅血球計數：再生反應評估（骨髓同時受攻擊時可能為非再生性）
+    - 尿液分析：血紅素尿、膽紅素尿
+    - ANA 檢測：排除系統性紅斑狼瘡（SLE）
+    - PCR 排除感染性病因（Babesia、Ehrlichia、Anaplasma、Mycoplasma）
+    - 骨髓穿刺（難治性病例）：評估紅血球及巨核球前驅細胞
+    - 血型配對（輸血前必要）
+
+treatment:
+  principles:
+    - 積極免疫抑制治療為基石，需比單獨 IMHA 或 IMT 更高強度
+    - 穩定血液動力學（輸血）
+    - 預防血栓栓塞併發症（Evans syndrome 血栓風險極高）
+    - 排除繼發性原因
+  general:
+    - "Prednisolone 2 mg/kg PO q12h（初始高劑量免疫抑制）"
+    - "第二線免疫抑制劑（早期併用）：Mycophenolate mofetil 10 mg/kg PO q12h"
+    - "替代第二線：Azathioprine 2 mg/kg PO q24h（僅犬，貓禁用）"
+    - "替代第二線：Cyclosporine 5 mg/kg PO q12h"
+    - "危急出血：Human IV Immunoglobulin (hIVIG) 0.5-1 g/kg IV over 6-12 hr（阻斷 Fc 受體）"
+    - "輸血治療：PCV < 15% 或嚴重血液動力學不穩定時輸注濃縮紅血球"
+    - "血栓預防：Clopidogrel 2 mg/kg PO q24h（犬）或低劑量 Aspirin 0.5 mg/kg PO q24h"
+    - "胃腸保護：Omeprazole 1 mg/kg PO q12h（高劑量類固醇期間）"
+    - "DIC 處理：新鮮冷凍血漿輸注"
+    - "嚴重難治性：Vincristine 0.02 mg/kg IV 單次（促進骨髓血小板釋放）"
+    - "住院加護監測至少 3-5 天"
+    - "免疫抑制治療穩定後逐漸減量，總療程通常 4-6 個月以上"
+
+prognosis: Evans syndrome 預後較單獨 IMHA 或 IMT 顯著更差。住院死亡率約 40-60%（高於單獨 IMHA 的 30-40%）。血栓栓塞及 DIC 為主要死因。存活過第一週的犬隻預後逐漸改善。復發率高（約 30-40%），需長期免疫抑制治療。需要多種免疫抑制劑合併治療的病例預後更謹慎。早期積極治療可改善存活率。
+
+guidelineRefs:
+  - sourceOrg: ACVIM
+    title: "ACVIM consensus statement on the treatment of immune-mediated hemolytic anemia in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/30806491/
+    type: consensus
+    pmid: "30806491"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Prognostic factors in dogs with immune-mediated hemolytic anemia"
+    url: https://pubmed.ncbi.nlm.nih.gov/16734091/
+    type: consensus
+    pmid: "16734091"
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Use of human intravenous immunoglobulin in dogs with immune-mediated hematologic disease"
+    url: https://pubmed.ncbi.nlm.nih.gov/19691507/
+    type: review
+    pmid: "19691507"
+pubmedQueries:
+  - query: '"Evans syndrome" AND (dog OR canine) AND ("treatment" OR "immunosuppressive")'
+    frequency: monthly
+  - query: '("IMHA" OR "immune-mediated hemolytic anemia") AND ("thrombocytopenia" OR "ITP") AND dog'
+    frequency: monthly

@@ -1,0 +1,148 @@
+slug: hypercalcemia
+nameEn: Hypercalcemia
+nameZh: 高鈣血症
+bodySystem: electrolyte
+description: 血清總鈣或離子化鈣濃度異常升高。犬最常見原因為惡性腫瘤（淋巴瘤）相關的高鈣血症，貓則以特發性高鈣血症最為常見。持續性高鈣血症可導致腎損傷、軟組織礦化及心律不整。
+
+aliases:
+  - { alias: Hypercalcaemia, language: en }
+  - { alias: High Calcium, language: en }
+  - { alias: Humoral Hypercalcemia of Malignancy, language: en }
+  - { alias: HHM, language: en }
+  - { alias: 高血鈣, language: zh }
+  - { alias: 鈣離子過高, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: "最常見原因口訣：HARDIONS（Hyperparathyroidism, Addison's, Renal failure, vitamin D toxicosis, Idiopathic, Osteolytic, Neoplasia, Spurious）。淋巴瘤為犬高鈣血症最常見的惡性原因，肛囊腺癌亦常見。"
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 特發性高鈣血症為貓最常見原因（約 35%）。其次為惡性腫瘤（淋巴瘤、鱗狀細胞癌）、CKD、原發性副甲狀腺功能亢進。
+
+etiology:
+  categories:
+    - name: 惡性腫瘤相關（犬最常見病理性原因）
+      examples:
+        - 淋巴瘤（PTHrP 分泌 — 惡性高鈣血症最常見原因）
+        - 肛囊腺癌（apocrine gland adenocarcinoma）
+        - 多發性骨髓瘤
+        - 骨腫瘤溶骨性轉移
+        - 胸腺瘤
+    - name: 原發性副甲狀腺功能亢進
+      examples:
+        - 副甲狀腺腺瘤（最常見）
+        - 副甲狀腺增生
+        - 副甲狀腺癌（罕見）
+    - name: 維生素 D 中毒
+      examples:
+        - 殺鼠劑（cholecalciferol rodenticides）
+        - 牛皮癬藥膏（calcipotriene/calcipotriol）
+        - 補充劑過量
+        - 日光草（Cestrum diurnum）、Solanum 屬植物
+    - name: 其他
+      examples:
+        - 特發性高鈣血症（貓最常見原因）
+        - 腎上腺功能低下症（Addison's disease）
+        - 慢性腎臟病
+        - 肉芽腫性疾病（真菌感染、肉芽腫）
+        - 骨溶解（骨髓炎、嚴重骨折）
+
+clinicalSigns:
+  early:
+    - 多尿/多渴（高鈣干擾腎臟濃縮功能 — 腎性尿崩）
+    - 食慾下降
+    - 嗜睡
+    - 便秘（高鈣抑制腸道平滑肌）
+  progressive:
+    - 嘔吐
+    - 脫水
+    - 肌肉無力/顫抖
+    - 體重下降
+    - 心搏過緩
+    - CaOx 尿路結石形成
+  late:
+    - 急性腎損傷（高鈣性腎病）
+    - 軟組織礦化（腎、肺、胃、血管壁）
+    - 嚴重心律不整（QT 間期縮短、心房/心室期外收縮）
+    - 痙攣（罕見）
+    - 昏迷
+
+diagnosis:
+  primaryTests:
+    - name: 血清總鈣與離子化鈣（iCa）
+      notes: "犬正常總鈣 9.0-11.5 mg/dL，iCa 1.12-1.40 mmol/L。貓正常總鈣 8.0-10.5 mg/dL，iCa 1.12-1.40 mmol/L。離子化鈣為生理活性形式，較總鈣更準確。低白蛋白可使總鈣偏低但 iCa 正常"
+    - name: PTH（副甲狀腺素）
+      notes: "升高 → 原發性副甲狀腺功能亢進。高鈣血症時 PTH 應被抑制，若正常偏高即異常。需與 iCa 同時判讀"
+    - name: PTHrP（副甲狀腺素相關蛋白）
+      notes: "升高提示惡性腫瘤分泌（humoral hypercalcemia of malignancy）。淋巴瘤、肛囊腺癌常見"
+    - name: 25-OH Vitamin D 與 Calcitriol
+      notes: "25-OH-D 升高提示維生素 D 中毒（外源性）。Calcitriol 升高見於淋巴瘤或肉芽腫性疾病"
+  imaging:
+    - name: 胸腹腔 X 光
+      notes: "淋巴結腫大（淋巴瘤）、肺部腫塊、軟組織礦化、骨溶解病灶、泌尿道結石"
+    - name: 腹部超音波
+      notes: "評估淋巴結、脾臟（淋巴瘤）、腎臟、膀胱結石、腎上腺（Addison's）"
+    - name: 頸部超音波
+      notes: "評估副甲狀腺（腺瘤通常 >4 mm 低回音結節）。正常副甲狀腺超音波不易見"
+  additional:
+    - 全血計數（淋巴瘤可能有循環腫瘤細胞）
+    - 生化（BUN/Creatinine、磷）
+    - 皮質醇刺激試驗（排除 Addison's）
+    - 細針抽吸（腫大淋巴結、脾臟）
+    - 尿液分析（等張尿、CaOx 結晶）
+    - 骨髓檢查（懷疑多發性骨髓瘤或淋巴瘤骨髓侵犯）
+
+treatment:
+  principles:
+    - 積極利尿促進鈣排泄
+    - 治療根本病因為長期控制關鍵
+    - 總鈣 >16 mg/dL 或 iCa >1.8 mmol/L 為緊急狀況
+    - 避免 thiazide 利尿劑（增加鈣回收）
+  medications:
+    - name: 0.9% NaCl 靜脈輸液
+      dose: "矯正脫水後以 2-3 倍維持量進行鈣利尿"
+      notes: 生理食鹽水促進腎臟鈣排泄（鈉利尿伴隨鈣利尿）。為初始治療首選
+    - name: Furosemide
+      dose: "2-4 mg/kg IV q8-12h 或 CRI 0.5-1 mg/kg/hr"
+      notes: 水合狀態恢復後使用。促進腎臟鈣排泄。避免在脫水時使用。監測電解質（低鉀）
+    - name: Prednisone/Dexamethasone
+      dose: "Prednisone 1-2 mg/kg PO BID 或 Dexamethasone 0.1-0.2 mg/kg IV BID"
+      notes: 對淋巴瘤相關高鈣血症效果佳（直接殺死腫瘤細胞）。如未確定診斷，使用類固醇前應先完成淋巴結 FNA（類固醇可使淋巴瘤細胞溶解，影響診斷）
+    - name: Bisphosphonates（Pamidronate/Zoledronate）
+      dose: "Pamidronate 1-2 mg/kg IV in 250 mL 0.9% NaCl over 2-4 hr；Zoledronate 0.25 mg/kg IV over 15 min"
+      notes: 抑制破骨細胞活性，降低骨鈣釋出。起效較慢（24-48 hr），效果持久（2-4 週）。腎毒性風險，需監測腎功能
+    - name: Calcitonin（salmon calcitonin）
+      dose: "4-8 IU/kg SC q8-12h"
+      notes: 快速但短暫降鈣（數小時內起效）。可與 bisphosphonates 併用於急性嚴重高鈣血症。效果 tachyphylaxis（數日後失效）
+  general:
+    - 淋巴瘤：化學治療（CHOP protocol）為根本治療
+    - 原發性副甲狀腺功能亢進：外科切除副甲狀腺腺瘤
+    - 維生素 D 中毒：活性碳（早期）、furosemide + NaCl 利尿、類固醇
+    - 肛囊腺癌：手術切除 + 化療
+    - 貓特發性高鈣血症：飲食調整（高纖維飲食/不同蛋白質來源）、必要時類固醇
+    - 監測 iCa、腎功能、電解質
+
+prognosis: 取決於根本病因。原發性副甲狀腺功能亢進手術切除後預後極佳。惡性腫瘤相關高鈣血症預後取決於腫瘤類型與分期。貓特發性高鈣血症可長期管理但常需持續治療。維生素 D 中毒經積極治療預後良好。持續嚴重高鈣血症可導致不可逆腎損傷。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Hypercalcemia in dogs and cats: etiology and diagnostic approach"
+    url: https://pubmed.ncbi.nlm.nih.gov/23323746/
+    type: review
+    pmid: "23323746"
+  - sourceOrg: Veterinary Clinics of North America Small Animal Practice
+    title: "Disorders of calcium: hypercalcemia and hypocalcemia"
+    url: https://pubmed.ncbi.nlm.nih.gov/28012876/
+    type: review
+    pmid: "28012876"
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "Idiopathic hypercalcemia in cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/16442789/
+    type: research
+    pmid: "16442789"
+pubmedQueries:
+  - query: '"hypercalcemia" AND (dog OR cat OR canine OR feline) AND ("diagnosis" OR "treatment" OR "lymphoma")'
+    frequency: monthly

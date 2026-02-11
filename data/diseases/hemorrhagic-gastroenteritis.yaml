@@ -1,0 +1,141 @@
+slug: hemorrhagic-gastroenteritis
+nameEn: Hemorrhagic Gastroenteritis (Acute Hemorrhagic Diarrhea Syndrome)
+nameZh: 出血性胃腸炎 (AHDS)
+bodySystem: gastrointestinal
+description: 犬隻急性發作的嚴重血便與嘔吐，以極度血容比 (PCV) 上升與血性下痢為特徵。現正式命名為急性出血性下痢症候群 (AHDS)。病因尚未完全釐清，但與 Clostridium perfringens 產毒株及腸道黏膜屏障急性崩潰密切相關。為犬隻常見的急診。
+
+aliases:
+  - { alias: HGE, language: en }
+  - { alias: AHDS, language: en }
+  - { alias: Acute Hemorrhagic Diarrhea Syndrome, language: en }
+  - { alias: 急性出血性下痢症候群, language: zh }
+  - { alias: 出血性腸炎, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 小型犬好發（Miniature Schnauzer、Toy Poodle、Miniature Poodle、Yorkshire Terrier、Maltese、Cavalier King Charles Spaniel）。2-4 歲中年犬最常見。無明顯性別差異。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓隻極罕見。類似的急性出血性下痢在貓應考慮 FPV、FeLV 相關腸病或其他病因。
+
+etiology:
+  categories:
+    - name: 主要相關因素
+      examples:
+        - Clostridium perfringens netF 毒素陽性株（近年研究強烈關聯）
+        - 腸道黏膜屏障急性崩潰
+        - 腸道菌群急性失衡 (dysbiosis)
+        - 過敏或免疫介導反應（推測）
+    - name: 病理機制
+      examples:
+        - 腸道血管通透性急劇增加
+        - 富含蛋白質的液體大量滲入腸腔
+        - 血容比因血管外液體喪失而急速上升（濃縮性紅血球增多）
+        - 腸黏膜壞死脫落 → 大量出血
+    - name: 需排除的鑑別診斷
+      examples:
+        - 犬小病毒腸炎 (CPV)
+        - 異物相關腸阻塞
+        - 腸套疊
+        - 胰臟炎引起的出血性腸炎
+        - 凝血功能障礙
+        - Addison's disease（急性腎上腺危機）
+        - 中毒（抗凝血劑鼠藥）
+
+clinicalSigns:
+  early:
+    - 急性嘔吐（起病突然，通常在數小時內發展）
+    - 食慾廢絕
+    - 精神沉鬱
+    - 腹部不適
+  progressive:
+    - 大量血性下痢（典型 raspberry jam 或果醬樣外觀）
+    - 嘔吐加劇（可能帶血）
+    - 快速脫水
+    - 腹痛
+    - 嗜睡加重
+  late:
+    - 低血容量性休克（心搏過速、微弱脈搏、蒼白或灰白黏膜、CRT 延長）
+    - 嚴重脫水（皮膚彈性喪失、眼窩凹陷）
+    - 低蛋白血症（大量蛋白流失）
+    - DIC（嚴重病例）
+    - 敗血症（腸道屏障崩潰導致細菌移位）
+
+diagnosis:
+  primaryTests:
+    - name: PCV / 總蛋白 (TP)
+      notes: "最重要的初步檢測。PCV 顯著升高（>60%，有些可達 75-80%）而 TP 正常至偏低為 AHDS 特徵性發現（「高 PCV + 低 TP」）。與其他出血性疾病（PCV 下降）相反"
+    - name: CPV 糞便抗原快速檢測
+      notes: "必須排除犬小病毒腸炎。SNAP Parvo Test 陰性支持 AHDS 診斷"
+    - name: CBC
+      notes: "紅血球壓積升高、白血球可正常或升高（嗜中性球核左移提示敗血症風險）。與 CPV 的白血球減少不同"
+  imaging:
+    - name: 腹部超音波
+      notes: "排除異物、腸套疊、胰臟炎。AHDS 可見小腸節段性黏膜層異常、腸腔內液體"
+    - name: 腹部 X 光
+      notes: "排除異物與腸阻塞。AHDS 無特異性 X 光發現"
+  additional:
+    - 生化（電解質、腎功能、肝指數、血糖——小型犬低血糖風險）
+    - Spec cPL（排除胰臟炎）
+    - 凝血功能（PT/aPTT，排除凝血障礙、評估 DIC）
+    - 糞便 PCR（C. perfringens netF 毒素基因——研究/進階診斷）
+    - 基礎皮質醇或 ACTH 刺激試驗（排除 Addison's disease）
+    - 乳酸（評估組織灌流）
+
+treatment:
+  principles:
+    - 積極靜脈液體復甦為治療核心
+    - 多數病例為自限性，在適當支持下 24-72 小時改善
+    - 抗生素僅用於懷疑敗血症或嚴重病例
+    - 小型犬需特別注意低血糖
+  medications:
+    - name: Lactated Ringer's Solution
+      dose: "休克劑量 60-90 mL/kg/h（首小時），之後依脫水程度調整為維持 + 脫水矯正 + 持續流失量"
+      notes: 積極液體復甦是最重要的治療。可搭配合成膠體液維持膠體滲透壓
+    - name: Maropitant
+      dose: "1 mg/kg IV/SC q24h"
+      notes: 止吐首選。NK1 受體拮抗劑
+    - name: Metronidazole
+      dose: "10-15 mg/kg IV q12h"
+      notes: 抗 Clostridium 覆蓋。近年觀點認為不嚴重病例不一定需要抗生素
+    - name: Ampicillin
+      dose: "22 mg/kg IV q8h"
+      notes: 懷疑敗血症（發燒、核左移、低白蛋白）時加入廣效抗生素
+    - name: Pantoprazole
+      dose: "1 mg/kg IV q12h"
+      notes: 靜脈質子幫浦抑制劑。嚴重嘔吐或疑似上消化道出血時使用
+  general:
+    - 靜脈膠體支持：新鮮冷凍血漿（FFP）10-15 mL/kg IV 用於嚴重低蛋白血症（白蛋白 <1.5 g/dL）
+    - 低血糖矯正：50% 葡萄糖 0.5-1 mL/kg IV bolus 稀釋後緩慢給予，之後以 2.5-5% dextrose 加入輸液維持
+    - 電解質矯正（低鉀補充）
+    - 止吐藥控制嘔吐後儘早恢復口服攝食（6-12 小時內）
+    - 早期腸內營養（少量溫和飲食）優於長時間禁食
+    - 益生菌輔助（待嘔吐控制後）
+
+prognosis: 經積極液體治療，AHDS 預後良好，多數犬在 24-72 小時內臨床明顯改善。存活率 >90-95%（適當治療下）。死亡多因延遲就醫導致嚴重低血容量性休克、敗血症或 DIC。小型犬低血糖為重要致死因素。復發率約 10-15%，好發於有過第一次發作的小型犬。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Acute hemorrhagic diarrhea syndrome in dogs: 108 cases (2006-2012)"
+    url: https://pubmed.ncbi.nlm.nih.gov/25929290/
+    type: research
+    pmid: "25929290"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Clostridium perfringens netF-positive and netE/netF-positive strains are associated with acute hemorrhagic diarrhea syndrome in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/26346471/
+    type: research
+    pmid: "26346471"
+  - sourceOrg: PLOS ONE
+    title: "Changes in intestinal microbiota composition and function in dogs with acute hemorrhagic diarrhea syndrome"
+    url: https://pubmed.ncbi.nlm.nih.gov/31365561/
+    type: research
+    pmid: "31365561"
+
+pubmedQueries:
+  - query: '"hemorrhagic gastroenteritis" OR "acute hemorrhagic diarrhea syndrome" AND dog AND ("treatment" OR "Clostridium" OR "prognosis")'
+    frequency: monthly
+  - query: '"AHDS" AND (dog OR canine) AND ("fluid therapy" OR "microbiome" OR "netF")'
+    frequency: monthly

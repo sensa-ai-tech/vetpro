@@ -1,0 +1,160 @@
+slug: smoke-inhalation
+nameEn: Smoke Inhalation Injury
+nameZh: 煙霧吸入傷害
+bodySystem: emergency
+description: 火災煙霧暴露導致的複合性呼吸道與全身性損傷，包含三種機制：(1) 上呼吸道熱灼傷與喉頭水腫；(2) 下呼吸道化學性刺激與肺實質損傷；(3) 全身性窒息劑中毒（一氧化碳 CO 與氰化氫 HCN）。為火災中動物最主要的致死原因。
+
+aliases:
+  - { alias: Inhalation Injury, language: en }
+  - { alias: Smoke Toxicity, language: en }
+  - { alias: Carbon Monoxide Poisoning, language: en }
+  - { alias: CO Poisoning, language: en }
+  - { alias: Cyanide Poisoning, language: en }
+  - { alias: 吸入性燒傷, language: zh }
+  - { alias: 煙霧中毒, language: zh }
+  - { alias: 一氧化碳中毒, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 家庭火災中與人同住的犬最常受影響。短頭種犬（Bulldog、Pug）因已有氣道狹窄，煙霧吸入後更易出現致命性呼吸道阻塞。犬體高較低，接近地面（煙霧/毒氣濃度較高處）。犬不會主動逃離封閉空間。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓在火災中常躲藏於壁櫥/床下等密閉空間不易被發現與救出，暴露時間可能更長。體型小、代謝率高，單位體重的 CO 與 HCN 吸入劑量相對更高。貓對 HCN 可能更敏感。
+
+etiology:
+  categories:
+    - name: 上呼吸道熱傷害
+      examples:
+        - 過熱空氣/蒸氣吸入導致上呼吸道黏膜灼傷
+        - 喉頭/咽喉水腫（可在暴露後 12-18 小時內進行性惡化）
+        - 聲門上方損傷為主（喉頭以下因氣道有效散熱而較少直接熱傷害）
+    - name: 下呼吸道化學傷害
+      examples:
+        - 煙霧微粒（碳粒子直徑 <5 μm 可達末梢氣道/肺泡）
+        - 醛類（acrolein, formaldehyde — 強效黏膜刺激劑）
+        - 氯化氫 (HCl)、氨 (NH₃)、硫化物
+        - 化學性氣管支氣管炎與肺泡損傷
+        - 表面活性劑破壞 → 肺泡塌陷
+    - name: 全身性窒息劑中毒
+      examples:
+        - 一氧化碳 (CO)：與血紅素親和力為 O₂ 的 200-250 倍 → COHb 形成 → 組織缺氧
+        - 氰化氫 (HCN)：抑制線粒體細胞色素氧化酶 (Complex IV) → 細胞無法利用氧氣 → 組織窒息
+        - 環境氧氣耗竭 → 直接缺氧性窒息
+    - name: 併發體表燒傷
+      examples:
+        - 皮膚/毛髮燒傷
+        - 肉墊灼傷
+        - 角膜/結膜熱化學傷害
+
+pathophysiology: 煙霧吸入造成三重打擊。(1) 熱傷害：高溫空氣灼傷上呼吸道黏膜 → 急性發炎反應 → 黏膜水腫 → 喉頭/聲門水腫可致完全氣道阻塞（最急性的致命威脅）。(2) 化學傷害：煙霧微粒與毒性氣體沉積於下呼吸道 → 黏膜上皮壞死 → 纖毛清除功能喪失 → 黏液滯留 → 支氣管痙攣 → 肺泡上皮與毛細血管內皮損傷 → 非心因性肺水腫 → 表面活性劑破壞 → 肺泡塌陷 → 嚴重 V/Q mismatch → ARDS（24-72 小時出現）。(3) CO 中毒：CO 與 Hb 結合形成 COHb → 氧合血紅素曲線左移 → 組織氧輸送與釋放雙重障礙。CO 亦直接結合肌球蛋白與細胞色素氧化酶。HCN 中毒：HCN 抑制線粒體 Complex IV → 細胞無法進行有氧代謝（PaO₂ 正常但細胞無法利用氧氣 — 組織窒息）→ 嚴重乳酸酸中毒。CO 與 HCN 協同作用使毒性遠超兩者各自作用之和。
+
+clinicalSigns:
+  early:
+    - 口鼻部煤灰/碳沉積物
+    - 咳嗽、噴嚏
+    - 流涎
+    - 結膜充血/角膜水腫
+    - 吸氣性喘鳴 (stridor — 上呼吸道水腫)
+    - 焦躁不安或精神沉鬱
+    - 黏膜可能呈「櫻桃紅」（COHb — 但不可靠）
+  progressive:
+    - 呼吸困難加劇（上呼吸道水腫進行性惡化 — 12-18 小時高峰）
+    - 發紺
+    - 嗜睡/精神狀態惡化
+    - 嘔吐
+    - 心搏過速
+    - 角膜潰瘍
+    - 體表燒傷區域水腫/滲出
+  late:
+    - 完全上呼吸道阻塞（喉頭水腫 → 窒息）
+    - 嚴重肺水腫/ARDS（24-72 小時）
+    - 癲癇/昏迷（CO/HCN 腦毒性）
+    - SIRS/敗血症
+    - 續發性細菌性肺炎（2-5 天）
+    - DIC
+    - 多器官衰竭
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: COHb 測定 (CO-oximetry)
+      notes: "需使用 CO-oximeter（非標準脈搏血氧儀 — 標準 SpO₂ 無法區分 COHb 與 O₂Hb）。正常 <3%。>15% 有臨床意義。>25% 嚴重。>50% 可致死。到院時因時間延遲與氧療，實測值可能低估實際暴露程度"
+    - name: 動脈血氣分析
+      notes: "PaO₂ 可能正常（CO 中毒時 — 血氧分壓正常但氧含量不足）。代謝性酸中毒（乳酸升高 — CO + HCN 中毒）。PaCO₂ 評估通氣狀態"
+    - name: 乳酸
+      notes: "顯著升高（>10 mmol/L）高度提示 HCN 中毒（細胞無法利用氧氣 → 無氧代謝）。乳酸可作為 HCN 中毒的間接指標"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "初期可能完全正常。24-72 小時後出現間質/肺泡浸潤、支氣管壁增厚、支氣管周圍水腫。連續追蹤"
+    - name: 氣管鏡檢查（如可用）
+      notes: "直接評估氣道損傷程度。可見黏膜充血、水腫、碳粒子沉積、黏膜壞死脫落"
+  additional:
+    - CBC（應激性白血球增多，後續左移）
+    - 生化（肝腎功能評估、CK 升高）
+    - 凝血功能（DIC 評估）
+    - 眼科檢查（角膜螢光染色 — 評估角膜灼傷）
+    - 體表燒傷面積與深度評估（Wallace rule of nines 不適用於動物 — 需逐區評估）
+
+treatment:
+  principles:
+    - 100% 氧氣為第一線且最重要的治療（CO 中毒解毒 + 改善氧合）
+    - 維持氣道通暢（上呼吸道水腫可能需緊急插管/氣切）
+    - HCN 解毒劑（高度懷疑時）
+    - 監測 48-72 小時（遲發性肺損傷/ARDS）
+  medications:
+    - name: 100% 氧氣治療
+      dose: "Flow-by、面罩、鼻導管或氧氣籠。100% FiO₂ 至少 4-6 小時"
+      notes: CO 半衰期：室內空氣 250 分鐘 → 100% O₂ 降至 30-40 分鐘。高濃度氧競爭性置換 CO。持續氧療直至 COHb <5% 與臨床改善
+    - name: Hydroxocobalamin (HCN 解毒劑)
+      dose: "70 mg/kg IV over 15-30 min"
+      notes: HCN 中毒首選解毒劑。與 CN⁻ 結合形成無毒的 cyanocobalamin (維生素 B₁₂)。安全性高。經驗性使用於嚴重煙霧吸入合併嚴重乳酸酸中毒者。費用較高
+    - name: Sodium thiosulfate (HCN 解毒劑替代)
+      dose: "250 mg/kg IV slow"
+      notes: Hydroxocobalamin 不可得時的替代。與 CN⁻ 結合形成硫氰酸鹽經腎排出。效果較慢
+    - name: 支氣管擴張劑
+      dose: "Albuterol/Salbutamol 霧化吸入；或 Aminophylline 5-10 mg/kg IV 緩慢推注"
+      notes: 支氣管痙攣時使用
+    - name: Furosemide
+      dose: "1-2 mg/kg IV"
+      notes: 肺水腫時使用。保守使用 — 避免脫水惡化灌流
+    - name: 止痛藥
+      dose: "Buprenorphine 0.01-0.02 mg/kg IV/IM q6-8h；或 Methadone 0.2-0.3 mg/kg IV"
+      notes: 燒傷疼痛管理。純激動劑 (full agonist opioids) 用於嚴重疼痛。注意呼吸抑制
+  general:
+    - 喉頭水腫嚴重 → 緊急氣管插管或氣管切開（上呼吸道阻塞為最急性致命威脅）
+    - IV 輸液（維持灌流，但保守管理 — 避免加重肺水腫。有體表燒傷者需較多輸液 — Parkland formula 參考）
+    - 霧化治療（生理食鹽水 ± N-acetylcysteine 霧化 — 稀釋氣道分泌物、抗氧化）
+    - 眼部沖洗（生理食鹽水 — 沖去化學物質）+ 角膜潰瘍局部治療（抗生素眼藥膏）
+    - 不推薦常規使用類固醇（無證據支持改善預後，可能增加感染風險）
+    - 不推薦常規預防性抗生素（僅在出現明確肺炎徵兆時使用）
+    - 體表燒傷局部護理（清創、銀離子敷料、維持乾淨濕潤環境）
+    - 住院監測至少 48-72 小時（遲發性肺損傷/ARDS/肺炎高峰在 2-5 天）
+
+emergencyNotes: 煙霧吸入到院處理：(1) 確認場景安全（救援人員防護）；(2) 立即 100% 氧氣（不等 COHb 結果）；(3) 評估氣道 — stridor/上呼吸道水腫 → 緊急插管或氣切（水腫在 12-18 小時內可能進行性惡化）；(4) 乳酸 >10 mmol/L → 高度懷疑 HCN 中毒 → Hydroxocobalamin 70 mg/kg IV；(5) 建立靜脈通路（保守輸液）；(6) 胸腔 X 光（可能初始正常）；(7) SpO₂ 不可靠（COHb 干擾）— 需 CO-oximetry 或血氣；(8) 角膜檢查；(9) 住院 48-72 小時。注意：標準脈搏血氧儀顯示 SpO₂ 正常不代表氧合正常（COHb 被讀為 O₂Hb）。
+
+prognosis: 輕度煙霧暴露經及時氧療，預後良好（存活率 >90%）。整體存活率約 70-90%。嚴重 CO/HCN 中毒、需機械通氣者預後較差。發展為 ARDS 者死亡率高。續發性細菌性肺炎（暴露後 2-5 天）為重要併發症。CO 中毒存活者可能有遲發性神經系統損傷（delayed neurologic sequelae — CO 腦白質損傷，數天至數週後出現行為改變、認知障礙）。體表燒傷面積 >50% 者預後極差。早期積極氧療與氣道管理為改善預後的關鍵。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Smoke inhalation injury in dogs and cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/23855437/
+    type: review
+    pmid: "23855437"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Clinical findings and treatment of non-fire carbon monoxide toxicosis in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/16579757/
+    type: research
+    pmid: "16579757"
+  - sourceOrg: Veterinary Clinics of North America Small Animal Practice
+    title: "Thermal burn injury and smoke inhalation in companion animals"
+    url: https://pubmed.ncbi.nlm.nih.gov/25592028/
+    type: review
+    pmid: "25592028"
+pubmedQueries:
+  - query: '"smoke inhalation" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "carbon monoxide" OR "outcome")'
+    frequency: monthly
+  - query: '"carbon monoxide poisoning" AND (veterinary OR canine OR feline) AND ("hydroxocobalamin" OR "cyanide")'
+    frequency: monthly

@@ -1,0 +1,126 @@
+slug: avian-psittacosis
+nameEn: Avian Psittacosis
+nameZh: 鸚鵡病
+bodySystem: exotic
+description: 由 Chlamydia psittaci 引起的鳥類系統性感染症，為重要人畜共通傳染病。鸚鵡目鳥類感染稱為鸚鵡病 (psittacosis)，其他鳥類感染稱為鳥類披衣菌症 (ornithosis)。可造成呼吸道、消化道及全身性疾病。
+
+aliases:
+  - { alias: 鸚鵡熱, language: zh }
+  - { alias: 鳥類披衣菌症, language: zh }
+  - { alias: 披衣菌感染, language: zh }
+  - { alias: Chlamydiosis, language: en }
+  - { alias: Ornithosis, language: en }
+  - { alias: Parrot fever, language: en }
+  - { alias: Chlamydia psittaci infection, language: en }
+
+species:
+  - speciesCommon: bird
+    speciesScientific: Psittaciformes
+    prevalence: common
+    notes: 所有鸚鵡目鳥類均易感。虎皮鸚鵡 (Melopsittacus undulatus)、玄鳳鸚鵡 (Nymphicus hollandicus)、亞馬遜鸚鵡、金剛鸚鵡及非洲灰鸚鵡為常見感染種。鴿子 (Columba livia)、家禽及野鳥亦可感染。血清盛行率在寵物鸚鵡族群中可達 10-40%。重要人畜共通傳染病 (部分國家為法定報告傳染病)。
+
+etiology:
+  categories:
+    - name: 細菌性 (專性細胞內)
+      examples:
+        - Chlamydia psittaci (革蘭氏陰性專性細胞內細菌)
+        - 經呼吸道吸入含菌氣溶膠 (乾燥糞便粉塵、羽屑、分泌物)
+        - 糞口傳播 (汙染的食物飲水)
+        - 親鳥嗉囊餵食傳播幼鳥
+        - 帶原者可無症狀排菌長達數月至數年
+    - name: 風險因素
+      examples:
+        - 緊迫 (運輸、擁擠、環境改變、繁殖)
+        - 新進鳥未隔離檢疫
+        - 群養環境 (鳥舍、繁殖場、寵物店)
+        - 免疫抑制 (併發疾病、營養不良)
+        - 幼鳥
+        - 通風不良環境
+
+clinicalSigns:
+  early:
+    - 羽毛蓬鬆
+    - 食慾輕微下降
+    - 嗜睡
+    - 輕度結膜炎 (單側或雙側)
+    - 輕微鼻分泌物
+  progressive:
+    - 黃綠色水樣便 (膽汁色素尿酸鹽，反映肝臟受累)
+    - 漿液性至黏液膿性鼻分泌物
+    - 呼吸困難 (張口呼吸、尾部上下擺動)
+    - 結膜炎與眼瞼水腫
+    - 顯著體重減輕
+    - 多尿/多渴 (腎臟受累)
+  late:
+    - 嚴重消瘦與虛弱
+    - 嚴重呼吸窘迫 (肺炎、氣囊炎)
+    - 肝脾腫大 (腹部膨隆)
+    - 神經症狀 (震顫、共濟失調、癲癇)
+    - 猝死 (急性暴發型，尤其幼鳥)
+    - 黃疸 (重症肝臟衰竭)
+
+diagnosis:
+  primaryTests:
+    - name: C. psittaci PCR (泄殖腔拭子/嗉囊拭子/血液)
+      notes: "首選確診方法。敏感度與特異性高。泄殖腔拭子 + 嗉囊拭子合併檢測提高陽性率。間歇性排菌可能造成假陰性 (建議連續 3 天採樣)"
+    - name: 全血 C. psittaci PCR
+      notes: "菌血期偵測率較高，可與拭子 PCR 互補"
+    - name: CBC/生化
+      notes: "白血球增多 (heterophilia)、AST/LDH 升高 (肝損傷)、膽汁酸升高、CK 升高。非特異性但提供支持證據"
+  imaging:
+    - name: 全身 X 光
+      notes: "肝脾腫大、肺實質浸潤、氣囊增厚混濁。氣囊炎為典型特徵"
+  additional:
+    - 血清學 (C. psittaci 抗體，配對血清四倍升高有意義。單次陽性僅代表曾暴露)
+    - 肝臟/脾臟細針抽吸 (初體 [elementary bodies] Gimenez 或 Macchiavello 染色)
+    - 屍檢與組織病理學 (肝脾腫大、纖維素性氣囊炎、elementary bodies in macrophages)
+    - 抗原檢測 (ELISA，敏感度較 PCR 低)
+
+treatment:
+  principles:
+    - 長期四環素類抗生素治療 (至少 45 天)
+    - 支持性照護 (營養、保溫、補液)
+    - 隔離與環境消毒
+    - 人畜共通風險告知 (通知飼主並建議就醫)
+    - 部分國家屬法定報告傳染病
+  medications:
+    - name: Doxycycline
+      dose: "25-50 mg/kg PO BID，連續 45 天"
+      notes: 四環素類抗生素首選。口服劑型。45 天療程為必要 (確保清除細胞內感染)。可能導致嘔吐，餵食後給藥減少刺激。避免同時補充鈣 (降低吸收)
+    - name: Doxycycline (注射用，飲水難以控制劑量時)
+      dose: "75-100 mg/kg IM，每 5-7 天一次"
+      notes: 長效注射劑型 (vibramycin)。適用無法口服或群體治療。注射部位可能刺激
+    - name: Doxycycline 含藥飼料
+      dose: "300-500 ppm 混入飼料"
+      notes: 群體治療選擇。實際攝取量難以控制。需移除其他食物與鈣質來源以確保攝取
+    - name: Azithromycin
+      dose: "40 mg/kg PO SID，連續 21-45 天"
+      notes: 四環素類過敏或耐受不佳時的替代選擇。療效證據不如 doxycycline 充分
+  general:
+    - 嚴格 45 天療程 (提前停藥易復發與帶原)
+    - 保溫 (28-30°C)
+    - 輔助餵食 (管灌餵食或注射器餵食)
+    - 皮下輸液 (脫水矯正，翼下方或腹股溝)
+    - 隔離患鳥 (獨立空間、專用器具)
+    - 環境消毒 (1:100 漂白水或季銨鹽類消毒劑有效)
+    - 飼主衛生教育 (戴口罩、手套接觸患鳥與糞便)
+    - 新進鳥隔離檢疫至少 30-45 天並檢測
+    - 治療完成後覆驗 PCR (確認清除)
+
+prognosis: 早期診斷並完成完整 45 天療程預後良好，多數鳥可完全恢復。未治療或治療不完整可能慢性帶原並間歇性排菌。急性暴發型 (尤其幼鳥) 致死率高。人畜共通風險需特別重視 (免疫低下人群感染可致重症肺炎)。遵醫囑完成療程為預後關鍵。
+
+guidelineRefs:
+  - sourceOrg: Association of Avian Veterinarians
+    title: "Chlamydiosis in Birds - AAV Compendium"
+    url: https://pubmed.ncbi.nlm.nih.gov/19530406/
+    type: guideline
+    pmid: "19530406"
+  - sourceOrg: Journal of Exotic Pet Medicine
+    title: "Avian chlamydiosis: updated review of diagnosis and treatment"
+    url: https://pubmed.ncbi.nlm.nih.gov/29478744/
+    type: review
+    pmid: "29478744"
+
+pubmedQueries:
+  - query: '"Chlamydia psittaci" AND ("psittacosis" OR "chlamydiosis" OR "avian") AND ("treatment" OR "diagnosis" OR "doxycycline")'
+    frequency: monthly

@@ -1,0 +1,132 @@
+slug: rabbit-dental-disease
+nameEn: Rabbit Dental Disease
+nameZh: 兔牙科疾病
+bodySystem: exotic
+description: 兔的牙齒為持續生長型（elodont），齒冠與齒根終生持續生長。飲食中長纖維不足導致牙齒磨損不均，引起咬合不正、齒根過度生長、膿腫等嚴重併發症。為家兔最常見的慢性疾病之一，也是消化道停滯的主要誘因。
+
+aliases:
+  - { alias: 兔齒科疾病, language: zh }
+  - { alias: 兔牙齒過長, language: zh }
+  - { alias: 兔咬合不正, language: zh }
+  - { alias: Rabbit Malocclusion, language: en }
+  - { alias: Acquired Dental Disease, language: en }
+  - { alias: Rabbit Dental Overgrowth, language: en }
+  - { alias: Cheek Teeth Elongation, language: en }
+
+species:
+  - speciesCommon: rabbit
+    speciesScientific: Oryctolagus cuniculus
+    prevalence: common
+    notes: 家兔最常見的慢性疾病之一，盛行率可達 30-40%。矮小品種（Netherland Dwarf、Lop）因頭骨短小更易發生先天性咬合不正。後天性牙科疾病以飲食因素為最大成因。門齒與臼齒均可受累。
+
+etiology:
+  categories:
+    - name: 飲食因素（後天性，最常見）
+      examples:
+        - 乾草攝入不足（纖維不足導致臼齒橫向磨動不足）
+        - 過多顆粒飼料（縱向咀嚼為主，無法充分磨損臼齒）
+        - 飲食中鈣質不足（影響齒槽骨密度）
+        - 維生素 D 不足（影響鈣磷代謝與骨骼發育）
+    - name: 先天性/遺傳性
+      examples:
+        - 下顎前突（mandibular prognathism）——矮小品種好發
+        - 上顎門齒與下顎門齒無法正常對合
+        - 遺傳性骨骼發育異常
+    - name: 病理進展
+      examples:
+        - 臼齒齒冠過長→形成尖銳棘刺（spurs/spikes）→刺傷舌頭或頰黏膜
+        - 齒根過度生長→向齒槽骨方向延伸→壓迫鼻淚管（上顎臼齒）或下頜骨（下顎臼齒）
+        - 門齒過長→無法閉合→進食困難
+        - 齒根膿腫形成→顏面腫脹→骨髓炎
+        - 鼻淚管阻塞→單側溢淚（epiphora）→結膜炎
+        - 進食困難→纖維攝入減少→GI stasis（惡性循環）
+
+clinicalSigns:
+  early:
+    - 進食速度變慢
+    - 對硬食物興趣降低（只吃軟食）
+    - 單側咀嚼
+    - 輕度體重減輕
+    - 糞便顆粒變小
+  progressive:
+    - 食慾明顯下降
+    - 流涎（下巴潮濕 wet dewlap）
+    - 單側溢淚（鼻淚管受壓）
+    - 打噴嚏（鼻淚管阻塞相關）
+    - 顏面不對稱腫脹（齒根膿腫）
+    - 門齒明顯過長或歪斜（飼主可自行觀察）
+    - GI stasis 症狀（糞便減少、腹脹）
+  late:
+    - 完全厭食
+    - 嚴重消瘦
+    - 顏面多處膿腫（反覆破裂排膿）
+    - 骨髓炎（下頜骨或上頜骨）
+    - 鼻腔感染（齒根穿入鼻腔）
+    - 眼眶後膿腫（眼球突出）
+    - 慢性消化道停滯
+
+diagnosis:
+  primaryTests:
+    - name: 口腔檢查（鎮靜下）
+      notes: "完整口腔檢查需鎮靜。使用耳鏡或專用兔口腔鏡（cheek dilator + 光源）檢查臼齒。評估齒冠高度、棘刺、黏膜潰瘍、舌頭損傷。清醒下僅能評估門齒"
+    - name: 頭部 X 光（至少 4 view）
+      notes: "側位、DV、左右斜位。評估齒根長度（正常臼齒齒根不應突出齒槽骨輪廓）。齒根膿腫表現為齒槽骨溶解。門齒齒根評估。鈣化不足表現為齒槽骨密度降低"
+  imaging:
+    - name: 頭部 CT
+      notes: "金標準影像學。精確評估齒根長度、膿腫範圍、骨骼破壞程度。鼻淚管受累評估。手術計畫用。優於 X 光但需全身麻醉"
+    - name: 鼻淚管沖洗
+      notes: "從淚點注入生理食鹽水。通暢時液體從鼻孔流出。阻塞提示上顎臼齒齒根壓迫鼻淚管"
+  additional:
+    - CBC/生化（慢性感染評估、肝腎功能）
+    - 膿腫抽吸物培養與藥敏（Pasteurella multocida 最常見，厭氧菌亦常見）
+    - 淚液分泌試驗（若有溢淚——排除角膜問題）
+    - 飲食史詳細詢問（乾草/顆粒飼料/零食比例）
+
+treatment:
+  principles:
+    - 定期牙齒修整（filing/burring）為慢性管理基石
+    - 飲食矯正預防復發
+    - 膿腫需積極外科處理
+    - 止痛改善進食意願
+    - 併發 GI stasis 需同步治療
+  general:
+    - "臼齒修整：鎮靜下使用高速或低速牙鑽磨平棘刺/過長齒冠（每 4-8 週，依嚴重度）"
+    - "門齒過長：牙鑽修剪（禁用指甲剪——易縱向裂開致齒髓暴露）或拔除"
+    - "嚴重門齒咬合不正：考慮門齒拔除（6 顆全拔——兔無門齒仍可正常進食乾草）"
+    - "齒根膿腫：外科清創 + 長期抗生素。兔膿腫為乾酪性（不可單純引流）——需手術完整切除膿腫囊壁"
+    - "抗生素（膿腫）：Penicillin G procaine/benzathine 42,000-84,000 IU/kg SC q48h（兔膿腫首選）"
+    - "口服抗生素：Azithromycin 30 mg/kg PO SID 或 Enrofloxacin 10-20 mg/kg PO BID（禁用於幼兔）"
+    - "絕對禁忌口服抗生素：Amoxicillin、Ampicillin、Clindamycin、Lincomycin（可致致命性腸道菌群失調）"
+    - "止痛：Meloxicam 0.3-0.5 mg/kg PO SID"
+    - "飲食矯正：增加優質提摩西草（timothy hay）至飲食的 80% 以上"
+    - "減少顆粒飼料至每日 1/8-1/4 杯（每 2 kg 體重）"
+    - "營養支持（厭食兔）：Critical Care (Oxbow) 強制灌食 15-20 mL/kg q6-8h"
+    - "鈣質補充（飲食鈣不足時）：確保苜蓿草比例（幼兔為主食，成兔適量補充）"
+    - "鼻淚管定期沖洗（若有慢性溢淚）"
+
+prognosis: 後天性牙科疾病為慢性進行性——無法治癒但可長期管理。定期牙齒修整（每 4-12 週）配合飲食矯正可維持良好生活品質多年。齒根膿腫治療困難、復發率高（50-80%），需多次手術與長期抗生素。骨髓炎進展時預後不良。先天性門齒咬合不正經門齒拔除後預後良好。早期飲食矯正（充足乾草）可顯著減緩疾病進展。預防（從幼兔開始以乾草為主食）最為重要。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Dental disease in rabbits"
+    url: https://pubmed.ncbi.nlm.nih.gov/26611936/
+    type: review
+    pmid: "26611936"
+  - sourceOrg: Journal of Veterinary Dentistry
+    title: "Rabbit dental disease and calcium metabolism"
+    url: https://pubmed.ncbi.nlm.nih.gov/16514264/
+    type: review
+    pmid: "16514264"
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Facial abscesses in rabbits"
+    url: https://pubmed.ncbi.nlm.nih.gov/23347541/
+    type: review
+    pmid: "23347541"
+  - sourceOrg: Journal of Small Animal Practice
+    title: "Clinical progression of dental disease and treatment in pet rabbits"
+    url: https://pubmed.ncbi.nlm.nih.gov/24372250/
+    type: retrospective
+    pmid: "24372250"
+pubmedQueries:
+  - query: '"dental disease" AND rabbit AND ("malocclusion" OR "treatment" OR "abscess" OR "overgrowth")'
+    frequency: monthly

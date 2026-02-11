@@ -1,0 +1,126 @@
+slug: systemic-inflammatory-response-syndrome
+nameEn: Systemic Inflammatory Response Syndrome
+nameZh: 全身性發炎反應症候群
+bodySystem: emergency
+description: 由感染性或非感染性原因觸發的全身性過度炎症反應，以體溫、心率、呼吸頻率與白血球計數異常為特徵。可進展為敗血症、多器官功能障礙與死亡。
+
+aliases:
+  - { alias: SIRS, language: en }
+  - { alias: 全身性炎症反應, language: zh }
+  - { alias: Sepsis, language: en }
+  - { alias: 敗血症, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: "犬 SIRS 診斷標準（符合 ≥2 項）：體溫 >39.2°C 或 <37.8°C；心率 >120 bpm；呼吸 >20 次/min；WBC >16,000 或 <6,000 /μL 或 >3% band"
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: "貓 SIRS 診斷標準（符合 ≥3 項）：體溫 >39.7°C 或 <37.8°C；心率 >225 bpm 或 <140 bpm；呼吸 >40 次/min；WBC >19,500 或 <5,000 /μL 或 >5% band"
+
+etiology:
+  categories:
+    - name: 感染性 (Sepsis)
+      examples:
+        - 腹膜炎
+        - 肺炎
+        - 腎盂腎炎
+        - 子宮蓄膿
+        - 細菌性心內膜炎
+        - 菌血症
+    - name: 非感染性
+      examples:
+        - 重度創傷
+        - 急性胰臟炎
+        - 免疫介導性溶血性貧血 (IMHA)
+        - 燒傷
+        - 中暑
+        - 腫瘤壞死
+    - name: 病理生理學
+      examples:
+        - 促炎細胞激素過度釋放 (TNF-α、IL-1、IL-6)
+        - 補體系統活化
+        - 凝血瀑布活化 (DIC)
+        - 血管內皮損傷與通透性增加
+        - 組織灌流不足
+
+clinicalSigns:
+  early:
+    - 發燒或低體溫
+    - 心搏過速
+    - 呼吸急促
+    - 高動力性脈搏 (hyperdynamic phase)
+    - 黏膜磚紅色 (injected mucous membranes)
+  progressive:
+    - CRT 延長
+    - 嗜睡與虛弱
+    - 嘔吐、下痢
+    - 少尿
+    - 意識改變
+    - 周邊水腫
+  late:
+    - 低血壓性休克
+    - DIC (瘀斑、出血傾向)
+    - 急性腎損傷
+    - ARDS
+    - 肝衰竭
+    - 多器官功能障礙症候群 (MODS)
+
+diagnosis:
+  primaryTests:
+    - name: CBC
+      notes: "白血球升高伴左移或白血球減少（耗竭）。血小板減少提示 DIC 風險"
+    - name: 血液乳酸
+      notes: ">2.5 mmol/L 提示組織低灌流。連續監測乳酸清除率為重要預後指標"
+  imaging:
+    - name: 聚焦超音波 (AFAST/TFAST)
+      notes: "快速評估胸腹腔積液。尋找感染源（腹水、膿胸等）"
+  additional:
+    - 生化 (肝腎功能、葡萄糖、電解質)
+    - 凝血功能 (PT/aPTT、D-dimer、fibrinogen)
+    - 動脈血氣分析
+    - 血液培養 (懷疑菌血症時)
+    - 尿液分析與培養
+    - C-反應蛋白 (CRP，犬) / 血清澱粉樣蛋白 A (SAA，貓)
+
+treatment:
+  principles:
+    - 早期目標導向液體復甦
+    - 找到並控制感染源
+    - 支持器官功能
+    - 預防 MODS
+  general:
+    - 積極 IV 晶體液復甦 (犬 10-20 mL/kg bolus；貓 5-10 mL/kg bolus，評估反應後重複)
+    - 廣效抗生素 (懷疑敗血症時經驗性使用：ampicillin-sulbactam 30 mg/kg IV q8h + enrofloxacin 5-10 mg/kg IV q24h)
+    - 血壓支持 (norepinephrine 0.1-1 μg/kg/min CRI 若液體復甦無效)
+    - 血糖監測與補充 (低血糖常見)
+    - 止痛 (fentanyl CRI 2-5 μg/kg/h)
+    - 營養支持 (盡早腸道營養)
+    - 新鮮冷凍血漿 (若 DIC 或低白蛋白)
+    - 感染源控制 (外科引流膿瘍、清創等)
+    - 連續監測：心電圖、血壓、尿量、乳酸、血氧
+
+prognosis: SIRS 預後取決於病因與器官受損程度。單純 SIRS 死亡率約 20-30%，進展為敗血症約 40-50%，發展為 MODS 死亡率可達 70-90%。乳酸清除率為最重要的預後指標之一。早期積極治療可顯著改善存活率。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Systemic inflammatory response syndrome, sepsis, and multiple organ dysfunction"
+    url: https://pubmed.ncbi.nlm.nih.gov/21029299/
+    type: review
+    pmid: "21029299"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Evaluation of the Surviving Sepsis Campaign guidelines for resuscitation in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/31368155/
+    type: review
+    pmid: "31368155"
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Definition and clinical assessment of SIRS and sepsis in dogs and cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/11542441/
+    type: consensus
+    pmid: "11542441"
+
+pubmedQueries:
+  - query: '"systemic inflammatory response syndrome" OR "SIRS" OR "sepsis" AND (dog OR cat OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

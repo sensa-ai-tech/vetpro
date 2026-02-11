@@ -1,0 +1,135 @@
+slug: nasal-aspergillosis
+nameEn: Nasal Aspergillosis
+nameZh: 鼻腔麴菌症
+bodySystem: respiratory
+description: 由 Aspergillus fumigatus 為主的麴菌感染鼻腔及鼻竇引起的黴菌性鼻炎。犬以鼻腔型 (sinonasal aspergillosis, SNA) 為主，多見於免疫正常的中大型犬。貓較少見且多為侵襲型 (sino-orbital aspergillosis)。
+
+aliases:
+  - { alias: SNA, language: en }
+  - { alias: Sinonasal Aspergillosis, language: en }
+  - { alias: Fungal Rhinitis, language: en }
+  - { alias: 鼻竇麴菌感染, language: zh }
+  - { alias: 黴菌性鼻炎, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 長頭型 (dolichocephalic) 中大型犬好發。德國牧羊犬、黃金獵犬、澳洲牧牛犬常見。通常為免疫正常犬。Aspergillus fumigatus 為最常見致病種。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓鼻腔麴菌症罕見且表現不同。多為 A. fumigatus 或 A. felis 引起侵襲型感染，可侵犯眼眶及篩板。短頭種貓 (波斯貓) 可能較易感。
+
+etiology:
+  categories:
+    - name: 致病菌
+      examples:
+        - Aspergillus fumigatus (犬最常見)
+        - Aspergillus flavus
+        - Aspergillus niger
+        - Aspergillus felis (貓)
+    - name: 感染機制
+      examples:
+        - 吸入環境中的麴菌孢子 (conidia)
+        - 孢子附著於受損的鼻黏膜定殖
+        - 鼻腔內形成黴菌斑塊 (fungal plaques)
+        - 黴菌毒素及酵素破壞鼻甲骨
+    - name: 風險因子
+      examples:
+        - 長頭型犬 (鼻腔長、通氣量大)
+        - 鼻腔黏膜先前損傷 (異物、外傷)
+        - 免疫抑制 (貓較相關)
+        - 環境暴露 (農場、堆肥)
+
+clinicalSigns:
+  early:
+    - 單側鼻分泌物 (初期漿液性，逐漸轉為黏膿性或血性)
+    - 噴嚏
+    - 偶爾鼻出血 (epistaxis)
+    - 鼻部不適 (用前爪搔鼻)
+  progressive:
+    - 鼻分泌物轉為雙側
+    - 反覆或持續鼻出血
+    - 鼻樑疼痛或腫脹
+    - 鼻平面色素脫失或潰瘍 (depigmentation/ulceration)
+    - 食慾下降
+  late:
+    - 嚴重鼻甲骨破壞 (turbinate destruction)
+    - 面部變形 (鼻骨溶解)
+    - 眼眶侵犯 (眼球突出、視力喪失 — 尤其貓)
+    - 篩板穿透致顱內感染 (罕見但致命)
+    - 前額骨膨隆
+
+diagnosis:
+  primaryTests:
+    - name: 鼻腔內視鏡 (Rhinoscopy)
+      notes: "金標準。直接觀察鼻腔內白色至灰綠色黴菌斑塊 (fungal plaques) 附著於鼻甲骨表面。同時可見鼻甲骨破壞及黏膜充血"
+    - name: 鼻腔 CT
+      notes: "評估病變範圍、鼻甲骨破壞程度、篩板完整性及眼眶/額竇受累。治療前必做。典型見單側鼻甲骨溶解伴軟組織密度充填"
+    - name: Aspergillus 血清抗體 (Agar gel immunodiffusion, AGID)
+      notes: "犬 SNA 敏感度約 60-90%、特異度 >95%。陰性不排除。貓 SNA 敏感度較低"
+  imaging:
+    - name: CT (首選)
+      notes: "評估鼻甲骨破壞、篩板完整性、額竇及眼眶受累。單側鼻甲骨破壞伴對側正常為特徵"
+    - name: MRI
+      notes: "評估顱內延伸及軟組織侵犯"
+    - name: 鼻腔 X 光
+      notes: "可見鼻腔不透明度增加及鼻甲骨破壞，但解析度遠不如 CT"
+  additional:
+    - 黴菌培養 (鼻腔分泌物或組織)
+    - 細胞學 (可見分隔菌絲及分生孢子頭)
+    - 組織病理學 (黏膜活檢見黴菌菌絲侵犯)
+    - 尿液 Aspergillus galactomannan 抗原 (犬敏感度高)
+    - CBC/生化 (通常正常)
+
+treatment:
+  principles:
+    - 局部抗黴菌灌注為犬 SNA 的首選治療
+    - 內視鏡下清除可見黴菌斑塊後再灌注
+    - 全身性抗黴菌藥用於侵襲型或局部治療失敗
+    - 可能需要多次治療
+  medications:
+    - name: Clotrimazole 1% 局部灌注
+      dose: "1% clotrimazole 溶液經前鼻孔及額竇引流管灌注 1 小時"
+      notes: 犬 SNA 一線治療。單次治療成功率約 65-70%，兩次治療可達 85-90%
+    - name: Enilconazole 局部灌注
+      dose: "10 mg/kg 以 1% 溶液灌注 BID × 7-14 天 (經留置引流管)"
+      notes: 替代 clotrimazole。需留置額竇引流管每日灌注
+    - name: Itraconazole
+      dose: "5 mg/kg PO BID (與食物併服)"
+      notes: 全身性治療。用於侵襲型、局部治療失敗或貓。療程通常 2-6 個月
+    - name: Voriconazole
+      dose: "犬 4 mg/kg PO BID"
+      notes: 侵襲型或 itraconazole 無效時。肝毒性需監測
+  general:
+    - 內視鏡下機械清除黴菌斑塊 (debridement)
+    - Clotrimazole 灌注 (debridement 後)
+    - 治療後 4-6 週 CT 追蹤評估反應
+    - 反覆治療可能需要 2-3 次
+    - 支持性治療 (止血、止痛)
+    - 避免免疫抑制藥物
+
+prognosis: 犬鼻腔型麴菌症經局部 clotrimazole 灌注治療成功率高 (約 85-90%，可能需多次治療)。侵襲型 (尤其貓) 預後較差，需長期全身性抗黴菌治療。篩板穿透伴顱內感染預後極差。治癒後復發率約 10-15%。多數犬經治療後可完全恢復。
+
+guidelineRefs:
+  - sourceOrg: Journal of the American Animal Hospital Association
+    title: "Diagnosis and treatment of nasal aspergillosis"
+    url: https://pubmed.ncbi.nlm.nih.gov/24216503/
+    type: review
+    pmid: "24216503"
+  - sourceOrg: Veterinary Clinics of North America Small Animal Practice
+    title: "Sinonasal aspergillosis in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/31813521/
+    type: review
+    pmid: "31813521"
+  - sourceOrg: Medical Mycology
+    title: "Feline upper respiratory tract aspergillosis: advances in diagnosis and treatment"
+    url: https://pubmed.ncbi.nlm.nih.gov/31769848/
+    type: review
+    pmid: "31769848"
+pubmedQueries:
+  - query: '"nasal aspergillosis" AND (dog OR canine) AND ("clotrimazole" OR "treatment" OR "rhinoscopy")'
+    frequency: monthly
+  - query: '"sinonasal aspergillosis" AND (dog OR canine OR cat OR feline) AND ("diagnosis" OR "CT" OR "antifungal")'
+    frequency: monthly

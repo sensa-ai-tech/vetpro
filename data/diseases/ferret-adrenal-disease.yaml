@@ -1,0 +1,116 @@
+slug: ferret-adrenal-disease
+nameEn: Ferret Adrenal Disease
+nameZh: 雪貂腎上腺疾病
+bodySystem: exotic
+description: 雪貂最常見的內分泌疾病，由腎上腺皮質增生、腺瘤或腺癌引起過量性荷爾蒙分泌，導致對稱性脫毛、外陰腫大 (母貂) 及前列腺腫大 (公貂) 等特徵性症狀。
+
+aliases:
+  - { alias: 雪貂腎上腺皮質疾病, language: zh }
+  - { alias: 雪貂腎上腺增生/腫瘤, language: zh }
+  - { alias: Ferret adrenal gland disease, language: en }
+  - { alias: Adrenal cortical disease, language: en }
+  - { alias: Hyperadrenocorticism (ferret), language: en }
+  - { alias: ACD, language: en }
+
+species:
+  - speciesCommon: ferret
+    speciesScientific: Mustela putorius furo
+    prevalence: common
+    notes: 為雪貂最常見腫瘤性/內分泌疾病。通常發生於 3-7 歲，早期絕育 (尤其 <6 月齡) 為最重要風險因子。左側腎上腺較常受累，但雙側受累亦常見。美國比歐洲盛行率更高 (與早期絕育慣例相關)。
+
+etiology:
+  categories:
+    - name: 腫瘤性/增生性
+      examples:
+        - 腎上腺皮質增生 (hyperplasia，約 56%)
+        - 腎上腺皮質腺瘤 (adenoma，約 16%)
+        - 腎上腺皮質腺癌 (adenocarcinoma，約 26%)
+        - 產生過量雄性素 (androgens) 與雌性素 (estrogens)，而非皮質醇
+    - name: 病理生理學
+      examples:
+        - 絕育後性腺反饋消失，GnRH 持續高分泌
+        - 長期 LH 刺激腎上腺皮質網狀帶
+        - 美國式早期絕育 (< 6 月齡) 風險最高
+        - 光週期異常 (室內飼養，過長光照) 可能為促發因子
+
+clinicalSigns:
+  early:
+    - 對稱性進行性脫毛 (通常從尾部或軀幹開始)
+    - 皮膚變薄
+    - 尾部脫毛 (鼠尾外觀，rat tail)
+    - 輕微搔癢
+  progressive:
+    - 廣泛對稱性脫毛 (軀幹、腹部、四肢近端)
+    - 母貂外陰腫大 (vulvar swelling，已絕育母貂)
+    - 公貂前列腺腫大 (排尿困難、滴尿)
+    - 公貂恢復性行為 (嗅聞、騎乘)
+    - 肌肉萎縮
+    - 皮膚色素沉著
+  late:
+    - 嚴重前列腺囊腫/膿瘍 (完全尿道阻塞)
+    - 嚴重貧血 (雌激素誘發骨髓抑制，母貂)
+    - 脾腫大
+    - 腎上腺腺癌局部侵犯 (後腔靜脈，尤其右側)
+    - 後肢無力 (肌肉萎縮)
+
+diagnosis:
+  primaryTests:
+    - name: 血漿性荷爾蒙檢測 (Tennessee Panel)
+      notes: "雌二醇 (estradiol)、雄烯二酮 (androstenedione)、17-hydroxyprogesterone。一項或多項升高具診斷意義。為非侵入性確診首選"
+    - name: 腹部超音波
+      notes: "腎上腺大小測量 (>3.5 mm 寬度為異常)。可評估雙側受累、腫瘤侵犯後腔靜脈程度。前列腺/子宮殘端評估"
+    - name: 臨床表徵
+      notes: "典型脫毛模式 + 外陰腫大 (母) 或前列腺腫大 (公) + 絕育雪貂 = 高度臨床懷疑"
+  imaging:
+    - name: 腹部超音波
+      notes: "首選影像學。評估腎上腺大小與型態。右側腎上腺緊鄰後腔靜脈，需評估侵犯程度"
+    - name: 腹部 X 光
+      notes: "敏感度低，僅大型腫瘤可見。但可評估脾腫大與泌尿道"
+  additional:
+    - CBC (排除雌激素誘發骨髓抑制/貧血)
+    - 尿液分析 (前列腺疾病評估)
+    - 腹部觸診 (腎上腺觸診困難但大型腫瘤可能可觸及)
+    - 術後組織病理學 (確定增生 vs 腺瘤 vs 腺癌)
+
+treatment:
+  principles:
+    - 外科切除為根治性治療 (首選)
+    - GnRH 激動劑為內科替代方案
+    - 前列腺腫大合併尿道阻塞為急症
+    - 雙側疾病需分階段或合併處理
+  medications:
+    - name: Deslorelin (Suprelorin) 植入劑
+      dose: "4.7 mg SC 植入，效期約 8-20 個月"
+      notes: GnRH 激動劑。內科首選。可控制臨床症狀但不治療腫瘤本身。症狀復發時更換植入劑。歐洲及澳洲有核准產品
+    - name: Leuprolide acetate (Lupron Depot)
+      dose: "100-250 μg/kg IM 每 4 週 (短效) 或每 1-3 個月 (長效 depot)"
+      notes: GnRH 激動劑注射劑型。效果類似 deslorelin。費用較高
+    - name: Meloxicam
+      dose: "0.2 mg/kg PO/SC SID"
+      notes: 術後止痛或前列腺炎止痛
+  general:
+    - 腎上腺切除術 (adrenalectomy)：左側相對容易，右側因緊鄰後腔靜脈技術要求高
+    - 前列腺囊腫/膿瘍引流 (緊急尿道阻塞時)
+    - 尿道導管置入 (急性尿道阻塞時)
+    - 術後監測對側腎上腺 (雙側疾病風險)
+    - 預防性 deslorelin 植入 (絕育後可考慮預防)
+    - 增加黑暗時間 (模擬自然光週期，>12 小時黑暗)
+    - 併發胰島素瘤時注意術中/術後血糖監測
+
+prognosis: 外科切除增生或腺瘤預後良好，中位存活時間 2-3 年以上。腺癌預後較差但局部侵犯前手術仍可延長生存。GnRH 激動劑可有效控制症狀，但腫瘤持續生長。前列腺完全阻塞未及時處理可致死。常與胰島素瘤及淋巴瘤並存。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Ferret Adrenal-Associated Endocrinopathy"
+    url: https://pubmed.ncbi.nlm.nih.gov/30017693/
+    type: review
+    pmid: "30017693"
+  - sourceOrg: Journal of Exotic Pet Medicine
+    title: "Deslorelin implants for ferret adrenal disease"
+    url: https://pubmed.ncbi.nlm.nih.gov/22082771/
+    type: review
+    pmid: "22082771"
+
+pubmedQueries:
+  - query: '"ferret" AND "adrenal" AND ("disease" OR "tumor" OR "hyperplasia") AND ("treatment" OR "deslorelin")'
+    frequency: monthly

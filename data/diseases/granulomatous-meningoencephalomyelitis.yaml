@@ -1,0 +1,119 @@
+slug: granulomatous-meningoencephalomyelitis
+nameEn: Granulomatous Meningoencephalomyelitis
+nameZh: 肉芽腫性腦脊髓膜炎
+bodySystem: neurology
+description: 中樞神經系統特發性非感染性炎症性疾病，以血管周圍單核球/組織球浸潤形成肉芽腫為特徵。為犬 MUO 中最常見的亞型。
+
+aliases:
+  - { alias: GME, language: en }
+  - { alias: Reticulosis, language: en }
+  - { alias: MUO, language: en }
+  - { alias: 肉芽腫性腦膜腦脊髓炎, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 好發於小型犬品種：Toy Poodle、Maltese、Chihuahua、Yorkshire Terrier、Dachshund。通常 3-8 歲發病，雌性略多。佔犬中樞神經炎症性疾病的重要比例。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓極罕見報告。貓的中樞神經炎症性疾病病因分布不同 (FIP 為主)。
+
+etiology:
+  categories:
+    - name: 免疫介導性 (疑似)
+      examples:
+        - 自體免疫反應針對中樞神經系統抗原
+        - T 細胞介導的遲發型過敏反應
+        - 可能與遺傳背景相關的免疫失調
+    - name: 分型
+      examples:
+        - 瀰漫型 (disseminated) — 最常見，多灶性病灶
+        - 局灶型 (focal) — 單一腫塊樣病灶，可模擬腫瘤
+        - 視神經型 (ocular) — 累及視神經與視交叉
+
+clinicalSigns:
+  early:
+    - 取決於病灶位置 (前腦、腦幹、脊髓、視神經)
+    - 急性或亞急性發病
+    - 嗜睡與食慾下降
+  progressive:
+    - 前腦病灶：癲癇發作、行為改變、轉圈行為
+    - 腦幹病灶：頭部歪斜、眼球震顫、顱神經異常
+    - 脊髓病灶：不全癱瘓、運動失調、頸部疼痛
+    - 視神經型：急性失明、瞳孔散大、視乳頭水腫
+  late:
+    - 多灶性神經功能障礙 (瀰漫型)
+    - 意識程度下降
+    - 難治性癲癇發作
+    - 嚴重顱內壓升高
+
+diagnosis:
+  primaryTests:
+    - name: MRI
+      notes: "金標準影像學。瀰漫型：多灶性 T2W/FLAIR 高信號，不規則對比增強。局灶型：單一佔位病灶，可模擬腫瘤。視神經型：視神經增粗"
+    - name: 腦脊髓液分析 (CSF)
+      notes: "單核球性或混合性細胞增多 (典型 >5 cells/μL)，蛋白質升高。非特異性但有助於診斷"
+    - name: 神經學檢查
+      notes: "定位病灶。多灶性神經缺損高度提示炎症性疾病"
+  imaging:
+    - name: 腦部 MRI
+      notes: "首選影像。評估病灶分布、大小與對比增強模式"
+    - name: 脊髓 MRI
+      notes: "脊髓型時需要。脊髓內 T2W 高信號"
+  additional:
+    - 感染性疾病篩檢 (排除感染性腦炎：Toxoplasma、Neospora、CDV、真菌)
+    - 血清抗體檢測 (Toxoplasma IgG/IgM、Neospora)
+    - CBC/生化 (通常正常)
+    - 確定診斷需腦組織病理學 (生前以 MRI + CSF + 臨床反應做假定診斷)
+
+treatment:
+  principles:
+    - 免疫抑制治療為基礎
+    - 多藥聯合免疫抑制通常優於單藥
+    - 治療反應可作為診斷輔助 (對免疫抑制有反應支持 MUO 診斷)
+    - 需長期維持治療，停藥易復發
+  medications:
+    - name: Prednisolone
+      dose: "1-2 mg/kg PO BID (誘導期)，逐步減量至 0.5-1 mg/kg QOD (維持)"
+      notes: 一線藥物。長期使用注意類固醇副作用 (PU/PD、肝病、醫源性 Cushing)
+    - name: Cytarabine (Ara-C)
+      dose: "50 mg/m² SC BID × 2 天，每 3-4 週"
+      notes: 最常使用的二線免疫抑制劑。可穿越血腦屏障。與 prednisolone 合併使用
+    - name: Mycophenolate mofetil
+      dose: "10-20 mg/kg PO BID"
+      notes: 二線藥物，類固醇減量期輔助。胃腸道副作用常見
+    - name: Cyclosporine
+      dose: "5-10 mg/kg PO BID"
+      notes: 替代性二線藥物。需監測血中濃度
+    - name: Leflunomide
+      dose: "2-4 mg/kg PO SID"
+      notes: 替代性免疫抑制劑。需監測肝功能
+  general:
+    - 癲癇發作控制 (phenobarbital、levetiracetam)
+    - 顱內壓管理 (Mannitol 0.5-1 g/kg IV 急性期)
+    - 定期神經學評估監測反應
+    - 定期 MRI 追蹤 (局灶型)
+
+prognosis: 預後差異大。瀰漫型中位存活約 3-6 個月 (僅類固醇) 至 >14 個月 (聯合免疫抑制)。局灶型預後相對較佳，中位存活可達 12-18 個月。視神經型視力恢復不一。約 25-50% 在治療下可維持穩定數月至數年。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Signalment, clinical signs, and outcome of dogs with meningoencephalomyelitis of unknown origin treated with immunosuppressive protocols"
+    url: https://pubmed.ncbi.nlm.nih.gov/25929341/
+    type: research
+    pmid: "25929341"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "A multicenter randomized controlled trial of cytosine arabinoside vs. mycophenolate mofetil for treatment of MUO in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/31389080/
+    type: research
+    pmid: "31389080"
+  - sourceOrg: Veterinary Journal
+    title: "Meningoencephalomyelitis of unknown origin — a review"
+    url: https://pubmed.ncbi.nlm.nih.gov/24878264/
+    type: review
+    pmid: "24878264"
+pubmedQueries:
+  - query: '"granulomatous meningoencephalomyelitis" OR "MUO" AND dog AND ("immunosuppressive" OR "treatment" OR "review")'
+    frequency: monthly

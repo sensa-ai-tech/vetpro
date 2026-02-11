@@ -1,0 +1,150 @@
+slug: protein-losing-enteropathy
+nameEn: Protein-Losing Enteropathy
+nameZh: 蛋白流失性腸病
+bodySystem: gastrointestinal
+description: 因腸道黏膜病變導致血漿蛋白 (白蛋白及球蛋白) 大量流失至腸腔的臨床症候群。常見原因包括炎症性腸病、腸道淋巴管擴張及腸道淋巴瘤。低白蛋白血症可引起腹水、胸水及周邊水腫，嚴重者可致血栓栓塞。
+
+aliases:
+  - { alias: PLE, language: en }
+  - { alias: Intestinal Lymphangiectasia, language: en }
+  - { alias: 腸淋巴管擴張, language: zh }
+  - { alias: 蛋白質流失性腸病, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: Yorkshire Terrier、Soft-Coated Wheaten Terrier、Rottweiler、German Shepherd、Shar-Pei、Basenji 為好發品種。Wheaten Terrier 有同時發生 PLE + PLN 的品種特異性。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓以小腸淋巴瘤為 PLE 最常見原因。IBD 引起的 PLE 在貓較犬少見。
+
+etiology:
+  categories:
+    - name: 炎症性
+      examples:
+        - 炎症性腸病 (IBD — 淋巴漿細胞性腸炎最常見)
+        - 嗜酸性腸炎
+        - 肉芽腫性腸炎
+    - name: 腸道淋巴管擴張 (Lymphangiectasia)
+      examples:
+        - 原發性 (先天性淋巴管發育異常)
+        - 繼發性 (慢性炎症致淋巴管阻塞)
+        - 品種相關 (Yorkshire Terrier)
+    - name: 腫瘤性
+      examples:
+        - 腸道淋巴瘤 (尤其貓)
+        - 腸道腺癌
+    - name: 感染性
+      examples:
+        - Histoplasmosis (真菌性腸炎)
+        - Pythiosis (犬)
+        - 嚴重寄生蟲感染 (鉤蟲、鞭蟲 — 幼犬)
+    - name: 其他
+      examples:
+        - 腸套疊 (慢性部分梗阻)
+        - 充血性心衰竭 (靜脈壓升高致淋巴管壓力增加)
+
+clinicalSigns:
+  early:
+    - 慢性間歇性下痢 (小腸型)
+    - 體重減輕
+    - 食慾變化 (可能正常、增加或減少)
+    - 被毛品質變差
+  progressive:
+    - 持續性下痢伴排便量增加
+    - 明顯消瘦
+    - 低白蛋白血症徵象：腹水、周邊水腫 (四肢、腹壁)
+    - 嘔吐
+    - 腹鳴 (borborygmus)
+    - 排氣增加
+  late:
+    - 嚴重腹水/胸水 (第三間隙液體積聚)
+    - 呼吸困難 (胸水)
+    - 血栓栓塞 (抗凝血酶 III 流失)
+    - 嚴重營養不良/惡病質
+    - 低鈣血症 (低白蛋白結合鈣)
+    - 低鎂血症
+
+diagnosis:
+  primaryTests:
+    - name: 血清白蛋白/球蛋白
+      notes: "白蛋白及球蛋白同時降低 (panhypoproteinemia) 為 PLE 特徵。白蛋白 <2.0 g/dL 有臨床意義。<1.5 g/dL 需考慮血漿補充"
+    - name: 內視鏡 + 組織病理學
+      notes: "金標準確診。多處切片 (十二指腸、空腸、迴腸、結腸)。可見淋巴漿細胞浸潤、淋巴管擴張 (dilated lacteals)。迴腸切片需迴腸鏡或手術"
+    - name: 腹部超音波
+      notes: "腸壁增厚、腸壁層次結構異常、腸繫膜淋巴結腫大。腸壁高回音條紋 (mucosal striations) 提示淋巴管擴張。腹水偵測"
+  imaging:
+    - name: 腹部超音波 (首選)
+      notes: "評估腸壁變化、淋巴結、腹水。超音波引導細針抽吸腫大淋巴結"
+    - name: 腹部 CT
+      notes: "懷疑腫瘤或術前評估時"
+  additional:
+    - CBC (淋巴球減少症 — 腸道流失淋巴球)
+    - 生化全項 (低白蛋白、低膽固醇、低鈣、低鎂)
+    - Cobalamin (Vit B12) — 常降低
+    - 葉酸 (folate)
+    - Spec cPL/fPL (排除胰臟炎)
+    - 糞便檢查 (排除寄生蟲)
+    - TLI (排除 EPI)
+    - 抗凝血酶 III 活性 (評估血栓風險)
+    - 尿液分析 + UPC (排除同時 PLN — 尤其 Wheaten Terrier)
+    - 全層切片 (full-thickness biopsy) — 懷疑淋巴瘤或內視鏡切片不足時
+
+treatment:
+  principles:
+    - 飲食管理為治療核心 (超低脂飲食)
+    - 免疫抑制治療用於 IBD 相關 PLE
+    - 補充 cobalamin
+    - 白蛋白極低時需支持性補充
+    - 抗血栓預防 (AT-III 流失致高凝狀態)
+  medications:
+    - name: Prednisolone
+      dose: "2 mg/kg PO SID × 2-4 週，逐漸減量"
+      notes: IBD 相關 PLE 一線免疫抑制。類固醇反應率約 50-60%
+    - name: Chlorambucil
+      dose: "4-6 mg/m² PO 隔日"
+      notes: 類固醇反應不佳時加用。與 prednisolone 併用。貓淋巴瘤亦有效
+    - name: Mycophenolate mofetil
+      dose: "10 mg/kg PO BID"
+      notes: 替代免疫抑制劑。類固醇難治性 PLE 可考慮。消化道副作用需監測
+    - name: Clopidogrel
+      dose: "2 mg/kg PO SID"
+      notes: 抗血小板。白蛋白 <2.0 g/dL 時建議預防性抗血栓
+    - name: Cobalamin (Vit B12)
+      dose: "犬 250-1500 μg SC q1-2wk (依體重)；貓 250 μg SC q1-2wk"
+      notes: 多數 PLE 病例 B12 降低。口服高劑量 (1 mg/day) 亦可考慮
+  general:
+    - 超低脂飲食 (<15% DM fat) — 淋巴管擴張的核心治療
+    - 替代使用中鏈三酸甘油酯 (MCT oil) 為脂肪來源 (不經淋巴管吸收)
+    - 白蛋白 <1.5 g/dL：新鮮冷凍血漿或人血白蛋白輸注
+    - Cobalamin 補充
+    - 抗血栓預防 (clopidogrel ± 低劑量 aspirin)
+    - 腹水穿刺引流 (呼吸困難或腹脹嚴重時)
+    - 驅蟲 (排除寄生蟲)
+    - 定期追蹤白蛋白、體重、糞便評分
+
+prognosis: PLE 預後差異大，取決於根本原因。食物反應性 PLE 預後最佳。淋巴管擴張經超低脂飲食管理多數可穩定。IBD 相關 PLE 中白蛋白恢復 >2.0 g/dL 為正面預後指標。白蛋白持續 <1.5 g/dL 預後不良 (中位存活約 2-5 個月)。Yorkshire Terrier PLE 預後較差。血栓栓塞為重要死因。貓腸道淋巴瘤引起 PLE 經化療中位存活約 3-9 個月。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "ACVIM consensus statement on protein-losing enteropathy in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/34346523/
+    type: consensus
+    pmid: "34346523"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Protein-losing enteropathy in Yorkshire Terriers: retrospective study and outcome"
+    url: https://pubmed.ncbi.nlm.nih.gov/23952327/
+    type: research
+    pmid: "23952327"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Clinicopathological features and outcome of dogs with protein-losing enteropathy"
+    url: https://pubmed.ncbi.nlm.nih.gov/17542367/
+    type: research
+    pmid: "17542367"
+pubmedQueries:
+  - query: '"protein-losing enteropathy" AND (dog OR canine) AND ("treatment" OR "outcome" OR "prognosis")'
+    frequency: monthly
+  - query: '"intestinal lymphangiectasia" AND (dog OR canine) AND ("diet" OR "low fat" OR "management")'
+    frequency: monthly

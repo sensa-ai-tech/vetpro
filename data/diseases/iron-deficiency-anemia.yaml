@@ -1,0 +1,122 @@
+slug: iron-deficiency-anemia
+nameEn: Iron Deficiency Anemia
+nameZh: 缺鐵性貧血
+bodySystem: hematology
+description: 體內鐵儲備不足導致血紅素合成障礙所引起的小球性低色素性貧血。成年犬貓最常見的原因為慢性失血（消化道出血、嚴重體外寄生蟲），幼年動物則可能因快速生長與乳汁鐵含量不足造成。
+
+aliases:
+  - { alias: IDA, language: en }
+  - { alias: Iron Deficiency, language: en }
+  - { alias: 鐵質缺乏性貧血, language: zh }
+  - { alias: 缺鐵性血紅素低下, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 成犬多因慢性消化道失血（腫瘤、潰瘍、鈎蟲感染）。幼犬因快速生長期鐵需求高，大量跳蚤/鈎蟲感染可造成嚴重缺鐵。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓較犬少見。慢性消化道出血（IBD、腫瘤）、嚴重跳蚤感染（尤其幼貓）為主要原因。
+
+etiology:
+  categories:
+    - name: 慢性失血（成年動物最常見）
+      examples:
+        - 消化道腫瘤（胃腸道間質瘤 GIST、腺癌、淋巴瘤）
+        - 消化道潰瘍（NSAID 使用、肥大細胞瘤釋放組織胺）
+        - 嚴重鈎蟲感染 (Ancylostoma)
+        - 嚴重跳蚤感染（尤其幼犬貓）
+        - 泌尿道慢性出血
+        - 凝血障礙（慢性低度出血）
+    - name: 攝取不足/吸收不良
+      examples:
+        - 幼年動物快速生長期（乳汁含鐵低）
+        - 嚴重營養不良
+        - 腸道吸收障礙
+    - name: 其他
+      examples:
+        - 反覆採血（實驗動物、頻繁血液檢查的小型犬）
+        - 慢性血液透析（鐵流失）
+
+clinicalSigns:
+  early:
+    - 運動不耐
+    - 輕度嗜睡
+    - 輕微蒼白黏膜
+  progressive:
+    - 明顯蒼白黏膜
+    - 心搏過速
+    - 收縮期心雜音（貧血性功能性雜音）
+    - 食慾下降
+    - 異食癖 (pica)（舔食泥土、石頭）
+  late:
+    - 嚴重虛弱
+    - 呼吸困難
+    - 黑便 (melena) 或血便（若消化道出血為病因）
+    - 體重減輕與發育不良（幼年動物）
+    - 心臟衰竭（長期嚴重貧血）
+
+diagnosis:
+  primaryTests:
+    - name: CBC
+      notes: "小球性低色素性貧血 (microcytic hypochromic)。MCV 降低、MCHC 降低。紅血球大小不等 (anisocytosis)。可有血小板增多 (thrombocytosis，反應性)"
+    - name: 血液抹片
+      notes: "小紅血球、低色素 (中央蒼白區擴大)、pencil cells/ovalocytes、poikilocytosis、可見血小板增多"
+    - name: 血清鐵與鐵蛋白
+      notes: "血清鐵降低 (<60 μg/dL)。鐵蛋白降低（最可靠的鐵儲備指標，但犬正常值變異大）。TIBC (total iron binding capacity) 升高"
+  imaging:
+    - name: 腹部超音波
+      notes: "尋找消化道腫塊（慢性失血來源）"
+    - name: 胸腔 X 光
+      notes: "排除肺轉移（若懷疑消化道腫瘤）"
+  additional:
+    - 糞便潛血檢查 (fecal occult blood test)
+    - 糞便檢查（鈎蟲卵、鞭蟲卵）
+    - 內視鏡檢查（上消化道/下消化道出血評估）
+    - 網狀紅血球計數（早期可能再生不良，鐵補充後轉為再生性）
+    - 骨髓穿刺（鐵染色：儲存鐵缺乏，環形鐵母細胞缺如）
+
+treatment:
+  principles:
+    - 找出並治療慢性失血來源為首要
+    - 鐵劑補充恢復鐵儲備
+    - 嚴重貧血需輸血穩定
+    - 驅蟲（若寄生蟲為病因）
+  medications:
+    - name: Ferrous sulfate
+      dose: "犬：100-300 mg PO SID；貓：50-100 mg PO SID"
+      notes: 口服鐵劑首選。隨餐或飯後給予減少腸胃刺激。療程通常 1-3 個月（直至鐵蛋白恢復正常後再繼續 1 個月）
+    - name: Iron dextran
+      dose: "10-20 mg/kg IM（分次注射）"
+      notes: 口服不耐受或吸收不良時使用。注意過敏反應風險。給予前先測試劑量
+    - name: Fenbendazole
+      dose: "50 mg/kg PO SID × 3 天"
+      notes: 鈎蟲感染的驅蟲治療
+  general:
+    - 嚴重貧血（PCV <15%）輸注 pRBC
+    - 切除出血性消化道腫瘤（若可手術）
+    - 停止或調整 NSAID 使用（若為潰瘍原因）
+    - 跳蚤控制（幼年動物嚴重跳蚤感染）
+    - 飲食補充高鐵食物（肝臟）
+    - 定期 CBC 監測治療反應（每 2-4 週）
+    - 網狀紅血球反應通常在鐵補充 3-5 天後出現
+
+prognosis: 找到並矯正慢性失血來源後預後良好。鐵劑補充通常在 2-4 週內可見 PCV 改善。寄生蟲引起的缺鐵性貧血驅蟲加鐵補充後恢復佳。消化道腫瘤引起者預後取決於腫瘤類型與分期。幼年動物鐵補充反應通常迅速。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Clinical Pathology
+    title: "Iron deficiency anemia in dogs and cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/18366509/
+    type: review
+    pmid: "18366509"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Iron status and erythrocyte volume in dogs with chronic enteropathy"
+    url: https://pubmed.ncbi.nlm.nih.gov/20590956/
+    type: research
+    pmid: "20590956"
+
+pubmedQueries:
+  - query: '"iron deficiency" AND (dog OR cat OR canine OR feline) AND ("anemia" OR "microcytic" OR "ferritin")'
+    frequency: monthly

@@ -1,0 +1,88 @@
+slug: luxating-shoulder
+nameEn: Shoulder Luxation
+nameZh: 肩關節脫位
+bodySystem: orthopedic
+description: 肩關節的完全或不完全脫位，可為創傷性或先天性。小型犬較常見先天性肩關節內側脫位，大型犬以創傷性外側脫位為主。
+
+aliases:
+  - { alias: 肩脫臼, language: zh }
+  - { alias: Shoulder Dislocation, language: en }
+  - { alias: Glenohumeral Luxation, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 小型犬（Toy breeds）先天性內側脫位較常見。大型犬以創傷性為主。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 多為創傷性（高處墜落、車禍）。
+
+etiology:
+  categories:
+    - name: 創傷性
+      examples:
+        - 車禍
+        - 高處墜落
+        - 激烈運動或打鬥
+    - name: 先天性/發育性
+      examples:
+        - 關節囊鬆弛
+        - 韌帶發育不全
+        - 關節盂發育不良
+    - name: 好發品種
+      examples:
+        - 小型犬（Toy Poodle、Chihuahua、Pomeranian）
+
+clinicalSigns:
+  early:
+    - 突發性跛行
+    - 患肢不負重
+    - 肩關節疼痛與腫脹
+  progressive:
+    - 肩關節活動範圍受限
+    - 肌肉萎縮
+    - 慢性跛行（先天性）
+  late:
+    - 關節纖維化
+    - 續發性退化性關節病
+    - 永久性運動功能障礙
+
+diagnosis:
+  primaryTests:
+    - name: 骨科觸診
+      notes: "可觸及肱骨頭移位、肩關節不穩定。需與對側比較。"
+  imaging:
+    - name: X光（肩關節正側位）
+      notes: "可見肱骨頭脫離關節盂。需評估是否有伴隨骨折。"
+    - name: CT
+      notes: "評估骨性結構異常，術前規劃用"
+  additional:
+    - 關節液分析（排除感染性關節炎）
+    - MRI（評估軟組織損傷）
+
+treatment:
+  principles:
+    - 急性創傷性脫位應嘗試閉鎖復位
+    - 復發性或先天性脫位需手術穩定
+    - 術後限制運動 4-6 週
+  general:
+    - "閉鎖復位 + Velpeau sling 固定 2-3 週（急性創傷性）"
+    - "開放復位 + 關節囊重建（復發性）"
+    - "關節固定術 arthrodesis（嚴重病例）"
+    - "止痛：NSAIDs（meloxicam 犬 0.1 mg/kg PO SID）"
+    - 物理復健（術後）
+
+prognosis: 急性創傷性脫位閉鎖復位成功率約 50%，復發者需手術。手術後功能恢復良好。先天性脫位手術效果較不穩定。關節固定術後運動功能會有一定程度受限。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Surgery
+    title: "Shoulder joint luxation in dogs and cats: A retrospective study"
+    url: https://pubmed.ncbi.nlm.nih.gov/19691581/
+    type: study
+    pmid: "19691581"
+
+pubmedQueries:
+  - query: '"shoulder luxation" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "surgical")'
+    frequency: monthly

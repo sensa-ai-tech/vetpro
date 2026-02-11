@@ -1,0 +1,116 @@
+slug: ferret-insulinoma
+nameEn: Ferret Insulinoma
+nameZh: 雪貂胰島素瘤
+bodySystem: exotic
+description: 雪貂胰臟 beta 細胞功能性腫瘤，持續分泌過量胰島素導致反覆性低血糖發作，為雪貂第二常見的腫瘤性疾病，多見於中老年雪貂 (4-7 歲)。
+
+aliases:
+  - { alias: 雪貂胰島細胞瘤, language: zh }
+  - { alias: 雪貂低血糖症, language: zh }
+  - { alias: Beta cell tumor (ferret), language: en }
+  - { alias: Islet cell tumor, language: en }
+  - { alias: Pancreatic insulinoma, language: en }
+
+species:
+  - speciesCommon: ferret
+    speciesScientific: Mustela putorius furo
+    prevalence: common
+    notes: 雪貂第二常見腫瘤 (僅次於腎上腺疾病)。通常 4-7 歲發病。多數為惡性但生物行為相對良性，轉移率低但多中心病灶常見。常與腎上腺疾病並存。
+
+etiology:
+  categories:
+    - name: 腫瘤性
+      examples:
+        - 胰臟 beta 細胞腫瘤 (insulinoma)
+        - 多數為低度惡性腺瘤或腺癌
+        - 持續分泌胰島素不受血糖負回饋調控
+        - 多中心病灶常見 (胰臟多處微小腫瘤)
+    - name: 風險因素
+      examples:
+        - 中老年 (4-7 歲)
+        - 高碳水化合物飲食可能為促發因子 (爭議中)
+        - 遺傳易感性 (品種選育因素)
+
+clinicalSigns:
+  early:
+    - 間歇性後肢無力
+    - 呆滯凝視 (starring episodes)
+    - 食慾時好時壞
+    - 嗜睡加重
+    - 症狀進食後改善
+  progressive:
+    - 明顯後肢軟癱 (尤其空腹或運動後)
+    - 流涎 (hypersalivation，前爪抓口)
+    - 噁心嘔吐
+    - 肌肉震顫
+    - 嗜睡/反應遲鈍
+    - 體重增加 (胰島素促進脂肪合成)
+  late:
+    - 癲癇發作 (全身性或局部性)
+    - 昏迷
+    - 低體溫
+    - 心搏過緩
+    - 低血糖性休克
+
+diagnosis:
+  primaryTests:
+    - name: 空腹血糖
+      notes: "血糖 <60 mg/dL (3.3 mmol/L) 配合臨床症狀高度懷疑。禁食 4-6 小時 (不超過 6 小時！雪貂對低血糖耐受差)。正常雪貂血糖 65-120 mg/dL"
+    - name: 血漿胰島素濃度
+      notes: "血糖低時胰島素正常或升高即有診斷意義 (正常應該降低)。胰島素/血糖比值 (amended insulin-to-glucose ratio, AIGR) >30 高度提示"
+    - name: CBC/生化
+      notes: "低血糖為主要發現。其他指數通常正常。排除肝臟疾病等其他低血糖原因"
+  imaging:
+    - name: 腹部超音波
+      notes: "胰臟結節偵測敏感度中等 (腫瘤常 <1 cm)。經驗豐富操作者可能發現低迴音結節。同時評估腎上腺 (常併發)"
+    - name: 腹部 CT
+      notes: "對微小病灶偵測優於超音波，但可及性受限"
+  additional:
+    - 術中探查 (直接觸診胰臟為最敏感的偵測方法)
+    - 術後組織病理學 (確認腫瘤類型與良惡性)
+    - 肝功能檢查 (排除肝源性低血糖)
+
+treatment:
+  principles:
+    - 外科部分胰臟切除為首選 (可延長緩解期)
+    - 內科管理低血糖 (無法手術或術後復發)
+    - 緊急低血糖發作需即刻處理
+    - 飲食管理輔助血糖穩定
+    - 常需合併處理腎上腺疾病
+  medications:
+    - name: Prednisolone
+      dose: "0.5-2 mg/kg PO BID"
+      notes: 促進糖質新生，拮抗胰島素作用。內科管理基石。從低劑量開始，逐漸增加至控制症狀。長期使用注意副作用
+    - name: Diazoxide
+      dose: "5-30 mg/kg PO BID (分 2-3 次給予)"
+      notes: 抑制胰島素分泌、促進肝臟糖質新生。prednisolone 效果不佳時加用。從 5 mg/kg 開始逐漸增加
+    - name: Dextrose 50%
+      dose: "0.5-2 mL 稀釋後緩慢 IV (急性低血糖危象)"
+      notes: 緊急搶救用。Bolus 後持續 5% dextrose 輸液維持。過量 dextrose 可能刺激更多胰島素分泌 (反彈性低血糖)
+  general:
+    - 少量多餐 (每 4-6 小時餵食)
+    - 高蛋白低碳水化合物飲食 (避免含糖零食)
+    - 避免長時間禁食
+    - 避免劇烈活動 (減少低血糖誘發)
+    - 部分胰臟切除術 (結節摘除 ± 部分胰臟切除)
+    - 術中仔細觸診全胰臟 (多中心病灶)
+    - 居家緊急處理：低血糖發作時塗蜂蜜或糖漿於牙齦 (不可灌食避免嗆咳)
+    - 定期血糖監測 (每 2-4 週)
+
+prognosis: 外科切除後中位無症狀期約 1-1.5 年 (多中心故常復發)。內科管理中位存活約 1-2 年。合併外科 + 術後內科管理預後最佳 (中位存活 2-3 年)。急性低血糖危象如未及時治療可致死。與腎上腺疾病並存時需同時管理兩者。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Insulinoma in Ferrets"
+    url: https://pubmed.ncbi.nlm.nih.gov/30017694/
+    type: review
+    pmid: "30017694"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Predictors of survival in ferrets with insulinoma"
+    url: https://pubmed.ncbi.nlm.nih.gov/18241027/
+    type: review
+    pmid: "18241027"
+
+pubmedQueries:
+  - query: '"ferret" AND "insulinoma" AND ("treatment" OR "prognosis" OR "management")'
+    frequency: monthly

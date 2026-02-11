@@ -1,0 +1,143 @@
+slug: pulmonary-edema
+nameEn: Pulmonary Edema
+nameZh: 肺水腫
+bodySystem: respiratory
+description: 肺間質及肺泡腔內異常液體積聚，導致氣體交換障礙的急性至亞急性呼吸道緊急狀況。依病因分為心因性 (最常見，充血性心衰竭) 及非心因性。為獸醫急診常見的呼吸窘迫原因。
+
+aliases:
+  - { alias: Cardiogenic Pulmonary Edema, language: en }
+  - { alias: Non-cardiogenic Pulmonary Edema, language: en }
+  - { alias: NCPE, language: en }
+  - { alias: 心因性肺水腫, language: zh }
+  - { alias: 非心因性肺水腫, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 心因性肺水腫為充血性心衰竭 (CHF) 最常見表現。二尖瓣黏液瘤性退化 (MMVD) 及擴張型心肌病 (DCM) 為犬主要心因性原因。非心因性見於電擊傷、癲癇後、上呼吸道阻塞。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: HCM 相關充血性心衰竭為貓最常見原因。貓的非心因性肺水腫見於尿道阻塞解除後、輸液過量。
+
+etiology:
+  categories:
+    - name: 心因性 (高靜水壓)
+      examples:
+        - 左心衰竭 (二尖瓣逆流、DCM、HCM)
+        - 心律不整 (快速心室率心房顫動)
+        - 容量過載 (輸液過量)
+        - 二尖瓣腱索斷裂 (急性重度逆流)
+    - name: 非心因性 (通透性增加)
+      examples:
+        - 急性呼吸窘迫症候群 (ARDS)
+        - 肺炎 (感染性)
+        - 吸入性肺損傷 (煙霧、毒氣)
+        - 敗血症/SIRS
+        - 胰臟炎
+    - name: 非心因性 (其他機制)
+      examples:
+        - 神經性肺水腫 (癲癇後、頭部外傷)
+        - 電擊傷
+        - 上呼吸道阻塞後 (negative pressure PE)
+        - 再膨脹性肺水腫 (快速胸腔引流後)
+        - 高海拔肺水腫
+
+clinicalSigns:
+  early:
+    - 呼吸頻率增加 (犬 >40 次/分、貓 >30 次/分)
+    - 輕度呼吸費力
+    - 咳嗽 (犬較常見，心因性典型為夜間軟咳)
+    - 不安/無法舒適躺臥
+    - 運動不耐
+  progressive:
+    - 明顯呼吸困難 (dyspnea)
+    - 端坐呼吸 (orthopnea)
+    - 肺部濕囉音 (crackles)
+    - 心搏過速
+    - 開口呼吸 (貓)
+    - 咳出粉紅色泡沫狀分泌物 (嚴重)
+  late:
+    - 嚴重呼吸窘迫
+    - 發紺
+    - 休克
+    - 意識障礙
+    - 呼吸衰竭
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔 X 光
+      notes: "心因性：犬典型為肺門周圍至尾背側肺葉的肺泡型浸潤；貓為瀰漫性或斑塊狀分佈。同時評估心臟大小 (VHS)"
+    - name: 心臟超音波 (ECHO)
+      notes: "區分心因性 vs 非心因性的關鍵。評估心臟結構、收縮功能、瓣膜逆流、LA/Ao ratio"
+    - name: NT-proBNP
+      notes: "犬 >900 pmol/L 或貓 >270 pmol/L 高度提示心因性。快速 SNAP test 可用於急診鑑別"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "首選。評估肺水腫分佈型態及心臟大小。心因性犬心臟通常增大"
+    - name: 肺部超音波 (Vet BLUE/TFAST)
+      notes: "快速偵測 B-lines (肺間質液體)。可在未穩定前床旁執行。不需特殊保定"
+    - name: 心臟超音波 (FOCUS/完整)
+      notes: "FOCUS 快速評估 LA 大小及心包膜積液。穩定後完整 ECHO 評估"
+  additional:
+    - SpO2/動脈血氣分析
+    - CBC/生化 (肝腎功能、電解質)
+    - 心電圖 (心律不整評估)
+    - 血壓測量
+    - 凝血功能 (懷疑 DIC/ARDS)
+
+treatment:
+  principles:
+    - 心因性肺水腫以利尿劑為核心急救
+    - 氧氣治療為首要支持措施
+    - 最小化壓力及保定
+    - 非心因性需治療根本原因
+  medications:
+    - name: Furosemide
+      dose: "急性：犬 2-4 mg/kg IV q1-2h 至呼吸改善；貓 1-2 mg/kg IV q1-2h。維持：1-2 mg/kg PO BID-TID"
+      notes: 心因性肺水腫一線利尿劑。急性期靜脈給藥 + CRI (1 mg/kg/h) 較 bolus 效果穩定
+    - name: Pimobendan
+      dose: "犬 0.25-0.3 mg/kg PO BID；貓 1.25 mg/cat PO BID"
+      notes: 正性肌力+血管擴張。心因性 CHF 急性穩定後即開始。犬 MMVD 及 DCM 均有效
+    - name: Nitroglycerin ointment
+      dose: "犬 1/4-1 inch 塗耳廓內側 q6-8h"
+      notes: 靜脈擴張減少前負荷。急性心因性肺水腫輔助用藥。效果有爭議
+    - name: Butorphanol
+      dose: "0.2-0.4 mg/kg IM/IV"
+      notes: 輕度鎮靜+止咳。減少焦慮及呼吸做功。尤其適用貓
+  general:
+    - 氧氣治療 (氧氣籠、flow-by、鼻導管)
+    - 最小化保定及壓力
+    - 心因性：Furosemide IV + Pimobendan + ACE inhibitor (穩定後加 Enalapril 0.5 mg/kg PO BID)
+    - 非心因性：治療根本原因 + 支持療法
+    - 嚴格限制輸液量 (心因性)
+    - 監測呼吸頻率/SpO2 每 1-2 小時
+    - 居家安靜呼吸率 (SRR) 監測 (<30 次/分為目標)
+    - 輕度限鈉飲食 (長期管理)
+
+emergencyNotes: 心因性肺水腫為心臟急症。到院後立即給氧，避免壓力性保定。Furosemide 2-4 mg/kg IV 為第一優先。呼吸窘迫嚴重時不應先拍 X 光。貓開口呼吸為生命危險徵兆。穩定後再進行影像及 ECHO 評估。
+
+prognosis: 心因性肺水腫急性發作的存活出院率約 70-80%。長期預後取決於根本心臟病嚴重程度。MMVD (犬) 經適當用藥 (pimobendan + furosemide + ACE-I) 中位存活時間約 9-12 個月。DCM 預後較差。HCM (貓) CHF 發作後中位存活約 6-18 個月。非心因性肺水腫取決於根本原因，ARDS 死亡率高。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "ACVIM consensus guidelines for the diagnosis and treatment of myxomatous mitral valve disease in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/31243789/
+    type: consensus
+    pmid: "31243789"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "ACVIM consensus statement guidelines for the classification, diagnosis, and management of cardiomyopathies in cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/33150681/
+    type: consensus
+    pmid: "33150681"
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Noncardiogenic pulmonary edema in veterinary medicine: etiology and pathophysiology"
+    url: https://pubmed.ncbi.nlm.nih.gov/23855435/
+    type: review
+    pmid: "23855435"
+pubmedQueries:
+  - query: '"pulmonary edema" AND (dog OR canine OR cat OR feline) AND ("cardiogenic" OR "treatment" OR "furosemide")'
+    frequency: monthly
+  - query: '"pulmonary edema" AND (dog OR canine OR cat OR feline) AND ("non-cardiogenic" OR "ARDS" OR "neurogenic")'
+    frequency: monthly

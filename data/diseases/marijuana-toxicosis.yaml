@@ -1,0 +1,122 @@
+slug: marijuana-toxicosis
+nameEn: Marijuana Toxicosis
+nameZh: 大麻中毒
+bodySystem: toxicology
+description: 犬貓攝入含 delta-9-tetrahydrocannabinol (THC) 的大麻植物、大麻食品 (edibles) 或大麻製品後引起的中毒。犬為最常見受影響物種，大麻食品（尤其含巧克力或 xylitol 者）可造成複合毒性。
+
+aliases:
+  - { alias: 大麻毒性, language: zh }
+  - { alias: THC 中毒, language: zh }
+  - { alias: Cannabis Toxicosis, language: en }
+  - { alias: THC Toxicosis, language: en }
+  - { alias: Marijuana Poisoning, language: en }
+  - { alias: Cannabis Ingestion, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬為最常見受影響物種。犬具有高密度 CB1 受體（尤其小腦與腦幹），對 THC 敏感度高於人類。大麻合法化地區病例數顯著增加。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓病例較犬少，可能因攝入頻率較低。但貓同樣具 CB1 受體，暴露後可出現臨床症狀。
+
+etiology:
+  categories:
+    - name: 毒物來源
+      examples:
+        - 大麻植物（乾燥花苞、葉片）
+        - 大麻食品 (edibles)（餅乾、軟糖、巧克力——注意複合毒性）
+        - 大麻濃縮物（hash oil、wax、shatter，THC 濃度極高）
+        - 大麻奶油 (cannabutter)
+        - 二手煙（吸入暴露，症狀較輕）
+    - name: 毒性劑量
+      examples:
+        - 致死劑量（犬）：>3 g/kg 乾燥大麻（純 THC LD50 犬 >130 mg/kg，致死極少見）
+        - 臨床症狀劑量極低（微量即可出現神經症狀）
+        - 食品類 (edibles) 因 THC 濃度高，少量即可造成嚴重中毒
+        - 濃縮物毒性風險最高
+    - name: 毒性機制
+      examples:
+        - THC 結合中樞神經系統 CB1 受體
+        - 影響小腦（共濟失調）、腦幹（體溫調節、心率）、大腦皮質（意識狀態改變）
+        - 犬小腦後腦 CB1 受體密度高，解釋為何步態異常嚴重
+        - THC 具高脂溶性，蓄積於脂肪組織，症狀可持續數天
+
+clinicalSigns:
+  early:
+    - 步態不穩 (ataxia)（最常見且最具特徵性）
+    - 嗜睡/過度鎮靜
+    - 瞳孔散大 (mydriasis)
+    - 對聲音或觸碰過度反應 (hyperesthesia)
+    - 尿失禁
+  progressive:
+    - 嚴重嗜睡至半昏迷（刺激可喚醒但迅速再入睡）
+    - 心搏過緩或心搏過速（劑量依賴性）
+    - 低體溫
+    - 嘔吐（尤其攝入食品類時）
+    - 震顫
+    - 流涎
+  late:
+    - 昏迷（高劑量濃縮物）
+    - 癲癇發作（罕見，高劑量或合成大麻素時）
+    - 嚴重心搏過緩
+    - 呼吸抑制
+    - 死亡極罕見（純 THC），但 edibles 含巧克力或 xylitol 時可致命
+
+diagnosis:
+  primaryTests:
+    - name: 病史詢問
+      notes: "直接詢問大麻暴露史。飼主可能因法律顧慮否認。強調不判斷、專注治療的態度有助獲取準確病史"
+    - name: 臨床症狀組合
+      notes: "典型三聯徵：步態不穩 + 嗜睡/意識改變 + 尿失禁，加上瞳孔散大，高度懷疑大麻中毒"
+    - name: 人用 THC 尿液檢測
+      notes: "可用於犬尿液。但犬的 THC 代謝物與人類不同，偽陰性率較高。陽性結果支持診斷，陰性不能排除"
+  imaging:
+    - name: 腹部 X 光
+      notes: "排除異物攝入。部分 edibles 包裝可在 X 光上可見"
+  additional:
+    - 血糖（排除低血糖，尤其 edibles 可能含 xylitol）
+    - CBC/生化/電解質（排除其他病因）
+    - 體溫監測（低體溫常見）
+    - 鑑別診斷排除（乙二醇中毒、有機磷中毒、前庭疾病、腦病變）
+
+treatment:
+  principles:
+    - 以支持性治療為主（無特效解毒劑）
+    - 監測生命徵象直至症狀消退
+    - 減少毒物吸收（催吐、活性炭）
+    - 處理複合毒性（edibles 中巧克力/xylitol）
+  general:
+    - 催吐（攝入後 30-60 分鐘內且無嚴重嗜睡/意識抑制時；THC 有止吐作用，催吐可能困難）
+    - 活性炭 (1-2 g/kg PO，可反覆給予因 THC 有腸肝循環)
+    - IV 輸液維持水合
+    - 保暖（低體溫處理）
+    - 低刺激環境（減少聲光刺激）
+    - 心搏過緩嚴重時 atropine 0.02-0.04 mg/kg IV（通常不需要）
+    - 癲癇發作時 diazepam 0.5-1 mg/kg IV
+    - 監測血糖（edibles 可能含 xylitol→低血糖）
+    - 若同時攝入巧克力，需同時按巧克力中毒處理
+    - 住院觀察直至症狀消退（通常 12-36 小時，濃縮物可達 72 小時）
+    - 嚴重嗜睡者禁食避免誤吸
+
+emergencyNotes: 單純 THC 中毒罕見致死，但 edibles 含巧克力或 xylitol 時可能致命。嚴重意識抑制需監測呼吸功能。高濃度濃縮物 (wax/shatter) 可造成嚴重昏迷。立即詢問食品成分評估複合毒性。
+
+prognosis: 單純大麻/THC 中毒預後極佳，大多數犬在 12-36 小時內完全恢復。濃縮物中毒恢復較慢（可達 72 小時）。致死極罕見。合併巧克力或 xylitol 中毒時預後取決於合併毒物的嚴重度。合成大麻素（synthetic cannabinoids）毒性更高且不可預測，預後較差。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Marijuana toxicosis in dogs: a retrospective study of 213 cases"
+    url: https://pubmed.ncbi.nlm.nih.gov/22827829/
+    type: research
+    pmid: "22827829"
+  - sourceOrg: Topics in Companion Animal Medicine
+    title: "Cannabis toxicosis in pets: an update"
+    url: https://pubmed.ncbi.nlm.nih.gov/30236445/
+    type: review
+    pmid: "30236445"
+
+pubmedQueries:
+  - query: '"marijuana" OR "cannabis" OR "THC" AND (dog OR canine OR feline) AND ("toxicosis" OR "poisoning" OR "intoxication")'
+    frequency: monthly

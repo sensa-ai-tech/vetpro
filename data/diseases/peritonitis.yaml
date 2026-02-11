@@ -1,0 +1,115 @@
+slug: peritonitis
+nameEn: Peritonitis
+nameZh: 腹膜炎
+bodySystem: emergency
+description: 腹膜腔的急性或慢性炎症反應，可由感染性（如腸穿孔、子宮蓄膿破裂）或非感染性（如尿腹、膽汁性腹膜炎）原因引起。敗血性腹膜炎為致死率極高的急症。
+
+aliases:
+  - { alias: 敗血性腹膜炎, language: zh }
+  - { alias: 化學性腹膜炎, language: zh }
+  - { alias: Septic Peritonitis, language: en }
+  - { alias: Chemical Peritonitis, language: en }
+  - { alias: Bile Peritonitis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 腸道穿孔（異物、腫瘤、外科吻合處裂開）與子宮蓄膿破裂為犬最常見病因。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: FIP 為貓特有的腹膜炎型態。貓膽道疾病引起的膽汁性腹膜炎亦需留意。
+
+etiology:
+  categories:
+    - name: 敗血性 (Septic)
+      examples:
+        - 腸道穿孔 (異物、腫瘤、壞死、潰瘍)
+        - 外科吻合處裂開 (dehiscence)
+        - 子宮蓄膿破裂
+        - 肝膿瘍破裂
+        - 穿通性腹部創傷（咬傷、銳器傷）
+    - name: 非敗血性 (Aseptic)
+      examples:
+        - 膽汁性腹膜炎 (膽囊破裂或膽道損傷)
+        - 尿腹 (uroabdomen，膀胱或輸尿管破裂)
+        - 胰臟炎波及腹膜
+        - 腫瘤破裂出血
+        - 化學性刺激 (鋇劑外漏)
+
+clinicalSigns:
+  early:
+    - 腹痛 (腹壁緊張、祈禱姿勢)
+    - 嘔吐
+    - 食慾廢絕
+    - 發燒
+  progressive:
+    - 嚴重腹脹
+    - 脫水
+    - 心搏過速
+    - 嗜睡與虛弱
+    - 腹部觸診疼痛反應劇烈
+  late:
+    - 敗血性休克
+    - 低體溫
+    - 低血壓
+    - DIC
+    - 多器官衰竭
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 腹腔穿刺與腹水分析
+      notes: "敗血性腹膜炎腹水特徵：變性嗜中性球、細胞內細菌。腹水葡萄糖 < 血漿 20 mg/dL 或腹水乳酸 > 血漿 2 mmol/L 高度提示敗血性"
+    - name: 腹水細菌培養與藥敏試驗
+      notes: "確認致病菌並指導抗生素選擇。需做好氧與厭氧培養"
+  imaging:
+    - name: 腹部超音波
+      notes: "可見游離腹水、腸壁增厚、腹膜增厚。可引導穿刺取樣"
+    - name: 腹部 X 光
+      notes: "可見腹部漿膜面細節消失、游離氣體（腸穿孔）。腹部 detail loss 為典型表現"
+  additional:
+    - CBC (嗜中性球升高伴左移，或嗜中性球減少提示耗竭)
+    - 生化 (BUN/Cr 升高提示尿腹；膽紅素升高提示膽汁性腹膜炎)
+    - 乳酸 (升高與預後相關)
+    - 凝血功能 (PT/aPTT，評估 DIC)
+
+treatment:
+  principles:
+    - 敗血性腹膜炎需緊急外科介入
+    - 積極液體復甦與血流動力學穩定
+    - 廣效抗生素（需涵蓋厭氧菌）
+    - 找到並處理原發病因
+  general:
+    - 積極 IV 晶體液輸液復甦 (10-20 mL/kg bolus 評估反應)
+    - 廣效抗生素組合 (ampicillin 22 mg/kg IV q8h + enrofloxacin 5-10 mg/kg IV q24h + metronidazole 10 mg/kg IV q12h)
+    - 緊急剖腹探查 (找到穿孔處、沖洗腹腔、修補或切除病灶)
+    - 腹腔沖洗 (大量溫生理食鹽水)
+    - 嚴重病例考慮開放腹腔引流 (open abdomen management)
+    - 止痛 (fentanyl CRI 2-5 μg/kg/h 或 methadone 0.2-0.5 mg/kg IV q4h)
+    - 營養支持 (盡早開始腸道營養)
+    - 血壓支持 (vasopressors 如 norepinephrine 若需要)
+
+prognosis: 敗血性腹膜炎死亡率約 50-70%，早期積極外科介入可改善至 50% 存活率。非敗血性腹膜炎（如膽汁性、尿腹）若及時處理預後較好。外科吻合處裂開的預後最差。術後需密切監測，二次手術並非罕見。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Septic peritonitis: treatment, prognosis, and outcome in 65 dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/26391152/
+    type: retrospective
+    pmid: "26391152"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Perioperative survival rates after surgery for septic peritonitis in cats and dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/21985347/
+    type: retrospective
+    pmid: "21985347"
+  - sourceOrg: Veterinary Surgery
+    title: "Open peritoneal drainage versus primary closure for the treatment of septic peritonitis in dogs and cats: 42 cases (1993-1999)"
+    url: https://pubmed.ncbi.nlm.nih.gov/11692801/
+    type: retrospective
+    pmid: "11692801"
+
+pubmedQueries:
+  - query: '"peritonitis" AND (dog OR cat OR canine OR feline) AND ("septic" OR "treatment" OR "outcome")'
+    frequency: monthly

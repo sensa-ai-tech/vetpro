@@ -1,0 +1,124 @@
+slug: tetanus
+nameEn: Tetanus
+nameZh: 破傷風
+bodySystem: infectious
+description: 由破傷風梭菌（Clostridium tetani）產生的神經毒素 tetanospasmin 引起的嚴重神經肌肉疾病。毒素阻斷抑制性神經傳導物質（GABA 與 glycine）的釋放，導致持續性肌肉痙攣與強直。犬貓對破傷風毒素的抵抗力分別為馬的 600 倍與 7200 倍。
+
+aliases:
+  - { alias: 鎖口風, language: zh }
+  - { alias: 破傷風感染, language: zh }
+  - { alias: Lockjaw, language: en }
+  - { alias: Clostridial Tetanus, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬對破傷風毒素的敏感度為馬的 1/600，因此發生率低。但仍有報告，尤其是深部穿刺傷後。局部型（localized tetanus）在犬較全身型常見，預後亦較佳。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓對破傷風毒素的抵抗力極高（為馬的 1/7200），發生率極低。臨床病例極為罕見，但文獻仍有報告。貓常表現為局部型。
+
+etiology:
+  categories:
+    - name: 病原體
+      examples:
+        - Clostridium tetani（革蘭氏陽性厭氧芽胞桿菌）
+        - 芽胞廣泛存在於土壤與動物糞便中
+        - 芽胞在缺氧環境下萌發為營養體並產生毒素
+    - name: 感染途徑
+      examples:
+        - 深部穿刺傷（最常見，釘子、咬傷、刺傷）
+        - 手術傷口感染
+        - 開放性骨折
+        - 齒科感染或拔牙後
+        - 子宮感染（產後）
+        - 部分病例找不到明確傷口
+    - name: 毒素作用機制
+      examples:
+        - Tetanospasmin 沿周邊神經逆行傳導至脊髓
+        - 阻斷突觸前膜釋放 GABA 與 glycine（抑制性神經傳導物質）
+        - 導致α運動神經元去抑制化，引起持續性肌肉痙攣
+        - 亦影響自主神經系統（交感神經過度興奮）
+
+clinicalSigns:
+  early:
+    - 傷口周圍局部肌肉僵硬（局部型）
+    - 步態僵硬（常從受傷肢體開始）
+    - 面部肌肉痙攣（risus sardonicus，面部表情異常）
+    - 耳朵豎立
+  progressive:
+    - 牙關緊閉（trismus/lockjaw）
+    - 第三眼瞼突出（nictitans protrusion）
+    - 四肢強直伸展（鋸木馬姿勢 sawhorse stance）
+    - 尾巴僵直上舉
+    - 吞嚥困難（dysphagia）
+    - 對聲光刺激過度敏感（反射性痙攣）
+  late:
+    - 全身強直性痙攣發作（opisthotonos 角弓反張）
+    - 呼吸肌痙攣導致呼吸衰竭
+    - 自主神經功能障礙（心律不整、血壓不穩、排尿困難）
+    - 高體溫（肌肉持續收縮產熱）
+    - 吸入性肺炎
+
+diagnosis:
+  primaryTests:
+    - name: 臨床診斷為主
+      notes: "破傷風主要依據特徵性臨床表現診斷：外傷史 + 進行性肌肉僵硬與痙攣 + 對刺激過度敏感。實驗室確認困難且不可靠。"
+    - name: 傷口檢查
+      notes: "仔細檢查全身尋找可能的傷口入口。注意傷口可能已癒合或極小不易發現。約 20-30% 病例找不到傷口。"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "評估吸入性肺炎。嚴重病例監測肺部狀態。"
+    - name: 傷口影像
+      notes: "X 光或超音波評估深部傷口是否有異物殘留。"
+  additional:
+    - 血清毒素測定（實務上不常用，結果耗時且敏感度低）
+    - 傷口厭氧培養（陽性率低，且正常傷口亦可能有 C. tetani）
+    - CBC 與生化通常正常（CK 可能因持續肌肉痙攣而升高）
+    - 鑑別診斷排除：番木鼈鹼中毒（strychnine）、腦膜腦炎、masticatory muscle myositis
+
+treatment:
+  principles:
+    - 中和游離毒素（已結合神經的毒素無法中和）
+    - 消除感染源（傷口清創與抗生素）
+    - 控制肌肉痙攣
+    - 支持性照護（營養、護理、呼吸支持）
+  general:
+    - "抗毒素：Tetanus antitoxin (TAT) 100-1000 IU/kg IV 或 IM，僅中和游離毒素。先以 0.1 mL SC/ID 測試過敏反應（等待 30 分鐘）。"
+    - "Metronidazole 10-15 mg/kg PO/IV q8h × 10-14 天（首選抗生素，殺滅 C. tetani 營養體）"
+    - "傷口清創：徹底清創、沖洗、暴露於空氣中（需在給予抗毒素後進行，避免清創時釋放更多毒素）"
+    - "肌肉痙攣控制：Diazepam 0.5-2 mg/kg IV PRN 或 CRI 0.5 mg/kg/hr"
+    - "Methocarbamol 44-220 mg/kg IV（緩慢推注，不超過 330 mg/kg/day）用於嚴重肌肉痙攣"
+    - "Phenobarbital 2-6 mg/kg PO/IV q8-12h 用於持續痙攣控制"
+    - "低刺激環境：安靜、昏暗房間，減少聲光與觸摸刺激"
+    - "營養支持：放置鼻胃管或食道造口管餵食（吞嚥困難時）"
+    - "膀胱管理：尿導管（排尿困難時）"
+    - "物理治療：被動關節活動，預防肌肉攣縮"
+    - "嚴重呼吸衰竭：可能需要機械通氣"
+
+prognosis: 犬局部型破傷風預後良好，存活率 > 90%，恢復期約 2-4 週。全身型預後較謹慎，犬存活率約 50-90%（取決於嚴重程度與照護品質），恢復期可長達 3-4 週甚至更久。貓因病例稀少，文獻有限，但報告的存活率亦不差。早期診斷與積極支持性治療顯著改善預後。呼吸衰竭為主要死因。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Tetanus in dogs: a review of 20 cases"
+    url: https://pubmed.ncbi.nlm.nih.gov/14649602/
+    type: review
+    pmid: "14649602"
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Tetanus in dogs and cats: a review"
+    url: https://pubmed.ncbi.nlm.nih.gov/27428874/
+    type: review
+    pmid: "27428874"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Generalized tetanus in dogs: 13 cases (1982-2014)"
+    url: https://pubmed.ncbi.nlm.nih.gov/27078640/
+    type: research
+    pmid: "27078640"
+
+pubmedQueries:
+  - query: '"tetanus" AND (dog OR canine OR cat OR feline) AND ("treatment" OR "prognosis")'
+    frequency: monthly
+  - query: '"Clostridium tetani" AND (dog OR cat) AND ("antitoxin" OR "management")'
+    frequency: monthly

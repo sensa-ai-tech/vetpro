@@ -1,0 +1,142 @@
+slug: gastroesophageal-reflux
+nameEn: Gastroesophageal Reflux
+nameZh: 胃食道逆流
+bodySystem: gastrointestinal
+description: 胃內容物（胃酸、胃蛋白酶、膽汁）逆流至食道導致食道黏膜化學性損傷。最常發生在全身麻醉期間，亦可為慢性自發性疾病。嚴重或持續性逆流可導致食道炎與後續的食道狹窄。
+
+aliases:
+  - { alias: GER, language: en }
+  - { alias: GERD, language: en }
+  - { alias: Gastroesophageal Reflux Disease, language: en }
+  - { alias: Acid Reflux, language: en }
+  - { alias: 胃酸逆流, language: zh }
+  - { alias: 逆流性食道炎, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 麻醉期間逆流發生率約 17-55%（取決於監測方法）。慢性 GERD 在短頭種（Bulldog、Pug）較常見，可能與食道裂孔疝 (hiatal hernia) 相關。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 較犬少見但被低估。麻醉相關逆流可發生。慢性病例需排除食道裂孔疝或橫膈疝。
+
+etiology:
+  categories:
+    - name: 麻醉相關（急性）
+      examples:
+        - 全身麻醉降低下食道括約肌 (LES) 張力
+        - 術前禁食時間不足或過長
+        - 頭低腳高體位（Trendelenburg）
+        - 腹腔手術增加腹內壓
+        - 某些藥物降低 LES 張力（atropine、opioids、acepromazine）
+    - name: 慢性/自發性
+      examples:
+        - 下食道括約肌功能不全
+        - 食道裂孔疝 (hiatal hernia)
+        - 短頭種犬呼吸道阻塞增加腹內壓
+        - 肥胖
+        - 胃排空延遲
+        - 慢性嘔吐
+    - name: 繼發性
+      examples:
+        - 幽門狹窄或功能性幽門痙攣
+        - 胃擴張
+        - 腹腔內腫塊增加腹內壓
+        - 食道運動障礙
+
+clinicalSigns:
+  early:
+    - 吞嚥時不適或抗拒
+    - 反覆吞嚥動作 (lip licking)
+    - 流涎
+    - 輕度逆流（吐出少量泡沫或液體）
+  progressive:
+    - 吐出未消化食物（regurgitation，與嘔吐不同）
+    - 吞嚥疼痛 (odynophagia)
+    - 食慾減退
+    - 頻繁吞嚥或作嘔動作
+    - 進食後焦躁或姿勢異常（伸頸、弓背）
+    - 體重減輕
+  late:
+    - 食道炎加劇 → 食道狹窄形成
+    - 吸入性肺炎（逆流物進入呼吸道）
+    - 嚴重消瘦
+    - 完全無法耐受固體食物
+    - 食道潰瘍（罕見）
+
+diagnosis:
+  primaryTests:
+    - name: 食道內視鏡
+      notes: "金標準。直接觀察食道黏膜狀態——充血、糜爛、潰瘍、白色疤痕斑。可分級食道炎嚴重度。可取切片排除其他病因"
+    - name: 食道透視造影 (Fluoroscopy)
+      notes: "動態評估逆流發生。口服鋇劑後即時透視觀察有無鋇劑從胃部逆流至食道。可評估食道運動功能"
+    - name: 病史與臨床徵象
+      notes: "近期麻醉史（1-3 週內出現症狀）高度提示麻醉相關食道炎。regurgitation vs vomiting 的區分非常重要"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "排除吸入性肺炎。食道裂孔疝時可見軟組織密度於背側橫膈處。嚴重時食道可見含氣擴張"
+    - name: 食道透視造影
+      notes: "動態即時影像評估逆流與食道運動功能"
+  additional:
+    - 食道 pH 監測（研究用途為主，臨床較少使用）
+    - CBC、生化（評估營養狀態與感染指標）
+    - 甲狀腺功能（排除甲狀腺低下相關食道運動障礙）
+    - 腹部超音波（排除幽門病變、腹腔腫塊）
+
+treatment:
+  principles:
+    - 減少胃酸分泌為核心治療
+    - 飲食管理（少量多餐、低脂、半固體）
+    - 麻醉相關逆流以預防為主
+    - 食道裂孔疝可能需外科矯正
+  medications:
+    - name: Omeprazole
+      dose: "1-2 mg/kg PO BID"
+      notes: 質子幫浦抑制劑 (PPI)，為最有效的胃酸抑制藥物。食前 30 分鐘給予效果最佳
+    - name: Famotidine
+      dose: "0.5-1 mg/kg PO BID"
+      notes: H2 受體拮抗劑。效力不及 PPI，但可作為輕度病例的替代選擇
+    - name: Sucralfate
+      dose: "犬 0.5-1 g PO TID；貓 0.25 g PO TID"
+      notes: 食道黏膜保護劑。餐前 30 分鐘給予，與其他口服藥間隔 2 小時
+    - name: Cisapride
+      dose: "犬 0.1-0.5 mg/kg PO TID；貓 2.5 mg/cat PO BID-TID"
+      notes: 促胃腸蠕動藥，增強 LES 張力與胃排空。慢性 GERD 輔助治療
+    - name: Maropitant
+      dose: "1-2 mg/kg PO SID"
+      notes: 麻醉前給予可降低術中逆流發生率。NK1 受體拮抗
+  general:
+    - 少量多餐（每日 3-4 餐）
+    - 低脂飲食（脂肪延遲胃排空）
+    - 餵食半固體或泥狀食物（減少逆流風險）
+    - 餵食後保持站立或前高後低姿勢 15-20 分鐘
+    - 減重（肥胖動物）
+    - 麻醉預防措施：術前適當禁食（犬 6-8 h、貓 4-6 h）、避免不必要的頭低體位、考慮術前 Maropitant 或 Omeprazole
+    - 食道裂孔疝嚴重時：手術修復（gastropexy + hiatal plication）
+
+prognosis: 麻醉相關急性食道炎若早期發現並治療，多數在 2-4 週內痊癒。慢性 GERD 需長期飲食與藥物管理，多數可良好控制。未治療的持續性逆流有發展為食道狹窄的風險（約 10-15%）。食道裂孔疝手術修復後預後良好。短頭種犬因持續性呼吸道阻塞可能較難完全控制。
+
+guidelineRefs:
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Gastroesophageal reflux during anesthesia in dogs: the effect of preoperative fasting"
+    url: https://pubmed.ncbi.nlm.nih.gov/10333484/
+    type: research
+    pmid: "10333484"
+  - sourceOrg: Veterinary Anaesthesia and Analgesia
+    title: "Gastro-oesophageal reflux during anaesthesia in the dog: the effect of age, positioning and type of surgical procedure"
+    url: https://pubmed.ncbi.nlm.nih.gov/17177481/
+    type: research
+    pmid: "17177481"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Effect of maropitant on gastroesophageal reflux during anesthesia in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/28940723/
+    type: research
+    pmid: "28940723"
+
+pubmedQueries:
+  - query: '"gastroesophageal reflux" AND (dog OR canine) AND ("anesthesia" OR "esophagitis" OR "prevention")'
+    frequency: monthly
+  - query: '"gastroesophageal reflux" AND (dog OR cat) AND ("omeprazole" OR "maropitant" OR "treatment")'
+    frequency: monthly

@@ -1,0 +1,109 @@
+slug: patent-ductus-arteriosus
+nameEn: Patent Ductus Arteriosus
+nameZh: 開放性動脈導管
+bodySystem: cardiac
+description: 開放性動脈導管（PDA）是犬隻最常見的先天性心臟病，因胎兒期連接主動脈與肺動脈的動脈導管在出生後未能正常閉合，導致主動脈血液經導管持續分流至肺動脈（左至右分流）。未經治療的 PDA 約 60% 患犬在一歲前死於充血性心衰竭。
+
+aliases:
+  - { alias: PDA, language: en }
+  - { alias: 動脈導管未閉, language: zh }
+  - { alias: 存開性動脈導管, language: zh }
+  - { alias: Persistent Ductus Arteriosus, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬隻最常見的先天性心臟病，佔先天性心臟缺陷約 25-30%。好發品種包括迷你貴賓犬、馬爾濟斯犬、博美犬、德國牧羊犬、可卡犬及 Shetland Sheepdog。母犬發病率約為公犬的 2-3 倍。遺傳模式為多基因遺傳。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓隻 PDA 極為罕見，臨床報告有限。治療原則與犬隻相似。
+
+etiology:
+  categories:
+    - name: 胚胎發育異常
+      examples:
+        - 動脈導管壁平滑肌細胞分化不全，導致出生後無法正常收縮閉合
+        - 導管壁缺乏正常的彈性纖維結構
+        - 出生後對氧分壓升高及前列腺素濃度下降的反應不足
+    - name: 遺傳因素
+      examples:
+        - 多基因遺傳模式
+        - 迷你貴賓犬遺傳傾向最為明確
+        - 受影響犬隻不建議繁殖
+    - name: 血流動力學分類
+      examples:
+        - 左至右分流（典型，最常見 >95%）：主動脈血液經導管流入肺動脈，造成肺循環容量過負荷與左心擴大
+        - 右至左分流（逆向 PDA，罕見）：肺動脈高壓導致血流方向逆轉，去氧血經導管進入降主動脈，造成後軀差異性發紺
+
+clinicalSigns:
+  early:
+    - 左心基底部連續性機械樣雜音（continuous machinery murmur，最經典表現）
+    - 多數幼犬於首次健檢時被發現
+    - 彈跳脈（bounding/hyperkinetic pulse，因脈壓增大）
+  progressive:
+    - 運動不耐
+    - 呼吸急促
+    - 生長遲緩
+    - 咳嗽（左心房擴大壓迫支氣管）
+    - 心搏過速
+  late:
+    - 左側充血性心衰竭（肺水腫）
+    - 心房顫動（左心房嚴重擴大）
+    - 逆向 PDA（右至左分流）：後軀差異性發紺、運動時後肢無力、紅血球增多症
+    - 未治療者約 60% 在一歲前死於心衰竭
+
+diagnosis:
+  primaryTests:
+    - name: 心臟超音波（Echocardiography）
+      notes: "確診金標準。彩色都卜勒可見主肺動脈內持續性高速紊流訊號。二維超音波可直接顯示導管結構（短軸切面於主肺動脈與主動脈之間）。評估左心房與左心室容量過負荷（LA/Ao ratio 增大 >1.6）。連續波都卜勒測量分流流速。評估肺動脈壓力。"
+    - name: 胸腔聽診
+      notes: "左心基底部（左腋下）Grade IV-VI/VI 連續性機械樣雜音，收縮期與舒張期均可聞及，於收縮期最響亮。可觸及前胸壁震顫（thrill）。彈跳脈為重要輔助發現。"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "左心房與左心室擴大。肺血管過度充盈（肺動脈與肺靜脈均擴張）。主動脈弓、降主動脈與肺動脈主幹擴張，形成特徵性的三個隆起。心衰竭時可見肺水腫。"
+    - name: 心電圖（ECG）
+      notes: "左心室容量過負荷圖形：R 波振幅增高（lead II）、Q 波加深。左心房擴大：P 波增寬（P mitrale）。心房顫動（晚期大型 PDA）。"
+  additional:
+    - 心臟生物標記：NT-proBNP 升高反映心室容量過負荷
+    - 血氧飽和度差異測試（逆向 PDA）：前肢正常、後肢 SpO2 降低
+    - 血液學（逆向 PDA）：紅血球增多症（PCV >65%）
+
+treatment:
+  principles:
+    - 確診後應盡早手術或介入治療關閉導管
+    - 導管關閉為根治性治療，成功率極高
+    - 逆向 PDA（右至左分流）禁忌關閉導管
+    - 心衰竭穩定後再進行關閉手術
+  general:
+    - "經導管裝置閉合術（Amplatz Canine Duct Occluder, ACDO）：首選微創介入方法，適用於多數導管形態，成功率 >95%"
+    - "外科結紮術（Surgical Ligation）：經左側第 4 肋間開胸，結紮導管。傳統標準術式，成功率約 90-95%"
+    - "心衰竭穩定：Furosemide 2-4 mg/kg PO q12h + Pimobendan 0.25 mg/kg PO q12h（術前穩定血流動力學）"
+    - "術後管理：多數犬隻術後左心室重塑，數週至數月內心臟大小恢復正常"
+    - "逆向 PDA 管理：禁忌閉合導管。限制運動、避免過度興奮。紅血球增多症嚴重時（PCV >70%）可行放血術（phlebotomy）。Hydroxyurea 考慮用於控制紅血球增多"
+    - "受影響犬隻不建議繁殖"
+
+prognosis: 左至右分流 PDA 經成功閉合後預後極佳，多數犬隻可恢復正常壽命與生活品質。術後心臟重塑通常在 3-6 個月內完成。未治療的 PDA 預後不良，約 60% 在一歲前死於充血性心衰竭。逆向 PDA（右至左分流）無法根治，以支持性治療為主，中位存活時間約 2-5 年，但生活品質受限。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Outcome of dogs with patent ductus arteriosus treated with the Amplatz canine duct occluder"
+    url: https://pubmed.ncbi.nlm.nih.gov/23311715/
+    type: consensus
+    pmid: "23311715"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Long-term outcome in dogs with patent ductus arteriosus: 520 cases (1994-2009)"
+    url: https://pubmed.ncbi.nlm.nih.gov/22731545/
+    type: consensus
+    pmid: "22731545"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Patent ductus arteriosus in dogs: clinical features, treatment, and outcome"
+    url: https://pubmed.ncbi.nlm.nih.gov/16579401/
+    type: consensus
+    pmid: "16579401"
+pubmedQueries:
+  - query: '"patent ductus arteriosus" AND (dog OR canine) AND ("Amplatz" OR "surgical ligation" OR "treatment")'
+    frequency: monthly
+  - query: '"patent ductus arteriosus" AND (dog OR canine) AND ("outcome" OR "prognosis")'
+    frequency: monthly

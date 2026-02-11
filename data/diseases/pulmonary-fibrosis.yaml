@@ -1,0 +1,136 @@
+slug: pulmonary-fibrosis
+nameEn: Pulmonary Fibrosis
+nameZh: 肺纖維化
+bodySystem: respiratory
+description: 肺間質進行性纖維化導致肺順應性下降及氣體交換障礙的慢性不可逆呼吸道疾病。犬以西高地白梗 (Westie) 的特發性肺纖維化最具代表性。臨床表現為進行性運動不耐及呼吸困難。
+
+aliases:
+  - { alias: IPF, language: en }
+  - { alias: Idiopathic Pulmonary Fibrosis, language: en }
+  - { alias: Canine IPF, language: en }
+  - { alias: Westie Lung Disease, language: en }
+  - { alias: 特發性肺纖維化, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 西高地白梗 (West Highland White Terrier) 為最典型品種，中老年犬 (>9 歲) 好發。其他梗犬品種亦有報告。疑似有遺傳傾向。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓罕見。可繼發於慢性氣道疾病 (哮喘)。貓的肺纖維化報告有限。
+
+etiology:
+  categories:
+    - name: 特發性 (最常見)
+      examples:
+        - 西高地白梗特發性肺纖維化 (品種相關)
+        - 其他梗犬品種特發性肺纖維化
+        - 病因不明，可能涉及遺傳及環境因子
+    - name: 繼發性
+      examples:
+        - 慢性吸入性刺激
+        - 反覆肺部感染
+        - 環境毒素暴露
+        - 藥物 (化療藥物如 cyclophosphamide、bleomycin)
+        - 放射性治療後
+    - name: 病理生理
+      examples:
+        - 肺泡上皮反覆損傷 → 異常修復反應
+        - 纖維母細胞過度增生及膠原沉積
+        - 肺泡壁增厚 → 氣體交換面積減少
+        - 肺順應性下降 → 限制性通氣障礙
+        - 晚期發展肺高壓
+
+clinicalSigns:
+  early:
+    - 運動不耐 (逐漸加重)
+    - 輕度呼吸急促
+    - 偶發乾咳
+    - 活動後喘息
+  progressive:
+    - 呼吸困難加重 (限制性呼吸型態)
+    - 持續性咳嗽
+    - 呼吸頻率增加 (安靜時 >30 次/分)
+    - 肺部聽診吸氣末細濕囉音 (end-inspiratory crackles)
+    - 體重減輕
+  late:
+    - 嚴重呼吸困難
+    - 發紺
+    - 暈厥 (肺高壓致)
+    - 右心衰竭徵象 (腹水、頸靜脈怒張)
+    - 惡病質
+
+diagnosis:
+  primaryTests:
+    - name: 高解析度胸腔 CT (HRCT)
+      notes: "金標準影像。典型表現為瀰漫性地圖玻璃樣密度增高 (ground-glass opacity)、網狀影 (reticular pattern)、牽引性支氣管擴張、蜂窩狀變化 (honeycombing)。尾背側肺葉分佈為主"
+    - name: 胸腔 X 光
+      notes: "瀰漫性間質至支氣管間質型浸潤。肺紋理增粗。晚期可見右心增大。敏感度不如 HRCT"
+    - name: 動脈血氣分析/SpO2
+      notes: "低氧血症 (PaO2 降低)。運動後 SpO2 下降為早期線索。A-a gradient 增大"
+  imaging:
+    - name: HRCT (首選)
+      notes: "評估纖維化分佈及嚴重程度。與人類 UIP pattern 類似"
+    - name: 心臟超音波
+      notes: "評估肺高壓 (三尖瓣逆流速度增加、右心室擴張)。晚期必做"
+  additional:
+    - 支氣管肺泡灌洗液 (BAL) 細胞學 (嗜中性球及/或嗜酸性球增多)
+    - 肺功能測試 (tidal breathing flow-volume loops — 研究用途)
+    - 6 分鐘步行測試 (評估功能狀態)
+    - 肺組織切片 (gold standard 確診，但臨床少執行因風險)
+    - NT-proBNP (評估右心壓力)
+    - CBC/生化 (排除其他疾病)
+
+treatment:
+  principles:
+    - 目前無法逆轉肺纖維化
+    - 治療目標為緩解症狀及減緩進展
+    - 抗纖維化藥物效果尚未充分證實
+    - 支持性治療及生活品質管理為核心
+  medications:
+    - name: Prednisolone
+      dose: "1 mg/kg PO SID × 2-4 週，逐漸減量至 0.5 mg/kg QOD"
+      notes: 抗發炎。對純纖維化型反應有限，但合併炎症成分時有助
+    - name: Theophylline
+      dose: "10 mg/kg PO BID (緩釋劑型)"
+      notes: 支氣管擴張劑。改善呼吸肌功能。部分病例可緩解症狀
+    - name: Sildenafil
+      dose: "1-2 mg/kg PO BID-TID"
+      notes: 磷酸二酯酶-5 抑制劑。治療繼發性肺高壓。可改善運動耐受力及生活品質
+    - name: Pimobendan
+      dose: "0.25-0.3 mg/kg PO BID"
+      notes: 合併右心衰竭時。正性肌力及血管擴張作用
+  general:
+    - 體重管理 (避免肥胖增加呼吸負荷)
+    - 避免運動過度及高溫環境
+    - 家用氧氣治療 (嚴重低氧血症時)
+    - 定期 SpO2 監測 (居家安靜呼吸率日記)
+    - Sildenafil 用於肺高壓管理
+    - 抗咳嗽藥物：Hydrocodone 0.22 mg/kg PO q8-12h (改善生活品質)
+    - 避免二手煙及空氣刺激物
+
+prognosis: 特發性肺纖維化為慢性進行性不可逆疾病，無法治癒。中位存活時間自確診後約 12-18 個月。Sildenafil 可改善合併肺高壓患者的生活品質。安靜呼吸率持續升高及右心衰竭為預後不良指標。西高地白梗部分個體進展緩慢，可維持可接受生活品質數年。安樂死通常在生活品質顯著下降時討論。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Clinical features, survival time, and CT findings in West Highland White Terriers with idiopathic pulmonary fibrosis"
+    url: https://pubmed.ncbi.nlm.nih.gov/27860061/
+    type: research
+    pmid: "27860061"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Idiopathic pulmonary fibrosis in West Highland White Terriers"
+    url: https://pubmed.ncbi.nlm.nih.gov/15595206/
+    type: research
+    pmid: "15595206"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Efficacy of sildenafil for the management of pulmonary hypertension secondary to idiopathic pulmonary fibrosis in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/33709482/
+    type: research
+    pmid: "33709482"
+pubmedQueries:
+  - query: '"pulmonary fibrosis" AND (dog OR canine) AND ("West Highland" OR "idiopathic" OR "treatment")'
+    frequency: monthly
+  - query: '"pulmonary fibrosis" AND (dog OR canine) AND ("sildenafil" OR "pulmonary hypertension")'
+    frequency: monthly

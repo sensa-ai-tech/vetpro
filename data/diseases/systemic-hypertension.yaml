@@ -1,0 +1,120 @@
+slug: systemic-hypertension
+nameEn: Systemic Hypertension
+nameZh: 全身性高血壓
+bodySystem: vascular
+description: 全身性動脈血壓持續升高的狀態，犬貓收縮壓 > 160 mmHg 即視為高血壓。為慢性腎病與甲狀腺功能亢進的常見併發症，可導致眼、腎、腦、心臟等標的器官損傷（target organ damage, TOD）。
+
+aliases:
+  - { alias: 高血壓, language: zh }
+  - { alias: 動脈高血壓, language: zh }
+  - { alias: Arterial Hypertension, language: en }
+  - { alias: High Blood Pressure, language: en }
+  - { alias: HTN, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬高血壓約 80% 為繼發性，最常繼發於慢性腎病（CKD）、腎上腺功能亢進（Cushing's）、嗜鉻細胞瘤、糖尿病。原發性（特發性）高血壓佔 < 20%。Greyhound 品種正常血壓較其他犬種高（收縮壓可達 150-170 mmHg）。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓高血壓常繼發於慢性腎病（CKD）及甲狀腺功能亢進。老年貓盛行率可達 19-65%（CKD 族群）。貓眼底病變（視網膜剝離、前房出血）為常見首發症狀。
+
+etiology:
+  categories:
+    - name: 繼發性（Secondary，最常見）
+      examples:
+        - 慢性腎病（犬貓均為最常見原因之一）
+        - 甲狀腺功能亢進（貓為主）
+        - 腎上腺功能亢進（Cushing's disease，犬為主）
+        - 嗜鉻細胞瘤（Pheochromocytoma）
+        - 糖尿病
+        - 原發性醛固酮增多症（Conn's syndrome，貓偶見）
+        - 高蛋白尿腎病
+    - name: 原發性（Primary/Essential）
+      examples:
+        - 特發性高血壓（排除所有繼發原因後）
+        - 犬較貓少見報告
+    - name: 白袍效應（White Coat Effect）
+      examples:
+        - 環境緊迫導致暫時性血壓升高
+        - 需多次重複測量排除
+
+clinicalSigns:
+  early:
+    - 多數無明顯症狀（沉默殺手）
+    - 輕微精神變化
+    - 多飲多尿（可能為基礎疾病症狀）
+  progressive:
+    - 急性失明（視網膜剝離或出血）
+    - 前房出血（hyphema）
+    - 視網膜血管迂曲
+    - 蛋白尿加重
+    - 心雜音或奔馬律
+    - 左心室肥大
+  late:
+    - 高血壓性視網膜病變導致永久失明
+    - 高血壓性腦病（癲癇、定向力障礙、共濟失調、昏迷）
+    - 鬱血性心衰竭
+    - 腎功能急速惡化
+    - 鼻出血
+
+diagnosis:
+  primaryTests:
+    - name: 間接血壓測量（Doppler 或 oscillometric）
+      notes: "Doppler 法為犬貓首選，尤其貓隻。需安靜環境，允許動物適應 5-10 分鐘。測量 5-7 次取平均值。袖帶寬度應為肢體周長的 30-40%。IRIS/ACVIM 分級：< 140 正常、140-159 前高血壓、160-179 高血壓、≥ 180 嚴重高血壓。"
+    - name: 眼底檢查（Fundoscopy）
+      notes: "評估標的器官損傷。視網膜出血、滲出液、水腫、剝離、血管迂曲或變窄。為高血壓 TOD 最早且最常見的表現。"
+  imaging:
+    - name: 心臟超音波
+      notes: "評估左心室壁厚度（同心性肥大）、心臟功能。犬 LVFWd > 12 mm 或 IVSd > 12 mm 提示肥大。"
+    - name: 腹部超音波
+      notes: "評估腎臟形態、腎上腺大小（排除 Cushing's 或嗜鉻細胞瘤）、甲狀腺（貓）。"
+  additional:
+    - "尿液分析 + UPC：蛋白尿為 TOD 指標之一（UPC > 0.5 犬、> 0.4 貓為異常）"
+    - 全血球計數與生化：評估基礎疾病（腎功能、甲狀腺、腎上腺）
+    - "T4 測定：貓必做，排除甲狀腺功能亢進"
+    - "低劑量 dexamethasone suppression test 或 ACTH stimulation test：疑似 Cushing's 時"
+    - "IRIS CKD 分期與高血壓亞分期"
+
+treatment:
+  principles:
+    - 治療基礎疾病為首要
+    - 收縮壓 ≥ 160 mmHg 或有 TOD 時啟動降壓治療
+    - 目標降壓至 < 140 mmHg（避免急速降壓）
+    - 定期監測血壓與 TOD
+  general:
+    - "貓首選：Amlodipine 0.125-0.25 mg/kg PO SID（起始 0.625 mg/cat SID，7-14 天未達標可增至 1.25 mg/cat）"
+    - "犬首選：Amlodipine 0.1-0.5 mg/kg PO SID（可與 ACE inhibitor 合用）"
+    - "ACE 抑制劑：Benazepril 0.25-0.5 mg/kg PO SID-BID 或 Enalapril 0.5 mg/kg PO SID-BID（特別適用於蛋白尿病例）"
+    - "頑固性高血壓追加：Telmisartan 1 mg/kg PO SID（貓，ARB 類）"
+    - "高血壓危象（SBP ≥ 200 mmHg + 急性 TOD）：Amlodipine 即刻給藥 + Hydralazine 0.5-2 mg/kg PO（犬）"
+    - "治療甲亢（貓）：Methimazole 2.5 mg PO BID 起始"
+    - "血壓監測：啟動治療後 1-2 週回診，穩定後每 1-3 個月追蹤"
+    - "IRIS 高血壓亞分期：AP0（< 140）、AP1（140-159）、AP2（160-179）、AP3（≥ 180）"
+
+prognosis: 預後取決於基礎疾病及 TOD 程度。甲狀腺功能亢進貓經治療後血壓通常可獲良好控制。CKD 伴高血壓的預後與腎病進展相關。急性視網膜剝離若於 24-48 小時內積極降壓，約 50-60% 可恢復部分視力。高血壓性腦病若及時治療可能可逆。未經治療的持續性高血壓將加速 TOD 進展。
+
+guidelineRefs:
+  - sourceOrg: ACVIM
+    title: "ACVIM consensus statement: Guidelines for the identification, evaluation, and management of systemic hypertension in dogs and cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/29171095/
+    type: consensus
+    pmid: "29171095"
+  - sourceOrg: IRIS (International Renal Interest Society)
+    title: "IRIS Staging of CKD and Hypertension Substaging"
+    url: https://pubmed.ncbi.nlm.nih.gov/27910797/
+    type: guideline
+    pmid: "27910797"
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "ISFM consensus guidelines on the diagnosis and management of hypertension in cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/28478710/
+    type: consensus
+    pmid: "28478710"
+
+pubmedQueries:
+  - query: '"systemic hypertension" AND (dog OR cat OR canine OR feline) AND ("guidelines" OR "consensus" OR "treatment")'
+    frequency: monthly
+  - query: '"hypertension" AND (cat OR feline) AND ("amlodipine" OR "target organ damage")'
+    frequency: monthly

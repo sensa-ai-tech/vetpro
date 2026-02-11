@@ -1,0 +1,122 @@
+slug: rabbit-pasteurellosis
+nameEn: Rabbit Pasteurellosis
+nameZh: 兔巴斯德桿菌症
+bodySystem: exotic
+description: 由 Pasteurella multocida 引起的兔常見細菌性疾病，可造成上呼吸道感染（鼻膿漏 snuffles）、中耳炎、肺炎、膿瘍及敗血症等多系統病變，為家兔最重要的細菌性病原之一。
+
+aliases:
+  - { alias: 兔鼻膿漏, language: zh }
+  - { alias: 兔巴氏桿菌感染, language: zh }
+  - { alias: Snuffles, language: en }
+  - { alias: Pasteurella multocida infection, language: en }
+  - { alias: Rabbit snuffles, language: en }
+
+species:
+  - speciesCommon: rabbit
+    speciesScientific: Oryctolagus cuniculus
+    prevalence: common
+    notes: P. multocida 帶原率極高 (鼻腔帶菌率 20-80%)。多數帶原兔無症狀，緊迫或免疫力下降時發病。可經直接接觸、飛沫或汙染物傳播。
+
+etiology:
+  categories:
+    - name: 細菌性
+      examples:
+        - Pasteurella multocida (莢膜血清型 A 最常見，D 型次之)
+        - 上呼吸道為主要定殖部位 (鼻腔、鼻竇)
+        - 可血行散布至中耳、肺臟、關節、子宮、皮下組織
+        - 經飛沫、直接接觸、母兔哺乳傳播
+    - name: 風險因素
+      examples:
+        - 緊迫 (環境改變、擁擠、運輸)
+        - 通風不良與高氨環境
+        - 併發其他感染 (Bordetella bronchiseptica 共感染)
+        - 免疫抑制 (類固醇使用、營養不良)
+        - 幼兔或老年兔
+
+clinicalSigns:
+  early:
+    - 打噴嚏 (sneezing)
+    - 漿液性鼻分泌物
+    - 前肢內側毛髮結塊 (擦拭鼻涕所致)
+    - 結膜炎
+  progressive:
+    - 黏液膿性鼻分泌物 (白至黃綠色)
+    - 呼吸音增加 (鼻塞、鼻竇炎)
+    - 中耳炎/內耳炎 (頭部傾斜、眼球震顫)
+    - 皮下膿瘍 (頭頸部或軀幹，膿汁濃稠呈乳白色)
+    - 淚管阻塞 (epiphora，淚溢)
+  late:
+    - 支氣管肺炎 (呼吸困難、開口呼吸)
+    - 膿胸
+    - 生殖道感染 (子宮蓄膿、睾丸炎)
+    - 敗血症
+    - 化膿性腦膜炎
+    - 骨髓炎
+
+diagnosis:
+  primaryTests:
+    - name: 細菌培養與藥敏試驗
+      notes: "取鼻腔深部拭子、膿瘍內容物或病灶檢體。P. multocida 在血液培養基上生長良好。藥敏試驗對選擇抗生素至關重要"
+    - name: CBC/生化
+      notes: "可見白血球增多 (heterophilia)。嚴重感染可見低白蛋白與急性期蛋白升高"
+    - name: PCR
+      notes: "快速偵測 P. multocida DNA，可用於鼻拭子或組織樣本"
+  imaging:
+    - name: 頭部 X 光/CT
+      notes: "鼻竇液體蓄積、鼻甲骨溶解。鼓室泡 (tympanic bulla) 液體蓄積提示中耳炎"
+    - name: 胸腔 X 光
+      notes: "肺部浸潤、膿胸評估"
+    - name: 頭部 CT
+      notes: "中耳炎/鼻竇炎的金標準影像學，優於 X 光"
+  additional:
+    - 膿瘍穿刺細胞學 (變性嗜中性球與細菌)
+    - 鼓室穿刺 (中耳炎確診與取樣)
+    - 淚管沖洗 (評估淚管通暢性)
+
+treatment:
+  principles:
+    - 長期抗生素治療 (根據藥敏試驗，至少 2-4 週，慢性病例更久)
+    - 膿瘍需外科處理 (兔的膿液為固態乾酪樣，引流效果差)
+    - 中耳炎可能需鼓室切開術
+    - 支持性照護維持進食與水分
+  medications:
+    - name: Enrofloxacin
+      dose: "10-20 mg/kg PO BID"
+      notes: 對 P. multocida 效果佳。避免用於幼兔 (軟骨毒性)。長期使用注意腸道菌叢失調
+    - name: Penicillin G (Procaine/Benzathine)
+      dose: "42,000-84,000 IU/kg SC q48-72h"
+      notes: 對 P. multocida 敏感性高。僅限皮下注射，絕不可口服 (致死性腸炎)
+    - name: Azithromycin
+      dose: "15-30 mg/kg PO SID"
+      notes: 組織穿透力佳，可用於呼吸道感染
+    - name: Chloramphenicol
+      dose: "50 mg/kg PO BID"
+      notes: 廣效抗菌，穿透力佳。注意人畜共通風險 (操作時戴手套)
+    - name: Meloxicam
+      dose: "0.3-0.5 mg/kg PO/SC SID"
+      notes: 止痛消炎。中耳炎或膿瘍疼痛管理
+  general:
+    - 膿瘍完整摘除 (en bloc resection) 優於切開引流
+    - 鼓室骨切開術 (中耳炎嚴重或藥物治療反應差時)
+    - 霧化治療 (生理食鹽水 ± 抗生素，鼻竇炎/肺炎輔助)
+    - 維持進食 (食慾下降時針筒輔助餵食)
+    - 環境改善 (通風、降低氨氣、減少緊迫)
+    - 隔離新進兔 (減少傳播)
+
+prognosis: 上呼吸道感染 (snuffles) 經適當抗生素治療多可控制，但根除困難，復發率高。皮下膿瘍完整摘除預後良好。中耳炎需手術者預後中等至良好。肺炎與敗血症預後較差。帶原狀態通常終身存在。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Respiratory Disease in Rabbits"
+    url: https://pubmed.ncbi.nlm.nih.gov/33610948/
+    type: review
+    pmid: "33610948"
+  - sourceOrg: Journal of Exotic Pet Medicine
+    title: "Abscess management in rabbits"
+    url: https://pubmed.ncbi.nlm.nih.gov/30902343/
+    type: review
+    pmid: "30902343"
+
+pubmedQueries:
+  - query: '"Pasteurella multocida" AND "rabbit" AND ("treatment" OR "management" OR "snuffles")'
+    frequency: monthly

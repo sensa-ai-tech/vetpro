@@ -1,0 +1,126 @@
+slug: hepatic-encephalopathy
+nameEn: Hepatic Encephalopathy
+nameZh: 肝性腦病
+bodySystem: metabolic
+description: 嚴重肝臟疾病或門體分流導致腸源性神經毒素（尤其氨）無法被肝臟代謝而蓄積於體循環，引起的神經精神功能障礙。臨床表現從輕微行為改變到癲癇發作與昏迷不等。為肝臟疾病最嚴重的併發症之一。
+
+aliases:
+  - { alias: 肝腦病變, language: zh }
+  - { alias: 肝性腦病變, language: zh }
+  - { alias: 氨中毒性腦病, language: zh }
+  - { alias: HE, language: en }
+  - { alias: Hepatoencephalopathy, language: en }
+  - { alias: Porto-Systemic Encephalopathy, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 最常見原因為先天性門體分流（PSS，幼犬、小型犬品種好發）。亦見於嚴重急性肝衰竭或終末期慢性肝病。後天性多發門體分流繼發於肝硬化。飲食後（高蛋白飲食）症狀常加重。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓較犬少見。先天性 PSS 與嚴重肝病均可發生。貓的特徵性表現為流涎（ptyalism）。肝臟脂肪變性（hepatic lipidosis）嚴重時亦可出現 HE。
+
+etiology:
+  categories:
+    - name: 門體分流（最常見原因）
+      examples:
+        - 先天性單一肝外分流（小型犬品種）
+        - 先天性肝內分流（大型犬品種）
+        - 後天性多發門體分流（繼發於門靜脈高壓/肝硬化）
+    - name: 嚴重肝臟疾病
+      examples:
+        - 急性肝衰竭（中毒、感染性肝炎）
+        - 慢性肝病終末期（肝硬化）
+        - 貓肝臟脂肪變性（嚴重時）
+        - 銅蓄積性肝病（Bedlington Terrier 等）
+    - name: 病理機轉
+      examples:
+        - 腸道細菌分解蛋白質/尿素產生氨（NH3）
+        - 氨未經肝臟 urea cycle 代謝→進入體循環→穿越血腦屏障
+        - 氨→星形膠質細胞腫脹（Alzheimer type II astrocytosis）
+        - 其他毒素：假性神經傳導物質、mercaptans、短鏈脂肪酸、GABA 增強
+        - 促發因素：GI 出血、高蛋白飲食、便秘、感染、低鉀血症、脫水、鎮靜藥物
+
+clinicalSigns:
+  early:
+    - 間歇性行為改變（尤其飲食後）
+    - 嗜睡、反應遲鈍
+    - 漫無目的行走
+    - 流涎（貓特別常見）
+    - 食慾下降
+  progressive:
+    - 共濟失調（步態不穩）
+    - 凝視牆壁或角落（頭部壓牆 head pressing）
+    - 方向感喪失
+    - 視力異常（皮質性失明）
+    - 攻擊性增加或異常溫順
+    - 嘔吐、下痢
+  late:
+    - 癲癇發作（全身性）
+    - 昏迷（肝昏迷）
+    - 瞳孔散大、無反射
+    - 去大腦姿勢
+    - 嚴重低體溫
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 血氨測定
+      notes: "血氨升高為 HE 的關鍵實驗室發現。正常犬 <50 μg/dL。需注意：樣本必須立即冰浴送檢（室溫下假性升高）。血氨高低與臨床嚴重度不完全平行"
+    - name: 血清膽酸（空腹與餐後）
+      notes: "膽酸升高支持肝功能不全/PSS 診斷。空腹 >25 μmol/L 或餐後 >50 μmol/L 為異常。敏感度高"
+  imaging:
+    - name: 腹部超音波（含都卜勒）
+      notes: "評估肝臟大小（PSS 常肝臟偏小）、門靜脈血流方向、異常分流血管。腎臟可能高迴音（腎髓質鈣化）。後天性：門靜脈高壓、腹水"
+    - name: CT 血管攝影（CTA）
+      notes: "門體分流的定位金標準。清楚顯示分流血管走行。術前計畫必要"
+  additional:
+    - CBC（微小紅血球症——PSS 特徵、標靶細胞）
+    - 生化（BUN 偏低、白蛋白偏低、血糖偏低、肝酵素輕度升高）
+    - 凝血功能（PT/aPTT 可能延長）
+    - 尿液分析（尿酸銨結晶）
+    - 蛋白 C 活性（PSS 時降低）
+    - 腦部 MRI（排除其他腦部病變、T1W 蒼白球高信號為 HE 特徵）
+
+treatment:
+  principles:
+    - 降低血氨為急性期治療核心
+    - Lactulose 酸化腸道減少氨吸收
+    - 低蛋白飲食減少氨的產生
+    - 找出並治療根本原因與促發因素
+    - PSS 手術為根治方法
+  general:
+    - "Lactulose 0.5 mL/kg PO q8-12h（調整劑量使每日排軟便 2-3 次）"
+    - "急性嚴重 HE：Lactulose 溫水灌腸 10-20 mL/kg（1:3 稀釋溫水），留置 20-30 分鐘"
+    - "抗生素減少腸道產氨菌：Metronidazole 7.5 mg/kg PO q12h 或 Amoxicillin 20 mg/kg PO q12h"
+    - "Rifaximin 5 mg/kg PO BID（非吸收性抗生素，人醫 HE 標準用藥，獸醫使用增加中）"
+    - "低蛋白飲食：蛋白質限制至 14-18% DM（以高品質植物蛋白與乳製品蛋白為主）"
+    - "靜脈輸液：避免含乳酸林格氏液（乳酸需肝臟代謝），使用 0.45% NaCl + 2.5% Dextrose"
+    - "矯正促發因素：補鉀（低鉀促進腎臟氨生成）、止血（GI 出血）、治療感染"
+    - "癲癇控制：Levetiracetam 20 mg/kg IV/PO q8h（避免 Phenobarbital——需肝臟代謝）"
+    - "Propofol CRI 0.1-0.6 mg/kg/min（嚴重癲癇持續狀態，短效不依賴肝臟代謝）"
+    - "PSS 手術矯正：Ameroid constrictor 或 Cellophane banding（先天性單一分流）"
+
+prognosis: 預後取決於根本原因與可逆性。PSS 手術後多數犬隻 HE 症狀完全消失，長期預後良好。急性 HE 發作經積極內科治療可逆轉。慢性肝病終末期的 HE 預後不良。僅內科管理的 PSS 中位存活時間約 2 年。促發因素的及時矯正可顯著改善急性發作的預後。反覆 HE 發作影響生活品質且可致永久性神經損傷。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "ACVIM Consensus Statement on the Diagnosis and Treatment of Hepatic Encephalopathy in Dogs and Cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/26507576/
+    type: consensus
+    pmid: "26507576"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Congenital portosystemic shunts in dogs and cats: clinical features, diagnosis, and management"
+    url: https://pubmed.ncbi.nlm.nih.gov/15595205/
+    type: review
+    pmid: "15595205"
+  - sourceOrg: Veterinary Clinics of North America Small Animal Practice
+    title: "Hepatic encephalopathy: pathophysiology, diagnosis, and treatment"
+    url: https://pubmed.ncbi.nlm.nih.gov/19932394/
+    type: review
+    pmid: "19932394"
+pubmedQueries:
+  - query: '"hepatic encephalopathy" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "lactulose" OR "portosystemic shunt")'
+    frequency: monthly

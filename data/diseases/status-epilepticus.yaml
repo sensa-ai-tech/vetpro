@@ -1,0 +1,138 @@
+slug: status-epilepticus
+nameEn: Status Epilepticus
+nameZh: 癲癇重積狀態
+bodySystem: neurology
+description: 癲癇發作持續超過 5 分鐘，或連續兩次以上發作且間歇期未恢復意識的神經急症，若未及時處理可導致不可逆腦損傷及死亡。
+
+aliases:
+  - { alias: SE, language: en }
+  - { alias: Refractory Status Epilepticus, language: en }
+  - { alias: Super-Refractory Status Epilepticus, language: en }
+  - { alias: 癲癇重積, language: zh }
+  - { alias: 持續性癲癇發作, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 約 0.5-5% 的癲癇犬會經歷 SE。常見觸發因素包括抗癲癇藥物血中濃度不足、突然停藥、代謝失調 (低血糖、肝腦症)、顱內腫瘤或腦炎。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓 SE 較少見但同樣危險。常見原因包括海馬硬化、FIP 腦炎、代謝性異常 (肝腦症、嚴重低鉀血症)。
+
+etiology:
+  categories:
+    - name: 癲癇相關
+      examples:
+        - 已知癲癇犬抗癲癇藥物濃度不足或突然停藥
+        - 叢集性發作 (cluster seizures) 進展為 SE
+        - 藥物難治性癲癇
+    - name: 結構性顱內疾病
+      examples:
+        - 腦腫瘤 (腦膜瘤、膠質瘤)
+        - 腦炎/腦膜腦炎 (GME、NME、感染性)
+        - 顱腦外傷
+        - 腦血管疾病 (缺血性/出血性中風)
+    - name: 代謝/中毒性
+      examples:
+        - 低血糖 (insulinoma、sepsis、新生兒)
+        - 肝腦症 (portosystemic shunt)
+        - 嚴重電解質失衡 (低鈣、低鈉)
+        - 中毒 (有機磷、metaldehyde、巧克力、xylitol)
+
+pathophysiology: 正常癲癇發作因 GABA 介導的抑制性機制在 1-2 分鐘內自行終止。SE 發生時抑制機制失效，興奮性 (glutamate/NMDA) 持續佔優勢。持續超過 5 分鐘後，突觸後 GABAA 受體因內吞作用 (internalization) 從細胞膜移除，導致 benzodiazepine 藥效遞減。持續發作引起全身高體溫、低氧血症、乳酸酸中毒、橫紋肌溶解、神經元興奮毒性損傷 (excitotoxicity)，最終導致不可逆的海馬與大腦皮質壞死。
+
+clinicalSigns:
+  early:
+    - 全身性強直陣攣發作 (generalized tonic-clonic seizure) 持續超過 5 分鐘
+    - 連續發作間未恢復意識
+    - 流涎、排尿、排便失禁
+    - 呼吸異常 (呼吸暫停或換氣過度)
+  progressive:
+    - 高體溫 (>40.5°C，因持續肌肉活動產熱)
+    - 心搏過速、心律不整
+    - 瞳孔散大且對光反射消失
+    - 意識喪失加深
+    - 肌張力異常 (由強直陣攣轉為微妙的面部或眼球抽動)
+  late:
+    - 非痙攣性 SE (subtle SE — 臨床發作停止但腦電圖仍持續癲癇放電)
+    - 多器官功能障礙 (DIC、急性腎損傷、肺水腫)
+    - 腦水腫
+    - 不可逆腦損傷
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 即時臨床評估
+      notes: "發作持續時間 >5 分鐘或連續發作間未恢復意識即可臨床診斷。同時評估 ABC (氣道/呼吸/循環)"
+    - name: 即時血液檢查
+      notes: "血糖 (低血糖為可逆原因，立即治療)、電解質 (Ca、Na、K)、PCV/TP、血液氣體 + 乳酸"
+    - name: 完整血液學與生化
+      notes: "CBC、肝腎功能、膽汁酸 (肝門體循環分流)。抗癲癇藥物血中濃度 (phenobarbital 目標 20-35 μg/mL)"
+  imaging:
+    - name: 腦部 MRI
+      notes: "穩定後盡快執行。評估結構性病因 (腫瘤、腦炎、出血)。SE 後可見海馬訊號異常"
+  additional:
+    - 腦脊髓液分析 (排除腦炎，MRI 後執行)
+    - 毒物篩檢 (疑似中毒時)
+    - 體溫持續監測 (直腸溫度計)
+    - 連續 ECG 監測
+    - 尿液分析 (肌球蛋白尿 — 橫紋肌溶解)
+
+treatment:
+  principles:
+    - SE 為最高緊急等級的神經急症，延遲治療直接影響預後
+    - 第一線 benzodiazepine 必須在 5 分鐘內給予
+    - 階梯式治療 (staged protocol)：benzodiazepine → 抗癲癇藥物負載 → 全身麻醉
+    - 同時處理高體溫、低血糖等併發症
+  medications:
+    - name: Diazepam
+      dose: "0.5-1 mg/kg IV (可重複 2-3 次，每次間隔 5 分鐘)；經直腸 1-2 mg/kg"
+      notes: 第一線急救藥物。IV 起效最快 (<2 分鐘)。反覆給予效果遞減 (GABAA 受體內吞)。脂溶性高，單次效果短 (15-20 分鐘)
+    - name: Midazolam
+      dose: "0.2-0.5 mg/kg IV/IM/IN (鼻腔內)"
+      notes: 水溶性，可 IM 或 IN 給藥 (無 IV 通路時首選)。效果與 diazepam 相當。適合家庭急救 (鼻腔內給藥)
+    - name: Levetiracetam (Keppra)
+      dose: "60 mg/kg IV 緩慢推注 (5-10 分鐘)"
+      notes: Benzodiazepine 無效時第二線。安全性極高，幾乎不影響心血管或呼吸。可與其他抗癲癇藥物合併
+    - name: Phenobarbital
+      dose: "負載劑量 16-20 mg/kg IV 分次給予 (每次 4-5 mg/kg，每 20-30 分鐘)"
+      notes: 經典第二線藥物。注意呼吸抑制與低血壓 (尤其與 benzodiazepine 合併時)。肝功能不全者慎用
+    - name: Propofol
+      dose: "Bolus 1-4 mg/kg IV 後 CRI 0.1-0.6 mg/kg/min"
+      notes: 第三線 (難治性 SE)。需全身麻醉與氣管內管。抑制呼吸與心血管，需密切監測
+    - name: Ketamine
+      dose: "Bolus 5 mg/kg IV 後 CRI 0.5-5 mg/kg/hr"
+      notes: NMDA 受體拮抗劑。超難治性 SE 的選擇。理論上針對 SE 後期 glutamate 毒性機制
+  general:
+    - 降溫：體溫 >40°C 時主動冷卻 (冷水毛巾、酒精擦拭腳掌、靜脈輸液)，達 39.5°C 停止
+    - 低血糖校正：50% Dextrose 0.5-1 mL/kg IV 稀釋後緩推
+    - 靜脈輸液維持 (LRS 或 0.9% NaCl)
+    - 持續心電圖與血壓監測
+    - 加護病房 24-72 小時密切觀察
+    - 穩定後轉為口服維持抗癲癇藥物
+
+emergencyNotes: "SE 為極度緊急狀態。發作 >5 分鐘立即給予 diazepam 0.5-1 mg/kg IV 或 midazolam 0.2-0.5 mg/kg IM/IN。無效於 5 分鐘內重複一次 (最多 3 次)。仍無效：levetiracetam 60 mg/kg IV 或 phenobarbital 16 mg/kg IV。第三線：propofol CRI (需插管)。同時監測體溫並主動降溫。立即測血糖，低血糖者給予 dextrose。每延遲 5 分鐘治療，預後顯著惡化。"
+
+prognosis: SE 總死亡率約 25-38%。預後取決於根本原因與發作持續時間。結構性腦部疾病 (腫瘤、腦炎) 預後最差。代謝性原因 (低血糖、電解質異常) 若能快速矯正預後較佳。特發性癲癇引起的 SE 積極治療後多數可控制，但未來復發風險增加。發作時間 >30 分鐘者神經功能損傷風險顯著增加。
+
+guidelineRefs:
+  - sourceOrg: BMC Veterinary Research
+    title: "International veterinary epilepsy task force consensus proposal: medical treatment of canine epilepsy in Europe."
+    url: https://pubmed.ncbi.nlm.nih.gov/26316233/
+    type: consensus
+    pmid: "26316233"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Outcome of status epilepticus in dogs and cats: 96 cases (2000-2006)"
+    url: https://pubmed.ncbi.nlm.nih.gov/19175737/
+    type: research
+    pmid: "19175737"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Status epilepticus and epilepsy in dogs: a retrospective study of 407 cases"
+    url: https://pubmed.ncbi.nlm.nih.gov/19175730/
+    type: research
+    pmid: "19175730"
+pubmedQueries:
+  - query: '"status epilepticus" AND (dog OR canine OR cat OR feline) AND ("treatment" OR "emergency" OR "outcome")'
+    frequency: monthly

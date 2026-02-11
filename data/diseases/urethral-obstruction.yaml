@@ -1,0 +1,147 @@
+slug: urethral-obstruction
+nameEn: Urethral Obstruction
+nameZh: 尿道阻塞
+bodySystem: renal
+description: 尿道完全或部分阻塞導致無法正常排尿的急診狀態，公貓最常見。完全阻塞超過 24-48 小時可因高血鉀心律不整與腎後性氮質血症致命。
+
+aliases:
+  - { alias: Urethral Blockage, language: en }
+  - { alias: Blocked Cat, language: en }
+  - { alias: UO, language: en }
+  - { alias: 尿道堵塞, language: zh }
+  - { alias: 排尿阻塞, language: zh }
+
+species:
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 公貓佔絕大多數（尿道窄且長）。室內公貓、肥胖、年輕至中年 (2-7 歲) 風險最高。尿道栓子最常見原因。再阻塞率約 15-40%。
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 公犬較母犬多（尿道經 os penis 處最窄）。常因結石嵌頓（CaOx、urate）。腫瘤性阻塞（TCC）見於老年犬。
+
+etiology:
+  categories:
+    - name: 貓尿道阻塞
+      examples:
+        - 尿道栓子 (urethral plug) — 基質蛋白 + 結晶混合物（最常見，約 50-60%）
+        - 尿道痙攣/水腫 (FIC 相關)
+        - 尿路結石嵌頓（struvite、CaOx）
+        - 特發性（無可見阻塞物）
+        - 尿道嚴格狹窄 (stricture，先前創傷/手術)
+    - name: 犬尿道阻塞
+      examples:
+        - 尿路結石嵌頓（CaOx 最常見，struvite、urate）
+        - 移行細胞癌 (TCC) — 三角區/近端尿道
+        - 前列腺腫大 (BPH、前列腺腫瘤)
+        - 尿道異物
+        - 尿道嚴格狹窄
+    - name: 醫源性
+      examples:
+        - 尿管置入後尿道水腫/創傷
+        - 手術後狹窄
+        - 不適當膀胱沖洗導致結石移位
+
+pathophysiology: 尿道完全阻塞後，尿液無法排出，膀胱壓力持續升高。背壓傳導至腎臟導致腎後性氮質血症（BUN、Creatinine 急速上升）。腎小球濾過率 (GFR) 下降，鉀離子無法排泄導致高血鉀。高血鉀 (>6.5 mEq/L) 嚴重影響心臟傳導系統 — 先出現帳篷狀 T 波 → P 波消失 → QRS 增寬 → 正弦波形 → 心室顫動或心臟停搏。同時出現代謝性酸中毒（氫離子無法排泄），加重高血鉀的心臟毒性。離子化鈣降低進一步加重心肌興奮性。膀胱壁長時間過度膨脹可導致逼尿肌損傷（detrusor atony）。
+
+clinicalSigns:
+  early:
+    - 反覆進出貓砂盆
+    - 蹲姿用力排尿但無尿液或僅滴出少量
+    - 排尿時嚎叫
+    - 舔舐外陰部
+    - 焦躁不安
+  progressive:
+    - 完全無法排尿
+    - 腹部觸診膀胱極度膨大、硬如球
+    - 腹痛
+    - 嘔吐
+    - 食慾廢絕
+    - 嗜睡
+  late:
+    - 低體溫
+    - 脫水嚴重
+    - 心搏過緩（高血鉀）
+    - 微弱脈搏
+    - 虛弱/倒下
+    - 昏迷
+    - 心臟停搏/死亡
+
+diagnosis:
+  primaryTests:
+    - name: 理學檢查
+      notes: "大且硬的膀胱（如球狀）為最重要發現。陰莖/尿道口觀察（栓子外露）。心搏過緩。脫水評估。體溫"
+    - name: 血液檢查 (STAT)
+      notes: "電解質（K+ 最關鍵！>6.5 mEq/L 危險、>8.0 mEq/L 致命）。BUN/Creatinine（腎後性氮質血症）。iCa（低值加重心毒性）。血氣（代謝性酸中毒）"
+    - name: 心電圖 (ECG)
+      notes: "高血鉀 ECG 變化：帳篷狀 T 波 (>6.5) → P 波振幅降低/消失 (>7.0) → QRS 增寬 (>7.5) → 正弦波 (>8.0) → 心室顫動/停搏。指導緊急治療"
+  imaging:
+    - name: 腹部 X 光
+      notes: "膀胱極度膨脹。不透射結石偵測（膀胱、尿道）。排除腹腔積液（膀胱破裂）"
+    - name: 腹部超音波
+      notes: "膀胱壁狀態。沉渣量。腎盂擴張（背壓）。腹腔游離液評估"
+  additional:
+    - 尿液分析（解除阻塞後取樣 — 結晶型態、感染評估）
+    - 尿液培養
+    - 逆行尿道攝影（犬，懷疑結石或腫瘤阻塞時）
+
+treatment:
+  principles:
+    - 高血鉀為首要致命威脅，必須最先處理
+    - 穩定心臟後再解除阻塞
+    - 解除阻塞後監測阻塞後利尿
+    - 預防再阻塞
+  medications:
+    - name: 10% Calcium Gluconate
+      dose: "0.5-1.0 mL/kg IV slow (5-10 分鐘)，ECG 監測"
+      notes: 緊急心肌保護。不降低血鉀但拮抗其心臟毒性。效果持續 20-30 分鐘。K+ >7.0 或 ECG 異常時立即給予
+    - name: Regular Insulin + Dextrose
+      dose: "Insulin 0.25-0.5 U/kg IV + 50% Dextrose 1-2 g per unit insulin"
+      notes: 將鉀離子驅入細胞內。效果在 15-30 分鐘內。持續數小時。監測血糖
+    - name: Sodium Bicarbonate
+      dose: "1-2 mEq/kg IV slow"
+      notes: 矯正嚴重代謝性酸中毒 (pH <7.1)。將鉀驅入細胞內。需血氣監測指導。可能加重低鈣
+    - name: Buprenorphine
+      dose: "0.01-0.03 mg/kg IV/IM/buccal"
+      notes: 止痛。阻塞解除前後均需。貓頰黏膜給藥方便
+    - name: Prazosin
+      dose: "0.25-0.5 mg/cat PO BID-TID"
+      notes: α1 拮抗劑。降低尿道平滑肌張力。阻塞解除後預防再阻塞。於尿管移除前 24 小時開始
+    - name: Maropitant
+      dose: "1 mg/kg SC/IV SID"
+      notes: 止吐
+  general:
+    - 靜脈輸液（0.9% NaCl 首選 — 不含鉀！避免 LRS 於嚴重高血鉀時）
+    - 鎮靜後尿管置入與沖洗（propofol 或 alfaxalone 麻醉誘導）
+    - 留置尿管 24-48 小時（閉合式集尿系統）
+    - 阻塞後利尿 (post-obstructive diuresis) 監測（尿量可能極大，需匹配輸液）
+    - 電解質持續監測（每 4-6 小時至穩定）
+    - 尿管移除後觀察自主排尿
+    - 反覆阻塞貓（3 次以上）強烈建議會陰尿道造口術 (PU)
+    - 長期環境豐富化與飲食管理（濕食、水攝取增加）
+    - Struvite 相關：處方溶石飲食 (Hill's c/d, Royal Canin S/O)
+
+emergencyNotes: 尿道完全阻塞為急診！超過 24-48 小時可致命。到院後立即建立靜脈通路、抽血電解質與 ECG。K+ >7.0 或 ECG 異常時先以 10% calcium gluconate 0.5-1.0 mL/kg IV slow 保護心臟。嚴重心搏過緩 (<60 bpm) 不反應於 atropine 時提示高血鉀嚴重。膀胱破裂時腹腔穿刺可見高鉀高肌酐腹水（腹水 creatinine/血清 creatinine >2:1）。嚴重低體溫需緩慢回溫。
+
+prognosis: 及時解除阻塞並矯正電解質異常後預後良好，住院死亡率約 5-8%。再阻塞率約 15-40%（多數在首次阻塞後 6 個月內）。PU 手術可將再阻塞率降至 <10%。環境豐富化與飲食管理可降低復發。延遲就醫（>48 小時完全阻塞）預後差，可能已發生不可逆腎損傷或心臟停搏。逼尿肌損傷者（長時間過度膨脹）功能恢復可能需數天至數週。
+
+guidelineRefs:
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "ISFM consensus guidelines on the management of urethral obstruction in male cats."
+    url: https://pubmed.ncbi.nlm.nih.gov/33100164/
+    type: consensus
+    pmid: "33100164"
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Predictors of short-term outcome in cats with urethral obstruction."
+    url: https://pubmed.ncbi.nlm.nih.gov/18691383/
+    type: research
+    pmid: "18691383"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Recurrence rate and long-term outcome after perineal urethrostomy in cats with urethral obstruction."
+    url: https://pubmed.ncbi.nlm.nih.gov/22332622/
+    type: research
+    pmid: "22332622"
+pubmedQueries:
+  - query: '"urethral obstruction" AND (cat OR feline) AND ("management" OR "outcome" OR "perineal urethrostomy")'
+    frequency: monthly

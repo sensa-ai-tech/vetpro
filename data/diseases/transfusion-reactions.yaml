@@ -1,0 +1,139 @@
+slug: transfusion-reactions
+nameEn: Transfusion Reactions
+nameZh: 輸血反應
+bodySystem: hematology
+description: 輸注血液製品（全血、濃縮紅血球、血漿、血小板）過程中或之後發生的不良免疫性或非免疫性反應。包括急性溶血性、發燒性非溶血性、過敏性及輸血相關急性肺損傷等類型。
+
+aliases:
+  - { alias: 輸血不良反應, language: zh }
+  - { alias: 血液製品反應, language: zh }
+  - { alias: Transfusion-Associated Adverse Events, language: en }
+  - { alias: Hemolytic Transfusion Reaction, language: en }
+  - { alias: TACO, language: en }
+  - { alias: TRALI, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 犬有超過 12 種已知血型 (DEA 系統)。首次輸血通常安全，但第二次以上若未配血可能引起嚴重溶血反應。DEA 1.1 陽性血輸給陰性犬為最常見嚴重溶血原因。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓有 A、B、AB 三種血型。Type B 貓具有高效價天然抗 A 抗體，即使首次輸入 Type A 血亦可發生致命性急性溶血反應。輸血前配血檢測為必要。
+
+etiology:
+  categories:
+    - name: 免疫性急性反應
+      examples:
+        - 急性溶血性反應（血型不合，最嚴重）
+        - 發燒性非溶血性反應（FNHTR，抗白血球/血小板抗體）
+        - 急性過敏/蕁麻疹反應（抗血漿蛋白抗體）
+        - 過敏性休克 (anaphylaxis)（罕見）
+    - name: 免疫性延遲反應
+      examples:
+        - 延遲性溶血反應（輸血後 2-21 天，記憶性免疫反應）
+        - 輸血後紫斑（血小板抗體）
+    - name: 非免疫性反應
+      examples:
+        - 輸血相關循環超負荷 (TACO)
+        - 輸血相關急性肺損傷 (TRALI)
+        - 細菌汙染 (septic transfusion reaction)
+        - 低體溫（冷藏血液未回溫）
+        - 枸櫞酸鹽中毒（大量輸血時低血鈣）
+        - 高血鉀（儲存血液鉀離子滲出）
+
+clinicalSigns:
+  early:
+    - 發燒（體溫升高 ≥1°C）
+    - 嘔吐
+    - 躁動不安
+    - 蕁麻疹（面部水腫、搔癢）
+    - 心搏過速
+  progressive:
+    - 血紅素尿（紅棕色尿液）
+    - 黃疸（溶血性）
+    - 呼吸急促/困難
+    - 低血壓
+    - 震顫
+    - 抽搐（面部）
+  late:
+    - 休克（心血管崩塌）
+    - 急性腎衰竭（溶血性血紅素腎損傷）
+    - DIC
+    - 急性呼吸窘迫 (TRALI)
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 臨床監測
+      notes: "輸血開始後前 15-30 分鐘密切監測體溫、心率、呼吸速率、血壓。之後每 30 分鐘評估一次直至輸血完成"
+    - name: 血漿外觀
+      notes: "輸血後抽血離心——血漿呈粉紅色/紅色（血管內溶血）。與輸血前血漿顏色比較"
+    - name: 配血試驗 (crossmatch)
+      notes: "主配 (major)：供體紅血球 + 受體血清。副配 (minor)：受體紅血球 + 供體血清。凝集或溶血為不合"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "評估 TACO（肺水腫、心臟擴大）或 TRALI（雙側肺浸潤，無心臟擴大）"
+  additional:
+    - 血型鑑定（犬 DEA 1.1；貓 A/B/AB）
+    - 直接 Coombs test（輸血後陽性轉為支持溶血性反應）
+    - 尿液分析（血紅素尿、膽紅素尿）
+    - 膽紅素（溶血後升高）
+    - CBC（PCV 輸血後未升高或反而下降提示溶血性反應）
+    - 電解質（鈣、鉀）
+    - 血液培養（懷疑細菌汙染時）
+
+treatment:
+  principles:
+    - 立即停止輸血
+    - 維持靜脈通路（更換輸液組）
+    - 根據反應類型給予針對性治療
+    - 嚴重溶血需積極液體治療保護腎臟
+  medications:
+    - name: Diphenhydramine
+      dose: "1-2 mg/kg IM 或緩慢 IV"
+      notes: 過敏性/蕁麻疹反應。輕度反應可給予後減慢輸血速度繼續
+    - name: Dexamethasone SP
+      dose: "0.1-0.2 mg/kg IV"
+      notes: 嚴重過敏反應或溶血反應的抗炎處理
+    - name: Epinephrine
+      dose: "0.01-0.02 mg/kg IV 或 IM"
+      notes: 過敏性休克時使用。注意稀釋至 1:10,000 溶液
+    - name: Furosemide
+      dose: "1-2 mg/kg IV"
+      notes: TACO 的利尿治療。溶血反應促進腎臟排泄游離血紅素
+  general:
+    - 急性溶血反應：立即停止輸血，積極 IV 輸液 (crystalloid bolus 20 mL/kg) 維持腎臟灌流
+    - 監測尿量（目標 >2 mL/kg/hr），防止血紅素腎病
+    - 發燒性非溶血性反應：停止輸血，退燒處理後評估是否可繼續（使用不同的血品）
+    - 過敏反應：輕度可給 diphenhydramine 後減速繼續；嚴重則停止
+    - TACO：利尿、氧氣、半坐位
+    - TRALI：氧氣支持、呼吸支持（可能需正壓通氣）
+    - 保留血袋與輸血組送檢（培養、重新配血）
+    - 所有反應均需詳細記錄（時間、症狀、處理、預後）
+
+emergencyNotes: 急性溶血反應為輸血最嚴重併發症。立即停止輸血、維持靜脈通路。積極 crystalloid bolus 維持腎灌流。過敏性休克給予 epinephrine。Type B 貓誤輸 Type A 血可在數分鐘內死亡。
+
+prognosis: 發燒性非溶血性反應與輕度過敏反應預後極佳。急性溶血性反應若及時停止輸血並積極處理，多數可存活，但併發 DIC 或急性腎衰竭者預後差。TRALI 死亡率可達 5-10%。預防勝於治療——輸血前血型鑑定與配血檢測可大幅降低風險。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Transfusion medicine in small animals"
+    url: https://pubmed.ncbi.nlm.nih.gov/23855442/
+    type: review
+    pmid: "23855442"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Evaluation of transfusion reactions in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/19175739/
+    type: research
+    pmid: "19175739"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Naturally occurring alloantibodies in cats and transfusion compatibility"
+    url: https://pubmed.ncbi.nlm.nih.gov/16190601/
+    type: research
+    pmid: "16190601"
+
+pubmedQueries:
+  - query: '"transfusion reaction" AND (dog OR cat OR canine OR feline) AND ("hemolytic" OR "crossmatch" OR "blood type")'
+    frequency: monthly
