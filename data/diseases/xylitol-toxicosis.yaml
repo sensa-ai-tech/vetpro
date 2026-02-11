@@ -1,0 +1,112 @@
+slug: xylitol-toxicosis
+nameEn: Xylitol Toxicosis
+nameZh: 木糖醇中毒
+bodySystem: toxicology
+description: 犬攝入木糖醇 (xylitol) 後引起嚴重低血糖與潛在肝衰竭的急性中毒症。犬對木糖醇極度敏感，微量攝入即可致命。
+
+aliases:
+  - { alias: 木糖醇中毒症, language: zh }
+  - { alias: 山梨醇中毒, language: zh }
+  - { alias: Birch Sugar Toxicosis, language: en }
+  - { alias: Xylitol Poisoning, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬對木糖醇極度敏感。犬攝入木糖醇後會引起劇烈胰島素釋放，導致嚴重低血糖。高劑量可導致急性肝壞死。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓對木糖醇的敏感性較低，臨床報告極少。但仍建議避免接觸。
+
+etiology:
+  categories:
+    - name: 毒物來源
+      examples:
+        - 無糖口香糖（最常見來源，每片含 0.3-1.5 g xylitol）
+        - 無糖糖果與薄荷糖
+        - 無糖烘焙品
+        - 牙膏
+        - 花生醬（部分品牌）
+        - 維生素補充品
+        - 某些藥物（液態製劑）
+    - name: 毒性劑量
+      examples:
+        - 低血糖劑量：>0.1 g/kg (100 mg/kg)
+        - 肝毒性劑量：>0.5 g/kg (500 mg/kg)
+        - 致死可能劑量：不確定，但 >1 g/kg 高風險
+    - name: 毒性機制
+      examples:
+        - 犬：xylitol 刺激胰島素大量釋放（比蔗糖強 2.5-7 倍）
+        - 導致急性嚴重低血糖（攝入後 10-60 分鐘）
+        - 高劑量引起急性肝壞死（機制未完全明瞭，可能與 ATP 耗竭相關）
+
+clinicalSigns:
+  early:
+    - 嘔吐（最早出現的症狀）
+    - 虛弱無力
+    - 步態不穩 (ataxia)
+    - 低血糖症狀（通常攝入後 10-60 分鐘）
+  progressive:
+    - 嚴重低血糖（血糖 <60 mg/dL）
+    - 嗜睡
+    - 震顫
+    - 癲癇發作
+    - 肝指數上升（攝入後 8-12 小時）
+  late:
+    - 急性肝衰竭（攝入後 24-72 小時）
+    - 黃疸
+    - 凝血障礙 (DIC)
+    - 肝性腦病
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 病史確認
+      notes: "確認木糖醇產品種類、攝入量、攝入時間。產品標示木糖醇含量計算 mg/kg 劑量"
+    - name: 血糖監測
+      notes: "即時血糖測量為首要。低血糖 (<60 mg/dL) 需緊急處理。每 1-2 小時監測直至穩定"
+  imaging:
+    - name: 腹部超音波
+      notes: "肝臟可能出現急性腫脹、迴音變化。用於評估肝損傷程度"
+  additional:
+    - 肝功能指數 (ALT、ALP、GGT、bilirubin)，攝入後 8-12 小時開始升高
+    - 凝血功能 (PT、aPTT、fibrinogen)
+    - 電解質（低血鉀常見）
+    - CBC（血小板減少可能與 DIC 相關）
+
+treatment:
+  principles:
+    - 維持正常血糖為首要目標
+    - 監測並保護肝功能
+    - 減少毒物吸收（若攝入時間短）
+    - 48-72 小時密切監測
+  general:
+    - 催吐（攝入後 30 分鐘內，且患犬無症狀時）
+    - 立即給予 dextrose bolus（50% dextrose 0.5-1 mL/kg IV 稀釋後緩慢給予）
+    - 持續 dextrose CRI（2.5-5% dextrose 於輸液中）直至血糖穩定
+    - IV 輸液支持（維持水合與灌流）
+    - 肝保護劑 (N-acetylcysteine 140 mg/kg IV loading dose，後 70 mg/kg IV q6h × 7 次)
+    - S-adenosylmethionine (SAMe 20 mg/kg PO SID 空腹)
+    - Vitamin K1 (若凝血功能異常，2.5-5 mg/kg SC/PO BID)
+    - 血糖每 1-2 小時監測直至穩定 ≥12 小時
+    - 肝指數每 12-24 小時追蹤至少 72 小時
+
+prognosis: 單純低血糖若及時治療預後良好。併發肝衰竭時預後謹慎至差，死亡率可達 20-50%。早期積極治療是關鍵。攝入超過 0.5 g/kg 需密集監測至少 72 小時。
+
+guidelineRefs:
+  - sourceOrg: ASPCA APCC
+    title: "Xylitol toxicosis in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/17397347/
+    type: review
+    pmid: "17397347"
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Acute hepatic failure and coagulopathy associated with xylitol ingestion in eight dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/16740317/
+    type: case-series
+    pmid: "16740317"
+
+pubmedQueries:
+  - query: '"xylitol" AND (dog OR canine) AND ("toxicosis" OR "poisoning" OR "hypoglycemia" OR "hepatic")'
+    frequency: monthly

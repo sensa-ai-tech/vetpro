@@ -1,0 +1,102 @@
+slug: tooth-resorption
+nameEn: Tooth Resorption
+nameZh: 貓齒吸收
+bodySystem: dental
+description: 破齒細胞 (odontoclast) 導致牙齒硬組織進行性破壞的疾病，為貓最常見的牙齒病變。約 20-60% 的貓受影響，盛行率隨年齡增加。
+
+aliases:
+  - { alias: 齒吸收, language: zh }
+  - { alias: 貓頸部吸收性病變, language: zh }
+  - { alias: Feline Tooth Resorption, language: en }
+  - { alias: Feline Odontoclastic Resorptive Lesion, language: en }
+  - { alias: FORL, language: en }
+  - { alias: TR, language: en }
+
+species:
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 約 20-60% 的成貓受影響，盛行率隨年齡顯著增加。純種貓（如 Siamese、Persian）可能有較高風險。多數病灶位於下顎前臼齒。
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬偶見齒吸收，多與牙周病、外傷或矯正壓力相關，較少為特發性。
+
+etiology:
+  categories:
+    - name: 可能病因（確切病因不明）
+      examples:
+        - 特發性（多數病例病因不明）
+        - 維生素 D 代謝異常假說
+        - 慢性炎症刺激
+        - 牙骨質 (cementum) 損傷後修復異常
+    - name: 相關因素
+      examples:
+        - 年齡增長（>4 歲風險增加）
+        - 牙周病併存
+        - 品種傾向 (Siamese、Persian、Abyssinian)
+
+clinicalSigns:
+  early:
+    - 多數早期無明顯症狀
+    - 偶見牙齦覆蓋吸收灶上方輕度紅腫
+    - X 光偶然發現
+  progressive:
+    - 進食時下顎顫動 (jaw chattering)
+    - 流涎增加
+    - 進食偏好改變（避免硬食）
+    - 觸碰病灶時明顯疼痛反應
+    - 牙齦增生覆蓋吸收灶
+  late:
+    - 牙冠斷裂
+    - 嚴重口腔疼痛
+    - 食慾顯著下降
+    - 體重減輕
+    - 牙根殘留（Type 2 齒根可能被骨組織取代）
+
+diagnosis:
+  primaryTests:
+    - name: 口腔檢查
+      notes: "可見牙齦增生覆蓋缺損處，探針觸碰病灶時患貓出現下顎顫動或疼痛反應"
+    - name: 牙科探針檢查
+      notes: "全身麻醉下以牙科探針評估，可探入吸收灶缺損處"
+  imaging:
+    - name: 齒科 X 光
+      notes: "為確診必備。可見牙齒硬組織密度缺損。Type 1：齒根輪廓清晰、牙周韌帶空間正常。Type 2：齒根輪廓消失、牙周韌帶空間不可辨識，齒根被骨樣組織取代。Type 3：同一牙齒同時存在 Type 1 與 Type 2 特徵"
+  additional:
+    - 全口 X 光檢查（病變常為多齒性）
+    - 分型評估決定治療方式
+
+treatment:
+  principles:
+    - 無有效保守治療方法
+    - 拔牙為唯一確定治療
+    - 根據分型選擇拔牙方式
+    - 充分止痛
+  general:
+    - "Type 1：標準手術拔牙 (surgical extraction)，完整移除齒根"
+    - "Type 2：牙冠截斷術 (crown amputation)，因齒根已被骨組織取代，可保留齒根"
+    - "Type 3：依各齒根情況分別處理"
+    - 術前止痛 (buprenorphine 0.02 mg/kg IV/buccal)
+    - 局部神經阻斷 (bupivacaine 0.5%，每處 0.1-0.3 mL)
+    - 術後止痛 (meloxicam 0.05 mg/kg SC 首日，後 0.025 mg/kg PO SID × 3-5 天)
+    - buprenorphine 0.02 mg/kg buccal BID-TID × 3-5 天
+    - 軟食飲食 × 10-14 天
+
+prognosis: 拔牙後預後良好，疼痛迅速緩解，多數貓術後食慾與活動力明顯改善。但為進行性疾病，其他牙齒未來可能繼續出現吸收，需每年齒科 X 光追蹤。
+
+guidelineRefs:
+  - sourceOrg: AVDC
+    title: "AVDC Nomenclature — Tooth Resorption"
+    url: https://pubmed.ncbi.nlm.nih.gov/24410646/
+    type: consensus
+    pmid: "24410646"
+  - sourceOrg: JVIM
+    title: "Tooth resorption in cats: pathophysiology, classification and treatment options"
+    url: https://pubmed.ncbi.nlm.nih.gov/20002551/
+    type: review
+    pmid: "20002551"
+
+pubmedQueries:
+  - query: '"tooth resorption" AND (cat OR feline) AND ("treatment" OR "classification" OR "guidelines")'
+    frequency: monthly

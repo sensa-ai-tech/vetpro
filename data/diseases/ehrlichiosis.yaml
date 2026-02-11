@@ -1,0 +1,120 @@
+slug: ehrlichiosis
+nameEn: Ehrlichiosis
+nameZh: 艾利希體症
+bodySystem: infectious
+description: 艾利希體症是由艾利希體屬立克次體感染白血球所引起的蜱媒傳染病。犬隻以 Ehrlichia canis 最常見，主要感染單核球，臨床表現分為急性期、亞臨床期及慢性期三個階段。慢性期可導致骨髓抑制與全血球減少，預後不良。
+
+aliases:
+  - { alias: 犬艾利希體症, language: zh }
+  - { alias: 蜱媒單核球增多症, language: zh }
+  - { alias: 熱帶犬全血球減少症, language: zh }
+  - { alias: Canine Monocytic Ehrlichiosis, language: en }
+  - { alias: Tropical Canine Pancytopenia, language: en }
+  - { alias: CME, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬隻為主要宿主，德國牧羊犬對 E. canis 有品種易感性，易發展為嚴重慢性型。分布於熱帶及亞熱帶地區，與棕色犬蜱（Rhipicephalus sanguineus）分布區域重疊。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓隻偶爾感染 Ehrlichia spp.，臨床症狀通常較輕微。診斷困難，可能被低估。
+
+etiology:
+  categories:
+    - name: 病原體
+      examples:
+        - Ehrlichia canis（犬單核球艾利希體，最常見且最重要）
+        - Ehrlichia ewingii（感染顆粒球）
+        - Ehrlichia chaffeensis（人畜共通，偶感染犬）
+    - name: 傳播途徑
+      examples:
+        - 棕色犬蜱（Rhipicephalus sanguineus）叮咬為主要途徑
+        - 安氏革蝨（Amblyomma americanum）傳播 E. ewingii
+        - 輸血傳播（帶原者捐血）
+    - name: 風險因子
+      examples:
+        - 壁蝨流行地區（熱帶、亞熱帶）
+        - 戶外活動犬隻
+        - 德國牧羊犬（品種易感性）
+        - 免疫抑制狀態
+        - 未使用壁蝨預防藥物
+
+clinicalSigns:
+  early:
+    - 發熱（39.5-41°C，急性期）
+    - 食慾下降
+    - 精神沉鬱與嗜睡
+    - 漿液性或黏液膿性鼻分泌物
+    - 體重減輕
+    - 淋巴結腫大
+  progressive:
+    - 血小板減少引起的出血傾向（鼻出血、瘀斑、血尿）
+    - 脾腫大
+    - 關節腫脹與跛行（E. ewingii 多關節炎）
+    - 前葡萄膜炎或視網膜出血
+    - 蛋白尿（免疫複合物腎病）
+  late:
+    - 全血球減少症（骨髓抑制，慢性期）
+    - 嚴重消瘦
+    - 繼發感染（因免疫抑制）
+    - 慢性腎病
+    - 骨髓發育不全
+    - 中樞神經系統症狀（腦膜腦炎）
+
+diagnosis:
+  primaryTests:
+    - name: 血清學檢測（SNAP 4Dx / IFAT）
+      notes: "快速篩檢試劑（SNAP 4Dx Plus）可同時檢測 E. canis 抗體。IFAT 為金標準血清學方法，力價 ≥ 1:64 為陽性。急性感染早期（< 2-3 週）抗體可能尚未產生，建議 2-3 週後複檢。"
+    - name: PCR 檢測
+      notes: "可在抗體產生前即偵測到病原體 DNA，為急性期最敏感的方法。可區分 E. canis、E. ewingii 等不同種別。慢性帶原者也可偵測。"
+    - name: 全血球計數（CBC）
+      notes: "急性期：血小板減少為最早且最常見的血液學異常。慢性期：全血球減少（貧血、白血球減少、血小板減少）。可能出現單核球增多。偶爾可在單核球內見到包涵體（morulae）。"
+  imaging:
+    - name: 腹部超音波
+      notes: "評估脾臟大小（脾腫大常見）及肝臟變化。慢性期可見脾臟反應性增生。"
+    - name: 胸腔 X 光
+      notes: "評估肺部浸潤（間質性或肺泡型肺炎偶爾出現）。"
+  additional:
+    - 血液生化：高球蛋白血症（多株性高免疫球蛋白）、低白蛋白血症、肝酵素升高
+    - 蛋白電泳：多株性丙種球蛋白升高為特徵性發現
+    - 尿液分析：蛋白尿
+    - 骨髓穿刺（慢性期）：評估骨髓細胞性，慢性期呈發育不全
+    - 關節液分析（關節炎病例）：非敗血性化膿性關節炎
+
+treatment:
+  principles:
+    - Doxycycline 為首選抗生素，對所有 Ehrlichia 種別有效
+    - 支持療法維持血液動力學穩定
+    - 慢性期骨髓抑制的治療較為困難，預後較差
+    - 壁蝨預防為長期管理關鍵
+  general:
+    - "Doxycycline 5 mg/kg PO q12h 或 10 mg/kg PO q24h，連續 28 天（標準療程）"
+    - "嚴重血小板減少或免疫媒介性併發症：Prednisolone 1-2 mg/kg PO q12h，漸減"
+    - "嚴重貧血（PCV < 15%）：輸血治療"
+    - "靜脈輸液療法維持水合狀態"
+    - "慢性期骨髓抑制：考慮使用重組人類紅血球生成素（rHuEPO）或粒細胞集落刺激因子（G-CSF）"
+    - "壁蝨預防：isoxazoline 類藥物（Fluralaner、Sarolaner、Afoxolaner）持續使用"
+    - "治療後 6-9 個月追蹤 PCR 確認病原體清除"
+
+prognosis: 急性期及早期亞臨床期以 doxycycline 治療後預後良好，多數犬隻在 24-48 小時內臨床改善。慢性期伴有骨髓抑制者預後不良至嚴重不良，全血球減少為負面預後因子。德國牧羊犬預後較其他品種差。治療後應長期監測以確認感染是否完全清除。
+
+guidelineRefs:
+  - sourceOrg: ACVIM
+    title: "ACVIM consensus statement on ehrlichiosis and anaplasmosis"
+    url: https://pubmed.ncbi.nlm.nih.gov/19175730/
+    type: consensus
+    pmid: "19175730"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Update on canine and feline blood donor screening for blood-borne pathogens"
+    url: https://pubmed.ncbi.nlm.nih.gov/26463980/
+    type: consensus
+    pmid: "26463980"
+
+pubmedQueries:
+  - query: '"Ehrlichia canis" AND (dog OR canine) AND ("treatment" OR "doxycycline")'
+    frequency: monthly
+  - query: '"canine ehrlichiosis" AND ("diagnosis" OR "PCR" OR "serology")'
+    frequency: monthly

@@ -1,0 +1,119 @@
+slug: osteosarcoma
+nameEn: Osteosarcoma
+nameZh: 骨肉瘤
+bodySystem: oncology
+description: 犬最常見的原發性骨骼惡性腫瘤，好發於大型及巨型犬的四肢長骨，具有高度肺轉移傾向。
+
+aliases:
+  - { alias: OSA, language: en }
+  - { alias: Osteogenic Sarcoma, language: en }
+  - { alias: 成骨肉瘤, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 佔犬原發性骨腫瘤約 85%。好發品種：Great Dane、Irish Wolfhound、Rottweiler、Greyhound、Saint Bernard、Golden Retriever。體重 >40 kg 犬風險顯著增加。中位年齡 7-8 歲。雄性略多。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓罕見。後肢多於前肢，轉移率較犬低 (約 5-10%)。中位年齡約 10 歲。手術切除後預後較犬佳。
+
+etiology:
+  categories:
+    - name: 品種/體型因素
+      examples:
+        - 大型/巨型犬品種強烈好發
+        - 體重、身高為獨立風險因子
+        - 快速生長期骨骼承受的生物力學壓力
+    - name: 已知風險因素
+      examples:
+        - 先前骨折固定處 (金屬植入物)
+        - 先前放射治療部位
+        - 骨梗塞
+        - 慢性骨髓炎 (罕見)
+    - name: 分子生物學
+      examples:
+        - TP53 突變
+        - RB1 (retinoblastoma) 基因異常
+        - PTEN 缺失
+        - MET 過度表現
+        - 多基因遺傳傾向 (GWAS 研究)
+
+pathophysiology: 骨肉瘤起源於間葉幹細胞的惡性轉化，產生腫瘤性類骨質 (osteoid)。腫瘤在骨髓腔內擴展，破壞正常骨結構，同時刺激骨膜反應性新骨形成。腫瘤破壞骨皮質導致病理性骨折風險增加。腫瘤產生的蛋白酶、前列腺素及 RANKL 激活破骨細胞，造成溶骨性破壞，同時腫瘤細胞釋放的骨形態發生蛋白促進成骨反應，形成特徵性「日射狀」骨膜反應。疼痛來自骨膜牽張、微骨折及炎症介質。犬 OSA 具有極高的肺血行轉移傾向，診斷時估計 >90% 已有肺臟微轉移。
+
+clinicalSigns:
+  early:
+    - 間歇性跛行 (逐漸加重)
+    - 患肢觸診疼痛
+    - 長骨幹骺端腫脹
+  progressive:
+    - 持續性跛行
+    - 患部明顯腫脹與硬性腫塊
+    - 肌肉萎縮 (患肢)
+    - 疼痛加劇 (觸診、活動時)
+    - 食慾下降、體重減輕
+  late:
+    - 病理性骨折
+    - 嚴重疼痛 (不願站立/行走)
+    - 肺轉移症狀 (呼吸困難、咳嗽)
+    - 惡病質
+
+diagnosis:
+  primaryTests:
+    - name: X 光 (患肢)
+      notes: "典型影像：幹骺端溶骨性/增殖性/混合性病變、骨皮質破壞、日射狀骨膜反應 (sunburst pattern)、Codman triangle。不跨越關節面"
+    - name: 組織病理學 (骨切片活檢)
+      notes: "確診金標準。Jamshidi needle 或 trephine 核心活檢。可判定組織亞型 (osteoblastic、chondroblastic、fibroblastic 等)"
+    - name: 鹼性磷酸酶 (ALP)
+      notes: "血清 ALP 升高為不良預後因子。骨特異性 ALP (bALP) 更具特異性"
+  imaging:
+    - name: 胸腔 X 光 (三方向)
+      notes: "肺轉移篩檢。診斷時約 10-15% X 光可見肺結節 (實際微轉移率 >90%)"
+    - name: 胸腔 CT
+      notes: "較 X 光敏感度高，可偵測更小的肺結節"
+    - name: 骨掃描 (核醫學)
+      notes: "評估多發骨病變。約 7% 犬 OSA 為多骨性"
+  additional:
+    - CBC、生化 (ALP、Ca)
+    - 區域淋巴結 FNA (若腫大)
+    - FNA 細胞學 (可能有幫助但非首選，需注意血液污染)
+    - 骨病變鑑別：黴菌性骨髓炎、其他骨腫瘤 (軟骨肉瘤、纖維肉瘤)
+
+treatment:
+  principles:
+    - 截肢 + 輔助化療為標準治療
+    - 單獨截肢無法控制微轉移
+    - 保肢手術 (limb-sparing) 適用於特定解剖位置
+    - 疼痛控制至關重要
+  medications:
+    - name: Carboplatin
+      dose: "300 mg/m² IV 每 3 週 × 4-6 次"
+      notes: 截肢術後輔助化療首選。中位存活約 10-12 個月 (vs 僅截肢 4-5 個月)
+    - name: Doxorubicin
+      dose: "30 mg/m² IV 每 3 週 × 5 次"
+      notes: 療效與 carboplatin 相當。注意累積心臟毒性 (總劑量 <240 mg/m²)
+    - name: Carboplatin + Doxorubicin (交替)
+      dose: "Carboplatin 300 mg/m² 與 Doxorubicin 30 mg/m² 交替，每 3 週 × 6 次"
+      notes: 部分研究顯示交替方案可能優於單藥
+    - name: 疼痛管理
+      dose: "NSAIDs (meloxicam 0.1 mg/kg PO SID 或 carprofen 4.4 mg/kg PO SID) + Gabapentin 5-10 mg/kg PO BID/TID ± Tramadol 2-5 mg/kg PO BID/TID"
+      notes: 多模式止痛，視嚴重度調整
+  general:
+    - 截肢 (四肢 OSA 標準手術)
+    - 保肢手術 (遠端橈骨 OSA 最適合；骨移植/金屬植入物/骨水泥)
+    - 姑息性放射治療 (無法手術時疼痛控制，粗分割方案 3-4 次)
+    - 三足犬適應良好 (排除嚴重關節疾病/神經疾病/過度肥胖)
+    - 術後物理復健
+
+prognosis: 截肢 + 化療中位存活約 10-12 個月，約 20% 存活 >2 年。僅截肢中位存活約 4-5 個月。診斷時 ALP 正常者預後較佳。中軸骨 OSA 預後較四肢差。貓 OSA 截肢後中位存活約 2-4 年 (轉移率低)。
+
+guidelineRefs:
+  - sourceOrg: ACVS
+    title: "ACVS Large Animal/Small Animal — Osteosarcoma"
+    url: https://www.acvs.org/small-animal/osteosarcoma
+    type: guideline
+
+pubmedQueries:
+  - query: '"osteosarcoma" AND (dog OR canine) AND ("amputation" OR "chemotherapy" OR "carboplatin")'
+    frequency: monthly

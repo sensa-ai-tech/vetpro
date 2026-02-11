@@ -1,0 +1,136 @@
+slug: otitis-externa
+nameEn: Otitis Externa
+nameZh: 外耳炎
+bodySystem: dermatology
+description: 外耳道的炎症性疾病，為犬最常見的耳部疾患之一。需以 PSPP 系統性架構分析其誘發因素、原發因素、次發因素及持續因素。
+
+aliases:
+  - { alias: OE, language: en }
+  - { alias: Ear Infection, language: en }
+  - { alias: 外耳道炎, language: zh }
+  - { alias: 耳炎, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬最常見就診原因之一，盛行率約 10-20%。好發品種：Cocker Spaniel、Basset Hound、Shar-Pei、Labrador Retriever、German Shepherd (垂耳、耳道狹窄、毛量多)。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 較犬少見。常見原因為耳疥蟲 (Otodectes cynotis，尤其幼貓)、息肉、過敏。
+
+etiology:
+  categories:
+    - name: 誘發因素 (Predisposing Factors)
+      examples:
+        - 耳朵構造 (垂耳、耳道狹窄)
+        - 耳道毛量過多
+        - 游泳/洗澡後殘留水分
+        - 高溫高濕環境
+        - 耳道阻塞 (息肉、腫瘤)
+    - name: 原發因素 (Primary Causes)
+      examples:
+        - 過敏 (異位性皮膚炎 — 最常見原發因素，約 50-80% 的復發性外耳炎)
+        - 食物不良反應
+        - 耳疥蟲 (Otodectes cynotis)
+        - 異物 (草芒)
+        - 角化異常
+        - 內分泌疾病 (甲狀腺低下)
+        - 自體免疫疾病 (天疱瘡)
+    - name: 次發因素 (Secondary Causes)
+      examples:
+        - 細菌感染 (Staphylococcus pseudintermedius、Pseudomonas aeruginosa、Proteus spp.)
+        - 酵母菌感染 (Malassezia pachydermatis)
+        - 混合感染
+    - name: 持續因素 (Perpetuating Factors)
+      examples:
+        - 耳道增生 (上皮增殖、耳道狹窄)
+        - 耳道礦化/骨化
+        - 中耳炎 (otitis media)
+        - 治療不當/不完整
+        - 生物膜 (biofilm) 形成
+
+pathophysiology: 外耳炎的發生遵循 PSPP (Predisposing-Primary-Secondary-Perpetuating) 架構。誘發因素改變耳道微環境 (溫度、濕度、pH)，使耳道易受原發因素侵害。原發因素 (最常見為過敏) 引起耳道上皮炎症、腫脹及分泌增加。改變的微環境促進繼發性微生物過度增殖。正常犬耳道含少量 Staphylococcus spp.、Malassezia pachydermatis，炎症時這些常在菌過度增殖成為感染。慢性炎症導致耳道上皮增生、腺體肥大、纖維化，進而使耳道狹窄，形成持續因素。耳道狹窄與分泌物蓄積加劇感染，形成惡性循環。未控制的外耳炎可穿破鼓膜導致中耳炎。
+
+clinicalSigns:
+  early:
+    - 搔耳/甩頭
+    - 耳道紅斑
+    - 輕度耳分泌物 (ceruminous)
+    - 耳部搔癢
+  progressive:
+    - 分泌物增加 (黃/棕/黑色)
+    - 耳道腫脹
+    - 異味
+    - 疼痛 (觸摸耳朵時退縮或攻擊)
+    - 耳翼紅腫
+    - Malassezia：暗棕色蠟狀分泌物
+    - Pseudomonas：黃綠色膿性分泌物、潰瘍
+  late:
+    - 耳道狹窄/閉塞
+    - 耳道礦化
+    - 慢性增殖性變化
+    - 鼓膜破裂 → 中耳炎
+    - 頭歪斜 (中耳炎)
+    - 聽力下降
+
+diagnosis:
+  primaryTests:
+    - name: 耳鏡檢查 (Otoscopy)
+      notes: "評估耳道紅腫程度、分泌物性質、耳道增生、異物、鼓膜完整性。嚴重疼痛者可能需鎮靜"
+    - name: 耳分泌物細胞學 (Ear Cytology)
+      notes: "棉棒取樣 → Diff-Quik 或 heat-fixed 染色。評估細菌 (球菌/桿菌)、酵母菌 (Malassezia)、白血球。每個高倍視野 >5 Malassezia 或 >5 球菌或 >任何桿菌即為異常"
+    - name: 細菌培養 + 藥敏試驗 (C&S)
+      notes: "適用於：桿菌感染 (疑似 Pseudomonas)、慢性/復發性/治療失敗病例、中耳炎。指導抗生素選擇"
+  imaging:
+    - name: 頭部 X 光 / CT
+      notes: "評估中耳 (鼓室)。CT 較 X 光敏感。鼓室壁增厚、鼓室內液體/軟組織密度提示中耳炎"
+    - name: 影像耳鏡 (Video Otoscopy)
+      notes: "放大檢視耳道深處與鼓膜。可執行耳道沖洗、異物移除、鼓膜穿刺"
+  additional:
+    - 皮膚刮搔 (排除耳疥蟲，尤其幼犬貓)
+    - 過敏評估 (異位性皮膚炎為最常見原發因素)
+    - 甲狀腺功能檢查 (犬復發性耳炎)
+    - 組織病理 (耳道腫瘤/息肉鑑別)
+
+treatment:
+  principles:
+    - 找出並處理原發因素 (過敏 = 最常見)
+    - 耳道清潔 (清除分泌物以利藥物接觸)
+    - 根據細胞學結果選擇局部治療
+    - 處理持續因素以防復發
+    - 確認鼓膜完整性 (部分藥物有耳毒性)
+  medications:
+    - name: 局部複合耳藥 (Glucocorticoid + Antifungal + Antibiotic)
+      dose: "典型產品：Otomax (betamethasone + clotrimazole + gentamicin)、Mometamax (mometasone + clotrimazole + gentamicin)、Osurnia (florfenicol + terbinafine + betamethasone)"
+      notes: 多數輕-中度外耳炎首選。每日 1-2 次或依產品指示。療程 7-14 天
+    - name: Posatex (orbifloxacin + posaconazole + mometasone)
+      dose: "4 滴/耳 SID × 7 天"
+      notes: 含 fluoroquinolone，適用於桿菌感染
+    - name: 全身性 Fluoroquinolone (嚴重 Pseudomonas 感染)
+      dose: "Enrofloxacin 5-20 mg/kg PO SID 或 Marbofloxacin 2-5 mg/kg PO SID"
+      notes: 嚴重桿菌感染或中耳炎時全身性抗生素。根據 C&S 結果選擇。犬限用
+    - name: 全身性 Ketoconazole/Itraconazole
+      dose: "Itraconazole 5 mg/kg PO SID"
+      notes: 嚴重/慢性 Malassezia 耳炎。脈衝療法可減少副作用
+  general:
+    - 耳道沖洗 (溫生理食鹽水或專用洗耳液)
+    - TrizEDTA (Tris-EDTA) 洗耳液 (增強抗生素對 Pseudomonas 的效果)
+    - 鼓膜破裂時：僅使用無耳毒性藥物 (避免 aminoglycosides、chlorhexidine)
+    - 嚴重增殖性耳道：全耳道切除 + 外側鼓室骨切開術 (TECA-LBO)
+    - 長期管理基礎過敏 (異位性皮膚炎)
+    - 定期耳道清潔 (每週 1-2 次，維護期)
+
+prognosis: 單純急性外耳炎在適當治療下預後極佳。慢性復發性外耳炎取決於原發因素 (過敏) 的控制程度。未處理的持續因素 (耳道增生、中耳炎) 預後較差。嚴重末期耳道 (不可逆增生/礦化) 可能需要 TECA-LBO 手術。Pseudomonas 感染治療較困難，需根據藥敏結果治療。
+
+guidelineRefs:
+  - sourceOrg: WAVD
+    title: "World Association for Veterinary Dermatology — Otitis Externa Guidelines"
+    url: https://pubmed.ncbi.nlm.nih.gov/22731443/
+    type: guideline
+    pmid: "22731443"
+
+pubmedQueries:
+  - query: '"otitis externa" AND (dog OR canine) AND ("treatment" OR "Pseudomonas" OR "guidelines")'
+    frequency: monthly

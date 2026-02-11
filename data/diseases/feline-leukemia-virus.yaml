@@ -1,0 +1,121 @@
+slug: feline-leukemia-virus
+nameEn: Feline Leukemia Virus Infection
+nameZh: 貓白血病病毒感染
+bodySystem: infectious
+description: 由貓白血病病毒 (FeLV) 引起的反轉錄病毒感染，為貓最重要的傳染病之一，可導致免疫抑制、貧血、淋巴瘤及其他腫瘤。
+
+aliases:
+  - { alias: FeLV, language: en }
+  - { alias: Feline Leukemia, language: en }
+  - { alias: 貓白血病, language: zh }
+  - { alias: 貓白血球減少症病毒, language: zh }
+
+species:
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 全球分佈。戶外貓、多貓家庭、流浪貓盛行率較高 (2-8%)。幼貓感受性最高 (隨年齡增加對感染的抵抗力增強)。公貓因打鬥較多而風險略高。
+
+etiology:
+  categories:
+    - name: 病毒性
+      examples:
+        - Feline Leukemia Virus (FeLV)，反轉錄病毒科 (Retroviridae)，Gammaretrovirus 屬
+        - 四個亞群：FeLV-A (具傳染力，所有感染貓均帶有)、FeLV-B (重組病毒，腫瘤相關)、FeLV-C (突變株，純紅血球再生不良)、FeLV-T (T 淋巴球親和性，免疫不全)
+        - 主要經唾液傳播 (共用食碗、互相理毛、咬傷)
+        - 病毒在環境中不穩定，乾燥後數小時內失活
+    - name: 風險因素
+      examples:
+        - 戶外放養/接觸流浪貓
+        - 多貓環境
+        - 幼貓 (< 4 月齡，感受性最高)
+        - 免疫功能不全
+        - 未篩檢即引入新貓
+
+pathophysiology: FeLV 經口鼻黏膜感染後在咽喉淋巴組織複製，隨後經血行擴散至骨髓、脾臟等淋巴造血組織。感染結局取決於宿主免疫反應：(1) 減除性感染 (Abortive) — 免疫力強，病毒被完全清除 (約 30%)；(2) 退行性感染 (Regressive) — 病毒血症暫時出現後被免疫系統控制，前病毒 DNA 整合入宿主基因但無活性病毒產生 (約 30-40%)，可能在免疫抑制時再活化；(3) 進行性感染 (Progressive) — 持續性病毒血症，病毒持續複製與排出 (約 30%)，發展臨床疾病風險最高。FeLV 致病機制包括：直接病毒細胞毒性、腫瘤基因插入性突變 (oncogenesis)、免疫介導性疾病、骨髓抑制。
+
+clinicalSigns:
+  early:
+    - 可能無症狀數月至數年 (尤其退行性感染)
+    - 輕度發燒
+    - 淋巴結腫大
+    - 輕度嗜睡
+  progressive:
+    - 反覆感染 (上呼吸道、口腔炎、皮膚感染)
+    - 慢性口腔炎/齒齦炎
+    - 體重減輕
+    - 貧血 (蒼白黏膜、嗜睡)
+    - 慢性下痢
+    - 不孕/流產
+  late:
+    - 淋巴瘤 (縱膈腔型、多中心型、消化道型、腎臟型)
+    - 白血病 (淋巴球性或骨髓性)
+    - 嚴重非再生性貧血 (FeLV-C 相關純紅血球再生不良)
+    - 嚴重免疫抑制伴機會性感染 (FIP、Toxoplasmosis、Mycoplasma)
+    - 神經症狀 (淋巴瘤浸潤、脊髓病變)
+    - 骨髓纖維化
+
+diagnosis:
+  primaryTests:
+    - name: SNAP FeLV 抗原快速檢測 (ELISA)
+      notes: "偵測血液中 p27 抗原。敏感度高。篩檢首選。陽性需確認性檢測。退行性感染可能轉陰"
+    - name: IFA (免疫螢光抗體法)
+      notes: "偵測白血球/血小板內 FeLV 抗原。陽性表示骨髓感染 (進行性感染)。ELISA 陽性的確認檢測"
+    - name: PCR (前病毒 DNA 或 RNA)
+      notes: "最敏感。可偵測退行性感染 (ELISA 陰性但前病毒 DNA 陽性)。區分進行性與退行性感染"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "縱膈腔淋巴瘤 (前縱膈腔腫塊)。肋膜積液"
+    - name: 腹部超音波
+      notes: "腸道/腸繫膜淋巴結腫大 (消化道淋巴瘤)。腎臟浸潤。肝脾腫大"
+  additional:
+    - CBC (非再生性貧血、白血球減少或異常白血球、血小板減少)
+    - 生化 (評估器官功能)
+    - 細針穿刺 (淋巴結、腫塊 — 細胞學)
+    - 骨髓穿刺 (骨髓抑制、白血病評估)
+    - 分期檢查 (淋巴瘤分期)
+
+treatment:
+  principles:
+    - 無法根治反轉錄病毒感染 — 以支持性治療與併發症管理為主
+    - 維持生活品質
+    - 預防繼發感染
+    - 腫瘤 (淋巴瘤) 視情況化學治療
+    - 室內飼養防止傳播
+  medications:
+    - name: CHOP-based 化療方案 (淋巴瘤)
+      dose: "依方案而異 (cyclophosphamide、doxorubicin、vincristine、prednisolone)"
+      notes: FeLV 相關淋巴瘤化療反應率可達 50-70%，但緩解期通常較短 (中位數 4-6 個月)
+    - name: Prednisolone (單獨使用)
+      dose: "2 mg/kg PO SID (淋巴瘤姑息治療)"
+      notes: 無法進行完整化療時的姑息選擇。短暫改善但緩解期短 (1-2 個月)
+    - name: 干擾素 (Feline Interferon Omega)
+      dose: "1 MU/kg SC SID × 5 天，第 0、14、60 天各一療程"
+      notes: 部分研究顯示可能改善存活時間。歐洲核准使用。證據等級中等
+    - name: 抗生素 (依繼發感染選擇)
+      dose: "依感染類型與敏感性調整"
+      notes: 免疫抑制貓易繼發細菌感染，需積極治療
+  general:
+    - 嚴格室內飼養 (防止傳播及減少接觸病原)
+    - 定期健康檢查 (每 6 個月)
+    - 驅蟲與疫苗 (依免疫狀態評估)
+    - 營養支持 (高品質、易消化飲食)
+    - 壓力管理 (穩定環境、避免緊迫)
+    - 新貓引入前篩檢、FeLV 陽性貓隔離
+    - 輸血 (嚴重貧血)
+
+prognosis: 進行性感染 (持續病毒血症) 貓中位存活時間約 2-3 年。退行性感染預後較佳，多數可正常壽命但有再活化風險。發展淋巴瘤或嚴重骨髓疾病者預後差。FeLV 相關淋巴瘤化療緩解期較 FeLV 陰性貓短。幼貓感染進展為進行性感染的機率最高。預防 (篩檢、隔離、疫苗) 為最重要策略。
+
+guidelineRefs:
+  - sourceOrg: AAFP
+    title: "AAFP Feline Retrovirus Testing and Management Guidelines"
+    url: https://journals.sagepub.com/doi/10.1177/1098612X20941784
+    type: guideline
+  - sourceOrg: ABCD
+    title: "European Advisory Board on Cat Diseases — FeLV Guidelines"
+    url: https://www.abcdcatsvets.org/feline-leukaemia-virus-felv/
+    type: guideline
+
+pubmedQueries:
+  - query: '"feline leukemia virus" OR "FeLV" AND ("treatment" OR "prognosis" OR "management")'
+    frequency: monthly

@@ -1,0 +1,119 @@
+slug: anticoagulant-rodenticide-toxicosis
+nameEn: Anticoagulant Rodenticide Toxicosis
+nameZh: 抗凝血劑滅鼠劑中毒
+bodySystem: toxicology
+description: 攝入抗凝血劑類滅鼠劑導致維生素 K 依賴性凝血因子耗竭，引起全身性出血的中毒症。為犬貓最常見的滅鼠劑中毒類型。
+
+aliases:
+  - { alias: 老鼠藥中毒, language: zh }
+  - { alias: 抗凝血劑中毒, language: zh }
+  - { alias: 維生素K拮抗劑中毒, language: zh }
+  - { alias: Rodenticide Poisoning, language: en }
+  - { alias: Anticoagulant Toxicosis, language: en }
+  - { alias: Vitamin K Antagonist Toxicosis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬為最常見受影響物種，因嗜口性高易攝入含誘餌的滅鼠劑。所有年齡與品種均可能中毒。幼犬與獵犬因探索行為較高，風險增加。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓偶爾直接攝入或因捕食已中毒的鼠類而發生二次中毒 (relay toxicosis)。
+
+etiology:
+  categories:
+    - name: 第一代抗凝血劑（短效）
+      examples:
+        - Warfarin
+        - Chlorophacinone
+        - Diphacinone
+        - 半衰期較短（約 14 天），需重複攝入方致毒
+    - name: 第二代抗凝血劑（長效，LAAR）
+      examples:
+        - Brodifacoum（最常見）
+        - Bromadiolone
+        - Difethialone
+        - Difenacoum
+        - 半衰期極長（數週至數月），單次攝入即可致命
+    - name: 毒性機制
+      examples:
+        - 抑制維生素 K 環氧化物還原酶 (VKOR)
+        - 阻斷維生素 K 循環再生
+        - 凝血因子 II、VII、IX、X 與 Protein C/S 耗竭
+        - 症狀延遲 2-5 天出現（待現有凝血因子耗竭）
+
+clinicalSigns:
+  early:
+    - 攝入後 2-5 天通常無明顯症狀（潛伏期）
+    - 輕度嗜睡
+    - 輕微食慾下降
+  progressive:
+    - 皮下出血/瘀斑 (ecchymoses)
+    - 牙齦出血
+    - 鼻出血 (epistaxis)
+    - 黑便 (melena) 或血便 (hematochezia)
+    - 血尿
+    - 關節腔出血（跛行）
+    - 蒼白黏膜
+  late:
+    - 胸腔出血（呼吸困難為常見就診主訴）
+    - 腹腔出血
+    - 心包出血
+    - 中樞神經系統出血（急性神經症狀）
+    - 嚴重貧血
+    - 低容積性休克
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 凝血功能檢查
+      notes: "PT 最先延長（Factor VII 半衰期最短約 6 小時）。aPTT 隨後延長。ACT 亦延長。PT 為監測治療反應的主要指標"
+    - name: PIVKA 測試
+      notes: "Proteins Induced by Vitamin K Absence/Antagonism。比 PT 更敏感，但不是所有實驗室都提供"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "胸腔積液（血胸）、肺出血。呼吸困難患畜必備檢查"
+    - name: 腹部超音波
+      notes: "腹腔積液、脾臟/肝臟出血。超音波引導抽取腹水確認為血性"
+  additional:
+    - CBC（貧血程度評估，PCV/TS 追蹤）
+    - 腹腔穿刺 (abdominocentesis) — PCV 接近周邊血液值提示內出血
+    - 血清毒物學檢測（可鑑定特定抗凝血劑種類，但結果回報慢）
+    - 交叉配型 (crossmatch)（若需輸血）
+
+treatment:
+  principles:
+    - Vitamin K1 為特效解毒劑
+    - 穩定出血與休克
+    - 治療時間取決於攝入的抗凝血劑種類
+    - 治療期間密切監測凝血功能
+  general:
+    - "Vitamin K1 (phytonadione) 2.5-5 mg/kg/day PO 分 BID 給予（與含脂食物同服增加吸收）"
+    - 第一代抗凝血劑：治療 14-21 天
+    - 第二代抗凝血劑 (LAAR)：治療 4-6 週（brodifacoum 可能需要更長）
+    - 急性出血：Vitamin K1 首劑可 SC 給予（避免 IV 或 IM，可能引起過敏或血腫）
+    - 嚴重出血需輸血（新鮮全血或新鮮冷凍血漿補充凝血因子）
+    - 胸腔出血需胸腔穿刺引流 (thoracocentesis)
+    - 活性炭 (1-2 g/kg PO)（攝入後早期，尚無症狀時）
+    - 催吐（攝入後 2 小時內，尚無出血跡象時）
+    - 停藥後 48-72 小時追蹤 PT，若正常即可停藥
+
+prognosis: 及時診斷並給予 Vitamin K1 治療者預後良好。嚴重內出血（尤其腦出血）者預後差。第二代抗凝血劑需長期治療（4-6 週），飼主依從性為關鍵。停藥過早可能導致出血復發。
+
+guidelineRefs:
+  - sourceOrg: ACVIM
+    title: "Anticoagulant rodenticide toxicity in dogs and cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/29143391/
+    type: review
+    pmid: "29143391"
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Anticoagulant rodenticide toxicosis"
+    url: https://pubmed.ncbi.nlm.nih.gov/30225948/
+    type: review
+    pmid: "30225948"
+
+pubmedQueries:
+  - query: '"anticoagulant rodenticide" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "vitamin K" OR "toxicosis")'
+    frequency: monthly

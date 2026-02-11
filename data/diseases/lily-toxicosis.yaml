@@ -1,0 +1,113 @@
+slug: lily-toxicosis
+nameEn: Lily Toxicosis
+nameZh: 百合中毒
+bodySystem: toxicology
+description: 貓接觸或攝入真百合屬 (Lilium) 或萱草屬 (Hemerocallis) 植物後引起的急性腎小管壞死。極少量即可致命，為貓最危險的植物中毒之一。
+
+aliases:
+  - { alias: 百合花中毒, language: zh }
+  - { alias: 貓百合中毒, language: zh }
+  - { alias: Lily Poisoning, language: en }
+  - { alias: Easter Lily Toxicosis, language: en }
+  - { alias: Lilium Nephrotoxicity, language: en }
+
+species:
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓對百合極度敏感。所有部位（花瓣、葉片、花粉、花蕊、莖、根、花瓶水）均有毒性。攝入少量花瓣或花粉沾染舔毛即可導致急性腎衰竭。
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬攝入百合通常僅引起輕度腸胃症狀。不會出現如貓般的急性腎小管壞死。但鈴蘭 (Convallaria majalis) 含心臟毒素，對犬亦有毒。
+
+etiology:
+  categories:
+    - name: 高毒性百合（對貓致命）
+      examples:
+        - Easter Lily (Lilium longiflorum)
+        - Tiger Lily (Lilium lancifolium)
+        - Asiatic Lily (Lilium asiaticum hybrids)
+        - Stargazer Lily (Lilium orientalis)
+        - Daylily (Hemerocallis spp.)
+    - name: 毒性機制
+      examples:
+        - 確切毒素尚未鑑定
+        - 造成近端腎小管上皮壞死 (proximal tubular necrosis)
+        - 植物所有部位均具腎毒性
+        - 微量花粉經舔毛攝入即可致病
+    - name: 低毒性相似植物（非真百合）
+      examples:
+        - Peace Lily (Spathiphyllum) — 含不溶性草酸鈣，僅口腔刺激
+        - Calla Lily (Zantedeschia) — 含不溶性草酸鈣，非腎毒性
+
+clinicalSigns:
+  early:
+    - 嘔吐（攝入後 1-3 小時）
+    - 食慾下降
+    - 流涎
+    - 嗜睡
+  progressive:
+    - 嘔吐持續或短暫改善後再惡化
+    - 多尿 (polyuria)（攝入後 12-24 小時，腎損傷初期）
+    - 脫水
+    - 腎區疼痛（觸壓腎臟）
+  late:
+    - 寡尿至無尿（攝入後 24-72 小時，急性腎衰竭）
+    - 嚴重尿毒症（口腔潰瘍、氨味口臭）
+    - 嗜睡加重至昏迷
+    - 低體溫
+    - 癲癇發作
+    - 死亡（未治療者多在 3-7 天內死亡）
+
+diagnosis:
+  primaryTests:
+    - name: 病史與暴露確認
+      notes: "確認貓是否接觸百合植物（包括花粉）。檢查貓毛是否沾有花粉。詢問家中是否有百合花束"
+    - name: 腎功能指標
+      notes: "BUN 與 creatinine 通常在攝入後 12-24 小時開始上升。SDMA 可能更早反映腎損傷"
+  imaging:
+    - name: 腹部超音波
+      notes: "腎臟腫大、皮質迴音增強（急性腎小管壞死）。可見腎周積液"
+    - name: 腹部 X 光
+      notes: "腎臟腫大"
+  additional:
+    - 尿液分析（糖尿、蛋白尿、管型、等張尿、腎上皮細胞）
+    - 電解質（高血鉀、高血磷、低血鈣）
+    - CBC（通常正常或輕度應激性變化）
+    - 尿量監測（從多尿轉為寡尿/無尿為惡化指標）
+
+treatment:
+  principles:
+    - 時間是關鍵——攝入後 18 小時內治療效果最佳
+    - 積極 IV 輸液稀釋腎毒素
+    - 減少毒物吸收
+    - 支持腎功能直至恢復
+  general:
+    - 催吐（攝入後 2 小時內，若貓未嘔吐且精神尚可）
+    - 活性炭 (activated charcoal 1-2 g/kg PO，攝入後早期使用)
+    - 積極 IV 輸液治療 (Lactated Ringer's 或 0.9% NaCl，初始速率為維持量的 2-3 倍，持續 48-72 小時)
+    - 監測尿量（目標 >2 mL/kg/hr）
+    - 止吐 (maropitant 1 mg/kg SC SID)
+    - 電解質矯正（尤其高血鉀處理）
+    - 若發展為無尿性腎衰竭，考慮血液透析 (hemodialysis) 或腹膜透析
+    - 營養支持（食道餵管或鼻胃管）
+    - 住院監測至少 48-72 小時
+
+prognosis: 攝入後 18 小時內開始積極輸液治療預後可為良好。延遲超過 18-24 小時就醫者預後差。一旦發展為無尿性腎衰竭，即使透析治療死亡率仍高。未治療的貓幾乎 100% 死亡。及早就醫是存活關鍵。
+
+guidelineRefs:
+  - sourceOrg: ASPCA APCC
+    title: "Easter lily (Lilium longiflorum) poisoning in cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/16231710/
+    type: review
+    pmid: "16231710"
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "Lily toxicity in the cat"
+    url: https://pubmed.ncbi.nlm.nih.gov/20223679/
+    type: review
+    pmid: "20223679"
+
+pubmedQueries:
+  - query: '"lily" AND (cat OR feline) AND ("toxicosis" OR "nephrotoxicity" OR "acute kidney")'
+    frequency: monthly

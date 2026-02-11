@@ -1,0 +1,128 @@
+slug: diabetic-ketoacidosis
+nameEn: Diabetic Ketoacidosis
+nameZh: 糖尿病酮酸中毒
+bodySystem: endocrine
+description: 糖尿病酮酸中毒（DKA）是糖尿病最嚴重的急性併發症，因胰島素嚴重缺乏導致脂肪大量分解，產生過量酮體（β-hydroxybutyrate、acetoacetate、acetone）而引起代謝性酸中毒。為內分泌急症，需積極靜脈輸液、胰島素治療及電解質矯正。
+
+aliases:
+  - { alias: DKA, language: en }
+  - { alias: 酮酸中毒, language: zh }
+  - { alias: 糖尿病酮症酸中毒, language: zh }
+  - { alias: Diabetic Ketosis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬隻 DKA 多見於未診斷或治療不當的第一型糖尿病。常伴有併發疾病如胰臟炎、腎上腺皮質機能亢進或泌尿道感染。母犬因黃體酮誘發之胰島素阻抗亦為常見誘因。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓隻 DKA 多發生於第二型糖尿病惡化時。常見誘因包括胰臟炎、感染及壓力。肥胖貓為高風險族群。
+
+etiology:
+  categories:
+    - name: 基礎病因
+      examples:
+        - 未診斷的糖尿病
+        - 胰島素治療中斷或劑量不足
+        - 胰島素阻抗增加
+    - name: 常見誘發因子
+      examples:
+        - 胰臟炎（犬貓均為最常見誘因之一）
+        - 泌尿道感染
+        - 腎上腺皮質機能亢進（犬）
+        - 肢端肥大症（貓）
+        - 黃體期或黃體酮使用（母犬）
+        - 感染（肺炎、膿皮症、子宮蓄膿）
+        - 腫瘤
+    - name: 病理生理
+      examples:
+        - 胰島素絕對或相對缺乏
+        - 升糖激素過量（glucagon、cortisol、catecholamine）
+        - 脂肪分解加速產生游離脂肪酸
+        - 肝臟酮體生成增加
+        - 代謝性酸中毒（酮酸堆積）
+        - 滲透性利尿導致脫水與電解質流失
+
+clinicalSigns:
+  early:
+    - 多飲多尿（糖尿病基礎症狀）
+    - 多食但體重減輕
+    - 精神略沉鬱
+    - 食慾開始下降
+  progressive:
+    - 完全食慾廢絕
+    - 嘔吐
+    - 脫水（皮膚彈性下降、黏膜乾燥）
+    - 嗜睡與虛弱
+    - 呼吸帶丙酮味（水果味）
+    - 腹痛（合併胰臟炎時）
+  late:
+    - 嚴重脫水與低血壓
+    - Kussmaul 呼吸（深而快的代償性呼吸）
+    - 低體溫
+    - 意識障礙至昏迷
+    - 嚴重電解質失衡（低鉀血症、低磷血症、低鎂血症）
+    - 休克與多重器官衰竭
+
+diagnosis:
+  primaryTests:
+    - name: 血糖測定
+      notes: "血糖通常 > 300 mg/dL（16.7 mmol/L），部分病例可達 > 600 mg/dL。注意少數「血糖正常型 DKA」（euglycemic DKA）可能血糖不顯著升高。"
+    - name: 酮體檢測
+      notes: "尿液試紙可偵測 acetoacetate（半定量）。血液 β-hydroxybutyrate（β-HB）定量為更準確的方法，> 3 mmol/L 支持 DKA 診斷。尿液試紙可能低估酮症嚴重度（因主要偵測 acetoacetate 而非 β-HB）。"
+    - name: 血液氣體分析
+      notes: "代謝性酸中毒：pH < 7.3、HCO3⁻ < 15 mEq/L。陰離子間隙增加（> 25 mEq/L）。pCO2 代償性降低。"
+  imaging:
+    - name: 腹部超音波
+      notes: "評估胰臟（胰臟炎為常見誘因）、子宮（子宮蓄膿）、腎臟及膽道系統。"
+    - name: 胸腔 X 光
+      notes: "評估有無肺炎等感染病灶。輸液治療後監測有無肺水腫。"
+  additional:
+    - 全血球計數：白血球增多（感染或壓力反應）、紅血球壓積因脫水而濃縮
+    - 完整血液生化：電解質（K⁺、Na⁺、Cl⁻、PO4³⁻、Mg²⁺）、BUN/Creatinine、肝酵素、lipase
+    - 尿液分析與尿液培養：糖尿、酮尿、評估泌尿道感染
+    - 果糖胺（Fructosamine）：評估過去 2-3 週平均血糖控制
+    - 胰臟特異性脂酶（cPLI/fPLI）：排除合併胰臟炎
+
+treatment:
+  principles:
+    - 積極靜脈輸液矯正脫水為第一優先
+    - 胰島素治療需緩慢降低血糖，避免腦水腫
+    - 電解質補充（尤其鉀離子）與酸鹼矯正
+    - 找出並治療誘發因子
+  general:
+    - "靜脈輸液：0.9% NaCl 初始 10-20 mL/kg/h（第 1-2 小時），之後依脫水程度調整至維持速率"
+    - "Regular Insulin CRI：起始 0.05 U/kg/h IV（低劑量持續輸注方案），目標血糖下降速率 50-75 mg/dL/h"
+    - "替代方案：Regular Insulin 0.1-0.2 U/kg IM q1-2h 直至血糖 < 250 mg/dL"
+    - "血糖降至 250 mg/dL 時：輸液改為 2.5-5% dextrose 溶液，胰島素速率減半"
+    - "鉀離子補充：依血鉀濃度調整 KCl 添加量（< 3.5 mEq/L: 40 mEq/L, 3.5-5.0: 20 mEq/L）"
+    - "磷離子補充：低磷血症（< 1.5 mg/dL）時給予 KPO4 0.01-0.03 mmol/kg/h IV"
+    - "止吐：Maropitant 1 mg/kg IV/SC q24h"
+    - "DKA 穩定後轉換為皮下長效胰島素（犬：NPH 或 Vetsulin；貓：Glargine 或 PZI）"
+
+prognosis: 及時積極治療的 DKA 存活率約 70%。犬隻首次 DKA 發作的住院存活率約 70%，貓隻約 65-75%。住院期間死亡或安樂死的主要原因包括併發胰臟炎、腎衰竭、嚴重電解質失衡及經濟因素。存活出院者以長期胰島素管理可維持良好生活品質。反覆 DKA 發作提示需重新評估胰島素方案與併發疾病管理。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Diabetic ketoacidosis in dogs: 116 cases (1995-2008)"
+    url: https://pubmed.ncbi.nlm.nih.gov/23855440/
+    type: consensus
+    pmid: "23855440"
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "ISFM consensus guidelines on the practical management of diabetes mellitus in cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/26323807/
+    type: consensus
+    pmid: "26323807"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "AAHA diabetes management guidelines for dogs and cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/29314142/
+    type: consensus
+    pmid: "29314142"
+
+pubmedQueries:
+  - query: '"diabetic ketoacidosis" AND (dog OR cat) AND ("treatment" OR "insulin")'
+    frequency: monthly
+  - query: '"DKA" AND (canine OR feline) AND ("outcome" OR "prognosis")'
+    frequency: monthly

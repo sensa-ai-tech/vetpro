@@ -1,0 +1,117 @@
+slug: mast-cell-tumor
+nameEn: Mast Cell Tumor
+nameZh: 肥大細胞瘤
+bodySystem: oncology
+description: 犬最常見的皮膚惡性腫瘤，源自肥大細胞的異常增殖，生物學行為差異極大，從良性到高度惡性皆有。
+
+aliases:
+  - { alias: MCT, language: en }
+  - { alias: Mastocytoma, language: en }
+  - { alias: 肥大細胞腫瘤, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 佔犬皮膚腫瘤約 16-21%。好發品種：Boxer、Boston Terrier、Labrador Retriever、Golden Retriever、Shar-Pei、Pug。中位年齡 8-9 歲，Shar-Pei 可早至 2 歲。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓第二常見皮膚腫瘤。皮膚型多為良性；內臟型 (脾臟/腸道) 預後較差。Siamese 品種風險稍高。
+
+etiology:
+  categories:
+    - name: 基因突變
+      examples:
+        - KIT (c-kit) 受體酪氨酸激酶突變 (內部串聯重複 — ITD，佔犬 MCT 約 30%)
+        - KIT 突變導致配體非依賴性持續活化
+        - 犬 MCT 中 p53 突變與高惡性度相關
+    - name: 品種遺傳傾向
+      examples:
+        - Boxer、Pug (多為低度惡性)
+        - Shar-Pei (常多發、年輕發病、可能較具侵犯性)
+        - Golden Retriever、Labrador (中-高度惡性比例較高)
+    - name: 環境/其他因素
+      examples:
+        - 慢性皮膚炎症 (可能的促進因素)
+        - 確切環境致癌因素尚不明確
+
+pathophysiology: 肥大細胞瘤源自骨髓衍生的肥大細胞異常增殖。腫瘤細胞含有大量嗜鹼性細胞質顆粒，內含組織胺、肝素、蛋白酶及多種細胞激素。KIT 受體突變導致持續的細胞增殖信號。腫瘤釋放的組織胺可引起周圍組織水腫、紅斑 (Darier sign)，全身性釋放可導致消化道潰瘍 (組織胺刺激胃酸分泌)、低血壓、凝血異常。肝素釋放可導致局部出血。腫瘤生物學行為變異極大，低度惡性可僅為局部良性腫塊，高度惡性則可廣泛轉移至區域淋巴結、脾臟、肝臟及骨髓。
+
+clinicalSigns:
+  early:
+    - 皮膚或皮下單一或多發腫塊 (最常見於軀幹、四肢、會陰)
+    - 腫塊大小變化不定 (因脫顆粒引起水腫)
+    - Darier sign (觸診後腫塊周圍紅腫)
+  progressive:
+    - 腫塊快速增大
+    - 潰瘍、出血
+    - 區域淋巴結腫大
+    - 消化道症狀 (嘔吐、黑便 — 組織胺誘發胃潰瘍)
+  late:
+    - 遠端轉移 (肝、脾、骨髓)
+    - 全身性肥大細胞增多症
+    - 嚴重消化道潰瘍/穿孔
+    - 低血壓、休克 (大量脫顆粒)
+    - 凝血異常
+
+diagnosis:
+  primaryTests:
+    - name: 細針抽吸 (FNA) + 細胞學
+      notes: "診斷率極高 (>90%)。可見圓形細胞含嗜鹼性顆粒 (Wright-Giemsa 染色)。部分分化差的 MCT 顆粒不明顯，需 toluidine blue 特殊染色"
+    - name: 組織病理學 + 分級
+      notes: "Patnaik 三級制 (Grade I 分化好/II 中度/III 分化差) 或 Kiupel 二級制 (低度/高度)。Kiupel 系統再現性較佳"
+    - name: KIT 突變檢測 (c-kit PCR)
+      notes: "Exon 11 ITD 陽性與較高復發率及轉移風險相關。可預測酪氨酸激酶抑制劑反應"
+  imaging:
+    - name: 腹部超音波
+      notes: "評估肝脾轉移、腹腔淋巴結。脾臟低回音結節提示轉移"
+    - name: 胸腔 X 光
+      notes: "MCT 肺轉移罕見，但為完整分期檢查的一部分"
+  additional:
+    - 區域淋巴結 FNA (即使臨床正常大小也建議檢查)
+    - 骨髓抽吸/塗片 (Grade III 或臨床分期 ≥3)
+    - 肝脾 FNA (超音波異常時)
+    - 腹腔積液細胞學 (若存在)
+    - Ki-67 增殖指數、AgNOR、c-kit 免疫組化染色模式
+
+treatment:
+  principles:
+    - 手術切除為低-中度惡性 MCT 首選治療
+    - 寬邊切除 (側邊 ≥2 cm、深部筋膜一層)
+    - 不完全切除需考慮二次手術或輔助治療
+    - 高度惡性或轉移性需全身性化療
+  medications:
+    - name: Vinblastine + Prednisolone
+      dose: "Vinblastine 2 mg/m² IV 每 2 週 × 4-6 次 + Prednisolone 2 mg/kg PO SID 漸減"
+      notes: 術後輔助化療標準方案。適用於高風險 MCT (高度惡性、不完全切除、淋巴結轉移)
+    - name: Toceranib (Palladia)
+      dose: "2.75 mg/kg PO 隔日"
+      notes: 口服酪氨酸激酶抑制劑 (TKI)。KIT 突變陽性者反應率較高。適用於不可切除或轉移性 MCT
+    - name: Masitinib (Masivet)
+      dose: "12.5 mg/kg PO SID"
+      notes: 另一 TKI 選擇。歐洲核准用於不可切除犬 MCT
+    - name: Lomustine (CCNU)
+      dose: "70 mg/m² PO 每 3 週"
+      notes: 二線化療。需密切監測肝指數與 CBC
+  general:
+    - H1 受體拮抗劑 (diphenhydramine 2 mg/kg PO BID) — 降低組織胺效應
+    - H2 受體拮抗劑 (famotidine 0.5-1 mg/kg PO BID) 或 PPI (omeprazole) — 預防胃潰瘍
+    - 術前避免過度觸診腫塊 (防脫顆粒)
+    - 放射治療 (不完全切除邊緣、不可切除腫塊)
+    - 多發性 MCT 每個腫塊需獨立分級評估
+
+prognosis: Kiupel 低度惡性完全切除後預後良好，局部復發率 <10%，中位存活時間 >2 年。Kiupel 高度惡性 (Patnaik Grade III) 預後差，中位存活時間約 4-6 個月。KIT 突變陽性、高 Ki-67 指數及高有絲分裂指數為不良預後因子。貓皮膚型完全切除後多數預後良好。
+
+emergencyNotes: 大量脫顆粒事件 (anaphylactoid reaction) 需緊急處理：epinephrine (0.01 mg/kg IV/IM)、IV 輸液支持、diphenhydramine、famotidine。術中操作腫塊可引發急性脫顆粒反應。
+
+guidelineRefs:
+  - sourceOrg: VCOG
+    title: "Veterinary Cooperative Oncology Group — Canine MCT Consensus Guidelines"
+    url: https://pubmed.ncbi.nlm.nih.gov/22335742/
+    type: guideline
+    pmid: "22335742"
+
+pubmedQueries:
+  - query: '"mast cell tumor" AND (dog OR canine) AND ("grading" OR "treatment" OR "prognosis")'
+    frequency: monthly

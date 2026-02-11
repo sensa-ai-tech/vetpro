@@ -4,9 +4,9 @@ const nextConfig: NextConfig = {
   // better-sqlite3 是 native module，需要 external 處理
   serverExternalPackages: ["better-sqlite3"],
 
-  // 確保 DB 檔案被 Vercel 打包進 serverless function
+  // 確保 DB 檔案被 Vercel 打包進所有 serverless function
   outputFileTracingIncludes: {
-    "/**": ["./vetpro.db"],
+    "/*": ["./vetpro.db"],
   },
 };
 

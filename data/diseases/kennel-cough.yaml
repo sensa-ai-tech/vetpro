@@ -1,0 +1,123 @@
+slug: kennel-cough
+nameEn: Kennel Cough
+nameZh: 犬舍咳
+bodySystem: respiratory
+description: 犬傳染性氣管支氣管炎的俗稱，由多種病毒與細菌混合感染引起的高度傳染性上呼吸道疾病，以陣發性乾咳為主要特徵，多數為自限性。
+
+aliases:
+  - { alias: CIRD, language: en }
+  - { alias: Canine Infectious Respiratory Disease Complex, language: en }
+  - { alias: Infectious Tracheobronchitis, language: en }
+  - { alias: ITB, language: en }
+  - { alias: 犬傳染性氣管支氣管炎, language: zh }
+  - { alias: 犬窩咳, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 極為常見，尤其在犬舍、收容所、寄宿設施、狗公園等犬隻密集場所。幼犬、未接種犬與免疫力低下犬風險最高。全年皆可發生，秋冬季節略多。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: Bordetella bronchiseptica 可感染貓 (尤其免疫低下或幼貓)，但臨床上不常見。貓上呼吸道感染通常由 FHV-1 與 FCV 引起。
+
+etiology:
+  categories:
+    - name: 主要病毒病原
+      examples:
+        - 犬副流感病毒 (Canine Parainfluenza Virus, CPIV)
+        - 犬腺病毒第二型 (Canine Adenovirus type 2, CAV-2)
+        - 犬呼吸道冠狀病毒 (Canine Respiratory Coronavirus, CRCoV)
+        - 犬流感病毒 (Canine Influenza Virus, CIV — H3N8, H3N2)
+        - 犬瘟熱病毒 (CDV，嚴重病例)
+        - 犬肺炎病毒 (Canine Pneumovirus)
+    - name: 主要細菌病原
+      examples:
+        - Bordetella bronchiseptica (最重要的細菌病原)
+        - Mycoplasma cynos
+        - Streptococcus equi subsp. zooepidemicus
+    - name: 易感因素
+      examples:
+        - 群養環境 (犬舍、收容所、寄宿)
+        - 未接種或接種不完全
+        - 幼犬 (免疫系統未成熟)
+        - 緊迫 (運輸、環境改變)
+        - 寒冷潮濕環境
+
+pathophysiology: 病原體經飛沫或直接接觸傳播，首先附著於呼吸道纖毛上皮。Bordetella bronchiseptica 產生黏附素 (filamentous hemagglutinin、pertactin) 黏附氣管纖毛上皮，並分泌毒素 (adenylate cyclase toxin、dermonecrotic toxin、tracheal cytotoxin) 破壞纖毛運動功能，損傷黏膜纖毛清除機制。病毒感染進一步破壞呼吸道上皮完整性，導致繼發性細菌感染。氣管與支氣管黏膜炎症、水腫與分泌物增加刺激咳嗽反射。潛伏期約 3-10 天，排毒期可長達 2-3 個月 (Bordetella)。
+
+clinicalSigns:
+  early:
+    - 陣發性乾咳 (harsh, honking cough)
+    - 壓迫氣管即可誘發咳嗽 (tracheal pinch test 陽性)
+    - 乾嘔/嘔吐 (咳嗽末期)
+    - 漿液性鼻分泌物
+  progressive:
+    - 咳嗽頻率增加 (可持續 1-3 週)
+    - 黏液膿性鼻分泌物
+    - 輕度嗜睡
+    - 食慾輕度下降
+    - 輕度發燒 (部分病例)
+  late:
+    - 支氣管肺炎 (幼犬或免疫低下犬)
+    - 持續性高燒
+    - 嚴重嗜睡與食慾廢絕
+    - 呼吸困難
+    - 黏液膿性至膿性分泌物
+
+diagnosis:
+  primaryTests:
+    - name: 臨床診斷
+      notes: "典型病史 (群養環境暴露 + 3-10 天潛伏期) + 陣發性乾咳 + tracheal pinch 陽性。多數不需實驗室確認"
+    - name: PCR 呼吸道病原體套組
+      notes: "鼻/咽拭子 PCR 可同時檢測多種病原 (Bordetella、CPIV、CAV-2、CIV、Mycoplasma 等)。群體爆發或嚴重病例建議做"
+    - name: 細菌培養
+      notes: "氣管灌洗液 (TTW) 或深部鼻拭子培養。Bordetella 培養需特殊培養基。藥敏試驗指導抗生素選擇"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "單純氣管支氣管炎通常正常。懷疑併發肺炎時拍攝：可見支氣管紋路增加、肺泡浸潤"
+  additional:
+    - CBC (輕度白血球增多或正常。嚴重併發肺炎可見嗜中性球增多)
+    - 犬流感快篩 (流感季或群體爆發時)
+    - 犬瘟熱排除 (未接種幼犬、嚴重全身性症狀)
+
+treatment:
+  principles:
+    - 多數為自限性 (7-14 天自行緩解)
+    - 輕症僅需支持療法
+    - 抗生素用於中重度或併發肺炎
+    - 嚴格隔離防止傳播
+  medications:
+    - name: Doxycycline
+      dose: "5 mg/kg PO BID 或 10 mg/kg PO SID × 10-14 天"
+      notes: Bordetella 首選抗生素。呼吸道組織穿透性佳。餵食後給藥避免食道刺激
+    - name: Azithromycin
+      dose: "5-10 mg/kg PO SID × 3 天，後隔日 × 12 天"
+      notes: Doxycycline 替代選擇。Mycoplasma 也有效
+    - name: Hydrocodone
+      dose: "0.22 mg/kg PO BID-QID"
+      notes: 中樞性止咳。僅用於嚴重乾咳影響休息時。濕咳不用 (需排痰)
+    - name: Nebulization (霧化)
+      dose: "0.9% NaCl 霧化 15-20 分鐘 BID-TID"
+      notes: 濕化呼吸道分泌物，促進排痰。嚴重病例可加入 gentamicin
+  general:
+    - 隔離病犬至少 2 週 (排毒期可更長)
+    - 環境消毒 (Bordetella 對常見消毒劑敏感)
+    - 使用胸背帶取代頸圈 (減少氣管刺激)
+    - 避免煙霧、灰塵等呼吸道刺激物
+    - 保持適當溫濕度
+    - 幼犬與重症病例密切監測肺炎徵兆
+    - 疫苗預防：Bordetella 鼻噴/口服疫苗 (入住犬舍前至少 72 小時)；CPIV + CAV-2 包含在核心疫苗中
+
+prognosis: 免疫健全的成犬預後極佳，多數 7-14 天自行緩解。併發肺炎的幼犬或免疫低下犬需積極治療，及時處理預後仍良好。犬瘟熱合併感染預後差。Streptococcus zooepidemicus 引起的出血性肺炎為最嚴重型態，致死率高。
+
+guidelineRefs:
+  - sourceOrg: WSAVA
+    title: "WSAVA Guidelines for the Vaccination of Dogs and Cats"
+    url: https://wsava.org/guidelines/vaccination-guidelines/
+    type: guideline
+
+pubmedQueries:
+  - query: '"kennel cough" OR "canine infectious respiratory disease" OR "Bordetella bronchiseptica" AND (dog OR canine) AND ("treatment" OR "vaccine")'
+    frequency: monthly

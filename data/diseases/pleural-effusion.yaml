@@ -1,0 +1,141 @@
+slug: pleural-effusion
+nameEn: Pleural Effusion
+nameZh: 胸腔積液
+bodySystem: respiratory
+description: 胸膜腔內異常液體積聚，依液體性質分為漏出液、滲出液與乳糜液，壓迫肺臟導致限制性通氣障礙與呼吸窘迫。
+
+aliases:
+  - { alias: Hydrothorax, language: en }
+  - { alias: Chylothorax, language: en }
+  - { alias: Pyothorax, language: en }
+  - { alias: 胸水, language: zh }
+  - { alias: 乳糜胸, language: zh }
+  - { alias: 膿胸, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 心臟病 (尤其右心衰竭)、腫瘤 (胸腺淋巴瘤、間皮瘤、血管肉瘤) 與低白蛋白血症為犬常見原因。Afghan Hound 好發乳糜胸。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓常見原因包括心臟病 (HCM)、FIP、淋巴瘤、膿胸與乳糜胸。FIP 積液為經典表現。
+
+etiology:
+  categories:
+    - name: 漏出液 (Transudate)
+      examples:
+        - 低白蛋白血症 (蛋白流失性腸病/腎病)
+        - 肝硬化
+        - 充血性心衰竭 (早期)
+    - name: 變性漏出液 (Modified Transudate)
+      examples:
+        - 充血性心衰竭 (右心衰竭)
+        - 心包膜疾病
+        - 肺葉扭轉
+        - 腫瘤 (早期)
+        - 橫膈疝
+    - name: 滲出液 (Exudate)
+      examples:
+        - 膿胸 (pyothorax — 細菌感染)
+        - FIP (貓傳染性腹膜炎，蛋白質含量極高)
+        - 腫瘤 (淋巴瘤、間皮瘤、肺腺癌)
+        - 肺栓塞
+    - name: 乳糜液 (Chylous)
+      examples:
+        - 特發性乳糜胸 (最常見)
+        - 心臟病 (尤其心包膜疾病)
+        - 胸導管損傷 (外傷、手術)
+        - 前縱膈腫瘤壓迫胸導管
+    - name: 血胸 (Hemothorax)
+      examples:
+        - 外傷 (胸壁/肺裂傷)
+        - 凝血異常 (抗凝血劑中毒)
+        - 腫瘤破裂
+        - 肺葉扭轉
+
+pathophysiology: 正常胸膜腔僅含少量液體 (犬 <1 mL/kg)，由壁層胸膜產生、臟層胸膜吸收。液體積聚的機制包括：微血管靜水壓升高 (心衰竭)、血漿膠體滲透壓降低 (低白蛋白)、微血管通透性增加 (炎症/腫瘤)、淋巴回流受阻 (乳糜胸/腫瘤)。積液壓迫肺臟造成肺容積減少，導致限制性通氣障礙、通氣/灌流不匹配與低血氧。大量積液可壓迫靜脈回流影響心輸出量。
+
+clinicalSigns:
+  early:
+    - 輕度呼吸急促 (tachypnea)
+    - 運動不耐
+    - 食慾下降
+    - 咳嗽 (非典型)
+  progressive:
+    - 呼吸困難 (限制性呼吸型態)
+    - 淺而快速的呼吸
+    - 腹式呼吸
+    - 端坐呼吸 (orthopnea)
+    - 體重減輕 (慢性病例)
+  late:
+    - 嚴重呼吸窘迫
+    - 發紺
+    - 開口呼吸 (貓)
+    - 張口呼吸、頸部伸展
+    - 休克 (大量積液壓迫靜脈回流)
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔 X 光
+      notes: "典型表現：肺葉邊緣消失、心臟輪廓模糊、肺葉間裂隙線 (fissure lines)、腹背位見肋膈角消失。少量積液側位片更敏感"
+    - name: 胸腔穿刺/液體分析 (Thoracocentesis)
+      notes: "診斷與治療雙重目的。液體外觀、蛋白質、細胞計數、比重分類。乳糜液：乳白色不透明、三酸甘油酯 >100 mg/dL (高於血清)。膿胸：混濁惡臭、退化嗜中性球、細菌"
+    - name: 液體細胞學
+      notes: "區分滲出液/漏出液。腫瘤細胞 (淋巴瘤、間皮瘤)。膿胸退化嗜中性球與胞內細菌。FIP：蛋白質含量極高 (>3.5 g/dL)、非退化嗜中性球與巨噬細胞為主"
+  imaging:
+    - name: 胸腔超音波 (TFAST)
+      notes: "快速偵測積液。引導穿刺位置。評估心臟大小與心包膜積液"
+    - name: 胸腔 X 光 (抽液後)
+      notes: "抽液後重拍可評估肺實質、心臟大小與腫瘤"
+    - name: 心臟超音波
+      notes: "評估心臟病 (HCM、DCM、心包膜積液)。乳糜胸必做"
+    - name: 胸腔 CT
+      notes: "評估腫瘤、淋巴結、胸導管走向 (乳糜胸術前)"
+  additional:
+    - 液體培養與藥物敏感性 (膿胸必做)
+    - 血液生化 (白蛋白、肝腎功能)
+    - FIP 檢測 (貓：Rivalta test、免疫染色、RT-PCR)
+    - 凝血功能 (排除凝血異常性血胸)
+    - 三酸甘油酯/膽固醇比 (乳糜液 TG/Chol >1)
+
+treatment:
+  principles:
+    - 胸腔穿刺為首要治療 (緩解呼吸窘迫)
+    - 找出並治療根本原因為關鍵
+    - 膿胸需積極引流 + 抗生素
+    - 乳糜胸保守治療 2-4 週無效時考慮手術
+  medications:
+    - name: 抗生素 (膿胸)
+      dose: "經驗性：Ampicillin-sulbactam 30 mg/kg IV TID + Enrofloxacin 5 mg/kg IV SID"
+      notes: 膿胸常為混合感染 (需氧+厭氧)。根據培養結果調整。治療至少 4-6 週
+    - name: Rutin (乳糜胸)
+      dose: "50 mg/kg PO TID"
+      notes: 類黃酮。增加巨噬細胞對乳糜液吸收。單獨使用效果有限。安全性高
+    - name: Furosemide (心因性)
+      dose: "1-2 mg/kg IV/PO BID-TID"
+      notes: 心衰竭相關積液。與心臟用藥合併使用
+    - name: GS-441524 (FIP)
+      dose: "依 FIP 治療方案"
+      notes: 貓 FIP 抗病毒治療。濕型 FIP 治療反應通常良好
+  general:
+    - 治療性胸腔穿刺 (Thoracocentesis)
+    - 膿胸：胸管引流 (chest tube) + 胸腔灌洗
+    - 乳糜胸手術：胸導管結紮 (TDL) + 心包膜部分切除 (pericardiectomy)
+    - 低脂飲食 (乳糜胸保守治療期間)
+    - 治療根本原因 (心臟病用藥、腫瘤化療)
+
+emergencyNotes: 大量胸腔積液致呼吸窘迫為急症。以最小壓力進行胸腔穿刺 (蝴蝶針或 14-16G 導管，第 7-9 肋間)。先緩解呼吸再做進一步檢查。避免過度保定加重呼吸窘迫。張力性血胸或氣胸需立即引流。
+
+prognosis: 取決於根本原因。心因性積液控制心衰竭後可改善。膿胸積極治療存活率約 60-80%。乳糜胸手術 (TDL + 心包膜切除) 成功率約 80-90%。FIP 以 GS-441524 治療反應率約 80%+。惡性積液 (腫瘤) 預後差，多為姑息性管理。
+
+guidelineRefs:
+  - sourceOrg: JVIM
+    title: "Consensus Statements on the Diagnosis and Treatment of Pyothorax in Dogs and Cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/
+    type: guideline
+
+pubmedQueries:
+  - query: '"pleural effusion" AND (dog OR cat OR canine OR feline) AND ("diagnosis" OR "treatment" OR "thoracocentesis")'
+    frequency: monthly

@@ -1,0 +1,121 @@
+slug: hemangiosarcoma
+nameEn: Hemangiosarcoma
+nameZh: 血管肉瘤
+bodySystem: oncology
+description: 源自血管內皮細胞的高度惡性腫瘤，好發於脾臟、心臟（右心耳）及肝臟，具高度侵犯性與早期轉移傾向。
+
+aliases:
+  - { alias: HSA, language: en }
+  - { alias: Angiosarcoma, language: en }
+  - { alias: 血管內皮肉瘤, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 佔犬脾臟腫塊約 50%、心臟腫瘤約 69%。好發品種：German Shepherd、Golden Retriever、Labrador Retriever、Flat-Coated Retriever。中位年齡 9-12 歲，雄性略多。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓罕見。最常見於皮膚/皮下及內臟 (肝、脾)。皮膚型可能與紫外線暴露相關 (白毛貓)。
+
+etiology:
+  categories:
+    - name: 遺傳傾向
+      examples:
+        - German Shepherd 等大型犬品種強烈好發
+        - 多基因遺傳傾向 (基因組學研究中)
+        - GWAS 研究發現多個風險基因座
+    - name: 環境因素
+      examples:
+        - 紫外線暴露 (皮膚型，淺色皮膚犬)
+        - 貓皮膚型與日光暴露相關
+    - name: 分子機制
+      examples:
+        - VEGF/VEGFR 過度表現
+        - PI3K/AKT/mTOR 信號通路異常
+        - TP53 突變
+        - PTEN 缺失
+
+pathophysiology: 血管肉瘤起源於血管內皮細胞或其前驅細胞的惡性轉化。腫瘤形成異常、脆弱的血管通道與血竇，充滿血液。這些異常血管結構極度脆弱，易破裂導致急性出血。脾臟 HSA 破裂引起腹腔積血，心臟 HSA (右心耳) 破裂導致心包積液與心包填塞。腫瘤高度血管依賴性，VEGF 過度表現促進血管新生。由於腫瘤細胞直接暴露於血流中，HSA 具有極高的血行轉移傾向，診斷時多數已有微轉移。常見轉移部位包括肝臟、肺臟、大網膜及腦部。
+
+clinicalSigns:
+  early:
+    - 多無特異性症狀
+    - 輕度嗜睡
+    - 間歇性虛弱
+    - 食慾下降
+  progressive:
+    - 腹部膨大 (脾臟腫塊/腹腔積液)
+    - 間歇性虛弱發作 (微出血後自發止血)
+    - 黏膜蒼白
+    - 心律不整 (心臟型)
+    - 運動不耐受
+    - 呼吸急促
+  late:
+    - 急性虛脫/休克 (腫瘤破裂大量出血)
+    - 心包填塞 (右心耳 HSA — 頸靜脈怒張、脈搏微弱、心音低沉)
+    - 嚴重貧血
+    - DIC (散播性血管內凝血)
+    - 腹腔積血
+    - 轉移相關症狀 (呼吸困難 — 肺轉移；神經症狀 — 腦轉移)
+
+diagnosis:
+  primaryTests:
+    - name: CBC + 血液抹片
+      notes: "再生性貧血、裂紅血球 (schistocytes)、棘紅血球 (acanthocytes)、血小板減少、有核紅血球。微血管病變性溶血性貧血 (MAHA)"
+    - name: 凝血檢查
+      notes: "PT/APTT 延長、FDP/D-dimer 升高提示 DIC"
+    - name: 組織病理學
+      notes: "確診金標準。CD31、Factor VIII 免疫組化染色確認血管內皮來源。FNA 診斷率低 (血液污染)"
+  imaging:
+    - name: 腹部超音波
+      notes: "脾臟低回音/混合回音腫塊；腹腔積液 (積血)；肝臟轉移結節。無法區分良惡性脾臟腫塊"
+    - name: 心臟超音波
+      notes: "右心耳腫塊；心包積液。心包填塞時右心房/心室舒張期塌陷"
+    - name: 胸腔 X 光
+      notes: "肺轉移結節；心影擴大 (心包積液)；胸水"
+  additional:
+    - 腹腔積液分析 (PCV >10% 提示積血)
+    - 心包穿刺 + 積液分析 (出血性；細胞學敏感度低)
+    - 腹部 CT (術前分期)
+    - 心肌 troponin I (心肌損傷標記)
+
+treatment:
+  principles:
+    - 急性出血需緊急穩定 (輸液、輸血、心包穿刺)
+    - 手術切除原發腫瘤為首要治療 (脾臟切除、右心耳切除)
+    - 術後化療延長存活時間
+    - 由於高轉移率，單獨手術效果有限
+  medications:
+    - name: Doxorubicin 單藥
+      dose: "30 mg/m² IV 每 3 週 × 5-6 次"
+      notes: 脾臟切除術後標準化療。中位存活約 5-7 個月 (vs 僅手術 1-3 個月)
+    - name: Doxorubicin + Cyclophosphamide (AC protocol)
+      dose: "Doxorubicin 30 mg/m² + Cyclophosphamide 200-300 mg/m² IV 每 3 週"
+      notes: 聯合化療方案。存活時間可能略優於 doxorubicin 單藥
+    - name: Metronomic Cyclophosphamide
+      dose: "Cyclophosphamide 12.5-15 mg/m² PO SID + Piroxicam 0.3 mg/kg PO SID"
+      notes: 低劑量節拍式化療，抗血管新生作用。可作為維持治療
+  general:
+    - 急診穩定：晶體液/膠體液復甦 + pRBC 輸血
+    - 心包穿刺 (心包填塞時緊急執行)
+    - 脾臟切除術 (脾臟 HSA)
+    - 右心耳切除 (心臟 HSA，需心臟外科)
+    - Yunnan Baiyao (雲南白藥，輔助止血，證據等級低)
+    - 鐵劑補充 (慢性失血性貧血)
+
+prognosis: 預後普遍不佳。脾臟 HSA 僅手術中位存活 1-3 個月，術後加 doxorubicin 化療中位存活 5-7 個月。心臟 HSA 預後最差，中位存活約 1-4 個月。皮膚型 (真皮層限局) 手術切除後預後相對較佳。Stage I (無破裂、無轉移) 預後優於 Stage II-III。一年存活率約 10%。
+
+emergencyNotes: 急性腫瘤破裂出血為常見急診。處理：(1) 靜脈通路 + 積極輸液復甦；(2) pRBC 輸血維持 PCV >25%；(3) 腹部加壓包紮 (暫時措施)；(4) 緊急脾臟切除術。心包填塞：心包穿刺引流 (右側第 4-6 肋間)，超音波引導下執行。
+
+guidelineRefs:
+  - sourceOrg: ACVIM
+    title: "ACVIM Consensus Statement on Hemangiosarcoma"
+    url: https://pubmed.ncbi.nlm.nih.gov/34060121/
+    type: guideline
+    pmid: "34060121"
+
+pubmedQueries:
+  - query: '"hemangiosarcoma" AND (dog OR canine) AND ("spleen" OR "cardiac" OR "chemotherapy")'
+    frequency: monthly

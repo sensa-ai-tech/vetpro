@@ -1,0 +1,116 @@
+slug: hemophilia
+nameEn: Hemophilia
+nameZh: 血友病
+bodySystem: hematology
+description: 血友病是一組X連鎖隱性遺傳的凝血因子缺乏症，以血友病 A（第 VIII 因子缺乏）與血友病 B（第 IX 因子缺乏）最為常見。患病動物表現為自發性或外傷後異常出血，嚴重程度取決於殘餘凝血因子活性。
+
+aliases:
+  - { alias: Hemophilia A, language: en }
+  - { alias: Hemophilia B, language: en }
+  - { alias: Factor VIII Deficiency, language: en }
+  - { alias: Factor IX Deficiency, language: en }
+  - { alias: Christmas Disease, language: en }
+  - { alias: 甲型血友病, language: zh }
+  - { alias: 乙型血友病, language: zh }
+  - { alias: 第八因子缺乏症, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 血友病 A 為犬隻最常見的遺傳性凝血異常，好發品種包括德國牧羊犬、黃金獵犬、拉布拉多、杜賓犬等；血友病 B 較少見，好發於凱恩㹴與拉布拉多
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓隻罕見，血友病 A 與 B 皆有報告，無明顯品種偏好
+
+etiology:
+  categories:
+    - name: 遺傳因素
+      examples:
+        - X 連鎖隱性遺傳，主要影響雄性動物
+        - 血友病 A：F8 基因突變導致第 VIII 凝血因子缺乏或功能異常
+        - 血友病 B：F9 基因突變導致第 IX 凝血因子缺乏或功能異常
+        - 雌性為帶因者（heterozygous carrier），通常無臨床症狀
+    - name: 病理機制
+      examples:
+        - 內源性凝血途徑缺陷
+        - 無法有效形成纖維蛋白凝塊
+        - 嚴重度分級：輕度（>5% 因子活性）、中度（1-5%）、重度（<1%）
+
+clinicalSigns:
+  early:
+    - 新生幼犬剪臍帶或斷尾時異常出血
+    - 注射部位或靜脈穿刺處持續出血
+    - 齒齦出血（換牙期）
+    - 輕微外傷後延遲止血
+  progressive:
+    - 自發性皮下血腫
+    - 關節腫脹與跛行（血腫性關節病）
+    - 肌肉內出血導致疼痛與腫脹
+    - 血尿
+    - 鼻出血
+  late:
+    - 嚴重自發性出血（腹腔、胸腔、顱內）
+    - 進行性貧血（慢性出血所致）
+    - 關節永久性損傷與退化（反覆血腫性關節病）
+    - 出血性休克（急性大量失血）
+
+diagnosis:
+  primaryTests:
+    - name: 凝血功能篩檢
+      notes: "aPTT（活化部分凝血酶原時間）延長為特徵性發現；PT（凝血酶原時間）正常；出血時間正常"
+    - name: 特異性凝血因子活性測定
+      notes: "確診必須測定 Factor VIII 或 Factor IX 活性百分比：重度 <1%、中度 1-5%、輕度 5-30%"
+    - name: 基因檢測
+      notes: "可用於品種特異性突變篩檢與帶因者鑑定（如德國牧羊犬 F8 基因內含子 22 倒位）"
+  imaging:
+    - name: X 光檢查
+      notes: "評估關節腫脹（血腫性關節病）、胸腔或腹腔積液"
+    - name: 腹部超音波
+      notes: "偵測腹腔內出血、腹膜後血腫、脾臟或肝臟血腫"
+  additional:
+    - 全血計數（評估貧血程度與血小板計數——血友病血小板正常）
+    - 血型鑑定與交叉試驗（輸血前準備）
+    - von Willebrand 因子測定（鑑別診斷）
+    - 口腔黏膜出血時間（BMBT，應正常）
+
+treatment:
+  principles:
+    - 急性出血以補充缺乏的凝血因子為首要目標
+    - 避免外傷與侵入性操作
+    - 長期管理著重預防出血與適當環境管理
+  general:
+    - 急性出血時輸注新鮮全血或新鮮冷凍血漿（FFP 10-20 mL/kg IV，可重複給予）
+    - 嚴重出血可使用冷凍沉澱物（cryoprecipitate，含高濃度 Factor VIII）治療血友病 A
+    - Tranexamic acid 15-25 mg/kg PO/IV q8h 作為輔助抗纖溶治療
+    - Desmopressin（DDAVP）0.5-1 μg/kg SC/IV 可短暫提升 Factor VIII 活性（僅對輕度血友病 A 有效）
+    - 避免使用影響血小板功能的藥物（NSAIDs、阿斯匹靈）
+    - 手術或拔牙前需預防性輸注凝血因子
+    - 環境管理：避免劇烈運動與潛在外傷風險
+    - 繁殖管理：患病雄性與帶因雌性不應繁殖
+
+prognosis: 預後取決於疾病嚴重度與飼主的管理能力。輕度血友病患犬在適當管理下可有接近正常的壽命。重度血友病（因子活性 <1%）預後謹慎，自發性出血風險高，需頻繁輸血支持。關節出血若反覆發生可導致永久性關節損傷。基因治療在犬隻模型中已顯示長期成效的潛力。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Canine hemophilia"
+    url: https://pubmed.ncbi.nlm.nih.gov/10225601/
+    type: review
+    pmid: "10225601"
+  - sourceOrg: Blood
+    title: "Gene therapy for hemophilia B in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/12433676/
+    type: research
+    pmid: "12433676"
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Transfusion medicine in small animals"
+    url: https://pubmed.ncbi.nlm.nih.gov/24112692/
+    type: review
+    pmid: "24112692"
+
+pubmedQueries:
+  - query: '"hemophilia" AND (dog OR canine) AND ("factor VIII" OR "factor IX" OR "gene therapy")'
+    frequency: monthly
+  - query: '"coagulation factor deficiency" AND (veterinary OR canine) AND ("diagnosis" OR "treatment")'
+    frequency: monthly

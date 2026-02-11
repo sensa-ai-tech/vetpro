@@ -1,0 +1,111 @@
+slug: periodontal-disease
+nameEn: Periodontal Disease
+nameZh: 牙周病
+bodySystem: dental
+description: 牙菌斑引起的牙周支持組織進行性破壞，為犬貓最常見的口腔疾病。超過 80% 三歲以上犬貓有不同程度的牙周病變。
+
+aliases:
+  - { alias: 牙齦炎, language: zh }
+  - { alias: 齒齦炎, language: zh }
+  - { alias: Periodontitis, language: en }
+  - { alias: Gingivitis, language: en }
+  - { alias: Gum Disease, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 超過 80% 三歲以上犬患有牙周病。小型犬（Toy breeds）因齒列擁擠特別好發。好發品種包括 Yorkshire Terrier、Chihuahua、Dachshund、Poodle。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 約 70% 三歲以上貓有牙周病。貓的牙齦口炎 (FCGS) 為嚴重型態，與免疫反應異常相關。
+
+etiology:
+  categories:
+    - name: 主要病因
+      examples:
+        - 牙菌斑 (dental plaque) 堆積
+        - 牙結石 (calculus) 形成
+        - 牙齦下細菌生物膜 (subgingival biofilm)
+    - name: 加重因素
+      examples:
+        - 小型犬齒列擁擠 (dental crowding)
+        - 乳齒滯留
+        - 軟食飲食
+        - 缺乏居家口腔護理
+        - 免疫抑制
+        - 糖尿病
+    - name: 貓特殊因素
+      examples:
+        - FCV/FHV 慢性感染
+        - FIV/FeLV 感染
+        - 免疫介導反應 (FCGS)
+
+clinicalSigns:
+  early:
+    - 口臭 (halitosis)
+    - 牙齦紅腫 (gingivitis)
+    - 牙結石可見
+    - 探針出血 (bleeding on probing)
+  progressive:
+    - 牙齦退縮
+    - 牙周囊袋形成 (periodontal pocket)
+    - 流涎增加
+    - 進食困難或咀嚼習慣改變
+    - 牙齒鬆動
+  late:
+    - 齒槽骨嚴重喪失
+    - 牙齒脫落
+    - 口鼻瘻管 (oronasal fistula)
+    - 下顎骨病理性骨折 (小型犬)
+    - 慢性疼痛影響生活品質
+
+diagnosis:
+  primaryTests:
+    - name: 口腔檢查
+      notes: "清醒時初步評估牙結石、牙齦紅腫程度。完整評估需全身麻醉下進行"
+    - name: 牙周探針檢查
+      notes: "全身麻醉下以牙周探針逐齒探測，記錄牙周囊袋深度（犬正常 <3 mm，貓 <1 mm）"
+  imaging:
+    - name: 全口齒科 X 光
+      notes: "評估齒槽骨喪失程度，分為水平性與垂直性骨喪失。為牙周病分期必備檢查"
+  additional:
+    - 牙周病分期 (Stage 1-4，依據 AVDC 標準)
+    - CBC/生化 (麻醉前評估)
+    - 細菌培養 (難治性病例)
+
+treatment:
+  principles:
+    - 全身麻醉下進行專業牙科處理
+    - 清除牙菌斑與牙結石
+    - 治療牙周囊袋或拔除無法保留的牙齒
+    - 建立居家口腔護理計畫
+  general:
+    - 超音波洗牙 + 牙齦下刮治 (subgingival scaling and root planing)
+    - Stage 1-2：洗牙 + 拋光 + 居家護理
+    - Stage 3：牙周手術或拔牙（依骨喪失程度決定）
+    - Stage 4：拔牙為主要選擇
+    - 疼痛管理 (meloxicam 0.1 mg/kg SC/PO；buprenorphine 0.02 mg/kg 貓)
+    - 術後抗生素 (clindamycin 5.5-11 mg/kg PO BID × 7-10 天，嚴重感染時使用)
+    - 居家刷牙 (每日為最佳，至少每週 3 次)
+    - 獸醫牙科飲食 (Hill's t/d、Royal Canin Dental)
+    - VOHC 認證潔牙產品
+
+prognosis: 早期牙齦炎 (Stage 1) 完全可逆。牙周炎 (Stage 2-4) 的骨喪失不可逆，但及時治療可防止進一步惡化。建立規律居家護理與定期專業洗牙是長期控制關鍵。
+
+guidelineRefs:
+  - sourceOrg: AAHA
+    title: "2019 AAHA Dental Care Guidelines for Dogs and Cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/30776257/
+    type: guideline
+    pmid: "30776257"
+  - sourceOrg: WSAVA
+    title: "WSAVA Global Dental Guidelines"
+    url: https://pubmed.ncbi.nlm.nih.gov/32027102/
+    type: guideline
+    pmid: "32027102"
+
+pubmedQueries:
+  - query: '"periodontal disease" AND (dog OR cat OR canine OR feline) AND ("guidelines" OR "consensus" OR "treatment")'
+    frequency: monthly

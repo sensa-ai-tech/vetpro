@@ -5,32 +5,38 @@ import path from "path";
 import fs from "fs";
 
 function findDbPath(): string {
-  // 1. 環境變數指定
   if (process.env.DATABASE_URL) {
     return process.env.DATABASE_URL.replace("file:", "");
   }
 
-  // 2. 嘗試 cwd（本機開發 + Vercel build）
-  const cwdPath = path.join(process.cwd(), "vetpro.db");
-  if (fs.existsSync(cwdPath)) return cwdPath;
+  const candidates = [
+    path.join(process.cwd(), "vetpro.db"),
+    path.join(__dirname, "vetpro.db"),
+    path.join(__dirname, "../vetpro.db"),
+    path.join(__dirname, "../../vetpro.db"),
+    path.join(__dirname, "../../../vetpro.db"),
+    "/var/task/vetpro.db",
+  ];
 
-  // 3. Vercel serverless: DB 在 .next/server 旁
-  // outputFileTracingIncludes 會把 DB 複製到 function bundle
-  const dirnamePath = path.join(__dirname, "../../vetpro.db");
-  if (fs.existsSync(dirnamePath)) return dirnamePath;
+  for (const p of candidates) {
+    if (fs.existsSync(p)) return p;
+  }
 
-  const dirnamePath2 = path.join(__dirname, "../../../vetpro.db");
-  if (fs.existsSync(dirnamePath2)) return dirnamePath2;
-
-  // 4. Fallback
-  return cwdPath;
+  return candidates[0];
 }
 
 const DB_PATH = findDbPath();
 
-const sqlite = new Database(DB_PATH, { readonly: process.env.VERCEL ? true : false });
-sqlite.pragma("journal_mode = WAL");
+// Serverless runtime 的 filesystem 是唯讀的
+// 先嘗試正常模式，失敗則用 readonly
+let sqlite: InstanceType<typeof Database>;
+try {
+  sqlite = new Database(DB_PATH);
+} catch {
+  sqlite = new Database(DB_PATH, { readonly: true });
+}
 sqlite.pragma("foreign_keys = ON");
 
-export const db = drizzle(sqlite, { schema });
-export { sqlite };
+const db = drizzle(sqlite, { schema });
+
+export { db, sqlite };

@@ -1,0 +1,132 @@
+slug: canine-distemper
+nameEn: Canine Distemper
+nameZh: 犬瘟熱
+bodySystem: infectious
+description: 由犬瘟熱病毒 (CDV) 引起的高度傳染性多系統感染，侵犯呼吸道、消化道、皮膚及中樞神經系統，為犬最嚴重的病毒性疾病之一。
+
+aliases:
+  - { alias: CDV, language: en }
+  - { alias: Distemper, language: en }
+  - { alias: Hardpad Disease, language: en }
+  - { alias: 犬瘟, language: zh }
+  - { alias: 犬麻疹, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 未疫苗接種幼犬 (3-6 月齡) 風險最高。收容所與流浪犬群中盛行率高。全球分佈。
+  - speciesCommon: ferret
+    speciesScientific: Mustela putorius furo
+    prevalence: common
+    notes: 雪貂高度感受性，致死率接近 100%。
+
+etiology:
+  categories:
+    - name: 病毒性
+      examples:
+        - Canine Distemper Virus (CDV)，副黏液病毒科 (Paramyxoviridae)，麻疹病毒屬 (Morbillivirus)
+        - 透過飛沫傳播 (咳嗽、打噴嚏) 及直接接觸分泌物
+        - 病毒在環境中不穩定，對一般消毒劑敏感
+        - 攻擊淋巴組織、上皮細胞及中樞神經系統
+    - name: 風險因素
+      examples:
+        - 未接種疫苗或疫苗接種不完整 (最重要風險因子)
+        - 幼犬母源抗體下降期 (6-16 週齡)
+        - 免疫抑制 (併發感染、營養不良)
+        - 收容所/群養環境/流浪犬接觸
+
+pathophysiology: CDV 經呼吸道飛沫感染後，首先在扁桃腺與支氣管淋巴結複製，隨後經淋巴管與血行擴散至全身淋巴組織 (脾臟、胸腺、骨髓)，造成嚴重淋巴球凋亡與免疫抑制。病毒血症持續約 8-9 天後侵犯上皮組織 (呼吸道、消化道、泌尿道、皮膚) 及中樞神經系統。神經侵犯可於急性期發生，也可在臨床症狀改善後數週至數月延遲出現，為脫髓鞘性腦脊髓炎，機制涉及直接病毒損傷與免疫介導性反應。免疫力良好的動物可在感染後 14 天內清除病毒；免疫不全者則發展為嚴重多系統疾病。
+
+clinicalSigns:
+  early:
+    - 發燒 (雙峰熱：第 3-6 天與第 11-14 天)
+    - 漿液性眼鼻分泌物
+    - 食慾下降
+    - 嗜睡
+  progressive:
+    - 黏膿性眼鼻分泌物
+    - 咳嗽、呼吸困難 (間質性至支氣管肺炎)
+    - 嘔吐、下痢 (出血性或非出血性)
+    - 脫水
+    - 繼發性細菌感染加重呼吸道與消化道症狀
+    - 足墊角化增厚 (Hardpad Disease)
+    - 鼻鏡角化增厚
+  late:
+    - 肌陣攣 (myoclonus，rhythmic involuntary muscle twitching) — CDV 特徵性神經症狀
+    - 癲癇發作
+    - 小腦性共濟失調
+    - 前庭症狀 (頭歪、眼球震顫)
+    - 四肢輕癱至癱瘓
+    - 失明 (視神經炎)
+    - 行為改變 (chewing gum fits)
+    - 牙釉質發育不全 (幼犬恢復後)
+
+diagnosis:
+  primaryTests:
+    - name: RT-PCR (血液、尿液、結膜拭子、CSF)
+      notes: "敏感度與特異度最高。CSF PCR 可確認神經侵犯。疫苗株可能干擾 (接種後 1-2 週)"
+    - name: CDV 抗原快速檢測 (免疫層析法)
+      notes: "結膜、鼻腔拭子。敏感度中等 (50-70%)。陰性不排除感染"
+    - name: CBC
+      notes: "早期絕對淋巴球減少為重要線索。後期可見繼發性細菌感染的嗜中性球增多"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "間質性至支氣管肺泡型浸潤。評估繼發性細菌性肺炎"
+    - name: MRI (腦部)
+      notes: "神經型病例：白質脫髓鞘病變、腦幹/小腦病變。灰質壞死 (晚期)"
+  additional:
+    - CSF 分析 (神經型：淋巴球性細胞增多、蛋白質升高)
+    - 血清學 IgM 抗體 (急性感染指標，但受疫苗干擾)
+    - 免疫螢光染色 (結膜或皮膚切片)
+    - 包涵體檢查 (血液抹片偶見嗜酸性細胞質包涵體)
+
+treatment:
+  principles:
+    - 無特異性抗病毒治療 — 以支持性療法為主
+    - 控制繼發性細菌感染
+    - 對症處理各系統症狀
+    - 營養支持與水分維持
+    - 神經症狀處理
+  medications:
+    - name: 廣效抗生素 (Ampicillin-Sulbactam)
+      dose: "22 mg/kg IV TID"
+      notes: 預防/治療繼發性細菌感染。呼吸道症狀時尤其重要
+    - name: Maropitant (Cerenia)
+      dose: "1 mg/kg IV/SC SID"
+      notes: 止吐。同時可能具有神經保護作用
+    - name: 晶體液輸液 (LRS 或 Normosol-R)
+      dose: "依脫水程度與維持需求調整"
+      notes: 矯正脫水與電解質異常
+    - name: Phenobarbital
+      dose: "2-4 mg/kg PO/IV BID"
+      notes: 癲癇發作控制。神經型病例常需長期使用
+    - name: Levetiracetam
+      dose: "20 mg/kg PO/IV TID"
+      notes: 癲癇控制替代或合併藥物。肝臟安全性較佳
+  general:
+    - 隔離 (傳染性高)
+    - 霧化治療與拍背 (呼吸道清潔)
+    - 營養支持 (食道管或鼻胃管，若無法自主進食)
+    - 眼部護理 (人工淚液、抗生素眼藥)
+    - 肌陣攣無有效治療 (可能永久存在)
+    - 恢復期物理復健 (神經型病例)
+    - 環境消毒 (一般消毒劑即有效)
+
+emergencyNotes: 癲癇重積狀態需緊急處理 (diazepam 0.5-1 mg/kg IV，或 levetiracetam 60 mg/kg IV 負荷劑量)。嚴重呼吸困難可能需要氧氣支持。脫水與低血糖須立即矯正。嚴重繼發性敗血症按敗血症治療流程處理。
+
+prognosis: 整體死亡率約 50%。出現神經症狀的病例預後較差，即使存活也可能遺留永久性肌陣攣、癲癇或行為異常。無神經症狀的輕至中度病例積極治療後存活率較高。幼犬、免疫不全犬預後最差。存活犬可能終身帶有神經後遺症。預防 (完整疫苗接種) 遠優於治療。
+
+guidelineRefs:
+  - sourceOrg: WSAVA
+    title: "WSAVA Guidelines for the Vaccination of Dogs and Cats"
+    url: https://wsava.org/global-guidelines/vaccination-guidelines/
+    type: guideline
+  - sourceOrg: AAHA
+    title: "AAHA Canine Vaccination Guidelines"
+    url: https://www.aaha.org/aaha-guidelines/vaccination-canine-configuration/vaccination-canine/
+    type: guideline
+
+pubmedQueries:
+  - query: '"canine distemper" AND ("treatment" OR "prognosis" OR "neurological")'
+    frequency: monthly

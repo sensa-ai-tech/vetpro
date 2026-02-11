@@ -1,0 +1,132 @@
+slug: corneal-ulcer
+nameEn: Corneal Ulcer
+nameZh: 角膜潰瘍
+bodySystem: ophthalmology
+description: 角膜上皮缺損伴隨不同深度的基質喪失，從淺層上皮糜爛到深層基質潰瘍甚至角膜穿孔，為小動物眼科最常見的急診之一。
+
+aliases:
+  - { alias: Ulcerative Keratitis, language: en }
+  - { alias: Corneal Erosion, language: en }
+  - { alias: Descemetocele, language: en }
+  - { alias: 角膜糜爛, language: zh }
+  - { alias: 潰瘍性角膜炎, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 極為常見。短頭顱犬種 (Pug、Shih Tzu、Pekingese、Bulldog) 因眼球突出與瞼裂過大風險最高。Boxer 好發自發性慢性角膜上皮缺損 (SCCED/indolent ulcer)。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 常見。貓疱疹病毒 (FHV-1) 為貓角膜潰瘍最常見原因。Persian 等扁臉品種因眼球突出風險較高。
+
+etiology:
+  categories:
+    - name: 外傷性
+      examples:
+        - 抓傷 (貓爪、植物)
+        - 異物 (草籽、砂礫)
+        - 化學灼傷
+        - 自我搓揉造成損傷
+    - name: 感染性
+      examples:
+        - 細菌性 (Pseudomonas aeruginosa — 快速溶解性、Staphylococcus、Streptococcus)
+        - 貓疱疹病毒 (FHV-1) — 貓最常見原因
+        - 黴菌性 (Aspergillus、Fusarium — 馬常見，犬貓少見)
+    - name: 結構性/功能性
+      examples:
+        - 淚液不足 (KCS — keratoconjunctivitis sicca)
+        - 眼瞼內翻 (entropion) 或異位睫毛 (ectopic cilia、distichiasis)
+        - 短頭顱犬眼球突出 (exophthalmos) 與瞼裂過大
+        - 顏面神經麻痺 (無法閉眼)
+    - name: 自發性慢性角膜上皮缺損 (SCCED)
+      examples:
+        - Boxer 好發 (indolent ulcer/recurrent erosion)
+        - 上皮基底膜異常
+        - 多見於中老年犬
+
+pathophysiology: 角膜由外而內分為上皮層、前彈力層、基質層 (占角膜厚度 90%)、後彈力層 (Descemet's membrane) 與內皮層。淺層潰瘍僅累及上皮層，正常 3-5 天可癒合。基質潰瘍涉及基質喪失，深度越深越危險。感染性潰瘍 (尤其 Pseudomonas) 產生基質金屬蛋白酶 (MMPs) 與絲胺酸蛋白酶，快速溶解膠原基質 (melting ulcer)，可在 24-48 小時內穿孔。Descemetocele 為基質完全喪失僅剩後彈力層的緊急狀態，因後彈力層極薄 (3-12 μm) 隨時可能穿孔。SCCED 因上皮基底膜與前基質之間黏附不良，上皮雖增生但無法有效附著。
+
+clinicalSigns:
+  early:
+    - 眨眼/瞇眼 (blepharospasm)
+    - 流淚 (epiphora)
+    - 眼紅 (結膜充血)
+    - 畏光
+    - 角膜表面微凹或粗糙
+  progressive:
+    - 角膜水腫 (潰瘍周圍藍白色混濁)
+    - 角膜新生血管 (慢性潰瘍)
+    - 黏液膿性分泌物 (感染)
+    - 前房混濁 (reflex anterior uveitis)
+    - 潰瘍面積擴大或加深
+  late:
+    - Descemetocele (基質完全喪失，後彈力層向前膨出)
+    - 角膜穿孔 (虹膜脫出/前房塌陷)
+    - 溶解性角膜炎 (melting ulcer — 基質液化呈膠狀)
+    - 眼內炎 (穿孔後感染進入眼內)
+    - 全眼球炎 (panophthalmitis)
+
+diagnosis:
+  primaryTests:
+    - name: 螢光素染色 (Fluorescein stain)
+      notes: "角膜潰瘍診斷金標準。螢光素與暴露的基質結合呈螢光綠色。上皮完整處不吸收。Descemetocele 中心不吸收 (後彈力層疏水) 但周圍吸收 (doughnut pattern)"
+    - name: 裂隙燈檢查 (Slit lamp)
+      notes: "評估潰瘍深度、基質喪失程度、前房反應 (aqueous flare)、角膜浸潤/水腫。區分淺層與深層潰瘍"
+    - name: 細胞學/培養
+      notes: "深層或疑似感染性潰瘍：角膜刮片 (scraping) 做細胞學 + 細菌/黴菌培養與藥敏。Pseudomonas melting ulcer 尤其重要"
+  imaging:
+    - name: 前段 OCT (Anterior Segment OCT)
+      notes: "精確測量角膜厚度與潰瘍深度。專科設備"
+    - name: 眼部超音波
+      notes: "角膜混濁無法透視時評估眼內結構"
+  additional:
+    - Schirmer tear test (STT) — 排除 KCS 為病因
+    - 眼壓測量 — 排除青光眼 (注意潰瘍眼因反射性葡萄膜炎 IOP 可能偏低)
+    - Rose Bengal 染色 — FHV-1 樹枝狀潰瘍 (dendritic ulcer) 特別明顯
+    - FHV-1 PCR (貓角膜潰瘍)
+    - 眼瞼與睫毛檢查 (排除 entropion、distichiasis、ectopic cilia)
+
+treatment:
+  principles:
+    - 淺層潰瘍通常內科治療可癒合 (3-7 天)
+    - 深層潰瘍 (>50% 基質喪失) 與 descemetocele 需手術
+    - 感染性 melting ulcer 為眼科急症
+    - 找出並矯正潛在原因 (KCS、睫毛異常、眼瞼內翻)
+  medications:
+    - name: 廣效抗生素眼藥水 (Ofloxacin 0.3% 或 Tobramycin 0.3%)
+      dose: "Q6-8H (淺層)；Q1-2H (深層/感染性)"
+      notes: Fluoroquinolone 或 aminoglycoside 為一線。Pseudomonas 感染需密集給藥 (Q1-2H)。依培養結果調整
+    - name: 自體血清眼藥水
+      dose: "Q1-2H (溶解性潰瘍)"
+      notes: 含天然抗蛋白酶 (α2-macroglobulin) 與生長因子。Melting ulcer 必用。需新鮮製備冷藏保存
+    - name: Atropine 1% 眼藥水
+      dose: "Q12-24H"
+      notes: 散瞳止痛 (緩解睫狀肌痙攣)。監測眼壓 (可能升高)。控制前房反應
+    - name: Famciclovir (貓 FHV-1)
+      dose: "90 mg/kg PO BID"
+      notes: 抗病毒。貓疱疹病毒相關潰瘍首選口服用藥。安全性高
+    - name: N-Acetylcysteine (NAC) 10% 眼藥水
+      dose: "Q2-4H"
+      notes: 抗膠原酶。溶解性角膜炎輔助治療
+  general:
+    - 戴伊莉莎白頸圈 (防止搓揉)
+    - SCCED 治療：鑽石研磨 (diamond burr debridement) + 格子狀角膜切開 (grid keratotomy，僅犬)
+    - 深層潰瘍手術：結膜瓣覆蓋 (conjunctival graft/flap)、角膜移植、生物膜移植 (SIS、amniotic membrane)
+    - Descemetocele/穿孔：緊急手術 (結膜瓣、角膜結膜移植、cyanoacrylate 組織膠)
+    - 矯正潛在原因 (KCS→cyclosporine 眼藥、entropion→手術矯正、ectopic cilia→手術切除)
+
+emergencyNotes: Descemetocele 與角膜穿孔為眼科急症。穿孔眼需保持頭部水平、戴伊莉莎白頸圈。禁用螢光素染色直接沖洗 (避免加壓)。Melting ulcer 需立即開始密集抗生素 + 自體血清 Q1H。深層潰瘍禁用類固醇眼藥水 (加速基質溶解)。儘速轉介眼科專科。
+
+prognosis: 淺層非感染性潰瘍預後極佳 (3-7 天癒合)。SCCED 經鑽石研磨後 85-90% 在 2-3 週癒合。深層潰瘍手術後預後中等至良好。Pseudomonas melting ulcer 預後謹慎，部分需眼球摘除。Descemetocele/穿孔及時手術可保留眼球，視力恢復取決於疤痕位置。FHV-1 相關潰瘍可能復發 (病毒潛伏)。
+
+guidelineRefs:
+  - sourceOrg: ACVO
+    title: "ACVO Clinical Guidelines — Corneal Disease"
+    url: https://www.acvo.org
+    type: guideline
+
+pubmedQueries:
+  - query: '"corneal ulcer" OR "ulcerative keratitis" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "surgery")'
+    frequency: monthly

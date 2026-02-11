@@ -2,12 +2,30 @@
  * 初始化資料庫 + 載入 YAML seed 資料
  *
  * Usage: pnpm run seed
+ *
+ * 注意：先刪除舊 DB 再動態 import，確保乾淨狀態
  */
 import path from "path";
-import { sqlite } from "../src/db";
-import { seedDiseases } from "../src/lib/seed";
+import fs from "fs";
+
+// 刪除舊的 DB 檔案（避免 Vercel build cache 的 readonly 問題）
+const DB_PATH = path.join(process.cwd(), "vetpro.db");
+for (const f of [DB_PATH, DB_PATH + "-wal", DB_PATH + "-shm"]) {
+  if (fs.existsSync(f)) {
+    try {
+      fs.unlinkSync(f);
+      console.log(`Removed old DB file: ${path.basename(f)}`);
+    } catch (err) {
+      console.warn(`Warning: Could not remove ${path.basename(f)}:`, err);
+    }
+  }
+}
 
 async function main() {
+  // 動態 import：此時 DB 已被刪除，src/db/index.ts 會建立新的
+  const { sqlite } = await import("../src/db");
+  const { seedDiseases } = await import("../src/lib/seed");
+
   console.log("=== VetPro Database Seed ===\n");
 
   // Create tables (if not exists)
@@ -116,13 +134,20 @@ async function main() {
 
   // Rebuild FTS index
   console.log("\nRebuilding full-text search index...");
-  rebuildFtsIndex();
+  rebuildFtsIndex(sqlite);
   console.log("FTS index rebuilt.");
 
+  // 切換到 DELETE journal mode（非 WAL）
+  // WAL mode 的 DB 在 readonly filesystem 上無法打開（需要 -wal/-shm 檔案）
+  // DELETE mode 則不需要額外檔案，適合 Vercel serverless 的唯讀環境
+  sqlite.pragma("journal_mode = DELETE");
+  console.log("Switched to DELETE journal mode for serverless compatibility.");
+
+  sqlite.close();
   console.log("\n=== Done ===");
 }
 
-function rebuildFtsIndex() {
+function rebuildFtsIndex(sqlite: import("better-sqlite3").Database) {
   // Clear existing FTS data
   sqlite.exec("DELETE FROM disease_fts;");
 

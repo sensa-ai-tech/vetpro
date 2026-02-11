@@ -1,0 +1,139 @@
+slug: urolithiasis
+nameEn: Urolithiasis
+nameZh: 尿路結石
+bodySystem: renal
+description: 泌尿道中礦物質結晶沉積形成結石 (尿石)，可發生於腎臟、輸尿管、膀胱或尿道，以草酸鈣與磷酸銨鎂 (struvite) 結石最常見。
+
+aliases:
+  - { alias: Urinary Calculi, language: en }
+  - { alias: Urinary Stones, language: en }
+  - { alias: Bladder Stones, language: en }
+  - { alias: 尿石症, language: zh }
+  - { alias: 膀胱結石, language: zh }
+  - { alias: 腎結石, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: Struvite (約 40%) 與草酸鈣 (約 40%) 為最常見。好發品種 — Dalmatian (尿酸鹽結石)、Miniature Schnauzer (草酸鈣/struvite)、Bichon Frise (草酸鈣)、Shih Tzu、Yorkshire Terrier。犬 struvite 結石多與 UTI 相關。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 草酸鈣 (約 50%) 與 struvite (約 40%) 為最常見。貓 struvite 多為無菌性。公貓尿道阻塞風險高。輸尿管結石 (草酸鈣) 在貓日益常見。
+
+etiology:
+  categories:
+    - name: Struvite (磷酸銨鎂，MgNH4PO4·6H2O)
+      examples:
+        - 犬 — 多與尿路感染 (產脲酶細菌如 Staphylococcus、Proteus) 相關
+        - 貓 — 多為無菌性 (飲食/代謝因素)
+        - 鹼性尿液促進沉積
+        - 高鎂、高磷、高蛋白飲食
+    - name: 草酸鈣 (Calcium Oxalate, CaOx)
+      examples:
+        - 犬貓均為代謝/飲食因素
+        - 高鈣血症 (原發性副甲狀腺功能亢進)
+        - 酸性尿液促進沉積
+        - 高草酸飲食
+        - Miniature Schnauzer、Bichon Frise、波斯貓、暹羅貓好發
+    - name: 其他結石類型
+      examples:
+        - 尿酸鹽 (Dalmatian、English Bulldog、肝門脈分流)
+        - 胱胺酸 (Cystine — 遺傳性胱胺酸尿症)
+        - 矽酸鹽 (Silicate — 少見)
+        - 混合型/複合型結石
+
+pathophysiology: 尿石形成需要尿液中礦物質過飽和、存在促進結晶化的因子 (核化因子)、缺乏結晶化抑制因子。Struvite 結石在犬多因產脲酶細菌 (Staphylococcus pseudintermedius、Proteus spp.) 分解尿素產生氨使尿液鹼化，同時釋放磷酸根與銨根促進沉積。草酸鈣結石與代謝因素相關，包括高鈣尿症 (高鈣血症或腎小管鈣重吸收障礙)、高草酸尿症、低枸橼酸尿症 (尿液缺乏結晶抑制劑)。結石可造成泌尿道機械性阻塞、黏膜損傷、繼發感染。輸尿管結石阻塞可導致水腎與急性/慢性腎損傷。尿道結石完全阻塞為致命急症 (急性腎後性腎衰竭、高血鉀)。
+
+clinicalSigns:
+  early:
+    - 頻尿
+    - 血尿
+    - 排尿困難/費力 (stranguria)
+    - 尿液混濁
+  progressive:
+    - 反覆尿路感染
+    - 不適當排尿 (排尿地點改變)
+    - 尿液帶血塊
+    - 腹部疼痛 (腎/輸尿管結石)
+    - 舔舐生殖器
+  late:
+    - 尿道阻塞 (公貓/公犬) — 排尿困難、痛苦嚎叫
+    - 完全無尿 (阻塞性)
+    - 嘔吐、嗜睡 (腎後性氮血症)
+    - 膀胱破裂 (罕見但致命)
+    - 水腎 (輸尿管阻塞)
+    - 高血鉀致心律不整 (阻塞性急症)
+
+diagnosis:
+  primaryTests:
+    - name: 尿液分析
+      notes: "pH 值 (鹼性提示 struvite/UTI、酸性提示 CaOx)。血尿、膿尿、菌尿。結晶鏡檢 (struvite coffin-lid、CaOx envelope/dumbbell)。注意：結晶存在不等於結石存在"
+    - name: 尿液培養與藥敏試驗
+      notes: "犬 struvite 幾乎均與 UTI 相關，培養為必要檢查。貓 struvite 多為無菌性"
+    - name: 生化
+      notes: "BUN/Crea (評估腎功能)。鈣 (高鈣血症→CaOx)。尿酸 (肝門脈分流→尿酸鹽)。電解質 (阻塞時高血鉀)"
+  imaging:
+    - name: 腹部 X 光
+      notes: "Struvite 與 CaOx 為 X 光不透過性 (radiopaque)，可見。尿酸鹽與胱胺酸為 X 光半透過性/透過性，可能看不到"
+    - name: 腹部超音波
+      notes: "偵測所有類型結石 (包括 X 光看不到的)。輸尿管結石與水腎評估。膀胱壁增厚"
+    - name: 對比攝影 (Double-contrast cystography)
+      notes: "X 光不確定時使用。偵測小結石與膀胱腫塊鑑別"
+  additional:
+    - 結石分析 (取出後送紅外線光譜/X 光繞射分析 — 黃金標準)
+    - 血清離子化鈣 (排除副甲狀腺功能亢進)
+    - 門脈分流評估 (幼犬尿酸鹽結石)
+    - 胱胺酸尿篩檢 (nitroprusside test)
+
+treatment:
+  principles:
+    - 區分結石類型是治療關鍵 (飲食溶解 vs 手術取出)
+    - Struvite 結石可用飲食溶解 (犬需同時治療 UTI)
+    - 草酸鈣結石無法飲食溶解 — 需手術或微創取出
+    - 解除阻塞為最優先急診處理
+    - 預防復發與結石類型管理同樣重要
+  medications:
+    - name: 溶解處方飲食 (Struvite)
+      dose: "專用 struvite 溶解飲食，持續至結石消失後 1 個月 (通常 4-12 週)"
+      notes: 僅適用 struvite 結石。犬需同時抗生素治療 UTI。定期 X 光追蹤溶解進度
+    - name: 抗生素 (感染性 struvite)
+      dose: "依培養結果選藥，至少治療至結石完全溶解後 1 週"
+      notes: 犬 struvite 必須同時治療 UTI，否則無法溶解
+    - name: Potassium citrate (草酸鈣預防)
+      dose: "犬 75-150 mg/kg/day PO 分二次；貓 40-75 mg/kg/day PO 分二次"
+      notes: 鹼化尿液、增加尿液枸橼酸 (結晶抑制劑)。CaOx 復發預防
+    - name: Allopurinol (尿酸鹽結石)
+      dose: "犬 10-15 mg/kg PO BID"
+      notes: 黃嘌呤氧化酶抑制劑，降低尿酸生成。Dalmatian 與尿酸鹽結石犬使用
+    - name: Hydrochlorothiazide (草酸鈣預防)
+      dose: "犬 2-4 mg/kg PO BID"
+      notes: 減少尿鈣排泄。用於 CaOx 復發且高鈣尿症的犬
+  general:
+    - 增加水分攝取 (濕食、多水碗、流動飲水器)
+    - 飲食管理 (依結石類型選擇處方飲食)
+    - 膀胱切開取石術 (Cystotomy — 膀胱結石手術取出)
+    - 碎石術/籃式取石術 (Lithotripsy/Basket retrieval — 輸尿管/腎臟結石)
+    - 輸尿管支架置放或皮下輸尿管繞道裝置 (SUB device — 貓輸尿管阻塞)
+    - 尿道造口術 (反覆阻塞的公貓)
+    - 定期影像追蹤 (每 3-6 個月)
+    - 定期尿液分析與培養
+
+emergencyNotes: 尿道完全阻塞為致命急症！公貓尿道阻塞最常見。立即檢查血鉀 (>7 mEq/L 可致命心律不整)。高血鉀處理：Calcium gluconate 10% (0.5-1 mL/kg IV slow)、regular insulin + dextrose、sodium bicarbonate。穩定後盡快解除阻塞 (尿道導管沖洗)。膀胱破裂需緊急手術修復與腹腔引流。
+
+prognosis: 依結石類型與位置而異。Struvite 結石經飲食溶解與 UTI 治療預後良好。草酸鈣結石手術取出後復發率較高 (犬 1 年約 10%，3 年約 30-50%)。輸尿管阻塞貓 SUB 裝置或支架預後中等至良好。預防性飲食管理可顯著降低復發率。
+
+guidelineRefs:
+  - sourceOrg: ACVIM
+    title: "ACVIM Small Animal Consensus Recommendations on the Treatment and Prevention of Uroliths in Dogs and Cats"
+    url: https://onlinelibrary.wiley.com/doi/10.1111/jvim.14559
+    type: consensus
+  - sourceOrg: Minnesota Urolith Center
+    title: "University of Minnesota Urolith Center — Recommendations"
+    url: https://www.vetmed.umn.edu/centers-programs/minnesota-urolith-center
+    type: guideline
+
+pubmedQueries:
+  - query: '"urolithiasis" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "dissolution" OR "prevention")'
+    frequency: monthly

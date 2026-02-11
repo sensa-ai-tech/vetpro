@@ -1,0 +1,123 @@
+slug: anterior-uveitis
+nameEn: Anterior Uveitis
+nameZh: 前葡萄膜炎
+bodySystem: ophthalmology
+description: 前葡萄膜炎是指虹膜與睫狀體的發炎反應，為犬貓最常見的眼內炎症。病因多樣，包括感染性、免疫介導性、腫瘤性及外傷性因素，若未及時治療可導致青光眼、白內障及失明等嚴重併發症。
+
+aliases:
+  - { alias: Iridocyclitis, language: en }
+  - { alias: Iritis, language: en }
+  - { alias: 虹膜睫狀體炎, language: zh }
+  - { alias: 虹膜炎, language: zh }
+  - { alias: 葡萄膜炎, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬隻常見，免疫介導性與水晶體誘發性為最常見病因；好發品種無明顯偏好
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓隻常見，需特別排除 FIP（貓傳染性腹膜炎）、FeLV、FIV、弓形蟲等感染性病因；淋巴瘤為貓最常見的眼內腫瘤
+
+etiology:
+  categories:
+    - name: 感染性病因
+      examples:
+        - 犬：Ehrlichia canis、Leishmania、Brucella、Leptospira、犬腺病毒、蜱媒疾病
+        - 貓：FIP 冠狀病毒、FeLV、FIV、Toxoplasma gondii、Bartonella
+        - 黴菌感染：Blastomyces、Cryptococcus、Histoplasma、Coccidioides
+    - name: 免疫介導性病因
+      examples:
+        - 水晶體誘發性葡萄膜炎（白內障滲漏蛋白）
+        - 葡萄膜皮膚症候群（VKH-like syndrome，好發於秋田犬）
+        - 特發性免疫介導性葡萄膜炎
+    - name: 腫瘤性病因
+      examples:
+        - 原發性眼內腫瘤（虹膜黑色素瘤、睫狀體腺瘤）
+        - 轉移性腫瘤（淋巴瘤最常見，尤其貓）
+    - name: 外傷性
+      examples:
+        - 眼球鈍挫傷或穿刺傷
+        - 術後（白內障手術後）
+        - 水晶體脫位
+
+clinicalSigns:
+  early:
+    - 眼睛紅腫（結膜與睫狀體充血）
+    - 瞳孔縮小（miosis）
+    - 眼前房混濁（aqueous flare）
+    - 畏光與流淚
+    - 眨眼頻率增加或眼瞼痙攣
+  progressive:
+    - 前房積膿或積血（hypopyon/hyphema）
+    - 虹膜腫脹與顏色改變
+    - 虹膜後黏連（posterior synechia）
+    - 眼壓降低（因睫狀體功能受抑制）
+    - 角膜水腫
+  late:
+    - 繼發性青光眼（虹膜前後黏連阻礙房水排流）
+    - 繼發性白內障
+    - 視網膜剝離
+    - 眼球萎縮（phthisis bulbi）
+    - 失明
+
+diagnosis:
+  primaryTests:
+    - name: 裂隙燈生物顯微鏡檢查
+      notes: "評估前房 flare（Tyndall 效應）、細胞數、角膜後沉澱物（KP）、虹膜黏連等；flare 分級 0-4+"
+    - name: 眼壓測量
+      notes: "葡萄膜炎通常眼壓偏低（< 10 mmHg），但合併繼發性青光眼時可升高（> 25 mmHg）"
+    - name: 全身性檢查
+      notes: "血液學、生化、感染性疾病篩檢（蜱媒疾病 panel、FeLV/FIV、弓形蟲抗體等）以確認潛在病因"
+  imaging:
+    - name: 眼部超音波
+      notes: "評估後眼房結構、排除視網膜剝離、眼內腫塊或水晶體脫位"
+    - name: 胸腹腔 X 光
+      notes: "排除全身性腫瘤或黴菌感染（肺部病灶）"
+  additional:
+    - 前房液穿刺細胞學（選擇性，排除淋巴瘤或感染）
+    - 眼底鏡檢查（評估後葡萄膜炎、視網膜受累）
+    - 血壓測量（排除高血壓性視網膜病變）
+    - 尿液分析
+
+treatment:
+  principles:
+    - 積極控制眼內炎症以防止不可逆損傷
+    - 同時治療潛在病因（感染、腫瘤、免疫介導等）
+    - 預防併發症（黏連、青光眼、白內障）
+  general:
+    - 局部類固醇（Prednisolone acetate 1% 眼藥水 q2-6h，依炎症嚴重度調整頻率）
+    - 局部散瞳劑（Atropine 1% 眼藥水 q8-12h，維持瞳孔散大防止黏連並減輕睫狀肌痙攣）
+    - 全身性 NSAIDs（Meloxicam 犬 0.1 mg/kg PO q24h；貓 0.05 mg/kg PO q24-48h）用於非感染性病因
+    - 全身性類固醇（Prednisolone 1-2 mg/kg PO q12h，逐漸減量）用於嚴重免疫介導性病例
+    - 感染性病因需針對性抗微生物治療（如 Doxycycline 5-10 mg/kg PO q12h 治療蜱媒疾病）
+    - 繼發性青光眼需加用降眼壓藥物（Dorzolamide 2% q8h，Timolol 0.5% q12h）
+    - 水晶體誘發性葡萄膜炎可考慮白內障超音波乳化術
+    - 定期追蹤眼壓與炎症程度
+
+prognosis: 預後取決於潛在病因與治療的及時性。特發性與外傷性葡萄膜炎經積極治療後預後較好。感染性病因在根除感染後通常可控制。免疫介導性可能需要長期藥物管理。繼發性青光眼與白內障是最常見的長期併發症，可能永久影響視力。早期診斷與積極治療是保留視力的關鍵。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Ophthalmology
+    title: "Canine and feline uveitis: a review"
+    url: https://pubmed.ncbi.nlm.nih.gov/10955276/
+    type: review
+    pmid: "10955276"
+  - sourceOrg: Veterinary Clinics of North America Small Animal Practice
+    title: "Feline uveitis: diagnosis and treatment"
+    url: https://pubmed.ncbi.nlm.nih.gov/26003674/
+    type: review
+    pmid: "26003674"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Uveodermatologic syndrome in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/16579003/
+    type: research
+    pmid: "16579003"
+
+pubmedQueries:
+  - query: '"anterior uveitis" AND (dog OR cat) AND ("diagnosis" OR "treatment" OR "etiology")'
+    frequency: monthly
+  - query: '"uveitis" AND (canine OR feline) AND ("lens-induced" OR "immune-mediated" OR "infectious")'
+    frequency: monthly

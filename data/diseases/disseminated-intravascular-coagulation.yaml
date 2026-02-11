@@ -1,0 +1,129 @@
+slug: disseminated-intravascular-coagulation
+nameEn: Disseminated Intravascular Coagulation
+nameZh: 瀰漫性血管內凝血
+bodySystem: hematology
+description: 瀰漫性血管內凝血（DIC）是一種嚴重的續發性凝血異常，特徵為凝血系統全身性過度活化，導致微血管內廣泛血栓形成與凝血因子消耗，最終引起矛盾性的多器官出血與缺血性器官損傷。DIC 永遠是其他嚴重疾病的併發症，非獨立疾病。
+
+aliases:
+  - { alias: DIC, language: en }
+  - { alias: Consumptive Coagulopathy, language: en }
+  - { alias: Defibrination Syndrome, language: en }
+  - { alias: 消耗性凝血病, language: zh }
+  - { alias: 血管內瀰漫性凝血, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 常見於敗血症、血管肉瘤、免疫介導性溶血性貧血（IMHA）、胃扭轉、急性胰臟炎及熱中暑等重症犬隻
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 較犬少見但同樣可發生，常見於 FIP、急性肝衰竭、敗血症及嚴重胰臟炎
+
+etiology:
+  categories:
+    - name: 感染性病因
+      examples:
+        - 敗血症（細菌性，尤其革蘭氏陰性菌內毒素）
+        - 嚴重病毒感染（犬小病毒、FIP）
+        - 巴貝蟲症、心絲蟲症
+    - name: 腫瘤性病因
+      examples:
+        - 血管肉瘤（hemangiosarcoma，犬隻最常見觸發因素之一）
+        - 淋巴瘤
+        - 其他播散性惡性腫瘤
+    - name: 免疫介導性病因
+      examples:
+        - 免疫介導性溶血性貧血（IMHA）
+        - 免疫介導性血小板減少症
+        - 急性輸血反應
+    - name: 其他病因
+      examples:
+        - 嚴重外傷或手術
+        - 胃扭轉擴張症候群（GDV）
+        - 急性胰臟炎
+        - 熱中暑
+        - 蛇毒中毒
+
+clinicalSigns:
+  early:
+    - 可能無明顯臨床表現（代償期/亞臨床 DIC）
+    - 輕度瘀斑或注射部位延遲止血
+    - 實驗室異常先於臨床症狀（血小板輕度下降、D-dimer 升高）
+  progressive:
+    - 黏膜瘀斑與出血點（petechiae/ecchymosis）
+    - 注射部位或傷口持續滲血
+    - 靜脈穿刺處血腫
+    - 血尿或黑便
+    - 鼻出血
+    - 血小板與凝血因子消耗加劇
+  late:
+    - 多器官功能衰竭（腎衰竭、肝衰竭、呼吸衰竭）
+    - 無法控制的全身性出血
+    - 四肢末端發紺或壞死（微血管血栓）
+    - 休克與低血壓
+    - 急性呼吸窘迫症候群（ARDS）
+
+diagnosis:
+  primaryTests:
+    - name: 凝血功能檢查
+      notes: "PT 與 aPTT 延長（通常超過正常值 25% 以上）；纖維蛋白原初期可升高（急性期反應蛋白），後期因消耗而降低"
+    - name: 血小板計數
+      notes: "血小板減少為 DIC 最敏感的指標之一；通常 < 100,000/μL，進行性下降更具診斷意義"
+    - name: D-dimer 與纖維蛋白降解產物（FDP）
+      notes: "D-dimer 升高反映纖維蛋白溶解活化，為 DIC 敏感度最高的指標；FDP 升高同樣支持診斷"
+    - name: 抗凝血酶（AT）活性
+      notes: "AT 活性降低（< 80%）反映凝血因子消耗，是 DIC 的重要診斷與預後指標"
+  imaging:
+    - name: 胸腹腔 X 光
+      notes: "評估原發疾病（腫塊、胸腔積液）及併發症（肺水腫、腹腔出血）"
+    - name: 腹部超音波
+      notes: "偵測原發病因（脾臟腫塊/血管肉瘤、肝臟病變）及腹腔積液"
+  additional:
+    - 血液抹片鏡檢（可見紅血球碎片/schistocytes，支持微血管內凝血）
+    - 血栓彈力圖（TEG/ROTEM，動態評估凝血功能）
+    - 全血計數與生化（評估多器官功能）
+    - 血氣分析（評估酸鹼平衡）
+
+treatment:
+  principles:
+    - 治療原發疾病為最重要且最優先的步驟
+    - 支持性治療維持器官灌流與氧合
+    - 補充消耗的凝血因子與血小板
+    - 謹慎使用抗凝血治療（需個體化評估）
+  general:
+    - 積極治療原發疾病（抗生素治療敗血症、手術切除腫瘤等）
+    - 新鮮冷凍血漿（FFP）10-20 mL/kg IV 補充凝血因子與抗凝血酶
+    - 輸注濃縮紅血球（pRBC）10-15 mL/kg IV 矯正貧血
+    - 積極靜脈輸液治療維持血容量與器官灌流
+    - Unfractionated heparin 150-300 IU/kg SC q8h（低劑量抗凝血，需搭配 AT 補充才有效）
+    - 或 Low-molecular-weight heparin（Dalteparin 150 IU/kg SC q8-12h）
+    - Tranexamic acid 15-25 mg/kg IV q8h（僅在出血為主要表現時謹慎使用）
+    - 血小板輸注（若嚴重血小板減少合併活動性出血）
+    - 持續監測凝血功能（每 6-12 小時重複檢測 PT/aPTT/血小板/D-dimer）
+
+prognosis: DIC 的預後取決於原發疾病的嚴重度與可治療性，整體死亡率為 50-78%。若原發病因可被有效控制（如手術切除、感染清除），預後較好。合併多器官功能衰竭的患畜預後極差。早期診斷與積極治療可改善存活率。血管肉瘤與嚴重敗血症相關的 DIC 預後最差。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Diagnosis and treatment of disseminated intravascular coagulation in dogs and cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/25845995/
+    type: review
+    pmid: "25845995"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "A retrospective study of DIC in 68 dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/10225601/
+    type: research
+    pmid: "10225601"
+  - sourceOrg: Veterinary Clinical Pathology
+    title: "Thromboelastography in veterinary medicine"
+    url: https://pubmed.ncbi.nlm.nih.gov/24390120/
+    type: review
+    pmid: "24390120"
+
+pubmedQueries:
+  - query: '"disseminated intravascular coagulation" AND (dog OR cat) AND ("diagnosis" OR "treatment" OR "prognosis")'
+    frequency: monthly
+  - query: '"DIC" AND (canine OR feline) AND ("thromboelastography" OR "heparin" OR "transfusion")'
+    frequency: monthly

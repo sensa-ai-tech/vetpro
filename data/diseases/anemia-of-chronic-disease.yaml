@@ -1,0 +1,140 @@
+slug: anemia-of-chronic-disease
+nameEn: Anemia of Chronic Disease
+nameZh: 慢性病貧血
+bodySystem: hematology
+description: 繼發於慢性感染、腫瘤或免疫介導性疾病的非再生性正球性正色素性貧血，以 hepcidin 介導的鐵封存與紅血球生成抑制為核心病理機制。
+
+aliases:
+  - { alias: ACD, language: en }
+  - { alias: Anemia of Inflammation, language: en }
+  - { alias: AI, language: en }
+  - { alias: 慢性炎症性貧血, language: zh }
+  - { alias: 炎症性貧血, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬最常見的非再生性貧血類型之一。任何年齡、品種均可發生。見於慢性感染（心絲蟲、Ehrlichia、真菌感染）、腫瘤（淋巴瘤、血管肉瘤等）、免疫介導性疾病（SLE、IMHA 慢性期、IBD）。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓同樣常見。常見原因包括慢性腎病 (CKD)、FIP、FeLV/FIV 相關慢性感染、腫瘤（淋巴瘤）、慢性口炎。CKD 貓的貧血常為 ACD 與 EPO 不足的混合機制。
+
+etiology:
+  categories:
+    - name: 慢性感染
+      examples:
+        - 心絲蟲病 (Dirofilaria immitis)
+        - Ehrlichia canis / Anaplasma spp.
+        - 全身性真菌感染（球黴菌、組織漿菌、芽生菌）
+        - 慢性膿胸/腹膜炎/膿瘍
+        - 慢性骨髓炎
+        - FIP（貓）
+        - FIV/FeLV 慢性感染（貓）
+    - name: 腫瘤
+      examples:
+        - 淋巴瘤
+        - 血管肉瘤
+        - 多發性骨髓瘤
+        - 各種實體腫瘤（肺、肝、脾、腎腫瘤等）
+    - name: 免疫介導性疾病
+      examples:
+        - 全身性紅斑狼瘡 (SLE)
+        - 免疫介導性多發性關節炎
+        - 炎症性腸病 (IBD)
+        - 免疫介導性溶血性貧血 (IMHA) 慢性/恢復期
+    - name: 慢性器官疾病
+      examples:
+        - 慢性腎病 (CKD) — ACD + EPO 不足雙重機制
+        - 慢性肝病
+        - 慢性心衰竭
+
+pathophysiology: 慢性病貧血為一種細胞激素驅動的鐵代謝障礙。慢性炎症或腫瘤釋放的促炎細胞激素（IL-1、IL-6、TNF-α、IFN-γ）刺激肝臟 hepatocyte 大量合成 hepcidin。Hepcidin 是鐵代謝的主要調節激素，與腸道上皮細胞和巨噬細胞膜上的鐵輸出蛋白 ferroportin 結合，導致 ferroportin 內化降解。結果為：(1) 腸道鐵吸收減少；(2) 巨噬細胞內回收的鐵無法釋出至血漿（鐵封存/iron sequestration），形成「功能性缺鐵」—— 體內鐵儲備充足但無法供給紅血球生成使用。同時，促炎細胞激素直接抑制骨髓紅血球前驅細胞增殖、降低腎臟 EPO 產生、縮短紅血球壽命。TNF-α 和 IFN-γ 直接抑制 BFU-E 和 CFU-E 生長。IL-6 是 hepcidin 表現的主要驅動因子。最終結果為輕至中度非再生性貧血，通常 PCV 不低於 20%（犬）或 15%（貓），因多重代償機制限制貧血嚴重度。
+
+clinicalSigns:
+  early:
+    - 多被原發疾病症狀掩蓋
+    - 輕度黏膜蒼白
+    - 輕微嗜睡/活動力下降
+    - 原發疾病相關症狀（發燒、體重減輕、淋巴結腫大等）
+  progressive:
+    - 黏膜蒼白加重
+    - 嗜睡/運動不耐受
+    - 食慾減退
+    - 心搏過速（代償性）
+    - 輕度脾腫大
+    - 體重進行性減輕
+  late:
+    - 顯著蒼白（PCV <20%）
+    - 嚴重運動不耐受
+    - 呼吸急促
+    - 全身虛弱
+    - 心雜音（貧血性心雜音）
+    - 原發疾病惡化相關症狀
+
+diagnosis:
+  primaryTests:
+    - name: CBC + 網織紅血球計數
+      notes: "非再生性貧血（網織紅血球 <60,000/μL 或絕對網織紅血球百分比低）。正球性正色素性 (normocytic normochromic) — ACD 典型特徵。MCV 正常或輕度下降。輕至中度貧血 (PCV 通常 20-30%)"
+    - name: 血清鐵 (Serum Iron) + TIBC
+      notes: "血清鐵下降、TIBC 下降或正常 — ACD 經典組合。與真性缺鐵性貧血區分（真性缺鐵：血清鐵下降但 TIBC 升高）。鐵飽和度正常至下降"
+    - name: 血清 Ferritin
+      notes: "正常或升高 — ACD 關鍵鑑別點（體內鐵儲備正常但功能性不可用）。真性缺鐵性貧血時 ferritin 下降。犬 ferritin 參考值品種間差異大，需謹慎判讀"
+  imaging:
+    - name: 腹部超音波
+      notes: "評估脾腫大、肝腫大、腫塊、腹腔積液。原發疾病篩檢"
+    - name: 胸腔 X 光
+      notes: "肺部腫瘤、淋巴結腫大、縱膈腔腫塊。原發疾病篩檢"
+  additional:
+    - 生化全套 (肝腎功能、蛋白電泳 — 評估原發疾病)
+    - 骨髓穿刺/切片 (排除骨髓浸潤、骨髓纖維化、再生不良性貧血。ACD 骨髓鐵儲備正常/增加但鐵芽球比例下降)
+    - C-reactive protein / SAA (全身性炎症標記)
+    - 感染篩檢 (Ehrlichia/Anaplasma 抗體、心絲蟲抗原、真菌血清學)
+    - 尿液分析 (CKD 評估)
+    - 腫瘤篩檢 (淋巴結 FNA、影像學)
+
+treatment:
+  principles:
+    - 找出並治療原發疾病為唯一根本解決方案
+    - ACD 本身通常不需直接治療（輕至中度貧血為自限性）
+    - 避免不必要的鐵劑補充（加重鐵超載）
+    - 嚴重貧血時輸血為暫時措施
+    - EPO 補充僅用於合併 CKD 的特定情況
+  medications:
+    - name: 治療原發疾病（為核心策略）
+      dose: "依原發疾病選擇適當治療方案"
+      notes: 原發疾病控制後，ACD 通常在數週至數月內自行改善。感染控制、腫瘤治療、免疫抑制等為實際治療方向
+    - name: Darbepoetin alfa (EPO 補充)
+      dose: "犬/貓 1 μg/kg SC 每週一次（誘導期），穩定後每 2-3 週"
+      notes: 僅適用於合併 CKD 或 EPO 產生不足的情況。純 ACD 不建議使用。需監測 PCV（目標 30-40%）。可能產生抗 EPO 抗體（純紅血球再生不良）
+    - name: 鐵劑補充（僅特定情況）
+      dose: "Ferrous sulfate 犬 5-10 mg/kg PO SID"
+      notes: 僅用於合併真性缺鐵的混合型貧血（慢性失血 + ACD）。純 ACD 不可補鐵 — 鐵封存機制為宿主防禦策略（限制病原體利用鐵），盲目補鐵可能有害
+    - name: 輸血 (pRBC)
+      dose: "犬 10-15 mL/kg IV；貓 10 mL/kg IV"
+      notes: 嚴重貧血 (PCV <15%) 或臨床代償不足時。暫時措施，不解決根本問題。需交叉配血
+  general:
+    - 積極診斷原發疾病（系統性排查）
+    - 營養支持（高品質蛋白質飲食）
+    - 定期監測 PCV/CBC（評估治療反應）
+    - 避免不必要的鐵劑補充
+    - 合併 CKD 時同時管理磷酸鹽、血壓等
+
+emergencyNotes: ACD 很少單獨構成急症（通常為輕至中度貧血）。但若 PCV 快速下降至 <15% 或出現嚴重組織低氧症狀（極度虛弱、呼吸窘迫、心搏過速、昏倒），需緊急輸血 (pRBC)。同時積極處理原發疾病急性惡化。注意排除合併急性出血或溶血等其他貧血機制。
+
+prognosis: 取決於原發疾病。原發疾病可治癒或有效控制時（如感染控制、腫瘤緩解），ACD 通常完全恢復。慢性不可治癒的原發疾病（晚期腫瘤、CKD）時，ACD 為持續性但通常穩定。ACD 本身極少導致致命性貧血。整體預後由原發疾病決定而非貧血本身。CKD 貓合併 ACD 與 EPO 不足時，EPO 補充可改善生活品質。
+
+guidelineRefs:
+  - sourceOrg: ASVCP
+    title: "ASVCP Guidelines — Interpretation of Canine and Feline Iron Status"
+    url: https://onlinelibrary.wiley.com/doi/10.1111/vcp.12304
+    type: guideline
+  - sourceOrg: IRIS
+    title: "IRIS Guidelines — Treatment of Anemia in CKD"
+    url: http://www.iris-kidney.com/guidelines/
+    type: guideline
+
+pubmedQueries:
+  - query: '"anemia of chronic disease" AND (dog OR cat OR canine OR feline) AND ("hepcidin" OR "iron" OR "inflammation")'
+    frequency: monthly

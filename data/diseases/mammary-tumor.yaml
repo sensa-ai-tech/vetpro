@@ -1,0 +1,119 @@
+slug: mammary-tumor
+nameEn: Mammary Tumor
+nameZh: 乳腺腫瘤
+bodySystem: oncology
+description: 犬貓常見腫瘤，未絕育母犬約50%為惡性，貓則高達80-90%為惡性。早期絕育可大幅降低發生風險。
+
+aliases:
+  - { alias: Mammary Gland Tumor, language: en }
+  - { alias: MGT, language: en }
+  - { alias: Mammary Carcinoma, language: en }
+  - { alias: 乳腺癌, language: zh }
+  - { alias: 乳房腫瘤, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 未絕育母犬最常見腫瘤。約 50% 惡性。第一次發情前絕育風險降至 0.5%；第二次發情前絕育風險約 8%；2.5 歲後絕育無保護效果。中位年齡 10-11 歲。後方乳腺 (第 4、5 對) 較常發生。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓第三常見腫瘤。約 80-90% 為惡性 (多為腺癌)。Siamese 品種風險較高。未絕育母貓風險是絕育貓的 7 倍。中位年齡 10-12 歲。
+
+etiology:
+  categories:
+    - name: 荷爾蒙因素
+      examples:
+        - 雌激素 (estrogen) 與黃體素 (progesterone) 長期刺激
+        - 未絕育為最重要風險因子
+        - 外源性黃體素投與 (medroxyprogesterone acetate)
+        - 假懷孕反覆發作
+    - name: 遺傳因素
+      examples:
+        - 品種好發性 (Springer Spaniel、Cocker Spaniel、Poodle、German Shepherd)
+        - BRCA1/BRCA2 同源基因突變 (研究中)
+        - HER2 過度表現 (部分犬乳腺癌)
+    - name: 其他因素
+      examples:
+        - 肥胖 (幼年期肥胖增加風險)
+        - 年齡 (腫瘤發生率隨年齡增加)
+
+pathophysiology: 乳腺腫瘤的發生與荷爾蒙依賴性細胞增殖密切相關。雌激素與黃體素透過各自受體促進乳腺上皮細胞增殖。長期反覆的荷爾蒙刺激 (發情週期) 增加 DNA 複製錯誤的機會，累積致癌突變。犬乳腺腫瘤從良性 (腺瘤、良性混合瘤) 到惡性 (腺癌、炎性乳癌) 存在連續進展光譜。惡性腫瘤可經淋巴管及血行轉移，最常見轉移部位為肺臟及區域淋巴結。貓乳腺腫瘤絕大多數為惡性，侵犯性強，早期轉移率高。炎性乳癌 (inflammatory mammary carcinoma) 為特殊亞型，生長極快，預後極差。
+
+clinicalSigns:
+  early:
+    - 乳腺區域可觸診之結節或腫塊 (單一或多發)
+    - 多無疼痛
+    - 腫塊質地堅硬、不規則
+  progressive:
+    - 腫塊增大
+    - 可能潰瘍
+    - 區域淋巴結腫大 (腋下/鼠蹊)
+    - 多發乳腺結節
+    - 乳腺分泌物 (偶見)
+  late:
+    - 腫瘤固著於皮膚或肌肉筋膜
+    - 肺轉移 (呼吸困難、咳嗽)
+    - 炎性乳癌 (紅、腫、熱、痛，彌漫性硬化)
+    - 惡病質
+    - 骨轉移 (罕見)
+
+diagnosis:
+  primaryTests:
+    - name: FNA + 細胞學
+      notes: "初步評估。可區分上皮性/間葉性/混合性。但乳腺腫瘤良惡性判定細胞學準確率有限，需組織病理確診"
+    - name: 組織病理學 (切除活檢)
+      notes: "確診金標準。WHO 分類：腺瘤、腺癌、複雜型/簡單型、炎性乳癌等。評估血管/淋巴管侵犯、切除邊緣、有絲分裂指數"
+    - name: 免疫組化
+      notes: "ER/PR 受體狀態 (荷爾蒙依賴性評估)、Ki-67、HER2、CK/Vimentin (上皮間質轉化)"
+  imaging:
+    - name: 胸腔 X 光 (三方向)
+      notes: "肺轉移篩檢。所有惡性乳腺腫瘤術前必做"
+    - name: 腹部超音波
+      notes: "腹腔淋巴結、肝/脾轉移評估"
+  additional:
+    - 區域淋巴結 FNA (腋下、鼠蹊)
+    - CBC、生化全套
+    - 腹部 X 光 (腰下淋巴結)
+    - CT (進階分期，大型/浸潤性腫瘤)
+
+treatment:
+  principles:
+    - 手術切除為首要治療
+    - 犬根據腫瘤大小、數量、位置決定切除範圍 (局部切除至區域/完整乳腺鏈切除)
+    - 貓建議根治性單側乳腺鏈完整切除
+    - 同時絕育 (若尚未絕育)
+  medications:
+    - name: Doxorubicin
+      dose: "30 mg/m² IV 每 3 週 × 5 次"
+      notes: 惡性乳腺腫瘤術後輔助化療。適用於大型腫瘤、淋巴結轉移、血管侵犯等高風險因子
+    - name: Carboplatin
+      dose: "300 mg/m² IV 每 3 週 × 4 次"
+      notes: 另一輔助化療選擇。部分研究顯示對貓乳腺癌有效
+    - name: Mitoxantrone
+      dose: "5-6 mg/m² IV 每 3 週"
+      notes: Doxorubicin 替代方案，心臟毒性較低
+    - name: COX-2 抑制劑
+      dose: "Meloxicam 0.1 mg/kg PO SID (犬) 或 Piroxicam 0.3 mg/kg PO SID"
+      notes: COX-2 過度表現的腫瘤可能受益。抗腫瘤輔助作用
+  general:
+    - 犬小腫瘤 (<1 cm)：局部切除或區域乳腺切除
+    - 犬大/多發腫瘤：區域或完整乳腺鏈切除
+    - 貓：建議根治性單側乳腺鏈切除 (寬邊緣)
+    - 同時或先行卵巢子宮切除術 (OHE)
+    - 炎性乳癌：手術效果極差，以姑息治療為主
+    - 放射治療 (不完全切除邊緣、不可切除腫瘤)
+
+prognosis: 犬良性腫瘤手術後預後極佳。犬惡性腫瘤預後取決於腫瘤大小 (<3 cm 預後較佳)、組織學分級、淋巴結/血管侵犯。犬惡性腫瘤完全切除後中位存活約 1-2 年。貓乳腺腫瘤預後較差，腫瘤直徑 <2 cm 中位存活約 3 年；2-3 cm 約 2 年；>3 cm 約 4-12 個月。炎性乳癌預後極差 (中位存活數週)。
+
+guidelineRefs:
+  - sourceOrg: ESAVS
+    title: "European Society of Veterinary Oncology — Mammary Tumors Guidelines"
+    url: https://pubmed.ncbi.nlm.nih.gov/28027571/
+    type: guideline
+    pmid: "28027571"
+
+pubmedQueries:
+  - query: '"mammary tumor" AND (dog OR cat OR canine OR feline) AND ("surgery" OR "prognosis" OR "classification")'
+    frequency: monthly

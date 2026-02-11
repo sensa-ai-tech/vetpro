@@ -1,0 +1,138 @@
+slug: myasthenia-gravis
+nameEn: Myasthenia Gravis
+nameZh: 重症肌無力
+bodySystem: neurology
+description: 神經肌肉接合處乙醯膽鹼受體 (AChR) 功能障礙導致的骨骼肌無力疾病，分為先天性與後天性（自體免疫性），後天型為犬最常見的神經肌肉接合處疾病。
+
+aliases:
+  - { alias: MG, language: en }
+  - { alias: Acquired Myasthenia Gravis, language: en }
+  - { alias: Congenital Myasthenia Gravis, language: en }
+  - { alias: 重肌無力症, language: zh }
+  - { alias: 肌無力症, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 後天性 MG 好發品種 — German Shepherd、Golden Retriever、Akita、Labrador Retriever、Dachshund、Scottish Terrier。年齡雙峰分布：幼年型 (1-4 歲) 與老年型 (9-13 歲)。先天性 MG 見於 Jack Russell Terrier、Springer Spaniel、Smooth Fox Terrier，幼犬 6-8 週齡發病。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓罕見。後天性 MG 可發生，常與胸腺瘤相關。Abyssinian 與 Somali 有先天性 MG 報告。
+
+etiology:
+  categories:
+    - name: 後天性（自體免疫性）
+      examples:
+        - 抗 AChR 抗體（最常見，約 85-90%）— IgG 介導的自體免疫攻擊突觸後膜 AChR
+        - 胸腺瘤相關 MG（約 3-5% 犬 MG 合併胸腺瘤）
+        - 副腫瘤症候群（胸腺瘤、膽管細胞癌、骨肉瘤報告）
+        - 藥物誘發（罕見，D-penicillamine、methimazole 報告）
+    - name: 先天性
+      examples:
+        - AChR 缺乏或結構異常（非自體免疫性，AChR 抗體陰性）
+        - 品種相關遺傳缺陷（體染色體隱性遺傳）
+        - Jack Russell Terrier — 突觸前型
+        - Smooth Fox Terrier、Springer Spaniel — 突觸後型 AChR 缺乏
+    - name: 臨床分型
+      examples:
+        - 局灶型 (Focal MG) — 僅侷限食道、咽喉或臉部肌群，約佔後天性 MG 的 43%
+        - 全身型 (Generalized MG) — 四肢與軀幹骨骼肌廣泛受累
+        - 急性暴發型 (Acute Fulminating MG) — 快速進展全身無力伴呼吸肌衰竭
+
+pathophysiology: 後天性 MG 為第 II 型過敏反應（抗體介導的細胞毒殺）。循環中 IgG 抗體與突觸後膜的菸鹼型乙醯膽鹼受體 (nAChR) 結合，透過三種機制破壞神經肌肉傳遞：(1) 補體介導的突觸後膜破壞，加速 AChR 降解；(2) 抗體交聯 AChR，加速受體內化 (antigenic modulation)；(3) 抗體直接阻斷 ACh 與 AChR 結合位點。最終結果為突觸後膜可用 AChR 數量大幅減少，安全因子 (safety factor) 降低，神經肌肉傳遞失敗。食道（犬食道全長為橫紋肌）是最常受累的器官之一，導致巨食道症，進而發生吸入性肺炎。胸腺異常（胸腺瘤或胸腺增生）可能提供自身反應性 T 細胞的活化環境，促進抗 AChR 抗體產生。先天性 MG 為遺傳性 AChR 結構或數量缺陷，無自體免疫成分。
+
+clinicalSigns:
+  early:
+    - 運動不耐受（運動後肌力惡化，休息後改善 — 典型特徵）
+    - 步態僵硬或短步
+    - 反流 (Regurgitation) — 局灶型 MG 可能為唯一症狀
+    - 聲音改變（喉肌受累）
+    - 面部表情減弱
+  progressive:
+    - 全身性肌無力（運動後四肢無力、無法站立）
+    - 巨食道症 (Megaesophagus) — 約 83% 全身型、43% 局灶型
+    - 反覆反流
+    - 咽喉功能障礙（吞嚥困難、流涎）
+    - 頸部屈曲無力（ventroflexion，貓常見）
+    - 眼瞼下垂 (Ptosis)
+    - 體重減輕
+  late:
+    - 吸入性肺炎（最嚴重併發症與常見死因）
+    - 呼吸肌衰竭（肋間肌/橫膈膜無力 — 急性暴發型）
+    - 嚴重消瘦
+    - 臥床不起
+    - 膽鹼激性危象 (Cholinergic Crisis — 抗膽鹼酯酶藥物過量)
+
+diagnosis:
+  primaryTests:
+    - name: AChR 抗體滴度 (Acetylcholine Receptor Antibody Titer)
+      notes: "後天性 MG 確診金標準。敏感度約 85-98%。陽性即確診。犬 >0.6 nmol/L 為陽性。注意：局灶型 MG 約 2-15% 為血清陰性 (seronegative MG)"
+    - name: Edrophonium (Tensilon) 試驗
+      notes: "短效乙醯膽鹼酯酶抑制劑 (0.1-0.2 mg/kg IV)。注射後 30-60 秒觀察肌力改善。陽性結果高度支持 MG 但非確診。需備 Atropine 以防膽鹼激性副作用（心搏過緩、流涎）"
+    - name: 胸腔 X 光
+      notes: "評估巨食道症 (食道空氣擴張)、吸入性肺炎 (右中葉/前腹側浸潤)、前縱膈腔腫塊 (胸腺瘤)"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "巨食道（食道內空氣影）；前縱膈腔腫塊（胸腺瘤 — 所有 MG 犬必須篩檢）；吸入性肺炎分布"
+    - name: 胸腔 CT
+      notes: "胸腺瘤偵測最敏感。評估腫塊大小與侵犯程度。術前必做"
+    - name: 食道造影 (鋇劑吞嚥 / Fluoroscopy)
+      notes: "確認食道蠕動障礙。局灶型 MG 可能 X 光正常但動態造影異常"
+  additional:
+    - CBC、生化 (排除代謝性肌病、甲狀腺功能)
+    - 重複神經刺激 (Repetitive Nerve Stimulation) — 遞減反應 (decrement >10%) 支持 MG
+    - 單纖維肌電圖 (Single Fiber EMG) — jitter 增大，最敏感的電生理檢查
+    - 甲狀腺功能檢查 (MG 與甲低可併存)
+    - 抗橫紋肌抗體 (Anti-striated muscle antibody) — 胸腺瘤相關 MG 常陽性
+
+treatment:
+  principles:
+    - 抗膽鹼酯酶藥物為症狀治療核心
+    - 免疫抑制治療針對自體免疫機制
+    - 巨食道管理（直立餵食）預防吸入性肺炎
+    - 胸腺瘤需手術切除
+    - 約 87% 後天性 MG 犬可自發緩解 (中位時間 6-8 個月)
+  medications:
+    - name: Pyridostigmine Bromide (Mestinon)
+      dose: "犬 1-3 mg/kg PO BID-TID（從低劑量開始逐步調整）；液體劑型 (0.5 mg/kg) 適用於嚴重吞嚥困難病例"
+      notes: 長效乙醯膽鹼酯酶抑制劑，一線症狀治療。增加突觸間隙 ACh 濃度。過量可引起膽鹼激性危象（SLUDGE 症狀：流涎、流淚、排尿、腹瀉、胃腸痙攣、嘔吐）。劑量個體化調整至最佳效果
+    - name: Mycophenolate Mofetil (MMF)
+      dose: "犬 10-20 mg/kg PO BID"
+      notes: 免疫抑制劑，抑制 T、B 淋巴球增殖。起效約 2-4 週。較 Azathioprine 可能更快起效。胃腸副作用為主要問題（腹瀉），從低劑量起始。不引起肝毒性
+    - name: Azathioprine
+      dose: "犬 2 mg/kg PO SID × 2 週後改 QOD"
+      notes: 替代免疫抑制劑。起效慢 (3-6 週)。需定期監測 CBC 與肝功能。貓禁用（骨髓抑制）
+    - name: Prednisolone
+      dose: "犬 0.5-1 mg/kg PO BID（初始），穩定後漸減至 QOD"
+      notes: 爭議性較大。初期可能暫時加重肌無力（使用初期 72-96 小時需住院監測）。與抗膽鹼酯酶藥物併用。部分專家建議避免或延後使用
+    - name: Atropine（急救用）
+      dose: "0.02-0.04 mg/kg IV"
+      notes: 膽鹼激性危象或 Edrophonium 試驗副作用時使用
+  general:
+    - Bailey Chair 直立餵食（巨食道症犬，進食後保持直立 15-30 分鐘）
+    - 飲食調整（泥狀/球狀食物，少量多餐）
+    - 吸入性肺炎積極治療（廣效抗生素 + 支持療法）
+    - 定期追蹤 AChR 抗體滴度（評估緩解趨勢）
+    - 胸腺瘤手術切除（胸骨正中切開術）
+    - 避免使用影響神經肌肉傳遞的藥物（氨基糖苷類抗生素、fluoroquinolone 高劑量、全身麻醉需謹慎）
+    - 先天性 MG 不用免疫抑制，僅 Pyridostigmine 症狀控制
+
+emergencyNotes: 急性暴發型 MG 與肌無力危象 (Myasthenic Crisis) 為急症 — 快速進展全身無力伴呼吸肌衰竭。需立即評估呼吸功能。處理：(1) 氧氣支持/機械通氣（呼吸衰竭時）；(2) Pyridostigmine 注射（Neostigmine 0.01-0.04 mg/kg IM/IV 可用於無法口服時）；(3) 靜脈輸液支持；(4) 吸入性肺炎廣效抗生素。膽鹼激性危象（藥物過量）表現類似但伴 SLUDGE 症狀 — 停用抗膽鹼酯酶藥物 + Atropine。區分肌無力危象與膽鹼激性危象至關重要。
+
+prognosis: 後天性全身型 MG 犬約 87% 可達到臨床緩解（AChR 抗體降至正常），中位緩解時間約 6-8 個月。局灶型 MG 緩解率與時間類似。合併胸腺瘤者切除後部分可緩解，但存活時間受腫瘤本身影響。吸入性肺炎為最主要死因與預後不良因素 — 合併吸入性肺炎的 MG 犬死亡率顯著升高。急性暴發型預後最差。先天性 MG 無法治癒，需終身 Pyridostigmine 管理，但部分犬可維持良好生活品質。貓 MG 預後謹慎，緩解率可能較犬低。
+
+guidelineRefs:
+  - sourceOrg: ACVIM
+    title: "ACVIM Consensus Statement — Diagnosis and Treatment of Myasthenia Gravis in Dogs"
+    url: https://onlinelibrary.wiley.com/doi/10.1111/jvim.15245
+    type: consensus
+  - sourceOrg: JVIM
+    title: "Acquired Myasthenia Gravis in Dogs: Clinical Features and Outcome"
+    url: https://pubmed.ncbi.nlm.nih.gov/9328380/
+    type: guideline
+
+pubmedQueries:
+  - query: '"myasthenia gravis" AND (dog OR canine) AND ("acetylcholine receptor" OR "pyridostigmine" OR "megaesophagus")'
+    frequency: monthly

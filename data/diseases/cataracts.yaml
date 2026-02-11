@@ -1,0 +1,123 @@
+slug: cataracts
+nameEn: Cataracts
+nameZh: 白內障
+bodySystem: ophthalmology
+description: 水晶體或水晶體囊的混濁化，導致光線無法正常透過而造成視力障礙至失明，為犬最常見的致盲性眼疾。
+
+aliases:
+  - { alias: Lens Opacity, language: en }
+  - { alias: 水晶體混濁, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬極為常見。遺傳性白內障好發品種：Cocker Spaniel、Poodle、Boston Terrier、Siberian Husky、Golden Retriever、Labrador Retriever、Bichon Frise。糖尿病犬約 75% 在診斷後一年內發生白內障。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓較少見。多為繼發性 (前葡萄膜炎、外傷、水晶體脫位)。老年性白內障可見但臨床意義通常較犬低。
+
+etiology:
+  categories:
+    - name: 遺傳性/先天性
+      examples:
+        - 品種相關遺傳性白內障 (最常見犬白內障原因)
+        - 先天性白內障 (出生時即存在)
+        - 多基因或單基因遺傳 (依品種而異)
+    - name: 代謝性
+      examples:
+        - 糖尿病性白內障 (犬第二常見原因)
+        - 低鈣血症性白內障
+        - 營養性白內障 (幼犬代乳品缺乏精胺酸/色胺酸)
+    - name: 繼發性
+      examples:
+        - 前葡萄膜炎 (炎症誘發)
+        - 水晶體脫位
+        - 外傷 (水晶體囊破裂)
+        - 視網膜退化 (PRA — progressive retinal atrophy)
+        - 眼內手術後
+    - name: 老年性
+      examples:
+        - 老年性白內障 (age-related)
+        - 須與核硬化 (nuclear sclerosis) 區分
+
+pathophysiology: 水晶體纖維的正常排列與透明度依賴精確的蛋白質結構 (crystallins)、離子平衡與水分調節。白內障形成的核心為水晶體蛋白變性與聚集、氧化損傷及滲透壓失衡。糖尿病性白內障因水晶體內 aldose reductase 將葡萄糖轉化為山梨醇 (sorbitol)，山梨醇無法透過細胞膜導致滲透壓梯度增加，水分流入造成水晶體纖維腫脹與破裂，進展極快 (數天至數週)。成熟白內障可引發水晶體誘發性葡萄膜炎 (lens-induced uveitis, LIU)，因水晶體蛋白外洩引發免疫反應。
+
+clinicalSigns:
+  early:
+    - 水晶體局部混濁 (incipient/immature cataract)
+    - 視力正常或輕度下降
+    - 瞳孔散大後見混濁區域 (slit lamp 下)
+    - 夜間視力下降 (早期)
+  progressive:
+    - 水晶體混濁範圍擴大 (immature → mature)
+    - 明顯視力下降
+    - 碰撞家具、不願走樓梯
+    - 瞳孔區可見白色混濁
+    - 水晶體誘發性葡萄膜炎 (眼紅、眼痛、縮瞳、房水混濁)
+  late:
+    - 完全成熟白內障 (mature — 完全失明)
+    - 過熟白內障 (hypermature — 水晶體皺縮、蛋白質液化)
+    - 嚴重葡萄膜炎
+    - 繼發性青光眼
+    - 水晶體脫位
+
+diagnosis:
+  primaryTests:
+    - name: 裂隙燈生物顯微鏡 (Slit lamp)
+      notes: "白內障分類與分期的金標準。評估混濁位置 (核、皮質、後囊下)、成熟度 (incipient/immature/mature/hypermature) 與併發症"
+    - name: 直接/間接眼底檢查
+      notes: "評估水晶體後方視網膜是否可見 (tapetal reflex)。Immature 可透視眼底，mature 無法"
+    - name: 散瞳眼底檢查
+      notes: "排除 PRA (progressive retinal atrophy) — PRA 繼發的白內障手術效果差。評估視網膜健康"
+  imaging:
+    - name: 眼部超音波 (B-scan)
+      notes: "成熟白內障無法透視眼底時，評估視網膜是否剝離、玻璃體混濁、眼內腫瘤"
+  additional:
+    - 視網膜電圖 (ERG) — 手術前必做，確認視網膜功能正常
+    - 眼壓測量 (排除繼發性青光眼)
+    - 血糖/糖化血色素 (排除糖尿病)
+    - 淚液試驗 (Schirmer tear test) — 術前基線
+    - 前房角評估 (gonioscopy) — 術前
+
+treatment:
+  principles:
+    - 超音波乳化手術 (phacoemulsification) 為唯一有效治療
+    - 術前控制葡萄膜炎為手術成功關鍵
+    - 糖尿病犬需先穩定血糖再手術
+    - 術前完整眼科評估 (ERG + 超音波) 確認手術適應症
+  medications:
+    - name: Prednisolone acetate 1% 眼藥水
+      dose: "Q6-8H (術前 1-2 週開始)"
+      notes: 術前控制水晶體誘發性葡萄膜炎。術後逐漸減量持續數月
+    - name: Diclofenac 0.1% 或 Ketorolac 0.5% 眼藥水
+      dose: "Q8-12H"
+      notes: 非類固醇抗炎。與類固醇眼藥合併使用
+    - name: Tropicamide 1% 眼藥水
+      dose: "Q12-24H PRN"
+      notes: 散瞳。預防虹膜後粘連 (posterior synechia)
+    - name: Ocu-GLO 或 Kinostat (研究中)
+      dose: "依產品說明"
+      notes: 抗氧化補充品或 aldose reductase 抑制劑。可能延緩白內障進展。無法取代手術
+  general:
+    - 超音波乳化手術 (phacoemulsification) + 人工水晶體植入 (IOL implantation)
+    - 術後密集點眼 (抗生素 + 類固醇 + 散瞳) 數週至數月
+    - 術後戴伊莉莎白頸圈 2-3 週
+    - 術後限制活動 2-4 週
+    - 糖尿病犬：血糖控制穩定後再手術
+    - 核硬化不需治療 (正常老化，非白內障)
+
+emergencyNotes: 水晶體誘發性葡萄膜炎若合併繼發性青光眼為急症。處理同青光眼急救 (降眼壓) 加強抗炎治療。白內障合併水晶體脫位至前房亦為急症，需緊急手術。
+
+prognosis: 超音波乳化手術成功率約 85-95% (長期視力恢復)。糖尿病性白內障手術效果與非糖尿病犬相當 (需良好血糖控制)。術後最常見併發症為後囊混濁 (posterior capsule opacification)、持續性葡萄膜炎與視網膜剝離。PRA 犬即使手術視力仍會進行性喪失。未手術的成熟白內障可能因葡萄膜炎與青光眼導致疼痛。
+
+guidelineRefs:
+  - sourceOrg: ACVO
+    title: "ACVO Genetics Committee — Ocular Disorders Presumed to be Inherited in Purebred Dogs"
+    url: https://www.acvo.org
+    type: guideline
+
+pubmedQueries:
+  - query: '"cataract" AND (dog OR canine) AND ("phacoemulsification" OR "surgery" OR "diabetic")'
+    frequency: monthly

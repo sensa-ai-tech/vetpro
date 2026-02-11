@@ -1,0 +1,113 @@
+slug: chocolate-toxicosis
+nameEn: Chocolate Toxicosis
+nameZh: 巧克力中毒
+bodySystem: toxicology
+description: 犬攝入巧克力中的甲基黃嘌呤類物質（theobromine 與 caffeine）導致的中毒。為犬最常見的食物中毒之一，嚴重時可致死。
+
+aliases:
+  - { alias: 巧克力中毒症, language: zh }
+  - { alias: 可可鹼中毒, language: zh }
+  - { alias: Theobromine Toxicosis, language: en }
+  - { alias: Chocolate Poisoning, language: en }
+  - { alias: Methylxanthine Toxicosis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬為最常見受影響物種，因嗜食甜食且 theobromine 代謝較慢（半衰期約 17.5 小時）。小型犬因體重低更容易達到中毒劑量。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓因對甜味不敏感，自願攝入巧克力的機率較低。但貓對甲基黃嘌呤同樣敏感，攝入後亦可中毒。
+
+etiology:
+  categories:
+    - name: 毒性成分
+      examples:
+        - Theobromine（主要毒性成分）
+        - Caffeine（次要毒性成分）
+        - 兩者均為甲基黃嘌呤類 (methylxanthines)
+    - name: 巧克力種類與毒性（theobromine 含量）
+      examples:
+        - 烘焙巧克力 (baking chocolate)：約 390-450 mg/oz，毒性最高
+        - 黑巧克力 (dark chocolate)：約 150-160 mg/oz
+        - 牛奶巧克力 (milk chocolate)：約 44-64 mg/oz
+        - 白巧克力：極少 theobromine，通常無毒性
+        - 可可粉 (cocoa powder)：約 400-737 mg/oz，毒性極高
+    - name: 毒性劑量
+      examples:
+        - 輕度症狀：theobromine 20 mg/kg
+        - 心臟症狀：theobromine 40-50 mg/kg
+        - 癲癇發作：theobromine 60 mg/kg
+        - 致死劑量：theobromine 100-200 mg/kg
+
+clinicalSigns:
+  early:
+    - 嘔吐（通常攝入後 2-4 小時出現）
+    - 下痢
+    - 多渴多尿 (PU/PD)
+    - 躁動不安
+    - 腹脹
+  progressive:
+    - 心搏過速 (tachycardia)
+    - 心律不整（心室早期收縮、心室頻脈）
+    - 高血壓
+    - 高體溫
+    - 過度興奮
+    - 肌肉震顫
+  late:
+    - 癲癇發作
+    - 嚴重心律不整
+    - 心臟衰竭
+    - 昏迷
+    - 死亡（通常在攝入後 12-36 小時）
+
+diagnosis:
+  primaryTests:
+    - name: 病史與暴露評估
+      notes: "確認巧克力種類、攝入量、攝入時間。計算 theobromine 攝入劑量 (mg/kg)"
+    - name: 臨床症狀評估
+      notes: "心率、心律、體溫、神經學狀態"
+  imaging:
+    - name: 腹部 X 光
+      notes: "可見胃內高密度不透光物質（巧克力/錫箔紙包裝）"
+  additional:
+    - 心電圖 (ECG) 監測心律不整
+    - CBC/生化/電解質（評估代謝狀態）
+    - 尿液分析（theobromine 經腎臟排泄，尿中可檢出）
+    - 血清 theobromine/caffeine 濃度（多數臨床情境非必要）
+
+treatment:
+  principles:
+    - 減少毒物吸收為首要目標
+    - 支持性治療與症狀治療
+    - 監測並處理心臟併發症
+    - 促進毒物排泄
+  general:
+    - 催吐 (apomorphine 0.03 mg/kg IV 或結膜囊投予；攝入後 2 小時內最有效)
+    - 活性炭 (activated charcoal 1-2 g/kg PO，可每 4-6 小時重複給予以中斷腸肝循環)
+    - IV 輸液治療（促進腎臟排泄、矯正脫水）
+    - 導尿管放置（theobromine 可經膀胱壁再吸收，頻繁排空膀胱促進排泄）
+    - 心律不整處理 (lidocaine 2 mg/kg IV bolus 犬；atropine 0.02-0.04 mg/kg 治療心搏過緩)
+    - 癲癇控制 (diazepam 0.5-1 mg/kg IV)
+    - 肌肉震顫 (methocarbamol 55-220 mg/kg IV，緩慢給予)
+    - 持續 ECG 監測直至症狀消退
+
+prognosis: 輕度攝入（<20 mg/kg theobromine）預後極佳。中度攝入經積極治療後多數可完全康復。攝入致死劑量且延遲就醫者預後差。theobromine 半衰期長（犬約 17.5 小時），需監測至少 24-72 小時。
+
+guidelineRefs:
+  - sourceOrg: ASPCA APCC
+    title: "Methylxanthine toxicosis in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/23547665/
+    type: review
+    pmid: "23547665"
+  - sourceOrg: Veterinary Clinics
+    title: "Common Toxicologic Issues in Small Animals"
+    url: https://pubmed.ncbi.nlm.nih.gov/16517793/
+    type: review
+    pmid: "16517793"
+
+pubmedQueries:
+  - query: '"chocolate" AND "theobromine" AND (dog OR canine) AND ("toxicosis" OR "poisoning" OR "toxicity")'
+    frequency: monthly

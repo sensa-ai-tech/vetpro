@@ -1,0 +1,94 @@
+slug: fibrocartilaginous-embolism
+nameEn: Fibrocartilaginous Embolism
+nameZh: 纖維軟骨栓塞
+bodySystem: neurology
+description: 纖維軟骨栓塞（FCE）是因椎間盤纖維軟骨物質進入脊髓血管，造成急性脊髓缺血性壞死的疾病。臨床上以突發性、非進行性且通常不對稱的脊髓功能障礙為特徵，常見於大型犬。預後取決於神經缺損的嚴重程度及深層痛覺是否保留。
+
+aliases:
+  - { alias: 纖維軟骨栓塞性脊髓病, language: zh }
+  - { alias: FCE, language: en }
+  - { alias: Fibrocartilaginous Embolic Myelopathy, language: en }
+  - { alias: Ischemic Myelopathy, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 大型及巨型犬較常見，尤其是年輕至中年犬；迷你雪納瑞及雪特蘭牧羊犬等中小型犬也有報告
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓極少發生，偶有個案報告
+
+etiology:
+  categories:
+    - name: 血管栓塞
+      examples:
+        - 椎間盤纖維軟骨物質進入脊髓動脈或靜脈系統
+        - 導致急性脊髓缺血性梗塞
+    - name: 誘發因素
+      examples:
+        - 劇烈運動或輕微外傷可能誘發
+        - 退化性椎間盤變化可能為潛在因素
+
+clinicalSigns:
+  early:
+    - 突發性脊髓功能障礙，通常在數分鐘至數小時內達到最嚴重程度
+    - 疼痛通常僅在發作初期短暫出現
+    - 神經缺損呈不對稱分布（左右不等）
+  progressive:
+    - 發作後24小時內症狀不再惡化（非進行性）
+    - 受影響肢體的本體感覺喪失
+    - 依病灶位置出現上運動神經元或下運動神經元徵象
+  late:
+    - 受損肢體肌肉萎縮
+    - 嚴重病例可出現深層痛覺喪失
+    - 排尿功能障礙（上運動神經元或下運動神經元型膀胱）
+
+diagnosis:
+  primaryTests:
+    - name: 神經學檢查
+      notes: "評估脊髓病灶定位、對稱性及深層痛覺；典型表現為急性發作、非進行性、不對稱的脊髓損傷"
+    - name: 腦脊髓液分析
+      notes: "通常正常或輕微蛋白質升高；主要用於排除感染性及炎症性疾病"
+  imaging:
+    - name: MRI（磁振造影）
+      notes: "首選影像學檢查；T2加權影像可見脊髓內高訊號病灶，通常局限於一至兩個脊椎節段；T1加權通常為等訊號或低訊號"
+    - name: CT 脊髓攝影
+      notes: "可排除壓迫性病變如椎間盤突出；FCE本身在CT上不易直接辨識"
+  additional:
+    - 血液學及生化檢查通常正常
+    - 凝血功能檢查排除凝血障礙
+    - 確定診斷需組織病理學（生前多為推定診斷）
+
+treatment:
+  principles:
+    - 目前無特異性治療，以支持性照護及復健為主
+    - 早期積極物理治療可顯著改善預後
+    - 類固醇治療目前證據不支持其療效
+  general:
+    - 急性期臥床休息及翻身護理（預防褥瘡）
+    - 物理復健治療（水療、被動關節活動、神經肌肉電刺激）
+    - 排尿功能管理（必要時手動擠壓膀胱或導尿）
+    - 軟墊床鋪及身體支撐以防褥瘡
+    - 若有初期疼痛可短期給予 Gabapentin 5-10 mg/kg PO q8-12h
+
+prognosis: 預後取決於神經缺損嚴重程度。保留深層痛覺的病例預後良好，約85%可在數週至數月內恢復行走能力。喪失深層痛覺的病例預後較差，但仍有部分病例可恢復功能性行走。早期積極的物理復健可改善恢復結果。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Clinical Features, MRI Findings, and Outcome in Dogs with Presumptive Fibrocartilaginous Embolic Myelopathy"
+    url: https://pubmed.ncbi.nlm.nih.gov/19175729/
+    type: research
+    pmid: "19175729"
+  - sourceOrg: Veterinary Radiology & Ultrasound
+    title: "MRI Findings in Dogs with Acute Onset of Nonprogressive Spinal Cord Dysfunction Compatible with Ischaemic Myelopathy"
+    url: https://pubmed.ncbi.nlm.nih.gov/16856174/
+    type: research
+    pmid: "16856174"
+
+pubmedQueries:
+  - query: '"fibrocartilaginous embolism" AND (dog OR canine) AND ("MRI" OR "outcome" OR "prognosis")'
+    frequency: monthly
+  - query: '"ischemic myelopathy" AND (dog OR cat) AND ("rehabilitation" OR "recovery")'
+    frequency: monthly
