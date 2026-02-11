@@ -125,6 +125,23 @@ ontologyMappings:
     label: pneumonia
     confidence: exact
 
+
+guidelineRefs:
+  - sourceOrg: Journal of veterinary internal medicine
+    title: "Antimicrobial use Guidelines for Treatment of Respiratory Tract Disease in Dogs and Cats: Antimicrobial Guidelines Working Group of the International Society for Companion Animal Infectious Diseases."
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5354050/
+    type: guideline
+    pmid: "28185306"
+  - sourceOrg: Journal of feline medicine and surgery
+    title: "Streptococcal infections in cats: ABCD guidelines on prevention and management."
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11148926/
+    type: guideline
+    pmid: "26101315"
+  - sourceOrg: HIV medicine
+    title: "Pneumocystis jirovecii pneumonia-Immune reconstitution inflammatory syndrome: A review of published cases."
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12127242/
+    type: review
+    pmid: "40129097"
 pubmedQueries:
   - query: '"pneumonia" AND (dog OR canine OR cat OR feline) AND ("aspiration" OR "bacterial" OR "treatment")'
     frequency: monthly
