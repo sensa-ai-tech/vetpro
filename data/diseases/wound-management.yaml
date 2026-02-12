@@ -44,11 +44,15 @@ etiology:
         - 感染（最常見的癒合障礙原因）
         - 異物殘留
         - 組織缺血或壞死
-        - 過度運動或張力
-        - 營養不良（低白蛋白血症、維生素缺乏）
-        - 免疫抑制（類固醇、化療）
+        - 過度運動或張力（剪力破壞新生血管）
+        - 營養不良（低白蛋白血症 — 血清總蛋白 <2 g/dL 時癒合延遲；DL-methionine 與 cysteine 缺乏影響膠原合成）
+        - 免疫抑制（類固醇顯著抑制微血管生長、成纖維細胞增殖與膠原合成；化療）
         - 糖尿病
         - 腎上腺功能亢進
+        - 貧血（組織低氧影響成纖維細胞活性）
+        - 尿毒症（減緩肉芽組織形成並導致膠原品質下降）
+        - 肥胖（皮下脂肪層血供差且縫合固定力不足）
+        - 溫度因素（理想癒合溫度約 30°C，降至 12°C 可使傷口抗張強度下降 20%）
 
 clinicalSigns:
   early:
@@ -81,6 +85,12 @@ diagnosis:
       notes: "評估骨折、異物（金屬、礫石）、皮下氣腫（提示產氣菌感染或穿透性損傷）。"
     - name: 超音波
       notes: "偵測深部膿瘍、液體蓄積、非金屬異物（木刺、植物碎片）。"
+  differentialDiagnoses:
+    - 皮膚腫瘤 (Cutaneous Neoplasia) — 慢性不癒合傷口需排除
+    - 真菌性皮膚感染 (Fungal Skin Infection)
+    - 免疫介導性皮膚病 (Immune-Mediated Skin Disease)
+    - 異物反應性肉芽腫 (Foreign Body Granuloma)
+    - 深部膿皮症 (Deep Pyoderma)
   additional:
     - CBC（白血球計數與分類，評估感染嚴重程度）
     - 生化（白蛋白、血糖、腎功能，影響癒合因素）
@@ -105,9 +115,11 @@ treatment:
     - "NSAID（術後穩定患者）：Meloxicam 0.1 mg/kg SC 首劑，後 0.05 mg/kg PO SID（貓）"
     - "抗生素（感染傷口）：Amoxicillin-clavulanate 12.5-25 mg/kg PO q12h（咬傷首選）或 Cefazolin 22 mg/kg IV q8h（住院嚴重感染）"
     - "清潔傷口通常不需預防性抗生素；污染或感染傷口需要"
+    - "傷口癒合三階段：(1) 炎症期（止血→嗜中性球→巨噬細胞為主，巨噬細胞為癒合必要細胞）；(2) 增殖期（成纖維細胞於傷後約 3 天出現，分泌基質與膠原；微血管入侵形成肉芽組織）；(3) 重塑期（膠原纖維沿張力線重組，可持續長達 2 年，多數傷口最終強度僅恢復原組織的 80-85%）"
+    - "上皮化（Epithelialization）：基底上皮細胞在傷後數小時內即開始遷移。正確閉合的手術傷口可在 48 小時內完成上皮覆蓋。開放傷口需在健康肉芽組織床上方才能進行上皮化。乾燥環境會延緩上皮化"
     - "Elizabeth collar 防止舔咬傷口"
 
-prognosis: 預後取決於傷口類型、大小、污染程度及處理時機。大多數正確管理的急性傷口癒合良好。貓咬傷膿瘍經切開引流與抗生素治療後預後佳。撕脫傷（degloving）可能需要多次手術與長期照護。慢性不癒合傷口需排除基礎疾病（如內分泌異常）。筋膜壞死性感染為嚴重併發症，死亡率高。營養狀態良好且傷口護理正確的動物癒合最佳。
+prognosis: 預後取決於傷口類型、大小、污染程度及處理時機。特殊組織如膀胱與骨骼癒合後可恢復 100% 原始強度，但多數軟組織傷口最終僅恢復 80-85% 的原始抗張強度。大多數正確管理的急性傷口癒合良好。貓咬傷膿瘍經切開引流與抗生素治療後預後佳。撕脫傷（degloving）可能需要多次手術與長期照護。慢性不癒合傷口需排除基礎疾病（如內分泌異常）。筋膜壞死性感染為嚴重併發症，死亡率高。營養狀態良好且傷口護理正確的動物癒合最佳。
 
 guidelineRefs:
   - sourceOrg: Veterinary Surgery
@@ -131,3 +143,8 @@ pubmedQueries:
     frequency: monthly
   - query: '"bite wound" AND (dog OR cat) AND ("treatment" OR "infection" OR "antibiotic")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "EMG"
+  sectionTitle: "WOUND HEALING"
+  pdfPage: 1743

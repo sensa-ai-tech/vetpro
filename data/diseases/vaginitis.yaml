@@ -39,6 +39,9 @@ etiology:
         - 陰道腫瘤（平滑肌瘤、TVT、纖維瘤）
         - 子宮殘端感染（已絕育犬）
         - 外源性雌激素暴露（尿失禁治療）
+        - 病毒感染（犬疱疹病毒 Canine Herpesvirus）
+        - 雄性素類藥物使用（如 mibolerone）
+        - 性發育異常 / 間性體 (Intersex Conditions)
     - name: 常見感染菌
       examples:
         - 正常陰道菌叢過度增殖（非特異性）
@@ -57,9 +60,10 @@ clinicalSigns:
   progressive:
     - 陰道分泌物增加（黃綠色膿性）
     - 外陰部周圍皮膚發炎/潮濕性皮炎
-    - 頻尿或排尿困難（合併泌尿道感染時）
+    - 頻繁排尿或排尿困難（合併泌尿道感染時）
     - 吸引公犬注意（分泌物氣味）
     - 成年犬可能出現不適或不安
+    - 無全身症狀（無發燒、精神食慾正常）——此特點有助於與開放型子宮蓄膿鑑別
   late:
     - 惡臭大量膿性分泌物（提示嚴重感染或潛在嚴重病因）
     - 全身症狀（發燒、食慾下降——需排除子宮蓄膿或腹腔感染）
@@ -81,10 +85,17 @@ diagnosis:
       notes: "排除子宮殘端蓄膿（已絕育犬）或子宮蓄膿（未絕育犬）"
   additional:
     - 尿液分析與培養（排除泌尿道感染——膀胱穿刺採樣）
-    - 陰道培養（意義有限——正常犬陰道含多種常在菌，需搭配細胞學判讀）
+    - 陰道前段培養（使用保護式無菌培養棉棒採樣；單一菌種大量生長較多種菌少量生長更具臨床意義）
     - Brucella canis 血清學（繁殖犬或有接觸史）
-    - CBC/生化（有全身症狀時）
+    - CBC/生化（有全身症狀時——無全身異常有助於排除子宮蓄膿）
     - 甲狀腺功能（復發性感染的成年犬）
+  differentialDiagnoses:
+    - 開放型子宮蓄膿 (Open-Cervix Pyometra) — 最重要的鑑別診斷
+    - 泌尿道感染 (Urinary Tract Infection)
+    - 陰道腫瘤 (Vaginal Neoplasia)
+    - 子宮殘端感染 (Stump Pyometra)
+    - 陰道異物 (Vaginal Foreign Body)
+    - 外陰皮膚褶皺性皮膚炎 (Vulvar Fold Dermatitis)
 
 treatment:
   principles:
@@ -126,3 +137,8 @@ pubmedQueries:
     frequency: monthly
   - query: '"vaginal discharge" AND (canine OR dog) AND ("cytology" OR "vaginoscopy" OR "anatomy")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "REP"
+  sectionTitle: "VAGINITIS"
+  pdfPage: 1440

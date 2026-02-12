@@ -54,6 +54,7 @@ clinicalSigns:
     - 肌肉抽搐
     - 反應遲鈍
     - 嘔吐
+    - 低血鉀（hypokalemia，尤見於 xylitol 中毒相關低血糖）
   late:
     - 癲癇發作（全身性強直陣攣發作）
     - 昏迷
@@ -81,6 +82,14 @@ diagnosis:
     - 血液培養（懷疑敗血症時）
     - IGF-II 測定（懷疑肝外腫瘤副腫瘤症候群時）
     - 果糖胺（排除慢性低血糖——果糖胺偏低支持）
+  differentialDiagnoses:
+    - 胰島素瘤 (Insulinoma)
+    - 醫源性胰島素過量 (Iatrogenic Insulin Overdose)
+    - 幼犬低血糖 (Juvenile Hypoglycemia)
+    - 狩獵犬運動性低血糖 (Hunting Dog Hypoglycemia)
+    - Xylitol 中毒 (Xylitol Toxicosis)
+    - 腎上腺功能低下 — Addison 病 (Hypoadrenocorticism)
+    - 嚴重肝病或門體分流 (Hepatic Failure / Portosystemic Shunt)
 
 treatment:
   principles:
@@ -98,7 +107,7 @@ treatment:
     - "醫源性：調整胰島素劑量，教育飼主辨識低血糖徵兆"
     - "Addison 病：Desoxycorticosterone pivalate (DOCP) + Prednisolone 補充"
     - "幼犬預防：確保 q4-6h 規律餵食，避免長時間空腹"
-    - "Xylitol 中毒：催吐 + 持續 Dextrose 輸注 + 肝臟保護"
+    - "Xylitol 中毒：僅在無症狀動物嘗試催吐；活性碳對 xylitol 無顯著吸附效果，不建議使用。攝入量 >75-100 mg/kg 需住院監測血糖；>500 mg/kg 需同時監測肝功能指數。持續 Dextrose 輸注 + 肝臟保護。肝損傷徵兆可能延遲至攝入後 24-48 小時才出現"
 
 prognosis: 預後取決於根本原因。醫源性（胰島素過量）經及時矯正後預後良好。幼犬低血糖經適當營養管理後可完全預防復發。胰島素瘤手術後中位存活時間約 12-18 個月（犬），部分可達 2-3 年。嚴重門體分流或肝衰竭相關低血糖預後取決於基礎疾病可治性。敗血症相關低血糖預後謹慎。長時間嚴重低血糖（>30 分鐘）可導致永久性腦損傷。
 
@@ -121,3 +130,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"hypoglycemia" AND (dog OR cat OR canine OR feline) AND ("diagnosis" OR "treatment" OR "insulinoma")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "TOX"
+  sectionTitle: "Clinical Findings: Signs of hypoglycemia"
+  pdfPage: 3009

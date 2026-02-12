@@ -29,7 +29,8 @@ etiology:
         - 液壓煞車液
         - 工業用溶劑
         - 某些除冰劑
-        - 太陽能集熱器液
+        - 太陽能集熱器液與製冰設備用液
+        - 含乙二醇的外用產品（貓可經皮膚吸收中毒）
     - name: 毒性劑量
       examples:
         - "犬最低致死量：約 4.4-6.6 mL/kg（未稀釋防凍液）"
@@ -48,6 +49,8 @@ clinicalSigns:
     - 多飲多尿 (PU/PD)
     - 嗜睡或躁動
     - 呈現類似乙醇中毒的中樞神經抑制
+    - 趾關節屈曲步行 (knuckling)
+    - 翻正反射與縮回反射減弱
   progressive:
     - 心搏過速
     - 呼吸急促（代償性酸中毒所致）
@@ -60,14 +63,15 @@ clinicalSigns:
     - 嚴重代謝性酸中毒（高陰離子間隙）
     - 低血鈣（草酸鈣結晶消耗鈣離子）
     - 腎臟腫大與疼痛
-    - 口腔潰瘍（尿毒症）
+    - 口腔潰瘍與流涎（尿毒症）
+    - 下痢
     - 癲癇發作
     - 昏迷與死亡
 
 diagnosis:
   primaryTests:
     - name: 乙二醇快速檢測
-      notes: "商業檢測試紙 (EGT test kit) 可在攝入後 1-12 小時內偵測。犬敏感度約 96%。注意：propylene glycol 可造成偽陽性"
+      notes: "商業檢測試紙 (EGT test kit) 可在攝入後 1-12 小時內偵測。犬敏感度約 96%。注意：propylene glycol（丙二醇）可造成偽陽性。丙二醇毒性較低但可引起類似急性期症狀"
     - name: 尿液鏡檢
       notes: "偏光顯微鏡下可見草酸鈣一水合物結晶（啞鈴形或信封形）。攝入後 3-6 小時（貓）或 6-8 小時（犬）可見。高度特異性"
     - name: 血氣分析
@@ -77,6 +81,13 @@ diagnosis:
       notes: "腎臟皮質迴音增強（草酸鈣結晶沉積）、腎臟腫大。高度特徵性表現"
     - name: 腹部 X 光
       notes: "腎臟腫大"
+  differentialDiagnoses:
+    - 乙醇中毒 (Ethanol Intoxication)
+    - 丙二醇中毒 (Propylene Glycol Toxicosis)
+    - 急性腎損傷-其他原因 (Acute Kidney Injury - Other Causes)
+    - 百合中毒-貓 (Lily Toxicosis - Cats)
+    - 葡萄/葡萄乾中毒 (Grape/Raisin Toxicosis)
+    - 鉤端螺旋體症 (Leptospirosis)
   additional:
     - 血清滲透壓（早期升高，滲透壓間隙 >10 mOsm/kg）
     - BUN/creatinine（攝入後 24-72 小時開始升高）
@@ -139,3 +150,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"ethylene glycol" AND (dog OR cat OR canine OR feline) AND ("toxicosis" OR "fomepizole" OR "antifreeze" OR "nephrotoxicity")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "TOX"
+  sectionTitle: "TOXICOSIS"
+  pdfPage: 3128

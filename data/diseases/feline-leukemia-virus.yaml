@@ -41,8 +41,9 @@ clinicalSigns:
     - 淋巴結腫大
     - 輕度嗜睡
   progressive:
-    - 反覆感染 (上呼吸道、口腔炎、皮膚感染)
+    - 反覆感染 (上呼吸道、口腔炎、皮膚感染) — 嗜中性球與淋巴球數量減少且功能異常
     - 慢性口腔炎/齒齦炎
+    - 血清補體濃度降低（加劇免疫不全與腫瘤易感性）
     - 體重減輕
     - 貧血 (蒼白黏膜、嗜睡)
     - 慢性下痢
@@ -52,7 +53,9 @@ clinicalSigns:
     - 白血病 (淋巴球性或骨髓性)
     - 嚴重非再生性貧血 (FeLV-C 相關純紅血球再生不良)
     - 嚴重免疫抑制伴機會性感染 (FIP、Toxoplasmosis、Mycoplasma)
+    - 免疫複合物疾病 (全身性血管炎、腎絲球腎炎、多發性關節炎)
     - 神經症狀 (淋巴瘤浸潤、脊髓病變)
+    - 多發性軟骨性外生骨疣 (Multiple Cartilaginous Exostoses / Osteochondromatosis)
     - 骨髓纖維化
 
 diagnosis:
@@ -60,7 +63,7 @@ diagnosis:
     - name: SNAP FeLV 抗原快速檢測 (ELISA)
       notes: "偵測血液中 p27 抗原。敏感度高。篩檢首選。陽性需確認性檢測。退行性感染可能轉陰"
     - name: IFA (免疫螢光抗體法)
-      notes: "偵測白血球/血小板內 FeLV 抗原。陽性表示骨髓感染 (進行性感染)。ELISA 陽性的確認檢測"
+      notes: "偵測白血球/血小板內 FeLV 抗原。陽性表示骨髓感染 (進行性感染)。ELISA 陽性的確認檢測。白血球減少時可能出現偽陰性"
     - name: PCR (前病毒 DNA 或 RNA)
       notes: "最敏感。可偵測退行性感染 (ELISA 陰性但前病毒 DNA 陽性)。區分進行性與退行性感染"
   imaging:
@@ -74,6 +77,14 @@ diagnosis:
     - 細針穿刺 (淋巴結、腫塊 — 細胞學)
     - 骨髓穿刺 (骨髓抑制、白血病評估)
     - 分期檢查 (淋巴瘤分期)
+    - ELISA 與 IFA 結果不一致時（常為 ELISA 陽性、IFA 陰性），建議 30-60 天後以血清重新檢測兩項；幼貓尤其可能在後續檢測轉陰
+  differentialDiagnoses:
+    - 貓免疫不全病毒感染 (FIV Infection)
+    - 特發性免疫介導性溶血性貧血 (Idiopathic IMHA)
+    - 骨髓增生異常症候群 (Myelodysplastic Syndrome)
+    - 淋巴瘤非 FeLV 相關 (FeLV-negative Lymphoma)
+    - 慢性腎病伴非再生性貧血 (CKD with Non-regenerative Anemia)
+    - Mycoplasma haemofelis 感染
 
 treatment:
   principles:
@@ -123,3 +134,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"feline leukemia virus" OR "FeLV" AND ("treatment" OR "prognosis" OR "management")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "GEN"
+  sectionTitle: "Diagnosis: Testing for FeLV infection is"
+  pdfPage: 834

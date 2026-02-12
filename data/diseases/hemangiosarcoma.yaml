@@ -2,7 +2,7 @@ slug: hemangiosarcoma
 nameEn: Hemangiosarcoma
 nameZh: 血管肉瘤
 bodySystem: oncology
-description: 源自血管內皮細胞的高度惡性腫瘤，好發於脾臟、心臟（右心耳）及肝臟，具高度侵犯性與早期轉移傾向。
+description: 源自血管內皮細胞的高度惡性腫瘤，好發於脾臟、心臟（右心耳）及肝臟，具高度侵犯性與早期血行轉移傾向。為犬最重要的內臟惡性腫瘤之一，常見轉移至肝臟、肺臟、大網膜及腦部，亦為犬最常見的腦轉移性腫瘤類型。臨床上常以急性腫瘤破裂出血導致腹腔積血或心包填塞為首發表現。
 
 aliases:
   - { alias: HSA, language: en }
@@ -58,7 +58,8 @@ clinicalSigns:
     - 嚴重貧血
     - DIC (散播性血管內凝血)
     - 腹腔積血
-    - 轉移相關症狀 (呼吸困難 — 肺轉移；神經症狀 — 腦轉移)
+    - 轉移相關症狀 (呼吸困難 — 肺轉移；神經症狀 — 腦轉移，為犬最常見的轉移性腦腫瘤)
+    - 血管炎加重止血障礙
 
 diagnosis:
   primaryTests:
@@ -75,11 +76,19 @@ diagnosis:
       notes: "右心耳腫塊；心包積液。心包填塞時右心房/心室舒張期塌陷"
     - name: 胸腔 X 光
       notes: "肺轉移結節；心影擴大 (心包積液)；胸水"
+  differentialDiagnoses:
+    - 脾臟血腫 (Splenic Hematoma)
+    - 脾臟結節性增生 (Nodular Hyperplasia of Spleen)
+    - 淋巴瘤脾臟型 (Splenic Lymphoma)
+    - 心基底部腫瘤 / 主動脈體瘤 (Heart Base Tumor / Chemodectoma)
+    - 特發性心包積液 (Idiopathic Pericardial Effusion)
+    - 免疫介導性血小板減少 (Immune-Mediated Thrombocytopenia)
   additional:
     - 腹腔積液分析 (PCV >10% 提示積血)
     - 心包穿刺 + 積液分析 (出血性；細胞學敏感度低)
     - 腹部 CT (術前分期)
     - 心肌 troponin I (心肌損傷標記)
+    - 血管肉瘤相關之消耗性血小板減少與 DIC 可導致出血傾向，即使無明顯血小板減少亦可能存在血小板功能異常
 
 treatment:
   principles:
@@ -133,3 +142,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"hemangiosarcoma" AND (dog OR canine) AND ("spleen" OR "cardiac" OR "chemotherapy")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "CIR"
+  sectionTitle: "Neoplasia: Hemangiosarcoma, lym­"
+  pdfPage: 89

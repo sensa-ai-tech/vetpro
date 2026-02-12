@@ -2,7 +2,7 @@ slug: lymphoma
 nameEn: Lymphoma
 nameZh: 淋巴瘤
 bodySystem: oncology
-description: 淋巴球惡性增殖性腫瘤，為犬貓最常見的血液腫瘤，可侵犯全身多種器官與組織。
+description: 淋巴球惡性增殖性腫瘤，為犬貓最常見的血液腫瘤。犬以多中心型（全身淋巴結腫大）最常見，約佔犬淋巴瘤的 80%；貓以消化道型最常見，佔貓淋巴瘤的 50% 以上。免疫表型（B-cell vs T-cell）與組織學分級對預後評估與治療策略選擇至關重要。
 
 aliases:
   - { alias: Lymphosarcoma, language: en }
@@ -55,9 +55,11 @@ clinicalSigns:
   late:
     - 骨髓浸潤 (白血病期：循環腫瘤細胞)
     - 多器官衰竭
-    - 腫瘤旁症候群 (高鈣血症 — T-cell lymphoma)
+    - 腫瘤旁症候群 (高鈣血症 — T-cell lymphoma，可達 30-40%)
     - 嚴重惡病質
-    - CNS 浸潤 (神經症狀)
+    - CNS 浸潤 (神經症狀 — 脈絡叢與腦膜廣泛浸潤為常見模式)
+    - 腎臟浸潤（腎衰竭，貓腎臟型較常見）
+    - 化療後復發通常對原方案反應率降低，需換用救援方案
 
 diagnosis:
   primaryTests:
@@ -72,6 +74,13 @@ diagnosis:
       notes: "肝脾浸潤、腸壁增厚 (消化道型)、腸繫膜淋巴結腫大、腎臟浸潤"
     - name: 胸腔 X 光
       notes: "前縱隔腫塊 (縱隔型)、胸水、氣管支氣管淋巴結腫大"
+  differentialDiagnoses:
+    - 反應性淋巴結增生 (Reactive Lymphoid Hyperplasia)
+    - 感染性淋巴結炎 (Infectious Lymphadenitis)
+    - 多中心型肥大細胞腫瘤 (Systemic Mastocytosis)
+    - 組織球性肉瘤 (Histiocytic Sarcoma)
+    - 炎症性腸病 (Inflammatory Bowel Disease) — 貓消化道型需鑑別
+    - 胸腺瘤 (Thymoma) — 前縱隔腫塊需鑑別
   additional:
     - CBC (循環腫瘤細胞、貧血、血小板減少)
     - 生化 (離子化鈣↑↑ — T-cell；肝指數↑；BUN/Crea)
@@ -122,9 +131,12 @@ treatment:
     - name: Lomustine (CCNU)
       dose: "70-90 mg/m² PO q3wk"
       notes: 救援治療。肝毒性風險，需監測肝指數
+    - name: L-Asparaginase
+      dose: "400 IU/kg IM 或 10,000 IU/m² IM"
+      notes: 常用於 CHOP 首週誘導。與化療合用可提高首次 CR 率。單用 CR 率約 50%，但持續時間短。重複使用效果遞減且過敏風險增加
     - name: Rabacfosadine (Tanovea)
       dose: "1 mg/kg IV q3wk × 5 次"
-      notes: 犬淋巴瘤新型藥物。初治或復發型
+      notes: 犬淋巴瘤新型藥物。初治或復發型。皮膚反應為主要副作用
   general:
     - 高鈣血症處理：IV saline diuresis、furosemide、prednisolone
     - Prednisolone 單藥 (飼主拒絕化療)：中位存活 1-2 個月
@@ -161,3 +173,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"lymphoma" AND (dog OR cat OR canine OR feline) AND ("chemotherapy" OR "CHOP" OR "consensus")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "NER"
+  sectionTitle: "Most CNS lymphomas, Pspecially in dogs,"
+  pdfPage: 1313

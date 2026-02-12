@@ -68,6 +68,8 @@ clinicalSigns:
     - 淺而快速的呼吸
     - 腹式呼吸
     - 端坐呼吸 (orthopnea)
+    - 聽診心音減弱 (muffled heart sounds)
+    - 胸部叩診呈濁音
     - 體重減輕 (慢性病例)
   late:
     - 嚴重呼吸窘迫
@@ -99,6 +101,13 @@ diagnosis:
     - FIP 檢測 (貓：Rivalta test、免疫染色、RT-PCR)
     - 凝血功能 (排除凝血異常性血胸)
     - 三酸甘油酯/膽固醇比 (乳糜液 TG/Chol >1)
+  differentialDiagnoses:
+    - 充血性心衰竭 (Congestive Heart Failure)
+    - 貓傳染性腹膜炎 (Feline Infectious Peritonitis)
+    - 胸腔淋巴瘤 (Thoracic Lymphoma)
+    - 膿胸 (Pyothorax)
+    - 橫膈疝 (Diaphragmatic Hernia)
+    - 肺葉扭轉 (Lung Lobe Torsion)
 
 treatment:
   principles:
@@ -126,7 +135,7 @@ treatment:
     - 低脂飲食 (乳糜胸保守治療期間)
     - 治療根本原因 (心臟病用藥、腫瘤化療)
 
-emergencyNotes: 大量胸腔積液致呼吸窘迫為急症。以最小壓力進行胸腔穿刺 (蝴蝶針或 14-16G 導管，第 7-9 肋間)。先緩解呼吸再做進一步檢查。避免過度保定加重呼吸窘迫。張力性血胸或氣胸需立即引流。
+emergencyNotes: 大量胸腔積液致呼吸窘迫為急症。心衰竭動物出現呼吸困難時應首先排除胸腔積液（尤其貓），超音波為最佳篩檢工具。貓可在檢查室內以蝴蝶針於胸骨臥姿下進行診斷性穿刺。以最小壓力進行胸腔穿刺（蝴蝶針或 14-16G 導管，第 7-9 肋間），盡量抽取液體以緩解呼吸。極度注意避免因保定壓力或拍攝 X 光導致呼吸窘迫動物（尤其貓）死亡。先緩解呼吸再做進一步檢查。張力性血胸或氣胸需立即引流。
 
 prognosis: 取決於根本原因。心因性積液控制心衰竭後可改善。膿胸積極治療存活率約 60-80%。乳糜胸手術 (TDL + 心包膜切除) 成功率約 80-90%。FIP 以 GS-441524 治療反應率約 80%+。惡性積液 (腫瘤) 預後差，多為姑息性管理。
 
@@ -149,3 +158,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"pleural effusion" AND (dog OR cat OR canine OR feline) AND ("diagnosis" OR "treatment" OR "thoracocentesis")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "DIG"
+  sectionTitle: "Lesions: Ascites, hydrothorax, and"
+  pdfPage: 335

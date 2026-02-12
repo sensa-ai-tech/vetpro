@@ -2,7 +2,7 @@ slug: feline-infectious-peritonitis
 nameEn: Feline Infectious Peritonitis
 nameZh: 貓傳染性腹膜炎
 bodySystem: infectious
-description: 由貓冠狀病毒 (FCoV) 突變株引起的致命性全身性免疫介導疾病。近年抗病毒治療帶來革命性改變。
+description: 由貓冠狀病毒 (FCoV) 突變株引起的致命性全身性免疫介導疾病，以血管周圍肉芽腫性炎症與漿膜腔積液為特徵。多貓環境中 FCoV 感染率可高達 90%，但僅不到 5% 的感染貓會發展為 FIP。近年核苷類似物抗病毒治療帶來革命性改變，使原本幾乎 100% 致死的疾病有了治癒的可能。
 
 aliases:
   - { alias: FIP, language: en }
@@ -39,10 +39,18 @@ clinicalSigns:
     - 非滲出型 (dry form)：肉芽腫病變 (眼睛、腎臟、肝臟、CNS)
     - 混合型
     - 黃疸
-    - 眼部病變 (前葡萄膜炎、視網膜血管炎)
+    - 眼部病變 (前葡萄膜炎、視網膜血管炎、視網膜血管周圍灰色袖套狀改變)
+    - 角膜後沉著物 (keratic precipitates)
+    - 前房出血或前房蛋白滲出 (aqueous flare)
+    - 腹腔可觸及腫塊 (網膜或內臟粘連、腸繫膜淋巴結腫大)
+    - 腎臟不規則腫大
   late:
-    - 神經症狀 (步態不穩、癲癇、性格改變)
+    - 神經症狀 (共濟失調最常見，其次為眼球震顫、癲癇、意向性震顫、性格改變)
+    - 顱神經受累 (視覺障礙、威脅反應消失)
+    - CT 可見腦積水 (75% 神經型 FIP 病例)
     - 嚴重腹水/胸水導致呼吸困難
+    - 心包積液 (心音減弱，ECG 與超音波可見特徵性變化)
+    - 孤立性腸壁病變 (可能被誤認為腸道腫瘤)
     - 多器官衰竭
 
 diagnosis:
@@ -59,11 +67,19 @@ diagnosis:
     - name: MRI
       notes: "神經型 FIP：腦膜增強、室管膜炎、腦積水"
   additional:
-    - 免疫組織化學 (FCoV 抗原陽性 — 金標準但需組織樣本)
+    - 組織病理學 (病灶內血管周圍混合性炎症含巨噬細胞、嗜中性球、淋巴球與漿細胞，為病理學確診金標準)
+    - 免疫組織化學 (FCoV 抗原陽性 — 可在病灶巨噬細胞中確認病毒抗原)
     - 血清 FCoV 抗體效價 (高效價提示但非確診)
     - AGP (Alpha-1 acid glycoprotein，急性期蛋白)
     - CBC (淋巴球減少、非再生性貧血)
-    - 眼科檢查
+    - 眼科檢查 (所有疑似 FIP 貓均應進行視網膜檢查)
+  differentialDiagnoses:
+    - 淋巴瘤 (Lymphoma)
+    - 弓漿蟲感染 (Toxoplasmosis)
+    - 貓免疫不全病毒感染 (FIV Infection)
+    - 貓白血病病毒感染 (FeLV Infection)
+    - 全身性黴菌感染 (Systemic Mycosis)
+    - 細菌性膿胸或腹膜炎 (Bacterial Pyothorax/Peritonitis)
 
 treatment:
   principles:
@@ -113,3 +129,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"feline infectious peritonitis" AND ("GS-441524" OR "antiviral" OR "treatment")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "GEN"
+  sectionTitle: "FELINE INFECTIOUS PERITONITIS"
+  pdfPage: 821

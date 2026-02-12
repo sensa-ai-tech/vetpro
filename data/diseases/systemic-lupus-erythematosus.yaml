@@ -43,18 +43,21 @@ clinicalSigns:
     - 嗜睡、食慾下降
     - 皮膚病變（鼻部、耳廓紅斑、潰瘍）
   progressive:
-    - 多發性關節腫脹與疼痛
+    - 多發性關節腫脹與疼痛 (滑膜炎)
     - 蛋白尿（腎絲球腎炎）
     - 貧血（面色蒼白）
     - 淋巴結腫大
-    - 口腔潰瘍
+    - 口腔糜爛與潰瘍
+    - 肌炎 (Myositis)
     - 肌肉萎縮
+    - 血管炎 (皮膚紅斑、四肢遠端與黏膜好發)
   late:
     - 腎衰竭（免疫複合物性腎絲球腎炎）
-    - 嚴重溶血性貧血
-    - 血小板減少性紫斑
-    - 多漿膜炎（胸腔積液、腹水、心包積液）
-    - 神經系統症狀（癲癇、行為改變，罕見）
+    - 嚴重溶血性貧血 (自體免疫性溶血性貧血與血小板減少為最常見的 SLE 表現)
+    - 血小板減少性紫斑 (約 60% 的 IMHA 病例同時伴有血小板減少)
+    - 多漿膜炎（胸膜炎、腹水、心包積液）
+    - 神經炎、腦膜炎、脊髓病變
+    - 神經系統症狀（行為改變、癲癇——類似人類 SLE 精神症狀，動物亦可見）
 
 diagnosis:
   primaryTests:
@@ -75,17 +78,27 @@ diagnosis:
     - 關節液分析 (非感染性炎症：高度嗜中性球但無細菌)
     - 皮膚切片 (真皮表皮交界處免疫球蛋白沉積)
     - LE cell test (已少用，特異度低)
+  differentialDiagnoses:
+    - 類風濕性關節炎 (Rheumatoid Arthritis，糜爛性關節炎)
+    - 特發性免疫介導性多發性關節炎 (Idiopathic IMPA)
+    - 藥物誘發性類狼瘡症候群 (Drug-Induced Lupus-Like Syndrome)
+    - 感染性多發性關節炎 (Septic Polyarthritis)
+    - 免疫介導性溶血性貧血 — 原發性 (Primary IMHA)
+    - 免疫複合物性血管炎 (Immune Complex Vasculitis)
 
 treatment:
   principles:
     - 免疫抑制為治療核心
     - 根據受累器官調整治療強度
     - 長期管理，需定期監測
+    - 初始高劑量每日給藥，緩解後轉為隔日低劑量維持
+    - 藥物治療應在所有臨床症狀消失後持續至少 2-3 個月再考慮停藥
     - 避免不必要的紫外線暴露
   general:
     - Prednisolone 2-4 mg/kg/day PO 起始，穩定後逐漸減量至最低有效劑量
     - Azathioprine 2 mg/kg PO q24h (犬，作為類固醇節約劑)
     - Mycophenolate mofetil 10-20 mg/kg PO q12h (替代 azathioprine)
+    - Cyclophosphamide 50 mg/m² PO 隔日 或每週 4 天 (用於單純 glucocorticoid 難以控制的病例，可與 azathioprine 合併使用)
     - Cyclosporine 5 mg/kg PO q12h (皮膚或腎臟受累時)
     - 腎絲球腎炎需加用 ACE inhibitor (benazepril 0.5 mg/kg PO q12-24h)
     - 抗血栓預防 (低劑量 aspirin 0.5-1 mg/kg q24h 或 clopidogrel 2 mg/kg q24h，蛋白流失性腎病患者)
@@ -93,7 +106,7 @@ treatment:
     - 避免紫外線暴露 (防曬、限制戶外活動時間)
     - 定期監測 CBC、生化、UPC
 
-prognosis: SLE 為慢性復發性疾病，需終生管理。腎絲球腎炎為最重要的預後決定因子，嚴重蛋白尿與氮血症者預後差。對免疫抑制治療反應良好者可維持數年良好生活品質。免疫介導性血小板減少或溶血性貧血可能致命。整體中位存活時間約 1-5 年不等。
+prognosis: SLE 為慢性復發性疾病，需終生管理。腎絲球腎炎為最重要的預後決定因子，嚴重蛋白尿與氮血症者預後差；貓 SLE 中腎絲球腎炎為主要致死性併發症。自體免疫性溶血性貧血與血小板減少為最常見的臨床表現，亦可能致命。對免疫抑制治療反應良好者（尤其免疫複合物型或自體抗體型為主者）可維持數年良好生活品質。藥物誘發性血管炎在停藥後通常可改善。整體中位存活時間約 1-5 年不等，取決於受累器官與治療反應。
 
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Internal Medicine
@@ -115,3 +128,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"systemic lupus erythematosus" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "diagnosis" OR "consensus")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "IMM"
+  sectionTitle: "Systemic Lupus Erythematosus (SL E):"
+  pdfPage: 870

@@ -20,6 +20,10 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 慢性腎臟病貓極為常見（約 20-30% CKD 貓）。Burmese 品種有家族性低鉀血症肌病。特徵性頸部腹屈（ventroflexion）為貓低鉀血症的經典表現。
+  - speciesCommon: cattle
+    speciesScientific: Bos taurus
+    prevalence: common
+    notes: 食慾不振超過 2 天的成年牛（尤其泌乳牛）常見低鉀血症，因泌乳額外流失鉀離子。使用具礦物皮質激素活性的類固醇（如 isoflupredone acetate 治療酮病）後可引發嚴重低鉀血症肌病。血清鉀 <2.5 mmol/L 時出現嚴重肌無力與臥倒不起。
 
 etiology:
   categories:
@@ -27,7 +31,8 @@ etiology:
       examples:
         - 慢性腎臟病（貓尤其常見，腎小管鉀回收能力下降）
         - Loop diuretics（furosemide）
-        - 腎上腺功能亢進（Cushing's — 皮質醇具弱 mineralocorticoid 效果）
+        - 腎上腺功能亢進（Cushing's — 皮質醇具弱 mineralocorticoid 效果，促進腎臟與腸道鉀排泄）
+        - 外源性礦物皮質激素類固醇使用（如牛酮病治療用 isoflupredone acetate）
         - 腎小管性酸中毒（RTA）
         - 術後利尿期
     - name: 胃腸道流失
@@ -62,10 +67,11 @@ clinicalSigns:
     - 腸蠕動減少（ileus）
     - 心律不整
   late:
-    - 呼吸肌無力（呼吸困難）
-    - 橫紋肌溶解（CK 升高）
+    - 呼吸肌無力（呼吸困難 — 低鉀血症最危急的臨床表現）
+    - 橫紋肌溶解（CK 升高，肌肉生檢可見空泡性肌病）
     - 嚴重心律不整（心房/心室期外收縮、心房顫動）
     - 低鉀性腎病（慢性低鉀血症導致腎小管空泡化）
+    - 代謝性鹼中毒（低鉀與鹼中毒互為因果，形成惡性循環）
 
 diagnosis:
   primaryTests:
@@ -78,6 +84,13 @@ diagnosis:
   imaging:
     - name: 胸腔 X 光
       notes: "評估心臟大小（利尿劑相關低鉀血症）。嚴重低鉀可見腸蠕動減少/ileus"
+  differentialDiagnoses:
+    - 多發性神經根神經炎 (Polyradiculoneuritis)
+    - 重症肌無力 (Myasthenia Gravis)
+    - 肉毒桿菌中毒 (Botulism)
+    - 蛇咬傷 (Snake Envenomation)
+    - 蜱麻痺 (Tick Paralysis)
+    - 低鈣血症 (Hypocalcemia)
   additional:
     - 全血計數與生化（BUN/Creatinine 評估腎功能）
     - 尿液分析（尿比重低提示腎濃縮功能障礙）
@@ -112,8 +125,10 @@ treatment:
     - 飲食調整（高鉀飲食/腎臟處方飼料）
     - 監測血鉀每 4-6 小時直到穩定
     - Burmese 品種低鉀血症：長期口服補鉀可有效控制
+    - 牛低鉀血症肌病：KCl IV (16 g/100 kg) 合併 PO (26 g/100 kg) 連續約 5 天。同時處理原發酮病與食慾不振
+    - 具礦物皮質激素活性的類固醇（如 isoflupredone acetate）應謹慎使用——單次注射可使血鉀降低 25%，兩次注射可降低 46%
 
-prognosis: 輕至中度低鉀血症經適當補充預後極佳。CKD 貓的低鉀血症可透過長期口服補充有效管理。DKA 治療相關的低鉀血症在適當監測補充下預後良好。嚴重低鉀血症（<2.0 mEq/L）伴呼吸肌無力者需緊急處理。Burmese 家族性低鉀血症肌病在長期口服補鉀下可完全控制，但需終身補充。
+prognosis: 輕至中度低鉀血症經適當補充預後極佳。CKD 貓的低鉀血症可透過長期口服補充有效管理。DKA 治療相關的低鉀血症在適當監測補充下預後良好。嚴重低鉀血症（<2.0 mEq/L）伴呼吸肌無力者需緊急處理。Burmese 家族性低鉀血症肌病在長期口服補鉀下可完全控制，但需終身補充。牛低鉀血症肌病存活率報告差異大（22-79%），預後取決於嚴重程度與原發病因能否解決。全身鉀平衡的恢復可能困難，血清鉀濃度不一定反映肌肉鉀含量。
 
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
@@ -133,3 +148,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"hypokalemia" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "ventroflexion" OR "CKD")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "MET"
+  sectionTitle: "HYPOKALEMIA IN ADULT CATTLE"
+  pdfPage: 1045

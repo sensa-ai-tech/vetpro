@@ -53,10 +53,11 @@ clinicalSigns:
   progressive:
     - 共濟失調（步態不穩）
     - 凝視牆壁或角落（頭部壓牆 head pressing）
-    - 方向感喪失
-    - 視力異常（皮質性失明）
-    - 攻擊性增加或異常溫順
+    - 方向感喪失、強迫性繞圈行走
+    - 視力異常（皮質性失明 — amaurosis）
+    - 攻擊性增加或異常溫順（行為突然改變）
     - 嘔吐、下痢
+    - 症狀常於進食高蛋白飲食後加重，為 HE 的重要臨床特徵
   late:
     - 癲癇發作（全身性）
     - 昏迷（肝昏迷）
@@ -76,6 +77,13 @@ diagnosis:
       notes: "評估肝臟大小（PSS 常肝臟偏小）、門靜脈血流方向、異常分流血管。腎臟可能高迴音（腎髓質鈣化）。後天性：門靜脈高壓、腹水"
     - name: CT 血管攝影（CTA）
       notes: "門體分流的定位金標準。清楚顯示分流血管走行。術前計畫必要"
+  differentialDiagnoses:
+    - 癲癇（原發性/特發性）(Idiopathic Epilepsy)
+    - 低血糖腦病 (Hypoglycemic Encephalopathy)
+    - 中毒性腦病 (Toxic Encephalopathy)
+    - 腦炎/腦膜腦炎 (Encephalitis/Meningoencephalitis)
+    - 門脈性高血壓 (Portal Hypertension)
+    - 鉛中毒 (Lead Poisoning)
   additional:
     - CBC（微小紅血球症——PSS 特徵、標靶細胞）
     - 生化（BUN 偏低、白蛋白偏低、血糖偏低、肝酵素輕度升高）
@@ -93,12 +101,17 @@ treatment:
     - PSS 手術為根治方法
   general:
     - "Lactulose 0.5 mL/kg PO q8-12h（調整劑量使每日排軟便 2-3 次）"
-    - "急性嚴重 HE：Lactulose 溫水灌腸 10-20 mL/kg（1:3 稀釋溫水），留置 20-30 分鐘"
+    - "急性嚴重 HE：Lactulose 溫水灌腸 10-20 mL/kg（3 份 lactulose : 7 份溫水），以 Foley 導管留置 15-20 分鐘"
+    - "替代灌腸方案：10% povidone-iodine 溶液 20 mL/kg（留置 10-15 分鐘後充分沖洗）、neomycin 22 mg/kg 混水灌腸、或稀釋 metronidazole 7.5 mg/kg 混水 10-20 mL/kg 灌腸，每 8 小時重複至神經反應改善"
     - "抗生素減少腸道產氨菌：Metronidazole 7.5 mg/kg PO q12h 或 Amoxicillin 20 mg/kg PO q12h"
+    - "Neomycin 22 mg/kg PO q8-12h（替代方案）：注意合併炎症性腸病時 neomycin 全身吸收增加，有腎毒性與耳毒性風險"
+    - "Metronidazole 不可超過 7.5 mg/kg q8h（口服 + 灌腸合計）：過量有醫源性神經毒性風險（初期表現為前庭症狀）"
     - "Rifaximin 5 mg/kg PO BID（非吸收性抗生素，人醫 HE 標準用藥，獸醫使用增加中）"
     - "低蛋白飲食：蛋白質限制至 14-18% DM（以高品質植物蛋白與乳製品蛋白為主）"
-    - "靜脈輸液：避免含乳酸林格氏液（乳酸需肝臟代謝），使用 0.45% NaCl + 2.5% Dextrose"
-    - "矯正促發因素：補鉀（低鉀促進腎臟氨生成）、止血（GI 出血）、治療感染"
+    - "靜脈輸液：避免含乳酸林格氏液（乳酸需肝臟代謝，肝衰竭時可致乳酸酸中毒），使用 0.45% NaCl + 2.5% Dextrose 加 KCl 與維生素 B 群。須監測血漿滲透壓避免低滲性腦水腫"
+    - "矯正促發因素：補鉀（低鉀促進腎臟氨生成）、止血（GI 出血）、治療感染、矯正脫水/氮血症、停用可能加重 HE 的藥物（benzodiazepines、barbiturates、抗組織胺、有機磷）"
+    - "維持瘦體組織（肌肉量）：骨骼肌是肝臟以外最重要的氨代謝場所（glutamine 合成），肝功能不全動物必須避免過度蛋白質限制導致肌肉流失"
+    - "口服益生菌（Lactobacillus、Bifidobacterium 活菌製劑或活性優格）可協助競爭性抑制產氨腸道菌群，為輔助治療選項"
     - "癲癇控制：Levetiracetam 20 mg/kg IV/PO q8h（避免 Phenobarbital——需肝臟代謝）"
     - "Propofol CRI 0.1-0.6 mg/kg/min（嚴重癲癇持續狀態，短效不依賴肝臟代謝）"
     - "PSS 手術矯正：Ameroid constrictor 或 Cellophane banding（先天性單一分流）"
@@ -124,3 +137,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"hepatic encephalopathy" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "lactulose" OR "portosystemic shunt")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "DIG"
+  sectionTitle: "HEPATIC ENCEPHALOPATHY"
+  pdfPage: 484

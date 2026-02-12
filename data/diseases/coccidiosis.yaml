@@ -47,6 +47,7 @@ clinicalSigns:
     - 糞便量增加
     - 輕度腹脹
     - 食慾下降
+    - 發燒（輕度，部分病例）
   progressive:
     - 血性下痢（黏液血便）
     - 嘔吐
@@ -54,12 +55,15 @@ clinicalSigns:
     - 體重減輕
     - 發育遲緩
     - 被毛粗糙
+    - 裏急後重（大腸受累明顯時）
+    - 肛門周圍糞便污染
   late:
     - 嚴重脫水與電解質失衡
     - 嚴重消瘦
     - 貧血（嚴重出血性腸炎時）
     - 腸套疊（罕見併發症）
     - 繼發性細菌感染
+    - 繼發性肺炎（嚴重消耗性病例）
 
 diagnosis:
   primaryTests:
@@ -72,6 +76,13 @@ diagnosis:
   imaging:
     - name: 腹部超音波
       notes: "非特異性。嚴重病例可見腸壁增厚、腸管擴張及腸蠕動增加。主要用於排除其他消化道疾病（如腸套疊）。"
+  differentialDiagnoses:
+    - 梨形鞭毛蟲症 (Giardiasis)
+    - 犬小病毒腸炎 (Canine Parvoviral Enteritis)
+    - 沙門氏菌症 (Salmonellosis)
+    - 鉤蟲感染 (Hookworm Infection)
+    - 胎兒三毛滴蟲症 (Tritrichomonosis)
+    - 飲食不當性腸炎 (Dietary Indiscretion)
   additional:
     - 全血球計數：通常正常，嚴重出血病例可見貧血
     - 血液生化：嚴重脫水時可見電解質異常、BUN 升高（腎前性）
@@ -92,6 +103,8 @@ treatment:
     - "止吐劑：Maropitant 1 mg/kg SC q24h（嘔吐嚴重時）"
     - "環境消毒：10% 氨水溶液或蒸氣清潔可破壞卵囊"
     - "幼犬幼貓斷奶轉運時可預防性給予 Ponazuril"
+    - "禁用糖皮質激素（可增加卵囊排放並使亞臨床感染轉為臨床疾病）"
+    - "群居環境爆發時：隔離患畜、降低密度、飲水及飼料容器架高避免糞便污染"
 
 prognosis: 免疫健全的幼犬幼貓經適當治療後預後極佳，多數在治療後 2-5 天內下痢改善。嚴重脫水及電解質失衡若及時矯正，恢復良好。免疫抑制或嚴重合併感染者預後較差。致死案例主要見於極幼齡（< 4 週齡）且未及時治療的動物。成年動物預後極佳。
 
@@ -116,3 +129,8 @@ pubmedQueries:
     frequency: monthly
   - query: '"Cystoisospora" AND (veterinary OR dog OR cat) AND "diagnosis"'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "DIG"
+  sectionTitle: "COCCIDIOSIS"
+  pdfPage: 244

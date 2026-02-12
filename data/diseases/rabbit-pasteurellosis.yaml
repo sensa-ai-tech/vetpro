@@ -50,8 +50,10 @@ clinicalSigns:
     - 膿胸
     - 生殖道感染 (子宮蓄膿、睾丸炎)
     - 敗血症
+    - 化膿性多發性關節炎（慢性病例，一或多個關節腫脹）
     - 化膿性腦膜炎
     - 骨髓炎
+    - 心包炎與胸膜炎（嚴重肺部感染擴散）
 
 diagnosis:
   primaryTests:
@@ -72,6 +74,13 @@ diagnosis:
     - 膿瘍穿刺細胞學 (變性嗜中性球與細菌)
     - 鼓室穿刺 (中耳炎確診與取樣)
     - 淚管沖洗 (評估淚管通暢性)
+  differentialDiagnoses:
+    - Bordetella bronchiseptica 呼吸道感染 (Bordetellosis)
+    - 黴漿菌呼吸道感染 (Mycoplasma spp.)
+    - Staphylococcus aureus 膿瘍 (Staphylococcal Abscess)
+    - 齒根膿瘍 (Dental Abscess)
+    - 胸腺瘤 (Thymoma) — 呼吸困難之鑑別
+    - 兔出血症病毒 (Rabbit Hemorrhagic Disease)
 
 treatment:
   principles:
@@ -82,7 +91,7 @@ treatment:
   medications:
     - name: Enrofloxacin
       dose: "10-20 mg/kg PO BID"
-      notes: 對 P. multocida 效果佳。避免用於幼兔 (軟骨毒性)。長期使用注意腸道菌叢失調
+      notes: 對 P. multocida 效果佳。避免用於幼兔 (軟骨毒性)。長期使用注意腸道菌叢失調。近年觀察到 Pasteurella spp. 對部分抗生素的抗藥性有上升趨勢，藥敏試驗更為重要
     - name: Penicillin G (Procaine/Benzathine)
       dose: "42,000-84,000 IU/kg SC q48-72h"
       notes: 對 P. multocida 敏感性高。僅限皮下注射，絕不可口服 (致死性腸炎)
@@ -103,7 +112,7 @@ treatment:
     - 環境改善 (通風、降低氨氣、減少緊迫)
     - 隔離新進兔 (減少傳播)
 
-prognosis: 上呼吸道感染 (snuffles) 經適當抗生素治療多可控制，但根除困難，復發率高。皮下膿瘍完整摘除預後良好。中耳炎需手術者預後中等至良好。肺炎與敗血症預後較差。帶原狀態通常終身存在。
+prognosis: 上呼吸道感染 (snuffles) 經適當抗生素治療多可控制，但根除困難，復發率高。皮下膿瘍完整摘除預後良好。中耳炎需手術者預後中等至良好。肺炎與敗血症預後較差。慢性胸腔病變與多發性關節炎可作為長期後遺症持續存在。早期積極治療有助於預防慢性併發症的發生。帶原狀態通常終身存在。
 
 guidelineRefs:
   - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
@@ -120,3 +129,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"Pasteurella multocida" AND "rabbit" AND ("treatment" OR "management" OR "snuffles")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "DIG"
+  sectionTitle: "INFECTION"
+  pdfPage: 525

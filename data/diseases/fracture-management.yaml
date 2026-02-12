@@ -54,6 +54,7 @@ clinicalSigns:
     - 瘀血 (皮下出血)
     - 拒絕使用患肢
     - 開放性骨折：骨頭穿出皮膚或傷口與骨折處相通
+    - 神經血管損傷徵兆（遠端肢體冰冷、無脈搏、深部痛覺消失）
   late:
     - 骨不癒合 (nonunion，>6 個月無癒合跡象)
     - 延遲癒合 (delayed union)
@@ -74,6 +75,13 @@ diagnosis:
       notes: "分類：閉鎖/開放、橫向/斜向/螺旋/粉碎、骨幹/骨骺/關節內。Salter-Harris 分類 (生長板骨折)"
     - name: CT 掃描
       notes: "複雜關節內骨折、骨盆骨折、脊椎骨折的精確評估。術前計畫"
+  differentialDiagnoses:
+    - 關節脫位/半脫位 (Luxation/Subluxation)
+    - 韌帶撕裂 (Ligament Rupture)
+    - 軟組織創傷/挫傷 (Soft Tissue Trauma/Contusion)
+    - 病理性骨折合併骨腫瘤 (Pathologic Fracture with Bone Neoplasia)
+    - 全身性代謝性骨病 (Metabolic Bone Disease)
+    - 骨髓炎 (Osteomyelitis)
   additional:
     - CBC + 生化 (術前基線、創傷後評估)
     - 凝血功能 (多發性創傷/大量出血)
@@ -106,6 +114,9 @@ treatment:
     - "手術固定方式 — 內固定：骨板螺釘 (bone plate/screw，最常用)、髓內釘 (intramedullary pin)、互鎖釘 (interlocking nail)、環形外固定器 (circular external fixator)"
     - "手術固定方式 — 外固定：Type I/II/III 外固定器 (external skeletal fixator, ESF)，適用於開放性骨折與軟組織損傷嚴重者"
     - "保守治療 (外固定/石膏)：穩定、非移位的遠端肢骨折。幼犬不完全骨折"
+    - "骨折評估分數（Fracture Assessment Score）：根據動物年齡、健康狀態、骨折類型與位置綜合評分，決定固定方式的選擇與穩定性需求"
+    - "生物學骨固定原則（Biological Osteosynthesis）：複雜粉碎性骨折不追求每個碎片的解剖復位，而是恢復骨長度、軸線與旋轉對位，保留碎片血供促進間接癒合"
+    - "骨移植（Bone Graft）：自體松質骨移植適用於骨缺損 >3 cm 或不癒合/延遲癒合病例，最常取自肱骨近端或脛骨近端"
     - 術後 X 光追蹤 (術後立即、4-6 週、8-12 週)
     - 物理復健 (被動關節活動、水中跑步機、治療性超音波)
     - 營養支持 (充足蛋白質與鈣磷平衡)
@@ -134,3 +145,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"fracture" AND (dog OR cat OR canine OR feline) AND ("fixation" OR "treatment" OR "bone plate" OR "external fixator")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "EXL"
+  sectionTitle: "MANAGEMENT"
+  pdfPage: 1897

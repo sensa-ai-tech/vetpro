@@ -77,6 +77,13 @@ diagnosis:
       notes: "非侵蝕性：關節積液、軟組織腫脹、無骨侵蝕。侵蝕性 (類風濕)：軟骨下骨侵蝕、關節面破壞、半脫位"
     - name: 胸腹 X 光/超音波
       notes: "排除潛在感染灶或腫瘤 (II/IV 型 IMPA)"
+  differentialDiagnoses:
+    - 敗血性關節炎 (Septic Arthritis)
+    - 全身性紅斑狼瘡 (Systemic Lupus Erythematosus)
+    - 退化性關節疾病 (Degenerative Joint Disease)
+    - 萊姆病 (Lyme Disease)
+    - 多發性骨髓瘤 (Multiple Myeloma)
+    - 類風濕性關節炎 (Rheumatoid Arthritis)
   additional:
     - 類風濕因子 (RF) 與 ANA (侵蝕性型可陽性)
     - 壁蝨傳播疾病 4DX SNAP (Borrelia, Ehrlichia, Anaplasma)
@@ -103,6 +110,9 @@ treatment:
     - name: Mycophenolate mofetil
       dose: "10-20 mg/kg PO BID"
       notes: 替代免疫抑制選擇。腸胃副作用較常見
+    - name: Cyclophosphamide
+      dose: "200-300 mg/m² PO 每 3 週一次，或 50 mg/m² PO 隔日 × 4 日/週"
+      notes: 難治性病例的免疫抑制選擇。需監測 CBC（骨髓抑制）。長期使用有出血性膀胱炎風險，應限制療程
   general:
     - 排除潛在原因 (感染、腫瘤、消化道疾病)
     - 感染性關節炎：適當抗生素治療 4-8 週
@@ -134,3 +144,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"immune-mediated polyarthritis" AND (dog OR canine) AND ("treatment" OR "diagnosis" OR "prognosis")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "MUS"
+  sectionTitle: "POLYARTHRITIS"
+  pdfPage: 1239

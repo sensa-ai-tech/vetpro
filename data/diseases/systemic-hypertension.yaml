@@ -47,9 +47,9 @@ clinicalSigns:
     - 輕微精神變化
     - 多飲多尿（可能為基礎疾病症狀）
   progressive:
-    - 急性失明（視網膜剝離或出血）
+    - 急性失明（視網膜剝離或出血）——為最常見的臨床表現
     - 前房出血（hyphema）
-    - 視網膜血管迂曲
+    - 視網膜病變（出血、剝離、動脈迂曲、局部或瀰漫性水腫）——約 80% 高血壓貓可見視網膜病灶
     - 蛋白尿加重
     - 心雜音或奔馬律
     - 左心室肥大
@@ -77,6 +77,16 @@ diagnosis:
     - "T4 測定：貓必做，排除甲狀腺功能亢進"
     - "低劑量 dexamethasone suppression test 或 ACTH stimulation test：疑似 Cushing's 時"
     - "IRIS CKD 分期與高血壓亞分期"
+    - 血壓測量非獸醫學的常規篩檢工具——僅建議對已知高血壓相關疾病族群進行篩檢
+    - 建議在啟動降壓治療前確認存在標的器官損傷（如高血壓性視網膜病變）
+  differentialDiagnoses:
+    - 白袍效應 — 環境緊迫性暫時血壓升高 (White Coat Hypertension)
+    - 疼痛性血壓升高 (Pain-Induced Hypertension)
+    - 慢性腎病 (Chronic Kidney Disease)
+    - 甲狀腺功能亢進 — 貓 (Hyperthyroidism)
+    - 腎上腺功能亢進 — Cushing 氏症 (Hyperadrenocorticism)
+    - 嗜鉻細胞瘤 (Pheochromocytoma)
+    - 原發性醛固酮增多症 (Primary Hyperaldosteronism)
 
 treatment:
   principles:
@@ -85,10 +95,11 @@ treatment:
     - 目標降壓至 < 140 mmHg（避免急速降壓）
     - 定期監測血壓與 TOD
   general:
-    - "貓首選：Amlodipine 0.125-0.25 mg/kg PO SID（起始 0.625 mg/cat SID，7-14 天未達標可增至 1.25 mg/cat）"
-    - "犬首選：Amlodipine 0.1-0.5 mg/kg PO SID（可與 ACE inhibitor 合用）"
+    - "貓首選：Amlodipine 0.125-0.25 mg/kg PO SID（起始 0.625 mg/cat SID，7-14 天未達標可增至 1.25 mg/cat）。其他藥物如 enalapril、diltiazem、β-阻斷劑、利尿劑對貓之降壓效果普遍不佳"
+    - "犬首選：Amlodipine 0.1-0.5 mg/kg PO SID（可與 ACE inhibitor 合用）。犬貓高血壓主要由全身小動脈收縮所致，僅強效動脈擴張劑方能有效降壓"
     - "ACE 抑制劑：Benazepril 0.25-0.5 mg/kg PO SID-BID 或 Enalapril 0.5 mg/kg PO SID-BID（特別適用於蛋白尿病例）"
     - "頑固性高血壓追加：Telmisartan 1 mg/kg PO SID（貓，ARB 類）"
+    - "犬替代用藥：Prazosin 1-4 mg（總劑量）PO SID-BID 或 Phenoxybenzamine 0.25-2 mg/kg PO BID（後者較昂貴，常用於嗜鉻細胞瘤但對其他原因之高血壓亦有效）"
     - "高血壓危象（SBP ≥ 200 mmHg + 急性 TOD）：Amlodipine 即刻給藥 + Hydralazine 0.5-2 mg/kg PO（犬）"
     - "治療甲亢（貓）：Methimazole 2.5 mg PO BID 起始"
     - "血壓監測：啟動治療後 1-2 週回診，穩定後每 1-3 個月追蹤"
@@ -118,3 +129,8 @@ pubmedQueries:
     frequency: monthly
   - query: '"hypertension" AND (cat OR feline) AND ("amlodipine" OR "target organ damage")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "EMG"
+  sectionTitle: "Systemic hypertension,"
+  pdfPage: 1741

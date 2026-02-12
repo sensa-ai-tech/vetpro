@@ -28,6 +28,7 @@ etiology:
       examples:
         - 大多數病例原因不明
         - 可能與基因突變累積相關
+        - 所有軟組織肉瘤被認為起源自原始間葉幹細胞，可向多種方向分化
     - name: 注射部位相關（貓）
       examples:
         - 疫苗或其他注射（如長效類固醇）部位的慢性發炎反應
@@ -68,6 +69,13 @@ diagnosis:
       notes: "評估腫瘤範圍及與周圍結構的關係，對術前規劃至關重要（特別是肢體及頭頸部腫瘤）"
     - name: 腹部超音波
       notes: "完整分期檢查的一部分，評估腹腔淋巴結及器官轉移"
+  differentialDiagnoses:
+    - 脂肪瘤 (Lipoma)
+    - 肥大細胞瘤 (Mast Cell Tumor)
+    - 血管周圍壁細胞瘤 (Perivascular Wall Tumor)
+    - 組織球肉瘤 (Histiocytic Sarcoma)
+    - 淋巴瘤皮膚型 (Cutaneous Lymphoma)
+    - 注射部位肉芽腫 (Injection Site Granuloma)
   additional:
     - 區域淋巴結細針吸取（排除淋巴結轉移）
     - 組織學分級（Grade I/II/III 基於有絲分裂指數、壞死程度及分化程度）
@@ -86,7 +94,9 @@ treatment:
     - 術後放射治療劑量：通常54-63 Gy，分15-21次
     - 化療（高分級腫瘤）：Doxorubicin 30 mg/m² IV q21d（5-6個週期）
     - 口服化療選擇：Cyclophosphamide 12.5-25 mg/m² PO q48h 節拍式化療
+    - Carboplatin 300 mg/m² IV q21d（替代 doxorubicin 的化療選擇，腎毒性較低）
     - Toceranib（Palladia）2.5-3.25 mg/kg PO q48h 部分亞型可能有效
+    - 電化學治療（Electrochemotherapy）：切緣不足時的輔助局部治療選項
     - 疼痛管理根據需要：Tramadol 3-5 mg/kg PO q8-12h 或 Gabapentin 5-10 mg/kg PO q8-12h
     - 注射部位肉瘤（貓）：需更激進的手術（5 cm邊界），建議CT術前規劃
 
@@ -118,3 +128,8 @@ pubmedQueries:
     frequency: monthly
   - query: '"injection site sarcoma" AND (cat OR feline) AND ("treatment" OR "prognosis")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "ITG"
+  sectionTitle: "Peripheral Nerve Sheath Tumors"
+  pdfPage: 999

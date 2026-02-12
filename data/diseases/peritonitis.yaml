@@ -2,7 +2,7 @@ slug: peritonitis
 nameEn: Peritonitis
 nameZh: 腹膜炎
 bodySystem: emergency
-description: 腹膜腔的急性或慢性炎症反應，可由感染性（如腸穿孔、子宮蓄膿破裂）或非感染性（如尿腹、膽汁性腹膜炎）原因引起。敗血性腹膜炎為致死率極高的急症。
+description: 腹膜腔漿膜層的急性或慢性炎症反應，依病因可分為原發性（血行性感染，較少見）與繼發性（腹腔臟器穿孔、破裂或外傷，較常見）。敗血性腹膜炎為致死率極高的外科急症，需緊急剖腹探查；非敗血性（化學性）腹膜炎如膽汁外漏或尿腹亦需及時處理。貓的傳染性腹膜炎（FIP）為一種特殊型態的原發性病毒性腹膜炎。
 
 aliases:
   - { alias: 敗血性腹膜炎, language: zh }
@@ -30,13 +30,21 @@ etiology:
         - 子宮蓄膿破裂
         - 肝膿瘍破裂
         - 穿通性腹部創傷（咬傷、銳器傷）
+        - 腸缺血/壞死（腸繫膜扭轉、腸套疊後）導致細菌經腸壁移行
+        - 腹壁傷口裂開（術後 dehiscence）引入外界微生物
     - name: 非敗血性 (Aseptic)
       examples:
-        - 膽汁性腹膜炎 (膽囊破裂或膽道損傷)
+        - 膽汁性腹膜炎 (膽囊破裂或膽道損傷 — 犬常見於膽囊黏液囊腫壁缺血壞死)
         - 尿腹 (uroabdomen，膀胱或輸尿管破裂)
         - 胰臟炎波及腹膜
         - 腫瘤破裂出血
         - 化學性刺激 (鋇劑外漏)
+    - name: 原發性腹膜炎
+      examples:
+        - 貓傳染性腹膜炎（FIP — 貓冠狀病毒突變株）
+        - Nocardia spp 感染
+        - Mycobacterium spp 感染
+        - 免疫功能低下動物的血行性細菌播散
 
 clinicalSigns:
   early:
@@ -44,12 +52,15 @@ clinicalSigns:
     - 嘔吐
     - 食慾廢絕
     - 發燒
+    - 膽汁性腹膜炎初期症狀可能僅有模糊不適與輕度食慾減退
   progressive:
     - 嚴重腹脹
     - 脫水
     - 心搏過速
     - 嗜睡與虛弱
     - 腹部觸診疼痛反應劇烈
+    - 膽汁性腹膜炎：漸進性黃疸、腹水蓄積（膽汁刺激引發化學性炎症反應）
+    - 腹膜粘連形成（延遲診斷時）
   late:
     - 敗血性休克
     - 低體溫
@@ -69,9 +80,18 @@ diagnosis:
       notes: "可見游離腹水、腸壁增厚、腹膜增厚。可引導穿刺取樣"
     - name: 腹部 X 光
       notes: "可見腹部漿膜面細節消失、游離氣體（腸穿孔）。腹部 detail loss 為典型表現"
+  differentialDiagnoses:
+    - 急性胰臟炎 (Acute Pancreatitis)
+    - 腸阻塞/扭轉 (Intestinal Obstruction/Volvulus)
+    - 脾臟扭轉 (Splenic Torsion)
+    - 腹腔腫瘤 (Abdominal Neoplasia)
+    - 泌尿道阻塞 (Urinary Obstruction)
+    - 貓傳染性腹膜炎 (Feline Infectious Peritonitis, FIP)
   additional:
     - CBC (嗜中性球升高伴左移，或嗜中性球減少提示耗竭)
     - 生化 (BUN/Cr 升高提示尿腹；膽紅素升高提示膽汁性腹膜炎)
+    - 膽汁性腹膜炎特殊檢測：腹水膽紅素 > 血清膽紅素 2 倍以上高度提示膽道破裂
+    - 貓 FIP 相關：腹水白蛋白/球蛋白比值（<0.4 提示 FIP）、Rivalta's test、FCoV RT-PCR
     - 乳酸 (升高與預後相關)
     - 凝血功能 (PT/aPTT，評估 DIC)
 
@@ -84,6 +104,8 @@ treatment:
   general:
     - 積極 IV 晶體液輸液復甦 (10-20 mL/kg bolus 評估反應)
     - 廣效抗生素組合 (ampicillin 22 mg/kg IV q8h + enrofloxacin 5-10 mg/kg IV q24h + metronidazole 10 mg/kg IV q12h)
+    - 替代抗生素方案：piperacillin-tazobactam 或第三代頭孢菌素 (cefotaxime 50 mg/kg IV q8h) 合併 metronidazole（涵蓋腸源性革蘭氏陰性菌與厭氧菌）
+    - 膽汁性腹膜炎：術前即開始抗生素覆蓋，確認敗血性後持續 4-8 週，依培養與細胞學結果調整
     - 緊急剖腹探查 (找到穿孔處、沖洗腹腔、修補或切除病灶)
     - 腹腔沖洗 (大量溫生理食鹽水)
     - 嚴重病例考慮開放腹腔引流 (open abdomen management)
@@ -113,3 +135,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"peritonitis" AND (dog OR cat OR canine OR feline) AND ("septic" OR "treatment" OR "outcome")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "GEN"
+  sectionTitle: "PERITONITIS"
+  pdfPage: 711

@@ -43,7 +43,7 @@ etiology:
         - 敗血症/DIC
         - 腎上腺功能亢進
 
-pathophysiology: 左心房擴大導致血流瘀滯，合併心內膜損傷與凝血活化（Virchow's triad），促使血栓在左心房（尤其左心耳）形成。血栓脫落後沿主動脈流動，最常栓塞於腹主動脈三叉（iliac trifurcation，形成 saddle thrombus）。栓塞造成遠端組織急性缺血。此外，血栓釋放血管活性物質（serotonin、thromboxane A2）引起側枝動脈痙攣，加劇缺血範圍。再灌注損傷（reperfusion injury）在血栓溶解後可導致高鉀血症、乳酸酸中毒、橫紋肌溶解及急性腎損傷。
+pathophysiology: 左心房擴大導致血流瘀滯，合併心內膜損傷與凝血活化（Virchow's triad），促使血栓在左心房（尤其左心耳）形成。當左心房擴大時，血流速度下降至臨界值以下，紅血球聚集可在超音波上可視化為自發性迴音對比（spontaneous echo contrast/smoke）。血栓脫落後沿主動脈流動，由於多數血栓體積大而無法進入主動脈分支，最終栓塞於腹主動脈三叉（iliac trifurcation，形成 saddle thrombus）。值得注意的是，ATE 亦可發生於無明顯左心房擴大的貓，甚至偶見於心臟結構正常的貓。栓塞造成遠端組織急性缺血。此外，血栓釋放血管活性物質（serotonin、thromboxane A2）引起側枝動脈痙攣，加劇缺血範圍遠超原始栓塞部位。再灌注損傷（reperfusion injury）在血栓溶解後可導致高鉀血症、乳酸酸中毒、橫紋肌溶解及急性腎損傷。
 
 clinicalSigns:
   early:
@@ -59,6 +59,8 @@ clinicalSigns:
     - 指甲切開不出血
     - 心搏過速/心律不整
     - 心雜音或奔馬音
+    - 非典型栓塞部位：小型血栓可進入冠狀動脈造成心肌梗塞；中型血栓可栓塞頭臂幹（右前肢）或腸繫膜動脈（急性腹痛）
+    - 患肢上方（髖/膝關節以上）仍可活動但遠端（踝以下）完全無運動功能
   late:
     - 患肢組織壞死
     - 再灌注損傷（高鉀血症、代謝性酸中毒、橫紋肌溶解）
@@ -82,6 +84,12 @@ diagnosis:
       notes: "主動脈分叉處可見高回音血栓。評估腎灌流"
     - name: CT 血管攝影
       notes: "可精確定位血栓位置與範圍，但急性期通常不需要"
+  differentialDiagnoses:
+    - 脊髓損傷/椎間盤疾病 (Spinal Cord Injury/Intervertebral Disc Disease)
+    - 外傷性後肢損傷 (Traumatic Hindlimb Injury)
+    - 髂股動脈血栓（非心因性）(Non-cardiogenic Iliac-Femoral Thrombosis)
+    - 急性多發性神經根神經炎 (Acute Polyradiculoneuritis)
+    - 腹主動脈腫瘤 (Aortic Neoplasia)
   additional:
     - 電解質（K+、pH — 高鉀血症為再灌注後主要風險）
     - CK（肌酸激酶 — 橫紋肌溶解指標，通常顯著升高 >10,000 IU/L）
@@ -155,3 +163,8 @@ pubmedQueries:
     frequency: monthly
   - query: '"FATE" AND feline AND ("cardiomyopathy" OR "HCM" OR "guidelines")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "EXL"
+  sectionTitle: "Copper Sulfate: Copper sulfate (CuSO,)"
+  pdfPage: 1793

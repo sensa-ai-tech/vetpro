@@ -2,7 +2,7 @@ slug: leptospirosis
 nameEn: Leptospirosis
 nameZh: 鉤端螺旋體病
 bodySystem: infectious
-description: 由鉤端螺旋體 (Leptospira spp.) 引起的人畜共通傳染病，主要侵犯腎臟與肝臟，可導致急性腎損傷、肝衰竭與肺出血。
+description: 由鉤端螺旋體 (Leptospira spp.) 引起的人畜共通傳染病，主要侵犯腎臟與肝臟，可導致急性腎損傷、肝衰竭與肺出血。本病透過接觸受感染動物尿液污染的水源或環境傳播，全球分佈，為犬重要的系統性感染症之一。血清學診斷以顯微凝集試驗 (MAT) 配對血清為標準方法，但結果判讀需考量疫苗接種史及血清型交叉反應。
 
 aliases:
   - { alias: Lepto, language: en }
@@ -76,12 +76,21 @@ diagnosis:
       notes: "腎臟腫大/皮質回音增加 (AKI)、腎周滲出液。肝臟腫大。評估併發症 (胰臟炎)"
     - name: 胸腔 X 光
       notes: "肺出血時可見瀰漫性肺泡型浸潤"
+  differentialDiagnoses:
+    - 急性腎損傷其他病因 (Acute Kidney Injury — other causes)
+    - 犬傳染性肝炎 (Infectious Canine Hepatitis)
+    - 免疫介導性溶血性貧血 (Immune-Mediated Hemolytic Anemia)
+    - 中毒性肝病 (Toxic Hepatopathy)
+    - 敗血症 (Sepsis)
+    - 巴貝西蟲症 (Babesiosis)
   additional:
     - CBC (血小板減少、白血球增多或減少)
     - 凝血功能 (DIC 篩檢)
     - 電解質 (常見高磷低鉀)
     - 乳酸 (組織灌流評估)
     - 尿液沉渣鏡檢 (顆粒管型)
+    - 組織免疫螢光染色或免疫組化（可在組織、血液或尿沉渣中鑑定鉤端螺旋體）
+    - 尿液或血液培養（唯一可確定感染血清型的方法，但耗時且抗生素治療後培養率下降）
 
 treatment:
   principles:
@@ -141,3 +150,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"leptospirosis" AND (dog OR canine) AND ("treatment" OR "acute kidney injury" OR "prognosis")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "GEN"
+  sectionTitle: "Diagnosis: Diagnosis of leptoEl>Pirosis"
+  pdfPage: 689

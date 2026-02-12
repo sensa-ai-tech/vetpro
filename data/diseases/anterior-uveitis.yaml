@@ -76,6 +76,13 @@ diagnosis:
       notes: "評估後眼房結構、排除視網膜剝離、眼內腫塊或水晶體脫位"
     - name: 胸腹腔 X 光
       notes: "排除全身性腫瘤或黴菌感染（肺部病灶）"
+  differentialDiagnoses:
+    - 原發性青光眼 (Primary Glaucoma)
+    - 角膜潰瘍 (Corneal Ulcer)
+    - 水晶體脫位 (Lens Luxation)
+    - 眼內腫瘤 (Intraocular Neoplasia)
+    - 結膜炎 (Conjunctivitis)
+    - 角膜基質炎 (Stromal Keratitis)
   additional:
     - 前房液穿刺細胞學（選擇性，排除淋巴瘤或感染）
     - 眼底鏡檢查（評估後葡萄膜炎、視網膜受累）
@@ -93,8 +100,11 @@ treatment:
     - 全身性 NSAIDs（Meloxicam 犬 0.1 mg/kg PO q24h；貓 0.05 mg/kg PO q24-48h）用於非感染性病因
     - 全身性類固醇（Prednisolone 1-2 mg/kg PO q12h，逐漸減量）用於嚴重免疫介導性病例
     - 感染性病因需針對性抗微生物治療（如 Doxycycline 5-10 mg/kg PO q12h 治療蜱媒疾病）
+    - 結膜下注射類固醇（Triamcinolone 4-8 mg 或 Methylprednisolone 4-8 mg）用於嚴重免疫介導性葡萄膜炎或需減少全身用藥時
+    - 免疫介導性難治型可併用 Azathioprine（犬 2 mg/kg PO SID）輔助長期控制
     - 繼發性青光眼需加用降眼壓藥物（Dorzolamide 2% q8h，Timolol 0.5% q12h）
     - 水晶體誘發性葡萄膜炎可考慮白內障超音波乳化術
+    - 提供遮光環境以減輕畏光不適
     - 定期追蹤眼壓與炎症程度
 
 prognosis: 預後取決於潛在病因與治療的及時性。特發性與外傷性葡萄膜炎經積極治療後預後較好。感染性病因在根除感染後通常可控制。免疫介導性可能需要長期藥物管理。繼發性青光眼與白內障是最常見的長期併發症，可能永久影響視力。早期診斷與積極治療是保留視力的關鍵。
@@ -125,3 +135,8 @@ pubmedQueries:
     frequency: monthly
   - query: '"uveitis" AND (canine OR feline) AND ("lens-induced" OR "immune-mediated" OR "infectious")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "EMG"
+  sectionTitle: "ANTERIOR UVEITIS"
+  pdfPage: 1740

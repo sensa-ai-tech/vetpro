@@ -86,6 +86,13 @@ diagnosis:
       notes: "評估基礎疾病（腸壁增厚提示 IBD、肝臟變化提示脂肪肝等）。可見腹水（低白蛋白性）。"
     - name: 胸腔 X 光
       notes: "評估心臟大小（心肌萎縮）、肺部（感染）。"
+  differentialDiagnoses:
+    - 外分泌胰臟功能不全 (Exocrine Pancreatic Insufficiency)
+    - 腎上腺皮質功能不全 (Hypoadrenocorticism)
+    - 糖尿病 (Diabetes Mellitus)
+    - 炎症性腸病 (Inflammatory Bowel Disease)
+    - 腫瘤惡病質 (Cancer Cachexia)
+    - 蛋白流失性腸病 (Protein-Losing Enteropathy)
   additional:
     - 全血球計數（貧血、淋巴球減少提示免疫低下）
     - 生化全套（BUN 偏低、膽固醇偏低、血糖偏低、電解質異常）
@@ -100,6 +107,7 @@ treatment:
     - 緩慢漸進式增加營養攝取
     - 治療基礎疾病
     - 監測電解質（磷、鉀、鎂）
+    - 維持瘦體組織量（lean body mass）以確保氨代謝與整體代謝功能
   general:
     - "再餵食症候群預防（關鍵）：嚴重營養不良動物開始餵食前，先矯正脫水與電解質異常"
     - "起始熱量：從靜止能量需求（RER）的 25-33% 開始，每 12-24 小時增加 25%，3-5 天內達到完整 RER"
@@ -111,6 +119,8 @@ treatment:
     - "維生素 B 群補充：Thiamine (B1) 25-50 mg/day（犬）、12.5-25 mg/day（貓），預防 Wernicke's encephalopathy"
     - "Cobalamin (B12) 補充：250 μg（貓）或 250-1500 μg（犬）SC 每週一次 × 6 週"
     - "白蛋白補充（嚴重低白蛋白 < 1.5 g/dL）：25% human albumin 稀釋至 5% 緩慢 IV"
+    - "n-3 脂肪酸補充（EPA/DHA）：可降低促炎性細胞激素、改善食慾，尤其適用於心臟惡病質與腫瘤惡病質患者"
+    - "食慾促進劑使用須謹慎：可能延遲正規營養支持的啟動。Diazepam/Oxazepam 在貓罕見但可引發特發性猛暴性肝衰竭"
     - "治療基礎疾病：驅蟲、IBD 治療、EPI 酵素補充等"
 
 prognosis: 預後取決於基礎原因與營養不良的嚴重程度。單純攝取不足（如救援動物）經適當漸進式營養復原後預後良好。慢性疾病相關的營養不良預後取決於基礎疾病的可治療性。癌症惡病質預後通常較差。再餵食症候群若未預防可致命（嚴重低磷血症、心律不整、呼吸衰竭）。住院患者及時啟動營養支持可顯著改善預後。
@@ -137,3 +147,8 @@ pubmedQueries:
     frequency: monthly
   - query: '"cachexia" AND (dog OR cat) AND ("treatment" OR "nutrition" OR "guidelines")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "DIG"
+  sectionTitle: "NUTRITION"
+  pdfPage: 480

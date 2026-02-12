@@ -15,11 +15,11 @@ species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
-    notes: 非常常見，急性結腸炎多為壓力性、飲食性或感染性。慢性結腸炎以淋巴球-漿細胞性或組織球性潰瘍性結腸炎為主。Boxer 好發組織球性潰瘍性結腸炎 (HUC)。
+    notes: 非常常見，急性結腸炎多為壓力性、飲食性或感染性。慢性結腸炎以淋巴球-漿細胞性或組織球性潰瘍性結腸炎為主。Boxer 好發組織球性潰瘍性結腸炎 (HUC)。結腸炎與肛周瘻管可能同時存在，尤見於 German Shepherd。多數患犬為中年。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
-    notes: 常見。常為 IBD 的一部分。需與大腸型淋巴瘤鑑別（尤其老貓）。梨形鞭毛蟲 (Tritrichomonas foetus) 為貓隻重要病因。
+    notes: 常見。常為 IBD 的一部分。需與大腸型淋巴瘤鑑別（尤其老貓）。梨形鞭毛蟲 (Tritrichomonas foetus) 為貓隻重要病因。慢性結腸炎貓多為中年，純種貓佔較高比例。貓高嗜酸性球症候群為嗜酸性腸炎的一種變體，嗜酸性球浸潤可累及肝、脾、腎、腎上腺及心臟。
 
 etiology:
   categories:
@@ -40,9 +40,9 @@ etiology:
     - name: 免疫介導/特發性
       examples:
         - 淋巴球-漿細胞性結腸炎（最常見的慢性型態）
-        - 嗜酸性結腸炎
-        - 組織球性潰瘍性結腸炎 (HUC)（Boxer、French Bulldog 好發）
-        - 肉芽腫性結腸炎
+        - 嗜酸性結腸炎（患犬傾向較年輕，感染、寄生蟲或食物過敏可能為誘因，治療反應較差）
+        - 組織球性潰瘍性結腸炎 (HUC)（Boxer、French Bulldog 好發，與大腸桿菌侵入結腸黏膜巨噬細胞相關）
+        - 肉芽腫性結腸炎（需排除真菌感染、寄生蟲、FIP 及異物所致之繼發性肉芽腫）
     - name: 其他
       examples:
         - 結腸腫瘤（腺癌、淋巴瘤）
@@ -82,12 +82,19 @@ diagnosis:
     - name: 腹部 X 光
       notes: "排除異物、阻塞。急性結腸炎通常 X 光無特異發現"
   additional:
-    - CBC、生化（通常正常；HUC 可見貧血）
+    - CBC、生化（通常正常；HUC 可見貧血；嗜酸性結腸炎可見血液嗜酸性球增多）
     - Spec cPL/fPL（排除胰臟炎）
     - 糞便 PCR dysbiosis index（犬）
     - 食物排除試驗（排除食物反應性）
     - 直腸指診（觸及腫塊、狹窄、增厚）
     - FISH 檢測（Boxer HUC 與 E. coli 黏膜侵入相關）
+  differentialDiagnoses:
+    - 結腸腫瘤 — 腺癌或淋巴瘤 (Colonic Neoplasia)
+    - 鞭蟲感染 (Trichuris vulpis Infection)
+    - 直腸息肉 (Rectal Polyp)
+    - 過敏性腸病 (Irritable Bowel Syndrome)
+    - 纖維結腸性便秘 (Obstipation / Megacolon)
+    - 肛門腺疾病 (Anal Sac Disease)
 
 treatment:
   principles:
@@ -144,3 +151,8 @@ pubmedQueries:
     frequency: monthly
   - query: '"large bowel diarrhea" AND (dog OR cat) AND ("diagnosis" OR "fiber" OR "management")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "DIG"
+  sectionTitle: "COLITIS"
+  pdfPage: 418

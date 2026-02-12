@@ -50,6 +50,7 @@ clinicalSigns:
     - 躁動不安
     - 蕁麻疹（面部水腫、搔癢）
     - 心搏過速
+    - 流涎
   progressive:
     - 血紅素尿（紅棕色尿液）
     - 黃疸（溶血性）
@@ -83,6 +84,13 @@ diagnosis:
     - CBC（PCV 輸血後未升高或反而下降提示溶血性反應）
     - 電解質（鈣、鉀）
     - 血液培養（懷疑細菌汙染時）
+  differentialDiagnoses:
+    - 免疫介導性溶血性貧血 (Immune-Mediated Hemolytic Anemia)
+    - 過敏性休克 — 非輸血相關 (Anaphylaxis)
+    - 敗血症 (Sepsis)
+    - 急性肺水腫 — 心因性 (Cardiogenic Pulmonary Edema)
+    - 枸櫞酸鹽中毒 (Citrate Toxicity)
+    - 輸血相關循環超負荷 vs 輸血相關急性肺損傷 (TACO vs TRALI 鑑別)
 
 treatment:
   principles:
@@ -115,7 +123,7 @@ treatment:
 
 emergencyNotes: 急性溶血反應為輸血最嚴重併發症。立即停止輸血、維持靜脈通路。積極 crystalloid bolus 維持腎灌流。過敏性休克給予 epinephrine。Type B 貓誤輸 Type A 血可在數分鐘內死亡。
 
-prognosis: 發燒性非溶血性反應與輕度過敏反應預後極佳。急性溶血性反應若及時停止輸血並積極處理，多數可存活，但併發 DIC 或急性腎衰竭者預後差。TRALI 死亡率可達 5-10%。預防勝於治療——輸血前血型鑑定與配血檢測可大幅降低風險。
+prognosis: 發燒性非溶血性反應與輕度過敏反應預後極佳，通常可在處理後繼續使用不同血品。急性溶血性反應若及時停止輸血並積極輸液保護腎臟，多數可存活，但併發 DIC 或急性腎衰竭者預後差。延遲性溶血反應通常於輸血後 2-21 天發生，多為自限性但需密切觀察。TRALI 死亡率可達 5-10%。Type B 貓具有高效價天然抗 A 抗體，首次誤輸 Type A 血即可在數分鐘內致命，凸顯貓輸血前血型鑑定的絕對必要性。預防勝於治療——輸血前血型鑑定與配血檢測可大幅降低風險。
 
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
@@ -137,3 +145,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"transfusion reaction" AND (dog OR cat OR canine OR feline) AND ("hemolytic" OR "crossmatch" OR "blood type")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "EE"
+  sectionTitle: "Australian Shepherds. Specific therapy"
+  pdfPage: 534

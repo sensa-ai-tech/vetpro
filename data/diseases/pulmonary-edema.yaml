@@ -54,7 +54,7 @@ clinicalSigns:
   progressive:
     - 明顯呼吸困難 (dyspnea)
     - 端坐呼吸 (orthopnea)
-    - 肺部濕囉音 (crackles)
+    - 肺部濕囉音 (crackles)——注意：肺水腫聽診可能無異常（silent），細囉音多在深吸氣末才能聽到
     - 心搏過速
     - 開口呼吸 (貓)
     - 咳出粉紅色泡沫狀分泌物 (嚴重)
@@ -80,12 +80,21 @@ diagnosis:
       notes: "快速偵測 B-lines (肺間質液體)。可在未穩定前床旁執行。不需特殊保定"
     - name: 心臟超音波 (FOCUS/完整)
       notes: "FOCUS 快速評估 LA 大小及心包膜積液。穩定後完整 ECHO 評估"
+  differentialDiagnoses:
+    - 肺炎 (Pneumonia)
+    - 肺栓塞 (Pulmonary Thromboembolism)
+    - 胸腔積液 (Pleural Effusion)
+    - 肺腫瘤 (Pulmonary Neoplasia)
+    - 氣管塌陷 (Tracheal Collapse)
+    - 慢性支氣管炎 (Chronic Bronchitis)
   additional:
     - SpO2/動脈血氣分析
     - CBC/生化 (肝腎功能、電解質)
     - 心電圖 (心律不整評估)
     - 血壓測量
     - 凝血功能 (懷疑 DIC/ARDS)
+    - 聽診鑑別要點：粗囉音 (coarse crackles) 在犬最常見於慢性支氣管炎而非肺水腫；腹部聽診消失提示胸腔積液
+    - 肝頸靜脈回流試驗 (hepatojugular reflux)：腹水合併頸靜脈怒張提示右心衰竭
 
 treatment:
   principles:
@@ -141,3 +150,8 @@ pubmedQueries:
     frequency: monthly
   - query: '"pulmonary edema" AND (dog OR canine OR cat OR feline) AND ("non-cardiogenic" OR "ARDS" OR "neurogenic")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "CIR"
+  sectionTitle: "Respiratory Sounds: Pulmonary edema"
+  pdfPage: 131

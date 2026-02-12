@@ -57,6 +57,7 @@ clinicalSigns:
     - 嗜睡、食慾下降
     - 淋巴結腫大
     - 肌肉萎縮
+    - 頸部疼痛與僵硬（椎間關節受累時）
   late:
     - 嚴重關節變形（糜爛型）
     - 關節不穩定與半脫位（糜爛型）
@@ -73,6 +74,13 @@ diagnosis:
   imaging:
     - name: 關節 X 光
       notes: "非糜爛型：軟組織腫脹，無骨變化。糜爛型：骨質溶解、關節面不規則、半脫位、骨質增生"
+  differentialDiagnoses:
+    - 敗血性關節炎 (Septic Arthritis)
+    - 退化性關節疾病 (Degenerative Joint Disease)
+    - 全身性紅斑狼瘡 (Systemic Lupus Erythematosus)
+    - 萊姆病 (Lyme Disease)
+    - 多發性骨髓瘤 (Multiple Myeloma)
+    - 貓慢性進行性多發性關節炎 (Feline Chronic Progressive Polyarthritis)
   additional:
     - CBC (輕度非再生性貧血、嗜中性球升高)
     - 生化 (通常正常或輕微異常)
@@ -96,13 +104,14 @@ treatment:
     - Cyclosporine 5 mg/kg PO q12h (替代或輔助)
     - Mycophenolate mofetil 10-20 mg/kg PO q12h (難治型)
     - Leflunomide 2-4 mg/kg PO q24h (對其他藥物反應不佳時)
+    - Cyclophosphamide 200-300 mg/m² PO 每 3 週 (頑固性免疫介導型，需注意骨髓抑制與出血性膀胱炎風險)
     - 止痛 (gabapentin 5-10 mg/kg PO q8-12h 輔助)
     - 物理治療與復健 (被動關節活動、水療)
     - 反應性 IMPA 需同時治療原發感染
     - 糜爛型預後較差，可能需要更積極的免疫抑制
     - 定期追蹤關節液分析 (治療後 2-4 週、減藥前)
 
-prognosis: 特發性非糜爛型 IMPA 對免疫抑制治療反應良好，約 50-70% 可達到緩解。復發率約 30-50%，復發時通常需要再次開始免疫抑制。反應性 IMPA 治療原發病因後預後良好。糜爛型（類風濕性關節炎）預後差，關節損傷為不可逆，長期管理困難。
+prognosis: 整體預後為謹慎（guarded），復發常見。特發性非糜爛型 IMPA 對免疫抑制治療反應良好，約 50-70% 可達到緩解。復發率約 30-50%，復發時通常需要再次開始免疫抑制。反應性 IMPA 治療原發病因後預後良好。糜爛型（類風濕性關節炎）預後差，關節損傷為不可逆，長期管理困難。貓慢性進行性多發性關節炎的侵蝕性型預後亦不佳。
 
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Internal Medicine
@@ -124,3 +133,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"immune-mediated polyarthritis" OR "idiopathic polyarthritis" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "outcome")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "DIG"
+  sectionTitle: "Gastric Impaction: Impaction of the"
+  pdfPage: 299

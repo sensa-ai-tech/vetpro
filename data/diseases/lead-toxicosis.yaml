@@ -32,6 +32,8 @@ etiology:
         - 鉛製窗簾配重
         - 填縫材料 (caulking)
         - 含鉛玩具或裝飾品
+        - 老舊房屋翻修時釋出的含鉛油漆粉塵（都市環境常見暴露場景）
+        - 貓經由理毛行為攝入環境中含鉛粉塵
     - name: 毒性劑量
       examples:
         - 急性中毒劑量：犬 >3-5 mg/kg/day
@@ -53,11 +55,13 @@ clinicalSigns:
     - 嗜睡
   progressive:
     - 神經症狀出現（幼犬常見）
-    - 行為改變（焦慮、歇斯底里樣發作）
+    - 行為改變（焦慮、歇斯底里樣吠叫）
     - 步態不穩 (ataxia)
-    - 肌肉震顫
+    - 肌肉震顫與痙攣
+    - 下顎咀嚼動作 (jaw champing) 與流涎
     - 失明（皮質性盲）
     - 持續嘔吐
+    - 部分犬隻表現為中樞神經抑制而非興奮
   late:
     - 癲癇發作（急性鉛腦病）
     - 癲癇持續狀態 (status epilepticus)
@@ -77,10 +81,17 @@ diagnosis:
     - name: 長骨 X 光
       notes: "幼犬骨骺端可見「鉛線」(lead lines)——密度增加的橫帶（慢性暴露）"
   additional:
-    - CBC（輕度至中度再生性貧血、嗜鹼性點彩、有核紅血球）
+    - CBC（輕度至中度再生性貧血、嗜鹼性點彩、有核紅血球、紅血球大小不等 [anisocytosis]、異形紅血球 [poikilocytosis]、多色紅血球 [polychromasia]、低色素性 [hypochromia]）
     - 生化（肝腎功能評估）
-    - 尿液 delta-aminolevulinic acid (ALA) 上升
-    - 游離紅血球原紫質 (FEP) 上升
+    - 尿液 delta-aminolevulinic acid (ALA) 上升——鉛暴露的敏感指標，但不一定反映臨床疾病嚴重度
+    - 游離紅血球原紫質 (FEP) 上升——亦為鉛暴露敏感指標
+  differentialDiagnoses:
+    - 癲癇症 (Epilepsy)
+    - 中毒性腦病 — 有機磷、有機氯農藥中毒 (Organophosphate / Organochlorine Toxicosis)
+    - 腦炎 / 腦膜腦炎 (Encephalitis / Meningoencephalitis)
+    - 肝性腦病 (Hepatic Encephalopathy)
+    - 灰質腦軟化症 — 硫胺素缺乏 (Polioencephalomalacia)
+    - 異物性胃腸炎 (Foreign Body Gastroenteritis)
 
 treatment:
   principles:
@@ -100,7 +111,7 @@ treatment:
     - 螯合治療期間監測腎功能（CaNa2-EDTA 具腎毒性）
     - 環境除鉛（飼主教育）
 
-prognosis: 無嚴重神經症狀者經螯合治療後預後良好。出現癲癇發作者預後謹慎，部分個體可能遺留永久神經後遺症。慢性低劑量暴露可能造成腎臟與神經系統永久損傷。環境鉛源未移除者再暴露風險高。
+prognosis: 無嚴重神經症狀者經螯合治療後預後良好。出現癲癇發作者預後謹慎，部分個體可能遺留永久神經後遺症。慢性低劑量暴露可能造成腎臟與神經系統永久損傷。環境鉛源未移除者再暴露風險高。鑑別並消除鉛暴露來源對預防復發至關重要。動物鉛中毒病例可作為環境鉛污染之哨兵，提示人類（尤其兒童）亦可能面臨暴露風險。
 
 guidelineRefs:
   - sourceOrg: Journal of the American Veterinary Medical Association
@@ -122,3 +133,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"lead" AND ("toxicosis" OR "poisoning" OR "plumbism") AND (dog OR cat OR canine OR feline) AND ("chelation" OR "treatment")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "TOX"
+  sectionTitle: "LEAD POISONING"
+  pdfPage: 3119

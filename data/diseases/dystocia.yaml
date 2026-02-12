@@ -59,6 +59,8 @@ clinicalSigns:
     - 母體明顯疲憊但仍有微弱努責
     - 胎兒或胎膜可見於外陰但無法排出
     - 母體嗜睡、食慾完全喪失
+    - 母體明顯疼痛表現（哀叫、舔咬外陰）
+    - 異常外陰分泌物（鮮紅色出血、或在任何胎兒產出前即出現深綠色分泌物提示胎盤分離）
   late:
     - 努責停止（繼發性子宮無力）
     - 惡臭陰道分泌物（胎兒死亡/感染）
@@ -85,6 +87,13 @@ diagnosis:
     - 血糖（排除低血糖）
     - 黃體素測定（<2 ng/mL 確認已準備分娩）
     - CBC/生化（全身狀態評估）
+  differentialDiagnoses:
+    - 正常產程中斷 (Interrupted Labor，貓常見正常現象)
+    - 假妊娠 (Pseudopregnancy)
+    - 子宮扭轉 (Uterine Torsion)
+    - 子宮破裂 (Uterine Rupture)
+    - 低血鈣性子宮無力 (Hypocalcemic Uterine Inertia)
+    - 異位妊娠 (Ectopic Pregnancy，極罕見)
 
 treatment:
   principles:
@@ -95,7 +104,7 @@ treatment:
   medications:
     - name: Oxytocin
       dose: "犬：0.5-2 IU IV 或 IM（從低劑量起始）；貓：0.25-1 IU IV 或 IM。必要時 20-30 分鐘後重複，最多 3 次"
-      notes: "僅用於原發性子宮無力且確認無梗阻（X 光確認胎兒大小正常、子宮頸已開）。禁忌：梗阻性難產（子宮破裂風險）。過量使用反而抑制子宮收縮（受體下調）"
+      notes: "僅用於原發性子宮無力且確認無梗阻（X 光確認胎兒大小正常、子宮頸已開）。傳統文獻劑量較高（犬 3-20 IU、貓 2-5 IU IM），但現代建議從低劑量起始並可 20-30 分鐘後重複（最多 3 次）。禁忌：梗阻性難產（子宮破裂風險）。過量使用反而抑制子宮收縮（受體下調）"
     - name: 10% Calcium Gluconate
       dose: "0.5-1 mL/kg IV 緩慢注射（10-15 分鐘），監測心率"
       notes: 低鈣性子宮無力的關鍵治療。可與 Oxytocin 併用（鈣增強子宮肌肉對 Oxytocin 的反應性）。許多原發性子宮無力為相對性低血鈣
@@ -135,3 +144,8 @@ pubmedQueries:
     frequency: monthly
   - query: '"canine dystocia" AND ("risk factors" OR "cesarean section" OR "uterine inertia")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "REP"
+  sectionTitle: "DYSTOCIA"
+  pdfPage: 1436

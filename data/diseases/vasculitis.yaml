@@ -82,9 +82,18 @@ diagnosis:
     - 生化（BUN/Creatinine 升高提示腎臟受累、低白蛋白）
     - 尿液分析（蛋白尿、尿蛋白/肌酐比升高）
     - ANA 檢測（排除 SLE）
+    - 類風濕因子（Rheumatoid Factor）檢測（排除類風濕性關節炎）
     - 壁蝨媒介疾病篩檢（Ehrlichia、Anaplasma、Rickettsia 血清學）
     - 凝血功能（PT/aPTT，排除 DIC）
-    - 關節液分析（若有關節腫脹）
+    - 關節液分析（若有關節腫脹——黏稠度降低、炎症細胞增多提示免疫複合體性關節炎）
+    - 滑膜組織切片（嚴重關節受累時，可見輕至重度炎症與細胞浸潤）
+  differentialDiagnoses:
+    - 全身性紅斑狼瘡 (Systemic Lupus Erythematosus, SLE)
+    - 洛磯山斑點熱 (Rocky Mountain Spotted Fever)
+    - 冷凝球蛋白血症 (Cryoglobulinemia)
+    - 藥物疹 (Drug Eruption)
+    - 播散性血管內凝血 (Disseminated Intravascular Coagulation)
+    - 免疫介導性血小板減少症 (Immune-Mediated Thrombocytopenia)
 
 treatment:
   principles:
@@ -97,6 +106,7 @@ treatment:
     - "藥物誘發：立即停止可疑藥物或疫苗"
     - "免疫抑制治療：Prednisolone 1-2 mg/kg PO BID（誘導期），緩解後逐步減量"
     - "聯合免疫抑制：Azathioprine 2 mg/kg PO SID（犬）或 Mycophenolate mofetil 10-20 mg/kg PO BID"
+    - "頑固性病例可考慮 Cyclophosphamide 50 mg/m² PO 隔日（犬）或 Methotrexate（需嚴密監測骨髓抑制與肝毒性）"
     - "Pentoxifylline 10-25 mg/kg PO BID-TID（改善微循環、抗炎，皮膚型血管炎的輔助用藥）"
     - "Dapsone 1 mg/kg PO TID（犬，嗜中性球性血管炎，需監測 Heinz body 貧血）"
     - "局部傷口護理：清創、濕潤敷料"
@@ -104,7 +114,7 @@ treatment:
     - "Omega-3 脂肪酸補充（EPA/DHA，輔助抗炎）"
     - "監測 CBC/生化（免疫抑制藥物副作用）"
 
-prognosis: 預後取決於病因與嚴重程度。藥物或疫苗誘發型在停止暴露後預後較佳。感染性血管炎在有效抗生素治療下通常可控制。特發性/免疫介導性皮膚型血管炎經免疫抑制治療後多數可緩解，但部分需長期維持治療。系統性血管炎累及多器官時預後較差。嚴重壞死型或合併 DIC 時死亡率高。
+prognosis: 整體預後需謹慎評估，因復發常見且常無法確定自體免疫反應之確切誘因。藥物或疫苗誘發型在停止暴露後預後較佳。感染性血管炎在有效抗生素治療下通常可控制。特發性/免疫介導性皮膚型血管炎經免疫抑制治療後多數可緩解，但部分需長期維持治療且停藥後復發率高。系統性血管炎累及多器官時預後較差。嚴重壞死型或合併 DIC 時死亡率高。合併免疫複合體性多發性關節炎者需長期抗炎與免疫抑制管理。
 
 guidelineRefs:
   - sourceOrg: Veterinary Dermatology
@@ -125,3 +135,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"vasculitis" AND (dog OR canine OR feline) AND ("treatment" OR "immunosuppressive" OR "cutaneous")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "URN"
+  sectionTitle: "AND VASCULITIS"
+  pdfPage: 1552

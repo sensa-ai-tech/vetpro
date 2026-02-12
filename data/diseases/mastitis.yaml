@@ -75,6 +75,9 @@ clinicalSigns:
     - 毒血症（嘔吐、腹瀉、虛脫）
     - DIC（散播性血管內凝血）
     - 幼犬敗血症或死亡（攝入受感染乳汁或母犬無法哺乳）
+  subclinical:
+    - 慢性或亞臨床乳腺炎：主要表現為幼犬生長遲緩而母犬看似正常
+    - 離乳期非感染性乳腺炎：乳腺溫熱、腫脹、觸痛，但母犬精神食慾正常
 
 diagnosis:
   primaryTests:
@@ -93,6 +96,13 @@ diagnosis:
     - 凝血功能（懷疑 DIC 時）
     - 血液培養（敗血症時）
     - 乳腺 FNA（排除腫瘤——乳腺炎與炎性乳腺癌需鑑別）
+  differentialDiagnoses:
+    - 乳腺腫瘤 (Mammary Neoplasia)
+    - 炎性乳腺癌 (Inflammatory Mammary Carcinoma)
+    - 乳腺增生 (Mammary Hyperplasia)
+    - 乳汁滯留 — 非感染性乳腺腫脹 (Galactostasis)
+    - 外傷性乳腺損傷 (Traumatic Mammary Injury)
+    - 蜂窩織炎 (Cellulitis)
 
 treatment:
   principles:
@@ -117,6 +127,8 @@ treatment:
     - 乳腺膿瘍：外科引流 + 沖洗 + 全身性抗生素
     - 壞疽性乳腺炎：緊急手術清創或乳腺切除。術前穩定（靜脈輸液、靜脈抗生素）。可能需要廣泛組織清除
     - 敗血症管理：積極靜脈輸液、靜脈廣效抗生素（Ampicillin-Sulbactam + Enrofloxacin）、止痛、監測
+    - 溫敷 (hot-packing) 受感染乳腺每日 4-6 次，促進引流並緩解不適
+    - 離乳期乳汁滯留處理：適度減少母犬進食量與飲水量以減少泌乳量
     - 環境衛生：清潔產房/哺乳區域、修剪幼犬指甲（減少乳頭損傷）
 
 prognosis: 輕度至中度急性乳腺炎在適當抗生素治療下預後良好，多數犬在 48-72 小時內臨床改善。乳腺膿瘍經引流與抗生素治療後預後良好。壞疽性乳腺炎預後較為謹慎——需積極手術與全身支持治療，但多數犬仍可存活。合併嚴重敗血症或 DIC 者預後差。幼犬預後取決於母犬狀態與及時轉為人工哺育的能力。受感染乳腺的泌乳功能可能永久受損。
@@ -142,3 +154,8 @@ pubmedQueries:
     frequency: monthly
   - query: '"mammary gland infection" AND (canine OR bitch) AND ("bacterial" OR "management" OR "neonatal")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "REP"
+  sectionTitle: "MASTITIS"
+  pdfPage: 1437

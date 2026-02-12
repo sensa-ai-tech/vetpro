@@ -2,7 +2,7 @@ slug: diabetes-mellitus
 nameEn: Diabetes Mellitus
 nameZh: 糖尿病
 bodySystem: endocrine
-description: 胰島素分泌不足或作用異常導致的慢性高血糖症。犬以第一型為主，貓以第二型為主。
+description: 胰島素分泌不足或作用異常導致的慢性碳水化合物代謝障礙。犬多為免疫介導性 β 細胞破壞（類似人類第一型），貓則以胰島素阻抗合併 β 細胞功能障礙為主（類似人類第二型）。好發於中老年動物，犬未絕育母犬風險為公犬的兩倍，貓則以肥胖公貓最為常見。
 
 aliases:
   - { alias: DM, language: en }
@@ -13,7 +13,7 @@ species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
-    notes: 多為第一型 (免疫介導性 β 細胞破壞)。好發於 Samoyed、Australian Terrier、Poodle。未絕育母犬風險較高。
+    notes: 多為第一型 (免疫介導性 β 細胞破壞)。好發中老年犬 (平均 8-10 歲)。母犬發生率為公犬兩倍。好發品種包括 Miniature Poodle、Miniature Schnauzer、Samoyed、Australian Terrier。未絕育母犬因黃體期黃體素導致胰島素阻抗風險更高。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
@@ -46,8 +46,10 @@ clinicalSigns:
   progressive:
     - 肌肉流失
     - 被毛品質變差
-    - 肝腫大
+    - 肝腫大 (脂肪浸潤)
     - 後肢足底著地姿勢 (貓，糖尿病性神經病變)
+    - 白內障 (犬，快速進展，約 75% 犬糖尿病患於一年內發生)
+    - 反覆泌尿道感染
   late:
     - 糖尿病酮酸中毒 (DKA)
     - 嘔吐、虛弱、脫水
@@ -70,6 +72,13 @@ diagnosis:
     - T4 (貓)
     - 尿液培養 (UTI 篩檢)
     - 腎上腺功能檢測 (若懷疑庫欣)
+  differentialDiagnoses:
+    - 腎上腺皮質功能亢進 (Hyperadrenocorticism / Cushing's Disease)
+    - 甲狀腺功能亢進 (Hyperthyroidism，貓)
+    - 慢性腎病 (Chronic Kidney Disease)
+    - 肢端肥大症 (Acromegaly，貓)
+    - 肝皮膚症候群 (Hepatocutaneous Syndrome)
+    - 壓力性高血糖 (Stress Hyperglycemia，貓，需與真正糖尿病鑑別)
 
 treatment:
   principles:
@@ -92,7 +101,7 @@ treatment:
 
 emergencyNotes: 糖尿病酮酸中毒 (DKA) 為急症，需住院治療：IV 輸液矯正脫水與電解質、regular insulin CRI、密切監測血糖與電解質。
 
-prognosis: 犬 DM 經良好控制可維持良好生活品質數年。貓 DM 約 30-50% 可達臨床緩解。DKA 住院死亡率約 20-30%。
+prognosis: 犬 DM 經良好控制可維持良好生活品質數年，但需終生胰島素治療。犬糖尿病性白內障為常見併發症，影響生活品質但可手術矯正。貓 DM 約 30-50% 可達臨床緩解（尤其早期積極使用 glargine + 低碳水飲食者）。DKA 住院死亡率約 20-30%。伴發肝皮膚症候群 (hepatocutaneous syndrome) 者預後極差，為慢性進行性且通常致命的併發症。
 
 ontologyMappings:
   - source: MONDO
@@ -119,3 +128,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"diabetes mellitus" AND (dog OR cat OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "END"
+  sectionTitle: "DIABETES MELLITUS"
+  pdfPage: 620

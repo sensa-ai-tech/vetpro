@@ -2,7 +2,7 @@ slug: flea-allergy-dermatitis
 nameEn: Flea Allergy Dermatitis
 nameZh: 跳蚤過敏性皮膚炎
 bodySystem: dermatology
-description: 對跳蚤唾液中的過敏原產生的第I型及第IV型過敏反應，為犬貓最常見的過敏性皮膚病。
+description: 對跳蚤唾液中的過敏原產生的第 I 型及第 IV 型過敏反應，為犬貓最常見的過敏性皮膚病。致敏動物僅需極少數跳蚤叮咬即可引發嚴重的全身性搔癢反應，且跳蚤同時為雙殖孔絛蟲 (Dipylidium caninum) 的中間宿主。徹底且持續的除蚤控制（包含患畜、同住動物及環境）為治療與預防的核心策略。
 
 aliases:
   - { alias: FAD, language: en }
@@ -40,6 +40,11 @@ etiology:
         - 戶外活動
         - 多寵物家庭
         - 除蚤措施不完善
+    - name: 跳蚤相關併發症
+      examples:
+        - 大量蚤感染可導致缺鐵性貧血（尤其幼齡動物）
+        - 跳蚤為雙殖孔絛蟲 (Dipylidium caninum) 的中間宿主
+        - 跳蚤亦可傳播立克次體 (Rickettsia felis, R. typhi)
 
 pathophysiology: 跳蚤叮咬時將唾液注入宿主皮膚以防止血液凝固。易感個體的免疫系統對唾液中的蛋白質過敏原產生異常免疫反應。第一次暴露引起致敏，後續暴露引發過敏反應。IgE 媒介的即時型反應在叮咬後數分鐘內出現蕁麻疹與搔癢，而 T 細胞媒介的遲發型反應在 24-48 小時後產生丘疹與持續搔癢。致敏動物僅需極少數 (1-2 隻) 跳蚤叮咬即可引發嚴重的全身性搔癢反應。搔抓造成的自我創傷導致繼發性細菌感染 (膿皮症)，形成搔癢-搔抓惡性循環。
 
@@ -72,6 +77,13 @@ diagnosis:
     - name: 皮內過敏原測試
       notes: "注射跳蚤抗原後觀察即時與遲發反應。陽性率高但非 100% 特異"
   imaging: []
+  differentialDiagnoses:
+    - 異位性皮膚炎 (Atopic Dermatitis)
+    - 食物過敏 (Food Allergy / Adverse Food Reaction)
+    - 疥癬 (Sarcoptic Mange)
+    - 蝨感染 (Pediculosis)
+    - 皮膚黴菌感染 (Dermatophytosis)
+    - 接觸性皮膚炎 (Contact Dermatitis)
   additional:
     - 皮膚細胞學 (評估繼發性細菌/酵母菌感染)
     - 皮膚刮搔 (排除疥癬、毛囊蟲)
@@ -96,6 +108,12 @@ treatment:
     - name: Oclacitinib (Apoquel，犬)
       dose: "0.4-0.6 mg/kg PO BID × 14 天後改 SID"
       notes: 犬搔癢控制。>12 月齡犬適用
+    - name: Cyclosporine (Atopica)
+      dose: "犬：5 mg/kg PO SID；貓：7 mg/kg PO SID"
+      notes: 適用於無法耐受糖皮質激素或反應不佳的病例，起效較慢（2-4 週）
+    - name: Omega-3/Omega-6 脂肪酸
+      dose: "依產品標示，EPA+DHA 目標犬 50-75 mg/kg/day"
+      notes: 輔助抗炎治療，可與其他藥物併用以降低類固醇劑量
   general:
     - 環境除蚤 (噴霧含 IGR 成分：methoprene/pyriproxyfen)
     - 吸塵器清潔 (移除蟲卵、幼蟲、蛹)
@@ -103,6 +121,8 @@ treatment:
     - 繼發性膿皮症治療 (局部/全身抗生素)
     - 藥浴 (含 chlorhexidine 或 benzoyl peroxide)
     - 所有同住犬貓同步除蚤 (至少 3 個月)
+    - 跳蚤完整生命週期在一般家居環境約 3-8 週，蛹期在適當保護下可休眠長達數月
+    - 合併絛蟲感染時需同時投予驅蟲藥 (Praziquantel)
 
 prognosis: 嚴格且持續除蚤控制下預後極佳。多數病例在徹底除蚤後搔癢顯著改善。關鍵在於飼主配合度與長期持續的預防性除蚤。與異位性皮膚炎併存者需同時管理。環境中跳蚤蛹可存活數月，需耐心持續除蚤計畫。
 
@@ -124,3 +144,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"flea allergy dermatitis" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "prevention")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "ITG"
+  sectionTitle: "FLEAS AND FLEA ALLERGY DERMATITIS 881"
+  pdfPage: 922

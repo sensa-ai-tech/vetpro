@@ -67,6 +67,13 @@ diagnosis:
       notes: "H. americanum：長骨與扁骨的骨膜增生性反應（periosteal proliferation）。不規則骨膜新生骨。"
     - name: 腹部超音波
       notes: "H. canis：脾腫大。腎臟超音波評估（腎病變）。"
+  differentialDiagnoses:
+    - 多發性肌炎 (Polymyositis)
+    - 全身性紅斑狼瘡 (Systemic Lupus Erythematosus)
+    - 其他蜱媒疾病-艾利希體症/巴貝蟲症 (Ehrlichiosis/Babesiosis)
+    - 弓形蟲症 (Toxoplasmosis)
+    - 免疫介導性多發性關節炎 (Immune-Mediated Polyarthritis)
+    - 骨肉瘤或骨腫瘤 (Bone Neoplasia)
   additional:
     - 肌肉活檢（H. americanum 確診：可見特徵性洋蔥皮狀包囊）
     - 血液學（顯著白血球增多 20,000-200,000/μL，主要為中性球）
@@ -84,10 +91,13 @@ treatment:
     - "H. americanum 三聯療法：Trimethoprim-Sulfadiazine 15 mg/kg PO q12h + Clindamycin 10 mg/kg PO q8h + Pyrimethamine 0.25 mg/kg PO q24h x 14天"
     - "H. americanum 長期抑制：Decoquinate 10-20 mg/kg PO q12h（混入食物，終身）"
     - "疼痛管理：NSAIDs（Meloxicam 0.1 mg/kg PO q24h）用於肌痛"
+    - "避免使用糖皮質激素：雖然類固醇可暫時緩解症狀，但長期使用會加重感染與病程惡化"
     - "積極蜱蟲防治：Isoxazoline 類（如 Fluralaner、Sarolaner）"
+    - "避免獵食行為：獵物身上可能攜帶受感染的蜱，且獵物組織中可能含有具感染性的 cystozoites"
     - "治療合併蜱媒感染（Ehrlichia、Babesia）"
+    - "確診犬不應用於繁殖，已有 H. canis 經胎盤垂直傳播的文獻記載"
 
-prognosis: H. canis 預後通常良好，低度感染者多為亞臨床。高度感染或免疫抑制者預後謹慎。H. americanum 預後謹慎至不良，需終身 decoquinate 抑制治療。停藥後復發率極高。合併腎衰竭者預後不良。早期診斷與積極蜱蟲防治可改善預後。
+prognosis: H. canis 預後通常良好，低度寄生蟲血症者多為亞臨床且對 imidocarb 治療反應佳；高度感染或合併其他疾病者預後謹慎。H. americanum 被視為終身感染，目前無已知療法可完全清除體內蟲體。過去僅用 TCP 療法時，多數犬在 3-6 個月內復發，確診後 2 年內死亡。自引入 TCP 合併長期 decoquinate 抑制療法後，預後已顯著改善。停藥後復發率極高。合併腎衰竭者預後不良。早期診斷與積極蜱蟲防治可改善預後。
 
 guidelineRefs:
   - sourceOrg: Veterinary Parasitology
@@ -103,3 +113,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"hepatozoonosis" AND (dog OR canine) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "DIG"
+  sectionTitle: "INFECTION"
+  pdfPage: 525

@@ -53,7 +53,10 @@ clinicalSigns:
   progressive:
     - 肝性腦病症狀：行為異常、漫無目的行走、凝視牆壁
     - 精神沉鬱交替出現興奮
+    - 頂牆行為 (head pressing)
+    - 不明原因失明 (amaurosis)
     - 流涎（貓隻特別常見）
+    - 攻擊性行為改變
     - 尿酸銨結石引起的泌尿道症狀（血尿、排尿困難）
     - 多飲多尿
     - 腹部不適
@@ -77,6 +80,13 @@ diagnosis:
       notes: "目前為術前評估的金標準。可清楚顯示分流血管的起源、走行與終點。三維重建有助於手術規劃。對肝內分流的偵測優於超音波。"
     - name: 門靜脈攝影（Portography）
       notes: "術中注射對比劑直接顯影門靜脈系統。可即時確認分流位置與數量。但已逐漸被 CTA 取代。"
+  differentialDiagnoses:
+    - 特發性癲癇 (Idiopathic Epilepsy)
+    - 低血糖症 (Hypoglycemia)
+    - 水腦症 (Hydrocephalus)
+    - 先天性腎臟疾病 (Congenital Renal Disease)
+    - 微血管發育不良 (Microvascular Dysplasia)
+    - 慢性肝炎 (Chronic Hepatitis)
   additional:
     - 全血球計數：微小紅血球症（MCV 降低）、標靶細胞、輕度非再生性貧血
     - 血液生化：BUN 偏低、白蛋白偏低、血糖偏低、肝酵素輕度升高或正常
@@ -99,6 +109,8 @@ treatment:
     - "靜脈輸液：2.5-5% dextrose（預防低血糖，避免含乳酸的輸液）"
     - "尿酸銨結石預防：飲食管理 + 足夠飲水"
     - "癲癇控制：Levetiracetam 20 mg/kg PO/IV q8h（避免使用需肝臟代謝的藥物如 Phenobarbital）"
+    - "維持瘦體組織量（lean body mass）：骨骼肌為肝外氨代謝（合成麩醯胺酸）的重要途徑，肌肉萎縮會加重高血氨風險"
+    - "注意 PSS 動物對日常健康挑戰（感染性腹瀉、傷口感染、皮膚炎、蜱叮咬等）的耐受力較差，因肝臟無法有效清除毒素與病原"
 
 prognosis: 先天性單一肝外分流經手術矯正後預後良好，長期存活率約 85-95%。肝內分流手術較複雜，併發症風險較高，存活率約 75-85%。僅內科管理的先天性 PSS 中位存活時間約 2 年。後天性多發分流預後取決於基礎肝臟疾病，通常較差。術後門靜脈高壓與多發性後天分流形成為嚴重併發症。
 
@@ -128,3 +140,8 @@ pubmedQueries:
     frequency: monthly
   - query: '"portosystemic shunt" AND (dog OR cat) AND ("hepatic encephalopathy" OR "treatment")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "IMM"
+  sectionTitle: "SYSTEM"
+  pdfPage: 872

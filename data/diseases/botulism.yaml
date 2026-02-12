@@ -27,6 +27,7 @@ etiology:
         - Clostridium botulinum（革蘭氏陽性厭氧芽胞桿菌）
         - 產生 7 種神經毒素（A-G 型），犬主要為 Type C
         - 毒素為已知最強效的生物毒素之一
+        - 芽胞形成厭氧菌，在腐敗動物組織及有時植物材料中增殖
     - name: 感染途徑
       examples:
         - 食源性（最常見）：攝食含有預形成毒素的腐敗動物屍體或食物
@@ -71,10 +72,16 @@ diagnosis:
       notes: "評估吸入性肺炎風險。可能見到 megaesophagus（食道擴張）。"
     - name: 電生理學檢查
       notes: "EMG 可見運動神經傳導速度正常但 CMAP 振幅降低。重複神經刺激可見遞減反應（decremental response），高頻刺激可能見到遞增現象（incremental response）。有助於與其他 LMN 疾病鑑別。"
+  differentialDiagnoses:
+    - 蜱癱瘓 (Tick Paralysis)
+    - 急性多發性神經根炎 (Polyradiculoneuritis / Coonhound Paralysis)
+    - 重症肌無力 (Myasthenia Gravis)
+    - 有機磷/氨基甲酸鹽中毒 (Organophosphate / Carbamate Toxicosis)
+    - 硒中毒 (Selenium Toxicosis)
+    - 珊瑚蛇咬傷 (Coral Snake Envenomation)
   additional:
     - CBC 與生化通常正常
     - CSF 分析正常（排除感染性疾病）
-    - 鑑別診斷：蜱癱瘓（tick paralysis）、急性多發性神經根炎（polyradiculoneuritis/Coonhound paralysis）、重症肌無力、有機磷中毒
 
 treatment:
   principles:
@@ -118,3 +125,8 @@ pubmedQueries:
     frequency: monthly
   - query: '"Clostridium botulinum" AND (dog OR cat) AND ("neurotoxin" OR "flaccid paralysis")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "GEN"
+  sectionTitle: "BOTULISM"
+  pdfPage: 646

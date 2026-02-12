@@ -2,7 +2,7 @@ slug: hepatic-lipidosis
 nameEn: Hepatic Lipidosis
 nameZh: 肝臟脂肪變性
 bodySystem: gastrointestinal
-description: 貓特有的嚴重肝臟疾病，大量三酸甘油酯蓄積於肝細胞導致肝功能衰竭。為貓最常見的肝臟疾病。
+description: 貓特有的嚴重肝臟疾病，大量三酸甘油酯蓄積於肝細胞導致肝功能衰竭，為貓最常見的後天性且可能致命的肝臟疾病。本病為多因素症候群，多數病例由原發疾病引起的厭食所誘發，導致周邊脂肪過度動員超過肝臟代謝能力。嚴重的膽汁淤滯源自肝細胞三酸甘油酯空泡膨脹壓迫膽小管，而非炎症反應。
 
 aliases:
   - { alias: Fatty Liver Disease, language: en }
@@ -23,6 +23,8 @@ etiology:
         - 肥胖貓長時間 (>2-3 天) 厭食
         - 突然飲食改變或壓力事件導致食慾廢絕
         - 脂質代謝異常 (VLDL 組裝/分泌缺陷)
+        - 環境壓力誘因：搬家、家庭成員/寵物增減、寄宿、意外禁閉 (車庫/地下室/閣樓)、室內貓走失至戶外
+        - 強制減重搭配不可接受的食物替代
     - name: 繼發性 (約 60%)
       examples:
         - 胰臟炎
@@ -49,10 +51,15 @@ clinicalSigns:
     - 脫水
     - 肝腫大 (可觸診)
     - 肌肉萎縮
+    - 流涎 (ptyalism)
+    - 蒼白 (pallor)
+    - 胃腸蠕動減退/胃輕癱 (gastroparesis) 與腸阻滯 (ileus)（電解質異常所致）
+    - 體重急劇下降 >25%，但網膜及鐮狀韌帶脂肪可能仍保留
   late:
-    - 肝性腦病 (行為改變、流涎、頭部壓牆)
-    - 凝血異常 (維生素 K 吸收障礙)
-    - 低鉀血症 (肌肉無力、頸部下垂)
+    - 肝性腦病 (行為改變、流涎、頭部壓牆——但典型肝性腦病症狀較少見)
+    - 凝血異常 (維生素 K₁ 缺乏已在多數 HL 貓中確認)
+    - 低鉀血症 (肌肉無力、頸部下垂/腹側屈曲)
+    - 低磷血症 (再餵食症候群風險)
     - 嚴重膽汁淤滯
 
 diagnosis:
@@ -66,13 +73,21 @@ diagnosis:
   imaging:
     - name: 腹部超音波
       notes: "肝臟瀰漫性高迴音 (較腎臟皮質亮)、肝腫大。評估膽道系統、胰臟、其他器官"
+  differentialDiagnoses:
+    - 膽管炎/膽管肝炎 (Cholangitis / Cholangiohepatitis)
+    - 胰臟炎 (Pancreatitis)
+    - 腸道淋巴瘤 (Intestinal Lymphoma)
+    - 發炎性腸病 (Inflammatory Bowel Disease)
+    - 肝臟腫瘤 (Hepatic Neoplasia)
+    - 中毒性肝損傷 (Toxic Hepatopathy)
   additional:
     - CBC (非特異性變化)
     - 生化 (低白蛋白、低 BUN、高膽固醇、電解質異常)
     - 凝血功能 (PT/APTT 可能延長)
     - 膽汁酸 (升高)
-    - 血氨 (肝性腦病時升高)
+    - 血氨 (肝性腦病時升高——但典型 HL 很少見到銨尿酸鹽結晶尿)
     - 電解質 (低鉀、低磷、低鎂)
+    - 紅血球及肝臟穀胱甘肽偏低、血漿牛磺酸偏低
 
 treatment:
   principles:
@@ -104,6 +119,8 @@ treatment:
     - IV 輸液 (避免含 dextrose 的液體)
     - Taurine 補充 (250 mg/cat/day)
     - Thiamine (Vit B1) 補充 (100 mg/cat/day)
+    - Cobalamin (Vit B12) 補充 (250 mcg/cat SC 每週一次，視需要調整)
+    - 完整 B 群維生素補充（HL 貓常有多種 B 群缺乏）
     - 肝性腦病：lactulose 0.5 mL/kg PO BID-TID
 
 prognosis: 積極營養支持下存活率約 60-85%。食道管管灌飲食至少 4-6 週，部分需 8-12 週。預後取決於潛在原發疾病是否可控。原發性較繼發性預後略佳。自主進食恢復為停止管灌的指標。
@@ -138,3 +155,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"hepatic lipidosis" AND (cat OR feline) AND ("treatment" OR "nutrition" OR "esophagostomy")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "DIG"
+  sectionTitle: "FELINE HEPATIC LIPIDOSIS"
+  pdfPage: 497

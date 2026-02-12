@@ -28,8 +28,9 @@ etiology:
         - 犬 MCT 中 p53 突變與高惡性度相關
     - name: 品種遺傳傾向
       examples:
-        - Boxer、Pug (多為低度惡性)
+        - Boxer、Pug (多為低度惡性，常多發)
         - Shar-Pei (常多發、年輕發病、可能較具侵犯性)
+        - Rhodesian Ridgeback
         - Golden Retriever、Labrador (中-高度惡性比例較高)
     - name: 環境/其他因素
       examples:
@@ -43,8 +44,10 @@ clinicalSigns:
     - 皮膚或皮下單一或多發腫塊 (最常見於軀幹、四肢、會陰)
     - 腫塊大小變化不定 (因脫顆粒引起水腫)
     - Darier sign (觸診後腫塊周圍紅腫)
+    - 約 10% 病例為多中心性 (multicentric)
+    - 黏膜皮膚交界處、口鼻部、腹側、包皮或甲下部位腫瘤生物行為通常較具侵犯性
   progressive:
-    - 腫塊快速增大
+    - 腫塊快速增大 (初始直徑 >3 cm 與較差存活時間相關)
     - 潰瘍、出血
     - 區域淋巴結腫大
     - 消化道症狀 (嘔吐、黑便 — 組織胺誘發胃潰瘍)
@@ -74,6 +77,13 @@ diagnosis:
     - 肝脾 FNA (超音波異常時)
     - 腹腔積液細胞學 (若存在)
     - Ki-67 增殖指數、AgNOR、c-kit 免疫組化染色模式
+  differentialDiagnoses:
+    - 組織球瘤 (Histiocytoma)
+    - 脂肪瘤 (Lipoma)
+    - 皮膚淋巴瘤 (Cutaneous Lymphoma)
+    - 軟組織肉瘤 (Soft Tissue Sarcoma)
+    - 漿細胞瘤 (Plasmacytoma)
+    - 黑色素瘤 (Melanoma)
 
 treatment:
   principles:
@@ -101,7 +111,7 @@ treatment:
     - 放射治療 (不完全切除邊緣、不可切除腫塊)
     - 多發性 MCT 每個腫塊需獨立分級評估
 
-prognosis: Kiupel 低度惡性完全切除後預後良好，局部復發率 <10%，中位存活時間 >2 年。Kiupel 高度惡性 (Patnaik Grade III) 預後差，中位存活時間約 4-6 個月。KIT 突變陽性、高 Ki-67 指數及高有絲分裂指數為不良預後因子。貓皮膚型完全切除後多數預後良好。
+prognosis: Kiupel 低度惡性完全切除後預後良好，局部復發率 <10%，中位存活時間 >2 年。多中心性低度惡性 MCT 若每個腫塊均完全切除，預後與單一腫塊無顯著差異。Kiupel 高度惡性 (Patnaik Grade III) 預後差，中位存活時間約 4-6 個月。初始腫瘤直徑 >3 cm 與診斷時已有全身性症狀者存活時間較短。不完全切除、快速生長或位於黏膜皮膚交界處的腫瘤生物行為較具侵犯性。KIT 突變陽性、高 Ki-67 指數及高有絲分裂指數為不良預後因子。貓皮膚型完全切除後多數預後良好。
 
 emergencyNotes: 大量脫顆粒事件 (anaphylactoid reaction) 需緊急處理：epinephrine (0.01 mg/kg IV/IM)、IV 輸液支持、diphenhydramine、famotidine。術中操作腫塊可引發急性脫顆粒反應。
 
@@ -129,3 +139,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"mast cell tumor" AND (dog OR canine) AND ("grading" OR "treatment" OR "prognosis")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "ITG"
+  sectionTitle: "Cutaneous Mast Cell Tumors"
+  pdfPage: 1004

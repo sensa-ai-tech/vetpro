@@ -42,6 +42,9 @@ etiology:
       examples:
         - 一氧化碳 (CO)：與血紅素親和力為 O₂ 的 200-250 倍 → COHb 形成 → 組織缺氧
         - 氰化氫 (HCN)：抑制線粒體細胞色素氧化酶 (Complex IV) → 細胞無法利用氧氣 → 組織窒息
+        - HCN 來源：聚丙烯腈（塑膠）、羊毛、絲綢、角蛋白、聚氨酯（隔熱/家具）、三聚氰胺樹脂、合成橡膠等日常材料燃燒皆會釋出氰化物氣體
+        - CO 與 HCN 中毒常同時發生（車內火災為典型高風險場景）
+        - HCN 急性致死劑量極低（約 2 mg/kg），心臟與腦部因高度依賴有氧代謝而最易受損
         - 環境氧氣耗竭 → 直接缺氧性窒息
     - name: 併發體表燒傷
       examples:
@@ -91,6 +94,13 @@ diagnosis:
       notes: "初期可能完全正常。24-72 小時後出現間質/肺泡浸潤、支氣管壁增厚、支氣管周圍水腫。連續追蹤"
     - name: 氣管鏡檢查（如可用）
       notes: "直接評估氣道損傷程度。可見黏膜充血、水腫、碳粒子沉積、黏膜壞死脫落"
+  differentialDiagnoses:
+    - 過敏性支氣管炎 (Allergic Bronchitis)
+    - 吸入性肺炎 (Aspiration Pneumonia)
+    - 心因性肺水腫 (Cardiogenic Pulmonary Edema)
+    - 上呼吸道異物阻塞 (Upper Airway Foreign Body Obstruction)
+    - 有機磷中毒 (Organophosphate Poisoning)
+    - 熱中暑 (Heat Stroke)
   additional:
     - CBC（應激性白血球增多，後續左移）
     - 生化（肝腎功能評估、CK 升高）
@@ -113,7 +123,10 @@ treatment:
       notes: HCN 中毒首選解毒劑。與 CN⁻ 結合形成無毒的 cyanocobalamin (維生素 B₁₂)。安全性高。經驗性使用於嚴重煙霧吸入合併嚴重乳酸酸中毒者。費用較高
     - name: Sodium thiosulfate (HCN 解毒劑替代)
       dose: "250 mg/kg IV slow"
-      notes: Hydroxocobalamin 不可得時的替代。與 CN⁻ 結合形成硫氰酸鹽經腎排出。效果較慢
+      notes: Hydroxocobalamin 不可得時的替代。與 CN⁻ 結合形成硫氰酸鹽經腎排出。效果較慢。可與 sodium nitrite 合用組成傳統氰化物解毒套組
+    - name: Sodium nitrite (傳統 HCN 解毒劑)
+      dose: "犬 16 mg/kg IV slow（3% 溶液）"
+      notes: 誘導 methemoglobin 與 CN⁻ 結合形成 cyanmethemoglobin。煙霧吸入時因已有 COHb 佔據攜氧能力，再加上 MetHb 可能加重組織缺氧，故首選 hydroxocobalamin。僅在 hydroxocobalamin 不可得時考慮與 thiosulfate 合用
     - name: 支氣管擴張劑
       dose: "Albuterol/Salbutamol 霧化吸入；或 Aminophylline 5-10 mg/kg IV 緩慢推注"
       notes: 支氣管痙攣時使用
@@ -158,3 +171,8 @@ pubmedQueries:
     frequency: monthly
   - query: '"carbon monoxide poisoning" AND (veterinary OR canine OR feline) AND ("hydroxocobalamin" OR "cyanide")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "TOX"
+  sectionTitle: "CYANIDE POISONING"
+  pdfPage: 3000

@@ -65,9 +65,11 @@ clinicalSigns:
     - 端坐呼吸（orthopnea，無法平躺）
     - 嚴重肺水腫（肺泡性水腫，呼吸困難伴泡沫狀鼻分泌物）
     - 心因性休克（低血壓、蒼白黏膜、CRT 延長）
+    - 前向性心衰竭徵兆（低心輸出量 → 四肢冰冷、虛弱、運動完全不耐）
     - 大量腹水/胸水
     - 心因性惡病質（cachexia）
     - 昏厥（低心輸出量或心律不整）
+    - 利尿劑相關併發症（腎前性氮血症、低鈉血症、低鉀血症、低氯性代謝性鹼中毒）
     - 猝死
 
 diagnosis:
@@ -83,6 +85,13 @@ diagnosis:
       notes: "心律不整偵測（心房顫動、VPCs、SVT）。心房擴大圖形。心室肥厚圖形。竇性心搏過速（代償反應）。"
     - name: 腹部超音波
       notes: "評估腹水量。肝臟鬱血（肝靜脈擴張、肝臟腫大）。CFAST 掃描快速評估。"
+  differentialDiagnoses:
+    - 原發性呼吸道疾病 (Primary Respiratory Disease)
+    - 肺炎 (Pneumonia)
+    - 胸腔積液非心因性 (Non-cardiogenic Pleural Effusion)
+    - 肺腫瘤 (Pulmonary Neoplasia)
+    - 心包膜積液/心包填塞 (Pericardial Effusion/Tamponade)
+    - 非心因性肺水腫 (Non-cardiogenic Pulmonary Edema)
   additional:
     - 血液生化：腎功能（BUN/Creatinine，利尿劑治療前後監測）、電解質（鉀、鈉）
     - CBC：評估貧血（可加重心衰竭）
@@ -102,6 +111,8 @@ treatment:
     - "Benazepril 0.5 mg/kg PO q12-24h 或 Enalapril 0.5 mg/kg PO q12h（ACE 抑制劑，抑制 RAAS，降低後負荷。BENCH study 支持使用）"
     - "Spironolactone 1-2 mg/kg PO q12-24h（醛固酮拮抗劑，抗纖維化，與 furosemide 合用減少低血鉀風險）"
     - "Torasemide 0.1-0.3 mg/kg PO q12-24h（furosemide 抗藥性時替代，效力約為 furosemide 的 10-20 倍）"
+    - "Furosemide 抵抗性處理：當 furosemide 4 mg/kg PO TID 仍無法控制症狀時，考慮轉換為 torasemide、皮下 furosemide 注射（避免因腸壁水腫致口服吸收不良），或堆疊利尿劑（diuretic stacking）加用 hydrochlorothiazide 1-2 mg/kg PO BID"
+    - "貓 furosemide 劑量偏低開始（0.5-2 mg/kg q12-24h），貓對利尿劑副作用較敏感，最高可至 2 mg/kg TID"
     - "貓 CHF 胸水管理：治療性胸腔穿刺（Thoracocentesis）迅速緩解呼吸困難"
     - "抗血栓（貓）：Clopidogrel 18.75 mg/cat PO q24h 預防 ATE"
     - "飲食管理：適度限鈉飲食（MMVD/DCM）、充足蛋白質攝取、維持適當體重"
@@ -130,3 +141,8 @@ pubmedQueries:
     frequency: monthly
   - query: '"heart failure" AND (cat OR feline) AND ("cardiomyopathy" OR "treatment" OR "prognosis")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "CIR"
+  sectionTitle: "HEART FAILURE"
+  pdfPage: 140

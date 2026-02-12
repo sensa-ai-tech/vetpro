@@ -73,11 +73,20 @@ diagnosis:
       notes: "肺部肉芽腫性結節。氣管支氣管淋巴結腫大。胸腔積液。"
     - name: 腹部超音波
       notes: "肝脾腫大與結節。腹腔淋巴結腫大。"
+  differentialDiagnoses:
+    - 真菌性肉芽腫 (Fungal Granuloma — Histoplasma, Blastomyces, Cryptococcus)
+    - 異物反應性肉芽腫 (Foreign Body Granuloma)
+    - 諾卡氏菌症 (Nocardiosis)
+    - 放線菌症 (Actinomycosis)
+    - 淋巴瘤 (Lymphoma)
+    - 利什曼原蟲症 (Leishmaniasis)
   additional:
     - 細菌培養（需特殊培養基，Lowenstein-Jensen；慢速生長型需 6-8 週）
-    - 藥物敏感性測試（指導治療）
+    - 藥物敏感性測試（指導治療——必須進行藥敏試驗以確認菌株對所用藥物的敏感性）
     - 干擾素釋放試驗（IGRA，結核篩檢）
     - 血液學與生化（非再生性貧血、低白蛋白血症、高球蛋白血症）
+    - 壓印抹片 Ziehl-Neelsen 抗酸染色（低成本快速初篩，但敏感度有限）
+    - 屍體剖檢合併培養與組織病理學為確定診斷的金標準
 
 treatment:
   principles:
@@ -92,6 +101,8 @@ treatment:
     - "結核複合群：建議安樂死（WHO/OIE 建議，人畜共通風險）"
     - "貓麻瘋：Clofazimine 8 mg/kg PO q24h + Clarithromycin 62.5 mg/cat PO q12h x 數月"
     - "定期監測：CRP、影像學追蹤治療反應"
+    - "多藥聯合治療可減少抗藥性菌株產生"
+    - "治療期間應定期監測血中藥物濃度，確認達到有效殺菌濃度"
     - "人畜共通提醒：告知畜主風險，建議免疫低下家庭成員就醫諮詢"
 
 prognosis: 預後因病原種類與感染範圍而異。皮膚局部型 NTM 經外科切除與抗生素治療預後最佳。播散性 MAC 預後不良，尤其免疫缺陷犬種。結核複合群因公共衛生考量通常建議安樂死。貓麻瘋經治療預後較佳。長期多藥治療是成功的關鍵。
@@ -110,3 +121,8 @@ guidelineRefs:
 pubmedQueries:
   - query: '"mycobacterial infection" AND (dog OR cat) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+merckManualRef:
+  edition: 11
+  chapter: "GEN"
+  sectionTitle: "PARATUBERCULOSIS 763"
+  pdfPage: 804
