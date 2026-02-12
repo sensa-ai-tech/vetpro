@@ -5,17 +5,19 @@
  *
  * 功能：
  *  1. 讀取每個 disease YAML
- *  2. 用 PubMed E-utilities 搜尋 Open Access 的 review/guideline 文獻
+ *  2. 用 PubMed E-utilities 搜尋 Open Access 的 review/guideline 文獻 (7 query templates)
  *  3. 驗證 PMID 有效性並取得文章詳細資料
- *  4. 更新 YAML guidelineRefs（不重複、不覆蓋現有）
+ *  4. 更新 YAML guidelineRefs（不重複、不覆蓋現有），含 relevance 標記
  *  5. 修復缺少 PMID 或 URL 不完整的現有 refs
  *
  * Usage:
- *   pnpm tsx scripts/enrich-guidelinerefs.ts              # 全部 100 diseases
- *   pnpm tsx scripts/enrich-guidelinerefs.ts --batch 0    # 第 0 批 (0-9)
- *   pnpm tsx scripts/enrich-guidelinerefs.ts --batch 1    # 第 1 批 (10-19)
- *   pnpm tsx scripts/enrich-guidelinerefs.ts --slug pancreatitis  # 單一疾病
- *   pnpm tsx scripts/enrich-guidelinerefs.ts --dry-run    # 預覽不寫入
+ *   pnpm tsx scripts/enrich-guidelinerefs.ts                    # All diseases (batch 50)
+ *   pnpm tsx scripts/enrich-guidelinerefs.ts --batch 0          # Batch 0 (0-49)
+ *   pnpm tsx scripts/enrich-guidelinerefs.ts --batch 1          # Batch 1 (50-99)
+ *   pnpm tsx scripts/enrich-guidelinerefs.ts --slug pancreatitis # Single disease
+ *   pnpm tsx scripts/enrich-guidelinerefs.ts --since 2020       # Only refs from 2020+
+ *   pnpm tsx scripts/enrich-guidelinerefs.ts --years 5          # Last 5 years
+ *   pnpm tsx scripts/enrich-guidelinerefs.ts --dry-run          # Preview only
  *
  * 速率控制：無 API Key 時 3 req/sec (350ms delay)
  */
@@ -28,8 +30,8 @@ const EUTILS_BASE = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils";
 const API_KEY = process.env.NCBI_API_KEY || "";
 const EMAIL = process.env.NCBI_EMAIL || "vetpro@example.com";
 const DELAY_MS = API_KEY ? 110 : 350; // respect rate limits
-const MAX_NEW_REFS_PER_DISEASE = 3; // 每個疾病最多新增 3 篇
-const BATCH_SIZE = 10;
+const MAX_NEW_REFS_PER_DISEASE = 5; // 每個疾病最多新增 5 篇
+const BATCH_SIZE = 50;
 const DISEASES_DIR = path.join(process.cwd(), "data", "diseases");
 const MAX_RETRIES = 3;
 
@@ -40,6 +42,7 @@ interface GuidelineRef {
   url: string;
   type: string;
   pmid?: string;
+  relevance?: "primary" | "supporting" | "historical";
 }
 
 interface DiseaseYaml {
@@ -79,11 +82,21 @@ const batchArg = args.indexOf("--batch") !== -1
 const slugArg = args.indexOf("--slug") !== -1
   ? args[args.indexOf("--slug") + 1]
   : null;
+const sinceArg = args.indexOf("--since") !== -1
+  ? parseInt(args[args.indexOf("--since") + 1])
+  : null;
+const yearsArg = args.indexOf("--years") !== -1
+  ? parseInt(args[args.indexOf("--years") + 1])
+  : null;
+const MIN_YEAR = sinceArg || (yearsArg ? new Date().getFullYear() - yearsArg : 2016);
+const MAX_YEAR = new Date().getFullYear();
 
 // ─── Main ────────────────────────────────────────────
 async function main() {
-  console.log("=== VetPro GuidelineRefs Enrichment ===");
+  console.log("=== VetPro GuidelineRefs Enrichment (v2) ===");
   console.log(`Mode: ${dryRun ? "DRY RUN (preview only)" : "LIVE (will write YAML)"}`);
+  console.log(`Date range: ${MIN_YEAR}-${MAX_YEAR}`);
+  console.log(`Max refs per disease: ${MAX_NEW_REFS_PER_DISEASE}, Batch size: ${BATCH_SIZE}`);
   if (API_KEY) console.log("Using NCBI API Key (10 req/sec)");
   else console.log("No API Key — limited to 3 req/sec");
   console.log();
@@ -188,12 +201,10 @@ async function processDisease(filePath: string): Promise<{ added: number; fixed:
   }
 
   // ─── Step 3: Search PubMed for Open Access refs ───
-  const neededRefs = MAX_NEW_REFS_PER_DISEASE - Math.max(0, 3 - (data.guidelineRefs?.length || 0));
-  // Only search if we have fewer than 3 refs, or if disease has 0 refs
   const currentCount = data.guidelineRefs.length;
-  const maxToAdd = currentCount < 2 ? MAX_NEW_REFS_PER_DISEASE : (currentCount < 3 ? 2 : 1);
+  const maxToAdd = Math.max(0, MAX_NEW_REFS_PER_DISEASE - currentCount);
 
-  if (maxToAdd <= 0 && currentCount >= 4) {
+  if (maxToAdd <= 0) {
     console.log(`  ✅ Already has ${currentCount} refs, skipping search`);
     if (modified && !dryRun) {
       writeYaml(filePath, data);
@@ -239,11 +250,11 @@ async function processDisease(filePath: string): Promise<{ added: number; fixed:
     console.warn(`  ⚠️  Fetch details failed: ${err}`);
   }
 
-  // Prefer: PMC (open access) > review > recent
+  // Prefer: PMC (open access) > guideline/consensus > review > recent
   articles.sort((a, b) => {
     if (a.isPmc !== b.isPmc) return a.isPmc ? -1 : 1;
     if (a.articleType !== b.articleType) {
-      const order: Record<string, number> = { consensus: 0, guideline: 1, review: 2, research: 3 };
+      const order: Record<string, number> = { consensus: 0, guideline: 1, review: 2, "case-report": 3, research: 4 };
       return (order[a.articleType] ?? 9) - (order[b.articleType] ?? 9);
     }
     return b.year - a.year; // newer first
@@ -253,6 +264,16 @@ async function processDisease(filePath: string): Promise<{ added: number; fixed:
   const toAdd = articles.slice(0, maxToAdd);
 
   for (const article of toAdd) {
+    // Assign relevance based on type and recency
+    let relevance: "primary" | "supporting" | "historical" = "supporting";
+    if (article.articleType === "guideline" || article.articleType === "consensus") {
+      relevance = "primary";
+    } else if (article.articleType === "review" && article.year >= MAX_YEAR - 5) {
+      relevance = "primary";
+    } else if (article.year < MAX_YEAR - 10) {
+      relevance = "historical";
+    }
+
     const newRef: GuidelineRef = {
       sourceOrg: article.journal,
       title: article.title,
@@ -261,11 +282,12 @@ async function processDisease(filePath: string): Promise<{ added: number; fixed:
         : `https://pubmed.ncbi.nlm.nih.gov/${article.pmid}/`,
       type: article.articleType,
       pmid: article.pmid,
+      relevance,
     };
     data.guidelineRefs!.push(newRef);
     added++;
     const oaTag = article.isPmc ? "🟢 OA" : "🔵";
-    console.log(`  ${oaTag} +${article.articleType}: "${truncate(article.title, 60)}" (${article.year}) PMID:${article.pmid}`);
+    console.log(`  ${oaTag} +${article.articleType} [${relevance}]: "${truncate(article.title, 55)}" (${article.year}) PMID:${article.pmid}`);
     modified = true;
   }
 
@@ -281,19 +303,26 @@ async function processDisease(filePath: string): Promise<{ added: number; fixed:
 }
 
 // ─── PubMed Search ───────────────────────────────────
-function buildSearchQueries(nameEn: string, bodySystem: string): string[] {
-  // Targeted queries prioritizing Open Access reviews/guidelines
-  const base = nameEn.replace(/'/g, "");
-  return [
-    // Query 1: Open Access reviews/guidelines for this disease in vet context
-    `"${base}" AND (dog OR cat OR canine OR feline) AND (review[pt] OR guideline[pt] OR "systematic review"[pt] OR "practice guideline"[pt]) AND "open access"[filter]`,
-    // Query 2: PMC free fulltext, consensus/guidelines
-    `"${base}" AND (veterinary OR "small animal") AND ("consensus" OR "guidelines" OR "recommendations") AND "free full text"[filter]`,
-    // Query 3: Broader review search with PMC filter
-    `"${base}" AND (canine OR feline OR veterinary) AND review[pt] AND "loattrfree full text"[sb]`,
-    // Query 4: Specific journal search (top vet journals)
-    `"${base}" AND ("Journal of Veterinary Internal Medicine"[journal] OR "Veterinary Surgery"[journal] OR "Journal of the American Veterinary Medical Association"[journal] OR "Journal of Feline Medicine and Surgery"[journal]) AND review[pt]`,
+function buildSearchQueries(nameEn: string, bodySystem: string, species?: string[]): string[] {
+  const base = nameEn.replace(/'/g, "").replace(/[()]/g, "");
+  const yr = `${MIN_YEAR}:${MAX_YEAR}[dp]`;
+  const queries = [
+    // Q1: Open Access reviews/guidelines in vet context
+    `"${base}" AND (dog OR cat OR canine OR feline) AND (review[pt] OR guideline[pt] OR "systematic review"[pt] OR "practice guideline"[pt]) AND "open access"[filter] AND ${yr}`,
+    // Q2: PMC free fulltext, consensus/guidelines
+    `"${base}" AND (veterinary OR "small animal") AND ("consensus" OR "guidelines" OR "recommendations") AND "free full text"[filter] AND ${yr}`,
+    // Q3: Broader review search with PMC filter
+    `"${base}" AND (canine OR feline OR veterinary) AND review[pt] AND "loattrfree full text"[sb] AND ${yr}`,
+    // Q4: Top vet journals
+    `"${base}" AND ("Journal of Veterinary Internal Medicine"[journal] OR "Veterinary Surgery"[journal] OR "Journal of the American Veterinary Medical Association"[journal] OR "Journal of Feline Medicine and Surgery"[journal]) AND review[pt] AND ${yr}`,
+    // Q5: Species-specific reviews (if exotic species present)
+    `"${base}" AND (rabbit OR ferret OR "guinea pig" OR hamster OR chinchilla OR rat OR avian OR psittacine) AND ("open access"[filter] OR "free full text"[filter]) AND ${yr}`,
+    // Q6: bodySystem case series
+    `"${base}" AND (veterinary OR "companion animal") AND ("case series" OR "retrospective study") AND "loattrfree full text"[sb] AND ${yr}`,
+    // Q7: Rare disease case reports
+    `"${base}" AND ("case report"[pt] OR "case series") AND (canine OR feline OR veterinary) AND "open access"[filter] AND ${yr}`,
   ];
+  return queries;
 }
 
 async function searchPubMed(query: string): Promise<string[]> {
@@ -368,6 +397,8 @@ async function fetchArticleDetails(pmids: string[]): Promise<ArticleInfo[]> {
         articleType = "consensus";
       } else if (pubTypes.some(t => t.includes("review") || t.includes("systematic review"))) {
         articleType = "review";
+      } else if (pubTypes.some(t => t.includes("case reports"))) {
+        articleType = "case-report";
       }
 
       // Also check title for hints
@@ -435,6 +466,9 @@ function surgicalUpdateGuidelineRefs(filePath: string, refs: GuidelineRef[]): vo
     newSection.push(`    type: ${ref.type}`);
     if (ref.pmid) {
       newSection.push(`    pmid: "${ref.pmid}"`);
+    }
+    if (ref.relevance) {
+      newSection.push(`    relevance: ${ref.relevance}`);
     }
   }
 
