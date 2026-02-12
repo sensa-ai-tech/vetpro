@@ -1,0 +1,71 @@
+slug: chronic-bronchitis
+nameEn: Chronic Bronchitis
+nameZh: 慢性支氣管炎
+bodySystem: respiratory
+description: 犬隻慢性支氣管炎定義為每日咳嗽持續 2 個月以上，且排除其他咳嗽原因後診斷。為氣管與支氣管黏膜慢性炎症反應，導致黏液分泌過多、黏膜水腫與氣道壁增厚。中老年小型犬好發。與人類慢性阻塞性肺病（COPD）有相似之處。
+
+aliases:
+  - { alias: 犬慢性氣管支氣管炎, language: zh }
+  - { alias: Canine Chronic Bronchitis, language: en }
+  - { alias: COPD, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 中老年小型犬好發。West Highland White Terrier、Cocker Spaniel 有較高報告率。可與氣管塌陷合併存在。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻慢性呼吸道疾病多歸類為貓哮喘或慢性支氣管疾病。
+
+etiology:
+  categories:
+    - name: 慢性炎症
+      examples:
+        - 確切病因不明
+        - 長期吸入刺激物（二手菸、灰塵、空氣汙染）
+        - 反覆呼吸道感染後遺症
+        - 過敏性機轉可能參與
+    - name: 加重因素
+      examples:
+        - 肥胖
+        - 二手菸暴露
+        - 氣管塌陷合併
+        - 心臟病（左心房擴大壓迫支氣管）
+
+clinicalSigns:
+  early:
+    - 慢性乾咳或略帶痰的咳嗽
+    - 運動後咳嗽加重
+    - 興奮或飲水後咳嗽
+  progressive:
+    - 咳嗽加重且頻繁
+    - 運動不耐
+    - 呼氣性喘鳴
+    - 呼吸急促
+    - 嚴重發作可出現發紺
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔 X 光
+      notes: 支氣管壁增厚（doughnut sign 與 tram lines）。肺間質紋理增加。排除心臟病、肺腫瘤等其他咳嗽原因。
+    - name: 支氣管肺泡灌洗液（BAL）分析
+      notes: 非退化性嗜中性球增多（>10%）。黏液增加。細菌培養排除感染。需排除嗜酸性球性支氣管肺病。
+
+treatment:
+  principles:
+    - 無法根治，治療目標為控制症狀
+    - 減少氣道炎症與黏液過度分泌
+    - 避免觸發因素
+  general:
+    - "皮質類固醇：Prednisolone 0.5-1 mg/kg PO q12h × 10-14 天後漸減"
+    - "吸入型皮質類固醇：Fluticasone MDI 110-220 μg q12h via spacer（長期維持首選）"
+    - "支氣管擴張劑：Theophylline 10 mg/kg PO q12h 或 Terbutaline"
+    - 止咳藥物（僅在劇烈非生產性咳嗽時使用）：Hydrocodone 或 Butorphanol
+    - 體重控制、避免二手菸與刺激性氣體
+    - 使用胸帶取代頸圈
+
+prognosis: 慢性支氣管炎無法根治，但適當管理可維持良好生活品質。多數犬隻在皮質類固醇治療下症狀改善。合併氣管塌陷者管理較困難。急性惡化（exacerbation）可能需要短期系統性皮質類固醇加強治療。
+
+pubmedQueries:
+  - query: '"chronic bronchitis" AND (veterinary OR canine) AND ("treatment" OR "inhaled corticosteroids")'
+    frequency: monthly

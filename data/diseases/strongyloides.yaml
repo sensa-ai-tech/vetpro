@@ -1,0 +1,74 @@
+slug: strongyloides
+nameEn: Strongyloides
+nameZh: 糞線蟲感染
+bodySystem: infectious
+description: 糞線蟲感染 (strongyloidosis) 由 Strongyloides stercoralis 引起，可經皮膚穿入或經乳汁傳播。幼犬為主要臨床宿主，可引起嚴重出血性腹瀉。具自體感染 (autoinfection) 能力，免疫抑制宿主可發展超級感染。為人畜共通寄生蟲。
+
+aliases:
+  - { alias: 糞小桿線蟲感染, language: zh }
+  - { alias: Strongyloidosis, language: en }
+  - { alias: Threadworm Infection, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 主要影響幼犬。經乳汁或皮膚穿入感染。犬舍環境可爆發。免疫抑制犬可發展嚴重超級感染。溫暖潮濕環境利於蟲體發育。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓感染（S. felis 或 S. stercoralis）極少報告。臨床意義不明確。
+
+etiology:
+  categories:
+    - name: 傳播途徑
+      examples:
+        - 經皮膚穿入（L3 幼蟲穿透皮膚）
+        - 經乳汁傳播
+        - 經口攝入
+        - 自體感染（腸腔內 L1 直接發育為感染性 L3）
+    - name: 致病機制
+      examples:
+        - 雌蟲寄居小腸黏膜產卵
+        - 幼蟲移行引起腸道損傷
+        - 超級感染時大量幼蟲播散至肺、肝等器官
+
+clinicalSigns:
+  early:
+    - 水樣腹瀉（幼犬）
+    - 黏液便
+    - 食慾下降
+  progressive:
+    - 出血性腹瀉
+    - 嚴重脫水
+    - 體重減輕與營養不良
+    - 皮膚炎（幼蟲穿入處）
+    - 超級感染：呼吸困難、敗血症
+
+diagnosis:
+  primaryTests:
+    - name: 糞便 Baermann 法或直接抹片
+      notes: 新鮮糞便可見 L1 幼蟲（非蟲卵）。Baermann 法敏感度較高。需與鉤蟲幼蟲鑑別
+    - name: 糞便浮游法
+      notes: 偶可見薄殼含幼蟲胚的蟲卵。但幼蟲更常見於糞便中
+  additional:
+    - CBC（嗜酸球增多）
+    - 生化（低蛋白血症、電解質失衡）
+
+treatment:
+  principles:
+    - 驅蟲藥物有效
+    - 環境衛生管理重要
+    - 免疫抑制者需注意超級感染
+    - 人畜共通風險
+  general:
+    - Fenbendazole 50 mg/kg PO SID × 5 天
+    - Ivermectin 0.2 mg/kg SC 單次（需排除 MDR1 突變犬種）
+    - IV 輸液矯正脫水
+    - 營養支持
+    - 環境清潔消毒（保持乾燥）
+    - 隔離感染幼犬
+
+prognosis: 適當治療後預後良好。幼犬嚴重感染需積極支持治療。超級感染（免疫抑制者）預後較差。環境管理可有效預防。
+
+pubmedQueries:
+  - query: '"Strongyloides" AND (veterinary OR canine) AND ("treatment" OR "diagnosis")'
+    frequency: monthly

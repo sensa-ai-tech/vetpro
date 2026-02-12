@@ -1,0 +1,77 @@
+slug: prostatic-abscess
+nameEn: Prostatic Abscess
+nameZh: 前列腺膿瘍
+bodySystem: infectious
+description: 前列腺膿瘍為前列腺炎的嚴重併發症，前列腺內形成局灶性或瀰漫性化膿性腔室。好發於未結紮中老齡公犬。膿瘍破裂可引起致命性腹膜炎與敗血症。需手術引流結合去勢與長療程抗生素。
+
+aliases:
+  - { alias: 前列腺化膿, language: zh }
+  - { alias: Prostatic Abscessation, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬前列腺膿瘍為前列腺炎未治療或治療不完全的進展。手術引流為關鍵。膿瘍破裂致死率高。去勢 + 引流 + 長療程抗生素為標準治療。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓前列腺膿瘍極罕見。
+
+etiology:
+  categories:
+    - name: 致病機制
+      examples:
+        - 前列腺炎細菌感染化膿
+        - BPH 囊腫繼發感染
+        - 膿腔逐漸擴大
+        - 膿瘍破裂→腹膜炎
+    - name: 常見致病菌
+      examples:
+        - E. coli
+        - Staphylococcus spp.
+        - Streptococcus spp.
+        - 混合厭氧菌感染
+
+clinicalSigns:
+  early:
+    - 發燒
+    - 嗜睡、厭食
+    - 排尿困難
+    - 尿道膿性分泌物
+  progressive:
+    - 腹痛
+    - 後肢無力
+    - 敗血症（高燒、低血壓、心搏過速）
+    - 膿瘍破裂→急性腹膜炎（腹部劇痛、休克）
+    - 排便困難
+
+diagnosis:
+  primaryTests:
+    - name: 腹部超音波
+      notes: 前列腺內低回音腔室，可見液化壞死區。膿瘍壁增厚
+    - name: CBC + 生化
+      notes: 白血球顯著增多伴 left shift。可能見低蛋白血症
+  additional:
+    - 直腸觸診（前列腺腫大、不規則、疼痛 — 輕柔操作避免破裂）
+    - 超音波引導穿刺培養
+    - 腹腔液分析（膿瘍破裂時）
+    - 腹部 X-ray
+
+treatment:
+  principles:
+    - 手術引流為必要
+    - 去勢
+    - 長療程抗生素
+    - 穩定全身狀態
+  general:
+    - 術前穩定（IV 輸液、IV 抗生素）
+    - 手術引流選項：omentalization（大網膜填塞）、Penrose drain、部分前列腺切除
+    - 去勢（同時進行）
+    - 長療程抗生素 4-8 週（enrofloxacin 或依培養結果）
+    - 膿瘍破裂：緊急剖腹探查 + 腹腔沖洗 + 引流
+    - 術後超音波追蹤
+
+prognosis: 前列腺膿瘍手術引流 + 去勢後存活率約 50-80%。膿瘍破裂致腹膜炎者預後較差。術後感染復發風險存在。及早手術介入改善預後。
+
+pubmedQueries:
+  - query: '"prostatic abscess" AND (veterinary OR canine) AND ("treatment" OR "surgery" OR "omentalization")'
+    frequency: monthly

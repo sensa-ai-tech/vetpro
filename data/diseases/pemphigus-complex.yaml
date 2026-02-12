@@ -1,0 +1,76 @@
+slug: pemphigus-complex
+nameEn: Pemphigus Complex
+nameZh: 天疱瘡複合症
+bodySystem: immunology
+description: 天疱瘡 (pemphigus) 為一組自體免疫性水疱性皮膚病，因自體抗體攻擊表皮細胞間連接蛋白 (desmoglein) 導致棘層鬆解 (acantholysis)。犬貓主要型態包括落葉型天疱瘡 (pemphigus foliaceus, PF) 與尋常型天疱瘡 (pemphigus vulgaris, PV)。PF 為犬貓最常見的自體免疫性皮膚病。
+
+aliases:
+  - { alias: 天疱瘡, language: zh }
+  - { alias: Pemphigus, language: en }
+  - { alias: Pemphigus Foliaceus, language: en }
+  - { alias: Pemphigus Vulgaris, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬以落葉型天疱瘡 (PF) 最常見。好發品種包括秋田犬、Chow Chow、Dachshund。面部（鼻鏡、耳介）與足墊為典型病灶部位。藥物誘發型亦有報告。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓亦以 PF 最常見。面部與耳介為好發部位。足墊病灶在貓亦常見。
+
+etiology:
+  categories:
+    - name: 致病機制
+      examples:
+        - 自體抗體（IgG）攻擊 desmoglein-1（PF）或 desmoglein-3（PV）
+        - 破壞角質細胞間橋粒連接 (desmosome)
+        - 棘層鬆解 (acantholysis) → 表皮內水疱
+        - 可為自發性、藥物誘發或 UV 誘發
+    - name: 分型
+      examples:
+        - Pemphigus foliaceus（最常見）— 淺表水疱
+        - Pemphigus vulgaris — 深層水疱、黏膜侵犯
+        - Pemphigus erythematosus — PF 與 lupus 的交叉型
+        - Paraneoplastic pemphigus — 腫瘤相關
+
+clinicalSigns:
+  early:
+    - 面部膿疱與痂皮（鼻鏡、耳介）
+    - 足墊過度角化與裂隙
+    - 對稱性分布
+  progressive:
+    - 全身性膿疱、糜爛、痂皮
+    - PV：口腔潰瘍、黏膜糜爛
+    - 繼發性細菌感染
+    - 發燒、厭食、消瘦
+
+diagnosis:
+  primaryTests:
+    - name: 皮膚生檢
+      notes: 組織病理學見棘層鬆解 (acantholysis) 與表皮內水疱。PF 在淺表顆粒層，PV 在基底上層
+    - name: 細胞學
+      notes: 膿疱內容抹片可見棘層鬆解角質細胞 (acantholytic keratinocytes) — 圓形深染核質細胞
+  additional:
+    - 直接免疫螢光（細胞間 IgG 沉積）
+    - 細菌培養（排除繼發感染）
+    - ANA（排除 SLE）
+
+treatment:
+  principles:
+    - 免疫抑制療法
+    - 長期管理
+    - 預防感染併發症
+  general:
+    - Prednisolone 2-4 mg/kg/day PO（誘導），逐漸減量至最低有效劑量
+    - Azathioprine 2 mg/kg PO SID（犬；steroid-sparing agent）
+    - Chlorambucil 0.1-0.2 mg/kg PO q48h（貓；替代 azathioprine）
+    - Mycophenolate mofetil（難治性病例）
+    - 局部 tacrolimus（局灶性病灶）
+    - 避免日曬（UV 可誘發）
+    - 繼發感染時短期抗生素
+
+prognosis: 落葉型天疱瘡在適當免疫抑制下多數可控制，但需長期用藥。部分犬可達到緩解後停藥。尋常型天疱瘡預後較差。藥物副作用（免疫抑制相關感染、類固醇效應）為長期管理挑戰。
+
+pubmedQueries:
+  - query: '"pemphigus" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis" OR "immunosuppressive")'
+    frequency: monthly

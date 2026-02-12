@@ -1,0 +1,85 @@
+slug: gunshot-wound
+nameEn: Gunshot Wound
+nameZh: 槍傷
+bodySystem: emergency
+description: 犬貓槍傷包括子彈 (bullet)、散彈 (shotgun pellet) 與氣槍彈 (BB/pellet gun) 造成的穿透性創傷。損傷程度取決於彈藥類型、速度與撞擊部位。高速子彈因空腔效應造成遠超彈道的組織破壞。鉛彈滯留可引起慢性鉛中毒。
+
+aliases:
+  - { alias: 子彈傷, language: zh }
+  - { alias: Ballistic Injury, language: en }
+  - { alias: Projectile Wound, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬槍傷較貓常見（體型大、戶外活動多）。高速步槍彈損傷最嚴重。鳥彈散彈多為多發淺表傷。氣槍彈常見於都市地區惡意傷害。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓槍傷多為氣槍彈或散彈。流浪貓為主要受害群體。彈丸可能在體內滯留多年。
+
+etiology:
+  categories:
+    - name: 彈藥分類與損傷
+      examples:
+        - 高速子彈（>600 m/s）：暫時空腔與永久空腔效應，廣泛組織破壞
+        - 低速子彈（手槍）：局限性損傷
+        - 散彈 (shotgun)：多發穿透，近距離致命
+        - 氣槍彈 (BB/pellet)：低速，通常淺表
+    - name: 併發症
+      examples:
+        - 骨折（粉碎性）
+        - 內臟穿透
+        - 感染（彈藥攜帶汙染物質入體）
+        - 鉛中毒（鉛彈長期滯留）
+        - 神經損傷
+
+clinicalSigns:
+  early:
+    - 入口傷（小圓形傷口）
+    - 出口傷（較大不規則，高速彈）
+    - 出血
+    - 疼痛
+    - 休克
+  progressive:
+    - 軟組織壞死
+    - 骨折
+    - 內臟損傷出血
+    - 感染（24-48 小時）
+    - 鉛中毒（慢性，彈丸滯留數月）
+
+diagnosis:
+  primaryTests:
+    - name: X-ray
+      notes: 彈丸/碎片定位。評估骨折。確認彈丸數量與位置。鉛彈為高密度不透光
+    - name: 系統性創傷評估
+      notes: ABCDE + TFAST/AFAST。評估穿透性胸腹腔損傷
+  additional:
+    - CBC、生化
+    - 胸部 X-ray（氣胸、血胸）
+    - 腹部超音波
+    - CT（複雜彈道評估）
+    - 血鉛濃度（滯留彈丸者定期追蹤）
+
+treatment:
+  principles:
+    - 穩定生命征象
+    - 穿透性胸腹腔傷口按急腹症/胸腔急症處理
+    - 傷口管理
+    - 彈丸移除非必要（除特殊情況）
+  general:
+    - ABCDE 穩定
+    - 穿透性胸腔傷口：胸管 + 可能開胸
+    - 穿透性腹腔傷口：剖腹探查
+    - 傷口清創沖洗（開放式管理）
+    - 廣效抗生素
+    - 骨折處理（粉碎性骨折可能需截肢）
+    - 彈丸移除適應症：關節內、消化道內、引起疼痛、鉛中毒
+    - 多數軟組織內滯留彈丸可不移除（被纖維包裹）
+    - 止痛
+    - 鉛彈滯留：定期監測血鉛
+
+prognosis: 槍傷預後取決於彈藥類型與損傷部位。氣槍彈傷多數預後佳。高速彈胸腹腔穿透預後較差。四肢骨折可透過骨科手術或截肢存活。多數犬貓對截肢適應良好。
+
+pubmedQueries:
+  - query: '"gunshot wound" OR "ballistic" AND (veterinary OR canine OR feline) AND ("treatment" OR "projectile")'
+    frequency: monthly

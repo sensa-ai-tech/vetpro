@@ -1,0 +1,81 @@
+slug: airway-obstruction
+nameEn: Airway Obstruction
+nameZh: 呼吸道阻塞
+bodySystem: emergency
+description: 呼吸道阻塞為上呼吸道或下呼吸道部分或完全阻塞引起的呼吸困難。犬常見原因包括喉部麻痹、短頭犬呼吸道症候群 (BOAS)、異物與腫瘤。完全阻塞為分秒必爭的緊急狀態，需立即建立通暢氣道。
+
+aliases:
+  - { alias: 氣道阻塞, language: zh }
+  - { alias: Upper Airway Obstruction, language: en }
+  - { alias: Respiratory Obstruction, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬呼吸道阻塞常見原因：BOAS（短頭犬）、喉部麻痹（大型老齡犬）、異物（球類、骨頭）、喉部腫瘤。嚴重者需緊急氣管切開。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓上呼吸道阻塞較犬少見。喉部腫瘤、polyp 與嚴重上呼吸道感染為主要原因。
+
+etiology:
+  categories:
+    - name: 上呼吸道
+      examples:
+        - 短頭犬呼吸道症候群 (BOAS)
+        - 喉部麻痹 (laryngeal paralysis)
+        - 異物（口腔、咽喉）
+        - 喉部/氣管腫瘤
+        - 喉部水腫（過敏、外傷後）
+        - 氣管塌陷
+    - name: 下呼吸道
+      examples:
+        - 氣管內異物
+        - 嚴重支氣管痙攣（貓哮喘）
+        - 氣管腫瘤
+
+clinicalSigns:
+  early:
+    - 吸氣性喘鳴 (stridor)
+    - 呼吸費力（吸氣延長）
+    - 焦躁不安
+  progressive:
+    - 發紺
+    - 張口呼吸
+    - 頸部伸展
+    - 意識喪失
+    - 窒息死亡
+
+diagnosis:
+  primaryTests:
+    - name: 臨床表現
+      notes: 吸氣性喘鳴 + 呼吸困難 = 上呼吸道阻塞。呼氣性喘鳴 = 下呼吸道
+    - name: 喉鏡檢查
+      notes: 輕度鎮靜下評估喉部功能（喉部麻痹、腫塊、異物）
+  additional:
+    - 頸部/胸部 X-ray
+    - 氣管鏡
+    - CT（腫瘤評估）
+    - 動脈血氣
+
+treatment:
+  principles:
+    - 緊急建立通暢氣道
+    - 氧氣補充
+    - 鎮靜（減少氧氣需求）
+    - 針對原因治療
+  general:
+    - 輕度鎮靜（acepromazine 0.01-0.02 mg/kg IV 或 butorphanol）
+    - 氧氣補充（flow-by 或面罩）
+    - 氣管插管（嚴重者）
+    - 緊急氣管切開術（無法插管時）
+    - 異物移除（器械輔助）
+    - 喉部水腫：dexamethasone 0.1-0.2 mg/kg IV
+    - BOAS：手術矯正（軟顎切除、鼻孔擴大）
+    - 喉部麻痹：lateralization 手術
+    - 降溫（上呼吸道阻塞常伴高體溫）
+
+prognosis: 急性異物阻塞移除後預後極佳。BOAS 手術矯正改善顯著。喉部麻痹手術後預後佳但有吸入性肺炎風險。喉部腫瘤預後視腫瘤類型而定。
+
+pubmedQueries:
+  - query: '"airway obstruction" AND (veterinary OR canine OR feline) AND ("treatment" OR "emergency" OR "tracheostomy")'
+    frequency: monthly

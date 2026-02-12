@@ -1,0 +1,58 @@
+slug: ovarian-tumor
+nameEn: Ovarian Tumor
+nameZh: 卵巢腫瘤
+bodySystem: oncology
+description: 卵巢的原發性腫瘤，包括上皮性（腺瘤/腺癌）、性索間質性（顆粒細胞瘤）與生殖細胞性（畸胎瘤）。未結紮母犬偶見。部分可分泌賀爾蒙引起內分泌症狀。
+
+aliases:
+  - { alias: "Ovarian Neoplasia", language: en }
+  - { alias: "卵巢新生物", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬罕見（因多數母犬已結紮）。未結紮老年母犬。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓罕見。
+
+etiology:
+  categories:
+    - name: 腫瘤性
+      examples:
+        - 卵巢上皮/間質/生殖細胞增生
+        - 未結紮為先決條件
+
+clinicalSigns:
+  early:
+    - 腹部膨大
+    - 發情異常
+    - 外陰腫大
+  progressive:
+    - 腹水
+    - 貧血
+    - 骨髓抑制（雌激素過多）
+    - 轉移
+
+diagnosis:
+  primaryTests:
+    - name: 腹部超音波
+      notes: 卵巢腫塊
+    - name: 賀爾蒙檢測
+      notes: 雌二醇、黃體素升高（功能性腫瘤）
+
+treatment:
+  principles:
+    - 手術切除（卵巢子宮切除）
+    - 分期評估
+  general:
+    - 卵巢子宮摘除術
+    - 分期（胸腔 X 光、腹部超音波）
+    - 惡性腫瘤術後化療
+    - Cisplatin 或 Carboplatin
+
+prognosis: 良性腫瘤切除後預後極佳。惡性卵巢腫瘤完全切除預後中等。已轉移者預後不良。
+
+pubmedQueries:
+  - query: '"ovarian tumor" AND (veterinary OR canine OR feline) AND ("surgery" OR "prognosis")'
+    frequency: monthly

@@ -1,0 +1,73 @@
+slug: transfusion-medicine
+nameEn: Transfusion Medicine
+nameZh: 輸血醫學
+bodySystem: emergency
+description: 獸醫輸血醫學涵蓋血液製品的選擇、血型鑑定、交叉試驗及輸血反應監測等知識體系。正確的輸血程序可挽救急性失血或嚴重貧血動物的生命，但不當輸血可導致致命性溶血反應。
+
+aliases:
+  - { alias: 輸血療法, language: zh }
+  - { alias: 血液製品治療, language: zh }
+  - { alias: Blood Transfusion Therapy, language: en }
+  - { alias: Veterinary Transfusion, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬血型以 DEA 系統分類，DEA 1.1 陰性為理想捐血犬。首次輸血異型反應較輕，但致敏後再次輸注可發生嚴重反應。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓有 A、B、AB 三型，B 型貓有天然抗 A 抗體，首次接受 A 型血即可發生致命性急性溶血。務必血型鑑定。
+
+etiology:
+  categories:
+    - name: 輸血適應症
+      examples:
+        - 急性失血性貧血（PCV <20%）
+        - 免疫介導性溶血性貧血
+        - 凝血因子缺乏（抗凝血劑中毒、DIC）
+        - 血小板減少性出血
+    - name: 輸血反應類型
+      examples:
+        - 急性溶血反應（血型不合）
+        - 發燒性非溶血反應（最常見）
+        - 過敏反應（蕁麻疹、血管性水腫）
+        - 輸血相關急性肺損傷（TRALI）
+
+clinicalSigns:
+  early:
+    - 輸血中發燒（體溫上升 >1°C）
+    - 蕁麻疹或面部腫脹
+    - 心搏過速
+    - 嘔吐
+  progressive:
+    - 血紅素尿（溶血反應）
+    - 黃疸加重
+    - 呼吸急促（TRALI 或容積過負荷）
+    - 低血壓休克
+
+diagnosis:
+  primaryTests:
+    - name: 血型鑑定
+      notes: 犬行 DEA 1.1 鑑定（最低要求），貓必須鑑定 A/B/AB 型。快速檢驗卡可於院內執行。
+    - name: 交叉試驗
+      notes: 主交叉（供血者紅血球 + 受血者血清）與次交叉。犬首次輸血可省略但建議執行，貓必須執行。
+
+treatment:
+  principles:
+    - 輸血前務必完成血型鑑定（貓為必要）
+    - 交叉試驗相容者優先選用
+    - 緩慢開始輸血並密切監測
+    - 輸血反應立即停止輸血並對症處理
+  general:
+    - 輸血起始速率 0.5-1 mL/kg/hr 前 15 分鐘
+    - 無反應後可加速至 5-10 mL/kg/hr（犬）或 3-5 mL/kg/hr（貓）
+    - 監測體溫、心率、呼吸率每 15 分鐘
+    - 發生反應時立即停止輸血
+    - 溶血反應：靜脈輸液維持腎灌流 + 類固醇
+    - 過敏反應：抗組織胺 ± 腎上腺素
+
+prognosis: 正確執行的輸血程序安全有效，急性失血患者輸血後存活率顯著提高。輸血反應多數為輕微發燒反應，適當處理後預後良好。急性溶血反應罕見但可致命，尤其 B 型貓接受 A 型血時死亡率極高。
+
+pubmedQueries:
+  - query: '"Transfusion Medicine" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

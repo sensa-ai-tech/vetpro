@@ -1,0 +1,71 @@
+slug: melting-ulcer
+nameEn: Melting Ulcer
+nameZh: 溶解性角膜潰瘍
+bodySystem: ophthalmology
+description: 角膜基質因細菌性膠原酶 (collagenase) 與基質金屬蛋白酶 (MMPs) 快速溶解的嚴重感染性角膜潰瘍。角膜呈半透明膠狀溶解，可在 24-48 小時內穿孔，為眼科急症。Pseudomonas aeruginosa 為最常見致病菌。
+
+aliases:
+  - { alias: Keratomalacia, language: en }
+  - { alias: Collagenolytic Ulcer, language: en }
+  - { alias: 膠原溶解性角膜潰瘍, language: zh }
+  - { alias: 角膜軟化症, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 短頭品種犬 (Pug、Shih Tzu) 風險較高。免疫抑制犬或長期使用類固醇眼藥者風險增加。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓相對少見但可發生，常與 FHV-1 角膜潰瘍繼發感染相關。
+
+etiology:
+  categories:
+    - name: 細菌感染
+      examples:
+        - Pseudomonas aeruginosa (最常見也最具破壞性)
+        - Staphylococcus spp.
+        - Streptococcus spp.
+        - beta-hemolytic Streptococcus
+    - name: 蛋白酶釋放
+      examples:
+        - 細菌產生的膠原酶
+        - 嗜中性球釋放的基質金屬蛋白酶 (MMPs)
+        - 絲胺酸蛋白酶
+
+clinicalSigns:
+  early:
+    - 劇烈疼痛 (blepharospasm)
+    - 大量黏液膿性分泌物
+    - 角膜基質混濁
+  progressive:
+    - 角膜基質呈半透明膠狀 (gelatinous melting)
+    - 快速加深的潰瘍
+    - 前房反應 (aqueous flare)
+    - Descemetocele 或角膜穿孔
+
+diagnosis:
+  primaryTests:
+    - name: 螢光素染色
+      notes: 深層基質喪失，溶解區域呈膠狀半透明。需評估深度
+    - name: 角膜刮片細胞學 + 培養
+      notes: 立即取材做 Gram stain 與細菌培養藥敏。Pseudomonas 為 Gram 陰性桿菌
+    - name: 裂隙燈檢查
+      notes: 評估基質溶解深度與前房反應
+
+treatment:
+  principles:
+    - 眼科急症，需密集治療
+    - 控制感染 + 抑制蛋白酶活性
+    - 深層潰瘍需手術介入
+  general:
+    - 強化抗生素眼藥水 (Tobramycin 或 Fluoroquinolone) Q1-2H
+    - 自體血清眼藥水 Q1-2H (天然抗蛋白酶)
+    - N-Acetylcysteine (NAC) 10% 眼藥水 (抗膠原酶)
+    - Atropine 1% 散瞳止痛
+    - 深層潰瘍/Descemetocele 需結膜瓣手術
+
+prognosis: 預後謹慎。及時密集治療可挽救眼球。延遲治療可能在 24-48 小時內穿孔需眼球摘除。Pseudomonas 感染預後較差。術後可能殘留角膜疤痕影響視力。
+
+pubmedQueries:
+  - query: '"melting ulcer" OR "keratomalacia" AND (veterinary OR canine OR feline) AND ("Pseudomonas" OR "treatment")'
+    frequency: monthly

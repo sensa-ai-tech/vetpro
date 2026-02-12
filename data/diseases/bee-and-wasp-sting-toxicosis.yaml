@@ -1,0 +1,80 @@
+slug: bee-and-wasp-sting-toxicosis
+nameEn: Bee and Wasp Sting Toxicosis
+nameZh: 蜂螫中毒
+bodySystem: toxicology
+description: 蜂螫 (bee/wasp sting) 毒素可引起局部疼痛腫脹或全身性過敏反應 (anaphylaxis)。蜜蜂毒液含磷脂酶 A2、melittin 等成分，黃蜂毒液含 antigen 5 與磷脂酶。多重螫傷可引起直接毒性效應（溶血、橫紋肌溶解、腎衰竭）。
+
+aliases:
+  - { alias: 蜜蜂螫傷, language: zh }
+  - { alias: 黃蜂螫傷, language: zh }
+  - { alias: Hymenoptera Envenomation, language: en }
+  - { alias: Bee Sting Reaction, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬蜂螫常見，好奇心驅使嗅聞蜂巢。面部與口腔為最常見螫傷部位。單一螫傷通常僅引起局部反應。多重螫傷（>10-20 處）可引起全身毒性。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓蜂螫較犬少見。爪子與面部為常見螫傷部位。過敏反應可能發生。
+
+etiology:
+  categories:
+    - name: 毒液成分
+      examples:
+        - 蜜蜂：melittin（溶血）、磷脂酶 A2、apamin
+        - 黃蜂：antigen 5、磷脂酶 A1、胺類
+        - 蜜蜂螫針留在體內（持續釋放毒液）
+        - 黃蜂可反覆螫傷
+    - name: 反應類型
+      examples:
+        - 局部反應（腫脹、疼痛）
+        - 全身性過敏反應（anaphylaxis）
+        - 大量毒素直接毒性（多重螫傷）
+
+clinicalSigns:
+  early:
+    - 螫傷部位急性腫脹疼痛
+    - 面部螫傷可見明顯腫脹
+    - 過度搔抓螫傷處
+    - 局部蕁麻疹
+  progressive:
+    - 全身性過敏反應：面部/喉頭水腫、呼吸困難
+    - 嚴重低血壓與休克
+    - 嘔吐、腹瀉
+    - 多重螫傷：溶血、橫紋肌溶解、急性腎衰竭
+    - DIC
+
+diagnosis:
+  primaryTests:
+    - name: 臨床檢查與病史
+      notes: 確認蜂螫部位。檢查是否有蜜蜂螫針殘留（需取出）。評估全身性過敏反應徵象
+    - name: 生命徵象監測
+      notes: 血壓、心率、呼吸評估。過敏反應可在數分鐘內發展
+  additional:
+    - CBC（溶血、血小板減少）
+    - CK（橫紋肌溶解）
+    - 腎功能（多重螫傷）
+    - 凝血功能
+
+treatment:
+  principles:
+    - 局部反應以支持為主
+    - 過敏反應需緊急 epinephrine
+    - 多重螫傷需積極支持
+    - 取出蜜蜂螫針
+  general:
+    - 取出蜜蜂螫針（刮除而非夾取，避免擠壓毒囊）
+    - 局部冰敷
+    - 局部反應：diphenhydramine 2 mg/kg IM/PO
+    - 過敏反應：epinephrine 0.01 mg/kg IM（首選）
+    - Dexamethasone 0.1-0.2 mg/kg IV
+    - IV 輸液（休克復甦）
+    - 多重螫傷：IV 輸液利尿（預防肌紅蛋白/血紅蛋白腎病）
+    - 監測腎功能 48 小時
+
+prognosis: 單一蜂螫局部反應預後極佳。全身性過敏反應及時 epinephrine 治療預後良好。多重螫傷（>20 處）預後取決於毒素總量與腎功能。口腔/咽喉螫傷因氣道腫脹需密切監測。
+
+pubmedQueries:
+  - query: '"bee sting" OR "wasp sting" AND (veterinary OR canine OR feline) AND ("anaphylaxis" OR "treatment")'
+    frequency: monthly

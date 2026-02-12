@@ -1,0 +1,68 @@
+slug: fungal-pneumonia
+nameEn: Fungal Pneumonia
+nameZh: 真菌性肺炎
+bodySystem: respiratory
+description: 真菌性肺炎為深部真菌感染導致的肺部炎症。犬隻常見病原包括 Blastomyces、Histoplasma、Coccidioides 與 Cryptococcus。多數為地方性真菌（endemic mycoses），與地理分佈密切相關。感染通常經吸入孢子後在肺部建立。免疫抑制動物風險較高。
+
+aliases:
+  - { alias: 真菌性肺感染, language: zh }
+  - { alias: Mycotic Pneumonia, language: en }
+  - { alias: Pulmonary Mycosis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻真菌性肺炎以 Blastomyces 與 Histoplasma 最常見（北美），Coccidioides（美國西南部）。戶外活動犬、獵犬品種風險較高。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻以 Cryptococcus 最常見（呼吸道與中樞神經系統），Histoplasma 亦可見。
+
+etiology:
+  categories:
+    - name: 地方性深部真菌
+      examples:
+        - Blastomyces dermatitidis（密西西比河流域、五大湖區）
+        - Histoplasma capsulatum（俄亥俄-密西西比河谷）
+        - Coccidioides immitis/posadasii（美國西南部沙漠）
+        - Cryptococcus neoformans/gattii（全球分佈）
+    - name: 伺機性真菌
+      examples:
+        - Aspergillus（免疫抑制患者）
+        - Pneumocystis（免疫缺陷）
+
+clinicalSigns:
+  early:
+    - 咳嗽（乾咳或濕咳）
+    - 輕度呼吸急促
+    - 發燒
+    - 食慾下降
+  progressive:
+    - 進行性呼吸困難
+    - 體重減輕
+    - 全身性感染徵象（淋巴結腫大、皮膚結節、眼部病變）
+    - 運動不耐
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔 X 光
+      notes: 瀰漫性或多灶性間質-肺泡型浸潤。結節性病變。肺門淋巴結腫大。影像模式多樣，需結合臨床與微生物學確診。
+    - name: 尿液/血清抗原檢測
+      notes: Blastomyces 與 Histoplasma 尿液抗原（MiraVista）敏感度高。Cryptococcus 血清乳膠凝集試驗（LCAT）。細胞學檢查（BAL 液、細針穿刺）可見特徵性真菌體。
+
+treatment:
+  principles:
+    - 長期抗真菌治療（通常 4-6 個月以上）
+    - 嚴重病例初期可用 Amphotericin B
+    - 臨床緩解後至少再治療 1 個月
+  general:
+    - "Itraconazole 5 mg/kg PO q12h（Blastomyces、Histoplasma 首選口服藥物）"
+    - "Fluconazole 5-10 mg/kg PO q12h（Cryptococcus 首選，良好 CNS 穿透性）"
+    - "嚴重病例：Amphotericin B 脂質體 1-2 mg/kg IV q48h（誘導期）"
+    - "Coccidioides：Fluconazole 或 Itraconazole 長期治療"
+    - 治療持續至臨床與影像學緩解後再延長 1 個月
+
+prognosis: 預後取決於真菌種類與感染範圍。Blastomyces 肺炎治療反應率約 70-80%。Histoplasma 預後類似。Coccidioides 可能需終身治療。嚴重瀰漫性感染或 CNS 累及者預後較差。治療中斷可導致復發。
+
+pubmedQueries:
+  - query: '"fungal pneumonia" AND (veterinary OR canine OR feline) AND ("itraconazole" OR "treatment")'
+    frequency: monthly

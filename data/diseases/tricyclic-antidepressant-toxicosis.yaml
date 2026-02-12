@@ -1,0 +1,85 @@
+slug: tricyclic-antidepressant-toxicosis
+nameEn: Tricyclic Antidepressant Toxicosis
+nameZh: 三環抗憂鬱藥中毒
+bodySystem: toxicology
+description: 三環抗憂鬱藥 (tricyclic antidepressants, TCA) 中毒因犬貓誤食飼主藥物或獸醫處方過量引起。常見藥物包括 amitriptyline、clomipramine、doxepin。TCA 中毒具有心臟毒性（QRS 延長、心律不整）、癲癇與抗膽鹼效應三大特徵，可迅速致命。
+
+aliases:
+  - { alias: TCA 中毒, language: zh }
+  - { alias: 三環類藥物中毒, language: zh }
+  - { alias: TCA Toxicosis, language: en }
+  - { alias: Tricyclic Antidepressant Overdose, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬為 clomipramine（Clomicalm）處方對象（分離焦慮）。Amitriptyline 亦用於犬行為問題。犬致死劑量約 15 mg/kg（amitriptyline）。心臟毒性為主要致死機制。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓使用 amitriptyline 治療標記行為與焦慮。貓對 TCA 敏感，少量即可引起嚴重症狀。
+
+etiology:
+  categories:
+    - name: 毒性機制
+      examples:
+        - 抑制 norepinephrine 與 serotonin 再攝取
+        - 阻斷快速鈉通道→QRS 延長、心律不整
+        - 抗膽鹼作用→竇性心搏過速、尿滯留、瞳孔散大
+        - 抗組織胺效應→鎮靜
+        - α-adrenergic 阻斷→低血壓
+    - name: 常見來源
+      examples:
+        - Amitriptyline (Elavil)
+        - Clomipramine (Clomicalm/Anafranil)
+        - Doxepin
+        - Nortriptyline
+        - Imipramine
+
+clinicalSigns:
+  early:
+    - 嗜睡或躁動（雙向性）
+    - 心搏過速
+    - 瞳孔散大
+    - 口乾
+  progressive:
+    - QRS 延長（>120 ms 為危險）
+    - 室性心律不整（VT、VF）
+    - 癲癇
+    - 低血壓
+    - 昏迷
+    - 呼吸抑制
+    - 死亡（心律不整或癲癇）
+
+diagnosis:
+  primaryTests:
+    - name: 暴露史
+      notes: 確認 TCA 藥物種類與攝入量
+    - name: 心電圖
+      notes: QRS >120 ms 為嚴重心臟毒性指標。aVR 導程 R 波 >3 mm 具預測價值
+  additional:
+    - 血壓監測
+    - 動脈血氣（酸鹼平衡）
+    - 血清藥物濃度（如可取得）
+    - 生化（電解質）
+
+treatment:
+  principles:
+    - Sodium bicarbonate 為心臟毒性的特異性治療
+    - 控制癲癇
+    - 維持血壓
+    - 去汙染
+  general:
+    - 催吐（攝入 30 分鐘內、意識清醒）+ 活性炭（多次）
+    - "Sodium bicarbonate 1-2 mEq/kg IV bolus（QRS >120 ms 時），維持血液 pH 7.45-7.55"
+    - 癲癇：diazepam（避免 phenytoin）
+    - 低血壓：IV 輸液 ± norepinephrine（避免 dopamine）
+    - 心律不整：sodium bicarbonate 為首選。Lidocaine 可考慮用於室性心律不整
+    - Intralipid 20% 1.5 mL/kg IV（難治性心臟毒性）
+    - 避免 class IA、IC 抗心律不整藥
+    - 持續心電圖監測 24-48 小時
+
+prognosis: TCA 中毒為藥物中毒中致死率較高的類別。QRS >160 ms 與癲癇發作為不良預後指標。及時 sodium bicarbonate 治療可顯著改善心臟毒性。存活度過前 24 小時者多可完全恢復。
+
+pubmedQueries:
+  - query: '"tricyclic antidepressant" AND (toxicosis OR poisoning) AND (veterinary OR canine OR feline) AND ("sodium bicarbonate" OR "treatment")'
+    frequency: monthly

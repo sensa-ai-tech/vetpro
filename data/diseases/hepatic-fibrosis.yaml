@@ -1,0 +1,69 @@
+slug: hepatic-fibrosis
+nameEn: Hepatic Fibrosis
+nameZh: 肝纖維化
+bodySystem: hepatic
+description: 肝纖維化為肝臟對慢性損傷的修復反應，以過度膠原蛋白沉積（collagen deposition）為特徵。為可逆性病理變化（與肝硬化不同），若基礎病因移除可能改善。犬隻常見原因包括慢性肝炎、銅蓄積性肝病與藥物性肝損傷。
+
+aliases:
+  - { alias: 肝臟纖維化, language: zh }
+  - { alias: Liver Fibrosis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻肝纖維化常見於慢性肝炎。銅蓄積性肝病品種（Bedlington Terrier、Labrador）風險高。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻肝纖維化可見於慢性膽管炎、FIP 等慢性肝臟疾病。
+
+etiology:
+  categories:
+    - name: 慢性肝臟疾病
+      examples:
+        - 慢性肝炎（特發性或免疫介導性）
+        - 銅蓄積性肝病
+        - 慢性膽管炎（貓）
+        - 藥物性慢性肝損傷
+    - name: 其他原因
+      examples:
+        - 慢性膽汁淤滯
+        - 慢性右心衰竭（肝臟被動充血）
+        - 先天性門脈發育不良
+
+clinicalSigns:
+  early:
+    - 多數早期無明顯症狀
+    - 輕度食慾下降
+    - 偶有嘔吐
+  progressive:
+    - 體重減輕
+    - 多飲多尿
+    - 腹水（門脈高壓時）
+    - 黃疸
+    - 肝性腦病（進展至肝硬化時）
+
+diagnosis:
+  primaryTests:
+    - name: 肝臟活檢（組織病理學）
+      notes: 確診金標準。評估纖維化程度（分期）。Masson trichrome 或 Sirius red 特殊染色可視化膠原蛋白。確認基礎病因（銅染色、炎症分型）。
+    - name: 腹部超音波
+      notes: 肝臟回音性增加。肝臟邊緣不規則。門脈血流異常。腹水。超音波無法確診纖維化。
+
+treatment:
+  principles:
+    - 治療並移除基礎病因為核心
+    - 抗纖維化治療
+    - 肝保護支持療法
+  general:
+    - 治療基礎病因（銅蓄積→D-Penicillamine、免疫介導性→免疫抑制劑）
+    - "肝保護：SAMe 20 mg/kg PO q24h"
+    - "抗氧化：Vitamin E 10 IU/kg PO q24h"
+    - "Ursodeoxycholic acid 10-15 mg/kg PO q24h（利膽、抗纖維化）"
+    - 低銅飲食（銅蓄積性肝病者）
+    - 定期肝臟生化追蹤
+
+prognosis: 肝纖維化為可逆性病變，若基礎病因移除或控制可能改善。早期纖維化預後優於晚期。銅蓄積性肝病若早期診斷並開始螯合治療預後良好。進展至肝硬化則為不可逆。定期監測肝功能指標很重要。
+
+pubmedQueries:
+  - query: '"hepatic fibrosis" OR "liver fibrosis" AND (veterinary OR canine OR feline) AND ("treatment" OR "antifibrotic")'
+    frequency: monthly

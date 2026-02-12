@@ -1,0 +1,70 @@
+slug: sick-sinus-syndrome
+nameEn: Sick Sinus Syndrome
+nameZh: 病竇症候群
+bodySystem: cardiac
+description: 病竇症候群（SSS）為竇房結功能障礙所致的一組心律不整，包括持續性竇性心搏過緩、竇性停止、竇房傳導阻滯，以及交替出現的心搏過緩與心搏過速（brady-tachy syndrome）。好發於中老年 Miniature Schnauzer、West Highland White Terrier 及 Cocker Spaniel。
+
+aliases:
+  - { alias: SSS, language: en }
+  - { alias: Brady-Tachy Syndrome, language: en }
+  - { alias: 病態竇房結症候群, language: zh }
+  - { alias: Sinus Node Dysfunction, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 好發品種：Miniature Schnauzer（最常見）、West Highland White Terrier、Cocker Spaniel、Dachshund。中老年母犬好發。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻罕見，多為個案報告。
+
+etiology:
+  categories:
+    - name: 退行性變化
+      examples:
+        - 竇房結纖維化與脂肪浸潤
+        - 年齡相關退行性變化
+        - 品種遺傳傾向（Miniature Schnauzer）
+    - name: 繼發性原因
+      examples:
+        - 心肌病
+        - 心肌炎
+        - 藥物影響（β-blocker、鈣離子通道阻斷劑、digoxin 過量）
+        - 高血鉀
+        - 甲狀腺功能低下
+
+clinicalSigns:
+  early:
+    - 間歇性虛弱
+    - 運動不耐
+    - 心率緩慢（<40-60 bpm）
+  progressive:
+    - 反覆昏厥（Stokes-Adams 發作）
+    - 嚴重嗜睡
+    - Brady-tachy syndrome：交替出現心搏過緩與室上性心搏過速
+    - 猝死（罕見）
+
+diagnosis:
+  primaryTests:
+    - name: 心電圖（ECG）
+      notes: "特徵性表現：持續竇性心搏過緩、竇性停止（>2-3 秒）、竇房傳導阻滯。Brady-tachy syndrome 可見心搏過緩與室上性心搏過速交替。逸搏心律（escape rhythm）通常為交界性或心室性。"
+    - name: Atropine 反應試驗
+      notes: "Atropine 0.04 mg/kg IV 後心率應升至 >150 bpm（犬）。SSS 患者反應不良或無反應，有助於確認竇房結功能障礙（但非絕對敏感或特異）。"
+
+treatment:
+  principles:
+    - 有臨床症狀的 SSS 永久性心律調節器為首選治療
+    - 無症狀者可監測觀察
+    - 藥物治療效果有限
+  general:
+    - 永久性心律調節器植入（首選，可顯著改善臨床症狀與生活品質）
+    - "暫時性治療：Theophylline 10 mg/kg PO q12h（效果有限）"
+    - "Terbutaline 0.1-0.2 mg/kg PO q8-12h（β-agonist，短期緩解）"
+    - 停用可能加重心搏過緩的藥物
+    - Brady-tachy syndrome 在植入調節器前不宜單獨使用抗心律不整藥物
+
+prognosis: 植入永久性心律調節器後預後良好，多數犬隻昏厥症狀消失，可恢復正常活動。未治療的有症狀 SSS 預後較差，反覆昏厥影響生活品質。無症狀的輕度 SSS 可能長期穩定。
+
+pubmedQueries:
+  - query: '"sick sinus syndrome" AND (veterinary OR canine) AND ("pacemaker" OR "treatment")'
+    frequency: monthly

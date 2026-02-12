@@ -1,0 +1,84 @@
+slug: ivermectin-toxicosis
+nameEn: Ivermectin Toxicosis
+nameZh: 伊維菌素中毒
+bodySystem: toxicology
+description: 伊維菌素 (ivermectin) 中毒常見於 MDR1 基因突變犬種（如 Collie、Australian Shepherd）或劑量過高時。Ivermectin 增強 GABA 受體抑制性神經傳導，MDR1 突變犬血腦屏障 P-glycoprotein 功能缺陷導致藥物在腦內蓄積。
+
+aliases:
+  - { alias: 伊維菌素藥物中毒, language: zh }
+  - { alias: MDR1 相關藥物中毒, language: zh }
+  - { alias: Ivermectin Poisoning, language: en }
+  - { alias: Macrocyclic Lactone Toxicosis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: MDR1 (ABCB1) 基因突變犬種高度易感。Collie 約 70% 帶有突變。正常犬高劑量（>2 mg/kg）也可中毒。牛用 ivermectin 製劑為常見意外來源。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓一般對正常劑量 ivermectin 耐受。幼貓或極高劑量可能出現毒性。
+
+etiology:
+  categories:
+    - name: 毒性機制
+      examples:
+        - Ivermectin 增強 GABA 受體介導的氯離子通道開放
+        - 導致中樞神經系統抑制
+        - P-glycoprotein（MDR1 基因編碼）正常排出腦內 ivermectin
+        - MDR1 突變犬血腦屏障功能缺陷，藥物蓄積
+    - name: 高風險犬種
+      examples:
+        - Collie（約 70% MDR1 突變攜帶率）
+        - Australian Shepherd
+        - Shetland Sheepdog
+        - Old English Sheepdog
+        - Border Collie
+
+clinicalSigns:
+  early:
+    - 瞳孔散大 (mydriasis)
+    - 嗜睡
+    - 共濟失調
+    - 過度流涎
+  progressive:
+    - 嚴重嗜睡至昏迷
+    - 失明（暫時性）
+    - 震顫
+    - 呼吸抑制
+    - 心動過緩
+    - 低體溫
+    - 昏迷可持續數天至數週
+
+diagnosis:
+  primaryTests:
+    - name: 病史確認
+      notes: 確認 ivermectin 暴露（劑量、來源）、犬種與 MDR1 基因型。瞳孔散大為早期指標
+    - name: MDR1 基因型檢測
+      notes: 可確認遺傳易感性（mut/mut 為純合突變，風險最高）。建議高風險犬種預先篩檢
+  additional:
+    - 血漿 ivermectin 濃度（非常規可用）
+    - CBC 與生化（通常正常）
+    - 神經學檢查
+
+treatment:
+  principles:
+    - 無特效解毒劑
+    - 長期支持療法
+    - 昏迷期可能持續數天至數週
+    - 避免使用 GABA 增強劑
+  general:
+    - 攝入早期催吐 + 活性炭
+    - IV 輸液維持水分與電解質
+    - Lipid emulsion therapy（20% intralipid，加速脂溶性藥物清除）
+    - 營養支持（管飼）
+    - 翻身防褥瘡（長期昏迷）
+    - 眼藥保護（昏迷期角膜乾燥）
+    - 避免使用 barbiturate、benzodiazepine（增強 GABA 抑制）
+    - 膀胱護理
+    - 住院可能需 1-4 週
+
+prognosis: 犬 ivermectin 中毒積極支持療法存活率可良好。恢復可能需數天至數週（取決於劑量）。MDR1 純合突變犬即使低劑量也可嚴重中毒。完全恢復後通常無永久性神經後遺症。
+
+pubmedQueries:
+  - query: '"ivermectin toxicosis" OR "MDR1" AND (canine OR veterinary) AND ("treatment" OR "P-glycoprotein")'
+    frequency: monthly

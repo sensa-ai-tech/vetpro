@@ -1,0 +1,66 @@
+slug: gastrointestinal-stromal-tumor
+nameEn: Gastrointestinal Stromal Tumor
+nameZh: 胃腸道基質腫瘤
+bodySystem: gastrointestinal
+description: 胃腸道基質腫瘤（GIST）為起源於腸壁 Cajal 間質細胞（interstitial cells of Cajal）的間葉腫瘤，以 c-Kit（CD117）陽性為免疫組化特徵。犬隻GIST 為最常見的腸道間葉腫瘤。可為良性或惡性，標靶治療（酪胺酸激酶抑制劑）為重要治療選擇。
+
+aliases:
+  - { alias: GIST, language: en }
+  - { alias: 胃腸基質瘤, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻 GIST 為最常見的腸道間葉腫瘤（較平滑肌瘤/肉瘤更常見）。中老年犬好發。大腸與小腸均可發生。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻 GIST 罕見。
+
+etiology:
+  categories:
+    - name: 腫瘤特性
+      examples:
+        - 起源於 Cajal 間質細胞（腸道起搏細胞）
+        - c-Kit（CD117）陽性為特徵
+        - c-Kit 受體突變導致持續活化
+    - name: 生物學行為
+      examples:
+        - 低有絲分裂指數者趨良性
+        - 高有絲分裂指數者有轉移潛力
+        - 肝臟為最常見轉移部位
+
+clinicalSigns:
+  early:
+    - 慢性嘔吐或腹瀉
+    - 體重減輕
+    - 偶發腹部不適
+  progressive:
+    - 腹部觸及腫塊
+    - 便血或黑便
+    - 腸阻塞
+    - 貧血
+    - 腹膜炎（穿孔時）
+
+diagnosis:
+  primaryTests:
+    - name: 腹部超音波
+      notes: 腸壁源性腫塊。評估肝臟轉移。引導下細針穿刺可初步評估但確診需組織學。
+    - name: 組織病理學 + 免疫組化
+      notes: "確診必須。c-Kit（CD117）陽性為 GIST 特徵。DOG-1 陽性。Desmin/SMA 陰性或弱陽性（與平滑肌腫瘤鑑別）。"
+
+treatment:
+  principles:
+    - 手術切除為首要
+    - 標靶治療（酪胺酸激酶抑制劑）為重要輔助
+    - 不完全切除或轉移者標靶治療效果佳
+  general:
+    - 腸切除吻合術（廣範圍切除）
+    - "Toceranib（Palladia）2.75 mg/kg PO EOD（標靶治療，c-Kit 突變 GIST 反應率高）"
+    - "Imatinib 5-10 mg/kg PO q24h（人類 GIST 藥物，犬隻初步報告有效）"
+    - 定期追蹤影像學監測
+
+prognosis: 手術完全切除後預後良好，中位存活時間可達 1-3 年。低有絲分裂指數者預後更好。Toceranib 標靶治療對不完全切除或轉移性 GIST 有明顯效果。c-Kit exon 11 突變者對標靶治療反應最佳。
+
+pubmedQueries:
+  - query: '"gastrointestinal stromal tumor" AND (veterinary OR canine) AND ("c-kit" OR "toceranib" OR "treatment")'
+    frequency: monthly

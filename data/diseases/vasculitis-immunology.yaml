@@ -1,0 +1,80 @@
+slug: vasculitis-immunology
+nameEn: Vasculitis
+nameZh: 血管炎
+bodySystem: immunology
+description: 血管炎 (vasculitis) 為免疫介導性血管壁炎症，可侵犯皮膚、腎臟、關節等多個器官系統。犬的血管炎可為原發性（免疫介導）或繼發於感染、藥物、疫苗、腫瘤等。皮膚血管炎為最常見表現形式。
+
+aliases:
+  - { alias: 免疫介導性血管炎, language: zh }
+  - { alias: Cutaneous Vasculitis, language: en }
+  - { alias: Immune-Mediated Vasculitis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬血管炎型態多樣。好發品種：Dachshund（pinnal margin vasculopathy）、German Shepherd、Rottweiler。皮膚型最常見。耳尖、尾尖、足墊為好發部位。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓血管炎較犬少見。可與 FeLV、FIV 感染相關。
+
+etiology:
+  categories:
+    - name: 致病機制
+      examples:
+        - 第三型過敏反應（免疫複合物沉積於血管壁）
+        - 補體活化與嗜中性球浸潤
+        - 血管壁損傷→缺血性壞死
+        - 可為白血球碎裂性 (leukocytoclastic) 或淋巴球性
+    - name: 潛在原因
+      examples:
+        - 感染（Rickettsia、Ehrlichia、Leishmania）
+        - 藥物反應
+        - 疫苗反應（狂犬病疫苗接種部位血管炎）
+        - 腫瘤（副腫瘤症候群）
+        - 食物過敏（罕見）
+        - 原發性免疫介導（排除性診斷）
+
+clinicalSigns:
+  early:
+    - 皮膚紫斑（瘀斑、瘀點）
+    - 皮膚紅斑與水腫
+    - 耳尖或尾尖壞死
+  progressive:
+    - 皮膚潰瘍與壞死
+    - 足墊潰瘍
+    - 發燒
+    - 全身性：腎絲球腎炎、關節炎
+    - 嚴重者：多器官受累
+
+diagnosis:
+  primaryTests:
+    - name: 皮膚生檢
+      notes: 血管壁與血管周圍炎症細胞浸潤，血管壁纖維素壞死，紅血球外滲
+    - name: 感染疾病篩檢
+      notes: 排除 Rickettsia、Ehrlichia、Leishmania 等感染原因
+  additional:
+    - CBC、生化
+    - 尿液分析（蛋白尿 — 腎絲球腎炎）
+    - ANA
+    - 免疫螢光（血管壁免疫複合物沉積）
+    - 傳染病血清學/PCR
+
+treatment:
+  principles:
+    - 找出並治療潛在原因
+    - 免疫抑制（原發性）
+    - 改善血管灌注
+  general:
+    - 治療潛在原因（感染→抗生素，藥物→停藥）
+    - Prednisolone 1-2 mg/kg/day（免疫抑制）
+    - Doxycycline（經驗性，涵蓋壁蝨傳播疾病）
+    - Pentoxifylline 10-15 mg/kg PO BID-TID（改善微循環）
+    - Azathioprine 或 mycophenolate（steroid-sparing）
+    - 傷口護理（皮膚潰瘍）
+    - Vitamin E 補充
+
+prognosis: 血管炎預後取決於潛在原因與受累器官。感染相關型在消除感染後多數可控。原發性免疫介導型需長期免疫抑制。皮膚局限型預後佳。合併腎絲球腎炎者預後較差。
+
+pubmedQueries:
+  - query: '"vasculitis" AND (veterinary OR canine OR feline) AND ("treatment" OR "immune-mediated" OR "diagnosis")'
+    frequency: monthly

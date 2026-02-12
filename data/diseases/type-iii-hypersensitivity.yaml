@@ -1,0 +1,82 @@
+slug: type-iii-hypersensitivity
+nameEn: Type III Hypersensitivity
+nameZh: 第三型過敏反應
+bodySystem: immunology
+description: 第三型過敏反應（免疫複合物型過敏反應）為抗原抗體形成免疫複合物沉積於組織，活化補體引起局部或全身性炎症。犬貓代表性疾病包括全身性紅斑狼瘡 (SLE)、免疫複合物腎絲球腎炎、血管炎與血清病。
+
+aliases:
+  - { alias: 免疫複合物型過敏反應, language: zh }
+  - { alias: Immune Complex Hypersensitivity, language: en }
+  - { alias: Arthus Reaction, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬 SLE 好發 German Shepherd、Collie、Shetland Sheepdog。免疫複合物腎絲球腎炎為常見腎病原因。慢性感染（heartworm、ehrlichiosis）亦可引起第三型反應。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓 FIP（貓傳染性腹膜炎）部分涉及第三型過敏反應機制。免疫複合物腎病在貓亦有報告。
+
+etiology:
+  categories:
+    - name: 致病機制
+      examples:
+        - 循環免疫複合物沉積於小血管
+        - 補體活化（C3a、C5a）
+        - 嗜中性球趨化與活化
+        - 血管壁損傷→血管炎、腎絲球腎炎
+    - name: 反應型態
+      examples:
+        - 局部型（Arthus reaction）：注射部位免疫複合物沉積
+        - 全身型（血清病型）：循環免疫複合物廣泛沉積
+    - name: 代表性疾病
+      examples:
+        - 全身性紅斑狼瘡 (SLE)
+        - 免疫複合物腎絲球腎炎
+        - 血管炎
+        - 血清病
+        - 慢性感染相關免疫複合物病
+
+clinicalSigns:
+  early:
+    - 發燒
+    - 關節腫脹與疼痛
+    - 皮膚紅疹
+  progressive:
+    - SLE：多系統侵犯（皮膚、關節、腎臟、血球減少）
+    - 腎絲球腎炎：蛋白尿、水腫、腎衰竭
+    - 血管炎：皮膚紫斑、潰瘍
+    - 淋巴結腫大
+
+diagnosis:
+  primaryTests:
+    - name: ANA（抗核抗體）
+      notes: SLE 診斷關鍵。ANA 陽性 + 多器官侵犯
+    - name: 尿液分析
+      notes: 蛋白尿（UPC >0.5）提示腎絲球腎炎
+  additional:
+    - CBC（全血球減少 — SLE）
+    - 生化（BUN、creatinine）
+    - 關節液分析
+    - 腎臟生檢（免疫螢光見 Ig/C3 沉積）
+    - LE cell 試驗（特異性高但敏感度低）
+    - 傳染病篩檢
+
+treatment:
+  principles:
+    - 免疫抑制
+    - 治療潛在原因（感染）
+    - 器官保護
+  general:
+    - Prednisolone 2 mg/kg/day（誘導）
+    - Azathioprine 或 mycophenolate（steroid-sparing）
+    - 腎絲球腎炎：ACE inhibitor（benazepril）+ 低蛋白飲食
+    - 慢性感染相關：治療原發感染
+    - 血栓預防（低劑量 aspirin）
+    - 長期免疫抑制管理
+
+prognosis: 第三型過敏反應疾病預後取決於受累器官與嚴重度。SLE 為慢性進行性疾病，需終身免疫抑制。腎絲球腎炎進展至腎衰竭者預後差。感染相關免疫複合物病在消除感染後多可改善。
+
+pubmedQueries:
+  - query: '"type III hypersensitivity" OR "immune complex" AND (veterinary OR canine OR feline) AND ("glomerulonephritis" OR "SLE" OR "treatment")'
+    frequency: monthly

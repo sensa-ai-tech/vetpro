@@ -1,0 +1,77 @@
+slug: structural-epilepsy
+nameEn: Structural Epilepsy
+nameZh: 結構性癲癇
+bodySystem: neurology
+description: 結構性癲癇為因可辨識的腦部結構性病變導致的反覆癲癇發作。與特發性癲癇不同，結構性癲癇有明確的腦部病因（腫瘤、腦炎、腦血管疾病、先天畸形等）。犬隻 >6 歲首次發作的癲癇需高度懷疑結構性原因。腦部 MRI 為診斷關鍵。
+
+aliases:
+  - { alias: 症狀性癲癇, language: zh }
+  - { alias: Symptomatic Epilepsy, language: en }
+  - { alias: Secondary Epilepsy, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬隻結構性癲癇在老年犬（>6 歲首發）常見。腦腫瘤為最常見結構性原因。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓隻癲癇中結構性原因比例較犬隻高（約 50%）。腦膜瘤、FIP、淋巴瘤為常見原因。
+
+etiology:
+  categories:
+    - name: 腫瘤性
+      examples:
+        - 腦膜瘤
+        - 膠質瘤
+        - 淋巴瘤
+        - 脈絡叢腫瘤
+        - 轉移性腫瘤
+    - name: 炎症性
+      examples:
+        - 肉芽腫性腦膜腦炎（GME）
+        - 壞死性腦炎（NME/NLE）
+        - FIP 腦炎
+        - Toxoplasma/Neospora 腦炎
+    - name: 血管性/其他
+      examples:
+        - 腦梗塞（cerebral infarct）
+        - 腦出血
+        - 先天性水腦症
+        - 創傷後疤痕
+
+clinicalSigns:
+  early:
+    - 首次癲癇發作（特別是 >6 歲犬隻）
+    - 發作間期神經學異常
+    - 行為改變
+  progressive:
+    - 癲癇發作頻率增加
+    - 發作間期神經缺損加重
+    - 基礎疾病相關症狀（前旋、視力喪失等）
+    - 癲癇重積狀態（status epilepticus）
+
+diagnosis:
+  primaryTests:
+    - name: 腦部 MRI
+      notes: 診斷關鍵。辨識結構性病變（腫瘤、炎症、血管病變、畸形）。所有 >6 歲首發癲癇犬隻與所有貓隻癲癇均建議 MRI。
+    - name: CSF 分析
+      notes: 炎症性原因的輔助診斷。白血球計數、蛋白質、細胞學。感染性 PCR 檢測。MRI + CSF 綜合評估。
+
+treatment:
+  principles:
+    - 治療基礎結構性原因
+    - 抗癲癇藥物控制發作
+    - 根據基礎原因決定治療方案
+  general:
+    - 治療基礎原因（腫瘤→手術/放射治療、腦炎→免疫抑制/抗感染）
+    - "抗癲癇藥物：Levetiracetam 20-30 mg/kg PO q8h（首選，肝毒性低）"
+    - "Phenobarbital 2-3 mg/kg PO q12h（有效但肝毒性）"
+    - "Zonisamide 5-10 mg/kg PO q12h（犬隻）"
+    - 癲癇重積處理（Diazepam IV/rectal → Levetiracetam IV → Phenobarbital IV）
+    - 長期抗癲癇藥物可能無法完全控制（因基礎病變持續存在）
+
+prognosis: 預後取決於基礎結構性原因。腦腫瘤相關癲癇預後取決於腫瘤類型與治療。炎症性原因（GME、NME）預後不一但可能對免疫抑制治療有反應。感染性原因（Toxoplasma）治療後可能改善。結構性癲癇整體較特發性癲癇更難以藥物完全控制。
+
+pubmedQueries:
+  - query: '"structural epilepsy" OR "symptomatic epilepsy" AND (veterinary OR canine OR feline) AND ("treatment" OR "MRI" OR "outcome")'
+    frequency: monthly

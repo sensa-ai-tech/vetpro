@@ -1,0 +1,65 @@
+slug: contact-dermatitis
+nameEn: Contact Dermatitis
+nameZh: 接觸性皮膚炎
+bodySystem: dermatology
+description: 皮膚直接接觸刺激物或過敏原後引起的局部炎症反應。分為刺激性接觸皮膚炎（直接化學損傷）與過敏性接觸皮膚炎（延遲型過敏反應）。病灶分布於無毛或毛髮稀疏的接觸區域。
+
+aliases:
+  - { alias: "Irritant Contact Dermatitis", language: en }
+  - { alias: "Allergic Contact Dermatitis", language: en }
+  - { alias: "接觸性過敏", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬偶見。腹部、腋下、鼠蹊部等無毛區域為好發部位。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓罕見，因厚毛覆蓋保護。
+
+etiology:
+  categories:
+    - name: 刺激性
+      examples:
+        - 清潔劑、消毒劑
+        - 肥料、除草劑
+        - 地毯化學物質
+    - name: 過敏性（IV型過敏）
+      examples:
+        - 塑膠/橡膠（食碗）
+        - 植物（毒常春藤）
+        - 藥物（Neomycin 外用）
+
+clinicalSigns:
+  early:
+    - 接觸區紅斑
+    - 搔癢
+    - 丘疹
+  progressive:
+    - 水泡或膿皰
+    - 皮膚增厚苔蘚化
+    - 脫毛
+    - 色素沉著
+
+diagnosis:
+  primaryTests:
+    - name: 病史與接觸史
+      notes: 病灶分布與接觸區域一致。移除可疑物後改善
+    - name: 貼片試驗
+      notes: 過敏性接觸皮膚炎的確診方式，但臨床不常用
+
+treatment:
+  principles:
+    - 辨識並避免接觸致敏物
+    - 局部抗炎治療
+  general:
+    - 移除接觸物（更換食碗材質、避免特定地面）
+    - 局部類固醇藥膏
+    - 全身性止癢（嚴重時）
+    - 屏障保護（穿衣服或鞋套）
+
+prognosis: 辨識並避免接觸物後預後極佳。無法避免接觸時需長期管理。
+
+pubmedQueries:
+  - query: '"contact dermatitis" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "treatment")'
+    frequency: monthly

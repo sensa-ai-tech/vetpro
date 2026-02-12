@@ -1,0 +1,83 @@
+slug: thoracic-trauma
+nameEn: Thoracic Trauma
+nameZh: 胸部創傷
+bodySystem: emergency
+description: 胸部創傷包括鈍性（車禍、踢傷）與穿透性（咬傷、異物）胸部損傷，可導致氣胸、血胸、肺挫傷、連枷胸與膈疝。為創傷犬貓的主要死因之一。初始穩定需遵循 ABC 原則，胸腔穿刺為緊急介入。
+
+aliases:
+  - { alias: 胸腔外傷, language: zh }
+  - { alias: Chest Trauma, language: en }
+  - { alias: Thoracic Injury, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬胸部創傷常見於車禍。肺挫傷為最常見損傷（可能延遲數小時表現）。氣胸需緊急減壓。膈疝可在外傷後數天至數月才被發現。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓胸部創傷常見於高處墜落與車禍。貓較犬更易發生膈疝。氣胸在貓亦常見。
+
+etiology:
+  categories:
+    - name: 鈍性損傷
+      examples:
+        - 車禍（最常見）
+        - 踢傷
+        - 高處墜落
+        - 壓傷
+    - name: 胸部損傷類型
+      examples:
+        - 氣胸（開放性或閉鎖性）
+        - 血胸
+        - 肺挫傷
+        - 連枷胸 (flail chest)
+        - 膈疝 (diaphragmatic hernia)
+        - 肋骨骨折
+        - 心臟挫傷
+
+clinicalSigns:
+  early:
+    - 呼吸困難（最常見主訴）
+    - 呼吸淺快
+    - 胸壁疼痛
+    - 發紺
+  progressive:
+    - 呼吸衰竭
+    - 低血壓（血胸、張力性氣胸）
+    - 腹部器官移位至胸腔（膈疝）
+    - 心律不整（心臟挫傷）
+    - 休克
+
+diagnosis:
+  primaryTests:
+    - name: 胸部 X-ray
+      notes: 氣胸（肺葉塌陷、心臟上抬）、血胸（液體線）、肺挫傷（肺泡型態）、膈疝
+    - name: TFAST 超音波
+      notes: 快速評估胸腔液體、氣胸（滑動征消失）、心包液
+  additional:
+    - 動脈血氣
+    - 心電圖（心臟挫傷→心律不整）
+    - 心肌 troponin I
+    - CT（複雜損傷詳細評估）
+
+treatment:
+  principles:
+    - ABC 穩定
+    - 緊急胸腔減壓（氣胸、血胸）
+    - 氧氣補充
+    - 手術（膈疝、持續出血、開放性胸部傷口）
+  general:
+    - 氧氣補充
+    - 氣胸：胸腔穿刺術 (thoracocentesis) 或胸管引流
+    - 血胸：胸腔穿刺引流 + IV 輸液/輸血
+    - 肺挫傷：氧氣 + 輸液管理（避免過度輸液）+ 止痛
+    - 膈疝：穩定後手術修補
+    - 連枷胸：止痛（肋間神經阻斷）+ 氧氣
+    - 開放性傷口：三面貼紮封閉
+    - 止痛（opioids、局部阻斷）
+
+prognosis: 胸部創傷整體存活率約 60-80%。單純氣胸預後佳。肺挫傷多數 3-5 天改善。膈疝手術修補預後佳（慢性較急性佳）。大量血胸合併休克預後較差。
+
+pubmedQueries:
+  - query: '"thoracic trauma" AND (veterinary OR canine OR feline) AND ("treatment" OR "pneumothorax" OR "emergency")'
+    frequency: monthly

@@ -1,0 +1,73 @@
+slug: tapeworm-infection
+nameEn: Tapeworm Infection
+nameZh: 絛蟲感染
+bodySystem: infectious
+description: 絛蟲感染由多種絛蟲引起，犬貓最常見為 Dipylidium caninum（跳蚤絛蟲）與 Taenia spp.。需中間宿主完成生活史。飼主常因發現寵物肛門或糞便中的節片（似米粒）而就診。多數感染輕微，嚴重蟲荷量可影響營養吸收。
+
+aliases:
+  - { alias: 條蟲感染, language: zh }
+  - { alias: 絛蟲病, language: zh }
+  - { alias: Cestode Infection, language: en }
+  - { alias: Tapeworm Disease, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: D. caninum 經攝食感染跳蚤傳播。Taenia spp. 經攝食中間宿主（嚙齒類、兔）傳播。Echinococcus spp. 為重要人畜共通絛蟲（需特別注意）。
+  - speciesCommon: cat
+    prevalence: common
+    notes: D. caninum 為貓最常見絛蟲。戶外捕獵貓可能感染 Taenia taeniaeformis。Echinococcus multilocularis 在部分地區為公衛問題。
+
+etiology:
+  categories:
+    - name: 常見絛蟲種
+      examples:
+        - Dipylidium caninum（跳蚤絛蟲，最常見）
+        - Taenia pisiformis / T. taeniaeformis
+        - Echinococcus granulosus / E. multilocularis（人畜共通）
+        - Mesocestoides spp.
+    - name: 傳播途徑
+      examples:
+        - D. caninum 經攝食含囊尾蚴的跳蚤
+        - Taenia 經攝食含囊尾蚴的中間宿主
+        - Echinococcus 經攝食含水泡囊的中間宿主內臟
+
+clinicalSigns:
+  early:
+    - 肛門周圍可見蠕動的白色節片（似米粒或芝麻）
+    - 糞便中可見節片
+    - 肛門搔癢（拖地行為 scooting）
+  progressive:
+    - 輕度消化道症狀（偶見嘔吐）
+    - 嚴重感染可引起營養不良
+    - 幼畜生長遲緩
+    - 多數感染為輕微或無症狀
+
+diagnosis:
+  primaryTests:
+    - name: 節片觀察
+      notes: 肛門或糞便中可見白色活動節片為最常見發現方式。D. caninum 節片似米粒，Taenia 節片較大
+    - name: 糞便浮游法
+      notes: 絛蟲蟲卵不常見於糞便浮游（節片內釋放）。D. caninum 卵囊含多個蟲卵。敏感度低
+  additional:
+    - Echinococcus 需糞便 PCR 確認（公衛重要性）
+    - 糞便抗原檢測（研究中）
+
+treatment:
+  principles:
+    - Praziquantel 為特效驅絛蟲藥
+    - 必須同時控制跳蚤（D. caninum）
+    - 注意人畜共通風險（Echinococcus）
+  general:
+    - Praziquantel 5 mg/kg PO 或 SC 單次（絛蟲特效）
+    - D. caninum 必須同時執行跳蚤控制
+    - Echinococcus 需 praziquantel + 嚴格環境管理
+    - 預防捕獵行為（減少 Taenia 感染）
+    - 定期糞便檢查
+    - 每月廣效驅蟲（含 praziquantel 成分）
+
+prognosis: 絛蟲感染預後極佳，單次 praziquantel 治療即可清除。再感染常見（未控制跳蚤或持續捕獵行為）。Echinococcus 感染需特別關注公衛防控。
+
+pubmedQueries:
+  - query: '"tapeworm" AND (veterinary OR canine OR feline) AND ("treatment" OR "Dipylidium" OR "Echinococcus")'
+    frequency: monthly

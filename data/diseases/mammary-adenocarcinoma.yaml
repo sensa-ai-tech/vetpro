@@ -1,0 +1,61 @@
+slug: mammary-adenocarcinoma
+nameEn: Mammary Adenocarcinoma
+nameZh: 乳腺腺癌
+bodySystem: oncology
+description: 乳腺上皮細胞的惡性腫瘤，為母犬最常見的惡性腫瘤之一。犬乳腺腫瘤約 50% 為惡性，貓則約 85% 以上為惡性。早期結紮可大幅降低風險。
+
+aliases:
+  - { alias: "Mammary Carcinoma", language: en }
+  - { alias: "乳腺癌", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 未結紮母犬常見。第一次發情前結紮風險幾乎為零。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓乳腺腫瘤惡性率極高（> 85%）。Siamese 好發。
+
+etiology:
+  categories:
+    - name: 賀爾蒙相關
+      examples:
+        - 黃體素與雌激素暴露
+        - 未結紮母犬風險高
+        - 早期結紮大幅降低風險
+
+clinicalSigns:
+  early:
+    - 乳腺區可觸及腫塊
+    - 腫塊硬實
+    - 多數無疼痛
+  progressive:
+    - 腫塊增大
+    - 潰瘍
+    - 區域淋巴結腫大
+    - 肺轉移
+
+diagnosis:
+  primaryTests:
+    - name: 細針穿刺
+      notes: 細胞學初步評估。確診需組織病理
+    - name: 胸腔 X 光
+      notes: 肺轉移篩檢（三視位）
+    - name: 腹部超音波
+      notes: 淋巴結與腹腔臟器評估
+
+treatment:
+  principles:
+    - 手術切除為主要治療
+    - 分期決定預後與後續治療
+  general:
+    - 乳腺切除術（犬：區域或單側鏈切除；貓：雙側鏈切除）
+    - 腫瘤大於 3 cm（犬）或任何大小（貓）考慮化療
+    - 化療（Doxorubicin 或 Carboplatin）
+    - 同時結紮
+
+prognosis: 犬 < 3 cm 腫瘤完全切除預後良好（中位存活 > 2 年）。犬 > 5 cm 或有轉移預後不良。貓乳腺腺癌預後較犬差（中位存活 1 年）。
+
+pubmedQueries:
+  - query: '"mammary adenocarcinoma" AND (veterinary OR canine OR feline) AND ("surgery" OR "chemotherapy")'
+    frequency: monthly

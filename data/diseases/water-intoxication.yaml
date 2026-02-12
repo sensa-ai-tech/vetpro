@@ -1,0 +1,79 @@
+slug: water-intoxication
+nameEn: Water Intoxication
+nameZh: 水中毒
+bodySystem: toxicology
+description: 水中毒 (water intoxication) 因短時間內大量攝水引起稀釋性低鈉血症，導致腦水腫與中樞神經系統損傷。犬常見於長時間水中玩耍（撿球、游泳時大量吞水）或飲水競賽後。進展快速，可在數小時內致命。
+
+aliases:
+  - { alias: 低鈉血症中毒, language: zh }
+  - { alias: 稀釋性低鈉血症, language: zh }
+  - { alias: Hyponatremia, language: en }
+  - { alias: Water Toxemia, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 好發於長時間水中活動的犬。小型犬風險較高（體重相對水攝入量比大）。撿水球活動為經典情境。進展迅速。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓水中毒極罕見（自然避水行為）。
+
+etiology:
+  categories:
+    - name: 致病機制
+      examples:
+        - 短時間大量攝水導致血漿稀釋
+        - 低鈉血症（血清鈉 <130 mEq/L）
+        - 血漿滲透壓下降
+        - 水分從血管進入腦細胞→腦水腫
+    - name: 高風險情境
+      examples:
+        - 水中撿球活動
+        - 長時間游泳
+        - 水管噴水玩耍
+        - 飲水競賽
+
+clinicalSigns:
+  early:
+    - 嗜睡
+    - 嘔吐
+    - 腹脹
+    - 共濟失調
+  progressive:
+    - 瞳孔散大
+    - 癲癇
+    - 昏迷
+    - 呼吸抑制
+    - 死亡（可在數小時內發生）
+
+diagnosis:
+  primaryTests:
+    - name: 血清鈉
+      notes: 低鈉血症（<130 mEq/L）確認。<120 mEq/L 為嚴重
+    - name: 血清滲透壓
+      notes: 低滲血症
+  additional:
+    - CBC（血容量增加稀釋效應）
+    - 尿液分析（極低比重尿）
+    - 神經學檢查
+
+treatment:
+  principles:
+    - 緩慢矯正低鈉血症
+    - 控制腦水腫
+    - 限制水分攝入
+    - 嚴重者慎用高張食鹽水
+  general:
+    - 限制水分攝入
+    - Furosemide 1-2 mg/kg IV（促進自由水排泄）
+    - 嚴重低鈉（<120 mEq/L）：3% 高張食鹽水 1-2 mL/kg IV 緩慢輸注
+    - 矯正速率：血鈉每小時升高 <0.5 mEq/L
+    - Mannitol（腦水腫管理）
+    - 癲癇控制
+    - 每 1-2 小時監測血鈉
+
+prognosis: 犬水中毒早期發現並適當矯正預後可良好。嚴重低鈉（<120 mEq/L）伴癲癇者預後謹慎。矯正過快可能引起滲透性脫髓鞘症候群。預防（限制水中玩耍時間、休息間隔）最為重要。
+
+pubmedQueries:
+  - query: '"water intoxication" OR "hyponatremia" AND (veterinary OR canine) AND ("treatment" OR "exercise")'
+    frequency: monthly

@@ -1,0 +1,70 @@
+slug: gastric-foreign-body
+nameEn: Gastric Foreign Body
+nameZh: 胃異物
+bodySystem: gastrointestinal
+description: 胃異物為滯留於胃腔內的異物，犬隻因異食癖（pica）為常見問題。異物可能自行通過幽門進入腸道，或長期滯留於胃內。大型或尖銳異物有胃壁穿孔風險。臨床表現從無症狀到急性嘔吐不等。
+
+aliases:
+  - { alias: 胃內異物, language: zh }
+  - { alias: Stomach Foreign Body, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬隻胃異物極常見。幼犬與好奇心強的品種（Labrador Retriever）風險較高。常見異物：襪子、玩具、骨頭、石頭。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻以線狀異物（string foreign body）、髮飾、橡皮筋較常見。
+
+etiology:
+  categories:
+    - name: 常見異物（犬）
+      examples:
+        - 衣物（襪子、內褲）
+        - 玩具碎片
+        - 骨頭
+        - 石頭
+        - 木頭
+    - name: 常見異物（貓）
+      examples:
+        - 線狀異物（線、繩、緞帶）
+        - 髮飾
+        - 橡皮筋
+        - 塑膠碎片
+
+clinicalSigns:
+  early:
+    - 嘔吐（急性或間歇性）
+    - 食慾下降
+    - 腹部不適
+  progressive:
+    - 反覆嘔吐
+    - 脫水
+    - 食慾廢絕
+    - 腹痛
+    - 胃穿孔：急性腹膜炎（發燒、劇烈腹痛、休克）
+
+diagnosis:
+  primaryTests:
+    - name: 腹部 X 光
+      notes: 金屬或礦物性異物可直接顯影。不透射異物（衣物、塑膠）可能不可見，但可見胃擴張或異物輪廓。造影劑檢查可描繪不透射異物。
+    - name: 腹部超音波
+      notes: 可見胃內強回聲結構伴聲影。評估胃壁完整性。較 X 光更能偵測不透射異物。
+
+treatment:
+  principles:
+    - 內視鏡取出為首選
+    - 無法內視鏡取出時手術
+    - 胃穿孔需緊急手術
+  general:
+    - 內視鏡異物取出（成功率高，適用於大多數胃異物）
+    - 胃切開術（gastrotomy，內視鏡失敗時）
+    - 胃穿孔：緊急探查性剖腹手術 + 腹膜沖洗
+    - 術後禁食 12-24 小時後逐漸恢復飲食
+    - 止吐治療：Maropitant 1 mg/kg SC/IV q24h
+
+prognosis: 及時內視鏡或手術取出後預後極好。延遲取出導致胃穿孔與腹膜炎者預後較差但及時手術仍有機會恢復。飼主教育避免異物接觸很重要。
+
+pubmedQueries:
+  - query: '"gastric foreign body" AND (veterinary OR canine OR feline) AND ("endoscopy" OR "treatment")'
+    frequency: monthly

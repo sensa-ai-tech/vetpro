@@ -1,0 +1,78 @@
+slug: uterine-inertia
+nameEn: Uterine Inertia
+nameZh: 子宮收縮無力
+bodySystem: reproductive
+description: 子宮收縮無力 (uterine inertia) 為分娩時子宮肌層收縮不足導致的難產原因。分為原發性（子宮肌本身功能障礙）與繼發性（長時間宮縮後疲乏）。為犬難產最常見的母體因素。及時辨識與處置攸關母犬與胎兒存活。
+
+aliases:
+  - { alias: 子宮無力, language: zh }
+  - { alias: 分娩無力, language: zh }
+  - { alias: Primary Uterine Inertia, language: en }
+  - { alias: Secondary Uterine Inertia, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬子宮收縮無力占母體難產原因 >75%。原發性好發於單胎妊娠（子宮伸展刺激不足）、過大胎窩（子宮過度伸展）、肥胖犬。繼發性見於長時間難產後。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓子宮收縮無力較犬少見。原因與犬類似。
+
+etiology:
+  categories:
+    - name: 原發性子宮收縮無力
+      examples:
+        - 子宮肌層先天功能缺陷
+        - 單胎妊娠（子宮伸展不足）
+        - 過大胎窩（子宮過度伸展）
+        - 低血鈣
+        - 肥胖
+        - 品種傾向（Bulldog、Chihuahua）
+    - name: 繼發性子宮收縮無力
+      examples:
+        - 長時間宮縮後肌肉疲乏
+        - 產道阻塞（胎兒過大、胎位不正）未及時處理
+        - 電解質不平衡
+
+clinicalSigns:
+  early:
+    - 原發性：預產日已到但無宮縮跡象
+    - 繼發性：宮縮漸弱後停止
+    - 胎兒未娩出超過預期時間
+  progressive:
+    - 綠色陰道分泌物（胎盤分離但未產出）
+    - 母犬疲倦
+    - 胎兒窘迫（胎心率下降）
+    - 未娩出胎兒可致死胎、子宮炎
+
+diagnosis:
+  primaryTests:
+    - name: 臨床評估
+      notes: 妊娠足月無宮縮（原發性），或宮縮停止 >30 分鐘仍未產出胎兒（繼發性）
+    - name: 腹部影像
+      notes: X-ray 確認胎兒數量、大小與位置。超音波評估胎兒存活（胎心率）
+  additional:
+    - 血清鈣（低血鈣排除）
+    - 血糖
+    - 血清黃體酮（<2 ng/mL 提示即將分娩）
+    - 骨盆測量（排除產道狹窄）
+
+treatment:
+  principles:
+    - 藥物刺激宮縮（無阻塞性難產時）
+    - 阻塞性難產需剖腹產
+    - 及時決策避免胎兒死亡
+  general:
+    - 先排除阻塞性因素（胎兒過大、胎位不正）
+    - 低血鈣矯正：10% calcium gluconate 0.5-1 mL/kg IV 緩慢輸注
+    - Oxytocin 0.5-2 IU IV 或 IM（低劑量起始，可重複 2-3 次，間隔 20-30 分鐘）
+    - 5% dextrose IV（低血糖矯正）
+    - 對 oxytocin 無反應或阻塞性：緊急剖腹產
+    - 繼發性：多數需剖腹產
+    - 胎兒窘迫（胎心率 <180 bpm）：儘速手術
+
+prognosis: 原發性子宮收縮無力對 oxytocin + calcium 反應率約 30-50%，其餘需剖腹產。及時剖腹產母犬存活率高。胎兒存活取決於缺氧時間長短。有子宮收縮無力史的母犬再次妊娠復發率高。
+
+pubmedQueries:
+  - query: '"uterine inertia" AND (veterinary OR canine OR feline) AND ("dystocia" OR "treatment" OR "oxytocin")'
+    frequency: monthly

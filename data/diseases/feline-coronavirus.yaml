@@ -1,0 +1,74 @@
+slug: feline-coronavirus
+nameEn: Feline Coronavirus
+nameZh: 貓冠狀病毒感染
+bodySystem: infectious
+description: 貓冠狀病毒 (FCoV) 為一種常見的腸道 RNA 病毒，多貓家庭感染率可達 80-90%。多數感染為亞臨床或輕度腸胃炎。約 5-10% 感染貓體內病毒突變為致命的貓傳染性腹膜炎病毒 (FIPV)。GS-441524 抗病毒藥物已改變 FIP 的治療格局。
+
+aliases:
+  - { alias: 貓腸道冠狀病毒, language: zh }
+  - { alias: FCoV, language: en }
+  - { alias: Feline Enteric Coronavirus, language: en }
+  - { alias: FECV, language: en }
+
+species:
+  - speciesCommon: cat
+    prevalence: common
+    notes: 多貓環境感染率極高（80-90%）。多數為亞臨床腸道感染。約 5-10% 感染貓會發展為 FIP。幼貓（6 月齡至 2 歲）最易發展為 FIP。純種貓風險較高。
+
+etiology:
+  categories:
+    - name: 病原特性
+      examples:
+        - Alphacoronavirus 屬，有包膜 RNA 病毒
+        - 腸道型 (FECV) 主要感染腸上皮細胞
+        - 體內突變為巨噬細胞嗜性 (FIPV) 後引發 FIP
+        - 糞口途徑傳播，經共用貓砂盆
+    - name: FIP 突變風險因子
+      examples:
+        - 幼貓（6 月齡至 2 歲）
+        - 多貓環境
+        - 免疫抑制（FeLV 共感染、壓力）
+        - 純種貓（Birman、Ragdoll、Bengal 等）
+
+clinicalSigns:
+  early:
+    - 多數無明顯症狀
+    - 輕度一過性腹瀉（幼貓）
+    - 輕微食慾下降
+  progressive:
+    - 若發展為 FIP（另見 FIP 條目）
+    - 持續性軟便（少數）
+    - 慢性腸炎（罕見）
+    - 發燒、食慾下降、體重減輕（FIP 前兆）
+
+diagnosis:
+  primaryTests:
+    - name: 糞便 RT-PCR
+      notes: 檢測腸道排毒。陽性僅代表 FCoV 感染，無法區分 FECV 與 FIPV。排毒可間歇性
+    - name: 血清抗體效價
+      notes: 高效價（>1:1600）提示高病毒量，但無法預測是否會發展為 FIP。陰性不代表未感染
+  additional:
+    - Rivalta test（腹水初步篩檢 FIP）
+    - 腹水或胸水 FCoV RT-PCR（若懷疑 FIP）
+    - 白蛋白/球蛋白比值（A:G ratio <0.4 高度提示 FIP）
+
+treatment:
+  principles:
+    - 腸道型感染多為自限性
+    - 減少環境病毒量
+    - 多貓家庭管理策略重要
+    - 監控高風險個體
+  general:
+    - 腸道型感染通常無需特殊治療
+    - 支持療法（輕度腸胃炎時）
+    - 多貓家庭保持足夠數量貓砂盆（貓數量 +1）
+    - 貓砂盆每日清理，定期消毒
+    - 減少環境壓力
+    - 新進貓隔離觀察
+    - 若發展為 FIP，考慮 GS-441524 抗病毒治療
+
+prognosis: 單純 FCoV 腸道感染預後極佳，多數貓可自行清除病毒或成為無症狀攜帶者。約 5-10% 可能突變發展為 FIP。透過環境管理與壓力減少可降低 FIP 發生風險。
+
+pubmedQueries:
+  - query: '"feline coronavirus" AND ("management" OR "prevention" OR "FIP" OR "GS-441524")'
+    frequency: monthly

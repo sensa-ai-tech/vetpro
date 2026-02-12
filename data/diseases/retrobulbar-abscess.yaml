@@ -1,0 +1,72 @@
+slug: retrobulbar-abscess
+nameEn: Retrobulbar Abscess
+nameZh: 球後膿瘍
+bodySystem: infectious
+description: 眼球後方組織的化膿性感染，常因口腔感染 (齒根膿瘍) 穿透眶底或異物穿刺引起。表現為急性單側眼球突出、劇烈疼痛與張口困難。為眼科急症需快速診斷與引流。
+
+aliases:
+  - { alias: Orbital Abscess, language: en }
+  - { alias: Periorbital Abscess, language: en }
+  - { alias: 眼眶膿瘍, language: zh }
+  - { alias: 眶後膿瘍, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬較常見。常與上顎臼齒齒根感染相關。異物 (木屑、草籽) 也是原因。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓可見，常與打架傷口感染或齒根膿瘍相關。
+
+etiology:
+  categories:
+    - name: 齒源性
+      examples:
+        - 上顎臼齒齒根膿瘍穿透眶底
+        - 嚴重牙周病
+    - name: 異物
+      examples:
+        - 草籽 (foxtail)
+        - 木刺穿入口腔後遷移至球後
+    - name: 血行性/創傷性
+      examples:
+        - 穿透性眼眶外傷
+        - 血行性感染播散 (罕見)
+
+clinicalSigns:
+  early:
+    - 急性單側眼球突出
+    - 劇烈疼痛
+    - 張口困難/疼痛 (無法進食)
+  progressive:
+    - 第三眼瞼突出
+    - 結膜充血水腫
+    - 發燒
+    - 口腔黏膜 (硬顎後方) 腫脹
+
+diagnosis:
+  primaryTests:
+    - name: 口腔檢查
+      notes: 硬顎後方軟組織腫脹/波動感。鎮靜下張口檢查
+    - name: 眼部超音波
+      notes: 球後低回聲液體聚集。與腫瘤鑑別
+    - name: CT
+      notes: 評估膿瘍範圍、異物定位、齒源性感染確認
+
+treatment:
+  principles:
+    - 引流膿瘍為首要
+    - 全身性抗生素
+    - 處理根本原因
+  general:
+    - 經口腔引流 (在硬顎後方軟組織切開引流)
+    - 廣效抗生素 (Amoxicillin-clavulanate 或 Clindamycin)
+    - 止痛 (NSAIDs + Tramadol)
+    - 治療齒源性感染 (拔牙)
+    - 異物需手術取出
+
+prognosis: 及時引流與適當抗生素治療預後良好。多數犬 3-7 天明顯改善。需處理根本原因防止復發。延遲治療可能導致眶周蜂窩組織炎。
+
+pubmedQueries:
+  - query: '"retrobulbar abscess" AND (veterinary OR canine OR feline) AND ("drainage" OR "treatment")'
+    frequency: monthly

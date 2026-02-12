@@ -1,0 +1,76 @@
+slug: aflatoxicosis
+nameEn: Aflatoxicosis
+nameZh: 黃麴毒素中毒
+bodySystem: toxicology
+description: 黃麴毒素 (aflatoxin) 由黃麴菌 (Aspergillus flavus/A. parasiticus) 產生，汙染穀物與花生類食材。犬對黃麴毒素敏感，引起急性或慢性肝損傷。歷史上曾因汙染商業犬糧造成大規模中毒事件。犬糧召回事件中黃麴毒素為重要原因。
+
+aliases:
+  - { alias: 黃麴黴素中毒, language: zh }
+  - { alias: Aflatoxin Poisoning, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬對黃麴毒素敏感度高於多數動物。汙染商業犬糧為主要暴露來源。急性致死劑量約 0.5-1 mg/kg。慢性暴露引起肝纖維化與肝癌。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓對黃麴毒素相對較犬耐受。中毒報告極少。
+
+etiology:
+  categories:
+    - name: 毒素類型
+      examples:
+        - Aflatoxin B1（毒性最強、最常見）
+        - Aflatoxin B2、G1、G2
+        - 經肝臟 CYP450 代謝為活性環氧化物
+        - 環氧化物與 DNA 結合引起肝細胞壞死
+    - name: 來源
+      examples:
+        - 受汙染玉米、花生、棉籽粕
+        - 汙染商業犬糧
+        - 高溫高濕儲存條件利於黃麴菌生長
+
+clinicalSigns:
+  early:
+    - 食慾下降
+    - 嗜睡
+    - 嘔吐
+  progressive:
+    - 黃疸
+    - 凝血障礙（瘀斑、出血）
+    - 腹水
+    - 肝性腦病變
+    - 慢性：肝纖維化、肝細胞癌
+
+diagnosis:
+  primaryTests:
+    - name: 肝功能檢查
+      notes: ALT、AST、ALP、膽紅素急遽升高。白蛋白降低
+    - name: 食物黃麴毒素檢測
+      notes: 疑似飼料送檢 aflatoxin 含量（ELISA 或 HPLC）
+  additional:
+    - 凝血功能（PT、aPTT 延長）
+    - 膽汁酸
+    - 腹部超音波（肝臟）
+    - 肝臟生檢（確認損傷型態）
+
+treatment:
+  principles:
+    - 停止暴露來源
+    - 保肝治療
+    - 凝血障礙管理
+    - 長期肝功能監測
+  general:
+    - 立即更換飼料
+    - 保肝治療（SAMe 20 mg/kg PO SID、silibinin、NAC）
+    - Vitamin K1 2.5 mg/kg SC/PO BID（凝血障礙）
+    - 新鮮冷凍血漿
+    - IV 輸液
+    - 低蛋白飲食（肝性腦病變時）
+    - 長期追蹤肝功能
+
+prognosis: 急性黃麴毒素中毒肝衰竭者預後不良（致死率可達 60%）。存活者可能發展慢性肝病。輕度暴露停止接觸後可恢復。飼料品質管控為預防關鍵。
+
+pubmedQueries:
+  - query: '"aflatoxicosis" AND (veterinary OR canine) AND ("treatment" OR "dog food" OR "contamination")'
+    frequency: monthly

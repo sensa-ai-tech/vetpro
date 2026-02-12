@@ -1,0 +1,72 @@
+slug: chronic-gastritis
+nameEn: Chronic Gastritis
+nameZh: 慢性胃炎
+bodySystem: gastrointestinal
+description: 慢性胃炎為胃黏膜持續性炎症（>3 週），需內視鏡活檢確診。組織學分類包括淋巴細胞漿細胞性、嗜酸性球性、肉芽腫性與萎縮性胃炎。犬隻慢性胃炎可為特發性或與食物過敏、Helicobacter 感染或自體免疫機轉相關。
+
+aliases:
+  - { alias: 慢性胃部發炎, language: zh }
+  - { alias: Lymphocytic Plasmacytic Gastritis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬隻慢性胃炎為慢性嘔吐的常見原因。淋巴細胞漿細胞性為最常見組織學類型。可為炎症性腸病（IBD）的一部分。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓隻慢性胃炎常為 IBD 的胃部表現。需排除胃腸淋巴瘤。
+
+etiology:
+  categories:
+    - name: 特發性/免疫介導
+      examples:
+        - 淋巴細胞漿細胞性胃炎（最常見）
+        - 食物過敏或不耐
+        - 自體免疫機轉
+    - name: 感染性
+      examples:
+        - Helicobacter spp.（致病角色爭議）
+        - Physaloptera（胃蟲）
+    - name: 特殊類型
+      examples:
+        - 嗜酸性球性胃炎（過敏或寄生蟲相關）
+        - 肉芽腫性胃炎
+        - 萎縮性胃炎（老年犬）
+
+clinicalSigns:
+  early:
+    - 間歇性嘔吐（>3 週）
+    - 食慾不穩定
+    - 腹部不適
+  progressive:
+    - 嘔吐頻率增加
+    - 體重減輕
+    - 食慾下降
+    - 嗜睡
+    - 吐血（hematemesis）
+
+diagnosis:
+  primaryTests:
+    - name: 胃內視鏡活檢
+      notes: 確診金標準。直接觀察胃黏膜（紅腫、糜爛、增厚）並取多點活檢。組織學確認炎症類型（淋巴漿細胞性、嗜酸性球性等）。排除淋巴瘤。
+    - name: 血液與影像學基礎檢查
+      notes: CBC、生化排除代謝性原因。腹部超音波評估胃壁厚度。排除胰臟炎、肝病等。
+
+treatment:
+  principles:
+    - 食物排除試驗為初始步驟
+    - 免疫抑制治療針對免疫介導性胃炎
+    - 逐步治療策略
+  general:
+    - "食物排除試驗：新型蛋白或水解蛋白飲食 6-8 週"
+    - "免疫抑制：Prednisolone 1-2 mg/kg/day PO × 2-4 週後漸減"
+    - "難治性：Budesonide 1-3 mg/dog/day PO（局部作用皮質類固醇）"
+    - "胃酸抑制：Omeprazole 1 mg/kg PO q12-24h"
+    - "Metronidazole 10-15 mg/kg PO q12h（免疫調節與抗厭氧菌）"
+    - 驅蟲排除 Physaloptera
+
+prognosis: 多數慢性胃炎對飲食調整與免疫抑制治療反應良好。食物反應性腸胃炎預後最好。淋巴細胞漿細胞性胃炎通常可控制但需長期管理。嗜酸性球性胃炎對皮質類固醇反應佳。需排除早期淋巴瘤。
+
+pubmedQueries:
+  - query: '"chronic gastritis" AND (veterinary OR canine OR feline) AND ("endoscopy" OR "treatment" OR "IBD")'
+    frequency: monthly

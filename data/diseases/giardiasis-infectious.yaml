@@ -1,0 +1,77 @@
+slug: giardiasis-infectious
+nameEn: Giardiasis Infectious
+nameZh: 梨形鞭毛蟲感染
+bodySystem: infectious
+description: 梨形鞭毛蟲感染 (giardiasis) 由 Giardia duodenalis（syn. G. lamblia, G. intestinalis）引起的腸道原蟲病。犬貓常見，經糞口途徑傳播。臨床表現從無症狀到慢性軟便/腹瀉不等。為人畜共通傳染病，但犬貓與人的基因型多數不同。
+
+aliases:
+  - { alias: 梨形鞭毛蟲病, language: zh }
+  - { alias: 賈第蟲感染, language: zh }
+  - { alias: Giardia Infection, language: en }
+  - { alias: Giardiasis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬感染率可達 15-30%（幼犬與群養犬更高）。犬特異性基因型（Assemblage C, D）為主，人畜共通型（A, B）較少。幼犬症狀較明顯。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓感染率約 5-15%。貓特異性基因型（Assemblage F）為主。多貓環境感染率更高。幼貓較易表現臨床症狀。
+
+etiology:
+  categories:
+    - name: 病原與傳播
+      examples:
+        - Giardia duodenalis（鞭毛原蟲）
+        - 糞口途徑，經攝入囊體 (cyst) 感染
+        - 囊體在潮濕環境中可存活數月
+        - 受汙染水源為重要傳播媒介
+    - name: 致病機制
+      examples:
+        - 營養體 (trophozoite) 附著小腸絨毛表面
+        - 破壞微絨毛刷狀緣
+        - 引起吸收不良
+        - 可能激活宿主免疫反應
+
+clinicalSigns:
+  early:
+    - 軟便或輕度腹瀉
+    - 糞便呈淺色、油膩狀（脂肪瀉）
+    - 間歇性腹瀉
+  progressive:
+    - 慢性間歇性腹瀉
+    - 體重減輕或生長遲緩（幼畜）
+    - 黏液便
+    - 脫水（嚴重者）
+    - 被毛品質變差
+
+diagnosis:
+  primaryTests:
+    - name: 糞便抗原 ELISA/快篩
+      notes: 敏感度與特異性高（>90%），為推薦的首選檢測。比直接鏡檢更可靠
+    - name: 糞便直接鏡檢與浮游法
+      notes: 硫酸鋅浮游法可見囊體。新鮮糞便直接抹片偶可見運動中的營養體。需多次檢查（間歇性排囊體）
+  additional:
+    - 糞便 PCR（最敏感，可做基因型鑑定）
+    - 排除其他腸道病原（混合感染常見）
+
+treatment:
+  principles:
+    - 臨床症狀犬貓應治療
+    - 無症狀帶原是否治療有爭議
+    - 環境去汙染防止再感染
+    - 洗浴去除體表囊體
+  general:
+    - Fenbendazole 50 mg/kg PO SID × 5 天（首選）
+    - Metronidazole 25 mg/kg PO BID × 5-7 天（替代）
+    - 治療結束時全身洗浴（去除體表囊體）
+    - 環境清潔（季銨鹽消毒、蒸氣清潔）
+    - 多犬/多貓家庭所有動物同時治療
+    - 飲水衛生
+    - 治療 2-4 週後追蹤糞便抗原
+
+prognosis: 犬貓梨形鞭毛蟲感染預後良好。適當藥物治療配合環境管理通常可清除感染。再感染常見（特別是群養環境）。慢性感染可能影響幼畜生長但一般不致命。
+
+pubmedQueries:
+  - query: '"giardiasis" AND (veterinary OR canine OR feline) AND ("treatment" OR "guidelines")'
+    frequency: monthly

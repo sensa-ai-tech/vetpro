@@ -243,3 +243,78 @@ function extractText(node: unknown): string {
 function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
+
+// ─── Europe PMC Integration ──────────────────────────
+
+export interface EuropePMCArticle {
+  pmid: string | null;
+  europePmcId: string;
+  title: string;
+  journal: string;
+  year: number;
+  isOpenAccess: boolean;
+  doi: string | null;
+  authors: string[];
+}
+
+/**
+ * 搜尋 Europe PMC — 免費、無需 API key
+ * 可搜尋到 PubMed 找不到的歐洲獸醫文獻
+ */
+export async function searchEuropePMC(
+  query: string,
+  options: {
+    maxResults?: number;
+    minYear?: number;
+    openAccessOnly?: boolean;
+  } = {}
+): Promise<EuropePMCArticle[]> {
+  const maxResults = options.maxResults || 25;
+  let fullQuery = query;
+  if (options.minYear) {
+    fullQuery += ` AND (PUB_YEAR:[${options.minYear} TO 2030])`;
+  }
+  if (options.openAccessOnly) {
+    fullQuery += " AND (OPEN_ACCESS:y)";
+  }
+
+  const params = new URLSearchParams({
+    query: fullQuery,
+    resultType: "core",
+    pageSize: String(maxResults),
+    format: "json",
+  });
+
+  const url = `https://www.ebi.ac.uk/europepmc/webservices/rest/search?${params}`;
+
+  try {
+    const data = (await fetchWithRetry(url, "json")) as Record<string, unknown>;
+    const resultList = (data?.resultList as Record<string, unknown>)?.result as Record<string, unknown>[] | undefined;
+
+    if (!resultList || !Array.isArray(resultList)) return [];
+
+    return resultList.map((r) => ({
+      pmid: r.pmid ? String(r.pmid) : null,
+      europePmcId: String(r.id || ""),
+      title: String(r.title || ""),
+      journal: String(r.journalTitle || r.journalInfo || ""),
+      year: parseInt(String(r.pubYear || "0")) || 0,
+      isOpenAccess: r.isOpenAccess === "Y",
+      doi: r.doi ? String(r.doi) : null,
+      authors: parseEuropePMCAuthors(r.authorList),
+    }));
+  } catch (err) {
+    console.warn(`Europe PMC search error: ${err}`);
+    return [];
+  }
+}
+
+function parseEuropePMCAuthors(authorList: unknown): string[] {
+  if (!authorList || typeof authorList !== "object") return [];
+  const list = (authorList as Record<string, unknown>)?.author;
+  if (!Array.isArray(list)) return [];
+  return list
+    .map((a: Record<string, unknown>) => String(a.fullName || a.lastName || ""))
+    .filter((n: string) => n.length > 0)
+    .slice(0, 10);
+}

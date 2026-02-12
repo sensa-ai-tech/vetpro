@@ -1,0 +1,80 @@
+slug: corticosteroid-overdose
+nameEn: Corticosteroid Overdose
+nameZh: 皮質類固醇過量
+bodySystem: toxicology
+description: 皮質類固醇過量可因急性過量或長期高劑量使用引起。急性過量通常耐受良好，但長期使用可引起醫源性庫欣症候群 (iatrogenic hyperadrenocorticism)。突然停藥可導致腎上腺危象。犬貓均可發生。
+
+aliases:
+  - { alias: 類固醇過量, language: zh }
+  - { alias: 醫源性庫欣症, language: zh }
+  - { alias: Steroid Overdose, language: en }
+  - { alias: Iatrogenic Cushing Syndrome, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬長期 corticosteroid 使用常見。醫源性庫欣症表現與自發性類似（多飲多尿、腹部膨大）。突然停藥引起的腎上腺危象為最大風險。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓對 corticosteroid 的副作用相對較犬少。但長期使用可引起糖尿病、皮膚脆弱症候群。
+
+etiology:
+  categories:
+    - name: 常見情境
+      examples:
+        - 飼主自行增加劑量或給予人用 corticosteroid
+        - 長期治療（過敏、自體免疫疾病）的醫源性副作用
+        - 局部外用 corticosteroid 過度使用
+        - 突然停藥引起腎上腺危象
+    - name: 毒性機制
+      examples:
+        - 長期外源性 cortisol 抑制 HPA 軸
+        - 蛋白質分解增加、脂肪重分佈
+        - 免疫抑制
+        - 胰島素阻抗
+
+clinicalSigns:
+  early:
+    - 多飲多尿
+    - 多食
+    - 喘氣（犬）
+  progressive:
+    - 腹部膨大（向心性肥胖、肝腫大）
+    - 皮膚變薄、脫毛
+    - 肌肉萎縮
+    - 繼發感染（泌尿道、皮膚）
+    - 糖尿病（貓較犬多）
+    - 皮膚脆弱症候群（貓）
+    - 突然停藥：虛弱、嘔吐、低血壓（腎上腺危象）
+
+diagnosis:
+  primaryTests:
+    - name: 用藥史
+      notes: 詳細確認 corticosteroid 使用種類、劑量與持續時間
+    - name: ACTH 刺激試驗
+      notes: 基礎與刺激後 cortisol 均低下提示 HPA 軸抑制。區分醫源性與自發性庫欣症
+  additional:
+    - CBC（應激性白血球圖譜）
+    - 生化（ALP 升高、高血糖、高膽固醇）
+    - 尿液分析（低比重尿、糖尿）
+    - 腹部超音波（肝腫大、腎上腺萎縮）
+
+treatment:
+  principles:
+    - 緩慢減量（絕對禁止突然停藥）
+    - 管理醫源性併發症
+    - 監測腎上腺功能恢復
+  general:
+    - 逐步減量 corticosteroid（每 1-2 週減 25%）
+    - 轉換為短效製劑（prednisolone）利於減量
+    - 繼發感染積極治療
+    - 糖尿病管理（胰島素）
+    - 腎上腺危象：IV 輸液 + dexamethasone 0.1-0.2 mg/kg IV
+    - 皮膚脆弱症候群避免創傷
+    - ACTH 刺激試驗追蹤 HPA 軸恢復
+
+prognosis: 急性 corticosteroid 過量通常耐受良好。醫源性庫欣症緩慢減量後多數可逆。腎上腺危象若及時處理預後佳。長期使用引起的糖尿病在貓中可能為暫時性。
+
+pubmedQueries:
+  - query: '"corticosteroid" AND ("overdose" OR "iatrogenic") AND (veterinary OR canine OR feline)'
+    frequency: monthly

@@ -1,0 +1,61 @@
+slug: rabbit-antibiotic-toxicity
+nameEn: Rabbit Antibiotic Toxicity
+nameZh: 兔抗生素毒性
+bodySystem: toxicology
+description: 某些抗生素可破壞兔正常腸道菌群導致致死性腸毒血症（dysbiosis），為兔用藥的重要安全議題。口服含抗革蘭氏陽性菌譜的抗生素（如 Amoxicillin、Clindamycin、Lincomycin）在兔為禁忌。
+
+aliases:
+  - { alias: "兔抗生素毒性", language: zh }
+  - { alias: "Rabbit Antibiotic Toxicity", language: en }
+
+species:
+  - speciesCommon: rabbit
+    prevalence: uncommon
+    notes: 兔可受此疾病影響。
+
+etiology:
+  categories:
+    - name: 藥物相關
+      examples:
+        - 口服 Amoxicillin/Ampicillin（兔禁忌）
+        - 口服 Clindamycin/Lincomycin（兔禁忌）
+        - 口服 Erythromycin
+        - 過量或長期口服任何抗生素
+
+clinicalSigns:
+  early:
+    - 給藥後 24-72 小時出現厭食
+    - 軟便或腹瀉
+    - 腹部不適
+  progressive:
+    - 嚴重水樣/出血性腹瀉
+    - 嚴重脫水
+    - 低體溫
+    - 敗血症
+    - 猝死
+
+diagnosis:
+  primaryTests:
+    - name: 藥物使用史
+      notes: 詢問近期是否有使用抗生素（尤其口服）。給藥後 1-5 天出現腸道症狀為關鍵線索。
+    - name: 糞便檢查
+      notes: 糞便培養可見 Clostridium spp. 過度生長。
+
+treatment:
+  principles:
+    - 立即停用致病抗生素
+    - 積極支持性治療
+    - 恢復腸道菌群
+    - 預防為首要（了解兔安全抗生素清單）
+  general:
+    - 立即停用問題抗生素
+    - 積極輸液
+    - 口服 Cholestyramine（結合 Clostridium 毒素）
+    - 益生菌或健康兔糞便移植
+    - 安全替代抗生素：Enrofloxacin、Trimethoprim-sulfa、Chloramphenicol
+
+prognosis: 輕度菌群失衡及時停藥並支持治療後預後良好。嚴重腸毒血症死亡率高。預防（了解兔禁用抗生素清單）為最佳策略。Amoxicillin 注射劑型在兔相對安全但口服劑型為禁忌。
+
+pubmedQueries:
+  - query: '"Rabbit Antibiotic Toxicity" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
+    frequency: monthly

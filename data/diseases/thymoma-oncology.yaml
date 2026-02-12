@@ -1,0 +1,59 @@
+slug: thymoma-oncology
+nameEn: Thymoma Oncology
+nameZh: 胸腺瘤
+bodySystem: oncology
+description: 胸腺上皮細胞的腫瘤，位於前縱膈。可伴隨副腫瘤症候群如重症肌無力 (myasthenia gravis)、巨食道症與皮膚病。手術切除為首選治療。
+
+aliases:
+  - { alias: "Thymic Tumor", language: en }
+  - { alias: "胸腺腫瘤", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬罕見。中大型老年犬。Labrador、German Shepherd。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓罕見。老年貓。
+
+etiology:
+  categories:
+    - name: 腫瘤性
+      examples:
+        - 胸腺上皮細胞增生
+        - 可能伴副腫瘤症候群
+
+clinicalSigns:
+  early:
+    - 呼吸困難
+    - 運動不耐受
+    - 咳嗽
+  progressive:
+    - 面部/前肢水腫（前腔靜脈壓迫）
+    - 全身虛弱（重症肌無力）
+    - 巨食道症/吸入性肺炎
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔 X 光
+      notes: 前縱膈腫塊
+    - name: CT
+      notes: 評估腫塊範圍與可切除性
+    - name: Acetylcholine receptor antibody
+      notes: 篩檢副腫瘤性重症肌無力
+
+treatment:
+  principles:
+    - 手術切除為首選
+    - 術前評估重症肌無力
+  general:
+    - 前縱膈胸腔切開手術切除
+    - 術前：胸腔穿刺引流積液
+    - 術後追蹤重症肌無力（可能改善或惡化）
+    - 不可切除：放射治療
+
+prognosis: 手術完全切除後中位存活 > 2 年。不完全切除預後較差。重症肌無力在切除後可能改善。
+
+pubmedQueries:
+  - query: '"thymoma" AND (veterinary OR canine OR feline) AND ("surgery" OR "myasthenia gravis")'
+    frequency: monthly

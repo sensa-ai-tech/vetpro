@@ -1,0 +1,68 @@
+slug: nasal-foreign-body
+nameEn: Nasal Foreign Body
+nameZh: 鼻腔異物
+bodySystem: gastrointestinal
+description: 鼻腔異物為犬貓鼻腔內滯留的外來物體，犬隻最常見為草芒（grass awns/foxtails）。異物可刺激鼻黏膜導致急性單側噴嚏與鼻分泌物。長期滯留可導致繼發性細菌感染、鼻甲骨破壞或遷移至其他部位。
+
+aliases:
+  - { alias: 鼻腔異物滯留, language: zh }
+  - { alias: Nasal Grass Awn, language: en }
+  - { alias: Intranasal Foreign Body, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬隻鼻腔異物常見，尤其戶外活動犬。草芒（foxtails）在乾燥地區為最常見異物。長鼻品種風險較高。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻鼻腔異物較少見。草葉（grass blade）可從口腔經鼻咽部進入鼻腔後方。
+
+etiology:
+  categories:
+    - name: 常見異物類型
+      examples:
+        - 草芒（grass awns, foxtails）
+        - 草葉（grass blades）
+        - 小石子或泥土
+        - 食物碎片（嘔吐後經鼻咽進入）
+    - name: 異物位置
+      examples:
+        - 前鼻腔（大多數）
+        - 後鼻腔（nasopharynx）
+        - 鼻竇
+
+clinicalSigns:
+  early:
+    - 急性劇烈打噴嚏
+    - 用爪搔鼻
+    - 單側漿液性鼻分泌物
+  progressive:
+    - 單側黏液膿性鼻分泌物（繼發感染）
+    - 單側鼻出血
+    - 慢性打噴嚏
+    - 面部腫脹（鼻竇感染時）
+
+diagnosis:
+  primaryTests:
+    - name: 鼻腔鏡檢查（Rhinoscopy）
+      notes: 確診金標準。前鼻腔鏡（anterograde rhinoscopy）與後鼻腔鏡（retrograde rhinoscopy）可直接觀察並取出異物。亦可評估黏膜損傷程度。
+    - name: 頭部 X 光或 CT
+      notes: 草芒等植物性異物在 X 光上不顯影。CT 可顯示鼻甲骨破壞、鼻竇液體蓄積等間接徵象。金屬或礦物性異物可直接顯影。
+
+treatment:
+  principles:
+    - 異物取出為唯一確定性治療
+    - 鼻腔鏡引導下取出最為理想
+    - 繼發感染需抗生素治療
+  general:
+    - 鼻腔鏡引導下異物取出（首選）
+    - 後鼻腔異物：retrograde rhinoscopy + 異物鉗取出
+    - 鼻腔沖洗（flush）可協助排出碎片
+    - "繼發感染：Amoxicillin-Clavulanate 12.5-25 mg/kg PO q12h × 7-14 天"
+    - 止血處理（鼻出血時）
+
+prognosis: 異物成功取出後預後極好，症狀通常在數天內完全消退。長期滯留導致鼻甲骨破壞者可能發展為慢性鼻炎。草芒遷移至其他部位（肺、腹腔）者需進一步處理。
+
+pubmedQueries:
+  - query: '"nasal foreign body" AND (veterinary OR canine OR feline) AND ("rhinoscopy" OR "treatment")'
+    frequency: monthly

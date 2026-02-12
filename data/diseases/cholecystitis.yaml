@@ -1,0 +1,71 @@
+slug: cholecystitis
+nameEn: Cholecystitis
+nameZh: 膽囊炎
+bodySystem: urinary
+description: 膽囊炎為膽囊壁的炎症反應，犬貓可為急性或慢性。常與膽結石、膽囊黏液囊腫（gallbladder mucocele）、膽道感染或膽管阻塞相關。犬隻膽囊黏液囊腫合併膽囊炎為重要的急腹症。細菌性膽囊炎以 E. coli、Enterococcus spp. 最常見。
+
+aliases:
+  - { alias: 膽囊發炎, language: zh }
+  - { alias: Gallbladder Inflammation, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻膽囊炎常與膽囊黏液囊腫相關。Shetland Sheepdog、Cocker Spaniel 為膽囊黏液囊腫好發品種。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻膽囊炎常與膽管炎（cholangitis/cholangiohepatitis）相關。
+
+etiology:
+  categories:
+    - name: 感染性
+      examples:
+        - 細菌上行感染（E. coli、Enterococcus、Clostridium）
+        - 膽管炎延伸至膽囊
+        - 血行性感染
+    - name: 非感染性
+      examples:
+        - 膽囊黏液囊腫（gallbladder mucocele）
+        - 膽結石刺激
+        - 膽管阻塞
+        - 膽囊運動功能障礙
+
+clinicalSigns:
+  early:
+    - 嘔吐
+    - 食慾下降
+    - 腹部不適
+  progressive:
+    - 黃疸
+    - 持續嘔吐
+    - 右前腹疼痛
+    - 發燒（細菌感染時）
+    - 腹膜炎（膽囊破裂時）
+    - 敗血症
+
+diagnosis:
+  primaryTests:
+    - name: 腹部超音波
+      notes: 膽囊壁增厚（>3 mm）。膽囊內容物回音異常（淤泥、黏液囊腫的 kiwi 樣外觀、結石）。膽囊周圍液體。膽管擴張。
+    - name: 血液生化
+      notes: ALP、GGT 升高。ALT 升高。膽紅素升高（膽管阻塞時）。白血球升高。CRP 升高。
+
+treatment:
+  principles:
+    - 膽囊黏液囊腫或膽囊破裂需緊急手術
+    - 細菌性膽囊炎需抗生素
+    - 支持性治療
+  general:
+    - 膽囊切除術（cholecystectomy）為膽囊黏液囊腫、膽囊破裂或反覆膽囊炎的首選治療
+    - "抗生素：Ampicillin/Sulbactam + Metronidazole（涵蓋腸道菌與厭氧菌）"
+    - 膽汁培養導向抗生素調整
+    - "利膽：Ursodiol 10-15 mg/kg PO q24h"
+    - 靜脈輸液支持
+    - 止吐與疼痛管理
+    - 低脂飲食
+
+prognosis: 膽囊切除術後預後通常良好（圍術期存活率約 70-80%）。膽囊破裂伴膽汁性腹膜炎者圍術期死亡率較高（20-40%）。單純細菌性膽囊炎抗生素治療反應良好。膽囊黏液囊腫若未手術有破裂風險。
+
+pubmedQueries:
+  - query: '"cholecystitis" AND (veterinary OR canine OR feline) AND ("cholecystectomy" OR "mucocele" OR "treatment")'
+    frequency: monthly

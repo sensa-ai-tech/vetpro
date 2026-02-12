@@ -1,0 +1,81 @@
+slug: pyrethrin-pyrethroid-toxicosis
+nameEn: Pyrethrin Pyrethroid Toxicosis
+nameZh: 除蟲菊酯中毒
+bodySystem: toxicology
+description: 除蟲菊酯 (pyrethrin/pyrethroid) 中毒常見於貓誤用犬用高濃度 permethrin 除蚤產品。貓缺乏葡萄糖醛酸化代謝途徑，對除蟲菊酯極度敏感。典型表現為全身性肌肉震顫與癲癇。犬中毒罕見但大劑量或幼犬仍可發生。
+
+aliases:
+  - { alias: 百滅寧中毒, language: zh }
+  - { alias: 貓除蚤藥中毒, language: zh }
+  - { alias: Permethrin Toxicosis, language: en }
+  - { alias: Pyrethroid Poisoning, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬對 pyrethroid 相對耐受。中毒多見於極高劑量或幼犬。口服攝入 pyrethroid 產品偶見。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓 permethrin 中毒為最常見的貓致命性中毒之一。貓缺乏 UGT 酵素，代謝 pyrethroid 能力極差。犬用高濃度 permethrin 外用產品誤用於貓為最常見原因。
+
+etiology:
+  categories:
+    - name: 毒性機制
+      examples:
+        - Pyrethroid 延遲鈉離子通道關閉
+        - 神經元持續去極化與反覆放電
+        - 貓缺乏 glucuronosyltransferase (UGT) 代謝途徑
+        - Type I pyrethroid（permethrin）引起 T 型震顫
+        - Type II pyrethroid 引起 CS 型症候群（choreoathetosis-salivation）
+    - name: 常見來源
+      examples:
+        - 犬用高濃度 permethrin 外用除蚤產品誤用於貓
+        - 與塗有 permethrin 的犬密切接觸
+        - 環境用殺蟲劑
+
+clinicalSigns:
+  early:
+    - 耳朵與肌肉抽搐（攝入或塗抹後 1-6 小時）
+    - 過度流涎
+    - 不安
+    - 搔癢（外用接觸處）
+  progressive:
+    - 全身性肌肉震顫
+    - 共濟失調
+    - 癲癇
+    - 高燒（肌肉過度活動）
+    - 呼吸困難
+    - 死亡（未治療貓）
+
+diagnosis:
+  primaryTests:
+    - name: 病史確認
+      notes: 確認是否使用犬用 permethrin 產品於貓，或貓與塗藥犬接觸。發病時間為暴露後 1-72 小時
+    - name: 臨床表現
+      notes: 貓的全身性肌肉震顫與 permethrin 暴露史
+  additional:
+    - 皮膚/血液 pyrethroid 殘留檢測（非常規可用）
+    - 血糖、電解質（排除其他震顫原因）
+    - CK（橫紋肌溶解）
+
+treatment:
+  principles:
+    - 去汙染（外用暴露需洗浴）
+    - 控制震顫與癲癇
+    - 支持療法
+    - 保持體溫
+  general:
+    - 外用暴露立即用溫水 + 液態洗碗精徹底洗浴
+    - Methocarbamol 55-220 mg/kg IV 緩慢注射（控制震顫，首選）
+    - Diazepam 0.5-2 mg/kg IV PRN（控制癲癇）
+    - IV 輸液支持
+    - 體溫監測（震顫致高燒需主動散熱）
+    - Lipid emulsion therapy（20% intralipid 1.5 mL/kg IV bolus，可加速脂溶性毒物清除）
+    - 住院監測 48-72 小時
+    - 嚴禁將犬用 permethrin 產品用於貓
+
+prognosis: 貓 permethrin 中毒積極治療（methocarbamol + lipid emulsion）存活率可達 >95%。未治療死亡率高。多數存活貓在 24-72 小時內完全恢復。關鍵在於飼主教育：絕對不可將犬用 permethrin 產品用於貓。
+
+pubmedQueries:
+  - query: '"pyrethroid toxicosis" OR "permethrin" AND (feline OR cat OR veterinary) AND ("treatment" OR "intralipid")'
+    frequency: monthly

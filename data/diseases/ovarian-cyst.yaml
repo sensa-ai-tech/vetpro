@@ -1,0 +1,74 @@
+slug: ovarian-cyst
+nameEn: Ovarian Cyst
+nameZh: 卵巢囊腫
+bodySystem: reproductive
+description: 卵巢囊腫為犬貓卵巢內液體填充的囊性結構，包括濾泡囊腫（follicular cyst）、黃體囊腫（luteal cyst）與旁卵巢囊腫（paraovarian cyst）。濾泡囊腫因持續分泌雌激素引起持續發情或骨髓抑制。OHE 為根治方法。
+
+aliases:
+  - { alias: 卵巢濾泡囊腫, language: zh }
+  - { alias: Follicular Cyst, language: en }
+  - { alias: Luteal Cyst, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬卵巢囊腫較其他家畜少見。濾泡囊腫引起持續雌激素分泌→持續發情、外陰腫脹、骨髓抑制。黃體囊腫引起假懷孕或 CEH。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓卵巢囊腫可引起持續發情行為。絕育貓如出現發情需排除卵巢殘留合併囊腫。
+
+etiology:
+  categories:
+    - name: 囊腫類型
+      examples:
+        - 濾泡囊腫：卵泡未排卵持續增大，分泌雌激素
+        - 黃體囊腫：黃體液化形成，分泌黃體酮
+        - 旁卵巢囊腫：卵巢旁殘留管道擴張（非功能性）
+        - Rete ovarii 囊腫
+    - name: 相關疾病
+      examples:
+        - 持續性雌激素分泌→骨髓毒性（再生不良性貧血）
+        - 子宮內膜增生 (CEH)
+        - 乳腺增生
+
+clinicalSigns:
+  early:
+    - 持續發情或發情延長
+    - 外陰持續腫脹
+    - 陰道分泌物
+  progressive:
+    - 骨髓抑制（雌激素毒性）：貧血、血小板減少、白血球減少
+    - 對稱性脫毛
+    - 乳腺增生
+    - CEH/pyometra
+    - 吸引公犬
+
+diagnosis:
+  primaryTests:
+    - name: 腹部超音波
+      notes: 卵巢內無回音囊性結構。可評估大小與數量
+    - name: 血清雌二醇/黃體酮
+      notes: 濾泡囊腫：雌二醇升高。黃體囊腫：黃體酮升高
+  additional:
+    - 陰道細胞學（雌激素效應）
+    - CBC（骨髓抑制評估）
+    - 腹部 X-ray
+
+treatment:
+  principles:
+    - OHE 為根治方法
+    - 繁殖用犬可考慮藥物治療
+    - 骨髓抑制需緊急處理
+  general:
+    - OHE（首選根治）
+    - 繁殖用犬：hCG 500-1000 IU IM 或 GnRH 刺激排卵/黃體化
+    - 超音波引導穿刺引流（暫時性）
+    - 骨髓抑制：停止雌激素來源 + 支持療法 + 輸血
+    - Filgrastim（嚴重嗜中性球減少時）
+    - 術後追蹤 CBC（骨髓恢復可能需數週）
+
+prognosis: OHE 後預後極佳。骨髓抑制嚴重者（全血球減少）預後較差，骨髓恢復可能需數週至數月。繁殖用犬藥物治療後囊腫可能復發。
+
+pubmedQueries:
+  - query: '"ovarian cyst" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis" OR "follicular")'
+    frequency: monthly

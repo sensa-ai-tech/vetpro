@@ -1,0 +1,79 @@
+slug: strychnine-toxicosis
+nameEn: Strychnine Toxicosis
+nameZh: 番木鱉鹼中毒
+bodySystem: toxicology
+description: 番木鱉鹼 (strychnine) 為強效中樞神經系統興奮劑，阻斷脊髓與腦幹的 glycine 抑制性突觸。犬攝入後引起嚴重全身性肌肉強直痙攣，對刺激高度敏感。曾廣泛用於殺鼠劑，目前多數國家已限制使用但仍偶見中毒。
+
+aliases:
+  - { alias: 士的寧中毒, language: zh }
+  - { alias: 馬錢子鹼中毒, language: zh }
+  - { alias: Strychnine Poisoning, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬致死劑量約 0.75-2 mg/kg。現已較少使用但某些地區仍可見。蓄意投毒偶見。症狀發作快（攝入後 10-120 分鐘）。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓致死劑量約 2 mg/kg。臨床報告少見。
+
+etiology:
+  categories:
+    - name: 毒性機制
+      examples:
+        - 競爭性拮抗 glycine 受體（脊髓腹角抑制性突觸）
+        - 阻斷 Renshaw 細胞的抑制性回饋
+        - 導致 alpha 運動神經元不受抑制持續興奮
+        - 全身性肌肉強直痙攣
+    - name: 來源
+      examples:
+        - 含 strychnine 的老式殺鼠劑
+        - 蓄意投毒
+        - 部分傳統草藥
+
+clinicalSigns:
+  early:
+    - 不安與焦慮（攝入後 10-30 分鐘）
+    - 肌肉僵硬
+    - 對聲音或觸覺刺激過度反應
+  progressive:
+    - 全身性強直痙攣（伸肌佔優勢）
+    - 角弓反張
+    - 牙關緊閉（risus sardonicus）
+    - 呼吸肌痙攣導致窒息
+    - 橫紋肌溶解
+    - 高燒
+    - 死亡（呼吸衰竭或代謝衰竭）
+
+diagnosis:
+  primaryTests:
+    - name: 臨床表現
+      notes: 極度對外界刺激敏感的全身性強直痙攣、意識清醒（與癲癇不同）為高度提示性。需與破傷風鑑別
+    - name: 胃內容物/尿液毒物學分析
+      notes: 胃內容物或尿液 strychnine 定量確認
+  additional:
+    - 血液氣體（代謝性酸中毒）
+    - CK（橫紋肌溶解）
+    - 腎功能（肌紅蛋白尿致腎損傷）
+
+treatment:
+  principles:
+    - 控制痙攣為最優先
+    - 減少外界刺激
+    - 去汙染（痙攣控制後）
+    - 保護腎功能
+  general:
+    - Diazepam 0.5-2 mg/kg IV PRN 控制痙攣
+    - 嚴重者 propofol 或 pentobarbital 持續輸注
+    - 暗室安靜環境（減少刺激誘發痙攣）
+    - 痙攣控制後催吐或洗胃 + 活性炭
+    - IV 輸液（預防肌紅蛋白腎病）
+    - 監測體溫（主動散熱）
+    - 機械通氣（呼吸肌麻痺時）
+    - 酸鹼平衡矯正
+
+prognosis: 犬 strychnine 中毒若能有效控制痙攣並維持呼吸，度過最初 24 小時後預後可良好。致死主因為呼吸衰竭或橫紋肌溶解性腎衰竭。大劑量暴露即使積極治療致死率仍高。
+
+pubmedQueries:
+  - query: '"strychnine" AND (toxicosis OR poisoning) AND (veterinary OR canine)'
+    frequency: monthly

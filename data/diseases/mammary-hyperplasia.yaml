@@ -1,0 +1,74 @@
+slug: mammary-hyperplasia
+nameEn: Mammary Hyperplasia
+nameZh: 乳腺增生
+bodySystem: reproductive
+description: 乳腺增生為犬貓荷爾蒙影響下乳腺組織良性增殖。犬常見於假懷孕期間乳腺腫脹與泌乳。貓則以纖維上皮增生 (fibroepithelial hyperplasia) 為特徵性表現，常與黃體酮（內源或外源性）相關。需與乳腺腫瘤鑑別。
+
+aliases:
+  - { alias: 乳腺肥大, language: zh }
+  - { alias: Mammary Gland Hyperplasia, language: en }
+  - { alias: Mammary Gland Enlargement, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬乳腺增生常見於假懷孕（pseudopregnancy），黃體酮下降 + prolactin 升高引起。乳腺腫脹、泌乳。多數自限性。Cabergoline 可加速消退。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓乳腺纖維上皮增生 (FEH) 好發於年輕母貓（首次發情後）或使用外源性黃體酮（megestrol acetate）的公貓/母貓。Aglepristone 為有效治療。
+
+etiology:
+  categories:
+    - name: 致病機制
+      examples:
+        - 犬假懷孕：黃體酮下降 → prolactin 升高 → 乳腺增生與泌乳
+        - 貓 FEH：黃體酮刺激乳腺間質纖維增生
+        - 外源性荷爾蒙（megestrol acetate）
+    - name: 誘因
+      examples:
+        - 犬假懷孕（黃體期後）
+        - 外源性黃體酮投與
+        - 卵巢殘留症候群
+        - 妊娠
+
+clinicalSigns:
+  early:
+    - 乳腺腫脹
+    - 乳腺觸摸柔軟至堅實
+    - 泌乳（犬假懷孕）
+  progressive:
+    - 多個乳腺同時腫大
+    - 貓 FEH：乳腺極度腫大（可達數倍大小）
+    - 皮膚繃緊、可能潰瘍
+    - 疼痛
+    - 行走困難（嚴重腫大時）
+
+diagnosis:
+  primaryTests:
+    - name: 臨床評估
+      notes: 年齡、絕育狀態、近期發情或荷爾蒙使用史。雙側多乳腺腫大提示增生而非腫瘤
+    - name: 細針穿刺 (FNA) 細胞學
+      notes: 增生性上皮與間質細胞，無惡性特徵。排除腫瘤
+  additional:
+    - 血清黃體酮（確認黃體酮來源）
+    - 腹部超音波（卵巢殘留評估）
+    - 組織生檢（不確定時）
+
+treatment:
+  principles:
+    - 移除荷爾蒙來源
+    - 貓 FEH：aglepristone 為首選
+    - 犬假懷孕：多為自限性
+  general:
+    - 犬假懷孕：通常 1-3 週自行消退。Cabergoline 5 μg/kg PO SID 5-10 天（抑制 prolactin）
+    - 貓 FEH：aglepristone 10 mg/kg SC 第 1、2、7 天（黃體酮受體拮抗劑）
+    - 停止外源性黃體酮
+    - OHE（根治性預防復發）
+    - 皮膚潰瘍護理
+    - 避免冰敷或擠壓乳腺
+
+prognosis: 犬假懷孕乳腺增生為自限性，預後極佳。貓 FEH 對 aglepristone 反應率 >90%。OHE 可預防復發。未治療的嚴重 FEH 可引起皮膚壞死與繼發感染。
+
+pubmedQueries:
+  - query: '"mammary hyperplasia" OR "fibroepithelial hyperplasia" AND (veterinary OR canine OR feline) AND ("treatment" OR "aglepristone")'
+    frequency: monthly

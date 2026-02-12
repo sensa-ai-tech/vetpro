@@ -1,0 +1,69 @@
+slug: mediastinal-mass
+nameEn: Mediastinal Mass
+nameZh: 縱膈腔腫塊
+bodySystem: oncology
+description: 縱膈腔腫塊為位於胸腔中央縱膈空間的佔位性病變。犬貓常見原因包括淋巴瘤（最常見）、胸腺瘤、chemodectoma 及異位甲狀腺腫瘤。前縱膈腔腫塊為最常見位置。臨床表現取決於腫塊大小與壓迫結構。
+
+aliases:
+  - { alias: 縱膈腫瘤, language: zh }
+  - { alias: Mediastinal Tumor, language: en }
+  - { alias: Mediastinal Lymphoma, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻縱膈腔腫塊以淋巴瘤與胸腺瘤最常見。chemodectoma 位於心基底部亦屬縱膈腫塊。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻縱膈腔淋巴瘤常見，特別是 FeLV 陽性年輕貓的前縱膈 T 細胞淋巴瘤。胸腺瘤亦有報告。
+
+etiology:
+  categories:
+    - name: 前縱膈（最常見）
+      examples:
+        - 淋巴瘤（T 細胞型多見）
+        - 胸腺瘤（thymoma）
+        - 異位甲狀腺腫瘤
+        - 脂肪瘤
+    - name: 中後縱膈
+      examples:
+        - 心基底部腫瘤（chemodectoma）
+        - 食道腫瘤
+        - 淋巴結腫瘤
+
+clinicalSigns:
+  early:
+    - 輕度呼吸急促
+    - 運動不耐
+    - 偶發咳嗽
+  progressive:
+    - 呼吸困難（腫塊壓迫氣管）
+    - 胸腔積液（阻塞靜脈回流）
+    - 前腔靜脈症候群（頭頸部水腫）
+    - 吞嚥困難（食道壓迫）
+    - 反芻（regurgitation）
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔 X 光
+      notes: 前縱膈腔密度增加，氣管背側偏移。心臟輪廓模糊。可伴隨胸腔積液。側位片可見前縱膈寬度增加。
+    - name: 細針穿刺細胞學（FNA）
+      notes: 超音波引導下穿刺。淋巴瘤可在胸水或 FNA 細胞學中確診。流式細胞儀確認免疫表型。胸腺瘤細胞學可見混合淋巴球與上皮細胞。
+
+treatment:
+  principles:
+    - 治療取決於腫塊類型
+    - 淋巴瘤以化療為主
+    - 胸腺瘤考慮手術切除
+  general:
+    - "淋巴瘤：CHOP 化療方案（Prednisone 可迅速縮小腫塊）"
+    - "胸腺瘤：手術切除（median sternotomy）± 放射線治療"
+    - 胸腔積液引流改善呼吸
+    - "貓前縱膈淋巴瘤：COP 或 CHOP 方案"
+    - FeLV 檢測（貓）
+
+prognosis: 預後取決於腫塊類型。犬隻縱膈淋巴瘤化療反應率高（>80%），中位存活時間約 6-12 個月。胸腺瘤手術切除後預後良好。貓隻 FeLV 陽性縱膈淋巴瘤預後較差。前腔靜脈症候群為不良預後因素。
+
+pubmedQueries:
+  - query: '"mediastinal mass" OR "mediastinal lymphoma" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis")'
+    frequency: monthly

@@ -1,0 +1,69 @@
+slug: gastroparesis
+nameEn: Gastroparesis
+nameZh: 胃輕癱
+bodySystem: gastrointestinal
+description: 胃輕癱為胃排空延遲而無機械性阻塞的功能性疾病。犬隻可因自主神經病變（糖尿病性）、術後腸阻塞（postoperative ileus）、電解質異常或特發性原因導致。導致慢性嘔吐、食物滯留與營養吸收障礙。
+
+aliases:
+  - { alias: 胃排空延遲, language: zh }
+  - { alias: Delayed Gastric Emptying, language: en }
+  - { alias: Gastric Motility Disorder, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻胃輕癱可繼發於糖尿病、術後、電解質異常或特發性。大型犬可能較好發。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻胃輕癱較少報告，可繼發於糖尿病神經病變或手術後。
+
+etiology:
+  categories:
+    - name: 繼發性
+      examples:
+        - 糖尿病性自主神經病變
+        - 術後腸胃道運動障礙
+        - 電解質異常（低血鉀）
+        - 藥物影響（抗膽鹼藥、opioids）
+        - 甲狀腺功能低下
+    - name: 特發性
+      examples:
+        - 原因不明的胃平滑肌功能障礙
+        - 可能與腸肌神經叢退化有關
+
+clinicalSigns:
+  early:
+    - 進食後嘔吐（含未消化食物）
+    - 早期飽足感
+    - 食慾下降
+  progressive:
+    - 反覆嘔吐已消化或未消化食物
+    - 腹脹
+    - 體重減輕
+    - 脫水
+    - 營養不良
+
+diagnosis:
+  primaryTests:
+    - name: 腹部 X 光（禁食後）
+      notes: 禁食 12 小時後仍見胃內食物滯留。X 光造影劑通過時間延長。排除機械性幽門阻塞（異物、腫瘤、狹窄）。
+    - name: 腹部超音波
+      notes: 胃擴張伴食物滯留。排除幽門腫塊或增厚。評估胃壁運動（減少或消失）。
+
+treatment:
+  principles:
+    - 治療基礎病因
+    - 促進胃排空的藥物治療
+    - 飲食管理
+  general:
+    - "Metoclopramide 0.2-0.5 mg/kg PO q8h 或 1-2 mg/kg/day CRI（多巴胺拮抗劑，促胃排空）"
+    - "Cisapride 0.5-1 mg/kg PO q8h（5-HT4 受體激動劑，促胃腸蠕動）"
+    - "Erythromycin 0.5-1 mg/kg PO q8h（低劑量作為 motilin 受體激動劑）"
+    - 飲食管理：少量多餐、低脂低纖維、液態或半液態食物
+    - 治療基礎病因（糖尿病控制、電解質矯正等）
+
+prognosis: 預後取決於基礎病因。可逆性原因（電解質異常、藥物）在矯正後恢復。糖尿病性胃輕癱在血糖控制改善後可能好轉。特發性胃輕癱可能需要長期藥物與飲食管理。嚴重不可逆者營養管理困難。
+
+pubmedQueries:
+  - query: '"gastroparesis" OR "delayed gastric emptying" AND (veterinary OR canine OR feline) AND ("treatment" OR "prokinetic")'
+    frequency: monthly

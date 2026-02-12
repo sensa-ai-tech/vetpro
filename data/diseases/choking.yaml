@@ -1,0 +1,80 @@
+slug: choking
+nameEn: Choking
+nameZh: 噎塞
+bodySystem: emergency
+description: 噎塞為食物或異物阻塞咽喉或上呼吸道引起的急性窒息。犬常因快速進食、啃咬球類或骨頭碎片引起。完全阻塞可在數分鐘內致命。飼主急救（類似 Heimlich 手法）與緊急獸醫處置為關鍵。
+
+aliases:
+  - { alias: 異物噎塞, language: zh }
+  - { alias: Foreign Body Choking, language: en }
+  - { alias: Pharyngeal Obstruction, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬噎塞常見物品：球類（尤其小於口腔的球）、骨頭碎片、大塊肉、玩具碎片。小型犬球類窒息風險高。T-bone 型骨頭卡在口腔亦常見。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓噎塞較犬少見。線狀異物（縫線、緞帶）更常引起消化道問題而非窒息。
+
+etiology:
+  categories:
+    - name: 常見異物
+      examples:
+        - 球類（尤其光滑圓形球卡在咽喉）
+        - 骨頭碎片
+        - 大塊食物
+        - 玩具碎片
+        - 塑膠包裝
+    - name: 風險因子
+      examples:
+        - 快速進食（大口吞食）
+        - 不適當大小的球類玩具
+        - 無人監督啃咬骨頭
+        - 競爭性進食環境
+
+clinicalSigns:
+  early:
+    - 突然用前爪扒嘴
+    - 劇烈咳嗽
+    - 喘鳴、作嘔
+    - 焦躁不安
+  progressive:
+    - 完全阻塞：無法發聲、無呼吸聲
+    - 發紺
+    - 意識喪失
+    - 窒息死亡（數分鐘內）
+
+diagnosis:
+  primaryTests:
+    - name: 臨床表現
+      notes: 突發性作嘔/咳嗽 + 呼吸困難。完全阻塞時無法發聲
+    - name: 口腔視診
+      notes: 打開口腔視診是否可見異物
+  additional:
+    - 頸部 X-ray（異物定位）
+    - 喉鏡（異物無法直視時）
+
+treatment:
+  principles:
+    - 飼主現場急救
+    - 緊急異物移除
+    - 維持氣道通暢
+  general:
+    - "飼主急救（完全阻塞時）："
+    - 打開口腔嘗試手動移除可見異物
+    - 犬 Heimlich 手法：雙手握拳置於腹部肋下緣，向上快速擠壓
+    - 小型犬：頭朝下拍擊肩胛間
+    - "獸醫處置："
+    - 鎮靜下口腔探查與異物移除（Kelly 鉗、Magill 鉗）
+    - 氣管插管繞過阻塞點
+    - 緊急氣管切開（異物無法移除時）
+    - 異物移除後評估口腔/咽喉黏膜損傷
+    - 氧氣補充
+    - 軟食數日（黏膜損傷恢復）
+
+prognosis: 及時移除異物預後極佳。完全阻塞超過 3-4 分鐘致缺氧性腦損傷風險高。預防（適當大小玩具、監督進食、避免碎骨）為關鍵。
+
+pubmedQueries:
+  - query: '"choking" OR "foreign body" AND "pharyngeal" AND (veterinary OR canine OR feline) AND ("treatment" OR "emergency")'
+    frequency: monthly

@@ -1,0 +1,59 @@
+slug: pancreatic-carcinoma
+nameEn: Pancreatic Carcinoma
+nameZh: 胰臟癌
+bodySystem: oncology
+description: 胰臟外分泌腺的惡性腫瘤。犬貓均罕見但預後極差。診斷時多已轉移。臨床表現非特異性（嘔吐、食慾不振、體重下降）。
+
+aliases:
+  - { alias: "Pancreatic Adenocarcinoma", language: en }
+  - { alias: "胰腺癌", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬罕見。老年犬。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓罕見。
+
+etiology:
+  categories:
+    - name: 腫瘤性
+      examples:
+        - 胰腺外分泌上皮惡性增生
+        - 確切病因不明
+
+clinicalSigns:
+  early:
+    - 嘔吐
+    - 食慾不振
+    - 體重下降
+  progressive:
+    - 黃疸（膽管壓迫）
+    - 腹水
+    - 惡病質
+    - 腹痛
+
+diagnosis:
+  primaryTests:
+    - name: 腹部超音波
+      notes: 胰臟腫塊。可能伴膽管擴張
+    - name: CT
+      notes: 評估侵犯範圍與轉移
+
+treatment:
+  principles:
+    - 手術切除（極少數可行）
+    - 姑息性照護為主
+  general:
+    - 手術切除（可行時）
+    - 化療效果極有限
+    - 支持性照護
+    - 止痛管理
+    - 營養支持
+
+prognosis: 預後極差。中位存活通常 < 3 個月。完全切除可略延長存活但罕見可行。
+
+pubmedQueries:
+  - query: '"pancreatic carcinoma" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
+    frequency: monthly

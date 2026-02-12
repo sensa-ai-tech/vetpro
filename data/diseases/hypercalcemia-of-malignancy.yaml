@@ -1,0 +1,63 @@
+slug: hypercalcemia-of-malignancy
+nameEn: Hypercalcemia of Malignancy
+nameZh: 惡性腫瘤性高鈣血症
+bodySystem: oncology
+description: 腫瘤引起的高鈣血症，為犬最常見的副腫瘤症候群。最常見原因為淋巴瘤與肛囊腺癌分泌 PTHrP。高鈣血症可導致腎損傷、心律不整與神經症狀。
+
+aliases:
+  - { alias: "Humoral Hypercalcemia of Malignancy", language: en }
+  - { alias: "腫瘤相關高鈣血症", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬偶見。淋巴瘤與肛囊腺癌為主因。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓罕見。淋巴瘤相關。
+
+etiology:
+  categories:
+    - name: 腫瘤分泌因子
+      examples:
+        - PTHrP（副甲狀腺素相關蛋白）分泌
+        - 骨溶解因子
+        - 淋巴瘤、肛囊腺癌、多發性骨髓瘤最常見
+
+clinicalSigns:
+  early:
+    - 多飲多尿
+    - 食慾下降
+    - 嗜睡
+  progressive:
+    - 嘔吐
+    - 便秘
+    - 肌肉無力
+    - 腎損傷
+    - 心律不整
+
+diagnosis:
+  primaryTests:
+    - name: 血離子鈣
+      notes: ">1.4 mmol/L（犬正常 1.25-1.35）確認高鈣血症"
+    - name: PTHrP
+      notes: 升高支持惡性腫瘤性高鈣血症
+    - name: 腫瘤搜尋
+      notes: 淋巴結評估、肛門觸診、胸腹腔影像
+
+treatment:
+  principles:
+    - 緊急降鈣保護腎臟
+    - 治療潛在腫瘤
+  general:
+    - 靜脈輸液利尿（0.9% NaCl 擴容）
+    - Furosemide（充分水化後）
+    - Bisphosphonate（Pamidronate 或 Zoledronate）
+    - 治療潛在腫瘤（化療、手術）
+    - Prednisolone（淋巴瘤相關）
+
+prognosis: 取決於潛在腫瘤治療反應。淋巴瘤化療後高鈣血症通常快速緩解。肛囊腺癌手術後高鈣血症改善。持續高鈣血症導致腎衰竭預後不良。
+
+pubmedQueries:
+  - query: '"hypercalcemia of malignancy" AND (veterinary OR canine OR feline) AND ("PTHrP" OR "treatment")'
+    frequency: monthly

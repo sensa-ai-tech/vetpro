@@ -1,0 +1,66 @@
+slug: bundle-branch-block
+nameEn: Bundle Branch Block
+nameZh: 束支傳導阻滯
+bodySystem: cardiac
+description: 束支傳導阻滯為心室內傳導系統（左束支或右束支）的傳導延遲或中斷，導致心室去極化順序改變。右束支傳導阻滯（RBBB）在犬隻較常見，左束支傳導阻滯（LBBB）相對少見。單純束支傳導阻滯通常不影響血流動力學，但可能提示潛在心臟疾病。
+
+aliases:
+  - { alias: BBB, language: en }
+  - { alias: RBBB, language: en }
+  - { alias: LBBB, language: en }
+  - { alias: 分支阻滯, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: RBBB 較常見，可見於先天性心臟病（如 ASD）、心肌病或為偶發發現。LBBB 較少見，常提示左心室疾病。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 可見於心肌病（HCM、DCM）患者。LBBB 在貓隻可能與心肌疾病相關。
+
+etiology:
+  categories:
+    - name: 右束支傳導阻滯（RBBB）
+      examples:
+        - 先天性心臟病（心房中隔缺損、法洛氏四聯症）
+        - 右心室容積或壓力負荷
+        - 心肌纖維化
+        - 部分健康犬的正常變異
+    - name: 左束支傳導阻滯（LBBB）
+      examples:
+        - 擴張性心肌病
+        - 主動脈瓣疾病
+        - 左心室肥厚
+        - 心肌炎
+
+clinicalSigns:
+  early:
+    - 單純束支傳導阻滯通常無臨床症狀
+    - 心電圖偶然發現
+    - 聽診可能聞及第二心音分裂
+  progressive:
+    - 症狀取決於基礎心臟疾病
+    - 基礎心臟病進展時出現相關症狀
+
+diagnosis:
+  primaryTests:
+    - name: 心電圖（ECG）
+      notes: "RBBB：QRS 波群增寬，V10 導聯呈 rSR' 或 R 型，I 及 aVF 導聯呈深 S 波。LBBB：QRS 波群增寬，I 及 aVF 導聯呈寬大正向 R 波，V10 呈深 S 波或 QS 型。"
+    - name: 心臟超音波（Echocardiography）
+      notes: 評估是否存在基礎結構性心臟病。排除心肌病、先天性心臟缺損等。
+
+treatment:
+  principles:
+    - 單純束支傳導阻滯不需特別治療
+    - 治療基礎心臟疾病
+    - 定期監測心電圖變化
+  general:
+    - 無基礎心臟病的束支傳導阻滯僅需定期追蹤
+    - 治療基礎心臟病（心肌病、先天性心臟病等）
+    - 如合併其他傳導異常需進一步評估
+
+prognosis: 單純束支傳導阻滯預後通常良好，不影響壽命。預後主要取決於基礎心臟疾病。新出現的 LBBB 應提高警覺，排除進展性心肌病。
+
+pubmedQueries:
+  - query: '"bundle branch block" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "significance")'
+    frequency: monthly

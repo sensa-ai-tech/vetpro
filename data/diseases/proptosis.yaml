@@ -1,0 +1,65 @@
+slug: proptosis
+nameEn: Proptosis
+nameZh: 眼球脫出
+bodySystem: ophthalmology
+description: 眼球前移超出眼眶邊緣並被眼瞼卡住無法回納的緊急狀態。常因頭部外傷引起，短頭品種犬因眼眶淺且眼裂大，輕微外力即可脫出。需緊急處理以挽救眼球與視力。
+
+aliases:
+  - { alias: Globe Proptosis, language: en }
+  - { alias: Traumatic Globe Luxation, language: en }
+  - { alias: 眼球脫臼, language: zh }
+  - { alias: 眼球突脫, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 短頭品種犬 (Pug、Shih Tzu、Pekingese、Boston Terrier) 風險最高，輕微外傷即可發生。長頭品種需較大外力。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓因眼眶較深需較大外力才會脫出，通常伴隨嚴重頭部外傷。
+
+etiology:
+  categories:
+    - name: 外傷性
+      examples:
+        - 犬打架
+        - 車禍
+        - 高處墜落
+        - 頸部過度束縛 (短頭品種)
+
+clinicalSigns:
+  early:
+    - 眼球完全脫出眼眶
+    - 眼瞼卡在眼球赤道後方
+    - 劇烈疼痛
+    - 結膜嚴重充血水腫
+  progressive:
+    - 角膜暴露乾燥
+    - 角膜潰瘍/穿孔
+    - 眼外肌撕裂 (長頭品種常見)
+    - 視神經牽拉損傷
+
+diagnosis:
+  primaryTests:
+    - name: 臨床視診
+      notes: 診斷明確。重點評估預後因素：瞳孔反應、眼外肌完整性、角膜狀態
+    - name: 預後評估
+      notes: 瞳孔光反射存在 + 3 條以上眼外肌完整→保留眼球機會較大
+
+treatment:
+  principles:
+    - 緊急手術回納眼球
+    - 保護角膜
+    - 評估是否值得保留眼球
+  general:
+    - 緊急處理：保持角膜濕潤 (生理食鹽水紗布覆蓋)
+    - 全麻下回納眼球 + 暫時性瞼縫合 (tarsorrhaphy)
+    - 全身性抗生素 + 抗炎
+    - 2-3 週後拆線評估
+    - 嚴重損傷 (多條眼外肌斷裂、瞳孔無反應)：眼球摘除
+
+prognosis: 短頭品種犬預後較佳 (視力保留率約 50%)。長頭品種因需較大外力，伴隨損傷嚴重，視力保留率低。瞳孔光反射消失預後極差。即使視力喪失，回納後保留外觀仍有意義。
+
+pubmedQueries:
+  - query: '"proptosis" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
+    frequency: monthly

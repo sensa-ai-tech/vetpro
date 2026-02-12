@@ -1,0 +1,70 @@
+slug: pulmonary-abscess
+nameEn: Pulmonary Abscess
+nameZh: 肺膿瘍
+bodySystem: infectious
+description: 肺膿瘍為肺實質內局限性化膿性感染，形成壁包裹的膿液腔。犬隻常見原因包括吸入性肺炎進展、異物遷移（草芒）、血行性感染播散及肺炎局部化。厭氧菌與需氧菌混合感染為常見病原組合。
+
+aliases:
+  - { alias: 肺膿瘡, language: zh }
+  - { alias: Lung Abscess, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻肺膿瘍可繼發於吸入性肺炎、異物（草芒）遷移或血行性感染。獵犬品種（異物風險）和短頭犬（吸入風險）可能較好發。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻肺膿瘍罕見，可繼發於胸腔創傷或嚴重肺炎。
+
+etiology:
+  categories:
+    - name: 感染途徑
+      examples:
+        - 吸入性肺炎進展（最常見）
+        - 異物遷移（草芒穿透肺實質）
+        - 血行性播散（敗血症、感染性心內膜炎）
+        - 鄰近感染蔓延（膿胸、食道穿孔）
+    - name: 常見病原
+      examples:
+        - 混合厭氧菌與需氧菌感染
+        - Pasteurella、E. coli、Staphylococcus
+        - Bacteroides、Fusobacterium（厭氧菌）
+        - Nocardia、Actinomyces
+
+clinicalSigns:
+  early:
+    - 發燒
+    - 咳嗽（可能帶臭痰）
+    - 嗜睡
+    - 食慾下降
+  progressive:
+    - 持續發燒不退
+    - 體重減輕
+    - 呼吸困難
+    - 咯血
+    - 破裂入胸腔可致膿胸
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔 X 光
+      notes: 肺部團塊狀病變，可見液氣平面（air-fluid level）。厚壁空洞性病變。需與肺腫瘤、肺肉芽腫鑑別。
+    - name: CT 掃描
+      notes: 較 X 光更精確評估膿瘍大小、位置與壁特徵。環狀增強（ring enhancement）為特徵。引導經皮穿刺引流。
+
+treatment:
+  principles:
+    - 長期抗生素治療為基礎
+    - 大型膿瘍可能需要引流或手術
+    - 異物引起者需移除異物
+  general:
+    - "長期廣效抗生素：Amoxicillin-Clavulanate + Metronidazole（覆蓋厭氧菌）× 6-8 週"
+    - 依培養藥敏結果調整抗生素
+    - 大型膿瘍：CT 引導下經皮穿刺引流
+    - 無法引流或抗生素無效：肺葉切除術
+    - 異物移除（若為草芒等異物引起）
+
+prognosis: 肺膿瘍在長期適當抗生素治療下預後中等至良好。治療時間通常需要 6-8 週以上。手術引流或肺葉切除可加速恢復。異物引起者在異物移除後預後改善。破裂入胸腔導致膿胸者需更積極治療。
+
+pubmedQueries:
+  - query: '"pulmonary abscess" OR "lung abscess" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis")'
+    frequency: monthly

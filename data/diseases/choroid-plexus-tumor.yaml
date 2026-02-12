@@ -1,0 +1,71 @@
+slug: choroid-plexus-tumor
+nameEn: Choroid Plexus Tumor
+nameZh: 脈絡叢腫瘤
+bodySystem: oncology
+description: 脈絡叢腫瘤為起源於腦室脈絡叢上皮的腫瘤，分為脈絡叢乳頭瘤（choroid plexus papilloma, CPP，良性）與脈絡叢癌（choroid plexus carcinoma, CPC，惡性）。位於腦室內，常導致阻塞性水腦症（obstructive hydrocephalus）。犬隻為最常見受影響物種。
+
+aliases:
+  - { alias: 脈絡叢乳頭瘤, language: zh }
+  - { alias: Choroid Plexus Papilloma, language: en }
+  - { alias: Choroid Plexus Carcinoma, language: en }
+  - { alias: CPP, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬隻脈絡叢腫瘤少見但為腦室內腫瘤的重要類型。Golden Retriever 可能好發。多位於側腦室或第四腦室。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻脈絡叢腫瘤極罕見。
+
+etiology:
+  categories:
+    - name: 腫瘤類型
+      examples:
+        - 脈絡叢乳頭瘤（CPP）——良性，較常見
+        - 脈絡叢癌（CPC）——惡性，可經 CSF 播散
+    - name: 好發部位
+      examples:
+        - 側腦室（lateral ventricle）
+        - 第四腦室（fourth ventricle）
+        - 第三腦室（third ventricle，較少見）
+
+clinicalSigns:
+  early:
+    - 行為改變
+    - 輕度步態異常
+    - 癲癇（supratentorial 腫瘤）
+  progressive:
+    - 水腦症相關症狀（顱內壓升高）
+    - 嗜睡與定向障礙
+    - 視力喪失
+    - 共濟失調（第四腦室腫瘤）
+    - 前旋
+    - 頭部傾斜
+
+diagnosis:
+  primaryTests:
+    - name: 腦部 MRI
+      notes: 腦室內花椰菜狀（cauliflower-like）均勻造影劑增強腫塊。伴隨腦室擴張（水腦症）。T1 等至低訊號、T2 等至高訊號。
+    - name: CSF 分析
+      notes: 蛋白質升高。可能有腫瘤細胞脫落（CPC 較常見）。注意顱內壓升高時 CSF 採集風險。
+
+treatment:
+  principles:
+    - 手術切除為首選（特別是 CPP）
+    - 水腦症管理
+    - CPC 可能需額外治療
+  general:
+    - 手術切除（craniotomy + ventriculotomy）
+    - CPP 手術完整切除可能治癒
+    - 水腦症嚴重者可考慮 VP shunt（ventriculoperitoneal shunt）
+    - CPC 術後放射治療
+    - "抗癲癇管理：Levetiracetam 或 Phenobarbital"
+    - "短期類固醇減輕水腫：Dexamethasone"
+    - Omeprazole（減少 CSF 分泌，輔助管理水腦症）
+
+prognosis: CPP 手術完整切除後預後良好，中位存活可達 1-3 年以上。CPC 預後較差（惡性，可經 CSF 播散），中位存活約 6-12 個月。手術風險取決於腫瘤位置（第四腦室手術風險較高）。水腦症管理影響生活品質。
+
+pubmedQueries:
+  - query: '"choroid plexus tumor" OR "choroid plexus papilloma" AND (veterinary OR canine) AND ("surgery" OR "treatment")'
+    frequency: monthly

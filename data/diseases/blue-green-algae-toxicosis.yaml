@@ -1,0 +1,77 @@
+slug: blue-green-algae-toxicosis
+nameEn: Blue-Green Algae Toxicosis
+nameZh: 藍綠藻中毒
+bodySystem: toxicology
+description: 藍綠藻 (cyanobacteria) 產生多種強效毒素，包括肝毒素 (microcystin) 與神經毒素 (anatoxin-a)。犬在受汙染水體中游泳或飲用藻華水後可在數分鐘至數小時內死亡。夏季溫暖靜止水體為高風險環境。
+
+aliases:
+  - { alias: 藍藻中毒, language: zh }
+  - { alias: Blue-Green Algae Poisoning, language: en }
+  - { alias: Cyanotoxin Poisoning, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬為最常見受害動物（喜歡在水中游泳與飲水）。夏秋季溫暖靜止水體的藻華 (algal bloom) 為高風險。致死率極高。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓因較少接觸水體，中毒報告極少。
+
+etiology:
+  categories:
+    - name: 主要毒素
+      examples:
+        - Microcystin（肝毒素，最常見）— 引起急性肝壞死
+        - Anatoxin-a（神經毒素）— 極快速致死（數分鐘）
+        - Cylindrospermopsin（肝腎毒素）
+        - Saxitoxin（神經毒素，麻痺性）
+    - name: 來源
+      examples:
+        - 富營養化湖泊、池塘的藻華
+        - 靜止溫暖水體
+        - 被毛上殘留的藻類（舔毛攝入）
+
+clinicalSigns:
+  early:
+    - "Anatoxin-a：數分鐘內肌肉震顫、癲癇、猝死"
+    - "Microcystin：嘔吐、腹瀉（數小時內）"
+    - 過度流涎
+    - 嗜睡
+  progressive:
+    - "Microcystin：急性肝衰竭（12-24 小時）"
+    - 黃疸
+    - 凝血障礙
+    - 休克
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 暴露史與環境調查
+      notes: 確認接觸藻華水體。水體外觀（綠色油漆狀表層浮沫）
+    - name: 水體毒素檢測
+      notes: 採集水樣進行 microcystin/anatoxin 分析
+  additional:
+    - 肝功能（microcystin 型）
+    - 凝血功能
+    - 組織毒素分析（死後）
+
+treatment:
+  principles:
+    - 無特效解毒劑
+    - 極早期去汙染
+    - 積極支持療法
+    - Anatoxin-a 型常來不及治療
+  general:
+    - 催吐（極早期）+ 活性炭
+    - 徹底洗浴去除被毛上藻類
+    - IV 輸液支持
+    - 保肝治療（NAC、SAMe、silibinin）
+    - 新鮮冷凍血漿（凝血障礙）
+    - 癲癇控制
+    - Anatoxin-a 中毒進展極快，多數到院前已死亡
+
+prognosis: 藍綠藻中毒預後取決於毒素種類。Anatoxin-a 型致死率接近 100%（數分鐘至數小時猝死）。Microcystin 型積極治療存活率約 30-50%。預防（避免接觸藻華水體）遠比治療有效。
+
+pubmedQueries:
+  - query: '"blue-green algae" OR "cyanobacteria" AND (toxicosis OR poisoning) AND (veterinary OR canine)'
+    frequency: monthly

@@ -1,0 +1,75 @@
+slug: gastritis
+nameEn: Gastritis
+nameZh: 胃炎
+bodySystem: gastrointestinal
+description: 胃炎為胃黏膜的炎症，可為急性或慢性。急性胃炎在犬隻極為常見，通常因飲食不當（食物中毒、垃圾翻食）、藥物刺激（NSAIDs）或感染引起。多數急性胃炎為自限性，支持性治療即可恢復。慢性胃炎需內視鏡活檢確診。
+
+aliases:
+  - { alias: 胃部發炎, language: zh }
+  - { alias: Stomach Inflammation, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬隻急性胃炎極常見，為最常見的嘔吐原因之一。垃圾翻食（garbage gut）、飲食突然改變為常見誘因。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓隻急性胃炎可因食物不耐、毛球、植物攝入或感染引起。
+
+etiology:
+  categories:
+    - name: 飲食相關
+      examples:
+        - 垃圾翻食（dietary indiscretion）
+        - 飲食突然改變
+        - 食物過敏或不耐
+        - 腐敗食物
+    - name: 藥物/毒物
+      examples:
+        - NSAIDs（Aspirin、Ibuprofen、Meloxicam）
+        - 糖皮質素
+        - 化療藥物
+        - 植物毒素
+    - name: 感染性
+      examples:
+        - Helicobacter spp.（臨床意義爭議）
+        - 病毒性（CPV、FPV）
+        - 寄生蟲（Physaloptera）
+
+clinicalSigns:
+  early:
+    - 急性嘔吐
+    - 食慾下降
+    - 腹部不適
+    - 流涎
+  progressive:
+    - 反覆嘔吐（可含膽汁或血液）
+    - 脫水
+    - 嗜睡
+    - 吐血（hematemesis，嚴重者）
+
+diagnosis:
+  primaryTests:
+    - name: 臨床病史與體檢
+      notes: 急性胃炎多可依臨床病史診斷（飲食不當、藥物暴露史）。排除嚴重疾病（異物、胰臟炎、腎病等）後臨床治療。
+    - name: 基本血液檢查
+      notes: CBC、生化、電解質評估脫水與代謝狀態。排除代謝性嘔吐原因。嚴重或持續嘔吐需進一步檢查。
+
+treatment:
+  principles:
+    - 多數急性胃炎為自限性
+    - 支持性治療為主
+    - 移除誘因
+  general:
+    - 短暫禁食 12-24 小時後少量多餐恢復飲食（清淡飲食）
+    - "止吐：Maropitant（Cerenia）1 mg/kg SC/IV q24h"
+    - "胃酸抑制：Omeprazole 1 mg/kg PO q12-24h"
+    - 靜脈輸液矯正脫水與電解質異常
+    - 停用致病藥物（NSAIDs 等）
+    - "嚴重出血性胃炎：Sucralfate + Misoprostol"
+
+prognosis: 急性胃炎預後極好，多數在 24-48 小時內自行恢復。NSAIDs 相關胃炎在停藥與適當治療後恢復。反覆發作或慢性嘔吐需進一步內視鏡檢查排除慢性胃炎或其他疾病。
+
+pubmedQueries:
+  - query: '"gastritis" AND (veterinary OR canine OR feline) AND ("acute" OR "treatment")'
+    frequency: monthly

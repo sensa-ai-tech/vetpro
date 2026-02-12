@@ -1,0 +1,68 @@
+slug: nasolacrimal-duct-obstruction
+nameEn: Nasolacrimal Duct Obstruction
+nameZh: 鼻淚管阻塞
+bodySystem: ophthalmology
+description: 鼻淚管部分或完全阻塞導致淚液無法正常排入鼻腔，造成溢淚與淚痕。可為先天性 (淚點發育不全、管腔狹窄) 或後天性 (感染、異物、腫瘤壓迫)。短頭品種因面部構造先天性阻塞率高。
+
+aliases:
+  - { alias: NLD Obstruction, language: en }
+  - { alias: Dacryostenosis, language: en }
+  - { alias: 淚道阻塞, language: zh }
+  - { alias: 鼻淚管狹窄, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 短頭品種犬常見。Cocker Spaniel、Poodle 也有先天性淚點異常傾向。
+  - speciesCommon: cat
+    prevalence: common
+    notes: Persian 等扁臉品種先天性阻塞常見。FHV-1 感染後瘢痕狹窄也常見。
+
+etiology:
+  categories:
+    - name: 先天性
+      examples:
+        - 淚點發育不全 (micropuncta/imperforate puncta)
+        - 鼻淚管發育狹窄
+        - 短頭品種面部骨骼構造
+    - name: 後天性
+      examples:
+        - 感染後瘢痕狹窄 (FHV-1、淚囊炎)
+        - 異物阻塞
+        - 鼻腔/面部腫瘤壓迫
+
+clinicalSigns:
+  early:
+    - 單側或雙側溢淚
+    - 內眼角濕潤
+  progressive:
+    - 面部淚痕
+    - 淚囊炎 (dacryocystitis，感染性)
+    - 膿性分泌物從淚點溢出
+    - 眼周皮膚炎
+
+diagnosis:
+  primaryTests:
+    - name: 螢光素排出試驗
+      notes: 螢光素點眼 5 分鐘後檢查鼻孔。陰性結果提示阻塞
+    - name: 鼻淚管沖洗
+      notes: 經上淚點插管沖洗。完全阻塞時無法通過；部分阻塞有阻力
+    - name: 淚道造影 (Dacryocystorhinography)
+      notes: 顯影劑注入後 X 光或 CT 評估阻塞位置
+
+treatment:
+  principles:
+    - 先天性無症狀者可不治療
+    - 後天性阻塞嘗試沖洗疏通
+    - 感染性需抗生素治療
+  general:
+    - 鼻淚管沖洗 (生理食鹽水)
+    - 嚴重阻塞：留置導管擴張 (stenting) 2-4 週
+    - 淚囊炎：全身性抗生素
+    - 不可逆阻塞：鼻淚管吻合術 (dacryocystorhinostomy)
+
+prognosis: 沖洗可疏通的阻塞預後良好。先天性構造異常為長期問題。感染性淚囊炎治療後可改善。腫瘤壓迫者取決於腫瘤類型。
+
+pubmedQueries:
+  - query: '"nasolacrimal duct obstruction" AND (veterinary OR canine OR feline) AND ("treatment" OR "dacryocystorhinography")'
+    frequency: monthly

@@ -1,0 +1,86 @@
+slug: splenic-mass
+nameEn: Splenic Mass
+nameZh: 脾臟腫塊
+bodySystem: oncology
+description: 脾臟腫塊 (splenic mass) 為犬腹腔最常見的偶然發現之一，犬脾臟腫塊中約 50-65% 為惡性。包含腫瘤性與非腫瘤性病變，術前影像學無法可靠區分良惡性，因此脾臟切除術為診斷與治療的首選方法。常以急性腹腔出血的急診方式就醫。
+
+aliases:
+  - { alias: 脾臟包塊, language: zh }
+  - { alias: 脾臟佔位性病變, language: zh }
+  - { alias: Splenic Lesion, language: en }
+  - { alias: Splenic Nodule, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬極為常見，特別是大型犬品種。遵循「2/3 法則」：2/3 為腫瘤性，其中 2/3 為惡性。結節性增生為最常見非腫瘤性病變。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓脾臟腫塊較犬少見。肥大細胞瘤與淋巴瘤為最常見惡性原因。髓外造血與脾臟淀粉樣變性也需考慮。
+
+etiology:
+  categories:
+    - name: 腫瘤性病變
+      examples:
+        - 血管肉瘤 (hemangiosarcoma)
+        - 血管瘤 (hemangioma)
+        - 淋巴瘤 (lymphoma)
+        - 肥大細胞瘤 (mast cell tumor)
+    - name: 非腫瘤性病變
+      examples:
+        - 結節性增生 (nodular hyperplasia)
+        - 血腫 (hematoma)
+        - 膿瘍
+        - 髓外造血 (extramedullary hematopoiesis)
+        - 梗塞
+
+clinicalSigns:
+  early:
+    - 偶然發現（健檢或影像檢查時）
+    - 腹部觸診可能摸到腫塊
+    - 輕微食慾下降或嗜睡
+  progressive:
+    - 腹部膨脹
+    - 黏膜蒼白
+    - 急性虛脫（腫塊破裂出血）
+    - 心動過速
+    - 腹痛
+    - 休克徵象（破裂出血時）
+
+diagnosis:
+  primaryTests:
+    - name: 腹部超音波
+      notes: 偵測脾臟腫塊首選方法。評估數量、大小、回音性質。偵測腹腔游離液體。但無法區分良惡性
+    - name: 腹腔穿刺 (abdominocentesis)
+      notes: 急性腹水時評估。血性腹水需測定 PCV、比重。非凝固性血液提示活動性出血
+  imaging:
+    - name: 胸腔 X-ray
+      notes: 術前分期必要。評估肺轉移
+    - name: 心臟超音波
+      notes: 排除右心房腫塊及心包積液（血管肉瘤常見轉移部位）
+  additional:
+    - CBC（裂片紅血球 schistocytes、球形紅血球、血小板減少）
+    - 凝血功能（PT、aPTT、D-dimer — DIC 篩檢）
+    - 血清生化
+    - 不建議術前 FNA（出血風險高且診斷價值有限）
+
+treatment:
+  principles:
+    - 脾臟切除術為首選
+    - 急性出血需緊急穩定化
+    - 術後組織病理決定後續治療
+    - 輸血支持常為必要
+  general:
+    - 緊急穩定（IV 輸液、輸血、升壓劑）
+    - 脾臟全切除術
+    - 術中肝臟切片（排除轉移）
+    - 術後心電圖監測 48-72 小時（室性心律不整常見）
+    - 根據組織病理結果決定是否需輔助化療
+    - 血管肉瘤確認後啟動 doxorubicin 化療
+    - 結節性增生或良性腫瘤僅需手術即可
+
+prognosis: 非腫瘤性脾臟腫塊（結節性增生、血腫）脾切除後預後極佳。良性腫瘤（血管瘤）預後好。惡性腫瘤預後取決於類型：血管肉瘤最差（中位存活數月），淋巴瘤視化療反應，肥大細胞瘤經脾切除可控制數月至數年。
+
+pubmedQueries:
+  - query: '"splenic mass" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "splenectomy" OR "outcome")'
+    frequency: monthly

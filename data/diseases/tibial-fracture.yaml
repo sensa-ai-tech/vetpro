@@ -1,0 +1,58 @@
+slug: tibial-fracture
+nameEn: Tibial Fracture
+nameZh: 脛骨骨折
+bodySystem: orthopedic
+description: 脛骨（小腿骨）的骨折。因脛骨前內側僅有薄層軟組織覆蓋，開放性骨折比例較其他長骨高。需注意軟組織覆蓋與血供保護。
+
+aliases:
+  - { alias: "Shinbone Fracture", language: en }
+  - { alias: "小腿骨骨折", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬常見。車禍與外傷。開放性骨折比例高。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓常見。高處墜落。
+
+etiology:
+  categories:
+    - name: 外傷性
+      examples:
+        - 車禍
+        - 高處墜落
+        - 直接撞擊
+
+clinicalSigns:
+  early:
+    - 後肢不負重
+    - 小腿腫脹
+    - 觸診疼痛
+  progressive:
+    - 開放性傷口（常見）
+    - 骨端外露
+    - 肢體變形
+
+diagnosis:
+  primaryTests:
+    - name: X 光
+      notes: 確認骨折類型與位置
+    - name: 傷口評估
+      notes: 開放性骨折分級（Gustilo 分類）
+
+treatment:
+  principles:
+    - 手術固定
+    - 開放性骨折需緊急處理
+  general:
+    - 骨板固定或外固定架
+    - 開放性骨折：緊急清創 + 抗生素
+    - 注意軟組織覆蓋
+    - 術後限制活動
+
+prognosis: 閉合性骨折手術後預後良好。開放性骨折併發症風險較高（感染、延遲癒合）。
+
+pubmedQueries:
+  - query: '"tibial fracture" AND (veterinary OR canine OR feline) AND ("fixation" OR "treatment")'
+    frequency: monthly

@@ -1,0 +1,75 @@
+slug: tritrichomonas
+nameEn: Tritrichomonas
+nameZh: 胎兒三毛滴蟲感染
+bodySystem: infectious
+description: 胎兒三毛滴蟲 (Tritrichomonas foetus) 為貓大腸慢性腹瀉的重要病原，尤其在幼貓與多貓環境中。感染引起大腸性腹瀉，糞便含黏液或血絲。多數貓最終自行清除感染，但可能需數月至數年。犬感染極罕見。
+
+aliases:
+  - { alias: 三毛滴蟲感染, language: zh }
+  - { alias: Tritrichomonas foetus Infection, language: en }
+  - { alias: Feline Tritrichomoniasis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬 Tritrichomonas 感染極罕見，偶有腸道感染報告。臨床意義不確定。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 幼貓與多貓環境中非常常見（收容所盛行率可達 30%）。純種貓可能較易感。多數 <2 歲發病。常與 Giardia 混合感染。
+
+etiology:
+  categories:
+    - name: 病原與傳播
+      examples:
+        - Tritrichomonas foetus（鞭毛原蟲）
+        - 直接糞口傳播
+        - 共用貓砂盆為主要傳播途徑
+        - 營養體在糞便中存活時間短（需新鮮傳播）
+    - name: 致病機制
+      examples:
+        - 定殖大腸黏膜表面
+        - 引起淋巴球漿細胞性大腸炎
+        - 不侵入組織但引起黏膜損傷
+
+clinicalSigns:
+  early:
+    - 慢性大腸性腹瀉（半成形至水樣）
+    - 糞便含黏液
+    - 排便頻率增加
+  progressive:
+    - 惡臭腹瀉
+    - 血便（偶見）
+    - 肛門周圍紅腫刺激
+    - 裡急後重
+    - 體重通常維持正常
+
+diagnosis:
+  primaryTests:
+    - name: 糞便 PCR
+      notes: 確定診斷金標準。使用專門的 T. foetus PCR（InPouch TF 培養 + PCR 可提高敏感度）
+    - name: 新鮮糞便直接抹片
+      notes: 新鮮（<6 小時）糞便稀釋後鏡檢可見特徵性滾動前進的營養體。需與 Giardia 營養體區分
+  additional:
+    - InPouch TF 培養（專門培養系統）
+    - 同時篩檢 Giardia（常混合感染）
+    - 排除其他大腸炎原因
+
+treatment:
+  principles:
+    - Ronidazole 為唯一有效藥物
+    - 多數貓最終自行清除
+    - 環境管理減少傳播
+    - Metronidazole 無效
+  general:
+    - Ronidazole 30 mg/kg PO BID × 14 天（需注意神經毒性）
+    - Metronidazole 對 T. foetus 無效（常見錯誤）
+    - 監測 ronidazole 神經毒性（共濟失調、癲癇）
+    - 多貓家庭所有陽性貓同時治療
+    - 增加貓砂盆數量與清理頻率
+    - 無藥物治療時多數貓 2-5 年內自行清除
+
+prognosis: 貓 Tritrichomonas 感染 ronidazole 治療成功率高（>90%）。未治療者多數在 2-5 年內自行清除但期間持續腹瀉。神經毒性為 ronidazole 主要副作用，需監測。整體預後良好，不致死。
+
+pubmedQueries:
+  - query: '"Tritrichomonas foetus" AND (feline OR cat) AND ("treatment" OR "diagnosis")'
+    frequency: monthly

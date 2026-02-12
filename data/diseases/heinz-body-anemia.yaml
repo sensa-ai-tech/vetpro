@@ -1,0 +1,75 @@
+slug: heinz-body-anemia
+nameEn: Heinz Body Anemia
+nameZh: 乙乙氏小體貧血
+bodySystem: hematology
+description: Heinz body 貧血為氧化性損傷導致血紅素變性，在紅血球內形成不溶性沉澱物（Heinz bodies），使紅血球易被脾臟清除或發生血管內溶血。貓隻紅血球對氧化壓力特別敏感。常見原因包括洋蔥/大蒜中毒、Acetaminophen 中毒（貓）、鋅中毒及部分藥物。
+
+aliases:
+  - { alias: Heinz Body Hemolytic Anemia, language: en }
+  - { alias: 亨氏小體貧血, language: zh }
+  - { alias: Oxidative Hemolytic Anemia, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻 Heinz body 形成主要見於洋蔥/大蒜中毒、鋅中毒。犬隻紅血球較貓隻有更強的抗氧化能力。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓隻紅血球對氧化壓力高度敏感（血紅素含較多硫氫基、脾臟清除能力較差）。Acetaminophen、洋蔥、丙二醇（propylene glycol）為常見原因。少量 Heinz bodies 可見於健康貓（尤其糖尿病或甲亢貓）。
+
+etiology:
+  categories:
+    - name: 食物/毒物
+      examples:
+        - 洋蔥與大蒜（含硫化合物氧化血紅素）
+        - 鋅中毒（鋅幣、鋅螺帽）
+        - Acetaminophen 中毒（貓極敏感）
+        - 丙二醇（propylene glycol，貓）
+    - name: 藥物
+      examples:
+        - Methylene blue（高劑量）
+        - DL-Methionine
+        - Vitamin K3（menadione）
+    - name: 疾病相關
+      examples:
+        - 糖尿病（酮酸中毒伴氧化壓力增加）
+        - 甲狀腺功能亢進（代謝率增加）
+        - 淋巴瘤（部分病例）
+
+clinicalSigns:
+  early:
+    - 黏膜蒼白
+    - 嗜睡
+    - 食慾下降
+  progressive:
+    - 黃疸（溶血性）
+    - 深色尿（血紅素尿）
+    - 嘔吐（毒物攝入時）
+    - 呼吸急促
+    - 心搏過速
+    - 貓：口腔黏膜與皮膚發紺（methemoglobinemia，Acetaminophen 中毒）
+
+diagnosis:
+  primaryTests:
+    - name: 血液抹片（新亞甲藍染色）
+      notes: 新亞甲藍（new methylene blue）或 brilliant cresyl blue 活體染色可見 Heinz bodies（紅血球表面或內部的深藍色圓形突起）。Wright's 染色下可見為蒼白突起。
+    - name: 全血球計數（CBC）
+      notes: 再生性貧血（網織紅血球增加）。可見 eccentrocytes（氧化性損傷特徵）。Methemoglobin 測定（如可用）。
+
+treatment:
+  principles:
+    - 移除氧化性毒物為首要任務
+    - 支持性治療與輸血
+    - 特定解毒劑（Acetaminophen 中毒用 NAC）
+  general:
+    - 移除毒物來源（催吐、活性碳）
+    - "Acetaminophen 中毒：N-acetylcysteine（NAC）140 mg/kg IV loading → 70 mg/kg IV q4h × 12-17 doses"
+    - "輸血：pRBC 10-20 mL/kg（嚴重貧血時）"
+    - 輸液支持維持腎臟灌流
+    - 鋅中毒：內視鏡或手術移除鋅異物
+
+prognosis: 預後取決於毒物種類、攝入量與治療及時性。輕度洋蔥中毒在移除來源後通常 1-2 週內恢復。Acetaminophen 中毒在及時給予 NAC 後預後改善。鋅中毒移除異物後通常可恢復。嚴重溶血導致腎衰竭者預後不良。
+
+pubmedQueries:
+  - query: '"Heinz body" AND (veterinary OR canine OR feline) AND ("anemia" OR "oxidative")'
+    frequency: monthly

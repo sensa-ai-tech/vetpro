@@ -1,0 +1,77 @@
+slug: streptococcal-infection
+nameEn: Streptococcal Infection
+nameZh: 鏈球菌感染
+bodySystem: infectious
+description: 鏈球菌 (Streptococcus spp.) 感染可引起犬貓多種臨床疾病，包括壞死性筋膜炎、菌血症、泌尿道感染、肺炎及新生兒敗血症。S. canis 為犬貓最常見致病種。A 群鏈球菌 (GAS) 引起的壞死性筋膜炎為嚴重且致命的感染。
+
+aliases:
+  - { alias: 鏈球菌病, language: zh }
+  - { alias: Streptococcus Infection, language: en }
+  - { alias: Strep Infection, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: S. canis 為犬最常見致病種，可引起皮膚/軟組織感染、泌尿道感染、菌血症。壞死性筋膜炎雖罕見但死亡率極高。新生幼犬敗血症可由 S. canis 引起。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓鏈球菌感染類似犬。S. canis 為主要致病種。上呼吸道與皮膚/軟組織為常見感染部位。
+
+etiology:
+  categories:
+    - name: 主要致病種
+      examples:
+        - S. canis（犬貓最常見）
+        - S. pyogenes (Group A Streptococcus)
+        - S. equi subsp. zooepidemicus
+        - S. dysgalactiae
+    - name: 感染類型
+      examples:
+        - 皮膚/軟組織感染
+        - 壞死性筋膜炎
+        - 泌尿道感染
+        - 菌血症/敗血症
+        - 新生兒敗血症
+
+clinicalSigns:
+  early:
+    - 局部紅腫熱痛（軟組織感染）
+    - 發燒
+    - 食慾下降
+    - 排尿異常（泌尿道感染時）
+  progressive:
+    - 蜂窩織炎迅速擴展
+    - 壞死性筋膜炎（極度疼痛、組織壞死、敗血性休克）
+    - 多器官功能障礙
+    - 新生幼犬突然死亡
+
+diagnosis:
+  primaryTests:
+    - name: 細菌培養與藥敏
+      notes: 感染部位採樣培養為確診金標準。鏈球菌在血液瓊脂上呈 beta 溶血
+    - name: 血液培養
+      notes: 敗血症或壞死性筋膜炎時必要。需氧培養瓶
+  additional:
+    - CBC（白血球增多伴左移，或嚴重感染時白血球減少）
+    - 生化（乳酸升高、器官功能評估）
+    - 影像學（超音波或 CT 評估軟組織感染範圍）
+
+treatment:
+  principles:
+    - 針對性抗生素治療
+    - Beta-lactam 類為首選
+    - 壞死性筋膜炎為外科急症
+    - 敗血症需積極重症照護
+  general:
+    - Ampicillin 22 mg/kg IV q6-8h 或 amoxicillin-clavulanate PO
+    - 壞死性筋膜炎需緊急廣泛清創 + clindamycin（抑制毒素產生）
+    - 敗血症支持療法（IV 輸液、升壓劑）
+    - 根據藥敏結果調整抗生素
+    - 泌尿道感染 amoxicillin 11-22 mg/kg PO BID × 7-14 天
+    - 傷口護理
+
+prognosis: 單純皮膚/軟組織感染或泌尿道感染預後良好。壞死性筋膜炎死亡率可達 40-70%，即使積極手術清創與抗生素治療。新生兒敗血症預後差。
+
+pubmedQueries:
+  - query: '"streptococcal infection" AND (veterinary OR canine OR feline) AND ("treatment" OR "necrotizing fasciitis")'
+    frequency: monthly

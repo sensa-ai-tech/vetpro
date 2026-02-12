@@ -1,0 +1,67 @@
+slug: subglottic-stenosis
+nameEn: Subglottic Stenosis
+nameZh: 聲門下狹窄
+bodySystem: respiratory
+description: 聲門下狹窄為聲門下方喉部或氣管上端的異常狹窄。犬貓可為先天性或後天性（氣管插管損傷後瘢痕形成為最常見後天性原因）。導致上呼吸道阻塞症狀，嚴重者可危及生命。
+
+aliases:
+  - { alias: 聲門下方狹窄, language: zh }
+  - { alias: Subglottic Tracheal Stenosis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬隻聲門下狹窄罕見。後天性者多因長時間氣管插管或反覆插管導致黏膜損傷與瘢痕形成。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻因喉部解剖較小，氣管插管損傷後狹窄風險可能較高。
+
+etiology:
+  categories:
+    - name: 後天性（較常見）
+      examples:
+        - 氣管插管後瘢痕形成（最常見原因）
+        - 反覆氣管插管損傷
+        - 喉部手術後
+        - 外傷（頸部壓迫）
+    - name: 先天性
+      examples:
+        - 先天性聲門下腔狹窄
+        - 軟骨發育異常
+
+clinicalSigns:
+  early:
+    - 吸氣性喘鳴（stridor）
+    - 運動後呼吸音增加
+    - 聲音改變
+  progressive:
+    - 進行性呼吸困難
+    - 嚴重吸氣性喘鳴
+    - 發紺
+    - 運動不耐
+    - 急性呼吸困難發作
+
+diagnosis:
+  primaryTests:
+    - name: 喉鏡/氣管鏡檢查
+      notes: 確診金標準。直接觀察聲門下腔狹窄程度與範圍。評估狹窄性質（瘢痕性、黏膜性、軟骨性）。
+    - name: CT 掃描
+      notes: 評估狹窄範圍與嚴重程度。術前計劃。
+
+treatment:
+  principles:
+    - 恢復氣道通暢為治療目標
+    - 球囊擴張術為首選微創治療
+    - 嚴重狹窄可能需要手術
+  general:
+    - 球囊擴張術（balloon dilation，可重複進行）
+    - 雷射切除瘢痕組織
+    - "短期皮質類固醇減少再狹窄：Dexamethasone 0.1-0.2 mg/kg IV"
+    - Mitomycin C 局部塗布（減少瘢痕再形成）
+    - 嚴重者：氣管切開術（暫時或永久）或氣管切除吻合術
+
+prognosis: 預後取決於狹窄範圍與嚴重程度。球囊擴張術後復發率中等。反覆擴張可能需要。雷射切除結合球囊擴張效果較佳。嚴重環狀狹窄可能需要永久性氣管切開。
+
+pubmedQueries:
+  - query: '"subglottic stenosis" AND (veterinary OR canine OR feline) AND ("balloon dilation" OR "treatment")'
+    frequency: monthly

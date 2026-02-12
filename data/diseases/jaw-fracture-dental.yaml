@@ -1,0 +1,58 @@
+slug: jaw-fracture-dental
+nameEn: Jaw Fracture Dental
+nameZh: 牙科性顎骨骨折
+bodySystem: dental
+description: 與牙齒疾病相關的顎骨骨折，包括牙周病導致的病理性骨折與拔牙醫源性骨折。小型犬因下顎骨薄且牙齒相對大，風險特別高。
+
+aliases:
+  - { alias: "Pathological Jaw Fracture", language: en }
+  - { alias: "Iatrogenic Jaw Fracture", language: en }
+  - { alias: "齒源性顎骨骨折", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 小型犬風險高。嚴重牙周病或拔牙後。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓偶見。
+
+etiology:
+  categories:
+    - name: 齒源性
+      examples:
+        - 嚴重牙周病骨質喪失
+        - 拔牙時醫源性骨折
+        - 齒根膿瘍骨質破壞
+
+clinicalSigns:
+  early:
+    - 咬合異常
+    - 咀嚼時疼痛
+    - 下顎不穩定
+  progressive:
+    - 無法進食
+    - 面部腫脹
+    - 下顎偏移
+
+diagnosis:
+  primaryTests:
+    - name: 口腔 X 光 / CT
+      notes: 骨折線確認。評估殘餘骨量
+
+treatment:
+  principles:
+    - 穩定骨折
+    - 維持營養
+  general:
+    - 鋼絲環紮或微型骨板固定
+    - Tape muzzle 輔助
+    - 管飼或軟食
+    - 拔牙醫源性骨折：即時固定
+    - 抗生素治療
+
+prognosis: 殘餘骨量足夠者固定後預後中等。骨量嚴重不足者癒合困難。管飼支持重要。
+
+pubmedQueries:
+  - query: '"jaw fracture" AND (veterinary OR canine OR dental) AND ("fixation" OR "treatment")'
+    frequency: monthly

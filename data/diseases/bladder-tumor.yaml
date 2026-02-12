@@ -1,0 +1,63 @@
+slug: bladder-tumor
+nameEn: Bladder Tumor
+nameZh: 膀胱腫瘤
+bodySystem: oncology
+description: 膀胱的原發性腫瘤，犬以移行上皮細胞癌 (TCC) 最常見。好發於膀胱三角區 (trigone)，可能阻塞輸尿管開口或尿道。Scottish Terrier 為高風險品種。
+
+aliases:
+  - { alias: "Bladder Cancer", language: en }
+  - { alias: "Transitional Cell Carcinoma", language: en }
+  - { alias: "膀胱癌", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬偶見。Scottish Terrier 風險為其他品種 18 倍。中老年母犬稍多。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓罕見。
+
+etiology:
+  categories:
+    - name: 腫瘤性
+      examples:
+        - 膀胱移行上皮惡性增生
+        - 品種遺傳傾向
+        - 除草劑暴露可能為危險因子
+
+clinicalSigns:
+  early:
+    - 血尿
+    - 頻尿
+    - 排尿困難
+  progressive:
+    - 反覆泌尿道感染
+    - 尿道阻塞
+    - 水腎
+    - 轉移（淋巴結、肺）
+
+diagnosis:
+  primaryTests:
+    - name: 腹部超音波
+      notes: 膀胱三角區腫塊。雙側腎臟評估排除水腎
+    - name: 尿液 BRAF 突變檢測
+      notes: 犬 TCC 高比例帶 BRAF V595E 突變。非侵入性篩檢
+    - name: 膀胱鏡活檢
+      notes: 組織病理確診
+
+treatment:
+  principles:
+    - 手術切除困難（三角區位置）
+    - 化療 + NSAIDs
+  general:
+    - Piroxicam（NSAIDs，抗腫瘤效果）
+    - Mitoxantrone + Piroxicam
+    - Vinblastine
+    - 尿道支架（阻塞時）
+    - 手術切除（腫瘤不在三角區時可考慮）
+
+prognosis: Piroxicam + 化療中位存活 6-12 個月。單用 Piroxicam 中位存活 6 個月。不治療中位存活約 4 個月。
+
+pubmedQueries:
+  - query: '"bladder tumor" OR "transitional cell carcinoma" AND (veterinary OR canine) AND ("piroxicam" OR "treatment")'
+    frequency: monthly

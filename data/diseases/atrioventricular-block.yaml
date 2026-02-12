@@ -1,0 +1,68 @@
+slug: atrioventricular-block
+nameEn: Atrioventricular Block
+nameZh: 房室傳導阻滯
+bodySystem: cardiac
+description: 房室傳導阻滯（AV block）為心房至心室間電傳導延遲或中斷的心律不整。分為一度（PR 間期延長）、二度（間歇性傳導失敗）與三度（完全傳導中斷）。一度與二度 Mobitz I 型通常臨床意義較低，二度 Mobitz II 型與三度房室傳導阻滯可能導致血流動力學障礙。
+
+aliases:
+  - { alias: AV Block, language: en }
+  - { alias: Heart Block, language: en }
+  - { alias: 房室阻滯, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 一度 AV block 在健康犬可因高迷走神經張力而出現（尤其短頭品種）。高度 AV block 常見於老年犬，特別是 Cocker Spaniel 與 Pug。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻可見於心肌病、高血鉀或藥物影響。
+
+etiology:
+  categories:
+    - name: 退行性變化
+      examples:
+        - 傳導系統纖維化
+        - 年齡相關退行性變化
+        - 心內膜鈣化
+    - name: 病理性原因
+      examples:
+        - 心肌炎或心內膜炎
+        - 心肌病
+        - 心臟腫瘤侵犯傳導系統
+        - 高血鉀
+        - 藥物影響（digoxin、β-blocker、鈣離子通道阻斷劑）
+
+clinicalSigns:
+  early:
+    - 一度 AV block 通常無症狀
+    - 二度 Mobitz I 型通常無症狀
+    - 心率可能偏慢
+  progressive:
+    - 二度 Mobitz II 型與高度 AV block：間歇性虛弱
+    - 運動不耐
+    - 昏厥
+    - 嚴重心搏過緩
+
+diagnosis:
+  primaryTests:
+    - name: 心電圖（ECG）
+      notes: "一度：PR 間期延長（>0.13 秒犬）。二度 Mobitz I：PR 間期逐漸延長至一次傳導失敗（Wenckebach）。二度 Mobitz II：PR 間期固定，但間歇性 P 波未傳導。三度：P 波與 QRS 完全無關（AV dissociation），逸搏心律。"
+    - name: Atropine 反應試驗
+      notes: Atropine 0.04 mg/kg IV，評估迷走神經張力增高引起的 AV block（可逆性）與器質性 AV block（不可逆）的鑑別。
+
+treatment:
+  principles:
+    - 一度與二度 Mobitz I 型通常不需治療
+    - 有症狀的高度 AV block 需要心律調節器
+    - 治療可逆性原因（電解質異常、藥物）
+  general:
+    - 一度與二度 Mobitz I 型：監測觀察
+    - 可逆性原因：矯正電解質異常、停用致病藥物
+    - "有症狀的高度 AV block：永久性心律調節器植入"
+    - "急性期暫時措施：Atropine 0.02-0.04 mg/kg IV 或 Isoproterenol CRI"
+
+prognosis: 一度與二度 Mobitz I 型 AV block 預後良好，通常無需治療。高度與三度 AV block 需要永久性心律調節器，植入後預後良好。未治療的有症狀高度 AV block 有突然死亡風險。
+
+pubmedQueries:
+  - query: '"atrioventricular block" AND (veterinary OR canine OR feline) AND ("pacemaker" OR "treatment")'
+    frequency: monthly

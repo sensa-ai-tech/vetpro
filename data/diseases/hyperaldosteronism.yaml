@@ -1,0 +1,70 @@
+slug: hyperaldosteronism
+nameEn: Hyperaldosteronism
+nameZh: 高醛固酮血症
+bodySystem: endocrine
+description: 高醛固酮血症（Conn's syndrome）為腎上腺皮質球狀帶分泌過量醛固酮（aldosterone）的疾病。貓隻為主要受影響物種，通常因腎上腺皮質腺瘤或腺癌引起。臨床特徵為高血壓、低血鉀與肌肉無力。為貓隻全身性高血壓的重要且可能被忽視的原因。
+
+aliases:
+  - { alias: 原發性高醛固酮血症, language: zh }
+  - { alias: Primary Hyperaldosteronism, language: en }
+  - { alias: Conn's Syndrome, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬隻原發性高醛固酮血症極罕見。偶有個案報告。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻原發性高醛固酮血症近年被認為較過去認知更常見。多見於老年貓（>10 歲）。為貓隻高血壓的重要病因之一。
+
+etiology:
+  categories:
+    - name: 腫瘤類型
+      examples:
+        - 腎上腺皮質腺瘤（aldosterone-secreting adenoma，最常見）
+        - 腎上腺皮質腺癌（aldosterone-secreting carcinoma）
+        - 雙側腎上腺增生（較少見）
+    - name: 機制
+      examples:
+        - 醛固酮過量→鈉滯留、鉀排泄增加
+        - 低血鉀→肌肉無力
+        - 鈉水滯留→高血壓
+        - 腎素受抑制（renin suppressed）
+
+clinicalSigns:
+  early:
+    - 高血壓（常為偶發性血壓測量發現）
+    - 輕度肌肉無力
+    - 低血鉀（血檢發現）
+  progressive:
+    - 嚴重肌肉無力（頸部下垂 ventroflexion——貓隻特徵性表現）
+    - 高血壓相關靶器官損傷（視網膜病變、眼內出血、失明）
+    - 多飲多尿
+    - 心臟肥大
+    - 後肢無力
+
+diagnosis:
+  primaryTests:
+    - name: 血液生化 + 血壓
+      notes: 低血鉀（<3.5 mEq/L，可能 <3.0）。高血壓（收縮壓 >160 mmHg）。血漿醛固酮升高。血漿腎素活性降低。aldosterone/renin ratio 升高。
+    - name: 腹部超音波/CT
+      notes: 單側或雙側腎上腺腫塊。腎上腺增大。CT 為最佳評估工具。
+
+treatment:
+  principles:
+    - 腎上腺切除術為根治療法
+    - 藥物控制高血壓與低血鉀
+    - 貓隻手術或藥物管理均可
+  general:
+    - 腎上腺切除術（adrenalectomy）——單側腫瘤首選
+    - "藥物管理：Spironolactone 2 mg/kg PO q12h（醛固酮拮抗劑）"
+    - "降壓：Amlodipine 0.625-1.25 mg/cat PO q24h"
+    - 鉀補充（Potassium gluconate PO）直到鉀恢復正常
+    - 術後監測對側腎上腺功能（可能暫時功能不足）
+    - 定期血壓與電解質監測
+
+prognosis: 腎上腺切除術後預後良好（腺瘤）。藥物管理（Spironolactone + Amlodipine）可有效控制症狀。貓隻藥物管理中位存活約 1-3 年。腎上腺癌預後較腺瘤差（轉移風險）。高血壓靶器官損傷（特別是視力喪失）可能不可逆。早期發現與治療可防止不可逆靶器官損傷。
+
+pubmedQueries:
+  - query: '"hyperaldosteronism" AND (veterinary OR feline OR canine) AND ("spironolactone" OR "adrenalectomy" OR "treatment")'
+    frequency: monthly

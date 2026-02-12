@@ -1,0 +1,64 @@
+slug: symblepharon
+nameEn: Symblepharon
+nameZh: 瞼球黏連
+bodySystem: ophthalmology
+description: 結膜與結膜之間或結膜與角膜之間的異常纖維性黏連。貓最常見原因為幼貓期嚴重 FHV-1 感染導致結膜壞死後瘢痕黏連。可限制眼球運動、阻塞淚道或遮蔽角膜。
+
+aliases:
+  - { alias: Conjunctival Adhesion, language: en }
+  - { alias: 結膜黏連, language: zh }
+  - { alias: 瞼球粘連, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬罕見，偶見於嚴重化學灼傷或手術後。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓常見。幼貓期 FHV-1 嚴重感染為最常見原因。
+
+etiology:
+  categories:
+    - name: 感染後瘢痕
+      examples:
+        - FHV-1 幼貓期嚴重感染
+        - Chlamydophila felis 嚴重結膜炎後
+    - name: 創傷/化學性
+      examples:
+        - 化學灼傷
+        - 手術後瘢痕
+
+clinicalSigns:
+  early:
+    - 結膜與角膜或其他結膜面黏連
+    - 眼球運動受限
+    - 淚道阻塞 (溢淚)
+  progressive:
+    - 角膜被結膜覆蓋 (影響視力)
+    - 慢性結膜炎
+    - 乾眼 (淚腺導管阻塞)
+
+diagnosis:
+  primaryTests:
+    - name: 眼科檢查
+      notes: 直接觀察結膜黏連部位與範圍。評估角膜覆蓋面積
+    - name: Schirmer 淚液試驗
+      notes: 評估淚液分泌是否受影響
+    - name: 螢光素染色
+      notes: 評估角膜狀態
+
+treatment:
+  principles:
+    - 輕度不影響視力者可不治療
+    - 手術切除黏連需防止再黏連
+  general:
+    - 手術分離黏連組織
+    - 術後使用 Mitomycin C 防止再黏連
+    - 局部抗生素 + 抗炎眼藥水
+    - 術後密切追蹤
+
+prognosis: 輕度黏連不影響視力者預後良好。手術分離後再黏連率高。廣泛黏連合併角膜覆蓋者預後謹慎。預防優於治療 — 幼貓 FHV-1 感染需積極早期治療。
+
+pubmedQueries:
+  - query: '"symblepharon" AND (veterinary OR feline) AND ("surgery" OR "FHV-1")'
+    frequency: monthly

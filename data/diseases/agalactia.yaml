@@ -1,0 +1,79 @@
+slug: agalactia
+nameEn: Agalactia
+nameZh: 無乳症
+bodySystem: reproductive
+description: 無乳症 (agalactia) 為產後母犬或母貓無法產生或分泌乳汁的狀態。可為原發性（泌乳機制障礙）或繼發性（乳腺炎、全身性疾病、壓力）。新生仔畜完全依賴母乳獲取初乳抗體與營養，無乳症可導致新生兒低血糖、脫水與死亡。
+
+aliases:
+  - { alias: 泌乳不足, language: zh }
+  - { alias: 乳汁缺乏, language: zh }
+  - { alias: Hypogalactia, language: en }
+  - { alias: Lactation Failure, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬無乳症可見於初產母犬、剖腹產後、精神緊張或環境壓力大時。早產幼犬的母犬乳腺可能未充分發育。某些品種較常見。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓無乳症較犬少見。剖腹產後與高壓力環境為風險因子。初產母貓需較多時間建立泌乳。
+
+etiology:
+  categories:
+    - name: 原發性無乳
+      examples:
+        - 乳腺發育不全
+        - 早產（乳腺未準備好）
+        - 荷爾蒙異常（prolactin 不足）
+        - 遺傳因素
+    - name: 繼發性無乳
+      examples:
+        - 乳腺炎
+        - 產後全身性疾病（metritis、敗血症）
+        - 環境壓力、焦慮
+        - 剖腹產後
+        - 營養不良
+        - 藥物影響（cabergoline 等 dopamine agonist）
+
+clinicalSigns:
+  early:
+    - 乳腺無腫脹或泌乳
+    - 新生仔畜持續哭叫
+    - 新生仔畜不斷嘗試吸吮
+  progressive:
+    - 新生仔畜低血糖（虛弱、震顫）
+    - 新生仔畜脫水
+    - 新生仔畜體重不增反降
+    - 新生仔畜死亡
+
+diagnosis:
+  primaryTests:
+    - name: 乳腺評估
+      notes: 擠壓乳頭無乳汁或極少量。排除乳腺炎（硬結、紅腫、疼痛）
+    - name: 新生仔畜狀態
+      notes: 持續哭叫、體重減輕、低血糖為間接證據
+  additional:
+    - 母犬全身評估（排除全身性疾病）
+    - 血清 prolactin（如可測）
+    - 乳腺超音波（排除膿瘍）
+
+treatment:
+  principles:
+    - 確保新生仔畜營養（人工哺乳）
+    - 刺激泌乳
+    - 治療潛在原因
+  general:
+    - 新生仔畜緊急人工哺乳（犬/貓專用配方奶，每 2-3 小時）
+    - 新生仔畜低血糖：50% dextrose 稀釋後口服或腹腔注射
+    - 刺激泌乳：讓仔畜持續吸吮、溫敷乳腺
+    - Metoclopramide 0.1-0.2 mg/kg PO TID（促進 prolactin 分泌）
+    - Oxytocin 0.5-1 IU IM（促進乳汁排出，非增加產量）
+    - 治療乳腺炎（如有）
+    - 減少環境壓力
+    - 營養充足飲食
+
+prognosis: 繼發性無乳症在消除潛在原因後多數可恢復泌乳。原發性乳腺發育不全者預後差。新生仔畜早期人工哺乳介入為存活關鍵。初乳攝取不足的新生仔畜免疫力較差，需特別注意感染預防。
+
+pubmedQueries:
+  - query: '"agalactia" OR "lactation failure" AND (veterinary OR canine OR feline) AND ("treatment" OR "neonatal")'
+    frequency: monthly

@@ -1,0 +1,80 @@
+slug: clostridial-infection
+nameEn: Clostridial Infection
+nameZh: 梭狀芽孢桿菌感染
+bodySystem: infectious
+description: 梭狀芽孢桿菌 (Clostridium spp.) 為革蘭氏陽性厭氧產孢桿菌，可引起多種臨床疾病。C. perfringens 為犬貓最常見腸道致病種，引起急性或慢性腸炎。C. difficile 可引起抗生素相關腹瀉。其他種可引起氣性壞疽、肉毒桿菌中毒等。
+
+aliases:
+  - { alias: 梭菌感染, language: zh }
+  - { alias: 產氣莢膜梭菌感染, language: zh }
+  - { alias: Clostridial Disease, language: en }
+  - { alias: Clostridium Infection, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: C. perfringens 腸炎為犬常見，可表現為急性出血性腹瀉或慢性大腸性腹瀉。C. difficile 與抗生素使用相關。健康犬腸道也可攜帶 Clostridium。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓 Clostridium 腸炎較犬少見。C. perfringens 可引起急性腹瀉。C. difficile 偶見於抗生素使用後。
+
+etiology:
+  categories:
+    - name: 主要致病種
+      examples:
+        - C. perfringens（腸毒素型腸炎，犬最常見）
+        - C. difficile（抗生素相關腹瀉）
+        - C. tetani（破傷風）
+        - C. botulinum（肉毒桿菌中毒）
+        - C. septicum / C. novyi（氣性壞疽）
+    - name: 風險因子
+      examples:
+        - 抗生素使用後腸道菌群失衡
+        - 飲食突然改變
+        - 壓力（住院、手術）
+        - 免疫抑制
+
+clinicalSigns:
+  early:
+    - 急性水樣或黏液樣腹瀉
+    - 裡急後重
+    - 腹部不適
+  progressive:
+    - 血便（急性出血性腸炎）
+    - 嘔吐
+    - 脫水
+    - 慢性間歇性大腸性腹瀉
+    - 氣性壞疽型：局部組織壞死、捻髮感、敗血症
+
+diagnosis:
+  primaryTests:
+    - name: 糞便毒素檢測
+      notes: C. perfringens 腸毒素 (CPE) ELISA 或 PCR。需注意健康犬貓也可攜帶產毒株，需結合臨床症狀判斷
+    - name: 糞便培養與毒素分型
+      notes: 厭氧培養分離 Clostridium spp.，搭配毒素基因 PCR 分型
+  additional:
+    - C. difficile 毒素 A/B 檢測
+    - 糞便抹片革蘭氏染色（大量產孢桿菌）
+    - CBC 與生化
+    - 排除其他腸道病原
+
+treatment:
+  principles:
+    - 毒素型腸炎以抗生素抑制產毒為主
+    - 支持療法矯正脫水
+    - C. difficile 需停用誘發抗生素
+    - 氣性壞疽為外科急症
+  general:
+    - Metronidazole 10-15 mg/kg PO BID × 7-10 天
+    - 替代：amoxicillin-clavulanate 或 tylosin
+    - IV 輸液矯正脫水
+    - 益生菌輔助恢復腸道菌群
+    - C. difficile 停用誘發抗生素
+    - 氣性壞疽需緊急清創 + 高劑量 penicillin
+    - 飲食調整（高纖維飲食改善大腸性腹瀉）
+
+prognosis: C. perfringens 腸炎預後良好，多數抗生素治療後迅速改善。慢性反覆型可能需長期飲食管理。C. difficile 停藥後通常恢復。氣性壞疽預後差，死亡率高。
+
+pubmedQueries:
+  - query: '"clostridial infection" OR "Clostridium perfringens" AND (veterinary OR canine OR feline) AND ("enteritis" OR "treatment")'
+    frequency: monthly

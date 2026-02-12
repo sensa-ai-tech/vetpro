@@ -1,0 +1,57 @@
+slug: pelvic-fracture
+nameEn: Pelvic Fracture
+nameZh: 骨盆骨折
+bodySystem: orthopedic
+description: 骨盆骨的骨折，常因車禍等高能量創傷引起。骨盆為環狀結構，通常在多處同時斷裂。需評估骨盆腔狹窄程度（影響排便排尿）與合併的泌尿生殖道損傷。
+
+aliases:
+  - { alias: "Pelvic Ring Fracture", language: en }
+  - { alias: "骨盆環骨折", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬常見，車禍主因。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓常見，車禍與高處墜落。
+
+etiology:
+  categories:
+    - name: 高能量外傷
+      examples:
+        - 車禍（最常見）
+        - 高處墜落
+
+clinicalSigns:
+  early:
+    - 後肢不願行走
+    - 骨盆觸診疼痛
+    - 異常步態
+  progressive:
+    - 骨盆腔狹窄（影響排便）
+    - 排尿困難
+    - 髖關節功能障礙
+
+diagnosis:
+  primaryTests:
+    - name: 骨盆 X 光
+      notes: 確認骨折位置與數目。評估骨盆腔狹窄
+    - name: 尿道造影/超音波
+      notes: 排除膀胱或尿道損傷（常見合併傷）
+
+treatment:
+  principles:
+    - 評估是否需手術
+    - 保守治療適用於穩定性骨折
+  general:
+    - 穩定性骨折：籠內休息 4-6 週
+    - 不穩定骨折或骨盆腔狹窄 > 50%：手術固定
+    - 髖臼骨折需手術復位
+    - 止痛管理
+
+prognosis: 保守治療穩定性骨折預後良好。手術固定不穩定骨折預後中等至良好。骨盆腔狹窄可能導致長期便秘。
+
+pubmedQueries:
+  - query: '"pelvic fracture" AND (veterinary OR canine OR feline) AND ("fixation" OR "treatment")'
+    frequency: monthly

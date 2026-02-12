@@ -1,0 +1,76 @@
+slug: 5-fluorouracil-toxicosis
+nameEn: 5-Fluorouracil Toxicosis
+nameZh: 5-氟尿嘧啶中毒
+bodySystem: toxicology
+description: 5-Fluorouracil (5-FU) 為人類用抗癌藥物，亦用於外用乳膏治療日光性角化症與皮膚癌。犬對 5-FU 極度敏感，極少量即可致命。常見暴露途徑為犬誤食飼主外用 5-FU 乳膏（Efudex）。貓敏感度較犬低但仍可中毒。
+
+aliases:
+  - { alias: 氟尿嘧啶中毒, language: zh }
+  - { alias: 5-FU Toxicosis, language: en }
+  - { alias: Fluorouracil Poisoning, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬對 5-FU 極度敏感，口服致死劑量低至 5 mg/kg。誤食飼主外用乳膏為最常見暴露。即使少量 5% 乳膏（一管 40g 含 2000 mg）即可致死中大型犬。發作快（1-6 小時內）。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓較犬耐受但仍可中毒。暴露來源與犬類似。
+
+etiology:
+  categories:
+    - name: 毒性機制
+      examples:
+        - 抑制 thymidylate synthase → 阻斷 DNA 合成
+        - 犬缺乏有效的 dihydropyrimidine dehydrogenase (DPD) 代謝途徑
+        - 快速增殖組織（腸道上皮、骨髓）最先受損
+        - 神經毒性引起嚴重癲癇
+    - name: 來源
+      examples:
+        - 人用外用乳膏（Efudex 5%、Fluoroplex）
+        - 人用注射劑
+        - 人用口服劑型
+
+clinicalSigns:
+  early:
+    - 嘔吐（1-6 小時內）
+    - 腹瀉（可為血便）
+    - 過度流涎
+    - 共濟失調
+  progressive:
+    - 嚴重癲癇（常為致死原因）
+    - 骨髓抑制（嗜中性球低下，第 3-5 天）
+    - 敗血症
+    - 多器官衰竭
+    - 死亡（可在 24 小時內）
+
+diagnosis:
+  primaryTests:
+    - name: 暴露史
+      notes: 確認接觸 5-FU 製劑。保留包裝確認劑量
+    - name: 臨床表現
+      notes: 急性嘔吐 + 癲癇 + 暴露史高度提示
+  additional:
+    - CBC（骨髓抑制追蹤，第 3-5 天最低點）
+    - 生化（肝腎功能）
+    - 凝血功能
+
+treatment:
+  principles:
+    - 立即去汙染
+    - 積極控制癲癇
+    - 骨髓抑制期支持療法
+    - 無特異性解毒劑
+  general:
+    - 催吐（攝入 1 小時內）+ 活性炭
+    - 癲癇控制：diazepam 0.5-1 mg/kg IV、phenobarbital、propofol（難治性癲癇）
+    - IV 輸液
+    - 止吐（maropitant）
+    - 骨髓抑制期：預防性抗生素、G-CSF 考慮
+    - 住院密切監測 72 小時以上
+
+prognosis: 犬 5-FU 中毒預後極差，致死率極高（>50%）。攝入大量者即使積極治療仍常致命。存活者需度過骨髓抑制期（5-7 天）。早期催吐與癲癇控制為改善預後的關鍵。預防（妥善存放 5-FU 製劑）最為重要。
+
+pubmedQueries:
+  - query: '"5-fluorouracil" AND (toxicosis OR poisoning) AND (veterinary OR canine OR feline)'
+    frequency: monthly

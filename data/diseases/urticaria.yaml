@@ -1,0 +1,75 @@
+slug: urticaria
+nameEn: Urticaria
+nameZh: 蕁麻疹
+bodySystem: immunology
+description: 蕁麻疹 (urticaria/hives) 為皮膚真皮層淺表水腫引起的暫時性膨疹。犬表現為全身散布的隆起性皮膚腫塊，毛髮豎立。常與血管性水腫同時出現。為第一型過敏反應的皮膚表現。多數為自限性，但需警惕進展為全身過敏反應。
+
+aliases:
+  - { alias: 風疹塊, language: zh }
+  - { alias: Hives, language: en }
+  - { alias: Wheals, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬蕁麻疹常見於昆蟲叮咬、藥物、疫苗後。全身性膨疹在短毛犬更明顯。可與血管性水腫同時出現。多數為急性自限性。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓蕁麻疹較犬罕見且不易辨識（被毛遮蔽）。
+
+etiology:
+  categories:
+    - name: 致病機制
+      examples:
+        - 第一型過敏反應（IgE 介導）
+        - 肥大細胞釋放組織胺
+        - 真皮淺層微血管通透性增加
+        - 局部水腫形成膨疹 (wheals)
+    - name: 常見誘因
+      examples:
+        - 昆蟲叮咬
+        - 藥物反應
+        - 疫苗接種
+        - 食物過敏
+        - 植物接觸
+        - 物理刺激（壓力、冷熱）
+
+clinicalSigns:
+  early:
+    - 全身散布隆起性皮膚腫塊
+    - 毛髮豎立
+    - 瘙癢
+    - 皮膚發紅
+  progressive:
+    - 膨疹融合
+    - 面部腫脹（合併血管性水腫）
+    - 全身過敏反應（罕見但需警惕）
+
+diagnosis:
+  primaryTests:
+    - name: 臨床表現
+      notes: 急性全身性膨疹（隆起、邊界清楚、消退快）即可診斷
+    - name: 病史
+      notes: 近期暴露史有助確認誘因
+  additional:
+    - 過敏原檢測（復發性蕁麻疹）
+    - 皮膚生檢（慢性或非典型病例）
+
+treatment:
+  principles:
+    - 抗組織胺為首選
+    - 移除誘因
+    - 監測是否進展為全身過敏反應
+  general:
+    - Diphenhydramine 2 mg/kg IM/PO
+    - Cetirizine 1-2 mg/kg PO SID（犬）
+    - 嚴重者：dexamethasone 0.1-0.2 mg/kg IV/IM
+    - 冷敷（緩解瘙癢）
+    - 觀察 2-4 小時確認無進展
+    - 輕度者多數 24 小時內自行消退
+
+prognosis: 蕁麻疹預後極佳，多數在數小時內自行消退或治療後迅速改善。極少數進展為全身過敏反應。復發性蕁麻疹需找出並避免特定誘因。
+
+pubmedQueries:
+  - query: '"urticaria" AND (veterinary OR canine OR feline) AND ("treatment" OR "hypersensitivity")'
+    frequency: monthly

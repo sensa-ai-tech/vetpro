@@ -1,0 +1,82 @@
+slug: leptospirosis-systemic
+nameEn: Leptospirosis Systemic
+nameZh: 系統性鉤端螺旋體感染
+bodySystem: infectious
+description: 系統性鉤端螺旋體感染 (leptospirosis) 由致病性鉤端螺旋體 (Leptospira interrogans sensu lato) 引起的人畜共通傳染病，可導致急性腎衰竭、肝衰竭及肺出血。犬為主要臨床宿主，感染途徑包括接觸受汙染水源或嚙齒類尿液。
+
+aliases:
+  - { alias: 鉤端螺旋體病, language: zh }
+  - { alias: 鉤體病, language: zh }
+  - { alias: Leptospira Infection, language: en }
+  - { alias: Lepto, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬為重要臨床宿主。主要血清型包括 Grippotyphosa、Pomona、Bratislava、Autumnalis。都市犬暴露於嚙齒類尿液汙染環境風險增加。疫苗可用但僅涵蓋部分血清型。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓感染報告增加但臨床發病仍罕見。貓可能為亞臨床帶原者。腎型為主要臨床表現。
+
+etiology:
+  categories:
+    - name: 病原與傳播
+      examples:
+        - Leptospira interrogans sensu lato（螺旋體菌）
+        - 多種致病性血清型
+        - 經黏膜或皮膚傷口接觸汙染水源/土壤
+        - 嚙齒類為主要儲備宿主（經尿液排菌）
+    - name: 致病機制
+      examples:
+        - 經血行播散至腎臟與肝臟
+        - 腎小管上皮細胞直接損傷
+        - 肝細胞損傷與膽汁淤積
+        - 血管內皮損傷引起血管炎與出血
+
+clinicalSigns:
+  early:
+    - 突發發燒、嗜睡
+    - 食慾廢絕
+    - 嘔吐
+    - 肌肉疼痛（腰背部觸痛）
+  progressive:
+    - 多飲多尿轉為少尿/無尿（腎衰竭進展）
+    - 黃疸
+    - 出血傾向（瘀斑、血便、肺出血）
+    - 前葡萄膜炎
+    - 肺出血症候群 (LPHS)
+    - 急性腎損傷合併肝衰竭
+
+diagnosis:
+  primaryTests:
+    - name: 顯微凝集試驗 (MAT)
+      notes: 金標準血清學。急性與恢復期配對血清（2 週間隔）四倍以上上升確診。單一效價 >1:800 配合臨床症狀有診斷價值
+    - name: 尿液或血液 PCR
+      notes: 急性期血液 PCR 敏感度高。治療後血液轉陰但尿液可能持續陽性
+  additional:
+    - CBC（血小板減少、白血球增多）
+    - 生化（BUN/Creatinine 升高、肝酵素升高、膽紅素升高）
+    - 尿液分析（糖尿、蛋白尿、管型）
+    - 凝血功能
+
+treatment:
+  principles:
+    - 早期抗生素治療
+    - 兩階段抗生素療法
+    - 積極腎臟支持（透析可能需要）
+    - 人畜共通防護措施
+  general:
+    - "第一階段：Ampicillin 22 mg/kg IV q6-8h（殺菌，控制菌血症）"
+    - "第二階段：Doxycycline 5 mg/kg PO BID × 14 天（清除腎臟帶原）"
+    - IV 輸液維持腎灌流
+    - 少尿期考慮血液透析
+    - 止吐（maropitant）
+    - 輸血（嚴重出血時）
+    - 隔離與個人防護措施（手套、避免接觸尿液）
+    - 疫苗接種預防（四價疫苗）
+
+prognosis: 早期治療的犬鉤端螺旋體感染存活率可達 80-90%。需要透析者預後較差但仍有恢復可能。肺出血症候群死亡率最高。慢性腎病為常見後遺症。
+
+pubmedQueries:
+  - query: '"leptospirosis" AND (canine OR veterinary) AND ("treatment" OR "guidelines" OR "consensus")'
+    frequency: monthly

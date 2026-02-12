@@ -1,0 +1,66 @@
+slug: bronchiectasis
+nameEn: Bronchiectasis
+nameZh: 支氣管擴張症
+bodySystem: respiratory
+description: 支氣管擴張症為支氣管不可逆的異常擴張，由支氣管壁結構性破壞所致。通常為慢性呼吸道感染或炎症的後遺症。擴張的支氣管失去正常黏液纖毛清除功能，容易蓄積黏液與反覆感染，形成惡性循環。
+
+aliases:
+  - { alias: 支氣管擴張, language: zh }
+  - { alias: Dilated Bronchi, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬隻支氣管擴張症可繼發於反覆肺炎、吸入性肺炎、原發性纖毛運動不良（primary ciliary dyskinesia）或慢性支氣管炎。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻少見，可繼發於慢性呼吸道感染（FHV-1）後遺症。
+
+etiology:
+  categories:
+    - name: 繼發性（最常見）
+      examples:
+        - 反覆細菌性肺炎
+        - 慢性支氣管炎
+        - 異物引起的局部破壞
+        - 慢性吸入性肺炎
+    - name: 先天性
+      examples:
+        - 原發性纖毛運動不良（primary ciliary dyskinesia）
+        - Kartagener 症候群（纖毛不動 + 內臟反位）
+
+clinicalSigns:
+  early:
+    - 慢性咳嗽伴痰液
+    - 反覆呼吸道感染
+  progressive:
+    - 咳嗽加重伴大量黏液膿性痰
+    - 反覆發燒（繼發感染）
+    - 運動不耐
+    - 呼吸困難
+    - 咯血（罕見）
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔 X 光
+      notes: 支氣管壁增厚伴支氣管腔擴張。「軌道徵」（tram lines）與「戒指徵」（signet ring sign）。支氣管擴張腔內可見黏液滯留。
+    - name: CT 掃描
+      notes: 確診金標準。較 X 光更敏感，可精確評估支氣管擴張的分佈與嚴重程度。signet ring sign 為特徵性表現。
+
+treatment:
+  principles:
+    - 支氣管擴張為不可逆病變，治療目標為控制症狀
+    - 促進黏液排出
+    - 控制繼發感染
+  general:
+    - 霧化治療（nebulization）+ 拍背促進排痰
+    - "繼發感染：依培養藥敏結果選擇抗生素（常需 4-6 週）"
+    - 支氣管擴張劑（Theophylline）
+    - 避免止咳藥物（需保留咳嗽反射排痰）
+    - 局部嚴重者考慮肺葉切除術
+
+prognosis: 支氣管擴張為不可逆病變，預後中等。適當管理（抗感染、促進排痰）可維持合理的生活品質。反覆感染是主要問題。局部性支氣管擴張經肺葉切除後預後可改善。瀰漫性病變管理較困難。
+
+pubmedQueries:
+  - query: '"bronchiectasis" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "CT" OR "treatment")'
+    frequency: monthly

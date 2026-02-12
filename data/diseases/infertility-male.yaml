@@ -1,0 +1,85 @@
+slug: infertility-male
+nameEn: Infertility Male
+nameZh: 公犬貓不孕症
+bodySystem: reproductive
+description: 公犬貓不孕症涵蓋精液品質不良、性慾缺乏或交配障礙等因素導致無法有效繁殖。常見原因包括精液品質異常（無精症、寡精症、畸形精子）、睾丸疾病、荷爾蒙異常、感染（Brucella canis）與行為問題。精液分析為核心診斷工具。
+
+aliases:
+  - { alias: 公畜不孕, language: zh }
+  - { alias: Male Infertility, language: en }
+  - { alias: Subfertility, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬公犬精液分析（濃度、活力、型態）為基礎評估。Brucella canis 為重要傳染性原因（睾丸炎、附睾炎）。精液品質受溫度、藥物、年齡影響。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 公貓不孕評估較犬困難。精液採集需電刺激射精。隱睾為重要先天因素。
+
+etiology:
+  categories:
+    - name: 精液品質異常
+      examples:
+        - 無精症 (azoospermia)：阻塞性或非阻塞性
+        - 寡精症 (oligospermia)：精子數量不足
+        - 畸形精子症 (teratospermia)：異常型態
+        - 弱精症 (asthenospermia)：活力不足
+    - name: 睾丸疾病
+      examples:
+        - 隱睾 (cryptorchidism)
+        - 睾丸腫瘤
+        - 睾丸扭轉
+        - 睾丸萎縮
+    - name: 其他原因
+      examples:
+        - Brucella canis 感染
+        - 甲狀腺低下
+        - 藥物影響（類固醇、化療）
+        - 前列腺疾病
+        - 行為問題（缺乏經驗、壓力）
+
+clinicalSigns:
+  early:
+    - 配種後母犬未受孕
+    - 性慾降低
+    - 交配困難
+  progressive:
+    - 睾丸大小異常（萎縮或腫大）
+    - 睾丸疼痛（睾丸炎）
+    - 精液品質下降
+    - Brucella：附睾腫大、不對稱睾丸
+
+diagnosis:
+  primaryTests:
+    - name: 精液分析
+      notes: 精子濃度（>200×10⁶/mL）、前進運動性（>70%）、正常型態（>80%）。需連續 2-3 次評估
+    - name: Brucella canis 血清學
+      notes: 所有繁殖用公犬必檢。RSAT 篩檢 + AGID 確認
+  additional:
+    - 睾丸超音波
+    - 內分泌（睾固酮、LH、甲狀腺）
+    - 精液培養
+    - 睾丸生檢（無精症評估）
+    - 染色體核型分析（先天性）
+    - GnRH 刺激試驗
+
+treatment:
+  principles:
+    - 找出並治療特定原因
+    - 精液品質改善需時間（精子生成週期犬約 62 天）
+    - Brucella 感染不建議繁殖
+  general:
+    - Brucella canis：不建議繁殖。Doxycycline + aminoglycoside（治癒率低）
+    - 甲狀腺低下：levothyroxine 替代（精液品質可能改善）
+    - 隱睾：睾丸切除（癌變風險高）
+    - 感染性睾丸炎/附睾炎：抗生素
+    - 暫時性精液品質下降（發燒後）：等待 2-3 個月恢復
+    - 行為問題：經驗豐富母犬配種、減少環境壓力
+    - 精液冷凍保存（品質良好時）
+
+prognosis: 公犬不孕預後取決於原因。配種管理改善後多數可改善。Brucella canis 感染終身帶原且有公共衛生風險。睾丸萎縮不可逆。精液品質暫時性下降（發燒、藥物）預後佳。
+
+pubmedQueries:
+  - query: '"male infertility" AND (canine OR dog) AND ("semen" OR "treatment" OR "diagnosis")'
+    frequency: monthly

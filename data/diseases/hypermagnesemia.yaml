@@ -1,0 +1,70 @@
+slug: hypermagnesemia
+nameEn: Hypermagnesemia
+nameZh: 高鎂血症
+bodySystem: metabolic
+description: 血清鎂離子濃度高於正常值（>2.5 mg/dL）的電解質異常，臨床上較低鎂血症少見。高鎂血症主要見於腎衰竭患者（腎臟排泄鎂離子受損）或醫源性鎂鹽過量輸注，嚴重時可抑制神經肌肉傳導及心臟功能。
+
+aliases:
+  - { alias: 高血鎂, language: zh }
+  - { alias: 血鎂過高, language: zh }
+  - { alias: High Magnesium, language: en }
+  - { alias: Magnesium Excess, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬高鎂血症主要見於急性腎衰竭無尿期或醫源性鎂鹽過量。腎功能正常者極少發生。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓高鎂血症常見於尿道阻塞合併急性腎後性腎衰竭，鎂離子無法由腎臟排出。
+
+etiology:
+  categories:
+    - name: 腎臟排泄障礙
+      examples:
+        - 急性腎衰竭（無尿/寡尿期）
+        - 慢性腎病晚期
+        - 尿道阻塞（貓最常見）
+    - name: 醫源性
+      examples:
+        - 含鎂抗酸劑或瀉劑過量
+        - 靜脈鎂鹽輸注過量或過快
+
+clinicalSigns:
+  early:
+    - 嗜睡
+    - 肌肉無力
+    - 反射減弱
+    - 噁心嘔吐
+  progressive:
+    - 低血壓
+    - 心搏過緩
+    - 呼吸抑制
+    - 心電圖變化（PR 間距延長、QRS 增寬）
+    - 心搏停止（極嚴重時）
+
+diagnosis:
+  primaryTests:
+    - name: 血清總鎂
+      notes: ">2.5 mg/dL。>5 mg/dL 為嚴重高鎂血症，有心臟毒性風險。需同時評估腎功能。"
+    - name: 心電圖
+      notes: PR 間距延長、QRS 增寬、T 波高聳（類似高鉀表現）。嚴重時出現房室傳導阻斷。
+
+treatment:
+  principles:
+    - 停止所有外源性鎂補充
+    - 促進腎臟排泄（輸液利尿）
+    - 嚴重心臟毒性時靜脈鈣劑拮抗
+    - 治療基礎腎臟疾病
+  general:
+    - 立即停止含鎂藥物或輸液
+    - 靜脈輸液利尿（0.9% NaCl）促進鎂排泄
+    - 心臟毒性時：10% 葡萄糖酸鈣 0.5-1.5 mL/kg IV 緩慢推注（拮抗鎂的心臟抑制作用）
+    - 嚴重腎衰竭無法排鎂時需考慮血液透析
+    - 持續心電圖監測
+
+prognosis: 輕度高鎂血症在停止鎂源並恢復腎功能後預後良好。嚴重高鎂血症合併心臟毒性為緊急狀況，若能及時鈣劑拮抗並恢復腎功能預後尚可。腎衰竭無法逆轉者預後取決於腎病本身。
+
+pubmedQueries:
+  - query: '"Hypermagnesemia" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

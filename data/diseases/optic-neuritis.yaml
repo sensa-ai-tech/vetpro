@@ -1,0 +1,73 @@
+slug: optic-neuritis
+nameEn: Optic Neuritis
+nameZh: 視神經炎
+bodySystem: ophthalmology
+description: 視神經的發炎性疾病，導致急性視力喪失。可為感染性、免疫媒介性或特發性。臨床表現為突然失明、瞳孔散大與瞳孔光反射消失。為犬貓急性失明的重要鑑別診斷之一。
+
+aliases:
+  - { alias: Papillitis, language: en }
+  - { alias: Retrobulbar Neuritis, language: en }
+  - { alias: 視神經發炎, language: zh }
+  - { alias: 視乳頭炎, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬常見原因為 GME (granulomatous meningoencephalomyelitis)、全身性黴菌感染、特發性。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓常見原因為 FIP、FeLV、Toxoplasmosis。
+
+etiology:
+  categories:
+    - name: 免疫媒介性
+      examples:
+        - GME
+        - 壞死性腦炎
+        - 特發性視神經炎
+    - name: 感染性
+      examples:
+        - 全身性黴菌感染
+        - FIP (貓)
+        - Toxoplasmosis
+        - 犬瘟熱
+    - name: 腫瘤性
+      examples:
+        - 視神經膠質瘤
+        - 腦膜瘤壓迫
+
+clinicalSigns:
+  early:
+    - 急性視力喪失 (可為單側或雙側)
+    - 瞳孔散大
+    - 瞳孔光反射消失或減弱
+  progressive:
+    - 完全失明
+    - 視神經乳頭水腫 (papilledema) 或萎縮
+    - 可能伴隨其他神經症狀 (GME)
+
+diagnosis:
+  primaryTests:
+    - name: 眼底檢查
+      notes: 視神經乳頭水腫 (papillitis)、出血、蒼白。球後型眼底可能正常
+    - name: 瞳孔光反射
+      notes: 患眼直接光反射消失；對側間接光反射消失。Swinging flashlight test 陽性
+    - name: MRI
+      notes: 評估視神經增粗強化。排除腦部病變 (GME、腫瘤)
+
+treatment:
+  principles:
+    - 治療根本原因
+    - 免疫媒介性需免疫抑制
+    - 及時治療可能挽救視力
+  general:
+    - 免疫媒介性：Prednisolone 免疫抑制劑量
+    - 感染性：針對病原治療
+    - 全身性黴菌：長期抗黴菌治療
+    - GME：多藥免疫抑制方案
+
+prognosis: 免疫媒介性視神經炎對類固醇反應可能良好。感染性病因及時治療部分可恢復視力。GME 預後謹慎至不良。視神經萎縮後視力喪失為永久性。
+
+pubmedQueries:
+  - query: '"optic neuritis" AND (veterinary OR canine OR feline) AND ("treatment" OR "MRI")'
+    frequency: monthly

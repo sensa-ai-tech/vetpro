@@ -1,0 +1,85 @@
+slug: avian-heavy-metal-toxicosis
+nameEn: Avian Heavy Metal Toxicosis
+nameZh: 禽類重金屬中毒
+bodySystem: toxicology
+description: 禽類重金屬中毒以鉛與鋅中毒最為常見，因鸚鵡類好奇啃咬金屬物品而發生。鉛中毒影響消化道、神經與血液系統，鋅中毒主要影響消化道與胰臟。為寵物鳥常見的急診疾病。
+
+aliases:
+  - { alias: 鳥類重金屬中毒, language: zh }
+  - { alias: 鸚鵡鉛中毒, language: zh }
+  - { alias: 鸚鵡鋅中毒, language: zh }
+  - { alias: Lead poisoning in birds, language: en }
+  - { alias: Zinc toxicosis in birds, language: en }
+  - { alias: Metal fume fever in birds, language: en }
+
+species:
+  - speciesCommon: bird
+    prevalence: common
+    notes: 鸚鵡類（尤其好奇性強的大型鸚鵡）最常見。金絲雀、雀科亦有報告。居家環境中金屬物品為主要暴露來源。
+
+etiology:
+  categories:
+    - name: 鉛暴露來源
+      examples:
+        - 老式油漆碎片
+        - 鉛製裝飾品或吊飾
+        - 窗簾墜飾
+        - 焊接材料
+        - 鉛製彈丸
+    - name: 鋅暴露來源
+      examples:
+        - 鍍鋅鐵絲網（籠舍材料）
+        - 鍍鋅硬幣
+        - 拉鏈頭
+        - 鋅製玩具零件
+    - name: 其他金屬
+      examples:
+        - 銅中毒（較少見）
+        - 汞中毒（極少見）
+
+clinicalSigns:
+  early:
+    - 食慾下降
+    - 嗜睡
+    - 嘔吐
+    - 糞便量減少
+  progressive:
+    - 深綠色或黑色糞便
+    - 多飲多尿
+    - 體重下降
+    - 共濟失調
+    - 癲癇發作
+    - 失明（鉛）
+    - 溶血性貧血
+    - 後肢無力
+
+diagnosis:
+  primaryTests:
+    - name: X 光
+      notes: 消化道內金屬異物（高密度不透光物）。可見嗉囊、前胃或肌胃中金屬碎片
+    - name: 血液重金屬濃度
+      notes: 全血鉛濃度 >0.2 ppm 異常，>0.5 ppm 具臨床意義。血清鋅 >2 ppm 異常
+    - name: CBC
+      notes: 溶血性貧血。鉛中毒可見嗜鹼性點彩紅血球
+
+treatment:
+  principles:
+    - 移除消化道內金屬異物
+    - 螯合治療排除體內重金屬
+    - 支持療法
+    - 移除環境暴露來源
+  general:
+    - 消化道異物：內視鏡或手術移除
+    - CaEDTA（35-40 mg/kg IM BID，5 天一療程）螯合治療
+    - 或 DMSA（Succimer, 25-35 mg/kg PO BID）
+    - 補液治療
+    - 癲癇發作時 Diazepam 控制
+    - 營養支持
+    - 移除家中所有潛在金屬暴露來源
+    - 治療後追蹤血液重金屬濃度
+
+prognosis: 早期診斷並治療者預後良好。螯合治療通常有效降低血液重金屬濃度。出現嚴重神經症狀（癲癇、失明）者預後謹慎，部分神經損傷可能不可逆。延遲治療者死亡率增加。消除暴露源為預防復發的關鍵。
+
+pubmedQueries:
+  - query: '"heavy metal" AND (avian OR bird OR psittacine) AND ("lead" OR "zinc") AND (treatment OR toxicosis)'
+    frequency: monthly

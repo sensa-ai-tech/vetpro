@@ -1,0 +1,69 @@
+slug: peripheral-vestibular-disease
+nameEn: Peripheral Vestibular Disease
+nameZh: 周邊前庭疾病
+bodySystem: neurology
+description: 周邊前庭疾病為內耳前庭系統或前庭蝸牛神經（cranial nerve VIII）病變導致的平衡障礙。犬貓常見原因包括中耳炎/內耳炎（otitis media/interna）、特發性前庭症候群與腫瘤。臨床特徵為頭部傾斜、眼球震顫、共濟失調與前旋。需與中樞性前庭疾病鑑別。
+
+aliases:
+  - { alias: 周邊型前庭疾病, language: zh }
+  - { alias: Peripheral Vestibular Syndrome, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬隻周邊前庭疾病常見。中耳炎延伸至內耳為常見原因。老年犬特發性前庭症候群亦常見。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓隻周邊前庭疾病常見。中耳炎（常與上呼吸道感染或鼻咽息肉相關）、特發性前庭症候群、耳道腫瘤。
+
+etiology:
+  categories:
+    - name: 感染性
+      examples:
+        - 中耳炎/內耳炎（Staphylococcus、Pseudomonas、Malassezia）
+        - 鼻咽息肉延伸至中耳（貓隻）
+    - name: 非感染性
+      examples:
+        - 特發性前庭症候群（老年犬/貓）
+        - 耳道腫瘤（ceruminous gland adenocarcinoma）
+        - 耳毒性藥物（Aminoglycosides）
+        - 甲狀腺功能低下相關（犬隻，有爭議）
+
+clinicalSigns:
+  early:
+    - 急性頭部傾斜（向病側）
+    - 水平或旋轉性眼球震顫（快相遠離病側）
+    - 共濟失調（向病側傾倒）
+  progressive:
+    - 前旋（circling，向病側）
+    - 嘔吐（前庭刺激導致暈動症）
+    - 食慾下降
+    - Horner syndrome（同側，中耳病變時）
+    - 面神經麻痺（同側，中耳病變時）
+
+diagnosis:
+  primaryTests:
+    - name: 神經學檢查
+      notes: 區分周邊 vs 中樞性前庭疾病。周邊型：水平/旋轉性眼球震顫、無姿勢反應缺損、無意識改變。中樞型：垂直眼球震顫、姿勢反應缺損、可能有意識改變。
+    - name: 影像學
+      notes: 耳道鏡檢查（tympanic membrane 評估）。頭部 CT 或 MRI（評估鼓泡 bulla、內耳、腦幹）。CT 優於 X 光評估鼓泡病變。
+
+treatment:
+  principles:
+    - 治療基礎原因
+    - 中耳炎需長期抗生素
+    - 特發性型預後良好
+  general:
+    - "中耳炎：長期抗生素（4-6 週以上），根據培養結果"
+    - "經驗性抗生素：Amoxicillin-Clavulanate 或 Enrofloxacin + Clindamycin"
+    - 嚴重中耳炎：全耳道切除 + 鼓泡骨切開術（TECA-BO）
+    - "止吐：Maropitant（Cerenia）1 mg/kg SC/PO q24h"
+    - 支持性護理（輔助進食、防止跌倒）
+    - 特發性型：支持性治療（通常 2-4 週內自行改善）
+    - 貓隻鼻咽息肉：手術摘除
+
+prognosis: 特發性前庭症候群預後良好，多數在 2-4 週內顯著改善。殘餘輕微頭部傾斜可能持續。中耳炎經適當長期抗生素治療預後尚可。耳毒性藥物引起者停藥後可能部分改善。耳道腫瘤預後取決於腫瘤類型。
+
+pubmedQueries:
+  - query: '"peripheral vestibular disease" AND (veterinary OR canine OR feline) AND ("otitis" OR "treatment" OR "diagnosis")'
+    frequency: monthly

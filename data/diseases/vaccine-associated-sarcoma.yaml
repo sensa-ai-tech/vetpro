@@ -1,0 +1,90 @@
+slug: vaccine-associated-sarcoma
+nameEn: Vaccine Associated Sarcoma
+nameZh: 疫苗相關肉瘤
+bodySystem: oncology
+description: 疫苗相關肉瘤 (vaccine-associated sarcoma/injection-site sarcoma) 為貓最具臨床意義的醫源性腫瘤，發生率約 1-10/10,000 次注射。多為高度惡性纖維肉瘤，局部侵襲性極強，復發率高。犬極罕見。發生機制與注射部位的慢性發炎反應相關。
+
+aliases:
+  - { alias: 注射部位肉瘤, language: zh }
+  - { alias: 貓疫苗肉瘤, language: zh }
+  - { alias: Injection-Site Sarcoma, language: en }
+  - { alias: Feline Injection-Site Sarcoma, language: en }
+  - { alias: FISS, language: en }
+  - { alias: VAS, language: en }
+
+species:
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 發生率約 1-10/10,000 注射。注射後數月至數年（中位 3 年）發生。FeLV 與狂犬病佐劑疫苗風險較高。目前建議接種部位選擇四肢遠端以利截肢治療。
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬注射部位肉瘤極罕見，但曾有個案報告。生物學行為與貓相似。
+
+etiology:
+  categories:
+    - name: 發生機制
+      examples:
+        - 注射部位慢性發炎反應（granulomatous inflammation）
+        - 含鋁佐劑 (aluminum adjuvant) 疫苗風險較高
+        - 發炎微環境中纖維母細胞惡性轉化
+        - p53 腫瘤抑制基因突變
+    - name: 相關注射物
+      examples:
+        - 含佐劑之 FeLV 疫苗
+        - 含佐劑之狂犬病疫苗
+        - 長效類固醇注射
+        - 其他注射藥物（少見）
+    - name: 風險因子
+      examples:
+        - 同一部位反覆注射
+        - 低溫注射液
+        - 個體基因易感性
+
+clinicalSigns:
+  early:
+    - 注射部位出現堅硬、無痛性腫塊
+    - 腫塊在注射後 1 個月以上仍持續存在
+    - 腫塊直徑超過 2 cm
+    - 腫塊在注射 3 個月後仍持續增大
+  progressive:
+    - 腫塊迅速增大
+    - 與周圍組織固定不可移動
+    - 局部疼痛
+    - 皮膚潰瘍
+    - 遠端轉移（肺最常見，約 10-25%）
+
+diagnosis:
+  primaryTests:
+    - name: 3-2-1 規則評估
+      notes: 符合以下任一條件需進一步檢查：注射後 3 個月仍存在、直徑 >2 cm、注射後 1 個月仍持續增大
+    - name: 切取式生檢 (incisional biopsy)
+      notes: 確定診斷。穿刺生檢或 incisional biopsy 優於切除生檢。組織學多為纖維肉瘤 (fibrosarcoma)
+  imaging:
+    - name: CT 掃描
+      notes: 術前必要檢查。評估腫瘤真實範圍（觸診常低估），規劃手術切緣（需 3-5 cm 及至少兩個筋膜面）
+  additional:
+    - 胸腔 X-ray 三視圖（肺轉移篩檢）
+    - 腹部超音波
+    - 術前 CBC 與生化檢查
+
+treatment:
+  principles:
+    - 首次手術為最佳治癒機會（廣泛切除）
+    - 建議合併放射治療
+    - 化療效果有限但可考慮
+    - 預防策略最為重要
+  general:
+    - 廣泛手術切除（切緣至少 3-5 cm，深度至少兩個筋膜面）
+    - 四肢遠端腫瘤考慮截肢（預後較佳）
+    - 術前或術後放射治療（改善局部控制率）
+    - 化療可考慮 doxorubicin 或 carboplatin
+    - "預防措施：遵循 VAFSTF 接種部位建議"
+    - "疫苗接種部位：右後肢遠端（FeLV）、右肩下方（狂犬病）"
+    - 使用無佐劑疫苗（如 PureVax 狂犬病）
+    - 避免同一部位反覆注射
+
+prognosis: 貓疫苗相關肉瘤預後視初次手術切緣而定。首次廣泛切除（切緣乾淨）合併放療，中位存活 2-3 年以上。切緣不乾淨或不完整切除後復發率高達 30-70%。截肢患畜局部復發率最低。肺轉移者預後不良。
+
+pubmedQueries:
+  - query: '"injection-site sarcoma" OR "vaccine-associated sarcoma" AND (feline OR cat) AND ("treatment" OR "guidelines")'
+    frequency: monthly

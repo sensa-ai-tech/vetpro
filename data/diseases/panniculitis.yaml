@@ -1,0 +1,61 @@
+slug: panniculitis
+nameEn: Panniculitis
+nameZh: 脂膜炎
+bodySystem: dermatology
+description: 皮下脂肪組織的發炎疾病。可為感染性、免疫媒介性、外傷性或特發性。表現為皮下結節，可破潰排出油脂性分泌物。需組織活檢確定病因。
+
+aliases:
+  - { alias: "Subcutaneous Fat Inflammation", language: en }
+  - { alias: "皮下脂肪炎", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬偶見。Dachshund 品種可能有傾向。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓偶見。
+
+etiology:
+  categories:
+    - name: 感染性
+      examples:
+        - 細菌、黴菌、非典型分枝桿菌
+    - name: 免疫媒介性/特發性
+      examples:
+        - 無菌性脂膜炎
+        - 胰臟炎相關性脂膜炎
+        - 全身性紅斑性狼瘡
+
+clinicalSigns:
+  early:
+    - 皮下深層結節
+    - 觸診疼痛
+    - 軀幹好發
+  progressive:
+    - 結節潰破排出油脂性液體
+    - 結痂
+    - 瘢痕形成
+
+diagnosis:
+  primaryTests:
+    - name: 皮膚活檢（楔形切除）
+      notes: 需取到皮下脂肪。確認發炎類型與排除感染
+    - name: 組織培養
+      notes: 排除感染性病因
+
+treatment:
+  principles:
+    - 確定並治療病因
+    - 免疫抑制治療（無菌性）
+  general:
+    - 感染性：針對病原抗感染治療
+    - 無菌性：Prednisolone 免疫抑制劑量
+    - Vitamin E 補充（輔助）
+    - 胰臟炎相關需治療胰臟炎
+
+prognosis: 取決於根本原因。無菌性脂膜炎對類固醇反應良好但可能復發。感染性適當治療預後佳。
+
+pubmedQueries:
+  - query: '"panniculitis" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "treatment")'
+    frequency: monthly

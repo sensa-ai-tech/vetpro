@@ -1,0 +1,72 @@
+slug: hyphema
+nameEn: Hyphema
+nameZh: 前房出血
+bodySystem: ophthalmology
+description: 血液積聚於眼前房 (虹膜與角膜之間) 的病理狀態。非獨立疾病，需積極排查外傷、凝血異常、全身性高血壓、眼內腫瘤等根本原因。大量前房出血可阻塞房角導致續發性青光眼。
+
+aliases:
+  - { alias: Anterior Chamber Hemorrhage, language: en }
+  - { alias: 前房積血, language: zh }
+  - { alias: 眼前房出血, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬常見原因為外傷、凝血異常 (抗凝血劑中毒、ITP)、眼內腫瘤。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓常見原因為全身性高血壓、慢性葡萄膜炎、眼內淋巴瘤。
+
+etiology:
+  categories:
+    - name: 外傷性
+      examples:
+        - 鈍性或穿透性眼部外傷
+        - 頭部創傷
+    - name: 全身性疾病
+      examples:
+        - 凝血異常 (ITP、抗凝血劑中毒、DIC)
+        - 全身性高血壓
+        - 高黏稠度症候群
+    - name: 眼內疾病
+      examples:
+        - 眼內腫瘤 (黑色素瘤、淋巴瘤)
+        - 慢性葡萄膜炎
+        - 晶體脫位
+
+clinicalSigns:
+  early:
+    - 前房內可見紅色血液
+    - 視力下降 (取決於出血量)
+    - 瞳孔被血液遮蔽
+  progressive:
+    - 眼壓升高 (血塊阻塞房角)
+    - 角膜血染 (corneal blood staining)
+    - 續發性青光眼
+
+diagnosis:
+  primaryTests:
+    - name: 裂隙燈檢查
+      notes: 前房內游離血液或血塊。評估虹膜細節與晶體位置
+    - name: 眼壓測量
+      notes: 監測續發性青光眼
+    - name: 全身性檢查
+      notes: CBC/凝血功能、血壓測量、蜱傳疾病篩檢
+
+treatment:
+  principles:
+    - 治療根本原因
+    - 控制眼內炎症
+    - 監測並預防續發性青光眼
+  general:
+    - 局部類固醇或 NSAIDs 眼藥水抗炎
+    - Atropine 散瞳
+    - 限制活動 (減少再出血)
+    - 治療全身性疾病 (降壓、凝血異常矯正)
+    - 持續高眼壓需降壓治療
+
+prognosis: 取決於根本原因與出血量。輕度外傷性前房出血多在 1-2 週自行吸收。眼內腫瘤性預後差。大量出血伴續發性青光眼預後謹慎。角膜血染可能需數月消退。
+
+pubmedQueries:
+  - query: '"hyphema" AND (veterinary OR canine OR feline) AND ("etiology" OR "treatment")'
+    frequency: monthly

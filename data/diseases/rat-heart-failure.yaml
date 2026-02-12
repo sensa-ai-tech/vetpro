@@ -1,0 +1,78 @@
+slug: rat-heart-failure
+nameEn: Rat Heart Failure
+nameZh: 大鼠心臟衰竭
+bodySystem: cardiac
+description: 大鼠心臟衰竭是老年大鼠常見的終末期心臟疾病，以擴張性心肌病與瓣膜退行性變化為主要病因。臨床表現包括呼吸困難、運動不耐受及末梢水腫，常與慢性呼吸道疾病並存而增加診斷難度。
+
+aliases:
+  - { alias: 大鼠心衰竭, language: zh }
+  - { alias: 大鼠充血性心衰竭, language: zh }
+  - { alias: Rat congestive heart failure, language: en }
+  - { alias: Rat CHF, language: en }
+  - { alias: Rat cardiomyopathy, language: en }
+
+species:
+  - speciesCommon: rat
+    prevalence: common
+    notes: 老年大鼠（>18 月齡）相當常見。雄鼠發病率較高。常與慢性呼吸道疾病並存，增加鑑別診斷困難度。
+
+etiology:
+  categories:
+    - name: 退行性變化
+      examples:
+        - 擴張性心肌病
+        - 瓣膜退行性變（二尖瓣最常受累）
+        - 心肌纖維化
+    - name: 繼發性因素
+      examples:
+        - 慢性呼吸道疾病導致肺心症
+        - 慢性腎病導致高血壓性心臟病
+        - 肥胖增加心臟負擔
+    - name: 腫瘤性
+      examples:
+        - 心臟基底部腫瘤
+        - 心包膜積液
+
+clinicalSigns:
+  early:
+    - 輕度運動不耐受
+    - 活動量減少
+    - 呼吸速率輕度增加
+  progressive:
+    - 明顯呼吸困難（腹式呼吸）
+    - 發紺（嘴唇、四肢末端發紫）
+    - 腹部膨大（腹水）
+    - 末梢水腫
+    - 體重下降
+    - 嗜睡
+    - 咳嗽（需與呼吸道疾病區別）
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔聽診
+      notes: 心雜音、心律不整、肺部濕囉音。心音可能減弱（心包積液時）
+    - name: 胸腔 X 光
+      notes: 心臟擴大、肺水腫、胸腔積液。與呼吸道疾病之肺浸潤需鑑別
+    - name: 心臟超音波
+      notes: 評估心腔大小、瓣膜功能、心肌收縮力。確定心衰竭類型
+
+treatment:
+  principles:
+    - 減輕心臟負擔
+    - 利尿減少體液蓄積
+    - 改善心肌收縮力
+    - 控制併發症
+  general:
+    - Furosemide（1-4 mg/kg PO/SC BID）利尿
+    - Enalapril（0.5 mg/kg PO SID-BID）ACE 抑制劑
+    - 限制鈉攝取
+    - 氧氣支持（急性呼吸困難時）
+    - 減少緊迫與過度活動
+    - 維持適當環境溫度
+    - 定期監測呼吸速率
+
+prognosis: 預後謹慎至不良。心臟衰竭為進行性疾病，治療目標為維持生活品質。早期介入可延長存活時間數週至數月。出現嚴重呼吸困難、持續性腹水者預後差。多數患鼠在確診後存活數週至2-3個月。
+
+pubmedQueries:
+  - query: '"rat" AND ("heart failure" OR "cardiomyopathy" OR "cardiac disease") AND (veterinary OR "pet rat")'
+    frequency: monthly

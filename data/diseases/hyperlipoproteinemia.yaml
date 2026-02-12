@@ -1,0 +1,70 @@
+slug: hyperlipoproteinemia
+nameEn: Hyperlipoproteinemia
+nameZh: 高脂蛋白血症
+bodySystem: metabolic
+description: 血液中脂蛋白（含膽固醇及三酸甘油酯）濃度異常升高的代謝異常。可為原發性（遺傳性，如 Miniature Schnauzer）或繼發於其他內分泌/代謝疾病。持續高脂血症可導致胰臟炎、動脈粥樣硬化及眼部脂質沉積。
+
+aliases:
+  - { alias: 高脂血症, language: zh }
+  - { alias: 高三酸甘油酯血症, language: zh }
+  - { alias: Hyperlipidemia, language: en }
+  - { alias: Hypertriglyceridemia, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: Miniature Schnauzer 有遺傳性原發性高三酸甘油酯血症。其他品種多為繼發性（甲狀腺功能低下、Cushing 病、糖尿病）。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓高脂血症多繼發於糖尿病或肥胖。原發性少見。
+
+etiology:
+  categories:
+    - name: 原發性（遺傳性）
+      examples:
+        - Miniature Schnauzer 原發性高三酸甘油酯血症
+        - 家族性高乳糜微粒血症
+    - name: 繼發性（最常見）
+      examples:
+        - 甲狀腺功能低下
+        - 庫欣氏症
+        - 糖尿病
+        - 胰臟炎
+        - 腎病症候群
+
+clinicalSigns:
+  early:
+    - 多數無症狀（偶然在血檢發現）
+    - 血清呈乳白色（脂血症）
+  progressive:
+    - 反覆發作性胰臟炎（最常見併發症）
+    - 嘔吐腹瀉
+    - 角膜脂質沉積（lipid keratopathy）
+    - 皮膚黃色瘤（xanthoma）
+    - 癲癇發作（嚴重時）
+
+diagnosis:
+  primaryTests:
+    - name: 血清生化
+      notes: 空腹 12 小時後採血。三酸甘油酯及/或膽固醇升高。脂血影響其他生化值判讀。
+    - name: 內分泌篩檢
+      notes: T4（甲狀腺功能低下）、低劑量 Dexamethasone 試驗（Cushing）、血糖/果糖胺（糖尿病）排除繼發原因。
+
+treatment:
+  principles:
+    - 治療基礎疾病（繼發性）
+    - 低脂飲食
+    - 原發性需長期飲食控制 ± 藥物
+    - 預防胰臟炎發作
+  general:
+    - 低脂處方飲食
+    - 治療甲狀腺功能低下（Levothyroxine）、Cushing（Trilostane）等基礎病
+    - 難治性高三酸甘油酯：Omega-3 脂肪酸補充
+    - 嚴重時：Gemfibrozil 或 Bezafibrate（犬用，需監測肝功能）
+    - 定期空腹脂質追蹤
+
+prognosis: 繼發性高脂血症在基礎疾病控制後預後良好。Miniature Schnauzer 原發性需終身飲食管理，控制良好下預後佳但無法根治。反覆胰臟炎發作增加不良預後風險。
+
+pubmedQueries:
+  - query: '"Hyperlipoproteinemia" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

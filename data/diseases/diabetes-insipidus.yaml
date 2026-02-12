@@ -1,0 +1,69 @@
+slug: diabetes-insipidus
+nameEn: Diabetes Insipidus
+nameZh: 尿崩症
+bodySystem: endocrine
+description: 尿崩症為因抗利尿激素（ADH / vasopressin）分泌不足（中樞性）或腎臟對 ADH 反應不良（腎源性）導致的嚴重多飲多尿症。犬貓尿量可達每日體重的 5-20 倍以上。尿液極度稀釋（比重 <1.008）。中樞性尿崩症可用 DDAVP 治療。
+
+aliases:
+  - { alias: DI, language: en }
+  - { alias: 尿崩, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬隻尿崩症罕見。需與其他多飲多尿原因鑑別（CKD、Cushing's、pyometra 等）。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻尿崩症極罕見。偶有報告。
+
+etiology:
+  categories:
+    - name: 中樞性尿崩症（CDI）
+      examples:
+        - 特發性（最常見犬隻原因）
+        - 腦下垂體腫瘤
+        - 頭部外傷
+        - 腦膜腦炎
+        - 先天性（腦下垂體發育不良）
+    - name: 腎源性尿崩症（NDI）
+      examples:
+        - 先天性（ADH 受體基因突變，極罕見）
+        - 後天性（低血鉀、高血鈣、腎髓質沖刷、藥物）
+        - 腎髓質沖刷為最常見後天性原因
+
+clinicalSigns:
+  early:
+    - 極度多飲多尿
+    - 尿液如清水
+    - 頻繁排尿
+  progressive:
+    - 持續極度多飲多尿
+    - 若限制飲水→嚴重脫水（危險）
+    - 夜間多尿（nocturia）
+    - 體重維持正常
+    - 精神狀態正常（除非腦部病變引起 CDI）
+
+diagnosis:
+  primaryTests:
+    - name: 尿液比重
+      notes: 尿液比重持續 <1.008（hyposthenuria）。排除其他多飲多尿原因（血糖、腎功能、肝功能、電解質、皮質醇）。
+    - name: 改良型限水試驗或 DDAVP 試驗
+      notes: DDAVP 試驗（更安全）：給予 DDAVP 0.1-0.4 μg/kg SC 或 1-2 滴 intranasal → CDI 者尿液比重升高（>1.015）、尿量減少。NDI 者無反應。限水試驗需住院嚴密監測（有脫水風險）。
+
+treatment:
+  principles:
+    - CDI 以 DDAVP 替代治療
+    - NDI 治療基礎原因
+    - 確保充足飲水
+  general:
+    - "CDI：DDAVP（Desmopressin）0.1-0.2 μg/kg SC q12-24h 或 1-2 滴 intranasal q12h 或 0.1-0.2 mg PO q8-12h"
+    - 確保隨時有充足飲水
+    - "NDI：治療基礎原因（矯正低血鉀、高血鈣等）"
+    - "先天性 NDI：Hydrochlorothiazide 1-2 mg/kg PO q12h（矛盾性減少尿量）+ 低鈉飲食"
+    - 腦部腫瘤引起 CDI 需評估腫瘤治療
+
+prognosis: CDI 以 DDAVP 治療反應良好，可恢復正常尿量。特發性 CDI 需終生治療。腦部腫瘤引起的 CDI 預後取決於腫瘤。後天性 NDI 若基礎原因可治療則可能恢復。先天性 NDI 預後較差，治療反應有限。
+
+pubmedQueries:
+  - query: '"diabetes insipidus" AND (veterinary OR canine OR feline) AND ("desmopressin" OR "DDAVP" OR "treatment")'
+    frequency: monthly

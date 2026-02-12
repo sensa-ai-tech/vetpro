@@ -1,0 +1,77 @@
+slug: avian-gout
+nameEn: Avian Gout
+nameZh: 禽類痛風
+bodySystem: metabolic
+description: 禽類痛風是尿酸代謝異常導致尿酸鹽沉積於關節（關節型）或內臟器官（內臟型）的疾病。常因腎功能不全、脫水或高蛋白飲食引起。內臟型更為常見且預後較差，關節型則表現為關節腫脹與跛行。
+
+aliases:
+  - { alias: 鳥類痛風, language: zh }
+  - { alias: 禽類尿酸沉積症, language: zh }
+  - { alias: Articular gout in birds, language: en }
+  - { alias: Visceral gout in birds, language: en }
+
+species:
+  - speciesCommon: bird
+    prevalence: common
+    notes: 各種鳥類均可發生。鸚鵡類及猛禽較常見。腎功能不全為最主要潛在原因。老年鳥發病率較高。
+
+etiology:
+  categories:
+    - name: 腎功能障礙
+      examples:
+        - 慢性腎臟疾病
+        - 腎毒性藥物（Aminoglycosides）
+        - 脫水導致腎功能不全
+        - 感染性腎炎
+    - name: 飲食因素
+      examples:
+        - 高蛋白飲食
+        - 飲水不足導致脫水
+        - 維生素 A 缺乏（影響腎小管功能）
+    - name: 其他
+      examples:
+        - 遺傳易感性
+        - 代謝性疾病
+
+clinicalSigns:
+  early:
+    - 多飲多尿
+    - 輕度活動量減少
+    - 糞便中尿酸鹽增多
+  progressive:
+    - 關節腫脹（關節型：足趾、踝關節白色腫塊）
+    - 跛行或不願站立
+    - 食慾下降
+    - 嗜睡
+    - 體重下降
+    - 羽毛蓬亂
+
+diagnosis:
+  primaryTests:
+    - name: 血液尿酸檢測
+      notes: 血清尿酸濃度升高（>15 mg/dL 具臨床意義）。正常鳥尿酸也偏高需注意
+    - name: 關節穿刺
+      notes: 關節型痛風可抽出白色尿酸鹽結晶。偏光顯微鏡見雙折射針狀結晶
+    - name: X 光
+      notes: 關節周圍軟組織腫脹。腎臟腫大。內臟器官鈣化
+
+treatment:
+  principles:
+    - 降低血清尿酸濃度
+    - 治療基礎腎臟疾病
+    - 飲食調整
+    - 充分水合
+  general:
+    - Allopurinol（10-30 mg/kg PO BID）降低尿酸生成
+    - Colchicine（0.04 mg/kg PO BID）急性關節型
+    - 充分補液（口服或皮下）
+    - 降低飲食蛋白質含量
+    - 確保充足飲水量
+    - 維生素 A 補充
+    - 疼痛管理（Meloxicam 0.5-1 mg/kg SID）
+
+prognosis: 關節型痛風經治療後可穩定控制，預後尚可。內臟型痛風預後不良，發現時通常已有廣泛器官損害。早期診斷並矯正飲食與水合狀態是改善預後的關鍵。嚴重腎衰竭者預後極差。
+
+pubmedQueries:
+  - query: '"avian gout" OR ("gout" AND (bird OR psittacine)) AND (treatment OR management)'
+    frequency: monthly

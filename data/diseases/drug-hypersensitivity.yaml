@@ -1,0 +1,84 @@
+slug: drug-hypersensitivity
+nameEn: Drug Hypersensitivity
+nameZh: 藥物過敏反應
+bodySystem: immunology
+description: 藥物過敏反應 (drug hypersensitivity) 為免疫介導性藥物不良反應，與藥理劑量無關。可涉及四型過敏反應機制。犬貓常見致敏藥物包括 sulfonamides、penicillins、cephalosporins 與 NSAIDs。表現從輕度皮膚反應到嚴重全身過敏反應不等。
+
+aliases:
+  - { alias: 藥物過敏, language: zh }
+  - { alias: 藥物不良免疫反應, language: zh }
+  - { alias: Drug Allergy, language: en }
+  - { alias: Adverse Drug Reaction, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬最常報告的致敏藥物：sulfonamide-trimethoprim（Doberman 特別易感）、penicillin 類、cephalosporin 類、NSAIDs。Sulfonamide 在犬可引起嚴重多器官反應（發燒、關節炎、血球減少）。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓對 methimazole、propylthiouracil 可發生嚴重藥物反應。Griseofulvin 在 FIV 陽性貓可引起骨髓抑制。
+
+etiology:
+  categories:
+    - name: 過敏反應類型
+      examples:
+        - 第一型（IgE 介導）：蕁麻疹、過敏性休克
+        - 第二型（細胞毒性）：免疫介導性溶血性貧血、血小板減少
+        - 第三型（免疫複合物）：血管炎、腎絲球腎炎
+        - 第四型（遲發性）：接觸性皮膚炎
+    - name: 常見致敏藥物
+      examples:
+        - Sulfonamide-trimethoprim
+        - Penicillins / Cephalosporins
+        - NSAIDs
+        - Methimazole（貓）
+        - 疫苗佐劑
+        - 造影劑
+
+clinicalSigns:
+  early:
+    - 皮膚反應（蕁麻疹、紅疹、瘙癢）
+    - 面部腫脹
+    - 發燒
+    - 嘔吐、腹瀉
+  progressive:
+    - 全身過敏反應（低血壓、休克）
+    - 免疫介導性血球減少
+    - 肝毒性
+    - 腎損傷
+    - Sulfonamide 反應：多關節炎、乾眼症 (KCS)、腎絲球腎炎
+    - 嚴重皮膚反應（中毒性表皮壞死 TEN 樣）
+
+diagnosis:
+  primaryTests:
+    - name: 時間關聯性
+      notes: 用藥後出現症狀（第一型：分鐘至小時；其他型：天至週）。停藥後改善
+    - name: 排除其他原因
+      notes: 排除感染、自體免疫等其他可能原因
+  additional:
+    - CBC（血球減少評估）
+    - 肝腎功能
+    - Schirmer 淚液試驗（sulfonamide 相關 KCS）
+    - 尿液分析
+    - 皮膚生檢（皮膚反應）
+
+treatment:
+  principles:
+    - 立即停用致敏藥物
+    - 對症支持療法
+    - 記錄過敏藥物避免再次使用
+    - 嚴重反應需積極治療
+  general:
+    - 立即停用疑似致敏藥物
+    - 輕度皮膚反應：抗組織胺、短期類固醇
+    - 全身過敏反應：epinephrine + IV 輸液 + 類固醇
+    - 免疫介導性血球減少：免疫抑制劑量類固醇
+    - Sulfonamide 反應：停藥 + 人工淚液（KCS）+ 類固醇
+    - 終身避免同類藥物
+    - 病歷標註藥物過敏
+
+prognosis: 藥物過敏反應在及時停藥後多數可完全恢復。Sulfonamide 引起的乾眼症可能永久。全身過敏反應若及時處理預後佳。嚴重多器官反應（TEN 樣）預後較差。
+
+pubmedQueries:
+  - query: '"drug hypersensitivity" OR "drug allergy" AND (veterinary OR canine OR feline) AND ("treatment" OR "adverse reaction")'
+    frequency: monthly

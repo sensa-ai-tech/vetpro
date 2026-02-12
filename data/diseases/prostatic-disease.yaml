@@ -1,0 +1,77 @@
+slug: prostatic-disease
+nameEn: Prostatic Disease
+nameZh: 前列腺疾病
+bodySystem: reproductive
+description: 犬前列腺疾病為未絕育公犬常見問題，包括良性前列腺增生 (BPH)、前列腺炎、前列腺囊腫、前列腺膿瘍與前列腺腫瘤。BPH 為最常見型態，幾乎所有未結紮公犬 >5 歲均有不同程度增生。去勢為多數良性前列腺疾病的根治方法。
+
+aliases:
+  - { alias: 前列腺肥大, language: zh }
+  - { alias: Benign Prostatic Hyperplasia, language: en }
+  - { alias: BPH, language: en }
+  - { alias: Prostatic Disorders, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: BPH 見於幾乎所有未結紮公犬 >5 歲。為睾固酮依賴性。去勢後 3-4 週前列腺明顯縮小。前列腺腫瘤反而好發於已結紮犬。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓前列腺疾病極罕見。偶有前列腺囊腫或腫瘤報告。
+
+etiology:
+  categories:
+    - name: 前列腺疾病分類
+      examples:
+        - 良性前列腺增生 (BPH) — 睾固酮/DHT 驅動
+        - 前列腺炎（急性/慢性細菌感染）
+        - 前列腺囊腫（腺體內或旁前列腺）
+        - 前列腺膿瘍（嚴重感染併發）
+        - 前列腺腫瘤（腺癌、移行細胞癌）
+    - name: 風險因子
+      examples:
+        - 未結紮公犬（BPH、囊腫、感染）
+        - 高齡
+        - 已結紮犬（腫瘤風險反而增加）
+
+clinicalSigns:
+  early:
+    - 帶血或混濁尿道分泌物
+    - 排尿困難（stranguria）
+    - 排便困難（前列腺壓迫直腸）
+  progressive:
+    - 血尿
+    - 便秘（帶狀糞便）
+    - 後肢僵硬（前列腺壓迫神經）
+    - 發燒（前列腺炎/膿瘍）
+    - 全身性感染（膿瘍破裂）
+
+diagnosis:
+  primaryTests:
+    - name: 直腸觸診
+      notes: 評估前列腺大小、對稱性、疼痛感。BPH 對稱增大、無痛。腫瘤不對稱、硬結
+    - name: 腹部超音波
+      notes: 前列腺大小測量、內部回音型態、囊腫/膿瘍辨識
+  additional:
+    - 尿液分析與培養
+    - 前列腺液採集（按摩後）培養
+    - 前列腺細針穿刺 (FNA) 細胞學
+    - 腹部 X-ray（鈣化提示腫瘤）
+    - CPSE（犬前列腺特異性酯酶）
+
+treatment:
+  principles:
+    - 去勢為多數良性疾病的根治方法
+    - 感染需抗生素
+    - 腫瘤治療選項有限
+  general:
+    - BPH：去勢（首選根治）。不適合手術者：finasteride 0.1-0.5 mg/kg PO SID 或 osaterone
+    - 前列腺炎：長療程抗生素（需穿透前列腺屏障：enrofloxacin、TMP-SMX）4-6 週
+    - 前列腺囊腫：去勢 ± 囊腫引流
+    - 前列腺膿瘍：外科引流 + 去勢 + 抗生素
+    - 前列腺腫瘤：預後差，姑息性 NSAIDs（piroxicam）
+
+prognosis: BPH 去勢後預後極佳。前列腺炎長療程抗生素 + 去勢後預後佳。前列腺膿瘍手術風險較高但可治癒。前列腺腫瘤預後極差（多已轉移），中位存活期數月。
+
+pubmedQueries:
+  - query: '"prostatic disease" OR "benign prostatic hyperplasia" AND (veterinary OR canine) AND ("treatment" OR "diagnosis")'
+    frequency: monthly

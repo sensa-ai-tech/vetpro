@@ -1,0 +1,68 @@
+slug: otitis-interna
+nameEn: Otitis Interna
+nameZh: 內耳炎
+bodySystem: ear
+description: 內耳 (inner ear) 的感染或發炎，累及耳蝸 (cochlea) 與前庭系統 (vestibular apparatus)。多由中耳炎 (otitis media) 擴展而來。臨床表現為周邊前庭症狀 (頭部傾斜、旋轉性眼球震顫) 合併聽力喪失。
+
+aliases:
+  - { alias: Inner Ear Infection, language: en }
+  - { alias: Labyrinthitis, language: en }
+  - { alias: 迷路炎, language: zh }
+  - { alias: 內耳感染, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 多繼發於慢性中耳炎。長耳品種 (Cocker Spaniel、Basset Hound) 風險較高。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓可見。鼻咽息肉或中耳炎延伸為常見原因。
+
+etiology:
+  categories:
+    - name: 感染性 (中耳炎延伸)
+      examples:
+        - 細菌性 (Staphylococcus、Pseudomonas、Streptococcus)
+        - 慢性外耳炎→中耳炎→內耳炎
+    - name: 其他
+      examples:
+        - 鼻咽息肉 (貓)
+        - 耳道腫瘤侵犯
+        - 外傷性 (顳骨骨折)
+
+clinicalSigns:
+  early:
+    - 頭部傾斜 (向患側)
+    - 旋轉性眼球震顫 (快相遠離患側)
+    - 步態不穩 (向患側傾倒)
+  progressive:
+    - 嘔吐 (前庭性)
+    - 聽力喪失 (患側)
+    - Horner 症候群 (同側)
+    - 面神經麻痺 (同側)
+
+diagnosis:
+  primaryTests:
+    - name: 神經學檢查
+      notes: 周邊前庭症候群定位。頭部傾斜 + 旋轉性眼球震顫 + 同側傾倒
+    - name: CT / MRI
+      notes: 評估鼓室骨增厚、液體積聚。MRI 更敏感評估內耳與腦幹
+    - name: 耳鏡 + 鼓膜評估
+      notes: 評估外耳道與鼓膜完整性
+
+treatment:
+  principles:
+    - 長期全身性抗生素
+    - 處理中耳炎來源
+    - 支持性照護管理前庭症狀
+  general:
+    - 全身性抗生素 (Fluoroquinolone 或依培養結果) 4-8 週
+    - 中耳沖洗 (鎮靜下經鼓膜沖洗引流)
+    - 止吐藥 (Maropitant) 控制嘔吐
+    - 嚴重慢性病例：TECA-BO (全耳道切除 + 鼓室骨切開)
+
+prognosis: 前庭症狀多數在 2-4 週明顯改善 (代償性恢復)。頭部傾斜可能殘留。聽力喪失可能為永久性。及時長期抗生素治療預後中等至良好。
+
+pubmedQueries:
+  - query: '"otitis interna" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis")'
+    frequency: monthly

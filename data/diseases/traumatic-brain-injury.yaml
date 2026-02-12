@@ -1,0 +1,82 @@
+slug: traumatic-brain-injury
+nameEn: Traumatic Brain Injury
+nameZh: 創傷性腦損傷
+bodySystem: emergency
+description: 創傷性腦損傷 (traumatic brain injury, TBI) 為頭部外傷引起的腦實質損傷，常見於車禍、高處墜落與咬傷。損傷分為原發性（撞擊直接損傷）與繼發性（腦水腫、顱內壓升高、缺血）。修正 Glasgow 昏迷量表 (MGCS) 用於評估嚴重度與預後。
+
+aliases:
+  - { alias: 頭部外傷, language: zh }
+  - { alias: 腦外傷, language: zh }
+  - { alias: TBI, language: en }
+  - { alias: Head Trauma, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬 TBI 最常見原因為車禍（HBC）。小型犬被踢或踩踏亦常見。MGCS 評分 3-8 為嚴重，9-14 中度，15-18 輕度。MGCS <8 需積極顱內壓管理。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓 TBI 常見於高處墜落（high-rise syndrome）與車禍。貓顱骨較薄，損傷風險較高。
+
+etiology:
+  categories:
+    - name: 原發性損傷
+      examples:
+        - 腦挫傷
+        - 軸索損傷（剪切力）
+        - 顱骨骨折
+        - 顱內出血（硬膜外/硬膜下/蜘蛛膜下/腦內）
+    - name: 繼發性損傷
+      examples:
+        - 腦水腫→顱內壓升高
+        - 腦疝
+        - 腦缺血/缺氧
+        - 電解質異常
+        - 癲癇
+
+clinicalSigns:
+  early:
+    - 意識改變（嗜睡至昏迷）
+    - 瞳孔異常（不等大、散大、對光反射消失）
+    - 異常姿勢（去皮質或去腦幹姿勢）
+  progressive:
+    - 顱內壓升高三聯征（Cushing reflex）：高血壓、心搏過緩、呼吸異常
+    - 癲癇
+    - 腦疝（腦幹壓迫→呼吸停止）
+    - 多重器官損傷（合併外傷時）
+
+diagnosis:
+  primaryTests:
+    - name: 修正 Glasgow 昏迷量表 (MGCS)
+      notes: 評估運動活動、腦幹反射與意識水平（3-18 分）。<8 分預後差
+    - name: 神經學檢查
+      notes: 瞳孔大小與反射、意識水平、姿勢反應、腦神經評估
+  additional:
+    - 頭部 CT（金標準 — 顱骨骨折、出血、腦水腫）
+    - 頭部 X-ray（顱骨骨折篩檢）
+    - 血壓（低血壓加重繼發性損傷）
+    - 血氣分析
+    - 全身影像（合併外傷評估）
+
+treatment:
+  principles:
+    - 預防繼發性損傷
+    - 維持腦灌注壓
+    - 控制顱內壓
+    - ABC 穩定
+  general:
+    - 頭部抬高 15-30 度
+    - 維持收縮壓 >90 mmHg（腦灌注壓 = MAP - ICP）
+    - Mannitol 0.5-1 g/kg IV 15-20 分鐘（降低 ICP）。可重複 q6h
+    - 高張食鹽水 3-7.5% 2-5 mL/kg IV（替代 mannitol）
+    - 氧氣補充（維持 PaO₂ >80 mmHg）
+    - 避免低血壓、低氧、高體溫
+    - 癲癇控制（levetiracetam、diazepam）
+    - 避免類固醇（TBI 中無益且有害）
+    - 顱骨骨折凹陷：手術減壓
+
+prognosis: TBI 預後取決於 MGCS 評分。MGCS >14 存活率 >80%。MGCS <8 存活率約 20-50%。雙側瞳孔散大固定為極差預後。多數改善發生在前 48-72 小時。殘留神經功能障礙可能持續。
+
+pubmedQueries:
+  - query: '"traumatic brain injury" OR "head trauma" AND (veterinary OR canine OR feline) AND ("treatment" OR "MGCS" OR "intracranial pressure")'
+    frequency: monthly

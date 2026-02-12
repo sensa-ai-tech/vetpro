@@ -1,0 +1,81 @@
+slug: staphylococcal-infection
+nameEn: Staphylococcal Infection
+nameZh: 葡萄球菌感染
+bodySystem: infectious
+description: 葡萄球菌 (Staphylococcus spp.) 為犬貓最常見的細菌性皮膚感染病原。S. pseudintermedius 為犬最主要致病種，S. aureus 在貓較常見。甲氧西林抗藥性葡萄球菌 (MRSP/MRSA) 的出現為臨床抗生素選擇帶來嚴峻挑戰。
+
+aliases:
+  - { alias: 葡萄球菌病, language: zh }
+  - { alias: Staphylococcus Infection, language: en }
+  - { alias: Staph Infection, language: en }
+  - { alias: MRSP Infection, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: S. pseudintermedius 為犬皮膚正常菌群，也是最常見皮膚感染病原。MRSP 盛行率增加為重大臨床問題。深層膿皮症、手術部位感染、骨髓炎均可見。
+  - speciesCommon: cat
+    prevalence: common
+    notes: S. aureus 與 S. pseudintermedius 均可感染貓。貓咬傷傷口膿瘍為常見臨床情境。MRSA 在貓的報告增加。
+
+etiology:
+  categories:
+    - name: 主要致病種
+      examples:
+        - S. pseudintermedius（犬最主要）
+        - S. aureus（貓與人共通）
+        - S. schleiferi
+        - 甲氧西林抗藥性株 (MRSP, MRSA)
+    - name: 感染類型
+      examples:
+        - 淺層膿皮症（毛囊炎）
+        - 深層膿皮症（蜂窩織炎、癤腫）
+        - 手術部位感染
+        - 骨髓炎
+        - 菌血症
+
+clinicalSigns:
+  early:
+    - 丘疹、膿疱（淺層膿皮症）
+    - 局部紅腫
+    - 搔癢
+    - 表皮脫落環 (epidermal collarettes)
+  progressive:
+    - 深層組織感染（結節、瘻管、排膿）
+    - 發燒（深層感染或敗血症）
+    - 手術傷口腫脹、排膿
+    - 骨髓炎引起跛行
+    - 菌血症（多器官播散）
+
+diagnosis:
+  primaryTests:
+    - name: 細菌培養與藥敏試驗
+      notes: 確診必要，尤其懷疑抗藥性時。深層感染需組織培養優於拭子。藥敏需包含 oxacillin（偵測甲氧西林抗藥性）
+    - name: 細胞學（壓印抹片）
+      notes: 快速初步評估。可見嗜中性球吞噬球菌群。指導經驗性治療
+  additional:
+    - mecA 基因 PCR（確認甲氧西林抗藥性）
+    - CBC（白血球增多）
+    - 血液培養（敗血症時）
+    - 影像學（骨髓炎時 X-ray 或 CT）
+
+treatment:
+  principles:
+    - 根據藥敏結果選擇抗生素
+    - 淺層感染優先局部治療
+    - 深層感染需系統性抗生素
+    - MRSP/MRSA 需特殊抗生素選擇
+  general:
+    - 淺層膿皮症：chlorhexidine 洗浴 + 局部 mupirocin
+    - 一般深層感染：cephalexin 22 mg/kg PO BID × 3-4 週（或至病灶消退後 1 週）
+    - 替代：amoxicillin-clavulanate、clindamycin
+    - "MRSP/MRSA：依藥敏結果（可能需 chloramphenicol、doxycycline、rifampin）"
+    - 深層膿皮症需治療至少 4-6 週
+    - 手術部位感染需清創引流
+    - 骨髓炎需長期抗生素（6-8 週以上）
+
+prognosis: 淺層葡萄球菌膿皮症預後良好。深層感染需較長療程但通常可治癒。MRSP/MRSA 感染治療選擇有限但並非不可治療。復發性膿皮症需查找潛在原因（過敏性皮膚病、內分泌疾病等）。
+
+pubmedQueries:
+  - query: '"staphylococcal infection" OR "MRSP" AND (veterinary OR canine OR feline) AND ("treatment" OR "antimicrobial resistance")'
+    frequency: monthly

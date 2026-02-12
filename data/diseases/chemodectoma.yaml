@@ -1,0 +1,70 @@
+slug: chemodectoma
+nameEn: Chemodectoma
+nameZh: 化學受體瘤
+bodySystem: cardiac
+description: 化學受體瘤為起源於主動脈體或頸動脈體化學受體細胞的腫瘤，又稱心基底部腫瘤（heart base tumor）。主動脈體化學受體瘤位於主動脈根部與肺動脈之間，可引起心包積液。短頭品種（Boxer、Boston Terrier、English Bulldog）好發，可能與慢性低氧相關。
+
+aliases:
+  - { alias: Heart Base Tumor, language: en }
+  - { alias: Aortic Body Tumor, language: en }
+  - { alias: 心基底部腫瘤, language: zh }
+  - { alias: 主動脈體瘤, language: zh }
+  - { alias: Paraganglioma, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻第二常見的心臟腫瘤（次於 hemangiosarcoma）。短頭品種顯著好發（Boxer、Boston Terrier、English Bulldog、French Bulldog）。中老年犬（7-15 歲），公犬可能較好發。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻極為罕見，僅有零星病例報告。
+
+etiology:
+  categories:
+    - name: 腫瘤特性
+      examples:
+        - 起源於主動脈體或頸動脈體化學受體細胞
+        - 局部生長緩慢，轉移率較低（約 5-20%）
+        - 可壓迫大血管或心房
+    - name: 風險因素
+      examples:
+        - 短頭品種（慢性低氧刺激化學受體增生）
+        - 高海拔地區犬隻
+        - 中老年犬
+
+clinicalSigns:
+  early:
+    - 心包積液（心音減弱）
+    - 輕度運動不耐
+    - 可能為偶然發現
+  progressive:
+    - 心包填塞（反覆發作）
+    - 腹水
+    - 呼吸困難（壓迫氣管或肺動脈）
+    - 昏厥
+    - 後腔靜脈症候群（腫瘤壓迫後腔靜脈）
+
+diagnosis:
+  primaryTests:
+    - name: 心臟超音波（Echocardiography）
+      notes: 可見心基底部（主動脈根部與肺動脈之間）的實質性腫塊，通常回聲均勻。常伴隨心包積液。需與 hemangiosarcoma 鑑別（位置不同：HSA 多在右心耳）。
+    - name: 胸腔 CT 或 MRI
+      notes: 評估腫塊範圍、大血管壓迫程度與手術可行性。優於超音波評估腫瘤與周圍結構的關係。
+
+treatment:
+  principles:
+    - 生長緩慢，治療以控制心包積液為主
+    - 心包切除術可有效控制心包積液復發
+    - 手術切除困難（腫瘤常包圍大血管）
+  general:
+    - 心包穿刺引流（pericardiocentesis，緊急處置）
+    - 心包切除術（pericardiectomy，首選長期控制心包積液）
+    - 手術切除腫瘤（若可行，但因位置常不完全切除）
+    - 放射線治療（可縮小腫瘤體積）
+    - "Toceranib（Palladia）有初步療效報告"
+
+prognosis: 與心臟 hemangiosarcoma 相比，chemodectoma 預後明顯較好。心包切除術後中位存活時間可達 1-3 年。腫瘤生長緩慢且轉移率低。單純心包切除術（不切除腫瘤）即可顯著改善臨床症狀與存活時間。
+
+pubmedQueries:
+  - query: '"chemodectoma" OR "heart base tumor" AND (veterinary OR canine) AND ("treatment" OR "prognosis")'
+    frequency: monthly

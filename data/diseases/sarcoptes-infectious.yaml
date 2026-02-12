@@ -1,0 +1,80 @@
+slug: sarcoptes-infectious
+nameEn: Sarcoptes Infectious
+nameZh: 疥蟎感染
+bodySystem: infectious
+description: 疥蟎感染 (sarcoptic mange) 由穿皮疥蟎 Sarcoptes scabiei var. canis 引起，為犬高度搔癢性皮膚病。蟎蟲鑽入表皮角質層挖掘隧道產卵。極具傳染性，可在犬間及犬人間傳播。貓疥蟎為 Notoedres cati（貓疥蟎症）。
+
+aliases:
+  - { alias: 犬疥癬, language: zh }
+  - { alias: 穿皮疥蟎感染, language: zh }
+  - { alias: Sarcoptic Mange, language: en }
+  - { alias: Canine Scabies, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬疥蟎症高度傳染且極度搔癢。S. scabiei var. canis 可暫時感染人類引起皮疹但不會在人體上完成生活史。所有接觸犬需同時治療。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓主要為 Notoedres cati（貓疥蟎），好發頭面部。S. scabiei 偶可暫時感染貓。治療類似犬。
+
+etiology:
+  categories:
+    - name: 病原與傳播
+      examples:
+        - Sarcoptes scabiei var. canis（犬特異性變種）
+        - 直接接觸傳播（高度傳染性）
+        - 間接接觸（共用床鋪、美容工具）
+        - 蟎蟲離開宿主可存活 2-6 天
+    - name: 致病機制
+      examples:
+        - 雌蟎鑽入角質層挖掘隧道產卵
+        - 蟎蟲抗原引起強烈超敏反應（Type I 與 Type IV）
+        - 搔癢為免疫介導性（非單純機械刺激）
+        - 嚴重自我創傷引起繼發感染
+
+clinicalSigns:
+  early:
+    - 極度搔癢（比任何其他皮膚病都嚴重）
+    - 耳緣紅斑與痂皮
+    - 肘部、飛節搔癢
+    - 腹側紅斑
+  progressive:
+    - 丘疹、痂皮、鱗屑廣泛分佈
+    - 脫毛（自我創傷）
+    - 皮膚增厚與苔蘚化
+    - 繼發細菌或酵母菌感染
+    - 周邊淋巴結腫大
+    - 耳廓-足反射陽性 (pinnal-pedal reflex)
+
+diagnosis:
+  primaryTests:
+    - name: 多部位淺層皮膚刮搔
+      notes: 耳緣、肘部、飛節為重點。敏感度僅 20-50%（蟎蟲數量極少即可引起症狀）。陰性不排除
+    - name: 治療性診斷
+      notes: 臨床高度懷疑時即使刮搔陰性也建議試驗性治療（isoxazoline 類）。2-4 週內搔癢顯著改善支持診斷
+  additional:
+    - 耳廓-足反射（pinnal-pedal reflex，約 80% 陽性）
+    - 血清學（Sarcoptes IgG ELISA，敏感度高但感染初期可能偽陰性）
+    - 皮膚生檢（淺層嗜酸球性表皮炎）
+
+treatment:
+  principles:
+    - Isoxazoline 類為目前首選
+    - 所有接觸犬需同時治療
+    - 環境去汙染
+    - 短期止癢改善舒適度
+  general:
+    - "Isoxazoline 類（首選）：fluralaner (Bravecto) 單劑或 sarolaner/afoxolaner 每月"
+    - 替代：selamectin (Revolution) 每 2 週 × 3 次
+    - 所有同住犬同時治療
+    - 短期 corticosteroid 止癢（prednisone 0.5-1 mg/kg × 3-5 天）
+    - 繼發感染抗生素治療
+    - 環境消毒（清洗床鋪、高溫烘乾）
+    - 搔癢在開始有效治療後 2-4 週內改善
+
+prognosis: 犬疥蟎感染經適當治療預後極佳。Isoxazoline 類治療效果顯著且快速。搔癢通常在治療 2-4 週內明顯改善。完全復原可能需 4-8 週。再感染可能發生若環境或接觸犬未同時處理。
+
+pubmedQueries:
+  - query: '"sarcoptic mange" OR "Sarcoptes scabiei" AND (canine OR veterinary) AND ("treatment" OR "isoxazoline")'
+    frequency: monthly

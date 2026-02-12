@@ -1,0 +1,79 @@
+slug: e-coli-infection
+nameEn: E Coli Infection
+nameZh: 大腸桿菌感染
+bodySystem: infectious
+description: 大腸桿菌 (Escherichia coli) 為犬貓泌尿道感染最常見的致病菌，也可引起腸道感染、菌血症、化膿性子宮蓄膿及新生兒敗血症。特定毒力株如 ETEC、EPEC 及 EHEC 可引起腹瀉。多重抗藥性大腸桿菌的增加為臨床重大問題。
+
+aliases:
+  - { alias: 大腸桿菌病, language: zh }
+  - { alias: Escherichia coli Infection, language: en }
+  - { alias: E. coli, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬泌尿道感染最常見致病菌（約 50%）。子宮蓄膿中 E. coli 佔主要比例。新生幼犬菌血症重要病原。ESBL 產生株增加。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓泌尿道感染中 E. coli 亦為最常見。老年貓腎盂腎炎常見病原。多重抗藥性問題日益嚴重。
+
+etiology:
+  categories:
+    - name: 致病型別
+      examples:
+        - 尿路致病型 (UPEC) — 泌尿道感染最常見
+        - 腸毒素型 (ETEC) — 分泌性腹瀉
+        - 腸致病型 (EPEC) — 黏附腸黏膜引起腹瀉
+        - 產 ESBL 型 — 多重抗藥性
+    - name: 常見感染類型
+      examples:
+        - 泌尿道感染（膀胱炎、腎盂腎炎）
+        - 子宮蓄膿
+        - 新生兒敗血症
+        - 前列腺炎
+        - 腹膜炎
+
+clinicalSigns:
+  early:
+    - 頻尿、血尿、排尿困難（泌尿道感染）
+    - 腹瀉（腸道感染）
+    - 陰部分泌物（子宮蓄膿）
+  progressive:
+    - 發燒、食慾下降（敗血症）
+    - 多飲多尿（腎盂腎炎）
+    - 腹部膨脹（子宮蓄膿）
+    - 新生兒突然衰弱或死亡
+    - 敗血性休克
+
+diagnosis:
+  primaryTests:
+    - name: 尿液培養與藥敏
+      notes: 泌尿道感染確診金標準。需無菌採樣（膀胱穿刺優先）。>10³ CFU/mL（穿刺尿）具有診斷意義
+    - name: 血液或分泌物培養
+      notes: 敗血症或子宮蓄膿時必要。抗生素敏感試驗指導治療
+  additional:
+    - CBC（白血球增多伴左移）
+    - 生化（腎功能、肝功能）
+    - 腹部超音波（子宮蓄膿、腎盂腎炎）
+    - 尿液分析（膿尿、菌尿）
+
+treatment:
+  principles:
+    - 根據藥敏結果選擇抗生素
+    - 簡單下泌尿道感染首選窄譜抗生素
+    - 嚴重感染需靜脈給藥
+    - 處理潛在因素
+  general:
+    - 單純膀胱炎：amoxicillin 11-22 mg/kg PO BID × 3-5 天
+    - 腎盂腎炎：fluoroquinolone × 4-6 週
+    - 敗血症：ampicillin + enrofloxacin IV（廣譜覆蓋）
+    - 子宮蓄膿：手術切除（OHE）+ 抗生素
+    - ESBL 產生株需特殊抗生素（meropenem、amikacin）
+    - 尿液培養追蹤確認清除
+    - 復發性泌尿道感染需查找潛在原因
+
+prognosis: 單純泌尿道感染適當抗生素治療預後極佳。腎盂腎炎需較長療程但通常可治癒。敗血症預後視嚴重程度而定。ESBL 多重抗藥性株治療選擇有限但仍有可用藥物。
+
+pubmedQueries:
+  - query: '"Escherichia coli" AND (veterinary OR canine OR feline) AND ("urinary tract infection" OR "antimicrobial resistance")'
+    frequency: monthly

@@ -1,0 +1,79 @@
+slug: lyme-disease
+nameEn: Lyme Disease
+nameZh: 萊姆病
+bodySystem: infectious
+description: 萊姆病 (Lyme disease) 由伯氏疏螺旋體 (Borrelia burgdorferi) 經硬蜱叮咬傳播，為北美與歐洲最重要的蜱媒疾病之一。犬主要表現為急性多關節炎與發燒，嚴重者可發展為致命性腎病 (Lyme nephritis)。多數血清陽性犬無臨床症狀。
+
+aliases:
+  - { alias: 犬萊姆病, language: zh }
+  - { alias: 蜱媒伯氏疏螺旋體感染, language: zh }
+  - { alias: Canine Lyme Disease, language: en }
+  - { alias: Lyme Borreliosis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 流行區血清陽性率高但臨床發病率僅 5-10%。游走性多關節炎為典型表現。Labrador、Golden Retriever 及 Shetland Sheepdog 可能有較高的 Lyme nephritis 風險。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓萊姆病臨床報告極少。實驗感染可引起短暫關節炎，但自然感染臨床意義不確定。
+
+etiology:
+  categories:
+    - name: 病原與傳播
+      examples:
+        - Borrelia burgdorferi（革蘭氏陰性螺旋體）
+        - 經 Ixodes 屬硬蜱傳播
+        - 蜱蟲需附著 36-48 小時才能有效傳播
+        - 病原進入關節滑膜、腎臟等組織定殖
+    - name: 致病機制
+      examples:
+        - 直接組織侵犯引起發炎
+        - 免疫複合物沉積（Lyme nephritis 的主要機制）
+        - 外膜蛋白 (OspA, OspC, VlsE) 抗原變異逃避免疫
+
+clinicalSigns:
+  early:
+    - 急性跛行（突發，可游走性）
+    - 一個或多個關節腫脹、觸痛
+    - 發燒 (39.5-40.5°C)
+    - 食慾下降、精神沉鬱
+  progressive:
+    - 復發性關節炎發作
+    - 蛋白尿（Lyme nephritis 早期指標）
+    - 水腫（低白蛋白血症）
+    - 嘔吐、氮血症（腎衰竭進展）
+    - 少見：心肌炎、神經症狀
+
+diagnosis:
+  primaryTests:
+    - name: SNAP 4Dx Plus
+      notes: C6 抗體快篩，特異性高且不受疫苗影響。需結合臨床症狀判斷意義。陽性犬建議追蹤 Quant C6 與 UPC
+    - name: 尿液蛋白質/肌酸酐比值 (UPC)
+      notes: 所有 C6 陽性犬應篩檢。UPC >0.5 需進一步評估 Lyme nephritis 可能
+  additional:
+    - Quant C6 定量（治療效果追蹤）
+    - CBC、血清生化（腎功能、白蛋白）
+    - 關節液分析
+    - 尿液分析
+
+treatment:
+  principles:
+    - 抗生素為核心治療
+    - 臨床型萊姆關節炎反應迅速
+    - Lyme nephritis 需多模式積極治療
+    - 預防蜱蟲叮咬為長期策略
+  general:
+    - Doxycycline 10 mg/kg PO BID × 30 天（首選）
+    - 替代：amoxicillin 20 mg/kg PO TID × 30 天
+    - 關節炎症狀 24-48 小時內通常改善
+    - 疼痛管理（carprofen 2 mg/kg PO BID）
+    - Lyme nephritis：免疫抑制（mycophenolate）、ACE 抑制劑、抗血栓
+    - 全年持續蜱蟲預防（isoxazoline 類）
+    - 流行區考慮 Lyme 疫苗（OspA 或 chimeric）
+
+prognosis: 單純萊姆關節炎經抗生素治療預後佳。Lyme nephritis 預後極差，中位存活時間數天至數月。無症狀血清陽性犬若 UPC 正常，預後良好，建議每 6 個月追蹤 UPC。
+
+pubmedQueries:
+  - query: '"Lyme disease" AND (canine OR veterinary) AND ("guidelines" OR "consensus" OR "nephritis")'
+    frequency: monthly

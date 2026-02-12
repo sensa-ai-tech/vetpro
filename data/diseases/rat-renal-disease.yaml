@@ -1,0 +1,78 @@
+slug: rat-renal-disease
+nameEn: Rat Renal Disease
+nameZh: 大鼠腎臟疾病
+bodySystem: urinary
+description: 大鼠腎臟疾病是老年大鼠極為常見的退行性疾病，以慢性進行性腎病（Chronic Progressive Nephropathy, CPN）為主要表現。雄性大鼠發病率與嚴重程度顯著高於雌性，高蛋白飲食為重要惡化因子。
+
+aliases:
+  - { alias: 大鼠慢性腎病, language: zh }
+  - { alias: 大鼠慢性進行性腎病, language: zh }
+  - { alias: Rat chronic progressive nephropathy, language: en }
+  - { alias: Rat CPN, language: en }
+  - { alias: Old rat kidney disease, language: en }
+
+species:
+  - speciesCommon: rat
+    prevalence: common
+    notes: 老年大鼠（>18 月齡）極為常見，尤其是雄性。幾乎所有老年雄鼠都有不同程度的腎臟病變。高蛋白飲食顯著加速疾病進展。
+
+etiology:
+  categories:
+    - name: 年齡相關退行性變化
+      examples:
+        - 腎小球硬化
+        - 腎小管間質纖維化
+        - 慢性進行性腎病（CPN）
+    - name: 飲食因素
+      examples:
+        - 高蛋白飲食（>20% 蛋白質）
+        - 過度餵食（肥胖加重腎臟負擔）
+        - 鈣磷比不平衡
+    - name: 其他因素
+      examples:
+        - 雄性荷爾蒙（雄鼠發病率較高）
+        - 遺傳易感性（品系差異）
+        - 高血壓
+
+clinicalSigns:
+  early:
+    - 多飲多尿
+    - 輕度蛋白尿
+    - 體重緩慢下降
+  progressive:
+    - 明顯多飲多尿
+    - 食慾下降
+    - 漸進性消瘦
+    - 被毛粗糙蓬亂
+    - 嗜睡
+    - 腹部膨大（腎腫大或腹水）
+    - 口腔潰瘍（尿毒症）
+
+diagnosis:
+  primaryTests:
+    - name: 尿液分析
+      notes: 蛋白尿為早期指標。尿比重下降反映濃縮功能受損
+    - name: 血液生化
+      notes: BUN 與肌酐升高。磷升高。SDMA 可較早偵測腎功能下降
+    - name: 腹部超音波
+      notes: 評估腎臟大小、結構。晚期腎臟可能縮小或不規則
+
+treatment:
+  principles:
+    - 控制蛋白質攝取量
+    - 維持適當水分攝取
+    - 對症支持治療
+    - 延緩疾病進展
+  general:
+    - 降低飲食蛋白質含量（14-16% 為宜）
+    - 提供充足新鮮飲水
+    - 皮下補液（脫水嚴重者）
+    - 磷結合劑（高磷血症時）
+    - 避免腎毒性藥物
+    - 定期監測腎功能指標
+
+prognosis: 慢性進行性腎病為不可逆疾病。早期介入飲食管理可顯著延緩惡化。雄鼠預後較雌鼠差。已出現尿毒症狀者預後不良。適當管理可維持數月的生活品質，但最終多因腎衰竭影響生活品質。
+
+pubmedQueries:
+  - query: '"rat" AND ("chronic progressive nephropathy" OR "renal disease") AND ("treatment" OR "management")'
+    frequency: monthly

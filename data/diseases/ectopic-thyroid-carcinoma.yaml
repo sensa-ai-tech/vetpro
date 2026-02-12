@@ -1,0 +1,58 @@
+slug: ectopic-thyroid-carcinoma
+nameEn: Ectopic Thyroid Carcinoma
+nameZh: 異位甲狀腺癌
+bodySystem: oncology
+description: 發生在正常甲狀腺位置以外的甲狀腺組織的惡性腫瘤。可位於舌根、前縱膈或心基底部。因位置異常而診斷較晚。
+
+aliases:
+  - { alias: "Ectopic Thyroid Tumor", language: en }
+  - { alias: "異位甲狀腺腫瘤", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬罕見。前縱膈型需與其他縱膈腫瘤鑑別。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓罕見。
+
+etiology:
+  categories:
+    - name: 腫瘤性
+      examples:
+        - 胚胎期遷移甲狀腺組織惡性變
+        - 可位於舌根至心基底部沿線任何位置
+
+clinicalSigns:
+  early:
+    - 頸部或前縱膈腫塊
+    - 可能無症狀
+  progressive:
+    - 腫塊增大壓迫周圍結構
+    - 吞嚥困難
+    - 呼吸困難
+
+diagnosis:
+  primaryTests:
+    - name: CT / MRI
+      notes: 頸部至前縱膈區域腫塊
+    - name: 甲狀腺掃描（核醫學）
+      notes: 碘攝取確認甲狀腺來源
+    - name: 活檢
+      notes: 組織病理確診
+
+treatment:
+  principles:
+    - 手術切除
+    - 放射性碘治療
+  general:
+    - 手術切除
+    - I-131 放射性碘治療
+    - 化療（Doxorubicin）
+    - 甲狀腺替代治療（切除後）
+
+prognosis: 取決於可切除性與轉移狀態。完全切除預後中等。不完全切除預後較差。
+
+pubmedQueries:
+  - query: '"ectopic thyroid carcinoma" AND (veterinary OR canine) AND ("treatment" OR "diagnosis")'
+    frequency: monthly

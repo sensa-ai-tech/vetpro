@@ -1,0 +1,70 @@
+slug: corneal-sequestrum
+nameEn: Corneal Sequestrum
+nameZh: 角膜壞死斑
+bodySystem: ophthalmology
+description: 貓特有的角膜疾病（犬極罕見），角膜基質局部壞死形成棕色至黑色斑塊。常與慢性角膜刺激、FHV-1 感染或眼瞼異常相關。Persian 與 Himalayan 品種好發。
+
+aliases:
+  - { alias: Corneal Nigrum, language: en }
+  - { alias: Corneal Mummification, language: en }
+  - { alias: Feline Corneal Sequestrum, language: en }
+  - { alias: 角膜黑斑, language: zh }
+  - { alias: 角膜壞死, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬極為罕見，偶有個案報告。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓特有疾病。Persian、Himalayan、Burmese、Siamese 品種好發。可單側或雙側。
+
+etiology:
+  categories:
+    - name: 慢性角膜刺激
+      examples:
+        - FHV-1 慢性感染
+        - 眼瞼內翻 (entropion)
+        - 乾眼症 (KCS)
+    - name: 品種傾向
+      examples:
+        - Persian / Himalayan (扁臉品種)
+        - Burmese
+        - Siamese
+
+clinicalSigns:
+  early:
+    - 角膜出現淡棕色斑點
+    - 輕微眨眼/不適
+    - 流淚
+  progressive:
+    - 斑塊顏色加深 (深棕至黑色)
+    - 明顯疼痛 (blepharospasm)
+    - 角膜新生血管
+    - 壞死組織逐漸深入基質
+
+diagnosis:
+  primaryTests:
+    - name: 裂隙燈檢查
+      notes: 角膜中央或旁中央棕色至黑色斑塊，表面光滑或粗糙。評估深度
+    - name: 螢光素染色
+      notes: 壞死斑本身可能不吸收 (表面上皮覆蓋) 或周圍吸收
+    - name: FHV-1 PCR
+      notes: 排除病毒感染為誘因
+
+treatment:
+  principles:
+    - 手術切除壞死組織為根治方式
+    - 術後需角膜重建
+    - 處理根本原因 (FHV-1、眼瞼異常)
+  general:
+    - 淺層板層角膜切除術 (superficial keratectomy)
+    - 術後結膜瓣或角膜移植覆蓋
+    - FHV-1 相關者加用抗病毒治療 (Famciclovir)
+    - 矯正眼瞼異常
+
+prognosis: 手術切除後預後良好。復發率約 10-20%（尤其 FHV-1 相關者）。不手術壞死斑可能自行脫落但癒合慢且疼痛。早期手術角膜疤痕較小。
+
+pubmedQueries:
+  - query: '"corneal sequestrum" AND (veterinary OR feline) AND ("keratectomy" OR "treatment")'
+    frequency: monthly

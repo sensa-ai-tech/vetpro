@@ -1,0 +1,80 @@
+slug: metritis
+nameEn: Metritis
+nameZh: 子宮炎
+bodySystem: reproductive
+description: 子宮炎 (metritis) 為產後或流產後子宮的急性細菌感染，不同於 pyometra（慢性、荷爾蒙驅動）。常見致病菌為 E. coli、Streptococcus、Staphylococcus。好發於難產後、胎盤滯留或助產操作後。為產後緊急狀態，需積極治療。
+
+aliases:
+  - { alias: 產後子宮炎, language: zh }
+  - { alias: Postpartum Metritis, language: en }
+  - { alias: Puerperal Metritis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬產後子宮炎通常在分娩後 1-7 天發生。難產、助產操作、胎盤滯留、死胎為風險因子。E. coli 為最常見致病菌。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓產後子宮炎較犬少見但可發生。病因與犬類似。
+
+etiology:
+  categories:
+    - name: 致病機制
+      examples:
+        - 產後子宮頸開放，細菌上行感染
+        - 胎盤滯留提供細菌培養基
+        - 子宮壁損傷（難產、助產器械）利於細菌侵入
+        - 細菌毒素吸收→全身性敗血症
+    - name: 風險因子
+      examples:
+        - 難產（dystocia）
+        - 助產操作或剖腹產
+        - 胎盤滯留
+        - 死胎滯留
+        - 不潔環境分娩
+
+clinicalSigns:
+  early:
+    - 惡臭陰道分泌物（暗紅色或膿性）
+    - 發燒
+    - 嗜睡
+    - 食慾下降
+  progressive:
+    - 脫水
+    - 嘔吐
+    - 敗血症（低血壓、心搏過速）
+    - 泌乳減少（影響新生仔畜）
+    - 腹膜炎（子宮破裂時）
+
+diagnosis:
+  primaryTests:
+    - name: 臨床表現
+      notes: 產後 1-7 天出現惡臭陰道分泌物 + 發燒 + 全身性病徵
+    - name: CBC
+      notes: 白血球增多伴 left shift，或白血球減少（嚴重敗血症）
+  additional:
+    - 腹部超音波（子宮腔液體、胎盤/胎兒殘留）
+    - 陰道分泌物培養與藥敏
+    - 生化（腎功能、電解質）
+    - 腹部 X-ray（滯留胎兒）
+
+treatment:
+  principles:
+    - 積極抗生素
+    - 促進子宮排出
+    - 穩定全身狀態
+    - 嚴重者 OHE
+  general:
+    - IV 輸液穩定
+    - 廣效抗生素（amoxicillin-clavulanate + enrofloxacin）— 依培養結果調整
+    - Prostaglandin F2α（cloprostenol 1-3 μg/kg SC）促進子宮收縮排出
+    - 滯留胎盤或胎兒：手動移除或 OHE
+    - 嚴重敗血症或對藥物無反應：緊急 OHE
+    - 新生仔畜需人工哺乳（母犬病情嚴重或抗生素使用時）
+    - 住院監測直到穩定
+
+prognosis: 子宮炎及時治療預後佳。延遲治療可導致敗血症、DIC 與死亡。OHE 為最確實的治療。繁殖用犬藥物治療需密切監測。未來繁殖力可能受影響。
+
+pubmedQueries:
+  - query: '"metritis" AND (veterinary OR canine OR feline) AND ("postpartum" OR "treatment" OR "diagnosis")'
+    frequency: monthly

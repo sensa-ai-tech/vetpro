@@ -1,0 +1,73 @@
+slug: mercury-toxicosis
+nameEn: Mercury Toxicosis
+nameZh: 汞中毒
+bodySystem: toxicology
+description: 汞 (mercury) 中毒在犬貓中罕見但曾有報告。有機汞（甲基汞）主要影響中樞神經系統，無機汞主要損傷腎臟與消化道。貓食用高汞含量魚類為慢性暴露途徑。汞溫度計破碎為急性暴露的偶見來源。
+
+aliases:
+  - { alias: 水銀中毒, language: zh }
+  - { alias: Mercury Poisoning, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬汞中毒極罕見。可能因攝入含汞物品或受汙染食物。元素汞（溫度計）經口攝入吸收率低。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓長期食用高汞魚類可能慢性蓄積。有機汞引起中樞神經毒性。歷史上著名的「水俣病」即甲基汞經食物鏈造成貓中毒。
+
+etiology:
+  categories:
+    - name: 汞的形態與毒性
+      examples:
+        - 元素汞（液態水銀）— 經口吸收率低
+        - 無機汞鹽 — 腎毒性、消化道腐蝕
+        - 有機汞（甲基汞）— 中樞神經毒性最強
+    - name: 暴露來源
+      examples:
+        - 高汞含量魚類（鮪魚、旗魚）長期食用
+        - 含汞溫度計破碎
+        - 環境汙染
+        - 含汞消毒劑（已少用）
+
+clinicalSigns:
+  early:
+    - 食慾下降
+    - 嗜睡
+    - 無機汞：嘔吐、腹瀉
+  progressive:
+    - 有機汞：共濟失調、視力障礙、行為異常
+    - 無機汞：腎衰竭、口腔潰瘍
+    - 震顫
+    - 癲癇
+    - 感覺障礙
+
+diagnosis:
+  primaryTests:
+    - name: 全血汞濃度
+      notes: 全血汞 >0.5 ppm 有臨床意義。有機汞以全血測量最佳
+    - name: 尿液汞濃度
+      notes: 無機汞暴露以尿液汞最能反映體內負荷
+  additional:
+    - 腎功能（無機汞腎毒性）
+    - 神經學檢查
+    - MRI（有機汞中樞神經病變）
+
+treatment:
+  principles:
+    - 螯合劑治療
+    - 支持療法
+    - 移除暴露來源
+  general:
+    - "Succimer (DMSA) 10 mg/kg PO TID × 10 天"
+    - 無機汞腎損傷需 IV 輸液支持
+    - 消化道去汙染（催吐、全腸灌洗）
+    - 有機汞中樞神經損傷多為不可逆
+    - 飲食更換（避免高汞魚類）
+    - 環境除汞
+
+prognosis: 無機汞急性腎損傷適當治療後可能恢復。有機汞引起的中樞神經損傷多為不可逆，預後較差。慢性低劑量暴露停止後可能部分改善。
+
+pubmedQueries:
+  - query: '"mercury toxicosis" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis")'
+    frequency: monthly

@@ -1,0 +1,76 @@
+slug: psittacine-beak-and-feather-disease
+nameEn: Psittacine Beak and Feather Disease
+nameZh: 鸚鵡喙羽症
+bodySystem: infectious
+description: 鸚鵡喙羽症（PBFD）由鸚鵡圓環病毒（BFDV）引起，為鸚鵡類最重要的病毒性疾病之一。病毒攻擊羽毛濾泡與喙角質層上皮細胞及免疫系統，導致進行性羽毛脫落、喙變形及嚴重免疫抑制。
+
+aliases:
+  - { alias: PBFD, language: zh }
+  - { alias: 鸚鵡圓環病毒感染, language: zh }
+  - { alias: 鸚鵡羽毛與喙病, language: zh }
+  - { alias: PBFD, language: en }
+  - { alias: Beak and feather disease virus, language: en }
+  - { alias: Psittacine circovirus, language: en }
+
+species:
+  - speciesCommon: bird
+    prevalence: common
+    notes: 所有鸚鵡科鳥類均可感染。巴丹鸚鵡、灰鸚鵡、虎皮鸚鵡為高風險群。幼鳥感染後死亡率高。在野生鸚鵡族群中也是重大威脅。
+
+etiology:
+  categories:
+    - name: 病毒性
+      examples:
+        - 喙羽病病毒（BFDV，圓環病毒科）
+        - 經羽屑、糞便、嗉囊分泌物傳播
+        - 環境中極度穩定（可存活數月至數年）
+        - 垂直傳播（母鳥至蛋）
+    - name: 風險因素
+      examples:
+        - 幼齡鳥（免疫系統未成熟）
+        - 緊迫
+        - 免疫抑制
+        - 高密度飼養
+
+clinicalSigns:
+  early:
+    - 新生長羽毛異常（變形、變色）
+    - 羽毛脆弱易斷
+    - 正常換羽後新羽不長
+  progressive:
+    - 進行性對稱性羽毛脫落
+    - 喙變形（過度生長、軟化、裂開）
+    - 爪異常
+    - 繼發性感染（免疫抑制導致）
+    - 體重下降
+    - 反覆感染（細菌、真菌）
+
+diagnosis:
+  primaryTests:
+    - name: PCR 檢測
+      notes: 血液或羽毛 PCR 檢測 BFDV DNA。最靈敏且特異的診斷方法
+    - name: 血液塗片
+      notes: 偶見病毒包涵體在白血球中。同時可見白血球減少
+    - name: 羽毛活檢
+      notes: 組織病理學見羽毛濾泡上皮細胞核內包涵體
+
+treatment:
+  principles:
+    - 無特效抗病毒治療
+    - 支持療法與預防繼發感染
+    - 隔離防止傳播
+    - 免疫支持
+  general:
+    - 繼發感染時給予適當抗生素或抗真菌藥
+    - 營養補充（維生素、礦物質）
+    - 保溫與減少緊迫
+    - 嚴格隔離感染鳥
+    - 環境徹底消毒（病毒極耐環境）
+    - 新鳥入群前 PCR 篩檢
+    - 幼鳥可能自發清除病毒（需追蹤 PCR）
+
+prognosis: 幼鳥急性感染預後不良，死亡率高。慢性型成鳥存活時間較長但生活品質逐漸下降。部分幼鳥可能產生免疫力自發清除病毒（PCR 需連續兩次陰性確認）。嚴重免疫抑制導致的繼發感染為主要死因。
+
+pubmedQueries:
+  - query: '"psittacine beak and feather disease" OR "PBFD" AND (diagnosis OR treatment OR management)'
+    frequency: monthly

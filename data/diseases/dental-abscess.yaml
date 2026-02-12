@@ -1,0 +1,61 @@
+slug: dental-abscess
+nameEn: Dental Abscess
+nameZh: 牙齒膿瘍
+bodySystem: dental
+description: 牙齒根尖周圍的化膿性感染，多因牙齒斷裂暴露齒髓或嚴重牙周病引起。可破潰形成瘻管排膿於面部（上顎齒）或下顎腹側（下顎齒）。
+
+aliases:
+  - { alias: "Periapical Abscess", language: en }
+  - { alias: "Root Abscess", language: en }
+  - { alias: "齒根膿瘍", language: zh }
+  - { alias: "根尖膿瘍", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬常見。第四前臼齒（carnassial tooth）最常見。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓常見。犬齒與臼齒。
+
+etiology:
+  categories:
+    - name: 感染性
+      examples:
+        - 牙齒斷裂暴露齒髓
+        - 嚴重牙周病
+        - 齒髓壞死
+
+clinicalSigns:
+  early:
+    - 面部腫脹（眼下方常見）
+    - 觸診疼痛
+    - 食慾下降
+  progressive:
+    - 瘻管形成排膿
+    - 流涎
+    - 咀嚼困難
+    - 發燒
+
+diagnosis:
+  primaryTests:
+    - name: 口腔 X 光
+      notes: 齒根周圍透亮區（periapical lucency）。確認受影響牙齒
+    - name: 口腔檢查
+      notes: 鎮靜下評估牙齒完整性與牙周狀態
+
+treatment:
+  principles:
+    - 拔除感染牙齒或根管治療
+    - 引流膿液
+  general:
+    - 拔牙（extraction）— 首選
+    - 根管治療（策略性保留牙齒）
+    - 全身性抗生素（Amoxicillin-clavulanate）
+    - 止痛管理
+
+prognosis: 拔牙後預後極佳。根管治療成功率約 85-95%。不治療可能導致骨髓炎或眶周感染。
+
+pubmedQueries:
+  - query: '"dental abscess" AND (veterinary OR canine OR feline) AND ("extraction" OR "treatment")'
+    frequency: monthly

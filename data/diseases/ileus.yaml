@@ -1,0 +1,74 @@
+slug: ileus
+nameEn: Ileus
+nameZh: 腸麻痺
+bodySystem: gastrointestinal
+description: 腸麻痺（functional ileus 或 paralytic ileus）為腸道蠕動功能減少或停止而無機械性阻塞的狀態。犬貓常見於腹部手術後（postoperative ileus, POI）、腹膜炎、嚴重電解質異常或全身性疾病。導致腸腔內容物滯留、腹脹、嘔吐與腸道細菌移位風險增加。
+
+aliases:
+  - { alias: 腸道麻痺, language: zh }
+  - { alias: Paralytic Ileus, language: en }
+  - { alias: Functional Ileus, language: en }
+  - { alias: Postoperative Ileus, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬隻腸麻痺常見於腹部手術後、腹膜炎、嚴重低血鉀。GDV 手術後為高風險。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓隻腸麻痺可見於腹部手術後、腹膜炎、嚴重全身性疾病。
+
+etiology:
+  categories:
+    - name: 術後腸麻痺
+      examples:
+        - 腹部手術後（腸切除、GDV 手術）
+        - 手術中腸道操作
+        - 麻醉藥物影響
+    - name: 全身性原因
+      examples:
+        - 腹膜炎
+        - 嚴重低血鉀
+        - 敗血症
+        - 嚴重疼痛
+        - 藥物（opioids、抗膽鹼藥）
+
+clinicalSigns:
+  early:
+    - 腹脹
+    - 嘔吐
+    - 食慾廢絕
+    - 腸鳴音消失
+  progressive:
+    - 嚴重腹脹
+    - 反覆嘔吐
+    - 脫水與電解質異常
+    - 腸道細菌移位（敗血症風險）
+    - 腹痛
+
+diagnosis:
+  primaryTests:
+    - name: 腹部 X 光
+      notes: 腸道瀰漫性液體與氣體擴張。無機械性阻塞的證據（無固定擴張點）。排除機械性腸阻塞。
+    - name: 腹部超音波
+      notes: 評估腸道蠕動（消失或顯著減少）。排除機械性阻塞。評估腹水。
+
+treatment:
+  principles:
+    - 治療基礎病因
+    - 矯正電解質異常
+    - 促進腸道蠕動
+  general:
+    - 矯正電解質異常（特別是低血鉀）
+    - "促腸蠕動：Metoclopramide 1-2 mg/kg/day CRI"
+    - "Cisapride 0.5-1 mg/kg PO q8h"
+    - 減少或停用 opioids（改用 Butorphanol 或 Buprenorphine）
+    - 胃減壓（nasogastric tube）
+    - 早期腸道營養（經鼻食管管少量餵食）
+    - 治療腹膜炎或感染
+
+prognosis: 術後腸麻痺多為暫時性，通常 24-72 小時內恢復。嚴重低血鉀矯正後蠕動恢復。腹膜炎引起的腸麻痺預後取決於基礎疾病控制。長時間腸麻痺增加細菌移位與敗血症風險。
+
+pubmedQueries:
+  - query: '"ileus" AND (veterinary OR canine OR feline) AND ("postoperative" OR "prokinetic" OR "treatment")'
+    frequency: monthly

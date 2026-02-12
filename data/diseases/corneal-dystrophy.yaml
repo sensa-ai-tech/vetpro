@@ -1,0 +1,63 @@
+slug: corneal-dystrophy
+nameEn: Corneal Dystrophy
+nameZh: 角膜營養不良
+bodySystem: ophthalmology
+description: 先天性遺傳性角膜非炎症性退化疾病，為雙側對稱性病變。依受累層分為上皮型、基質型與內皮型。基質型 (脂質/結晶沉積) 最常見，表現為角膜中央白色至灰色不透明沉積。
+
+aliases:
+  - { alias: Corneal Lipid Dystrophy, language: en }
+  - { alias: Stromal Dystrophy, language: en }
+  - { alias: Endothelial Dystrophy, language: en }
+  - { alias: 角膜退化, language: zh }
+  - { alias: 角膜脂質營養不良, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬常見。Siberian Husky (基質型)、Boston Terrier (內皮型)、Cavalier King Charles Spaniel、Airedale Terrier 好發。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓罕見。Manx 品種有報告。
+
+etiology:
+  categories:
+    - name: 遺傳性
+      examples:
+        - 品種特異性遺傳突變
+        - 脂質或結晶在基質異常沉積
+        - 內皮細胞退化 (內皮型)
+
+clinicalSigns:
+  early:
+    - 角膜中央對稱性白色或灰色混濁
+    - 通常不影響視力 (初期)
+    - 無疼痛
+  progressive:
+    - 混濁範圍擴大
+    - 內皮型：角膜水腫、水泡形成 (bullous keratopathy)
+    - 內皮型可繼發角膜潰瘍
+
+diagnosis:
+  primaryTests:
+    - name: 裂隙燈檢查
+      notes: 評估沉積層位 (上皮/基質/內皮)。基質型為角膜基質內結晶或脂質沉積
+    - name: 角膜厚度測量
+      notes: 內皮型角膜增厚
+    - name: 血脂檢查
+      notes: 排除高脂血症引起的脂質角膜病變
+
+treatment:
+  principles:
+    - 基質型通常不需治療
+    - 內皮型可能需要角膜手術
+  general:
+    - 基質型：定期追蹤，通常不影響視力
+    - 內皮型水泡性角膜病：高滲食鹽水眼藥水 (5% NaCl)
+    - 角膜水泡潰瘍：熱灼術或結膜瓣
+    - 嚴重內皮衰竭：角膜移植
+
+prognosis: 基質型預後良好，多數終生不顯著影響視力。內皮型進行性惡化，最終可能需角膜移植。受影響犬不建議繁殖。
+
+pubmedQueries:
+  - query: '"corneal dystrophy" AND (veterinary OR canine OR feline) AND ("classification" OR "treatment")'
+    frequency: monthly

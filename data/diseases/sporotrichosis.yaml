@@ -1,0 +1,77 @@
+slug: sporotrichosis
+nameEn: Sporotrichosis
+nameZh: 孢子絲菌症
+bodySystem: infectious
+description: 孢子絲菌症 (sporotrichosis) 由 Sporothrix schenckii complex（主要為 S. brasiliensis 及 S. schenckii）引起的深部真菌感染。貓為最重要的臨床宿主，病灶含大量酵母體，傳染性極強，為重要人畜共通傳染病。犬感染較少見且傳染性低。
+
+aliases:
+  - { alias: 孢子絲菌感染, language: zh }
+  - { alias: 玫瑰園丁病, language: zh }
+  - { alias: Sporothrix Infection, language: en }
+  - { alias: Rose Gardener Disease, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬感染較貓少見。多為皮膚淋巴管型 (cutaneous-lymphatic)，經皮膚創傷接觸土壤/植物感染。病灶中酵母體數量少，傳染給人的風險低。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓為孢子絲菌症最重要宿主，尤其在流行區（巴西）。病灶含大量酵母體，直接接觸可傳染人類。S. brasiliensis 在貓間可透過咬傷直接傳播。未絕育公貓風險最高。
+
+etiology:
+  categories:
+    - name: 病原與傳播
+      examples:
+        - Sporothrix schenckii complex（雙型性真菌）
+        - "犬：經皮膚創傷接觸土壤/植物中真菌"
+        - "貓：貓間經咬傷/抓傷直接傳播（S. brasiliensis）"
+        - 貓病灶含大量酵母體，極具傳染性
+    - name: 臨床型態
+      examples:
+        - 皮膚固定型（局限性皮膚病灶）
+        - 皮膚淋巴管型（沿淋巴管擴展的結節串）
+        - 播散型（骨骼、肺、中樞神經系統）
+
+clinicalSigns:
+  early:
+    - 皮膚結節或潰瘍（常見於頭部、四肢）
+    - 傷口不癒合
+    - 淋巴管腫脹
+  progressive:
+    - 多發性潰瘍結節沿淋巴管分佈
+    - 鼻腔潰瘍與排膿
+    - 區域淋巴結腫大
+    - 播散型：骨骼病變、呼吸症狀
+    - 貓可見嚴重面部/鼻部潰瘍
+
+diagnosis:
+  primaryTests:
+    - name: 細胞學（壓印抹片/FNA）
+      notes: 貓病灶中酵母體數量多，PAS 或 GMS 染色可見橢圓形至雪茄形酵母體。犬病灶酵母體少，敏感度低
+    - name: 真菌培養
+      notes: 確定診斷。25°C 培養見菌絲型，37°C 轉化為酵母型。需 1-4 週
+  additional:
+    - 組織病理學（化膿性至肉芽腫性皮膚炎）
+    - 分子鑑定（PCR，確認種別）
+    - 播散型需全身影像學評估
+
+treatment:
+  principles:
+    - Itraconazole 為首選抗真菌藥物
+    - 貓需注意人畜共通風險
+    - 治療需持續至臨床痊癒後至少 1 個月
+    - 嚴格個人防護
+  general:
+    - Itraconazole 5-10 mg/kg PO SID（犬貓均適用）
+    - 貓替代：potassium iodide（飽和碘化鉀溶液，但副作用較多）
+    - 治療至臨床痊癒後繼續 1-2 個月
+    - 典型療程 3-6 個月以上
+    - 嚴格戴手套處理感染貓
+    - 感染貓隔離至痊癒
+    - 播散型預後差，需長期甚至終生治療
+
+prognosis: 皮膚型孢子絲菌症 itraconazole 治療預後良好，治癒率高。貓需較長療程。播散型預後較差。S. brasiliensis 在貓間傳播力強，流行區為重大公衛問題。人類接觸感染貓需特別防護。
+
+pubmedQueries:
+  - query: '"sporotrichosis" AND (veterinary OR feline OR canine) AND ("treatment" OR "zoonosis")'
+    frequency: monthly

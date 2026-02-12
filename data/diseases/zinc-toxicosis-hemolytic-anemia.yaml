@@ -1,0 +1,71 @@
+slug: zinc-toxicosis-hemolytic-anemia
+nameEn: Zinc Toxicosis Hemolytic Anemia
+nameZh: 鋅中毒性溶血性貧血
+bodySystem: toxicology
+description: 鋅中毒性溶血性貧血為動物攝入含鋅異物（如美國硬幣、鋅螺帽、鍍鋅金屬、氧化鋅軟膏）後，鋅在胃酸環境中釋出並吸收，導致紅血球氧化性損傷與溶血。Heinz body 形成與紅血球膜損傷為主要機轉。嚴重者可伴隨急性腎衰竭與肝損傷。
+
+aliases:
+  - { alias: Zinc Penny Toxicosis, language: en }
+  - { alias: 鋅中毒溶血, language: zh }
+  - { alias: Zinc Intoxication, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻因異食癖攝入含鋅硬幣或金屬物品為常見情境。幼犬風險較高。美國 1983 年後的一分錢硬幣含 97.5% 鋅。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻較少攝入金屬異物，但接觸氧化鋅軟膏後舔舐可能導致中毒。
+
+etiology:
+  categories:
+    - name: 鋅來源
+      examples:
+        - 美國一分錢硬幣（1983 年後，含 97.5% 鋅）
+        - 鍍鋅金屬（螺帽、螺栓、鐵絲網）
+        - 氧化鋅軟膏（尿布疹膏、防曬霜）
+        - 鋅營養補充劑
+    - name: 毒理機轉
+      examples:
+        - 鋅離子在胃酸中釋出並經腸胃道吸收
+        - 氧化性損傷紅血球（Heinz body 形成、eccentrocytes）
+        - 直接破壞紅血球膜完整性
+        - 肝臟與腎臟毒性
+
+clinicalSigns:
+  early:
+    - 嘔吐與腹瀉
+    - 食慾下降
+    - 嗜睡
+  progressive:
+    - 黏膜蒼白與黃疸
+    - 深色尿（血紅素尿或膽紅素尿）
+    - 嚴重溶血性貧血
+    - 急性腎衰竭
+    - 肝損傷
+
+diagnosis:
+  primaryTests:
+    - name: 腹部 X 光
+      notes: 可見胃內或腸道內金屬密度異物。美國硬幣在 X 光上清晰可見。鍍鋅小物件可能較不明顯。
+    - name: 血清鋅濃度
+      notes: "升高（正常犬 0.7-2.0 ppm）。結合溶血性貧血與異物攝入病史。血液抹片可見 Heinz bodies 與 eccentrocytes。"
+
+treatment:
+  principles:
+    - 緊急移除含鋅異物
+    - 支持性治療溶血與器官損傷
+    - 輸血維持氧氣輸送
+  general:
+    - 內視鏡或手術移除胃內含鋅異物（最重要步驟）
+    - "輸血：pRBC 10-20 mL/kg（嚴重貧血時）"
+    - 靜脈輸液維持腎臟灌流
+    - 電解質監測與矯正
+    - 肝腎功能監測
+    - 螯合劑（CaEDTA）可考慮但效果不確定
+
+prognosis: 及時移除含鋅異物後預後良好，溶血通常在異物移除後 24-48 小時內開始改善。延遲移除導致嚴重腎衰竭或肝壞死者預後不良。嚴重溶血導致 DIC 者死亡率高。多數病例在適當支持治療下可完全恢復。
+
+pubmedQueries:
+  - query: '"zinc toxicosis" AND (veterinary OR canine OR feline) AND ("hemolytic anemia" OR "treatment")'
+    frequency: monthly

@@ -1,0 +1,82 @@
+slug: pneumoperitoneum
+nameEn: Pneumoperitoneum
+nameZh: 氣腹
+bodySystem: emergency
+description: 氣腹 (pneumoperitoneum) 為腹腔內存在游離氣體的狀態。最重要的原因為消化道穿孔（胃腸道破裂），為外科急症。其他原因包括腹腔手術後、穿透性腹部傷口與產氣細菌感染。腹部 X-ray 見游離氣體為經典發現。
+
+aliases:
+  - { alias: 腹腔積氣, language: zh }
+  - { alias: Free Abdominal Air, language: en }
+  - { alias: Free Peritoneal Gas, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬氣腹原因：消化道異物穿孔、胃腸道潰瘍穿孔、腹部手術後（48-72 小時內正常）、穿透性外傷。非手術後氣腹需高度懷疑消化道穿孔。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓氣腹較犬少見。線狀異物引起腸穿孔為貓特有原因。
+
+etiology:
+  categories:
+    - name: 消化道穿孔（最重要原因）
+      examples:
+        - 異物穿孔（骨頭、針、木棒）
+        - 胃腸道潰瘍穿孔（NSAIDs、腫瘤）
+        - 腸壞死穿孔（腸套疊、腸扭轉、缺血）
+        - 線狀異物（貓 — 腸繫膜側多發穿孔）
+    - name: 非消化道穿孔原因
+      examples:
+        - 腹腔手術後（48-72 小時內正常殘留）
+        - 穿透性腹部傷口
+        - 腹腔穿刺後
+        - 產氣細菌腹膜炎
+
+clinicalSigns:
+  early:
+    - 腹痛
+    - 嘔吐
+    - 厭食
+  progressive:
+    - 腹部膨脹
+    - 腹部板狀僵硬（腹膜炎）
+    - 發燒或低體溫
+    - 敗血症（心搏過速、低血壓、發紺）
+    - 休克
+
+diagnosis:
+  primaryTests:
+    - name: 腹部 X-ray
+      notes: 右側臥位見肝臟與膈肌間游離氣體。站立位見膈肌下游離氣體（氣液面）
+    - name: 臨床評估
+      notes: 非手術後患畜見氣腹 = 消化道穿孔直到排除
+  additional:
+    - AFAST 超音波（腹腔游離液體）
+    - 腹腔穿刺液分析（細菌、食物顆粒）
+    - CBC、生化
+    - 乳酸
+    - 腹腔液培養
+
+treatment:
+  principles:
+    - 消化道穿孔為外科急症
+    - 穩定後緊急手術探查
+    - 腹膜炎管理
+    - 廣效抗生素
+  general:
+    - IV 輸液穩定
+    - 廣效 IV 抗生素（ampicillin + enrofloxacin + metronidazole）
+    - 止痛
+    - 緊急剖腹探查
+    - 穿孔修補或腸段切除
+    - 腹腔大量沖洗
+    - 腹腔引流
+    - 術後禁食 24-48 小時
+    - 術後持續 IV 抗生素
+    - 監測敗血症征象
+
+prognosis: 消化道穿孔引起氣腹需緊急手術，存活率約 50-80%（視穿孔時間與腹膜炎嚴重度）。手術後 48-72 小時內的氣腹為正常。敗血性腹膜炎致死率約 30-50%。早期手術介入改善預後。
+
+pubmedQueries:
+  - query: '"pneumoperitoneum" AND (veterinary OR canine OR feline) AND ("treatment" OR "gastrointestinal perforation" OR "surgery")'
+    frequency: monthly

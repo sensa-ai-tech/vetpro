@@ -1,0 +1,69 @@
+slug: hemothorax
+nameEn: Hemothorax
+nameZh: 血胸
+bodySystem: respiratory
+description: 血胸為胸腔內血液積聚，可由創傷、凝血障礙、腫瘤破裂或醫源性原因導致。創傷性血胸在犬隻最常見（交通事故、咬傷）。大量血胸可導致低血容量休克與呼吸衰竭。需迅速鑑別與處理。
+
+aliases:
+  - { alias: 胸腔積血, language: zh }
+  - { alias: Thoracic Hemorrhage, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻血胸以創傷性最常見。抗凝血劑中毒、肺腫瘤破裂亦為重要原因。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻血胸可因高處墜落創傷、凝血障礙或腫瘤引起。
+
+etiology:
+  categories:
+    - name: 創傷性
+      examples:
+        - 胸部鈍傷（交通事故）
+        - 穿透性胸部傷（咬傷、銳器傷）
+        - 肋骨骨折刺破肋間動脈或肺實質
+    - name: 非創傷性
+      examples:
+        - 抗凝血劑中毒（殺鼠劑）
+        - 肺或胸腔腫瘤破裂（hemangiosarcoma）
+        - 凝血因子缺乏（von Willebrand disease、hemophilia）
+        - 肺動脈高壓伴血管破裂
+
+clinicalSigns:
+  early:
+    - 呼吸急促
+    - 心搏過速
+    - 黏膜蒼白
+  progressive:
+    - 呼吸困難
+    - 肺音減弱（胸腔積液側）
+    - 低血壓
+    - 休克徵象（四肢冰冷、CRT 延長）
+    - 虛脫
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔穿刺（Thoracocentesis）
+      notes: 抽取血性胸水確診。PCV 接近周邊血液 PCV 提示活動性出血。不凝固的血液提示已經在胸腔內一段時間。
+    - name: 胸腔 X 光/超音波
+      notes: 胸腔積液（TFAST 超音波可快速偵測）。X 光在引流後評估肺實質與胸壁損傷。
+
+treatment:
+  principles:
+    - 穩定血流動力學為首要
+    - 胸腔穿刺引流恢復呼吸功能
+    - 治療出血原因
+  general:
+    - 胸腔穿刺引流（thoracocentesis）
+    - 靜脈輸液與血漿擴張劑穩定循環
+    - "輸血：pRBC（PCV <20%）± FFP（凝血障礙時）"
+    - "抗凝血劑中毒：Vitamin K1 2.5-5 mg/kg PO/SC q12h"
+    - 持續出血：探查性開胸手術（exploratory thoracotomy）
+    - 自體血液回輸（autotransfusion）可作為緊急措施
+
+prognosis: 預後取決於出血原因與嚴重程度。創傷性血胸在適當支持治療下預後中等至良好。抗凝血劑中毒在及時 Vitamin K1 治療下預後良好。腫瘤破裂引起的血胸預後不良。大量失血導致休克者需積極復甦。
+
+pubmedQueries:
+  - query: '"hemothorax" AND (veterinary OR canine OR feline) AND ("trauma" OR "treatment")'
+    frequency: monthly

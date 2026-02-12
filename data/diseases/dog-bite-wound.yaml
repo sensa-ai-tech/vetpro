@@ -1,0 +1,78 @@
+slug: dog-bite-wound
+nameEn: Dog Bite Wound
+nameZh: 犬咬傷
+bodySystem: emergency
+description: 犬咬傷為犬之間或犬對貓的咬合傷害，損傷程度遠超皮膚表面所見。犬的咬合力可達 150-450 psi，造成深部組織撕裂、壓碎損傷與死腔形成。皮膚穿刺點小但皮下損傷廣泛（冰山效應）。大型犬攻擊小型犬或貓可致命。
+
+aliases:
+  - { alias: 動物咬傷, language: zh }
+  - { alias: Dog Attack, language: en }
+  - { alias: Bite Wound, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬咬傷為最常見的急診外傷之一。大犬咬小犬（BDLD — big dog little dog）為嚴重型態。胸腹部穿透性咬傷可致命（氣胸、腹腔臟器損傷）。感染率約 10-15%。
+
+etiology:
+  categories:
+    - name: 損傷機制
+      examples:
+        - 穿刺傷（犬齒）
+        - 撕裂傷（搖擺甩動）
+        - 壓碎傷（臼齒咬合力）
+        - 死腔形成（皮膚與深部組織分離）
+    - name: 損傷特點
+      examples:
+        - 皮膚穿刺點小但深部損傷廣泛（冰山效應）
+        - 胸壁穿透→氣胸
+        - 腹壁穿透→腹腔臟器損傷
+        - 皮膚撕脫 (degloving injury)
+
+clinicalSigns:
+  early:
+    - 皮膚穿刺傷（可能看似輕微）
+    - 出血
+    - 疼痛
+    - 腫脹
+  progressive:
+    - 皮下廣泛損傷顯現
+    - 軟組織壞死
+    - 膿瘍形成（24-48 小時）
+    - 敗血症（穿透性胸腹腔傷口）
+    - 休克（嚴重咬傷）
+
+diagnosis:
+  primaryTests:
+    - name: 傷口探查
+      notes: 鎮靜/麻醉下完整探查（剃毛擴大視野）。評估深度、死腔、穿透性
+    - name: 系統性評估
+      notes: 胸腹部穿透排除（胸部 X-ray、AFAST）
+  additional:
+    - CBC、生化（嚴重咬傷）
+    - 傷口培養（感染跡象時）
+    - 胸部 X-ray（胸壁附近傷口必做）
+
+treatment:
+  principles:
+    - 傷口探查與清創
+    - 開放式傷口管理（多數不一期縫合）
+    - 抗生素
+    - 引流
+  general:
+    - 鎮靜/麻醉下傷口完整探查
+    - 大量生理食鹽水沖洗（壓力沖洗 7 psi）
+    - 清除壞死組織
+    - 建立引流（Penrose drain 或 active drain）
+    - 多數傷口延遲閉合（3-5 天後二期縫合）
+    - 嚴重撕裂傷可能需皮瓣修復
+    - 抗生素：amoxicillin-clavulanate（經驗性）
+    - 穿透性胸腔傷口：胸管 + 可能開胸探查
+    - 穿透性腹腔傷口：剖腹探查
+    - 止痛
+
+prognosis: 小型犬被大型犬咬傷致死率約 10-25%。非穿透性咬傷經適當清創與管理預後佳。穿透性胸腹腔咬傷需緊急手術。傷口感染在適當處理下可控制。皮膚撕脫傷需較長恢復期。
+
+pubmedQueries:
+  - query: '"dog bite" AND (veterinary OR canine) AND ("treatment" OR "wound management" OR "emergency")'
+    frequency: monthly

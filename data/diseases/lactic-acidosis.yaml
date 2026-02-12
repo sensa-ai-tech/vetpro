@@ -1,0 +1,73 @@
+slug: lactic-acidosis
+nameEn: Lactic Acidosis
+nameZh: 乳酸性酸中毒
+bodySystem: metabolic
+description: 血液乳酸濃度異常升高（>2.5 mmol/L）導致的代謝性酸中毒。乳酸為無氧代謝的產物，其升高反映組織灌流不足或氧氣利用障礙，為休克嚴重程度及預後的重要指標。
+
+aliases:
+  - { alias: 高乳酸血症, language: zh }
+  - { alias: 乳酸酸中毒, language: zh }
+  - { alias: Hyperlactatemia, language: en }
+  - { alias: Lactic Acidaemia, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬乳酸升高最常見於休克（出血性、敗血性）、GDV 及嚴重外傷。入院乳酸值為犬急診預後的獨立預測因子。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓乳酸升高常見於心因性休克、尿道阻塞及敗血症。貓正常乳酸值較犬略高。
+
+etiology:
+  categories:
+    - name: A 型（組織灌流不足，最常見）
+      examples:
+        - 低灌流性休克（出血、心因性、分布性）
+        - 嚴重貧血
+        - 心搏停止/心肺復甦中
+    - name: B 型（非灌流不足）
+      examples:
+        - 敗血症（粒線體功能障礙）
+        - 腫瘤（副腫瘤症候群、大腫瘤無氧代謝）
+        - 藥物/毒物（乙二醇、Metformin）
+        - 肝衰竭（乳酸清除下降）
+
+clinicalSigns:
+  early:
+    - 心搏過速
+    - 呼吸急促（Kussmaul 呼吸代償）
+    - 黏膜蒼白或充血
+    - CRT 異常
+  progressive:
+    - 低血壓
+    - 意識抑制
+    - 低體溫
+    - 多器官功能障礙
+    - 無尿
+
+diagnosis:
+  primaryTests:
+    - name: 血液乳酸
+      notes: 正常犬 <2.5 mmol/L，貓 <2.5-3.0 mmol/L。>4 mmol/L 為顯著升高。>6 mmol/L 為嚴重。手持式乳酸儀可快速床邊檢測。
+    - name: 血氣分析
+      notes: 代謝性酸中毒（pH 下降、HCO3- 降低）。陰離子間隙升高型代謝性酸中毒。
+
+treatment:
+  principles:
+    - 恢復組織灌流為根本治療（補液、升壓劑）
+    - 治療基礎病因
+    - 碳酸氫鈉僅在 pH <7.1 時考慮（爭議性）
+    - 連續監測乳酸清除率評估治療反應
+  general:
+    - 積極靜脈輸液復甦（晶體液 bolus）
+    - 必要時升壓劑（Norepinephrine、Dopamine）
+    - 治療基礎病因（手術、抗生素等）
+    - 氧氣支持
+    - 嚴重貧血需輸血
+    - 每 2-4 小時追蹤乳酸值（乳酸清除率 >50%/6hr 為良好指標）
+
+prognosis: 乳酸值為急重症預後的強力預測因子。入院乳酸 <2.5 mmol/L 預後較佳。6 小時內乳酸清除率 >50% 存活率顯著提高。持續性高乳酸或乳酸再升高預後不良。GDV 犬入院乳酸 >6 mmol/L 死亡率明顯增加。
+
+pubmedQueries:
+  - query: '"Lactic Acidosis" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

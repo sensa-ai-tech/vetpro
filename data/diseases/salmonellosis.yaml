@@ -1,0 +1,69 @@
+slug: salmonellosis
+nameEn: Salmonellosis
+nameZh: 沙門氏菌感染
+bodySystem: gastrointestinal
+description: 沙門氏菌感染為 Salmonella spp. 引起的腸胃道與全身性感染。犬貓可為無症狀帶菌者或發展為急性腸胃炎、敗血症。人畜共通傳染病，對免疫抑制動物與人類有公共衛生意義。生食飲食（raw diet）為近年重要感染來源。
+
+aliases:
+  - { alias: 沙門桿菌感染, language: zh }
+  - { alias: Salmonella Infection, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻沙門氏菌帶菌率約 1-30%（取決於環境與飲食）。臨床感染多見於幼犬、免疫抑制犬或生食飲食犬。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻帶菌率類似犬隻。獵食鳥類與齧齒類的貓風險較高。
+
+etiology:
+  categories:
+    - name: 病原體
+      examples:
+        - Salmonella enterica（多種血清型）
+        - S. Typhimurium 為犬貓最常見血清型
+        - 糞口途徑傳播
+    - name: 風險因素
+      examples:
+        - 生食飲食（raw meat diet）
+        - 免疫抑制（化療、糖皮質素使用）
+        - 幼齡或老齡動物
+        - 收容所環境
+
+clinicalSigns:
+  early:
+    - 急性腹瀉（水樣至黏液血性）
+    - 嘔吐
+    - 發燒
+    - 食慾下降
+  progressive:
+    - 嚴重出血性腹瀉
+    - 脫水
+    - 敗血症（免疫抑制者）
+    - 流產（懷孕動物）
+    - 慢性帶菌狀態
+
+diagnosis:
+  primaryTests:
+    - name: 糞便培養
+      notes: 確診金標準。Salmonella 特殊培養基（XLD、SS agar）。陽性結果需進行血清型鑑定與藥敏試驗。
+    - name: 糞便 PCR
+      notes: 較培養更快速。敏感度高。但不提供藥敏資訊。
+
+treatment:
+  principles:
+    - 無症狀帶菌者通常不建議使用抗生素（可能延長排菌期）
+    - 臨床感染以支持性治療為主
+    - 敗血症需廣效抗生素
+  general:
+    - 無併發症腸胃炎：支持性治療（輸液、止吐）
+    - "敗血症：Enrofloxacin 5 mg/kg IV q24h 或 TMP-Sulfa"
+    - 依藥敏結果調整抗生素
+    - 人畜共通傳染病衛教（手部衛生、避免免疫抑制者接觸）
+    - 停止生食飲食
+
+prognosis: 免疫正常動物的沙門氏菌腸胃炎通常為自限性，預後良好。敗血症型預後較差，需積極治療。慢性帶菌狀態可能持續數週至數月。公共衛生教育很重要。
+
+pubmedQueries:
+  - query: '"salmonellosis" AND (veterinary OR canine OR feline) AND ("raw diet" OR "treatment" OR "zoonotic")'
+    frequency: monthly

@@ -1,0 +1,72 @@
+slug: vitamin-k-deficiency
+nameEn: Vitamin K Deficiency
+nameZh: 維生素 K 缺乏症
+bodySystem: metabolic
+description: 維生素 K 為肝臟合成凝血因子 II、VII、IX、X 所必需的輔因子，缺乏導致凝血功能障礙。最常見原因為抗凝血劑（老鼠藥）中毒拮抗維生素 K 作用，其他原因包括膽道阻塞、嚴重肝病或長期抗生素使用。
+
+aliases:
+  - { alias: 維生素K缺乏, language: zh }
+  - { alias: 凝血因子合成障礙, language: zh }
+  - { alias: Hypovitaminosis K, language: en }
+  - { alias: Vitamin K Dependent Coagulopathy, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬最常見原因為抗凝血劑（rodenticide）中毒。膽道阻塞或嚴重肝病亦可導致。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓可見於抗凝血劑中毒或嚴重肝病（肝臟脂肪變性）。貓肝臟維生素 K 儲存量較犬少。
+
+etiology:
+  categories:
+    - name: 維生素 K 拮抗
+      examples:
+        - 抗凝血劑中毒（第二代長效老鼠藥如 brodifacoum）
+    - name: 吸收障礙
+      examples:
+        - 膽道阻塞（膽汁為脂溶性維生素吸收所必需）
+        - 腸道吸收不良
+    - name: 合成/利用障礙
+      examples:
+        - 嚴重肝臟疾病
+        - 長期廣效抗生素（抑制腸道菌群合成維生素 K）
+
+clinicalSigns:
+  early:
+    - 輕微出血傾向（刷牙出血、注射部位瘀血）
+    - 嗜睡
+    - 食慾下降
+  progressive:
+    - 皮下出血或瘀斑
+    - 鼻出血
+    - 血尿、血便
+    - 胸腔或腹腔出血
+    - 呼吸困難（血胸）
+    - 急性失血性休克
+
+diagnosis:
+  primaryTests:
+    - name: 凝血功能檢查
+      notes: PT 延長最先出現（因子 VII 半衰期最短）。aPTT 亦延長。PIVKA（proteins induced by vitamin K absence）較敏感。
+    - name: 中毒病史
+      notes: 詢問老鼠藥接觸史。第二代抗凝血劑效果可持續數週至數月。
+
+treatment:
+  principles:
+    - 維生素 K1 為特異性解毒劑
+    - 急性出血需同時輸注新鮮冷凍血漿
+    - 長效抗凝血劑中毒需長期維生素 K1 治療
+    - 不可使用維生素 K3（對犬貓有毒性）
+  general:
+    - 維生素 K1（Phytonadione）2.5-5 mg/kg SC 首劑（不可 IV！可致過敏性休克）
+    - 後續 1.25-2.5 mg/kg PO BID，持續 4-6 週（長效老鼠藥）
+    - 急性出血：新鮮冷凍血漿或全血輸注
+    - 停藥後 48-72 小時追蹤 PT 確認不復發
+    - 膽道阻塞需外科解除
+
+prognosis: 抗凝血劑中毒若在致命性出血前診斷並開始維生素 K1 治療，預後良好。已發生嚴重內出血（如心包膜積血、腦出血）預後不良。嚴重肝病導致的維生素 K 缺乏預後取決於肝功能恢復程度。
+
+pubmedQueries:
+  - query: '"Vitamin K Deficiency" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

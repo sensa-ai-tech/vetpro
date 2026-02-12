@@ -1,0 +1,81 @@
+slug: tetanus-infectious
+nameEn: Tetanus Infectious
+nameZh: 破傷風
+bodySystem: infectious
+description: 破傷風由破傷風梭狀芽孢桿菌 (Clostridium tetani) 產生的神經毒素 (tetanospasmin) 引起。毒素經逆行軸突運輸至中樞神經系統，阻斷抑制性神經傳導物質釋放，導致肌肉強直痙攣。犬偶發，貓極罕見（天然抗性較強）。
+
+aliases:
+  - { alias: 破傷風感染, language: zh }
+  - { alias: 強直痙攣症, language: zh }
+  - { alias: Tetanus, language: en }
+  - { alias: Lockjaw, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬破傷風偶發，通常有穿刺傷或手術傷口史。犬對破傷風毒素的敏感度介於馬（最敏感）與貓（最不敏感）之間。局部型預後較全身型好。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓對破傷風毒素天然抗性極強（約為犬的 7,200 倍），臨床病例極罕見。一旦發病，局部型較常見。
+
+etiology:
+  categories:
+    - name: 病原與毒素
+      examples:
+        - Clostridium tetani（革蘭氏陽性厭氧產孢桿菌）
+        - 芽孢在土壤中可存活數年
+        - 傷口厭氧環境中萌發並產生 tetanospasmin
+        - 毒素經神經軸突逆行至脊髓與腦幹
+    - name: 致病機制
+      examples:
+        - Tetanospasmin 阻斷突觸前抑制性神經傳導物質 (GABA、glycine) 釋放
+        - 導致 alpha 運動神經元持續興奮
+        - 肌肉強直痙攣
+        - 自主神經功能障礙
+
+clinicalSigns:
+  early:
+    - 受傷肢體僵硬（局部型）
+    - 步態僵硬（木馬步態）
+    - 顏面肌肉痙攣（牙關緊閉、耳朵豎直）
+    - 皺眉（額肌痙攣）
+  progressive:
+    - 全身肌肉強直（角弓反張 opisthotonus）
+    - 吞嚥困難
+    - 對聲音與觸覺刺激過度反應
+    - 呼吸肌痙攣導致呼吸困難
+    - 自主神經功能障礙（心律不整、血壓波動）
+    - 尿滯留
+
+diagnosis:
+  primaryTests:
+    - name: 臨床診斷
+      notes: 典型臨床表現（肌肉強直、牙關緊閉、角弓反張）加上傷口史通常足以臨床診斷
+    - name: 傷口培養
+      notes: 傷口厭氧培養可分離 C. tetani，但敏感度低（培養陰性不排除診斷）
+  additional:
+    - 血清毒素檢測（研究用途，臨床不實用）
+    - 排除其他痙攣原因（strychnine 中毒、腦膜炎）
+    - CBC 與生化（通常正常）
+
+treatment:
+  principles:
+    - 中和未結合毒素
+    - 清除病原（傷口處理 + 抗生素）
+    - 控制肌肉痙攣
+    - 重症照護支持
+  general:
+    - 破傷風抗毒素 (TAT) 100-1000 IU/kg IV/IM（需先皮試）
+    - 傷口清創與引流
+    - Metronidazole 10-15 mg/kg IV/PO BID × 10 天（首選抗生素）
+    - 肌肉鬆弛劑：diazepam 0.5-2 mg/kg IV PRN 或 methocarbamol
+    - 減少環境刺激（暗室、安靜、最少處理）
+    - 營養支持（管飼）
+    - 導尿（尿滯留時）
+    - 嚴重者可能需機械通氣
+
+prognosis: 犬破傷風局部型預後良好（存活率 >90%）。全身型預後視嚴重程度而定，輕至中度存活率 50-90%，需機械通氣者預後差。恢復期可能需 3-4 週以上。貓因極罕見，數據有限但局部型預後尚可。
+
+pubmedQueries:
+  - query: '"tetanus" AND (canine OR veterinary) AND ("treatment" OR "management")'
+    frequency: monthly

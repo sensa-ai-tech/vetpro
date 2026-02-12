@@ -1,0 +1,59 @@
+slug: zinc-responsive-dermatosis
+nameEn: Zinc Responsive Dermatosis
+nameZh: 鋅反應性皮膚病
+bodySystem: dermatology
+description: 因鋅缺乏或鋅代謝異常引起的皮膚病。分為兩型：第一型見於 Siberian Husky 與 Alaskan Malamute（鋅吸收遺傳缺陷），第二型見於快速生長幼犬（飲食鋅不足）。
+
+aliases:
+  - { alias: "Zinc Deficiency Dermatosis", language: en }
+  - { alias: "鋅缺乏性皮膚病", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 第一型：Siberian Husky、Alaskan Malamute。第二型：快速生長大型犬幼犬。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓罕見。
+
+etiology:
+  categories:
+    - name: 鋅代謝異常
+      examples:
+        - 遺傳性鋅吸收不良（第一型）
+        - 飲食鋅不足或植酸過高影響吸收（第二型）
+
+clinicalSigns:
+  early:
+    - 眼周、口周皮膚結痂
+    - 耳翼結痂
+    - 足墊角化過度
+  progressive:
+    - 厚痂皮
+    - 脫毛
+    - 繼發感染
+
+diagnosis:
+  primaryTests:
+    - name: 臨床表現 + 品種
+      notes: 特徵性分布（眼周、口周、耳翼、足墊）
+    - name: 皮膚活檢
+      notes: 表皮角化不全（parakeratosis）
+    - name: 血清鋅濃度
+      notes: 可能正常或偏低
+
+treatment:
+  principles:
+    - 終生鋅補充（第一型）
+    - 飲食調整（第二型）
+  general:
+    - 口服鋅補充劑（Zinc sulfate 或 Zinc methionine）
+    - 第一型需終生補充
+    - 第二型調整飲食後多可痊癒
+    - 嚴重時短期類固醇輔助
+
+prognosis: 第一型終生需鋅補充，控制良好預後佳。第二型飲食矯正後預後極佳。
+
+pubmedQueries:
+  - query: '"zinc responsive dermatosis" AND (veterinary OR canine) AND ("treatment" OR "Siberian Husky")'
+    frequency: monthly

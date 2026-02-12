@@ -1,0 +1,60 @@
+slug: rabbit-vhd
+nameEn: Rabbit VHD
+nameZh: 兔病毒性出血症
+bodySystem: infectious
+description: 由兔出血症病毒（RHDV/RHDV2）引起的急性高致死率傳染病，主要影響成兔。病毒攻擊肝臟導致爆發性肝壞死、瀰漫性血管內凝血及多器官出血，病程極短，常在出現症狀後 12-36 小時內死亡。
+
+aliases:
+  - { alias: "兔病毒性出血症", language: zh }
+  - { alias: "Rabbit VHD", language: en }
+
+species:
+  - speciesCommon: rabbit
+    prevalence: uncommon
+    notes: 兔可受此疾病影響。
+
+etiology:
+  categories:
+    - name: 病毒性
+      examples:
+        - 兔出血症病毒 RHDV（經典型）
+        - RHDV2（新型，可感染幼兔及野兔）
+        - 高度傳染性（直接/間接接觸、媒介昆蟲）
+
+clinicalSigns:
+  early:
+    - 突然厭食
+    - 嗜睡
+    - 發燒
+  progressive:
+    - 鼻出血
+    - 血尿/血便
+    - 黃疸
+    - 癲癇
+    - 猝死（超急性可無前驅症狀）
+
+diagnosis:
+  primaryTests:
+    - name: 屍體剖檢
+      notes: 肝臟腫大、壞死斑。脾臟腫大充血。多器官出血。
+    - name: PCR 確診
+      notes: 肝臟組織 RT-PCR 檢測 RHDV RNA。血清學 ELISA 可偵測抗體。
+
+treatment:
+  principles:
+    - 疫苗接種預防為最重要策略
+    - 無特效治療
+    - 隔離感染兔及消毒環境
+    - 支持性治療（存活者罕見）
+  general:
+    - 疫苗接種（RHDV1 + RHDV2 雙價疫苗）
+    - 感染兔支持性治療（輸液、保暖）
+    - 環境徹底消毒（漂白水有效）
+    - 隔離新進兔至少 2 週
+    - 蚊蟲/蒼蠅控制
+
+prognosis: 超急性或急性感染死亡率 70-90%。少數存活者可發展為慢性帶原者。預防接種為最有效控制手段，RHDV2 疫苗已在多國上市。
+
+pubmedQueries:
+  - query: '"Rabbit VHD" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
+    frequency: monthly

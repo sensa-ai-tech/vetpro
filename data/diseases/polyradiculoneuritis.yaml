@@ -1,0 +1,68 @@
+slug: polyradiculoneuritis
+nameEn: Polyradiculoneuritis
+nameZh: 多發性神經根神經炎
+bodySystem: neurology
+description: 周邊神經根與神經的急性免疫媒介性發炎疾病，類似人類的 Guillain-Barré 症候群。臨床表現為急性進行性下運動神經元型四肢癱瘓，從後肢開始向前肢蔓延，嚴重時可影響呼吸肌。
+
+aliases:
+  - { alias: Acute Idiopathic Polyradiculoneuritis, language: en }
+  - { alias: AIP, language: en }
+  - { alias: Guillain-Barré-like Syndrome, language: en }
+  - { alias: 急性多發性神經根炎, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬較常見。接觸浣熊唾液後可發生 (coonhound paralysis)，也常為特發性。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓極罕見，偶有報告。
+
+etiology:
+  categories:
+    - name: 免疫媒介性
+      examples:
+        - 特發性 (最常見)
+        - 浣熊唾液接觸後 (coonhound paralysis)
+        - 疫苗接種後 (罕見)
+    - name: 感染後觸發
+      examples:
+        - 上呼吸道感染後
+        - 腸胃炎後
+
+clinicalSigns:
+  early:
+    - 後肢無力/不穩 (最先出現)
+    - 步態異常 (短步態)
+    - 脊髓反射減弱
+  progressive:
+    - 上行性四肢癱瘓 (ascending paralysis)
+    - 全身肌張力降低
+    - 發聲改變 (喉返神經受累)
+    - 呼吸困難 (呼吸肌受累，危及生命)
+
+diagnosis:
+  primaryTests:
+    - name: 神經學檢查
+      notes: 典型下運動神經元 (LMN) 徵象：四肢反射減弱或消失、肌張力降低。深層痛覺通常保留
+    - name: 肌電圖 (EMG) / 神經傳導速度
+      notes: 去神經電位、傳導速度減慢。受傷 5-7 天後出現
+    - name: 腦脊液分析
+      notes: 蛋白質升高但細胞數正常 (albuminocytologic dissociation)
+
+treatment:
+  principles:
+    - 主要為支持性照護
+    - 監測呼吸功能
+    - 預防併發症 (褥瘡、尿路感染)
+  general:
+    - 柔軟床墊定時翻身 (每 4 小時)
+    - 物理治療維持關節活動度
+    - 呼吸肌受累需氧氣支持或機械通氣
+    - 免疫抑制治療效果未經證實但部分醫師嘗試使用
+
+prognosis: 多數犬在 3-6 週開始恢復，完全恢復需 2-6 個月。呼吸衰竭為主要死亡原因。保留深層痛覺者預後較佳。復發可能但不常見。
+
+pubmedQueries:
+  - query: '"polyradiculoneuritis" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

@@ -1,0 +1,69 @@
+slug: multiple-myeloma
+nameEn: Multiple Myeloma
+nameZh: 多發性骨髓瘤
+bodySystem: hematology
+description: 多發性骨髓瘤為漿細胞（plasma cell）的惡性腫瘤，特徵為骨髓中漿細胞異常增殖、單克隆免疫球蛋白（M protein）過量分泌、溶骨性病變與高鈣血症。診斷需滿足經典四項中的至少兩項：骨髓漿細胞增生、M protein、溶骨性病變、Bence Jones 蛋白尿。
+
+aliases:
+  - { alias: MM, language: en }
+  - { alias: 骨髓瘤, language: zh }
+  - { alias: Plasma Cell Myeloma, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻第二常見的造血系統腫瘤（次於淋巴瘤）。中老年犬好發（8-10 歲）。German Shepherd 有較高報告率。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻多發性骨髓瘤罕見。
+
+etiology:
+  categories:
+    - name: 腫瘤特性
+      examples:
+        - 漿細胞單克隆惡性增殖
+        - 分泌單克隆免疫球蛋白（IgA 或 IgG 最常見）
+        - 骨髓浸潤與溶骨性破壞
+    - name: 併發症機轉
+      examples:
+        - 高鈣血症（溶骨性破壞、副腫瘤因子）
+        - 高黏稠度症候群（M protein 過量）
+        - 腎損傷（輕鏈沉積、高鈣血症）
+        - 免疫缺陷（正常免疫球蛋白受抑制）
+
+clinicalSigns:
+  early:
+    - 嗜睡與活動力下降
+    - 食慾下降
+    - 跛行或骨痛
+  progressive:
+    - 溶骨性骨折（病理性骨折）
+    - 高鈣血症症狀（多尿多渴、嘔吐、嗜睡）
+    - 高黏稠度症候群（視力異常、神經症狀、出血傾向）
+    - 反覆感染
+    - 腎衰竭
+
+diagnosis:
+  primaryTests:
+    - name: 血清蛋白電泳（SPE）
+      notes: 確認 M protein（單克隆免疫球蛋白尖峰）。高球蛋白血症。免疫固定電泳（IFE）確認免疫球蛋白類型。
+    - name: 骨髓穿刺
+      notes: 漿細胞佔骨髓有核細胞 >20%（部分文獻 >10%）。漿細胞形態可能不成熟或異型。
+
+treatment:
+  principles:
+    - 化療為主要治療方式
+    - 治療高鈣血症與高黏稠度
+    - 支持性治療骨骼病變
+  general:
+    - "Melphalan 0.1 mg/kg PO q24h × 10 天後 0.05 mg/kg PO q24h + Prednisolone 0.5-1 mg/kg/day"
+    - "高鈣血症：靜脈輸液 + Furosemide + Prednisolone + Bisphosphonate（Pamidronate 1-2 mg/kg IV）"
+    - "高黏稠度症候群：Plasmapheresis（血漿置換，急性期）"
+    - 止痛治療（骨骼疼痛）
+    - 病理性骨折處理
+
+prognosis: 犬隻多發性骨髓瘤對 Melphalan + Prednisolone 反應率約 75-90%。中位存活時間約 18-24 個月。高鈣血症、腎衰竭或高黏稠度症候群為不良預後因素。溶骨性病變多處者預後較差。
+
+pubmedQueries:
+  - query: '"multiple myeloma" AND (veterinary OR canine OR feline) AND ("melphalan" OR "treatment" OR "prognosis")'
+    frequency: monthly

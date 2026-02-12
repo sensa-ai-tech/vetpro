@@ -1,0 +1,77 @@
+slug: avian-aspergillosis
+nameEn: Avian Aspergillosis
+nameZh: 禽類麴菌症
+bodySystem: infectious
+description: 禽類麴菌症是由 Aspergillus fumigatus 等麴菌引起的真菌性呼吸道感染，為鸚鵡及猛禽最常見的真菌性疾病。急性型常見於免疫低下個體，慢性型形成氣囊與肺部肉芽腫，治療困難且預後謹慎。
+
+aliases:
+  - { alias: 鳥類麴菌病, language: zh }
+  - { alias: 禽類真菌性肺炎, language: zh }
+  - { alias: Avian aspergillus infection, language: en }
+  - { alias: Fungal pneumonia in birds, language: en }
+
+species:
+  - speciesCommon: bird
+    prevalence: common
+    notes: 鸚鵡類（尤其灰鸚鵡、亞馬遜鸚鵡）及猛禽高發。免疫抑制、緊迫、抗生素長期使用為重要風險因子。環境中黴菌孢子量高時發病率增加。
+
+etiology:
+  categories:
+    - name: 感染性
+      examples:
+        - Aspergillus fumigatus（最常見）
+        - Aspergillus flavus
+        - Aspergillus niger
+        - 吸入環境中的真菌孢子
+    - name: 風險因素
+      examples:
+        - 免疫抑制（緊迫、營養不良、疾病）
+        - 長期使用抗生素
+        - 通風不良的飼養環境
+        - 發霉飼料或墊料
+        - 維生素 A 缺乏
+
+clinicalSigns:
+  early:
+    - 輕微呼吸音改變
+    - 偶爾尾部擺動呼吸
+    - 活動量減少
+    - 聲音改變
+  progressive:
+    - 呼吸困難（開口呼吸、尾部擺動）
+    - 聲音嘶啞或失聲
+    - 鼻分泌物
+    - 體重下降
+    - 嗜睡
+    - 食慾降低
+    - 運動不耐受
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔/氣囊 X 光
+      notes: 氣囊壁增厚、肺部結節或浸潤。氣囊內真菌團塊
+    - name: Aspergillus 抗原檢測
+      notes: 血清 Galactomannan 抗原測試。結合臨床表徵判讀
+    - name: 蛋白電泳
+      notes: Gamma globulin 升高支持慢性真菌感染。A/G 比值下降
+
+treatment:
+  principles:
+    - 長期抗真菌治療（數週至數月）
+    - 改善環境通風
+    - 營養支持與免疫力提升
+    - 局部與全身治療並行
+  general:
+    - Voriconazole（10-12 mg/kg PO BID）為首選抗真菌藥
+    - Itraconazole（5-10 mg/kg PO BID）替代方案
+    - Amphotericin B 霧化治療（局部氣囊內給藥）
+    - 療程通常需 6-12 週以上
+    - 改善環境通風與衛生
+    - 補充維生素 A
+    - 定期監測治療反應（X 光、血液檢查）
+
+prognosis: 預後謹慎。慢性麴菌症治療困難，需長期抗真菌藥物治療。早期診斷並積極治療者預後較好。廣泛性氣囊感染或免疫嚴重低下者預後不良。治療期間需定期監測肝腎功能（抗真菌藥物毒性）。
+
+pubmedQueries:
+  - query: '"aspergillosis" AND (avian OR bird OR psittacine) AND ("treatment" OR "management")'
+    frequency: monthly

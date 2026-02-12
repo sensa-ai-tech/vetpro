@@ -1,0 +1,72 @@
+slug: posterior-uveitis
+nameEn: Posterior Uveitis
+nameZh: 後葡萄膜炎
+bodySystem: ophthalmology
+description: 脈絡膜 (choroid) 發炎，常伴隨視網膜炎 (chorioretinitis)。與前葡萄膜炎不同，後葡萄膜炎通常無明顯外觀異常，需眼底檢查才能發現。常與全身性感染或免疫疾病相關。
+
+aliases:
+  - { alias: Choroiditis, language: en }
+  - { alias: Chorioretinitis, language: en }
+  - { alias: 脈絡膜炎, language: zh }
+  - { alias: 脈絡膜視網膜炎, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬常見原因包括全身性黴菌感染 (blastomycosis、histoplasmosis)、蜱傳疾病、免疫媒介性。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓常見原因包括 FIP、FeLV、FIV、toxoplasmosis、全身性黴菌感染。
+
+etiology:
+  categories:
+    - name: 感染性
+      examples:
+        - 全身性黴菌感染 (Blastomycosis、Histoplasmosis、Cryptococcosis)
+        - 蜱傳疾病 (Ehrlichiosis、Rickettsiosis)
+        - Toxoplasmosis
+        - FIP、FeLV、FIV (貓)
+    - name: 免疫媒介性
+      examples:
+        - 葡萄膜皮膚症候群 (VKH-like)
+        - 全身性紅斑性狼瘡
+    - name: 腫瘤性
+      examples:
+        - 眼內淋巴瘤
+        - 轉移性腫瘤
+
+clinicalSigns:
+  early:
+    - 外觀可能正常
+    - 輕微視力變化
+  progressive:
+    - 眼底可見脈絡膜肉芽腫或滲出灶
+    - 視網膜剝離 (滲出性)
+    - 玻璃體混濁
+    - 視力喪失
+
+diagnosis:
+  primaryTests:
+    - name: 間接眼底鏡 / 眼底攝影
+      notes: 脈絡膜灰白色肉芽腫、視網膜下滲出、視網膜剝離。活動性病灶邊界模糊
+    - name: 全身性疾病篩檢
+      notes: CBC/生化、蜱傳疾病篩檢、黴菌抗原/抗體、Toxoplasma IgM/IgG
+    - name: 眼部超音波
+      notes: 評估視網膜剝離與玻璃體混濁
+
+treatment:
+  principles:
+    - 治療根本全身性疾病
+    - 控制眼內炎症
+    - 預防續發性併發症
+  general:
+    - 全身性抗感染治療 (依病因：抗黴菌、抗生素、抗原蟲)
+    - 全身性類固醇或 NSAIDs (免疫媒介性)
+    - 局部抗炎眼藥水
+    - 定期眼底追蹤
+
+prognosis: 取決於根本原因。感染性病因若及時治療預後中等至良好。全身性黴菌感染需長期治療。免疫媒介性需長期免疫抑制。視網膜剝離若未及時處理可能永久失明。
+
+pubmedQueries:
+  - query: '"posterior uveitis" OR "chorioretinitis" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "treatment")'
+    frequency: monthly

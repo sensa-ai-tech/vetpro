@@ -1,0 +1,68 @@
+slug: brachial-plexus-avulsion
+nameEn: Brachial Plexus Avulsion
+nameZh: 臂神經叢撕脫傷
+bodySystem: neurology
+description: 臂神經叢根部從脊髓撕脫或嚴重牽拉損傷，常因嚴重外傷 (車禍、高處墜落) 導致前肢與肩部外展過度所致。依受損神經根不同分為顱側型 (C6-C7) 與尾側型 (C7-T2)，完全型則累及所有根部。
+
+aliases:
+  - { alias: Brachial Plexus Injury, language: en }
+  - { alias: Brachial Plexus Neuropathy, language: en }
+  - { alias: 臂叢損傷, language: zh }
+  - { alias: 臂神經叢損傷, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬最常見，多因車禍或高處墜落造成。中小型犬比例較高。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓多因高處墜落或車禍所致，後果與犬相似。
+
+etiology:
+  categories:
+    - name: 外傷性
+      examples:
+        - 車禍 (最常見)
+        - 高處墜落
+        - 前肢被捕獸夾夾住或卡住
+    - name: 醫源性
+      examples:
+        - 手術中過度牽拉
+        - 不當體位擺放
+
+clinicalSigns:
+  early:
+    - 患肢拖行 (knuckling)
+    - 患肢無法負重
+    - 患肢肌張力降低
+  progressive:
+    - 肌肉萎縮 (快速出現)
+    - 痛覺喪失 (深層痛覺缺失預後極差)
+    - 同側 Horner 症候群 (T1-T3 受損)
+    - 自殘性潰瘍 (因感覺喪失)
+
+diagnosis:
+  primaryTests:
+    - name: 神經學檢查
+      notes: 評估脊髓反射 (二頭肌反射 C6-C8、三頭肌反射 C7-T1、撓骨反射)。深層痛覺喪失為完全撕脫指標
+    - name: 肌電圖 (EMG)
+      notes: 受傷 5-7 天後出現去神經電位。幫助定位損傷範圍與嚴重程度
+    - name: MRI
+      notes: 評估神經根撕脫部位與脊髓損傷範圍
+
+treatment:
+  principles:
+    - 早期保守治療觀察神經恢復
+    - 預防自殘與二次損傷
+    - 嚴重完全撕脫可能需截肢
+  general:
+    - 副木固定保護患肢
+    - 物理治療維持關節活動度
+    - 深層痛覺喪失 6 個月未恢復建議截肢
+    - 自殘嚴重者需提前截肢
+
+prognosis: 取決於損傷範圍與深層痛覺是否保留。部分撕脫 (尤其顱側型) 預後較佳，可能在數週至數月恢復。完全撕脫伴深層痛覺喪失預後極差，多數需截肢。三腳動物適應能力通常良好。
+
+pubmedQueries:
+  - query: '"brachial plexus avulsion" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
+    frequency: monthly

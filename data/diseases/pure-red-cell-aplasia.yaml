@@ -1,0 +1,70 @@
+slug: pure-red-cell-aplasia
+nameEn: Pure Red Cell Aplasia
+nameZh: 純紅血球再生不良
+bodySystem: hematology
+description: 純紅血球再生不良（PRCA）為選擇性紅血球系列造血衰竭，骨髓中紅血球前驅細胞顯著減少或消失，而白血球與血小板系列正常。多為免疫介導性（抗體或 T 細胞攻擊紅血球前驅細胞），亦可繼發於 FeLV 感染（貓）或外源性紅血球生成素（EPO）使用。
+
+aliases:
+  - { alias: PRCA, language: en }
+  - { alias: 純紅血球再生不全, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬隻多為原發性免疫介導性 PRCA。外源性人類重組 EPO 使用後產生抗 EPO 抗體亦為重要原因。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻 PRCA 可與 FeLV subgroup C 感染相關。免疫介導性亦有報告。
+
+etiology:
+  categories:
+    - name: 免疫介導性（最常見）
+      examples:
+        - 原發性免疫介導性（抗紅血球前驅細胞抗體或 T 細胞）
+        - 抗 EPO 抗體（外源性人類重組 EPO 使用後）
+        - 胸腺瘤相關（paraneoplastic）
+    - name: 感染性
+      examples:
+        - FeLV subgroup C（貓）
+        - 犬小病毒（短暫性）
+    - name: 藥物相關
+      examples:
+        - 外源性人類重組 EPO（rhEPO）誘發抗 EPO 抗體
+
+clinicalSigns:
+  early:
+    - 進行性黏膜蒼白
+    - 嗜睡
+    - 活動力下降
+  progressive:
+    - 嚴重貧血（PCV 可低至 <10%）
+    - 心搏過速
+    - 運動不耐
+    - 食慾下降
+    - 呼吸急促
+
+diagnosis:
+  primaryTests:
+    - name: 全血球計數（CBC）
+      notes: 嚴重非再生性貧血，網織紅血球缺乏或極低。白血球與血小板計數正常（與 aplastic anemia 的鑑別要點）。
+    - name: 骨髓穿刺
+      notes: 紅血球前驅細胞（erythroid precursors）顯著減少或消失（M:E ratio 極高）。粒細胞與巨核細胞系列正常。
+
+treatment:
+  principles:
+    - 免疫抑制治療為核心
+    - 嚴重貧血需輸血支持
+    - EPO 誘發者需停用外源性 EPO
+  general:
+    - "免疫抑制：Prednisolone 2-4 mg/kg/day PO（初始劑量）"
+    - "Cyclosporine 5-10 mg/kg PO q12h（與 Prednisolone 合併使用效果更佳）"
+    - "Mycophenolate 10-20 mg/kg PO q12h（難治性病例）"
+    - "輸血支持：pRBC 10-20 mL/kg（PCV <12-15% 時）"
+    - 停用外源性 EPO（EPO 誘發者）
+    - 改用 Darbepoetin alfa（與人類 EPO 有交叉反應但較低）
+
+prognosis: 免疫介導性 PRCA 對免疫抑制治療反應率約 60-70%。治療反應通常在 2-4 週內出現。部分病例需長期低劑量免疫抑制維持。EPO 誘發的 PRCA 預後不確定，停用 EPO 後需持續輸血支持。FeLV 相關者預後較差。
+
+pubmedQueries:
+  - query: '"pure red cell aplasia" AND (veterinary OR canine OR feline) AND ("immunosuppressive" OR "treatment")'
+    frequency: monthly

@@ -1,0 +1,69 @@
+slug: rabbit-heat-stress
+nameEn: Rabbit Heat Stress
+nameZh: 兔熱緊迫
+bodySystem: metabolic
+description: 兔無汗腺且散熱主要依賴耳朵血管擴張與呼吸，環境溫度超過 28°C 即有熱緊迫風險。肥胖、長毛品種及懷孕母兔特別易感。嚴重時可導致器官衰竭與死亡。
+
+aliases:
+  - { alias: "兔熱緊迫", language: zh }
+  - { alias: "Rabbit Heat Stress", language: en }
+
+species:
+  - speciesCommon: rabbit
+    prevalence: uncommon
+    notes: 兔可受此疾病影響。
+
+etiology:
+  categories:
+    - name: 環境性
+      examples:
+        - 環境溫度 >28°C
+        - 高溫高濕環境
+        - 通風不良
+        - 直接日曬
+    - name: 易感因素
+      examples:
+        - 肥胖
+        - 長毛品種（Angora）
+        - 懷孕後期
+        - 老年兔
+
+clinicalSigns:
+  early:
+    - 呼吸急促
+    - 耳朵發紅發燙
+    - 嗜睡
+    - 伸展身體貼地
+  progressive:
+    - 張口呼吸
+    - 流涎
+    - 虛脫
+    - 癲癇
+    - 昏迷
+
+diagnosis:
+  primaryTests:
+    - name: 體溫測量
+      notes: 肛溫 >40°C（正常 38.5-40°C）。>41°C 為嚴重中暑。
+    - name: 生化檢查
+      notes: 評估器官損傷（肝腎指數）。凝血功能（DIC 風險）。
+
+treatment:
+  principles:
+    - 立即降溫
+    - 輸液支持
+    - 監測器官功能
+    - 預防為重
+  general:
+    - 移至陰涼環境
+    - 耳朵及足部以微涼濕布擦拭（不用冰水）
+    - 靜脈或皮下輸液
+    - 氧氣支持
+    - 監測體溫每 15 分鐘
+    - 環境溫控（<25°C 為理想）
+
+prognosis: 輕度熱緊迫及時降溫後預後良好。嚴重中暑（>41°C）合併器官損傷預後不良。多器官衰竭或 DIC 發生時預後極差。預防（溫控環境、陰涼處、冷凍水瓶）為最佳策略。
+
+pubmedQueries:
+  - query: '"Rabbit Heat Stress" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
+    frequency: monthly

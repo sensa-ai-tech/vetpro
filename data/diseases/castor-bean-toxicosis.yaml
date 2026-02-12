@@ -1,0 +1,79 @@
+slug: castor-bean-toxicosis
+nameEn: Castor Bean Toxicosis
+nameZh: 蓖麻子中毒
+bodySystem: toxicology
+description: 蓖麻子 (Ricinus communis) 含有蓖麻毒素 (ricin)，為一種核醣體失活蛋白 (ribosome-inactivating protein)，極少量即可致命。種子外殼需被咬破才能釋放毒素。引起嚴重出血性腸胃炎與多器官衰竭。無特效解毒劑。
+
+aliases:
+  - { alias: 蓖麻毒素中毒, language: zh }
+  - { alias: Ricin Poisoning, language: en }
+  - { alias: Castor Oil Plant Toxicosis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬致死劑量約 1-2 種子/kg（需咬碎外殼）。整顆吞下未咬破可能安全通過。蓖麻常見於庭院與公園。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓同樣易感。攝入較少見。
+
+etiology:
+  categories:
+    - name: 毒性機制
+      examples:
+        - Ricin 為 A-B 型毒素
+        - B 鏈與細胞表面受體結合促進內吞
+        - A 鏈進入細胞後使核醣體 28S rRNA 去嘌呤化
+        - 不可逆抑制蛋白質合成，細胞死亡
+    - name: 毒性來源
+      examples:
+        - 蓖麻種子（需咬破外殼）
+        - 蓖麻葉（毒性較種子低）
+        - 蓖麻油（加工過程已去毒）
+
+clinicalSigns:
+  early:
+    - 嘔吐（攝入後 6-12 小時）
+    - 嚴重腹瀉（可能血便）
+    - 腹痛
+  progressive:
+    - 出血性腸胃炎
+    - 嚴重脫水
+    - 肝腎衰竭
+    - 低血壓與休克
+    - DIC
+    - 死亡（2-5 天）
+
+diagnosis:
+  primaryTests:
+    - name: 病史與種子辨識
+      notes: 確認蓖麻種子攝入。種子外觀獨特（斑紋花紋）。確認是否被咬碎
+    - name: 臨床表現
+      notes: 嚴重出血性腸胃炎在種子攝入數小時後發生
+  additional:
+    - 肝腎功能
+    - 凝血功能
+    - CBC
+    - Ricin ELISA（特殊實驗室）
+
+treatment:
+  principles:
+    - 無特效解毒劑
+    - 積極去汙染
+    - 支持療法為核心
+    - 維持器官灌流
+  general:
+    - 催吐（攝入後盡早）+ 活性炭
+    - IV 輸液積極支持（大量失液）
+    - 止吐
+    - 消化道保護
+    - 輸血（嚴重出血）
+    - 新鮮冷凍血漿（DIC）
+    - 腎功能保護
+    - 住院至少 3-5 天密切監測
+
+prognosis: 蓖麻子中毒致死率視攝入量與是否咬碎而定。完整吞下未咬碎者可能安全。咬碎後攝入大量者預後不良。早期去汙染加積極支持療法可改善預後。
+
+pubmedQueries:
+  - query: '"castor bean" OR "ricin" AND (toxicosis OR poisoning) AND (veterinary OR canine)'
+    frequency: monthly

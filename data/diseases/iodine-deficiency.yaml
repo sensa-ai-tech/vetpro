@@ -1,0 +1,65 @@
+slug: iodine-deficiency
+nameEn: Iodine Deficiency
+nameZh: 碘缺乏症
+bodySystem: metabolic
+description: 碘為甲狀腺激素（T3、T4）合成的必要元素，缺乏導致甲狀腺代償性腫大（甲狀腺腫）及甲狀腺功能低下。現代商業飼料中碘含量充足，碘缺乏主要見於餵食不含碘鹽的自製飲食或碘貧乏地區。
+
+aliases:
+  - { alias: 缺碘, language: zh }
+  - { alias: 碘缺乏性甲狀腺腫, language: zh }
+  - { alias: Iodine Deficiency Goiter, language: en }
+  - { alias: Hypothyroidism Iodine Related, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬碘缺乏極少見於商業飼料餵養犬。可見於長期全自製飲食且無碘補充者。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓碘缺乏同樣罕見。商業貓糧含適量碘。
+
+etiology:
+  categories:
+    - name: 攝入不足
+      examples:
+        - 自製飲食缺乏海產或碘化鹽
+        - 碘貧乏地區的食材
+    - name: 致甲狀腺腫物質
+      examples:
+        - 高量十字花科蔬菜（捲心菜、花椰菜含硫氰酸鹽）
+        - 大豆基飲食（異黃酮抑制碘利用）
+
+clinicalSigns:
+  early:
+    - 甲狀腺區域腫大（頸部觸診可及）
+    - 嗜睡
+    - 體重增加
+  progressive:
+    - 甲狀腺功能低下症狀（脫毛、皮膚增厚）
+    - 心搏過緩
+    - 繁殖障礙（不孕、流產）
+    - 幼犬先天性甲狀腺功能低下（cretinism）
+
+diagnosis:
+  primaryTests:
+    - name: 甲狀腺功能檢查
+      notes: 總 T4 降低。TSH 升高（反映甲狀腺功能低下→垂體代償）。
+    - name: 飲食病史
+      notes: 自製飲食且無碘補充為關鍵線索。
+
+treatment:
+  principles:
+    - 飲食碘補充
+    - 矯正飲食來源
+    - 甲狀腺功能低下嚴重者需甲狀腺激素替代
+  general:
+    - 飲食添加碘化鹽或海藻粉
+    - 轉換至含適量碘的商業飼料
+    - 甲狀腺功能低下嚴重者：Levothyroxine 替代療法
+    - 定期監測 T4 及 TSH
+
+prognosis: 早期碘補充後甲狀腺腫可縮小，功能可恢復。幼犬先天性碘缺乏導致的發育遲緩可能無法完全逆轉。成犬預後良好。
+
+pubmedQueries:
+  - query: '"Iodine Deficiency" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

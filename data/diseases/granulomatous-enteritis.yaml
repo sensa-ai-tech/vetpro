@@ -1,0 +1,67 @@
+slug: granulomatous-enteritis
+nameEn: Granulomatous Enteritis
+nameZh: 肉芽腫性腸炎
+bodySystem: gastrointestinal
+description: 肉芽腫性腸炎為罕見的炎症性腸病類型，特徵為腸壁巨噬細胞與組織球形成肉芽腫性浸潤。犬隻可見於特定品種的遺傳性形式（如 Boxer 組織球性潰瘍性結腸炎）或感染性原因（Mycobacterium、Pythium、Histoplasma）。需排除感染性肉芽腫。
+
+aliases:
+  - { alias: 肉芽腫性腸病, language: zh }
+  - { alias: Granulomatous IBD, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬隻肉芽腫性腸炎罕見。需排除感染性肉芽腫（真菌、分枝桿菌、Pythium）。Boxer 組織球性潰瘍性結腸炎為特定品種疾病。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻罕見。可與 FIP（乾型）腸道表現相關。
+
+etiology:
+  categories:
+    - name: 特發性/免疫介導
+      examples:
+        - 原因不明的肉芽腫性反應
+        - 可能為異常巨噬細胞反應
+    - name: 感染性（需排除）
+      examples:
+        - 真菌（Histoplasma、Pythium）
+        - 分枝桿菌（Mycobacterium）
+        - FIP 病毒（貓）
+    - name: 品種特異性
+      examples:
+        - Boxer 組織球性潰瘍性結腸炎（E. coli 相關）
+
+clinicalSigns:
+  early:
+    - 慢性腹瀉
+    - 體重減輕
+    - 食慾下降
+  progressive:
+    - 嚴重腹瀉伴黏液或血液
+    - 顯著體重減輕
+    - 蛋白喪失性腸病
+    - 腸壁顯著增厚（可觸診到）
+
+diagnosis:
+  primaryTests:
+    - name: 全層腸道活檢
+      notes: 確診必須。內視鏡活檢深度可能不足。手術全層活檢較佳。組織學見肉芽腫性炎症（巨噬細胞、巨細胞）。特殊染色排除感染性病原。
+    - name: 感染排除
+      notes: PAS 染色（真菌）、Ziehl-Neelsen 染色（分枝桿菌）、PCR 檢測。Pythium 抗體。糞便培養。
+
+treatment:
+  principles:
+    - 排除感染性原因後以免疫抑制治療
+    - 感染性肉芽腫需特異性抗微生物治療
+    - Boxer 組織球性潰瘍性結腸炎對特定抗生素反應佳
+  general:
+    - "特發性：Prednisolone 2 mg/kg/day + Azathioprine 2 mg/kg q48h（犬）"
+    - "Boxer 組織球性結腸炎：Enrofloxacin 5-10 mg/kg PO q24h × 6-8 週"
+    - 感染性：針對病原治療（抗真菌、抗分枝桿菌等）
+    - 飲食管理（高消化率飲食）
+
+prognosis: 特發性肉芽腫性腸炎對免疫抑制治療反應變異大。Boxer 組織球性潰瘍性結腸炎對 Enrofloxacin 反應良好，預後佳。感染性肉芽腫預後取決於病原與治療反應。Pythium 引起者預後不良。
+
+pubmedQueries:
+  - query: '"granulomatous enteritis" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "treatment")'
+    frequency: monthly

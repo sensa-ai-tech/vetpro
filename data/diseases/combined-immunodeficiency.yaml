@@ -1,0 +1,80 @@
+slug: combined-immunodeficiency
+nameEn: Combined Immunodeficiency
+nameZh: 複合型免疫缺陷
+bodySystem: immunology
+description: 複合型免疫缺陷 (severe combined immunodeficiency, SCID) 為同時影響 T 細胞與 B 細胞功能的先天性免疫缺陷，導致體液與細胞免疫皆嚴重低下。犬中最著名的為 Basset Hound SCID（X-linked）與 Jack Russell Terrier SCID。受影響幼犬在母源抗體消退後即出現致命感染。
+
+aliases:
+  - { alias: 嚴重複合型免疫缺陷, language: zh }
+  - { alias: SCID, language: en }
+  - { alias: Severe Combined Immunodeficiency, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬 SCID 已知於 Basset Hound（X-linked, IL2RG 突變）、Jack Russell Terrier（DNA-PKcs 突變）、Cardigan Welsh Corgi。X-linked 型僅影響公犬。幼犬於 8-14 週齡（母源抗體消退後）開始反覆嚴重感染。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓 SCID 極罕見。實驗用貓品系有 X-linked SCID 報告。
+
+etiology:
+  categories:
+    - name: 遺傳突變
+      examples:
+        - X-linked SCID：IL2RG（γc chain）基因突變（Basset Hound）
+        - Autosomal SCID：DNA-PKcs 突變（Jack Russell Terrier）
+        - Rag1/Rag2 突變（罕見報告）
+        - 影響 T 細胞與 B 細胞發育的關鍵基因缺陷
+    - name: 致病機制
+      examples:
+        - T 細胞發育嚴重受阻
+        - B 細胞無法產生有效抗體（缺乏 T 細胞輔助）
+        - 胸腺發育不全
+        - 淋巴組織缺乏淋巴球
+
+clinicalSigns:
+  early:
+    - 8-14 週齡開始反覆感染（母源抗體消退後）
+    - 呼吸道感染
+    - 腹瀉
+    - 生長遲緩
+  progressive:
+    - 難治性肺炎
+    - 全身性真菌感染
+    - 敗血症
+    - 機會性感染（Pneumocystis、CMV 等）
+    - 消瘦
+    - 多數於 3-6 月齡死亡
+
+diagnosis:
+  primaryTests:
+    - name: CBC + 淋巴球計數
+      notes: 嚴重淋巴球減少。Flow cytometry 可見 CD3+ T 細胞極低或缺如
+    - name: 免疫球蛋白定量
+      notes: IgG、IgM、IgA 極低或缺如（母源抗體消退後）
+  additional:
+    - 胸腔 X-ray（胸腺影消失）
+    - 淋巴結生檢（缺乏淋巴球）
+    - 基因檢測（IL2RG、DNA-PKcs 突變）
+    - 骨髓檢查（淋巴球前驅細胞缺乏）
+
+treatment:
+  principles:
+    - 目前無根治方法（骨髓移植為唯一理論根治）
+    - 積極抗感染
+    - 支持療法
+    - 預防暴露
+  general:
+    - 廣效抗生素（長期預防與治療）
+    - 抗真菌（fluconazole 預防性使用）
+    - 血漿輸注（被動免疫）
+    - 隔離飼養（減少感染暴露）
+    - 骨髓移植（實驗性，少數研究報告成功）
+    - 不建議疫苗接種（尤其活疫苗 — 可致病）
+    - 遺傳諮詢（攜帶者檢測、勿繁殖）
+
+prognosis: SCID 幼犬預後極差，多數於 3-6 月齡死於感染。骨髓移植在少數實驗案例中成功。受影響品種應進行基因篩檢以消除帶原者。
+
+pubmedQueries:
+  - query: '"severe combined immunodeficiency" OR "SCID" AND (veterinary OR canine OR feline) AND ("treatment" OR "genetic")'
+    frequency: monthly

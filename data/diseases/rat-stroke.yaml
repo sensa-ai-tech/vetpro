@@ -1,0 +1,75 @@
+slug: rat-stroke
+nameEn: Rat Stroke
+nameZh: 大鼠腦中風
+bodySystem: neurology
+description: 大鼠腦中風為腦血管意外所致的急性神經功能障礙，可分為出血性與缺血性。老年大鼠偶見，常與高血壓、腎臟疾病或垂體腺瘤相關。臨床表現為突發性頭部傾斜、運動失調或單側癱瘓。
+
+aliases:
+  - { alias: 大鼠腦血管意外, language: zh }
+  - { alias: 大鼠中風, language: zh }
+  - { alias: Rat cerebrovascular accident, language: en }
+  - { alias: Rat CVA, language: en }
+
+species:
+  - speciesCommon: rat
+    prevalence: uncommon
+    notes: 老年大鼠偶見。常與慢性腎病所致高血壓或垂體腺瘤相關。急性發作需與內耳前庭疾病鑑別。
+
+etiology:
+  categories:
+    - name: 血管性因素
+      examples:
+        - 高血壓性腦出血（腎病繼發）
+        - 腦動脈硬化
+        - 血栓形成
+    - name: 腫瘤相關
+      examples:
+        - 垂體腺瘤壓迫或出血
+        - 腦部腫瘤內出血
+    - name: 其他
+      examples:
+        - 凝血功能異常
+        - 外傷
+
+clinicalSigns:
+  early:
+    - 突發性頭部傾斜
+    - 急性運動失調（步態不穩）
+    - 迷向
+  progressive:
+    - 單側肢體無力或癱瘓
+    - 迴旋行走
+    - 眼球震顫
+    - 意識程度下降
+    - 無法自主進食或飲水
+    - 癲癇發作
+
+diagnosis:
+  primaryTests:
+    - name: 神經學檢查
+      notes: 評估神經功能缺損的對稱性與定位。突發性起病為重要特徵
+    - name: 血壓測量
+      notes: 評估是否有高血壓。大鼠正常收縮壓約 100-120 mmHg
+    - name: 血液生化
+      notes: 腎功能（BUN、肌酐）、血糖、凝血功能
+
+treatment:
+  principles:
+    - 穩定病患狀態
+    - 支持性護理
+    - 控制基礎疾病
+    - 復健
+  general:
+    - 維持水分與營養（必要時輔助餵食）
+    - 控制高血壓（若有腎病）
+    - 抗發炎治療（Meloxicam 1-2 mg/kg SID）
+    - 溫暖舒適環境
+    - 物理治療（輕柔活動患肢）
+    - 每日監測神經功能改善情況
+    - 防止褥瘡（柔軟墊料、定時翻身）
+
+prognosis: 預後視病變範圍與基礎疾病而定。輕度腦中風部分大鼠可在數天至數週內有顯著改善。嚴重神經功能缺損或與垂體腺瘤相關者預後較差。無法自主進食飲水者預後不良。部分患鼠可能遺留永久性神經功能障礙。
+
+pubmedQueries:
+  - query: '"rat" AND ("stroke" OR "cerebrovascular accident") AND (veterinary OR "pet rat")'
+    frequency: monthly

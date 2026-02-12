@@ -1,0 +1,69 @@
+slug: hyperphosphatemia
+nameEn: Hyperphosphatemia
+nameZh: 高磷血症
+bodySystem: metabolic
+description: 血清磷離子濃度高於正常值（犬 >6.0 mg/dL，貓 >6.5 mg/dL）的代謝異常。高磷血症最常見於腎功能衰竭，持續高磷導致繼發性副甲狀腺功能亢進及腎性骨營養不良，並加速腎病進展。
+
+aliases:
+  - { alias: 高血磷, language: zh }
+  - { alias: 血磷過高, language: zh }
+  - { alias: High Phosphorus, language: en }
+  - { alias: Phosphate Excess, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬高磷血症最常見於急慢性腎病。幼犬生長期血磷正常值較成犬高，需注意參考範圍。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓高磷血症在慢性腎病中極為常見，為疾病進展的重要促進因子。飲食磷限制為貓 CKD 管理重點。
+
+etiology:
+  categories:
+    - name: 腎臟排泄減少（最常見）
+      examples:
+        - 慢性腎病（GFR 下降→磷滯留）
+        - 急性腎損傷
+        - 尿道阻塞
+    - name: 細胞外釋放
+      examples:
+        - 腫瘤溶解症候群
+        - 橫紋肌溶解症
+        - 溶血
+
+clinicalSigns:
+  early:
+    - 通常無明顯特異性症狀（與腎病症狀混合）
+    - 食慾下降
+    - 噁心
+  progressive:
+    - 軟組織礦化（腎臟、血管壁）
+    - 繼發性低鈣血症（鈣磷乘積升高→鈣沉積）
+    - 腎性骨病（骨質疏鬆、橡皮下巴）
+    - 搔癢
+
+diagnosis:
+  primaryTests:
+    - name: 血清磷
+      notes: 犬 >6.0 mg/dL，貓 >6.5 mg/dL。IRIS CKD 分期中磷控制目標隨期別而異。
+    - name: 腎功能指標
+      notes: BUN、Creatinine、SDMA。評估 GFR 下降程度。鈣磷乘積 >70 時軟組織礦化風險大增。
+
+treatment:
+  principles:
+    - 飲食磷限制為基礎治療
+    - 口服磷結合劑降低腸道磷吸收
+    - 治療基礎腎病
+    - 定期監測血磷及 PTH
+  general:
+    - 腎臟處方飲食（低磷配方）
+    - 口服磷結合劑：氫氧化鋁 30-90 mg/kg/day 隨餐給予
+    - Lanthanum carbonate 或 Sevelamer 為替代選擇
+    - 急性腎衰竭：靜脈輸液促進磷排泄
+    - IRIS CKD Stage 2 目標血磷 <4.5 mg/dL，Stage 3 <5.0 mg/dL，Stage 4 <6.0 mg/dL
+
+prognosis: 高磷血症的預後取決於基礎腎病嚴重度。早期腎病配合飲食控制與磷結合劑可有效降磷並延緩疾病進展。晚期腎病高磷血症難以控制，為預後不良的指標之一。
+
+pubmedQueries:
+  - query: '"Hyperphosphatemia" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

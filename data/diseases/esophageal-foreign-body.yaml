@@ -1,0 +1,70 @@
+slug: esophageal-foreign-body
+nameEn: Esophageal Foreign Body
+nameZh: 食道異物
+bodySystem: gastrointestinal
+description: 食道異物為滯留於食道內的異物，犬隻最常見於胸廓入口、心基底部與橫膈前方等解剖狹窄處。常見異物包括骨頭、魚刺、玩具碎片與釘子。長時間滯留可導致食道壁壞死、穿孔與縱膈炎，為需要緊急處理的急症。
+
+aliases:
+  - { alias: 食道卡異物, language: zh }
+  - { alias: Esophageal Obstruction, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬隻食道異物常見，小型犬好發。骨頭為最常見異物（尤其烹煮過的雞骨或魚骨）。Terrier 品種因進食習慣較好發。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻較少見。魚骨、線狀異物為常見類型。
+
+etiology:
+  categories:
+    - name: 常見異物
+      examples:
+        - 骨頭（雞骨、魚骨最常見）
+        - 玩具碎片
+        - 釘子或金屬物
+        - 食物塊（大型肉塊）
+    - name: 滯留位置
+      examples:
+        - 胸廓入口（最常見）
+        - 心基底部
+        - 橫膈前方（食道裂孔處）
+
+clinicalSigns:
+  early:
+    - 急性吞嚥困難
+    - 反芻（regurgitation）
+    - 流涎過多
+    - 躁動不安
+  progressive:
+    - 持續反芻（嘗試進食即反芻）
+    - 食慾廢絕
+    - 脫水
+    - 發燒（食道穿孔時）
+    - 皮下氣腫（食道穿孔伴空氣外漏）
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔 X 光
+      notes: 多數骨頭或金屬異物可直接在 X 光上顯影。食道擴張（異物上方）。氣管偏移。穿孔時可見縱膈氣腫或胸腔積液。
+    - name: 食道鏡檢查
+      notes: 確診並可同時取出異物。評估食道黏膜損傷程度。不透射異物需內視鏡確認。
+
+treatment:
+  principles:
+    - 盡早取出異物避免食道壁壞死
+    - 內視鏡取出為首選
+    - 食道穿孔需手術介入
+  general:
+    - 內視鏡異物取出（首選，成功率 >90%）
+    - 無法內視鏡取出時輕推異物至胃部（小型光滑異物）
+    - 食道切開術（esophagotomy，內視鏡失敗時）
+    - "術後禁食 24-48 小時後給予流質飲食"
+    - "Sucralfate 0.5-1 g PO q8h（保護食道黏膜）"
+    - "Omeprazole 1 mg/kg PO q12h（減少胃酸反流）"
+
+prognosis: 早期取出（<24 小時）預後良好。延遲取出（>48 小時）食道壁壞死風險增加，可能發展為食道狹窄。食道穿孔伴縱膈炎或膿胸預後不良。術後食道狹窄為最常見併發症（約 10-20%），可能需要球囊擴張治療。
+
+pubmedQueries:
+  - query: '"esophageal foreign body" AND (veterinary OR canine OR feline) AND ("endoscopy" OR "treatment")'
+    frequency: monthly

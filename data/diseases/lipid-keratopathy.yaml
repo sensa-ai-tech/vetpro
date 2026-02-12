@@ -1,0 +1,66 @@
+slug: lipid-keratopathy
+nameEn: Lipid Keratopathy
+nameZh: 脂質角膜病變
+bodySystem: ophthalmology
+description: 脂質 (膽固醇、磷脂質、三酸甘油酯) 在角膜基質沉積導致的白色至黃白色混濁。可為原發性 (角膜營養不良) 或繼發性 (全身性高脂血症、慢性角膜炎症後)。需區分原因以決定治療方向。
+
+aliases:
+  - { alias: Corneal Lipidosis, language: en }
+  - { alias: Lipid Corneal Opacity, language: en }
+  - { alias: 角膜脂質沉積, language: zh }
+  - { alias: 脂質性角膜混濁, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬常見。原發性見於 Siberian Husky、Cavalier 等品種。繼發於甲狀腺功能低下的高脂血症也常見。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓較少見。
+
+etiology:
+  categories:
+    - name: 原發性 (遺傳性角膜營養不良)
+      examples:
+        - 品種特異性脂質代謝異常
+        - 雙側對稱性沉積
+    - name: 繼發性
+      examples:
+        - 全身性高脂血症 (甲狀腺功能低下、Cushing)
+        - 慢性角膜炎或新生血管區域脂質滲漏
+        - 老年退化
+
+clinicalSigns:
+  early:
+    - 角膜白色至黃白色不透明沉積
+    - 通常無疼痛
+    - 可能不影響視力
+  progressive:
+    - 沉積範圍擴大
+    - 角膜表面不規則
+    - 嚴重時影響視力
+
+diagnosis:
+  primaryTests:
+    - name: 裂隙燈檢查
+      notes: 角膜基質內結晶樣白色至黃白色沉積。評估分布模式 (對稱/不對稱)
+    - name: 血脂檢查
+      notes: 膽固醇、三酸甘油酯。排除高脂血症
+    - name: 甲狀腺功能檢查
+      notes: 排除甲狀腺功能低下
+
+treatment:
+  principles:
+    - 繼發性需治療根本原因
+    - 原發性通常不需積極治療
+  general:
+    - 治療甲狀腺功能低下 (Levothyroxine)
+    - 低脂飲食
+    - 嚴重影響視力：淺層角膜切除
+    - 定期追蹤
+
+prognosis: 原發性角膜脂質營養不良預後良好，進展緩慢。繼發於高脂血症者控制血脂後可能改善。手術切除後可能復發。
+
+pubmedQueries:
+  - query: '"lipid keratopathy" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "treatment")'
+    frequency: monthly

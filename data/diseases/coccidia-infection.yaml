@@ -1,0 +1,69 @@
+slug: coccidia-infection
+nameEn: Coccidia Infection
+nameZh: 球蟲感染
+bodySystem: infectious
+description: 球蟲感染為 Isospora（Cystoisospora）spp. 引起的腸道原蟲感染。犬隻感染 I. canis、I. ohioensis complex，貓隻感染 I. felis、I. rivolta。幼犬幼貓最易發生臨床感染（腹瀉）。成年動物多為無症狀帶卵者。收容所與繁殖場流行率高。
+
+aliases:
+  - { alias: 球蟲症, language: zh }
+  - { alias: Coccidiosis (Isospora), language: en }
+  - { alias: Isospora Infection, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬隻球蟲感染在幼犬極常見。收容所幼犬流行率可達 20-40%。多數成犬為無症狀帶卵者。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 幼貓球蟲感染常見。I. felis 為貓最常見種。
+
+etiology:
+  categories:
+    - name: 病原體
+      examples:
+        - 犬：Cystoisospora canis、C. ohioensis complex
+        - 貓：Cystoisospora felis、C. rivolta
+        - 糞口途徑感染（攝入芽胞化卵囊）
+    - name: 風險因素
+      examples:
+        - 幼齡動物（免疫尚未成熟）
+        - 密集飼養環境（收容所、繁殖場）
+        - 緊迫（運輸、斷奶）
+        - 免疫抑制
+
+clinicalSigns:
+  early:
+    - 輕度至中度水樣腹瀉
+    - 食慾下降
+    - 腹部不適
+  progressive:
+    - 嚴重水樣至血性腹瀉
+    - 脫水
+    - 體重減輕
+    - 嗜睡
+    - 嚴重感染幼犬可致死
+
+diagnosis:
+  primaryTests:
+    - name: 糞便浮游法
+      notes: 糞便浮游法（zinc sulfate 或 sugar flotation）可偵測卵囊。卵囊需 12-24 小時才能出現在糞便中（patent period）。感染初期可能陰性。
+    - name: 糞便直接抹片
+      notes: 嚴重感染時可在糞便直接抹片中見到卵囊。
+
+treatment:
+  principles:
+    - 治療臨床感染的幼犬幼貓
+    - 環境清潔消毒很重要
+    - 成年無症狀帶卵者是否治療視情況而定
+  general:
+    - "Sulfadimethoxine 50 mg/kg PO q24h × 10-14 天（傳統治療）"
+    - "Ponazuril 50 mg/kg PO q24h × 1-3 天（更有效且療程短）"
+    - "Toltrazuril 10-20 mg/kg PO single dose"
+    - 支持性治療（輸液矯正脫水）
+    - 環境清潔（卵囊對多數消毒劑有抵抗力，10% 氨水有效）
+
+prognosis: 預後良好。多數幼犬幼貓在治療後數天內恢復。嚴重脫水的幼齡動物若未治療可能致死。成年動物通常自行產生免疫力。環境控制對預防再感染很重要。
+
+pubmedQueries:
+  - query: '"coccidia" OR "Isospora" OR "Cystoisospora" AND (veterinary OR canine OR feline) AND ("treatment" OR "ponazuril")'
+    frequency: monthly

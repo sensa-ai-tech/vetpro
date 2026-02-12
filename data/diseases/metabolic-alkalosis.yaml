@@ -1,0 +1,68 @@
+slug: metabolic-alkalosis
+nameEn: Metabolic Alkalosis
+nameZh: 代謝性鹼中毒
+bodySystem: metabolic
+description: 血液 pH 升高伴隨碳酸氫根（HCO3-）濃度增加的酸鹼失衡。獸醫最常見於上消化道阻塞（幽門梗阻導致大量鹽酸流失）及利尿劑使用後，需糾正潛在病因並補充氯離子以恢復酸鹼平衡。
+
+aliases:
+  - { alias: 代謝性鹼血症, language: zh }
+  - { alias: Metabolic Alkalaemia, language: en }
+  - { alias: Hypochloremic Alkalosis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬代謝性鹼中毒最常見於幽門梗阻（幼犬先天性肥厚性幽門狹窄、異物）導致持續性嘔吐。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓可見於持續性嘔吐或利尿劑過量使用。貓尿道阻塞解除後大量利尿亦可導致。
+
+etiology:
+  categories:
+    - name: 鹽酸流失（最常見）
+      examples:
+        - 上消化道阻塞（幽門狹窄、胃扭轉）導致持續嘔吐
+        - 鼻胃管引流大量胃液
+    - name: 腎臟機制
+      examples:
+        - 利尿劑使用（呋塞米→氯離子流失）
+        - 低氯血症維持鹼中毒
+        - Cushing 病（礦物皮質酮效應）
+
+clinicalSigns:
+  early:
+    - 反覆嘔吐（若為胃排空障礙）
+    - 脫水
+    - 食慾下降
+    - 嗜睡
+  progressive:
+    - 肌肉無力
+    - 低鉀血症症狀（心律不整）
+    - 低通氣（呼吸代償）
+    - 意識改變
+
+diagnosis:
+  primaryTests:
+    - name: 動脈或靜脈血氣分析
+      notes: pH >7.45，HCO3- 升高。呼吸代償使 PaCO2 輕度升高。
+    - name: 電解質
+      notes: 典型表現為低氯、低鉀。血清氯 <100 mEq/L。尿液氯 <20 mEq/L 提示氯離子反應性鹼中毒。
+
+treatment:
+  principles:
+    - 治療潛在病因（解除梗阻、停止利尿劑）
+    - 補充氯離子（0.9% NaCl 為首選輸液）
+    - 同時糾正低鉀血症
+    - 嚴重時可考慮稀鹽酸或 NH4Cl
+  general:
+    - 0.9% NaCl 靜脈輸液補充氯離子與容積
+    - KCl 補充低鉀血症（20-40 mEq/L 加入輸液中）
+    - 外科解除上消化道梗阻
+    - 持續監測血氣與電解質
+    - 極嚴重時（pH >7.6）：0.1N HCl 經中央靜脈緩慢輸注
+
+prognosis: 氯離子反應性代謝性鹼中毒（最常見類型）經適當輸液與病因治療後預後良好。幽門梗阻術後矯正後多數快速恢復。氯離子抵抗性鹼中毒（如 Cushing 病）較難處理。
+
+pubmedQueries:
+  - query: '"Metabolic Alkalosis" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

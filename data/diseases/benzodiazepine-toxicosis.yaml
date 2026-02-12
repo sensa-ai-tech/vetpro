@@ -1,0 +1,73 @@
+slug: benzodiazepine-toxicosis
+nameEn: Benzodiazepine Toxicosis
+nameZh: 苯二氮平類中毒
+bodySystem: toxicology
+description: 苯二氮平類藥物 (benzodiazepines) 中毒常見於犬誤食飼主藥物（如 alprazolam、diazepam、lorazepam）。犬可出現深度鎮靜、共濟失調與呼吸抑制。Flumazenil 為特異性拮抗劑。貓對口服 diazepam 可能發生特異性肝壞死。
+
+aliases:
+  - { alias: 安定類藥物中毒, language: zh }
+  - { alias: Benzodiazepine Overdose, language: en }
+  - { alias: Diazepam Toxicosis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬誤食飼主處方藥（alprazolam、clonazepam 等）為常見情境。安全範圍較寬，致死量高。但與其他中樞抑制劑合併時風險增加。Alprazolam 在犬可引起反常興奮。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 口服 diazepam 可引起貓特異性致命性肝壞死（idiosyncratic hepatic necrosis），與劑量無關。Alprazolam 在貓較安全。
+
+etiology:
+  categories:
+    - name: 毒性機制
+      examples:
+        - 增強 GABA-A 受體功能→中樞神經抑制
+        - 與 barbiturate 或 opioid 合併有協同效應
+        - 貓 diazepam 特異性肝毒性機制不明
+    - name: 常見來源
+      examples:
+        - 飼主處方藥（alprazolam、diazepam、lorazepam、clonazepam）
+        - 獸醫院藥物過量
+        - 安眠藥（triazolam、temazepam）
+
+clinicalSigns:
+  early:
+    - 嗜睡與鎮靜
+    - 共濟失調
+    - 肌肉鬆弛
+  progressive:
+    - 深度昏迷
+    - 呼吸抑制
+    - 低血壓
+    - Alprazolam 反常興奮（犬）：躁動、攻擊
+    - 貓 diazepam 肝毒性：黃疸、肝衰竭（口服後 2-5 天）
+
+diagnosis:
+  primaryTests:
+    - name: 暴露史
+      notes: 確認藥物種類與攝入量。保留藥物包裝
+    - name: 臨床表現
+      notes: 鎮靜 + 共濟失調 + 暴露史。Flumazenil 診斷性試驗
+  additional:
+    - 肝功能（尤其貓 diazepam 暴露）
+    - 動脈血氣
+    - 血壓監測
+
+treatment:
+  principles:
+    - Flumazenil 特異性拮抗
+    - 呼吸支持
+    - 貓 diazepam 肝毒性需保肝
+  general:
+    - 催吐（早期、意識清醒時）+ 活性炭
+    - Flumazenil 0.01-0.02 mg/kg IV（特異性拮抗劑，可重複）
+    - 呼吸支持（必要時）
+    - IV 輸液
+    - 貓 diazepam 肝毒性：SAMe、silibinin、NAC、支持療法
+    - 監測至少 12-24 小時
+
+prognosis: 犬苯二氮平類單獨過量預後通常良好，Flumazenil 可迅速逆轉。與其他中樞抑制劑合併時風險增加。貓口服 diazepam 引起的特異性肝壞死預後極差。
+
+pubmedQueries:
+  - query: '"benzodiazepine" AND (toxicosis OR overdose) AND (veterinary OR canine OR feline) AND ("flumazenil" OR "treatment")'
+    frequency: monthly

@@ -1,0 +1,76 @@
+slug: cuterebra
+nameEn: Cuterebra
+nameZh: 膚蠅幼蟲感染
+bodySystem: infectious
+description: 膚蠅幼蟲感染 (cuterebriasis) 由 Cuterebra 屬蠅類幼蟲引起的皮下寄生蟲病。自然宿主為嚙齒類與兔，犬貓為偶然宿主。幼蟲在皮下形成含呼吸孔的腫包。貓偶見幼蟲異位移行至腦部引起致命性神經症狀。
+
+aliases:
+  - { alias: 膚蠅蛆病, language: zh }
+  - { alias: 皮膚蠅感染, language: zh }
+  - { alias: Cuterebriasis, language: en }
+  - { alias: Warble Fly Larva, language: en }
+  - { alias: Bot Fly Infection, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬膚蠅感染偶見，多在夏秋季。戶外犬接觸嚙齒類棲息地時感染。通常為皮下型，預後良好。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓膚蠅感染較犬更受關注，因幼蟲可能異位移行至腦部引起致命性腦膜腦炎。戶外貓夏秋季風險最高。
+
+etiology:
+  categories:
+    - name: 生活史
+      examples:
+        - 母蠅在嚙齒類/兔棲息地附近產卵
+        - 犬貓經過時幼蟲附著並經自然開口（口、鼻、眼、傷口）侵入
+        - 幼蟲移行至皮下並形成含呼吸孔的腫包 (warble)
+        - 成熟後自行脫出至環境化蛹
+    - name: 異位移行
+      examples:
+        - 幼蟲可能偏離正常路徑移行至異常部位
+        - "貓：腦部移行引起腦膜腦炎"
+        - 眼眶移行
+        - 咽喉/上呼吸道移行
+
+clinicalSigns:
+  early:
+    - 皮膚腫包伴中央呼吸孔
+    - 局部紅腫
+    - 少量漿液性分泌物
+  progressive:
+    - 腫包增大（幼蟲成長）
+    - 繼發感染（細菌性膿瘍）
+    - 異位腦移行：急性神經症狀（癲癇、共濟失調、盲目、昏迷）
+    - 眼眶型：眼球突出、結膜炎
+
+diagnosis:
+  primaryTests:
+    - name: 臨床檢查
+      notes: 皮下腫包伴中央呼吸孔為典型表現。呼吸孔可見幼蟲運動。夏秋季節性
+    - name: MRI（異位腦移行）
+      notes: 貓疑似腦移行時必要。可見腦實質內移行軌跡與腫脹
+  additional:
+    - 幼蟲鑑定（取出後依形態學鑑定種別）
+    - CSF 分析（腦移行：嗜酸球增多）
+
+treatment:
+  principles:
+    - 完整取出幼蟲為首選
+    - 不可壓碎幼蟲（避免過敏反應）
+    - 腦移行需抗發炎治療
+    - 繼發感染需抗生素
+  general:
+    - 擴大呼吸孔，小心完整取出幼蟲（不可壓碎）
+    - 清創與沖洗腔室
+    - 必要時抗生素（繼發感染）
+    - 腦移行：corticosteroid 減輕腦水腫 + 抗癲癇藥物
+    - 腦移行幼蟲無法手術取出，以支持療法為主
+    - Ivermectin 可能有助於殺死移行幼蟲（證據有限）
+
+prognosis: 皮下型膚蠅感染完整取出幼蟲後預後極佳。腦移行型預後差至不良，多數貓出現永久性神經後遺症或死亡。早期 corticosteroid 治療可能改善部分腦移行病例。
+
+pubmedQueries:
+  - query: '"Cuterebra" AND (veterinary OR canine OR feline) AND ("treatment" OR "aberrant migration")'
+    frequency: monthly

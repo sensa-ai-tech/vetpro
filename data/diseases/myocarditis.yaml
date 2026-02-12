@@ -1,0 +1,72 @@
+slug: myocarditis
+nameEn: Myocarditis
+nameZh: 心肌炎
+bodySystem: cardiac
+description: 心肌炎為心肌的炎症性疾病，可由感染性（病毒、細菌、原蟲）、免疫介導性或毒物等多種原因引起。臨床表現多樣，從無症狀到急性心衰竭與致命性心律不整。犬隻以感染性原因較常見，特別是 Trypanosoma cruzi（Chagas 病）與病毒感染。
+
+aliases:
+  - { alias: 心肌發炎, language: zh }
+  - { alias: Inflammatory Cardiomyopathy, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻心肌炎可由多種感染源引起。Chagas 病（Trypanosoma cruzi）在美洲南部流行區常見。幼犬犬小病毒（CPV）心肌炎型已因疫苗普及而罕見。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻心肌炎少見，可與 FIP、弓形蟲感染相關。
+
+etiology:
+  categories:
+    - name: 感染性
+      examples:
+        - 原蟲：Trypanosoma cruzi（Chagas 病，美洲）
+        - 病毒：犬小病毒（幼犬心肌炎型）、犬腺病毒
+        - 細菌：感染性心內膜炎血行擴散、敗血症
+        - 螺旋體：鉤端螺旋體
+    - name: 免疫介導性
+      examples:
+        - 自體免疫性心肌炎
+        - 疫苗後心肌炎（極罕見）
+    - name: 毒物性
+      examples:
+        - 藥物引起（Doxorubicin 心臟毒性）
+        - 蛇毒
+        - 蜂毒
+
+clinicalSigns:
+  early:
+    - 心律不整（心室性早期收縮為常見首發表現）
+    - 輕度嗜睡
+    - 食慾下降
+  progressive:
+    - 運動不耐
+    - 呼吸困難（心衰竭）
+    - 昏厥
+    - 致命性心律不整
+    - 突然死亡
+
+diagnosis:
+  primaryTests:
+    - name: 心臟超音波（Echocardiography）
+      notes: 可見局部或全面性心室壁運動異常、心室擴大、收縮功能降低。急性期可見心肌水腫（回聲改變）。需與擴張性心肌病鑑別。
+    - name: 心電圖（ECG）
+      notes: 心律不整（心室性早期收縮、心室頻脈）、ST 段與 T 波異常、傳導異常。
+
+treatment:
+  principles:
+    - 治療基礎病因（感染性病原）
+    - 控制心律不整
+    - 支持性心衰竭治療
+  general:
+    - 治療感染性病因（如 Benznidazole 治療 Chagas 病）
+    - "心律不整控制：Lidocaine IV（急性期）→ Sotalol 或 Mexiletine PO（長期）"
+    - "心衰竭治療：Furosemide + Pimobendan + ACE inhibitor"
+    - 嚴格籠內休息（減少心臟負擔）
+    - 免疫介導性可考慮免疫抑制治療
+
+prognosis: 預後取決於病因與心肌損害嚴重程度。輕度感染性心肌炎在適當治療後可完全恢復。Chagas 病慢性期預後較差。藥物性心肌炎（如 Doxorubicin）通常為不可逆。暴發性心肌炎死亡率高。部分病例可恢復正常心功能。
+
+pubmedQueries:
+  - query: '"myocarditis" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "treatment")'
+    frequency: monthly

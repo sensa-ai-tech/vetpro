@@ -1,0 +1,82 @@
+slug: cat-bite-wound
+nameEn: Cat Bite Wound
+nameZh: 貓咬傷
+bodySystem: emergency
+description: 貓咬傷的特點為細長犬齒造成深而窄的穿刺傷，皮膚迅速閉合後形成封閉的深部感染環境。貓咬傷膿瘍形成率極高（約 50-80%）。常見致病菌為 Pasteurella multocida、Streptococcus 與厭氧菌。貓之間的咬傷亦為 FeLV/FIV 傳播的主要途徑。
+
+aliases:
+  - { alias: 貓打架傷, language: zh }
+  - { alias: Cat Fight Abscess, language: en }
+  - { alias: Cat Bite Abscess, language: en }
+
+species:
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓之間打架咬傷極常見，尤其未結紮公貓。好發部位：頭部、頸部、尾根。膿瘍通常在咬傷後 2-5 天形成。Pasteurella multocida 為最常見致病菌。
+
+etiology:
+  categories:
+    - name: 損傷特點
+      examples:
+        - 貓犬齒細長 → 深窄穿刺傷
+        - 皮膚彈性好 → 穿刺孔迅速閉合
+        - 深部接種大量口腔菌群
+        - 厭氧環境 → 膿瘍形成
+    - name: 常見致病菌
+      examples:
+        - Pasteurella multocida
+        - Streptococcus spp.
+        - 厭氧菌（Bacteroides、Fusobacterium、Clostridium）
+        - Staphylococcus spp.
+    - name: 傳染病風險
+      examples:
+        - FIV 傳播（咬傷為主要途徑）
+        - FeLV 傳播
+        - Mycobacterium（罕見）
+
+clinicalSigns:
+  early:
+    - 小穿刺傷（可能不易發現，被毛遮蔽）
+    - 輕微腫脹
+    - 觸碰疼痛
+  progressive:
+    - 膿瘍形成（2-5 天後，軟波動性腫塊）
+    - 發燒
+    - 厭食、嗜睡
+    - 膿瘍破裂（惡臭膿性分泌物）
+    - 蜂窩組織炎
+    - 嚴重者敗血症
+
+diagnosis:
+  primaryTests:
+    - name: 臨床表現
+      notes: 軟波動性皮下腫塊 + 穿刺傷痕跡 + 室外貓 = 高度懷疑
+    - name: 穿刺抽吸
+      notes: 惡臭膿液確認膿瘍
+  additional:
+    - FeLV/FIV 快篩（所有咬傷貓建議檢測 — 6-8 週後復檢 FIV）
+    - 培養與藥敏（難治性或復發性膿瘍）
+    - CBC（白血球增多）
+
+treatment:
+  principles:
+    - 膿瘍引流
+    - 抗生素
+    - FeLV/FIV 篩檢
+    - 預防（結紮、室內飼養）
+  general:
+    - 膿瘍引流（切開引流或穿刺引流）
+    - 傷口沖洗（大量生理食鹽水）
+    - Penrose drain 留置（大型膿瘍）
+    - 抗生素：amoxicillin-clavulanate 12.5-25 mg/kg PO BID 7-14 天
+    - 嚴重：ampicillin/sulbactam IV
+    - E-collar（防止舔舐）
+    - 傷口換藥
+    - FeLV/FIV 篩檢（咬傷後立即 + 6-8 週後復檢）
+    - 預防：結紮（減少打架行為）、室內飼養
+
+prognosis: 貓咬傷膿瘍經適當引流與抗生素治療預後極佳。多數 7-14 天完全癒合。FeLV/FIV 傳播為長期隱憂。未結紮室外公貓反覆咬傷膿瘍為常態。結紮可大幅減少打架頻率。
+
+pubmedQueries:
+  - query: '"cat bite" AND (abscess OR wound) AND (veterinary OR feline) AND ("treatment" OR "Pasteurella")'
+    frequency: monthly

@@ -1,0 +1,58 @@
+slug: paraneoplastic-syndrome
+nameEn: Paraneoplastic Syndrome
+nameZh: 副腫瘤症候群
+bodySystem: oncology
+description: 腫瘤引起的非直接侵犯或轉移造成的全身性效應。常見表現包括高鈣血症（淋巴瘤、肛囊腺癌）、低血糖（insulinoma）、紅血球增多症（腎腫瘤）、肥大性骨病等。
+
+aliases:
+  - { alias: "Paraneoplastic Disease", language: en }
+  - { alias: "副腫瘤效應", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬偶見。高鈣血症為最常見副腫瘤症候群。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓偶見。
+
+etiology:
+  categories:
+    - name: 腫瘤分泌物質
+      examples:
+        - PTHrP 分泌→高鈣血症
+        - Insulin 過量→低血糖
+        - EPO→紅血球增多
+        - 免疫複合物→多發性關節炎
+
+clinicalSigns:
+  early:
+    - 全身症狀（多飲多尿、虛弱）
+    - 可能先於腫瘤被發現
+  progressive:
+    - 代謝紊亂加重
+    - 器官損傷（高鈣→腎損傷）
+    - 腫瘤相關症狀出現
+
+diagnosis:
+  primaryTests:
+    - name: 血液生化
+      notes: 鈣、血糖、血球計數異常
+    - name: 腫瘤搜尋
+      notes: 發現副腫瘤症狀需積極搜尋潛在腫瘤
+
+treatment:
+  principles:
+    - 治療潛在腫瘤
+    - 控制代謝異常
+  general:
+    - 辨識並治療潛在腫瘤
+    - 高鈣血症：輸液利尿 + Bisphosphonate
+    - 低血糖：頻繁少量餵食 + Prednisolone
+    - 症狀管理
+
+prognosis: 取決於潛在腫瘤類型與治療反應。腫瘤成功治療後副腫瘤症狀通常消退。
+
+pubmedQueries:
+  - query: '"paraneoplastic syndrome" AND (veterinary OR canine OR feline) AND ("hypercalcemia" OR "diagnosis")'
+    frequency: monthly

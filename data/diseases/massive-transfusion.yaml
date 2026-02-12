@@ -1,0 +1,72 @@
+slug: massive-transfusion
+nameEn: Massive Transfusion
+nameZh: 大量輸血
+bodySystem: oncology
+description: 在 24 小時內輸注超過一倍血液容積或 3 小時內輸注超過 50% 血液容積的緊急醫療處置。常見於嚴重外傷性出血、術中大量失血或凝血功能障礙，需嚴密監測並預防低體溫、酸中毒及凝血異常等併發症。
+
+aliases:
+  - { alias: 大量輸血療法, language: zh }
+  - { alias: 緊急輸血, language: zh }
+  - { alias: Massive Blood Transfusion, language: en }
+  - { alias: Emergency Transfusion Protocol, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬大量輸血較貓常見，因犬有明確的血型分型系統（DEA 系統）。首次輸血可不做交叉試驗但建議仍做。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓血量較少且血型反應嚴重（B 型貓接受 A 型血可致命），必須做血型鑑定與交叉試驗。
+
+etiology:
+  categories:
+    - name: 急性失血
+      examples:
+        - 嚴重外傷（交通事故、穿刺傷）
+        - 術中大量出血（脾臟切除、腫瘤手術）
+        - 腹腔內出血（脾臟破裂、血管瘤出血）
+    - name: 凝血功能障礙
+      examples:
+        - 抗凝血劑中毒（老鼠藥）
+        - 瀰漫性血管內凝血（DIC）
+        - 嚴重血小板減少症
+
+clinicalSigns:
+  early:
+    - 心搏過速
+    - 黏膜蒼白
+    - 脈搏微弱
+    - CRT 延長
+  progressive:
+    - 低血壓持續
+    - 低體溫
+    - 代謝性酸中毒
+    - 凝血異常（稀釋性凝血病）
+    - 低血鈣（枸櫞酸鹽毒性）
+
+diagnosis:
+  primaryTests:
+    - name: PCV/TP（血容比/總蛋白）
+      notes: 連續監測血容比變化趨勢。急性出血初期 PCV 可能假性正常（脾臟收縮代償）。
+    - name: 凝血功能檢查
+      notes: PT/aPTT 監測凝血因子消耗。血小板計數評估稀釋性血小板減少。
+
+treatment:
+  principles:
+    - 控制出血來源為首要任務
+    - 維持組織灌流與氧氣輸送
+    - 預防「致命三聯征」：低體溫、酸中毒、凝血病
+    - 紅血球與血漿成分需平衡輸注
+  general:
+    - 全血或紅血球濃厚液輸注
+    - 新鮮冷凍血漿補充凝血因子
+    - 積極保溫措施
+    - 監測並糾正電解質異常（尤其低血鈣）
+    - 持續監測 PCV、凝血功能及生命徵象
+    - 必要時使用升壓藥維持血壓
+
+prognosis: 預後取決於出血原因及控制速度。可控制的外科性出血經大量輸血後預後良至謹慎。DIC 或無法控制的出血預後差。輸血相關併發症（輸血反應、TRALI）增加死亡風險。
+
+pubmedQueries:
+  - query: '"Massive Transfusion" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

@@ -1,0 +1,75 @@
+slug: whipworm-infection
+nameEn: Whipworm Infection
+nameZh: 鞭蟲感染
+bodySystem: infectious
+description: 鞭蟲感染由 Trichuris vulpis（犬）引起，成蟲寄居於盲腸與結腸。蟲卵在環境中極為耐久（可存活數年）。引起大腸性腹瀉、血便及電解質異常。貓感染（T. serrata）極罕見。
+
+aliases:
+  - { alias: 犬鞭蟲病, language: zh }
+  - { alias: Trichuris Infection, language: en }
+  - { alias: Whipworm Disease, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: T. vulpis 為犬常見腸道寄生蟲。蟲卵在土壤中可存活 5-7 年，環境去汙染極困難。前專利期 3 個月（較長），可能在糞檢陰性時已有症狀。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓鞭蟲 (T. serrata) 感染極罕見。臨床報告極少。
+
+etiology:
+  categories:
+    - name: 生活史
+      examples:
+        - 蟲卵在環境中 1-2 個月發育為感染性
+        - 經口攝入感染性蟲卵
+        - 幼蟲在小腸孵化，遷移至盲腸與結腸
+        - 前專利期約 3 個月
+        - 蟲卵在環境中可存活 5-7 年
+    - name: 致病機制
+      examples:
+        - 成蟲頭端鑽入腸黏膜
+        - 引起大腸黏膜損傷與出血
+        - 嚴重感染可引起類似 Addison 病的電解質異常（低鈉、高鉀）
+
+clinicalSigns:
+  early:
+    - 慢性間歇性大腸性腹瀉
+    - 糞便帶黏液
+    - 裡急後重
+  progressive:
+    - 血便（鮮血或暗紅色）
+    - 體重減輕
+    - 脫水
+    - 嚴重感染：低鈉高鉀血症（假性 Addison）
+    - 慢性貧血
+
+diagnosis:
+  primaryTests:
+    - name: 糞便浮游法
+      notes: 偵測特徵性檸檬形（雙塞）蟲卵。前專利期長（3 個月），可能需多次檢查。間歇性排卵
+    - name: 電解質檢查
+      notes: 嚴重感染可出現低鈉高鉀（需與 Addison 病鑑別）。ACTH 刺激試驗正常可排除 Addison
+  additional:
+    - CBC（嗜酸球增多、慢性貧血）
+    - 糞便潛血
+
+treatment:
+  principles:
+    - 驅蟲藥物有效但需多次給藥
+    - 環境蟲卵極難消除
+    - 每月預防性驅蟲
+    - 矯正電解質異常
+  general:
+    - Fenbendazole 50 mg/kg PO SID × 3 天（首選）
+    - 替代：milbemycin oxime（每月預防劑中含有效成分）
+    - 治療後 3 週與 3 個月各追加一次驅蟲
+    - 矯正電解質異常（IV 生理食鹽水）
+    - 每月含 milbemycin 或 moxidectin 的廣效預防劑
+    - 環境管理（清除糞便，但蟲卵難以消除）
+
+prognosis: 犬鞭蟲感染適當治療預後良好。電解質異常矯正後迅速改善。再感染常見（環境蟲卵持久），需持續每月預防。
+
+pubmedQueries:
+  - query: '"whipworm" OR "Trichuris vulpis" AND (canine OR veterinary) AND ("treatment" OR "control")'
+    frequency: monthly

@@ -1,0 +1,81 @@
+slug: infertility-female
+nameEn: Infertility Female
+nameZh: 母犬貓不孕症
+bodySystem: reproductive
+description: 母犬貓不孕症涵蓋配種後無法受孕或維持妊娠的各種原因。常見因素包括配種時機不當（最常見）、子宮疾病、卵巢功能異常、感染、先天性解剖異常與內分泌疾病。系統性繁殖評估可辨識多數原因。
+
+aliases:
+  - { alias: 母畜不孕, language: zh }
+  - { alias: Female Infertility, language: en }
+  - { alias: Failure to Conceive, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬最常見不孕原因為配種時機不當。黃體酮定量 (progesterone timing) 為確定最佳配種時間的金標準。其次為 CEH/子宮感染、甲狀腺低下。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓為誘發排卵動物，配種刺激不足可導致排卵失敗。群體環境壓力、隱性 FeLV/FIV 感染亦為原因。
+
+etiology:
+  categories:
+    - name: 配種相關
+      examples:
+        - 配種時機不當（最常見原因）
+        - 公犬繁殖力問題
+        - 配種次數不足
+        - 解剖不相容
+    - name: 母體因素
+      examples:
+        - 子宮疾病（CEH、子宮炎、黏膜纖維化）
+        - 卵巢功能異常（無發情、囊腫）
+        - 內分泌疾病（甲狀腺低下、腎上腺機能亢進）
+        - 感染（Brucella canis、mycoplasma）
+        - 先天性解剖異常（陰道狹窄、隔膜）
+        - 染色體異常
+
+clinicalSigns:
+  early:
+    - 配種後未受孕
+    - 發情週期不規則
+    - 無發情（anestrus）
+  progressive:
+    - 反覆配種失敗
+    - 早期胚胎吸收
+    - 流產
+    - 陰道分泌物異常
+
+diagnosis:
+  primaryTests:
+    - name: 黃體酮定量 (Progesterone timing)
+      notes: 血清黃體酮連續監測確認排卵時間。排卵時黃體酮約 5-8 ng/mL
+    - name: 陰道細胞學
+      notes: 監測發情週期階段
+  additional:
+    - Brucella canis 血清學
+    - 甲狀腺功能
+    - 腹部超音波（子宮、卵巢評估）
+    - 子宮培養
+    - 精液評估（公犬因素排除）
+    - 陰道鏡（解剖異常排除）
+    - 染色體核型分析
+
+treatment:
+  principles:
+    - 確認配種時機（黃體酮監測）
+    - 治療潛在原因
+    - 系統性評估公犬與母犬
+  general:
+    - 黃體酮定量配種 timing（最重要的介入）
+    - 甲狀腺低下：levothyroxine 替代
+    - 子宮感染：抗生素治療
+    - Brucella canis：不建議繁殖（公共衛生考量）
+    - 陰道狹窄：人工授精繞過解剖障礙
+    - 卵巢功能不全：GnRH 或 hCG 刺激
+    - 貓排卵失敗：確保充分交配刺激或 GnRH
+
+prognosis: 配種時機不當矯正後受孕率顯著提高。子宮疾病需視嚴重度。Brucella canis 感染犬不建議繁殖。先天性解剖異常部分可手術矯正。高齡犬繁殖力自然下降。
+
+pubmedQueries:
+  - query: '"infertility" AND (canine OR feline OR bitch OR queen) AND ("progesterone" OR "treatment" OR "diagnosis")'
+    frequency: monthly

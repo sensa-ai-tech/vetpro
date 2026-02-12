@@ -1,0 +1,56 @@
+slug: liposarcoma
+nameEn: Liposarcoma
+nameZh: 脂肪肉瘤
+bodySystem: oncology
+description: 脂肪組織的惡性腫瘤，為脂肪瘤的惡性對應。局部侵犯性強，完全切除後復發率中等。遠端轉移率相對低但可轉移至肺部。需與良性脂肪瘤鑑別，組織病理為確診依據。
+
+aliases:
+  - { alias: "Malignant Lipoma", language: en }
+  - { alias: "脂肪惡性腫瘤", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬罕見。中老年犬好發。肢體與軀幹皮下常見。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓罕見。
+
+etiology:
+  categories:
+    - name: 腫瘤性
+      examples:
+        - 脂肪細胞惡性增生
+        - 確切病因不明
+
+clinicalSigns:
+  early:
+    - 快速增長的皮下腫塊
+    - 質地較脂肪瘤硬
+    - 可能固定不移動
+  progressive:
+    - 局部侵犯周圍組織
+    - 潰瘍
+    - 遠端轉移（肺）
+
+diagnosis:
+  primaryTests:
+    - name: 組織病理
+      notes: 確診需活檢。區分低度與高度惡性
+    - name: 胸腔 X 光 / CT
+      notes: 分期檢查排除轉移
+
+treatment:
+  principles:
+    - 廣範圍手術切除
+    - 術後病理評估切除邊緣
+  general:
+    - 廣範圍手術切除
+    - 不完全切除考慮放射治療
+    - 化療效果有限
+
+prognosis: 完全切除後預後中等。局部復發率約 30-50%。低度惡性預後優於高度惡性。
+
+pubmedQueries:
+  - query: '"liposarcoma" AND (veterinary OR canine OR feline) AND ("prognosis" OR "treatment")'
+    frequency: monthly

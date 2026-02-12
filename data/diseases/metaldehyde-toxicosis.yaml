@@ -1,0 +1,80 @@
+slug: metaldehyde-toxicosis
+nameEn: Metaldehyde Toxicosis
+nameZh: 聚乙醛中毒
+bodySystem: toxicology
+description: 聚乙醛 (metaldehyde) 為蝸牛/蛞蝓餌劑的常見活性成分，犬攝入後引起嚴重肌肉震顫、癲癇與高燒。毒性機制涉及 GABA 濃度降低與 monoamine 神經傳導物質增加。致死率高，需緊急治療。
+
+aliases:
+  - { alias: 蝸牛餌劑中毒, language: zh }
+  - { alias: Metaldehyde Poisoning, language: en }
+  - { alias: Slug Bait Poisoning, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬致死劑量約 100-500 mg/kg。顆粒狀餌劑因適口性佳常被犬攝食。發病快（1-3 小時）。春秋季節使用蝸牛餌劑時中毒風險最高。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓中毒較少見但同樣易感。致死劑量約 200 mg/kg。
+
+etiology:
+  categories:
+    - name: 毒性機制
+      examples:
+        - 降低腦內 GABA 與 5-HT 濃度
+        - 增加 norepinephrine 濃度
+        - 導致中樞神經興奮失控
+        - 嚴重肌肉活動引起代謝性酸中毒與高燒
+    - name: 來源
+      examples:
+        - 顆粒狀或液態蝸牛/蛞蝓餌劑
+        - 固體燃料片（camping fuel）
+
+clinicalSigns:
+  early:
+    - 不安與過度興奮（攝入後 1-3 小時）
+    - 過度流涎
+    - 肌肉震顫
+    - 共濟失調
+  progressive:
+    - 嚴重全身性震顫（「shaker dog」）
+    - 癲癇
+    - 角弓反張
+    - 高燒 (>41°C)
+    - 代謝性酸中毒
+    - 肝衰竭（存活者 2-3 天後）
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 病史確認
+      notes: 確認蝸牛餌劑暴露。檢查產品標示成分（metaldehyde vs methiocarb vs iron phosphate）
+    - name: 臨床表現
+      notes: 快速發作的嚴重肌肉震顫與癲癇
+  additional:
+    - 胃內容物 metaldehyde 分析
+    - 血液氣體（嚴重代謝性酸中毒）
+    - 肝功能（延遲性肝損傷）
+    - CK（橫紋肌溶解）
+
+treatment:
+  principles:
+    - 控制震顫與癲癇最優先
+    - 積極散熱
+    - 無特效解毒劑
+    - 監測延遲性肝損傷
+  general:
+    - Diazepam 0.5-2 mg/kg IV 或 methocarbamol 55-220 mg/kg IV
+    - 嚴重者 propofol CRI 或 pentobarbital
+    - 積極物理降溫（高燒 >41°C 致命）
+    - 震顫控制後催吐 + 活性炭
+    - IV 輸液矯正酸中毒
+    - 肝保護（SAMe、NAC）
+    - 住院 48-72 小時監測肝功能
+    - 使用含 iron phosphate 的安全替代蝸牛餌劑
+
+prognosis: 犬 metaldehyde 中毒致死率可達 50%（未治療）。積極控制震顫與高燒可大幅改善預後。存活者需監測 2-3 天後的肝損傷。完全恢復者通常無後遺症。
+
+pubmedQueries:
+  - query: '"metaldehyde" AND (toxicosis OR poisoning) AND (veterinary OR canine)'
+    frequency: monthly

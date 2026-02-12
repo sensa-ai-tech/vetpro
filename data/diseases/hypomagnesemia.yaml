@@ -1,0 +1,70 @@
+slug: hypomagnesemia
+nameEn: Hypomagnesemia
+nameZh: 低鎂血症
+bodySystem: metabolic
+description: 血清鎂離子濃度低於正常值（犬貓 <1.5 mg/dL）的電解質異常。鎂為重要的細胞內陽離子，參與 300 多種酶促反應，低鎂血症可導致頑固性低鉀血症、低鈣血症及難治性心律不整。
+
+aliases:
+  - { alias: 低血鎂, language: zh }
+  - { alias: 鎂缺乏症, language: zh }
+  - { alias: Low Magnesium, language: en }
+  - { alias: Magnesium Deficiency, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬低鎂血症常見於重症住院犬（ICU 患者）、糖尿病酮酸中毒及長期腸胃道疾病。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓低鎂血症可見於糖尿病酮酸中毒、慢性腎病及重餵食症候群（refeeding syndrome）。
+
+etiology:
+  categories:
+    - name: 攝入不足/腸道流失
+      examples:
+        - 長期厭食或營養不良
+        - 慢性腹瀉或嘔吐
+        - 重餵食症候群
+    - name: 腎臟流失
+      examples:
+        - 利尿劑使用（呋塞米等袢利尿劑）
+        - 糖尿病酮酸中毒（滲透性利尿）
+        - 腎小管損傷
+
+clinicalSigns:
+  early:
+    - 食慾不振
+    - 肌肉無力
+    - 嗜睡
+    - 難治性低鉀血症
+  progressive:
+    - 肌肉震顫或抽搐
+    - 心律不整（室性早搏、心室頻脈）
+    - 癲癇發作
+    - 難治性低鈣血症
+
+diagnosis:
+  primaryTests:
+    - name: 血清總鎂
+      notes: 正常犬貓 1.5-2.5 mg/dL。<1.5 mg/dL 確診低鎂血症。離子化鎂更準確但臨床可及性低。
+    - name: 電解質全套
+      notes: 同時評估鉀、鈣離子。低鎂常伴低鉀低鈣，且單純補鉀補鈣無效時應想到低鎂。
+
+treatment:
+  principles:
+    - 有症狀或嚴重低鎂需靜脈補充
+    - 同時糾正合併的低鉀及低鈣
+    - 治療基礎病因
+    - 監測心電圖
+  general:
+    - 靜脈補鎂：MgSO4 0.15-0.3 mEq/kg IV 稀釋後緩慢輸注（6-24 小時）
+    - 嚴重者 MgCl2 0.75-1 mEq/kg/day CRI
+    - 輸注速度過快可致低血壓及心搏過緩
+    - 持續靜脈輸液 24-48 小時後改口服補充
+    - 監測血清鎂及心電圖
+
+prognosis: 輕度低鎂血症經補充後預後良好。合併嚴重心律不整或難治性電解質紊亂者預後取決於基礎疾病。重症 ICU 患者低鎂血症為預後不良的獨立因子。
+
+pubmedQueries:
+  - query: '"Hypomagnesemia" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

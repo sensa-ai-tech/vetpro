@@ -1,0 +1,62 @@
+slug: pressure-sore
+nameEn: Pressure Sore
+nameZh: 褥瘡
+bodySystem: dermatology
+description: 長期臥床或行動不便的動物，骨突處皮膚因持續壓迫導致血液循環受阻，造成組織壞死與潰瘍。常見於癱瘓犬、術後長期臥床或老年行動困難動物。
+
+aliases:
+  - { alias: "Decubitus Ulcer", language: en }
+  - { alias: "Bed Sore", language: en }
+  - { alias: "壓瘡", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 癱瘓犬、老年大型犬、術後長期臥床者。骨突處（肘、飛節、坐骨、肩胛）。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓較少見，長期臥床貓可發生。
+
+etiology:
+  categories:
+    - name: 壓迫性缺血
+      examples:
+        - 持續壓力導致微循環受阻
+        - 組織缺氧壞死
+        - 摩擦與剪力加重
+
+clinicalSigns:
+  early:
+    - 壓迫區皮膚發紅
+    - 皮膚溫度改變
+    - 輕微腫脹
+  progressive:
+    - 皮膚破損
+    - 潰瘍深入真皮/皮下
+    - 繼發感染
+    - 骨骼暴露（嚴重時）
+
+diagnosis:
+  primaryTests:
+    - name: 傷口評估
+      notes: 分級（I-IV 級）。評估深度、感染徵象
+    - name: 培養
+      notes: 感染傷口做細菌培養
+
+treatment:
+  principles:
+    - 預防優於治療
+    - 減壓
+    - 傷口照護
+  general:
+    - 定時翻身（每 2-4 小時）
+    - 厚軟墊或氣墊床
+    - 傷口清創與敷料更換
+    - 感染時全身性抗生素
+    - 營養支持
+
+prognosis: 預防可完全避免。早期褥瘡去除壓力後可癒合。深層褥瘡癒合困難，可能需手術。
+
+pubmedQueries:
+  - query: '"pressure sore" OR "decubitus ulcer" AND (veterinary OR canine) AND ("prevention" OR "treatment")'
+    frequency: monthly

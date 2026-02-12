@@ -1,0 +1,67 @@
+slug: cardiac-lymphoma
+nameEn: Cardiac Lymphoma
+nameZh: 心臟淋巴瘤
+bodySystem: oncology
+description: 心臟淋巴瘤在犬隻通常為全身性淋巴瘤累及心臟的表現，原發性心臟淋巴瘤罕見。可侵犯心肌、心包膜或心腔。心包積液為常見表現。貓隻心臟淋巴瘤可與 FeLV 感染相關。
+
+aliases:
+  - { alias: 心臟淋巴腫瘤, language: zh }
+  - { alias: Cardiac Lymphosarcoma, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻心臟淋巴瘤多為全身性淋巴瘤的心臟累及。中老年犬好發。可伴隨心包積液與心律不整。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻心臟淋巴瘤可與 FeLV 感染相關。年輕貓亦可發生。
+
+etiology:
+  categories:
+    - name: 腫瘤特性
+      examples:
+        - 全身性淋巴瘤心臟累及（最常見）
+        - 原發性心臟淋巴瘤（罕見）
+        - 高度惡性 B 細胞或 T 細胞淋巴瘤
+    - name: 風險因素
+      examples:
+        - 貓白血病病毒（FeLV）感染（貓）
+        - 免疫抑制狀態
+        - 品種傾向不明確
+
+clinicalSigns:
+  early:
+    - 心包積液（心音減弱）
+    - 心律不整
+    - 嗜睡與食慾下降
+  progressive:
+    - 心包填塞
+    - 充血性心衰竭
+    - 呼吸困難
+    - 全身淋巴結腫大（全身性淋巴瘤）
+    - 體重減輕
+
+diagnosis:
+  primaryTests:
+    - name: 心臟超音波（Echocardiography）
+      notes: 可見心肌或心包膜腫塊浸潤，心包積液。淋巴瘤可表現為瀰漫性心肌浸潤而非單一腫塊。
+    - name: 心包液細胞學
+      notes: 心包液送細胞學檢查可偵測腫瘤細胞。淋巴瘤的心包液中較易找到腫瘤細胞（與 hemangiosarcoma 不同）。流式細胞儀分析有助於確診。
+
+treatment:
+  principles:
+    - 淋巴瘤為化療敏感腫瘤
+    - 全身性化療為主要治療方式
+    - 心包積液需緊急引流
+  general:
+    - 緊急心包穿刺引流（pericardiocentesis）
+    - "CHOP 化療方案（犬）：Cyclophosphamide + Doxorubicin + Vincristine + Prednisone"
+    - "COP 方案（較溫和）：Cyclophosphamide + Vincristine + Prednisone"
+    - 貓：COP 或 CHOP 方案
+    - 心律不整治療（依類型選擇抗心律不整藥物）
+
+prognosis: 心臟淋巴瘤對化療的反應率較高（約 60-80%）。犬隻全身性淋巴瘤合併心臟累及的中位存活時間約 6-12 個月（CHOP 方案）。貓隻 FeLV 陽性者預後較差。化療後心包積液通常可控制。
+
+pubmedQueries:
+  - query: '"cardiac lymphoma" AND (veterinary OR canine OR feline) AND ("chemotherapy" OR "treatment")'
+    frequency: monthly

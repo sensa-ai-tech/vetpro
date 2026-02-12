@@ -1,0 +1,71 @@
+slug: conjunctivitis
+nameEn: Conjunctivitis
+nameZh: 結膜炎
+bodySystem: ophthalmology
+description: 結膜的發炎反應，為小動物眼科最常見疾病之一。犬以細菌性與過敏性最常見，貓以病毒性 (FHV-1、FCV) 最常見。臨床表現為結膜充血、水腫與分泌物。
+
+aliases:
+  - { alias: Pink Eye, language: en }
+  - { alias: Bacterial Conjunctivitis, language: en }
+  - { alias: 紅眼症, language: zh }
+  - { alias: 結膜發炎, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬極為常見。常見原因為細菌感染、過敏、乾眼症 (KCS) 續發。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓極為常見。FHV-1 與 FCV 為主要原因。Chlamydophila felis 也常見。
+
+etiology:
+  categories:
+    - name: 感染性
+      examples:
+        - 細菌性 (Staphylococcus、Streptococcus)
+        - 病毒性 (FHV-1、FCV — 貓；犬瘟熱)
+        - Chlamydophila felis (貓)
+        - Mycoplasma spp.
+    - name: 非感染性
+      examples:
+        - 過敏性 (季節性、接觸性)
+        - 乾眼症 (KCS) 續發
+        - 異物刺激
+        - 眼瞼異常 (entropion、ectropion)
+
+clinicalSigns:
+  early:
+    - 結膜充血 (紅眼)
+    - 流淚增加
+    - 輕微眨眼
+  progressive:
+    - 結膜水腫 (chemosis)
+    - 黏液或黏液膿性分泌物
+    - 眼瞼黏合 (晨起)
+    - 第三眼瞼突出
+
+diagnosis:
+  primaryTests:
+    - name: 眼科基本檢查
+      notes: 直接觀察結膜充血、水腫、分泌物性質。排除角膜潰瘍 (螢光素染色)
+    - name: Schirmer 淚液試驗 (STT)
+      notes: 排除 KCS 為潛在原因 (正常 > 15 mm/min)
+    - name: 結膜拭子培養
+      notes: 慢性或難治病例做細菌培養藥敏。貓做 FHV-1 PCR 與 Chlamydophila PCR
+
+treatment:
+  principles:
+    - 確定並治療根本原因
+    - 局部抗生素治療細菌性結膜炎
+    - 避免不必要使用類固醇
+  general:
+    - 細菌性：廣效抗生素眼藥水 (Ofloxacin 或 Tobramycin) BID-QID
+    - FHV-1：Famciclovir 口服 + L-lysine 補充
+    - Chlamydophila：Doxycycline 口服 (28 天)
+    - 過敏性：移除過敏原 + 抗組織胺眼藥水
+
+prognosis: 大部分結膜炎預後良好。細菌性通常 7-14 天治癒。FHV-1 可能反覆發作 (潛伏感染)。慢性病例需找出潛在原因才能有效控制。
+
+pubmedQueries:
+  - query: '"conjunctivitis" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis")'
+    frequency: monthly

@@ -1,0 +1,65 @@
+slug: narcolepsy
+nameEn: Narcolepsy
+nameZh: 猝睡症
+bodySystem: neurology
+description: 睡眠-覺醒調節障礙，特徵為不可抗拒的突發性睡眠發作與猝倒 (cataplexy，突然肌張力喪失倒下但意識清楚)。犬的遺傳型與下丘腦分泌素 (hypocretin/orexin) 受體基因突變有關。
+
+aliases:
+  - { alias: Narcolepsy-Cataplexy, language: en }
+  - { alias: Sleep Disorder, language: en }
+  - { alias: 嗜睡症, language: zh }
+  - { alias: 發作性睡病, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: Doberman Pinscher、Labrador Retriever、Dachshund 有遺傳型 (hypocretin receptor 2 基因突變)。其他品種可見後天型。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓偶有報告，多為後天型。
+
+etiology:
+  categories:
+    - name: 遺傳性
+      examples:
+        - Hypocretin (orexin) 受體 2 基因突變 (體染色體隱性)
+        - Doberman Pinscher、Labrador Retriever 已確認突變
+    - name: 後天性
+      examples:
+        - 免疫媒介性下丘腦分泌素神經元破壞
+        - 特發性
+
+clinicalSigns:
+  early:
+    - 白天過度嗜睡
+    - 興奮或進食時突然倒下 (cataplexy)
+    - 發作後快速恢復正常
+  progressive:
+    - 發作頻率增加
+    - 由情緒激動觸發 (進食、玩耍)
+    - 發作持續數秒至數分鐘
+
+diagnosis:
+  primaryTests:
+    - name: 臨床觀察 / 食物誘發試驗
+      notes: 擺放多碗食物觀察猝倒發作。典型 cataplexy 發作具診斷價值
+    - name: 基因檢測
+      notes: Doberman、Labrador 可做 HCRTR2 基因突變篩檢
+    - name: 腦脊液 Hypocretin 濃度
+      notes: 後天型患者腦脊液 hypocretin 濃度降低
+
+treatment:
+  principles:
+    - 控制症狀、減少發作頻率
+    - 環境管理減少觸發因素
+  general:
+    - Imipramine (三環抗憂鬱劑) 控制 cataplexy
+    - Modafinil 或 Methylphenidate 改善嗜睡
+    - 避免過度興奮的情境
+    - 飲食管理 (單碗少量餵食)
+
+prognosis: 不危及生命但影響生活品質。藥物可有效控制症狀。遺傳型終生需管理。發作時無痛苦，動物在非發作期完全正常。受影響犬不建議繁殖。
+
+pubmedQueries:
+  - query: '"narcolepsy" AND (veterinary OR canine OR feline) AND ("treatment" OR "genetics")'
+    frequency: monthly

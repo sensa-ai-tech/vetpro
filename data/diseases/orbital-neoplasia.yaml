@@ -1,0 +1,70 @@
+slug: orbital-neoplasia
+nameEn: Orbital Neoplasia
+nameZh: 眶內腫瘤
+bodySystem: oncology
+description: 眼眶內發生的原發性或轉移性腫瘤，導致眼球突出 (exophthalmos)、眼球運動受限與視力障礙。犬以骨肉瘤、纖維肉瘤與腦膜瘤最常見，貓以鱗狀上皮細胞癌與淋巴瘤最常見。
+
+aliases:
+  - { alias: Orbital Tumor, language: en }
+  - { alias: Retrobulbar Tumor, language: en }
+  - { alias: 眼眶腫瘤, language: zh }
+  - { alias: 球後腫瘤, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬以肉瘤類 (osteosarcoma、fibrosarcoma) 和腦膜瘤最常見。多為惡性。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓以鱗狀上皮細胞癌 (鼻腔延伸) 和淋巴瘤最常見。
+
+etiology:
+  categories:
+    - name: 原發性
+      examples:
+        - 骨肉瘤 (osteosarcoma)
+        - 纖維肉瘤 (fibrosarcoma)
+        - 腦膜瘤 (meningioma)
+        - 多葉骨軟骨肉瘤
+    - name: 繼發性/轉移性
+      examples:
+        - 鼻腔腫瘤延伸 (鱗狀上皮細胞癌)
+        - 遠端轉移 (乳腺瘤、黑色素瘤)
+        - 淋巴瘤浸潤
+
+clinicalSigns:
+  early:
+    - 單側眼球突出 (exophthalmos)
+    - 第三眼瞼突出
+    - 眼球運動受限
+  progressive:
+    - 疼痛 (張口困難)
+    - 視力喪失
+    - 結膜充血水腫
+    - 暴露性角膜炎
+
+diagnosis:
+  primaryTests:
+    - name: CT / MRI
+      notes: 評估腫塊大小、侵犯範圍、骨質破壞。MRI 軟組織解析優於 CT
+    - name: 細針穿刺 (FNA)
+      notes: CT 引導下穿刺取樣做細胞學
+    - name: 眼部超音波
+      notes: 初步評估球後腫塊
+
+treatment:
+  principles:
+    - 多數需手術 (眶內容物摘除)
+    - 輔助放射治療
+    - 化療依腫瘤類型而定
+  general:
+    - 眶內容物摘除 (exenteration)
+    - 術後放射治療 (不完全切除)
+    - 淋巴瘤：全身性化療
+    - 姑息性治療 (無法手術者)
+
+prognosis: 整體預後謹慎至不良。手術切除邊緣乾淨者預後較佳。骨肉瘤中位存活 6-12 個月。淋巴瘤對化療反應較佳。鼻腔延伸型腫瘤預後不良。
+
+pubmedQueries:
+  - query: '"orbital neoplasia" OR "orbital tumor" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
+    frequency: monthly

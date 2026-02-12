@@ -1,0 +1,66 @@
+slug: lissencephaly
+nameEn: Lissencephaly
+nameZh: 平腦症
+bodySystem: neurology
+description: 先天性大腦皮質發育異常，腦回 (gyri) 與腦溝 (sulci) 缺失或減少，導致腦表面光滑。屬於神經元遷移障礙 (neuronal migration disorder)，臨床表現為癲癇、行為異常與認知功能障礙。
+
+aliases:
+  - { alias: Smooth Brain, language: en }
+  - { alias: Agyria, language: en }
+  - { alias: 無腦回症, language: zh }
+  - { alias: 光滑腦, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: Lhasa Apso 品種有遺傳傾向。Wire Fox Terrier、Irish Setter 也有報告。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓極為罕見，偶有個案報告。
+
+etiology:
+  categories:
+    - name: 遺傳性
+      examples:
+        - Lhasa Apso 品種遺傳 (體染色體隱性)
+        - 神經元遷移相關基因突變
+    - name: 發育性
+      examples:
+        - 胚胎期 (妊娠中期) 神經元遷移障礙
+        - 子宮內感染可能為誘因
+
+clinicalSigns:
+  early:
+    - 幼犬學習能力差
+    - 行為異常 (對環境反應遲鈍)
+    - 視覺障礙 (皮質性失明)
+  progressive:
+    - 癲癇發作 (常見)
+    - 共濟失調
+    - 難以訓練
+    - 反應遲鈍
+
+diagnosis:
+  primaryTests:
+    - name: MRI
+      notes: 腦皮質表面光滑，缺乏正常腦回與腦溝。皮質增厚。確診首選影像學檢查
+    - name: 神經學檢查
+      notes: 前腦徵象：行為異常、視覺障礙、癲癇
+    - name: 腦電圖 (EEG)
+      notes: 可見異常放電模式
+
+treatment:
+  principles:
+    - 無法治癒
+    - 控制癲癇為主要治療目標
+    - 提供安全的生活環境
+  general:
+    - 抗癲癇藥物 (Phenobarbital、Levetiracetam)
+    - 環境管理 (避免高處、尖銳物品)
+    - 行為評估與生活品質監測
+
+prognosis: 預後謹慎至不良。無法治癒的先天性疾病。癲癇控制效果因個體而異。輕度病例可維持可接受的生活品質，但嚴重病例可能需考慮安樂死。不建議繁殖受影響品系。
+
+pubmedQueries:
+  - query: '"lissencephaly" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "MRI")'
+    frequency: monthly

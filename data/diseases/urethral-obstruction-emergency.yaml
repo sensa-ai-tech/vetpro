@@ -1,0 +1,83 @@
+slug: urethral-obstruction-emergency
+nameEn: Urethral Obstruction Emergency
+nameZh: 尿道阻塞急症
+bodySystem: emergency
+description: 尿道阻塞為尿道被結石、黏液栓 (urethral plug)、腫瘤或痙攣阻塞導致無法排尿的緊急狀態。公貓為最常見受影響動物（尿道細長）。完全阻塞 24-48 小時可致命性高血鉀與急性腎衰竭。為最常見的貓科急診之一。
+
+aliases:
+  - { alias: 尿路阻塞, language: zh }
+  - { alias: 貓下泌尿道阻塞, language: zh }
+  - { alias: Urethral Blockage, language: en }
+  - { alias: Blocked Cat, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬尿道阻塞以公犬結石阻塞較常見（os penis 處最易卡住）。犬尿道較貓寬，完全阻塞較少見。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 公貓尿道阻塞為極常見急診。黏液栓 (urethral plug) 與 struvite 結石為主要原因。室內公貓、肥胖、乾糧飲食為風險因子。
+
+etiology:
+  categories:
+    - name: 阻塞原因
+      examples:
+        - 黏液栓 (urethral plug)（貓最常見）
+        - 結石（struvite、calcium oxalate）
+        - 尿道痙攣
+        - 尿道腫瘤
+        - 血塊
+    - name: 病理生理
+      examples:
+        - 膀胱過度擴張→膀胱壁損傷
+        - 腎後性氮血症（BUN/Cr 急遽升高）
+        - 高血鉀→心律不整→心臟停止
+        - 代謝性酸中毒
+
+clinicalSigns:
+  early:
+    - 反覆蹲踞排尿姿勢但無尿或極少量
+    - 叫聲（排尿疼痛）
+    - 頻繁舔舐尿道口
+    - 在貓砂盆外排尿
+  progressive:
+    - 腹部疼痛（膀胱極度膨大如硬球）
+    - 嘔吐
+    - 嗜睡、厭食
+    - 心搏過緩（高血鉀）
+    - 昏迷、死亡
+
+diagnosis:
+  primaryTests:
+    - name: 理學檢查
+      notes: 膀胱觸診極度膨大、堅硬、疼痛。公貓陰莖可見結晶或栓塞物
+    - name: 血液檢查
+      notes: 血鉀升高（>6.5 mEq/L 為危險）、BUN/Cr 升高、代謝性酸中毒
+  additional:
+    - 心電圖（高血鉀心律不整：高聳 T 波、QRS 延長、心搏過緩）
+    - 腹部 X-ray/超音波（結石、膀胱狀態）
+    - 尿液分析
+
+treatment:
+  principles:
+    - 先矯正高血鉀（可致命）
+    - 尿道導管解除阻塞
+    - IV 輸液矯正氮血症
+    - 長期預防復發
+  general:
+    - 高血鉀急救：10% calcium gluconate 0.5-1 mL/kg IV 緩慢（心臟保護）
+    - Regular insulin 0.25-0.5 U/kg IV + 50% dextrose 1-2 g/U insulin（降鉀）
+    - IV 輸液（0.9% NaCl）
+    - 鎮靜/短效麻醉下尿道導管放置
+    - 沖洗膀胱
+    - 留置導管 24-48 小時
+    - 止痛（buprenorphine）
+    - 導管移除後監測排尿
+    - 長期預防：濕糧飲食、增加飲水、處方飲食、減壓
+    - 復發性阻塞：會陰尿道造口術 (perineal urethrostomy)
+
+prognosis: 及時解除阻塞並矯正電解質的貓預後佳（存活率 >90%）。高血鉀引起心臟停止前未治療者致命。復發率約 30-50%。會陰尿道造口術可大幅降低再次阻塞風險。
+
+pubmedQueries:
+  - query: '"urethral obstruction" AND (veterinary OR canine OR feline) AND ("treatment" OR "emergency" OR "hyperkalemia")'
+    frequency: monthly

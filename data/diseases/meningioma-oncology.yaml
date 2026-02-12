@@ -1,0 +1,58 @@
+slug: meningioma-oncology
+nameEn: Meningioma Oncology
+nameZh: 腦膜瘤（腫瘤科）
+bodySystem: oncology
+description: 腦膜細胞來源的腫瘤，為犬貓最常見的顱內原發性腫瘤。犬多為單發但侵犯性，貓多為單發良性可完全切除。好發於老年動物。
+
+aliases:
+  - { alias: "Meningeal Tumor", language: en }
+  - { alias: "腦膜腫瘤", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬最常見的顱內腫瘤之一。長頭品種犬好發。老年犬。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓最常見的顱內腫瘤。老年貓。手術切除預後佳。
+
+etiology:
+  categories:
+    - name: 腫瘤性
+      examples:
+        - 腦膜細胞增生
+        - 多數為良性行為但犬侵犯性較貓強
+        - 貓多為良性可完全切除
+
+clinicalSigns:
+  early:
+    - 新發癲癇
+    - 行為改變
+    - 步態異常
+  progressive:
+    - 神經功能進行性惡化
+    - 前腦徵象（行為異常、走圈）
+    - 視力喪失
+
+diagnosis:
+  primaryTests:
+    - name: MRI
+      notes: 典型均勻強化、寬基底附著硬腦膜的腫塊。dural tail sign
+    - name: CT
+      notes: 可見鈣化與骨質增生
+
+treatment:
+  principles:
+    - 手術切除是理想治療
+    - 輔助放射治療
+  general:
+    - 手術切除（特別是貓，成功率高）
+    - 術後放射治療（犬，降低復發）
+    - Hydroxyurea（無法手術的犬）
+    - Prednisolone + 抗癲癇藥物（姑息性）
+
+prognosis: 貓手術切除預後良好（中位存活 > 2 年，部分 > 5 年）。犬手術 + 放射中位存活 > 2 年。姑息性治療中位存活數月。
+
+pubmedQueries:
+  - query: '"meningioma" AND (veterinary OR canine OR feline) AND ("surgery" OR "radiation" OR "prognosis")'
+    frequency: monthly

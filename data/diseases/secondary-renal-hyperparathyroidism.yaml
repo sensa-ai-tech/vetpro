@@ -1,0 +1,71 @@
+slug: secondary-renal-hyperparathyroidism
+nameEn: Secondary Renal Hyperparathyroidism
+nameZh: 腎性繼發性副甲狀腺功能亢進
+bodySystem: urinary
+description: 腎性繼發性副甲狀腺功能亢進為慢性腎病（CKD）導致的副甲狀腺持續性過度刺激與 PTH 過量分泌。機制為腎臟磷排泄能力下降→高磷血症→低鈣血症→活性維生素 D（calcitriol）合成減少→PTH 代償性升高。為 CKD 的重要併發症，加速腎病進展並引起腎性骨營養不良。
+
+aliases:
+  - { alias: 腎性副甲狀腺功能亢進, language: zh }
+  - { alias: Renal Secondary Hyperparathyroidism, language: en }
+  - { alias: CKD-MBD, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬隻腎性繼發性副甲狀腺功能亢進在 CKD IRIS stage 3-4 非常常見。早在 stage 2 即可開始 PTH 升高。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓隻 CKD 極為常見，腎性繼發性副甲狀腺功能亢進亦常見。
+
+etiology:
+  categories:
+    - name: 病理機制
+      examples:
+        - 腎臟磷排泄能力下降→高磷血症
+        - Calcitriol（1,25-dihydroxyvitamin D）合成減少
+        - 低鈣血症（離子鈣降低）
+        - FGF-23 升高
+    - name: 結果
+      examples:
+        - PTH 持續升高（secondary hyperparathyroidism）
+        - 腎性骨營養不良（rubber jaw、骨密度降低）
+        - 軟組織鈣化
+        - 加速腎病進展
+
+clinicalSigns:
+  early:
+    - CKD 的基本症狀（多飲多尿、食慾下降）
+    - 高磷血症（血檢發現）
+    - PTH 升高（血檢發現）
+  progressive:
+    - 腎性骨營養不良（下顎骨軟化「rubber jaw」）
+    - 牙齒鬆動
+    - 病理性骨折（嚴重時）
+    - 軟組織鈣化（腎臟、胃壁、血管）
+    - 腎功能加速惡化
+
+diagnosis:
+  primaryTests:
+    - name: 血液生化
+      notes: 高磷血症（CKD stage 3-4 常見）。離子鈣可能低或正常低值。PTH 升高（intact PTH 測定）。BUN/Creatinine 升高。
+    - name: 影像學
+      notes: X 光可見骨密度降低（嚴重時）。下顎骨 rubber jaw 表現。軟組織鈣化。腹部超音波評估腎臟鈣化。
+
+treatment:
+  principles:
+    - 控制高磷血症為核心
+    - 限磷飲食
+    - Calcitriol 補充（謹慎）
+  general:
+    - 腎臟處方飲食（低磷）
+    - "磷結合劑：Aluminum hydroxide 30-90 mg/kg/day 分次隨餐（一線）"
+    - "或 Lanthanum carbonate、Calcium carbonate（避免高鈣血症）"
+    - "Calcitriol 2.5-3.5 ng/kg PO q24h（需在血磷控制後才使用，監測離子鈣）"
+    - 目標：血磷 <4.5 mg/dL（IRIS stage 3）、<6.0 mg/dL（IRIS stage 4）
+    - CKD 標準管理
+
+prognosis: 腎性繼發性副甲狀腺功能亢進的預後取決於 CKD 的嚴重度與控制。適當的磷控制可顯著延緩 CKD 進展與改善 PTH 水準。早期介入（IRIS stage 2-3）效果最好。嚴重骨營養不良為晚期表現且不易逆轉。終生飲食與磷控制管理。
+
+pubmedQueries:
+  - query: '"secondary hyperparathyroidism" AND (veterinary OR canine OR feline) AND ("chronic kidney disease" OR "phosphorus" OR "treatment")'
+    frequency: monthly

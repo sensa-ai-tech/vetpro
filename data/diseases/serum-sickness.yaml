@@ -1,0 +1,77 @@
+slug: serum-sickness
+nameEn: Serum Sickness
+nameZh: 血清病
+bodySystem: immunology
+description: 血清病 (serum sickness) 為第三型過敏反應，因注入異種蛋白（血清、抗毒素）或某些藥物後形成循環免疫複合物，沉積於血管、關節與腎臟引起全身性炎症。犬中可見於抗蛇毒血清使用後。藥物引起的類血清病反應 (serum sickness-like reaction) 更為常見。
+
+aliases:
+  - { alias: 血清病反應, language: zh }
+  - { alias: 類血清病反應, language: zh }
+  - { alias: Serum Sickness-Like Reaction, language: en }
+  - { alias: Immune Complex Disease, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬血清病可見於抗蛇毒血清注射後（7-14 天）。Cephalosporin 類抗生素引起的類血清病反應偶有報告。多關節炎 + 發燒 + 皮膚反應為三聯征。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓血清病極罕見。理論上暴露於異種蛋白後可發生。
+
+etiology:
+  categories:
+    - name: 致病機制
+      examples:
+        - 注入異種蛋白後產生抗體
+        - 抗原抗體形成循環免疫複合物
+        - 免疫複合物沉積於小血管
+        - 補體活化→血管炎、腎絲球腎炎、關節炎
+    - name: 常見誘因
+      examples:
+        - 抗蛇毒血清（異種血清）
+        - Cephalosporin 類抗生素
+        - 生物製劑（單株抗體）
+        - 異種血漿輸注
+
+clinicalSigns:
+  early:
+    - 發燒（暴露後 7-14 天）
+    - 蕁麻疹
+    - 關節腫脹與疼痛
+  progressive:
+    - 多關節炎
+    - 淋巴結腫大
+    - 腎絲球腎炎（蛋白尿）
+    - 血管炎（皮膚紫斑）
+    - 嗜睡、厭食
+
+diagnosis:
+  primaryTests:
+    - name: 臨床表現與時間關聯
+      notes: 暴露異種蛋白或藥物後 7-21 天出現發燒 + 關節炎 + 皮膚反應
+    - name: 實驗室檢查
+      notes: 補體 C3 下降、ESR/CRP 升高
+  additional:
+    - 尿液分析（蛋白尿）
+    - CBC（嗜中性球增多、血小板減少）
+    - 關節液分析
+    - 腎功能
+
+treatment:
+  principles:
+    - 停止致敏物質
+    - 抗炎治療
+    - 多為自限性
+  general:
+    - 停止接觸致敏物質
+    - Prednisolone 1-2 mg/kg/day（控制炎症），7-14 天逐漸減量
+    - 抗組織胺（瘙癢緩解）
+    - NSAIDs（關節疼痛，與類固醇擇一）
+    - IV 輸液（維持腎灌注）
+    - 多數 2-3 週內自行緩解
+
+prognosis: 血清病為自限性疾病，停止暴露致敏物質後多數在 2-3 週內完全恢復。嚴重腎絲球腎炎者需較長恢復期。未來需避免同一異種蛋白製劑。
+
+pubmedQueries:
+  - query: '"serum sickness" AND (veterinary OR canine OR feline) AND ("treatment" OR "immune complex")'
+    frequency: monthly

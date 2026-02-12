@@ -1,0 +1,79 @@
+slug: aspergillosis
+nameEn: Aspergillosis
+nameZh: 麴菌感染
+bodySystem: infectious
+description: 麴菌感染 (aspergillosis) 由 Aspergillus 屬真菌引起，犬主要表現為鼻腔/鼻竇型（最常見）與播散型。鼻腔型好發於中長頭型犬，引起破壞性鼻炎。播散型（主要為 A. terreus、A. deflectus）好發於德國牧羊犬，預後極差。貓較少見但播散型比例較高。
+
+aliases:
+  - { alias: 黴菌感染, language: zh }
+  - { alias: 犬鼻腔麴菌感染, language: zh }
+  - { alias: Nasal Aspergillosis, language: en }
+  - { alias: Disseminated Aspergillosis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 鼻腔型好發中長頭型犬（如 Collie、Retriever 類）。播散型好發德國牧羊犬（疑似先天免疫缺陷）。鼻腔型以 A. fumigatus 為主。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓麴菌感染較少見。鼻腔型與鼻竇眼眶型 (sino-orbital) 為特殊型態。播散型偶見，常與免疫抑制相關。
+
+etiology:
+  categories:
+    - name: 病原種
+      examples:
+        - A. fumigatus（鼻腔型最常見）
+        - A. terreus（犬播散型常見）
+        - A. deflectus（犬播散型）
+        - A. niger、A. flavus（偶見）
+    - name: 致病機制
+      examples:
+        - 吸入環境中無所不在的孢子
+        - 鼻腔型：真菌斑 (fungal plaque) 破壞鼻甲骨
+        - 播散型：血行播散至骨骼、椎體、腎臟等
+
+clinicalSigns:
+  early:
+    - 慢性單側鼻分泌物（漿液性至黏液膿性）
+    - 鼻出血
+    - 噴嚏
+    - 鼻平面色素脫失
+  progressive:
+    - 雙側鼻分泌物
+    - 面部疼痛或變形
+    - 鼻甲骨溶解
+    - 播散型：脊椎疼痛、跛行、腎衰竭
+    - 椎間盤脊椎炎 (discospondylitis)
+
+diagnosis:
+  primaryTests:
+    - name: CT 掃描
+      notes: 鼻腔型首選影像學。可見鼻甲骨溶解、真菌斑高密度影、額竇受侵。評估篩板完整性
+    - name: 鼻腔內視鏡
+      notes: 可直接觀察並採樣真菌斑。白色至灰綠色斑塊為典型表現。同時進行生檢
+  additional:
+    - 黴菌培養（確認種別）
+    - 組織病理學（真菌菌絲侵入組織）
+    - 血清學（Aspergillus galactomannan 抗原、抗體效價）
+    - 播散型：骨骼影像、尿液分析、椎體生檢
+
+treatment:
+  principles:
+    - 鼻腔型以局部灌洗為首選
+    - 播散型需長期系統性抗真菌藥物
+    - 鼻腔型手術清創可能需要
+    - 播散型預後極差
+  general:
+    - "鼻腔型：1% clotrimazole 局部灌洗（金標準治療）"
+    - 需全身麻醉下經鼻竇灌注 clotrimazole 溶液 1 小時
+    - 可能需多次灌洗（治癒率約 65-90%/次）
+    - 術前內視鏡清創真菌斑
+    - "播散型：itraconazole 5-10 mg/kg PO BID 或 voriconazole"
+    - 播散型治療數月至終生
+    - 疼痛管理
+
+prognosis: 犬鼻腔型麴菌感染經 clotrimazole 灌洗治癒率約 65-90%，部分需多次治療。播散型預後極差，中位存活僅數月，即使長期抗真菌治療。貓鼻腔型預後尚可。
+
+pubmedQueries:
+  - query: '"aspergillosis" AND (veterinary OR canine OR feline) AND ("treatment" OR "nasal" OR "disseminated")'
+    frequency: monthly

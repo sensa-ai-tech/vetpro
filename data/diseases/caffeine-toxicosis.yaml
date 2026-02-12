@@ -1,0 +1,79 @@
+slug: caffeine-toxicosis
+nameEn: Caffeine Toxicosis
+nameZh: 咖啡因中毒
+bodySystem: toxicology
+description: 咖啡因 (caffeine) 為甲基黃嘌呤類 (methylxanthine) 化合物，犬貓較人類敏感。來源包括咖啡、茶、能量飲料及含咖啡因藥物。引起中樞神經興奮、心動過速及肌肉震顫。嚴重者可致癲癇與心律不整。
+
+aliases:
+  - { alias: 甲基黃嘌呤中毒, language: zh }
+  - { alias: Caffeine Poisoning, language: en }
+  - { alias: Methylxanthine Toxicosis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬咖啡因中毒偶見。致死劑量約 140-150 mg/kg。一杯咖啡含約 100 mg 咖啡因。常與巧克力（含 theobromine）共同攝入。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓咖啡因中毒罕見但毒性相似。貓代謝甲基黃嘌呤能力較犬差。
+
+etiology:
+  categories:
+    - name: 常見來源
+      examples:
+        - 咖啡豆或咖啡渣
+        - 茶葉
+        - 能量飲料
+        - 含咖啡因藥物（興奮劑、減肥藥）
+    - name: 毒性機制
+      examples:
+        - 抑制 phosphodiesterase，增加 cAMP
+        - 拮抗 adenosine 受體
+        - 增加 catecholamine 釋放
+        - 刺激中樞神經與心臟
+
+clinicalSigns:
+  early:
+    - 不安與過度興奮
+    - 心動過速
+    - 嘔吐
+    - 多尿
+  progressive:
+    - 肌肉震顫
+    - 癲癇
+    - 心律不整（室上性或室性）
+    - 高燒
+    - 低血壓（晚期）
+
+diagnosis:
+  primaryTests:
+    - name: 病史確認
+      notes: 確認咖啡因來源與攝入量。計算 mg/kg 劑量
+    - name: 臨床表現
+      notes: 過度興奮、心動過速、震顫的組合
+  additional:
+    - 心電圖（心律不整監測）
+    - 血糖
+    - 電解質
+    - 尿液咖啡因檢測（非常規可用）
+
+treatment:
+  principles:
+    - 去汙染（攝入早期）
+    - 控制神經症狀
+    - 心律不整管理
+    - 支持療法
+  general:
+    - 攝入 2 小時內催吐
+    - 活性炭 1-2 g/kg PO（腸肝循環，可考慮多次給予）
+    - IV 輸液（促進排泄）
+    - 癲癇控制（diazepam 0.5-2 mg/kg IV）
+    - 心律不整處理（beta-blocker 如 esmolol、lidocaine）
+    - 肌肉震顫控制（methocarbamol）
+    - 監測心電圖與血壓
+
+prognosis: 犬貓咖啡因中毒適當處理預後良好。輕至中度中毒多數 12-36 小時內恢復。大量攝入致癲癇或嚴重心律不整若未治療可能致命。半衰期犬約 4.5 小時。
+
+pubmedQueries:
+  - query: '"caffeine toxicosis" AND (veterinary OR canine OR feline) AND ("treatment" OR "management")'
+    frequency: monthly

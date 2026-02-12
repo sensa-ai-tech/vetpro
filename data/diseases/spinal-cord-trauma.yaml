@@ -1,0 +1,79 @@
+slug: spinal-cord-trauma
+nameEn: Spinal Cord Trauma
+nameZh: 脊髓創傷
+bodySystem: neurology
+description: 脊髓創傷為外傷引起的脊髓損傷，常見於車禍、高處墜落與犬咬傷。損傷程度取決於脊髓受損節段與嚴重度。深部痛覺 (deep pain perception) 的有無為最重要的預後指標。急性期穩定脊椎與預防繼發性損傷為治療重點。
+
+aliases:
+  - { alias: 脊髓損傷, language: zh }
+  - { alias: 脊椎外傷, language: zh }
+  - { alias: Spinal Cord Injury, language: en }
+  - { alias: Spinal Fracture, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬脊髓創傷常見於車禍。胸腰椎交界（T11-L2）為最常見骨折/脫位部位。深部痛覺喪失為最差預後指標。手術減壓與固定可改善神經恢復。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓脊髓創傷常見於車禍與高處墜落。薦尾椎損傷導致排尿/排便功能障礙為貓特別常見。
+
+etiology:
+  categories:
+    - name: 原發性損傷
+      examples:
+        - 脊椎骨折/脫位
+        - 脊髓壓迫
+        - 脊髓撕裂或橫斷
+        - 硬膜外出血
+    - name: 繼發性損傷
+      examples:
+        - 脊髓水腫
+        - 缺血
+        - 自由基損傷
+        - 興奮性毒性（glutamate）
+
+clinicalSigns:
+  early:
+    - 急性癱瘓（損傷節段以下）
+    - 疼痛
+    - 脊椎觸診疼痛或變形
+  progressive:
+    - 四肢癱瘓（頸椎）或後肢癱瘓（胸腰椎）
+    - 深部痛覺喪失（嚴重損傷）
+    - 排尿功能障礙（上運動神經元或下運動神經元膀胱）
+    - Schiff-Sherrington 姿勢（胸腰椎損傷）
+    - 脊髓休克
+
+diagnosis:
+  primaryTests:
+    - name: 神經學檢查
+      notes: 定位損傷節段。評估深部痛覺（最重要預後指標）。上/下運動神經元征分辨
+    - name: 脊椎 X-ray
+      notes: 骨折、脫位、椎體塌陷
+  additional:
+    - CT（骨折細節、椎管狹窄）
+    - MRI（脊髓實質損傷評估 — 金標準）
+    - 膀胱功能評估（殘餘尿量）
+
+treatment:
+  principles:
+    - 脊椎固定（避免進一步損傷）
+    - 手術減壓/固定（脊椎不穩定或壓迫持續時）
+    - 預防繼發性損傷
+    - 護理照護
+  general:
+    - 脊椎固定（硬板搬運）
+    - 手術適應症：不穩定骨折脫位、持續壓迫、神經惡化
+    - 手術：椎板切除減壓 + 骨釘/骨板固定
+    - 止痛（opioids、gabapentin）
+    - 膀胱管理（手壓排尿或導尿 TID-QID）
+    - 褥瘡預防（軟墊、翻身 q4h）
+    - 物理治療（被動關節活動、水療）
+    - 類固醇目前不建議（NASCIS 結論有爭議且副作用大）
+
+prognosis: 深部痛覺保留者預後佳（功能恢復率 >80%）。深部痛覺喪失者預後差（恢復率 <5%）。薦尾椎損傷（貓常見）排尿功能恢復率約 50%。早期手術介入可改善恢復。物理治療對功能恢復重要。
+
+pubmedQueries:
+  - query: '"spinal cord trauma" OR "spinal cord injury" AND (veterinary OR canine OR feline) AND ("treatment" OR "surgery" OR "prognosis")'
+    frequency: monthly

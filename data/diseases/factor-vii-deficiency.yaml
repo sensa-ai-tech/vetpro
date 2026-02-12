@@ -1,0 +1,66 @@
+slug: factor-vii-deficiency
+nameEn: Factor VII Deficiency
+nameZh: 第七凝血因子缺乏症
+bodySystem: hematology
+description: 第七凝血因子缺乏症為遺傳性凝血因子缺乏，影響外源性凝血途徑（extrinsic pathway）。Factor VII 為維生素 K 依賴性凝血因子，缺乏時 PT（凝血酶原時間）延長而 APTT 正常。多數病例為輕度且臨床意義低，但嚴重缺乏者可出現異常出血。Beagle 與 Airedale Terrier 為好發品種。
+
+aliases:
+  - { alias: FVII Deficiency, language: en }
+  - { alias: 第 VII 因子缺乏, language: zh }
+  - { alias: Proconvertin Deficiency, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 好發品種：Beagle（常染色體不完全顯性遺傳）、Airedale Terrier、Alaskan Malamute、Boxer。多數為雜合子，臨床症狀輕微。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻罕見，僅有零星病例報告。
+
+etiology:
+  categories:
+    - name: 遺傳性（先天性）
+      examples:
+        - 常染色體不完全顯性遺傳（Beagle）
+        - Factor VII 基因突變
+        - 雜合子 FVII 活性約為正常的 50%
+    - name: 後天性（需排除）
+      examples:
+        - 維生素 K 缺乏或拮抗（抗凝血劑中毒）
+        - 嚴重肝病（合成減少）
+        - DIC（消耗增加）
+
+clinicalSigns:
+  early:
+    - 多數雜合子無臨床症狀
+    - 術前凝血篩檢偶然發現 PT 延長
+  progressive:
+    - 純合子可出現輕度至中度出血傾向
+    - 術後出血延長
+    - 輕微創傷後異常出血
+    - 嚴重缺乏者可能有自發性出血（罕見）
+
+diagnosis:
+  primaryTests:
+    - name: 凝血篩檢
+      notes: "特徵：PT 延長（外源性途徑），APTT 正常（內源性途徑正常）。此模式在犬隻高度提示 Factor VII 缺乏或維生素 K 缺乏。"
+    - name: Factor VII 活性測定
+      notes: 確診需測定 FVII 特異性活性。雜合子約 50% 活性，純合子 <5% 活性。排除後天性原因後可確認遺傳性缺乏。
+
+treatment:
+  principles:
+    - 多數病例不需常規治療
+    - 手術或創傷時需預防性處理
+    - 嚴重出血需補充凝血因子
+  general:
+    - 無臨床出血的雜合子不需治療
+    - "手術前預防：新鮮冷凍血漿（FFP）10-15 mL/kg IV"
+    - "嚴重出血：FFP 輸注補充 Factor VII"
+    - 避免使用 NSAIDs 等影響凝血功能的藥物
+    - 基因檢測可用於繁殖計劃
+
+prognosis: 多數雜合子犬隻預後極好，正常壽命。純合子若未發生嚴重出血事件，預後亦可。術前適當準備（FFP）可安全進行手術。告知飼主避免創傷風險活動。
+
+pubmedQueries:
+  - query: '"factor VII deficiency" AND (veterinary OR canine) AND ("coagulation" OR "bleeding")'
+    frequency: monthly

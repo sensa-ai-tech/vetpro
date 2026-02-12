@@ -1,0 +1,78 @@
+slug: zinc-phosphide-toxicosis
+nameEn: Zinc Phosphide Toxicosis
+nameZh: 磷化鋅中毒
+bodySystem: toxicology
+description: 磷化鋅 (zinc phosphide) 殺鼠劑在胃酸環境中釋放高毒性的磷化氫 (phosphine) 氣體，直接損傷細胞粒線體。犬貓攝入後迅速發展嚴重消化道與全身性毒性。因釋放磷化氫氣體，嘔吐物對救治人員也有危險。
+
+aliases:
+  - { alias: 磷化鋅殺鼠劑中毒, language: zh }
+  - { alias: Zinc Phosphide Poisoning, language: en }
+  - { alias: Phosphine Toxicosis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬致死劑量約 20-40 mg/kg。胃內酸度越高（進食後），磷化氫釋放越快。催吐時需在通風環境操作（磷化氫對人有毒）。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓較少接觸但同樣易感。致死劑量約 40 mg/kg。
+
+etiology:
+  categories:
+    - name: 毒性機制
+      examples:
+        - 磷化鋅 + 胃酸 → 磷化氫 (PH3) 氣體
+        - 磷化氫直接損傷細胞粒線體
+        - 引起多器官氧化損傷
+        - 胃內容物越多酸度越高，釋放越快
+    - name: 來源
+      examples:
+        - 磷化鋅顆粒殺鼠劑
+        - 農業用鼴鼠藥
+
+clinicalSigns:
+  early:
+    - 嘔吐（嘔吐物可能有大蒜味或腐魚味）
+    - 食慾廢絕
+    - 腹痛
+  progressive:
+    - 嚴重腹瀉
+    - 呼吸困難
+    - 心律不整
+    - 肝衰竭
+    - 腎衰竭
+    - 休克與死亡（數小時至數天）
+
+diagnosis:
+  primaryTests:
+    - name: 病史確認
+      notes: 確認磷化鋅暴露。嘔吐物的大蒜/腐魚氣味為線索。需注意嘔吐物中磷化氫對人的危險性
+    - name: 胃內容物化學分析
+      notes: 銀硝酸試紙測試胃內容物或嘔吐物中的磷化氫
+  additional:
+    - 肝功能指數（ALT、AST 急遽升高）
+    - 腎功能
+    - 血液氣體
+    - 心電圖
+
+treatment:
+  principles:
+    - 催吐需在通風環境操作
+    - 降低胃酸減少磷化氫釋放
+    - 無特效解毒劑
+    - 積極支持療法
+  general:
+    - 催吐在通風環境執行（磷化氫對人有毒）
+    - 5% sodium bicarbonate 洗胃（提高胃內 pH 減少磷化氫釋放）
+    - 活性炭（效果有限但可嘗試）
+    - IV 輸液支持
+    - 保肝治療（N-acetylcysteine、SAMe）
+    - 心律不整管理
+    - 抗氧化劑（vitamin C、vitamin E）
+    - 住院密切監測 48-72 小時
+
+prognosis: 磷化鋅中毒預後視攝入量與就醫時效而定。早期催吐去汙染可改善預後。已發展多器官衰竭者預後差。致死率可達 50-100%（高劑量暴露）。
+
+pubmedQueries:
+  - query: '"zinc phosphide" AND (toxicosis OR poisoning) AND (veterinary OR canine)'
+    frequency: monthly

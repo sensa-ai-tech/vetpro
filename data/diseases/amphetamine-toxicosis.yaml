@@ -1,0 +1,86 @@
+slug: amphetamine-toxicosis
+nameEn: Amphetamine Toxicosis
+nameZh: 安非他命中毒
+bodySystem: toxicology
+description: 安非他命 (amphetamine) 與其衍生物中毒常見於犬誤食飼主 ADHD 藥物（如 Adderall、Ritalin）或非法毒品（methamphetamine）。引起嚴重交感神經興奮與中樞神經興奮，可致命。犬比貓更常暴露。
+
+aliases:
+  - { alias: 甲基安非他命中毒, language: zh }
+  - { alias: Amphetamine Poisoning, language: en }
+  - { alias: Methamphetamine Toxicosis, language: en }
+  - { alias: ADHD Medication Toxicosis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬誤食 ADHD 藥物（amphetamine、methylphenidate、lisdexamfetamine）為常見暴露。犬致死劑量約 10-23 mg/kg（amphetamine）。緩釋劑型危險性更高。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓暴露報告較少。毒性閾值與犬相似。
+
+etiology:
+  categories:
+    - name: 毒性機制
+      examples:
+        - 大量釋放 dopamine、norepinephrine、serotonin
+        - 抑制 monoamine 再攝取
+        - 中樞神經過度興奮
+        - 心血管系統過度刺激
+    - name: 常見來源
+      examples:
+        - ADHD 藥物（Adderall、Vyvanse、Concerta、Ritalin）
+        - 非法毒品（methamphetamine、MDMA/搖頭丸）
+        - 減肥藥
+
+clinicalSigns:
+  early:
+    - 躁動、焦慮
+    - 心搏過速
+    - 喘氣
+    - 瞳孔散大
+    - 震顫
+  progressive:
+    - 嚴重高體溫
+    - 高血壓
+    - 癲癇
+    - 心律不整
+    - 橫紋肌溶解
+    - DIC（瀰漫性血管內凝血）
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 暴露史
+      notes: 確認藥物種類與劑量。人用尿液安非他命快篩可用於犬尿液
+    - name: 臨床表現
+      notes: 交感神經興奮 + 中樞興奮症候群
+  additional:
+    - 心電圖
+    - 血壓
+    - 核心體溫
+    - CBC、生化（CK、肝腎功能）
+    - 凝血功能
+    - 尿液（肌紅蛋白）
+
+treatment:
+  principles:
+    - 控制中樞與心血管過度興奮
+    - 降溫
+    - 預防繼發性損傷（橫紋肌溶解、DIC）
+    - 尿液酸化可加速排泄（但爭議性高）
+  general:
+    - 催吐（早期、無癲癇時）+ 活性炭
+    - 緩釋劑型考慮全腸灌洗
+    - 鎮靜：acepromazine 0.02-0.05 mg/kg IV 或 chlorpromazine
+    - 癲癇：diazepam、phenobarbital
+    - 降溫（主動冷卻）
+    - 心搏過速：β-blocker（propranolol）謹慎使用
+    - IV 輸液（維持尿量、保護腎臟）
+    - Cyproheptadine 1.1 mg/kg PO（serotonin 症候群時）
+    - 住院監測 24-72 小時
+
+prognosis: 安非他命中毒在積極支持療法下多數可存活。緩釋劑型需更長監測時間。致命性併發症包括嚴重高體溫、DIC 與橫紋肌溶解致急性腎損傷。及早降溫與鎮靜為關鍵。
+
+pubmedQueries:
+  - query: '"amphetamine" OR "methylphenidate" AND (toxicosis OR poisoning) AND (veterinary OR canine OR feline)'
+    frequency: monthly

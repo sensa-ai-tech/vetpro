@@ -1,0 +1,73 @@
+slug: aggression-dog
+nameEn: Aggression Dog
+nameZh: 犬攻擊行為
+bodySystem: behavioral
+description: 犬對人或其他動物表現威脅或傷害性行為，為犬行為門診最常見的就診原因。攻擊行為有多種分類與動機，正確辨識攻擊類型對制定安全有效的治療計畫至關重要。
+
+aliases:
+  - { alias: "犬攻擊性", language: zh }
+  - { alias: "犬咬人行為", language: zh }
+  - { alias: "Canine Aggression", language: en }
+  - { alias: "Dog Aggression Behavior", language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬攻擊行為為犬行為門診第一就診原因，需依類型（恐懼性、領地性、資源守護等）制定不同治療策略。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓亦可有攻擊行為但動機與表現不同，常為恐懼驅動或遊戲性攻擊。
+
+etiology:
+  categories:
+    - name: 行為性
+      examples:
+        - 恐懼/焦慮驅動（最常見）
+        - 領地防衛
+        - 資源守護
+        - 社會階級衝突
+    - name: 醫學性
+      examples:
+        - 疼痛（關節炎、牙科疾病）
+        - 甲狀腺功能低下
+        - 腦部疾病（腫瘤、腦炎）
+        - 視聽覺障礙
+
+clinicalSigns:
+  early:
+    - 身體僵硬、注視
+    - 低吼（growling）
+    - 露齒（snarling）
+    - 豎毛
+  progressive:
+    - 空咬（snap）
+    - 咬傷不鬆口
+    - 無預警攻擊
+    - 攻擊頻率與強度增加
+
+diagnosis:
+  primaryTests:
+    - name: 完整行為病史
+      notes: 記錄每次攻擊事件的觸發因子、對象、情境、前驅行為及嚴重度。辨識攻擊類型。
+    - name: 醫學排除檢查
+      notes: CBC/生化、甲狀腺功能、神經學檢查、影像學。排除疼痛及神經系統疾病。
+
+treatment:
+  principles:
+    - 安全為第一優先（避免人員受傷）
+    - 辨識攻擊類型後制定針對性計畫
+    - 行為修正而非壓制
+    - 必要時藥物輔助
+  general:
+    - 安全管理（嘴套、牽繩、隔離）
+    - 行為修正（反制約、系統減敏）
+    - 避免體罰與對抗性訓練方法
+    - Fluoxetine 1-2 mg/kg PO SID（衝動性攻擊）
+    - Trazodone 輔助（高焦慮情境）
+    - 必要時轉介獸醫行為專科
+
+prognosis: 預後取決於攻擊類型、嚴重度及飼主配合度。恐懼性攻擊經適當行為修正預後中等至良好。衝動性攻擊或嚴重度高的攻擊預後謹慎。完全消除攻擊行為通常不切實際，管理目標為降低風險至可接受程度。
+
+pubmedQueries:
+  - query: '"Aggression Dog" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

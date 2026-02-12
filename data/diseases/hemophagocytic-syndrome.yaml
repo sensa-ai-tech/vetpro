@@ -1,0 +1,74 @@
+slug: hemophagocytic-syndrome
+nameEn: Hemophagocytic Syndrome
+nameZh: 噬血症候群
+bodySystem: hematology
+description: 噬血症候群（HPS/HLH）為巨噬細胞/組織球過度活化並吞噬正常血球細胞的嚴重免疫失調疾病。特徵為全血球減少、高三酸甘油酯血症、高鐵蛋白血症、脾腫大與肝腫大。犬隻可為感染性（Leishmania、Ehrlichia）、腫瘤性或免疫介導性。
+
+aliases:
+  - { alias: HPS, language: en }
+  - { alias: HLH, language: en }
+  - { alias: Hemophagocytic Lymphohistiocytosis, language: en }
+  - { alias: 噬血細胞症候群, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬隻 HPS 罕見但致命。可繼發於壁蝨傳播性疾病、惡性組織球增生症或免疫失調。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻罕見，可與嚴重感染或腫瘤相關。
+
+etiology:
+  categories:
+    - name: 感染相關
+      examples:
+        - Leishmania 感染
+        - Ehrlichia canis
+        - Babesia
+        - 嚴重細菌或真菌感染
+    - name: 腫瘤相關
+      examples:
+        - 惡性組織球增生症（malignant histiocytosis）
+        - T 細胞淋巴瘤
+        - 血管肉瘤
+    - name: 免疫失調
+      examples:
+        - 原發性免疫介導性 HPS
+        - 自體免疫性疾病觸發
+
+clinicalSigns:
+  early:
+    - 發燒
+    - 嗜睡
+    - 食慾下降
+  progressive:
+    - 嚴重全血球減少（pancytopenia）
+    - 脾腫大與肝腫大
+    - 黃疸
+    - 出血傾向
+    - 多器官衰竭
+
+diagnosis:
+  primaryTests:
+    - name: 全血球計數（CBC）
+      notes: 全血球減少（bi- 或 pancytopenia）。非再生性貧血。可見血液抹片中巨噬細胞吞噬血球的現象。
+    - name: 骨髓穿刺或脾臟/肝臟細胞學
+      notes: 確診需見到巨噬細胞/組織球吞噬正常紅血球、白血球或血小板（hemophagocytosis）。骨髓、脾臟或肝臟抹片中找到噬血巨噬細胞。
+
+treatment:
+  principles:
+    - 治療基礎病因（感染、腫瘤）
+    - 免疫抑制控制過度免疫活化
+    - 支持性治療
+  general:
+    - 治療感染性病因（Doxycycline、抗真菌藥等）
+    - "免疫抑制：Dexamethasone 或 Prednisolone 高劑量"
+    - "Cyclosporine 5-10 mg/kg PO q12h（嚴重病例）"
+    - 支持性輸血
+    - 腫瘤相關：化療（若可行）
+
+prognosis: 預後不良，死亡率高。感染相關 HPS 在感染控制後有可能恢復。腫瘤相關（特別是惡性組織球增生症）預後極差。免疫抑制治療可暫時改善症狀，但長期預後取決於基礎病因控制。
+
+pubmedQueries:
+  - query: '"hemophagocytic syndrome" OR "hemophagocytic lymphohistiocytosis" AND (veterinary OR canine OR feline)'
+    frequency: monthly

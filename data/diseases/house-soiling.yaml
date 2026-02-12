@@ -1,0 +1,73 @@
+slug: house-soiling
+nameEn: House Soiling
+nameZh: 室內不當排泄
+bodySystem: behavioral
+description: 已受排泄訓練的犬貓在室內不當位置排泄（尿液或糞便），為犬貓行為門診常見就診原因且為飼主棄養的主要原因之一。需先排除泌尿道感染、腎病等醫學原因。
+
+aliases:
+  - { alias: "隨地便溺", language: zh }
+  - { alias: "如廁問題", language: zh }
+  - { alias: "Inappropriate Elimination", language: en }
+  - { alias: "Indoor Soiling", language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬室內不當排泄需區分未完成如廁訓練、分離焦慮相關及醫學原因。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓不當排泄為貓最常見的行為就診原因，需區分砂盆問題、標記行為及醫學原因。
+
+etiology:
+  categories:
+    - name: 醫學原因
+      examples:
+        - 泌尿道感染
+        - 慢性腎病（多尿）
+        - 糖尿病（多尿）
+        - 腸胃道疾病（腹瀉）
+        - 認知功能障礙
+        - 關節炎（難以到達排泄區）
+    - name: 行為原因
+      examples:
+        - 如廁訓練不完全（犬）
+        - 砂盆管理問題（貓）
+        - 分離焦慮
+        - 環境壓力
+        - 標記行為
+
+clinicalSigns:
+  early:
+    - 偶爾在不當位置排泄
+    - 迴避正常排泄區域
+    - 排泄習慣改變
+  progressive:
+    - 頻繁在室內多處排泄
+    - 排泄位置有特定偏好（柔軟表面、角落）
+    - 伴隨其他行為異常
+
+diagnosis:
+  primaryTests:
+    - name: 完整醫學檢查
+      notes: 尿液分析（感染、結晶）、CBC/生化（腎病、糖尿病）、T4（貓甲亢）。排除所有醫學原因為首要。
+    - name: 行為評估
+      notes: 詳細詢問排泄位置、時間、基質偏好、砂盆管理（貓）、如廁訓練史（犬）。
+
+treatment:
+  principles:
+    - 排除醫學原因為第一優先
+    - 不要懲罰（動物無法將懲罰與之前的排泄行為連結）
+    - 改善砂盆/排泄環境
+    - 清潔排泄區域以酵素清潔劑消除氣味
+  general:
+    - 醫學原因：治療基礎疾病
+    - 犬：重新如廁訓練（規律外出、獎勵正確排泄）
+    - 貓：優化砂盆（足夠數量 N+1、清潔頻率、位置、砂質）
+    - 酵素清潔劑徹底清除尿漬氣味
+    - 焦慮相關：費洛蒙 + 行為修正 ± 藥物
+
+prognosis: 醫學原因治療後排泄問題常可解決。砂盆管理問題改善後多數貓恢復正常。犬如廁訓練不完全經重新訓練後預後良好。分離焦慮相關需同時處理焦慮問題。
+
+pubmedQueries:
+  - query: '"House Soiling" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

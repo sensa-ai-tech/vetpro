@@ -1,0 +1,65 @@
+slug: biotin-deficiency
+nameEn: Biotin Deficiency
+nameZh: 生物素缺乏症
+bodySystem: metabolic
+description: 生物素（維生素 B7/維生素 H）是參與脂肪酸合成、胺基酸代謝及糖質新生的輔酶，缺乏主要影響皮膚及毛髮健康。生蛋白中的 avidin 能結合生物素使其無法吸收，長期餵食生蛋白為最常見原因。
+
+aliases:
+  - { alias: 維生素B7缺乏, language: zh }
+  - { alias: 維生素H缺乏, language: zh }
+  - { alias: Vitamin B7 Deficiency, language: en }
+  - { alias: Vitamin H Deficiency, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬生物素缺乏極少見，可能見於長期餵食大量生蛋白的犬。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓餵食生蛋白亦可導致。長期廣效抗生素抑制腸道菌群合成亦為風險因素。
+
+etiology:
+  categories:
+    - name: 攝入不足或拮抗
+      examples:
+        - 長期餵食生蛋白（avidin 結合生物素）
+        - 飲食中生物素含量不足
+    - name: 其他
+      examples:
+        - 長期抗生素使用（抑制腸道菌群合成）
+        - 腸道吸收障礙
+
+clinicalSigns:
+  early:
+    - 毛髮乾燥無光澤
+    - 皮膚乾燥脫屑
+  progressive:
+    - 脫毛（尤其面部及四肢）
+    - 皮膚角化過度
+    - 口周圍皮炎
+    - 嗜睡
+    - 生長遲緩
+
+diagnosis:
+  primaryTests:
+    - name: 飲食病史
+      notes: 長期餵食生蛋白為關鍵線索。商業飼料餵食犬貓極少缺乏。
+    - name: 治療性診斷
+      notes: 補充生物素後症狀改善可回溯性確診。
+
+treatment:
+  principles:
+    - 停止餵食生蛋白
+    - 補充生物素
+    - 轉換至均衡飲食
+  general:
+    - 停止餵食生雞蛋（煮熟後 avidin 被破壞，可安全食用）
+    - 口服生物素補充
+    - 轉換至營養均衡的商業飼料
+    - 皮膚症狀數週內改善
+
+prognosis: 停止生蛋白餵食並補充生物素後預後極佳，皮膚及毛髮數週至數月內恢復正常。
+
+pubmedQueries:
+  - query: '"Biotin Deficiency" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

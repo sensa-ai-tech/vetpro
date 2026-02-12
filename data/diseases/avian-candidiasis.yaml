@@ -1,0 +1,77 @@
+slug: avian-candidiasis
+nameEn: Avian Candidiasis
+nameZh: 禽類念珠菌症
+bodySystem: gastrointestinal
+description: 禽類念珠菌症是由白色念珠菌（Candida albicans）引起的消化道真菌感染，主要影響嗉囊與上消化道。手養幼鳥及免疫抑制個體最常見。嗉囊內壁白色增厚性病變為特徵性表現。
+
+aliases:
+  - { alias: 鳥類念珠菌感染, language: zh }
+  - { alias: 嗉囊念珠菌症, language: zh }
+  - { alias: Avian thrush, language: en }
+  - { alias: Crop candidiasis, language: en }
+  - { alias: Avian yeast infection, language: en }
+
+species:
+  - speciesCommon: bird
+    prevalence: common
+    notes: 手養幼鳥、長期使用抗生素之鸚鵡最常見。免疫抑制為重要風險因子。嗉囊為最常受累部位。
+
+etiology:
+  categories:
+    - name: 感染性
+      examples:
+        - Candida albicans（最常見）
+        - 其他 Candida 屬
+        - 正常消化道菌群失衡時伺機感染
+    - name: 風險因素
+      examples:
+        - 長期抗生素使用（破壞正常菌群）
+        - 手養幼鳥（免疫未成熟）
+        - 維生素 A 缺乏
+        - 飲食不均衡（高糖飲食）
+        - 嗉囊排空延遲
+        - 免疫抑制疾病
+
+clinicalSigns:
+  early:
+    - 嗉囊排空緩慢
+    - 輕度嘔吐
+    - 食慾下降
+    - 口腔黏膜輕度發白
+  progressive:
+    - 反覆嘔吐（白色黏液）
+    - 嗉囊增厚可觸及
+    - 口腔白色斑塊或偽膜
+    - 體重下降
+    - 嗜睡
+    - 嗉囊脹大
+
+diagnosis:
+  primaryTests:
+    - name: 嗉囊拭子細胞學
+      notes: 革蘭氏染色見酵母菌與菌絲。大量芽生酵母菌具診斷意義
+    - name: 嗉囊沖洗液培養
+      notes: 真菌培養確認菌種與藥敏試驗。少量念珠菌可為正常菌群
+    - name: 嗉囊內視鏡
+      notes: 嗉囊黏膜增厚、白色斑塊性病變
+
+treatment:
+  principles:
+    - 抗真菌藥物治療
+    - 移除誘發因素
+    - 恢復正常消化道菌群
+    - 營養支持
+  general:
+    - Nystatin（300,000 IU/kg PO BID-TID，7-14 天）為首選
+    - Fluconazole（5-10 mg/kg PO SID）全身性感染時
+    - 停用不必要的抗生素
+    - 補充益生菌恢復正常菌群
+    - 維生素 A 補充
+    - 改善飲食（減少糖分）
+    - 手養幼鳥注意配方奶溫度與衛生
+
+prognosis: 預後良好。單純嗉囊念珠菌症經適當治療通常反應良好。移除誘發因素（如停用不必要抗生素）是預防復發的關鍵。反覆感染需排除潛在免疫抑制疾病。全身性念珠菌症（罕見）預後較差。
+
+pubmedQueries:
+  - query: '"candidiasis" AND (avian OR bird OR psittacine) AND ("treatment" OR "crop")'
+    frequency: monthly

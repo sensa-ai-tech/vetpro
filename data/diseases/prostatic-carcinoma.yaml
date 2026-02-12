@@ -1,0 +1,78 @@
+slug: prostatic-carcinoma
+nameEn: Prostatic Carcinoma
+nameZh: 前列腺癌
+bodySystem: oncology
+description: 犬前列腺癌（腺癌或移行細胞癌）為高度惡性腫瘤，診斷時多已局部侵犯或遠端轉移。與人類不同，犬前列腺癌好發於已結紮公犬。預後極差，治療以姑息為主。常見轉移部位為腰椎、骨盆骨、肺與淋巴結。
+
+aliases:
+  - { alias: 前列腺腺癌, language: zh }
+  - { alias: Prostatic Adenocarcinoma, language: en }
+  - { alias: Prostatic Transitional Cell Carcinoma, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬前列腺癌好發於中大型犬、已結紮或未結紮均可。已結紮犬風險可能更高（與人類相反）。好發品種：Bouvier des Flandres、Doberman。診斷時 >80% 已有轉移。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓前列腺腫瘤極罕見。
+
+etiology:
+  categories:
+    - name: 腫瘤特性
+      examples:
+        - 腺癌為最常見型態
+        - 移行細胞癌可從尿道延伸至前列腺
+        - 非雄性激素依賴性（去勢無治療效果）
+        - 局部侵犯性強（尿道、膀胱頸、骨盆骨）
+    - name: 轉移部位
+      examples:
+        - 腰椎與骨盆骨（骨轉移）
+        - 肺臟
+        - 腰下淋巴結（sublumbar lymph nodes）
+        - 膀胱
+
+clinicalSigns:
+  early:
+    - 排尿困難
+    - 血尿
+    - 排便困難
+  progressive:
+    - 尿道阻塞
+    - 後肢疼痛與跛行（骨轉移）
+    - 體重下降
+    - 腹痛
+    - 後肢水腫（淋巴結壓迫）
+
+diagnosis:
+  primaryTests:
+    - name: 直腸觸診
+      notes: 前列腺不規則、硬結、不對稱、可能固定。去勢犬前列腺增大高度懷疑腫瘤
+    - name: 腹部超音波 + 胸部 X-ray
+      notes: 前列腺內不均質回音、礦化。胸部 X-ray 評估肺轉移。腰椎 X-ray 評估骨轉移
+  additional:
+    - 超音波引導 FNA 或 Tru-cut 生檢（確診）
+    - 尿液細胞學（移行細胞癌可脫落至尿液）
+    - CT（分期評估）
+    - BRAF 突變檢測（移行細胞癌）
+
+treatment:
+  principles:
+    - 多數為姑息性治療
+    - 根治性手術困難（局部侵犯廣泛）
+    - NSAIDs（COX-2 抑制）為姑息治療基礎
+    - 維持排尿功能
+  general:
+    - Piroxicam 0.3 mg/kg PO SID 或 meloxicam（COX-2 抑制）
+    - 化療：mitoxantrone + piroxicam 組合
+    - 尿道支架（尿道阻塞時姑息）
+    - 放射治療（姑息性）
+    - 疼痛管理（骨轉移疼痛）
+    - 去勢對腫瘤本身無效（但可控制 BPH 成分）
+    - 根治性前列腺切除術（技術困難，尿失禁風險高）
+
+prognosis: 犬前列腺癌預後極差。中位存活期約 1-3 個月（未治療）至 6-7 個月（姑息治療）。診斷時多已轉移。COX-2 抑制劑可改善生活品質。尿道阻塞為常見死亡原因。
+
+pubmedQueries:
+  - query: '"prostatic carcinoma" OR "prostatic adenocarcinoma" AND (veterinary OR canine) AND ("treatment" OR "prognosis")'
+    frequency: monthly

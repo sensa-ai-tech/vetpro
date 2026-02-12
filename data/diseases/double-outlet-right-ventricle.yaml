@@ -1,0 +1,66 @@
+slug: double-outlet-right-ventricle
+nameEn: Double Outlet Right Ventricle
+nameZh: 雙出口右心室
+bodySystem: cardiac
+description: 雙出口右心室（DORV）為罕見的先天性心臟病，指主動脈與肺動脈均起源於右心室，且通常伴隨心室中隔缺損（VSD）作為左心室唯一的血液出路。血流動力學表現取決於 VSD 位置與大動脈關係，可類似大型 VSD、法洛氏四聯症或大血管轉位。
+
+aliases:
+  - { alias: DORV, language: en }
+  - { alias: 右心室雙出口, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬隻先天性心臟病中極為罕見。臨床表現取決於 VSD 位置及是否伴隨肺動脈瓣狹窄。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻極為罕見，僅有個案報告。
+
+etiology:
+  categories:
+    - name: 先天性發育異常
+      examples:
+        - 圓錐動脈幹（conotruncal）分隔異常
+        - 大動脈未能正常旋轉移位至左心室上方
+        - 幾乎必伴隨 VSD（左心室出口）
+    - name: 伴隨異常
+      examples:
+        - 肺動脈瓣狹窄（類似法洛氏四聯症表現）
+        - 二尖瓣或三尖瓣異常
+        - 主動脈弓異常
+
+clinicalSigns:
+  early:
+    - 發紺（取決於血流動力學類型）
+    - 運動不耐
+    - 心雜音
+  progressive:
+    - 嚴重發紺與低血氧
+    - 生長遲緩
+    - 充血性心衰竭
+    - 續發性紅血球增多症
+    - 昏厥或突然死亡
+
+diagnosis:
+  primaryTests:
+    - name: 心臟超音波（Echocardiography）
+      notes: 確診首選。顯示兩條大動脈均起源於右心室、VSD 位置與大小、是否伴隨肺動脈瓣狹窄。評估大動脈相對位置關係。
+    - name: 心導管檢查與血管攝影
+      notes: 評估血流動力學、確認大動脈與 VSD 的解剖關係，為手術計劃提供依據。
+
+treatment:
+  principles:
+    - 治療取決於具體解剖變異與血流動力學
+    - 姑息性手術可改善症狀
+    - 根治性手術在獸醫學中極為困難
+  general:
+    - 姑息性手術（體肺動脈分流術）改善肺血流
+    - 內科治療控制心衰竭症狀
+    - "發紺嚴重者：Sildenafil 1-2 mg/kg PO q8-12h"
+    - 限制劇烈運動
+
+prognosis: 預後取決於具體解剖變異。伴隨肺動脈瓣狹窄者常有嚴重發紺，預後不良。無肺動脈瓣狹窄者類似大型 VSD，可能發展為肺動脈高壓。獸醫學中根治性手術報告極少，多數以姑息治療為主。
+
+pubmedQueries:
+  - query: '"double outlet right ventricle" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "congenital")'
+    frequency: monthly

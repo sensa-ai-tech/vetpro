@@ -1,0 +1,75 @@
+slug: flail-chest
+nameEn: Flail Chest
+nameZh: 連枷胸
+bodySystem: emergency
+description: 連枷胸 (flail chest) 為三根以上相鄰肋骨各有兩處以上骨折，形成游離胸壁段。呼吸時游離段出現反常運動（paradoxical motion）：吸氣時內陷、呼氣時外凸。導致通氣效率嚴重下降。常伴隨肺挫傷，後者為主要死因。
+
+aliases:
+  - { alias: 連枷胸壁, language: zh }
+  - { alias: Flail Segment, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬連枷胸常見於嚴重車禍或大型犬咬傷。伴隨肺挫傷為主要影響因素。止痛為治療核心。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓連枷胸亦罕見。貓胸壁較薄，嚴重外傷更易發生。
+
+etiology:
+  categories:
+    - name: 致病因素
+      examples:
+        - 嚴重鈍性胸部外傷
+        - 車禍
+        - 大型犬咬傷
+    - name: 病理生理
+      examples:
+        - 游離段反常運動→通氣效率下降
+        - 伴隨肺挫傷（通常比連枷胸本身更危及生命）
+        - 疼痛→自主限制呼吸→肺膨脹不全
+
+clinicalSigns:
+  early:
+    - 呼吸困難
+    - 胸壁觸診可感覺骨折摩擦感
+    - 反常胸壁運動
+    - 嚴重疼痛
+  progressive:
+    - 呼吸衰竭（合併肺挫傷時）
+    - 低氧血症
+    - 氣胸（肺被肋骨碎片刺穿）
+    - 血胸
+
+diagnosis:
+  primaryTests:
+    - name: 理學檢查
+      notes: 觸診胸壁可感覺游離段與反常運動。骨折摩擦感
+    - name: 胸部 X-ray
+      notes: 多發肋骨骨折確認。評估伴隨肺挫傷與氣/血胸
+  additional:
+    - 動脈血氣（低氧血症評估）
+    - TFAST 超音波
+    - 胸部 CT（複雜損傷評估）
+
+treatment:
+  principles:
+    - 止痛為最重要治療
+    - 氧氣補充
+    - 多數保守管理
+    - 內部肺損傷處理
+  general:
+    - 止痛（最關鍵）：opioids（fentanyl CRI）、肋間神經阻斷、胸膜腔間 bupivacaine
+    - 氧氣補充
+    - 輕度：外部固定繃帶暫時穩定
+    - 嚴重呼吸衰竭：正壓通氣（機械呼吸器）
+    - 合併氣胸：胸管引流
+    - 合併肺挫傷：保守管理（避免過度輸液）
+    - 手術（罕需）：嚴重錯位骨折的內固定
+    - IV 輸液（謹慎，避免加重肺水腫）
+
+prognosis: 連枷胸存活率約 60-80%。主要死因為伴隨的肺挫傷而非連枷胸本身。有效止痛可顯著改善通氣與預後。骨折癒合約 3-4 週。
+
+pubmedQueries:
+  - query: '"flail chest" AND (veterinary OR canine OR feline) AND ("treatment" OR "rib fracture" OR "pulmonary contusion")'
+    frequency: monthly

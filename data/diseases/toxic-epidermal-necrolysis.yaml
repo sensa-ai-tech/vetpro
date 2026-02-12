@@ -1,0 +1,63 @@
+slug: toxic-epidermal-necrolysis
+nameEn: Toxic Epidermal Necrolysis
+nameZh: 中毒性表皮壞死
+bodySystem: toxicology
+description: 最嚴重的藥物不良反應之一，表皮大面積壞死脫落（累及 > 30% 體表面積）。為多形性紅斑的最嚴重型態。因細胞毒性 T 細胞與 Fas-FasL 途徑大量攻擊角質細胞。死亡率高。
+
+aliases:
+  - { alias: "TEN", language: en }
+  - { alias: "Lyell Syndrome", language: en }
+  - { alias: "毒性表皮壞死症", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬罕見但致命。藥物反應為主因。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓罕見。
+
+etiology:
+  categories:
+    - name: 藥物反應
+      examples:
+        - Sulfonamide 類抗生素
+        - Cephalosporin
+        - NSAIDs
+        - 抗癲癇藥
+
+clinicalSigns:
+  early:
+    - 突然發燒
+    - 皮膚疼痛
+    - 紅斑
+  progressive:
+    - 表皮大面積脫落
+    - Nikolsky sign 陽性（輕觸皮膚即脫落）
+    - 黏膜潰瘍
+    - 敗血症風險
+
+diagnosis:
+  primaryTests:
+    - name: 皮膚活檢
+      notes: 全層表皮壞死。緊急活檢確診
+    - name: 藥物史
+      notes: 發病前 1-4 週用藥紀錄
+
+treatment:
+  principles:
+    - 立即停用所有可疑藥物
+    - 重症加護
+    - 傷口管理如大面積燒傷
+  general:
+    - 停用所有藥物
+    - 靜脈輸液支持
+    - 傷口照護（如燒傷病患管理）
+    - 廣效抗生素預防敗血症
+    - 營養支持
+
+prognosis: 預後極差。死亡率 30-50% 以上。早期診斷與停藥可能改善預後。存活者恢復期長。
+
+pubmedQueries:
+  - query: '"toxic epidermal necrolysis" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
+    frequency: monthly

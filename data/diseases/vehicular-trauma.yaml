@@ -1,0 +1,87 @@
+slug: vehicular-trauma
+nameEn: Vehicular Trauma
+nameZh: 車禍創傷
+bodySystem: emergency
+description: 車禍創傷 (hit by car, HBC) 為犬貓最常見的嚴重外傷類型。高速撞擊導致多系統損傷，包括骨折、胸腹腔損傷、頭部外傷與皮膚撕裂傷。系統性 primary survey (ABCDE) 為初始評估方法。多數 HBC 患畜有 >1 個器官系統損傷。
+
+aliases:
+  - { alias: 車禍, language: zh }
+  - { alias: 交通事故創傷, language: zh }
+  - { alias: Hit By Car, language: en }
+  - { alias: HBC, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬 HBC 為最常見急診之一。骨盆骨折、股骨骨折、氣胸、肺挫傷為常見損傷。多系統損傷率 >50%。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓 HBC 常見損傷包括下顎骨折、骨盆骨折、膈疝、尿道損傷。貓可能在車禍後數天才被發現。
+
+etiology:
+  categories:
+    - name: 常見損傷系統
+      examples:
+        - 肌肉骨骼（骨盆、股骨、脛骨骨折）
+        - 胸腔（氣胸、肺挫傷、膈疝、肋骨骨折）
+        - 腹腔（脾臟/肝臟破裂、膀胱破裂）
+        - 頭部（TBI、下顎骨折）
+        - 皮膚（撕裂傷、擦傷）
+        - 脊椎（骨折、脫位）
+    - name: 損傷嚴重度因子
+      examples:
+        - 車速
+        - 動物體型
+        - 撞擊部位
+        - 是否被輾壓
+
+clinicalSigns:
+  early:
+    - 休克（蒼白、心搏過速、低血壓）
+    - 呼吸困難
+    - 明顯外傷（傷口、出血、骨折）
+    - 疼痛
+  progressive:
+    - 肺挫傷惡化（外傷後 12-24 小時最嚴重）
+    - 腹腔出血
+    - 骨盆骨折出血（大量）
+    - 尿道損傷（排尿障礙）
+    - TBI 征象
+
+diagnosis:
+  primaryTests:
+    - name: Primary survey (ABCDE)
+      notes: Airway、Breathing、Circulation、Disability（神經）、Exposure（全身檢查）
+    - name: TFAST / AFAST 超音波
+      notes: 快速評估胸腹腔液體與氣胸
+  additional:
+    - 胸腹部 X-ray
+    - 骨盆/四肢 X-ray
+    - CBC、生化、PCV/TP
+    - 乳酸
+    - 尿液分析（血尿→泌尿道損傷）
+    - 凝血功能
+
+treatment:
+  principles:
+    - ABCDE 系統性處理
+    - 生命威脅優先
+    - 多團隊協作
+    - 骨折可延遲但軟組織急症需即時
+  general:
+    - ABC 穩定：氣道通暢、氧氣、IV 輸液
+    - 休克復甦（晶體液 bolus ± 輸血）
+    - 氣胸：胸腔穿刺
+    - 止痛（opioids）
+    - 傷口初步清創包紮
+    - 骨折臨時固定（Robert Jones、夾板）
+    - 緊急手術（持續出血、膀胱破裂、膈疝）
+    - 肺挫傷：保守管理（氧氣、保守輸液）
+    - 48-72 小時持續監測（延遲性損傷）
+    - 骨折手術安排（穩定後 3-5 天）
+
+prognosis: HBC 整體存活率約 80-85%（到達醫院者）。多系統損傷、嚴重 TBI 與大量出血為不良預後因子。單純骨折預後佳。肺挫傷多在 3-5 天改善。早期積極穩定為關鍵。
+
+pubmedQueries:
+  - query: '"vehicular trauma" OR "hit by car" AND (veterinary OR canine OR feline) AND ("treatment" OR "polytrauma" OR "emergency")'
+    frequency: monthly

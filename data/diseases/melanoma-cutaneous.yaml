@@ -1,0 +1,60 @@
+slug: melanoma-cutaneous
+nameEn: Melanoma Cutaneous
+nameZh: 皮膚黑色素瘤
+bodySystem: dermatology
+description: 皮膚黑色素細胞的腫瘤，犬的皮膚型（非口腔、非甲床）多為良性。外觀為色素沉著的圓形突起腫塊，也可無色素（amelanotic）。需與口腔黑色素瘤（惡性度高）區分。
+
+aliases:
+  - { alias: "Cutaneous Melanocytoma", language: en }
+  - { alias: "Skin Melanoma", language: en }
+  - { alias: "皮膚型黑色素瘤", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬皮膚腫瘤中常見。多為良性。頭頸軀幹好發。Miniature Schnauzer 好發。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓皮膚黑色素瘤不常見，但惡性率較犬高。
+
+etiology:
+  categories:
+    - name: 腫瘤性
+      examples:
+        - 黑色素細胞增生
+        - 犬皮膚型多為良性
+        - 紫外線曝曬可能為因子
+
+clinicalSigns:
+  early:
+    - 皮膚上黑色或深色隆起腫塊
+    - 生長緩慢
+    - 無疼痛
+  progressive:
+    - 腫塊增大
+    - 可能潰瘍出血
+    - 無色素型外觀粉紅色
+
+diagnosis:
+  primaryTests:
+    - name: 細針穿刺細胞學
+      notes: 見黑色素細胞與黑色素顆粒。無色素型可能需特殊染色
+    - name: 組織病理
+      notes: 手術切除後確認良惡性與切除邊緣
+
+treatment:
+  principles:
+    - 手術切除為主要治療
+    - 犬皮膚型多為良性
+    - 確認非口腔或甲床來源
+  general:
+    - 手術完整切除
+    - 組織病理確認良惡性
+    - 惡性型需分期檢查（淋巴結、胸腔）
+    - 惡性型可考慮黑色素瘤疫苗
+
+prognosis: 犬皮膚型良性黑色素瘤切除後預後極佳。惡性皮膚黑色素瘤較口腔型預後稍佳但仍需警惕。貓皮膚黑色素瘤惡性比例較高。
+
+pubmedQueries:
+  - query: '"cutaneous melanoma" AND (veterinary OR canine OR feline) AND ("prognosis" OR "treatment")'
+    frequency: monthly

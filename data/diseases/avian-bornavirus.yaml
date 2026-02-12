@@ -1,0 +1,74 @@
+slug: avian-bornavirus
+nameEn: Avian Bornavirus
+nameZh: 禽類波納病毒感染
+bodySystem: infectious
+description: 禽類波納病毒（ABV）為引起前胃擴張症（PDD）的病原體，屬於嗜神經性 RNA 病毒。感染後病毒持續存在於神經組織中，引發免疫介導性神經節炎。臨床表現多樣，從無症狀帶原到嚴重消化與神經功能障礙。
+
+aliases:
+  - { alias: 禽波納病毒, language: zh }
+  - { alias: ABV 感染, language: zh }
+  - { alias: ABV infection, language: en }
+  - { alias: Parrot bornaviral ganglioneuritis, language: en }
+
+species:
+  - speciesCommon: bird
+    prevalence: uncommon
+    notes: 鸚鵡類為主要宿主。許多鳥群中 ABV 血清陽性率可達 20-50%，但僅部分發展為臨床疾病。金剛鸚鵡、灰鸚鵡為高風險種。
+
+etiology:
+  categories:
+    - name: 病毒性
+      examples:
+        - Parrot Bornavirus（PaBV，多種基因型）
+        - 經糞口途徑傳播
+        - 可能經呼吸道或直接接觸傳播
+        - 垂直傳播可能
+    - name: 免疫病理機制
+      examples:
+        - 病毒持續感染神經組織
+        - T 細胞介導的神經節炎
+        - 消化道自主神經系統破壞
+        - 中樞神經系統發炎（腦脊髓炎）
+
+clinicalSigns:
+  early:
+    - 輕度體重下降
+    - 糞便中偶見未消化食物
+    - 行為改變（較安靜）
+  progressive:
+    - 進行性消瘦
+    - 持續嘔吐
+    - 嗉囊排空延遲
+    - 前胃擴張
+    - 共濟失調
+    - 癲癇發作
+    - 視力障礙
+
+diagnosis:
+  primaryTests:
+    - name: ABV RT-PCR
+      notes: 泄殖腔拭子、嗉囊拭子或血液。間歇性排毒故單次陰性不可排除
+    - name: 抗 ABV 抗體檢測
+      notes: 血清學檢測 ABV 抗體。陽性表示暴露但不等於臨床疾病
+    - name: 影像學
+      notes: X 光見前胃擴張；鋇劑造影見消化道蠕動減弱
+
+treatment:
+  principles:
+    - 抗發炎治療為核心
+    - 支持性照護
+    - 隔離管理
+    - 長期監測
+  general:
+    - COX-2 抑制劑（Celecoxib 10-20 mg/kg PO BID）
+    - Meloxicam（0.5-1 mg/kg PO SID）
+    - 易消化飲食
+    - 營養補充
+    - 感染鳥與健康鳥分離飼養
+    - 定期體重監測與糞便檢查
+
+prognosis: 預後謹慎。ABV 感染為終生持續性感染，無法根治。許多帶原鳥可長期維持穩定不發病。發展為 PDD 者預後較差，但抗發炎治療可延緩進展。出現嚴重神經症狀者預後不良。
+
+pubmedQueries:
+  - query: '"avian bornavirus" AND (parrot OR psittacine) AND ("treatment" OR "management" OR "diagnosis")'
+    frequency: monthly

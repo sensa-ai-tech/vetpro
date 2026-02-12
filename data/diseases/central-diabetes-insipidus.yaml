@@ -1,0 +1,70 @@
+slug: central-diabetes-insipidus
+nameEn: Central Diabetes Insipidus
+nameZh: 中樞性尿崩症
+bodySystem: endocrine
+description: 中樞性尿崩症（CDI）為下視丘-神經腦下垂體後葉系統 ADH（vasopressin）合成或分泌不足導致的嚴重多飲多尿。犬隻最常見為特發性。其他原因包括腦部腫瘤（顱咽管瘤、腦下垂體大腺瘤）、頭部外傷、手術後與發炎性疾病。可為完全性或部分性。DDAVP 替代治療效果良好。
+
+aliases:
+  - { alias: CDI, language: en }
+  - { alias: 中樞型尿崩症, language: zh }
+  - { alias: Neurogenic Diabetes Insipidus, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬隻 CDI 罕見。特發性為最常見原因。腦部腫瘤（大型垂體腺瘤）亦可引起。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻 CDI 極罕見。偶有報告。
+
+etiology:
+  categories:
+    - name: 特發性
+      examples:
+        - 最常見原因（犬隻）
+        - 可能為自體免疫性破壞下視丘 ADH 分泌神經元
+        - 先天性下視丘-神經垂體發育不良
+    - name: 繼發性
+      examples:
+        - 腦下垂體腫瘤（顱咽管瘤、大腺瘤壓迫）
+        - 頭部外傷
+        - 腦部手術後
+        - 腦膜腦炎
+
+clinicalSigns:
+  early:
+    - 極度多飲（polydipsia >100 mL/kg/day）
+    - 極度多尿（polyuria >50 mL/kg/day）
+    - 尿液如清水
+  progressive:
+    - 持續極度多飲多尿
+    - 夜間多尿與尿失禁
+    - 限水時快速脫水
+    - 腦部腫瘤相關神經症狀（定向障礙、視力喪失、癲癇）
+
+diagnosis:
+  primaryTests:
+    - name: DDAVP 試驗
+      notes: DDAVP 給藥後尿液比重顯著升高（>1.015，通常 >1.020）且尿量減少 >50%。與腎源性 DI 鑑別（NDI 無反應）。
+    - name: 腦部 MRI
+      notes: 評估下視丘與腦下垂體結構。排除腫瘤。正常犬貓 T1 MRI 可見腦下垂體後葉「亮點」（bright spot），CDI 時消失。
+
+treatment:
+  principles:
+    - DDAVP 為 CDI 特異性治療
+    - 治療基礎原因（腫瘤）
+    - 確保充足飲水
+  general:
+    - "DDAVP（Desmopressin）0.1-0.4 μg/kg SC q12-24h"
+    - "或 DDAVP intranasal 1-4 滴 q12h"
+    - "或 DDAVP 口服 0.1-0.2 mg PO q8-12h（生體可用率較低）"
+    - 劑量依臨床反應調整（以尿量與尿液比重監測）
+    - 腦部腫瘤：放射治療或手術
+    - 外傷後 CDI：部分可自行恢復（觀察數週）
+    - 確保隨時有充足飲水
+
+prognosis: 特發性 CDI 以 DDAVP 治療反應優良，可維持正常生活品質。需終生用藥。腦部腫瘤引起的 CDI 預後取決於腫瘤類型與治療。外傷後 CDI 部分可在數週至數月內自行恢復。部分性 CDI 可能僅需低劑量 DDAVP。治療費用為長期管理考量。
+
+pubmedQueries:
+  - query: '"central diabetes insipidus" AND (veterinary OR canine OR feline) AND ("desmopressin" OR "treatment" OR "MRI")'
+    frequency: monthly

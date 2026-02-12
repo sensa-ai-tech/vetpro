@@ -1,0 +1,79 @@
+slug: borreliosis
+nameEn: Borreliosis
+nameZh: 包柔螺旋體感染症
+bodySystem: infectious
+description: 包柔螺旋體感染症 (borreliosis) 由 Borrelia burgdorferi sensu lato 複合群引起，經硬蜱 (Ixodes spp.) 叮咬傳播。犬為主要臨床宿主，可引起多關節炎、腎病及心肌炎。貓自然感染罕見且臨床意義不明。蜱蟲需附著至少 36-48 小時才能傳播病原。
+
+aliases:
+  - { alias: 萊姆包柔體病, language: zh }
+  - { alias: 伯氏疏螺旋體感染, language: zh }
+  - { alias: Lyme Borreliosis, language: en }
+  - { alias: Borrelia Infection, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 流行區（北美東北部、歐洲）犬血清陽性率可達 50% 以上，但僅 5-10% 發展臨床症狀。Labrador Retriever 與 Golden Retriever 可能較易發展蛋白流失性腎病 (Lyme nephritis)。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓自然感染極罕見，臨床意義不明確。實驗感染可產生抗體但少有臨床症狀。
+
+etiology:
+  categories:
+    - name: 病原與傳播
+      examples:
+        - Borrelia burgdorferi sensu stricto（北美主要病原）
+        - 經硬蜱 Ixodes scapularis（北美）或 I. ricinus（歐洲）傳播
+        - 蜱蟲需附著 36-48 小時以上才能傳播
+        - 白足鼠 (Peromyscus leucopus) 為主要儲備宿主
+    - name: 流行地區
+      examples:
+        - 北美東北部與中西部上游
+        - 歐洲溫帶地區
+        - 亞洲部分地區
+
+clinicalSigns:
+  early:
+    - 急性跛行（一肢或多肢，游走性）
+    - 關節腫脹與疼痛
+    - 發燒
+    - 食慾下降與嗜睡
+  progressive:
+    - 復發性多關節炎
+    - 蛋白流失性腎病（Lyme nephritis，預後極差）
+    - 蛋白尿、水腫、氮血症
+    - 心肌炎（罕見）
+    - 神經型（罕見）
+
+diagnosis:
+  primaryTests:
+    - name: SNAP 4Dx（C6 抗體）
+      notes: 偵測 C6 抗體（VlsE 蛋白之 C6 肽段），不受疫苗干擾。陽性僅代表暴露，需結合臨床症狀判斷
+    - name: Quant C6 定量檢測
+      notes: C6 抗體定量，>30 U/mL 提示活動性感染。治療後追蹤下降幅度（>50% 下降為治療有效指標）
+  additional:
+    - 尿液蛋白質/肌酸酐比值 (UPC)（篩檢 Lyme nephritis）
+    - CBC、生化（腎功能評估）
+    - 關節液分析（非化膿性多關節炎）
+    - Western blot（特殊情況確認）
+
+treatment:
+  principles:
+    - 抗生素治療為核心
+    - Doxycycline 為首選藥物
+    - 臨床反應通常快速
+    - Lyme nephritis 需積極腎臟支持
+  general:
+    - Doxycycline 10 mg/kg PO BID × 30 天
+    - 替代藥物：amoxicillin 20 mg/kg PO TID × 30 天
+    - 臨床症狀通常 24-48 小時內改善
+    - 疼痛管理（NSAIDs，如非腎損傷）
+    - Lyme nephritis 需積極治療（ACE 抑制劑、免疫抑制劑、透析）
+    - 蜱蟲預防為長期管理重點
+    - 流行區犬考慮疫苗接種
+
+prognosis: 單純 Lyme 關節炎抗生素治療後預後良好，多數 24-48 小時內改善。Lyme nephritis 預後極差，多數在數週至數月內進展為腎衰竭。早期偵測蛋白尿可能改善預後。
+
+pubmedQueries:
+  - query: '"borreliosis" OR "Borrelia burgdorferi" AND (veterinary OR canine) AND ("treatment" OR "diagnosis")'
+    frequency: monthly

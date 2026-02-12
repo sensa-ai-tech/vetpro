@@ -1,0 +1,82 @@
+slug: angiostrongylosis
+nameEn: Angiostrongylosis
+nameZh: 犬血管圓線蟲感染
+bodySystem: infectious
+description: 犬血管圓線蟲感染 (angiostrongylosis) 由 Angiostrongylus vasorum 引起，又稱「法國心蟲」。成蟲寄居肺動脈及右心室，經蝸牛/蛞蝓中間宿主傳播。可引起嚴重凝血障礙（消耗性凝血病變）、肺動脈高壓及右心衰竭，為潛在致命性疾病。
+
+aliases:
+  - { alias: 法國心蟲, language: zh }
+  - { alias: 犬肺動脈蟲感染, language: zh }
+  - { alias: French Heartworm, language: en }
+  - { alias: Canine Angiostrongylosis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 歐洲、南美及加拿大部分地區盛行。幼犬至青年犬好發。凝血障礙為最危險併發症。狐狸為重要野生動物儲備宿主。流行區持續擴大。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓 A. vasorum 感染極罕見。偶有個案報告但非典型宿主。
+
+etiology:
+  categories:
+    - name: 生活史
+      examples:
+        - 經攝食蝸牛、蛞蝓或轉運宿主（蛙）感染 L3 幼蟲
+        - L3 經腸壁遷移至腸繫膜淋巴結，發育後進入門靜脈系統
+        - 成蟲定殖肺動脈與右心室
+        - L1 幼蟲穿出肺泡，經氣管至咽部吞嚥後隨糞便排出
+    - name: 致病機制
+      examples:
+        - 成蟲引起肺動脈內膜炎與血栓
+        - 凝血障礙（消耗性凝血病變 + 血小板功能障礙）
+        - 肺動脈高壓
+        - 免疫介導機制加重組織損傷
+
+clinicalSigns:
+  early:
+    - 咳嗽
+    - 運動不耐
+    - 輕度呼吸急促
+  progressive:
+    - 異常出血（皮下血腫、鼻出血、牙齦出血）
+    - 呼吸困難
+    - 暈厥
+    - 右心衰竭（腹水）
+    - 神經症狀（腦出血）
+    - 猝死
+
+diagnosis:
+  primaryTests:
+    - name: IDEXX Angio Detect 快篩
+      notes: 偵測循環抗原，敏感度 >95%。可快速院內操作。與心絲蟲抗原無交叉反應
+    - name: Baermann 糞便檢查
+      notes: 偵測 L1 幼蟲。需與其他線蟲 L1 鑑別（尾部形態特徵）。間歇性排蟲需多次檢查
+  imaging:
+    - name: 胸腔 X-ray
+      notes: 支氣管肺泡浸潤、肺動脈擴張。嚴重者右心擴大
+  additional:
+    - 凝血功能（PT、aPTT 延長、D-dimer 升高）
+    - CBC（嗜酸球增多、血小板減少、再生性貧血）
+    - 心臟超音波（肺動脈高壓、右心功能）
+
+treatment:
+  principles:
+    - 驅蟲藥物消滅蟲體
+    - 凝血障礙為最緊急處理
+    - 支持心肺功能
+    - 每月預防為流行區標準
+  general:
+    - Fenbendazole 25 mg/kg PO SID × 20 天（首選治療）
+    - 替代：milbemycin oxime 0.5 mg/kg PO 每週 × 4 週
+    - Moxidectin/imidacloprid spot-on（治療與預防）
+    - 凝血障礙：新鮮冷凍血漿、vitamin K1
+    - 嚴重呼吸窘迫：氧氣支持
+    - 右心衰竭管理
+    - 每月預防（moxidectin 或 milbemycin 含有效成分的產品）
+
+prognosis: 早期診斷與治療的犬預後良好至佳。嚴重凝血障礙或已發展心衰竭者預後謹慎。腦出血者預後不良。每月使用含 moxidectin 或 milbemycin 的預防劑可有效預防。
+
+pubmedQueries:
+  - query: '"Angiostrongylus vasorum" AND (canine OR veterinary) AND ("treatment" OR "diagnosis" OR "coagulopathy")'
+    frequency: monthly

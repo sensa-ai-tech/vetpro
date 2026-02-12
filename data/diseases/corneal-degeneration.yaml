@@ -1,0 +1,69 @@
+slug: corneal-degeneration
+nameEn: Corneal Degeneration
+nameZh: 角膜退化
+bodySystem: ophthalmology
+description: 非遺傳性、後天性角膜組織退化，表現為角膜脂質沉積、鈣化或混濁。常繼發於慢性角膜炎症、全身性高脂血症或老年退化。與角膜營養不良不同，可為單側且不對稱。
+
+aliases:
+  - { alias: Band Keratopathy, language: en }
+  - { alias: Calcific Band Keratopathy, language: en }
+  - { alias: 角膜變性, language: zh }
+  - { alias: 帶狀角膜病變, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬常見，尤其老年犬。可繼發於慢性角膜疾病或全身性高脂血症。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓較少見，可與慢性 FHV-1 角膜炎相關。
+
+etiology:
+  categories:
+    - name: 繼發於局部因素
+      examples:
+        - 慢性角膜炎或潰瘍後
+        - 角膜瘢痕區退化
+        - 乾眼症 (KCS) 慢性刺激
+    - name: 繼發於全身性因素
+      examples:
+        - 高脂血症 (甲狀腺功能低下、Cushing)
+        - 高鈣血症
+        - 老年退化
+
+clinicalSigns:
+  early:
+    - 角膜白色或灰白色沉積
+    - 常不對稱
+    - 可能無症狀
+  progressive:
+    - 鈣化區粗糙突起
+    - 繼發角膜潰瘍 (鈣化突起刺激)
+    - 角膜新生血管
+    - 視力下降
+
+diagnosis:
+  primaryTests:
+    - name: 裂隙燈檢查
+      notes: 角膜白色結晶或鈣化沉積。鈣化帶常沿角膜中段水平分布 (band keratopathy)
+    - name: 血液生化 + 脂質
+      notes: 排除全身性高脂血症、高鈣血症、甲狀腺功能低下
+    - name: 螢光素染色
+      notes: 評估是否有繼發性角膜潰瘍
+
+treatment:
+  principles:
+    - 治療根本原因
+    - 鈣化沉積可用 EDTA 螯合
+    - 嚴重時手術移除
+  general:
+    - 控制全身性疾病 (低脂飲食、甲狀腺替代治療)
+    - 1-2% EDTA 眼藥水溶解鈣質沉積
+    - 表淺角膜切除 (superficial keratectomy) 移除嚴重沉積
+    - 潤滑劑保護角膜
+
+prognosis: 輕度退化預後良好，治療根本原因可穩定或改善。鈣化沉積可能復發。嚴重退化伴反覆潰瘍預後謹慎。
+
+pubmedQueries:
+  - query: '"corneal degeneration" AND (veterinary OR canine OR feline) AND ("calcific" OR "treatment")'
+    frequency: monthly

@@ -1,0 +1,64 @@
+slug: uveal-melanoma
+nameEn: Uveal Melanoma
+nameZh: 葡萄膜黑色素瘤
+bodySystem: ophthalmology
+description: 起源於葡萄膜 (虹膜、睫狀體、脈絡膜) 黑色素細胞的腫瘤。犬的葡萄膜黑色素瘤多為良性行為，貓的虹膜黑色素瘤則有惡性傾向且可轉移。需與貓的良性虹膜黑色素沉著 (iris melanosis) 鑑別。
+
+aliases:
+  - { alias: Iris Melanoma, language: en }
+  - { alias: Ciliary Body Melanoma, language: en }
+  - { alias: 虹膜黑色素瘤, language: zh }
+  - { alias: 葡萄膜黑色素細胞瘤, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬葡萄膜黑色素瘤多為良性 (melanocytoma)。Labrador Retriever、Golden Retriever 較常見。轉移率低。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓虹膜黑色素瘤惡性率高 (瀰漫性虹膜黑色素瘤)。可轉移至肝臟。
+
+etiology:
+  categories:
+    - name: 腫瘤性
+      examples:
+        - 黑色素細胞增生與惡性轉化
+        - 犬多為良性黑色素細胞瘤 (melanocytoma)
+        - 貓瀰漫性虹膜黑色素瘤可能從 iris melanosis 進展
+
+clinicalSigns:
+  early:
+    - 虹膜色素斑 (局部或瀰漫性)
+    - 瞳孔形狀改變
+    - 通常無疼痛
+  progressive:
+    - 腫塊增大
+    - 續發性青光眼 (房角阻塞)
+    - 前房出血 (hyphema)
+    - 虹膜形狀明顯改變
+
+diagnosis:
+  primaryTests:
+    - name: 裂隙燈檢查
+      notes: 虹膜色素性腫塊。評估瀰漫程度與虹膜表面質地改變
+    - name: 眼壓測量
+      notes: 續發性青光眼篩檢
+    - name: 眼部超音波 / UBM
+      notes: 評估睫狀體侵犯與腫塊大小
+
+treatment:
+  principles:
+    - 犬良性腫瘤可監測追蹤
+    - 貓瀰漫性黑色素瘤建議早期眼球摘除
+    - 續發性青光眼需處理
+  general:
+    - 犬小型良性：定期追蹤 (每 3-6 個月)
+    - 犬續發性青光眼：眼球摘除
+    - 貓瀰漫性虹膜黑色素瘤：眼球摘除送病理
+    - 貓術後分期檢查 (腹部超音波評估肝轉移)
+
+prognosis: 犬葡萄膜黑色素瘤多數良性，預後良好。貓瀰漫性虹膜黑色素瘤為惡性，早期摘除預後中等；延遲治療轉移率增加，預後不良。
+
+pubmedQueries:
+  - query: '"uveal melanoma" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
+    frequency: monthly

@@ -1,0 +1,73 @@
+slug: fluoride-toxicosis
+nameEn: Fluoride Toxicosis
+nameZh: 氟化物中毒
+bodySystem: toxicology
+description: 氟化物 (fluoride) 急性中毒在犬貓中罕見，可因攝入含氟牙膏、殺蟲劑或工業廢棄物引起。急性過量引起消化道刺激、低鈣血症與心律不整。慢性低劑量暴露引起氟骨症（骨骼與牙齒損傷）。
+
+aliases:
+  - { alias: 氟中毒, language: zh }
+  - { alias: Fluoride Poisoning, language: en }
+  - { alias: Fluorosis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬急性氟化物中毒致死劑量約 5-10 mg F/kg（sodium fluoride）。含氟牙膏為最常見意外來源。慢性氟骨症在受汙染水源區域偶見。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓氟化物中毒極罕見。暴露來源與犬類似。
+
+etiology:
+  categories:
+    - name: 毒性機制
+      examples:
+        - 氟離子與鈣離子結合引起低鈣血症
+        - 抑制多種含金屬酵素
+        - 直接腐蝕消化道黏膜
+        - 慢性暴露沉積於骨骼與牙齒
+    - name: 來源
+      examples:
+        - 人用含氟牙膏
+        - 含 sodium fluoride 的殺蟲劑
+        - 受汙染飲水（慢性暴露）
+
+clinicalSigns:
+  early:
+    - 嘔吐
+    - 過度流涎
+    - 腹瀉
+  progressive:
+    - 低鈣血症（肌肉震顫、強直）
+    - 心律不整
+    - 虛弱
+    - 慢性：牙齒斑駁、骨骼變形
+
+diagnosis:
+  primaryTests:
+    - name: 病史確認
+      notes: 確認氟化物暴露來源與量
+    - name: 血清鈣
+      notes: 急性中毒低鈣血症為關鍵發現
+  additional:
+    - 心電圖
+    - 尿液氟離子濃度
+    - 骨骼 X-ray（慢性氟骨症）
+
+treatment:
+  principles:
+    - 矯正低鈣血症
+    - 消化道去汙染
+    - 支持心血管功能
+  general:
+    - 口服鈣劑（牛奶或 calcium gluconate PO）結合胃腸道中游離氟
+    - 催吐（早期）
+    - 10% calcium gluconate 0.5-1 mL/kg IV 緩慢輸注（矯正低鈣血症）
+    - IV 輸液
+    - 心律不整監測與管理
+    - 消化道保護
+
+prognosis: 急性氟化物中毒及時矯正低鈣血症並去汙染後預後可良好。大劑量暴露致心律不整者預後較差。慢性氟骨症骨骼變化為不可逆。
+
+pubmedQueries:
+  - query: '"fluoride toxicosis" AND (veterinary OR canine OR feline) AND ("treatment" OR "fluorosis")'
+    frequency: monthly

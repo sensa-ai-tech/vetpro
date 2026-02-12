@@ -1,0 +1,77 @@
+slug: selective-iga-deficiency
+nameEn: Selective IgA Deficiency
+nameZh: 選擇性 IgA 缺乏症
+bodySystem: immunology
+description: 選擇性 IgA 缺乏症為最常見的原發性免疫缺陷之一，因 IgA 產生不足導致黏膜免疫防禦低下。犬以 German Shepherd、Shar-Pei 與 Beagle 好發。臨床表現為反覆呼吸道感染、慢性消化道疾病與皮膚感染。
+
+aliases:
+  - { alias: IgA 缺乏症, language: zh }
+  - { alias: IgA 免疫缺陷, language: zh }
+  - { alias: IgA Deficiency, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 好發 German Shepherd（與小腸細菌過度增生相關）、Shar-Pei（與皮膚病相關）、Beagle。犬血清 IgA <0.1 mg/mL 定義為缺乏。部分犬無明顯臨床症狀。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓 IgA 缺乏報告極少。臨床意義不明確。
+
+etiology:
+  categories:
+    - name: 致病機制
+      examples:
+        - B 細胞 IgA class switch 異常
+        - IgA 分泌型漿細胞分化障礙
+        - 黏膜表面 secretory IgA (sIgA) 不足
+        - 腸道、呼吸道、泌尿生殖道黏膜防禦降低
+    - name: 遺傳背景
+      examples:
+        - 品種相關遺傳傾向
+        - 遺傳模式尚未完全釐清
+        - 可能為多基因遺傳
+
+clinicalSigns:
+  early:
+    - 反覆上呼吸道感染
+    - 慢性腹瀉
+    - 反覆皮膚感染
+  progressive:
+    - 小腸細菌過度增生 (SIBO)
+    - 慢性炎症性腸病 (IBD)
+    - 反覆泌尿道感染
+    - 異位性皮膚炎（共病）
+    - 自體免疫疾病傾向增加
+
+diagnosis:
+  primaryTests:
+    - name: 血清 IgA 定量
+      notes: 犬血清 IgA <0.1 mg/mL 為缺乏。需與年齡相關正常值比較
+    - name: 糞便 IgA
+      notes: 糞便或唾液 sIgA 測定可評估黏膜免疫
+  additional:
+    - IgG、IgM 定量（排除泛低球蛋白血症）
+    - 糞便培養（SIBO 評估）
+    - 腸道生檢（慢性消化道病例）
+    - 品種相關基因檢測（如可得）
+
+treatment:
+  principles:
+    - 無法直接補充 IgA
+    - 積極治療繼發感染
+    - 消化道疾病管理
+    - 免疫調節支持
+  general:
+    - 感染發作期：適當抗生素治療
+    - SIBO：tylosin 20 mg/kg PO BID 或 metronidazole
+    - 益生菌補充
+    - 飲食管理（易消化飲食、食物過敏排除飲食）
+    - 避免不必要的免疫抑制藥物
+    - 定期健康檢查
+    - 遺傳諮詢（繁殖用犬）
+
+prognosis: 選擇性 IgA 缺乏犬多數可維持良好生活品質，但需持續管理反覆感染與消化道問題。部分犬終身無明顯症狀。German Shepherd 合併 SIBO 者需長期飲食管理。
+
+pubmedQueries:
+  - query: '"IgA deficiency" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis" OR "German Shepherd")'
+    frequency: monthly

@@ -1,0 +1,70 @@
+slug: eisenmenger-syndrome
+nameEn: Eisenmenger Syndrome
+nameZh: 乙乙氏症候群
+bodySystem: cardiac
+description: Eisenmenger 症候群為先天性心臟分流性缺損的嚴重併發症，因長期左向右分流導致肺動脈高壓，最終肺血管阻力超過體循環阻力，分流方向逆轉為右向左，產生發紺與低血氧。常見於未矯正的心室中隔缺損（VSD）、動脈導管未閉（PDA）或心房中隔缺損（ASD）。
+
+aliases:
+  - { alias: Eisenmenger Complex, language: en }
+  - { alias: 艾森曼格症候群, language: zh }
+  - { alias: Reversed Shunt, language: en }
+  - { alias: 逆向分流, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 多發生於未矯正的大型先天性心臟分流缺損。一旦發展為 Eisenmenger 症候群，手術修補已屬禁忌。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻少見，但可發生於未矯正的大型 VSD 或 ASD。
+
+etiology:
+  categories:
+    - name: 先天性心臟分流缺損（前置條件）
+      examples:
+        - 大型心室中隔缺損（VSD，最常見原因）
+        - 動脈導管未閉（PDA）
+        - 心房中隔缺損（ASD）
+        - 房室中隔缺損（AVSD）
+    - name: 病理生理機轉
+      examples:
+        - 長期左向右分流導致肺血流量增加
+        - 肺小動脈中膜肥厚與內膜增生
+        - 不可逆的肺血管重塑（plexiform lesion）
+        - 肺血管阻力超過體循環阻力致分流逆轉
+
+clinicalSigns:
+  early:
+    - 發紺（特別是運動後加重）
+    - 運動不耐
+    - 呼吸急促
+  progressive:
+    - 持續性發紺
+    - 續發性紅血球增多症（代償性）
+    - 嚴重運動不耐
+    - 昏厥
+    - 血液黏稠度增加相關併發症（血栓形成）
+
+diagnosis:
+  primaryTests:
+    - name: 心臟超音波（Echocardiography）
+      notes: 可見原始心臟缺損、右心室肥厚與擴大、肺動脈擴張。彩色都卜勒顯示右向左分流或雙向分流。評估三尖瓣返流速度估算肺動脈壓力。
+    - name: 脈搏式血氧飽和度（Pulse Oximetry）
+      notes: SpO2 降低（通常 <90%）。差異性發紺見於 PDA 逆向分流（後肢 SpO2 低於前肢）。
+
+treatment:
+  principles:
+    - 一旦發展為 Eisenmenger 症候群，手術修補分流缺損為禁忌
+    - 治療目標為降低肺血管阻力與改善症狀
+    - 避免加重肺動脈高壓的因素
+  general:
+    - "Sildenafil 1-2 mg/kg PO q8-12h（磷酸二酯酶-5 抑制劑，降低肺動脈壓力）"
+    - 續發性紅血球增多症嚴重時考慮治療性放血（Phlebotomy，PCV >65-70%）
+    - 避免劇烈運動、高溫、低氧環境
+    - 禁忌使用血管擴張劑（可能加重右向左分流）
+
+prognosis: 預後不良。Eisenmenger 症候群為不可逆的肺血管病變，無法根治。Sildenafil 可改善部分病例的臨床症狀與運動耐受度。多數動物在診斷後數月至數年內因進行性低血氧或併發症而死亡。早期發現並矯正先天性分流缺損是預防的關鍵。
+
+pubmedQueries:
+  - query: '"Eisenmenger syndrome" AND (veterinary OR canine OR feline) AND ("pulmonary hypertension" OR "treatment")'
+    frequency: monthly

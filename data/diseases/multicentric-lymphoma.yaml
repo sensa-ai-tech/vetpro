@@ -1,0 +1,62 @@
+slug: multicentric-lymphoma
+nameEn: Multicentric Lymphoma
+nameZh: 多中心型淋巴瘤
+bodySystem: oncology
+description: 犬最常見的淋巴瘤類型（約占 80%），表現為全身多處淋巴結無痛性腫大。分為 B 細胞型（預後較佳）與 T 細胞型。為犬最常見的血液腫瘤之一，化療反應率高。
+
+aliases:
+  - { alias: "Multicentric Lymphosarcoma", language: en }
+  - { alias: "多中心淋巴瘤", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬常見。Golden Retriever、Boxer、Bullmastiff 好發。中老年犬。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓以消化道型與縱膈型較常見。
+
+etiology:
+  categories:
+    - name: 腫瘤性
+      examples:
+        - 淋巴球惡性增生
+        - B 細胞型（較常見，預後較佳）
+        - T 細胞型（預後較差）
+
+clinicalSigns:
+  early:
+    - 全身淋巴結無痛性腫大
+    - 初期精神食慾正常
+    - 體重正常
+  progressive:
+    - 精神沉鬱
+    - 食慾下降
+    - 體重減輕
+    - 脾肝腫大
+    - 貧血
+
+diagnosis:
+  primaryTests:
+    - name: 淋巴結細針穿刺
+      notes: 大量淋巴母細胞（中至大型淋巴球）。快速診斷
+    - name: 流式細胞術（flow cytometry）
+      notes: B vs T 細胞分型。預後相關
+    - name: 分期檢查
+      notes: CBC、生化、胸腹腔影像
+
+treatment:
+  principles:
+    - 化療為主要治療
+    - CHOP protocol 為標準方案
+  general:
+    - CHOP 化療方案（Cyclophosphamide、Doxorubicin、Vincristine、Prednisolone）
+    - 緩解率 80-90%
+    - 單用 Prednisolone（經濟限制時）：緩解率 50% 但短暫
+    - B 細胞型預後優於 T 細胞型
+
+prognosis: CHOP 化療中位存活 12-14 個月。B 細胞型中位存活較 T 細胞型長。不治療中位存活 4-6 週。單用 Prednisolone 中位存活 1-2 個月。
+
+pubmedQueries:
+  - query: '"multicentric lymphoma" AND (veterinary OR canine) AND ("CHOP" OR "chemotherapy")'
+    frequency: monthly

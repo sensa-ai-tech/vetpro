@@ -1,0 +1,72 @@
+slug: fluid-overload
+nameEn: Fluid Overload
+nameZh: 容積過負荷
+bodySystem: metabolic
+description: 靜脈輸液速率或總量超過機體排泄能力導致的體液蓄積過多，可引起肺水腫、胸腔積液及周邊水腫。心臟病、腎病及低白蛋白血症患者最易發生，為住院動物輸液治療中需持續警惕的醫源性併發症。
+
+aliases:
+  - { alias: 液體過量, language: zh }
+  - { alias: 過度輸液, language: zh }
+  - { alias: Volume Overload, language: en }
+  - { alias: Fluid Overload Syndrome, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬容積過負荷常見於心臟病犬輸液過快或腎衰竭無尿期繼續輸液。小型犬因耐受容積小較易發生。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓心肌病發生率高，潛在心臟病貓輸液易發生容積過負荷導致肺水腫。貓輸液速率需較犬保守。
+
+etiology:
+  categories:
+    - name: 醫源性
+      examples:
+        - 靜脈輸液速率過快
+        - 輸液總量過多（未適時減量）
+        - 輸血容積過大
+    - name: 易感因素
+      examples:
+        - 心臟疾病（心輸出量不足，容積負荷增加）
+        - 腎衰竭無尿/寡尿期
+        - 低白蛋白血症（膠體滲透壓低→液體外滲）
+
+clinicalSigns:
+  early:
+    - 體重快速增加
+    - 漿液性鼻分泌物
+    - 呼吸加快
+    - 心率加快
+  progressive:
+    - 肺水腫（呼吸困難、肺囉音）
+    - 胸腔積液
+    - 腹水
+    - 周邊水腫（四肢、面部）
+    - 化學性眼淚（chemosis，結膜水腫）
+
+diagnosis:
+  primaryTests:
+    - name: 理學檢查
+      notes: 肺聽診（囉音/濕囉音）、頸靜脈怒張、體重增加趨勢。化學性眼淚（chemosis）為早期徵兆之一。
+    - name: 胸腔 X 光
+      notes: 肺水腫表現（肺泡型/間質型浸潤）。犬心源性肺水腫以肺門為中心，非心源性較瀰漫。
+
+treatment:
+  principles:
+    - 立即減慢或停止靜脈輸液
+    - 利尿劑促進液體排出
+    - 氧氣支持
+    - 找出並處理促發因素
+  general:
+    - 停止或大幅減慢輸液速率
+    - Furosemide 2-4 mg/kg IV（利尿劑首選）
+    - 氧氣治療（肺水腫時）
+    - 嚴重胸腔積液可行胸腔穿刺
+    - 心臟病患者加強心衰治療
+    - 持續監測呼吸、體重及尿量
+
+prognosis: 醫源性容積過負荷若及時辨識並處理（停止輸液 + 利尿劑）預後通常良好。合併嚴重心臟病或腎衰竭者預後取決於基礎疾病控制程度。延遲處理的嚴重肺水腫可致呼吸衰竭。
+
+pubmedQueries:
+  - query: '"Fluid Overload" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

@@ -1,0 +1,74 @@
+slug: ovarian-remnant-syndrome
+nameEn: Ovarian Remnant Syndrome
+nameZh: 卵巢殘留症候群
+bodySystem: reproductive
+description: 卵巢殘留症候群 (ovarian remnant syndrome, ORS) 為已絕育母犬或母貓因手術時卵巢組織未完全移除，殘留的功能性卵巢組織持續分泌雌激素與黃體酮，導致出現發情行為與相關臨床表現。需再次手術移除殘留組織。
+
+aliases:
+  - { alias: 卵巢殘餘症候群, language: zh }
+  - { alias: ORS, language: en }
+  - { alias: Ovarian Remnant, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬 ORS 通常在 OHE 後數月至數年出現發情症狀。右側卵巢殘留較左側常見（解剖位置較深）。腹腔鏡或開腹探查移除殘留組織。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓 ORS 表現為發情行為（叫聲、翻滾、lordosis）。貓為誘發排卵，殘留組織可持續分泌雌激素。
+
+etiology:
+  categories:
+    - name: 原因
+      examples:
+        - OHE 手術時卵巢組織未完全移除
+        - 副卵巢組織（accessory ovarian tissue）
+        - 分離卵巢時殘留被膜組織再生
+        - 腹腔內脫落卵巢碎片血管新生
+    - name: 風險因子
+      examples:
+        - 手術視野不足
+        - 肥胖犬貓（腹腔脂肪遮蔽）
+        - 經驗不足的術者
+
+clinicalSigns:
+  early:
+    - OHE 後出現發情行為
+    - 犬：外陰腫脹、吸引公犬
+    - 貓：叫聲、翻滾、lordosis 姿勢
+  progressive:
+    - 規律發情週期
+    - 陰道出血（犬）
+    - 乳腺增生
+    - 子宮蓄膿（如有子宮殘端）
+    - 行為問題
+
+diagnosis:
+  primaryTests:
+    - name: 血清雌激素 / 黃體酮
+      notes: 發情期間雌二醇升高。誘發排卵後（貓：棉花棒刺激或 GnRH）黃體酮升高確認功能性卵巢
+    - name: 陰道細胞學
+      notes: 角化上皮細胞增多（雌激素效應）
+  additional:
+    - 腹部超音波（卵巢殘留組織辨識，困難度高）
+    - GnRH 刺激試驗
+    - Anti-Müllerian hormone (AMH)（犬 — 高度特異性）
+    - hCG 刺激後黃體酮
+
+treatment:
+  principles:
+    - 手術移除殘留卵巢組織
+    - 發情期間手術較易辨識殘留組織
+  general:
+    - 再次手術探查移除殘留卵巢組織
+    - 建議在發情期間手術（殘留組織充血較易辨識）
+    - 腹腔鏡輔助（提供較佳視野）
+    - 仔細檢查雙側卵巢窩與周圍組織
+    - 子宮殘端亦需檢查（子宮蓄膿風險）
+    - 術後追蹤 AMH 或陰道細胞學確認完全移除
+
+prognosis: 手術完全移除殘留組織後預後極佳。再次手術成功率高。少數病例殘留組織位置不典型，可能需多次探查。腹腔鏡可提高辨識率。
+
+pubmedQueries:
+  - query: '"ovarian remnant syndrome" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis" OR "surgery")'
+    frequency: monthly

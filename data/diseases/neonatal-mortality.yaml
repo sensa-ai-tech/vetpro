@@ -1,0 +1,87 @@
+slug: neonatal-mortality
+nameEn: Neonatal Mortality
+nameZh: 新生仔畜死亡
+bodySystem: reproductive
+description: 新生仔畜死亡（犬貓出生後 0-3 週齡的死亡）為繁殖犬貓的重要問題。正常新生仔畜死亡率約 10-30%。主要原因包括低出生體重、低體溫、低血糖、感染、先天畸形與母體因素（無乳、忽略）。出生後前 48 小時為最高風險期。
+
+aliases:
+  - { alias: 新生兒死亡, language: zh }
+  - { alias: 幼犬消逝症候群, language: zh }
+  - { alias: Fading Puppy Syndrome, language: en }
+  - { alias: Neonatal Loss, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 幼犬出生後 3 週內死亡率約 15-30%（品種差異大）。前 48 小時佔 >50% 新生兒死亡。低出生體重為最重要預測因子。小型犬品種幼犬風險較高。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 幼貓新生兒死亡率約 10-20%。純種貓較高。初乳攝取不足為重要因素。FeLV/FPV 母貓垂直傳播可引起群體性仔貓死亡。
+
+etiology:
+  categories:
+    - name: 新生仔畜因素
+      examples:
+        - 低出生體重（最重要預測因子）
+        - 低體溫（新生仔畜體溫調節不成熟）
+        - 低血糖（肝醣儲備少、高代謝率）
+        - 先天畸形（心臟、口裂、腸道閉鎖）
+        - 新生兒同種免疫溶血（血型不合）
+    - name: 母體因素
+      examples:
+        - 無乳或泌乳不足
+        - 母性行為不良（忽略、壓死、咬傷）
+        - 難產引起胎兒缺氧
+        - 母體感染（Brucella、herpesvirus）
+    - name: 環境與感染因素
+      examples:
+        - 環境溫度不足
+        - 衛生條件差
+        - 細菌性敗血症（E. coli、Streptococcus）
+        - 病毒感染（canine herpesvirus、FPV）
+
+clinicalSigns:
+  early:
+    - 虛弱、吸吮力差
+    - 持續哭叫或反常安靜
+    - 體溫偏低
+    - 體重不增或下降
+  progressive:
+    - 脫水
+    - 低血糖（震顫、昏迷）
+    - 呼吸困難
+    - 腹脹
+    - 迅速惡化至死亡
+
+diagnosis:
+  primaryTests:
+    - name: 體重監測
+      notes: 每日秤重。前 24 小時可輕微減少，之後應每日增加 5-10%。連續 2 天下降為警訊
+    - name: 體溫
+      notes: 新生仔畜正常直腸溫度第一週 35-36°C，逐漸升至 37°C。<34°C 為嚴重低體溫
+  additional:
+    - 血糖（試紙快速測定）
+    - 屍體剖檢（死因釐清、群體預防）
+    - 母犬 Brucella/herpesvirus 篩檢
+    - 環境培養
+
+treatment:
+  principles:
+    - 維持體溫（最優先）
+    - 確保營養攝取
+    - 預防與治療感染
+    - 支持母性照護
+  general:
+    - 保溫：環境溫度第一週 30-32°C，每週降 2-3°C
+    - 低血糖：50% dextrose 稀釋後口服或腹腔注射
+    - 無法吸吮：管飼或滴管餵食（犬/貓專用配方奶）
+    - 脫水：皮下或腹腔輸液（溫熱的）
+    - 感染：amoxicillin（新生仔畜安全抗生素）
+    - 確保初乳攝取（出生後 24 小時內）
+    - 氧氣補充（呼吸困難）
+
+prognosis: 新生仔畜一旦出現衰竭徵象，死亡率極高。早期介入（保溫、補糖、餵食）可顯著改善存活。低出生體重幼犬需額外關注。繁殖場管理（衛生、母犬篩檢、環境溫度）為預防關鍵。
+
+pubmedQueries:
+  - query: '"neonatal mortality" OR "fading puppy" AND (veterinary OR canine OR feline) AND ("treatment" OR "management")'
+    frequency: monthly

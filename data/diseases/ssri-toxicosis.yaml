@@ -1,0 +1,83 @@
+slug: ssri-toxicosis
+nameEn: SSRI Toxicosis
+nameZh: 選擇性血清素再攝取抑制劑中毒
+bodySystem: toxicology
+description: 選擇性血清素再攝取抑制劑 (SSRI) 中毒為犬貓常見藥物中毒之一，因誤食飼主抗憂鬱藥物（如 fluoxetine、sertraline、paroxetine、citalopram）引起血清素症候群 (serotonin syndrome)。犬亦可因獸醫處方 fluoxetine 過量而中毒。
+
+aliases:
+  - { alias: 血清素症候群, language: zh }
+  - { alias: SSRI Overdose, language: en }
+  - { alias: Serotonin Syndrome, language: en }
+  - { alias: Selective Serotonin Reuptake Inhibitor Toxicosis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬誤食飼主 SSRI 為 ASPCA 毒物中心最常見通報類別之一。Fluoxetine（Reconcile）亦為犬用行為藥物。治療劑量與中毒劑量間距可變。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓 fluoxetine 用於行為問題。貓對 SSRI 較犬敏感。5 mg fluoxetine 在小型貓即可引起症狀。
+
+etiology:
+  categories:
+    - name: 毒性機制
+      examples:
+        - 抑制突觸前 serotonin 再攝取
+        - 突觸間隙 serotonin 過度蓄積
+        - 血清素症候群三聯征：精神狀態改變 + 自主神經功能異常 + 神經肌肉異常
+    - name: 常見來源
+      examples:
+        - Fluoxetine (Prozac/Reconcile)
+        - Sertraline (Zoloft)
+        - Paroxetine (Paxil)
+        - Citalopram/Escitalopram (Celexa/Lexapro)
+        - Fluvoxamine (Luvox)
+
+clinicalSigns:
+  early:
+    - 躁動、焦慮
+    - 嘔吐
+    - 腹瀉
+    - 過度流涎
+  progressive:
+    - 震顫
+    - 肌陣攣 (myoclonus)
+    - 高體溫
+    - 心搏過速
+    - 癲癇
+    - 瞳孔散大
+    - 嚴重者：橫紋肌溶解、DIC
+
+diagnosis:
+  primaryTests:
+    - name: 暴露史
+      notes: 確認 SSRI 藥物種類、劑量與時間。注意是否同時服用其他血清素作用藥物
+    - name: 臨床表現
+      notes: 血清素症候群三聯征（精神狀態改變 + 自主神經異常 + 神經肌肉亢進）
+  additional:
+    - 核心體溫
+    - 心電圖
+    - CBC、生化（CK）
+    - 凝血功能（DIC 篩檢）
+
+treatment:
+  principles:
+    - Cyproheptadine 為特異性 serotonin 拮抗劑
+    - 控制高體溫
+    - 鎮靜
+    - 停止所有血清素作用藥物
+  general:
+    - 催吐（早期）+ 活性炭
+    - Cyproheptadine 1.1 mg/kg PO 或直腸（serotonin 拮抗劑），每 4-6 小時重複
+    - 降溫（主動冷卻）
+    - 鎮靜：diazepam、acepromazine（避免 chlorpromazine — 降低癲癇閾值）
+    - IV 輸液
+    - 嚴重震顫：methocarbamol
+    - 避免同時給予 tramadol、MAOi 或其他血清素作用藥物
+    - 住院監測 24-72 小時
+
+prognosis: SSRI 中毒在給予 cyproheptadine 與支持療法下多數預後良好。Fluoxetine 半衰期長（犬約 1-2 天）需更長觀察。併用 MAOi 或其他血清素藥物時風險顯著增加。致命案例多與嚴重高體溫相關。
+
+pubmedQueries:
+  - query: '"SSRI" OR "serotonin syndrome" AND (toxicosis OR poisoning) AND (veterinary OR canine OR feline) AND "treatment"'
+    frequency: monthly

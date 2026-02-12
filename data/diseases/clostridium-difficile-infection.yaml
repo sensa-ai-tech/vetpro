@@ -1,0 +1,69 @@
+slug: clostridium-difficile-infection
+nameEn: Clostridium Difficile Infection
+nameZh: 困難梭狀桿菌感染
+bodySystem: infectious
+description: 困難梭狀桿菌感染為 Clostridioides difficile（原 Clostridium difficile）產毒株引起的腸道感染。犬隻可為急性或慢性腹瀉，通常與抗生素使用後腸道菌群失調相關。C. difficile 產生的毒素 A（腸毒素）與毒素 B（細胞毒素）為致病關鍵。
+
+aliases:
+  - { alias: C. diff 感染, language: zh }
+  - { alias: CDI, language: en }
+  - { alias: Clostridioides difficile Infection, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻 C. difficile 帶菌率約 5-20%（住院犬更高）。臨床感染常與抗生素使用相關。需偵測毒素基因區分帶菌與感染。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻帶菌率類似。臨床感染不常報告。
+
+etiology:
+  categories:
+    - name: 病原體
+      examples:
+        - Clostridioides difficile 產毒株
+        - 毒素 A（TcdA，腸毒素）
+        - 毒素 B（TcdB，細胞毒素）
+        - 芽胞在環境中極穩定
+    - name: 風險因素
+      examples:
+        - 抗生素使用（腸道菌群破壞）
+        - 住院環境
+        - 免疫抑制
+        - 腸道手術後
+
+clinicalSigns:
+  early:
+    - 水樣至黏液性腹瀉
+    - 腹部不適
+    - 食慾下降
+  progressive:
+    - 血便
+    - 發燒
+    - 嚴重脫水
+    - 大腸性腹瀉（頻繁少量帶黏液）
+
+diagnosis:
+  primaryTests:
+    - name: 糞便毒素檢測
+      notes: C. difficile 毒素 A/B ELISA 或 PCR。單純培養陽性不能區分產毒株與非產毒株。毒素 PCR 偵測 tcdA 與 tcdB 基因。
+    - name: 糞便培養
+      notes: 厭氧培養可分離 C. difficile，但需搭配毒素檢測。環境汙染可能造成假陽性。
+
+treatment:
+  principles:
+    - 停用當前抗生素（如可能）
+    - 特異性抗 C. difficile 治療
+    - 恢復腸道菌群
+  general:
+    - 停用觸發的抗生素
+    - "Metronidazole 10-15 mg/kg PO q12h × 10-14 天（首選）"
+    - "嚴重者：Vancomycin PO（不被腸道吸收，在腸腔內直接作用）"
+    - 益生菌輔助（Saccharomyces boulardii 有初步證據）
+    - 糞便微生物群移植（FMT，難治性或復發性病例）
+
+prognosis: 多數犬隻 C. difficile 腸炎在停用觸發抗生素與 Metronidazole 治療後預後良好。復發率約 10-20%。糞便微生物群移植對復發性 CDI 有良好效果。
+
+pubmedQueries:
+  - query: '"Clostridium difficile" OR "Clostridioides difficile" AND (veterinary OR canine OR feline) AND ("treatment" OR "antibiotic")'
+    frequency: monthly

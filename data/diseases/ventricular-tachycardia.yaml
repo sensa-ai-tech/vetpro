@@ -1,0 +1,73 @@
+slug: ventricular-tachycardia
+nameEn: Ventricular Tachycardia
+nameZh: 心室頻脈
+bodySystem: cardiac
+description: 心室頻脈（VT）為起源於心室的快速心律不整，定義為連續三個以上的心室早期收縮（VPCs），心率通常 >160-180 bpm。VT 可導致心輸出量降低、低血壓、昏厥，甚至惡化為心室纖維顫動致突然死亡。犬隻中常見於 Boxer、Doberman Pinscher、German Shepherd 及心臟病患者。
+
+aliases:
+  - { alias: VT, language: en }
+  - { alias: V-Tach, language: en }
+  - { alias: 室速, language: zh }
+  - { alias: 室性心動過速, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬隻最重要的心律不整之一。Boxer（ARVC）、Doberman Pinscher（DCM）、German Shepherd 為好發品種。可見於心臟病、脾臟腫瘤、胃擴張扭轉、電解質異常等多種情況。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻較少見，可繼發於心肌病（HCM、RCM）或電解質異常。
+
+etiology:
+  categories:
+    - name: 結構性心臟病
+      examples:
+        - 擴張性心肌病（DCM）
+        - 致心律不整性右心室心肌病（ARVC，Boxer 心肌病）
+        - 肥厚性心肌病（HCM）
+        - 心肌炎
+    - name: 非心臟性原因
+      examples:
+        - 脾臟腫瘤（hemangiosarcoma）
+        - 胃擴張扭轉（GDV）
+        - 嚴重電解質異常（低血鉀、低血鎂）
+        - 創傷性心肌炎（交通事故後）
+        - 藥物中毒（毛地黃中毒）
+
+clinicalSigns:
+  early:
+    - 心率加快且規則或略不規則
+    - 脈搏弱或脈搏缺損
+    - 輕度嗜睡
+  progressive:
+    - 昏厥（Adams-Stokes 發作）
+    - 虛弱無力
+    - 呼吸困難
+    - 黏膜蒼白
+    - 突然死亡（惡化為心室纖維顫動）
+
+diagnosis:
+  primaryTests:
+    - name: 心電圖（ECG）
+      notes: "確診必須。特徵：寬 QRS 波群（>0.06 秒犬），心率通常 >180 bpm，QRS 形態與正常竇性不同。分為單型性（monomorphic）與多型性（polymorphic）VT。"
+    - name: 24 小時 Holter 監測
+      notes: 評估 VT 發作頻率與持續時間，偵測間歇性 VT。Boxer 與 Doberman 品種篩檢重要工具。
+
+treatment:
+  principles:
+    - 血流動力學不穩定的 VT 為急診
+    - 治療基礎病因同時控制心律不整
+    - 藥物選擇取決於 VT 類型與基礎疾病
+  general:
+    - "急性穩定期：Lidocaine 2 mg/kg IV bolus（可重複至總量 8 mg/kg），後接 25-80 μg/kg/min CRI"
+    - "口服維持：Sotalol 1.5-3.5 mg/kg PO q12h（Boxer ARVC 首選）"
+    - "Mexiletine 5-8 mg/kg PO q8h（常與 Sotalol 合併使用）"
+    - "Amiodarone 10-15 mg/kg PO q12h × 7 天後減量（難治性 VT）"
+    - 治療基礎病因（電解質矯正、腫瘤治療等）
+    - 血流動力學不穩定時考慮電擊復律
+
+prognosis: 預後取決於基礎病因與 VT 嚴重程度。Boxer ARVC 合併 VT 在適當抗心律不整治療下，多數可維持良好生活品質數年。Doberman DCM 合併 VT 預後較差。非心臟性原因（如 GDV 術後）導致的 VT 在病因矯正後通常可自行消退。持續性多型性 VT 或極快速 VT 有突然死亡風險。
+
+pubmedQueries:
+  - query: '"ventricular tachycardia" AND (veterinary OR canine OR feline) AND ("treatment" OR "antiarrhythmic")'
+    frequency: monthly

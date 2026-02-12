@@ -1,0 +1,76 @@
+slug: priapism
+nameEn: Priapism
+nameZh: 持續勃起症
+bodySystem: reproductive
+description: 持續勃起症 (priapism) 為陰莖在非性刺激下持續勃起超過 4 小時的病理狀態。分為缺血型（低流量，緊急）與非缺血型（高流量，較不緊急）。犬貓可因藥物（acepromazine）、脊髓損傷、血液疾病或特發性引起。缺血型需緊急處理避免永久性陰莖損傷。
+
+aliases:
+  - { alias: 異常勃起, language: zh }
+  - { alias: Persistent Erection, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬持續勃起最常見原因為 acepromazine 副作用（α-adrenergic 阻斷）。其他原因包括脊髓損傷、血栓、特發性。通常為缺血型（低流量）。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓持續勃起罕見。可與 urethral obstruction、脊髓損傷或藥物相關。
+
+etiology:
+  categories:
+    - name: 缺血型（低流量）
+      examples:
+        - 藥物（acepromazine — 最常見）
+        - 血栓（海綿體靜脈阻塞）
+        - 脊髓損傷
+        - 血液疾病（真性紅血球增多、白血病）
+        - 特發性
+    - name: 非缺血型（高流量）
+      examples:
+        - 會陰外傷（動靜脈瘻管）
+        - 陰莖外傷後
+
+clinicalSigns:
+  early:
+    - 非性刺激下陰莖持續勃起
+    - 初期陰莖充血但仍有彈性
+  progressive:
+    - 陰莖腫脹加劇
+    - 陰莖變硬（缺血型）或持軟（非缺血型）
+    - 疼痛
+    - 陰莖黏膜乾燥變色
+    - 組織壞死（>24 小時未處理）
+
+diagnosis:
+  primaryTests:
+    - name: 病史
+      notes: 近期 acepromazine 使用、外傷史、脊髓損傷。區分缺血型與非缺血型
+    - name: 海綿體血氣分析
+      notes: 缺血型：暗色血液、pO₂ <40 mmHg、pH <7.25。非缺血型：鮮紅色血液、血氣正常
+  additional:
+    - 陰莖都卜勒超音波（血流評估）
+    - CBC（血液疾病排除）
+    - 脊椎影像
+    - 凝血功能
+
+treatment:
+  principles:
+    - 缺血型為緊急狀態
+    - 海綿體抽吸與沖洗
+    - α-adrenergic agonist 注射
+    - 非缺血型可較保守處理
+  general:
+    - 缺血型緊急處理：
+    - "海綿體穿刺抽吸暗色血液 + 生理食鹽水沖洗"
+    - "Phenylephrine 100-500 μg 稀釋後海綿體注射（每 5 分鐘可重複）"
+    - 冰敷
+    - 對抗 acepromazine（但通常已代謝）
+    - 非缺血型：觀察、冰敷（多數自行消退）
+    - 嚴重壞死：陰莖截斷術
+    - 復位後潤滑保護 + E-collar
+
+prognosis: 缺血型 priapism <24 小時處理預後佳。>48 小時組織壞死風險極高。非缺血型預後較佳。Acepromazine 引起者多數可成功處理。嚴重壞死需截斷但可保留排尿功能。
+
+pubmedQueries:
+  - query: '"priapism" AND (veterinary OR canine OR feline) AND ("treatment" OR "acepromazine" OR "ischemic")'
+    frequency: monthly

@@ -1,0 +1,65 @@
+slug: thrombocytosis
+nameEn: Thrombocytosis
+nameZh: 血小板增多症
+bodySystem: hematology
+description: 血小板增多症為血小板計數高於正常範圍（犬 >500,000/μL，貓 >500,000/μL）。多數為反應性（繼發性），繼發於鐵缺乏、慢性炎症、脾切除術後或腫瘤。原發性血小板增多症（essential thrombocythemia，骨髓增殖性疾病）在犬貓極為罕見。反應性血小板增多症通常不需要針對血小板的特異性治療。
+
+aliases:
+  - { alias: 血小板過多症, language: zh }
+  - { alias: Thrombocythemia, language: en }
+  - { alias: Elevated Platelets, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻反應性血小板增多症最常見，與炎症、感染、鐵缺乏、脾切除或腫瘤相關。原發性血小板增多症極罕見。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻反應性血小板增多症可見於慢性炎症、腫瘤。
+
+etiology:
+  categories:
+    - name: 反應性（繼發性，最常見）
+      examples:
+        - 鐵缺乏性貧血（慢性失血）
+        - 慢性炎症或感染
+        - 脾切除術後
+        - 惡性腫瘤（paraneoplastic）
+        - 免疫介導性疾病
+    - name: 原發性（罕見）
+      examples:
+        - 原發性血小板增多症（essential thrombocythemia）
+        - 骨髓增殖性疾病（myeloproliferative disorder）
+
+clinicalSigns:
+  early:
+    - 多數反應性血小板增多症無特異性症狀
+    - 症狀反映基礎疾病
+  progressive:
+    - 原發性血小板增多症可能出現血栓形成
+    - 矛盾性出血（極度血小板增多時）
+    - 脾腫大（原發性）
+
+diagnosis:
+  primaryTests:
+    - name: 全血球計數（CBC）
+      notes: 血小板計數升高。反應性通常 <1,000,000/μL。原發性可能極高（>1,500,000/μL）。評估其他血球系列排除骨髓增殖性疾病。
+    - name: 基礎疾病排查
+      notes: 鐵代謝（血清鐵、TIBC、ferritin）、炎症指標（CRP）、影像學（腫瘤篩檢）、腹部超音波（脾臟評估）。
+
+treatment:
+  principles:
+    - 反應性血小板增多症治療基礎疾病即可
+    - 原發性需特異性治療
+    - 血栓風險高時考慮抗血小板藥物
+  general:
+    - 反應性：治療基礎疾病（鐵補充、感染控制等）
+    - "原發性：Hydroxyurea 15-25 mg/kg PO q24h（降低血小板計數）"
+    - "抗血小板：Aspirin 0.5-1 mg/kg PO q24h 或 Clopidogrel 2 mg/kg PO q24h"
+    - 監測血小板計數變化
+
+prognosis: 反應性血小板增多症預後取決於基礎疾病，血小板增多本身通常不造成問題。原發性血小板增多症在犬貓罕見，使用 Hydroxyurea 可控制，但需長期治療。
+
+pubmedQueries:
+  - query: '"thrombocytosis" AND (veterinary OR canine OR feline) AND ("reactive" OR "essential")'
+    frequency: monthly

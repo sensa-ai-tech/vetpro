@@ -1,0 +1,67 @@
+slug: campylobacteriosis
+nameEn: Campylobacteriosis
+nameZh: 彎曲桿菌感染
+bodySystem: gastrointestinal
+description: 彎曲桿菌感染為 Campylobacter spp.（主要為 C. jejuni 與 C. upsaliensis）引起的腸胃道感染。犬隻健康帶菌率高，臨床感染多見於幼犬或免疫抑制動物。為人畜共通傳染病。腹瀉通常為自限性，嚴重者可出現血便。
+
+aliases:
+  - { alias: 曲狀桿菌感染, language: zh }
+  - { alias: Campylobacter Infection, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬隻 Campylobacter 帶菌率高（健康犬 10-30%，收容所犬更高）。C. upsaliensis 在犬隻最常見。臨床感染多見於幼犬。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓隻帶菌率類似犬隻。幼貓臨床症狀較明顯。
+
+etiology:
+  categories:
+    - name: 病原體
+      examples:
+        - Campylobacter jejuni
+        - Campylobacter upsaliensis（犬隻最常見）
+        - Campylobacter helveticus
+    - name: 傳播
+      examples:
+        - 糞口途徑
+        - 受汙染的食物或水
+        - 動物間直接接觸
+
+clinicalSigns:
+  early:
+    - 水樣至黏液性腹瀉
+    - 輕度嘔吐
+    - 食慾下降
+  progressive:
+    - 血便（hematochezia）
+    - 排便裡急後重
+    - 發燒
+    - 脫水（幼犬）
+    - 多數為自限性（5-15 天）
+
+diagnosis:
+  primaryTests:
+    - name: 糞便培養
+      notes: 特殊培養條件（微需氧、42°C）。結合 PCR 可提高偵測率。注意：健康犬帶菌率高，陽性培養不一定代表致病原因。
+    - name: 糞便 PCR
+      notes: 較培養更敏感且快速。可同時偵測毒力基因。
+
+treatment:
+  principles:
+    - 多數為自限性，不一定需要抗生素
+    - 嚴重或免疫抑制者給予抗生素
+    - 人畜共通傳染病衛教
+  general:
+    - 輕度：支持性治療（輸液維持水分）
+    - "嚴重者：Erythromycin 10-15 mg/kg PO q8h × 5-7 天"
+    - "替代：Azithromycin 5-10 mg/kg PO q24h × 5 天"
+    - 避免 Fluoroquinolones（抗藥性問題）
+    - 衛生管理與公共衛生衛教
+
+prognosis: 預後極好。多數犬貓在 5-15 天內自行恢復。抗生素可縮短排菌期但不一定影響臨床恢復時間。免疫抑制動物可能發展為慢性感染。
+
+pubmedQueries:
+  - query: '"campylobacteriosis" AND (veterinary OR canine OR feline) AND ("treatment" OR "zoonotic")'
+    frequency: monthly

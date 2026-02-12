@@ -1,0 +1,72 @@
+slug: hypernatremia
+nameEn: Hypernatremia
+nameZh: 高鈉血症
+bodySystem: metabolic
+description: 血清鈉離子濃度高於正常值（犬 >155 mEq/L，貓 >162 mEq/L）的電解質異常，通常反映體內自由水（free water）相對缺乏。高鈉血症導致細胞脫水，尤其腦細胞脫水可引起嚴重神經症狀，糾正過快可能導致腦水腫。
+
+aliases:
+  - { alias: 高血鈉, language: zh }
+  - { alias: 血鈉過高, language: zh }
+  - { alias: High Sodium, language: en }
+  - { alias: Hypernatraemia, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬常見於飲水受限（被遺棄或監禁）、中樞性尿崩症或高滲性溶液過量輸注。小型犬較易受影響。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓高鈉血症可見於嚴重脫水（尤其老年貓慢性腎病未補充足夠水分）或醫源性過量高張食鹽水。
+
+etiology:
+  categories:
+    - name: 自由水流失（最常見）
+      examples:
+        - 飲水不足（受困、老年失能、意識障礙）
+        - 中樞性或腎源性尿崩症
+        - 高體溫/中暑（蒸發散熱流失）
+    - name: 鈉負荷過多
+      examples:
+        - 醫源性高張食鹽水輸注
+        - 攝入高鈉物質（海水、岩鹽）
+        - 高醛固酮症
+
+clinicalSigns:
+  early:
+    - 極度口渴（能取得水時大量飲水）
+    - 黏膜乾燥
+    - 嗜睡
+    - 肌肉震顫
+  progressive:
+    - 定向力障礙
+    - 運動失調
+    - 癲癇發作
+    - 昏迷
+    - 皮膚彈性極差
+
+diagnosis:
+  primaryTests:
+    - name: 血清電解質
+      notes: 血清鈉 >155 mEq/L（犬）或 >162 mEq/L（貓）。>170 mEq/L 為嚴重高鈉血症。同時評估血漿滲透壓。
+    - name: 尿液分析
+      notes: 尿比重評估腎臟濃縮功能。尿崩症時尿比重極低（<1.005）。腎前性脫水時尿比重應升高。
+
+treatment:
+  principles:
+    - 慢速糾正避免醫源性腦水腫（每小時降鈉不超過 0.5-1 mEq/L）
+    - 24 小時內降幅不超過 10-12 mEq/L
+    - 以低張液或自由水補充為主
+    - 頻繁監測血清鈉
+  general:
+    - 慢速靜脈輸注 5% Dextrose 或 0.45% NaCl
+    - 計算自由水缺乏量指導補液速率
+    - 每 2-4 小時追蹤血清鈉
+    - 治療基礎病因（尿崩症需 DDAVP）
+    - 嚴禁快速降鈉（腦水腫風險）
+    - 癲癇發作以 Diazepam 控制
+
+prognosis: 輕度高鈉血症經適當補液後預後良好。血清鈉 >170 mEq/L 或合併神經症狀者預後謹慎至不良。矯正過快導致腦水腫預後極差。基礎病因為可逆性（如脫水）者預後優於中樞性疾病。
+
+pubmedQueries:
+  - query: '"Hypernatremia" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

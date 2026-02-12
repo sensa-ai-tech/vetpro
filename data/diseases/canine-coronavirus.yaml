@@ -1,0 +1,74 @@
+slug: canine-coronavirus
+nameEn: Canine Coronavirus
+nameZh: 犬冠狀病毒感染
+bodySystem: infectious
+description: 犬冠狀病毒 (CCoV) 為 Alphacoronavirus 屬的 RNA 病毒，主要感染犬小腸絨毛上皮細胞，引起輕度至中度自限性腸胃炎。幼犬及免疫力低下犬症狀較嚴重。與犬小病毒 (CPV) 混合感染時病死率顯著增加。
+
+aliases:
+  - { alias: 犬冠狀病毒腸炎, language: zh }
+  - { alias: CCoV, language: en }
+  - { alias: Canine Enteric Coronavirus, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬群間傳播迅速，經糞口途徑感染。幼犬症狀較重，成犬多為亞臨床感染。與 CPV 混合感染時死亡率大幅提高。疫苗存在但非核心疫苗。
+
+etiology:
+  categories:
+    - name: 病原特性
+      examples:
+        - Alphacoronavirus 屬，有包膜 RNA 病毒
+        - 主要感染小腸絨毛尖端上皮細胞
+        - 糞口途徑傳播
+        - 環境中可存活數天
+    - name: 風險因子
+      examples:
+        - 幼犬（<12 週齡）
+        - 犬舍、寄宿環境密集飼養
+        - 免疫力低下
+        - 與犬小病毒混合感染
+
+clinicalSigns:
+  early:
+    - 突發性軟便或水樣腹瀉
+    - 輕度食慾下降
+    - 輕度嗜睡
+  progressive:
+    - 腹瀉持續（偶帶黏液或少量血絲）
+    - 嘔吐
+    - 脫水
+    - 幼犬嚴重虛弱
+    - 混合感染時症狀急遽惡化
+
+diagnosis:
+  primaryTests:
+    - name: 糞便 PCR 檢測
+      notes: 最敏感的確診方法。可同時檢測 CPV 等其他腸道病原以排除混合感染
+    - name: 糞便抗原快篩
+      notes: 商業快篩試劑可用，敏感度較 PCR 低。可與 CPV 快篩同時進行
+  additional:
+    - 糞便電子顯微鏡（可見典型冠狀病毒形態）
+    - CBC 與生化（評估脫水與電解質失衡）
+    - 排除 CPV、寄生蟲及細菌性腸炎
+
+treatment:
+  principles:
+    - 支持療法為主（自限性疾病）
+    - 維持水分與電解質平衡
+    - 預防繼發感染
+    - 幼犬與混合感染需積極治療
+  general:
+    - 皮下或靜脈輸液矯正脫水
+    - 電解質補充
+    - 止吐劑（maropitant 1 mg/kg SC/IV SID）
+    - 腸胃道保護劑
+    - 嚴重者給予廣效抗生素預防繼發菌血症
+    - 少量多餐易消化飲食
+    - 隔離感染犬以防傳播
+
+prognosis: 單純犬冠狀病毒感染預後良好，多數在 7-10 天內自行恢復。幼犬或混合感染（特別是合併 CPV）預後較差。適當支持治療下死亡率極低。
+
+pubmedQueries:
+  - query: '"canine coronavirus" AND ("enteritis" OR "treatment" OR "diagnosis")'
+    frequency: monthly

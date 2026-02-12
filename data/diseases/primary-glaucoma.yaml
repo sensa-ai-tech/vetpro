@@ -1,0 +1,70 @@
+slug: primary-glaucoma
+nameEn: Primary Glaucoma
+nameZh: 原發性青光眼
+bodySystem: ophthalmology
+description: 非繼發於其他眼內疾病的青光眼，因房水排出通路 (iridocorneal angle) 先天性發育異常導致眼壓升高。為犬常見的致盲性眼病，多為遺傳性，常雙側發病。急性發作為眼科急症。
+
+aliases:
+  - { alias: Primary Open Angle Glaucoma, language: en }
+  - { alias: Primary Closed Angle Glaucoma, language: en }
+  - { alias: Goniodysgenesis-related Glaucoma, language: en }
+  - { alias: 原發性開角型青光眼, language: zh }
+  - { alias: 原發性閉角型青光眼, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬常見。American Cocker Spaniel、Basset Hound、Chow Chow、Shar-Pei、Shiba Inu、Samoyed 等品種好發。多數為閉角型 (goniodysgenesis)。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓原發性青光眼罕見。Burmese、Siamese 偶有報告。貓多為續發性。
+
+etiology:
+  categories:
+    - name: 遺傳性房角發育異常
+      examples:
+        - 虹膜角膜角發育不全 (goniodysgenesis)
+        - 梳狀韌帶 (pectinate ligament) 發育異常
+        - 品種特異性遺傳突變 (ADAMTS10 等)
+    - name: 分型
+      examples:
+        - 開角型 (Open angle) — Beagle 品種
+        - 閉角型 (Closed angle) — 多數品種
+
+clinicalSigns:
+  early:
+    - 眼壓升高 (> 25 mmHg)
+    - 輕微結膜充血
+    - 瞳孔輕度散大
+  progressive:
+    - 劇烈疼痛 (blepharospasm、頭部壓地)
+    - 角膜水腫 (藍白色混濁)
+    - 瞳孔散大固定
+    - 視力喪失
+    - 眼球腫大 (buphthalmos，慢性)
+
+diagnosis:
+  primaryTests:
+    - name: 眼壓測量 (Tonometry)
+      notes: IOP > 25 mmHg (犬)。急性發作可達 40-80 mmHg。Tonopen 或 Tonovet
+    - name: 房角鏡檢查 (Gonioscopy)
+      notes: 評估虹膜角膜角形態。原發性閉角型見梳狀韌帶發育異常或融合
+    - name: 眼底檢查
+      notes: 評估視神經盤凹陷 (cupping) 與視網膜變化
+
+treatment:
+  principles:
+    - 急性發作為眼科急症，需緊急降壓
+    - 長期控制眼壓保護視力
+    - 預防性治療對側眼
+  general:
+    - 急性：Mannitol IV (利尿降壓) + Latanoprost 眼藥水 + Dorzolamide/Timolol
+    - 長期：前列腺素類似物 (Latanoprost) + 碳酸酐酶抑制劑 (Dorzolamide)
+    - 手術：睫狀體冷凍/雷射破壞 (cyclophotocoagulation)
+    - 失明眼：眼球摘除或義眼植入 (止痛)
+
+prognosis: 犬原發性青光眼預後謹慎。即使積極治療，多數犬最終仍會失明。早期診斷與積極治療可延緩視力喪失。對側眼預防性治療可延緩發作。貓原發性青光眼對藥物反應較犬好。
+
+pubmedQueries:
+  - query: '"primary glaucoma" AND (veterinary OR canine OR feline) AND ("treatment" OR "goniodysgenesis")'
+    frequency: monthly

@@ -1,0 +1,69 @@
+slug: eosinophilic-bronchopneumopathy
+nameEn: Eosinophilic Bronchopneumopathy
+nameZh: 嗜酸性球性支氣管肺病
+bodySystem: respiratory
+description: 嗜酸性球性支氣管肺病（EBP）為犬隻呼吸道嗜酸性球浸潤性疾病，特徵為支氣管黏膜與肺實質嗜酸性球浸潤。臨床表現為慢性咳嗽、呼吸困難與運動不耐。與人類嗜酸性球性肺炎類似。需排除寄生蟲感染作為鑑別診斷。
+
+aliases:
+  - { alias: EBP, language: en }
+  - { alias: Pulmonary Infiltrates with Eosinophils, language: en }
+  - { alias: PIE, language: en }
+  - { alias: 嗜酸性肺浸潤, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻 EBP 好發年輕至中年犬。Siberian Husky 與 Alaskan Malamute 有較高報告率。可能與過敏或免疫機轉相關。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻嗜酸性球性呼吸道疾病多歸類為貓哮喘（feline asthma）而非 EBP。
+
+etiology:
+  categories:
+    - name: 過敏/免疫機轉
+      examples:
+        - 確切病因不明，推測為過敏或免疫介導
+        - 可能與吸入過敏原相關
+        - Th2 型免疫反應與嗜酸性球活化
+    - name: 鑑別診斷（需排除）
+      examples:
+        - 肺蟲感染（Aelurostrongylus、Oslerus）
+        - 心絲蟲感染
+        - 寄生蟲幼蟲遷移（Toxocara）
+
+clinicalSigns:
+  early:
+    - 慢性咳嗽
+    - 輕度運動不耐
+    - 偶發打噴嚏或鼻分泌物
+  progressive:
+    - 咳嗽加重（特別是運動後）
+    - 呼吸困難
+    - 呼氣性喘鳴
+    - 食慾下降
+    - 體重減輕
+
+diagnosis:
+  primaryTests:
+    - name: 支氣管肺泡灌洗液（BAL）分析
+      notes: "確診金標準。BAL 液嗜酸性球比例顯著增高（>20%，通常 >40%）。需排除寄生蟲感染。細胞學可見大量嗜酸性球與少量嗜中性球。"
+    - name: 胸腔 X 光
+      notes: 支氣管型或混合型間質浸潤。支氣管壁增厚。肺門淋巴結腫大。可見瀰漫性或局部性肺泡型浸潤。
+
+treatment:
+  principles:
+    - 排除寄生蟲後以免疫抑制治療為主
+    - 皮質類固醇為首選藥物
+    - 治療反應良好但可能需長期治療
+  general:
+    - 先進行廣效驅蟲排除寄生蟲
+    - "Prednisolone 1-2 mg/kg PO q12h × 2 週後漸減"
+    - "難治性：Cyclosporine 5 mg/kg PO q12h"
+    - 吸入型皮質類固醇（Fluticasone MDI + spacer）長期維持
+    - 環境過敏原控制
+
+prognosis: 多數犬隻對皮質類固醇反應良好，症狀可顯著改善。但疾病常為慢性，可能需要長期低劑量維持治療。停藥後復發率高。部分病例可在長期治療後達到緩解。
+
+pubmedQueries:
+  - query: '"eosinophilic bronchopneumopathy" AND (veterinary OR canine) AND ("treatment" OR "bronchoalveolar lavage")'
+    frequency: monthly

@@ -1,0 +1,77 @@
+slug: chemical-burns
+nameEn: Chemical Burns
+nameZh: 化學灼傷
+bodySystem: emergency
+description: 化學灼傷為酸性、鹼性或氧化性化學物質接觸皮膚、眼睛或消化道黏膜引起的組織損傷。鹼性灼傷（如漂白水、強鹼清潔劑）通常比酸性灼傷更深更嚴重。犬貓常見暴露包括家用清潔劑、游泳池化學品與工業廢棄物。
+
+aliases:
+  - { alias: 化學燒傷, language: zh }
+  - { alias: Caustic Burns, language: en }
+  - { alias: Corrosive Injury, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬化學灼傷常因踩踏漂白水/清潔劑、皮膚接觸或口腔攝入引起。足部與口腔為常見受傷部位。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓化學灼傷可因接觸清潔劑後理毛攝入引起。足部接觸後舔舐導致口腔灼傷。
+
+etiology:
+  categories:
+    - name: 化學物質分類
+      examples:
+        - 鹼性（漂白水、強鹼清潔劑、水泥）— 液化壞死，損傷深
+        - 酸性（電池酸、酸性清潔劑）— 凝固壞死，較表淺
+        - 氧化劑（過氧化氫高濃度、漂白劑）
+        - 其他（石油產品、酚類消毒劑）
+    - name: 常見暴露情境
+      examples:
+        - 家用清潔劑接觸/攝入
+        - 游泳池化學品
+        - 工業廢棄物
+        - 電池咬破（酸液）
+
+clinicalSigns:
+  early:
+    - 皮膚紅斑、疼痛
+    - 口腔灼傷：過度流涎、拒食
+    - 眼部灼傷：眼瞼痙攣、流淚
+  progressive:
+    - 皮膚水疱、潰瘍、壞死
+    - 口腔/食道潰瘍
+    - 食道狹窄（鹼性灼傷後數週）
+    - 角膜潰瘍、眼部穿孔
+
+diagnosis:
+  primaryTests:
+    - name: 病史
+      notes: 確認化學物質種類、濃度、接觸時間與部位
+    - name: 傷口評估
+      notes: 評估灼傷深度與面積。鹼性灼傷初期可能低估嚴重度
+  additional:
+    - 眼部螢光素染色（角膜潰瘍）
+    - 內視鏡（口腔/食道灼傷評估 — 48-72 小時後）
+    - 胸部 X-ray（食道穿孔排除）
+
+treatment:
+  principles:
+    - 立即大量清水沖洗（最重要的急救）
+    - 不要嘗試中和反應
+    - 疼痛管理
+    - 防止繼發感染
+  general:
+    - 皮膚灼傷：大量清水沖洗 15-20 分鐘
+    - 眼部灼傷：生理食鹽水持續沖洗 15-30 分鐘
+    - 口腔灼傷：清水沖洗口腔。不催吐（二次灼傷風險）
+    - 疼痛管理（opioids）
+    - 傷口護理（銀離子敷料、hydrogel）
+    - 抗生素（繼發感染預防）
+    - 食道灼傷：sucralfate、質子幫浦抑制劑
+    - 營養支持（嚴重口腔/食道灼傷時餵食管）
+
+prognosis: 輕度化學灼傷預後佳。鹼性食道灼傷可引起食道狹窄（數週後），預後較差。眼部灼傷可致永久性視力損傷。皮膚灼傷深度決定恢復程度。
+
+pubmedQueries:
+  - query: '"chemical burn" OR "caustic" AND (veterinary OR canine OR feline) AND ("treatment" OR "emergency")'
+    frequency: monthly

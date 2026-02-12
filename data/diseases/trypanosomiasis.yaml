@@ -1,0 +1,79 @@
+slug: trypanosomiasis
+nameEn: Trypanosomiasis
+nameZh: 錐蟲感染
+bodySystem: infectious
+description: 犬錐蟲感染 (trypanosomiasis) 在美洲主要由 Trypanosoma cruzi 引起（美洲錐蟲病/查加斯病），經親吻蟲 (triatomine bug) 傳播。可引起急性心肌炎或慢性擴張型心肌病變。為中南美洲及美國南部犬的重要疾病。
+
+aliases:
+  - { alias: 查加斯病, language: zh }
+  - { alias: 美洲錐蟲病, language: zh }
+  - { alias: Chagas Disease, language: en }
+  - { alias: Trypanosoma cruzi Infection, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 美國南部與中南美洲犬為重要宿主。經攝食親吻蟲或接觸其糞便感染。急性期心肌炎可致幼犬猝死。慢性期發展擴張型心肌病。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓自然感染罕見但有報告。臨床表現可能較犬輕微。可能為亞臨床帶原者。
+
+etiology:
+  categories:
+    - name: 病原與傳播
+      examples:
+        - Trypanosoma cruzi（動基質原蟲）
+        - 經錐蝽 (triatomine bug) 叮咬後排出含錐蟲的糞便
+        - 犬常因攝食感染蟲體而感染
+        - 可經垂直傳播與輸血傳播
+    - name: 致病機制
+      examples:
+        - 錐蟲侵入心肌細胞增殖
+        - 急性期：心肌細胞破壞引起心肌炎
+        - 慢性期：免疫介導性心肌損傷
+        - 進展為擴張型心肌病
+
+clinicalSigns:
+  early:
+    - 急性期：嗜睡、食慾下降
+    - 發燒
+    - 淋巴結腫大
+    - 幼犬可能猝死
+  progressive:
+    - 心律不整（室性期外收縮）
+    - 運動不耐
+    - 充血性心衰竭（咳嗽、腹水）
+    - 右心室擴張為主
+    - 猝死
+
+diagnosis:
+  primaryTests:
+    - name: 血清學 (IFA/ELISA)
+      notes: 慢性期首選。商業快篩可用。需排除與其他錐蟲種的交叉反應
+    - name: PCR
+      notes: 敏感度高，可偵測低寄生蟲血症。急性與慢性期均可使用
+  additional:
+    - 血液抹片（急性期可見錐鞭毛體 trypomastigote）
+    - 心臟超音波（評估心室擴張與功能）
+    - 心電圖（心律不整偵測）
+    - 胸腔 X-ray（心臟擴大）
+
+treatment:
+  principles:
+    - 目前無公認有效的抗蟲藥物治療
+    - 心衰竭管理為主
+    - 預防為最重要策略
+    - 人畜共通風險需告知
+  general:
+    - 心衰竭管理（pimobendan、ACE 抑制劑、furosemide）
+    - 抗心律不整藥物（mexiletine、sotalol）
+    - 嘗試 benznidazole 5-10 mg/kg PO BID × 60 天（效果不確定）
+    - 控制錐蝽蟲（殺蟲劑、居住環境改善）
+    - 犬舍/犬窩裝設紗網
+    - 避免犬接觸或攝食錐蝽蟲
+
+prognosis: 犬查加斯病預後不良。急性心肌炎幼犬可能猝死。慢性期進展為不可逆擴張型心肌病，中位存活數月至數年。心衰竭治療可延長存活但無法治癒。目前無確定有效的抗蟲治療。
+
+pubmedQueries:
+  - query: '"trypanosomiasis" OR "Chagas disease" AND (canine OR veterinary) AND ("treatment" OR "diagnosis")'
+    frequency: monthly

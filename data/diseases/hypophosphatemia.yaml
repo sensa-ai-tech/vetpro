@@ -1,0 +1,70 @@
+slug: hypophosphatemia
+nameEn: Hypophosphatemia
+nameZh: 低磷血症
+bodySystem: metabolic
+description: 血清磷離子濃度低於正常值（犬 <2.5 mg/dL，貓 <3.0 mg/dL）的代謝異常。磷為 ATP 合成及細胞能量代謝的關鍵元素，嚴重低磷血症可導致溶血性貧血、呼吸肌無力及神經功能障礙。
+
+aliases:
+  - { alias: 低血磷, language: zh }
+  - { alias: 磷缺乏, language: zh }
+  - { alias: Low Phosphorus, language: en }
+  - { alias: Phosphate Depletion, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬低磷血症最常見於糖尿病酮酸中毒治療後、重餵食症候群及原發性副甲狀腺功能亢進。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓低磷血症特別常見於肝臟脂肪變性治療開始灌食後（重餵食症候群），也見於糖尿病酮酸中毒。
+
+etiology:
+  categories:
+    - name: 細胞內移動（最常見急性原因）
+      examples:
+        - 胰島素治療（糖尿病酮酸中毒矯正後）
+        - 重餵食症候群（禁食後重新開始營養）
+        - 呼吸性鹼中毒
+    - name: 腎臟流失
+      examples:
+        - 原發性副甲狀腺功能亢進
+        - 范乃可尼症候群（Fanconi syndrome）
+        - 利尿劑使用
+
+clinicalSigns:
+  early:
+    - 肌肉無力
+    - 食慾下降
+    - 嗜睡
+  progressive:
+    - 溶血性貧血（<1.0 mg/dL 時紅血球 ATP 耗竭）
+    - 呼吸困難（呼吸肌無力）
+    - 癲癇發作
+    - 橫紋肌溶解症
+    - 心肌功能障礙
+
+diagnosis:
+  primaryTests:
+    - name: 血清磷
+      notes: 犬 <2.5 mg/dL 或貓 <3.0 mg/dL。<1.0 mg/dL 為嚴重低磷，有溶血風險。
+    - name: CBC
+      notes: 嚴重低磷可出現 Heinz body 溶血性貧血（尤其貓）。監測 PCV 變化。
+
+treatment:
+  principles:
+    - 嚴重低磷需靜脈補充
+    - 監測磷濃度每 6-8 小時
+    - 治療基礎疾病
+    - 重餵食患者緩慢增加營養攝入
+  general:
+    - 靜脈補磷：KPO4 或 NaPO4 0.01-0.06 mmol/kg/hr IV（稀釋後 CRI）
+    - 靜脈補磷期間監測血鈣（高磷可抑制鈣離子）
+    - 輕度低磷可口服補充
+    - 重餵食症候群預防：營養恢復初期限制熱量並補磷
+    - 每 6 小時追蹤血清磷濃度
+
+prognosis: 輕至中度低磷血症經補充後預後良好。嚴重低磷（<1.0 mg/dL）合併溶血性貧血預後謹慎，需積極補磷並可能需要輸血。DKA 或肝脂肪變性治療中的低磷血症若未及時處理可致命。
+
+pubmedQueries:
+  - query: '"Hypophosphatemia" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

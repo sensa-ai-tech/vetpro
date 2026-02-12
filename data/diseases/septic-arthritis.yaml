@@ -1,0 +1,61 @@
+slug: septic-arthritis
+nameEn: Septic Arthritis
+nameZh: 化膿性關節炎
+bodySystem: orthopedic
+description: 關節腔的細菌感染。可因穿透傷、關節手術後、血行性播散或鄰近組織感染擴散引起。急性期若不及時治療可導致關節軟骨不可逆破壞。
+
+aliases:
+  - { alias: "Infectious Arthritis", language: en }
+  - { alias: "感染性關節炎", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬偶見。關節手術後或咬傷。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓偶見。打架咬傷相關。
+
+etiology:
+  categories:
+    - name: 感染性
+      examples:
+        - 穿透傷/咬傷
+        - 術後感染
+        - 血行性播散
+        - Staphylococcus 最常見
+
+clinicalSigns:
+  early:
+    - 急性關節腫脹
+    - 劇烈跛行
+    - 觸診疼痛
+    - 發燒
+  progressive:
+    - 關節積液（波動感）
+    - 持續跛行
+    - 關節僵硬
+    - 全身性感染症狀
+
+diagnosis:
+  primaryTests:
+    - name: 關節液抽取分析
+      notes: 混濁液體。細胞計數 > 40,000/μL 以嗜中性球為主。培養確認病原
+    - name: X 光
+      notes: 關節周圍軟組織腫脹。晚期可見骨質溶解
+
+treatment:
+  principles:
+    - 緊急關節沖洗
+    - 長期全身性抗生素
+  general:
+    - 關節鏡或關節切開沖洗引流
+    - 全身性抗生素 4-6 週（依培養結果）
+    - 止痛管理
+    - 物理治療維持關節功能
+
+prognosis: 及時沖洗 + 抗生素預後中等至良好。延遲治療關節軟骨不可逆破壞，預後差。
+
+pubmedQueries:
+  - query: '"septic arthritis" AND (veterinary OR canine OR feline) AND ("lavage" OR "treatment")'
+    frequency: monthly

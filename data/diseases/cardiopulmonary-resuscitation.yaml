@@ -1,0 +1,80 @@
+slug: cardiopulmonary-resuscitation
+nameEn: Cardiopulmonary Resuscitation
+nameZh: 心肺復甦術
+bodySystem: emergency
+description: 心肺復甦術 (cardiopulmonary resuscitation, CPR) 為心臟停止後恢復自發循環的緊急救命程序。RECOVER (Reassessment Campaign on Veterinary Resuscitation) 為犬貓 CPR 的循證指引。基礎生命支持（壓迫 + 通氣）與進階生命支持（藥物 + 電擊 + 監測）為兩大要素。
+
+aliases:
+  - { alias: CPR, language: zh }
+  - { alias: 心肺急救, language: zh }
+  - { alias: CPR, language: en }
+  - { alias: RECOVER Guidelines, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬 CPR 壓迫位置依體型：大型犬側臥最寬處、桶胸犬仰臥胸骨上、小型犬心臟正上方。壓迫頻率 100-120/分鐘。犬 ROSC 約 40%。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓 CPR 多採用單手環抱胸腔壓迫法 (circumferential technique)。壓迫頻率同犬。貓 ROSC 率與犬相似但出院率略低。
+
+etiology:
+  categories:
+    - name: CPR 啟動條件
+      examples:
+        - 心臟停止確認（無意識、無脈搏、無有效呼吸）
+        - 確認時間 <10 秒即開始
+    - name: 可逆原因 (5H5T)
+      examples:
+        - Hypovolemia → 輸液
+        - Hypoxia → 通氣
+        - Hydrogen ion (acidosis) → sodium bicarbonate
+        - Hypo/Hyperkalemia → 電解質矯正
+        - Hypothermia → 回溫
+        - Tension pneumothorax → 胸腔穿刺
+        - Tamponade → 心包穿刺
+        - Toxins → 解毒
+        - Thromboembolism → 抗凝
+        - Trauma → 手術
+
+clinicalSigns:
+  early:
+    - 心臟停止征象（見 cardiac-arrest 條目）
+  progressive:
+    - CPR 期間監測 ETCO₂（反映壓迫效果）
+    - ROSC 征象：ETCO₂ 突然升高、可觸知脈搏、心電圖恢復
+
+diagnosis:
+  primaryTests:
+    - name: CPA 確認
+      notes: 無意識 + 無脈搏 + 無呼吸。<10 秒確認即開始 CPR
+    - name: 心電圖
+      notes: 辨識心律決定治療方向。可電擊節律（VF、pulseless VT）vs 不可電擊（asystole、PEA）
+  additional:
+    - ETCO₂ 監測（>15 mmHg 提示有效壓迫，突然升高提示 ROSC）
+    - 動脈血氣（ROSC 後）
+
+treatment:
+  principles:
+    - 高品質胸外壓迫（最優先）
+    - 及早通氣
+    - 辨識可逆原因
+    - 2 分鐘不中斷週期
+  general:
+    - "基礎生命支持 (BLS)："
+    - 胸外壓迫 100-120 次/分鐘，深度 1/3-1/2 胸寬
+    - 完全回彈（壓迫者 2 分鐘輪換避免疲勞）
+    - 氣管插管 + 100% O₂ 通氣 10 次/分鐘
+    - "進階生命支持 (ALS)："
+    - Epinephrine 0.01 mg/kg IV q3-5min（低劑量）
+    - 高劑量 epinephrine 0.1 mg/kg IV（長時間 CPR 考慮）
+    - VF/pVT 電擊：犬 2-4 J/kg（單相）、1-2 J/kg（雙相）
+    - Vasopressin 0.8 U/kg IV（替代或合併 epinephrine）
+    - Atropine 0.04 mg/kg IV（迷走神經介導）
+    - "ROSC 後照護：血壓管理、氧氣、體溫控制 (33-36°C)、血糖"
+
+prognosis: ROSC 率約 35-45%（院內）。出院存活率約 5-10%。麻醉相關 CPA 存活率最高。CPR >20 分鐘未 ROSC 建議停止（除非有可矯正原因）。ROSC 後 24-48 小時仍需密切監測。
+
+pubmedQueries:
+  - query: '"cardiopulmonary resuscitation" OR "RECOVER" AND (veterinary OR canine OR feline) AND ("guidelines" OR "treatment")'
+    frequency: monthly

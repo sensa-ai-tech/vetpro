@@ -1,0 +1,82 @@
+slug: rocky-mountain-spotted-fever
+nameEn: Rocky Mountain Spotted Fever
+nameZh: 落磯山斑點熱
+bodySystem: infectious
+description: 落磯山斑點熱 (RMSF) 由立克次體 Rickettsia rickettsii 引起，經犬蜱 (Dermacentor variabilis) 或棕色犬蜱 (Rhipicephalus sanguineus) 傳播。為北美最嚴重的蜱媒立克次體疾病，可引起致命性血管炎。犬為主要臨床宿主。
+
+aliases:
+  - { alias: RMSF, language: en }
+  - { alias: 洛磯山斑疹熱, language: zh }
+  - { alias: 斑點熱立克次體感染, language: zh }
+  - { alias: Spotted Fever Rickettsiosis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 流行區犬為重要臨床宿主。德國牧羊犬可能較易發展嚴重型。蜱蟲附著後 5-20 小時即可傳播。春夏季為高峰。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓自然感染極罕見，臨床報告極少。實驗感染可引起輕微至中度症狀。
+
+etiology:
+  categories:
+    - name: 病原與傳播
+      examples:
+        - Rickettsia rickettsii（專性細胞內革蘭氏陰性球桿菌）
+        - 經 Dermacentor variabilis 或 Rhipicephalus sanguineus 傳播
+        - 蜱蟲附著後 5-20 小時即可傳播
+        - 病原侵犯血管內皮細胞引起血管炎
+    - name: 致病機制
+      examples:
+        - 血管內皮細胞感染與壞死
+        - 小血管炎導致血管通透性增加
+        - 微血栓形成
+        - 多器官功能障礙
+
+clinicalSigns:
+  early:
+    - 突發高燒 (40-41°C)
+    - 嗜睡與食慾廢絕
+    - 多關節疼痛與跛行
+    - 淋巴結腫大
+  progressive:
+    - 皮膚出血斑（瘀斑、瘀點）
+    - 鼻出血
+    - 眼部病變（結膜充血、前房出血、視網膜出血）
+    - 水腫（面部、四肢、陰囊）
+    - 神經症狀（共濟失調、癲癇）
+    - DIC（彌散性血管內凝血）
+    - 急性腎損傷
+
+diagnosis:
+  primaryTests:
+    - name: 血清學（IFA）
+      notes: 急性期與恢復期配對血清（2-3 週間隔），四倍以上效價上升確診。急性期單一高效價（>1:1024）具有臨床意義
+    - name: 全血 PCR
+      notes: 急性發燒期敏感度最高，可在治療前快速確認。治療後迅速轉陰
+  additional:
+    - CBC（血小板減少為最常見異常、貧血、白血球減少或增多）
+    - 生化（低白蛋白、低鈉、肝酵素升高）
+    - 凝血功能（DIC 篩檢）
+    - 尿液分析（蛋白尿、管型）
+
+treatment:
+  principles:
+    - Doxycycline 為首選且唯一推薦治療
+    - 懷疑即應治療，不等待確認
+    - 早期治療大幅改善預後
+    - 支持療法管理併發症
+  general:
+    - Doxycycline 5-10 mg/kg PO/IV BID × 14-21 天
+    - 臨床反應通常 24-72 小時內出現
+    - IV 輸液支持
+    - 輸血（嚴重貧血或 DIC）
+    - 新鮮冷凍血漿（凝血障礙）
+    - 抗癲癇藥物（有神經症狀時）
+    - 蜱蟲預防為長期管理重點
+
+prognosis: 早期 doxycycline 治療預後良好，多數 24-72 小時內退燒改善。延遲治療或已發展 DIC、神經症狀者預後較差。未治療犬死亡率可能高達 5-10%。復發罕見，但不產生持久免疫。
+
+pubmedQueries:
+  - query: '"Rocky Mountain spotted fever" AND (canine OR veterinary) AND ("treatment" OR "diagnosis")'
+    frequency: monthly

@@ -1,0 +1,80 @@
+slug: type-iv-hypersensitivity
+nameEn: Type IV Hypersensitivity
+nameZh: 第四型過敏反應
+bodySystem: immunology
+description: 第四型過敏反應（遲發型過敏反應）為 T 細胞介導的免疫反應，不涉及抗體。致敏 T 細胞於再次接觸抗原後 24-72 小時引起炎症反應。犬貓代表性疾病包括接觸性皮膚炎、肉芽腫性炎症與結核菌素反應。
+
+aliases:
+  - { alias: 遲發型過敏反應, language: zh }
+  - { alias: 細胞介導型過敏反應, language: zh }
+  - { alias: Delayed-Type Hypersensitivity, language: en }
+  - { alias: Cell-Mediated Hypersensitivity, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬接觸性皮膚炎為最常見第四型反應。常見致敏原包括植物、金屬、地毯材料、清潔劑。肉芽腫性皮膚病（異物反應、真菌）亦涉及此機制。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓接觸性皮膚炎較犬少見。貓嗜酸球肉芽腫複合症部分涉及第四型反應。
+
+etiology:
+  categories:
+    - name: 致病機制
+      examples:
+        - 致敏 T 細胞（CD4+ Th1）再次接觸抗原
+        - 釋放細胞激素（IFN-γ、TNF-α）
+        - 巨噬細胞活化
+        - 組織損傷與肉芽腫形成
+    - name: 反應型態
+      examples:
+        - 接觸性過敏（接觸性皮膚炎）
+        - 結核菌素型反應
+        - 肉芽腫型反應（異物、真菌、分枝桿菌）
+    - name: 常見致敏原
+      examples:
+        - 植物（Tradescantia/紫露草）
+        - 金屬（鎳）
+        - 清潔劑、消毒劑
+        - 局部用藥（neomycin）
+
+clinicalSigns:
+  early:
+    - 接觸性皮膚炎：接觸部位紅斑（腹部、腋下、足部）
+    - 丘疹
+    - 瘙癢
+  progressive:
+    - 水疱
+    - 皮膚增厚與苔蘚化
+    - 肉芽腫型：結節性病灶
+    - 慢性化：色素沉著、角化過度
+
+diagnosis:
+  primaryTests:
+    - name: 貼片試驗 (Patch test)
+      notes: 疑似接觸性過敏原貼覆皮膚 48 小時後判讀反應
+    - name: 皮膚生檢
+      notes: 淋巴球與巨噬細胞浸潤。肉芽腫型：上皮樣細胞、多核巨細胞
+  additional:
+    - 消除試驗（移除疑似接觸原後觀察改善）
+    - 特殊染色（分枝桿菌、真菌）
+    - 培養（肉芽腫型）
+
+treatment:
+  principles:
+    - 移除致敏原
+    - 抗炎治療
+    - 肉芽腫型需針對病因治療
+  general:
+    - 避免接觸致敏原（更換清潔劑、避開特定植物）
+    - 局部類固醇（hydrocortisone、betamethasone）
+    - 嚴重者：prednisolone 1 mg/kg/day 短程
+    - Cyclosporine 5 mg/kg PO（慢性接觸性皮膚炎）
+    - 肉芽腫型：依病因治療（抗真菌、抗分枝桿菌）
+    - 環境管理（減少接觸機會）
+
+prognosis: 接觸性皮膚炎在成功避開致敏原後預後極佳。無法完全避開者需長期藥物管理。肉芽腫性疾病預後取決於病因（真菌、分枝桿菌感染較難治）。
+
+pubmedQueries:
+  - query: '"type IV hypersensitivity" OR "delayed-type hypersensitivity" OR "contact dermatitis" AND (veterinary OR canine OR feline) AND "treatment"'
+    frequency: monthly

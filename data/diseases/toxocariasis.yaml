@@ -1,0 +1,77 @@
+slug: toxocariasis
+nameEn: Toxocariasis
+nameZh: 蛔蟲感染
+bodySystem: infectious
+description: 蛔蟲感染 (toxocariasis) 由犬蛔蟲 (Toxocara canis) 或貓蛔蟲 (T. cati) 引起，為犬貓最常見的腸道寄生蟲之一。幼犬幼貓感染率極高。犬蛔蟲可經胎盤與乳汁傳播。為重要人畜共通傳染病（幼蟲移行症）。
+
+aliases:
+  - { alias: 犬蛔蟲感染, language: zh }
+  - { alias: 弓蟲蛔蟲病, language: zh }
+  - { alias: Roundworm Infection, language: en }
+  - { alias: Toxocara Infection, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 幼犬感染率極高（經胎盤/乳汁傳播）。T. canis 成蟲寄居小腸。嚴重感染幼犬可出現腸阻塞。定期驅蟲為預防重點。
+  - speciesCommon: cat
+    prevalence: common
+    notes: T. cati 經乳汁傳播（不經胎盤）。幼貓感染常見。成年貓亦可感染但蟲荷量通常較低。
+
+etiology:
+  categories:
+    - name: 傳播途徑
+      examples:
+        - 經胎盤傳播（T. canis，幼犬最重要途徑）
+        - 經乳汁傳播（T. canis 與 T. cati）
+        - 攝入感染性蟲卵
+        - 攝入含幼蟲的轉運宿主（嚙齒類）
+    - name: 生活史
+      examples:
+        - 蟲卵在環境中 2-4 週發育為感染性
+        - 幼蟲在幼犬體內進行肝肺移行 (hepato-tracheal migration)
+        - 成犬體內幼蟲進行體內移行 (somatic migration) 並包囊化
+        - 懷孕時體內休眠幼蟲活化經胎盤感染胎兒
+
+clinicalSigns:
+  early:
+    - 腹部膨大（幼畜）
+    - 被毛粗糙
+    - 生長遲緩
+  progressive:
+    - 嘔吐（可能吐出蟲體）
+    - 腹瀉
+    - 腸阻塞（嚴重蟲荷量）
+    - 咳嗽（幼蟲肺移行期）
+    - 嚴重貧血與營養不良
+
+diagnosis:
+  primaryTests:
+    - name: 糞便浮游法
+      notes: 偵測特徵性圓形、厚殼蟲卵。前專利期（感染後 <4 週）可能偽陰性。蟲卵量大通常容易偵測
+    - name: 直接觀察
+      notes: 嘔吐物或糞便中可見成蟲（白色、圓柱形，長 5-15 cm）
+  additional:
+    - CBC（嗜酸球增多）
+    - 幼犬整體健康評估
+
+treatment:
+  principles:
+    - 定期驅蟲為核心策略
+    - 幼犬從 2 週齡開始驅蟲
+    - 環境衛生管理
+    - 教育飼主人畜共通風險
+  general:
+    - Pyrantel pamoate 5-10 mg/kg PO（安全，可用於幼犬）
+    - Fenbendazole 50 mg/kg PO SID × 3 天
+    - "幼犬驅蟲方案：2、4、6、8 週齡各驅蟲一次，之後每月至 6 月齡"
+    - "幼貓：3 週齡開始，每 2 週至 8 週齡"
+    - 成犬貓每月預防性驅蟲（含蛔蟲的廣效驅蟲劑）
+    - 懷孕母犬 fenbendazole 從懷孕 40 天至哺乳 14 天
+    - 環境清潔（清除糞便，蟲卵對化學消毒劑抗性強）
+
+prognosis: 犬貓蛔蟲感染適當驅蟲後預後極佳。嚴重感染幼畜需注意腸阻塞與營養不良。定期驅蟲可有效控制。人畜共通風險需教育飼主做好環境衛生與兒童保護。
+
+pubmedQueries:
+  - query: '"toxocariasis" OR "Toxocara" AND (veterinary OR canine OR feline) AND ("control" OR "guidelines")'
+    frequency: monthly

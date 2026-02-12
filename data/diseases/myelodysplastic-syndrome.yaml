@@ -1,0 +1,66 @@
+slug: myelodysplastic-syndrome
+nameEn: Myelodysplastic Syndrome
+nameZh: 骨髓異常增生症候群
+bodySystem: hematology
+description: 骨髓異常增生症候群（MDS）為骨髓造血幹細胞的克隆性疾病，特徵為一個或多個血球系列的無效造血（ineffective hematopoiesis）與形態異常（dysplasia）。周邊血液表現為血球減少，骨髓中造血細胞呈形態學異常。MDS 有轉化為急性骨髓性白血病（AML）的風險。
+
+aliases:
+  - { alias: MDS, language: en }
+  - { alias: 骨髓增生異常症候群, language: zh }
+  - { alias: Preleukemia, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬隻 MDS 罕見，中老年犬好發。部分病例可進展為 AML。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻 MDS 可與 FeLV 感染相關。FeLV 陽性貓有較高的 MDS/AML 轉化風險。
+
+etiology:
+  categories:
+    - name: 原發性
+      examples:
+        - 造血幹細胞克隆性異常
+        - 原因不明
+    - name: 繼發性
+      examples:
+        - FeLV 感染（貓）
+        - 先前化療或輻射暴露
+        - 慢性骨髓刺激
+
+clinicalSigns:
+  early:
+    - 嗜睡
+    - 黏膜蒼白（貧血）
+    - 食慾下降
+  progressive:
+    - 進行性血球減少（貧血加重、感染、出血）
+    - 發燒（感染）
+    - 體重減輕
+    - 轉化為 AML 時症狀急性惡化
+
+diagnosis:
+  primaryTests:
+    - name: 全血球計數（CBC）與血液抹片
+      notes: 一至三系血球減少（cytopenia）。周邊血液中可見形態異常的血球（巨大紅血球、低分葉嗜中性球、巨大血小板）。
+    - name: 骨髓穿刺與活檢
+      notes: 造血細胞形態異常（dysplasia）：環狀鐵母細胞、巨幼樣紅血球前驅細胞、低分葉嗜中性球等。Blast 細胞 <20%（>20% 即為 AML）。
+
+treatment:
+  principles:
+    - 無根治性治療
+    - 支持性治療為主
+    - 監測 AML 轉化
+  general:
+    - 支持性輸血（pRBC）維持生活品質
+    - 廣效抗生素控制感染
+    - "低劑量 Cytarabine 10 mg/m² SC q12h（部分病例有反應）"
+    - "Erythropoietin（EPO）治療嚴重貧血"
+    - 定期骨髓穿刺監測 blast 比例
+
+prognosis: 預後不良。犬隻 MDS 中位存活時間約數週至數月。約 20-30% 的 MDS 會進展為 AML。低 blast 比例（<5%）者存活時間較長。貓隻 FeLV 陽性者預後更差。支持性治療可改善生活品質但無法改變疾病進程。
+
+pubmedQueries:
+  - query: '"myelodysplastic syndrome" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "classification")'
+    frequency: monthly

@@ -1,0 +1,69 @@
+slug: hepatic-lymphoma
+nameEn: Hepatic Lymphoma
+nameZh: 肝臟淋巴瘤
+bodySystem: oncology
+description: 肝臟淋巴瘤為肝臟最常見的惡性腫瘤之一，可為原發性肝臟淋巴瘤或多中心淋巴瘤的肝臟浸潤。貓隻肝臟淋巴瘤相對常見，常與消化型淋巴瘤相關。犬隻多為多中心淋巴瘤累及肝臟。臨床表現為肝腫大、黃疸與全身性症狀。
+
+aliases:
+  - { alias: 肝淋巴瘤, language: zh }
+  - { alias: Liver Lymphoma, language: en }
+  - { alias: Hepatic Lymphosarcoma, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻肝臟淋巴瘤多為多中心淋巴瘤（multicentric lymphoma）的肝臟浸潤。原發性肝臟淋巴瘤少見。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓隻肝臟淋巴瘤相對常見。常與消化型淋巴瘤相關。大細胞型預後較差。低度惡性小細胞型預後較好。
+
+etiology:
+  categories:
+    - name: 腫瘤類型
+      examples:
+        - 多中心淋巴瘤肝臟浸潤（犬隻最常見）
+        - 原發性肝臟淋巴瘤
+        - 消化型淋巴瘤累及肝臟（貓隻常見）
+    - name: 風險因素
+      examples:
+        - FeLV 感染（貓隻，年輕貓）
+        - 免疫抑制
+        - 慢性炎症性腸病進展（貓隻）
+
+clinicalSigns:
+  early:
+    - 食慾下降
+    - 體重減輕
+    - 嗜睡
+  progressive:
+    - 肝腫大
+    - 黃疸
+    - 嘔吐與腹瀉
+    - 腹水
+    - 淋巴結腫大（多中心型）
+    - 惡病質
+
+diagnosis:
+  primaryTests:
+    - name: 肝臟細針穿刺或活檢
+      notes: 細胞學或組織病理學確認淋巴瘤。免疫表型分型（B-cell vs T-cell）。貓隻需區分小細胞型（低度惡性）與大細胞型（高度惡性）。
+    - name: 腹部超音波
+      notes: 肝臟瀰漫性低回音（最常見）。局灶性結節（較少見）。肝腫大。評估其他腹腔器官浸潤。
+
+treatment:
+  principles:
+    - 化學治療為主要療法
+    - 分型影響治療選擇與預後
+    - 支持性治療
+  general:
+    - "犬隻多中心型：CHOP 化療方案（Cyclophosphamide、Doxorubicin、Vincristine、Prednisolone）"
+    - "貓隻大細胞型：COP 方案（Cyclophosphamide、Vincristine、Prednisolone）或 CHOP"
+    - "貓隻小細胞型：Chlorambucil 2 mg/cat PO q48-72h + Prednisolone 1-2 mg/kg PO q24h"
+    - 止吐與營養支持
+    - 定期肝功能監測
+
+prognosis: 犬隻多中心淋巴瘤以 CHOP 化療中位存活時間約 12-14 個月。貓隻大細胞型淋巴瘤預後較差（中位存活 2-6 個月）。貓隻小細胞型淋巴瘤以 Chlorambucil + Prednisolone 治療預後良好（中位存活 1.5-2 年以上）。原發性肝臟淋巴瘤預後不一。
+
+pubmedQueries:
+  - query: '"hepatic lymphoma" OR "liver lymphoma" AND (veterinary OR canine OR feline) AND ("chemotherapy" OR "treatment")'
+    frequency: monthly

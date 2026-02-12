@@ -1,0 +1,75 @@
+slug: spinal-cord-tumor
+nameEn: Spinal Cord Tumor
+nameZh: 脊髓腫瘤
+bodySystem: oncology
+description: 脊髓腫瘤為發生於脊髓或其周圍結構的腫瘤，依位置分為硬膜外（extradural，最常見，約 50%）、硬膜內髓外（intradural-extramedullary）與髓內（intramedullary）。犬隻常見類型包括脊椎骨肉瘤、淋巴瘤（硬膜外）、meningioma、nerve sheath tumor（硬膜內髓外）。
+
+aliases:
+  - { alias: 脊椎腫瘤, language: zh }
+  - { alias: Spinal Neoplasia, language: en }
+  - { alias: Spinal Mass, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻脊髓腫瘤相對常見。大型犬與中老年犬好發。硬膜外型（vertebral tumors）最常見。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻脊髓腫瘤以淋巴瘤最常見（硬膜外或硬膜內）。FeLV 相關。
+
+etiology:
+  categories:
+    - name: 硬膜外腫瘤（最常見）
+      examples:
+        - 脊椎骨肉瘤（osteosarcoma）
+        - 脊椎軟骨肉瘤（chondrosarcoma）
+        - 淋巴瘤
+        - 轉移性腫瘤
+    - name: 硬膜內髓外
+      examples:
+        - 腦膜瘤（meningioma）
+        - 神經鞘瘤（nerve sheath tumor）
+        - 淋巴瘤
+    - name: 髓內
+      examples:
+        - 室管膜瘤（ependymoma）
+        - 膠質瘤（glioma）
+        - 淋巴瘤
+
+clinicalSigns:
+  early:
+    - 漸進性跛行或步態異常
+    - 脊柱疼痛
+    - 輕度共濟失調
+  progressive:
+    - 漸進性後肢無力（胸腰段）或四肢無力（頸段）
+    - 癱瘓
+    - 排尿障礙
+    - 肌肉萎縮（特別是 nerve sheath tumor 伴根徵候）
+    - 病理性脊椎骨折（骨性腫瘤）
+
+diagnosis:
+  primaryTests:
+    - name: MRI
+      notes: 確診金標準。精確顯示腫瘤位置（硬膜外/硬膜內/髓內）、大小與脊髓壓迫程度。造影劑增強（gadolinium）評估腫瘤血管性。
+    - name: CT
+      notes: 評估骨性病變優於 MRI。脊椎溶骨性或增生性病變。CT 導引活檢（硬膜外腫瘤）。
+
+treatment:
+  principles:
+    - 手術切除（可能時）
+    - 放射治療
+    - 化療（淋巴瘤）
+  general:
+    - 手術切除（硬膜內髓外 meningioma、nerve sheath tumor 效果最好）
+    - 放射治療（不可手術或殘餘腫瘤）
+    - "淋巴瘤：化療方案（COP 或 CHOP）"
+    - 疼痛管理（Gabapentin + NSAID 或 opioids）
+    - 支持性照護（膀胱管理、褥瘡預防）
+    - 姑息性類固醇（Prednisolone 減輕水腫）
+
+prognosis: 預後取決於腫瘤類型與位置。硬膜內髓外 meningioma 手術切除後中位存活約 16-24 個月。Nerve sheath tumor 手術切除預後良好。硬膜外惡性腫瘤（骨肉瘤）預後較差。淋巴瘤化療反應率尚可。髓內腫瘤預後最差。
+
+pubmedQueries:
+  - query: '"spinal cord tumor" OR "spinal neoplasia" AND (veterinary OR canine OR feline) AND ("surgery" OR "treatment" OR "MRI")'
+    frequency: monthly

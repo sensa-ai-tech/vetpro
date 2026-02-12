@@ -1,0 +1,67 @@
+slug: pericarditis
+nameEn: Pericarditis
+nameZh: 心包膜炎
+bodySystem: cardiac
+description: 心包膜炎為心包膜（心外膜與壁側心包）的炎症，可伴隨心包積液。犬隻心包膜炎可為感染性（細菌性化膿性心包炎）或非感染性（特發性、腫瘤相關、免疫介導性）。細菌性心包炎在犬隻雖非最常見的心包疾病，但臨床意義重要，需與特發性心包積液和腫瘤性心包積液鑑別。
+
+aliases:
+  - { alias: 心包炎, language: zh }
+  - { alias: Pericardial Inflammation, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 細菌性心包炎可由穿透性異物（如草芒）或血行感染引起。特發性心包炎可能為免疫介導性。大型犬品種好發。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻心包炎罕見，可與 FIP（乾型）相關。
+
+etiology:
+  categories:
+    - name: 感染性
+      examples:
+        - 細菌性（穿透性異物如草芒遷移、血行感染、術後感染）
+        - 真菌性（Coccidioides、Aspergillus）
+    - name: 非感染性
+      examples:
+        - 特發性（可能為免疫介導性）
+        - 腫瘤相關（hemangiosarcoma、chemodectoma、mesothelioma）
+        - 尿毒症性（腎衰竭）
+        - 外傷後
+
+clinicalSigns:
+  early:
+    - 發熱（特別是感染性）
+    - 嗜睡與食慾下降
+    - 輕度運動不耐
+  progressive:
+    - 心包積液導致心包填塞症狀
+    - 頸靜脈怒張
+    - 腹水
+    - 運動不耐加重
+    - 心音減弱
+
+diagnosis:
+  primaryTests:
+    - name: 心臟超音波（Echocardiography）
+      notes: 可見心包積液（無回聲暗區包圍心臟）。細菌性心包炎積液可含纖維素條帶。排除心臟腫塊。評估心包填塞徵象。
+    - name: 心包液分析
+      notes: 細菌性：pH 低、葡萄糖低、蛋白高、白血球高（以嗜中性球為主）。細菌培養與藥敏試驗。細胞學排除腫瘤。
+
+treatment:
+  principles:
+    - 心包填塞需緊急心包穿刺引流
+    - 感染性心包炎需長期抗生素治療
+    - 反覆特發性心包積液考慮心包切除術
+  general:
+    - 心包穿刺引流（pericardiocentesis，緊急處置）
+    - 細菌性：長期廣效抗生素治療（6-8 週以上），依培養藥敏結果調整
+    - 特發性反覆發作：心包切開術（pericardiectomy）
+    - 尿毒症性：治療腎衰竭
+    - 支持性治療：輸液、營養支持
+
+prognosis: 特發性心包炎經心包切除術後預後良好。細菌性心包炎若及時診斷並適當抗生素治療，預後尚可，但可能發展為縮窄性心包炎。腫瘤相關心包炎預後取決於腫瘤類型。尿毒症性心包炎預後與腎臟疾病控制相關。
+
+pubmedQueries:
+  - query: '"pericarditis" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "treatment")'
+    frequency: monthly

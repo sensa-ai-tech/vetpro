@@ -1,0 +1,66 @@
+slug: atrial-septal-defect
+nameEn: Atrial Septal Defect
+nameZh: 心房中隔缺損
+bodySystem: cardiac
+description: 心房中隔缺損（ASD）為先天性心臟病，指左右心房間的中隔存在異常開口，導致血液由左心房向右心房分流。依缺損位置分為 ostium secundum（最常見）、ostium primum 及 sinus venosus 型。多數病例左向右分流量小，臨床症狀輕微，但大型缺損可導致右心容積負荷增加與肺動脈高壓。
+
+aliases:
+  - { alias: ASD, language: en }
+  - { alias: 心房間隔缺損, language: zh }
+  - { alias: Interatrial Septal Defect, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻先天性心臟病中相對少見，Boxer 及 Doberman Pinscher 有較高報告率。小型缺損可無臨床症狀，大型缺損可導致右心衰竭。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻 ASD 罕見，通常為複合先天性心臟異常的一部分。
+
+etiology:
+  categories:
+    - name: 先天性發育異常
+      examples:
+        - 心房中隔胚胎發育不完全
+        - 第二孔型（Ostium secundum）缺損最常見
+        - 第一孔型（Ostium primum）缺損常合併房室瓣異常
+        - 靜脈竇型（Sinus venosus）缺損可伴隨肺靜脈迴流異常
+    - name: 遺傳因素
+      examples:
+        - 部分品種遺傳傾向（Boxer、Doberman Pinscher）
+        - 可與其他先天性心臟缺損合併出現
+
+clinicalSigns:
+  early:
+    - 多數小型缺損無明顯臨床症狀
+    - 聽診可聞及右心基部柔和收縮期雜音（相對性肺動脈瓣狹窄）
+    - 第二心音固定分裂
+  progressive:
+    - 運動不耐
+    - 呼吸急促
+    - 右心擴大徵象
+    - 腹部膨大（腹水）
+
+diagnosis:
+  primaryTests:
+    - name: 心臟超音波（Echocardiography）
+      notes: 確診首選。可直接顯示心房中隔缺損位置與大小，評估分流方向與量（彩色都卜勒），測量右心房與右心室擴大程度。
+    - name: 心電圖（ECG）
+      notes: 可見右心軸偏移、右心房擴大波型（P pulmonale）。部分病例可見不完全性右束支傳導阻滯。
+
+treatment:
+  principles:
+    - 小型缺損無臨床症狀者通常不需治療
+    - 大型缺損伴血流動力學顯著改變者考慮介入或手術修補
+    - 出現右心衰竭時給予內科支持治療
+  general:
+    - 小型 ASD 定期追蹤心臟超音波監測
+    - 大型缺損可考慮經導管封堵術（Amplatzer 裝置）或外科修補
+    - 右心衰竭治療：Furosemide 2-4 mg/kg PO q8-12h
+    - 限制劇烈運動
+
+prognosis: 小型心房中隔缺損預後良好，多數動物可正常生活。大型缺損若未治療，長期右心容積負荷可導致右心衰竭與肺動脈高壓，最終可能發展為 Eisenmenger 症候群（分流方向逆轉）。成功封堵或手術修補後預後改善。
+
+pubmedQueries:
+  - query: '"atrial septal defect" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "treatment")'
+    frequency: monthly

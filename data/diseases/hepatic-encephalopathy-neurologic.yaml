@@ -1,0 +1,75 @@
+slug: hepatic-encephalopathy-neurologic
+nameEn: Hepatic Encephalopathy Neurologic
+nameZh: 肝性腦病（神經表現）
+bodySystem: hepatic
+description: 肝功能嚴重不全導致神經毒素 (主要為氨 ammonia) 無法代謝，蓄積於血液中穿越血腦屏障，造成瀰漫性腦功能障礙。最常見於先天性門脈分流 (portosystemic shunt) 的幼年動物或嚴重肝病的成年動物。
+
+aliases:
+  - { alias: Hepatic Encephalopathy, language: en }
+  - { alias: Porto-Systemic Encephalopathy, language: en }
+  - { alias: 肝腦病變, language: zh }
+  - { alias: 門脈系統性腦病, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 先天性門脈分流犬多在 1 歲前出現症狀。Yorkshire Terrier、Maltese、Pug 等小型犬品種好發。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓可見於先天性門脈分流或嚴重肝病 (hepatic lipidosis、cholangitis)。
+
+etiology:
+  categories:
+    - name: 門脈分流
+      examples:
+        - 先天性門脈系統分流 (extrahepatic 或 intrahepatic)
+        - 後天性門脈高壓繼發分流
+    - name: 肝實質疾病
+      examples:
+        - 急性肝衰竭
+        - 慢性肝硬化
+        - 肝臟脂質沉積症 (貓)
+    - name: 誘發因素
+      examples:
+        - 高蛋白飲食
+        - 消化道出血
+        - 便秘
+        - 感染/敗血症
+
+clinicalSigns:
+  early:
+    - 餐後精神狀態改變 (尤其高蛋白飲食後)
+    - 漫無目的走動
+    - 過度流涎 (尤其貓)
+  progressive:
+    - 行為異常 (head pressing、撞牆)
+    - 共濟失調
+    - 皮質性失明
+    - 癲癇發作
+    - 昏迷
+
+diagnosis:
+  primaryTests:
+    - name: 空腹與餐後膽汁酸
+      notes: 顯著升高支持肝臟代謝功能不全。門脈分流的敏感篩檢
+    - name: 血氨 (Ammonia)
+      notes: 升高為肝性腦病直接證據。需即時送檢避免偽陽性
+    - name: 腹部超音波
+      notes: 評估門脈分流血管、肝臟大小與回聲。小肝臟提示慢性分流
+
+treatment:
+  principles:
+    - 降低血氨為急性治療核心
+    - 低蛋白飲食減少氨產生
+    - 門脈分流者手術為根治方式
+  general:
+    - Lactulose 口服 (酸化腸道降低氨吸收)
+    - 抗生素 (Metronidazole 或 Neomycin) 減少腸道產氨菌
+    - 限蛋白飲食 (選擇高品質易消化蛋白質)
+    - 門脈分流：ameroid constrictor 或 cellophane banding 手術
+
+prognosis: 先天性門脈分流手術後預後良好至優良 (85% 以上臨床改善)。藥物管理可穩定多數病例。嚴重肝硬化或急性肝衰竭者預後不良。貓門脈分流手術預後較犬略差。
+
+pubmedQueries:
+  - query: '"hepatic encephalopathy" AND (veterinary OR canine OR feline) AND ("portosystemic shunt" OR "treatment")'
+    frequency: monthly

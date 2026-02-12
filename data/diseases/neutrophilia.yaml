@@ -1,0 +1,69 @@
+slug: neutrophilia
+nameEn: Neutrophilia
+nameZh: 嗜中性球增多症
+bodySystem: hematology
+description: 嗜中性球增多症為循環血液中嗜中性球計數升高（犬 >11,500/μL，貓 >12,500/μL）。最常見原因為炎症/感染（inflammatory leukogram）、緊迫反應（stress leukogram，皮質醇介導）及興奮反應（epinephrine-induced）。嗜中性球增多症本身通常為其他疾病的反映，非獨立疾病。
+
+aliases:
+  - { alias: 嗜中性白血球增多, language: zh }
+  - { alias: High Neutrophil Count, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬隻嗜中性球增多症極常見，需根據其他 CBC 變化（left shift、monocytosis、lymphopenia）區分炎症性、緊迫性或生理性反應。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓隻嗜中性球增多症常見。貓隻 mature neutrophilia（成熟嗜中性球增多）可見於緊迫反應或慢性炎症。
+
+etiology:
+  categories:
+    - name: 炎症/感染
+      examples:
+        - 細菌感染（膿瘍、肺炎、子宮蓄膿）
+        - 組織壞死
+        - 免疫介導性疾病
+        - 左移（left shift）常伴隨
+    - name: 緊迫反應（皮質醇介導）
+      examples:
+        - 內源性皮質醇升高（Cushing's disease）
+        - 外源性糖皮質素使用
+        - 疼痛、手術後、嚴重疾病
+    - name: 生理性反應
+      examples:
+        - 興奮或恐懼（epinephrine 介導，邊緣池釋放）
+        - 劇烈運動後
+        - 通常為短暫性
+
+clinicalSigns:
+  early:
+    - 嗜中性球增多症本身無特異性症狀
+    - 症狀取決於基礎疾病
+  progressive:
+    - 感染性：發燒、局部感染徵象、全身性炎症反應
+    - 緊迫性：基礎疾病的症狀
+    - 極度增高（>100,000/μL）提示白血病或嚴重 leukemoid reaction
+
+diagnosis:
+  primaryTests:
+    - name: 全血球計數（CBC）與血液抹片
+      notes: "嗜中性球計數升高。評估 left shift（帶狀核嗜中性球增加）提示活躍炎症。毒性變化（toxic granulation、Dohle bodies）提示嚴重感染。搭配淋巴球與單核球計數判斷 leukogram pattern。"
+    - name: 基礎疾病排查
+      notes: 炎症指標（CRP）、影像學（感染灶定位）、尿液分析、體液培養。極度嗜中性球增多需排除慢性粒細胞白血病。
+
+treatment:
+  principles:
+    - 治療基礎病因
+    - 嗜中性球增多症本身不需直接治療
+    - 極度增高需排除白血病
+  general:
+    - 感染性：適當抗生素治療、膿瘍引流
+    - 緊迫性：治療基礎疾病
+    - 生理性：無需治療，通常數小時內恢復
+    - 疑似白血病：骨髓穿刺與流式細胞儀
+
+prognosis: 預後完全取決於基礎疾病。感染性嗜中性球增多在感染控制後恢復正常。緊迫性反應在基礎疾病改善後消退。生理性增多為良性且短暫。
+
+pubmedQueries:
+  - query: '"neutrophilia" AND (veterinary OR canine OR feline) AND ("leukogram" OR "inflammation")'
+    frequency: monthly

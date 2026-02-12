@@ -1,0 +1,78 @@
+slug: hookworm-infection
+nameEn: Hookworm Infection
+nameZh: 鉤蟲感染
+bodySystem: infectious
+description: 鉤蟲感染由 Ancylostoma caninum（犬）或 A. tubaeforme（貓）引起。成蟲以口囊附著小腸黏膜吸血，可引起嚴重缺鐵性貧血，幼犬尤其危險。經皮膚穿入、口腔攝入或經乳汁傳播。為重要人畜共通寄生蟲（皮膚幼蟲移行症）。
+
+aliases:
+  - { alias: 犬鉤蟲病, language: zh }
+  - { alias: 十二指腸蟲感染, language: zh }
+  - { alias: Ancylostoma Infection, language: en }
+  - { alias: Hookworm Disease, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: A. caninum 為犬最重要鉤蟲種。每條成蟲每日吸血 0.1 mL。幼犬急性感染可致命性貧血。溫暖潮濕地區盛行率高。經乳汁傳播為幼犬重要途徑。
+  - speciesCommon: cat
+    prevalence: common
+    notes: A. tubaeforme 為貓主要鉤蟲種。嚴重度通常較犬輕。幼貓仍可出現臨床貧血。戶外貓感染風險高。
+
+etiology:
+  categories:
+    - name: 傳播途徑
+      examples:
+        - 經皮膚穿入（L3 幼蟲穿透皮膚）
+        - 經口攝入感染性幼蟲
+        - 經乳汁傳播（犬，重要途徑）
+        - 攝入含幼蟲的轉運宿主
+    - name: 致病機制
+      examples:
+        - 成蟲口囊附著小腸黏膜吸血
+        - 抗凝血物質導致持續出血
+        - 每條 A. caninum 每日吸血約 0.1 mL
+        - 嚴重感染引起缺鐵性貧血與低蛋白血症
+
+clinicalSigns:
+  early:
+    - 幼犬突然蒼白無力
+    - 黑便 (melena)
+    - 被毛粗糙
+  progressive:
+    - 嚴重貧血（可致命，尤其新生幼犬）
+    - 慢性體重減輕
+    - 蛋白流失性腸病
+    - 水腫
+    - 皮膚幼蟲移行引起皮膚炎（趾間）
+
+diagnosis:
+  primaryTests:
+    - name: 糞便浮游法
+      notes: 偵測特徵性薄殼橢圓形蟲卵（內含桑椹期胚）。前專利期（2-3 週）幼犬可能已出現嚴重貧血但蟲卵尚未排出
+    - name: CBC
+      notes: 再生性貧血（網狀紅血球增多）、低蛋白血症。嚴重幼犬可為非再生性（鐵耗竭）
+  additional:
+    - 糞便潛血試驗
+    - 血清鐵蛋白
+    - 幼犬急性貧血需輸血評估
+
+treatment:
+  principles:
+    - 驅蟲藥物有效
+    - 嚴重貧血需緊急支持
+    - 定期預防性驅蟲
+    - 環境管理
+  general:
+    - Pyrantel pamoate 5-10 mg/kg PO（首選，安全）
+    - Fenbendazole 50 mg/kg PO SID × 3 天
+    - 嚴重貧血幼犬需輸血
+    - 鐵劑補充
+    - IV 輸液支持
+    - 每月廣效驅蟲預防
+    - 環境管理（清除糞便、避免潮濕沙地）
+
+prognosis: 適當驅蟲後預後良好。新生幼犬急性感染若未及時治療可能致命。慢性感染引起的營養不良驅蟲後可恢復。定期驅蟲可有效預防。
+
+pubmedQueries:
+  - query: '"hookworm" AND (veterinary OR canine OR feline) AND ("treatment" OR "control")'
+    frequency: monthly

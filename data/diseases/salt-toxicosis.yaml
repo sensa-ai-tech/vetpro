@@ -1,0 +1,79 @@
+slug: salt-toxicosis
+nameEn: Salt Toxicosis
+nameZh: 食鹽中毒
+bodySystem: toxicology
+description: 食鹽 (sodium chloride) 中毒因過量攝入鈉鹽或飲水不足引起高鈉血症，導致腦細胞脫水與中樞神經系統損傷。常見來源包括食用鹽水、除冰鹽、畫桌黏土與鹽燈。矯正高鈉血症需緩慢進行以避免腦水腫。
+
+aliases:
+  - { alias: 高鈉血症中毒, language: zh }
+  - { alias: Salt Poisoning, language: en }
+  - { alias: Sodium Chloride Toxicosis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬致死劑量約 2-3 g NaCl/kg。常見來源包括海水、除冰鹽、自製黏土 (playdough)、含鹽食物。矯正需緩慢（血鈉每小時下降 <0.5 mEq/L）。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓舔舐鹽燈為近年報告增加的來源。小體型使少量鈉即可引起毒性。
+
+etiology:
+  categories:
+    - name: 毒性機制
+      examples:
+        - 高鈉血症引起血漿滲透壓升高
+        - 腦細胞脫水
+        - 腦細胞產生 idiogenic osmoles 適應高滲環境
+        - 快速矯正高鈉導致相對低滲→腦水腫
+    - name: 常見來源
+      examples:
+        - 海水飲用
+        - 除冰鹽（rock salt）
+        - 自製黏土 (playdough)
+        - 鹽燈
+        - 含鹽食物
+
+clinicalSigns:
+  early:
+    - 嘔吐
+    - 嚴重口渴與多飲
+    - 腹瀉
+  progressive:
+    - 共濟失調
+    - 肌肉震顫
+    - 癲癇
+    - 昏迷
+    - 腦水腫（矯正過快時）
+
+diagnosis:
+  primaryTests:
+    - name: 血清鈉濃度
+      notes: 血清鈉 >170 mEq/L 確認高鈉血症。>180 mEq/L 為嚴重
+    - name: 血清滲透壓
+      notes: 計算或直接測定血清滲透壓
+  additional:
+    - CBC 與生化
+    - 尿液分析
+    - 神經學檢查
+    - MRI（腦水腫評估）
+
+treatment:
+  principles:
+    - 緩慢矯正高鈉血症（每小時 <0.5 mEq/L）
+    - 快速矯正引起致命性腦水腫
+    - 控制神經症狀
+    - 密切監測血鈉
+  general:
+    - "緩慢 IV 輸液矯正：5% dextrose in water 或 0.45% NaCl"
+    - 目標：血鈉每小時下降 <0.5 mEq/L（每 24 小時 <10-12 mEq/L）
+    - 每 2-4 小時監測血鈉
+    - 癲癇控制（diazepam、levetiracetam）
+    - 腦水腫管理（mannitol 0.5-1 g/kg IV）
+    - 少量多次飲水（非自由飲水）
+    - 住院 24-48 小時以上
+
+prognosis: 食鹽中毒預後取決於高鈉血症嚴重度與矯正速率。輕度高鈉（<170 mEq/L）緩慢矯正後預後佳。嚴重高鈉（>190 mEq/L）或已出現神經症狀者預後較差。矯正過快導致腦水腫為主要死因。
+
+pubmedQueries:
+  - query: '"salt toxicosis" OR "sodium chloride" AND (toxicosis OR poisoning) AND (veterinary OR canine OR feline)'
+    frequency: monthly

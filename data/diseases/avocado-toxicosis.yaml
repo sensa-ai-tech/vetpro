@@ -1,0 +1,69 @@
+slug: avocado-toxicosis
+nameEn: Avocado Toxicosis
+nameZh: 酪梨中毒
+bodySystem: toxicology
+description: 酪梨 (avocado) 含有 persin 毒素，對鳥類與反芻動物毒性最強。犬貓對 persin 相對耐受，主要風險為酪梨核引起的腸阻塞及高脂肪含量引起的胰臟炎。鳥類攝入可引起致命性心肌壞死。
+
+aliases:
+  - { alias: 牛油果中毒, language: zh }
+  - { alias: Avocado Poisoning, language: en }
+  - { alias: Persin Toxicosis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬對 persin 毒素相對耐受。主要風險為酪梨核 (pit) 引起食道或腸道阻塞，以及高脂肪引起胰臟炎。大量攝入果肉可能引起輕度消化道症狀。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓酪梨毒性報告極少。高脂肪可能引起消化道不適。鳥類為高風險物種（心肌壞死、肺水腫）。
+
+etiology:
+  categories:
+    - name: 毒性物質
+      examples:
+        - Persin（脂溶性毒素，存在於葉、果皮、果核與果肉）
+        - 葉片與果皮含量最高
+        - 犬貓對 persin 耐受性高
+    - name: 臨床風險
+      examples:
+        - 酪梨核引起異物阻塞
+        - 高脂肪含量引起胰臟炎
+        - 鳥類：心肌壞死與呼吸窘迫
+
+clinicalSigns:
+  early:
+    - 嘔吐
+    - 腹瀉
+    - 食慾下降
+  progressive:
+    - 胰臟炎症狀（嘔吐、腹痛、嗜睡）
+    - 異物阻塞（持續嘔吐、腹脹、不排便）
+    - 輕度心肌損傷（大量攝入，罕見）
+
+diagnosis:
+  primaryTests:
+    - name: 病史確認
+      notes: 確認攝入酪梨的部位（果肉、果皮、果核、葉片）與量
+    - name: 腹部影像學
+      notes: 腹部 X-ray 或超音波評估是否有酪梨核引起的異物阻塞
+  additional:
+    - 胰臟炎標記物（cPLI/fPLI）
+    - CBC 與生化
+
+treatment:
+  principles:
+    - 多數僅需觀察與支持療法
+    - 異物阻塞需外科介入
+    - 胰臟炎需積極治療
+  general:
+    - 輕度症狀觀察即可
+    - 嘔吐者止吐劑（maropitant）
+    - 疑似胰臟炎：NPO + IV 輸液 + 止吐 + 止痛
+    - 異物阻塞需內視鏡或手術取出
+    - 監測 24-48 小時
+
+prognosis: 犬貓酪梨中毒預後良好。果肉攝入多為自限性消化道症狀。酪梨核阻塞需手術但預後佳。鳥類預後差（致命性心肌壞死）。
+
+pubmedQueries:
+  - query: '"avocado" AND (toxicosis OR poisoning) AND (veterinary OR canine OR feline)'
+    frequency: monthly

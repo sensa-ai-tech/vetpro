@@ -1,0 +1,78 @@
+slug: liposarcoma-oncology
+nameEn: Liposarcoma Oncology
+nameZh: 脂肪肉瘤
+bodySystem: oncology
+description: 脂肪肉瘤 (liposarcoma) 為起源於脂肪細胞的惡性腫瘤，屬軟組織肉瘤之一。犬貓均可發生，局部侵襲性中等至強，遠端轉移率低至中等。好發於皮下、腹膜後腔及四肢。需與良性脂肪瘤 (lipoma) 鑑別。
+
+aliases:
+  - { alias: 惡性脂肪瘤, language: zh }
+  - { alias: Liposarcoma, language: en }
+  - { alias: Malignant Lipoma, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬軟組織肉瘤中相對少見，約佔 5%。好發中老年犬。需與良性脂肪瘤及浸潤性脂肪瘤鑑別。可發生於皮下、肌肉間或腹腔。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓脂肪肉瘤罕見。可發生於皮下或內臟。生物學行為可能較犬更具侵襲性。
+
+etiology:
+  categories:
+    - name: 腫瘤特性
+      examples:
+        - 起源於脂肪母細胞 (lipoblast) 的惡性增殖
+        - 可分為分化良好型、黏液型、多形性型及去分化型
+        - 分化良好型生物學行為最溫和
+    - name: 好發部位
+      examples:
+        - 皮下組織（四肢、軀幹）
+        - 腹膜後腔
+        - 肌肉間
+        - 腸繫膜
+
+clinicalSigns:
+  early:
+    - 緩慢生長的皮下或深層軟性至堅硬腫塊
+    - 常被誤認為良性脂肪瘤
+    - 通常無痛
+  progressive:
+    - 腫塊加速生長
+    - 與周圍組織界限不清、固定
+    - 腹腔型可引起腹脹、食慾下降
+    - 壓迫周圍器官引起相關症狀
+    - 體重減輕
+
+diagnosis:
+  primaryTests:
+    - name: 細針抽吸細胞學 (FNA)
+      notes: 脂肪瘤與分化良好型脂肪肉瘤細胞學上難以區分。異型脂肪母細胞、有絲分裂活躍可提示惡性
+    - name: 組織病理學
+      notes: 確定診斷必需。評估亞型與分級。免疫組織化學（S-100、vimentin 陽性）有助確認
+  imaging:
+    - name: CT 或 MRI
+      notes: 評估腫瘤範圍與侵犯程度，規劃手術切緣。區分脂肪密度成分
+  additional:
+    - 胸腔 X-ray（轉移篩檢）
+    - 腹部超音波
+    - CBC 與生化（術前評估）
+
+treatment:
+  principles:
+    - 廣泛手術切除為首選治療
+    - 切緣乾淨為預後關鍵
+    - 放射治療可作為輔助
+    - 化療對高分級病例可考慮
+  general:
+    - 廣泛手術切除（側緣至少 2-3 cm，含一個筋膜面深度）
+    - 腹腔型需完整摘除（可能需要大範圍手術）
+    - 切緣不乾淨或不可完整切除者加放射治療
+    - 高分級者考慮 doxorubicin 為主的化療
+    - 定期追蹤（每 2-3 個月）
+    - 疼痛管理
+
+prognosis: 分化良好型脂肪肉瘤手術完整切除後預後良好，局部復發率低。高分級或去分化型預後較差，局部復發及遠端轉移風險增高。腹腔型因手術困難度高，預後較皮下型差。
+
+pubmedQueries:
+  - query: '"liposarcoma" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
+    frequency: monthly

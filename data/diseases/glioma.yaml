@@ -1,0 +1,71 @@
+slug: glioma
+nameEn: Glioma
+nameZh: 膠質瘤
+bodySystem: neurology
+description: 膠質瘤為起源於腦實質膠質細胞的原發性腦腫瘤，包括星形膠質細胞瘤（astrocytoma）與寡突膠質細胞瘤（oligodendroglioma）。犬隻短頭種（brachycephalic breeds）好發。膠質瘤位於腦實質內，手術完整切除通常困難。放射治療為主要治療方式。
+
+aliases:
+  - { alias: 神經膠質瘤, language: zh }
+  - { alias: Brain Glioma, language: en }
+  - { alias: Astrocytoma, language: en }
+  - { alias: Oligodendroglioma, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻膠質瘤為常見原發性腦腫瘤。短頭種好發（Boxer、Boston Terrier、English Bulldog、French Bulldog）。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻膠質瘤少見。腦膜瘤與淋巴瘤在貓隻更常見。
+
+etiology:
+  categories:
+    - name: 腫瘤類型
+      examples:
+        - 星形膠質細胞瘤（astrocytoma）——低度至高度惡性
+        - 寡突膠質細胞瘤（oligodendroglioma）——犬隻較常見
+        - 膠質母細胞瘤（glioblastoma）——高度惡性
+    - name: 好發特徵
+      examples:
+        - 短頭種犬（Boxer 最好發）
+        - 中老年犬
+        - 多位於大腦半球
+
+clinicalSigns:
+  early:
+    - 癲癇發作（最常見首發症狀）
+    - 行為改變
+    - 嗜睡
+  progressive:
+    - 癲癇頻率增加
+    - 共濟失調
+    - 前旋（circling）
+    - 視力喪失
+    - 定向障礙
+    - 顱內壓升高症狀
+
+diagnosis:
+  primaryTests:
+    - name: 腦部 MRI
+      notes: T1 低訊號、T2 高訊號的腦實質內腫塊。造影劑增強程度不一（環狀增強提示高度惡性）。周圍水腫。位於腦實質內（與腦膜瘤鑑別）。
+    - name: 組織學
+      notes: 確診需組織學。立體定位活檢（stereotactic biopsy）或手術切除樣本。免疫組織化學分型（GFAP、Olig2）。
+
+treatment:
+  principles:
+    - 手術完整切除通常困難
+    - 放射治療為主要治療
+    - 抗癲癇管理
+  general:
+    - "放射治療：conventional fractionated RT（15-20 fractions）或 stereotactic radiosurgery"
+    - "抗癲癇：Levetiracetam 20-30 mg/kg PO q8h ± Phenobarbital"
+    - 手術減積（debulking）——若腫瘤位置可及
+    - "類固醇：Prednisolone 0.5-1 mg/kg PO q12-24h（減輕腦水腫）"
+    - "Temozolomide（化療，人醫常用，犬隻使用經驗增加中）"
+    - "Lomustine（CCNU）可穿透血腦屏障"
+
+prognosis: 未治療中位存活時間約 2-4 個月。僅類固醇與抗癲癇中位存活約 3-6 個月。放射治療後中位存活約 12-18 個月。手術切除 + 放射治療可能延長存活。高度惡性膠質瘤（glioblastoma）預後最差。低度惡性膠質瘤放射治療反應較好。
+
+pubmedQueries:
+  - query: '"glioma" AND (veterinary OR canine) AND ("radiation" OR "treatment" OR "MRI")'
+    frequency: monthly

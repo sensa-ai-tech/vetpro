@@ -1,0 +1,71 @@
+slug: acute-myeloid-leukemia
+nameEn: Acute Myeloid Leukemia
+nameZh: 急性骨髓性白血病
+bodySystem: hematology
+description: 急性骨髓性白血病（AML）為骨髓性前驅細胞（myeloblast）在骨髓中惡性增殖的高度惡性血液腫瘤。犬隻 AML 分為多種亞型（類似人類 FAB/WHO 分類），包括未分化型、顆粒球型、單核球型、紅血球白血病及巨核球白血病。對化療反應差，預後極為不良。
+
+aliases:
+  - { alias: AML, language: en }
+  - { alias: 急性骨髓白血病, language: zh }
+  - { alias: Acute Myelogenous Leukemia, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬隻 AML 少見且預後極差。中老年犬好發。亞型分類對治療選擇與預後有影響。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻 AML 可與 FeLV 感染相關。Erythroleukemia 在 FeLV 陽性貓有較高報告率。
+
+etiology:
+  categories:
+    - name: 分類（類似 FAB/WHO）
+      examples:
+        - AML-M0 未分化型
+        - AML-M1/M2 骨髓母細胞型
+        - AML-M4 骨髓單核球型
+        - AML-M5 單核球型
+        - AML-M6 紅血球白血病
+        - AML-M7 巨核球白血病
+    - name: 風險因素
+      examples:
+        - FeLV 感染（貓）
+        - 先前骨髓異常增生（MDS 轉化）
+        - 化療藥物暴露（繼發性）
+
+clinicalSigns:
+  early:
+    - 急性嗜睡
+    - 食慾下降
+    - 發燒
+  progressive:
+    - 嚴重貧血
+    - 出血傾向（瘀斑、點狀出血）
+    - 反覆感染
+    - 脾腫大與肝腫大
+    - 跛行或骨痛
+
+diagnosis:
+  primaryTests:
+    - name: 全血球計數（CBC）與血液抹片
+      notes: 周邊血液中出現 myeloblast 或其他不成熟骨髓性細胞。常伴嚴重貧血與血小板減少。白血球可升高、正常或降低。
+    - name: 骨髓穿刺
+      notes: blast 細胞 >20% 確認急性白血病。細胞化學染色（Sudan Black B、MPO、NSE）與流式細胞儀確認骨髓性來源。
+
+treatment:
+  principles:
+    - 化療反應率低
+    - 支持性治療為主
+    - 預後極差
+  general:
+    - "Cytarabine 100-200 mg/m² IV CRI × 24-48 h ± Doxorubicin"
+    - "LOPP 方案（部分報告嘗試）"
+    - 支持性治療：輸血、廣效抗生素
+    - 營養支持
+    - 多數飼主選擇安樂死
+
+prognosis: 預後極差。完全緩解率 <30%，中位存活時間通常僅數週。化療副作用（骨髓抑制）常加重原有的血球減少。AML-M6（紅血球白血病）預後特別差。多數病例確診後數週內因感染或出血死亡。
+
+pubmedQueries:
+  - query: '"acute myeloid leukemia" AND (veterinary OR canine OR feline) AND ("treatment" OR "classification")'
+    frequency: monthly

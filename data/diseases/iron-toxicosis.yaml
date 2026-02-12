@@ -1,0 +1,78 @@
+slug: iron-toxicosis
+nameEn: Iron Toxicosis
+nameZh: 鐵中毒
+bodySystem: toxicology
+description: 鐵中毒多因攝入含鐵補充劑、氧氣吸收劑（暖暖包內容物）或含 iron phosphate 蝸牛餌劑引起。過量鐵離子直接腐蝕消化道黏膜，吸收後引起肝臟壞死與心血管塌陷。犬為主要報告物種。
+
+aliases:
+  - { alias: 鐵劑中毒, language: zh }
+  - { alias: Iron Poisoning, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬致死劑量元素鐵約 100-200 mg/kg。暖暖包（含鐵粉）為常見意外來源。鐵補充劑與多種維他命也是來源。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓鐵中毒罕見，報告極少。
+
+etiology:
+  categories:
+    - name: 毒性機制
+      examples:
+        - 元素鐵直接腐蝕胃腸道黏膜
+        - 吸收後過量游離鐵催化自由基反應
+        - 肝臟為主要蓄積與損傷器官
+        - 心血管塌陷（代謝性酸中毒、凝血障礙）
+    - name: 來源
+      examples:
+        - 含鐵補充劑（ferrous sulfate、ferrous gluconate）
+        - 暖暖包（鐵粉）
+        - 含 iron phosphate 蝸牛餌劑（大量攝入）
+
+clinicalSigns:
+  early:
+    - 嘔吐（可能含血，攝入後 1-6 小時）
+    - 血便
+    - 腹痛
+  progressive:
+    - 假性恢復期（6-24 小時，症狀暫時改善）
+    - 嚴重肝壞死（24-48 小時後再惡化）
+    - 代謝性酸中毒
+    - 凝血障礙
+    - 休克
+    - 腸狹窄（存活者後遺症，2-6 週後）
+
+diagnosis:
+  primaryTests:
+    - name: 血清鐵濃度
+      notes: ">500 μg/dL 提示嚴重中毒。攝入後 4-6 小時測量最有意義"
+    - name: 腹部 X-ray
+      notes: 金屬性鐵製劑在 X-ray 上可見不透光影。評估殘留胃腸道內容物
+  additional:
+    - 肝功能（ALT 急遽升高）
+    - 凝血功能
+    - 血液氣體（代謝性酸中毒）
+    - 全鐵結合力 (TIBC)
+
+treatment:
+  principles:
+    - 去汙染（活性炭無效於鐵）
+    - Deferoxamine 為特效螯合劑
+    - 消化道保護
+    - 肝功能支持
+  general:
+    - 催吐（早期）或全腸灌洗 (WBI) 以 PEG 溶液
+    - 活性炭對鐵無效
+    - "Deferoxamine 15 mg/kg/hr IV CRI（特效鐵螯合劑）"
+    - IV 輸液支持
+    - 消化道保護（sucralfate、omeprazole）
+    - 肝保護（NAC、SAMe）
+    - 矯正酸鹼失衡
+    - 監測血清鐵至正常化
+
+prognosis: 鐵中毒預後視劑量與治療時效而定。輕度（<20 mg/kg 元素鐵）通常自限性。嚴重肝壞死與代謝性酸中毒者預後差。Deferoxamine 早期使用可改善預後。腸狹窄為長期併發症。
+
+pubmedQueries:
+  - query: '"iron toxicosis" AND (veterinary OR canine) AND ("treatment" OR "deferoxamine")'
+    frequency: monthly

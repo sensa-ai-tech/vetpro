@@ -1,0 +1,82 @@
+slug: myiasis
+nameEn: Myiasis
+nameZh: 蠅蛆病
+bodySystem: dermatology
+description: 蠅蛆病 (myiasis) 為蠅類幼蟲（蛆）侵入動物活體組織的感染。犬貓常見的為傷口蛆病 (wound myiasis)，由麗蠅 (Calliphoridae) 或綠蠅 (Lucilia spp.) 產卵於傷口或潮濕皮膚引起。好發於行動不便、外傷或被毛潮濕的動物。
+
+aliases:
+  - { alias: 蛆蟲感染, language: zh }
+  - { alias: 傷口蛆病, language: zh }
+  - { alias: Fly Strike, language: en }
+  - { alias: Wound Myiasis, language: en }
+  - { alias: Maggot Infestation, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬蠅蛆病好發於行動不便犬、開放性傷口、肛周汙染區域。戶外犬夏季風險高。嚴重者可引起組織壞死與敗血症。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓蠅蛆病類似犬。老年貓、外傷貓及失禁貓風險高。肛周與外傷部位為好發處。
+
+etiology:
+  categories:
+    - name: 病原蠅種
+      examples:
+        - Calliphora spp.（麗蠅）
+        - Lucilia spp.（綠蠅）
+        - Cochliomyia hominivorax（螺旋蛆蠅，熱帶地區）
+        - Wohlfahrtia spp.
+    - name: 風險因子
+      examples:
+        - 開放性傷口
+        - 糞便/尿液沾汙的被毛（肛周、腹側）
+        - 行動不便（癱瘓、骨折）
+        - 潮濕被毛
+        - 溫暖季節
+
+clinicalSigns:
+  early:
+    - 傷口或潮濕皮膚區域可見蠅卵或小蛆
+    - 局部紅腫與刺激
+    - 不適與煩躁
+  progressive:
+    - 大量蛆蟲侵入組織
+    - 組織壞死與潰瘍擴大
+    - 惡臭分泌物
+    - 疼痛
+    - 系統性毒血症（發燒、休克）
+    - 敗血症
+
+diagnosis:
+  primaryTests:
+    - name: 臨床檢查
+      notes: 直接觀察到傷口或皮膚表面的蠅幼蟲（蛆）即可確診。評估侵犯範圍與深度
+    - name: 全身評估
+      notes: 評估潛在因素（傷口原因、行動能力、營養狀態）。評估是否有系統性感染徵象
+  additional:
+    - CBC 與生化（感染嚴重度評估）
+    - 傷口培養（繼發細菌感染）
+
+treatment:
+  principles:
+    - 完整移除所有蛆蟲
+    - 傷口清創與護理
+    - 處理潛在因素
+    - 預防再發
+  general:
+    - 剃毛暴露受影響區域
+    - 手動移除所有可見蛆蟲
+    - 沖洗傷口（溫生理食鹽水或稀釋 chlorhexidine）
+    - 傷口清創（移除壞死組織）
+    - 全身性抗生素（繼發感染）
+    - 疼痛管理
+    - IV 輸液（毒血症/休克時）
+    - Ivermectin 0.2 mg/kg SC 可殺殘留幼蟲
+    - 預防：保持被毛乾燥清潔、傷口覆蓋、驅蠅措施
+
+prognosis: 輕度蠅蛆病（表淺、早期發現）清創後預後良好。嚴重廣泛組織壞死或已發展敗血症者預後較差。行動不便動物需持續預防照護以避免復發。
+
+pubmedQueries:
+  - query: '"myiasis" AND (veterinary OR canine OR feline) AND ("treatment" OR "wound management")'
+    frequency: monthly

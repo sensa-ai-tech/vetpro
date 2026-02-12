@@ -1,0 +1,71 @@
+slug: blepharitis
+nameEn: Blepharitis
+nameZh: 眼瞼炎
+bodySystem: ophthalmology
+description: 眼瞼皮膚與腺體的發炎疾病，可為感染性、免疫媒介性或寄生蟲性。犬以細菌性與免疫媒介性最常見，可能為全身性皮膚病的局部表現。慢性眼瞼炎可影響淚膜穩定性與角膜健康。
+
+aliases:
+  - { alias: Eyelid Inflammation, language: en }
+  - { alias: Meibomitis, language: en }
+  - { alias: 眼瞼發炎, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬常見。常與異位性皮膚炎、蠕形蟎 (Demodex)、免疫媒介性疾病相關。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓較少見。可與 FHV-1、過敏或嗜酸性肉芽腫相關。
+
+etiology:
+  categories:
+    - name: 感染性
+      examples:
+        - 細菌性 (Staphylococcus)
+        - 蠕形蟎 (Demodex)
+        - 皮黴菌感染
+    - name: 免疫媒介性
+      examples:
+        - 天疱瘡 (pemphigus)
+        - 盤狀紅斑狼瘡
+        - 幼犬蜂窩組織炎 (juvenile cellulitis)
+    - name: 過敏性
+      examples:
+        - 異位性皮膚炎
+        - 接觸性過敏
+
+clinicalSigns:
+  early:
+    - 眼瞼紅腫
+    - 眼瞼邊緣痂皮
+    - 搔癢 (搓揉眼部)
+  progressive:
+    - 脫毛 (眼周)
+    - 膿皰或潰瘍
+    - 眼瞼增厚/瘢痕
+    - 繼發性結膜炎
+
+diagnosis:
+  primaryTests:
+    - name: 皮膚刮片
+      notes: 排除蠕形蟎 (Demodex)
+    - name: 細胞學 / 培養
+      notes: 膿皰或潰瘍處取樣做細菌培養
+    - name: 皮膚活檢
+      notes: 免疫媒介性疾病需組織病理確診
+
+treatment:
+  principles:
+    - 找出並治療根本原因
+    - 局部清潔 + 抗感染
+  general:
+    - 溫熱敷清潔眼瞼 (每日 2-3 次)
+    - 細菌性：局部或全身性抗生素
+    - 蠕形蟎：Isoxazoline 類驅蟲藥
+    - 免疫媒介性：免疫抑制劑
+
+prognosis: 細菌性眼瞼炎治療後預後良好。蠕形蟎相關者驅蟲後預後佳。免疫媒介性需長期管理。慢性眼瞼炎可能需持續局部護理。
+
+pubmedQueries:
+  - query: '"blepharitis" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis")'
+    frequency: monthly

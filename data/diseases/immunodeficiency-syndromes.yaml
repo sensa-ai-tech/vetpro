@@ -1,0 +1,82 @@
+slug: immunodeficiency-syndromes
+nameEn: Immunodeficiency Syndromes
+nameZh: 免疫缺陷症候群
+bodySystem: immunology
+description: 免疫缺陷症候群為先天或後天免疫系統功能不全的統稱。犬貓可因遺傳缺陷（原發性免疫缺陷）或感染、藥物、營養等因素（繼發性免疫缺陷）導致免疫功能低下。表現為反覆或異常嚴重的感染。幼齡動物反覆嚴重感染應懷疑此診斷。
+
+aliases:
+  - { alias: 免疫不全症候群, language: zh }
+  - { alias: Primary Immunodeficiency, language: en }
+  - { alias: Immunodeficiency Disorders, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬原發性免疫缺陷包括 IgA 缺乏（German Shepherd、Shar-Pei）、嗜中性球功能異常（Irish Setter）、SCID（Basset Hound）。繼發性免疫缺陷較常見（parvovirus 感染後、化療後）。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓 FeLV 與 FIV 引起的繼發性免疫缺陷最為重要。FIV 引起 CD4+ T 細胞減少，類似人類 HIV。先天性免疫缺陷在貓極罕見。
+
+etiology:
+  categories:
+    - name: 原發性（先天性）免疫缺陷
+      examples:
+        - 體液免疫缺陷（IgA 缺乏、IgG 亞型缺陷）
+        - 細胞免疫缺陷（T 細胞功能障礙）
+        - 複合型免疫缺陷 (SCID)
+        - 吞噬細胞功能異常（嗜中性球殺菌缺陷）
+        - 補體缺陷
+    - name: 繼發性（後天性）免疫缺陷
+      examples:
+        - 病毒感染（FeLV、FIV、canine distemper、parvovirus）
+        - 免疫抑制藥物（類固醇、化療、cyclosporine）
+        - 營養不良
+        - 壓力
+        - 老齡
+        - 腫瘤（淋巴瘤）
+
+clinicalSigns:
+  early:
+    - 反覆或慢性感染
+    - 對常規治療反應不良
+    - 生長遲緩（幼齡動物）
+  progressive:
+    - 多重病原感染
+    - 機會性感染（正常免疫動物不易罹患的病原）
+    - 腹瀉（慢性）
+    - 皮膚感染反覆發作
+    - 呼吸道感染反覆
+
+diagnosis:
+  primaryTests:
+    - name: CBC + 白血球分類
+      notes: 淋巴球減少（T 細胞缺陷）、嗜中性球減少或功能異常
+    - name: 免疫球蛋白定量
+      notes: IgG、IgM、IgA 血清濃度。低球蛋白血症提示體液免疫缺陷
+  additional:
+    - FeLV/FIV 檢測（貓）
+    - 淋巴球亞群分析（CD4/CD8 flow cytometry）
+    - 嗜中性球功能試驗（氧化爆發試驗）
+    - 補體活性（CH50）
+    - 骨髓檢查
+    - 基因檢測（已知突變品種）
+
+treatment:
+  principles:
+    - 積極治療感染
+    - 免疫調節（如可能）
+    - 預防暴露
+    - 遺傳性缺陷無根治方法
+  general:
+    - 感染期：廣效抗生素（長療程）
+    - FIV 陽性貓：室內飼養、壓力最小化、定期健檢
+    - 免疫球蛋白缺乏：血漿輸注（暫時性補充）
+    - 繼發性：治療潛在原因（停止免疫抑制藥物、營養改善）
+    - 疫苗接種策略調整（避免活疫苗）
+    - 遺傳諮詢（勿繁殖）
+
+prognosis: 免疫缺陷症候群預後取決於類型與嚴重度。SCID 幼犬多於數月齡死亡。IgA 缺乏犬多數可良好管理。FIV 陽性貓在良好照護下可維持數年品質生活。繼發性免疫缺陷在去除病因後多數可恢復。
+
+pubmedQueries:
+  - query: '"immunodeficiency" AND (veterinary OR canine OR feline) AND ("primary" OR "treatment" OR "diagnosis")'
+    frequency: monthly

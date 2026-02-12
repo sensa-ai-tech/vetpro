@@ -1,0 +1,81 @@
+slug: hemoabdomen
+nameEn: Hemoabdomen
+nameZh: 腹腔出血
+bodySystem: emergency
+description: 腹腔出血 (hemoabdomen/hemoperitoneum) 為血液蓄積於腹腔的緊急狀態。犬最常見原因為脾臟 hemangiosarcoma 破裂（非外傷性）與外傷（外傷性）。AFAST 超音波為快速診斷工具。腹腔穿刺液 PCV >25% 確認血腹。需快速鑑別是否為可手術控制的出血。
+
+aliases:
+  - { alias: 血腹, language: zh }
+  - { alias: 腹腔積血, language: zh }
+  - { alias: Hemoperitoneum, language: en }
+  - { alias: Abdominal Hemorrhage, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬非外傷性 hemoabdomen 最常見原因為脾臟 hemangiosarcoma 破裂（約 2/3 病例）。其他：肝臟腫瘤破裂、凝血障礙。外傷性：車禍脾臟/肝臟撕裂。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓 hemoabdomen 較犬少見。外傷、肝臟腫瘤與凝血障礙為主要原因。
+
+etiology:
+  categories:
+    - name: 非外傷性
+      examples:
+        - 脾臟腫瘤破裂（hemangiosarcoma、血腫）
+        - 肝臟腫瘤破裂
+        - 凝血障礙（抗凝血劑中毒、DIC）
+        - 脾臟扭轉
+    - name: 外傷性
+      examples:
+        - 車禍
+        - 咬傷
+        - 高處墜落
+        - 腹部鈍性創傷
+
+clinicalSigns:
+  early:
+    - 急性虛弱、倒下
+    - 黏膜蒼白
+    - 心搏過速
+    - 腹部膨脹
+  progressive:
+    - 出血性休克
+    - 腹部波動感
+    - 低血壓
+    - 意識改變
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: AFAST 超音波
+      notes: 腹腔游離液體。快速且高敏感度
+    - name: 腹腔穿刺
+      notes: 不凝固血液（腹腔血液 fibrinolysis 後不凝固）。PCV >25% 確認 hemoabdomen
+  additional:
+    - PCV/TP 連續追蹤（PCV 下降趨勢）
+    - 腹部超音波（找出出血源 — 脾臟腫塊？）
+    - 凝血功能（排除凝血障礙）
+    - 血型/交叉配血
+    - 腹部 X-ray
+
+treatment:
+  principles:
+    - 穩定血循環
+    - 找出出血源
+    - 決定手術時機
+    - 自體輸血可考慮
+  general:
+    - IV 輸液復甦
+    - 輸血（pRBC — PCV <25%）
+    - 自體腹腔血回輸（無汙染時可用，腫瘤者有爭議）
+    - 腹帶包紮（暫時壓迫減緩出血）
+    - 手術：脾臟切除（腫瘤/破裂）、肝臟裂傷修補
+    - 凝血障礙：vitamin K1、新鮮冷凍血漿
+    - 術後送組織病理（確認脾臟腫瘤類型）
+
+prognosis: 外傷性 hemoabdomen 手術控制出血後預後佳。脾臟 hemangiosarcoma 短期可穩定但長期預後極差（中位存活 1-3 個月）。脾臟血腫（良性）切除後預後佳。凝血障礙矯正後多數可恢復。
+
+pubmedQueries:
+  - query: '"hemoabdomen" OR "hemoperitoneum" AND (veterinary OR canine OR feline) AND ("treatment" OR "spleen" OR "emergency")'
+    frequency: monthly

@@ -1,0 +1,62 @@
+slug: osteomyelitis
+nameEn: Osteomyelitis
+nameZh: 骨髓炎
+bodySystem: orthopedic
+description: 骨骼的感染性發炎疾病，可累及骨髓、骨皮質與骨膜。常因開放性骨折、骨科手術術後感染或血行性播散引起。Staphylococcus 為最常見致病菌。
+
+aliases:
+  - { alias: "Bone Infection", language: en }
+  - { alias: "骨感染", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬偶見。開放性骨折與骨科手術後風險高。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓偶見。咬傷感染可致骨髓炎。
+
+etiology:
+  categories:
+    - name: 感染性
+      examples:
+        - 術後感染（骨板、髓內釘）
+        - 開放性骨折
+        - 血行性播散
+        - 咬傷穿透
+
+clinicalSigns:
+  early:
+    - 術後持續疼痛
+    - 局部腫脹紅熱
+    - 發燒
+  progressive:
+    - 竇道形成排膿
+    - 骨折不癒合
+    - 植入物鬆脫
+    - 慢性反覆感染
+
+diagnosis:
+  primaryTests:
+    - name: X 光
+      notes: 骨質溶解、骨膜反應、植入物周圍透亮區
+    - name: 細菌培養（骨組織）
+      notes: 深層取材做好氧 + 厭氧培養。Staphylococcus 最常見
+
+treatment:
+  principles:
+    - 長期抗生素
+    - 移除感染植入物
+    - 骨折需穩定
+  general:
+    - 骨骼組織培養導向的抗生素（4-8 週）
+    - 感染植入物移除
+    - 清創
+    - 穩定骨折（外固定架）
+    - 嚴重慢性：截肢
+
+prognosis: 急性適當治療預後中等。慢性骨髓炎治療困難，復發率高。移除感染植入物可提高成功率。
+
+pubmedQueries:
+  - query: '"osteomyelitis" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis")'
+    frequency: monthly

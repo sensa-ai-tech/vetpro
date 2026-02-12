@@ -1,0 +1,74 @@
+slug: acute-pain-management
+nameEn: Acute Pain Management
+nameZh: 急性疼痛管理
+bodySystem: emergency
+description: 急性疼痛管理為獸醫急診與圍術期照護的核心環節，涵蓋疼痛評估量表應用、多模式鎮痛策略及各類止痛藥物的合理使用。未經控制的疼痛不僅影響動物福利，也延緩傷口癒合並增加術後併發症風險。
+
+aliases:
+  - { alias: 急性止痛, language: zh }
+  - { alias: 鎮痛治療, language: zh }
+  - { alias: Acute Analgesia, language: en }
+  - { alias: Pain Control, language: en }
+  - { alias: Multimodal Analgesia, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬疼痛評估可使用 Glasgow Composite Pain Scale 或 Colorado State University Pain Scale。犬對 NSAIDs 耐受性良好。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓疼痛表現隱晦，需使用貓專用量表（Feline Grimace Scale）。貓對 NSAIDs 代謝能力差，需謹慎用藥。
+
+etiology:
+  categories:
+    - name: 疼痛來源
+      examples:
+        - 外傷（骨折、撕裂傷、燒傷）
+        - 術後疼痛（軟組織手術、骨科手術）
+        - 內臟痛（腹膜炎、胰臟炎、尿道阻塞）
+        - 急性椎間盤突出
+    - name: 疼痛機制
+      examples:
+        - 傷害性疼痛（Nociceptive，組織損傷直接刺激）
+        - 內臟痛（Visceral，腸管膨脹或缺血）
+        - 神經病理性疼痛（Neuropathic，神經損傷）
+
+clinicalSigns:
+  early:
+    - 心搏過速、呼吸急促
+    - 瞳孔散大
+    - 觸診迴避或攻擊
+    - 姿勢異常（弓背、保護性姿勢）
+  progressive:
+    - 持續發聲（呻吟、哀嚎）
+    - 完全不願移動
+    - 食慾廢絕
+    - 自殘行為（舔咬患處）
+    - 攻擊性增加
+
+diagnosis:
+  primaryTests:
+    - name: 疼痛評估量表
+      notes: 犬：Glasgow Composite Pain Scale (GCPS) 或 Colorado State Pain Scale。貓：Feline Grimace Scale (FGS)。定期重複評估以追蹤止痛效果。
+    - name: 生理參數監測
+      notes: 心率、血壓、呼吸率變化可輔助疼痛評估，但不應作為唯一依據（壓力亦可導致類似變化）。
+
+treatment:
+  principles:
+    - 預防性鎮痛優於事後止痛（pre-emptive analgesia）
+    - 多模式鎮痛策略（combining drugs with different mechanisms）
+    - 根據疼痛程度調整止痛方案
+    - 定期再評估並調整劑量
+  general:
+    - 輕度疼痛：NSAIDs 單獨使用（犬 Meloxicam 0.2 mg/kg 首劑，續 0.1 mg/kg SID）
+    - 中度疼痛：NSAIDs + Tramadol 或低劑量鴉片類藥物
+    - 重度疼痛：純鴉片類（Methadone、Fentanyl CRI）+ NSAIDs + 局部麻醉
+    - 局部/區域麻醉技術（神經阻斷、硬膜外麻醉）
+    - 持續速率輸注（CRI）：Fentanyl、Ketamine、Lidocaine（犬 MLK 配方）
+    - 貓 NSAIDs 限短期使用（Meloxicam 0.05 mg/kg SID，不超過 3-5 天）
+
+prognosis: 適當的急性疼痛管理可顯著改善動物舒適度、縮短住院時間並促進康復。多模式鎮痛較單一藥物效果更佳且副作用更少。未經控制的疼痛可導致中樞敏感化，增加慢性疼痛發生風險。
+
+pubmedQueries:
+  - query: '"Acute Pain Management" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

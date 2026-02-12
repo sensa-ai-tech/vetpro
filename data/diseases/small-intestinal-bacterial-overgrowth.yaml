@@ -1,0 +1,71 @@
+slug: small-intestinal-bacterial-overgrowth
+nameEn: Small Intestinal Bacterial Overgrowth
+nameZh: 小腸細菌過度增生
+bodySystem: gastrointestinal
+description: 小腸細菌過度增生（SIBO）為小腸內細菌數量異常增加，導致黏膜損傷、營養吸收不良與慢性腹瀉。現多稱為抗生素反應性腸病（antibiotic-responsive enteropathy, ARE）或腸道菌群失調（dysbiosis）。German Shepherd 為好發品種。常繼發於胰外分泌功能不全或腸道運動障礙。
+
+aliases:
+  - { alias: SIBO, language: en }
+  - { alias: Antibiotic-Responsive Enteropathy, language: en }
+  - { alias: ARE, language: en }
+  - { alias: 小腸菌叢過度增殖, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻 SIBO/ARE 好發於 German Shepherd。常繼發於 EPI、腸道運動障礙或免疫缺陷。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻較少報告。
+
+etiology:
+  categories:
+    - name: 繼發性（較常見）
+      examples:
+        - 胰外分泌功能不全（EPI）
+        - 腸道運動障礙
+        - 部分腸阻塞
+        - 免疫缺陷（IgA 缺乏）
+    - name: 原發性
+      examples:
+        - German Shepherd 品種傾向
+        - 腸道屏障功能異常
+        - 腸道菌群失調（dysbiosis）
+
+clinicalSigns:
+  early:
+    - 慢性小腸性腹瀉（水樣至軟便）
+    - 體重減輕
+    - 腸鳴音增加
+  progressive:
+    - 嚴重慢性腹瀉
+    - 體重持續下降
+    - 食慾可正常或增加
+    - B12 缺乏（細菌消耗）
+    - 脂肪便（steatorrhea）
+
+diagnosis:
+  primaryTests:
+    - name: 治療性診斷（抗生素試驗）
+      notes: 對抗生素（Tylosin 或 Metronidazole）的反應為最實用的診斷方法。2-4 週抗生素療程後症狀改善支持 ARE 診斷。
+    - name: 血清 Cobalamin (B12) 與 Folate
+      notes: 典型模式：B12 降低（細菌消耗）+ Folate 升高（細菌合成）。但此模式非高度特異。需排除 EPI（TLI 測定）。
+
+treatment:
+  principles:
+    - 抗生素治療為核心
+    - 治療基礎病因（EPI 等）
+    - 飲食管理
+  general:
+    - "Tylosin 25 mg/kg PO q12h × 4-6 週（首選）"
+    - "Metronidazole 10-15 mg/kg PO q12h × 4-6 週"
+    - B12 補充（Cyanocobalamin 250-1000 μg SC q1w × 6 週後每月）
+    - 高消化率低脂飲食
+    - 益生菌輔助（效果不確定）
+    - 治療 EPI（若為基礎病因）
+
+prognosis: 多數 ARE 對抗生素反應良好，但復發率高（停藥後約 50% 復發）。部分病例需要長期低劑量抗生素維持。German Shepherd 特發性 ARE 可能需要終生管理。基礎病因（EPI）的治療可減少復發。
+
+pubmedQueries:
+  - query: '"small intestinal bacterial overgrowth" OR "antibiotic-responsive enteropathy" AND (veterinary OR canine) AND ("treatment" OR "tylosin")'
+    frequency: monthly

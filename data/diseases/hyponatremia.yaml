@@ -1,0 +1,71 @@
+slug: hyponatremia
+nameEn: Hyponatremia
+nameZh: 低鈉血症
+bodySystem: metabolic
+description: 血清鈉離子濃度低於正常值（犬 <140 mEq/L，貓 <149 mEq/L）的電解質異常。低鈉血症可導致細胞水腫，尤其腦水腫最為危險。糾正速度過快可能引發滲透性脫髓鞘症候群，需謹慎處理。
+
+aliases:
+  - { alias: 低血鈉, language: zh }
+  - { alias: 血鈉過低, language: zh }
+  - { alias: Low Sodium, language: en }
+  - { alias: Hyponatraemia, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬低鈉血症常見於 Addison 病、充血性心衰、嚴重嘔吐腹瀉或過度飲水（psychogenic polydipsia）。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓低鈉血症較犬少見，可見於慢性腎病、肝硬化或不當靜脈輸液。
+
+etiology:
+  categories:
+    - name: 容積耗損性（最常見）
+      examples:
+        - 嘔吐/腹瀉（消化道大量流失）
+        - Addison 病（腎上腺皮質功能低下→醛固酮不足）
+        - 利尿劑過量
+    - name: 稀釋性
+      examples:
+        - 充血性心衰（水分滯留）
+        - 肝硬化/腹水
+        - 抗利尿激素分泌不當症候群（SIADH）
+        - 心因性多飲
+
+clinicalSigns:
+  early:
+    - 食慾下降
+    - 嗜睡
+    - 噁心嘔吐
+    - 肌肉無力
+  progressive:
+    - 意識混亂/定向力障礙
+    - 癲癇發作（嚴重低鈉 <120 mEq/L）
+    - 昏迷
+    - 腦幹疝脫（極嚴重時）
+
+diagnosis:
+  primaryTests:
+    - name: 血清電解質
+      notes: 血清鈉 <140 mEq/L（犬）或 <149 mEq/L（貓）。需同時評估鉀、氯離子及血漿滲透壓。
+    - name: 尿液分析
+      notes: 尿鈉濃度與尿比重有助鑑別腎性 vs 腎外流失。低尿鈉提示腎外流失或有效循環容積不足。
+
+treatment:
+  principles:
+    - 鑑別並治療潛在病因為首要
+    - 慢性低鈉血症糾正速度不超過 8-10 mEq/L/24hr（避免滲透性脫髓鞘）
+    - 急性有症狀低鈉可較快速糾正（但仍不超過 12 mEq/L/24hr）
+    - 頻繁監測血清鈉濃度
+  general:
+    - 輕度：限水 + 治療基礎病因
+    - 中重度容積耗損：0.9% NaCl 靜脈輸液
+    - 嚴重有症狀（癲癇）：3% 高張食鹽水（1-2 mL/kg/hr），目標先升 4-6 mEq/L
+    - Addison 病：類固醇 + 礦物皮質酮替代
+    - 每 2-4 小時追蹤血清鈉直至穩定
+
+prognosis: 輕度低鈉血症經病因治療後預後良好。急性嚴重低鈉（<120 mEq/L）合併神經症狀需緊急處理，預後謹慎。糾正速度過快導致滲透性脫髓鞘症候群預後極差。
+
+pubmedQueries:
+  - query: '"Hyponatremia" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

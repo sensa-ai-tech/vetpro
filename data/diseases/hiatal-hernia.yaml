@@ -1,0 +1,67 @@
+slug: hiatal-hernia
+nameEn: Hiatal Hernia
+nameZh: 裂孔疝
+bodySystem: gastrointestinal
+description: 裂孔疝為腹腔器官（通常為胃賁門部或胃底）經橫膈食道裂孔突入胸腔的疾病。可為先天性（食道裂孔過大）或後天性（慢性嘔吐、呼吸困難增加腹壓）。分為滑動型（sliding，最常見）與旁食道型（paraesophageal）。導致胃食道反流與食道炎。
+
+aliases:
+  - { alias: 食道裂孔疝, language: zh }
+  - { alias: Diaphragmatic Hiatal Hernia, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻裂孔疝可為先天性或後天性。Chinese Shar Pei 與 English Bulldog 品種傾向。短頭犬因慢性呼吸困難增加腹壓而好發。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻裂孔疝罕見。可為先天性或繼發於呼吸道疾病。
+
+etiology:
+  categories:
+    - name: 先天性
+      examples:
+        - 食道裂孔先天性過大
+        - 膈食道韌帶鬆弛
+        - Chinese Shar Pei 品種傾向
+    - name: 後天性
+      examples:
+        - 短頭犬呼吸道症候群（增加腹壓）
+        - 慢性嘔吐
+        - 腹部創傷
+        - 上呼吸道阻塞
+
+clinicalSigns:
+  early:
+    - 反芻（regurgitation）
+    - 嘔吐
+    - 流涎
+  progressive:
+    - 反覆反芻
+    - 吞嚥困難
+    - 體重減輕
+    - 吸入性肺炎（反覆發作）
+    - 呼吸困難（大型疝入時）
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔 X 光
+      notes: 尾側胸腔背側可見軟組織密度或氣體密度結構（疝入的胃）。滑動型可能為間歇性，X 光正常不能排除。透視檢查（fluoroscopy）可動態觀察。
+    - name: 吞嚥造影
+      notes: 鋇劑吞嚥透視可顯示胃賁門部向胸腔滑動。評估胃食道反流程度。確認裂孔疝類型。
+
+treatment:
+  principles:
+    - 輕度病例可先內科治療
+    - 反覆症狀或吸入性肺炎需手術
+    - 合併短頭犬呼吸道症候群需同時處理
+  general:
+    - "內科治療：Omeprazole 1 mg/kg PO q12h + Cisapride 0.5 mg/kg PO q8h + Sucralfate"
+    - 少量多餐、進食後保持直立姿勢
+    - 手術：裂孔修補（hiatal plication）+ 胃固定術（gastropexy）+ 食道固定術
+    - 同時矯正短頭犬呼吸道異常
+
+prognosis: 輕度裂孔疝內科治療可控制症狀。手術修補後多數病例症狀顯著改善。復發率約 10-20%。反覆吸入性肺炎為主要併發症，影響預後。合併短頭犬呼吸道症候群者需同時矯正才能獲得良好效果。
+
+pubmedQueries:
+  - query: '"hiatal hernia" AND (veterinary OR canine OR feline) AND ("surgery" OR "treatment")'
+    frequency: monthly

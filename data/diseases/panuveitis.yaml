@@ -1,0 +1,75 @@
+slug: panuveitis
+nameEn: Panuveitis
+nameZh: 全葡萄膜炎
+bodySystem: ophthalmology
+description: 虹膜、睫狀體與脈絡膜同時發炎的嚴重眼內炎症。代表前後葡萄膜均受累，通常與嚴重全身性疾病相關。若不及時治療可導致續發性青光眼、白內障、視網膜剝離與永久失明。
+
+aliases:
+  - { alias: Diffuse Uveitis, language: en }
+  - { alias: Endophthalmitis, language: en }
+  - { alias: 泛葡萄膜炎, language: zh }
+  - { alias: 全眼葡萄膜炎, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬常見原因為全身性黴菌感染、蜱傳疾病、免疫媒介性。VKH-like 症候群 (Akita、Samoyed) 為典型犬全葡萄膜炎。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓常見原因為 FIP (經典表現)、FeLV 相關淋巴瘤、Toxoplasmosis。
+
+etiology:
+  categories:
+    - name: 感染性
+      examples:
+        - 全身性黴菌感染
+        - FIP (貓)
+        - 蜱傳疾病
+        - 敗血症
+    - name: 免疫媒介性
+      examples:
+        - 葡萄膜皮膚症候群 (VKH-like)
+        - 晶體蛋白誘發性
+    - name: 腫瘤性
+      examples:
+        - 眼內淋巴瘤
+        - 組織球性肉瘤
+
+clinicalSigns:
+  early:
+    - 眼睛疼痛 (blepharospasm)
+    - 結膜充血
+    - 前房混濁 (aqueous flare)
+  progressive:
+    - 瞳孔縮小 (miosis)
+    - 角膜水腫
+    - 前房積膿 (hypopyon) 或積血 (hyphema)
+    - 視力喪失
+    - 眼壓改變 (初期低後期可能升高)
+
+diagnosis:
+  primaryTests:
+    - name: 完整眼科檢查
+      notes: 前房反應 (flare、cells)、虹膜充血、前後粘連。眼底脈絡膜炎灶
+    - name: 眼壓測量
+      notes: 初期可能低眼壓；慢性可發展為續發性青光眼
+    - name: 全身性疾病篩檢
+      notes: CBC/生化、感染性疾病篩檢 (黴菌、蜱傳、FIP/FeLV/FIV)、胸腹腔影像
+
+treatment:
+  principles:
+    - 積極治療根本原因
+    - 強力抗炎治療
+    - 預防續發性併發症
+  general:
+    - 全身性疾病治療 (抗感染或免疫抑制)
+    - 局部類固醇眼藥水 (Prednisolone 1%) Q4-6H
+    - Atropine 散瞳防止後粘連
+    - 全身性 NSAIDs 或類固醇
+    - 密集追蹤眼壓
+
+prognosis: 預後謹慎至不良。FIP 相關者預後極差。全身性黴菌感染積極治療後部分可保留視力。VKH-like 症候群需終生免疫抑制。早期積極治療是保留視力的關鍵。
+
+pubmedQueries:
+  - query: '"panuveitis" AND (veterinary OR canine OR feline) AND ("treatment" OR "etiology")'
+    frequency: monthly

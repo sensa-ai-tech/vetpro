@@ -1,0 +1,70 @@
+slug: vitamin-a-deficiency
+nameEn: Vitamin A Deficiency
+nameZh: 維生素 A 缺乏症
+bodySystem: metabolic
+description: 維生素 A（視黃醇）攝入不足或吸收障礙導致的營養缺乏症。維生素 A 對視覺功能、上皮細胞分化、免疫功能及骨骼發育至關重要，缺乏可導致夜盲症、皮膚角化異常及免疫功能低下。
+
+aliases:
+  - { alias: 維生素甲缺乏, language: zh }
+  - { alias: 視黃醇缺乏, language: zh }
+  - { alias: Retinol Deficiency, language: en }
+  - { alias: Hypovitaminosis A, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬餵食商業飼料時極少缺乏。可見於長期餵食自製飲食且缺乏內臟或蔬菜的犬。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓為絕對肉食動物，無法將胡蘿蔔素轉化為維生素 A，需從動物性食物直接獲取。全素飲食餵養貓極易缺乏。
+
+etiology:
+  categories:
+    - name: 攝入不足
+      examples:
+        - 不均衡的自製飲食
+        - 缺乏動物性內臟（肝臟為最佳維生素 A 來源）
+        - 貓餵食全素或植物性飲食
+    - name: 吸收障礙
+      examples:
+        - 慢性腸道疾病（脂溶性維生素吸收障礙）
+        - 胰外分泌功能不足（EPI）
+        - 膽道阻塞
+
+clinicalSigns:
+  early:
+    - 皮膚乾燥粗糙
+    - 毛髮品質下降
+    - 夜間視力下降
+  progressive:
+    - 角膜乾燥（xerophthalmia）
+    - 皮膚鱗屑性角化異常
+    - 免疫力下降（反覆感染）
+    - 生長遲緩（幼犬）
+    - 生殖功能障礙
+
+diagnosis:
+  primaryTests:
+    - name: 血清維生素 A 濃度
+      notes: 血清視黃醇低於正常參考值。但血清值在肝臟儲存嚴重耗盡前可能維持正常。
+    - name: 飲食病史
+      notes: 詳細詢問飲食內容。自製飲食缺乏動物性內臟或補充劑為主要線索。
+
+treatment:
+  principles:
+    - 補充維生素 A
+    - 矯正飲食缺陷
+    - 避免過量補充（維生素 A 過量亦有毒性）
+    - 治療繼發感染
+  general:
+    - 口服維生素 A 補充（依物種建議劑量）
+    - 犬：2000-4000 IU/kg/day 短期補充
+    - 轉換至營養均衡的商業飼料
+    - 自製飲食需添加適量肝臟或維生素 A 補充劑
+    - 定期複查血清維生素 A 濃度
+
+prognosis: 早期發現並矯正飲食後預後良好，多數症狀可逆。角膜嚴重損傷可能留下永久性視力缺損。轉換至營養均衡飲食後數週至數月可見改善。
+
+pubmedQueries:
+  - query: '"Vitamin A Deficiency" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

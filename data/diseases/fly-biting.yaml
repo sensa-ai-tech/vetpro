@@ -1,0 +1,70 @@
+slug: fly-biting
+nameEn: Fly Biting
+nameZh: 空咬蒼蠅行為
+bodySystem: behavioral
+description: 犬貓反覆做出咬向空中不存在物體的動作（如追咬想像中的蒼蠅），可能為強迫症、局灶性癲癇或腸胃道疼痛（尤其胃食道逆流）的表現。需系統性排除醫學原因。
+
+aliases:
+  - { alias: "空咬行為", language: zh }
+  - { alias: "幻影追咬", language: zh }
+  - { alias: "Fly Snapping", language: en }
+  - { alias: "Fly Catching Behavior", language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬空咬蒼蠅行為好發於 Cavalier King Charles Spaniel 及其他小型品種。近年研究發現多數病例與腸胃道不適有關。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓較少見此行為模式。
+
+etiology:
+  categories:
+    - name: 醫學性
+      examples:
+        - 胃食道逆流（GERD，近年研究為主要原因）
+        - 局灶性癲癇發作
+        - 眼部疾病（floaters、視網膜病變）
+        - 頭部疼痛
+    - name: 行為性
+      examples:
+        - 強迫行為
+        - 注意力尋求
+        - 焦慮
+
+clinicalSigns:
+  early:
+    - 偶爾空中咬合動作
+    - 注視空中後突然張嘴咬合
+    - 餐後較常出現（胃腸相關時）
+  progressive:
+    - 頻繁空咬發作
+    - 持續時間延長
+    - 伴隨舔唇、吞嚥動作（提示 GERD）
+    - 難以打斷
+
+diagnosis:
+  primaryTests:
+    - name: 消化道評估
+      notes: 胃腸道超音波、試驗性制酸劑治療。空咬蒼蠅行為對制酸劑/胃腸保護劑治療反應提示 GERD。
+    - name: 神經學評估
+      notes: 排除局灶性癲癇。腦電圖（EEG，可及性低）或試驗性抗癲癇藥物。
+
+treatment:
+  principles:
+    - 優先排除胃腸道原因
+    - 排除癲癇
+    - 行為性原因為排除診斷
+    - 多因素可能共存
+  general:
+    - 試驗性制酸劑治療（Omeprazole 1 mg/kg PO SID）
+    - 飲食調整（少量多餐、低脂飲食）
+    - 癲癇疑慮：試驗性抗癲癇藥（Levetiracetam）
+    - 強迫行為：Fluoxetine
+    - 環境豐富化
+
+prognosis: 與 GERD 相關者制酸劑治療後多數明顯改善，預後良好。癲癇性空咬以抗癲癇藥控制預後中等。強迫行為型需長期管理。多數犬經適當評估與治療後生活品質可顯著改善。
+
+pubmedQueries:
+  - query: '"Fly Biting" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

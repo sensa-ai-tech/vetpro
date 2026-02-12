@@ -1,0 +1,76 @@
+slug: pseudomonas-infection
+nameEn: Pseudomonas Infection
+nameZh: 綠膿桿菌感染
+bodySystem: infectious
+description: 綠膿桿菌 (Pseudomonas aeruginosa) 為重要的機會性革蘭氏陰性菌，常見於犬貓外耳炎、泌尿道感染及傷口感染。具天然多重抗藥性，生物膜 (biofilm) 形成能力強，使治療極具挑戰性。常為慢性或難治性感染的致病原。
+
+aliases:
+  - { alias: 綠膿桿菌病, language: zh }
+  - { alias: 假單胞菌感染, language: zh }
+  - { alias: Pseudomonas Aeruginosa Infection, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬慢性外耳炎最重要的致病菌之一。泌尿道感染、深層傷口感染亦常見。天然對多數抗生素具抗藥性，治療困難。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓 Pseudomonas 感染較犬少見。泌尿道感染與手術部位感染偶見。抗藥性同樣為治療挑戰。
+
+etiology:
+  categories:
+    - name: 病原特性
+      examples:
+        - 革蘭氏陰性非發酵菌
+        - 天然對多數 beta-lactam 抗生素具抗藥性
+        - 強大的生物膜形成能力
+        - 環境中廣泛存在（水、土壤、潮濕環境）
+    - name: 常見感染類型
+      examples:
+        - 慢性外耳炎（犬最常見）
+        - 泌尿道感染
+        - 手術部位/傷口感染
+        - 肺炎（少見）
+
+clinicalSigns:
+  early:
+    - 外耳炎：耳道分泌物增多（黃綠色膿性）
+    - 泌尿道：排尿異常、血尿
+    - 傷口：癒合不良、滲出物增多
+  progressive:
+    - 慢性頑固性外耳炎（耳道增厚、鈣化）
+    - 中耳炎（外耳炎蔓延）
+    - 敗血症（免疫抑制者）
+    - 多重抗藥性感染
+
+diagnosis:
+  primaryTests:
+    - name: 細菌培養與藥敏試驗
+      notes: 必要檢查。Pseudomonas 在培養基上有特徵性綠色色素與果香氣味。藥敏試驗為選擇有效抗生素的關鍵
+    - name: 細胞學
+      notes: 分泌物抹片可見桿菌與嗜中性球。初步指導治療方向
+  additional:
+    - 影像學（外耳炎需 CT 評估中耳/鼓泡）
+    - 尿液培養（泌尿道感染）
+    - 血液培養（敗血症時）
+
+treatment:
+  principles:
+    - 必須依據藥敏結果選擇抗生素
+    - 局部治療為外耳炎首選
+    - 生物膜破壞策略
+    - 控制潛在因素
+  general:
+    - "外耳炎：耳道清潔（Tris-EDTA 溶液破壞生物膜）+ 局部抗生素"
+    - 局部 polymyxin B、gentamicin 或 fluoroquinolone 滴耳劑
+    - "系統性感染：enrofloxacin 10-20 mg/kg PO SID 或 marbofloxacin"
+    - 替代：gentamicin、amikacin（需監測腎毒性）
+    - 嚴重感染考慮聯合用藥
+    - 外耳炎同時處理潛在原因（過敏、內分泌疾病）
+    - 治療期間定期培養追蹤
+
+prognosis: Pseudomonas 感染治療困難但並非不可治癒。外耳炎需長期管理，復發常見。根據藥敏結果治療可顯著改善成功率。多重抗藥性株預後較差。慢性外耳炎嚴重者最終可能需全耳道切除 (TECA)。
+
+pubmedQueries:
+  - query: '"Pseudomonas" AND (veterinary OR canine OR feline) AND ("otitis" OR "treatment" OR "antimicrobial resistance")'
+    frequency: monthly

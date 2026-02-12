@@ -1,0 +1,71 @@
+slug: pituitary-dependent-hyperadrenocorticism
+nameEn: Pituitary Dependent Hyperadrenocorticism
+nameZh: 腦下垂體依賴性腎上腺皮質功能亢進
+bodySystem: endocrine
+description: 腦下垂體依賴性腎上腺皮質功能亢進（PDH）為犬隻庫欣氏症最常見類型（約 80-85%），因腦下垂體 ACTH 分泌腺瘤導致雙側腎上腺皮質增生與皮質醇過量。好發於中老年小型犬。臨床表現為多飲多尿、多食、腹部膨大與皮膚症狀。
+
+aliases:
+  - { alias: PDH, language: en }
+  - { alias: Pituitary Cushing's, language: en }
+  - { alias: 腦下垂體型庫欣氏症, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬隻 PDH 為庫欣氏症最常見類型（~85%）。Poodle、Dachshund、Miniature Schnauzer、Beagle、Boston Terrier 好發。中老年犬。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻 PDH 極罕見。多數貓隻庫欣氏症與糖尿病共存。
+
+etiology:
+  categories:
+    - name: 腦下垂體腺瘤
+      examples:
+        - 微腺瘤（<10 mm，最常見）
+        - 大腺瘤（>10 mm，約 10-20%，可能有壓迫症狀）
+        - 分泌過量 ACTH 刺激雙側腎上腺
+    - name: 結果
+      examples:
+        - 雙側腎上腺皮質增生
+        - 皮質醇（cortisol）持續過量分泌
+        - 負回饋機制失調
+
+clinicalSigns:
+  early:
+    - 多飲多尿（最常見初始症狀）
+    - 多食
+    - 喘息（panting）
+  progressive:
+    - 腹部膨大（pot-belly）
+    - 肌肉萎縮
+    - 對稱性脫毛（trunk alopecia）
+    - 皮膚變薄、鈣質沉著
+    - 反覆泌尿道感染
+    - 肝腫大
+    - 大腺瘤可致神經症狀（定向障礙、視力喪失、癲癇）
+
+diagnosis:
+  primaryTests:
+    - name: 篩檢試驗
+      notes: LDDS test（low-dose dexamethasone suppression）：8 小時皮質醇未抑制至 <1.4 μg/dL。尿液皮質醇/肌酐比值（UCCR）升高。ACTH stimulation test 敏感度較低但可排除醫源性。
+    - name: 鑑別試驗
+      notes: HDDS test（high-dose dexamethasone suppression）：PDH 約 75% 可被抑制。內源性 ACTH 濃度正常或升高（與 AT 型鑑別）。腹部超音波：雙側腎上腺增大。腦部 MRI 評估垂體腫瘤大小。
+
+treatment:
+  principles:
+    - Trilostane 為首選藥物治療
+    - 大腺瘤需考慮放射治療
+    - 定期監測與劑量調整
+  general:
+    - "Trilostane（Vetoryl）1-2 mg/kg PO q12h（starting dose），with food"
+    - ACTH stimulation test 監測（首次治療後 10-14 天、30 天、90 天，之後每 3-6 個月）
+    - "替代方案：Mitotane（o,p'-DDD）——較少用，副作用較多"
+    - 大腦瘤（macroadenoma）：放射治療（stereotactic radiosurgery）
+    - 垂體切除術（transphenoidal hypophysectomy）——少數專科中心可執行
+    - 治療共病（糖尿病、高血壓、泌尿道感染）
+
+prognosis: Trilostane 治療預後良好，多數犬隻臨床症狀在數週至數月內改善。中位存活時間約 2-2.5 年（多因年齡相關疾病死亡而非庫欣氏症本身）。大腺瘤合併神經症狀者預後較差。需終生藥物治療與定期監測。醫源性腎上腺皮質功能不全為重要藥物副作用。
+
+pubmedQueries:
+  - query: '"pituitary dependent hyperadrenocorticism" OR "pituitary Cushing" AND (veterinary OR canine) AND ("trilostane" OR "treatment")'
+    frequency: monthly

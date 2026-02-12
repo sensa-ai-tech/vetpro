@@ -1,0 +1,62 @@
+slug: drug-eruption
+nameEn: Drug Eruption
+nameZh: 藥物疹
+bodySystem: dermatology
+description: 藥物引起的皮膚不良反應的統稱，可表現為多種形態（丘疹、紅斑、蕁麻疹、水泡、脫屑）。機轉包括免疫媒介（過敏）與非免疫媒介（藥理毒性）。任何藥物皆可引起。
+
+aliases:
+  - { alias: "Drug Reaction", language: en }
+  - { alias: "Cutaneous Drug Reaction", language: en }
+  - { alias: "藥物反應", language: zh }
+  - { alias: "藥物性皮疹", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬偶見。Sulfonamide 為犬最常見致敏藥物。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓偶見。
+
+etiology:
+  categories:
+    - name: 藥物反應
+      examples:
+        - Sulfonamide 類
+        - 抗生素（Penicillin、Cephalosporin）
+        - NSAIDs
+        - 疫苗反應
+
+clinicalSigns:
+  early:
+    - 用藥 1-3 週後出現皮疹
+    - 搔癢或疼痛
+    - 紅斑
+  progressive:
+    - 蕁麻疹
+    - 丘疹膿皰
+    - 水泡/潰瘍
+    - 全身性反應（發燒、淋巴結腫大）
+
+diagnosis:
+  primaryTests:
+    - name: 藥物史回顧
+      notes: 確認症狀與用藥時序的關聯
+    - name: 皮膚活檢
+      notes: 組織病理可見界面性皮膚炎或其他特徵性變化
+
+treatment:
+  principles:
+    - 停用可疑藥物為最重要步驟
+    - 支持性照護
+  general:
+    - 停用可疑藥物
+    - 抗組織胺（輕度蕁麻疹型）
+    - 短期類固醇（嚴重時）
+    - 紀錄過敏藥物避免再次使用
+
+prognosis: 停藥後多數在 1-3 週內改善。嚴重型（SJS/TEN）預後不良。紀錄過敏藥物避免復發至關重要。
+
+pubmedQueries:
+  - query: '"drug eruption" AND (veterinary OR canine OR feline) AND ("adverse reaction" OR "treatment")'
+    frequency: monthly

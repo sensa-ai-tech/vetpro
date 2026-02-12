@@ -1,0 +1,67 @@
+slug: acute-lymphoblastic-leukemia
+nameEn: Acute Lymphoblastic Leukemia
+nameZh: 急性淋巴母細胞白血病
+bodySystem: hematology
+description: 急性淋巴母細胞白血病（ALL）為淋巴母細胞（lymphoblast）在骨髓中惡性增殖，取代正常造血組織並進入周邊血液的高度惡性血液腫瘤。與晚期淋巴瘤（Stage V）累及骨髓可能難以區分。預後不良，化療反應率低且維持時間短。
+
+aliases:
+  - { alias: ALL, language: en }
+  - { alias: 急性淋巴性白血病, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻 ALL 預後不良，與 Stage V 淋巴瘤鑑別困難。中老年犬好發。T 細胞型預後較 B 細胞型更差。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻 ALL 常與 FeLV 感染相關。年輕 FeLV 陽性貓為高風險群。
+
+etiology:
+  categories:
+    - name: 腫瘤來源
+      examples:
+        - B 細胞型 ALL
+        - T 細胞型 ALL
+        - 骨髓中 blast 細胞 >20%（WHO 分類標準）
+    - name: 風險因素
+      examples:
+        - FeLV 感染（貓）
+        - 遺傳傾向
+        - 環境因素（輻射、化學物質）
+
+clinicalSigns:
+  early:
+    - 急性嗜睡與食慾下降
+    - 發燒
+    - 體重減輕
+  progressive:
+    - 嚴重貧血（黏膜蒼白）
+    - 出血傾向（點狀出血、瘀斑）
+    - 反覆感染（嗜中性球減少）
+    - 肝脾腫大
+    - 淋巴結腫大
+    - 骨痛與跛行
+
+diagnosis:
+  primaryTests:
+    - name: 全血球計數（CBC）與血液抹片
+      notes: 白血球通常顯著升高，周邊血液中大量淋巴母細胞（大型、核仁明顯、高核質比）。常伴嚴重貧血與血小板減少。
+    - name: 骨髓穿刺
+      notes: blast 細胞佔骨髓有核細胞 >20%。流式細胞儀確認 B 或 T 細胞來源。PARR 確認單克隆性。
+
+treatment:
+  principles:
+    - 積極化療為唯一延長存活時間的方法
+    - 完全緩解率低
+    - 支持性治療重要
+  general:
+    - "CHOP 方案：Vincristine + Cyclophosphamide + Doxorubicin + Prednisone"
+    - "L-Asparaginase 400 IU/kg IM 或 SC（誘導期）"
+    - 支持性治療：輸血（pRBC、血小板）、廣效抗生素
+    - 止吐治療（Maropitant、Ondansetron）
+
+prognosis: 預後不良。完全緩解率約 30-40%（犬），中位存活時間約 1-4 個月（化療下）。不治療者存活時間通常不超過數週。T 細胞型預後較 B 細胞型差。貓隻 FeLV 陽性者預後更差。
+
+pubmedQueries:
+  - query: '"acute lymphoblastic leukemia" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
+    frequency: monthly

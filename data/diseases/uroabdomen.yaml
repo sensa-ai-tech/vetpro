@@ -1,0 +1,81 @@
+slug: uroabdomen
+nameEn: Uroabdomen
+nameZh: 尿腹
+bodySystem: emergency
+description: 尿腹 (uroabdomen/uroperitoneum) 為尿液漏入腹腔的緊急狀態。常見原因包括膀胱破裂（外傷或尿道阻塞導致）、輸尿管損傷與尿道損傷。腹腔尿液引起化學性腹膜炎與高血鉀、高氮血症。腹腔液 creatinine 高於血清 >2 倍為確診依據。
+
+aliases:
+  - { alias: 尿性腹水, language: zh }
+  - { alias: Uroperitoneum, language: en }
+  - { alias: Urinary Peritonitis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬 uroabdomen 常見原因：外傷性膀胱破裂（膀胱充盈時車禍）、手術損傷。公犬尿道損傷（骨盆骨折）。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓 uroabdomen 可因長時間尿道阻塞致膀胱過度擴張破裂。尿道導管放置或 perineal urethrostomy 術後併發症。
+
+etiology:
+  categories:
+    - name: 漏尿來源
+      examples:
+        - 膀胱破裂（外傷性最常見）
+        - 輸尿管損傷或斷裂
+        - 尿道損傷
+        - 腎臟破裂（罕見）
+    - name: 常見場景
+      examples:
+        - 車禍（膀胱充盈時）
+        - 長時間尿道阻塞→膀胱壞死破裂
+        - 手術併發症（OHE 時輸尿管損傷）
+        - 骨盆骨折（尿道撕裂）
+
+clinicalSigns:
+  early:
+    - 腹部膨脹
+    - 排尿減少或無尿
+    - 腹痛
+  progressive:
+    - 嘔吐
+    - 嗜睡
+    - 高血鉀（心搏過緩、心律不整）
+    - 氮血症（BUN/Cr 急遽升高）
+    - 腹膜炎征象
+    - 休克
+
+diagnosis:
+  primaryTests:
+    - name: 腹腔穿刺液分析
+      notes: 腹腔液 creatinine/血清 creatinine >2:1 確認 uroabdomen。腹腔液 potassium/血清 potassium >1.4:1
+    - name: 腹部超音波
+      notes: 腹腔游離液體。膀胱壁不完整。retroperitoneal 液體（輸尿管損傷）
+  additional:
+    - 正向對比膀胱造影（膀胱破裂確認）
+    - 靜脈泌尿道造影 (IVP) 或 CT（輸尿管損傷定位）
+    - CBC、生化（高血鉀、高 BUN/Cr）
+    - 心電圖
+
+treatment:
+  principles:
+    - 矯正高血鉀（緊急）
+    - 腹腔引流
+    - 手術修補漏尿處
+    - IV 輸液矯正氮血症
+  general:
+    - 高血鉀急救：calcium gluconate + insulin/dextrose
+    - 腹腔穿刺引流（暫時減壓）
+    - IV 輸液（0.9% NaCl — 不含鉀）
+    - 尿道導管放置（如未阻塞側可放置）
+    - 穩定後手術修補
+    - 膀胱破裂：手術縫合
+    - 輸尿管損傷：reimplantation 或 stent
+    - 尿道損傷：導管留置 ± 手術修補
+    - 術後監測排尿功能
+
+prognosis: 膀胱破裂手術修補預後佳（>85% 存活）。輸尿管損傷手術較複雜但可成功修復。高血鉀未矯正前致死風險高。慢性漏尿引起嚴重腹膜炎者預後較差。
+
+pubmedQueries:
+  - query: '"uroabdomen" OR "uroperitoneum" AND (veterinary OR canine OR feline) AND ("treatment" OR "bladder rupture")'
+    frequency: monthly

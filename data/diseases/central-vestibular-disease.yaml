@@ -1,0 +1,74 @@
+slug: central-vestibular-disease
+nameEn: Central Vestibular Disease
+nameZh: 中樞前庭疾病
+bodySystem: neurology
+description: 中樞前庭疾病為腦幹前庭核或小腦前庭連結病變導致的平衡障礙。與周邊前庭疾病相比，中樞型通常更嚴重且預後較差。常見原因包括腦幹腫瘤、腦炎（GME、FIP）、腦血管疾病（腦梗塞）與 Metronidazole 中毒。垂直眼球震顫與姿勢反應缺損為中樞型的特徵。
+
+aliases:
+  - { alias: 中樞型前庭疾病, language: zh }
+  - { alias: Central Vestibular Syndrome, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻中樞前庭疾病較周邊型少見。腦幹腫瘤、GME、腦梗塞為常見原因。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻中樞前庭疾病可因 FIP、腦膜瘤、淋巴瘤引起。
+
+etiology:
+  categories:
+    - name: 腫瘤性
+      examples:
+        - 腦幹腫瘤（meningioma、glioma、choroid plexus tumor）
+        - 小腦腫瘤
+    - name: 炎症性
+      examples:
+        - 肉芽腫性腦膜腦炎（GME）
+        - 壞死性腦炎
+        - FIP 腦炎
+        - Toxoplasma/Neospora 腦炎
+    - name: 血管性與其他
+      examples:
+        - 腦幹梗塞（cerebrovascular accident）
+        - Metronidazole 中毒
+        - Thiamine（B1）缺乏
+
+clinicalSigns:
+  early:
+    - 頭部傾斜
+    - 眼球震顫（可為垂直性——中樞型特徵）
+    - 共濟失調
+  progressive:
+    - 姿勢反應缺損（proprioceptive deficits——中樞型特徵）
+    - 意識改變（嗜睡至昏迷）
+    - 顱神經缺損（V、VI、VII 等）
+    - 癲癇
+    - paradoxical vestibular signs（病變對側傾斜，小腦病變時）
+
+diagnosis:
+  primaryTests:
+    - name: 腦部 MRI
+      notes: 診斷關鍵。評估腦幹與小腦病變。腫瘤、炎症、梗塞各有特徵性 MRI 表現。造影劑增強評估。
+    - name: CSF 分析
+      notes: 輔助鑑別腫瘤 vs 炎症。白血球增多提示炎症。蛋白質升高。感染性 PCR 檢測。
+
+treatment:
+  principles:
+    - 治療基礎原因為核心
+    - 中樞型通常較周邊型更需積極治療
+    - 支持性治療
+  general:
+    - 腫瘤：手術、放射治療或姑息性類固醇
+    - "GME/NME：Prednisolone 2-4 mg/kg/day + Cytarabine 或 Cyclosporine"
+    - "FIP：GS-441524 抗病毒治療（近年新進展）"
+    - "Metronidazole 中毒：立即停藥（通常 1-2 週內改善）"
+    - "Thiamine 缺乏：Thiamine 25-50 mg IM/IV q24h"
+    - "腦梗塞：支持性治療（通常逐漸改善）"
+    - 止吐、支持性護理
+
+prognosis: 預後取決於基礎原因。腦幹梗塞預後相對良好（多數在 2-4 週內改善）。GME 治療後可維持數月至數年。腦幹腫瘤預後不佳。Metronidazole 中毒停藥後通常完全恢復。FIP 以新型抗病毒藥物治療預後可能改善。Thiamine 缺乏早期治療恢復良好。
+
+pubmedQueries:
+  - query: '"central vestibular disease" AND (veterinary OR canine OR feline) AND ("treatment" OR "MRI" OR "diagnosis")'
+    frequency: monthly

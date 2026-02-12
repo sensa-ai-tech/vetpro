@@ -1,0 +1,75 @@
+slug: peritoneal-dialysis-complications
+nameEn: Peritoneal Dialysis Complications
+nameZh: 腹膜透析併發症
+bodySystem: urinary
+description: 腹膜透析為利用腹膜作為半透膜進行溶質與水分交換的腎臟替代療法，用於急性腎衰竭或毒素清除。犬貓腹膜透析常見併發症包括腹膜炎（最嚴重）、導管功能障礙、透析液滲漏、電解質異常與低白蛋白血症。併發症管理影響透析成功率與病患預後。
+
+aliases:
+  - { alias: PD 併發症, language: zh }
+  - { alias: PD Complications, language: en }
+  - { alias: Peritoneal Dialysis-Associated Peritonitis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻腹膜透析主要用於急性腎衰竭。併發症發生率約 30-50%。腹膜炎為最常見嚴重併發症。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻腹膜透析使用率較低。急性尿路阻塞後腎衰竭為常見適應症。
+
+etiology:
+  categories:
+    - name: 感染性併發症
+      examples:
+        - 腹膜炎（最常見且最嚴重）
+        - 導管出口處感染
+        - 皮下隧道感染
+    - name: 機械性併發症
+      examples:
+        - 導管阻塞（omentum wrapping）
+        - 透析液滲漏
+        - 導管移位
+        - 腹腔臟器損傷
+    - name: 代謝性併發症
+      examples:
+        - 低白蛋白血症（蛋白質流失至透析液）
+        - 電解質異常（低血鉀、高血鈉）
+        - 高血糖（葡萄糖基透析液吸收）
+
+clinicalSigns:
+  early:
+    - 發燒（腹膜炎時）
+    - 透析液混濁（腹膜炎指標）
+    - 透析液引流不良（導管問題）
+  progressive:
+    - 腹痛
+    - 敗血症（嚴重腹膜炎）
+    - 透析效率下降
+    - 低白蛋白相關水腫
+    - 呼吸困難（腹腔內液體過多）
+
+diagnosis:
+  primaryTests:
+    - name: 透析液分析
+      notes: 透析液白血球計數 >100/μL 或嗜中性球 >50% 為腹膜炎診斷標準。透析液培養確認致病菌。
+    - name: 影像學
+      notes: X 光評估導管位置。超音波評估腹腔內液體分布與導管問題。
+
+treatment:
+  principles:
+    - 早期辨認與處理併發症
+    - 腹膜炎需立即抗生素治療
+    - 嚴重時可能需移除導管
+  general:
+    - "腹膜炎：透析液內加入抗生素（Cefazolin + Gentamicin 或 Ceftazidime）"
+    - 培養結果導向抗生素調整
+    - 導管阻塞：嘗試沖洗或重新定位
+    - 嚴重腹膜炎或難治性感染需移除導管
+    - 低白蛋白：考慮使用含胺基酸透析液或血漿補充
+    - 電解質監測與矯正
+
+prognosis: 犬貓腹膜透析整體存活率約 25-50%（取決於基礎疾病）。腹膜炎若早期辨認並治療多數可控制。嚴重腹膜炎合併敗血症死亡率高。導管功能良好且無感染者透析效果較好。急性腎衰竭若基礎原因可逆（如尿路阻塞解除），透析可支持至腎功能恢復。
+
+pubmedQueries:
+  - query: '"peritoneal dialysis" AND (veterinary OR canine OR feline) AND ("complications" OR "peritonitis" OR "outcomes")'
+    frequency: monthly

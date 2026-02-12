@@ -1,0 +1,82 @@
+slug: plague
+nameEn: Plague
+nameZh: 鼠疫
+bodySystem: infectious
+description: 鼠疫由耶爾辛氏鼠疫桿菌 (Yersinia pestis) 引起，經跳蚤叮咬或接觸感染動物傳播。貓對鼠疫高度易感，可表現為腺鼠疫、敗血鼠疫或肺鼠疫。犬感染通常較輕。此為重要人畜共通傳染病，獸醫人員需特別注意職業暴露風險。
+
+aliases:
+  - { alias: 黑死病, language: zh }
+  - { alias: 耶氏鼠疫桿菌感染, language: zh }
+  - { alias: Yersinia pestis Infection, language: en }
+  - { alias: Bubonic Plague, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬對鼠疫相對抗性強，感染多為亞臨床或輕度發燒。但可作為帶蚤宿主將感染蚤帶入人類居住環境，為流行病學重要角色。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓對鼠疫高度易感，病死率可達 50% 以上。獵捕嚙齒類為主要感染途徑。肺鼠疫型貓可直接經飛沫傳播給人類，為重要公衛風險。
+
+etiology:
+  categories:
+    - name: 病原與傳播
+      examples:
+        - Yersinia pestis（革蘭氏陰性球桿菌）
+        - 主要經嚙齒類跳蚤 (Xenopsylla cheopis) 叮咬傳播
+        - 貓經獵捕、進食感染嚙齒類感染
+        - 可經直接接觸感染組織或分泌物傳播
+    - name: 臨床型態
+      examples:
+        - 腺鼠疫 (bubonic) — 最常見，區域淋巴結腫大
+        - 敗血鼠疫 (septicemic) — 菌血症為主
+        - 肺鼠疫 (pneumonic) — 最危險，可人畜傳播
+
+clinicalSigns:
+  early:
+    - 高燒
+    - 食慾廢絕
+    - 嗜睡
+    - 下頜或頸部淋巴結腫大（腺鼠疫）
+  progressive:
+    - 淋巴結膿瘍化與破裂排膿
+    - 脫水
+    - 敗血症徵象
+    - 呼吸困難（肺鼠疫）
+    - 咳嗽、血痰
+    - DIC、多器官衰竭
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 淋巴結抽吸物/膿液培養
+      notes: 確定診斷。需通知實驗室疑似鼠疫（生物安全等級 BSL-3）。革蘭氏染色可見雙極染色球桿菌
+    - name: PCR
+      notes: 快速確認。淋巴結抽吸物或血液樣本
+  additional:
+    - 血液培養（敗血鼠疫）
+    - 胸腔 X-ray（肺鼠疫）
+    - 血清學（F1 抗體）
+    - CBC 與生化
+
+treatment:
+  principles:
+    - 立即啟動抗生素治療
+    - 嚴格隔離（肺鼠疫傳染性極強）
+    - 通報公衛機關
+    - 保護醫療人員安全
+  general:
+    - "Gentamicin 2 mg/kg IV/IM q8h（首選殺菌劑）"
+    - 替代：doxycycline 5 mg/kg PO/IV BID
+    - 治療至少 21 天
+    - IV 輸液支持
+    - 嚴格隔離與個人防護裝備 (PPE)
+    - 肺鼠疫需呼吸道隔離
+    - 立即通報當地公衛機關
+    - 跳蚤控制（患畜與環境）
+
+prognosis: 貓鼠疫未治療病死率 >50%。早期抗生素治療可顯著改善預後。腺鼠疫治療後預後較佳。肺鼠疫與敗血鼠疫即使治療預後仍謹慎。犬感染通常自限性。
+
+pubmedQueries:
+  - query: '"plague" AND "Yersinia pestis" AND (veterinary OR feline OR canine) AND ("treatment" OR "zoonosis")'
+    frequency: monthly

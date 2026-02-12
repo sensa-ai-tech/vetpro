@@ -1,0 +1,76 @@
+slug: avian-egg-peritonitis
+nameEn: Avian Egg Peritonitis
+nameZh: 禽類蛋黃性腹膜炎
+bodySystem: reproductive
+description: 蛋黃性腹膜炎是卵黃物質進入腹腔引起的發炎反應，可發生於排卵時卵黃未被輸卵管開口捕獲（異位排卵）或輸卵管破裂時。為母鳥嚴重的生殖系統急症，可導致腹膜炎、敗血症與死亡。
+
+aliases:
+  - { alias: 蛋黃腹膜炎, language: zh }
+  - { alias: 卵黃性腹膜炎, language: zh }
+  - { alias: Egg yolk peritonitis, language: en }
+  - { alias: Ectopic ovulation, language: en }
+  - { alias: Egg-related coelomitis, language: en }
+
+species:
+  - speciesCommon: bird
+    prevalence: uncommon
+    notes: 繁殖期母鳥或過度產蛋的寵物鳥較常見。玄鳳鸚鵡、虎皮鸚鵡、金絲雀為高風險群。可繼發於蛋滯留或慢性輸卵管疾病。
+
+etiology:
+  categories:
+    - name: 生殖異常
+      examples:
+        - 異位排卵（卵黃進入腹腔）
+        - 輸卵管破裂
+        - 蛋滯留併發症
+        - 輸卵管慢性發炎
+    - name: 風險因素
+      examples:
+        - 過度產蛋
+        - 慢性輸卵管炎
+        - 肥胖
+        - 營養不均衡
+
+clinicalSigns:
+  early:
+    - 腹部輕度膨脹
+    - 食慾下降
+    - 活動量減少
+  progressive:
+    - 明顯腹部膨大
+    - 呼吸困難（腹壓增加壓迫氣囊）
+    - 嗜睡
+    - 嘔吐
+    - 排便減少
+    - 體重下降（但腹部腫大）
+    - 發燒（繼發細菌感染時）
+
+diagnosis:
+  primaryTests:
+    - name: X 光
+      notes: 腹腔密度增加。可能見游離液體徵象。評估是否有同時存在的蛋滯留
+    - name: 腹腔穿刺
+      notes: 抽取腹腔液分析。蛋黃性液體為黃色黏稠。細菌培養排除感染
+    - name: 血液檢查
+      notes: CBC 見白血球增多。生化可見高蛋白血症。血鈣可能升高
+
+treatment:
+  principles:
+    - 穩定患者
+    - 抗生素預防或治療繼發感染
+    - 必要時手術清除腹腔內容物
+    - 抑制未來產蛋
+  general:
+    - 抗生素治療（Enrofloxacin 15 mg/kg PO BID 或 Amoxicillin-clavulanate）
+    - 補液與保溫
+    - 腹腔穿刺排液（嚴重腹脹時）
+    - 嚴重者手術清除腹腔內蛋黃物質
+    - Leuprolide acetate（GnRH agonist）抑制產蛋
+    - Deslorelin 植入體抑制生殖功能
+    - 營養支持
+
+prognosis: 預後謹慎。輕度蛋黃性腹膜炎經抗生素治療可恢復。嚴重或伴細菌感染者預後不良。手術清除後預後改善但復發率高（若不抑制產蛋）。荷爾蒙抑制產蛋是預防復發的關鍵。
+
+pubmedQueries:
+  - query: '"egg peritonitis" AND (avian OR bird OR psittacine) AND (treatment OR management)'
+    frequency: monthly

@@ -1,0 +1,75 @@
+slug: nephrotic-syndrome
+nameEn: Nephrotic Syndrome
+nameZh: 腎病症候群
+bodySystem: urinary
+description: 腎病症候群為腎絲球嚴重蛋白質流失的臨床表現，定義為同時存在蛋白尿（UPC >3.5）、低白蛋白血症、水腫或腹水、與高脂血症的四聯症。犬隻常見基礎原因包括免疫複合物腎絲球腎炎、類澱粉沉積症與腎絲球硬化。血栓栓塞為重要致命併發症。
+
+aliases:
+  - { alias: 腎病徵候群, language: zh }
+  - { alias: Nephrosis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻腎病症候群為嚴重蛋白流失性腎絲球疾病的臨床表現。Soft-Coated Wheaten Terrier、Bernese Mountain Dog 有品種好發的腎絲球腎炎。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻腎病症候群少見。可見於腎臟類澱粉沉積症或 FIP 相關腎絲球腎炎。
+
+etiology:
+  categories:
+    - name: 腎絲球疾病
+      examples:
+        - 免疫複合物腎絲球腎炎（最常見）
+        - 腎絲球類澱粉沉積症
+        - 腎絲球硬化
+        - 膜性腎病（membranous nephropathy）
+    - name: 基礎原因
+      examples:
+        - 感染性疾病（Ehrlichiosis、Leishmaniasis、Heartworm）
+        - 腫瘤（副腫瘤性腎絲球腎炎）
+        - 自體免疫疾病（SLE）
+        - 特發性
+
+clinicalSigns:
+  early:
+    - 蛋白尿（尿液泡沫增多）
+    - 輕度水腫
+    - 體重增加（水分滯留）
+  progressive:
+    - 嚴重腹水
+    - 四肢水腫（皮下水腫）
+    - 低白蛋白血症相關症狀
+    - 血栓栓塞（肺栓塞、主動脈血栓）
+    - 進行性腎衰竭
+    - 高脂血症
+
+diagnosis:
+  primaryTests:
+    - name: 尿液分析與 UPC
+      notes: UPC >3.5（通常 >5.0）。確認蛋白尿為腎絲球來源。尿液沉渣排除感染性與出血性蛋白尿。
+    - name: 血液生化
+      notes: 低白蛋白（<2.0 g/dL）。高膽固醇與三酸甘油酯。抗凝血酶 III（AT III）降低（血栓風險指標）。BUN/Creatinine 可能正常或升高。
+    - name: 腎臟活檢
+      notes: 確認腎絲球病變類型。光學顯微鏡、免疫螢光、電子顯微鏡為完整評估。
+
+treatment:
+  principles:
+    - 治療基礎原因
+    - 減少蛋白尿
+    - 預防血栓栓塞
+    - 控制水腫
+  general:
+    - "ACE 抑制劑：Enalapril 0.5 mg/kg PO q12h 或 Benazepril + Telmisartan（ARB）"
+    - "免疫抑制（免疫介導性腎絲球腎炎）：Mycophenolate 10 mg/kg PO q12h"
+    - "血栓預防：Clopidogrel 1-2 mg/kg PO q24h ± Aspirin 0.5 mg/kg PO q24h"
+    - 低鈉飲食
+    - 利尿劑（嚴重水腫時謹慎使用 Furosemide）
+    - 治療基礎感染性疾病
+    - 腎臟處方飲食
+
+prognosis: 預後取決於基礎原因與蛋白尿嚴重度。免疫介導性腎絲球腎炎若對免疫抑制治療反應良好預後較好。血栓栓塞為重要致死原因。類澱粉沉積症預後不佳。UPC >12 者預後極差。早期積極管理蛋白尿與血栓預防可改善結果。
+
+pubmedQueries:
+  - query: '"nephrotic syndrome" AND (veterinary OR canine OR feline) AND ("treatment" OR "thromboembolism" OR "proteinuria")'
+    frequency: monthly

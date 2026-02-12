@@ -1,0 +1,72 @@
+slug: traumatic-uveitis
+nameEn: Traumatic Uveitis
+nameZh: 外傷性葡萄膜炎
+bodySystem: ophthalmology
+description: 因鈍性或穿透性眼部外傷引起的葡萄膜發炎反應。外傷導致血-房水屏障 (blood-aqueous barrier) 破壞、前列腺素釋放及組織損傷。為小動物急性前葡萄膜炎最常見原因之一。
+
+aliases:
+  - { alias: Blunt Trauma Uveitis, language: en }
+  - { alias: Post-traumatic Uveitis, language: en }
+  - { alias: 外傷性眼內炎, language: zh }
+  - { alias: 創傷性葡萄膜炎, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬常見。車禍、打架、貓抓傷、眼部異物等為常見原因。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓常見。貓打架爪傷、高處墜落。穿透傷需警惕感染性眼內炎。
+
+etiology:
+  categories:
+    - name: 鈍性外傷
+      examples:
+        - 車禍
+        - 球類擊中
+        - 撞擊硬物
+    - name: 穿透性外傷
+      examples:
+        - 貓爪抓傷
+        - 尖銳異物穿刺
+        - 槍彈傷
+
+clinicalSigns:
+  early:
+    - 眼睛疼痛
+    - 流淚
+    - 結膜充血
+    - 瞳孔縮小 (miosis)
+  progressive:
+    - 前房混濁 (aqueous flare)
+    - 前房出血 (hyphema)
+    - 角膜水腫
+    - 晶體脫位 (嚴重外傷)
+    - 眼壓降低 (初期) 或升高 (慢性)
+
+diagnosis:
+  primaryTests:
+    - name: 眼科檢查
+      notes: 評估前房反應、前房出血量、瞳孔反應、晶體位置。螢光素染色排除角膜穿孔
+    - name: 眼壓測量
+      notes: 葡萄膜炎典型低眼壓。高眼壓需警惕續發性青光眼
+    - name: 眼部超音波
+      notes: 排除眼內異物、玻璃體出血、視網膜剝離
+
+treatment:
+  principles:
+    - 控制炎症防止續發性損傷
+    - 散瞳防止後粘連
+    - 穿透傷需評估感染風險
+  general:
+    - 局部類固醇眼藥水 (Prednisolone 1%) 或 NSAIDs 眼藥水
+    - Atropine 1% 散瞳止痛
+    - 全身性 NSAIDs 止痛
+    - 穿透傷：全身性抗生素預防感染
+    - 角膜穿孔/晶體脫位需手術
+
+prognosis: 單純鈍性外傷引起的葡萄膜炎預後良好，通常 1-2 週消退。穿透傷預後較差。併發前房大量出血或晶體脫位者預後謹慎。慢性未治療可導致續發性青光眼或白內障。
+
+pubmedQueries:
+  - query: '"traumatic uveitis" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
+    frequency: monthly

@@ -1,0 +1,59 @@
+slug: cardiac-tumor
+nameEn: Cardiac Tumor
+nameZh: 心臟腫瘤
+bodySystem: oncology
+description: 心臟的原發性腫瘤，犬以血管肉瘤（右心房/心耳）與心基底部腫瘤（chemodectoma）最常見。常以心包膜積液/心包填塞急診發現。
+
+aliases:
+  - { alias: "Heart Tumor", language: en }
+  - { alias: "心臟新生物", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬偶見。German Shepherd（血管肉瘤）、短頭品種（chemodectoma）好發。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓極罕見。
+
+etiology:
+  categories:
+    - name: 腫瘤性
+      examples:
+        - 血管肉瘤（右心房，最常見）
+        - 心基底部腫瘤（chemodectoma/aortic body tumor）
+        - 淋巴瘤
+
+clinicalSigns:
+  early:
+    - 運動不耐受
+    - 虛弱
+    - 心律不整
+  progressive:
+    - 心包膜積液/心包填塞
+    - 休克
+    - 呼吸困難
+    - 猝死
+
+diagnosis:
+  primaryTests:
+    - name: 心臟超音波
+      notes: 心包膜積液、心臟腫塊定位
+    - name: 心包膜穿刺
+      notes: 引流積液穩定血流動力學。液體細胞學
+
+treatment:
+  principles:
+    - 穩定心包填塞
+    - 手術切除（可行時）
+  general:
+    - 心包膜穿刺引流（急救）
+    - 心包膜切除術（反覆積液）
+    - 血管肉瘤：化療（Doxorubicin）
+    - chemodectoma：多為緩慢生長，心包膜切除後可長期控制
+
+prognosis: 心臟血管肉瘤預後極差（中位存活 < 4 個月）。Chemodectoma 心包膜切除後中位存活 > 1 年。
+
+pubmedQueries:
+  - query: '"cardiac tumor" AND (veterinary OR canine) AND ("hemangiosarcoma" OR "treatment")'
+    frequency: monthly

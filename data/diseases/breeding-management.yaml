@@ -1,0 +1,77 @@
+slug: breeding-management
+nameEn: Breeding Management
+nameZh: 繁殖管理
+bodySystem: reproductive
+description: 犬貓繁殖管理涵蓋發情週期監測、最佳配種時機決定、妊娠診斷與分娩管理。犬以黃體酮定量 (progesterone timing) 確定排卵日為現代繁殖管理核心。貓為誘發排卵動物，配種管理策略不同。良好的繁殖管理可顯著提高受孕率與仔畜存活率。
+
+aliases:
+  - { alias: 配種管理, language: zh }
+  - { alias: 繁殖計畫, language: zh }
+  - { alias: Breeding Timing, language: en }
+  - { alias: Reproductive Management, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬黃體酮定量為最佳配種 timing 工具。排卵時黃體酮約 5-8 ng/mL。排卵後 48 小時卵子成熟。最佳配種：排卵後 2-5 天。妊娠期約 63 天（從 LH surge 算）。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓為誘發排卵、季節性多發情動物。需充分交配刺激觸發排卵。妊娠期約 63-65 天。超音波可在配種後 16-20 天確認妊娠。
+
+etiology:
+  categories:
+    - name: 犬發情週期
+      examples:
+        - 前發情期 (proestrus)：陰道出血、外陰腫脹（約 9 天）
+        - 發情期 (estrus)：接受公犬、排卵（約 9 天）
+        - 黃體期 (diestrus)：黃體酮維持（約 60 天）
+        - 無發情期 (anestrus)：休息期（4-8 個月）
+    - name: 配種時機工具
+      examples:
+        - 黃體酮定量（金標準）
+        - 陰道細胞學
+        - 陰道鏡
+        - LH 檢測
+        - 公犬行為觀察
+
+clinicalSigns:
+  early:
+    - 犬前發情期：外陰腫脹、陰道血性分泌物
+    - 貓發情期：叫聲增加、lordosis 姿勢、翻滾
+  progressive:
+    - 犬發情期：接受公犬、分泌物轉為草色
+    - 排卵（犬為自發性、貓為交配誘發）
+    - 妊娠：犬超音波 25-28 天可確認；貓 16-20 天
+
+diagnosis:
+  primaryTests:
+    - name: 血清黃體酮連續監測
+      notes: 基線 <1 ng/mL → LH surge 時 1.5-2 ng/mL → 排卵時 5-8 ng/mL。每 2-3 天抽血
+    - name: 陰道細胞學
+      notes: 角化指數 >80% 為發情高峰。角化細胞下降提示進入 diestrus
+  additional:
+    - 腹部超音波（妊娠確認、胎兒計數）
+    - 腹部 X-ray（妊娠 >45 天可見胎兒骨化、準確計數）
+    - Relaxin 快篩（犬妊娠 26-30 天）
+    - 陰道鏡
+
+treatment:
+  principles:
+    - 黃體酮 timing 為最重要介入
+    - 妊娠期營養管理
+    - 分娩前準備
+    - 難產辨識
+  general:
+    - 黃體酮 timing 配種（排卵後 2-5 天最佳）
+    - 自然配種或人工授精（新鮮、冷藏、冷凍精液）
+    - 妊娠後半期增加 25-50% 熱量（優質幼犬飼料）
+    - 葉酸補充
+    - 分娩前準備（產房、溫度控制）
+    - 預產日監測（黃體酮 <2 ng/mL 時 24 小時內分娩）
+    - 難產辨識標準（>2 小時主動宮縮無胎兒產出）
+
+prognosis: 適當繁殖管理可將受孕率提高至 >80%。黃體酮 timing 單獨即可顯著改善受孕率。妊娠期適當營養與分娩監測可降低新生仔畜死亡率。
+
+pubmedQueries:
+  - query: '"breeding management" OR "progesterone timing" AND (canine OR feline) AND ("ovulation" OR "insemination")'
+    frequency: monthly

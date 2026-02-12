@@ -1,0 +1,69 @@
+slug: thymoma
+nameEn: Thymoma
+nameZh: 胸腺瘤
+bodySystem: respiratory
+description: 胸腺瘤為起源於胸腺上皮細胞的腫瘤，位於前縱膈腔。多數為低度惡性，局部生長緩慢，遠處轉移率低。可伴隨副腫瘤症候群，最常見為重症肌無力（myasthenia gravis）。犬貓均可發生，中老年動物好發。
+
+aliases:
+  - { alias: 胸腺腫瘤, language: zh }
+  - { alias: Thymic Tumor, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬隻胸腺瘤罕見。中老年犬（>7 歲）好發。Labrador Retriever 與 German Shepherd 有較高報告率。可伴隨重症肌無力。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻胸腺瘤罕見。需與前縱膈淋巴瘤鑑別。中老年貓好發。
+
+etiology:
+  categories:
+    - name: 腫瘤特性
+      examples:
+        - 起源於胸腺上皮細胞
+        - 多數為良性或低度惡性
+        - 局部侵襲性但遠處轉移率低
+        - 混合淋巴球與上皮細胞成分
+    - name: 副腫瘤症候群
+      examples:
+        - 重症肌無力（myasthenia gravis，約 40% 犬隻胸腺瘤）
+        - 巨食道症（megaesophagus，與 MG 相關）
+        - 高鈣血症
+        - 非溶血性免疫介導性貧血
+
+clinicalSigns:
+  early:
+    - 輕度呼吸急促
+    - 運動不耐
+    - 偶然 X 光發現
+  progressive:
+    - 呼吸困難
+    - 胸腔積液
+    - 前腔靜脈症候群（面部水腫）
+    - 重症肌無力症狀：全身性肌無力、吞嚥困難、反芻
+    - 吸入性肺炎（繼發於巨食道）
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔 X 光
+      notes: 前縱膈腔腫塊。氣管背側偏移。可伴胸腔積液。需與淋巴瘤鑑別。
+    - name: 細針穿刺或組織活檢
+      notes: 超音波引導下 FNA。細胞學可見混合淋巴球（小型成熟）與上皮細胞。確診需組織病理學。乙醯膽鹼受體抗體測定排除 MG。
+
+treatment:
+  principles:
+    - 手術切除為首選治療
+    - 副腫瘤症候群需同時處理
+    - 手術不可行時考慮放射線治療
+  general:
+    - 手術切除（median sternotomy，首選）
+    - "重症肌無力：Pyridostigmine 0.5-3 mg/kg PO q8-12h"
+    - 術前穩定 MG 症狀
+    - 吸入性肺炎風險管理（巨食道患者）
+    - "手術不可行時：放射線治療"
+
+prognosis: 手術完全切除後預後良好，中位存活時間可達 1-3 年以上。胸腺瘤相關重症肌無力在腫瘤切除後約 50% 可改善或緩解。併發巨食道症與吸入性肺炎者預後較差。不完全切除或侵襲性胸腺瘤預後中等。
+
+pubmedQueries:
+  - query: '"thymoma" AND (veterinary OR canine OR feline) AND ("myasthenia gravis" OR "treatment" OR "surgery")'
+    frequency: monthly

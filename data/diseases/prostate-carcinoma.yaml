@@ -1,0 +1,61 @@
+slug: prostate-carcinoma
+nameEn: Prostate Carcinoma
+nameZh: 前列腺癌
+bodySystem: oncology
+description: 前列腺的惡性腫瘤。與人類不同，犬前列腺癌不受去勢影響（結紮犬也會發生）。高度惡性，早期即可轉移至腰椎與骨盆骨。預後不良。
+
+aliases:
+  - { alias: "Prostatic Neoplasia", language: en }
+  - { alias: "前列腺惡性腫瘤", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬偶見。結紮與未結紮犬均可發生。中大型老年犬。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓極罕見。
+
+etiology:
+  categories:
+    - name: 腫瘤性
+      examples:
+        - 前列腺上皮惡性增生
+        - 不受雄性素影響（與人類不同）
+        - 結紮不能預防
+
+clinicalSigns:
+  early:
+    - 排尿困難/滴尿
+    - 帶血尿
+    - 排便困難
+  progressive:
+    - 後肢無力（腰椎轉移）
+    - 骨盆疼痛
+    - 尿道阻塞
+    - 消瘦
+
+diagnosis:
+  primaryTests:
+    - name: 直腸觸診
+      notes: 前列腺不規則硬化增大
+    - name: 腹部超音波
+      notes: 前列腺內低回音腫塊
+    - name: X 光
+      notes: 腰椎/骨盆骨轉移（溶骨性病灶）
+
+treatment:
+  principles:
+    - 手術切除困難
+    - 化療與姑息治療
+  general:
+    - NSAIDs（Piroxicam — COX 抑制可能有抗腫瘤效果）
+    - 化療（Carboplatin、Mitoxantrone）
+    - 放射治療（姑息性）
+    - 尿道支架（尿道阻塞時）
+
+prognosis: 預後不良。中位存活 < 6 個月。診斷時多數已轉移。NSAIDs 可能略延長存活。
+
+pubmedQueries:
+  - query: '"prostate carcinoma" AND (veterinary OR canine) AND ("treatment" OR "prognosis")'
+    frequency: monthly

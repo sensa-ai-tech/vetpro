@@ -1,0 +1,70 @@
+slug: meningitis
+nameEn: Meningitis
+nameZh: 腦膜炎
+bodySystem: neurology
+description: 腦膜炎為腦膜（meninges）的炎症反應。犬貓腦膜炎可分為感染性（細菌、真菌、原蟲、病毒）與非感染性/免疫介導性。犬隻最常見的腦膜炎為類固醇反應性腦膜炎動脈炎（SRMA）。臨床特徵為頸部疼痛、發燒與頸部僵硬。CSF 分析為診斷關鍵。
+
+aliases:
+  - { alias: 腦脊髓膜炎, language: zh }
+  - { alias: Meningoencephalitis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻腦膜炎以免疫介導性（SRMA）最常見。細菌性腦膜炎較少見但嚴重。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻腦膜炎以 FIP 相關最常見。細菌性與原蟲性（Toxoplasma）亦可見。
+
+etiology:
+  categories:
+    - name: 免疫介導性
+      examples:
+        - 類固醇反應性腦膜炎動脈炎（SRMA，犬隻最常見）
+        - 肉芽腫性腦膜腦炎（GME）
+        - 壞死性腦膜腦炎（NME / Pug encephalitis）
+    - name: 感染性
+      examples:
+        - 細菌性（Staphylococcus、Streptococcus、E. coli）
+        - 真菌性（Cryptococcus，貓隻）
+        - 原蟲性（Toxoplasma、Neospora）
+        - 病毒性（FIP、Canine distemper）
+
+clinicalSigns:
+  early:
+    - 頸部疼痛與僵硬
+    - 發燒
+    - 嗜睡
+  progressive:
+    - 嚴重頸部疼痛（opisthotonus）
+    - 高燒
+    - 共濟失調
+    - 癲癇（腦膜腦炎時）
+    - 顱神經缺損
+    - 意識改變
+
+diagnosis:
+  primaryTests:
+    - name: CSF 分析
+      notes: 診斷關鍵。嗜中性球增多（急性細菌性或 SRMA）。單核球增多（慢性或 GME）。蛋白質升高。培養與感受性（細菌性）。PCR 檢測（Toxoplasma、Neospora、CDV、FCoV）。
+    - name: 腦部 MRI
+      notes: 評估腦膜增強（造影劑後 meningeal enhancement）。排除結構性病變。腦實質病變提示腦膜腦炎。
+
+treatment:
+  principles:
+    - 鑑別感染性與免疫介導性至關重要
+    - 感染性需特異性抗微生物治療
+    - 免疫介導性需免疫抑制
+  general:
+    - "SRMA：Prednisolone 2-4 mg/kg/day PO（逐步減量至 0.5 mg/kg q48h，總療程 6-12 個月）"
+    - "細菌性：廣效抗生素（能穿透血腦屏障）——Ampicillin + Metronidazole + Enrofloxacin"
+    - "Toxoplasma/Neospora：Clindamycin 10-15 mg/kg PO q12h + TMP-SMX"
+    - "Cryptococcus：Fluconazole 5-10 mg/kg PO q12-24h"
+    - 支持性治療（輸液、疼痛管理）
+    - 抗癲癇（若有發作）
+
+prognosis: SRMA 以類固醇治療預後良好（>80% 緩解）。復發率約 20-30%。細菌性腦膜炎若及時治療預後尚可但死亡率仍高（20-40%）。GME 治療反應不一，中位存活約 3-12 個月。FIP 腦膜炎預後不佳（但新型抗病毒藥物 GS-441524 可能改變預後）。
+
+pubmedQueries:
+  - query: '"meningitis" AND (veterinary OR canine OR feline) AND ("SRMA" OR "treatment" OR "CSF")'
+    frequency: monthly

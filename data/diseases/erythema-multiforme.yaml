@@ -1,0 +1,66 @@
+slug: erythema-multiforme
+nameEn: Erythema Multiforme
+nameZh: 多形性紅斑
+bodySystem: dermatology
+description: 急性免疫媒介性皮膚病，因藥物反應或感染觸發細胞毒性 T 細胞攻擊角質細胞。典型表現為多形性皮膚病灶（紅斑、靶環狀斑、水泡、潰瘍），可累及皮膚與黏膜。
+
+aliases:
+  - { alias: "EM", language: en }
+  - { alias: "Stevens-Johnson Syndrome", language: en }
+  - { alias: "多形紅斑", language: zh }
+  - { alias: "標靶環狀紅斑", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬罕見。藥物反應為最常見觸發因子。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓罕見。
+
+etiology:
+  categories:
+    - name: 藥物反應
+      examples:
+        - 抗生素（Sulfonamide、Cephalosporin）
+        - NSAIDs
+        - 抗癲癇藥
+    - name: 感染後
+      examples:
+        - 疱疹病毒
+        - 上呼吸道感染後
+
+clinicalSigns:
+  early:
+    - 突然出現多形性皮膚病灶
+    - 紅斑斑塊
+    - 靶環狀（target lesion）皮疹
+  progressive:
+    - 水泡與潰瘍
+    - 口腔黏膜潰瘍
+    - 足墊潰瘍
+    - 發燒、疼痛
+
+diagnosis:
+  primaryTests:
+    - name: 皮膚活檢
+      notes: 確診需組織病理。見角質細胞壞死（apoptosis）與淋巴球浸潤
+    - name: 藥物史回顧
+      notes: 確認發病前 1-3 週是否有新藥使用
+
+treatment:
+  principles:
+    - 停用可疑藥物
+    - 支持性照護
+    - 嚴重時免疫抑制
+  general:
+    - 立即停用所有可疑藥物
+    - 輕度：支持性照護可自行緩解
+    - 嚴重（SJS/TEN）：免疫抑制（Cyclosporine）
+    - 傷口護理與疼痛管理
+
+prognosis: 輕度多形性紅斑停藥後預後良好。Stevens-Johnson 症候群預後謹慎至不良。中毒性表皮壞死（TEN）預後極差。
+
+pubmedQueries:
+  - query: '"erythema multiforme" AND (veterinary OR canine OR feline) AND ("drug reaction" OR "treatment")'
+    frequency: monthly

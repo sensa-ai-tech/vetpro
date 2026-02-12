@@ -1,0 +1,60 @@
+slug: growth-plate-fracture
+nameEn: Growth Plate Fracture
+nameZh: 生長板骨折
+bodySystem: orthopedic
+description: 未成年動物長骨生長板（骺板/physis）的骨折。因生長板為骨骼最脆弱區域，幼犬貓外傷時生長板斷裂比骨幹骨折更常見。需及時處理以避免生長障礙。
+
+aliases:
+  - { alias: "Physeal Fracture", language: en }
+  - { alias: "Salter-Harris Fracture", language: en }
+  - { alias: "骺板骨折", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 幼犬常見（骨骼未成熟期）。遠端橈骨與遠端股骨為好發位置。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 幼貓常見。
+
+etiology:
+  categories:
+    - name: 外傷性
+      examples:
+        - 跌落
+        - 嬉戲中受傷
+        - 車禍
+
+clinicalSigns:
+  early:
+    - 肢體腫脹（近關節處）
+    - 跛行
+    - 疼痛
+  progressive:
+    - 肢體變形（生長板過早閉合）
+    - 肢體長度不等
+    - 角度變形
+
+diagnosis:
+  primaryTests:
+    - name: X 光
+      notes: Salter-Harris 分類（I-V 型）。生長板區域骨折線
+    - name: 對側肢 X 光比較
+      notes: 評估是否有生長板損傷
+
+treatment:
+  principles:
+    - 解剖復位恢復生長板功能
+    - 避免進一步損傷生長板
+    - 及時手術
+  general:
+    - 手術復位固定（避免跨越生長板的金屬固定物）
+    - 克氏針（Kirschner wire）固定
+    - 術後定期追蹤生長（每月 X 光）
+    - 早期矯正角度變形
+
+prognosis: 及時正確處理預後良好。延遲治療可能導致永久性肢體變形。Salter-Harris I-II 型預後優於 III-V 型。
+
+pubmedQueries:
+  - query: '"growth plate fracture" OR "Salter-Harris" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
+    frequency: monthly

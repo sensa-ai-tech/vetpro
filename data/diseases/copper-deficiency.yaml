@@ -1,0 +1,64 @@
+slug: copper-deficiency
+nameEn: Copper Deficiency
+nameZh: 銅缺乏症
+bodySystem: metabolic
+description: 銅為多種金屬酶的輔因子，參與鐵代謝、結締組織合成、黑色素生成及神經髓鞘形成。缺乏可導致貧血、毛色變淡、骨骼異常及神經症狀，但犬貓食用商業飼料時極少發生。
+
+aliases:
+  - { alias: 缺銅, language: zh }
+  - { alias: 銅營養不良, language: zh }
+  - { alias: Copper Deficiency Syndrome, language: en }
+  - { alias: Hypocupremia, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬銅缺乏極罕見，可見於長期高鋅補充（鋅拮抗銅吸收）或嚴重營養不良。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓銅缺乏極罕見，商業飼料含足夠銅。
+
+etiology:
+  categories:
+    - name: 攝入不足
+      examples:
+        - 不均衡的自製飲食
+        - 嚴重營養不良
+    - name: 吸收拮抗
+      examples:
+        - 過量鋅補充（銅鋅競爭腸道吸收）
+        - 高鐵飲食（鐵拮抗銅吸收）
+
+clinicalSigns:
+  early:
+    - 毛色變淡（黑色毛變為棕紅色）
+    - 毛髮質地改變
+  progressive:
+    - 貧血（鐵無法正常利用）
+    - 骨骼異常（幼犬長骨發育不良）
+    - 運動失調（神經髓鞘合成障礙）
+    - 免疫功能低下
+
+diagnosis:
+  primaryTests:
+    - name: 血清銅/血漿銅藍蛋白
+      notes: 血清銅及銅藍蛋白（ceruloplasmin）低於正常值。
+    - name: 肝臟銅含量
+      notes: 肝活檢銅含量降低為確定診斷（但侵入性大，臨床少用）。
+
+treatment:
+  principles:
+    - 口服銅補充
+    - 減少鋅或鐵的過量攝入
+    - 轉換至營養均衡飲食
+  general:
+    - 口服硫酸銅補充（0.5-1 mg/kg/day 短期）
+    - 停止過量鋅補充
+    - 轉換至均衡商業飼料
+    - 貧血嚴重時同時補充鐵劑
+
+prognosis: 銅缺乏經適當補充後多數症狀可逆，毛色恢復需數月。骨骼畸形若在生長期未矯正可能永久。神經症狀恢復程度因損傷嚴重度而異。
+
+pubmedQueries:
+  - query: '"Copper Deficiency" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

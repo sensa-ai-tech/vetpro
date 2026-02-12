@@ -1,0 +1,73 @@
+slug: cervical-disc-disease
+nameEn: Cervical Disc Disease
+nameZh: 頸椎椎間盤疾病
+bodySystem: neurology
+description: 頸椎椎間盤疾病為頸椎（C2-C7）椎間盤突出或退化導致脊髓或神經根壓迫的疾病。Hansen Type I（急性椎間盤突出）多見於軟骨營養不良品種（Dachshund、Beagle），Hansen Type II（慢性椎間盤膨出）多見於大型犬。頸部疼痛為最常見臨床表現。嚴重者可導致四肢癱瘓。
+
+aliases:
+  - { alias: 頸部椎間盤突出, language: zh }
+  - { alias: Cervical IVDD, language: en }
+  - { alias: Cervical Intervertebral Disc Disease, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬隻頸椎椎間盤疾病常見。Dachshund、Beagle、Cocker Spaniel（Type I）。Doberman、Great Dane（Type II / disc-associated wobbler syndrome）。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻頸椎椎間盤疾病少見。偶有報告。
+
+etiology:
+  categories:
+    - name: Hansen Type I
+      examples:
+        - 急性椎間盤突出（nucleus pulposus extrusion）
+        - 軟骨營養不良品種好發（Dachshund、Beagle）
+        - 椎間盤退化、鈣化→急性破裂
+    - name: Hansen Type II
+      examples:
+        - 慢性椎間盤膨出（annulus fibrosus protrusion）
+        - 大型犬好發
+        - 漸進性纖維環突出壓迫脊髓
+    - name: 好發部位
+      examples:
+        - C2-C3（最常見）
+        - C3-C4
+        - C5-C6、C6-C7（大型犬 wobbler 相關）
+
+clinicalSigns:
+  early:
+    - 頸部疼痛（低頭困難、抵抗頸部操作）
+    - 頸部僵硬
+    - 不願活動
+  progressive:
+    - 前肢跛行或無力（根徵候，root signature）
+    - 四肢共濟失調（tetraparesis）
+    - 本體感覺缺失
+    - 嚴重者四肢癱瘓（tetraplegia）
+    - 呼吸困難（C1-C5 高位病變嚴重壓迫時）
+
+diagnosis:
+  primaryTests:
+    - name: MRI
+      notes: 確診金標準。精確顯示椎間盤突出位置、脊髓壓迫程度與脊髓訊號變化（T2 高訊號提示脊髓水腫或壞死）。
+    - name: CT / CT myelography
+      notes: CT 可偵測鈣化椎間盤物質。CT myelography 評估脊髓壓迫。MRI 不可用時的替代。
+
+treatment:
+  principles:
+    - 輕度可保守治療
+    - 嚴重神經缺損需手術減壓
+    - 疼痛管理很重要
+  general:
+    - "保守治療（輕度疼痛、無神經缺損）：嚴格限制活動 4-6 週 + Gabapentin 5-10 mg/kg PO q8-12h + NSAID 或 Prednisolone"
+    - 手術減壓：ventral slot（腹側入路椎間盤切除術）
+    - 頸部護頸圈（支持）
+    - 物理治療（術後復健）
+    - "疼痛管理：Gabapentin + Tramadol 或 NSAID"
+
+prognosis: 保守治療成功率約 50-70%（輕度至中度病例）。手術減壓成功率約 80-90%。嚴重四肢癱瘓者術後恢復可能較慢但多數可改善。頸椎 IVDD 預後通常優於胸腰段（因頸椎管較寬）。復發率約 10-20%。
+
+pubmedQueries:
+  - query: '"cervical disc disease" OR "cervical IVDD" AND (veterinary OR canine) AND ("ventral slot" OR "treatment")'
+    frequency: monthly

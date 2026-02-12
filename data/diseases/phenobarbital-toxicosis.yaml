@@ -1,0 +1,78 @@
+slug: phenobarbital-toxicosis
+nameEn: Phenobarbital Toxicosis
+nameZh: 苯巴比妥中毒
+bodySystem: toxicology
+description: 苯巴比妥 (phenobarbital) 為犬貓常用抗癲癇藥物，過量或長期累積可引起急性中樞神經抑制或慢性肝毒性。急性過量常因意外攝食（誤食整瓶藥物）或劑量計算錯誤。犬貓均可發生。
+
+aliases:
+  - { alias: 巴比妥中毒, language: zh }
+  - { alias: Phenobarbital Overdose, language: en }
+  - { alias: Barbiturate Toxicosis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬為 phenobarbital 最常使用的動物。急性過量致死劑量約 85 mg/kg。長期使用治療劑量亦可引起肝毒性。血清藥物濃度監測為預防關鍵。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓 phenobarbital 代謝較犬慢，累積風險較高。治療窗口較窄。
+
+etiology:
+  categories:
+    - name: 毒性機制
+      examples:
+        - 增強 GABA-A 受體活性→中樞神經抑制
+        - 高劑量直接開啟氯離子通道
+        - 抑制呼吸中樞
+        - 慢性：肝臟 P450 酶誘導→肝毒性
+    - name: 來源
+      examples:
+        - 誤食整瓶癲癇控制藥物
+        - 劑量計算錯誤（尤其體重估算不準）
+        - 長期用藥累積（未監測血清濃度）
+        - 藥物交互作用影響代謝
+
+clinicalSigns:
+  early:
+    - 嗜睡與過度鎮靜
+    - 共濟失調
+    - 後肢無力
+  progressive:
+    - 深度昏迷
+    - 呼吸抑制
+    - 低血壓
+    - 低體溫
+    - 慢性肝毒性：黃疸、肝腫大
+
+diagnosis:
+  primaryTests:
+    - name: 血清 phenobarbital 濃度
+      notes: 治療範圍 15-45 μg/mL（犬）。>45 μg/mL 為中毒風險。>80 μg/mL 嚴重中毒
+    - name: 暴露史
+      notes: 確認攝入量與時間
+  additional:
+    - 肝功能（ALT、ALP、膽汁酸）
+    - 動脈血氣分析
+    - 血壓監測
+    - 體溫監測
+
+treatment:
+  principles:
+    - 支持呼吸功能
+    - 維持心血管穩定
+    - 促進藥物排除
+    - 慢性肝毒性則調整劑量
+  general:
+    - 催吐（早期，意識清醒時）+ 多次活性炭
+    - 呼吸支持（必要時插管與機械通氣）
+    - IV 輸液維持血壓與尿量
+    - 促進利尿（增加腎排泄）
+    - 體溫維持（保暖）
+    - 翻身預防褥瘡（昏迷期間）
+    - Intralipid 20% 1.5 mL/kg IV（脂溶性藥物中毒可考慮）
+
+prognosis: Phenobarbital 急性過量在積極支持療法下預後可良好，藥物半衰期犬約 40-90 小時，需長時間支持。呼吸衰竭為主要死因。慢性肝毒性停藥或減量後多數可恢復。
+
+pubmedQueries:
+  - query: '"phenobarbital" AND (toxicosis OR overdose) AND (veterinary OR canine OR feline) AND "treatment"'
+    frequency: monthly

@@ -1,0 +1,76 @@
+slug: obstipation
+nameEn: Obstipation
+nameZh: 頑固性便秘
+bodySystem: gastrointestinal
+description: 頑固性便秘（obstipation）為嚴重且難治的便秘，結腸內糞便極度乾硬蓄積，無法自行排出或對常規瀉劑無反應。可為慢性便秘的終末階段，長期結腸擴張最終導致巨結腸症（megacolon）伴結腸平滑肌不可逆功能喪失。貓隻為最常見受影響物種。
+
+aliases:
+  - { alias: 嚴重便秘, language: zh }
+  - { alias: Severe Constipation, language: en }
+  - { alias: Fecal Impaction, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻 obstipation 較貓少見。可繼發於骨盆骨折後狹窄、神經病變或嚴重代謝異常。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓隻 obstipation 常見，為巨結腸症的前期或伴隨表現。中年公貓好發。特發性巨結腸症為最常見原因。
+
+etiology:
+  categories:
+    - name: 特發性巨結腸症（貓）
+      examples:
+        - 結腸平滑肌功能障礙
+        - 結腸神經肌肉退化
+        - 長期便秘導致不可逆結腸擴張
+    - name: 結構性原因
+      examples:
+        - 骨盆骨折後通道狹窄
+        - 結腸或直腸腫塊
+        - 會陰疝（perineal hernia）
+    - name: 神經/代謝
+      examples:
+        - 尾骨或薦骨損傷
+        - 低血鉀（嚴重）
+        - 甲狀腺功能低下
+        - 脊髓疾病
+
+clinicalSigns:
+  early:
+    - 極度排便困難
+    - 多次排便嘗試但無法排出
+    - 食慾下降
+  progressive:
+    - 嘔吐
+    - 脫水
+    - 嗜睡
+    - 腹部膨大（觸診結腸極度擴張）
+    - 體重減輕
+    - 嚴重不適與疼痛
+
+diagnosis:
+  primaryTests:
+    - name: 腹部 X 光
+      notes: 結腸極度擴張充滿乾硬糞便。結腸直徑與第五腰椎等長或更大提示巨結腸。排除骨盆骨折、腫塊。
+    - name: 血液生化
+      notes: 評估脫水、電解質異常（低血鉀）、代謝狀態。排除代謝性原因。
+
+treatment:
+  principles:
+    - 急性期排糞與矯正脫水
+    - 長期藥物與飲食管理預防復發
+    - 難治性巨結腸考慮結腸切除
+  general:
+    - 靜脈輸液矯正脫水（排糞前）
+    - 全身麻醉下溫水灌腸 + 手動糞便碎裂排出
+    - "長期預防：Lactulose 0.5 mL/kg PO q8-12h + Cisapride 0.5-1 mg/kg PO q8-12h"
+    - "Polyethylene glycol（MiraLAX）混入食物"
+    - 濕食增加水分攝取
+    - "難治性巨結腸：次全結腸切除術（subtotal colectomy）"
+
+prognosis: 輕度 obstipation 在適當藥物管理下預後中等。反覆 obstipation 進展為巨結腸症者需長期積極管理。次全結腸切除術（貓）預後良好，術後腹瀉通常在數週至數月內改善。術後長期預後佳。
+
+pubmedQueries:
+  - query: '"obstipation" OR "megacolon" AND (veterinary OR canine OR feline) AND ("colectomy" OR "treatment")'
+    frequency: monthly

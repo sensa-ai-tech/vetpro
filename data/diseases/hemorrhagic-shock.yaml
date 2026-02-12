@@ -1,0 +1,82 @@
+slug: hemorrhagic-shock
+nameEn: Hemorrhagic Shock
+nameZh: 出血性休克
+bodySystem: emergency
+description: 出血性休克為急性大量失血導致組織灌注不足的危急狀態。犬貓失血超過血液容量 30-40% 即可致命。常見原因包括外傷、脾臟腫瘤破裂、凝血障礙與手術併發症。快速辨識與積極液體復甦為存活關鍵。
+
+aliases:
+  - { alias: 失血性休克, language: zh }
+  - { alias: Hypovolemic Shock, language: en }
+  - { alias: Hemorrhagic Hypovolemia, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬血液容量約 80-90 mL/kg。失血 >30% 出現代償失調休克。脾臟 hemangiosarcoma 破裂為非外傷性出血性休克最常見原因。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓血液容量約 60-70 mL/kg。貓休克表現與犬不同（心搏過緩而非心搏過速）。輸液策略需較犬保守。
+
+etiology:
+  categories:
+    - name: 外傷性
+      examples:
+        - 車禍（脾臟/肝臟破裂）
+        - 骨折（尤其骨盆與股骨 — 大量出血）
+        - 穿透性外傷
+    - name: 非外傷性
+      examples:
+        - 脾臟腫瘤破裂（hemangiosarcoma）
+        - 凝血障礙（抗凝血劑中毒、DIC）
+        - 消化道出血
+        - 手術後出血
+
+clinicalSigns:
+  early:
+    - 心搏過速（犬；貓可能心搏過緩）
+    - 黏膜蒼白
+    - 微血管充盈時間延長（>2 秒）
+    - 脈搏微弱
+  progressive:
+    - 低血壓
+    - 意識改變
+    - 四肢冰冷
+    - 乳酸升高
+    - 無尿
+    - 心臟停止
+
+diagnosis:
+  primaryTests:
+    - name: 臨床評估
+      notes: 休克五特徵：心搏過速、黏膜蒼白、CRT 延長、脈搏微弱、低體溫
+    - name: PCV / 總蛋白快速測定
+      notes: 急性出血初期 PCV 可能正常（稀釋效應尚未發生）。6-12 小時後 PCV 下降
+  additional:
+    - 乳酸（>2.5 mmol/L 提示組織低灌注）
+    - 血壓（收縮壓 <90 mmHg）
+    - AFAST/TFAST 超音波
+    - 血氣分析
+    - 凝血功能
+
+treatment:
+  principles:
+    - 快速血管內容量恢復
+    - 控制出血源
+    - 輸血
+    - 允許性低血壓（活動性出血時）
+  general:
+    - IV 通路（大口徑、雙管路）
+    - 晶體液 bolus：犬 10-20 mL/kg，貓 5-10 mL/kg（可重複）
+    - 膠體液（hydroxyethyl starch）犬 5-10 mL/kg
+    - 輸血：pRBC（PCV <25% 或持續出血）
+    - 活動性出血控制（壓迫、手術）
+    - 允許性低血壓：收縮壓目標 80-90 mmHg（避免過度輸液加重出血）
+    - 腹帶包紮（腹腔出血暫時壓迫）
+    - Tranexamic acid 10-15 mg/kg IV（抗纖溶）
+    - 保溫
+
+prognosis: 出血性休克預後取決於出血量、速度與控制能力。外傷性出血可控制者預後佳。脾臟 hemangiosarcoma 破裂即使穩定後長期預後仍差（腫瘤因素）。嚴重休克（乳酸 >6 mmol/L）致死率高。
+
+pubmedQueries:
+  - query: '"hemorrhagic shock" AND (veterinary OR canine OR feline) AND ("treatment" OR "resuscitation" OR "transfusion")'
+    frequency: monthly

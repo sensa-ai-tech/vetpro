@@ -1,0 +1,80 @@
+slug: cholecalciferol-rodenticide-toxicosis
+nameEn: Cholecalciferol Rodenticide Toxicosis
+nameZh: 膽鈣化醇殺鼠劑中毒
+bodySystem: toxicology
+description: 膽鈣化醇 (cholecalciferol/vitamin D3) 殺鼠劑中毒引起嚴重高鈣血症與高磷血症，導致軟組織鈣化（腎臟、心臟、血管壁）。毒性劑量低且治療困難，為潛在致命性中毒。需要數週的積極監測與治療。
+
+aliases:
+  - { alias: 維生素D殺鼠劑中毒, language: zh }
+  - { alias: Vitamin D3 Rodenticide Toxicosis, language: en }
+  - { alias: Cholecalciferol Poisoning, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬毒性劑量低（2 mg/kg 即可引起高鈣血症）。致死劑量約 10-20 mg/kg。治療期間需數週監測鈣磷。高鈣血症可持續數週。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓同樣易感。含 cholecalciferol 的外用乾癬軟膏也是意外暴露來源。
+
+etiology:
+  categories:
+    - name: 毒性機制
+      examples:
+        - Cholecalciferol 在肝臟轉化為 25-hydroxyvitamin D3
+        - 再在腎臟轉化為活性型 1,25-dihydroxyvitamin D3 (calcitriol)
+        - Calcitriol 促進腸道鈣磷吸收增加
+        - 持續性高鈣血症導致軟組織鈣化
+    - name: 來源
+      examples:
+        - 含 cholecalciferol 的殺鼠劑
+        - 含 calcipotriene 的外用乾癬藥膏
+        - 維生素 D 補充劑過量
+
+clinicalSigns:
+  early:
+    - 食慾下降（攝入後 12-36 小時）
+    - 嘔吐
+    - 嗜睡
+    - 多飲多尿
+  progressive:
+    - 嚴重脫水
+    - 腎衰竭（少尿/無尿）
+    - 心律不整
+    - 消化道出血
+    - 肌肉震顫
+    - 軟組織鈣化
+
+diagnosis:
+  primaryTests:
+    - name: 血清鈣與磷
+      notes: 高鈣血症（>12 mg/dL）與高磷血症為特徵性發現。可在攝入後 12-24 小時出現。離子鈣更準確
+    - name: 腎功能檢查
+      notes: BUN、creatinine 升高（腎臟鈣化損傷）
+  additional:
+    - 25-hydroxyvitamin D3 血清濃度（確認暴露）
+    - 心電圖（QT 間距縮短、心律不整）
+    - 尿液分析（等張尿、鈣結晶）
+    - 影像學（腎臟/軟組織鈣化）
+
+treatment:
+  principles:
+    - 促進鈣排泄
+    - 減少腸道鈣吸收
+    - 保護腎功能
+    - 長期監測（數週）
+  general:
+    - 催吐與活性炭（早期）
+    - Normal saline 利尿（2-3 倍維持量）
+    - Furosemide 2-4 mg/kg IV q8-12h（促鈣排泄）
+    - Prednisone 1-2 mg/kg PO BID（減少腸道鈣吸收）
+    - Pamidronate 1.3-2 mg/kg IV 單次（抑制骨吸收）
+    - Calcitonin 4-6 IU/kg SC q8-12h（急性高鈣血症）
+    - 低鈣飲食
+    - 監測血鈣每 24-48 小時持續 2-4 週
+
+prognosis: Cholecalciferol 中毒預後視診治時效與腎損傷程度而定。早期積極治療（24 小時內）預後可良好。已發展腎衰竭或嚴重軟組織鈣化者預後差。高鈣血症可持續 2-4 週，需長期監測。
+
+pubmedQueries:
+  - query: '"cholecalciferol" AND (rodenticide OR toxicosis) AND (veterinary OR canine OR feline)'
+    frequency: monthly

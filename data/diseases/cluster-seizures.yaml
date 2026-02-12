@@ -1,0 +1,73 @@
+slug: cluster-seizures
+nameEn: Cluster Seizures
+nameZh: 叢集性癲癇發作
+bodySystem: neurology
+description: 叢集性癲癇發作定義為 24 小時內發生 2 次以上的癲癇發作，發作間有意識恢復。為癲癇急症，需積極處理以防止進展為癲癇重積狀態（status epilepticus）。犬隻特發性癲癇患者約 30-40% 曾經歷叢集性發作。某些品種（German Shepherd、Border Collie）較易出現叢集性發作。
+
+aliases:
+  - { alias: 叢集性癲癇, language: zh }
+  - { alias: Serial Seizures, language: en }
+  - { alias: Cluster Epileptic Seizures, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬隻叢集性癲癇發作在癲癇犬中相對常見（約 30-40%）。German Shepherd、Border Collie、Australian Shepherd 可能更易發生。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻叢集性發作較犬隻少見。但結構性癲癇貓隻可能出現。
+
+etiology:
+  categories:
+    - name: 原發疾病
+      examples:
+        - 特發性癲癇（抗癲癇藥物控制不佳時）
+        - 結構性癲癇（腦腫瘤、腦炎）
+        - 代謝性癲癇（低血糖、肝性腦病）
+        - 中毒
+    - name: 觸發因素
+      examples:
+        - 抗癲癇藥物血中濃度過低（漏服藥物）
+        - 突然停藥
+        - 基礎疾病惡化
+        - 應激
+
+clinicalSigns:
+  early:
+    - 24 小時內反覆癲癇發作（≥2 次）
+    - 發作間意識恢復
+    - 發作後異常行為（pacing、失明、定向障礙）
+  progressive:
+    - 發作頻率增加
+    - 發作間恢復時間縮短
+    - 進展為癲癇重積狀態
+    - 腦水腫
+    - 體溫過高
+
+diagnosis:
+  primaryTests:
+    - name: 臨床觀察與病史
+      notes: 24 小時內 ≥2 次癲癇發作。評估抗癲癇藥物血中濃度。排除代謝性原因（血糖、電解質、肝功能）。
+    - name: 進一步評估
+      notes: 抗癲癇藥物血中濃度（Phenobarbital target 20-30 μg/mL）。腦部 MRI（排除結構性原因）。CSF 分析（排除腦炎）。毒理學篩檢。
+
+treatment:
+  principles:
+    - 中斷叢集性發作為緊急優先
+    - 防止進展為癲癇重積狀態
+    - 調整長期抗癲癇治療
+  general:
+    - "居家急救：Diazepam 0.5-1 mg/kg rectal（飼主可在家施用）"
+    - "或 Midazolam 0.2 mg/kg intranasal / IM"
+    - "住院：Levetiracetam 30-60 mg/kg IV loading → 20 mg/kg IV q8h"
+    - "Phenobarbital 4 mg/kg IV loading（分 2 次給予）"
+    - "持續輸注：Midazolam 0.2-0.5 mg/kg/hr CRI 或 Propofol 0.1-0.6 mg/kg/min CRI"
+    - 體溫監測與冷卻（>40°C 時積極降溫）
+    - 調整長期抗癲癇藥物（加藥或增加劑量）
+    - "居家 pulse therapy：Levetiracetam 20-30 mg/kg PO q8h × 48-72h（叢集發作開始時）"
+
+prognosis: 適當處理下多數叢集性發作可被中斷。反覆叢集性發作者需調整長期抗癲癇治療。進展為癲癇重積者預後較差。多種藥物無法控制者預後不佳。部分犬隻可透過 pulse therapy 在家管理叢集發作。整體預後取決於基礎癲癇原因與藥物反應。
+
+pubmedQueries:
+  - query: '"cluster seizures" AND (veterinary OR canine OR feline) AND ("treatment" OR "levetiracetam" OR "emergency")'
+    frequency: monthly

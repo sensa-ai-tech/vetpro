@@ -1,0 +1,64 @@
+slug: pathologic-fracture
+nameEn: Pathologic Fracture
+nameZh: 病理性骨折
+bodySystem: orthopedic
+description: 因骨骼本身疾病（腫瘤、感染、代謝性骨病）導致骨質弱化而在輕微或無明顯外力下發生的骨折。需同時治療骨折與根本骨骼病變。
+
+aliases:
+  - { alias: "Pathological Fracture", language: en }
+  - { alias: "骨病性骨折", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬常見原因為骨肉瘤、轉移性腫瘤、骨髓炎。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓常見原因為骨腫瘤。
+
+etiology:
+  categories:
+    - name: 骨骼腫瘤
+      examples:
+        - 骨肉瘤（犬最常見原因）
+        - 轉移性腫瘤
+        - 多發性骨髓瘤
+    - name: 骨骼感染/代謝性
+      examples:
+        - 骨髓炎
+        - 代謝性骨病（腎性骨營養不良）
+        - 甲狀旁腺功能亢進
+
+clinicalSigns:
+  early:
+    - 輕微外力後突然跛行
+    - 骨折處在已有腫脹或疼痛的部位
+  progressive:
+    - 完全不負重
+    - 骨折處不穩定
+    - 原發疾病症狀
+
+diagnosis:
+  primaryTests:
+    - name: X 光
+      notes: 骨折處見溶骨性或增生性病灶。評估腫瘤特徵
+    - name: 活檢
+      notes: 確認根本骨骼病變
+    - name: 分期檢查
+      notes: 腫瘤性需胸腔 X 光排除轉移
+
+treatment:
+  principles:
+    - 治療根本骨骼疾病
+    - 骨折固定需考慮骨質狀態
+  general:
+    - 骨肉瘤：截肢 + 化療
+    - 感染性：抗生素 + 固定
+    - 代謝性：矯正代謝異常
+    - 姑息性治療（止痛）
+
+prognosis: 取決於根本病因。骨肉瘤截肢 + 化療中位存活約 1 年。感染性適當治療預後中等。代謝性糾正後可癒合。
+
+pubmedQueries:
+  - query: '"pathologic fracture" AND (veterinary OR canine OR feline) AND ("osteosarcoma" OR "treatment")'
+    frequency: monthly

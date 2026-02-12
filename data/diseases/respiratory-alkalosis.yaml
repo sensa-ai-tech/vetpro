@@ -1,0 +1,70 @@
+slug: respiratory-alkalosis
+nameEn: Respiratory Alkalosis
+nameZh: 呼吸性鹼中毒
+bodySystem: respiratory
+description: 因過度換氣（hyperventilation）導致二氧化碳過度排出，PaCO2 下降而引起血液 pH 升高的酸鹼失衡。常見於疼痛、焦慮、低血氧代償性過度換氣或中樞神經系統疾病，通常為繼發表現而非原發疾病。
+
+aliases:
+  - { alias: 呼吸性鹼血症, language: zh }
+  - { alias: 低碳酸血症, language: zh }
+  - { alias: Hypocapnia, language: en }
+  - { alias: Respiratory Alkalaemia, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬常見於疼痛、焦慮、高體溫或低血氧導致的代償性過度換氣。短頭犬品種較不易產生代償性過度換氣。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓呼吸性鹼中毒可見於嚴重疼痛、貓氣喘急性發作初期或中暑時過度喘息。
+
+etiology:
+  categories:
+    - name: 低血氧驅動
+      examples:
+        - 肺炎或肺水腫（低血氧→代償性過度換氣）
+        - 嚴重貧血
+        - 高海拔
+    - name: 非低血氧驅動
+      examples:
+        - 疼痛/焦慮
+        - 高體溫/中暑
+        - 中樞神經疾病（腦炎、腦腫瘤）
+        - 肝臟衰竭（氨刺激呼吸中樞）
+
+clinicalSigns:
+  early:
+    - 呼吸急促
+    - 焦躁不安
+    - 心搏過速
+  progressive:
+    - 肌肉震顫（低鈣效應）
+    - 暈厥
+    - 意識改變
+    - 心律不整
+
+diagnosis:
+  primaryTests:
+    - name: 動脈血氣分析
+      notes: pH >7.45，PaCO2 <35 mmHg。急性時 HCO3- 正常，慢性時腎臟代償使 HCO3- 降低。
+    - name: 基礎疾病評估
+      notes: 胸腔 X 光（肺實質病變）、體溫（高體溫）、疼痛評估、神經學檢查。
+
+treatment:
+  principles:
+    - 治療潛在病因為首要（止痛、降溫、改善氧合）
+    - 呼吸性鹼中毒本身通常不需直接治療
+    - 矯正低氧血症
+    - 嚴重時考慮鎮靜減緩呼吸
+  general:
+    - 解除疼痛（鎮痛藥物）
+    - 矯正低血氧（補充氧氣）
+    - 降溫處理（高體溫時）
+    - 焦慮鎮靜（必要時低劑量 Acepromazine 或 Butorphanol）
+    - 治療基礎神經或肝臟疾病
+
+prognosis: 呼吸性鹼中毒本身較少直接致命，預後取決於基礎病因。疼痛或焦慮引起者控制後迅速改善。低血氧代償性過度換氣者預後取決於肺部疾病嚴重度。中樞性過度換氣提示腦幹病變，預後較差。
+
+pubmedQueries:
+  - query: '"Respiratory Alkalosis" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

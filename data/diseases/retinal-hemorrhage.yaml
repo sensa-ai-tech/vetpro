@@ -1,0 +1,71 @@
+slug: retinal-hemorrhage
+nameEn: Retinal Hemorrhage
+nameZh: 視網膜出血
+bodySystem: ophthalmology
+description: 視網膜血管破裂導致血液滲入視網膜各層的病理表現。非獨立疾病，而是全身性疾病 (高血壓、血液疾病、凝血異常) 或眼內疾病的重要徵象。發現視網膜出血需積極排查全身性原因。
+
+aliases:
+  - { alias: Retinal Bleeding, language: en }
+  - { alias: Fundus Hemorrhage, language: en }
+  - { alias: 眼底出血, language: zh }
+  - { alias: 視網膜血管出血, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬常見原因為全身性高血壓、免疫媒介性血小板減少症、凝血異常。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓最常見原因為全身性高血壓 (繼發於 CKD 或甲亢)。
+
+etiology:
+  categories:
+    - name: 全身性高血壓
+      examples:
+        - 慢性腎病 (CKD)
+        - 甲狀腺功能亢進 (貓)
+        - 腎上腺皮質功能亢進
+    - name: 血液疾病
+      examples:
+        - 血小板減少症 (ITP)
+        - 凝血因子缺乏
+        - 抗凝血劑中毒
+    - name: 其他
+      examples:
+        - 血管炎
+        - 高黏稠度症候群 (多發性骨髓瘤)
+        - 外傷
+
+clinicalSigns:
+  early:
+    - 可能無明顯外觀異常
+    - 視力輕微改變
+  progressive:
+    - 突然失明 (大量出血或視網膜剝離)
+    - 瞳孔散大
+    - 眼底可見各形態出血灶
+
+diagnosis:
+  primaryTests:
+    - name: 間接眼底鏡檢查
+      notes: 視網膜出血分類：點狀、火焰狀、片狀、視網膜前或視網膜下出血
+    - name: 血壓測量
+      notes: 排除高血壓 (systolic > 160 mmHg)。貓高血壓視網膜病變極為常見
+    - name: CBC + 凝血功能
+      notes: 排除血小板減少、貧血、凝血異常
+
+treatment:
+  principles:
+    - 治療根本原因為首要
+    - 控制血壓保護眼底
+  general:
+    - 高血壓：Amlodipine (貓首選) 降壓至 systolic < 160 mmHg
+    - 血小板減少：免疫抑制治療
+    - 凝血異常：Vitamin K1 (抗凝血劑中毒)
+    - 定期眼底追蹤
+
+prognosis: 取決於根本原因與視網膜損傷程度。高血壓控制後輕度出血可吸收。視網膜剝離或大量出血者視力恢復不佳。早期辨識與治療根本原因可保留視力。
+
+pubmedQueries:
+  - query: '"retinal hemorrhage" AND (veterinary OR canine OR feline) AND ("hypertension" OR "diagnosis")'
+    frequency: monthly

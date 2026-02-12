@@ -1,0 +1,86 @@
+slug: heartworm-disease-infectious
+nameEn: Heartworm Disease Infectious
+nameZh: 心絲蟲感染症
+bodySystem: cardiac
+description: 心絲蟲感染症 (heartworm disease) 由犬心絲蟲 (Dirofilaria immitis) 引起，經蚊蟲叮咬傳播。成蟲寄居於肺動脈與右心室，引起肺動脈高壓、右心衰竭及肺栓塞。犬為典型宿主；貓為非典型宿主，感染型態及治療策略截然不同。
+
+aliases:
+  - { alias: 犬心絲蟲病, language: zh }
+  - { alias: 惡絲蟲感染, language: zh }
+  - { alias: Dirofilariasis, language: en }
+  - { alias: Heartworm Infection, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬為典型宿主。成蟲壽命 5-7 年。嚴重感染可有數十至上百條成蟲。美國東南部與密西西比流域為高盛行區。全年預防為標準建議。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓為非典型宿主，蟲體數量少（1-3 條），成蟲壽命較短（2-3 年）。即使少量蟲體也可引起嚴重肺部疾病 (HARD)。成蟲殺蟲劑不適用於貓。
+
+etiology:
+  categories:
+    - name: 生活史
+      examples:
+        - 經蚊蟲 (Aedes, Culex, Anopheles spp.) 叮咬傳播微絲蟲 (L3)
+        - L3 在皮下組織發育為 L4、L5
+        - 幼蟲約 6 個月發育為成蟲抵達肺動脈
+        - 成犬成蟲壽命 5-7 年
+    - name: 致病機制
+      examples:
+        - 成蟲引起肺動脈內膜增厚與肺動脈高壓
+        - 微絲蟲引起免疫反應
+        - 蟲體死亡引起肺栓塞與急性肺損傷
+        - Wolbachia 內共生菌釋放引起發炎
+
+clinicalSigns:
+  early:
+    - 多數早期無症狀
+    - 輕度咳嗽
+    - 運動不耐
+  progressive:
+    - 慢性咳嗽
+    - 運動後呼吸困難
+    - 右心衰竭（腹水、頸靜脈怒張）
+    - 昏厥
+    - 腔靜脈症候群 (caval syndrome)（急性溶血性貧血、休克）
+    - "貓：急性呼吸窘迫或猝死"
+
+diagnosis:
+  primaryTests:
+    - name: 抗原檢測
+      notes: 犬首選篩檢。偵測成蟲分泌蛋白。感染後 6-7 個月才可偵測。僅全雌蟲感染可能偽陰性
+    - name: 微絲蟲檢測（Knott's test）
+      notes: 濃縮法偵測循環中微絲蟲。約 20% 犬感染後無微絲蟲血症（潛伏性感染）
+  imaging:
+    - name: 胸腔 X-ray
+      notes: 評估肺動脈擴張、右心擴大、肺實質病變。判定疾病嚴重度
+    - name: 心臟超音波
+      notes: 可直接見到肺動脈或右心室內蟲體。評估右心功能與肺動脈高壓
+  additional:
+    - CBC（嗜酸球增多、貧血）
+    - 生化（肝腎功能）
+    - 尿液分析（蛋白尿）
+    - "貓：抗體檢測（偵測暴露）+ 抗原檢測"
+
+treatment:
+  principles:
+    - 犬使用三劑 melarsomine 殺蟲方案
+    - 治療前穩定心肺功能
+    - 嚴格限制運動
+    - 貓不使用成蟲殺蟲劑
+  general:
+    - "犬：三劑 melarsomine (Immiticide) 方案：第 1 劑 → 1 個月 → 第 2、3 劑間隔 24 小時"
+    - 治療前 30 天開始 doxycycline 10 mg/kg PO BID（殺 Wolbachia）
+    - 治療前開始大環內酯預防劑（ivermectin/moxidectin）
+    - Prednisone 漸減（控制肺栓塞反應）
+    - 嚴格限制運動 6-8 週
+    - 腔靜脈症候群需緊急手術取蟲
+    - "貓：支持療法 + 預防劑 + prednisolone（無成蟲殺蟲劑）"
+    - 全年持續心絲蟲預防
+
+prognosis: 犬心絲蟲感染輕度至中度者（Class I-II）melarsomine 治療預後良好。重度感染（Class III）或腔靜脈症候群預後謹慎。治療期間肺栓塞為主要風險。貓預後不可預測，可能自行清除或猝死。
+
+pubmedQueries:
+  - query: '"heartworm disease" OR "Dirofilaria immitis" AND (canine OR feline OR veterinary) AND ("treatment" OR "guidelines")'
+    frequency: monthly

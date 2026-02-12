@@ -1,0 +1,61 @@
+slug: brain-tumor-oncology
+nameEn: Brain Tumor Oncology
+nameZh: 腦腫瘤（腫瘤科）
+bodySystem: oncology
+description: 腦部的原發性或轉移性腫瘤。犬以腦膜瘤與膠質瘤最常見，貓以腦膜瘤最常見。臨床表現取決於腫瘤位置，包括癲癇、行為改變與神經功能缺損。
+
+aliases:
+  - { alias: "Intracranial Neoplasia", language: en }
+  - { alias: "腦瘤", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬偶見。短頭品種犬膠質瘤好發。老年犬腦膜瘤好發。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓以腦膜瘤最常見。老年貓。
+
+etiology:
+  categories:
+    - name: 腫瘤性
+      examples:
+        - 腦膜瘤（meningioma）
+        - 膠質瘤（glioma）
+        - 脈絡叢腫瘤
+        - 轉移性腫瘤
+
+clinicalSigns:
+  early:
+    - 新發癲癇（> 5 歲首次癲癇高度懷疑）
+    - 行為改變
+    - 步態異常
+  progressive:
+    - 癲癇頻率增加
+    - 神經功能進行性惡化
+    - 視力喪失
+    - 意識狀態改變
+
+diagnosis:
+  primaryTests:
+    - name: MRI
+      notes: 腦腫瘤診斷首選。評估腫塊大小、位置、強化特徵
+    - name: CSF 分析
+      notes: 排除炎症性疾病。腫瘤性蛋白升高
+
+treatment:
+  principles:
+    - 手術、放射治療、化療視腫瘤類型而定
+    - 控制癲癇
+  general:
+    - 手術切除（表面腦膜瘤可手術）
+    - 放射治療（首選或術後輔助）
+    - Hydroxyurea（腦膜瘤姑息性）
+    - 抗癲癇藥物
+    - Prednisolone 降腦壓
+
+prognosis: 腦膜瘤手術 + 放射治療後中位存活 > 2 年。膠質瘤預後較差。姑息性治療（類固醇 + 抗癲癇）中位存活 2-4 個月。
+
+pubmedQueries:
+  - query: '"brain tumor" AND (veterinary OR canine OR feline) AND ("radiation" OR "treatment")'
+    frequency: monthly

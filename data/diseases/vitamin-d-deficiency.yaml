@@ -1,0 +1,68 @@
+slug: vitamin-d-deficiency
+nameEn: Vitamin D Deficiency
+nameZh: 維生素 D 缺乏症
+bodySystem: metabolic
+description: 維生素 D 攝入不足或代謝異常導致的營養缺乏，影響鈣磷代謝與骨骼健康。犬貓不同於人類，主要依賴飲食攝取維生素 D 而非皮膚合成，因此飲食中缺乏維生素 D 是主要風險因素。
+
+aliases:
+  - { alias: 維生素丁缺乏, language: zh }
+  - { alias: 佝僂病, language: zh }
+  - { alias: Hypovitaminosis D, language: en }
+  - { alias: Rickets, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬維生素 D 缺乏可見於餵食不均衡自製飲食的幼犬，導致佝僂病（rickets）。成犬較少見。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓幾乎完全依賴飲食獲取維生素 D。室內貓更需注意飲食中維生素 D 充足。
+
+etiology:
+  categories:
+    - name: 攝入不足
+      examples:
+        - 不均衡的自製飲食（缺乏魚油、肝臟等）
+        - 鈣磷比例失調的飲食
+    - name: 代謝障礙
+      examples:
+        - 慢性腎病（1,25-dihydroxyvitamin D 活化障礙）
+        - 肝臟疾病（25-hydroxylation 障礙）
+        - 腸道吸收不良
+
+clinicalSigns:
+  early:
+    - 生長遲緩
+    - 骨骼發育異常
+    - 肌肉無力
+  progressive:
+    - 佝僂病（幼犬：長骨彎曲、肋骨串珠）
+    - 骨軟化症（成犬：骨折風險增加）
+    - 低鈣血症（肌肉震顫、癲癇）
+    - 牙齒發育不良
+
+diagnosis:
+  primaryTests:
+    - name: 血清 25-hydroxyvitamin D
+      notes: 25(OH)D 為維生素 D 營養狀態最佳指標。<20 ng/mL 為缺乏。
+    - name: 鈣磷及 PTH
+      notes: 低鈣、低磷、PTH 升高（繼發性副甲狀腺功能亢進）。ALP 升高（骨骼代謝活躍）。
+
+treatment:
+  principles:
+    - 維生素 D 補充
+    - 矯正鈣磷失衡
+    - 改善飲食
+    - 避免過量補充（維生素 D 中毒嚴重）
+  general:
+    - 口服維生素 D3 補充（依獸醫指導劑量）
+    - 同時補充鈣質（飲食或口服鈣劑）
+    - 轉換至營養均衡商業飼料
+    - 慢性腎病需使用活性維生素 D（Calcitriol）
+    - 定期監測 25(OH)D、鈣、磷及 PTH
+
+prognosis: 幼犬佝僂病如在骨骼生長板閉合前診斷並治療，骨骼畸形可部分改善。成犬骨軟化症補充後骨密度可恢復。維生素 D 過量補充可導致高鈣血症腎衰竭，需謹慎監測。
+
+pubmedQueries:
+  - query: '"Vitamin D Deficiency" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
+    frequency: monthly

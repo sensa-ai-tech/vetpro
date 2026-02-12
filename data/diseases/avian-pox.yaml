@@ -1,0 +1,73 @@
+slug: avian-pox
+nameEn: Avian Pox
+nameZh: 禽痘
+bodySystem: infectious
+description: 禽痘是由禽痘病毒（Avipoxvirus）引起的病毒性疾病，分為乾燥型（皮膚型）與濕潤型（黏膜型）。皮膚型表現為無羽毛區域的結節性病灶，黏膜型影響口腔與呼吸道，後者預後較差。
+
+aliases:
+  - { alias: 鳥痘, language: zh }
+  - { alias: 禽痘病毒感染, language: zh }
+  - { alias: Bird pox, language: en }
+  - { alias: Avian poxvirus infection, language: en }
+  - { alias: Fowl pox, language: en }
+
+species:
+  - speciesCommon: bird
+    prevalence: uncommon
+    notes: 鸚鵡類、金絲雀、雀科鳥類均可感染。蚊蟲叮咬為主要傳播途徑。溫暖潮濕季節發病率較高。
+
+etiology:
+  categories:
+    - name: 病毒性
+      examples:
+        - 禽痘病毒（Avipoxvirus，多種株）
+        - 蚊蟲叮咬傳播（主要途徑）
+        - 直接接觸感染分泌物
+        - 氣霧傳播（黏膜型）
+    - name: 風險因素
+      examples:
+        - 蚊蟲暴露（戶外飼養）
+        - 免疫力低下
+        - 擁擠飼養
+
+clinicalSigns:
+  early:
+    - 無羽毛區域出現小丘疹（眼周、喙基部、腳）
+    - 輕度結膜炎
+  progressive:
+    - 結節增大形成痂皮（乾燥型）
+    - 口腔黏膜白色偽膜（濕潤型）
+    - 呼吸困難（濕潤型侵犯氣道）
+    - 眼瞼腫脹閉合
+    - 進食困難
+    - 體重下降
+
+diagnosis:
+  primaryTests:
+    - name: 臨床表徵
+      notes: 典型皮膚結節或口腔偽膜。無羽毛區域特徵性增殖性病灶
+    - name: 組織病理學
+      notes: 表皮增生，角質層內嗜酸性核內包涵體（Bollinger 小體）
+    - name: PCR 檢測
+      notes: 病灶組織 PCR 確認禽痘病毒
+
+treatment:
+  principles:
+    - 無特效抗病毒治療
+    - 支持療法等待自癒
+    - 預防繼發感染
+    - 環境蚊蟲控制
+  general:
+    - 皮膚型多自限性（2-4 週自癒）
+    - 局部消毒護理皮膚病灶
+    - 口腔型小心移除偽膜並消毒
+    - 抗生素預防繼發性細菌感染
+    - 維生素 A 補充促進黏膜修復
+    - 保溫與營養支持
+    - 防蚊措施（紗窗、驅蚊）
+
+prognosis: 皮膚型預後良好，多數可自癒。黏膜型預後謹慎，尤其侵犯喉部或氣管時可致死。繼發感染為重要惡化因子。恢復後可獲得免疫力。嚴重眼部病變可能導致永久性視力受損。
+
+pubmedQueries:
+  - query: '"avian pox" OR "avipoxvirus" AND (parrot OR psittacine OR canary) AND (treatment OR management)'
+    frequency: monthly

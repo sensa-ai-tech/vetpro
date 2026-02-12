@@ -1,0 +1,73 @@
+slug: rib-fracture
+nameEn: Rib Fracture
+nameZh: 肋骨骨折
+bodySystem: emergency
+description: 肋骨骨折為胸部外傷常見損傷，可為單根或多根。疼痛導致自主限制呼吸為主要臨床影響。嚴重多發肋骨骨折可形成連枷胸。骨折端可能刺穿肺臟引起氣胸或血胸。多數保守管理，有效止痛為關鍵。
+
+aliases:
+  - { alias: 肋骨斷裂, language: zh }
+  - { alias: Costal Fracture, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬肋骨骨折常見於車禍與大型犬咬傷。第 4-10 肋骨最常受影響。止痛為主要治療。多數保守管理即可。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓肋骨骨折見於車禍與高處墜落。貓肋骨較薄易骨折但亦易癒合。
+
+etiology:
+  categories:
+    - name: 常見原因
+      examples:
+        - 車禍（鈍性創傷）
+        - 犬咬傷
+        - 高處墜落
+        - 踢傷
+    - name: 併發症
+      examples:
+        - 氣胸（骨折端刺穿肺臟）
+        - 血胸
+        - 連枷胸（多發骨折）
+        - 肺挫傷
+
+clinicalSigns:
+  early:
+    - 胸壁疼痛（觸碰或呼吸時）
+    - 呼吸淺快
+    - 骨折處觸診摩擦感
+  progressive:
+    - 呼吸困難（合併氣/血胸或肺挫傷時）
+    - 皮下氣腫（氣胸合併時）
+    - 胸壁腫脹
+
+diagnosis:
+  primaryTests:
+    - name: 胸部 X-ray
+      notes: 肋骨骨折線。評估氣胸、血胸、肺挫傷
+    - name: 觸診
+      notes: 骨折部位腫脹、壓痛、摩擦感
+  additional:
+    - TFAST 超音波（氣胸/血胸快速篩檢）
+    - 動脈血氣（嚴重者）
+
+treatment:
+  principles:
+    - 止痛為核心
+    - 監測肺部併發症
+    - 多數保守管理
+  general:
+    - 止痛：opioids（buprenorphine、fentanyl）
+    - 肋間神經阻斷（bupivacaine 局部注射）
+    - 口服止痛（gabapentin + NSAID — 避免與 opioid 呼吸抑制合併）
+    - 氧氣補充（如需）
+    - 合併氣胸：胸腔穿刺或胸管
+    - 限制活動 3-4 週
+    - 避免胸帶過緊包紮（限制呼吸）
+    - 手術（罕需）：嚴重錯位影響通氣或內臟損傷
+
+prognosis: 單純肋骨骨折預後極佳，3-4 週癒合。合併肺挫傷或氣胸者需較密切監測但多數可恢復。多發肋骨骨折（連枷胸）預後較差但仍多數可存活。
+
+pubmedQueries:
+  - query: '"rib fracture" AND (veterinary OR canine OR feline) AND ("treatment" OR "thoracic trauma")'
+    frequency: monthly

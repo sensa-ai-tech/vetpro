@@ -1,0 +1,73 @@
+slug: snail-bait-toxicosis
+nameEn: Snail Bait Toxicosis
+nameZh: 蝸牛餌劑中毒
+bodySystem: toxicology
+description: 蝸牛餌劑中毒泛指犬貓攝入各類蝸牛/蛞蝓殺蟲劑後的中毒反應。常見活性成分包括 metaldehyde（引起震顫癲癇）、methiocarb（膽鹼酯酶抑制劑）及 iron phosphate（相對安全但大量攝入仍可引起鐵中毒）。確認產品成分為治療關鍵。
+
+aliases:
+  - { alias: 蛞蝓餌劑中毒, language: zh }
+  - { alias: Slug Bait Toxicosis, language: en }
+  - { alias: Molluscicide Poisoning, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬最常見蝸牛餌劑中毒動物。顆粒狀產品適口性佳。需確認活性成分以選擇正確治療方案。春夏季為好發季節。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓較少攝食蝸牛餌劑但仍有報告。
+
+etiology:
+  categories:
+    - name: 常見活性成分
+      examples:
+        - Metaldehyde（最常見，引起神經興奮/震顫）
+        - Methiocarb（氨基甲酸酯類，膽鹼酯酶抑制劑）
+        - Iron phosphate（相對安全，但大量可致鐵中毒）
+        - Metaldehyde + carbamate 複合製劑
+    - name: 毒性機制
+      examples:
+        - Metaldehyde 降低 GABA 引起神經興奮
+        - Methiocarb 抑制膽鹼酯酶（SLUD 症狀）
+        - Iron phosphate 大量攝入引起鐵中毒
+
+clinicalSigns:
+  early:
+    - "Metaldehyde：震顫、過度興奮"
+    - "Methiocarb：流涎、流淚、排尿、腹瀉 (SLUD)"
+    - 嘔吐
+  progressive:
+    - "Metaldehyde：癲癇、高燒、肝衰竭"
+    - "Methiocarb：瞳孔縮小、心動過緩、呼吸困難"
+    - 休克與死亡
+
+diagnosis:
+  primaryTests:
+    - name: 產品標示確認
+      notes: 最重要步驟——確認蝸牛餌劑的活性成分。不同成分治療方案截然不同
+    - name: 臨床症狀分析
+      notes: 震顫型（metaldehyde）vs 膽鹼能型（methiocarb）有助鑑別
+  additional:
+    - 胃內容物化學分析
+    - CBC 與生化
+    - 膽鹼酯酶活性（methiocarb）
+    - 血清鐵（iron phosphate 大量攝入）
+
+treatment:
+  principles:
+    - 治療策略取決於活性成分
+    - 早期去汙染
+    - 針對性解毒與支持
+  general:
+    - "Metaldehyde：控制震顫（diazepam/methocarbamol）+ 散熱 + 肝保護"
+    - "Methiocarb：atropine 0.02-0.04 mg/kg IV（解膽鹼能毒性）"
+    - "Iron phosphate：催吐 + deferoxamine（鐵螯合劑）若大量攝入"
+    - 所有類型：催吐（早期意識清醒時）+ 活性炭
+    - IV 輸液支持
+    - 建議飼主改用 iron phosphate 產品
+
+prognosis: 預後取決於活性成分與劑量。Metaldehyde 中毒積極治療存活率可達 70-80%。Methiocarb 有 atropine 解毒存活率高。Iron phosphate 大量攝入預後較佳。及早確認成分並針對性治療可顯著改善預後。
+
+pubmedQueries:
+  - query: '"snail bait" OR "molluscicide" AND (toxicosis OR poisoning) AND (veterinary OR canine)'
+    frequency: monthly

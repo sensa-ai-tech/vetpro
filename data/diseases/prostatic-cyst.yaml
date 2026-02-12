@@ -1,0 +1,74 @@
+slug: prostatic-cyst
+nameEn: Prostatic Cyst
+nameZh: 前列腺囊腫
+bodySystem: reproductive
+description: 前列腺囊腫分為腺體內囊腫（intraprostatic cyst，與 BPH 相關的腺管擴張）與旁前列腺囊腫（paraprostatic cyst，源自前列腺旁的胚胎殘留結構）。腺體內囊腫隨去勢可消退，旁前列腺囊腫常需手術切除。犬為主要受影響物種。
+
+aliases:
+  - { alias: 前列腺旁囊腫, language: zh }
+  - { alias: Paraprostatic Cyst, language: en }
+  - { alias: Prostatic Retention Cyst, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 腺體內囊腫見於 BPH 犬，去勢後可消退。旁前列腺囊腫可生長極大（直徑 >10 cm），壓迫尿道或直腸。手術切除 + 去勢為旁前列腺囊腫的標準治療。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓前列腺囊腫極罕見。
+
+etiology:
+  categories:
+    - name: 囊腫類型
+      examples:
+        - 腺體內囊腫（retention cyst）：BPH 引起腺管阻塞、分泌物蓄積
+        - 旁前列腺囊腫（paraprostatic cyst）：müllerian duct 殘留或前列腺被膜外突
+        - 囊腫繼發感染可形成膿瘍
+    - name: 風險因子
+      examples:
+        - 未結紮公犬
+        - BPH
+        - 高齡
+
+clinicalSigns:
+  early:
+    - 多數初期無症狀
+    - 排尿費力
+    - 排便困難
+  progressive:
+    - 腹部膨大（大型旁前列腺囊腫）
+    - 尿道阻塞
+    - 嚴重便秘
+    - 後肢水腫（壓迫靜脈回流）
+    - 繼發感染（發燒、疼痛）
+
+diagnosis:
+  primaryTests:
+    - name: 腹部超音波
+      notes: 前列腺內或旁的無回音液性腔室。旁前列腺囊腫可延伸至腹腔
+    - name: 腹部 X-ray
+      notes: 骨盆入口或腹腔內巨大軟組織/液性密度腫塊
+  additional:
+    - 超音波引導穿刺（囊液分析、排除膿瘍）
+    - CT（評估囊腫與周圍結構關係）
+    - 尿液分析
+    - 直腸觸診
+
+treatment:
+  principles:
+    - 腺體內囊腫：去勢常可消退
+    - 旁前列腺囊腫：手術切除 + 去勢
+    - 感染囊腫同前列腺膿瘍處理
+  general:
+    - 腺體內囊腫：去勢 ± 超音波引導引流
+    - 旁前列腺囊腫：手術切除（完整摘除囊壁）+ 去勢
+    - 大型囊腫術前引流減壓
+    - Omentalization（囊壁無法完整切除時）
+    - 長療程抗生素（感染囊腫）
+    - 術後影像追蹤
+
+prognosis: 腺體內囊腫去勢後預後極佳。旁前列腺囊腫手術完整切除後預後佳。囊壁殘留者復發率較高。感染囊腫處理較複雜，預後與前列腺膿瘍相似。
+
+pubmedQueries:
+  - query: '"prostatic cyst" OR "paraprostatic cyst" AND (veterinary OR canine) AND ("treatment" OR "surgery")'
+    frequency: monthly

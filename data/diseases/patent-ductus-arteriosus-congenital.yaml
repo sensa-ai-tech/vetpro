@@ -1,0 +1,74 @@
+slug: patent-ductus-arteriosus-congenital
+nameEn: Patent Ductus Arteriosus Congenital
+nameZh: 先天性開放性動脈導管
+bodySystem: cardiac
+description: 開放性動脈導管（PDA）為犬貓最常見的先天性心臟缺陷之一，動脈導管在出生後未能正常閉合，導致主動脈血液經導管分流至肺動脈。未治療者可進展為充血性心衰竭。手術或介入性封堵為根治方法。
+
+aliases:
+  - { alias: PDA, language: zh }
+  - { alias: 開放性動脈導管, language: zh }
+  - { alias: Patent ductus arteriosus, language: en }
+  - { alias: PDA in dogs, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬最常見先天性心臟病。迷你貴賓犬、馬爾濟斯、德國牧羊犬為高風險品種。雌犬較多。貓較少見。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓較犬少見但有報告。
+
+etiology:
+  categories:
+    - name: 先天發育異常
+      examples:
+        - 動脈導管平滑肌發育不全
+        - 出生後導管未正常收縮閉合
+        - 多基因遺傳
+    - name: 血流動力學
+      examples:
+        - 左向右分流（主動脈→肺動脈）
+        - 肺血流量增加
+        - 左心容積負荷增加
+        - 晚期可逆轉為右向左分流（Eisenmenger 症候群）
+
+clinicalSigns:
+  early:
+    - 持續性心雜音（典型 machinery murmur）
+    - 多數幼犬無明顯症狀
+    - 股動脈脈壓增大（bounding pulse）
+  progressive:
+    - 運動不耐受
+    - 咳嗽
+    - 呼吸困難（肺水腫）
+    - 左側心衰竭
+    - 後肢發紺（逆轉PDA時）
+
+diagnosis:
+  primaryTests:
+    - name: 心臟聽診
+      notes: 左基底部持續性機器聲心雜音為高度特徵性。股動脈彈跳脈
+    - name: 心臟超音波
+      notes: 彩色都卜勒顯示主動脈至肺動脈分流。評估左心擴大程度
+    - name: 胸腔 X 光
+      notes: 左心擴大。肺血管充血。心臟失去腰部（DV view）
+
+treatment:
+  principles:
+    - 早期介入封閉導管為根治方法
+    - 手術結紮或介入封堵
+    - 逆轉PDA不可手術
+    - 越早治療預後越好
+  general:
+    - 開胸手術結紮（傳統方法，成功率 >95%）
+    - 經導管封堵裝置（ACDO，微創方法）
+    - 術前心衰竭者先穩定（Furosemide、Pimobendan）
+    - 逆轉PDA（Eisenmenger）為手術禁忌
+    - 術後監測心臟大小恢復
+    - 繁殖建議：受影響犬不建議繁殖
+
+prognosis: 早期手術或介入封堵預後極佳（>95% 成功率）。術後心臟大小通常在數月內恢復正常。未治療者約 60% 在 1 歲前因心衰竭死亡。逆轉PDA（右向左分流）預後不良，手術禁忌。
+
+pubmedQueries:
+  - query: '"patent ductus arteriosus" AND (canine OR feline) AND (surgery OR treatment OR "interventional")'
+    frequency: monthly

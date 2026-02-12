@@ -1,0 +1,73 @@
+slug: neutropenia
+nameEn: Neutropenia
+nameZh: 嗜中性球減少症
+bodySystem: hematology
+description: 嗜中性球減少症為循環血液中嗜中性球計數降低（犬 <3,000/μL，貓 <2,500/μL）。嚴重嗜中性球減少（<1,000/μL）顯著增加感染風險。原因包括骨髓生成不足、破壞/消耗增加、或分佈異常（邊緣池增加）。為重要的臨床發現，需積極排查病因。
+
+aliases:
+  - { alias: 嗜中性白血球減少, language: zh }
+  - { alias: Low Neutrophil Count, language: en }
+  - { alias: Granulocytopenia, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬隻嗜中性球減少症常見原因包括犬小病毒感染、Ehrlichia、藥物性骨髓抑制、免疫介導性。Belgian Tervuren 有循環性嗜中性球減少症報告。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓隻常見原因包括 FeLV、FIV、FPV（貓泛白血球減少症）、藥物性（Chloramphenicol、Griseofulvin）。
+
+etiology:
+  categories:
+    - name: 生成減少
+      examples:
+        - 病毒感染（CPV、FPV、FeLV）
+        - 藥物性骨髓抑制（化療藥、Chloramphenicol、TMP-Sulfa）
+        - 骨髓疾病（再生不良、腫瘤浸潤）
+    - name: 破壞/消耗增加
+      examples:
+        - 嚴重敗血症（嗜中性球消耗超過生成）
+        - 免疫介導性嗜中性球減少
+        - 腹膜炎或子宮蓄膿
+    - name: 分佈異常
+      examples:
+        - 內毒素血症（嗜中性球移至邊緣池）
+        - 過敏性休克
+
+clinicalSigns:
+  early:
+    - 發燒（感染引起時）
+    - 嗜睡
+    - 食慾下降
+  progressive:
+    - 反覆或嚴重感染
+    - 口腔潰瘍
+    - 肺炎
+    - 敗血症
+    - 嚴重嗜中性球減少伴發燒為急診（febrile neutropenia）
+
+diagnosis:
+  primaryTests:
+    - name: 全血球計數（CBC）與血液抹片
+      notes: 確認嗜中性球計數降低。評估是否伴隨其他血球系列異常（pancytopenia）。血液抹片觀察嗜中性球形態（毒性變化、帶狀核比例）。
+    - name: 感染性疾病篩檢
+      notes: 犬小病毒抗原、FeLV/FIV 抗體、壁蝨傳播性疾病篩檢。嚴重嗜中性球減少伴發燒需進行血液培養。
+
+treatment:
+  principles:
+    - 嗜中性球減少伴發燒為急診，需立即廣效抗生素
+    - 治療基礎病因
+    - 嚴重者考慮造血生長因子
+  general:
+    - "Febrile neutropenia：廣效抗生素（如 Ampicillin-Sulbactam + Enrofloxacin）"
+    - 停用可能致病的藥物
+    - 治療感染性病因（CPV 支持治療、Doxycycline 治療壁蝨病等）
+    - "G-CSF（Filgrastim）5 μg/kg SC q24h（促進嗜中性球生成，但長期使用人類 G-CSF 會產生抗體）"
+    - 免疫介導性：免疫抑制治療
+    - 嚴格無菌護理
+
+prognosis: 預後取決於病因與嚴重程度。藥物引起的嗜中性球減少症在停藥後通常 3-5 天恢復。CPV 感染在度過嗜中性球最低點後預後改善。嚴重敗血症伴嗜中性球減少症死亡率高。免疫介導性對治療反應變異大。
+
+pubmedQueries:
+  - query: '"neutropenia" AND (veterinary OR canine OR feline) AND ("febrile" OR "treatment")'
+    frequency: monthly

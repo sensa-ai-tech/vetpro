@@ -1,0 +1,59 @@
+slug: hip-luxation
+nameEn: Hip Luxation
+nameZh: 髖關節脫位
+bodySystem: orthopedic
+description: 股骨頭脫出髖臼的急性創傷性損傷。大部分為顱背側脫位（craniodorsal luxation）。需緊急復位以避免股骨頭缺血壞死。車禍為最常見原因。
+
+aliases:
+  - { alias: "Hip Dislocation", language: en }
+  - { alias: "Coxofemoral Luxation", language: en }
+  - { alias: "髖關節脫臼", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬常見。車禍為主因。髖關節發育不良犬也易脫位。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓常見。車禍與高處墜落。
+
+etiology:
+  categories:
+    - name: 外傷性
+      examples:
+        - 車禍
+        - 高處墜落
+        - 急性外力
+
+clinicalSigns:
+  early:
+    - 突然後肢不負重
+    - 患肢縮短
+    - 髖關節觸診疼痛
+  progressive:
+    - 患肢外旋/內旋（取決於脫位方向）
+    - 無法站立
+    - 肌肉痙攣
+
+diagnosis:
+  primaryTests:
+    - name: 骨盆 X 光
+      notes: 確認脫位方向與排除合併髖臼骨折
+    - name: 觸診
+      notes: 大轉子位移
+
+treatment:
+  principles:
+    - 及時閉合復位
+    - 復位失敗需手術
+  general:
+    - 閉合復位 + Ehmer sling 固定 2 週
+    - 復位失敗：手術（toggle pin、capsulorrhaphy）
+    - 髖關節發育不良犬：FHO 或 THR
+    - 止痛管理
+
+prognosis: 閉合復位成功率約 50-70%。手術固定預後良好。髖關節發育不良犬再脫位率高。
+
+pubmedQueries:
+  - query: '"hip luxation" AND (veterinary OR canine OR feline) AND ("reduction" OR "treatment")'
+    frequency: monthly

@@ -1,0 +1,72 @@
+slug: parvoviral-enteritis
+nameEn: Parvoviral Enteritis
+nameZh: 犬小病毒腸炎
+bodySystem: gastrointestinal
+description: 犬小病毒腸炎為 CPV-2（canine parvovirus type 2）引起的高度傳染性急性出血性腸炎。病毒攻擊快速分裂的細胞（腸隱窩上皮、骨髓造血細胞），導致嚴重嘔吐、出血性腹瀉、白血球減少與敗血症。未完成疫苗接種的幼犬（6-16 週齡）為最高風險群。
+
+aliases:
+  - { alias: 犬小病毒感染, language: zh }
+  - { alias: Parvo, language: en }
+  - { alias: CPV Enteritis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬隻最重要的急性傳染性腸胃道疾病。Rottweiler、Doberman Pinscher、American Pit Bull Terrier、German Shepherd 有較高易感性。未疫苗接種幼犬死亡率可達 50-90%。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: CPV-2 變異株可感染貓隻但罕見。貓泛白血球減少症（FPV）為相關但不同病毒。
+
+etiology:
+  categories:
+    - name: 病原體
+      examples:
+        - 犬小病毒 CPV-2a、CPV-2b、CPV-2c（現行流行株）
+        - 環境中極穩定（存活數月至數年）
+        - 糞口途徑傳播
+    - name: 病理生理
+      examples:
+        - 攻擊腸隱窩上皮細胞（快速分裂細胞）
+        - 腸絨毛萎縮、隱窩壞死
+        - 骨髓抑制（白血球減少）
+        - 腸屏障破壞導致細菌移位與敗血症
+
+clinicalSigns:
+  early:
+    - 急性食慾廢絕
+    - 嘔吐
+    - 嗜睡
+    - 發燒
+  progressive:
+    - 嚴重出血性腹瀉（腥臭味特徵性）
+    - 嚴重脫水
+    - 低體溫（敗血性休克）
+    - 嚴重白血球減少
+    - 敗血症與 SIRS
+
+diagnosis:
+  primaryTests:
+    - name: 糞便 CPV 抗原快速測試（SNAP test）
+      notes: 門診快速檢測，敏感度約 80-90%。假陰性可見於早期感染或抗體中和後。疫苗接種後 5-14 天內可能假陽性。
+    - name: CBC
+      notes: 嚴重白血球減少（WBC <2,000/μL）為典型且預後相關。嚴重淋巴球減少。
+
+treatment:
+  principles:
+    - 積極靜脈輸液為核心
+    - 抗生素預防敗血症
+    - 止吐治療
+    - 早期腸道營養
+  general:
+    - "積極靜脈輸液（Lactated Ringer's 或 PlasmaLyte，維持灌流）"
+    - "廣效抗生素：Ampicillin 22 mg/kg IV q8h + Enrofloxacin 5 mg/kg IV q24h"
+    - "止吐：Maropitant 1 mg/kg IV q24h + Ondansetron 0.1-0.2 mg/kg IV q8h"
+    - "早期腸道營養（嘔吐控制後 12-24 小時即開始，改善預後）"
+    - 低血糖矯正（幼犬常見，2.5% Dextrose in fluids）
+    - 嚴重者：血漿輸注或全血輸血
+
+prognosis: 適當住院支持治療下存活率約 80-95%。WBC nadir <1,000/μL 者預後較差。敗血症與低血糖為主要致死原因。多數存活犬隻完全恢復無後遺症。門診治療存活率顯著低於住院治療。
+
+pubmedQueries:
+  - query: '"parvoviral enteritis" OR "canine parvovirus" AND ("treatment" OR "outcome" OR "guidelines")'
+    frequency: monthly

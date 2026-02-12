@@ -1,0 +1,77 @@
+slug: eosinophilia
+nameEn: Eosinophilia
+nameZh: 嗜酸性球增多症
+bodySystem: hematology
+description: 嗜酸性球增多症為循環血液中嗜酸性球計數升高（犬 >1,500/μL，貓 >1,500/μL）。常見原因包括寄生蟲感染、過敏性疾病（跳蚤過敏、食物過敏、異位性皮膚炎、貓哮喘）、嗜酸性球浸潤性疾病及腫瘤（paraneoplastic 或肥大細胞瘤）。需系統性排查病因。
+
+aliases:
+  - { alias: 嗜酸性白血球增多, language: zh }
+  - { alias: High Eosinophil Count, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬隻嗜酸性球增多症最常見原因為寄生蟲感染與過敏性疾病（跳蚤過敏性皮膚炎、異位性皮膚炎、食物過敏）。嗜酸性球性腸炎、肺炎亦可。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓隻常見原因包括寄生蟲、貓哮喘（feline asthma）、嗜酸性球肉芽腫複合體、高嗜酸性球症候群（hypereosinophilic syndrome）。
+
+etiology:
+  categories:
+    - name: 過敏/超敏反應
+      examples:
+        - 跳蚤過敏性皮膚炎
+        - 異位性皮膚炎
+        - 食物過敏
+        - 貓哮喘
+    - name: 寄生蟲
+      examples:
+        - 腸道寄生蟲（鉤蟲、蛔蟲）
+        - 心絲蟲感染
+        - 肺蟲（Aelurostrongylus）
+    - name: 嗜酸性球浸潤性疾病
+      examples:
+        - 嗜酸性球性腸炎
+        - 嗜酸性球性支氣管肺病
+        - 嗜酸性球肉芽腫複合體（貓）
+        - 高嗜酸性球症候群（HES）
+    - name: 腫瘤
+      examples:
+        - 肥大細胞瘤（paraneoplastic eosinophilia）
+        - T 細胞淋巴瘤
+        - 嗜酸性球白血病（極罕見）
+
+clinicalSigns:
+  early:
+    - 嗜酸性球增多症本身無特異性症狀
+    - 症狀取決於基礎疾病
+  progressive:
+    - 過敏性：搔癢、皮膚病變
+    - 呼吸道：咳嗽、呼吸困難
+    - 腸胃道：嘔吐、腹瀉、體重減輕
+    - HES：多器官浸潤（腸道、肝、脾、骨髓）
+
+diagnosis:
+  primaryTests:
+    - name: 全血球計數（CBC）
+      notes: 嗜酸性球計數升高。評估嚴重程度：輕度 (<5,000)、中度 (5,000-15,000)、重度 (>15,000/μL)。嚴重嗜酸性球增多需排除 HES 或嗜酸性球白血病。
+    - name: 寄生蟲篩檢與過敏評估
+      notes: 糞便浮游法（寄生蟲卵）、心絲蟲抗原/抗體檢測。排除寄生蟲後評估過敏性疾病。
+
+treatment:
+  principles:
+    - 治療基礎病因
+    - 排除寄生蟲為首要步驟
+    - 嗜酸性球浸潤性疾病可能需要免疫抑制
+  general:
+    - 廣效驅蟲（排除寄生蟲）
+    - 過敏性：避免過敏原、跳蚤控制、食物排除試驗
+    - "嗜酸性球浸潤性疾病：Prednisolone 1-2 mg/kg/day PO"
+    - "HES：Prednisolone + Hydroxyurea 或 Chlorambucil"
+    - 貓哮喘：吸入型皮質類固醇
+
+prognosis: 預後取決於基礎病因。寄生蟲引起者在驅蟲後恢復。過敏性疾病需長期管理但預後良好。嗜酸性球性腸炎與支氣管肺病對皮質類固醇反應佳。HES 預後較差，需長期治療。
+
+pubmedQueries:
+  - query: '"eosinophilia" AND (veterinary OR canine OR feline) AND ("hypereosinophilic" OR "diagnosis")'
+    frequency: monthly

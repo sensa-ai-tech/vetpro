@@ -1,0 +1,87 @@
+slug: splenic-tumor
+nameEn: Splenic Tumor
+nameZh: 脾臟腫瘤
+bodySystem: oncology
+description: 脾臟腫瘤為犬最常見的腹腔內腫瘤之一。犬脾臟腫塊約 2/3 為腫瘤性，其中約 2/3 為惡性（血管肉瘤最常見）。貓脾臟腫瘤較少見，肥大細胞瘤及淋巴瘤為主要類型。脾臟腫瘤常因急性破裂出血而以急診方式被發現。
+
+aliases:
+  - { alias: 脾腫瘤, language: zh }
+  - { alias: 脾臟惡性腫瘤, language: zh }
+  - { alias: Splenic Neoplasia, language: en }
+  - { alias: Splenic Cancer, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬脾臟腫塊非常常見，大型犬品種好發（德國牧羊犬、金毛獵犬、拉布拉多）。血管肉瘤 (hemangiosarcoma) 佔惡性脾臟腫瘤最大比例。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓脾臟腫瘤較犬少見。肥大細胞瘤 (mast cell tumor) 及淋巴瘤 (lymphoma) 為最常見惡性類型。脾臟血管肉瘤在貓較罕見。
+
+etiology:
+  categories:
+    - name: 惡性腫瘤類型
+      examples:
+        - 血管肉瘤 (hemangiosarcoma) — 犬最常見
+        - 淋巴瘤 (lymphoma)
+        - 肥大細胞瘤 (mast cell tumor) — 貓常見
+        - 纖維肉瘤 (fibrosarcoma)
+        - 平滑肌肉瘤 (leiomyosarcoma)
+    - name: 良性腫瘤與非腫瘤性病變
+      examples:
+        - 血管瘤 (hemangioma)
+        - 結節性增生 (nodular hyperplasia) — 犬最常見非腫瘤性病變
+        - 血腫 (hematoma)
+        - 脾扭轉
+
+clinicalSigns:
+  early:
+    - 常為偶然發現（影像檢查或腹部觸診）
+    - 非特異性症狀如食慾下降、嗜睡
+    - 腹部輕度膨脹
+  progressive:
+    - 腹部可觸診到腫塊
+    - 蒼白黏膜（慢性或急性出血）
+    - 急性腹部膨脹（腫瘤破裂出血）
+    - 休克（大量腹腔出血）
+    - 心律不整（血管肉瘤常見）
+    - 虛弱、倒臥
+
+diagnosis:
+  primaryTests:
+    - name: 腹部超音波
+      notes: 偵測脾臟腫塊最敏感的方法。評估回音性質、是否有腹腔積液。無法可靠區分良惡性
+    - name: 腹腔積液分析
+      notes: 血性腹水 PCV 通常與周邊血液相近。排除其他原因的腹水
+  imaging:
+    - name: 胸腔 X-ray 三視圖
+      notes: 術前必要。血管肉瘤肺轉移率高。評估心包積液
+    - name: 心臟超音波
+      notes: 血管肉瘤常同時侵犯右心房。評估心包積液
+  additional:
+    - CBC（評估貧血、球形紅血球、裂片紅血球）
+    - 凝血功能（DIC 篩檢）
+    - 血液生化
+    - 腹部 X-ray
+    - 確定診斷需術後組織病理
+
+treatment:
+  principles:
+    - 脾臟切除為主要診斷與治療手段
+    - 急性出血需緊急穩定後手術
+    - 惡性腫瘤需術後輔助化療
+    - 術前無法區分良惡性
+  general:
+    - 緊急穩定（休克復甦、輸血、IV 輸液）
+    - 脾臟全切除術 (splenectomy)
+    - 術中仔細檢查肝臟及腹腔其他器官
+    - 血管肉瘤術後化療（doxorubicin 為主，+/- cyclophosphamide）
+    - 淋巴瘤依分型選擇化療方案
+    - 術後心電圖監測（脾切除後心律不整常見）
+    - 組織病理確認腫瘤類型後決定後續治療
+
+prognosis: 脾臟良性腫塊（血管瘤、結節性增生）脾切除後預後極佳。脾臟血管肉瘤預後差，單純手術中位存活 1-3 個月，加化療可延長至 4-8 個月。脾臟淋巴瘤視化療反應而定。
+
+pubmedQueries:
+  - query: '"splenic tumor" OR "splenic mass" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
+    frequency: monthly

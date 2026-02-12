@@ -1,0 +1,69 @@
+slug: uremic-encephalopathy
+nameEn: Uremic Encephalopathy
+nameZh: 尿毒性腦病
+bodySystem: neurology
+description: 嚴重腎衰竭導致尿毒素蓄積而引起的瀰漫性腦功能障礙。尿毒素 (包括 guanidino 化合物、parathyroid hormone 等) 干擾神經傳導與腦部代謝，表現為意識狀態改變、肌陣攣與癲癇。
+
+aliases:
+  - { alias: Uremic Neuropathy, language: en }
+  - { alias: Renal Encephalopathy, language: en }
+  - { alias: 尿毒腦病, language: zh }
+  - { alias: 腎性腦病, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 見於嚴重急性腎損傷 (AKI) 或終末期慢性腎病 (CKD)。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓同樣見於嚴重腎衰竭，CKD 為貓常見疾病。
+
+etiology:
+  categories:
+    - name: 尿毒素蓄積
+      examples:
+        - Guanidino 化合物 (guanidinosuccinic acid)
+        - 副甲狀腺素 (PTH) 過高
+        - 中分子尿毒素
+    - name: 繼發性代謝異常
+      examples:
+        - 代謝性酸中毒
+        - 電解質失衡 (高鉀、低鈣)
+        - 高血壓性腦病
+
+clinicalSigns:
+  early:
+    - 精神沉鬱
+    - 食慾廢絕
+    - 嘔吐 (尿毒症症狀)
+  progressive:
+    - 肌陣攣 (myoclonus，肌肉不自主抽搐)
+    - 震顫
+    - 癲癇發作
+    - 昏迷
+
+diagnosis:
+  primaryTests:
+    - name: 血液生化
+      notes: BUN/Creatinine 顯著升高；SDMA 升高；電解質失衡 (高鉀、高磷、低鈣)
+    - name: 尿液分析
+      notes: 尿比重低 (等張尿)；蛋白尿評估
+    - name: 血壓測量
+      notes: 排除高血壓性腦病 (systolic > 180 mmHg)
+
+treatment:
+  principles:
+    - 積極降低尿毒素 (輸液利尿)
+    - 糾正電解質與酸鹼失衡
+    - 控制癲癇
+  general:
+    - 靜脈輸液促進利尿 (急性腎損傷)
+    - 糾正高鉀血症 (calcium gluconate、insulin + glucose)
+    - 控制高血壓 (Amlodipine)
+    - 血液透析 (嚴重病例可考慮)
+
+prognosis: 取決於腎衰竭的可逆性。急性腎損傷若能恢復腎功能預後可佳。終末期慢性腎病者預後不良。出現嚴重神經症狀提示疾病晚期。
+
+pubmedQueries:
+  - query: '"uremic encephalopathy" AND (veterinary OR canine OR feline) AND ("treatment" OR "dialysis")'
+    frequency: monthly

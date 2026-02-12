@@ -1,0 +1,60 @@
+slug: missing-teeth
+nameEn: Missing Teeth
+nameZh: 缺齒
+bodySystem: dental
+description: 牙齒數目少於正常的齒列異常。可為先天缺失（牙齒發育不全）或後天喪失。先天缺齒需 X 光排除未萌出的埋伏齒，因埋伏齒可形成含齒囊腫。
+
+aliases:
+  - { alias: "Oligodontia", language: en }
+  - { alias: "Hypodontia", language: en }
+  - { alias: "齒數不足", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬常見。小型品種犬先天缺齒多見。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓偶見。
+
+etiology:
+  categories:
+    - name: 先天性
+      examples:
+        - 齒胚發育不全
+        - 品種傾向（小型犬）
+        - 遺傳性
+    - name: 後天性
+      examples:
+        - 外傷脫落
+        - 拔牙後
+        - 齒根吸收
+
+clinicalSigns:
+  early:
+    - 齒列間隙
+    - 牙齒數目不足
+  progressive:
+    - 埋伏齒可能形成含齒囊腫（dentigerous cyst）
+
+diagnosis:
+  primaryTests:
+    - name: 口腔 X 光
+      notes: 必須排除埋伏齒（未萌出但存在的牙齒）。埋伏齒可形成囊腫
+    - name: 全口齒列計數
+      notes: 與正常齒列比較
+
+treatment:
+  principles:
+    - 排除埋伏齒
+    - 埋伏齒需拔除
+  general:
+    - 真正先天缺失：無需治療
+    - 埋伏齒：手術拔除（預防含齒囊腫）
+    - 定期 X 光追蹤
+
+prognosis: 先天缺齒無健康影響。埋伏齒拔除後預後極佳。未拔除的埋伏齒可能發展為含齒囊腫。
+
+pubmedQueries:
+  - query: '"missing teeth" OR "hypodontia" AND (veterinary OR canine) AND ("impacted" OR "dentigerous cyst")'
+    frequency: monthly

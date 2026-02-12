@@ -1,0 +1,62 @@
+slug: tooth-discoloration
+nameEn: Tooth Discoloration
+nameZh: 牙齒變色
+bodySystem: dental
+description: 牙齒顏色異常改變。粉紅/紫色變色通常表示齒髓出血（外傷後），黃/棕色可能為四環素染色或老化，灰色提示齒髓壞死。需評估齒髓活性決定是否治療。
+
+aliases:
+  - { alias: "Tooth Staining", language: en }
+  - { alias: "Intrinsic Discoloration", language: en }
+  - { alias: "齒色異常", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬常見。外傷後齒髓出血為最常見原因。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓偶見。
+
+etiology:
+  categories:
+    - name: 齒髓損傷
+      examples:
+        - 外傷後齒髓出血（粉紅/紫色）
+        - 齒髓壞死（灰色）
+    - name: 外源性
+      examples:
+        - 四環素使用（黃色帶狀）
+        - 鐵劑
+        - 老化（黃色）
+
+clinicalSigns:
+  early:
+    - 單顆或多顆牙齒顏色改變
+    - 粉紅/紫色（急性齒髓出血）
+  progressive:
+    - 顏色變深（紫→灰）
+    - 根尖病變（齒髓壞死）
+    - 牙齒變脆
+
+diagnosis:
+  primaryTests:
+    - name: 口腔 X 光
+      notes: 評估齒根周圍是否有根尖透亮區（齒髓壞死指標）
+    - name: 透照試驗
+      notes: 比較正常牙與變色牙的光透射性
+
+treatment:
+  principles:
+    - 評估齒髓活性
+    - 齒髓壞死需根管治療
+  general:
+    - 急性粉紅色：追蹤觀察（可能自行恢復）
+    - 灰色 + 根尖病變：根管治療
+    - 無根尖病變的穩定變色：定期追蹤
+    - 外源性染色：不需治療
+
+prognosis: 急性齒髓出血約 50% 齒髓可存活。齒髓壞死根管治療後預後良好。
+
+pubmedQueries:
+  - query: '"tooth discoloration" AND (veterinary OR canine OR feline) AND ("pulp" OR "treatment")'
+    frequency: monthly

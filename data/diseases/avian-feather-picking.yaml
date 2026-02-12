@@ -1,0 +1,83 @@
+slug: avian-feather-picking
+nameEn: Avian Feather Picking
+nameZh: 禽類拔羽症
+bodySystem: behavioral
+description: 拔羽症是鸚鵡類最常見的行為異常之一，表現為鳥類主動拔除或損壞自身羽毛。病因複雜，涉及心理、環境、醫療等多重因素。灰鸚鵡、巴丹鸚鵡、金剛鸚鵡為高風險群，治療需長期多模式介入。
+
+aliases:
+  - { alias: 鸚鵡拔羽, language: zh }
+  - { alias: 羽毛破壞行為, language: zh }
+  - { alias: Feather destructive behavior, language: en }
+  - { alias: Feather plucking, language: en }
+  - { alias: FDB in parrots, language: en }
+
+species:
+  - speciesCommon: bird
+    prevalence: common
+    notes: 鸚鵡類極為常見，盛行率可達 10-15%。灰鸚鵡、巴丹鸚鵡、玄鳳鸚鵡為高發群。社交需求高但環境刺激不足的種類易發。
+
+etiology:
+  categories:
+    - name: 心理/行為因素
+      examples:
+        - 環境刺激不足（無聊）
+        - 社交隔離或分離焦慮
+        - 性挫折
+        - 恐懼或創傷後壓力
+        - 習慣性行為
+    - name: 醫療因素
+      examples:
+        - 皮膚感染（細菌、真菌、寄生蟲）
+        - 過敏
+        - 肝臟疾病
+        - 甲狀腺功能低下
+        - 內分泌異常
+    - name: 環境因素
+      examples:
+        - 日照時間異常
+        - 飲食不均衡（低維生素 A）
+        - 空氣乾燥
+        - 吸入性刺激物（香菸、烹飪油煙）
+
+clinicalSigns:
+  early:
+    - 過度理毛
+    - 局部羽毛邊緣破損
+    - 偶見拔羽行為
+  progressive:
+    - 明顯脫羽區域（胸部、腹部、翅膀內側）
+    - 頭部羽毛完好（無法自行拔除）
+    - 皮膚暴露發紅
+    - 皮膚自我創傷（嚴重者）
+    - 新長羽毛立即被拔除
+
+diagnosis:
+  primaryTests:
+    - name: 完整病史
+      notes: 飼養環境、社交互動、飲食、日照、發病時間點。排除醫療因素後再考慮行為性
+    - name: 身體檢查
+      notes: 皮膚檢查排除感染或寄生蟲。頭部羽毛完好為自我拔羽特徵
+    - name: 血液檢查
+      notes: CBC、生化、甲狀腺功能。排除肝病、內分泌異常等醫療原因
+
+treatment:
+  principles:
+    - 排除並治療醫療因素
+    - 環境豐富化
+    - 行為修正
+    - 必要時藥物輔助
+  general:
+    - 環境豐富化（覓食玩具、啃咬材料、社交互動）
+    - 增加每日互動時間
+    - 適當日照週期（12 小時光/12 小時暗）
+    - 飲食改善（滋養丸為主，新鮮蔬果）
+    - 噴霧浴（增加皮膚濕度）
+    - 嚴重者考慮 Haloperidol 或 Clomipramine
+    - 避免使用伊莉莎白頸圈（增加緊迫）
+    - 長期行為諮詢
+
+prognosis: 預後謹慎。行為性拔羽為慢性問題，完全治癒困難。早期介入且原因明確者預後較好。慣性拔羽行為即使改善環境也可能持續。醫療因素引起者治療後可望改善。多模式綜合治療效果優於單一介入。
+
+pubmedQueries:
+  - query: '"feather picking" OR "feather destructive behavior" AND (parrot OR psittacine) AND (treatment OR management)'
+    frequency: monthly

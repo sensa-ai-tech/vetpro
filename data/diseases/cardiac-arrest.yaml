@@ -1,0 +1,77 @@
+slug: cardiac-arrest
+nameEn: Cardiac Arrest
+nameZh: 心臟停止
+bodySystem: cardiac
+description: 心臟停止 (cardiac arrest, CPA) 為心臟有效機械活動停止導致全身循環中斷的致命急症。犬貓 CPA 最常見的心律為無脈搏電氣活動 (PEA) 與心搏停止 (asystole)，而非可電擊節律。犬貓院內 CPR 成功恢復自發循環 (ROSC) 約 35-45%，出院率僅 5-10%。
+
+aliases:
+  - { alias: 心跳停止, language: zh }
+  - { alias: CPA, language: en }
+  - { alias: Cardiopulmonary Arrest, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬 CPA 最常見心律為 asystole (50%) 與 PEA (30%)。VF/pulseless VT 僅約 20%。RECOVER 指引為犬貓 CPR 標準。院內 ROSC 約 40%。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓 CPA 以 asystole 與 PEA 為主。貓 CPR 胸外壓迫力道較犬小。出院存活率略低於犬。
+
+etiology:
+  categories:
+    - name: 常見原因 (5H5T)
+      examples:
+        - "5H：Hypovolemia、Hypoxia、Hydrogen ion (acidosis)、Hypo/Hyperkalemia、Hypothermia"
+        - "5T：Tension pneumothorax、Tamponade、Toxins、Thromboembolism、Trauma"
+    - name: 犬貓常見誘因
+      examples:
+        - 麻醉併發症
+        - 嚴重系統性疾病末期
+        - 外傷
+        - 藥物過量
+        - 電解質嚴重異常
+
+clinicalSigns:
+  early:
+    - 突然倒下、無反應
+    - 無可觸知脈搏
+    - 呼吸停止或瀕死呼吸 (agonal breathing)
+    - 瞳孔散大
+  progressive:
+    - 黏膜發紺/蒼白
+    - 無心搏（聽診）
+    - 肌肉鬆弛
+    - 體溫下降
+
+diagnosis:
+  primaryTests:
+    - name: 臨床評估
+      notes: 無意識 + 無脈搏 + 無呼吸 = CPA。不超過 10 秒確認
+    - name: 心電圖
+      notes: 辨識心律：asystole、PEA、VF、pulseless VT。決定是否可電擊
+  additional:
+    - ETCO₂（CPR 品質監測，>15 mmHg 為有效壓迫）
+    - 血氣分析（ROSC 後）
+    - 找出並矯正可逆原因 (5H5T)
+
+treatment:
+  principles:
+    - 遵循 RECOVER CPR 指引
+    - 胸外壓迫為核心
+    - 通氣
+    - 藥物與電擊
+  general:
+    - 開始胸外壓迫（100-120 次/分鐘，壓迫深度為胸寬 1/3-1/2）
+    - 氣管插管 + 100% 氧氣通氣（10 次/分鐘）
+    - Epinephrine 0.01 mg/kg IV 每 3-5 分鐘
+    - VF/pulseless VT：電擊 2-4 J/kg（單相）或 1-2 J/kg（雙相）
+    - Asystole/PEA：epinephrine + 找出可逆原因
+    - Atropine 0.04 mg/kg IV（迷走神經介導 CPA）
+    - 2 分鐘不中斷壓迫週期
+    - ROSC 後：穩定血壓、通氣、體溫管理、監測
+
+prognosis: 犬貓 CPR 後 ROSC 約 35-45%，但出院存活率僅 5-10%。麻醉相關 CPA 預後較佳。疾病末期 CPA 預後極差。ROSC 後再次 arrest 常見。CPR 持續 >20 分鐘未 ROSC 建議停止。
+
+pubmedQueries:
+  - query: '"cardiac arrest" OR "cardiopulmonary resuscitation" AND (veterinary OR canine OR feline) AND ("RECOVER" OR "CPR" OR "treatment")'
+    frequency: monthly

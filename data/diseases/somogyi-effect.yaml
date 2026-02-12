@@ -1,0 +1,71 @@
+slug: somogyi-effect
+nameEn: Somogyi Effect
+nameZh: Somogyi 效應
+bodySystem: endocrine
+description: Somogyi 效應（Somogyi overswing / rebound hyperglycemia）為胰島素過量導致低血糖後，反調節荷爾蒙（glucagon、cortisol、epinephrine、growth hormone）代償性釋放引起的反彈性高血糖。為糖尿病管理中常見的胰島素劑量過高的指標。血糖曲線呈現先急降後急升的 V 型或 U 型模式。
+
+aliases:
+  - { alias: 索莫吉效應, language: zh }
+  - { alias: Somogyi Overswing, language: en }
+  - { alias: Rebound Hyperglycemia, language: en }
+  - { alias: Insulin-Induced Hyperglycemia, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬隻糖尿病管理中 Somogyi 效應相對常見。胰島素劑量過高時發生。需以血糖曲線鑑別。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓隻糖尿病管理中亦常見。因貓隻應激性高血糖，鑑別更具挑戰性。
+
+etiology:
+  categories:
+    - name: 直接原因
+      examples:
+        - 胰島素劑量過高
+        - 胰島素吸收異常（注射技術、注射部位）
+        - 進食量減少但未調降胰島素劑量
+    - name: 機制
+      examples:
+        - 低血糖觸發反調節荷爾蒙釋放
+        - Glucagon、Cortisol、Epinephrine、Growth hormone 升高
+        - 肝醣分解與糖質新生增加
+        - 反彈性高血糖可持續 12-72 小時
+
+clinicalSigns:
+  early:
+    - 低血糖症狀（短暫可能被忽略）：虛弱、震顫、嗜睡
+    - 隨後持續性高血糖
+    - 多飲多尿持續
+  progressive:
+    - 血糖控制「似乎」越來越差（因錯誤地持續增加劑量）
+    - 體重不穩定
+    - 多飲多尿加劇
+    - 低血糖發作風險增加
+
+diagnosis:
+  primaryTests:
+    - name: 血糖曲線
+      notes: 診斷金標準。血糖曲線顯示血糖先急降至低值（nadir <65 mg/dL 或 <3.6 mmol/L）後急速回升至高值。典型 V 型或 U 型模式。每 2 小時測量一次血糖 12 小時。
+    - name: 連續血糖監測（CGM）
+      notes: FreeStyle Libre 等連續血糖監測裝置可更精確偵測短暫低血糖與隨後的反彈高血糖。避免漏測低血糖 nadir。
+
+treatment:
+  principles:
+    - 降低胰島素劑量（不是增加！）
+    - 重新建立血糖曲線
+    - 漸進式劑量調整
+  general:
+    - 降低胰島素劑量 25-50%
+    - 3-7 天後重新執行血糖曲線
+    - 漸進式調整劑量直到血糖曲線穩定
+    - 確認進食狀況穩定
+    - 確認注射技術正確
+    - 教育飼主辨認低血糖症狀
+    - 低血糖緊急處理教育（Karo syrup / 蜂蜜塗牙齦）
+
+prognosis: Somogyi 效應本身非疾病而是胰島素劑量不當的表現。降低胰島素劑量後血糖控制通常改善。持續誤判而增加劑量可能導致嚴重低血糖。正確辨認 Somogyi 效應並適當調整劑量後預後良好。飼主教育是管理成功的關鍵。
+
+pubmedQueries:
+  - query: '"Somogyi effect" OR "rebound hyperglycemia" AND (veterinary OR canine OR feline) AND ("diabetes" OR "insulin")'
+    frequency: monthly

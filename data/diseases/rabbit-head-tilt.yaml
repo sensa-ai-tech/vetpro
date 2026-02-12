@@ -1,0 +1,65 @@
+slug: rabbit-head-tilt
+nameEn: Rabbit Head Tilt
+nameZh: 兔歪頭症
+bodySystem: neurology
+description: 兔頭部持續性側傾（torticollis）為常見的神經學症狀，最常見原因為 Encephalitozoon cuniculi 感染及中/內耳炎（Pasteurella multocida）。需鑑別中樞與周邊前庭疾病以制定治療方案。
+
+aliases:
+  - { alias: "兔歪頭症", language: zh }
+  - { alias: "Rabbit Head Tilt", language: en }
+
+species:
+  - speciesCommon: rabbit
+    prevalence: uncommon
+    notes: 兔可受此疾病影響。
+
+etiology:
+  categories:
+    - name: 周邊前庭（最常見）
+      examples:
+        - 中/內耳炎（Pasteurella multocida）
+        - 耳內寄生蟲（Psoroptes cuniculi）
+    - name: 中樞前庭
+      examples:
+        - Encephalitozoon cuniculi（微孢子蟲感染）
+        - 腦膿瘍
+        - 腦腫瘤
+        - 中毒
+
+clinicalSigns:
+  early:
+    - 輕微頭部傾斜
+    - 平衡感不佳
+    - 眼球震顫
+  progressive:
+    - 嚴重頭傾斜
+    - 翻滾（rolling）
+    - 無法站立
+    - 食慾廢絕
+    - 面神經麻痺（中耳炎時）
+
+diagnosis:
+  primaryTests:
+    - name: E. cuniculi 抗體
+      notes: IgM 陽性提示活動感染。IgG 陽性僅表示曾暴露。配合臨床症狀判讀。
+    - name: 耳鏡/CT/X 光
+      notes: 評估鼓室泡（bulla）。CT 為評估中/內耳的最佳影像。
+
+treatment:
+  principles:
+    - 鑑別中樞 vs 周邊前庭疾病
+    - 支持性照護（防止外傷）
+    - 針對病因治療
+    - 多數兔經治療後可適應殘餘歪頭
+  general:
+    - E. cuniculi：Fenbendazole 20 mg/kg PO SID 連續 28 天
+    - 中/內耳炎：長期抗生素（Enrofloxacin + Penicillin G）4-6 週以上
+    - 抗炎：Meloxicam 0.3-0.5 mg/kg PO SID
+    - 支持性照護（軟墊防撞、灌食、防止壓瘡）
+    - 嚴重翻滾期：短期 Midazolam 鎮靜
+
+prognosis: 多數兔經治療後可存活並適應殘餘歪頭。E. cuniculi 治療反應變異大，部分兔完全恢復、部分殘留輕微歪頭。嚴重中耳感染需長期抗生素，預後謹慎。早期積極治療預後優於延遲處理。
+
+pubmedQueries:
+  - query: '"Rabbit Head Tilt" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
+    frequency: monthly

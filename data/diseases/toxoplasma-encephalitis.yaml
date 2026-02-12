@@ -1,0 +1,71 @@
+slug: toxoplasma-encephalitis
+nameEn: Toxoplasma Encephalitis
+nameZh: 弓漿蟲腦炎
+bodySystem: neurology
+description: 弓漿蟲腦炎為 Toxoplasma gondii 感染中樞神經系統導致的腦膜腦脊髓炎。犬貓均可感染。貓隻為 T. gondii 的終宿主但臨床弓漿蟲病較少見（多見於免疫抑制貓，如 FIV/FeLV 共感染）。犬隻弓漿蟲病可表現為多系統疾病。Neospora caninum 在犬隻亦可引起類似神經症狀。
+
+aliases:
+  - { alias: 弓漿蟲腦脊髓炎, language: zh }
+  - { alias: Toxoplasmosis CNS, language: en }
+  - { alias: Toxoplasma Meningoencephalitis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬隻弓漿蟲腦炎少見。需與 Neospora caninum 鑑別（犬隻 Neospora 更常見）。免疫抑制犬隻風險較高。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻臨床弓漿蟲腦炎罕見（多數感染為亞臨床）。FIV/FeLV 共感染的免疫抑制貓隻風險較高。
+
+etiology:
+  categories:
+    - name: 病原體
+      examples:
+        - Toxoplasma gondii（obligate intracellular protozoan）
+        - 貓隻為終宿主（排出卵囊）
+        - 犬隻為中間宿主
+    - name: 風險因素
+      examples:
+        - 免疫抑制（FIV、FeLV、免疫抑制劑使用）
+        - 幼齡動物
+        - 攝入受汙染肉類或卵囊
+        - 經胎盤感染（先天性弓漿蟲病）
+
+clinicalSigns:
+  early:
+    - 發燒
+    - 食慾下降
+    - 嗜睡
+  progressive:
+    - 共濟失調
+    - 癲癇
+    - 肌肉震顫或僵硬
+    - 視力喪失（眼部弓漿蟲病伴隨）
+    - 後肢無力或癱瘓
+    - 多系統症狀（肺炎、肝炎、肌炎）
+
+diagnosis:
+  primaryTests:
+    - name: 血清學
+      notes: IgM 抗體升高提示急性感染。IgG 抗體升高提示暴露但不一定活躍感染。雙份血清 IgG 4 倍升高為診斷依據。
+    - name: CSF 分析 + PCR
+      notes: CSF 單核球增多。蛋白質升高。CSF T. gondii PCR 可確診 CNS 感染。CSF 抗體效價升高。腦部 MRI 可見多灶性 T2 高訊號病變。
+
+treatment:
+  principles:
+    - 抗原蟲藥物治療
+    - 免疫抑制動物需較長療程
+    - 眼部病變可能需額外治療
+  general:
+    - "Clindamycin 10-15 mg/kg PO q12h × 4-6 週（首選）"
+    - "或 TMP-SMX（Trimethoprim-Sulfamethoxazole）15 mg/kg PO q12h × 4-6 週"
+    - "Azithromycin 10 mg/kg PO q24h（替代方案）"
+    - "眼部弓漿蟲病：加用局部與全身性類固醇（控制免疫介導性眼內炎症）"
+    - 抗癲癇（若有發作）
+    - 治療基礎免疫抑制（FIV/FeLV 管理）
+
+prognosis: 早期診斷並治療的犬貓預後尚可。Clindamycin 治療反應通常在 1-2 週內可見。免疫抑制動物復發率較高。CNS 弓漿蟲病較全身性型預後稍差。嚴重神經損傷可能不完全恢復。先天性弓漿蟲病預後差。
+
+pubmedQueries:
+  - query: '"toxoplasma" AND "encephalitis" AND (veterinary OR canine OR feline) AND ("clindamycin" OR "treatment")'
+    frequency: monthly

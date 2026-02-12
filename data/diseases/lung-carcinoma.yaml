@@ -1,0 +1,61 @@
+slug: lung-carcinoma
+nameEn: Lung Carcinoma
+nameZh: 肺癌
+bodySystem: oncology
+description: 肺部的原發性惡性腫瘤，犬以腺癌最常見。多數為單發肺葉腫塊。需與轉移性肺腫瘤鑑別。早期單發腫塊手術切除預後中等。
+
+aliases:
+  - { alias: "Primary Lung Tumor", language: en }
+  - { alias: "Pulmonary Carcinoma", language: en }
+  - { alias: "原發性肺腫瘤", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬偶見。老年犬。以腺癌最常見。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓偶見。腺癌與鱗狀上皮細胞癌。
+
+etiology:
+  categories:
+    - name: 腫瘤性
+      examples:
+        - 肺上皮細胞惡性增生
+        - 二手煙可能為危險因子（研究中）
+
+clinicalSigns:
+  early:
+    - 慢性咳嗽
+    - 運動不耐受
+    - 可能無症狀（X光偶發發現）
+  progressive:
+    - 呼吸困難
+    - 咳血
+    - 消瘦
+    - 跛行（肥大性骨病或趾端轉移）
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔 X 光（三視位）
+      notes: 單發或多發肺葉腫塊
+    - name: CT
+      notes: 評估腫塊大小與淋巴結轉移
+    - name: 細胞學
+      notes: CT 引導穿刺或支氣管灌洗
+
+treatment:
+  principles:
+    - 手術肺葉切除
+    - 單發小腫塊預後較佳
+  general:
+    - 肺葉切除術
+    - 分期確認單發
+    - 術後化療（不完全切除或轉移時）
+    - Vinorelbine、Carboplatin
+
+prognosis: 單發 < 5 cm 完全切除中位存活 > 1 年。大腫塊或淋巴結轉移預後差。趾端轉移（犬特有）提示原發肺腫瘤。
+
+pubmedQueries:
+  - query: '"lung carcinoma" AND (veterinary OR canine OR feline) AND ("lobectomy" OR "prognosis")'
+    frequency: monthly

@@ -1,0 +1,70 @@
+slug: cholelithiasis
+nameEn: Cholelithiasis
+nameZh: 膽結石
+bodySystem: hepatic
+description: 膽結石為膽囊或膽管內形成結石的疾病。犬隻膽結石多為膽色素結石（bilirubin stones），貓隻亦可見。多數膽結石為偶發性影像學發現，無臨床症狀。但膽結石可能導致膽管阻塞、膽囊炎或膽囊破裂等嚴重併發症。
+
+aliases:
+  - { alias: 膽石症, language: zh }
+  - { alias: Gallstones, language: en }
+  - { alias: Biliary Calculi, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻膽結石多為膽色素結石。常為超音波檢查偶發發現。高脂血症品種可能風險較高。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻膽結石相對少見。膽管結石阻塞可導致嚴重膽管炎。
+
+etiology:
+  categories:
+    - name: 結石類型
+      examples:
+        - 膽色素結石（最常見，bilirubin calcium salt）
+        - 膽固醇結石（犬貓罕見）
+        - 混合性結石
+    - name: 風險因素
+      examples:
+        - 膽囊運動功能障礙（膽汁淤滯）
+        - 膽囊炎（慢性發炎促進結石形成）
+        - 膽管系統感染
+        - 高脂血症
+
+clinicalSigns:
+  early:
+    - 多數無臨床症狀（偶發影像學發現）
+    - 間歇性嘔吐
+    - 食慾下降
+  progressive:
+    - 黃疸（膽管阻塞時）
+    - 腹痛（右前腹）
+    - 嘔吐加劇
+    - 發燒（伴隨膽囊炎時）
+    - 腹膜炎（膽囊破裂時）
+
+diagnosis:
+  primaryTests:
+    - name: 腹部超音波
+      notes: 膽囊內高回音結構伴聲影（acoustic shadow）。評估膽囊壁厚度、膽管擴張程度。偵測膽囊黏液囊腫（mucocele）共存。
+    - name: 血液生化
+      notes: 膽管阻塞時 ALP、GGT、膽紅素升高。ALT 可能升高。白血球升高提示感染或發炎。
+
+treatment:
+  principles:
+    - 無症狀結石可監測觀察
+    - 有症狀或膽管阻塞需手術治療
+    - 同時治療膽囊炎
+  general:
+    - 無症狀結石：定期超音波追蹤
+    - 膽囊切除術（cholecystectomy）為有症狀者首選治療
+    - 膽管阻塞需緊急手術探查
+    - 術後抗生素治療（膽汁培養結果導向）
+    - "利膽藥：Ursodeoxycholic acid（Ursodiol）10-15 mg/kg PO q24h"
+    - 低脂飲食
+
+prognosis: 無症狀膽結石預後良好。膽囊切除術成功率高。膽管阻塞若及時手術預後尚可。膽囊破裂伴膽汁性腹膜炎預後較差（死亡率 20-40%）。合併膽囊黏液囊腫者需積極處理。
+
+pubmedQueries:
+  - query: '"cholelithiasis" OR "gallstones" AND (veterinary OR canine OR feline) AND ("cholecystectomy" OR "treatment")'
+    frequency: monthly

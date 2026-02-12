@@ -1,0 +1,78 @@
+slug: abdominal-trauma
+nameEn: Abdominal Trauma
+nameZh: 腹部創傷
+bodySystem: emergency
+description: 腹部創傷為鈍性或穿透性外力引起的腹腔器官損傷。常見受損器官包括脾臟、肝臟、膀胱與腸道。AFAST 超音波為快速評估腹腔出血的重要工具。腹腔內出血（hemoabdomen）與空腔器官破裂（腹膜炎）為主要致命併發症。
+
+aliases:
+  - { alias: 腹腔外傷, language: zh }
+  - { alias: Blunt Abdominal Trauma, language: en }
+  - { alias: Abdominal Injury, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬腹部創傷常見於車禍與咬傷。脾臟為最常受損器官（位置淺表）。膀胱破裂（uroabdomen）在膀胱充盈時更易發生。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓腹部創傷常見於車禍與高處墜落。肝臟與膀胱為常見受損器官。腹壁疝亦可見。
+
+etiology:
+  categories:
+    - name: 損傷機制
+      examples:
+        - 鈍性（車禍、踢傷、墜落）
+        - 穿透性（咬傷、異物、刺傷）
+    - name: 常見器官損傷
+      examples:
+        - 脾臟破裂（hemoabdomen 最常見原因）
+        - 肝臟裂傷
+        - 膀胱破裂（uroabdomen）
+        - 腸道破裂（腹膜炎）
+        - 腎臟損傷
+        - 腹壁疝
+
+clinicalSigns:
+  early:
+    - 腹痛
+    - 腹部緊張或膨脹
+    - 嗜睡、虛弱
+  progressive:
+    - 出血性休克（蒼白、心搏過速、低血壓）
+    - 腹膜炎征象（腹部板狀僵硬、發燒）
+    - 腹水增加
+    - 排尿障礙（膀胱破裂）
+
+diagnosis:
+  primaryTests:
+    - name: AFAST 超音波
+      notes: 4 點快速掃描評估腹腔游離液體。陽性 AFAST 需鑑別血液、尿液或消化道內容物
+    - name: 腹腔穿刺 (abdominocentesis)
+      notes: 腹腔液分析：PCV >25% 確認 hemoabdomen。Creatinine 高於血清確認 uroabdomen
+  additional:
+    - 腹部 X-ray（游離氣體→空腔器官破裂）
+    - CBC、生化（PCV 追蹤、BUN/Cr）
+    - 腹腔液鉀/Cr 與血清比較
+    - CT（複雜損傷評估）
+
+treatment:
+  principles:
+    - 穩定血循環
+    - 評估是否需緊急手術
+    - 持續監測
+  general:
+    - IV 輸液復甦（晶體液 ± 膠體液）
+    - 輸血（PCV <25% 或持續出血）
+    - 手術適應症：持續出血不可控、空腔器官破裂、腹膜炎
+    - 脾臟破裂：脾臟切除
+    - 膀胱破裂：手術修補
+    - 腸道破裂：切除壞死段 + 吻合
+    - 肝臟裂傷：多數保守管理（自行止血）
+    - 止痛
+    - 腹帶包紮（暫時壓迫止血）
+
+prognosis: 腹部創傷整體存活率約 60-80%。單一器官損傷預後較佳。多器官損傷與腹膜炎預後較差。及早辨識與手術介入改善存活。
+
+pubmedQueries:
+  - query: '"abdominal trauma" AND (veterinary OR canine OR feline) AND ("treatment" OR "hemoabdomen" OR "AFAST")'
+    frequency: monthly

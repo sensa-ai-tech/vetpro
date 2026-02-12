@@ -1,0 +1,70 @@
+slug: leukemia
+nameEn: Leukemia
+nameZh: 白血病
+bodySystem: hematology
+description: 白血病為骨髓造血細胞的惡性腫瘤，特徵為異常血球細胞在骨髓中增殖並進入周邊血液。依細胞來源分為淋巴性（lymphoid）與骨髓性（myeloid），依臨床行為分為急性（blast 細胞 >20%）與慢性。犬隻以淋巴性白血病較常見，貓隻常與 FeLV 感染相關。
+
+aliases:
+  - { alias: 血癌, language: zh }
+  - { alias: Blood Cancer, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻以慢性淋巴細胞白血病（CLL）較急性型常見。中老年犬好發。Golden Retriever 與 German Shepherd 有較高報告率。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻白血病常與 FeLV 感染相關。急性淋巴母細胞白血病在 FeLV 陽性年輕貓較常見。
+
+etiology:
+  categories:
+    - name: 分類
+      examples:
+        - 急性淋巴母細胞白血病（ALL）
+        - 慢性淋巴細胞白血病（CLL）
+        - 急性骨髓性白血病（AML）
+        - 慢性骨髓性白血病（CML，極罕見）
+    - name: 風險因素
+      examples:
+        - FeLV 感染（貓，最重要風險因素）
+        - 輻射暴露
+        - 化學物質暴露
+        - 遺傳傾向（部分品種）
+
+clinicalSigns:
+  early:
+    - 嗜睡與食慾下降
+    - 體重減輕
+    - CLL 可能長期無症狀
+  progressive:
+    - 發燒（感染易感性增加）
+    - 黏膜蒼白（貧血）
+    - 出血傾向（血小板減少）
+    - 淋巴結腫大
+    - 脾腫大與肝腫大
+    - 骨痛（骨髓擴張）
+
+diagnosis:
+  primaryTests:
+    - name: 全血球計數（CBC）與血液抹片
+      notes: 白血球計數通常升高（可極高），周邊血液中出現異常 blast 細胞或大量單形態淋巴球。可伴隨貧血與血小板減少。部分病例白血球正常或降低（aleukemic leukemia）。
+    - name: 骨髓穿刺與活檢
+      notes: 確診必須。評估 blast 細胞比例（>20% 為急性白血病）、骨髓造血功能。免疫組織化學與流式細胞儀確認細胞來源。
+
+treatment:
+  principles:
+    - 急性白血病需積極化療
+    - 慢性白血病可緩慢進展，治療較保守
+    - 支持性治療（輸血、感染控制）重要
+  general:
+    - "ALL：CHOP 方案（Vincristine + Cyclophosphamide + Doxorubicin + Prednisone）"
+    - "CLL：Chlorambucil + Prednisone（進展緩慢時可監測觀察）"
+    - "AML：Cytarabine ± Doxorubicin（反應率低）"
+    - 支持性治療：輸血、廣效抗生素
+    - 止吐治療（化療副作用管理）
+
+prognosis: CLL 犬隻預後相對良好，中位存活時間 1-3 年。ALL 犬隻預後不良，中位存活時間約 1-4 個月。AML 預後極差，多數病例對化療反應不佳。貓隻白血病預後取決於 FeLV 狀態與白血病類型。
+
+pubmedQueries:
+  - query: '"leukemia" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis" OR "chemotherapy")'
+    frequency: monthly

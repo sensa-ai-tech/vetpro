@@ -1,0 +1,70 @@
+slug: esophagitis
+nameEn: Esophagitis
+nameZh: 食道炎
+bodySystem: gastrointestinal
+description: 食道炎為食道黏膜的炎症，可由胃食道反流（最常見，特別是全身麻醉期間）、腐蝕性物質攝入、食道異物損傷、反覆嘔吐或藥物刺激引起。嚴重或慢性食道炎可導致食道狹窄。臨床表現為吞嚥困難、反芻與食慾下降。
+
+aliases:
+  - { alias: 食道發炎, language: zh }
+  - { alias: Reflux Esophagitis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬隻食道炎常見原因為全身麻醉期間胃酸反流。食道異物取出後亦常見繼發性食道炎。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻食道炎可因藥物膠囊滯留於食道（特別是 Doxycycline、Clindamycin）或全身麻醉反流引起。
+
+etiology:
+  categories:
+    - name: 胃食道反流
+      examples:
+        - 全身麻醉期間反流（最常見原因）
+        - 慢性嘔吐
+        - 裂孔疝
+    - name: 化學/物理損傷
+      examples:
+        - 腐蝕性物質攝入
+        - 食道異物損傷
+        - 藥物膠囊滯留（Doxycycline、Clindamycin，貓）
+        - 熱傷
+
+clinicalSigns:
+  early:
+    - 吞嚥困難（dysphagia）
+    - 反芻（regurgitation）
+    - 流涎
+    - 食慾下降
+  progressive:
+    - 持續反芻
+    - 體重減輕
+    - 脫水
+    - 吞嚥時疼痛表現
+    - 食道狹窄形成（嚴重者）
+
+diagnosis:
+  primaryTests:
+    - name: 食道鏡（Esophagoscopy）
+      notes: 確診金標準。可直接觀察食道黏膜紅腫、糜爛、潰瘍或狹窄。評估損傷範圍與嚴重程度。
+    - name: 吞嚥造影（Barium Swallow）
+      notes: 食道蠕動異常、黏膜不規則。狹窄處顯示管腔變窄。禁用於疑似穿孔病例（改用水溶性造影劑）。
+
+treatment:
+  principles:
+    - 保護食道黏膜促進癒合
+    - 抑制胃酸減少反流
+    - 預防食道狹窄形成
+  general:
+    - "Omeprazole 1 mg/kg PO q12h（質子幫浦抑制劑，抑制胃酸）"
+    - "Sucralfate 0.5-1 g PO q8h（黏膜保護劑）"
+    - "Cisapride 0.5 mg/kg PO q8h（促進食道與胃蠕動）"
+    - 流質或半流質飲食，少量多餐
+    - 嚴重者短期禁食 + 胃造口管（PEG tube）營養
+    - "Prednisolone 0.5-1 mg/kg/day PO（嚴重潰瘍性食道炎，防止狹窄形成，爭議）"
+
+prognosis: 輕度食道炎在適當治療下預後良好，通常 1-2 週內恢復。嚴重食道炎有發展為食道狹窄的風險（約 10-20%），可能需要反覆球囊擴張。全身麻醉相關反流性食道炎的預防（術前禁食、適當術中管理）很重要。
+
+pubmedQueries:
+  - query: '"esophagitis" AND (veterinary OR canine OR feline) AND ("reflux" OR "treatment" OR "stricture")'
+    frequency: monthly

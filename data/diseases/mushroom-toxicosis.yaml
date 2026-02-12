@@ -1,0 +1,78 @@
+slug: mushroom-toxicosis
+nameEn: Mushroom Toxicosis
+nameZh: 毒菇中毒
+bodySystem: toxicology
+description: 毒菇中毒 (mushroom toxicosis) 為犬常見的植物性中毒之一。毒素種類繁多，包括引起肝壞死的鵝膏毒素 (amatoxin)、引起神經症狀的 ibotenic acid/muscimol，以及引起消化道症狀的多種毒素。Amanita phalloides（死亡帽菇）致死率最高。
+
+aliases:
+  - { alias: 蕈類中毒, language: zh }
+  - { alias: Mushroom Poisoning, language: en }
+  - { alias: Mycetism, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬毒菇中毒較貓常見（犬較易在戶外攝食不明物體）。Amanita spp. 含 amatoxin 致死率最高。秋季濕潤氣候為好發季節。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓毒菇中毒罕見。攝入報告極少。
+
+etiology:
+  categories:
+    - name: 主要毒素分類
+      examples:
+        - Amatoxin（Amanita phalloides 等）— 肝腎壞死，致命
+        - Muscarine（Inocybe、Clitocybe spp.）— 膽鹼能症狀
+        - Ibotenic acid/Muscimol（Amanita muscaria）— 中樞神經症狀
+        - Psilocybin — 致幻劑
+        - 消化道刺激型（多種常見毒菇）
+    - name: 臨床分型
+      examples:
+        - 早期發作型（<6 小時）— 通常非致命
+        - 延遲發作型（>6 小時）— 可能致命（amatoxin 高度懷疑）
+
+clinicalSigns:
+  early:
+    - 嘔吐與腹瀉（消化道刺激型，<6 小時）
+    - 流涎、流淚（muscarine 型）
+    - 共濟失調、行為異常（ibotenic acid 型）
+  progressive:
+    - "Amatoxin 型：假性恢復期後急性肝衰竭（24-72 小時）"
+    - 黃疸
+    - 凝血障礙
+    - 腎衰竭
+    - 低血糖
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 蕈類辨識
+      notes: 盡可能保留蕈類樣本供菌類學家鑑定。拍照記錄。辨識困難時按最嚴重類型處理
+    - name: 發病時間
+      notes: 攝入後 >6 小時才發作強烈提示 amatoxin（最危險型）
+  additional:
+    - 肝功能連續監測（amatoxin 型）
+    - 凝血功能
+    - 尿液 amatoxin 檢測（特殊實驗室）
+    - CBC 與生化
+
+treatment:
+  principles:
+    - 保留蕈類樣本供鑑定
+    - 延遲發作型按 amatoxin 型積極處理
+    - 去汙染
+    - 類型針對性支持
+  general:
+    - 催吐 + 活性炭（多次給予，amatoxin 有腸肝循環）
+    - "Amatoxin 型：silibinin/silymarin 20-50 mg/kg/day IV + NAC + penicillin G"
+    - IV 輸液
+    - 保肝治療
+    - Muscarine 型：atropine
+    - Ibotenic acid 型：支持療法 + benzodiazepine
+    - 新鮮冷凍血漿（凝血障礙）
+
+prognosis: 消化道刺激型毒菇中毒預後良好（自限性）。Amatoxin 型中毒致死率高（50-90% 未治療）。早期積極治療（silibinin、NAC）可改善存活率至 50-70%。蕈類辨識為治療決策關鍵。
+
+pubmedQueries:
+  - query: '"mushroom toxicosis" AND (veterinary OR canine) AND ("treatment" OR "amatoxin")'
+    frequency: monthly

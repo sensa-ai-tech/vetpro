@@ -1,0 +1,77 @@
+slug: hypothermia
+nameEn: Hypothermia
+nameZh: 低體溫症
+bodySystem: emergency
+description: 低體溫症為核心體溫低於正常範圍（犬貓 <37.5°C）的危急狀態。常見於外傷、長時間暴露寒冷環境、麻醉後、新生仔畜與嚴重系統性疾病。低體溫導致代謝減緩、心律不整與凝血障礙。回溫速率與方法為治療關鍵。
+
+aliases:
+  - { alias: 體溫過低, language: zh }
+  - { alias: Cold Exposure, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬正常體溫 38.0-39.2°C。<37°C 為輕度低體溫，<34°C 為中度，<32°C 為嚴重。小型犬與幼犬因體表面積/體重比高風險較大。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓正常體溫 38.0-39.2°C。貓低體溫常見於外傷後、嚴重疾病（腎衰竭晚期）與麻醉後。
+
+etiology:
+  categories:
+    - name: 環境因素
+      examples:
+        - 長時間暴露寒冷環境
+        - 落水（水導熱速度為空氣 25 倍）
+        - 新生仔畜保溫不足
+    - name: 醫源性與疾病相關
+      examples:
+        - 麻醉（體溫調節抑制）
+        - 手術中體腔暴露
+        - 嚴重疾病末期（敗血症、休克、腎衰竭）
+        - 甲狀腺低下
+
+clinicalSigns:
+  early:
+    - 顫抖
+    - 嗜睡
+    - 心搏過緩
+  progressive:
+    - 顫抖停止（<32°C 肌肉無法產熱）
+    - 心律不整
+    - 低血壓
+    - 昏迷
+    - 凝血障礙
+    - 心臟停止（<28°C 高風險）
+
+diagnosis:
+  primaryTests:
+    - name: 核心體溫
+      notes: 直腸溫度計（低溫型可測至 25°C）。輕度 34-37°C、中度 32-34°C、嚴重 <32°C
+    - name: 心電圖
+      notes: 竇性心搏過緩、J wave (Osborn wave)、心房顫動、室性心律不整
+  additional:
+    - 血氣分析（酸鹼平衡）
+    - 電解質（高血鉀風險）
+    - 血糖
+    - 凝血功能
+
+treatment:
+  principles:
+    - 緩慢回溫（避免 afterdrop）
+    - 輕度：被動外部回溫
+    - 中重度：主動核心回溫
+    - 監測心律不整
+  general:
+    - 輕度：毯子包裹、溫暖環境、避免搓揉
+    - 中度：溫熱 IV 輸液（38-40°C）、溫風毯、溫熱水瓶（隔布）
+    - 嚴重：溫熱腹腔灌洗（38-40°C 生理食鹽水）
+    - 回溫速率目標：每小時 1-2°C
+    - 心律不整：回溫後多數自行消失。避免低體溫時使用抗心律不整藥
+    - 矯正代謝性酸中毒
+    - 血糖監測與矯正
+
+prognosis: 環境暴露引起的低體溫在適當回溫後預後佳。嚴重低體溫（<28°C）致死率高。疾病末期伴隨低體溫為不良預後指標。新生仔畜低體溫需立即處理。
+
+pubmedQueries:
+  - query: '"hypothermia" AND (veterinary OR canine OR feline) AND ("treatment" OR "rewarming" OR "emergency")'
+    frequency: monthly

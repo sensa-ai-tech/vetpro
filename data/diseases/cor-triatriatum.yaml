@@ -1,0 +1,61 @@
+slug: cor-triatriatum
+nameEn: Cor Triatriatum
+nameZh: 三心房心
+bodySystem: cardiac
+description: 三心房心為罕見的先天性心臟異常，指心房被一異常纖維肌肉膜分隔為兩個腔室。Cor triatriatum dexter（右側型）在犬隻較常報告，指右心房被分隔；Cor triatriatum sinister（左側型）則較少見。該膜可造成靜脈回流受阻，導致體靜脈或肺靜脈鬱血。
+
+aliases:
+  - { alias: Divided Atrium, language: en }
+  - { alias: 分隔心房, language: zh }
+  - { alias: Cor Triatriatum Dexter, language: en }
+  - { alias: Cor Triatriatum Sinister, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: rare
+    notes: 犬隻先天性心臟病中極為罕見。Cor triatriatum dexter 報告較多，可導致右心房分隔伴腔靜脈與冠狀靜脈竇回流受阻。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓隻極為罕見，僅有零星病例報告。
+
+etiology:
+  categories:
+    - name: 先天性發育異常
+      examples:
+        - 右側型：右側靜脈竇瓣（右 Eustachian 瓣）持續存在並形成隔膜
+        - 左側型：共同肺靜脈未能完全併入左心房
+        - 隔膜上的開口大小決定血流動力學影響程度
+
+clinicalSigns:
+  early:
+    - 右側型：腹水、頸靜脈怒張
+    - 左側型：呼吸困難、運動不耐
+    - 心雜音（可能不明顯）
+  progressive:
+    - 右側型：慢性腹水、肝腫大、外周水腫
+    - 左側型：肺水腫、嚴重呼吸困難
+    - 生長遲緩（幼犬）
+
+diagnosis:
+  primaryTests:
+    - name: 心臟超音波（Echocardiography）
+      notes: 確診首選。可見心房內異常隔膜，評估隔膜開口大小與跨膜壓差。右側型可見右心房內膜狀結構分隔腔靜脈入口與三尖瓣口。
+    - name: 心導管檢查或血管攝影
+      notes: 可確認分隔膜位置與血流動力學影響，並可同時進行球囊擴張治療。
+
+treatment:
+  principles:
+    - 有臨床症狀的病例需要介入治療
+    - 目標為解除靜脈回流受阻
+    - 無症狀輕度病例可監測觀察
+  general:
+    - 經導管球囊擴張術（首選微創治療）
+    - 外科切除隔膜（開心手術）
+    - 腹水管理：Furosemide 2-4 mg/kg PO q8-12h、腹腔穿刺引流
+    - 利尿劑與限鈉飲食作為術前橋接治療
+
+prognosis: 未治療的有症狀病例預後不良，慢性靜脈鬱血可導致器官損害。經導管球囊擴張術成功者預後良好，多數犬隻術後臨床症狀顯著改善。外科切除隔膜亦可獲得良好效果，但手術風險較高。
+
+pubmedQueries:
+  - query: '"cor triatriatum" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "treatment")'
+    frequency: monthly

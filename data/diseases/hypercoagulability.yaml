@@ -1,0 +1,70 @@
+slug: hypercoagulability
+nameEn: Hypercoagulability
+nameZh: 高凝血狀態
+bodySystem: hematology
+description: 高凝血狀態為血液凝固傾向增加的病理狀態，可導致動脈或靜脈血栓形成。犬隻常見於蛋白喪失性腎病（PLN）、免疫介導性溶血性貧血（IMHA）、庫欣氏症、腫瘤及敗血症。肺動脈血栓栓塞（PTE）為犬隻最常見的致命性血栓事件。
+
+aliases:
+  - { alias: 高凝狀態, language: zh }
+  - { alias: Thrombophilia, language: en }
+  - { alias: Prothrombotic State, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻高凝血狀態常見於 IMHA、PLN/PLE（抗凝血蛋白丟失）、hyperadrenocorticism 及腫瘤。PTE 為重要致死併發症。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻動脈血栓栓塞（ATE）多與心肌病相關（左心房血栓）。PLN 相關高凝血狀態亦有報告。
+
+etiology:
+  categories:
+    - name: 蛋白丟失性疾病
+      examples:
+        - 蛋白喪失性腎病（antithrombin III 丟失）
+        - 蛋白喪失性腸病
+    - name: 免疫/炎症性
+      examples:
+        - 免疫介導性溶血性貧血（IMHA）
+        - 敗血症與 SIRS
+        - DIC 前期
+    - name: 內分泌/腫瘤
+      examples:
+        - 庫欣氏症（皮質醇促凝血）
+        - 惡性腫瘤（paraneoplastic hypercoagulability）
+        - 糖尿病
+
+clinicalSigns:
+  early:
+    - 高凝血狀態本身可無症狀
+    - 基礎疾病的症狀
+  progressive:
+    - 肺動脈血栓栓塞：急性呼吸困難、心搏過速、低血氧
+    - 腹主動脈血栓：後肢急性癱瘓（犬較少見，貓 ATE 典型）
+    - 門脈血栓：腹水
+    - 腦血管血栓：急性神經症狀
+
+diagnosis:
+  primaryTests:
+    - name: 血栓彈力圖（TEG/ROTEM）
+      notes: 評估全血凝血狀態的最佳工具。高凝血狀態表現為 R time 縮短、MA 增加、G 值增高。較傳統 PT/APTT 更能反映整體凝血狀態。
+    - name: D-dimer 與 Antithrombin III
+      notes: D-dimer 升高提示活化的凝血與纖溶。AT III 降低（PLN 丟失）為高凝血狀態的重要機轉。
+
+treatment:
+  principles:
+    - 治療基礎疾病
+    - 抗血栓預防（高風險患者）
+    - 已形成血栓的溶栓治療
+  general:
+    - "抗血小板：Clopidogrel 2 mg/kg PO q24h（首選犬隻）"
+    - "低劑量 Aspirin 0.5-1 mg/kg PO q24h（IMHA 患者）"
+    - "低分子量 Heparin（Enoxaparin）0.8 mg/kg SC q6h（住院高風險患者）"
+    - "Rivaroxaban（Factor Xa 抑制劑）初步犬隻研究中"
+    - 治療基礎疾病（IMHA 免疫抑制、PLN 管理、Cushing 治療等）
+
+prognosis: 預後取決於基礎疾病與血栓事件的嚴重程度。IMHA 合併 PTE 死亡率極高。PLN 合併血栓栓塞預後不良。早期預防性抗血栓治療可降低風險。庫欣氏症治療後高凝血狀態可改善。
+
+pubmedQueries:
+  - query: '"hypercoagulability" OR "thromboembolism" AND (veterinary OR canine OR feline) AND ("prevention" OR "antithrombotic")'
+    frequency: monthly

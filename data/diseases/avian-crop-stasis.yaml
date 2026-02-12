@@ -1,0 +1,80 @@
+slug: avian-crop-stasis
+nameEn: Avian Crop Stasis
+nameZh: 禽類嗉囊停滯
+bodySystem: gastrointestinal
+description: 嗉囊停滯是指嗉囊排空功能障礙導致食物滯留的症狀，可由多種原因引起，包括感染（念珠菌、細菌）、異物、神經功能障礙或全身性疾病。手養幼鳥及鸚鵡類最為常見，需迅速找出潛在原因並治療。
+
+aliases:
+  - { alias: 嗉囊延遲排空, language: zh }
+  - { alias: 嗉囊麻痺, language: zh }
+  - { alias: Crop stasis in birds, language: en }
+  - { alias: Delayed crop emptying, language: en }
+  - { alias: Crop impaction, language: en }
+
+species:
+  - speciesCommon: bird
+    prevalence: common
+    notes: 手養幼鳥極為常見。成鳥中鸚鵡類較多見。為許多疾病的共同表現，非獨立疾病。
+
+etiology:
+  categories:
+    - name: 感染性
+      examples:
+        - 念珠菌感染（最常見）
+        - 細菌性嗉囊炎
+        - 病毒感染（PDD、多瘤病毒）
+    - name: 機械性
+      examples:
+        - 異物阻塞
+        - 嗉囊異物（紡織纖維、碎屑）
+        - 腫瘤壓迫
+    - name: 功能性
+      examples:
+        - 神經功能障礙（PDD）
+        - 低溫配方奶（手養幼鳥）
+        - 全身性疾病（肝病、腎病）
+        - 重金屬中毒
+
+clinicalSigns:
+  early:
+    - 嗉囊排空時間延長
+    - 嗉囊內殘留食物（觸診可感覺）
+    - 食慾輕度下降
+  progressive:
+    - 嗉囊持續脹大
+    - 嘔吐（酸臭食物）
+    - 嗉囊內容物發酵（觸壓有氣泡感）
+    - 體重下降
+    - 脫水
+    - 嗜睡
+
+diagnosis:
+  primaryTests:
+    - name: 嗉囊拭子細胞學
+      notes: 革蘭氏染色評估念珠菌與細菌。正常嗉囊應以革蘭氏陽性菌為主
+    - name: X 光
+      notes: 嗉囊擴大充滿食物或氣體。評估是否有異物或下消化道阻塞
+    - name: 血液檢查
+      notes: CBC 與生化排除全身性疾病。重金屬濃度測定
+
+treatment:
+  principles:
+    - 找出並治療根本原因
+    - 嗉囊排空處理
+    - 支持療法
+    - 預防脫水
+  general:
+    - 若為念珠菌感染：Nystatin 治療
+    - 嗉囊沖洗（溫生理食鹽水輕柔灌洗）
+    - 暫時禁食讓嗉囊休息（2-4 小時）
+    - 少量多餐（半流質飲食）
+    - 保溫（29-32°C）
+    - 補液治療
+    - 嗉囊按摩促進排空
+    - 針對基礎疾病治療
+
+prognosis: 預後取決於根本原因。單純感染性嗉囊炎經治療後預後良好。PDD 引起者預後謹慎。異物阻塞移除後預後良好。全身性疾病所致者需根據基礎疾病評估。手養幼鳥嗉囊停滯及時處理多能恢復。
+
+pubmedQueries:
+  - query: '"crop stasis" AND (avian OR bird OR psittacine) AND (treatment OR management)'
+    frequency: monthly

@@ -1,0 +1,80 @@
+slug: sago-palm-toxicosis
+nameEn: Sago Palm Toxicosis
+nameZh: 蘇鐵中毒
+bodySystem: toxicology
+description: 蘇鐵 (sago palm, Cycas revoluta) 所有部位均具毒性，種子（果實）毒性最強。含有 cycasin 與 beta-methylamino-L-alanine (BMAA)，引起嚴重肝壞死。犬攝入後致死率可達 50-75%，為最致命的常見植物中毒之一。
+
+aliases:
+  - { alias: 鳳尾蕉中毒, language: zh }
+  - { alias: Cycad Toxicosis, language: en }
+  - { alias: Sago Palm Poisoning, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬蘇鐵中毒致死率高（50-75%）。種子僅需 1-2 顆即可引起致命中毒。亞熱帶/熱帶地區室外種植與室內觀賞植物均為來源。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓蘇鐵中毒報告少於犬但同樣致命。
+
+etiology:
+  categories:
+    - name: 毒性物質
+      examples:
+        - Cycasin（主要毒素，代謝為 methylazoxymethanol/MAM）
+        - MAM 為強效肝毒素與致癌物
+        - BMAA（神經毒素）
+        - 所有部位有毒，種子毒性最強
+    - name: 毒性劑量
+      examples:
+        - 種子 1-2 顆可致命
+        - 葉片與根也有毒但毒素含量較低
+
+clinicalSigns:
+  early:
+    - 嘔吐（攝入後 15 分鐘至數小時）
+    - 腹瀉（可能血便）
+    - 過度流涎
+    - 腹痛
+  progressive:
+    - 急性肝衰竭（24-72 小時後）
+    - 黃疸
+    - 凝血障礙（DIC）
+    - 腹水
+    - 肝性腦病變
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 病史確認
+      notes: 確認蘇鐵/蘇鐵種子攝入。辨識植物外觀至關重要
+    - name: 肝功能連續監測
+      notes: ALT、AST 可在 24 小時內急遽升高。膽紅素、PT/aPTT 追蹤肝功能惡化
+  additional:
+    - 凝血功能（DIC 篩檢）
+    - CBC（血小板減少）
+    - 血糖（肝衰竭致低血糖）
+    - 腹部超音波
+
+treatment:
+  principles:
+    - 積極早期去汙染
+    - 保肝治療
+    - DIC 管理
+    - 長期肝功能監測
+  general:
+    - 催吐（攝入後盡早）
+    - 活性炭 1-2 g/kg PO（多次給予）
+    - IV 輸液支持
+    - 保肝治療（NAC 140 mg/kg loading → 70 mg/kg q6h、SAMe、vitamin E）
+    - 新鮮冷凍血漿（凝血障礙）
+    - 止吐（maropitant）
+    - 消化道保護（sucralfate、omeprazole）
+    - 住院密切監測肝功能至少 5-7 天
+    - 移除家中/庭院蘇鐵植物
+
+prognosis: 蘇鐵中毒預後謹慎至不良。即使積極治療致死率仍達 50-75%。早期去汙染（2 小時內催吐加活性炭）可能改善預後。肝功能指數持續惡化者預後極差。
+
+pubmedQueries:
+  - query: '"sago palm" OR "cycad" AND (toxicosis OR poisoning) AND (veterinary OR canine)'
+    frequency: monthly

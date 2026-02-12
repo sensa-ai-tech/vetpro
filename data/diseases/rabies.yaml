@@ -1,0 +1,67 @@
+slug: rabies
+nameEn: Rabies
+nameZh: 狂犬病
+bodySystem: neurology
+description: 狂犬病為狂犬病病毒（Rabies virus，Lyssavirus 屬，Rhabdoviridae 科）感染中樞神經系統導致的致命性腦脊髓炎。為重要人畜共通傳染病。透過被感染動物咬傷傳播（唾液中病毒經傷口進入）。臨床分為狂躁型（furious）與癱瘓型（dumb/paralytic）。一旦出現臨床症狀幾乎 100% 致死。疫苗接種為最有效預防。
+
+aliases:
+  - { alias: 瘋狗病, language: zh }
+  - { alias: Hydrophobia, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬隻狂犬病在疫苗普及地區已大幅減少。在亞洲、非洲、中南美洲仍為重要流行疾病。犬隻為人類狂犬病最主要傳染來源。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓隻狂犬病在美國等已開發國家已超過犬隻成為最常報告的家畜狂犬病動物。流浪貓接觸野生動物風險高。
+
+etiology:
+  categories:
+    - name: 病原體
+      examples:
+        - Rabies virus（RNA 病毒，Rhabdoviridae 科 Lyssavirus 屬）
+        - 嗜神經性（經周邊神經逆行性傳播至 CNS）
+        - 潛伏期 2 週至數月（取決於咬傷部位與病毒量）
+    - name: 傳播途徑
+      examples:
+        - 被感染動物咬傷（唾液中病毒經傷口進入）
+        - 野生動物儲主（蝙蝠、浣熊、臭鼬、狐狸）
+        - 極罕見經黏膜或氣霧傳播
+
+clinicalSigns:
+  early:
+    - 行為改變（友善動物變攻擊性或害怕動物變親人）
+    - 咬傷部位感覺異常
+    - 輕度發燒
+  progressive:
+    - 狂躁型：攻擊性、不安、過度興奮、對光線聲音過度敏感、流涎
+    - 癱瘓型：漸進性癱瘓（下顎下垂「dropped jaw」、吞嚥困難、後肢無力）
+    - 嚴重流涎（吞嚥困難相關）
+    - 癲癇
+    - 昏迷與死亡（通常發病後 3-7 天）
+
+diagnosis:
+  primaryTests:
+    - name: 死後腦組織檢查
+      notes: 確診為死後診斷。直接免疫螢光試驗（DFA/dFA）檢測腦組織中病毒抗原——金標準。腦組織 RT-PCR。Negri bodies（嗜酸性胞質內包涵體）在海馬迴與 Purkinje 細胞。
+    - name: 生前診斷
+      notes: 生前確診困難。皮膚活檢（頸背毛囊周圍神經 DFA）。唾液 RT-PCR。血清抗體效價（未接種動物陽性有意義）。角膜壓片。
+
+treatment:
+  principles:
+    - 無有效治療
+    - 臨床症狀出現後幾乎 100% 致死
+    - 疑似病例需隔離觀察或安樂死後送檢
+  general:
+    - 無有效抗病毒治療
+    - 臨床症狀出現後預後為致死
+    - 疑似暴露動物：依據當地法規隔離觀察（已接種動物 45-90 天，未接種動物通常建議安樂死）
+    - 暴露後預防（人類）：傷口清洗 + 狂犬病免疫球蛋白 + 疫苗
+    - 預防為核心：定期疫苗接種
+
+prognosis: 臨床症狀出現後幾乎 100% 致死。無有效治療。預防接種為唯一有效防護。暴露後迅速處理（人類）可防止發病。獸醫人員為職業暴露高風險群。
+
+pubmedQueries:
+  - query: '"rabies" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "vaccination" OR "epidemiology")'
+    frequency: monthly

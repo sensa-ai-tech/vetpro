@@ -1,0 +1,81 @@
+slug: avian-egg-binding
+nameEn: Avian Egg Binding
+nameZh: 禽類蛋滯留
+bodySystem: reproductive
+description: 蛋滯留是母鳥無法在正常時間內產出蛋的急症，為寵物鳥常見的生殖急診。常因低血鈣、營養不良、輸卵管功能異常或蛋過大引起。若未及時處理可導致輸卵管壞死、泄殖腔脫垂甚至死亡。
+
+aliases:
+  - { alias: 鳥類難產, language: zh }
+  - { alias: 蛋阻塞, language: zh }
+  - { alias: Egg retention in birds, language: en }
+  - { alias: Dystocia in birds, language: en }
+
+species:
+  - speciesCommon: bird
+    prevalence: common
+    notes: 虎皮鸚鵡、玄鳳鸚鵡、金絲雀為高風險群。單隻飼養的母鳥也可能產蛋並發生蛋滯留。為鳥類急診中常見的急症。
+
+etiology:
+  categories:
+    - name: 營養性因素
+      examples:
+        - 低血鈣（最常見原因）
+        - 營養不良
+        - 維生素 D3 不足
+        - 全種子飲食（鈣不足）
+    - name: 機械性因素
+      examples:
+        - 蛋過大或畸形
+        - 輸卵管發炎或沾黏
+        - 肥胖壓迫輸卵管
+        - 腹腔腫瘤壓迫
+    - name: 環境因素
+      examples:
+        - 缺乏運動（肌肉無力）
+        - 過度繁殖
+        - 環境緊迫
+
+clinicalSigns:
+  early:
+    - 蹲伏在籠底
+    - 用力排便姿勢
+    - 尾部搖擺
+    - 腹部膨脹
+  progressive:
+    - 明顯用力但無法產蛋
+    - 嗜睡（站在籠底不動）
+    - 腹部明顯腫脹（可觸及蛋）
+    - 呼吸困難（蛋壓迫氣囊）
+    - 排便減少或停止
+    - 後肢癱瘓（坐骨神經壓迫）
+    - 休克
+
+diagnosis:
+  primaryTests:
+    - name: 觸診
+      notes: 腹部觸診可能觸及硬質蛋體。需輕柔操作避免蛋破裂
+    - name: X 光
+      notes: 可見完整蛋體在輸卵管或泄殖腔內。評估蛋殼鈣化程度
+    - name: 血鈣檢測
+      notes: 評估離子鈣濃度。低血鈣是最常見誘因
+
+treatment:
+  principles:
+    - 穩定患者狀態（保溫、補液、補鈣）
+    - 促進自然排蛋
+    - 必要時人工取蛋
+    - 預防復發
+  general:
+    - 保溫（29-32°C，濕度提高）
+    - 10% Calcium gluconate（50-100 mg/kg IM/IV 緩慢注射）
+    - 皮下或靜脈補液
+    - Oxytocin（3-5 IU/kg IM）促進輸卵管收縮（確認無阻塞後）
+    - 無法自然排出時以潤滑劑輔助或人工碎蛋取出
+    - 嚴重者需手術取蛋
+    - 預防：補充鈣質、均衡飲食、減少產蛋刺激
+
+prognosis: 及時處理預後良好。大多數蛋滯留經保守治療（保溫、補鈣、補液）可成功排出。延遲處理者可能發生輸卵管破裂、腹膜炎，預後不良。反覆蛋滯留者建議藥物或手術抑制產蛋。
+
+pubmedQueries:
+  - query: '"egg binding" AND (avian OR bird OR psittacine) AND (treatment OR management)'
+    frequency: monthly

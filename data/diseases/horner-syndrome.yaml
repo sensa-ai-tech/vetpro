@@ -1,0 +1,71 @@
+slug: horner-syndrome
+nameEn: Horner Syndrome
+nameZh: 霍納氏症候群
+bodySystem: neurology
+description: 因交感神經通路中斷所致的眼部與面部症候群，表現為瞳孔縮小 (miosis)、上眼瞼下垂 (ptosis)、眼球內陷 (enophthalmos) 及第三眼瞼突出。病因涉及中樞、節前或節後三段交感神經之損傷。
+
+aliases:
+  - { alias: Horner's Syndrome, language: en }
+  - { alias: Oculosympathetic Paresis, language: en }
+  - { alias: 霍納症候群, language: zh }
+  - { alias: 交感神經眼麻痺, language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬最常見為特發性 (idiopathic)，尤其金毛獵犬。中耳疾病 (otitis media) 為常見已知原因。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓較常見與中耳炎或耳部手術相關，也可因胸部腫瘤或外傷引起。
+
+etiology:
+  categories:
+    - name: 中樞性 (第一階神經元)
+      examples:
+        - 腦幹病變 (腫瘤、血管事件)
+        - 脊髓 C1-T3 病變
+        - 椎間盤突出
+    - name: 節前性 (第二階神經元)
+      examples:
+        - 胸腔腫瘤
+        - 臂神經叢損傷
+        - 頸部外傷或手術
+    - name: 節後性 (第三階神經元)
+      examples:
+        - 中耳炎 / 耳道手術
+        - 球後病變
+        - 特發性 (最常見)
+
+clinicalSigns:
+  early:
+    - 單側瞳孔縮小 (miosis)
+    - 上眼瞼輕微下垂 (ptosis)
+    - 第三眼瞼突出
+  progressive:
+    - 眼球內陷 (enophthalmos)
+    - 患側結膜充血
+    - 患側耳朵/面部皮膚溫度升高 (血管擴張)
+
+diagnosis:
+  primaryTests:
+    - name: 藥理學定位試驗 (Phenylephrine test)
+      notes: 使用 10% 去氧腎上腺素 (phenylephrine) 點眼。節後性病變 20 分鐘內瞳孔散大；節前性需 30-45 分鐘；中樞性可能無反應
+    - name: 耳鏡檢查
+      notes: 檢查鼓膜完整性及中耳是否有積液/感染
+    - name: 胸腔 X 光 / CT
+      notes: 排除胸腔腫塊壓迫交感神經幹
+
+treatment:
+  principles:
+    - 治療根本原因為首要目標
+    - 特發性 Horner 症候群多數在 6-8 週內自行緩解
+  general:
+    - 針對中耳炎給予適當抗生素治療
+    - 胸腔腫瘤需腫瘤科評估
+    - 0.125% Phenylephrine 眼藥水可暫時改善症狀 (非必要)
+
+prognosis: 特發性 Horner 症候群預後良好，多數 6-16 週自行恢復。繼發於中耳炎者治療原發病後預後佳。繼發於胸腔腫瘤者預後取決於腫瘤類型與分期。
+
+pubmedQueries:
+  - query: '"Horner syndrome" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "treatment")'
+    frequency: monthly

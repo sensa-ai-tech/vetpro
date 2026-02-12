@@ -1,0 +1,76 @@
+slug: campylobacteriosis-infectious
+nameEn: Campylobacteriosis Infectious
+nameZh: 彎曲桿菌感染
+bodySystem: infectious
+description: 彎曲桿菌感染 (campylobacteriosis) 由 Campylobacter jejuni 或 C. coli 引起的腸道感染，為重要人畜共通傳染病。犬貓多為無症狀帶原者，幼齡或免疫抑制動物可表現急性出血性腸炎。與其他腸道病原混合感染時症狀加重。
+
+aliases:
+  - { alias: 曲狀桿菌感染, language: zh }
+  - { alias: 彎曲菌病, language: zh }
+  - { alias: Campylobacter Infection, language: en }
+  - { alias: Campylobacter Enteritis, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬帶原率可達 15-47%，幼犬與收容所犬較高。臨床發病多見於 <6 月齡幼犬。常與 CPV 或 Giardia 混合感染。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓帶原率與犬相似。幼貓較易表現臨床症狀。糞便排菌可持續數週。
+
+etiology:
+  categories:
+    - name: 病原特性
+      examples:
+        - Campylobacter jejuni（最常見病原種）
+        - C. coli、C. upsaliensis 也可感染
+        - 微需氧、螺旋形革蘭氏陰性菌
+        - 糞口途徑傳播
+    - name: 風險因子
+      examples:
+        - 幼齡動物（<6 月齡）
+        - 收容所或犬舍環境
+        - 免疫抑制
+        - 與其他腸道病原混合感染
+
+clinicalSigns:
+  early:
+    - 水樣或黏液樣腹瀉
+    - 食慾下降
+    - 輕度腹痛
+  progressive:
+    - 血便或黏液血便
+    - 嘔吐
+    - 裡急後重 (tenesmus)
+    - 發燒
+    - 脫水（幼畜）
+
+diagnosis:
+  primaryTests:
+    - name: 糞便培養
+      notes: 需使用特殊培養條件（微需氧環境、42°C、選擇性培養基）。陽性僅代表帶原，需結合臨床症狀判斷
+    - name: 糞便 PCR
+      notes: 敏感度高，可同時鑑定種別。較培養快速
+  additional:
+    - 糞便直接抹片暗視野顯微鏡（可見特徵性螺旋形運動）
+    - 排除其他腸道病原（CPV、Giardia、寄生蟲）
+    - CBC 與生化（脫水評估）
+
+treatment:
+  principles:
+    - 多數自限性，支持療法為主
+    - 嚴重或持續性病例考慮抗生素
+    - 注意人畜共通風險
+  general:
+    - 支持療法（IV 或 SC 輸液、電解質補充）
+    - 少量多餐易消化飲食
+    - 嚴重者 erythromycin 10-15 mg/kg PO TID × 5-7 天
+    - 替代：azithromycin 5-10 mg/kg PO SID × 5 天
+    - 衛生防護措施（洗手、糞便處理）
+    - Fluoroquinolone 抗藥性增加，不建議作為經驗性治療
+
+prognosis: 免疫正常犬貓預後良好，多數 5-10 天內自行恢復。幼齡或免疫抑制動物需較長恢復期。慢性帶原常見但通常無臨床意義。
+
+pubmedQueries:
+  - query: '"campylobacteriosis" AND (veterinary OR canine OR feline) AND ("treatment" OR "zoonosis")'
+    frequency: monthly

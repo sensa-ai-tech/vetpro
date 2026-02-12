@@ -1,0 +1,61 @@
+slug: mediastinal-lymphoma
+nameEn: Mediastinal Lymphoma
+nameZh: 縱膈淋巴瘤
+bodySystem: oncology
+description: 原發於前縱膈（胸腺或縱膈淋巴結）的淋巴瘤。貓較犬常見。多為 T 細胞型。年輕 FeLV 陽性貓好發。可造成胸腔積液與呼吸困難。
+
+aliases:
+  - { alias: "Thymic Lymphoma", language: en }
+  - { alias: "前縱膈淋巴瘤", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬偶見。多為 T 細胞型。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓常見。年輕 FeLV 陽性貓好發。Siamese 品種傾向。
+
+etiology:
+  categories:
+    - name: 腫瘤性
+      examples:
+        - 胸腺淋巴球惡性增生
+        - FeLV 相關（貓）
+        - 多為 T 細胞型
+
+clinicalSigns:
+  early:
+    - 呼吸困難（最常見主訴）
+    - 運動不耐受
+    - 咳嗽
+  progressive:
+    - 胸腔積液
+    - 前肢/面部水腫（前腔靜脈壓迫）
+    - 吞嚥困難
+    - 高鈣血症
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔 X 光
+      notes: 前縱膈腫塊 + 胸腔積液
+    - name: 胸水細胞學
+      notes: 惡性淋巴球
+    - name: FeLV/FIV 檢測（貓）
+      notes: 預後與治療規劃相關
+
+treatment:
+  principles:
+    - 化療為主要治療
+    - 穩定呼吸功能
+  general:
+    - 緊急胸腔穿刺引流（呼吸困難時）
+    - 化療（CHOP 或 COP 方案）
+    - FeLV 陽性貓化療反應率較低
+    - Prednisolone 作為初始穩定
+
+prognosis: 犬中位存活 6-12 個月（化療）。FeLV 陰性貓化療反應良好（中位存活 9-12 個月）。FeLV 陽性貓預後較差。高鈣血症為負面預後因子。
+
+pubmedQueries:
+  - query: '"mediastinal lymphoma" AND (veterinary OR canine OR feline) AND ("chemotherapy" OR "treatment")'
+    frequency: monthly

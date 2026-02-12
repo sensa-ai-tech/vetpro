@@ -1,0 +1,77 @@
+slug: angioedema
+nameEn: Angioedema
+nameZh: 血管性水腫
+bodySystem: immunology
+description: 血管性水腫 (angioedema) 為皮下或黏膜下組織的急性局部性水腫，因肥大細胞脫顆粒釋放組織胺與其他血管活性物質引起血管通透性增加。犬常見於昆蟲叮咬、疫苗接種或藥物反應後。面部腫脹為典型表現。嚴重者可引起喉部水腫與呼吸窘迫。
+
+aliases:
+  - { alias: 血管神經性水腫, language: zh }
+  - { alias: Angioneurotic Edema, language: en }
+  - { alias: Facial Swelling, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬血管性水腫常見於蜂螫、蛇咬、疫苗接種後。面部（眼周、唇部、耳介）腫脹為典型。多數犬僅皮膚腫脹，少數進展至全身過敏反應。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓血管性水腫較犬少見。頭頸部腫脹為主要表現。
+
+etiology:
+  categories:
+    - name: 致病機制
+      examples:
+        - 第一型過敏反應（IgE 介導）
+        - 肥大細胞脫顆粒
+        - 組織胺、白三烯 (leukotrienes) 等釋放
+        - 微血管通透性急遽增加→皮下水腫
+    - name: 常見誘因
+      examples:
+        - 昆蟲叮咬/蜂螫
+        - 疫苗接種
+        - 藥物（抗生素、NSAIDs）
+        - 食物過敏
+        - 接觸性過敏原
+        - 蛇咬（部分為毒素直接效應）
+
+clinicalSigns:
+  early:
+    - 面部急性腫脹（數分鐘至數小時內）
+    - 眼周水腫
+    - 唇部腫脹
+    - 瘙癢
+  progressive:
+    - 頭頸部廣泛腫脹
+    - 蕁麻疹（同時出現）
+    - 喉部水腫→呼吸困難
+    - 全身過敏反應（低血壓、休克）
+
+diagnosis:
+  primaryTests:
+    - name: 臨床表現
+      notes: 急性面部/頭頸部腫脹 + 暴露史即可臨床診斷
+    - name: 病史
+      notes: 近期暴露於已知過敏原（疫苗、昆蟲叮咬等）
+  additional:
+    - 呼吸道評估（喉部水腫風險）
+    - 過敏原檢測（復發者）
+
+treatment:
+  principles:
+    - 抗組織胺
+    - 嚴重者糖皮質類固醇
+    - 喉部水腫需緊急處理
+    - 全身過敏反應需 epinephrine
+  general:
+    - Diphenhydramine 2 mg/kg IM/IV
+    - Dexamethasone 0.1-0.2 mg/kg IV（中重度）
+    - 喉部水腫：epinephrine 0.01 mg/kg IM
+    - 全身過敏反應：epinephrine + IV 輸液 + 氧氣
+    - 觀察 4-6 小時（雙相反應風險）
+    - 輕度者口服抗組織胺 2-3 天
+
+prognosis: 單純血管性水腫預後極佳，多數在治療後數小時消退。喉部水腫若及時處理預後亦佳。既往有血管性水腫史的犬在再次暴露時需預防。疫苗相關者未來接種需預先給予抗組織胺。
+
+pubmedQueries:
+  - query: '"angioedema" AND (veterinary OR canine OR feline) AND ("treatment" OR "anaphylaxis" OR "hypersensitivity")'
+    frequency: monthly

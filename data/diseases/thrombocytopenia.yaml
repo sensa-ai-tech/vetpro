@@ -1,0 +1,73 @@
+slug: thrombocytopenia
+nameEn: Thrombocytopenia
+nameZh: 血小板減少症
+bodySystem: hematology
+description: 血小板減少症為血小板計數低於正常範圍（犬 <175,000/μL，貓 <175,000/μL）。機轉包括血小板破壞增加（免疫介導性最常見）、生成減少（骨髓疾病）、消耗增加（DIC）或分佈異常（脾腫大）。臨床出血通常在血小板 <30,000-50,000/μL 時出現。
+
+aliases:
+  - { alias: 血小板低下, language: zh }
+  - { alias: Low Platelets, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: common
+    notes: 犬隻血小板減少症常見，IMT（免疫介導性血小板減少症）為最常見原因。壁蝨傳播性疾病（Ehrlichia、Anaplasma）為重要感染性病因。
+  - speciesCommon: cat
+    prevalence: common
+    notes: 貓隻血小板減少症常見於 FeLV/FIV 感染、DIC、骨髓疾病。貓隻血小板易發生體外凝集（pseudothrombocytopenia），須注意排除。
+
+etiology:
+  categories:
+    - name: 破壞增加
+      examples:
+        - 免疫介導性血小板減少症（IMT/ITP）
+        - 壁蝨傳播性疾病（Ehrlichia、Anaplasma、Babesia）
+        - 藥物誘發（Sulfonamides、Cephalosporins）
+        - 疫苗後（罕見）
+    - name: 生成減少
+      examples:
+        - 骨髓疾病（再生不良、腫瘤浸潤、纖維化）
+        - FeLV 感染（貓）
+        - 藥物性骨髓抑制（化療藥）
+    - name: 消耗/分佈
+      examples:
+        - 瀰漫性血管內凝血（DIC）
+        - 大量出血
+        - 脾腫大（血小板滯留）
+
+clinicalSigns:
+  early:
+    - 皮膚或黏膜點狀出血（petechiae）
+    - 瘀斑（ecchymoses）
+    - 牙齦出血
+  progressive:
+    - 鼻出血（epistaxis）
+    - 黑便（melena）
+    - 血尿
+    - 前房出血（hyphema）
+    - 嚴重出血（顱內、腹腔）可危及生命
+
+diagnosis:
+  primaryTests:
+    - name: 全血球計數（CBC）與血液抹片
+      notes: "確認血小板計數降低。血液抹片排除血小板凝集（假性血小板減少）。評估血小板大小（大型血小板提示骨髓再生反應）。"
+    - name: 壁蝨傳播性疾病篩檢
+      notes: Ehrlichia/Anaplasma 抗體或 PCR、Babesia PCR。犬隻血小板減少症應常規排除壁蝨傳播性疾病。
+
+treatment:
+  principles:
+    - 治療基礎病因
+    - 嚴重出血需緊急處理
+    - IMT 需免疫抑制治療
+  general:
+    - "IMT：Prednisolone 2 mg/kg/day PO + Mycophenolate 10-20 mg/kg PO q12h 或 Azathioprine（犬）"
+    - "壁蝨傳播性疾病：Doxycycline 5 mg/kg PO q12h × 28 天"
+    - "嚴重出血：全血或血小板濃縮液輸注"
+    - "Vincristine 0.02 mg/kg IV single dose（急性 IMT 促進血小板釋放）"
+    - 停用可能致病的藥物
+
+prognosis: IMT 對免疫抑制治療反應率約 70-80%，但復發率約 20-30%。壁蝨傳播性疾病相關者在適當抗生素治療後通常可恢復。骨髓疾病導致者預後取決於基礎病因。DIC 導致者需控制原發疾病。
+
+pubmedQueries:
+  - query: '"thrombocytopenia" AND (veterinary OR canine OR feline) AND ("immune-mediated" OR "treatment")'
+    frequency: monthly

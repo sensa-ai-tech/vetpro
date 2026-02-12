@@ -1,0 +1,62 @@
+slug: methicillin-resistant-staphylococcus
+nameEn: Methicillin Resistant Staphylococcus
+nameZh: 耐甲氧西林葡萄球菌感染
+bodySystem: dermatology
+description: 由耐甲氧西林葡萄球菌（MRSP/MRSA）引起的皮膚與軟組織感染。mecA 基因賦予對所有 beta-lactam 類抗生素的抗藥性。為小動物皮膚科日益嚴重的臨床挑戰，治療選擇有限。
+
+aliases:
+  - { alias: "MRSP", language: en }
+  - { alias: "MRSA", language: en }
+  - { alias: "抗藥性金黃色葡萄球菌", language: zh }
+  - { alias: "超級細菌感染", language: zh }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬 MRSP 日益增加。反覆使用抗生素、免疫抑制犬風險高。
+  - speciesCommon: cat
+    prevalence: uncommon
+    notes: 貓可見 MRSA 與 MRSP。
+
+etiology:
+  categories:
+    - name: 抗藥性細菌
+      examples:
+        - Staphylococcus pseudintermedius（MRSP，犬最常見）
+        - Staphylococcus aureus（MRSA）
+        - mecA 基因介導 beta-lactam 全面抗藥
+
+clinicalSigns:
+  early:
+    - 膿皮症對常規抗生素治療無效
+    - 反覆皮膚感染
+    - 膿皰與痂皮
+  progressive:
+    - 深層膿皮症
+    - 蜂窩組織炎
+    - 手術傷口感染不癒
+    - 多重抗藥性
+
+diagnosis:
+  primaryTests:
+    - name: 細菌培養與藥敏試驗
+      notes: 確診必須做培養。確認 mecA 或 Oxacillin/Cefoxitin 抗藥性
+    - name: 最低抑菌濃度（MIC）
+      notes: 選擇有效抗生素的依據
+
+treatment:
+  principles:
+    - 依藥敏結果選用有效抗生素
+    - 感染控制防止傳播
+    - 減少不必要的抗生素使用
+  general:
+    - 全身性抗生素（依藥敏：Chloramphenicol、Rifampin、Doxycycline）
+    - 局部抗菌（Chlorhexidine 洗浴、Mupirocin 藥膏）
+    - 環境消毒
+    - 人畜共通感染預防（手部衛生）
+
+prognosis: 治療困難但依藥敏結果使用有效藥物可控制。復發常見。控制潛在疾病（如異位性皮膚炎）減少復發。
+
+pubmedQueries:
+  - query: '"methicillin resistant" AND "Staphylococcus" AND (veterinary OR canine OR feline) AND ("treatment" OR "MRSP")'
+    frequency: monthly

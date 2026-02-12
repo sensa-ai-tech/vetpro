@@ -1,0 +1,82 @@
+slug: gastrointestinal-stromal-tumor-oncology
+nameEn: Gastrointestinal Stromal Tumor Oncology
+nameZh: 胃腸道基質腫瘤
+bodySystem: gastrointestinal
+description: 胃腸道基質腫瘤 (GIST) 為起源於 Cajal 間質細胞或其前驅細胞的間葉性腫瘤，與 c-KIT 基因突變密切相關。犬最常見於大腸與盲腸，貓則好發於小腸。GIST 佔犬胃腸道非上皮性腫瘤的大部分，可透過 c-KIT 免疫組織化學染色與其他平滑肌腫瘤區分。
+
+aliases:
+  - { alias: 胃腸基質瘤, language: zh }
+  - { alias: GIST 腫瘤, language: zh }
+  - { alias: GIST, language: en }
+  - { alias: Gastrointestinal Stromal Tumor, language: en }
+
+species:
+  - speciesCommon: dog
+    prevalence: uncommon
+    notes: 犬 GIST 好發於大腸與盲腸，次為小腸與胃。大型犬品種好發，中位年齡 9-11 歲。c-KIT 突變為關鍵致病機制，部分對酪氨酸激酶抑制劑有反應。
+  - speciesCommon: cat
+    prevalence: rare
+    notes: 貓 GIST 較少見，好發於小腸。需與平滑肌瘤/平滑肌肉瘤及淋巴瘤鑑別。c-KIT 表達模式可能與犬不同。
+
+etiology:
+  categories:
+    - name: 腫瘤生物學
+      examples:
+        - 起源於 Cajal 間質細胞（腸道節律調控器）或其前驅細胞
+        - c-KIT (CD117) 受體酪氨酸激酶基因功能性突變
+        - 突變導致 c-KIT 持續自體磷酸化活化
+    - name: 好發部位
+      examples:
+        - "犬：大腸與盲腸最常見"
+        - "犬：小腸次之"
+        - "犬：胃最少見"
+        - "貓：小腸為主"
+
+clinicalSigns:
+  early:
+    - 非特異性消化道症狀
+    - 慢性間歇性嘔吐
+    - 食慾漸減
+    - 體重減輕
+  progressive:
+    - 腹部可觸診到腫塊
+    - 消化道出血（黑便或血便）
+    - 貧血
+    - 腸阻塞或部分阻塞
+    - 腸穿孔（急性腹膜炎）
+    - 腹水
+
+diagnosis:
+  primaryTests:
+    - name: 腹部超音波
+      notes: 評估腫瘤位置、大小及與腸壁的關係。典型表現為腸壁外生性或壁內腫塊
+    - name: 免疫組織化學染色
+      notes: c-KIT (CD117) 陽性為確定診斷關鍵。與平滑肌瘤（desmin 陽性、c-KIT 陰性）鑑別
+  imaging:
+    - name: CT 掃描
+      notes: 術前分期，評估轉移（肝臟、淋巴結、腸繫膜）。規劃手術範圍
+  additional:
+    - CBC（評估貧血）
+    - 血清生化
+    - 胸腔 X-ray（轉移篩檢）
+    - c-KIT 基因突變分析（可指導標靶治療）
+
+treatment:
+  principles:
+    - 手術切除為首選
+    - 標靶治療（酪氨酸激酶抑制劑）為重要輔助
+    - 傳統化療效果有限
+    - c-KIT 突變型態可預測標靶治療反應
+  general:
+    - 手術切除腫瘤所在腸段（切緣至少 4-5 cm）及區域淋巴結
+    - 酪氨酸激酶抑制劑 (TKI) 如 toceranib phosphate (Palladia) 或 imatinib
+    - Toceranib 2.5-3 mg/kg PO 隔天給藥
+    - 不可手術切除或已轉移者 TKI 可能達到疾病控制
+    - 定期影像追蹤（腹部超音波每 2-3 個月）
+    - 營養支持
+
+prognosis: 犬 GIST 手術完整切除後中位存活時間可達 1-3 年。腫瘤大小、有絲分裂指數及 c-KIT 突變型態影響預後。c-KIT exon 11 突變者對 TKI 反應較佳。不可切除或轉移性病例接受 TKI 治療仍可延長存活。
+
+pubmedQueries:
+  - query: '"gastrointestinal stromal tumor" AND (veterinary OR canine OR feline) AND ("treatment" OR "c-KIT" OR "toceranib")'
+    frequency: monthly
