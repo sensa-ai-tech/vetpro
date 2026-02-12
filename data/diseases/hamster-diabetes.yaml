@@ -1,0 +1,111 @@
+slug: hamster-diabetes
+nameEn: Hamster Diabetes Mellitus
+nameZh: 倉鼠糖尿病
+bodySystem: endocrine
+description: 倉鼠糖尿病以中國侏儒倉鼠 (Cricetulus griseus) 最常見，具遺傳易感性，表現為多飲多尿、體重減輕與高血糖，為侏儒倉鼠常見的代謝性疾病。
+
+aliases:
+  - { alias: 倉鼠多尿多飲症, language: zh }
+  - { alias: 侏儒倉鼠糖尿病, language: zh }
+  - { alias: Chinese hamster diabetes, language: en }
+  - { alias: Dwarf hamster diabetes, language: en }
+  - { alias: Hamster DM, language: en }
+
+species:
+  - speciesCommon: hamster
+    speciesScientific: Mesocricetus auratus
+    prevalence: uncommon
+    notes: 中國侏儒倉鼠 (Cricetulus griseus) 盛行率最高，為經典糖尿病動物模型。坎貝爾侏儒倉鼠 (Phodopus campbelli) 亦常見。敘利亞倉鼠相對少見。遺傳性自發性第二型糖尿病為主。
+
+etiology:
+  categories:
+    - name: 遺傳性
+      examples:
+        - 多基因遺傳易感性 (中國侏儒倉鼠)
+        - 第二型糖尿病為主 (胰島素阻抗 + beta 細胞功能不全)
+        - 坎貝爾侏儒倉鼠亦有遺傳傾向
+    - name: 環境/後天因素
+      examples:
+        - 肥胖 (高脂高糖飲食)
+        - 缺乏運動
+        - 年齡 (>1 歲發病率增加)
+        - 高碳水化合物零食
+
+clinicalSigns:
+  early:
+    - 多飲 (polydipsia)
+    - 多尿 (polyuria，墊料潮濕)
+    - 食慾增加但體重不增或下降
+    - 尿液氣味較重
+  progressive:
+    - 明顯體重減輕
+    - 被毛粗糙無光澤
+    - 後肢無力
+    - 白內障 (高血糖導致晶體蛋白醣化)
+    - 嗜睡
+  late:
+    - 嚴重消瘦
+    - 酮酸中毒 (呼吸急促、丙酮味)
+    - 後肢癱瘓 (糖尿病周邊神經病變)
+    - 傷口癒合不良與反覆感染
+    - 昏迷
+
+diagnosis:
+  primaryTests:
+    - name: 血糖測定
+      notes: "正常倉鼠血糖 60-150 mg/dL。持續 >250 mg/dL 有診斷意義。採血注意緊迫性高血糖假陽性 (尤其敘利亞倉鼠)"
+    - name: 尿液分析
+      notes: "尿糖試紙快速篩檢。持續性糖尿高度提示。尿液比重增加"
+    - name: 果糖胺 (Fructosamine)
+      notes: "反映 1-2 週平均血糖。排除緊迫性一過性高血糖。>400 μmol/L 有意義"
+  imaging:
+    - name: 腹部超音波
+      notes: "評估胰臟、腎臟、肝臟。排除其他內分泌疾病"
+  additional:
+    - 尿液培養 (糖尿病易併發泌尿道感染)
+    - 白內障檢查 (裂隙燈)
+    - 腎功能評估 (BUN/Creatinine)
+
+treatment:
+  principles:
+    - 飲食管理為基石 (低糖低脂高纖)
+    - 胰島素治療在倉鼠效果有限且操作困難
+    - 增加運動量
+    - 監控併發症
+    - 避免含糖零食
+  medications:
+    - name: Glipizide
+      dose: "0.5 mg/kg PO BID"
+      notes: 口服降血糖藥。適用於飲食控制無效的第二型糖尿病。需監測血糖避免低血糖。效果因個體差異大
+    - name: Insulin (Glargine)
+      dose: "0.5-2 IU/kg SC BID (極需個體化調整)"
+      notes: 飲食與口服藥無效時考慮。倉鼠體型小劑量精確度差，需用稀釋胰島素與 0.3 mL 胰島素注射器。低血糖風險高
+    - name: Meloxicam
+      dose: "0.2-0.3 mg/kg PO/SC SID"
+      notes: 周邊神經病變疼痛管理
+  general:
+    - 低糖低脂高纖維飲食 (避免含糖水果與零食)
+    - 提供適量優質蛋白質 (水煮蛋白、無調味昆蟲)
+    - 增加運動 (滾輪、籠外活動)
+    - 每日監測水攝取量與墊料濕度
+    - 定期血糖或尿糖追蹤
+    - 白內障監控
+    - 足部檢查 (糖尿病足)
+
+prognosis: 飲食管理良好者可維持相當生活品質數月至一年以上。侏儒倉鼠 (中國、坎貝爾) 多為遺傳性第二型，飲食控制部分有效。併發白內障後生活品質下降但非致命。酮酸中毒如未及時治療預後極差。整體而言飲食管理 + 環境改善優於藥物治療。
+
+guidelineRefs:
+  - sourceOrg: ILAR Journal
+    title: "The Chinese Hamster as a Model for Diabetes Research"
+    url: https://pubmed.ncbi.nlm.nih.gov/14567455/
+    type: review
+    pmid: "14567455"
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Endocrine Diseases of Small Mammals"
+    url: https://pubmed.ncbi.nlm.nih.gov/30717895/
+    type: review
+    pmid: "30717895"
+
+pubmedQueries:
+  - query: '"hamster" AND ("diabetes mellitus" OR "hyperglycemia") AND ("Phodopus" OR "Cricetulus" OR "dwarf hamster")'
+    frequency: monthly

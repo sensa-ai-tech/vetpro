@@ -1,0 +1,99 @@
+slug: collie-eye-anomaly
+nameEn: Collie Eye Anomaly
+nameZh: 柯利犬眼異常
+bodySystem: ophthalmology
+description: 柯利犬眼異常（CEA）是一種先天性眼部發育異常，主要影響柯利犬及相關牧羊犬品種。因 NHEJ1 基因突變（常染色體隱性遺傳）導致眼球後段發育異常，表現從輕微的脈絡膜發育不全到嚴重的視網膜剝離與眼內出血。
+
+aliases:
+  - { alias: CEA, language: en }
+  - { alias: 柯利眼缺陷, language: zh }
+  - { alias: 牧羊犬眼異常, language: zh }
+  - { alias: Collie Eye Defect, language: en }
+  - { alias: Choroidal Hypoplasia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 好發品種包括粗毛柯利犬（盛行率最高，約 70-90% 在某些族群）、細毛柯利犬、邊境牧羊犬、喜樂蒂牧羊犬、澳洲牧羊犬。NHEJ1 基因突變為常染色體隱性遺傳。
+
+etiology:
+  categories:
+    - name: 遺傳因素
+      examples:
+        - NHEJ1 基因（chromosome 37）7.8 kb 缺失突變
+        - 常染色體隱性遺傳
+        - 帶因者無臨床症狀
+    - name: 眼部異常光譜
+      examples:
+        - 脈絡膜發育不全/脈絡膜薄化（choroidal hypoplasia，最輕微且最常見）
+        - 視神經乳頭缺損（optic disc coloboma）
+        - 後鞏膜擴張（posterior staphyloma）
+        - 視網膜剝離
+        - 眼內出血
+    - name: 分級
+      examples:
+        - Grade 1：脈絡膜發育不全（可能被 go normal 現象掩蓋）
+        - Grade 2：視神經乳頭缺損
+        - Grade 3：後鞏膜擴張合併視網膜剝離或出血
+
+clinicalSigns:
+  early:
+    - 輕度（脈絡膜發育不全）通常無臨床症狀
+    - 幼犬眼科篩檢（6-8 週齡）可發現
+    - 視力通常正常（輕度型）
+  progressive:
+    - 視神經乳頭缺損可導致視力部分受損
+    - 後鞏膜擴張可能擴大
+    - 血管異常可能導致眼內出血
+  late:
+    - 視網膜剝離導致失明（約 5-10% 受影響犬隻）
+    - 眼內出血
+    - 繼發性青光眼（罕見）
+    - 失明通常為永久性
+
+diagnosis:
+  primaryTests:
+    - name: 間接眼底鏡檢查（6-8 週齡）
+      notes: "金標準篩檢時機為 6-8 週齡，因此時視網膜色素尚未完全形成，脈絡膜異常最容易觀察。之後色素沉積可能掩蓋輕度病變（go normal 現象）。"
+    - name: 基因檢測
+      notes: "NHEJ1 基因突變 DNA 檢測。可鑑定受影響犬、帶因者與正常犬。不受年齡影響。建議所有繁殖犬進行篩檢。"
+  imaging:
+    - name: 眼部超音波
+      notes: "評估視網膜剝離與眼內出血。嚴重病例中角膜或水晶體混濁阻礙眼底檢查時有用。"
+    - name: 光學同調斷層掃描（OCT）
+      notes: "可精確測量脈絡膜厚度。研究用途為主。"
+  additional:
+    - 視網膜電圖（ERG，評估視網膜功能）
+    - 繁殖前眼科認證檢查（OFA/CERF）
+
+treatment:
+  principles:
+    - 輕度 CEA 無需治療
+    - 視網膜剝離目前無有效治療
+    - 預防為主——繁殖管理與基因篩檢
+    - 失明犬隻環境管理
+  general:
+    - "輕度（脈絡膜發育不全）：無需治療，定期眼科追蹤"
+    - "視網膜剝離：嚴重者無有效治療。雷射光凝固術可能延緩部分病例的視網膜剝離進展但效果有限"
+    - "眼內出血：保守治療，避免外傷"
+    - "失明犬隻：環境改造確保安全"
+    - "繁殖管理：基因篩檢所有繁殖犬，避免 carrier x carrier 配對"
+    - "理想配對：Normal/Normal 或 Normal/Carrier"
+
+prognosis: 輕度 CEA（僅脈絡膜發育不全）預後良好，多數犬隻終身維持正常視力。視神經乳頭缺損預後視缺損大小而定。視網膜剝離或眼內出血預後不良，通常導致受影響眼永久性失明。約 90% 的 CEA 犬隻為輕度型，維持功能性視力。基因篩檢與選擇性繁殖已在部分族群中顯著降低盛行率。
+
+guidelineRefs:
+  - sourceOrg: Mammalian Genome
+    title: "NHEJ1 mutation causes collie eye anomaly"
+    url: https://pubmed.ncbi.nlm.nih.gov/17955272/
+    type: consensus
+    pmid: "17955272"
+  - sourceOrg: Veterinary Ophthalmology
+    title: "Collie eye anomaly in different dog breeds"
+    url: https://pubmed.ncbi.nlm.nih.gov/16359362/
+    type: consensus
+    pmid: "16359362"
+pubmedQueries:
+  - query: '"collie eye anomaly" AND ("genetics" OR "NHEJ1") AND (dog OR canine)'
+    frequency: monthly

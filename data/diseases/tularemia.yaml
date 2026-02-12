@@ -1,0 +1,108 @@
+slug: tularemia
+nameEn: Tularemia
+nameZh: 土拉倫斯病
+bodySystem: infectious
+description: 土拉倫斯病是由土拉弗朗西斯菌（Francisella tularensis）引起的人畜共通傳染病。貓對此菌特別敏感，可發展為嚴重全身性疾病。犬隻通常呈亞臨床感染或輕度疾病。傳播途徑包括蜱叮咬、接觸感染兔子或齧齒類以及攝入污染水源。
+
+aliases:
+  - { alias: 兔熱病, language: zh }
+  - { alias: 鹿蠅熱, language: zh }
+  - { alias: Rabbit Fever, language: en }
+  - { alias: Deer Fly Fever, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬隻對 F. tularensis 有較高抵抗力，多數感染為亞臨床或輕度。戶外活動犬隻（獵犬）風險較高。可傳播給人類。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓隻對 F. tularensis 高度敏感，可發展嚴重全身性疾病。獵食兔子或齧齒類的戶外貓風險最高。為重要的人畜共通傳染病傳播源。
+
+etiology:
+  categories:
+    - name: 病原體
+      examples:
+        - Francisella tularensis（革蘭氏陰性球桿菌）
+        - Type A（F. tularensis subsp. tularensis）：毒力最強，北美洲
+        - Type B（F. tularensis subsp. holarctica）：毒力較低，全球分布
+    - name: 傳播途徑
+      examples:
+        - 蜱叮咬（Dermacentor、Amblyomma 屬）
+        - 接觸或攝入感染動物（兔子、齧齒類）
+        - 攝入污染水源
+        - 吸入感染性氣溶膠
+    - name: 人畜共通風險
+      examples:
+        - 貓為重要傳播源（咬傷、抓傷傳播給人類）
+        - 獸醫人員處理感染貓時有感染風險
+        - 接觸感染動物組織可經皮膚傷口感染
+
+clinicalSigns:
+  early:
+    - 突發性高燒
+    - 嗜睡與食慾不振
+    - 淋巴結腫大（局部或全身性）
+    - 蜱叮咬部位潰瘍（犬）
+  progressive:
+    - 持續性高燒（40-41.5°C）
+    - 全身性淋巴結腫大
+    - 口腔潰瘍（貓）
+    - 黃疸（肝臟受累）
+    - 脾腫大與肝腫大
+  late:
+    - 敗血症
+    - 肺炎
+    - 多器官衰竭
+    - 瀰漫性血管內凝血（DIC）
+    - 死亡（未治療的貓隻死亡率高）
+
+diagnosis:
+  primaryTests:
+    - name: 血清學檢測
+      notes: "微量凝集試驗（MAT）：急性期與恢復期配對血清。效價 > 1:128 或四倍升高有診斷意義。"
+    - name: PCR 檢測
+      notes: "血液或組織 PCR 可快速確認 F. tularensis DNA。特異性與敏感性高。"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "肺炎型可見肺部浸潤影。胸腔積液（偶見）。"
+    - name: 腹部超音波
+      notes: "肝脾腫大。肝脾微膿瘍（壞死灶）。淋巴結腫大。"
+  additional:
+    - 血液學（白血球增多或減少、血小板減少）
+    - 血液生化（肝酵素升高、膽紅素升高）
+    - 細菌培養（需 BSL-3 實驗室設備，不建議常規培養因有感染風險）
+    - 組織病理學（肝脾壞死性肉芽腫）
+
+treatment:
+  principles:
+    - 早期抗生素治療至關重要
+    - 氨基糖苷類或四環素類為首選
+    - 支持性照護
+    - 注意人畜共通傳染風險
+  general:
+    - "Gentamicin 6 mg/kg IV/IM q24h x 10-14 天（一線藥物）"
+    - "Doxycycline 5 mg/kg PO q12h x 14-21 天（替代方案）"
+    - "Enrofloxacin 5 mg/kg PO q24h x 14 天（犬替代方案，貓慎用）"
+    - "支持性治療：靜脈輸液、營養支持"
+    - "隔離措施：戴手套處理感染動物，避免人員感染"
+    - "蜱蟲防治：預防性外寄生蟲驅蟲"
+    - "人畜共通提醒：告知畜主感染風險，建議就醫諮詢"
+
+prognosis: 犬隻感染通常自限性或經治療後預後良好。貓隻未治療者死亡率高（可達 60%），早期抗生素治療可顯著改善預後。全身性敗血症型預後較差。重要的人畜共通傳染病考量——獸醫人員應採取適當防護措施。
+
+guidelineRefs:
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Tularemia in dogs and cats: clinical presentation and zoonotic risk"
+    url: https://pubmed.ncbi.nlm.nih.gov/14510846/
+    type: consensus
+    pmid: "14510846"
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "Tularemia in cats: review of clinical features"
+    url: https://pubmed.ncbi.nlm.nih.gov/19481039/
+    type: consensus
+    pmid: "19481039"
+pubmedQueries:
+  - query: '"tularemia" AND (cat OR dog) AND ("clinical" OR "zoonotic")'
+    frequency: monthly

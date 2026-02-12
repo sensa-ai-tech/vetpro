@@ -92,47 +92,16 @@ export async function generateMetadata({
   };
 }
 
-const SPECIES_LABELS: Record<string, string> = {
-  dog: "🐕 犬",
-  cat: "🐈 貓",
-  horse: "🐴 馬",
-  rabbit: "🐰 兔",
-};
+import {
+  SPECIES_LABELS,
+  BODY_SYSTEM_LABELS,
+  BODY_SYSTEM_SPECIALTY,
+} from "@/lib/constants";
 
 const PREVALENCE_LABELS: Record<string, { text: string; className: string }> = {
   common: { text: "常見", className: "text-danger" },
   uncommon: { text: "不常見", className: "text-warning" },
   rare: { text: "罕見", className: "text-muted" },
-};
-
-const BODY_SYSTEM_LABELS: Record<string, string> = {
-  renal: "腎臟/泌尿",
-  cardiac: "心臟",
-  endocrine: "內分泌",
-  gastrointestinal: "腸胃",
-  hematology: "血液/免疫",
-  dermatology: "皮膚",
-  neurology: "神經",
-  respiratory: "呼吸",
-  orthopedic: "骨科",
-  ophthalmology: "眼科",
-  infectious: "傳染病",
-  oncology: "腫瘤",
-};
-
-const BODY_SYSTEM_SPECIALTY: Record<string, string> = {
-  renal: "https://schema.org/Renal",
-  cardiac: "https://schema.org/Cardiovascular",
-  endocrine: "https://schema.org/Endocrine",
-  gastrointestinal: "https://schema.org/Gastroenterologic",
-  hematology: "https://schema.org/Hematologic",
-  dermatology: "https://schema.org/Dermatologic",
-  neurology: "https://schema.org/Neurologic",
-  respiratory: "https://schema.org/Pulmonary",
-  orthopedic: "https://schema.org/Musculoskeletal",
-  ophthalmology: "https://schema.org/Optometric",
-  infectious: "https://schema.org/InfectiousDisease",
-  oncology: "https://schema.org/Oncologic",
 };
 
 export default async function DiseasePage({

@@ -1,0 +1,105 @@
+slug: rabbit-sore-hocks
+nameEn: Rabbit Pododermatitis (Sore Hocks)
+nameZh: 兔足底皮膚炎
+bodySystem: dermatology
+description: 兔後足跗關節（飛節）底面的壓力性皮膚炎與潰瘍，為家兔極常見的慢性疾病。因兔足底缺乏肉墊（僅有毛髮覆蓋），硬質地板、肥胖、活動不足等因素導致足底持續壓力造成皮膚損傷。
+
+aliases:
+  - { alias: 兔飛節潰瘍, language: zh }
+  - { alias: 兔腳底潰瘍, language: zh }
+  - { alias: 兔腳掌發炎, language: zh }
+  - { alias: Sore Hocks, language: en }
+  - { alias: Bumblefoot, language: en }
+  - { alias: Ulcerative Pododermatitis, language: en }
+
+species:
+  - speciesCommon: rabbit
+    speciesScientific: Oryctolagus cuniculus
+    prevalence: common
+    notes: Rex 品種因足底毛髮稀薄風險最高。大型品種（Flemish Giant）因體重大亦高風險。肥胖、鐵絲底籠、潮濕環境為主要風險因素。後足比前足常見。
+
+etiology:
+  categories:
+    - name: 機械性/壓力性
+      examples:
+        - 足底持續壓力（兔無肉墊，僅毛髮保護）
+        - 鐵絲底籠或硬質地板
+        - 足底毛髮磨損後皮膚直接承壓
+        - 壓力性缺血→皮膚壞死→潰瘍→繼發感染
+    - name: 風險因素
+      examples:
+        - 肥胖（增加足底壓力）
+        - Rex 品種（足底毛髮稀薄）
+        - 大型品種（體重大）
+        - 鐵絲底籠或不適當地板
+        - 潮濕墊料/糞尿汙染
+        - 活動不足（跺腳 thumping 習慣）
+        - 長趾甲（改變力學分布）
+
+clinicalSigns:
+  early:
+    - 足底毛髮稀疏或脫落
+    - 足底皮膚輕微發紅
+    - 輕度表皮增厚/角化
+  progressive:
+    - 足底皮膚明顯紅腫
+    - 結痂形成
+    - 表淺潰瘍
+    - 跛行或不願移動
+    - 姿勢異常（體重移至前肢）
+  late:
+    - 深部潰瘍達皮下組織/肌腱/骨骼
+    - 繼發性感染（Staphylococcus aureus 最常見）
+    - 骨髓炎
+    - 敗血症
+    - 嚴重疼痛、食慾廢絕
+
+diagnosis:
+  primaryTests:
+    - name: 足底視診
+      notes: "分級評估：Grade I 脫毛/紅斑，Grade II 潰瘍/結痂，Grade III 深部感染/腫脹，Grade IV 肌腱/骨骼受累，Grade V 骨髓炎"
+    - name: 細菌培養與藥敏
+      notes: "潰瘍分泌物培養。Staphylococcus aureus 最常見。藥敏結果指導治療"
+  imaging:
+    - name: 足部 X 光
+      notes: "Grade III 以上評估骨溶解、骨膜反應（骨髓炎）"
+  additional:
+    - 細胞學（潰瘍拭子——細菌、炎症細胞）
+    - CBC（白血球升高——深部感染）
+    - 評估潛在風險因素（體重、趾甲長度、籠具類型）
+
+treatment:
+  principles:
+    - 早期介入效果最佳
+    - 消除病因（改善地板、減重）
+    - 傷口管理與感染控制
+    - 長期管理與預防為核心
+  general:
+    - "Grade I-II：局部清潔 + 外用抗菌藥膏（Mupirocin 或 Silver sulfadiazine）"
+    - "傷口包紮：泡棉敷料減壓 + 彈性繃帶包紮（需定期更換）"
+    - "止痛：Meloxicam 0.3-0.6 mg/kg PO SID"
+    - "Grade III 以上：全身抗生素——依培養藥敏。經驗性首選 Enrofloxacin 10-20 mg/kg PO BID"
+    - "深部感染/骨髓炎：長期抗生素 4-8 週以上"
+    - "環境改善：柔軟墊料（毛巾、泡棉墊、柔軟草墊），移除鐵絲底籠"
+    - "減重計畫（肥胖兔）"
+    - "修剪趾甲（改善力學分布）"
+    - "增加活動（柔軟地面上自由活動）"
+    - "嚴重骨髓炎：可能需截趾或截肢（罕見）"
+
+prognosis: Grade I-II 經環境改善與局部護理預後良好。Grade III 需長期管理，預後謹慎。Grade IV-V（肌腱/骨骼受累、骨髓炎）預後不良，治療困難且費時。預防（適當地板、維持體重、定期足底檢查）遠優於治療。Rex 品種需終生特別注意足底護理。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Skin diseases of rabbits"
+    url: https://pubmed.ncbi.nlm.nih.gov/23352431/
+    type: review
+    pmid: "23352431"
+  - sourceOrg: Journal of Exotic Pet Medicine
+    title: "Pododermatitis in rabbits"
+    url: https://pubmed.ncbi.nlm.nih.gov/25015871/
+    type: review
+    pmid: "25015871"
+
+pubmedQueries:
+  - query: '"pododermatitis" AND rabbit AND ("sore hocks" OR "treatment" OR "bumblefoot")'
+    frequency: monthly

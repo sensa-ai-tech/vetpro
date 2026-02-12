@@ -1,0 +1,98 @@
+slug: rabbit-dermatophytosis
+nameEn: Rabbit Dermatophytosis
+nameZh: 兔皮黴菌症
+bodySystem: dermatology
+description: 由皮膚真菌 (主要為 Trichophyton mentagrophytes) 引起的兔表淺性皮膚感染，具人畜共通性。表現為圓形脫毛、鱗屑、結痂，好發於面部、耳及四肢。幼兔與免疫抑制兔較易感染。
+
+aliases:
+  - { alias: 兔黴菌感染, language: zh }
+  - { alias: 兔癬, language: zh }
+  - { alias: Rabbit Ringworm, language: en }
+  - { alias: Rabbit Fungal Skin Infection, language: en }
+
+species:
+  - speciesCommon: rabbit
+    speciesScientific: Oryctolagus cuniculus
+    prevalence: common
+    notes: 主要病原為 Trichophyton mentagrophytes，其次為 Microsporum canis。人畜共通——免疫力較低的飼主（兒童、老人、免疫抑制者）風險較高。幼兔及群養環境發生率高。
+
+etiology:
+  categories:
+    - name: 真菌性
+      examples:
+        - Trichophyton mentagrophytes（最常見）
+        - Microsporum canis
+        - 直接接觸感染動物或受汙染環境 (fomite) 傳播
+        - 孢子在環境中可存活數月至數年
+    - name: 風險因素
+      examples:
+        - 幼齡 (免疫系統未成熟)
+        - 免疫抑制 (疾病、藥物、緊迫)
+        - 群養/繁殖場環境
+        - 皮膚完整性破壞 (外傷、濕疹)
+        - E. cuniculi 共感染
+
+clinicalSigns:
+  early:
+    - 局部脫毛斑 (通常圓形或不規則)
+    - 輕微鱗屑
+    - 好發面部 (鼻、眼周)、耳緣、前肢
+  progressive:
+    - 脫毛範圍擴大
+    - 結痂與鱗屑增加
+    - 輕至中度搔癢
+    - 多發性病灶
+  late:
+    - 廣泛性脫毛
+    - 繼發性細菌感染
+    - 嚴重結痂、膿痂
+    - 搔癢加劇
+
+diagnosis:
+  primaryTests:
+    - name: 真菌培養 (DTM)
+      notes: "金標準。拔取病灶邊緣毛髮接種 DTM 培養基。T. mentagrophytes 通常 7-14 天培養陽性"
+    - name: Wood 氏燈檢查
+      notes: "M. canis 部分菌株可見蘋果綠螢光。T. mentagrophytes 通常不螢光。Wood 氏燈陰性不排除感染"
+  imaging:
+    - name: 無影像需求
+      notes: "診斷依賴真菌學檢查"
+  additional:
+    - 病灶邊緣毛髮 KOH 溼片鏡檢 (直接鏡檢觀察毛髮外孢子)
+    - 皮膚刮搔 (排除蟎蟲——疥蟎、毛囊蟎)
+    - 皮膚生檢 (不典型病例)
+    - 鑑別診斷：耳蟎、疥蟎、Treponema、自咬
+
+treatment:
+  principles:
+    - 局部與全身抗真菌治療並行
+    - 環境徹底消毒 (孢子可長期存活)
+    - 人畜共通——飼主防護衛教
+    - 治療至真菌培養陰性後 2 週
+  general:
+    - "局部治療：Miconazole 或 Clotrimazole 乳膏 塗抹病灶 BID × 4-6 週"
+    - "藥浴：Lime sulfur dip (1:16 稀釋) 每週一次 × 4-6 週"
+    - "全身治療（廣泛性病例）：Griseofulvin 25 mg/kg PO SID × 4-6 週（懷孕兔禁用——致畸）"
+    - "替代全身治療：Itraconazole 5-10 mg/kg PO SID × 4-6 週"
+    - "替代全身治療：Terbinafine 20-40 mg/kg PO SID × 4-6 週"
+    - "環境消毒：稀釋漂白水 (1:10) 或 Enilconazole 煙霧消毒"
+    - "隔離感染兔"
+    - "飼主衛教：處理病兔後洗手、兒童與免疫抑制者避免直接接觸"
+
+prognosis: 免疫力正常的兔預後良好，多數在 4-8 週治療後完全恢復。幼兔或免疫抑制兔可能較難治療。環境消毒不完全可導致反覆感染。注意人畜共通風險。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Dermatology
+    title: "Dermatophytosis in rabbits"
+    url: https://pubmed.ncbi.nlm.nih.gov/15725106/
+    type: review
+    pmid: "15725106"
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Skin diseases of rabbits"
+    url: https://pubmed.ncbi.nlm.nih.gov/23352431/
+    type: review
+    pmid: "23352431"
+
+pubmedQueries:
+  - query: '"dermatophytosis" AND rabbit AND ("Trichophyton" OR "treatment")'
+    frequency: monthly

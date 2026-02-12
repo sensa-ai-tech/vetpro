@@ -1,0 +1,115 @@
+slug: hamster-pyometra
+nameEn: Hamster Pyometra
+nameZh: 倉鼠子宮蓄膿
+bodySystem: reproductive
+description: 倉鼠子宮內膜感染化膿導致子宮內蓄積膿液的急性至亞急性疾病，為未絕育雌倉鼠常見的生殖系統急症，需緊急手術治療。
+
+aliases:
+  - { alias: 倉鼠子宮蓄膿症, language: zh }
+  - { alias: 倉鼠子宮感染, language: zh }
+  - { alias: Hamster uterine infection, language: en }
+  - { alias: Hamster endometritis, language: en }
+
+species:
+  - speciesCommon: hamster
+    speciesScientific: Mesocricetus auratus
+    prevalence: common
+    notes: 未絕育雌性倉鼠常見，尤其 >1 歲。敘利亞倉鼠與侏儒倉鼠均可發生。開放型 (陰道有分泌物) 與閉鎖型 (無分泌物但更危險) 均有報告。
+
+etiology:
+  categories:
+    - name: 感染性
+      examples:
+        - Escherichia coli (最常見病原)
+        - Staphylococcus spp.
+        - Streptococcus spp.
+        - Pasteurella spp.
+        - 細菌經陰道上行感染
+    - name: 風險因素
+      examples:
+        - 未絕育雌性
+        - 年齡 >1 歲
+        - 黃體期子宮內膜增生 (黃體酮影響)
+        - 重複假性懷孕
+        - 子宮內膜囊性增生
+
+clinicalSigns:
+  early:
+    - 陰道血性或膿性分泌物 (開放型)
+    - 頻繁舔舐會陰部
+    - 輕度食慾減退
+    - 嗜睡
+  progressive:
+    - 腹部膨脹
+    - 多飲多尿 (細菌毒素影響腎功能)
+    - 明顯食慾不振
+    - 體重下降 (除腹部膨脹外)
+    - 被毛蓬亂
+  late:
+    - 敗血症 (發燒或低體溫)
+    - 嚴重脫水
+    - 子宮破裂致腹膜炎
+    - 休克
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 理學檢查
+      notes: "腹部觸診可摸到增大的子宮角 (需輕柔避免破裂)。會陰分泌物檢查。體溫評估"
+    - name: CBC/生化
+      notes: "白血球升高 (嗜中性球左移)。BUN/Creatinine 可能升高。低白蛋白血症。高球蛋白血症"
+  imaging:
+    - name: 腹部 X 光
+      notes: "增大的管狀子宮陰影。與懷孕鑑別 (懷孕可見胎兒骨骼)"
+    - name: 腹部超音波
+      notes: "子宮增大充滿液體 (低至中等回音)。子宮壁增厚。腹水評估"
+  additional:
+    - 陰道分泌物細胞學 (退化嗜中性球、細菌)
+    - 細菌培養與藥敏試驗
+    - 凝血功能 (排除 DIC)
+
+treatment:
+  principles:
+    - 卵巢子宮切除術 (OHE) 為首選且最有效治療
+    - 術前穩定 (補液、抗生素)
+    - 術後密切監測
+    - 藥物保守治療效果差且復發率高
+  medications:
+    - name: Enrofloxacin
+      dose: "5-10 mg/kg PO/SC BID"
+      notes: 術前開始使用。待培養結果調整。覆蓋革蘭氏陰性菌
+    - name: 皮下輸液 (Warmed Lactated Ringer's)
+      dose: "倉鼠體重 3-4% SC，每 8-12 小時"
+      notes: 術前穩定脫水。加溫至體溫給予
+    - name: Meloxicam
+      dose: "0.2-0.3 mg/kg PO/SC SID"
+      notes: 術後止痛。確認水合狀態穩定後使用
+    - name: Buprenorphine
+      dose: "0.05-0.1 mg/kg SC 每 8-12 小時"
+      notes: 術後止痛。術前 30 分鐘先行給予
+  general:
+    - 緊急卵巢子宮切除術
+    - 術前補液與保溫 (至少 1-2 小時穩定)
+    - 術中注意避免子宮破裂
+    - 術後保溫箱 (28-30°C)
+    - 術後輔助餵食 (24-48 小時內)
+    - 術後抗生素持續 7-14 天
+    - 每日監測傷口與食慾
+
+prognosis: 早期手術治療預後良好至謹慎 (存活率約 60-80%)。閉鎖型子宮蓄膿因延遲診斷預後較差。敗血症或子宮破裂致腹膜炎預後極差。術後恢復良好者長期預後佳。藥物保守治療復發率極高不建議。
+
+guidelineRefs:
+  - sourceOrg: Journal of Exotic Pet Medicine
+    title: "Reproductive disorders in small mammals"
+    url: https://pubmed.ncbi.nlm.nih.gov/28314472/
+    type: review
+    pmid: "28314472"
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Soft Tissue Surgery of Small Mammals"
+    url: https://pubmed.ncbi.nlm.nih.gov/26611925/
+    type: review
+    pmid: "26611925"
+
+pubmedQueries:
+  - query: '"hamster" AND ("pyometra" OR "uterine infection" OR "endometritis") AND ("treatment" OR "surgery")'
+    frequency: monthly

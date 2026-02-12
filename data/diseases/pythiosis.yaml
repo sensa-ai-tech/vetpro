@@ -1,0 +1,105 @@
+slug: pythiosis
+nameEn: Pythiosis
+nameZh: 腐黴菌症
+bodySystem: infectious
+description: 腐黴菌症是由犬腐黴菌（Pythium insidiosum）引起的嚴重侵襲性感染，此病原體為卵菌綱成員（非真菌）。常見於亞熱帶與熱帶地區，犬隻經接觸含有遊動孢子的靜水體而感染。表現為消化道（最常見於犬）或皮膚的嚴重肉芽腫性病變。對傳統抗黴菌藥物無效。
+
+aliases:
+  - { alias: 腐黴病, language: zh }
+  - { alias: 水黴菌症, language: zh }
+  - { alias: Pythium Infection, language: en }
+  - { alias: Swamp Cancer, language: en }
+  - { alias: Oomycosis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 好發於亞熱帶與熱帶地區（美國東南部、泰國、巴西等）。大型犬品種可能較好發。經接觸含遊動孢子的靜水體感染。消化道型最常見。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓隻感染罕見。皮下/皮膚型較消化道型常見。
+
+etiology:
+  categories:
+    - name: 病原體
+      examples:
+        - Pythium insidiosum（卵菌綱，非真菌）
+        - 細胞壁成分為纖維素（非幾丁質），故對抗黴菌藥物無效
+        - 遊動孢子（zoospore）為感染形式
+    - name: 感染途徑
+      examples:
+        - 接觸含遊動孢子的溫暖靜水體（池塘、沼澤）
+        - 遊動孢子經皮膚傷口侵入（皮膚型）
+        - 攝入污染水中的遊動孢子（消化道型）
+    - name: 環境因素
+      examples:
+        - 好發於熱帶與亞熱帶地區
+        - 溫暖季節（水溫 > 30°C）
+        - 靜水環境（池塘、沼澤、稻田）
+
+clinicalSigns:
+  early:
+    - 消化道型：嘔吐、腹瀉、食慾減退
+    - 皮膚型：皮膚結節或潰瘍，排膿竇道
+    - 體重減輕開始
+  progressive:
+    - 消化道型：慢性嘔吐腹瀉，嚴重消瘦
+    - 腹部可觸及腸管增厚或腫塊
+    - 皮膚型：潰瘍擴大，肉芽組織增生
+    - 淋巴結腫大
+  late:
+    - 消化道型：腸阻塞、腸穿孔、腹膜炎
+    - 嚴重惡病質
+    - 瀰漫性感染
+    - 腸繫膜淋巴結嚴重腫大
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 組織病理學
+      notes: "嚴重嗜酸性與肉芽腫性發炎。GMS 或 PAS 染色可見寬大、少有隔膜的菌絲（8-10 μm）。不規則分枝。"
+    - name: 血清學檢測
+      notes: "ELISA 或免疫擴散試驗檢測抗 Pythium 抗體。敏感性約 90%。可用於早期診斷與治療監測。"
+  imaging:
+    - name: 腹部超音波
+      notes: "消化道型：腸壁顯著增厚（可達 > 2 cm）。腸管腫塊。腸繫膜淋巴結腫大。腹腔積液。"
+    - name: 腹部 X 光
+      notes: "腸壁增厚或腹腔腫塊影。腸阻塞徵象。"
+  additional:
+    - PCR 檢測（組織，高特異性）
+    - 培養（需特殊培養條件，生長緩慢）
+    - 免疫組織化學染色（確認 Pythium 特異性抗原）
+
+treatment:
+  principles:
+    - 外科切除為最重要的治療
+    - 傳統抗黴菌藥物無效（因為不是真菌）
+    - 免疫療法可作為輔助治療
+    - 預後取決於病變範圍與是否能完全切除
+  general:
+    - "消化道型：廣泛腸切除（需足夠邊界 > 5 cm）+ 腸繫膜淋巴結摘除"
+    - "皮膚型：廣泛外科切除（邊界 > 3 cm）"
+    - "Itraconazole 10 mg/kg PO q24h + Terbinafine 5-10 mg/kg PO q24h（合併可能有部分效果）"
+    - "免疫療法：Pythium insidiosum immunotherapy（PIA，自體或商品化疫苗，部分國家可用）"
+    - "Mefenoxam（metalaxyl，殺卵菌劑，實驗性使用）"
+    - "術後密切監測復發（每 1-3 月影像學追蹤）"
+    - "預防：避免犬隻接觸溫暖靜水體"
+
+prognosis: 預後通常不良。消化道型若能早期診斷並完全手術切除，治癒率約 20-30%。廣泛病變或無法完全切除者預後極差。皮膚型若能完全切除預後較佳。藥物治療單獨使用效果有限。免疫療法合併手術可能提高治癒率。早期診斷與積極手術為改善預後的關鍵。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Pythiosis in dogs: clinical findings and treatment outcomes"
+    url: https://pubmed.ncbi.nlm.nih.gov/18179559/
+    type: consensus
+    pmid: "18179559"
+  - sourceOrg: Medical Mycology
+    title: "Pythium insidiosum: an emerging pathogen in humans and animals"
+    url: https://pubmed.ncbi.nlm.nih.gov/21539611/
+    type: consensus
+    pmid: "21539611"
+pubmedQueries:
+  - query: '"pythiosis" AND (dog OR canine) AND ("treatment" OR "surgery")'
+    frequency: monthly

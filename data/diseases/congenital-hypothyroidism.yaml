@@ -1,0 +1,105 @@
+slug: congenital-hypothyroidism
+nameEn: Congenital Hypothyroidism
+nameZh: 先天性甲狀腺功能低下
+bodySystem: endocrine
+description: 先天性甲狀腺功能低下為出生時即存在的甲狀腺激素缺乏症，可因甲狀腺發育不全（dysgenesis）、甲狀腺激素合成障礙（dyshormonogenesis）或罕見的促甲狀腺素（TSH）受體異常所致。患畜表現為嚴重的生長遲緩、矮小症與智力發育障礙。
+
+aliases:
+  - { alias: 先天性甲低, language: zh }
+  - { alias: 矮小症, language: zh }
+  - { alias: Cretinism, language: en }
+  - { alias: Congenital Cretinism, language: en }
+  - { alias: Thyroid Dysgenesis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 多品種可發生。狐狸梗犬中報告甲狀腺過氧化物酶缺陷（dyshormonogenesis）。巨型雪納瑞犬中報告 TSH 受體突變。常染色體隱性遺傳。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓隻先天性甲狀腺功能低下罕見，多為甲狀腺發育不全（agenesis/ectopia）。阿比西尼亞貓中有報告。
+
+etiology:
+  categories:
+    - name: 甲狀腺發育不全
+      examples:
+        - 甲狀腺缺如（agenesis）
+        - 甲狀腺異位（ectopia）
+        - 甲狀腺發育不良（hypoplasia）
+    - name: 甲狀腺激素合成障礙
+      examples:
+        - 甲狀腺過氧化物酶（TPO）缺乏
+        - 甲狀腺球蛋白合成異常
+        - 碘有機化障礙
+    - name: 中樞性病因
+      examples:
+        - TSH 受體突變（罕見）
+        - 下丘腦-垂體軸發育異常（極罕見）
+
+clinicalSigns:
+  early:
+    - 出生時可能正常或稍小
+    - 乳期生長速度明顯遲緩
+    - 精神活動力較同窩低落
+    - 胎毛換毛延遲
+  progressive:
+    - 不成比例的矮小症（四肢短、軀幹寬、頭大）
+    - 嚴重精神遲鈍
+    - 乳齒脫落延遲、恆齒萌出延遲
+    - 便秘
+    - 體溫偏低
+  late:
+    - 骨骺閉合延遲（X 光可見）
+    - 嚴重骨骼發育畸形
+    - 甲狀腺腫大（goiter，合成障礙型）
+    - 皮膚增厚、黏液水腫
+    - 高膽固醇血症
+
+diagnosis:
+  primaryTests:
+    - name: 甲狀腺功能檢查
+      notes: "T4（總 T4）與 fT4 顯著降低。TSH 升高（原發性）或正常/降低（中樞性）。T3 可能降低或正常。"
+    - name: 血液生化
+      notes: "高膽固醇血症、輕度非再生性貧血。肌酸激酶（CK）可能升高。"
+  imaging:
+    - name: 骨骼 X 光
+      notes: "骨骺閉合嚴重延遲（骨齡遠小於實際年齡）。椎體發育不全。長骨短粗。"
+    - name: 甲狀腺超音波
+      notes: "評估甲狀腺大小與位置。發育不全型可能找不到正常位置的甲狀腺。甲狀腺腫大見於合成障礙型。"
+  additional:
+    - 甲狀腺閃爍掃描（Tc-99m pertechnetate）：定位異位或缺如的甲狀腺組織
+    - 基因檢測（已知突變品種）
+    - TSH 刺激試驗（區分原發與繼發）
+
+treatment:
+  principles:
+    - 終身甲狀腺激素替代療法
+    - 早期治療可顯著改善預後
+    - 骨骼畸形一旦形成不可逆
+    - 劑量需隨生長調整
+  general:
+    - "Levothyroxine (L-T4) 0.02-0.04 mg/kg PO q12h（幼犬起始劑量可能需較高）"
+    - "治療後 4-6 週複查 T4 水平，調整劑量"
+    - "監測：T4 峰值（給藥後 4-6 小時）應在正常範圍高值"
+    - "早期治療可能改善精神活動力與部分生長，但嚴重骨骼畸形不可逆"
+    - "終身治療，不可停藥"
+    - "繁殖管理：受影響犬貓與帶因者不應繁殖"
+
+prognosis: 預後取決於診斷與治療的時機。早期診斷（< 8 週齡）並開始甲狀腺替代治療者，精神活動力與部分生長可改善，但嚴重骨骼畸形通常不可逆。晚期診斷者預後較差，骨骼畸形與精神遲鈍為永久性。藥物療法可顯著改善代謝功能與生活品質。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Congenital hypothyroidism in dogs and cats: a review"
+    url: https://pubmed.ncbi.nlm.nih.gov/17894592/
+    type: consensus
+    pmid: "17894592"
+  - sourceOrg: Domestic Animal Endocrinology
+    title: "Congenital hypothyroidism with goiter in fox terriers"
+    url: https://pubmed.ncbi.nlm.nih.gov/9444311/
+    type: consensus
+    pmid: "9444311"
+pubmedQueries:
+  - query: '"congenital hypothyroidism" AND (dog OR cat) AND ("diagnosis" OR "treatment")'
+    frequency: monthly

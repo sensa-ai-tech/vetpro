@@ -1,0 +1,112 @@
+slug: rat-tail-degloving
+nameEn: Rat Tail Degloving
+nameZh: 大鼠尾部脫套
+bodySystem: emergency
+description: 大鼠尾巴因不當抓取或卡夾意外導致尾部皮膚整段脫落 (degloving)，露出底下的肌腱與椎骨，為常見的外傷性急症，通常需截尾處理。
+
+aliases:
+  - { alias: 大鼠尾巴脫皮, language: zh }
+  - { alias: 大鼠尾部外傷, language: zh }
+  - { alias: 大鼠斷尾, language: zh }
+  - { alias: Rat tail slip, language: en }
+  - { alias: Rat tail avulsion, language: en }
+  - { alias: Rat tail skin loss, language: en }
+
+species:
+  - speciesCommon: rat
+    speciesScientific: Rattus norvegicus
+    prevalence: common
+    notes: 大鼠尾部皮膚僅薄薄附著於底層組織，牽拉時極易整段脫離。常因飼主抓尾尖端或尾巴卡在籠門而發生。為初學飼主常見的意外傷害。尾巴有體溫調節功能但截斷後大鼠仍可正常生活。
+
+etiology:
+  categories:
+    - name: 外傷性
+      examples:
+        - 不當抓取 (抓尾巴尖端向上提)
+        - 籠門或物品夾住尾巴
+        - 尾巴被其他大鼠咬傷
+        - 跌落時尾巴被卡住
+    - name: 風險因素
+      examples:
+        - 飼主抓持方式不當 (應抓尾巴根部而非尖端)
+        - 籠具設計不良 (間距可夾住尾巴)
+        - 多鼠同籠打架
+        - 尾部皮膚老化脆弱 (老年鼠)
+
+clinicalSigns:
+  early:
+    - 尾部皮膚突然脫落 (套狀脫離)
+    - 露出紅色的肌腱與椎骨
+    - 出血 (通常不嚴重)
+    - 疼痛反應 (嘶叫)
+  progressive:
+    - 暴露的尾椎組織乾燥壞死
+    - 感染 (腫脹、分泌物)
+    - 尾部發黑 (壞死)
+    - 大鼠舔舐或啃咬受傷尾巴
+  late:
+    - 壞死範圍向近端擴展
+    - 敗血症 (未處理的嚴重感染)
+    - 尾巴自行斷裂 (乾性壞疽)
+    - 骨髓炎
+
+diagnosis:
+  primaryTests:
+    - name: 理學檢查
+      notes: "直接觀察即可診斷。評估脫套範圍 (長度)、組織存活度、感染徵象。確認是否僅皮膚脫套或合併骨折"
+    - name: 觸診
+      notes: "評估脫套近端是否仍有血液循環。捏壓試驗評估感覺"
+  imaging:
+    - name: 尾部 X 光
+      notes: "評估椎骨完整性。排除骨折。確定截尾位置"
+  additional:
+    - 傷口拭子培養 (感染病例)
+    - CBC (排除敗血症)
+
+treatment:
+  principles:
+    - 暴露的尾椎組織無法癒合 (缺乏皮膚覆蓋)
+    - 截尾為標準治療
+    - 截斷在脫套近端健康組織處
+    - 預防感染
+  medications:
+    - name: Meloxicam
+      dose: "1-2 mg/kg PO/SC SID"
+      notes: 術前與術後止痛。大鼠耐受良好
+    - name: Buprenorphine
+      dose: "0.05 mg/kg SC 每 8-12 小時"
+      notes: 術前與術後鴉片類止痛 2-3 天
+    - name: Enrofloxacin
+      dose: "10-20 mg/kg PO BID"
+      notes: 預防或治療感染。術後 5-7 天
+    - name: 局部消毒 (Chlorhexidine 0.05%)
+      dose: "局部清洗"
+      notes: 等待手術期間傷口清潔
+  general:
+    - 截尾手術 (在脫套近端健康皮膚處截斷)
+    - 確保截斷端有足夠皮膚覆蓋 (皮瓣閉合)
+    - 術後防舔 (短期使用，大鼠不耐受頸圈)
+    - 縫線或外科黏合劑閉合
+    - 術後 7-10 天拆線
+    - 等待手術期間：保持暴露組織濕潤清潔
+    - 教導飼主正確抓持 (抓尾巴根部或托住身體)
+    - 檢查籠具安全性 (避免再次發生)
+    - 截尾後大鼠可完全正常生活
+
+prognosis: 截尾手術後預後優良。傷口癒合通常快速 (1-2 週)。大鼠截尾後生活品質不受顯著影響 (平衡與體溫調節輕微受影響但可代償)。未處理的脫套尾巴可能因感染或壞死擴展而需截更多或發展為敗血症。正確的飼主教育可完全預防此傷害。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Soft Tissue Surgery of Small Mammals"
+    url: https://pubmed.ncbi.nlm.nih.gov/26611925/
+    type: review
+    pmid: "26611925"
+  - sourceOrg: Lab Animal
+    title: "Common injuries and emergencies in pet rats"
+    url: https://pubmed.ncbi.nlm.nih.gov/18431399/
+    type: review
+    pmid: "18431399"
+
+pubmedQueries:
+  - query: '"rat" AND ("tail" OR "degloving" OR "tail injury" OR "tail amputation") AND ("treatment" OR "surgery")'
+    frequency: monthly

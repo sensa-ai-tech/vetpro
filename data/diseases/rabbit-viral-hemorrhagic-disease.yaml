@@ -1,0 +1,106 @@
+slug: rabbit-viral-hemorrhagic-disease
+nameEn: Rabbit Viral Hemorrhagic Disease
+nameZh: 兔病毒性出血病
+bodySystem: infectious
+description: 由兔出血病病毒 (RHDV/RHDV2, Calicivirus) 引起的高度致命性急性傳染病，感染後可在 24-72 小時內死亡。以急性壞死性肝炎及 DIC 為特徵，死亡率可達 70-90%。部分國家列為法定傳染病。
+
+aliases:
+  - { alias: 兔出血熱, language: zh }
+  - { alias: 兔瘟, language: zh }
+  - { alias: RHD, language: en }
+  - { alias: RHDV, language: en }
+  - { alias: RHDV2, language: en }
+  - { alias: Rabbit Calicivirus Disease, language: en }
+  - { alias: Rabbit Hemorrhagic Disease, language: en }
+
+species:
+  - speciesCommon: rabbit
+    speciesScientific: Oryctolagus cuniculus
+    prevalence: common
+    notes: RHDV 主要感染成兔 (>8 週齡)。RHDV2 可感染幼兔 (>3 週齡) 且可感染部分野兔屬 (Lepus)。全球分布，已在多國流行。病毒環境存活力極強。
+
+etiology:
+  categories:
+    - name: 病毒性
+      examples:
+        - Rabbit Hemorrhagic Disease Virus (RHDV，Caliciviridae 科 Lagovirus 屬)
+        - RHDV2 (新型變異株，2010 年歐洲首次出現，已全球擴散)
+        - 直接接觸、氣霧、媒介昆蟲 (蒼蠅、蚊子)、受汙染物品傳播
+        - 病毒在環境中可存活數月
+        - 主要靶器官為肝臟（急性壞死性肝炎）
+    - name: 風險因素
+      examples:
+        - 未接種疫苗
+        - 戶外飼養（接觸野兔或媒介昆蟲）
+        - 新兔引入未隔離
+        - RHDV 疫苗不完全保護 RHDV2（需含 RHDV2 成分疫苗）
+
+clinicalSigns:
+  early:
+    - 超急性型可能無任何前兆即死亡
+    - 突發厭食
+    - 嗜睡
+    - 發燒 (>40°C)
+  progressive:
+    - 呼吸急促或困難
+    - 鼻腔血性分泌物
+    - 神經症狀（癲癇、角弓反張、共濟失調）
+    - 黃疸（肝壞死）
+  late:
+    - DIC（全身性出血——鼻腔、肛門、泌尿道）
+    - 休克
+    - 昏迷
+    - 死亡（發病後 12-72 小時）
+
+diagnosis:
+  primaryTests:
+    - name: RT-PCR
+      notes: "肝臟組織、血液或糞便 PCR 檢測病毒核酸。可區分 RHDV 與 RHDV2。為確診金標準"
+    - name: 屍檢
+      notes: "肝臟腫大、蒼白、壞死灶。脾腫大。全身器官出血點。急性壞死性肝炎為特徵性病理變化"
+  imaging:
+    - name: 無特異性影像需求
+      notes: "急性致死性疾病，診斷依賴實驗室與屍檢"
+  additional:
+    - 生化（劇烈肝指數升高——ALT、AST、GGT，但多在死亡前來不及檢測）
+    - 凝血功能（DIC 證據——PT/PTT 延長）
+    - ELISA 抗原檢測
+    - 組織病理學（肝臟壞死為確診依據）
+    - 鑑別診斷（中毒、Pasteurella 敗血症、E. cuniculi 急性）
+
+treatment:
+  principles:
+    - 無特效治療——支持性療法為主
+    - 死亡率極高，治療多為嘗試性
+    - 預防（疫苗接種）為唯一有效防控手段
+    - 疑似病例立即隔離並通報
+  general:
+    - "積極靜脈輸液支持"
+    - "維生素 K1 1-2 mg/kg SC/IM q12h（DIC 管理嘗試）"
+    - "抗生素預防繼發感染：Enrofloxacin 10-20 mg/kg SC BID"
+    - "止痛：Meloxicam 0.3-0.6 mg/kg SC SID"
+    - "人類重組干擾素 alpha (IFN-α) 嘗試性治療（證據有限）"
+    - "嚴格隔離病兔"
+    - "環境消毒：10% 漂白水或 1% 氫氧化鈉"
+    - "疫苗預防：RHDV+RHDV2 二價疫苗，初次免疫 8-10 週齡，每年補強"
+    - "戶外兔加強防蚊蠅措施"
+
+emergencyNotes: RHD 為超急性致命性疾病。多數病例在出現症狀時已無法挽救。立即隔離疑似病例。死亡兔屍體妥善處理（焚燒或深埋）。通知所有接觸兔飼主。依當地法規可能需通報獸醫主管機關。
+
+prognosis: 急性型死亡率 70-90%，超急性型接近 100%。亞急性型少數可存活但可能成為帶原者。RHDV2 死亡率約 5-70%，略低於經典型但仍高。預防接種為唯一有效防控策略。存活兔需隔離觀察至少 8 週。
+
+guidelineRefs:
+  - sourceOrg: OIE/WOAH
+    title: "Rabbit Haemorrhagic Disease - OIE Technical Disease Card"
+    url: https://pubmed.ncbi.nlm.nih.gov/22913504/
+    type: guideline
+    pmid: "22913504"
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Infectious diseases of rabbits"
+    url: https://pubmed.ncbi.nlm.nih.gov/24157569/
+    type: review
+    pmid: "24157569"
+
+pubmedQueries:
+  - query: '"rabbit hemorrhagic disease" AND ("RHDV2" OR "treatment" OR "vaccine")'
+    frequency: monthly

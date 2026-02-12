@@ -1,0 +1,119 @@
+slug: feline-panleukopenia
+nameEn: Feline Panleukopenia
+nameZh: 貓泛白血球減少症
+bodySystem: infectious
+description: 貓泛白血球減少症是由貓泛白血球減少症病毒（FPV，feline parvovirus）引起的高度傳染性與致命性病毒性疾病。FPV 選擇性攻擊快速分裂的細胞（骨髓、腸道隱窩上皮、淋巴組織），導致嚴重白血球減少症、出血性腸炎與免疫抑制。幼貓死亡率極高，但疫苗可有效預防。
+
+aliases:
+  - { alias: 貓瘟, language: zh }
+  - { alias: 貓傳染性腸炎, language: zh }
+  - { alias: 貓細小病毒感染, language: zh }
+  - { alias: FPV, language: en }
+  - { alias: Feline Parvovirus, language: en }
+  - { alias: Feline Distemper, language: en }
+  - { alias: Feline Infectious Enteritis, language: en }
+
+species:
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 未接種疫苗的幼貓風險最高（3-5 月齡，母源抗體消退後）。收容所與流浪貓群盛行率較高。疫苗接種已大幅降低發生率。病毒在環境中可存活超過 1 年。
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: FPV 通常不感染犬隻（犬有自己的犬小病毒 CPV-2）。但 CPV-2 可能起源於 FPV 突變。
+
+etiology:
+  categories:
+    - name: 病原體
+      examples:
+        - Feline panleukopenia virus（FPV，細小病毒科）
+        - 無包膜 DNA 病毒，環境抗性極強
+        - 在環境中可存活 > 1 年
+        - 對多數消毒劑有抗性（漂白水有效）
+    - name: 傳播途徑
+      examples:
+        - 直接接觸感染貓的體液（糞便、嘔吐物、尿液、鼻分泌物）
+        - 間接接觸（污染的食盆、貓砂盆、衣物、鞋子）
+        - 跳蚤可能作為機械性傳播媒介
+        - 經胎盤感染（導致幼貓小腦發育不全）
+    - name: 病理機制
+      examples:
+        - 病毒選擇性感染快速分裂的細胞
+        - 骨髓抑制導致嚴重白血球減少症（< 2,000/μL）
+        - 腸道隱窩上皮壞死導致嚴重腸炎
+        - 淋巴組織壞死導致免疫抑制
+        - 胎內感染可影響小腦外顆粒層（小腦發育不全）
+
+clinicalSigns:
+  early:
+    - 突發性嗜睡與食慾廢絕
+    - 高燒（40-41°C）
+    - 嘔吐
+    - 脫水
+  progressive:
+    - 嚴重水樣至出血性腹瀉
+    - 持續嘔吐
+    - 嚴重脫水
+    - 腹部疼痛（觸診敏感）
+    - 黏膜乾燥
+  late:
+    - 嚴重白血球減少症（WBC < 2,000/μL，可低至 < 100/μL）
+    - 敗血症（腸道細菌移位）
+    - 低體溫（瀕死徵兆）
+    - 瀰漫性血管內凝血（DIC）
+    - 休克與死亡
+
+diagnosis:
+  primaryTests:
+    - name: 糞便抗原快速檢測
+      notes: "使用犬小病毒糞便 ELISA/免疫層析快速檢測套組（FPV 與 CPV 抗原交叉反應）。敏感性約 80%。近期接種活毒疫苗（5-12 天內）可能導致偽陽性。"
+    - name: 血液學檢查
+      notes: "特徵性嚴重白血球減少症（WBC < 2,000-4,000/μL）。泛白血球減少（中性球與淋巴球同時減少）。血小板可能減少。白血球回升為預後良好指標。"
+  imaging:
+    - name: 腹部超音波
+      notes: "小腸壁增厚。腸道蠕動減少（ileus）。腸繫膜淋巴結可能腫大。腹腔積液（偶見）。"
+    - name: 腹部 X 光
+      notes: "腸管擴張充氣（麻痺性腸梗阻）。"
+  additional:
+    - 糞便 PCR（最敏感，可區分疫苗株與野外株）
+    - 血液生化（低白蛋白血症、低鉀血症、低血糖）
+    - 凝血檢查（DIC 評估）
+    - FIV/FeLV 篩檢（排除合併感染）
+
+treatment:
+  principles:
+    - 積極的支持性照護為治療核心
+    - 無特異性抗病毒藥物
+    - 維持水合、電解質平衡與營養
+    - 預防繼發性細菌感染
+  general:
+    - "積極靜脈輸液：等張晶體液（Lactated Ringer's）補充脫水與持續流失"
+    - "鉀補充：KCl 20-40 mEq/L 加入輸液"
+    - "低血糖矯正：Dextrose 50% 稀釋至 2.5-5%，加入輸液"
+    - "廣效抗生素（預防繼發敗血症）：Ampicillin 20-30 mg/kg IV q8h + Enrofloxacin 5 mg/kg IV q24h（或 Metronidazole 10-15 mg/kg IV q8h）"
+    - "止吐：Maropitant (Cerenia) 1 mg/kg IV/SC q24h"
+    - "營養支持：儘早恢復腸內營養（鼻食管管或食道管），少量頻繁"
+    - "輸血或膠體液：嚴重低白蛋白血症或貧血時"
+    - "干擾素：Feline interferon omega 1 MU/kg IV q24h x 3 天（部分國家可用）"
+    - "嚴格隔離：感染貓需與其他貓完全隔離"
+    - "環境消毒：10% 漂白水（sodium hypochlorite）"
+
+prognosis: 未治療的幼貓死亡率 > 90%。積極支持性治療可將存活率提高至 50-70%。白血球計數 < 1,000/μL 為不良預後指標。白血球回升提示預後改善。治療前 3-5 天為關鍵期。存活者通常完全康復並獲得長期免疫力。疫苗接種為最有效的預防措施。
+
+guidelineRefs:
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "ABCD guidelines on feline panleukopenia"
+    url: https://pubmed.ncbi.nlm.nih.gov/19481039/
+    type: consensus
+    pmid: "19481039"
+  - sourceOrg: Veterinary Microbiology
+    title: "Feline panleukopenia virus: an update on molecular biology and management"
+    url: https://pubmed.ncbi.nlm.nih.gov/22197503/
+    type: consensus
+    pmid: "22197503"
+pubmedQueries:
+  - query: '"feline panleukopenia" AND ("treatment" OR "prognosis" OR "management")'
+    frequency: monthly
+  - query: '"feline parvovirus" AND ("diagnosis" OR "PCR" OR "outcome")'
+    frequency: monthly

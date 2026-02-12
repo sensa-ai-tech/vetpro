@@ -1,0 +1,113 @@
+slug: rabbit-heatstroke
+nameEn: Rabbit Heatstroke
+nameZh: 兔熱衰竭
+bodySystem: emergency
+description: 兔因高溫環境導致體溫過高的緊急狀況。兔無法排汗且喘息散熱效率極低，僅能透過耳廓血管散熱，對高溫耐受性極差。環境溫度超過 28-30°C 即有風險，可在數小時內致死。
+
+aliases:
+  - { alias: 兔中暑, language: zh }
+  - { alias: 兔熱中風, language: zh }
+  - { alias: Heat Stroke in Rabbits, language: en }
+  - { alias: Hyperthermia, language: en }
+
+species:
+  - speciesCommon: rabbit
+    speciesScientific: Oryctolagus cuniculus
+    prevalence: common
+    notes: 兔理想環境溫度 15-22°C。>28°C 開始不適，>35°C 極度危險。肥胖兔、長毛品種、老年兔、短耳品種 (Lop) 風險較高。室外飼養或夏季無空調室內常見。
+
+etiology:
+  categories:
+    - name: 環境性
+      examples:
+        - 環境溫度過高（>28-30°C）
+        - 直接日曬
+        - 通風不良的封閉空間
+        - 車內高溫
+        - 兔散熱機制有限（僅耳廓血管擴張散熱，無汗腺，喘息效率低）
+    - name: 風險因素
+      examples:
+        - 肥胖
+        - 長毛品種（Angora、Lionhead）
+        - 垂耳品種（耳廓散熱效率差）
+        - 短頭品種（呼吸效率差）
+        - 老年或有慢性疾病
+        - 飲水不足
+        - 高濕度環境（散熱更困難）
+
+clinicalSigns:
+  early:
+    - 耳廓血管擴張發紅（散熱嘗試）
+    - 鼻孔張開呼吸加速
+    - 嗜睡
+    - 趴伏在涼爽地面
+    - 食慾下降
+  progressive:
+    - 喘息（兔罕見喘息——出現代表嚴重）
+    - 流涎
+    - 體溫升高 (>40°C)
+    - 虛弱
+    - 共濟失調
+  late:
+    - 體溫 >41°C
+    - 痙攣/抽搐
+    - 昏迷
+    - DIC
+    - 多器官衰竭
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 直腸體溫測量
+      notes: "兔正常體溫 38.5-40°C。>40.5°C 為體溫過高。>41°C 為嚴重熱衰竭"
+    - name: 病史
+      notes: "高溫環境暴露史。時間長短。環境溫度"
+  imaging:
+    - name: 無急性影像需求
+      notes: "穩定後可評估器官損傷"
+  additional:
+    - CBC（濃縮紅血球壓積——脫水）
+    - 生化（腎功能、肝功能——器官損傷評估）
+    - 電解質
+    - 凝血功能（DIC 篩檢）
+    - 血液氣體
+
+treatment:
+  principles:
+    - 立即降溫為首要任務
+    - 避免過快降溫（目標 30-60 分鐘內降至 39.5°C 即停止主動降溫）
+    - 積極液體復甦
+    - 監測器官功能
+  general:
+    - "立即移至涼爽環境（空調房）"
+    - "濕毛巾敷耳廓（促進散熱——耳朵為主要散熱器官）"
+    - "微涼水（非冰水！）沾濕被毛——冰水造成周邊血管收縮反而阻礙散熱"
+    - "風扇對流（增加蒸發散熱）"
+    - "體溫降至 39.5°C 時停止主動降溫（避免過度降溫）"
+    - "靜脈輸液：室溫 LRS 10-15 mL/kg/hr"
+    - "氧氣支持"
+    - "止痛：Meloxicam 0.3-0.5 mg/kg SC SID"
+    - "抗痙攣（癲癇時）：Midazolam 0.5-1 mg/kg IV/IM"
+    - "監測體溫每 5-10 分鐘直至穩定"
+    - "住院 24-48 小時監測遲發性器官衰竭"
+    - "預防：環境溫度控制 <25°C、遮蔭、充足飲水、凍水瓶/陶瓷地磚降溫"
+
+emergencyNotes: 兔熱衰竭為急症。立即降溫！禁用冰水（造成血管收縮反而延遲降溫）。使用微涼水濕敷耳廓最有效。體溫降至 39.5°C 停止主動降溫。監測 DIC 與器官衰竭。抽搐兔不要強制降溫——先控制癲癇。
+
+prognosis: 輕度中暑（體溫 <41°C、無神經症狀）及時處理預後良好。嚴重熱衰竭（>41°C、癲癇、DIC）預後謹慎至不良。即使存活，可能遺留腎損傷。預防為最佳策略。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Emergency care of rabbits"
+    url: https://pubmed.ncbi.nlm.nih.gov/26611927/
+    type: review
+    pmid: "26611927"
+  - sourceOrg: Journal of Exotic Pet Medicine
+    title: "Heatstroke in small mammals"
+    url: https://pubmed.ncbi.nlm.nih.gov/25015871/
+    type: review
+    pmid: "25015871"
+
+pubmedQueries:
+  - query: '"heatstroke" OR "heat stroke" AND rabbit AND ("treatment" OR "hyperthermia")'
+    frequency: monthly

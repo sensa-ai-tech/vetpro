@@ -1,0 +1,99 @@
+slug: rabbit-ear-mites
+nameEn: Rabbit Ear Mites
+nameZh: 兔耳蟎
+bodySystem: ear
+description: 由 Psoroptes cuniculi 引起的兔外耳道寄生蟲感染，為家兔最常見的耳部疾病。表現為耳道內大量褐色厚痂，嚴重搔癢，未治療可擴散至頭頸部或繼發中耳炎。
+
+aliases:
+  - { alias: 兔耳蟎蟲, language: zh }
+  - { alias: 兔耳疥蟲, language: zh }
+  - { alias: Psoroptic Mange, language: en }
+  - { alias: Ear Canker, language: en }
+  - { alias: Psoroptes cuniculi Infestation, language: en }
+
+species:
+  - speciesCommon: rabbit
+    speciesScientific: Oryctolagus cuniculus
+    prevalence: common
+    notes: Psoroptes cuniculi 為兔專一性外寄生蟲。垂耳品種 (Lop) 因耳道通風差風險較高。直接接觸傳播，環境中蟎蟲存活可達 21 天。
+
+etiology:
+  categories:
+    - name: 寄生蟲性
+      examples:
+        - Psoroptes cuniculi（非穿掘性表面蟎蟲）
+        - 直接接觸感染兔或受汙染環境傳播
+        - 蟎蟲以耳道皮膚組織液與碎屑為食
+        - 分泌物引發嚴重過敏性炎症反應
+    - name: 風險因素
+      examples:
+        - 群養環境
+        - 垂耳品種（耳道通風差）
+        - 免疫抑制
+        - 環境衛生不佳
+
+clinicalSigns:
+  early:
+    - 搔耳、甩頭
+    - 耳道輕微紅腫
+    - 少量褐色碎屑
+  progressive:
+    - 耳道內大量褐色至黃褐色厚痂層層堆疊
+    - 劇烈搔癢
+    - 耳廓內側結痂
+    - 耳根部脫毛
+    - 疼痛（觸碰耳朵時退縮或鳴叫）
+  late:
+    - 病變擴散至頭部、頸部、會陰部
+    - 繼發性細菌感染
+    - 中耳炎/內耳炎（穿透鼓膜）
+    - 前庭症狀（頭歪斜——中耳受累）
+    - 體重減輕（慢性疼痛與不適導致厭食）
+
+diagnosis:
+  primaryTests:
+    - name: 耳鏡檢查
+      notes: "可見蟎蟲活動於痂皮下。大量褐色層狀痂皮為特徵性表現"
+    - name: 耳道拭子顯微鏡檢查
+      notes: "礦物油浸潤後低倍鏡即可見大型蟎蟲 (Psoroptes cuniculi 0.5-0.8 mm)、蟲卵及排泄物"
+  imaging:
+    - name: 頭部 X 光
+      notes: "懷疑中耳炎時評估鼓泡。嚴重病例排除骨溶解"
+  additional:
+    - 切勿強行移除痂皮（疼痛且可能造成耳道出血——先治療，痂皮會自行脫落）
+    - 鑑別其他原因（細菌性外耳炎、黴菌感染）
+
+treatment:
+  principles:
+    - 殺蟎治療為核心
+    - 切勿強行剝除耳痂（極度疼痛）
+    - 治療所有接觸兔
+    - 環境徹底清潔消毒
+  general:
+    - "首選：Ivermectin 0.2-0.4 mg/kg SC 每 14 天一次，連續 2-3 次"
+    - "替代方案：Selamectin (Revolution) 6-18 mg/kg 頸背部滴劑 (spot-on)，每月一次 × 2-3 次"
+    - "替代方案：Moxidectin 0.2 mg/kg SC 或 spot-on"
+    - "止痛：Meloxicam 0.3-0.6 mg/kg PO/SC SID（減緩炎症與疼痛）"
+    - "切勿強行移除耳道痂皮——治療後痂皮會在 1-2 週自行鬆動脫落"
+    - "嚴重疼痛可先輕柔塗抹礦物油軟化痂皮"
+    - "繼發細菌感染：Enrofloxacin 10-20 mg/kg PO BID"
+    - "環境清潔：徹底清洗消毒籠具、更換墊料"
+    - "所有接觸兔同時治療"
+
+prognosis: 適當驅蟲治療預後極佳。痂皮在治療後 1-3 週自行脫落。未併發中耳炎者完全恢復。已繼發中耳炎或前庭症狀者需延長治療，預後謹慎。復發多因環境未徹底消毒或接觸兔未同時治療。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Parasitology
+    title: "Psoroptes cuniculi in domestic rabbits"
+    url: https://pubmed.ncbi.nlm.nih.gov/10622618/
+    type: review
+    pmid: "10622618"
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Parasites of rabbits"
+    url: https://pubmed.ncbi.nlm.nih.gov/23352431/
+    type: review
+    pmid: "23352431"
+
+pubmedQueries:
+  - query: '"Psoroptes cuniculi" AND rabbit AND ("treatment" OR "ivermectin")'
+    frequency: monthly

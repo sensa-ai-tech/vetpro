@@ -4,21 +4,7 @@ import { diseases, speciesAffected } from "@/db/schema";
 import { eq } from "drizzle-orm";
 import SearchBar from "@/components/SearchBar";
 import DiseaseCard from "@/components/DiseaseCard";
-
-const BODY_SYSTEMS = [
-  { id: "renal", label: "腎臟/泌尿", icon: "🫘" },
-  { id: "cardiac", label: "心臟", icon: "❤️" },
-  { id: "endocrine", label: "內分泌", icon: "🧬" },
-  { id: "gastrointestinal", label: "腸胃", icon: "🫁" },
-  { id: "hematology", label: "血液/免疫", icon: "🩸" },
-  { id: "dermatology", label: "皮膚", icon: "🧴" },
-  { id: "neurology", label: "神經", icon: "🧠" },
-  { id: "respiratory", label: "呼吸", icon: "💨" },
-  { id: "infectious", label: "傳染病", icon: "🦠" },
-  { id: "oncology", label: "腫瘤", icon: "🔬" },
-  { id: "orthopedic", label: "骨科", icon: "🦴" },
-  { id: "ophthalmology", label: "眼科", icon: "👁️" },
-];
+import { BODY_SYSTEMS, SPECIES_OPTIONS } from "@/lib/constants";
 
 function getAllDiseases() {
   const allDiseases = db.select().from(diseases).all();
@@ -93,8 +79,8 @@ export default function HomePage() {
       {/* Browse by body system */}
       <section>
         <h2 className="mb-4 text-lg font-semibold">依專科瀏覽</h2>
-        <div className="grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-6">
-          {BODY_SYSTEMS.map((sys) => (
+        <div className="grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
+          {BODY_SYSTEMS.filter((sys) => sys.id !== "all" && systemCounts[sys.id]).map((sys) => (
             <Link
               key={sys.id}
               href={`/browse?system=${sys.id}`}
@@ -116,19 +102,16 @@ export default function HomePage() {
       <section>
         <div className="mb-4 flex items-center gap-3">
           <h2 className="text-lg font-semibold">快速篩選</h2>
-          <div className="flex gap-2">
-            <Link
-              href="/browse?species=dog"
-              className="rounded-full border border-border px-3 py-1 text-sm transition-colors hover:border-primary hover:text-primary"
-            >
-              🐕 犬
-            </Link>
-            <Link
-              href="/browse?species=cat"
-              className="rounded-full border border-border px-3 py-1 text-sm transition-colors hover:border-primary hover:text-primary"
-            >
-              🐈 貓
-            </Link>
+          <div className="flex flex-wrap gap-2">
+            {SPECIES_OPTIONS.filter((sp) => sp.id !== "all").map((sp) => (
+              <Link
+                key={sp.id}
+                href={`/browse?species=${encodeURIComponent(sp.id)}`}
+                className="rounded-full border border-border px-3 py-1 text-sm transition-colors hover:border-primary hover:text-primary"
+              >
+                {sp.icon} {sp.label}
+              </Link>
+            ))}
           </div>
         </div>
       </section>

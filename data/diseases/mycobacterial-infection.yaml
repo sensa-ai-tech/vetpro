@@ -1,0 +1,112 @@
+slug: mycobacterial-infection
+nameEn: Mycobacterial Infection
+nameZh: 分枝桿菌感染
+bodySystem: infectious
+description: 犬貓的分枝桿菌感染可由多種 Mycobacterium 屬細菌引起，包括結核分枝桿菌複合群（M. tuberculosis complex）、非結核分枝桿菌（NTM，如 M. avium complex）及快速生長型分枝桿菌（如 M. fortuitum）。臨床表現因病原種類而異，從局部皮膚感染到全身性播散性疾病。具人畜共通傳染風險。
+
+aliases:
+  - { alias: 分枝桿菌症, language: zh }
+  - { alias: 結核病, language: zh }
+  - { alias: 非典型分枝桿菌感染, language: zh }
+  - { alias: Mycobacteriosis, language: en }
+  - { alias: Tuberculosis, language: en }
+  - { alias: Atypical Mycobacterial Infection, language: en }
+  - { alias: NTM Infection, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬隻結核罕見但有報告。NTM（M. avium complex）可引起全身性播散性感染，巴吉度犬與迷你雪納瑞有免疫缺陷相關的好發傾向。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓隻 M. bovis 感染報告增加（生食飲食相關）。快速生長型 NTM 可引起脂膜炎（panniculitis）。M. lepraemurium 引起貓麻瘋。
+
+etiology:
+  categories:
+    - name: 結核分枝桿菌複合群
+      examples:
+        - M. tuberculosis（人類型，犬貓感染罕見）
+        - M. bovis（牛型，貓感染相對較多）
+        - M. microti（嚙齒類型）
+    - name: 非結核分枝桿菌（NTM）
+      examples:
+        - M. avium complex（MAC，全身性播散）
+        - M. fortuitum（快速生長型，皮膚感染）
+        - M. smegmatis（快速生長型，皮膚感染）
+        - M. lepraemurium（貓麻瘋）
+    - name: 傳播與感染途徑
+      examples:
+        - 吸入（呼吸道感染）
+        - 攝入（消化道感染，生肉、污染牛奶）
+        - 皮膚傷口（環境 NTM）
+        - 人畜共通傳播（結核複合群）
+
+clinicalSigns:
+  early:
+    - 皮膚結節或潰瘍（皮膚型）
+    - 咳嗽（呼吸道型）
+    - 淋巴結腫大
+    - 輕度體重減輕
+  progressive:
+    - 進行性體重減輕
+    - 慢性不癒合傷口
+    - 全身性淋巴結腫大
+    - 肝脾腫大
+    - 慢性腹瀉（消化道型）
+  late:
+    - 嚴重消瘦與惡病質
+    - 播散性感染（肺、肝、脾、骨髓）
+    - 呼吸衰竭
+    - 腹腔積液
+    - 骨髓受累導致全血球減少
+
+diagnosis:
+  primaryTests:
+    - name: 細胞學/組織病理學
+      notes: "肉芽腫性至化膿性肉芽腫性發炎。Ziehl-Neelsen 抗酸染色可見細胞內或細胞外的紅色抗酸桿菌。快速生長型 NTM 抗酸染色可能弱陽性。"
+    - name: PCR 檢測
+      notes: "組織或體液 PCR 可快速鑑定分枝桿菌種。區分結核複合群與 NTM。指導治療選擇與人畜共通風險評估。"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "肺部肉芽腫性結節。氣管支氣管淋巴結腫大。胸腔積液。"
+    - name: 腹部超音波
+      notes: "肝脾腫大與結節。腹腔淋巴結腫大。"
+  additional:
+    - 細菌培養（需特殊培養基，Lowenstein-Jensen；慢速生長型需 6-8 週）
+    - 藥物敏感性測試（指導治療）
+    - 干擾素釋放試驗（IGRA，結核篩檢）
+    - 血液學與生化（非再生性貧血、低白蛋白血症、高球蛋白血症）
+
+treatment:
+  principles:
+    - 治療前必須考慮人畜共通傳染風險
+    - 結核複合群感染通常建議安樂死（公共衛生考量）
+    - NTM 感染可嘗試長期多藥合併治療
+    - 治療療程長（數月至終身）
+  general:
+    - "NTM（MAC）：Azithromycin 10 mg/kg PO q24h + Rifampin 10-15 mg/kg PO q24h + Ethambutol 15 mg/kg PO q24h（三聯療法 x 6-12 月以上）"
+    - "快速生長型 NTM：Doxycycline 5 mg/kg PO q12h + Fluoroquinolone（根據藥敏）x 3-6 月"
+    - "皮膚型：外科切除合併長期抗生素"
+    - "結核複合群：建議安樂死（WHO/OIE 建議，人畜共通風險）"
+    - "貓麻瘋：Clofazimine 8 mg/kg PO q24h + Clarithromycin 62.5 mg/cat PO q12h x 數月"
+    - "定期監測：CRP、影像學追蹤治療反應"
+    - "人畜共通提醒：告知畜主風險，建議免疫低下家庭成員就醫諮詢"
+
+prognosis: 預後因病原種類與感染範圍而異。皮膚局部型 NTM 經外科切除與抗生素治療預後最佳。播散性 MAC 預後不良，尤其免疫缺陷犬種。結核複合群因公共衛生考量通常建議安樂死。貓麻瘋經治療預後較佳。長期多藥治療是成功的關鍵。
+
+guidelineRefs:
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "Mycobacterial infections in cats: ABCD guidelines"
+    url: https://pubmed.ncbi.nlm.nih.gov/24384927/
+    type: consensus
+    pmid: "24384927"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Mycobacterial infections in dogs: clinical features and treatment"
+    url: https://pubmed.ncbi.nlm.nih.gov/21539611/
+    type: consensus
+    pmid: "21539611"
+pubmedQueries:
+  - query: '"mycobacterial infection" AND (dog OR cat) AND ("treatment" OR "diagnosis")'
+    frequency: monthly

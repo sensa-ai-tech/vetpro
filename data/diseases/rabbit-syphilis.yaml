@@ -1,0 +1,97 @@
+slug: rabbit-syphilis
+nameEn: Rabbit Syphilis
+nameZh: 兔梅毒
+bodySystem: infectious
+description: 由兔密螺旋體 (Treponema cuniculi) 引起的慢性傳染病，主要透過直接接觸（交配、哺乳）傳播。病變好發於生殖器與面部（鼻、唇、眼瞼），不具人畜共通性。
+
+aliases:
+  - { alias: 兔密螺旋體症, language: zh }
+  - { alias: 兔生殖器螺旋體病, language: zh }
+  - { alias: Vent Disease, language: en }
+  - { alias: Treponematosis, language: en }
+  - { alias: Rabbit Treponema, language: en }
+
+species:
+  - speciesCommon: rabbit
+    speciesScientific: Oryctolagus cuniculus
+    prevalence: common
+    notes: 兔專一性病原，不感染人類或其他動物。主要經交配、分娩或直接接觸傳播。可潛伏感染，緊迫時發病。
+
+etiology:
+  categories:
+    - name: 細菌性
+      examples:
+        - Treponema cuniculi (兔密螺旋體)
+        - 直接接觸傳播 (交配、哺乳、母子間)
+        - 潛伏期 3-16 週
+        - 緊迫可誘發潛伏感染發病
+    - name: 風險因素
+      examples:
+        - 未絕育繁殖用兔
+        - 群養環境
+        - 免疫抑制或緊迫
+        - 新兔引入未隔離
+
+clinicalSigns:
+  early:
+    - 生殖器周圍紅斑、水腫
+    - 肛門與外陰部皮膚發紅
+    - 輕微結痂
+  progressive:
+    - 生殖器、肛門周圍潰瘍與厚痂
+    - 病變擴散至鼻尖、唇部、眼瞼
+    - 結痂邊緣紅腫
+    - 可能輕度不適但多數食慾精神正常
+  late:
+    - 廣泛性皮膚結痂與潰瘍
+    - 面部嚴重病變（鼻、唇變形）
+    - 繁殖障礙
+    - 極少數繼發性感染
+
+diagnosis:
+  primaryTests:
+    - name: 暗視野顯微鏡
+      notes: "病灶刮取物暗視野鏡檢可見螺旋體運動。敏感度因取樣技術而異"
+    - name: 臨床表現
+      notes: "典型生殖器+面部結痂病變分布具高度診斷價值，結合病史與治療反應"
+  imaging:
+    - name: 無特異性影像需求
+      notes: "診斷主要依賴臨床與實驗室檢查"
+  additional:
+    - 血清學 (兔梅毒與人梅毒血清學可能交叉反應，但臨床不常規使用)
+    - 組織病理學 (皮膚生檢——表皮過度角化、真皮炎症浸潤)
+    - PCR (研究用途，臨床不常規)
+    - 鑑別診斷排除皮黴菌、疥蟎、密螺旋體
+
+treatment:
+  principles:
+    - Penicillin 為首選治療，治癒率高
+    - 治療所有接觸兔（潛伏感染者）
+    - 治療期間隔離
+    - 不具人畜共通性，飼主無需擔心
+  general:
+    - "Penicillin G Benzathine/Procaine (Dual Pen)：42,000-84,000 IU/kg SC 每 7 天注射一次，連續 3 次"
+    - "替代方案：Chloramphenicol 50 mg/kg PO BID × 14-28 天（Penicillin 過敏時）"
+    - "注意：兔禁用口服 Penicillin（破壞腸道菌群致命），僅可注射給藥"
+    - "所有接觸兔同時治療（包括無症狀者）"
+    - "治療期間隔離病兔"
+    - "繁殖用兔於配種前檢查"
+    - "病灶局部清潔，嚴重結痂可用溫水軟化移除"
+
+prognosis: Penicillin 治療反應極佳，預後良好。病灶通常在治療開始後 2-3 週明顯改善。未治療可持續數月至數年。不會自然痊癒但亦非致命。復發少見。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Dermatology
+    title: "Treponematosis in rabbits"
+    url: https://pubmed.ncbi.nlm.nih.gov/15725106/
+    type: review
+    pmid: "15725106"
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Skin diseases of rabbits"
+    url: https://pubmed.ncbi.nlm.nih.gov/23352431/
+    type: review
+    pmid: "23352431"
+
+pubmedQueries:
+  - query: '"Treponema cuniculi" AND rabbit AND ("treatment" OR "syphilis")'
+    frequency: monthly

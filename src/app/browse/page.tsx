@@ -5,6 +5,8 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import SearchBar from "@/components/SearchBar";
 import DiseaseCard from "@/components/DiseaseCard";
+import SpeciesDropdown from "@/components/SpeciesDropdown";
+import { BODY_SYSTEMS } from "@/lib/constants";
 
 interface DiseaseItem {
   id: string;
@@ -15,28 +17,6 @@ interface DiseaseItem {
   description: string | null;
   species: string[];
 }
-
-const BODY_SYSTEMS = [
-  { id: "all", label: "全部", icon: "📋" },
-  { id: "renal", label: "腎臟", icon: "🫘" },
-  { id: "cardiac", label: "心臟", icon: "❤️" },
-  { id: "endocrine", label: "內分泌", icon: "🧬" },
-  { id: "gastrointestinal", label: "腸胃", icon: "🫁" },
-  { id: "hematology", label: "血液", icon: "🩸" },
-  { id: "dermatology", label: "皮膚", icon: "🧴" },
-  { id: "neurology", label: "神經", icon: "🧠" },
-  { id: "respiratory", label: "呼吸", icon: "💨" },
-  { id: "infectious", label: "傳染病", icon: "🦠" },
-  { id: "oncology", label: "腫瘤", icon: "🔬" },
-  { id: "orthopedic", label: "骨科", icon: "🦴" },
-  { id: "ophthalmology", label: "眼科", icon: "👁️" },
-];
-
-const SPECIES_OPTIONS = [
-  { id: "all", label: "全部物種", icon: "🐾" },
-  { id: "dog", label: "犬", icon: "🐕" },
-  { id: "cat", label: "貓", icon: "🐈" },
-];
 
 function BrowseContent() {
   const searchParams = useSearchParams();
@@ -105,21 +85,10 @@ function BrowseContent() {
           <label className="mb-1.5 block text-sm font-medium text-muted">
             物種
           </label>
-          <div className="flex gap-1.5">
-            {SPECIES_OPTIONS.map((sp) => (
-              <button
-                key={sp.id}
-                onClick={() => setSelectedSpecies(sp.id)}
-                className={`rounded-full border px-3 py-1 text-sm transition-all ${
-                  selectedSpecies === sp.id
-                    ? "border-primary bg-primary-light font-medium text-primary"
-                    : "border-border hover:border-primary/30"
-                }`}
-              >
-                {sp.icon} {sp.label}
-              </button>
-            ))}
-          </div>
+          <SpeciesDropdown
+            value={selectedSpecies}
+            onSelect={setSelectedSpecies}
+          />
         </div>
       </div>
 

@@ -1,0 +1,108 @@
+slug: cleft-palate
+nameEn: Cleft Palate
+nameZh: 裂顎
+bodySystem: other
+description: 裂顎是犬貓常見的先天性顱顏畸形，為硬顎和/或軟顎未能在胚胎發育期完全融合所致。可能伴隨唇裂（cleft lip）。此畸形導致口腔與鼻腔相通，造成吸乳困難、鼻分泌物及吸入性肺炎等問題。
+
+aliases:
+  - { alias: 顎裂, language: zh }
+  - { alias: 兔唇, language: zh }
+  - { alias: 腭裂, language: zh }
+  - { alias: Palatoschisis, language: en }
+  - { alias: Cleft Lip and Palate, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 短頭種犬品種好發率較高，包括波士頓梗、英國鬥牛犬、法國鬥牛犬及拳師犬。遺傳與環境因素皆可能導致。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 暹羅貓可能有較高遺傳傾向。孕期暴露於致畸物質（如 griseofulvin）可增加風險。
+
+etiology:
+  categories:
+    - name: 遺傳因素
+      examples:
+        - 多基因遺傳（短頭種犬品種好發）
+        - 暹羅貓品種遺傳傾向
+        - 遺傳模式可能為多因子或常染色體隱性
+    - name: 環境致畸因素
+      examples:
+        - 孕期使用 griseofulvin（貓）
+        - 孕期過量維生素 A 或類固醇暴露
+        - 孕期營養缺乏（葉酸不足）
+        - 孕期病毒感染
+    - name: 解剖分類
+      examples:
+        - 原發性裂顎（唇裂，cleft lip）
+        - 繼發性裂顎（硬顎裂）
+        - 軟顎裂
+        - 合併型（唇裂 + 硬顎裂 + 軟顎裂）
+
+clinicalSigns:
+  early:
+    - 新生幼犬/幼貓吸乳困難
+    - 奶液從鼻孔溢出
+    - 體重增長不良
+    - 鼻分泌物
+  progressive:
+    - 反復鼻腔感染
+    - 吸入性肺炎
+    - 慢性鼻炎
+    - 生長遲緩與消瘦
+  late:
+    - 嚴重營養不良
+    - 慢性呼吸道疾病
+    - 鼻腔結構變形
+    - 反復吸入性肺炎可致死
+
+diagnosis:
+  primaryTests:
+    - name: 口腔視診
+      notes: "直接打開口腔即可見硬顎或軟顎的裂隙。新生幼犬應常規檢查口腔。裂隙大小、位置與範圍需記錄。"
+    - name: 鎮靜下口腔完整檢查
+      notes: "評估裂隙完整範圍，包括軟顎後方不易直視的區域。使用口腔鏡檢查。"
+  imaging:
+    - name: 頭部 X 光
+      notes: "評估骨性缺損範圍。可能發現合併的其他顱顏異常。"
+    - name: 胸腔 X 光
+      notes: "排除吸入性肺炎。評估肺部是否有感染跡象。"
+  additional:
+    - CT 掃描（術前精確評估骨缺損範圍與鼻腔結構）
+    - 血液學檢查（評估營養狀態與感染指標）
+
+treatment:
+  principles:
+    - 手術修復為唯一根治方法
+    - 建議於 8-12 週齡執行手術（口腔組織足夠大以進行皮瓣修復）
+    - 術前需管理營養與預防吸入性肺炎
+    - 可能需要分階段多次手術
+  general:
+    - "術前護理：使用管餵或特殊奶嘴餵食，避免奶液進入鼻腔"
+    - "手術修復：黏膜骨膜皮瓣滑移術（mucoperiosteal sliding flap）最常使用"
+    - "軟顎修復：兩層閉合術（口腔黏膜層 + 鼻腔黏膜層）"
+    - "術後：軟食餵養 2-3 週，避免硬食及啃咬玩具"
+    - "吸入性肺炎治療：Amoxicillin/Clavulanate 12.5-25 mg/kg PO q12h"
+    - "疼痛管理：Meloxicam 0.1 mg/kg PO q24h（犬）或 0.05 mg/kg PO q24h（貓，僅短期）"
+    - "嚴重缺損可考慮使用假牙裝置（obturator）暫時封閉裂隙"
+
+prognosis: 手術修復成功率約 70-85%，部分病例需要二次或多次手術。小型裂隙預後較佳。術後皮瓣裂開（dehiscence）為最常見的併發症，發生率約 20-30%。早期手術且術前營養狀態良好者預後最佳。受影響動物不建議繁殖。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Surgery
+    title: "Repair of cleft palate in dogs: techniques and long-term outcomes"
+    url: https://pubmed.ncbi.nlm.nih.gov/15199827/
+    type: consensus
+    pmid: "15199827"
+  - sourceOrg: Journal of Veterinary Dentistry
+    title: "Congenital palatal defects in dogs and cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/19681609/
+    type: consensus
+    pmid: "19681609"
+pubmedQueries:
+  - query: '"cleft palate" AND (dog OR cat) AND ("surgery" OR "repair")'
+    frequency: monthly
+  - query: '"cleft palate" AND (dog OR cat) AND ("congenital" OR "genetics")'
+    frequency: monthly

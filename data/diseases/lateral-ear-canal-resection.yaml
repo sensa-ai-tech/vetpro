@@ -1,0 +1,105 @@
+slug: lateral-ear-canal-resection
+nameEn: Lateral Ear Canal Resection
+nameZh: 側耳道切除術
+bodySystem: ear
+description: 側耳道切除術（Zepp 手術）是移除垂直耳道外側壁的手術，目的在改善耳道通風與引流，便於局部藥物投予。適用於垂直耳道增生但水平耳道與中耳結構仍正常的慢性外耳炎。此手術比全耳道切除術侵入性低，但對末期耳道疾病效果有限。
+
+aliases:
+  - { alias: Zepp 手術, language: zh }
+  - { alias: LER, language: en }
+  - { alias: Zepp Procedure, language: en }
+  - { alias: Lateral Wall Resection, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 適用於慢性外耳炎但垂直耳道增生尚未嚴重的犬隻。好發需手術的品種包括可卡犬、拉布拉多犬等垂耳犬種。若水平耳道或中耳也有病變則需考慮 TECA-LBO。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓隻很少使用此術式。貓的外耳炎較少進展至需要手術的程度。
+
+etiology:
+  categories:
+    - name: 手術適應症
+      examples:
+        - 慢性外耳炎垂直耳道增生但水平耳道正常
+        - 反復外耳炎藥物治療效果不佳
+        - 垂直耳道腫瘤（良性）
+        - 改善耳道通風與引流
+    - name: 手術禁忌症
+      examples:
+        - 水平耳道嚴重增生或骨化
+        - 中耳炎
+        - 耳道惡性腫瘤
+        - 末期耳道疾病（應改行 TECA-LBO）
+    - name: 術前評估
+      examples:
+        - 耳鏡評估水平耳道與鼓膜完整性
+        - CT 掃描評估中耳結構
+        - 細菌培養與藥敏試驗
+
+clinicalSigns:
+  early:
+    - 反復慢性外耳炎發作
+    - 耳部分泌物增多
+    - 搔耳與甩頭
+    - 垂直耳道開口部分狹窄
+  progressive:
+    - 垂直耳道增生導致開口進一步狹窄
+    - 局部藥物投予困難
+    - 耳部疼痛增加
+    - 分泌物惡臭
+  late:
+    - 垂直耳道完全閉塞
+    - 繼發中耳炎（此時 LER 不再適用）
+    - 耳道骨化（此時需 TECA-LBO）
+
+diagnosis:
+  primaryTests:
+    - name: 耳鏡檢查
+      notes: "評估垂直與水平耳道增生程度。確認鼓膜完整性。水平耳道必須正常才適合 LER。"
+    - name: CT 掃描
+      notes: "術前評估耳道骨化程度、中耳結構。排除中耳炎。確認 LER 為適當術式。"
+  imaging:
+    - name: 頭部 X 光
+      notes: "可見鼓室泡是否有異常。但 CT 更為精確。"
+    - name: 無其他特殊影像
+      notes: "CT 為主要術前影像學評估。"
+  additional:
+    - 細菌培養與藥敏試驗
+    - 耳道活檢（排除腫瘤）
+    - 血液學檢查（術前評估）
+
+treatment:
+  principles:
+    - 手術目的在改善通風與引流而非根治耳道疾病
+    - 術後仍需持續局部藥物治療
+    - 需嚴格篩選適應症（水平耳道與中耳正常）
+    - 若效果不佳可能需轉行 TECA-LBO
+  general:
+    - "手術技術：切除垂直耳道外側壁，將垂直耳道向下翻折形成開放引流口"
+    - "術後局部藥物治療：繼續使用耳藥（如 Otibiotic ointment）"
+    - "術後抗生素：Amoxicillin/Clavulanate 12.5-25 mg/kg PO q12h x 14 天"
+    - "術後疼痛管理：Meloxicam 0.1 mg/kg PO q24h x 7-10 天"
+    - "定期清潔開放的耳道口"
+    - "伊麗莎白圈佩戴至拆線（10-14 天）"
+    - "術後定期追蹤評估耳道狀態"
+
+prognosis: LER 可改善耳道通風與藥物投予的便利性，但長期成功率不如 TECA-LBO。約 50-60% 的犬隻術後內科治療效果改善。部分犬隻最終仍需轉行 TECA-LBO（約 20-30%）。嚴格篩選適應症（排除中耳病變與末期耳道疾病）可提高成功率。術後需持續局部治療與定期追蹤。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Surgery
+    title: "Lateral ear canal resection in dogs: indications and outcomes"
+    url: https://pubmed.ncbi.nlm.nih.gov/15943140/
+    type: consensus
+    pmid: "15943140"
+  - sourceOrg: Journal of Small Animal Practice
+    title: "Surgical management of chronic otitis in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/14510846/
+    type: consensus
+    pmid: "14510846"
+pubmedQueries:
+  - query: '"lateral ear canal resection" AND (dog OR canine) AND "otitis"'
+    frequency: monthly

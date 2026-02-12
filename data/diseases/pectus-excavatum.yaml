@@ -1,0 +1,102 @@
+slug: pectus-excavatum
+nameEn: Pectus Excavatum
+nameZh: 漏斗胸
+bodySystem: respiratory
+description: 漏斗胸是一種先天性胸壁畸形，胸骨向脊柱方向凹陷，導致胸腔容積減少。此畸形可壓迫心肺結構，影響心肺功能。常見於短頭種犬與某些貓品種，輕微病例可能無臨床症狀。
+
+aliases:
+  - { alias: 凹胸, language: zh }
+  - { alias: 雞胸凹陷, language: zh }
+  - { alias: Funnel Chest, language: en }
+  - { alias: Cobbler's Chest, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 短頭種犬品種較好發。通常於出生時或幼犬期發現。輕度病例可能隨成長改善。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 緬甸貓可能有較高遺傳傾向。常於幼貓期發現，嚴重者需手術介入。
+
+etiology:
+  categories:
+    - name: 遺傳因素
+      examples:
+        - 遺傳模式尚未完全確定
+        - 短頭種犬品種好發傾向
+        - 緬甸貓品種遺傳傾向
+    - name: 病理機制
+      examples:
+        - 胸骨及肋軟骨發育異常
+        - 胸骨體與劍狀突向背側凹陷
+        - 胸腔前後徑減少
+    - name: 繼發影響
+      examples:
+        - 心臟被壓向左側或右側偏移
+        - 肺葉膨脹受限
+        - 嚴重者可導致限制性通氣障礙
+
+clinicalSigns:
+  early:
+    - 胸壁觸診可感覺胸骨凹陷
+    - 幼犬/幼貓外觀可見胸部凹陷
+    - 多數輕度病例無臨床症狀
+  progressive:
+    - 運動不耐
+    - 呼吸急促或費力
+    - 體重增長不良
+    - 反復呼吸道感染
+  late:
+    - 嚴重呼吸困難
+    - 右心衰竭症狀（腹水、頸靜脈怒張）
+    - 心律不整
+    - 慢性缺氧
+
+diagnosis:
+  primaryTests:
+    - name: 胸壁觸診與視診
+      notes: "可直接觸摸到胸骨凹陷。評估凹陷程度與範圍。"
+    - name: 胸腔 X 光
+      notes: "側位片可見胸骨向背側凹陷，胸腔前後徑減少。腹背位片可見心臟偏移。可計算前胸指數（frontosagittal index）評估嚴重度。"
+  imaging:
+    - name: CT 掃描
+      notes: "精確評估胸骨凹陷程度、心臟位移程度及肺壓迫範圍。計算 Haller index（胸腔橫徑/前後徑）。"
+    - name: 心臟超音波
+      notes: "評估心臟功能及是否有繼發性功能異常。胸骨凹陷可能導致超音波視窗改變。"
+  additional:
+    - 動脈血氣分析（評估氧合狀態）
+    - 心電圖（評估心律不整）
+    - 呼吸功能評估
+
+treatment:
+  principles:
+    - 輕度無症狀病例可能不需治療
+    - 幼年動物可嘗試外部夾板固定矯正
+    - 嚴重者需手術矯正
+    - 合併呼吸或心臟功能障礙者應積極治療
+  general:
+    - "外部夾板（External splinting）：適用於幼年動物（< 12 週齡），胸骨尚有可塑性時效果最佳"
+    - "手術矯正：胸骨翻轉術（sternal turnover）或胸骨提升術（sternal elevation with sutures）"
+    - "術後疼痛管理：Buprenorphine 0.01-0.02 mg/kg IV/IM q6-8h"
+    - "術後呼吸支持：必要時提供氧氣治療"
+    - "輕度病例：監測觀察，部分幼年動物可隨生長自行改善"
+    - "避免繁殖受影響動物"
+
+prognosis: 輕度無症狀病例預後良好，可維持正常生活品質。中度至重度病例經手術矯正後預後改善，但手術風險存在。幼年動物使用外部夾板矯正的成功率約 50-70%。早期介入預後優於延遲治療。未治療的嚴重病例預後不良，可能發展為心肺衰竭。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Surgery
+    title: "Pectus excavatum in dogs and cats: review of surgical techniques"
+    url: https://pubmed.ncbi.nlm.nih.gov/18564276/
+    type: consensus
+    pmid: "18564276"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "External splinting for pectus excavatum in kittens"
+    url: https://pubmed.ncbi.nlm.nih.gov/16579740/
+    type: consensus
+    pmid: "16579740"
+pubmedQueries:
+  - query: '"pectus excavatum" AND (dog OR cat) AND ("surgery" OR "treatment")'
+    frequency: monthly

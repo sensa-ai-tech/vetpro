@@ -1,0 +1,105 @@
+slug: canine-herpesvirus
+nameEn: Canine Herpesvirus Infection
+nameZh: 犬疱疹病毒感染
+bodySystem: infectious
+description: 犬疱疹病毒（CHV-1）感染是新生幼犬的致命性全身性疾病，也可在成犬中引起呼吸道與生殖道感染。此病毒為 α-herpesvirus，對溫度敏感，在新生幼犬的低體溫環境中迅速增殖。成犬感染通常為亞臨床或輕微，但新生幼犬感染後死亡率極高。
+
+aliases:
+  - { alias: CHV, language: en }
+  - { alias: CHV-1, language: en }
+  - { alias: 犬疱疹病毒, language: zh }
+  - { alias: 新生幼犬衰竭症候群, language: zh }
+  - { alias: Fading Puppy Syndrome, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 血清學盛行率在繁殖犬群中可達 40-100%，但臨床疾病主要見於新生幼犬（< 3 週齡）。成犬多為亞臨床帶毒者。全球分布。
+
+etiology:
+  categories:
+    - name: 病原體
+      examples:
+        - Canine herpesvirus 1（CHV-1，α-herpesvirus）
+        - 具有潛伏感染能力（latency in trigeminal ganglion）
+        - 對溫度敏感：37°C 最適增殖，39°C 抑制增殖
+    - name: 傳播途徑
+      examples:
+        - 經產道感染新生幼犬
+        - 口鼻分泌物直接接觸
+        - 經胎盤感染（可導致流產或死產）
+        - 交配傳播（生殖器病變）
+    - name: 病理機制
+      examples:
+        - 新生幼犬體溫低（約 36-37°C），適合病毒增殖
+        - 新生幼犬免疫系統未成熟
+        - 病毒在多個器官中增殖導致壞死性血管炎
+        - 腎臟出血與壞死為特徵性病理變化
+
+clinicalSigns:
+  early:
+    - 新生幼犬（1-3 週齡）：突然不吸乳
+    - 哭叫與不安
+    - 腹部疼痛
+    - 軟便或水樣腹瀉
+  progressive:
+    - 快速衰弱
+    - 低體溫
+    - 黃綠色水樣腹瀉
+    - 腹部膨脹
+    - 鼻分泌物
+  late:
+    - 全身性出血傾向（瘀斑、瘀點）
+    - 呼吸困難
+    - 癲癇發作（中樞神經系統受累）
+    - 快速死亡（通常在症狀出現後 24-48 小時內）
+    - 同窩幼犬相繼發病
+
+diagnosis:
+  primaryTests:
+    - name: PCR 檢測
+      notes: "鼻咽拭子或組織 PCR 為最敏感的確診方法。可檢測活體或死後組織中的 CHV-1 DNA。"
+    - name: 組織病理學（死後）
+      notes: "特徵性腎臟病變：多灶性腎皮質出血與壞死（speckled kidney）。肝臟、肺臟、脾臟多灶性壞死。核內包涵體（嗜酸性）。"
+  imaging:
+    - name: 腹部超音波
+      notes: "腎臟回音增強與出血灶。肝脾腫大。"
+    - name: 無其他常規影像
+      notes: "通常基於臨床表現與死後病理確診。"
+  additional:
+    - 血清學（中和抗體，成犬篩檢用）
+    - 病毒分離（細胞培養）
+    - 血液學（血小板減少、白血球減少）
+
+treatment:
+  principles:
+    - 新生幼犬感染治療效果有限
+    - 提高環境溫度為最重要的支持性措施
+    - 成犬感染通常不需治療
+    - 預防重於治療
+  general:
+    - "新生幼犬環境加溫：維持環境溫度 37-38°C（限制病毒複製）"
+    - "抗病毒治療（效果有限）：Acyclovir 5-10 mg/kg PO q8h（犬的生物利用度低，效果不確定）"
+    - "支持性治療：管餵、皮下補液"
+    - "血清療法：感染母犬血清 1-2 mL SC/IP（含有抗 CHV 抗體，有助保護同窩幼犬）"
+    - "預防性疫苗：Eurican Herpes 205（歐洲，母犬孕期接種，刺激被動移轉抗體）"
+    - "繁殖管理：將新懷孕母犬與其他犬隻隔離於分娩前後"
+    - "新生幼犬管理：確保足夠的初乳攝取與環境保溫"
+
+prognosis: 新生幼犬（< 3 週齡）全身性感染預後極差，死亡率 > 80%。3 週齡以上幼犬因體溫升高可限制病毒複製，預後較佳。存活幼犬可能有永久性神經損傷（腦炎後遺症）或腎臟損傷。成犬感染預後良好，多為亞臨床。母犬孕期疫苗接種可有效保護幼犬。
+
+guidelineRefs:
+  - sourceOrg: Theriogenology
+    title: "Canine herpesvirus: review of pathogenesis and management"
+    url: https://pubmed.ncbi.nlm.nih.gov/17559935/
+    type: consensus
+    pmid: "17559935"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Canine herpesvirus infection in puppies: clinical and diagnostic aspects"
+    url: https://pubmed.ncbi.nlm.nih.gov/16734091/
+    type: consensus
+    pmid: "16734091"
+pubmedQueries:
+  - query: '"canine herpesvirus" AND ("neonatal" OR "puppy") AND ("treatment" OR "prevention")'
+    frequency: monthly

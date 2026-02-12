@@ -1,0 +1,107 @@
+slug: nocardiosis
+nameEn: Nocardiosis
+nameZh: 諾卡菌症
+bodySystem: infectious
+description: 諾卡菌症是由諾卡菌屬（Nocardia spp.）引起的慢性化膿性至肉芽腫性感染。此菌為環境中的腐生性放線菌，經吸入、皮膚傷口或攝入進入體內。好發於免疫功能低下的犬貓。常見表現為胸腔積膿、皮下膿瘍與瀰漫性感染。
+
+aliases:
+  - { alias: 諾卡氏菌症, language: zh }
+  - { alias: 奴卡菌症, language: zh }
+  - { alias: Nocardia Infection, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬隻感染較貓常見。幼犬與免疫抑制犬隻（使用免疫抑制藥物或淋巴瘤等）風險增高。大型犬品種可能較好發。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓隻感染可見但少於犬隻。FIV 或 FeLV 感染的免疫抑制貓風險增加。
+
+etiology:
+  categories:
+    - name: 病原體
+      examples:
+        - Nocardia asteroides complex（最常見）
+        - Nocardia brasiliensis
+        - Nocardia nova
+        - 革蘭氏陽性、部分抗酸染色陽性的分枝狀放線菌
+    - name: 感染途徑
+      examples:
+        - 吸入土壤中的菌體（肺部感染）
+        - 皮膚傷口接觸污染土壤（皮膚感染）
+        - 血行播散至全身（瀰漫性感染）
+    - name: 易感因素
+      examples:
+        - 免疫抑制狀態（藥物性或疾病性）
+        - 幼年動物免疫發育不全
+        - FIV/FeLV 感染（貓）
+        - 長期使用糖皮質類固醇或環孢素
+
+clinicalSigns:
+  early:
+    - 咳嗽與呼吸困難（肺部型）
+    - 皮膚或皮下腫脹，伴有排膿竇道（皮膚型）
+    - 發燒
+    - 嗜睡與食慾下降
+  progressive:
+    - 胸腔積膿（化膿性胸膜炎）
+    - 膿瘍擴大伴有竇道形成
+    - 體重減輕
+    - 淋巴結腫大
+  late:
+    - 瀰漫性感染（腦、腎、肝、骨骼）
+    - 嚴重消瘦
+    - 呼吸衰竭
+    - 中樞神經系統症狀（腦膿瘍）
+    - 敗血症
+
+diagnosis:
+  primaryTests:
+    - name: 細菌培養
+      notes: "確診方法。膿液、胸腔積液或組織培養。需告知實驗室懷疑 Nocardia，因需延長培養時間（7-14 天）並使用特殊培養基。"
+    - name: 細胞學檢查
+      notes: "膿液抹片可見化膿性發炎。革蘭氏染色可見分枝狀革蘭氏陽性桿菌。改良抗酸染色（modified acid-fast）部分陽性。"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "胸腔積液（常為單側或雙側積膿）。肺部結節或浸潤影。縱隔淋巴結腫大。"
+    - name: 腹部超音波
+      notes: "評估肝腎膿瘍。腹腔淋巴結腫大。瀰漫性感染評估。"
+  additional:
+    - 藥物敏感性測試（Nocardia 對抗生素敏感性變異大）
+    - 胸腔積液分析（化膿性，蛋白質高，細胞計數高）
+    - 組織病理學（化膿性至肉芽腫性發炎）
+    - FIV/FeLV 篩檢（貓）
+
+treatment:
+  principles:
+    - 長期抗生素治療（數月至終身）
+    - 根據藥敏結果選擇抗生素
+    - 膿瘍引流與胸腔沖洗
+    - 治療潛在免疫抑制狀態
+  general:
+    - "Trimethoprim-Sulfonamide (TMS) 15 mg/kg PO q12h（一線藥物，治療 3-6 月以上）"
+    - "替代方案：Amikacin 15 mg/kg IV/IM q24h + Imipenem 5-10 mg/kg IV q6-8h（嚴重病例）"
+    - "Minocycline 10 mg/kg PO q12h（替代或合併用藥）"
+    - "胸腔積膿：胸管引流 + 胸腔沖洗（溫生理食鹽水）"
+    - "皮下膿瘍：外科清創與引流"
+    - "停藥前需影像學確認感染消退，建議臨床改善後再治療至少 1-2 月"
+    - "避免或減量免疫抑制藥物（如可能）"
+
+prognosis: 預後謹慎至不良。皮膚型局部感染經長期 TMS 治療預後最佳。胸腔型經積極引流與抗生素治療約 50-60% 可緩解。瀰漫性或中樞神經系統型預後不良。免疫抑制動物預後較差。治療時間長（通常 3-6 月以上），過早停藥復發率高。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Nocardiosis in dogs and cats: clinical findings and outcome"
+    url: https://pubmed.ncbi.nlm.nih.gov/16734091/
+    type: consensus
+    pmid: "16734091"
+  - sourceOrg: Veterinary Microbiology
+    title: "Nocardia infections in companion animals: review"
+    url: https://pubmed.ncbi.nlm.nih.gov/18242872/
+    type: consensus
+    pmid: "18242872"
+pubmedQueries:
+  - query: '"nocardiosis" AND (dog OR cat) AND ("treatment" OR "diagnosis")'
+    frequency: monthly

@@ -13,20 +13,7 @@ interface SearchResult {
   matchHighlight?: string;
 }
 
-const BODY_SYSTEM_LABELS: Record<string, string> = {
-  renal: "腎臟",
-  cardiac: "心臟",
-  endocrine: "內分泌",
-  gastrointestinal: "腸胃",
-  hematology: "血液",
-  dermatology: "皮膚",
-  neurology: "神經",
-  respiratory: "呼吸",
-  orthopedic: "骨科",
-  ophthalmology: "眼科",
-  infectious: "傳染病",
-  oncology: "腫瘤",
-};
+import { BODY_SYSTEM_LABELS } from "@/lib/constants";
 
 export default function SearchBar({ autoFocus = false }: { autoFocus?: boolean }) {
   const [query, setQuery] = useState("");

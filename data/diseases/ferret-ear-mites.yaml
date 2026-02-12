@@ -1,0 +1,108 @@
+slug: ferret-ear-mites
+nameEn: Ferret Ear Mites
+nameZh: 雪貂耳蟎
+bodySystem: ear
+description: 雪貂感染耳疥蟎 (Otodectes cynotis) 引起的外耳道寄生蟲疾病，為雪貂最常見的耳道疾病，表現為深褐色蠟質耳垢與搔耳，可透過直接接觸傳播。
+
+aliases:
+  - { alias: 雪貂耳疥蟎, language: zh }
+  - { alias: 雪貂耳道蟎蟲, language: zh }
+  - { alias: Ferret otodectic mange, language: en }
+  - { alias: Otodectes cynotis in ferrets, language: en }
+  - { alias: Ferret ear canker, language: en }
+
+species:
+  - speciesCommon: ferret
+    speciesScientific: Mustela putorius furo
+    prevalence: very common
+    notes: 雪貂最常見的耳道疾病。寵物店來源雪貂盛行率極高。與犬貓相同的 Otodectes cynotis。可傳播給同居犬貓。部分雪貂為無症狀帶原。生活史約 3 週。
+
+etiology:
+  categories:
+    - name: 寄生蟲性
+      examples:
+        - Otodectes cynotis (耳疥蟎)
+        - 寄生於外耳道皮膚表面
+        - 以耳道組織液與碎屑為食
+        - 直接接觸傳播 (高度傳染)
+    - name: 風險因素
+      examples:
+        - 寵物店或繁殖場來源
+        - 與感染動物同居 (犬、貓、雪貂)
+        - 多貂家庭
+        - 未定期耳道檢查
+
+clinicalSigns:
+  early:
+    - 深褐色至黑色蠟質耳垢蓄積
+    - 偶爾搔耳
+    - 偶爾搖頭
+    - 耳道輕度紅腫
+  progressive:
+    - 大量深褐色碎屑狀耳垢
+    - 頻繁搔耳與搖頭
+    - 耳道紅腫明顯
+    - 耳後搔抓傷
+    - 不適感增加
+  late:
+    - 繼發性細菌或酵母菌感染
+    - 耳道潰瘍
+    - 中耳炎 (鼓膜破裂時)
+    - 前庭症狀 (歪頭、旋轉，中內耳受累)
+    - 耳血腫 (過度搔抓)
+
+diagnosis:
+  primaryTests:
+    - name: 耳鏡檢查
+      notes: "直接觀察耳道內白色移動蟎蟲。深褐色碎屑狀耳垢。耳道充血程度評估"
+    - name: 耳垢鏡檢
+      notes: "耳垢置於載玻片加礦物油，低倍鏡下觀察。可見成蟲 (約 0.4 mm)、若蟲與蟲卵。確診率高"
+  imaging:
+    - name: 不適用 (常規情況)
+      notes: "僅懷疑中耳炎時進行鼓室泡 X 光或 CT"
+  additional:
+    - 耳垢細胞學 (排除繼發酵母菌或細菌感染)
+    - 鼓膜完整性評估 (使用滴耳劑前)
+    - 同居動物檢查 (傳染源調查)
+
+treatment:
+  principles:
+    - 耳道清潔 + 驅蟎藥物
+    - 所有同居動物同時治療
+    - 治療時間須覆蓋完整生活史 (≥3 週)
+    - 環境清潔輔助
+  medications:
+    - name: Selamectin (Revolution)
+      dose: "15-30 mg/kg 局部點滴 (肩胛間皮膚)，每月一次，連續 2-3 個月"
+      notes: 最方便的治療方式。全身性驅蟎。同時預防跳蚤與心絲蟲。幼貂安全
+    - name: Ivermectin
+      dose: "0.2-0.4 mg/kg SC 或 PO，每 14 天，連續 3 次"
+      notes: 效果良好。需重複治療殺滅孵化後的若蟲。避免懷孕雪貂使用
+    - name: 耳用 Thiabendazole/Tresaderm
+      dose: "每耳 3-5 滴 SID，連續 7-10 天"
+      notes: 局部驅蟎 + 抗菌消炎。需先清潔耳道。確認鼓膜完整
+  general:
+    - 耳道溫和清潔 (耳清潔液浸泡 + 棉花擦拭)
+    - 避免使用棉花棒深入耳道
+    - 所有同居犬貓雪貂同時治療 (即使無症狀)
+    - 環境清潔 (床鋪、毯子清洗)
+    - 完成全程治療 (避免提早停藥復發)
+    - 2-4 週後回診確認治癒 (耳垢鏡檢)
+
+prognosis: 預後優良。適當治療後治癒率接近 100%。未同時治療同居動物易反覆感染。繼發性中耳炎治療較複雜但仍可控制。耳蟎不會自行消退但對驅蟎藥物反應良好。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Dermatologic Diseases of Ferrets"
+    url: https://pubmed.ncbi.nlm.nih.gov/23642862/
+    type: review
+    pmid: "23642862"
+  - sourceOrg: Compendium on Continuing Education for the Practicing Veterinarian
+    title: "Ear mite treatment in ferrets and other small mammals"
+    url: https://pubmed.ncbi.nlm.nih.gov/16596281/
+    type: review
+    pmid: "16596281"
+
+pubmedQueries:
+  - query: '"ferret" AND ("ear mite" OR "Otodectes" OR "otitis") AND ("treatment" OR "diagnosis")'
+    frequency: monthly

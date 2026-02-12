@@ -1,0 +1,113 @@
+slug: mycoplasma-haemofelis
+nameEn: Mycoplasma haemofelis Infection
+nameZh: 貓血黴漿菌感染
+bodySystem: infectious
+description: 貓血黴漿菌（Mycoplasma haemofelis）是貓最具致病性的血液寄生性黴漿菌（hemoplasma），寄生於紅血球表面導致免疫介導性溶血性貧血。此病原體過去稱為 Haemobartonella felis。傳播途徑可能包括跳蚤叮咬、打鬥咬傷及垂直傳播。
+
+aliases:
+  - { alias: 貓血巴通症, language: zh }
+  - { alias: 貓傳染性貧血, language: zh }
+  - { alias: 貓嗜血黴漿菌, language: zh }
+  - { alias: Feline Infectious Anemia, language: en }
+  - { alias: Haemobartonellosis, language: en }
+  - { alias: Hemoplasma Infection, language: en }
+
+species:
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 戶外公貓風險最高（打鬥傳播）。FIV 或 FeLV 合併感染可加重病情。三種貓血液黴漿菌中 M. haemofelis 致病性最強。另外兩種為 Candidatus M. haemominutum 和 Candidatus M. turicensis。
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬隻可被 Mycoplasma haemocanis 感染，通常僅在脾切除或免疫抑制犬隻中引起臨床疾病。
+
+etiology:
+  categories:
+    - name: 病原體
+      examples:
+        - Mycoplasma haemofelis（致病性最強）
+        - "Candidatus Mycoplasma haemominutum（較溫和，常為共感染）"
+        - "Candidatus Mycoplasma turicensis（中等致病性）"
+        - 寄生於紅血球表面的無細胞壁細菌
+    - name: 傳播途徑
+      examples:
+        - 跳蚤叮咬（Ctenocephalides felis，推測為主要途徑）
+        - 打鬥咬傷（血液直接接觸）
+        - 輸血傳播
+        - 垂直傳播（母貓至幼貓）
+    - name: 病理機制
+      examples:
+        - 黴漿菌附著紅血球表面損傷紅血球膜
+        - 誘發免疫介導性紅血球破壞（Coombs 陽性溶血）
+        - 脾臟清除受感染紅血球
+        - 寄生蟲血症呈週期性波動
+
+clinicalSigns:
+  early:
+    - 輕度嗜睡
+    - 食慾輕度下降
+    - 可能無明顯症狀（帶蟲者）
+  progressive:
+    - 黏膜蒼白（貧血）
+    - 嗜睡加重
+    - 心搏過速
+    - 呼吸急促
+    - 體重減輕
+    - 發燒
+  late:
+    - 嚴重貧血（PCV < 15%）
+    - 黃疸（溶血性）
+    - 脾腫大
+    - 虛脫
+    - 死亡（嚴重未治療者）
+
+diagnosis:
+  primaryTests:
+    - name: PCR 檢測
+      notes: "血液 PCR 為確診金標準。可區分三種貓 hemoplasma。敏感性與特異性高。寄生蟲血症波動時可能出現偽陰性。"
+    - name: 血液抹片
+      notes: "薄膜抹片可見紅血球表面的小球狀或環狀嗜鹼性結構。敏感性低（約 50%）。EDTA 抗凝血可能導致脫落形成假陰性。Acridine orange 染色可提高敏感性。"
+  imaging:
+    - name: 腹部超音波
+      notes: "脾腫大。肝腫大。評估其他合併症。"
+    - name: 無特定影像檢查
+      notes: "影像學不用於確診，主要用於評估合併症。"
+  additional:
+    - 血液學（再生性貧血、網織紅血球增多、自動凝集試驗陽性）
+    - Coombs 試驗（可能陽性）
+    - FIV/FeLV 篩檢（合併感染評估）
+    - 血液生化（膽紅素升高）
+    - 血型鑑定與交叉配血（輸血前）
+
+treatment:
+  principles:
+    - 抗生素治療清除或降低寄生蟲血症
+    - 支持性治療（輸血、營養）
+    - 治療合併感染（FIV/FeLV）
+    - 可能無法完全清除感染（帶蟲者）
+  general:
+    - "Doxycycline 5 mg/kg PO q12h x 28 天（一線藥物）"
+    - "替代方案：Marbofloxacin 2 mg/kg PO q24h x 14-28 天"
+    - "嚴重貧血（PCV < 12-15%）：輸血（packed RBC 或全血）"
+    - "免疫介導性溶血嚴重時短期使用：Prednisolone 1-2 mg/kg PO q12h x 7-14 天後逐漸減量"
+    - "營養支持：食慾不振時使用食慾刺激劑（Mirtazapine 1.88 mg PO q48h）"
+    - "跳蚤防治：Selamectin 或 Fluralaner 等定期使用"
+    - "FIV/FeLV 陽性者需同時管理"
+
+prognosis: 免疫功能正常的貓經 doxycycline 治療後預後良好，多數在 1-2 週內 PCV 顯著改善。嚴重貧血需輸血者預後仍可接受。FIV/FeLV 合併感染者預後較差。治療後可能成為慢性帶蟲者，壓力或免疫抑制時可能復發。未合併免疫抑制疾病者長期預後良好。
+
+guidelineRefs:
+  - sourceOrg: Journal of Feline Medicine and Surgery
+    title: "ABCD guidelines on hemoplasma infections in cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/19481039/
+    type: consensus
+    pmid: "19481039"
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Treatment of hemoplasma infections in cats: comparative efficacy"
+    url: https://pubmed.ncbi.nlm.nih.gov/18179565/
+    type: consensus
+    pmid: "18179565"
+pubmedQueries:
+  - query: '"Mycoplasma haemofelis" AND (cat OR feline) AND ("treatment" OR "PCR")'
+    frequency: monthly

@@ -1,0 +1,122 @@
+slug: ferret-hyperestrogen
+nameEn: Ferret Hyperestrogenism
+nameZh: 雪貂高雌激素血症
+bodySystem: endocrine
+description: 未絕育雌性雪貂因持續發情導致雌激素過度分泌，引起致命性骨髓抑制 (再生不良性貧血)，為未絕育雌貂最嚴重的生殖相關急症，致死率極高。
+
+aliases:
+  - { alias: 雪貂雌激素中毒, language: zh }
+  - { alias: 雪貂持續發情, language: zh }
+  - { alias: 雪貂再生不良性貧血, language: zh }
+  - { alias: Ferret estrogen toxicosis, language: en }
+  - { alias: Ferret persistent estrus, language: en }
+  - { alias: Estrogen-induced aplastic anemia, language: en }
+  - { alias: Ferret prolonged estrus, language: en }
+
+species:
+  - speciesCommon: ferret
+    speciesScientific: Mustela putorius furo
+    prevalence: common
+    notes: 未絕育雌貂特有問題。雪貂為誘發排卵動物，未交配或未絕育將持續發情。持續發情 >1 個月即有骨髓抑制風險。致死率若不治療近 100%。腎上腺殘餘組織也可能在絕育後引起。
+
+etiology:
+  categories:
+    - name: 內分泌
+      examples:
+        - 持續高雌激素血症 (未交配的持續發情)
+        - 雌激素直接毒性作用於骨髓
+        - 雌激素抑制骨髓造血幹細胞
+        - 腎上腺殘餘組織分泌雌激素 (絕育後)
+    - name: 風險因素
+      examples:
+        - 未絕育雌性雪貂
+        - 持續發情 >1 個月
+        - 單獨飼養無交配對象
+        - 腎上腺疾病 (絕育後雌激素來源)
+
+clinicalSigns:
+  early:
+    - 外陰腫脹 (持續不消退)
+    - 對稱性脫毛 (尾基部開始)
+    - 輕度嗜睡
+    - 黏膜偏蒼白
+  progressive:
+    - 外陰持續腫脹甚至出血
+    - 廣泛脫毛 (腹部、側腹)
+    - 明顯貧血 (黏膜蒼白)
+    - 嗜睡加重
+    - 瘀斑或點狀出血 (血小板減少)
+    - 食慾下降
+  late:
+    - 嚴重再生不良性貧血 (PCV <20%)
+    - 全血球減少 (白血球、紅血球、血小板均下降)
+    - 自發性出血 (消化道出血、鼻出血、皮下出血)
+    - 繼發性感染 (嗜中性球減少)
+    - 敗血症
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: CBC
+      notes: "貧血 (PCV <25%)。非再生性貧血 (網織紅球低)。血小板減少。白血球減少或全血球減少。PCV <15% 預後極差"
+    - name: 理學檢查
+      notes: "外陰腫脹 (持續發情徵象)。黏膜蒼白。瘀斑或出血點。脫毛"
+    - name: 血清雌二醇 (Estradiol)
+      notes: "升高確認高雌激素血症。正常發情期短暫升高，持續升高有意義"
+  imaging:
+    - name: 腹部超音波
+      notes: "卵巢與子宮評估。腎上腺評估 (排除腎上腺來源)。脾臟評估"
+  additional:
+    - 骨髓穿刺 (嚴重病例：造血細胞減少、脂肪替代)
+    - 凝血功能 (出血傾向評估)
+    - 生化 (腎肝功能)
+
+treatment:
+  principles:
+    - 緊急終止雌激素來源 (手術或藥物)
+    - PCV >25% 時立即卵巢子宮切除術
+    - PCV <25% 時先穩定再手術
+    - 嚴重貧血需輸血
+    - 預防永遠優於治療 (絕育或化學絕育)
+  medications:
+    - name: hCG (Human chorionic gonadotropin)
+      dose: "100 IU IM，可 7-14 天後重複一次"
+      notes: 誘發排卵終止發情。PCV 過低無法立即手術時暫時處理。效果需數天
+    - name: GnRH agonist (Deslorelin implant)
+      dose: "4.7 mg SC 植入"
+      notes: 化學絕育。可作為長期替代手術方案。效果持續 1.5-3 年。植入後初期可能短暫發情加劇
+    - name: 全血輸血
+      dose: "供血貂 6-12 mL，直接輸血"
+      notes: PCV <15% 時必要。健康雄貂為理想供血者。交叉配型 (雪貂無明確血型但首次輸血通常安全)
+    - name: Epoetin alfa (EPO)
+      dose: "50-150 IU/kg SC，每 48 小時"
+      notes: 刺激紅血球生成。效果需 2-3 週。可能產生抗體。嚴重再生不良骨髓可能無反應
+    - name: Dexamethasone
+      dose: "0.5-2 mg/kg IM/IV"
+      notes: 刺激骨髓造血 (爭議)。嚴重血球減少時輔助使用
+  general:
+    - PCV >25%：儘快卵巢子宮切除術
+    - PCV 15-25%：hCG 誘發排卵 + 穩定後手術
+    - PCV <15%：輸血 + 穩定 + 待恢復後手術
+    - 術後持續監測 CBC (骨髓恢復需 3-6 週)
+    - 無菌護理 (嗜中性球減少時感染風險高)
+    - 避免注射與外傷 (血小板減少時出血風險)
+    - 預防：6-8 月齡前絕育或植入 deslorelin
+
+prognosis: PCV >25% 時手術後預後良好。PCV 15-25% 預後謹慎至良好 (需積極穩定)。PCV <15% 預後差 (骨髓可能已不可逆損傷，即使手術存活率低)。骨髓恢復需 3-6 週，期間仍有感染與出血風險。及早絕育 (6-8 月齡) 可完全預防此病。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Reproductive Diseases of Ferrets"
+    url: https://pubmed.ncbi.nlm.nih.gov/28314472/
+    type: review
+    pmid: "28314472"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Estrogen-induced bone marrow toxicosis in ferrets"
+    url: https://pubmed.ncbi.nlm.nih.gov/3558053/
+    type: review
+    pmid: "3558053"
+
+pubmedQueries:
+  - query: '"ferret" AND ("hyperestrogenism" OR "estrogen toxicosis" OR "aplastic anemia" OR "persistent estrus")'
+    frequency: monthly

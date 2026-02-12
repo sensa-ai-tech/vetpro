@@ -1,0 +1,98 @@
+slug: rabbit-thymoma
+nameEn: Rabbit Thymoma
+nameZh: 兔胸腺瘤
+bodySystem: oncology
+description: 兔胸腺組織腫瘤，為家兔最常見的前縱膈腫瘤。多為良性或低度惡性，但因佔據胸腔空間壓迫肺臟與大血管而導致嚴重臨床症狀。突眼症 (exophthalmos) 為兔胸腺瘤特徵性表現。
+
+aliases:
+  - { alias: 兔胸腺腫瘤, language: zh }
+  - { alias: 兔前縱膈腫瘤, language: zh }
+  - { alias: Rabbit Thymic Neoplasia, language: en }
+  - { alias: Cranial Mediastinal Mass, language: en }
+
+species:
+  - speciesCommon: rabbit
+    speciesScientific: Oryctolagus cuniculus
+    prevalence: uncommon
+    notes: 家兔最常見的胸腔腫瘤。好發中老年兔 (>4 歲)。兔胸腺不像其他哺乳動物隨年齡完全退化，保留至成年。突眼症為兔特有表現，其他動物罕見。
+
+etiology:
+  categories:
+    - name: 腫瘤性
+      examples:
+        - 胸腺上皮細胞腫瘤
+        - 多數為良性或低度惡性
+        - 兔胸腺終生不完全退化（與其他哺乳動物不同）
+        - 偶見胸腺淋巴瘤
+    - name: 風險因素
+      examples:
+        - 年齡增長 (>4 歲)
+        - 品種易感性尚不明確
+
+clinicalSigns:
+  early:
+    - 雙側突眼 (exophthalmos)——兔胸腺瘤最特徵性表現
+    - 第三眼瞼脫垂
+    - 輕度呼吸加速
+  progressive:
+    - 呼吸困難 (dyspnea)
+    - 運動不耐
+    - 食慾下降
+    - 突眼加重
+    - 眼分泌物增加
+  late:
+    - 嚴重呼吸困難（張口呼吸）
+    - 上腔靜脈症候群（頭頸部水腫）
+    - 胸腔積液
+    - 皮膚增厚/脫毛（副腫瘤症候群——非搔癢性對稱脫毛）
+    - 惡病質
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔 X 光
+      notes: "前縱膈腫塊，心影前方不透射性增加。側位片可見氣管背側偏移。可合併胸腔積液"
+    - name: 胸腔超音波
+      notes: "評估腫塊大小、質地、血流。超音波導引下細針抽吸 (FNA)"
+  imaging:
+    - name: CT 掃描
+      notes: "精確評估腫塊範圍、與心臟大血管關係、手術可行性評估"
+  additional:
+    - 細針抽吸細胞學 (FNA)（超音波導引——可能見到混合淋巴球與上皮細胞）
+    - CBC（可能淋巴球升高或正常）
+    - 生化（高鈣血症偶見——副腫瘤症候群）
+    - 胸腔積液分析（滲出液或改良型滲出液）
+    - 眼科檢查（突眼程度、角膜潰瘍風險評估）
+
+treatment:
+  principles:
+    - 手術切除為首選治療（若可行）
+    - 放射線治療可能有效（取得困難）
+    - 類固醇可暫時縮小腫塊（淋巴球成分減少）
+    - 不手術時預後數月至 1-2 年
+  general:
+    - "手術切除：正中胸骨切開術 (median sternotomy) 摘除胸腺瘤（需有胸腔手術經驗）"
+    - "術前穩定：胸腔積液引流（大量積液時）"
+    - "內科管理（無法手術時）：Prednisolone 1-2 mg/kg PO SID，逐漸減量"
+    - "注意：兔長期類固醇風險高（免疫抑制、肝脂肪變性、GI stasis）"
+    - "突眼護理：人工淚液保護角膜、防乾燥與潰瘍"
+    - "止痛：Meloxicam 0.3-0.5 mg/kg PO SID"
+    - "呼吸困難管理：氧氣支持"
+    - "放射線治療（極少數可取得的醫療機構）"
+
+prognosis: 手術完全切除預後良好，多數為良性，術後存活數年。無法手術時類固醇可暫時控制症狀，但腫塊通常會再次生長，平均存活 6-18 個月。手術風險取決於腫塊大小與心血管侵犯程度。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Thymoma in rabbits"
+    url: https://pubmed.ncbi.nlm.nih.gov/19962776/
+    type: review
+    pmid: "19962776"
+  - sourceOrg: Journal of Exotic Pet Medicine
+    title: "Neoplasia in rabbits"
+    url: https://pubmed.ncbi.nlm.nih.gov/28340816/
+    type: review
+    pmid: "28340816"
+
+pubmedQueries:
+  - query: '"thymoma" AND rabbit AND ("treatment" OR "surgery" OR "exophthalmos")'
+    frequency: monthly

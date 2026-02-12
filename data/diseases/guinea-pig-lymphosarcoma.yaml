@@ -1,0 +1,103 @@
+slug: guinea-pig-lymphosarcoma
+nameEn: Guinea Pig Lymphosarcoma
+nameZh: 天竺鼠淋巴肉瘤
+bodySystem: oncology
+description: 天竺鼠最常見的惡性腫瘤之一，表現為淋巴結腫大、脾臟/肝臟腫大或皮膚腫塊。可分為多中心型、消化道型、胸腺型及皮膚型。好發中老年天竺鼠 (>3 歲)，可能與逆轉錄病毒有關。
+
+aliases:
+  - { alias: 天竺鼠淋巴瘤, language: zh }
+  - { alias: 天竺鼠惡性淋巴瘤, language: zh }
+  - { alias: Guinea Pig Lymphoma, language: en }
+  - { alias: Lymphosarcoma, language: en }
+
+species:
+  - speciesCommon: guinea pig
+    speciesScientific: Cavia porcellus
+    prevalence: uncommon
+    notes: 天竺鼠最常見的造血系統腫瘤。好發 3-6 歲。部分品系發生率較高，可能與 Guinea Pig Leukemia Virus (GPLV) 相關。T 細胞型與 B 細胞型均有報告。
+
+etiology:
+  categories:
+    - name: 腫瘤性
+      examples:
+        - 淋巴球惡性增殖
+        - 可能與逆轉錄病毒 (GPLV) 相關
+        - T 細胞型或 B 細胞型
+        - 多中心型最常見
+    - name: 風險因素
+      examples:
+        - 年齡增長 (>3 歲)
+        - 遺傳/品系易感性
+        - 病毒因素（GPLV 研究中）
+
+clinicalSigns:
+  early:
+    - 周邊淋巴結腫大（頸部、腋窩、鼠蹊部——可觸診）
+    - 輕微食慾下降
+    - 活動量減少
+  progressive:
+    - 多處淋巴結進行性腫大
+    - 體重減輕
+    - 腹部膨脹（脾臟/肝臟腫大）
+    - 被毛粗糙
+    - 嗜睡
+  late:
+    - 嚴重消瘦
+    - 呼吸困難（胸腔型/縱膈淋巴結壓迫）
+    - 貧血（骨髓浸潤）
+    - 白血球異常（白血病期——淋巴球計數顯著升高）
+    - 皮膚腫塊（皮膚型）
+    - 多器官衰竭
+
+diagnosis:
+  primaryTests:
+    - name: 淋巴結細針抽吸 (FNA) 細胞學
+      notes: "腫大淋巴結 FNA 可見均質單型淋巴球群。快速且微創的初步診斷方法"
+    - name: CBC
+      notes: "淋巴球計數升高（白血病期可 >20,000/μL）。貧血（骨髓浸潤）。血小板減少"
+  imaging:
+    - name: 腹部超音波
+      notes: "脾臟/肝臟腫大與浸潤。腹腔淋巴結腫大。腹水"
+    - name: 胸腔 X 光
+      notes: "前縱膈腫塊、胸腔積液、肺浸潤"
+  additional:
+    - 組織病理學（淋巴結生檢——確診與分型金標準）
+    - 免疫組織化學（T cell vs B cell 分型）
+    - 生化（肝腎功能、LDH、鈣——高鈣血症偶見）
+    - 骨髓抽吸（白血病分期）
+    - 全身 X 光（分期評估）
+
+treatment:
+  principles:
+    - 天竺鼠淋巴瘤化療反應差於犬貓
+    - 化療方案報告有限
+    - 支持性療法與生活品質維護
+    - 預後普遍不良
+  general:
+    - "化療嘗試：Prednisolone 1-2 mg/kg PO SID（部分病例可暫時緩解）"
+    - "化療方案（報告有限）：Chlorambucil 0.2 mg/kg PO EOD + Prednisolone"
+    - "L-asparaginase 10,000 IU/m² IP 單次（誘導階段——使用經驗有限）"
+    - "止痛：Meloxicam 0.3-0.5 mg/kg PO SID"
+    - "營養支持：高品質飲食、灌食（厭食時）"
+    - "維生素 C 補充：50-100 mg/天"
+    - "皮下輸液（脫水時）：50-100 mL/kg/day SC"
+    - "胸腔積液引流（呼吸困難時）"
+    - "生活品質評估：定期評估疼痛、進食、活動——必要時討論安樂死"
+
+prognosis: 天竺鼠淋巴肉瘤預後不良。未治療平均存活時間 2-5 週。化療反應有限，可能延長存活但效果不如犬貓。Prednisolone 單獨使用可暫時改善 1-3 個月。治療目標以生活品質維護為主。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Neoplasia in guinea pigs"
+    url: https://pubmed.ncbi.nlm.nih.gov/28340816/
+    type: review
+    pmid: "28340816"
+  - sourceOrg: Veterinary Pathology
+    title: "Lymphosarcoma in guinea pigs"
+    url: https://pubmed.ncbi.nlm.nih.gov/19261640/
+    type: review
+    pmid: "19261640"
+
+pubmedQueries:
+  - query: '"lymphosarcoma" OR "lymphoma" AND "guinea pig" AND ("treatment" OR "prognosis")'
+    frequency: monthly

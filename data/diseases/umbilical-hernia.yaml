@@ -1,0 +1,92 @@
+slug: umbilical-hernia
+nameEn: Umbilical Hernia
+nameZh: 臍疝
+bodySystem: other
+description: 臍疝是犬貓最常見的先天性腹壁缺損，因出生後臍環未能完全閉合，導致腹腔內容物（通常為腹腔脂肪或大網膜）從臍部突出至皮下。多數臍疝為小型且臨床上無顯著意義，但大型臍疝可能有腸管嵌頓風險。
+
+aliases:
+  - { alias: 臍疝氣, language: zh }
+  - { alias: 肚臍疝, language: zh }
+  - { alias: Umbilical Hernia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬隻最常見的先天性疝。好發品種包括英國鬥牛犬、吉娃娃、貴賓犬、巴吉度犬及北京犬。遺傳因素明確。多數小型臍疝無臨床意義。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 貓隻臍疝較犬少見。通常小型且無臨床意義。
+
+etiology:
+  categories:
+    - name: 先天性
+      examples:
+        - 臍環出生後未能完全閉合
+        - 遺傳因素（多基因遺傳）
+        - 品種好發傾向
+    - name: 後天性因素
+      examples:
+        - 過度拉扯臍帶可能增加風險
+        - 臍帶處理不當
+    - name: 分類
+      examples:
+        - 可縮復性（reducible）：內容物可推回腹腔
+        - 不可縮復性（irreducible）：內容物無法推回（黏連或嵌頓）
+        - 小型（< 1 cm 缺損）至大型（> 3 cm 缺損）
+
+clinicalSigns:
+  early:
+    - 臍部可見或可觸摸到軟性圓形突起
+    - 通常可縮復
+    - 無疼痛
+    - 多在幼犬/幼貓健檢時發現
+  progressive:
+    - 腫脹隨腹壓增加而增大
+    - 部分小型臍疝可能在 3-6 月齡前自行閉合
+    - 大型疝可能逐漸增大
+  late:
+    - 腸管嵌頓（罕見但可能危及生命）：突然腫脹變硬、疼痛、嘔吐
+    - 嵌頓器官缺血壞死
+    - 腹膜炎（腸壞死穿孔時）
+
+diagnosis:
+  primaryTests:
+    - name: 體格檢查
+      notes: "臍部可觸及軟性突起。評估大小（缺損直徑）與可縮復性。站立位觸診最佳。"
+    - name: 腹部超音波
+      notes: "確認疝出內容物（脂肪、大網膜、腸管）。評估是否有嵌頓或腸管血流異常。"
+  imaging:
+    - name: 腹部 X 光
+      notes: "通常不需要。大型疝或懷疑腸嵌頓時可見臍部區域含氣腸管。"
+    - name: 無其他特殊影像
+      notes: "體格檢查與超音波即可確診。"
+  additional:
+    - 嵌頓時：血液學與生化（評估器官功能與感染）
+
+treatment:
+  principles:
+    - 小型臍疝（< 1 cm）可能自行閉合，可觀察至 6 月齡
+    - 較大或持續未閉合的臍疝需手術修復
+    - 常於絕育手術時同時修復
+    - 嵌頓性臍疝為急診
+  general:
+    - "小型臍疝（< 1 cm）：觀察至 6 月齡，可能自行閉合"
+    - "手術修復：臍環缺損直接縫合（herniorrhaphy），通常與絕育手術同時進行"
+    - "大型缺損：可能需要網狀補片（mesh）修補"
+    - "嵌頓性臍疝：緊急手術。評估嵌頓器官存活度，壞死組織切除"
+    - "術後：限制活動 10-14 天"
+    - "術後疼痛管理通常僅需術後 NSAIDs"
+
+prognosis: 預後極佳。擇期手術修復簡單且成功率 > 99%。小型臍疝（< 1 cm）約 50% 可在 6 月齡前自行閉合。嵌頓性臍疝若即時手術預後良好。復發率極低。受影響動物建議不繁殖以減少遺傳傳遞。
+
+guidelineRefs:
+  - sourceOrg: Journal of Small Animal Practice
+    title: "Umbilical hernias in dogs: prevalence and management"
+    url: https://pubmed.ncbi.nlm.nih.gov/14510846/
+    type: consensus
+    pmid: "14510846"
+pubmedQueries:
+  - query: '"umbilical hernia" AND (dog OR canine) AND ("surgery" OR "prevalence")'
+    frequency: monthly

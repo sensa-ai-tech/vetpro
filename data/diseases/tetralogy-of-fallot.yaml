@@ -1,0 +1,103 @@
+slug: tetralogy-of-fallot
+nameEn: Tetralogy of Fallot
+nameZh: 法洛四聯症
+bodySystem: cardiac
+description: 法洛四聯症是一種複雜的先天性心臟缺陷，包含四種解剖異常：肺動脈狹窄、心室中隔缺損（VSD）、主動脈騎跨與右心室肥厚。此病為犬最常見的發紺型先天性心臟病，因右向左分流導致全身性低血氧。
+
+aliases:
+  - { alias: TOF, language: en }
+  - { alias: 法洛氏四合症, language: zh }
+  - { alias: 紫紺型先天性心臟病, language: zh }
+  - { alias: Fallot's Tetralogy, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬最常見的發紺型先天性心臟病。好發品種包括英國鬥牛犬、吉娃娃、貴賓犬及基乎獵犬。呈家族遺傳傾向。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓隻極為罕見，偶有個案報告。
+
+etiology:
+  categories:
+    - name: 胚胎學病因
+      examples:
+        - 圓錐動脈幹中隔發育異常，導致不均等分隔
+        - 胚胎期心臟流出道分隔偏移
+    - name: 四大解剖異常
+      examples:
+        - 肺動脈狹窄（右心室流出道阻塞）
+        - 心室中隔缺損（VSD，通常為膜周型）
+        - 主動脈騎跨（overriding aorta）
+        - 右心室同心性肥厚（繼發於壓力過負荷）
+    - name: 遺傳因素
+      examples:
+        - 多基因遺傳模式
+        - 英國鬥牛犬中遺傳傾向最為明確
+
+clinicalSigns:
+  early:
+    - 幼犬體型較同窩小
+    - 可聞及心雜音（收縮期雜音，左心基底部）
+    - 運動耐受力下降
+  progressive:
+    - 發紺（黏膜呈藍紫色，尤其舌頭及牙齦）
+    - 繼發性紅血球增多症
+    - 運動後暈厥
+    - 呼吸急促
+  late:
+    - 嚴重紅血球增多症（PCV > 65%）導致血液高黏度
+    - 血栓栓塞併發症
+    - 右心衰竭
+    - 猝死
+
+diagnosis:
+  primaryTests:
+    - name: 心臟超音波（Echocardiography）
+      notes: "確診金標準。可見 VSD、主動脈騎跨、右心室流出道/肺動脈狹窄、右心室壁增厚。都卜勒可評估分流方向及肺動脈流速。"
+    - name: 血液學檢查
+      notes: "繼發性紅血球增多症（PCV 升高，常 > 60%）。血液黏度增加。"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "右心室擴大，心臟呈反 D 字形。肺血管充盈度降低。肺動脈主幹可能狹窄。"
+    - name: 心電圖（ECG）
+      notes: "右心室肥厚圖形（右軸偏移、深 S 波於 leads I/II/III）。可能出現心室性心律不整。"
+  additional:
+    - 脈搏血氧飽和度測量（SpO2 通常 < 90%）
+    - 動脈血氣分析（低 PaO2）
+    - 心導管檢查或 CT 血管造影（術前評估）
+
+treatment:
+  principles:
+    - 內科治療為姑息性，無法矯正解剖缺陷
+    - 控制紅血球增多症以降低血栓風險
+    - 手術矯正或姑息性手術可顯著改善預後
+    - 避免增加右向左分流的因素（脫水、過度興奮）
+  general:
+    - "Hydroxyurea 20-30 mg/kg PO q24h（控制繼發性紅血球增多症，目標 PCV < 62%）"
+    - "定期放血術：移除 10-20 mL/kg 血液並以等量晶體液補充（緊急降低 PCV）"
+    - "Atenolol 0.5-1 mg/kg PO q12h（減緩心率，延長右心室充盈時間）"
+    - "姑息性手術：改良 Blalock-Taussig 分流術（系統-肺動脈吻合增加肺血流）"
+    - "完全矯正手術：需體外循環，費用高且風險大，少數轉介中心可執行"
+    - "避免劇烈運動與高溫環境"
+
+prognosis: 未治療的重度 TOF 預後不良，多數犬隻於 1-3 歲前死亡或安樂死。內科管理可延長生存時間但無法根治。成功執行姑息性分流術後預後可改善，部分犬隻可存活數年。完全矯正手術成功者預後最佳。紅血球增多症的控制程度與預後密切相關。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Tetralogy of Fallot and associated defects in dogs"
+    url: https://pubmed.ncbi.nlm.nih.gov/15595199/
+    type: consensus
+    pmid: "15595199"
+  - sourceOrg: Veterinary Surgery
+    title: "Modified Blalock-Taussig shunt in dogs with tetralogy of Fallot"
+    url: https://pubmed.ncbi.nlm.nih.gov/17894591/
+    type: consensus
+    pmid: "17894591"
+pubmedQueries:
+  - query: '"tetralogy of Fallot" AND (dog OR canine) AND ("surgery" OR "treatment")'
+    frequency: monthly
+  - query: '"tetralogy of Fallot" AND (dog OR canine) AND ("diagnosis" OR "echocardiography")'
+    frequency: monthly

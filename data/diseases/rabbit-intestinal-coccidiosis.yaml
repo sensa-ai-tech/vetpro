@@ -1,0 +1,103 @@
+slug: rabbit-intestinal-coccidiosis
+nameEn: Rabbit Intestinal Coccidiosis
+nameZh: 兔腸球蟲症
+bodySystem: gastrointestinal
+description: 由多種腸道型 Eimeria 屬球蟲引起的兔腸道寄生蟲疾病，幼兔尤其嚴重。可導致腹瀉、脫水、生長遲緩，嚴重時致死。與肝球蟲症 (E. stiedai) 為不同類型。
+
+aliases:
+  - { alias: 兔腸道球蟲病, language: zh }
+  - { alias: 兔艾美球蟲感染, language: zh }
+  - { alias: Rabbit Intestinal Eimeriosis, language: en }
+  - { alias: Rabbit Coccidiosis, language: en }
+
+species:
+  - speciesCommon: rabbit
+    speciesScientific: Oryctolagus cuniculus
+    prevalence: common
+    notes: 多種腸道型 Eimeria 可感染兔（E. magna、E. media、E. perforans、E. irresidua 等）。幼兔（斷奶前後）最易感。群養與衛生不佳環境發生率高。成兔多為帶原者。
+
+etiology:
+  categories:
+    - name: 寄生蟲性
+      examples:
+        - Eimeria magna（大腸型，致病力中等）
+        - Eimeria media（小腸型）
+        - Eimeria perforans（小腸型，致病力較低）
+        - Eimeria irresidua（小腸型，致病力高）
+        - Eimeria flavescens（盲腸/結腸型，致病力高）
+        - 糞口傳播，卵囊經孢子化後具感染力
+    - name: 風險因素
+      examples:
+        - 幼齡（斷奶期 4-8 週齡高風險）
+        - 群養/繁殖場環境
+        - 環境衛生不佳（糞便堆積）
+        - 緊迫（斷奶、運輸、環境變化）
+        - 免疫抑制
+
+clinicalSigns:
+  early:
+    - 軟便或輕度腹瀉
+    - 食慾略減
+    - 生長遲緩（幼兔）
+  progressive:
+    - 水樣腹瀉（可能帶黏液或血絲）
+    - 腹脹
+    - 脫水
+    - 體重減輕
+    - 被毛粗糙
+  late:
+    - 嚴重出血性腹瀉
+    - 嚴重脫水休克
+    - 腸套疊（腸壁嚴重發炎腫脹）
+    - 死亡（急性重症幼兔）
+
+diagnosis:
+  primaryTests:
+    - name: 糞便浮游法
+      notes: "糞便以飽和鹽水或蔗糖溶液浮游後鏡檢。計數 OPG (oocysts per gram)。少量卵囊可為正常帶原，大量卵囊結合臨床症狀方有診斷意義"
+    - name: 臨床表現
+      notes: "幼兔腹瀉、生長遲緩結合糞便檢查結果綜合判斷"
+  imaging:
+    - name: 腹部 X 光
+      notes: "嚴重病例評估腸脹氣、腸套疊。排除其他腸道疾病"
+  additional:
+    - 糞便直接抹片（快速檢查卵囊）
+    - CBC（嗜酸性球可能升高）
+    - 種屬鑑定（卵囊形態學或 PCR——用於判斷致病力）
+    - 屍檢（腸道黏膜病理變化確診）
+
+treatment:
+  principles:
+    - 抗球蟲藥物治療
+    - 支持性療法（補液、營養）
+    - 環境衛生管理為預防核心
+    - 目標為控制感染強度，非完全清除
+  general:
+    - "Toltrazuril 25 mg/kg PO 單次給藥，7 天後重複一次（首選）"
+    - "替代方案：Sulfadimethoxine 50 mg/kg PO 首日，後 25 mg/kg PO SID × 10-20 天"
+    - "替代方案：Trimethoprim-Sulfa 30 mg/kg PO BID × 10 天"
+    - "皮下輸液矯正脫水：50-100 mL/kg/day SC"
+    - "嚴重腹瀉：強制灌食 Critical Care 15-20 mL/kg q6-8h"
+    - "益生菌不建議（效果未被證實）"
+    - "環境管理：每日清除糞便（卵囊需 1-4 天孢子化才具感染力）"
+    - "籠底網格設計使糞便掉落遠離兔隻"
+    - "熱水或蒸汽消毒（化學消毒劑對卵囊效果差）"
+    - "斷奶前後幼兔預防性投藥（繁殖場）"
+
+prognosis: 輕至中度感染經治療預後良好。嚴重急性感染幼兔如及時治療預後謹慎。環境管理為長期控制關鍵。成兔通常產生部分免疫力，帶原但不發病。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Parasitology
+    title: "Coccidiosis in rabbits: a review"
+    url: https://pubmed.ncbi.nlm.nih.gov/21889265/
+    type: review
+    pmid: "21889265"
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Parasites of rabbits"
+    url: https://pubmed.ncbi.nlm.nih.gov/23352431/
+    type: review
+    pmid: "23352431"
+
+pubmedQueries:
+  - query: '"coccidiosis" AND rabbit AND ("Eimeria" OR "treatment" OR "toltrazuril")'
+    frequency: monthly

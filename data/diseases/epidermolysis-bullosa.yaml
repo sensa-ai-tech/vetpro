@@ -1,0 +1,106 @@
+slug: epidermolysis-bullosa
+nameEn: Epidermolysis Bullosa
+nameZh: 表皮鬆解性水疱症
+bodySystem: dermatology
+description: 表皮鬆解性水疱症（EB）是一群遺傳性皮膚機械脆弱疾病，因皮膚基底膜帶（basement membrane zone）蛋白的基因缺陷，導致輕微摩擦即可引起水疱、糜爛與潰瘍。依據裂隙位置可分為單純型、接合型與營養不良型。
+
+aliases:
+  - { alias: EB, language: en }
+  - { alias: 遺傳性水疱症, language: zh }
+  - { alias: 表皮溶解水疱症, language: zh }
+  - { alias: Mechanobullous Disease, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 多種亞型在不同犬品種中報告。接合型 EB 見於德國短毛指示犬與德國牧羊犬。營養不良型 EB 見於黃金獵犬與阿基拉犬。常染色體隱性遺傳。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓隻罕見，接合型 EB 有個案報告。
+
+etiology:
+  categories:
+    - name: 單純型 EB
+      examples:
+        - 裂隙位於表皮內（基底細胞層）
+        - Keratin 5 或 Keratin 14 基因突變
+        - 表皮基底細胞細胞骨架異常
+    - name: 接合型 EB
+      examples:
+        - 裂隙位於透明層（lamina lucida）
+        - Laminin-332 或 Collagen XVII 基因突變
+        - 德國短毛指示犬中 LAMA3 突變最常見
+    - name: 營養不良型 EB
+      examples:
+        - 裂隙位於緻密板下（sub-lamina densa）
+        - Type VII Collagen（COL7A1）基因突變
+        - 黃金獵犬中有明確遺傳記錄
+
+clinicalSigns:
+  early:
+    - 新生或幼年期即出現水疱與糜爛
+    - 足墊糜爛與潰瘍
+    - 口腔黏膜水疱與潰瘍
+    - 皮膚摩擦部位（肘部、跗關節）病變
+  progressive:
+    - 反復水疱形成與癒合
+    - 瘢痕形成
+    - 指甲脫落或變形（營養不良型）
+    - 繼發性細菌感染
+    - 疼痛與跛行
+  late:
+    - 廣泛性皮膚瘢痕
+    - 食道狹窄（營養不良型，罕見）
+    - 慢性疼痛
+    - 營養不良與消瘦
+
+diagnosis:
+  primaryTests:
+    - name: 皮膚活檢與組織病理學
+      notes: "活檢應取自新鮮水疱邊緣。H&E 染色可見特徵性裂隙位置（表皮內、皮膚表皮交界處或真皮上層）。"
+    - name: 免疫螢光顯微鏡或免疫組織化學
+      notes: "使用基底膜帶蛋白特異性抗體（如 anti-laminin, anti-collagen VII）定位裂隙位置並鑑定缺陷蛋白。"
+  imaging:
+    - name: 透射電子顯微鏡（TEM）
+      notes: "可精確觀察基底膜帶超微結構異常。鑑定裂隙位置與結構蛋白缺陷。"
+    - name: 無特定影像學檢查
+      notes: "影像學通常不用於診斷，但可評估食道狹窄等併發症。"
+  additional:
+    - 基因檢測（已知突變品種）
+    - 細菌培養與敏感性測試（繼發感染時）
+    - 尼可斯基徵（Nikolsky sign）：輕壓正常外觀皮膚邊緣可引起表皮分離
+
+treatment:
+  principles:
+    - 無根治方法
+    - 治療為支持性，減少摩擦與預防感染
+    - 傷口照護為管理核心
+    - 嚴重者需評估生活品質
+  general:
+    - "環境管理：使用軟墊床鋪，避免粗糙地面，減少皮膚摩擦"
+    - "傷口照護：溫和清潔（稀釋 Chlorhexidine 0.05%），非沾黏敷料覆蓋"
+    - "繼發感染控制：Amoxicillin/Clavulanate 12.5-25 mg/kg PO q12h"
+    - "疼痛管理：Gabapentin 5-10 mg/kg PO q8-12h 或 Tramadol 2-5 mg/kg PO q8h"
+    - "足墊保護：使用保護性靴子或繃帶"
+    - "營養支持：高蛋白飲食促進傷口癒合"
+    - "嚴重者需評估安樂死"
+    - "繁殖管理：受影響動物與已知帶因者不應繁殖"
+
+prognosis: 預後因亞型嚴重程度而異。輕度單純型可維持可接受的生活品質。嚴重接合型與營養不良型預後不良，多數動物因生活品質低下而在幼年期安樂死。目前無根治方法，基因療法為研究方向。繁殖前基因篩檢是預防最重要的策略。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Dermatology
+    title: "Epidermolysis bullosa in dogs: clinical and genetic aspects"
+    url: https://pubmed.ncbi.nlm.nih.gov/19291935/
+    type: consensus
+    pmid: "19291935"
+  - sourceOrg: Veterinary Pathology
+    title: "Junctional epidermolysis bullosa in German Shorthaired Pointers"
+    url: https://pubmed.ncbi.nlm.nih.gov/18587103/
+    type: consensus
+    pmid: "18587103"
+pubmedQueries:
+  - query: '"epidermolysis bullosa" AND (dog OR cat) AND ("genetics" OR "mutation")'
+    frequency: monthly

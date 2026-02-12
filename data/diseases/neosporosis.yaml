@@ -1,0 +1,107 @@
+slug: neosporosis
+nameEn: Neosporosis
+nameZh: 新孢子蟲症
+bodySystem: infectious
+description: 新孢子蟲症是由犬新孢子蟲（Neospora caninum）引起的原蟲感染。犬為此寄生蟲的終宿主與中間宿主。幼犬經垂直傳播（經胎盤感染）最常見，導致進行性後肢上行性癱瘓，為此病最具特徵性的臨床表現。成犬感染也可發生但較少見。
+
+aliases:
+  - { alias: 新孢蟲症, language: zh }
+  - { alias: 犬新孢子蟲感染, language: zh }
+  - { alias: Neospora caninum Infection, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 犬為唯一已知的終宿主。幼犬先天性感染最具臨床意義，通常在 3-6 週齡開始出現症狀。同窩幼犬可能同時受影響。成犬感染較少見。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓隻可被感染但臨床疾病罕見。貓有自己的近緣寄生蟲 Toxoplasma gondii。
+
+etiology:
+  categories:
+    - name: 病原體
+      examples:
+        - Neospora caninum（頂端複合體門原蟲）
+        - 與弓形蟲（Toxoplasma gondii）形態相似但為不同物種
+        - 犬為終宿主（排出卵囊）與中間宿主
+    - name: 傳播方式
+      examples:
+        - 垂直傳播（經胎盤，最常見且最重要）
+        - 同一母犬可在連續妊娠中重複傳播
+        - 攝入含組織包囊的中間宿主組織（如牛肉）
+        - 攝入卵囊污染的食物或水
+    - name: 病理機制
+      examples:
+        - 速殖子（tachyzoite）在神經與肌肉組織中增殖
+        - 嚴重壞死性多發性神經根炎（polyradiculoneuritis）
+        - 肌炎（多灶性壞死性肌炎）
+        - 先天性感染可導致腦脊髓炎
+
+clinicalSigns:
+  early:
+    - 幼犬：後肢漸進性無力
+    - 後肢步態異常
+    - 輕度肌肉萎縮
+  progressive:
+    - 進行性後肢上行性癱瘓（ascending paralysis）
+    - 後肢僵硬過伸展（rigid hyperextension，特徵性表現）
+    - 後肢肌肉進行性萎縮
+    - 吞嚥困難（腦神經受累）
+    - 同窩幼犬可能同時出現症狀
+  late:
+    - 四肢癱瘓
+    - 嚴重肌肉萎縮與關節攣縮
+    - 吸入性肺炎（吞嚥障礙）
+    - 肝炎、肌炎
+    - 成犬型：多灶性中樞神經系統疾病
+
+diagnosis:
+  primaryTests:
+    - name: 血清學檢測
+      notes: "IFA 或 ELISA 檢測抗 N. caninum 抗體。效價 > 1:200 有診斷意義。高效價合併臨床症狀高度提示。配對血清四倍升高更有意義。"
+    - name: PCR 檢測
+      notes: "腦脊髓液或組織 PCR 可確認 N. caninum DNA。特異性高。可用於術後或活檢組織。"
+  imaging:
+    - name: MRI
+      notes: "腦脊髓炎型可見腦或脊髓 T2 高訊號病灶。多灶性分布。"
+    - name: 脊椎 X 光
+      notes: "通常無特異性發現。排除其他脊髓壓迫原因。"
+  additional:
+    - 腦脊髓液分析（輕度至中度混合性細胞增多，蛋白質升高）
+    - 肌肉活檢（壞死性肌炎，免疫組織化學可確認寄生蟲）
+    - 肌電圖（異常自發性活動）
+    - 血液學與生化（通常正常或 CK 升高）
+
+treatment:
+  principles:
+    - 早期治療至關重要
+    - 神經損傷一旦產生通常不可逆
+    - 長期抗原蟲治療
+    - 嚴重神經功能缺損者預後極差
+  general:
+    - "Clindamycin 10-20 mg/kg PO q8-12h x 4-8 週（一線藥物）"
+    - "替代方案：Trimethoprim-Sulfadiazine 15 mg/kg PO q12h x 4-8 週"
+    - "合併方案：Clindamycin + Pyrimethamine 1 mg/kg PO q24h（與葉酸 5 mg/day 合用以預防骨髓抑制）"
+    - "物理復健治療（維持關節活動度與肌肉量）"
+    - "營養支持（吞嚥困難時考慮餵管）"
+    - "繁殖管理：感染母犬不建議繁殖（垂直傳播風險高）"
+    - "預防：避免餵食生肉，控制環境中潛在中間宿主"
+
+prognosis: 幼犬先天性感染伴有後肢過伸展性癱瘓者預後極差，多數不可逆。早期（症狀輕微時）開始治療可能改善部分病例。成犬多灶性神經系統型預後謹慎。皮膚型（罕見）經治療預後較佳。母犬一旦感染，後續妊娠垂直傳播風險高，建議不再繁殖。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Internal Medicine
+    title: "Neosporosis in dogs: clinical presentation and treatment"
+    url: https://pubmed.ncbi.nlm.nih.gov/12153737/
+    type: consensus
+    pmid: "12153737"
+  - sourceOrg: Veterinary Parasitology
+    title: "Neospora caninum in dogs: an update on diagnosis and treatment"
+    url: https://pubmed.ncbi.nlm.nih.gov/17350871/
+    type: consensus
+    pmid: "17350871"
+pubmedQueries:
+  - query: '"Neospora caninum" AND (dog OR canine) AND ("treatment" OR "diagnosis")'
+    frequency: monthly

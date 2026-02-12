@@ -1,0 +1,106 @@
+slug: bullous-pemphigoid
+nameEn: Bullous Pemphigoid
+nameZh: 類天疱瘡
+bodySystem: dermatology
+description: 類天疱瘡是犬貓的自體免疫性表皮下水疱性皮膚病，因自體抗體攻擊基底膜帶蛋白（BP180/BP230）導致表皮與真皮分離。水疱形成於基底膜帶（subepidermal），因此比天疱瘡的水疱更堅韌。臨床表現為大型張力性水疱與糜爛。
+
+aliases:
+  - { alias: BP, language: en }
+  - { alias: 大疱性類天疱瘡, language: zh }
+  - { alias: 表皮下水疱症, language: zh }
+  - { alias: Bullous Pemphigoid, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬隻中罕見。柯利犬與杜賓犬可能有較高報告率。中老年犬較好發。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓隻極為罕見。少數個案報告。
+
+etiology:
+  categories:
+    - name: 免疫病理機制
+      examples:
+        - 自體抗體（IgG）攻擊基底膜帶蛋白
+        - 主要靶抗原為 BP180（XVII 型膠原蛋白）與 BP230
+        - 抗體結合啟動補體級聯與中性球浸潤
+        - 基底膜帶損傷導致表皮下裂隙
+    - name: 與天疱瘡的區別
+      examples:
+        - BP 裂隙位於表皮下（subepidermal），天疱瘡位於表皮內
+        - BP 水疱較大且張力性（不易破裂）
+        - BP 無棘層鬆解細胞
+        - BP 組織病理學可見基底膜帶線性免疫沉積
+    - name: 可能觸發因素
+      examples:
+        - 多數為特發性
+        - 藥物誘發（罕見）
+        - 熱傷後（罕見報告）
+
+clinicalSigns:
+  early:
+    - 皮膚出現大型張力性水疱
+    - 水疱內含清澈至淡黃色液體
+    - 水疱較天疱瘡更堅韌不易破裂
+    - 好發部位包括腹部、腋窩、腹股溝
+  progressive:
+    - 水疱破裂形成大面積糜爛
+    - 口腔黏膜可能受累
+    - 紅斑與蕁麻疹樣病變
+    - 搔癢程度不等
+  late:
+    - 廣泛性糜爛
+    - 繼發感染
+    - 體液與蛋白質流失
+    - 慢性疼痛
+
+diagnosis:
+  primaryTests:
+    - name: 皮膚活檢與組織病理學
+      notes: "取完整水疱組織。特徵性表現：表皮下裂隙（subepidermal cleft）。裂隙底部真皮乳頭完整保留。中性球與嗜酸性球浸潤。無棘層鬆解。"
+    - name: 直接免疫螢光（DIF）
+      notes: "基底膜帶線性 IgG 與 C3 沉積（linear pattern）。與天疱瘡的表皮細胞間（intercellular）沉積模式不同。"
+  imaging:
+    - name: 無特定影像學
+      notes: "影像學不用於診斷。"
+    - name: 胸腔 X 光
+      notes: "免疫抑制治療前排除感染或腫瘤。"
+  additional:
+    - 細胞學（水疱液中無棘層鬆解細胞，以中性球與嗜酸性球為主）
+    - 間接免疫螢光（IIF）
+    - 血液學與生化（基線評估）
+
+treatment:
+  principles:
+    - 免疫抑制治療為主
+    - 治療反應通常優於尋常型天疱瘡
+    - 合併局部與全身性治療
+    - 監測免疫抑制藥物副作用
+  general:
+    - "Prednisolone 1-2 mg/kg PO q12h（誘導期）→臨床改善後逐漸減量"
+    - "合併免疫抑制劑：Azathioprine 2 mg/kg PO q24h（犬），減少類固醇用量"
+    - "替代方案：Doxycycline 5 mg/kg PO q12h + Niacinamide 250-500 mg PO q8h（輕度病例）"
+    - "局部治療：Tacrolimus 0.1% ointment q12h（局部病變）"
+    - "傷口照護：溫和清潔，非沾黏敷料保護糜爛面"
+    - "繼發感染控制：根據培養結果選擇抗生素"
+    - "定期 CBC 與生化監測"
+
+prognosis: 預後通常優於尋常型天疱瘡，多數犬隻對免疫抑制治療有良好反應。部分病例可在 3-6 月後逐漸減藥或停藥達到臨床緩解。復發可能發生但通常可再度控制。Doxycycline/niacinamide 方案適用於輕度病例，副作用較少。早期診斷與治療預後最佳。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Dermatology
+    title: "Bullous pemphigoid in dogs: review of clinical and pathological features"
+    url: https://pubmed.ncbi.nlm.nih.gov/19291935/
+    type: consensus
+    pmid: "19291935"
+  - sourceOrg: Veterinary Clinics of North America Small Animal Practice
+    title: "Autoimmune subepidermal blistering diseases in small animals"
+    url: https://pubmed.ncbi.nlm.nih.gov/16504828/
+    type: consensus
+    pmid: "16504828"
+pubmedQueries:
+  - query: '"bullous pemphigoid" AND (dog OR canine) AND ("treatment" OR "diagnosis")'
+    frequency: monthly

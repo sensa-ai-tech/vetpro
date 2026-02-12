@@ -1,0 +1,115 @@
+slug: ferret-influenza
+nameEn: Ferret Influenza
+nameZh: 雪貂流感
+bodySystem: respiratory
+description: 雪貂感染人類流感病毒 (Influenza A 或 B) 引起的上呼吸道疾病，雪貂對人類流感病毒高度易感，可與人類互相傳播，為流感研究的重要動物模型。
+
+aliases:
+  - { alias: 雪貂流行性感冒, language: zh }
+  - { alias: 雪貂流感病毒感染, language: zh }
+  - { alias: Ferret flu, language: en }
+  - { alias: Influenza virus infection in ferrets, language: en }
+  - { alias: Ferret human influenza, language: en }
+
+species:
+  - speciesCommon: ferret
+    speciesScientific: Mustela putorius furo
+    prevalence: common
+    notes: 雪貂對人類流感病毒高度易感 (呼吸道唾液酸受體與人類相似)。人貂雙向傳播。多為自限性。幼貂與老年貂病情較嚴重。流感季節家庭飼養雪貂常從飼主感染。
+
+etiology:
+  categories:
+    - name: 病毒性
+      examples:
+        - Influenza A virus (H1N1, H3N2 等亞型)
+        - Influenza B virus
+        - 透過飛沫與接觸傳播
+        - 人貂雙向傳播
+    - name: 風險因素
+      examples:
+        - 飼主感染流感期間密切接觸
+        - 流感季節 (秋冬)
+        - 幼貂 (<6 月齡，免疫未成熟)
+        - 老年貂或免疫抑制個體
+        - 多貂家庭 (快速傳播)
+
+clinicalSigns:
+  early:
+    - 打噴嚏 (最常見首發症狀)
+    - 漿液性鼻分泌物
+    - 食慾減退
+    - 嗜睡
+    - 輕度發燒
+  progressive:
+    - 結膜炎 (流淚)
+    - 鼻分泌物轉為黏性
+    - 持續打噴嚏與咳嗽
+    - 明顯嗜睡與虛弱
+    - 腹瀉 (幼貂較常見)
+    - 發燒 (40-41.5°C)
+  late:
+    - 繼發性細菌性肺炎
+    - 嚴重脫水 (幼貂)
+    - 呼吸困難 (下呼吸道感染)
+    - 幼貂可致死
+
+diagnosis:
+  primaryTests:
+    - name: 臨床表徵與病史
+      notes: "流感季節 + 飼主近期有流感症狀 + 打噴嚏與鼻分泌物即高度懷疑。多數病例不需進一步確診"
+    - name: 快速流感抗原檢測
+      notes: "人用快速流感試劑 (鼻咽拭子) 可用於雪貂。敏感度中等，特異度高。10-15 分鐘出結果"
+  imaging:
+    - name: 胸腔 X 光
+      notes: "僅嚴重病例需要。繼發性肺炎評估。間質至肺泡浸潤"
+  additional:
+    - RT-PCR (鼻咽拭子，確認亞型)
+    - 病毒分離培養 (研究用途)
+    - CBC (淋巴球減少可見於急性期)
+
+treatment:
+  principles:
+    - 多數為自限性疾病 (5-14 天痊癒)
+    - 支持性照護為主
+    - 幼貂與嚴重病例需積極治療
+    - 隔離避免傳播 (人貂雙向)
+  medications:
+    - name: Diphenhydramine
+      dose: "1-2 mg/kg PO BID-TID"
+      notes: 抗組織胺緩解鼻分泌物。幼貂劑量保守使用
+    - name: Amoxicillin-Clavulanate
+      dose: "12.5-25 mg/kg PO BID"
+      notes: 預防或治療繼發性細菌感染。非治療病毒本身
+    - name: 皮下輸液 (Warmed Lactated Ringer's)
+      dose: "雪貂每次 20-40 mL SC，每 12 小時"
+      notes: 脫水或食慾差時補液。幼貂更易脫水
+    - name: Meloxicam
+      dose: "0.2 mg/kg PO/SC SID"
+      notes: 發燒與不適緩解。確認水合狀態
+  general:
+    - 保暖舒適環境
+    - 鼓勵飲水 (溫水或稀釋雞湯)
+    - 輔助餵食 (食慾差時：鴨肉泥、雪貂營養膏)
+    - 蒸氣浴 (浴室蒸氣 10-15 分鐘 BID) 緩解鼻塞
+    - 生理食鹽水鼻滴劑 (2-3 滴每鼻孔 BID)
+    - 隔離患貂避免傳染其他雪貂
+    - 感染飼主避免密切接觸雪貂 (戴口罩、勤洗手)
+    - 通常 5-14 天自行痊癒
+
+prognosis: 成年健康雪貂預後良好，多為自限性 (5-14 天)。幼貂 (<6 月齡) 因脫水與繼發感染致死率較高，需積極治療。老年貂或有基礎疾病者病程可能延長。繼發性細菌性肺炎如未治療可致死。飼主流感期間注意隔離防護可有效預防。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Respiratory Diseases in Ferrets"
+    url: https://pubmed.ncbi.nlm.nih.gov/33246539/
+    type: review
+    pmid: "33246539"
+  - sourceOrg: Future Virology
+    title: "The ferret as a model for influenza virus transmission"
+    url: https://pubmed.ncbi.nlm.nih.gov/25214830/
+    type: review
+    pmid: "25214830"
+
+pubmedQueries:
+  - query: '"ferret" AND "influenza" AND ("clinical" OR "treatment" OR "transmission") NOT "model"'
+    frequency: monthly

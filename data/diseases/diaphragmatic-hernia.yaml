@@ -1,0 +1,111 @@
+slug: diaphragmatic-hernia
+nameEn: Diaphragmatic Hernia
+nameZh: 膈疝
+bodySystem: respiratory
+description: 膈疝是橫膈膜的完整性喪失，導致腹腔器官移位至胸腔。可分為先天性（腹膜心包膜橫膈膜疝，PPDH）與後天性（外傷性）兩大類。外傷性膈疝最常見，常因車禍或高處墜落等鈍性創傷引起。腹腔器官壓迫肺臟可導致嚴重呼吸困難。
+
+aliases:
+  - { alias: 橫膈膜疝, language: zh }
+  - { alias: 橫膈疝氣, language: zh }
+  - { alias: Diaphragmatic Rupture, language: en }
+  - { alias: PPDH, language: en }
+  - { alias: Peritoneopericardial Diaphragmatic Hernia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 外傷性膈疝最常見（車禍為主因）。先天性 PPDH 在威瑪犬與可卡犬中較好發。公犬外傷性膈疝發生率稍高。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 高樓症候群（high-rise syndrome）為貓常見病因。先天性 PPDH 在長毛貓中較好發。
+
+etiology:
+  categories:
+    - name: 外傷性（最常見）
+      examples:
+        - 車禍鈍性創傷
+        - 高處墜落（貓高樓症候群）
+        - 腹部遭踢擊或擠壓
+        - 腹腔內壓急劇升高導致橫膈膜破裂
+    - name: 先天性
+      examples:
+        - 腹膜心包膜橫膈膜疝（PPDH）：橫膈膜與心包膜之間的先天性通道
+        - 胸骨旁疝（Morgagni hernia）：橫膈膜前方缺損
+        - 橫膈膜發育不全
+    - name: 疝出器官
+      examples:
+        - 肝臟（最常見的疝出器官）
+        - 胃
+        - 小腸
+        - 脾臟
+        - 大網膜
+
+clinicalSigns:
+  early:
+    - 急性呼吸困難（外傷性）
+    - 呼吸急促、淺快呼吸
+    - 端坐呼吸（不願躺下）
+    - 腹部外觀可能凹陷
+  progressive:
+    - 持續性呼吸困難
+    - 黏膜發紺
+    - 胸腔聽診可聞及腸蠕動音
+    - 心音減弱或偏移
+    - 嘔吐（胃疝入胸腔時）
+  late:
+    - 呼吸衰竭
+    - 休克
+    - 疝出器官絞窄壞死
+    - 胃擴張扭轉（胃疝入胸腔時）
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔 X 光
+      notes: "特徵性表現：胸腔內可見腹腔器官影像（含氣腸管、肝臟軟組織影）。橫膈膜輪廓不連續或消失。心臟移位。肺葉壓迫性塌陷。"
+    - name: 腹部超音波
+      notes: "可確認腹腔器官移位至胸腔。PPDH 可見腹腔器官位於心包膜腔內。"
+  imaging:
+    - name: 對比劑消化道造影
+      notes: "口服鋇劑後可追蹤胃腸道走向，確認是否疝入胸腔。"
+    - name: CT 掃描
+      notes: "精確評估橫膈膜缺損大小與位置、疝出器官及血管損傷。術前計畫用。"
+  additional:
+    - 動脈血氣分析（低 PaO2、高 PaCO2）
+    - 血液學與生化（評估臟器損傷與灌流）
+    - 心電圖（外傷性心律不整）
+
+treatment:
+  principles:
+    - 手術修復為唯一確定性治療
+    - 急性外傷需先穩定再手術
+    - 慢性/先天性病例可擇期手術
+    - 術前穩定呼吸功能至關重要
+  general:
+    - "術前穩定：氧氣治療、靜脈輸液、胸腔穿刺排氣（如有氣胸）"
+    - "手術修復：正中開腹術，將疝出器官還納腹腔，直視下縫合橫膈膜缺損"
+    - "術中注意：緩慢還納器官（避免再擴張性肺水腫）"
+    - "術後胸管引流（24-48 小時）"
+    - "術後疼痛管理：Methadone 0.1-0.3 mg/kg IV q4-6h 或 Buprenorphine 0.01-0.02 mg/kg IV q6-8h"
+    - "術後抗生素：Cefazolin 22 mg/kg IV q8h（圍術期）"
+    - "術後呼吸監測：脈搏血氧飽和度、呼吸頻率與型態"
+    - "慢性膈疝：黏連可能增加手術難度"
+
+prognosis: 急性外傷性膈疝圍術期存活率約 80-90%。合併嚴重多發性創傷、休克或器官絞窄者存活率降低。手術成功者長期預後良好。先天性 PPDH 若手術修復成功預後良好。慢性膈疝可能因黏連使手術更困難但預後仍可接受。延遲診斷與器官缺血壞死顯著影響預後。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Traumatic diaphragmatic hernia in dogs and cats: outcomes"
+    url: https://pubmed.ncbi.nlm.nih.gov/19691551/
+    type: consensus
+    pmid: "19691551"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Peritoneopericardial diaphragmatic hernia in dogs and cats"
+    url: https://pubmed.ncbi.nlm.nih.gov/8045675/
+    type: consensus
+    pmid: "8045675"
+pubmedQueries:
+  - query: '"diaphragmatic hernia" AND (dog OR cat) AND ("surgery" OR "outcome")'
+    frequency: monthly

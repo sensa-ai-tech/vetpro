@@ -1,41 +1,9 @@
 import Link from "next/link";
-
-const BODY_SYSTEM_LABELS: Record<string, string> = {
-  renal: "腎臟",
-  cardiac: "心臟",
-  endocrine: "內分泌",
-  gastrointestinal: "腸胃",
-  hematology: "血液",
-  dermatology: "皮膚",
-  neurology: "神經",
-  respiratory: "呼吸",
-  orthopedic: "骨科",
-  ophthalmology: "眼科",
-  infectious: "傳染病",
-  oncology: "腫瘤",
-};
-
-const BODY_SYSTEM_COLORS: Record<string, string> = {
-  renal: "bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300",
-  cardiac: "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300",
-  endocrine: "bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300",
-  gastrointestinal: "bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-300",
-  hematology: "bg-rose-100 text-rose-800 dark:bg-rose-900/30 dark:text-rose-300",
-  dermatology: "bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300",
-  neurology: "bg-indigo-100 text-indigo-800 dark:bg-indigo-900/30 dark:text-indigo-300",
-  respiratory: "bg-cyan-100 text-cyan-800 dark:bg-cyan-900/30 dark:text-cyan-300",
-  orthopedic: "bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300",
-  ophthalmology: "bg-teal-100 text-teal-800 dark:bg-teal-900/30 dark:text-teal-300",
-  infectious: "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300",
-  oncology: "bg-pink-100 text-pink-800 dark:bg-pink-900/30 dark:text-pink-300",
-};
-
-const SPECIES_EMOJI: Record<string, string> = {
-  dog: "🐕",
-  cat: "🐈",
-  horse: "🐴",
-  rabbit: "🐰",
-};
+import {
+  BODY_SYSTEM_LABELS,
+  BODY_SYSTEM_COLORS,
+  SPECIES_EMOJI,
+} from "@/lib/constants";
 
 interface DiseaseCardProps {
   slug: string;

@@ -1,0 +1,100 @@
+slug: inguinal-hernia
+nameEn: Inguinal Hernia
+nameZh: 腹股溝疝
+bodySystem: other
+description: 腹股溝疝是腹腔內容物經由腹股溝管（inguinal canal）疝出至皮下的狀態。可為先天性（腹股溝環先天性過大）或後天性。母犬發生率高於公犬，可能與妊娠期荷爾蒙影響有關。疝出內容物可能包括大網膜、小腸、子宮或膀胱。
+
+aliases:
+  - { alias: 腹股溝疝氣, language: zh }
+  - { alias: 鼠蹊疝, language: zh }
+  - { alias: Groin Hernia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 母犬發生率高於公犬。先天性型好發品種包括北京犬、巴吉度犬、凱恩梗及西高地白梗。妊娠母犬後天性腹股溝疝增加。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓隻腹股溝疝罕見。先天性型偶有報告。
+
+etiology:
+  categories:
+    - name: 先天性
+      examples:
+        - 腹股溝環先天性未閉合或過大
+        - 遺傳因素（某些品種好發）
+        - 可為單側或雙側
+    - name: 後天性
+      examples:
+        - 妊娠期腹壓增加與荷爾蒙影響
+        - 外傷
+        - 肥胖增加腹壓
+        - 腹腔積液
+    - name: 疝出內容物
+      examples:
+        - 大網膜（最常見）
+        - 小腸
+        - 懷孕子宮（母犬）
+        - 膀胱（罕見）
+        - 脾臟（罕見）
+
+clinicalSigns:
+  early:
+    - 腹股溝區域單側或雙側軟性腫脹
+    - 腫脹通常可縮復
+    - 多數無疼痛
+    - 可能為偶然發現
+  progressive:
+    - 腫脹逐漸增大
+    - 不可縮復性腫脹（嵌頓）
+    - 局部不適或疼痛
+    - 步態僵硬（大型疝內容物時）
+  late:
+    - 腸管嵌頓與絞窄（急診）：嘔吐、腹痛、休克
+    - 膀胱嵌頓：排尿困難或無法排尿
+    - 子宮嵌頓（懷孕母犬）：難產
+    - 疝出器官壞死
+
+diagnosis:
+  primaryTests:
+    - name: 體格檢查
+      notes: "腹股溝區域可觸摸到軟性腫脹。可嘗試還納（reducible vs irreducible）。站立與仰臥位比較。觸診腹股溝環大小。"
+    - name: 腹部超音波
+      notes: "確認疝出內容物（大網膜、腸管、子宮、膀胱）。評估腸管血流（嵌頓性評估）。"
+  imaging:
+    - name: 腹部 X 光
+      notes: "可見腹股溝區域軟組織腫脹。含氣腸管位於腹股溝區域（腸疝出時）。"
+    - name: 對比劑膀胱造影
+      notes: "懷疑膀胱疝出時使用。確認膀胱位置。"
+  additional:
+    - 血液學與生化（術前評估，嵌頓時評估器官功能）
+    - 妊娠篩檢（未絕育母犬，子宮可能疝出）
+
+treatment:
+  principles:
+    - 手術修復為確定性治療
+    - 嵌頓性疝為外科急診
+    - 同時進行結紮/去勢手術
+    - 雙側應同時檢查與修復
+  general:
+    - "手術修復：關閉腹股溝環。還納疝出內容物後縫合腹股溝環缺損"
+    - "嵌頓性疝：緊急手術。評估疝出器官存活度，壞死組織需切除"
+    - "同時進行卵巢子宮切除術/去勢手術（降低復發風險，移除荷爾蒙影響）"
+    - "雙側腹股溝探查（對側可能有隱性缺損）"
+    - "術後疼痛管理：Meloxicam 0.1 mg/kg PO q24h x 5-7 天"
+    - "術後限制活動 2 週"
+    - "伊麗莎白圈佩戴至拆線"
+
+prognosis: 擇期手術修復預後良好，復發率低（< 5%）。同時進行結紮/去勢手術可降低復發風險。嵌頓性疝若即時手術預後仍可接受。腸管或其他器官壞死需切除時預後較差。先天性型建議不繁殖受影響動物。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Surgery
+    title: "Inguinal hernia repair in dogs: techniques and outcomes"
+    url: https://pubmed.ncbi.nlm.nih.gov/15648580/
+    type: consensus
+    pmid: "15648580"
+pubmedQueries:
+  - query: '"inguinal hernia" AND (dog OR canine) AND ("surgery" OR "repair")'
+    frequency: monthly

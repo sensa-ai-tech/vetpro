@@ -1,0 +1,107 @@
+slug: pneumothorax
+nameEn: Pneumothorax
+nameZh: 氣胸
+bodySystem: respiratory
+description: 氣胸是胸膜腔內異常積氣，導致肺臟塌陷與通氣功能障礙。可分為外傷性、自發性與醫源性三類。張力性氣胸（tension pneumothorax）為最危急的形式，空氣只進不出形成單向閥效應，可迅速導致心肺衰竭與死亡。
+
+aliases:
+  - { alias: 氣胸症, language: zh }
+  - { alias: 胸腔積氣, language: zh }
+  - { alias: Collapsed Lung, language: en }
+  - { alias: Tension Pneumothorax, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 外傷性最常見（車禍、咬傷）。自發性氣胸可因肺泡囊腫破裂引起，好發於大型深胸犬（如西伯利亞哈士奇犬）。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: uncommon
+    notes: 外傷性（車禍、高處墜落）為最常見原因。自發性氣胸在貓隻中極為罕見。
+
+etiology:
+  categories:
+    - name: 外傷性
+      examples:
+        - 胸壁穿刺傷（咬傷、刺傷）
+        - 鈍性胸部創傷（車禍）導致肺撕裂
+        - 肋骨骨折穿刺肺臟
+        - 氣管或支氣管破裂
+    - name: 自發性
+      examples:
+        - 肺泡囊腫（bulla）或水泡（bleb）破裂
+        - 肺部寄生蟲（Paragonimus）
+        - 肺腫瘤侵蝕
+        - 肺膿瘍破裂
+    - name: 醫源性
+      examples:
+        - 胸腔穿刺或活檢併發症
+        - 氣管插管或正壓通氣併發症
+        - 胸腔手術後
+
+clinicalSigns:
+  early:
+    - 呼吸急促與呼吸困難
+    - 限制性呼吸型態（快且淺）
+    - 胸壁聽診呼吸音減低（患側）
+    - 焦躁不安
+  progressive:
+    - 端坐呼吸
+    - 黏膜發紺
+    - 心搏過速
+    - 皮下氣腫（空氣散佈至皮下組織）
+  late:
+    - 張力性氣胸：快速惡化的呼吸衰竭
+    - 休克（胸腔內壓增高影響靜脈回流）
+    - 心血管衰竭
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔 X 光
+      notes: "確診方法。可見肺臟與胸壁之間的透亮區域（無肺紋理）。肺臟塌陷回縮至肺門。心臟可能向未受影響側偏移。站立呼氣位最敏感。"
+    - name: 胸腔聽診
+      notes: "患側呼吸音減弱或消失。叩診呈鼓音（過度共鳴）。心音可能偏移。"
+  imaging:
+    - name: 胸部超音波（TFAST）
+      notes: "急診床旁快速評估。正常滑動徵（sliding sign）消失。A 線存在但無 B 線。可迅速確認是否需要緊急減壓。"
+    - name: CT 掃描
+      notes: "自發性氣胸時評估肺泡囊腫位置與數量。術前計畫用。非急診使用。"
+  additional:
+    - 動脈血氣分析（低 PaO2）
+    - 脈搏血氧飽和度
+    - 血液學檢查（外傷評估）
+
+treatment:
+  principles:
+    - 張力性氣胸需立即減壓
+    - 輕度氣胸可保守觀察
+    - 反復或持續性氣胸需手術探查
+    - 外傷性需評估並處理合併損傷
+  general:
+    - "緊急胸腔穿刺減壓：使用 18-20G 針頭或導管於第 7-9 肋間進行胸腔穿刺排氣"
+    - "胸管留置：持續性氣胸需放置胸管接水封引流或持續抽吸"
+    - "氧氣治療：鼻導管、氧氣籠或面罩供氧"
+    - "開放性氣胸：立即封閉胸壁傷口（三邊固定法或密封敷料）"
+    - "自發性復發性氣胸：手術探查與肺泡囊腫切除（partial lung lobectomy 或 stapling）"
+    - "術後疼痛管理：Buprenorphine 0.01-0.02 mg/kg IV q6-8h"
+    - "肋骨骨折穩定（嚴重時）"
+    - "輕度創傷性氣胸：限制活動、監測，多數 3-5 天自行吸收"
+
+prognosis: 外傷性氣胸經適當治療後預後良好，多數在 3-5 天內恢復。自發性氣胸預後取決於基礎病因，肺泡囊腫手術切除後復發率低。張力性氣胸若即時減壓預後可接受，延遲處理預後極差。合併嚴重多發性創傷者預後取決於整體損傷嚴重度。
+
+guidelineRefs:
+  - sourceOrg: Journal of Veterinary Emergency and Critical Care
+    title: "Spontaneous pneumothorax in dogs: clinical findings and outcomes"
+    url: https://pubmed.ncbi.nlm.nih.gov/17259891/
+    type: consensus
+    pmid: "17259891"
+  - sourceOrg: Journal of the American Veterinary Medical Association
+    title: "Traumatic pneumothorax in dogs and cats: prognosis"
+    url: https://pubmed.ncbi.nlm.nih.gov/19228364/
+    type: consensus
+    pmid: "19228364"
+pubmedQueries:
+  - query: '"pneumothorax" AND (dog OR cat) AND ("treatment" OR "chest tube")'
+    frequency: monthly

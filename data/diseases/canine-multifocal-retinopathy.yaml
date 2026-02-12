@@ -1,0 +1,100 @@
+slug: canine-multifocal-retinopathy
+nameEn: Canine Multifocal Retinopathy
+nameZh: 犬多灶性視網膜病變
+bodySystem: ophthalmology
+description: 犬多灶性視網膜病變（CMR）是一種遺傳性視網膜疾病，因 BEST1（bestrophin-1）基因突變導致視網膜色素上皮細胞功能異常。表現為視網膜下多灶性漿液性剝離，形成多個灰白色至棕色的圓形或卵圓形病變。多數病例視力僅輕度受影響。
+
+aliases:
+  - { alias: CMR, language: en }
+  - { alias: CMR1, language: en }
+  - { alias: CMR2, language: en }
+  - { alias: CMR3, language: en }
+  - { alias: 犬多發性視網膜病, language: zh }
+  - { alias: Bestrophinopathy, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: uncommon
+    notes: 多種品種受影響。CMR1 見於大白熊犬、英國鬥牛犬、馬士提夫犬。CMR2 見於可卡犬。CMR3 見於芬蘭拉普犬、瑞典拉普犬。常染色體隱性遺傳。
+
+etiology:
+  categories:
+    - name: 遺傳因素
+      examples:
+        - BEST1 基因突變（常染色體隱性遺傳）
+        - CMR1：c.73C>T (p.R25X) 突變
+        - CMR2：c.482G>A (p.G161D) 突變
+        - CMR3：c.1388delC 突變
+    - name: 病理機制
+      examples:
+        - Bestrophin-1 蛋白是視網膜色素上皮（RPE）的氯離子通道
+        - 突變導致 RPE 離子轉運異常
+        - RPE 與感光細胞之間液體累積
+        - 視網膜下漿液性剝離形成
+    - name: 與人類疾病的同源性
+      examples:
+        - 與人類 Best 病（Best vitelliform macular dystrophy）同源
+        - BEST1 基因在人與犬之間高度保守
+        - 犬為人類 BEST1 相關疾病的自然疾病模型
+
+clinicalSigns:
+  early:
+    - 幼犬眼科篩檢時偶然發現
+    - 多灶性灰白色至棕色圓形視網膜下病變
+    - 病變大小從微小至數個乳頭直徑
+    - 多數無明顯視力問題
+  progressive:
+    - 病變可能增大或融合
+    - 病變中心可能出現色素沉積
+    - 部分病變可能消退並留下色素痕跡
+    - 視力通常維持良好
+  late:
+    - 多數犬隻維持功能性視力
+    - 少數嚴重病例可能有視力減退
+    - 老年時病變通常穩定
+
+diagnosis:
+  primaryTests:
+    - name: 間接眼底鏡檢查
+      notes: "可見視網膜下多灶性圓形或卵圓形隆起性病變，灰白色至棕色，散佈於後極部與周邊視網膜。病變邊界清晰。"
+    - name: 基因檢測
+      notes: "BEST1 基因突變 DNA 檢測。可檢測 CMR1、CMR2、CMR3 特定突變。建議所有好發品種繁殖犬進行篩檢。"
+  imaging:
+    - name: 光學同調斷層掃描（OCT）
+      notes: "可見視網膜下液體累積形成的圓頂狀隆起。RPE 與神經視網膜之間的剝離。"
+    - name: 螢光素眼底血管造影（FFA）
+      notes: "可見病變區域早期低螢光（遮蔽），晚期可能出現滲漏。"
+  additional:
+    - 視網膜電圖（ERG，通常正常或輕度異常）
+    - 繁殖前眼科認證檢查
+    - 視力行為測試
+
+treatment:
+  principles:
+    - 目前無特異性治療
+    - 多數病例無需治療
+    - 繁殖管理為主要策略
+    - 定期眼科追蹤監測
+  general:
+    - "無需治療（多數病例視力正常或僅輕度受影響）"
+    - "定期眼科追蹤：每 6-12 月眼底檢查"
+    - "繁殖管理：基因篩檢所有好發品種繁殖犬"
+    - "避免 carrier x carrier 配對以降低受影響後代"
+
+prognosis: 預後通常良好。多數 CMR 犬隻終身維持功能性視力。病變為緩慢進展或穩定性。與人類 Best 病不同，犬的 CMR 較少導致嚴重視力喪失。基因篩檢已在繁殖群體中有效降低盛行率。
+
+guidelineRefs:
+  - sourceOrg: Investigative Ophthalmology & Visual Science
+    title: "BEST1 mutations in canine multifocal retinopathy"
+    url: https://pubmed.ncbi.nlm.nih.gov/17525176/
+    type: consensus
+    pmid: "17525176"
+  - sourceOrg: Molecular Vision
+    title: "Canine multifocal retinopathy: clinical and genetic aspects"
+    url: https://pubmed.ncbi.nlm.nih.gov/21850159/
+    type: consensus
+    pmid: "21850159"
+pubmedQueries:
+  - query: '"canine multifocal retinopathy" AND "BEST1" AND ("genetics" OR "mutation")'
+    frequency: monthly

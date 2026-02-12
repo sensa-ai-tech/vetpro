@@ -1,0 +1,108 @@
+slug: rabbit-upper-respiratory-infection
+nameEn: Rabbit Upper Respiratory Infection
+nameZh: 兔上呼吸道感染
+bodySystem: respiratory
+description: 兔上呼吸道細菌感染的統稱，最常見病原為 Pasteurella multocida（亦稱「鼻炎 snuffles」），其次為 Bordetella bronchiseptica、Staphylococcus aureus 等。表現為鼻分泌物、打噴嚏，可擴散至下呼吸道、中耳或全身。
+
+aliases:
+  - { alias: 兔鼻炎, language: zh }
+  - { alias: 兔打噴嚏, language: zh }
+  - { alias: Snuffles, language: en }
+  - { alias: Rabbit Rhinitis, language: en }
+  - { alias: Rabbit Pasteurellosis URI, language: en }
+
+species:
+  - speciesCommon: rabbit
+    speciesScientific: Oryctolagus cuniculus
+    prevalence: common
+    notes: Pasteurella multocida 為兔最常見呼吸道病原，兔群帶原率可達 30-90%。緊迫可誘發潛伏感染發病。Bordetella bronchiseptica 常為共感染菌。
+
+etiology:
+  categories:
+    - name: 細菌性
+      examples:
+        - Pasteurella multocida（最常見，多種血清型）
+        - Bordetella bronchiseptica（常為共感染或初級感染）
+        - Staphylococcus aureus
+        - Pseudomonas aeruginosa
+        - Moraxella catarrhalis
+    - name: 風險因素
+      examples:
+        - 環境緊迫（擁擠、通風不良、氨氣濃度高）
+        - 免疫抑制
+        - 溫度驟變
+        - 灰塵大的墊料（松木屑、杉木屑）
+        - 新兔引入（帶原者）
+        - 與天竺鼠同養（B. bronchiseptica 交叉傳染）
+
+clinicalSigns:
+  early:
+    - 間歇性打噴嚏
+    - 少量透明至白色鼻分泌物
+    - 前肢內側毛髮結塊（擦拭鼻涕）
+    - 精神食慾大致正常
+  progressive:
+    - 持續性打噴嚏
+    - 鼻分泌物轉為黏液膿性（黃白色）
+    - 眼分泌物（鼻淚管阻塞——Pasteurella 性淚囊炎）
+    - 呼吸音增大（鼻塞）
+    - 食慾下降
+  late:
+    - 下呼吸道感染（肺炎——呼吸困難、張口呼吸）
+    - 中耳/內耳感染（頭歪斜）
+    - 皮下膿瘍
+    - 敗血症
+    - 生殖道感染
+
+diagnosis:
+  primaryTests:
+    - name: 鼻拭子細菌培養與藥敏試驗
+      notes: "深部鼻拭子培養。Pasteurella 及其他病原鑑定。藥敏試驗指導抗生素選擇"
+    - name: 臨床表現
+      notes: "鼻分泌物、打噴嚏、前肢結塊為典型表現。需排除牙根膿瘍壓迫鼻淚管"
+  imaging:
+    - name: 頭部 X 光
+      notes: "評估鼻竇、鼓泡（中耳炎）、牙根。鼻竇液體積聚"
+    - name: 胸腔 X 光
+      notes: "評估下呼吸道受累——肺浸潤、膿瘍"
+  additional:
+    - CBC（白血球升高提示感染嚴重度）
+    - 鼻淚管沖洗（鼻淚管阻塞評估與治療）
+    - CT 掃描（鼻竇、鼓泡詳細評估——比 X 光更敏感）
+    - 口腔檢查（排除牙科疾病作為病因）
+
+treatment:
+  principles:
+    - 依培養藥敏結果選擇抗生素
+    - 長療程治療（至少 14-30 天）
+    - Pasteurella 可能終生帶原，難以完全根除
+    - 環境管理減少復發
+  general:
+    - "首選抗生素：Enrofloxacin 10-20 mg/kg PO BID（對 Pasteurella 效果佳）"
+    - "替代方案：Trimethoprim-Sulfa 30 mg/kg PO BID"
+    - "替代方案：Azithromycin 15-30 mg/kg PO SID × 3 天/週（pulse therapy）"
+    - "替代方案：Chloramphenicol 50 mg/kg PO BID（嚴重感染或多重抗藥）"
+    - "鼻腔霧化治療：生理食鹽水 ± Gentamicin (霧化) BID × 15-20 分鐘"
+    - "鼻淚管沖洗（淚囊炎/鼻淚管阻塞時）"
+    - "止痛：Meloxicam 0.3-0.5 mg/kg PO SID"
+    - "環境改善：良好通風、低粉塵墊料 (紙基墊料)、避免松/杉木屑"
+    - "隔離新兔至少 2-4 週觀察"
+    - "注意：兔禁用口服 Penicillin/Amoxicillin（破壞腸道菌群致命性腸炎）"
+
+prognosis: 輕度上呼吸道感染經適當抗生素治療可控制症狀。Pasteurella 感染可能終生帶原，緊迫時復發。併發肺炎或中耳炎時治療更困難，療程更長。環境管理與減壓為預防復發關鍵。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Respiratory diseases of rabbits"
+    url: https://pubmed.ncbi.nlm.nih.gov/24157570/
+    type: review
+    pmid: "24157570"
+  - sourceOrg: Journal of Exotic Pet Medicine
+    title: "Pasteurellosis in rabbits"
+    url: https://pubmed.ncbi.nlm.nih.gov/25015871/
+    type: review
+    pmid: "25015871"
+
+pubmedQueries:
+  - query: '"upper respiratory" AND rabbit AND ("Pasteurella" OR "snuffles" OR "treatment")'
+    frequency: monthly

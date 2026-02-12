@@ -1,0 +1,106 @@
+slug: guinea-pig-urolithiasis
+nameEn: Guinea Pig Urolithiasis
+nameZh: 天竺鼠尿路結石
+bodySystem: renal
+description: 天竺鼠泌尿道結石，好發於膀胱與尿道。結石成分多為碳酸鈣，與兔類似但天竺鼠尿道結石較常見（尤其公天竺鼠），可造成尿道阻塞為急症。
+
+aliases:
+  - { alias: 天竺鼠泌尿道結石, language: zh }
+  - { alias: 天竺鼠膀胱結石, language: zh }
+  - { alias: Guinea Pig Bladder Stones, language: en }
+  - { alias: Guinea Pig Urinary Calculi, language: en }
+
+species:
+  - speciesCommon: guinea pig
+    speciesScientific: Cavia porcellus
+    prevalence: common
+    notes: 天竺鼠泌尿道結石常見。公天竺鼠尿道結石風險較高（尿道較長且窄）。碳酸鈣為主要結石成分。中老年天竺鼠 (>3 歲) 發生率較高。
+
+etiology:
+  categories:
+    - name: 代謝因素
+      examples:
+        - 與兔類似的鈣代謝特點（腸道鈣吸收率高）
+        - 過量鈣經腎臟排泄
+        - 結石成分多為碳酸鈣
+    - name: 飲食因素
+      examples:
+        - 高鈣飲食（苜蓿乾草、高鈣蔬菜、鈣質補充過多）
+        - 飲水量不足
+        - 維生素 C 缺乏（可能促進尿液結晶化）
+    - name: 其他因素
+      examples:
+        - 慢性泌尿道感染
+        - 活動不足
+        - 遺傳易感性
+        - 性別（公天竺鼠尿道阻塞風險高）
+
+clinicalSigns:
+  early:
+    - 頻尿
+    - 排尿時鳴叫 (vocalization)
+    - 血尿
+    - 排尿姿勢異常
+  progressive:
+    - 持續性血尿
+    - 嚴重排尿困難 (stranguria)
+    - 會陰部尿液灼傷
+    - 食慾下降
+    - 弓背姿勢
+  late:
+    - 尿道阻塞（公天竺鼠——無法排尿）
+    - 膀胱過度膨脹
+    - 急性腎後性氮血症
+    - 休克
+    - 膀胱破裂（罕見）
+
+diagnosis:
+  primaryTests:
+    - name: 腹部 X 光
+      notes: "碳酸鈣結石 X 光不透射性高，清楚可見。評估結石位置、大小、數量。包含尿道全長投影"
+    - name: 尿液分析
+      notes: "血尿、結晶、細菌。尿液培養（繼發感染）"
+  imaging:
+    - name: 腹部超音波
+      notes: "膀胱壁增厚、腎水腫（輸尿管結石時）、殘餘尿量"
+  additional:
+    - CBC / 生化（腎功能——BUN、Creatinine）
+    - 電解質
+    - 膀胱觸診
+    - 結石成分分析（術後送檢——指導預防策略）
+
+treatment:
+  principles:
+    - 尿道阻塞為急症——立即解除
+    - 手術摘除結石
+    - 飲食調整預防復發
+    - 維生素 C 補充
+  general:
+    - "膀胱結石：膀胱切開術 (cystotomy)"
+    - "尿道結石（公天竺鼠）：嘗試導尿管沖洗推回膀胱後 cystotomy，或尿道切開術 (urethrotomy)"
+    - "術後止痛：Meloxicam 0.3-0.5 mg/kg PO/SC SID × 5-7 天"
+    - "抗生素（感染時）：Enrofloxacin 10-20 mg/kg PO BID 或 Trimethoprim-Sulfa 30 mg/kg PO BID"
+    - "皮下輸液：50-100 mL/kg/day SC"
+    - "飲食調整：禾本科乾草為主，限制苜蓿"
+    - "減少高鈣蔬菜，選擇低鈣蔬菜"
+    - "增加飲水量（水碗、蔬菜沾水）"
+    - "維生素 C 充足補充：50-100 mg/天"
+    - "定期 X 光追蹤（每 3-6 月）"
+
+prognosis: 手術摘除結石預後良好至謹慎。復發率中等——飲食管理與增加飲水可降低復發。尿道阻塞及時解除預後謹慎。反覆尿道阻塞的公天竺鼠可能需永久性尿道造口術 (perineal urethrostomy)。
+
+guidelineRefs:
+  - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
+    title: "Urinary tract diseases of guinea pigs"
+    url: https://pubmed.ncbi.nlm.nih.gov/24157572/
+    type: review
+    pmid: "24157572"
+  - sourceOrg: Journal of Exotic Pet Medicine
+    title: "Urolithiasis in guinea pigs"
+    url: https://pubmed.ncbi.nlm.nih.gov/20842136/
+    type: review
+    pmid: "20842136"
+
+pubmedQueries:
+  - query: '"urolithiasis" AND "guinea pig" AND ("treatment" OR "cystotomy")'
+    frequency: monthly
