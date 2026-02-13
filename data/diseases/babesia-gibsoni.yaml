@@ -3,13 +3,15 @@ nameEn: Babesia Gibsoni
 nameZh: 吉氏巴貝西蟲病
 bodySystem: infectious
 description: 由Babesia gibsoni原蟲引起的小型巴貝西蟲感染,主要經鬥犬咬傷傳播。比B. canis難治療,常導致慢性感染及復發,美國比特犬高風險。
-
 aliases:
-  - { alias: 小型巴貝西蟲病, language: zh }
-  - { alias: 吉氏焦蟲病, language: zh }
-  - { alias: Small Babesia Infection, language: en }
-  - { alias: Pit Bull Babesiosis, language: en }
-
+  - alias: 小型巴貝西蟲病
+    language: zh
+  - alias: 吉氏焦蟲病
+    language: zh
+  - alias: Small Babesia Infection
+    language: en
+  - alias: Pit Bull Babesiosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓極少感染,僅有零星病例報告
-
 etiology:
   categories:
     - name: 病原體
@@ -31,7 +32,6 @@ etiology:
         - 壁蝨叮咬(Haemaphysalis, Rhipicephalus)
         - 輸血傳播
         - 可能垂直傳播
-
 clinicalSigns:
   early:
     - 間歇性發燒,精神不佳
@@ -44,26 +44,24 @@ clinicalSigns:
     - 血小板減少,出血傾向
     - 慢性消耗,肌肉萎縮
     - 免疫介導併發症
-
 diagnosis:
   primaryTests:
     - name: PCR檢測
-      notes: "最敏感方法,慢性或低寄生蟲血症首選,敏感度>95%"
+      notes: 最敏感方法,慢性或低寄生蟲血症首選,敏感度>95%
     - name: 血液抹片
-      notes: "小型環狀或雙梨形蟲體(1-2.5 μm),檢出率僅30-50%"
+      notes: 小型環狀或雙梨形蟲體(1-2.5 μm),檢出率僅30-50%
     - name: 全血球計數
-      notes: "再生性或非再生性貧血,血小板減少(常<100,000/μL)"
+      notes: 再生性或非再生性貧血,血小板減少(常<100,000/μL)
     - name: 血清學
-      notes: "ELISA或IFAT,IgG抗體,慢性感染或流行病學調查"
+      notes: ELISA或IFAT,IgG抗體,慢性感染或流行病學調查
     - name: Coombs test
-      notes: "10-30%病例陽性,鑑別免疫介導性溶血併發症"
+      notes: 10-30%病例陽性,鑑別免疫介導性溶血併發症
   differentialDiagnoses:
     - Babesia canis感染
     - 免疫介導性溶血性貧血(IMHA)
     - 免疫介導性血小板減少症(ITP)
     - Mycoplasma haemocanis
     - 慢性炎症性疾病
-
 treatment:
   medical:
     - Atovaquone 13.3 mg/kg PO q8h + Azithromycin 10 mg/kg PO q24h,持續10天(首選)
@@ -74,10 +72,8 @@ treatment:
     - 輸血:PCV<15%或臨床症狀嚴重
   supportive:
     - 監測血球計數及寄生蟲血症(治療後每2-4週)
-
 prognosis:
-  general: "預後謹慎保留。即使治療,仍可能終身慢性帶原,復發率30-50%。Atovaquone+Azithromycin療法改善預後,但完全清除困難。慢性感染可能導致免疫介導性疾病,需長期監測。治療成功犬隻不建議作為供血犬。"
-
+  general: 預後謹慎保留。即使治療,仍可能終身慢性帶原,復發率30-50%。Atovaquone+Azithromycin療法改善預後,但完全清除困難。慢性感染可能導致免疫介導性疾病,需長期監測。治療成功犬隻不建議作為供血犬。
 prevention:
   - 避免鬥犬活動及犬隻打鬥
   - 壁蝨預防控制
@@ -85,31 +81,69 @@ prevention:
   - 流行區新引進犬隻應篩檢
   - 陽性犬隻隔離,避免咬傷傳播
   - 無有效疫苗
-
-
 guidelineRefs:
   - sourceOrg: Infectious medicine
-    title: "Tick-, flea- and mite-borne pathogens and associated diseases of public health importance in Bangladesh: a review."
+    title: 'Tick-, flea- and mite-borne pathogens and associated diseases of public health importance in Bangladesh: a review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11647497/
     type: review
-    pmid: "39687692"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: The Etiology, Incidence, Pathogenesis, Diagnostics, and Treatment of Canine Babesiosis Caused by Babesia gibsoni Infection.
+    pmid: '39687692'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      The Etiology, Incidence, Pathogenesis, Diagnostics, and Treatment of Canine Babesiosis Caused by Babesia gibsoni
+      Infection.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8944684/
     type: review
-    pmid: "35327136"
+    pmid: '35327136'
   - sourceOrg: Frontiers in veterinary science
-    title: "Babesia Species of Domestic Cats: Molecular Characterization Has Opened Pandora's Box."
+    title: 'Babesia Species of Domestic Cats: Molecular Characterization Has Opened Pandora''s Box.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7118673/
     type: review
-    pmid: "32292793"
+    pmid: '32292793'
   - sourceOrg: Pathogens (Basel, Switzerland)
     title: The Diverse Pathogenicity of Various Babesia Parasite Species That Infect Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10746086/
     type: review
-    pmid: "38133320"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '38133320'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Babesia gibsoni Infection in Dogs-A European Perspective.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8944637/
     type: review
-    pmid: "35327127"
+    pmid: '35327127'
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: common
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: splenomegaly
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: jaundice
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 吉氏巴貝西蟲病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: PCR檢測
+          notes: 最敏感方法,慢性或低寄生蟲血症首選,敏感度>95%
+        - name: 血液抹片
+          notes: 小型環狀或雙梨形蟲體(1-2.5 μm),檢出率僅30-50%
+        - name: 全血球計數
+          notes: 再生性或非再生性貧血,血小板減少(常<100,000/μL)
+ddxSource: auto-generated

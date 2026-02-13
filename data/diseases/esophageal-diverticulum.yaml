@@ -3,11 +3,11 @@ nameEn: Esophageal Diverticulum
 nameZh: 食道憩室
 bodySystem: gastrointestinal
 description: 食道壁局部向外膨出形成囊袋,食物可能滯留引起逆流或吸入性肺炎。可為先天性或後天性。
-
 aliases:
-  - { alias: 食管憩室, language: zh }
-  - { alias: Esophageal Pouch, language: en }
-
+  - alias: 食管憩室
+    language: zh
+  - alias: Esophageal Pouch
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 極罕見
-
 etiology:
   categories:
     - name: 先天性
@@ -27,7 +26,6 @@ etiology:
       examples:
         - 異物創傷
         - 慢性食道炎
-
 clinicalSigns:
   early:
     - 間歇性逆流
@@ -36,37 +34,58 @@ clinicalSigns:
     - 逆流未消化食物
     - 體重減輕
     - 吸入性肺炎
-
 diagnosis:
   primaryTests:
     - name: 食道攝影
-      notes: "顯影劑顯示囊袋狀膨出"
+      notes: 顯影劑顯示囊袋狀膨出
     - name: 內視鏡檢查
-      notes: "直視憩室"
+      notes: 直視憩室
     - name: 胸部 X 光
-      notes: "評估吸入性肺炎"
+      notes: 評估吸入性肺炎
   differentialDiagnoses:
     - 巨食道症
     - 食道狹窄
     - 食道異物
-
 treatment:
   medical:
     - 外科切除憩室 (definitive treatment)
     - 飲食管理 (小量多餐、流質或糊狀食物)
     - 預防吸入性肺炎
-
 prognosis:
-  general: "預後謹慎;手術矯正後可改善;未治療可能發生吸入性肺炎"
-
+  general: 預後謹慎;手術矯正後可改善;未治療可能發生吸入性肺炎
 prevention:
   - 避免異物吞食
   - 早期診斷及治療食道疾病
-
-
 guidelineRefs:
   - sourceOrg: Revista espanola de enfermedades digestivas
-    title: One stone two birds - Submucosal tunneling endoscopic resection for a large esophageal submucosal mass and esophageal diverticulum.
+    title: >-
+      One stone two birds - Submucosal tunneling endoscopic resection for a large esophageal submucosal mass and
+      esophageal diverticulum.
     url: https://pubmed.ncbi.nlm.nih.gov/39193695/
     type: case-report
-    pmid: "39193695"
+    pmid: '39193695'
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: common
+diagnosticAlgorithm:
+  title: 食道憩室 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - dysphagia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 食道攝影
+          notes: 顯影劑顯示囊袋狀膨出
+        - name: 內視鏡檢查
+          notes: 直視憩室
+        - name: 胸部 X 光
+          notes: 評估吸入性肺炎
+ddxSource: auto-generated

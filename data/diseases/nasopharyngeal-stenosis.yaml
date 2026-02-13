@@ -3,11 +3,11 @@ nameEn: Nasopharyngeal Stenosis
 nameZh: 鼻咽狹窄
 bodySystem: respiratory
 description: 鼻咽狹窄為鼻咽部異常組織增生（薄膜或瘢痕組織）導致鼻咽腔狹窄或閉塞的疾病。貓隻較犬隻常見。可為先天性或後天性（繼發於上呼吸道感染、嘔吐、手術或創傷後的瘢痕形成）。導致慢性鼻塞與呼吸困難。
-
 aliases:
-  - { alias: 鼻咽部狹窄, language: zh }
-  - { alias: Nasopharyngeal Membrane, language: en }
-
+  - alias: 鼻咽部狹窄
+    language: zh
+  - alias: Nasopharyngeal Membrane
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻較犬常見。常繼發於嚴重上呼吸道感染（FHV-1、FCV）後的瘢痕形成。幼貓感染後尤其好發。
-
 etiology:
   categories:
     - name: 後天性（最常見）
@@ -28,7 +27,6 @@ etiology:
       examples:
         - 先天性鼻咽薄膜（congenital nasopharyngeal membrane）
         - 鼻咽部發育異常
-
 clinicalSigns:
   early:
     - 鼻塞（stertor，鼻鼾音）
@@ -39,14 +37,12 @@ clinicalSigns:
     - 食慾下降與體重減輕
     - 呼吸困難（嚴重狹窄時）
     - 口腔呼吸
-
 diagnosis:
   primaryTests:
     - name: 後鼻腔鏡（Retrograde Rhinoscopy）
       notes: 確診首選。可直接觀察鼻咽部薄膜或瘢痕狹窄。評估狹窄程度與範圍。
     - name: CT 掃描
       notes: 評估狹窄位置與範圍。排除腫瘤性原因。評估鼻甲骨與鼻竇狀態。
-
 treatment:
   principles:
     - 恢復鼻咽通暢為治療目標
@@ -56,33 +52,90 @@ treatment:
     - 球囊擴張術（balloon dilation，首選，可重複進行）
     - 鼻咽支架植入（metallic stent，頑固性狹窄）
     - 薄膜切除（手術或雷射）
-    - "術後：短期皮質類固醇（Prednisolone 1 mg/kg PO q12h × 5-7 天）減少再狹窄"
+    - 術後：短期皮質類固醇（Prednisolone 1 mg/kg PO q12h × 5-7 天）減少再狹窄
     - Mitomycin C 局部塗布（減少瘢痕再形成，有初步報告）
-
 prognosis: 球囊擴張術後多數病例臨床症狀顯著改善。復發率約 30-50%，可能需要多次擴張。鼻咽支架植入可提供較持久的通暢。先天性薄膜切除後復發率較低。嚴重纖維化狹窄治療困難。
-
-
 guidelineRefs:
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
     title: Treatment of nasopharyngeal stenosis using silicone thoracic catheter stents in 2 dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12330764/
     type: case-report
-    pmid: "40786734"
-  - sourceOrg: "Veterinary radiology &amp; ultrasound : the official journal of the American College of Veterinary Radiology and the International Veterinary Radiology Association"
+    pmid: '40786734'
+  - sourceOrg: >-
+      Veterinary radiology &amp; ultrasound : the official journal of the American College of Veterinary Radiology and
+      the International Veterinary Radiology Association
     title: Radiographic Characteristics of Feline Nasopharyngeal Stenosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12352471/
     type: research
-    pmid: "40810694"
+    pmid: '40810694'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Nasopharyngeal stenosis in cats: a retrospective study of 21 cases comparing endoscopic and surgical treatment (2018-2022)."
+    title: >-
+      Nasopharyngeal stenosis in cats: a retrospective study of 21 cases comparing endoscopic and surgical treatment
+      (2018-2022).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11565695/
     type: research
-    pmid: "39540664"
+    pmid: '39540664'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Interventional treatment of benign nasopharyngeal stenosis and imperforate nasopharynx in dogs and cats: 46 cases (2005-2013)."
+    title: >-
+      Interventional treatment of benign nasopharyngeal stenosis and imperforate nasopharynx in dogs and cats: 46 cases
+      (2005-2013).
     url: https://pubmed.ncbi.nlm.nih.gov/30398419/
     type: research
-    pmid: "30398419"
+    pmid: '30398419'
 pubmedQueries:
   - query: '"nasopharyngeal stenosis" AND (veterinary OR canine OR feline) AND ("balloon" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 鼻咽狹窄 診斷流程
+  steps:
+    - step: 1
+      action: 臨床懷疑
+      details: 慢性嚴重鼻塞+吸氣性鼻鼾不對抗生素治療反應
+      findings:
+        - 嚴重吸氣性鼻鼾
+        - 鼻腔氣流極度減少
+        - 張口呼吸
+        - 慢性上呼吸道炎症或手術史
+    - step: 2
+      action: 影像學評估
+      details: CT評估狹窄位置和範圍
+      findings:
+        - CT：鼻咽部軟組織密度增加
+        - 狹窄位置和長度
+        - 骨性vs膜性狹窄
+        - 排除腫瘤性病變
+    - step: 3
+      action: 鼻咽鏡確認
+      details: 鎮靜下直接觀察狹窄程度
+      findings:
+        - 環狀或膜狀狹窄
+        - 狹窄程度（>70%=嚴重）
+        - 組織活檢排除腫瘤
+        - 評估介入治療可行性
+    - step: 4
+      action: 介入性治療
+      details: 球囊擴張±支架±Mitomycin C
+      findings:
+        - 球囊擴張+Mitomycin C
+        - 嚴重/反覆→支架植入
+        - 術後呼吸改善評估
+        - 定期追蹤再狹窄
+clinicalPearls:
+  - 後天性NPS最常見原因是慢性上呼吸道炎症後的疤痕形成
+  - 球囊擴張簡單但復發率高——常需多次重複
+  - 支架植入提供最持久效果但有長期併發症
+  - Mitomycin C（抑制纖維母細胞增生）是減少再狹窄的新輔助策略
+  - CT是評估狹窄範圍的金標準——比X光敏感得多
+monitoringItems:
+  - 呼吸功能（鼻腔氣流改善）
+  - 鼻鼾聲減輕程度
+  - 定期鼻咽鏡追蹤（再狹窄）
+  - 支架併發症監測（組織增生、感染、斷裂）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+ddxSource: book

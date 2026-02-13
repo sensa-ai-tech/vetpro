@@ -3,18 +3,18 @@ nameEn: Feline Chronic Gingivostomatitis Detail
 nameZh: 貓慢性齒齦口炎詳論
 bodySystem: dental
 description: 貓慢性齒齦口炎是嚴重的免疫介導性口腔炎症疾病,特徵為齒齦、頰黏膜和咽部嚴重增生性和潰瘍性病變。疼痛劇烈,治療困難,全口拔牙為最有效治療,約60-80%可獲緩解。
-
 aliases:
-  - { alias: 貓口炎, language: zh }
-  - { alias: FCGS, language: en }
-  - { alias: Feline Stomatitis, language: en }
-
+  - alias: 貓口炎
+    language: zh
+  - alias: FCGS
+    language: en
+  - alias: Feline Stomatitis
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
     notes: 各年齡均可發生,中年貓(6-8歲)最常見
-
 etiology:
   categories:
     - name: 免疫介導
@@ -29,7 +29,6 @@ etiology:
     - name: 遺傳易感性
       examples:
         - 某些品種或家系易感
-
 clinicalSigns:
   early:
     - 齒齦紅腫增厚
@@ -44,23 +43,21 @@ clinicalSigns:
     - 咬合疼痛明顯
     - 體重下降
     - 蓬頭垢面(因疼痛無法理毛)
-
 diagnosis:
   primaryTests:
     - name: 口腔檢查(麻醉下)
-      notes: "齒齦和頰黏膜增生、潰瘍、出血,咽部深紅色炎症(caudal stomatitis)"
+      notes: 齒齦和頰黏膜增生、潰瘍、出血,咽部深紅色炎症(caudal stomatitis)
     - name: 組織病理
-      notes: "淋巴球和漿細胞浸潤,排除腫瘤和嗜酸性肉芽腫"
+      notes: 淋巴球和漿細胞浸潤,排除腫瘤和嗜酸性肉芽腫
     - name: 病毒檢測
-      notes: "FIV/FeLV/FCV PCR或抗體檢測"
+      notes: FIV/FeLV/FCV PCR或抗體檢測
     - name: 全口牙科X光
-      notes: "評估牙齒吸收和牙周病"
+      notes: 評估牙齒吸收和牙周病
   differentialDiagnoses:
     - 嗜酸性肉芽腫
     - 口腔鱗狀細胞癌
     - 尿毒性口炎
     - 牙周病
-
 treatment:
   medical:
     - 全口拔牙(包括門齒)為最有效治療
@@ -72,30 +69,58 @@ treatment:
     - 抗生素:Clindamycin或Metronidazole
     - Chlorhexidine漱口液
     - 營養支持:餵食管(術前後)
-
 prognosis:
-  general: "全口拔牙後60-80%病例達完全或明顯改善,20-40%需持續免疫抑制治療。未拔牙僅藥物治療效果不佳且需終身用藥。FIV/FeLV陽性貓預後較差。早期全口拔牙預後優於晚期。"
-
+  general: 全口拔牙後60-80%病例達完全或明顯改善,20-40%需持續免疫抑制治療。未拔牙僅藥物治療效果不佳且需終身用藥。FIV/FeLV陽性貓預後較差。早期全口拔牙預後優於晚期。
 prevention:
   - 定期牙科檢查早期發現
   - FIV/FeLV檢測和預防
   - 良好口腔衛生
   - 早期診斷早期治療
-
-
 guidelineRefs:
   - sourceOrg: BMC veterinary research
-    title: "Mesenchymal stem cells therapy in companion animals: useful for immune-mediated diseases?"
+    title: 'Mesenchymal stem cells therapy in companion animals: useful for immune-mediated diseases?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6805418/
     type: review
-    pmid: "31640767"
+    pmid: '31640767'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Mesenchymal stem cell therapy in cats: Current knowledge and future potential."
+    title: 'Mesenchymal stem cell therapy in cats: Current knowledge and future potential.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10816289/
     type: review
-    pmid: "29478398"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "A Case Series Analysis of Dental Extractions' Outcome in Cats with Chronic Gingivostomatitis Carrying Retroviral Disease."
+    pmid: '29478398'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      A Case Series Analysis of Dental Extractions' Outcome in Cats with Chronic Gingivostomatitis Carrying Retroviral
+      Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8614259/
     type: research
-    pmid: "34828037"
+    pmid: '34828037'
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: common
+diagnosticAlgorithm:
+  title: 貓慢性齒齦口炎詳論 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - ptyalism 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 口腔檢查(麻醉下)
+          notes: 齒齦和頰黏膜增生、潰瘍、出血,咽部深紅色炎症(caudal stomatitis)
+        - name: 組織病理
+          notes: 淋巴球和漿細胞浸潤,排除腫瘤和嗜酸性肉芽腫
+        - name: 病毒檢測
+          notes: FIV/FeLV/FCV PCR或抗體檢測
+ddxSource: auto-generated

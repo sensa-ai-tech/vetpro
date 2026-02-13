@@ -2,12 +2,14 @@ slug: hepatic-abscess
 nameEn: Hepatic Abscess
 nameZh: 肝膿瘍
 bodySystem: infectious
-description: 肝膿瘍為肝臟實質內的局灶性化膿性感染。犬貓肝膿瘍相對少見，常見感染途徑包括門脈血行感染（腸道菌血症）、膽道上行感染、肝動脈血行感染（敗血症）或外傷/手術後直接感染。致病菌以 E. coli、Clostridium spp.、Bacteroides spp. 等厭氧菌與腸道菌為主。
-
+description: >-
+  肝膿瘍為肝臟實質內的局灶性化膿性感染。犬貓肝膿瘍相對少見，常見感染途徑包括門脈血行感染（腸道菌血症）、膽道上行感染、肝動脈血行感染（敗血症）或外傷/手術後直接感染。致病菌以 E. coli、Clostridium
+  spp.、Bacteroides spp. 等厭氧菌與腸道菌為主。
 aliases:
-  - { alias: 肝臟膿瘍, language: zh }
-  - { alias: Liver Abscess, language: en }
-
+  - alias: 肝臟膿瘍
+    language: zh
+  - alias: Liver Abscess
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻肝膿瘍罕見。可與膽管炎或腹腔感染相關。
-
 etiology:
   categories:
     - name: 感染途徑
@@ -31,7 +32,6 @@ etiology:
         - Bacteroides spp.
         - Staphylococcus spp.
         - 混合感染（好氧菌 + 厭氧菌）
-
 clinicalSigns:
   early:
     - 發燒
@@ -44,14 +44,12 @@ clinicalSigns:
     - 黃疸
     - 肝腫大
     - 敗血症（嚴重時）
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
       notes: 肝實質內低回音或混合回音病灶。膿瘍壁可見。超音波導引細針穿刺採樣（培養與細胞學）。
     - name: 血液檢查
       notes: 白血球升高伴左移。肝指數升高（ALP、ALT）。發炎指標升高（CRP）。血液培養可能陽性。
-
 treatment:
   principles:
     - 長期抗生素治療
@@ -59,22 +57,72 @@ treatment:
     - 治療基礎感染源
   general:
     - 長期廣效抗生素（4-6 週以上）
-    - "經驗性抗生素：Ampicillin/Sulbactam + Metronidazole（涵蓋厭氧菌）"
+    - 經驗性抗生素：Ampicillin/Sulbactam + Metronidazole（涵蓋厭氧菌）
     - 培養結果導向調整抗生素
     - 超音波導引經皮引流（大型膿瘍）
     - 手術肝葉切除（多發性或引流無效時）
     - 靜脈輸液支持
     - 治療原發感染源
-
 prognosis: 單發性肝膿瘍經適當抗生素治療與引流預後尚可。多發性肝膿瘍預後較差。合併敗血症者死亡率高。完整療程的抗生素治療（≥4-6 週）很重要。基礎病因若可控制預後較好。
-
-
 guidelineRefs:
   - sourceOrg: Open veterinary journal
-    title: "Production diseases in farm animals: A comprehensive and illustrated clinical, laboratory, and pathological overview."
+    title: >-
+      Production diseases in farm animals: A comprehensive and illustrated clinical, laboratory, and pathological
+      overview.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11910303/
     type: review
-    pmid: "40092187"
+    pmid: '40092187'
 pubmedQueries:
   - query: '"hepatic abscess" OR "liver abscess" AND (veterinary OR canine OR feline) AND ("treatment" OR "drainage")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 肝膿瘍 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估發熱、腹痛、食慾下降和黃疸等非特異性表現
+      findings:
+        - 間歇性或持續性發熱
+        - 前腹部疼痛
+        - 食慾下降和嗜睡
+    - step: 2
+      action: 實驗室與影像學檢查
+      details: 進行CBC、生化檢查和腹部超音波
+      findings:
+        - 白血球增多伴核左移
+        - 肝酵素和膽紅素升高
+        - 超音波顯示肝臟內低回聲或混合回聲腔性病變
+    - step: 3
+      action: 穿刺確診
+      details: 進行超音波引導細針抽吸和培養
+      findings:
+        - 抽出膿性液體
+        - 細菌培養鑑定致病菌（常為厭氧菌或腸道菌）
+        - 藥敏試驗指導抗生素選擇
+clinicalPearls:
+  - 肝膿瘍常為其他腹腔疾病的併發症，診斷時需同時尋找和治療潛在病因
+  - 超音波引導下 FNA 和細菌培養是確診和指導抗生素治療的關鍵步驟
+  - 厭氧菌培養非常重要——肝膿瘍常涉及厭氧菌，必須同時進行需氧和厭氧培養
+  - 抗生素療程通常需要 4-8 週，不應過早停藥，需以超音波確認膿瘍消退
+  - 間歇性發熱且對常規抗生素反應不佳的病例應高度懷疑肝膿瘍，需進行腹部超音波檢查
+monitoringItems:
+  - 每 1-2 週腹部超音波追蹤膿瘍大小和回音性質變化
+  - 定期 CBC 評估白血球數和嗜中性球變化
+  - 肝功能生化監測：ALT、ALP、膽紅素、白蛋白
+  - 體溫監測：發熱消退通常是治療有效的早期指標
+  - CRP 或 SAA（血清澱粉樣蛋白 A）追蹤發炎程度
+  - 完成抗生素療程後繼續超音波追蹤確認無復發
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+  - symptomId: hepatomegaly
+    frequency: common
+ddxSource: book

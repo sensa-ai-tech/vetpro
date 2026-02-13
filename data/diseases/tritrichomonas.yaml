@@ -3,12 +3,13 @@ nameEn: Tritrichomonas
 nameZh: 胎兒三毛滴蟲感染
 bodySystem: infectious
 description: 胎兒三毛滴蟲 (Tritrichomonas foetus) 為貓大腸慢性腹瀉的重要病原，尤其在幼貓與多貓環境中。感染引起大腸性腹瀉，糞便含黏液或血絲。多數貓最終自行清除感染，但可能需數月至數年。犬感染極罕見。
-
 aliases:
-  - { alias: 三毛滴蟲感染, language: zh }
-  - { alias: Tritrichomonas foetus Infection, language: en }
-  - { alias: Feline Tritrichomoniasis, language: en }
-
+  - alias: 三毛滴蟲感染
+    language: zh
+  - alias: Tritrichomonas foetus Infection
+    language: en
+  - alias: Feline Tritrichomoniasis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 幼貓與多貓環境中非常常見（收容所盛行率可達 30%）。純種貓可能較易感。多數 <2 歲發病。常與 Giardia 混合感染。
-
 etiology:
   categories:
     - name: 病原與傳播
@@ -30,7 +30,6 @@ etiology:
         - 定殖大腸黏膜表面
         - 引起淋巴球漿細胞性大腸炎
         - 不侵入組織但引起黏膜損傷
-
 clinicalSigns:
   early:
     - 慢性大腸性腹瀉（半成形至水樣）
@@ -42,7 +41,6 @@ clinicalSigns:
     - 肛門周圍紅腫刺激
     - 裡急後重
     - 體重通常維持正常
-
 diagnosis:
   primaryTests:
     - name: 糞便 PCR
@@ -53,7 +51,6 @@ diagnosis:
     - InPouch TF 培養（專門培養系統）
     - 同時篩檢 Giardia（常混合感染）
     - 排除其他大腸炎原因
-
 treatment:
   principles:
     - Ronidazole 為唯一有效藥物
@@ -67,41 +64,82 @@ treatment:
     - 多貓家庭所有陽性貓同時治療
     - 增加貓砂盆數量與清理頻率
     - 無藥物治療時多數貓 2-5 年內自行清除
-
 prognosis: 貓 Tritrichomonas 感染 ronidazole 治療成功率高（>90%）。未治療者多數在 2-5 年內自行清除但期間持續腹瀉。神經毒性為 ronidazole 主要副作用，需監測。整體預後良好，不致死。
-
-
 guidelineRefs:
   - sourceOrg: International journal of molecular sciences
-    title: "A Multi-Omics Perspective on Tritrichomonas foetus: From Genomics to Future Directions."
+    title: 'A Multi-Omics Perspective on Tritrichomonas foetus: From Genomics to Future Directions.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12428144/
     type: review
-    pmid: "40943266"
+    pmid: '40943266'
     relevance: primary
   - sourceOrg: Parasite immunology
-    title: "Systematic Review of Vaccine Strategies Against Tritrichomonas foetus Infection in Cattle: Insights, Challenges, and Prospects."
+    title: >-
+      Systematic Review of Vaccine Strategies Against Tritrichomonas foetus Infection in Cattle: Insights, Challenges,
+      and Prospects.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11751591/
     type: review
-    pmid: "39838701"
+    pmid: '39838701'
     relevance: primary
   - sourceOrg: Open veterinary journal
-    title: "Bovine trichomoniasis: A hidden threat to reproductive efficiency."
+    title: 'Bovine trichomoniasis: A hidden threat to reproductive efficiency.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11682740/
     type: review
-    pmid: "39737020"
+    pmid: '39737020'
     relevance: primary
   - sourceOrg: Veterinary and animal science
-    title: What about the bull? A systematic review about the role of males in bovine infectious infertility within cattle herds.
+    title: >-
+      What about the bull? A systematic review about the role of males in bovine infectious infertility within cattle
+      herds.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9840180/
     type: review
-    pmid: "36647444"
+    pmid: '36647444'
     relevance: primary
   - sourceOrg: Trends in parasitology
     title: Persistent Trichomonas vaginalis infections and the pseudocyst form.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10844888/
     type: review
-    pmid: "37806787"
+    pmid: '37806787'
     relevance: primary
 pubmedQueries:
   - query: '"Tritrichomonas foetus" AND (feline OR cat) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: faecal-tenesmus
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: haematochezia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 胎兒三毛滴蟲感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - faecal-tenesmus 相關症狀
+        - diarrhoea 相關症狀
+        - haematochezia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便 PCR
+          notes: 確定診斷金標準。使用專門的 T. foetus PCR（InPouch TF 培養 + PCR 可提高敏感度）
+        - name: 新鮮糞便直接抹片
+          notes: 新鮮（<6 小時）糞便稀釋後鏡檢可見特徵性滾動前進的營養體。需與 Giardia 營養體區分
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - InPouch TF 培養（專門培養系統）
+        - 同時篩檢 Giardia（常混合感染）
+        - 排除其他大腸炎原因
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - Ronidazole 為唯一有效藥物
+        - 多數貓最終自行清除
+        - 環境管理減少傳播
+ddxSource: auto-generated

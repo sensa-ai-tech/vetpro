@@ -3,11 +3,11 @@ nameEn: Multicentric Lymphoma
 nameZh: 多中心型淋巴瘤
 bodySystem: oncology
 description: 犬最常見的淋巴瘤類型（約占 80%），表現為全身多處淋巴結無痛性腫大。分為 B 細胞型（預後較佳）與 T 細胞型。為犬最常見的血液腫瘤之一，化療反應率高。
-
 aliases:
-  - { alias: "Multicentric Lymphosarcoma", language: en }
-  - { alias: "多中心淋巴瘤", language: zh }
-
+  - alias: Multicentric Lymphosarcoma
+    language: en
+  - alias: 多中心淋巴瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓以消化道型與縱膈型較常見。
-
 etiology:
   categories:
     - name: 腫瘤性
@@ -23,7 +22,6 @@ etiology:
         - 淋巴球惡性增生
         - B 細胞型（較常見，預後較佳）
         - T 細胞型（預後較差）
-
 clinicalSigns:
   early:
     - 全身淋巴結無痛性腫大
@@ -35,7 +33,6 @@ clinicalSigns:
     - 體重減輕
     - 脾肝腫大
     - 貧血
-
 diagnosis:
   primaryTests:
     - name: 淋巴結細針穿刺
@@ -44,7 +41,6 @@ diagnosis:
       notes: B vs T 細胞分型。預後相關
     - name: 分期檢查
       notes: CBC、生化、胸腹腔影像
-
 treatment:
   principles:
     - 化療為主要治療
@@ -54,36 +50,71 @@ treatment:
     - 緩解率 80-90%
     - 單用 Prednisolone（經濟限制時）：緩解率 50% 但短暫
     - B 細胞型預後優於 T 細胞型
-
 prognosis: CHOP 化療中位存活 12-14 個月。B 細胞型中位存活較 T 細胞型長。不治療中位存活 4-6 週。單用 Prednisolone 中位存活 1-2 個月。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Canine Multicentric Lymphoma: Diagnostic, Treatment, and Prognostic Insights."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Canine Multicentric Lymphoma: Diagnostic, Treatment, and Prognostic Insights.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11816192/
     type: review
-    pmid: "39943162"
+    pmid: '39943162'
   - sourceOrg: BMC veterinary research
-    title: "Canine lymphoma in Croatia: a fourteen-year retrospective study."
+    title: 'Canine lymphoma in Croatia: a fourteen-year retrospective study.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11912587/
     type: research
-    pmid: "40091038"
+    pmid: '40091038'
   - sourceOrg: BMC veterinary research
-    title: "Development and validation of prognostic nomogram for overall survival in canine multicentric lymphoma: a retrospective study."
+    title: >-
+      Development and validation of prognostic nomogram for overall survival in canine multicentric lymphoma: a
+      retrospective study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12225038/
     type: research
-    pmid: "40604990"
+    pmid: '40604990'
   - sourceOrg: Veterinary sciences
-    title: "Feline Lymphoma in Focus: Examining the Patterns and Types in Croatia's Pathological Records."
+    title: 'Feline Lymphoma in Focus: Examining the Patterns and Types in Croatia''s Pathological Records.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12567832/
     type: research
-    pmid: "41150128"
+    pmid: '41150128'
   - sourceOrg: Veterinary world
-    title: Hematological and blood biochemistry parameters as prognostic indicators of survival in canine multicentric lymphoma treated with COP and L-COP protocols.
+    title: >-
+      Hematological and blood biochemistry parameters as prognostic indicators of survival in canine multicentric
+      lymphoma treated with COP and L-COP protocols.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11000476/
     type: research
-    pmid: "38595652"
+    pmid: '38595652'
 pubmedQueries:
   - query: '"multicentric lymphoma" AND (veterinary OR canine) AND ("CHOP" OR "chemotherapy")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: hepatomegaly
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 多中心型淋巴瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - hepatomegaly 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 淋巴結細針穿刺
+          notes: 大量淋巴母細胞（中至大型淋巴球）。快速診斷
+        - name: 流式細胞術（flow cytometry）
+          notes: B vs T 細胞分型。預後相關
+        - name: 分期檢查
+          notes: CBC、生化、胸腹腔影像
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 化療為主要治療
+        - CHOP protocol 為標準方案
+ddxSource: auto-generated

@@ -3,12 +3,13 @@ nameEn: L-form Bacterial Infection
 nameZh: L型細菌感染
 bodySystem: infectious
 description: L型細菌是缺乏細胞壁的細菌變異型,主要由正常細菌在抗生素壓力或免疫攻擊下形成。此類細菌難以培養及檢測,可引起慢性難治性感染,特別是泌尿道、呼吸道及傷口感染,對β-內醯胺類抗生素天然抗性。
-
 aliases:
-  - { alias: 無壁細菌, language: zh }
-  - { alias: Cell Wall Deficient Bacteria, language: en }
-  - { alias: L-phase Bacteria, language: en }
-
+  - alias: 無壁細菌
+    language: zh
+  - alias: Cell Wall Deficient Bacteria
+    language: en
+  - alias: L-phase Bacteria
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 慢性下泌尿道疾病(FLUTD)中可能涉及L型細菌,但診斷困難
-
 etiology:
   categories:
     - name: 細菌變異
@@ -27,7 +27,6 @@ etiology:
         - 免疫系統攻擊細菌細胞壁導致變異
         - 常見菌種:Staphylococcus、Streptococcus、E. coli、Proteus
         - 可在體內長期潛伏,條件適合時復原為正常細菌
-
 clinicalSigns:
   early:
     - 慢性或復發性感染症狀
@@ -39,29 +38,27 @@ clinicalSigns:
     - 標準細菌培養陰性但臨床症狀持續
     - 慢性發炎、組織纖維化
     - 體重減輕、精神沉鬱
-
 diagnosis:
   primaryTests:
     - name: 特殊細菌培養
-      notes: "高滲透壓培養基(L-form agar)、延長培養時間(7-14天)"
+      notes: 高滲透壓培養基(L-form agar)、延長培養時間(7-14天)
     - name: 電子顯微鏡
-      notes: "組織或體液樣本可見缺乏細胞壁的多形性細菌"
+      notes: 組織或體液樣本可見缺乏細胞壁的多形性細菌
     - name: 16S rRNA基因定序
-      notes: "分子診斷檢測無法培養的細菌DNA"
+      notes: 分子診斷檢測無法培養的細菌DNA
     - name: 標準細菌培養
-      notes: "通常陰性或僅少量生長"
+      notes: 通常陰性或僅少量生長
     - name: 尿液分析
-      notes: "膿尿、血尿但細菌培養陰性(泌尿道感染)"
+      notes: 膿尿、血尿但細菌培養陰性(泌尿道感染)
   differentialDiagnoses:
     - 無菌性膿尿
     - 真菌感染
     - 分枝桿菌感染
     - Mycoplasma感染
     - 厭氧菌感染
-
 treatment:
   medical:
-    - 非β-內醯胺類抗生素(首選):
+    - 非β-內醯胺類抗生素(首選): null
     - Doxycycline 10 mg/kg PO BID x 4-6週
     - Enrofloxacin 5-10 mg/kg PO SID x 4-6週
     - Azithromycin 10 mg/kg PO SID(每週3次)x 4-6週
@@ -69,13 +66,54 @@ treatment:
     - 長療程:至少4-6週,症狀消失後再延長2週
     - 支持性照護:充足水分、營養支持
     - 定期追蹤:治療結束後1、3、6個月複查
-
 prognosis:
-  general: "預後謹慎。L型細菌感染難以根治,復發率高達40-60%。需長期抗生素治療及密切監測。部分病例可能需終身間歇性抗生素治療以控制症狀。"
-
+  general: 預後謹慎。L型細菌感染難以根治,復發率高達40-60%。需長期抗生素治療及密切監測。部分病例可能需終身間歇性抗生素治療以控制症狀。
 prevention:
   - 避免不當使用β-內醯胺類抗生素
   - 細菌培養及藥敏試驗指導用藥
   - 完整抗生素療程,避免提前停藥
   - 慢性感染早期積極治療
   - 定期健康檢查,監測復發
+diagnosticAlgorithm:
+  title: 螺旋桿菌感染 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估上消化道症狀
+      findings:
+        - 慢性間歇性嘔吐
+        - 食慾不振
+        - 噯氣或流涎
+        - 體重減輕（嚴重病例）
+    - step: 2
+      action: 胃鏡檢查
+      details: 進行上消化道內視鏡檢查和胃黏膜活檢
+      findings:
+        - 胃黏膜充血或糜爛
+        - 多點胃黏膜活檢取樣
+        - 胃液pH值測定
+        - 胃竇和胃體多點取樣
+    - step: 3
+      action: 病原體鑑定
+      details: 對活檢樣本進行螺旋桿菌檢測
+      findings:
+        - 組織學Warthin-Starry銀染色見螺旋形菌
+        - 快速尿素酶試驗陽性
+        - PCR鑑定Helicobacter種
+        - 多數犬貓胃內有Helicobacter定殖但致病意義不明
+clinicalPearls:
+  - 犬貓Helicobacter帶原率極高，陽性結果不等於致病原因——需排除其他嘔吐原因後再歸因
+  - 治療前應完善胃鏡評估，因為胃淋巴瘤等嚴重疾病可能表現類似
+  - 三聯療法療程通常14天，需飼主良好配合
+  - Helicobacter spp.具有人畜共通潛力——免疫低下飼主應注意
+monitoringItems:
+  - 嘔吐頻率和症狀改善追蹤
+  - 治療4-8週後可考慮追蹤胃鏡評估
+  - 體重和食慾監測
+  - 長期復發率評估
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

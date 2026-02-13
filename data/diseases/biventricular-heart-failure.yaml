@@ -3,12 +3,13 @@ nameEn: Biventricular Heart Failure
 nameZh: 雙心室心臟衰竭
 bodySystem: cardiac
 description: 左右心室同時功能不全，導致肺水腫與體循環鬱血並存。臨床表現包含呼吸困難、腹水及周邊水腫。
-
 aliases:
-  - { alias: 雙側心衰竭, language: zh }
-  - { alias: Congestive Heart Failure, language: en }
-  - { alias: 充血性心衰竭, language: zh }
-
+  - alias: 雙側心衰竭
+    language: zh
+  - alias: Congestive Heart Failure
+    language: en
+  - alias: 充血性心衰竭
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 限制型或擴張型心肌病變晚期
-
 etiology:
   categories:
     - name: 心肌病變
@@ -31,7 +31,6 @@ etiology:
     - name: 全身性疾病
       examples:
         - 甲狀腺功能亢進 (貓)
-
 clinicalSigns:
   early:
     - 運動不耐
@@ -43,20 +42,18 @@ clinicalSigns:
     - 胸腔積液
     - 周邊水腫
     - 惡病質
-
 diagnosis:
   primaryTests:
     - name: 胸部 X 光
-      notes: "雙側心室擴張、肺水腫、胸腔積液"
+      notes: 雙側心室擴張、肺水腫、胸腔積液
     - name: 心臟超音波
-      notes: "評估雙側心室功能、瓣膜功能、心房大小"
+      notes: 評估雙側心室功能、瓣膜功能、心房大小
     - name: 心電圖
-      notes: "評估心律不整"
+      notes: 評估心律不整
   differentialDiagnoses:
     - 低蛋白血症合併肺炎
     - 腎衰竭
     - 嚴重貧血
-
 treatment:
   medical:
     - Furosemide 2-4 mg/kg PO/IV q12-24h (依病情調整)
@@ -64,11 +61,43 @@ treatment:
     - ACE 抑制劑 (enalapril 0.5 mg/kg PO q12-24h)
     - Spironolactone 1-2 mg/kg PO q12-24h
     - 氧氣治療 (急性期)
-
 prognosis:
-  general: "預後不良；多為晚期心臟病表現，需長期藥物控制，存活時間通常數月至一年"
-
+  general: 預後不良；多為晚期心臟病表現，需長期藥物控制，存活時間通常數月至一年
 prevention:
   - 早期診斷及治療單側心衰竭
   - 定期監測心臟功能
   - 嚴格藥物遵從性
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 雙心室心臟衰竭 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸部 X 光
+          notes: 雙側心室擴張、肺水腫、胸腔積液
+        - name: 心臟超音波
+          notes: 評估雙側心室功能、瓣膜功能、心房大小
+        - name: 心電圖
+          notes: 評估心律不整
+ddxSource: auto-generated

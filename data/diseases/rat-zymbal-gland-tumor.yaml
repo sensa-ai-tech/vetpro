@@ -3,18 +3,19 @@ nameEn: Rat Zymbal Gland Tumor
 nameZh: 大鼠齊巴氏腺腫瘤
 bodySystem: oncology
 description: 齊巴氏腺（Zymbal's gland）為大鼠耳道基部的皮脂腺，其腫瘤為老年大鼠偶見的腫瘤類型。腫瘤表現為耳基部逐漸增大的腫塊，多為惡性，可侵犯周圍組織包括耳道與顳骨。
-
 aliases:
-  - { alias: 大鼠耳腺腫瘤, language: zh }
-  - { alias: 大鼠聽道皮脂腺腫瘤, language: zh }
-  - { alias: Zymbal gland carcinoma, language: en }
-  - { alias: Rat auditory sebaceous gland tumor, language: en }
-
+  - alias: 大鼠耳腺腫瘤
+    language: zh
+  - alias: 大鼠聽道皮脂腺腫瘤
+    language: zh
+  - alias: Zymbal gland carcinoma
+    language: en
+  - alias: Rat auditory sebaceous gland tumor
+    language: en
 species:
   - speciesCommon: rat
     prevalence: uncommon
     notes: 老年大鼠偶見。雄鼠可能較常見。多為惡性腺癌。某些化學致癌物研究中發生率較高。
-
 etiology:
   categories:
     - name: 腫瘤性因素
@@ -25,7 +26,6 @@ etiology:
       examples:
         - 化學致癌物暴露（實驗背景較多）
         - 遺傳易感性
-
 clinicalSigns:
   early:
     - 耳基部出現小腫塊
@@ -38,7 +38,6 @@ clinicalSigns:
     - 面部不對稱
     - 疼痛（觸碰迴避）
     - 進食困難（侵犯顳顎關節時）
-
 diagnosis:
   primaryTests:
     - name: 臨床檢查
@@ -47,7 +46,6 @@ diagnosis:
       notes: 細針抽吸細胞學可初步判斷腫瘤性質
     - name: 組織病理學
       notes: 切除或切片檢查確定腫瘤類型與惡性程度
-
 treatment:
   principles:
     - 早期手術切除為首選
@@ -60,35 +58,69 @@ treatment:
     - 抗生素預防感染
     - 無法手術者以安寧照護為主
     - 定期追蹤檢查監測復發
-
 prognosis: 預後取決於腫瘤分期與手術完整性。早期完整切除者預後尚可。腫瘤侵犯周圍骨骼或無法完整切除者預後不良。惡性腫瘤復發率高。晚期或無法手術之病例以維持生活品質為目標。
-
-
 guidelineRefs:
   - sourceOrg: Journal of toxicologic pathology
-    title: "A case of spontaneous Zymbal's gland carcinoma with lung metastasis in an aged Fischer 344 rat."
+    title: A case of spontaneous Zymbal's gland carcinoma with lung metastasis in an aged Fischer 344 rat.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8484931/
     type: case-report
-    pmid: "34621110"
+    pmid: '34621110'
     relevance: supporting
-  - sourceOrg: "bioRxiv : the preprint server for biology"
+  - sourceOrg: 'bioRxiv : the preprint server for biology'
     title: Genome-scale multi-organ analysis of mutagenic effects of ethanol and acetaldehyde in Sprague Dawley rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12424950/
     type: research
-    pmid: "40950079"
+    pmid: '40950079'
     relevance: supporting
   - sourceOrg: Journal of occupational health
     title: Multi-organ carcinogenicity by inhalation exposure to 2-Bromopropane in rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9909380/
     type: research
-    pmid: "36756793"
+    pmid: '36756793'
     relevance: supporting
   - sourceOrg: Archives of toxicology
-    title: A miRNA signature for an environmental heterocyclic amine defined by a multi-organ carcinogenicity bioassay in the rat.
+    title: >-
+      A miRNA signature for an environmental heterocyclic amine defined by a multi-organ carcinogenicity bioassay in the
+      rat.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5836314/
     type: research
-    pmid: "28289824"
+    pmid: '28289824'
     relevance: supporting
 pubmedQueries:
   - query: '"rat" AND ("Zymbal gland" OR "auditory sebaceous gland") AND ("tumor" OR "carcinoma")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: head-tilt
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 大鼠齊巴氏腺腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dysphagia 相關症狀
+        - head-tilt 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床檢查
+          notes: 耳基部觸診發現腫塊。評估腫塊大小、固定程度、是否潰瘍
+        - name: 細胞學檢查
+          notes: 細針抽吸細胞學可初步判斷腫瘤性質
+        - name: 組織病理學
+          notes: 切除或切片檢查確定腫瘤類型與惡性程度
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 早期手術切除為首選
+        - 評估腫瘤侵犯範圍
+        - 疼痛管理
+ddxSource: auto-generated

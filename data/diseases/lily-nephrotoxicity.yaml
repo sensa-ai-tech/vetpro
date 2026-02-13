@@ -3,13 +3,15 @@ nameEn: Lily Nephrotoxicity
 nameZh: 百合腎毒性
 bodySystem: toxicology
 description: 百合腎毒性是貓攝入百合科植物（Lilium 屬或 Hemerocallis 屬）後引起的急性腎小管壞死。貓對百合極度敏感，即使少量接觸（花粉舔舐）即可致命。犬不受影響。
-
 aliases:
-  - { alias: 百合中毒腎衰竭, language: zh }
-  - { alias: 貓百合中毒, language: zh }
-  - { alias: Lily Poisoning in Cats, language: en }
-  - { alias: Lily-Induced Acute Kidney Injury, language: en }
-
+  - alias: 百合中毒腎衰竭
+    language: zh
+  - alias: 貓百合中毒
+    language: zh
+  - alias: Lily Poisoning in Cats
+    language: en
+  - alias: Lily-Induced Acute Kidney Injury
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓對百合極度敏感，所有部位均有毒（花瓣、葉片、花粉、花蕊、球莖、水）。微量攝入即可導致致命性急性腎衰竭。
-
 etiology:
   categories:
     - name: 有毒百合種類
@@ -36,7 +37,6 @@ etiology:
         - 導致近端腎小管上皮細胞急性壞死
         - 所有植物部位均有毒
         - 花瓶水亦含有毒成分
-
 clinicalSigns:
   early:
     - 嘔吐（攝入後1-3小時內，最早出現的症狀）
@@ -50,19 +50,17 @@ clinicalSigns:
     - 嚴重脫水
     - 嘔吐加劇
     - 口腔潰瘍
-
 diagnosis:
   primaryTests:
     - name: 病史與暴露確認
-      notes: "確認家中百合植物接觸史。貓口中、爪部或毛皮上可能殘留花粉。攝入量不重要——任何量均需緊急處理。"
+      notes: 確認家中百合植物接觸史。貓口中、爪部或毛皮上可能殘留花粉。攝入量不重要——任何量均需緊急處理。
     - name: 腎功能監測
-      notes: "BUN/Creatinine 每6-12小時連續監測。通常攝入後18-24小時開始上升。尿量監測（少尿是不良預後指標）。"
+      notes: BUN/Creatinine 每6-12小時連續監測。通常攝入後18-24小時開始上升。尿量監測（少尿是不良預後指標）。
   differentialDiagnoses:
     - 乙二醇中毒
     - 其他腎毒性物質
     - 急性腎損傷（其他原因）
     - 泌尿道阻塞（公貓）
-
 treatment:
   medical:
     - 攝入後2小時內催吐
@@ -75,12 +73,68 @@ treatment:
     - 營養支持
   surgical:
     - 通常不適用手術治療
-
 prognosis:
-  general: "攝入後18小時內開始積極輸液治療者預後良好（存活率 >90%）。延遲治療超過18小時者存活率急劇下降。已發展至少尿性腎衰竭者預後極差（死亡率 >50%）。腹膜透析可改善存活率但實際可用性有限。"
-
+  general: 攝入後18小時內開始積極輸液治療者預後良好（存活率 >90%）。延遲治療超過18小時者存活率急劇下降。已發展至少尿性腎衰竭者預後極差（死亡率 >50%）。腹膜透析可改善存活率但實際可用性有限。
 prevention:
   - 養貓家庭嚴禁種植或放置百合科植物
   - 飼主教育百合對貓的致命毒性
   - 注意花束中可能含有百合
   - 節慶期間（復活節、母親節）特別注意百合花束
+diagnosticAlgorithm:
+  title: 腎毒性 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 詢問藥物與毒物暴露史
+      findings:
+        - 近期使用NSAIDs、氨基糖苷類或順鉑
+        - 百合攝入（貓）
+        - 乙二醇（防凍液）攝入
+        - 葡萄/葡萄乾攝入
+    - step: 2
+      action: 腎功能急性變化
+      details: 連續監測腎指數
+      findings:
+        - BUN與肌酐急性升高
+        - SDMA早期升高
+        - 尿量減少
+        - 電解質失衡
+    - step: 3
+      action: 尿液分析
+      details: 腎小管損傷指標
+      findings:
+        - 管型（顆粒管型）
+        - 等張尿
+        - 葡萄糖尿（近端小管損傷）
+        - 草酸鈣結晶（乙二醇）
+    - step: 4
+      action: 解毒與支持治療
+      details: 針對特定毒物治療
+      findings:
+        - 乙二醇：Fomepizole或乙醇治療
+        - 百合：積極輸液利尿
+        - 停用腎毒性藥物
+        - 透析評估（嚴重案例）
+clinicalPearls:
+  - 百合對貓極度腎毒性，包括花粉
+  - 乙二醇中毒貓的治療窗口極短（<3小時）
+  - NSAIDs在脫水或低血壓動物中腎毒性風險大增
+  - 尿液中草酸鈣結晶提示乙二醇中毒
+  - 預防勝於治療：避免高風險情況
+monitoringItems:
+  - 尿量
+  - BUN/Creatinine q12-24h
+  - 電解質
+  - 尿液分析
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+ddxSource: book

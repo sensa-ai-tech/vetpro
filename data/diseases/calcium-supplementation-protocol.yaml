@@ -3,11 +3,11 @@ nameEn: Calcium Supplementation Protocol
 nameZh: 鈣離子補充方案
 bodySystem: metabolic
 description: 針對低血鈣症的鈣離子補充治療方案,包括急性靜脈補充（癲癇、強直）及慢性口服維持。靜脈補充需緩慢給予並監測心電圖,避免心律不整。
-
 aliases:
-  - { alias: 低血鈣治療方案, language: zh }
-  - { alias: Hypocalcemia Treatment Protocol, language: en }
-
+  - alias: 低血鈣治療方案
+    language: zh
+  - alias: Hypocalcemia Treatment Protocol
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓常因甲狀腺手術後副甲狀腺損傷需補充
-
 etiology:
   categories:
     - name: 適應症
@@ -26,7 +25,6 @@ etiology:
         - 產後低血鈣症（產乳熱）
         - 副甲狀腺功能低下
         - 急性胰臟炎
-
 clinicalSigns:
   early:
     - 離子鈣 <1.0 mmol/L（輕度）
@@ -35,40 +33,59 @@ clinicalSigns:
     - 離子鈣 <0.8 mmol/L（重度）
     - 強直性肌肉痙攣、癲癇
     - 體溫過高、呼吸窘迫
-
 diagnosis:
   primaryTests:
     - name: 血清離子鈣
-      notes: "離子鈣 <1.0 mmol/L（<4 mg/dL）"
+      notes: 離子鈣 <1.0 mmol/L（<4 mg/dL）
     - name: 心電圖
-      notes: "QT間期延長"
+      notes: QT間期延長
     - name: 副甲狀腺素（PTH）
-      notes: "評估副甲狀腺功能"
+      notes: 評估副甲狀腺功能
   differentialDiagnoses:
     - 急性症狀性低血鈣（緊急處理）
     - 慢性低血鈣（口服維持）
-
 treatment:
   medical:
-    - 急性症狀性低血鈣（癲癇、強直）：
-      - 10% Calcium gluconate 0.5-1.5 mL/kg IV slowly over 10-30 min
-      - 持續心電圖監測（若出現心搏過緩立即停止）
-      - 症狀緩解後改為持續輸液補充
-    - 持續靜脈補充：
-      - 10% Calcium gluconate 60-90 mg/kg/day（添加於輸液中）
-      - 監測離子鈣濃度每4-6小時
-    - 慢性口服維持：
-      - Calcium carbonate 25-50 mg/kg PO BID-TID
-      - Calcitriol 0.02-0.03 µg/kg PO SID（活性維生素D）
-      - 監測血鈣每1-2週,調整劑量
-    - 產後低血鈣：
-      - 急性處理後考慮早期離乳或補充配方奶
+    - >-
+      急性症狀性低血鈣（癲癇、強直）： - 10% Calcium gluconate 0.5-1.5 mL/kg IV slowly over 10-30 min - 持續心電圖監測（若出現心搏過緩立即停止） -
+      症狀緩解後改為持續輸液補充
+    - 持續靜脈補充： - 10% Calcium gluconate 60-90 mg/kg/day（添加於輸液中） - 監測離子鈣濃度每4-6小時
+    - 慢性口服維持： - Calcium carbonate 25-50 mg/kg PO BID-TID - Calcitriol 0.02-0.03 µg/kg PO SID（活性維生素D） - 監測血鈣每1-2週,調整劑量
+    - 產後低血鈣： - 急性處理後考慮早期離乳或補充配方奶
     - 目標維持離子鈣 >1.0 mmol/L
-
 prognosis:
-  general: "預後取決於潛在病因。產乳熱或急性胰臟炎經治療後預後良好,但副甲狀腺功能低下需終生補充。急性低血鈣未及時治療可能致命。"
-
+  general: 預後取決於潛在病因。產乳熱或急性胰臟炎經治療後預後良好,但副甲狀腺功能低下需終生補充。急性低血鈣未及時治療可能致命。
 prevention:
   - 懷孕後期母犬補充鈣質（小型犬）
   - 甲狀腺手術小心保護副甲狀腺
   - 定期監測血鈣（高風險患者）
+associatedSymptoms:
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: trembling
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 鈣離子補充方案 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - hyperthermia 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - trembling 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清離子鈣
+          notes: 離子鈣 <1.0 mmol/L（<4 mg/dL）
+        - name: 心電圖
+          notes: QT間期延長
+        - name: 副甲狀腺素（PTH）
+          notes: 評估副甲狀腺功能
+ddxSource: auto-generated

@@ -3,19 +3,20 @@ nameEn: Yorkshire Terrier Hypoglycemia
 nameZh: 約克夏梗低血糖症
 bodySystem: metabolic
 description: 約克夏梗低血糖症是該品種幼犬與超小型成犬因肝糖儲備不足而極度好發的代謝性急症。血糖低於 60 mg/dL 即可出現神經症狀，嚴重者可導致癲癇發作與死亡。
-
 aliases:
-  - { alias: 約克夏低血糖, language: zh }
-  - { alias: 幼犬低血糖症, language: zh }
-  - { alias: Yorkshire Terrier hypoglycemia, language: en }
-  - { alias: Toy breed hypoglycemia, language: en }
-
+  - alias: 約克夏低血糖
+    language: zh
+  - alias: 幼犬低血糖症
+    language: zh
+  - alias: Yorkshire Terrier hypoglycemia
+    language: en
+  - alias: Toy breed hypoglycemia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 約克夏梗幼犬（<4 月齡）與體重 <1.5 kg 的成犬最易感。肝糖儲備量極有限，禁食 4-6 小時即可能發生低血糖。
-
 etiology:
   categories:
     - name: 生理因素
@@ -30,7 +31,6 @@ etiology:
         - 寒冷
         - 腸胃不適導致進食減少
         - 過度活動
-
 clinicalSigns:
   early:
     - 嗜睡
@@ -44,22 +44,20 @@ clinicalSigns:
     - 意識喪失
     - 昏迷
     - 死亡（未即時處理）
-
 diagnosis:
   primaryTests:
     - name: 血糖測量
-      notes: "即時血糖儀檢測。<60 mg/dL 為低血糖，<40 mg/dL 為嚴重低血糖"
+      notes: 即時血糖儀檢測。<60 mg/dL 為低血糖，<40 mg/dL 為嚴重低血糖
     - name: 血液生化
-      notes: "排除其他低血糖原因：胰島素瘤、門脈分流、Addison 病"
+      notes: 排除其他低血糖原因：胰島素瘤、門脈分流、Addison 病
     - name: 肝功能評估
-      notes: "排除門脈系統分流（膽酸試驗）。約克夏梗 PSS 好發"
+      notes: 排除門脈系統分流（膽酸試驗）。約克夏梗 PSS 好發
   differentialDiagnoses:
     - 門脈系統分流
     - 胰島素瘤
     - Addison 病
     - 敗血症
     - 肝衰竭
-
 treatment:
   medical:
     - 輕度：口服糖漿或蜂蜜塗抹牙齦
@@ -67,13 +65,45 @@ treatment:
     - 重度：靜脈注射 5-10% Dextrose 持續輸液
     - 恢復後立即提供食物
     - 保溫處理
-
 prognosis:
-  general: "即時處理預後良好。多數幼犬隨年齡增長（>4-6 月齡）發作頻率下降。成犬低血糖需排除潛在疾病。體重過輕的超小型約克夏終生有風險。"
-
+  general: 即時處理預後良好。多數幼犬隨年齡增長（>4-6 月齡）發作頻率下降。成犬低血糖需排除潛在疾病。體重過輕的超小型約克夏終生有風險。
 prevention:
   - 少量多餐（幼犬每 3-4 小時餵食）
   - 隨身攜帶糖漿或營養膏
   - 避免長時間禁食
   - 避免過度運動與壓力
   - 維持適當環境溫度
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 約克夏梗低血糖症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - trembling 相關症狀
+        - seizures 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血糖測量
+          notes: 即時血糖儀檢測。<60 mg/dL 為低血糖，<40 mg/dL 為嚴重低血糖
+        - name: 血液生化
+          notes: 排除其他低血糖原因：胰島素瘤、門脈分流、Addison 病
+        - name: 肝功能評估
+          notes: 排除門脈系統分流（膽酸試驗）。約克夏梗 PSS 好發
+ddxSource: auto-generated

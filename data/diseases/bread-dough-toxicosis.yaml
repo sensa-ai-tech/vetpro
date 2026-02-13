@@ -3,11 +3,11 @@ nameEn: Bread Dough Toxicosis
 nameZh: 生麵團中毒
 bodySystem: toxicology
 description: 生酵母麵團在胃中發酵膨脹,引起胃擴張及乙醇中毒。可能導致胃扭轉及呼吸困難,屬急症。
-
 aliases:
-  - { alias: 酵母麵團中毒, language: zh }
-  - { alias: Yeast Dough Toxicity, language: en }
-
+  - alias: 酵母麵團中毒
+    language: zh
+  - alias: Yeast Dough Toxicity
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,13 +17,11 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 較少攝入
-
 etiology:
   categories:
     - name: 誤食生麵團
       examples:
         - 正在發酵的麵包或披薩麵團
-
 clinicalSigns:
   early:
     - 30分鐘-2小時內
@@ -34,17 +32,15 @@ clinicalSigns:
     - 呼吸困難(胃壓迫橫膈)
     - 低體溫、低血糖
     - 胃扭轉(可能)
-
 diagnosis:
   primaryTests:
     - name: 暴露史及腹部觸診
-      notes: "腹部明顯膨脹,有麵團氣味"
+      notes: 腹部明顯膨脹,有麵團氣味
     - name: 腹部X光
-      notes: "胃明顯擴張,內含氣體及物質"
+      notes: 胃明顯擴張,內含氣體及物質
   differentialDiagnoses:
     - 胃擴張扭轉
     - 腸阻塞
-
 treatment:
   medical:
     - 冷水灌胃(停止發酵,降低胃溫)
@@ -54,10 +50,40 @@ treatment:
     - 胃減壓(插胃管排氣)
     - 監測胃扭轉徵兆
     - 止吐藥、疼痛管理
-
 prognosis:
-  general: "及早移除麵團預後良好。若發展為胃扭轉則需緊急手術,死亡率增加。"
-
+  general: 及早移除麵團預後良好。若發展為胃扭轉則需緊急手術,死亡率增加。
 prevention:
   - 發酵麵團置於寵物無法接觸處
   - 懷疑誤食應立即就醫
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: abdominal-distension
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+diagnosticAlgorithm:
+  title: 生麵團中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - ataxia 相關症狀
+        - hypothermia-sign 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 暴露史及腹部觸診
+          notes: 腹部明顯膨脹,有麵團氣味
+        - name: 腹部X光
+          notes: 胃明顯擴張,內含氣體及物質
+ddxSource: auto-generated

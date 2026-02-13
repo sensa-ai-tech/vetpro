@@ -3,20 +3,22 @@ nameEn: Chinchilla Fur Slip
 nameZh: 絨鼠脫毛
 bodySystem: dermatology
 description: 絨鼠特有的防禦機制，受驚嚇或粗暴抓取時大面積被毛脫落 (fur slip)，為正常生理反應但可影響外觀，被毛通常可在數週至數月內再生。
-
 aliases:
-  - { alias: 龍貓脫毛, language: zh }
-  - { alias: 絨鼠毛片脫落, language: zh }
-  - { alias: 絨鼠防禦性脫毛, language: zh }
-  - { alias: Chinchilla fur release, language: en }
-  - { alias: Chinchilla defensive hair loss, language: en }
-
+  - alias: 龍貓脫毛
+    language: zh
+  - alias: 絨鼠毛片脫落
+    language: zh
+  - alias: 絨鼠防禦性脫毛
+    language: zh
+  - alias: Chinchilla fur release
+    language: en
+  - alias: Chinchilla defensive hair loss
+    language: en
 species:
   - speciesCommon: chinchilla
     speciesScientific: Chinchilla lanigera
     prevalence: common
     notes: 為絨鼠特有的自然防禦機制 (類似壁虎斷尾)。被掠食者抓住時釋放大片被毛逃脫。每個毛囊含 60-80 根毛，脫落時整片脫離留下光滑皮膚。需與病理性脫毛 (黴菌、咬毛症) 鑑別。
-
 etiology:
   categories:
     - name: 生理性防禦反應
@@ -32,7 +34,6 @@ etiology:
         - 社會化不足 (不習慣人類接觸)
         - 多鼠同籠打架
         - 頻繁驚嚇刺激
-
 clinicalSigns:
   early:
     - 大片被毛突然脫落 (一次事件)
@@ -48,22 +49,20 @@ clinicalSigns:
     - 嚴重反覆脫毛致大面積禿露 (慢性緊迫)
     - 長期禿露區皮膚可能乾燥
     - 心理緊迫行為 (躲避、咬人)
-
 diagnosis:
   primaryTests:
     - name: 病史與理學檢查
-      notes: "急性突然脫毛 + 清晰邊界 + 皮膚光滑無炎症 + 受驚嚇或抓取病史 = 典型 fur slip。需與病理性脫毛鑑別"
+      notes: 急性突然脫毛 + 清晰邊界 + 皮膚光滑無炎症 + 受驚嚇或抓取病史 = 典型 fur slip。需與病理性脫毛鑑別
     - name: 皮膚檢查
-      notes: "脫毛區皮膚正常 (無紅腫、鱗屑、結痂)。與黴菌感染 (鱗屑結痂) 和咬毛症 (斷毛不等長) 鑑別"
+      notes: 脫毛區皮膚正常 (無紅腫、鱗屑、結痂)。與黴菌感染 (鱗屑結痂) 和咬毛症 (斷毛不等長) 鑑別
   imaging:
     - name: 不適用
-      notes: "fur slip 為生理性反應，無需影像檢查"
+      notes: fur slip 為生理性反應，無需影像檢查
   additional:
     - 黴菌培養 (排除皮黴菌症)
     - 皮膚刮搔 (排除外寄生蟲)
     - 行為評估 (排除咬毛症 fur chewing)
     - 環境與飼養管理評估
-
 treatment:
   principles:
     - fur slip 本身不需治療 (被毛會自行再生)
@@ -72,7 +71,7 @@ treatment:
     - 減少環境緊迫
   medications:
     - name: 通常不需要藥物治療
-      dose: "不適用"
+      dose: 不適用
       notes: fur slip 為生理反應，被毛 6-8 週開始再生，數月恢復完整
   general:
     - 教導飼主正確抓持方法 (托住底部，避免抓背毛)
@@ -84,26 +83,60 @@ treatment:
     - 被毛再生期間確保營養良好
     - 預防籠具卡毛 (檢查網格間距)
     - 不需要特殊外用藥
-
 prognosis: 預後優良。被毛通常 6-8 週開始再生，2-4 個月完全恢復。不會造成永久性禿露。反覆發生提示飼養管理問題需改善。新生毛髮顏色可能暫時不同但最終會恢復正常。適當的抓持技巧與環境管理可有效預防。
-
 guidelineRefs:
   - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
-    title: "Dermatologic Diseases of Small Mammals"
+    title: Dermatologic Diseases of Small Mammals
     url: https://pubmed.ncbi.nlm.nih.gov/23642861/
     type: review
-    pmid: "23642861"
+    pmid: '23642861'
   - sourceOrg: Journal of Exotic Pet Medicine
-    title: "Common conditions of chinchillas"
+    title: Common conditions of chinchillas
     url: https://pubmed.ncbi.nlm.nih.gov/27912826/
     type: review
-    pmid: "27912826"
-
+    pmid: '27912826'
 pubmedQueries:
   - query: '"chinchilla" AND ("fur slip" OR "fur loss" OR "alopecia" OR "hair loss") AND ("behavior" OR "management")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "EXL"
-  sectionTitle: "CHINCHILLAS"
+  chapter: EXL
+  sectionTitle: CHINCHILLAS
   pdfPage: 2044
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: common
+  - symptomId: alopecia
+    frequency: common
+diagnosticAlgorithm:
+  title: 絨鼠脫毛 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史與理學檢查
+          notes: 急性突然脫毛 + 清晰邊界 + 皮膚光滑無炎症 + 受驚嚇或抓取病史 = 典型 fur slip。需與病理性脫毛鑑別
+        - name: 皮膚檢查
+          notes: 脫毛區皮膚正常 (無紅腫、鱗屑、結痂)。與黴菌感染 (鱗屑結痂) 和咬毛症 (斷毛不等長) 鑑別
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 黴菌培養 (排除皮黴菌症)
+        - 皮膚刮搔 (排除外寄生蟲)
+        - 行為評估 (排除咬毛症 fur chewing)
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - fur slip 本身不需治療 (被毛會自行再生)
+        - 矯正造成脫毛的原因
+        - 改善抓持技巧
+ddxSource: auto-generated

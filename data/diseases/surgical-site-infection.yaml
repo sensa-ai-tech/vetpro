@@ -3,12 +3,13 @@ nameEn: Surgical Site Infection
 nameZh: 手術部位感染
 bodySystem: infectious
 description: 手術後切口或深層組織的細菌感染。分為表淺切口、深層切口及器官/腔室感染。早期識別及治療可避免嚴重併發症。
-
 aliases:
-  - { alias: SSI, language: en }
-  - { alias: 術後感染, language: zh }
-  - { alias: 切口感染, language: zh }
-
+  - alias: SSI
+    language: en
+  - alias: 術後感染
+    language: zh
+  - alias: 切口感染
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓感染率略低於犬
-
 etiology:
   categories:
     - name: 危險因子
@@ -32,7 +32,6 @@ etiology:
         - Staphylococcus intermedius/pseudintermedius
         - E. coli
         - Streptococcus spp.
-
 clinicalSigns:
   early:
     - 切口紅腫、溫度升高
@@ -42,20 +41,18 @@ clinicalSigns:
     - 傷口裂開
     - 全身性發燒、嗜睡
     - 深層感染:膿瘍或敗血症
-
 diagnosis:
   primaryTests:
     - name: 切口檢查
-      notes: "發炎徵象、分泌物性質"
+      notes: 發炎徵象、分泌物性質
     - name: 細菌培養及敏感性
-      notes: "深部組織或膿液培養"
+      notes: 深部組織或膿液培養
     - name: 血液檢查
-      notes: "白血球升高、左移"
+      notes: 白血球升高、左移
   differentialDiagnoses:
     - 縫線反應(無菌性炎症)
     - 血清腫
     - 正常癒合反應
-
 treatment:
   medical:
     - 抗生素:經驗性Cephalexin 22-30 mg/kg PO q12h,依培養調整
@@ -63,46 +60,73 @@ treatment:
     - 嚴重感染:靜脈抗生素Ampicillin 20-40 mg/kg IV q6-8h
     - 深層感染:手術清創及沖洗
     - 止痛:Carprofen 2.2 mg/kg PO q12h
-
 prognosis:
-  general: "表淺感染經治療預後良好。深層或器官感染需積極處理,可能延長恢復期數週。MRSA感染治療困難,預後較差。"
-
+  general: 表淺感染經治療預後良好。深層或器官感染需積極處理,可能延長恢復期數週。MRSA感染治療困難,預後較差。
 prevention:
   - 術前抗生素:Cefazolin 22 mg/kg IV術前30-60分鐘
   - 嚴格無菌技術及手術室規範
   - 縮短手術時間、溫和組織操作
   - 維持術中正常體溫及血壓
   - 術後適當傷口照護及伊莉莎白項圈
-
-
 guidelineRefs:
   - sourceOrg: Acta veterinaria Scandinavica
-    title: "Postoperative complications and antibiotic use in dogs with pyometra: a retrospective review of 140 cases (2019)."
+    title: 'Postoperative complications and antibiotic use in dogs with pyometra: a retrospective review of 140 cases (2019).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9987112/
     type: review
-    pmid: "36879277"
+    pmid: '36879277'
     relevance: primary
   - sourceOrg: Journal of clinical medicine
     title: Wound-Related Complication in Growth-Friendly Spinal Surgeries for Early-Onset Scoliosis-Literature Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9101615/
     type: review
-    pmid: "35566795"
+    pmid: '35566795'
     relevance: primary
-  - sourceOrg: "Veterinary surgery : VS"
-    title: "Preoperative skin asepsis protocols using chlorhexidine versus povidone-iodine in veterinary surgery: A systematic review and meta-analysis."
+  - sourceOrg: 'Veterinary surgery : VS'
+    title: >-
+      Preoperative skin asepsis protocols using chlorhexidine versus povidone-iodine in veterinary surgery: A systematic
+      review and meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9321991/
     type: review
-    pmid: "35437786"
+    pmid: '35437786'
     relevance: primary
   - sourceOrg: Veterinary sciences
-    title: Successful Clindamycin Therapy of an Infected Subcutaneous Permanent Pacing Lead in a Dog after a Failed Course with Potentiated Amoxicillin and Enrofloxacin.
+    title: >-
+      Successful Clindamycin Therapy of an Infected Subcutaneous Permanent Pacing Lead in a Dog after a Failed Course
+      with Potentiated Amoxicillin and Enrofloxacin.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9964686/
     type: case-report
-    pmid: "36851397"
+    pmid: '36851397'
     relevance: supporting
   - sourceOrg: BJS open
-    title: "Effect of the number of door openings in the operating room on surgical site infections: individual-patient data meta-analysis."
+    title: >-
+      Effect of the number of door openings in the operating room on surgical site infections: individual-patient data
+      meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12159596/
     type: research
-    pmid: "40503604"
+    pmid: '40503604'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 手術部位感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weakness 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 切口檢查
+          notes: 發炎徵象、分泌物性質
+        - name: 細菌培養及敏感性
+          notes: 深部組織或膿液培養
+        - name: 血液檢查
+          notes: 白血球升高、左移
+ddxSource: auto-generated

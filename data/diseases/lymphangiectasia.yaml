@@ -3,24 +3,28 @@ nameEn: Intestinal Lymphangiectasia
 nameZh: 淋巴管擴張症
 bodySystem: gastrointestinal
 description: 腸道淋巴管異常擴張導致富含蛋白質的淋巴液滲漏至腸腔，為犬隻蛋白流失性腸病 (PLE) 的重要病因。以低白蛋白血症、低球蛋白血症、低淋巴球血症及低膽固醇血症為特徵。
-
 aliases:
-  - { alias: IL, language: en }
-  - { alias: Protein-Losing Enteropathy, language: en }
-  - { alias: PLE, language: en }
-  - { alias: 腸淋巴管擴張, language: zh }
-  - { alias: 蛋白流失性腸病, language: zh }
-
+  - alias: IL
+    language: en
+  - alias: Protein-Losing Enteropathy
+    language: en
+  - alias: PLE
+    language: en
+  - alias: 腸淋巴管擴張
+    language: zh
+  - alias: 蛋白流失性腸病
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
-    notes: Yorkshire Terrier 為最好發品種，其他好發品種包括 Soft-Coated Wheaten Terrier、Maltese、Shar-Pei、Rottweiler、Norwegian Lundehund。可為原發性或繼發於 IBD/淋巴瘤。
+    notes: >-
+      Yorkshire Terrier 為最好發品種，其他好發品種包括 Soft-Coated Wheaten Terrier、Maltese、Shar-Pei、Rottweiler、Norwegian
+      Lundehund。可為原發性或繼發於 IBD/淋巴瘤。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓隻罕見，多繼發於小腸淋巴瘤或嚴重 IBD。
-
 etiology:
   categories:
     - name: 原發性（先天性）
@@ -41,7 +45,6 @@ etiology:
         - 白蛋白、球蛋白、淋巴球同時流失
         - 脂溶性維生素（A、D、E、K）與鈣質吸收障礙
         - 低蛋白血症導致膠體滲透壓下降 → 腹水/胸水/周邊水腫
-
 clinicalSigns:
   early:
     - 慢性間歇性軟便或下痢
@@ -60,18 +63,17 @@ clinicalSigns:
     - 嚴重消瘦與肌肉萎縮
     - 血栓栓塞症（抗凝血酶 III 流失）
     - 低鈣血症性抽搐
-
 diagnosis:
   primaryTests:
     - name: 血清白蛋白/球蛋白
-      notes: "低白蛋白血症（<2 g/dL）與低球蛋白血症同時出現為 PLE 特徵。白蛋白與球蛋白同降可與蛋白流失性腎病（PLN，僅白蛋白降低）區分"
+      notes: 低白蛋白血症（<2 g/dL）與低球蛋白血症同時出現為 PLE 特徵。白蛋白與球蛋白同降可與蛋白流失性腎病（PLN，僅白蛋白降低）區分
     - name: 內視鏡 + 組織病理
-      notes: "金標準。十二指腸黏膜白色粒狀或網狀突起（lipogranulomas）；組織學可見絨毛乳糜管與黏膜下淋巴管明顯擴張"
+      notes: 金標準。十二指腸黏膜白色粒狀或網狀突起（lipogranulomas）；組織學可見絨毛乳糜管與黏膜下淋巴管明顯擴張
     - name: 膽固醇
-      notes: "低膽固醇血症為淋巴管擴張的重要提示（乳糜微粒流失）"
+      notes: 低膽固醇血症為淋巴管擴張的重要提示（乳糜微粒流失）
   imaging:
     - name: 腹部超音波
-      notes: "腸壁黏膜層高回音條紋（hyperechoic mucosal striations）為特徵性發現；腸壁增厚；腹水；腸繫膜淋巴結腫大"
+      notes: 腸壁黏膜層高回音條紋（hyperechoic mucosal striations）為特徵性發現；腸壁增厚；腹水；腸繫膜淋巴結腫大
   additional:
     - CBC（淋巴球減少症 lymphopenia 為重要線索）
     - 離子化鈣（常降低）
@@ -79,7 +81,6 @@ diagnosis:
     - 糞便 α1-蛋白酶抑制劑（α1-PI）濃度（非侵入性 PLE 確認）
     - Spec cPL（排除胰臟炎）
     - 腹水分析（純漏出液或改良型漏出液，蛋白含量低）
-
 treatment:
   principles:
     - 超低脂飲食為治療核心
@@ -88,16 +89,16 @@ treatment:
     - 低白蛋白血症嚴重時需緊急支持治療
   medications:
     - name: Prednisolone
-      dose: "1-2 mg/kg PO BID × 2-4 週，之後逐漸減量"
+      dose: 1-2 mg/kg PO BID × 2-4 週，之後逐漸減量
       notes: 合併 IBD 時為一線免疫抑制治療
     - name: Chlorambucil
-      dose: "4-6 mg/m² PO 隔日"
+      dose: 4-6 mg/m² PO 隔日
       notes: 類固醇反應不佳時加入。與 prednisolone 併用
     - name: Mycophenolate Mofetil
-      dose: "10 mg/kg PO BID"
+      dose: 10 mg/kg PO BID
       notes: 較新的免疫抑制替代選項，用於難治性 PLE
     - name: Clopidogrel
-      dose: "1-2 mg/kg PO SID"
+      dose: 1-2 mg/kg PO SID
       notes: 預防血栓栓塞。白蛋白 <1.5 g/dL 或抗凝血酶 III 降低時考慮
   general:
     - 超低脂飲食（脂肪 <15% DM，理想 <10% DM）
@@ -107,36 +108,36 @@ treatment:
     - 鈣與維生素 D 補充（低鈣血症）
     - 腹水嚴重影響呼吸時可行腹腔穿刺引流
     - 長期監測白蛋白、體重、糞便品質
-
-prognosis: 預後差異大，取決於病因與對治療的反應。原發性淋巴管擴張經適當飲食與免疫抑制管理，部分犬可長期控制（中位存活 1-2 年以上）。Yorkshire Terrier PLE 預後較差。白蛋白 <1.5 g/dL 為重要負面預後因子。繼發於淋巴瘤者預後不良。血栓栓塞為重要致死併發症。
-
+prognosis: >-
+  預後差異大，取決於病因與對治療的反應。原發性淋巴管擴張經適當飲食與免疫抑制管理，部分犬可長期控制（中位存活 1-2 年以上）。Yorkshire Terrier PLE 預後較差。白蛋白 <1.5 g/dL
+  為重要負面預後因子。繼發於淋巴瘤者預後不良。血栓栓塞為重要致死併發症。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Internal Medicine
-    title: "Protein-losing enteropathy in Yorkshire Terriers: retrospective study"
+    title: 'Protein-losing enteropathy in Yorkshire Terriers: retrospective study'
     url: https://pubmed.ncbi.nlm.nih.gov/20456098/
     type: research
-    pmid: "20456098"
+    pmid: '20456098'
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: Ultrasonographic findings in dogs with protein-losing enteropathy
     url: https://pubmed.ncbi.nlm.nih.gov/17979554/
     type: research
-    pmid: "17979554"
+    pmid: '17979554'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Intestinal lymphangiectasia in dogs: a retrospective study of 17 cases"
+    title: 'Intestinal lymphangiectasia in dogs: a retrospective study of 17 cases'
     url: https://pubmed.ncbi.nlm.nih.gov/10563305/
     type: research
-    pmid: "10563305"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Pathophysiology, Diagnosis, and Management of Canine Intestinal Lymphangiectasia: A Comparative Review."
+    pmid: '10563305'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Pathophysiology, Diagnosis, and Management of Canine Intestinal Lymphangiectasia: A Comparative Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9597800/
     type: review
-    pmid: "36290177"
+    pmid: '36290177'
     relevance: primary
   - sourceOrg: Journal of veterinary internal medicine
     title: Comparative pathophysiology and management of protein-losing enteropathy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6430879/
     type: review
-    pmid: "30762910"
+    pmid: '30762910'
     relevance: supporting
 pubmedQueries:
   - query: '"lymphangiectasia" AND (dog OR canine) AND ("protein-losing enteropathy" OR "treatment" OR "prognosis")'
@@ -145,6 +146,58 @@ pubmedQueries:
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "CIR"
-  sectionTitle: "Vitamin K Deficiency: Vitamin K is"
+  chapter: CIR
+  sectionTitle: 'Vitamin K Deficiency: Vitamin K is'
   pdfPage: 94
+diagnosticAlgorithm:
+  title: 腸淋巴管擴張症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估慢性腹瀉、體重下降和低蛋白血症引起的腹水或四肢水腫
+      findings:
+        - 慢性小腸型腹瀉
+        - 進行性體重下降
+        - 腹水或皮下水腫
+    - step: 2
+      action: 實驗室檢查
+      details: 進行生化檢查評估蛋白質流失程度，注意泛低蛋白血症和淋巴球減少
+      findings:
+        - 嚴重低白蛋白血症和低球蛋白血症
+        - 低膽固醇血症
+        - 淋巴球減少
+    - step: 3
+      action: 內視鏡活檢確診
+      details: 進行十二指腸內視鏡檢查和全層活檢確認淋巴管擴張
+      findings:
+        - 內視鏡見小腸黏膜白色顆粒狀突起
+        - 活檢顯示黏膜和黏膜下層淋巴管顯著擴張
+        - 排除其他蛋白質流失性腸病
+clinicalPearls:
+  - 約克夏㹴犬出現慢性腹瀉加低白蛋白血症時，淋巴管擴張症應列為首要鑑別診斷
+  - PLE的特徵是白蛋白和球蛋白同時降低，若僅白蛋白降低應考慮肝病或腎病
+  - 超低脂飲食是治療的基石，很多病例單靠飲食管理即可顯著改善
+  - 血栓栓塞是PLE的致命併發症，白蛋白 < 1.5 g/dL時應預防性給予抗血栓治療
+  - 內視鏡切片可能遺漏黏膜下層病變，全層切片診斷率更高
+monitoringItems:
+  - 每2-4週監測血清白蛋白和總蛋白，直到穩定
+  - 定期監測體重和體態評分
+  - 監測糞便性狀和排便頻率
+  - 定期檢測全血球計數（注意淋巴球數）
+  - 監測血清鈣、鎂及維生素B12濃度
+  - 使用免疫抑制藥物時定期檢查肝腎功能
+  - 注意血栓栓塞的臨床徵兆（急性呼吸困難、肢體疼痛）
+ddxSource: book
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: common
+  - symptomId: dehydration
+    frequency: common

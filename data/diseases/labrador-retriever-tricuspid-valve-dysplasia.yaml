@@ -3,19 +3,20 @@ nameEn: Labrador Retriever Tricuspid Valve Dysplasia
 nameZh: 拉布拉多三尖瓣發育不良
 bodySystem: cardiac
 description: 拉布拉多三尖瓣發育不良（TVD）是該品種好發的先天性心臟畸形，三尖瓣結構異常導致嚴重逆流，進而引起右心房與右心室擴大及右側充血性心衰竭。
-
 aliases:
-  - { alias: 拉布拉多 TVD, language: zh }
-  - { alias: 三尖瓣異位, language: zh }
-  - { alias: Labrador TVD, language: en }
-  - { alias: Tricuspid valve malformation, language: en }
-
+  - alias: 拉布拉多 TVD
+    language: zh
+  - alias: 三尖瓣異位
+    language: zh
+  - alias: Labrador TVD
+    language: en
+  - alias: Tricuspid valve malformation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 拉布拉多犬為三尖瓣發育不良最常見的好發品種。遺傳模式可能為多基因遺傳。公犬較母犬多見。部分犬為類似 Ebstein 畸形的表現。
-
 etiology:
   categories:
     - name: 先天畸形
@@ -28,7 +29,6 @@ etiology:
         - 三尖瓣逆流
         - 右心房與右心室擴大
         - 心房顫動（嚴重病例）
-
 clinicalSigns:
   early:
     - 幼犬期聽診發現右側收縮期雜音
@@ -42,21 +42,19 @@ clinicalSigns:
     - 週邊水腫
     - 心房顫動
     - 昏厥
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波
-      notes: "確診工具。評估三尖瓣形態、逆流程度、右心擴大、心房大小"
+      notes: 確診工具。評估三尖瓣形態、逆流程度、右心擴大、心房大小
     - name: 心電圖
-      notes: "評估心律不整、右心肥大徵象（右軸偏移、P 波增高）"
+      notes: 評估心律不整、右心肥大徵象（右軸偏移、P 波增高）
     - name: 胸腔 X 光
-      notes: "右心擴大、右心房突出、靜脈回流異常"
+      notes: 右心擴大、右心房突出、靜脈回流異常
   differentialDiagnoses:
     - 心絲蟲症
     - 肺動脈狹窄
     - 心包膜積液
     - 擴張型心肌病
-
 treatment:
   medical:
     - 利尿劑（Furosemide 1-2 mg/kg PO BID）控制腹水
@@ -67,20 +65,50 @@ treatment:
   surgical:
     - 三尖瓣修復術（專科中心）
     - 三尖瓣置換術（極少數案例）
-
 prognosis:
-  general: "預後因嚴重程度差異很大。輕度逆流可能終生無症狀。中重度病例預後謹慎至不良，右側心衰竭一旦出現，中位存活時間約 6-12 個月。早期藥物治療可改善生活品質。"
-
+  general: 預後因嚴重程度差異很大。輕度逆流可能終生無症狀。中重度病例預後謹慎至不良，右側心衰竭一旦出現，中位存活時間約 6-12 個月。早期藥物治療可改善生活品質。
 prevention:
   - 繁殖犬心臟超音波篩選
   - 受影響犬不應用於繁殖
   - 近親繁殖增加風險，應避免
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Balloon Valvuloplasty of Tricuspid Stenosis: A Retrospective Study of 5 Labrador Retriever Dogs."
+    title: 'Balloon Valvuloplasty of Tricuspid Stenosis: A Retrospective Study of 5 Labrador Retriever Dogs.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5354017/
     type: research
-    pmid: "28220526"
+    pmid: '28220526'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: failure-to-grow
+    frequency: uncommon
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: syncope
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 拉布拉多三尖瓣發育不良 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+        - failure-to-grow 相關症狀
+        - exercise-intolerance 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波
+          notes: 確診工具。評估三尖瓣形態、逆流程度、右心擴大、心房大小
+        - name: 心電圖
+          notes: 評估心律不整、右心肥大徵象（右軸偏移、P 波增高）
+        - name: 胸腔 X 光
+          notes: 右心擴大、右心房突出、靜脈回流異常
+ddxSource: auto-generated

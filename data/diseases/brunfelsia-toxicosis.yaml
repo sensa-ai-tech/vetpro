@@ -3,12 +3,13 @@ nameEn: Brunfelsia Toxicosis
 nameZh: 番茉莉中毒
 bodySystem: toxicology
 description: 攝入番茉莉屬植物引發的嚴重神經毒性反應,含 brunfelsamidine 和 hopeanine 等生物鹼干擾神經傳導。所有部位有毒,特別是果實和種子,可致劇烈癲癇發作。
-
 aliases:
-  - { alias: Yesterday Today Tomorrow Poisoning, language: en }
-  - { alias: 鴛鴦茉莉中毒, language: zh }
-  - { alias: Kiss Me Quick Toxicity, language: en }
-
+  - alias: Yesterday Today Tomorrow Poisoning
+    language: en
+  - alias: 鴛鴦茉莉中毒
+    language: zh
+  - alias: Kiss Me Quick Toxicity
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少攝入此植物,但對生物鹼同樣敏感
-
 etiology:
   categories:
     - name: 植物生物鹼
@@ -26,7 +26,6 @@ etiology:
         - Brunfelsamidine
         - Hopeanine
         - Scopoletin
-
 clinicalSigns:
   early:
     - 嘔吐
@@ -39,24 +38,22 @@ clinicalSigns:
     - 體溫過高
     - 橫紋肌溶解症
     - 急性腎衰竭(繼發於肌球蛋白尿)
-
 diagnosis:
   primaryTests:
     - name: 病史詢問
-      notes: "確認庭院有番茉莉植物,觀察到動物啃食果實或花朵"
+      notes: 確認庭院有番茉莉植物,觀察到動物啃食果實或花朵
     - name: 神經學檢查
-      notes: "典型的癲癇發作模式,發作間期可能正常或持續震顫"
+      notes: 典型的癲癇發作模式,發作間期可能正常或持續震顫
     - name: 血液生化
-      notes: "CK 明顯升高(橫紋肌溶解),BUN/肌酐升高,高血鉀"
+      notes: CK 明顯升高(橫紋肌溶解),BUN/肌酐升高,高血鉀
     - name: 尿液檢查
-      notes: "肌球蛋白尿(尿液呈深紅褐色)"
+      notes: 肌球蛋白尿(尿液呈深紅褐色)
   differentialDiagnoses:
     - 甲基黃嘌呤中毒(巧克力、咖啡因)
     - 有機磷或氨基甲酸酯中毒
     - 特發性癲癇
     - 低血糖
     - 顱內疾病
-
 treatment:
   medical:
     - 去污染:若距攝入<1小時且無神經症狀,可考慮催吐
@@ -68,11 +65,43 @@ treatment:
     - 大量靜脈輸液 維持尿量 2-5 mL/kg/hr 預防腎衰竭
     - Mannitol 0.5-1 g/kg IV 緩慢輸注促進利尿(腎損傷高風險時)
     - 密集監護:持續心電、血壓、體溫監測
-
 prognosis:
-  general: "預後保留至謹慎。癲癇發作可能極為嚴重且難以控制,橫紋肌溶解和繼發性腎衰竭為主要死因。早期積極治療的存活率約 50-70%。完全恢復可能需 3-5 天。"
-
+  general: 預後保留至謹慎。癲癇發作可能極為嚴重且難以控制,橫紋肌溶解和繼發性腎衰竭為主要死因。早期積極治療的存活率約 50-70%。完全恢復可能需 3-5 天。
 prevention:
   - 移除庭院中的番茉莉植物或設置圍欄隔離
   - 及時清理掉落的果實和種子
   - 監督戶外活動,特別是結果季節
+associatedSymptoms:
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: trembling
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 番茉莉中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - hyperthermia 相關症狀
+        - ataxia 相關症狀
+        - seizures 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史詢問
+          notes: 確認庭院有番茉莉植物,觀察到動物啃食果實或花朵
+        - name: 神經學檢查
+          notes: 典型的癲癇發作模式,發作間期可能正常或持續震顫
+        - name: 血液生化
+          notes: CK 明顯升高(橫紋肌溶解),BUN/肌酐升高,高血鉀
+ddxSource: auto-generated

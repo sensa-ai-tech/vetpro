@@ -3,23 +3,26 @@ nameEn: Hypoadrenocorticism (Addison's Disease)
 nameZh: 腎上腺皮質功能低下症
 bodySystem: endocrine
 description: 腎上腺皮質分泌不足 (糖皮質激素與/或鹽皮質激素) 導致的內分泌疾病，臨床表現多變，素有「偉大的模仿者」之稱。
-
 aliases:
-  - { alias: Addison's Disease, language: en }
-  - { alias: Hypoadrenocorticism, language: en }
-  - { alias: Adrenal Insufficiency, language: en }
-  - { alias: 愛迪生氏症, language: zh }
-
+  - alias: Addison's Disease
+    language: en
+  - alias: Hypoadrenocorticism
+    language: en
+  - alias: Adrenal Insufficiency
+    language: en
+  - alias: 愛迪生氏症
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: uncommon
-    notes: 盛行率約 0.06-0.28%。好發品種：Standard Poodle、Portuguese Water Dog、Nova Scotia Duck Tolling Retriever、Bearded Collie、Great Dane。中年母犬好發 (約 70% 為母犬)。
+    notes: >-
+      盛行率約 0.06-0.28%。好發品種：Standard Poodle、Portuguese Water Dog、Nova Scotia Duck Tolling Retriever、Bearded Collie、Great
+      Dane。中年母犬好發 (約 70% 為母犬)。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓極少見。報告病例數有限。
-
 etiology:
   categories:
     - name: 原發性 (腎上腺破壞)
@@ -39,7 +42,6 @@ etiology:
         - 僅糖皮質激素缺乏 (電解質正常)
         - 約 30% 的原發性 Addison's 初期表現為非典型
         - 可能隨時間進展為典型型
-
 clinicalSigns:
   early:
     - 反覆嘔吐/腹瀉 (間歇性)
@@ -61,27 +63,25 @@ clinicalSigns:
     - 心律不整 (高鉀血症)
     - 低血糖
     - 虛脫
-
 diagnosis:
   primaryTests:
     - name: 電解質
-      notes: "典型型：低鈉高鉀，Na:K ratio <27 (正常 27-40) 高度提示。非典型型電解質可能正常"
+      notes: 典型型：低鈉高鉀，Na:K ratio <27 (正常 27-40) 高度提示。非典型型電解質可能正常
     - name: ACTH stimulation test
-      notes: "金標準確診。Cortisol baseline 低且 ACTH 刺激後仍低 (<2 μg/dL)。使用 cosyntropin 5 μg/kg IV"
+      notes: 金標準確診。Cortisol baseline 低且 ACTH 刺激後仍低 (<2 μg/dL)。使用 cosyntropin 5 μg/kg IV
     - name: 基礎 Cortisol
-      notes: "基礎 cortisol >2 μg/dL 可排除 Addison's (敏感度高)。<2 μg/dL 需 ACTH 刺激試驗確認"
+      notes: 基礎 cortisol >2 μg/dL 可排除 Addison's (敏感度高)。<2 μg/dL 需 ACTH 刺激試驗確認
   imaging:
     - name: 胸腔 X 光
-      notes: "微小心臟 (microcardia)、後腔靜脈變窄 (低血容量)。微小心臟為重要線索"
+      notes: 微小心臟 (microcardia)、後腔靜脈變窄 (低血容量)。微小心臟為重要線索
     - name: 腹部超音波
-      notes: "雙側腎上腺縮小。正常大小不排除"
+      notes: 雙側腎上腺縮小。正常大小不排除
   additional:
     - CBC (非再生性貧血、淋巴球增多、嗜酸球增多 — 缺少 stress leukogram 為線索)
     - 生化 (BUN/Creatinine 升高 — 腎前性氮血症；低白蛋白；低血糖)
     - ECG (高鉀血症心電圖變化：T 波高尖、QRS 增寬、P 波消失、心搏過緩)
     - 內源性 ACTH 濃度 (鑑別原發/繼發性)
     - 血壓測量 (低血壓)
-
 treatment:
   principles:
     - Addisonian crisis 為急症，需緊急液體復甦與類固醇補充
@@ -90,16 +90,16 @@ treatment:
     - 緊迫情境需增加糖皮質激素劑量
   medications:
     - name: DOCP (Desoxycorticosterone pivalate, Percorten-V / Zycortal)
-      dose: "2.2 mg/kg IM/SC 每 25-28 天"
+      dose: 2.2 mg/kg IM/SC 每 25-28 天
       notes: 鹽皮質激素補充首選。劑量依電解質調整。需搭配低劑量 prednisolone
     - name: Fludrocortisone
-      dose: "0.01-0.02 mg/kg PO SID-BID"
+      dose: 0.01-0.02 mg/kg PO SID-BID
       notes: 口服替代。同時具有鹽皮質與糖皮質激素活性。部分犬仍需額外 prednisolone
     - name: Prednisolone (維持)
-      dose: "0.1-0.2 mg/kg PO SID (緊迫時 2-10 倍)"
+      dose: 0.1-0.2 mg/kg PO SID (緊迫時 2-10 倍)
       notes: 糖皮質激素補充。搭配 DOCP 使用。緊迫時 (旅行、手術、生病) 需增量
     - name: Dexamethasone SP (急救)
-      dose: "0.5-2 mg/kg IV (Addisonian crisis)"
+      dose: 0.5-2 mg/kg IV (Addisonian crisis)
       notes: 急性危機首選類固醇 (不干擾 ACTH 刺激試驗中 cortisol 測量)
   general:
     - Addisonian crisis 急救：積極 IV 輸液 (0.9% NaCl，休克劑量 60-90 mL/kg/hr) + Dexamethasone IV + 矯正高鉀血症 + 監測 ECG
@@ -107,49 +107,136 @@ treatment:
     - 定期電解質監測 (DOCP 注射後 2 週、每次回診)
     - 飼主教育：緊迫期間增加 prednisolone 劑量
     - 醫療識別標籤建議
-
-emergencyNotes: Addisonian crisis 為急症。表現為低血容量性休克 + 心搏過緩 + 高鉀血症。立即大量 0.9% NaCl IV 輸液。Dexamethasone SP 0.5-2 mg/kg IV。高鉀血症 (>7-8 mEq/L 或 ECG 異常)：10% calcium gluconate 0.5-1.5 mL/kg IV 緩慢推注監測 ECG + regular insulin + dextrose。持續監測 ECG、電解質、血壓。
-
+emergencyNotes: >-
+  Addisonian crisis 為急症。表現為低血容量性休克 + 心搏過緩 + 高鉀血症。立即大量 0.9% NaCl IV 輸液。Dexamethasone SP 0.5-2 mg/kg IV。高鉀血症 (>7-8 mEq/L 或
+  ECG 異常)：10% calcium gluconate 0.5-1.5 mL/kg IV 緩慢推注監測 ECG + regular insulin + dextrose。持續監測 ECG、電解質、血壓。
 prognosis: 一旦確診並開始適當治療，預後極佳。多數犬可維持正常壽命與良好生活品質。飼主依從性 (規律投藥與回診) 是長期管理成功的關鍵。Addisonian crisis 若及時治療預後良好。
-
 ontologyMappings:
   - source: MONDO
-    code: "MONDO:0015070"
+    code: MONDO:0015070
     label: hypoadrenocorticism
     confidence: exact
-
 guidelineRefs:
   - sourceOrg: ACVIM
     title: ACVIM Consensus Statement on Diagnosis and Treatment of Canine Hypoadrenocorticism
     url: https://pubmed.ncbi.nlm.nih.gov/30806491/
     type: consensus
-    pmid: "30806491"
+    pmid: '30806491'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Hypoadrenocorticism in cats: a 40-year update."
+    title: 'Hypoadrenocorticism in cats: a 40-year update.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11437538/
     type: review
-    pmid: "39325772"
+    pmid: '39325772'
   - sourceOrg: Canine medicine and genetics
     title: Diagnosis of canine spontaneous hypoadrenocorticism.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9066729/
     type: review
-    pmid: "35505424"
+    pmid: '35505424'
   - sourceOrg: Veterinary medicine (Auckland, N.Z.)
-    title: "Management of hypoadrenocorticism (Addison's disease) in dogs."
+    title: Management of hypoadrenocorticism (Addison's disease) in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6055912/
     type: review
-    pmid: "30050862"
+    pmid: '30050862'
   - sourceOrg: Canine genetics and epidemiology
-    title: DLA class II risk haplotypes for autoimmune diseases in the bearded collie offer insight to autoimmunity signatures across dog breeds.
+    title: >-
+      DLA class II risk haplotypes for autoimmune diseases in the bearded collie offer insight to autoimmunity
+      signatures across dog breeds.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6376674/
     type: research
-    pmid: "30783534"
+    pmid: '30783534'
     relevance: supporting
 pubmedQueries:
   - query: '"hypoadrenocorticism" OR "Addison" AND (dog OR canine) AND ("diagnosis" OR "treatment")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "END"
-  sectionTitle: "HYPOADRENOCORTICISM"
+  chapter: END
+  sectionTitle: HYPOADRENOCORTICISM
   pdfPage: 615
+diagnosticAlgorithm:
+  title: 腎上腺皮質功能低下症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 詢問慢性嘔吐、虛弱、體重減輕病史
+      findings:
+        - 間歇性嘔吐與腹瀉
+        - 虛弱無力
+        - 脫水
+        - 低體溫
+    - step: 2
+      action: 血液生化與電解質
+      details: CBC及血清生化學檢查
+      findings:
+        - 高血鉀
+        - 低血鈉
+        - 鈉鉀比<27
+        - 氮血症
+        - 低血糖
+        - 嗜酸性球增多
+    - step: 3
+      action: ACTH刺激試驗
+      details: 注射合成ACTH後測量腎上腺皮質醇反應
+      findings:
+        - 基礎皮質醇極低（<1 μg/dL）
+        - 刺激後皮質醇無明顯上升
+        - 確診腎上腺皮質功能不全
+    - step: 4
+      action: 心電圖與影像
+      details: 評估高血鉀造成的心臟影響及腎上腺大小
+      findings:
+        - 心電圖顯示高鉀變化（T波高尖、QRS增寬）
+        - 胸腔X光心臟縮小
+        - 超音波腎上腺萎縮
+clinicalPearls:
+  - 「偉大的模仿者」- 症狀非特異性易被誤診
+  - 約30%無典型電解質異常（非典型Addison）
+  - 應激（手術、疾病）可誘發危象
+  - 終身治療但預後良好
+monitoringItems:
+  - 電解質每2-4週（調整期）
+  - 穩定後每3-6月
+  - 臨床症狀
+associatedSymptoms:
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: syncope
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: tachycardia-bradycardia
+    frequency: rare
+  - symptomId: dehydration
+    frequency: rare
+  - symptomId: hypothermia-sign
+    frequency: rare
+associatedLabFindings:
+  - labId: hyperkalaemia
+    frequency: common
+  - labId: usg-low
+    frequency: uncommon
+  - labId: sodium-low
+    frequency: common
+  - labId: chloride-low
+    frequency: uncommon
+ddxSource: book

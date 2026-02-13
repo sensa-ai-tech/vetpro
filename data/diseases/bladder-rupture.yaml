@@ -3,11 +3,11 @@ nameEn: Bladder Rupture
 nameZh: 膀胱破裂
 bodySystem: renal
 description: 膀胱壁完全性破裂導致尿液外滲至腹腔或周圍組織，常見於鈍性創傷、骨盆骨折或醫源性損傷，屬於泌尿系統急症。
-
 aliases:
-  - { alias: 膀胱穿孔, language: zh }
-  - { alias: Urinary bladder rupture, language: en }
-
+  - alias: 膀胱穿孔
+    language: zh
+  - alias: Urinary bladder rupture
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 高處墜落或車禍常見，導尿操作不當亦可能造成醫源性破裂
-
 etiology:
   categories:
     - name: 創傷性
@@ -34,7 +33,6 @@ etiology:
       examples:
         - 慢性尿道阻塞導致膀胱壁壞死
         - 膀胱腫瘤侵蝕穿孔
-
 clinicalSigns:
   early:
     - 腹痛、腹部觸診敏感
@@ -45,21 +43,19 @@ clinicalSigns:
     - 精神沉鬱、食慾廢絕
     - 脫水、休克症狀
     - 氮血症惡化、電解質紊亂
-
 diagnosis:
   primaryTests:
     - name: 腹腔穿刺液分析
-      notes: "肌酐濃度高於血清肌酐 2 倍以上、鉀離子濃度升高確診尿腹"
+      notes: 肌酐濃度高於血清肌酐 2 倍以上、鉀離子濃度升高確診尿腹
     - name: 對比劑膀胱造影
-      notes: "顯示造影劑外滲至腹腔或膀胱周圍"
+      notes: 顯示造影劑外滲至腹腔或膀胱周圍
     - name: 腹部超音波
-      notes: "可見腹腔積液、膀胱壁不完整"
+      notes: 可見腹腔積液、膀胱壁不完整
   differentialDiagnoses:
     - 尿道破裂
     - 輸尿管斷裂
     - 腹腔內其他臟器破裂（如肝脾破裂）
     - 腹膜炎
-
 treatment:
   medical:
     - 靜脈輸液糾正脫水及電解質紊亂（生理食鹽水或 Lactated Ringer's solution）
@@ -67,34 +63,64 @@ treatment:
     - 術後留置導尿管 5-7 天確保膀胱引流
     - 廣效抗生素預防感染（Cefazolin 22 mg/kg IV TID 或 Ampicillin-sulbactam 20 mg/kg IV TID）
     - 止痛治療（Buprenorphine 0.01-0.02 mg/kg IV/IM TID）
-
 prognosis:
-  general: "早期診斷並及時手術修補者預後良好；延誤治療導致尿毒症、敗血症或腹膜炎者預後保守至不良。"
-
+  general: 早期診斷並及時手術修補者預後良好；延誤治療導致尿毒症、敗血症或腹膜炎者預後保守至不良。
 prevention:
   - 避免動物遭受鈍性創傷（如車禍、高處墜落）
   - 導尿或膀胱穿刺操作時嚴格無菌技術並避免過度充盈
   - 及時處理尿道阻塞以防膀胱過度擴張
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Ongoing evolution of urinary tract disorders in dromedary camels (Camelus dromedarius): a comprehensive illustrated sonographic overview."
+    title: >-
+      Ongoing evolution of urinary tract disorders in dromedary camels (Camelus dromedarius): a comprehensive
+      illustrated sonographic overview.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12258294/
     type: review
-    pmid: "40661170"
+    pmid: '40661170'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Urinary Tract Trauma in Cats: Stabilisation, Diagnosis and Management."
+    title: 'Urinary Tract Trauma in Cats: Stabilisation, Diagnosis and Management.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812010/
     type: review
-    pmid: "36867077"
-  - sourceOrg: "Brazilian journal of microbiology : [publication of the Brazilian Society for Microbiology]"
-    title: "Peritonitis-related bacterial infections: a large-scale case-series retrospective study in 160 domestic animals (2009-2022)."
+    pmid: '36867077'
+  - sourceOrg: 'Brazilian journal of microbiology : [publication of the Brazilian Society for Microbiology]'
+    title: >-
+      Peritonitis-related bacterial infections: a large-scale case-series retrospective study in 160 domestic animals
+      (2009-2022).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11711992/
     type: research
-    pmid: "39477882"
+    pmid: '39477882'
   - sourceOrg: Veterinary medicine and science
     title: Ultrasound findings in 34 newborn foals with uroperitoneum.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11245564/
     type: research
-    pmid: "39001601"
+    pmid: '39001601'
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: oliguria-anuria
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 膀胱破裂 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - abdominal-pain 相關症狀
+        - oliguria-anuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹腔穿刺液分析
+          notes: 肌酐濃度高於血清肌酐 2 倍以上、鉀離子濃度升高確診尿腹
+        - name: 對比劑膀胱造影
+          notes: 顯示造影劑外滲至腹腔或膀胱周圍
+        - name: 腹部超音波
+          notes: 可見腹腔積液、膀胱壁不完整
+ddxSource: auto-generated

@@ -3,13 +3,15 @@ nameEn: Discoid Lupus Erythematosus
 nameZh: 盤狀紅斑性狼瘡
 bodySystem: dermatology
 description: 免疫媒介性皮膚病，為犬第二常見的自體免疫性皮膚病（僅次於天疱瘡）。主要累及鼻鏡（鼻平面），表現為鼻鏡脫色素、紅斑、糜爛與潰瘍。紫外線照射為已知加重因子。
-
 aliases:
-  - { alias: "DLE", language: en }
-  - { alias: "Collie Nose", language: en }
-  - { alias: "盤狀狼瘡", language: zh }
-  - { alias: "鼻鏡紅斑", language: zh }
-
+  - alias: DLE
+    language: en
+  - alias: Collie Nose
+    language: en
+  - alias: 盤狀狼瘡
+    language: zh
+  - alias: 鼻鏡紅斑
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 免疫媒介性
@@ -25,7 +26,6 @@ etiology:
         - 自體抗體攻擊基底膜
         - 紫外線為加重因子
         - 品種遺傳傾向
-
 clinicalSigns:
   early:
     - 鼻鏡脫色素（正常黑色→灰色→粉紅色）
@@ -36,14 +36,12 @@ clinicalSigns:
     - 痂皮形成
     - 可能擴展至唇、眶周、耳翼
     - 疼痛
-
 diagnosis:
   primaryTests:
     - name: 皮膚活檢
       notes: 鼻鏡邊緣活檢。組織學見界面性皮膚炎與基底膜帶免疫複合物沉積
     - name: 直接免疫螢光
       notes: 基底膜帶 IgG 或 IgM 沉積（lupus band test）
-
 treatment:
   principles:
     - 免疫調節/抑制
@@ -54,16 +52,53 @@ treatment:
     - Doxycycline + Niacinamide 口服
     - 嚴重時 Prednisolone 短期使用
     - 防曬措施（避免正午日曬、使用寵物防曬）
-
 prognosis: 預後良好。多數犬對治療反應佳。需長期管理。不治療不會危及生命但造成不適。極少進展為全身性紅斑性狼瘡。
-
-
 guidelineRefs:
   - sourceOrg: BMC veterinary research
-    title: "Cutaneous lupus erythematosus in dogs: a comprehensive review."
+    title: 'Cutaneous lupus erythematosus in dogs: a comprehensive review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5907183/
     type: review
-    pmid: "29669547"
+    pmid: '29669547'
 pubmedQueries:
   - query: '"discoid lupus erythematosus" AND (veterinary OR canine) AND ("treatment" OR "tacrolimus")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 圓盤狀紅斑狼瘡 診斷流程
+  steps:
+    - step: 1
+      action: 臨床觀察
+      details: 鼻鏡病變評估
+      findings:
+        - 色素脫失
+        - 結痂或潰瘍
+        - 夏季加重
+    - step: 2
+      action: 排除感染
+      details: 先做抗生素試驗排除膿皮症
+      findings:
+        - 1個月抗生素無反應→非膿皮症
+        - 有反應→黏膜皮膚膿皮症
+    - step: 3
+      action: 皮膚活檢
+      details: 組織病理學確認
+      findings:
+        - 基底膜帶淋巴細胞浸潤
+        - 基底層液化變性
+        - 色素失禁
+    - step: 4
+      action: 排除SLE
+      details: ANA+全身檢查
+      findings:
+        - ANA陰性
+        - 無關節/腎臟/血液受累→確認DLE
+clinicalPearls:
+  - DLE與SLE的關鍵區別：DLE僅累及皮膚，無全身症狀
+  - 鼻鏡色素脫失+鵝卵石紋路消失是早期徵象
+  - 需先做1個月抗生素療程排除黏膜皮膚膿皮症
+  - 紫外線防護是治療成功的關鍵
+monitoringItems:
+  - 鼻部病變改善程度
+  - 紫外線防護依從性
+  - 外用藥物副作用
+  - 季節性變化追蹤
+ddxSource: book

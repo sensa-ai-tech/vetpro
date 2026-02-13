@@ -3,11 +3,11 @@ nameEn: Apocrine Gland Carcinoma
 nameZh: 頂泌腺癌
 bodySystem: oncology
 description: 頂泌汗腺（apocrine gland）的惡性腫瘤。肛囊腺癌為犬最常見的肛周惡性腫瘤，可引起高鈣血症。皮膚頂泌腺癌較少見。
-
 aliases:
-  - { alias: "Apocrine Gland Adenocarcinoma", language: en }
-  - { alias: "頂泌汗腺癌", language: zh }
-
+  - alias: Apocrine Gland Adenocarcinoma
+    language: en
+  - alias: 頂泌汗腺癌
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,14 +15,12 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 腫瘤性
       examples:
         - 頂泌汗腺上皮惡性增生
         - 肛囊腺癌為最常見型
-
 clinicalSigns:
   early:
     - 肛周腫塊
@@ -33,7 +31,6 @@ clinicalSigns:
     - 腰下淋巴結腫大
     - 高鈣血症加重
     - 轉移
-
 diagnosis:
   primaryTests:
     - name: 直腸觸診
@@ -42,7 +39,6 @@ diagnosis:
       notes: 高鈣血症常見（副腫瘤症候群）
     - name: 腹部超音波/CT
       notes: 腰下淋巴結評估
-
 treatment:
   principles:
     - 手術切除
@@ -54,9 +50,64 @@ treatment:
     - 化療（Carboplatin 或 Mitoxantrone）
     - 放射治療
     - 高鈣血症管理
-
 prognosis: 完全切除無轉移中位存活 > 1 年。有淋巴結轉移預後較差。高鈣血症控制改善後良好。
-
 pubmedQueries:
   - query: '"apocrine gland carcinoma" AND (veterinary OR canine) AND ("anal sac" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 頂漿腺癌（肛囊腺癌）診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 進行直腸檢查和肛門區域觸診
+      findings:
+        - 肛囊區域堅硬腫塊
+        - 排便困難或裡急後重
+        - 會陰區域腫脹
+        - 多飲多尿（高鈣血症）
+    - step: 2
+      action: 實驗室檢查
+      details: 進行全套血液檢查，特別注意鈣離子水平
+      findings:
+        - 高鈣血症（25-50%病例）
+        - 副甲狀腺激素相關蛋白（PTHrP）升高
+        - 氮質血症（繼發於高鈣血症）
+        - 腎功能可能受損
+    - step: 3
+      action: 影像學分期
+      details: 進行腹部超音波和胸部X光評估轉移
+      findings:
+        - 腰下淋巴結腫大（常見轉移部位）
+        - 胸部X光評估肺轉移
+        - 肛囊區域腫塊超音波特徵
+        - 可能有脊椎或骨盆骨轉移
+    - step: 4
+      action: 組織病理學確診
+      details: 進行細針抽吸或切除活檢確診
+      findings:
+        - 頂漿腺分化的腺癌細胞
+        - 上皮細胞呈片狀或腺管狀排列
+        - 細胞核大且異型性明顯
+        - 確認腫瘤分級
+clinicalPearls:
+  - 每次例行理學檢查都應進行直腸指檢，AGASACA早期發現可顯著改善預後
+  - 不明原因高鈣血症的犬必須進行直腸指檢排除AGASACA
+  - 即使有淋巴結轉移，手術切除原發腫瘤+淋巴結摘除仍可提供良好的姑息效果
+  - 腹部超音波應評估髂下淋巴結大小，轉移率非常高
+monitoringItems:
+  - 術後每2-3個月血鈣監測
+  - 腹部超音波追蹤髂下淋巴結
+  - 直腸指檢評估局部復發
+  - 腎功能（BUN/Creatinine）監測
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

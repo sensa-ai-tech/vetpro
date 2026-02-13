@@ -3,11 +3,11 @@ nameEn: Epididymitis
 nameZh: 副睪炎
 bodySystem: reproductive
 description: 副睪發炎，可能為細菌感染、免疫介導或外傷所致。可能導致不孕、膿腫形成。需抗生素治療，嚴重者需手術。
-
 aliases:
-  - { alias: 附睪炎, language: zh }
-  - { alias: Epididymal Inflammation, language: en }
-
+  - alias: 附睪炎
+    language: zh
+  - alias: Epididymal Inflammation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓罕見
-
 etiology:
   categories:
     - name: 細菌感染
@@ -30,7 +29,6 @@ etiology:
         - 外傷
         - 免疫介導
         - 真菌感染（罕見）
-
 clinicalSigns:
   early:
     - 陰囊腫脹、觸痛
@@ -41,25 +39,23 @@ clinicalSigns:
     - 慢性疼痛
     - 不孕（精子品質異常、阻塞）
     - 睪丸萎縮
-
 diagnosis:
   primaryTests:
     - name: 陰囊觸診
-      notes: "副睪腫大、疼痛、不對稱"
+      notes: 副睪腫大、疼痛、不對稱
     - name: 陰囊超音波
-      notes: "副睪腫脹、膿腫、血流增加"
+      notes: 副睪腫脹、膿腫、血流增加
     - name: 精液細菌培養
-      notes: "確認病原菌"
+      notes: 確認病原菌
     - name: 精液分析
-      notes: "白血球增多、精子品質異常"
+      notes: 白血球增多、精子品質異常
     - name: Brucella檢測
-      notes: "排除布氏菌感染"
+      notes: 排除布氏菌感染
   differentialDiagnoses:
     - 睪丸炎
     - 睪丸扭轉
     - 睪丸腫瘤
     - 陰囊疝
-
 treatment:
   medical:
     - 廣效抗生素（至少4-6週）：
@@ -69,40 +65,85 @@ treatment:
     - 局部冷敷（急性期）
     - 膿腫引流或手術切除
     - 慢性或復發：去勢手術
-
 prognosis:
-  general: "早期治療預後尚可。慢性或雙側病變可能永久不孕。布氏菌感染難以根治。"
-
+  general: 早期治療預後尚可。慢性或雙側病變可能永久不孕。布氏菌感染難以根治。
 prevention:
   - 治療尿路感染
   - 避免外傷
   - 繁殖前Brucella篩檢
   - 定期陰囊檢查
-
-
 guidelineRefs:
   - sourceOrg: Current topics in microbiology and immunology
     title: Histophilosis as a Natural Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7120429/
     type: review
-    pmid: "26847357"
+    pmid: '26847357'
   - sourceOrg: Frontiers in veterinary science
-    title: "Ultrasonographic features of epididymitis in dogs: a case series."
+    title: 'Ultrasonographic features of epididymitis in dogs: a case series.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12591964/
     type: research
-    pmid: "41209470"
-  - sourceOrg: "The Turkish journal of gastroenterology : the official journal of Turkish Society of Gastroenterology"
+    pmid: '41209470'
+  - sourceOrg: 'The Turkish journal of gastroenterology : the official journal of Turkish Society of Gastroenterology'
     title: Investigation of Serum Human Epididymitis Protein 4 Level in Rats with Experimental Acute Pancreatitis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10441141/
     type: research
-    pmid: "37078202"
+    pmid: '37078202'
   - sourceOrg: Journal of inflammation research
-    title: Oral Lycopene Administration Attenuates Inflammation and Oxidative Stress by Regulating Plasma Lipids in Rats with Lipopolysaccharide-Induced Epididymitis.
+    title: >-
+      Oral Lycopene Administration Attenuates Inflammation and Oxidative Stress by Regulating Plasma Lipids in Rats with
+      Lipopolysaccharide-Induced Epididymitis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9719710/
     type: research
-    pmid: "36474518"
+    pmid: '36474518'
   - sourceOrg: Frontiers in cellular and infection microbiology
     title: C-Type Natriuretic Peptide Plays an Anti-Inflammatory Role in Rat Epididymitis Induced by UPEC.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8403061/
     type: research
-    pmid: "34466404"
+    pmid: '34466404'
+diagnosticAlgorithm:
+  title: 睪丸副睪炎 診斷流程
+  steps:
+    - step: 1
+      action: 理學檢查
+      details: 陰囊觸診和全身評估
+      findings:
+        - 陰囊腫脹疼痛
+        - 發燒
+        - 單側或雙側
+    - step: 2
+      action: 影像和實驗室
+      details: 超音波+CBC+布氏桿菌
+      findings:
+        - 超音波：睪丸/副睪腫脹
+        - WBC升高
+        - 布氏桿菌血清學
+    - step: 3
+      action: 病原學確認
+      details: 培養和藥敏
+      findings:
+        - 精液或穿刺液培養
+        - 布氏桿菌PCR
+    - step: 4
+      action: 治療決策
+      details: 去勢 vs 保守治療
+      findings:
+        - 不留種→去勢
+        - 留種→抗生素+追蹤
+clinicalPearls:
+  - 所有睪丸副睪炎犬必須做布氏桿菌篩檢
+  - 布氏桿菌為人畜共通傳染病，陽性犬需隔離
+  - 即使感染治癒，免疫媒介性持續損傷仍可導致不孕
+  - 不留種者直接去勢是最佳治療
+monitoringItems:
+  - 布氏桿菌追蹤血清學
+  - 精液品質評估（留種者）
+  - 對側睪丸狀態
+  - 疼痛和腫脹消退
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+ddxSource: book

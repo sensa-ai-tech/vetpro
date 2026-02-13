@@ -3,12 +3,13 @@ nameEn: Ovarian Remnant Syndrome
 nameZh: 卵巢殘留症候群
 bodySystem: reproductive
 description: 卵巢殘留症候群 (ovarian remnant syndrome, ORS) 為已絕育母犬或母貓因手術時卵巢組織未完全移除，殘留的功能性卵巢組織持續分泌雌激素與黃體酮，導致出現發情行為與相關臨床表現。需再次手術移除殘留組織。
-
 aliases:
-  - { alias: 卵巢殘餘症候群, language: zh }
-  - { alias: ORS, language: en }
-  - { alias: Ovarian Remnant, language: en }
-
+  - alias: 卵巢殘餘症候群
+    language: zh
+  - alias: ORS
+    language: en
+  - alias: Ovarian Remnant
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓 ORS 表現為發情行為（叫聲、翻滾、lordosis）。貓為誘發排卵，殘留組織可持續分泌雌激素。
-
 etiology:
   categories:
     - name: 原因
@@ -30,7 +30,6 @@ etiology:
         - 手術視野不足
         - 肥胖犬貓（腹腔脂肪遮蔽）
         - 經驗不足的術者
-
 clinicalSigns:
   early:
     - OHE 後出現發情行為
@@ -42,7 +41,6 @@ clinicalSigns:
     - 乳腺增生
     - 子宮蓄膿（如有子宮殘端）
     - 行為問題
-
 diagnosis:
   primaryTests:
     - name: 血清雌激素 / 黃體酮
@@ -54,7 +52,6 @@ diagnosis:
     - GnRH 刺激試驗
     - Anti-Müllerian hormone (AMH)（犬 — 高度特異性）
     - hCG 刺激後黃體酮
-
 treatment:
   principles:
     - 手術移除殘留卵巢組織
@@ -66,26 +63,71 @@ treatment:
     - 仔細檢查雙側卵巢窩與周圍組織
     - 子宮殘端亦需檢查（子宮蓄膿風險）
     - 術後追蹤 AMH 或陰道細胞學確認完全移除
-
 prognosis: 手術完全移除殘留組織後預後極佳。再次手術成功率高。少數病例殘留組織位置不典型，可能需多次探查。腹腔鏡可提高辨識率。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Pyometra in the queen: To spay or not to spay?"
+    title: 'Pyometra in the queen: To spay or not to spay?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11148877/
     type: review
-    pmid: "26733546"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Ovarian Remnant Syndrome in Bitches and Queens: Clinical Aspects and Potential Neoplastic Transformations."
+    pmid: '26733546'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Ovarian Remnant Syndrome in Bitches and Queens: Clinical Aspects and Potential Neoplastic Transformations.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12609093/
     type: research
-    pmid: "41227437"
+    pmid: '41227437'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Evaluation of combined assessments of serum anti-M&#xfc;llerian hormone and progesterone concentrations for the diagnosis of ovarian remnant syndrome in dogs."
+    title: >-
+      Evaluation of combined assessments of serum anti-M&#xfc;llerian hormone and progesterone concentrations for the
+      diagnosis of ovarian remnant syndrome in dogs.
     url: https://pubmed.ncbi.nlm.nih.gov/30986154/
     type: research
-    pmid: "30986154"
+    pmid: '30986154'
 pubmedQueries:
   - query: '"ovarian remnant syndrome" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis" OR "surgery")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 卵巢殘留症候群 診斷流程
+  steps:
+    - step: 1
+      action: 臨床懷疑
+      details: 絕育母犬貓重現發情
+      findings:
+        - 外陰腫脹
+        - 發情行為
+        - 吸引公犬
+    - step: 2
+      action: 激素確認
+      details: AMH和/或黃體素檢測
+      findings:
+        - AMH陽性=有卵巢組織
+        - 黃體素升高=有黃體
+        - 陰道細胞學=雌激素效應
+    - step: 3
+      action: 影像定位
+      details: 超音波搜尋殘留組織
+      findings:
+        - 卵巢蒂區域腫塊
+        - 卵泡或黃體結構
+    - step: 4
+      action: 手術切除
+      details: 排卵後3-6週探查
+      findings:
+        - 殘留卵巢組織切除
+        - 病理確認
+        - 術後AMH追蹤
+clinicalPearls:
+  - AMH是診斷ORS最可靠的單一檢測
+  - 排卵誘導後3-6週手術探查效果最佳（黃體可見）
+  - 左側卵巢蒂為最常見殘留部位
+  - 未治療ORS有蓄膿和乳腺腫瘤風險
+monitoringItems:
+  - 術後AMH（應轉為陰性）
+  - 發情行為消失確認
+  - 乳腺檢查
+  - 子宮殘端評估
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: common
+ddxSource: book

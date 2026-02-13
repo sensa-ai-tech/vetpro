@@ -3,12 +3,13 @@ nameEn: Territorial Aggression
 nameZh: 領地性攻擊
 bodySystem: behavioral
 description: 動物為保護其感知的領地（家庭、院子、車輛）而對進入者表現攻擊行為。常見於犬對陌生人或其他動物進入家門時的攻擊反應，為正常行為的過度表現。
-
 aliases:
-  - { alias: "領域性攻擊", language: zh }
-  - { alias: "護家行為", language: zh }
-  - { alias: "Territorial Behavior", language: en }
-
+  - alias: 領域性攻擊
+    language: zh
+  - alias: 護家行為
+    language: zh
+  - alias: Territorial Behavior
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓領地性攻擊可見於對新進入家中的貓或人的敵對行為。
-
 etiology:
   categories:
     - name: 本能行為
@@ -28,7 +28,6 @@ etiology:
       examples:
         - 攻擊行為被無意中強化（郵差離開→犬認為攻擊有效）
         - 飼主不當鼓勵護衛行為
-
 clinicalSigns:
   early:
     - 對門鈴或敲門聲過度反應
@@ -40,14 +39,12 @@ clinicalSigns:
     - 在圍籬邊衝撞攻擊
     - 咬傷進入領地者
     - 攻擊範圍擴大（從家門口擴展到散步路線）
-
 diagnosis:
   primaryTests:
     - name: 行為評估
       notes: 記錄攻擊發生地點、對象及情境。確認攻擊僅在領地內或已泛化。
     - name: 醫學排除
       notes: 排除疼痛或神經系統疾病導致的行為改變。
-
 treatment:
   principles:
     - 管理環境減少觸發
@@ -59,41 +56,81 @@ treatment:
     - 訓練替代行為（門鈴響→到指定位置→獎勵）
     - 系統減敏與反制約（訪客→正面聯想）
     - 必要時藥物輔助（Fluoxetine）
-
 prognosis: 領地性攻擊可透過行為修正與管理顯著改善，但通常無法完全消除領地防衛本能。管理策略（門控、牽繩）與訓練並行效果最佳。護衛犬品種可能需更密集的訓練。
-
-
 guidelineRefs:
   - sourceOrg: Hormones and behavior
     title: Inside the supergene of the bird with four sexes.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7725849/
     type: review
-    pmid: "32937166"
+    pmid: '32937166'
     relevance: primary
   - sourceOrg: Frontiers in endocrinology
-    title: "Neural Androgen Synthesis and Aggression: Insights From a Seasonally Breeding Rodent."
+    title: 'Neural Androgen Synthesis and Aggression: Insights From a Seasonally Breeding Rodent.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5893947/
     type: review
-    pmid: "29670576"
+    pmid: '29670576'
     relevance: supporting
   - sourceOrg: Ecology and evolution
-    title: A community context for aggression? Multi-species audience effects on territorial aggression in two species of Paridae.
+    title: >-
+      A community context for aggression? Multi-species audience effects on territorial aggression in two species of
+      Paridae.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8131767/
     type: research
-    pmid: "34026008"
+    pmid: '34026008'
     relevance: supporting
   - sourceOrg: Hormones and behavior
     title: Sex and seasonal differences in neural steroid sensitivity predict territorial aggression in Siberian hamsters.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10527453/
     type: research
-    pmid: "37354601"
+    pmid: '37354601'
     relevance: supporting
-  - sourceOrg: "Physiology &amp; behavior"
+  - sourceOrg: Physiology &amp; behavior
     title: Sex differences in dominance relationships in Syrian hamsters.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10529893/
     type: research
-    pmid: "37453726"
+    pmid: '37453726'
     relevance: supporting
 pubmedQueries:
   - query: '"Territorial Aggression" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 領域性攻擊行為 診斷流程
+  steps:
+    - step: 1
+      action: 行為史評估
+      details: 確認攻擊僅發生在自家領域且目標為陌生者
+      findings:
+        - 領域限定攻擊
+        - 陌生者為目標
+        - 中性場所不攻擊
+    - step: 2
+      action: 醫學排除
+      details: 血液學、甲狀腺功能排除醫學原因
+      findings:
+        - 醫學檢查正常
+        - 甲狀腺低下
+        - 疼痛來源
+    - step: 3
+      action: 攻擊類型分類
+      details: 區別領域性、恐懼性、資源保護性攻擊
+      findings:
+        - 純領域性
+        - 混合型
+        - 需重新分類
+    - step: 4
+      action: 治療計畫
+      details: 制定環境管理+行為修正+藥物方案
+      findings:
+        - 輕度（環境管理即可）
+        - 中度（加藥物）
+        - 嚴重（轉診行為專科）
+clinicalPearls:
+  - 領域性攻擊在中性場所不會表現，此特徵是鑑別診斷的關鍵
+  - 絕育可降低但無法消除領域性攻擊
+  - 行為修正前必須排除甲狀腺功能低下等醫學原因
+monitoringItems:
+  - 每月行為進度評估
+  - 攻擊事件頻率記錄
+  - 藥物療效和副作用追蹤
+  - 飼主遵從度評估
+ddxSource: book

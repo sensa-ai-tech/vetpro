@@ -2,20 +2,24 @@ slug: shar-pei-fever-breed
 nameEn: Shar-Pei Fever Breed
 nameZh: 沙皮犬家族性發熱症候群
 bodySystem: immunology
-description: 沙皮犬家族性發熱症候群（又稱 Shar-Pei Autoinflammatory Disease, SPAID）是一種品種特有的自體發炎疾病，表現為反覆發作的高燒（>40.5°C）伴跗關節腫脹。HAS2 基因過度表現導致透明質酸過量與免疫失調。長期反覆發炎可導致類澱粉樣變性。
-
+description: >-
+  沙皮犬家族性發熱症候群（又稱 Shar-Pei Autoinflammatory Disease, SPAID）是一種品種特有的自體發炎疾病，表現為反覆發作的高燒（>40.5°C）伴跗關節腫脹。HAS2
+  基因過度表現導致透明質酸過量與免疫失調。長期反覆發炎可導致類澱粉樣變性。
 aliases:
-  - { alias: 沙皮犬自體發炎病, language: zh }
-  - { alias: SPAID, language: zh }
-  - { alias: Shar-Pei autoinflammatory disease, language: en }
-  - { alias: SPAID, language: en }
-  - { alias: Familial Shar-Pei fever, language: en }
-
+  - alias: 沙皮犬自體發炎病
+    language: zh
+  - alias: SPAID
+    language: zh
+  - alias: Shar-Pei autoinflammatory disease
+    language: en
+  - alias: SPAID
+    language: en
+  - alias: Familial Shar-Pei fever
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
     notes: 沙皮犬品種特異性疾病。約 23% 的沙皮犬會出現發熱發作。1-6 歲為好發年齡。與人類家族性地中海熱（FMF）類似。
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -28,7 +32,6 @@ etiology:
         - 過量透明質酸分解物活化先天免疫
         - IL-6、TNF-α 等促發炎細胞因子大量釋放
         - 自限性無菌性發炎發作
-
 clinicalSigns:
   early:
     - 突發性高燒（40-41.7°C）
@@ -42,7 +45,6 @@ clinicalSigns:
     - 跛行
     - 發作通常 24-36 小時自限性緩解
     - 長期可導致類澱粉樣變性
-
 diagnosis:
   primaryTests:
     - name: 臨床特徵
@@ -51,7 +53,6 @@ diagnosis:
       notes: 發作時白血球增多、急性期蛋白升高。非發作期可正常
     - name: 尿蛋白監測
       notes: 定期監測尿蛋白/肌酐比。早期發現類澱粉樣變性腎病
-
 treatment:
   principles:
     - 急性發作期對症處理
@@ -66,9 +67,48 @@ treatment:
     - 每 3-6 個月監測尿蛋白與腎功能
     - Omega-3 脂肪酸補充（抗發炎）
     - 低劑量 Aspirin（預防血栓）
-
 prognosis: 發熱發作本身為自限性，預後良好。長期預後取決於是否發展類澱粉樣變性。規律使用 Colchicine 可能降低類澱粉沉積風險。約 5% 的沙皮犬因類澱粉腎病而腎衰竭。早期介入與長期監測是改善預後的關鍵。
-
 pubmedQueries:
   - query: '"Shar-Pei" AND ("fever" OR "autoinflammatory" OR "SPAID") AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: polyarthritis
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 沙皮犬家族性發熱症候群 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - polyarthritis 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床特徵
+          notes: 沙皮犬 + 反覆發熱 + 跗關節腫脹即可臨床診斷。排除感染性原因
+        - name: 血液檢查
+          notes: 發作時白血球增多、急性期蛋白升高。非發作期可正常
+        - name: 尿蛋白監測
+          notes: 定期監測尿蛋白/肌酐比。早期發現類澱粉樣變性腎病
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 急性發作期對症處理
+        - 長期 Colchicine 預防類澱粉沉積
+        - 監測腎功能
+ddxSource: auto-generated

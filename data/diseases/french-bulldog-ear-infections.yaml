@@ -3,19 +3,20 @@ nameEn: French Bulldog Ear Infections
 nameZh: 法國鬥牛犬耳道感染
 bodySystem: ear
 description: 法國鬥牛犬因狹窄的耳道結構、過敏體質與皮脂腺分泌旺盛而極度好發慢性耳道感染。反覆的細菌與酵母菌感染導致耳道增生、狹窄與慢性疼痛。
-
 aliases:
-  - { alias: 法鬥耳炎, language: zh }
-  - { alias: 法鬥慢性外耳炎, language: zh }
-  - { alias: French Bulldog otitis, language: en }
-  - { alias: Frenchie ear infections, language: en }
-
+  - alias: 法鬥耳炎
+    language: zh
+  - alias: 法鬥慢性外耳炎
+    language: zh
+  - alias: French Bulldog otitis
+    language: en
+  - alias: Frenchie ear infections
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 法國鬥牛犬為耳道感染最好發品種之一。約 50-60% 的法鬥一生中會經歷耳道感染。與過敏性疾病高度相關。
-
 etiology:
   categories:
     - name: 原發因素
@@ -33,7 +34,6 @@ etiology:
         - 皮脂腺分泌旺盛
         - 耳道濕氣不易散發
         - 過度清潔耳朵
-
 clinicalSigns:
   early:
     - 搖頭
@@ -47,21 +47,19 @@ clinicalSigns:
     - 聽力下降
     - 頭部傾斜（中耳炎時）
     - 耳道狹窄與鈣化（慢性）
-
 diagnosis:
   primaryTests:
     - name: 耳道鏡檢查
-      notes: "評估耳道紅腫、分泌物、鼓膜完整性。嚴重時需鎮靜下進行"
+      notes: 評估耳道紅腫、分泌物、鼓膜完整性。嚴重時需鎮靜下進行
     - name: 耳道分泌物細胞學
-      notes: "壓印抹片染色。辨識酵母菌、細菌（球菌/桿菌）與炎性細胞"
+      notes: 壓印抹片染色。辨識酵母菌、細菌（球菌/桿菌）與炎性細胞
     - name: 細菌培養與藥敏
-      notes: "慢性反覆感染或桿菌感染時必需。指導抗生素選擇"
+      notes: 慢性反覆感染或桿菌感染時必需。指導抗生素選擇
   differentialDiagnoses:
     - 耳道異物
     - 耳道腫瘤
     - 耳疥蟲
     - 中耳炎
-
 treatment:
   medical:
     - 局部耳藥（依病原選擇：抗黴菌 + 抗生素 + 類固醇複方）
@@ -71,35 +69,55 @@ treatment:
     - 食物排除試驗（疑似食物過敏時）
   surgical:
     - 全耳道切除合併鼓泡切開術（TECA-BO，終末期耳道）
-
 prognosis:
-  general: "預後取決於潛在過敏控制與感染嚴重度。積極控制過敏可顯著減少耳炎復發。慢性未治療的耳道可進展至不可逆狹窄，需手術切除。多數犬需終生耳部護理。"
-
+  general: 預後取決於潛在過敏控制與感染嚴重度。積極控制過敏可顯著減少耳炎復發。慢性未治療的耳道可進展至不可逆狹窄，需手術切除。多數犬需終生耳部護理。
 prevention:
   - 定期耳道檢查與適度清潔
   - 過敏疾病的積極管理
   - 洗澡或游泳後擦乾耳道
   - 避免過度清潔耳朵
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: Brachycephaly, Ear Anatomy, and Co-Does Size Matter? A Retrospective Study on the Influence of Size-Dependent Features Regarding Canine Otitis Externa.
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Brachycephaly, Ear Anatomy, and Co-Does Size Matter? A Retrospective Study on the Influence of Size-Dependent
+      Features Regarding Canine Otitis Externa.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11987814/
     type: research
-    pmid: "40218327"
+    pmid: '40218327'
   - sourceOrg: Veterinary record open
-    title: "Bacterial meningitis secondary to otogenic infection in 10 French bulldogs: A retrospective case series."
+    title: 'Bacterial meningitis secondary to otogenic infection in 10 French bulldogs: A retrospective case series.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10264364/
     type: research
-    pmid: "37325339"
+    pmid: '37325339'
   - sourceOrg: Canadian journal of veterinary research = Revue canadienne de recherche veterinaire
     title: Short- and long-term outcomes of subtotal ear canal ablation and lateral bulla osteotomy in French bulldogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10542946/
     type: research
-    pmid: "37790263"
+    pmid: '37790263'
   - sourceOrg: BMC veterinary research
-    title: "Prevalence of neurological disorders in French bulldog: a retrospective study of 343 cases (2002-2016)."
+    title: 'Prevalence of neurological disorders in French bulldog: a retrospective study of 343 cases (2002-2016).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5497356/
     type: research
-    pmid: "28676057"
+    pmid: '28676057'
+associatedSymptoms:
+  - symptomId: head-tilt
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 法國鬥牛犬耳道感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - head-tilt 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 耳道鏡檢查
+          notes: 評估耳道紅腫、分泌物、鼓膜完整性。嚴重時需鎮靜下進行
+        - name: 耳道分泌物細胞學
+          notes: 壓印抹片染色。辨識酵母菌、細菌（球菌/桿菌）與炎性細胞
+        - name: 細菌培養與藥敏
+          notes: 慢性反覆感染或桿菌感染時必需。指導抗生素選擇
+ddxSource: auto-generated

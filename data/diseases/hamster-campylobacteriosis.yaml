@@ -3,22 +3,20 @@ nameEn: Hamster Campylobacteriosis
 nameZh: 倉鼠曲狀桿菌感染
 bodySystem: gastrointestinal
 description: 由 Campylobacter jejuni 引起的倉鼠腸道感染，可導致水樣腹瀉。為人畜共通疾病，接觸感染倉鼠後需注意手部衛生。
-
 aliases:
-  - { alias: "倉鼠曲狀桿菌感染", language: zh }
-  - { alias: "Hamster Campylobacteriosis", language: en }
-
+  - alias: 倉鼠曲狀桿菌感染
+    language: zh
+  - alias: Hamster Campylobacteriosis
+    language: en
 species:
   - speciesCommon: hamster
     prevalence: uncommon
     notes: 倉鼠可受此疾病影響。
-
 etiology:
   categories:
     - name: 病因
       examples:
         - 詳見臨床文獻
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -27,14 +25,12 @@ clinicalSigns:
   progressive:
     - 症狀加重
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 完整理學檢查與病史評估。
     - name: 實驗室檢查
       notes: CBC/生化排除系統性疾病。
-
 treatment:
   principles:
     - 治療基礎病因
@@ -44,26 +40,64 @@ treatment:
     - 依病因治療
     - 支持性照護
     - 定期追蹤
-
 prognosis: 預後取決於疾病嚴重度與治療時效。早期診斷與適當治療可改善預後。
-
-
 guidelineRefs:
-  - sourceOrg: "Cell communication and signaling : CCS"
-    title: "Transmigration route of Campylobacter jejuni across polarized intestinal epithelial cells: paracellular, transcellular or both?"
+  - sourceOrg: 'Cell communication and signaling : CCS'
+    title: >-
+      Transmigration route of Campylobacter jejuni across polarized intestinal epithelial cells: paracellular,
+      transcellular or both?
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3850506/
     type: review
-    pmid: "24079544"
+    pmid: '24079544'
   - sourceOrg: PLoS pathogens
-    title: Pathobiology and dysbiosis of the respiratory and intestinal microbiota in 14 months old Golden Syrian hamsters infected with SARS-CoV-2.
+    title: >-
+      Pathobiology and dysbiosis of the respiratory and intestinal microbiota in 14 months old Golden Syrian hamsters
+      infected with SARS-CoV-2.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9632924/
     type: research
-    pmid: "36279276"
+    pmid: '36279276'
   - sourceOrg: Journal of medical microbiology
     title: Co-infection of the Siberian hamster (Phodopus sungorus) with a novel Helicobacter sp. and Campylobacter sp.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4635475/
     type: research
-    pmid: "25752854"
+    pmid: '25752854'
 pubmedQueries:
   - query: '"Hamster Campylobacteriosis" AND (veterinary OR hamster) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 倉鼠曲狀桿菌感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 完整理學檢查與病史評估。
+        - name: 實驗室檢查
+          notes: CBC/生化排除系統性疾病。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 支持性照護
+        - 監測恢復進度
+ddxSource: auto-generated

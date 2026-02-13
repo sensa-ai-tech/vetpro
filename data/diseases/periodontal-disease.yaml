@@ -3,14 +3,17 @@ nameEn: Periodontal Disease
 nameZh: 牙周病
 bodySystem: dental
 description: 牙菌斑引起的牙周支持組織進行性破壞，為犬貓最常見的口腔疾病。超過 80% 三歲以上犬貓有不同程度的牙周病變。
-
 aliases:
-  - { alias: 牙齦炎, language: zh }
-  - { alias: 齒齦炎, language: zh }
-  - { alias: Periodontitis, language: en }
-  - { alias: Gingivitis, language: en }
-  - { alias: Gum Disease, language: en }
-
+  - alias: 牙齦炎
+    language: zh
+  - alias: 齒齦炎
+    language: zh
+  - alias: Periodontitis
+    language: en
+  - alias: Gingivitis
+    language: en
+  - alias: Gum Disease
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 約 70% 三歲以上貓有牙周病。貓的牙齦口炎 (FCGS) 為嚴重型態，與免疫反應異常相關。
-
 etiology:
   categories:
     - name: 主要病因
@@ -41,7 +43,6 @@ etiology:
         - FCV/FHV 慢性感染
         - FIV/FeLV 感染
         - 免疫介導反應 (FCGS)
-
 clinicalSigns:
   early:
     - 口臭 (halitosis)
@@ -60,21 +61,19 @@ clinicalSigns:
     - 口鼻瘻管 (oronasal fistula)
     - 下顎骨病理性骨折 (小型犬)
     - 慢性疼痛影響生活品質
-
 diagnosis:
   primaryTests:
     - name: 口腔檢查
-      notes: "清醒時初步評估牙結石、牙齦紅腫程度。完整評估需全身麻醉下進行"
+      notes: 清醒時初步評估牙結石、牙齦紅腫程度。完整評估需全身麻醉下進行
     - name: 牙周探針檢查
-      notes: "全身麻醉下以牙周探針逐齒探測，記錄牙周囊袋深度（犬正常 <3 mm，貓 <1 mm）"
+      notes: 全身麻醉下以牙周探針逐齒探測，記錄牙周囊袋深度（犬正常 <3 mm，貓 <1 mm）
   imaging:
     - name: 全口齒科 X 光
-      notes: "評估齒槽骨喪失程度，分為水平性與垂直性骨喪失。為牙周病分期必備檢查"
+      notes: 評估齒槽骨喪失程度，分為水平性與垂直性骨喪失。為牙周病分期必備檢查
   additional:
     - 牙周病分期 (Stage 1-4，依據 AVDC 標準)
     - CBC/生化 (麻醉前評估)
     - 細菌培養 (難治性病例)
-
 treatment:
   principles:
     - 全身麻醉下進行專業牙科處理
@@ -91,41 +90,93 @@ treatment:
     - 居家刷牙 (每日為最佳，至少每週 3 次)
     - 獸醫牙科飲食 (Hill's t/d、Royal Canin Dental)
     - VOHC 認證潔牙產品
-
 prognosis: 早期牙齦炎 (Stage 1) 完全可逆。牙周炎 (Stage 2-4) 的骨喪失不可逆，但及時治療可防止進一步惡化。建立規律居家護理與定期專業洗牙是長期控制關鍵。
-
 guidelineRefs:
   - sourceOrg: AAHA
     title: 2019 AAHA Dental Care Guidelines for Dogs and Cats
     url: https://pubmed.ncbi.nlm.nih.gov/30776257/
     type: guideline
-    pmid: "30776257"
+    pmid: '30776257'
   - sourceOrg: WSAVA
     title: WSAVA Global Dental Guidelines
     url: https://pubmed.ncbi.nlm.nih.gov/32027102/
     type: guideline
-    pmid: "32027102"
+    pmid: '32027102'
   - sourceOrg: Journal of feline medicine and surgery
     title: 2025 FelineVMA feline oral health and dental care guidelines.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12665832/
     type: guideline
-    pmid: "41319038"
+    pmid: '41319038'
   - sourceOrg: Revista cientifica odontologica (Universidad Cientifica del Sur)
-    title: Pre-clinical and clinical efficacy of curcumin as an anti-inflammatory agent for periodontitis. A systematic review.
+    title: >-
+      Pre-clinical and clinical efficacy of curcumin as an anti-inflammatory agent for periodontitis. A systematic
+      review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11792608/
     type: review
-    pmid: "39912085"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Genomic Medicine in Canine Periodontal Disease: A Systematic Review."
+    pmid: '39912085'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Genomic Medicine in Canine Periodontal Disease: A Systematic Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10417655/
     type: review
-    pmid: "37570272"
+    pmid: '37570272'
     relevance: primary
 pubmedQueries:
   - query: '"periodontal disease" AND (dog OR cat OR canine OR feline) AND ("guidelines" OR "consensus" OR "treatment")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "PERIODONTAL DISEASE"
+  chapter: DIG
+  sectionTitle: PERIODONTAL DISEASE
   pdfPage: 218
+diagnosticAlgorithm:
+  title: 牙周病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 觀察口臭程度、進食習慣變化，清醒狀態下初步口腔檢查
+      findings:
+        - 口臭
+        - 牙齦紅腫出血
+        - 可見牙結石堆積
+        - 流涎或進食困難
+    - step: 2
+      action: 麻醉下完整口腔檢查
+      details: 全身麻醉下進行詳細牙齒探測，使用牙周探針測量牙周囊袋深度
+      findings:
+        - 牙周囊袋深度增加（犬>3mm，貓>1mm）
+        - 牙齦退縮
+        - 齒根暴露
+        - 牙齒動搖度增加
+    - step: 3
+      action: 口腔X光檢查
+      details: 全口齒科X光拍攝，評估齒槽骨流失程度
+      findings:
+        - 水平性或垂直性齒槽骨吸收
+        - 齒根尖周圍透射影
+        - 齒根吸收
+        - 骨質密度降低
+    - step: 4
+      action: 分期與治療計劃
+      details: 根據檢查結果進行牙周病分期（第1-4期），制定治療計劃
+      findings:
+        - 第1期：僅牙齦炎
+        - 第2期：早期牙周炎（<25%骨喪失）
+        - 第3期：中度牙周炎（25-50%骨喪失）
+        - 第4期：重度牙周炎（>50%骨喪失）
+clinicalPearls:
+  - 非麻醉洗牙（NAD）無法進行齦下治療，不建議作為牙周治療
+  - 每日刷牙是最有效的牙菌斑控制方法
+  - 小型犬的下頷骨可因嚴重牙周病而病理性骨折
+  - 牙科疾病被認為與心臟、腎臟疾病有關聯
+monitoringItems:
+  - 口腔檢查頻率依嚴重度
+  - 家庭護理依從性
+  - 全身健康影響
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: halitosis-stomatitis
+    frequency: common
+ddxSource: book

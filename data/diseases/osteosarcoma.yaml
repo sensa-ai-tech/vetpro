@@ -3,22 +3,24 @@ nameEn: Osteosarcoma
 nameZh: 骨肉瘤
 bodySystem: oncology
 description: 犬最常見的原發性骨骼惡性腫瘤，好發於大型及巨型犬的四肢長骨，具有高度肺轉移傾向。
-
 aliases:
-  - { alias: OSA, language: en }
-  - { alias: Osteogenic Sarcoma, language: en }
-  - { alias: 成骨肉瘤, language: zh }
-
+  - alias: OSA
+    language: en
+  - alias: Osteogenic Sarcoma
+    language: en
+  - alias: 成骨肉瘤
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
-    notes: 佔犬原發性骨腫瘤約 85%。好發品種：Great Dane、Irish Wolfhound、Rottweiler、Greyhound、Saint Bernard、Golden Retriever。體重 >40 kg 犬風險顯著增加。中位年齡 7-8 歲。雄性略多。
+    notes: >-
+      佔犬原發性骨腫瘤約 85%。好發品種：Great Dane、Irish Wolfhound、Rottweiler、Greyhound、Saint Bernard、Golden Retriever。體重 >40 kg
+      犬風險顯著增加。中位年齡 7-8 歲。雄性略多。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓罕見。後肢多於前肢，轉移率較犬低 (約 5-10%)。中位年齡約 10 歲。手術切除後預後較犬佳。
-
 etiology:
   categories:
     - name: 品種/體型因素
@@ -39,9 +41,9 @@ etiology:
         - PTEN 缺失
         - MET 過度表現
         - 多基因遺傳傾向 (GWAS 研究)
-
-pathophysiology: 骨肉瘤起源於間葉幹細胞的惡性轉化，產生腫瘤性類骨質 (osteoid)。腫瘤在骨髓腔內擴展，破壞正常骨結構，同時刺激骨膜反應性新骨形成。腫瘤破壞骨皮質導致病理性骨折風險增加。腫瘤產生的蛋白酶、前列腺素及 RANKL 激活破骨細胞，造成溶骨性破壞，同時腫瘤細胞釋放的骨形態發生蛋白促進成骨反應，形成特徵性「日射狀」骨膜反應。疼痛來自骨膜牽張、微骨折及炎症介質。犬 OSA 具有極高的肺血行轉移傾向，診斷時估計 >90% 已有肺臟微轉移。
-
+pathophysiology: >-
+  骨肉瘤起源於間葉幹細胞的惡性轉化，產生腫瘤性類骨質 (osteoid)。腫瘤在骨髓腔內擴展，破壞正常骨結構，同時刺激骨膜反應性新骨形成。腫瘤破壞骨皮質導致病理性骨折風險增加。腫瘤產生的蛋白酶、前列腺素及 RANKL
+  激活破骨細胞，造成溶骨性破壞，同時腫瘤細胞釋放的骨形態發生蛋白促進成骨反應，形成特徵性「日射狀」骨膜反應。疼痛來自骨膜牽張、微骨折及炎症介質。犬 OSA 具有極高的肺血行轉移傾向，診斷時估計 >90% 已有肺臟微轉移。
 clinicalSigns:
   early:
     - 間歇性跛行 (逐漸加重)
@@ -58,22 +60,21 @@ clinicalSigns:
     - 嚴重疼痛 (不願站立/行走)
     - 肺轉移症狀 (呼吸困難、咳嗽)
     - 惡病質
-
 diagnosis:
   primaryTests:
     - name: X 光 (患肢)
-      notes: "典型影像：幹骺端溶骨性/增殖性/混合性病變、骨皮質破壞、日射狀骨膜反應 (sunburst pattern)、Codman triangle。不跨越關節面"
+      notes: 典型影像：幹骺端溶骨性/增殖性/混合性病變、骨皮質破壞、日射狀骨膜反應 (sunburst pattern)、Codman triangle。不跨越關節面
     - name: 組織病理學 (骨切片活檢)
-      notes: "確診金標準。Jamshidi needle 或 trephine 核心活檢。可判定組織亞型 (osteoblastic、chondroblastic、fibroblastic 等)"
+      notes: 確診金標準。Jamshidi needle 或 trephine 核心活檢。可判定組織亞型 (osteoblastic、chondroblastic、fibroblastic 等)
     - name: 鹼性磷酸酶 (ALP)
-      notes: "血清 ALP 升高為不良預後因子。骨特異性 ALP (bALP) 更具特異性"
+      notes: 血清 ALP 升高為不良預後因子。骨特異性 ALP (bALP) 更具特異性
   imaging:
     - name: 胸腔 X 光 (三方向)
-      notes: "肺轉移篩檢。診斷時約 10-15% X 光可見肺結節 (實際微轉移率 >90%)"
+      notes: 肺轉移篩檢。診斷時約 10-15% X 光可見肺結節 (實際微轉移率 >90%)
     - name: 胸腔 CT
-      notes: "較 X 光敏感度高，可偵測更小的肺結節"
+      notes: 較 X 光敏感度高，可偵測更小的肺結節
     - name: 骨掃描 (核醫學)
-      notes: "評估多發骨病變。約 7% 犬 OSA 為多骨性"
+      notes: 評估多發骨病變。約 7% 犬 OSA 為多骨性
   differentialDiagnoses:
     - 軟骨肉瘤 (Chondrosarcoma)
     - 纖維肉瘤 (Fibrosarcoma)
@@ -86,7 +87,6 @@ diagnosis:
     - 區域淋巴結 FNA (若腫大)
     - FNA 細胞學 (可能有幫助但非首選，需注意血液污染)
     - 骨病變鑑別：黴菌性骨髓炎、其他骨腫瘤 (軟骨肉瘤、纖維肉瘤)
-
 treatment:
   principles:
     - 截肢 + 輔助化療為標準治療
@@ -95,16 +95,18 @@ treatment:
     - 疼痛控制至關重要
   medications:
     - name: Carboplatin
-      dose: "300 mg/m² IV 每 3 週 × 4-6 次"
+      dose: 300 mg/m² IV 每 3 週 × 4-6 次
       notes: 截肢術後輔助化療首選。中位存活約 10-12 個月 (vs 僅截肢 4-5 個月)
     - name: Doxorubicin
-      dose: "30 mg/m² IV 每 3 週 × 5 次"
+      dose: 30 mg/m² IV 每 3 週 × 5 次
       notes: 療效與 carboplatin 相當。注意累積心臟毒性 (總劑量 <240 mg/m²)
     - name: Carboplatin + Doxorubicin (交替)
-      dose: "Carboplatin 300 mg/m² 與 Doxorubicin 30 mg/m² 交替，每 3 週 × 6 次"
+      dose: Carboplatin 300 mg/m² 與 Doxorubicin 30 mg/m² 交替，每 3 週 × 6 次
       notes: 部分研究顯示交替方案可能優於單藥
     - name: 疼痛管理
-      dose: "NSAIDs (meloxicam 0.1 mg/kg PO SID 或 carprofen 4.4 mg/kg PO SID) + Gabapentin 5-10 mg/kg PO BID/TID ± Tramadol 2-5 mg/kg PO BID/TID"
+      dose: >-
+        NSAIDs (meloxicam 0.1 mg/kg PO SID 或 carprofen 4.4 mg/kg PO SID) + Gabapentin 5-10 mg/kg PO BID/TID ± Tramadol
+        2-5 mg/kg PO BID/TID
       notes: 多模式止痛，視嚴重度調整
   general:
     - 截肢 (四肢 OSA 標準手術)
@@ -112,41 +114,90 @@ treatment:
     - 姑息性放射治療 (無法手術時疼痛控制，粗分割方案 3-4 次)
     - 三足犬適應良好 (排除嚴重關節疾病/神經疾病/過度肥胖)
     - 術後物理復健
-
 prognosis: 截肢 + 化療中位存活約 10-12 個月，約 20% 存活 >2 年。僅截肢中位存活約 4-5 個月。診斷時 ALP 正常者預後較佳。中軸骨 OSA 預後較四肢差。貓 OSA 截肢後中位存活約 2-4 年 (轉移率低)。
-
 guidelineRefs:
   - sourceOrg: ACVS
     title: ACVS Large Animal/Small Animal — Osteosarcoma
     url: https://www.acvs.org/small-animal/osteosarcoma
     type: guideline
   - sourceOrg: Frontiers in veterinary science
-    title: "Osteosarcoma of the appendicular skeleton in dogs: consensus and guidelines."
+    title: 'Osteosarcoma of the appendicular skeleton in dogs: consensus and guidelines.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12498955/
     type: review
-    pmid: "41059462"
+    pmid: '41059462'
   - sourceOrg: Biomedical engineering letters
-    title: "Additive manufacturing to veterinary practice: recovery of bony defects after the osteosarcoma resection in canines."
+    title: >-
+      Additive manufacturing to veterinary practice: recovery of bony defects after the osteosarcoma resection in
+      canines.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6431339/
     type: review
-    pmid: "30956883"
+    pmid: '30956883'
   - sourceOrg: Frontiers in oncology
-    title: "Extracellular Vesicles: A New Source of Biomarkers in Pediatric Solid Tumors? A Systematic Review."
+    title: 'Extracellular Vesicles: A New Source of Biomarkers in Pediatric Solid Tumors? A Systematic Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9173703/
     type: review
-    pmid: "35686092"
+    pmid: '35686092'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
-    title: "Assisting Decision-Making on Age of Neutering for 35 Breeds of Dogs: Associated Joint Disorders, Cancers, and Urinary Incontinence."
+    title: >-
+      Assisting Decision-Making on Age of Neutering for 35 Breeds of Dogs: Associated Joint Disorders, Cancers, and
+      Urinary Incontinence.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7359819/
     type: research
-    pmid: "32733924"
+    pmid: '32733924'
     relevance: supporting
 pubmedQueries:
   - query: '"osteosarcoma" AND (dog OR canine) AND ("amputation" OR "chemotherapy" OR "carboplatin")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "NER"
-  sectionTitle: "Osteosarcoma, lipoma, Variable"
+  chapter: NER
+  sectionTitle: Osteosarcoma, lipoma, Variable
   pdfPage: 1310
+diagnosticAlgorithm:
+  title: 骨肉瘤 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估跛行、腫脹及骨骼疼痛
+      findings:
+        - 漸進性跛行
+        - 受影響長骨腫脹
+        - 觸診疼痛
+        - 大型犬中老年
+    - step: 2
+      action: 骨骼X光
+      details: 受影響區域正交位X光
+      findings:
+        - 骨溶解性及增生性混合病灶
+        - 皮質骨破壞
+        - 骨膜反應（日光放射狀）
+        - 軟組織腫塊
+    - step: 3
+      action: 胸腔轉移評估
+      details: 三視X光或CT評估肺部
+      findings:
+        - 肺部結節性轉移灶
+        - 區域淋巴結評估
+        - 約90%就診時已有微轉移
+    - step: 4
+      action: 組織切片確診
+      details: 骨骼組織切片病理學
+      findings:
+        - 梭形細胞腫瘤伴骨基質
+        - 鹼性磷酸酶組織染色
+        - 分級與亞型分類
+        - 排除軟骨肉瘤或纖維肉瘤
+clinicalPearls:
+  - 「遠離肘關節、靠近膝關節」（好發位置）
+  - 轉移時間早，診斷時90%已有微轉移
+  - 阿鹼性磷酸酶升高是不良預後因子
+  - 三腳犬生活品質可以很好
+monitoringItems:
+  - 胸部X光每2-3月
+  - 疼痛管理
+  - 生活品質
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+ddxSource: book

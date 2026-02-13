@@ -3,12 +3,13 @@ nameEn: Coagulopathy
 nameZh: 凝血病
 bodySystem: hematology
 description: 凝血病為凝血功能障礙的統稱，包括凝血因子缺乏（遺傳性或後天性）、血小板功能異常及纖維蛋白溶解過度。後天性凝血病遠較遺傳性常見，包括抗凝血劑中毒、肝功能衰竭、DIC 及維生素 K 缺乏。臨床表現為異常出血或血栓形成。
-
 aliases:
-  - { alias: 凝血障礙, language: zh }
-  - { alias: Coagulation Disorder, language: en }
-  - { alias: Bleeding Disorder, language: en }
-
+  - alias: 凝血障礙
+    language: zh
+  - alias: Coagulation Disorder
+    language: en
+  - alias: Bleeding Disorder
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻凝血病較犬少見。肝臟疾病、DIC 為主要後天性原因。貓血友病 A、B 有報告。
-
 etiology:
   categories:
     - name: 後天性（最常見）
@@ -31,7 +31,6 @@ etiology:
         - 血友病 A（Factor VIII 缺乏）
         - 血友病 B（Factor IX 缺乏）
         - Factor VII 缺乏
-
 clinicalSigns:
   early:
     - 輕微創傷後出血延長
@@ -43,55 +42,89 @@ clinicalSigns:
     - 關節出血（血友病特徵）
     - 腹腔或胸腔出血（抗凝血劑中毒）
     - 出血性休克
-
 diagnosis:
   primaryTests:
     - name: 凝血篩檢（PT、APTT）
-      notes: "PT 延長（外源性途徑）：Factor VII 缺乏、維生素 K 缺乏、抗凝血劑中毒。APTT 延長（內源性途徑）：血友病。PT + APTT 均延長：DIC、嚴重肝病、維生素 K 缺乏。"
+      notes: PT 延長（外源性途徑）：Factor VII 缺乏、維生素 K 缺乏、抗凝血劑中毒。APTT 延長（內源性途徑）：血友病。PT + APTT 均延長：DIC、嚴重肝病、維生素 K 缺乏。
     - name: 血小板計數與功能
       notes: 排除血小板減少症與血小板功能異常。Buccal mucosal bleeding time（BMBT）評估初級止血功能。
-
 treatment:
   principles:
     - 治療基礎病因
     - 急性出血需緊急止血與補充凝血因子
     - 維生素 K 缺乏/拮抗予以補充
   general:
-    - "抗凝血劑中毒：Vitamin K1 2.5-5 mg/kg PO q12h × 4-6 週"
-    - "急性出血：新鮮冷凍血漿（FFP）10-15 mL/kg IV + pRBC（貧血時）"
-    - "DIC：治療基礎疾病 + FFP + 低劑量 Heparin（爭議）"
+    - 抗凝血劑中毒：Vitamin K1 2.5-5 mg/kg PO q12h × 4-6 週
+    - 急性出血：新鮮冷凍血漿（FFP）10-15 mL/kg IV + pRBC（貧血時）
+    - DIC：治療基礎疾病 + FFP + 低劑量 Heparin（爭議）
     - 肝臟疾病：支持性肝臟治療 + Vitamin K1
     - 遺傳性凝血病：手術前 FFP 預防、基因檢測與繁殖建議
-
 prognosis: 預後取決於病因。抗凝血劑中毒在及時 Vitamin K1 治療下預後良好。DIC 預後取決於基礎疾病嚴重程度。肝功能衰竭合併凝血病提示晚期肝病，預後不良。遺傳性凝血病可通過適當管理維持良好生活品質。
-
-
 guidelineRefs:
   - sourceOrg: Thrombosis and haemostasis
-    title: "Handheld Point-of-Care Devices for Snakebite Coagulopathy: A Scoping Review."
+    title: 'Handheld Point-of-Care Devices for Snakebite Coagulopathy: A Scoping Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12040437/
     type: review
-    pmid: "39214143"
+    pmid: '39214143'
   - sourceOrg: Journal of clinical and translational science
-    title: "Breaking barriers in trauma research: A narrative review of opportunities to leverage veterinary trauma for accelerated translation to clinical solutions for pets and people."
+    title: >-
+      Breaking barriers in trauma research: A narrative review of opportunities to leverage veterinary trauma for
+      accelerated translation to clinical solutions for pets and people.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11075112/
     type: review
-    pmid: "38715566"
+    pmid: '38715566'
   - sourceOrg: AMB Express
-    title: "Heparanase is the possible link between monkeypox and Covid-19: robust candidature in the mystic and present perspective."
+    title: >-
+      Heparanase is the possible link between monkeypox and Covid-19: robust candidature in the mystic and present
+      perspective.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9880376/
     type: review
-    pmid: "36705773"
+    pmid: '36705773'
   - sourceOrg: Frontiers in veterinary science
     title: Mechanical ventilation in snake envenomation of dogs and cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10090310/
     type: review
-    pmid: "37065246"
-  - sourceOrg: "Cell stress &amp; chaperones"
+    pmid: '37065246'
+  - sourceOrg: Cell stress &amp; chaperones
     title: SARS-CoV-2 infection and dysregulation of nuclear factor erythroid-2-related factor 2 (Nrf2) pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10746631/
     type: review
-    pmid: "37796433"
+    pmid: '37796433'
 pubmedQueries:
   - query: '"coagulopathy" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: epistaxis
+    frequency: uncommon
+  - symptomId: melaena
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: uncommon
+  - symptomId: petechiae-ecchymoses
+    frequency: common
+diagnosticAlgorithm:
+  title: 凝血病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - epistaxis 相關症狀
+        - melaena 相關症狀
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 凝血篩檢（PT、APTT）
+          notes: PT 延長（外源性途徑）：Factor VII 缺乏、維生素 K 缺乏、抗凝血劑中毒。APTT 延長（內源性途徑）：血友病。PT + APTT 均延長：DIC、嚴重肝病、維生素 K 缺乏。
+        - name: 血小板計數與功能
+          notes: 排除血小板減少症與血小板功能異常。Buccal mucosal bleeding time（BMBT）評估初級止血功能。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 急性出血需緊急止血與補充凝血因子
+        - 維生素 K 缺乏/拮抗予以補充
+ddxSource: auto-generated

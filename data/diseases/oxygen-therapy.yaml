@@ -3,13 +3,15 @@ nameEn: Oxygen Therapy
 nameZh: 氧氣治療
 bodySystem: emergency
 description: 透過各種給氧裝置提高吸入氧濃度（FiO2）以改善低血氧症的急救與支持性治療。適用於任何原因導致的呼吸窘迫或組織缺氧，為獸醫急診與重症照護中最基本且最重要的支持手段之一。
-
 aliases:
-  - { alias: 給氧治療, language: zh }
-  - { alias: 氧療, language: zh }
-  - { alias: Supplemental Oxygen, language: en }
-  - { alias: O2 Therapy, language: en }
-
+  - alias: 給氧治療
+    language: zh
+  - alias: 氧療
+    language: zh
+  - alias: Supplemental Oxygen
+    language: en
+  - alias: O2 Therapy
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓對約束極度敏感，壓力可加重呼吸窘迫。優先選擇低壓力的給氧方式（Flow-by 或氧氣籠）。
-
 etiology:
   categories:
     - name: 給氧適應症
@@ -32,7 +33,6 @@ etiology:
         - 面罩（FiO2 50-60%）
         - 鼻導管（FiO2 30-50%，單側或雙側）
         - 氧氣籠（FiO2 40-60%，低壓力）
-
 clinicalSigns:
   early:
     - 呼吸急促（tachypnea）
@@ -44,14 +44,12 @@ clinicalSigns:
     - 張口呼吸（貓為嚴重徵兆）
     - 意識程度下降
     - SpO2 持續下降
-
 diagnosis:
   primaryTests:
     - name: 脈搏血氧儀（Pulse Oximetry）
       notes: SpO2 <93% 提示需要氧氣補充。注意色素沉著黏膜或低灌流狀態可能讀值不準。
     - name: 動脈血氣分析
       notes: PaO2 <80 mmHg 定義低血氧症。P/F ratio（PaO2/FiO2）<300 提示急性肺損傷。
-
 treatment:
   principles:
     - 低血氧為急症，應立即給氧
@@ -65,36 +63,63 @@ treatment:
     - 鼻導管流速：犬 50-100 mL/kg/min，貓 50 mL/kg/min
     - 監測 SpO2 目標 >95%
     - 長時間高濃度氧氣（FiO2 >60% 超過 24 小時）有氧中毒風險
-
 prognosis: 氧氣治療本身為支持手段，預後取決於基礎病因。可逆性低血氧（如氣胸引流後、肺炎抗生素治療後）預後良好。需要長時間高濃度氧氣或對氧氣治療反應不佳者提示嚴重肺實質病變，預後謹慎至不良。
-
-
 guidelineRefs:
   - sourceOrg: The Cochrane database of systematic reviews
     title: Favipiravir for treating COVID-19.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10840071/
     type: review
-    pmid: "38314855"
+    pmid: '38314855'
   - sourceOrg: Frontiers in veterinary science
     title: Clinical review of high-flow nasal oxygen therapy in human and veterinary patients.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10027015/
     type: review
-    pmid: "36950541"
+    pmid: '36950541'
   - sourceOrg: Canadian journal of veterinary research = Revue canadienne de recherche veterinaire
     title: Conventional versus high-flow oxygen therapy in dogs with lower airway injury.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8451709/
     type: review
-    pmid: "34602728"
+    pmid: '34602728'
   - sourceOrg: The Journal of small animal practice
     title: Rationale for hyperbaric oxygen therapy in traumatic injury and wound care in small animal veterinary practice.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8519146/
     type: review
-    pmid: "34018618"
+    pmid: '34018618'
   - sourceOrg: Journal of feline medicine and surgery
     title: High-flow nasal cannula oxygen therapy in seven cats with respiratory failure.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11292939/
     type: case-report
-    pmid: "39073918"
+    pmid: '39073918'
 pubmedQueries:
   - query: '"Oxygen Therapy" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: common
+diagnosticAlgorithm:
+  title: 氧氣治療 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - pallor-cyanosis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 脈搏血氧儀（Pulse Oximetry）
+          notes: SpO2 <93% 提示需要氧氣補充。注意色素沉著黏膜或低灌流狀態可能讀值不準。
+        - name: 動脈血氣分析
+          notes: PaO2 <80 mmHg 定義低血氧症。P/F ratio（PaO2/FiO2）<300 提示急性肺損傷。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 低血氧為急症，應立即給氧
+        - 選擇動物最能耐受的給氧方式
+        - 避免不必要的約束加重呼吸窘迫
+ddxSource: auto-generated

@@ -3,11 +3,11 @@ nameEn: Hypercalcemia of Malignancy
 nameZh: 惡性腫瘤性高鈣血症
 bodySystem: oncology
 description: 腫瘤引起的高鈣血症，為犬最常見的副腫瘤症候群。最常見原因為淋巴瘤與肛囊腺癌分泌 PTHrP。高鈣血症可導致腎損傷、心律不整與神經症狀。
-
 aliases:
-  - { alias: "Humoral Hypercalcemia of Malignancy", language: en }
-  - { alias: "腫瘤相關高鈣血症", language: zh }
-
+  - alias: Humoral Hypercalcemia of Malignancy
+    language: en
+  - alias: 腫瘤相關高鈣血症
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。淋巴瘤相關。
-
 etiology:
   categories:
     - name: 腫瘤分泌因子
@@ -23,7 +22,6 @@ etiology:
         - PTHrP（副甲狀腺素相關蛋白）分泌
         - 骨溶解因子
         - 淋巴瘤、肛囊腺癌、多發性骨髓瘤最常見
-
 clinicalSigns:
   early:
     - 多飲多尿
@@ -35,16 +33,14 @@ clinicalSigns:
     - 肌肉無力
     - 腎損傷
     - 心律不整
-
 diagnosis:
   primaryTests:
     - name: 血離子鈣
-      notes: ">1.4 mmol/L（犬正常 1.25-1.35）確認高鈣血症"
+      notes: '>1.4 mmol/L（犬正常 1.25-1.35）確認高鈣血症'
     - name: PTHrP
       notes: 升高支持惡性腫瘤性高鈣血症
     - name: 腫瘤搜尋
       notes: 淋巴結評估、肛門觸診、胸腹腔影像
-
 treatment:
   principles:
     - 緊急降鈣保護腎臟
@@ -55,36 +51,77 @@ treatment:
     - Bisphosphonate（Pamidronate 或 Zoledronate）
     - 治療潛在腫瘤（化療、手術）
     - Prednisolone（淋巴瘤相關）
-
 prognosis: 取決於潛在腫瘤治療反應。淋巴瘤化療後高鈣血症通常快速緩解。肛囊腺癌手術後高鈣血症改善。持續高鈣血症導致腎衰竭預後不良。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
     title: Is There Anything New in Canine AGASACA?
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11680110/
     type: review
-    pmid: "39728969"
+    pmid: '39728969'
   - sourceOrg: Veterinary sciences
     title: Animal Models of Cancer-Associated Hypercalcemia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5606604/
     type: review
-    pmid: "29056680"
+    pmid: '29056680'
   - sourceOrg: Journal of veterinary internal medicine
     title: Evaluation of the clinical outcome of hypercalcemia of malignancy and concurrent azotemia in dogs with lymphoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10800190/
     type: research
-    pmid: "38131263"
+    pmid: '38131263'
   - sourceOrg: Frontiers in veterinary science
-    title: Retrospective Evaluation of Acute Kidney Injury After Zoledronic Acid Administration to Dogs With Malignant Osteolysis.
+    title: >-
+      Retrospective Evaluation of Acute Kidney Injury After Zoledronic Acid Administration to Dogs With Malignant
+      Osteolysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8282816/
     type: research
-    pmid: "34277751"
+    pmid: '34277751'
   - sourceOrg: Research in veterinary science
-    title: Epitheliotropic T-cell lymphoma of non-viral origin with hypercalcemia of malignancy in a Roman goose (Anser anser domesticus).
+    title: >-
+      Epitheliotropic T-cell lymphoma of non-viral origin with hypercalcemia of malignancy in a Roman goose (Anser anser
+      domesticus).
     url: https://pubmed.ncbi.nlm.nih.gov/39864347/
     type: case-report
-    pmid: "39864347"
+    pmid: '39864347'
 pubmedQueries:
   - query: '"hypercalcemia of malignancy" AND (veterinary OR canine OR feline) AND ("PTHrP" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: constipation
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 惡性腫瘤性高鈣血症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - polyuria-polydipsia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血離子鈣
+          notes: '>1.4 mmol/L（犬正常 1.25-1.35）確認高鈣血症'
+        - name: PTHrP
+          notes: 升高支持惡性腫瘤性高鈣血症
+        - name: 腫瘤搜尋
+          notes: 淋巴結評估、肛門觸診、胸腹腔影像
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 緊急降鈣保護腎臟
+        - 治療潛在腫瘤
+ddxSource: auto-generated

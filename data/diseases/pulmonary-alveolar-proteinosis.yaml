@@ -3,11 +3,11 @@ nameEn: Pulmonary Alveolar Proteinosis
 nameZh: 肺泡蛋白沉積症
 bodySystem: respiratory
 description: 肺泡內異常蛋白質及脂質沉積,導致氣體交換障礙。罕見疾病,病因不明,可能與巨噬細胞功能異常有關。
-
 aliases:
-  - { alias: 肺泡蛋白質沉著症, language: zh }
-  - { alias: PAP, language: en }
-
+  - alias: 肺泡蛋白質沉著症
+    language: zh
+  - alias: PAP
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 極罕見
-
 etiology:
   categories:
     - name: 特發性
@@ -27,7 +26,6 @@ etiology:
       examples:
         - 免疫抑制
         - 吸入性傷害
-
 clinicalSigns:
   early:
     - 運動不耐
@@ -36,62 +34,96 @@ clinicalSigns:
     - 呼吸困難
     - 發紺
     - 體重減輕
-
 diagnosis:
   primaryTests:
     - name: 胸部 X 光
-      notes: "瀰漫性肺泡浸潤 (瘋狂鋪路石樣)"
+      notes: 瀰漫性肺泡浸潤 (瘋狂鋪路石樣)
     - name: 支氣管肺泡灌洗
-      notes: "乳白色液體,PAS 陽性蛋白質及巨噬細胞"
+      notes: 乳白色液體,PAS 陽性蛋白質及巨噬細胞
     - name: 肺組織切片
-      notes: "確診:肺泡內 PAS 陽性蛋白質沉積"
+      notes: 確診:肺泡內 PAS 陽性蛋白質沉積
   differentialDiagnoses:
     - 肺水腫
     - 肺炎
     - 間質性肺病
-
 treatment:
   medical:
     - 全肺灌洗 (whole lung lavage, 人醫標準治療)
     - 支持性照護
     - 氧氣治療
     - 預防繼發感染
-
 prognosis:
-  general: "預後謹慎至不良;為進展性疾病,治療困難,多數病例預後不良"
-
+  general: 預後謹慎至不良;為進展性疾病,治療困難,多數病例預後不良
 prevention:
   - 無特定預防措施
-
-
 guidelineRefs:
   - sourceOrg: Interdisciplinary toxicology
-    title: "Aluminium toxicosis: a review of toxic actions and effects."
+    title: 'Aluminium toxicosis: a review of toxic actions and effects.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7071840/
     type: review
-    pmid: "32206026"
+    pmid: '32206026'
     relevance: primary
   - sourceOrg: Alcohol (Fayetteville, N.Y.)
-    title: The involvement of GM-CSF deficiencies in parallel pathways of pulmonary alveolar proteinosis and the alcoholic lung.
+    title: >-
+      The involvement of GM-CSF deficiencies in parallel pathways of pulmonary alveolar proteinosis and the alcoholic
+      lung.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6592783/
     type: review
-    pmid: "31229291"
+    pmid: '31229291'
     relevance: supporting
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Avian pulmonary proteinosis: six cases and a review of the literature."
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: 'Avian pulmonary proteinosis: six cases and a review of the literature.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6838726/
     type: review
-    pmid: "30734659"
+    pmid: '30734659'
     relevance: supporting
   - sourceOrg: International journal of nanomedicine
-    title: Pulmonary and Systemic Toxicity in a Rat Model of Pulmonary Alveolar Proteinosis Induced by Indium-Tin Oxide Nanoparticles.
+    title: >-
+      Pulmonary and Systemic Toxicity in a Rat Model of Pulmonary Alveolar Proteinosis Induced by Indium-Tin Oxide
+      Nanoparticles.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8860399/
     type: research
-    pmid: "35210771"
+    pmid: '35210771'
     relevance: supporting
   - sourceOrg: Particle and fibre toxicology
-    title: "Pulmonary effects of exposure to indium and its compounds: cross-sectional survey of exposed workers and experimental findings in rodents."
+    title: >-
+      Pulmonary effects of exposure to indium and its compounds: cross-sectional survey of exposed workers and
+      experimental findings in rodents.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9764635/
     type: research
-    pmid: "36539793"
+    pmid: '36539793'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肺泡蛋白沉積症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸部 X 光
+          notes: 瀰漫性肺泡浸潤 (瘋狂鋪路石樣)
+        - name: 支氣管肺泡灌洗
+          notes: 乳白色液體,PAS 陽性蛋白質及巨噬細胞
+        - name: 肺組織切片
+          notes: 確診:肺泡內 PAS 陽性蛋白質沉積
+ddxSource: auto-generated

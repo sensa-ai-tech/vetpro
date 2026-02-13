@@ -3,13 +3,15 @@ nameEn: Histiocytoma
 nameZh: 組織球瘤
 bodySystem: dermatology
 description: 犬常見的良性皮膚腫瘤，來源為表皮 Langerhans 細胞。通常為單發性、快速生長的圓形禿頭突起腫塊。好發於 3 歲以下年輕犬。多數在 2-3 個月內自行消退。
-
 aliases:
-  - { alias: "Cutaneous Histiocytoma", language: en }
-  - { alias: "Button Tumor", language: en }
-  - { alias: "皮膚組織球瘤", language: zh }
-  - { alias: "鈕扣瘤", language: zh }
-
+  - alias: Cutaneous Histiocytoma
+    language: en
+  - alias: Button Tumor
+    language: en
+  - alias: 皮膚組織球瘤
+    language: zh
+  - alias: 鈕扣瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,14 +19,12 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 良性腫瘤增生
       examples:
         - Langerhans 細胞（樹突細胞）增生
         - 屬於反應性增生而非真正腫瘤
-
 clinicalSigns:
   early:
     - 快速出現的單發圓形禿頭突起
@@ -34,12 +34,10 @@ clinicalSigns:
     - 腫塊可能短暫增大
     - 表面可能潰瘍
     - 2-3 個月後開始自行消退
-
 diagnosis:
   primaryTests:
     - name: 細針穿刺細胞學
       notes: 大量圓形組織球細胞。典型外觀即可細胞學確診
-
 treatment:
   principles:
     - 多數自行消退不需治療
@@ -48,36 +46,61 @@ treatment:
     - 觀察等待（2-3 個月自行消退）
     - 手術切除（確診或不消退時）
     - 快速生長或外觀不典型需活檢排除其他腫瘤
-
 prognosis: 預後極佳。幾乎 100% 良性且自行消退。極少數例外為多發性或持續不消退者。
-
-
 guidelineRefs:
   - sourceOrg: The Journal of veterinary medical science
-    title: "Stem cell pathology: histogenesis of malignant fibrous histiocytoma and characterization of myofibroblasts appearing in fibrotic lesions."
+    title: >-
+      Stem cell pathology: histogenesis of malignant fibrous histiocytoma and characterization of myofibroblasts
+      appearing in fibrotic lesions.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10539815/
     type: review
-    pmid: "37460298"
+    pmid: '37460298'
   - sourceOrg: Current opinion in hematology
     title: Histiocytic neoplasms in the era of personalized genomic medicine.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5112586/
     type: review
-    pmid: "27101528"
+    pmid: '27101528'
   - sourceOrg: Case reports in oncology
     title: Successful Multidisciplinary Treatment for Aggressive Primary Pulmonary Undifferentiated Pleomorphic Sarcoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7184791/
     type: case-report
-    pmid: "32355494"
+    pmid: '32355494'
   - sourceOrg: Open veterinary journal
-    title: Pathological, histochemical, and immune-histochemical studies on some canine-skin neoplasm at Sharkia province, Egypt.
+    title: >-
+      Pathological, histochemical, and immune-histochemical studies on some canine-skin neoplasm at Sharkia province,
+      Egypt.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11018408/
     type: research
-    pmid: "38633166"
+    pmid: '38633166'
   - sourceOrg: Animal models and experimental medicine
-    title: "Spontaneous pancreatic undifferentiated pleomorphic sarcoma in a laboratory rat: A case report."
+    title: 'Spontaneous pancreatic undifferentiated pleomorphic sarcoma in a laboratory rat: A case report.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6762044/
     type: research
-    pmid: "31773099"
+    pmid: '31773099'
 pubmedQueries:
   - query: '"histiocytoma" AND (veterinary OR canine) AND ("regression" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 組織球瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 細針穿刺細胞學
+          notes: 大量圓形組織球細胞。典型外觀即可細胞學確診
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 多數自行消退不需治療
+        - 手術切除可加速解決
+ddxSource: auto-generated

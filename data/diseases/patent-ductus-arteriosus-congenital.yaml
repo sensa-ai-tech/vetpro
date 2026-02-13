@@ -3,13 +3,15 @@ nameEn: Patent Ductus Arteriosus Congenital
 nameZh: 先天性開放性動脈導管
 bodySystem: cardiac
 description: 開放性動脈導管（PDA）為犬貓最常見的先天性心臟缺陷之一，動脈導管在出生後未能正常閉合，導致主動脈血液經導管分流至肺動脈。未治療者可進展為充血性心衰竭。手術或介入性封堵為根治方法。
-
 aliases:
-  - { alias: PDA, language: zh }
-  - { alias: 開放性動脈導管, language: zh }
-  - { alias: Patent ductus arteriosus, language: en }
-  - { alias: PDA in dogs, language: en }
-
+  - alias: PDA
+    language: zh
+  - alias: 開放性動脈導管
+    language: zh
+  - alias: Patent ductus arteriosus
+    language: en
+  - alias: PDA in dogs
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓較犬少見但有報告。
-
 etiology:
   categories:
     - name: 先天發育異常
@@ -31,7 +32,6 @@ etiology:
         - 肺血流量增加
         - 左心容積負荷增加
         - 晚期可逆轉為右向左分流（Eisenmenger 症候群）
-
 clinicalSigns:
   early:
     - 持續性心雜音（典型 machinery murmur）
@@ -43,7 +43,6 @@ clinicalSigns:
     - 呼吸困難（肺水腫）
     - 左側心衰竭
     - 後肢發紺（逆轉PDA時）
-
 diagnosis:
   primaryTests:
     - name: 心臟聽診
@@ -52,7 +51,6 @@ diagnosis:
       notes: 彩色都卜勒顯示主動脈至肺動脈分流。評估左心擴大程度
     - name: 胸腔 X 光
       notes: 左心擴大。肺血管充血。心臟失去腰部（DV view）
-
 treatment:
   principles:
     - 早期介入封閉導管為根治方法
@@ -66,36 +64,78 @@ treatment:
     - 逆轉PDA（Eisenmenger）為手術禁忌
     - 術後監測心臟大小恢復
     - 繁殖建議：受影響犬不建議繁殖
-
 prognosis: 早期手術或介入封堵預後極佳（>95% 成功率）。術後心臟大小通常在數月內恢復正常。未治療者約 60% 在 1 歲前因心衰竭死亡。逆轉PDA（右向左分流）預後不良，手術禁忌。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary medicine international
-    title: "Prevalence of Congenital Heart Diseases in Dogs in Tehran, Iran: A Retrospective Study From 2013 to 2023."
+    title: 'Prevalence of Congenital Heart Diseases in Dogs in Tehran, Iran: A Retrospective Study From 2013 to 2023.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11858710/
     type: review
-    pmid: "40008365"
+    pmid: '40008365'
   - sourceOrg: Veterinary sciences
     title: Identification and Clinical Significance of Heart Murmurs in Puppies Involved in Puppy Trade.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8402762/
     type: review
-    pmid: "34437461"
+    pmid: '34437461'
   - sourceOrg: The Journal of veterinary medical science
-    title: "Transvenous embolization of patent ductus arteriosus in 16 dogs using the Amplatzer Vascular Plug II device: description of a modified technique and complications."
+    title: >-
+      Transvenous embolization of patent ductus arteriosus in 16 dogs using the Amplatzer Vascular Plug II device:
+      description of a modified technique and complications.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11442394/
     type: research
-    pmid: "39218669"
+    pmid: '39218669'
   - sourceOrg: Canine genetics and epidemiology
     title: Correlation of neuter status and expression of heritable disorders.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5445488/
     type: research
-    pmid: "28560045"
+    pmid: '28560045'
   - sourceOrg: Frontiers in veterinary science
-    title: "Color M-Mode Echocardiography for Non-Invasive Assessment of the Intraventricular Pressure in Dogs Before and After Ductus Arteriosus Occlusion: A Retrospective Study."
+    title: >-
+      Color M-Mode Echocardiography for Non-Invasive Assessment of the Intraventricular Pressure in Dogs Before and
+      After Ductus Arteriosus Occlusion: A Retrospective Study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9315367/
     type: research
-    pmid: "35903130"
+    pmid: '35903130'
 pubmedQueries:
   - query: '"patent ductus arteriosus" AND (canine OR feline) AND (surgery OR treatment OR "interventional")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: heart-murmur
+    frequency: common
+  - symptomId: coughing
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 先天性開放性動脈導管 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - heart-murmur 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟聽診
+          notes: 左基底部持續性機器聲心雜音為高度特徵性。股動脈彈跳脈
+        - name: 心臟超音波
+          notes: 彩色都卜勒顯示主動脈至肺動脈分流。評估左心擴大程度
+        - name: 胸腔 X 光
+          notes: 左心擴大。肺血管充血。心臟失去腰部（DV view）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 早期介入封閉導管為根治方法
+        - 手術結紮或介入封堵
+        - 逆轉PDA不可手術
+ddxSource: auto-generated

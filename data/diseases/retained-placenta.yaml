@@ -3,15 +3,19 @@ nameEn: Retained Placenta
 nameZh: 胎盤滯留
 bodySystem: reproductive
 description: 分娩後胎盤（胎膜）未在正常時限內排出的產科併發症。犬貓分娩後通常於 15 分鐘至數小時內排出各胎次的胎盤，超過正常時限未排出即為胎盤滯留，可導致子宮感染、敗血症及產後併發症。
-
 aliases:
-  - { alias: Retained Fetal Membranes, language: en }
-  - { alias: RFM, language: en }
-  - { alias: Retained Afterbirth, language: en }
-  - { alias: Retained Secundines, language: en }
-  - { alias: 胎衣不下, language: zh }
-  - { alias: 滯留胎膜, language: zh }
-
+  - alias: Retained Fetal Membranes
+    language: en
+  - alias: RFM
+    language: en
+  - alias: Retained Afterbirth
+    language: en
+  - alias: Retained Secundines
+    language: en
+  - alias: 胎衣不下
+    language: zh
+  - alias: 滯留胎膜
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -25,7 +29,6 @@ species:
     speciesScientific: Bos taurus
     prevalence: common
     notes: 牛為最常見發生胎盤滯留的物種。正常分娩後 8-12 小時內排出胎盤，超過 12-24 小時即為異常。發生率約 5-15%，雙胞胎妊娠、難產、流產、營養缺乏（硒/維生素 E）、布氏桿菌感染均為重要風險因子。乳牛較肉牛常見。
-
 etiology:
   categories:
     - name: 子宮因素
@@ -54,7 +57,6 @@ etiology:
         - 雙胞胎/多胎妊娠
         - 感染性流產 (Brucella, Leptospira, Neospora 等)
         - 高齡
-
 clinicalSigns:
   early:
     - 分娩後預期時間內未見胎盤排出
@@ -74,25 +76,23 @@ clinicalSigns:
     - 腹膜炎（子宮穿孔時）
     - 多器官衰竭
     - 死亡（未治療的嚴重病例）
-
 diagnosis:
   primaryTests:
     - name: 病史與理學檢查
-      notes: "確認分娩時間、胎兒數量、已排出胎盤數量。陰門外可見懸垂的胎膜為最直接證據。腹部觸診評估子宮大小"
+      notes: 確認分娩時間、胎兒數量、已排出胎盤數量。陰門外可見懸垂的胎膜為最直接證據。腹部觸診評估子宮大小
     - name: 陰道檢查
-      notes: "評估子宮頸開放程度、陰道內是否有滯留的胎膜組織。注意無菌操作"
+      notes: 評估子宮頸開放程度、陰道內是否有滯留的胎膜組織。注意無菌操作
   imaging:
     - name: 腹部超音波
-      notes: "評估子宮內容物。子宮腔內殘留組織表現為不均質回音。可評估子宮壁完整性及有無腹腔積液"
+      notes: 評估子宮內容物。子宮腔內殘留組織表現為不均質回音。可評估子宮壁完整性及有無腹腔積液
     - name: 腹部 X 光
-      notes: "排除子宮內殘留胎兒。評估子宮大小。分娩後正常子宮應逐漸縮小"
+      notes: 排除子宮內殘留胎兒。評估子宮大小。分娩後正常子宮應逐漸縮小
   additional:
     - CBC（白血球增多提示感染、嗜中性球左移）
     - 生化/電解質（評估脫水、電解質失衡、腎功能）
     - 陰道分泌物細菌培養與藥敏試驗
     - 血鈣濃度（排除低血鈣）
     - 硒/維生素 E 濃度（牛）
-
 treatment:
   principles:
     - 促進胎盤排出為首要目標
@@ -101,16 +101,18 @@ treatment:
     - 避免強行牽拉滯留胎盤（尤其牛 — 可能損傷子宮角）
   medications:
     - name: Oxytocin
-      dose: "犬：0.5-2 IU/kg IM/SC（每 30 分鐘可重複，最多 3 次）；牛：20-40 IU IM/IV"
+      dose: 犬：0.5-2 IU/kg IM/SC（每 30 分鐘可重複，最多 3 次）；牛：20-40 IU IM/IV
       notes: 促進子宮收縮與胎盤排出。分娩後 24-48 小時內效果最佳（子宮肌層 oxytocin 受體數量隨時間下降）
     - name: PGF2α (Dinoprost)
-      dose: "犬：0.1-0.25 mg/kg SC；牛：25 mg IM"
+      dose: 犬：0.1-0.25 mg/kg SC；牛：25 mg IM
       notes: 促子宮收縮、溶黃體。犬注意副作用（嘔吐、腹瀉、流涎）
     - name: 廣效抗生素
-      dose: "Amoxicillin-Clavulanate 12.5-25 mg/kg PO BID；或嚴重感染時 Ampicillin 20-30 mg/kg IV TID + Metronidazole 10-15 mg/kg IV BID"
+      dose: >-
+        Amoxicillin-Clavulanate 12.5-25 mg/kg PO BID；或嚴重感染時 Ampicillin 20-30 mg/kg IV TID + Metronidazole 10-15 mg/kg IV
+        BID
       notes: 預防或治療子宮感染。根據培養結果調整
     - name: 鈣劑
-      dose: "10% Calcium gluconate 0.5-1.5 mL/kg IV slow（心電圖監測）"
+      dose: 10% Calcium gluconate 0.5-1.5 mL/kg IV slow（心電圖監測）
       notes: 低血鈣時使用，同時改善子宮收縮力
   general:
     - 靜脈輸液治療（矯正脫水、維持灌流）
@@ -119,44 +121,90 @@ treatment:
     - 子宮灌洗（犬貓少用；牛可用稀釋 povidone-iodine 溶液，但爭議大）
     - 營養支持與泌乳管理
     - 產後定期追蹤子宮復舊情況
-
-emergencyNotes: 胎盤滯留合併急性化膿性子宮炎 (acute metritis) 或敗血症時為急症。處理：(1) 積極靜脈輸液復甦；(2) 廣效靜脈抗生素（立即給予 — Ampicillin + Metronidazole 或類似組合）；(3) 犬貓合併敗血症且無繁殖需求者儘速安排 OVH；(4) 監測生命徵兆、尿量、乳酸；(5) DIC 評估與處理。
-
-prognosis: 單純胎盤滯留經適當治療預後良好。犬貓若及時處理（促宮縮藥物或手術），存活率高。合併嚴重子宮感染/敗血症者預後取決於感染控制與全身狀態。牛胎盤滯留若處理得當，多數可於 7-10 天內自行排出，但繁殖性能可能受影響（後續子宮復舊延遲、受胎率降低約 10-15%）。硒/維生素 E 缺乏地區的預防性補充可顯著降低發生率。
-
+emergencyNotes: >-
+  胎盤滯留合併急性化膿性子宮炎 (acute metritis) 或敗血症時為急症。處理：(1) 積極靜脈輸液復甦；(2) 廣效靜脈抗生素（立即給予 — Ampicillin + Metronidazole 或類似組合）；(3)
+  犬貓合併敗血症且無繁殖需求者儘速安排 OVH；(4) 監測生命徵兆、尿量、乳酸；(5) DIC 評估與處理。
+prognosis: >-
+  單純胎盤滯留經適當治療預後良好。犬貓若及時處理（促宮縮藥物或手術），存活率高。合併嚴重子宮感染/敗血症者預後取決於感染控制與全身狀態。牛胎盤滯留若處理得當，多數可於 7-10
+  天內自行排出，但繁殖性能可能受影響（後續子宮復舊延遲、受胎率降低約 10-15%）。硒/維生素 E 缺乏地區的預防性補充可顯著降低發生率。
 guidelineRefs:
   - sourceOrg: Theriogenology
-    title: "Retained fetal membranes in cattle: pathogenesis and consequences"
+    title: 'Retained fetal membranes in cattle: pathogenesis and consequences'
     url: https://pubmed.ncbi.nlm.nih.gov/15626410/
     type: review
-    pmid: "15626410"
+    pmid: '15626410'
   - sourceOrg: Journal of Dairy Science
     title: Risk factors for retained placenta in dairy cows
     url: https://pubmed.ncbi.nlm.nih.gov/18565927/
     type: research
-    pmid: "18565927"
+    pmid: '18565927'
   - sourceOrg: Veterinary Clinics of North America Food Animal Practice
     title: Management of the postpartum cow to maximize pregnancy rate
     url: https://pubmed.ncbi.nlm.nih.gov/16002586/
     type: review
-    pmid: "16002586"
+    pmid: '16002586'
   - sourceOrg: Plants (Basel, Switzerland)
-    title: Ethnoveterinary Practices and Ethnobotanical Knowledge on Plants Used against Cattle Diseases among Two Communities in South Africa.
+    title: >-
+      Ethnoveterinary Practices and Ethnobotanical Knowledge on Plants Used against Cattle Diseases among Two
+      Communities in South Africa.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9268905/
     type: research
-    pmid: "35807736"
+    pmid: '35807736'
     relevance: supporting
-  - sourceOrg: "Evidence-based complementary and alternative medicine : eCAM"
+  - sourceOrg: 'Evidence-based complementary and alternative medicine : eCAM'
     title: Medicinal Plants Used in Ethnoveterinary Practices in Adea Berga District, Oromia Region of Ethiopia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8739178/
     type: research
-    pmid: "35003303"
+    pmid: '35003303'
     relevance: supporting
 pubmedQueries:
   - query: '"retained placenta" AND (dog OR cow OR bovine) AND ("treatment" OR "risk factors" OR "uterine infection")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "REP"
-  sectionTitle: "IN LARGE ANIMALS"
+  chapter: REP
+  sectionTitle: IN LARGE ANIMALS
   pdfPage: 1422
+diagnosticAlgorithm:
+  title: 胎盤滯留 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估產後胎盤排出情況
+      findings:
+        - 產後持續性陰道分泌物（惡露）
+        - 胎盤數量與幼崽數不符
+        - 發熱和精神沉鬱
+        - 腹部觸診有子宮增大
+    - step: 2
+      action: 影像學檢查
+      details: 進行腹部超音波確認子宮內殘留物
+      findings:
+        - 子宮內殘留高回音物質
+        - 子宮壁增厚
+        - 子宮內液體積聚
+        - 排除殘留胎兒
+    - step: 3
+      action: 全身評估
+      details: 評估感染和代謝併發症
+      findings:
+        - 白血球增多伴左移
+        - 發熱
+        - 子宮蓄膿風險
+        - 敗血症指標監測
+clinicalPearls:
+  - 分娩時務必計數每隻幼崽對應的胎盤
+  - 犬正常可能會吃掉胎盤，導致計數困難
+  - 產後暗綠色分泌物（來自 uteroverdin）正常持續 1-3 天，但惡臭或持續超過一週應懷疑滯留
+  - 超音波是評估子宮內殘留物的最佳工具
+monitoringItems:
+  - 產後體溫每日監測至少一週
+  - 惡露顏色、量和氣味變化
+  - 超音波追蹤子宮復舊進度
+  - 幼崽健康狀態（母犬感染可影響乳汁品質）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

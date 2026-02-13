@@ -3,22 +3,20 @@ nameEn: Chinchilla Constipation
 nameZh: 龍貓便秘
 bodySystem: gastrointestinal
 description: 龍貓糞便排出量減少或完全停止，常因飲食纖維不足、脫水或壓力引起。需與 GI stasis 區分並早期處理。
-
 aliases:
-  - { alias: "龍貓便秘", language: zh }
-  - { alias: "Chinchilla Constipation", language: en }
-
+  - alias: 龍貓便秘
+    language: zh
+  - alias: Chinchilla Constipation
+    language: en
 species:
   - speciesCommon: chinchilla
     prevalence: uncommon
     notes: 龍貓可受此疾病影響。
-
 etiology:
   categories:
     - name: 病因
       examples:
         - 詳見臨床文獻
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -27,14 +25,12 @@ clinicalSigns:
   progressive:
     - 症狀加重
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 完整理學檢查與病史評估。
     - name: 實驗室檢查
       notes: CBC/生化排除系統性疾病。
-
 treatment:
   principles:
     - 治療基礎病因
@@ -44,9 +40,46 @@ treatment:
     - 依病因治療
     - 支持性照護
     - 定期追蹤
-
 prognosis: 預後取決於疾病嚴重度與治療時效。早期診斷與適當治療可改善預後。
-
 pubmedQueries:
   - query: '"Chinchilla Constipation" AND (veterinary OR chinchilla) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: constipation
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 龍貓便秘 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 完整理學檢查與病史評估。
+        - name: 實驗室檢查
+          notes: CBC/生化排除系統性疾病。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 支持性照護
+        - 監測恢復進度
+ddxSource: auto-generated

@@ -3,13 +3,15 @@ nameEn: Iron Deficiency Anemia
 nameZh: 缺鐵性貧血
 bodySystem: hematology
 description: 體內鐵儲備不足導致血紅素合成障礙所引起的小球性低色素性貧血。成年犬貓最常見的原因為慢性失血（消化道出血、嚴重體外寄生蟲），幼年動物則可能因快速生長與乳汁鐵含量不足造成。
-
 aliases:
-  - { alias: IDA, language: en }
-  - { alias: Iron Deficiency, language: en }
-  - { alias: 鐵質缺乏性貧血, language: zh }
-  - { alias: 缺鐵性血紅素低下, language: zh }
-
+  - alias: IDA
+    language: en
+  - alias: Iron Deficiency
+    language: en
+  - alias: 鐵質缺乏性貧血
+    language: zh
+  - alias: 缺鐵性血紅素低下
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓較犬少見。慢性消化道出血（IBD、腫瘤）、嚴重跳蚤感染（尤其幼貓）為主要原因。
-
 etiology:
   categories:
     - name: 慢性失血（成年動物最常見）
@@ -39,7 +40,6 @@ etiology:
       examples:
         - 反覆採血（實驗動物、頻繁血液檢查的小型犬）
         - 慢性血液透析（鐵流失）
-
 clinicalSigns:
   early:
     - 運動不耐
@@ -57,27 +57,25 @@ clinicalSigns:
     - 黑便 (melena) 或血便（若消化道出血為病因）
     - 體重減輕與發育不良（幼年動物）
     - 心臟衰竭（長期嚴重貧血）
-
 diagnosis:
   primaryTests:
     - name: CBC
-      notes: "小球性低色素性貧血 (microcytic hypochromic)。MCV 降低、MCHC 降低。紅血球大小不等 (anisocytosis)。可有血小板增多 (thrombocytosis，反應性)"
+      notes: 小球性低色素性貧血 (microcytic hypochromic)。MCV 降低、MCHC 降低。紅血球大小不等 (anisocytosis)。可有血小板增多 (thrombocytosis，反應性)
     - name: 血液抹片
-      notes: "小紅血球、低色素 (中央蒼白區擴大)、pencil cells/ovalocytes、poikilocytosis、可見血小板增多"
+      notes: 小紅血球、低色素 (中央蒼白區擴大)、pencil cells/ovalocytes、poikilocytosis、可見血小板增多
     - name: 血清鐵與鐵蛋白
-      notes: "血清鐵降低 (<60 μg/dL)。鐵蛋白降低（最可靠的鐵儲備指標，但犬正常值變異大）。TIBC (total iron binding capacity) 升高"
+      notes: 血清鐵降低 (<60 μg/dL)。鐵蛋白降低（最可靠的鐵儲備指標，但犬正常值變異大）。TIBC (total iron binding capacity) 升高
   imaging:
     - name: 腹部超音波
-      notes: "尋找消化道腫塊（慢性失血來源）"
+      notes: 尋找消化道腫塊（慢性失血來源）
     - name: 胸腔 X 光
-      notes: "排除肺轉移（若懷疑消化道腫瘤）"
+      notes: 排除肺轉移（若懷疑消化道腫瘤）
   additional:
     - 糞便潛血檢查 (fecal occult blood test)
     - 糞便檢查（鈎蟲卵、鞭蟲卵）
     - 內視鏡檢查（上消化道/下消化道出血評估）
     - 網狀紅血球計數（早期可能再生不良，鐵補充後轉為再生性）
     - 骨髓穿刺（鐵染色：儲存鐵缺乏，環形鐵母細胞缺如）
-
 treatment:
   principles:
     - 找出並治療慢性失血來源為首要
@@ -86,13 +84,13 @@ treatment:
     - 驅蟲（若寄生蟲為病因）
   medications:
     - name: Ferrous sulfate
-      dose: "犬：100-300 mg PO SID；貓：50-100 mg PO SID"
+      dose: 犬：100-300 mg PO SID；貓：50-100 mg PO SID
       notes: 口服鐵劑首選。隨餐或飯後給予減少腸胃刺激。療程通常 1-3 個月（直至鐵蛋白恢復正常後再繼續 1 個月）
     - name: Iron dextran
-      dose: "10-20 mg/kg IM（分次注射）"
+      dose: 10-20 mg/kg IM（分次注射）
       notes: 口服不耐受或吸收不良時使用。注意過敏反應風險。給予前先測試劑量
     - name: Fenbendazole
-      dose: "50 mg/kg PO SID × 3 天"
+      dose: 50 mg/kg PO SID × 3 天
       notes: 鈎蟲感染的驅蟲治療
   general:
     - 嚴重貧血（PCV <15%）輸注 pRBC
@@ -102,43 +100,106 @@ treatment:
     - 飲食補充高鐵食物（肝臟）
     - 定期 CBC 監測治療反應（每 2-4 週）
     - 網狀紅血球反應通常在鐵補充 3-5 天後出現
-
 prognosis: 找到並矯正慢性失血來源後預後良好。鐵劑補充通常在 2-4 週內可見 PCV 改善。寄生蟲引起的缺鐵性貧血驅蟲加鐵補充後恢復佳。消化道腫瘤引起者預後取決於腫瘤類型與分期。幼年動物鐵補充反應通常迅速。
-
 guidelineRefs:
   - sourceOrg: Veterinary Clinical Pathology
     title: Iron deficiency anemia in dogs and cats
     url: https://pubmed.ncbi.nlm.nih.gov/18366509/
     type: review
-    pmid: "18366509"
+    pmid: '18366509'
   - sourceOrg: Journal of the American Veterinary Medical Association
     title: Iron status and erythrocyte volume in dogs with chronic enteropathy
     url: https://pubmed.ncbi.nlm.nih.gov/20590956/
     type: research
-    pmid: "20590956"
-  - sourceOrg: "Molecular nutrition &amp; food research"
-    title: "Arthrospira platensis and Chlorella vulgaris Consumption on Iron Status: A Systematic Review of In Vivo Studies."
+    pmid: '20590956'
+  - sourceOrg: Molecular nutrition &amp; food research
+    title: 'Arthrospira platensis and Chlorella vulgaris Consumption on Iron Status: A Systematic Review of In Vivo Studies.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12700048/
     type: review
-    pmid: "41255135"
+    pmid: '41255135'
     relevance: primary
   - sourceOrg: Cureus
-    title: "Risk of Osteoporosis and Anemia in Plant-Based Diets: A Systematic Review of Nutritional Deficiencies and Clinical Implications."
+    title: >-
+      Risk of Osteoporosis and Anemia in Plant-Based Diets: A Systematic Review of Nutritional Deficiencies and Clinical
+      Implications.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12367322/
     type: review
-    pmid: "40842789"
+    pmid: '40842789'
     relevance: primary
   - sourceOrg: International journal of molecular sciences
-    title: "Iron Supplementation of Pregnant Sows to Prevent Iron Deficiency Anemia in Piglets: A Procedure of Questionable Effectiveness."
+    title: >-
+      Iron Supplementation of Pregnant Sows to Prevent Iron Deficiency Anemia in Piglets: A Procedure of Questionable
+      Effectiveness.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11012493/
     type: review
-    pmid: "38612915"
+    pmid: '38612915'
     relevance: primary
 pubmedQueries:
   - query: '"iron deficiency" AND (dog OR cat OR canine OR feline) AND ("anemia" OR "microcytic" OR "ferritin")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "CIR"
-  sectionTitle: "ANEMIA"
+  chapter: CIR
+  sectionTitle: ANEMIA
   pdfPage: 48
+diagnosticAlgorithm:
+  title: 缺鐵性貧血 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估貧血徵象，詢問出血史
+      findings:
+        - 黏膜蒼白
+        - 運動不耐受
+        - 慢性失血史消化道/泌尿道
+        - 幼犬嚴重鉤蟲感染
+    - step: 2
+      action: 血液學檢查
+      details: CBC與紅血球形態分析
+      findings:
+        - 小球性低色素性貧血
+        - 紅血球大小不等
+        - 血小板可能反應性增多
+        - 網織紅血球反應依階段
+    - step: 3
+      action: 鐵代謝檢測
+      details: 血清鐵與鐵蛋白測定
+      findings:
+        - 血清鐵降低
+        - TIBC升高
+        - 鐵蛋白降低
+        - 轉鐵蛋白飽和度降低
+    - step: 4
+      action: 出血源調查
+      details: 確認慢性失血原因
+      findings:
+        - 糞便潛血試驗
+        - 消化道內視鏡
+        - 寄生蟲檢查鉤蟲/鞭蟲
+        - 泌尿道出血排除
+clinicalPearls:
+  - 成年動物缺鐵性貧血幾乎等同於慢性失血，必須尋找出血源
+  - MCV降低是犬貓缺鐵性貧血的較晚期發現
+  - 血小板增多症常伴隨缺鐵性貧血出現
+  - 幼犬幼貓嚴重跳蚤/鉤蟲感染是常被忽略的原因
+monitoringItems:
+  - Hct和網織紅血球計數（每1-2週）
+  - 血清鐵和Ferritin
+  - 持續評估失血原因
+  - 鐵劑副作用（胃腸道不適）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+ddxSource: book

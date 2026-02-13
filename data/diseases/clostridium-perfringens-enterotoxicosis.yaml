@@ -2,12 +2,14 @@ slug: clostridium-perfringens-enterotoxicosis
 nameEn: Clostridium Perfringens Enterotoxicosis
 nameZh: 產氣莢膜梭菌腸毒素症
 bodySystem: toxicology
-description: 產氣莢膜梭菌腸毒素症為 Clostridium perfringens 芽胞形成時釋放腸毒素（CPE）引起的急性或慢性腹瀉。犬隻腸道中 C. perfringens 為正常菌群，但產毒株在特定條件下（飲食改變、緊迫）可增殖並釋放腸毒素導致腹瀉。大腸性腹瀉為典型表現。
-
+description: >-
+  產氣莢膜梭菌腸毒素症為 Clostridium perfringens 芽胞形成時釋放腸毒素（CPE）引起的急性或慢性腹瀉。犬隻腸道中 C. perfringens
+  為正常菌群，但產毒株在特定條件下（飲食改變、緊迫）可增殖並釋放腸毒素導致腹瀉。大腸性腹瀉為典型表現。
 aliases:
-  - { alias: CPE 腸毒素症, language: zh }
-  - { alias: Clostridial Enteritis, language: en }
-
+  - alias: CPE 腸毒素症
+    language: zh
+  - alias: Clostridial Enteritis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -15,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻較少報告，但可能被低估。
-
 etiology:
   categories:
     - name: 病原機轉
@@ -29,7 +30,6 @@ etiology:
         - 高蛋白飲食
         - 緊迫
         - 免疫抑制
-
 clinicalSigns:
   early:
     - 急性大腸性腹瀉（黏液便、少量頻繁）
@@ -39,28 +39,57 @@ clinicalSigns:
     - 腹部不適
     - 間歇性腹瀉反覆發作
     - 體重通常維持正常
-
 diagnosis:
   primaryTests:
     - name: 糞便 CPE 毒素檢測
       notes: 糞便中 C. perfringens 腸毒素（CPE）ELISA 檢測。陽性有助於診斷。但偽陽性可能（健康犬偶有產毒株）。結合臨床症狀判斷。
     - name: 糞便芽胞計數
       notes: 糞便抹片內芽胞桿菌計數增加（>5/HPF）。非特異性但支持診斷。糞便培養可分離 C. perfringens 但幾乎所有犬隻糞便均可培養到。
-
 treatment:
   principles:
     - 飲食管理為重要輔助
     - 抗生素治療產毒株
     - 復發時可能需要長期管理
   general:
-    - "Metronidazole 10-15 mg/kg PO q12h × 5-7 天"
-    - "Tylosin 25 mg/kg PO q12h × 5-7 天（替代選擇）"
-    - "Amoxicillin 20 mg/kg PO q12h × 5-7 天"
+    - Metronidazole 10-15 mg/kg PO q12h × 5-7 天
+    - Tylosin 25 mg/kg PO q12h × 5-7 天（替代選擇）
+    - Amoxicillin 20 mg/kg PO q12h × 5-7 天
     - 高纖維飲食（可溶性纖維促進健康腸道菌群）
     - 益生菌輔助
-
 prognosis: 預後良好。多數犬隻對抗生素治療反應快速（24-48 小時內改善）。復發常見，部分犬隻需要間歇性或長期低劑量抗生素管理。飲食纖維補充可減少復發。
-
 pubmedQueries:
   - query: '"Clostridium perfringens" AND "enterotoxin" AND (veterinary OR canine) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: faecal-tenesmus
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 產氣莢膜梭菌腸毒素症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - faecal-tenesmus 相關症狀
+        - abdominal-pain 相關症狀
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便 CPE 毒素檢測
+          notes: 糞便中 C. perfringens 腸毒素（CPE）ELISA 檢測。陽性有助於診斷。但偽陽性可能（健康犬偶有產毒株）。結合臨床症狀判斷。
+        - name: 糞便芽胞計數
+          notes: 糞便抹片內芽胞桿菌計數增加（>5/HPF）。非特異性但支持診斷。糞便培養可分離 C. perfringens 但幾乎所有犬隻糞便均可培養到。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 飲食管理為重要輔助
+        - 抗生素治療產毒株
+        - 復發時可能需要長期管理
+ddxSource: auto-generated

@@ -3,11 +3,11 @@ nameEn: Pancreatic Abscess
 nameZh: 胰臟膿瘍
 bodySystem: infectious
 description: 胰臟膿瘍為急性壞死性胰臟炎的嚴重併發症，壞死胰臟組織繼發細菌感染形成局限性膿液蓄積。犬隻胰臟膿瘍罕見但致死率高。臨床表現為持續性發燒、腹痛與敗血症徵象，需手術引流。
-
 aliases:
-  - { alias: 胰臟膿瘡, language: zh }
-  - { alias: Pancreatic Infection, language: en }
-
+  - alias: 胰臟膿瘡
+    language: zh
+  - alias: Pancreatic Infection
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻極為罕見。
-
 etiology:
   categories:
     - name: 病理過程
@@ -29,7 +28,6 @@ etiology:
         - Enterococcus
         - Clostridium
         - 多重菌感染常見
-
 clinicalSigns:
   early:
     - 急性胰臟炎症狀持續不緩解
@@ -41,14 +39,12 @@ clinicalSigns:
     - 嘔吐與食慾廢絕
     - 黃疸（膽管受壓）
     - 休克
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
       notes: 胰臟區域不均勻低回聲腫塊或液體蓄積，可含氣體回聲（膿瘍內產氣菌）。引導下穿刺可取得膿液送培養。
     - name: CT 掃描
       notes: 較超音波更精確評估膿瘍範圍與周圍組織受累。環狀增強為特徵。
-
 treatment:
   principles:
     - 手術引流為關鍵
@@ -57,12 +53,47 @@ treatment:
   general:
     - 手術探查 + 膿瘍引流 + 壞死組織清除
     - 腹腔引流管置放
-    - "廣效抗生素：Ampicillin-Sulbactam + Enrofloxacin + Metronidazole（覆蓋厭氧菌）"
+    - 廣效抗生素：Ampicillin-Sulbactam + Enrofloxacin + Metronidazole（覆蓋厭氧菌）
     - 依培養藥敏結果調整
     - ICU 支持：靜脈輸液、止痛、營養支持
-
 prognosis: 預後不良，死亡率高（>50%）。早期手術引流與積極抗生素治療可改善存活率。敗血症與多器官衰竭為主要致死原因。存活者恢復期長。
-
 pubmedQueries:
   - query: '"pancreatic abscess" AND (veterinary OR canine OR feline) AND ("surgery" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: jaundice
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 胰臟膿瘍 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - hyperthermia 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 胰臟區域不均勻低回聲腫塊或液體蓄積，可含氣體回聲（膿瘍內產氣菌）。引導下穿刺可取得膿液送培養。
+        - name: CT 掃描
+          notes: 較超音波更精確評估膿瘍範圍與周圍組織受累。環狀增強為特徵。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術引流為關鍵
+        - 廣效抗生素
+        - 重症加護支持
+ddxSource: auto-generated

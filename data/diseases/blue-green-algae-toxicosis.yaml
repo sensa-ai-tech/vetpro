@@ -3,12 +3,13 @@ nameEn: Blue-Green Algae Toxicosis
 nameZh: 藍綠藻中毒
 bodySystem: toxicology
 description: 藍綠藻 (cyanobacteria) 產生多種強效毒素，包括肝毒素 (microcystin) 與神經毒素 (anatoxin-a)。犬在受汙染水體中游泳或飲用藻華水後可在數分鐘至數小時內死亡。夏季溫暖靜止水體為高風險環境。
-
 aliases:
-  - { alias: 藍藻中毒, language: zh }
-  - { alias: Blue-Green Algae Poisoning, language: en }
-  - { alias: Cyanotoxin Poisoning, language: en }
-
+  - alias: 藍藻中毒
+    language: zh
+  - alias: Blue-Green Algae Poisoning
+    language: en
+  - alias: Cyanotoxin Poisoning
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓因較少接觸水體，中毒報告極少。
-
 etiology:
   categories:
     - name: 主要毒素
@@ -30,20 +30,18 @@ etiology:
         - 富營養化湖泊、池塘的藻華
         - 靜止溫暖水體
         - 被毛上殘留的藻類（舔毛攝入）
-
 clinicalSigns:
   early:
-    - "Anatoxin-a：數分鐘內肌肉震顫、癲癇、猝死"
-    - "Microcystin：嘔吐、腹瀉（數小時內）"
+    - Anatoxin-a：數分鐘內肌肉震顫、癲癇、猝死
+    - Microcystin：嘔吐、腹瀉（數小時內）
     - 過度流涎
     - 嗜睡
   progressive:
-    - "Microcystin：急性肝衰竭（12-24 小時）"
+    - Microcystin：急性肝衰竭（12-24 小時）
     - 黃疸
     - 凝血障礙
     - 休克
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 暴露史與環境調查
@@ -54,7 +52,6 @@ diagnosis:
     - 肝功能（microcystin 型）
     - 凝血功能
     - 組織毒素分析（死後）
-
 treatment:
   principles:
     - 無特效解毒劑
@@ -69,9 +66,67 @@ treatment:
     - 新鮮冷凍血漿（凝血障礙）
     - 癲癇控制
     - Anatoxin-a 中毒進展極快，多數到院前已死亡
-
 prognosis: 藍綠藻中毒預後取決於毒素種類。Anatoxin-a 型致死率接近 100%（數分鐘至數小時猝死）。Microcystin 型積極治療存活率約 30-50%。預防（避免接觸藻華水體）遠比治療有效。
-
 pubmedQueries:
   - query: '"blue-green algae" OR "cyanobacteria" AND (toxicosis OR poisoning) AND (veterinary OR canine)'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 藍綠藻中毒 診斷流程
+  steps:
+    - step: 1
+      action: 暴露評估
+      details: 確認近期水域接觸史和水體狀況
+      findings:
+        - 水域游泳/飲水史
+        - 水體有可見藻華
+        - 多隻動物同時發病
+    - step: 2
+      action: 症狀分類
+      details: 區分神經毒素型和肝毒素型
+      findings:
+        - 急性神經症狀（<1h）
+        - 肝臟症狀（2-4h）
+        - 混合型
+    - step: 3
+      action: 實驗室評估
+      details: 血液學和肝功能評估損傷程度
+      findings:
+        - 肝酶劇升
+        - 凝血障礙
+        - 低血糖低白蛋白
+    - step: 4
+      action: 積極支持治療
+      details: ICU監護+對症處理+水樣送檢
+      findings:
+        - 穩定可能存活
+        - 多器官衰竭
+        - 需機械通氣
+clinicalPearls:
+  - 無特異性解毒劑，高劑量暴露死亡率極高，預防勝於治療
+  - 游泳後犬的舔毛行為可額外攝入大量毒素，暴露後應立即沖洗
+  - 夏末秋初溫暖水體的綠色/藍綠色薄膜是藻華的警示信號
+monitoringItems:
+  - 神經功能持續評估
+  - 肝功能和凝血功能每6-12小時監測
+  - 尿量和腎功能監測
+  - 48-72小時後評估肝臟恢復
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+ddxSource: book

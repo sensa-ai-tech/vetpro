@@ -3,19 +3,20 @@ nameEn: Toy Poodle Patellar Luxation
 nameZh: 玩具貴賓犬髌骨脫位
 bodySystem: orthopedic
 description: 玩具貴賓犬極常見的膝關節疾病,髌骨脫離正常滑車溝位置,多為內側脫位。可為先天性或外傷性,引起間歇性跛行,嚴重需手術矯正。
-
 aliases:
-  - { alias: 玩具貴賓膝蓋骨脫位, language: zh }
-  - { alias: Toy Poodle MPL, language: en }
-  - { alias: 玩具貴賓膝關節異位, language: zh }
-  - { alias: Medial Patellar Luxation, language: en }
-
+  - alias: 玩具貴賓膝蓋骨脫位
+    language: zh
+  - alias: Toy Poodle MPL
+    language: en
+  - alias: 玩具貴賓膝關節異位
+    language: zh
+  - alias: Medial Patellar Luxation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 玩具貴賓為最高風險品種之一,內側脫位佔95%以上,常雙側發生,可自幼犬期開始出現
-
 etiology:
   categories:
     - name: 先天性結構異常
@@ -31,7 +32,6 @@ etiology:
       examples:
         - 外傷導致韌帶損傷
         - 慢性磨損
-
 clinicalSigns:
   early:
     - 間歇性單側後肢抬起("跳步"gait)
@@ -42,21 +42,19 @@ clinicalSigns:
     - 後肢呈外八字站姿
     - 膝關節活動範圍受限
     - 續發性骨關節炎,長期疼痛
-
 diagnosis:
   primaryTests:
     - name: 骨科理學檢查
-      notes: "觸診可誘發髌骨脫位,分級I-IV級,評估滑車溝深度與脛骨嵴位置"
+      notes: 觸診可誘發髌骨脫位,分級I-IV級,評估滑車溝深度與脛骨嵴位置
     - name: 膝關節X光
-      notes: "評估骨骼結構異常、滑車溝形態、骨關節炎變化,需包含髖關節與跗關節全肢位"
+      notes: 評估骨骼結構異常、滑車溝形態、骨關節炎變化,需包含髖關節與跗關節全肢位
     - name: CT評估
-      notes: "精確測量股骨與脛骨扭轉角度,規劃手術矯正(複雜病例)"
+      notes: 精確測量股骨與脛骨扭轉角度,規劃手術矯正(複雜病例)
   differentialDiagnoses:
     - 前十字韌帶斷裂
     - 髖關節發育不良
     - Legg-Calvé-Perthes病
     - 膝關節半月板損傷
-
 treatment:
   medical:
     - I-II級輕症:保守治療,Carprofen 2-4 mg/kg PO q12h,減重,物理治療
@@ -64,12 +62,32 @@ treatment:
     - 手術選項:滑車溝加深術、脛骨嵴轉位、關節囊縫合、股骨/脛骨矯正截骨術
     - 術後復健:控制活動4-6週,漸進式運動恢復
     - Gabapentin 10-20 mg/kg PO q8-12h(慢性疼痛)
-
 prognosis:
-  general: "I-II級預後良好,手術成功率85-90%。III-IV級需複雜手術,術後可能殘留輕度跛行。未治療嚴重病例將進展為退化性關節炎,長期需疼痛管理。"
-
+  general: I-II級預後良好,手術成功率85-90%。III-IV級需複雜手術,術後可能殘留輕度跛行。未治療嚴重病例將進展為退化性關節炎,長期需疼痛管理。
 prevention:
   - 避免繁殖患病犬隻及其直系親屬
   - 幼犬避免過度跳躍(如跳上沙發)
   - 維持理想體重減輕膝關節負擔
   - 定期骨科篩檢,早期介入
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 玩具貴賓犬髌骨脫位 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 骨科理學檢查
+          notes: 觸診可誘發髌骨脫位,分級I-IV級,評估滑車溝深度與脛骨嵴位置
+        - name: 膝關節X光
+          notes: 評估骨骼結構異常、滑車溝形態、骨關節炎變化,需包含髖關節與跗關節全肢位
+        - name: CT評估
+          notes: 精確測量股骨與脛骨扭轉角度,規劃手術矯正(複雜病例)
+ddxSource: auto-generated

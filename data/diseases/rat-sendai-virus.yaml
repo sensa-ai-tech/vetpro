@@ -3,17 +3,16 @@ nameEn: Rat Sendai Virus
 nameZh: 大鼠 仙台病毒感染
 bodySystem: infectious
 description: 大鼠 仙台病毒感染是大鼠常見的感染性疾病,需要及時診斷與治療以改善預後。
-
 aliases:
-  - { alias: 大鼠 仙台疾病毒感染, language: zh }
-  - { alias: Rat Sendai Virus, language: en }
-
+  - alias: 大鼠 仙台疾病毒感染
+    language: zh
+  - alias: Rat Sendai Virus
+    language: en
 species:
   - speciesCommon: rat
     speciesScientific: Rattus norvegicus
     prevalence: moderate
     notes: 常見於寵物飼養群體,需注意早期症狀
-
 etiology:
   categories:
     - name: 多因素
@@ -21,7 +20,6 @@ etiology:
         - 遺傳因素
         - 環境因素
         - 營養因素
-
 clinicalSigns:
   early:
     - 精神食慾下降
@@ -31,20 +29,18 @@ clinicalSigns:
     - 症狀逐漸惡化
     - 可能出現併發症
     - 生活品質下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
-      notes: "基本身體評估及症狀確認"
+      notes: 基本身體評估及症狀確認
     - name: 血液學檢查
-      notes: "CBC及生化學檢查評估整體健康狀況"
+      notes: CBC及生化學檢查評估整體健康狀況
     - name: 影像學檢查
-      notes: "X光或超音波檢查輔助診斷"
+      notes: X光或超音波檢查輔助診斷
   differentialDiagnoses:
     - 其他相關疾病
     - 系統性疾病
     - 併發症
-
 treatment:
   medical:
     - 支持療法:輸液及營養支持
@@ -52,45 +48,69 @@ treatment:
     - 必要時使用抗生素或抗病毒藥物
   surgical:
     - 視病情需要考慮手術治療
-
 prognosis:
-  general: "預後取決於診斷時機、疾病嚴重程度及治療反應,早期診斷與積極治療預後較佳"
-
+  general: 預後取決於診斷時機、疾病嚴重程度及治療反應,早期診斷與積極治療預後較佳
 prevention:
   - 提供適當飲食與環境
   - 定期健康檢查
   - 注意疾病早期症狀
   - 維持良好衛生環境
-
-
 guidelineRefs:
   - sourceOrg: Open veterinary journal
-    title: "Paramyxoviruses in rodents: A review."
+    title: 'Paramyxoviruses in rodents: A review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9805762/
     type: review
-    pmid: "36650879"
+    pmid: '36650879'
     relevance: primary
   - sourceOrg: Viruses
     title: Sendai Virus-Vectored Vaccines That Express Envelope Glycoproteins of Respiratory Viruses.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8230104/
     type: review
-    pmid: "34072332"
+    pmid: '34072332'
     relevance: primary
   - sourceOrg: PloS one
-    title: "Efficacy of Soiled Bedding Transfer for Transmission of Mouse and Rat Infections to Sentinels: A Systematic Review."
+    title: >-
+      Efficacy of Soiled Bedding Transfer for Transmission of Mouse and Rat Infections to Sentinels: A Systematic
+      Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4982683/
     type: review
-    pmid: "27518654"
+    pmid: '27518654'
     relevance: supporting
   - sourceOrg: Cells
-    title: "Induced Pluripotent Stem Cell-Derived Exosomes Promote Peripheral Nerve Regeneration in a Rat Sciatic Nerve Crush Injury Model: A Safety and Efficacy Study."
+    title: >-
+      Induced Pluripotent Stem Cell-Derived Exosomes Promote Peripheral Nerve Regeneration in a Rat Sciatic Nerve Crush
+      Injury Model: A Safety and Efficacy Study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11989054/
     type: research
-    pmid: "40214483"
+    pmid: '40214483'
     relevance: supporting
   - sourceOrg: Cell transplantation
-    title: "Derivation of Sendai-Virus-Reprogrammed Human iPSCs-Neuronal Precursors: In Vitro and In Vivo Post-grafting Safety Characterization."
+    title: >-
+      Derivation of Sendai-Virus-Reprogrammed Human iPSCs-Neuronal Precursors: In Vitro and In Vivo Post-grafting Safety
+      Characterization.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10041596/
     type: research
-    pmid: "36959733"
+    pmid: '36959733'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+diagnosticAlgorithm:
+  title: 大鼠 仙台病毒感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 基本身體評估及症狀確認
+        - name: 血液學檢查
+          notes: CBC及生化學檢查評估整體健康狀況
+        - name: 影像學檢查
+          notes: X光或超音波檢查輔助診斷
+ddxSource: auto-generated

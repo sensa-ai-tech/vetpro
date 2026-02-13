@@ -3,13 +3,15 @@ nameEn: Squamous Cell Carcinoma Tonsillar
 nameZh: 扁桃腺鱗狀細胞癌
 bodySystem: oncology
 description: 犬扁桃腺最常見的惡性腫瘤，侵襲性極高且早期即有高轉移率。確診時多數已有區域淋巴結轉移，預後不良。
-
 aliases:
-  - { alias: 扁桃體鱗狀細胞癌, language: zh }
-  - { alias: 扁桃腺癌, language: zh }
-  - { alias: Tonsillar SCC, language: en }
-  - { alias: Tonsillar Squamous Cell Carcinoma, language: en }
-
+  - alias: 扁桃體鱗狀細胞癌
+    language: zh
+  - alias: 扁桃腺癌
+    language: zh
+  - alias: Tonsillar SCC
+    language: en
+  - alias: Tonsillar Squamous Cell Carcinoma
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓的扁桃腺鱗狀細胞癌極少見。貓的口腔 SCC 更常見於舌下及牙齦。
-
 etiology:
   categories:
     - name: 腫瘤特性
@@ -32,7 +33,6 @@ etiology:
         - 城市環境暴露（空氣污染）
         - 二手菸
         - 確切病因不明
-
 clinicalSigns:
   early:
     - 吞嚥困難
@@ -45,21 +45,19 @@ clinicalSigns:
     - 體重減輕
     - 呼吸困難（腫瘤壓迫氣道）
     - 聲音改變
-
 diagnosis:
   primaryTests:
     - name: 口腔檢查
-      notes: "鎮靜下口腔檢查可見單側扁桃腺腫大、潰瘍或增生性腫塊"
+      notes: 鎮靜下口腔檢查可見單側扁桃腺腫大、潰瘍或增生性腫塊
     - name: 細針抽吸/組織切片
-      notes: "FNA 或切片確認鱗狀細胞癌。扁桃腺及腫大淋巴結均需取樣"
+      notes: FNA 或切片確認鱗狀細胞癌。扁桃腺及腫大淋巴結均需取樣
     - name: 分期檢查
-      notes: "胸腔 X 光（三視圖）、腹部超音波、CT 評估局部侵犯範圍"
+      notes: 胸腔 X 光（三視圖）、腹部超音波、CT 評估局部侵犯範圍
   differentialDiagnoses:
     - 淋巴瘤（扁桃腺型）
     - 黑色素瘤
     - 扁桃腺炎
     - 其他口咽部腫瘤
-
 treatment:
   surgical:
     - 扁桃腺切除術（單側或雙側）
@@ -69,19 +67,49 @@ treatment:
     - 化療（Carboplatin、Piroxicam）
     - 姑息性治療為主
     - 疼痛管理與營養支持
-
 prognosis:
-  general: "預後不良。即使積極治療，中位生存時間僅約 3-6 個月。早期發現（無轉移）者生存期可能延長至 9-12 個月，但此情況罕見。"
-
+  general: 預後不良。即使積極治療，中位生存時間僅約 3-6 個月。早期發現（無轉移）者生存期可能延長至 9-12 個月，但此情況罕見。
 prevention:
   - 定期口腔檢查
   - 減少環境污染物暴露
-
-
 guidelineRefs:
-  - sourceOrg: "Veterinary radiology &amp; ultrasound : the official journal of the American College of Veterinary Radiology and the International Veterinary Radiology Association"
-    title: "Computed tomographic appearance of canine tonsillar neoplasia: 14 cases."
+  - sourceOrg: >-
+      Veterinary radiology &amp; ultrasound : the official journal of the American College of Veterinary Radiology and
+      the International Veterinary Radiology Association
+    title: 'Computed tomographic appearance of canine tonsillar neoplasia: 14 cases.'
     url: https://pubmed.ncbi.nlm.nih.gov/28929544/
     type: research
-    pmid: "28929544"
+    pmid: '28929544'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: common
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 扁桃腺鱗狀細胞癌 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - dyspnoea 相關症狀
+        - dysphagia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 口腔檢查
+          notes: 鎮靜下口腔檢查可見單側扁桃腺腫大、潰瘍或增生性腫塊
+        - name: 細針抽吸/組織切片
+          notes: FNA 或切片確認鱗狀細胞癌。扁桃腺及腫大淋巴結均需取樣
+        - name: 分期檢查
+          notes: 胸腔 X 光（三視圖）、腹部超音波、CT 評估局部侵犯範圍
+ddxSource: auto-generated

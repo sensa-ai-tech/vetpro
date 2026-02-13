@@ -3,11 +3,11 @@ nameEn: Flea Infestation Control
 nameZh: Flea Infestation Control
 bodySystem: dermatology
 description: 外寄生蟲感染,導致皮膚刺激與繼發性病變。需使用適當殺蟲劑並處理環境。
-
 aliases:
-  - { alias: Flea Infestation Control, language: zh }
-  - { alias: Flea Infestation Control, language: en }
-
+  - alias: Flea Infestation Control
+    language: zh
+  - alias: Flea Infestation Control
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 感染(細菌、真菌、寄生蟲)
       examples:
         - 過敏
         - 免疫介導
-
 clinicalSigns:
   early:
     - 搔癢
@@ -32,53 +30,103 @@ clinicalSigns:
   progressive:
     - 皮膚增厚
     - 色素沉著
-
 diagnosis:
   primaryTests:
     - name: 皮膚刮搔檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: 毛髮拔除檢查
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 局部治療(藥浴、藥膏)
     - 全身性抗生素或抗真菌藥
-
 prognosis:
-  general: "預後取決於根本病因。感染性疾病治療後多可痊癒,免疫或遺傳性疾病需長期管理。"
-
+  general: 預後取決於根本病因。感染性疾病治療後多可痊癒,免疫或遺傳性疾病需長期管理。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
-  - sourceOrg: "Parasites &amp; vectors"
-    title: "Efficacy of Credelio Quattro&#x2122; (lotilaner, moxidectin, praziquantel, and pyrantel chewable tablets) and Credelio&#x2122; (lotilaner) chewable tablets in the prevention of Borrelia burgdorferi transmission from infected Ixodes scapularis in dogs."
+  - sourceOrg: Parasites &amp; vectors
+    title: >-
+      Efficacy of Credelio Quattro&#x2122; (lotilaner, moxidectin, praziquantel, and pyrantel chewable tablets) and
+      Credelio&#x2122; (lotilaner) chewable tablets in the prevention of Borrelia burgdorferi transmission from infected
+      Ixodes scapularis in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12797341/
     type: research
-    pmid: "41353540"
-  - sourceOrg: "Parasites &amp; vectors"
+    pmid: '41353540'
+  - sourceOrg: Parasites &amp; vectors
     title: Epidemiological and molecular characterisation of flea infestations in dogs and cats in mainland Portugal.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12229001/
     type: research
-    pmid: "40619427"
-  - sourceOrg: "Parasites &amp; vectors"
-    title: "Clinical efficacy and safety of a single administration of fluralaner injectable suspension (BRAVECTO&#xae; injectable) vs. monthly administration of oral afoxolaner (NexGard&#xae;) in dogs for tick and flea control over one year under European field conditions."
+    pmid: '40619427'
+  - sourceOrg: Parasites &amp; vectors
+    title: >-
+      Clinical efficacy and safety of a single administration of fluralaner injectable suspension (BRAVECTO&#xae;
+      injectable) vs. monthly administration of oral afoxolaner (NexGard&#xae;) in dogs for tick and flea control over
+      one year under European field conditions.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11626764/
     type: research
-    pmid: "39654069"
+    pmid: '39654069'
   - sourceOrg: Viruses
-    title: "Attempted Transmission of Marburg Virus by Bat-Associated Fleas Thaumapsylla breviceps breviceps (Ischnopsyllidae: Thaumapsyllinae) to the Egyptian Rousette Bat (Rousettus aegyptiacus)."
+    title: >-
+      Attempted Transmission of Marburg Virus by Bat-Associated Fleas Thaumapsylla breviceps breviceps (Ischnopsyllidae:
+      Thaumapsyllinae) to the Egyptian Rousette Bat (Rousettus aegyptiacus).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11360628/
     type: research
-    pmid: "39205171"
-  - sourceOrg: "Parasites &amp; vectors"
+    pmid: '39205171'
+  - sourceOrg: Parasites &amp; vectors
     title: A community approach of pathogens and their arthropod vectors (ticks and fleas) in dogs of African Sub-Sahara.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8594167/
     type: research
-    pmid: "34784947"
+    pmid: '34784947'
+diagnosticAlgorithm:
+  title: 跳蚤感染 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估搔癢程度、皮膚病變分布，檢查跳蚤與蚤糞
+      findings:
+        - 搔癢腰背部/尾根部/腹股溝
+        - 皮膚紅疹或丘疹性皮膚炎
+        - 跳蚤或蚤糞黑色顆粒
+        - 脫毛與自我創傷
+    - step: 2
+      action: 跳蚤梳檢查
+      details: 密齒梳全身梳理收集跳蚤與蚤糞
+      findings:
+        - 成蟲發現
+        - 蚤糞確認水測試呈紅棕色溶解
+        - 嚴重感染可能看到蚤卵
+        - 低蟲量時可能找不到跳蚤
+    - step: 3
+      action: 跳蚤過敏性皮膚炎評估
+      details: 評估是否有跳蚤過敏FAD
+      findings:
+        - 腰薦部至尾根典型分布
+        - 丘疹性痂皮性皮膚炎
+        - 僅少量跳蚤即可引發嚴重搔癢
+        - 貓粟粒性皮膚炎型態
+clinicalPearls:
+  - 看不到跳蚤不代表沒有跳蚤感染（過敏犬可能已將跳蚤梳除）
+  - 蚤糞試驗是簡單但非常有效的診斷工具
+  - 環境中95%的跳蚤族群為卵、幼蟲和蛹，成蟲僅佔5%
+  - Isoxazoline類藥物是目前最有效的殺蚤藥物
+  - 跳蚤過敏犬一個跳蚤叮咬就可引發嚴重反應
+  - 環境處理需至少3個月才能打破跳蚤生活史
+monitoringItems:
+  - 跳蚤數量減少
+  - 搔癢改善
+  - 皮膚病變癒合
+  - 預防藥物依從性
+  - 環境控制效果
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+ddxSource: book

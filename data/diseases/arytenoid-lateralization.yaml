@@ -3,11 +3,11 @@ nameEn: Arytenoid Lateralization
 nameZh: 杓狀軟骨側化術
 bodySystem: respiratory
 description: 杓狀軟骨側化術為喉麻痺的手術治療，通常僅行單側。將癱瘓的杓狀軟骨縫合固定在外展（開放）位置。為目前治療犬喉麻痺最廣泛接受的術式。
-
 aliases:
-  - { alias: 杓狀軟骨側化術, language: zh }
-  - { alias: Arytenoid Lateralization, language: en }
-
+  - alias: 杓狀軟骨側化術
+    language: zh
+  - alias: Arytenoid Lateralization
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓亦有適應症但頻率較犬低。
-
 etiology:
   categories:
     - name: 手術適應症
@@ -24,18 +23,15 @@ etiology:
         - 外傷性損傷
         - 先天性/退化性疾病
         - 功能性障礙
-
 clinicalSigns:
   early:
     - 依基礎疾病而異
   progressive:
     - 疾病進展導致需要手術介入
-
 diagnosis:
   primaryTests:
     - name: 術前評估
       notes: 影像學定位病變。血液檢查評估麻醉風險。心肺功能評估
-
 treatment:
   principles:
     - 完整術前評估與計畫
@@ -48,21 +44,47 @@ treatment:
     - 多模式疼痛管理
     - 術後密切監測
     - 遵循術後照護指引
-
 prognosis: 單側側化術後呼吸功能明顯改善。過度側化增加吸入性肺炎風險。術後飲食管理（避免急食）可降低風險。
-
-
 guidelineRefs:
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: "Simultaneous staphylectomy and unilateral arytenoid lateralization in dogs presenting for dyspnea: 23 cases (2010-2013)."
+    title: >-
+      Simultaneous staphylectomy and unilateral arytenoid lateralization in dogs presenting for dyspnea: 23 cases
+      (2010-2013).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5026151/
     type: research
-    pmid: "27708449"
+    pmid: '27708449'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Risk factors for the development of aspiration pneumonia after unilateral arytenoid lateralization in dogs with laryngeal paralysis: 232 cases (1987-2012)."
+    title: >-
+      Risk factors for the development of aspiration pneumonia after unilateral arytenoid lateralization in dogs with
+      laryngeal paralysis: 232 cases (1987-2012).
     url: https://pubmed.ncbi.nlm.nih.gov/26720085/
     type: research
-    pmid: "26720085"
+    pmid: '26720085'
 pubmedQueries:
   - query: '"Arytenoid Lateralization" AND (veterinary OR canine OR feline) AND (surgery OR technique OR outcome)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 杓狀軟骨側化術 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - paresis-paralysis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 術前評估
+          notes: 影像學定位病變。血液檢查評估麻醉風險。心肺功能評估
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 完整術前評估與計畫
+        - 適當麻醉與疼痛管理
+        - 無菌技術
+ddxSource: auto-generated

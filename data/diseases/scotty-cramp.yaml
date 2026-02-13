@@ -3,13 +3,15 @@ nameEn: Scotty Cramp
 nameZh: 蘇格蘭梗痙攣症
 bodySystem: neurology
 description: Scottish Terrier 品種特異性的遺傳性運動障礙，因血清素 (serotonin) 代謝異常導致運動時出現陣發性肌肉過度收縮與僵硬。運動或興奮時誘發，休息後症狀消失。
-
 aliases:
-  - { alias: Scottish Cramp, language: en }
-  - { alias: Hyperkinetic Disorder, language: en }
-  - { alias: 蘇格蘭梗痙攣, language: zh }
-  - { alias: 蘇格蘭梗抽搐症, language: zh }
-
+  - alias: Scottish Cramp
+    language: en
+  - alias: Hyperkinetic Disorder
+    language: en
+  - alias: 蘇格蘭梗痙攣
+    language: zh
+  - alias: 蘇格蘭梗抽搐症
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓未有明確報告。
-
 etiology:
   categories:
     - name: 遺傳性
@@ -25,7 +26,6 @@ etiology:
         - 體染色體隱性遺傳
         - 血清素 (serotonin) 代謝異常
         - 中樞神經系統血清素路徑缺陷
-
 clinicalSigns:
   early:
     - 運動或興奮時步態僵硬
@@ -36,7 +36,6 @@ clinicalSigns:
     - 前肢外展
     - 嚴重時倒地無法動彈
     - 休息數分鐘後完全恢復
-
 diagnosis:
   primaryTests:
     - name: 品種與病史
@@ -45,7 +44,6 @@ diagnosis:
       notes: 持續運動 5-10 分鐘觀察是否出現典型症狀
     - name: 藥理試驗
       notes: Diazepam 可改善症狀支持診斷
-
 treatment:
   principles:
     - 避免過度運動與興奮
@@ -55,9 +53,38 @@ treatment:
     - Acepromazine 低劑量可減少發作
     - Vitamin E 補充 (部分報告有助益)
     - 避免劇烈運動與過度興奮場景
-
 prognosis: 不危及生命。適當管理下生活品質良好。症狀可能隨年齡略有改善或穩定。受影響犬不建議繁殖。
-
 pubmedQueries:
   - query: '"Scotty cramp" AND (veterinary OR canine) AND ("treatment" OR "genetics")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: syncope
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 蘇格蘭梗痙攣症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - syncope 相關症狀
+        - seizures 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 品種與病史
+          notes: Scottish Terrier + 運動/興奮誘發的陣發性僵硬 + 休息後恢復即高度懷疑
+        - name: 運動誘發試驗
+          notes: 持續運動 5-10 分鐘觀察是否出現典型症狀
+        - name: 藥理試驗
+          notes: Diazepam 可改善症狀支持診斷
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 避免過度運動與興奮
+        - 藥物控制症狀
+ddxSource: auto-generated

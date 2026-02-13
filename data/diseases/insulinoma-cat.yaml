@@ -1,0 +1,86 @@
+slug: insulinoma-cat
+nameEn: Feline Insulinoma
+nameZh: 貓胰島素瘤
+description: 貓胰臟β細胞的功能性腫瘤，自主性分泌過量胰島素導致反覆性低血糖。在貓中極為罕見（遠較犬少見），但臨床表現可能嚴重且危及生命。多數為惡性，確診時約50%已有轉移。
+bodySystem: other
+species:
+  - speciesCommon: dog
+  - speciesCommon: cat
+etiology:
+  categories:
+    - name: Risk Factors
+      examples:
+        - 老年貓
+        - 無已知品種傾向
+clinicalSigns:
+  early:
+    - 間歇性虛弱或癱瘓
+    - 發作性癲癇或肌肉抽搐
+    - 精神沉鬱和嗜睡
+    - 後肢無力
+    - 進食後或運動後症狀改善
+    - 症狀呈發作性、反覆出現
+  progressive:
+    - 神經學檢查可能正常（發作間期）
+    - 發作時：運動失調、震顫、癲癇
+    - 可能觸及腹部腫塊（少見）
+    - 一般體態良好或偏胖
+diagnosis:
+  primaryTests:
+    - 血糖測定（低血糖時採血）
+    - 血清胰島素濃度（低血糖時同步測定——不適當正常或升高即為異常）
+    - CBC/血液生化全套
+    - 果糖胺（評估慢性低血糖程度）
+  additional:
+    - 腹部超音波（胰臟腫塊、肝臟轉移）
+    - 腹部CT（提高小腫瘤偵測率）
+    - 對比增強超音波
+    - 術中探查和組織病理確診
+treatment:
+  principles:
+    - 低血糖急救：50% Dextrose 0.5-1 ml/kg IV稀釋後緩慢推注
+    - 持續靜脈輸液含2.5-5% Dextrose
+    - 禁忌大量推注高濃度葡萄糖（會刺激更多胰島素分泌）
+  general:
+    - 手術切除腫瘤（部分胰臟切除）
+    - 醫療管理：Diazoxide 5-30 mg/kg PO q12h（抑制胰島素釋放）
+    - 頻繁少量餵食（高蛋白低碳水化合物飲食）
+    - Prednisolone 1-2 mg/kg PO q12h（促進糖質新生）
+prognosis: 貓胰島素瘤經手術治療的1年存活率約75%，2年約51%，3年約10%。未手術僅用醫療管理的中位存活時間較短。轉移性疾病預後較差但部分貓即使有轉移仍可透過Diazoxide和飲食管理維持數月良好生活品質。
+diagnosticAlgorithm:
+  title: 貓胰島素瘤 診斷流程
+  steps:
+    - step: 1
+      action: 確認低血糖
+      details: 測定血糖<60 mg/dL且排除人為因素
+      findings:
+        - 反覆性低血糖
+        - 進食後暫時改善
+    - step: 2
+      action: 同步胰島素測定
+      details: 低血糖發作時同步測定血清胰島素
+      findings:
+        - 胰島素不適當正常或升高
+        - 胰島素/血糖比值異常
+    - step: 3
+      action: 影像學定位
+      details: 腹部超音波和/或CT掃描胰臟和肝臟
+      findings:
+        - 胰臟腫塊
+        - 肝臟或淋巴結轉移灶
+    - step: 4
+      action: 手術探查+病理
+      details: 手術探查、腫瘤切除和組織病理確診
+      findings:
+        - β細胞腫瘤確認
+        - 分期和轉移評估
+clinicalPearls:
+  - 低血糖時的胰島素濃度測定是關鍵——即使在正常範圍內，低血糖時胰島素不應該正常，因此'不適當正常'等於異常
+  - 禁忌快速推注高濃度葡萄糖（50%）——會刺激腫瘤釋放更多胰島素造成反彈性低血糖
+  - 貓胰島素瘤極罕見，但不能因為'貓不常見'就忽略——老年貓反覆低血糖應列入鑑別
+monitoringItems:
+  - 血糖（居家監測q12h或出現症狀時）
+  - 血清果糖胺（q1-3月評估血糖控制）
+  - 腹部超音波（q3-6月監測復發或轉移）
+  - 臨床症狀記錄（虛弱、癲癇發作頻率和嚴重度）
+ddxSource: book-only

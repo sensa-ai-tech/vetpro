@@ -3,18 +3,18 @@ nameEn: Cocker Spaniel Familial Nephropathy
 nameZh: 可卡獵犬家族性腎病
 bodySystem: urinary
 description: 可卡獵犬遺傳性腎小球疾病,因COL4A4基因突變導致腎小球基底膜異常與進行性腎衰竭。幼年至青年期發病,表現為蛋白尿、氮血症,預後不良,多於數年內進展至末期腎病。
-
 aliases:
-  - { alias: 可卡遺傳性腎病, language: zh }
-  - { alias: Cocker Spaniel Hereditary Nephropathy, language: en }
-  - { alias: 可卡腎小球病, language: zh }
-
+  - alias: 可卡遺傳性腎病
+    language: zh
+  - alias: Cocker Spaniel Hereditary Nephropathy
+    language: en
+  - alias: 可卡腎小球病
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: rare
     notes: 英國可卡獵犬為主,體染色體顯性遺傳(COL4A4基因突變),發病年齡6個月至2歲,公犬較母犬嚴重
-
 etiology:
   categories:
     - name: 遺傳性膠原缺陷
@@ -32,7 +32,6 @@ etiology:
         - 蛋白尿導致腎小管損傷
         - 腎間質纖維化
         - 腎功能進行性喪失
-
 clinicalSigns:
   early:
     - 蛋白尿(尿蛋白/肌酐比>2)
@@ -46,26 +45,24 @@ clinicalSigns:
     - 口腔潰瘍,氨味口臭
     - 高血壓與其併發症(視網膜出血、癲癇)
     - 1-5歲進展至末期腎病
-
 diagnosis:
   primaryTests:
     - name: 尿液分析
-      notes: "持續性蛋白尿(UPC>2),等張尿(USG 1.008-1.020),可能有圓柱體"
+      notes: 持續性蛋白尿(UPC>2),等張尿(USG 1.008-1.020),可能有圓柱體
     - name: 血液生化
-      notes: "氮血症(BUN、Creatinine升高),高磷血症,低白蛋白血症,代謝性酸中毒"
+      notes: 氮血症(BUN、Creatinine升高),高磷血症,低白蛋白血症,代謝性酸中毒
     - name: 腎臟活檢(確診)
-      notes: "組織病理:腎小球基底膜分層、撕裂,電顯見典型網狀結構破壞"
+      notes: 組織病理:腎小球基底膜分層、撕裂,電顯見典型網狀結構破壞
     - name: 基因檢測
-      notes: "COL4A4基因突變檢測,可於發病前診斷"
+      notes: COL4A4基因突變檢測,可於發病前診斷
     - name: 超音波
-      notes: "雙側腎臟體積小,皮髓質分界不清"
+      notes: 雙側腎臟體積小,皮髓質分界不清
   differentialDiagnoses:
     - 腎澱粉樣變性
     - 腎發育不良
     - 慢性腎小球腎炎
     - 遺傳性蛋白尿(非進行性)
     - 中毒性腎病
-
 treatment:
   medical:
     - 無治癒方法,支持治療延緩進展
@@ -77,13 +74,47 @@ treatment:
     - 制酸劑:Omeprazole 0.5-1 mg/kg PO SID
     - 皮下輸液(脫水或氮血症惡化)
     - 末期:安寧照護或安樂死
-
 prognosis:
-  general: "預後不良,進行性疾病無法治癒。公犬多於2歲前進展至末期腎病,母犬進展較緩但仍終將腎衰竭。早期診斷與積極治療可延長數月至2年,但無法阻止進展。"
-
+  general: 預後不良,進行性疾病無法治癒。公犬多於2歲前進展至末期腎病,母犬進展較緩但仍終將腎衰竭。早期診斷與積極治療可延長數月至2年,但無法阻止進展。
 prevention:
   - 繁殖前基因檢測(COL4A4突變)
   - 患病犬與帶因者不應繁殖
   - 幼犬早期尿液篩檢(6個月起)
   - 高風險家系避免繁殖
   - 英國KC建議篩檢計畫
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 可卡獵犬家族性腎病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - halitosis-stomatitis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 尿液分析
+          notes: 持續性蛋白尿(UPC>2),等張尿(USG 1.008-1.020),可能有圓柱體
+        - name: 血液生化
+          notes: 氮血症(BUN、Creatinine升高),高磷血症,低白蛋白血症,代謝性酸中毒
+        - name: 腎臟活檢(確診)
+          notes: 組織病理:腎小球基底膜分層、撕裂,電顯見典型網狀結構破壞
+ddxSource: auto-generated

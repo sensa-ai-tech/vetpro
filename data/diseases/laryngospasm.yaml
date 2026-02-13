@@ -3,11 +3,11 @@ nameEn: Laryngospasm
 nameZh: 喉痙攣
 bodySystem: respiratory
 description: 喉部肌肉突然不自主收縮導致氣道完全或部分阻塞。常發生於麻醉誘導或清醒期,為緊急狀況。
-
 aliases:
-  - { alias: 喉部痙攣, language: zh }
-  - { alias: Laryngeal Spasm, language: en }
-
+  - alias: 喉部痙攣
+    language: zh
+  - alias: Laryngeal Spasm
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 麻醉誘導期較常見
-
 etiology:
   categories:
     - name: 麻醉相關
@@ -28,7 +27,6 @@ etiology:
       examples:
         - 胃食道逆流
         - 異物刺激
-
 clinicalSigns:
   early:
     - 吸氣困難
@@ -37,18 +35,16 @@ clinicalSigns:
     - 無法通氣
     - 發紺
     - 呼吸停止
-
 diagnosis:
   primaryTests:
     - name: 臨床評估
-      notes: "喉部緊閉,無法插管或通氣"
+      notes: 喉部緊閉,無法插管或通氣
     - name: 喉鏡檢查
-      notes: "聲帶緊閉"
+      notes: 聲帶緊閉
   differentialDiagnoses:
     - 喉水腫
     - 異物阻塞
     - 支氣管痙攣
-
 treatment:
   medical:
     - 加深麻醉深度
@@ -56,44 +52,70 @@ treatment:
     - 100% 氧氣給予
     - Propofol 2-4 mg/kg IV (若未麻醉)
     - 緊急氣切 (若無法解除)
-
 prognosis:
-  general: "預後良好;通常能迅速解除;延遲處理可能導致缺氧併發症"
-
+  general: 預後良好;通常能迅速解除;延遲處理可能導致缺氧併發症
 prevention:
   - 適當麻醉深度
   - 輕柔操作氣道
   - Lidocaine 噴霧預防 (貓)
-
-
 guidelineRefs:
-  - sourceOrg: "The journal of physiological sciences : JPS"
+  - sourceOrg: 'The journal of physiological sciences : JPS'
     title: An explanation for sudden death in epilepsy (SUDEP).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10717429/
     type: review
-    pmid: "29542031"
+    pmid: '29542031'
     relevance: supporting
-  - sourceOrg: "Journal of the American Association for Laboratory Animal Science : JAALAS"
-    title: Continuous Rate Infusion of Ketamine Hydrochloride and Dexmedetomidine for Maintenance of Anesthesia during Laryngotracheal Surgery in New Zealand White Rabbits (Oryctolagus cuniculus).
+  - sourceOrg: 'Journal of the American Association for Laboratory Animal Science : JAALAS'
+    title: >-
+      Continuous Rate Infusion of Ketamine Hydrochloride and Dexmedetomidine for Maintenance of Anesthesia during
+      Laryngotracheal Surgery in New Zealand White Rabbits (Oryctolagus cuniculus).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7073403/
     type: research
-    pmid: "32005295"
+    pmid: '32005295'
     relevance: supporting
   - sourceOrg: Laryngoscope investigative otolaryngology
     title: A Resuscitation Option for Upper Airway Occlusion Based on Bolus Transtracheal Lung Inflation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6119800/
     type: research
-    pmid: "30186961"
+    pmid: '30186961'
     relevance: supporting
-  - sourceOrg: "Epilepsy &amp; behavior : E&amp;B"
+  - sourceOrg: 'Epilepsy &amp; behavior : E&amp;B'
     title: Mechanisms and prevention of acid reflux induced laryngospasm in seizing rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7541801/
     type: research
-    pmid: "32540771"
+    pmid: '32540771'
     relevance: supporting
-  - sourceOrg: "Epilepsy &amp; behavior : E&amp;B"
+  - sourceOrg: 'Epilepsy &amp; behavior : E&amp;B'
     title: Utilizing multimodal imaging to visualize potential mechanism for sudden death in epilepsy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8429091/
     type: research
-    pmid: "34237676"
+    pmid: '34237676'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: stertor-stridor
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 喉痙攣 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - stertor-stridor 相關症狀
+        - seizures 相關症狀
+        - pallor-cyanosis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床評估
+          notes: 喉部緊閉,無法插管或通氣
+        - name: 喉鏡檢查
+          notes: 聲帶緊閉
+ddxSource: auto-generated

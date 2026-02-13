@@ -3,13 +3,15 @@ nameEn: Hepatozoon Canis
 nameZh: 犬肝簇蟲病
 bodySystem: hepatic
 description: 由Hepatozoon canis原蟲經壁蝨攝入傳播的血液寄生蟲病,全球分布。感染通常呈慢性經過,臨床症狀輕微至中度,免疫抑制個體可能出現嚴重併發症。
-
 aliases:
-  - { alias: 犬肝蟲病, language: zh }
-  - { alias: 犬六簇蟲病, language: zh }
-  - { alias: Hepatozoonosis, language: en }
-  - { alias: Old World Hepatozoonosis, language: en }
-
+  - alias: 犬肝蟲病
+    language: zh
+  - alias: 犬六簇蟲病
+    language: zh
+  - alias: Hepatozoonosis
+    language: en
+  - alias: Old World Hepatozoonosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少見,偶有報告,症狀通常輕微
-
 etiology:
   categories:
     - name: 病原體
@@ -30,7 +31,6 @@ etiology:
         - 吞食感染的壁蝨(Rhipicephalus sanguineus)
         - 非叮咬傳播(與H. americanum不同)
         - 可能經攝食感染動物組織傳播
-
 clinicalSigns:
   early:
     - 多數無症狀或輕微症狀
@@ -43,77 +43,109 @@ clinicalSigns:
     - 肌肉疼痛及萎縮
     - 眼鼻分泌物增加
     - 貧血,黏膜蒼白
-
 diagnosis:
   primaryTests:
     - name: 血液抹片
-      notes: "白血球內見配子母細胞(Gamonts),嗜中性球或單核球內"
+      notes: 白血球內見配子母細胞(Gamonts),嗜中性球或單核球內
     - name: 全血球計數
-      notes: "輕度貧血,嗜中性球增多,血小板正常或減少"
+      notes: 輕度貧血,嗜中性球增多,血小板正常或減少
     - name: 血液生化
-      notes: "白蛋白降低,球蛋白升高(A/G比值降低)"
+      notes: 白蛋白降低,球蛋白升高(A/G比值降低)
     - name: PCR檢測
-      notes: "高敏感度,可鑑別H. canis與H. americanum"
+      notes: 高敏感度,可鑑別H. canis與H. americanum
     - name: 血清學
-      notes: "IFAT或ELISA檢測抗體,流行病學調查"
+      notes: IFAT或ELISA檢測抗體,流行病學調查
   differentialDiagnoses:
     - Hepatozoon americanum(美國型,症狀較嚴重)
     - 其他血液寄生蟲(Babesia, Ehrlichia)
     - 慢性炎症性疾病
     - 免疫介導性疾病
     - 多發性肌炎或關節炎
-
 treatment:
   medical:
     - Imidocarb dipropionate 5-6 mg/kg SC,每14天1次,共2次
     - Doxycycline 10 mg/kg PO q24h,21天(清除組織期蟲體)
     - Trimethoprim-sulfadiazine 15 mg/kg PO q12h,14天(輔助治療)
     - 症狀性治療:
-      - NSAIDs(Carprofen 2-4 mg/kg PO q12-24h)緩解肌肉疼痛
-      - 營養支持,高蛋白飲食
+        - NSAIDs(Carprofen 2-4 mg/kg PO q12-24h)緩解肌肉疼痛
+        - 營養支持,高蛋白飲食
     - 注意:治療無法完全清除蟲體,目標為控制寄生蟲量
   supportive:
     - 壁蝨控制:Fipronil或Permethrin滴劑
-
 prognosis:
-  general: "預後通常良好,大多數犬隻可維持長期無症狀帶原狀態。免疫功能正常犬隻經治療後症狀改善明顯,但無法完全治癒。免疫抑制個體預後保留。長期監測血液抹片及臨床症狀,必要時重複治療。"
-
+  general: 預後通常良好,大多數犬隻可維持長期無症狀帶原狀態。免疫功能正常犬隻經治療後症狀改善明顯,但無法完全治癒。免疫抑制個體預後保留。長期監測血液抹片及臨床症狀,必要時重複治療。
 prevention:
   - 全年壁蝨預防及控制
   - 避免犬隻攝食壁蝨(定期檢查及移除)
   - 流行區新引進犬隻應篩檢
   - 環境壁蝨控制
   - 無有效疫苗
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of parasitic diseases : official organ of the Indian Society for Parasitology"
+  - sourceOrg: 'Journal of parasitic diseases : official organ of the Indian Society for Parasitology'
     title: A review of Hepatozoonosis caused by Hepatozoon canis in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11319582/
     type: review
-    pmid: "39145354"
+    pmid: '39145354'
     relevance: primary
   - sourceOrg: Pathogens (Basel, Switzerland)
     title: Primary Tick-Borne Protozoan and Rickettsial Infections of Animals in Turkey.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7923091/
     type: review
-    pmid: "33669573"
+    pmid: '33669573'
     relevance: primary
   - sourceOrg: Pathogens (Basel, Switzerland)
-    title: A Unique Case of Fatal Coinfection Caused by Leptospira spp. and Hepatozoon canis in a Red Fox Cub (Vulpes vulpes).
+    title: >-
+      A Unique Case of Fatal Coinfection Caused by Leptospira spp. and Hepatozoon canis in a Red Fox Cub (Vulpes
+      vulpes).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8777892/
     type: case-report
-    pmid: "35055959"
+    pmid: '35055959'
     relevance: supporting
-  - sourceOrg: "Parasites &amp; vectors"
+  - sourceOrg: Parasites &amp; vectors
     title: Feline vector-borne pathogens in Iran.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12039143/
     type: research
-    pmid: "40296134"
+    pmid: '40296134'
     relevance: supporting
   - sourceOrg: BMC veterinary research
-    title: Molecular identification and associated risk factors of Hepatozoon canis among dogs visiting veterinary clinics in Tehran, Iran.
+    title: >-
+      Molecular identification and associated risk factors of Hepatozoon canis among dogs visiting veterinary clinics in
+      Tehran, Iran.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12613750/
     type: research
-    pmid: "41225539"
+    pmid: '41225539'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: common
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: common
+diagnosticAlgorithm:
+  title: 犬肝簇蟲病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液抹片
+          notes: 白血球內見配子母細胞(Gamonts),嗜中性球或單核球內
+        - name: 全血球計數
+          notes: 輕度貧血,嗜中性球增多,血小板正常或減少
+        - name: 血液生化
+          notes: 白蛋白降低,球蛋白升高(A/G比值降低)
+ddxSource: auto-generated

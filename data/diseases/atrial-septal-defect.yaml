@@ -2,13 +2,16 @@ slug: atrial-septal-defect
 nameEn: Atrial Septal Defect
 nameZh: 心房中隔缺損
 bodySystem: cardiac
-description: 心房中隔缺損（ASD）為先天性心臟病，指左右心房間的中隔存在異常開口，導致血液由左心房向右心房分流。依缺損位置分為 ostium secundum（最常見）、ostium primum 及 sinus venosus 型。多數病例左向右分流量小，臨床症狀輕微，但大型缺損可導致右心容積負荷增加與肺動脈高壓。
-
+description: >-
+  心房中隔缺損（ASD）為先天性心臟病，指左右心房間的中隔存在異常開口，導致血液由左心房向右心房分流。依缺損位置分為 ostium secundum（最常見）、ostium primum 及 sinus venosus
+  型。多數病例左向右分流量小，臨床症狀輕微，但大型缺損可導致右心容積負荷增加與肺動脈高壓。
 aliases:
-  - { alias: ASD, language: en }
-  - { alias: 心房間隔缺損, language: zh }
-  - { alias: Interatrial Septal Defect, language: en }
-
+  - alias: ASD
+    language: en
+  - alias: 心房間隔缺損
+    language: zh
+  - alias: Interatrial Septal Defect
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻 ASD 罕見，通常為複合先天性心臟異常的一部分。
-
 etiology:
   categories:
     - name: 先天性發育異常
@@ -29,7 +31,6 @@ etiology:
       examples:
         - 部分品種遺傳傾向（Boxer、Doberman Pinscher）
         - 可與其他先天性心臟缺損合併出現
-
 clinicalSigns:
   early:
     - 多數小型缺損無明顯臨床症狀
@@ -40,14 +41,12 @@ clinicalSigns:
     - 呼吸急促
     - 右心擴大徵象
     - 腹部膨大（腹水）
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波（Echocardiography）
       notes: 確診首選。可直接顯示心房中隔缺損位置與大小，評估分流方向與量（彩色都卜勒），測量右心房與右心室擴大程度。
     - name: 心電圖（ECG）
       notes: 可見右心軸偏移、右心房擴大波型（P pulmonale）。部分病例可見不完全性右束支傳導阻滯。
-
 treatment:
   principles:
     - 小型缺損無臨床症狀者通常不需治療
@@ -58,41 +57,96 @@ treatment:
     - 大型缺損可考慮經導管封堵術（Amplatzer 裝置）或外科修補
     - 右心衰竭治療：Furosemide 2-4 mg/kg PO q8-12h
     - 限制劇烈運動
-
 prognosis: 小型心房中隔缺損預後良好，多數動物可正常生活。大型缺損若未治療，長期右心容積負荷可導致右心衰竭與肺動脈高壓，最終可能發展為 Eisenmenger 症候群（分流方向逆轉）。成功封堵或手術修補後預後改善。
-
-
 guidelineRefs:
   - sourceOrg: Journal of thoracic disease
     title: Role of animal models for percutaneous atrial septal defect closure.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6174152/
     type: review
-    pmid: "30305957"
+    pmid: '30305957'
   - sourceOrg: The Journal of veterinary medical science
     title: Ostium secundum type of atrial septal defect in a rabbit.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6115272/
     type: case-report
-    pmid: "29973434"
+    pmid: '29973434'
   - sourceOrg: Regenerative biomaterials
-    title: Biodegradable polymeric occluder with controllable locking structure for closure of atrial septal defect via interventional treatment.
+    title: >-
+      Biodegradable polymeric occluder with controllable locking structure for closure of atrial septal defect via
+      interventional treatment.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12005900/
     type: research
-    pmid: "40248504"
+    pmid: '40248504'
   - sourceOrg: Scientific reports
     title: Animal models of pulmonary arterial hypertension associated with atrial septal defect.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11306221/
     type: research
-    pmid: "39112674"
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
+    pmid: '39112674'
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
     title: A retrospective study of congenital cardiac malformations in 29 goats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10331382/
     type: research
-    pmid: "37148279"
+    pmid: '37148279'
   - sourceOrg: The Journal of veterinary medical science
-    title: "Concurrent incomplete atrioventricular septal defect and supravalvular mitral stenosis causing heart failure in a 13-year-old cat: a case report."
+    title: >-
+      Concurrent incomplete atrioventricular septal defect and supravalvular mitral stenosis causing heart failure in a
+      13-year-old cat: a case report.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12508600/
     type: case-report
-    pmid: "40903248"
+    pmid: '40903248'
 pubmedQueries:
   - query: '"atrial septal defect" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 心房中隔缺損 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 聽診肺動脈區收縮期心雜音
+      findings:
+        - 肺動脈區柔和收縮期心雜音
+        - 可能無明顯症狀
+        - 右心容量過負荷
+        - 運動不耐
+    - step: 2
+      action: 胸腔X光
+      details: 評估右心與肺血管
+      findings:
+        - 右心擴大
+        - 肺血管充盈增加
+        - 主肺動脈段突出
+    - step: 3
+      action: 心臟超音波
+      details: 確認ASD並評估分流
+      findings:
+        - 心房中隔連續性中斷
+        - 彩色都卜勒左至右分流
+        - 右心房心室擴大
+        - 對比超音波（氣泡研究）
+    - step: 4
+      action: 進階評估
+      details: 評估手術或介入需求
+      findings:
+        - 分流量評估（Qp:Qs）
+        - 右心導管檢查
+        - 評估是否需要封堵術
+        - 合併其他先天性心臟病篩檢
+clinicalPearls:
+  - 單純ASD較VSD和PDA少見
+  - ASD常與其他先天性心臟病合併
+  - 開放性卵圓孔（PFO）與真正ASD不同
+  - ASD可能終生無症狀
+  - 經導管關閉技術在獸醫領域發展中
+monitoringItems:
+  - 心臟超聲定期追蹤
+  - 右心大小
+  - 肺動脈壓
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+ddxSource: book

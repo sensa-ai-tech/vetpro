@@ -3,19 +3,20 @@ nameEn: Chihuahua Patellar Luxation
 nameZh: 吉娃娃膝蓋骨脫位
 bodySystem: orthopedic
 description: 吉娃娃膝蓋骨脫位是小型犬種最常見的骨科問題之一，膝蓋骨自股骨滑車溝內側脫出。吉娃娃因體型小與後肢結構特徵而高度好發，雙側發病常見。
-
 aliases:
-  - { alias: 吉娃娃髕骨脫位, language: zh }
-  - { alias: 膝蓋骨移位, language: zh }
-  - { alias: Chihuahua luxating patella, language: en }
-  - { alias: Medial patellar luxation, language: en }
-
+  - alias: 吉娃娃髕骨脫位
+    language: zh
+  - alias: 膝蓋骨移位
+    language: zh
+  - alias: Chihuahua luxating patella
+    language: en
+  - alias: Medial patellar luxation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 吉娃娃為膝蓋骨內側脫位最好發的小型犬種之一。OFA 統計約 5-7% 受影響。雙側發病率約 50%。
-
 etiology:
   categories:
     - name: 結構因素
@@ -28,7 +29,6 @@ etiology:
         - 多基因遺傳
         - 小型犬品種選育
         - 後肢軸線異常
-
 clinicalSigns:
   early:
     - 間歇性後肢跛行（跳跑幾步後恢復）
@@ -40,18 +40,16 @@ clinicalSigns:
     - 膝關節腫脹
     - 退化性關節炎
     - 十字韌帶損傷（繼發）
-
 diagnosis:
   primaryTests:
     - name: 觸診
-      notes: "手動評估膝蓋骨脫位方向與級別（I-IV 級）"
+      notes: 手動評估膝蓋骨脫位方向與級別（I-IV 級）
     - name: X 光檢查
-      notes: "評估骨骼結構與退化性變化"
+      notes: 評估骨骼結構與退化性變化
   differentialDiagnoses:
     - 十字韌帶斷裂
     - Legg-Calve-Perthes 病
     - 骨折
-
 treatment:
   medical:
     - I 級無症狀者保守觀察
@@ -63,24 +61,47 @@ treatment:
     - 脛骨粗隆移位術
     - 關節囊重疊縫合
     - III-IV 級建議手術
-
 prognosis:
-  general: "I-II 級預後良好。手術矯正 III-IV 級成功率 >90%。術後多數犬可恢復正常功能。延遲治療增加退化性關節炎風險。"
-
+  general: I-II 級預後良好。手術矯正 III-IV 級成功率 >90%。術後多數犬可恢復正常功能。延遲治療增加退化性關節炎風險。
 prevention:
   - 繁殖犬骨科觸診評估
   - 維持理想體重
   - 避免跳高等負荷動作
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
-    title: Computed Tomography Evaluation of Morphological Types of Femoral Trochlear Dysplasia in Small-Breed Dogs-A Retrospective Study.
+    title: >-
+      Computed Tomography Evaluation of Morphological Types of Femoral Trochlear Dysplasia in Small-Breed Dogs-A
+      Retrospective Study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11768936/
     type: research
-    pmid: "39852924"
+    pmid: '39852924'
   - sourceOrg: PloS one
-    title: "Femoral and tibial alignments in chihuahuas with patellar luxation by radiograph: Angular values and intra- and inter-observer agreement of measurements."
+    title: >-
+      Femoral and tibial alignments in chihuahuas with patellar luxation by radiograph: Angular values and intra- and
+      inter-observer agreement of measurements.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6438527/
     type: research
-    pmid: "30921407"
+    pmid: '30921407'
+associatedSymptoms:
+  - symptomId: polyarthritis
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 吉娃娃膝蓋骨脫位 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - polyarthritis 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 觸診
+          notes: 手動評估膝蓋骨脫位方向與級別（I-IV 級）
+        - name: X 光檢查
+          notes: 評估骨骼結構與退化性變化
+ddxSource: auto-generated

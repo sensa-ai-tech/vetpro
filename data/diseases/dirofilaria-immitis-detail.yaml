@@ -3,13 +3,15 @@ nameEn: Dirofilaria Immitis Detail
 nameZh: 犬心絲蟲病詳論
 bodySystem: infectious
 description: 由Dirofilaria immitis線蟲經蚊子傳播的心肺血管寄生蟲病,成蟲寄生於肺動脈及右心,引起肺高壓、右心衰竭。為犬最重要寄生蟲病之一,貓亦可感染但臨床表現不同。
-
 aliases:
-  - { alias: 心絲蟲症, language: zh }
-  - { alias: 犬惡絲蟲病, language: zh }
-  - { alias: Heartworm Disease, language: en }
-  - { alias: Canine Dirofilariasis, language: en }
-
+  - alias: 心絲蟲症
+    language: zh
+  - alias: 犬惡絲蟲病
+    language: zh
+  - alias: Heartworm Disease
+    language: en
+  - alias: Canine Dirofilariasis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓感染率為犬的5-20%,常呈現急性呼吸道症狀(HARD)
-
 etiology:
   categories:
     - name: 病原體
@@ -31,7 +32,6 @@ etiology:
         - 蚊子叮咬傳播L3幼蟲
         - 皮下組織發育(L3→L4→L5,3-4個月)
         - 進入血管→肺動脈(6個月成熟,開始產微絲蟲)
-
 clinicalSigns:
   early:
     - 慢性咳嗽,運動不耐
@@ -43,64 +43,98 @@ clinicalSigns:
     - 肺動脈栓塞:急性呼吸困難、咳血、昏厥
     - 腔靜脈症候群(Caval syndrome):溶血、血紅素尿、急性虛脫
     - 貓:急性死亡或慢性呼吸道症狀(HARD)
-
 diagnosis:
   primaryTests:
     - name: 抗原檢測(ELISA)
-      notes: "檢測成蟲抗原,敏感度95%(犬),貓敏感度較低(50-60%)"
+      notes: 檢測成蟲抗原,敏感度95%(犬),貓敏感度較低(50-60%)
     - name: 微絲蟲檢查
-      notes: "Knott's test或濾膜法,新鮮血液,但隱性感染(30%)可能陰性"
+      notes: Knott's test或濾膜法,新鮮血液,但隱性感染(30%)可能陰性
     - name: 胸部X光
-      notes: "肺動脈擴張、右心擴大、肺野混濁(早期可能正常)"
+      notes: 肺動脈擴張、右心擴大、肺野混濁(早期可能正常)
     - name: 心臟超音波
-      notes: "右心擴大、三尖瓣逆流、肺動脈內可見成蟲(高回音線狀)"
+      notes: 右心擴大、三尖瓣逆流、肺動脈內可見成蟲(高回音線狀)
     - name: 抗體檢測
-      notes: "貓首選(抗原檢測不可靠),但陽性不代表目前感染"
+      notes: 貓首選(抗原檢測不可靠),但陽性不代表目前感染
   differentialDiagnoses:
     - 其他心臟病(二尖瓣閉鎖不全、擴張型心肌病)
     - 慢性支氣管炎或氣喘(貓)
     - 肺腫瘤或轉移
     - 血栓栓塞症
     - 慢性肺部疾病(肺纖維化)
-
 treatment:
   medical:
     - 犬成蟲殺滅(Adulticide):
-      - Melarsomine 2.5 mg/kg IM深層注射,第1天及30天後連續2天(3劑法,首選)
-      - 治療前stabilization:Doxycycline 10 mg/kg PO q24h,30天(殺Wolbachia共生菌)
-      - Prednisolone 0.5 mg/kg PO q12h,1-2週(減少栓塞風險)
+        - Melarsomine 2.5 mg/kg IM深層注射,第1天及30天後連續2天(3劑法,首選)
+        - 治療前stabilization:Doxycycline 10 mg/kg PO q24h,30天(殺Wolbachia共生菌)
+        - Prednisolone 0.5 mg/kg PO q12h,1-2週(減少栓塞風險)
     - 微絲蟲殺滅:
-      - Ivermectin 6-12 μg/kg PO或Milbemycin 0.5 mg/kg PO,每月1次
+        - Ivermectin 6-12 μg/kg PO或Milbemycin 0.5 mg/kg PO,每月1次
     - 支持療法:
-      - ACE抑制劑(Enalapril 0.5 mg/kg PO q12-24h)
-      - 利尿劑(Furosemide 1-2 mg/kg PO q12h,若心衰)
-      - 限制運動至少治療後3個月
+        - ACE抑制劑(Enalapril 0.5 mg/kg PO q12-24h)
+        - 利尿劑(Furosemide 1-2 mg/kg PO q12h,若心衰)
+        - 限制運動至少治療後3個月
     - 貓:多數不建議成蟲殺滅(風險高),支持療法為主
   surgical:
     - 腔靜脈症候群:緊急手術移除成蟲(經頸靜脈)
-
 prognosis:
-  general: "犬預後取決於蟲體負荷及肺動脈病變程度。輕至中度感染經治療預後良好,治癒率>95%。重度感染或併發症(肺栓塞、腔靜脈症候群)預後保留,死亡率10-30%。貓預後不可預測,可能自發性清除或急性死亡。"
-
+  general: 犬預後取決於蟲體負荷及肺動脈病變程度。輕至中度感染經治療預後良好,治癒率>95%。重度感染或併發症(肺栓塞、腔靜脈症候群)預後保留,死亡率10-30%。貓預後不可預測,可能自發性清除或急性死亡。
 prevention:
   - 全年每月預防藥:
-    - Ivermectin 6-12 μg/kg PO
-    - Milbemycin oxime 0.5 mg/kg PO
-    - Selamectin 6-12 mg/kg topical
-    - Moxidectin 2.5-3 μg/kg PO或topical
+      - Ivermectin 6-12 μg/kg PO
+      - Milbemycin oxime 0.5 mg/kg PO
+      - Selamectin 6-12 mg/kg topical
+      - Moxidectin 2.5-3 μg/kg PO或topical
   - 每年抗原篩檢(犬)
   - 蚊蟲控制:驅蚊、室內飼養
   - 疫苗研發中,尚未商品化
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "An Accessible Alternative to Melarsomine: \"Moxi-Doxy\" for Treatment of Adult Heartworm Infection in Dogs."
+    title: 'An Accessible Alternative to Melarsomine: "Moxi-Doxy" for Treatment of Adult Heartworm Infection in Dogs.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8353148/
     type: review
-    pmid: "34386540"
+    pmid: '34386540'
   - sourceOrg: Veterinary parasitology, regional studies and reports
-    title: "A proposed strategic control approach for Dirofilaria immitis in Gal&#xe1;pagos."
+    title: A proposed strategic control approach for Dirofilaria immitis in Gal&#xe1;pagos.
     url: https://pubmed.ncbi.nlm.nih.gov/41242782/
     type: review
-    pmid: "41242782"
+    pmid: '41242782'
+diagnosticAlgorithm:
+  title: 貓心絲蟲感染 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估慢性呼吸道症狀，注意間歇性咳嗽、嘔吐、呼吸困難，貓心絲蟲常模擬貓氣喘
+      findings:
+        - 間歇性咳嗽與呼吸困難
+        - 嘔吐（非胃腸道原因）
+        - 急性呼吸窘迫或猝死
+    - step: 2
+      action: 血液與血清學檢查
+      details: 進行CBC、抗體及抗原檢測，注意貓的抗原檢測敏感度較低
+      findings:
+        - 嗜酸性球增多（早期）
+        - 抗體檢測陽性提示暴露
+        - 抗原檢測陽性（但假陰性率高）
+    - step: 3
+      action: 影像學確診
+      details: 進行胸腔X光及心臟超音波，評估肺動脈及右心變化
+      findings:
+        - 胸腔X光顯示尾葉肺動脈擴張
+        - 心臟超音波可見肺動脈內線狀蟲體回聲
+        - 綜合抗體、抗原及影像學結果確診
+clinicalPearls:
+  - 貓心絲蟲病的最佳策略是預防——治療選項有限且風險高
+  - 不可使用犬的殺成蟲藥melarsomine——蟲體急性死亡可致貓死亡
+  - 抗體(+)/抗原(-)是貓最常見的檢測結果——不代表排除感染
+  - HARD（心絲蟲相關呼吸疾病）可在蟲體成熟前即發生
+  - 貓哮喘是最常見的誤診——流行區的「貓哮喘」都應考慮心絲蟲病
+  - 室內貓也有感染風險——蚊蟲可進入室內
+  - 心臟超音波直接見到蟲體是確診的最可靠方法
+monitoringItems:
+  - 每6個月胸腔X光追蹤
+  - 抗體和抗原定期重複檢測
+  - 心臟超音波追蹤蟲體和心臟功能
+  - 呼吸症狀追蹤
+  - 限制運動的遵從性
+  - 每月預防藥物使用
+ddxSource: book

@@ -3,12 +3,13 @@ nameEn: E Coli Infection
 nameZh: 大腸桿菌感染
 bodySystem: infectious
 description: 大腸桿菌 (Escherichia coli) 為犬貓泌尿道感染最常見的致病菌，也可引起腸道感染、菌血症、化膿性子宮蓄膿及新生兒敗血症。特定毒力株如 ETEC、EPEC 及 EHEC 可引起腹瀉。多重抗藥性大腸桿菌的增加為臨床重大問題。
-
 aliases:
-  - { alias: 大腸桿菌病, language: zh }
-  - { alias: Escherichia coli Infection, language: en }
-  - { alias: E. coli, language: en }
-
+  - alias: 大腸桿菌病
+    language: zh
+  - alias: Escherichia coli Infection
+    language: en
+  - alias: E. coli
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓泌尿道感染中 E. coli 亦為最常見。老年貓腎盂腎炎常見病原。多重抗藥性問題日益嚴重。
-
 etiology:
   categories:
     - name: 致病型別
@@ -32,7 +32,6 @@ etiology:
         - 新生兒敗血症
         - 前列腺炎
         - 腹膜炎
-
 clinicalSigns:
   early:
     - 頻尿、血尿、排尿困難（泌尿道感染）
@@ -44,7 +43,6 @@ clinicalSigns:
     - 腹部膨脹（子宮蓄膿）
     - 新生兒突然衰弱或死亡
     - 敗血性休克
-
 diagnosis:
   primaryTests:
     - name: 尿液培養與藥敏
@@ -56,7 +54,6 @@ diagnosis:
     - 生化（腎功能、肝功能）
     - 腹部超音波（子宮蓄膿、腎盂腎炎）
     - 尿液分析（膿尿、菌尿）
-
 treatment:
   principles:
     - 根據藥敏結果選擇抗生素
@@ -71,36 +68,87 @@ treatment:
     - ESBL 產生株需特殊抗生素（meropenem、amikacin）
     - 尿液培養追蹤確認清除
     - 復發性泌尿道感染需查找潛在原因
-
 prognosis: 單純泌尿道感染適當抗生素治療預後極佳。腎盂腎炎需較長療程但通常可治癒。敗血症預後視嚴重程度而定。ESBL 多重抗藥性株治療選擇有限但仍有可用藥物。
-
-
 guidelineRefs:
   - sourceOrg: Open veterinary journal
-    title: "Acute phase proteins patterns as biomarkers in bacterial infection: Recent insights."
+    title: 'Acute phase proteins patterns as biomarkers in bacterial infection: Recent insights.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11560262/
     type: review
-    pmid: "39545194"
+    pmid: '39545194'
   - sourceOrg: Journal of veterinary science
     title: Pathophysiology of enteropathogenic Escherichia coli during a host infection.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8977535/
     type: review
-    pmid: "35187883"
+    pmid: '35187883'
   - sourceOrg: Veterinary research
-    title: "GSK3&#x3b2;-mediated NRF2 degradation drives Escherichia coli-induced ferroptosis in the bovine endometrium."
+    title: GSK3&#x3b2;-mediated NRF2 degradation drives Escherichia coli-induced ferroptosis in the bovine endometrium.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12715911/
     type: research
-    pmid: "41413615"
+    pmid: '41413615'
   - sourceOrg: Poultry science
     title: Characterization of Escherichia coli pathogenicity and drug resistance in yolk peritonitis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11097060/
     type: research
-    pmid: "38718538"
+    pmid: '38718538'
   - sourceOrg: Poultry science
-    title: In vitro and in vivo evaluation of antibacterial activity and mechanism of luteolin from Humulus scandens against Escherichia coli from chicken.
+    title: >-
+      In vitro and in vivo evaluation of antibacterial activity and mechanism of luteolin from Humulus scandens against
+      Escherichia coli from chicken.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11399789/
     type: research
-    pmid: "39208485"
+    pmid: '39208485'
 pubmedQueries:
-  - query: '"Escherichia coli" AND (veterinary OR canine OR feline) AND ("urinary tract infection" OR "antimicrobial resistance")'
+  - query: >-
+      "Escherichia coli" AND (veterinary OR canine OR feline) AND ("urinary tract infection" OR "antimicrobial
+      resistance")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: vaginal-discharge
+    frequency: common
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: pollakiuria
+    frequency: common
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: haematuria
+    frequency: common
+diagnosticAlgorithm:
+  title: 大腸桿菌感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - vaginal-discharge 相關症狀
+        - anorexia 相關症狀
+        - abdominal-distension 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 尿液培養與藥敏
+          notes: 泌尿道感染確診金標準。需無菌採樣（膀胱穿刺優先）。>10³ CFU/mL（穿刺尿）具有診斷意義
+        - name: 血液或分泌物培養
+          notes: 敗血症或子宮蓄膿時必要。抗生素敏感試驗指導治療
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC（白血球增多伴左移）
+        - 生化（腎功能、肝功能）
+        - 腹部超音波（子宮蓄膿、腎盂腎炎）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 根據藥敏結果選擇抗生素
+        - 簡單下泌尿道感染首選窄譜抗生素
+        - 嚴重感染需靜脈給藥
+ddxSource: auto-generated

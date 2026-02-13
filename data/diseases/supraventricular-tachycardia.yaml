@@ -2,13 +2,16 @@ slug: supraventricular-tachycardia
 nameEn: Supraventricular Tachycardia
 nameZh: 室上性心搏過速
 bodySystem: cardiac
-description: 室上性心搏過速（SVT）為起源於心室以上（心房或房室結）的快速心律不整，心率通常 >220 bpm（犬）或 >260 bpm（貓）。常見機轉包括房室迴路折返性心搏過速（AVRT，涉及副傳導路徑）與房室結折返性心搏過速（AVNRT）。持續性 SVT 可導致心搏過速引起的心肌病。
-
+description: >-
+  室上性心搏過速（SVT）為起源於心室以上（心房或房室結）的快速心律不整，心率通常 >220 bpm（犬）或 >260
+  bpm（貓）。常見機轉包括房室迴路折返性心搏過速（AVRT，涉及副傳導路徑）與房室結折返性心搏過速（AVNRT）。持續性 SVT 可導致心搏過速引起的心肌病。
 aliases:
-  - { alias: SVT, language: en }
-  - { alias: 室上速, language: zh }
-  - { alias: Paroxysmal Supraventricular Tachycardia, language: en }
-
+  - alias: SVT
+    language: en
+  - alias: 室上速
+    language: zh
+  - alias: Paroxysmal Supraventricular Tachycardia
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻較少見，可繼發於心肌病或甲狀腺功能亢進。
-
 etiology:
   categories:
     - name: 折返性機轉
@@ -34,7 +36,6 @@ etiology:
         - 電解質異常
         - 甲狀腺功能亢進（貓）
         - 交感神經張力增加
-
 clinicalSigns:
   early:
     - 心率極快且規則
@@ -46,55 +47,105 @@ clinicalSigns:
     - 昏厥
     - 持續性 SVT 可導致心搏過速引起的心肌病（tachycardia-induced cardiomyopathy）
     - 充血性心衰竭
-
 diagnosis:
   primaryTests:
     - name: 心電圖（ECG）
-      notes: "確診必須。特徵：窄 QRS 波群（<0.06 秒犬），心率極快且規則，P 波可能不可見或隱藏於前一 QRS 後。迷走神經刺激（vagal maneuver）可能終止折返性 SVT。"
+      notes: 確診必須。特徵：窄 QRS 波群（<0.06 秒犬），心率極快且規則，P 波可能不可見或隱藏於前一 QRS 後。迷走神經刺激（vagal maneuver）可能終止折返性 SVT。
     - name: 24 小時 Holter 監測
       notes: 評估 SVT 發作頻率、持續時間與自發終止情況。偵測陣發性 SVT。
-
 treatment:
   principles:
     - 血流動力學穩定者可先嘗試迷走神經刺激
     - 持續性 SVT 需藥物治療
     - 副傳導路徑相關 SVT 可考慮經導管消融術
   general:
-    - "迷走神經刺激法：眼球按壓或頸動脈竇按摩（可終止折返性 SVT）"
-    - "急性終止：Adenosine 6-12 mg IV rapid bolus（快速靜脈注射，可診斷性終止 SVT）"
-    - "Diltiazem 0.15-0.25 mg/kg IV 緩慢靜脈注射（抑制房室結傳導）"
-    - "口服維持：Diltiazem 1.5-3.5 mg/kg PO q8h 或 Sotalol 1.5-3.5 mg/kg PO q12h"
-    - "Atenolol 0.25-1 mg/kg PO q12h（長期預防復發）"
+    - 迷走神經刺激法：眼球按壓或頸動脈竇按摩（可終止折返性 SVT）
+    - 急性終止：Adenosine 6-12 mg IV rapid bolus（快速靜脈注射，可診斷性終止 SVT）
+    - Diltiazem 0.15-0.25 mg/kg IV 緩慢靜脈注射（抑制房室結傳導）
+    - 口服維持：Diltiazem 1.5-3.5 mg/kg PO q8h 或 Sotalol 1.5-3.5 mg/kg PO q12h
+    - Atenolol 0.25-1 mg/kg PO q12h（長期預防復發）
     - 經導管射頻消融術（副傳導路徑相關 SVT 的根治選擇）
-
 prognosis: 陣發性 SVT 在適當藥物控制下預後良好。經導管消融術治療副傳導路徑相關 SVT 的成功率高，可根治。持續性未治療的 SVT 可導致心搏過速引起的心肌病，但在心律控制後心功能通常可部分或完全恢復。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in cardiovascular medicine
-    title: "Arrhythmias across the tree of life: comparative insights for human electrophysiology."
+    title: 'Arrhythmias across the tree of life: comparative insights for human electrophysiology.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12816241/
     type: review
-    pmid: "41567384"
+    pmid: '41567384'
     relevance: primary
   - sourceOrg: Frontiers in physiology
-    title: Atrioventricular nodal reentrant tachycardia onset, sustainability, and spontaneous termination in rabbit atrioventricular node model with autonomic nervous system control.
+    title: >-
+      Atrioventricular nodal reentrant tachycardia onset, sustainability, and spontaneous termination in rabbit
+      atrioventricular node model with autonomic nervous system control.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11782234/
     type: research
-    pmid: "39896194"
+    pmid: '39896194'
     relevance: supporting
   - sourceOrg: Journal of veterinary internal medicine
-    title: Feasibility of electroanatomic mapping and radiofrequency catheter ablation in Boxer dogs with symptomatic ventricular tachycardia.
+    title: >-
+      Feasibility of electroanatomic mapping and radiofrequency catheter ablation in Boxer dogs with symptomatic
+      ventricular tachycardia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9151449/
     type: research
-    pmid: "35307868"
+    pmid: '35307868'
     relevance: supporting
   - sourceOrg: Journal of pharmacological sciences
-    title: Electropharmacological profile of an atrial-selective sodium channel blocker acehytisine assessed in the isoflurane-anesthetized guinea-pig model.
+    title: >-
+      Electropharmacological profile of an atrial-selective sodium channel blocker acehytisine assessed in the
+      isoflurane-anesthetized guinea-pig model.
     url: https://pubmed.ncbi.nlm.nih.gov/31757741/
     type: research
-    pmid: "31757741"
+    pmid: '31757741'
     relevance: supporting
 pubmedQueries:
   - query: '"supraventricular tachycardia" AND (veterinary OR canine OR feline) AND ("treatment" OR "ablation")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 室上性心搏過速 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估發作性心率過快、虛弱、暈厥等症狀，注意陣發性和持續性的區分
+      findings:
+        - 突發性心搏過速（犬>220 bpm）
+        - 發作時虛弱或暈厥
+        - 發作間期可能完全正常
+    - step: 2
+      action: 心電圖診斷
+      details: 進行心電圖確認窄QRS波群心搏過速，必要時進行迷走神經刺激試驗
+      findings:
+        - 規則窄QRS波群心搏過速
+        - P波可能隱藏在T波中或缺如
+        - 迷走神經刺激可終止（與竇性心搏過速鑑別）
+    - step: 3
+      action: 病因評估與確診
+      details: 心臟超音波排除結構性心臟病，評估甲狀腺功能等系統性原因
+      findings:
+        - 心臟超音波排除結構性心臟病
+        - 排除甲狀腺功能亢進等代謝原因
+        - 確認SVT類型（AVRT、AVNRT等）
+clinicalPearls:
+  - 迷走神經刺激可瞬間終止AVRT/AVNRT，此反應具診斷價值
+  - 竇性心搏過速對迷走神經刺激僅有暫時減速而非突然終止
+  - 心搏過速性心肌病是可逆的——控制心率後心功能可改善
+  - 拉布拉多犬是副傳導束相關SVT的好發品種
+  - 貓的SVT需排除甲狀腺功能亢進
+monitoringItems:
+  - ECG監測治療反應
+  - Holter評估發作頻率
+  - 心臟超音波追蹤心室功能
+  - 藥物副作用監測（低血壓、心跳過慢）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+ddxSource: book

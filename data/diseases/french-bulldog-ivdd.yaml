@@ -3,19 +3,21 @@ nameEn: French Bulldog IVDD
 nameZh: 法國鬥牛犬椎間盤疾病
 bodySystem: neurology
 description: 法國鬥牛犬為椎間盤疾病（IVDD）的高風險品種，因軟骨營養不良（Chondrodystrophic）體型使椎間盤早期退化。Hansen Type I 為最常見類型，急性椎間盤突出可導致嚴重脊髓壓迫與後肢癱瘓。
-
 aliases:
-  - { alias: 法鬥椎間盤突出, language: zh }
-  - { alias: 法鬥 IVDD, language: zh }
-  - { alias: French Bulldog intervertebral disc disease, language: en }
-  - { alias: Frenchie IVDD, language: en }
-  - { alias: French Bulldog disc herniation, language: en }
-
+  - alias: 法鬥椎間盤突出
+    language: zh
+  - alias: 法鬥 IVDD
+    language: zh
+  - alias: French Bulldog intervertebral disc disease
+    language: en
+  - alias: Frenchie IVDD
+    language: en
+  - alias: French Bulldog disc herniation
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
     notes: 法國鬥牛犬為 IVDD 最高風險品種之一。軟骨營養不良犬種椎間盤早期退化。2-6 歲為好發年齡。胸腰段（T11-L3）最常見。
-
 etiology:
   categories:
     - name: 品種因素
@@ -33,7 +35,6 @@ etiology:
         - 肥胖
         - 高衝擊運動（跳躍、樓梯）
         - 外傷
-
 clinicalSigns:
   early:
     - 背部疼痛（觸摸背部哀嚎）
@@ -46,7 +47,6 @@ clinicalSigns:
     - 後肢癱瘓（不完全至完全）
     - 排尿功能障礙
     - 深部疼痛覺喪失（最嚴重，Grade V）
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
@@ -55,7 +55,6 @@ diagnosis:
       notes: 金標準。精確定位突出椎間盤。評估脊髓壓迫與水腫程度
     - name: CT
       notes: 可見鈣化椎間盤物質。手術規劃。比 MRI 快速
-
 treatment:
   principles:
     - 依神經損傷程度選擇保守或手術
@@ -70,26 +69,68 @@ treatment:
     - 膀胱管理（手動排尿如需要）
     - 體重管理預防復發
     - 避免跳躍與高衝擊活動
-
-prognosis: Grade I-III 保守或手術治療預後良好（>90% 恢復行走能力）。Grade IV 手術後約 90% 可恢復。Grade V（深部疼痛覺喪失）手術預後約 50-60%。深部疼痛覺喪失超過 48 小時者預後急遽下降。法國鬥牛犬同時存在半椎體可能增加手術複雜性。
-
-
+prognosis: >-
+  Grade I-III 保守或手術治療預後良好（>90% 恢復行走能力）。Grade IV 手術後約 90% 可恢復。Grade V（深部疼痛覺喪失）手術預後約 50-60%。深部疼痛覺喪失超過 48
+  小時者預後急遽下降。法國鬥牛犬同時存在半椎體可能增加手術複雜性。
 guidelineRefs:
   - sourceOrg: BMC veterinary research
-    title: "Allelic frequency of 12-FGF4RG and the association between the genotype with number of calcified intervertebral discs visible on radiographs in Coton de Tul&#xe9;ar and French Bulldog breeds."
+    title: >-
+      Allelic frequency of 12-FGF4RG and the association between the genotype with number of calcified intervertebral
+      discs visible on radiographs in Coton de Tul&#xe9;ar and French Bulldog breeds.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11877793/
     type: research
-    pmid: "40038709"
+    pmid: '40038709'
   - sourceOrg: Acta veterinaria Scandinavica
-    title: "Recurrence rate of intervertebral disc disease in surgically treated French Bulldogs: a retrospective study (2009-2019)."
+    title: >-
+      Recurrence rate of intervertebral disc disease in surgically treated French Bulldogs: a retrospective study
+      (2009-2019).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9893528/
     type: research
-    pmid: "36732796"
+    pmid: '36732796'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Demographic and lifestyle characteristics impact lifetime prevalence of owner-reported intervertebral disc disease: 43,517 companion dogs in the United States."
+    title: >-
+      Demographic and lifestyle characteristics impact lifetime prevalence of owner-reported intervertebral disc
+      disease: 43,517 companion dogs in the United States.
     url: https://pubmed.ncbi.nlm.nih.gov/39813820/
     type: research
-    pmid: "39813820"
+    pmid: '39813820'
 pubmedQueries:
   - query: '"French Bulldog" AND ("intervertebral disc" OR "IVDD") AND (surgery OR treatment OR prognosis)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: uncommon
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 法國鬥牛犬椎間盤疾病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+        - paresis-paralysis 相關症狀
+        - ataxia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 神經定位（上/下運動神經元）。疼痛分級（Grade I-V）。深部疼痛覺評估
+        - name: MRI
+          notes: 金標準。精確定位突出椎間盤。評估脊髓壓迫與水腫程度
+        - name: CT
+          notes: 可見鈣化椎間盤物質。手術規劃。比 MRI 快速
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 依神經損傷程度選擇保守或手術
+        - 減壓手術為嚴重病例首選
+        - 疼痛管理
+ddxSource: auto-generated

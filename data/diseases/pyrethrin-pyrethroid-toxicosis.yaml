@@ -3,13 +3,15 @@ nameEn: Pyrethrin Pyrethroid Toxicosis
 nameZh: 除蟲菊酯中毒
 bodySystem: toxicology
 description: 除蟲菊酯 (pyrethrin/pyrethroid) 中毒常見於貓誤用犬用高濃度 permethrin 除蚤產品。貓缺乏葡萄糖醛酸化代謝途徑，對除蟲菊酯極度敏感。典型表現為全身性肌肉震顫與癲癇。犬中毒罕見但大劑量或幼犬仍可發生。
-
 aliases:
-  - { alias: 百滅寧中毒, language: zh }
-  - { alias: 貓除蚤藥中毒, language: zh }
-  - { alias: Permethrin Toxicosis, language: en }
-  - { alias: Pyrethroid Poisoning, language: en }
-
+  - alias: 百滅寧中毒
+    language: zh
+  - alias: 貓除蚤藥中毒
+    language: zh
+  - alias: Permethrin Toxicosis
+    language: en
+  - alias: Pyrethroid Poisoning
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓 permethrin 中毒為最常見的貓致命性中毒之一。貓缺乏 UGT 酵素，代謝 pyrethroid 能力極差。犬用高濃度 permethrin 外用產品誤用於貓為最常見原因。
-
 etiology:
   categories:
     - name: 毒性機制
@@ -32,7 +33,6 @@ etiology:
         - 犬用高濃度 permethrin 外用除蚤產品誤用於貓
         - 與塗有 permethrin 的犬密切接觸
         - 環境用殺蟲劑
-
 clinicalSigns:
   early:
     - 耳朵與肌肉抽搐（攝入或塗抹後 1-6 小時）
@@ -46,7 +46,6 @@ clinicalSigns:
     - 高燒（肌肉過度活動）
     - 呼吸困難
     - 死亡（未治療貓）
-
 diagnosis:
   primaryTests:
     - name: 病史確認
@@ -57,7 +56,6 @@ diagnosis:
     - 皮膚/血液 pyrethroid 殘留檢測（非常規可用）
     - 血糖、電解質（排除其他震顫原因）
     - CK（橫紋肌溶解）
-
 treatment:
   principles:
     - 去汙染（外用暴露需洗浴）
@@ -73,17 +71,64 @@ treatment:
     - Lipid emulsion therapy（20% intralipid 1.5 mL/kg IV bolus，可加速脂溶性毒物清除）
     - 住院監測 48-72 小時
     - 嚴禁將犬用 permethrin 產品用於貓
-
-prognosis: 貓 permethrin 中毒積極治療（methocarbamol + lipid emulsion）存活率可達 >95%。未治療死亡率高。多數存活貓在 24-72 小時內完全恢復。關鍵在於飼主教育：絕對不可將犬用 permethrin 產品用於貓。
-
-
+prognosis: >-
+  貓 permethrin 中毒積極治療（methocarbamol + lipid emulsion）存活率可達 >95%。未治療死亡率高。多數存活貓在 24-72 小時內完全恢復。關鍵在於飼主教育：絕對不可將犬用 permethrin
+  產品用於貓。
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Suspected Permethrin-Containing Powder Bath Poisoning in a Flock of Mountain Quail (Oreortyx pictus).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12108505/
     type: research
-    pmid: "40427305"
+    pmid: '40427305'
     relevance: supporting
 pubmedQueries:
   - query: '"pyrethroid toxicosis" OR "permethrin" AND (feline OR cat OR veterinary) AND ("treatment" OR "intralipid")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: skin-pruritus
+    frequency: common
+diagnosticAlgorithm:
+  title: 除蟲菊酯中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - ataxia 相關症狀
+        - trembling 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史確認
+          notes: 確認是否使用犬用 permethrin 產品於貓，或貓與塗藥犬接觸。發病時間為暴露後 1-72 小時
+        - name: 臨床表現
+          notes: 貓的全身性肌肉震顫與 permethrin 暴露史
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 皮膚/血液 pyrethroid 殘留檢測（非常規可用）
+        - 血糖、電解質（排除其他震顫原因）
+        - CK（橫紋肌溶解）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 去汙染（外用暴露需洗浴）
+        - 控制震顫與癲癇
+        - 支持療法
+ddxSource: auto-generated

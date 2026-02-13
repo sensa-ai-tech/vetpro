@@ -3,12 +3,13 @@ nameEn: Coprophagia
 nameZh: 食糞癖
 bodySystem: behavioral
 description: 動物攝食自己或其他動物糞便的行為，在犬相當常見（約 16-23% 犬有此行為）。多數為正常行為變異（母犬清理幼犬排泄物為本能），但持續性食糞癖可能與營養、行為或醫學問題相關。
-
 aliases:
-  - { alias: "食糞行為", language: zh }
-  - { alias: "吃大便", language: zh }
-  - { alias: "Stool Eating", language: en }
-
+  - alias: 食糞行為
+    language: zh
+  - alias: 吃大便
+    language: zh
+  - alias: Stool Eating
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓食糞癖較少見，通常提示營養缺乏或行為異常。
-
 etiology:
   categories:
     - name: 正常行為
@@ -30,7 +30,6 @@ etiology:
         - 腸道吸收不良
         - 營養不足或高碳水化合物飲食
         - 藥物（類固醇→多食→食糞）
-
 clinicalSigns:
   early:
     - 對糞便表現興趣
@@ -41,14 +40,12 @@ clinicalSigns:
     - 攝食多種動物糞便
     - 口臭
     - 消化道寄生蟲感染風險增加
-
 diagnosis:
   primaryTests:
     - name: 醫學排除
       notes: 糞便檢查（寄生蟲）、TLI（排除 EPI）、CBC/生化。評估飲食是否營養均衡。
     - name: 行為評估
       notes: 評估食糞行為的情境、頻率。區分正常變異與病理性。
-
 treatment:
   principles:
     - 排除醫學原因
@@ -61,36 +58,86 @@ treatment:
     - 口腔訓練「Leave it」指令
     - 食物添加劑使糞便味道厭惡（療效不一）
     - EPI 治療（若確診）：胰臟酶替代
-
 prognosis: 醫學原因治療後食糞行為常可改善。行為性食糞癖透過環境管理與訓練多數可減少但可能無法完全消除。幼犬食糞癖多隨成長自然減少。食糞本身對健康影響有限但增加寄生蟲傳播風險。
-
-
 guidelineRefs:
   - sourceOrg: Philosophical transactions of the Royal Society of London. Series B, Biological sciences
     title: Is strongyloidiasis a zoonosis from dogs?
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10676807/
     type: review
-    pmid: "38008118"
+    pmid: '38008118'
   - sourceOrg: BMC veterinary research
-    title: Presence of eimerid oocysts in faeces of a quarantined dog in Iceland is explained by coprophagic behaviour prior to its importation. Case report.
+    title: >-
+      Presence of eimerid oocysts in faeces of a quarantined dog in Iceland is explained by coprophagic behaviour prior
+      to its importation. Case report.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7296720/
     type: case-report
-    pmid: "32539829"
+    pmid: '32539829'
   - sourceOrg: Animal microbiome
-    title: "The gut microbiota of Labrador retriever puppies: a longitudinal cohort study."
+    title: 'The gut microbiota of Labrador retriever puppies: a longitudinal cohort study.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12534972/
     type: research
-    pmid: "41108012"
+    pmid: '41108012'
   - sourceOrg: Scientific reports
     title: Coprophagia in early life tunes expression of immune genes after weaning in rabbit ileum.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11024171/
     type: research
-    pmid: "38632468"
+    pmid: '38632468'
   - sourceOrg: Parasite (Paris, France)
-    title: "Snail coprophagy: the encounter filter, food preferences, and rat lungworm (Angiostrongylus cantonensis) prevalence."
+    title: >-
+      Snail coprophagy: the encounter filter, food preferences, and rat lungworm (Angiostrongylus cantonensis)
+      prevalence.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11666226/
     type: research
-    pmid: "39715443"
+    pmid: '39715443'
 pubmedQueries:
   - query: '"Coprophagia" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 異食癖/食糞症 診斷流程
+  steps:
+    - step: 1
+      action: 病史評估
+      details: 確認攝食物質類型、頻率和環境因素
+      findings:
+        - 食糞
+        - 非食物物質
+        - 特定物質偏好
+    - step: 2
+      action: 醫學排除
+      details: 血液學、糞檢、TLI排除醫學原因
+      findings:
+        - EPI
+        - 寄生蟲
+        - 內分泌疾病
+        - 醫學正常
+    - step: 3
+      action: 行為評估
+      details: 評估環境豐富度、焦慮程度和學習史
+      findings:
+        - 無聊相關
+        - 焦慮相關
+        - 學習行為
+    - step: 4
+      action: 綜合治療
+      details: 治療基礎疾病+環境管理+行為修正
+      findings:
+        - 醫學治療有效
+        - 需行為修正
+        - 需環境改善
+clinicalPearls:
+  - 異食癖必須先排除醫學原因（EPI、內分泌疾病、寄生蟲）再做行為診斷
+  - 母犬食用幼犬糞便是正常哺育行為，無需治療
+  - 貓的毛線/線狀異物攝食極為危險，可導致線狀異物腸阻塞
+monitoringItems:
+  - 治療後追蹤異食行為頻率
+  - 基礎疾病控制指標
+  - 腹部影像（異物攝食者）
+  - 體重和營養狀態評估
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+ddxSource: book

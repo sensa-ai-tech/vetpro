@@ -2,12 +2,14 @@ slug: campylobacteriosis
 nameEn: Campylobacteriosis
 nameZh: 彎曲桿菌感染
 bodySystem: gastrointestinal
-description: 彎曲桿菌感染為 Campylobacter spp.（主要為 C. jejuni 與 C. upsaliensis）引起的腸胃道感染。犬隻健康帶菌率高，臨床感染多見於幼犬或免疫抑制動物。為人畜共通傳染病。腹瀉通常為自限性，嚴重者可出現血便。
-
+description: >-
+  彎曲桿菌感染為 Campylobacter spp.（主要為 C. jejuni 與 C.
+  upsaliensis）引起的腸胃道感染。犬隻健康帶菌率高，臨床感染多見於幼犬或免疫抑制動物。為人畜共通傳染病。腹瀉通常為自限性，嚴重者可出現血便。
 aliases:
-  - { alias: 曲狀桿菌感染, language: zh }
-  - { alias: Campylobacter Infection, language: en }
-
+  - alias: 曲狀桿菌感染
+    language: zh
+  - alias: Campylobacter Infection
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -15,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓隻帶菌率類似犬隻。幼貓臨床症狀較明顯。
-
 etiology:
   categories:
     - name: 病原體
@@ -28,7 +29,6 @@ etiology:
         - 糞口途徑
         - 受汙染的食物或水
         - 動物間直接接觸
-
 clinicalSigns:
   early:
     - 水樣至黏液性腹瀉
@@ -40,14 +40,12 @@ clinicalSigns:
     - 發燒
     - 脫水（幼犬）
     - 多數為自限性（5-15 天）
-
 diagnosis:
   primaryTests:
     - name: 糞便培養
       notes: 特殊培養條件（微需氧、42°C）。結合 PCR 可提高偵測率。注意：健康犬帶菌率高，陽性培養不一定代表致病原因。
     - name: 糞便 PCR
       notes: 較培養更敏感且快速。可同時偵測毒力基因。
-
 treatment:
   principles:
     - 多數為自限性，不一定需要抗生素
@@ -55,40 +53,88 @@ treatment:
     - 人畜共通傳染病衛教
   general:
     - 輕度：支持性治療（輸液維持水分）
-    - "嚴重者：Erythromycin 10-15 mg/kg PO q8h × 5-7 天"
-    - "替代：Azithromycin 5-10 mg/kg PO q24h × 5 天"
+    - 嚴重者：Erythromycin 10-15 mg/kg PO q8h × 5-7 天
+    - 替代：Azithromycin 5-10 mg/kg PO q24h × 5 天
     - 避免 Fluoroquinolones（抗藥性問題）
     - 衛生管理與公共衛生衛教
-
 prognosis: 預後極好。多數犬貓在 5-15 天內自行恢復。抗生素可縮短排菌期但不一定影響臨床恢復時間。免疫抑制動物可能發展為慢性感染。
-
-
 guidelineRefs:
   - sourceOrg: Heliyon
-    title: "Epidemiology and antimicrobial resistance of Campylobacter spp. in animals in Sub-Saharan Africa: A systematic review."
+    title: >-
+      Epidemiology and antimicrobial resistance of Campylobacter spp. in animals in Sub-Saharan Africa: A systematic
+      review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7063338/
     type: review
-    pmid: "32181402"
+    pmid: '32181402'
   - sourceOrg: International journal of food microbiology
-    title: "Prevalence of Campylobacter and Salmonella in African food animals and meat: A systematic review and meta-analysis."
+    title: >-
+      Prevalence of Campylobacter and Salmonella in African food animals and meat: A systematic review and
+      meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6985902/
     type: review
-    pmid: "31710971"
+    pmid: '31710971'
   - sourceOrg: BMC infectious diseases
-    title: High prevalence of antibiotic resistant Campylobacter among patients attending clinical settings in Kigali, Rwanda.
+    title: >-
+      High prevalence of antibiotic resistant Campylobacter among patients attending clinical settings in Kigali,
+      Rwanda.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11829400/
     type: research
-    pmid: "39955487"
+    pmid: '39955487'
   - sourceOrg: Scientific reports
-    title: Prevalence and molecular characterization of multidrug resistant Campylobacter isolated from animals and humans as a one health approach.
+    title: >-
+      Prevalence and molecular characterization of multidrug resistant Campylobacter isolated from animals and humans as
+      a one health approach.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12361403/
     type: research
-    pmid: "40825956"
-  - sourceOrg: "Brazilian journal of microbiology : [publication of the Brazilian Society for Microbiology]"
-    title: Gene profile of virulence, antimicrobial resistance and action of enterocins in Campylobacter species isolated from broiler carcasses.
+    pmid: '40825956'
+  - sourceOrg: 'Brazilian journal of microbiology : [publication of the Brazilian Society for Microbiology]'
+    title: >-
+      Gene profile of virulence, antimicrobial resistance and action of enterocins in Campylobacter species isolated
+      from broiler carcasses.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11885213/
     type: research
-    pmid: "39541060"
+    pmid: '39541060'
 pubmedQueries:
   - query: '"campylobacteriosis" AND (veterinary OR canine OR feline) AND ("treatment" OR "zoonotic")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 曲狀桿菌感染 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 收集病史，評估腹瀉特徵和暴露風險
+      findings:
+        - 水樣至黏液性腹瀉
+        - 可能含血
+        - 幼齡動物或免疫抑制動物多見
+        - 犬舍或收容所環境
+    - step: 2
+      action: 糞便檢查
+      details: 進行糞便直接塗片和培養
+      findings:
+        - 暗視野或相差顯微鏡下見典型螺旋形運動
+        - 糞便PCR檢測Campylobacter spp.
+        - 糞便培養需微好氧條件
+        - 42°C培養有助於C. jejuni分離
+    - step: 3
+      action: 種別鑑定
+      details: 進行分子生物學鑑定確認菌種
+      findings:
+        - PCR鑑定C. jejuni或C. coli
+        - 抗生素藥敏試驗
+        - 排除同時存在的其他腸道病原
+        - 評估人畜共通傳播風險
+clinicalPearls:
+  - 幼犬腹瀉不要只想到Parvo——Campylobacter在收容所幼犬中非常常見
+  - 糞便培養需特殊條件（微需氧、42°C），一般培養可能漏診
+  - 治療前應考慮是否真正致病還是僅為帶原——成年免疫正常犬帶原不一定需要治療
+  - 重要人畜共通傳染病——幼兒和免疫低下飼主需特別注意衛生
+monitoringItems:
+  - 腹瀉症狀和脫水狀態
+  - 幼年動物體重追蹤
+  - 糞便品質改善評估
+  - 家中成員健康狀況（人畜共通風險）
+associatedSymptoms:
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

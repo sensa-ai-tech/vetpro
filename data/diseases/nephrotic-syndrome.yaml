@@ -3,11 +3,11 @@ nameEn: Nephrotic Syndrome
 nameZh: 腎病症候群
 bodySystem: urinary
 description: 腎病症候群為腎絲球嚴重蛋白質流失的臨床表現，定義為同時存在蛋白尿（UPC >3.5）、低白蛋白血症、水腫或腹水、與高脂血症的四聯症。犬隻常見基礎原因包括免疫複合物腎絲球腎炎、類澱粉沉積症與腎絲球硬化。血栓栓塞為重要致命併發症。
-
 aliases:
-  - { alias: 腎病徵候群, language: zh }
-  - { alias: Nephrosis, language: en }
-
+  - alias: 腎病徵候群
+    language: zh
+  - alias: Nephrosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻腎病症候群少見。可見於腎臟類澱粉沉積症或 FIP 相關腎絲球腎炎。
-
 etiology:
   categories:
     - name: 腎絲球疾病
@@ -30,7 +29,6 @@ etiology:
         - 腫瘤（副腫瘤性腎絲球腎炎）
         - 自體免疫疾病（SLE）
         - 特發性
-
 clinicalSigns:
   early:
     - 蛋白尿（尿液泡沫增多）
@@ -43,7 +41,6 @@ clinicalSigns:
     - 血栓栓塞（肺栓塞、主動脈血栓）
     - 進行性腎衰竭
     - 高脂血症
-
 diagnosis:
   primaryTests:
     - name: 尿液分析與 UPC
@@ -52,7 +49,6 @@ diagnosis:
       notes: 低白蛋白（<2.0 g/dL）。高膽固醇與三酸甘油酯。抗凝血酶 III（AT III）降低（血栓風險指標）。BUN/Creatinine 可能正常或升高。
     - name: 腎臟活檢
       notes: 確認腎絲球病變類型。光學顯微鏡、免疫螢光、電子顯微鏡為完整評估。
-
 treatment:
   principles:
     - 治療基礎原因
@@ -60,43 +56,106 @@ treatment:
     - 預防血栓栓塞
     - 控制水腫
   general:
-    - "ACE 抑制劑：Enalapril 0.5 mg/kg PO q12h 或 Benazepril + Telmisartan（ARB）"
-    - "免疫抑制（免疫介導性腎絲球腎炎）：Mycophenolate 10 mg/kg PO q12h"
-    - "血栓預防：Clopidogrel 1-2 mg/kg PO q24h ± Aspirin 0.5 mg/kg PO q24h"
+    - ACE 抑制劑：Enalapril 0.5 mg/kg PO q12h 或 Benazepril + Telmisartan（ARB）
+    - 免疫抑制（免疫介導性腎絲球腎炎）：Mycophenolate 10 mg/kg PO q12h
+    - 血栓預防：Clopidogrel 1-2 mg/kg PO q24h ± Aspirin 0.5 mg/kg PO q24h
     - 低鈉飲食
     - 利尿劑（嚴重水腫時謹慎使用 Furosemide）
     - 治療基礎感染性疾病
     - 腎臟處方飲食
-
 prognosis: 預後取決於基礎原因與蛋白尿嚴重度。免疫介導性腎絲球腎炎若對免疫抑制治療反應良好預後較好。血栓栓塞為重要致死原因。類澱粉沉積症預後不佳。UPC >12 者預後極差。早期積極管理蛋白尿與血栓預防可改善結果。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in immunology
-    title: "Animal models of membranous nephropathy: more choices and higher similarity."
+    title: 'Animal models of membranous nephropathy: more choices and higher similarity.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11532550/
     type: review
-    pmid: "39497816"
+    pmid: '39497816'
   - sourceOrg: F1000Research
     title: Immunology of membranous nephropathy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6537914/
     type: review
-    pmid: "31168358"
+    pmid: '31168358'
   - sourceOrg: Clinical, cosmetic and investigational dermatology
-    title: "Isotretinoin and the Kidney: Opportunities and Threats."
+    title: 'Isotretinoin and the Kidney: Opportunities and Threats.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7395703/
     type: review
-    pmid: "32801824"
+    pmid: '32801824'
   - sourceOrg: PloS one
     title: Icariin suppresses nephrotic syndrome by inhibiting pyroptosis and epithelial-to-mesenchymal transition.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11244770/
     type: research
-    pmid: "38995910"
+    pmid: '38995910'
   - sourceOrg: Drug design, development and therapy
-    title: "Sanqi Qushi Granule Alleviates Proteinuria and Podocyte Damage in NS Rat: A Network Pharmacology Study and in vivo Experimental Validation."
+    title: >-
+      Sanqi Qushi Granule Alleviates Proteinuria and Podocyte Damage in NS Rat: A Network Pharmacology Study and in vivo
+      Experimental Validation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10289100/
     type: research
-    pmid: "37360573"
+    pmid: '37360573'
 pubmedQueries:
   - query: '"nephrotic syndrome" AND (veterinary OR canine OR feline) AND ("treatment" OR "thromboembolism" OR "proteinuria")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 腎病症候群 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估水腫與蛋白尿相關症狀
+      findings:
+        - 皮下水腫四肢/腹側
+        - 腹水
+        - 體重增加
+        - 泡沫尿
+    - step: 2
+      action: 實驗室檢查
+      details: 確認腎病症候群四特徵
+      findings:
+        - 重度蛋白尿UPC大於3.5
+        - 低白蛋白血症
+        - 高膽固醇血症
+        - 水腫/腹水
+    - step: 3
+      action: 腎臟評估
+      details: 超音波與腎功能評估
+      findings:
+        - 腎臟超音波型態
+        - BUN/Creatinine評估
+        - 血壓測量高血壓常見
+        - 尿蛋白電泳
+    - step: 4
+      action: 病因與併發症
+      details: 確認腎小球疾病病因並監測併發症
+      findings:
+        - 感染性疾病篩查
+        - 腎臟活檢確認腎小球病變類型
+        - 血栓風險評估抗凝血酶III下降
+        - 免疫複合物沉積性vs膜性腎病
+clinicalPearls:
+  - 血栓栓塞是腎病症候群最嚴重的併發症，AT-III<75%時風險顯著增加
+  - UPC>3.5高度提示腎小球疾病
+  - 不要過度限制蛋白質攝入，會加速肌肉流失
+  - 腎臟活檢是確定腎小球病變類型的唯一方法
+monitoringItems:
+  - UPC（每2-4週）
+  - 血清白蛋白
+  - BUN/Creatinine
+  - 血壓
+  - AT-III（若可測定）
+  - 水腫程度
+  - 體重
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: common
+ddxSource: book

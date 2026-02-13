@@ -3,12 +3,13 @@ nameEn: Doxorubicin Cardiotoxicity
 nameZh: 多柔比星心臟毒性
 bodySystem: toxicology
 description: 多柔比星(小紅莓)為蒽環類化療藥,可引起劑量累積性心肌病變,導致擴張性心肌病及心衰竭。
-
 aliases:
-  - { alias: 小紅莓心臟毒性, language: zh }
-  - { alias: Adriamycin Cardiotoxicity, language: en }
-  - { alias: Anthracycline Cardiomyopathy, language: en }
-
+  - alias: 小紅莓心臟毒性
+    language: zh
+  - alias: Adriamycin Cardiotoxicity
+    language: en
+  - alias: Anthracycline Cardiomyopathy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少使用多柔比星,心臟毒性風險較低
-
 etiology:
   categories:
     - name: 累積劑量
@@ -29,7 +29,6 @@ etiology:
       examples:
         - 既有心臟病
         - 小型犬品種(如杜賓)
-
 clinicalSigns:
   early:
     - 運動不耐、疲倦
@@ -40,38 +39,34 @@ clinicalSigns:
     - 肺水腫、胸水
     - 昏厥、心律不整
     - 心因性休克
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波
-      notes: "左心室收縮分率(FS)<25%或射血分率(EF)<40%提示心肌病變"
+      notes: 左心室收縮分率(FS)<25%或射血分率(EF)<40%提示心肌病變
     - name: 心電圖
-      notes: "心律不整、QRS波低電壓"
+      notes: 心律不整、QRS波低電壓
     - name: 胸部X光
-      notes: "心臟擴大、肺水腫、胸水"
+      notes: 心臟擴大、肺水腫、胸水
     - name: 心臟生物標記
-      notes: "Troponin I升高(>0.2 ng/mL)提示心肌損傷"
+      notes: Troponin I升高(>0.2 ng/mL)提示心肌損傷
   differentialDiagnoses:
     - 擴張性心肌病(特發性)
     - 瓣膜性心臟病
     - 肺高壓
     - 腫瘤相關心包積液
-
 treatment:
   medical:
     - 立即停止多柔比星化療
     - 心衰竭治療:
-      - Furosemide 2-4 mg/kg IV/PO q8-12h(肺水腫)
-      - Pimobendan 0.25-0.3 mg/kg PO q12h(改善收縮力)
-      - Enalapril 0.5 mg/kg PO q12-24h(後負荷降低)
+        - Furosemide 2-4 mg/kg IV/PO q8-12h(肺水腫)
+        - Pimobendan 0.25-0.3 mg/kg PO q12h(改善收縮力)
+        - Enalapril 0.5 mg/kg PO q12-24h(後負荷降低)
     - 心律不整: 依類型選用抗心律不整藥
     - 氧氣治療(若呼吸困難)
     - 限制鈉攝取
     - 定期監測心臟功能
-
 prognosis:
-  general: "早期心肌病變停藥後可能部分恢復,但多為不可逆。充血性心衰竭預後不良,中位存活期數月。預防勝於治療。"
-
+  general: 早期心肌病變停藥後可能部分恢復,但多為不可逆。充血性心衰竭預後不良,中位存活期數月。預防勝於治療。
 prevention:
   - 化療前心臟超音波基線評估
   - 嚴格控制累積劑量(<180 mg/m²)
@@ -79,31 +74,74 @@ prevention:
   - 考慮使用右雷佐生(Dexrazoxane)心臟保護劑
   - 既有心臟病動物避免使用
   - 定期監測心臟功能(每2-3次化療後)
-
-
 guidelineRefs:
   - sourceOrg: Journal of nanobiotechnology
-    title: Momordica charantia L.-derived exosome-like nanovesicles stabilize p62 expression to ameliorate doxorubicin cardiotoxicity.
+    title: >-
+      Momordica charantia L.-derived exosome-like nanovesicles stabilize p62 expression to ameliorate doxorubicin
+      cardiotoxicity.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11297753/
     type: research
-    pmid: "39095755"
+    pmid: '39095755'
   - sourceOrg: Acta Cardiologica Sinica
     title: Hyperbaric Oxygen Preconditioning Provides Preliminary Protection Against Doxorubicin Cardiotoxicity.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5364156/
     type: research
-    pmid: "28344418"
+    pmid: '28344418'
   - sourceOrg: Bioengineered
-    title: Upregulation of serum and glucocorticoid-regulated kinase 1 (SGK1) ameliorates doxorubicin-induced cardiotoxic injury, apoptosis, inflammation and oxidative stress by suppressing glucose regulated protein 78 (GRP78)-mediated endoplasmic reticulum stress.
+    title: >-
+      Upregulation of serum and glucocorticoid-regulated kinase 1 (SGK1) ameliorates doxorubicin-induced cardiotoxic
+      injury, apoptosis, inflammation and oxidative stress by suppressing glucose regulated protein 78 (GRP78)-mediated
+      endoplasmic reticulum stress.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8805919/
     type: research
-    pmid: "34898378"
+    pmid: '34898378'
   - sourceOrg: Experimental and therapeutic medicine
-    title: Vitexin attenuates acute doxorubicin cardiotoxicity in rats via the suppression of oxidative stress, inflammation and apoptosis and the activation of FOXO3a.
+    title: >-
+      Vitexin attenuates acute doxorubicin cardiotoxicity in rats via the suppression of oxidative stress, inflammation
+      and apoptosis and the activation of FOXO3a.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4997971/
     type: research
-    pmid: "27588105"
+    pmid: '27588105'
   - sourceOrg: International journal of molecular sciences
     title: 18F-FDG PET/MRI Imaging in a Preclinical Rat Model of Cardiorenal Syndrome-An Exploratory Study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9738874/
     type: research
-    pmid: "36499736"
+    pmid: '36499736'
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: syncope
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: coughing
+    frequency: common
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 多柔比星心臟毒性 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波
+          notes: 左心室收縮分率(FS)<25%或射血分率(EF)<40%提示心肌病變
+        - name: 心電圖
+          notes: 心律不整、QRS波低電壓
+        - name: 胸部X光
+          notes: 心臟擴大、肺水腫、胸水
+ddxSource: auto-generated

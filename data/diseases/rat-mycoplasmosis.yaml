@@ -3,22 +3,26 @@ nameEn: Rat Mycoplasmosis
 nameZh: 大鼠黴漿菌呼吸道疾病
 bodySystem: respiratory
 description: 大鼠感染 Mycoplasma pulmonis 引起的慢性進行性呼吸道疾病，為寵物大鼠最常見且最重要的疾病，幾乎所有寵物大鼠均為帶原者，臨床疾病嚴重程度因個體免疫力與環境因素而異。
-
 aliases:
-  - { alias: 大鼠慢性呼吸道疾病, language: zh }
-  - { alias: 大鼠黴漿菌肺炎, language: zh }
-  - { alias: 大鼠CRD, language: zh }
-  - { alias: Murine respiratory mycoplasmosis, language: en }
-  - { alias: Rat chronic respiratory disease, language: en }
-  - { alias: Mycoplasma pulmonis infection, language: en }
-  - { alias: Rat CRD, language: en }
-
+  - alias: 大鼠慢性呼吸道疾病
+    language: zh
+  - alias: 大鼠黴漿菌肺炎
+    language: zh
+  - alias: 大鼠CRD
+    language: zh
+  - alias: Murine respiratory mycoplasmosis
+    language: en
+  - alias: Rat chronic respiratory disease
+    language: en
+  - alias: Mycoplasma pulmonis infection
+    language: en
+  - alias: Rat CRD
+    language: en
 species:
   - speciesCommon: rat
     speciesScientific: Rattus norvegicus
     prevalence: very common
     notes: 幾乎所有寵物大鼠 (>90%) 帶原 M. pulmonis。生後早期從母鼠經呼吸道感染。臨床疾病通常在 >6 月齡後逐漸顯現。為寵物大鼠最重要的健康問題，也是最常見的死因相關疾病。環境因素 (氨氣、灰塵) 顯著影響疾病嚴重度。
-
 etiology:
   categories:
     - name: 感染性
@@ -41,7 +45,6 @@ etiology:
         - 免疫抑制
         - 遺傳易感性 (品系差異)
         - 維生素 A 或 E 不足
-
 clinicalSigns:
   early:
     - 偶爾打噴嚏
@@ -64,24 +67,22 @@ clinicalSigns:
     - 發紺
     - 肺膿瘍
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 臨床表徵
-      notes: "寵物大鼠 + 慢性漸進性呼吸道症狀 + 紫質淚即高度懷疑。病史中環境因素評估重要"
+      notes: 寵物大鼠 + 慢性漸進性呼吸道症狀 + 紫質淚即高度懷疑。病史中環境因素評估重要
     - name: 胸腔聽診
-      notes: "濕囉音、爆裂音。呼吸音增強。聽診可評估肺實質病變程度"
+      notes: 濕囉音、爆裂音。呼吸音增強。聽診可評估肺實質病變程度
   imaging:
     - name: 胸腔 X 光
-      notes: "間質至支氣管肺泡浸潤。肺膿瘍。支氣管擴張 (慢性)。胸腔積液 (嚴重)"
+      notes: 間質至支氣管肺泡浸潤。肺膿瘍。支氣管擴張 (慢性)。胸腔積液 (嚴重)
     - name: 頭部 X 光/CT
-      notes: "鼓室泡 (tympanic bulla) 充實 (中耳炎)。頭側傾病例需評估"
+      notes: 鼓室泡 (tympanic bulla) 充實 (中耳炎)。頭側傾病例需評估
   additional:
     - M. pulmonis PCR (鼻拭子或肺組織)
     - 血清學 (ELISA，但帶原率高陽性不等於臨床疾病)
     - CBC (嗜中性球增多)
     - 組織病理學 (屍檢：支氣管周圍淋巴細胞浸潤、黏膜增生)
-
 treatment:
   principles:
     - M. pulmonis 無法根除 (終生帶原)
@@ -91,22 +92,22 @@ treatment:
     - 終生管理
   medications:
     - name: Doxycycline
-      dose: "5-10 mg/kg PO BID"
+      dose: 5-10 mg/kg PO BID
       notes: 抗黴漿菌首選。口服液較易給藥。可長期低劑量使用 (2.5-5 mg/kg BID) 維持。急性發作時全劑量
     - name: Enrofloxacin
-      dose: "10-20 mg/kg PO/SC BID"
+      dose: 10-20 mg/kg PO/SC BID
       notes: 廣效抗菌。可與 doxycycline 合用加強效果 (combo therapy)。長期使用注意軟骨毒性
     - name: Azithromycin
-      dose: "10-30 mg/kg PO SID"
+      dose: 10-30 mg/kg PO SID
       notes: 替代 doxycycline。每週 3 天給藥 (pulse therapy) 可作長期管理
     - name: Meloxicam
-      dose: "1-2 mg/kg PO/SC SID"
+      dose: 1-2 mg/kg PO/SC SID
       notes: 呼吸道發炎緩解。大鼠對 NSAID 耐受良好。改善舒適度
     - name: Aminophylline
-      dose: "10 mg/kg PO BID"
+      dose: 10 mg/kg PO BID
       notes: 支氣管擴張劑。呼吸困難時輔助。改善氣流
     - name: 霧化治療 (Nebulization)
-      dose: "0.9% NaCl ± Gentamicin 霧化 15-20 分鐘 BID"
+      dose: 0.9% NaCl ± Gentamicin 霧化 15-20 分鐘 BID
       notes: 濕化呼吸道分泌物。Gentamicin 局部抗菌 (全身吸收少)。可加入支氣管擴張劑
   general:
     - 環境改善為治療基石 (常比抗生素重要)
@@ -119,43 +120,93 @@ treatment:
     - 維生素 E 補充 (抗氧化)
     - 急性發作期合併抗生素治療 2-4 週
     - 長期低劑量抗生素維持 (視個體需要)
-
-prognosis: M. pulmonis 感染無法根治，為終生帶原。良好的環境管理 + 適當抗生素可控制臨床症狀延長壽命。多數寵物大鼠最終因進行性呼吸道疾病影響生活品質。中耳炎/內耳炎導致前庭症狀預後較差。嚴重肺膿瘍或慢性支氣管擴張預後差。平均而言寵物大鼠壽命 2-3 年，黴漿菌為最常見的老年致死相關因素。
-
+prognosis: >-
+  M. pulmonis 感染無法根治，為終生帶原。良好的環境管理 +
+  適當抗生素可控制臨床症狀延長壽命。多數寵物大鼠最終因進行性呼吸道疾病影響生活品質。中耳炎/內耳炎導致前庭症狀預後較差。嚴重肺膿瘍或慢性支氣管擴張預後差。平均而言寵物大鼠壽命 2-3 年，黴漿菌為最常見的老年致死相關因素。
 guidelineRefs:
   - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
     title: Respiratory Diseases of Small Mammals
     url: https://pubmed.ncbi.nlm.nih.gov/33246539/
     type: review
-    pmid: "33246539"
+    pmid: '33246539'
   - sourceOrg: Lab Animal
-    title: "Mycoplasma pulmonis infection in rats: pathogenesis and treatment"
+    title: 'Mycoplasma pulmonis infection in rats: pathogenesis and treatment'
     url: https://pubmed.ncbi.nlm.nih.gov/18431399/
     type: review
-    pmid: "18431399"
+    pmid: '18431399'
   - sourceOrg: BMC veterinary research
-    title: "The detection of Mycoplasma sturni and Mycoplasma moatsii from the choana of a barn swallow (Hirundo rustica): a case report."
+    title: >-
+      The detection of Mycoplasma sturni and Mycoplasma moatsii from the choana of a barn swallow (Hirundo rustica): a
+      case report.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9898965/
     type: case-report
-    pmid: "36739410"
+    pmid: '36739410'
     relevance: supporting
   - sourceOrg: Transboundary and emerging diseases
-    title: "Screen the unforeseen: Microbiome-profiling for detection of zoonotic pathogens in wild rats."
+    title: 'Screen the unforeseen: Microbiome-profiling for detection of zoonotic pathogens in wild rats.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10099244/
     type: research
-    pmid: "36404584"
+    pmid: '36404584'
     relevance: supporting
   - sourceOrg: Antimicrobial agents and chemotherapy
-    title: "Tissue Distribution of [14C]-Lefamulin into the Urogenital Tract in Rats."
+    title: Tissue Distribution of [14C]-Lefamulin into the Urogenital Tract in Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9380576/
     type: research
-    pmid: "35862748"
+    pmid: '35862748'
     relevance: supporting
 pubmedQueries:
-  - query: '"rat" AND ("Mycoplasma pulmonis" OR "mycoplasmosis" OR "chronic respiratory disease") AND ("treatment" OR "management")'
+  - query: >-
+      "rat" AND ("Mycoplasma pulmonis" OR "mycoplasmosis" OR "chronic respiratory disease") AND ("treatment" OR
+      "management")
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "INFECTION"
+  chapter: DIG
+  sectionTitle: INFECTION
   pdfPage: 525
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: sneezing
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: stertor-stridor
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 大鼠黴漿菌呼吸道疾病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - dyspnoea 相關症狀
+        - sneezing 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床表徵
+          notes: 寵物大鼠 + 慢性漸進性呼吸道症狀 + 紫質淚即高度懷疑。病史中環境因素評估重要
+        - name: 胸腔聽診
+          notes: 濕囉音、爆裂音。呼吸音增強。聽診可評估肺實質病變程度
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - M. pulmonis PCR (鼻拭子或肺組織)
+        - 血清學 (ELISA，但帶原率高陽性不等於臨床疾病)
+        - CBC (嗜中性球增多)
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - M. pulmonis 無法根除 (終生帶原)
+        - 治療目標為控制臨床症狀與減緩惡化
+        - 抗生素控制急性發作
+ddxSource: auto-generated

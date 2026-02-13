@@ -3,11 +3,11 @@ nameEn: Chronic Hypertrophic Pyloric Gastropathy
 nameZh: 慢性肥厚性幽門胃病
 bodySystem: gastrointestinal
 description: 幽門區胃壁肌層或黏膜肥厚,導致胃排空延遲及嘔吐。常見於小型犬,可能需外科矯正。
-
 aliases:
-  - { alias: 肥厚性幽門狹窄, language: zh }
-  - { alias: Pyloric Hypertrophy, language: en }
-
+  - alias: 肥厚性幽門狹窄
+    language: zh
+  - alias: Pyloric Hypertrophy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 罕見
-
 etiology:
   categories:
     - name: 肌層肥厚
@@ -26,7 +25,6 @@ etiology:
     - name: 黏膜增生
       examples:
         - 慢性胃炎繼發
-
 clinicalSigns:
   early:
     - 間歇性嘔吐 (飯後數小時)
@@ -34,28 +32,52 @@ clinicalSigns:
     - 持續嘔吐
     - 體重減輕
     - 食慾下降
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "幽門區胃壁增厚 (> 5 mm)"
+      notes: 幽門區胃壁增厚 (> 5 mm)
     - name: 內視鏡檢查
-      notes: "幽門狹窄、黏膜增生"
+      notes: 幽門狹窄、黏膜增生
     - name: 鋇劑胃排空時間
-      notes: "延長 (> 12 小時)"
+      notes: 延長 (> 12 小時)
   differentialDiagnoses:
     - 幽門異物
     - 胃腫瘤
     - 慢性胃炎
-
 treatment:
   medical:
     - 飲食管理 (低脂、易消化、小量多餐)
     - 促胃腸蠕動藥 (Metoclopramide 0.2-0.5 mg/kg PO q8h)
     - 幽門成形術 (pyloroplasty, 嚴重病例)
-
 prognosis:
-  general: "預後良好;手術後多數改善;藥物及飲食管理可能控制輕度病例"
-
+  general: 預後良好;手術後多數改善;藥物及飲食管理可能控制輕度病例
 prevention:
   - 避免繁殖受影響犬隻
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+diagnosticAlgorithm:
+  title: 慢性肥厚性幽門胃病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 幽門區胃壁增厚 (> 5 mm)
+        - name: 內視鏡檢查
+          notes: 幽門狹窄、黏膜增生
+        - name: 鋇劑胃排空時間
+          notes: 延長 (> 12 小時)
+ddxSource: auto-generated

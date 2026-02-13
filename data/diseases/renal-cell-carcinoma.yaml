@@ -3,12 +3,13 @@ nameEn: Renal Cell Carcinoma
 nameZh: 腎細胞癌
 bodySystem: oncology
 description: 腎細胞癌為起源於腎小管上皮細胞的惡性腫瘤，為犬隻最常見的原發性腎臟上皮性腫瘤。通常為單側性。German Shepherd 可能好發。腫瘤具局部侵犯性與遠處轉移傾向（肺臟最常見）。手術切除（腎切除術）為主要治療方式。
-
 aliases:
-  - { alias: 腎癌, language: zh }
-  - { alias: Renal Carcinoma, language: en }
-  - { alias: Kidney Cancer, language: en }
-
+  - alias: 腎癌
+    language: zh
+  - alias: Renal Carcinoma
+    language: en
+  - alias: Kidney Cancer
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻腎臟上皮性腫瘤少見。淋巴瘤為貓隻腎臟最常見腫瘤。
-
 etiology:
   categories:
     - name: 腫瘤特性
@@ -29,7 +29,6 @@ etiology:
         - German Shepherd 可能好發
         - 中老年犬
         - 病因不明
-
 clinicalSigns:
   early:
     - 血尿（最常見初始症狀）
@@ -42,14 +41,12 @@ clinicalSigns:
     - 食慾廢絕
     - 副腫瘤症候群（紅血球增多症、高鈣血症）
     - 骨轉移伴跛行
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
       notes: 腎臟實質性腫塊。回音性不均。可能有腎盂積水。評估對側腎臟正常。評估腹腔淋巴結。
     - name: CT 掃描
       notes: 腫瘤大小與侵犯範圍評估。腎靜脈與後腔靜脈腫瘤血栓評估。分期（肺臟轉移→胸腔 CT）。術前規劃。
-
 treatment:
   principles:
     - 腎切除術為主要治療
@@ -60,44 +57,80 @@ treatment:
     - 術前 CT 分期（排除轉移）
     - 腎靜脈腫瘤血栓需同時移除
     - 化療效果有限（Doxorubicin、Carboplatin 報告不多）
-    - "Toceranib（Palladia）1-3 mg/kg PO q48h（TKI，部分報告有效）"
+    - Toceranib（Palladia）1-3 mg/kg PO q48h（TKI，部分報告有效）
     - 支持性治療
     - 術後監測轉移（定期胸腔 X 光）
-
 prognosis: 腎切除術後若未轉移中位存活時間約 16-24 個月。早期手術切除預後較好。診斷時已有轉移者預後差（中位存活約 3-6 個月）。約 50% 病例在診斷時或術後發現轉移（肺臟最常見）。副腫瘤症候群在腫瘤切除後通常消退。
-
-
 guidelineRefs:
   - sourceOrg: Toxics
     title: The Relationship between Typical Environmental Endocrine Disruptors and Kidney Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9863798/
     type: review
-    pmid: "36668758"
+    pmid: '36668758'
     relevance: primary
   - sourceOrg: Kidney diseases (Basel, Switzerland)
-    title: "LRG1 Contributes to the Pathogenesis of Multiple Kidney Diseases: A Comprehensive Review."
+    title: 'LRG1 Contributes to the Pathogenesis of Multiple Kidney Diseases: A Comprehensive Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11126829/
     type: review
-    pmid: "38799248"
+    pmid: '38799248'
     relevance: primary
   - sourceOrg: Cancer cell international
-    title: "Cancer immunotherapy with immune checkpoint inhibitors (ICIs): potential, mechanisms of resistance, and strategies for reinvigorating T cell responsiveness when resistance is acquired."
+    title: >-
+      Cancer immunotherapy with immune checkpoint inhibitors (ICIs): potential, mechanisms of resistance, and strategies
+      for reinvigorating T cell responsiveness when resistance is acquired.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10088229/
     type: review
-    pmid: "37038154"
+    pmid: '37038154'
     relevance: primary
   - sourceOrg: BMC nephrology
     title: The functions of long non-coding RNA (lncRNA)-MALAT-1 in the pathogenesis of renal cell carcinoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10731893/
     type: review
-    pmid: "38124072"
+    pmid: '38124072'
     relevance: primary
   - sourceOrg: Frontiers in pharmacology
-    title: "Targeting Strategies for Renal Cell Carcinoma: From Renal Cancer Cells to Renal Cancer Stem Cells."
+    title: 'Targeting Strategies for Renal Cell Carcinoma: From Renal Cancer Cells to Renal Cancer Stem Cells.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5103413/
     type: review
-    pmid: "27891093"
+    pmid: '27891093'
     relevance: primary
 pubmedQueries:
   - query: '"renal cell carcinoma" AND (veterinary OR canine) AND ("nephrectomy" OR "treatment" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: common
+  - symptomId: lameness
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 腎細胞癌 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 腎臟實質性腫塊。回音性不均。可能有腎盂積水。評估對側腎臟正常。評估腹腔淋巴結。
+        - name: CT 掃描
+          notes: 腫瘤大小與侵犯範圍評估。腎靜脈與後腔靜脈腫瘤血栓評估。分期（肺臟轉移→胸腔 CT）。術前規劃。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 腎切除術為主要治療
+        - 確認對側腎功能正常
+        - 化療效果有限
+ddxSource: auto-generated

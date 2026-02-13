@@ -3,11 +3,11 @@ nameEn: Chest Tube Placement
 nameZh: 胸管置放術
 bodySystem: other
 description: 引流胸腔積液(氣胸、膿胸、血胸)的處置。於第7-9肋間置入導管,連接單向活瓣或抽吸系統。
-
 aliases:
-  - { alias: 胸腔引流管, language: zh }
-  - { alias: Thoracostomy Tube, language: en }
-
+  - alias: 胸腔引流管
+    language: zh
+  - alias: Thoracostomy Tube
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,29 +17,25 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓膿胸常需胸管引流
-
 etiology:
   categories:
     - name: 適應症
       examples:
         - 氣胸、血胸、膿胸、乳糜胸
-
 clinicalSigns:
   early:
     - 呼吸困難、紫紺
     - 胸腔鈍音
   progressive:
     - 呼吸衰竭
-
 diagnosis:
   primaryTests:
     - name: 胸部X光
-      notes: "確認胸腔積液或氣胸"
+      notes: 確認胸腔積液或氣胸
     - name: 超音波
-      notes: "定位積液位置"
+      notes: 定位積液位置
   differentialDiagnoses:
     - 心衰竭胸水
-
 treatment:
   medical:
     - 局部麻醉或鎮靜
@@ -48,37 +44,59 @@ treatment:
     - 定期抽吸或持續引流
     - 監測引流量及性質
     - 胸部X光確認管路位置
-
 prognosis:
-  general: "有效引流可快速改善呼吸。膿胸需長期引流及抗生素治療。"
-
+  general: 有效引流可快速改善呼吸。膿胸需長期引流及抗生素治療。
 prevention:
   - 及早處理胸腔疾病
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: A Retrospective Study on Bacteriology, Clinicopathologic and Radiographic Features in 28 Cats Diagnosed with Pyothorax.
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      A Retrospective Study on Bacteriology, Clinicopathologic and Radiographic Features in 28 Cats Diagnosed with
+      Pyothorax.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8406089/
     type: research
-    pmid: "34438744"
+    pmid: '34438744'
   - sourceOrg: International journal of molecular sciences
     title: A Novel Rabbit Model of Retained Hemothorax with Pleural Organization.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10779131/
     type: research
-    pmid: "38203639"
+    pmid: '38203639'
   - sourceOrg: Frontiers in veterinary science
     title: A retrospective study on parapneumonic effusion in 130 dogs with a clinical diagnosis of pneumonia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10060870/
     type: research
-    pmid: "37008361"
+    pmid: '37008361'
   - sourceOrg: Gland surgery
-    title: Uniportal video-assisted thoracoscopic surgery and robot-assisted thoracoscopic surgery are feasible approaches with potential advantages in minimally invasive mediastinal lesions resection.
+    title: >-
+      Uniportal video-assisted thoracoscopic surgery and robot-assisted thoracoscopic surgery are feasible approaches
+      with potential advantages in minimally invasive mediastinal lesions resection.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7882349/
     type: research
-    pmid: "33633967"
+    pmid: '33633967'
   - sourceOrg: Open veterinary journal
-    title: "The use of small-bore wire-guided chest drains for the management of feline pyothorax: A retrospective case series."
+    title: >-
+      The use of small-bore wire-guided chest drains for the management of feline pyothorax: A retrospective case
+      series.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7830175/
     type: research
-    pmid: "33614440"
+    pmid: '33614440'
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 胸管置放術 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸部X光
+          notes: 確認胸腔積液或氣胸
+        - name: 超音波
+          notes: 定位積液位置
+ddxSource: auto-generated

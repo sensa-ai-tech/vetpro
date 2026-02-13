@@ -3,11 +3,11 @@ nameEn: Intra-abdominal Adhesions
 nameZh: 腹腔內沾黏
 bodySystem: gastrointestinal
 description: 腹腔內器官或組織異常纖維化沾黏,常因手術、腹膜炎或創傷引起。可能導致腸阻塞或慢性腹痛。
-
 aliases:
-  - { alias: 腹腔沾連, language: zh }
-  - { alias: Peritoneal Adhesions, language: en }
-
+  - alias: 腹腔沾連
+    language: zh
+  - alias: Peritoneal Adhesions
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 同上
-
 etiology:
   categories:
     - name: 術後
@@ -29,7 +28,6 @@ etiology:
     - name: 創傷性
       examples:
         - 腹部鈍傷
-
 clinicalSigns:
   early:
     - 可能無症狀
@@ -37,60 +35,79 @@ clinicalSigns:
     - 間歇性嘔吐
     - 腹痛
     - 腸阻塞 (嚴重時)
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "腸道位置固定、蠕動減少"
+      notes: 腸道位置固定、蠕動減少
     - name: 探查性開腹
-      notes: "確診及治療"
+      notes: 確診及治療
   differentialDiagnoses:
     - 腸阻塞其他原因
     - 腸道腫瘤
     - 慢性腹膜炎
-
 treatment:
   medical:
     - 外科鬆解沾黏 (adhesiolysis)
     - 保守治療 (飲食管理、止吐藥)
     - 預防再沾黏 (手術技術、抗沾黏材料)
-
 prognosis:
-  general: "預後謹慎;沾黏可能復發;手術鬆解後可能改善但不保證"
-
+  general: 預後謹慎;沾黏可能復發;手術鬆解後可能改善但不保證
 prevention:
   - 謹慎手術技術 (減少組織創傷)
   - 早期診斷及治療腹膜炎
-
-
 guidelineRefs:
   - sourceOrg: Scientific reports
     title: Real-time fluorescence-guided adhesiolysis with indocyanine green in intra-abdominal surgery (with video).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10771464/
     type: review
-    pmid: "38184756"
+    pmid: '38184756'
     relevance: primary
   - sourceOrg: Annals of medicine and surgery (2012)
-    title: "Vitamin E administration as preventive measures for peritoneal/intra-abdominal adhesions: A systematic review and meta-analysis."
+    title: >-
+      Vitamin E administration as preventive measures for peritoneal/intra-abdominal adhesions: A systematic review and
+      meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9422189/
     type: review
-    pmid: "36045847"
+    pmid: '36045847'
     relevance: primary
   - sourceOrg: Acta cirurgica brasileira
     title: Effects of curcumin supplementation on the severity of intra-abdominal adhesions in rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12248264/
     type: research
-    pmid: "40667915"
+    pmid: '40667915'
     relevance: supporting
-  - sourceOrg: "Ulusal travma ve acil cerrahi dergisi = Turkish journal of trauma &amp; emergency surgery : TJTES"
+  - sourceOrg: 'Ulusal travma ve acil cerrahi dergisi = Turkish journal of trauma &amp; emergency surgery : TJTES'
     title: Effect of intra-abdominal boric acid in the experimental adhesion model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11065977/
     type: research
-    pmid: "38634852"
+    pmid: '38634852'
     relevance: supporting
   - sourceOrg: BioMed research international
     title: Prevention of Postsurgical Abdominal Adhesion Using Electrospun TPU Nanofibers in Rat Model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8727164/
     type: research
-    pmid: "34993249"
+    pmid: '34993249'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 腹腔內沾黏 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - vomiting 相關症狀
+        - abdominal-pain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 腸道位置固定、蠕動減少
+        - name: 探查性開腹
+          notes: 確診及治療
+ddxSource: auto-generated

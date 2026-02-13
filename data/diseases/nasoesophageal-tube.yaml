@@ -3,12 +3,13 @@ nameEn: Nasoesophageal Tube
 nameZh: 鼻食道管
 bodySystem: metabolic
 description: 經鼻腔置入至食道末端的餵食管。與鼻胃管類似但終點在食道，適合胃部疾病或需避開胃部的情況。
-
 aliases:
-  - { alias: NE管, language: zh }
-  - { alias: NE Tube, language: en }
-  - { alias: Nasoesophageal Feeding Tube, language: en }
-
+  - alias: NE管
+    language: zh
+  - alias: NE Tube
+    language: en
+  - alias: Nasoesophageal Feeding Tube
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 與鼻胃管置放方式相似
-
 etiology:
   categories:
     - name: 適應症
@@ -32,7 +32,6 @@ etiology:
         - NE管終點在食道遠端
         - NG管終點在胃部
         - NE管較少引起胃食道逆流
-
 clinicalSigns:
   early:
     - 置放後：可能打噴嚏、流鼻水
@@ -40,14 +39,12 @@ clinicalSigns:
   progressive:
     - 成功：恢復自主進食
     - 併發症：食道炎(罕見)、鼻炎
-
 diagnosis:
   primaryTests:
     - name: 置放後確認
-      notes: "X光確認管路終點在食道末端"
+      notes: X光確認管路終點在食道末端
   differentialDiagnoses:
     - 胃部疾病需短期營養支持
-
 treatment:
   medical:
     - 置放步驟
@@ -68,12 +65,31 @@ treatment:
     - 移除時機
     - 胃部疾病改善、恢復自主進食
     - 直接拉出即可
-
 prognosis:
-  general: "NE管為胃部疾病時短期營養支持的適當選擇；通常數天至1週"
-
+  general: NE管為胃部疾病時短期營養支持的適當選擇；通常數天至1週
 prevention:
   - X光確認位置
   - 頭套防止移除
   - 緩慢餵食
   - 定期檢查
+associatedSymptoms:
+  - symptomId: sneezing
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+diagnosticAlgorithm:
+  title: 鼻食道管 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - sneezing 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 置放後確認
+          notes: X光確認管路終點在食道末端
+ddxSource: auto-generated

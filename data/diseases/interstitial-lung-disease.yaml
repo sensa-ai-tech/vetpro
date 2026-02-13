@@ -3,12 +3,13 @@ nameEn: Interstitial Lung Disease
 nameZh: 間質性肺疾病
 bodySystem: respiratory
 description: 肺間質纖維化、發炎或浸潤性病變,導致氣體擴散障礙及限制性呼吸困難。多為慢性進展性疾病。
-
 aliases:
-  - { alias: 肺間質病變, language: zh }
-  - { alias: ILD, language: en }
-  - { alias: Pulmonary Fibrosis, language: en }
-
+  - alias: 肺間質病變
+    language: zh
+  - alias: ILD
+    language: en
+  - alias: Pulmonary Fibrosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 罕見
-
 etiology:
   categories:
     - name: 特發性
@@ -31,7 +31,6 @@ etiology:
       examples:
         - 嗜酸性肺炎
         - 淋巴瘤
-
 clinicalSigns:
   early:
     - 慢性咳嗽
@@ -41,22 +40,20 @@ clinicalSigns:
     - 發紺
     - 體重減輕
     - 杵狀趾 (罕見)
-
 diagnosis:
   primaryTests:
     - name: 胸部 X 光
-      notes: "瀰漫性間質性浸潤 (網狀或結節狀)"
+      notes: 瀰漫性間質性浸潤 (網狀或結節狀)
     - name: 胸部 CT
-      notes: "評估病變分佈及嚴重度"
+      notes: 評估病變分佈及嚴重度
     - name: 支氣管肺泡灌洗
-      notes: "細胞學分析、排除感染"
+      notes: 細胞學分析、排除感染
     - name: 肺組織切片
-      notes: "確診需病理學檢查"
+      notes: 確診需病理學檢查
   differentialDiagnoses:
     - 肺水腫
     - 肺炎
     - 肺腫瘤
-
 treatment:
   medical:
     - Prednisone 1-2 mg/kg PO q12-24h (抗發炎)
@@ -64,43 +61,71 @@ treatment:
     - Pirfenidone (抗纖維化,研究中)
     - 氧氣治療
     - 限制活動
-
 prognosis:
-  general: "預後不良;特發性肺纖維化為進展性疾病,中位存活時間 6-12 個月;過敏性肺炎若能移除過敏原預後較佳"
-
+  general: 預後不良;特發性肺纖維化為進展性疾病,中位存活時間 6-12 個月;過敏性肺炎若能移除過敏原預後較佳
 prevention:
   - 避免吸入刺激物及過敏原
   - 西高地白㹴遺傳篩檢
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
     title: Acute Respiratory Distress Syndrome in Veterinary Medicine-The ARDSVet Definitions.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12491761/
     type: consensus
-    pmid: "40838381"
+    pmid: '40838381'
     relevance: primary
   - sourceOrg: Frontiers in immunology
     title: Immunobiology of pulmonary fibrosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12745471/
     type: review
-    pmid: "41472725"
+    pmid: '41472725'
     relevance: primary
   - sourceOrg: American journal of physiology. Lung cellular and molecular physiology
-    title: "Scar wars: the viral menace."
+    title: 'Scar wars: the viral menace.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12871857/
     type: review
-    pmid: "40983473"
+    pmid: '40983473'
     relevance: primary
   - sourceOrg: Biomolecules
-    title: "Chemerin in Pulmonary Fibrosis: Advances in Mechanistic and Fundamental Research."
+    title: 'Chemerin in Pulmonary Fibrosis: Advances in Mechanistic and Fundamental Research.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12562758/
     type: review
-    pmid: "41154697"
+    pmid: '41154697'
     relevance: primary
   - sourceOrg: BMJ open respiratory research
     title: Scoping review of exposure questionnaires and surveys in interstitial lung disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11097806/
     type: review
-    pmid: "38754906"
+    pmid: '38754906'
     relevance: primary
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 間質性肺疾病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸部 X 光
+          notes: 瀰漫性間質性浸潤 (網狀或結節狀)
+        - name: 胸部 CT
+          notes: 評估病變分佈及嚴重度
+        - name: 支氣管肺泡灌洗
+          notes: 細胞學分析、排除感染
+ddxSource: auto-generated

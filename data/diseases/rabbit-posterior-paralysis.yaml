@@ -3,16 +3,15 @@ nameEn: Rabbit Posterior Paralysis
 nameZh: 兔後肢癱瘓
 bodySystem: neurology
 description: 兔後肢突然或漸進性運動功能喪失，最常見原因為脊椎骨折/脫位（兔脊椎骨脆弱易骨折）及 E. cuniculi 腎腦炎。需快速鑑別原因以評估預後與治療方向。
-
 aliases:
-  - { alias: "兔後肢癱瘓", language: zh }
-  - { alias: "Rabbit Posterior Paralysis", language: en }
-
+  - alias: 兔後肢癱瘓
+    language: zh
+  - alias: Rabbit Posterior Paralysis
+    language: en
 species:
   - speciesCommon: rabbit
     prevalence: uncommon
     notes: 兔可受此疾病影響。
-
 etiology:
   categories:
     - name: 外傷性
@@ -25,7 +24,6 @@ etiology:
         - 脊髓膿瘍
         - 脊髓腫瘤
         - Spondylosis（老年兔）
-
 clinicalSigns:
   early:
     - 後肢無力
@@ -36,14 +34,12 @@ clinicalSigns:
     - 大小便失禁
     - 後肢肌肉萎縮
     - 足底壓瘡
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
       notes: 評估深部痛覺（有無→預後關鍵）。反射評估定位病灶。
     - name: 脊椎 X 光
       notes: 骨折/脫位明確可見。
-
 treatment:
   principles:
     - 脊椎骨折需立即穩定
@@ -57,17 +53,49 @@ treatment:
     - 膀胱護理（手動擠壓排尿）
     - 防止壓瘡（柔軟墊料）
     - 物理治療
-
 prognosis: 保留深部痛覺的脊椎損傷經保守治療部分可恢復行走能力。喪失深部痛覺者預後極差。E. cuniculi 相關後肢無力經治療可能改善。完全癱瘓兔以輪椅輔具可維持生活品質。
-
-
 guidelineRefs:
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: Stabilization of a vertebral fracture by a monolateral external fixator placed percutaneously with fluoroscopy guidance in a rabbit (Oryctolagus cuniculus).
+    title: >-
+      Stabilization of a vertebral fracture by a monolateral external fixator placed percutaneously with fluoroscopy
+      guidance in a rabbit (Oryctolagus cuniculus).
     url: https://pubmed.ncbi.nlm.nih.gov/35333745/
     type: case-report
-    pmid: "35333745"
+    pmid: '35333745'
     relevance: supporting
 pubmedQueries:
   - query: '"Rabbit Posterior Paralysis" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 兔後肢癱瘓 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - paresis-paralysis 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 評估深部痛覺（有無→預後關鍵）。反射評估定位病灶。
+        - name: 脊椎 X 光
+          notes: 骨折/脫位明確可見。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 脊椎骨折需立即穩定
+        - 保留深部痛覺者預後優於喪失者
+        - 支持性照護
+ddxSource: auto-generated

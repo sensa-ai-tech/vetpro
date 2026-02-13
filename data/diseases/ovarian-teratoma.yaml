@@ -3,11 +3,11 @@ nameEn: Ovarian Teratoma
 nameZh: 卵巢畸胎瘤
 bodySystem: reproductive
 description: 生殖細胞腫瘤，含有多種組織類型（外胚層、中胚層、內胚層）。罕見於犬貓。多為良性成熟畸胎瘤，切除後預後佳。
-
 aliases:
-  - { alias: 卵巢皮樣囊腫, language: zh }
-  - { alias: Ovarian Dermoid Cyst, language: en }
-
+  - alias: 卵巢皮樣囊腫
+    language: zh
+  - alias: Ovarian Dermoid Cyst
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓極罕見
-
 etiology:
   categories:
     - name: 生殖細胞異常
@@ -25,7 +24,6 @@ etiology:
         - 原始生殖細胞分化異常
         - 多潛能細胞自主增生
         - 形成多種組織類型
-
 clinicalSigns:
   early:
     - 多數無症狀
@@ -35,62 +33,92 @@ clinicalSigns:
     - 食慾下降、體重減輕
     - 腹水（若破裂）
     - 不孕
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波/CT
-      notes: "卵巢複雜性囊實性腫塊，可能含脂肪、骨骼、毛髮"
+      notes: 卵巢複雜性囊實性腫塊，可能含脂肪、骨骼、毛髮
     - name: X光
-      notes: "可能見骨骼或牙齒組織（高密度）"
+      notes: 可能見骨骼或牙齒組織（高密度）
     - name: 組織病理學
-      notes: "確診：含皮膚、毛囊、骨骼、軟骨、神經組織等"
+      notes: 確診：含皮膚、毛囊、骨骼、軟骨、神經組織等
   differentialDiagnoses:
     - 卵巢囊腫
     - 其他卵巢腫瘤
     - 腹腔腫瘤
-
 treatment:
   medical:
     - 卵巢子宮切除術
     - 完整切除腫瘤及包膜
     - 探查腹腔（轉移評估）
     - 不需化療（良性）
-
 prognosis:
-  general: "成熟畸胎瘤完整切除後預後極佳。未成熟畸胎瘤（極罕見）預後保留。"
-
+  general: 成熟畸胎瘤完整切除後預後極佳。未成熟畸胎瘤（極罕見）預後保留。
 prevention:
   - 早期絕育
-
-
 guidelineRefs:
   - sourceOrg: Open veterinary journal
-    title: "A spontaneous ovarian teratoma in an FVB/n female mouse: Case report and literature review."
+    title: 'A spontaneous ovarian teratoma in an FVB/n female mouse: Case report and literature review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10576586/
     type: review
-    pmid: "37842105"
+    pmid: '37842105'
     relevance: primary
   - sourceOrg: Frontiers in cell and developmental biology
-    title: "Oocyte Spontaneous Activation: An Overlooked Cellular Event That Impairs Female Fertility in Mammals."
+    title: 'Oocyte Spontaneous Activation: An Overlooked Cellular Event That Impairs Female Fertility in Mammals.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7982476/
     type: review
-    pmid: "33763428"
+    pmid: '33763428'
     relevance: primary
   - sourceOrg: Annals of surgical oncology
-    title: "Cytoreductive Surgery and Hyperthermic Intraperitoneal Chemotherapy to Treat Pseudomyxoma Peritonei of Ovarian Origin: A Retrospective French RENAPE Group Study."
+    title: >-
+      Cytoreductive Surgery and Hyperthermic Intraperitoneal Chemotherapy to Treat Pseudomyxoma Peritonei of Ovarian
+      Origin: A Retrospective French RENAPE Group Study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10997733/
     type: research
-    pmid: "38341381"
+    pmid: '38341381'
     relevance: supporting
   - sourceOrg: International journal of molecular sciences
-    title: Identification of Germline FOXE1 and Somatic MAPK Pathway Gene Alterations in Patients with Malignant Struma Ovarii, Cleft Palate and Thyroid Cancer.
+    title: >-
+      Identification of Germline FOXE1 and Somatic MAPK Pathway Gene Alterations in Patients with Malignant Struma
+      Ovarii, Cleft Palate and Thyroid Cancer.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10888156/
     type: research
-    pmid: "38396644"
+    pmid: '38396644'
     relevance: supporting
-  - sourceOrg: "Neurology(R) neuroimmunology &amp; neuroinflammation"
+  - sourceOrg: Neurology(R) neuroimmunology &amp; neuroinflammation
     title: Clinical significance of Kelch-like protein 11 antibodies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7051195/
     type: research
-    pmid: "31953318"
+    pmid: '31953318'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 卵巢畸胎瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - abdominal-distension 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波/CT
+          notes: 卵巢複雜性囊實性腫塊，可能含脂肪、骨骼、毛髮
+        - name: X光
+          notes: 可能見骨骼或牙齒組織（高密度）
+        - name: 組織病理學
+          notes: 確診：含皮膚、毛囊、骨骼、軟骨、神經組織等
+ddxSource: auto-generated

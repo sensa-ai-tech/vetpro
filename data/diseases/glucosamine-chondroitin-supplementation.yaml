@@ -3,12 +3,13 @@ nameEn: Glucosamine Chondroitin Supplementation
 nameZh: 葡萄糖胺軟骨素補充
 bodySystem: metabolic
 description: 葡萄糖胺及軟骨素用於骨關節炎的營養補充治療。可減輕疼痛、改善關節功能、延緩軟骨退化，安全性高。
-
 aliases:
-  - { alias: 關節保健品, language: zh }
-  - { alias: Joint Supplement, language: en }
-  - { alias: Chondroprotective Agent, language: en }
-
+  - alias: 關節保健品
+    language: zh
+  - alias: Joint Supplement
+    language: en
+  - alias: Chondroprotective Agent
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓骨關節炎常被低估
-
 etiology:
   categories:
     - name: 成分作用
@@ -40,7 +40,6 @@ etiology:
         - 抗發炎作用
         - 刺激軟骨細胞
         - 抑制軟骨分解酶
-
 clinicalSigns:
   early:
     - 使用後：跛行減輕、活動力改善(需4-8週)
@@ -48,18 +47,16 @@ clinicalSigns:
   progressive:
     - 長期使用：關節功能維持、延緩退化
     - 副作用極少
-
 diagnosis:
   primaryTests:
     - name: 關節X光
-      notes: "評估骨關節炎嚴重度"
+      notes: 評估骨關節炎嚴重度
     - name: 臨床症狀評分
-      notes: "跛行、活動力、疼痛評估"
+      notes: 跛行、活動力、疼痛評估
   differentialDiagnoses:
     - 骨關節炎
     - 髖關節發育不良
     - 其他關節疾病
-
 treatment:
   medical:
     - 葡萄糖胺劑量
@@ -84,35 +81,53 @@ treatment:
     - NSAIDs止痛(必要時)
     - Omega-3脂肪酸
     - 物理治療
-
 prognosis:
-  general: "關節保健品可輕中度改善骨關節炎症狀，安全性高可長期使用；但無法取代NSAIDs"
-
+  general: 關節保健品可輕中度改善骨關節炎症狀，安全性高可長期使用；但無法取代NSAIDs
 prevention:
   - 早期使用(關節炎早期)
   - 長期持續使用
   - 配合體重控制及運動
   - 定期關節評估
-
-
 guidelineRefs:
   - sourceOrg: Poultry science
     title: Effect of glycosaminoglycans on the structure and composition of articular cartilage and bone of broilers.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10393804/
     type: research
-    pmid: "37499613"
+    pmid: '37499613'
   - sourceOrg: Poultry science
     title: Dietary supplementation with glycosaminoglycans reduces locomotor problems in broiler chickens.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7705027/
     type: research
-    pmid: "33248613"
+    pmid: '33248613'
   - sourceOrg: Journal of medicinal food
-    title: A Randomized, Double-Blind, Placebo-Controlled, Prospective Clinical Trial Evaluating Water-Soluble Chicken Eggshell Membrane for Improvement in Joint Health in Adults with Knee Osteoarthritis.
+    title: >-
+      A Randomized, Double-Blind, Placebo-Controlled, Prospective Clinical Trial Evaluating Water-Soluble Chicken
+      Eggshell Membrane for Improvement in Joint Health in Adults with Knee Osteoarthritis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6748399/
     type: research
-    pmid: "31381494"
+    pmid: '31381494'
   - sourceOrg: Poultry science
     title: Glycosaminoglycans and vitamin C affect broiler bone parameters.
     url: https://pubmed.ncbi.nlm.nih.gov/30982065/
     type: research
-    pmid: "30982065"
+    pmid: '30982065'
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 葡萄糖胺軟骨素補充 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 關節X光
+          notes: 評估骨關節炎嚴重度
+        - name: 臨床症狀評分
+          notes: 跛行、活動力、疼痛評估
+ddxSource: auto-generated

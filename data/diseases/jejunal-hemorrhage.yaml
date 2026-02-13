@@ -3,11 +3,11 @@ nameEn: Jejunal Hemorrhage
 nameZh: 空腸出血
 bodySystem: gastrointestinal
 description: 空腸黏膜出血,可能因潰瘍、腫瘤、凝血障礙或血管病變引起。臨床表現為黑便或血便及貧血。
-
 aliases:
-  - { alias: 小腸出血, language: zh }
-  - { alias: Small Intestinal Hemorrhage, language: en }
-
+  - alias: 小腸出血
+    language: zh
+  - alias: Small Intestinal Hemorrhage
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 常見原因包含淋巴瘤、發炎性腸病
-
 etiology:
   categories:
     - name: 潰瘍性
@@ -31,7 +30,6 @@ etiology:
       examples:
         - 鼠藥中毒
         - 免疫介導血小板減少
-
 clinicalSigns:
   early:
     - 黑便 (melena)
@@ -40,20 +38,18 @@ clinicalSigns:
     - 貧血
     - 虛弱
     - 休克 (嚴重時)
-
 diagnosis:
   primaryTests:
     - name: 血液檢查
-      notes: "貧血、凝血功能"
+      notes: 貧血、凝血功能
     - name: 腹部超音波
-      notes: "評估腸壁、腫瘤"
+      notes: 評估腸壁、腫瘤
     - name: 內視鏡檢查
-      notes: "直視出血點 (若可及)"
+      notes: 直視出血點 (若可及)
   differentialDiagnoses:
     - 胃潰瘍
     - 大腸出血
     - 全身性凝血障礙
-
 treatment:
   medical:
     - 輸血 (嚴重貧血)
@@ -61,20 +57,44 @@ treatment:
     - Vitamin K1 (鼠藥中毒)
     - 治療原發病因
     - 支持性照護
-
 prognosis:
-  general: "取決於原發病因;凝血障礙或藥物性預後良好;腫瘤性預後不良"
-
+  general: 取決於原發病因;凝血障礙或藥物性預後良好;腫瘤性預後不良
 prevention:
   - 謹慎使用 NSAIDs
   - 避免接觸鼠藥
   - 早期診斷及治療腸道疾病
-
-
 guidelineRefs:
   - sourceOrg: The Veterinary clinics of North America. Food animal practice
     title: Intestinal Surgery.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7125662/
     type: review
-    pmid: "27614777"
+    pmid: '27614777'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: melaena
+    frequency: common
+  - symptomId: haematochezia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 空腸出血 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weakness 相關症狀
+        - melaena 相關症狀
+        - haematochezia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液檢查
+          notes: 貧血、凝血功能
+        - name: 腹部超音波
+          notes: 評估腸壁、腫瘤
+        - name: 內視鏡檢查
+          notes: 直視出血點 (若可及)
+ddxSource: auto-generated

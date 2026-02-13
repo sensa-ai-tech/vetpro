@@ -3,24 +3,22 @@ nameEn: Canine Cognitive Dysfunction Detail
 nameZh: Canine Cognitive Dysfunction Detail
 bodySystem: neurology
 description: 老年犬的認知功能退化疾病,類似人類失智症。臨床表現包括定向障礙、睡眠模式改變與行為異常,需多模式管理改善生活品質。
-
 aliases:
-  - { alias: Canine Cognitive Dysfunction Detail, language: zh }
-  - { alias: Canine Cognitive Dysfunction Detail, language: en }
-
+  - alias: Canine Cognitive Dysfunction Detail
+    language: zh
+  - alias: Canine Cognitive Dysfunction Detail
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 神經元異常放電
       examples:
         - 髓鞘或軸突病變
         - 腦血管疾病
-
 clinicalSigns:
   early:
     - 神經功能輕度異常
@@ -28,43 +26,64 @@ clinicalSigns:
   progressive:
     - 神經缺損加重
     - 癱瘓或意識障礙
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: MRI或CT
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 抗癲癇藥物(Phenobarbital 2-3 mg/kg PO q12h)
     - 支持性治療
-
 prognosis:
-  general: "預後取決於根本病因與治療反應。早期診斷與適當治療可改善預後。"
-
+  general: 預後取決於根本病因與治療反應。早期診斷與適當治療可改善預後。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
     title: Potential revival of cholinesterase inhibitors as drugs in veterinary medicine.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10019356/
     type: review
-    pmid: "36937006"
-  - sourceOrg: "Journal of Alzheimer's disease : JAD"
-    title: "Ethical Issues Raised by the Introduction of Artificial Companions to Older Adults with Cognitive Impairment: A Call for Interdisciplinary Collaborations."
+    pmid: '36937006'
+  - sourceOrg: 'Journal of Alzheimer''s disease : JAD'
+    title: >-
+      Ethical Issues Raised by the Introduction of Artificial Companions to Older Adults with Cognitive Impairment: A
+      Call for Interdisciplinary Collaborations.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7437496/
     type: review
-    pmid: "32250295"
-  - sourceOrg: "Stem cell research &amp; therapy"
-    title: Autologous skin-derived neural precursor cell therapy reverses canine Alzheimer dementia-like syndrome in a proof of concept veterinary trial.
+    pmid: '32250295'
+  - sourceOrg: Stem cell research &amp; therapy
+    title: >-
+      Autologous skin-derived neural precursor cell therapy reverses canine Alzheimer dementia-like syndrome in a proof
+      of concept veterinary trial.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9205057/
     type: research
-    pmid: "35715872"
+    pmid: '35715872'
+associatedSymptoms:
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: Canine Cognitive Dysfunction Detail 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - behaviour-change 相關症狀
+        - paresis-paralysis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 需詳細評估
+        - name: MRI或CT
+          notes: 協助確診
+ddxSource: auto-generated

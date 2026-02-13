@@ -3,18 +3,18 @@ nameEn: Persian Cat Dermatophytosis Predisposition
 nameZh: 波斯貓皮黴菌易感性
 bodySystem: dermatology
 description: 波斯貓因長毛、扁臉結構及免疫特性,較其他品種更易感染皮黴菌(主要為Microsporum canis)。表現為環狀脫毛、結痂,需系統性抗真菌治療及環境消毒。
-
 aliases:
-  - { alias: 皮黴菌感染, language: zh }
-  - { alias: Ringworm, language: en }
-  - { alias: Dermatophyte Infection, language: en }
-
+  - alias: 皮黴菌感染
+    language: zh
+  - alias: Ringworm
+    language: en
+  - alias: Dermatophyte Infection
+    language: en
 species:
   - speciesCommon: cat
     speciesSpecific: Felis catus
     prevalence: common
     notes: 波斯貓、喜馬拉雅貓等長毛品種易感,多貓家庭盛行率更高
-
 etiology:
   categories:
     - name: 真菌感染
@@ -22,7 +22,6 @@ etiology:
         - Microsporum canis(最常見,>90%)
         - Microsporum gypseum
         - Trichophyton mentagrophytes
-
 clinicalSigns:
   early:
     - 局部圓形或不規則脫毛
@@ -33,23 +32,21 @@ clinicalSigns:
     - 結痂、斷毛
     - 指甲床感染(甲癬)
     - 搔癢程度變異
-
 diagnosis:
   primaryTests:
     - name: Wood's lamp檢查
-      notes: "約50% M. canis會顯示蘋果綠螢光"
+      notes: 約50% M. canis會顯示蘋果綠螢光
     - name: 毛髮真菌培養
-      notes: "金標準,需7-14天,DTM培養基變紅"
+      notes: 金標準,需7-14天,DTM培養基變紅
     - name: 毛髮直接鏡檢
-      notes: "KOH處理後顯微鏡下見孢子及菌絲"
+      notes: KOH處理後顯微鏡下見孢子及菌絲
     - name: PCR檢測
-      notes: "快速診斷,高敏感性"
+      notes: 快速診斷,高敏感性
   differentialDiagnoses:
     - 跳蚤過敏性皮膚炎
     - 食物過敏
     - 心因性過度理毛
     - 毛囊炎
-
 treatment:
   medical:
     - 全身性抗真菌藥(Itraconazole 5-10 mg/kg PO q24h × 3-6週)
@@ -57,12 +54,35 @@ treatment:
     - 剃毛(長毛貓,減少孢子擴散)
     - 環境消毒(稀釋漂白水1:10)
     - 治療至連續2次培養陰性
-
 prognosis:
-  general: "預後良好,適當治療多數在6-12週內治癒。免疫功能低下或多貓環境治療時間較長。人畜共通傳染病,需注意防護。"
-
+  general: 預後良好,適當治療多數在6-12週內治癒。免疫功能低下或多貓環境治療時間較長。人畜共通傳染病,需注意防護。
 prevention:
   - 新貓隔離檢疫
   - 定期環境清潔消毒
   - 避免過度擁擠
   - 免疫功能維護(營養、壓力管理)
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: uncommon
+  - symptomId: alopecia
+    frequency: common
+diagnosticAlgorithm:
+  title: 波斯貓皮黴菌易感性 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: Wood's lamp檢查
+          notes: 約50% M. canis會顯示蘋果綠螢光
+        - name: 毛髮真菌培養
+          notes: 金標準,需7-14天,DTM培養基變紅
+        - name: 毛髮直接鏡檢
+          notes: KOH處理後顯微鏡下見孢子及菌絲
+ddxSource: auto-generated

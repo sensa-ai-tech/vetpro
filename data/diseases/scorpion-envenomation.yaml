@@ -3,12 +3,13 @@ nameEn: Scorpion Envenomation
 nameZh: 蠍子螫傷中毒
 bodySystem: toxicology
 description: 蠍子螫傷中毒在犬貓中以樹皮蠍 (Centruroides sculpturatus) 螫傷最具臨床重要性。毒素為神經毒素，作用於鈉離子通道引起神經肌肉過度興奮。犬多數為輕微局部反應，貓可能較嚴重。
-
 aliases:
-  - { alias: 蠍螫傷, language: zh }
-  - { alias: Scorpion Sting, language: en }
-  - { alias: Bark Scorpion Envenomation, language: en }
-
+  - alias: 蠍螫傷
+    language: zh
+  - alias: Scorpion Sting
+    language: en
+  - alias: Bark Scorpion Envenomation
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓因夜行性捕獵行為可能接觸蠍子。貓對蠍毒的反應可能較犬嚴重。
-
 etiology:
   categories:
     - name: 毒液成分
@@ -30,7 +30,6 @@ etiology:
         - 注入毒量
         - 動物體型
         - 螫傷部位
-
 clinicalSigns:
   early:
     - 螫傷處急性劇痛
@@ -44,7 +43,6 @@ clinicalSigns:
     - 心動過速或過緩
     - 眼球震顫
     - 嚴重者呼吸衰竭
-
 diagnosis:
   primaryTests:
     - name: 病史與臨床表現
@@ -55,7 +53,6 @@ diagnosis:
     - 生命徵象監測
     - 心電圖（心律不整）
     - CBC 與生化
-
 treatment:
   principles:
     - 局部反應支持療法
@@ -71,41 +68,86 @@ treatment:
     - 心律不整管理
     - 呼吸支持（必要時）
     - 監測 12-24 小時
-
 prognosis: 犬蠍子螫傷多數為輕度至中度，預後良好。小型犬與貓全身症狀風險較高但積極治療存活率高。致命性報告在犬貓中極罕見。
-
-
 guidelineRefs:
   - sourceOrg: Cureus
     title: Neurological and Systemic Manifestations of Severe Scorpion Envenomation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8158070/
     type: review
-    pmid: "34055554"
+    pmid: '34055554'
     relevance: primary
   - sourceOrg: Purinergic signalling
     title: First evidence of Tityus confluens Borelli, 1899 (Buthidae) venom altering purine metabolism in rat blood cells.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12595173/
     type: research
-    pmid: "39992594"
+    pmid: '39992594'
     relevance: supporting
-  - sourceOrg: "Toxicon: X"
-    title: Development of a gold nanoparticle-based novel diagnostic prototype for in vivo detection of Indian red scorpion (Mesobuthus tamulus) venom.
+  - sourceOrg: 'Toxicon: X'
+    title: >-
+      Development of a gold nanoparticle-based novel diagnostic prototype for in vivo detection of Indian red scorpion
+      (Mesobuthus tamulus) venom.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11387954/
     type: research
-    pmid: "39263685"
+    pmid: '39263685'
     relevance: supporting
-  - sourceOrg: "Toxicon: X"
+  - sourceOrg: 'Toxicon: X'
     title: Cytokines and their regulators in rat lung following scorpion envenomation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11022085/
     type: research
-    pmid: "38633505"
+    pmid: '38633505'
     relevance: supporting
   - sourceOrg: Toxins
-    title: "Development and Efficacy of the Antivenom Specific to Severe Envenomations in Morocco and North Africa: Advancements in Scorpion Envenomation Management."
+    title: >-
+      Development and Efficacy of the Antivenom Specific to Severe Envenomations in Morocco and North Africa:
+      Advancements in Scorpion Envenomation Management.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11125721/
     type: research
-    pmid: "38787066"
+    pmid: '38787066'
     relevance: supporting
 pubmedQueries:
   - query: '"scorpion envenomation" OR "scorpion sting" AND (veterinary OR canine OR feline) AND ("treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: nystagmus
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 蠍子螫傷中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - trembling 相關症狀
+        - nystagmus 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史與臨床表現
+          notes: 確認蠍子暴露環境與螫傷事件。局部劇痛加神經肌肉過度興奮症狀
+        - name: 蠍子鑑定
+          notes: 捕獲蠍子鑑定種類有助評估嚴重度
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 生命徵象監測
+        - 心電圖（心律不整）
+        - CBC 與生化
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 局部反應支持療法
+        - 全身症狀需積極管理
+        - 抗蠍毒血清可用
+ddxSource: auto-generated

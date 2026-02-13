@@ -3,17 +3,16 @@ nameEn: Rhinitis Chronic Feline
 nameZh: 貓慢性鼻炎
 bodySystem: respiratory
 description: 貓慢性鼻腔發炎,常因早期病毒感染 (FHV-1, FCV) 導致鼻甲骨損傷及繼發細菌感染。症狀為慢性打噴嚏及鼻分泌物。
-
 aliases:
-  - { alias: 貓慢性鼻竇炎, language: zh }
-  - { alias: Chronic Rhinosinusitis, language: en }
-
+  - alias: 貓慢性鼻竇炎
+    language: zh
+  - alias: Chronic Rhinosinusitis
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
     notes: 常見於曾感染上呼吸道病毒的貓
-
 etiology:
   categories:
     - name: 病毒後遺症
@@ -23,7 +22,6 @@ etiology:
     - name: 繼發細菌感染
       examples:
         - Pasteurella, Bordetella
-
 clinicalSigns:
   early:
     - 打噴嚏
@@ -32,20 +30,18 @@ clinicalSigns:
     - 慢性鼻塞
     - 化膿性鼻分泌物
     - 食慾下降 (嗅覺喪失)
-
 diagnosis:
   primaryTests:
     - name: 臨床病史
-      notes: "早期上呼吸道感染史"
+      notes: 早期上呼吸道感染史
     - name: 頭部 CT
-      notes: "鼻甲骨破壞、鼻腔軟組織密度增加"
+      notes: 鼻甲骨破壞、鼻腔軟組織密度增加
     - name: 鼻鏡檢查
-      notes: "鼻甲骨萎縮、黏液膿性分泌物"
+      notes: 鼻甲骨萎縮、黏液膿性分泌物
   differentialDiagnoses:
     - 鼻腫瘤
     - 真菌性鼻炎
     - 息肉
-
 treatment:
   medical:
     - 抗生素 (Doxycycline 5-10 mg/kg PO q12-24h, 2-6 週)
@@ -53,44 +49,101 @@ treatment:
     - 鼻沖洗
     - 蒸氣治療
     - 開胃劑
-
 prognosis:
-  general: "預後謹慎;多為終身疾病,需長期管理,症狀可能時好時壞"
-
+  general: 預後謹慎;多為終身疾病,需長期管理,症狀可能時好時壞
 prevention:
   - 疫苗接種 (FHV-1, FCV)
   - 早期治療上呼吸道感染
   - 減少壓力
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: Impact of culture-based bacteriological examination on diagnosis and treatment in cats with chronic nasal disease - Insights from a case series of 25 cats.
+    title: >-
+      Impact of culture-based bacteriological examination on diagnosis and treatment in cats with chronic nasal disease
+      - Insights from a case series of 25 cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12615214/
     type: research
-    pmid: "41246262"
+    pmid: '41246262'
     relevance: supporting
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Investigation of Bacterial Isolations and Antimicrobial Susceptibility of Chronic Rhinitis in Cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9219427/
     type: research
-    pmid: "35739908"
+    pmid: '35739908'
     relevance: supporting
   - sourceOrg: Microbiology spectrum
-    title: "Corynebacteria of the diphtheriae Species Complex in Companion Animals: Clinical and Microbiological Characterization of 64 Cases from France."
+    title: >-
+      Corynebacteria of the diphtheriae Species Complex in Companion Animals: Clinical and Microbiological
+      Characterization of 64 Cases from France.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10269909/
     type: research
-    pmid: "37022195"
+    pmid: '37022195'
     relevance: supporting
   - sourceOrg: Journal of feline medicine and surgery
-    title: Rigid normograde rhinoscopy-assisted traction-avulsion removal of small middle ear polyps from the auditory tube in five cats.
+    title: >-
+      Rigid normograde rhinoscopy-assisted traction-avulsion removal of small middle ear polyps from the auditory tube
+      in five cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10811977/
     type: research
-    pmid: "37384389"
+    pmid: '37384389'
     relevance: supporting
   - sourceOrg: Journal of veterinary internal medicine
     title: Outcome of stereotactic body radiation for treatment of nasal and nasopharyngeal lymphoma in 32 cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8965259/
     type: research
-    pmid: "35188694"
+    pmid: '35188694'
     relevance: supporting
+diagnosticAlgorithm:
+  title: 慢性鼻炎 診斷流程
+  steps:
+    - step: 1
+      action: 臨床評估
+      details: 慢性鼻分泌物病史和特徵
+      findings:
+        - 分泌物性質（黏液/膿/血）
+        - 單側vs雙側
+        - 面部是否變形
+        - 牙齒和口腔檢查
+    - step: 2
+      action: 排除常見病因
+      details: 影像學和血清學排除腫瘤和真菌
+      findings:
+        - CT：鼻甲骨變化模式
+        - Aspergillus血清學
+        - 牙科X光（口鼻瘻管）
+        - 面部變形→高度懷疑腫瘤
+    - step: 3
+      action: 鼻腔鏡+活檢
+      details: 直接觀察+組織取樣
+      findings:
+        - 黏膜增生和充血
+        - 排除腫塊病變
+        - 多點活檢
+        - 沖洗細胞學
+    - step: 4
+      action: 組織病理確認
+      details: 確認LPR並排除其他病因
+      findings:
+        - 淋巴漿細胞浸潤為主
+        - 排除腫瘤和真菌
+        - 制定長期管理計畫
+        - 定期追蹤（排除腫瘤發展）
+clinicalPearls:
+  - 慢性鼻炎是排除性診斷——必須先排除腫瘤和真菌！
+  - CT+鼻腔鏡+活檢是鑑別診斷三聯檢查
+  - 對抗生素反應差是LPR的特徵之一
+  - 面部變形強烈提示腫瘤而非LPR
+  - 吸入性類固醇可減少全身副作用，但犬的配合度是挑戰
+monitoringItems:
+  - 症狀嚴重程度評分
+  - 鼻分泌物性質變化
+  - 定期影像追蹤（排除腫瘤發展）
+  - 類固醇副作用監測
+  - 生活品質評估
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+ddxSource: book

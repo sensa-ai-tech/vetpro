@@ -2,14 +2,18 @@ slug: lyme-disease
 nameEn: Lyme Disease
 nameZh: 萊姆病
 bodySystem: infectious
-description: 萊姆病 (Lyme disease) 由伯氏疏螺旋體 (Borrelia burgdorferi) 經硬蜱叮咬傳播，為北美與歐洲最重要的蜱媒疾病之一。犬主要表現為急性多關節炎與發燒，嚴重者可發展為致命性腎病 (Lyme nephritis)。多數血清陽性犬無臨床症狀。
-
+description: >-
+  萊姆病 (Lyme disease) 由伯氏疏螺旋體 (Borrelia burgdorferi) 經硬蜱叮咬傳播，為北美與歐洲最重要的蜱媒疾病之一。犬主要表現為急性多關節炎與發燒，嚴重者可發展為致命性腎病 (Lyme
+  nephritis)。多數血清陽性犬無臨床症狀。
 aliases:
-  - { alias: 犬萊姆病, language: zh }
-  - { alias: 蜱媒伯氏疏螺旋體感染, language: zh }
-  - { alias: Canine Lyme Disease, language: en }
-  - { alias: Lyme Borreliosis, language: en }
-
+  - alias: 犬萊姆病
+    language: zh
+  - alias: 蜱媒伯氏疏螺旋體感染
+    language: zh
+  - alias: Canine Lyme Disease
+    language: en
+  - alias: Lyme Borreliosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓萊姆病臨床報告極少。實驗感染可引起短暫關節炎，但自然感染臨床意義不確定。
-
 etiology:
   categories:
     - name: 病原與傳播
@@ -31,7 +34,6 @@ etiology:
         - 直接組織侵犯引起發炎
         - 免疫複合物沉積（Lyme nephritis 的主要機制）
         - 外膜蛋白 (OspA, OspC, VlsE) 抗原變異逃避免疫
-
 clinicalSigns:
   early:
     - 急性跛行（突發，可游走性）
@@ -44,7 +46,6 @@ clinicalSigns:
     - 水腫（低白蛋白血症）
     - 嘔吐、氮血症（腎衰竭進展）
     - 少見：心肌炎、神經症狀
-
 diagnosis:
   primaryTests:
     - name: SNAP 4Dx Plus
@@ -56,7 +57,6 @@ diagnosis:
     - CBC、血清生化（腎功能、白蛋白）
     - 關節液分析
     - 尿液分析
-
 treatment:
   principles:
     - 抗生素為核心治療
@@ -71,36 +71,101 @@ treatment:
     - Lyme nephritis：免疫抑制（mycophenolate）、ACE 抑制劑、抗血栓
     - 全年持續蜱蟲預防（isoxazoline 類）
     - 流行區考慮 Lyme 疫苗（OspA 或 chimeric）
-
 prognosis: 單純萊姆關節炎經抗生素治療預後佳。Lyme nephritis 預後極差，中位存活時間數天至數月。無症狀血清陽性犬若 UPC 正常，預後良好，建議每 6 個月追蹤 UPC。
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
     title: ACVIM consensus update on Lyme borreliosis in dogs and cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5980284/
     type: consensus
-    pmid: "29566442"
+    pmid: '29566442'
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Borrelia burgdorferi Infection and Lyme Disease in North American Horses: A Consensus Statement."
+    title: 'Borrelia burgdorferi Infection and Lyme Disease in North American Horses: A Consensus Statement.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5866975/
     type: consensus
-    pmid: "29469222"
+    pmid: '29469222'
   - sourceOrg: BMC infectious diseases
-    title: A systematic review of the effectiveness and utility of Lyme disease prevention measures in Canada, the United States, and Europe.
+    title: >-
+      A systematic review of the effectiveness and utility of Lyme disease prevention measures in Canada, the United
+      States, and Europe.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12224580/
     type: review
-    pmid: "40604446"
+    pmid: '40604446'
   - sourceOrg: Zoonoses and public health
-    title: "Questing Ixodes ricinus ticks and Borrelia spp. in urban green space across Europe: A review."
+    title: 'Questing Ixodes ricinus ticks and Borrelia spp. in urban green space across Europe: A review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9487987/
     type: review
-    pmid: "35122422"
+    pmid: '35122422'
   - sourceOrg: Frontiers in medicine
-    title: Report of the Pathogenesis and Pathophysiology of Lyme Disease Subcommittee of the HHS Tick Borne Disease Working Group.
+    title: >-
+      Report of the Pathogenesis and Pathophysiology of Lyme Disease Subcommittee of the HHS Tick Borne Disease Working
+      Group.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8215209/
     type: review
-    pmid: "34164410"
+    pmid: '34164410'
 pubmedQueries:
   - query: '"Lyme disease" AND (canine OR veterinary) AND ("guidelines" OR "consensus" OR "nephritis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 萊姆病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估跛行與全身症狀，確認蜱蟲暴露史
+      findings:
+        - 遊走性跛行
+        - 發燒
+        - 淋巴結腫大
+        - 蜱蟲暴露區域生活史
+    - step: 2
+      action: 血清學篩檢
+      details: Borrelia burgdorferi抗體檢測
+      findings:
+        - SNAP 4Dx或C6抗體陽性
+        - 區分疫苗抗體vs自然感染
+        - C6抗體特異性高
+        - 陽性率高但臨床疾病少
+    - step: 3
+      action: 確認臨床意義
+      details: 區分感染與臨床疾病
+      findings:
+        - Quant C6定量評估
+        - 尿蛋白肌酸酐比值排除腎炎
+        - 關節液分析排除其他關節炎
+        - CBC/生化排除共感染蜱媒疾病
+    - step: 4
+      action: 治療反應
+      details: Doxycycline治療反應評估
+      findings:
+        - 治療後24-48小時跛行改善
+        - 28天療程
+        - 治療後6個月追蹤C6
+        - 腎炎型預後較差
+clinicalPearls:
+  - C6抗體陽性僅代表暴露，不等於臨床疾病
+  - 多數血清陽性犬為無症狀感染，不需要治療
+  - 蜱叮咬需超過36-48小時才能傳播，及時移除蜱蟲可預防
+  - 萊姆腎炎（蛋白質流失性腎炎）是最嚴重的併發症
+  - 拉布拉多和黃金獵犬對萊姆腎炎有品種易感性
+monitoringItems:
+  - C6抗體定量（治療反應）
+  - UPC比值（腎臟監測）
+  - 關節症狀
+  - 腎功能
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: peripheral-oedema
+    frequency: rare
+ddxSource: book

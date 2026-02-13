@@ -3,18 +3,19 @@ nameEn: Avian Lead Poisoning
 nameZh: 禽類鉛中毒
 bodySystem: toxicology
 description: 禽類鉛中毒為鳥類攝入含鉛物質導致的急性或慢性中毒，影響消化道、神經系統與造血系統。為寵物鳥最常見的重金屬中毒之一。
-
 aliases:
-  - { alias: 鳥類鉛中毒, language: zh }
-  - { alias: 禽鉛毒症, language: zh }
-  - { alias: Lead toxicosis in birds, language: en }
-  - { alias: Plumbism in birds, language: en }
-
+  - alias: 鳥類鉛中毒
+    language: zh
+  - alias: 禽鉛毒症
+    language: zh
+  - alias: Lead toxicosis in birds
+    language: en
+  - alias: Plumbism in birds
+    language: en
 species:
   - speciesCommon: bird
     prevalence: common
     notes: 所有鳥種均可發生。鸚鵡因好奇咬嚼物品的習性特別易感。水禽因攝入鉛彈亦常見。即使微量鉛暴露也可造成中毒。
-
 etiology:
   categories:
     - name: 鉛來源
@@ -31,7 +32,6 @@ etiology:
         - 干擾血紅素合成
         - 神經毒性（髓鞘脫失）
         - 消化道黏膜損傷
-
 clinicalSigns:
   early:
     - 嗜睡
@@ -47,22 +47,20 @@ clinicalSigns:
     - 貧血
     - 多渴多尿（腎損傷）
     - 猝死
-
 diagnosis:
   primaryTests:
     - name: 血鉛濃度
-      notes: "血鉛 >20 μg/dL 為異常，>50 μg/dL 提示中毒。送專門實驗室檢測"
+      notes: 血鉛 >20 μg/dL 為異常，>50 μg/dL 提示中毒。送專門實驗室檢測
     - name: X光檢查
-      notes: "腹腔內可見金屬密度異物。金屬碎片通常在嗉囊或腺胃中"
+      notes: 腹腔內可見金屬密度異物。金屬碎片通常在嗉囊或腺胃中
     - name: CBC
-      notes: "再生性貧血。可見嗜鹼性點彩紅血球（不具特異性但有提示價值）"
+      notes: 再生性貧血。可見嗜鹼性點彩紅血球（不具特異性但有提示價值）
   differentialDiagnoses:
     - 鋅中毒
     - 其他重金屬中毒
     - 病毒性腦炎
     - 前胃擴張症
     - 感染性疾病
-
 treatment:
   medical:
     - CaEDTA（Calcium disodium EDTA）35-50 mg/kg IM BID（5天治療、5天休息）
@@ -73,41 +71,79 @@ treatment:
   surgical:
     - 內視鏡移除嗉囊或腺胃內金屬異物
     - 手術取出無法自然排出的金屬碎片
-
 prognosis:
-  general: "早期診斷與螯合治療預後良好。神經症狀出現後預後謹慎。嚴重癲癇或腎衰竭預後不良。金屬異物未移除則持續中毒。"
-
+  general: 早期診斷與螯合治療預後良好。神經症狀出現後預後謹慎。嚴重癲癇或腎衰竭預後不良。金屬異物未移除則持續中毒。
 prevention:
   - 鳥類活動區域移除所有含鉛物品
   - 避免使用老舊含鉛油漆的房間
   - 定期檢查鳥類可接觸的金屬物品
   - 使用不鏽鋼材質的鳥籠配件
   - 監督鳥類放飛時的活動範圍
-
-
 guidelineRefs:
   - sourceOrg: Environmental science and pollution research international
-    title: "Lead, cadmium, and other trace elements in the liver of golden eagles and white-tailed eagles: recent data from Poland and a systematic review of previous studies."
+    title: >-
+      Lead, cadmium, and other trace elements in the liver of golden eagles and white-tailed eagles: recent data from
+      Poland and a systematic review of previous studies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10039830/
     type: review
-    pmid: "36585589"
+    pmid: '36585589'
   - sourceOrg: Ambio
-    title: "Effects of lead from ammunition on birds and other wildlife: A review and update."
+    title: 'Effects of lead from ammunition on birds and other wildlife: A review and update.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6675766/
     type: review
-    pmid: "30879267"
-  - sourceOrg: "Journal of health &amp; pollution"
+    pmid: '30879267'
+  - sourceOrg: Journal of health &amp; pollution
     title: Lead Toxicoses in Free-Range Chickens in Artisanal Gold-Mining Communities, Zamfara, Nigeria.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7269320/
     type: case-report
-    pmid: "32509407"
+    pmid: '32509407'
   - sourceOrg: Environmental science and pollution research international
     title: Lead contamination in Australian game meat.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10104915/
     type: research
-    pmid: "36797390"
+    pmid: '36797390'
   - sourceOrg: PloS one
-    title: Implications for food safety of the size and location of fragments of lead shotgun pellets embedded in hunted carcasses of small game animals intended for human consumption.
+    title: >-
+      Implications for food safety of the size and location of fragments of lead shotgun pellets embedded in hunted
+      carcasses of small game animals intended for human consumption.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9394810/
     type: research
-    pmid: "35994440"
+    pmid: '35994440'
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: blindness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類鉛中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - ataxia 相關症狀
+        - seizures 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血鉛濃度
+          notes: 血鉛 >20 μg/dL 為異常，>50 μg/dL 提示中毒。送專門實驗室檢測
+        - name: X光檢查
+          notes: 腹腔內可見金屬密度異物。金屬碎片通常在嗉囊或腺胃中
+        - name: CBC
+          notes: 再生性貧血。可見嗜鹼性點彩紅血球（不具特異性但有提示價值）
+ddxSource: auto-generated

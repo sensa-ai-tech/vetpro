@@ -3,13 +3,15 @@ nameEn: Amphetamine Toxicosis
 nameZh: 安非他命中毒
 bodySystem: toxicology
 description: 安非他命 (amphetamine) 與其衍生物中毒常見於犬誤食飼主 ADHD 藥物（如 Adderall、Ritalin）或非法毒品（methamphetamine）。引起嚴重交感神經興奮與中樞神經興奮，可致命。犬比貓更常暴露。
-
 aliases:
-  - { alias: 甲基安非他命中毒, language: zh }
-  - { alias: Amphetamine Poisoning, language: en }
-  - { alias: Methamphetamine Toxicosis, language: en }
-  - { alias: ADHD Medication Toxicosis, language: en }
-
+  - alias: 甲基安非他命中毒
+    language: zh
+  - alias: Amphetamine Poisoning
+    language: en
+  - alias: Methamphetamine Toxicosis
+    language: en
+  - alias: ADHD Medication Toxicosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓暴露報告較少。毒性閾值與犬相似。
-
 etiology:
   categories:
     - name: 毒性機制
@@ -31,7 +32,6 @@ etiology:
         - ADHD 藥物（Adderall、Vyvanse、Concerta、Ritalin）
         - 非法毒品（methamphetamine、MDMA/搖頭丸）
         - 減肥藥
-
 clinicalSigns:
   early:
     - 躁動、焦慮
@@ -47,7 +47,6 @@ clinicalSigns:
     - 橫紋肌溶解
     - DIC（瀰漫性血管內凝血）
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 暴露史
@@ -61,7 +60,6 @@ diagnosis:
     - CBC、生化（CK、肝腎功能）
     - 凝血功能
     - 尿液（肌紅蛋白）
-
 treatment:
   principles:
     - 控制中樞與心血管過度興奮
@@ -78,16 +76,66 @@ treatment:
     - IV 輸液（維持尿量、保護腎臟）
     - Cyproheptadine 1.1 mg/kg PO（serotonin 症候群時）
     - 住院監測 24-72 小時
-
 prognosis: 安非他命中毒在積極支持療法下多數可存活。緩釋劑型需更長監測時間。致命性併發症包括嚴重高體溫、DIC 與橫紋肌溶解致急性腎損傷。及早降溫與鎮靜為關鍵。
-
-
 guidelineRefs:
   - sourceOrg: Case reports in veterinary medicine
     title: Severe Rhabdomyolysis Associated with Acute Amphetamine Toxicosis in a Dog.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7008280/
     type: case-report
-    pmid: "32082692"
+    pmid: '32082692'
 pubmedQueries:
   - query: '"amphetamine" OR "methylphenidate" AND (toxicosis OR poisoning) AND (veterinary OR canine OR feline)'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 安非他命中毒 診斷流程
+  steps:
+    - step: 1
+      action: 暴露史確認
+      details: 確認安非他命類藥物暴露
+      findings:
+        - 已知接觸ADHD藥物（如methylphenidate、amphetamine）
+        - 非法藥物暴露可能
+        - 症狀快速發作
+        - 劑量評估
+    - step: 2
+      action: 臨床評估
+      details: 評估交感神經興奮症狀
+      findings:
+        - 極度躁動和焦慮
+        - 心搏過速和高血壓
+        - 高體溫
+        - 瞳孔散大和震顫
+    - step: 3
+      action: 實驗室監測
+      details: 進行持續實驗室和心臟監測
+      findings:
+        - 心電圖監測（心律不整）
+        - 血壓持續監測
+        - 體溫監測
+        - 酸鹼和電解質評估
+    - step: 4
+      action: 毒物學確認
+      details: 必要時進行毒物學檢測
+      findings:
+        - 尿液藥物篩檢
+        - 血漿安非他命濃度
+        - 診斷主要基於暴露史和臨床表現
+        - 排除其他交感神經興奮劑中毒
+clinicalPearls:
+  - 安非他命中毒時不應催吐已出現神經興奮症狀的動物，以免誘發吸入性肺炎
+  - 尿液酸化理論上可加速安非他命排泄，但實務上因增加肌紅蛋白腎毒性風險而不建議
+  - 人用毒物快篩試紙可用於犬的尿液檢測，但假陰性率較高
+  - 與 SSRI 中毒臨床表現高度相似，治療原則亦相似，重點在控制體溫及躁動
+monitoringItems:
+  - 持續心電圖監測（心律不整風險）
+  - 每 30 分鐘至 1 小時監測體溫
+  - 血壓監測
+  - 尿量及尿液顏色監測（肌紅蛋白尿）
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+  - symptomId: mydriasis
+    frequency: common
+ddxSource: book

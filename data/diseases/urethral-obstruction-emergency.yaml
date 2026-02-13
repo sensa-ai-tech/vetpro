@@ -3,13 +3,15 @@ nameEn: Urethral Obstruction Emergency
 nameZh: 尿道阻塞急症
 bodySystem: emergency
 description: 尿道阻塞為尿道被結石、黏液栓 (urethral plug)、腫瘤或痙攣阻塞導致無法排尿的緊急狀態。公貓為最常見受影響動物（尿道細長）。完全阻塞 24-48 小時可致命性高血鉀與急性腎衰竭。為最常見的貓科急診之一。
-
 aliases:
-  - { alias: 尿路阻塞, language: zh }
-  - { alias: 貓下泌尿道阻塞, language: zh }
-  - { alias: Urethral Blockage, language: en }
-  - { alias: Blocked Cat, language: en }
-
+  - alias: 尿路阻塞
+    language: zh
+  - alias: 貓下泌尿道阻塞
+    language: zh
+  - alias: Urethral Blockage
+    language: en
+  - alias: Blocked Cat
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 公貓尿道阻塞為極常見急診。黏液栓 (urethral plug) 與 struvite 結石為主要原因。室內公貓、肥胖、乾糧飲食為風險因子。
-
 etiology:
   categories:
     - name: 阻塞原因
@@ -33,7 +34,6 @@ etiology:
         - 腎後性氮血症（BUN/Cr 急遽升高）
         - 高血鉀→心律不整→心臟停止
         - 代謝性酸中毒
-
 clinicalSigns:
   early:
     - 反覆蹲踞排尿姿勢但無尿或極少量
@@ -46,7 +46,6 @@ clinicalSigns:
     - 嗜睡、厭食
     - 心搏過緩（高血鉀）
     - 昏迷、死亡
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
@@ -57,7 +56,6 @@ diagnosis:
     - 心電圖（高血鉀心律不整：高聳 T 波、QRS 延長、心搏過緩）
     - 腹部 X-ray/超音波（結石、膀胱狀態）
     - 尿液分析
-
 treatment:
   principles:
     - 先矯正高血鉀（可致命）
@@ -75,41 +73,93 @@ treatment:
     - 導管移除後監測排尿
     - 長期預防：濕糧飲食、增加飲水、處方飲食、減壓
     - 復發性阻塞：會陰尿道造口術 (perineal urethrostomy)
-
 prognosis: 及時解除阻塞並矯正電解質的貓預後佳（存活率 >90%）。高血鉀引起心臟停止前未治療者致命。復發率約 30-50%。會陰尿道造口術可大幅降低再次阻塞風險。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in pediatrics
-    title: "Urethral multiplicity in boys: systematic review of case reports and case series from the last 15 years."
+    title: 'Urethral multiplicity in boys: systematic review of case reports and case series from the last 15 years.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11196844/
     type: review
-    pmid: "38919842"
+    pmid: '38919842'
     relevance: primary
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
     title: Evaluation of salivary urea nitrogen test in cats with lower urinary tract outflow obstructions.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12261947/
     type: research
-    pmid: "40671900"
+    pmid: '40671900'
     relevance: supporting
-  - sourceOrg: "Urology research &amp; practice"
-    title: "The Effect of St. John's Wort Oil on Urethral Stricture: An Experimental Study in Rat Model."
+  - sourceOrg: Urology research &amp; practice
+    title: 'The Effect of St. John''s Wort Oil on Urethral Stricture: An Experimental Study in Rat Model.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11883670/
     type: research
-    pmid: "39873472"
+    pmid: '39873472'
     relevance: supporting
   - sourceOrg: Journal of feline medicine and surgery
-    title: Evaluation of postoperative complication rates in cats undergoing perineal urethrostomy performed in dorsal recumbency.
+    title: >-
+      Evaluation of postoperative complication rates in cats undergoing perineal urethrostomy performed in dorsal
+      recumbency.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10814659/
     type: research
-    pmid: "30912694"
+    pmid: '30912694'
     relevance: supporting
   - sourceOrg: International journal of molecular sciences
-    title: "AMPK Alters Detrusor Contractility During Emptying in Normal Bladder and Hypertrophied Bladder with Partial Bladder Outlet Obstruction via CaMKK&#x3b2;."
+    title: >-
+      AMPK Alters Detrusor Contractility During Emptying in Normal Bladder and Hypertrophied Bladder with Partial
+      Bladder Outlet Obstruction via CaMKK&#x3b2;.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6600286/
     type: research
-    pmid: "31146414"
+    pmid: '31146414'
     relevance: supporting
 pubmedQueries:
   - query: '"urethral obstruction" AND (veterinary OR canine OR feline) AND ("treatment" OR "emergency" OR "hyperkalemia")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 輸尿管阻塞 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估急性或慢性腎後性阻塞症狀
+      findings:
+        - 急性腹痛和嘔吐
+        - 少尿或無尿（雙側阻塞）
+        - 食慾不振和嗜睡
+        - 貓的輸尿管結石為最常見原因
+    - step: 2
+      action: 實驗室檢查
+      details: 進行腎功能和電解質評估
+      findings:
+        - 氮質血症（可能急性惡化）
+        - 高血鉀（雙側阻塞時危及生命）
+        - 代謝性酸中毒
+        - 尿液分析
+    - step: 3
+      action: 影像學確診
+      details: 進行腹部超音波和X光確認阻塞
+      findings:
+        - 腎盂擴張（水腎）
+        - 輸尿管擴張至阻塞點
+        - 超音波可見輸尿管結石
+        - 腹部X光見不透光結石
+    - step: 4
+      action: 手術評估
+      details: 評估手術介入方式
+      findings:
+        - 輸尿管支架或SUB裝置
+        - 輸尿管切開取石術
+        - 腎盂到膀胱繞道術
+        - 對側腎功能評估
+clinicalPearls:
+  - 貓的輸尿管結石通常非常小（1-3 mm），X 光容易遺漏，超音波看腎盂擴張更為敏感
+  - 急性雙側輸尿管阻塞的高血鉀可能在數小時內致命，需優先處理電解質
+  - SUB 裝置在貓中已成為越來越普及的首選治療，避免了直接操作細小輸尿管的困難
+  - 阻塞解除後的利尿期（post-obstructive diuresis）需密切監測輸液量和電解質
+monitoringItems:
+  - 術後 24-72 小時密切監測尿量、電解質和腎功能
+  - SUB 裝置或支架術後每 1-3 個月超音波和 X 光追蹤
+  - 長期每 3-6 個月腎功能和影像追蹤
+  - 鼓勵增加水分攝入以預防結石復發
+associatedSymptoms:
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

@@ -2,18 +2,20 @@ slug: canine-distemper-encephalitis
 nameEn: Canine Distemper Encephalitis
 nameZh: 犬瘟熱腦炎
 bodySystem: infectious
-description: 犬瘟熱腦炎為犬瘟熱病毒（Canine distemper virus, CDV，Paramyxoviridae 科）感染中樞神經系統導致的脫髓鞘性腦脊髓炎。可發生於急性全身性感染期或數週至數月後（post-vaccinal / old dog encephalitis 為慢性型）。神經症狀包括肌陣攣（myoclonus）、癲癇、共濟失調與癱瘓。預防接種為最有效防護。
-
+description: >-
+  犬瘟熱腦炎為犬瘟熱病毒（Canine distemper virus, CDV，Paramyxoviridae 科）感染中樞神經系統導致的脫髓鞘性腦脊髓炎。可發生於急性全身性感染期或數週至數月後（post-vaccinal / old
+  dog encephalitis 為慢性型）。神經症狀包括肌陣攣（myoclonus）、癲癇、共濟失調與癱瘓。預防接種為最有效防護。
 aliases:
-  - { alias: 犬瘟熱神經型, language: zh }
-  - { alias: CDV Encephalitis, language: en }
-  - { alias: Distemper Encephalomyelitis, language: en }
-
+  - alias: 犬瘟熱神經型
+    language: zh
+  - alias: CDV Encephalitis
+    language: en
+  - alias: Distemper Encephalomyelitis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
     notes: 犬隻犬瘟熱腦炎在未接種犬隻中仍常見。幼犬（3-6 月齡）最易感。未接種或接種不全犬隻風險高。
-
 etiology:
   categories:
     - name: 病原體
@@ -26,7 +28,6 @@ etiology:
         - 急性型：幼犬，與全身性感染同時或隨後
         - 慢性型（old dog encephalitis）：成年犬，慢性進行性
         - 疫苗後腦炎（罕見）
-
 clinicalSigns:
   early:
     - 全身性感染症狀（發燒、鼻眼分泌物、咳嗽、腹瀉）
@@ -39,14 +40,12 @@ clinicalSigns:
     - 認知障礙
     - 口部持續咀嚼運動（chewing gum seizures）
     - 足墊角化過度（hard pad disease）
-
 diagnosis:
   primaryTests:
     - name: CSF 分析
       notes: 單核球增多。蛋白質升高。CDV antibody in CSF（CSF 抗體效價升高提示鞘內抗體合成）。CDV RT-PCR（CSF 或結膜拭子）。
     - name: 其他
       notes: CDV RT-PCR（鼻拭子、結膜拭子、尿液、血液）。免疫螢光（conjunctival scraping）。腦部 MRI 可見白質 T2 高訊號。
-
 treatment:
   principles:
     - 無特異性抗病毒治療
@@ -54,14 +53,55 @@ treatment:
     - 神經損傷多為不可逆
   general:
     - 支持性治療（靜脈輸液、營養支持）
-    - "抗癲癇：Levetiracetam 20-30 mg/kg PO q8h 或 Phenobarbital"
+    - 抗癲癇：Levetiracetam 20-30 mg/kg PO q8h 或 Phenobarbital
     - 肌陣攣無有效治療（通常不影響生活品質的輕度肌陣攣可不治療）
     - 繼發性細菌感染抗生素治療
     - 良好的護理（翻身、清潔、排尿輔助）
     - 神經症狀進展時需考慮安樂死
-
 prognosis: 犬瘟熱腦炎預後不佳。約 50% 全身性犬瘟熱犬隻會發展神經症狀。神經症狀一旦出現多為不可逆。肌陣攣通常為永久性。輕度神經症狀的犬隻部分可維持可接受的生活品質。嚴重進展性神經症狀者通常預後極差。預防接種為最有效防護。
-
 pubmedQueries:
   - query: '"canine distemper" AND "encephalitis" AND (veterinary OR canine) AND ("treatment" OR "myoclonus" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: trembling
+    frequency: common
+  - symptomId: blindness
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: coughing
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 犬瘟熱腦炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - seizures 相關症狀
+        - ataxia 相關症狀
+        - trembling 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: CSF 分析
+          notes: 單核球增多。蛋白質升高。CDV antibody in CSF（CSF 抗體效價升高提示鞘內抗體合成）。CDV RT-PCR（CSF 或結膜拭子）。
+        - name: 其他
+          notes: CDV RT-PCR（鼻拭子、結膜拭子、尿液、血液）。免疫螢光（conjunctival scraping）。腦部 MRI 可見白質 T2 高訊號。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 無特異性抗病毒治療
+        - 支持性治療
+        - 神經損傷多為不可逆
+ddxSource: auto-generated

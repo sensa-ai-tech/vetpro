@@ -3,14 +3,17 @@ nameEn: Canine Distemper
 nameZh: 犬瘟熱
 bodySystem: infectious
 description: 由犬瘟熱病毒 (CDV) 引起的高度傳染性多系統感染，侵犯呼吸道、消化道、皮膚及中樞神經系統，為犬最嚴重的病毒性疾病之一。
-
 aliases:
-  - { alias: CDV, language: en }
-  - { alias: Distemper, language: en }
-  - { alias: Hardpad Disease, language: en }
-  - { alias: 犬瘟, language: zh }
-  - { alias: 犬麻疹, language: zh }
-
+  - alias: CDV
+    language: en
+  - alias: Distemper
+    language: en
+  - alias: Hardpad Disease
+    language: en
+  - alias: 犬瘟
+    language: zh
+  - alias: 犬麻疹
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Mustela putorius furo
     prevalence: common
     notes: 雪貂高度感受性，致死率接近 100%。
-
 etiology:
   categories:
     - name: 病毒性
@@ -35,9 +37,9 @@ etiology:
         - 幼犬母源抗體下降期 (6-16 週齡)
         - 免疫抑制 (併發感染、營養不良)
         - 收容所/群養環境/流浪犬接觸
-
-pathophysiology: CDV 經呼吸道飛沫感染後，首先在扁桃腺與支氣管淋巴結複製，隨後經淋巴管與血行擴散至全身淋巴組織 (脾臟、胸腺、骨髓)，造成嚴重淋巴球凋亡與免疫抑制。病毒血症持續約 8-9 天後侵犯上皮組織 (呼吸道、消化道、泌尿道、皮膚) 及中樞神經系統。神經侵犯可於急性期發生，也可在臨床症狀改善後數週至數月延遲出現，為脫髓鞘性腦脊髓炎，機制涉及直接病毒損傷與免疫介導性反應。免疫力良好的動物可在感染後 14 天內清除病毒；免疫不全者則發展為嚴重多系統疾病。
-
+pathophysiology: >-
+  CDV 經呼吸道飛沫感染後，首先在扁桃腺與支氣管淋巴結複製，隨後經淋巴管與血行擴散至全身淋巴組織 (脾臟、胸腺、骨髓)，造成嚴重淋巴球凋亡與免疫抑制。病毒血症持續約 8-9 天後侵犯上皮組織 (呼吸道、消化道、泌尿道、皮膚)
+  及中樞神經系統。神經侵犯可於急性期發生，也可在臨床症狀改善後數週至數月延遲出現，為脫髓鞘性腦脊髓炎，機制涉及直接病毒損傷與免疫介導性反應。免疫力良好的動物可在感染後 14 天內清除病毒；免疫不全者則發展為嚴重多系統疾病。
 clinicalSigns:
   early:
     - 發燒 (雙峰熱：第 3-6 天與第 11-14 天)
@@ -61,26 +63,24 @@ clinicalSigns:
     - 失明 (視神經炎)
     - 行為改變 (chewing gum fits)
     - 牙釉質發育不全 (幼犬恢復後)
-
 diagnosis:
   primaryTests:
     - name: RT-PCR (血液、尿液、結膜拭子、CSF)
-      notes: "敏感度與特異度最高。CSF PCR 可確認神經侵犯。疫苗株可能干擾 (接種後 1-2 週)"
+      notes: 敏感度與特異度最高。CSF PCR 可確認神經侵犯。疫苗株可能干擾 (接種後 1-2 週)
     - name: CDV 抗原快速檢測 (免疫層析法)
-      notes: "結膜、鼻腔拭子。敏感度中等 (50-70%)。陰性不排除感染"
+      notes: 結膜、鼻腔拭子。敏感度中等 (50-70%)。陰性不排除感染
     - name: CBC
-      notes: "早期絕對淋巴球減少為重要線索。後期可見繼發性細菌感染的嗜中性球增多"
+      notes: 早期絕對淋巴球減少為重要線索。後期可見繼發性細菌感染的嗜中性球增多
   imaging:
     - name: 胸腔 X 光
-      notes: "間質性至支氣管肺泡型浸潤。評估繼發性細菌性肺炎"
+      notes: 間質性至支氣管肺泡型浸潤。評估繼發性細菌性肺炎
     - name: MRI (腦部)
-      notes: "神經型病例：白質脫髓鞘病變、腦幹/小腦病變。灰質壞死 (晚期)"
+      notes: 神經型病例：白質脫髓鞘病變、腦幹/小腦病變。灰質壞死 (晚期)
   additional:
     - CSF 分析 (神經型：淋巴球性細胞增多、蛋白質升高)
     - 血清學 IgM 抗體 (急性感染指標，但受疫苗干擾)
     - 免疫螢光染色 (結膜或皮膚切片)
     - 包涵體檢查 (血液抹片偶見嗜酸性細胞質包涵體)
-
 treatment:
   principles:
     - 無特異性抗病毒治療 — 以支持性療法為主
@@ -90,19 +90,19 @@ treatment:
     - 神經症狀處理
   medications:
     - name: 廣效抗生素 (Ampicillin-Sulbactam)
-      dose: "22 mg/kg IV TID"
+      dose: 22 mg/kg IV TID
       notes: 預防/治療繼發性細菌感染。呼吸道症狀時尤其重要
     - name: Maropitant (Cerenia)
-      dose: "1 mg/kg IV/SC SID"
+      dose: 1 mg/kg IV/SC SID
       notes: 止吐。同時可能具有神經保護作用
     - name: 晶體液輸液 (LRS 或 Normosol-R)
-      dose: "依脫水程度與維持需求調整"
+      dose: 依脫水程度與維持需求調整
       notes: 矯正脫水與電解質異常
     - name: Phenobarbital
-      dose: "2-4 mg/kg PO/IV BID"
+      dose: 2-4 mg/kg PO/IV BID
       notes: 癲癇發作控制。神經型病例常需長期使用
     - name: Levetiracetam
-      dose: "20 mg/kg PO/IV TID"
+      dose: 20 mg/kg PO/IV TID
       notes: 癲癇控制替代或合併藥物。肝臟安全性較佳
   general:
     - 隔離 (傳染性高)
@@ -112,11 +112,8 @@ treatment:
     - 肌陣攣無有效治療 (可能永久存在)
     - 恢復期物理復健 (神經型病例)
     - 環境消毒 (一般消毒劑即有效)
-
 emergencyNotes: 癲癇重積狀態需緊急處理 (diazepam 0.5-1 mg/kg IV，或 levetiracetam 60 mg/kg IV 負荷劑量)。嚴重呼吸困難可能需要氧氣支持。脫水與低血糖須立即矯正。嚴重繼發性敗血症按敗血症治療流程處理。
-
 prognosis: 整體死亡率約 50%。出現神經症狀的病例預後較差，即使存活也可能遺留永久性肌陣攣、癲癇或行為異常。無神經症狀的輕至中度病例積極治療後存活率較高。幼犬、免疫不全犬預後最差。存活犬可能終身帶有神經後遺症。預防 (完整疫苗接種) 遠優於治療。
-
 guidelineRefs:
   - sourceOrg: WSAVA
     title: WSAVA Guidelines for the Vaccination of Dogs and Cats
@@ -130,23 +127,89 @@ guidelineRefs:
     title: Canine distemper outbreak and laryngeal paralysis in captive tigers (Panthera tigris).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11760695/
     type: research
-    pmid: "39856666"
+    pmid: '39856666'
   - sourceOrg: Viruses
-    title: Agreement between In-Clinics and Virus Neutralization Tests in Detecting Antibodies against Canine Distemper Virus (CDV).
+    title: >-
+      Agreement between In-Clinics and Virus Neutralization Tests in Detecting Antibodies against Canine Distemper Virus
+      (CDV).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8949878/
     type: research
-    pmid: "35336924"
+    pmid: '35336924'
   - sourceOrg: Scientific reports
     title: Risk of canine distemper virus vaccination of domestic dogs in giant panda habitat to giant pandas.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11607067/
     type: research
-    pmid: "39614092"
+    pmid: '39614092'
     relevance: supporting
 pubmedQueries:
   - query: '"canine distemper" AND ("treatment" OR "prognosis" OR "neurological")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "GEN"
-  sectionTitle: "CANINE DISTEMPER"
+  chapter: GEN
+  sectionTitle: CANINE DISTEMPER
   pdfPage: 818
+diagnosticAlgorithm:
+  title: 犬瘟熱 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估多系統症狀（呼吸道、消化道、神經），詢問疫苗史及接觸史
+      findings:
+        - 雙相性發熱
+        - 眼鼻膿性分泌物
+        - 咳嗽及肺炎
+        - 嘔吐及腹瀉
+    - step: 2
+      action: 神經學評估
+      details: 評估神經症狀（可與呼吸道/消化道症狀同時或延遲出現）
+      findings:
+        - 肌陣攣（咀嚼肌或四肢抽搐）
+        - 癲癇發作
+        - 共濟失調
+        - 足墊增厚（硬墊症）
+    - step: 3
+      action: 實驗室診斷
+      details: CDV RT-PCR（結膜拭子、血液、尿液）、包涵體尋找
+      findings:
+        - RT-PCR陽性（確診）
+        - 結膜或呼吸道上皮細胞包涵體
+        - 淋巴球減少
+        - CSF分析（神經型）
+    - step: 4
+      action: 確診與預後
+      details: 結合臨床表現及實驗室結果確診，評估預後
+      findings:
+        - CDV確診
+        - 神經症狀者預後差
+        - 肌陣攣通常為永久性
+        - 與疫苗相關腦炎鑑別
+clinicalPearls:
+  - 肌陣攣（rhythmic myoclonus）是犬瘟熱幾乎病理性的特徵
+  - 硬墊症是犬瘟熱的經典但非必要的表現
+  - 疫苗是最有效的預防手段
+  - 老犬腦炎可能是犬瘟熱的晚期表現
+monitoringItems:
+  - 神經症狀進展
+  - 繼發感染
+  - 營養狀態
+  - 隔離措施
+  - 同居犬疫苗狀態
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+ddxSource: book

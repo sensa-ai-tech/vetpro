@@ -3,22 +3,24 @@ nameEn: Elbow Dysplasia
 nameZh: 肘關節發育不良
 bodySystem: orthopedic
 description: 肘關節發育異常的統稱，包含內側冠突碎裂 (FCP)、肘突未癒合 (UAP)、骨軟骨炎 (OCD) 及肘關節不一致 (incongruity)，為大型犬最常見的前肢跛行原因。
-
 aliases:
-  - { alias: ED, language: en }
-  - { alias: Canine Elbow Dysplasia, language: en }
-  - { alias: 肘關節發育異常, language: zh }
-
+  - alias: ED
+    language: en
+  - alias: Canine Elbow Dysplasia
+    language: en
+  - alias: 肘關節發育異常
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
-    notes: 好發大型至巨型犬種：Labrador Retriever、Golden Retriever、German Shepherd、Rottweiler、Bernese Mountain Dog、Newfoundland、Chow Chow。通常 4-10 月齡開始出現症狀。雄性發生率為雌性 2 倍。20-35% 為雙側性。
+    notes: >-
+      好發大型至巨型犬種：Labrador Retriever、Golden Retriever、German Shepherd、Rottweiler、Bernese Mountain Dog、Newfoundland、Chow
+      Chow。通常 4-10 月齡開始出現症狀。雄性發生率為雌性 2 倍。20-35% 為雙側性。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓極罕見，文獻個案報告。
-
 etiology:
   categories:
     - name: 發育異常組成
@@ -37,9 +39,9 @@ etiology:
         - 快速生長 (高熱量飲食)
         - 過度運動 (幼犬期)
         - 肥胖
-
-pathophysiology: 肘關節發育不良的核心問題為橈骨、尺骨與肱骨三者間的不一致生長，導致關節面不對稱負重。橈尺骨相對長度不一致時，內側冠突受到異常壓力 (step lesion 或 short radius)，導致軟骨下骨微骨折與碎裂。肱骨滑車與尺骨切跡不匹配也會導致 UAP。肱骨內側髁 OCD 為軟骨內骨化障礙。這些病變共同引起關節軟骨退化、滑液膜炎，最終導致進行性退化性關節炎。
-
+pathophysiology: >-
+  肘關節發育不良的核心問題為橈骨、尺骨與肱骨三者間的不一致生長，導致關節面不對稱負重。橈尺骨相對長度不一致時，內側冠突受到異常壓力 (step lesion 或 short
+  radius)，導致軟骨下骨微骨折與碎裂。肱骨滑車與尺骨切跡不匹配也會導致 UAP。肱骨內側髁 OCD 為軟骨內骨化障礙。這些病變共同引起關節軟骨退化、滑液膜炎，最終導致進行性退化性關節炎。
 clinicalSigns:
   early:
     - 前肢跛行 (單側或雙側)
@@ -58,25 +60,23 @@ clinicalSigns:
     - 前肢肌肉萎縮
     - 慢性疼痛
     - 雙側發生時前肢功能嚴重受損
-
 diagnosis:
   primaryTests:
     - name: 骨科檢查
-      notes: "肘關節觸診疼痛 (尤其屈曲+旋前時，提示內側冠突病變)、關節積液、活動範圍減少、捻髮音"
+      notes: 肘關節觸診疼痛 (尤其屈曲+旋前時，提示內側冠突病變)、關節積液、活動範圍減少、捻髮音
     - name: 肘關節 X 光
-      notes: "標準前後位與屈曲側位。可見骨關節炎變化、UAP、OCD 碎片。FCP 常因重疊而 X 光不易直接顯影"
+      notes: 標準前後位與屈曲側位。可見骨關節炎變化、UAP、OCD 碎片。FCP 常因重疊而 X 光不易直接顯影
   imaging:
     - name: CT
-      notes: "FCP 診斷金標準。可清楚顯示冠突碎裂、關節不一致程度、骨關節炎分級"
+      notes: FCP 診斷金標準。可清楚顯示冠突碎裂、關節不一致程度、骨關節炎分級
     - name: 關節鏡
-      notes: "診斷與治療性。直接觀察關節面軟骨狀態與冠突完整性"
+      notes: 診斷與治療性。直接觀察關節面軟骨狀態與冠突完整性
     - name: MRI
-      notes: "可評估軟骨與軟骨下骨病變，但費用高且通常非必要"
+      notes: 可評估軟骨與軟骨下骨病變，但費用高且通常非必要
   additional:
     - 對側肘關節評估 (20-35% 雙側)
     - 關節液分析 (排除感染性關節炎)
     - IEWG (International Elbow Working Group) 分級
-
 stagingSystem:
   name: IEWG Elbow Dysplasia Grading
   sourceUrl: https://www.iewg.org/
@@ -93,7 +93,6 @@ stagingSystem:
     - stage: 3
       label: Grade 3 (Severe)
       description: 嚴重骨關節炎 (骨贅 >5 mm) 或可見原發病變 (UAP, FCP, OCD)
-
 treatment:
   principles:
     - 手術治療適用於有明確原發病變者 (FCP、UAP、OCD)
@@ -102,16 +101,16 @@ treatment:
     - 體重管理與適度運動為保守治療核心
   medications:
     - name: NSAIDs (Meloxicam, Carprofen, Grapiprant)
-      dose: "依藥物標準劑量"
+      dose: 依藥物標準劑量
       notes: 疼痛管理主力。長期使用需監測肝腎功能
     - name: Gabapentin
-      dose: "5-10 mg/kg PO BID-TID"
+      dose: 5-10 mg/kg PO BID-TID
       notes: 慢性疼痛輔助止痛
     - name: Adequan (PSGAG)
-      dose: "5 mg/kg IM 每 3-5 天 × 8 次，後每月維持"
+      dose: 5 mg/kg IM 每 3-5 天 × 8 次，後每月維持
       notes: 關節保護劑
     - name: Omega-3 脂肪酸
-      dose: "EPA+DHA 依體重補充"
+      dose: EPA+DHA 依體重補充
       notes: 輔助抗炎
   general:
     - 關節鏡 FCP 移除 (arthroscopic fragment removal)
@@ -122,9 +121,9 @@ treatment:
     - 體重管理 (最重要的長期措施)
     - 環境調整 (防滑地墊)
     - 大型犬幼犬飲食管理 (控制生長速度)
-
-prognosis: FCP 關節鏡移除後約 60-75% 改善但多數仍有輕度退化性關節炎。OCD 碎片移除預後較佳 (>85% 改善)。UAP 預後取決於骨關節炎嚴重度。已有嚴重骨關節炎者手術改善有限。長期疼痛管理與體重控制可維持合理生活品質。繁殖篩檢建議。
-
+prognosis: >-
+  FCP 關節鏡移除後約 60-75% 改善但多數仍有輕度退化性關節炎。OCD 碎片移除預後較佳 (>85% 改善)。UAP
+  預後取決於骨關節炎嚴重度。已有嚴重骨關節炎者手術改善有限。長期疼痛管理與體重控制可維持合理生活品質。繁殖篩檢建議。
 guidelineRefs:
   - sourceOrg: IEWG
     title: International Elbow Working Group — Elbow Dysplasia Screening Protocol
@@ -134,28 +133,83 @@ guidelineRefs:
     title: Arthroscopic treatment of medial coronoid disease in 263 dogs.
     url: https://pubmed.ncbi.nlm.nih.gov/25130237/
     type: research
-    pmid: "25130237"
+    pmid: '25130237'
   - sourceOrg: BMC veterinary research
-    title: "Canine elbow dysplasia: aetiopathogenesis and current treatment recommendations."
+    title: 'Canine elbow dysplasia: aetiopathogenesis and current treatment recommendations.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10638811/
     type: review
-    pmid: "37951897"
+    pmid: '37951897'
   - sourceOrg: Frontiers in veterinary science
     title: A proposed framework for practical multimodal management of osteoarthritis in growing dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12067799/
     type: review
-    pmid: "40357193"
+    pmid: '40357193'
   - sourceOrg: Frontiers in veterinary science
-    title: "Therapeutic success in fragmented coronoid process disease and other canine medial elbow compartment pathology: a systematic review with meta-analyses."
+    title: >-
+      Therapeutic success in fragmented coronoid process disease and other canine medial elbow compartment pathology: a
+      systematic review with meta-analyses.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10666176/
     type: review
-    pmid: "38026645"
+    pmid: '38026645'
     relevance: primary
 pubmedQueries:
   - query: '"elbow dysplasia" AND (dog OR canine) AND ("arthroscopy" OR "coronoid" OR "treatment")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "MUS"
-  sectionTitle: "ELBOW DYSPLASIA"
+  chapter: MUS
+  sectionTitle: ELBOW DYSPLASIA
   pdfPage: 1237
+diagnosticAlgorithm:
+  title: 肘關節發育不良 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估步態（前肢跛行），確認品種傾向（拉布拉多、金毛、德牧等大型犬），關節觸診
+      findings:
+        - 前肢跛行（單側或雙側）
+        - 運動後跛行加劇
+        - 肘關節腫脹或活動範圍減少
+        - 肘關節屈曲/伸展時疼痛
+    - step: 2
+      action: X光檢查
+      details: 拍攝肘關節多角度X光（屈曲側位、前後位、斜位），雙側比較
+      findings:
+        - 關節不協調（尺橈骨階梯）
+        - 內側冠狀突碎裂
+        - 關節退行性變化
+        - 鈎突未癒合
+    - step: 3
+      action: 進階影像學
+      details: CT掃描提供三維重建，精確評估骨骼病變
+      findings:
+        - CT確認冠狀突碎裂程度
+        - 鈎突癒合狀態
+        - 剝脫性骨軟骨炎病灶
+        - 關節面不整
+    - step: 4
+      action: 關節鏡或手術探查
+      details: 關節鏡直接觀察關節內病變，同時可進行治療
+      findings:
+        - 軟骨損傷程度分級
+        - 游離體確認與移除
+        - 關節面磨損評估
+        - 制定手術或保守治療計劃
+clinicalPearls:
+  - 雙側發病率高，即使僅單側跛行也應評估對側
+  - CT比X光更敏感地檢測FCP
+  - FCP是最常見的肘關節發育不良形式
+  - 早期體重控制和適度運動對預後至關重要
+  - 發育期避免過度鈣質補充和高熱量飲食
+monitoringItems:
+  - 術後6-8週回診評估恢復
+  - 定期X光追蹤骨關節炎進展
+  - 體重監測
+  - 評估止痛藥效果和副作用（特別是腎肝功能）
+  - 對側肘關節定期評估
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+ddxSource: book

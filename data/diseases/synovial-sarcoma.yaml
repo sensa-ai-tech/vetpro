@@ -3,11 +3,11 @@ nameEn: Synovial Sarcoma
 nameZh: 滑膜肉瘤
 bodySystem: oncology
 description: 關節周圍軟組織的惡性腫瘤（實際並非源自滑膜細胞）。表現為關節附近逐漸增大的腫塊，可侵犯骨骼。膝關節與肘關節為好發位置。
-
 aliases:
-  - { alias: "Synovial Cell Sarcoma", language: en }
-  - { alias: "滑膜細胞肉瘤", language: zh }
-
+  - alias: Synovial Cell Sarcoma
+    language: en
+  - alias: 滑膜細胞肉瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,14 +15,12 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 腫瘤性
       examples:
         - 間充質細胞惡性增生
         - 非真正滑膜來源
-
 clinicalSigns:
   early:
     - 關節周圍腫脹
@@ -33,7 +31,6 @@ clinicalSigns:
     - 骨質侵蝕
     - 嚴重跛行
     - 轉移（肺、淋巴結）
-
 diagnosis:
   primaryTests:
     - name: X 光
@@ -42,7 +39,6 @@ diagnosis:
       notes: 評估侵犯範圍
     - name: 活檢
       notes: 組織病理確診
-
 treatment:
   principles:
     - 截肢為首選手術
@@ -52,41 +48,71 @@ treatment:
     - 化療（Doxorubicin、Carboplatin）
     - 不完全切除：放射治療
     - 分期檢查
-
 prognosis: 截肢後中位存活約 3 年（轉移率約 30-40%）。預後優於骨肉瘤。早期手術預後佳。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in immunology
-    title: "A new 3-arylbenzofuran derivative EIE-2 reestablishes Treg-dependent tolerance in rheumatoid arthritis by targeting on Syk induced mTOR and PKC&#x3b8; imbalance."
+    title: >-
+      A new 3-arylbenzofuran derivative EIE-2 reestablishes Treg-dependent tolerance in rheumatoid arthritis by
+      targeting on Syk induced mTOR and PKC&#x3b8; imbalance.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12133519/
     type: research
-    pmid: "40469311"
+    pmid: '40469311'
     relevance: supporting
   - sourceOrg: Clinical sarcoma research
     title: Immunophenotypic expression of UCP1 in hibernoma and other adipose/non adipose soft tissue tumours.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6515671/
     type: research
-    pmid: "31114671"
+    pmid: '31114671'
     relevance: supporting
   - sourceOrg: Cureus
     title: Expression of NKX2.2 in Non-Ewing Tumors With Round Cell Morphology.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10792351/
     type: research
-    pmid: "38234938"
+    pmid: '38234938'
     relevance: supporting
   - sourceOrg: Cellular oncology (Dordrecht, Netherlands)
     title: SS18-SSX drives CREB activation in synovial sarcoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9187574/
     type: research
-    pmid: "35556229"
+    pmid: '35556229'
     relevance: supporting
-  - sourceOrg: "Applied immunohistochemistry &amp; molecular morphology : AIMM"
+  - sourceOrg: 'Applied immunohistochemistry &amp; molecular morphology : AIMM'
     title: Expanding the Use of an SS18-SSX Antibody for Molecular Assays in Synovial Sarcoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9444294/
     type: research
-    pmid: "35880992"
+    pmid: '35880992'
     relevance: supporting
 pubmedQueries:
   - query: '"synovial sarcoma" AND (veterinary OR canine) AND ("treatment" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 滑膜肉瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: X 光
+          notes: 關節周圍軟組織腫塊伴骨質溶解
+        - name: CT / MRI
+          notes: 評估侵犯範圍
+        - name: 活檢
+          notes: 組織病理確診
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 截肢為首選手術
+        - 輔助化療
+ddxSource: auto-generated

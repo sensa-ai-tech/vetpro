@@ -3,13 +3,15 @@ nameEn: Lipoma
 nameZh: 脂肪瘤
 bodySystem: dermatology
 description: 皮下脂肪組織的良性腫瘤，為犬最常見的皮下腫瘤。觸感柔軟、可移動、邊界清楚的皮下腫塊。通常生長緩慢，極少惡性轉化。中老年犬與肥胖犬好發。
-
 aliases:
-  - { alias: "Fatty Tumor", language: en }
-  - { alias: "Subcutaneous Lipoma", language: en }
-  - { alias: "脂肪腫瘤", language: zh }
-  - { alias: "皮下脂肪瘤", language: zh }
-
+  - alias: Fatty Tumor
+    language: en
+  - alias: Subcutaneous Lipoma
+    language: en
+  - alias: 脂肪腫瘤
+    language: zh
+  - alias: 皮下脂肪瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓較少見。
-
 etiology:
   categories:
     - name: 良性脂肪增生
@@ -25,7 +26,6 @@ etiology:
         - 成熟脂肪細胞增生
         - 肥胖為危險因子
         - 遺傳傾向
-
 clinicalSigns:
   early:
     - 皮下柔軟可移動腫塊
@@ -35,14 +35,12 @@ clinicalSigns:
     - 腫塊緩慢增大
     - 多發性（多顆）
     - 浸潤性脂肪瘤可侵入肌肉（較難完全切除）
-
 diagnosis:
   primaryTests:
     - name: 細針穿刺
       notes: 抽出脂肪滴。細胞學見成熟脂肪細胞
     - name: 觸診
       notes: 典型柔軟可移動皮下腫塊
-
 treatment:
   principles:
     - 多數不需治療
@@ -52,36 +50,75 @@ treatment:
     - 影響行動或快速增大時手術切除
     - 浸潤性脂肪瘤需廣範圍切除
     - 體重管理
-
 prognosis: 預後極佳。純良性腫瘤，極少惡性轉化。浸潤性脂肪瘤復發率較高但仍為良性。
-
-
 guidelineRefs:
   - sourceOrg: Cureus
-    title: "Imaging Findings of Atypical Spindle Cell/Pleomorphic Lipomatous Tumors: A Case Series and Systematic Review."
+    title: 'Imaging Findings of Atypical Spindle Cell/Pleomorphic Lipomatous Tumors: A Case Series and Systematic Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12596547/
     type: case-report
-    pmid: "41216078"
+    pmid: '41216078'
   - sourceOrg: Journal of toxicologic pathology
-    title: "A case report of RccHanTM: WIST rat with multiple neoplastic and non-neoplastic proliferative lesions."
+    title: 'A case report of RccHanTM: WIST rat with multiple neoplastic and non-neoplastic proliferative lesions.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8280308/
     type: case-report
-    pmid: "34290481"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '34290481'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Common Spontaneous Tumors and Tumor-like Lesions in 70 Pet Rodents and Negative MMTV Detection in Mammary Tumors.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11117349/
     type: research
-    pmid: "38791685"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '38791685'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Cutaneous and Subcutaneous Tumours of Small Pet Mammals-Retrospective Study of 256 Cases (2014-2021).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9028556/
     type: research
-    pmid: "35454212"
-  - sourceOrg: "Stem cell research &amp; therapy"
-    title: Therapeutic potential of small extracellular vesicles derived from lipoma tissue in adipose tissue regeneration-an in vitro and in vivo study.
+    pmid: '35454212'
+  - sourceOrg: Stem cell research &amp; therapy
+    title: >-
+      Therapeutic potential of small extracellular vesicles derived from lipoma tissue in adipose tissue regeneration-an
+      in vitro and in vivo study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8011093/
     type: research
-    pmid: "33789709"
+    pmid: '33789709'
 pubmedQueries:
   - query: '"lipoma" AND (veterinary OR canine OR feline) AND ("infiltrative" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 脂肪瘤 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 觸診腫塊特徵
+      findings:
+        - 皮下軟性可動腫塊
+        - 生長緩慢
+        - 通常不疼痛
+        - 中老年犬多發
+    - step: 2
+      action: 細針抽吸細胞學
+      details: 腫塊細針抽吸確認性質
+      findings:
+        - 抽出油脂樣物質
+        - 成熟脂肪細胞大型透明細胞
+        - 排除脂肪肉瘤
+        - 排除其他軟組織腫瘤
+    - step: 3
+      action: 浸潤性評估
+      details: 評估是否為浸潤性脂肪瘤
+      findings:
+        - 浸潤性脂肪瘤附著深層組織
+        - 活動度差
+        - 觸診邊界不清
+        - MRI或CT評估浸潤範圍
+clinicalPearls:
+  - 細針穿刺可確診大多數脂肪瘤，避免不必要的手術
+  - 快速增大、質地較硬或固定不動的腫塊應懷疑非脂肪瘤
+  - 浸潤性脂肪瘤術前CT/MRI評估範圍很重要
+  - 減重不會使已存在的脂肪瘤縮小
+monitoringItems:
+  - 定期測量大小（尺寸紀錄或照片）
+  - 監測生長速度
+  - 新發腫塊的穿刺評估
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: common
+ddxSource: book

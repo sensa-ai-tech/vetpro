@@ -3,11 +3,11 @@ nameEn: Hemodialysis in Veterinary Medicine
 nameZh: 獸醫血液透析
 bodySystem: renal
 description: 透過體外循環將血液引出,經透析機移除代謝廢物、毒素及過多水分後回輸體內,用於急性腎損傷或慢性腎臟病末期治療。
-
 aliases:
-  - { alias: 血透, language: zh }
-  - { alias: Hemodialysis, language: en }
-
+  - alias: 血透
+    language: zh
+  - alias: Hemodialysis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓體型小血管通路建立困難,技術要求高
-
 etiology:
   categories:
     - name: 主要適應症
@@ -32,7 +31,6 @@ etiology:
         - 慢性腎臟病急性惡化
         - 過度水合或肺水腫
         - 尿毒症症狀控制
-
 clinicalSigns:
   early:
     - 嚴重氮血症症狀(嘔吐、厭食、沉鬱)
@@ -43,22 +41,20 @@ clinicalSigns:
     - 肺水腫、呼吸窘迫
     - 心包積液、心律不整
     - 凝血功能異常
-
 diagnosis:
   primaryTests:
     - name: 血液生化
-      notes: "BUN、肌酐極度升高,評估透析緊急性"
+      notes: BUN、肌酐極度升高,評估透析緊急性
     - name: 血氣分析
-      notes: "嚴重代謝性酸中毒,pH可能<7.1"
+      notes: 嚴重代謝性酸中毒,pH可能<7.1
     - name: 心電圖
-      notes: "監測高鉀血症對心臟影響"
+      notes: 監測高鉀血症對心臟影響
     - name: 凝血功能檢查
-      notes: "評估出血風險,調整肝素劑量"
+      notes: 評估出血風險,調整肝素劑量
   differentialDiagnoses:
     - 腹膜透析
     - 內科保守治療
     - 持續性腎替代療法(CRRT)
-
 treatment:
   medical:
     - 建立血管通路(雙腔中央靜脈導管,頸靜脈或股靜脈)
@@ -69,45 +65,85 @@ treatment:
     - 監測血壓、心律、電解質、酸鹼平衡
     - 營養支持(高品質蛋白、限制磷攝取)
     - 併發症處理(低血壓、空氣栓塞、導管感染)
-
 prognosis:
-  general: "急性腎損傷經透析治療存活率約50-60%;慢性腎臟病末期僅為姑息治療。費用高昂,需長期監測及多次治療。"
-
+  general: 急性腎損傷經透析治療存活率約50-60%;慢性腎臟病末期僅為姑息治療。費用高昂,需長期監測及多次治療。
 prevention:
   - 早期識別及治療可逆性腎損傷原因
   - 避免腎毒性藥物使用
   - 毒物中毒時及早洗胃及支持治療
   - 維持充足灌流及水合狀態
-
-
 guidelineRefs:
   - sourceOrg: Nature medicine
-    title: Second international consensus report on gaps and opportunities for the clinical translation of precision diabetes medicine.
+    title: >-
+      Second international consensus report on gaps and opportunities for the clinical translation of precision diabetes
+      medicine.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10735053/
     type: consensus
-    pmid: "37794253"
+    pmid: '37794253'
     relevance: primary
-  - sourceOrg: "Cell death &amp; disease"
-    title: "Current understanding of eryptosis: mechanisms, physiological functions, role in disease, pharmacological applications, and nomenclature recommendations."
+  - sourceOrg: Cell death &amp; disease
+    title: >-
+      Current understanding of eryptosis: mechanisms, physiological functions, role in disease, pharmacological
+      applications, and nomenclature recommendations.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12216432/
     type: review
-    pmid: "40592821"
+    pmid: '40592821'
     relevance: primary
   - sourceOrg: BMC infectious diseases
-    title: "Toxoplasmosis landscape: a systematic review and meta-analysis of seroprevalence in healthy and non-healthy individuals in Sudan (1990-2025)."
+    title: >-
+      Toxoplasmosis landscape: a systematic review and meta-analysis of seroprevalence in healthy and non-healthy
+      individuals in Sudan (1990-2025).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12220412/
     type: review
-    pmid: "40596963"
+    pmid: '40596963'
     relevance: primary
   - sourceOrg: BMC infectious diseases
-    title: "Seroprevalence of hepatitis B virus surface antigen (HBsAg) in Egypt (2000-2022): a systematic review with meta-analysis."
+    title: >-
+      Seroprevalence of hepatitis B virus surface antigen (HBsAg) in Egypt (2000-2022): a systematic review with
+      meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10007808/
     type: review
-    pmid: "36899311"
+    pmid: '36899311'
     relevance: primary
   - sourceOrg: BMJ open
-    title: "Reducing the carbon footprint of research: experience from the NightLife study."
+    title: 'Reducing the carbon footprint of research: experience from the NightLife study.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10151866/
     type: review
-    pmid: "37094890"
+    pmid: '37094890'
     relevance: primary
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: oliguria-anuria
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 獸醫血液透析 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+        - anorexia 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液生化
+          notes: BUN、肌酐極度升高,評估透析緊急性
+        - name: 血氣分析
+          notes: 嚴重代謝性酸中毒,pH可能<7.1
+        - name: 心電圖
+          notes: 監測高鉀血症對心臟影響
+ddxSource: auto-generated

@@ -3,18 +3,18 @@ nameEn: Persian Cat Idiopathic Facial Dermatitis
 nameZh: 波斯貓特發性面部皮膚炎
 bodySystem: dermatology
 description: 波斯貓特有的慢性面部皮膚病,病因不明。主要侵犯臉部皮膚皺褶,表現為油性分泌物、黑色結痂、繼發性感染,需終生管理。
-
 aliases:
-  - { alias: 面部皮膚炎, language: zh }
-  - { alias: Facial Dermatitis, language: en }
-  - { alias: Idiopathic Facial Fold Dermatitis, language: en }
-
+  - alias: 面部皮膚炎
+    language: zh
+  - alias: Facial Dermatitis
+    language: en
+  - alias: Idiopathic Facial Fold Dermatitis
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 波斯貓及極端短鼻品種特有
-
 etiology:
   categories:
     - name: 多因子皮膚病
@@ -23,7 +23,6 @@ etiology:
         - 皮脂分泌過度
         - 繼發性酵母菌或細菌感染
         - 可能免疫介導成分
-
 clinicalSigns:
   early:
     - 鼻樑、眼周油性分泌物
@@ -34,23 +33,21 @@ clinicalSigns:
     - 惡臭
     - 皮膚增厚、色素沉著
     - 搔癢、不適
-
 diagnosis:
   primaryTests:
     - name: 皮膚刮搔檢查
-      notes: "排除寄生蟲(Demodex)"
+      notes: 排除寄生蟲(Demodex)
     - name: 細胞學檢查
-      notes: "評估繼發性細菌或酵母菌"
+      notes: 評估繼發性細菌或酵母菌
     - name: 真菌培養
-      notes: "排除皮黴菌"
+      notes: 排除皮黴菌
     - name: 皮膚活檢
-      notes: "排除自體免疫或腫瘤"
+      notes: 排除自體免疫或腫瘤
   differentialDiagnoses:
     - 皮黴菌感染
     - 毛囊蟲症
     - 天疱瘡
     - 過敏性皮膚炎
-
 treatment:
   medical:
     - 每日清潔(稀釋Chlorhexidine或溫和清潔劑)
@@ -59,11 +56,34 @@ treatment:
     - 類固醇(Prednisolone 1-2 mg/kg PO q24h,短期)
     - Tacrolimus 0.1% 軟膏(免疫調節)
     - 終生維持性清潔
-
 prognosis:
-  general: "無法治癒,需終生管理。適當照護可控制症狀,但易復發。生活品質通常可接受。"
-
+  general: 無法治癒,需終生管理。適當照護可控制症狀,但易復發。生活品質通常可接受。
 prevention:
   - 每日臉部清潔
   - 保持皮膚皺褶乾燥
   - 定期檢查
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: uncommon
+  - symptomId: alopecia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 波斯貓特發性面部皮膚炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 皮膚刮搔檢查
+          notes: 排除寄生蟲(Demodex)
+        - name: 細胞學檢查
+          notes: 評估繼發性細菌或酵母菌
+        - name: 真菌培養
+          notes: 排除皮黴菌
+ddxSource: auto-generated

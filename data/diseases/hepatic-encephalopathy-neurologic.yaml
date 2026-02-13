@@ -3,13 +3,15 @@ nameEn: Hepatic Encephalopathy Neurologic
 nameZh: 肝性腦病（神經表現）
 bodySystem: hepatic
 description: 肝功能嚴重不全導致神經毒素 (主要為氨 ammonia) 無法代謝，蓄積於血液中穿越血腦屏障，造成瀰漫性腦功能障礙。最常見於先天性門脈分流 (portosystemic shunt) 的幼年動物或嚴重肝病的成年動物。
-
 aliases:
-  - { alias: Hepatic Encephalopathy, language: en }
-  - { alias: Porto-Systemic Encephalopathy, language: en }
-  - { alias: 肝腦病變, language: zh }
-  - { alias: 門脈系統性腦病, language: zh }
-
+  - alias: Hepatic Encephalopathy
+    language: en
+  - alias: Porto-Systemic Encephalopathy
+    language: en
+  - alias: 肝腦病變
+    language: zh
+  - alias: 門脈系統性腦病
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓可見於先天性門脈分流或嚴重肝病 (hepatic lipidosis、cholangitis)。
-
 etiology:
   categories:
     - name: 門脈分流
@@ -35,7 +36,6 @@ etiology:
         - 消化道出血
         - 便秘
         - 感染/敗血症
-
 clinicalSigns:
   early:
     - 餐後精神狀態改變 (尤其高蛋白飲食後)
@@ -47,7 +47,6 @@ clinicalSigns:
     - 皮質性失明
     - 癲癇發作
     - 昏迷
-
 diagnosis:
   primaryTests:
     - name: 空腹與餐後膽汁酸
@@ -56,7 +55,6 @@ diagnosis:
       notes: 升高為肝性腦病直接證據。需即時送檢避免偽陽性
     - name: 腹部超音波
       notes: 評估門脈分流血管、肝臟大小與回聲。小肝臟提示慢性分流
-
 treatment:
   principles:
     - 降低血氨為急性治療核心
@@ -67,36 +65,78 @@ treatment:
     - 抗生素 (Metronidazole 或 Neomycin) 減少腸道產氨菌
     - 限蛋白飲食 (選擇高品質易消化蛋白質)
     - 門脈分流：ameroid constrictor 或 cellophane banding 手術
-
 prognosis: 先天性門脈分流手術後預後良好至優良 (85% 以上臨床改善)。藥物管理可穩定多數病例。嚴重肝硬化或急性肝衰竭者預後不良。貓門脈分流手術預後較犬略差。
-
-
 guidelineRefs:
   - sourceOrg: International journal of surgery (London, England)
     title: Stem cell transplantation therapy for advanced liver damage-associated neurodegenerative disorders.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11573053/
     type: review
-    pmid: "39699862"
+    pmid: '39699862'
   - sourceOrg: Neural regeneration research
     title: Pathological and therapeutic effects of extracellular vesicles in neurological and neurodegenerative diseases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10479838/
     type: review
-    pmid: "37488844"
+    pmid: '37488844'
   - sourceOrg: Scientific reports
-    title: Treatment with hydrogen-rich water protects against thioacetamide-induced hepatic encephalopathy in rats through stabilizing liver-brain disturbance.
+    title: >-
+      Treatment with hydrogen-rich water protects against thioacetamide-induced hepatic encephalopathy in rats through
+      stabilizing liver-brain disturbance.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12102331/
     type: research
-    pmid: "40410340"
-  - sourceOrg: "Stem cell research &amp; therapy"
-    title: Extracellular vesicles from mesenchymal stem cells improve neuroinflammation and neurotransmission in hippocampus and cognitive impairment in rats with mild liver damage and minimal hepatic encephalopathy.
+    pmid: '40410340'
+  - sourceOrg: Stem cell research &amp; therapy
+    title: >-
+      Extracellular vesicles from mesenchymal stem cells improve neuroinflammation and neurotransmission in hippocampus
+      and cognitive impairment in rats with mild liver damage and minimal hepatic encephalopathy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11656658/
     type: research
-    pmid: "39696620"
-  - sourceOrg: "JHEP reports : innovation in hepatology"
+    pmid: '39696620'
+  - sourceOrg: 'JHEP reports : innovation in hepatology'
     title: Multiple ammonia-induced episodes of hepatic encephalopathy provoke neuronal cell loss in bile-duct ligated rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10628859/
     type: research
-    pmid: "37942225"
+    pmid: '37942225'
 pubmedQueries:
   - query: '"hepatic encephalopathy" AND (veterinary OR canine OR feline) AND ("portosystemic shunt" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: blindness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肝性腦病（神經表現） 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - seizures 相關症狀
+        - ptyalism 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 空腹與餐後膽汁酸
+          notes: 顯著升高支持肝臟代謝功能不全。門脈分流的敏感篩檢
+        - name: 血氨 (Ammonia)
+          notes: 升高為肝性腦病直接證據。需即時送檢避免偽陽性
+        - name: 腹部超音波
+          notes: 評估門脈分流血管、肝臟大小與回聲。小肝臟提示慢性分流
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 降低血氨為急性治療核心
+        - 低蛋白飲食減少氨產生
+        - 門脈分流者手術為根治方式
+ddxSource: auto-generated

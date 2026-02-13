@@ -3,11 +3,11 @@ nameEn: Hyperchloremia
 nameZh: 高血氯症
 bodySystem: electrolyte
 description: 血清氯離子濃度高於正常範圍（犬貓 >120 mEq/L），常與高血鈉症或代謝性酸中毒並存。多因水分流失、高張性鹽水輸液或腎小管性酸中毒引起。
-
 aliases:
-  - { alias: 血氯過高, language: zh }
-  - { alias: Hyperchloraemia, language: en }
-
+  - alias: 血氯過高
+    language: zh
+  - alias: Hyperchloraemia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓常因脫水或代謝性酸中毒引起
-
 etiology:
   categories:
     - name: 水分流失（相對性高血氯）
@@ -34,7 +33,6 @@ etiology:
         - 腎小管性酸中毒
         - 慢性腎臟病
         - 乙二醇中毒
-
 clinicalSigns:
   early:
     - 多數無特異性症狀
@@ -42,65 +40,86 @@ clinicalSigns:
   progressive:
     - 代謝性酸中毒症狀（過度換氣）
     - 肌肉無力
-
 diagnosis:
   primaryTests:
     - name: 血清電解質
-      notes: "Cl >120 mEq/L，評估陰離子間隙（AG）"
+      notes: Cl >120 mEq/L，評估陰離子間隙（AG）
     - name: 血液氣體分析
-      notes: "非陰離子間隙性代謝性酸中毒（HCO3- 降低，AG 正常）"
+      notes: 非陰離子間隙性代謝性酸中毒（HCO3- 降低，AG 正常）
     - name: 尿氯及尿 pH
-      notes: "評估腎小管性酸中毒"
+      notes: 評估腎小管性酸中毒
   differentialDiagnoses:
     - 脫水
     - 腎小管性酸中毒
     - 高張性鹽水輸液過量
     - 慢性腎臟病
-
 treatment:
   medical:
     - 治療潛在病因
     - 脫水患者補充等張或低張性輸液
     - 代謝性酸中毒：Sodium bicarbonate 1-2 mEq/kg IV
     - 停止高張性鹽水輸液
-
 prognosis:
-  general: "預後良好，多數病例為脫水或輸液相關，經矯正後可恢復。腎小管性酸中毒需長期管理。"
-
+  general: 預後良好，多數病例為脫水或輸液相關，經矯正後可恢復。腎小管性酸中毒需長期管理。
 prevention:
   - 避免過量高張性鹽水輸液
   - 脫水患者監測電解質
   - 慢性腎臟病患者定期電解質檢查
-
-
 guidelineRefs:
   - sourceOrg: Open veterinary journal
-    title: "Urinary liver-type fatty acid-binding protein in two dogs with acquired Fanconi syndrome: A case report."
+    title: 'Urinary liver-type fatty acid-binding protein in two dogs with acquired Fanconi syndrome: A case report.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9805757/
     type: case-report
-    pmid: "36650883"
+    pmid: '36650883'
     relevance: supporting
   - sourceOrg: Veterinary ophthalmology
     title: Pyogranulomatous panophthalmitis with systemic coronavirus disease in a domestic ferret (Mustela putorius furo).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7169242/
     type: case-report
-    pmid: "25918975"
+    pmid: '25918975'
     relevance: supporting
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
     title: Retrospective Evaluation of the Prognosis and Prevalence of Hyperchloremia in Dogs and Cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12779256/
     type: research
-    pmid: "41263097"
+    pmid: '41263097'
     relevance: supporting
   - sourceOrg: Pediatric research
     title: Positive impact of sodium L-lactate supplementation on blood acid-base status in preterm newborns.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12454137/
     type: research
-    pmid: "40050683"
+    pmid: '40050683'
     relevance: supporting
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Acid-base disorders in sick goats and their association with mortality: A simplified strong ion difference approach."
+    title: >-
+      Acid-base disorders in sick goats and their association with mortality: A simplified strong ion difference
+      approach.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7694813/
     type: research
-    pmid: "33140905"
+    pmid: '33140905'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: dehydration
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 高血氯症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dehydration 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清電解質
+          notes: Cl >120 mEq/L，評估陰離子間隙（AG）
+        - name: 血液氣體分析
+          notes: 非陰離子間隙性代謝性酸中毒（HCO3- 降低，AG 正常）
+        - name: 尿氯及尿 pH
+          notes: 評估腎小管性酸中毒
+ddxSource: auto-generated

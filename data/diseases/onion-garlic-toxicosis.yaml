@@ -3,15 +3,19 @@ nameEn: Onion and Garlic Toxicosis
 nameZh: 蔥蒜中毒
 bodySystem: toxicology
 description: 蔥屬植物 (Allium spp.) 含有含硫有機化合物，氧化紅血球血紅素導致 Heinz body 形成與溶血性貧血。貓較犬敏感，所有形式（生、熟、脫水、粉末）均有毒性。
-
 aliases:
-  - { alias: 洋蔥中毒, language: zh }
-  - { alias: 大蒜中毒, language: zh }
-  - { alias: 蔥屬植物中毒, language: zh }
-  - { alias: Allium Toxicosis, language: en }
-  - { alias: Onion Poisoning, language: en }
-  - { alias: Heinz Body Anemia from Allium, language: en }
-
+  - alias: 洋蔥中毒
+    language: zh
+  - alias: 大蒜中毒
+    language: zh
+  - alias: 蔥屬植物中毒
+    language: zh
+  - alias: Allium Toxicosis
+    language: en
+  - alias: Onion Poisoning
+    language: en
+  - alias: Heinz Body Anemia from Allium
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -21,7 +25,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓對蔥屬植物較犬敏感（毒性劑量約 5 g/kg），但因對食物挑剔，自願攝入大量的機率較低。嬰兒食品中含洋蔥粉為潛在來源。
-
 etiology:
   categories:
     - name: 常見蔥屬植物
@@ -33,8 +36,8 @@ etiology:
         - 蝦夷蔥 (Allium schoenoprasum)
     - name: 毒性劑量
       examples:
-        - "犬：洋蔥 >15-30 g/kg；大蒜 >5 g/kg"
-        - "貓：洋蔥 >5 g/kg；大蒜 >1-2 g/kg"
+        - 犬：洋蔥 >15-30 g/kg；大蒜 >5 g/kg
+        - 貓：洋蔥 >5 g/kg；大蒜 >1-2 g/kg
         - 所有形式（生、熟、脫水、粉末、汁液）均有毒性
         - 脫水蔥蒜粉毒性更強（濃縮）
     - name: 毒性機制
@@ -44,7 +47,6 @@ etiology:
         - Heinz body 形成（變性血紅素沉澱於紅血球膜）
         - 偏心體 (eccentrocyte) 形成
         - 脾臟移除受損紅血球導致溶血性貧血
-
 clinicalSigns:
   early:
     - 嘔吐
@@ -66,23 +68,21 @@ clinicalSigns:
     - 呼吸困難
     - 虛脫
     - 死亡（嚴重未治療者）
-
 diagnosis:
   primaryTests:
     - name: 病史與暴露確認
-      notes: "詢問攝入的蔥屬植物種類、量、形式（生/熟/粉末）與時間。注意含蔥蒜的人類食物（肉汁、醬料、嬰兒食品）"
+      notes: 詢問攝入的蔥屬植物種類、量、形式（生/熟/粉末）與時間。注意含蔥蒜的人類食物（肉汁、醬料、嬰兒食品）
     - name: 血液抹片
-      notes: "Heinz body（新亞甲藍染色最佳）、偏心體 (eccentrocyte)。貓正常可有少量 Heinz body，大量出現才具診斷意義"
+      notes: Heinz body（新亞甲藍染色最佳）、偏心體 (eccentrocyte)。貓正常可有少量 Heinz body，大量出現才具診斷意義
   imaging:
     - name: 腹部超音波
-      notes: "脾腫大（溶血時髓外造血增加）。評估其他器官"
+      notes: 脾腫大（溶血時髓外造血增加）。評估其他器官
   additional:
     - CBC（貧血程度、網狀紅血球計數評估骨髓再生反應）
     - 生化（膽紅素上升、肝指數）
     - 尿液分析（血紅素尿、膽紅素尿）
     - 網狀紅血球計數（再生性貧血）
     - Coombs test（排除免疫介導性溶血）
-
 treatment:
   principles:
     - 減少毒物吸收
@@ -100,26 +100,85 @@ treatment:
     - 止吐 (maropitant 1 mg/kg SC SID)
     - 避免氧化壓力藥物（如 acetaminophen、propofol）
     - 住院監測至 PCV 穩定（溶血高峰通常在攝入後 3-5 天）
-
 prognosis: 輕度攝入經支持治療後預後良好，多數在 1-2 週內恢復。嚴重貧血（PCV <10%）若未及時輸血預後差。慢性低劑量攝入可能導致隱匿性貧血。日本犬種因先天易感性預後需更加謹慎。
-
 guidelineRefs:
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Allium species poisoning in dogs and cats"
+    title: Allium species poisoning in dogs and cats
     url: https://pubmed.ncbi.nlm.nih.gov/15900007/
     type: review
-    pmid: "15900007"
+    pmid: '15900007'
   - sourceOrg: Veterinary Pathology
-    title: "Heinz body hemolytic anemia in dogs and cats caused by onion and garlic: a review"
+    title: 'Heinz body hemolytic anemia in dogs and cats caused by onion and garlic: a review'
     url: https://pubmed.ncbi.nlm.nih.gov/16145209/
     type: review
-    pmid: "16145209"
-
+    pmid: '16145209'
 pubmedQueries:
-  - query: '"onion" OR "garlic" OR "Allium" AND (dog OR cat OR canine OR feline) AND ("toxicosis" OR "Heinz body" OR "hemolytic anemia")'
+  - query: >-
+      "onion" OR "garlic" OR "Allium" AND (dog OR cat OR canine OR feline) AND ("toxicosis" OR "Heinz body" OR
+      "hemolytic anemia")
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "TOX"
-  sectionTitle: "TOXICOSIS"
+  chapter: TOX
+  sectionTitle: TOXICOSIS
   pdfPage: 3128
+diagnosticAlgorithm:
+  title: 洋蔥大蒜中毒 診斷流程
+  steps:
+    - step: 1
+      action: 暴露史確認
+      details: 確認蔥屬植物（洋蔥、大蒜、韭菜等）攝入
+      findings:
+        - 確認攝入蔥屬植物
+        - 攝入量評估
+        - 可能為直接食用或含蔥屬食物
+        - 症狀延遲1-5天出現
+    - step: 2
+      action: 血液學檢查
+      details: 進行全血計數和血液抹片檢查
+      findings:
+        - 乃乃氏小體（Heinz bodies）
+        - 偏心球形紅血球（eccentrocytes）
+        - 再生性溶血性貧血
+        - 網狀紅血球增加
+    - step: 3
+      action: 溶血評估
+      details: 評估溶血嚴重程度
+      findings:
+        - PCV/Hct持續下降
+        - 血紅素尿或血尿
+        - 高膽紅素血症
+        - 黏膜蒼白或黃疸
+    - step: 4
+      action: 監測與鑑別
+      details: 連續監測並排除其他溶血原因
+      findings:
+        - 連續PCV監測（溶血可能持續數天）
+        - 排除其他Heinz body貧血原因
+        - Coombs試驗排除IMHA
+        - 腎功能監測（血紅素腎病風險）
+clinicalPearls:
+  - 大蒜的毒性約為洋蔥的 3-5 倍（以每公斤體重計），但烹調可部分降低毒性
+  - 症狀可能在攝入後 1-5 天才出現，因溶血有延遲效應
+  - 某些嬰兒食品和調味料含洋蔥粉，飼主可能不自覺地給予寵物
+  - 日本犬種（秋田犬、柴犬）的紅血球對氧化損傷更敏感，應特別警惕
+monitoringItems:
+  - 每 12-24 小時監測 PCV/HCT 追蹤貧血程度
+  - 監測尿液顏色（血紅蛋白尿）
+  - 評估網織紅血球計數（骨髓再生反應）
+  - 監測腎功能（BUN、肌酐，預防血紅蛋白引起的腎損傷）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: splenomegaly
+    frequency: common
+associatedLabFindings:
+  - labId: anaemia-regenerative
+    frequency: uncommon
+ddxSource: book

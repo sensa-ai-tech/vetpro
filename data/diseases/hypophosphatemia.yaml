@@ -3,13 +3,15 @@ nameEn: Hypophosphatemia
 nameZh: 低磷血症
 bodySystem: metabolic
 description: 血清磷離子濃度低於正常值（犬 <2.5 mg/dL，貓 <3.0 mg/dL）的代謝異常。磷為 ATP 合成及細胞能量代謝的關鍵元素，嚴重低磷血症可導致溶血性貧血、呼吸肌無力及神經功能障礙。
-
 aliases:
-  - { alias: 低血磷, language: zh }
-  - { alias: 磷缺乏, language: zh }
-  - { alias: Low Phosphorus, language: en }
-  - { alias: Phosphate Depletion, language: en }
-
+  - alias: 低血磷
+    language: zh
+  - alias: 磷缺乏
+    language: zh
+  - alias: Low Phosphorus
+    language: en
+  - alias: Phosphate Depletion
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓低磷血症特別常見於肝臟脂肪變性治療開始灌食後（重餵食症候群），也見於糖尿病酮酸中毒。
-
 etiology:
   categories:
     - name: 細胞內移動（最常見急性原因）
@@ -30,7 +31,6 @@ etiology:
         - 原發性副甲狀腺功能亢進
         - 范乃可尼症候群（Fanconi syndrome）
         - 利尿劑使用
-
 clinicalSigns:
   early:
     - 肌肉無力
@@ -42,14 +42,12 @@ clinicalSigns:
     - 癲癇發作
     - 橫紋肌溶解症
     - 心肌功能障礙
-
 diagnosis:
   primaryTests:
     - name: 血清磷
       notes: 犬 <2.5 mg/dL 或貓 <3.0 mg/dL。<1.0 mg/dL 為嚴重低磷，有溶血風險。
     - name: CBC
       notes: 嚴重低磷可出現 Heinz body 溶血性貧血（尤其貓）。監測 PCV 變化。
-
 treatment:
   principles:
     - 嚴重低磷需靜脈補充
@@ -62,36 +60,87 @@ treatment:
     - 輕度低磷可口服補充
     - 重餵食症候群預防：營養恢復初期限制熱量並補磷
     - 每 6 小時追蹤血清磷濃度
-
 prognosis: 輕至中度低磷血症經補充後預後良好。嚴重低磷（<1.0 mg/dL）合併溶血性貧血預後謹慎，需積極補磷並可能需要輸血。DKA 或肝脂肪變性治療中的低磷血症若未及時處理可致命。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Phosphorus Metabolism and Function in Ruminants: Current Knowledge."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Phosphorus Metabolism and Function in Ruminants: Current Knowledge.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12784716/
     type: review
-    pmid: "41514817"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Periparturient Mineral Metabolism: Implications to Health and Productivity."
+    pmid: '41514817'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Periparturient Mineral Metabolism: Implications to Health and Productivity.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11047658/
     type: review
-    pmid: "38672379"
+    pmid: '38672379'
   - sourceOrg: Open veterinary journal
-    title: "Clinical predictive significance of biomarker molecules elevation during the transition period in cattle suffering from different pathological states: A review."
+    title: >-
+      Clinical predictive significance of biomarker molecules elevation during the transition period in cattle suffering
+      from different pathological states: A review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11268916/
     type: review
-    pmid: "39055757"
+    pmid: '39055757'
   - sourceOrg: International journal of molecular sciences
     title: Cellular and Molecular Alterations Underlying Abnormal Bone Growth in X-Linked Hypophosphatemia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8778463/
     type: review
-    pmid: "35055123"
+    pmid: '35055123'
   - sourceOrg: Journal of clinical biochemistry and nutrition
     title: Interaction between inorganic phosphate concentration and glucose metabolism in mild refeeding syndrome model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10017325/
     type: research
-    pmid: "36936877"
+    pmid: '36936877'
 pubmedQueries:
   - query: '"Hypophosphatemia" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 低磷血症 診斷流程
+  steps:
+    - step: 1
+      action: 確認低磷
+      details: 血清磷測定，犬 <2.5、貓 <3.0 mg/dL
+      findings:
+        - 血磷偏低
+        - 評估臨床嚴重程度
+    - step: 2
+      action: 評估臨床背景
+      details: 確認是否有DKA治療、長期厭食、副甲狀腺異常等背景
+      findings:
+        - DKA胰島素治療後
+        - 再餵食症候群風險
+    - step: 3
+      action: 併發症評估
+      details: CBC評估溶血、心電圖、神經學檢查
+      findings:
+        - 溶血性貧血（嚴重時）
+        - 肌肉無力/神經症狀
+    - step: 4
+      action: 補充與監測
+      details: 根據嚴重程度口服或靜脈補磷，定期監測
+      findings:
+        - 磷濃度逐步回升
+        - 併發症改善
+clinicalPearls:
+  - DKA治療開始胰島素後4-24小時是低磷血症的高風險窗口——必須預防性監測
+  - 嚴重低磷血症的三大紅旗：溶血性貧血+肌肉無力+神經症狀
+  - 靜脈補磷時需同時監測鈣（磷鈣沉積風險）和鉀（使用磷酸鉀時）
+monitoringItems:
+  - 血清磷濃度（急性補充期間q4-6h，穩定後q12-24h）
+  - CBC和網織紅血球計數（監測溶血）
+  - 血清鈣和鉀（防止補磷併發症）
+  - 臨床神經學狀態評估
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+ddxSource: book

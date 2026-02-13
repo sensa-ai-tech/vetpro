@@ -3,25 +3,30 @@ nameEn: Urolithiasis
 nameZh: 尿路結石
 bodySystem: renal
 description: 泌尿道中礦物質結晶沉積形成結石 (尿石)，可發生於腎臟、輸尿管、膀胱或尿道，以草酸鈣與磷酸銨鎂 (struvite) 結石最常見。
-
 aliases:
-  - { alias: Urinary Calculi, language: en }
-  - { alias: Urinary Stones, language: en }
-  - { alias: Bladder Stones, language: en }
-  - { alias: 尿石症, language: zh }
-  - { alias: 膀胱結石, language: zh }
-  - { alias: 腎結石, language: zh }
-
+  - alias: Urinary Calculi
+    language: en
+  - alias: Urinary Stones
+    language: en
+  - alias: Bladder Stones
+    language: en
+  - alias: 尿石症
+    language: zh
+  - alias: 膀胱結石
+    language: zh
+  - alias: 腎結石
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
-    notes: Struvite (約 40%) 與草酸鈣 (約 40%) 為最常見。好發品種 — Dalmatian (尿酸鹽結石)、Miniature Schnauzer (草酸鈣/struvite)、Bichon Frise (草酸鈣)、Shih Tzu、Yorkshire Terrier。犬 struvite 結石多與 UTI 相關。
+    notes: >-
+      Struvite (約 40%) 與草酸鈣 (約 40%) 為最常見。好發品種 — Dalmatian (尿酸鹽結石)、Miniature Schnauzer (草酸鈣/struvite)、Bichon Frise
+      (草酸鈣)、Shih Tzu、Yorkshire Terrier。犬 struvite 結石多與 UTI 相關。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
     notes: 草酸鈣 (約 50%) 與 struvite (約 40%) 為最常見。貓 struvite 多為無菌性。公貓尿道阻塞風險高。輸尿管結石 (草酸鈣) 在貓日益常見。
-
 etiology:
   categories:
     - name: Struvite (磷酸銨鎂，MgNH4PO4·6H2O)
@@ -43,9 +48,10 @@ etiology:
         - 胱胺酸 (Cystine — 遺傳性胱胺酸尿症)
         - 矽酸鹽 (Silicate — 少見)
         - 混合型/複合型結石
-
-pathophysiology: 尿石形成需要尿液中礦物質過飽和、存在促進結晶化的因子 (核化因子)、缺乏結晶化抑制因子。Struvite 結石在犬多因產脲酶細菌 (Staphylococcus pseudintermedius、Proteus spp.) 分解尿素產生氨使尿液鹼化，同時釋放磷酸根與銨根促進沉積。草酸鈣結石與代謝因素相關，包括高鈣尿症 (高鈣血症或腎小管鈣重吸收障礙)、高草酸尿症、低枸橼酸尿症 (尿液缺乏結晶抑制劑)。結石可造成泌尿道機械性阻塞、黏膜損傷、繼發感染。輸尿管結石阻塞可導致水腎與急性/慢性腎損傷。尿道結石完全阻塞為致命急症 (急性腎後性腎衰竭、高血鉀)。
-
+pathophysiology: >-
+  尿石形成需要尿液中礦物質過飽和、存在促進結晶化的因子 (核化因子)、缺乏結晶化抑制因子。Struvite 結石在犬多因產脲酶細菌 (Staphylococcus pseudintermedius、Proteus spp.)
+  分解尿素產生氨使尿液鹼化，同時釋放磷酸根與銨根促進沉積。草酸鈣結石與代謝因素相關，包括高鈣尿症 (高鈣血症或腎小管鈣重吸收障礙)、高草酸尿症、低枸橼酸尿症
+  (尿液缺乏結晶抑制劑)。結石可造成泌尿道機械性阻塞、黏膜損傷、繼發感染。輸尿管結石阻塞可導致水腎與急性/慢性腎損傷。尿道結石完全阻塞為致命急症 (急性腎後性腎衰竭、高血鉀)。
 clinicalSigns:
   early:
     - 頻尿
@@ -65,28 +71,26 @@ clinicalSigns:
     - 膀胱破裂 (罕見但致命)
     - 水腎 (輸尿管阻塞)
     - 高血鉀致心律不整 (阻塞性急症)
-
 diagnosis:
   primaryTests:
     - name: 尿液分析
-      notes: "pH 值 (鹼性提示 struvite/UTI、酸性提示 CaOx)。血尿、膿尿、菌尿。結晶鏡檢 (struvite coffin-lid、CaOx envelope/dumbbell)。注意：結晶存在不等於結石存在"
+      notes: pH 值 (鹼性提示 struvite/UTI、酸性提示 CaOx)。血尿、膿尿、菌尿。結晶鏡檢 (struvite coffin-lid、CaOx envelope/dumbbell)。注意：結晶存在不等於結石存在
     - name: 尿液培養與藥敏試驗
-      notes: "犬 struvite 幾乎均與 UTI 相關，培養為必要檢查。貓 struvite 多為無菌性"
+      notes: 犬 struvite 幾乎均與 UTI 相關，培養為必要檢查。貓 struvite 多為無菌性
     - name: 生化
-      notes: "BUN/Crea (評估腎功能)。鈣 (高鈣血症→CaOx)。尿酸 (肝門脈分流→尿酸鹽)。電解質 (阻塞時高血鉀)"
+      notes: BUN/Crea (評估腎功能)。鈣 (高鈣血症→CaOx)。尿酸 (肝門脈分流→尿酸鹽)。電解質 (阻塞時高血鉀)
   imaging:
     - name: 腹部 X 光
-      notes: "Struvite 與 CaOx 為 X 光不透過性 (radiopaque)，可見。尿酸鹽與胱胺酸為 X 光半透過性/透過性，可能看不到"
+      notes: Struvite 與 CaOx 為 X 光不透過性 (radiopaque)，可見。尿酸鹽與胱胺酸為 X 光半透過性/透過性，可能看不到
     - name: 腹部超音波
-      notes: "偵測所有類型結石 (包括 X 光看不到的)。輸尿管結石與水腎評估。膀胱壁增厚"
+      notes: 偵測所有類型結石 (包括 X 光看不到的)。輸尿管結石與水腎評估。膀胱壁增厚
     - name: 對比攝影 (Double-contrast cystography)
-      notes: "X 光不確定時使用。偵測小結石與膀胱腫塊鑑別"
+      notes: X 光不確定時使用。偵測小結石與膀胱腫塊鑑別
   additional:
     - 結石分析 (取出後送紅外線光譜/X 光繞射分析 — 黃金標準)
     - 血清離子化鈣 (排除副甲狀腺功能亢進)
     - 門脈分流評估 (幼犬尿酸鹽結石)
     - 胱胺酸尿篩檢 (nitroprusside test)
-
 treatment:
   principles:
     - 區分結石類型是治療關鍵 (飲食溶解 vs 手術取出)
@@ -96,19 +100,19 @@ treatment:
     - 預防復發與結石類型管理同樣重要
   medications:
     - name: 溶解處方飲食 (Struvite)
-      dose: "專用 struvite 溶解飲食，持續至結石消失後 1 個月 (通常 4-12 週)"
+      dose: 專用 struvite 溶解飲食，持續至結石消失後 1 個月 (通常 4-12 週)
       notes: 僅適用 struvite 結石。犬需同時抗生素治療 UTI。定期 X 光追蹤溶解進度
     - name: 抗生素 (感染性 struvite)
-      dose: "依培養結果選藥，至少治療至結石完全溶解後 1 週"
+      dose: 依培養結果選藥，至少治療至結石完全溶解後 1 週
       notes: 犬 struvite 必須同時治療 UTI，否則無法溶解
     - name: Potassium citrate (草酸鈣預防)
-      dose: "犬 75-150 mg/kg/day PO 分二次；貓 40-75 mg/kg/day PO 分二次"
+      dose: 犬 75-150 mg/kg/day PO 分二次；貓 40-75 mg/kg/day PO 分二次
       notes: 鹼化尿液、增加尿液枸橼酸 (結晶抑制劑)。CaOx 復發預防
     - name: Allopurinol (尿酸鹽結石)
-      dose: "犬 10-15 mg/kg PO BID"
+      dose: 犬 10-15 mg/kg PO BID
       notes: 黃嘌呤氧化酶抑制劑，降低尿酸生成。Dalmatian 與尿酸鹽結石犬使用
     - name: Hydrochlorothiazide (草酸鈣預防)
-      dose: "犬 2-4 mg/kg PO BID"
+      dose: 犬 2-4 mg/kg PO BID
       notes: 減少尿鈣排泄。用於 CaOx 復發且高鈣尿症的犬
   general:
     - 增加水分攝取 (濕食、多水碗、流動飲水器)
@@ -119,11 +123,12 @@ treatment:
     - 尿道造口術 (反覆阻塞的公貓)
     - 定期影像追蹤 (每 3-6 個月)
     - 定期尿液分析與培養
-
-emergencyNotes: 尿道完全阻塞為致命急症！公貓尿道阻塞最常見。立即檢查血鉀 (>7 mEq/L 可致命心律不整)。高血鉀處理：Calcium gluconate 10% (0.5-1 mL/kg IV slow)、regular insulin + dextrose、sodium bicarbonate。穩定後盡快解除阻塞 (尿道導管沖洗)。膀胱破裂需緊急手術修復與腹腔引流。
-
-prognosis: 依結石類型與位置而異。Struvite 結石經飲食溶解與 UTI 治療預後良好。草酸鈣結石手術取出後復發率較高 (犬 1 年約 10%，3 年約 30-50%)。輸尿管阻塞貓 SUB 裝置或支架預後中等至良好。預防性飲食管理可顯著降低復發率。
-
+emergencyNotes: >-
+  尿道完全阻塞為致命急症！公貓尿道阻塞最常見。立即檢查血鉀 (>7 mEq/L 可致命心律不整)。高血鉀處理：Calcium gluconate 10% (0.5-1 mL/kg IV slow)、regular insulin +
+  dextrose、sodium bicarbonate。穩定後盡快解除阻塞 (尿道導管沖洗)。膀胱破裂需緊急手術修復與腹腔引流。
+prognosis: >-
+  依結石類型與位置而異。Struvite 結石經飲食溶解與 UTI 治療預後良好。草酸鈣結石手術取出後復發率較高 (犬 1 年約 10%，3 年約 30-50%)。輸尿管阻塞貓 SUB
+  裝置或支架預後中等至良好。預防性飲食管理可顯著降低復發率。
 guidelineRefs:
   - sourceOrg: ACVIM
     title: ACVIM Small Animal Consensus Recommendations on the Treatment and Prevention of Uroliths in Dogs and Cats
@@ -137,23 +142,75 @@ guidelineRefs:
     title: ACVIM Small Animal Consensus Recommendations on the Treatment and Prevention of Uroliths in Dogs and Cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5032870/
     type: consensus
-    pmid: "27611724"
+    pmid: '27611724'
   - sourceOrg: Journal of feline medicine and surgery
     title: 2025 iCatCare consensus guidelines on the diagnosis and management of lower urinary tract diseases in cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11816079/
     type: guideline
-    pmid: "39935081"
+    pmid: '39935081'
   - sourceOrg: Journal of feline medicine and surgery
-    title: Survey of veterinarians in the USA to evaluate trends in the treatment approach for non-obstructive feline idiopathic cystitis.
+    title: >-
+      Survey of veterinarians in the USA to evaluate trends in the treatment approach for non-obstructive feline
+      idiopathic cystitis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11418619/
     type: research
-    pmid: "39163476"
+    pmid: '39163476'
     relevance: supporting
 pubmedQueries:
   - query: '"urolithiasis" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "dissolution" OR "prevention")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "URN"
-  sectionTitle: "UROLITHIASIS"
+  chapter: URN
+  sectionTitle: UROLITHIASIS
   pdfPage: 1566
+diagnosticAlgorithm:
+  title: 尿石症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 詢問排尿困難、血尿及排尿行為變化
+      findings:
+        - 血尿
+        - 頻尿或排尿困難
+        - 排尿姿勢異常
+        - 可能無症狀
+    - step: 2
+      action: 尿液分析與影像
+      details: 完整尿液分析及結晶鑑定
+      findings:
+        - 尿液結晶（草酸鈣、鳥糞石等）
+        - 血尿與蛋白尿
+        - 尿液pH評估
+        - 細菌培養
+    - step: 3
+      action: 影像定位
+      details: X光及超音波確認結石位置與數量
+      findings:
+        - X光顯示不透光結石
+        - 超音波偵測透光結石
+        - 膀胱、輸尿管及腎臟評估
+        - 尿道結石定位
+    - step: 4
+      action: 結石分析與治療
+      details: 結石成分分析指導治療
+      findings:
+        - 紅外線光譜或X光繞射分析
+        - 鳥糞石可溶解治療
+        - 草酸鈣需手術移除
+        - 制定預防飲食方案
+clinicalPearls:
+  - 鳥糞石可溶解，草酸鈣不可
+  - Dalmatian需低嘌呤飲食
+  - 結石分析很重要（不同類型處理不同）
+  - UTI常與鳥糞石相關
+monitoringItems:
+  - 尿液分析
+  - 定期影像追蹤
+  - 飲食遵從性
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: common
+  - symptomId: haematuria
+    frequency: common
+ddxSource: book

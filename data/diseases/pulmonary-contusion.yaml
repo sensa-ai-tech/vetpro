@@ -3,12 +3,13 @@ nameEn: Pulmonary Contusion
 nameZh: 肺挫傷
 bodySystem: respiratory
 description: 肺挫傷為胸部鈍傷導致的肺實質出血與水腫，是犬貓胸部創傷最常見的併發症。交通事故、高處墜落與被踢傷為主要原因。病變通常在創傷後 12-24 小時內進展至最嚴重，48-72 小時後開始改善。嚴重肺挫傷可導致急性呼吸窘迫症候群（ARDS）。
-
 aliases:
-  - { alias: 肺出血, language: zh }
-  - { alias: Lung Contusion, language: en }
-  - { alias: Pulmonary Bruise, language: en }
-
+  - alias: 肺出血
+    language: zh
+  - alias: Lung Contusion
+    language: en
+  - alias: Pulmonary Bruise
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓隻高處墜落（high-rise syndrome）為常見原因。貓隻胸壁彈性較大，可在無肋骨骨折的情況下發生嚴重肺挫傷。
-
 etiology:
   categories:
     - name: 胸部鈍傷
@@ -31,7 +31,6 @@ etiology:
         - 間質與肺泡水腫
         - 肺泡萎陷（atelectasis）
         - 通氣/灌流不配合（V/Q mismatch）
-
 clinicalSigns:
   early:
     - 呼吸急促
@@ -44,14 +43,12 @@ clinicalSigns:
     - 心搏過速
     - 低血氧
     - ARDS（嚴重者）
-
 diagnosis:
   primaryTests:
     - name: 胸腔 X 光
       notes: 創傷側肺部肺泡型或間質型浸潤。病變可在創傷後 6-12 小時才在 X 光上顯現。48-72 小時進展至最大範圍後開始改善。
     - name: 脈搏式血氧飽和度
       notes: SpO2 降低（<95%）。監測氧合狀態。PaO2/FiO2 ratio 評估肺部氧合效率。
-
 treatment:
   principles:
     - 支持性治療為主，多數病例可自行恢復
@@ -64,41 +61,101 @@ treatment:
     - 胸部創傷合併症處理（氣胸引流、肋骨骨折穩定）
     - 嚴重者考慮機械通氣
     - 避免利尿劑（除非合併心衰竭）
-
 prognosis: 多數肺挫傷在適當支持治療下預後良好，48-72 小時達高峰後逐漸改善，3-7 天內 X 光病變消退。嚴重挫傷進展為 ARDS 者預後不良。合併多處創傷者預後取決於整體傷勢嚴重程度。
-
-
 guidelineRefs:
-  - sourceOrg: "European journal of trauma and emergency surgery : official publication of the European Trauma Society"
-    title: Cannabidiol protects lung against inflammation and apoptosis in a rat model of blunt chest trauma via Bax/Bcl-2/Cas-9 signaling pathway.
+  - sourceOrg: 'European journal of trauma and emergency surgery : official publication of the European Trauma Society'
+    title: >-
+      Cannabidiol protects lung against inflammation and apoptosis in a rat model of blunt chest trauma via
+      Bax/Bcl-2/Cas-9 signaling pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11805814/
     type: research
-    pmid: "39918746"
+    pmid: '39918746'
     relevance: supporting
   - sourceOrg: Kardiochirurgia i torakochirurgia polska = Polish journal of cardio-thoracic surgery
     title: Effect of glutamine and arginine treatment on the inflammatory response in a rat model of pulmonary contusion.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12670224/
     type: research
-    pmid: "41340688"
+    pmid: '41340688'
     relevance: supporting
   - sourceOrg: Medicina (Kaunas, Lithuania)
     title: Effects of Bosentan on Hypoxia, Inflammation and Oxidative Stress in Experimental Blunt Thoracic Trauma Model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11278988/
     type: research
-    pmid: "39064577"
+    pmid: '39064577'
     relevance: supporting
   - sourceOrg: Frontiers in veterinary science
-    title: "Retrospective evaluation of the agreement between thoracic point-of-care ultrasound and thoracic radiographs in cats with recent trauma: 111 cats."
+    title: >-
+      Retrospective evaluation of the agreement between thoracic point-of-care ultrasound and thoracic radiographs in
+      cats with recent trauma: 111 cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11234836/
     type: research
-    pmid: "38988977"
+    pmid: '38988977'
     relevance: supporting
   - sourceOrg: Turk gogus kalp damar cerrahisi dergisi
-    title: "The effect of rutin on pulmonary contusion induced by blunt trauma in rats: Biochemical and histopathological evaluation."
+    title: >-
+      The effect of rutin on pulmonary contusion induced by blunt trauma in rats: Biochemical and histopathological
+      evaluation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9580287/
     type: research
-    pmid: "36303692"
+    pmid: '36303692'
     relevance: supporting
 pubmedQueries:
   - query: '"pulmonary contusion" AND (veterinary OR canine OR feline) AND ("trauma" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 肺挫傷 診斷流程
+  steps:
+    - step: 1
+      action: 緊急評估
+      details: 外傷後評估呼吸功能
+      findings:
+        - 外傷後呼吸困難進行性加重
+        - 咳血或血性鼻分泌物
+        - 胸壁挫傷或擦傷
+        - 呼吸急促與發紺
+    - step: 2
+      action: 胸腔X光
+      details: 注意挫傷可能在受傷後12-24小時才明顯
+      findings:
+        - 肺泡或間質浸潤
+        - 非對稱性分布
+        - 合併氣胸或肋骨骨折
+        - 病變在24-48小時最嚴重
+    - step: 3
+      action: 全身創傷評估
+      details: 肺挫傷常伴隨其他創傷
+      findings:
+        - 氣胸合併評估
+        - 肋骨骨折確認
+        - 腹部臟器損傷排除
+        - 血氣分析評估氧合
+    - step: 4
+      action: 連續監測
+      details: 挫傷可能在48小時內持續惡化
+      findings:
+        - 連續X光追蹤24-48小時
+        - 氧合狀態監測
+        - 72-96小時後應開始改善
+        - 未改善考慮ARDS
+clinicalPearls:
+  - 肺挫傷X光變化在傷後數小時可能尚未完全表現，24-48小時後最明顯
+  - 輸液量應謹慎控制，過多會加重肺水腫
+  - 疼痛控制對維持通氣功能很重要
+  - 多數輕中度病例48-72小時內開始改善
+monitoringItems:
+  - 呼吸頻率和型態
+  - 血氧飽和度
+  - 連續胸部X光
+  - 動脈血氣（嚴重時）
+associatedSymptoms:
+  - symptomId: haemoptysis
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+ddxSource: book

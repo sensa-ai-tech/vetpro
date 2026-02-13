@@ -3,13 +3,15 @@ nameEn: Thyroid Carcinoma
 nameZh: 甲狀腺癌
 bodySystem: oncology
 description: 犬甲狀腺最常見的腫瘤類型，多為惡性且具局部侵犯性。貓甲狀腺腫瘤多為良性腺瘤，惡性癌較少見。
-
 aliases:
-  - { alias: Thyroid Cancer, language: en }
-  - { alias: Thyroid Neoplasia, language: en }
-  - { alias: 甲狀腺腫瘤, language: zh }
-  - { alias: 甲狀腺惡性腫瘤, language: zh }
-
+  - alias: Thyroid Cancer
+    language: en
+  - alias: Thyroid Neoplasia
+    language: en
+  - alias: 甲狀腺腫瘤
+    language: zh
+  - alias: 甲狀腺惡性腫瘤
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓甲狀腺腫瘤約 1-3% 為惡性甲狀腺癌。多數為功能性良性腺瘤性增生（甲亢）。惡性癌可能被甲亢掩蓋。
-
 etiology:
   categories:
     - name: 犬甲狀腺癌
@@ -38,9 +39,9 @@ etiology:
       examples:
         - 舌根至心基底沿途異位甲狀腺組織
         - 前縱膈異位甲狀腺癌
-
-pathophysiology: 犬甲狀腺癌多起源於濾泡上皮細胞，約 60-70% 為非功能性（不分泌甲狀腺荷爾蒙），約 10-20% 為功能性（引起甲亢）。腫瘤具高度局部侵犯性，常侵犯周圍血管（頸靜脈/頸動脈）、食道、氣管。血行轉移率高，約 30-40% 確診時已有肺轉移。區域淋巴結轉移率約 30%。活動性（非固定）腫塊通常較小且預後較佳；固定性腫塊代表局部侵犯嚴重。髓質細胞癌分泌降鈣素 (calcitonin)，偶引起低鈣血症。
-
+pathophysiology: >-
+  犬甲狀腺癌多起源於濾泡上皮細胞，約 60-70% 為非功能性（不分泌甲狀腺荷爾蒙），約 10-20% 為功能性（引起甲亢）。腫瘤具高度局部侵犯性，常侵犯周圍血管（頸靜脈/頸動脈）、食道、氣管。血行轉移率高，約 30-40%
+  確診時已有肺轉移。區域淋巴結轉移率約 30%。活動性（非固定）腫塊通常較小且預後較佳；固定性腫塊代表局部侵犯嚴重。髓質細胞癌分泌降鈣素 (calcitonin)，偶引起低鈣血症。
 clinicalSigns:
   early:
     - 頸部腹側可觸診腫塊（通常為偶然發現）
@@ -60,30 +61,28 @@ clinicalSigns:
     - 遠端轉移（肝、腎、骨、腦）
     - 副腫瘤症候群（高鈣血症，罕見）
     - 嚴重惡病質
-
 diagnosis:
   primaryTests:
     - name: 細針抽吸 (FNA) + 細胞學
-      notes: "可初步診斷甲狀腺腫瘤。注意血管豐富，FNA 常混血。不易區分良惡性。超音波導引建議"
+      notes: 可初步診斷甲狀腺腫瘤。注意血管豐富，FNA 常混血。不易區分良惡性。超音波導引建議
     - name: 組織病理學
-      notes: "確定診斷與分類。切除標本或 Tru-cut 切片 (注意出血風險)。免疫組化 (thyroglobulin, calcitonin) 有助分型"
+      notes: 確定診斷與分類。切除標本或 Tru-cut 切片 (注意出血風險)。免疫組化 (thyroglobulin, calcitonin) 有助分型
     - name: 甲狀腺功能檢查
-      notes: "T4、fT4、TSH。約 10-20% 犬甲狀腺癌為功能性。高 T4 需排除甲亢。低 T4 可能因腫瘤破壞正常組織"
+      notes: T4、fT4、TSH。約 10-20% 犬甲狀腺癌為功能性。高 T4 需排除甲亢。低 T4 可能因腫瘤破壞正常組織
   imaging:
     - name: 頸部超音波
-      notes: "評估腫瘤大小、回音性、血流 (Doppler)。侵犯血管/氣管評估。對側甲狀腺與淋巴結"
+      notes: 評估腫瘤大小、回音性、血流 (Doppler)。侵犯血管/氣管評估。對側甲狀腺與淋巴結
     - name: 胸腔 X 光 (三向)
-      notes: "肺轉移篩檢。約 30-40% 確診時已有肺轉移"
+      notes: 肺轉移篩檢。約 30-40% 確診時已有肺轉移
     - name: 頸部/胸腔 CT
-      notes: "手術計畫必備。評估血管侵犯範圍。偵測微小肺轉移。放射碘治療計畫"
+      notes: 手術計畫必備。評估血管侵犯範圍。偵測微小肺轉移。放射碘治療計畫
     - name: 核醫甲狀腺掃描 (Tc-99m pertechnetate)
-      notes: "評估功能性/非功能性。偵測異位組織與轉移灶。放射碘治療前評估"
+      notes: 評估功能性/非功能性。偵測異位組織與轉移灶。放射碘治療前評估
   additional:
     - 血液生化（鈣、肝腎指數）
     - CBC
     - 凝血功能（術前）
     - 區域淋巴結 FNA
-
 treatment:
   principles:
     - 活動性腫塊首選手術切除
@@ -92,16 +91,16 @@ treatment:
     - 功能性腫瘤需先控制甲亢
   medications:
     - name: 放射碘 (I-131)
-      dose: "高劑量 (15-100 mCi)，依腫瘤攝取率調整"
+      dose: 高劑量 (15-100 mCi)，依腫瘤攝取率調整
       notes: 適用於不可切除、不完全切除或功能性甲狀腺癌。需放射隔離。約 30-50% 反應率
     - name: Doxorubicin
-      dose: "30 mg/m² IV 每 3 週"
+      dose: 30 mg/m² IV 每 3 週
       notes: 轉移性或不可切除犬甲狀腺癌的化療選擇。反應率約 30-50%
     - name: Toceranib (Palladia)
-      dose: "2.75 mg/kg PO 隔日"
+      dose: 2.75 mg/kg PO 隔日
       notes: 酪氨酸激酶抑制劑。用於轉移性或不可切除病例（off-label）。有部分反應報告
     - name: Methimazole
-      dose: "2.5-5 mg PO BID（貓）；5-10 mg PO BID（犬）"
+      dose: 2.5-5 mg PO BID（貓）；5-10 mg PO BID（犬）
       notes: 術前控制功能性甲狀腺癌甲亢症狀。非抗腫瘤治療
   general:
     - 手術甲狀腺切除術（單側或雙側）
@@ -110,44 +109,107 @@ treatment:
     - 體外放射治療 (EBRT) — 固定性腫塊的替代方案
     - 定期胸腔 X 光追蹤轉移
     - 術後每 3 個月頸部超音波追蹤
-
-emergencyNotes: 大型甲狀腺腫瘤可壓迫氣管造成急性呼吸窘迫。手術中因腫瘤血管豐富可能大量出血，需備血。術後低鈣血症（副甲狀腺損傷）可在 24-72 小時內出現 — 監測離子鈣，症狀性低鈣以 10% calcium gluconate 0.5-1.5 mL/kg IV slow 治療。
-
-prognosis: 活動性腫塊完全切除後中位存活時間 20-36 個月。固定性腫塊預後較差（中位 6-12 個月）。確診時有肺轉移者中位存活約 3-6 個月。放射碘治療可延長不可切除病例存活。小腫瘤 (<20 cm³) 預後顯著優於大腫瘤。貓惡性甲狀腺癌較犬少見但預後同樣謹慎。
-
+emergencyNotes: >-
+  大型甲狀腺腫瘤可壓迫氣管造成急性呼吸窘迫。手術中因腫瘤血管豐富可能大量出血，需備血。術後低鈣血症（副甲狀腺損傷）可在 24-72 小時內出現 — 監測離子鈣，症狀性低鈣以 10% calcium gluconate 0.5-1.5
+  mL/kg IV slow 治療。
+prognosis: >-
+  活動性腫塊完全切除後中位存活時間 20-36 個月。固定性腫塊預後較差（中位 6-12 個月）。確診時有肺轉移者中位存活約 3-6 個月。放射碘治療可延長不可切除病例存活。小腫瘤 (<20 cm³)
+  預後顯著優於大腫瘤。貓惡性甲狀腺癌較犬少見但預後同樣謹慎。
 guidelineRefs:
   - sourceOrg: Veterinary and Comparative Oncology
-    title: "Canine thyroid carcinoma: a retrospective study of 74 cases."
+    title: 'Canine thyroid carcinoma: a retrospective study of 74 cases.'
     url: https://pubmed.ncbi.nlm.nih.gov/19178680/
     type: research
-    pmid: "19178680"
+    pmid: '19178680'
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: Iodine-131 treatment of thyroid carcinoma in dogs.
     url: https://pubmed.ncbi.nlm.nih.gov/16496919/
     type: research
-    pmid: "16496919"
+    pmid: '16496919'
   - sourceOrg: Veterinary Surgery
-    title: "Thyroidectomy for treatment of thyroid carcinoma in dogs: 26 cases (1984-2004)."
+    title: 'Thyroidectomy for treatment of thyroid carcinoma in dogs: 26 cases (1984-2004).'
     url: https://pubmed.ncbi.nlm.nih.gov/17451901/
     type: research
-    pmid: "17451901"
+    pmid: '17451901'
   - sourceOrg: Endocrine pathology
     title: The Thyroid Pathologist Meets Therapeutic Pharmacology.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9890439/
     type: review
-    pmid: "36723855"
+    pmid: '36723855'
     relevance: primary
   - sourceOrg: Nutrients
     title: Antitumor Effect of Various Phytochemicals on Diverse Types of Thyroid Cancers.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6356543/
     type: review
-    pmid: "30634497"
+    pmid: '30634497'
     relevance: supporting
 pubmedQueries:
   - query: '"thyroid carcinoma" AND (dog OR canine) AND ("surgery" OR "radioiodine" OR "prognosis")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "EXL"
-  sectionTitle: "NEOPLASIA"
+  chapter: EXL
+  sectionTitle: NEOPLASIA
   pdfPage: 1867
+diagnosticAlgorithm:
+  title: 甲狀腺癌 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估頸部腫塊及是否固定
+      findings:
+        - 頸部可觸及腫塊
+        - 腫塊固定或可移動
+        - 可能有吞嚥困難
+        - 可能伴甲狀腺功能亢進或正常
+    - step: 2
+      action: 甲狀腺功能
+      details: T4與相關指標
+      findings:
+        - T4可能正常或升高
+        - 游離T4
+        - 促甲狀腺素
+    - step: 3
+      action: 影像分期
+      details: 頸部與胸腔影像
+      findings:
+        - 頸部超音波腫塊特徵
+        - 胸腔X光排除肺轉移
+        - CT評估侵犯範圍
+        - 區域淋巴結
+    - step: 4
+      action: 細胞學或切片
+      details: 細針抽吸或手術切片
+      findings:
+        - 細針抽吸細胞學
+        - 組織病理確診
+        - 免疫組化分型
+        - 甲狀腺閃爍掃描評估I-131治療
+clinicalPearls:
+  - 犬頸部腫塊應考慮甲狀腺癌
+  - 腫塊可移動vs固定是重要預後因素
+  - 大部分犬甲狀腺腫瘤無功能（T4正常）
+  - 術前閃爍掃描有助於評估手術可行性
+  - 貓甲狀腺功能亢進惡性比例<5%
+  - 轉移常見部位：肺和區域淋巴結
+monitoringItems:
+  - 術後：甲狀腺功能、血鈣
+  - 影像追蹤（胸腔X光、超音波）
+  - 頸部觸診（局部復發）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+associatedLabFindings:
+  - labId: elevated-t4
+    frequency: uncommon
+ddxSource: book

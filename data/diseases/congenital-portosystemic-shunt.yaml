@@ -2,14 +2,18 @@ slug: congenital-portosystemic-shunt
 nameEn: Congenital Portosystemic Shunt
 nameZh: 先天性門體分流
 bodySystem: hepatic
-description: 先天性門體分流（congenital PSS）為先天性血管異常，門脈血液繞過肝臟直接流入體循環（後腔靜脈或奇靜脈），導致肝臟發育不良與毒素（氨、芳香族胺基酸）蓄積。犬隻好發品種包括 Yorkshire Terrier、Maltese、Miniature Schnauzer（肝外型）與大型犬（肝內型）。
-
+description: >-
+  先天性門體分流（congenital PSS）為先天性血管異常，門脈血液繞過肝臟直接流入體循環（後腔靜脈或奇靜脈），導致肝臟發育不良與毒素（氨、芳香族胺基酸）蓄積。犬隻好發品種包括 Yorkshire
+  Terrier、Maltese、Miniature Schnauzer（肝外型）與大型犬（肝內型）。
 aliases:
-  - { alias: 先天性肝門脈分流, language: zh }
-  - { alias: Congenital PSS, language: en }
-  - { alias: Congenital Portocaval Shunt, language: en }
-  - { alias: Liver Shunt, language: en }
-
+  - alias: 先天性肝門脈分流
+    language: zh
+  - alias: Congenital PSS
+    language: en
+  - alias: Congenital Portocaval Shunt
+    language: en
+  - alias: Liver Shunt
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻先天性 PSS 亦有報告，多為肝外型。波斯貓與喜馬拉雅貓可能好發。
-
 etiology:
   categories:
     - name: 血管類型
@@ -31,7 +34,6 @@ etiology:
         - Miniature Schnauzer
         - Irish Wolfhound（肝內型）
         - Labrador Retriever（肝內型）
-
 clinicalSigns:
   early:
     - 生長遲緩
@@ -44,7 +46,6 @@ clinicalSigns:
     - 多飲多尿
     - 尿酸銨尿路結石
     - 銅色虹膜（貓）
-
 diagnosis:
   primaryTests:
     - name: 血液生化 + 膽汁酸
@@ -53,48 +54,87 @@ diagnosis:
       notes: 肝臟小（microhepatia）。異常血管識別（門靜脈異常走向）。肝內型較易以超音波診斷。腎盂結石（尿酸銨）。
     - name: CT 血管攝影
       notes: 確診金標準。精確顯示分流血管解剖。術前規劃必要。
-
 treatment:
   principles:
     - 手術結紮分流血管為根治療法
     - 內科管理控制肝性腦病
     - 術前穩定是關鍵
   general:
-    - "內科管理：低蛋白飲食 + Lactulose 0.5 mL/kg PO q8-12h + Metronidazole 7.5 mg/kg PO q12h"
+    - 內科管理：低蛋白飲食 + Lactulose 0.5 mL/kg PO q8-12h + Metronidazole 7.5 mg/kg PO q12h
     - 手術結紮（ameroid constrictor 或 cellophane banding）
     - 肝內型可考慮介入性放射學（coil embolization）
     - 術後監測門脈壓力（避免急性門脈高壓）
     - 尿酸銨結石管理（低嘌呤飲食）
-
 prognosis: 手術結紮後預後良好，約 80-90% 的犬隻臨床症狀顯著改善。肝外型手術預後優於肝內型。單純內科管理長期預後較差。部分犬隻術後可完全停止低蛋白飲食。多發性門體分流（acquired 型）預後不同於先天性。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
     title: Retrospective review of outcome following medical management of a congenital portosystemic shunt in 10 cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12089725/
     type: review
-    pmid: "40384413"
+    pmid: '40384413'
   - sourceOrg: Journal of feline medicine and surgery
     title: Retrospective study of biochemical profile changes in 93 cats with different hepatobiliary diseases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12141792/
     type: research
-    pmid: "40470580"
-  - sourceOrg: "Veterinary surgery : VS"
-    title: Prognostic factors for short-term survival of cats that experienced postattenuation neurologic signs after surgical attenuation of single congenital portosystemic shunts.
+    pmid: '40470580'
+  - sourceOrg: 'Veterinary surgery : VS'
+    title: >-
+      Prognostic factors for short-term survival of cats that experienced postattenuation neurologic signs after
+      surgical attenuation of single congenital portosystemic shunts.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12282038/
     type: research
-    pmid: "40349143"
+    pmid: '40349143'
   - sourceOrg: Journal of veterinary internal medicine
     title: Plasma renin activity and aldosterone concentration in dogs with acquired portosystemic collaterals.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6979274/
     type: research
-    pmid: "31729111"
+    pmid: '31729111'
   - sourceOrg: Journal of veterinary internal medicine
     title: Portal Vein/Aorta Ratio in Dogs with Acquired Portosystemic Collaterals.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5598892/
     type: research
-    pmid: "28804949"
+    pmid: '28804949'
 pubmedQueries:
   - query: '"portosystemic shunt" AND (veterinary OR canine OR feline) AND ("congenital" OR "ameroid" OR "surgery")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: failure-to-grow
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 先天性門體分流 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - failure-to-grow 相關症狀
+        - polyuria-polydipsia 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液生化 + 膽汁酸
+          notes: 空腹與餐後膽汁酸（bile acids）升高為篩檢金標準。BUN 偏低。白蛋白偏低。肝指數可能正常或輕度升高。血氨升高。
+        - name: 腹部超音波
+          notes: 肝臟小（microhepatia）。異常血管識別（門靜脈異常走向）。肝內型較易以超音波診斷。腎盂結石（尿酸銨）。
+        - name: CT 血管攝影
+          notes: 確診金標準。精確顯示分流血管解剖。術前規劃必要。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術結紮分流血管為根治療法
+        - 內科管理控制肝性腦病
+        - 術前穩定是關鍵
+ddxSource: auto-generated

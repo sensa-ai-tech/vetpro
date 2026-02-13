@@ -2,13 +2,16 @@ slug: myelodysplastic-syndrome
 nameEn: Myelodysplastic Syndrome
 nameZh: 骨髓異常增生症候群
 bodySystem: hematology
-description: 骨髓異常增生症候群（MDS）為骨髓造血幹細胞的克隆性疾病，特徵為一個或多個血球系列的無效造血（ineffective hematopoiesis）與形態異常（dysplasia）。周邊血液表現為血球減少，骨髓中造血細胞呈形態學異常。MDS 有轉化為急性骨髓性白血病（AML）的風險。
-
+description: >-
+  骨髓異常增生症候群（MDS）為骨髓造血幹細胞的克隆性疾病，特徵為一個或多個血球系列的無效造血（ineffective
+  hematopoiesis）與形態異常（dysplasia）。周邊血液表現為血球減少，骨髓中造血細胞呈形態學異常。MDS 有轉化為急性骨髓性白血病（AML）的風險。
 aliases:
-  - { alias: MDS, language: en }
-  - { alias: 骨髓增生異常症候群, language: zh }
-  - { alias: Preleukemia, language: en }
-
+  - alias: MDS
+    language: en
+  - alias: 骨髓增生異常症候群
+    language: zh
+  - alias: Preleukemia
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻 MDS 可與 FeLV 感染相關。FeLV 陽性貓有較高的 MDS/AML 轉化風險。
-
 etiology:
   categories:
     - name: 原發性
@@ -28,7 +30,6 @@ etiology:
         - FeLV 感染（貓）
         - 先前化療或輻射暴露
         - 慢性骨髓刺激
-
 clinicalSigns:
   early:
     - 嗜睡
@@ -39,14 +40,12 @@ clinicalSigns:
     - 發燒（感染）
     - 體重減輕
     - 轉化為 AML 時症狀急性惡化
-
 diagnosis:
   primaryTests:
     - name: 全血球計數（CBC）與血液抹片
       notes: 一至三系血球減少（cytopenia）。周邊血液中可見形態異常的血球（巨大紅血球、低分葉嗜中性球、巨大血小板）。
     - name: 骨髓穿刺與活檢
       notes: 造血細胞形態異常（dysplasia）：環狀鐵母細胞、巨幼樣紅血球前驅細胞、低分葉嗜中性球等。Blast 細胞 <20%（>20% 即為 AML）。
-
 treatment:
   principles:
     - 無根治性治療
@@ -55,39 +54,97 @@ treatment:
   general:
     - 支持性輸血（pRBC）維持生活品質
     - 廣效抗生素控制感染
-    - "低劑量 Cytarabine 10 mg/m² SC q12h（部分病例有反應）"
-    - "Erythropoietin（EPO）治療嚴重貧血"
+    - 低劑量 Cytarabine 10 mg/m² SC q12h（部分病例有反應）
+    - Erythropoietin（EPO）治療嚴重貧血
     - 定期骨髓穿刺監測 blast 比例
-
 prognosis: 預後不良。犬隻 MDS 中位存活時間約數週至數月。約 20-30% 的 MDS 會進展為 AML。低 blast 比例（<5%）者存活時間較長。貓隻 FeLV 陽性者預後更差。支持性治療可改善生活品質但無法改變疾病進程。
-
-
 guidelineRefs:
   - sourceOrg: Journal of leukocyte biology
-    title: "Not just for lymphoid cells: the role of the noncanonical NF-&#x3ba;B signaling pathway in early and late myelopoiesis with a focus on hypereosinophilic disorders."
+    title: >-
+      Not just for lymphoid cells: the role of the noncanonical NF-&#x3ba;B signaling pathway in early and late
+      myelopoiesis with a focus on hypereosinophilic disorders.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11288383/
     type: review
-    pmid: "38682253"
+    pmid: '38682253'
   - sourceOrg: Animal models and experimental medicine
     title: Summary of animal models of myelodysplastic syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7954832/
     type: review
-    pmid: "33738439"
+    pmid: '33738439'
   - sourceOrg: The Indian journal of medical research
-    title: "Anti-thymocyte globulin in haematology: Recent developments."
+    title: 'Anti-thymocyte globulin in haematology: Recent developments.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6886146/
     type: review
-    pmid: "31719292"
+    pmid: '31719292'
   - sourceOrg: International journal of molecular sciences
     title: Immune Mechanisms in Myelodysplastic Syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4926477/
     type: review
-    pmid: "27314337"
+    pmid: '27314337'
   - sourceOrg: Veterinary pathology
-    title: Standardized bone marrow assessment, risk variables, and survival in dogs with myelodysplastic syndrome and acute myeloid leukemia.
+    title: >-
+      Standardized bone marrow assessment, risk variables, and survival in dogs with myelodysplastic syndrome and acute
+      myeloid leukemia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11697499/
     type: research
-    pmid: "39291964"
+    pmid: '39291964'
 pubmedQueries:
   - query: '"myelodysplastic syndrome" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "classification")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 骨髓發育不良症候群 診斷流程
+  steps:
+    - step: 1
+      action: 識別血球減少
+      details: 不明原因的一系或多系血球減少
+      findings:
+        - 非再生性貧血
+        - 嗜中性球減少
+        - 血小板減少
+    - step: 2
+      action: 血液抹片形態學
+      details: 評估血球形態異常
+      findings:
+        - 巨大紅血球
+        - 低分葉嗜中性球
+        - 巨大血小板
+    - step: 3
+      action: 骨髓檢查
+      details: 穿刺+活檢確認異常造血
+      findings:
+        - 骨髓富含細胞
+        - 多系異常形態（dysplasia）
+        - 芽細胞百分比
+    - step: 4
+      action: 分類和分期
+      details: WHO/FAB分類
+      findings:
+        - 芽細胞<20%→MDS
+        - 芽細胞≥20%→AML
+        - FeLV狀態（貓）
+clinicalPearls:
+  - 骨髓富含細胞但周邊血球減少是MDS的矛盾特徵
+  - 貓的MDS幾乎都與FeLV相關
+  - 芽細胞<20%為MDS，≥20%為AML
+  - MDS是白血病前期，需定期骨髓監測進展
+monitoringItems:
+  - 定期CBC追蹤血球變化
+  - 骨髓芽細胞比例監測（是否進展為AML）
+  - 感染防治
+  - FeLV病毒量（貓）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: petechiae-ecchymoses
+    frequency: common
+  - symptomId: splenomegaly
+    frequency: common
+ddxSource: book

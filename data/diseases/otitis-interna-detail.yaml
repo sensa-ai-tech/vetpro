@@ -3,13 +3,15 @@ nameEn: Otitis Interna Detail
 nameZh: 內耳炎詳解
 bodySystem: ear
 description: 內耳（包括耳蝸與前庭器官）的感染或炎症，多為中耳炎向內延伸所致，臨床表現以周邊前庭症狀（頭歪斜、眼球震顫、失衡）及感覺神經性聽力損失為主。
-
 aliases:
-  - { alias: 內耳感染, language: zh }
-  - { alias: 迷路炎, language: zh }
-  - { alias: Inner ear infection, language: en }
-  - { alias: Labyrinthitis, language: en }
-
+  - alias: 內耳感染
+    language: zh
+  - alias: 迷路炎
+    language: zh
+  - alias: Inner ear infection
+    language: en
+  - alias: Labyrinthitis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓內耳炎常與鼻咽息肉或慢性上呼吸道感染相關。需與特發性前庭症候群鑑別。
-
 etiology:
   categories:
     - name: 感染途徑
@@ -33,7 +34,6 @@ etiology:
         - Pseudomonas aeruginosa
         - Streptococcus spp.
         - 厭氧菌
-
 clinicalSigns:
   early:
     - 頭歪斜（患側向下）
@@ -46,19 +46,17 @@ clinicalSigns:
     - 感覺神經性聽力損失
     - 合併顏面神經麻痺
     - Horner syndrome
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
-      notes: "周邊前庭症狀評估——頭歪斜、眼球震顫方向、姿勢反應（通常正常但可能因失衡而異常）"
+      notes: 周邊前庭症狀評估——頭歪斜、眼球震顫方向、姿勢反應（通常正常但可能因失衡而異常）
     - name: 進階影像（CT/MRI）
-      notes: "MRI 為內耳評估首選。可見內耳信號異常、中耳腔充填。CT 評估骨性結構破壞"
+      notes: MRI 為內耳評估首選。可見內耳信號異常、中耳腔充填。CT 評估骨性結構破壞
   differentialDiagnoses:
     - 特發性前庭症候群（老犬/貓）
     - 中樞性前庭疾病（腦幹腫瘤、腦炎）
     - 甲狀腺功能低下相關前庭神經病變
     - 耳毒性藥物
-
 treatment:
   medical:
     - 全身性抗生素（依培養藥敏，療程 6-8 週以上）
@@ -70,11 +68,37 @@ treatment:
   surgical:
     - 鼓泡切開術（ventral bulla osteotomy）
     - TECA-LBO（合併終末期外耳炎）
-
 prognosis:
-  general: "前庭症狀多在適當治療後 2-4 週顯著改善，但頭歪斜可能持續存在為永久性代償。感覺神經性聽力損失通常為永久性。早期積極治療預後優於延遲治療。"
-
+  general: 前庭症狀多在適當治療後 2-4 週顯著改善，但頭歪斜可能持續存在為永久性代償。感覺神經性聽力損失通常為永久性。早期積極治療預後優於延遲治療。
 prevention:
   - 積極治療中耳炎防止向內耳延伸
   - 避免使用耳毒性藥物（aminoglycosides）於鼓膜破裂的耳道
   - 慢性耳病定期影像學追蹤
+associatedSymptoms:
+  - symptomId: nystagmus
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: trembling
+    frequency: common
+  - symptomId: head-tilt
+    frequency: common
+diagnosticAlgorithm:
+  title: 內耳炎詳解 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - nystagmus 相關症狀
+        - vomiting 相關症狀
+        - trembling 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 周邊前庭症狀評估——頭歪斜、眼球震顫方向、姿勢反應（通常正常但可能因失衡而異常）
+        - name: 進階影像（CT/MRI）
+          notes: MRI 為內耳評估首選。可見內耳信號異常、中耳腔充填。CT 評估骨性結構破壞
+ddxSource: auto-generated

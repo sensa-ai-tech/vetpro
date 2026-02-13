@@ -3,13 +3,15 @@ nameEn: Renal Tubular Acidosis
 nameZh: 腎小管酸中毒
 bodySystem: renal
 description: 腎小管功能障礙導致無法正常酸化尿液或回收碳酸氫鹽，引起非氮質血症性高氯代謝性酸中毒的一組腎臟疾病。犬貓罕見但臨床重要。
-
 aliases:
-  - { alias: RTA, language: en }
-  - { alias: Tubular Acidosis, language: en }
-  - { alias: 腎管性酸中毒, language: zh }
-  - { alias: 腎小管性酸血症, language: zh }
-
+  - alias: RTA
+    language: en
+  - alias: Tubular Acidosis
+    language: en
+  - alias: 腎管性酸中毒
+    language: zh
+  - alias: 腎小管性酸血症
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓極罕見。偶見於慢性腎臟病、腎盂腎炎、肝臟脂肪變性等繼發性病例。
-
 etiology:
   categories:
     - name: Type I (遠端 RTA, dRTA)
@@ -46,9 +47,11 @@ etiology:
         - Basenji 遺傳性（最經典，體染色體隱性遺傳）
         - 近端腎小管全面轉運障礙（glucose、amino acids、phosphate、HCO₃⁻、uric acid 均流失）
         - 後天性 — 藥物、毒素（chicken jerky treats 相關報告）、重金屬
-
-pathophysiology: "Type I (dRTA): 遠端集合管 α-intercalated cells 的 H⁺-ATPase 或 Cl⁻/HCO₃⁻ 交換器功能障礙，無法將 H⁺ 分泌至管腔，尿液無法正常酸化（尿 pH 持續 >5.5）。無法排出每日代謝產生的酸負荷，導致系統性代謝性酸中毒。低鈣血症（酸中毒促進骨鈣釋出但腎臟排鈣增加）與高鈣尿可導致腎鈣化症與 CaOx/磷酸鈣結石。低鉀血症（遠端鈉回收增加帶動鉀排泄）。Type II (pRTA): 近端腎小管 Na⁺/H⁺ 交換器或碳酸酐酶功能障礙，無法回收濾過的 HCO₃⁻。大量 HCO₃⁻ 流失於尿液中。當血清 HCO₃⁻ 降至低於受損的回收閾值後，遠端腎小管仍可酸化尿液，因此酸中毒程度通常較 Type I 輕。Fanconi syndrome 時除 HCO₃⁻ 外，glucose、amino acids、phosphate 等均大量流失。"
-
+pathophysiology: >-
+  Type I (dRTA): 遠端集合管 α-intercalated cells 的 H⁺-ATPase 或 Cl⁻/HCO₃⁻ 交換器功能障礙，無法將 H⁺ 分泌至管腔，尿液無法正常酸化（尿 pH 持續
+  >5.5）。無法排出每日代謝產生的酸負荷，導致系統性代謝性酸中毒。低鈣血症（酸中毒促進骨鈣釋出但腎臟排鈣增加）與高鈣尿可導致腎鈣化症與 CaOx/磷酸鈣結石。低鉀血症（遠端鈉回收增加帶動鉀排泄）。Type II (pRTA):
+  近端腎小管 Na⁺/H⁺ 交換器或碳酸酐酶功能障礙，無法回收濾過的 HCO₃⁻。大量 HCO₃⁻ 流失於尿液中。當血清 HCO₃⁻ 降至低於受損的回收閾值後，遠端腎小管仍可酸化尿液，因此酸中毒程度通常較 Type I 輕。Fanconi
+  syndrome 時除 HCO₃⁻ 外，glucose、amino acids、phosphate 等均大量流失。
 clinicalSigns:
   early:
     - 多尿多渴 (PU/PD)
@@ -67,29 +70,27 @@ clinicalSigns:
     - 嚴重代謝性酸中毒（庫斯莫爾呼吸 — Kussmaul breathing）
     - 進行性腎功能衰竭（CKD 進展）
     - 嚴重低鉀血症導致心律不整
-
 diagnosis:
   primaryTests:
     - name: 血液氣體分析
-      notes: "代謝性酸中毒（低 HCO₃⁻、低 pH）。正常 anion gap（高氯代謝性酸中毒）。排除高 anion gap 酸中毒（乳酸、酮酸、尿毒症）"
+      notes: 代謝性酸中毒（低 HCO₃⁻、低 pH）。正常 anion gap（高氯代謝性酸中毒）。排除高 anion gap 酸中毒（乳酸、酮酸、尿毒症）
     - name: 尿液 pH
-      notes: "Type I：系統性酸中毒下尿 pH 仍 >5.5（無法酸化尿液）。Type II：酸中毒穩定後尿 pH 可 <5.5。NH₄Cl 負荷試驗可鑑別"
+      notes: Type I：系統性酸中毒下尿 pH 仍 >5.5（無法酸化尿液）。Type II：酸中毒穩定後尿 pH 可 <5.5。NH₄Cl 負荷試驗可鑑別
     - name: 電解質
-      notes: "低鉀血症（K+ 降低）。高氯血症 (Cl⁻ 升高)。低鈣/低磷（Type I/Fanconi）。Anion gap 正常"
+      notes: 低鉀血症（K+ 降低）。高氯血症 (Cl⁻ 升高)。低鈣/低磷（Type I/Fanconi）。Anion gap 正常
     - name: 尿液分析（Fanconi 評估）
-      notes: "Fanconi：糖尿伴正常血糖、氨基酸尿、磷酸鹽尿、比重低。尿試紙 glucose 陽性但血糖正常為強烈提示"
+      notes: Fanconi：糖尿伴正常血糖、氨基酸尿、磷酸鹽尿、比重低。尿試紙 glucose 陽性但血糖正常為強烈提示
   imaging:
     - name: 腹部 X 光
-      notes: "腎鈣化症（Type I，腎髓質鈣化沉積）。尿路結石"
+      notes: 腎鈣化症（Type I，腎髓質鈣化沉積）。尿路結石
     - name: 腹部超音波
-      notes: "腎髓質回音增強（鈣化）。腎結石。腎臟大小形態"
+      notes: 腎髓質回音增強（鈣化）。腎結石。腎臟大小形態
   additional:
     - 尿液氨基酸定量分析（Fanconi 確認）
     - fractional excretion of electrolytes（磷、鈉、鉀、碳酸氫鹽 — 評估腎小管功能）
     - BUN/Creatinine/SDMA（腎功能）
     - NH₄Cl 負荷試驗（鑑別 Type I vs Type II — 給予酸負荷後評估尿液酸化能力）
     - Basenji 遺傳基因檢測（Fanconi）
-
 treatment:
   principles:
     - 口服碳酸氫鹽/檸檬酸鹽矯正酸中毒為核心治療
@@ -98,16 +99,16 @@ treatment:
     - 預防腎鈣化症與結石
   medications:
     - name: Sodium Bicarbonate (NaHCO₃)
-      dose: "Type I：1-3 mEq/kg/day PO 分 2-3 次；Type II：可能需 5-10 mEq/kg/day（需求量更高因持續流失）"
+      dose: Type I：1-3 mEq/kg/day PO 分 2-3 次；Type II：可能需 5-10 mEq/kg/day（需求量更高因持續流失）
       notes: 口服碳酸氫鹽為治療基石。劑量依血氣 HCO₃⁻ 監測調整。目標血清 HCO₃⁻ ≥18 mEq/L
     - name: Potassium Citrate
-      dose: "40-75 mg/kg PO BID-TID"
+      dose: 40-75 mg/kg PO BID-TID
       notes: 同時補鹼與補鉀。檸檬酸在體內代謝為碳酸氫鹽。亦有抑制 CaOx 結石作用。優於單獨使用 NaHCO₃
     - name: Potassium Gluconate
-      dose: "2-6 mEq/cat PO BID；犬依低鉀程度調整"
+      dose: 2-6 mEq/cat PO BID；犬依低鉀程度調整
       notes: 低鉀血症額外補充。Potassium citrate 補鉀不足時追加
     - name: Phosphate 補充
-      dose: "依血磷調整"
+      dose: 依血磷調整
       notes: Fanconi syndrome 磷酸鹽流失時需要。避免過度補充造成腎鈣化
   general:
     - 定期血氣與電解質監測（治療初期每 1-2 週，穩定後每 1-3 個月）
@@ -116,42 +117,105 @@ treatment:
     - 腎結石管理（低鈣飲食、增加飲水、potassium citrate）
     - 避免腎毒性藥物
     - 定期腎功能追蹤
-
-prognosis: 原發性 Type I RTA 經口服碳酸氫鹽治療可長期穩定，預後取決於腎鈣化症程度。Type II (Fanconi) 的 Basenji 預後變異大，早期診斷與治療可延長壽命數年，但仍可能進展為 CKD。後天性 RTA 如能矯正潛在原因，腎小管功能可能部分或完全恢復。未治療的嚴重酸中毒預後差。
-
+prognosis: >-
+  原發性 Type I RTA 經口服碳酸氫鹽治療可長期穩定，預後取決於腎鈣化症程度。Type II (Fanconi) 的 Basenji 預後變異大，早期診斷與治療可延長壽命數年，但仍可能進展為 CKD。後天性 RTA
+  如能矯正潛在原因，腎小管功能可能部分或完全恢復。未治療的嚴重酸中毒預後差。
 guidelineRefs:
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Fanconi syndrome in Basenji dogs: a new model for renal transport defects."
+    title: 'Fanconi syndrome in Basenji dogs: a new model for renal transport defects.'
     url: https://pubmed.ncbi.nlm.nih.gov/3558073/
     type: research
-    pmid: "3558073"
+    pmid: '3558073'
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: Acquired proximal renal tubular dysfunction in dogs exposed to chicken jerky-based treats.
     url: https://pubmed.ncbi.nlm.nih.gov/23952327/
     type: research
-    pmid: "23952327"
+    pmid: '23952327'
   - sourceOrg: Journal of the American Animal Hospital Association
-    title: "Renal tubular acidosis in dogs: a review."
+    title: 'Renal tubular acidosis in dogs: a review.'
     url: https://pubmed.ncbi.nlm.nih.gov/18316440/
     type: review
-    pmid: "18316440"
+    pmid: '18316440'
   - sourceOrg: Kidney research and clinical practice
     title: The role of renal proximal tubule transport in the regulation of blood pressure.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5331971/
     type: review
-    pmid: "28428931"
+    pmid: '28428931'
     relevance: supporting
-  - sourceOrg: "Matrix biology : journal of the International Society for Matrix Biology"
+  - sourceOrg: 'Matrix biology : journal of the International Society for Matrix Biology'
     title: V-type ATPase proton pump expression during enamel formation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4867139/
     type: review
-    pmid: "26586472"
+    pmid: '26586472'
     relevance: supporting
 pubmedQueries:
   - query: '"renal tubular acidosis" OR "Fanconi syndrome" AND (dog OR canine OR Basenji) AND ("treatment" OR "diagnosis")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "URN"
-  sectionTitle: "Renal Acidosis"
+  chapter: URN
+  sectionTitle: Renal Acidosis
   pdfPage: 1561
+diagnosticAlgorithm:
+  title: 腎小管酸中毒 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估代謝性酸中毒的臨床表現
+      findings:
+        - 慢性嘔吐與食慾下降
+        - 多飲多尿
+        - 生長遲緩（幼年動物）
+        - 肌肉無力
+    - step: 2
+      action: 血液檢查
+      details: 血氣分析與電解質評估
+      findings:
+        - 高氯性代謝性酸中毒
+        - 血清碳酸氫鹽降低
+        - 陰離子間隙正常
+        - 低鉀血症
+    - step: 3
+      action: 尿液分析
+      details: 評估腎小管酸化功能
+      findings:
+        - 尿液pH不當偏鹼（>5.5）
+        - 尿液陰離子間隙陽性
+        - 尿液電解質異常
+        - 可能出現糖尿或胺基酸尿
+    - step: 4
+      action: 確診與分型
+      details: 區分RTA類型並尋找潛在病因
+      findings:
+        - Type I（遠端）：NH4Cl負荷試驗異常
+        - Type II（近端）：碳酸氫鹽排泄分數升高
+        - 排除藥物或毒物引起
+        - 影像學排除腎結石
+clinicalPearls:
+  - 正常陰離子間隙的代謝性酸中毒應考慮RTA或腸道碳酸氫鹽流失
+  - 巴乎犬的范乃尼症候群是犬最常見的RTA相關疾病
+  - 尿pH在酸中毒時仍>5.5提示遠端RTA
+  - 低血鉀和代謝性酸中毒的組合高度提示I型或II型RTA
+  - 第四型RTA與Addison病的鑑別需要激素測定
+monitoringItems:
+  - 定期血氣和電解質監測
+  - 尿液pH追蹤治療反應
+  - 腎功能定期評估
+  - 生長曲線監測（幼年動物）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: dehydration
+    frequency: rare
+associatedLabFindings:
+  - labId: chloride-elevated
+    frequency: rare
+ddxSource: book

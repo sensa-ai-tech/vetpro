@@ -3,19 +3,20 @@ nameEn: Guinea Pig Pneumonia
 nameZh: 天竺鼠肺炎
 bodySystem: respiratory
 description: 天竺鼠下呼吸道細菌感染，最常見病原為 Bordetella bronchiseptica 及 Streptococcus pneumoniae。天竺鼠呼吸道感染可快速進展為致命性肺炎，早期不易察覺，確診時常已嚴重。
-
 aliases:
-  - { alias: 天竺鼠下呼吸道感染, language: zh }
-  - { alias: 天竺鼠細菌性肺炎, language: zh }
-  - { alias: Guinea Pig Lower Respiratory Infection, language: en }
-  - { alias: Guinea Pig Bacterial Pneumonia, language: en }
-
+  - alias: 天竺鼠下呼吸道感染
+    language: zh
+  - alias: 天竺鼠細菌性肺炎
+    language: zh
+  - alias: Guinea Pig Lower Respiratory Infection
+    language: en
+  - alias: Guinea Pig Bacterial Pneumonia
+    language: en
 species:
   - speciesCommon: guinea pig
     speciesScientific: Cavia porcellus
     prevalence: common
     notes: Bordetella bronchiseptica 為最常見病原，天竺鼠極度敏感。絕對不可與兔或犬同養（皆可攜帶 B. bronchiseptica）。Streptococcus pneumoniae 可引起急性敗血性肺炎。
-
 etiology:
   categories:
     - name: 細菌性
@@ -33,7 +34,6 @@ etiology:
         - 溫度驟變
         - 高氨氣墊料（松木屑、杉木屑）
         - 幼齡或老齡
-
 clinicalSigns:
   early:
     - 輕微打噴嚏
@@ -53,22 +53,20 @@ clinicalSigns:
     - 發紺
     - 敗血症
     - 急性死亡（S. pneumoniae 可在 24-48 小時致死）
-
 diagnosis:
   primaryTests:
     - name: 胸腔 X 光
-      notes: "肺部浸潤、實質化、胸腔積液。天竺鼠肺炎 X 光變化明顯時通常已嚴重"
+      notes: 肺部浸潤、實質化、胸腔積液。天竺鼠肺炎 X 光變化明顯時通常已嚴重
     - name: 呼吸道分泌物培養
-      notes: "鼻拭子或氣管沖洗液培養。鑑定病原與藥敏試驗指導治療"
+      notes: 鼻拭子或氣管沖洗液培養。鑑定病原與藥敏試驗指導治療
   imaging:
     - name: 胸腔超音波
-      notes: "胸腔積液評估、肺實質化"
+      notes: 胸腔積液評估、肺實質化
   additional:
     - CBC（白血球升高——嗜中性球左移）
     - 生化（評估全身狀況）
     - 聽診（濕囉音、呼吸音減弱）
     - 血氧飽和度（脈衝式血氧計）
-
 treatment:
   principles:
     - 積極抗生素治療
@@ -76,40 +74,83 @@ treatment:
     - 維生素 C 補充（促進免疫）
     - 天竺鼠呼吸道疾病進展快——早期積極治療關鍵
   general:
-    - "抗生素（經驗性首選）：Enrofloxacin 10-20 mg/kg PO/SC BID"
-    - "替代方案：Trimethoprim-Sulfa 30 mg/kg PO BID"
-    - "替代方案：Doxycycline 5-10 mg/kg PO BID"
-    - "替代方案：Chloramphenicol 50 mg/kg PO BID（嚴重感染）"
-    - "依培養藥敏結果調整——療程至少 14-21 天"
-    - "氧氣支持：氧氣籠/鼻導管（呼吸困難時）"
-    - "霧化治療：生理食鹽水 ± Gentamicin 霧化 BID × 15 分鐘"
-    - "維生素 C 補充：100 mg/天 PO（增強免疫）"
-    - "止痛：Meloxicam 0.3-0.5 mg/kg PO/SC SID"
-    - "強制灌食：Critical Care 20-30 mL/kg q6-8h"
-    - "皮下輸液：50-100 mL/kg/day SC（維持水分）"
-    - "環境改善：良好通風、低粉塵墊料、適宜溫度 (18-24°C)"
-    - "絕對不可與兔同養！"
-    - "注意：天竺鼠禁用 Penicillin 類口服抗生素（與兔相同禁忌）"
-
+    - 抗生素（經驗性首選）：Enrofloxacin 10-20 mg/kg PO/SC BID
+    - 替代方案：Trimethoprim-Sulfa 30 mg/kg PO BID
+    - 替代方案：Doxycycline 5-10 mg/kg PO BID
+    - 替代方案：Chloramphenicol 50 mg/kg PO BID（嚴重感染）
+    - 依培養藥敏結果調整——療程至少 14-21 天
+    - 氧氣支持：氧氣籠/鼻導管（呼吸困難時）
+    - 霧化治療：生理食鹽水 ± Gentamicin 霧化 BID × 15 分鐘
+    - 維生素 C 補充：100 mg/天 PO（增強免疫）
+    - 止痛：Meloxicam 0.3-0.5 mg/kg PO/SC SID
+    - 強制灌食：Critical Care 20-30 mL/kg q6-8h
+    - 皮下輸液：50-100 mL/kg/day SC（維持水分）
+    - 環境改善：良好通風、低粉塵墊料、適宜溫度 (18-24°C)
+    - 絕對不可與兔同養！
+    - 注意：天竺鼠禁用 Penicillin 類口服抗生素（與兔相同禁忌）
 prognosis: 輕至中度肺炎早期治療預後謹慎至良好。嚴重肺炎（呼吸窘迫、張口呼吸）預後不良。S. pneumoniae 急性敗血性肺炎預後極差。維生素 C 充足補充輔助恢復。消除風險因素預防復發。
-
 guidelineRefs:
   - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
-    title: "Respiratory diseases of guinea pigs"
+    title: Respiratory diseases of guinea pigs
     url: https://pubmed.ncbi.nlm.nih.gov/24157570/
     type: review
-    pmid: "24157570"
+    pmid: '24157570'
   - sourceOrg: Journal of Exotic Pet Medicine
-    title: "Bacterial pneumonia in guinea pigs"
+    title: Bacterial pneumonia in guinea pigs
     url: https://pubmed.ncbi.nlm.nih.gov/20842136/
     type: review
-    pmid: "20842136"
-
+    pmid: '20842136'
 pubmedQueries:
   - query: '"pneumonia" AND "guinea pig" AND ("Bordetella" OR "treatment")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "INFECTION"
+  chapter: DIG
+  sectionTitle: INFECTION
   pdfPage: 525
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: sneezing
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 天竺鼠肺炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸腔 X 光
+          notes: 肺部浸潤、實質化、胸腔積液。天竺鼠肺炎 X 光變化明顯時通常已嚴重
+        - name: 呼吸道分泌物培養
+          notes: 鼻拭子或氣管沖洗液培養。鑑定病原與藥敏試驗指導治療
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC（白血球升高——嗜中性球左移）
+        - 生化（評估全身狀況）
+        - 聽診（濕囉音、呼吸音減弱）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 積極抗生素治療
+        - 氧氣支持
+        - 維生素 C 補充（促進免疫）
+ddxSource: auto-generated

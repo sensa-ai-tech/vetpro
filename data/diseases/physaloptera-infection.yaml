@@ -3,11 +3,11 @@ nameEn: Physaloptera Infection
 nameZh: 胃蟲病
 bodySystem: infectious
 description: 由Physaloptera屬線蟲寄生於胃引起的慢性胃炎,經甲蟲或蟋蟀中間宿主傳播。成蟲以口器附著於胃黏膜,引起潰瘍及出血。
-
 aliases:
-  - { alias: 物理線蟲病, language: zh }
-  - { alias: Stomach Worm, language: en }
-
+  - alias: 物理線蟲病
+    language: zh
+  - alias: Stomach Worm
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少見,獵食習慣貓隻風險較高
-
 etiology:
   categories:
     - name: 病原體
@@ -29,7 +28,6 @@ etiology:
         - 中間宿主:甲蟲、蟋蟀、蟑螂
         - 副終宿主:蛙類、蛇類
         - 犬貓攝食感染宿主→胃內成熟(56天)
-
 clinicalSigns:
   early:
     - 間歇性嘔吐
@@ -40,22 +38,20 @@ clinicalSigns:
     - 持續性嘔吐
     - 貧血(PCV下降)
     - 腹痛,脫水
-
 diagnosis:
   primaryTests:
     - name: 糞便檢查
-      notes: "飽和鹽水浮游法見蟲卵(30-34 × 49-59 μm,橢圓形,壁厚)"
+      notes: 飽和鹽水浮游法見蟲卵(30-34 × 49-59 μm,橢圓形,壁厚)
     - name: 嘔吐物檢查
-      notes: "可能見成蟲(1.3-4.8 cm,乳白色,頭端有兩片假唇瓣)"
+      notes: 可能見成蟲(1.3-4.8 cm,乳白色,頭端有兩片假唇瓣)
     - name: 胃內視鏡
-      notes: "確診,直視見成蟲附著於胃壁,周圍黏膜充血潰瘍"
+      notes: 確診,直視見成蟲附著於胃壁,周圍黏膜充血潰瘍
   differentialDiagnoses:
     - Ollulanus tricuspis(貓)
     - Gnathostoma(罕見)
     - 慢性胃炎或胃潰瘍
     - 胃異物
     - 炎症性腸病
-
 treatment:
   medical:
     - Pyrantel pamoate 5 mg/kg PO,重複2週後再次給藥
@@ -65,44 +61,76 @@ treatment:
   supportive:
     - 易消化飲食
     - 輸液及電解質補充(若脫水)
-
 prognosis:
-  general: "預後良好,驅蟲後症狀迅速改善。慢性感染可能造成胃黏膜永久性損傷,需長期制酸劑治療。預防再感染重要。"
-
+  general: 預後良好,驅蟲後症狀迅速改善。慢性感染可能造成胃黏膜永久性損傷,需長期制酸劑治療。預防再感染重要。
 prevention:
   - 避免攝食甲蟲、蟋蟀等昆蟲
   - 定期糞便檢查
   - 廣效驅蟲藥預防
-
-
 guidelineRefs:
   - sourceOrg: BMC veterinary research
     title: Survey of parasitic fauna data from wild animals through coproparasitological diagnosis in Southern Brazil.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11705719/
     type: research
-    pmid: "39773711"
+    pmid: '39773711'
     relevance: supporting
   - sourceOrg: International journal for parasitology. Parasites and wildlife
-    title: "Helminth community of Nectomys squamipes naturally infected by Schistosoma mansoni in an endemic area in Brazil: A comparison of 22 years apart."
+    title: >-
+      Helminth community of Nectomys squamipes naturally infected by Schistosoma mansoni in an endemic area in Brazil: A
+      comparison of 22 years apart.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11131069/
     type: research
-    pmid: "38807751"
+    pmid: '38807751'
     relevance: supporting
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Morphological and Molecular Identification of Physaloptera alata (Nematoda: Spirurida) in a Booted Eagle (Aquila pennata) from Portugal."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Morphological and Molecular Identification of Physaloptera alata (Nematoda: Spirurida) in a Booted Eagle (Aquila
+      pennata) from Portugal.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10215406/
     type: research
-    pmid: "37238099"
+    pmid: '37238099'
     relevance: supporting
   - sourceOrg: Frontiers in veterinary science
     title: Patterns of Gastrointestinal Helminth Infections in Rattus rattus, Rattus norvegicus, and Mus musculus in Chile.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9277659/
     type: research
-    pmid: "35847649"
+    pmid: '35847649'
     relevance: supporting
   - sourceOrg: BMC veterinary research
-    title: "Gastrointestinal parasites of cats in Egypt: high prevalence high zoonotic risk."
+    title: 'Gastrointestinal parasites of cats in Egypt: high prevalence high zoonotic risk.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9706847/
     type: research
-    pmid: "36447265"
+    pmid: '36447265'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: melaena
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 胃蟲病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - vomiting 相關症狀
+        - melaena 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便檢查
+          notes: 飽和鹽水浮游法見蟲卵(30-34 × 49-59 μm,橢圓形,壁厚)
+        - name: 嘔吐物檢查
+          notes: 可能見成蟲(1.3-4.8 cm,乳白色,頭端有兩片假唇瓣)
+        - name: 胃內視鏡
+          notes: 確診,直視見成蟲附著於胃壁,周圍黏膜充血潰瘍
+ddxSource: auto-generated

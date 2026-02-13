@@ -3,12 +3,13 @@ nameEn: TMJ Ankylosis
 nameZh: 顳頜關節強直
 bodySystem: dental
 description: 顳頜關節強直是指顳頜關節(TMJ)因骨性或纖維性融合導致張口受限。多因創傷、感染或慢性炎症造成,臨床表現為無法張開嘴巴,影響進食和呼吸,治療需外科鬆解關節。
-
 aliases:
-  - { alias: 下顎關節僵硬, language: zh }
-  - { alias: Temporomandibular Joint Ankylosis, language: en }
-  - { alias: TMJ Fusion, language: en }
-
+  - alias: 下顎關節僵硬
+    language: zh
+  - alias: Temporomandibular Joint Ankylosis
+    language: en
+  - alias: TMJ Fusion
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓更罕見
-
 etiology:
   categories:
     - name: 創傷後
@@ -34,7 +34,6 @@ etiology:
       examples:
         - 慢性關節炎
         - 免疫介導性關節炎
-
 clinicalSigns:
   early:
     - 張口範圍逐漸減小
@@ -46,21 +45,19 @@ clinicalSigns:
     - 體重下降
     - 呼吸困難(雙側嚴重病例)
     - 口腔衛生惡化
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
-      notes: "嘗試張口,阻力明顯,關節活動度消失"
+      notes: 嘗試張口,阻力明顯,關節活動度消失
     - name: 頭顱X光或CT
-      notes: "顯示關節間隙消失,骨性橋接或纖維性融合"
+      notes: 顯示關節間隙消失,骨性橋接或纖維性融合
     - name: 麻醉下評估
-      notes: "肌肉鬆弛後仍無法張口,確認為關節性而非肌肉性"
+      notes: 肌肉鬆弛後仍無法張口,確認為關節性而非肌肉性
   differentialDiagnoses:
     - 咬肌炎(肌肉性張口受限)
     - 三叉神經炎
     - 顴弓骨折
     - 下頜腫瘤
-
 treatment:
   medical:
     - 外科鬆解:切除融合的骨性或纖維性組織
@@ -71,20 +68,41 @@ treatment:
     - 止痛藥Meloxicam 0.1 mg/kg PO SID
     - 物理治療防止再次纖維化
     - 嚴重病例需餵食管支持營養
-
 prognosis:
-  general: "預後取決於病因和治療時機。早期診斷和外科治療預後尚可,但需長期復健防止復發。延遲治療或雙側嚴重病例預後謹慎,可能無法完全恢復正常張口度。復發率約20-30%。"
-
+  general: 預後取決於病因和治療時機。早期診斷和外科治療預後尚可,但需長期復健防止復發。延遲治療或雙側嚴重病例預後謹慎,可能無法完全恢復正常張口度。復發率約20-30%。
 prevention:
   - 創傷後早期復健防止纖維化
   - 及時治療關節感染
   - 骨折妥善固定避免累及關節
-
-
 guidelineRefs:
   - sourceOrg: BMC oral health
     title: The association between traumatic temporomandibular joint bony ankylosis and depressive disorder in growing rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11992720/
     type: research
-    pmid: "40217243"
+    pmid: '40217243'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 顳頜關節強直 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 嘗試張口,阻力明顯,關節活動度消失
+        - name: 頭顱X光或CT
+          notes: 顯示關節間隙消失,骨性橋接或纖維性融合
+        - name: 麻醉下評估
+          notes: 肌肉鬆弛後仍無法張口,確認為關節性而非肌肉性
+ddxSource: auto-generated

@@ -3,19 +3,20 @@ nameEn: Feline Lower Urinary Tract Disease
 nameZh: 貓下泌尿道疾病
 bodySystem: renal
 description: 貓下泌尿道症狀的統稱，包含特發性膀胱炎、尿路結石、尿道栓子等多種病因。
-
 aliases:
-  - { alias: FLUTD, language: en }
-  - { alias: FIC, language: en }
-  - { alias: Feline Idiopathic Cystitis, language: en }
-  - { alias: 貓自發性膀胱炎, language: zh }
-
+  - alias: FLUTD
+    language: en
+  - alias: FIC
+    language: en
+  - alias: Feline Idiopathic Cystitis
+    language: en
+  - alias: 貓自發性膀胱炎
+    language: zh
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
     notes: 好發於年輕至中年室內貓。公貓因尿道較窄更易發生阻塞。特發性膀胱炎 (FIC) 佔 55-69%。
-
 etiology:
   categories:
     - name: 特發性膀胱炎 (FIC)
@@ -40,7 +41,6 @@ etiology:
         - 細菌性泌尿道感染 (年輕貓罕見，老年貓 >10 歲較常見)
         - 解剖異常
         - 膀胱腫瘤 (罕見)
-
 clinicalSigns:
   early:
     - 頻尿 (pollakiuria)
@@ -59,25 +59,23 @@ clinicalSigns:
     - 高血鉀導致心律不整 (致命)
     - 腎後性氮質血症
     - 低體溫、休克
-
 diagnosis:
   primaryTests:
     - name: 尿液分析
-      notes: "pH、比重、結晶 (struvite vs CaOx)、血尿、膿尿、細菌。FIC 常為無菌性血尿"
+      notes: pH、比重、結晶 (struvite vs CaOx)、血尿、膿尿、細菌。FIC 常為無菌性血尿
     - name: 尿液培養
-      notes: "首次發作的年輕貓培養率 <2%。老年貓、糖尿病貓、CKD 貓建議培養"
+      notes: 首次發作的年輕貓培養率 <2%。老年貓、糖尿病貓、CKD 貓建議培養
     - name: 血液檢查
-      notes: "阻塞貓：BUN/Crea 升高、高血鉀、代謝性酸中毒、離子化鈣降低"
+      notes: 阻塞貓：BUN/Crea 升高、高血鉀、代謝性酸中毒、離子化鈣降低
   imaging:
     - name: 腹部 X 光
-      notes: "偵測不透射結石 (CaOx、struvite)。評估膀胱大小"
+      notes: 偵測不透射結石 (CaOx、struvite)。評估膀胱大小
     - name: 腹部超音波
-      notes: "膀胱壁增厚、結石 (含透射型)、腫瘤、沉渣量。評估腎臟"
+      notes: 膀胱壁增厚、結石 (含透射型)、腫瘤、沉渣量。評估腎臟
   additional:
     - 電解質 (阻塞貓：K+、Na+、Cl-、iCa)
     - ECG (高血鉀：帳篷狀 T 波、QRS 增寬、心搏過緩)
     - 結石分析 (手術或自然排出時)
-
 treatment:
   principles:
     - 區分阻塞性 vs 非阻塞性
@@ -85,16 +83,16 @@ treatment:
     - 尿道阻塞為急診，需立即解除阻塞
   medications:
     - name: Buprenorphine
-      dose: "0.01-0.03 mg/kg IV/IM/buccal"
+      dose: 0.01-0.03 mg/kg IV/IM/buccal
       notes: 止痛，阻塞與非阻塞皆適用
     - name: Prazosin
-      dose: "0.25-0.5 mg/cat PO BID-TID"
+      dose: 0.25-0.5 mg/cat PO BID-TID
       notes: α1 拮抗劑，降低尿道平滑肌痙攣，阻塞後預防再阻塞
     - name: Maropitant
-      dose: "1 mg/kg SC SID"
+      dose: 1 mg/kg SC SID
       notes: 止吐
     - name: Amitriptyline
-      dose: "2.5-12.5 mg/cat PO SID (夜間)"
+      dose: 2.5-12.5 mg/cat PO SID (夜間)
       notes: FIC 反覆發作的長期管理，抗焦慮效果
   general:
     - 尿道阻塞：鎮靜後置入尿管沖洗、留置尿管 24-48 hr
@@ -105,17 +103,15 @@ treatment:
     - Struvite 結石：處方溶石飲食 (Hill's c/d、Royal Canin S/O)
     - CaOx 結石：手術移除 (無法溶解)
     - 反覆阻塞貓：考慮會陰尿道造口術 (PU)
-
-emergencyNotes: 尿道完全阻塞為急診，超過 24-48 小時可致命。先處理高血鉀 (10% calcium gluconate 0.5-1 mL/kg IV slow)，再鎮靜解除阻塞。阻塞後需監測阻塞後利尿 (post-obstructive diuresis)。
-
+emergencyNotes: >-
+  尿道完全阻塞為急診，超過 24-48 小時可致命。先處理高血鉀 (10% calcium gluconate 0.5-1 mL/kg IV slow)，再鎮靜解除阻塞。阻塞後需監測阻塞後利尿 (post-obstructive
+  diuresis)。
 prognosis: 非阻塞性 FIC 通常 5-7 天內自限，但約 50% 會在 1 年內復發。環境豐富化可降低復發率。尿道阻塞及時解除後預後良好，但再阻塞率約 15-40%。PU 手術可顯著降低再阻塞風險。
-
 ontologyMappings:
   - source: MONDO
-    code: "MONDO:0005570"
+    code: MONDO:0005570
     label: lower urinary tract disorder
     confidence: broad
-
 guidelineRefs:
   - sourceOrg: AAFP/ISFM
     title: AAFP and ISFM Guidelines for Diagnosing and Solving House-Soiling Behavior in Cats
@@ -126,26 +122,80 @@ guidelineRefs:
     url: https://indoorpet.osu.edu/cats
     type: guideline
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Urinary tract infection and subclinical bacteriuria in cats: A clinical update."
+    title: 'Urinary tract infection and subclinical bacteriuria in cats: A clinical update.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6826873/
     type: review
-    pmid: "31601143"
+    pmid: '31601143'
   - sourceOrg: Journal of feline medicine and surgery
     title: Surgical management of blocked cats. Which approach and when?
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11135478/
     type: review
-    pmid: "19154971"
+    pmid: '19154971'
   - sourceOrg: Frontiers in veterinary science
-    title: "Case Report: Application and Limitations of a Plant-Based Diet Formulated for a Cat With Feline Lower Urinary Tract Disease."
+    title: >-
+      Case Report: Application and Limitations of a Plant-Based Diet Formulated for a Cat With Feline Lower Urinary
+      Tract Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8062804/
     type: case-report
-    pmid: "33898549"
+    pmid: '33898549'
     relevance: supporting
 pubmedQueries:
   - query: '"feline lower urinary tract" OR "feline idiopathic cystitis" AND ("management" OR "treatment")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "URN"
-  sectionTitle: "Feline Lower Urinary Tract Disease"
+  chapter: URN
+  sectionTitle: Feline Lower Urinary Tract Disease
   pdfPage: 1572
+diagnosticAlgorithm:
+  title: 貓下泌尿道疾病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估排尿異常及阻塞風險
+      findings:
+        - 頻尿血尿
+        - 排尿困難
+        - 不在貓砂盆排尿
+        - 公貓可能完全阻塞
+    - step: 2
+      action: 尿液分析
+      details: 完整尿液分析
+      findings:
+        - 血尿
+        - 結晶（鳥糞石或草酸鈣）
+        - 尿pH
+        - 細菌培養（年長貓）
+    - step: 3
+      action: 腹部影像
+      details: X光與超音波評估泌尿道
+      findings:
+        - 膀胱壁增厚
+        - 結石評估
+        - 排除腫瘤
+        - 膀胱充盈度（阻塞評估）
+    - step: 4
+      action: 病因分類與管理
+      details: 區分各型FLUTD
+      findings:
+        - 特發性膀胱炎（最常見60-70%）
+        - 結石相關
+        - 細菌感染（較少見年輕貓）
+        - 壓力因素評估與環境管理
+clinicalPearls:
+  - 年輕貓（<10歲）UTI罕見，不要常規使用抗生素
+  - FIC是排除性診斷，但最常見
+  - 環境管理比藥物更重要
+  - 公貓反覆阻塞可考慮會陰尿道造口術
+  - 草酸鈣結石無法溶解，鳥糞石可溶解
+monitoringItems:
+  - 症狀緩解情況
+  - 尿液分析（追蹤）
+  - 影像學追蹤結石
+  - 體重管理
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: uncommon
+ddxSource: book

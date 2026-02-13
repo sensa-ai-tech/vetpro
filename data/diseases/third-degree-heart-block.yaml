@@ -3,12 +3,13 @@ nameEn: Third Degree Heart Block
 nameZh: 三度房室傳導阻滯
 bodySystem: cardiac
 description: 三度房室傳導阻滯（完全性房室傳導阻滯）為心房與心室間電傳導完全中斷，P 波與 QRS 波群完全無關聯。心室依賴逸搏心律（escape rhythm）維持，通常心率極慢（犬 30-50 bpm），可導致嚴重血流動力學障礙、昏厥與猝死。
-
 aliases:
-  - { alias: Complete Heart Block, language: en }
-  - { alias: Complete AV Block, language: en }
-  - { alias: 完全性房室傳導阻滯, language: zh }
-
+  - alias: Complete Heart Block
+    language: en
+  - alias: Complete AV Block
+    language: en
+  - alias: 完全性房室傳導阻滯
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻較少見，可繼發於心肌病、高血鉀或心臟腫瘤。
-
 etiology:
   categories:
     - name: 退行性（最常見）
@@ -31,7 +31,6 @@ etiology:
         - 心內膜炎
         - 嚴重高血鉀
         - 先天性（罕見）
-
 clinicalSigns:
   early:
     - 嚴重心搏過緩（犬 30-50 bpm）
@@ -42,14 +41,12 @@ clinicalSigns:
     - 充血性心衰竭
     - 嚴重嗜睡
     - 猝死
-
 diagnosis:
   primaryTests:
     - name: 心電圖（ECG）
-      notes: "確診必須。特徵：P 波與 QRS 波群完全獨立（AV dissociation），P-P 間距規則，R-R 間距規則但極長。逸搏 QRS 可為窄（交界性）或寬（心室性）。心房率 >心室率。"
+      notes: 確診必須。特徵：P 波與 QRS 波群完全獨立（AV dissociation），P-P 間距規則，R-R 間距規則但極長。逸搏 QRS 可為窄（交界性）或寬（心室性）。心房率 >心室率。
     - name: 心臟超音波（Echocardiography）
       notes: 排除結構性心臟病（心臟腫瘤、心肌病）。評估心室功能。長期低心輸出量可導致繼發性心室擴大。
-
 treatment:
   principles:
     - 永久性心律調節器植入為唯一有效長期治療
@@ -57,39 +54,86 @@ treatment:
     - 矯正可逆性原因
   general:
     - 永久性心律調節器植入（首選）
-    - "急性穩定期：Atropine 0.02-0.04 mg/kg IV（對器質性完全 AV block 通常無效）"
-    - "Isoproterenol 0.04-0.08 μg/kg/min CRI（暫時提高逸搏心率）"
-    - "Terbutaline 0.01 mg/kg IV 或 SC（緊急暫時措施）"
+    - 急性穩定期：Atropine 0.02-0.04 mg/kg IV（對器質性完全 AV block 通常無效）
+    - Isoproterenol 0.04-0.08 μg/kg/min CRI（暫時提高逸搏心率）
+    - Terbutaline 0.01 mg/kg IV 或 SC（緊急暫時措施）
     - 經靜脈臨時起搏導管（橋接至永久起搏器植入）
-
 prognosis: 植入永久性心律調節器後預後良好，中位存活時間可達數年，多數犬隻恢復正常活動與良好生活品質。未治療者預後不良，有高度猝死風險。可逆性原因（如高血鉀）矯正後可能恢復正常傳導。
-
-
 guidelineRefs:
   - sourceOrg: Physiological reports
     title: Norepinephrine mediates heart block during severe hypoglycemia in male rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11343722/
     type: research
-    pmid: "39180176"
+    pmid: '39180176'
     relevance: supporting
   - sourceOrg: Diabetes
     title: Severe Hypoglycemia-Induced Fatal Cardiac Arrhythmias Are Mediated by the Parasympathetic Nervous System in Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7118248/
     type: research
-    pmid: "31439645"
+    pmid: '31439645'
     relevance: supporting
   - sourceOrg: Endocrinology
     title: Glibenclamide Prevents Hypoglycemia-Induced Fatal Cardiac Arrhythmias in Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6669817/
     type: research
-    pmid: "29800118"
+    pmid: '29800118'
     relevance: supporting
   - sourceOrg: Diabetes
-    title: Severe Hypoglycemia-Induced Fatal Cardiac Arrhythmias Are Augmented by Diabetes and Attenuated by Recurrent Hypoglycemia.
+    title: >-
+      Severe Hypoglycemia-Induced Fatal Cardiac Arrhythmias Are Augmented by Diabetes and Attenuated by Recurrent
+      Hypoglycemia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5697941/
     type: research
-    pmid: "28887311"
+    pmid: '28887311'
     relevance: supporting
 pubmedQueries:
-  - query: '"third degree heart block" OR "complete heart block" AND (veterinary OR canine OR feline) AND ("pacemaker" OR "outcome")'
+  - query: >-
+      "third degree heart block" OR "complete heart block" AND (veterinary OR canine OR feline) AND ("pacemaker" OR
+      "outcome")
     frequency: monthly
+diagnosticAlgorithm:
+  title: 第三度房室傳導阻滯 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估嚴重心搏過緩、運動不耐受和暈厥發作（Adams-Stokes症候群）
+      findings:
+        - 嚴重心搏過緩（犬<40-60 bpm）
+        - 反覆暈厥發作
+        - 運動極度不耐受
+    - step: 2
+      action: 心電圖確診
+      details: 進行心電圖確認心房和心室完全獨立跳動的特徵
+      findings:
+        - P波與QRS波群完全無關（房室分離）
+        - 心房率>心室率
+        - 逸搏心律規則但緩慢
+    - step: 3
+      action: 病因評估
+      details: 進行心臟超音波排除結構性心臟病，評估是否需要永久性心臟起搏器
+      findings:
+        - 心臟超音波評估心臟結構
+        - 排除心肌炎、心內膜炎或腫瘤浸潤
+        - 評估永久性起搏器植入指徵
+clinicalPearls:
+  - Atropine反應試驗陽性（心率上升）提示迷走神經介導而非結構性病變
+  - 萊姆病相關AVB可經抗生素治療逆轉，應在考慮起搏器前排除
+  - 起搏器植入後需定期程式器追蹤（q6-12個月）
+  - 高鉀血症可造成暫時性三度AVB，緊急降鉀後可恢復
+  - 先天性三度AVB在巴哥犬有遺傳傾向
+monitoringItems:
+  - 起搏器功能定期程式器檢查
+  - ECG追蹤
+  - 胸腔X光確認起搏器導線位置
+  - 電池壽命監測（通常5-8年）
+  - 感染監測（起搏器植入處）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+ddxSource: book

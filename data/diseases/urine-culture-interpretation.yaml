@@ -3,11 +3,11 @@ nameEn: Urine Culture Interpretation
 nameZh: 尿液培養判讀
 bodySystem: other
 description: 犬貓尿液培養及抗生素敏感性試驗判讀。為確診泌尿道感染、選擇適當抗生素的黃金標準。需無菌採集尿液,正確判讀菌量及污染可能性。
-
 aliases:
-  - { alias: 尿培養, language: zh }
-  - { alias: Urine culture and sensitivity, language: en }
-
+  - alias: 尿培養
+    language: zh
+  - alias: Urine culture and sensitivity
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓泌尿道感染較少見,培養前需排除FLUTD其他原因
-
 etiology:
   categories:
     - name: 常見致病菌
@@ -26,71 +25,93 @@ etiology:
         - Staphylococcus spp.
         - Proteus spp.
         - Enterococcus spp.
-
 clinicalSigns:
   early:
     - 尿培養為診斷工具
   progressive:
     - 頻尿、血尿、排尿疼痛
-
 diagnosis:
   primaryTests:
     - name: 菌量判讀
-      notes: "膀胱穿刺:>1,000 CFU/mL有意義。導尿:>10,000 CFU/mL。自然排尿:>100,000 CFU/mL"
+      notes: 膀胱穿刺:>1,000 CFU/mL有意義。導尿:>10,000 CFU/mL。自然排尿:>100,000 CFU/mL
     - name: 抗生素敏感性
-      notes: "選擇敏感(S)抗生素,避免抗藥性(R)"
+      notes: 選擇敏感(S)抗生素,避免抗藥性(R)
     - name: 污染判定
-      notes: "多種菌生長提示污染,需重新採集"
+      notes: 多種菌生長提示污染,需重新採集
   differentialDiagnoses:
     - 細菌性膀胱炎
     - 腎盂腎炎
     - 前列腺炎(公犬)
     - 污染
-
 treatment:
   medical:
     - 依敏感性試驗選擇抗生素
     - E. coli通常對amoxicillin-clavulanate、enrofloxacin敏感
     - 療程通常7-14天(膀胱炎)或4-6週(腎盂腎炎/前列腺炎)
-
 prognosis:
-  general: "尿培養為泌尿道感染確診及抗生素選擇的黃金標準。正確採集及判讀至關重要。"
-
+  general: 尿培養為泌尿道感染確診及抗生素選擇的黃金標準。正確採集及判讀至關重要。
 prevention:
   - 膀胱穿刺採集最佳(無菌)
   - 導尿次之
   - 避免自然排尿培養(污染率高)
   - 立即送檢或冷藏保存
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
     title: Evaluation of a rapid immunoassay for bacteriuria in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10229336/
     type: research
-    pmid: "37084042"
+    pmid: '37084042'
     relevance: supporting
   - sourceOrg: Cells
     title: Aldosterone Decreases Vasopressin-Stimulated Water Reabsorption in Rat Inner Medullary Collecting Ducts.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7226978/
     type: research
-    pmid: "32295252"
+    pmid: '32295252'
     relevance: supporting
   - sourceOrg: International journal of molecular sciences
-    title: Proposing Urothelial and Muscle In Vitro Cell Models as a Novel Approach for Assessment of Long-Term Toxicity of Nanoparticles.
+    title: >-
+      Proposing Urothelial and Muscle In Vitro Cell Models as a Novel Approach for Assessment of Long-Term Toxicity of
+      Nanoparticles.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7589566/
     type: research
-    pmid: "33066271"
+    pmid: '33066271'
     relevance: supporting
   - sourceOrg: Journal of ethnopharmacology
-    title: Evaluation of potential herb-drug interactions between oseltamivir and commonly used anti-influenza Chinese medicinal herbs.
+    title: >-
+      Evaluation of potential herb-drug interactions between oseltamivir and commonly used anti-influenza Chinese
+      medicinal herbs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7125811/
     type: research
-    pmid: "31325600"
+    pmid: '31325600'
     relevance: supporting
   - sourceOrg: Annals of nuclear medicine
     title: Practical calculation method to estimate the absolute boron concentration in tissues using 18F-FBPA PET.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5486508/
     type: research
-    pmid: "28439784"
+    pmid: '28439784'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 尿液培養判讀 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pollakiuria 相關症狀
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 菌量判讀
+          notes: 膀胱穿刺:>1,000 CFU/mL有意義。導尿:>10,000 CFU/mL。自然排尿:>100,000 CFU/mL
+        - name: 抗生素敏感性
+          notes: 選擇敏感(S)抗生素,避免抗藥性(R)
+        - name: 污染判定
+          notes: 多種菌生長提示污染,需重新採集
+ddxSource: auto-generated

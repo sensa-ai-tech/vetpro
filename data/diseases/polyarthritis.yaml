@@ -3,23 +3,26 @@ nameEn: Polyarthritis
 nameZh: 多發性關節炎
 bodySystem: immunology
 description: 同時影響多個關節的炎症性疾病，可分為免疫介導性（非侵蝕性）與感染性（侵蝕性/非侵蝕性），為犬貓重要的免疫系統疾病。
-
 aliases:
-  - { alias: IMPA, language: en }
-  - { alias: Immune-Mediated Polyarthritis, language: en }
-  - { alias: 免疫介導性多關節炎, language: zh }
-  - { alias: 多關節炎, language: zh }
-
+  - alias: IMPA
+    language: en
+  - alias: Immune-Mediated Polyarthritis
+    language: en
+  - alias: 免疫介導性多關節炎
+    language: zh
+  - alias: 多關節炎
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: uncommon
-    notes: 免疫介導性多關節炎為犬最常見類型。好發品種包括 Shar-Pei (特發性較多)、German Shepherd、Doberman、Retriever 品種。中年犬好發 (2-6 歲)。特發性 IMPA (I 型) 佔約 50%。
+    notes: >-
+      免疫介導性多關節炎為犬最常見類型。好發品種包括 Shar-Pei (特發性較多)、German Shepherd、Doberman、Retriever 品種。中年犬好發 (2-6 歲)。特發性 IMPA (I 型) 佔約
+      50%。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓以慢性進行性多關節炎 (feline chronic progressive polyarthritis) 較特殊，常與 FeLV/FIV 感染相關。侵蝕性型預後較差。
-
 etiology:
   categories:
     - name: 免疫介導性非侵蝕性 (最常見)
@@ -43,7 +46,6 @@ etiology:
         - Shar-Pei 發熱症候群 (amyloidosis 相關)
         - Akita polyarthritis
         - Juvenile-onset polyarthritis (Beagle)
-
 clinicalSigns:
   early:
     - 多關節腫脹 (常對稱性，腕、跗、肘、膝關節)
@@ -63,20 +65,19 @@ clinicalSigns:
     - 關節半脫位 (侵蝕性型)
     - 繼發腎臟類澱粉沉積 (Shar-Pei)
     - 癱瘓無法行走
-
 diagnosis:
   primaryTests:
     - name: 關節液分析 (arthrocentesis)
-      notes: "確診關鍵。非侵蝕性 IMPA：嗜中性球增加 (>5000 cells/μL)、無退化性嗜中性球、無菌培養。至少取 2-3 個關節樣本"
+      notes: 確診關鍵。非侵蝕性 IMPA：嗜中性球增加 (>5000 cells/μL)、無退化性嗜中性球、無菌培養。至少取 2-3 個關節樣本
     - name: 關節液細菌培養
-      notes: "排除感染性關節炎。嗜氣+厭氧培養。Mycoplasma 需特殊培養基"
+      notes: 排除感染性關節炎。嗜氣+厭氧培養。Mycoplasma 需特殊培養基
     - name: CBC/生化
-      notes: "嗜中性球升高、低白蛋白血症、CRP/SAA 升高"
+      notes: 嗜中性球升高、低白蛋白血症、CRP/SAA 升高
   imaging:
     - name: 關節 X 光
-      notes: "非侵蝕性：關節積液、軟組織腫脹、無骨侵蝕。侵蝕性 (類風濕)：軟骨下骨侵蝕、關節面破壞、半脫位"
+      notes: 非侵蝕性：關節積液、軟組織腫脹、無骨侵蝕。侵蝕性 (類風濕)：軟骨下骨侵蝕、關節面破壞、半脫位
     - name: 胸腹 X 光/超音波
-      notes: "排除潛在感染灶或腫瘤 (II/IV 型 IMPA)"
+      notes: 排除潛在感染灶或腫瘤 (II/IV 型 IMPA)
   differentialDiagnoses:
     - 敗血性關節炎 (Septic Arthritis)
     - 全身性紅斑狼瘡 (Systemic Lupus Erythematosus)
@@ -90,7 +91,6 @@ diagnosis:
     - 尿液分析/培養 (排除泌尿道感染)
     - CRP/SAA (急性期蛋白，監測治療反應)
     - 腫瘤篩檢 (排除 IV 型)
-
 treatment:
   principles:
     - 免疫介導性：免疫抑制治療為基石
@@ -99,19 +99,19 @@ treatment:
     - II-IV 型需先處理根本原因
   medications:
     - name: Prednisolone/Prednisone
-      dose: "1-2 mg/kg PO BID (誘導期 2-4 週)，後逐漸減量"
+      dose: 1-2 mg/kg PO BID (誘導期 2-4 週)，後逐漸減量
       notes: 一線免疫抑制。緩解後每 2-3 週減量 25%。多數需 3-6 個月療程
     - name: Leflunomide
-      dose: "2-4 mg/kg PO SID"
+      dose: 2-4 mg/kg PO SID
       notes: 二線免疫抑制劑，對 IMPA 效果佳。需監測肝指數
     - name: Azathioprine (僅犬)
-      dose: "2 mg/kg PO SID × 2 週，後隔日"
+      dose: 2 mg/kg PO SID × 2 週，後隔日
       notes: 類固醇節約劑。效果需 3-6 週顯現。監測 CBC
     - name: Mycophenolate mofetil
-      dose: "10-20 mg/kg PO BID"
+      dose: 10-20 mg/kg PO BID
       notes: 替代免疫抑制選擇。腸胃副作用較常見
     - name: Cyclophosphamide
-      dose: "200-300 mg/m² PO 每 3 週一次，或 50 mg/m² PO 隔日 × 4 日/週"
+      dose: 200-300 mg/m² PO 每 3 週一次，或 50 mg/m² PO 隔日 × 4 日/週
       notes: 難治性病例的免疫抑制選擇。需監測 CBC（骨髓抑制）。長期使用有出血性膀胱炎風險，應限制療程
   general:
     - 排除潛在原因 (感染、腫瘤、消化道疾病)
@@ -122,42 +122,98 @@ treatment:
     - 體重管理
     - CRP/SAA 追蹤治療反應 (比臨床症狀更早反映疾病活動)
     - 減藥過程中復發需回到有效劑量重新開始
-
-prognosis: 特發性 IMPA (I 型) 免疫抑制治療後約 50-75% 可達緩解。約 30% 減藥後復發。II-IV 型處理潛在原因後預後較佳。侵蝕性型 (類風濕) 預後較差，關節破壞不可逆。感染性關節炎早期適當治療預後佳。Shar-Pei 發熱症候群需注意腎臟類澱粉沉積長期風險。
-
+prognosis: >-
+  特發性 IMPA (I 型) 免疫抑制治療後約 50-75% 可達緩解。約 30% 減藥後復發。II-IV 型處理潛在原因後預後較佳。侵蝕性型 (類風濕) 預後較差，關節破壞不可逆。感染性關節炎早期適當治療預後佳。Shar-Pei
+  發熱症候群需注意腎臟類澱粉沉積長期風險。
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Immune-mediated polyarthritis in dogs: a retrospective study of 181 cases."
+    title: 'Immune-mediated polyarthritis in dogs: a retrospective study of 181 cases.'
     url: https://pubmed.ncbi.nlm.nih.gov/30891817/
     type: retrospective
-    pmid: "30891817"
+    pmid: '30891817'
   - sourceOrg: Frontiers in veterinary science
-    title: "Canine Immune-Mediated Polyarthritis. Part 1: Pathophysiology and Clinical Presentation."
+    title: 'Canine Immune-Mediated Polyarthritis. Part 1: Pathophysiology and Clinical Presentation.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8718674/
     type: review
-    pmid: "34977218"
+    pmid: '34977218'
   - sourceOrg: Frontiers in veterinary science
-    title: "Canine Immune-Mediated Polyarthritis. Part 2: Diagnosis and Treatment."
+    title: 'Canine Immune-Mediated Polyarthritis. Part 2: Diagnosis and Treatment.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8716479/
     type: review
-    pmid: "34977219"
+    pmid: '34977219'
   - sourceOrg: International journal of molecular sciences
     title: Mechanisms of Systemic Osteoporosis in Rheumatoid Arthritis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9368786/
     type: review
-    pmid: "35955873"
+    pmid: '35955873'
     relevance: primary
   - sourceOrg: BMC veterinary research
-    title: "Multiple midline defects identified in a litter of golden retrievers following gestational administration of prednisone and doxycycline: a case series."
+    title: >-
+      Multiple midline defects identified in a litter of golden retrievers following gestational administration of
+      prednisone and doxycycline: a case series.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5848590/
     type: case-report
-    pmid: "29530019"
+    pmid: '29530019'
     relevance: supporting
 pubmedQueries:
   - query: '"immune-mediated polyarthritis" AND (dog OR canine) AND ("treatment" OR "diagnosis" OR "prognosis")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "MUS"
-  sectionTitle: "POLYARTHRITIS"
+  chapter: MUS
+  sectionTitle: POLYARTHRITIS
   pdfPage: 1239
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: uncommon
+  - symptomId: lymphadenopathy
+    frequency: uncommon
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: polyarthritis
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 多發性關節炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+        - lymphadenopathy 相關症狀
+        - weight-loss 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 關節液分析 (arthrocentesis)
+          notes: 確診關鍵。非侵蝕性 IMPA：嗜中性球增加 (>5000 cells/μL)、無退化性嗜中性球、無菌培養。至少取 2-3 個關節樣本
+        - name: 關節液細菌培養
+          notes: 排除感染性關節炎。嗜氣+厭氧培養。Mycoplasma 需特殊培養基
+        - name: CBC/生化
+          notes: 嗜中性球升高、低白蛋白血症、CRP/SAA 升高
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 類風濕因子 (RF) 與 ANA (侵蝕性型可陽性)
+        - 壁蝨傳播疾病 4DX SNAP (Borrelia, Ehrlichia, Anaplasma)
+        - 尿液分析/培養 (排除泌尿道感染)
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 免疫介導性：免疫抑制治療為基石
+        - 感染性：針對病原治療
+        - 釐清類型 (I-IV 型) 並處理潛在原因
+ddxSource: auto-generated

@@ -3,11 +3,11 @@ nameEn: Meningioma
 nameZh: 腦膜瘤
 bodySystem: neurology
 description: 腦膜瘤為起源於腦膜（meninges）的腫瘤，為犬貓最常見的原發性顱內腫瘤。犬隻腦膜瘤多為良性但具壓迫性。貓隻腦膜瘤通常為良性且邊界清楚，手術切除預後良好。好發於老年動物。臨床表現取決於腫瘤位置與大小。
-
 aliases:
-  - { alias: 腦膜腫瘤, language: zh }
-  - { alias: Intracranial Meningioma, language: en }
-
+  - alias: 腦膜腫瘤
+    language: zh
+  - alias: Intracranial Meningioma
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻腦膜瘤為最常見原發性腦腫瘤。通常邊界清楚，手術切除預後良好。多見於老年貓。
-
 etiology:
   categories:
     - name: 腫瘤特性
@@ -30,7 +29,6 @@ etiology:
         - 嗅覺區域
         - 腦幹區域
         - 脊髓（硬膜內髓外）
-
 clinicalSigns:
   early:
     - 行為改變（漸進性）
@@ -44,14 +42,12 @@ clinicalSigns:
     - 頭部傾斜（後顱窩腫瘤）
     - 嗜睡與定向障礙
     - 腦疝（嚴重顱內壓升高）
-
 diagnosis:
   primaryTests:
     - name: 腦部 MRI
       notes: 確診首選。特徵性 MRI 表現：T1 等至低訊號、T2 等至高訊號、均勻造影劑增強。dural tail sign 為特徵但非特異性。評估腫瘤大小、位置與腦水腫。
     - name: CT
       notes: 可偵測鈣化與骨侵犯。造影劑增強。MRI 不可用時的替代。
-
 treatment:
   principles:
     - 手術切除為首選（特別是貓隻）
@@ -59,40 +55,96 @@ treatment:
     - 抗癲癇管理
   general:
     - 手術切除（craniotomy）——貓隻預後特別好
-    - "放射治療：conventional fractionated RT 或 stereotactic radiosurgery"
-    - "抗癲癇：Phenobarbital 2-3 mg/kg PO q12h 或 Levetiracetam 20-30 mg/kg PO q8h"
-    - "短期類固醇（減輕腦水腫）：Dexamethasone 0.25-0.5 mg/kg IV → Prednisolone PO"
+    - 放射治療：conventional fractionated RT 或 stereotactic radiosurgery
+    - 抗癲癇：Phenobarbital 2-3 mg/kg PO q12h 或 Levetiracetam 20-30 mg/kg PO q8h
+    - 短期類固醇（減輕腦水腫）：Dexamethasone 0.25-0.5 mg/kg IV → Prednisolone PO
     - Hydroxyurea（部分報告對犬隻腦膜瘤有抗腫瘤效果，證據有限）
-
 prognosis: 貓隻腦膜瘤手術切除後中位存活時間約 2-3 年（甚至更長），預後良好。犬隻手術切除後中位存活約 7-12 個月（較貓隻差，因犬隻腦膜瘤侵犯性較強）。放射治療中位存活約 12-24 個月。多發性腦膜瘤（貓隻較常見）手術可處理但復發率較高。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: An Illustrated Scoping Review of the Magnetic Resonance Imaging Characteristics of Canine and Feline Brain Tumors.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11010916/
     type: review
-    pmid: "38612283"
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
+    pmid: '38612283'
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
     title: Diagnostic immunohistochemistry of primary and secondary central nervous system neoplasms of dogs and cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10929637/
     type: review
-    pmid: "38234003"
+    pmid: '38234003'
   - sourceOrg: Frontiers in oncology
-    title: "Canine Primary Intracranial Cancer: A Clinicopathologic and Comparative Review of Glioma, Meningioma, and Choroid Plexus Tumors."
+    title: >-
+      Canine Primary Intracranial Cancer: A Clinicopathologic and Comparative Review of Glioma, Meningioma, and Choroid
+      Plexus Tumors.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6856054/
     type: review
-    pmid: "31788444"
+    pmid: '31788444'
   - sourceOrg: Journal of veterinary science
-    title: "Surgical treatment of feline intracranial meningiomas: a retrospective study of 26 cases."
+    title: 'Surgical treatment of feline intracranial meningiomas: a retrospective study of 26 cases.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10990911/
     type: research
-    pmid: "38568826"
+    pmid: '38568826'
   - sourceOrg: Veterinary pathology
-    title: "Bovine intracranial neoplasia: A retrospective case series."
+    title: 'Bovine intracranial neoplasia: A retrospective case series.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9358308/
     type: research
-    pmid: "35638647"
+    pmid: '35638647'
 pubmedQueries:
   - query: '"meningioma" AND (veterinary OR canine OR feline) AND ("surgery" OR "craniotomy" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 腦膜瘤 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估神經症狀與進展速度
+      findings:
+        - 行為改變或性格異常
+        - 癲癇發作（老年犬首次發作）
+        - 步態異常或轉圈
+        - 視力障礙
+    - step: 2
+      action: 神經學檢查
+      details: 完整神經學定位檢查
+      findings:
+        - 前腦徵象（行為/癲癇/視力）
+        - 腦幹徵象（顱神經異常）
+        - 小腦徵象（共濟失調/意向性震顫）
+        - 神經定位判斷
+    - step: 3
+      action: 進階影像學
+      details: MRI為腦部腫瘤診斷首選
+      findings:
+        - MRI：腦外腫塊均勻強化
+        - 寬基底附著腦膜
+        - dural tail sign
+        - 犬常見腦膜瘤/貓也常見
+    - step: 4
+      action: 治療計劃
+      details: 根據位置與症狀評估手術或保守治療
+      findings:
+        - 表淺位置可手術切除
+        - 手術難以完全切除則輔助放療
+        - 類固醇減輕腦水腫
+        - 抗癲癇藥物控制癲癇
+clinicalPearls:
+  - 犬貓最常見的原發性顱內腫瘤
+  - MRI特徵性表現：均勻強化、硬腦膜尾徵、軸外腫塊
+  - 貓腦膜瘤常可較完整切除因與腦實質界線清楚
+  - 老年犬新發癲癇應將腦膜瘤列為首要考慮
+monitoringItems:
+  - 神經學檢查
+  - 癲癇頻率
+  - MRI追蹤
+  - 抗癲癇藥物血中濃度
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: common
+ddxSource: book

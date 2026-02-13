@@ -3,13 +3,15 @@ nameEn: Idiopathic Epilepsy
 nameZh: 特發性癲癇
 bodySystem: neurology
 description: 原因不明的反覆性癲癇發作，為犬最常見的慢性神經系統疾病。
-
 aliases:
-  - { alias: IE, language: en }
-  - { alias: Primary Epilepsy, language: en }
-  - { alias: Genetic Epilepsy, language: en }
-  - { alias: 原發性癲癇, language: zh }
-
+  - alias: IE
+    language: en
+  - alias: Primary Epilepsy
+    language: en
+  - alias: Genetic Epilepsy
+    language: en
+  - alias: 原發性癲癇
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓較少診斷為特發性癲癇，需積極排除結構性原因 (腦膜瘤、FIP、海馬硬化)。
-
 etiology:
   categories:
     - name: 遺傳性
@@ -30,7 +31,6 @@ etiology:
       examples:
         - 未知原因但疑似遺傳背景
         - 排除結構性與代謝性原因後診斷
-
 clinicalSigns:
   early:
     - 全身性強直陣攣發作 (最常見)
@@ -44,25 +44,23 @@ clinicalSigns:
     - 癲癇重積狀態 (>5 分鐘持續發作)
     - 藥物難治性癲癇
     - 認知功能下降
-
 diagnosis:
   primaryTests:
     - name: 完整神經學檢查
-      notes: "發作間期應為正常 (特發性癲癇)"
+      notes: 發作間期應為正常 (特發性癲癇)
     - name: CBC + 生化 + 電解質
-      notes: "排除代謝性原因 (低血糖、肝腦症、低鈣血症)"
+      notes: 排除代謝性原因 (低血糖、肝腦症、低鈣血症)
     - name: MRI
-      notes: "排除結構性腦部疾病 (腫瘤、腦炎、水腦)。特發性癲癇 MRI 應為正常"
+      notes: 排除結構性腦部疾病 (腫瘤、腦炎、水腦)。特發性癲癇 MRI 應為正常
   imaging:
     - name: 腦部 MRI
-      notes: "金標準影像學檢查。需全身麻醉"
+      notes: 金標準影像學檢查。需全身麻醉
   additional:
     - 腦脊髓液分析 (排除腦炎)
     - 空腹膽汁酸 (排除肝門體循環分流)
     - 甲狀腺功能 (犬)
     - 血壓測量
     - 糞便/血液寄生蟲檢查
-
 treatment:
   principles:
     - 不是所有癲癇犬都需要抗癲癇藥物
@@ -70,59 +68,125 @@ treatment:
     - 目標：減少發作頻率 ≥50%，而非完全消除
   medications:
     - name: Phenobarbital
-      dose: "2.5-3 mg/kg PO BID"
+      dose: 2.5-3 mg/kg PO BID
       notes: 一線藥物。需定期監測血中濃度 (目標 20-35 μg/mL) 與肝功能
     - name: Levetiracetam (Keppra)
-      dose: "20 mg/kg PO TID (或緩釋劑型 30 mg/kg BID)"
+      dose: 20 mg/kg PO TID (或緩釋劑型 30 mg/kg BID)
       notes: 副作用少，安全性高。可作為一線或加購藥物。可能出現蜜月期效應
     - name: Potassium bromide (KBr)
-      dose: "犬 30-40 mg/kg PO SID (負載：40-60 mg/kg/day × 5 天)"
+      dose: 犬 30-40 mg/kg PO SID (負載：40-60 mg/kg/day × 5 天)
       notes: 常與 phenobarbital 合併使用。貓禁用 (引起哮喘)。血中半衰期很長
     - name: Imepitoin (Pexion)
-      dose: "10-30 mg/kg PO BID"
+      dose: 10-30 mg/kg PO BID
       notes: 歐洲核准用於犬特發性癲癇。對輕度癲癇效果尚可
   general:
     - 癲癇重積狀態急救：Diazepam 0.5-1 mg/kg IV 或經直腸、Midazolam 0.2 mg/kg IV/IM/IN
     - 家庭急救教育 (經直腸 diazepam 或經鼻 midazolam)
     - 癲癇日記記錄
     - 定期血藥濃度監測
-
-emergencyNotes: 癲癇重積狀態為急症。Diazepam 0.5-1 mg/kg IV (可重複 2-3 次)。無效時使用 phenobarbital 16 mg/kg IV 緩慢推注或 levetiracetam 60 mg/kg IV。考慮 propofol CRI。
-
+emergencyNotes: >-
+  癲癇重積狀態為急症。Diazepam 0.5-1 mg/kg IV (可重複 2-3 次)。無效時使用 phenobarbital 16 mg/kg IV 緩慢推注或 levetiracetam 60 mg/kg IV。考慮
+  propofol CRI。
 prognosis: 約 15-30% 為藥物難治性。多數犬在治療下生活品質可接受。叢集性發作與早期發病的犬預後較差。
-
 guidelineRefs:
   - sourceOrg: IVETF
     title: IVETF Consensus Statements on Canine Epilepsy
     url: https://pubmed.ncbi.nlm.nih.gov/25913458/
     type: consensus
-    pmid: "25913458"
+    pmid: '25913458'
   - sourceOrg: BMC veterinary research
-    title: "International veterinary epilepsy task force consensus proposal: diagnostic approach to epilepsy in dogs."
+    title: 'International veterinary epilepsy task force consensus proposal: diagnostic approach to epilepsy in dogs.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4552251/
     type: consensus
-    pmid: "26316175"
+    pmid: '26316175'
   - sourceOrg: BMC veterinary research
-    title: "International Veterinary Epilepsy Task Force consensus proposal: medical treatment of canine epilepsy in Europe."
+    title: 'International Veterinary Epilepsy Task Force consensus proposal: medical treatment of canine epilepsy in Europe.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4552371/
     type: consensus
-    pmid: "26316233"
+    pmid: '26316233'
   - sourceOrg: Biology
-    title: "Role of Gut Microbiota through Gut-Brain Axis in Epileptogenesis: A Systematic Review of Human and Veterinary Medicine."
+    title: >-
+      Role of Gut Microbiota through Gut-Brain Axis in Epileptogenesis: A Systematic Review of Human and Veterinary
+      Medicine.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9495720/
     type: review
-    pmid: "36138769"
+    pmid: '36138769'
   - sourceOrg: Journal of veterinary internal medicine
-    title: Correlation between semiautomated magnetic resonance imaging volumetry of the cingulate gyrus and interictal epileptiform discharge lateralization in dogs with idiopathic epilepsy.
+    title: >-
+      Correlation between semiautomated magnetic resonance imaging volumetry of the cingulate gyrus and interictal
+      epileptiform discharge lateralization in dogs with idiopathic epilepsy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11423450/
     type: research
-    pmid: "39189832"
+    pmid: '39189832'
     relevance: supporting
 pubmedQueries:
   - query: '"idiopathic epilepsy" AND dog AND ("consensus" OR "guidelines")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "EXL"
-  sectionTitle: "REPTILES"
+  chapter: EXL
+  sectionTitle: REPTILES
   pdfPage: 2008
+diagnosticAlgorithm:
+  title: 特發性癲癇 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 詳細癲癇發作史及發作間期評估
+      findings:
+        - 全身性強直陣攣發作
+        - 發作間期神經學正常
+        - 1-5歲首次發作
+        - 品種好發（邊境牧羊犬等）
+    - step: 2
+      action: 血液生化篩檢
+      details: 排除代謝性癲癇原因
+      findings:
+        - 血糖正常
+        - 肝功能正常（排除PSS）
+        - 電解質正常
+        - 膽汁酸正常
+    - step: 3
+      action: 進階腦部影像
+      details: MRI排除結構性腦病
+      findings:
+        - MRI腦部正常
+        - 排除腫瘤
+        - 排除腦炎
+        - 排除水腦症
+    - step: 4
+      action: CSF分析與確診
+      details: 腦脊髓液排除感染性/炎性原因
+      findings:
+        - CSF正常
+        - 排除腦膜腦炎
+        - 排除感染（犬瘟熱等）
+        - 臨床排除診斷確認特發性癲癇
+clinicalPearls:
+  - 「排除性診斷」- 必須排除其他原因
+  - 首發年齡>6歲應高度懷疑結構性病變
+  - Phenobarbital需定期監測血藥濃度和肝功能
+  - 不可突然停藥（誘發反彈發作）
+  - 叢集發作是急診
+  - 建議主人記錄發作日誌
+monitoringItems:
+  - 發作日誌（頻率、持續時間、類型）
+  - 血藥濃度（Phenobarbital、Bromide）
+  - 肝功能（Phenobarbital）
+  - 腎功能（Bromide）
+  - CBC
+  - 生活品質
+associatedSymptoms:
+  - symptomId: seizures
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: horner-syndrome
+    frequency: common
+  - symptomId: facial-nerve-paralysis
+    frequency: common
+ddxSource: book

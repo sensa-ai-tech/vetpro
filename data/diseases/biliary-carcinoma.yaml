@@ -3,12 +3,13 @@ nameEn: Biliary Carcinoma
 nameZh: 膽管癌
 bodySystem: oncology
 description: 膽管癌（cholangiocarcinoma）為起源於膽管上皮細胞的惡性腫瘤，為犬貓肝臟原發性上皮性腫瘤中最常見的類型。貓隻膽管癌較犬隻常見。腫瘤具高度侵犯性與轉移傾向，常轉移至腹腔淋巴結、肺臟與腹膜。
-
 aliases:
-  - { alias: 膽管細胞癌, language: zh }
-  - { alias: Cholangiocarcinoma, language: en }
-  - { alias: Bile Duct Carcinoma, language: en }
-
+  - alias: 膽管細胞癌
+    language: zh
+  - alias: Cholangiocarcinoma
+    language: en
+  - alias: Bile Duct Carcinoma
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻膽管癌為最常見的肝臟原發性惡性腫瘤。與慢性膽管炎/膽道疾病可能相關。
-
 etiology:
   categories:
     - name: 腫瘤特性
@@ -29,7 +29,6 @@ etiology:
         - 慢性膽管炎（貓隻）
         - 肝吸蟲感染（Opisthorchis、Clonorchis）
         - 慢性膽道疾病
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -42,14 +41,12 @@ clinicalSigns:
     - 嘔吐
     - 腹部觸診腫塊
     - 惡病質
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
       notes: 肝臟內單發或多發結節。結節回音性不一。評估膽管擴張。評估腹腔淋巴結與腹膜轉移。
     - name: 細針穿刺/活檢
       notes: 組織病理學確診。免疫組織化學（CK7、CK19 陽性）與肝細胞癌鑑別。分期評估包括胸腔 X 光。
-
 treatment:
   principles:
     - 手術切除為唯一可能根治的方法
@@ -60,18 +57,64 @@ treatment:
     - 手術切除邊界需足夠
     - 化療反應率低（Gemcitabine、Carboplatin 有限報告）
     - 支持性治療（止吐、營養支持）
-    - "利膽：Ursodiol 10-15 mg/kg PO q24h（膽汁淤滯時）"
+    - 利膽：Ursodiol 10-15 mg/kg PO q24h（膽汁淤滯時）
     - 疼痛管理
-
 prognosis: 膽管癌整體預後不佳。手術完整切除者中位存活時間約 6-9 個月。無法手術切除者中位存活時間約 1-3 個月。轉移率高（肺臟、腹膜、淋巴結）。貓隻膽管癌整體預後較犬隻差。早期發現與完整手術切除是改善預後的關鍵。
-
-
 guidelineRefs:
-  - sourceOrg: "Veterinary surgery : VS"
-    title: "Roux-en-Y procedure to reconstruct the upper gastrointestinal tract in six dogs and five cats: A descriptive case series."
+  - sourceOrg: 'Veterinary surgery : VS'
+    title: >-
+      Roux-en-Y procedure to reconstruct the upper gastrointestinal tract in six dogs and five cats: A descriptive case
+      series.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12282040/
     type: research
-    pmid: "40165710"
+    pmid: '40165710'
 pubmedQueries:
-  - query: '"cholangiocarcinoma" OR "biliary carcinoma" AND (veterinary OR canine OR feline) AND ("surgery" OR "treatment" OR "prognosis")'
+  - query: >-
+      "cholangiocarcinoma" OR "biliary carcinoma" AND (veterinary OR canine OR feline) AND ("surgery" OR "treatment" OR
+      "prognosis")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 膽管癌 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 肝臟內單發或多發結節。結節回音性不一。評估膽管擴張。評估腹腔淋巴結與腹膜轉移。
+        - name: 細針穿刺/活檢
+          notes: 組織病理學確診。免疫組織化學（CK7、CK19 陽性）與肝細胞癌鑑別。分期評估包括胸腔 X 光。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術切除為唯一可能根治的方法
+        - 完整切除困難
+        - 化療效果有限
+ddxSource: auto-generated

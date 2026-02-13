@@ -3,11 +3,11 @@ nameEn: Nasal Lymphoma
 nameZh: 鼻腔淋巴瘤
 bodySystem: oncology
 description: 鼻腔原發性淋巴瘤,貓較常見。臨床表現為單側或雙側鼻分泌物、鼻出血及呼吸困難。
-
 aliases:
-  - { alias: 鼻淋巴癌, language: zh }
-  - { alias: Nasal Lymphosarcoma, language: en }
-
+  - alias: 鼻淋巴癌
+    language: zh
+  - alias: Nasal Lymphosarcoma
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,13 +17,11 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓第二常見鼻腔腫瘤,中老年貓
-
 etiology:
   categories:
     - name: 腫瘤性
       examples:
         - B 細胞或 T 細胞淋巴瘤
-
 clinicalSigns:
   early:
     - 打噴嚏
@@ -33,58 +31,82 @@ clinicalSigns:
     - 臉部變形
     - 呼吸困難
     - 眼球突出 (若侵犯眼眶)
-
 diagnosis:
   primaryTests:
     - name: 鼻鏡檢查
-      notes: "取組織切片"
+      notes: 取組織切片
     - name: 頭部 CT/MRI
-      notes: "評估腫瘤範圍"
+      notes: 評估腫瘤範圍
     - name: 組織病理學
-      notes: "確診淋巴瘤類型"
+      notes: 確診淋巴瘤類型
     - name: 分期檢查
-      notes: "胸腹部影像、淋巴結評估"
+      notes: 胸腹部影像、淋巴結評估
   differentialDiagnoses:
     - 鼻腺癌
     - 慢性鼻炎
     - 真菌性鼻炎
-
 treatment:
   medical:
     - 放射治療 (首選)
     - 化療 (CHOP 方案)
     - Prednisone 1-2 mg/kg PO q24h
     - 姑息性照護
-
 prognosis:
-  general: "預後謹慎;放療中位存活時間 12-24 個月;僅化療 3-6 個月"
-
+  general: 預後謹慎;放療中位存活時間 12-24 個月;僅化療 3-6 個月
 prevention:
   - 無特定預防措施
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Tumours involving the retrobulbar space in cats: 37 cases."
+    title: 'Tumours involving the retrobulbar space in cats: 37 cases.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11104240/
     type: review
-    pmid: "35536054"
+    pmid: '35536054'
     relevance: primary
   - sourceOrg: Veterinary sciences
     title: Nasal Lymphoma with Low Mitotic Index in Three Cats Treated with Chlorambucil and Prednisolone.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9503513/
     type: case-report
-    pmid: "36136688"
+    pmid: '36136688'
     relevance: supporting
   - sourceOrg: Journal of veterinary internal medicine
     title: Outcome of stereotactic body radiation for treatment of nasal and nasopharyngeal lymphoma in 32 cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8965259/
     type: research
-    pmid: "35188694"
+    pmid: '35188694'
     relevance: supporting
   - sourceOrg: Journal of feline medicine and surgery
-    title: MRI findings, including diffusion-weighted imaging, in seven cats with nasal lymphoma and two cats with nasal adenocarcinoma.
+    title: >-
+      MRI findings, including diffusion-weighted imaging, in seven cats with nasal lymphoma and two cats with nasal
+      adenocarcinoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812204/
     type: research
-    pmid: "32573314"
+    pmid: '32573314'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: sneezing
+    frequency: common
+  - symptomId: epistaxis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 鼻腔淋巴瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - sneezing 相關症狀
+        - epistaxis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 鼻鏡檢查
+          notes: 取組織切片
+        - name: 頭部 CT/MRI
+          notes: 評估腫瘤範圍
+        - name: 組織病理學
+          notes: 確診淋巴瘤類型
+ddxSource: auto-generated

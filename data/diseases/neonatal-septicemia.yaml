@@ -3,12 +3,13 @@ nameEn: Neonatal Septicemia
 nameZh: 新生兒敗血症
 bodySystem: infectious
 description: 新生犬貓因免疫系統尚未成熟，細菌經由臍帶、口腔或皮膚侵入血流引發全身性感染。是新生動物死亡的主要原因之一，需立即診斷及治療。
-
 aliases:
-  - { alias: 新生動物菌血症, language: zh }
-  - { alias: Neonatal Sepsis, language: en }
-  - { alias: Puppy Septicemia, language: en }
-
+  - alias: 新生動物菌血症
+    language: zh
+  - alias: Neonatal Sepsis
+    language: en
+  - alias: Puppy Septicemia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 與犬類似，尤其多貓環境
-
 etiology:
   categories:
     - name: 細菌病原
@@ -39,7 +39,6 @@ etiology:
         - 環境不潔
         - 早產或低體重
         - 母體乳腺炎
-
 clinicalSigns:
   early:
     - 活力下降、不吸乳
@@ -52,23 +51,21 @@ clinicalSigns:
     - 出血傾向(瘀斑、血便)
     - 休克、昏迷
     - 快速死亡
-
 diagnosis:
   primaryTests:
     - name: 血液培養
-      notes: "確診病原菌，需於抗生素使用前採樣"
+      notes: 確診病原菌，需於抗生素使用前採樣
     - name: 全血計數
-      notes: "白血球過高或過低、左移、血小板減少"
+      notes: 白血球過高或過低、左移、血小板減少
     - name: 生化檢查
-      notes: "低血糖、酸中毒、肝腎功能異常"
+      notes: 低血糖、酸中毒、肝腎功能異常
     - name: C-反應蛋白
-      notes: "發炎指標升高"
+      notes: 發炎指標升高
   differentialDiagnoses:
     - 病毒性感染
     - 低血糖症
     - 先天性心臟病
     - 新生兒溶血
-
 treatment:
   medical:
     - 廣效抗生素立即使用(靜脈給予)
@@ -80,34 +77,68 @@ treatment:
     - 氧氣治療
     - 臍帶局部清創及消毒
     - 補充餵食(管餵或靜脈營養)
-
 prognosis:
-  general: "早期診斷及積極治療存活率約50-60%；若出現休克或DIC則預後極差(<20%存活)"
-
+  general: 早期診斷及積極治療存活率約50-60%；若出現休克或DIC則預後極差(<20%存活)
 prevention:
   - 接生環境消毒
   - 臍帶剪斷後立即優碘消毒
   - 確保初乳攝取(提供被動免疫)
   - 母體乳腺炎及早治療
   - 隔離病犬避免交叉感染
-
-
 guidelineRefs:
   - sourceOrg: BMC microbiology
-    title: Lactobacillus rhamnosus modulates murine neonatal gut microbiota and inflammation caused by pathogenic Escherichia coli.
+    title: >-
+      Lactobacillus rhamnosus modulates murine neonatal gut microbiota and inflammation caused by pathogenic Escherichia
+      coli.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11539828/
     type: research
-    pmid: "39506682"
+    pmid: '39506682'
     relevance: supporting
   - sourceOrg: BMC veterinary research
     title: Risk factors for poor health and performance in European broiler production systems.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7425143/
     type: research
-    pmid: "32787841"
+    pmid: '32787841'
     relevance: supporting
   - sourceOrg: PloS one
     title: Secreted autotransporter toxin (Sat) induces cell damage during enteroaggregative Escherichia coli infection.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7034920/
     type: research
-    pmid: "32084148"
+    pmid: '32084148'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: haematochezia
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: common
+  - symptomId: petechiae-ecchymoses
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 新生兒敗血症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - hyperthermia 相關症狀
+        - haematochezia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液培養
+          notes: 確診病原菌，需於抗生素使用前採樣
+        - name: 全血計數
+          notes: 白血球過高或過低、左移、血小板減少
+        - name: 生化檢查
+          notes: 低血糖、酸中毒、肝腎功能異常
+ddxSource: auto-generated

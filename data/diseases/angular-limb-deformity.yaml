@@ -3,24 +3,28 @@ nameEn: Angular Limb Deformity
 nameZh: 角肢畸形
 bodySystem: orthopedic
 description: 成對骨骼 (前臂橈骨/尺骨) 生長不同步導致的肢體角度異常，好發於軟骨營養障礙犬種及外傷後幼犬。
-
 aliases:
-  - { alias: ALD, language: en }
-  - { alias: Antebrachial Growth Deformity, language: en }
-  - { alias: Premature Physeal Closure, language: en }
-  - { alias: 前肢角度畸形, language: zh }
-  - { alias: 骨骺早閉, language: zh }
-
+  - alias: ALD
+    language: en
+  - alias: Antebrachial Growth Deformity
+    language: en
+  - alias: Premature Physeal Closure
+    language: en
+  - alias: 前肢角度畸形
+    language: zh
+  - alias: 骨骺早閉
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: uncommon
-    notes: 好發軟骨營養障礙品種 (chondrodystrophic)：Basset Hound、Dachshund、Shih Tzu、Lhasa Apso、Skye Terrier。大型犬因外傷致骨骺損傷後亦常見。通常 4-8 月齡生長期發現。
+    notes: >-
+      好發軟骨營養障礙品種 (chondrodystrophic)：Basset Hound、Dachshund、Shih Tzu、Lhasa Apso、Skye Terrier。大型犬因外傷致骨骺損傷後亦常見。通常 4-8
+      月齡生長期發現。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓罕見，通常與外傷後骨骺損傷相關。
-
 etiology:
   categories:
     - name: 先天性/品種因素
@@ -40,7 +44,6 @@ etiology:
         - 橈骨持續生長 → 橈骨外翻 (valgus)、前弓 (cranial bowing)
         - 尺骨弓弦效應 (bowstring effect)
         - 肘關節不一致 (incongruity)
-
 clinicalSigns:
   early:
     - 前肢輕微彎曲 (幼犬生長期)
@@ -58,23 +61,21 @@ clinicalSigns:
     - 腕關節退化性關節炎
     - 患肢肌肉萎縮
     - 功能障礙
-
 diagnosis:
   primaryTests:
     - name: 骨科檢查
-      notes: "肢體角度評估、肘/腕關節活動範圍、疼痛反應。與對側比較"
+      notes: 肢體角度評估、肘/腕關節活動範圍、疼痛反應。與對側比較
     - name: 前肢 X 光 (正側位)
-      notes: "標準篩檢。評估橈骨/尺骨相對長度、角度偏差、肘關節一致性、骨骺閉合狀態"
+      notes: 標準篩檢。評估橈骨/尺骨相對長度、角度偏差、肘關節一致性、骨骺閉合狀態
   imaging:
     - name: X 光 (全前肢含肘關節與腕關節)
-      notes: "評估 CORA (center of rotation of angulation) 位置。測量解剖軸偏差角度。需包含對側正常肢做比較"
+      notes: 評估 CORA (center of rotation of angulation) 位置。測量解剖軸偏差角度。需包含對側正常肢做比較
     - name: CT + 3D 重建
-      notes: "術前計畫金標準。精確測量畸形角度與旋轉分量。CORA 定位更準確"
+      notes: 術前計畫金標準。精確測量畸形角度與旋轉分量。CORA 定位更準確
   additional:
     - 對側肢 X 光 (正常參考)
     - 骨骺閉合評估 (判斷殘餘生長潛力)
     - 肘關節評估 (fragmented coronoid process 或 ununited anconeal process 併發)
-
 treatment:
   principles:
     - 手術為主要治療，手術時機取決於剩餘生長潛力
@@ -83,10 +84,10 @@ treatment:
     - 同時處理肘關節不一致
   medications:
     - name: NSAIDs (Meloxicam, Carprofen)
-      dose: "依藥物標準劑量"
+      dose: 依藥物標準劑量
       notes: 術後疼痛管理
     - name: Gabapentin
-      dose: "5-10 mg/kg PO BID-TID"
+      dose: 5-10 mg/kg PO BID-TID
       notes: 多模式止痛輔助
   general:
     - 幼犬 (生長板仍開放)：遠端尺骨截骨術 (distal ulnar ostectomy) 釋放弓弦效應，允許橈骨自我矯正
@@ -96,41 +97,88 @@ treatment:
     - 急性或漸進矯正 (distraction osteogenesis)
     - 術後復健與活動限制 (6-12 週)
     - 體重管理 (減輕關節負擔)
-
 prognosis: 幼犬早期尺骨截骨預後最佳，生長板仍有活性時可大幅自我矯正。成犬矯正截骨成功率高 (>85%) 但術後可能殘留輕度畸形。合併嚴重肘關節退化性關節炎時功能預後較差。術後需長期追蹤評估。
-
 guidelineRefs:
   - sourceOrg: Veterinary Surgery
     title: Corrective osteotomy for antebrachial angular and rotational deformities in dogs.
     url: https://pubmed.ncbi.nlm.nih.gov/31506972/
     type: research
-    pmid: "31506972"
+    pmid: '31506972'
   - sourceOrg: Veterinary and comparative orthopaedics and traumatology
     title: Computer-assisted planning for corrective osteotomy of antebrachial deformities in dogs.
     url: https://pubmed.ncbi.nlm.nih.gov/30071556/
     type: research
-    pmid: "30071556"
+    pmid: '30071556'
   - sourceOrg: Frontiers in veterinary science
-    title: Three-Dimensional Printed Patient-Specific Osteotomy Guides for Correction of Antebrachial Angular Limb Deformity in Dogs.
+    title: >-
+      Three-Dimensional Printed Patient-Specific Osteotomy Guides for Correction of Antebrachial Angular Limb Deformity
+      in Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9748057/
     type: research
-    pmid: "36532340"
+    pmid: '36532340'
   - sourceOrg: JFMS open reports
-    title: "Radial head subluxation in a chondrodystrophic cat: aetiology, surgical treatment and outcome."
+    title: 'Radial head subluxation in a chondrodystrophic cat: aetiology, surgical treatment and outcome.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12450254/
     type: case-report
-    pmid: "40984874"
+    pmid: '40984874'
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
     title: Commercial diet recommendations and follow-up for a large breed puppy with an intrahepatic portosystemic shunt.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8118183/
     type: case-report
-    pmid: "34219766"
+    pmid: '34219766'
     relevance: supporting
 pubmedQueries:
   - query: '"angular limb deformity" AND (dog OR canine) AND ("corrective osteotomy" OR "treatment")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "MUS"
-  sectionTitle: "Angular Limb Deformities"
+  chapter: MUS
+  sectionTitle: Angular Limb Deformities
   pdfPage: 1087
+diagnosticAlgorithm:
+  title: 肢體角度畸形 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估步態異常與肢體外觀，詢問受傷史及生長期異常
+      findings:
+        - 肢體外翻或內翻
+        - 步態異常或跛行
+        - 前肢（橈骨/尺骨）最常見
+        - 生長期間進行性惡化
+    - step: 2
+      action: 骨科學檢查
+      details: 詳細觸診與關節活動度評估
+      findings:
+        - 肢體軸線偏移
+        - 關節活動範圍受限
+        - 骨長度不對稱
+        - 肌肉萎縮
+    - step: 3
+      action: 影像學檢查
+      details: X光攝影確認畸形程度與骨骺狀態
+      findings:
+        - 骨骼軸線角度異常
+        - 生長板早期閉合
+        - 關節面不協調
+        - CT可精確測量旋轉角度
+    - step: 4
+      action: 確診與手術計畫
+      details: 確認畸形類型並制定矯正方案
+      findings:
+        - 確認受影響骨骼與生長板
+        - 測量CORA角度
+        - 評估是否需矯正截骨術
+clinicalPearls:
+  - 尺骨遠端生長板貢獻尺骨約85%的縱向生長，是最常受影響的生長板
+  - 早期介入（生長板仍開放時）的治療效果遠優於生長完成後的矯正
+  - 軟骨發育不良品種的輕度彎曲可能是品種正常變異而非病理性畸形
+  - CT掃描對於制定精確的矯正截骨計劃至關重要
+monitoringItems:
+  - 術後定期X光追蹤骨癒合和矯正維持
+  - 幼犬需密切追蹤（每2-4週）監測生長和矯正效果
+  - 長期監測退化性關節病發展
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+ddxSource: book

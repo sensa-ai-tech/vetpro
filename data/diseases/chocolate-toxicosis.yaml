@@ -3,14 +3,17 @@ nameEn: Chocolate Toxicosis
 nameZh: 巧克力中毒
 bodySystem: toxicology
 description: 犬攝入巧克力中的甲基黃嘌呤類物質（theobromine 與 caffeine）導致的中毒。為犬最常見的食物中毒之一，嚴重時可致死。
-
 aliases:
-  - { alias: 巧克力中毒症, language: zh }
-  - { alias: 可可鹼中毒, language: zh }
-  - { alias: Theobromine Toxicosis, language: en }
-  - { alias: Chocolate Poisoning, language: en }
-  - { alias: Methylxanthine Toxicosis, language: en }
-
+  - alias: 巧克力中毒症
+    language: zh
+  - alias: 可可鹼中毒
+    language: zh
+  - alias: Theobromine Toxicosis
+    language: en
+  - alias: Chocolate Poisoning
+    language: en
+  - alias: Methylxanthine Toxicosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓因對甜味不敏感，自願攝入巧克力的機率較低。但貓對甲基黃嘌呤同樣敏感，攝入後亦可中毒。
-
 etiology:
   categories:
     - name: 毒性成分
@@ -41,7 +43,6 @@ etiology:
         - 心臟症狀：theobromine 40-50 mg/kg
         - 癲癇發作：theobromine 60 mg/kg
         - 致死劑量：theobromine 100-200 mg/kg
-
 clinicalSigns:
   early:
     - 嘔吐（通常攝入後 2-4 小時出現）
@@ -62,22 +63,20 @@ clinicalSigns:
     - 心臟衰竭
     - 昏迷
     - 死亡（通常在攝入後 12-36 小時）
-
 diagnosis:
   primaryTests:
     - name: 病史與暴露評估
-      notes: "確認巧克力種類、攝入量、攝入時間。計算 theobromine 攝入劑量 (mg/kg)"
+      notes: 確認巧克力種類、攝入量、攝入時間。計算 theobromine 攝入劑量 (mg/kg)
     - name: 臨床症狀評估
-      notes: "心率、心律、體溫、神經學狀態"
+      notes: 心率、心律、體溫、神經學狀態
   imaging:
     - name: 腹部 X 光
-      notes: "可見胃內高密度不透光物質（巧克力/錫箔紙包裝）"
+      notes: 可見胃內高密度不透光物質（巧克力/錫箔紙包裝）
   additional:
     - 心電圖 (ECG) 監測心律不整
     - CBC/生化/電解質（評估代謝狀態）
     - 尿液分析（theobromine 經腎臟排泄，尿中可檢出）
     - 血清 theobromine/caffeine 濃度（多數臨床情境非必要）
-
 treatment:
   principles:
     - 減少毒物吸收為首要目標
@@ -93,26 +92,84 @@ treatment:
     - 癲癇控制 (diazepam 0.5-1 mg/kg IV)
     - 肌肉震顫 (methocarbamol 55-220 mg/kg IV，緩慢給予)
     - 持續 ECG 監測直至症狀消退
-
 prognosis: 輕度攝入（<20 mg/kg theobromine）預後極佳。中度攝入經積極治療後多數可完全康復。攝入致死劑量且延遲就醫者預後差。theobromine 半衰期長（犬約 17.5 小時），需監測至少 24-72 小時。
-
 guidelineRefs:
   - sourceOrg: ASPCA APCC
-    title: "Methylxanthine toxicosis in dogs"
+    title: Methylxanthine toxicosis in dogs
     url: https://pubmed.ncbi.nlm.nih.gov/23547665/
     type: review
-    pmid: "23547665"
+    pmid: '23547665'
   - sourceOrg: Veterinary Clinics
-    title: "Common Toxicologic Issues in Small Animals"
+    title: Common Toxicologic Issues in Small Animals
     url: https://pubmed.ncbi.nlm.nih.gov/16517793/
     type: review
-    pmid: "16517793"
-
+    pmid: '16517793'
 pubmedQueries:
   - query: '"chocolate" AND "theobromine" AND (dog OR canine) AND ("toxicosis" OR "poisoning" OR "toxicity")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "TOX"
-  sectionTitle: "CHOCOLATE"
+  chapter: TOX
+  sectionTitle: CHOCOLATE
   pdfPage: 3007
+diagnosticAlgorithm:
+  title: 巧克力中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史確認與暴露量評估
+      details: 確認攝入巧克力種類、數量及攝入時間，計算甲基黃嘌呤攝入劑量
+      findings:
+        - 確認巧克力類型（烘焙用>黑巧克力>牛奶巧克力>白巧克力）
+        - 計算可可鹼劑量（mg/kg）
+        - 攝入時間距就診時間
+        - 體重紀錄
+    - step: 2
+      action: 臨床症狀評估
+      details: 根據攝入劑量與時間評估臨床表現，進行完整理學檢查
+      findings:
+        - 嘔吐與腹瀉
+        - 心動過速或心律不整
+        - 過度興奮或躁動
+        - 多尿多飲
+    - step: 3
+      action: 心電圖與實驗室檢查
+      details: 連續心電圖監測，血液學與生化檢查評估臟器影響
+      findings:
+        - 竇性心動過速
+        - 心室早期收縮
+        - 血清肌酐或BUN升高
+        - 高血糖或低血鉀
+    - step: 4
+      action: 監測與併發症評估
+      details: 持續監測生命徵象與神經狀態，評估是否有嚴重併發症
+      findings:
+        - 癲癇發作（高劑量）
+        - 體溫升高
+        - 肌肉震顫
+        - 橫紋肌溶解（極重度）
+clinicalPearls:
+  - 烘焙巧克力毒性約為牛奶巧克力的10倍
+  - 白巧克力幾乎不含可可鹼，毒性極低
+  - 可可鹼的腸肝循環使反覆活性炭有效
+  - 導尿管防止膀胱中可可鹼再吸收是獨特的治療考量
+monitoringItems:
+  - 心電監護（12-24小時）
+  - 神經狀態
+  - 體溫
+  - 尿量
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+ddxSource: book

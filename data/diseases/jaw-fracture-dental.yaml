@@ -3,12 +3,13 @@ nameEn: Jaw Fracture Dental
 nameZh: 牙科性顎骨骨折
 bodySystem: dental
 description: 與牙齒疾病相關的顎骨骨折，包括牙周病導致的病理性骨折與拔牙醫源性骨折。小型犬因下顎骨薄且牙齒相對大，風險特別高。
-
 aliases:
-  - { alias: "Pathological Jaw Fracture", language: en }
-  - { alias: "Iatrogenic Jaw Fracture", language: en }
-  - { alias: "齒源性顎骨骨折", language: zh }
-
+  - alias: Pathological Jaw Fracture
+    language: en
+  - alias: Iatrogenic Jaw Fracture
+    language: en
+  - alias: 齒源性顎骨骨折
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓偶見。
-
 etiology:
   categories:
     - name: 齒源性
@@ -24,7 +24,6 @@ etiology:
         - 嚴重牙周病骨質喪失
         - 拔牙時醫源性骨折
         - 齒根膿瘍骨質破壞
-
 clinicalSigns:
   early:
     - 咬合異常
@@ -34,12 +33,10 @@ clinicalSigns:
     - 無法進食
     - 面部腫脹
     - 下顎偏移
-
 diagnosis:
   primaryTests:
     - name: 口腔 X 光 / CT
       notes: 骨折線確認。評估殘餘骨量
-
 treatment:
   principles:
     - 穩定骨折
@@ -50,36 +47,59 @@ treatment:
     - 管飼或軟食
     - 拔牙醫源性骨折：即時固定
     - 抗生素治療
-
 prognosis: 殘餘骨量足夠者固定後預後中等。骨量嚴重不足者癒合困難。管飼支持重要。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Mandibular fracture repair techniques in cats: a dentist's perspective."
+    title: 'Mandibular fracture repair techniques in cats: a dentist''s perspective.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812066/
     type: review
-    pmid: "36744847"
+    pmid: '36744847'
   - sourceOrg: Bone
     title: Preclinical models of medication-related osteonecrosis of the jaw (MRONJ).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8743993/
     type: review
-    pmid: "34520898"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "The Cat Mandible (II): Manipulation of the Jaw, with a New Prosthesis Proposal, to Avoid Iatrogenic Complications."
+    pmid: '34520898'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'The Cat Mandible (II): Manipulation of the Jaw, with a New Prosthesis Proposal, to Avoid Iatrogenic Complications.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8001173/
     type: review
-    pmid: "33806397"
+    pmid: '33806397'
   - sourceOrg: International journal of surgery case reports
     title: Secondary mandibular osteomyelitis complicated with a pathological fracture.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11283122/
     type: case-report
-    pmid: "38964230"
+    pmid: '38964230'
   - sourceOrg: Medicine
-    title: "Anesthetic management of ventricular-peritoneal shunt implantation in osteogenesis imperfecta type IIB: A case report."
+    title: >-
+      Anesthetic management of ventricular-peritoneal shunt implantation in osteogenesis imperfecta type IIB: A case
+      report.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8735788/
     type: case-report
-    pmid: "35029899"
+    pmid: '35029899'
 pubmedQueries:
   - query: '"jaw fracture" AND (veterinary OR canine OR dental) AND ("fixation" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dysphagia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 牙科性顎骨骨折 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dysphagia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 口腔 X 光 / CT
+          notes: 骨折線確認。評估殘餘骨量
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 穩定骨折
+        - 維持營養
+ddxSource: auto-generated

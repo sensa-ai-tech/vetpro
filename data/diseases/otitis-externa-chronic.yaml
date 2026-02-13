@@ -3,14 +3,17 @@ nameEn: Otitis Externa Chronic
 nameZh: 慢性外耳炎
 bodySystem: ear
 description: 外耳道持續或反覆發作超過 3 個月的炎症性疾病，通常由未解決的原發因素（過敏、內分泌疾病）及持續的繼發感染與永續因素（耳道增生、狹窄）交互作用所致。
-
 aliases:
-  - { alias: 慢性外耳道炎, language: zh }
-  - { alias: 反覆性外耳炎, language: zh }
-  - { alias: Chronic otitis externa, language: en }
-  - { alias: Recurrent otitis externa, language: en }
-  - { alias: End-stage ear disease, language: en }
-
+  - alias: 慢性外耳道炎
+    language: zh
+  - alias: 反覆性外耳炎
+    language: zh
+  - alias: Chronic otitis externa
+    language: en
+  - alias: Recurrent otitis externa
+    language: en
+  - alias: End-stage ear disease
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓慢性外耳炎較犬少見，常與過敏、息肉或耳蟎相關。波斯貓因耳道狹窄風險較高。
-
 etiology:
   categories:
     - name: 原發因素
@@ -42,7 +44,6 @@ etiology:
         - 耳道腺體增生（ceruminous gland hyperplasia）
         - 耳道鈣化/骨化
         - 鼓膜破裂
-
 clinicalSigns:
   early:
     - 反覆搔耳或甩頭
@@ -55,22 +56,20 @@ clinicalSigns:
     - 耳道觸痛明顯
     - 聽力下降
     - 耳廓增厚
-
 diagnosis:
   primaryTests:
     - name: 耳鏡檢查
-      notes: "評估耳道狹窄程度、上皮增生、分泌物性質、鼓膜完整性。慢性病例可能需鎮靜檢查"
+      notes: 評估耳道狹窄程度、上皮增生、分泌物性質、鼓膜完整性。慢性病例可能需鎮靜檢查
     - name: 耳道細胞學
-      notes: "染色鏡檢評估細菌（球菌/桿菌）、酵母菌數量及炎症細胞。指導初始治療選擇"
+      notes: 染色鏡檢評估細菌（球菌/桿菌）、酵母菌數量及炎症細胞。指導初始治療選擇
     - name: 細菌培養與藥敏
-      notes: "慢性/難治性病例必做。Pseudomonas 多重抗藥性常見。指導全身性抗生素選擇"
+      notes: 慢性/難治性病例必做。Pseudomonas 多重抗藥性常見。指導全身性抗生素選擇
   differentialDiagnoses:
     - 中耳炎
     - 耳道腫瘤
     - 耳道異物
     - 耳蟎感染
     - 自體免疫性疾病
-
 treatment:
   medical:
     - 耳道清潔（適當清耳液沖洗，鼓膜破裂時僅用生理食鹽水）
@@ -84,45 +83,90 @@ treatment:
     - 全耳道切除合併側鼓泡切開術（TECA-LBO）——終末期耳病首選
     - 側耳道切除術（Zepp procedure）——部分病例適用
     - 垂直耳道切除術
-
 prognosis:
-  general: "預後取決於原發因素能否控制及耳道不可逆變化的程度。早期識別並治療原發因素預後良好。終末期耳道狹窄/鈣化需手術介入。TECA-LBO 手術後多數犬生活品質顯著改善。"
-
+  general: 預後取決於原發因素能否控制及耳道不可逆變化的程度。早期識別並治療原發因素預後良好。終末期耳道狹窄/鈣化需手術介入。TECA-LBO 手術後多數犬生活品質顯著改善。
 prevention:
   - 早期積極治療急性外耳炎
   - 系統性管理潛在過敏疾病
   - 定期耳道檢查與維護性清潔
   - 垂耳品種定期清耳
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Rhodotorula spp. in Laboratory and Veterinary Clinical Practice: Contamination or an Emerging Problem?"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Rhodotorula spp. in Laboratory and Veterinary Clinical Practice: Contamination or an Emerging Problem?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12649729/
     type: review
-    pmid: "41302007"
+    pmid: '41302007'
     relevance: primary
   - sourceOrg: Microorganisms
     title: Pseudomonas spp. in Canine Otitis Externa.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10673570/
     type: review
-    pmid: "38004662"
+    pmid: '38004662'
     relevance: primary
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Chronic Otitis in Cats: Clinical management of primary, predisposing and perpetuating factors."
+    title: 'Chronic Otitis in Cats: Clinical management of primary, predisposing and perpetuating factors.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10741284/
     type: review
-    pmid: "33896249"
+    pmid: '33896249'
     relevance: primary
   - sourceOrg: Comparative medicine
     title: Chronic Otitis Externa Secondary to Tympanic Membrane Electrode Placement in Rhesus Macaques (Macaca mulatta).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9084568/
     type: case-report
-    pmid: "35346415"
+    pmid: '35346415'
     relevance: supporting
   - sourceOrg: Journal of feline medicine and surgery
     title: Comparative performance of video-otoscopy and CT in the diagnosis of external ear disease in cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11529141/
     type: research
-    pmid: "39466914"
+    pmid: '39466914'
     relevance: supporting
+diagnosticAlgorithm:
+  title: 慢性外耳炎 診斷流程
+  steps:
+    - step: 1
+      action: 耳道評估
+      details: 耳鏡+細胞學+培養
+      findings:
+        - 耳道增生/狹窄程度
+        - 分泌物細胞學（球菌/桿菌/酵母菌）
+        - 鼓膜完整性
+        - 耳道觸感（軟→硬鈣化）
+    - step: 2
+      action: 主因調查
+      details: 尋找驅動因素（過敏為首）
+      findings:
+        - 過敏史（季節性?全年?）
+        - 皮膚其他病灶
+        - 食物排除試驗
+        - 內分泌評估（甲低）
+    - step: 3
+      action: 結構評估
+      details: CT評估中耳和耳道變化
+      findings:
+        - 耳道鈣化程度
+        - 中耳受累?
+        - 耳道殘餘管腔
+        - 決定藥物vs手術
+    - step: 4
+      action: 治療策略
+      details: 感染控制+主因管理+手術評估
+      findings:
+        - 急性感染控制（局部+全身）
+        - 主因管理（過敏治療）
+        - 終末期→TECA-LBO
+        - 維護清潔計畫
+clinicalPearls:
+  - 慢性外耳炎=有主因驅動——找不到主因就無法控制
+  - 過敏是犬慢性外耳炎最常見主因（>40%）——耳炎可能是唯一的過敏表現
+  - 細胞學比培養更重要——培養陽性不代表感染，細胞學看到吞噬細菌才是
+  - Pseudomonas+桿菌+耳道潰瘍=最具挑戰的組合
+  - 耳道鈣化+觸診堅硬=終末期→藥物無效，需TECA-LBO
+monitoringItems:
+  - 耳道細胞學追蹤（治療反應）
+  - 培養追蹤（Pseudomonas）
+  - 過敏控制效果
+  - 耳道結構變化
+  - 飼主居家清潔頻率調整
+  - 對側耳監測
+ddxSource: book

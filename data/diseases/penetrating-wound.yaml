@@ -3,14 +3,17 @@ nameEn: Penetrating Wound
 nameZh: 穿刺傷
 bodySystem: emergency
 description: 由尖銳物體（如咬傷、刺傷、槍傷）造成的深層組織損傷，傷口外觀可能不大但內部損傷範圍常遠超預期。穿刺傷需緊急評估是否涉及體腔、血管或重要臟器，延遲處理可導致嚴重感染或致命性出血。
-
 aliases:
-  - { alias: 穿透傷, language: zh }
-  - { alias: 刺傷, language: zh }
-  - { alias: Puncture Wound, language: en }
-  - { alias: Stab Wound, language: en }
-  - { alias: Bite Wound Penetrating, language: en }
-
+  - alias: 穿透傷
+    language: zh
+  - alias: 刺傷
+    language: zh
+  - alias: Puncture Wound
+    language: en
+  - alias: Stab Wound
+    language: en
+  - alias: Bite Wound Penetrating
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -18,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓常見於貓咬傷（cat bite abscess），戶外貓之間打鬥所致。貓牙齒細尖，穿刺深但外觀小，易被忽視。
-
 etiology:
   categories:
     - name: 動物咬傷
@@ -31,7 +33,6 @@ etiology:
         - 尖銳異物刺入（木棍、金屬片、玻璃）
         - 交通事故導致穿刺
         - 槍傷（彈丸或散彈）
-
 clinicalSigns:
   early:
     - 局部出血或滲液
@@ -44,14 +45,12 @@ clinicalSigns:
     - 發燒
     - 傷口滲出膿性或惡臭分泌物
     - 皮下氣腫（胸壁穿刺傷）
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 仔細檢查傷口深度、方向及周圍組織損傷程度。評估是否涉及體腔。注意尋找入口與出口傷口。
     - name: X 光檢查
       notes: 評估是否有異物殘留、骨折或體腔穿透。胸腔穿刺傷需評估氣胸或血胸。
-
 treatment:
   principles:
     - 穩定生命徵象為首要任務
@@ -65,36 +64,63 @@ treatment:
     - 廣效性抗生素（Amoxicillin-clavulanate 為首選）
     - 適當止痛管理
     - 開放性傷口處理（避免過早縫合封閉）
-
 prognosis: 淺層穿刺傷經適當清創與抗生素治療後預後良好。涉及體腔或重要臟器的穿刺傷預後取決於損傷嚴重程度及處理時效。咬傷穿刺傷感染率高，延遲處理可導致嚴重膿腫或敗血症。
-
-
 guidelineRefs:
   - sourceOrg: Journal of neuroscience methods
     title: In vivo models of cortical acquired epilepsy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4744568/
     type: review
-    pmid: "26343530"
+    pmid: '26343530'
   - sourceOrg: Journal of medical case reports
-    title: "Septic arthritis of knee joint after rooster attack: a case report."
+    title: 'Septic arthritis of knee joint after rooster attack: a case report.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12269118/
     type: case-report
-    pmid: "40671158"
+    pmid: '40671158'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Thoracic dog bite wounds in cats: a retrospective study of 22 cases (2005-2015)."
+    title: 'Thoracic dog bite wounds in cats: a retrospective study of 22 cases (2005-2015).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10814566/
     type: research
-    pmid: "30806527"
+    pmid: '30806527'
   - sourceOrg: Scientific reports
     title: Second harmonic generation imaging of corneal stroma after infection by Pseudomonas aeruginosa.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5387403/
     type: research
-    pmid: "28397809"
+    pmid: '28397809'
   - sourceOrg: Endocrinology
     title: Centrally Synthesized Estradiol Is a Potent Anti-Inflammatory in the Injured Zebra Finch Brain.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4870876/
     type: research
-    pmid: "26963472"
+    pmid: '26963472'
 pubmedQueries:
   - query: '"Penetrating Wound" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 穿刺傷 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - hyperthermia 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 仔細檢查傷口深度、方向及周圍組織損傷程度。評估是否涉及體腔。注意尋找入口與出口傷口。
+        - name: X 光檢查
+          notes: 評估是否有異物殘留、骨折或體腔穿透。胸腔穿刺傷需評估氣胸或血胸。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 穩定生命徵象為首要任務
+        - 徹底清創與灌洗傷口
+        - 廣效性抗生素預防或治療感染
+ddxSource: auto-generated

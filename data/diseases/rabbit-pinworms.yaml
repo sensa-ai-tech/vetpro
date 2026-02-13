@@ -3,19 +3,20 @@ nameEn: Rabbit Pinworms
 nameZh: 兔蟯蟲
 bodySystem: gastrointestinal
 description: 由 Passalurus ambiguus 引起的兔大腸寄生蟲感染，為家兔最常見的腸道線蟲。多數感染為亞臨床，偶見肛門搔癢。致病力低但可見飼主因肛門周圍白色蟲體而驚慌就診。不具人畜共通性。
-
 aliases:
-  - { alias: 兔蟯蟲感染, language: zh }
-  - { alias: 兔針蟲, language: zh }
-  - { alias: Rabbit Oxyuriasis, language: en }
-  - { alias: Passalurus ambiguus Infection, language: en }
-
+  - alias: 兔蟯蟲感染
+    language: zh
+  - alias: 兔針蟲
+    language: zh
+  - alias: Rabbit Oxyuriasis
+    language: en
+  - alias: Passalurus ambiguus Infection
+    language: en
 species:
   - speciesCommon: rabbit
     speciesScientific: Oryctolagus cuniculus
     prevalence: common
     notes: Passalurus ambiguus 為兔專一性蟯蟲，不感染人類或其他動物。感染率可達 50% 以上（尤其群養兔）。多為亞臨床感染。
-
 etiology:
   categories:
     - name: 寄生蟲性
@@ -30,7 +31,6 @@ etiology:
         - 群養環境
         - 環境衛生不佳
         - 盲腸便攝食行為（正常行為但促進再感染）
-
 clinicalSigns:
   early:
     - 多數無明顯症狀
@@ -44,20 +44,18 @@ clinicalSigns:
     - 極少發展至嚴重臨床症狀
     - 大量感染理論上可致盲腸壁輕微發炎
     - 極罕見腸阻塞
-
 diagnosis:
   primaryTests:
     - name: 肛門透明膠帶法 (tape test)
-      notes: "透明膠帶黏貼肛門周圍後鏡檢查蟲卵。蟲卵不對稱橢圓形，一側較扁。兔蟯蟲卵不常出現在糞便浮游法中"
+      notes: 透明膠帶黏貼肛門周圍後鏡檢查蟲卵。蟲卵不對稱橢圓形，一側較扁。兔蟯蟲卵不常出現在糞便浮游法中
     - name: 直接目視
-      notes: "肛門周圍可直接看見白色細線蟲爬行。飼主常因此就診"
+      notes: 肛門周圍可直接看見白色細線蟲爬行。飼主常因此就診
   imaging:
     - name: 無影像需求
-      notes: "診斷依賴寄生蟲學檢查"
+      notes: 診斷依賴寄生蟲學檢查
   additional:
     - 糞便浮游法（敏感度低——蟲卵主要在肛門周圍，非糞便內）
     - 糞便直接抹片（偶見蟲卵或蟲體）
-
 treatment:
   principles:
     - 驅蟲藥物治療簡單有效
@@ -65,33 +63,63 @@ treatment:
     - 致病力低，治療目的主要為消除飼主擔憂
     - 不具人畜共通性——向飼主說明
   general:
-    - "Fenbendazole 20 mg/kg PO SID × 5 天，2 週後重複（殺蟲卵孵化之新蟲）"
-    - "替代方案：Ivermectin 0.2-0.4 mg/kg SC，2 週後重複"
-    - "替代方案：Selamectin 6-18 mg/kg spot-on，每月一次 × 2 次"
-    - "環境徹底清潔：移除所有墊料、清洗消毒籠具"
-    - "蟲卵在環境中可存活數週——需反覆清潔"
-    - "所有同居兔同時治療"
-    - "飼主衛教：不具人畜共通性，無需過度擔心"
-
+    - Fenbendazole 20 mg/kg PO SID × 5 天，2 週後重複（殺蟲卵孵化之新蟲）
+    - 替代方案：Ivermectin 0.2-0.4 mg/kg SC，2 週後重複
+    - 替代方案：Selamectin 6-18 mg/kg spot-on，每月一次 × 2 次
+    - 環境徹底清潔：移除所有墊料、清洗消毒籠具
+    - 蟲卵在環境中可存活數週——需反覆清潔
+    - 所有同居兔同時治療
+    - 飼主衛教：不具人畜共通性，無需過度擔心
 prognosis: 預後極佳。驅蟲治療高效。復發可能因環境汙染或再暴露。臨床意義低，多數感染不影響兔的健康。
-
 guidelineRefs:
   - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
-    title: "Parasites of rabbits"
+    title: Parasites of rabbits
     url: https://pubmed.ncbi.nlm.nih.gov/23352431/
     type: review
-    pmid: "23352431"
+    pmid: '23352431'
   - sourceOrg: Veterinary Parasitology
-    title: "Passalurus ambiguus in rabbits"
+    title: Passalurus ambiguus in rabbits
     url: https://pubmed.ncbi.nlm.nih.gov/10622618/
     type: review
-    pmid: "10622618"
-
+    pmid: '10622618'
 pubmedQueries:
   - query: '"Passalurus ambiguus" AND rabbit AND ("pinworm" OR "treatment")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "INFECTION"
+  chapter: DIG
+  sectionTitle: INFECTION
   pdfPage: 525
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: common
+diagnosticAlgorithm:
+  title: 兔蟯蟲 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 肛門透明膠帶法 (tape test)
+          notes: 透明膠帶黏貼肛門周圍後鏡檢查蟲卵。蟲卵不對稱橢圓形，一側較扁。兔蟯蟲卵不常出現在糞便浮游法中
+        - name: 直接目視
+          notes: 肛門周圍可直接看見白色細線蟲爬行。飼主常因此就診
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 糞便浮游法（敏感度低——蟲卵主要在肛門周圍，非糞便內）
+        - 糞便直接抹片（偶見蟲卵或蟲體）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 驅蟲藥物治療簡單有效
+        - 環境清潔防再感染
+        - 致病力低，治療目的主要為消除飼主擔憂
+ddxSource: auto-generated

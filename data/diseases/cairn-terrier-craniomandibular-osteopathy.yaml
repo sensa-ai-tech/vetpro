@@ -3,18 +3,18 @@ nameEn: Cairn Terrier Craniomandibular Osteopathy
 nameZh: 凱恩㹴顱下頜骨病
 bodySystem: other
 description: 凱恩㹴好發的非腫瘤性骨增生性疾病,病理機制與西高地白㹴相同。幼犬3-10月齡發病,主要侵犯下頜骨、顳骨,導致張口困難及疼痛。
-
 aliases:
-  - { alias: CMO, language: en }
-  - { alias: 顱下頜骨病, language: zh }
-  - { alias: Lion Jaw, language: en }
-
+  - alias: CMO
+    language: en
+  - alias: 顱下頜骨病
+    language: zh
+  - alias: Lion Jaw
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 凱恩㹴、西高地白㹴為主要好發品種,遺傳相關
-
 etiology:
   categories:
     - name: 遺傳性骨代謝異常
@@ -22,7 +22,6 @@ etiology:
         - 體染色體隱性遺傳
         - 骨膜過度增生
         - 骨吸收與重塑失衡
-
 clinicalSigns:
   early:
     - 下頜部腫脹、疼痛
@@ -33,29 +32,55 @@ clinicalSigns:
     - 咀嚼肌萎縮
     - 下頜骨明顯變形
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 頭顱X光檢查
-      notes: "雙側對稱性下頜骨、顳骨不規則骨增生"
+      notes: 雙側對稱性下頜骨、顳骨不規則骨增生
     - name: 血液學檢查
-      notes: "急性期可見白血球增多、鹼性磷酸酶升高"
+      notes: 急性期可見白血球增多、鹼性磷酸酶升高
   differentialDiagnoses:
     - 骨髓炎
     - 骨肉瘤
     - 副甲狀腺功能亢進
-
 treatment:
   medical:
     - 疼痛控制(Carprofen 2-4 mg/kg PO q12h)
     - 抗炎治療(Prednisone 1-2 mg/kg PO q24h,短期使用)
     - 營養支持(高熱量流質或軟質食物)
     - Gabapentin 5-10 mg/kg PO q8-12h(神經性疼痛)
-
 prognosis:
-  general: "多數病例在12-18月齡後病變停止進展,部分可恢復接近正常功能。嚴重病例可能終生有張口困難。存活率良好。"
-
+  general: 多數病例在12-18月齡後病變停止進展,部分可恢復接近正常功能。嚴重病例可能終生有張口困難。存活率良好。
 prevention:
   - 受影響犬隻及其親代不應繁殖
   - 品種繁殖計畫應篩除帶因者
   - 遺傳諮詢
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: dysphagia
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+diagnosticAlgorithm:
+  title: 凱恩㹴顱下頜骨病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - dysphagia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 頭顱X光檢查
+          notes: 雙側對稱性下頜骨、顳骨不規則骨增生
+        - name: 血液學檢查
+          notes: 急性期可見白血球增多、鹼性磷酸酶升高
+ddxSource: auto-generated

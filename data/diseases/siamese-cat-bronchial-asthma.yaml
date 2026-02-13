@@ -3,18 +3,18 @@ nameEn: Siamese Cat Bronchial Asthma
 nameZh: 暹羅貓支氣管哮喘
 bodySystem: other
 description: 暹羅貓及東方品種貓較易罹患貓哮喘,一種慢性氣道炎症及支氣管收縮疾病。表現為咳嗽、喘鳴、呼吸困難,需長期吸入或口服類固醇控制。
-
 aliases:
-  - { alias: 貓哮喘, language: zh }
-  - { alias: Feline Asthma, language: en }
-  - { alias: Allergic Bronchitis, language: en }
-
+  - alias: 貓哮喘
+    language: zh
+  - alias: Feline Asthma
+    language: en
+  - alias: Allergic Bronchitis
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
     notes: 暹羅貓、東方短毛貓易感,2-8歲好發
-
 etiology:
   categories:
     - name: 過敏性氣道疾病
@@ -23,7 +23,6 @@ etiology:
         - 遺傳易感性
         - 嗜酸性球浸潤
         - 氣道高反應性
-
 clinicalSigns:
   early:
     - 間歇性咳嗽
@@ -34,21 +33,19 @@ clinicalSigns:
     - 呼吸困難、張口呼吸
     - 急性發作(呼吸窘迫)
     - 活動力下降
-
 diagnosis:
   primaryTests:
     - name: 胸腔X光檢查
-      notes: "支氣管壁增厚、支氣管周圍浸潤、過度充氣"
+      notes: 支氣管壁增厚、支氣管周圍浸潤、過度充氣
     - name: 支氣管肺泡灌洗(BAL)
-      notes: "嗜酸性球>17%為哮喘特徵"
+      notes: 嗜酸性球>17%為哮喘特徵
     - name: 血液學檢查
-      notes: "周邊血可能嗜酸性球增多"
+      notes: 周邊血可能嗜酸性球增多
   differentialDiagnoses:
     - 心絲蟲病
     - 肺蟲感染
     - 心臟病
     - 肺炎
-
 treatment:
   medical:
     - 吸入型類固醇(Fluticasone 110-220 μg q12-24h,使用Aerokat)
@@ -56,12 +53,42 @@ treatment:
     - 支氣管擴張劑(Terbutaline 0.625 mg PO q12h 或吸入Albuterol急性期)
     - 環境控制(減少過敏原)
     - 急性發作需氧氣及緊急治療
-
 prognosis:
-  general: "無法治癒,需終生管理。適當治療多數可良好控制症狀。嚴重急性發作可能危及生命。預後因控制程度而異。"
-
+  general: 無法治癒,需終生管理。適當治療多數可良好控制症狀。嚴重急性發作可能危及生命。預後因控制程度而異。
 prevention:
   - 減少環境過敏原(無香料貓砂、空氣清淨機)
   - 避免吸菸環境
   - 維持健康體重
   - 定期追蹤
+associatedSymptoms:
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: stertor-stridor
+    frequency: common
+diagnosticAlgorithm:
+  title: 暹羅貓支氣管哮喘 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weakness 相關症狀
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸腔X光檢查
+          notes: 支氣管壁增厚、支氣管周圍浸潤、過度充氣
+        - name: 支氣管肺泡灌洗(BAL)
+          notes: 嗜酸性球>17%為哮喘特徵
+        - name: 血液學檢查
+          notes: 周邊血可能嗜酸性球增多
+ddxSource: auto-generated

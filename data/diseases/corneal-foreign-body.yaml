@@ -3,11 +3,11 @@ nameEn: Corneal Foreign Body
 nameZh: Corneal Foreign Body
 bodySystem: ophthalmology
 description: 角膜疾病,可能影響視力與眼部舒適度。需及時治療以避免視力喪失或眼球穿孔等併發症。
-
 aliases:
-  - { alias: Corneal Foreign Body, language: zh }
-  - { alias: Corneal Foreign Body, language: en }
-
+  - alias: Corneal Foreign Body
+    language: zh
+  - alias: Corneal Foreign Body
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 先天性異常
       examples:
         - 外傷
         - 感染
-
 clinicalSigns:
   early:
     - 眼部不適
@@ -32,36 +30,81 @@ clinicalSigns:
   progressive:
     - 視力喪失
     - 眼內壓異常
-
 diagnosis:
   primaryTests:
     - name: 眼科檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: 眼壓測量
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 眼藥水(抗生素或消炎)
     - 止痛藥
   surgical:
     - name: 根據病況可能需手術治療(角膜移植、青光眼閥膜植入、眼球摘除等)
-      notes: "依病況評估"
-
+      notes: 依病況評估
 prognosis:
-  general: "預後取決於疾病類型、嚴重度與治療時機。早期治療可改善預後並保存視力。"
-
+  general: 預後取決於疾病類型、嚴重度與治療時機。早期治療可改善預後並保存視力。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: Heliyon
-    title: A cell-permeable peptide inhibitor of p55PIK signaling alleviates suture-induced corneal neovascularization and inflammation.
+    title: >-
+      A cell-permeable peptide inhibitor of p55PIK signaling alleviates suture-induced corneal neovascularization and
+      inflammation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10121607/
     type: research
-    pmid: "37095989"
+    pmid: '37095989'
+diagnosticAlgorithm:
+  title: 氣管異物 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估急性發作的嚴重咳嗽、呼吸困難和喘鳴音，詢問異物吸入病史
+      findings:
+        - 突發性劇烈咳嗽
+        - 吸氣性呼吸困難和喘鳴音
+        - 發紺或呼吸窘迫
+    - step: 2
+      action: 影像學檢查
+      details: 進行頸部和胸腔X光評估異物位置，注意不透射性和透射性異物
+      findings:
+        - X光可見氣管或支氣管內不透射性異物
+        - 局部肺葉過度充氣或肺不張
+        - 透射性異物可能需透視檢查
+    - step: 3
+      action: 支氣管鏡確診與取出
+      details: 進行支氣管鏡檢查直接觀察並取出異物
+      findings:
+        - 支氣管鏡直接觀察到異物
+        - 評估氣管黏膜損傷程度
+        - 支氣管鏡引導下取出異物
+clinicalPearls:
+  - 突發性劇烈咳嗽後轉為慢性頑固咳嗽且對藥物治療無效，應高度懷疑氣管或支氣管異物
+  - 植物性異物（草芒）在X光上通常不可見，CT和支氣管鏡為必要的診斷工具
+  - 異物傾向進入右側支氣管（因角度較直且管徑較大），單側肺病變應引起警覺
+  - 草芒等植物性異物具有遷移特性，可穿透肺組織進入胸膜腔或腹膜腔，形成膿胸或腹膜後膿瘍
+  - 反覆發作的單側肺炎且對抗生素反應不佳，應考慮隱匿的支氣管異物
+monitoringItems:
+  - 異物取出後24-48小時密切監測呼吸型態和血氧飽和度
+  - 取出後1-2週複查胸腔X光確認肺部浸潤消退
+  - 完成抗生素療程後再次複查X光確認完全清除
+  - 監測體溫以確認感染控制
+  - 術後監測食慾、活動力及咳嗽頻率
+  - 若有胸膜腔引流管，監測引流量和性狀
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: stertor-stridor
+    frequency: common
+ddxSource: book

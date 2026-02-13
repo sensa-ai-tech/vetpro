@@ -3,12 +3,13 @@ nameEn: Pressure Sore
 nameZh: 褥瘡
 bodySystem: dermatology
 description: 長期臥床或行動不便的動物，骨突處皮膚因持續壓迫導致血液循環受阻，造成組織壞死與潰瘍。常見於癱瘓犬、術後長期臥床或老年行動困難動物。
-
 aliases:
-  - { alias: "Decubitus Ulcer", language: en }
-  - { alias: "Bed Sore", language: en }
-  - { alias: "壓瘡", language: zh }
-
+  - alias: Decubitus Ulcer
+    language: en
+  - alias: Bed Sore
+    language: en
+  - alias: 壓瘡
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓較少見，長期臥床貓可發生。
-
 etiology:
   categories:
     - name: 壓迫性缺血
@@ -24,7 +24,6 @@ etiology:
         - 持續壓力導致微循環受阻
         - 組織缺氧壞死
         - 摩擦與剪力加重
-
 clinicalSigns:
   early:
     - 壓迫區皮膚發紅
@@ -35,14 +34,12 @@ clinicalSigns:
     - 潰瘍深入真皮/皮下
     - 繼發感染
     - 骨骼暴露（嚴重時）
-
 diagnosis:
   primaryTests:
     - name: 傷口評估
       notes: 分級（I-IV 級）。評估深度、感染徵象
     - name: 培養
       notes: 感染傷口做細菌培養
-
 treatment:
   principles:
     - 預防優於治療
@@ -54,23 +51,49 @@ treatment:
     - 傷口清創與敷料更換
     - 感染時全身性抗生素
     - 營養支持
-
 prognosis: 預防可完全避免。早期褥瘡去除壓力後可癒合。深層褥瘡癒合困難，可能需手術。
-
-
 guidelineRefs:
   - sourceOrg: Journal of clinical orthopaedics and trauma
-    title: "Experimental animal modelling for pressure injury: A systematic review."
+    title: 'Experimental animal modelling for pressure injury: A systematic review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8082114/
     type: review
-    pmid: "33987077"
+    pmid: '33987077'
     relevance: primary
   - sourceOrg: Advanced science (Weinheim, Baden-Wurttemberg, Germany)
-    title: Inhibition and Rescue of Hyperglycemia-Induced Cellular Senescence by Mitochondrial Transfer from Enucleated Mesenchymal Stem Cell-Derived Microvesicles for Chronic Wound Healing.
+    title: >-
+      Inhibition and Rescue of Hyperglycemia-Induced Cellular Senescence by Mitochondrial Transfer from Enucleated
+      Mesenchymal Stem Cell-Derived Microvesicles for Chronic Wound Healing.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12376497/
     type: research
-    pmid: "40407245"
+    pmid: '40407245'
     relevance: supporting
 pubmedQueries:
   - query: '"pressure sore" OR "decubitus ulcer" AND (veterinary OR canine) AND ("prevention" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 褥瘡 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - paresis-paralysis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 傷口評估
+          notes: 分級（I-IV 級）。評估深度、感染徵象
+        - name: 培養
+          notes: 感染傷口做細菌培養
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 預防優於治療
+        - 減壓
+        - 傷口照護
+ddxSource: auto-generated

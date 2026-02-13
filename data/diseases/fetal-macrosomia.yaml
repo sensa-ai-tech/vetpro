@@ -3,11 +3,11 @@ nameEn: Fetal Macrosomia
 nameZh: 巨大胎兒
 bodySystem: reproductive
 description: 胎兒過大無法通過產道，導致阻塞性難產。常見於小型母犬懷少數胎兒或單胎。需剖腹產。
-
 aliases:
-  - { alias: 胎兒過大, language: zh }
-  - { alias: Oversized Fetus, language: en }
-
+  - alias: 胎兒過大
+    language: zh
+  - alias: Oversized Fetus
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少見
-
 etiology:
   categories:
     - name: 危險因素
@@ -26,7 +25,6 @@ etiology:
         - 小型母犬配大型公犬
         - 妊娠期過長
         - 母體糖尿病（罕見）
-
 clinicalSigns:
   early:
     - 妊娠末期腹部顯著膨大
@@ -36,59 +34,79 @@ clinicalSigns:
     - 母體疲憊、虛弱
     - 產道創傷、出血
     - 子宮破裂風險
-
 diagnosis:
   primaryTests:
     - name: 腹部X光
-      notes: "評估胎兒大小與母體骨盆比例"
+      notes: 評估胎兒大小與母體骨盆比例
     - name: 腹部超音波
-      notes: "測量胎兒頭徑、腹圍"
+      notes: 測量胎兒頭徑、腹圍
     - name: 陰道觸診
-      notes: "評估產道相對大小"
+      notes: 評估產道相對大小
   differentialDiagnoses:
     - 骨盆狹窄
     - 胎位不正
     - 子宮無力
-
 treatment:
   medical:
     - 剖腹產（治療首選）
     - 不可使用催產素（增加子宮破裂風險）
     - 術後母體支持療法
-
 prognosis:
-  general: "及時剖腹產預後良好。延遲可能胎兒死亡、子宮破裂及母體死亡。"
-
+  general: 及時剖腹產預後良好。延遲可能胎兒死亡、子宮破裂及母體死亡。
 prevention:
   - 避免體型懸殊配種
   - 產前X光評估胎兒大小
   - 高危母犬計劃性剖腹產
   - 適當控制孕期營養（避免過度餵食）
-
-
 guidelineRefs:
   - sourceOrg: Nutrients
     title: Gestational Weight Gain as a Modifiable Risk Factor in Women with Extreme Pregestational BMI.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11858452/
     type: review
-    pmid: "40005064"
+    pmid: '40005064'
   - sourceOrg: Journal of clinical medicine
-    title: "Placental Lactogen as a Marker of Maternal Obesity, Diabetes, and Fetal Growth Abnormalities: Current Knowledge and Clinical Perspectives."
+    title: >-
+      Placental Lactogen as a Marker of Maternal Obesity, Diabetes, and Fetal Growth Abnormalities: Current Knowledge
+      and Clinical Perspectives.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7230810/
     type: review
-    pmid: "32316284"
+    pmid: '32316284'
   - sourceOrg: BMC pregnancy and childbirth
-    title: "Contributing factors of birth asphyxia in Thailand: a case-control study."
+    title: 'Contributing factors of birth asphyxia in Thailand: a case-control study.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10426058/
     type: research
-    pmid: "37582743"
-  - sourceOrg: "Biomedica : revista del Instituto Nacional de Salud"
+    pmid: '37582743'
+  - sourceOrg: 'Biomedica : revista del Instituto Nacional de Salud'
     title: Skeletal malformations and growth disturbances in fetuses of mild diabetic rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8519598/
     type: research
-    pmid: "34559496"
+    pmid: '34559496'
   - sourceOrg: African health sciences
-    title: Comparative effects of glibenclamide, metformin and insulin on fetal pancreatic histology and maternal blood glucose in pregnant streptozotocin-induced diabetic rats.
+    title: >-
+      Comparative effects of glibenclamide, metformin and insulin on fetal pancreatic histology and maternal blood
+      glucose in pregnant streptozotocin-induced diabetic rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7040257/
     type: research
-    pmid: "32127822"
+    pmid: '32127822'
+associatedSymptoms:
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 巨大胎兒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部X光
+          notes: 評估胎兒大小與母體骨盆比例
+        - name: 腹部超音波
+          notes: 測量胎兒頭徑、腹圍
+        - name: 陰道觸診
+          notes: 評估產道相對大小
+ddxSource: auto-generated

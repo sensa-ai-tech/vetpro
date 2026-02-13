@@ -3,11 +3,11 @@ nameEn: Intestinal Pythiosis
 nameZh: 腸道水黴病
 bodySystem: gastrointestinal
 description: Pythium insidiosum (卵菌) 感染腸道,形成肉芽腫性病灶。常見於美國南部溫暖潮濕地區,預後不良。
-
 aliases:
-  - { alias: 腸道蟒蛇菌病, language: zh }
-  - { alias: Swamp Cancer, language: en }
-
+  - alias: 腸道蟒蛇菌病
+    language: zh
+  - alias: Swamp Cancer
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,13 +17,11 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 極罕見
-
 etiology:
   categories:
     - name: 真菌樣感染
       examples:
         - Pythium insidiosum (卵菌)
-
 clinicalSigns:
   early:
     - 慢性腹瀉
@@ -33,29 +31,55 @@ clinicalSigns:
     - 腹部腫塊
     - 腸阻塞
     - 腹膜炎 (穿孔時)
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "腸壁嚴重增厚、腫塊"
+      notes: 腸壁嚴重增厚、腫塊
     - name: 組織病理學
-      notes: "肉芽腫性炎症、GMS 染色見菌絲"
+      notes: 肉芽腫性炎症、GMS 染色見菌絲
     - name: Pythium ELISA 或 PCR
-      notes: "確診"
+      notes: 確診
   differentialDiagnoses:
     - 腸道腫瘤
     - 發炎性腸病
     - 異物
-
 treatment:
   medical:
     - 廣泛外科切除 (definitive treatment)
     - Itraconazole 5-10 mg/kg PO q12-24h (效果有限)
     - Pythium 疫苗 (實驗性)
     - 預後不良,多數病例復發或轉移
-
 prognosis:
-  general: "預後不良;中位存活時間 < 6 個月;早期廣泛切除可能延長存活"
-
+  general: 預後不良;中位存活時間 < 6 個月;早期廣泛切除可能延長存活
 prevention:
   - 避免接觸污染水源 (流行區)
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 腸道水黴病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - vomiting 相關症狀
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 腸壁嚴重增厚、腫塊
+        - name: 組織病理學
+          notes: 肉芽腫性炎症、GMS 染色見菌絲
+        - name: Pythium ELISA 或 PCR
+          notes: 確診
+ddxSource: auto-generated

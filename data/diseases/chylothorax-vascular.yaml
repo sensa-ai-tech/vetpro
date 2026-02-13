@@ -3,13 +3,15 @@ nameEn: Chylothorax Vascular
 nameZh: 乳糜胸（血管型）
 bodySystem: vascular
 description: 乳糜液（chyle）蓄積於胸腔的疾病，因胸管（thoracic duct）破裂或回流障礙所致，導致呼吸困難與營養流失，病因包括淋巴管異常、心臟疾病及腫瘤。
-
 aliases:
-  - { alias: 乳糜胸, language: zh }
-  - { alias: 胸腔乳糜積液, language: zh }
-  - { alias: Chylothorax, language: en }
-  - { alias: Chylous effusion, language: en }
-
+  - alias: 乳糜胸
+    language: zh
+  - alias: 胸腔乳糜積液
+    language: zh
+  - alias: Chylothorax
+    language: en
+  - alias: Chylous effusion
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓乳糜胸多為特發性。暹羅貓及喜馬拉雅貓有品種傾向。需排除心肌病及縱膈淋巴瘤。
-
 etiology:
   categories:
     - name: 特發性
@@ -34,7 +35,6 @@ etiology:
         - 前腔靜脈血栓
         - 胸管外傷或手術損傷
         - 心絲蟲病
-
 clinicalSigns:
   early:
     - 活動耐受力下降
@@ -46,21 +46,19 @@ clinicalSigns:
     - 體重減輕
     - 發紺
     - 胸壁聽診心音減弱
-
 diagnosis:
   primaryTests:
     - name: 胸腔穿刺液分析
-      notes: "乳白色混濁液體。三酸甘油酯 > 血清三酸甘油酯。膽固醇 < 血清膽固醇。乳糜試驗陽性"
+      notes: 乳白色混濁液體。三酸甘油酯 > 血清三酸甘油酯。膽固醇 < 血清膽固醇。乳糜試驗陽性
     - name: 胸部 X 光
-      notes: "胸腔積液。評估心臟大小與形態。排除縱膈腫塊"
+      notes: 胸腔積液。評估心臟大小與形態。排除縱膈腫塊
     - name: 心臟超音波
-      notes: "排除心臟疾病（心包積液、心肌病、右心衰）"
+      notes: 排除心臟疾病（心包積液、心肌病、右心衰）
   differentialDiagnoses:
     - 假性乳糜胸（cholesterol effusion）
     - 膿胸
     - 充血性心衰
     - 縱膈腫瘤
-
 treatment:
   medical:
     - 胸腔穿刺引流（反覆需要時）
@@ -73,18 +71,46 @@ treatment:
     - 心包切除術（pericardectomy）——合併 TDL 效果更佳
     - 腹腔引流至靜脈分流（cisterna chyli ablation）
     - TDL + 心包切除 + cisterna chyli ablation 合併手術成功率最高
-
 prognosis:
-  general: "單純內科治療成功率約 25-50%。TDL 合併心包切除術成功率約 80-90%。繼發性者治療基礎疾病後可能自行緩解。慢性乳糜胸可導致纖維性胸膜炎。"
-
+  general: 單純內科治療成功率約 25-50%。TDL 合併心包切除術成功率約 80-90%。繼發性者治療基礎疾病後可能自行緩解。慢性乳糜胸可導致纖維性胸膜炎。
 prevention:
   - 無有效預防措施
   - 早期識別與治療基礎疾病
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in pediatrics
-    title: "Robotic-assisted thoracoscopic surgery in children: a safe approach to remove thoracic tumors."
+    title: 'Robotic-assisted thoracoscopic surgery in children: a safe approach to remove thoracic tumors.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12665711/
     type: research
-    pmid: "41332893"
+    pmid: '41332893'
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: regurgitation
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 乳糜胸（血管型） 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - dyspnoea 相關症狀
+        - coughing 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸腔穿刺液分析
+          notes: 乳白色混濁液體。三酸甘油酯 > 血清三酸甘油酯。膽固醇 < 血清膽固醇。乳糜試驗陽性
+        - name: 胸部 X 光
+          notes: 胸腔積液。評估心臟大小與形態。排除縱膈腫塊
+        - name: 心臟超音波
+          notes: 排除心臟疾病（心包積液、心肌病、右心衰）
+ddxSource: auto-generated

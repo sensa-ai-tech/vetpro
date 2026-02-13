@@ -3,11 +3,11 @@ nameEn: Post Vaccinal Immune Mediated Disease
 nameZh: 疫苗接種後免疫介導疾病
 bodySystem: immunology
 description: 疫苗接種後數天至數週內發生的免疫介導性反應，可能累及血液、皮膚、關節等多系統。小型犬及特定品種風險較高。
-
 aliases:
-  - { alias: 疫苗相關免疫病, language: zh }
-  - { alias: Vaccine-Associated Autoimmune Disease, language: en }
-
+  - alias: 疫苗相關免疫病
+    language: zh
+  - alias: Vaccine-Associated Autoimmune Disease
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 注射部位肉瘤較常見，全身性免疫病罕見
-
 etiology:
   categories:
     - name: 免疫過度活化
@@ -31,7 +30,6 @@ etiology:
         - 多劑聯合疫苗
         - 短期內重複接種
         - 自體免疫病家族史
-
 clinicalSigns:
   early:
     - 疫苗接種後3-30天發病
@@ -43,23 +41,21 @@ clinicalSigns:
     - 免疫介導性血小板減少症（出血）
     - 多發性關節炎（跛行）
     - 皮膚血管炎
-
 diagnosis:
   primaryTests:
     - name: 全血球計數及生化
-      notes: "貧血、血小板減少、球蛋白升高"
+      notes: 貧血、血小板減少、球蛋白升高
     - name: Coombs試驗
-      notes: "溶血性貧血陽性"
+      notes: 溶血性貧血陽性
     - name: 關節液分析
-      notes: "無菌性炎性關節炎"
+      notes: 無菌性炎性關節炎
     - name: 疫苗接種時序確認
-      notes: "確認時間關聯性（3-30天內）"
+      notes: 確認時間關聯性（3-30天內）
   differentialDiagnoses:
     - 原發性免疫介導疾病
     - 感染性疾病
     - 藥物反應
     - 全身性紅斑狼瘡
-
 treatment:
   medical:
     - 潑尼松龍 2 mg/kg PO q12h，病情穩定後漸減
@@ -67,46 +63,76 @@ treatment:
     - 免疫介導性血小板減少：環孢素 5 mg/kg PO q12h
     - 支持療法：輸血（嚴重貧血或血小板減少）
     - 關節炎：carprofen 2 mg/kg PO q12h
-
 prognosis:
-  general: "早期診斷及治療預後尚可。部分病例需長期免疫抑制。未來疫苗接種需評估風險效益。"
-
+  general: 早期診斷及治療預後尚可。部分病例需長期免疫抑制。未來疫苗接種需評估風險效益。
 prevention:
   - 小型犬考慮分開接種疫苗
   - 避免不必要的疫苗重複接種
   - 有自體免疫病史慎用活毒疫苗
   - 疫苗接種前評估健康狀態
   - 紀錄疫苗品牌及批號
-
-
 guidelineRefs:
   - sourceOrg: Autophagy
     title: Guidelines for the use and interpretation of assays for monitoring autophagy (3rd edition).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4835977/
     type: guideline
-    pmid: "26799652"
+    pmid: '26799652'
     relevance: primary
   - sourceOrg: Infectious diseases of poverty
-    title: "Progress towards dog-mediated rabies elimination in PR China: a scoping review."
+    title: 'Progress towards dog-mediated rabies elimination in PR China: a scoping review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10077633/
     type: review
-    pmid: "37024944"
+    pmid: '37024944'
     relevance: primary
   - sourceOrg: Frontiers in immunology
     title: Immunoglobulin Glycosylation - An Unexploited Potential for Immunomodulatory Strategies in Farm Animals.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8558360/
     type: review
-    pmid: "34733284"
+    pmid: '34733284'
     relevance: primary
   - sourceOrg: Applied microbiology and biotechnology
-    title: "Detection and quantification of anti-rabies glycoprotein antibodies: current state and perspectives."
+    title: 'Detection and quantification of anti-rabies glycoprotein antibodies: current state and perspectives.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8390338/
     type: review
-    pmid: "34448897"
+    pmid: '34448897'
     relevance: primary
   - sourceOrg: PLoS neglected tropical diseases
-    title: "Evaluating the role of surgical sterilisation in canine rabies control: A systematic review of impact and outcomes."
+    title: >-
+      Evaluating the role of surgical sterilisation in canine rabies control: A systematic review of impact and
+      outcomes.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7449413/
     type: review
-    pmid: "32845886"
+    pmid: '32845886'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: lameness
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: petechiae-ecchymoses
+    frequency: common
+diagnosticAlgorithm:
+  title: 疫苗接種後免疫介導疾病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pallor-cyanosis 相關症狀
+        - hyperthermia 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 全血球計數及生化
+          notes: 貧血、血小板減少、球蛋白升高
+        - name: Coombs試驗
+          notes: 溶血性貧血陽性
+        - name: 關節液分析
+          notes: 無菌性炎性關節炎
+ddxSource: auto-generated

@@ -3,14 +3,17 @@ nameEn: NSAID Toxicosis
 nameZh: NSAID 中毒
 bodySystem: toxicology
 description: 非類固醇抗炎藥（NSAIDs）過量或不當使用導致的中毒，主要造成消化道潰瘍、急性腎損傷與肝毒性。犬貓攝入人用 NSAID（如 ibuprofen、naproxen）為常見急診。
-
 aliases:
-  - { alias: 非類固醇抗炎藥中毒, language: zh }
-  - { alias: NSAID 毒性, language: zh }
-  - { alias: Ibuprofen Toxicosis, language: en }
-  - { alias: Naproxen Toxicosis, language: en }
-  - { alias: NSAID Poisoning, language: en }
-
+  - alias: 非類固醇抗炎藥中毒
+    language: zh
+  - alias: NSAID 毒性
+    language: zh
+  - alias: Ibuprofen Toxicosis
+    language: en
+  - alias: Naproxen Toxicosis
+    language: en
+  - alias: NSAID Poisoning
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓缺乏 glucuronidation 能力，NSAID 代謝極慢，半衰期顯著延長。極低劑量即可造成嚴重毒性。貓禁用大部分人用 NSAID。
-
 etiology:
   categories:
     - name: 常見毒物來源
@@ -33,10 +35,10 @@ etiology:
         - Diclofenac（人用）
     - name: 毒性劑量（Ibuprofen，犬）
       examples:
-        - "消化道症狀：>25 mg/kg"
-        - "腎毒性：>100 mg/kg"
-        - "中樞神經毒性：>400 mg/kg"
-        - "致死量：>600 mg/kg"
+        - 消化道症狀：>25 mg/kg
+        - 腎毒性：>100 mg/kg
+        - 中樞神經毒性：>400 mg/kg
+        - 致死量：>600 mg/kg
     - name: 毒性機制
       examples:
         - 抑制 cyclooxygenase (COX-1/COX-2)
@@ -44,7 +46,6 @@ etiology:
         - COX-1 抑制減少腎臟前列腺素（腎血流量下降→急性腎損傷）
         - 高劑量可直接造成肝細胞壞死
         - 貓 glucuronidation 能力差，藥物蓄積
-
 clinicalSigns:
   early:
     - 嘔吐（常為首發症狀）
@@ -64,18 +65,17 @@ clinicalSigns:
     - 肝衰竭
     - 昏迷
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 病史確認
-      notes: "確認 NSAID 種類、攝入量 (mg/kg)、攝入時間。計算毒性劑量。包裝帶來有助確認成分與劑量"
+      notes: 確認 NSAID 種類、攝入量 (mg/kg)、攝入時間。計算毒性劑量。包裝帶來有助確認成分與劑量
     - name: 腎功能指標
-      notes: "BUN、creatinine、SDMA 監測。可能在攝入後 12-24 小時開始升高"
+      notes: BUN、creatinine、SDMA 監測。可能在攝入後 12-24 小時開始升高
   imaging:
     - name: 腹部 X 光
-      notes: "評估消化道穿孔（游離腹腔氣體）、腸阻塞"
+      notes: 評估消化道穿孔（游離腹腔氣體）、腸阻塞
     - name: 腹部超音波
-      notes: "胃壁增厚、腎臟腫脹、腹腔積液（穿孔引起）"
+      notes: 胃壁增厚、腎臟腫脹、腹腔積液（穿孔引起）
   additional:
     - 肝功能 (ALT、ALP、bilirubin)
     - 電解質（高血鉀與代謝性酸中毒見於腎衰竭）
@@ -83,7 +83,6 @@ diagnosis:
     - 凝血功能（消化道出血或肝損傷）
     - 尿液分析（管型、蛋白尿）
     - 酸鹼/血氣分析
-
 treatment:
   principles:
     - 減少毒物吸收（催吐、活性炭）
@@ -92,16 +91,16 @@ treatment:
     - 積極輸液治療
   medications:
     - name: Omeprazole
-      dose: "1-2 mg/kg PO 或 IV SID-BID"
+      dose: 1-2 mg/kg PO 或 IV SID-BID
       notes: 質子幫浦抑制劑，降低胃酸分泌保護潰瘍。比 H2 blocker 更有效
     - name: Sucralfate
-      dose: "犬：0.5-1 g PO TID；貓：0.25-0.5 g PO TID"
+      dose: 犬：0.5-1 g PO TID；貓：0.25-0.5 g PO TID
       notes: 黏膜保護劑，在潰瘍表面形成保護屏障。與其他口服藥間隔 2 小時
     - name: Misoprostol
-      dose: "2-5 μg/kg PO TID"
+      dose: 2-5 μg/kg PO TID
       notes: 合成前列腺素 E1 類似物。對抗 NSAID 的前列腺素抑制效應。懷孕動物禁用（催產作用）
     - name: Maropitant
-      dose: "1 mg/kg SC 或 IV SID"
+      dose: 1 mg/kg SC 或 IV SID
       notes: 止吐治療
   general:
     - 催吐（攝入後 1-2 小時內，患畜無症狀時）
@@ -113,38 +112,117 @@ treatment:
     - 消化道穿孔需緊急手術
     - 腎功能與消化道監測至少 48-72 小時
     - 避免同時使用類固醇（加重消化道潰瘍風險）
-
-emergencyNotes: 大量攝入（犬 ibuprofen >100 mg/kg）為急症。立即催吐（攝入 <2 小時）。積極 IV 輸液保護腎臟。嘔血或黑便提示消化道潰瘍活動性出血。游離腹腔氣體提示穿孔需緊急手術。貓攝入任何劑量 ibuprofen 均應視為急症。
-
+emergencyNotes: >-
+  大量攝入（犬 ibuprofen >100 mg/kg）為急症。立即催吐（攝入 <2 小時）。積極 IV 輸液保護腎臟。嘔血或黑便提示消化道潰瘍活動性出血。游離腹腔氣體提示穿孔需緊急手術。貓攝入任何劑量 ibuprofen
+  均應視為急症。
 prognosis: 輕度消化道症狀（<50 mg/kg ibuprofen 犬）經適當治療預後良好。腎損傷若及時積極輸液多可恢復。消化道穿孔需手術，預後謹慎。高劑量中樞神經毒性（>400 mg/kg）預後差。貓因代謝能力差，即使低劑量預後亦需謹慎評估。
-
 guidelineRefs:
   - sourceOrg: Veterinary Clinics of North America Small Animal Practice
     title: NSAID toxicosis in dogs and cats
     url: https://pubmed.ncbi.nlm.nih.gov/22381180/
     type: review
-    pmid: "22381180"
+    pmid: '22381180'
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
     title: Ibuprofen toxicosis in dogs, cats, and ferrets
     url: https://pubmed.ncbi.nlm.nih.gov/17316944/
     type: review
-    pmid: "17316944"
+    pmid: '17316944'
   - sourceOrg: Journal of the American Veterinary Medical Association
     title: Gastrointestinal tract perforation in dogs treated with NSAIDs
     url: https://pubmed.ncbi.nlm.nih.gov/15971260/
     type: research
-    pmid: "15971260"
+    pmid: '15971260'
   - sourceOrg: Journal of veterinary internal medicine
-    title: Outcomes of 434 dogs with non-steroidal anti-inflammatory drug toxicosis treated with fluid therapy, lipid emulsion, or therapeutic plasma exchange.
+    title: >-
+      Outcomes of 434 dogs with non-steroidal anti-inflammatory drug toxicosis treated with fluid therapy, lipid
+      emulsion, or therapeutic plasma exchange.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9889694/
     type: research
-    pmid: "36453531"
+    pmid: '36453531'
     relevance: supporting
 pubmedQueries:
-  - query: '"NSAID" AND (dog OR cat OR canine OR feline) AND ("toxicosis" OR "poisoning" OR "ibuprofen" OR "gastrointestinal ulcer")'
+  - query: >-
+      "NSAID" AND (dog OR cat OR canine OR feline) AND ("toxicosis" OR "poisoning" OR "ibuprofen" OR "gastrointestinal
+      ulcer")
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "NSAID TOXICOSIS"
+  chapter: DIG
+  sectionTitle: NSAID TOXICOSIS
   pdfPage: 333
+diagnosticAlgorithm:
+  title: 非類固醇抗發炎藥中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史確認與劑量評估
+      details: 確認NSAID種類、劑量、攝入時間
+      findings:
+        - 確認NSAID類型
+        - 計算mg/kg攝入劑量
+        - 攝入時間
+        - 是否為急性單次或慢性過量
+    - step: 2
+      action: 消化道評估
+      details: 評估胃腸道潰瘍與出血
+      findings:
+        - 嘔吐可能帶血
+        - 黑便或血便
+        - 腹痛
+        - 食慾廢絕
+    - step: 3
+      action: 腎功能評估
+      details: 監測腎功能與電解質
+      findings:
+        - BUN/Creatinine升高
+        - 尿液比重下降等張尿
+        - 尿液沉渣異常管型
+        - 高血鉀或低血鈉
+    - step: 4
+      action: 全身監測
+      details: 持續監測臟器功能與治療反應
+      findings:
+        - 肝酶升高
+        - 凝血功能異常
+        - 神經症狀極高劑量
+        - 腎功能追蹤48-72小時
+clinicalPearls:
+  - Ibuprofen是犬貓中毒最常見的NSAID
+  - 貓對所有NSAIDs極為敏感，人用劑量即可致命
+  - 低劑量引起胃腸症狀，中劑量引起腎損傷，高劑量引起神經症狀
+  - Ibuprofen犬毒性劑量>50 mg/kg（胃腸）、>100 mg/kg（腎）、>400 mg/kg（神經）
+  - 不要給貓任何人用NSAID
+  - 類固醇和NSAIDs合併使用大幅增加胃腸潰瘍風險
+monitoringItems:
+  - 嘔吐和血便
+  - 腎功能指標（BUN、Creatinine、尿量）
+  - PCV/TP（監測出血）
+  - 肝酵素
+  - 電解質
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: oliguria-anuria
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

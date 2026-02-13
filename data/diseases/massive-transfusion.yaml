@@ -3,13 +3,15 @@ nameEn: Massive Transfusion
 nameZh: 大量輸血
 bodySystem: oncology
 description: 在 24 小時內輸注超過一倍血液容積或 3 小時內輸注超過 50% 血液容積的緊急醫療處置。常見於嚴重外傷性出血、術中大量失血或凝血功能障礙，需嚴密監測並預防低體溫、酸中毒及凝血異常等併發症。
-
 aliases:
-  - { alias: 大量輸血療法, language: zh }
-  - { alias: 緊急輸血, language: zh }
-  - { alias: Massive Blood Transfusion, language: en }
-  - { alias: Emergency Transfusion Protocol, language: en }
-
+  - alias: 大量輸血療法
+    language: zh
+  - alias: 緊急輸血
+    language: zh
+  - alias: Massive Blood Transfusion
+    language: en
+  - alias: Emergency Transfusion Protocol
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓血量較少且血型反應嚴重（B 型貓接受 A 型血可致命），必須做血型鑑定與交叉試驗。
-
 etiology:
   categories:
     - name: 急性失血
@@ -30,7 +31,6 @@ etiology:
         - 抗凝血劑中毒（老鼠藥）
         - 瀰漫性血管內凝血（DIC）
         - 嚴重血小板減少症
-
 clinicalSigns:
   early:
     - 心搏過速
@@ -43,14 +43,12 @@ clinicalSigns:
     - 代謝性酸中毒
     - 凝血異常（稀釋性凝血病）
     - 低血鈣（枸櫞酸鹽毒性）
-
 diagnosis:
   primaryTests:
     - name: PCV/TP（血容比/總蛋白）
       notes: 連續監測血容比變化趨勢。急性出血初期 PCV 可能假性正常（脾臟收縮代償）。
     - name: 凝血功能檢查
       notes: PT/aPTT 監測凝血因子消耗。血小板計數評估稀釋性血小板減少。
-
 treatment:
   principles:
     - 控制出血來源為首要任務
@@ -64,31 +62,69 @@ treatment:
     - 監測並糾正電解質異常（尤其低血鈣）
     - 持續監測 PCV、凝血功能及生命徵象
     - 必要時使用升壓藥維持血壓
-
 prognosis: 預後取決於出血原因及控制速度。可控制的外科性出血經大量輸血後預後良至謹慎。DIC 或無法控制的出血預後差。輸血相關併發症（輸血反應、TRALI）增加死亡風險。
-
-
 guidelineRefs:
   - sourceOrg: Shock (Augusta, Ga.)
-    title: "THE ALARMIN EFFECT OF HMGB1/RIP3 ON TRANSFUSION-RELATED ACUTE LUNG INJURY VIA TLR4/NF-&#x39a;B OR MAPK PATHWAY."
+    title: THE ALARMIN EFFECT OF HMGB1/RIP3 ON TRANSFUSION-RELATED ACUTE LUNG INJURY VIA TLR4/NF-&#x39a;B OR MAPK PATHWAY.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10510839/
     type: research
-    pmid: "37477381"
+    pmid: '37477381'
   - sourceOrg: Frontiers in veterinary science
-    title: Resuscitation Patterns and Massive Transfusion for the Critical Bleeding Dog-A Multicentric Retrospective Study of 69 Cases (2007-2013).
+    title: >-
+      Resuscitation Patterns and Massive Transfusion for the Critical Bleeding Dog-A Multicentric Retrospective Study of
+      69 Cases (2007-2013).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8766795/
     type: research
-    pmid: "35071385"
+    pmid: '35071385'
   - sourceOrg: PLoS medicine
-    title: "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study."
+    title: >-
+      Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A
+      preclinical experimental study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5844517/
     type: research
-    pmid: "29522519"
-  - sourceOrg: "Experimental and clinical transplantation : official journal of the Middle East Society for Organ Transplantation"
-    title: Disseminated Intravascular Coagulation During Induction Treatment With Rabbit-Derived Antithymocyte Globulin For Kidney Transplant.
+    pmid: '29522519'
+  - sourceOrg: 'Experimental and clinical transplantation : official journal of the Middle East Society for Organ Transplantation'
+    title: >-
+      Disseminated Intravascular Coagulation During Induction Treatment With Rabbit-Derived Antithymocyte Globulin For
+      Kidney Transplant.
     url: https://pubmed.ncbi.nlm.nih.gov/34085917/
     type: case-report
-    pmid: "34085917"
+    pmid: '34085917'
 pubmedQueries:
   - query: '"Massive Transfusion" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 大量輸血 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pallor-cyanosis 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - dehydration 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: PCV/TP（血容比/總蛋白）
+          notes: 連續監測血容比變化趨勢。急性出血初期 PCV 可能假性正常（脾臟收縮代償）。
+        - name: 凝血功能檢查
+          notes: PT/aPTT 監測凝血因子消耗。血小板計數評估稀釋性血小板減少。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 控制出血來源為首要任務
+        - 維持組織灌流與氧氣輸送
+        - 預防「致命三聯征」：低體溫、酸中毒、凝血病
+ddxSource: auto-generated

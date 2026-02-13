@@ -3,12 +3,13 @@ nameEn: Autumn Crocus Toxicosis
 nameZh: 秋水仙中毒
 bodySystem: toxicology
 description: 秋水仙 (Colchicum autumnale) 含有秋水仙鹼 (colchicine)，為一種有絲分裂毒素。攝入後引起嚴重多器官衰竭。所有部位有毒，球莖毒性最高。致死率高，無特效解毒劑。犬貓均易感。
-
 aliases:
-  - { alias: 秋水仙鹼中毒, language: zh }
-  - { alias: Colchicine Toxicosis, language: en }
-  - { alias: Meadow Saffron Poisoning, language: en }
-
+  - alias: 秋水仙鹼中毒
+    language: zh
+  - alias: Colchicine Toxicosis
+    language: en
+  - alias: Meadow Saffron Poisoning
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓同樣易感。室內切花也是暴露來源。
-
 etiology:
   categories:
     - name: 毒性機制
@@ -30,7 +30,6 @@ etiology:
         - 秋水仙球莖
         - 秋水仙種子
         - 含 colchicine 的痛風藥物
-
 clinicalSigns:
   early:
     - 嘔吐（攝入後 2-6 小時）
@@ -44,7 +43,6 @@ clinicalSigns:
     - DIC
     - 休克
     - 死亡（2-7 天）
-
 diagnosis:
   primaryTests:
     - name: 病史確認
@@ -55,7 +53,6 @@ diagnosis:
     - 肝腎功能
     - 凝血功能（DIC）
     - 尿液 colchicine 定量（非常規可用）
-
 treatment:
   principles:
     - 無特效解毒劑
@@ -71,9 +68,49 @@ treatment:
     - 消化道保護
     - G-CSF（filgrastim）考慮用於嚴重嗜中性球減少
     - 住院密切監測至少 5-7 天
-
 prognosis: 秋水仙中毒預後不良。致死率可達 50% 以上。早期積極去汙染可能改善預後。骨髓恢復（白血球回升）為存活的正面指標。多器官衰竭者預後極差。
-
 pubmedQueries:
   - query: '"colchicine" OR "autumn crocus" AND (toxicosis OR poisoning) AND (veterinary OR canine)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: haematochezia
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+diagnosticAlgorithm:
+  title: 秋水仙中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ptyalism 相關症狀
+        - vomiting 相關症狀
+        - haematochezia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史確認
+          notes: 確認秋水仙暴露。與春番紅花 (Crocus) 外觀相似需注意鑑別
+        - name: CBC 連續監測
+          notes: 骨髓抑制為關鍵指標。白血球最低點通常在攝入後 3-5 天
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 肝腎功能
+        - 凝血功能（DIC）
+        - 尿液 colchicine 定量（非常規可用）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 無特效解毒劑
+        - 積極去汙染（早期）
+        - 支持骨髓功能恢復
+ddxSource: auto-generated

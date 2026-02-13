@@ -3,18 +3,18 @@ nameEn: Rottweiler Cranial Cruciate Ligament Disease
 nameZh: 羅威納犬前十字韌帶疾病
 bodySystem: orthopedic
 description: 羅威納犬高發的前十字韌帶退化與斷裂,導致後膝關節不穩定與疼痛。大型犬常見的骨科疾病,可導致嚴重骨關節炎。
-
 aliases:
-  - { alias: 羅威納犬十字韌帶斷裂, language: zh }
-  - { alias: Rottweiler CCL Rupture, language: en }
-  - { alias: Rottweiler ACL Disease, language: en }
-
+  - alias: 羅威納犬十字韌帶斷裂
+    language: zh
+  - alias: Rottweiler CCL Rupture
+    language: en
+  - alias: Rottweiler ACL Disease
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 羅威納、拉布拉多、黃金獵犬等大型犬品種高發,中年至老年犬多見,肥胖為風險因子
-
 etiology:
   categories:
     - name: 退化性因素
@@ -25,7 +25,6 @@ etiology:
       examples:
         - 體重過重增加關節負荷
         - 後肢結構異常(tibial plateau angle 過陡)
-
 clinicalSigns:
   early:
     - 突發性或漸進性後肢跛行
@@ -35,21 +34,19 @@ clinicalSigns:
     - 後膝關節腫脹,積液
     - 肌肉萎縮(股四頭肌)
     - 慢性疼痛,活動受限
-
 diagnosis:
   primaryTests:
     - name: 骨科檢查
-      notes: "抽屜試驗(cranial drawer test)陽性,脛骨前移;壓迫試驗(tibial compression test)陽性"
+      notes: 抽屜試驗(cranial drawer test)陽性,脛骨前移;壓迫試驗(tibial compression test)陽性
     - name: 後膝關節 X 光
-      notes: "關節積液,骨贅增生,內側半月板移位(若併發),骨關節炎變化"
+      notes: 關節積液,骨贅增生,內側半月板移位(若併發),骨關節炎變化
     - name: 關節鏡檢查
-      notes: "直接視覺化韌帶斷裂程度,評估半月板損傷"
+      notes: 直接視覺化韌帶斷裂程度,評估半月板損傷
   differentialDiagnoses:
     - 後十字韌帶損傷
     - 內側半月板撕裂
     - 髕骨脫位
     - 骨關節炎
-
 treatment:
   medical:
     - 手術治療(首選):TPLO(Tibial Plateau Leveling Osteotomy,改變脛骨平台角度)或 TTA(Tibial Tuberosity Advancement,前移脛骨粗隆)
@@ -58,12 +55,62 @@ treatment:
     - 保守治療(不適合手術者):嚴格限制運動 6-8 週,體重控制,NSAID
     - 物理復健:術後 2-4 週開始水療,被動關節活動,漸進性負重訓練
     - 軟骨保護劑:Glucosamine + Chondroitin,Polysulfated glycosaminoglycan (Adequan) 4.4 mg/kg IM 每週 x 4 次
-
 prognosis:
-  general: "手術治療預後良好,85-90% 恢復良好功能。TPLO/TTA 預後優於傳統固定術。對側膝關節 40-60% 於 2 年內發生 CCL 斷裂。未治療或保守治療預後較差,多發展為嚴重骨關節炎。"
-
+  general: 手術治療預後良好,85-90% 恢復良好功能。TPLO/TTA 預後優於傳統固定術。對側膝關節 40-60% 於 2 年內發生 CCL 斷裂。未治療或保守治療預後較差,多發展為嚴重骨關節炎。
 prevention:
   - 維持理想體重,避免肥胖
   - 適度運動,避免劇烈跳躍或急轉彎
   - 肌力訓練,維持後肢肌肉量
   - 早期發現跛行應儘速就診
+diagnosticAlgorithm:
+  title: 前十字韌帶疾病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估後肢跛行模式（急性或慢性進行性），詢問外傷史或活動情況
+      findings:
+        - 後肢跛行（承重減少）
+        - 坐下時患肢外展
+        - 活動後跛行加重
+        - 肌肉萎縮（慢性）
+    - step: 2
+      action: 骨科檢查
+      details: 前抽屜試驗及脛骨前移試驗（鎮靜下更準確），評估關節積液
+      findings:
+        - 前抽屜試驗陽性
+        - 脛骨壓迫試驗陽性
+        - 關節積液（內側關節囊膨出）
+        - 關節活動範圍受限
+    - step: 3
+      action: 影像學檢查
+      details: 膝關節X光評估關節退化程度、排除其他病變、測量脛骨平台角度
+      findings:
+        - 關節積液影像
+        - 骨贅形成（退化性關節病）
+        - 脛骨平台角度（TPLO規劃用）
+        - 排除骨腫瘤
+    - step: 4
+      action: 確診與手術規劃
+      details: 根據臨床檢查及影像確診，評估手術方式（TPLO、TTA、關節外穩定術）
+      findings:
+        - 前十字韌帶部分或完全撕裂
+        - 內側半月板損傷評估
+        - 對側膝關節評估（60%雙側發生）
+        - 手術方式選擇
+clinicalPearls:
+  - 40-60%的犬會在對側膝蓋發生CCL斷裂
+  - 半月板損傷的彈響聲是手術探查的重要指標
+  - 肥胖是最重要的可控風險因素
+  - 急性非負重性跛行常伴隨半月板損傷
+monitoringItems:
+  - 術後X光追蹤
+  - 對側膝關節評估
+  - 體重管理
+  - 骨關節炎進展
+  - 活動功能評估
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: common
+ddxSource: book

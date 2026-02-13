@@ -3,12 +3,13 @@ nameEn: Fine Needle Aspirate Technique
 nameZh: 細針穿刺技術
 bodySystem: other
 description: 使用細針(22-25G)抽吸細胞樣本進行細胞學檢查。快速、安全、微侵入性,適用於腫塊、器官或體腔積液診斷。
-
 aliases:
-  - { alias: FNA, language: en }
-  - { alias: 細胞學穿刺, language: zh }
-  - { alias: 針吸活檢, language: zh }
-
+  - alias: FNA
+    language: en
+  - alias: 細胞學穿刺
+    language: zh
+  - alias: 針吸活檢
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓科腫塊診斷標準程序
-
 etiology:
   categories:
     - name: 適應症
@@ -27,7 +27,6 @@ etiology:
         - 淋巴結腫大
         - 器官腫塊(超音波導引)
         - 體腔積液
-
 clinicalSigns:
   early:
     - 此為診斷操作
@@ -36,17 +35,15 @@ clinicalSigns:
   progressive:
     - 立即獲得診斷資訊
     - 無恢復期需求
-
 diagnosis:
   primaryTests:
     - name: FNA細胞學
-      notes: "判定炎症、腫瘤或其他病變性質"
+      notes: 判定炎症、腫瘤或其他病變性質
     - name: 超音波導引FNA
-      notes: "用於深部器官或小病灶"
+      notes: 用於深部器官或小病灶
   differentialDiagnoses:
     - 組織切片(更侵入但診斷更精確)
     - 影像學診斷
-
 treatment:
   medical:
     - 技術:22-25G針頭,快速進出取樣或抽吸技術
@@ -54,40 +51,60 @@ treatment:
     - 抹片製作:立即塗抹於載玻片
     - 染色:快速染色(Diff-Quik)或送檢(Liu stain)
     - 超音波導引:深部病灶需影像導引
-
 prognosis:
-  general: "極安全,併發症罕見。診斷準確率視腫瘤類型60-90%。無法提供組織架構資訊,某些腫瘤(肉瘤)診斷限制。"
-
+  general: 極安全,併發症罕見。診斷準確率視腫瘤類型60-90%。無法提供組織架構資訊,某些腫瘤(肉瘤)診斷限制。
 prevention:
   - 凝血異常避免深部器官穿刺
   - 超音波導引避開血管
   - 多點取樣提高診斷率
   - 避免過度抽吸造成血液稀釋
-
-
 guidelineRefs:
   - sourceOrg: Veterinary medicine and science
     title: Low-Invasive Biomarkers of Canine Mammary Tumours.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12077115/
     type: review
-    pmid: "40095734"
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Intra-abdominal nocardiosis and scedosporiosis in a dog: case report and literature review."
+    pmid: '40095734'
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: 'Intra-abdominal nocardiosis and scedosporiosis in a dog: case report and literature review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11559917/
     type: review
-    pmid: "39397659"
+    pmid: '39397659'
   - sourceOrg: Veterinary sciences
     title: Diagnostic Approach to Equine Testicular Disorders.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11209109/
     type: review
-    pmid: "38921990"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Equine Melanocytic Tumors: A Narrative Review."
+    pmid: '38921990'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Equine Melanocytic Tumors: A Narrative Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9855132/
     type: review
-    pmid: "36670786"
+    pmid: '36670786'
   - sourceOrg: Journal of bone oncology
-    title: Limb-salvage surgery offers better five-year survival rate than amputation in patients with limb osteosarcoma treated with neoadjuvant chemotherapy. A systematic review and meta-analysis.
+    title: >-
+      Limb-salvage surgery offers better five-year survival rate than amputation in patients with limb osteosarcoma
+      treated with neoadjuvant chemotherapy. A systematic review and meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7567946/
     type: review
-    pmid: "33088699"
+    pmid: '33088699'
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 細針穿刺技術 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: FNA細胞學
+          notes: 判定炎症、腫瘤或其他病變性質
+        - name: 超音波導引FNA
+          notes: 用於深部器官或小病灶
+ddxSource: auto-generated

@@ -3,23 +3,26 @@ nameEn: Atopic Dermatitis
 nameZh: 異位性皮膚炎
 bodySystem: dermatology
 description: 遺傳易感個體對環境過敏原產生的慢性搔癢性皮膚病，為犬第二常見的過敏性皮膚病。
-
 aliases:
-  - { alias: CAD, language: en }
-  - { alias: Canine Atopic Dermatitis, language: en }
-  - { alias: Atopy, language: en }
-  - { alias: 犬異位性皮膚炎, language: zh }
-
+  - alias: CAD
+    language: en
+  - alias: Canine Atopic Dermatitis
+    language: en
+  - alias: Atopy
+    language: en
+  - alias: 犬異位性皮膚炎
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
-    notes: 盛行率約 10-15%。好發品種：French Bulldog、Labrador、Golden Retriever、German Shepherd、West Highland White Terrier。通常 6 個月至 3 歲間發病。
+    notes: >-
+      盛行率約 10-15%。好發品種：French Bulldog、Labrador、Golden Retriever、German Shepherd、West Highland White Terrier。通常 6 個月至 3
+      歲間發病。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓較少確診，臨床表現不典型 (過度舔毛、粟粒性皮膚炎、嗜酸球性肉芽腫複合體)。
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -38,7 +41,6 @@ etiology:
         - 繼發性細菌/酵母菌感染
         - 跳蚤過敏 (同時存在)
         - 食物不良反應 (需排除)
-
 clinicalSigns:
   early:
     - 搔癢 (面部、耳朵、腋下、腹部、指間)
@@ -54,22 +56,20 @@ clinicalSigns:
     - 慢性皮膚增厚與色素沉著
     - 嚴重影響生活品質
     - 繼發性行為問題
-
 diagnosis:
   primaryTests:
     - name: 臨床診斷 (排除法)
-      notes: "符合 Favrot's criteria（≥5/8 項即高度提示 CAD）"
+      notes: 符合 Favrot's criteria（≥5/8 項即高度提示 CAD）
     - name: 排除跳蚤過敏
-      notes: "嚴格除蚤試驗至少 8 週"
+      notes: 嚴格除蚤試驗至少 8 週
     - name: 排除食物不良反應
-      notes: "食物排除試驗 8-12 週 (水解蛋白或新型蛋白飲食)"
+      notes: 食物排除試驗 8-12 週 (水解蛋白或新型蛋白飲食)
   imaging: []
   additional:
     - 皮膚刮搔 (排除疥癬、毛囊蟲)
     - 皮膚細胞學 (評估繼發感染)
     - 過敏原特異性 IgE 檢測 (用於減敏治療選擇，非診斷用)
     - 皮內過敏原測試 (金標準，用於減敏治療)
-
 treatment:
   principles:
     - 多模式治療策略
@@ -77,16 +77,16 @@ treatment:
     - 長期管理，非治癒
   medications:
     - name: Oclacitinib (Apoquel)
-      dose: "0.4-0.6 mg/kg PO BID × 14 天，後改 SID"
+      dose: 0.4-0.6 mg/kg PO BID × 14 天，後改 SID
       notes: JAK 抑制劑，快速止癢。>12 月齡犬使用
     - name: Lokivetmab (Cytopoint)
-      dose: "2 mg/kg SC 每 4-8 週"
+      dose: 2 mg/kg SC 每 4-8 週
       notes: 抗 IL-31 單株抗體注射。安全性高，適合不易投藥的犬
     - name: Cyclosporine
-      dose: "5 mg/kg PO SID × 4-6 週，後嘗試減量"
+      dose: 5 mg/kg PO SID × 4-6 週，後嘗試減量
       notes: 效果較慢 (4-6 週)，可能有腸胃副作用
     - name: 短期 glucocorticoids
-      dose: "Prednisolone 0.5-1 mg/kg PO SID × 5-7 天後遞減"
+      dose: Prednisolone 0.5-1 mg/kg PO SID × 5-7 天後遞減
       notes: 急性發作短期使用，避免長期依賴
   general:
     - 過敏原特異性免疫治療 (ASIT/減敏療法) — 唯一可能改變疾病進程的治療
@@ -95,47 +95,92 @@ treatment:
     - 必需脂肪酸補充
     - 環境過敏原控制 (減少塵蟎暴露)
     - 繼發感染治療 (局部/全身抗生素或抗黴菌)
-
 prognosis: 不可治癒但可良好控制。多數犬在適當多模式治療下生活品質良好。減敏療法成功率約 60-70%。
-
 ontologyMappings:
   - source: MONDO
-    code: "MONDO:0004980"
+    code: MONDO:0004980
     label: atopic dermatitis
     confidence: exact
-
 guidelineRefs:
   - sourceOrg: ICADA
     title: International Committee on Allergic Diseases of Animals (ICADA) Guidelines
     url: https://pubmed.ncbi.nlm.nih.gov/26183751/
     type: guideline
-    pmid: "26183751"
+    pmid: '26183751'
   - sourceOrg: BMC veterinary research
-    title: "Treatment of canine atopic dermatitis: 2015 updated guidelines from the International Committee on Allergic Diseases of Animals (ICADA)."
+    title: >-
+      Treatment of canine atopic dermatitis: 2015 updated guidelines from the International Committee on Allergic
+      Diseases of Animals (ICADA).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4537558/
     type: guideline
-    pmid: "26276051"
-  - sourceOrg: "Cellular &amp; molecular immunology"
+    pmid: '26276051'
+  - sourceOrg: Cellular &amp; molecular immunology
     title: Type 2 immunity in allergic diseases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11868591/
     type: review
-    pmid: "39962262"
+    pmid: '39962262'
   - sourceOrg: Veterinary sciences
-    title: Clinical Guidelines for the Use of Antipruritic Drugs in the Control of the Most Frequent Pruritic Skin Diseases in Dogs.
+    title: >-
+      Clinical Guidelines for the Use of Antipruritic Drugs in the Control of the Most Frequent Pruritic Skin Diseases
+      in Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9030482/
     type: review
-    pmid: "35448647"
+    pmid: '35448647'
   - sourceOrg: Allergy
     title: Advances and highlights in biomarkers of allergic diseases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9292545/
     type: review
-    pmid: "34519063"
+    pmid: '34519063'
     relevance: primary
 pubmedQueries:
   - query: '"atopic dermatitis" AND (dog OR canine) AND ("guidelines" OR "consensus")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "BEH"
-  sectionTitle: "Atopic dermatitis,"
+  chapter: BEH
+  sectionTitle: Atopic dermatitis,
   pdfPage: 1603
+diagnosticAlgorithm:
+  title: 異位性皮膚炎 診斷流程
+  steps:
+    - step: 1
+      action: 臨床模式
+      details: 搔癢+典型分布（面、耳、足、腋窩）
+      findings:
+        - 1-3歲發病
+        - 季節性或全年性搔癢
+    - step: 2
+      action: 排除其他原因
+      details: 糞檢+皮膚刮片+飲食試驗
+      findings:
+        - 排除體外寄生蟲（Sarcoptes等）
+        - 嚴格食物排除試驗8-12週
+    - step: 3
+      action: 過敏原檢測
+      details: 皮內試驗(IDT)或血清IgE
+      findings:
+        - IDT為金標準（麻醉下進行）
+        - 血清IgE幫助設計免疫療法
+    - step: 4
+      action: 多模式治療
+      details: 避免過敏原+免疫調節+症狀控制
+      findings:
+        - Oclacitinib/Lokivetmab快速控制
+        - 過敏原特異性免疫療法（長期）
+clinicalPearls:
+  - 需排除跳蚤過敏和食物過敏
+  - 約70%有繼發感染需同時治療
+  - ASIT是唯一可能改變病程的治療
+  - Apoquel和Cytopoint比類固醇安全
+monitoringItems:
+  - 搔癢程度評分
+  - 繼發感染
+  - 藥物副作用
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: common
+  - symptomId: alopecia
+    frequency: common
+  - symptomId: otitis-externa
+    frequency: common
+ddxSource: book

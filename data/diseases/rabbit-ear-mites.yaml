@@ -3,20 +3,22 @@ nameEn: Rabbit Ear Mites
 nameZh: 兔耳蟎
 bodySystem: ear
 description: 由 Psoroptes cuniculi 引起的兔外耳道寄生蟲感染，為家兔最常見的耳部疾病。表現為耳道內大量褐色厚痂，嚴重搔癢，未治療可擴散至頭頸部或繼發中耳炎。
-
 aliases:
-  - { alias: 兔耳蟎蟲, language: zh }
-  - { alias: 兔耳疥蟲, language: zh }
-  - { alias: Psoroptic Mange, language: en }
-  - { alias: Ear Canker, language: en }
-  - { alias: Psoroptes cuniculi Infestation, language: en }
-
+  - alias: 兔耳蟎蟲
+    language: zh
+  - alias: 兔耳疥蟲
+    language: zh
+  - alias: Psoroptic Mange
+    language: en
+  - alias: Ear Canker
+    language: en
+  - alias: Psoroptes cuniculi Infestation
+    language: en
 species:
   - speciesCommon: rabbit
     speciesScientific: Oryctolagus cuniculus
     prevalence: common
     notes: Psoroptes cuniculi 為兔專一性外寄生蟲。垂耳品種 (Lop) 因耳道通風差風險較高。直接接觸傳播，環境中蟎蟲存活可達 21 天。
-
 etiology:
   categories:
     - name: 寄生蟲性
@@ -31,7 +33,6 @@ etiology:
         - 垂耳品種（耳道通風差）
         - 免疫抑制
         - 環境衛生不佳
-
 clinicalSigns:
   early:
     - 搔耳、甩頭
@@ -49,20 +50,18 @@ clinicalSigns:
     - 中耳炎/內耳炎（穿透鼓膜）
     - 前庭症狀（頭歪斜——中耳受累）
     - 體重減輕（慢性疼痛與不適導致厭食）
-
 diagnosis:
   primaryTests:
     - name: 耳鏡檢查
-      notes: "可見蟎蟲活動於痂皮下。大量褐色層狀痂皮為特徵性表現"
+      notes: 可見蟎蟲活動於痂皮下。大量褐色層狀痂皮為特徵性表現
     - name: 耳道拭子顯微鏡檢查
-      notes: "礦物油浸潤後低倍鏡即可見大型蟎蟲 (Psoroptes cuniculi 0.5-0.8 mm)、蟲卵及排泄物"
+      notes: 礦物油浸潤後低倍鏡即可見大型蟎蟲 (Psoroptes cuniculi 0.5-0.8 mm)、蟲卵及排泄物
   imaging:
     - name: 頭部 X 光
-      notes: "懷疑中耳炎時評估鼓泡。嚴重病例排除骨溶解"
+      notes: 懷疑中耳炎時評估鼓泡。嚴重病例排除骨溶解
   additional:
     - 切勿強行移除痂皮（疼痛且可能造成耳道出血——先治療，痂皮會自行脫落）
     - 鑑別其他原因（細菌性外耳炎、黴菌感染）
-
 treatment:
   principles:
     - 殺蟎治療為核心
@@ -70,52 +69,95 @@ treatment:
     - 治療所有接觸兔
     - 環境徹底清潔消毒
   general:
-    - "首選：Ivermectin 0.2-0.4 mg/kg SC 每 14 天一次，連續 2-3 次"
-    - "替代方案：Selamectin (Revolution) 6-18 mg/kg 頸背部滴劑 (spot-on)，每月一次 × 2-3 次"
-    - "替代方案：Moxidectin 0.2 mg/kg SC 或 spot-on"
-    - "止痛：Meloxicam 0.3-0.6 mg/kg PO/SC SID（減緩炎症與疼痛）"
-    - "切勿強行移除耳道痂皮——治療後痂皮會在 1-2 週自行鬆動脫落"
-    - "嚴重疼痛可先輕柔塗抹礦物油軟化痂皮"
-    - "繼發細菌感染：Enrofloxacin 10-20 mg/kg PO BID"
-    - "環境清潔：徹底清洗消毒籠具、更換墊料"
-    - "所有接觸兔同時治療"
-
+    - 首選：Ivermectin 0.2-0.4 mg/kg SC 每 14 天一次，連續 2-3 次
+    - 替代方案：Selamectin (Revolution) 6-18 mg/kg 頸背部滴劑 (spot-on)，每月一次 × 2-3 次
+    - 替代方案：Moxidectin 0.2 mg/kg SC 或 spot-on
+    - 止痛：Meloxicam 0.3-0.6 mg/kg PO/SC SID（減緩炎症與疼痛）
+    - 切勿強行移除耳道痂皮——治療後痂皮會在 1-2 週自行鬆動脫落
+    - 嚴重疼痛可先輕柔塗抹礦物油軟化痂皮
+    - 繼發細菌感染：Enrofloxacin 10-20 mg/kg PO BID
+    - 環境清潔：徹底清洗消毒籠具、更換墊料
+    - 所有接觸兔同時治療
 prognosis: 適當驅蟲治療預後極佳。痂皮在治療後 1-3 週自行脫落。未併發中耳炎者完全恢復。已繼發中耳炎或前庭症狀者需延長治療，預後謹慎。復發多因環境未徹底消毒或接觸兔未同時治療。
-
 guidelineRefs:
   - sourceOrg: Veterinary Parasitology
     title: Psoroptes cuniculi in domestic rabbits
     url: https://pubmed.ncbi.nlm.nih.gov/10622618/
     type: review
-    pmid: "10622618"
+    pmid: '10622618'
   - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
     title: Parasites of rabbits
     url: https://pubmed.ncbi.nlm.nih.gov/23352431/
     type: review
-    pmid: "23352431"
+    pmid: '23352431'
   - sourceOrg: Veterinary medicine international
-    title: "Mange in Rabbits: An Ectoparasitic Disease with a Zoonotic Potential."
+    title: 'Mange in Rabbits: An Ectoparasitic Disease with a Zoonotic Potential.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9308540/
     type: review
-    pmid: "35880196"
+    pmid: '35880196'
     relevance: primary
-  - sourceOrg: "Parasites &amp; vectors"
-    title: "A novel calreticulin of Psoroptes ovis regulated keratinocyte function resulting in host skin barrier dysfunction: implications for involvement in the pathogenesis of psoroptic mange."
+  - sourceOrg: Parasites &amp; vectors
+    title: >-
+      A novel calreticulin of Psoroptes ovis regulated keratinocyte function resulting in host skin barrier dysfunction:
+      implications for involvement in the pathogenesis of psoroptic mange.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12125919/
     type: research
-    pmid: "40448127"
+    pmid: '40448127'
     relevance: supporting
   - sourceOrg: Journal of advanced veterinary and animal research
     title: The use of multicomponent ear drops in the treatment of otitis of various etiologies in animals.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7096122/
     type: research
-    pmid: "32219117"
+    pmid: '32219117'
     relevance: supporting
 pubmedQueries:
   - query: '"Psoroptes cuniculi" AND rabbit AND ("treatment" OR "ivermectin")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "MUS"
-  sectionTitle: "CANKER"
+  chapter: MUS
+  sectionTitle: CANKER
   pdfPage: 1149
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: head-tilt
+    frequency: uncommon
+  - symptomId: skin-pruritus
+    frequency: uncommon
+  - symptomId: alopecia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔耳蟎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - head-tilt 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 耳鏡檢查
+          notes: 可見蟎蟲活動於痂皮下。大量褐色層狀痂皮為特徵性表現
+        - name: 耳道拭子顯微鏡檢查
+          notes: 礦物油浸潤後低倍鏡即可見大型蟎蟲 (Psoroptes cuniculi 0.5-0.8 mm)、蟲卵及排泄物
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 切勿強行移除痂皮（疼痛且可能造成耳道出血——先治療，痂皮會自行脫落）
+        - 鑑別其他原因（細菌性外耳炎、黴菌感染）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 殺蟎治療為核心
+        - 切勿強行剝除耳痂（極度疼痛）
+        - 治療所有接觸兔
+ddxSource: auto-generated

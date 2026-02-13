@@ -3,13 +3,15 @@ nameEn: Pneumonia
 nameZh: 肺炎
 bodySystem: respiratory
 description: 肺實質的炎症性疾病，可由細菌、病毒、黴菌或異物吸入引起。細菌性吸入性肺炎為犬貓最常見類型。
-
 aliases:
-  - { alias: Bacterial Pneumonia, language: en }
-  - { alias: Aspiration Pneumonia, language: en }
-  - { alias: AP, language: en }
-  - { alias: 吸入性肺炎, language: zh }
-
+  - alias: Bacterial Pneumonia
+    language: en
+  - alias: Aspiration Pneumonia
+    language: en
+  - alias: AP
+    language: en
+  - alias: 吸入性肺炎
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓較少見。感染性肺炎多與上呼吸道感染複合體 (FHV-1、Calicivirus) 繼發細菌感染有關。
-
 etiology:
   categories:
     - name: 細菌性 (最常見)
@@ -46,7 +47,6 @@ etiology:
         - 嘔吐/反流 (全身麻醉後)
         - 短頭種氣道症候群
         - 強制灌食不當
-
 clinicalSigns:
   early:
     - 咳嗽 (濕性咳嗽)
@@ -65,29 +65,27 @@ clinicalSigns:
     - 膿胸 (胸腔積膿)
     - 敗血症/SIRS
     - 急性呼吸窘迫症候群 (ARDS)
-
 diagnosis:
   primaryTests:
     - name: 胸腔 X 光
-      notes: "肺泡型浸潤 (air bronchograms)。吸入性肺炎典型影響右中肺葉與前腹側肺葉"
+      notes: 肺泡型浸潤 (air bronchograms)。吸入性肺炎典型影響右中肺葉與前腹側肺葉
     - name: 氣管灌洗/BAL 細胞學與培養
-      notes: "確認致病菌與藥敏。細胞學可見退化性嗜中性球吞噬細菌"
+      notes: 確認致病菌與藥敏。細胞學可見退化性嗜中性球吞噬細菌
     - name: CBC
-      notes: "嗜中性球增多伴左移 (細菌性)；淋巴球減少 (病毒性)"
+      notes: 嗜中性球增多伴左移 (細菌性)；淋巴球減少 (病毒性)
   imaging:
     - name: 胸腔 X 光 (三向)
-      notes: "首選。評估浸潤分佈與嚴重程度"
+      notes: 首選。評估浸潤分佈與嚴重程度
     - name: 胸腔超音波
-      notes: "評估胸水、引導穿刺"
+      notes: 評估胸水、引導穿刺
     - name: 胸腔 CT
-      notes: "複雜病例或懷疑黴菌性肺炎時"
+      notes: 複雜病例或懷疑黴菌性肺炎時
   additional:
     - 動脈血氣分析 / SpO2
     - 血液培養 (懷疑敗血症時)
     - 生化 (評估器官功能)
     - 凝血功能 (DIC 篩檢)
     - 黴菌抗原檢測 (Histoplasma、Blastomyces 尿液/血清抗原)
-
 treatment:
   principles:
     - 經驗性抗生素後依培養藥敏調整
@@ -96,16 +94,16 @@ treatment:
     - 嚴重病例需住院加護
   medications:
     - name: Ampicillin-Sulbactam
-      dose: "22 mg/kg IV TID"
+      dose: 22 mg/kg IV TID
       notes: 住院病例一線靜脈用藥
     - name: Amoxicillin-Clavulanate
-      dose: "12.5-25 mg/kg PO BID"
+      dose: 12.5-25 mg/kg PO BID
       notes: 輕度病例或出院後口服轉換
     - name: Enrofloxacin
-      dose: "犬 5-20 mg/kg PO/IV SID"
+      dose: 犬 5-20 mg/kg PO/IV SID
       notes: 革蘭氏陰性菌覆蓋。與 ampicillin 合併使用於嚴重病例
     - name: Doxycycline
-      dose: "5-10 mg/kg PO BID"
+      dose: 5-10 mg/kg PO BID
       notes: Mycoplasma、Bordetella 感染首選
   general:
     - 氧氣治療 (SpO2 <94%)
@@ -114,51 +112,106 @@ treatment:
     - 營養支持
     - 抗生素療程至少 4-6 週 (X 光改善後再用 1-2 週)
     - 處理吸入性肺炎根本原因 (巨食道症管理、體位餵食)
-
 emergencyNotes: 嚴重呼吸窘迫需立即氧氣補充。避免過度保定。SpO2 持續 <90% 考慮機械通氣。吸入性肺炎合併敗血症需積極液體復甦與廣效抗生素。
-
 prognosis: 社區感染性細菌性肺炎經適當治療預後良好。吸入性肺炎死亡率約 20-30%。黴菌性肺炎需長期抗黴菌治療。合併 ARDS 或敗血症預後較差。
-
 ontologyMappings:
   - source: MONDO
-    code: "MONDO:0005249"
+    code: MONDO:0005249
     label: pneumonia
     confidence: exact
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Antimicrobial use Guidelines for Treatment of Respiratory Tract Disease in Dogs and Cats: Antimicrobial Guidelines Working Group of the International Society for Companion Animal Infectious Diseases."
+    title: >-
+      Antimicrobial use Guidelines for Treatment of Respiratory Tract Disease in Dogs and Cats: Antimicrobial Guidelines
+      Working Group of the International Society for Companion Animal Infectious Diseases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5354050/
     type: guideline
-    pmid: "28185306"
+    pmid: '28185306'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Streptococcal infections in cats: ABCD guidelines on prevention and management."
+    title: 'Streptococcal infections in cats: ABCD guidelines on prevention and management.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11148926/
     type: guideline
-    pmid: "26101315"
+    pmid: '26101315'
   - sourceOrg: HIV medicine
-    title: "Pneumocystis jirovecii pneumonia-Immune reconstitution inflammatory syndrome: A review of published cases."
+    title: 'Pneumocystis jirovecii pneumonia-Immune reconstitution inflammatory syndrome: A review of published cases.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12127242/
     type: review
-    pmid: "40129097"
+    pmid: '40129097'
   - sourceOrg: European stroke journal
-    title: "Oral care after stroke: Where are we now?"
+    title: 'Oral care after stroke: Where are we now?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6571511/
     type: review
-    pmid: "31236482"
+    pmid: '31236482'
     relevance: primary
   - sourceOrg: Virus research
-    title: "COVID-19: CADD to the rescue."
+    title: 'COVID-19: CADD to the rescue.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7228740/
     type: research
-    pmid: "32417181"
+    pmid: '32417181'
     relevance: supporting
 pubmedQueries:
   - query: '"pneumonia" AND (dog OR canine OR cat OR feline) AND ("aspiration" OR "bacterial" OR "treatment")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "RES"
-  sectionTitle: "PNEUMONIA"
+  chapter: RES
+  sectionTitle: PNEUMONIA
   pdfPage: 1483
+diagnosticAlgorithm:
+  title: 肺炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估呼吸型態、咳嗽及全身狀態
+      findings:
+        - 咳嗽（濕咳為主）
+        - 發燒
+        - 呼吸困難
+        - 鼻分泌物
+    - step: 2
+      action: 胸腔聽診與X光
+      details: 肺部聽診及正側位胸腔X光
+      findings:
+        - 肺部濕囉音
+        - 肺泡型浸潤
+        - 支氣管型態
+        - 主要影響腹側肺葉（吸入性）
+    - step: 3
+      action: 血液與微生物學
+      details: CBC及呼吸道樣本分析
+      findings:
+        - 白血球增多伴左移
+        - 氣管沖洗液細胞學與培養
+        - 藥敏試驗
+        - 排除黴菌性肺炎
+    - step: 4
+      action: 進階病因評估
+      details: 評估基礎原因
+      findings:
+        - 排除吸入性原因（巨食道症、麻醉後）
+        - 排除免疫抑制
+        - 胸腔超音波評估胸水
+        - 血液氣體分析
+clinicalPearls:
+  - 吸入性肺炎好發右中葉
+  - 培養結果前經驗性廣譜抗生素
+  - 巨食道症、喉麻痺犬終身吸入性肺炎風險
+  - 貓肺炎較犬少見
+monitoringItems:
+  - 呼吸狀態
+  - 體溫
+  - X光追蹤
+associatedSymptoms:
+  - symptomId: coughing
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: haemoptysis
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+ddxSource: book

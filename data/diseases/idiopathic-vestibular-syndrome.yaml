@@ -2,14 +2,18 @@ slug: idiopathic-vestibular-syndrome
 nameEn: Idiopathic Vestibular Syndrome
 nameZh: 特發性前庭症候群
 bodySystem: neurology
-description: 特發性前庭症候群為原因不明的急性周邊前庭功能障礙。犬隻多見於老年犬（>8 歲，又稱 old dog vestibular disease），貓隻可見於任何年齡。急性發作的頭部傾斜、眼球震顫與共濟失調，症狀通常在 2-4 週內自行改善。為排除性診斷。
-
+description: >-
+  特發性前庭症候群為原因不明的急性周邊前庭功能障礙。犬隻多見於老年犬（>8 歲，又稱 old dog vestibular disease），貓隻可見於任何年齡。急性發作的頭部傾斜、眼球震顫與共濟失調，症狀通常在 2-4
+  週內自行改善。為排除性診斷。
 aliases:
-  - { alias: 老年犬前庭症候群, language: zh }
-  - { alias: Old Dog Vestibular Disease, language: en }
-  - { alias: Idiopathic Vestibular Disease, language: en }
-  - { alias: Canine Geriatric Vestibular Disease, language: en }
-
+  - alias: 老年犬前庭症候群
+    language: zh
+  - alias: Old Dog Vestibular Disease
+    language: en
+  - alias: Idiopathic Vestibular Disease
+    language: en
+  - alias: Canine Geriatric Vestibular Disease
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓隻特發性前庭症候群可見於任何年齡。夏季可能發病率較高（feline idiopathic vestibular disease）。
-
 etiology:
   categories:
     - name: 特發性
@@ -31,7 +34,6 @@ etiology:
         - 排除中樞性前庭疾病
         - 排除甲狀腺功能低下（犬隻）
         - 排除耳毒性藥物
-
 clinicalSigns:
   early:
     - 突發性頭部傾斜
@@ -44,14 +46,12 @@ clinicalSigns:
     - 眼球震顫通常在 3-5 天內消退
     - 共濟失調在 1-2 週內改善
     - 輕微頭部傾斜可能持續
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
       notes: 確認為周邊前庭疾病（無姿勢反應缺損、無垂直眼球震顫、無意識改變）。排除中樞型。
     - name: 排除性診斷
       notes: 耳道鏡排除中耳炎。頭部 CT/MRI 排除鼓泡病變與腦幹病變（若症狀不典型或未改善時）。甲狀腺功能檢查（犬隻）。為排除性診斷。
-
 treatment:
   principles:
     - 支持性治療為主
@@ -59,32 +59,66 @@ treatment:
     - 不需要特異性治療
   general:
     - 支持性護理（安全環境、防止跌倒）
-    - "止吐：Maropitant（Cerenia）1 mg/kg SC/PO q24h × 3-5 天"
-    - "嚴重暈眩：Meclizine 25 mg PO q24h（犬隻，抗暈動藥）"
+    - 止吐：Maropitant（Cerenia）1 mg/kg SC/PO q24h × 3-5 天
+    - 嚴重暈眩：Meclizine 25 mg PO q24h（犬隻，抗暈動藥）
     - 輔助進食飲水（患側朝上餵食）
     - 避免不必要的搬動
     - 通常不需要住院（除非無法進食飲水）
     - 不建議使用類固醇（無效且有副作用）
-
 prognosis: 預後良好。大多數犬貓在 2-4 週內顯著改善。眼球震顫通常在 3-5 天內消退。完全恢復率約 70-80%。約 20-30% 殘留輕微頭部傾斜（不影響生活品質）。復發率約 10-20%。少數需要較長恢復時間。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Common Neurologic Diseases in Geriatric Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11200570/
     type: review
-    pmid: "38929372"
+    pmid: '38929372'
   - sourceOrg: The Veterinary record
-    title: "Peripheral vestibular syndrome in cats: Clinical presentation, diagnostic findings and outcome in 196 cases."
+    title: 'Peripheral vestibular syndrome in cats: Clinical presentation, diagnostic findings and outcome in 196 cases.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12578361/
     type: research
-    pmid: "40391779"
+    pmid: '40391779'
   - sourceOrg: BMC veterinary research
-    title: "Clinical signs, MRI findings and outcome in dogs with peripheral vestibular disease: a retrospective study."
+    title: 'Clinical signs, MRI findings and outcome in dogs with peripheral vestibular disease: a retrospective study.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7249679/
     type: research
-    pmid: "32450859"
+    pmid: '32450859'
 pubmedQueries:
   - query: '"idiopathic vestibular" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis" OR "geriatric")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: head-tilt
+    frequency: common
+  - symptomId: nystagmus
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: trembling
+    frequency: common
+diagnosticAlgorithm:
+  title: 特發性前庭症候群 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - head-tilt 相關症狀
+        - nystagmus 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 確認為周邊前庭疾病（無姿勢反應缺損、無垂直眼球震顫、無意識改變）。排除中樞型。
+        - name: 排除性診斷
+          notes: 耳道鏡排除中耳炎。頭部 CT/MRI 排除鼓泡病變與腦幹病變（若症狀不典型或未改善時）。甲狀腺功能檢查（犬隻）。為排除性診斷。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 支持性治療為主
+        - 多數自行改善
+        - 不需要特異性治療
+ddxSource: auto-generated

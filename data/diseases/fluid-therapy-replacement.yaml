@@ -3,11 +3,11 @@ nameEn: Fluid Therapy Replacement
 nameZh: 補充性輸液治療
 bodySystem: electrolyte
 description: 補充已流失的體液及電解質,用於脫水患者。計算公式為脫水補充量 = 體重(kg) × 脫水百分比(%) × 1000 mL,通常於24小時內補足。
-
 aliases:
-  - { alias: 脫水矯正輸液, language: zh }
-  - { alias: Rehydration Therapy, language: en }
-
+  - alias: 脫水矯正輸液
+    language: zh
+  - alias: Rehydration Therapy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓常因慢性腎臟病、糖尿病或厭食導致脫水
-
 etiology:
   categories:
     - name: 腸胃道流失
@@ -34,7 +33,6 @@ etiology:
         - 熱衰竭
         - 燒燙傷
         - 第三空間積液
-
 clinicalSigns:
   early:
     - 輕度脫水（5%）：皮膚彈性稍差
@@ -42,63 +40,83 @@ clinicalSigns:
   progressive:
     - 嚴重脫水（10-12%）：皮膚回彈明顯延遲、眼窩凹陷、黏膜乾燥、心搏過速
     - 極重度脫水（>12%）：休克、意識改變、器官灌流不足
-
 diagnosis:
   primaryTests:
     - name: 脫水程度評估
-      notes: "皮膚彈性、黏膜濕潤度、眼窩飽滿度、心搏及血壓"
+      notes: 皮膚彈性、黏膜濕潤度、眼窩飽滿度、心搏及血壓
     - name: 血球容積比（PCV）及血清總蛋白
-      notes: "脫水時 PCV 及 TP 升高"
+      notes: 脫水時 PCV 及 TP 升高
     - name: 血清電解質及腎功能
-      notes: "評估電解質失衡及腎前性氮血症"
+      notes: 評估電解質失衡及腎前性氮血症
   differentialDiagnoses:
     - 輕度脫水（5%）
     - 中度脫水（7-8%）
     - 嚴重脫水（10-12%）
     - 休克狀態
-
 treatment:
   medical:
     - 脫水補充量計算：體重(kg) × 脫水%(例如0.08) × 1000 = mL
     - 輸液速率：總量 ÷ 24小時 + 維持量 + 持續流失量
-    - 輸液類型：
-      - 等張晶體液（LRS, 0.9% NaCl）為首選
-      - 低張液用於高血鈉性脫水
+    - 輸液類型： - 等張晶體液（LRS, 0.9% NaCl）為首選 - 低張液用於高血鈉性脫水
     - 電解質補充（依血檢結果）
     - 監測脫水改善、尿量、體重、電解質
-
 prognosis:
-  general: "預後良好,多數脫水經適當補充性輸液後可恢復。嚴重脫水或合併電解質嚴重失衡需密切監測。過快補充可能導致過度水合或電解質紊亂。"
-
+  general: 預後良好,多數脫水經適當補充性輸液後可恢復。嚴重脫水或合併電解質嚴重失衡需密切監測。過快補充可能導致過度水合或電解質紊亂。
 prevention:
   - 早期治療腸胃道或腎臟疾病
   - 確保充足飲水供應
   - 定期監測水合狀態（高風險患者）
-
-
 guidelineRefs:
   - sourceOrg: Journal of thoracic disease
-    title: "The role of thoracic ultrasound in fluid management in critical care: a narrative review."
+    title: 'The role of thoracic ultrasound in fluid management in critical care: a narrative review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12875809/
     type: review
-    pmid: "41660483"
+    pmid: '41660483'
   - sourceOrg: Frontiers in veterinary science
-    title: "Colloids Yes or No? - a \"Gretchen Question\" Answered."
+    title: Colloids Yes or No? - a "Gretchen Question" Answered.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8282815/
     type: review
-    pmid: "34277747"
+    pmid: '34277747'
   - sourceOrg: Frontiers in veterinary science
     title: Current Concepts in Fluid Therapy in Horses.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8039297/
     type: review
-    pmid: "33855057"
+    pmid: '33855057'
   - sourceOrg: Frontiers in veterinary science
     title: Fluid Overload.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8275824/
     type: review
-    pmid: "34268347"
+    pmid: '34268347'
   - sourceOrg: Frontiers in veterinary science
     title: Fluid Therapy During Cardiopulmonary Resuscitation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7876065/
     type: review
-    pmid: "33585610"
+    pmid: '33585610'
+associatedSymptoms:
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: common
+diagnosticAlgorithm:
+  title: 補充性輸液治療 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - coma-stupor 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - dehydration 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 脫水程度評估
+          notes: 皮膚彈性、黏膜濕潤度、眼窩飽滿度、心搏及血壓
+        - name: 血球容積比（PCV）及血清總蛋白
+          notes: 脫水時 PCV 及 TP 升高
+        - name: 血清電解質及腎功能
+          notes: 評估電解質失衡及腎前性氮血症
+ddxSource: auto-generated

@@ -3,12 +3,13 @@ nameEn: Nocardiosis
 nameZh: 諾卡菌症
 bodySystem: infectious
 description: 諾卡菌症是由諾卡菌屬（Nocardia spp.）引起的慢性化膿性至肉芽腫性感染。此菌為環境中的腐生性放線菌，經吸入、皮膚傷口或攝入進入體內。好發於免疫功能低下的犬貓。常見表現為胸腔積膿、皮下膿瘍與瀰漫性感染。
-
 aliases:
-  - { alias: 諾卡氏菌症, language: zh }
-  - { alias: 奴卡菌症, language: zh }
-  - { alias: Nocardia Infection, language: en }
-
+  - alias: 諾卡氏菌症
+    language: zh
+  - alias: 奴卡菌症
+    language: zh
+  - alias: Nocardia Infection
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓隻感染可見但少於犬隻。FIV 或 FeLV 感染的免疫抑制貓風險增加。
-
 etiology:
   categories:
     - name: 病原體
@@ -38,7 +38,6 @@ etiology:
         - 幼年動物免疫發育不全
         - FIV/FeLV 感染（貓）
         - 長期使用糖皮質類固醇或環孢素
-
 clinicalSigns:
   early:
     - 咳嗽與呼吸困難（肺部型）
@@ -56,24 +55,22 @@ clinicalSigns:
     - 呼吸衰竭
     - 中樞神經系統症狀（腦膿瘍）
     - 敗血症
-
 diagnosis:
   primaryTests:
     - name: 細菌培養
-      notes: "確診方法。膿液、胸腔積液或組織培養。需告知實驗室懷疑 Nocardia，因需延長培養時間（7-14 天）並使用特殊培養基。"
+      notes: 確診方法。膿液、胸腔積液或組織培養。需告知實驗室懷疑 Nocardia，因需延長培養時間（7-14 天）並使用特殊培養基。
     - name: 細胞學檢查
-      notes: "膿液抹片可見化膿性發炎。革蘭氏染色可見分枝狀革蘭氏陽性桿菌。改良抗酸染色（modified acid-fast）部分陽性。"
+      notes: 膿液抹片可見化膿性發炎。革蘭氏染色可見分枝狀革蘭氏陽性桿菌。改良抗酸染色（modified acid-fast）部分陽性。
   imaging:
     - name: 胸腔 X 光
-      notes: "胸腔積液（常為單側或雙側積膿）。肺部結節或浸潤影。縱隔淋巴結腫大。"
+      notes: 胸腔積液（常為單側或雙側積膿）。肺部結節或浸潤影。縱隔淋巴結腫大。
     - name: 腹部超音波
-      notes: "評估肝腎膿瘍。腹腔淋巴結腫大。瀰漫性感染評估。"
+      notes: 評估肝腎膿瘍。腹腔淋巴結腫大。瀰漫性感染評估。
   additional:
     - 藥物敏感性測試（Nocardia 對抗生素敏感性變異大）
     - 胸腔積液分析（化膿性，蛋白質高，細胞計數高）
     - 組織病理學（化膿性至肉芽腫性發炎）
     - FIV/FeLV 篩檢（貓）
-
 treatment:
   principles:
     - 長期抗生素治療（數月至終身）
@@ -81,50 +78,115 @@ treatment:
     - 膿瘍引流與胸腔沖洗
     - 治療潛在免疫抑制狀態
   general:
-    - "Trimethoprim-Sulfonamide (TMS) 15 mg/kg PO q12h（一線藥物，治療 3-6 月以上）"
-    - "替代方案：Amikacin 15 mg/kg IV/IM q24h + Imipenem 5-10 mg/kg IV q6-8h（嚴重病例）"
-    - "Minocycline 10 mg/kg PO q12h（替代或合併用藥）"
-    - "胸腔積膿：胸管引流 + 胸腔沖洗（溫生理食鹽水）"
-    - "皮下膿瘍：外科清創與引流"
-    - "停藥前需影像學確認感染消退，建議臨床改善後再治療至少 1-2 月"
-    - "避免或減量免疫抑制藥物（如可能）"
-
+    - Trimethoprim-Sulfonamide (TMS) 15 mg/kg PO q12h（一線藥物，治療 3-6 月以上）
+    - 替代方案：Amikacin 15 mg/kg IV/IM q24h + Imipenem 5-10 mg/kg IV q6-8h（嚴重病例）
+    - Minocycline 10 mg/kg PO q12h（替代或合併用藥）
+    - 胸腔積膿：胸管引流 + 胸腔沖洗（溫生理食鹽水）
+    - 皮下膿瘍：外科清創與引流
+    - 停藥前需影像學確認感染消退，建議臨床改善後再治療至少 1-2 月
+    - 避免或減量免疫抑制藥物（如可能）
 prognosis: 預後謹慎至不良。皮膚型局部感染經長期 TMS 治療預後最佳。胸腔型經積極引流與抗生素治療約 50-60% 可緩解。瀰漫性或中樞神經系統型預後不良。免疫抑制動物預後較差。治療時間長（通常 3-6 月以上），過早停藥復發率高。
-
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Internal Medicine
-    title: "Nocardiosis in dogs and cats: clinical findings and outcome"
+    title: 'Nocardiosis in dogs and cats: clinical findings and outcome'
     url: https://pubmed.ncbi.nlm.nih.gov/16734091/
     type: consensus
-    pmid: "16734091"
+    pmid: '16734091'
   - sourceOrg: Veterinary Microbiology
-    title: "Nocardia infections in companion animals: review"
+    title: 'Nocardia infections in companion animals: review'
     url: https://pubmed.ncbi.nlm.nih.gov/18242872/
     type: consensus
-    pmid: "18242872"
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Intra-abdominal nocardiosis and scedosporiosis in a dog: case report and literature review."
+    pmid: '18242872'
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: 'Intra-abdominal nocardiosis and scedosporiosis in a dog: case report and literature review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11559917/
     type: review
-    pmid: "39397659"
+    pmid: '39397659'
     relevance: primary
   - sourceOrg: Heliyon
-    title: "Bacterial diseases of Asian sea bass (Lates calcarifer): A review for health management strategies and future aquaculture sustainability."
+    title: >-
+      Bacterial diseases of Asian sea bass (Lates calcarifer): A review for health management strategies and future
+      aquaculture sustainability.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11068540/
     type: review
-    pmid: "38707314"
+    pmid: '38707314'
     relevance: primary
   - sourceOrg: Pathogens (Basel, Switzerland)
     title: Nocardia cyriacigeorgica in a Mallard (Anas platyrhynchos) from Arizona, USA.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12300570/
     type: case-report
-    pmid: "40732744"
+    pmid: '40732744'
     relevance: supporting
 pubmedQueries:
   - query: '"nocardiosis" AND (dog OR cat) AND ("treatment" OR "diagnosis")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "GEN"
-  sectionTitle: "NOCARDIOSIS"
+  chapter: GEN
+  sectionTitle: NOCARDIOSIS
   pdfPage: 707
+diagnosticAlgorithm:
+  title: 諾卡菌病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估化膿性病灶與免疫狀態
+      findings:
+        - 皮膚排膿性傷口或竇道
+        - 胸腔積液或肺炎
+        - 發熱與嗜睡
+        - 免疫抑制動物好發
+    - step: 2
+      action: 細胞學與染色
+      details: 病灶分泌物或積液細胞學檢查
+      findings:
+        - 改良Ziehl-Neelsen染色見部分抗酸性分枝桿菌樣菌體
+        - 化膿性至肉芽腫性炎症
+        - 可見硫磺顆粒（sulfur granules）
+    - step: 3
+      action: 影像學檢查
+      details: 胸腔與腹腔影像評估
+      findings:
+        - 胸腔X光見結節性浸潤或積液
+        - 腹部超音波排除腹腔播散
+        - 可能有骨骼病灶
+    - step: 4
+      action: 確診
+      details: 細菌培養與分子鑑定
+      findings:
+        - 需氧培養見Nocardia菌落
+        - 培養需2-7天以上
+        - 分子鑑定確認菌種
+        - 藥敏試驗指導治療
+clinicalPearls:
+  - 諾卡菌vs放線菌的鑑別：諾卡菌為部分抗酸染色陽性（需氧），放線菌為抗酸染色陰性（厭氧/兼性厭氧）
+  - 諾卡菌培養需要延長培養時間——必須通知實驗室可能的診斷
+  - TMP-SMX是諾卡菌病的首選治療
+  - 免疫抑制是重要的易感因素——應評估潛在免疫抑制原因
+  - 胸腔積液伴絲狀細菌的鑑別診斷主要為諾卡菌和放線菌
+monitoringItems:
+  - 臨床症狀改善追蹤
+  - 胸腔X光追蹤積液消退
+  - 培養轉陰確認
+  - 肝腎功能監測（長期TMP-SMX）
+  - 免疫狀態監測
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+ddxSource: book

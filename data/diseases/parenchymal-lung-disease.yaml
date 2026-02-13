@@ -3,11 +3,11 @@ nameEn: Parenchymal Lung Disease
 nameZh: 肺實質疾病
 bodySystem: respiratory
 description: 肺泡、間質或微血管的病變,導致氣體交換障礙。包含肺炎、肺水腫、間質性肺病等多種病因。
-
 aliases:
-  - { alias: 肺實質病變, language: zh }
-  - { alias: Lung Parenchymal Disorder, language: en }
-
+  - alias: 肺實質病變
+    language: zh
+  - alias: Lung Parenchymal Disorder
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 常見原因包含氣喘、肺炎、肺水腫
-
 etiology:
   categories:
     - name: 感染性
@@ -32,7 +31,6 @@ etiology:
     - name: 腫瘤性
       examples:
         - 原發或轉移性肺腫瘤
-
 clinicalSigns:
   early:
     - 咳嗽
@@ -43,54 +41,88 @@ clinicalSigns:
     - 發紺
     - 嗜睡
     - 食慾不振
-
 diagnosis:
   primaryTests:
     - name: 胸部 X 光
-      notes: "評估肺實質病變模式 (間質、肺泡、支氣管)"
+      notes: 評估肺實質病變模式 (間質、肺泡、支氣管)
     - name: 血液檢查
-      notes: "CBC, 生化, 發炎指標"
+      notes: CBC, 生化, 發炎指標
     - name: 血氧分析
-      notes: "評估氧合功能"
+      notes: 評估氧合功能
     - name: 支氣管肺泡灌洗
-      notes: "細胞學、培養、PCR"
+      notes: 細胞學、培養、PCR
   differentialDiagnoses:
     - 氣管支氣管疾病
     - 胸腔積液
     - 心衰竭
-
 treatment:
   medical:
     - 氧氣治療
     - 抗生素 (若為細菌性肺炎)
     - 利尿劑 (若為心因性肺水腫)
     - 支持性照護 (補液、營養)
-
 prognosis:
-  general: "取決於原發病因;感染性肺炎若能早期治療預後良好;腫瘤性或間質性肺病預後謹慎至不良"
-
+  general: 取決於原發病因;感染性肺炎若能早期治療預後良好;腫瘤性或間質性肺病預後謹慎至不良
 prevention:
   - 疫苗接種
   - 避免吸入刺激物
   - 早期診斷及治療心臟疾病
-
-
 guidelineRefs:
   - sourceOrg: Multidisciplinary respiratory medicine
-    title: "Clinico- pathologic presentation of hypersensitivity pneumonitis in Egyptian patients: a multidisciplinary study."
+    title: 'Clinico- pathologic presentation of hypersensitivity pneumonitis in Egyptian patients: a multidisciplinary study.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5421323/
     type: research
-    pmid: "28503304"
+    pmid: '28503304'
     relevance: supporting
-  - sourceOrg: "Lung India : official organ of Indian Chest Society"
-    title: High-resolution computerized tomography changes in diffuse parenchymal lung disease from chronic hypersensitivity pneumonitis related to bird antigen.
+  - sourceOrg: 'Lung India : official organ of Indian Chest Society'
+    title: >-
+      High-resolution computerized tomography changes in diffuse parenchymal lung disease from chronic hypersensitivity
+      pneumonitis related to bird antigen.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5946554/
     type: research
-    pmid: "29697078"
+    pmid: '29697078'
     relevance: supporting
   - sourceOrg: Prague medical report
-    title: Hypersensitivity Pneumonitis High-resolution Computed Tomography Findings, and Their Correlation with the Etiology and the Disease Duration.
+    title: >-
+      Hypersensitivity Pneumonitis High-resolution Computed Tomography Findings, and Their Correlation with the Etiology
+      and the Disease Duration.
     url: https://pubmed.ncbi.nlm.nih.gov/33030142/
     type: research
-    pmid: "33030142"
+    pmid: '33030142'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肺實質疾病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸部 X 光
+          notes: 評估肺實質病變模式 (間質、肺泡、支氣管)
+        - name: 血液檢查
+          notes: CBC, 生化, 發炎指標
+        - name: 血氧分析
+          notes: 評估氧合功能
+ddxSource: auto-generated

@@ -3,11 +3,11 @@ nameEn: Near Drowning Saltwater
 nameZh: 海水溺水
 bodySystem: ear
 description: 海水吸入引起高張性液體進入肺泡,導致肺水腫、高血鈉及低血容性休克。
-
 aliases:
-  - { alias: 海水溺水急救, language: zh }
-  - { alias: Saltwater Submersion, language: en }
-
+  - alias: 海水溺水急救
+    language: zh
+  - alias: Saltwater Submersion
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,13 +17,11 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 較少見
-
 etiology:
   categories:
     - name: 海水吸入
       examples:
         - 海邊游泳、海浪捲入
-
 clinicalSigns:
   early:
     - 呼吸困難、咳嗽
@@ -32,16 +30,14 @@ clinicalSigns:
     - 肺水腫、ARDS
     - 高血鈉、脫水
     - 休克
-
 diagnosis:
   primaryTests:
     - name: 胸部X光
-      notes: "肺水腫"
+      notes: 肺水腫
     - name: 電解質
-      notes: "高血鈉、高氯"
+      notes: 高血鈉、高氯
   differentialDiagnoses:
     - 淡水溺水
-
 treatment:
   medical:
     - 氧氣治療
@@ -50,10 +46,36 @@ treatment:
     - Furosemide(肺水腫)
     - 支氣管擴張劑
     - 抗生素
-
 prognosis:
-  general: "預後類似淡水溺水。高血鈉需謹慎校正。"
-
+  general: 預後類似淡水溺水。高血鈉需謹慎校正。
 prevention:
   - 監督海邊活動
   - 避免strong浪
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: coughing
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 海水溺水 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - coughing 相關症狀
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸部X光
+          notes: 肺水腫
+        - name: 電解質
+          notes: 高血鈉、高氯
+ddxSource: auto-generated

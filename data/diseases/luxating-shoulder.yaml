@@ -3,12 +3,13 @@ nameEn: Shoulder Luxation
 nameZh: 肩關節脫位
 bodySystem: orthopedic
 description: 肩關節的完全或不完全脫位，可為創傷性或先天性。小型犬較常見先天性肩關節內側脫位，大型犬以創傷性外側脫位為主。
-
 aliases:
-  - { alias: 肩脫臼, language: zh }
-  - { alias: Shoulder Dislocation, language: en }
-  - { alias: Glenohumeral Luxation, language: en }
-
+  - alias: 肩脫臼
+    language: zh
+  - alias: Shoulder Dislocation
+    language: en
+  - alias: Glenohumeral Luxation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 多為創傷性（高處墜落、車禍）。
-
 etiology:
   categories:
     - name: 創傷性
@@ -34,7 +34,6 @@ etiology:
     - name: 好發品種
       examples:
         - 小型犬（Toy Poodle、Chihuahua、Pomeranian）
-
 clinicalSigns:
   early:
     - 突發性跛行
@@ -48,46 +47,87 @@ clinicalSigns:
     - 關節纖維化
     - 續發性退化性關節病
     - 永久性運動功能障礙
-
 diagnosis:
   primaryTests:
     - name: 骨科觸診
-      notes: "可觸及肱骨頭移位、肩關節不穩定。需與對側比較。"
+      notes: 可觸及肱骨頭移位、肩關節不穩定。需與對側比較。
   imaging:
     - name: X光（肩關節正側位）
-      notes: "可見肱骨頭脫離關節盂。需評估是否有伴隨骨折。"
+      notes: 可見肱骨頭脫離關節盂。需評估是否有伴隨骨折。
     - name: CT
-      notes: "評估骨性結構異常，術前規劃用"
+      notes: 評估骨性結構異常，術前規劃用
   additional:
     - 關節液分析（排除感染性關節炎）
     - MRI（評估軟組織損傷）
-
 treatment:
   principles:
     - 急性創傷性脫位應嘗試閉鎖復位
     - 復發性或先天性脫位需手術穩定
     - 術後限制運動 4-6 週
   general:
-    - "閉鎖復位 + Velpeau sling 固定 2-3 週（急性創傷性）"
-    - "開放復位 + 關節囊重建（復發性）"
-    - "關節固定術 arthrodesis（嚴重病例）"
-    - "止痛：NSAIDs（meloxicam 犬 0.1 mg/kg PO SID）"
+    - 閉鎖復位 + Velpeau sling 固定 2-3 週（急性創傷性）
+    - 開放復位 + 關節囊重建（復發性）
+    - 關節固定術 arthrodesis（嚴重病例）
+    - 止痛：NSAIDs（meloxicam 犬 0.1 mg/kg PO SID）
     - 物理復健（術後）
-
 prognosis: 急性創傷性脫位閉鎖復位成功率約 50%，復發者需手術。手術後功能恢復良好。先天性脫位手術效果較不穩定。關節固定術後運動功能會有一定程度受限。
-
 guidelineRefs:
   - sourceOrg: Veterinary Surgery
-    title: "Shoulder joint luxation in dogs and cats: A retrospective study"
+    title: 'Shoulder joint luxation in dogs and cats: A retrospective study'
     url: https://pubmed.ncbi.nlm.nih.gov/19691581/
     type: study
-    pmid: "19691581"
-
+    pmid: '19691581'
 pubmedQueries:
   - query: '"shoulder luxation" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "surgical")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "MUS"
-  sectionTitle: "SHOULDER"
+  chapter: MUS
+  sectionTitle: SHOULDER
   pdfPage: 1171
+diagnosticAlgorithm:
+  title: 肩關節脫位 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估前肢跛行和肩關節穩定性
+      findings:
+        - 急性或慢性前肢跛行
+        - 肩關節外形異常
+        - 肩關節活動範圍異常
+        - 外傷史或先天性關節鬆弛
+    - step: 2
+      action: 骨科學檢查
+      details: 進行肩關節穩定性測試
+      findings:
+        - 肱骨頭可觸及異常位置
+        - 肩關節抽屜試驗異常
+        - 內側或外側脫位
+        - 關節過度鬆弛
+    - step: 3
+      action: 影像學確診
+      details: 進行肩關節X光確認脫位方向
+      findings:
+        - 肱骨頭與肩胛盂對位異常
+        - 排除骨折
+        - 退行性關節變化（慢性）
+        - 雙側對照
+    - step: 4
+      action: 手術規劃
+      details: 評估復位方式和穩定化手術
+      findings:
+        - 急性vs慢性脫位
+        - 先天性vs創傷性
+        - 韌帶完整性評估
+        - 手術穩定化方案
+clinicalPearls:
+  - 閉合復位後必須立即以 Velpeau sling 固定，否則極易復發
+  - 內側脫位：患肢呈外旋姿勢。外側脫位：患肢呈內旋姿勢
+  - 小型犬和玩具犬種的肩關節脫位多為先天性/發育性
+  - 復發性脫位幾乎都需要手術處理
+monitoringItems:
+  - Velpeau sling 每 3-5 天檢查皮膚壓迫性損傷
+  - X 光復位後即刻確認和拆除外固定後複驗
+  - 關節穩定性每 2 週評估
+  - 術後 8-12 週逐漸恢復正常活動
+ddxSource: book

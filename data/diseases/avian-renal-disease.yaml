@@ -3,19 +3,21 @@ nameEn: Avian Renal Disease
 nameZh: 禽類腎臟疾病
 bodySystem: urinary
 description: 禽類腎臟疾病涵蓋感染性腎炎、痛風性腎病、腎臟腫瘤及慢性腎功能不全。禽類腎臟佔體重比例大且代謝旺盛，對腎毒性物質敏感。虎皮鸚鵡的腎臟腫瘤尤為常見。
-
 aliases:
-  - { alias: 鳥類腎病, language: zh }
-  - { alias: 禽類腎衰竭, language: zh }
-  - { alias: Avian nephropathy, language: en }
-  - { alias: Avian renal failure, language: en }
-  - { alias: Kidney disease in birds, language: en }
-
+  - alias: 鳥類腎病
+    language: zh
+  - alias: 禽類腎衰竭
+    language: zh
+  - alias: Avian nephropathy
+    language: en
+  - alias: Avian renal failure
+    language: en
+  - alias: Kidney disease in birds
+    language: en
 species:
   - speciesCommon: bird
     prevalence: common
     notes: 所有鳥類均可發生。虎皮鸚鵡腎臟腫瘤發病率高。老年鸚鵡慢性腎病常見。脫水為急性腎衰竭最常見誘因。
-
 etiology:
   categories:
     - name: 感染性
@@ -35,7 +37,6 @@ etiology:
         - 重金屬
         - 腎臟腺癌（虎皮鸚鵡）
         - 腎臟淋巴瘤
-
 clinicalSigns:
   early:
     - 多飲多尿
@@ -49,7 +50,6 @@ clinicalSigns:
     - 單側跛行（腎腫大壓迫坐骨神經）
     - 腹部膨大
     - 痛風症狀（關節腫脹）
-
 diagnosis:
   primaryTests:
     - name: 血液生化
@@ -58,7 +58,6 @@ diagnosis:
       notes: 腎臟輪廓擴大。評估腎臟腫瘤。痛風性鈣化
     - name: 尿液分析
       notes: 多尿、低比重尿。蛋白尿
-
 treatment:
   principles:
     - 充分水合
@@ -74,16 +73,58 @@ treatment:
     - 腎臟腫瘤若單側可考慮手術
     - 感染性腎炎給予適當抗生素
     - 長期定期監測腎功能
-
 prognosis: 急性腎衰竭若病因可逆（脫水、中毒），積極治療後預後尚可。慢性腎病為進行性，治療目標在延緩惡化。腎臟腫瘤預後不良（虎皮鸚鵡腎腺癌預後差）。痛風性腎病持續管理可延緩進展。
-
-
 guidelineRefs:
   - sourceOrg: The veterinary clinics of North America. Exotic animal practice
     title: Clinical Management of Avian Renal Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7129257/
     type: review
-    pmid: "31759453"
+    pmid: '31759453'
 pubmedQueries:
   - query: '"renal disease" AND (avian OR bird OR psittacine) AND (treatment OR management OR diagnosis)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: polyarthritis
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類腎臟疾病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - abdominal-distension 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液生化
+          notes: 尿酸升高（>15 mg/dL）。血磷升高。禽類無 BUN 意義需以尿酸為指標
+        - name: X 光
+          notes: 腎臟輪廓擴大。評估腎臟腫瘤。痛風性鈣化
+        - name: 尿液分析
+          notes: 多尿、低比重尿。蛋白尿
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 充分水合
+        - 治療基礎原因
+        - 飲食調整
+ddxSource: auto-generated

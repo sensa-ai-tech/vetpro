@@ -3,13 +3,15 @@ nameEn: Vitamin K Deficiency
 nameZh: 維生素 K 缺乏症
 bodySystem: metabolic
 description: 維生素 K 為肝臟合成凝血因子 II、VII、IX、X 所必需的輔因子，缺乏導致凝血功能障礙。最常見原因為抗凝血劑（老鼠藥）中毒拮抗維生素 K 作用，其他原因包括膽道阻塞、嚴重肝病或長期抗生素使用。
-
 aliases:
-  - { alias: 維生素K缺乏, language: zh }
-  - { alias: 凝血因子合成障礙, language: zh }
-  - { alias: Hypovitaminosis K, language: en }
-  - { alias: Vitamin K Dependent Coagulopathy, language: en }
-
+  - alias: 維生素K缺乏
+    language: zh
+  - alias: 凝血因子合成障礙
+    language: zh
+  - alias: Hypovitaminosis K
+    language: en
+  - alias: Vitamin K Dependent Coagulopathy
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓可見於抗凝血劑中毒或嚴重肝病（肝臟脂肪變性）。貓肝臟維生素 K 儲存量較犬少。
-
 etiology:
   categories:
     - name: 維生素 K 拮抗
@@ -31,7 +32,6 @@ etiology:
       examples:
         - 嚴重肝臟疾病
         - 長期廣效抗生素（抑制腸道菌群合成維生素 K）
-
 clinicalSigns:
   early:
     - 輕微出血傾向（刷牙出血、注射部位瘀血）
@@ -44,14 +44,12 @@ clinicalSigns:
     - 胸腔或腹腔出血
     - 呼吸困難（血胸）
     - 急性失血性休克
-
 diagnosis:
   primaryTests:
     - name: 凝血功能檢查
       notes: PT 延長最先出現（因子 VII 半衰期最短）。aPTT 亦延長。PIVKA（proteins induced by vitamin K absence）較敏感。
     - name: 中毒病史
       notes: 詢問老鼠藥接觸史。第二代抗凝血劑效果可持續數週至數月。
-
 treatment:
   principles:
     - 維生素 K1 為特異性解毒劑
@@ -64,41 +62,81 @@ treatment:
     - 急性出血：新鮮冷凍血漿或全血輸注
     - 停藥後 48-72 小時追蹤 PT 確認不復發
     - 膽道阻塞需外科解除
-
 prognosis: 抗凝血劑中毒若在致命性出血前診斷並開始維生素 K1 治療，預後良好。已發生嚴重內出血（如心包膜積血、腦出血）預後不良。嚴重肝病導致的維生素 K 缺乏預後取決於肝功能恢復程度。
-
-
 guidelineRefs:
   - sourceOrg: Nutrients
     title: The Potential of Vitamin K as a Regulatory Factor of Bone Metabolism-A Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10708186/
     type: review
-    pmid: "38068793"
+    pmid: '38068793'
     relevance: primary
   - sourceOrg: Frontiers in immunology
     title: Role of Vitamin K in Intestinal Health.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8769504/
     type: review
-    pmid: "35069573"
+    pmid: '35069573'
     relevance: primary
   - sourceOrg: Journal of molecular medicine (Berlin, Germany)
-    title: "Vascular pathologies in chronic kidney disease: pathophysiological mechanisms and novel therapeutic approaches."
+    title: 'Vascular pathologies in chronic kidney disease: pathophysiological mechanisms and novel therapeutic approaches.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7900031/
     type: review
-    pmid: "33481059"
+    pmid: '33481059'
     relevance: primary
   - sourceOrg: Nutrients
-    title: Vitamin K-Dependent Carboxylation of Osteocalcin in Bone-Ally or Adversary of Bone Mineral Status in Rats with Experimental Chronic Kidney Disease?
+    title: >-
+      Vitamin K-Dependent Carboxylation of Osteocalcin in Bone-Ally or Adversary of Bone Mineral Status in Rats with
+      Experimental Chronic Kidney Disease?
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9572286/
     type: research
-    pmid: "36235734"
+    pmid: '36235734'
     relevance: supporting
   - sourceOrg: Nutrients
     title: Establishment of the Variation of Vitamin K Status According to Vkorc1 Point Mutations Using Rat Models.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6770205/
     type: research
-    pmid: "31484376"
+    pmid: '31484376'
     relevance: supporting
 pubmedQueries:
   - query: '"Vitamin K Deficiency" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: epistaxis
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: haematochezia
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: uncommon
+  - symptomId: petechiae-ecchymoses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 維生素 K 缺乏症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - dyspnoea 相關症狀
+        - epistaxis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 凝血功能檢查
+          notes: PT 延長最先出現（因子 VII 半衰期最短）。aPTT 亦延長。PIVKA（proteins induced by vitamin K absence）較敏感。
+        - name: 中毒病史
+          notes: 詢問老鼠藥接觸史。第二代抗凝血劑效果可持續數週至數月。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 維生素 K1 為特異性解毒劑
+        - 急性出血需同時輸注新鮮冷凍血漿
+        - 長效抗凝血劑中毒需長期維生素 K1 治療
+ddxSource: auto-generated

@@ -3,13 +3,15 @@ nameEn: Ear Margin Dermatosis
 nameZh: 耳翼邊緣皮膚病
 bodySystem: dermatology
 description: 耳翼 (pinna) 邊緣的皮膚退化性疾病，表現為耳緣角質化過度、皮屑堆積與痂皮形成。主要見於 Dachshund，為該品種的特徵性皮膚問題。可能與血管病變或角質代謝異常有關。
-
 aliases:
-  - { alias: Ear Margin Seborrhea, language: en }
-  - { alias: Pinnal Margin Dermatosis, language: en }
-  - { alias: 耳翼邊緣脂漏, language: zh }
-  - { alias: 耳緣皮膚炎, language: zh }
-
+  - alias: Ear Margin Seborrhea
+    language: en
+  - alias: Pinnal Margin Dermatosis
+    language: en
+  - alias: 耳翼邊緣脂漏
+    language: zh
+  - alias: 耳緣皮膚炎
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 品種特異性
@@ -25,7 +26,6 @@ etiology:
         - Dachshund 遺傳傾向
         - 耳翼邊緣微血管異常
         - 角質代謝異常
-
 clinicalSigns:
   early:
     - 耳翼邊緣皮屑增多
@@ -35,7 +35,6 @@ clinicalSigns:
     - 毛髮脫落
     - 耳翼邊緣裂隙
     - 輕微搔癢
-
 diagnosis:
   primaryTests:
     - name: 臨床表現 + 品種
@@ -44,7 +43,6 @@ diagnosis:
       notes: 排除蠕形蟎或疥蟎
     - name: 皮膚活檢
       notes: 排除血管炎或其他皮膚病。組織學見角質化過度
-
 treatment:
   principles:
     - 軟化並移除痂皮
@@ -55,21 +53,46 @@ treatment:
     - 保濕乳液 (含尿素或丙二醇)
     - 嚴重時局部類固醇短期使用
     - Vitamin A 補充 (部分有效)
-
 prognosis: 預後良好但為慢性需長期管理。規律護理可有效控制。不危及生命但影響外觀。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Non-ocular melanomas in cats: a retrospective study of 30 cases."
+    title: 'Non-ocular melanomas in cats: a retrospective study of 30 cases.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11119639/
     type: research
-    pmid: "26767979"
+    pmid: '26767979'
   - sourceOrg: European review for medical and pharmacological sciences
-    title: "Mechanism of feedback regulation of neutrophil inflammation in Henoch-Sch&#xf6;nlein purpura."
+    title: Mechanism of feedback regulation of neutrophil inflammation in Henoch-Sch&#xf6;nlein purpura.
     url: https://pubmed.ncbi.nlm.nih.gov/27831646/
     type: research
-    pmid: "27831646"
+    pmid: '27831646'
 pubmedQueries:
   - query: '"ear margin dermatosis" AND (veterinary OR canine) AND ("Dachshund" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 耳翼邊緣皮膚病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床表現 + 品種
+          notes: Dachshund 耳翼邊緣特徵性角化過度即可臨床診斷
+        - name: 皮膚刮片
+          notes: 排除蠕形蟎或疥蟎
+        - name: 皮膚活檢
+          notes: 排除血管炎或其他皮膚病。組織學見角質化過度
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 軟化並移除痂皮
+        - 保濕護理
+ddxSource: auto-generated

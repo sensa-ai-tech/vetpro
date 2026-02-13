@@ -3,16 +3,15 @@ nameEn: Rabbit Atherosclerosis
 nameZh: 兔動脈粥樣硬化
 bodySystem: cardiac
 description: 兔主動脈及冠狀動脈等大血管內膜脂質沉積與纖維增生，為兔的自然發生性心血管疾病。高膽固醇飲食加速疾病進展，老年兔為主要發病族群。
-
 aliases:
-  - { alias: "兔動脈粥樣硬化", language: zh }
-  - { alias: "Rabbit Atherosclerosis", language: en }
-
+  - alias: 兔動脈粥樣硬化
+    language: zh
+  - alias: Rabbit Atherosclerosis
+    language: en
 species:
   - speciesCommon: rabbit
     prevalence: uncommon
     notes: 兔可受此疾病影響。
-
 etiology:
   categories:
     - name: 代謝性
@@ -20,7 +19,6 @@ etiology:
         - 高膽固醇/高脂飲食
         - 自然老化過程
         - 遺傳易感性
-
 clinicalSigns:
   early:
     - 通常無明顯症狀
@@ -29,14 +27,12 @@ clinicalSigns:
     - 運動不耐
     - 呼吸困難
     - 猝死（心肌梗塞）
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波
       notes: 評估心臟功能及瓣膜。冠狀動脈病變難以直接觀察。
     - name: 血脂檢查
       notes: 膽固醇升高。
-
 treatment:
   principles:
     - 飲食控制
@@ -47,41 +43,72 @@ treatment:
     - 避免高脂零食
     - 增加運動量
     - 維持理想體重
-
 prognosis: 兔動脈粥樣硬化為緩慢進行性疾病，臨床症狀出現時通常已嚴重。飲食控制可延緩進展。猝死為可能的首發表現。
-
-
 guidelineRefs:
   - sourceOrg: Open life sciences
     title: Effects of different enantiomers of amlodipine on lipid profiles and vasomotor factors in atherosclerotic rabbits.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8422977/
     type: research
-    pmid: "34553070"
+    pmid: '34553070'
     relevance: supporting
   - sourceOrg: Bioconjugate chemistry
-    title: Multimodal Positron Emission Tomography Imaging to Quantify Uptake of 89Zr-Labeled Liposomes in the Atherosclerotic Vessel Wall.
+    title: >-
+      Multimodal Positron Emission Tomography Imaging to Quantify Uptake of 89Zr-Labeled Liposomes in the
+      Atherosclerotic Vessel Wall.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7460274/
     type: research
-    pmid: "31095372"
+    pmid: '31095372'
     relevance: supporting
   - sourceOrg: Molecular medicine reports
-    title: "MRI tracing of ultrasmall superparamagnetic iron oxide nanoparticle&#x2011;labeled endothelial progenitor cells for repairing atherosclerotic vessels in rabbits."
+    title: >-
+      MRI tracing of ultrasmall superparamagnetic iron oxide nanoparticle&#x2011;labeled endothelial progenitor cells
+      for repairing atherosclerotic vessels in rabbits.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7453557/
     type: research
-    pmid: "32945451"
+    pmid: '32945451'
     relevance: supporting
   - sourceOrg: BMC cardiovascular disorders
     title: Inhibition of JAK2/STAT3/SOCS3 signaling attenuates atherosclerosis in rabbit.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7071770/
     type: research
-    pmid: "32169038"
+    pmid: '32169038'
     relevance: supporting
   - sourceOrg: Cell cycle (Georgetown, Tex.)
     title: PJ34, a PARP1 inhibitor, promotes endothelial repair in a rabbit model of high fat diet-induced atherosclerosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6986555/
     type: research
-    pmid: "31276434"
+    pmid: '31276434'
     relevance: supporting
 pubmedQueries:
   - query: '"Rabbit Atherosclerosis" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔動脈粥樣硬化 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波
+          notes: 評估心臟功能及瓣膜。冠狀動脈病變難以直接觀察。
+        - name: 血脂檢查
+          notes: 膽固醇升高。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 飲食控制
+        - 低脂飲食
+        - 增加運動
+ddxSource: auto-generated

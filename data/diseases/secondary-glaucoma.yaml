@@ -3,13 +3,15 @@ nameEn: Secondary Glaucoma
 nameZh: 續發性青光眼
 bodySystem: ophthalmology
 description: 繼發於其他眼內疾病導致房水排出受阻而眼壓升高。常見原因包括葡萄膜炎、晶體脫位、眼內腫瘤與前房出血。為貓青光眼的最常見類型。治療需同時處理根本原因與控制眼壓。
-
 aliases:
-  - { alias: Uveitis-induced Glaucoma, language: en }
-  - { alias: Lens Luxation Glaucoma, language: en }
-  - { alias: 繼發性眼壓過高, language: zh }
-  - { alias: 次發性青光眼, language: zh }
-
+  - alias: Uveitis-induced Glaucoma
+    language: en
+  - alias: Lens Luxation Glaucoma
+    language: en
+  - alias: 繼發性眼壓過高
+    language: zh
+  - alias: 次發性青光眼
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓青光眼多數為續發性。慢性淋巴漿細胞性葡萄膜炎與眼內淋巴瘤為主要原因。
-
 etiology:
   categories:
     - name: 葡萄膜炎相關
@@ -33,7 +34,6 @@ etiology:
       examples:
         - 眼內腫瘤 (淋巴瘤、黑色素瘤)
         - 前房出血 (hyphema)
-
 clinicalSigns:
   early:
     - 眼壓升高合併原發疾病症狀
@@ -44,7 +44,6 @@ clinicalSigns:
     - 視力喪失
     - 瞳孔異常 (取決於原因)
     - 眼球腫大 (慢性)
-
 diagnosis:
   primaryTests:
     - name: 眼壓測量
@@ -53,7 +52,6 @@ diagnosis:
       notes: 評估前房細胞/蛋白滲出、晶體位置、眼內腫塊
     - name: 眼部超音波
       notes: 角膜混濁無法透視時評估眼內結構。排除腫瘤與視網膜剝離
-
 treatment:
   principles:
     - 治療根本原因為關鍵
@@ -65,41 +63,77 @@ treatment:
     - 晶體脫位：手術摘除
     - 眼內腫瘤：眼球摘除送病理檢查
     - 注意：葡萄膜炎性青光眼禁用前列腺素類似物 (加重炎症)
-
 prognosis: 取決於根本原因。葡萄膜炎控制良好者預後較佳。晶體脫位手術後預後中等。眼內腫瘤性青光眼需早期眼球摘除。慢性繼發性青光眼預後謹慎，視力保留率低。
-
-
 guidelineRefs:
   - sourceOrg: Clinical microbiology reviews
-    title: "Viral infections and pathogenesis of glaucoma: a comprehensive review."
+    title: 'Viral infections and pathogenesis of glaucoma: a comprehensive review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10870729/
     type: review
-    pmid: "37966199"
+    pmid: '37966199'
     relevance: primary
   - sourceOrg: Veterinary ophthalmology
-    title: "Looking into the future: Gene and cell therapies for glaucoma."
+    title: 'Looking into the future: Gene and cell therapies for glaucoma.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7979454/
     type: review
-    pmid: "33411993"
+    pmid: '33411993'
     relevance: primary
   - sourceOrg: Veterinary world
-    title: Retrospective study of treatment outcomes and complications of cyclocryotherapy in 58 glaucoma-affected dogs from 2018 to 2023.
+    title: >-
+      Retrospective study of treatment outcomes and complications of cyclocryotherapy in 58 glaucoma-affected dogs from
+      2018 to 2023.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12056913/
     type: research
-    pmid: "40342753"
+    pmid: '40342753'
     relevance: supporting
   - sourceOrg: Neural regeneration research
     title: Single-cell RNA sequencing analysis of the retina under acute high intraocular pressure.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11090430/
     type: research
-    pmid: "38526288"
+    pmid: '38526288'
     relevance: supporting
   - sourceOrg: Acta ophthalmologica
-    title: "The prophylactic value of TNF-&#x3b1; inhibitors against retinal cell apoptosis and optic nerve axon loss after corneal surgery or trauma."
+    title: >-
+      The prophylactic value of TNF-&#x3b1; inhibitors against retinal cell apoptosis and optic nerve axon loss after
+      corneal surgery or trauma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10997738/
     type: research
-    pmid: "37803488"
+    pmid: '37803488'
     relevance: supporting
 pubmedQueries:
   - query: '"secondary glaucoma" AND (veterinary OR canine OR feline) AND ("uveitis" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: blindness
+    frequency: uncommon
+  - symptomId: red-eye
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: common
+diagnosticAlgorithm:
+  title: 續發性青光眼 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - blindness 相關症狀
+        - red-eye 相關症狀
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 眼壓測量
+          notes: IOP 升高。需結合眼內檢查找出根本原因
+        - name: 裂隙燈 + 眼底檢查
+          notes: 評估前房細胞/蛋白滲出、晶體位置、眼內腫塊
+        - name: 眼部超音波
+          notes: 角膜混濁無法透視時評估眼內結構。排除腫瘤與視網膜剝離
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療根本原因為關鍵
+        - 同時控制眼壓
+        - 部分原因 (腫瘤) 可能需眼球摘除
+ddxSource: auto-generated

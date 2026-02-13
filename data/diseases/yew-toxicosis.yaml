@@ -3,11 +3,11 @@ nameEn: Yew Toxicosis
 nameZh: 紅豆杉中毒
 bodySystem: toxicology
 description: 由紅豆杉屬植物含taxine生物鹼引起的致命性中毒,所有部位(除假種皮)均劇毒。迅速引起心臟傳導阻滯、心律不整及心臟驟停,死亡率極高。
-
 aliases:
-  - { alias: 紫杉中毒, language: zh }
-  - { alias: Taxus Poisoning, language: en }
-
+  - alias: 紫杉中毒
+    language: zh
+  - alias: Taxus Poisoning
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少接觸,但同樣高度敏感
-
 etiology:
   categories:
     - name: 毒性植物
@@ -30,7 +29,6 @@ etiology:
         - Taxine A和B(心臟毒性生物鹼)
         - 針葉、樹皮、種子均含高濃度毒素
         - 紅色假種皮(Aril)無毒,但種子劇毒
-
 clinicalSigns:
   early:
     - 攝食後30分鐘至數小時內發作
@@ -43,46 +41,84 @@ clinicalSigns:
     - 呼吸困難、發紺
     - 昏迷、癲癇
     - 心臟驟停、猝死(常在數小時內)
-
 diagnosis:
   primaryTests:
     - name: 病史及現場調查
-      notes: "確認接觸紅豆杉植物,葉片或枝條殘留於嘔吐物或胃內容物"
+      notes: 確認接觸紅豆杉植物,葉片或枝條殘留於嘔吐物或胃內容物
     - name: 心電圖
-      notes: "心搏過緩、QRS波增寬、PR間期延長、心室性心律不整"
+      notes: 心搏過緩、QRS波增寬、PR間期延長、心室性心律不整
     - name: 血液生化
-      notes: "多數正常,嚴重病例可見代謝性酸中毒、高鉀血症"
+      notes: 多數正常,嚴重病例可見代謝性酸中毒、高鉀血症
     - name: Taxine檢測
-      notes: "胃內容物或血液,專業實驗室,臨床少用(無法即時)"
+      notes: 胃內容物或血液,專業實驗室,臨床少用(無法即時)
   differentialDiagnoses:
     - 洋地黃(Digitalis)中毒
     - 鉀離子過高
     - 其他心臟毒性植物(夾竹桃)
     - 原發性心臟病
     - 鈣離子通道阻斷劑中毒
-
 treatment:
   medical:
     - 緊急去污:
-      - Apomorphine 0.04 mg/kg IV催吐(若攝食<1小時且意識清醒)
-      - 活性碳 1-4 g/kg PO,每4-6小時重複(連續24-48小時)
+        - Apomorphine 0.04 mg/kg IV催吐(若攝食<1小時且意識清醒)
+        - 活性碳 1-4 g/kg PO,每4-6小時重複(連續24-48小時)
     - 心律不整治療:
-      - Atropine 0.02-0.04 mg/kg IV(心搏過緩)
-      - Lidocaine 2-4 mg/kg IV bolus,後50-75 μg/kg/min CRI(心室性心律不整)
-      - 心臟節律器(嚴重傳導阻滯)
+        - Atropine 0.02-0.04 mg/kg IV(心搏過緩)
+        - Lidocaine 2-4 mg/kg IV bolus,後50-75 μg/kg/min CRI(心室性心律不整)
+        - 心臟節律器(嚴重傳導阻滯)
     - 支持療法:
-      - 靜脈輸液:LRS,糾正酸鹼及電解質
-      - 高鉀血症:Glucose 0.5-1 g/kg IV + Regular insulin 0.25-0.5 U/kg
-      - 氧氣治療
+        - 靜脈輸液:LRS,糾正酸鹼及電解質
+        - 高鉀血症:Glucose 0.5-1 g/kg IV + Regular insulin 0.25-0.5 U/kg
+        - 氧氣治療
     - 無特效解毒劑
   critical:
     - CPR準備,24小時心電監測
-
 prognosis:
-  general: "預後極差,死亡率60-90%。多數死亡發生於攝食後2-5小時內。若能存活最初24小時且心律恢復正常,預後改善。成功催吐及活性碳給予可顯著提升存活率。快速就醫及積極支持治療至關重要。"
-
+  general: 預後極差,死亡率60-90%。多數死亡發生於攝食後2-5小時內。若能存活最初24小時且心律恢復正常,預後改善。成功催吐及活性碳給予可顯著提升存活率。快速就醫及積極支持治療至關重要。
 prevention:
   - 庭園中移除紅豆杉植物
   - 避免修剪後枝葉堆放於寵物可及處
   - 散步時監督,避免啃咬觀賞植物
   - 乾燥植株毒性不減,園藝廢棄物妥善處理
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: trembling
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 紅豆杉中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - ataxia 相關症狀
+        - trembling 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史及現場調查
+          notes: 確認接觸紅豆杉植物,葉片或枝條殘留於嘔吐物或胃內容物
+        - name: 心電圖
+          notes: 心搏過緩、QRS波增寬、PR間期延長、心室性心律不整
+        - name: 血液生化
+          notes: 多數正常,嚴重病例可見代謝性酸中毒、高鉀血症
+ddxSource: auto-generated

@@ -3,13 +3,15 @@ nameEn: Ear Mites
 nameZh: 耳疥蟲
 bodySystem: dermatology
 description: 耳道寄生蟲感染，最常見病原為 Otodectes cynotis。蟲體在耳道表面取食耳垢與組織液，引起劇烈搔癢與大量深色乾燥耳垢。高度傳染性，常見於幼年動物與多動物家庭。
-
 aliases:
-  - { alias: Otodectes cynotis, language: en }
-  - { alias: Otodectic Mange, language: en }
-  - { alias: 耳蟎, language: zh }
-  - { alias: 耳疥蟎, language: zh }
-
+  - alias: Otodectes cynotis
+    language: en
+  - alias: Otodectic Mange
+    language: en
+  - alias: 耳蟎
+    language: zh
+  - alias: 耳疥蟎
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓極為常見，尤其幼貓。約 50% 的貓外耳炎由耳疥蟲引起。
-
 etiology:
   categories:
     - name: 寄生蟲
@@ -25,7 +26,6 @@ etiology:
         - Otodectes cynotis (最常見)
         - 生活週期約 3 週
         - 高度傳染性 (直接接觸傳播)
-
 clinicalSigns:
   early:
     - 劇烈耳部搔癢 (甩頭、抓耳)
@@ -35,14 +35,12 @@ clinicalSigns:
     - 耳廓皮膚搔抓損傷
     - 繼發性細菌或酵母菌感染
     - 耳血腫 (搖頭過度)
-
 diagnosis:
   primaryTests:
     - name: 耳鏡檢查
       notes: 可直接見到移動中的白色蟲體。大量深色耳垢
     - name: 耳垢顯微鏡檢查
       notes: 礦物油製備後見到蟲體與卵
-
 treatment:
   principles:
     - 殺蟲治療
@@ -53,21 +51,75 @@ treatment:
     - Fluralaner (Bravecto) 或 Sarolaner 全身性殺蟲
     - 耳道清潔去除耳垢
     - 家中所有犬貓同時治療
-
 prognosis: 預後極佳。適當驅蟲治療 1-2 個治療週期即可痊癒。未同時治療同居動物可能反覆感染。
-
-
 guidelineRefs:
   - sourceOrg: Drug delivery
-    title: "Sustained release ivermectin-loaded solid lipid dispersion for subcutaneous delivery: in vitro and in vivo evaluation."
+    title: >-
+      Sustained release ivermectin-loaded solid lipid dispersion for subcutaneous delivery: in vitro and in vivo
+      evaluation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8240974/
     type: research
-    pmid: "28282989"
+    pmid: '28282989'
   - sourceOrg: Veterinary parasitology
     title: Efficacy and innocuity of lotilaner in the treatment of otodectic mange in ferrets.
     url: https://pubmed.ncbi.nlm.nih.gov/39299042/
     type: research
-    pmid: "39299042"
+    pmid: '39299042'
 pubmedQueries:
   - query: '"ear mites" OR "Otodectes" AND (veterinary OR canine OR feline) AND ("treatment" OR "isoxazoline")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 耳疥蟲感染 診斷流程
+  steps:
+    - step: 1
+      action: 臨床懷疑
+      details: 耳部搔癢+深色耳道分泌物+同居動物症狀
+      findings:
+        - 劇烈耳部搔癢
+        - 深褐色咖啡渣樣分泌物
+        - 同居動物類似症狀
+        - 搔癢反射陽性
+    - step: 2
+      action: 耳鏡檢查
+      details: 直接觀察耳道中白色移動蟲體
+      findings:
+        - 白色蟲體在分泌物中移動
+        - 耳道紅腫
+        - 分泌物量多
+        - 鼓膜完整性評估
+    - step: 3
+      action: 顯微鏡確認
+      details: 耳道分泌物礦物油塗片檢查
+      findings:
+        - 成蟲（8隻腳）
+        - 若蟲
+        - 蟲卵
+        - 排除其他蟎蟲
+    - step: 4
+      action: 治療與追蹤
+      details: 殺蟲治療+同居動物同治
+      findings:
+        - 選擇系統性殺蟲藥
+        - 耳道清潔
+        - 所有同居動物治療
+        - 3週後複查
+clinicalPearls:
+  - 深褐色咖啡渣樣耳道分泌物+劇烈搔癢=首先考慮耳疥蟲
+  - 所有同居動物必須同時治療——這是治療失敗最常見原因
+  - 現代isoxazoline類藥物（Bravecto等）單次即有效，已取代傳統多次治療
+  - Ivermectin對Collie和相關品種可能有致命毒性（MDR1基因突變）
+  - 耳血腫常是未治療耳疥蟲搔癢的繼發結果
+monitoringItems:
+  - 治療後3週複查耳道（完整生活週期後）
+  - 耳道分泌物追蹤
+  - 搔癢症狀改善
+  - 同居動物症狀
+  - 繼發感染控制
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: otitis-externa
+    frequency: common
+ddxSource: book

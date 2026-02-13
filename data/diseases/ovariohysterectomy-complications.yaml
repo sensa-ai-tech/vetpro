@@ -3,12 +3,13 @@ nameEn: Ovariohysterectomy Complications
 nameZh: 子宮卵巢切除術併發症
 bodySystem: other
 description: 犬貓絕育手術後可能發生的併發症,包括出血、感染、縫合線反應、殘餘卵巢症候群等。早期識別及處理可降低嚴重性。
-
 aliases:
-  - { alias: OVH併發症, language: zh }
-  - { alias: Spay complications, language: en }
-  - { alias: 絕育手術併發症, language: zh }
-
+  - alias: OVH併發症
+    language: zh
+  - alias: Spay complications
+    language: en
+  - alias: 絕育手術併發症
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓科動物術後感染率相對較低
-
 etiology:
   categories:
     - name: 手術技術相關
@@ -31,7 +31,6 @@ etiology:
         - 傷口舔舐
         - 過早活動
         - 縫線過敏反應
-
 clinicalSigns:
   early:
     - 切口腫脹或滲液
@@ -41,65 +40,88 @@ clinicalSigns:
     - 腹腔內出血(黏膜蒼白、心跳加快)
     - 傷口裂開或化膿
     - 殘餘卵巢症候群(持續發情行為)
-
 diagnosis:
   primaryTests:
     - name: 傷口檢查
-      notes: "評估紅腫熱痛、分泌物性質、縫線完整性"
+      notes: 評估紅腫熱痛、分泌物性質、縫線完整性
     - name: 全血計數(CBC)
-      notes: "白血球升高(感染)或PCV下降(出血)"
+      notes: 白血球升高(感染)或PCV下降(出血)
     - name: 腹腔超音波
-      notes: "評估腹腔積液、殘餘組織或血腫"
+      notes: 評估腹腔積液、殘餘組織或血腫
   differentialDiagnoses:
     - 正常術後發炎反應
     - 縫線肉芽腫
     - 術後疝氣
-
 treatment:
   medical:
     - 抗生素治療:Cephalexin 22-30 mg/kg PO q12h,療程7-14天
     - 止痛藥:Carprofen 2.2 mg/kg PO q12h或Meloxicam 0.1 mg/kg SC初劑量,後0.05 mg/kg PO q24h
     - 傷口每日清潔:稀釋Chlorhexidine溶液(0.05%)
     - 嚴重出血:靜脈輸液、血液製劑、緊急剖腹探查
-
 prognosis:
-  general: "大多數併發症經適當處理預後良好。出血或腹腔感染若延遲治療可能危及生命,殘餘卵巢需再次手術移除。"
-
+  general: 大多數併發症經適當處理預後良好。出血或腹腔感染若延遲治療可能危及生命,殘餘卵巢需再次手術移除。
 prevention:
   - 術前完整體檢及凝血功能評估
   - 精準手術技術及完整血管結紮
   - 術後配戴伊莉莎白項圈防止舔舐
   - 限制活動7-10天並定期傷口檢查
-
-
 guidelineRefs:
   - sourceOrg: Acta veterinaria Scandinavica
-    title: "Postoperative complications and antibiotic use in dogs with pyometra: a retrospective review of 140 cases (2019)."
+    title: 'Postoperative complications and antibiotic use in dogs with pyometra: a retrospective review of 140 cases (2019).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9987112/
     type: review
-    pmid: "36879277"
+    pmid: '36879277'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
     title: Gonad-Sparing Surgical Sterilization in Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7303261/
     type: review
-    pmid: "32596276"
+    pmid: '32596276'
     relevance: supporting
   - sourceOrg: Brazilian journal of veterinary medicine
-    title: "Fetal dystocia in guinea pigs: A case report."
+    title: 'Fetal dystocia in guinea pigs: A case report.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11244642/
     type: case-report
-    pmid: "39006122"
+    pmid: '39006122'
     relevance: supporting
   - sourceOrg: Veterinary and animal science
-    title: "The 1-1-1 technique: A modified novel approach to feline ovariohysterectomy with minimal incision, rapid recovery and antibiotic free outcomes."
+    title: >-
+      The 1-1-1 technique: A modified novel approach to feline ovariohysterectomy with minimal incision, rapid recovery
+      and antibiotic free outcomes.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12874270/
     type: research
-    pmid: "41659246"
+    pmid: '41659246'
     relevance: supporting
   - sourceOrg: Veterinary medicine and science
-    title: "Suspected Feline Calicivirus Infection Triggering Ulcerative Oral and Skin Lesions in Cats Following Routine Ovariohysterectomy: A Postoperative Risk Assessment."
+    title: >-
+      Suspected Feline Calicivirus Infection Triggering Ulcerative Oral and Skin Lesions in Cats Following Routine
+      Ovariohysterectomy: A Postoperative Risk Assessment.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12305450/
     type: research
-    pmid: "40728089"
+    pmid: '40728089'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: common
+diagnosticAlgorithm:
+  title: 子宮卵巢切除術併發症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pallor-cyanosis 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 傷口檢查
+          notes: 評估紅腫熱痛、分泌物性質、縫線完整性
+        - name: 全血計數(CBC)
+          notes: 白血球升高(感染)或PCV下降(出血)
+        - name: 腹腔超音波
+          notes: 評估腹腔積液、殘餘組織或血腫
+ddxSource: auto-generated

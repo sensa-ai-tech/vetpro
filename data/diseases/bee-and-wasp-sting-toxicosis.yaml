@@ -2,14 +2,18 @@ slug: bee-and-wasp-sting-toxicosis
 nameEn: Bee and Wasp Sting Toxicosis
 nameZh: 蜂螫中毒
 bodySystem: toxicology
-description: 蜂螫 (bee/wasp sting) 毒素可引起局部疼痛腫脹或全身性過敏反應 (anaphylaxis)。蜜蜂毒液含磷脂酶 A2、melittin 等成分，黃蜂毒液含 antigen 5 與磷脂酶。多重螫傷可引起直接毒性效應（溶血、橫紋肌溶解、腎衰竭）。
-
+description: >-
+  蜂螫 (bee/wasp sting) 毒素可引起局部疼痛腫脹或全身性過敏反應 (anaphylaxis)。蜜蜂毒液含磷脂酶 A2、melittin 等成分，黃蜂毒液含 antigen 5
+  與磷脂酶。多重螫傷可引起直接毒性效應（溶血、橫紋肌溶解、腎衰竭）。
 aliases:
-  - { alias: 蜜蜂螫傷, language: zh }
-  - { alias: 黃蜂螫傷, language: zh }
-  - { alias: Hymenoptera Envenomation, language: en }
-  - { alias: Bee Sting Reaction, language: en }
-
+  - alias: 蜜蜂螫傷
+    language: zh
+  - alias: 黃蜂螫傷
+    language: zh
+  - alias: Hymenoptera Envenomation
+    language: en
+  - alias: Bee Sting Reaction
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓蜂螫較犬少見。爪子與面部為常見螫傷部位。過敏反應可能發生。
-
 etiology:
   categories:
     - name: 毒液成分
@@ -31,7 +34,6 @@ etiology:
         - 局部反應（腫脹、疼痛）
         - 全身性過敏反應（anaphylaxis）
         - 大量毒素直接毒性（多重螫傷）
-
 clinicalSigns:
   early:
     - 螫傷部位急性腫脹疼痛
@@ -44,7 +46,6 @@ clinicalSigns:
     - 嘔吐、腹瀉
     - 多重螫傷：溶血、橫紋肌溶解、急性腎衰竭
     - DIC
-
 diagnosis:
   primaryTests:
     - name: 臨床檢查與病史
@@ -56,7 +57,6 @@ diagnosis:
     - CK（橫紋肌溶解）
     - 腎功能（多重螫傷）
     - 凝血功能
-
 treatment:
   principles:
     - 局部反應以支持為主
@@ -72,9 +72,51 @@ treatment:
     - IV 輸液（休克復甦）
     - 多重螫傷：IV 輸液利尿（預防肌紅蛋白/血紅蛋白腎病）
     - 監測腎功能 48 小時
-
 prognosis: 單一蜂螫局部反應預後極佳。全身性過敏反應及時 epinephrine 治療預後良好。多重螫傷（>20 處）預後取決於毒素總量與腎功能。口腔/咽喉螫傷因氣道腫脹需密切監測。
-
 pubmedQueries:
   - query: '"bee sting" OR "wasp sting" AND (veterinary OR canine OR feline) AND ("anaphylaxis" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 蜂螫中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - dehydration 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床檢查與病史
+          notes: 確認蜂螫部位。檢查是否有蜜蜂螫針殘留（需取出）。評估全身性過敏反應徵象
+        - name: 生命徵象監測
+          notes: 血壓、心率、呼吸評估。過敏反應可在數分鐘內發展
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC（溶血、血小板減少）
+        - CK（橫紋肌溶解）
+        - 腎功能（多重螫傷）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 局部反應以支持為主
+        - 過敏反應需緊急 epinephrine
+        - 多重螫傷需積極支持
+ddxSource: auto-generated

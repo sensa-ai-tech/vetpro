@@ -3,12 +3,13 @@ nameEn: Lung Carcinoma
 nameZh: 肺癌
 bodySystem: oncology
 description: 肺部的原發性惡性腫瘤，犬以腺癌最常見。多數為單發肺葉腫塊。需與轉移性肺腫瘤鑑別。早期單發腫塊手術切除預後中等。
-
 aliases:
-  - { alias: "Primary Lung Tumor", language: en }
-  - { alias: "Pulmonary Carcinoma", language: en }
-  - { alias: "原發性肺腫瘤", language: zh }
-
+  - alias: Primary Lung Tumor
+    language: en
+  - alias: Pulmonary Carcinoma
+    language: en
+  - alias: 原發性肺腫瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,14 +17,12 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓偶見。腺癌與鱗狀上皮細胞癌。
-
 etiology:
   categories:
     - name: 腫瘤性
       examples:
         - 肺上皮細胞惡性增生
         - 二手煙可能為危險因子（研究中）
-
 clinicalSigns:
   early:
     - 慢性咳嗽
@@ -34,7 +33,6 @@ clinicalSigns:
     - 咳血
     - 消瘦
     - 跛行（肥大性骨病或趾端轉移）
-
 diagnosis:
   primaryTests:
     - name: 胸腔 X 光（三視位）
@@ -43,7 +41,6 @@ diagnosis:
       notes: 評估腫塊大小與淋巴結轉移
     - name: 細胞學
       notes: CT 引導穿刺或支氣管灌洗
-
 treatment:
   principles:
     - 手術肺葉切除
@@ -53,36 +50,79 @@ treatment:
     - 分期確認單發
     - 術後化療（不完全切除或轉移時）
     - Vinorelbine、Carboplatin
-
 prognosis: 單發 < 5 cm 完全切除中位存活 > 1 年。大腫塊或淋巴結轉移預後差。趾端轉移（犬特有）提示原發肺腫瘤。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
     title: Canine lung carcinoma-A descriptive review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11788302/
     type: review
-    pmid: "39902337"
+    pmid: '39902337'
   - sourceOrg: Frontiers in oncology
-    title: "Progression-free survival estimation of docetaxel-based second-line treatment for advanced non-small cell lung cancer: a pooled analysis from 18 randomized control trials."
+    title: >-
+      Progression-free survival estimation of docetaxel-based second-line treatment for advanced non-small cell lung
+      cancer: a pooled analysis from 18 randomized control trials.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11130461/
     type: review
-    pmid: "38807763"
+    pmid: '38807763'
   - sourceOrg: Frontiers in oncology
-    title: "Everything Old Is New Again: Drug Repurposing Approach for Non-Small Cell Lung Cancer Targeting MAPK Signaling Pathway."
+    title: >-
+      Everything Old Is New Again: Drug Repurposing Approach for Non-Small Cell Lung Cancer Targeting MAPK Signaling
+      Pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8526962/
     type: review
-    pmid: "34692523"
+    pmid: '34692523'
   - sourceOrg: Frontiers in immunology
-    title: "Cytoplasmic DNAs: Sources, sensing, and roles in the development of lung inflammatory diseases and cancer."
+    title: 'Cytoplasmic DNAs: Sources, sensing, and roles in the development of lung inflammatory diseases and cancer.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10130589/
     type: review
-    pmid: "37122745"
+    pmid: '37122745'
   - sourceOrg: International journal of molecular sciences
     title: Bilayer Forming Phospholipids as Targets for Cancer Therapy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9100777/
     type: review
-    pmid: "35563655"
+    pmid: '35563655'
 pubmedQueries:
   - query: '"lung carcinoma" AND (veterinary OR canine OR feline) AND ("lobectomy" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: haemoptysis
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肺癌 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - weight-loss 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸腔 X 光（三視位）
+          notes: 單發或多發肺葉腫塊
+        - name: CT
+          notes: 評估腫塊大小與淋巴結轉移
+        - name: 細胞學
+          notes: CT 引導穿刺或支氣管灌洗
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術肺葉切除
+        - 單發小腫塊預後較佳
+ddxSource: auto-generated

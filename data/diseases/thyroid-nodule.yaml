@@ -3,11 +3,11 @@ nameEn: Thyroid Nodule
 nameZh: 甲狀腺結節
 bodySystem: endocrine
 description: 甲狀腺局部腫塊或結節,可為良性腺瘤、增生性結節、囊腫或惡性癌症,貓常見功能性腺瘤導致甲狀腺亢進。
-
 aliases:
-  - { alias: 甲狀腺腫塊, language: zh }
-  - { alias: Thyroid mass, language: en }
-
+  - alias: 甲狀腺腫塊
+    language: zh
+  - alias: Thyroid mass
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓甲狀腺結節常見,多為功能性良性腺瘤導致甲狀腺亢進
-
 etiology:
   categories:
     - name: 良性病變
@@ -35,7 +34,6 @@ etiology:
       examples:
         - 老年(貓狗皆好發)
         - 碘攝取異常(貓,爭議性)
-
 clinicalSigns:
   early:
     - 頸部可觸及腫塊
@@ -45,76 +43,116 @@ clinicalSigns:
     - 甲狀腺亢進症狀(功能性,貓):嘔吐、腹瀉、心搏過速
     - 大型腫塊壓迫症狀:吞嚥困難、呼吸困難、咳嗽
     - 惡性腫瘤:轉移(肺、淋巴結)
-
 diagnosis:
   primaryTests:
     - name: 觸診
-      notes: "頸部可觸及單側或雙側腫塊"
+      notes: 頸部可觸及單側或雙側腫塊
     - name: 血清T4
-      notes: "功能性腺瘤時升高(貓>50 nmol/L),非功能性正常或低"
+      notes: 功能性腺瘤時升高(貓>50 nmol/L),非功能性正常或低
     - name: 頸部超音波
-      notes: "評估腫塊大小、血管侵犯、淋巴結轉移"
+      notes: 評估腫塊大小、血管侵犯、淋巴結轉移
     - name: 細針抽吸細胞學
-      notes: "初步區分良惡性,但確診需組織病理"
+      notes: 初步區分良惡性,但確診需組織病理
     - name: 胸腔X光或CT
-      notes: "評估肺部轉移(惡性腫瘤)"
+      notes: 評估肺部轉移(惡性腫瘤)
   differentialDiagnoses:
     - 良性甲狀腺腺瘤
     - 甲狀腺癌
     - 甲狀腺囊腫
     - 頸部淋巴結腫大
     - 唾液腺腫瘤
-
 treatment:
   medical:
     - 功能性腺瘤(貓):
-      - 放射碘治療(I-131, 治癒率>95%)
-      - 手術切除(單側或雙側甲狀腺切除術)
-      - 內科治療(Methimazole 2.5-5 mg PO BID 終生)
+        - 放射碘治療(I-131, 治癒率>95%)
+        - 手術切除(單側或雙側甲狀腺切除術)
+        - 內科治療(Methimazole 2.5-5 mg PO BID 終生)
     - 非功能性良性腺瘤:定期監測或手術切除
     - 犬甲狀腺癌:
-      - 手術切除(若可切除,雙側甲狀腺切除+淋巴結清除)
-      - 放射治療(術後輔助或姑息性)
-      - 化療(Doxorubicin,效果有限)
-      - 術後甲狀腺素補充(Levothyroxine 0.02 mg/kg PO BID)
-
+        - 手術切除(若可切除,雙側甲狀腺切除+淋巴結清除)
+        - 放射治療(術後輔助或姑息性)
+        - 化療(Doxorubicin,效果有限)
+        - 術後甲狀腺素補充(Levothyroxine 0.02 mg/kg PO BID)
 prognosis:
-  general: "貓功能性腺瘤經放射碘治療預後優良;犬甲狀腺癌預後保守,中位存活時間6-24個月,視腫瘤侵襲性及轉移程度而定。"
-
+  general: 貓功能性腺瘤經放射碘治療預後優良;犬甲狀腺癌預後保守,中位存活時間6-24個月,視腫瘤侵襲性及轉移程度而定。
 prevention:
   - 中老年貓犬定期頸部觸診檢查
   - 貓定期監測T4(>7歲每年檢測)
   - 早期發現結節時評估功能性及良惡性
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in endocrinology
     title: Outcomes of Minimally Invasive Thyroid Surgery - A Systematic Review and Meta-Analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8387875/
     type: review
-    pmid: "34456874"
+    pmid: '34456874'
     relevance: primary
   - sourceOrg: Frontiers in pharmacology
-    title: "Jiajiejian gel ameliorates thyroid nodules through regulation of thyroid hormones and suppression of the (IL-6, TNF-&#x3b1;, IL-1&#x3b2;)/JAK2/STAT3/VEGF pathway."
+    title: >-
+      Jiajiejian gel ameliorates thyroid nodules through regulation of thyroid hormones and suppression of the (IL-6,
+      TNF-&#x3b1;, IL-1&#x3b2;)/JAK2/STAT3/VEGF pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11527726/
     type: research
-    pmid: "39494342"
+    pmid: '39494342'
     relevance: supporting
   - sourceOrg: Tzu chi medical journal
-    title: Comparison of surgical outcome between conventional open thyroidectomy and endoscopic thyroidectomy through axillo-breast approach.
+    title: >-
+      Comparison of surgical outcome between conventional open thyroidectomy and endoscopic thyroidectomy through
+      axillo-breast approach.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7485670/
     type: research
-    pmid: "32955515"
+    pmid: '32955515'
     relevance: supporting
   - sourceOrg: Journal of clinical laboratory analysis
     title: OPG is associated with thyroid nodule development in type 2 diabetes.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9459264/
     type: research
-    pmid: "35870175"
+    pmid: '35870175'
     relevance: supporting
   - sourceOrg: BMC surgery
-    title: "Transaxillary robotic-assisted thyroid surgery: technique and results of a preliminary experience on the Da Vinci Xi platform."
+    title: >-
+      Transaxillary robotic-assisted thyroid surgery: technique and results of a preliminary experience on the Da Vinci
+      Xi platform.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7402570/
     type: research
-    pmid: "31074396"
+    pmid: '31074396'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: polyphagia
+    frequency: common
+  - symptomId: coughing
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 甲狀腺結節 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - dyspnoea 相關症狀
+        - dysphagia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 觸診
+          notes: 頸部可觸及單側或雙側腫塊
+        - name: 血清T4
+          notes: 功能性腺瘤時升高(貓>50 nmol/L),非功能性正常或低
+        - name: 頸部超音波
+          notes: 評估腫塊大小、血管侵犯、淋巴結轉移
+ddxSource: auto-generated

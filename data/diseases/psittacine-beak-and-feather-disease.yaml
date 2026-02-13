@@ -3,20 +3,23 @@ nameEn: Psittacine Beak and Feather Disease
 nameZh: 鸚鵡喙羽症
 bodySystem: infectious
 description: 鸚鵡喙羽症（PBFD）由鸚鵡圓環病毒（BFDV）引起，為鸚鵡類最重要的病毒性疾病之一。病毒攻擊羽毛濾泡與喙角質層上皮細胞及免疫系統，導致進行性羽毛脫落、喙變形及嚴重免疫抑制。
-
 aliases:
-  - { alias: PBFD, language: zh }
-  - { alias: 鸚鵡圓環病毒感染, language: zh }
-  - { alias: 鸚鵡羽毛與喙病, language: zh }
-  - { alias: PBFD, language: en }
-  - { alias: Beak and feather disease virus, language: en }
-  - { alias: Psittacine circovirus, language: en }
-
+  - alias: PBFD
+    language: zh
+  - alias: 鸚鵡圓環病毒感染
+    language: zh
+  - alias: 鸚鵡羽毛與喙病
+    language: zh
+  - alias: PBFD
+    language: en
+  - alias: Beak and feather disease virus
+    language: en
+  - alias: Psittacine circovirus
+    language: en
 species:
   - speciesCommon: bird
     prevalence: common
     notes: 所有鸚鵡科鳥類均可感染。巴丹鸚鵡、灰鸚鵡、虎皮鸚鵡為高風險群。幼鳥感染後死亡率高。在野生鸚鵡族群中也是重大威脅。
-
 etiology:
   categories:
     - name: 病毒性
@@ -31,7 +34,6 @@ etiology:
         - 緊迫
         - 免疫抑制
         - 高密度飼養
-
 clinicalSigns:
   early:
     - 新生長羽毛異常（變形、變色）
@@ -44,7 +46,6 @@ clinicalSigns:
     - 繼發性感染（免疫抑制導致）
     - 體重下降
     - 反覆感染（細菌、真菌）
-
 diagnosis:
   primaryTests:
     - name: PCR 檢測
@@ -53,7 +54,6 @@ diagnosis:
       notes: 偶見病毒包涵體在白血球中。同時可見白血球減少
     - name: 羽毛活檢
       notes: 組織病理學見羽毛濾泡上皮細胞核內包涵體
-
 treatment:
   principles:
     - 無特效抗病毒治療
@@ -68,41 +68,73 @@ treatment:
     - 環境徹底消毒（病毒極耐環境）
     - 新鳥入群前 PCR 篩檢
     - 幼鳥可能自發清除病毒（需追蹤 PCR）
-
 prognosis: 幼鳥急性感染預後不良，死亡率高。慢性型成鳥存活時間較長但生活品質逐漸下降。部分幼鳥可能產生免疫力自發清除病毒（PCR 需連續兩次陰性確認）。嚴重免疫抑制導致的繼發感染為主要死因。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Psittacine Beak and Feather Disease: Global Spread, International Trade, and Conservation Challenges."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Psittacine Beak and Feather Disease: Global Spread, International Trade, and Conservation Challenges.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12560886/
     type: review
-    pmid: "41153875"
+    pmid: '41153875'
     relevance: primary
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Psittacine beak and feather disease in 2 free-living great green macaws: a case report and literature review."
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: 'Psittacine beak and feather disease in 2 free-living great green macaws: a case report and literature review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12003325/
     type: review
-    pmid: "40237412"
+    pmid: '40237412'
     relevance: primary
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Viral Diagnosis in Psittacine Birds: A Scientometric and Systematic Review of 47 Years."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Viral Diagnosis in Psittacine Birds: A Scientometric and Systematic Review of 47 Years.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11171333/
     type: review
-    pmid: "38891593"
+    pmid: '38891593'
     relevance: primary
   - sourceOrg: Archives of virology
-    title: "Beak and feather disease virus in wild and captive parrots: an analysis of geographic and taxonomic distribution and methodological trends."
+    title: >-
+      Beak and feather disease virus in wild and captive parrots: an analysis of geographic and taxonomic distribution
+      and methodological trends.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4947100/
     type: review
-    pmid: "27151279"
+    pmid: '27151279'
     relevance: supporting
   - sourceOrg: Archives of virology
-    title: Prevalence, genotypes, and infection risk factors of psittacine beak and feather disease virus and budgerigar fledgling disease virus in captive birds in Hong Kong.
+    title: >-
+      Prevalence, genotypes, and infection risk factors of psittacine beak and feather disease virus and budgerigar
+      fledgling disease virus in captive birds in Hong Kong.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10997714/
     type: research
-    pmid: "38578455"
+    pmid: '38578455'
     relevance: supporting
 pubmedQueries:
   - query: '"psittacine beak and feather disease" OR "PBFD" AND (diagnosis OR treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 鸚鵡喙羽症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: PCR 檢測
+          notes: 血液或羽毛 PCR 檢測 BFDV DNA。最靈敏且特異的診斷方法
+        - name: 血液塗片
+          notes: 偶見病毒包涵體在白血球中。同時可見白血球減少
+        - name: 羽毛活檢
+          notes: 組織病理學見羽毛濾泡上皮細胞核內包涵體
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 無特效抗病毒治療
+        - 支持療法與預防繼發感染
+        - 隔離防止傳播
+ddxSource: auto-generated

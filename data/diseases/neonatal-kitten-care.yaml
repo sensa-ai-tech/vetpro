@@ -3,17 +3,16 @@ nameEn: Neonatal Kitten Care
 nameZh: 新生幼貓照護
 bodySystem: other
 description: 新生幼貓(出生至2週齡)的綜合照護。幼貓比幼犬更脆弱,體溫調節、血糖維持、免疫功能都較差,需更密集照護及監測,確保存活及健康發育。
-
 aliases:
-  - { alias: 新生貓照護, language: zh }
-  - { alias: Neonatal kitten management, language: en }
-
+  - alias: 新生貓照護
+    language: zh
+  - alias: Neonatal kitten management
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
     notes: 所有新生幼貓都需適當照護
-
 etiology:
   categories:
     - name: 新生幼貓特徵
@@ -22,27 +21,24 @@ etiology:
         - 低血糖易發生
         - 脫水耐受性差
         - 眼耳未開(7-14天開眼)
-
 clinicalSigns:
   early:
     - 健康幼貓:頻繁吸乳、體重每日增加10-15 g
   progressive:
     - 異常:哭鬧、體重未增、低體溫、脫水
-
 diagnosis:
   primaryTests:
     - name: 每日體重監測
-      notes: "出生體重約90-110 g,每日應增加10-15 g"
+      notes: 出生體重約90-110 g,每日應增加10-15 g
     - name: 體溫監測
-      notes: "第1週35.5-36.5°C,第2-3週36.5-37.5°C"
+      notes: 第1週35.5-36.5°C,第2-3週36.5-37.5°C
     - name: 脫水評估
-      notes: "皮膚彈性、黏膜濕潤度"
+      notes: 皮膚彈性、黏膜濕潤度
   differentialDiagnoses:
     - 新生幼貓症候群(fading kitten)
     - 低血糖
     - 低體溫
     - 脫水
-
 treatment:
   medical:
     - 保溫:環境溫度第1週30-32°C,第2週28-30°C
@@ -50,46 +46,69 @@ treatment:
     - 餵食:每2-3小時,母乳或代乳(貓專用配方)
     - 排泄刺激:每次餵食後刺激排泄
     - 低血糖:5%葡萄糖水口服
-
 prognosis:
-  general: "幼貓脆弱,新生期死亡率可達15-40%。適當照護可改善存活率。"
-
+  general: 幼貓脆弱,新生期死亡率可達15-40%。適當照護可改善存活率。
 prevention:
   - 確保初乳攝取
   - 嚴格保溫
   - 頻繁餵食避免低血糖
   - 每日多次體重監測
   - 母貓健康及營養管理
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
-    title: "RECOVER Guidelines: Newborn Resuscitation in Dogs and Cats. Clinical Guidelines."
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
+    title: 'RECOVER Guidelines: Newborn Resuscitation in Dogs and Cats. Clinical Guidelines.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12374490/
     type: guideline
-    pmid: "40847797"
+    pmid: '40847797'
     relevance: primary
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
-    title: "RECOVER Guidelines: Newborn Resuscitation in Dogs and Cats. Evidence and Knowledge Gap Analysis With Treatment Recommendations."
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
+    title: >-
+      RECOVER Guidelines: Newborn Resuscitation in Dogs and Cats. Evidence and Knowledge Gap Analysis With Treatment
+      Recommendations.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12374491/
     type: review
-    pmid: "40847798"
+    pmid: '40847798'
     relevance: primary
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Neonatal Clinical Assessment of the Puppy and Kitten: How to Identify Newborns at Risk?"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Neonatal Clinical Assessment of the Puppy and Kitten: How to Identify Newborns at Risk?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11640698/
     type: review
-    pmid: "39682383"
+    pmid: '39682383'
     relevance: primary
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Fading kitten syndrome: Factors predisposing to 'faders' and treatment options."
+    title: 'Fading kitten syndrome: Factors predisposing to ''faders'' and treatment options.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10845402/
     type: review
-    pmid: "35209774"
+    pmid: '35209774'
     relevance: primary
-  - sourceOrg: "Journal of applied physiology (Bethesda, Md. : 1985)"
+  - sourceOrg: 'Journal of applied physiology (Bethesda, Md. : 1985)'
     title: Surfactant enhances the distribution of ventilation in partially aerated lungs of preterm rabbits.
     url: https://pubmed.ncbi.nlm.nih.gov/41273771/
     type: research
-    pmid: "41273771"
+    pmid: '41273771'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 新生幼貓照護 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - hypothermia-sign 相關症狀
+        - dehydration 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 每日體重監測
+          notes: 出生體重約90-110 g,每日應增加10-15 g
+        - name: 體溫監測
+          notes: 第1週35.5-36.5°C,第2-3週36.5-37.5°C
+        - name: 脫水評估
+          notes: 皮膚彈性、黏膜濕潤度
+ddxSource: auto-generated

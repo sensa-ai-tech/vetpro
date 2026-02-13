@@ -58,6 +58,33 @@ export interface DiseaseYaml {
 
   emergencyNotes?: string;
 
+  // DDX fields
+  diagnosticAlgorithm?: {
+    title: string;
+    steps: Array<{
+      step: number;
+      action: string;
+      details: string;
+      findings: string[];
+    }>;
+  };
+
+  clinicalPearls?: string[];
+  monitoringItems?: string[];
+
+  associatedSymptoms?: Array<{
+    symptomId: string;
+    frequency?: string;
+    timing?: string;
+  }>;
+
+  associatedLabFindings?: Array<{
+    labId: string;
+    frequency?: string;
+  }>;
+
+  ddxSource?: string; // "book" | "auto-generated" | "book-only"
+
   ontologyMappings?: {
     source: string;
     code: string;
@@ -106,6 +133,10 @@ export interface DiseaseDetail {
   prognosis: string | null;
   stagingSystem: unknown;
   emergencyNotes: string | null;
+  diagnosticAlgorithm: unknown;
+  clinicalPearls: string[] | null;
+  monitoringItems: string[] | null;
+  ddxSource: string | null;
   aliases: { alias: string; language: string }[];
   species: {
     speciesCommon: string;

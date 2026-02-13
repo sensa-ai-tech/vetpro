@@ -3,14 +3,17 @@ nameEn: Radiation Therapy Veterinary
 nameZh: 獸醫放射治療
 bodySystem: oncology
 description: 利用游離輻射破壞腫瘤細胞 DNA 的治療方式。可用於根治性、輔助性或姑息性治療。犬貓常見適應症包括鼻腔腫瘤、腦瘤、口腔腫瘤及術後殘留腫瘤。
-
 aliases:
-  - { alias: 放療, language: zh }
-  - { alias: 輻射治療, language: zh }
-  - { alias: Radiation Therapy, language: en }
-  - { alias: Radiotherapy, language: en }
-  - { alias: RT, language: en }
-
+  - alias: 放療
+    language: zh
+  - alias: 輻射治療
+    language: zh
+  - alias: Radiation Therapy
+    language: en
+  - alias: Radiotherapy
+    language: en
+  - alias: RT
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,22 +23,20 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓常見適應症包括鼻腔腫瘤、口腔 SCC、注射部位肉瘤及腦瘤。貓對放射線的急性反應通常與犬相似。
-
 etiology:
   categories:
     - name: 放射治療類型
       examples:
-        - "根治性放療：多次小劑量（16-20 次，每日或隔日）"
-        - "姑息性放療：少次大劑量（3-6 次，每週一次）"
-        - "定位放療 (SRT/SRS)：1-3 次高精度照射"
-        - "術中放射治療 (IORT)：手術中直接照射"
+        - 根治性放療：多次小劑量（16-20 次，每日或隔日）
+        - 姑息性放療：少次大劑量（3-6 次，每週一次）
+        - 定位放療 (SRT/SRS)：1-3 次高精度照射
+        - 術中放射治療 (IORT)：手術中直接照射
     - name: 放射生物學原理
       examples:
         - 游離輻射造成 DNA 雙股斷裂
         - 快速分裂的腫瘤細胞較敏感
-        - "放射線的 4R：修復、再分佈、再氧化、再增殖"
+        - 放射線的 4R：修復、再分佈、再氧化、再增殖
         - 分次照射利用正常組織修復能力優於腫瘤
-
 clinicalSigns:
   early:
     - 照射區域皮膚紅斑
@@ -47,65 +48,81 @@ clinicalSigns:
     - 骨壞死（罕見）
     - 白內障（眼周照射時）
     - 遲發性腦壞死（腦部照射，罕見）
-
 diagnosis:
   primaryTests:
     - name: 治療前評估
-      notes: "完整腫瘤分期。CT/MRI 規劃照射範圍。組織病理確認腫瘤類型"
+      notes: 完整腫瘤分期。CT/MRI 規劃照射範圍。組織病理確認腫瘤類型
     - name: 治療計畫
-      notes: "電腦斷層定位掃描。三維立體順形放射治療計畫。劑量體積直方圖評估"
+      notes: 電腦斷層定位掃描。三維立體順形放射治療計畫。劑量體積直方圖評估
   differentialDiagnoses:
     - 手術治療
     - 化學治療
     - 免疫治療
     - 姑息治療
     - 多模式合併治療
-
 treatment:
   medical:
-    - "根治性方案：48-54 Gy，分 16-20 次，每日或隔日一次"
-    - "姑息性方案：24-36 Gy，分 3-6 次，每週一次"
-    - "SRT/SRS：15-24 Gy 單次或分 3 次"
+    - 根治性方案：48-54 Gy，分 16-20 次，每日或隔日一次
+    - 姑息性方案：24-36 Gy，分 3-6 次，每週一次
+    - SRT/SRS：15-24 Gy 單次或分 3 次
     - 急性副作用管理（皮膚護理、止痛、抗生素）
     - 可合併化療增敏（低劑量 Carboplatin 或 Doxorubicin）
     - 每次治療需短時全身麻醉
-
 prognosis:
-  general: "預後因腫瘤類型及治療意圖而異。犬鼻腔腫瘤放射治療中位生存時間約 12-18 個月。姑息性放療可有效緩解疼痛及改善生活品質。定位放療對腦瘤效果良好。"
-
+  general: 預後因腫瘤類型及治療意圖而異。犬鼻腔腫瘤放射治療中位生存時間約 12-18 個月。姑息性放療可有效緩解疼痛及改善生活品質。定位放療對腦瘤效果良好。
 prevention:
   - 治療期間避免陽光直接照射治療區域
   - 定期追蹤評估治療反應及遲發性副作用
-
-
 guidelineRefs:
   - sourceOrg: Journal of extracellular vesicles
-    title: "Minimal information for studies of extracellular vesicles 2018 (MISEV2018): a position statement of the International Society for Extracellular Vesicles and update of the MISEV2014 guidelines."
+    title: >-
+      Minimal information for studies of extracellular vesicles 2018 (MISEV2018): a position statement of the
+      International Society for Extracellular Vesicles and update of the MISEV2014 guidelines.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6322352/
     type: guideline
-    pmid: "30637094"
+    pmid: '30637094'
     relevance: primary
   - sourceOrg: European journal of immunology
     title: Guidelines for the use of flow cytometry and cell sorting in immunological studies (second edition).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7350392/
     type: guideline
-    pmid: "31633216"
+    pmid: '31633216'
     relevance: primary
   - sourceOrg: European journal of immunology
     title: Guidelines for the use of flow cytometry and cell sorting in immunological studies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9165548/
     type: guideline
-    pmid: "29023707"
+    pmid: '29023707'
     relevance: primary
   - sourceOrg: Autophagy
     title: Guidelines for the use and interpretation of assays for monitoring autophagy (3rd edition).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4835977/
     type: guideline
-    pmid: "26799652"
+    pmid: '26799652'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
-    title: "Melanoma of the dog and cat: consensus and guidelines."
+    title: 'Melanoma of the dog and cat: consensus and guidelines.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11026649/
     type: review
-    pmid: "38645640"
+    pmid: '38645640'
     relevance: primary
+associatedSymptoms:
+  - symptomId: alopecia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 獸醫放射治療 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 治療前評估
+          notes: 完整腫瘤分期。CT/MRI 規劃照射範圍。組織病理確認腫瘤類型
+        - name: 治療計畫
+          notes: 電腦斷層定位掃描。三維立體順形放射治療計畫。劑量體積直方圖評估
+ddxSource: auto-generated

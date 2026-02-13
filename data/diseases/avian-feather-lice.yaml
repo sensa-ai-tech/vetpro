@@ -3,19 +3,21 @@ nameEn: Avian Feather Lice
 nameZh: 禽類羽蝨
 bodySystem: dermatology
 description: 禽類羽蝨為永久性外寄生蟲，以羽毛碎片、皮屑與羽粉為食。輕度感染多無明顯症狀，大量感染可導致羽毛損傷、搔癢與不適。
-
 aliases:
-  - { alias: 鳥類羽毛蝨, language: zh }
-  - { alias: 禽蝨, language: zh }
-  - { alias: Bird lice, language: en }
-  - { alias: Feather louse infestation, language: en }
-  - { alias: Mallophaga, language: en }
-
+  - alias: 鳥類羽毛蝨
+    language: zh
+  - alias: 禽蝨
+    language: zh
+  - alias: Bird lice
+    language: en
+  - alias: Feather louse infestation
+    language: en
+  - alias: Mallophaga
+    language: en
 species:
   - speciesCommon: bird
     prevalence: common
     notes: 所有鳥種均可感染。野生鳥類感染率極高。寵物鳥較少見但新進鳥或接觸野鳥後可感染。不同鳥種有不同的蝨種，宿主專一性高。
-
 etiology:
   categories:
     - name: 寄生蟲
@@ -29,7 +31,6 @@ etiology:
         - 直接接觸感染鳥
         - 共用設備（少見，因離體存活期短）
         - 野鳥接觸
-
 clinicalSigns:
   early:
     - 輕度不安或搔癢
@@ -41,49 +42,65 @@ clinicalSigns:
     - 大量感染時精神沉鬱
     - 羽毛品質下降
     - 幼鳥生長受影響
-
 diagnosis:
   primaryTests:
     - name: 肉眼檢查
-      notes: "分開羽毛可見 1-3mm 長的扁平蟲體。以強光照射羽毛表面可見蝨體移動"
+      notes: 分開羽毛可見 1-3mm 長的扁平蟲體。以強光照射羽毛表面可見蝨體移動
     - name: 羽毛檢查
-      notes: "拔取受損羽毛鏡檢可見蟲卵（nits）附著於羽軸"
+      notes: 拔取受損羽毛鏡檢可見蟲卵（nits）附著於羽軸
   differentialDiagnoses:
     - 紅蟎感染
     - 皮膚真菌感染
     - 自咬症
     - 營養性羽毛損傷
-
 treatment:
   medical:
     - Ivermectin 0.2 mg/kg PO 或局部點滴，每 10-14 天，共 2-3 次
     - 合成除蟲菊精噴劑（環境與鳥體）
     - Fipronil spray 局部使用（小型鳥慎用，中毒報告）
     - 同群鳥同時治療
-
 prognosis:
-  general: "預後極佳。驅蟲治療效果迅速。環境處理通常不需太積極（蝨體離體存活期短）。"
-
+  general: 預後極佳。驅蟲治療效果迅速。環境處理通常不需太積極（蝨體離體存活期短）。
 prevention:
   - 新進鳥隔離檢查
   - 避免與野鳥接觸
   - 定期檢查羽毛
   - 維持良好衛生
-
-
 guidelineRefs:
   - sourceOrg: Communications biology
     title: Extensive host-switching of avian feather lice following the Cretaceous-Paleogene mass extinction event.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6884534/
     type: research
-    pmid: "31815200"
+    pmid: '31815200'
   - sourceOrg: PeerJ
-    title: Mitochondrial genomes of Columbicola feather lice are highly fragmented, indicating repeated evolution of minicircle-type genomes in parasitic lice.
+    title: >-
+      Mitochondrial genomes of Columbicola feather lice are highly fragmented, indicating repeated evolution of
+      minicircle-type genomes in parasitic lice.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7098387/
     type: research
-    pmid: "32231878"
+    pmid: '32231878'
   - sourceOrg: Proceedings. Biological sciences
     title: Extensive in situ radiation of feather lice on tinamous.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7062024/
     type: research
-    pmid: "32070251"
+    pmid: '32070251'
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: common
+diagnosticAlgorithm:
+  title: 禽類羽蝨 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 肉眼檢查
+          notes: 分開羽毛可見 1-3mm 長的扁平蟲體。以強光照射羽毛表面可見蝨體移動
+        - name: 羽毛檢查
+          notes: 拔取受損羽毛鏡檢可見蟲卵（nits）附著於羽軸
+ddxSource: auto-generated

@@ -3,13 +3,15 @@ nameEn: Pyelonephritis
 nameZh: 腎盂腎炎
 bodySystem: renal
 description: 細菌感染上行至腎盂與腎實質引起的感染性腎臟疾病，為犬貓急性腎損傷與慢性腎臟病的重要可治療原因。
-
 aliases:
-  - { alias: Kidney Infection, language: en }
-  - { alias: Upper Urinary Tract Infection, language: en }
-  - { alias: 上泌尿道感染, language: zh }
-  - { alias: 腎臟感染, language: zh }
-
+  - alias: Kidney Infection
+    language: en
+  - alias: Upper Urinary Tract Infection
+    language: en
+  - alias: 上泌尿道感染
+    language: zh
+  - alias: 腎臟感染
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 老年貓較常見，尤其合併 CKD（尿液濃縮能力下降降低防禦力）。CKD 貓約 30% 可偵測到無症狀菌尿。
-
 etiology:
   categories:
     - name: 上行性感染 (最常見路徑)
@@ -43,9 +44,9 @@ etiology:
         - 膀胱輸尿管逆流 (vesicoureteral reflux)
         - 長期留置尿管
         - 免疫抑制藥物
-
-pathophysiology: 致病菌自下泌尿道沿輸尿管上行至腎盂，定植並侵入腎盂上皮與腎間質。細菌產生的毒素與宿主免疫反應（嗜中性球浸潤、炎症介質釋放）導致腎實質壞死與纖維化。急性期表現為腎腫大、充血、膿腫形成。慢性腎盂腎炎導致進行性腎間質纖維化、腎盂擴張與腎臟萎縮，最終進展為 CKD。單側受侵犯時對側腎臟可代償；雙側感染可導致急性腎衰竭。Proteus 等尿素酶陽性菌將尿素分解為氨，鹼化尿液促進 struvite 結石形成，結石反過來成為感染灶。
-
+pathophysiology: >-
+  致病菌自下泌尿道沿輸尿管上行至腎盂，定植並侵入腎盂上皮與腎間質。細菌產生的毒素與宿主免疫反應（嗜中性球浸潤、炎症介質釋放）導致腎實質壞死與纖維化。急性期表現為腎腫大、充血、膿腫形成。慢性腎盂腎炎導致進行性腎間質纖維化、腎盂擴張與腎臟萎縮，最終進展為
+  CKD。單側受侵犯時對側腎臟可代償；雙側感染可導致急性腎衰竭。Proteus 等尿素酶陽性菌將尿素分解為氨，鹼化尿液促進 struvite 結石形成，結石反過來成為感染灶。
 clinicalSigns:
   early:
     - 發燒
@@ -64,29 +65,27 @@ clinicalSigns:
     - 腎周膿瘍
     - 慢性腎盂腎炎 → CKD 進展
     - 腎臟萎縮（慢性期）
-
 diagnosis:
   primaryTests:
     - name: 尿液培養 + 藥敏試驗
-      notes: "金標準。膀胱穿刺採樣 (cystocentesis) 最佳。>10³ CFU/mL (穿刺) 為陽性。藥敏指導抗生素選擇"
+      notes: 金標準。膀胱穿刺採樣 (cystocentesis) 最佳。>10³ CFU/mL (穿刺) 為陽性。藥敏指導抗生素選擇
     - name: 尿液分析
-      notes: "膿尿 (WBC)、菌尿、血尿、蛋白尿。比重降低 (腎臟濃縮能力受損)。WBC casts 高度提示腎盂腎炎"
+      notes: 膿尿 (WBC)、菌尿、血尿、蛋白尿。比重降低 (腎臟濃縮能力受損)。WBC casts 高度提示腎盂腎炎
     - name: 血液檢查
-      notes: "白血球增多（嗜中性球左移）、BUN/Creatinine 升高（腎損傷時）、CRP/SAA 升高"
+      notes: 白血球增多（嗜中性球左移）、BUN/Creatinine 升高（腎損傷時）、CRP/SAA 升高
   imaging:
     - name: 腹部超音波
-      notes: "腎盂擴張 (pyelectasia)。腎盂回音增強。腎臟腫大 (急性) 或萎縮 (慢性)。腎周膿瘍。輸尿管擴張。結石"
+      notes: 腎盂擴張 (pyelectasia)。腎盂回音增強。腎臟腫大 (急性) 或萎縮 (慢性)。腎周膿瘍。輸尿管擴張。結石
     - name: 腹部 X 光
-      notes: "腎臟大小評估。不透射結石偵測。腎臟形狀不規則 (慢性)"
+      notes: 腎臟大小評估。不透射結石偵測。腎臟形狀不規則 (慢性)
     - name: 排泄性尿路攝影 (IVP) 或 CT 尿路攝影
-      notes: "評估腎臟功能、腎盂擴張程度、輸尿管阻塞。目前多以 CT 取代"
+      notes: 評估腎臟功能、腎盂擴張程度、輸尿管阻塞。目前多以 CT 取代
   additional:
     - 血液培養（懷疑敗血症時）
     - 腎盂液穿刺培養（超音波導引，確認腎盂感染）
     - 電解質（鉀、鈉、氯）
     - 血壓測量
     - 內分泌評估（排除糖尿病、HAC 等促發因素）
-
 treatment:
   principles:
     - 早期積極抗生素治療（依培養藥敏結果）
@@ -95,16 +94,16 @@ treatment:
     - 支持性輸液治療（維持腎灌流）
   medications:
     - name: Amoxicillin-Clavulanate
-      dose: "12.5-25 mg/kg PO BID"
+      dose: 12.5-25 mg/kg PO BID
       notes: 經驗性首選（pending 培養結果）。良好腎臟組織穿透。涵蓋多數 E. coli 與 Gram+
     - name: Enrofloxacin
-      dose: "犬 10-20 mg/kg PO SID；貓 5 mg/kg PO SID（貓需注意視網膜毒性）"
+      dose: 犬 10-20 mg/kg PO SID；貓 5 mg/kg PO SID（貓需注意視網膜毒性）
       notes: Fluoroquinolone。優良腎臟組織濃度。適用於複雜性或抗藥菌株。貓勿超過 5 mg/kg/day
     - name: Marbofloxacin
-      dose: "2.75-5.5 mg/kg PO SID"
+      dose: 2.75-5.5 mg/kg PO SID
       notes: 替代 fluoroquinolone。貓比 enrofloxacin 安全
     - name: Ampicillin
-      dose: "22 mg/kg IV q6-8h"
+      dose: 22 mg/kg IV q6-8h
       notes: 住院靜脈治療。嚴重敗血性腎盂腎炎。常與 enrofloxacin 合併使用
   general:
     - 治療療程至少 4-6 週（較下泌尿道感染更長）
@@ -114,44 +113,104 @@ treatment:
     - 結石移除（若為促發因素）
     - 阻塞解除（輸尿管支架或 SUB device）
     - 潛在內分泌疾病治療
-
-emergencyNotes: 敗血性腎盂腎炎合併急性腎損傷為急症。表現為高熱/低體溫、心搏過速、低血壓、寡尿。治療以積極靜脈輸液、靜脈廣效抗生素（ampicillin + enrofloxacin）、血管加壓素（norepinephrine）支持為主。腎周膿瘍可能需超音波導引引流或手術。雙側阻塞性腎盂腎炎需緊急解除阻塞。
-
+emergencyNotes: >-
+  敗血性腎盂腎炎合併急性腎損傷為急症。表現為高熱/低體溫、心搏過速、低血壓、寡尿。治療以積極靜脈輸液、靜脈廣效抗生素（ampicillin +
+  enrofloxacin）、血管加壓素（norepinephrine）支持為主。腎周膿瘍可能需超音波導引引流或手術。雙側阻塞性腎盂腎炎需緊急解除阻塞。
 prognosis: 急性單純性腎盂腎炎經適當抗生素治療預後良好。慢性腎盂腎炎可能已造成不可逆腎損傷，但控制感染可穩定或減緩 CKD 進展。促發因素未矯正者易復發。敗血性腎盂腎炎合併多重器官功能障礙預後謹慎至差。腎周膿瘍預後取決於是否可有效引流。
-
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: ACVIM consensus statement on the diagnosis and management of urinary tract infections in dogs and cats.
     url: https://pubmed.ncbi.nlm.nih.gov/30515172/
     type: consensus
-    pmid: "30515172"
+    pmid: '30515172'
   - sourceOrg: Veterinary Clinics of North America Small Animal Practice
     title: Pyelonephritis in dogs and cats.
     url: https://pubmed.ncbi.nlm.nih.gov/25542334/
     type: review
-    pmid: "25542334"
+    pmid: '25542334'
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: Bacterial culture and susceptibility results from upper and lower urinary tract samples in dogs and cats.
     url: https://pubmed.ncbi.nlm.nih.gov/33368635/
     type: research
-    pmid: "33368635"
+    pmid: '33368635'
   - sourceOrg: Veterinary medicine international
     title: Ultrasonography of the Kidneys in Healthy and Diseased Camels (Camelus dromedarius).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7596541/
     type: review
-    pmid: "33144934"
+    pmid: '33144934'
     relevance: primary
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Urinary tract infection and subclinical bacteriuria in cats: A clinical update."
+    title: 'Urinary tract infection and subclinical bacteriuria in cats: A clinical update.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6826873/
     type: review
-    pmid: "31601143"
+    pmid: '31601143'
     relevance: supporting
 pubmedQueries:
   - query: '"pyelonephritis" AND (dog OR canine OR cat OR feline) AND ("diagnosis" OR "treatment" OR "imaging")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "URN"
-  sectionTitle: "PYELONEPHRITIS"
+  chapter: URN
+  sectionTitle: PYELONEPHRITIS
   pdfPage: 1551
+diagnosticAlgorithm:
+  title: 腎盂腎炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估發燒、腎區疼痛及泌尿症狀
+      findings:
+        - 發燒
+        - 腎區疼痛
+        - 嘔吐
+        - 多飲多尿
+    - step: 2
+      action: 血液與尿液
+      details: CBC、生化及尿液分析
+      findings:
+        - 白血球增多
+        - 氮血症
+        - 尿中白血球管型
+        - 菌尿
+    - step: 3
+      action: 尿液培養
+      details: 膀胱穿刺培養
+      findings:
+        - 細菌培養陽性
+        - 藥敏試驗
+        - 高菌量（>10^5 CFU/mL）
+    - step: 4
+      action: 腎臟超音波
+      details: 評估腎臟結構變化
+      findings:
+        - 腎盂擴張
+        - 腎實質回音改變
+        - 腎臟腫大
+        - 排除尿路阻塞
+clinicalPearls:
+  - 急性腎盂腎炎是全身性疾病，不只是UTI
+  - 超聲可見腎盂擴張但不一定有積水
+  - 氮質血症可能是暫時性（腎臟腫脹）或永久性（腎損傷）
+  - 抗生素療程需要4-6週以根除腎臟感染
+  - 治療後需追蹤尿液培養確認清除
+monitoringItems:
+  - 體溫
+  - 腎功能（BUN/Crea）
+  - 尿液培養（治療中和治療後）
+  - 超聲追蹤
+associatedSymptoms:
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

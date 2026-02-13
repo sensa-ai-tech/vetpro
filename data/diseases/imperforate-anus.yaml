@@ -3,13 +3,15 @@ nameEn: Imperforate Anus
 nameZh: 先天性肛門閉鎖
 bodySystem: gastrointestinal
 description: 肛門閉鎖（又稱直腸肛門畸形）為肛門未正常發育開口的先天畸形。受影響動物無法正常排便。需在新生兒期及早手術矯正。可伴隨其他泌尿生殖道畸形。
-
 aliases:
-  - { alias: 無肛症, language: zh }
-  - { alias: 直腸肛門畸形, language: zh }
-  - { alias: Atresia ani, language: en }
-  - { alias: Anal atresia, language: en }
-
+  - alias: 無肛症
+    language: zh
+  - alias: 直腸肛門畸形
+    language: zh
+  - alias: Atresia ani
+    language: en
+  - alias: Anal atresia
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 犬貓均有報告。可能伴隨直腸陰道瘻管或其他畸形。
-
 etiology:
   categories:
     - name: 先天發育異常
@@ -25,7 +26,6 @@ etiology:
         - 泄殖膜發育異常
         - 直腸與肛門未正常分化連通
         - 可能為遺傳因素
-
 clinicalSigns:
   early:
     - 新生幼犬/幼貓無肛門開口
@@ -35,21 +35,47 @@ clinicalSigns:
     - 巨結腸（糞便蓄積）
     - 嘔吐
     - 全身衰竭（未治療時）
-
 diagnosis:
   primaryTests:
     - name: 影像與臨床檢查
       notes: 視診確認肛門缺失。X 光或造影評估直腸盲端位置。
-
 treatment:
   principles:
     - 依嚴重程度決定保守或手術治療
     - 支持療法
   general:
     - 手術重建肛門開口（肛門成形術）。術後肛門擴張訓練。
-
 prognosis: 手術成功後預後良好。肛門括約肌功能可能不完全（排便控制受限）。
-
 pubmedQueries:
   - query: '"Imperforate Anus" AND (veterinary OR canine OR feline) AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: constipation
+    frequency: common
+  - symptomId: abdominal-distension
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 先天性肛門閉鎖 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - constipation 相關症狀
+        - abdominal-distension 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 影像與臨床檢查
+          notes: 視診確認肛門缺失。X 光或造影評估直腸盲端位置。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 依嚴重程度決定保守或手術治療
+        - 支持療法
+ddxSource: auto-generated

@@ -3,22 +3,20 @@ nameEn: Chinchilla Otitis Media
 nameZh: 龍貓中耳炎
 bodySystem: ear
 description: 龍貓中耳腔感染，龍貓耳朵鼓室泡（bulla）特別大，中耳炎可導致前庭症狀（歪頭、轉圈）。需長期抗生素治療。
-
 aliases:
-  - { alias: "龍貓中耳炎", language: zh }
-  - { alias: "Chinchilla Otitis Media", language: en }
-
+  - alias: 龍貓中耳炎
+    language: zh
+  - alias: Chinchilla Otitis Media
+    language: en
 species:
   - speciesCommon: chinchilla
     prevalence: uncommon
     notes: 龍貓可受此疾病影響。
-
 etiology:
   categories:
     - name: 病因
       examples:
         - 詳見臨床文獻
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -27,14 +25,12 @@ clinicalSigns:
   progressive:
     - 症狀加重
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 完整理學檢查與病史評估。
     - name: 實驗室檢查
       notes: CBC/生化排除系統性疾病。
-
 treatment:
   principles:
     - 治療基礎病因
@@ -44,26 +40,60 @@ treatment:
     - 依病因治療
     - 支持性照護
     - 定期追蹤
-
 prognosis: 預後取決於疾病嚴重度與治療時效。早期診斷與適當治療可改善預後。
-
-
 guidelineRefs:
-  - sourceOrg: "Clinical and vaccine immunology : CVI"
-    title: Immunogenicity of Nontypeable Haemophilus influenzae Outer Membrane Vesicles and Protective Ability in the Chinchilla Model of Otitis Media.
+  - sourceOrg: 'Clinical and vaccine immunology : CVI'
+    title: >-
+      Immunogenicity of Nontypeable Haemophilus influenzae Outer Membrane Vesicles and Protective Ability in the
+      Chinchilla Model of Otitis Media.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5629667/
     type: research
-    pmid: "28768669"
+    pmid: '28768669'
   - sourceOrg: Journal of biomechanical engineering
     title: Dynamic Properties of Tympanic Membrane in a Chinchilla Otitis Media Model Measured With Acoustic Loading.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4462862/
     type: research
-    pmid: "25902287"
+    pmid: '25902287'
   - sourceOrg: Infection and immunity
     title: Deletion of arcD in Streptococcus pneumoniae D39 impairs its capsule and attenuates virulence.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3811789/
     type: research
-    pmid: "23918778"
+    pmid: '23918778'
 pubmedQueries:
   - query: '"Chinchilla Otitis Media" AND (veterinary OR chinchilla) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 龍貓中耳炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 完整理學檢查與病史評估。
+        - name: 實驗室檢查
+          notes: CBC/生化排除系統性疾病。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 支持性照護
+        - 監測恢復進度
+ddxSource: auto-generated

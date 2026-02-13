@@ -3,14 +3,17 @@ nameEn: Portosystemic Shunt Congenital
 nameZh: 先天性門體分流
 bodySystem: hepatic
 description: 先天性門體分流（PSS）為異常血管連接門靜脈與全身靜脈系統，使含毒素的門靜脈血液繞過肝臟直接進入全身循環。導致肝臟發育不全與肝性腦病。分為肝外型（小型犬）與肝內型（大型犬）。
-
 aliases:
-  - { alias: 先天性肝門脈分流, language: zh }
-  - { alias: 先天性 PSS, language: zh }
-  - { alias: Congenital portosystemic shunt, language: en }
-  - { alias: Liver shunt, language: en }
-  - { alias: Congenital PSS, language: en }
-
+  - alias: 先天性肝門脈分流
+    language: zh
+  - alias: 先天性 PSS
+    language: zh
+  - alias: Congenital portosystemic shunt
+    language: en
+  - alias: Liver shunt
+    language: en
+  - alias: Congenital PSS
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -18,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓亦有報告，多為肝外型。
-
 etiology:
   categories:
     - name: 先天血管異常
@@ -31,7 +33,6 @@ etiology:
         - 肝臟血流灌注不足
         - 肝臟發育不良（小肝）
         - 門靜脈高氨血症（肝性腦病）
-
 clinicalSigns:
   early:
     - 生長遲緩（同窩幼犬中體型最小）
@@ -44,7 +45,6 @@ clinicalSigns:
     - 體重不增
     - 多飲多尿
     - 腹水（少見）
-
 diagnosis:
   primaryTests:
     - name: 血液生化
@@ -53,7 +53,6 @@ diagnosis:
       notes: 小肝、異常血管走向。彩色都卜勒可見分流血管
     - name: CT 血管攝影
       notes: 術前精確定位分流血管類型與位置。金標準影像
-
 treatment:
   principles:
     - 手術漸進閉合分流血管為根治
@@ -67,9 +66,50 @@ treatment:
     - 術後監測門脈壓力
     - 尿酸銨結石管理
     - 部分病例可僅靠醫療管理長期穩定
-
 prognosis: 手術治療預後良好（成功率 >85%）。術後肝臟功能可逐漸恢復。單一肝外分流手術預後最佳。多發分流或肝內型預後較差。僅醫療管理的長期預後尚可但可能隨年齡惡化。
-
 pubmedQueries:
   - query: '"portosystemic shunt" AND (congenital OR canine OR feline) AND (surgery OR treatment OR management)'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 先天性門體分流 診斷流程
+  steps:
+    - step: 1
+      action: 臨床懷疑
+      details: 幼年小型犬餐後神經症狀
+      findings:
+        - 發育遲緩
+        - 餐後行為異常
+        - 多飲多尿
+    - step: 2
+      action: 血液篩檢
+      details: 膽汁酸+CBC+生化
+      findings:
+        - 空腹/餐後膽汁酸升高
+        - 微小紅血球症
+        - BUN/白蛋白/膽固醇偏低
+    - step: 3
+      action: 影像篩檢
+      details: 腹部超音波+都卜勒評估
+      findings:
+        - 肝臟縮小
+        - 異常血管通道
+        - 門脈血流異常
+    - step: 4
+      action: 確診影像
+      details: CT血管造影精確定位
+      findings:
+        - 分流血管起止點
+        - 肝內型vs肝外型分類
+        - 術前計畫
+clinicalPearls:
+  - 約克夏梗和小型犬多為肝外型，大型犬多為肝內型
+  - 餐後神經症狀加重是重要的診斷線索
+  - 血清膽汁酸正常不能完全排除分流（敏感度85-90%）
+  - 術前內科穩定至少2-4週再進行手術
+monitoringItems:
+  - 術後膽汁酸追蹤（1個月、3個月、6個月）
+  - 肝臟大小追蹤（超音波）
+  - 神經症狀改善
+  - 體重增長
+  - 尿液分析（結石風險）
+ddxSource: book

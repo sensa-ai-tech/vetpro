@@ -3,16 +3,15 @@ nameEn: Rabbit Pododermatitis Bumblefoot
 nameZh: 兔足墊炎（潰瘍性足底炎）
 bodySystem: dermatology
 description: 兔後足蹠面嚴重的壓力性潰瘍與感染，為足底皮膚炎（pododermatitis）的進階形式。深層感染可累及骨骼導致骨髓炎，嚴重影響生活品質。
-
 aliases:
-  - { alias: "兔足墊炎", language: zh }
-  - { alias: "Rabbit Pododermatitis Bumblefoot", language: en }
-
+  - alias: 兔足墊炎
+    language: zh
+  - alias: Rabbit Pododermatitis Bumblefoot
+    language: en
 species:
   - speciesCommon: rabbit
     prevalence: uncommon
     notes: 兔可受此疾病影響。
-
 etiology:
   categories:
     - name: 壓力性/環境性
@@ -25,7 +24,6 @@ etiology:
         - Staphylococcus aureus（最常見繼發感染菌）
         - 深層組織感染
         - 骨髓炎
-
 clinicalSigns:
   early:
     - 足底脫毛與結痂
@@ -37,14 +35,12 @@ clinicalSigns:
     - 明顯跛行
     - 足部腫脹增大
     - 厭食/嗜睡（疼痛）
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 足底分級：I 級脫毛→V 級骨髓炎。需評估雙側後足。
     - name: X 光
       notes: 評估骨骼受累情況。骨溶解提示骨髓炎。
-
 treatment:
   principles:
     - 環境改善
@@ -58,9 +54,42 @@ treatment:
     - 全身性抗生素（依培養敏感性）
     - 止痛（Meloxicam）
     - 減重
-
 prognosis: I-III 級經環境改善與傷口管理預後良好至謹慎。IV-V 級合併骨髓炎預後差，治療極為困難。預防（適當底材與體重管理）為最佳策略。
-
 pubmedQueries:
   - query: '"Rabbit Pododermatitis Bumblefoot" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: uncommon
+  - symptomId: alopecia
+    frequency: common
+diagnosticAlgorithm:
+  title: 兔足墊炎（潰瘍性足底炎） 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - weakness 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 足底分級：I 級脫毛→V 級骨髓炎。需評估雙側後足。
+        - name: X 光
+          notes: 評估骨骼受累情況。骨溶解提示骨髓炎。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 環境改善
+        - 傷口管理
+        - 感染控制
+ddxSource: auto-generated

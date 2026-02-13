@@ -3,14 +3,17 @@ nameEn: Lymphocytic Cholangitis
 nameZh: 淋巴球性膽管炎
 bodySystem: hepatic
 description: 淋巴球性膽管炎是以小淋巴球浸潤膽管壁為特徵的慢性肝臟炎症性疾病，可能為免疫介導機制。在貓中是慢性肝病的重要原因，病程緩慢但可進展為膽管纖維化。
-
 aliases:
-  - { alias: 慢性膽管炎, language: zh }
-  - { alias: 非化膿性膽管炎, language: zh }
-  - { alias: Chronic Cholangitis, language: en }
-  - { alias: Non-Suppurative Cholangitis, language: en }
-  - { alias: Lymphocytic Portal Hepatitis, language: en }
-
+  - alias: 慢性膽管炎
+    language: zh
+  - alias: 非化膿性膽管炎
+    language: zh
+  - alias: Chronic Cholangitis
+    language: en
+  - alias: Non-Suppurative Cholangitis
+    language: en
+  - alias: Lymphocytic Portal Hepatitis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓淋巴球性膽管炎是貓最常見的慢性肝膽疾病之一。波斯貓可能好發。中老年貓多見。慢性病程。
-
 etiology:
   categories:
     - name: 可能病因
@@ -35,7 +37,6 @@ etiology:
         - 膽管增生
         - 進行性門脈周圍纖維化
         - 終末期可形成膽汁性肝硬化
-
 clinicalSigns:
   early:
     - 漸進性食慾下降
@@ -48,19 +49,17 @@ clinicalSigns:
     - 腹水（晚期）
     - 肝性腦病（終末期）
     - 凝血功能異常
-
 diagnosis:
   primaryTests:
     - name: 肝臟活檢
-      notes: "確診需組織病理學。門脈區小淋巴球與漿細胞浸潤、膽管增生、纖維化程度評估。需與淋巴瘤鑑別（免疫組化染色）。"
+      notes: 確診需組織病理學。門脈區小淋巴球與漿細胞浸潤、膽管增生、纖維化程度評估。需與淋巴瘤鑑別（免疫組化染色）。
     - name: 血液生化
-      notes: "ALT、ALP、GGT 中度升高。膽紅素可正常或升高。低白蛋白血症（晚期）。globulin 常升高（免疫介導疾病特徵）。"
+      notes: ALT、ALP、GGT 中度升高。膽紅素可正常或升高。低白蛋白血症（晚期）。globulin 常升高（免疫介導疾病特徵）。
   differentialDiagnoses:
     - 嗜中性球性膽管炎
     - 肝臟淋巴瘤（需免疫組化鑑別）
     - 肝脂肪沉積症
     - 膽管細胞癌
-
 treatment:
   medical:
     - Prednisolone 1-2 mg/kg PO q24h，逐漸減量至最低有效劑量
@@ -71,20 +70,50 @@ treatment:
     - 營養支持與適當飲食管理
   surgical:
     - 腹腔鏡或開腹肝臟活檢取得組織診斷
-
 prognosis:
-  general: "對免疫抑制治療反應良好者預後佳，中位存活時間報告約3年以上。但需終生低劑量免疫抑制維持治療。進展至膽管纖維化或肝硬化者預後轉差。需排除淋巴瘤（預後截然不同）。"
-
+  general: 對免疫抑制治療反應良好者預後佳，中位存活時間報告約3年以上。但需終生低劑量免疫抑制維持治療。進展至膽管纖維化或肝硬化者預後轉差。需排除淋巴瘤（預後截然不同）。
 prevention:
   - 無已知預防措施
   - 早期診斷與治療防止纖維化進展
   - 定期肝功能監測追蹤治療反應
-
-
 guidelineRefs:
   - sourceOrg: Veterinary record open
-    title: Retrospective study of the relative frequency of feline hepatobiliary disease in New Zealand based on 10 years of hepatic biopsy samples.
+    title: >-
+      Retrospective study of the relative frequency of feline hepatobiliary disease in New Zealand based on 10 years of
+      hepatic biopsy samples.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6802989/
     type: research
-    pmid: "31673378"
+    pmid: '31673378'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 淋巴球性膽管炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - hepatomegaly 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 肝臟活檢
+          notes: 確診需組織病理學。門脈區小淋巴球與漿細胞浸潤、膽管增生、纖維化程度評估。需與淋巴瘤鑑別（免疫組化染色）。
+        - name: 血液生化
+          notes: ALT、ALP、GGT 中度升高。膽紅素可正常或升高。低白蛋白血症（晚期）。globulin 常升高（免疫介導疾病特徵）。
+ddxSource: auto-generated

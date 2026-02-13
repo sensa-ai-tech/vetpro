@@ -3,18 +3,19 @@ nameEn: Burmese Cat Diabetes
 nameZh: 緬甸貓糖尿病
 bodySystem: endocrine
 description: 緬甸貓為第二型糖尿病（Type 2 DM）最高風險貓種，風險為一般貓的 3-4 倍。與品種特異性胰島素分泌缺陷及胰島類澱粉沉積相關。肥胖為重要誘發因子。早期積極治療可能達到糖尿病緩解（Diabetic remission）。
-
 aliases:
-  - { alias: 緬甸貓二型糖尿病, language: zh }
-  - { alias: 緬甸貓 DM, language: zh }
-  - { alias: Burmese cat type 2 diabetes, language: en }
-  - { alias: Burmese feline diabetes mellitus, language: en }
-
+  - alias: 緬甸貓二型糖尿病
+    language: zh
+  - alias: 緬甸貓 DM
+    language: zh
+  - alias: Burmese cat type 2 diabetes
+    language: en
+  - alias: Burmese feline diabetes mellitus
+    language: en
 species:
   - speciesCommon: cat
     prevalence: common
     notes: 緬甸貓糖尿病風險為一般貓群的 3-4 倍。澳洲與紐西蘭品系風險最高。中年肥胖貓（>8 歲）好發。雄貓風險較高。
-
 etiology:
   categories:
     - name: 品種因素
@@ -28,7 +29,6 @@ etiology:
         - 室內不活動生活方式
         - 高碳水化合物飲食
         - 長期類固醇使用
-
 clinicalSigns:
   early:
     - 多飲多尿
@@ -41,7 +41,6 @@ clinicalSigns:
     - 被毛粗糙
     - 肝臟腫大
     - 酮酸中毒（嘔吐、脫水、昏迷）
-
 diagnosis:
   primaryTests:
     - name: 血糖
@@ -50,7 +49,6 @@ diagnosis:
       notes: 反映前 2-3 週平均血糖。>400 μmol/L 支持糖尿病。排除緊迫因素
     - name: 尿液分析
       notes: 糖尿。酮尿（酮酸中毒時）。尿路感染篩檢
-
 treatment:
   principles:
     - 胰島素治療為基石
@@ -66,21 +64,65 @@ treatment:
     - 定期果糖胺與血糖曲線追蹤
     - 積極早期治療可能達到緩解（30-80%）
     - 酮酸中毒：緊急住院治療
-
 prognosis: 預後取決於治療積極度與緩解率。緬甸貓糖尿病緩解率（停用胰島素）可達 30-80%（早期積極治療時）。達到緩解者長期預後良好但需持續監測（可能復發）。未控制的糖尿病導致嚴重併發症。酮酸中毒死亡率約 20-30%。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in immunology
     title: Adipokines as potential biomarkers for type 2 diabetes mellitus in cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9561307/
     type: review
-    pmid: "36248900"
+    pmid: '36248900'
   - sourceOrg: Acta veterinaria Scandinavica
-    title: "An individual approach to feline diabetes care: a case report and literature review."
+    title: 'An individual approach to feline diabetes care: a case report and literature review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5073813/
     type: review
-    pmid: "27766967"
+    pmid: '27766967'
 pubmedQueries:
   - query: '"Burmese" AND ("diabetes" OR "diabetes mellitus") AND (feline OR cat) AND (treatment OR remission)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: polyphagia
+    frequency: common
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: weight-gain
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 緬甸貓糖尿病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - polyphagia 相關症狀
+        - paresis-paralysis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血糖
+          notes: 持續性高血糖（>250 mg/dL）。單次高血糖需排除緊迫性高血糖
+        - name: 果糖胺
+          notes: 反映前 2-3 週平均血糖。>400 μmol/L 支持糖尿病。排除緊迫因素
+        - name: 尿液分析
+          notes: 糖尿。酮尿（酮酸中毒時）。尿路感染篩檢
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 胰島素治療為基石
+        - 低碳水化合物飲食
+        - 積極控制目標糖尿病緩解
+ddxSource: auto-generated

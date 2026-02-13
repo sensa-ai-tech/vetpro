@@ -3,12 +3,13 @@ nameEn: Arthroscopy Veterinary
 nameZh: 獸醫關節鏡
 bodySystem: other
 description: 微創關節內視鏡技術,用於診斷及治療關節疾病。常用於肩、肘、膝關節評估及軟骨、韌帶處理。
-
 aliases:
-  - { alias: 關節鏡檢查, language: zh }
-  - { alias: Arthroscopic surgery, language: en }
-  - { alias: 微創關節手術, language: zh }
-
+  - alias: 關節鏡檢查
+    language: zh
+  - alias: Arthroscopic surgery
+    language: en
+  - alias: 微創關節手術
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓關節疾病較少,體型小技術挑戰高
-
 etiology:
   categories:
     - name: 診斷適應症
@@ -31,7 +31,6 @@ etiology:
         - 肘關節冠狀突碎裂(FCP)
         - 肩關節OCD
         - 半月板部分切除
-
 clinicalSigns:
   early:
     - 術後小切口(2-3個<5mm portal)
@@ -41,19 +40,17 @@ clinicalSigns:
     - 跛行逐漸改善
     - 關節活動度恢復
     - 疼痛明顯減輕
-
 diagnosis:
   primaryTests:
     - name: 關節液分析
-      notes: "評估炎症程度"
+      notes: 評估炎症程度
     - name: 關節鏡視診
-      notes: "直視軟骨、滑膜、韌帶狀態"
+      notes: 直視軟骨、滑膜、韌帶狀態
     - name: 術中探查
-      notes: "觸診評估軟骨完整性"
+      notes: 觸診評估軟骨完整性
   differentialDiagnoses:
     - 關節切開術(傳統開關節)
     - MRI/CT診斷(非侵入)
-
 treatment:
   medical:
     - 麻醉:全身麻醉+硬膜外止痛(建議)
@@ -61,40 +58,71 @@ treatment:
     - 灌流:乳酸林格氏液或生理食鹽水
     - 處理:移除游離體、清創、軟骨修整
     - 術後:24-48小時冰敷,逐步增加活動
-
 prognosis:
-  general: "預後視原發疾病而定。OCD及FCP早期處理預後佳。併發症少,感染率<1%。恢復時間明顯短於開放手術(4-6週vs 8-12週)。"
-
+  general: 預後視原發疾病而定。OCD及FCP早期處理預後佳。併發症少,感染率<1%。恢復時間明顯短於開放手術(4-6週vs 8-12週)。
 prevention:
   - 術前完整影像評估(CT理想)
   - 無菌技術避免關節感染
   - 適當止痛促進早期活動
   - 術後物理復健加速恢復
-
-
 guidelineRefs:
-  - sourceOrg: "Veterinary surgery : VS"
-    title: Arthroscopic removal of palmar intermediate carpal bone fracture fragments in four horses using a transthecal approach through the carpal flexor tendon sheath.
+  - sourceOrg: 'Veterinary surgery : VS'
+    title: >-
+      Arthroscopic removal of palmar intermediate carpal bone fracture fragments in four horses using a transthecal
+      approach through the carpal flexor tendon sheath.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9544275/
     type: case-report
-    pmid: "35403724"
-  - sourceOrg: "Veterinary surgery : VS"
-    title: Severity, distribution and postoperative therapy are not predictors of return to work in western performance horses with stifle chondromalacia.
+    pmid: '35403724'
+  - sourceOrg: 'Veterinary surgery : VS'
+    title: >-
+      Severity, distribution and postoperative therapy are not predictors of return to work in western performance
+      horses with stifle chondromalacia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12282042/
     type: research
-    pmid: "40059430"
+    pmid: '40059430'
   - sourceOrg: Canadian journal of veterinary research = Revue canadienne de recherche veterinaire
-    title: "Long-term outcomes after arthroscopic treatment of dogs affected by osteochondrosis dissecans of the humeral trochlea, with or without medial coronoid disease: 23 cases (2012-2020)."
+    title: >-
+      Long-term outcomes after arthroscopic treatment of dogs affected by osteochondrosis dissecans of the humeral
+      trochlea, with or without medial coronoid disease: 23 cases (2012-2020).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10291701/
     type: research
-    pmid: "37397629"
+    pmid: '37397629'
   - sourceOrg: Equine veterinary journal
-    title: Plantar osteochondral fragments in young Standardbreds are associated with minimal joint inflammation at the time of surgical removal.
+    title: >-
+      Plantar osteochondral fragments in young Standardbreds are associated with minimal joint inflammation at the time
+      of surgical removal.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10083909/
     type: research
-    pmid: "35298851"
-  - sourceOrg: "Veterinary surgery : VS"
-    title: Ex vivo comparison of 3 Tesla magnetic resonance imaging and multidetector computed tomography arthrography to identify artificial soft tissue lesions in equine stifles.
+    pmid: '35298851'
+  - sourceOrg: 'Veterinary surgery : VS'
+    title: >-
+      Ex vivo comparison of 3 Tesla magnetic resonance imaging and multidetector computed tomography arthrography to
+      identify artificial soft tissue lesions in equine stifles.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9314790/
     type: research
-    pmid: "35289943"
+    pmid: '35289943'
+associatedSymptoms:
+  - symptomId: polyarthritis
+    frequency: common
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 獸醫關節鏡 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - polyarthritis 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 關節液分析
+          notes: 評估炎症程度
+        - name: 關節鏡視診
+          notes: 直視軟骨、滑膜、韌帶狀態
+        - name: 術中探查
+          notes: 觸診評估軟骨完整性
+ddxSource: auto-generated

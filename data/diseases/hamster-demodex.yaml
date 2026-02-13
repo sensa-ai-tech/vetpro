@@ -3,20 +3,22 @@ nameEn: Hamster Demodicosis
 nameZh: 倉鼠蠕形蟎
 bodySystem: dermatology
 description: 倉鼠感染蠕形蟎 (Demodex criceti 或 D. aurati) 引起的皮膚寄生蟲疾病，通常與免疫抑制 (腫瘤、營養不良、老齡) 相關，表現為脫毛、皮膚乾燥與鱗屑。
-
 aliases:
-  - { alias: 倉鼠蠕形蟎病, language: zh }
-  - { alias: 倉鼠毛囊蟲, language: zh }
-  - { alias: Hamster demodectic mange, language: en }
-  - { alias: Demodex criceti infection, language: en }
-  - { alias: Demodex aurati infection, language: en }
-
+  - alias: 倉鼠蠕形蟎病
+    language: zh
+  - alias: 倉鼠毛囊蟲
+    language: zh
+  - alias: Hamster demodectic mange
+    language: en
+  - alias: Demodex criceti infection
+    language: en
+  - alias: Demodex aurati infection
+    language: en
 species:
   - speciesCommon: hamster
     speciesScientific: Mesocricetus auratus
     prevalence: common
     notes: 兩種蠕形蟎可感染倉鼠：D. criceti (短型，寄生於表皮角質層) 與 D. aurati (長型，寄生於毛囊)。健康倉鼠常為無症狀帶原，免疫抑制時發病。老年倉鼠與腫瘤患鼠最常見。
-
 etiology:
   categories:
     - name: 寄生蟲性
@@ -31,7 +33,6 @@ etiology:
         - 營養不良
         - 慢性緊迫
         - Cushing 症候群
-
 clinicalSigns:
   early:
     - 背部與臀部局部脫毛
@@ -49,22 +50,20 @@ clinicalSigns:
     - 繼發性細菌性皮膚炎
     - 皮膚結痂與潰瘍
     - 嚴重消瘦 (基礎疾病惡化)
-
 diagnosis:
   primaryTests:
     - name: 皮膚刮搔
-      notes: "深層皮膚刮搔至微出血。礦物油封片鏡檢。D. criceti 體型較短 (約 90 μm)，D. aurati 較長 (約 170 μm)。兩者皆為雪茄型"
+      notes: 深層皮膚刮搔至微出血。礦物油封片鏡檢。D. criceti 體型較短 (約 90 μm)，D. aurati 較長 (約 170 μm)。兩者皆為雪茄型
     - name: 毛髮拔取 (trichogram)
-      notes: "拔取脫毛區邊緣毛髮鏡檢，可見毛囊內蟎蟲 (尤其 D. aurati)"
+      notes: 拔取脫毛區邊緣毛髮鏡檢，可見毛囊內蟎蟲 (尤其 D. aurati)
   imaging:
     - name: 腹部超音波
-      notes: "評估潛在免疫抑制原因 (腎上腺腫瘤、淋巴瘤等)"
+      notes: 評估潛在免疫抑制原因 (腎上腺腫瘤、淋巴瘤等)
   additional:
     - 皮膚膠帶壓片 (表淺 D. criceti)
     - CBC/生化 (評估基礎疾病)
     - 皮膚組織切片 (慢性病例評估毛囊結構)
     - 全身腫瘤篩檢 (老年倉鼠)
-
 treatment:
   principles:
     - 治療蠕形蟎感染
@@ -73,13 +72,13 @@ treatment:
     - 基礎疾病未解決則治療效果有限
   medications:
     - name: Ivermectin
-      dose: "0.2-0.4 mg/kg SC 或 PO，每 7-14 天重複"
+      dose: 0.2-0.4 mg/kg SC 或 PO，每 7-14 天重複
       notes: 持續治療直至連續兩次皮膚刮搔陰性。通常需 4-6 次治療。安全性良好
     - name: Amitraz 浸浴
-      dose: "0.025% 溶液局部塗抹，每 14 天一次"
+      dose: 0.025% 溶液局部塗抹，每 14 天一次
       notes: 局部使用於脫毛區域。避免口服 (毒性高)。操作時注意通風
     - name: Meloxicam
-      dose: "0.2-0.3 mg/kg PO/SC SID"
+      dose: 0.2-0.3 mg/kg PO/SC SID
       notes: 皮膚發炎嚴重時止痛消炎
   general:
     - 積極調查基礎免疫抑制原因
@@ -88,37 +87,79 @@ treatment:
     - 減少環境緊迫因素
     - 繼發細菌感染需局部或全身抗生素
     - 定期回診皮膚刮搔追蹤
-
 prognosis: 單純蠕形蟎感染經治療通常可控制。預後主要取決於基礎疾病 (腫瘤相關免疫抑制預後差)。老年倉鼠常伴隨內科疾病故長期預後謹慎。年輕倉鼠因暫時性緊迫誘發者預後較好。治療期間須同時處理基礎病因否則易復發。
-
 guidelineRefs:
   - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
     title: Dermatologic Diseases of Small Mammals
     url: https://pubmed.ncbi.nlm.nih.gov/23642861/
     type: review
-    pmid: "23642861"
+    pmid: '23642861'
   - sourceOrg: Veterinary Dermatology
     title: Parasitic skin diseases of small mammals
     url: https://pubmed.ncbi.nlm.nih.gov/15030559/
     type: review
-    pmid: "15030559"
+    pmid: '15030559'
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: Oral fluralaner as a treatment for Demodex aurati and Demodex criceti in a golden (Syrian) hamster (Mesocricetus auratus).
+    title: >-
+      Oral fluralaner as a treatment for Demodex aurati and Demodex criceti in a golden (Syrian) hamster (Mesocricetus
+      auratus).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6973213/
     type: case-report
-    pmid: "32020929"
+    pmid: '32020929'
     relevance: supporting
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: Isoxazolines for treating canine and feline otodectic mange; feline demodicosis, lynxacariasis, lice infestation, and notoedric mange (scabies); demodicosis in hamsters; and sarcoptic and psoroptic manges in rabbits.
+    title: >-
+      Isoxazolines for treating canine and feline otodectic mange; feline demodicosis, lynxacariasis, lice infestation,
+      and notoedric mange (scabies); demodicosis in hamsters; and sarcoptic and psoroptic manges in rabbits.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10581354/
     type: research
-    pmid: "37915780"
+    pmid: '37915780'
     relevance: supporting
 pubmedQueries:
   - query: '"hamster" AND ("Demodex" OR "demodicosis" OR "demodectic") AND ("treatment" OR "diagnosis")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "INFECTION"
+  chapter: DIG
+  sectionTitle: INFECTION
   pdfPage: 525
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: skin-pruritus
+    frequency: common
+  - symptomId: alopecia
+    frequency: common
+diagnosticAlgorithm:
+  title: 倉鼠蠕形蟎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - skin-pruritus 相關症狀
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 皮膚刮搔
+          notes: 深層皮膚刮搔至微出血。礦物油封片鏡檢。D. criceti 體型較短 (約 90 μm)，D. aurati 較長 (約 170 μm)。兩者皆為雪茄型
+        - name: 毛髮拔取 (trichogram)
+          notes: 拔取脫毛區邊緣毛髮鏡檢，可見毛囊內蟎蟲 (尤其 D. aurati)
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 皮膚膠帶壓片 (表淺 D. criceti)
+        - CBC/生化 (評估基礎疾病)
+        - 皮膚組織切片 (慢性病例評估毛囊結構)
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療蠕形蟎感染
+        - 調查與治療基礎免疫抑制原因
+        - 繼發性細菌感染需抗生素
+ddxSource: auto-generated

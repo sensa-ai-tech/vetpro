@@ -3,18 +3,18 @@ nameEn: Bernese Mountain Dog Glomerulonephritis
 nameZh: 伯恩山犬腎絲球腎炎
 bodySystem: other
 description: 伯恩山犬好發的遺傳性腎絲球疾病,免疫複合物沉積於腎絲球基底膜導致蛋白尿與腎功能衰竭。通常為家族性遺傳。
-
 aliases:
-  - { alias: 伯恩山犬遺傳性腎病, language: zh }
-  - { alias: Familial Glomerulopathy Bernese, language: en }
-  - { alias: Bernese GN, language: en }
-
+  - alias: 伯恩山犬遺傳性腎病
+    language: zh
+  - alias: Familial Glomerulopathy Bernese
+    language: en
+  - alias: Bernese GN
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 伯恩山犬為中度風險品種,2-6 歲多發,家族聚集性明顯
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -25,7 +25,6 @@ etiology:
       examples:
         - 免疫複合物沉積(IgG, C3)
         - 補體活化導致腎絲球損傷
-
 clinicalSigns:
   early:
     - 蛋白尿(尿蛋白/肌酐比 >2.0)
@@ -35,25 +34,23 @@ clinicalSigns:
     - 腹水,胸水
     - 高血壓
     - 尿毒症(嘔吐,食慾廢絕,貧血)
-
 diagnosis:
   primaryTests:
     - name: 尿液分析
-      notes: "顯著蛋白尿(3-4+),尿蛋白/肌酐比 >2.0(常 >5.0),可見脂質圓柱"
+      notes: 顯著蛋白尿(3-4+),尿蛋白/肌酐比 >2.0(常 >5.0),可見脂質圓柱
     - name: 血液生化
-      notes: "低白蛋白(<2.0 g/dL),高膽固醇(>300 mg/dL),氮血症(晚期)"
+      notes: 低白蛋白(<2.0 g/dL),高膽固醇(>300 mg/dL),氮血症(晚期)
     - name: 血壓測量
-      notes: "收縮壓常 >160 mmHg"
+      notes: 收縮壓常 >160 mmHg
     - name: 腎臟組織病理學
-      notes: "腎絲球膜增生性或膜性腎絲球腎炎,免疫螢光見 IgG/C3 沉積"
+      notes: 腎絲球膜增生性或膜性腎絲球腎炎,免疫螢光見 IgG/C3 沉積
     - name: 血清抗核抗體(ANA)
-      notes: "排除全身性紅斑性狼瘡(SLE)"
+      notes: 排除全身性紅斑性狼瘡(SLE)
   differentialDiagnoses:
     - Amyloidosis
     - 全身性紅斑性狼瘡
     - 感染後腎絲球腎炎
     - 慢性腎臟病
-
 treatment:
   medical:
     - ACE 抑制劑:Enalapril 0.5 mg/kg PO q12-24h 或 Benazepril 0.25-0.5 mg/kg PO q24h(降低蛋白尿與血壓)
@@ -64,11 +61,39 @@ treatment:
     - Omega-3 脂肪酸補充:EPA+DHA 50-100 mg/kg q24h(抗發炎)
     - 抗血栓:Aspirin 0.5 mg/kg PO q24h 或 Clopidogrel 1-2 mg/kg PO q24h(若白蛋白 <2.0 g/dL 且血栓風險高)
     - 治療尿毒症併發症:制酸劑,止吐劑,促紅血球生成素(若貧血)
-
 prognosis:
-  general: "預後不良。確診後中位存活期 6-12 個月,取決於腎功能與蛋白尿嚴重度。氮血症時預後極差,多數於 3-6 個月內進展至末期腎病。早期診斷與積極治療可延緩病程,但無法治癒。"
-
+  general: 預後不良。確診後中位存活期 6-12 個月,取決於腎功能與蛋白尿嚴重度。氮血症時預後極差,多數於 3-6 個月內進展至末期腎病。早期診斷與積極治療可延緩病程,但無法治癒。
 prevention:
   - 受影響犬隻與家族成員不應繁殖
   - 高風險品種建議 1 歲起每年尿液篩檢
   - 早期發現蛋白尿時積極介入
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 伯恩山犬腎絲球腎炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - vomiting 相關症狀
+        - ascites 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 尿液分析
+          notes: 顯著蛋白尿(3-4+),尿蛋白/肌酐比 >2.0(常 >5.0),可見脂質圓柱
+        - name: 血液生化
+          notes: 低白蛋白(<2.0 g/dL),高膽固醇(>300 mg/dL),氮血症(晚期)
+        - name: 血壓測量
+          notes: 收縮壓常 >160 mmHg
+ddxSource: auto-generated

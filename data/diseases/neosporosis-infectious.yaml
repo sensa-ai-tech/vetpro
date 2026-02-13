@@ -3,12 +3,13 @@ nameEn: Neosporosis Infectious
 nameZh: 新孢子蟲感染
 bodySystem: infectious
 description: 新孢子蟲感染 (neosporosis) 由 Neospora caninum 引起的原蟲病，犬為終宿主與中間宿主。可引起嚴重神經肌肉疾病，幼犬尤其易感。先天性感染（經胎盤傳播）為最重要的傳播途徑，可導致幼犬後肢進行性麻痺。
-
 aliases:
-  - { alias: 犬新孢子蟲病, language: zh }
-  - { alias: Neospora Infection, language: en }
-  - { alias: Neospora caninum, language: en }
-
+  - alias: 犬新孢子蟲病
+    language: zh
+  - alias: Neospora Infection
+    language: en
+  - alias: Neospora caninum
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓可實驗感染但自然臨床病例極少報告。貓不排出 N. caninum 卵囊。需與弓形蟲 (Toxoplasma gondii) 鑑別。
-
 etiology:
   categories:
     - name: 傳播途徑
@@ -31,7 +31,6 @@ etiology:
         - 引起壞死性腦脊髓炎
         - 多型性肌炎（骨骼肌與心肌）
         - 免疫抑制時組織囊胞活化再發
-
 clinicalSigns:
   early:
     - 幼犬後肢漸進性無力
@@ -44,7 +43,6 @@ clinicalSigns:
     - 多型性肌炎（肌肉疼痛與萎縮）
     - 腦炎（癲癇、行為改變、頭歪）
     - 心肌炎
-
 diagnosis:
   primaryTests:
     - name: 血清學 (IFA/ELISA)
@@ -56,7 +54,6 @@ diagnosis:
     - 肌肉生檢（壞死性肌炎、可見組織囊胞）
     - CK 升高（肌肉損傷指標）
     - MRI（腦脊髓病變）
-
 treatment:
   principles:
     - 早期治療至關重要
@@ -70,36 +67,81 @@ treatment:
     - 物理治療（維持關節活動度）
     - 感染母犬建議絕育（防止繼續垂直傳播）
     - 避免餵食生肉
-
 prognosis: 幼犬先天性新孢子蟲感染預後謹慎至不良。關節攣縮一旦形成為不可逆。早期（未出現固定性病變前）clindamycin 治療可改善部分患畜。成犬多型性肌炎或腦炎型預後亦差。
-
-
 guidelineRefs:
   - sourceOrg: Open veterinary journal
-    title: "Review of neosporosis: Disease insights and control approaches."
+    title: 'Review of neosporosis: Disease insights and control approaches.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12017711/
     type: review
-    pmid: "40276172"
+    pmid: '40276172'
   - sourceOrg: Open veterinary journal
-    title: "Neospora caninum in goats from Iraq: A serological and molecular study."
+    title: 'Neospora caninum in goats from Iraq: A serological and molecular study.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11974280/
     type: review
-    pmid: "40201814"
+    pmid: '40201814'
   - sourceOrg: Veterinary medicine and science
-    title: "Global prevalence of Neospora caninum in rodents: A systematic review and meta-analysis."
+    title: 'Global prevalence of Neospora caninum in rodents: A systematic review and meta-analysis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10508548/
     type: review
-    pmid: "37417729"
+    pmid: '37417729'
   - sourceOrg: Frontiers in cellular and infection microbiology
-    title: Seroprevalence of Toxoplasma gondii and Neospora caninum in camels recently imported to Egypt from Sudan and a global systematic review.
+    title: >-
+      Seroprevalence of Toxoplasma gondii and Neospora caninum in camels recently imported to Egypt from Sudan and a
+      global systematic review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9702086/
     type: review
-    pmid: "36452298"
+    pmid: '36452298'
   - sourceOrg: Veterinary parasitology
-    title: "One health therapeutics: Target-Based drug development for cryptosporidiosis and other apicomplexa diseases."
+    title: 'One health therapeutics: Target-Based drug development for cryptosporidiosis and other apicomplexa diseases.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8582285/
     type: review
-    pmid: "33418437"
+    pmid: '33418437'
 pubmedQueries:
   - query: '"neosporosis" OR "Neospora caninum" AND (canine OR veterinary) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: head-tilt
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 新孢子蟲感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dysphagia 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清學 (IFA/ELISA)
+          notes: 抗體效價 >1:200 配合臨床症狀具有診斷意義。需排除 Toxoplasma 交叉反應。母犬與幼犬同時檢測
+        - name: PCR
+          notes: 腦脊液、肌肉生檢或血液 PCR。特異性高，可區分 Neospora 與 Toxoplasma
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CSF 分析（單核球增多、蛋白升高）
+        - 肌肉生檢（壞死性肌炎、可見組織囊胞）
+        - CK 升高（肌肉損傷指標）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 早期治療至關重要
+        - 已出現固定關節攣縮者不可逆
+        - 長療程抗原蟲藥物
+ddxSource: auto-generated

@@ -3,21 +3,24 @@ nameEn: Rabbit Vestibular Disease
 nameZh: 兔前庭疾病
 bodySystem: neurology
 description: 影響兔內耳或中樞前庭系統的疾病，表現為頭部歪斜、眼球震顫、平衡失調。最常見原因為 Encephalitozoon cuniculi 感染及中/內耳感染 (Pasteurella multocida)。
-
 aliases:
-  - { alias: 兔斜頸, language: zh }
-  - { alias: 兔歪頭症, language: zh }
-  - { alias: 兔前庭症候群, language: zh }
-  - { alias: Head Tilt, language: en }
-  - { alias: Torticollis, language: en }
-  - { alias: Wry Neck, language: en }
-
+  - alias: 兔斜頸
+    language: zh
+  - alias: 兔歪頭症
+    language: zh
+  - alias: 兔前庭症候群
+    language: zh
+  - alias: Head Tilt
+    language: en
+  - alias: Torticollis
+    language: en
+  - alias: Wry Neck
+    language: en
 species:
   - speciesCommon: rabbit
     speciesScientific: Oryctolagus cuniculus
     prevalence: common
     notes: 家兔常見神經學問題。最常見兩大病因為 E. cuniculi 與 Pasteurella multocida 中/內耳炎。需鑑別周邊性與中樞性前庭疾病。
-
 etiology:
   categories:
     - name: 感染性（最常見）
@@ -34,7 +37,6 @@ etiology:
         - 腫瘤（腦幹或中耳腫瘤）
         - 中風（腦血管意外——老年兔）
         - 耳蟎嚴重感染繼發中耳炎
-
 clinicalSigns:
   early:
     - 輕微頭部歪斜 (head tilt)
@@ -53,24 +55,22 @@ clinicalSigns:
     - 角膜潰瘍（朝下側眼睛摩擦地面）
     - 中樞性症狀（垂直性眼球震顫、意識改變、癲癇——中樞性前庭）
     - 腎功能異常（E. cuniculi 腎臟感染）
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
-      notes: "區分周邊性 vs 中樞性前庭疾病。周邊性：水平/旋轉性眼球震顫、姿勢反射正常。中樞性：垂直性眼球震顫、姿勢反射異常、意識改變"
+      notes: 區分周邊性 vs 中樞性前庭疾病。周邊性：水平/旋轉性眼球震顫、姿勢反射正常。中樞性：垂直性眼球震顫、姿勢反射異常、意識改變
     - name: E. cuniculi 血清學 (IgG/IgM)
-      notes: "IgM 陽性提示急性感染。IgG 陽性僅表示曾暴露（兔群血清陽性率可達 50-80%）。需配合臨床判斷"
+      notes: IgM 陽性提示急性感染。IgG 陽性僅表示曾暴露（兔群血清陽性率可達 50-80%）。需配合臨床判斷
   imaging:
     - name: 頭部 X 光 (鼓泡 tympanic bulla)
-      notes: "評估鼓泡硬化或液體積聚——提示中/內耳感染"
+      notes: 評估鼓泡硬化或液體積聚——提示中/內耳感染
     - name: CT/MRI
-      notes: "CT 評估骨性變化（鼓泡）。MRI 為中樞性前庭疾病最佳影像檢查（腦幹病變、肉芽腫）"
+      notes: CT 評估骨性變化（鼓泡）。MRI 為中樞性前庭疾病最佳影像檢查（腦幹病變、肉芽腫）
   additional:
     - 耳鏡檢查 (鼓膜完整性)
     - CBC / 生化 (白血球、腎指數)
     - 尿液分析 (E. cuniculi 腎損傷評估)
     - 眼科檢查 (晶體破裂性葡萄膜炎——E. cuniculi 特徵)
-
 treatment:
   principles:
     - 鑑別病因決定治療方向
@@ -78,53 +78,105 @@ treatment:
     - 支持性護理極重要（防止滾動傷害、協助進食）
     - 多數病例可改善但可能殘留輕度歪頭
   general:
-    - "E. cuniculi 治療：Fenbendazole 20 mg/kg PO SID × 28 天"
-    - "細菌性中/內耳炎：Enrofloxacin 10-20 mg/kg PO BID + Penicillin G Procaine 42,000-60,000 IU/kg SC SID × 最少 30 天"
-    - "抗發炎：Meloxicam 0.3-0.6 mg/kg PO/SC SID"
-    - "短期類固醇（嚴重中樞性水腫）：Dexamethasone 0.2-0.5 mg/kg IV/SC × 1-3 天（僅限嚴重案例）"
-    - "止暈：Meclizine 2-12 mg/kg PO BID（減緩暈眩症狀）"
-    - "支持性護理：柔軟墊料防壓瘡、捲毛巾固定防滾動"
-    - "協助進食灌食：Critical Care (Oxbow) 15-20 mL/kg q6-8h"
-    - "皮下輸液：50-100 mL/kg/day（維持水分）"
-    - "朝下側眼睛保護：人工淚液防乾燥、監測角膜潰瘍"
-    - "環境安全：移除高處跳台，提供平坦活動空間"
-
-prognosis: 取決於病因與嚴重程度。周邊性前庭疾病（中/內耳感染）治療後多可改善，但可能殘留輕度頭部歪斜。E. cuniculi 性腦炎預後謹慎至不良，部分可改善但難完全恢復。中樞性前庭疾病預後較周邊性差。早期積極治療預後較佳。多數飼主可接受輕度殘留歪頭，兔仍可維持良好生活品質。
-
+    - E. cuniculi 治療：Fenbendazole 20 mg/kg PO SID × 28 天
+    - 細菌性中/內耳炎：Enrofloxacin 10-20 mg/kg PO BID + Penicillin G Procaine 42,000-60,000 IU/kg SC SID × 最少 30 天
+    - 抗發炎：Meloxicam 0.3-0.6 mg/kg PO/SC SID
+    - 短期類固醇（嚴重中樞性水腫）：Dexamethasone 0.2-0.5 mg/kg IV/SC × 1-3 天（僅限嚴重案例）
+    - 止暈：Meclizine 2-12 mg/kg PO BID（減緩暈眩症狀）
+    - 支持性護理：柔軟墊料防壓瘡、捲毛巾固定防滾動
+    - 協助進食灌食：Critical Care (Oxbow) 15-20 mL/kg q6-8h
+    - 皮下輸液：50-100 mL/kg/day（維持水分）
+    - 朝下側眼睛保護：人工淚液防乾燥、監測角膜潰瘍
+    - 環境安全：移除高處跳台，提供平坦活動空間
+prognosis: >-
+  取決於病因與嚴重程度。周邊性前庭疾病（中/內耳感染）治療後多可改善，但可能殘留輕度頭部歪斜。E. cuniculi
+  性腦炎預後謹慎至不良，部分可改善但難完全恢復。中樞性前庭疾病預後較周邊性差。早期積極治療預後較佳。多數飼主可接受輕度殘留歪頭，兔仍可維持良好生活品質。
 guidelineRefs:
   - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
     title: Neurologic diseases of rabbits
     url: https://pubmed.ncbi.nlm.nih.gov/29146032/
     type: review
-    pmid: "29146032"
+    pmid: '29146032'
   - sourceOrg: Journal of Exotic Pet Medicine
     title: Vestibular disease in rabbits
     url: https://pubmed.ncbi.nlm.nih.gov/25015871/
     type: review
-    pmid: "25015871"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Encephalitozoonosis in Pet Rabbits: Epidemiology, Pathogenesis, Immunology and Consensus on Clinical Management."
+    pmid: '25015871'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Encephalitozoonosis in Pet Rabbits: Epidemiology, Pathogenesis, Immunology and Consensus on Clinical Management.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12838174/
     type: review
-    pmid: "41594534"
+    pmid: '41594534'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
     title: Nasal anatomy and sniffing in respiration and olfaction of wild and domestic animals.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10375297/
     type: review
-    pmid: "37520001"
+    pmid: '37520001'
     relevance: primary
   - sourceOrg: Pathogens (Basel, Switzerland)
-    title: Antemortem and Postmortem Diagnosis of Encephalitozoon cuniculi in a Pet Rabbit (Oryctolagus cuniculus)-A Case Report.
+    title: >-
+      Antemortem and Postmortem Diagnosis of Encephalitozoon cuniculi in a Pet Rabbit (Oryctolagus cuniculus)-A Case
+      Report.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11676482/
     type: case-report
-    pmid: "39770381"
+    pmid: '39770381'
     relevance: supporting
 pubmedQueries:
   - query: '"vestibular disease" AND rabbit AND ("head tilt" OR "Encephalitozoon" OR "treatment")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "END"
-  sectionTitle: "DISEASE"
+  chapter: END
+  sectionTitle: DISEASE
   pdfPage: 582
+associatedSymptoms:
+  - symptomId: head-tilt
+    frequency: common
+  - symptomId: nystagmus
+    frequency: common
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: trembling
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔前庭疾病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - head-tilt 相關症狀
+        - nystagmus 相關症狀
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 區分周邊性 vs 中樞性前庭疾病。周邊性：水平/旋轉性眼球震顫、姿勢反射正常。中樞性：垂直性眼球震顫、姿勢反射異常、意識改變
+        - name: E. cuniculi 血清學 (IgG/IgM)
+          notes: IgM 陽性提示急性感染。IgG 陽性僅表示曾暴露（兔群血清陽性率可達 50-80%）。需配合臨床判斷
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 耳鏡檢查 (鼓膜完整性)
+        - CBC / 生化 (白血球、腎指數)
+        - 尿液分析 (E. cuniculi 腎損傷評估)
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 鑑別病因決定治療方向
+        - E. cuniculi 與細菌感染可同時經驗性治療
+        - 支持性護理極重要（防止滾動傷害、協助進食）
+ddxSource: auto-generated

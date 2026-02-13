@@ -3,11 +3,11 @@ nameEn: Hypothermia
 nameZh: 低體溫症
 bodySystem: emergency
 description: 低體溫症為核心體溫低於正常範圍（犬貓 <37.5°C）的危急狀態。常見於外傷、長時間暴露寒冷環境、麻醉後、新生仔畜與嚴重系統性疾病。低體溫導致代謝減緩、心律不整與凝血障礙。回溫速率與方法為治療關鍵。
-
 aliases:
-  - { alias: 體溫過低, language: zh }
-  - { alias: Cold Exposure, language: en }
-
+  - alias: 體溫過低
+    language: zh
+  - alias: Cold Exposure
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓正常體溫 38.0-39.2°C。貓低體溫常見於外傷後、嚴重疾病（腎衰竭晚期）與麻醉後。
-
 etiology:
   categories:
     - name: 環境因素
@@ -29,7 +28,6 @@ etiology:
         - 手術中體腔暴露
         - 嚴重疾病末期（敗血症、休克、腎衰竭）
         - 甲狀腺低下
-
 clinicalSigns:
   early:
     - 顫抖
@@ -42,7 +40,6 @@ clinicalSigns:
     - 昏迷
     - 凝血障礙
     - 心臟停止（<28°C 高風險）
-
 diagnosis:
   primaryTests:
     - name: 核心體溫
@@ -54,7 +51,6 @@ diagnosis:
     - 電解質（高血鉀風險）
     - 血糖
     - 凝血功能
-
 treatment:
   principles:
     - 緩慢回溫（避免 afterdrop）
@@ -69,36 +65,96 @@ treatment:
     - 心律不整：回溫後多數自行消失。避免低體溫時使用抗心律不整藥
     - 矯正代謝性酸中毒
     - 血糖監測與矯正
-
 prognosis: 環境暴露引起的低體溫在適當回溫後預後佳。嚴重低體溫（<28°C）致死率高。疾病末期伴隨低體溫為不良預後指標。新生仔畜低體溫需立即處理。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
-    title: "Pneumoperitoneum in Veterinary Laparoscopy: A Review."
+    title: 'Pneumoperitoneum in Veterinary Laparoscopy: A Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7356543/
     type: review
-    pmid: "32408554"
+    pmid: '32408554'
   - sourceOrg: PloS one
-    title: "Prediction performance of scoring systems after out-of-hospital cardiac arrest: A systematic review and meta-analysis."
+    title: >-
+      Prediction performance of scoring systems after out-of-hospital cardiac arrest: A systematic review and
+      meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10833585/
     type: review
-    pmid: "38300929"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '38300929'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: The Role of Brown Adipose Tissue and Energy Metabolism in Mammalian Thermoregulation during the Perinatal Period.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10339909/
     type: review
-    pmid: "37443971"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '37443971'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Hypothalamic Neuromodulation of Hypothermia in Domestic Animals.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10854546/
     type: review
-    pmid: "38338158"
+    pmid: '38338158'
   - sourceOrg: Veterinary and animal science
     title: Anaesthesia of decapod crustaceans.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9127210/
     type: review
-    pmid: "35620220"
+    pmid: '35620220'
 pubmedQueries:
   - query: '"hypothermia" AND (veterinary OR canine OR feline) AND ("treatment" OR "rewarming" OR "emergency")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 低體溫症 診斷與處置流程
+  steps:
+    - step: 1
+      action: 體溫評估與分級
+      details: 使用可測低溫的直腸溫度計，確定嚴重程度
+      findings:
+        - 輕度36-37.5°C：顫抖、嗜睡
+        - 中度34-36°C：停止顫抖、心搏過緩
+        - 重度<34°C：僵硬、無反射
+        - 需使用專用低溫溫度計
+    - step: 2
+      action: 病因篩查
+      details: 區分原發性（環境暴露）與繼發性（疾病相關）
+      findings:
+        - 環境暴露史
+        - 麻醉/手術史
+        - 創傷/休克徵象
+        - 甲狀腺功能低下體徵
+    - step: 3
+      action: 併發症評估
+      details: ECG、血氣、血糖、凝血功能
+      findings:
+        - ECG：Osborn波、心搏過緩
+        - 代謝性酸中毒
+        - 低血糖
+        - 凝血功能異常
+    - step: 4
+      action: 分級回溫治療
+      details: 依嚴重程度選擇回溫策略，目標1-2°C/hr
+      findings:
+        - 輕度→被動回溫
+        - 中度→主動外部回溫
+        - 重度→核心回溫（溫熱輸液/腹腔灌洗）
+        - 監測afterdrop現象
+clinicalPearls:
+  - 體溫<34°C時動物停止顫抖——這是惡化徵兆而非改善
+  - Osborn波（J波）是ECG特徵表現，見於30-34°C
+  - 重度低體溫不要急於心肺復甦——先回溫至>30°C
+  - 回溫過程中注意afterdrop現象（周邊冷血回流導致核心溫度再降）
+  - 貓的回溫需特別注意輸液速率，避免肺水腫
+monitoringItems:
+  - 核心體溫（每15-30分鐘）
+  - 心電圖連續監測（心律不整）
+  - 血壓
+  - 血氣與電解質
+  - 血糖（q2-4h）
+  - 尿量
+  - 凝血功能
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: mydriasis
+    frequency: uncommon
+ddxSource: book

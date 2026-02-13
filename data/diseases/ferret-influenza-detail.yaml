@@ -3,17 +3,16 @@ nameEn: Ferret Influenza Detail
 nameZh: 雪貂 流感詳述
 bodySystem: endocrine
 description: 雪貂 流感詳述是雪貂常見的內分泌疾病,需要及時診斷與治療以改善預後。
-
 aliases:
-  - { alias: 雪貂 流感, language: zh }
-  - { alias: Ferret Influenza, language: en }
-
+  - alias: 雪貂 流感
+    language: zh
+  - alias: Ferret Influenza
+    language: en
 species:
   - speciesCommon: ferret
     speciesScientific: Mustela putorius furo
     prevalence: moderate
     notes: 常見於寵物飼養群體,需注意早期症狀
-
 etiology:
   categories:
     - name: 多因素
@@ -21,7 +20,6 @@ etiology:
         - 遺傳因素
         - 環境因素
         - 營養因素
-
 clinicalSigns:
   early:
     - 精神食慾下降
@@ -31,20 +29,18 @@ clinicalSigns:
     - 症狀逐漸惡化
     - 可能出現併發症
     - 生活品質下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
-      notes: "基本身體評估及症狀確認"
+      notes: 基本身體評估及症狀確認
     - name: 血液學檢查
-      notes: "CBC及生化學檢查評估整體健康狀況"
+      notes: CBC及生化學檢查評估整體健康狀況
     - name: 影像學檢查
-      notes: "X光或超音波檢查輔助診斷"
+      notes: X光或超音波檢查輔助診斷
   differentialDiagnoses:
     - 其他相關疾病
     - 系統性疾病
     - 併發症
-
 treatment:
   medical:
     - 支持療法:輸液及營養支持
@@ -52,40 +48,60 @@ treatment:
     - 必要時使用抗生素或抗病毒藥物
   surgical:
     - 視病情需要考慮手術治療
-
 prognosis:
-  general: "預後取決於診斷時機、疾病嚴重程度及治療反應,早期診斷與積極治療預後較佳"
-
+  general: 預後取決於診斷時機、疾病嚴重程度及治療反應,早期診斷與積極治療預後較佳
 prevention:
   - 提供適當飲食與環境
   - 定期健康檢查
   - 注意疾病早期症狀
   - 維持良好衛生環境
-
-
 guidelineRefs:
-  - sourceOrg: "bioRxiv : the preprint server for biology"
+  - sourceOrg: 'bioRxiv : the preprint server for biology'
     title: Immune History Modifies Disease Severity to HPAI H5N1 Clade 2.3.4.4b Viral Challenge.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11526876/
     type: research
-    pmid: "39484458"
+    pmid: '39484458'
   - sourceOrg: PLoS pathogens
     title: Phenotypic effects of mutations observed in the neuraminidase of human origin H5N1 influenza A viruses.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9934401/
     type: research
-    pmid: "36745654"
+    pmid: '36745654'
   - sourceOrg: Viruses
     title: Avian Influenza A Virus Infects Swine Airway Epithelial Cells without Prior Adaptation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7374723/
     type: research
-    pmid: "32481674"
+    pmid: '32481674'
   - sourceOrg: mBio
-    title: An Infant Mouse Model of Influenza Virus Transmission Demonstrates the Role of Virus-Specific Shedding, Humoral Immunity, and Sialidase Expression by Colonizing Streptococcus pneumoniae.
+    title: >-
+      An Infant Mouse Model of Influenza Virus Transmission Demonstrates the Role of Virus-Specific Shedding, Humoral
+      Immunity, and Sialidase Expression by Colonizing Streptococcus pneumoniae.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6299224/
     type: research
-    pmid: "30563897"
+    pmid: '30563897'
   - sourceOrg: Journal of virology
     title: Enhanced Human-Type Receptor Binding by Ferret-Transmissible H5N1 with a K193T Mutation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5923085/
     type: research
-    pmid: "29491160"
+    pmid: '29491160'
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+diagnosticAlgorithm:
+  title: 雪貂 流感詳述 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 基本身體評估及症狀確認
+        - name: 血液學檢查
+          notes: CBC及生化學檢查評估整體健康狀況
+        - name: 影像學檢查
+          notes: X光或超音波檢查輔助診斷
+ddxSource: auto-generated

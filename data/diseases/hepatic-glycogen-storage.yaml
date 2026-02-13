@@ -3,24 +3,28 @@ nameEn: Hepatic Glycogen Storage
 nameZh: 肝臟糖原儲積症
 bodySystem: metabolic
 description: 肝臟糖原儲積症是一組因糖原代謝酵素缺陷導致糖原在肝細胞中異常蓄積的遺傳性代謝疾病。犬貓中屬罕見先天性疾病，幼年動物出現肝腫大與低血糖為典型表現。
-
 aliases:
-  - { alias: 糖原累積病, language: zh }
-  - { alias: 肝醣儲積症, language: zh }
-  - { alias: Glycogen Storage Disease, language: en }
-  - { alias: GSD, language: en }
-  - { alias: Glycogenosis, language: en }
-
+  - alias: 糖原累積病
+    language: zh
+  - alias: 肝醣儲積症
+    language: zh
+  - alias: Glycogen Storage Disease
+    language: en
+  - alias: GSD
+    language: en
+  - alias: Glycogenosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: rare
-    notes: 犬報告的類型包括 GSD Ia（von Gierke disease，Maltese）、GSD III（Curly Coated Retriever、German Shepherd Dog）、GSD IV（Norwegian Forest Dog 相關品種）。多為常染色體隱性遺傳。
+    notes: >-
+      犬報告的類型包括 GSD Ia（von Gierke disease，Maltese）、GSD III（Curly Coated Retriever、German Shepherd Dog）、GSD IV（Norwegian
+      Forest Dog 相關品種）。多為常染色體隱性遺傳。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓報告極少。GSD IV 在 Norwegian Forest Cat 中有記載，以進行性神經肌肉病變為主要特徵。
-
 etiology:
   categories:
     - name: 酵素缺陷類型
@@ -33,7 +37,6 @@ etiology:
         - 常染色體隱性遺傳
         - 品種特異性基因突變
         - 近親繁殖增加發病風險
-
 clinicalSigns:
   early:
     - 肝腫大（幼年動物）
@@ -46,19 +49,17 @@ clinicalSigns:
     - 進行性肝纖維化
     - 神經肌肉病變（GSD IV）
     - 癲癇（嚴重低血糖時）
-
 diagnosis:
   primaryTests:
     - name: 肝臟活檢
-      notes: "組織病理學顯示肝細胞內大量糖原蓄積（PAS 染色強陽性，澱粉酶消化後減弱或消失）。電子顯微鏡可進一步區分類型。"
+      notes: 組織病理學顯示肝細胞內大量糖原蓄積（PAS 染色強陽性，澱粉酶消化後減弱或消失）。電子顯微鏡可進一步區分類型。
     - name: 酵素活性檢測
-      notes: "肝臟或肌肉組織中特異性酵素活性測定可確認 GSD 類型。需送專業實驗室。"
+      notes: 肝臟或肌肉組織中特異性酵素活性測定可確認 GSD 類型。需送專業實驗室。
   differentialDiagnoses:
     - 門體分流
     - 肝臟腫瘤
     - 類固醇誘導的糖原肝病
     - 其他先天性代謝缺陷
-
 treatment:
   medical:
     - 頻繁少量餵食預防低血糖
@@ -69,44 +70,74 @@ treatment:
   surgical:
     - 通常不適用手術治療
     - 肝臟移植理論上可行但實際應用極有限
-
 prognosis:
-  general: "預後取決於 GSD 類型。GSD Ia 犬以飲食管理可維持尚可的生活品質。GSD III 進展為肌肉病變者預後謹慎。GSD IV（如 Norwegian Forest Cat）通常在幼年即表現嚴重神經肌肉退化，預後不良。"
-
+  general: 預後取決於 GSD 類型。GSD Ia 犬以飲食管理可維持尚可的生活品質。GSD III 進展為肌肉病變者預後謹慎。GSD IV（如 Norwegian Forest Cat）通常在幼年即表現嚴重神經肌肉退化，預後不良。
 prevention:
   - 已知帶因子品種的基因篩檢
   - 避免帶因子個體繁殖
   - 繁殖前基因檢測
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Nutritional and Functional Properties of Colostrum in Puppies and Kittens.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8614261/
     type: review
-    pmid: "34827992"
+    pmid: '34827992'
     relevance: primary
   - sourceOrg: Journal of translational medicine
-    title: AT1R autoantibody impedes fetal hepatic glycogen synthesis by inhibiting PI3K/AKT signaling pathway during late gestation.
+    title: >-
+      AT1R autoantibody impedes fetal hepatic glycogen synthesis by inhibiting PI3K/AKT signaling pathway during late
+      gestation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12534919/
     type: research
-    pmid: "41107935"
+    pmid: '41107935'
     relevance: supporting
   - sourceOrg: Toxicology reports
-    title: Liver morphometry and histopathology effects in Astyanax lacustris exposed to lambda-cyhalothrin pyrethroid insecticide.
+    title: >-
+      Liver morphometry and histopathology effects in Astyanax lacustris exposed to lambda-cyhalothrin pyrethroid
+      insecticide.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11799965/
     type: research
-    pmid: "39917035"
+    pmid: '39917035'
     relevance: supporting
   - sourceOrg: International journal of molecular sciences
-    title: The Postnatal Offspring of Finasteride-Treated Male Rats Shows Hyperglycaemia, Elevated Hepatic Glycogen Storage and Altered GLUT2, IR, and AR Expression in the Liver.
+    title: >-
+      The Postnatal Offspring of Finasteride-Treated Male Rats Shows Hyperglycaemia, Elevated Hepatic Glycogen Storage
+      and Altered GLUT2, IR, and AR Expression in the Liver.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7865973/
     type: research
-    pmid: "33513940"
+    pmid: '33513940'
     relevance: supporting
   - sourceOrg: Oxidative medicine and cellular longevity
-    title: Black Seed Thymoquinone Improved Insulin Secretion, Hepatic Glycogen Storage, and Oxidative Stress in Streptozotocin-Induced Diabetic Male Wistar Rats.
+    title: >-
+      Black Seed Thymoquinone Improved Insulin Secretion, Hepatic Glycogen Storage, and Oxidative Stress in
+      Streptozotocin-Induced Diabetic Male Wistar Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5857299/
     type: research
-    pmid: "29686746"
+    pmid: '29686746'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: hepatomegaly
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肝臟糖原儲積症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - hepatomegaly 相關症狀
+        - weakness 相關症狀
+        - seizures 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 肝臟活檢
+          notes: 組織病理學顯示肝細胞內大量糖原蓄積（PAS 染色強陽性，澱粉酶消化後減弱或消失）。電子顯微鏡可進一步區分類型。
+        - name: 酵素活性檢測
+          notes: 肝臟或肌肉組織中特異性酵素活性測定可確認 GSD 類型。需送專業實驗室。
+ddxSource: auto-generated

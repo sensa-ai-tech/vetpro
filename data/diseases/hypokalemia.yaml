@@ -3,14 +3,17 @@ nameEn: Hypokalemia
 nameZh: 低鉀血症
 bodySystem: electrolyte
 description: 血清鉀離子濃度異常降低，為小動物臨床最常見的電解質異常之一。可導致肌肉無力（貓特徵性頸部腹屈）、心律不整及腎濃縮功能障礙。常見於慢性腎臟病、嘔吐/腹瀉、利尿劑使用及糖尿病酮酸中毒治療後。
-
 aliases:
-  - { alias: Hypokalaemia, language: en }
-  - { alias: Low Potassium, language: en }
-  - { alias: Potassium Depletion, language: en }
-  - { alias: 低血鉀, language: zh }
-  - { alias: 鉀離子過低, language: zh }
-
+  - alias: Hypokalaemia
+    language: en
+  - alias: Low Potassium
+    language: en
+  - alias: Potassium Depletion
+    language: en
+  - alias: 低血鉀
+    language: zh
+  - alias: 鉀離子過低
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -23,8 +26,9 @@ species:
   - speciesCommon: cattle
     speciesScientific: Bos taurus
     prevalence: common
-    notes: 食慾不振超過 2 天的成年牛（尤其泌乳牛）常見低鉀血症，因泌乳額外流失鉀離子。使用具礦物皮質激素活性的類固醇（如 isoflupredone acetate 治療酮病）後可引發嚴重低鉀血症肌病。血清鉀 <2.5 mmol/L 時出現嚴重肌無力與臥倒不起。
-
+    notes: >-
+      食慾不振超過 2 天的成年牛（尤其泌乳牛）常見低鉀血症，因泌乳額外流失鉀離子。使用具礦物皮質激素活性的類固醇（如 isoflupredone acetate 治療酮病）後可引發嚴重低鉀血症肌病。血清鉀 <2.5 mmol/L
+      時出現嚴重肌無力與臥倒不起。
 etiology:
   categories:
     - name: 腎臟流失增加
@@ -53,7 +57,6 @@ etiology:
     - name: 品種相關
       examples:
         - Burmese 家族性低鉀血症多發性肌病（Burmese Hypokalaemic Polymyopathy）
-
 clinicalSigns:
   early:
     - 輕度肌肉無力
@@ -72,18 +75,17 @@ clinicalSigns:
     - 嚴重心律不整（心房/心室期外收縮、心房顫動）
     - 低鉀性腎病（慢性低鉀血症導致腎小管空泡化）
     - 代謝性鹼中毒（低鉀與鹼中毒互為因果，形成惡性循環）
-
 diagnosis:
   primaryTests:
     - name: 血清電解質
-      notes: "犬正常 K+：3.5-5.5 mEq/L；貓正常 K+：3.5-5.8 mEq/L。輕度低鉀 3.0-3.5 mEq/L；中度 2.5-3.0 mEq/L；重度 <2.5 mEq/L。溶血檢體可能假性正常化"
+      notes: 犬正常 K+：3.5-5.5 mEq/L；貓正常 K+：3.5-5.8 mEq/L。輕度低鉀 3.0-3.5 mEq/L；中度 2.5-3.0 mEq/L；重度 <2.5 mEq/L。溶血檢體可能假性正常化
     - name: 心電圖（ECG）
-      notes: "K+ <3.0 mEq/L：ST 段壓低、T 波平坦/倒置、U 波出現。嚴重時：QT 間期延長、心房/心室期外收縮"
+      notes: K+ <3.0 mEq/L：ST 段壓低、T 波平坦/倒置、U 波出現。嚴重時：QT 間期延長、心房/心室期外收縮
     - name: 血液氣體分析
-      notes: "評估酸鹼狀態。代謝性鹼中毒常伴隨低鉀血症（互為因果）"
+      notes: 評估酸鹼狀態。代謝性鹼中毒常伴隨低鉀血症（互為因果）
   imaging:
     - name: 胸腔 X 光
-      notes: "評估心臟大小（利尿劑相關低鉀血症）。嚴重低鉀可見腸蠕動減少/ileus"
+      notes: 評估心臟大小（利尿劑相關低鉀血症）。嚴重低鉀可見腸蠕動減少/ileus
   differentialDiagnoses:
     - 多發性神經根神經炎 (Polyradiculoneuritis)
     - 重症肌無力 (Myasthenia Gravis)
@@ -97,7 +99,6 @@ diagnosis:
     - CK（creatine kinase 升高提示肌肉損傷/橫紋肌溶解）
     - 鎂離子檢測（低鎂血症會使低鉀血症難以矯正）
     - Aldosterone/Renin 比值（懷疑原發性醛固酮增多症時）
-
 treatment:
   principles:
     - 輕度低鉀血症可口服補充
@@ -107,16 +108,16 @@ treatment:
     - 治療根本病因
   medications:
     - name: KCl 靜脈補充
-      dose: "補充速率不超過 0.5 mEq/kg/hr。輕度：20 mEq/L 輸液添加；中度：40 mEq/L；重度：60-80 mEq/L（需 CRI pump 與心電圖監控）"
+      dose: 補充速率不超過 0.5 mEq/kg/hr。輕度：20 mEq/L 輸液添加；中度：40 mEq/L；重度：60-80 mEq/L（需 CRI pump 與心電圖監控）
       notes: 嚴禁 IV bolus 給予 KCl。速率過快可致致命性高鉀血症與心搏停止。周邊靜脈 KCl 濃度建議不超過 40 mEq/L（避免靜脈炎）
     - name: Potassium gluconate 口服
-      dose: "犬/貓 2-6 mEq/day PO，分次給予（Tumil-K 或 RenaKare）"
+      dose: 犬/貓 2-6 mEq/day PO，分次給予（Tumil-K 或 RenaKare）
       notes: 適用於慢性/輕度低鉀血症。CKD 貓長期維持補充。粉劑可混入食物
     - name: Potassium citrate 口服
-      dose: "犬 50-75 mg/kg PO BID-TID；貓 50 mg/kg PO BID"
+      dose: 犬 50-75 mg/kg PO BID-TID；貓 50 mg/kg PO BID
       notes: 同時具鹼化尿液效果，適用於合併代謝性酸中毒或 CaOx 結石風險患畜
     - name: MgSO4（硫酸鎂）
-      dose: "0.75-1 mEq/kg/day CRI IV"
+      dose: 0.75-1 mEq/kg/day CRI IV
       notes: 低鎂血症合併低鉀血症時必須同時矯正，否則低鉀難以糾正
   general:
     - DKA 胰島素治療時務必同時補鉀（胰島素驅使 K+ 進入細胞）
@@ -127,41 +128,100 @@ treatment:
     - Burmese 品種低鉀血症：長期口服補鉀可有效控制
     - 牛低鉀血症肌病：KCl IV (16 g/100 kg) 合併 PO (26 g/100 kg) 連續約 5 天。同時處理原發酮病與食慾不振
     - 具礦物皮質激素活性的類固醇（如 isoflupredone acetate）應謹慎使用——單次注射可使血鉀降低 25%，兩次注射可降低 46%
-
-prognosis: 輕至中度低鉀血症經適當補充預後極佳。CKD 貓的低鉀血症可透過長期口服補充有效管理。DKA 治療相關的低鉀血症在適當監測補充下預後良好。嚴重低鉀血症（<2.0 mEq/L）伴呼吸肌無力者需緊急處理。Burmese 家族性低鉀血症肌病在長期口服補鉀下可完全控制，但需終身補充。牛低鉀血症肌病存活率報告差異大（22-79%），預後取決於嚴重程度與原發病因能否解決。全身鉀平衡的恢復可能困難，血清鉀濃度不一定反映肌肉鉀含量。
-
+prognosis: >-
+  輕至中度低鉀血症經適當補充預後極佳。CKD 貓的低鉀血症可透過長期口服補充有效管理。DKA 治療相關的低鉀血症在適當監測補充下預後良好。嚴重低鉀血症（<2.0 mEq/L）伴呼吸肌無力者需緊急處理。Burmese
+  家族性低鉀血症肌病在長期口服補鉀下可完全控制，但需終身補充。牛低鉀血症肌病存活率報告差異大（22-79%），預後取決於嚴重程度與原發病因能否解決。全身鉀平衡的恢復可能困難，血清鉀濃度不一定反映肌肉鉀含量。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
     title: Electrolyte disturbances in critically ill dogs and cats
     url: https://pubmed.ncbi.nlm.nih.gov/23855441/
     type: review
-    pmid: "23855441"
+    pmid: '23855441'
   - sourceOrg: Journal of Feline Medicine and Surgery
-    title: "Hypokalaemia in cats: clinical signs and management"
+    title: 'Hypokalaemia in cats: clinical signs and management'
     url: https://pubmed.ncbi.nlm.nih.gov/24417798/
     type: review
-    pmid: "24417798"
+    pmid: '24417798'
   - sourceOrg: IRIS
     title: IRIS CKD Treatment Recommendations — Electrolyte Management
     url: https://www.iris-kidney.com/iris-staging-system
     type: guideline
   - sourceOrg: Journal of medical primatology
-    title: "Uremic encephalopathy in a rhesus macaque (Macaca mulatta): A case report and a brief review of the veterinary literature."
+    title: >-
+      Uremic encephalopathy in a rhesus macaque (Macaca mulatta): A case report and a brief review of the veterinary
+      literature.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6202283/
     type: review
-    pmid: "29693270"
+    pmid: '29693270'
     relevance: primary
-  - sourceOrg: "Diabetes, metabolic syndrome and obesity : targets and therapy"
-    title: "Correlation of acidosis-adjusted potassium level and cardiovascular outcomes in diabetic ketoacidosis: a systematic review."
+  - sourceOrg: 'Diabetes, metabolic syndrome and obesity : targets and therapy'
+    title: >-
+      Correlation of acidosis-adjusted potassium level and cardiovascular outcomes in diabetic ketoacidosis: a
+      systematic review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6689561/
     type: review
-    pmid: "31496770"
+    pmid: '31496770'
     relevance: primary
 pubmedQueries:
   - query: '"hypokalemia" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "ventroflexion" OR "CKD")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "MET"
-  sectionTitle: "HYPOKALEMIA IN ADULT CATTLE"
+  chapter: MET
+  sectionTitle: HYPOKALEMIA IN ADULT CATTLE
   pdfPage: 1045
+diagnosticAlgorithm:
+  title: 低血鉀症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估肌肉無力、精神狀態
+      findings:
+        - 全身性肌肉無力
+        - 頸部腹屈（貓）
+        - 精神遲鈍
+        - 腸蠕動減少
+    - step: 2
+      action: 電解質測量
+      details: 血清鉀及相關電解質
+      findings:
+        - 血清鉀<3.5 mEq/L
+        - 同時評估鈉、氯
+        - 血液氣體分析（代謝性鹼中毒）
+    - step: 3
+      action: 病因調查
+      details: 評估丟失原因或攝取不足
+      findings:
+        - 嘔吐腹瀉造成丟失
+        - 利尿劑使用
+        - 慢性腎病多尿期
+        - 食慾不振攝取不足
+    - step: 4
+      action: 心電圖與治療監測
+      details: 評估低鉀心臟影響
+      findings:
+        - U波出現
+        - T波平坦
+        - ST段壓低
+        - 補鉀速率監測
+clinicalPearls:
+  - 貓低血鉀頸部腹屈是典型表現
+  - 補鉀速度過快可致心律不整
+  - DKA治療中鉀會快速下降
+  - 低鎂會使低鉀難以糾正
+monitoringItems:
+  - 電解質q4-8h（補充期）
+  - ECG
+  - 肌肉力量
+associatedSymptoms:
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+ddxSource: book

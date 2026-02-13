@@ -3,13 +3,15 @@ nameEn: Otitis Externa Allergic
 nameZh: 過敏性外耳炎
 bodySystem: ear
 description: 由異位性皮膚炎或食物不良反應等過敏疾病引起的外耳道炎症，為犬外耳炎最常見的原發性病因，表現為耳道紅腫、搔癢及繼發感染。
-
 aliases:
-  - { alias: 過敏性耳炎, language: zh }
-  - { alias: 異位性外耳炎, language: zh }
-  - { alias: Allergic otitis, language: en }
-  - { alias: Atopic otitis, language: en }
-
+  - alias: 過敏性耳炎
+    language: zh
+  - alias: 異位性外耳炎
+    language: zh
+  - alias: Allergic otitis
+    language: en
+  - alias: Atopic otitis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓的過敏性外耳炎較犬少見，但食物不良反應及異位性皮膚炎均可能涉及耳道。
-
 etiology:
   categories:
     - name: 過敏原因
@@ -32,7 +33,6 @@ etiology:
         - Malassezia pachydermatis 過度增殖
         - 細菌繼發感染（Staphylococcus spp.）
         - 耳道微環境改變（pH、濕度、溫度）
-
 clinicalSigns:
   early:
     - 耳道紅斑與搔癢
@@ -45,20 +45,18 @@ clinicalSigns:
     - 大量分泌物
     - 耳臭味加劇
     - 疼痛
-
 diagnosis:
   primaryTests:
     - name: 耳道細胞學
-      notes: "評估酵母菌與細菌數量。過敏性耳炎常見 Malassezia 過度增殖。嗜酸性球增多提示過敏病因"
+      notes: 評估酵母菌與細菌數量。過敏性耳炎常見 Malassezia 過度增殖。嗜酸性球增多提示過敏病因
     - name: 過敏病史評估
-      notes: "詢問季節性、皮膚其他部位症狀、食物史。排除食物不良反應需 8 週排除飲食試驗"
+      notes: 詢問季節性、皮膚其他部位症狀、食物史。排除食物不良反應需 8 週排除飲食試驗
   differentialDiagnoses:
     - 耳蟎感染
     - 異物性外耳炎
     - 原發性角化異常
     - 內分泌疾病（甲狀腺功能低下）
     - 自體免疫性疾病
-
 treatment:
   medical:
     - 治療原發過敏疾病（過敏原特異性免疫治療 ASIT 或 Oclacitinib 0.4-0.6 mg/kg PO BID×14天後 SID）
@@ -67,33 +65,76 @@ treatment:
     - 嚴重繼發感染需全身性抗生素/抗黴菌藥
     - 食物不良反應——排除飲食試驗後長期食物管理
   surgical: []
-
 prognosis:
-  general: "原發過敏疾病若能有效控制，耳炎預後良好但需長期管理。過敏性外耳炎常反覆發作，維護性治療可減少發作頻率。未控制的過敏疾病將導致慢性耳道不可逆變化。"
-
+  general: 原發過敏疾病若能有效控制，耳炎預後良好但需長期管理。過敏性外耳炎常反覆發作，維護性治療可減少發作頻率。未控制的過敏疾病將導致慢性耳道不可逆變化。
 prevention:
   - 積極管理潛在過敏疾病
   - 定期耳道檢查及預防性清潔
   - 食物不良反應確認後嚴格飲食管理
   - 避免已知過敏原暴露
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "The role of the microbiome in allergic dermatitis-related otitis externa: a multi-species comparative review."
+    title: 'The role of the microbiome in allergic dermatitis-related otitis externa: a multi-species comparative review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11683847/
     type: review
-    pmid: "39736936"
+    pmid: '39736936'
     relevance: primary
   - sourceOrg: Frontiers in immunology
     title: Host Responses to Malassezia spp. in the Mammalian Skin.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5702624/
     type: review
-    pmid: "29213272"
+    pmid: '29213272'
     relevance: supporting
-  - sourceOrg: "Veterinary journal (London, England : 1997)"
+  - sourceOrg: 'Veterinary journal (London, England : 1997)'
     title: Malassezia dermatitis in dogs and cats.
     url: https://pubmed.ncbi.nlm.nih.gov/38431127/
     type: review
-    pmid: "38431127"
+    pmid: '38431127'
     relevance: primary
+diagnosticAlgorithm:
+  title: 急性外耳炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估耳部症狀與既往史
+      findings:
+        - 甩頭與搔抓耳部
+        - 耳道分泌物增多
+        - 耳部疼痛與紅腫
+        - 耳廓內側紅斑
+    - step: 2
+      action: 耳鏡檢查
+      details: 使用耳鏡評估耳道與鼓膜
+      findings:
+        - 耳道紅腫與狹窄
+        - 分泌物性質（蠟狀/膿性/褐色）
+        - 鼓膜完整性評估
+        - 耳道異物或腫塊排除
+    - step: 3
+      action: 耳分泌物細胞學
+      details: 耳拭子採樣做細胞學檢查
+      findings:
+        - 球菌或桿菌感染
+        - 馬拉色菌（酵母菌）增生
+        - 嗜中性球與炎症細胞
+        - 耳蟎蟲體或蟲卵
+    - step: 4
+      action: 確診與病因分析
+      details: 確認感染類型並追究潛在病因
+      findings:
+        - 確認細菌/酵母菌/寄生蟲感染類型
+        - 評估過敏性疾病作為主要病因
+        - 評估耳道構造異常（垂耳犬種）
+        - 必要時進行細菌培養與藥敏試驗
+clinicalPearls:
+  - 外耳炎通常是潛在問題（特別是過敏）的表現，而非獨立疾病
+  - 耳道細胞學是選擇初始治療的關鍵——球菌vs桿菌vs酵母菌的治療不同
+  - 鼓膜破裂時許多耳用藥物（特別是aminoglycosides）禁用
+  - 反覆外耳炎的犬應評估異位性皮膚炎和食物過敏
+  - 不應在未確認鼓膜完整性的情況下使用耳毒性藥物
+monitoringItems:
+  - 治療後7-14天複診評估反應
+  - 細胞學複查確認感染控制
+  - 反覆發作者每1-3個月定期耳道檢查
+  - 過敏管理的長期追蹤
+ddxSource: book

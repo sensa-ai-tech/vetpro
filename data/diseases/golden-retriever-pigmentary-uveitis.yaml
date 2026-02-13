@@ -3,19 +3,20 @@ nameEn: Golden Retriever Pigmentary Uveitis
 nameZh: 黃金獵犬色素性葡萄膜炎
 bodySystem: ophthalmology
 description: 黃金獵犬色素性葡萄膜炎（GRPU）是該品種特有的遺傳性眼疾，特徵為虹膜色素囊腫形成、色素播散與慢性葡萄膜炎，常導致繼發性青光眼與失明。通常中老年發病。
-
 aliases:
-  - { alias: 黃金獵犬 GRPU, language: zh }
-  - { alias: 色素播散性葡萄膜炎, language: zh }
-  - { alias: Golden Retriever GRPU, language: en }
-  - { alias: Pigmentary and cystic glaucoma, language: en }
-
+  - alias: 黃金獵犬 GRPU
+    language: zh
+  - alias: 色素播散性葡萄膜炎
+    language: zh
+  - alias: Golden Retriever GRPU
+    language: en
+  - alias: Pigmentary and cystic glaucoma
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 黃金獵犬特有疾病。通常 6-10 歲發病。盛行率估計約 5-10%。雙側發病但可能不同步。遺傳模式尚未完全明確。
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -29,7 +30,6 @@ etiology:
         - 色素播散至前房角
         - 慢性前葡萄膜炎
         - 房水流出受阻
-
 clinicalSigns:
   early:
     - 虹膜色素囊腫（裂隙燈下可見）
@@ -43,21 +43,19 @@ clinicalSigns:
     - 晶體脫位
     - 角膜水腫
     - 失明
-
 diagnosis:
   primaryTests:
     - name: 裂隙燈檢查
-      notes: "觀察虹膜色素囊腫、前房色素沉著、虹膜後沾黏"
+      notes: 觀察虹膜色素囊腫、前房色素沉著、虹膜後沾黏
     - name: 眼壓測量
-      notes: "監測青光眼發展。早期眼壓可能正常"
+      notes: 監測青光眼發展。早期眼壓可能正常
     - name: 眼底超音波
-      notes: "評估色素囊腫大小、晶體位置、後段變化"
+      notes: 評估色素囊腫大小、晶體位置、後段變化
   differentialDiagnoses:
     - 原發性青光眼
     - 其他原因之葡萄膜炎
     - 眼內腫瘤
     - 晶體蛋白誘發葡萄膜炎
-
 treatment:
   medical:
     - 局部抗炎（Prednisolone acetate 1% 或 NSAIDs 點眼液）
@@ -67,19 +65,40 @@ treatment:
   surgical:
     - 青光眼晚期：睫狀體雷射光凝固術
     - 嚴重無功能眼：眼球摘除術
-
 prognosis:
-  general: "預後謹慎。疾病為進行性，繼發青光眼是視力喪失的主因。早期發現與積極治療可延緩進展。約 50% 受影響犬最終發展為青光眼。終生需要眼科追蹤。"
-
+  general: 預後謹慎。疾病為進行性，繼發青光眼是視力喪失的主因。早期發現與積極治療可延緩進展。約 50% 受影響犬最終發展為青光眼。終生需要眼科追蹤。
 prevention:
   - 繁殖犬年度眼科檢查
   - 發現色素囊腫的犬不建議繁殖
   - 早期篩選可及早治療
-
-
 guidelineRefs:
   - sourceOrg: Veterinary ophthalmology
-    title: "Golden retriever pigmentary uveitis: Challenges of diagnosis and treatment."
+    title: 'Golden retriever pigmentary uveitis: Challenges of diagnosis and treatment.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7540390/
     type: consensus
-    pmid: "32639654"
+    pmid: '32639654'
+associatedSymptoms:
+  - symptomId: blindness
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 黃金獵犬色素性葡萄膜炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - blindness 相關症狀
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 裂隙燈檢查
+          notes: 觀察虹膜色素囊腫、前房色素沉著、虹膜後沾黏
+        - name: 眼壓測量
+          notes: 監測青光眼發展。早期眼壓可能正常
+        - name: 眼底超音波
+          notes: 評估色素囊腫大小、晶體位置、後段變化
+ddxSource: auto-generated

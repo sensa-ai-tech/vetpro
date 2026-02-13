@@ -3,11 +3,11 @@ nameEn: Congenital Megaesophagus
 nameZh: 先天性巨食道症
 bodySystem: gastrointestinal
 description: 先天性巨食道症為食道神經肌肉發育異常導致食道蠕動缺失與擴張。幼犬斷奶期開始出現反流。德國牧羊犬、大丹犬、愛爾蘭雪達犬為高風險品種。吸入性肺炎為主要致命併發症。
-
 aliases:
-  - { alias: 先天性巨食道症, language: zh }
-  - { alias: Congenital Megaesophagus, language: en }
-
+  - alias: 先天性巨食道症
+    language: zh
+  - alias: Congenital Megaesophagus
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 先天性疾病，偶見於貓。
-
 etiology:
   categories:
     - name: 先天/遺傳因素
@@ -23,18 +22,15 @@ etiology:
         - 遺傳性發育異常
         - 基因突變
         - 胚胎發育障礙
-
 clinicalSigns:
   early:
     - 出生時或幼年期即可發現異常
   progressive:
     - 症狀隨年齡可能穩定或進展
-
 diagnosis:
   primaryTests:
     - name: 臨床與影像檢查
       notes: 依據具體疾病選擇適當檢查方法。基因檢測可確診部分遺傳性疾病
-
 treatment:
   principles:
     - 依疾病類型選擇保守或手術治療
@@ -42,9 +38,58 @@ treatment:
   general:
     - 對症支持治療
     - 基因篩選避免繁殖出受影響個體
-
 prognosis: 預後謹慎。部分幼犬隨成長可能改善。需終生姿勢性餵食管理。吸入性肺炎為主要死因。飼主配合度決定長期預後。
-
 pubmedQueries:
   - query: '"Congenital Megaesophagus" AND (veterinary OR canine OR feline) AND (treatment OR management)'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 先天性巨食道症 診斷流程
+  steps:
+    - step: 1
+      action: 病史評估
+      details: 區分反流與嘔吐，確認發病年齡
+      findings:
+        - 被動反流未消化食物
+        - 斷奶後發病
+        - 液體較固體易通過
+    - step: 2
+      action: 胸部X光
+      details: 評估食道擴張和併發症
+      findings:
+        - 食道瀰漫性擴張
+        - 氣管背側位移
+        - 吸入性肺炎徵象
+    - step: 3
+      action: 對比食道攝影
+      details: 鋇劑吞嚥確認食道蠕動喪失
+      findings:
+        - 鋇劑滯留於食道
+        - 無有效蠕動波
+        - 排除局部梗阻
+    - step: 4
+      action: 排除繼發原因
+      details: 排除後天性巨食道症的已知病因
+      findings:
+        - AChR抗體陰性（排除MG）
+        - 甲狀腺功能正常
+        - PRAA排除
+clinicalPearls:
+  - 反流（被動、管狀未消化食物）vs嘔吐（主動、腹部用力、含膽汁）是關鍵鑑別
+  - Bailey chair垂直餵食是最重要的管理措施
+  - 先天性型部分可隨成長恢復，但後天性型恢復率極低
+  - 每隻犬對食物質地的反應不同，需個別試驗最佳餵食方式
+monitoringItems:
+  - 體重和體態追蹤
+  - 肺部X光監測吸入性肺炎
+  - 餵食方式調整
+  - 食道功能恢復評估（幼犬定期追蹤）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: halitosis-stomatitis
+    frequency: rare
+ddxSource: book

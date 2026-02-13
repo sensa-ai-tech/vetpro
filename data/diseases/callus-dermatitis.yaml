@@ -3,12 +3,13 @@ nameEn: Callus Dermatitis
 nameZh: 胼胝性皮膚炎
 bodySystem: dermatology
 description: 壓力點（肘部、飛節、坐骨結節）長期壓迫導致的皮膚增厚與角化。大型犬趴在硬地面的常見問題。感染發展為胼胝性膿皮症（callus pyoderma）時需要抗生素治療。
-
 aliases:
-  - { alias: "Callus Pyoderma", language: en }
-  - { alias: "Pressure Point Granuloma", language: en }
-  - { alias: "壓迫性胼胝", language: zh }
-
+  - alias: Callus Pyoderma
+    language: en
+  - alias: Pressure Point Granuloma
+    language: en
+  - alias: 壓迫性胼胝
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 反覆壓迫
@@ -24,7 +24,6 @@ etiology:
         - 趴在硬地面（水泥、磁磚）
         - 肘部最常見
         - 體重過重加重
-
 clinicalSigns:
   early:
     - 肘部皮膚無毛增厚
@@ -34,14 +33,12 @@ clinicalSigns:
     - 胼胝龜裂出血
     - 繼發細菌感染（callus pyoderma）
     - 深層膿瘍形成
-
 diagnosis:
   primaryTests:
     - name: 臨床視診
       notes: 大型犬壓力點的典型角化增厚
     - name: 細胞學
       notes: 感染時做膿液細胞學
-
 treatment:
   principles:
     - 減少壓力（柔軟床墊）
@@ -52,9 +49,33 @@ treatment:
     - 感染時全身性抗生素
     - 嚴重膿瘍需手術引流
     - 體重管理
-
 prognosis: 提供適當床墊可預防惡化。已形成的胼胝不可逆。感染控制後預後良好。
-
 pubmedQueries:
   - query: '"callus dermatitis" AND (veterinary OR canine) AND ("treatment" OR "pressure")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 胼胝性皮膚炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床視診
+          notes: 大型犬壓力點的典型角化增厚
+        - name: 細胞學
+          notes: 感染時做膿液細胞學
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 減少壓力（柔軟床墊）
+        - 治療繼發感染
+ddxSource: auto-generated

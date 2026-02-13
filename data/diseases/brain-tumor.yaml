@@ -3,24 +3,28 @@ nameEn: Brain Tumor
 nameZh: 腦腫瘤
 bodySystem: oncology
 description: 顱內原發性或轉移性腫瘤。犬最常見的原發腦腫瘤為腦膜瘤與膠質瘤，貓以腦膜瘤為主。為老年犬貓癲癇發作的重要鑑別診斷。
-
 aliases:
-  - { alias: Intracranial Neoplasia, language: en }
-  - { alias: Brain Neoplasm, language: en }
-  - { alias: CNS Tumor, language: en }
-  - { alias: 顱內腫瘤, language: zh }
-  - { alias: 腦瘤, language: zh }
-
+  - alias: Intracranial Neoplasia
+    language: en
+  - alias: Brain Neoplasm
+    language: en
+  - alias: CNS Tumor
+    language: en
+  - alias: 顱內腫瘤
+    language: zh
+  - alias: 腦瘤
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: uncommon
-    notes: 發生率約 14.5/100,000 犬-年。好發 >5 歲，中位年齡 9 歲。長頭種 (Collie、Golden Retriever) 膠質瘤較多，短頭種 (Boxer、Boston Terrier) 膠質瘤也常見。腦膜瘤好發於長鼻品種。Boxer 腦膜瘤與膠質瘤均有品種好發性。
+    notes: >-
+      發生率約 14.5/100,000 犬-年。好發 >5 歲，中位年齡 9 歲。長頭種 (Collie、Golden Retriever) 膠質瘤較多，短頭種 (Boxer、Boston Terrier)
+      膠質瘤也常見。腦膜瘤好發於長鼻品種。Boxer 腦膜瘤與膠質瘤均有品種好發性。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 腦膜瘤為貓最常見原發腦腫瘤 (約 60%)。中位年齡 >10 歲。淋巴瘤為重要鑑別。貓腦膜瘤手術預後相對犬為佳。
-
 etiology:
   categories:
     - name: 原發性腦腫瘤 — 軸外 (extra-axial)
@@ -44,7 +48,6 @@ etiology:
         - 黑色素瘤轉移
         - 乳腺瘤轉移
         - 肺腺癌轉移
-
 clinicalSigns:
   early:
     - 癲癇發作 (新發作癲癇在老年犬高度疑似腦腫瘤)
@@ -62,29 +65,27 @@ clinicalSigns:
     - 顱內壓升高 (Cushing reflex：高血壓、心搏過緩)
     - 天幕疝脫 (瞳孔散大、去大腦姿勢)
     - 枕骨大孔疝脫 (呼吸停止)
-
 diagnosis:
   primaryTests:
     - name: MRI (含對比增強)
-      notes: "金標準。腦膜瘤：軸外、均勻對比增強、dural tail sign。膠質瘤：軸內、不均勻增強、腫塊效應。腫瘤周圍水腫、中線偏移"
+      notes: 金標準。腦膜瘤：軸外、均勻對比增強、dural tail sign。膠質瘤：軸內、不均勻增強、腫塊效應。腫瘤周圍水腫、中線偏移
     - name: 神經學檢查
-      notes: "定位病灶：前腦、腦幹、小腦、多灶性。老年犬新發癲癇需高度懷疑腫瘤"
+      notes: 定位病灶：前腦、腦幹、小腦、多灶性。老年犬新發癲癇需高度懷疑腫瘤
     - name: CT (含對比增強)
-      notes: "替代 MRI。骨性侵犯評估優。腦膜瘤均勻增強，膠質瘤環狀或不均勻增強"
+      notes: 替代 MRI。骨性侵犯評估優。腦膜瘤均勻增強，膠質瘤環狀或不均勻增強
   imaging:
     - name: 腦部 MRI
-      notes: "首選影像。T1W、T2W、FLAIR、T1W+Gd 多序列評估"
+      notes: 首選影像。T1W、T2W、FLAIR、T1W+Gd 多序列評估
     - name: 腦部 CT
-      notes: "替代選擇。鈣化評估、骨性侵犯評估較佳"
+      notes: 替代選擇。鈣化評估、骨性侵犯評估較佳
     - name: 胸腹影像
-      notes: "轉移篩檢 (胸腔 X 光、腹部超音波) 排除轉移性腦腫瘤或原發腫瘤分期"
+      notes: 轉移篩檢 (胸腔 X 光、腹部超音波) 排除轉移性腦腫瘤或原發腫瘤分期
   additional:
     - 腦脊髓液分析 (可見蛋白升高、偶見腫瘤細胞；顱內壓高時有風險)
     - CBC/生化 (全身評估與術前檢查)
     - 凝血功能
     - 組織病理學 (手術取得或 CT 引導穿刺活檢，為確定診斷)
     - 免疫組化 (區分腫瘤類型)
-
 treatment:
   principles:
     - 治療選擇取決於腫瘤類型、位置、大小與病患狀態
@@ -94,19 +95,19 @@ treatment:
     - 姑息治療可改善短期生活品質
   medications:
     - name: Prednisolone (姑息)
-      dose: "1-2 mg/kg PO SID"
+      dose: 1-2 mg/kg PO SID
       notes: 減少腫瘤周圍水腫。姑息治療中位存活約 2 個月。非腫瘤殺傷作用
     - name: Phenobarbital
-      dose: "2.5-3 mg/kg PO BID"
+      dose: 2.5-3 mg/kg PO BID
       notes: 抗癲癇藥物。腦腫瘤相關癲癇控制
     - name: Levetiracetam
-      dose: "20 mg/kg PO TID"
+      dose: 20 mg/kg PO TID
       notes: 抗癲癇藥物。肝臟代謝負擔小，適合腫瘤患犬
     - name: Lomustine (CCNU)
-      dose: "60-90 mg/m² PO 每 6-8 週"
+      dose: 60-90 mg/m² PO 每 6-8 週
       notes: 對膠質瘤有一定療效 (可穿越血腦屏障)。需監測骨髓抑制與肝毒性
     - name: Hydroxyurea
-      dose: "50 mg/kg PO 隔日"
+      dose: 50 mg/kg PO 隔日
       notes: 腦膜瘤輔助化療。證據有限但臨床有使用
   general:
     - 手術切除 (開顱術，腦膜瘤首選)
@@ -117,41 +118,102 @@ treatment:
     - 顱內壓管理 (Mannitol 0.5-1 g/kg IV)
     - 抗癲癇藥物 (多數腦腫瘤犬需要)
     - 支持療法與生活品質評估
-
 prognosis: 差異極大。僅姑息治療 (類固醇) 中位存活約 1-2 個月。犬腦膜瘤手術中位存活 7-18 個月，加放射治療可延長。貓腦膜瘤手術預後佳，中位存活 26-40 個月。犬膠質瘤放射治療中位存活 12-14 個月。轉移性腦腫瘤預後最差。
-
 guidelineRefs:
   - sourceOrg: Veterinary and Comparative Oncology
     title: Canine intracranial meningiomas — diagnosis, treatment, and prognosis
     url: https://pubmed.ncbi.nlm.nih.gov/23730877/
     type: review
-    pmid: "23730877"
+    pmid: '23730877'
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: Prognostic factors for survival in dogs with intracranial meningiomas treated by surgery
     url: https://pubmed.ncbi.nlm.nih.gov/24708069/
     type: research
-    pmid: "24708069"
+    pmid: '24708069'
   - sourceOrg: Veterinary Radiology and Ultrasound
     title: Stereotactic radiosurgery for treatment of intracranial tumors in dogs
     url: https://pubmed.ncbi.nlm.nih.gov/30430675/
     type: research
-    pmid: "30430675"
+    pmid: '30430675'
   - sourceOrg: Autophagy
     title: Guidelines for the use and interpretation of assays for monitoring autophagy (4th edition)1.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7996087/
     type: guideline
-    pmid: "33634751"
-  - sourceOrg: "Veterinary radiology &amp; ultrasound : the official journal of the American College of Veterinary Radiology and the International Veterinary Radiology Association"
-    title: Consensus recommendations on standardized magnetic resonance imaging protocols for multicenter canine brain tumor clinical trials.
+    pmid: '33634751'
+  - sourceOrg: >-
+      Veterinary radiology &amp; ultrasound : the official journal of the American College of Veterinary Radiology and
+      the International Veterinary Radiology Association
+    title: >-
+      Consensus recommendations on standardized magnetic resonance imaging protocols for multicenter canine brain tumor
+      clinical trials.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5942214/
     type: consensus
-    pmid: "29522650"
+    pmid: '29522650'
     relevance: primary
 pubmedQueries:
-  - query: '"brain tumor" OR "intracranial neoplasia" AND (dog OR cat) AND ("meningioma" OR "glioma" OR "treatment" OR "surgery")'
+  - query: >-
+      "brain tumor" OR "intracranial neoplasia" AND (dog OR cat) AND ("meningioma" OR "glioma" OR "treatment" OR
+      "surgery")
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "EXL"
-  sectionTitle: "NEOPLASIA"
+  chapter: EXL
+  sectionTitle: NEOPLASIA
   pdfPage: 1867
+diagnosticAlgorithm:
+  title: 腦腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 神經學評估
+      details: 完整神經學檢查定位病灶
+      findings:
+        - 前腦徵象
+        - 後腦徵象
+        - 腦幹徵象
+        - 多灶性
+    - step: 2
+      action: 基礎檢查
+      details: 血液學排除代謝性原因和系統性疾病
+      findings:
+        - 代謝正常
+        - 電解質異常
+        - 原發腫瘤證據
+    - step: 3
+      action: 腦部MRI
+      details: 增強MRI確認腫瘤存在、位置和特徵
+      findings:
+        - 腦膜瘤（均勻增強）
+        - 膠質瘤（環狀增強）
+        - 轉移性腫瘤（多灶性）
+    - step: 4
+      action: 治療決策
+      details: 根據腫瘤類型、位置和患者狀態選擇治療方案
+      findings:
+        - 手術候選
+        - 放療候選
+        - 姑息治療
+clinicalPearls:
+  - 老年犬新發癲癇的首要鑑別診斷是腦腫瘤
+  - 貓腦膜瘤通常為表淺型，手術完整切除預後明顯優於犬
+  - 短頭種犬（拳師、波士頓梗）是膠質瘤的高風險品種
+monitoringItems:
+  - 抗癲癇藥物血清濃度
+  - 每3-6個月MRI追蹤
+  - 神經功能評分定期評估
+  - 類固醇副作用監測
+associatedSymptoms:
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: nystagmus
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: uncommon
+ddxSource: book

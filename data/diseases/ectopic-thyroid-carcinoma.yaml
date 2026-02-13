@@ -3,11 +3,11 @@ nameEn: Ectopic Thyroid Carcinoma
 nameZh: 異位甲狀腺癌
 bodySystem: oncology
 description: 發生在正常甲狀腺位置以外的甲狀腺組織的惡性腫瘤。可位於舌根、前縱膈或心基底部。因位置異常而診斷較晚。
-
 aliases:
-  - { alias: "Ectopic Thyroid Tumor", language: en }
-  - { alias: "異位甲狀腺腫瘤", language: zh }
-
+  - alias: Ectopic Thyroid Tumor
+    language: en
+  - alias: 異位甲狀腺腫瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,14 +15,12 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 腫瘤性
       examples:
         - 胚胎期遷移甲狀腺組織惡性變
         - 可位於舌根至心基底部沿線任何位置
-
 clinicalSigns:
   early:
     - 頸部或前縱膈腫塊
@@ -31,7 +29,6 @@ clinicalSigns:
     - 腫塊增大壓迫周圍結構
     - 吞嚥困難
     - 呼吸困難
-
 diagnosis:
   primaryTests:
     - name: CT / MRI
@@ -40,7 +37,6 @@ diagnosis:
       notes: 碘攝取確認甲狀腺來源
     - name: 活檢
       notes: 組織病理確診
-
 treatment:
   principles:
     - 手術切除
@@ -50,16 +46,47 @@ treatment:
     - I-131 放射性碘治療
     - 化療（Doxorubicin）
     - 甲狀腺替代治療（切除後）
-
 prognosis: 取決於可切除性與轉移狀態。完全切除預後中等。不完全切除預後較差。
-
-
 guidelineRefs:
   - sourceOrg: Comparative medicine
     title: Thyroid Adenoma and Ectopic Thyroid Carcinoma in a Guinea Pig (Cavia porcellus).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6008719/
     type: case-report
-    pmid: "29852894"
+    pmid: '29852894'
 pubmedQueries:
   - query: '"ectopic thyroid carcinoma" AND (veterinary OR canine) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 異位甲狀腺癌 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - dysphagia 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: CT / MRI
+          notes: 頸部至前縱膈區域腫塊
+        - name: 甲狀腺掃描（核醫學）
+          notes: 碘攝取確認甲狀腺來源
+        - name: 活檢
+          notes: 組織病理確診
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術切除
+        - 放射性碘治療
+ddxSource: auto-generated

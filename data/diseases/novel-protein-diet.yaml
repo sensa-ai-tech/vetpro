@@ -3,12 +3,13 @@ nameEn: Novel Protein Diet
 nameZh: 新奇蛋白飲食
 bodySystem: metabolic
 description: 使用犬貓過去未接觸過的蛋白質來源製成的飲食，用於食物過敏或不耐受的診斷及管理。常見新奇蛋白包括鴨肉、鹿肉、袋鼠肉、鱷魚肉等。
-
 aliases:
-  - { alias: 單一蛋白飲食, language: zh }
-  - { alias: Limited Ingredient Diet, language: en }
-  - { alias: Novel Protein Source, language: en }
-
+  - alias: 單一蛋白飲食
+    language: zh
+  - alias: Limited Ingredient Diet
+    language: en
+  - alias: Novel Protein Source
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓食物過敏較犬少見但存在
-
 etiology:
   categories:
     - name: 使用時機
@@ -33,7 +33,6 @@ etiology:
         - 袋鼠肉、鱷魚肉
         - 兔肉、野豬肉
         - 鮭魚(若過去未接觸)
-
 clinicalSigns:
   early:
     - 食物過敏症狀改善(若為致敏原移除)
@@ -42,19 +41,17 @@ clinicalSigns:
   progressive:
     - 若選擇不當蛋白：症狀持續
     - 若對新蛋白過敏：症狀復發
-
 diagnosis:
   primaryTests:
     - name: 排除試驗飲食
-      notes: "8-12週單一新奇蛋白飲食"
+      notes: 8-12週單一新奇蛋白飲食
     - name: 激發試驗
-      notes: "症狀緩解後重新引入舊蛋白質確認過敏原"
+      notes: 症狀緩解後重新引入舊蛋白質確認過敏原
   differentialDiagnoses:
     - 食物過敏
     - 環境過敏
     - 寄生蟲
     - 其他皮膚病
-
 treatment:
   medical:
     - 選擇適當新奇蛋白
@@ -69,20 +66,38 @@ treatment:
     - Hills z/d、Royal Canin Anallergenic等
     - 或選擇新奇蛋白配方
     - 自製飲食需獸醫營養師指導
-
 prognosis:
-  general: "食物過敏犬貓使用正確新奇蛋白可完全緩解症狀；需長期維持飲食"
-
+  general: 食物過敏犬貓使用正確新奇蛋白可完全緩解症狀；需長期維持飲食
 prevention:
   - 早期多樣化蛋白質接觸(爭議)
   - 避免過度使用"新奇"蛋白作為日常飲食
   - 診斷確定前保留未來新奇蛋白選項
-
-
 guidelineRefs:
   - sourceOrg: BMC veterinary research
-    title: Undeclared animal species in dry and wet novel and hydrolyzed protein diets for dogs and cats detected by microarray analysis.
+    title: >-
+      Undeclared animal species in dry and wet novel and hydrolyzed protein diets for dogs and cats detected by
+      microarray analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6020431/
     type: research
-    pmid: "29945610"
+    pmid: '29945610'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: common
+diagnosticAlgorithm:
+  title: 新奇蛋白飲食 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 排除試驗飲食
+          notes: 8-12週單一新奇蛋白飲食
+        - name: 激發試驗
+          notes: 症狀緩解後重新引入舊蛋白質確認過敏原
+ddxSource: auto-generated

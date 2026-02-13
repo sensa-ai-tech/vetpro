@@ -3,17 +3,16 @@ nameEn: Rabbit Acute GI Obstruction
 nameZh: 兔急性胃腸道阻塞
 bodySystem: gastrointestinal
 description: 兔胃腸道完全或部分阻塞,常因毛球、異物或腸套疊引起。臨床表現為急性厭食、腹痛及無糞便,需緊急影像學檢查鑑別是否需外科手術。
-
 aliases:
-  - { alias: 兔腸阻塞, language: zh }
-  - { alias: Rabbit Intestinal Obstruction, language: en }
-
+  - alias: 兔腸阻塞
+    language: zh
+  - alias: Rabbit Intestinal Obstruction
+    language: en
 species:
   - speciesCommon: rabbit
     speciesScientific: Oryctolagus cuniculus
     prevalence: moderate
     notes: 長毛品種（如安哥拉兔）毛球阻塞風險較高
-
 etiology:
   categories:
     - name: 毛球症
@@ -26,7 +25,6 @@ etiology:
     - name: 腸套疊或扭轉
       examples:
         - 繼發於GI停滯或腸炎
-
 clinicalSigns:
   early:
     - 急性厭食
@@ -37,42 +35,58 @@ clinicalSigns:
     - 腹部明顯膨大
     - 虛弱、體溫過低
     - 休克
-
 diagnosis:
   primaryTests:
     - name: 腹部X光
-      notes: "胃或腸道明顯擴張、氣體積聚、可能見異物陰影"
+      notes: 胃或腸道明顯擴張、氣體積聚、可能見異物陰影
     - name: 腹部超音波
-      notes: "評估腸道蠕動、腸套疊、腹水"
+      notes: 評估腸道蠕動、腸套疊、腹水
     - name: 鋇劑造影
-      notes: "確認阻塞位置（需謹慎,可能加重病情）"
+      notes: 確認阻塞位置（需謹慎,可能加重病情）
   differentialDiagnoses:
     - GI停滯
     - 腸扭轉
     - 腸套疊
     - 巨結腸症
-
 treatment:
   medical:
-    - 內科治療（部分阻塞或毛球）：
-      - 積極輸液 LRS 100-150 mL/kg/day
-      - 疼痛管理 Meloxicam + Buprenorphine
-      - 促進蠕動 Metoclopramide 0.5-1 mg/kg SC TID
-      - 人工餵食高纖維食物
-      - 鳳梨汁或木瓜酵素（幫助分解毛髮,證據有限）
-    - 外科治療（完全阻塞）：
-      - 剖腹探查術
-      - 胃切開術或腸切開術移除異物
-      - 腸切除吻合術（腸壞死）
-    - 禁忌：
-      - 避免礦物油（吸入風險）
-      - 阻塞未解除前避免強制餵食固體食物
-
+    - >-
+      內科治療（部分阻塞或毛球）： - 積極輸液 LRS 100-150 mL/kg/day - 疼痛管理 Meloxicam + Buprenorphine - 促進蠕動 Metoclopramide 0.5-1 mg/kg SC
+      TID - 人工餵食高纖維食物 - 鳳梨汁或木瓜酵素（幫助分解毛髮,證據有限）
+    - 外科治療（完全阻塞）： - 剖腹探查術 - 胃切開術或腸切開術移除異物 - 腸切除吻合術（腸壞死）
+    - 禁忌： - 避免礦物油（吸入風險） - 阻塞未解除前避免強制餵食固體食物
 prognosis:
-  general: "預後取決於阻塞類型及治療時機。部分毛球阻塞經內科治療預後尚可,但完全阻塞或腸壞死需緊急手術,預後保留（術後死亡率30-50%）。延遲診斷可能致命。"
-
+  general: 預後取決於阻塞類型及治療時機。部分毛球阻塞經內科治療預後尚可,但完全阻塞或腸壞死需緊急手術,預後保留（術後死亡率30-50%）。延遲診斷可能致命。
 prevention:
   - 提供充足牧草促進腸道蠕動
   - 換毛期每日梳毛
   - 避免環境中易誤食物品
   - 定期健康檢查
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔急性胃腸道阻塞 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - abdominal-pain 相關症狀
+        - anorexia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部X光
+          notes: 胃或腸道明顯擴張、氣體積聚、可能見異物陰影
+        - name: 腹部超音波
+          notes: 評估腸道蠕動、腸套疊、腹水
+        - name: 鋇劑造影
+          notes: 確認阻塞位置（需謹慎,可能加重病情）
+ddxSource: auto-generated

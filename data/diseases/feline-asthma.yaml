@@ -3,13 +3,15 @@ nameEn: Feline Asthma
 nameZh: 貓哮喘
 bodySystem: respiratory
 description: 貓下呼吸道的慢性過敏性炎症疾病，以可逆性支氣管收縮、氣道高反應性與嗜酸球浸潤為特徵。
-
 aliases:
-  - { alias: Feline Allergic Bronchitis, language: en }
-  - { alias: Feline Bronchial Disease, language: en }
-  - { alias: Feline Lower Airway Disease, language: en }
-  - { alias: 貓支氣管哮喘, language: zh }
-
+  - alias: Feline Allergic Bronchitis
+    language: en
+  - alias: Feline Bronchial Disease
+    language: en
+  - alias: Feline Lower Airway Disease
+    language: en
+  - alias: 貓支氣管哮喘
+    language: zh
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
@@ -19,7 +21,6 @@ species:
     speciesScientific: Canis lupus familiaris
     prevalence: rare
     notes: 犬罕見真正的哮喘。犬的慢性支氣管炎為不同疾病實體。
-
 etiology:
   categories:
     - name: 過敏性/免疫介導
@@ -35,7 +36,6 @@ etiology:
         - 肥胖
         - 緊迫
         - 心絲蟲相關呼吸道疾病 (HARD)
-
 clinicalSigns:
   early:
     - 間歇性咳嗽 (蹲伏姿勢，頸部伸展)
@@ -51,26 +51,24 @@ clinicalSigns:
     - 急性呼吸窘迫 (哮喘發作)
     - 發紺
     - 黏液栓塞導致肺葉塌陷
-
 diagnosis:
   primaryTests:
     - name: 胸腔 X 光
-      notes: "典型表現：支氣管壁增厚 (doughnut/tram line signs)、肺過度充氣、橫膈後移。可能正常"
+      notes: 典型表現：支氣管壁增厚 (doughnut/tram line signs)、肺過度充氣、橫膈後移。可能正常
     - name: 支氣管肺泡灌洗 (BAL)
-      notes: "嗜酸球 >17% 高度提示。需全身麻醉 (在病情穩定時執行)"
+      notes: 嗜酸球 >17% 高度提示。需全身麻醉 (在病情穩定時執行)
     - name: CBC
-      notes: "周邊血嗜酸球增多 (約 20-50% 病例)"
+      notes: 周邊血嗜酸球增多 (約 20-50% 病例)
   imaging:
     - name: 胸腔 X 光
-      notes: "首選影像。典型支氣管紋路增加與肺過度充氣"
+      notes: 首選影像。典型支氣管紋路增加與肺過度充氣
     - name: 胸腔 CT
-      notes: "可更敏感地偵測支氣管壁增厚與氣體滯留"
+      notes: 可更敏感地偵測支氣管壁增厚與氣體滯留
   additional:
     - 糞便浮游法 (排除肺蟲 Aelurostrongylus abstrusus)
     - 心絲蟲抗體/抗原檢測 (排除 HARD)
     - 心臟超音波 (排除心臟疾病)
     - 過敏原檢測 (研究階段，臨床實用性有限)
-
 treatment:
   principles:
     - 減少氣道炎症 (抗炎治療為基石)
@@ -79,16 +77,16 @@ treatment:
     - 急性嚴重發作需緊急處理
   medications:
     - name: Fluticasone (吸入型)
-      dose: "110-220 μg BID (經 AeroKat 面罩)"
+      dose: 110-220 μg BID (經 AeroKat 面罩)
       notes: 長期控制首選。副作用最少。需貓配合面罩使用
     - name: Prednisolone (口服)
-      dose: "1-2 mg/kg PO SID × 5-7 天，後遞減至最低有效劑量"
+      dose: 1-2 mg/kg PO SID × 5-7 天，後遞減至最低有效劑量
       notes: 無法使用吸入劑時的替代。長期使用注意糖尿病風險
     - name: Albuterol/Salbutamol (吸入型)
-      dose: "100 μg/puff，1-2 puffs PRN (經 AeroKat 面罩)"
+      dose: 100 μg/puff，1-2 puffs PRN (經 AeroKat 面罩)
       notes: 急性支氣管擴張救援用藥。不可單獨作為長期治療
     - name: Terbutaline
-      dose: "0.01 mg/kg SC/IM (急救)；0.625-1.25 mg/cat PO BID (口服)"
+      dose: 0.01 mg/kg SC/IM (急救)；0.625-1.25 mg/cat PO BID (口服)
       notes: 注射型用於急性發作急救
   general:
     - AeroKat 面罩吸入治療訓練
@@ -96,50 +94,101 @@ treatment:
     - 體重管理
     - 減少緊迫
     - 排除並治療呼吸道寄生蟲
-
 emergencyNotes: 急性哮喘發作為急症。最小化壓力處理 (先氧氣補充)。Terbutaline 0.01 mg/kg SC/IM 快速支氣管擴張。Dexamethasone 0.25-0.5 mg/kg IV/IM。避免過度保定加重呼吸窘迫。
-
 prognosis: 多數貓在規律吸入型類固醇治療下可良好控制。少數嚴重病例可能進展為不可逆氣道重塑。急性嚴重發作若及時處理預後良好。
-
 ontologyMappings:
   - source: MONDO
-    code: "MONDO:0004766"
+    code: MONDO:0004766
     label: asthma
     confidence: broad
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Breathe easy: inhalational therapy for feline inflammatory airway disease."
+    title: 'Breathe easy: inhalational therapy for feline inflammatory airway disease.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812033/
     type: review
-    pmid: "37675792"
+    pmid: '37675792'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Online survey to determine client perceptions of feline chronic lower airway disease management: response to therapy, side effects and challenges encountered."
+    title: >-
+      Online survey to determine client perceptions of feline chronic lower airway disease management: response to
+      therapy, side effects and challenges encountered.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9743080/
     type: review
-    pmid: "35125012"
+    pmid: '35125012'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline asthma and heartworm disease: Clinical features, diagnostics and therapeutics."
+    title: 'Feline asthma and heartworm disease: Clinical features, diagnostics and therapeutics.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10814146/
     type: review
-    pmid: "31446863"
+    pmid: '31446863'
   - sourceOrg: BMC veterinary research
-    title: "Mesenchymal stem cells therapy in companion animals: useful for immune-mediated diseases?"
+    title: 'Mesenchymal stem cells therapy in companion animals: useful for immune-mediated diseases?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6805418/
     type: review
-    pmid: "31640767"
+    pmid: '31640767'
   - sourceOrg: Journal of feline medicine and surgery
     title: Evaluation of different cleaning methods for feline inhalation chambers after bacterial contamination.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10741356/
     type: research
-    pmid: "32228277"
+    pmid: '32228277'
     relevance: supporting
 pubmedQueries:
   - query: '"feline asthma" OR "feline lower airway disease" AND (cat OR feline) AND ("treatment" OR "diagnosis")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "END"
-  sectionTitle: "DISEASE"
+  chapter: END
+  sectionTitle: DISEASE
   pdfPage: 582
+diagnosticAlgorithm:
+  title: 貓哮喘 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 觀察呼吸型態，確認是否有陣發性呼吸困難、喘息或咳嗽，詢問環境過敏原暴露史
+      findings:
+        - 呼氣性呼吸困難
+        - 聽診可聞呼氣喘鳴音
+        - 陣發性咳嗽
+        - 腹式呼吸
+    - step: 2
+      action: 胸腔X光檢查
+      details: 拍攝胸腔正側位 X 光，評估肺野型態與支氣管壁變化
+      findings:
+        - 支氣管壁增厚（甜甜圈徵、鐵軌徵）
+        - 肺過度充氣
+        - 橫膈膜平坦化
+        - 肺葉塌陷（嚴重時）
+    - step: 3
+      action: 實驗室與進階檢查
+      details: 血液檢查評估嗜酸性球比例，支氣管肺泡灌洗液細胞學分析
+      findings:
+        - 周邊血液嗜酸性球增多
+        - BAL液嗜酸性球>17%
+        - 糞便寄生蟲檢查陰性（排除肺蟲）
+        - 心絲蟲抗體/抗原檢測陰性
+    - step: 4
+      action: 治療性診斷
+      details: 給予支氣管擴張劑與糖皮質激素試驗治療，觀察臨床反應
+      findings:
+        - 支氣管擴張劑反應良好
+        - 吸入型類固醇改善症狀
+        - 排除心臟病（心臟超音波正常）
+clinicalPearls:
+  - 貓的咳嗽幾乎總是呼吸道疾病（不像犬常為心臟病）
+  - 急性發作時避免過度壓力和操作，貓可能因應激加重呼吸衰竭
+  - AeroKat spacer讓貓吸入類固醇治療成為可能
+  - 心絲蟲相關呼吸道疾病臨床表現與哮喘幾乎相同
+monitoringItems:
+  - 呼吸頻率和努力程度
+  - 咳嗽頻率
+  - X光追蹤
+  - 類固醇副作用（糖尿病風險）
+associatedSymptoms:
+  - symptomId: coughing
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+ddxSource: book

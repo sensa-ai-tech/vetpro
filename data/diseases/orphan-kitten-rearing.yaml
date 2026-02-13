@@ -3,12 +3,13 @@ nameEn: Orphan Kitten Rearing
 nameZh: 孤兒幼貓人工養育
 bodySystem: other
 description: 孤兒幼貓的人工養育指南，包含專用配方奶餵食、體溫維持、排泄刺激及斷奶過程。幼貓代謝率高且體型小，需更頻繁的餵食及密集照護。
-
 aliases:
-  - { alias: 人工哺育幼貓, language: zh }
-  - { alias: Hand Raising Kittens, language: en }
-  - { alias: Orphan Kitten Care, language: en }
-
+  - alias: 人工哺育幼貓
+    language: zh
+  - alias: Hand Raising Kittens
+    language: en
+  - alias: Orphan Kitten Care
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
@@ -18,7 +19,6 @@ species:
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 養育原則與幼犬相似但餵食頻率更高
-
 etiology:
   categories:
     - name: 需要人工養育的情況
@@ -27,7 +27,6 @@ etiology:
         - 母貓死亡或重病
         - 母貓拋棄或乳汁不足
         - 幼貓數量過多
-
 clinicalSigns:
   early:
     - 正常：每日體重增加10-15g
@@ -39,21 +38,19 @@ clinicalSigns:
     - 2-3週：開始爬行
     - 3-4週：開始玩耍、可引入固體食物
     - 8-10週：完全斷奶
-
 diagnosis:
   primaryTests:
     - name: 每日體重監測
-      notes: "出生體重約100g，每日增加10-15g"
+      notes: 出生體重約100g，每日增加10-15g
     - name: 體溫測量
-      notes: "第1週35-37°C，逐步升至38-39°C"
+      notes: 第1週35-37°C，逐步升至38-39°C
     - name: 水合狀態
-      notes: "皮膚彈性、黏膜濕潤"
+      notes: 皮膚彈性、黏膜濕潤
   differentialDiagnoses:
     - 餵食不當
     - 低體溫症
     - 低血糖症
     - 吸入性肺炎
-
 treatment:
   medical:
     - 餵食頻率：0-2週每2-3小時(包含夜間)，2-4週每4-6小時
@@ -66,22 +63,40 @@ treatment:
     - 保溫：第1-2週30-32°C，第3週26-28°C，第4週後可降至室溫
     - 3-4週開始引入泡軟罐頭或幼貓濕糧
     - 5-6週提供貓砂盆訓練
-
 prognosis:
-  general: "需24小時密集照護，前2週為關鍵期；若照護得當存活率70-80%"
-
+  general: 需24小時密集照護，前2週為關鍵期；若照護得當存活率70-80%
 prevention:
   - 準備幼貓代乳粉、小型奶瓶或針筒
   - 保溫設備(保溫燈、加熱墊)
   - 尋找代理母貓(最理想)
   - 學習正確餵食技巧避免吸入性肺炎
   - 6-8週開始預防注射及驅蟲
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline neonatology: From birth to commencement of weaning - what to know for successful management."
+    title: 'Feline neonatology: From birth to commencement of weaning - what to know for successful management.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10845399/
     type: review
-    pmid: "35209772"
+    pmid: '35209772'
     relevance: primary
+associatedSymptoms:
+  - symptomId: weight-gain
+    frequency: common
+diagnosticAlgorithm:
+  title: 孤兒幼貓人工養育 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-gain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 每日體重監測
+          notes: 出生體重約100g，每日增加10-15g
+        - name: 體溫測量
+          notes: 第1週35-37°C，逐步升至38-39°C
+        - name: 水合狀態
+          notes: 皮膚彈性、黏膜濕潤
+ddxSource: auto-generated

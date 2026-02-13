@@ -3,17 +3,16 @@ nameEn: Newfoundland Dilated Cardiomyopathy
 nameZh: 紐芬蘭犬擴張型心肌病
 bodySystem: neurology
 description: 紐芬蘭犬好發的遺傳性心肌病變,心肌收縮力下降導致心室擴張與充血性心衰竭。中年至老年犬多發。
-
 aliases:
-  - { alias: 紐芬蘭犬 DCM, language: zh }
-  - { alias: Newfoundland DCM, language: en }
-
+  - alias: 紐芬蘭犬 DCM
+    language: zh
+  - alias: Newfoundland DCM
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 紐芬蘭犬為中度風險品種,5-8 歲好發,雄性略多於雌性
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -24,7 +23,6 @@ etiology:
       examples:
         - 牛磺酸或 L-肉鹼缺乏
         - 無穀飼料相關(DCM-diet hypothesis)
-
 clinicalSigns:
   early:
     - 運動不耐,嗜睡
@@ -34,25 +32,23 @@ clinicalSigns:
     - 呼吸困難,腹水,四肢水腫
     - 昏厥,心律不整
     - 食慾廢絕,惡病質
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波
-      notes: "左心室擴張,收縮分率 (FS) <25%,射出分率 (EF) <40%,左心房擴大"
+      notes: 左心室擴張,收縮分率 (FS) <25%,射出分率 (EF) <40%,左心房擴大
     - name: 胸部 X 光
-      notes: "心臟擴大(VHS >10.5),肺靜脈充血或肺水腫"
+      notes: 心臟擴大(VHS >10.5),肺靜脈充血或肺水腫
     - name: 心電圖
-      notes: "心室早期收縮,心房顫動,傳導阻滯"
+      notes: 心室早期收縮,心房顫動,傳導阻滯
     - name: NT-proBNP
-      notes: "升高 (>1500 pmol/L 提示心衰竭)"
+      notes: 升高 (>1500 pmol/L 提示心衰竭)
     - name: 血清牛磺酸與肉鹼濃度
-      notes: "評估營養性缺乏"
+      notes: 評估營養性缺乏
   differentialDiagnoses:
     - 二尖瓣退化性疾病
     - 心絲蟲病
     - 心肌炎
     - 甲狀腺功能低下症
-
 treatment:
   medical:
     - Pimobendan 0.25-0.3 mg/kg PO q12h
@@ -62,12 +58,52 @@ treatment:
     - 抗心律不整:Sotalol 1-2 mg/kg PO q12h 或 Digoxin 0.005-0.01 mg/kg PO q12-24h(心房顫動時)
     - 牛磺酸 500-1000 mg PO q12h,L-肉鹼 50-100 mg/kg PO q8h
     - 低鹽飲食,限制運動
-
 prognosis:
-  general: "預後保守。確診後中位存活期 6-18 個月。早期發現與治療可改善生活品質與延長存活期。嚴重心律不整為負面預後因子。"
-
+  general: 預後保守。確診後中位存活期 6-18 個月。早期發現與治療可改善生活品質與延長存活期。嚴重心律不整為負面預後因子。
 prevention:
   - 繁殖前心臟超音波篩檢
   - 3 歲起定期年度心臟檢查
   - 避免無穀飼料,選擇 WSAVA 認證品牌
   - 確保牛磺酸與肉鹼充足
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: syncope
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: coughing
+    frequency: common
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 紐芬蘭犬擴張型心肌病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波
+          notes: 左心室擴張,收縮分率 (FS) <25%,射出分率 (EF) <40%,左心房擴大
+        - name: 胸部 X 光
+          notes: 心臟擴大(VHS >10.5),肺靜脈充血或肺水腫
+        - name: 心電圖
+          notes: 心室早期收縮,心房顫動,傳導阻滯
+ddxSource: auto-generated

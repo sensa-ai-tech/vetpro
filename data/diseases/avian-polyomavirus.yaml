@@ -3,19 +3,21 @@ nameEn: Avian Polyomavirus
 nameZh: 禽類多瘤病毒感染
 bodySystem: infectious
 description: 禽類多瘤病毒（APV）是鸚鵡雛鳥的重要致死性病毒感染，主要影響虎皮鸚鵡與其他鸚鵡幼鳥。感染可導致急性多器官壞死及出血，成鳥多為無症狀帶原者。疫苗接種為重要預防措施。
-
 aliases:
-  - { alias: 禽多瘤病毒, language: zh }
-  - { alias: 虎皮鸚鵡幼雛病, language: zh }
-  - { alias: APV infection, language: en }
-  - { alias: Budgerigar fledgling disease, language: en }
-  - { alias: French molt, language: en }
-
+  - alias: 禽多瘤病毒
+    language: zh
+  - alias: 虎皮鸚鵡幼雛病
+    language: zh
+  - alias: APV infection
+    language: en
+  - alias: Budgerigar fledgling disease
+    language: en
+  - alias: French molt
+    language: en
 species:
   - speciesCommon: bird
     prevalence: uncommon
     notes: 虎皮鸚鵡幼鳥最常見且最嚴重。其他鸚鵡幼鳥亦可感染。成鳥多為無症狀帶原者。繁殖場為主要傳播場所。
-
 etiology:
   categories:
     - name: 病毒性
@@ -30,7 +32,6 @@ etiology:
         - 免疫力未成熟
         - 繁殖場高密度飼養
         - 未接種疫苗
-
 clinicalSigns:
   early:
     - 幼鳥突然死亡（超急性型）
@@ -44,7 +45,6 @@ clinicalSigns:
     - 脫水
     - 嗜睡
     - 震顫
-
 diagnosis:
   primaryTests:
     - name: PCR 檢測
@@ -53,7 +53,6 @@ diagnosis:
       notes: 抗體檢測可區分暴露史，但不能區分感染與疫苗免疫
     - name: 病理學
       notes: 死亡幼鳥剖檢見肝脾腫大、多器官壞死、核內包涵體
-
 treatment:
   principles:
     - 無特效抗病毒治療
@@ -68,38 +67,84 @@ treatment:
     - 隔離感染鳥
     - 繁殖鳥群疫苗接種計畫
     - 環境徹底消毒
-
 prognosis: 幼鳥急性感染預後不良，死亡率可高達 100%。成鳥感染多為亞臨床，預後良好但可成為帶原者持續排毒。法國換羽症型（虎皮鸚鵡）預後視嚴重程度而定。疫苗接種為最有效的預防策略。
-
-
 guidelineRefs:
   - sourceOrg: Viruses
     title: Pathogenicity of Avian Polyomaviruses and Prospect of Vaccine Development.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9505546/
     type: review
-    pmid: "36146885"
+    pmid: '36146885'
   - sourceOrg: BMC veterinary research
-    title: Occurrence and vertical transmission of avian polyomavirus and circovirus in captive and wild Passeriformes in Poland.
+    title: >-
+      Occurrence and vertical transmission of avian polyomavirus and circovirus in captive and wild Passeriformes in
+      Poland.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12232562/
     type: research
-    pmid: "40624680"
+    pmid: '40624680'
   - sourceOrg: Veterinarni medicina
-    title: Psittacine beak and feather disease virus and avian polyomavirus detection rate in clinically healthy captive birds in the Czech Republic.
+    title: >-
+      Psittacine beak and feather disease virus and avian polyomavirus detection rate in clinically healthy captive
+      birds in the Czech Republic.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11975225/
     type: research
-    pmid: "40201717"
+    pmid: '40201717'
   - sourceOrg: Frontiers in microbiology
     title: Identification of avian polyomavirus and its pathogenicity to SPF chickens.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10792035/
     type: research
-    pmid: "38235429"
+    pmid: '38235429'
     relevance: supporting
   - sourceOrg: Virusdisease
-    title: First molecular detection of avian polyomavirus from captive psittacine birds in Bangladesh, together with confirmation of beak and feather disease virus co-infection.
+    title: >-
+      First molecular detection of avian polyomavirus from captive psittacine birds in Bangladesh, together with
+      confirmation of beak and feather disease virus co-infection.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10533433/
     type: research
-    pmid: "37780906"
+    pmid: '37780906'
     relevance: supporting
 pubmedQueries:
   - query: '"avian polyomavirus" AND (parrot OR psittacine OR budgerigar) AND ("diagnosis" OR "prevention")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: abdominal-distension
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類多瘤病毒感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - abdominal-distension 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: PCR 檢測
+          notes: 泄殖腔拭子或血液 PCR 檢測病毒 DNA。最靈敏的診斷方法
+        - name: 血清學
+          notes: 抗體檢測可區分暴露史，但不能區分感染與疫苗免疫
+        - name: 病理學
+          notes: 死亡幼鳥剖檢見肝脾腫大、多器官壞死、核內包涵體
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 無特效抗病毒治療
+        - 支持療法為主
+        - 預防為最重要策略
+ddxSource: auto-generated

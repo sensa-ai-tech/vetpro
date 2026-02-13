@@ -3,11 +3,11 @@ nameEn: Prostatic Abscess
 nameZh: 前列腺膿瘍
 bodySystem: infectious
 description: 前列腺膿瘍為前列腺炎的嚴重併發症，前列腺內形成局灶性或瀰漫性化膿性腔室。好發於未結紮中老齡公犬。膿瘍破裂可引起致命性腹膜炎與敗血症。需手術引流結合去勢與長療程抗生素。
-
 aliases:
-  - { alias: 前列腺化膿, language: zh }
-  - { alias: Prostatic Abscessation, language: en }
-
+  - alias: 前列腺化膿
+    language: zh
+  - alias: Prostatic Abscessation
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓前列腺膿瘍極罕見。
-
 etiology:
   categories:
     - name: 致病機制
@@ -30,7 +29,6 @@ etiology:
         - Staphylococcus spp.
         - Streptococcus spp.
         - 混合厭氧菌感染
-
 clinicalSigns:
   early:
     - 發燒
@@ -43,7 +41,6 @@ clinicalSigns:
     - 敗血症（高燒、低血壓、心搏過速）
     - 膿瘍破裂→急性腹膜炎（腹部劇痛、休克）
     - 排便困難
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
@@ -55,7 +52,6 @@ diagnosis:
     - 超音波引導穿刺培養
     - 腹腔液分析（膿瘍破裂時）
     - 腹部 X-ray
-
 treatment:
   principles:
     - 手術引流為必要
@@ -69,23 +65,83 @@ treatment:
     - 長療程抗生素 4-8 週（enrofloxacin 或依培養結果）
     - 膿瘍破裂：緊急剖腹探查 + 腹腔沖洗 + 引流
     - 術後超音波追蹤
-
 prognosis: 前列腺膿瘍手術引流 + 去勢後存活率約 50-80%。膿瘍破裂致腹膜炎者預後較差。術後感染復發風險存在。及早手術介入改善預後。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Canine Perineal Hernia Associated with Prostatic Disorders: Is Castration Really Beneficial? A Retrospective Study."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Canine Perineal Hernia Associated with Prostatic Disorders: Is Castration Really Beneficial? A Retrospective
+      Study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12071062/
     type: research
-    pmid: "40362021"
+    pmid: '40362021'
     relevance: supporting
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Alcoholization as an Alternative Treatment for Prostatic Cyst and Abscess in Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12189533/
     type: research
-    pmid: "40564367"
+    pmid: '40564367'
     relevance: supporting
 pubmedQueries:
   - query: '"prostatic abscess" AND (veterinary OR canine) AND ("treatment" OR "surgery" OR "omentalization")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 前列腺膿腫 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估未去勢公犬的泌尿/排便症狀
+      findings:
+        - 排尿困難或血尿
+        - 排便困難前列腺腫大壓迫直腸
+        - 發燒與全身不適
+        - 後肢僵硬步態
+    - step: 2
+      action: 直腸觸診與影像學
+      details: 直腸觸診前列腺並進行超音波評估
+      findings:
+        - 前列腺腫大不對稱
+        - 觸診疼痛
+        - 超音波見前列腺內液體腔
+        - 前列腺周圍滲出
+    - step: 3
+      action: 實驗室檢查
+      details: 血液學與尿液分析
+      findings:
+        - 白血球增多伴左移
+        - 尿液分析膿尿菌尿
+        - 尿液細菌培養與藥敏
+        - 血液培養敗血症時
+    - step: 4
+      action: 治療計劃
+      details: 手術引流與去勢
+      findings:
+        - 超音波引導穿刺引流
+        - 去勢減少前列腺大小
+        - 長期抗生素治療4-6週
+        - 追蹤超音波評估消退
+clinicalPearls:
+  - 直腸觸診時避免過度用力，以防膿腫破裂
+  - 絕育是治療的關鍵步驟，可使前列腺在數週內顯著萎縮
+  - 抗生素必須能穿透前列腺屏障（Fluoroquinolones、TMP-SMX、Chloramphenicol）
+  - 前列腺膿腫破裂是外科急症
+monitoringItems:
+  - 體溫和白血球計數
+  - 超音波追蹤前列腺大小
+  - 尿液培養（治療結束後確認清除）
+  - 排尿和排便功能
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: cutaneous-masses
+    frequency: common
+  - symptomId: dehydration
+    frequency: rare
+ddxSource: book

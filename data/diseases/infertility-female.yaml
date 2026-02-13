@@ -3,12 +3,13 @@ nameEn: Infertility Female
 nameZh: 母犬貓不孕症
 bodySystem: reproductive
 description: 母犬貓不孕症涵蓋配種後無法受孕或維持妊娠的各種原因。常見因素包括配種時機不當（最常見）、子宮疾病、卵巢功能異常、感染、先天性解剖異常與內分泌疾病。系統性繁殖評估可辨識多數原因。
-
 aliases:
-  - { alias: 母畜不孕, language: zh }
-  - { alias: Female Infertility, language: en }
-  - { alias: Failure to Conceive, language: en }
-
+  - alias: 母畜不孕
+    language: zh
+  - alias: Female Infertility
+    language: en
+  - alias: Failure to Conceive
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓為誘發排卵動物，配種刺激不足可導致排卵失敗。群體環境壓力、隱性 FeLV/FIV 感染亦為原因。
-
 etiology:
   categories:
     - name: 配種相關
@@ -33,7 +33,6 @@ etiology:
         - 感染（Brucella canis、mycoplasma）
         - 先天性解剖異常（陰道狹窄、隔膜）
         - 染色體異常
-
 clinicalSigns:
   early:
     - 配種後未受孕
@@ -44,7 +43,6 @@ clinicalSigns:
     - 早期胚胎吸收
     - 流產
     - 陰道分泌物異常
-
 diagnosis:
   primaryTests:
     - name: 黃體酮定量 (Progesterone timing)
@@ -59,7 +57,6 @@ diagnosis:
     - 精液評估（公犬因素排除）
     - 陰道鏡（解剖異常排除）
     - 染色體核型分析
-
 treatment:
   principles:
     - 確認配種時機（黃體酮監測）
@@ -73,36 +70,69 @@ treatment:
     - 陰道狹窄：人工授精繞過解剖障礙
     - 卵巢功能不全：GnRH 或 hCG 刺激
     - 貓排卵失敗：確保充分交配刺激或 GnRH
-
 prognosis: 配種時機不當矯正後受孕率顯著提高。子宮疾病需視嚴重度。Brucella canis 感染犬不建議繁殖。先天性解剖異常部分可手術矯正。高齡犬繁殖力自然下降。
-
-
 guidelineRefs:
   - sourceOrg: Molecular biology reports
     title: The role of endocrine disruptors in female infertility.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10374778/
     type: review
-    pmid: "37402067"
+    pmid: '37402067'
   - sourceOrg: JBRA assisted reproduction
-    title: "Vaginal microbioma and the presence of Lactobacillus spp. as interferences in female fertility: A review system."
+    title: 'Vaginal microbioma and the presence of Lactobacillus spp. as interferences in female fertility: A review system.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10712827/
     type: review
-    pmid: "37417853"
+    pmid: '37417853'
   - sourceOrg: Sultan Qaboos University medical journal
-    title: "Female Genital Tuberculosis Among Infertile Women and Its Contributions to Primary and Secondary Infertility: A systematic review and meta-analysis."
+    title: >-
+      Female Genital Tuberculosis Among Infertile Women and Its Contributions to Primary and Secondary Infertility: A
+      systematic review and meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9423760/
     type: review
-    pmid: "36072071"
+    pmid: '36072071'
   - sourceOrg: Cells
     title: The Role of Stem Cells and Their Derived Extracellular Vesicles in Restoring Female and Male Fertility.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8468931/
     type: review
-    pmid: "34572109"
-  - sourceOrg: "Reproductive biology and endocrinology : RB&amp;E"
-    title: "Non-esterified fatty acids in the ovary: friends or foes?"
+    pmid: '34572109'
+  - sourceOrg: 'Reproductive biology and endocrinology : RB&amp;E'
+    title: 'Non-esterified fatty acids in the ovary: friends or foes?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7275390/
     type: review
-    pmid: "32505200"
+    pmid: '32505200'
 pubmedQueries:
   - query: '"infertility" AND (canine OR feline OR bitch OR queen) AND ("progesterone" OR "treatment" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: vaginal-discharge
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 母犬貓不孕症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - vaginal-discharge 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 黃體酮定量 (Progesterone timing)
+          notes: 血清黃體酮連續監測確認排卵時間。排卵時黃體酮約 5-8 ng/mL
+        - name: 陰道細胞學
+          notes: 監測發情週期階段
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - Brucella canis 血清學
+        - 甲狀腺功能
+        - 腹部超音波（子宮、卵巢評估）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 確認配種時機（黃體酮監測）
+        - 治療潛在原因
+        - 系統性評估公犬與母犬
+ddxSource: auto-generated

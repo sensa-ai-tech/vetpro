@@ -3,13 +3,15 @@ nameEn: Uremic Encephalopathy
 nameZh: 尿毒性腦病
 bodySystem: neurology
 description: 嚴重腎衰竭導致尿毒素蓄積而引起的瀰漫性腦功能障礙。尿毒素 (包括 guanidino 化合物、parathyroid hormone 等) 干擾神經傳導與腦部代謝，表現為意識狀態改變、肌陣攣與癲癇。
-
 aliases:
-  - { alias: Uremic Neuropathy, language: en }
-  - { alias: Renal Encephalopathy, language: en }
-  - { alias: 尿毒腦病, language: zh }
-  - { alias: 腎性腦病, language: zh }
-
+  - alias: Uremic Neuropathy
+    language: en
+  - alias: Renal Encephalopathy
+    language: en
+  - alias: 尿毒腦病
+    language: zh
+  - alias: 腎性腦病
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓同樣見於嚴重腎衰竭，CKD 為貓常見疾病。
-
 etiology:
   categories:
     - name: 尿毒素蓄積
@@ -30,7 +31,6 @@ etiology:
         - 代謝性酸中毒
         - 電解質失衡 (高鉀、低鈣)
         - 高血壓性腦病
-
 clinicalSigns:
   early:
     - 精神沉鬱
@@ -41,7 +41,6 @@ clinicalSigns:
     - 震顫
     - 癲癇發作
     - 昏迷
-
 diagnosis:
   primaryTests:
     - name: 血液生化
@@ -50,7 +49,6 @@ diagnosis:
       notes: 尿比重低 (等張尿)；蛋白尿評估
     - name: 血壓測量
       notes: 排除高血壓性腦病 (systolic > 180 mmHg)
-
 treatment:
   principles:
     - 積極降低尿毒素 (輸液利尿)
@@ -61,41 +59,83 @@ treatment:
     - 糾正高鉀血症 (calcium gluconate、insulin + glucose)
     - 控制高血壓 (Amlodipine)
     - 血液透析 (嚴重病例可考慮)
-
 prognosis: 取決於腎衰竭的可逆性。急性腎損傷若能恢復腎功能預後可佳。終末期慢性腎病者預後不良。出現嚴重神經症狀提示疾病晚期。
-
-
 guidelineRefs:
   - sourceOrg: Journal of medical primatology
-    title: "Uremic encephalopathy in a rhesus macaque (Macaca mulatta): A case report and a brief review of the veterinary literature."
+    title: >-
+      Uremic encephalopathy in a rhesus macaque (Macaca mulatta): A case report and a brief review of the veterinary
+      literature.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6202283/
     type: review
-    pmid: "29693270"
+    pmid: '29693270'
     relevance: primary
   - sourceOrg: Scientific reports
-    title: The ameliorative potential of platelet-rich plasma and exosome on renal ischemia/reperfusion-induced uremic encephalopathy in rats.
+    title: >-
+      The ameliorative potential of platelet-rich plasma and exosome on renal ischemia/reperfusion-induced uremic
+      encephalopathy in rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11541720/
     type: research
-    pmid: "39505968"
+    pmid: '39505968'
     relevance: supporting
   - sourceOrg: Acta pharmacologica Sinica
-    title: "Indoxyl sulphate-TNF&#x3b1; axis mediates uremic encephalopathy in rodent acute kidney injury."
+    title: Indoxyl sulphate-TNF&#x3b1; axis mediates uremic encephalopathy in rodent acute kidney injury.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11192958/
     type: research
-    pmid: "38589687"
+    pmid: '38589687'
     relevance: supporting
   - sourceOrg: American journal of physiology. Renal physiology
     title: Accumulation of uremic solutes in the cerebrospinal fluid in experimental acute renal failure.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6732458/
     type: research
-    pmid: "31141401"
+    pmid: '31141401'
     relevance: supporting
   - sourceOrg: American journal of translational research
-    title: Uremia induces upregulation of cerebral tissue oxidative/inflammatory cascade, down-regulation of Nrf2 pathway and disruption of blood brain barrier.
+    title: >-
+      Uremia induces upregulation of cerebral tissue oxidative/inflammatory cascade, down-regulation of Nrf2 pathway and
+      disruption of blood brain barrier.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6079125/
     type: research
-    pmid: "30093950"
+    pmid: '30093950'
     relevance: supporting
 pubmedQueries:
   - query: '"uremic encephalopathy" AND (veterinary OR canine OR feline) AND ("treatment" OR "dialysis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 尿毒性腦病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - seizures 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液生化
+          notes: BUN/Creatinine 顯著升高；SDMA 升高；電解質失衡 (高鉀、高磷、低鈣)
+        - name: 尿液分析
+          notes: 尿比重低 (等張尿)；蛋白尿評估
+        - name: 血壓測量
+          notes: 排除高血壓性腦病 (systolic > 180 mmHg)
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 積極降低尿毒素 (輸液利尿)
+        - 糾正電解質與酸鹼失衡
+        - 控制癲癇
+ddxSource: auto-generated

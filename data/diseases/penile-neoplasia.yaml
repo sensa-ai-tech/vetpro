@@ -3,11 +3,11 @@ nameEn: Penile Neoplasia
 nameZh: 陰莖腫瘤
 bodySystem: oncology
 description: 陰莖腫瘤包括傳染性性病腫瘤（TVT）、鱗狀細胞癌及黑色素瘤。TVT最常見，多為良性且對化療反應佳。
-
 aliases:
-  - { alias: 陰莖癌, language: zh }
-  - { alias: Penile Tumor, language: en }
-
+  - alias: 陰莖癌
+    language: zh
+  - alias: Penile Tumor
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓極罕見
-
 etiology:
   categories:
     - name: 腫瘤類型
@@ -26,7 +25,6 @@ etiology:
         - 鱗狀細胞癌
         - 黑色素瘤
         - 血管瘤
-
 clinicalSigns:
   early:
     - 陰莖腫塊或潰瘍
@@ -36,25 +34,23 @@ clinicalSigns:
     - 排尿困難
     - 腫塊增大、出血
     - 轉移（惡性腫瘤）
-
 diagnosis:
   primaryTests:
     - name: 視診及觸診
-      notes: "陰莖外露評估腫塊"
+      notes: 陰莖外露評估腫塊
     - name: 細針抽吸細胞學
-      notes: "TVT可確診（圓形細胞腫瘤）"
+      notes: TVT可確診（圓形細胞腫瘤）
     - name: 組織切片
-      notes: "確診及分型"
+      notes: 確診及分型
     - name: 淋巴結評估
-      notes: "鼠蹊淋巴結轉移"
+      notes: 鼠蹊淋巴結轉移
     - name: 胸腔X光
-      notes: "肺轉移篩檢"
+      notes: 肺轉移篩檢
   differentialDiagnoses:
     - 陰莖炎
     - 包皮炎
     - 尿道腫瘤
     - 前列腺疾病
-
 treatment:
   medical:
     - TVT：化療（首選）
@@ -63,11 +59,58 @@ treatment:
     - 部分陰莖切除術
     - 尿道改道（若需要）
     - 化療效果有限
-
 prognosis:
-  general: "TVT化療預後極佳，治癒率>90%。鱗狀細胞癌預後保留，取決於分期及切除完整性。"
-
+  general: TVT化療預後極佳，治癒率>90%。鱗狀細胞癌預後保留，取決於分期及切除完整性。
 prevention:
   - 避免與流浪犬接觸（TVT）
   - 絕育降低風險
   - 定期生殖器檢查
+diagnosticAlgorithm:
+  title: 陰莖腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估陰莖和包皮異常腫塊
+      findings:
+        - 陰莖或包皮可見腫塊
+        - 血性或膿性分泌物
+        - 舔舐生殖器
+        - 排尿異常
+    - step: 2
+      action: 細胞學檢查
+      details: 進行腫塊細針抽吸或印片細胞學
+      findings:
+        - 鱗狀細胞癌（最常見）
+        - 傳染性性病腫瘤（TVT）
+        - 乳頭狀瘤
+        - 黑色素瘤
+    - step: 3
+      action: 分期檢查
+      details: 進行區域和遠端轉移評估
+      findings:
+        - 腹股溝淋巴結觸診和FNA
+        - 腹部超音波
+        - 胸部X光
+        - 評估手術切除可行性
+    - step: 4
+      action: 組織病理學確診
+      details: 進行切除或活檢確認腫瘤類型
+      findings:
+        - 組織學確認腫瘤類型和分級
+        - 浸潤深度評估
+        - 手術邊界評估
+        - TVT免疫組織化學確認
+clinicalPearls:
+  - TVT 是少數對 vincristine 單藥化療反應極好的腫瘤（治癒率 >90%）
+  - TVT 細胞學有特徵性表現，可快速確診無需等待組織病理
+  - SCC 早期手術切除是最佳治療，晚期轉移預後不良
+  - 年輕犬包皮腫塊首先考慮 TVT（如有交配史）和乳頭狀瘤
+monitoringItems:
+  - TVT 化療每週評估腫塊大小縮小程度
+  - 完全緩解後 3 個月和 6 個月追蹤復發
+  - SCC 術後每 2 個月胸腔 X 光篩查轉移
+  - 排尿功能評估（陰莖手術後）
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: common
+ddxSource: book

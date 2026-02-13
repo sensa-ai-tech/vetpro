@@ -3,13 +3,15 @@ nameEn: Mechanical Ventilation
 nameZh: 機械通氣
 bodySystem: emergency
 description: 使用呼吸機替代或輔助自主呼吸，維持肺泡通氣與氧合的重症支持技術。適用於嚴重呼吸衰竭、麻醉期間呼吸抑制或神經肌肉疾病導致通氣不足的動物，為獸醫重症加護的高階治療手段。
-
 aliases:
-  - { alias: 機械呼吸, language: zh }
-  - { alias: 人工呼吸器治療, language: zh }
-  - { alias: Ventilator Support, language: en }
-  - { alias: Positive Pressure Ventilation, language: en }
-
+  - alias: 機械呼吸
+    language: zh
+  - alias: 人工呼吸器治療
+    language: zh
+  - alias: Ventilator Support
+    language: en
+  - alias: Positive Pressure Ventilation
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓機械通氣技術上可行但臨床報告較少。貓較易發展呼吸機相關併發症，需更謹慎的參數設定。
-
 etiology:
   categories:
     - name: 機械通氣適應症
@@ -31,7 +32,6 @@ etiology:
         - 容積控制通氣（Volume-controlled ventilation）
         - 壓力控制通氣（Pressure-controlled ventilation）
         - 同步間歇強制通氣（SIMV）
-
 clinicalSigns:
   early:
     - 對氧氣治療反應不佳（SpO2 持續 <90%）
@@ -43,14 +43,12 @@ clinicalSigns:
     - 意識程度嚴重下降
     - 循環不穩定
     - 多器官功能障礙
-
 diagnosis:
   primaryTests:
     - name: 動脈血氣分析
       notes: PaO2/FiO2 ratio <200 定義 ARDS（機械通氣強烈指征）。PaCO2 >60 mmHg 提示通氣衰竭。連續監測評估通氣效果。
     - name: 胸腔 X 光
       notes: 評估肺實質病變範圍。瀰漫性浸潤提示 ARDS 或嚴重肺炎。監測氣壓傷（氣胸）。
-
 treatment:
   principles:
     - 機械通氣為暫時性支持手段，需同時治療基礎病因
@@ -64,36 +62,62 @@ treatment:
     - 每 1-4 小時追蹤血氣分析調整參數
     - 預防呼吸機相關肺炎（VAP）
     - 脫機評估：自主呼吸試驗（SBT）
-
 prognosis: 獸醫患者機械通氣總體存活出院率約 30-50%（視基礎病因而異）。ARDS 預後較差（存活率約 30%）。術後暫時性通氣支持預後較佳。機械通氣超過 5-7 天預後下降，併發症風險增加。費用高昂為臨床重要考量。
-
-
 guidelineRefs:
   - sourceOrg: Influenza and other respiratory viruses
-    title: COVID-19 Hospitalizations, Vaccine Uptake, Vaccination Guidelines, and Vaccine Availability in Six Middle-Income Countries and Areas in Europe, May 2022-April 2024.
+    title: >-
+      COVID-19 Hospitalizations, Vaccine Uptake, Vaccination Guidelines, and Vaccine Availability in Six Middle-Income
+      Countries and Areas in Europe, May 2022-April 2024.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12176449/
     type: guideline
-    pmid: "40533083"
+    pmid: '40533083'
   - sourceOrg: The Cochrane database of systematic reviews
     title: Favipiravir for treating COVID-19.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10840071/
     type: review
-    pmid: "38314855"
+    pmid: '38314855'
   - sourceOrg: Frontiers in veterinary science
     title: Mechanical ventilation in dogs and cats with tick paralysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10117792/
     type: review
-    pmid: "37089405"
+    pmid: '37089405'
   - sourceOrg: Critical care (London, England)
-    title: "Treatment of the lung injury of drowning: a systematic review."
+    title: 'Treatment of the lung injury of drowning: a systematic review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8287554/
     type: review
-    pmid: "34281609"
+    pmid: '34281609'
   - sourceOrg: Canadian journal of veterinary research = Revue canadienne de recherche veterinaire
     title: Conventional versus high-flow oxygen therapy in dogs with lower airway injury.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8451709/
     type: review
-    pmid: "34602728"
+    pmid: '34602728'
 pubmedQueries:
   - query: '"Mechanical Ventilation" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 機械通氣 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 動脈血氣分析
+          notes: PaO2/FiO2 ratio <200 定義 ARDS（機械通氣強烈指征）。PaCO2 >60 mmHg 提示通氣衰竭。連續監測評估通氣效果。
+        - name: 胸腔 X 光
+          notes: 評估肺實質病變範圍。瀰漫性浸潤提示 ARDS 或嚴重肺炎。監測氣壓傷（氣胸）。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 機械通氣為暫時性支持手段，需同時治療基礎病因
+        - 肺保護性通氣策略（低潮氣量、適當 PEEP）
+        - 避免呼吸機相關肺損傷
+ddxSource: auto-generated

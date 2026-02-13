@@ -3,13 +3,15 @@ nameEn: Fluid Overload
 nameZh: 容積過負荷
 bodySystem: metabolic
 description: 靜脈輸液速率或總量超過機體排泄能力導致的體液蓄積過多，可引起肺水腫、胸腔積液及周邊水腫。心臟病、腎病及低白蛋白血症患者最易發生，為住院動物輸液治療中需持續警惕的醫源性併發症。
-
 aliases:
-  - { alias: 液體過量, language: zh }
-  - { alias: 過度輸液, language: zh }
-  - { alias: Volume Overload, language: en }
-  - { alias: Fluid Overload Syndrome, language: en }
-
+  - alias: 液體過量
+    language: zh
+  - alias: 過度輸液
+    language: zh
+  - alias: Volume Overload
+    language: en
+  - alias: Fluid Overload Syndrome
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓心肌病發生率高，潛在心臟病貓輸液易發生容積過負荷導致肺水腫。貓輸液速率需較犬保守。
-
 etiology:
   categories:
     - name: 醫源性
@@ -30,7 +31,6 @@ etiology:
         - 心臟疾病（心輸出量不足，容積負荷增加）
         - 腎衰竭無尿/寡尿期
         - 低白蛋白血症（膠體滲透壓低→液體外滲）
-
 clinicalSigns:
   early:
     - 體重快速增加
@@ -43,14 +43,12 @@ clinicalSigns:
     - 腹水
     - 周邊水腫（四肢、面部）
     - 化學性眼淚（chemosis，結膜水腫）
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 肺聽診（囉音/濕囉音）、頸靜脈怒張、體重增加趨勢。化學性眼淚（chemosis）為早期徵兆之一。
     - name: 胸腔 X 光
       notes: 肺水腫表現（肺泡型/間質型浸潤）。犬心源性肺水腫以肺門為中心，非心源性較瀰漫。
-
 treatment:
   principles:
     - 立即減慢或停止靜脈輸液
@@ -64,36 +62,68 @@ treatment:
     - 嚴重胸腔積液可行胸腔穿刺
     - 心臟病患者加強心衰治療
     - 持續監測呼吸、體重及尿量
-
 prognosis: 醫源性容積過負荷若及時辨識並處理（停止輸液 + 利尿劑）預後通常良好。合併嚴重心臟病或腎衰竭者預後取決於基礎疾病控制程度。延遲處理的嚴重肺水腫可致呼吸衰竭。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Understanding Volume Kinetics: The Role of Pharmacokinetic Modeling and Analysis in Fluid Therapy."
+    title: 'Understanding Volume Kinetics: The Role of Pharmacokinetic Modeling and Analysis in Fluid Therapy.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7714761/
     type: review
-    pmid: "33330713"
+    pmid: '33330713'
   - sourceOrg: Frontiers in veterinary science
     title: Fluid Overload.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8275824/
     type: review
-    pmid: "34268347"
+    pmid: '34268347'
   - sourceOrg: Frontiers in veterinary science
-    title: "Fluid Therapy in Pulmonary Disease: How Careful Do We Need to Be?"
+    title: 'Fluid Therapy in Pulmonary Disease: How Careful Do We Need to Be?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8380830/
     type: review
-    pmid: "34434982"
+    pmid: '34434982'
   - sourceOrg: Cardiovascular diabetology
     title: Nonclinical and clinical pharmacology evidence for cardiovascular safety of saxagliptin.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5598064/
     type: review
-    pmid: "28903775"
+    pmid: '28903775'
   - sourceOrg: JFMS open reports
-    title: Bilateral external jugular vein anomalies preventing hemodialysis catheter placement in a cat with anuria secondary to Lilium species intoxication.
+    title: >-
+      Bilateral external jugular vein anomalies preventing hemodialysis catheter placement in a cat with anuria
+      secondary to Lilium species intoxication.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10338655/
     type: case-report
-    pmid: "37457858"
+    pmid: '37457858'
 pubmedQueries:
   - query: '"Fluid Overload" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 容積過負荷 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - peripheral-oedema 相關症狀
+        - ascites 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 肺聽診（囉音/濕囉音）、頸靜脈怒張、體重增加趨勢。化學性眼淚（chemosis）為早期徵兆之一。
+        - name: 胸腔 X 光
+          notes: 肺水腫表現（肺泡型/間質型浸潤）。犬心源性肺水腫以肺門為中心，非心源性較瀰漫。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 立即減慢或停止靜脈輸液
+        - 利尿劑促進液體排出
+        - 氧氣支持
+ddxSource: auto-generated

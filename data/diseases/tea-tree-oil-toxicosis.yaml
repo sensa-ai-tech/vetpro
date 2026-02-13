@@ -3,12 +3,13 @@ nameEn: Tea Tree Oil Toxicosis
 nameZh: 茶樹精油中毒
 bodySystem: toxicology
 description: 茶樹油為常用精油,含萜烯類化合物。貓犬對未稀釋茶樹油極度敏感,可引起嚴重中樞神經及肝毒性。
-
 aliases:
-  - { alias: 茶樹油中毒, language: zh }
-  - { alias: Melaleuca Oil Toxicity, language: en }
-  - { alias: Tea Tree Poisoning, language: en }
-
+  - alias: 茶樹油中毒
+    language: zh
+  - alias: Melaleuca Oil Toxicity
+    language: en
+  - alias: Tea Tree Poisoning
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 極度敏感,10-20%濃度即可致毒
-
 etiology:
   categories:
     - name: 局部過量使用
@@ -29,7 +29,6 @@ etiology:
       examples:
         - 舔舐塗抹部位
         - 誤食茶樹油產品
-
 clinicalSigns:
   early:
     - 2-12小時內發病
@@ -41,45 +40,75 @@ clinicalSigns:
     - 後肢麻痺
     - 癲癇發作
     - 昏迷(罕見)
-
 diagnosis:
   primaryTests:
     - name: 暴露史
-      notes: "確認茶樹油使用史,濃度及用量"
+      notes: 確認茶樹油使用史,濃度及用量
     - name: 特殊氣味
-      notes: "皮膚或嘔吐物有明顯茶樹油味"
+      notes: 皮膚或嘔吐物有明顯茶樹油味
     - name: 肝功能檢查
-      notes: "ALT可能升高(尤其貓)"
+      notes: ALT可能升高(尤其貓)
   differentialDiagnoses:
     - 其他精油中毒
     - 擬除蟲菊酯中毒
     - 有機磷中毒
-
 treatment:
   medical:
     - 立即以溫和洗潔劑徹底清洗皮膚(3-4次)
     - 催吐(若口服2小時內): 3% H2O2 1-2 mL/kg PO
     - 支持性療法:
-      - 靜脈輸液(矯正脫水及電解質)
-      - 體溫維持(保溫毯)
-      - 癲癇控制: Diazepam 0.5-1 mg/kg IV
+        - 靜脈輸液(矯正脫水及電解質)
+        - 體溫維持(保溫毯)
+        - 癲癇控制: Diazepam 0.5-1 mg/kg IV
     - 保肝藥物(貓): SAMe 20 mg/kg PO q24h
     - 監測神經症狀及肝功能24-72小時
-
 prognosis:
-  general: "及時除污及支持治療,多數於72小時內恢復。嚴重中毒可能需住院數日。死亡罕見但可能發生於極高濃度暴露或延遲治療。"
-
+  general: 及時除污及支持治療,多數於72小時內恢復。嚴重中毒可能需住院數日。死亡罕見但可能發生於極高濃度暴露或延遲治療。
 prevention:
   - 切勿使用未稀釋茶樹油於寵物
   - 濃度應<1-2%(10-20倍稀釋)
   - 避免塗抹於寵物可舔舐部位
   - 貓建議完全避免使用茶樹油產品
-
-
 guidelineRefs:
   - sourceOrg: BMC veterinary research
-    title: "Acute tea tree oil intoxication in a pet cockatiel (Nymphicus hollandicus): a case report."
+    title: 'Acute tea tree oil intoxication in a pet cockatiel (Nymphicus hollandicus): a case report.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6995176/
     type: case-report
-    pmid: "32005244"
+    pmid: '32005244'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: trembling
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+diagnosticAlgorithm:
+  title: 茶樹精油中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - trembling 相關症狀
+        - seizures 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 暴露史
+          notes: 確認茶樹油使用史,濃度及用量
+        - name: 特殊氣味
+          notes: 皮膚或嘔吐物有明顯茶樹油味
+        - name: 肝功能檢查
+          notes: ALT可能升高(尤其貓)
+ddxSource: auto-generated

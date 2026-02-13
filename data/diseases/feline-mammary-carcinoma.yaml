@@ -3,18 +3,19 @@ nameEn: Feline Mammary Carcinoma
 nameZh: 貓乳腺癌
 bodySystem: oncology
 description: 貓乳腺腫瘤約 80-90% 為惡性，其中以腺癌 (adenocarcinoma) 最常見。為貓第三常見腫瘤，好發於未絕育老年母貓。腫瘤侵襲性強，早期即可能出現淋巴結及肺轉移。早期絕育可顯著降低發生風險。
-
 aliases:
-  - { alias: 貓乳腺腫瘤, language: zh }
-  - { alias: 貓乳房癌, language: zh }
-  - { alias: Feline Mammary Tumor, language: en }
-  - { alias: Feline Mammary Adenocarcinoma, language: en }
-
+  - alias: 貓乳腺腫瘤
+    language: zh
+  - alias: 貓乳房癌
+    language: zh
+  - alias: Feline Mammary Tumor
+    language: en
+  - alias: Feline Mammary Adenocarcinoma
+    language: en
 species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓第三常見腫瘤。未絕育母貓風險最高，6 月齡前絕育可降低 91% 風險。暹羅貓 (Siamese) 可能有品種好發性。80-90% 為惡性。中位發病年齡 10-12 歲。
-
 etiology:
   categories:
     - name: 風險因子
@@ -29,7 +30,6 @@ etiology:
         - 固體型癌 (solid carcinoma)
         - 管狀乳頭狀癌 (tubulopapillary carcinoma)
         - 炎性乳癌 (inflammatory mammary carcinoma) 最具侵襲性
-
 clinicalSigns:
   early:
     - 乳腺區可觸診到單一或多個腫塊
@@ -43,7 +43,6 @@ clinicalSigns:
     - 食慾下降、體重減輕
     - 呼吸困難（肺轉移時）
     - 炎性乳癌表現為紅腫、熱痛、水腫
-
 diagnosis:
   primaryTests:
     - name: 細針抽吸細胞學 (FNA)
@@ -59,7 +58,6 @@ diagnosis:
     - CBC 與血清生化（術前評估）
     - 區域淋巴結 FNA（分期）
     - HER-2 與荷爾蒙受體檢測（研究中）
-
 treatment:
   principles:
     - 積極手術切除為首選
@@ -75,36 +73,85 @@ treatment:
     - 炎性乳癌預後極差，化療為姑息治療
     - 疼痛管理（NSAIDs、gabapentin）
     - 術後密切追蹤（每 1-3 個月胸腔 X-ray）
-
 prognosis: 腫瘤大小為最重要預後因子。腫瘤 <2 cm 中位存活 >3 年；2-3 cm 約 15-24 個月；>3 cm 約 4-12 個月。切緣乾淨與輔助化療可改善存活。炎性乳癌中位存活僅數週至數月。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
-    title: "Inside the Tumor: Decoding the Feline Mammary Tumor Microenvironment and Its Prognostic Value-A Review."
+    title: 'Inside the Tumor: Decoding the Feline Mammary Tumor Microenvironment and Its Prognostic Value-A Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12568044/
     type: review
-    pmid: "41150099"
+    pmid: '41150099'
   - sourceOrg: Veterinary sciences
     title: Emerging Biomarkers and Targeted Therapies in Feline Mammary Carcinoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8402877/
     type: review
-    pmid: "34437486"
+    pmid: '34437486'
   - sourceOrg: Veterinary medicine and science
-    title: "The role of COX expression in the prognostication of overall survival of canine and feline cancer: A systematic review."
+    title: >-
+      The role of COX expression in the prognostication of overall survival of canine and feline cancer: A systematic
+      review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8294401/
     type: review
-    pmid: "33751829"
+    pmid: '33751829'
   - sourceOrg: BMC veterinary research
-    title: "Bcl-2 expression and prognostic significance in feline invasive mammary carcinomas: a retrospective observational study."
+    title: >-
+      Bcl-2 expression and prognostic significance in feline invasive mammary carcinomas: a retrospective observational
+      study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6329127/
     type: research
-    pmid: "30630524"
+    pmid: '30630524'
   - sourceOrg: Biochimica et biophysica acta. Reviews on cancer
-    title: "Advances in immunotherapy for breast cancer and feline mammary carcinoma: From molecular basis to novel therapeutic targets."
+    title: >-
+      Advances in immunotherapy for breast cancer and feline mammary carcinoma: From molecular basis to novel
+      therapeutic targets.
     url: https://pubmed.ncbi.nlm.nih.gov/38914239/
     type: review
-    pmid: "38914239"
+    pmid: '38914239'
 pubmedQueries:
   - query: '"feline mammary" AND ("carcinoma" OR "tumor") AND ("treatment" OR "prognosis" OR "guidelines")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: uncommon
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 貓乳腺癌 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 細針抽吸細胞學 (FNA)
+          notes: 初步評估腫瘤類型，但細胞學對乳腺腫瘤良惡性鑑別準確率有限
+        - name: 組織病理學（切除生檢）
+          notes: 確定診斷、分級分型必要。評估有絲分裂指數、淋巴管侵犯、切緣狀態
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC 與血清生化（術前評估）
+        - 區域淋巴結 FNA（分期）
+        - HER-2 與荷爾蒙受體檢測（研究中）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 積極手術切除為首選
+        - 單側或雙側乳腺全切除術
+        - 輔助化療建議用於大多數病例
+ddxSource: auto-generated

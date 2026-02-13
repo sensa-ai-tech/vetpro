@@ -3,13 +3,15 @@ nameEn: Corticosteroid Overdose
 nameZh: 皮質類固醇過量
 bodySystem: toxicology
 description: 皮質類固醇過量可因急性過量或長期高劑量使用引起。急性過量通常耐受良好，但長期使用可引起醫源性庫欣症候群 (iatrogenic hyperadrenocorticism)。突然停藥可導致腎上腺危象。犬貓均可發生。
-
 aliases:
-  - { alias: 類固醇過量, language: zh }
-  - { alias: 醫源性庫欣症, language: zh }
-  - { alias: Steroid Overdose, language: en }
-  - { alias: Iatrogenic Cushing Syndrome, language: en }
-
+  - alias: 類固醇過量
+    language: zh
+  - alias: 醫源性庫欣症
+    language: zh
+  - alias: Steroid Overdose
+    language: en
+  - alias: Iatrogenic Cushing Syndrome
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓對 corticosteroid 的副作用相對較犬少。但長期使用可引起糖尿病、皮膚脆弱症候群。
-
 etiology:
   categories:
     - name: 常見情境
@@ -32,7 +33,6 @@ etiology:
         - 蛋白質分解增加、脂肪重分佈
         - 免疫抑制
         - 胰島素阻抗
-
 clinicalSigns:
   early:
     - 多飲多尿
@@ -46,7 +46,6 @@ clinicalSigns:
     - 糖尿病（貓較犬多）
     - 皮膚脆弱症候群（貓）
     - 突然停藥：虛弱、嘔吐、低血壓（腎上腺危象）
-
 diagnosis:
   primaryTests:
     - name: 用藥史
@@ -58,7 +57,6 @@ diagnosis:
     - 生化（ALP 升高、高血糖、高膽固醇）
     - 尿液分析（低比重尿、糖尿）
     - 腹部超音波（肝腫大、腎上腺萎縮）
-
 treatment:
   principles:
     - 緩慢減量（絕對禁止突然停藥）
@@ -72,36 +70,97 @@ treatment:
     - 腎上腺危象：IV 輸液 + dexamethasone 0.1-0.2 mg/kg IV
     - 皮膚脆弱症候群避免創傷
     - ACTH 刺激試驗追蹤 HPA 軸恢復
-
 prognosis: 急性 corticosteroid 過量通常耐受良好。醫源性庫欣症緩慢減量後多數可逆。腎上腺危象若及時處理預後佳。長期使用引起的糖尿病在貓中可能為暫時性。
-
-
 guidelineRefs:
   - sourceOrg: Poultry science
-    title: Effects of exogenous phytase supplementation on the modulation of hormonal responses in Japanese quails (Coturnix japonica) at high environmental temperatures during the production phase.
+    title: >-
+      Effects of exogenous phytase supplementation on the modulation of hormonal responses in Japanese quails (Coturnix
+      japonica) at high environmental temperatures during the production phase.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12540279/
     type: research
-    pmid: "40764168"
-  - sourceOrg: "Journal of the American Association for Laboratory Animal Science : JAALAS"
-    title: Acute Effects of Hypothermia and Inhalant Anesthesia on Ultrasonic Vocalizations and Neuroendocrine Markers in Neonatal Rats.
+    pmid: '40764168'
+  - sourceOrg: 'Journal of the American Association for Laboratory Animal Science : JAALAS'
+    title: >-
+      Acute Effects of Hypothermia and Inhalant Anesthesia on Ultrasonic Vocalizations and Neuroendocrine Markers in
+      Neonatal Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10844739/
     type: research
-    pmid: "38040412"
+    pmid: '38040412'
   - sourceOrg: Molecular psychiatry
     title: Corticosteroid sensitization drives opioid addiction.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10406162/
     type: research
-    pmid: "35296810"
+    pmid: '35296810'
   - sourceOrg: Journal of cellular and molecular medicine
-    title: "Glucocorticoids decreased Cx43 expression in osteonecrosis of femoral head: The effect on proliferation and osteogenic differentiation of rat BMSCs."
+    title: >-
+      Glucocorticoids decreased Cx43 expression in osteonecrosis of femoral head: The effect on proliferation and
+      osteogenic differentiation of rat BMSCs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7810924/
     type: research
-    pmid: "33205619"
-  - sourceOrg: "Medical science monitor : international medical journal of experimental and clinical research"
-    title: Effect of Aldosterone on Senescence and Proliferation Inhibition of Endothelial Progenitor Cells Induced by Sirtuin 1 (SIRT1) in Pulmonary Arterial Hypertension.
+    pmid: '33205619'
+  - sourceOrg: 'Medical science monitor : international medical journal of experimental and clinical research'
+    title: >-
+      Effect of Aldosterone on Senescence and Proliferation Inhibition of Endothelial Progenitor Cells Induced by
+      Sirtuin 1 (SIRT1) in Pulmonary Arterial Hypertension.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7191948/
     type: research
-    pmid: "32303670"
+    pmid: '32303670'
 pubmedQueries:
   - query: '"corticosteroid" AND ("overdose" OR "iatrogenic") AND (veterinary OR canine OR feline)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: weight-gain
+    frequency: uncommon
+  - symptomId: polyphagia
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: alopecia
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 皮質類固醇過量 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - abdominal-distension 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+        - dehydration 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 用藥史
+          notes: 詳細確認 corticosteroid 使用種類、劑量與持續時間
+        - name: ACTH 刺激試驗
+          notes: 基礎與刺激後 cortisol 均低下提示 HPA 軸抑制。區分醫源性與自發性庫欣症
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC（應激性白血球圖譜）
+        - 生化（ALP 升高、高血糖、高膽固醇）
+        - 尿液分析（低比重尿、糖尿）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 緩慢減量（絕對禁止突然停藥）
+        - 管理醫源性併發症
+        - 監測腎上腺功能恢復
+ddxSource: auto-generated

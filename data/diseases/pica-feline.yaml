@@ -3,17 +3,16 @@ nameEn: Pica Feline
 nameZh: 貓異食癖
 bodySystem: behavioral
 description: 貓攝食非食物物質如塑膠、布料、橡膠。可能導致腸道阻塞。需排除醫學問題並給予飲食調整及行為修正。
-
 aliases:
-  - { alias: 貓亂吃東西, language: zh }
-  - { alias: Feline Pica, language: en }
-
+  - alias: 貓亂吃東西
+    language: zh
+  - alias: Feline Pica
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 東方品種、年輕貓較常見
-
 etiology:
   categories:
     - name: 醫學原因
@@ -28,7 +27,6 @@ etiology:
         - 焦慮或壓力
         - 羊毛吸吮進展
         - 環境貧乏、無聊
-
 clinicalSigns:
   early:
     - 咀嚼或舔舐非食物物質
@@ -38,22 +36,20 @@ clinicalSigns:
     - 嘔吐、腹瀉
     - 食慾下降
     - 腸道阻塞（緊急）
-
 diagnosis:
   primaryTests:
     - name: 全血球計數及生化
-      notes: "貧血、甲狀腺、糖尿病"
+      notes: 貧血、甲狀腺、糖尿病
     - name: 糞便檢查
-      notes: "寄生蟲、消化不良"
+      notes: 寄生蟲、消化不良
     - name: 影像學
-      notes: "X光或超音波（若懷疑阻塞）"
+      notes: X光或超音波（若懷疑阻塞）
     - name: 行為評估
-      notes: "焦慮、環境、飲食"
+      notes: 焦慮、環境、飲食
   differentialDiagnoses:
     - 羊毛吸吮
     - 正常探索行為
     - 飢餓
-
 treatment:
   medical:
     - 治療潛在醫學問題：
@@ -70,33 +66,59 @@ treatment:
     - 藥物（行為性）：
     - Fluoxetine 0.5-1 mg/kg PO q24h
     - 手術（腸道阻塞）
-
 prognosis:
-  general: "醫學原因治療後預後佳。行為性需長期管理。腸道阻塞為嚴重併發症，可能致命。"
-
+  general: 醫學原因治療後預後佳。行為性需長期管理。腸道阻塞為嚴重併發症，可能致命。
 prevention:
   - 定期健康檢查
   - 高纖維高品質飲食
   - 充足環境刺激
   - 移除危險物品
-
-
 guidelineRefs:
   - sourceOrg: JFMS open reports
     title: Human-directed aggression and pica in a 1-year-old cat, which worsened following international relocation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10334008/
     type: case-report
-    pmid: "37441538"
+    pmid: '37441538'
     relevance: supporting
   - sourceOrg: Ecology and evolution
-    title: Recognition of Predator Type and Risk Level in Azure-Winged Magpies (Cyanopica cyanus) Through Visual and Auditory Cues.
+    title: >-
+      Recognition of Predator Type and Risk Level in Azure-Winged Magpies (Cyanopica cyanus) Through Visual and Auditory
+      Cues.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11650747/
     type: research
-    pmid: "39691435"
+    pmid: '39691435'
     relevance: supporting
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Pain and Problem Behavior in Cats and Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7071134/
     type: research
-    pmid: "32085528"
+    pmid: '32085528'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 貓異食癖 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - vomiting 相關症狀
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 全血球計數及生化
+          notes: 貧血、甲狀腺、糖尿病
+        - name: 糞便檢查
+          notes: 寄生蟲、消化不良
+        - name: 影像學
+          notes: X光或超音波（若懷疑阻塞）
+ddxSource: auto-generated

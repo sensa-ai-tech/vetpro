@@ -2,13 +2,16 @@ slug: heinz-body-anemia
 nameEn: Heinz Body Anemia
 nameZh: 乙乙氏小體貧血
 bodySystem: hematology
-description: Heinz body 貧血為氧化性損傷導致血紅素變性，在紅血球內形成不溶性沉澱物（Heinz bodies），使紅血球易被脾臟清除或發生血管內溶血。貓隻紅血球對氧化壓力特別敏感。常見原因包括洋蔥/大蒜中毒、Acetaminophen 中毒（貓）、鋅中毒及部分藥物。
-
+description: >-
+  Heinz body 貧血為氧化性損傷導致血紅素變性，在紅血球內形成不溶性沉澱物（Heinz bodies），使紅血球易被脾臟清除或發生血管內溶血。貓隻紅血球對氧化壓力特別敏感。常見原因包括洋蔥/大蒜中毒、Acetaminophen
+  中毒（貓）、鋅中毒及部分藥物。
 aliases:
-  - { alias: Heinz Body Hemolytic Anemia, language: en }
-  - { alias: 亨氏小體貧血, language: zh }
-  - { alias: Oxidative Hemolytic Anemia, language: en }
-
+  - alias: Heinz Body Hemolytic Anemia
+    language: en
+  - alias: 亨氏小體貧血
+    language: zh
+  - alias: Oxidative Hemolytic Anemia
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓隻紅血球對氧化壓力高度敏感（血紅素含較多硫氫基、脾臟清除能力較差）。Acetaminophen、洋蔥、丙二醇（propylene glycol）為常見原因。少量 Heinz bodies 可見於健康貓（尤其糖尿病或甲亢貓）。
-
 etiology:
   categories:
     - name: 食物/毒物
@@ -35,7 +37,6 @@ etiology:
         - 糖尿病（酮酸中毒伴氧化壓力增加）
         - 甲狀腺功能亢進（代謝率增加）
         - 淋巴瘤（部分病例）
-
 clinicalSigns:
   early:
     - 黏膜蒼白
@@ -48,14 +49,12 @@ clinicalSigns:
     - 呼吸急促
     - 心搏過速
     - 貓：口腔黏膜與皮膚發紺（methemoglobinemia，Acetaminophen 中毒）
-
 diagnosis:
   primaryTests:
     - name: 血液抹片（新亞甲藍染色）
       notes: 新亞甲藍（new methylene blue）或 brilliant cresyl blue 活體染色可見 Heinz bodies（紅血球表面或內部的深藍色圓形突起）。Wright's 染色下可見為蒼白突起。
     - name: 全血球計數（CBC）
       notes: 再生性貧血（網織紅血球增加）。可見 eccentrocytes（氧化性損傷特徵）。Methemoglobin 測定（如可用）。
-
 treatment:
   principles:
     - 移除氧化性毒物為首要任務
@@ -63,20 +62,78 @@ treatment:
     - 特定解毒劑（Acetaminophen 中毒用 NAC）
   general:
     - 移除毒物來源（催吐、活性碳）
-    - "Acetaminophen 中毒：N-acetylcysteine（NAC）140 mg/kg IV loading → 70 mg/kg IV q4h × 12-17 doses"
-    - "輸血：pRBC 10-20 mL/kg（嚴重貧血時）"
+    - Acetaminophen 中毒：N-acetylcysteine（NAC）140 mg/kg IV loading → 70 mg/kg IV q4h × 12-17 doses
+    - 輸血：pRBC 10-20 mL/kg（嚴重貧血時）
     - 輸液支持維持腎臟灌流
     - 鋅中毒：內視鏡或手術移除鋅異物
-
 prognosis: 預後取決於毒物種類、攝入量與治療及時性。輕度洋蔥中毒在移除來源後通常 1-2 週內恢復。Acetaminophen 中毒在及時給予 NAC 後預後改善。鋅中毒移除異物後通常可恢復。嚴重溶血導致腎衰竭者預後不良。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Case report: Suspected propofol associated Heinz body anemia in five mechanically ventilated dogs: a historical case series."
+    title: >-
+      Case report: Suspected propofol associated Heinz body anemia in five mechanically ventilated dogs: a historical
+      case series.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11831891/
     type: case-report
-    pmid: "39963275"
+    pmid: '39963275'
 pubmedQueries:
   - query: '"Heinz body" AND (veterinary OR canine OR feline) AND ("anemia" OR "oxidative")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 乃乃氏小體溶血性貧血 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估溶血性貧血症狀和氧化劑暴露史
+      findings:
+        - 蒼白或黃疸黏膜
+        - 虛弱和運動不耐
+        - 暗色尿液
+        - 已知接觸氧化性物質（洋蔥、鋅、醋胺酚等）
+    - step: 2
+      action: 血液學檢查
+      details: 進行全血計數和特殊染色血液抹片
+      findings:
+        - 再生性貧血
+        - 新亞甲藍染色見Heinz bodies
+        - 偏心球形紅血球
+        - 網狀紅血球增加
+    - step: 3
+      action: 病因鑑定
+      details: 確定氧化性損傷的來源
+      findings:
+        - 蔥屬植物攝入
+        - 鋅中毒（硬幣、螺母攝入）
+        - 醋胺酚中毒（貓特別敏感）
+        - 糖尿病酮酸中毒相關
+    - step: 4
+      action: 併發症監測
+      details: 監測溶血相關併發症
+      findings:
+        - 連續PCV追蹤
+        - 變性血紅素血症評估
+        - 腎功能監測
+        - 是否需要輸血評估
+clinicalPearls:
+  - 貓對 acetaminophen 極度敏感，一顆 325mg 即可致命
+  - 正常貓血液中可見少量 Heinz body（<5%），不一定代表疾病
+  - 洋蔥、大蒜、韭菜、蔥均屬蔥屬植物，煮熟後仍有毒性
+  - 日本犬種（Akita）紅血球 GSH 含量低，對氧化損傷特別敏感
+monitoringItems:
+  - PCV 每 12-24 小時監測至穩定
+  - MetHb 濃度追蹤（acetaminophen 中毒）
+  - 腎功能監測（血紅素腎病風險）
+  - 網織紅血球計數評估骨髓再生反應
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: pallor-cyanosis
+    frequency: rare
+  - symptomId: peripheral-oedema
+    frequency: rare
+  - symptomId: tachycardia-bradycardia
+    frequency: rare
+  - symptomId: splenomegaly
+    frequency: rare
+ddxSource: book

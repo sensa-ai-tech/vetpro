@@ -3,17 +3,17 @@ nameEn: Canine Coronavirus
 nameZh: 犬冠狀病毒感染
 bodySystem: infectious
 description: 犬冠狀病毒 (CCoV) 為 Alphacoronavirus 屬的 RNA 病毒，主要感染犬小腸絨毛上皮細胞，引起輕度至中度自限性腸胃炎。幼犬及免疫力低下犬症狀較嚴重。與犬小病毒 (CPV) 混合感染時病死率顯著增加。
-
 aliases:
-  - { alias: 犬冠狀病毒腸炎, language: zh }
-  - { alias: CCoV, language: en }
-  - { alias: Canine Enteric Coronavirus, language: en }
-
+  - alias: 犬冠狀病毒腸炎
+    language: zh
+  - alias: CCoV
+    language: en
+  - alias: Canine Enteric Coronavirus
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
     notes: 犬群間傳播迅速，經糞口途徑感染。幼犬症狀較重，成犬多為亞臨床感染。與 CPV 混合感染時死亡率大幅提高。疫苗存在但非核心疫苗。
-
 etiology:
   categories:
     - name: 病原特性
@@ -28,7 +28,6 @@ etiology:
         - 犬舍、寄宿環境密集飼養
         - 免疫力低下
         - 與犬小病毒混合感染
-
 clinicalSigns:
   early:
     - 突發性軟便或水樣腹瀉
@@ -40,7 +39,6 @@ clinicalSigns:
     - 脫水
     - 幼犬嚴重虛弱
     - 混合感染時症狀急遽惡化
-
 diagnosis:
   primaryTests:
     - name: 糞便 PCR 檢測
@@ -51,7 +49,6 @@ diagnosis:
     - 糞便電子顯微鏡（可見典型冠狀病毒形態）
     - CBC 與生化（評估脫水與電解質失衡）
     - 排除 CPV、寄生蟲及細菌性腸炎
-
 treatment:
   principles:
     - 支持療法為主（自限性疾病）
@@ -66,36 +63,87 @@ treatment:
     - 嚴重者給予廣效抗生素預防繼發菌血症
     - 少量多餐易消化飲食
     - 隔離感染犬以防傳播
-
 prognosis: 單純犬冠狀病毒感染預後良好，多數在 7-10 天內自行恢復。幼犬或混合感染（特別是合併 CPV）預後較差。適當支持治療下死亡率極低。
-
-
 guidelineRefs:
   - sourceOrg: Emerging infectious diseases
     title: Emerging Respiratory Virus Threats from Influenza D and Canine Coronavirus HuPn-2018.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12870013/
     type: review
-    pmid: "41564895"
+    pmid: '41564895'
   - sourceOrg: mBio
-    title: Rethinking the drivers of coronavirus virulence and pathogenesis; toward an understanding of the dynamic world of mutations, indels, and recombination within the alphacoronaviruses.
+    title: >-
+      Rethinking the drivers of coronavirus virulence and pathogenesis; toward an understanding of the dynamic world of
+      mutations, indels, and recombination within the alphacoronaviruses.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12505906/
     type: review
-    pmid: "40874746"
+    pmid: '40874746'
   - sourceOrg: Microorganisms
-    title: "A One Health Perspective on Canine Coronavirus: A Wolf in Sheep's Clothing?"
+    title: 'A One Health Perspective on Canine Coronavirus: A Wolf in Sheep''s Clothing?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10143937/
     type: review
-    pmid: "37110344"
+    pmid: '37110344'
   - sourceOrg: Research in veterinary science
-    title: "The knotty biology of canine coronavirus: A worrying model of coronaviruses' danger."
+    title: 'The knotty biology of canine coronavirus: A worrying model of coronaviruses'' danger.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8605815/
     type: review
-    pmid: "34838321"
+    pmid: '34838321'
   - sourceOrg: Microorganisms
     title: Phylogenetic Diversity of Animal Oral and Gastrointestinal Viromes Useful in Surveillance of Zoonoses.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9506515/
     type: review
-    pmid: "36144417"
+    pmid: '36144417'
 pubmedQueries:
   - query: '"canine coronavirus" AND ("enteritis" OR "treatment" OR "diagnosis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 犬冠狀病毒腸炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估臨床症狀與病史，注意幼犬、群居環境及疫苗接種狀態
+      findings:
+        - 急性水樣腹瀉
+        - 輕度嘔吐
+        - 食慾下降
+        - 輕度脫水
+    - step: 2
+      action: 基本檢查
+      details: 進行血液學與生化檢查評估全身狀態
+      findings:
+        - 血液學變化通常輕微
+        - 輕度白血球減少
+        - 電解質輕度失衡
+    - step: 3
+      action: 糞便檢查
+      details: 進行糞便抗原檢測與PCR確認病原
+      findings:
+        - 糞便CCoV抗原快篩陽性
+        - 糞便PCR檢測CCoV RNA陽性
+        - 需排除犬小病毒共感染
+    - step: 4
+      action: 確診與鑑別
+      details: 綜合臨床表現與實驗室結果確診，排除其他腸炎病因
+      findings:
+        - 確認CCoV感染
+        - 排除CPV-2共感染
+        - 評估是否有繼發性細菌感染
+clinicalPearls:
+  - CCoV單獨感染通常為自限性疾病，臨床意義主要在於與CPV的混合感染
+  - 糞便中病毒排出可持續數週，即使臨床症狀已消失
+  - 環境中病毒可存活數天，需使用含氯消毒劑徹底消毒
+  - CCoV疫苗存在但非核心疫苗，其臨床保護效力仍有爭議
+monitoringItems:
+  - 每日體重和水合狀態評估
+  - 糞便性狀觀察
+  - 食慾和精神狀態監測
+  - 混合感染時監測白血球計數
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+ddxSource: book

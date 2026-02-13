@@ -3,11 +3,11 @@ nameEn: Alopecia Endocrine Pattern
 nameZh: 內分泌性對稱性脫毛
 bodySystem: dermatology
 description: 內分泌異常導致的對稱性非搔癢性脫毛,常見於庫興氏症、甲狀腺功能低下、性腺激素異常等,診斷需排除其他皮膚病並確認內分泌異常。
-
 aliases:
-  - { alias: 內分泌脫毛, language: zh }
-  - { alias: Endocrine alopecia, language: en }
-
+  - alias: 內分泌脫毛
+    language: zh
+  - alias: Endocrine alopecia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓較少見,甲狀腺亢進通常不導致脫毛
-
 etiology:
   categories:
     - name: 庫興氏症
@@ -39,7 +38,6 @@ etiology:
       examples:
         - 博美、鬆獅犬好發
         - 軀幹對稱性脫毛(頭部四肢正常)
-
 clinicalSigns:
   early:
     - 軀幹對稱性脫毛(側腹部、尾部、頸部)
@@ -51,43 +49,64 @@ clinicalSigns:
     - 皮膚變薄或增厚(依病因而異)
     - 毛髮再生緩慢或不再生
     - 伴隨原發內分泌病症狀
-
 diagnosis:
   primaryTests:
     - name: 甲狀腺功能(T4, TSH, fT4)
-      notes: "排除甲狀腺功能低下"
+      notes: 排除甲狀腺功能低下
     - name: ACTH刺激試驗
-      notes: "排除庫興氏症"
+      notes: 排除庫興氏症
     - name: 性荷爾蒙檢測
-      notes: "未絕育動物評估睪固酮、雌激素、黃體酮"
+      notes: 未絕育動物評估睪固酮、雌激素、黃體酮
     - name: 皮膚組織病理
-      notes: "內分泌性脫毛特徵:毛囊萎縮、休止期毛囊增多、火焰狀毛囊"
+      notes: 內分泌性脫毛特徵:毛囊萎縮、休止期毛囊增多、火焰狀毛囊
     - name: 排除性檢查
-      notes: "皮膚刮屑(排除毛囊蟲)、黴菌培養"
+      notes: 皮膚刮屑(排除毛囊蟲)、黴菌培養
   differentialDiagnoses:
     - 毛囊蟲症
     - 皮膚黴菌感染
     - 脂漏性皮膚炎
     - 季節性側腹脫毛
     - 注射部位脫毛
-
 treatment:
   medical:
     - 治療原發內分泌疾病:
-      - 庫興氏症:Trilostane 1-2 mg/kg PO SID-BID
-      - 甲狀腺功能低下:Levothyroxine 0.02 mg/kg PO BID
-      - 性荷爾蒙異常:絕育手術
+        - 庫興氏症:Trilostane 1-2 mg/kg PO SID-BID
+        - 甲狀腺功能低下:Levothyroxine 0.02 mg/kg PO BID
+        - 性荷爾蒙異常:絕育手術
     - 生長激素反應性皮膚病:
-      - 絕育手術(未絕育動物)
-      - Melatonin 3-6 mg PO SID(博美犬)
-      - Trilostane(部分病例有效)
+        - 絕育手術(未絕育動物)
+        - Melatonin 3-6 mg PO SID(博美犬)
+        - Trilostane(部分病例有效)
     - 營養補充(Omega-3脂肪酸)
     - 毛髮再生通常於內分泌控制後3-6個月出現
-
 prognosis:
-  general: "原發內分泌疾病獲控制後毛髮通常可再生,但需數月時間。生長激素反應性皮膚病治療反應不一,部分病例需長期治療。"
-
+  general: 原發內分泌疾病獲控制後毛髮通常可再生,但需數月時間。生長激素反應性皮膚病治療反應不一,部分病例需長期治療。
 prevention:
   - 早期診斷並治療內分泌疾病
   - 定期監測內分泌功能
   - 適齡絕育可預防性荷爾蒙相關脫毛
+associatedSymptoms:
+  - symptomId: alopecia
+    frequency: common
+  - symptomId: skin-pruritus
+    frequency: common
+diagnosticAlgorithm:
+  title: 內分泌性對稱性脫毛 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - alopecia 相關症狀
+        - skin-pruritus 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 甲狀腺功能(T4, TSH, fT4)
+          notes: 排除甲狀腺功能低下
+        - name: ACTH刺激試驗
+          notes: 排除庫興氏症
+        - name: 性荷爾蒙檢測
+          notes: 未絕育動物評估睪固酮、雌激素、黃體酮
+ddxSource: auto-generated

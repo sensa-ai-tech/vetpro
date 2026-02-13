@@ -3,11 +3,11 @@ nameEn: Salmonellosis Infectious
 nameZh: 沙門氏菌感染
 bodySystem: infectious
 description: 沙門氏菌感染 (salmonellosis) 由 Salmonella enterica 引起的人畜共通傳染病。犬貓可為無症狀帶原者或表現為急性腸胃炎、敗血症。免疫抑制動物風險最高。生食飲食 (raw diet) 餵食為重要風險因子。
-
 aliases:
-  - { alias: 沙門桿菌病, language: zh }
-  - { alias: Salmonella Infection, language: en }
-
+  - alias: 沙門桿菌病
+    language: zh
+  - alias: Salmonella Infection
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓帶原率與犬相似。獵捕野鳥為額外感染途徑。鳴禽熱 (songbird fever) 為貓特殊流行病學型態。
-
 etiology:
   categories:
     - name: 病原與傳播
@@ -30,7 +29,6 @@ etiology:
         - 免疫抑制（化療、corticosteroid 使用）
         - 幼齡動物
         - 收容所等密集飼養環境
-
 clinicalSigns:
   early:
     - 急性水樣或黏液樣腹瀉
@@ -43,7 +41,6 @@ clinicalSigns:
     - 敗血症（幼畜或免疫抑制者）
     - 腹痛
     - 慢性帶原（持續排菌）
-
 diagnosis:
   primaryTests:
     - name: 糞便培養
@@ -54,7 +51,6 @@ diagnosis:
     - 血液培養（敗血症時）
     - CBC（白血球減少或左移、血小板減少）
     - 生化（電解質失衡、低白蛋白）
-
 treatment:
   principles:
     - 自限性腸胃炎不建議常規使用抗生素
@@ -69,41 +65,96 @@ treatment:
     - 少量多餐易消化飲食
     - 嚴格衛生防護（洗手、糞便處理）
     - 不建議未完善治療的帶原者使用抗生素（延長排菌期）
-
 prognosis: 免疫正常成年犬貓沙門氏菌腸胃炎預後良好，多數 3-7 天內自行恢復。敗血型預後較差，尤其幼齡或免疫抑制動物。慢性帶原可能持續數週至數月排菌。
-
-
 guidelineRefs:
-  - sourceOrg: "Euro surveillance : bulletin Europeen sur les maladies transmissibles = European communicable disease bulletin"
-    title: "Healthcare-associated foodborne outbreaks in high-income countries: a literature review and surveillance study, 16 OECD countries, 2001 to 2019."
+  - sourceOrg: 'Euro surveillance : bulletin Europeen sur les maladies transmissibles = European communicable disease bulletin'
+    title: >-
+      Healthcare-associated foodborne outbreaks in high-income countries: a literature review and surveillance study, 16
+      OECD countries, 2001 to 2019.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8518306/
     type: review
-    pmid: "34651575"
+    pmid: '34651575'
     relevance: primary
   - sourceOrg: Epidemiology and infection
-    title: Ceftiofur-resistant Salmonella enterica serovar Heidelberg of poultry origin - a risk profile using the Codex framework.
+    title: >-
+      Ceftiofur-resistant Salmonella enterica serovar Heidelberg of poultry origin - a risk profile using the Codex
+      framework.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6836576/
     type: review
-    pmid: "31679543"
+    pmid: '31679543'
     relevance: supporting
   - sourceOrg: BMC veterinary research
-    title: "Goose parvovirus, goose hemorrhagic polyomavirus and goose circovirus infections are prevalent in commercial geese flocks in Poland and contribute to overall health and production outcomes: a two-year observational study."
+    title: >-
+      Goose parvovirus, goose hemorrhagic polyomavirus and goose circovirus infections are prevalent in commercial geese
+      flocks in Poland and contribute to overall health and production outcomes: a two-year observational study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11951593/
     type: research
-    pmid: "40155934"
+    pmid: '40155934'
     relevance: supporting
   - sourceOrg: Genome medicine
-    title: "Typhi Mykrobe: fast and accurate lineage identification and antimicrobial resistance genotyping directly from sequence reads for the typhoid fever agent Salmonella Typhi."
+    title: >-
+      Typhi Mykrobe: fast and accurate lineage identification and antimicrobial resistance genotyping directly from
+      sequence reads for the typhoid fever agent Salmonella Typhi.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12667118/
     type: research
-    pmid: "41327441"
+    pmid: '41327441'
     relevance: supporting
-  - sourceOrg: "bioRxiv : the preprint server for biology"
-    title: "Typhi Mykrobe: fast and accurate lineage identification and antimicrobial resistance genotyping directly from sequence reads for the typhoid fever agent Salmonella Typhi."
+  - sourceOrg: 'bioRxiv : the preprint server for biology'
+    title: >-
+      Typhi Mykrobe: fast and accurate lineage identification and antimicrobial resistance genotyping directly from
+      sequence reads for the typhoid fever agent Salmonella Typhi.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12324182/
     type: research
-    pmid: "40766357"
+    pmid: '40766357'
     relevance: supporting
 pubmedQueries:
   - query: '"salmonellosis" AND (veterinary OR canine OR feline) AND ("treatment" OR "zoonosis" OR "raw diet")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: haematochezia
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 沙門氏菌感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - hyperthermia 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便培養
+          notes: 確定診斷金標準。需指定沙門氏菌選擇性培養基。抗生素敏感試驗指導治療
+        - name: 糞便 PCR
+          notes: 快速檢測，敏感度高。可同時偵測毒力基因與抗藥基因
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 血液培養（敗血症時）
+        - CBC（白血球減少或左移、血小板減少）
+        - 生化（電解質失衡、低白蛋白）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 自限性腸胃炎不建議常規使用抗生素
+        - 僅敗血症或免疫抑制者使用抗生素
+        - 支持療法為核心
+ddxSource: auto-generated

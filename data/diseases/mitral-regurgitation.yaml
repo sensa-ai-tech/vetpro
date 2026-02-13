@@ -3,13 +3,15 @@ nameEn: Mitral Regurgitation
 nameZh: 僧帽瓣閉鎖不全
 bodySystem: cardiac
 description: 僧帽瓣無法完全閉合，導致左心室收縮時血流逆流至左心房，引起左心房擴張及肺靜脈鬱血。小型犬最常見的心臟病。
-
 aliases:
-  - { alias: 僧帽瓣逆流, language: zh }
-  - { alias: Mitral Insufficiency, language: en }
-  - { alias: MR, language: en }
-  - { alias: MMVD, language: en }
-
+  - alias: 僧帽瓣逆流
+    language: zh
+  - alias: Mitral Insufficiency
+    language: en
+  - alias: MR
+    language: en
+  - alias: MMVD
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 多因心肌病變繼發
-
 etiology:
   categories:
     - name: 退化性
@@ -32,7 +33,6 @@ etiology:
     - name: 先天性
       examples:
         - 瓣膜發育不良
-
 clinicalSigns:
   early:
     - 左心尖收縮期雜音
@@ -42,64 +42,94 @@ clinicalSigns:
     - 運動不耐
     - 呼吸困難
     - 肺水腫
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波
-      notes: "評估僧帽瓣逆流程度、左心房/左心室大小、LA:Ao ratio"
+      notes: 評估僧帽瓣逆流程度、左心房/左心室大小、LA:Ao ratio
     - name: 胸部 X 光
-      notes: "左心房擴張、肺靜脈擴張、肺水腫"
+      notes: 左心房擴張、肺靜脈擴張、肺水腫
     - name: NT-proBNP
-      notes: "評估心臟負荷及預後"
+      notes: 評估心臟負荷及預後
   differentialDiagnoses:
     - 氣管塌陷
     - 慢性支氣管炎
     - 肺炎
-
 treatment:
   medical:
     - Pimobendan 0.25-0.3 mg/kg PO q12h (ACVIM B2 期開始)
     - ACE 抑制劑 (enalapril 0.5 mg/kg PO q12-24h)
     - Furosemide 2-4 mg/kg PO q12-24h (心衰期)
     - Spironolactone 1-2 mg/kg PO q12-24h
-
 prognosis:
-  general: "慢性進展性疾病；早期無症狀可存活數年；出現心衰竭後平均存活 6-18 個月，需藥物控制"
-
+  general: 慢性進展性疾病；早期無症狀可存活數年；出現心衰竭後平均存活 6-18 個月，需藥物控制
 prevention:
   - 高風險品種定期心臟聽診
   - 早期超音波篩檢
   - ACVIM B2 期開始藥物介入可延緩心衰竭發生
-
-
 guidelineRefs:
   - sourceOrg: Open veterinary journal
-    title: "Open-heart techniques and mitral valve plasty for mitral regurgitation in toy- and small-breed dogs: A review."
+    title: 'Open-heart techniques and mitral valve plasty for mitral regurgitation in toy- and small-breed dogs: A review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8057224/
     type: review
-    pmid: "33898279"
+    pmid: '33898279'
     relevance: primary
-  - sourceOrg: "Cardiovascular pathology : the official journal of the Society for Cardiovascular Pathology"
-    title: "Comparative pathology of human and canine myxomatous mitral valve degeneration: 5HT and TGF-&#x3b2; mechanisms."
+  - sourceOrg: 'Cardiovascular pathology : the official journal of the Society for Cardiovascular Pathology'
+    title: 'Comparative pathology of human and canine myxomatous mitral valve degeneration: 5HT and TGF-&#x3b2; mechanisms.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7078050/
     type: review
-    pmid: "32006823"
+    pmid: '32006823'
     relevance: supporting
   - sourceOrg: BMC veterinary research
-    title: Deep learning-based evaluation of the severity of mitral regurgitation in canine myxomatous mitral valve disease patients using digital stethoscope recordings.
+    title: >-
+      Deep learning-based evaluation of the severity of mitral regurgitation in canine myxomatous mitral valve disease
+      patients using digital stethoscope recordings.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12060408/
     type: research
-    pmid: "40336065"
+    pmid: '40336065'
     relevance: supporting
   - sourceOrg: BMC cardiovascular disorders
-    title: "Incidence and predictors of adverse outcomes in patients with rheumatic mitral stenosis following percutaneous balloon mitral valvuloplasty: a study from a tertiary center in Thailand."
+    title: >-
+      Incidence and predictors of adverse outcomes in patients with rheumatic mitral stenosis following percutaneous
+      balloon mitral valvuloplasty: a study from a tertiary center in Thailand.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11285317/
     type: research
-    pmid: "39069638"
+    pmid: '39069638'
     relevance: supporting
   - sourceOrg: Veterinary sciences
-    title: Correlation between the Leaflet-Annulus Index and Echocardiographic Indices in Maltese Dogs with Myxomatous Mitral Valve Disease.
+    title: >-
+      Correlation between the Leaflet-Annulus Index and Echocardiographic Indices in Maltese Dogs with Myxomatous Mitral
+      Valve Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10458705/
     type: research
-    pmid: "37624280"
+    pmid: '37624280'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 僧帽瓣閉鎖不全 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - coughing 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波
+          notes: 評估僧帽瓣逆流程度、左心房/左心室大小、LA:Ao ratio
+        - name: 胸部 X 光
+          notes: 左心房擴張、肺靜脈擴張、肺水腫
+        - name: NT-proBNP
+          notes: 評估心臟負荷及預後
+ddxSource: auto-generated

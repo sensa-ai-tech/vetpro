@@ -3,18 +3,19 @@ nameEn: Avian Hemochromatosis
 nameZh: 禽類鐵質沉著症
 bodySystem: hepatic
 description: 禽類鐵質沉著症（Iron Storage Disease, ISD）為過量鐵質沉積於肝臟與其他器官導致的代謝性疾病，主要影響巨嘴鳥、椋鳥、天堂鳥等軟食性鳥類，造成肝臟纖維化與功能衰竭。
-
 aliases:
-  - { alias: 鳥類鐵質沉著病, language: zh }
-  - { alias: 鐵儲存病, language: zh }
-  - { alias: Iron storage disease, language: en }
-  - { alias: Hemosiderosis in birds, language: en }
-
+  - alias: 鳥類鐵質沉著病
+    language: zh
+  - alias: 鐵儲存病
+    language: zh
+  - alias: Iron storage disease
+    language: en
+  - alias: Hemosiderosis in birds
+    language: en
 species:
   - speciesCommon: bird
     prevalence: moderate
     notes: 巨嘴鳥（Toucans）、椋鳥（Mynahs）、天堂鳥為高風險物種。這些鳥種在野外的天然飲食鐵含量低，對高鐵飲食特別敏感。鸚鵡偶見。
-
 etiology:
   categories:
     - name: 飲食性
@@ -27,7 +28,6 @@ etiology:
         - 特定鳥種鐵代謝調控能力差
         - 腸道鐵吸收調節機制不完善
         - 肝臟鐵蓄積超過安全閾值
-
 clinicalSigns:
   early:
     - 多數早期無明顯症狀
@@ -39,21 +39,19 @@ clinicalSigns:
     - 明顯嗜睡
     - 消瘦
     - 猝死（急性肝衰竭或肝破裂出血）
-
 diagnosis:
   primaryTests:
     - name: 血液生化
-      notes: "肝酶（AST、LDH）升高。血清鐵與鐵蛋白升高。膽酸升高"
+      notes: 肝酶（AST、LDH）升高。血清鐵與鐵蛋白升高。膽酸升高
     - name: 肝臟活檢
-      notes: "肝組織 Prussian blue 染色可見大量鐵質沉積。為確診金標準"
+      notes: 肝組織 Prussian blue 染色可見大量鐵質沉積。為確診金標準
     - name: 影像學
-      notes: "X光見肝臟腫大。超音波可見肝臟回聲異常與腹水"
+      notes: X光見肝臟腫大。超音波可見肝臟回聲異常與腹水
   differentialDiagnoses:
     - 其他原因肝病
     - 肝臟腫瘤
     - 心臟衰竭導致肝充血
     - 黃麴毒素中毒
-
 treatment:
   medical:
     - 低鐵飲食（專用軟食鳥飼料，鐵 <100 ppm）
@@ -61,21 +59,51 @@ treatment:
     - 定期放血療法（0.5-1% 體重的血量，每 1-2 週）
     - Deferoxamine（鐵螯合劑）100 mg/kg IM 每日（嚴重病例）
     - 腹水引流（大量腹水時）
-
 prognosis:
-  general: "早期診斷配合飲食管理與放血療法可長期控制。嚴重肝纖維化不可逆。已出現腹水或肝衰竭者預後不良。預防性低鐵飲食為最佳策略。"
-
+  general: 早期診斷配合飲食管理與放血療法可長期控制。嚴重肝纖維化不可逆。已出現腹水或肝衰竭者預後不良。預防性低鐵飲食為最佳策略。
 prevention:
   - 高風險鳥種使用專用低鐵飲食
   - 飼料鐵含量控制在 <100 ppm
   - 避免餵食柑橘類水果
   - 定期血液檢查監測鐵指標
   - 使用含有鐵吸收抑制劑的飼料（如添加茶鞣酸）
-
-
 guidelineRefs:
   - sourceOrg: JCI insight
     title: Development of rat and mouse models of heme-iron absorption.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12220949/
     type: research
-    pmid: "40485584"
+    pmid: '40485584'
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類鐵質沉著症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - abdominal-distension 相關症狀
+        - hepatomegaly 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液生化
+          notes: 肝酶（AST、LDH）升高。血清鐵與鐵蛋白升高。膽酸升高
+        - name: 肝臟活檢
+          notes: 肝組織 Prussian blue 染色可見大量鐵質沉積。為確診金標準
+        - name: 影像學
+          notes: X光見肝臟腫大。超音波可見肝臟回聲異常與腹水
+ddxSource: auto-generated

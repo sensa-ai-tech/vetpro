@@ -3,12 +3,13 @@ nameEn: Toxoplasmosis
 nameZh: 弓蟲症
 bodySystem: infectious
 description: 弓蟲症由弓形蟲（Toxoplasma gondii）引起，貓科動物為唯一終宿主，可排出卵囊污染環境。犬貓均可作為中間宿主而發病，臨床症狀多樣，包括發熱、肺炎、肝炎、神經症狀及眼部病變。免疫抑制動物較易出現嚴重臨床症狀。
-
 aliases:
-  - { alias: 弓形蟲症, language: zh }
-  - { alias: 弓漿蟲症, language: zh }
-  - { alias: Toxoplasma infection, language: en }
-
+  - alias: 弓形蟲症
+    language: zh
+  - alias: 弓漿蟲症
+    language: zh
+  - alias: Toxoplasma infection
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
@@ -18,7 +19,6 @@ species:
     speciesScientific: Canis lupus familiaris
     prevalence: uncommon
     notes: 犬隻為中間宿主，不排出卵囊。臨床發病較貓少見，但神經型弓蟲症在犬隻中報告增加。常與犬瘟熱病毒合併感染時加重病情。
-
 etiology:
   categories:
     - name: 病原體
@@ -37,7 +37,6 @@ etiology:
         - 免疫抑制狀態（FIV、FeLV、免疫抑制劑使用）
         - 幼齡動物
         - 犬瘟熱合併感染（犬隻）
-
 clinicalSigns:
   early:
     - 發熱
@@ -58,29 +57,27 @@ clinicalSigns:
     - 呼吸衰竭
     - 全身性瀰漫性感染（免疫抑制動物）
     - 新生兒死亡（先天性感染）
-
 diagnosis:
   primaryTests:
     - name: 血清學檢測（IgM/IgG 抗體）
-      notes: "IgM 抗體在感染後 1-2 週升高，持續約 12-16 週，提示近期感染。IgG 抗體在感染後 2-4 週升高，可持續數年。配對血清 IgG 力價 4 倍以上升高支持活動性感染。單獨 IgG 陽性僅代表曾經暴露。"
+      notes: IgM 抗體在感染後 1-2 週升高，持續約 12-16 週，提示近期感染。IgG 抗體在感染後 2-4 週升高，可持續數年。配對血清 IgG 力價 4 倍以上升高支持活動性感染。單獨 IgG 陽性僅代表曾經暴露。
     - name: PCR 檢測
-      notes: "可從血液、房水、腦脊髓液或組織樣本中偵測 T. gondii DNA。對於確診活動性感染的敏感度與特異性均佳。"
+      notes: 可從血液、房水、腦脊髓液或組織樣本中偵測 T. gondii DNA。對於確診活動性感染的敏感度與特異性均佳。
     - name: 糞便檢查
-      notes: "貓隻糞便浮游法可偵測卵囊，但排卵期僅約 1-3 週，陰性結果不能排除感染。卵囊形態與其他球蟲相似，需專業鑑別。"
+      notes: 貓隻糞便浮游法可偵測卵囊，但排卵期僅約 1-3 週，陰性結果不能排除感染。卵囊形態與其他球蟲相似，需專業鑑別。
   imaging:
     - name: 胸腔 X 光
-      notes: "弓蟲性肺炎可見瀰漫性間質至肺泡型浸潤，雙側對稱性分布。"
+      notes: 弓蟲性肺炎可見瀰漫性間質至肺泡型浸潤，雙側對稱性分布。
     - name: 腹部超音波
-      notes: "評估肝臟（肝炎表現）、脾臟及腸系膜淋巴結變化。"
+      notes: 評估肝臟（肝炎表現）、脾臟及腸系膜淋巴結變化。
     - name: 腦部 MRI
-      notes: "神經型弓蟲症可見多灶性腦實質強化病灶，主要位於大腦及小腦。"
+      notes: 神經型弓蟲症可見多灶性腦實質強化病灶，主要位於大腦及小腦。
   additional:
     - 全血球計數：非再生性貧血、淋巴球減少（急性期）、嗜中性球減少
     - 血液生化：ALT/AST 升高（肝損傷）、膽紅素升高、CK 升高（肌肉損傷）
     - 腦脊髓液分析：蛋白質升高、混合性細胞增多
     - 房水分析：蛋白質升高、PCR 檢測
     - 組織病理學：組織包囊或速殖子的鑑定（確診依據）
-
 treatment:
   principles:
     - 抗原蟲藥物抑制速殖子增殖
@@ -88,42 +85,42 @@ treatment:
     - 眼部病變需合併局部及全身治療
     - 免疫抑制動物需更長療程
   general:
-    - "Clindamycin 10-12.5 mg/kg PO q12h，連續 4 週（犬貓均適用）"
-    - "替代方案：Trimethoprim-sulfonamide (TMP-SMX) 15 mg/kg PO q12h，連續 4 週"
-    - "替代方案：Azithromycin 10 mg/kg PO q24h，連續 4 週"
-    - "前葡萄膜炎：局部 Prednisolone acetate 1% 眼藥水 q6-8h + 局部 Atropine 1% q12-24h"
-    - "嚴重全身性炎症反應：Prednisolone 1 mg/kg PO q12h 短期使用，併用抗原蟲藥"
-    - "支持療法：靜脈輸液、止吐劑、營養支持"
-    - "癲癇控制：Levetiracetam 20 mg/kg PO q8h 或 Phenobarbital 2.5 mg/kg PO q12h"
-
+    - Clindamycin 10-12.5 mg/kg PO q12h，連續 4 週（犬貓均適用）
+    - 替代方案：Trimethoprim-sulfonamide (TMP-SMX) 15 mg/kg PO q12h，連續 4 週
+    - 替代方案：Azithromycin 10 mg/kg PO q24h，連續 4 週
+    - 前葡萄膜炎：局部 Prednisolone acetate 1% 眼藥水 q6-8h + 局部 Atropine 1% q12-24h
+    - 嚴重全身性炎症反應：Prednisolone 1 mg/kg PO q12h 短期使用，併用抗原蟲藥
+    - 支持療法：靜脈輸液、止吐劑、營養支持
+    - 癲癇控制：Levetiracetam 20 mg/kg PO q8h 或 Phenobarbital 2.5 mg/kg PO q12h
 prognosis: 免疫健全的成年犬貓經適當治療後預後良好至佳。眼部病變經積極治療多可控制，但可能遺留視力障礙。神經型弓蟲症預後謹慎，部分患者可能有永久性神經後遺症。免疫抑制動物（FIV/FeLV 陽性）預後較差。先天性感染的新生兒預後不良。
-
 guidelineRefs:
   - sourceOrg: Journal of Feline Medicine and Surgery
     title: ABCD guidelines on Toxoplasma gondii infection in cats
     url: https://pubmed.ncbi.nlm.nih.gov/23813831/
     type: consensus
-    pmid: "23813831"
+    pmid: '23813831'
   - sourceOrg: Veterinary Parasitology
-    title: "Toxoplasmosis in dogs and cats: an update"
+    title: 'Toxoplasmosis in dogs and cats: an update'
     url: https://pubmed.ncbi.nlm.nih.gov/20138432/
     type: consensus
-    pmid: "20138432"
+    pmid: '20138432'
   - sourceOrg: The veterinary quarterly
-    title: "The global seroprevalence of Toxoplasma gondii infection in workers occupationally exposed to animals (1972-2023): a systematic review and meta-analysis."
+    title: >-
+      The global seroprevalence of Toxoplasma gondii infection in workers occupationally exposed to animals (1972-2023):
+      a systematic review and meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11363739/
     type: review
-    pmid: "39205625"
+    pmid: '39205625'
   - sourceOrg: Frontiers in cellular and infection microbiology
-    title: "Toxoplasma gondii Genotyping: A Closer Look Into Europe."
+    title: 'Toxoplasma gondii Genotyping: A Closer Look Into Europe.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8984497/
     type: review
-    pmid: "35402301"
+    pmid: '35402301'
   - sourceOrg: Veterinary sciences
-    title: "Review of Toxoplasmosis: What We Still Need to Do."
+    title: 'Review of Toxoplasmosis: What We Still Need to Do.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12390377/
     type: review
-    pmid: "40872723"
+    pmid: '40872723'
 pubmedQueries:
   - query: '"toxoplasmosis" AND (cat OR feline) AND ("treatment" OR "clindamycin")'
     frequency: monthly
@@ -131,6 +128,60 @@ pubmedQueries:
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "GEN"
-  sectionTitle: "TOXOPLASMOSIS"
+  chapter: GEN
+  sectionTitle: TOXOPLASMOSIS
   pdfPage: 726
+diagnosticAlgorithm:
+  title: 弓形蟲病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估神經症狀、眼部病變及免疫狀態
+      findings:
+        - 發燒
+        - 呼吸困難
+        - 神經症狀
+        - 葡萄膜炎
+        - 免疫抑制病史
+    - step: 2
+      action: 血清學檢測
+      details: IgM及IgG抗體測量
+      findings:
+        - IgM陽性提示近期感染
+        - IgG高效價提示暴露
+        - 配對血清效價升高
+        - 排除其他原因的抗體升高
+    - step: 3
+      action: 血液與生化檢查
+      details: CBC及器官功能評估
+      findings:
+        - 嗜中性球減少（急性期）
+        - 肝指數升高
+        - 肌酸激酶升高
+        - 貧血
+    - step: 4
+      action: PCR與組織確診
+      details: 體液或組織PCR及組織病理
+      findings:
+        - 血液或體液PCR陽性
+        - 組織切片見速殖子或囊體
+        - 眼部檢查確認弓形蟲性葡萄膜炎
+clinicalPearls:
+  - 貓通常在初次感染後1-2週排卵囊
+  - 大多數感染無臨床症狀
+  - 人畜共通但貓糞便排卵囊時間短
+  - 孕婦應避免清理貓砂盆
+monitoringItems:
+  - 臨床症狀
+  - 眼睛
+  - 抗體效價
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+ddxSource: book

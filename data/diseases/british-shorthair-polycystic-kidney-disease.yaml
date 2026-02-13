@@ -3,24 +3,22 @@ nameEn: British Shorthair Polycystic Kidney Disease
 nameZh: 英國短毛貓多囊腎病
 bodySystem: urinary
 description: 英國短毛貓與波斯貓相同的PKD1基因突變,導致腎臟多發性囊腫。逐漸破壞腎組織,最終導致慢性腎衰竭。
-
 aliases:
-  - { alias: PKD, language: en }
-  - { alias: 多囊腎, language: zh }
-
+  - alias: PKD
+    language: en
+  - alias: 多囊腎
+    language: zh
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 英國短毛、波斯相關品種,體染色體顯性遺傳
-
 etiology:
   categories:
     - name: 遺傳性腎病
       examples:
         - PKD1基因突變
         - 體染色體顯性遺傳
-
 clinicalSigns:
   early:
     - 早期無症狀
@@ -30,29 +28,55 @@ clinicalSigns:
     - 多渴多尿
     - 食慾不振、嘔吐
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 腎臟超音波
-      notes: "雙側多發性囊腫"
+      notes: 雙側多發性囊腫
     - name: PKD1基因檢測
-      notes: "確診及繁殖篩檢"
+      notes: 確診及繁殖篩檢
     - name: 腎功能檢查
-      notes: "BUN、肌酸酐升高"
+      notes: BUN、肌酸酐升高
   differentialDiagnoses:
     - 腎臟腫瘤
     - 單純性腎囊腫
-
 treatment:
   medical:
     - 慢性腎病管理
     - 腎處方食品
     - 控制高血壓
     - 支持性治療
-
 prognosis:
-  general: "無法治癒,進行性惡化。多數7-10歲發展為腎衰竭,中位存活期診斷後3-5年。"
-
+  general: 無法治癒,進行性惡化。多數7-10歲發展為腎衰竭,中位存活期診斷後3-5年。
 prevention:
   - 繁殖前基因檢測強制
   - 陽性貓不應繁殖
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 英國短毛貓多囊腎病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - polyuria-polydipsia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腎臟超音波
+          notes: 雙側多發性囊腫
+        - name: PKD1基因檢測
+          notes: 確診及繁殖篩檢
+        - name: 腎功能檢查
+          notes: BUN、肌酸酐升高
+ddxSource: auto-generated

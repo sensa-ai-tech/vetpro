@@ -3,14 +3,17 @@ nameEn: Pulmonary Thromboembolism
 nameZh: 肺栓塞
 bodySystem: respiratory
 description: 肺動脈被血栓栓塞導致肺血流受阻的急性危重疾病。常繼發於高凝狀態 (如免疫介導溶血性貧血、蛋白流失性腎病、腎上腺皮質機能亢進、腫瘤)，臨床表現為急性呼吸窘迫，死亡率高。
-
 aliases:
-  - { alias: PTE, language: en }
-  - { alias: Pulmonary Embolism, language: en }
-  - { alias: PE, language: en }
-  - { alias: 肺血栓栓塞, language: zh }
-  - { alias: 肺動脈栓塞, language: zh }
-
+  - alias: PTE
+    language: en
+  - alias: Pulmonary Embolism
+    language: en
+  - alias: PE
+    language: en
+  - alias: 肺血栓栓塞
+    language: zh
+  - alias: 肺動脈栓塞
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓以心因性動脈血栓栓塞 (ATE) 更常見。肺栓塞較少單獨診斷，但可伴隨 HCM 或腫瘤發生。
-
 etiology:
   categories:
     - name: 高凝狀態疾病 (Virchow's triad)
@@ -47,7 +49,6 @@ etiology:
         - 胰臟炎
         - 敗血症/DIC
         - 類固醇長期使用
-
 clinicalSigns:
   early:
     - 急性呼吸急促 (tachypnea)
@@ -65,22 +66,21 @@ clinicalSigns:
     - 休克 (右心衰竭)
     - 暈厥
     - 猝死
-
 diagnosis:
   primaryTests:
     - name: CT 肺動脈血管攝影 (CTPA)
-      notes: "生前診斷的金標準。可見肺動脈內充盈缺損 (filling defect)。需要麻醉及造影劑注射"
+      notes: 生前診斷的金標準。可見肺動脈內充盈缺損 (filling defect)。需要麻醉及造影劑注射
     - name: 動脈血氣分析
-      notes: "典型表現為低氧血症 (PaO2 <80 mmHg)、低碳酸血症 (PaCO2 降低)、A-a gradient 增大"
+      notes: 典型表現為低氧血症 (PaO2 <80 mmHg)、低碳酸血症 (PaCO2 降低)、A-a gradient 增大
     - name: D-dimer
-      notes: "升高支持血栓形成。敏感度高但特異度低。正常值有助排除 PTE"
+      notes: 升高支持血栓形成。敏感度高但特異度低。正常值有助排除 PTE
   imaging:
     - name: 胸腔 X 光
-      notes: "可能正常或非特異性。可見局部肺血管截斷、楔形不透明影 (肺梗塞)、右心增大。X 光正常不能排除 PTE"
+      notes: 可能正常或非特異性。可見局部肺血管截斷、楔形不透明影 (肺梗塞)、右心增大。X 光正常不能排除 PTE
     - name: 心臟超音波
-      notes: "評估右心壓力過載 (右心室擴張、室間隔運動異常、三尖瓣逆流)。偶可見肺動脈內血栓"
+      notes: 評估右心壓力過載 (右心室擴張、室間隔運動異常、三尖瓣逆流)。偶可見肺動脈內血栓
     - name: 肺通氣灌流掃描 (V/Q scan)
-      notes: "灌流缺損而通氣正常為經典表現。獸醫臨床可用性有限"
+      notes: 灌流缺損而通氣正常為經典表現。獸醫臨床可用性有限
   additional:
     - CBC (IMHA 篩檢：球形紅血球、自體凝集)
     - 凝血功能 (PT/APTT 延長提示 DIC)
@@ -89,7 +89,6 @@ diagnosis:
     - 皮質醇檢測 (排除 Cushing's)
     - 心絲蟲抗原檢測
     - 血栓彈力圖 (TEG/ROTEM — 評估高凝狀態)
-
 treatment:
   principles:
     - 抗凝血治療為核心
@@ -98,16 +97,16 @@ treatment:
     - 預防再發比治療已有血栓更重要
   medications:
     - name: Unfractionated Heparin (UFH)
-      dose: "初始 200-300 IU/kg IV，維持 150-300 IU/kg SC q6-8h"
+      dose: 初始 200-300 IU/kg IV，維持 150-300 IU/kg SC q6-8h
       notes: 急性期一線抗凝血。根據 aPTT 調整劑量 (目標 1.5-2.5 倍基線)
     - name: Enoxaparin (低分子量肝素)
-      dose: "犬 0.8 mg/kg SC q6h；貓 1 mg/kg SC q12h"
+      dose: 犬 0.8 mg/kg SC q6h；貓 1 mg/kg SC q12h
       notes: 替代 UFH。劑量預測性較佳，不需常規監測
     - name: Clopidogrel
-      dose: "犬 2 mg/kg PO SID；貓 18.75 mg/cat PO SID"
+      dose: 犬 2 mg/kg PO SID；貓 18.75 mg/cat PO SID
       notes: 抗血小板藥。長期預防用。與抗凝血藥合併使用
     - name: Rivaroxaban
-      dose: "犬 1-2 mg/kg PO SID (初步研究劑量)"
+      dose: 犬 1-2 mg/kg PO SID (初步研究劑量)
       notes: 直接口服抗凝血藥 (Factor Xa inhibitor)。犬的藥動學研究有限，使用需謹慎
   general:
     - 氧氣治療 (維持 SpO2 >94%)
@@ -116,38 +115,37 @@ treatment:
     - 治療根本原因 (IMHA 免疫抑制、PLN 管理、心絲蟲治療)
     - 抗凝血治療至少持續 2-3 個月或直到根本原因控制
     - 溶栓治療 (tPA) 僅用於危及生命的大面積 PTE (犬 1 mg/kg IV over 15 min)
-
 emergencyNotes: 急性大面積 PTE 可致猝死。嚴重呼吸窘迫立即給氧。循環不穩定給予 dobutamine 2.5-10 μg/kg/min CRI 支持右心功能。立即開始肝素抗凝血。避免過度輸液加重右心衰竭。
-
-prognosis: 肺栓塞死亡率高 (報告約 30-70%)。預後取決於栓塞範圍、根本原因及治療反應。IMHA 合併 PTE 為重要死因。早期積極抗凝血治療可改善存活率。蛋白流失性腎病控制蛋白尿後血栓風險降低。心絲蟲相關 PTE 需特殊處置避免大量蟲體死亡引發更嚴重栓塞。
-
+prognosis: >-
+  肺栓塞死亡率高 (報告約 30-70%)。預後取決於栓塞範圍、根本原因及治療反應。IMHA 合併 PTE 為重要死因。早期積極抗凝血治療可改善存活率。蛋白流失性腎病控制蛋白尿後血栓風險降低。心絲蟲相關 PTE
+  需特殊處置避免大量蟲體死亡引發更嚴重栓塞。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: CURATIVE guidelines on the use of thromboprophylaxis in veterinary critical care
     url: https://pubmed.ncbi.nlm.nih.gov/36840635/
     type: guideline
-    pmid: "36840635"
+    pmid: '36840635'
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
     title: Diagnosis of pulmonary thromboembolism in dogs and cats
     url: https://pubmed.ncbi.nlm.nih.gov/23855440/
     type: review
-    pmid: "23855440"
+    pmid: '23855440'
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: ACVIM consensus statement on the diagnosis and treatment of immune-mediated hemolytic anemia in dogs
     url: https://pubmed.ncbi.nlm.nih.gov/30806493/
     type: consensus
-    pmid: "30806493"
+    pmid: '30806493'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Dirofilarioses in cats: European guidelines from the ABCD on prevention and management."
+    title: 'Dirofilarioses in cats: European guidelines from the ABCD on prevention and management.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11132531/
     type: guideline
-    pmid: "32326862"
+    pmid: '32326862'
     relevance: primary
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Point-of-Care Lung Ultrasound in Small Animal Emergency and Critical Care Medicine: A Clinical Review."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Point-of-Care Lung Ultrasound in Small Animal Emergency and Critical Care Medicine: A Clinical Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11718948/
     type: review
-    pmid: "39795049"
+    pmid: '39795049'
     relevance: primary
 pubmedQueries:
   - query: '"pulmonary thromboembolism" AND (dog OR canine) AND ("diagnosis" OR "treatment" OR "anticoagulant")'
@@ -156,6 +154,69 @@ pubmedQueries:
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "RES"
-  sectionTitle: "PULMONARY EMPHYSEMA"
+  chapter: RES
+  sectionTitle: PULMONARY EMPHYSEMA
   pdfPage: 1469
+diagnosticAlgorithm:
+  title: 肺血栓栓塞症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估與風險因子
+      details: 評估急性呼吸困難，識別高風險群
+      findings:
+        - 急性呼吸困難
+        - 心動過速
+        - 低血壓
+        - 高風險IMHA/腎病/庫欣/腫瘤/心絲蟲
+    - step: 2
+      action: 實驗室檢查
+      details: 血氣分析與凝血功能評估
+      findings:
+        - 低氧血症對氧氣反應差
+        - D-dimer升高
+        - 動脈血氣呼吸性鹼中毒
+        - PaO2/FiO2比值下降
+    - step: 3
+      action: 影像學檢查
+      details: 胸腔X光與進階影像
+      findings:
+        - X光可能正常或肺血管截斷
+        - 肺區域性低灌流
+        - CT血管攝影為金標準
+        - 右心擴大
+    - step: 4
+      action: 潛在病因調查
+      details: 確認導致高凝狀態的原因
+      findings:
+        - IMHA篩查
+        - 腎病蛋白尿評估
+        - 腎上腺皮質功能亢進
+        - 腫瘤篩查
+clinicalPearls:
+  - 有高凝風險疾病的動物突發呼吸困難應高度懷疑PTE
+  - 胸部X光可能正常或僅有輕微異常
+  - 動脈血氣呈低氧血症伴低碳酸血症是典型表現
+  - D-dimer正常有助排除，但升高不能確診
+  - IMHA是犬PTE最常見的基礎疾病
+monitoringItems:
+  - 動脈血氣
+  - 凝血功能
+  - D-dimer
+  - 心臟超音波
+  - 臨床症狀
+associatedSymptoms:
+  - symptomId: haemoptysis
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

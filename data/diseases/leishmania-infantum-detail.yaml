@@ -3,13 +3,15 @@ nameEn: Leishmania Infantum Detail
 nameZh: 犬利什曼原蟲病詳論
 bodySystem: infectious
 description: 由Leishmania infantum原蟲經白蛉傳播的人畜共通慢性疾病,主要見於地中海、南美洲。犬為主要保蟲宿主,可造成內臟型或皮膚型利什曼病,人類嬰幼兒及免疫抑制者高風險。
-
 aliases:
-  - { alias: 內臟利什曼病, language: zh }
-  - { alias: 黑熱病, language: zh }
-  - { alias: Visceral Leishmaniasis, language: en }
-  - { alias: Kala-azar, language: en }
-
+  - alias: 內臟利什曼病
+    language: zh
+  - alias: 黑熱病
+    language: zh
+  - alias: Visceral Leishmaniasis
+    language: en
+  - alias: Kala-azar
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少見臨床症狀,但可能帶原並傳播
-
 etiology:
   categories:
     - name: 病原體
@@ -31,7 +32,6 @@ etiology:
         - 垂直傳播(母犬至胎兒)
         - 輸血傳播
         - 咬傷或性傳播(罕見)
-
 clinicalSigns:
   early:
     - 淋巴結腫大(全身性)
@@ -44,26 +44,24 @@ clinicalSigns:
     - 眼部病變:葡萄膜炎、角膜炎、視網膜炎
     - 指甲異常增生(onychogryphosis)
     - 鼻出血、關節炎、多發性神經炎
-
 diagnosis:
   primaryTests:
     - name: 血清學
-      notes: "IFAT, ELISA, Western blot檢測抗體,敏感度高但無法區分active或past infection"
+      notes: IFAT, ELISA, Western blot檢測抗體,敏感度高但無法區分active或past infection
     - name: 細針抽吸細胞學
-      notes: "淋巴結、骨髓或脾臟,Giemsa染色見巨噬細胞內蟲體(無鞭毛體)"
+      notes: 淋巴結、骨髓或脾臟,Giemsa染色見巨噬細胞內蟲體(無鞭毛體)
     - name: PCR檢測
-      notes: "血液、淋巴結、骨髓,最敏感,可定量蟲體負荷量"
+      notes: 血液、淋巴結、骨髓,最敏感,可定量蟲體負荷量
     - name: 尿蛋白/肌酸酐比值(UPC)
-      notes: "UPC>0.5提示腎病變,UPC>2.0預後不良"
+      notes: UPC>0.5提示腎病變,UPC>2.0預後不良
     - name: 骨髓穿刺
-      notes: "見蟲體及骨髓抑制(貧血、白血球減少、血小板減少)"
+      notes: 見蟲體及骨髓抑制(貧血、白血球減少、血小板減少)
   differentialDiagnoses:
     - 其他慢性感染性疾病(Ehrlichiosis, FeLV)
     - 免疫介導性疾病
     - 淋巴瘤
     - 腎病症候群
     - 皮膚真菌或寄生蟲感染
-
 treatment:
   medical:
     - Allopurinol 10-20 mg/kg PO q12h,長期(數月至終身)
@@ -75,10 +73,8 @@ treatment:
   supportive:
     - 營養支持,高品質蛋白質飲食
     - 定期監測腎功能、UPC、血球計數
-
 prognosis:
-  general: "預後取決於腎功能及治療時機。無腎病變病例經治療可長期存活,但難以完全治癒,需終身服藥。腎衰竭病例(UPC>2.0, Cr>1.4 mg/dL)預後不良,存活期中位數6-12個月。治療成功犬隻仍可能傳播,公共衛生考量重要。"
-
+  general: 預後取決於腎功能及治療時機。無腎病變病例經治療可長期存活,但難以完全治癒,需終身服藥。腎衰竭病例(UPC>2.0, Cr>1.4 mg/dL)預後不良,存活期中位數6-12個月。治療成功犬隻仍可能傳播,公共衛生考量重要。
 prevention:
   - 白蛉預防:Permethrin或Deltamethrin浸泡頸圈
   - 室內飼養,特別是黃昏至黎明(白蛉活動時間)
@@ -86,30 +82,68 @@ prevention:
   - 流行區犬隻定期血清學篩檢
   - 陽性犬隻治療或人道處理(部分國家政策)
   - 人類預防:避免白蛉叮咬,嬰幼兒及免疫抑制者特別注意
-
-
 guidelineRefs:
   - sourceOrg: Veterinary research communications
     title: Naturally acquired visceral leishmaniosis in a captive white-naped mangabey (Cercocebus lunulatus) in Spain.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12449416/
     type: case-report
-    pmid: "40971031"
+    pmid: '40971031'
     relevance: supporting
-  - sourceOrg: "Parasites &amp; vectors"
-    title: Ecology, seasonality and host preferences of Austrian Phlebotomus (Transphlebotomus) mascittii Grassi, 1908, populations.
+  - sourceOrg: Parasites &amp; vectors
+    title: >-
+      Ecology, seasonality and host preferences of Austrian Phlebotomus (Transphlebotomus) mascittii Grassi, 1908,
+      populations.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8164323/
     type: research
-    pmid: "34051839"
+    pmid: '34051839'
     relevance: supporting
-  - sourceOrg: "Annals of agricultural and environmental medicine : AAEM"
+  - sourceOrg: 'Annals of agricultural and environmental medicine : AAEM'
     title: A review of the occurrence and clinical consequences of protozoan infections in carnivorous fur farm animals.
     url: https://pubmed.ncbi.nlm.nih.gov/34184498/
     type: review
-    pmid: "34184498"
+    pmid: '34184498'
     relevance: primary
   - sourceOrg: Research in veterinary science
-    title: First report of treatment and short-term follow-up of a European mink (Mustela lutreola) with leishmaniosis in Spain.
+    title: >-
+      First report of treatment and short-term follow-up of a European mink (Mustela lutreola) with leishmaniosis in
+      Spain.
     url: https://pubmed.ncbi.nlm.nih.gov/40845556/
     type: case-report
-    pmid: "40845556"
+    pmid: '40845556'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: common
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: common
+  - symptomId: epistaxis
+    frequency: uncommon
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: splenomegaly
+    frequency: uncommon
+  - symptomId: alopecia
+    frequency: common
+diagnosticAlgorithm:
+  title: 犬利什曼原蟲病詳論 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - weight-loss 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清學
+          notes: IFAT, ELISA, Western blot檢測抗體,敏感度高但無法區分active或past infection
+        - name: 細針抽吸細胞學
+          notes: 淋巴結、骨髓或脾臟,Giemsa染色見巨噬細胞內蟲體(無鞭毛體)
+        - name: PCR檢測
+          notes: 血液、淋巴結、骨髓,最敏感,可定量蟲體負荷量
+ddxSource: auto-generated

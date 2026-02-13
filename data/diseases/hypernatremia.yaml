@@ -3,13 +3,15 @@ nameEn: Hypernatremia
 nameZh: 高鈉血症
 bodySystem: metabolic
 description: 血清鈉離子濃度高於正常值（犬 >155 mEq/L，貓 >162 mEq/L）的電解質異常，通常反映體內自由水（free water）相對缺乏。高鈉血症導致細胞脫水，尤其腦細胞脫水可引起嚴重神經症狀，糾正過快可能導致腦水腫。
-
 aliases:
-  - { alias: 高血鈉, language: zh }
-  - { alias: 血鈉過高, language: zh }
-  - { alias: High Sodium, language: en }
-  - { alias: Hypernatraemia, language: en }
-
+  - alias: 高血鈉
+    language: zh
+  - alias: 血鈉過高
+    language: zh
+  - alias: High Sodium
+    language: en
+  - alias: Hypernatraemia
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓高鈉血症可見於嚴重脫水（尤其老年貓慢性腎病未補充足夠水分）或醫源性過量高張食鹽水。
-
 etiology:
   categories:
     - name: 自由水流失（最常見）
@@ -30,7 +31,6 @@ etiology:
         - 醫源性高張食鹽水輸注
         - 攝入高鈉物質（海水、岩鹽）
         - 高醛固酮症
-
 clinicalSigns:
   early:
     - 極度口渴（能取得水時大量飲水）
@@ -43,14 +43,12 @@ clinicalSigns:
     - 癲癇發作
     - 昏迷
     - 皮膚彈性極差
-
 diagnosis:
   primaryTests:
     - name: 血清電解質
       notes: 血清鈉 >155 mEq/L（犬）或 >162 mEq/L（貓）。>170 mEq/L 為嚴重高鈉血症。同時評估血漿滲透壓。
     - name: 尿液分析
       notes: 尿比重評估腎臟濃縮功能。尿崩症時尿比重極低（<1.005）。腎前性脫水時尿比重應升高。
-
 treatment:
   principles:
     - 慢速糾正避免醫源性腦水腫（每小時降鈉不超過 0.5-1 mEq/L）
@@ -64,36 +62,97 @@ treatment:
     - 治療基礎病因（尿崩症需 DDAVP）
     - 嚴禁快速降鈉（腦水腫風險）
     - 癲癇發作以 Diazepam 控制
-
 prognosis: 輕度高鈉血症經適當補液後預後良好。血清鈉 >170 mEq/L 或合併神經症狀者預後謹慎至不良。矯正過快導致腦水腫預後極差。基礎病因為可逆性（如脫水）者預後優於中樞性疾病。
-
-
 guidelineRefs:
   - sourceOrg: Journal of neuroendocrinology
     title: Mechanisms of intrinsic osmolality and sodium detection by magnocellular neurosecretory neurons.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12678020/
     type: review
-    pmid: "40925856"
+    pmid: '40925856'
   - sourceOrg: Headache
-    title: "COVID-19 and Headache Medicine: A Narrative Review of Non-Steroidal Anti-Inflammatory Drug (NSAID) and Corticosteroid Use."
+    title: >-
+      COVID-19 and Headache Medicine: A Narrative Review of Non-Steroidal Anti-Inflammatory Drug (NSAID) and
+      Corticosteroid Use.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7404408/
     type: review
-    pmid: "32648592"
+    pmid: '32648592'
   - sourceOrg: Frontiers in veterinary science
-    title: "Incidence of hypernatremia in dogs treated with single dose activated charcoal for acute toxicant ingestion: multi-center retrospective study (2018-2023)."
+    title: >-
+      Incidence of hypernatremia in dogs treated with single dose activated charcoal for acute toxicant ingestion:
+      multi-center retrospective study (2018-2023).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11897026/
     type: research
-    pmid: "40078217"
+    pmid: '40078217'
   - sourceOrg: Frontiers in veterinary science
-    title: "Incidence of hypernatremia in dogs treated with multi-dose activated charcoal for acute toxicant ingestion: multi-center retrospective study (2018-2023)."
+    title: >-
+      Incidence of hypernatremia in dogs treated with multi-dose activated charcoal for acute toxicant ingestion:
+      multi-center retrospective study (2018-2023).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12104289/
     type: research
-    pmid: "40420949"
+    pmid: '40420949'
   - sourceOrg: Journal of veterinary internal medicine
     title: Occurrence and clinical relevance of postoperative hypernatremia in dogs undergoing cholecystectomy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10658579/
     type: research
-    pmid: "37682033"
+    pmid: '37682033'
 pubmedQueries:
   - query: '"Hypernatremia" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 高鈉血症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估神經症狀（煩躁、震顫、抽搐）和脫水表現，詢問飲水限制或鈉攝入過多病史
+      findings:
+        - 神經症狀（煩躁、抽搐、昏迷）
+        - 嚴重脫水表現
+        - 皮膚彈性異常（黏性皮膚）
+    - step: 2
+      action: 實驗室檢查
+      details: 測量血清鈉濃度，評估血漿滲透壓和尿液分析
+      findings:
+        - 血清鈉>155 mEq/L
+        - 血漿滲透壓升高
+        - 尿液濃縮程度評估腎臟濃縮功能
+    - step: 3
+      action: 病因分類與確診
+      details: 根據體液狀態分類（高容量、等容量、低容量型），尋找潛在病因
+      findings:
+        - 低容量型：水分流失>鈉流失（最常見）
+        - 排除中樞性尿崩症或腎性尿崩症
+        - 評估是否為鈉過量攝入（鹽中毒）
+clinicalPearls:
+  - 矯正速度是治療成敗的關鍵——不超過0.5-1 mEq/L/小時
+  - 慢性高鈉血症快速矯正比高鈉血症本身更危險（腦水腫）
+  - 尿比重可快速鑑別病因：極低尿比重提示尿崩症，正常濃縮尿提示水攝取不足
+  - 鈉中毒在犬中可見於攝入食鹽麵團或路邊除冰鹽
+  - 無法自主飲水的住院動物是高鈉血症高風險群
+monitoringItems:
+  - 血鈉每2-4小時監測（矯正期間）
+  - 神經學狀態密切觀察
+  - 尿量追蹤
+  - 體重（評估水分狀態）
+  - 血滲透壓
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+ddxSource: book

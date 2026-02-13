@@ -3,15 +3,19 @@ nameEn: Metabolic Acidosis
 nameZh: 代謝性酸中毒
 bodySystem: electrolyte
 description: 血液 pH 降低伴碳酸氫根（HCO3-）濃度下降的酸鹼異常，為小動物重症加護中最常見的酸鹼紊亂。可由有機酸蓄積（高陰離子間隙型）或碳酸氫根流失（正常陰離子間隙型）引起。通常為其他嚴重疾病的併發症而非獨立疾病。
-
 aliases:
-  - { alias: Metabolic Acidaemia, language: en }
-  - { alias: Non-Respiratory Acidosis, language: en }
-  - { alias: High Anion Gap Acidosis, language: en }
-  - { alias: 代謝性酸血症, language: zh }
-  - { alias: 酸中毒, language: zh }
-  - { alias: 非呼吸性酸中毒, language: zh }
-
+  - alias: Metabolic Acidaemia
+    language: en
+  - alias: Non-Respiratory Acidosis
+    language: en
+  - alias: High Anion Gap Acidosis
+    language: en
+  - alias: 代謝性酸血症
+    language: zh
+  - alias: 酸中毒
+    language: zh
+  - alias: 非呼吸性酸中毒
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -21,7 +25,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 常見於糖尿病酮酸中毒、尿道阻塞、急性腎損傷、CKD 末期。貓尿道阻塞後常同時有代謝性酸中毒與高鉀血症。
-
 etiology:
   categories:
     - name: 高陰離子間隙型（Increased AG，有機酸蓄積）
@@ -42,7 +45,6 @@ etiology:
       examples:
         - 敗血症（乳酸酸中毒 + 腎功能不全）
         - 急性腎損傷合併腹瀉
-
 clinicalSigns:
   early:
     - 可能無特異性症狀（輕度酸中毒）
@@ -62,20 +64,21 @@ clinicalSigns:
     - 心律不整（酸中毒合併高鉀血症）
     - 多器官功能衰竭
     - 心搏停止（pH <7.0）
-
 diagnosis:
   primaryTests:
     - name: 動脈/靜脈血液氣體分析
-      notes: "犬正常 pH 7.35-7.45，HCO3- 20-24 mEq/L，pCO2 35-45 mmHg。貓正常 pH 7.35-7.45，HCO3- 17-23 mEq/L。代謝性酸中毒：pH <7.35，HCO3- 降低，預期 pCO2 代償性降低"
+      notes: >-
+        犬正常 pH 7.35-7.45，HCO3- 20-24 mEq/L，pCO2 35-45 mmHg。貓正常 pH 7.35-7.45，HCO3- 17-23 mEq/L。代謝性酸中毒：pH <7.35，HCO3-
+        降低，預期 pCO2 代償性降低
     - name: 電解質與陰離子間隙（AG）
-      notes: "AG = Na+ - (Cl- + HCO3-)。犬正常 AG 12-24 mEq/L；貓正常 AG 13-27 mEq/L。AG >25-30 提示有機酸蓄積（高 AG 型）。正常 AG + 高 Cl- = 高氯性酸中毒"
+      notes: AG = Na+ - (Cl- + HCO3-)。犬正常 AG 12-24 mEq/L；貓正常 AG 13-27 mEq/L。AG >25-30 提示有機酸蓄積（高 AG 型）。正常 AG + 高 Cl- = 高氯性酸中毒
     - name: 乳酸（Lactate）
-      notes: "犬正常 <2.5 mmol/L；貓正常 <1.5 mmol/L。升高提示組織缺氧/灌流不足。>4-5 mmol/L 為嚴重乳酸酸中毒。可作為預後指標"
+      notes: 犬正常 <2.5 mmol/L；貓正常 <1.5 mmol/L。升高提示組織缺氧/灌流不足。>4-5 mmol/L 為嚴重乳酸酸中毒。可作為預後指標
   imaging:
     - name: 胸腹腔 X 光
-      notes: "評估原發疾病（肺炎、腫塊、胸腔積液）"
+      notes: 評估原發疾病（肺炎、腫塊、胸腔積液）
     - name: 腹部超音波
-      notes: "評估腎臟、膀胱（阻塞）、胰臟"
+      notes: 評估腎臟、膀胱（阻塞）、胰臟
   additional:
     - 全血計數與生化（BUN/Cr、血糖、電解質）
     - 尿液分析 + 酮體檢測（DKA）
@@ -83,7 +86,6 @@ diagnosis:
     - 血清滲透壓 + 滲透壓間隙（乙二醇中毒早期升高）
     - 凝血功能（敗血症/DIC）
     - 血液培養（敗血症）
-
 treatment:
   principles:
     - 治療根本病因為最重要
@@ -93,16 +95,16 @@ treatment:
     - 監測酸鹼狀態指導治療調整
   medications:
     - name: 平衡電解質輸液（LRS 或 Plasmalyte）
-      dose: "休克：犬 60-90 mL/kg/hr；貓 40-60 mL/kg/hr（分次給予 1/4-1/3 量，評估反應）。維持：2-6 mL/kg/hr"
+      dose: 休克：犬 60-90 mL/kg/hr；貓 40-60 mL/kg/hr（分次給予 1/4-1/3 量，評估反應）。維持：2-6 mL/kg/hr
       notes: LRS 含 lactate 28 mEq/L（在肝臟代謝為 HCO3-），Plasmalyte 含 acetate + gluconate（代謝為 HCO3-）。輕至中度酸中毒僅需輸液治療即可改善
     - name: Sodium bicarbonate（NaHCO3）
-      dose: "HCO3- deficit (mEq) = 0.3 × BW(kg) × (target HCO3- - measured HCO3-)。先給予計算量的 1/3-1/2 over 20-30 min IV，再評估"
+      dose: HCO3- deficit (mEq) = 0.3 × BW(kg) × (target HCO3- - measured HCO3-)。先給予計算量的 1/3-1/2 over 20-30 min IV，再評估
       notes: 僅用於嚴重酸中毒 pH <7.1 或 HCO3- <12 mEq/L。目標校正至 pH 7.2（非完全正常化）。風險：矛盾性 CNS 酸中毒、低鉀血症、離子化鈣降低、容量過負荷
     - name: Regular insulin（DKA）
-      dose: "0.1-0.2 IU/kg/hr IV CRI（低劑量胰島素方案）"
+      dose: 0.1-0.2 IU/kg/hr IV CRI（低劑量胰島素方案）
       notes: DKA 為常見高 AG 代謝性酸中毒原因。胰島素抑制酮體生成。需同時補鉀與監測血糖
     - name: 4-Methylpyrazole（乙二醇中毒）
-      dose: "犬初始 20 mg/kg IV；貓 125 mg/kg IV"
+      dose: 犬初始 20 mg/kg IV；貓 125 mg/kg IV
       notes: 乙二醇中毒解毒劑。阻斷代謝為有毒酸性代謝物
   general:
     - 乳酸酸中毒：積極輸液恢復組織灌流為主要治療
@@ -112,42 +114,96 @@ treatment:
     - 監測血氣每 2-4 小時直到穩定
     - 注意酸中毒矯正時鉀離子向細胞內轉移（可能暴露低鉀血症）
     - 嚴重乳酸酸中毒不建議 NaHCO3（可能增加 CO2 產生，加重細胞內酸中毒）
-
-prognosis: 取決於根本病因與嚴重程度。輕度代謝性酸中毒（腹瀉相關）經輸液治療預後極佳。DKA 經適當治療存活率 >70%。乳酸酸中毒預後取決於組織灌流恢復程度（lactate >6 mmol/L 持續不降預後差）。乙二醇中毒早期治療可存活，延遲治療預後極差。pH <7.0 的嚴重酸中毒死亡率顯著升高。
-
+prognosis: >-
+  取決於根本病因與嚴重程度。輕度代謝性酸中毒（腹瀉相關）經輸液治療預後極佳。DKA 經適當治療存活率 >70%。乳酸酸中毒預後取決於組織灌流恢復程度（lactate >6 mmol/L
+  持續不降預後差）。乙二醇中毒早期治療可存活，延遲治療預後極差。pH <7.0 的嚴重酸中毒死亡率顯著升高。
 guidelineRefs:
   - sourceOrg: Veterinary Clinics of North America Small Animal Practice
     title: Fluid, electrolyte, and acid-base disturbances in small animal patients
     url: https://pubmed.ncbi.nlm.nih.gov/28012874/
     type: review
-    pmid: "28012874"
+    pmid: '28012874'
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
     title: Acid-base assessment in critically ill dogs and cats
     url: https://pubmed.ncbi.nlm.nih.gov/23855441/
     type: review
-    pmid: "23855441"
+    pmid: '23855441'
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: Diabetic ketoacidosis in dogs and cats — treatment and outcome
     url: https://pubmed.ncbi.nlm.nih.gov/23782353/
     type: research
-    pmid: "23782353"
+    pmid: '23782353'
   - sourceOrg: Frontiers in veterinary science
     title: Intravenous and Oral Fluid Therapy in Neonatal Calves With Diarrhea or Sepsis and in Adult Cattle.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7873366/
     type: review
-    pmid: "33585594"
+    pmid: '33585594'
     relevance: primary
   - sourceOrg: Journal of veterinary internal medicine
     title: Effect of Intravenously Administered Crystalloid Solutions on Acid-Base Balance in Domestic Animals.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5598900/
     type: review
-    pmid: "28833697"
+    pmid: '28833697'
     relevance: supporting
 pubmedQueries:
   - query: '"metabolic acidosis" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "bicarbonate" OR "lactate")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "URN"
-  sectionTitle: "Renal Acidosis"
+  chapter: URN
+  sectionTitle: Renal Acidosis
   pdfPage: 1561
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 代謝性酸中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - dehydration 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 動脈/靜脈血液氣體分析
+          notes: >-
+            犬正常 pH 7.35-7.45，HCO3- 20-24 mEq/L，pCO2 35-45 mmHg。貓正常 pH 7.35-7.45，HCO3- 17-23 mEq/L。代謝性酸中毒：pH <7.35，HCO3-
+            降低，預期 pCO2 代償性降低
+        - name: 電解質與陰離子間隙（AG）
+          notes: >-
+            AG = Na+ - (Cl- + HCO3-)。犬正常 AG 12-24 mEq/L；貓正常 AG 13-27 mEq/L。AG >25-30 提示有機酸蓄積（高 AG 型）。正常 AG + 高 Cl- =
+            高氯性酸中毒
+        - name: 乳酸（Lactate）
+          notes: 犬正常 <2.5 mmol/L；貓正常 <1.5 mmol/L。升高提示組織缺氧/灌流不足。>4-5 mmol/L 為嚴重乳酸酸中毒。可作為預後指標
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 全血計數與生化（BUN/Cr、血糖、電解質）
+        - 尿液分析 + 酮體檢測（DKA）
+        - 乙二醇快速檢測（疑似中毒時）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療根本病因為最重要
+        - 輸液復甦改善組織灌流（乳酸酸中毒）
+        - Sodium bicarbonate 僅用於嚴重酸中毒（pH <7.1）
+ddxSource: auto-generated

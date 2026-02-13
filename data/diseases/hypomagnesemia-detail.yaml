@@ -3,11 +3,11 @@ nameEn: Hypomagnesemia Detail
 nameZh: 低血鎂症（詳細）
 bodySystem: electrolyte
 description: 血清鎂離子濃度低於正常範圍（犬貓 <1.5 mg/dL），常與低血鉀或低血鈣並存。可能因腸胃道疾病、糖尿病或利尿劑使用引起。嚴重低血鎂可導致頑固性低血鉀及心律不整。
-
 aliases:
-  - { alias: 血鎂過低, language: zh }
-  - { alias: Hypomagnesaemia, language: en }
-
+  - alias: 血鎂過低
+    language: zh
+  - alias: Hypomagnesaemia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓罕見,可能與慢性腎臟病或腸胃道疾病相關
-
 etiology:
   categories:
     - name: 腸胃道流失或吸收不良
@@ -34,7 +33,6 @@ etiology:
       examples:
         - 胰島素治療
         - 再餵食症候群
-
 clinicalSigns:
   early:
     - 肌肉顫抖、過度興奮
@@ -43,47 +41,71 @@ clinicalSigns:
     - 癲癇、共濟失調
     - 心律不整（室性心律不整）
     - 頑固性低血鈣
-
 diagnosis:
   primaryTests:
     - name: 血清鎂
-      notes: "Mg <1.5 mg/dL，需同時評估鉀、鈣濃度"
+      notes: Mg <1.5 mg/dL，需同時評估鉀、鈣濃度
     - name: 心電圖
-      notes: "可見 QT 間期延長、室性心律不整"
+      notes: 可見 QT 間期延長、室性心律不整
     - name: 血清電解質
-      notes: "常伴隨低鉀、低鈣"
+      notes: 常伴隨低鉀、低鈣
   differentialDiagnoses:
     - 低血鉀症
     - 低血鈣症
     - 糖尿病酮酸中毒
     - 再餵食症候群
-
 treatment:
   medical:
     - 靜脈補充：Magnesium sulfate 0.75-1.0 mEq/kg/day（稀釋於輸液中緩慢輸注）
     - 口服補充：Magnesium oxide 或 Magnesium chloride 10-20 mg/kg PO SID
     - 同時補充鉀及鈣（低血鎂會抑制 PTH 分泌及鉀吸收）
     - 治療潛在病因
-
 prognosis:
-  general: "預後良好，經補充鎂離子後低血鉀及低血鈣通常可順利矯正。未診斷低血鎂時,頑固性低血鉀可能持續存在。"
-
+  general: 預後良好，經補充鎂離子後低血鉀及低血鈣通常可順利矯正。未診斷低血鎂時,頑固性低血鉀可能持續存在。
 prevention:
   - 糖尿病患者定期監測鎂濃度
   - 使用利尿劑時檢測電解質
   - 腸胃道疾病患者補充電解質
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Dysmagnesemia Incidence in Hospitalized Dogs and Cats: A Retrospective Study."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Dysmagnesemia Incidence in Hospitalized Dogs and Cats: A Retrospective Study.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12024414/
     type: research
-    pmid: "40282004"
+    pmid: '40282004'
     relevance: supporting
   - sourceOrg: American journal of physiology. Renal physiology
     title: Differential localization patterns of claudin 10, 16, and 19 in human, mouse, and rat renal tubular epithelia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8424667/
     type: research
-    pmid: "34151590"
+    pmid: '34151590'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: trembling
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 低血鎂症（詳細） 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - trembling 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清鎂
+          notes: Mg <1.5 mg/dL，需同時評估鉀、鈣濃度
+        - name: 心電圖
+          notes: 可見 QT 間期延長、室性心律不整
+        - name: 血清電解質
+          notes: 常伴隨低鉀、低鈣
+ddxSource: auto-generated

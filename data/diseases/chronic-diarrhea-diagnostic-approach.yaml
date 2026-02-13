@@ -3,11 +3,11 @@ nameEn: Chronic Diarrhea Diagnostic Approach
 nameZh: 慢性腹瀉診斷策略
 bodySystem: gastrointestinal
 description: 慢性腹瀉 (持續 > 3 週) 的系統性診斷方法,需區分小腸性或大腸性腹瀉,並依序排除各種可能病因。
-
 aliases:
-  - { alias: 慢性腹瀉鑑別, language: zh }
-  - { alias: Chronic Diarrhea Workup, language: en }
-
+  - alias: 慢性腹瀉鑑別
+    language: zh
+  - alias: Chronic Diarrhea Workup
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 常見原因包含 IBD、食物過敏、淋巴瘤、甲亢
-
 etiology:
   categories:
     - name: 飲食性
@@ -37,7 +36,6 @@ etiology:
       examples:
         - 胰外分泌功能不全 (EPI)
         - 甲狀腺功能亢進 (貓)
-
 clinicalSigns:
   early:
     - 腹瀉 > 3 週
@@ -46,61 +44,85 @@ clinicalSigns:
     - 體重減輕
     - 食慾改變
     - 嘔吐
-
 diagnosis:
   primaryTests:
     - name: 糞便檢查
-      notes: "直接塗片、浮游法、Giardia 抗原"
+      notes: 直接塗片、浮游法、Giardia 抗原
     - name: 血液檢查
-      notes: "CBC, 生化, T4 (貓), TLI, cobalamin/folate"
+      notes: CBC, 生化, T4 (貓), TLI, cobalamin/folate
     - name: 腹部超音波
-      notes: "評估腸壁、淋巴結、胰臟"
+      notes: 評估腸壁、淋巴結、胰臟
     - name: 內視鏡檢查 + 組織切片
-      notes: "確診 IBD、淋巴瘤"
+      notes: 確診 IBD、淋巴瘤
     - name: 食物排除試驗
-      notes: "8-12 週低過敏原飲食"
+      notes: 8-12 週低過敏原飲食
   differentialDiagnoses:
     - 依診斷流程逐步排除
-
 treatment:
   medical:
     - 依原發病因治療
     - 經驗性治療: 驅蟲 + 抗生素 + 飲食試驗
     - IBD: 類固醇 + 免疫抑制劑
     - EPI: 胰酵素補充
-
 prognosis:
-  general: "取決於原發病因;飲食性或寄生蟲性預後良好;IBD 或淋巴瘤需長期管理"
-
+  general: 取決於原發病因;飲食性或寄生蟲性預後良好;IBD 或淋巴瘤需長期管理
 prevention:
   - 適當飲食管理
   - 定期驅蟲
   - 早期診斷及治療
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
-    title: ACVIM consensus statement guidelines on diagnosing and distinguishing low-grade neoplastic from inflammatory lymphocytic chronic enteropathies in cats.
+    title: >-
+      ACVIM consensus statement guidelines on diagnosing and distinguishing low-grade neoplastic from inflammatory
+      lymphocytic chronic enteropathies in cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10229359/
     type: consensus
-    pmid: "37130034"
-  - sourceOrg: "Veterinary research forum : an international quarterly journal"
-    title: "A review of inflammatory bowel diseases in humans and pets: treatment strategies."
+    pmid: '37130034'
+  - sourceOrg: 'Veterinary research forum : an international quarterly journal'
+    title: 'A review of inflammatory bowel diseases in humans and pets: treatment strategies.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12854167/
     type: review
-    pmid: "41623954"
+    pmid: '41623954'
   - sourceOrg: Italian journal of pediatrics
     title: Pharmacological interventions on early functional gastrointestinal disorders.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4947301/
     type: review
-    pmid: "27423188"
+    pmid: '27423188'
   - sourceOrg: BMC veterinary research
-    title: "Functional dyspepsia: from human to dog, a retrospective study of 29 cases illustrating a complex entity."
+    title: 'Functional dyspepsia: from human to dog, a retrospective study of 29 cases illustrating a complex entity.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12512554/
     type: research
-    pmid: "41074059"
+    pmid: '41074059'
   - sourceOrg: Critical care (London, England)
-    title: "36th International Symposium on Intensive Care and Emergency Medicine : Brussels, Belgium. 15-18 March 2016."
+    title: '36th International Symposium on Intensive Care and Emergency Medicine : Brussels, Belgium. 15-18 March 2016.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5493079/
     type: research
-    pmid: "27885969"
+    pmid: '27885969'
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 慢性腹瀉診斷策略 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - vomiting 相關症狀
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便檢查
+          notes: 直接塗片、浮游法、Giardia 抗原
+        - name: 血液檢查
+          notes: CBC, 生化, T4 (貓), TLI, cobalamin/folate
+        - name: 腹部超音波
+          notes: 評估腸壁、淋巴結、胰臟
+ddxSource: auto-generated

@@ -3,18 +3,18 @@ nameEn: Canine Chronic Ulcerative Stomatitis
 nameZh: 犬慢性潰瘍性口炎
 bodySystem: dental
 description: 犬慢性潰瘍性口炎是指持續性口腔黏膜潰瘍和炎症,可能與免疫介導、過敏反應或接觸性皮膚炎相關。常見於與齒齦對側頰黏膜(kissing lesions),需鑑別病因並對症治療。
-
 aliases:
-  - { alias: 慢性口腔潰瘍, language: zh }
-  - { alias: CCUS, language: en }
-  - { alias: Contact Mucositis, language: en }
-
+  - alias: 慢性口腔潰瘍
+    language: zh
+  - alias: CCUS
+    language: en
+  - alias: Contact Mucositis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 中老年犬,特定品種如馬爾濟斯、騎士查理王犬
-
 etiology:
   categories:
     - name: 接觸性反應
@@ -30,7 +30,6 @@ etiology:
       examples:
         - 尿毒症(腎衰竭)
         - 代謝性疾病
-
 clinicalSigns:
   early:
     - 頰黏膜與齒齦接觸處紅斑
@@ -42,23 +41,21 @@ clinicalSigns:
     - 流涎增加(可能血性)
     - 咀嚼疼痛導致食慾下降
     - 抓撓口部
-
 diagnosis:
   primaryTests:
     - name: 口腔檢查
-      notes: "頰黏膜與齒齦對側處對稱性潰瘍和增生"
+      notes: 頰黏膜與齒齦對側處對稱性潰瘍和增生
     - name: 組織病理
-      notes: "淋巴球和漿細胞浸潤,排除腫瘤"
+      notes: 淋巴球和漿細胞浸潤,排除腫瘤
     - name: 血液檢查
-      notes: "排除尿毒症和代謝性疾病"
+      notes: 排除尿毒症和代謝性疾病
     - name: 牙周評估
-      notes: "評估牙結石和牙周病嚴重度"
+      notes: 評估牙結石和牙周病嚴重度
   differentialDiagnoses:
     - 口腔腫瘤
     - 尿毒性口炎
     - 自體免疫性疾病(天疱瘡)
     - 牙周病
-
 treatment:
   medical:
     - 徹底牙科清潔和牙周治療
@@ -69,20 +66,44 @@ treatment:
     - Sucralfate懸浮液塗佈潰瘍處
     - 每日刷牙維持口腔衛生
     - 軟食減少刺激
-
 prognosis:
-  general: "預後取決於病因和治療反應。接觸性病因經牙周治療和免疫抑制多數可控制,但需長期維持療法。約60-70%病例可達臨床緩解,但停藥後易復發,可能需終身低劑量免疫抑制。"
-
+  general: 預後取決於病因和治療反應。接觸性病因經牙周治療和免疫抑制多數可控制,但需長期維持療法。約60-70%病例可達臨床緩解,但停藥後易復發,可能需終身低劑量免疫抑制。
 prevention:
   - 定期牙科清潔維持口腔衛生
   - 每日刷牙
   - 早期治療牙周病
   - 定期口腔檢查
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Surgical outcomes in canine lymphoplasmacytic stomatitis: a retrospective study of 42 dogs (2012-2022)."
+    title: 'Surgical outcomes in canine lymphoplasmacytic stomatitis: a retrospective study of 42 dogs (2012-2022).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12723868/
     type: research
-    pmid: "41445593"
+    pmid: '41445593'
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: halitosis-stomatitis
+    frequency: common
+diagnosticAlgorithm:
+  title: 犬慢性潰瘍性口炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - ptyalism 相關症狀
+        - halitosis-stomatitis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 口腔檢查
+          notes: 頰黏膜與齒齦對側處對稱性潰瘍和增生
+        - name: 組織病理
+          notes: 淋巴球和漿細胞浸潤,排除腫瘤
+        - name: 血液檢查
+          notes: 排除尿毒症和代謝性疾病
+ddxSource: auto-generated

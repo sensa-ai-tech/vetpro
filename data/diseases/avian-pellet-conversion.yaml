@@ -3,18 +3,18 @@ nameEn: Avian Pellet Conversion
 nameZh: 鳥類滋養丸轉換
 bodySystem: respiratory
 description: 滋養丸轉換是將習慣種子飲食的鳥類轉換至營養均衡滋養丸的過程。此過程需謹慎漸進,因鳥類對新食物抗拒強烈,快速轉換可能導致厭食甚至死亡,需數週至數月完成。
-
 aliases:
-  - { alias: 飲食轉換方案, language: zh }
-  - { alias: Pellet Transition Protocol, language: en }
-  - { alias: Diet Conversion Strategy, language: en }
-
+  - alias: 飲食轉換方案
+    language: zh
+  - alias: Pellet Transition Protocol
+    language: en
+  - alias: Diet Conversion Strategy
+    language: en
 species:
   - speciesCommon: bird
     speciesScientific: Aves
     prevalence: common
     notes: 所有習慣種子飲食的寵物鳥都需要此轉換過程,鸚鵡科最常面臨
-
 etiology:
   categories:
     - name: 行為因素
@@ -27,7 +27,6 @@ etiology:
         - 缺乏識別滋養丸為食物
         - 喙部不習慣新質地
         - 消化道需適應新食物
-
 clinicalSigns:
   early:
     - 拒絕嘗試滋養丸
@@ -38,20 +37,18 @@ clinicalSigns:
     - 活動力降低
     - 糞便量減少
     - 嚴重拒食可能致死
-
 diagnosis:
   primaryTests:
     - name: 體重監測
-      notes: "每日同時間測量,下降超過5-10%需調整策略"
+      notes: 每日同時間測量,下降超過5-10%需調整策略
     - name: 攝食觀察
-      notes: "記錄滋養丸和種子的實際攝取量"
+      notes: 記錄滋養丸和種子的實際攝取量
     - name: 糞便評估
-      notes: "糞便量和性狀反映攝食量和消化適應"
+      notes: 糞便量和性狀反映攝食量和消化適應
   differentialDiagnoses:
     - 潛在疾病導致食慾不振
     - 環境壓力
     - 滋養丸品質問題
-
 treatment:
   medical:
     - 漸進式轉換法:第1-2週滋養丸10%,種子90%
@@ -64,41 +61,69 @@ treatment:
     - 飼主示範食用增加興趣
     - 提供多種品牌/顏色滋養丸選擇
     - 避免強迫斷食法(危險且無效)
-
 prognosis:
-  general: "耐心和漸進是成功關鍵。大多數鳥類可在2-6個月內成功轉換,但部分頑固個體可能需一年以上。幼鳥接受度較高,老年鳥較困難。體重下降超過15%或出現疾病徵兆時需暫停並諮詢獸醫。"
-
+  general: 耐心和漸進是成功關鍵。大多數鳥類可在2-6個月內成功轉換,但部分頑固個體可能需一年以上。幼鳥接受度較高,老年鳥較困難。體重下降超過15%或出現疾病徵兆時需暫停並諮詢獸醫。
 prevention:
   - 從雛鳥開始即提供滋養丸
   - 避免單一種子飼養習慣
   - 早期多樣化食物接觸
   - 飼主教育均衡營養重要性
   - 選擇適口性高的滋養丸品牌
-
-
 guidelineRefs:
   - sourceOrg: Poultry science
-    title: Evaluation of particle size and feed form on performance, carcass characteristics, nutrient digestibility, and gastrointestinal tract development of broilers at 39 d of age.
+    title: >-
+      Evaluation of particle size and feed form on performance, carcass characteristics, nutrient digestibility, and
+      gastrointestinal tract development of broilers at 39 d of age.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10840342/
     type: research
-    pmid: "38290341"
+    pmid: '38290341'
   - sourceOrg: Poultry science
-    title: Xylanase supplementation of pelleted wheat-based diets increases growth efficiency and apparent metabolizable energy and decreases viscosity of intestinal contents in broilers.
+    title: >-
+      Xylanase supplementation of pelleted wheat-based diets increases growth efficiency and apparent metabolizable
+      energy and decreases viscosity of intestinal contents in broilers.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9593177/
     type: research
-    pmid: "36283142"
+    pmid: '36283142'
   - sourceOrg: PloS one
-    title: Effects of nonantibiotic growth promoter combinations on growth performance, nutrient utilization, digestive enzymes, intestinal morphology, and cecal microflora of broilers.
+    title: >-
+      Effects of nonantibiotic growth promoter combinations on growth performance, nutrient utilization, digestive
+      enzymes, intestinal morphology, and cecal microflora of broilers.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10062635/
     type: research
-    pmid: "36996144"
+    pmid: '36996144'
   - sourceOrg: Frontiers in physiology
-    title: Effects of tannic acid supplementation on growth performance, gut health, and meat production and quality of broiler chickens raised in floor pens for 42 days.
+    title: >-
+      Effects of tannic acid supplementation on growth performance, gut health, and meat production and quality of
+      broiler chickens raised in floor pens for 42 days.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9800873/
     type: research
-    pmid: "36589444"
+    pmid: '36589444'
   - sourceOrg: Poultry science
-    title: Effect of methionine chelated Zn and Mn and corn particle size on Large White male turkey live performance and carcass yields.
+    title: >-
+      Effect of methionine chelated Zn and Mn and corn particle size on Large White male turkey live performance and
+      carcass yields.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8463767/
     type: research
-    pmid: "34547618"
+    pmid: '34547618'
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 鳥類滋養丸轉換 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 體重監測
+          notes: 每日同時間測量,下降超過5-10%需調整策略
+        - name: 攝食觀察
+          notes: 記錄滋養丸和種子的實際攝取量
+        - name: 糞便評估
+          notes: 糞便量和性狀反映攝食量和消化適應
+ddxSource: auto-generated

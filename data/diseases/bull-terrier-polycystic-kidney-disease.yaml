@@ -3,18 +3,18 @@ nameEn: Bull Terrier Polycystic Kidney Disease
 nameZh: 鬥牛㹴犬多囊腎病
 bodySystem: urinary
 description: 鬥牛㹴好發的遺傳性腎臟疾病,腎實質內形成多發性囊腫導致腎功能漸進性喪失。通常青年至中年發病,表現為多渴多尿與氮血症,最終進展至慢性腎衰竭。
-
 aliases:
-  - { alias: 鬥牛㹴PKD, language: zh }
-  - { alias: Bull Terrier PKD, language: en }
-  - { alias: 鬥牛㹴腎囊腫, language: zh }
-
+  - alias: 鬥牛㹴PKD
+    language: zh
+  - alias: Bull Terrier PKD
+    language: en
+  - alias: 鬥牛㹴腎囊腫
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 鬥牛㹴為高風險品種,疑似體染色體顯性遺傳,發病年齡2-8歲不等
-
 etiology:
   categories:
     - name: 遺傳性腎發育異常
@@ -32,7 +32,6 @@ etiology:
         - 有效腎單元減少
         - 腎間質纖維化
         - 進行性腎衰竭
-
 clinicalSigns:
   early:
     - 可能無症狀(早期或輕度病例)
@@ -46,26 +45,24 @@ clinicalSigns:
     - 高血壓與併發症
     - 腎臟腫大(雙側,觸診可及)
     - 進展至末期腎病
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "雙側腎臟多發性囊腫(圓形無回音區),腎臟腫大或萎縮,皮髓質界不清"
+      notes: 雙側腎臟多發性囊腫(圓形無回音區),腎臟腫大或萎縮,皮髓質界不清
     - name: 血液生化
-      notes: "氮血症(BUN、Cre升高),高磷血症,代謝性酸中毒(晚期)"
+      notes: 氮血症(BUN、Cre升高),高磷血症,代謝性酸中毒(晚期)
     - name: 尿液分析
-      notes: "低比重尿(USG<1.030),可能有蛋白尿、血尿"
+      notes: 低比重尿(USG<1.030),可能有蛋白尿、血尿
     - name: 基因檢測
-      notes: "目前犬PKD致病基因尚未完全確定,無商業檢測"
+      notes: 目前犬PKD致病基因尚未完全確定,無商業檢測
     - name: CT或MRI
-      notes: "精確評估囊腫數量與大小(非常規)"
+      notes: 精確評估囊腫數量與大小(非常規)
   differentialDiagnoses:
     - 腎發育不良
     - 慢性腎小球腎炎
     - 腎腫瘤
     - 腎水腫
     - 多囊性腎發育不良
-
 treatment:
   medical:
     - 無治癒方法,支持治療為主
@@ -78,12 +75,44 @@ treatment:
     - 皮下輸液(脫水或氮血症惡化)
     - 囊腫穿刺引流效果短暫,不建議
     - 末期:安寧照護或安樂死
-
 prognosis:
-  general: "進行性疾病,預後取決於囊腫數量與腎功能受損程度。輕度病例可能終生無症狀,中重度病例數月至數年內進展至腎衰竭。早期診斷與支持治療可延長生活品質。"
-
+  general: 進行性疾病,預後取決於囊腫數量與腎功能受損程度。輕度病例可能終生無症狀,中重度病例數月至數年內進展至腎衰竭。早期診斷與支持治療可延長生活品質。
 prevention:
   - 避免繁殖患病犬隻(超音波確診者)
   - 高風險家系定期超音波篩檢(1-2歲起)
   - 育種計畫排除PKD家系
   - 目前無基因檢測,依靠影像篩檢
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 鬥牛㹴犬多囊腎病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - halitosis-stomatitis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 雙側腎臟多發性囊腫(圓形無回音區),腎臟腫大或萎縮,皮髓質界不清
+        - name: 血液生化
+          notes: 氮血症(BUN、Cre升高),高磷血症,代謝性酸中毒(晚期)
+        - name: 尿液分析
+          notes: 低比重尿(USG<1.030),可能有蛋白尿、血尿
+ddxSource: auto-generated

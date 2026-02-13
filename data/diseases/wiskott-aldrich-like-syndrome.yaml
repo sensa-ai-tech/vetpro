@@ -3,11 +3,11 @@ nameEn: Wiskott Aldrich Like Syndrome
 nameZh: 類威斯科特-奧爾德里奇症候群
 bodySystem: immunology
 description: 罕見原發性免疫缺陷疾病，以血小板減少、濕疹及反覆感染為特徵。已於犬隻報告，涉及WAS基因突變。預後不良。
-
 aliases:
-  - { alias: 犬WAS症候群, language: zh }
-  - { alias: Canine Wiskott-Aldrich Syndrome, language: en }
-
+  - alias: 犬WAS症候群
+    language: zh
+  - alias: Canine Wiskott-Aldrich Syndrome
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓尚無明確案例報告
-
 etiology:
   categories:
     - name: 基因突變
@@ -30,7 +29,6 @@ etiology:
         - 血小板生成及功能異常
         - T細胞及B細胞功能障礙
         - 免疫失調
-
 clinicalSigns:
   early:
     - 幼年發病
@@ -42,25 +40,23 @@ clinicalSigns:
     - 血小板持續減少
     - 自體免疫疾病
     - 惡性腫瘤（淋巴瘤）風險增加
-
 diagnosis:
   primaryTests:
     - name: 全血球計數
-      notes: "血小板顯著減少、小血小板"
+      notes: 血小板顯著減少、小血小板
     - name: 血液抹片
-      notes: "血小板體積減小"
+      notes: 血小板體積減小
     - name: 免疫球蛋白檢測
-      notes: "IgM減少、IgA及IgE升高"
+      notes: IgM減少、IgA及IgE升高
     - name: 基因檢測
-      notes: "WAS基因突變確診"
+      notes: WAS基因突變確診
     - name: 流式細胞術
-      notes: "WASP蛋白表現缺失或降低"
+      notes: WASP蛋白表現缺失或降低
   differentialDiagnoses:
     - 免疫介導性血小板減少症
     - 其他原發性免疫缺陷
     - 血小板功能異常
     - 骨髓衰竭症候群
-
 treatment:
   medical:
     - 支持療法為主（無根治性治療）
@@ -70,32 +66,60 @@ treatment:
     - 免疫抑制：潑尼松龍（謹慎使用，增加感染風險）
     - 皮膚炎：外用類固醇、抗組織胺
     - 積極治療感染
-
 prognosis:
-  general: "預後不良，多數病例因反覆感染或出血於幼年死亡。人醫可行骨髓移植，但犬貓無實際應用。"
-
+  general: 預後不良，多數病例因反覆感染或出血於幼年死亡。人醫可行骨髓移植，但犬貓無實際應用。
 prevention:
   - 基因檢測識別帶因者
   - 避免繁殖患病犬隻
   - 遺傳諮詢（犬舍）
-
-
 guidelineRefs:
   - sourceOrg: Biomedicines
-    title: Gastrodin Mitigates Ketamine-Induced Inhibition of F-Actin Remodeling and Cell Migration by Regulating the Rho Signaling Pathway.
+    title: >-
+      Gastrodin Mitigates Ketamine-Induced Inhibition of F-Actin Remodeling and Cell Migration by Regulating the Rho
+      Signaling Pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11940296/
     type: research
-    pmid: "40149625"
+    pmid: '40149625'
     relevance: supporting
   - sourceOrg: The Journal of cell biology
     title: Cobl-like promotes actin filament formation and dendritic branching using only a single WH2 domain.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5748978/
     type: research
-    pmid: "29233863"
+    pmid: '29233863'
     relevance: supporting
   - sourceOrg: Proceedings of the National Academy of Sciences of the United States of America
     title: nArgBP2 regulates excitatory synapse formation by controlling dendritic spine morphology.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4914163/
     type: research
-    pmid: "27226294"
+    pmid: '27226294'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: epistaxis
+    frequency: common
+  - symptomId: haematochezia
+    frequency: common
+  - symptomId: haematuria
+    frequency: common
+  - symptomId: petechiae-ecchymoses
+    frequency: common
+diagnosticAlgorithm:
+  title: 類威斯科特-奧爾德里奇症候群 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - epistaxis 相關症狀
+        - haematochezia 相關症狀
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 全血球計數
+          notes: 血小板顯著減少、小血小板
+        - name: 血液抹片
+          notes: 血小板體積減小
+        - name: 免疫球蛋白檢測
+          notes: IgM減少、IgA及IgE升高
+ddxSource: auto-generated

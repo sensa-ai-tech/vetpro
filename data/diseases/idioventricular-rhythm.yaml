@@ -3,11 +3,11 @@ nameEn: Idioventricular Rhythm
 nameZh: 心室自主性心律
 bodySystem: cardiac
 description: 心室異位起搏點控制心跳，心室率緩慢且不規則。通常提示嚴重心臟疾病或高度房室傳導阻滯。
-
 aliases:
-  - { alias: 特發性心室節律, language: zh }
-  - { alias: Ventricular Escape Rhythm, language: en }
-
+  - alias: 特發性心室節律
+    language: zh
+  - alias: Ventricular Escape Rhythm
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 罕見，多為嚴重疾病
-
 etiology:
   categories:
     - name: 高度房室傳導阻滯
@@ -29,7 +28,6 @@ etiology:
     - name: 藥物毒性
       examples:
         - Digoxin 中毒
-
 clinicalSigns:
   early:
     - 心跳緩慢且不規則
@@ -38,46 +36,64 @@ clinicalSigns:
     - 嚴重虛弱
     - 暈厥
     - 猝死風險
-
 diagnosis:
   primaryTests:
     - name: 心電圖
-      notes: "寬大 QRS 波 (> 0.08 秒)，心室率 < 40 bpm，P 波與 QRS 無關"
+      notes: 寬大 QRS 波 (> 0.08 秒)，心室率 < 40 bpm，P 波與 QRS 無關
     - name: 血液檢查
-      notes: "電解質 (鉀)、digoxin 濃度"
+      notes: 電解質 (鉀)、digoxin 濃度
     - name: 心臟超音波
-      notes: "評估結構性心臟病"
+      notes: 評估結構性心臟病
   differentialDiagnoses:
     - 完全性房室阻滯
     - 嚴重竇性心搏過緩
     - 心室性心搏過速
-
 treatment:
   medical:
     - 緊急: Atropine 0.04 mg/kg IV
     - Calcium gluconate 10% 0.5-1 ml/kg IV slow (高血鉀)
     - 停用 digoxin
     - Pacemaker (definitive treatment)
-
 prognosis:
-  general: "預後不良；為嚴重心臟疾病或高度傳導阻滯的表現，需緊急處理及 pacemaker"
-
+  general: 預後不良；為嚴重心臟疾病或高度傳導阻滯的表現，需緊急處理及 pacemaker
 prevention:
   - 監測 digoxin 濃度
   - 早期診斷及治療傳導阻滯
   - 謹慎使用心跳抑制藥物
-
-
 guidelineRefs:
   - sourceOrg: Heart rhythm
-    title: Small-conductance calcium-activated potassium current modulates the ventricular escape rhythm in normal rabbit hearts.
+    title: >-
+      Small-conductance calcium-activated potassium current modulates the ventricular escape rhythm in normal rabbit
+      hearts.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6443460/
     type: research
-    pmid: "30445170"
+    pmid: '30445170'
     relevance: supporting
-  - sourceOrg: "Biological &amp; pharmaceutical bulletin"
+  - sourceOrg: Biological &amp; pharmaceutical bulletin
     title: Torsadogenic Potential of HCN Channel Blocker Ivabradine Assessed in the Rabbit Proarrhythmia Model.
     url: https://pubmed.ncbi.nlm.nih.gov/34719656/
     type: research
-    pmid: "34719656"
+    pmid: '34719656'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 心室自主性心律 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心電圖
+          notes: 寬大 QRS 波 (> 0.08 秒)，心室率 < 40 bpm，P 波與 QRS 無關
+        - name: 血液檢查
+          notes: 電解質 (鉀)、digoxin 濃度
+        - name: 心臟超音波
+          notes: 評估結構性心臟病
+ddxSource: auto-generated

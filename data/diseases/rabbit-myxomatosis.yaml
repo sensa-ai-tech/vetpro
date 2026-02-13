@@ -3,19 +3,20 @@ nameEn: Rabbit Myxomatosis
 nameZh: 兔黏液瘤病
 bodySystem: infectious
 description: 由黏液瘤病毒 (Myxoma virus) 引起的兔高致死性病毒感染症，以嚴重皮膚黏液瘤性腫脹、結膜炎及全身性免疫抑制為特徵，透過吸血節肢動物 (蚊、跳蚤) 傳播。
-
 aliases:
-  - { alias: 兔黏液瘤, language: zh }
-  - { alias: 多發性黏液瘤, language: zh }
-  - { alias: Myxo, language: en }
-  - { alias: Myxoma virus infection, language: en }
-
+  - alias: 兔黏液瘤
+    language: zh
+  - alias: 多發性黏液瘤
+    language: zh
+  - alias: Myxo
+    language: en
+  - alias: Myxoma virus infection
+    language: en
 species:
   - speciesCommon: rabbit
     speciesScientific: Oryctolagus cuniculus
     prevalence: common
     notes: 歐洲兔 (O. cuniculus) 高度易感，致死率可達 99% (經典毒株)。南美棉尾兔 (Sylvilagus spp.) 為天然宿主，通常僅輕症。澳洲、歐洲及部分地區為法定疫病。英國及歐洲大陸家兔常受威脅。
-
 etiology:
   categories:
     - name: 病毒性
@@ -31,7 +32,6 @@ etiology:
         - 蚊蟲活躍季節 (夏秋)
         - 未接種疫苗
         - 跳蚤感染
-
 clinicalSigns:
   early:
     - 食慾減退與精神沉鬱
@@ -51,18 +51,17 @@ clinicalSigns:
     - 出血性病變 (高毒力株)
     - 多器官衰竭
     - 死亡通常於感染後 10-14 天
-
 diagnosis:
   primaryTests:
     - name: PCR
-      notes: "取皮膚結節、眼分泌物或血液。高敏感度與特異性，為確診首選方法"
+      notes: 取皮膚結節、眼分泌物或血液。高敏感度與特異性，為確診首選方法
     - name: 臨床表徵
-      notes: "典型病例 (黏液水腫性腫脹 + 結膜炎 + 皮膚結節) 臨床可高度懷疑"
+      notes: 典型病例 (黏液水腫性腫脹 + 結膜炎 + 皮膚結節) 臨床可高度懷疑
     - name: 組織病理學
-      notes: "皮膚/結節活檢：表皮增生、黏液水腫性間質變化、星狀細胞 (myxoma cells)、嗜酸性細胞質內包涵體"
+      notes: 皮膚/結節活檢：表皮增生、黏液水腫性間質變化、星狀細胞 (myxoma cells)、嗜酸性細胞質內包涵體
   imaging:
     - name: 胸腔 X 光
-      notes: "評估繼發性肺炎程度"
+      notes: 評估繼發性肺炎程度
   differentialDiagnoses:
     - 兔出血病 (Rabbit Hemorrhagic Disease / RHDV)
     - 巴斯德菌症 (Pasteurellosis / Snuffles)
@@ -74,7 +73,6 @@ diagnosis:
     - 電子顯微鏡 (偵測痘病毒顆粒)
     - 病毒分離 (研究用途)
     - CBC (淋巴球減少、heterophilia)
-
 treatment:
   principles:
     - 無特異性抗病毒治療
@@ -83,13 +81,13 @@ treatment:
     - 弱毒株感染有較高存活機會
   medications:
     - name: Enrofloxacin
-      dose: "10-20 mg/kg PO/SC BID"
+      dose: 10-20 mg/kg PO/SC BID
       notes: 預防或治療繼發性細菌感染
     - name: Meloxicam
-      dose: "0.3-0.5 mg/kg PO/SC SID"
+      dose: 0.3-0.5 mg/kg PO/SC SID
       notes: 抗炎止痛
     - name: 眼藥水 (Fusidic acid 或 Chloramphenicol)
-      dose: "患眼 BID-QID"
+      dose: 患眼 BID-QID
       notes: 防治繼發性細菌性結膜炎
   general:
     - 輔助餵食與補液 (維持營養與水分)
@@ -99,26 +97,71 @@ treatment:
     - 防蚊防蚤措施 (蚊帳、環境除蟲)
     - 嚴格隔離患兔
     - 安樂死考量 (嚴重病例，動物福利)
-
-prognosis: 經典高毒力株感染致死率極高 (>95%)，預後極差。弱毒力株 (field-attenuated strains) 感染存活率較高 (約 30-50%)，存活者可能留有皮膚瘢痕。疫苗接種兔如感染通常症狀較輕。英國及歐洲有疫苗可用，但台灣、美國等地無核准疫苗。
-
+prognosis: >-
+  經典高毒力株感染致死率極高 (>95%)，預後極差。弱毒力株 (field-attenuated strains) 感染存活率較高 (約
+  30-50%)，存活者可能留有皮膚瘢痕。疫苗接種兔如感染通常症狀較輕。英國及歐洲有疫苗可用，但台灣、美國等地無核准疫苗。
 guidelineRefs:
   - sourceOrg: Veterinary Record
-    title: "Myxomatosis in pet rabbits: current concepts in diagnosis and treatment"
+    title: 'Myxomatosis in pet rabbits: current concepts in diagnosis and treatment'
     url: https://pubmed.ncbi.nlm.nih.gov/31636191/
     type: review
-    pmid: "31636191"
+    pmid: '31636191'
   - sourceOrg: Journal of General Virology
-    title: "Myxoma virus: biology and pathogenesis"
+    title: 'Myxoma virus: biology and pathogenesis'
     url: https://pubmed.ncbi.nlm.nih.gov/30427782/
     type: review
-    pmid: "30427782"
-
+    pmid: '30427782'
 pubmedQueries:
   - query: '"myxomatosis" AND "rabbit" AND ("treatment" OR "vaccination" OR "management")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "Myxomatous AV Valve"
+  chapter: DIG
+  sectionTitle: Myxomatous AV Valve
   pdfPage: 153
+associatedSymptoms:
+  - symptomId: peripheral-oedema
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: red-eye
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔黏液瘤病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - peripheral-oedema 相關症狀
+        - dyspnoea 相關症狀
+        - red-eye 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: PCR
+          notes: 取皮膚結節、眼分泌物或血液。高敏感度與特異性，為確診首選方法
+        - name: 臨床表徵
+          notes: 典型病例 (黏液水腫性腫脹 + 結膜炎 + 皮膚結節) 臨床可高度懷疑
+        - name: 組織病理學
+          notes: 皮膚/結節活檢：表皮增生、黏液水腫性間質變化、星狀細胞 (myxoma cells)、嗜酸性細胞質內包涵體
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 電子顯微鏡 (偵測痘病毒顆粒)
+        - 病毒分離 (研究用途)
+        - CBC (淋巴球減少、heterophilia)
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 無特異性抗病毒治療
+        - 以支持性照護與繼發感染控制為主
+        - 高致死率 (經典株)，預防 (疫苗接種) 遠比治療重要
+ddxSource: auto-generated

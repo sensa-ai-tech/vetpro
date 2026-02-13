@@ -3,11 +3,11 @@ nameEn: Nasopharyngeal Mass
 nameZh: 鼻咽腔腫塊
 bodySystem: oncology
 description: 鼻咽腔腫瘤或息肉,導致上呼吸道阻塞。貓常見炎性息肉,犬常見腫瘤。
-
 aliases:
-  - { alias: 鼻咽部腫塊, language: zh }
-  - { alias: Nasopharyngeal Tumor, language: en }
-
+  - alias: 鼻咽部腫塊
+    language: zh
+  - alias: Nasopharyngeal Tumor
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 幼貓常見炎性息肉,成貓可能為淋巴瘤
-
 etiology:
   categories:
     - name: 炎性
@@ -27,7 +26,6 @@ etiology:
       examples:
         - 淋巴瘤
         - 腺癌
-
 clinicalSigns:
   early:
     - Stertor (鼾聲)
@@ -36,28 +34,54 @@ clinicalSigns:
     - 呼吸困難
     - 張口呼吸
     - 食慾下降
-
 diagnosis:
   primaryTests:
     - name: 口咽檢查
-      notes: "軟顎後方可能觸及腫塊"
+      notes: 軟顎後方可能觸及腫塊
     - name: 鼻咽鏡檢查
-      notes: "直視腫塊,取組織切片"
+      notes: 直視腫塊,取組織切片
     - name: 頭部 CT
-      notes: "評估腫塊範圍"
+      notes: 評估腫塊範圍
   differentialDiagnoses:
     - 軟顎過長
     - 扁桃腺腫大
     - 淋巴結腫大
-
 treatment:
   medical:
     - 炎性息肉:外科切除 (預後良好)
     - 淋巴瘤:化療
     - 其他腫瘤:手術 ± 放療
-
 prognosis:
-  general: "炎性息肉預後良好;腫瘤性病變預後謹慎至不良"
-
+  general: 炎性息肉預後良好;腫瘤性病變預後謹慎至不良
 prevention:
   - 無特定預防措施
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 鼻咽腔腫塊 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - dyspnoea 相關症狀
+        - dysphagia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 口咽檢查
+          notes: 軟顎後方可能觸及腫塊
+        - name: 鼻咽鏡檢查
+          notes: 直視腫塊,取組織切片
+        - name: 頭部 CT
+          notes: 評估腫塊範圍
+ddxSource: auto-generated

@@ -3,11 +3,11 @@ nameEn: Pulmonary Lymphomatoid Granulomatosis
 nameZh: 肺淋巴瘤樣肉芽腫病
 bodySystem: oncology
 description: 罕見的淋巴增殖性疾病,肺部形成多發性結節,由淋巴球及組織球浸潤。可能進展為淋巴瘤。
-
 aliases:
-  - { alias: 肺淋巴瘤樣肉芽腫, language: zh }
-  - { alias: PLG, language: en }
-
+  - alias: 肺淋巴瘤樣肉芽腫
+    language: zh
+  - alias: PLG
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 極罕見
-
 etiology:
   categories:
     - name: 淋巴增殖性
@@ -26,7 +25,6 @@ etiology:
     - name: 前淋巴瘤狀態
       examples:
         - 可能進展為淋巴瘤
-
 clinicalSigns:
   early:
     - 咳嗽
@@ -35,28 +33,58 @@ clinicalSigns:
     - 呼吸困難
     - 體重減輕
     - 食慾不振
-
 diagnosis:
   primaryTests:
     - name: 胸部 X 光 / CT
-      notes: "多發性肺結節"
+      notes: 多發性肺結節
     - name: 肺組織切片
-      notes: "確診:淋巴球及組織球浸潤,血管中心性病變"
+      notes: 確診:淋巴球及組織球浸潤,血管中心性病變
     - name: 免疫組織化學
-      notes: "B 或 T 細胞標記"
+      notes: B 或 T 細胞標記
   differentialDiagnoses:
     - 肺淋巴瘤
     - 轉移性腫瘤
     - 真菌性肺炎
-
 treatment:
   medical:
     - 化療 (類似淋巴瘤方案)
     - Prednisone 1-2 mg/kg PO q24h
     - Cyclophosphamide 或 Chlorambucil
-
 prognosis:
-  general: "預後不良;可能進展為淋巴瘤,中位存活時間數月"
-
+  general: 預後不良;可能進展為淋巴瘤,中位存活時間數月
 prevention:
   - 無特定預防措施
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肺淋巴瘤樣肉芽腫病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - exercise-intolerance 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸部 X 光 / CT
+          notes: 多發性肺結節
+        - name: 肺組織切片
+          notes: 確診:淋巴球及組織球浸潤,血管中心性病變
+        - name: 免疫組織化學
+          notes: B 或 T 細胞標記
+ddxSource: auto-generated

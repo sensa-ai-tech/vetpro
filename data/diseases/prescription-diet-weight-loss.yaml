@@ -3,12 +3,13 @@ nameEn: Prescription Diet Weight Loss
 nameZh: 減重處方飲食
 bodySystem: metabolic
 description: 專為過重或肥胖犬貓設計的低熱量、高纖維、高蛋白飲食。促進安全有效的體重減輕、保留肌肉質量、維持飽足感。
-
 aliases:
-  - { alias: 減肥處方飼料, language: zh }
-  - { alias: Weight Management Diet, language: en }
-  - { alias: Metabolic Diet, language: en }
-
+  - alias: 減肥處方飼料
+    language: zh
+  - alias: Weight Management Diet
+    language: en
+  - alias: Metabolic Diet
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓肥胖盛行率約30-40%
-
 etiology:
   categories:
     - name: 飲食特點
@@ -34,7 +34,6 @@ etiology:
         - 心臟病
         - 脂肪肝(貓)
         - 泌尿道疾病
-
 clinicalSigns:
   early:
     - 體重逐步下降
@@ -44,20 +43,18 @@ clinicalSigns:
     - 達到理想體重
     - 關節炎症狀改善
     - 糖尿病控制改善或緩解
-
 diagnosis:
   primaryTests:
     - name: 體重及體態評分
-      notes: "BCS 1-9分，理想4-5分"
+      notes: BCS 1-9分，理想4-5分
     - name: 理想體重計算
-      notes: "當前體重 ÷ (1 + 過重%) = 理想體重"
+      notes: 當前體重 ÷ (1 + 過重%) = 理想體重
     - name: 健康檢查
-      notes: "排除內分泌疾病(甲狀腺、庫欣氏症)"
+      notes: 排除內分泌疾病(甲狀腺、庫欣氏症)
   differentialDiagnoses:
     - 單純性肥胖
     - 甲狀腺功能低下
     - 庫欣氏症
-
 treatment:
   medical:
     - 商業減重處方
@@ -74,45 +71,72 @@ treatment:
     - 每週或每兩週秤重
     - 目標：每週減重1-2%(犬)或0.5-1%(貓)
     - 達標後改維持配方
-
 prognosis:
-  general: "配合適當飲食及熱量控制，80%以上可成功減重；需飼主高度配合"
-
+  general: 配合適當飲食及熱量控制，80%以上可成功減重；需飼主高度配合
 prevention:
   - 維持理想體重從幼年開始
   - 避免過度餵食
   - 適當運動
   - 絕育後調整熱量
-
-
 guidelineRefs:
-  - sourceOrg: "Diabetes, metabolic syndrome and obesity : targets and therapy"
+  - sourceOrg: 'Diabetes, metabolic syndrome and obesity : targets and therapy'
     title: The Shengmai San Exerts Therapeutic Effects on Type 2 Diabetes by Modulating the PI3K/AKT/GSK3B Signaling Pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11972573/
     type: research
-    pmid: "40191827"
+    pmid: '40191827'
     relevance: supporting
   - sourceOrg: Chinese medicine
-    title: Jianwei Xiaoshi oral liquid attenuates high-calorie diet-induced dyspepsia in immature rats via regulating the pancreatic secretion pathway and maintaining the homeostasis of intestinal microbiota.
+    title: >-
+      Jianwei Xiaoshi oral liquid attenuates high-calorie diet-induced dyspepsia in immature rats via regulating the
+      pancreatic secretion pathway and maintaining the homeostasis of intestinal microbiota.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11700448/
     type: research
-    pmid: "39755683"
+    pmid: '39755683'
     relevance: supporting
   - sourceOrg: Metabolites
-    title: Fufang Muji Granules Ameliorate Liver Fibrosis by Reducing Oxidative Stress and Inflammation, Inhibiting Apoptosis, and Modulating Overall Metabolism.
+    title: >-
+      Fufang Muji Granules Ameliorate Liver Fibrosis by Reducing Oxidative Stress and Inflammation, Inhibiting
+      Apoptosis, and Modulating Overall Metabolism.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11356414/
     type: research
-    pmid: "39195542"
+    pmid: '39195542'
     relevance: supporting
   - sourceOrg: Heliyon
     title: Anti-obesity effects of dichloromethane leaf extract of Gnidia glauca in high fat diet-induced obese rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6895710/
     type: research
-    pmid: "31844729"
+    pmid: '31844729'
     relevance: supporting
   - sourceOrg: Heliyon
-    title: Jian-Pi-Yin decoction attenuates lactose-induced chronic diarrhea in rats by regulating GLP-1 and reducing NHE3 ubiquitination and phosphorylation.
+    title: >-
+      Jian-Pi-Yin decoction attenuates lactose-induced chronic diarrhea in rats by regulating GLP-1 and reducing NHE3
+      ubiquitination and phosphorylation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10395042/
     type: research
-    pmid: "37539150"
+    pmid: '37539150'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: weight-gain
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 減重處方飲食 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - weight-gain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 體重及體態評分
+          notes: BCS 1-9分，理想4-5分
+        - name: 理想體重計算
+          notes: 當前體重 ÷ (1 + 過重%) = 理想體重
+        - name: 健康檢查
+          notes: 排除內分泌疾病(甲狀腺、庫欣氏症)
+ddxSource: auto-generated

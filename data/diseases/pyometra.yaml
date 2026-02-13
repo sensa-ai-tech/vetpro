@@ -3,24 +3,28 @@ nameEn: Pyometra
 nameZh: 子宮蓄膿
 bodySystem: reproductive
 description: 未絕育母犬貓的子宮腔內膿液積聚，由黃體素介導的子宮內膜增生 (CEH) 繼發細菌感染所致，為常見且具潛在致命性的生殖系統疾病。
-
 aliases:
-  - { alias: Pyo, language: en }
-  - { alias: Cystic Endometrial Hyperplasia-Pyometra Complex, language: en }
-  - { alias: CEH-Pyometra, language: en }
-  - { alias: 子宮積膿, language: zh }
-  - { alias: 子宮膿瘍, language: zh }
-
+  - alias: Pyo
+    language: en
+  - alias: Cystic Endometrial Hyperplasia-Pyometra Complex
+    language: en
+  - alias: CEH-Pyometra
+    language: en
+  - alias: 子宮積膿
+    language: zh
+  - alias: 子宮膿瘍
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
-    notes: 未絕育母犬常見。中老年犬發病率最高 — 平均發病年齡 7-8 歲，但任何年齡均可發生。10 歲前約 25% 未絕育母犬發生 pyometra。無明顯品種傾向，但部分報告 Golden Retriever、Bernese Mountain Dog、Rottweiler、Cavalier King Charles Spaniel 風險較高。外源性黃體素/雌激素使用增加風險。
+    notes: >-
+      未絕育母犬常見。中老年犬發病率最高 — 平均發病年齡 7-8 歲，但任何年齡均可發生。10 歲前約 25% 未絕育母犬發生 pyometra。無明顯品種傾向，但部分報告 Golden Retriever、Bernese
+      Mountain Dog、Rottweiler、Cavalier King Charles Spaniel 風險較高。外源性黃體素/雌激素使用增加風險。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓較犬少見（因貓為誘發性排卵，黃體素暴露時間較短）。未絕育母貓或接受過黃體素治療的貓可發生。貓 pyometra 臨床表現可能較犬輕微，延遲診斷風險較高。
-
 etiology:
   categories:
     - name: 荷爾蒙因素（前置條件）
@@ -43,9 +47,11 @@ etiology:
       examples:
         - 開放型 (Open Pyometra) — 子宮頸開放，膿液經陰道排出。較易早期發現
         - 閉鎖型 (Closed Pyometra) — 子宮頸閉合，膿液積聚於子宮內。較危險，易進展至敗血症
-
-pathophysiology: Pyometra 的發展遵循 CEH-Pyometra Complex 階段性進展。黃體期時，黃體素刺激子宮內膜腺體增生與分泌、抑制子宮肌層收縮、降低局部免疫功能、促使子宮頸閉合。反覆的黃體素暴露（未懷孕的發情週期）導致子宮內膜囊性增生 (Cystic Endometrial Hyperplasia, CEH) — 內膜腺體囊性擴張，分泌液積聚，為細菌提供理想生長環境。發情期子宮頸短暫開放時，陰道常在菌（尤其 E. coli）上行進入子宮腔。E. coli 具有特定毒力因子：FimH adhesin 與子宮內膜受體結合、內毒素 (LPS/endotoxin) 誘發嚴重全身性炎症反應。黃體素抑制的子宮局部免疫無法清除感染。膿液積聚使子宮腔擴張，子宮壁變薄，有破裂導致腹膜炎的風險。E. coli 內毒素經血液循環引起全身性炎症反應 (SIRS)、敗血症、DIC。內毒素亦影響腎小管功能，導致腎源性尿崩症（多尿/多飲）— E. coli 內毒素干擾 ADH 受體反應。免疫複合體沉積可導致腎絲球腎炎。
-
+pathophysiology: >-
+  Pyometra 的發展遵循 CEH-Pyometra Complex 階段性進展。黃體期時，黃體素刺激子宮內膜腺體增生與分泌、抑制子宮肌層收縮、降低局部免疫功能、促使子宮頸閉合。反覆的黃體素暴露（未懷孕的發情週期）導致子宮內膜囊性增生
+  (Cystic Endometrial Hyperplasia, CEH) — 內膜腺體囊性擴張，分泌液積聚，為細菌提供理想生長環境。發情期子宮頸短暫開放時，陰道常在菌（尤其 E. coli）上行進入子宮腔。E. coli
+  具有特定毒力因子：FimH adhesin 與子宮內膜受體結合、內毒素 (LPS/endotoxin) 誘發嚴重全身性炎症反應。黃體素抑制的子宮局部免疫無法清除感染。膿液積聚使子宮腔擴張，子宮壁變薄，有破裂導致腹膜炎的風險。E.
+  coli 內毒素經血液循環引起全身性炎症反應 (SIRS)、敗血症、DIC。內毒素亦影響腎小管功能，導致腎源性尿崩症（多尿/多飲）— E. coli 內毒素干擾 ADH 受體反應。免疫複合體沉積可導致腎絲球腎炎。
 clinicalSigns:
   early:
     - 發情後 4-8 週出現症狀（黃體期）
@@ -69,20 +75,19 @@ clinicalSigns:
     - 子宮破裂 → 腹膜炎（極度危險）
     - 多器官衰竭
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "確診首選。擴張的子宮腔充滿低回音至無回音液體。可評估子宮壁厚度、積液量。區分開放型與閉鎖型。排除子宮扭轉。敏感度與特異度均高"
+      notes: 確診首選。擴張的子宮腔充滿低回音至無回音液體。可評估子宮壁厚度、積液量。區分開放型與閉鎖型。排除子宮扭轉。敏感度與特異度均高
     - name: CBC
-      notes: "白血球增多 (常 >30,000/μL)，嗜中性球左移（桿狀核增多）。部分嚴重敗血症可見白血球減少（退化性左移 — 預後不良指標）。單核球增多。輕度貧血（慢性炎症/骨髓抑制）"
+      notes: 白血球增多 (常 >30,000/μL)，嗜中性球左移（桿狀核增多）。部分嚴重敗血症可見白血球減少（退化性左移 — 預後不良指標）。單核球增多。輕度貧血（慢性炎症/骨髓抑制）
     - name: 生化/電解質
-      notes: "BUN/Creatinine 升高（腎前性脫水 + 內毒素腎小管損傷）。高球蛋白血症。低白蛋白。肝酵素可能升高。代謝性酸中毒。電解質失衡"
+      notes: BUN/Creatinine 升高（腎前性脫水 + 內毒素腎小管損傷）。高球蛋白血症。低白蛋白。肝酵素可能升高。代謝性酸中毒。電解質失衡
   imaging:
     - name: 腹部超音波
-      notes: "子宮擴張程度評估。子宮壁完整性（排除破裂）。腹腔積液（破裂/腹膜炎時）。卵巢評估"
+      notes: 子宮擴張程度評估。子宮壁完整性（排除破裂）。腹腔積液（破裂/腹膜炎時）。卵巢評估
     - name: 腹部 X 光
-      notes: "擴張的管狀軟組織密度 (子宮) 位於膀胱背側。閉鎖型較明顯。開放型子宮可能不顯著。腹腔積液提示破裂"
+      notes: 擴張的管狀軟組織密度 (子宮) 位於膀胱背側。閉鎖型較明顯。開放型子宮可能不顯著。腹腔積液提示破裂
   additional:
     - 尿液分析（等張尿/低比重尿 — 腎源性尿崩、蛋白尿）
     - 凝血功能（PT/APTT/D-dimer — 排除 DIC）
@@ -90,7 +95,6 @@ diagnosis:
     - 陰道分泌物細胞學與培養（開放型）
     - 血氣分析（酸鹼平衡評估）
     - 乳酸 (Lactate — 組織灌流評估，>4 mmol/L 預後較差)
-
 treatment:
   principles:
     - 卵巢子宮切除術 (OVH) 為首選且最安全的治療
@@ -100,16 +104,18 @@ treatment:
     - 術後監測腎功能與感染控制
   medications:
     - name: 靜脈輸液復甦
-      dose: "晶體液 (LRS) 初始 20-30 mL/kg/hr，依脫水程度與心血管狀態調整。敗血症休克可能需 60-90 mL/kg 晶體液 bolus"
+      dose: 晶體液 (LRS) 初始 20-30 mL/kg/hr，依脫水程度與心血管狀態調整。敗血症休克可能需 60-90 mL/kg 晶體液 bolus
       notes: 術前穩定為首要步驟。糾正脫水與電解質失衡。維持腎臟灌流。敗血症時可能需膠體液或 vasopressor
     - name: 廣效抗生素
-      dose: "經驗性：Ampicillin-Sulbactam 30 mg/kg IV TID + Enrofloxacin 5-10 mg/kg IV SID；或 Amoxicillin-Clavulanate 20 mg/kg IV TID"
+      dose: >-
+        經驗性：Ampicillin-Sulbactam 30 mg/kg IV TID + Enrofloxacin 5-10 mg/kg IV SID；或 Amoxicillin-Clavulanate 20 mg/kg IV
+        TID
       notes: 術前即開始。覆蓋 E. coli 與厭氧菌。術後根據子宮膿液培養結果調整。抗生素術後續用 7-14 天
     - name: Aglepristone (保守治療 — 繁殖犬)
-      dose: "10 mg/kg SC 第 1、2、8 天"
+      dose: 10 mg/kg SC 第 1、2、8 天
       notes: 黃體素受體拮抗劑。僅限開放型 pyometra + 臨床穩定 + 有繁殖需求的犬。促進子宮頸開放與子宮排空。搭配 PGF2α 使用效果更佳。成功率約 60-80%，但復發率高（下次發情約 50-75% 復發）。需密切監測
     - name: Prostaglandin F2α (PGF2α, Dinoprost)
-      dose: "犬 0.1-0.25 mg/kg SC BID-TID × 3-5 天（從低劑量起始）"
+      dose: 犬 0.1-0.25 mg/kg SC BID-TID × 3-5 天（從低劑量起始）
       notes: 溶黃體 + 促子宮收縮。保守治療輔助。副作用多：嘔吐、腹瀉、流涎、腹痛、呼吸急促（注射後 15-60 分鐘）。絕對禁用於閉鎖型（子宮破裂風險）。需住院監測
   general:
     - 卵巢子宮切除術 (OVH) — 標準治療。即使患者狀況不佳仍應盡早手術（延遲增加敗血症風險）
@@ -119,11 +125,13 @@ treatment:
     - 閉鎖型 pyometra 禁用 PGF2α（子宮壁薄弱 + 子宮頸閉合 → 破裂風險）
     - 保守治療後建議下次發情期配種（降低復發風險）或穩定後執行 OVH
     - 子宮殘端蓄膿 (Stump Pyometra) 需再次手術移除殘端與殘留卵巢組織
-
-emergencyNotes: 閉鎖型 pyometra 合併敗血症/SIRS 為急症。處理：(1) 積極靜脈輸液復甦（糾正低血容量與灌流不足）；(2) 廣效靜脈抗生素（立即給予）；(3) 儘速安排 OVH（即使需在穩定期間準備手術室）；(4) 監測血壓、心電圖、尿量；(5) DIC 管理（新鮮冷凍血漿 FFP 10-15 mL/kg）；(6) 子宮破裂 → 腹膜炎需緊急開腹探查與腹腔灌洗；(7) 麻醉風險高 — 避免低血壓藥物，術中積極輸液。
-
-prognosis: 手術治療 (OVH) 預後極佳 — 未合併嚴重敗血症的病例存活率 >95%。術後 48-72 小時多數明顯改善。合併敗血症者存活率約 80-90%（積極處理下）。合併 DIC 或多器官衰竭者預後較差。腎功能通常在術後數週恢復（內毒素性腎小管損傷多為可逆）。白血球計數術後 1-2 週恢復正常。保守內科治療成功率較低（60-80%），且復發率高（下次發情 50-75%），僅作為有繁殖需求犬的暫時方案。早期診斷與及時手術為最重要預後因素。
-
+emergencyNotes: >-
+  閉鎖型 pyometra 合併敗血症/SIRS 為急症。處理：(1) 積極靜脈輸液復甦（糾正低血容量與灌流不足）；(2) 廣效靜脈抗生素（立即給予）；(3) 儘速安排 OVH（即使需在穩定期間準備手術室）；(4)
+  監測血壓、心電圖、尿量；(5) DIC 管理（新鮮冷凍血漿 FFP 10-15 mL/kg）；(6) 子宮破裂 → 腹膜炎需緊急開腹探查與腹腔灌洗；(7) 麻醉風險高 — 避免低血壓藥物，術中積極輸液。
+prognosis: >-
+  手術治療 (OVH) 預後極佳 — 未合併嚴重敗血症的病例存活率 >95%。術後 48-72 小時多數明顯改善。合併敗血症者存活率約 80-90%（積極處理下）。合併 DIC
+  或多器官衰竭者預後較差。腎功能通常在術後數週恢復（內毒素性腎小管損傷多為可逆）。白血球計數術後 1-2 週恢復正常。保守內科治療成功率較低（60-80%），且復發率高（下次發情
+  50-75%），僅作為有繁殖需求犬的暫時方案。早期診斷與及時手術為最重要預後因素。
 guidelineRefs:
   - sourceOrg: BSAVA
     title: BSAVA Manual of Canine and Feline Reproduction and Neonatology — Pyometra
@@ -133,27 +141,91 @@ guidelineRefs:
     title: Pyometra in the Dog — A Review of Pathogenesis and Treatment
     url: https://pubmed.ncbi.nlm.nih.gov/17526127/
     type: guideline
-    pmid: "17526127"
+    pmid: '17526127'
   - sourceOrg: Veterinary sciences
-    title: "Antimicrobial Resistance of Clinical and Commensal Escherichia coli Canine Isolates: Profile Characterization and Comparison of Antimicrobial Susceptibility Results According to Different Guidelines."
+    title: >-
+      Antimicrobial Resistance of Clinical and Commensal Escherichia coli Canine Isolates: Profile Characterization and
+      Comparison of Antimicrobial Susceptibility Results According to Different Guidelines.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9227429/
     type: guideline
-    pmid: "35737336"
+    pmid: '35737336'
   - sourceOrg: The Journal of small animal practice
     title: When - and whether - should we spay/neuter companion dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12593256/
     type: review
-    pmid: "40628281"
+    pmid: '40628281'
   - sourceOrg: Open veterinary journal
-    title: "Bovine trichomoniasis: A hidden threat to reproductive efficiency."
+    title: 'Bovine trichomoniasis: A hidden threat to reproductive efficiency.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11682740/
     type: review
-    pmid: "39737020"
+    pmid: '39737020'
 pubmedQueries:
   - query: '"pyometra" AND (dog OR canine) AND ("ovariohysterectomy" OR "aglepristone" OR "E. coli" OR "sepsis")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "REP"
-  sectionTitle: "PYOMETRA"
+  chapter: REP
+  sectionTitle: PYOMETRA
   pdfPage: 1411
+diagnosticAlgorithm:
+  title: 子宮蓄膿 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 詢問發情週期史、未絕育母犬/貓，評估陰道分泌物
+      findings:
+        - 未絕育中老年母犬
+        - 發情後2-8週發病
+        - 陰道膿性分泌物（開放型）
+        - 腹部膨大
+    - step: 2
+      action: 血液學與生化
+      details: CBC及血清生化檢查
+      findings:
+        - 白血球顯著增多伴左移
+        - 帶狀嗜中性球增加
+        - 氮血症
+        - 高球蛋白血症
+    - step: 3
+      action: 腹部影像
+      details: X光及超音波確認子宮狀態
+      findings:
+        - 子宮明顯擴張充滿液體
+        - 超音波顯示子宮腔積液
+        - 排除子宮腫瘤
+        - 評估卵巢
+    - step: 4
+      action: 術前評估與治療
+      details: 評估手術風險並準備卵巢子宮切除術
+      findings:
+        - 評估凝血功能
+        - 穩定血液動力學
+        - 緊急卵巢子宮摘除術
+clinicalPearls:
+  - 閉鎖型比開放型更危險（無法排膿）
+  - 術前穩定但不要延遲手術
+  - E. coli是最常見致病菌
+  - 預防性絕育可完全預防
+monitoringItems:
+  - 體溫
+  - 白血球
+  - 腎功能
+  - 術後傷口
+associatedSymptoms:
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: vaginal-discharge
+    frequency: common
+  - symptomId: abdominal-distension
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

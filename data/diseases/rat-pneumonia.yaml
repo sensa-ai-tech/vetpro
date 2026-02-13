@@ -3,22 +3,20 @@ nameEn: Rat Pneumonia
 nameZh: 大鼠肺炎
 bodySystem: respiratory
 description: 大鼠下呼吸道感染，常繼發於 Mycoplasma pulmonis 慢性感染。Streptococcus pneumoniae、CAR bacillus 等亦可為病原。表現為呼吸困難、囉音及發紺。
-
 aliases:
-  - { alias: "大鼠肺炎", language: zh }
-  - { alias: "Rat Pneumonia", language: en }
-
+  - alias: 大鼠肺炎
+    language: zh
+  - alias: Rat Pneumonia
+    language: en
 species:
   - speciesCommon: rat
     prevalence: uncommon
     notes: 大鼠可受此疾病影響。
-
 etiology:
   categories:
     - name: 病因
       examples:
         - 詳見臨床文獻
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -27,14 +25,12 @@ clinicalSigns:
   progressive:
     - 症狀加重
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 完整理學檢查與病史評估。
     - name: 實驗室檢查
       notes: CBC/生化排除系統性疾病。
-
 treatment:
   principles:
     - 治療基礎病因
@@ -44,41 +40,81 @@ treatment:
     - 依病因治療
     - 支持性照護
     - 定期追蹤
-
 prognosis: 預後取決於疾病嚴重度與治療時效。早期診斷與適當治療可改善預後。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in genetics
     title: Diphenyl pyridine intervention improves S. aureus-induced pneumonia by globally regulating transcriptome profile.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12457106/
     type: research
-    pmid: "41000417"
+    pmid: '41000417'
     relevance: supporting
   - sourceOrg: Infection and immunity
     title: TCS01 Two-Component System Influenced the Virulence of Streptococcus pneumoniae by Regulating PcpA.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10187121/
     type: research
-    pmid: "37052497"
+    pmid: '37052497'
     relevance: supporting
   - sourceOrg: Infection and drug resistance
     title: Vitamin D Improves Klebsiella-Induced Severe Pneumonia in Rats by Regulating Intestinal Microbiota.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10860834/
     type: research
-    pmid: "38348232"
+    pmid: '38348232'
     relevance: supporting
   - sourceOrg: Antibiotics (Basel, Switzerland)
-    title: In-Vitro and In-Vivo Antibacterial Effects of Frankincense Oil and Its Interaction with Some Antibiotics against Multidrug-Resistant Pathogens.
+    title: >-
+      In-Vitro and In-Vivo Antibacterial Effects of Frankincense Oil and Its Interaction with Some Antibiotics against
+      Multidrug-Resistant Pathogens.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9686721/
     type: research
-    pmid: "36358246"
+    pmid: '36358246'
     relevance: supporting
   - sourceOrg: BMC complementary medicine and therapies
-    title: Epigallocatechin-3-Gallate attenuates lipopolysacharide-induced pneumonia via modification of inflammation, oxidative stress, apoptosis, and autophagy.
+    title: >-
+      Epigallocatechin-3-Gallate attenuates lipopolysacharide-induced pneumonia via modification of inflammation,
+      oxidative stress, apoptosis, and autophagy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10996149/
     type: research
-    pmid: "38580929"
+    pmid: '38580929'
     relevance: supporting
 pubmedQueries:
   - query: '"Rat Pneumonia" AND (veterinary OR rat) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 大鼠肺炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 完整理學檢查與病史評估。
+        - name: 實驗室檢查
+          notes: CBC/生化排除系統性疾病。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 支持性照護
+        - 監測恢復進度
+ddxSource: auto-generated

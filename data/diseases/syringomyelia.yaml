@@ -3,23 +3,26 @@ nameEn: Syringomyelia
 nameZh: 脊髓空洞症
 bodySystem: neurology
 description: 脊髓中央管內或脊髓實質內異常腔體 (syrinx) 形成並充滿液體，多與 Chiari-like malformation (CLM) 相關。為 Cavalier King Charles Spaniel 極常見的遺傳性疾病。
-
 aliases:
-  - { alias: SM, language: en }
-  - { alias: Chiari-like Malformation and Syringomyelia, language: en }
-  - { alias: CM/SM, language: en }
-  - { alias: 脊髓空洞, language: zh }
-
+  - alias: SM
+    language: en
+  - alias: Chiari-like Malformation and Syringomyelia
+    language: en
+  - alias: CM/SM
+    language: en
+  - alias: 脊髓空洞
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
-    notes: Cavalier King Charles Spaniel (CKCS) 極高盛行率，MRI 篩檢約 70% 有腦室擴張或 syrinx。其他好發品種：Griffon Bruxellois、King Charles Spaniel、Pomeranian、Yorkshire Terrier。與 Chiari-like malformation 高度相關。
+    notes: >-
+      Cavalier King Charles Spaniel (CKCS) 極高盛行率，MRI 篩檢約 70% 有腦室擴張或 syrinx。其他好發品種：Griffon Bruxellois、King Charles
+      Spaniel、Pomeranian、Yorkshire Terrier。與 Chiari-like malformation 高度相關。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓偶見報告，多為偶然發現或與其他畸形相關。
-
 etiology:
   categories:
     - name: Chiari-like Malformation (CLM)
@@ -38,7 +41,6 @@ etiology:
         - 寰樞椎不穩定繼發
         - 脊髓外傷後
         - 蛛網膜囊腫
-
 clinicalSigns:
   early:
     - 幻覺搔抓 (phantom scratching，不接觸皮膚的空中搔抓動作)
@@ -55,24 +57,22 @@ clinicalSigns:
     - 嚴重慢性神經性疼痛
     - 肌肉萎縮 (前肢為主)
     - 顱神經功能障礙 (嚴重 CLM)
-
 diagnosis:
   primaryTests:
     - name: MRI
-      notes: "金標準。T2W 脊髓內高信號腔體 (syrinx)。評估 CLM (小腦疝脫程度)、syrinx 範圍與寬度。矢狀面 T2W 為主要評估序列"
+      notes: 金標準。T2W 脊髓內高信號腔體 (syrinx)。評估 CLM (小腦疝脫程度)、syrinx 範圍與寬度。矢狀面 T2W 為主要評估序列
     - name: 神經學檢查
-      notes: "幻覺搔抓為高度特異性臨床徵象。頸部過度敏感 (hyperesthesia)。可能有上運動神經元或下運動神經元徵象"
+      notes: 幻覺搔抓為高度特異性臨床徵象。頸部過度敏感 (hyperesthesia)。可能有上運動神經元或下運動神經元徵象
   imaging:
     - name: 頸段至胸段 MRI
-      notes: "首選影像。評估 syrinx 位置、大小、CLM 嚴重程度"
+      notes: 首選影像。評估 syrinx 位置、大小、CLM 嚴重程度
     - name: Cine MRI (相位對比 MRI)
-      notes: "評估 CSF 流動動力學。研究性用途為主"
+      notes: 評估 CSF 流動動力學。研究性用途為主
   additional:
     - 品種篩檢 MRI (CKCS 繁殖前建議)
     - 基因檢測 (研究進行中，尚未商用)
     - CBC/生化 (排除其他疼痛原因)
     - 皮膚檢查 (排除皮膚病引起的搔抓)
-
 treatment:
   principles:
     - 治療目標為疼痛控制，MRI 上 syrinx 消除非必要
@@ -81,19 +81,19 @@ treatment:
     - 手術適用於內科治療無效或快速惡化的病例
   medications:
     - name: Gabapentin
-      dose: "5-10 mg/kg PO BID-TID"
+      dose: 5-10 mg/kg PO BID-TID
       notes: 一線神經性疼痛藥物。可逐步增量至效果。嗜睡為常見副作用
     - name: Pregabalin
-      dose: "2-4 mg/kg PO BID"
+      dose: 2-4 mg/kg PO BID
       notes: 替代 gabapentin。部分病例效果更佳。費用較高
     - name: NSAIDs (Meloxicam)
-      dose: "0.1 mg/kg PO SID"
+      dose: 0.1 mg/kg PO SID
       notes: 輔助止痛。單獨使用效果有限。長期使用注意腎腸道副作用
     - name: Omeprazole
-      dose: "0.7-1 mg/kg PO SID"
+      dose: 0.7-1 mg/kg PO SID
       notes: 減少 CSF 分泌。可減輕 syrinx 相關症狀
     - name: Cimetidine
-      dose: "5-10 mg/kg PO TID"
+      dose: 5-10 mg/kg PO TID
       notes: 減少 CSF 分泌的替代藥物
   general:
     - 枕骨大孔減壓術 (foramen magnum decompression, FMD) — 手術首選
@@ -101,42 +101,98 @@ treatment:
     - 避免頸部項圈 (改用胸背帶)
     - 避免過度頸部牽拉
     - 繁殖建議：嚴重 CM/SM 犬不應繁殖
-
 prognosis: 變異大。部分犬終生僅輕微症狀或無症狀。有症狀犬在藥物控制下多數可維持可接受的生活品質。手術短期改善率約 80%，但長期復發率高。嚴重神經性疼痛可能需要安樂死。疾病通常為慢性進展，壽命可能縮短但非必然。
-
 guidelineRefs:
   - sourceOrg: BMC Veterinary Research
-    title: Chiari-like malformation and syringomyelia in the Cavalier King Charles Spaniel — long-term outcome after surgical management
+    title: >-
+      Chiari-like malformation and syringomyelia in the Cavalier King Charles Spaniel — long-term outcome after surgical
+      management
     url: https://pubmed.ncbi.nlm.nih.gov/24885820/
     type: research
-    pmid: "24885820"
+    pmid: '24885820'
   - sourceOrg: Veterinary Journal
     title: Breed-specific guidelines for Chiari-like malformation/syringomyelia screening
     url: https://pubmed.ncbi.nlm.nih.gov/24878265/
     type: guideline
-    pmid: "24878265"
+    pmid: '24878265'
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: Syringomyelia in Cavalier King Charles Spaniels — clinical features and outcome
     url: https://pubmed.ncbi.nlm.nih.gov/19175738/
     type: research
-    pmid: "19175738"
+    pmid: '19175738'
   - sourceOrg: Fluids and barriers of the CNS
-    title: A review of cerebrospinal fluid circulation with respect to Chiari-like malformation and syringomyelia in brachycephalic dogs.
+    title: >-
+      A review of cerebrospinal fluid circulation with respect to Chiari-like malformation and syringomyelia in
+      brachycephalic dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11895204/
     type: review
-    pmid: "40065427"
+    pmid: '40065427'
     relevance: primary
   - sourceOrg: Veterinarni medicina
-    title: "Comprehensive comparative study of&#xa0;Chiari-like malformation in&#xa0;veterinary and human medicine."
+    title: Comprehensive comparative study of&#xa0;Chiari-like malformation in&#xa0;veterinary and human medicine.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11359979/
     type: review
-    pmid: "39221120"
+    pmid: '39221120'
     relevance: primary
 pubmedQueries:
   - query: '"syringomyelia" AND ("Cavalier King Charles" OR "Chiari") AND (dog OR canine) AND ("treatment" OR "outcome")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "NER"
-  sectionTitle: "Bernese Mountain Dogs, usually with signs"
+  chapter: NER
+  sectionTitle: Bernese Mountain Dogs, usually with signs
   pdfPage: 1267
+diagnosticAlgorithm:
+  title: 脊髓空洞症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估頸部搔抓及疼痛行為
+      findings:
+        - 幻影搔抓（不碰觸皮膚的搔抓動作）
+        - 頸部或肩部疼痛
+        - 夜間啼叫
+        - 騎士查理士王小獵犬好發
+    - step: 2
+      action: 神經學檢查
+      details: 評估感覺異常分佈
+      findings:
+        - 頸部過敏
+        - 觸覺異常
+        - 漸進性步態異常
+        - 脊髓反射評估
+    - step: 3
+      action: MRI脊髓
+      details: 確認脊髓空洞與Chiari畸形
+      findings:
+        - 脊髓內空洞（T2高信號）
+        - 小腦扁桃體疝出（Chiari樣畸形）
+        - 後顱窩擁擠
+        - 空洞範圍評估
+    - step: 4
+      action: 治療方案評估
+      details: 藥物或手術治療計畫
+      findings:
+        - 藥物疼痛管理（Gabapentin）
+        - 減少CSF生成（Omeprazole）
+        - 後顱窩減壓手術評估
+        - 長期追蹤MRI
+clinicalPearls:
+  - Cavalier King Charles Spaniel是「代表品種」
+  - 幻搔是高度特異性徵象
+  - MRI是唯一可靠診斷方法
+  - 「有SM」不等於「有症狀」- 許多為亞臨床
+  - 胸背帶取代項圈非常重要
+  - 遺傳篩檢和負責任繁殖可減少發病率
+monitoringItems:
+  - 疼痛評估量表
+  - 神經功能
+  - 藥物副作用
+  - 生活品質
+  - 追蹤MRI（手術後或進行性惡化）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: cachexia-muscle-wasting
+    frequency: rare
+ddxSource: book

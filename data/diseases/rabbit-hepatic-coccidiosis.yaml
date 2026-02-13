@@ -3,20 +3,22 @@ nameEn: Rabbit Hepatic Coccidiosis
 nameZh: 兔肝球蟲症
 bodySystem: hepatic
 description: 由 Eimeria stiedai 引起的兔肝膽管寄生蟲感染，寄生於膽管上皮細胞，導致膽管增生、肝腫大、黃疸。為兔球蟲症中唯一侵犯肝臟的種類，與腸道球蟲症病因不同。
-
 aliases:
-  - { alias: 兔肝臟球蟲病, language: zh }
-  - { alias: 兔膽管球蟲症, language: zh }
-  - { alias: Hepatic Eimeriosis, language: en }
-  - { alias: Biliary Coccidiosis, language: en }
-  - { alias: Eimeria stiedai Infection, language: en }
-
+  - alias: 兔肝臟球蟲病
+    language: zh
+  - alias: 兔膽管球蟲症
+    language: zh
+  - alias: Hepatic Eimeriosis
+    language: en
+  - alias: Biliary Coccidiosis
+    language: en
+  - alias: Eimeria stiedai Infection
+    language: en
 species:
   - speciesCommon: rabbit
     speciesScientific: Oryctolagus cuniculus
     prevalence: common
     notes: E. stiedai 為兔唯一肝臟型球蟲。幼兔感染嚴重度較高。成兔可無症狀帶原。群養環境與寵物店來源兔常見。
-
 etiology:
   categories:
     - name: 寄生蟲性
@@ -32,7 +34,6 @@ etiology:
         - 群養/寵物店/繁殖場環境
         - 環境衛生不佳
         - 免疫抑制
-
 clinicalSigns:
   early:
     - 可能無明顯症狀（亞臨床感染）
@@ -50,23 +51,21 @@ clinicalSigns:
     - 嚴重消瘦
     - 肝衰竭
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 糞便浮游法
-      notes: "檢出 E. stiedai 卵囊（卵囊較大，橢圓形，有明顯卵囊帽 micropyle）。需與腸型球蟲區分"
+      notes: 檢出 E. stiedai 卵囊（卵囊較大，橢圓形，有明顯卵囊帽 micropyle）。需與腸型球蟲區分
     - name: 生化
-      notes: "肝指數升高（ALT、GGT、ALP 顯著升高，膽紅素升高）。白蛋白降低"
+      notes: 肝指數升高（ALT、GGT、ALP 顯著升高，膽紅素升高）。白蛋白降低
   imaging:
     - name: 腹部超音波
-      notes: "肝腫大、膽管擴張增厚、肝實質異常回音。膽管內可見增生性病灶"
+      notes: 肝腫大、膽管擴張增厚、肝實質異常回音。膽管內可見增生性病灶
     - name: 腹部 X 光
-      notes: "肝臟輪廓增大、腹部膨脹"
+      notes: 肝臟輪廓增大、腹部膨脹
   additional:
     - CBC（白血球可能升高、嗜酸性球增多）
     - 膽汁酸（肝功能評估）
     - 屍檢/細針抽吸（肝臟表面白色結節狀膽管增生為特徵性病灶）
-
 treatment:
   principles:
     - 抗球蟲藥物治療
@@ -74,46 +73,96 @@ treatment:
     - 嚴重肝衰竭預後不良
     - 環境衛生管理預防
   general:
-    - "Toltrazuril 25 mg/kg PO 單次給藥，7 天後重複（首選）"
-    - "替代方案：Sulfadimethoxine 50 mg/kg PO 首日，後 25 mg/kg PO SID × 14-21 天"
-    - "替代方案：Trimethoprim-Sulfa 30 mg/kg PO BID × 14 天"
-    - "肝臟支持：S-Adenosylmethionine (SAMe) 20 mg/kg PO SID（肝保護劑）"
-    - "皮下輸液支持：50-100 mL/kg/day SC"
-    - "強制灌食（厭食兔）：Critical Care 15-20 mL/kg q6-8h"
-    - "止痛：Meloxicam 0.3-0.5 mg/kg PO SID（肝功能不佳時謹慎使用）"
-    - "環境管理：每日清除糞便、蒸汽消毒"
-    - "新進兔隔離並糞便檢查"
-
+    - Toltrazuril 25 mg/kg PO 單次給藥，7 天後重複（首選）
+    - 替代方案：Sulfadimethoxine 50 mg/kg PO 首日，後 25 mg/kg PO SID × 14-21 天
+    - 替代方案：Trimethoprim-Sulfa 30 mg/kg PO BID × 14 天
+    - 肝臟支持：S-Adenosylmethionine (SAMe) 20 mg/kg PO SID（肝保護劑）
+    - 皮下輸液支持：50-100 mL/kg/day SC
+    - 強制灌食（厭食兔）：Critical Care 15-20 mL/kg q6-8h
+    - 止痛：Meloxicam 0.3-0.5 mg/kg PO SID（肝功能不佳時謹慎使用）
+    - 環境管理：每日清除糞便、蒸汽消毒
+    - 新進兔隔離並糞便檢查
 prognosis: 輕至中度感染經治療預後良好，肝臟可部分再生修復。嚴重肝衰竭（黃疸、腹水）預後不良。幼兔急性大量感染死亡率高。成兔慢性低度感染多可控制。預防（環境衛生）遠優於治療。
-
 guidelineRefs:
   - sourceOrg: Veterinary Parasitology
     title: Hepatic coccidiosis in rabbits (Eimeria stiedai)
     url: https://pubmed.ncbi.nlm.nih.gov/21889265/
     type: review
-    pmid: "21889265"
+    pmid: '21889265'
   - sourceOrg: Journal of Comparative Pathology
     title: Pathology of hepatic coccidiosis in rabbits
     url: https://pubmed.ncbi.nlm.nih.gov/6886654/
     type: review
-    pmid: "6886654"
+    pmid: '6886654'
   - sourceOrg: Veterinary sciences
-    title: "Hepatic Coccidiosis in Wild Rabbits in Greece: Parasite Detection on Liver Imprints and the Associated Biochemical Profile."
+    title: >-
+      Hepatic Coccidiosis in Wild Rabbits in Greece: Parasite Detection on Liver Imprints and the Associated Biochemical
+      Profile.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10143969/
     type: research
-    pmid: "37104403"
+    pmid: '37104403'
     relevance: supporting
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: Protective Effect of Litchi chinensis Peel Extract-Prepared Nanoparticles on Rabbits Experimentally Infected with Eimeria stiedae.
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Protective Effect of Litchi chinensis Peel Extract-Prepared Nanoparticles on Rabbits Experimentally Infected with
+      Eimeria stiedae.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9686865/
     type: research
-    pmid: "36428326"
+    pmid: '36428326'
     relevance: supporting
 pubmedQueries:
   - query: '"Eimeria stiedai" AND rabbit AND ("hepatic" OR "liver" OR "treatment")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "INFECTION"
+  chapter: DIG
+  sectionTitle: INFECTION
   pdfPage: 525
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔肝球蟲症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - abdominal-distension 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便浮游法
+          notes: 檢出 E. stiedai 卵囊（卵囊較大，橢圓形，有明顯卵囊帽 micropyle）。需與腸型球蟲區分
+        - name: 生化
+          notes: 肝指數升高（ALT、GGT、ALP 顯著升高，膽紅素升高）。白蛋白降低
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC（白血球可能升高、嗜酸性球增多）
+        - 膽汁酸（肝功能評估）
+        - 屍檢/細針抽吸（肝臟表面白色結節狀膽管增生為特徵性病灶）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 抗球蟲藥物治療
+        - 支持性療法（肝臟保護、營養）
+        - 嚴重肝衰竭預後不良
+ddxSource: auto-generated

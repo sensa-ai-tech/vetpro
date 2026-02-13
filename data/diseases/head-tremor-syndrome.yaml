@@ -3,11 +3,11 @@ nameEn: Head Tremor Syndrome
 nameZh: Head Tremor Syndrome
 bodySystem: neurology
 description: 不自主的節律性肌肉收縮,可能為原發性或繼發於其他神經疾病。需鑑別診斷確定病因,部分類型對抗癲癇藥物有反應。
-
 aliases:
-  - { alias: Head Tremor Syndrome, language: zh }
-  - { alias: Head Tremor Syndrome, language: en }
-
+  - alias: Head Tremor Syndrome
+    language: zh
+  - alias: Head Tremor Syndrome
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 神經元異常放電
       examples:
         - 髓鞘或軸突病變
         - 腦血管疾病
-
 clinicalSigns:
   early:
     - 神經功能輕度異常
@@ -32,25 +30,74 @@ clinicalSigns:
   progressive:
     - 神經缺損加重
     - 癱瘓或意識障礙
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: MRI或CT
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 抗癲癇藥物(Phenobarbital 2-3 mg/kg PO q12h)
     - 支持性治療
-
 prognosis:
-  general: "預後取決於根本病因與治療反應。早期診斷與適當治療可改善預後。"
-
+  general: 預後取決於根本病因與治療反應。早期診斷與適當治療可改善預後。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
+diagnosticAlgorithm:
+  title: 特發性全身性震顫症候群 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估全身性震顫特徵，曾稱白色搖搖犬症候群
+      findings:
+        - 全身性細微至粗大震顫
+        - 任何品種和毛色均可發病
+        - 通常1-3歲發病
+        - 休息時震顫減輕，活動時加重
+    - step: 2
+      action: 實驗室檢查
+      details: 排除代謝性和感染性原因
+      findings:
+        - 全血計數和生化正常
+        - 甲狀腺功能正常
+        - 感染篩檢陰性
+        - 毒物篩檢陰性
+    - step: 3
+      action: 進階神經學評估
+      details: 排除結構性中樞神經系統疾病
+      findings:
+        - MRI通常正常
+        - CSF可能見輕度單核球增多
+        - 排除小腦病變
+        - 排除腦炎
+    - step: 4
+      action: 治療性確診
+      details: 免疫抑制治療反應支持診斷
+      findings:
+        - 皮質類固醇治療後快速改善
+        - 通常1-3天內震顫明顯減輕
+        - 減藥可能復發
+        - 排除性診斷確認
+clinicalPearls:
+  - 雖然名為「白色犬震顫症」，但任何毛色犬均可發病 — 不要因為犬隻不是白色就排除此診斷
+  - 對類固醇的快速反應（3-5 天內）本身具有重要的診斷價值
+  - 與除蟲菊精中毒的主要鑑別：震顫症候群意識清醒且無跳蚤產品接觸史
+  - 初次發作時建議做腦脊髓液分析排除感染性腦炎，復發時通常不需要重複
+monitoringItems:
+  - 開始治療後每週評估震顫嚴重程度
+  - 類固醇治療期間監測副作用（多飲多尿、體重增加）
+  - 減量期間密切觀察震顫是否復發
+  - 停藥後追蹤 3-6 個月確認無復發
+associatedSymptoms:
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+ddxSource: book

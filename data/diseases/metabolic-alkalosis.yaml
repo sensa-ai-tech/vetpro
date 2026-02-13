@@ -3,12 +3,13 @@ nameEn: Metabolic Alkalosis
 nameZh: 代謝性鹼中毒
 bodySystem: metabolic
 description: 血液 pH 升高伴隨碳酸氫根（HCO3-）濃度增加的酸鹼失衡。獸醫最常見於上消化道阻塞（幽門梗阻導致大量鹽酸流失）及利尿劑使用後，需糾正潛在病因並補充氯離子以恢復酸鹼平衡。
-
 aliases:
-  - { alias: 代謝性鹼血症, language: zh }
-  - { alias: Metabolic Alkalaemia, language: en }
-  - { alias: Hypochloremic Alkalosis, language: en }
-
+  - alias: 代謝性鹼血症
+    language: zh
+  - alias: Metabolic Alkalaemia
+    language: en
+  - alias: Hypochloremic Alkalosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓可見於持續性嘔吐或利尿劑過量使用。貓尿道阻塞解除後大量利尿亦可導致。
-
 etiology:
   categories:
     - name: 鹽酸流失（最常見）
@@ -28,7 +28,6 @@ etiology:
         - 利尿劑使用（呋塞米→氯離子流失）
         - 低氯血症維持鹼中毒
         - Cushing 病（礦物皮質酮效應）
-
 clinicalSigns:
   early:
     - 反覆嘔吐（若為胃排空障礙）
@@ -40,14 +39,12 @@ clinicalSigns:
     - 低鉀血症症狀（心律不整）
     - 低通氣（呼吸代償）
     - 意識改變
-
 diagnosis:
   primaryTests:
     - name: 動脈或靜脈血氣分析
       notes: pH >7.45，HCO3- 升高。呼吸代償使 PaCO2 輕度升高。
     - name: 電解質
       notes: 典型表現為低氯、低鉀。血清氯 <100 mEq/L。尿液氯 <20 mEq/L 提示氯離子反應性鹼中毒。
-
 treatment:
   principles:
     - 治療潛在病因（解除梗阻、停止利尿劑）
@@ -60,36 +57,76 @@ treatment:
     - 外科解除上消化道梗阻
     - 持續監測血氣與電解質
     - 極嚴重時（pH >7.6）：0.1N HCl 經中央靜脈緩慢輸注
-
 prognosis: 氯離子反應性代謝性鹼中毒（最常見類型）經適當輸液與病因治療後預後良好。幽門梗阻術後矯正後多數快速恢復。氯離子抵抗性鹼中毒（如 Cushing 病）較難處理。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
     title: Intravenous and Oral Fluid Therapy in Neonatal Calves With Diarrhea or Sepsis and in Adult Cattle.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7873366/
     type: review
-    pmid: "33585594"
-  - sourceOrg: "Nephrology, dialysis, transplantation : official publication of the European Dialysis and Transplant Association - European Renal Association"
+    pmid: '33585594'
+  - sourceOrg: >-
+      Nephrology, dialysis, transplantation : official publication of the European Dialysis and Transplant Association -
+      European Renal Association
     title: Mutations in transcription factor CP2-like 1 may cause a novel syndrome with distal renal tubulopathy in humans.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7834595/
     type: case-report
-    pmid: "33097957"
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
+    pmid: '33097957'
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
     title: Retrospective Evaluation of the Prevalence and Prognosis of Hypochloremia in Dogs and Cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12779177/
     type: research
-    pmid: "41259353"
-  - sourceOrg: "Nephrology, dialysis, transplantation : official publication of the European Dialysis and Transplant Association - European Renal Association"
+    pmid: '41259353'
+  - sourceOrg: >-
+      Nephrology, dialysis, transplantation : official publication of the European Dialysis and Transplant Association -
+      European Renal Association
     title: Chronic kidney disease increases the susceptibility to negative effects of low and high potassium intake.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11045281/
     type: research
-    pmid: "37813819"
+    pmid: '37813819'
   - sourceOrg: Critical care (London, England)
-    title: "36th International Symposium on Intensive Care and Emergency Medicine : Brussels, Belgium. 15-18 March 2016."
+    title: '36th International Symposium on Intensive Care and Emergency Medicine : Brussels, Belgium. 15-18 March 2016.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5493079/
     type: research
-    pmid: "27885969"
+    pmid: '27885969'
 pubmedQueries:
   - query: '"Metabolic Alkalosis" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+diagnosticAlgorithm:
+  title: 代謝性鹼中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - coma-stupor 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 動脈或靜脈血氣分析
+          notes: pH >7.45，HCO3- 升高。呼吸代償使 PaCO2 輕度升高。
+        - name: 電解質
+          notes: 典型表現為低氯、低鉀。血清氯 <100 mEq/L。尿液氯 <20 mEq/L 提示氯離子反應性鹼中毒。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療潛在病因（解除梗阻、停止利尿劑）
+        - 補充氯離子（0.9% NaCl 為首選輸液）
+        - 同時糾正低鉀血症
+ddxSource: auto-generated

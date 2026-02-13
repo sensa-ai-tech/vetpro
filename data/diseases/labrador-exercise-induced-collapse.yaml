@@ -3,19 +3,21 @@ nameEn: Labrador Exercise Induced Collapse
 nameZh: 拉布拉多運動誘發虛脫
 bodySystem: neurology
 description: 運動誘發虛脫（EIC）是拉布拉多犬特有的遺傳性神經肌肉疾病，由 DNM1 基因突變引起。劇烈運動 5-15 分鐘後出現後肢無力、搖擺與虛脫，休息後可恢復。高度興奮狀態下發作風險增加。
-
 aliases:
-  - { alias: 拉布拉多 EIC, language: zh }
-  - { alias: 運動性虛脫, language: zh }
-  - { alias: Labrador EIC, language: en }
-  - { alias: Exercise induced collapse, language: en }
-  - { alias: DNM1 mutation, language: en }
-
+  - alias: 拉布拉多 EIC
+    language: zh
+  - alias: 運動性虛脫
+    language: zh
+  - alias: Labrador EIC
+    language: en
+  - alias: Exercise induced collapse
+    language: en
+  - alias: DNM1 mutation
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
     notes: 拉布拉多為主要好發品種。DNM1 基因突變攜帶率在工作犬系約 30-40%。純合子突變（E/E）才會發病。通常 5 月齡至 3 歲間首次發作。
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -30,7 +32,6 @@ etiology:
         - 高度興奮狀態
         - 高溫環境
         - 訓練或比賽情境
-
 clinicalSigns:
   early:
     - 劇烈運動後後肢步態搖擺
@@ -44,7 +45,6 @@ clinicalSigns:
     - 體溫升高（>41°C 極端情況）
     - 休息 10-30 分鐘後恢復正常
     - 極少數嚴重過熱致死
-
 diagnosis:
   primaryTests:
     - name: DNM1 基因檢測
@@ -53,7 +53,6 @@ diagnosis:
       notes: 典型病史為劇烈運動後後肢虛脫，休息後完全恢復。非疼痛性
     - name: 排除性診斷
       notes: 排除心臟疾病、低血糖、重症肌無力等其他運動不耐受原因
-
 treatment:
   principles:
     - 無特效藥物治療
@@ -68,9 +67,44 @@ treatment:
     - 嚴重過熱時緊急降溫處理
     - 基因篩選避免繁殖出受影響犬
     - 受影響犬仍可進行溫和運動
-
 prognosis: 預後良好。EIC 本身不影響壽命。多數犬在避免劇烈運動後可正常生活。極少數嚴重過熱個案可致命。透過運動管理可有效預防發作。工作犬/競賽犬可能需退役，但作為寵物犬可維持良好生活品質。
-
 pubmedQueries:
   - query: '"Labrador" AND ("exercise induced collapse" OR "EIC" OR "DNM1") AND (management OR diagnosis)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 拉布拉多運動誘發虛脫 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - hyperthermia 相關症狀
+        - paresis-paralysis 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: DNM1 基因檢測
+          notes: DNA 基因型分析。E/E 純合子為受影響犬。E/N 為攜帶者
+        - name: 臨床病史
+          notes: 典型病史為劇烈運動後後肢虛脫，休息後完全恢復。非疼痛性
+        - name: 排除性診斷
+          notes: 排除心臟疾病、低血糖、重症肌無力等其他運動不耐受原因
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 無特效藥物治療
+        - 避免誘發因素
+        - 運動限制與管理
+ddxSource: auto-generated

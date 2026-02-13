@@ -3,21 +3,24 @@ nameEn: Rabbit Cecal Dysbiosis
 nameZh: 兔盲腸菌相失調
 bodySystem: gastrointestinal
 description: 兔盲腸內正常微生物菌群失衡，導致產氣梭菌等有害菌過度增殖，產生毒素與氣體。常因高碳水化合物/低纖維飲食或不當使用抗生素引起，可快速進展為致命性腸毒血症。
-
 aliases:
-  - { alias: 兔盲腸菌群失衡, language: zh }
-  - { alias: 兔腸道菌群紊亂, language: zh }
-  - { alias: 兔抗生素相關腸炎, language: zh }
-  - { alias: Cecal Dysbiosis, language: en }
-  - { alias: Antibiotic-Associated Enteritis, language: en }
-  - { alias: Enterotoxemia, language: en }
-
+  - alias: 兔盲腸菌群失衡
+    language: zh
+  - alias: 兔腸道菌群紊亂
+    language: zh
+  - alias: 兔抗生素相關腸炎
+    language: zh
+  - alias: Cecal Dysbiosis
+    language: en
+  - alias: Antibiotic-Associated Enteritis
+    language: en
+  - alias: Enterotoxemia
+    language: en
 species:
   - speciesCommon: rabbit
     speciesScientific: Oryctolagus cuniculus
     prevalence: common
     notes: 兔盲腸佔腹腔 40%，為主要發酵器官。兔腸道菌群極度敏感，不當抗生素使用或飲食改變可致命。口服 Penicillin 類、Lincomycin、Clindamycin、Erythromycin 為已知禁忌。
-
 etiology:
   categories:
     - name: 飲食因素
@@ -37,7 +40,6 @@ etiology:
         - 緊迫（手術後、環境變化）
         - GI stasis（蠕動減慢→盲腸滯留→pH 改變）
         - 幼兔斷奶期菌群轉換
-
 clinicalSigns:
   early:
     - 軟便或黏液便
@@ -55,23 +57,21 @@ clinicalSigns:
     - 休克（低體溫、黏膜蒼白）
     - DIC
     - 急性死亡（可在 24-48 小時內）
-
 diagnosis:
   primaryTests:
     - name: 病史
-      notes: "近期抗生素使用史或飲食變更為重要線索。詢問具體使用何種抗生素、口服/注射"
+      notes: 近期抗生素使用史或飲食變更為重要線索。詢問具體使用何種抗生素、口服/注射
     - name: 臨床表現
-      notes: "急性腹瀉、腹脹結合抗生素使用史或飲食異常高度提示診斷"
+      notes: 急性腹瀉、腹脹結合抗生素使用史或飲食異常高度提示診斷
   imaging:
     - name: 腹部 X 光
-      notes: "盲腸嚴重脹氣。腸道液體積聚"
+      notes: 盲腸嚴重脹氣。腸道液體積聚
   additional:
     - 糞便直接抹片（Gram stain——Gram 陽性大桿菌 Clostridium 過度增殖）
     - 糞便 Clostridium 毒素檢測（可能）
     - CBC / 生化（白血球減少為嚴重預後指標）
     - 血液氣體（代謝性酸中毒）
     - 糞便培養（Clostridium spp.）
-
 treatment:
   principles:
     - 立即停止致病抗生素
@@ -79,56 +79,107 @@ treatment:
     - 積極支持性治療
     - 嚴重腸毒血症預後極差
   general:
-    - "立即停用致病抗生素（口服 Penicillin 類等）"
-    - "Cholestyramine 2 g/20 mL water PO q8h（結合 Clostridium 毒素）"
-    - "Metronidazole 20 mg/kg PO BID × 5-7 天（抗 Clostridium）"
-    - "積極輸液：皮下或靜脈 LRS 100 mL/kg/day"
-    - "止痛：Meloxicam 0.3-0.5 mg/kg SC SID"
-    - "消脹氣：Simethicone 65-130 mg/rabbit PO q1h × 3 doses"
-    - "促蠕動（排除阻塞後）：Metoclopramide 0.5 mg/kg SC q6-8h"
-    - "強制灌食高纖食物：Critical Care 15-20 mL/kg q6-8h"
-    - "提供無限乾草（恢復攝食後）"
-    - "盲腸便移植（將健康兔盲腸便混水灌食——非常規但有案例報告）"
-    - "預防：永遠不要給兔口服 Penicillin 類抗生素！"
-
-emergencyNotes: 抗生素相關腸毒血症為急症。立即停藥、毒素結合、輸液。嚴重休克與白血球減少預後極差。兔禁用口服 Penicillin、Amoxicillin、Ampicillin、Lincomycin、Clindamycin、Erythromycin。注射 Penicillin 是安全的。
-
+    - 立即停用致病抗生素（口服 Penicillin 類等）
+    - Cholestyramine 2 g/20 mL water PO q8h（結合 Clostridium 毒素）
+    - Metronidazole 20 mg/kg PO BID × 5-7 天（抗 Clostridium）
+    - 積極輸液：皮下或靜脈 LRS 100 mL/kg/day
+    - 止痛：Meloxicam 0.3-0.5 mg/kg SC SID
+    - 消脹氣：Simethicone 65-130 mg/rabbit PO q1h × 3 doses
+    - 促蠕動（排除阻塞後）：Metoclopramide 0.5 mg/kg SC q6-8h
+    - 強制灌食高纖食物：Critical Care 15-20 mL/kg q6-8h
+    - 提供無限乾草（恢復攝食後）
+    - 盲腸便移植（將健康兔盲腸便混水灌食——非常規但有案例報告）
+    - 預防：永遠不要給兔口服 Penicillin 類抗生素！
+emergencyNotes: >-
+  抗生素相關腸毒血症為急症。立即停藥、毒素結合、輸液。嚴重休克與白血球減少預後極差。兔禁用口服
+  Penicillin、Amoxicillin、Ampicillin、Lincomycin、Clindamycin、Erythromycin。注射 Penicillin 是安全的。
 prognosis: 輕度菌群失衡（軟便、盲腸便異常）經飲食調整預後良好。嚴重腸毒血症（Clostridium 過度增殖、休克）預後極差，死亡率高。醫源性（抗生素導致）可完全預防——獸醫師對兔安全抗生素的認知至關重要。
-
 guidelineRefs:
   - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
     title: Gastrointestinal diseases of rabbits
     url: https://pubmed.ncbi.nlm.nih.gov/24157570/
     type: review
-    pmid: "24157570"
+    pmid: '24157570'
   - sourceOrg: Journal of Exotic Pet Medicine
     title: Antibiotic use in rabbits
     url: https://pubmed.ncbi.nlm.nih.gov/25015871/
     type: review
-    pmid: "25015871"
+    pmid: '25015871'
   - sourceOrg: Toxicology communications
-    title: Alterations in the cecal microbiome of New Zealand White rabbits due to the long-acting anticoagulant rodenticide brodifacoum.
+    title: >-
+      Alterations in the cecal microbiome of New Zealand White rabbits due to the long-acting anticoagulant rodenticide
+      brodifacoum.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12121942/
     type: research
-    pmid: "40452652"
+    pmid: '40452652'
     relevance: supporting
   - sourceOrg: Frontiers in veterinary science
-    title: "Digestive problems in rabbit production: moving in the wrong direction?"
+    title: 'Digestive problems in rabbit production: moving in the wrong direction?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10879550/
     type: research
-    pmid: "38384954"
+    pmid: '38384954'
     relevance: supporting
   - sourceOrg: Scientific reports
-    title: Carvacrol attenuated lipopolysaccharide-induced intestinal injury by down-regulating TLRs gene expression and regulating the gut microbiota in rabbit.
+    title: >-
+      Carvacrol attenuated lipopolysaccharide-induced intestinal injury by down-regulating TLRs gene expression and
+      regulating the gut microbiota in rabbit.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10349838/
     type: research
-    pmid: "37454126"
+    pmid: '37454126'
     relevance: supporting
 pubmedQueries:
   - query: '"cecal dysbiosis" OR "enterotoxemia" AND rabbit AND ("Clostridium" OR "antibiotic")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "EXL"
-  sectionTitle: "Enterotoxemia: Enterotoxemia is a"
+  chapter: EXL
+  sectionTitle: 'Enterotoxemia: Enterotoxemia is a'
   pdfPage: 1988
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔盲腸菌相失調 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - diarrhoea 相關症狀
+        - abdominal-pain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史
+          notes: 近期抗生素使用史或飲食變更為重要線索。詢問具體使用何種抗生素、口服/注射
+        - name: 臨床表現
+          notes: 急性腹瀉、腹脹結合抗生素使用史或飲食異常高度提示診斷
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 糞便直接抹片（Gram stain——Gram 陽性大桿菌 Clostridium 過度增殖）
+        - 糞便 Clostridium 毒素檢測（可能）
+        - CBC / 生化（白血球減少為嚴重預後指標）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 立即停止致病抗生素
+        - 恢復盲腸正常菌群
+        - 積極支持性治療
+ddxSource: auto-generated

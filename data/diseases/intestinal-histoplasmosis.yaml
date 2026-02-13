@@ -3,11 +3,11 @@ nameEn: Intestinal Histoplasmosis
 nameZh: 腸道組織胞漿菌病
 bodySystem: gastrointestinal
 description: Histoplasma capsulatum 感染腸道,導致肉芽腫性腸炎。常見於美國中西部及河谷地區,可能為全身性感染一部分。
-
 aliases:
-  - { alias: 腸道組織胞漿病, language: zh }
-  - { alias: GI Histoplasmosis, language: en }
-
+  - alias: 腸道組織胞漿病
+    language: zh
+  - alias: GI Histoplasmosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,13 +17,11 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較常見全身性感染
-
 etiology:
   categories:
     - name: 真菌感染
       examples:
         - Histoplasma capsulatum
-
 clinicalSigns:
   early:
     - 慢性腹瀉 (常帶血)
@@ -33,30 +31,56 @@ clinicalSigns:
     - 低蛋白血症
     - 腹水
     - 淋巴結腫大
-
 diagnosis:
   primaryTests:
     - name: 直腸刮取物細胞學
-      notes: "巨噬細胞內見酵母菌"
+      notes: 巨噬細胞內見酵母菌
     - name: 組織病理學
-      notes: "肉芽腫性炎症、GMS 染色見酵母菌"
+      notes: 肉芽腫性炎症、GMS 染色見酵母菌
     - name: Histoplasma 抗原測試
-      notes: "尿液或血清"
+      notes: 尿液或血清
     - name: 胸腹部 X 光
-      notes: "評估全身性感染"
+      notes: 評估全身性感染
   differentialDiagnoses:
     - 發炎性腸病
     - 腸道淋巴瘤
     - 蛋白流失性腸病變
-
 treatment:
   medical:
     - Itraconazole 5-10 mg/kg PO q12-24h (4-6 個月)
     - 支持性照護 (補液、營養)
     - 低蛋白血症管理
-
 prognosis:
-  general: "預後謹慎;早期診斷及治療預後較佳;全身性感染預後不良"
-
+  general: 預後謹慎;早期診斷及治療預後較佳;全身性感染預後不良
 prevention:
   - 避免接觸污染土壤 (鳥糞、蝙蝠糞)
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: uncommon
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 腸道組織胞漿菌病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - weight-loss 相關症狀
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 直腸刮取物細胞學
+          notes: 巨噬細胞內見酵母菌
+        - name: 組織病理學
+          notes: 肉芽腫性炎症、GMS 染色見酵母菌
+        - name: Histoplasma 抗原測試
+          notes: 尿液或血清
+ddxSource: auto-generated

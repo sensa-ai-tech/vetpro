@@ -3,13 +3,15 @@ nameEn: Panuveitis
 nameZh: 全葡萄膜炎
 bodySystem: ophthalmology
 description: 虹膜、睫狀體與脈絡膜同時發炎的嚴重眼內炎症。代表前後葡萄膜均受累，通常與嚴重全身性疾病相關。若不及時治療可導致續發性青光眼、白內障、視網膜剝離與永久失明。
-
 aliases:
-  - { alias: Diffuse Uveitis, language: en }
-  - { alias: Endophthalmitis, language: en }
-  - { alias: 泛葡萄膜炎, language: zh }
-  - { alias: 全眼葡萄膜炎, language: zh }
-
+  - alias: Diffuse Uveitis
+    language: en
+  - alias: Endophthalmitis
+    language: en
+  - alias: 泛葡萄膜炎
+    language: zh
+  - alias: 全眼葡萄膜炎
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓常見原因為 FIP (經典表現)、FeLV 相關淋巴瘤、Toxoplasmosis。
-
 etiology:
   categories:
     - name: 感染性
@@ -34,7 +35,6 @@ etiology:
       examples:
         - 眼內淋巴瘤
         - 組織球性肉瘤
-
 clinicalSigns:
   early:
     - 眼睛疼痛 (blepharospasm)
@@ -46,7 +46,6 @@ clinicalSigns:
     - 前房積膿 (hypopyon) 或積血 (hyphema)
     - 視力喪失
     - 眼壓改變 (初期低後期可能升高)
-
 diagnosis:
   primaryTests:
     - name: 完整眼科檢查
@@ -55,7 +54,6 @@ diagnosis:
       notes: 初期可能低眼壓；慢性可發展為續發性青光眼
     - name: 全身性疾病篩檢
       notes: CBC/生化、感染性疾病篩檢 (黴菌、蜱傳、FIP/FeLV/FIV)、胸腹腔影像
-
 treatment:
   principles:
     - 積極治療根本原因
@@ -67,36 +65,76 @@ treatment:
     - Atropine 散瞳防止後粘連
     - 全身性 NSAIDs 或類固醇
     - 密集追蹤眼壓
-
 prognosis: 預後謹慎至不良。FIP 相關者預後極差。全身性黴菌感染積極治療後部分可保留視力。VKH-like 症候群需終生免疫抑制。早期積極治療是保留視力的關鍵。
-
-
 guidelineRefs:
   - sourceOrg: Veterinarni medicina
-    title: "Uveodermatological syndrome in&#xa0;dogs: A&#xa0;review of&#xa0;diagnosis, management, and ophthalmic patient needs."
+    title: >-
+      Uveodermatological syndrome in&#xa0;dogs: A&#xa0;review of&#xa0;diagnosis, management, and ophthalmic patient
+      needs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12327478/
     type: review
-    pmid: "40778262"
+    pmid: '40778262'
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Treatment With Remdesivir Alone or in Combination With GS-441524 in Cats With Ocular Involvement of Feline Infectious Peritonitis: An Observational Case Series."
+    title: >-
+      Treatment With Remdesivir Alone or in Combination With GS-441524 in Cats With Ocular Involvement of Feline
+      Infectious Peritonitis: An Observational Case Series.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12489177/
     type: research
-    pmid: "41035288"
+    pmid: '41035288'
   - sourceOrg: Equine veterinary journal
-    title: "Equine uveitis: Outcome and adverse effects after one or two intravitreal low-dose gentamicin injections."
+    title: 'Equine uveitis: Outcome and adverse effects after one or two intravitreal low-dose gentamicin injections.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11616955/
     type: research
-    pmid: "38329024"
-  - sourceOrg: "Journal of controlled release : official journal of the Controlled Release Society"
-    title: Controlled release of corticosteroid with biodegradable nanoparticles for treating experimental autoimmune uveitis.
+    pmid: '38329024'
+  - sourceOrg: 'Journal of controlled release : official journal of the Controlled Release Society'
+    title: >-
+      Controlled release of corticosteroid with biodegradable nanoparticles for treating experimental autoimmune
+      uveitis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6476551/
     type: research
-    pmid: "30660629"
+    pmid: '30660629'
   - sourceOrg: BMC veterinary research
-    title: Laboratory investigation into the role of largemouth bass virus (Ranavirus, Iridoviridae) in smallmouth bass mortality events in Pennsylvania rivers.
+    title: >-
+      Laboratory investigation into the role of largemouth bass virus (Ranavirus, Iridoviridae) in smallmouth bass
+      mortality events in Pennsylvania rivers.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5834888/
     type: research
-    pmid: "29499725"
+    pmid: '29499725'
 pubmedQueries:
   - query: '"panuveitis" AND (veterinary OR canine OR feline) AND ("treatment" OR "etiology")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: blindness
+    frequency: uncommon
+  - symptomId: red-eye
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 全葡萄膜炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - blindness 相關症狀
+        - red-eye 相關症狀
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 完整眼科檢查
+          notes: 前房反應 (flare、cells)、虹膜充血、前後粘連。眼底脈絡膜炎灶
+        - name: 眼壓測量
+          notes: 初期可能低眼壓；慢性可發展為續發性青光眼
+        - name: 全身性疾病篩檢
+          notes: CBC/生化、感染性疾病篩檢 (黴菌、蜱傳、FIP/FeLV/FIV)、胸腹腔影像
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 積極治療根本原因
+        - 強力抗炎治療
+        - 預防續發性併發症
+ddxSource: auto-generated

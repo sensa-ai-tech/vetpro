@@ -3,13 +3,15 @@ nameEn: Ectopic Ureter Congenital
 nameZh: 先天性異位輸尿管
 bodySystem: urinary
 description: 先天性異位輸尿管是輸尿管開口位於膀胱三角區以外的先天畸形，導致尿液繞過正常膀胱括約肌控制而產生持續性尿失禁。雌犬較常見，黃金獵犬與拉布拉多犬為高風險品種。
-
 aliases:
-  - { alias: 異位輸尿管, language: zh }
-  - { alias: 輸尿管異位開口, language: zh }
-  - { alias: Ectopic ureter, language: en }
-  - { alias: Ureteral ectopia, language: en }
-
+  - alias: 異位輸尿管
+    language: zh
+  - alias: 輸尿管異位開口
+    language: zh
+  - alias: Ectopic ureter
+    language: en
+  - alias: Ureteral ectopia
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓較少見但有報告。
-
 etiology:
   categories:
     - name: 先天發育異常
@@ -26,7 +27,6 @@ etiology:
         - 輸尿管開口於尿道或陰道
         - 可為單側或雙側
         - 分為壁內型與壁外型
-
 clinicalSigns:
   early:
     - 幼犬開始持續性滴尿（尿失禁）
@@ -37,7 +37,6 @@ clinicalSigns:
     - 反覆泌尿道感染
     - 會陰皮膚慢性發炎
     - 腎盂積水（輸尿管阻塞時）
-
 diagnosis:
   primaryTests:
     - name: CT 泌尿道攝影
@@ -46,7 +45,6 @@ diagnosis:
       notes: 直接觀察輸尿管開口位置。可同時進行雷射燒灼治療
     - name: 超音波
       notes: 腎臟與輸尿管評估。腎盂擴張。輸尿管擴張追蹤
-
 treatment:
   principles:
     - 手術或雷射矯正為根治
@@ -60,26 +58,56 @@ treatment:
     - 殘餘尿失禁者：Phenylpropanolamine 增加尿道括約肌張力
     - 定期尿液培養監測
     - 腎功能追蹤
-
 prognosis: 手術或雷射治療後約 50-75% 達完全尿失禁控制。約 30-50% 術後仍有不同程度的殘餘尿失禁（括約肌功能不全）。藥物輔助可改善殘餘尿失禁。雌犬預後較雄犬差。早期診斷治療有助改善預後。
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
-    title: Retrospective analysis of diagnoses and outcomes of 45 cats with micturition disorders presenting as urinary incontinence.
+    title: >-
+      Retrospective analysis of diagnoses and outcomes of 45 cats with micturition disorders presenting as urinary
+      incontinence.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6979103/
     type: research
-    pmid: "31859391"
+    pmid: '31859391'
   - sourceOrg: DNA and cell biology
     title: Gen1 Modulates Metanephric Morphology Through Retinoic Acid Signaling.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6909741/
     type: research
-    pmid: "30632787"
+    pmid: '30632787'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Treatment of congenital distal ureteral orifice stenosis by endoscopic laser ablation in dogs: 16 cases (2010-2014)."
+    title: >-
+      Treatment of congenital distal ureteral orifice stenosis by endoscopic laser ablation in dogs: 16 cases
+      (2010-2014).
     url: https://pubmed.ncbi.nlm.nih.gov/30058968/
     type: research
-    pmid: "30058968"
+    pmid: '30058968'
 pubmedQueries:
   - query: '"ectopic ureter" AND (congenital OR canine OR feline) AND (surgery OR treatment OR laser)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: urinary-incontinence
+    frequency: common
+diagnosticAlgorithm:
+  title: 先天性異位輸尿管 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - urinary-incontinence 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: CT 泌尿道攝影
+          notes: 造影增強 CT 為金標準。精確顯示輸尿管走向與開口位置
+        - name: 膀胱鏡
+          notes: 直接觀察輸尿管開口位置。可同時進行雷射燒灼治療
+        - name: 超音波
+          notes: 腎臟與輸尿管評估。腎盂擴張。輸尿管擴張追蹤
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術或雷射矯正為根治
+        - 新輸尿管植入術或雷射燒灼
+        - 術後可能仍有殘餘尿失禁
+ddxSource: auto-generated

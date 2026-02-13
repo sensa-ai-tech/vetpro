@@ -3,11 +3,11 @@ nameEn: Ascites Differential Diagnosis
 nameZh: 腹水鑑別診斷
 bodySystem: gastrointestinal
 description: 腹腔積液的系統性鑑別診斷,需依積液性質 (滲出液或漏出液) 及原發病因分類。常見原因包含心衰竭、肝病、低蛋白血症及腹膜炎。
-
 aliases:
-  - { alias: 腹水鑑別, language: zh }
-  - { alias: Abdominal Effusion Differential, language: en }
-
+  - alias: 腹水鑑別
+    language: zh
+  - alias: Abdominal Effusion Differential
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 常見原因包含 FIP、心衰竭、腫瘤
-
 etiology:
   categories:
     - name: 純漏出液 (蛋白 < 2.5 g/dL)
@@ -38,7 +37,6 @@ etiology:
     - name: 膽汁性
       examples:
         - 膽囊或膽管破裂
-
 clinicalSigns:
   early:
     - 腹圍增大
@@ -47,30 +45,58 @@ clinicalSigns:
     - 腹部膨脹
     - 呼吸困難
     - 食慾下降
-
 diagnosis:
   primaryTests:
     - name: 腹水穿刺分析
-      notes: "蛋白、細胞計數、細胞學"
+      notes: 蛋白、細胞計數、細胞學
     - name: 血液檢查
-      notes: "白蛋白、球蛋白、肝腎功能"
+      notes: 白蛋白、球蛋白、肝腎功能
     - name: 腹部超音波
-      notes: "評估肝臟、心臟、腫瘤"
+      notes: 評估肝臟、心臟、腫瘤
     - name: 心臟超音波
-      notes: "評估右心功能"
+      notes: 評估右心功能
   differentialDiagnoses:
     - 依積液性質及原發病因分類
-
 treatment:
   medical:
     - 治療原發病因
     - 腹水引流 (症狀性)
     - 利尿劑 (若為心因性或肝因性)
     - 低鈉飲食
-
 prognosis:
-  general: "取決於原發病因;心衰竭或低蛋白血症若能控制預後較佳;FIP 或惡性腫瘤預後不良"
-
+  general: 取決於原發病因;心衰竭或低蛋白血症若能控制預後較佳;FIP 或惡性腫瘤預後不良
 prevention:
   - 早期診斷及治療心臟疾病、肝病
   - 適當營養管理
+associatedSymptoms:
+  - symptomId: weight-gain
+    frequency: common
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 腹水鑑別診斷 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-gain 相關症狀
+        - anorexia 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹水穿刺分析
+          notes: 蛋白、細胞計數、細胞學
+        - name: 血液檢查
+          notes: 白蛋白、球蛋白、肝腎功能
+        - name: 腹部超音波
+          notes: 評估肝臟、心臟、腫瘤
+ddxSource: auto-generated

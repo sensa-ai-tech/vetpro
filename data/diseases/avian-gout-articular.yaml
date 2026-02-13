@@ -3,18 +3,19 @@ nameEn: Avian Gout Articular
 nameZh: 禽類關節型痛風
 bodySystem: metabolic
 description: 禽類關節型痛風為尿酸鈉結晶沉積於關節腔與腱鞘內引起的代謝性疾病，導致關節腫脹疼痛與活動障礙。多因腎功能不全或高蛋白飲食引起高尿酸血症所致。
-
 aliases:
-  - { alias: 鳥類關節痛風, language: zh }
-  - { alias: 禽尿酸鹽關節炎, language: zh }
-  - { alias: Articular gout in birds, language: en }
-  - { alias: Avian urate arthropathy, language: en }
-
+  - alias: 鳥類關節痛風
+    language: zh
+  - alias: 禽尿酸鹽關節炎
+    language: zh
+  - alias: Articular gout in birds
+    language: en
+  - alias: Avian urate arthropathy
+    language: en
 species:
   - speciesCommon: bird
     prevalence: moderate
     notes: 雞尾鸚鵡、虎皮鸚鵡、家禽、猛禽較常見。腎功能不全是主要潛在原因。老年鳥風險增加。高蛋白飲食為可矯正的風險因素。
-
 etiology:
   categories:
     - name: 尿酸代謝異常
@@ -29,7 +30,6 @@ etiology:
         - 飲食蛋白質含量過高
         - 維生素 A 缺乏（影響腎小管功能）
         - 脫水
-
 clinicalSigns:
   early:
     - 單一或多個關節輕度腫脹
@@ -41,21 +41,19 @@ clinicalSigns:
     - 嚴重疼痛、不願站立或行走
     - 食慾下降
     - 消瘦
-
 diagnosis:
   primaryTests:
     - name: 關節穿刺
-      notes: "抽取關節液於偏光顯微鏡下見雙折射針狀尿酸鈉結晶為確診依據"
+      notes: 抽取關節液於偏光顯微鏡下見雙折射針狀尿酸鈉結晶為確診依據
     - name: 血液生化
-      notes: "血清尿酸升高（正常鸚鵡 2-10 mg/dL）。腎功能指標評估"
+      notes: 血清尿酸升高（正常鸚鵡 2-10 mg/dL）。腎功能指標評估
     - name: X光檢查
-      notes: "關節周圍軟組織腫脹，慢性病例可見骨質侵蝕"
+      notes: 關節周圍軟組織腫脹，慢性病例可見骨質侵蝕
   differentialDiagnoses:
     - 感染性關節炎（細菌性）
     - 外傷性關節炎
     - 趾蹠炎（bumblefoot）
     - 腫瘤
-
 treatment:
   medical:
     - 降低飲食蛋白質含量
@@ -66,41 +64,71 @@ treatment:
     - 治療潛在腎病
   surgical:
     - 大型痛風石可手術切除
-
 prognosis:
-  general: "預後謹慎。早期發現並矯正飲食與潛在病因可改善症狀。慢性腎病導致的痛風預後較差。嚴重關節破壞不可逆。"
-
+  general: 預後謹慎。早期發現並矯正飲食與潛在病因可改善症狀。慢性腎病導致的痛風預後較差。嚴重關節破壞不可逆。
 prevention:
   - 避免高蛋白飲食
   - 確保充足飲水
   - 定期監測腎功能
   - 避免腎毒性藥物
   - 適當補充維生素 A
-
-
 guidelineRefs:
   - sourceOrg: Viruses
-    title: "Current Situation of Goose Astrovirus in China: A Review."
+    title: 'Current Situation of Goose Astrovirus in China: A Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11768540/
     type: review
-    pmid: "39861873"
+    pmid: '39861873'
   - sourceOrg: The Journal of veterinary medical science
     title: Viral communities and identification of a parvovirus and two picornaviruses in geese with gout.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12887108/
     type: research
-    pmid: "41391873"
+    pmid: '41391873'
   - sourceOrg: Poultry science
-    title: A self-designed Chinese herbal formula alleviates GAstV infection-induced gout in goslings by inhibiting xanthine oxidase (XOD) and regulating intestinal microbiota.
+    title: >-
+      A self-designed Chinese herbal formula alleviates GAstV infection-induced gout in goslings by inhibiting xanthine
+      oxidase (XOD) and regulating intestinal microbiota.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12648607/
     type: research
-    pmid: "41213190"
+    pmid: '41213190'
   - sourceOrg: Poultry science
-    title: Aminoguanidine alleviates gout in goslings experimentally infected with goose astrovirus-2 by reducing kidney lesions.
+    title: >-
+      Aminoguanidine alleviates gout in goslings experimentally infected with goose astrovirus-2 by reducing kidney
+      lesions.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10847692/
     type: research
-    pmid: "38306918"
+    pmid: '38306918'
   - sourceOrg: Scientific reports
     title: Isolation and genomic characterization of one novel goose astrovirus causing acute gosling gout in China.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10310827/
     type: research
-    pmid: "37386083"
+    pmid: '37386083'
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: polyarthritis
+    frequency: uncommon
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 禽類關節型痛風 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - polyarthritis 相關症狀
+        - weight-loss 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 關節穿刺
+          notes: 抽取關節液於偏光顯微鏡下見雙折射針狀尿酸鈉結晶為確診依據
+        - name: 血液生化
+          notes: 血清尿酸升高（正常鸚鵡 2-10 mg/dL）。腎功能指標評估
+        - name: X光檢查
+          notes: 關節周圍軟組織腫脹，慢性病例可見骨質侵蝕
+ddxSource: auto-generated

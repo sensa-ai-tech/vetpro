@@ -3,17 +3,16 @@ nameEn: Guinea Pig Cardiac Disease
 nameZh: 天竺鼠 心臟病
 bodySystem: cardiac
 description: 天竺鼠 心臟病是天竺鼠常見的心臟疾病,需要及時診斷與治療以改善預後。
-
 aliases:
-  - { alias: 天竺鼠 心臟疾病, language: zh }
-  - { alias: Guinea Pig Cardiac Disorder, language: en }
-
+  - alias: 天竺鼠 心臟疾病
+    language: zh
+  - alias: Guinea Pig Cardiac Disorder
+    language: en
 species:
   - speciesCommon: guinea pig
     speciesScientific: Cavia porcellus
     prevalence: moderate
     notes: 常見於寵物飼養群體,需注意早期症狀
-
 etiology:
   categories:
     - name: 多因素
@@ -21,7 +20,6 @@ etiology:
         - 遺傳因素
         - 環境因素
         - 營養因素
-
 clinicalSigns:
   early:
     - 精神食慾下降
@@ -31,20 +29,18 @@ clinicalSigns:
     - 症狀逐漸惡化
     - 可能出現併發症
     - 生活品質下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
-      notes: "基本身體評估及症狀確認"
+      notes: 基本身體評估及症狀確認
     - name: 血液學檢查
-      notes: "CBC及生化學檢查評估整體健康狀況"
+      notes: CBC及生化學檢查評估整體健康狀況
     - name: 影像學檢查
-      notes: "X光或超音波檢查輔助診斷"
+      notes: X光或超音波檢查輔助診斷
   differentialDiagnoses:
     - 其他相關疾病
     - 系統性疾病
     - 併發症
-
 treatment:
   medical:
     - 支持療法:輸液及營養支持
@@ -52,40 +48,60 @@ treatment:
     - 必要時使用抗生素或抗病毒藥物
   surgical:
     - 視病情需要考慮手術治療
-
 prognosis:
-  general: "預後取決於診斷時機、疾病嚴重程度及治療反應,早期診斷與積極治療預後較佳"
-
+  general: 預後取決於診斷時機、疾病嚴重程度及治療反應,早期診斷與積極治療預後較佳
 prevention:
   - 提供適當飲食與環境
   - 定期健康檢查
   - 注意疾病早期症狀
   - 維持良好衛生環境
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in cardiovascular medicine
-    title: Requirements for a Robust Animal Model to Investigate the Disease Mechanism of Autoimmune Complications Associated With ARF/RHD.
+    title: >-
+      Requirements for a Robust Animal Model to Investigate the Disease Mechanism of Autoimmune Complications Associated
+      With ARF/RHD.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8131511/
     type: review
-    pmid: "34026876"
+    pmid: '34026876'
   - sourceOrg: International journal of molecular sciences
     title: Automaticity of the Pulmonary Vein Myocardium and the Effect of Class I Antiarrhythmic Drugs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11595185/
     type: review
-    pmid: "39596432"
+    pmid: '39596432'
   - sourceOrg: Biomedicines
     title: Animal Models for Heart Transplantation Focusing on the Pathological Conditions.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10216327/
     type: review
-    pmid: "37239085"
+    pmid: '37239085'
   - sourceOrg: Stem cell reports
     title: Capture primed pluripotency in guinea pig.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11864139/
     type: research
-    pmid: "39793577"
+    pmid: '39793577'
   - sourceOrg: Scientific reports
-    title: "New drug discovery of cardiac anti-arrhythmic drugs: insights in animal models."
+    title: 'New drug discovery of cardiac anti-arrhythmic drugs: insights in animal models.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10541452/
     type: research
-    pmid: "37775650"
+    pmid: '37775650'
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+diagnosticAlgorithm:
+  title: 天竺鼠 心臟病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 基本身體評估及症狀確認
+        - name: 血液學檢查
+          notes: CBC及生化學檢查評估整體健康狀況
+        - name: 影像學檢查
+          notes: X光或超音波檢查輔助診斷
+ddxSource: auto-generated

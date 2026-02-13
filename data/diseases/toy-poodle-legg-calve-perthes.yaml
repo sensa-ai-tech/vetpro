@@ -3,19 +3,20 @@ nameEn: Toy Poodle Legg Calve Perthes
 nameZh: 玩具貴賓犬股骨頭缺血性壞死
 bodySystem: orthopedic
 description: 玩具貴賓犬常見的髖關節疾病,股骨頭因血液供應中斷導致缺血性壞死與塌陷。好發於幼犬,引起漸進性跛行與疼痛,需手術治療。
-
 aliases:
-  - { alias: 玩具貴賓Legg-Calvé-Perthes病, language: zh }
-  - { alias: Toy Poodle LCPD, language: en }
-  - { alias: 玩具貴賓股骨頭壞死, language: zh }
-  - { alias: Avascular Necrosis of Femoral Head, language: en }
-
+  - alias: 玩具貴賓Legg-Calvé-Perthes病
+    language: zh
+  - alias: Toy Poodle LCPD
+    language: en
+  - alias: 玩具貴賓股骨頭壞死
+    language: zh
+  - alias: Avascular Necrosis of Femoral Head
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 玩具貴賓為高風險品種,發病年齡3-13個月,單側較雙側常見(85% vs 15%)
-
 etiology:
   categories:
     - name: 血管因素
@@ -30,7 +31,6 @@ etiology:
       examples:
         - 微創傷累積損傷
         - 皮質類固醇影響血流
-
 clinicalSigns:
   early:
     - 單側後肢跛行,逐漸加重
@@ -41,21 +41,19 @@ clinicalSigns:
     - 髖關節活動範圍受限
     - 患肢縮短,步態異常
     - 髖關節操作時明顯疼痛與摩擦音
-
 diagnosis:
   primaryTests:
     - name: 髖關節X光
-      notes: "早期見股骨頭透亮度增加,進展期見塌陷與骨折線,晚期見骨關節炎"
+      notes: 早期見股骨頭透亮度增加,進展期見塌陷與骨折線,晚期見骨關節炎
     - name: 理學檢查
-      notes: "髖關節外展/內轉疼痛,Ortolani test陰性,患肢肌肉萎縮"
+      notes: 髖關節外展/內轉疼痛,Ortolani test陰性,患肢肌肉萎縮
     - name: 進階影像
-      notes: "CT或MRI可早期偵測血流變化(非常規)"
+      notes: CT或MRI可早期偵測血流變化(非常規)
   differentialDiagnoses:
     - 髖關節發育不良
     - 股骨頭骨折
     - 化膿性關節炎
     - 髖關節脫位
-
 treatment:
   medical:
     - 股骨頭切除與頸成形術(FHO,治療首選)
@@ -63,12 +61,32 @@ treatment:
     - 術後物理復健:被動關節活動、水療
     - 體重管理(減輕關節負擔)
     - 輕度病例保守治療:休息+NSAIDs(預後較差)
-
 prognosis:
-  general: "FHO術後預後良好,90%以上恢復良好功能,小型犬術後效果優於大型犬。未治療病例將進展為嚴重骨關節炎,長期疼痛與跛行。早期診斷與手術為最佳預後關鍵。"
-
+  general: FHO術後預後良好,90%以上恢復良好功能,小型犬術後效果優於大型犬。未治療病例將進展為嚴重骨關節炎,長期疼痛與跛行。早期診斷與手術為最佳預後關鍵。
 prevention:
   - 避免繁殖患病犬隻
   - 幼犬避免過度運動或跳躍
   - 維持適當體重
   - 定期骨科健康檢查
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 玩具貴賓犬股骨頭缺血性壞死 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 髖關節X光
+          notes: 早期見股骨頭透亮度增加,進展期見塌陷與骨折線,晚期見骨關節炎
+        - name: 理學檢查
+          notes: 髖關節外展/內轉疼痛,Ortolani test陰性,患肢肌肉萎縮
+        - name: 進階影像
+          notes: CT或MRI可早期偵測血流變化(非常規)
+ddxSource: auto-generated

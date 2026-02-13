@@ -3,12 +3,13 @@ nameEn: Chemical Burns
 nameZh: 化學灼傷
 bodySystem: emergency
 description: 化學灼傷為酸性、鹼性或氧化性化學物質接觸皮膚、眼睛或消化道黏膜引起的組織損傷。鹼性灼傷（如漂白水、強鹼清潔劑）通常比酸性灼傷更深更嚴重。犬貓常見暴露包括家用清潔劑、游泳池化學品與工業廢棄物。
-
 aliases:
-  - { alias: 化學燒傷, language: zh }
-  - { alias: Caustic Burns, language: en }
-  - { alias: Corrosive Injury, language: en }
-
+  - alias: 化學燒傷
+    language: zh
+  - alias: Caustic Burns
+    language: en
+  - alias: Corrosive Injury
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓化學灼傷可因接觸清潔劑後理毛攝入引起。足部接觸後舔舐導致口腔灼傷。
-
 etiology:
   categories:
     - name: 化學物質分類
@@ -31,7 +31,6 @@ etiology:
         - 游泳池化學品
         - 工業廢棄物
         - 電池咬破（酸液）
-
 clinicalSigns:
   early:
     - 皮膚紅斑、疼痛
@@ -42,7 +41,6 @@ clinicalSigns:
     - 口腔/食道潰瘍
     - 食道狹窄（鹼性灼傷後數週）
     - 角膜潰瘍、眼部穿孔
-
 diagnosis:
   primaryTests:
     - name: 病史
@@ -53,7 +51,6 @@ diagnosis:
     - 眼部螢光素染色（角膜潰瘍）
     - 內視鏡（口腔/食道灼傷評估 — 48-72 小時後）
     - 胸部 X-ray（食道穿孔排除）
-
 treatment:
   principles:
     - 立即大量清水沖洗（最重要的急救）
@@ -69,41 +66,84 @@ treatment:
     - 抗生素（繼發感染預防）
     - 食道灼傷：sucralfate、質子幫浦抑制劑
     - 營養支持（嚴重口腔/食道灼傷時餵食管）
-
 prognosis: 輕度化學灼傷預後佳。鹼性食道灼傷可引起食道狹窄（數週後），預後較差。眼部灼傷可致永久性視力損傷。皮膚灼傷深度決定恢復程度。
-
-
 guidelineRefs:
   - sourceOrg: Ophthalmology and therapy
-    title: "Animal Models for Limbal Stem Cell Deficiency: A Critical Narrative Literature Review."
+    title: 'Animal Models for Limbal Stem Cell Deficiency: A Critical Narrative Literature Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10853161/
     type: review
-    pmid: "38280103"
+    pmid: '38280103'
   - sourceOrg: Acta veterinaria Scandinavica
     title: A case of severe benzalkonium chloride intoxication in a cat.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11020912/
     type: review
-    pmid: "38622748"
-  - sourceOrg: "Journal of ocular pharmacology and therapeutics : the official journal of the Association for Ocular Pharmacology and Therapeutics"
-    title: "Topical Losartan: Practical Guidance for Clinical Trials in the Prevention and Treatment of Corneal Scarring Fibrosis and Other Eye Diseases and Disorders."
+    pmid: '38622748'
+  - sourceOrg: >-
+      Journal of ocular pharmacology and therapeutics : the official journal of the Association for Ocular Pharmacology
+      and Therapeutics
+    title: >-
+      Topical Losartan: Practical Guidance for Clinical Trials in the Prevention and Treatment of Corneal Scarring
+      Fibrosis and Other Eye Diseases and Disorders.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10079252/
     type: review
-    pmid: "36877777"
+    pmid: '36877777'
   - sourceOrg: Scientific reports
     title: Carbon dot based dressing for therapy of chemically-induced cutaneous burns.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11958789/
     type: research
-    pmid: "40164661"
+    pmid: '40164661'
   - sourceOrg: Medicina (Kaunas, Lithuania)
-    title: Salubrinal Ameliorates Inflammation and Neovascularization via the Caspase 3/Enos Signaling in an Alkaline-Induced Rat Corneal Neovascularization Model.
+    title: >-
+      Salubrinal Ameliorates Inflammation and Neovascularization via the Caspase 3/Enos Signaling in an Alkaline-Induced
+      Rat Corneal Neovascularization Model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9961429/
     type: research
-    pmid: "36837524"
+    pmid: '36837524'
   - sourceOrg: In vivo (Athens, Greece)
     title: Effects of a Topically Applied Oral Wound Dressing Film on Intra-oral Wound Healing in Rabbits.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9301434/
     type: research
-    pmid: "35738630"
+    pmid: '35738630'
 pubmedQueries:
   - query: '"chemical burn" OR "caustic" AND (veterinary OR canine OR feline) AND ("treatment" OR "emergency")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: seizures
+    frequency: common
+diagnosticAlgorithm:
+  title: 化學灼傷 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ptyalism 相關症狀
+        - anorexia 相關症狀
+        - seizures 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史
+          notes: 確認化學物質種類、濃度、接觸時間與部位
+        - name: 傷口評估
+          notes: 評估灼傷深度與面積。鹼性灼傷初期可能低估嚴重度
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 眼部螢光素染色（角膜潰瘍）
+        - 內視鏡（口腔/食道灼傷評估 — 48-72 小時後）
+        - 胸部 X-ray（食道穿孔排除）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 立即大量清水沖洗（最重要的急救）
+        - 不要嘗試中和反應
+        - 疼痛管理
+ddxSource: auto-generated

@@ -3,23 +3,26 @@ nameEn: Hip Dysplasia
 nameZh: 髖關節發育不全
 bodySystem: orthopedic
 description: 髖關節發育異常導致關節不穩定與續發性退化性關節炎的遺傳性骨科疾病，為大型犬最常見的骨科發育疾病。
-
 aliases:
-  - { alias: CHD, language: en }
-  - { alias: Canine Hip Dysplasia, language: en }
-  - { alias: HD, language: en }
-  - { alias: 髖關節發育不良, language: zh }
-
+  - alias: CHD
+    language: en
+  - alias: Canine Hip Dysplasia
+    language: en
+  - alias: HD
+    language: en
+  - alias: 髖關節發育不良
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
-    notes: 好發大型至巨型犬種：German Shepherd、Labrador、Golden Retriever、Rottweiler、Saint Bernard、Bulldog。盛行率依品種而異 (15-70%)。通常 5-18 月齡出現臨床症狀。
+    notes: >-
+      好發大型至巨型犬種：German Shepherd、Labrador、Golden Retriever、Rottweiler、Saint Bernard、Bulldog。盛行率依品種而異 (15-70%)。通常 5-18
+      月齡出現臨床症狀。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓也會發生，但臨床症狀常不明顯。Maine Coon 品種盛行率較高。
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -38,7 +41,6 @@ etiology:
         - 股骨頭半脫位 (subluxation)
         - 異常負重導致續發性骨關節炎
         - 關節囊增厚、滑液膜炎
-
 clinicalSigns:
   early:
     - 後肢跛行 (幼犬期或成犬期)
@@ -57,26 +59,24 @@ clinicalSigns:
     - 站立困難
     - 嚴重肌肉萎縮
     - 嚴重影響生活品質
-
 diagnosis:
   primaryTests:
     - name: 骨科檢查
-      notes: "Ortolani test (需鎮靜)、Barlow test、髖關節伸展疼痛、後肢肌肉萎縮評估"
+      notes: Ortolani test (需鎮靜)、Barlow test、髖關節伸展疼痛、後肢肌肉萎縮評估
     - name: 骨盆 X 光 (ventrodorsal extended view)
-      notes: "標準 OFA view。評估股骨頭覆蓋、Norberg angle、骨關節炎程度。需深度鎮靜/麻醉"
+      notes: 標準 OFA view。評估股骨頭覆蓋、Norberg angle、骨關節炎程度。需深度鎮靜/麻醉
     - name: PennHIP distraction radiography
-      notes: "量化關節鬆弛度 (distraction index)。可在 16 週齡執行，早期篩檢價值高"
+      notes: 量化關節鬆弛度 (distraction index)。可在 16 週齡執行，早期篩檢價值高
   imaging:
     - name: 骨盆 X 光
-      notes: "OFA 評估需 ≥24 月齡。評估 Norberg angle、骨關節炎分級"
+      notes: OFA 評估需 ≥24 月齡。評估 Norberg angle、骨關節炎分級
     - name: PennHIP
-      notes: "DI >0.3 為異常。16 週齡即可篩檢"
+      notes: DI >0.3 為異常。16 週齡即可篩檢
     - name: CT
-      notes: "術前計畫 (TPO、DPO 手術前評估)"
+      notes: 術前計畫 (TPO、DPO 手術前評估)
   additional:
     - 步態分析
     - 關節液分析 (排除感染性關節炎)
-
 stagingSystem:
   name: OFA Hip Grading
   sourceUrl: https://www.ofa.org/diseases/hip-dysplasia
@@ -96,7 +96,6 @@ stagingSystem:
     - stage: 5
       label: Severe Dysplasia
       description: 嚴重發育不全。完全脫位與嚴重骨關節炎
-
 treatment:
   principles:
     - 治療取決於年齡、症狀嚴重度、骨關節炎程度
@@ -105,16 +104,16 @@ treatment:
     - 嚴重者考慮全髖關節置換或股骨頭切除
   medications:
     - name: NSAIDs (Meloxicam, Carprofen, Grapiprant)
-      dose: "依藥物標準劑量"
+      dose: 依藥物標準劑量
       notes: 疼痛管理主力。Grapiprant (piprant 類) 腸胃副作用可能較少
     - name: Gabapentin
-      dose: "5-10 mg/kg PO BID-TID"
+      dose: 5-10 mg/kg PO BID-TID
       notes: 慢性疼痛的輔助止痛
     - name: Adequan (PSGAG)
-      dose: "5 mg/kg IM 每 3-5 天 × 8 次，後每月維持"
+      dose: 5 mg/kg IM 每 3-5 天 × 8 次，後每月維持
       notes: 關節保護劑
     - name: 關節補充品
-      dose: "Glucosamine + Chondroitin sulfate 依體重"
+      dose: Glucosamine + Chondroitin sulfate 依體重
       notes: 證據力中等，安全性高。可作為輔助
   general:
     - 幼犬手術：JPS (juvenile pubic symphysiodesis，<16-20 週)、DPO/TPO (double/triple pelvic osteotomy，5-10 月齡)
@@ -123,46 +122,100 @@ treatment:
     - 物理復健 (水中跑步機、游泳、肌力訓練)
     - 環境調整 (防滑地墊、斜坡)
     - 大型犬幼犬飲食管理 (避免過度餵食與快速生長)
-
 prognosis: THR 手術成功率 >90%，可恢復正常功能。FHO 小型犬效果較佳。保守治療多數犬可維持可接受的生活品質，但需終生管理。早期篩檢與繁殖計畫是預防的關鍵。
-
 ontologyMappings:
   - source: MONDO
-    code: "MONDO:0008028"
+    code: MONDO:0008028
     label: hip dysplasia
     confidence: exact
-
 guidelineRefs:
   - sourceOrg: OFA
     title: Orthopedic Foundation for Animals — Hip Dysplasia
     url: https://www.ofa.org/diseases/hip-dysplasia
     type: guideline
   - sourceOrg: Scientific reports
-    title: Repeatability of radiographic assessments for feline hip dysplasia suggest consensus scores in radiology are more uncertain than commonly assumed.
+    title: >-
+      Repeatability of radiographic assessments for feline hip dysplasia suggest consensus scores in radiology are more
+      uncertain than commonly assumed.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9385612/
     type: consensus
-    pmid: "35978034"
+    pmid: '35978034'
   - sourceOrg: Frontiers in veterinary science
     title: A proposed framework for practical multimodal management of osteoarthritis in growing dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12067799/
     type: review
-    pmid: "40357193"
+    pmid: '40357193'
   - sourceOrg: Veterinary medicine (Auckland, N.Z.)
-    title: "Diagnosis, prevention, and management of canine hip dysplasia: a review."
+    title: 'Diagnosis, prevention, and management of canine hip dysplasia: a review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6070021/
     type: review
-    pmid: "30101105"
+    pmid: '30101105'
   - sourceOrg: Frontiers in veterinary science
-    title: "Manufacturing Mesenchymal Stromal Cells for the Treatment of Osteoarthritis in Canine Patients: Challenges and Recommendations."
+    title: >-
+      Manufacturing Mesenchymal Stromal Cells for the Treatment of Osteoarthritis in Canine Patients: Challenges and
+      Recommendations.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9230578/
     type: review
-    pmid: "35754551"
+    pmid: '35754551'
     relevance: primary
 pubmedQueries:
   - query: '"hip dysplasia" AND (dog OR canine) AND ("treatment" OR "screening" OR "TPLO" OR "THR")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "MUS"
-  sectionTitle: "HIP DYSPLASIA"
+  chapter: MUS
+  sectionTitle: HIP DYSPLASIA
   pdfPage: 1237
+diagnosticAlgorithm:
+  title: 髖關節發育不良 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估後肢跛行、起立困難、兔跳步態，注意好發品種（德牧、拉布拉多、黃金獵犬）
+      findings:
+        - 後肢跛行或僵硬
+        - 起立困難
+        - 兔跳步態（雙後肢同時推進）
+        - 運動後症狀加重
+    - step: 2
+      action: 骨科檢查
+      details: Ortolani試驗評估髖關節鬆弛度，後肢伸展疼痛評估
+      findings:
+        - Ortolani試驗陽性（年輕犬）
+        - 髖關節伸展疼痛
+        - 後肢肌肉萎縮
+        - 關節活動範圍受限
+    - step: 3
+      action: 影像學確診
+      details: 標準骨盆伸展X光評估關節吻合度，Norberg角測量
+      findings:
+        - 髖臼淺化
+        - 股骨頭覆蓋率不足
+        - Norberg角<105度
+        - 退化性關節病變
+    - step: 4
+      action: 分級與治療規劃
+      details: 髖關節發育不良分級（OFA或PennHIP），根據年齡及嚴重度選擇治療
+      findings:
+        - OFA分級（正常到嚴重）
+        - 年輕犬可考慮JPS或TPO
+        - 成犬考慮THR或FHO
+        - 保守管理（體重控制、NSAID、物理治療）
+clinicalPearls:
+  - PennHIP是評估髖關節鬆弛度最客觀的方法
+  - 過度補鈣反而加重發育不良
+  - 控制幼犬生長速度比限制運動更重要
+  - 雙側X光常見不對稱表現
+monitoringItems:
+  - 體重控制
+  - 活動功能評估
+  - X光追蹤骨關節炎進展
+  - 疼痛評估
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: common
+ddxSource: book

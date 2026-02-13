@@ -3,13 +3,15 @@ nameEn: Arteriovenous Fistula
 nameZh: 動靜脈瘻管
 bodySystem: vascular
 description: 動脈與靜脈之間的異常直接通道，繞過微血管床，可為先天性或後天性（外傷、手術），導致受累部位充血、組織缺血及心臟容量過負荷。
-
 aliases:
-  - { alias: 動靜脈廔管, language: zh }
-  - { alias: AV 瘻管, language: zh }
-  - { alias: AVF, language: en }
-  - { alias: AV fistula, language: en }
-
+  - alias: 動靜脈廔管
+    language: zh
+  - alias: AV 瘻管
+    language: zh
+  - alias: AVF
+    language: en
+  - alias: AV fistula
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓動靜脈瘻管極罕見，個案報告為主。
-
 etiology:
   categories:
     - name: 先天性
@@ -32,7 +33,6 @@ etiology:
         - 外傷（穿刺傷、撕裂傷）
         - 手術後（醫源性）
         - 腫瘤侵蝕血管壁
-
 clinicalSigns:
   early:
     - 受累部位溫度升高
@@ -45,21 +45,19 @@ clinicalSigns:
     - 四肢——患肢水腫、跛行
     - 肝臟型——門脈高壓、腹水
     - 心臟擴大
-
 diagnosis:
   primaryTests:
     - name: Doppler 超音波
-      notes: "確認瘻管位置。高速紊流血流。靜脈動脈化血流波形"
+      notes: 確認瘻管位置。高速紊流血流。靜脈動脈化血流波形
     - name: CT 血管攝影
-      notes: "瘻管解剖結構精確定位。供應動脈與引流靜脈辨識。手術計畫"
+      notes: 瘻管解剖結構精確定位。供應動脈與引流靜脈辨識。手術計畫
     - name: 選擇性血管攝影
-      notes: "金標準。直接觀察瘻管與血流動力學"
+      notes: 金標準。直接觀察瘻管與血流動力學
   differentialDiagnoses:
     - 動靜脈畸形
     - 軟組織腫瘤
     - 血管瘤
     - 門脈分流（肝臟型需鑑別）
-
 treatment:
   medical:
     - 心衰管理（利尿劑、ACE inhibitors）
@@ -69,38 +67,70 @@ treatment:
     - 血管內栓塞治療
     - 肝動靜脈瘻管——受累肝葉切除
     - 四肢——截肢（無法修復時）
-
 prognosis:
-  general: "手術成功切除或栓塞後預後良好。心衰徵兆多為可逆。肝動靜脈瘻管肝葉切除後門脈高壓改善。延遲治療導致嚴重心衰則預後較差。"
-
+  general: 手術成功切除或栓塞後預後良好。心衰徵兆多為可逆。肝動靜脈瘻管肝葉切除後門脈高壓改善。延遲治療導致嚴重心衰則預後較差。
 prevention:
   - 外傷後注意傷口血管修復
   - 手術中避免動靜脈損傷
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in cardiovascular medicine
     title: The rodent models of arteriovenous fistula.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10830807/
     type: review
-    pmid: "38304139"
+    pmid: '38304139'
   - sourceOrg: Veterinary sciences
-    title: "Anomalies of the Portal Venous System in Dogs and Cats as Seen on Multidetector-Row Computed Tomography: An Overview and Systematization Proposal."
+    title: >-
+      Anomalies of the Portal Venous System in Dogs and Cats as Seen on Multidetector-Row Computed Tomography: An
+      Overview and Systematization Proposal.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6466037/
     type: review
-    pmid: "30678218"
+    pmid: '30678218'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Primary portal vein hypoplasia in cats: clinical findings, diagnosis and outcomes in five cases."
+    title: 'Primary portal vein hypoplasia in cats: clinical findings, diagnosis and outcomes in five cases.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12861356/
     type: case-report
-    pmid: "41395787"
+    pmid: '41395787'
   - sourceOrg: International journal of molecular medicine
-    title: "Egr&#x2011;1 promotes the proliferation and migration of vascular smooth muscle cells by transcriptionally activating Egr&#x2011;2 in arteriovenous fistulas."
+    title: >-
+      Egr&#x2011;1 promotes the proliferation and migration of vascular smooth muscle cells by transcriptionally
+      activating Egr&#x2011;2 in arteriovenous fistulas.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12215247/
     type: research
-    pmid: "40576118"
+    pmid: '40576118'
   - sourceOrg: Frontiers in cardiovascular medicine
-    title: "Periadventitial &#x3b2;-aminopropionitrile-loaded nanofibers reduce fibrosis and improve arteriovenous fistula remodeling in rats."
+    title: >-
+      Periadventitial &#x3b2;-aminopropionitrile-loaded nanofibers reduce fibrosis and improve arteriovenous fistula
+      remodeling in rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10011136/
     type: research
-    pmid: "36926045"
+    pmid: '36926045'
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: uncommon
+  - symptomId: trembling
+    frequency: common
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 動靜脈瘻管 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+        - trembling 相關症狀
+        - ascites 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: Doppler 超音波
+          notes: 確認瘻管位置。高速紊流血流。靜脈動脈化血流波形
+        - name: CT 血管攝影
+          notes: 瘻管解剖結構精確定位。供應動脈與引流靜脈辨識。手術計畫
+        - name: 選擇性血管攝影
+          notes: 金標準。直接觀察瘻管與血流動力學
+ddxSource: auto-generated

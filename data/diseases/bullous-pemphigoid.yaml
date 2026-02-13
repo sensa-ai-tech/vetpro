@@ -3,13 +3,15 @@ nameEn: Bullous Pemphigoid
 nameZh: 類天疱瘡
 bodySystem: dermatology
 description: 類天疱瘡是犬貓的自體免疫性表皮下水疱性皮膚病，因自體抗體攻擊基底膜帶蛋白（BP180/BP230）導致表皮與真皮分離。水疱形成於基底膜帶（subepidermal），因此比天疱瘡的水疱更堅韌。臨床表現為大型張力性水疱與糜爛。
-
 aliases:
-  - { alias: BP, language: en }
-  - { alias: 大疱性類天疱瘡, language: zh }
-  - { alias: 表皮下水疱症, language: zh }
-  - { alias: Bullous Pemphigoid, language: en }
-
+  - alias: BP
+    language: en
+  - alias: 大疱性類天疱瘡
+    language: zh
+  - alias: 表皮下水疱症
+    language: zh
+  - alias: Bullous Pemphigoid
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓隻極為罕見。少數個案報告。
-
 etiology:
   categories:
     - name: 免疫病理機制
@@ -39,7 +40,6 @@ etiology:
         - 多數為特發性
         - 藥物誘發（罕見）
         - 熱傷後（罕見報告）
-
 clinicalSigns:
   early:
     - 皮膚出現大型張力性水疱
@@ -56,23 +56,21 @@ clinicalSigns:
     - 繼發感染
     - 體液與蛋白質流失
     - 慢性疼痛
-
 diagnosis:
   primaryTests:
     - name: 皮膚活檢與組織病理學
-      notes: "取完整水疱組織。特徵性表現：表皮下裂隙（subepidermal cleft）。裂隙底部真皮乳頭完整保留。中性球與嗜酸性球浸潤。無棘層鬆解。"
+      notes: 取完整水疱組織。特徵性表現：表皮下裂隙（subepidermal cleft）。裂隙底部真皮乳頭完整保留。中性球與嗜酸性球浸潤。無棘層鬆解。
     - name: 直接免疫螢光（DIF）
-      notes: "基底膜帶線性 IgG 與 C3 沉積（linear pattern）。與天疱瘡的表皮細胞間（intercellular）沉積模式不同。"
+      notes: 基底膜帶線性 IgG 與 C3 沉積（linear pattern）。與天疱瘡的表皮細胞間（intercellular）沉積模式不同。
   imaging:
     - name: 無特定影像學
-      notes: "影像學不用於診斷。"
+      notes: 影像學不用於診斷。
     - name: 胸腔 X 光
-      notes: "免疫抑制治療前排除感染或腫瘤。"
+      notes: 免疫抑制治療前排除感染或腫瘤。
   additional:
     - 細胞學（水疱液中無棘層鬆解細胞，以中性球與嗜酸性球為主）
     - 間接免疫螢光（IIF）
     - 血液學與生化（基線評估）
-
 treatment:
   principles:
     - 免疫抑制治療為主
@@ -80,45 +78,89 @@ treatment:
     - 合併局部與全身性治療
     - 監測免疫抑制藥物副作用
   general:
-    - "Prednisolone 1-2 mg/kg PO q12h（誘導期）→臨床改善後逐漸減量"
-    - "合併免疫抑制劑：Azathioprine 2 mg/kg PO q24h（犬），減少類固醇用量"
-    - "替代方案：Doxycycline 5 mg/kg PO q12h + Niacinamide 250-500 mg PO q8h（輕度病例）"
-    - "局部治療：Tacrolimus 0.1% ointment q12h（局部病變）"
-    - "傷口照護：溫和清潔，非沾黏敷料保護糜爛面"
-    - "繼發感染控制：根據培養結果選擇抗生素"
-    - "定期 CBC 與生化監測"
-
-prognosis: 預後通常優於尋常型天疱瘡，多數犬隻對免疫抑制治療有良好反應。部分病例可在 3-6 月後逐漸減藥或停藥達到臨床緩解。復發可能發生但通常可再度控制。Doxycycline/niacinamide 方案適用於輕度病例，副作用較少。早期診斷與治療預後最佳。
-
+    - Prednisolone 1-2 mg/kg PO q12h（誘導期）→臨床改善後逐漸減量
+    - 合併免疫抑制劑：Azathioprine 2 mg/kg PO q24h（犬），減少類固醇用量
+    - 替代方案：Doxycycline 5 mg/kg PO q12h + Niacinamide 250-500 mg PO q8h（輕度病例）
+    - 局部治療：Tacrolimus 0.1% ointment q12h（局部病變）
+    - 傷口照護：溫和清潔，非沾黏敷料保護糜爛面
+    - 繼發感染控制：根據培養結果選擇抗生素
+    - 定期 CBC 與生化監測
+prognosis: >-
+  預後通常優於尋常型天疱瘡，多數犬隻對免疫抑制治療有良好反應。部分病例可在 3-6 月後逐漸減藥或停藥達到臨床緩解。復發可能發生但通常可再度控制。Doxycycline/niacinamide
+  方案適用於輕度病例，副作用較少。早期診斷與治療預後最佳。
 guidelineRefs:
   - sourceOrg: Veterinary Dermatology
-    title: "Bullous pemphigoid in dogs: review of clinical and pathological features"
+    title: 'Bullous pemphigoid in dogs: review of clinical and pathological features'
     url: https://pubmed.ncbi.nlm.nih.gov/19291935/
     type: consensus
-    pmid: "19291935"
+    pmid: '19291935'
   - sourceOrg: Veterinary Clinics of North America Small Animal Practice
     title: Autoimmune subepidermal blistering diseases in small animals
     url: https://pubmed.ncbi.nlm.nih.gov/16504828/
     type: consensus
-    pmid: "16504828"
+    pmid: '16504828'
   - sourceOrg: BMC veterinary research
-    title: "Spontaneous autoimmune subepidermal blistering diseases in animals: a comprehensive review."
+    title: 'Spontaneous autoimmune subepidermal blistering diseases in animals: a comprehensive review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9969658/
     type: review
-    pmid: "36849885"
+    pmid: '36849885'
     relevance: primary
-  - sourceOrg: "Journal of ocular pharmacology and therapeutics : the official journal of the Association for Ocular Pharmacology and Therapeutics"
-    title: "Topical Losartan: Practical Guidance for Clinical Trials in the Prevention and Treatment of Corneal Scarring Fibrosis and Other Eye Diseases and Disorders."
+  - sourceOrg: >-
+      Journal of ocular pharmacology and therapeutics : the official journal of the Association for Ocular Pharmacology
+      and Therapeutics
+    title: >-
+      Topical Losartan: Practical Guidance for Clinical Trials in the Prevention and Treatment of Corneal Scarring
+      Fibrosis and Other Eye Diseases and Disorders.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10079252/
     type: review
-    pmid: "36877777"
+    pmid: '36877777'
     relevance: primary
   - sourceOrg: Frontiers in immunology
-    title: Therapeutic targeting of alternative pathway and C5 but not C5a protects from disease development in a preclinical model of autoimmune blistering dermatosis.
+    title: >-
+      Therapeutic targeting of alternative pathway and C5 but not C5a protects from disease development in a preclinical
+      model of autoimmune blistering dermatosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12076022/
     type: research
-    pmid: "40370446"
+    pmid: '40370446'
     relevance: supporting
 pubmedQueries:
   - query: '"bullous pemphigoid" AND (dog OR canine) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 類天疱瘡 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估皮膚大型緊張性水疱、潰瘍和結痂，注意口腔和皮膚黏膜交界處受累
+      findings:
+        - 皮膚大型緊張性水疱
+        - 水疱破裂後形成潰瘍和結痂
+        - 腋窩和腹股溝等皺褶處好發
+    - step: 2
+      action: 細胞學與組織病理
+      details: 進行活檢檢查水疱形成的位置（基底膜帶），區別於天疱瘡
+      findings:
+        - 組織病理學見表皮下水疱形成
+        - 基底膜帶分離（非棘皮鬆解）
+        - 嗜酸性球和中性球浸潤
+    - step: 3
+      action: 免疫學確診
+      details: 進行直接免疫螢光檢查確認基底膜帶免疫球蛋白沉積
+      findings:
+        - 直接免疫螢光見基底膜帶線性IgG沉積
+        - 區別於天疱瘡的細胞間沉積模式
+        - 確診為自體免疫性類天疱瘡
+clinicalPearls:
+  - 類天疱瘡的水泡為「緊張性水泡」（表皮下），天疱瘡的水泡為「鬆弛性水泡」（表皮內）——這是臨床區分的關鍵點
+  - 直接免疫螢光顯示基底膜帶的「線狀」沉積是類天疱瘡的典型發現，與天疱瘡的「蜂巢狀」細胞間沉積不同
+  - Doxycycline + Niacinamide 組合是犬類天疱瘡輕度病例的有效且副作用較少的替代治療方案
+  - 不要主動刺破完整的水泡——水泡頂蓋作為天然生物敷料可促進下方傷口癒合
+  - 外周血嗜酸性球增多在類天疱瘡中較為常見，可作為輔助鑑別線索
+monitoringItems:
+  - 每 2-4 週臨床評估新水泡出現和舊病變癒合情形
+  - CBC 每 2 週（特別是 Azathioprine 使用初期監測骨髓抑制和嗜酸性球變化）
+  - 肝功能和腎功能定期監測（免疫抑制劑的器官毒性）
+  - 血糖監測（長期類固醇的糖尿病風險）
+  - 嘗試類固醇減量時密切觀察有無復發
+  - 皮膚細菌培養（繼發感染時）
+ddxSource: book

@@ -3,11 +3,11 @@ nameEn: TTA Complications
 nameZh: TTA Complications
 bodySystem: orthopedic
 description: 骨科手術或疾病的併發症。需及時識別與處理以避免治療失敗或長期後遺症。
-
 aliases:
-  - { alias: TTA Complications, language: zh }
-  - { alias: TTA Complications, language: en }
-
+  - alias: TTA Complications
+    language: zh
+  - alias: TTA Complications
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 外傷
       examples:
         - 退化性變化
         - 先天性異常
-
 clinicalSigns:
   early:
     - 跛行
@@ -32,61 +30,84 @@ clinicalSigns:
   progressive:
     - 肌肉萎縮
     - 關節畸形
-
 diagnosis:
   primaryTests:
     - name: 骨科檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: X光(多方位)
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 非類固醇消炎藥(Carprofen 2-4 mg/kg PO q12-24h)
     - 疼痛控制
   surgical:
     - name: 根據病況可能需手術治療(骨折固定、韌帶重建、關節置換等)
-      notes: "依病況評估"
-
+      notes: 依病況評估
 prognosis:
-  general: "預後取決於損傷嚴重度、治療方式與飼主配合度。早期適當治療可改善功能恢復。"
-
+  general: 預後取決於損傷嚴重度、治療方式與飼主配合度。早期適當治療可改善功能恢復。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Tibial Tuberosity Advancement Techniques (TTAT): A Systematic Review."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Tibial Tuberosity Advancement Techniques (TTAT): A Systematic Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9404911/
     type: review
-    pmid: "36009702"
+    pmid: '36009702'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
-    title: Surgical treatment of cranial cruciate ligament disease in dogs using Tibial Plateau Leveling Osteotomy or Tibial Tuberosity Advancement-A systematic review with a meta-analytic approach.
+    title: >-
+      Surgical treatment of cranial cruciate ligament disease in dogs using Tibial Plateau Leveling Osteotomy or Tibial
+      Tuberosity Advancement-A systematic review with a meta-analytic approach.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9748159/
     type: review
-    pmid: "36532339"
+    pmid: '36532339'
     relevance: primary
   - sourceOrg: Veterinary medicine and science
     title: Multiligament stifle injury, a multicenter retrospective study in 26 dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10188087/
     type: case-report
-    pmid: "36930812"
+    pmid: '36930812'
     relevance: supporting
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: A Retrospective Study on Patellar Desmopathy Following Surgical Resolution of Cranial Cruciate Ligament Rupture in 28 Dogs.
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      A Retrospective Study on Patellar Desmopathy Following Surgical Resolution of Cranial Cruciate Ligament Rupture in
+      28 Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11987818/
     type: research
-    pmid: "40218445"
+    pmid: '40218445'
     relevance: supporting
-  - sourceOrg: "CNS neuroscience &amp; therapeutics"
-    title: Serotonin (5-HT)2A/2C receptor agonist 2,5-dimethoxy-4-iodophenyl-2-aminopropane hydrochloride improves detrusor sphincter dyssynergia by inhibiting L-type voltage-gated calcium channels in spinal cord injured rats.
+  - sourceOrg: CNS neuroscience &amp; therapeutics
+    title: >-
+      Serotonin (5-HT)2A/2C receptor agonist 2,5-dimethoxy-4-iodophenyl-2-aminopropane hydrochloride improves detrusor
+      sphincter dyssynergia by inhibiting L-type voltage-gated calcium channels in spinal cord injured rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11298198/
     type: research
-    pmid: "39097910"
+    pmid: '39097910'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: TTA Complications 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cachexia-muscle-wasting 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 骨科檢查
+          notes: 需詳細評估
+        - name: X光(多方位)
+          notes: 協助確診
+ddxSource: auto-generated

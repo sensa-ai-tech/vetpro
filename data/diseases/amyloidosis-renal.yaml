@@ -2,13 +2,16 @@ slug: amyloidosis-renal
 nameEn: Amyloidosis Renal
 nameZh: 腎臟類澱粉沉積症
 bodySystem: urinary
-description: 腎臟類澱粉沉積症為類澱粉蛋白（主要為 AA 型）異常沉積於腎臟的疾病。犬隻主要沉積於腎絲球（glomerular amyloidosis），貓隻主要沉積於腎髓質（medullary amyloidosis）。Shar-Pei 為犬隻最好發品種。Abyssinian 貓有家族性腎臟類澱粉沉積症。導致蛋白尿、腎病症候群與進行性腎衰竭。
-
+description: >-
+  腎臟類澱粉沉積症為類澱粉蛋白（主要為 AA 型）異常沉積於腎臟的疾病。犬隻主要沉積於腎絲球（glomerular amyloidosis），貓隻主要沉積於腎髓質（medullary amyloidosis）。Shar-Pei
+  為犬隻最好發品種。Abyssinian 貓有家族性腎臟類澱粉沉積症。導致蛋白尿、腎病症候群與進行性腎衰竭。
 aliases:
-  - { alias: 腎類澱粉沉積, language: zh }
-  - { alias: Renal Amyloidosis, language: en }
-  - { alias: Glomerular Amyloidosis, language: en }
-
+  - alias: 腎類澱粉沉積
+    language: zh
+  - alias: Renal Amyloidosis
+    language: en
+  - alias: Glomerular Amyloidosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻腎臟類澱粉沉積多為腎髓質型。Abyssinian、Siamese、Oriental Shorthair 有家族性好發。
-
 etiology:
   categories:
     - name: 反應性 AA 型
@@ -29,7 +31,6 @@ etiology:
       examples:
         - 犬隻：腎絲球（導致蛋白尿與腎病症候群）
         - 貓隻：腎髓質（導致腎乳頭壞死與腎衰竭）
-
 clinicalSigns:
   early:
     - 蛋白尿（犬隻腎絲球型）
@@ -41,29 +42,64 @@ clinicalSigns:
     - 血栓栓塞（低抗凝血酶 III）
     - 嘔吐與食慾廢絕
     - 貓隻腎乳頭壞死伴出血
-
 diagnosis:
   primaryTests:
     - name: 腎臟活檢
       notes: 確診金標準。Congo red 染色陽性。犬隻見腎絲球基底膜類澱粉沉積。貓隻見腎髓質間質沉積。
     - name: 尿液分析與 UPC
       notes: 蛋白尿（UPC 通常 >3.0，犬隻腎絲球型）。尿液比重可能下降。評估腎功能（BUN、Creatinine、SDMA）。
-
 treatment:
   principles:
     - 目前無有效逆轉類澱粉沉積的療法
     - 支持性治療與減緩進展
     - 控制蛋白尿與併發症
   general:
-    - "ACE 抑制劑：Enalapril 0.5 mg/kg PO q12-24h 或 Benazepril（減少蛋白尿）"
-    - "Colchicine 0.03 mg/kg PO q24h（可能延緩沉積，效果不確定）"
+    - ACE 抑制劑：Enalapril 0.5 mg/kg PO q12-24h 或 Benazepril（減少蛋白尿）
+    - Colchicine 0.03 mg/kg PO q24h（可能延緩沉積，效果不確定）
     - 低蛋白低磷腎臟處方飲食
     - 血栓預防（Aspirin 0.5-1 mg/kg PO q24h 或 Clopidogrel）
     - 治療基礎炎症性疾病
     - 慢性腎病支持性治療
-
 prognosis: 預後不佳。腎臟類澱粉沉積為不可逆且進行性。犬隻腎絲球型多在診斷後數月至 1-2 年內進展至終末期腎病。血栓栓塞為重要致死原因。貓隻腎髓質型可能進展較慢但預後仍不佳。早期診斷與積極管理可延緩進展。
-
 pubmedQueries:
   - query: '"renal amyloidosis" AND (veterinary OR canine OR feline) AND ("Shar-Pei" OR "Abyssinian" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 腎臟類澱粉沉積症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - polyuria-polydipsia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腎臟活檢
+          notes: 確診金標準。Congo red 染色陽性。犬隻見腎絲球基底膜類澱粉沉積。貓隻見腎髓質間質沉積。
+        - name: 尿液分析與 UPC
+          notes: 蛋白尿（UPC 通常 >3.0，犬隻腎絲球型）。尿液比重可能下降。評估腎功能（BUN、Creatinine、SDMA）。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 目前無有效逆轉類澱粉沉積的療法
+        - 支持性治療與減緩進展
+        - 控制蛋白尿與併發症
+ddxSource: auto-generated

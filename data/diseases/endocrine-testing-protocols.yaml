@@ -3,11 +3,11 @@ nameEn: Endocrine Testing Protocols
 nameZh: 內分泌檢測方案
 bodySystem: other
 description: 犬貓內分泌疾病檢測標準化方案,包括甲狀腺、腎上腺、胰臟內分泌功能評估。需特定檢測流程及正確判讀,為診斷內分泌疾病的關鍵。
-
 aliases:
-  - { alias: 內分泌檢查, language: zh }
-  - { alias: Endocrine function testing, language: en }
-
+  - alias: 內分泌檢查
+    language: zh
+  - alias: Endocrine function testing
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 甲狀腺機能亢進、糖尿病、肢端肥大症
-
 etiology:
   categories:
     - name: 常見內分泌疾病
@@ -26,59 +25,79 @@ etiology:
         - 腎上腺疾病(庫欣、愛迪生)
         - 糖尿病
         - 副甲狀腺疾病
-
 clinicalSigns:
   early:
     - 內分泌檢測為診斷工具
   progressive:
     - 多飲多尿、體重變化、皮膚病變
-
 diagnosis:
   primaryTests:
     - name: 甲狀腺功能評估
-      notes: "T4、fT4、TSH檢測"
+      notes: T4、fT4、TSH檢測
     - name: 腎上腺功能評估
-      notes: "ACTH刺激試驗、低劑量dexamethasone抑制試驗"
+      notes: ACTH刺激試驗、低劑量dexamethasone抑制試驗
     - name: 胰臟內分泌
-      notes: "血糖、胰島素、fructosamine"
+      notes: 血糖、胰島素、fructosamine
   differentialDiagnoses:
     - 各類內分泌疾病
-
 treatment:
   medical:
     - 依診斷結果荷爾蒙補充或抑制治療
-
 prognosis:
-  general: "內分泌疾病需特定檢測及長期監測管理。"
-
+  general: 內分泌疾病需特定檢測及長期監測管理。
 prevention:
   - 遵循標準化檢測流程
   - 定期監測調整治療
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Metabolic and Endocrine Insights in Donkeys.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10885905/
     type: review
-    pmid: "38396558"
+    pmid: '38396558'
   - sourceOrg: Toxics
-    title: "Advancing Endocrine Disruptors via In Vitro Evaluation: Recognizing the Significance of the Organization for Economic Co-Operation and Development and United States Environmental Protection Agency Guidelines, Embracing New Assessment Methods, and the Urgent Need for a Comprehensive Battery of Tests."
+    title: >-
+      Advancing Endocrine Disruptors via In Vitro Evaluation: Recognizing the Significance of the Organization for
+      Economic Co-Operation and Development and United States Environmental Protection Agency Guidelines, Embracing New
+      Assessment Methods, and the Urgent Need for a Comprehensive Battery of Tests.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10974109/
     type: review
-    pmid: "38535916"
+    pmid: '38535916'
   - sourceOrg: Veterinary sciences
     title: Pituitary Pars Intermedia Dysfunction (PPID) in Horses.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9611634/
     type: review
-    pmid: "36288169"
+    pmid: '36288169'
   - sourceOrg: International journal of molecular sciences
-    title: "ERGO: Breaking Down the Wall between Human Health and Environmental Testing of Endocrine Disrupters."
+    title: 'ERGO: Breaking Down the Wall between Human Health and Environmental Testing of Endocrine Disrupters.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7215679/
     type: review
-    pmid: "32331419"
+    pmid: '32331419'
   - sourceOrg: BMC veterinary research
-    title: Quantitative proteomics unveils potential plasma biomarkers and provides insights into the pathophysiological mechanisms underlying equine metabolic syndrome.
+    title: >-
+      Quantitative proteomics unveils potential plasma biomarkers and provides insights into the pathophysiological
+      mechanisms underlying equine metabolic syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12217909/
     type: research
-    pmid: "40604814"
+    pmid: '40604814'
+associatedSymptoms:
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 內分泌檢測方案 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - polyuria-polydipsia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 甲狀腺功能評估
+          notes: T4、fT4、TSH檢測
+        - name: 腎上腺功能評估
+          notes: ACTH刺激試驗、低劑量dexamethasone抑制試驗
+        - name: 胰臟內分泌
+          notes: 血糖、胰島素、fructosamine
+ddxSource: auto-generated

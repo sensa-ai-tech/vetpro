@@ -3,12 +3,13 @@ nameEn: Syndactyly
 nameZh: 先天性併趾症
 bodySystem: orthopedic
 description: 併趾症為相鄰趾頭間皮膚或骨骼異常融合的先天畸形。犬貓均有報告但罕見。多數不影響功能，嚴重者可能影響步態。
-
 aliases:
-  - { alias: 併趾, language: zh }
-  - { alias: Webbed toes, language: en }
-  - { alias: Fused digits, language: en }
-
+  - alias: 併趾
+    language: zh
+  - alias: Webbed toes
+    language: en
+  - alias: Fused digits
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 犬貓均罕見。可為皮膚性或骨性融合。
-
 etiology:
   categories:
     - name: 先天發育異常
@@ -24,7 +24,6 @@ etiology:
         - 趾間分化發育異常
         - 程序性細胞凋亡失敗
         - 遺傳因素
-
 clinicalSigns:
   early:
     - 相鄰趾頭融合
@@ -32,53 +31,72 @@ clinicalSigns:
   progressive:
     - 多數不影響步態
     - 嚴重者可能跛行
-
 diagnosis:
   primaryTests:
     - name: 影像與臨床檢查
       notes: X 光評估骨骼融合程度。
-
 treatment:
   principles:
     - 依嚴重程度決定保守或手術治療
     - 支持療法
   general:
     - 多數不需治療。嚴重功能障礙者可手術分離。
-
 prognosis: 預後良好。多數不影響日常活動。
-
-
 guidelineRefs:
   - sourceOrg: Cureus
-    title: "Reconstruction of a Pediatric Distal Phalanx Amputation With Stacked Integra Dermal Substitute: A Case Report."
+    title: 'Reconstruction of a Pediatric Distal Phalanx Amputation With Stacked Integra Dermal Substitute: A Case Report.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11116031/
     type: case-report
-    pmid: "38800231"
+    pmid: '38800231'
     relevance: supporting
   - sourceOrg: Case reports in veterinary medicine
     title: Case Report of Bilateral 3-4 Metatarsal Syndactyly in a Pet Rabbit.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6005276/
     type: case-report
-    pmid: "29955420"
+    pmid: '29955420'
     relevance: supporting
   - sourceOrg: Journal of anatomy
     title: Foot adaptation to climbing in ovenbirds and woodcreepers (Furnariida).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10008296/
     type: research
-    pmid: "36525307"
+    pmid: '36525307'
     relevance: supporting
   - sourceOrg: Nature
     title: Maturation and circuit integration of transplanted human cortical organoids.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9556304/
     type: research
-    pmid: "36224417"
+    pmid: '36224417'
     relevance: supporting
-  - sourceOrg: "Medical science monitor : international medical journal of experimental and clinical research"
+  - sourceOrg: 'Medical science monitor : international medical journal of experimental and clinical research'
     title: Expression of Fibroblast Growth Factor 4 in a Rat Model of Polydactyly of the Thumb Induced by Cytarabine.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7446283/
     type: research
-    pmid: "32788570"
+    pmid: '32788570'
     relevance: supporting
 pubmedQueries:
   - query: '"Syndactyly" AND (veterinary OR canine OR feline) AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 先天性併趾症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 影像與臨床檢查
+          notes: X 光評估骨骼融合程度。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 依嚴重程度決定保守或手術治療
+        - 支持療法
+ddxSource: auto-generated

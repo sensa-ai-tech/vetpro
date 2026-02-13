@@ -3,13 +3,15 @@ nameEn: Distichiasis
 nameZh: 雙行睫
 bodySystem: ophthalmology
 description: 異常睫毛從瞼板腺 (Meibomian gland) 開口處生長，排列於正常睫毛列內側。為犬常見的先天性眼瞼異常，某些品種有遺傳傾向。不一定引起症狀，但粗硬睫毛可摩擦角膜導致刺激與潰瘍。
-
 aliases:
-  - { alias: Double Row of Eyelashes, language: en }
-  - { alias: Accessory Cilia, language: en }
-  - { alias: 雙行睫毛, language: zh }
-  - { alias: 副睫毛, language: zh }
-
+  - alias: Double Row of Eyelashes
+    language: en
+  - alias: Accessory Cilia
+    language: en
+  - alias: 雙行睫毛
+    language: zh
+  - alias: 副睫毛
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 先天性/遺傳性
@@ -25,7 +26,6 @@ etiology:
         - 瞼板腺上皮異常分化為毛囊
         - 多品種遺傳傾向
         - 可能為體染色體顯性遺傳
-
 clinicalSigns:
   early:
     - 可能無症狀 (細軟睫毛)
@@ -36,7 +36,6 @@ clinicalSigns:
     - 角膜淺層潰瘍
     - 角膜新生血管與色素沉著
     - 慢性結膜炎
-
 diagnosis:
   primaryTests:
     - name: 裂隙燈檢查
@@ -45,7 +44,6 @@ diagnosis:
       notes: 檢查是否有角膜上皮損傷
     - name: Schirmer 淚液試驗
       notes: 排除合併 KCS
-
 treatment:
   principles:
     - 無症狀者不需治療
@@ -56,9 +54,53 @@ treatment:
     - 電燒毛囊 (electroepilation)
     - 手動拔除 (暫時性，4-6 週復發)
     - 角膜保護 (人工淚液)
-
 prognosis: 永久性毛囊破壞後預後良好。冷凍療法成功率約 90%。少數需重複治療。不治療可能導致慢性角膜損傷與視力影響。
-
 pubmedQueries:
   - query: '"distichiasis" AND (veterinary OR canine) AND ("cryotherapy" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 雙行睫 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估眼部刺激症狀與品種傾向
+      findings:
+        - 流淚增多
+        - 眨眼頻率增加
+        - 結膜充血
+        - 好發於可卡犬、鬥牛犬等
+    - step: 2
+      action: 裂隙燈檢查
+      details: 使用裂隙燈或放大鏡檢查瞼板腺開口處異常睫毛
+      findings:
+        - 瞼板腺開口處生長異常睫毛
+        - 睫毛接觸角膜表面
+        - 單根或多根異常睫毛
+    - step: 3
+      action: 角膜評估
+      details: 評估異常睫毛對角膜的損傷程度
+      findings:
+        - 螢光素染色檢查角膜潰瘍
+        - 角膜點狀上皮缺損
+        - 慢性病例角膜色素沉著
+        - 淚液分泌量評估
+    - step: 4
+      action: 確診與治療計畫
+      details: 確認異常睫毛數量、位置並制定治療方案
+      findings:
+        - 記錄異常睫毛位置與數量
+        - 區分雙行睫與異位睫
+        - 評估電燒灼或冷凍治療適應症
+clinicalPearls:
+  - 雙行睫是犬最常見的睫毛異常，但不一定需要治療
+  - 需區分雙行睫和異位睫毛——後者從結膜面穿出，幾乎總是引起症狀且需要治療
+  - 冷凍手術可能導致暫時性眼瞼腫脹和去色素化
+  - 部分無症狀的雙行睫隨年齡增長可能變得有症狀
+monitoringItems:
+  - 治療後2-4週評估效果和角膜恢復
+  - 定期眼科檢查監測新的異常睫毛生長
+  - 角膜健康追蹤
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: rare
+ddxSource: book

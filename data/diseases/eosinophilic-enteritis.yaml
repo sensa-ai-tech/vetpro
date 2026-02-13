@@ -3,12 +3,13 @@ nameEn: Eosinophilic Enteritis
 nameZh: 嗜酸性球性腸炎
 bodySystem: gastrointestinal
 description: 嗜酸性球性腸炎為炎症性腸病（IBD）的一種類型，特徵為腸壁嗜酸性球過度浸潤。可影響小腸和/或大腸，嚴重者可累及胃（嗜酸性球性胃腸炎）。需排除寄生蟲感染與食物過敏。部分病例對飲食調整反應良好。
-
 aliases:
-  - { alias: 嗜酸性腸炎, language: zh }
-  - { alias: Eosinophilic IBD, language: en }
-  - { alias: Eosinophilic Gastroenteritis, language: en }
-
+  - alias: 嗜酸性腸炎
+    language: zh
+  - alias: Eosinophilic IBD
+    language: en
+  - alias: Eosinophilic Gastroenteritis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻嗜酸性球性腸炎可與高嗜酸性球症候群（HES）相關。
-
 etiology:
   categories:
     - name: 過敏/免疫
@@ -29,7 +29,6 @@ etiology:
         - 腸道寄生蟲（鉤蟲、蛔蟲、鞭蟲）
         - 內臟幼蟲移行
         - 肥大細胞腫瘤（副腫瘤性嗜酸性球增多）
-
 clinicalSigns:
   early:
     - 慢性嘔吐與腹瀉
@@ -40,14 +39,12 @@ clinicalSigns:
     - 蛋白喪失性腸病
     - 腸壁顯著增厚（超音波可見）
     - 腹水（低白蛋白時）
-
 diagnosis:
   primaryTests:
     - name: 腸道活檢
       notes: 確診必須。組織學見腸壁嗜酸性球顯著浸潤（固有層、黏膜下層或全層）。WSAVA 標準化評分。
     - name: 寄生蟲排除
       notes: 糞便浮游法多次檢查。心絲蟲抗原檢測。治療性驅蟲（Fenbendazole 50 mg/kg × 5 天）。
-
 treatment:
   principles:
     - 排除寄生蟲為首要步驟
@@ -55,40 +52,91 @@ treatment:
     - 皮質類固醇反應佳
   general:
     - 廣效驅蟲（Fenbendazole 50 mg/kg PO q24h × 5 天）
-    - "食物排除試驗：水解蛋白飲食 6-8 週"
-    - "Prednisolone 1-2 mg/kg/day PO × 2-4 週後漸減"
-    - "難治性：Budesonide 或合併 Azathioprine"
+    - 食物排除試驗：水解蛋白飲食 6-8 週
+    - Prednisolone 1-2 mg/kg/day PO × 2-4 週後漸減
+    - 難治性：Budesonide 或合併 Azathioprine
     - B12 與 Folate 補充
-
 prognosis: 嗜酸性球性腸炎通常對皮質類固醇反應良好，預後中等至好。食物反應性者預後最好。部分病例需長期低劑量免疫抑制維持。高嗜酸性球症候群（HES）預後較差。
-
-
 guidelineRefs:
-  - sourceOrg: "Veterinary research forum : an international quarterly journal"
-    title: "A review of inflammatory bowel diseases in humans and pets: treatment strategies."
+  - sourceOrg: 'Veterinary research forum : an international quarterly journal'
+    title: 'A review of inflammatory bowel diseases in humans and pets: treatment strategies.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12854167/
     type: review
-    pmid: "41623954"
+    pmid: '41623954'
   - sourceOrg: Veterinary medicine and science
-    title: "Computed Tomographic Findings of Eosinophilic Enteritis in Eight Cats: Case Series."
+    title: 'Computed Tomographic Findings of Eosinophilic Enteritis in Eight Cats: Case Series.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12032532/
     type: case-report
-    pmid: "40285530"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '40285530'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Concordance of the Histopathologic Diagnosis of Concurrent Duodenal and Ileal Biopsy Specimens in Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8532859/
     type: research
-    pmid: "34679959"
+    pmid: '34679959'
   - sourceOrg: Journal of veterinary internal medicine
     title: Eosinophilic Enteritis in Horses with Motor Neuron Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4913563/
     type: research
-    pmid: "27015868"
+    pmid: '27015868'
   - sourceOrg: Research in veterinary science
-    title: "Prevalence of inflammatory versus neoplastic lesions in dogs with chronic gastrointestinal signs undergoing gastroduodenoscopy: 195 cases (2007-2015)."
+    title: >-
+      Prevalence of inflammatory versus neoplastic lesions in dogs with chronic gastrointestinal signs undergoing
+      gastroduodenoscopy: 195 cases (2007-2015).
     url: https://pubmed.ncbi.nlm.nih.gov/35320735/
     type: research
-    pmid: "35320735"
+    pmid: '35320735'
 pubmedQueries:
   - query: '"eosinophilic enteritis" AND (veterinary OR canine OR feline) AND ("IBD" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 嗜酸性口炎 診斷流程
+  steps:
+    - step: 1
+      action: 臨床評估
+      details: 口腔檢查評估病灶形態、分布和數量
+      findings:
+        - 典型肉芽腫/潰瘍病灶
+        - 多處受影響
+        - 嘴唇病變
+    - step: 2
+      action: 細胞學和血液學
+      details: FNA和CBC確認嗜酸性球浸潤
+      findings:
+        - 嗜酸性球增多
+        - FeLV/FIV陰性
+        - 嗜酸性球浸潤
+    - step: 3
+      action: 組織活檢
+      details: 切開式活檢排除腫瘤並確認EGC
+      findings:
+        - 嗜酸性肉芽腫
+        - 排除SCC
+        - 排除感染
+    - step: 4
+      action: 尋找觸發因子
+      details: 跳蚤控制試驗、食物排除飲食
+      findings:
+        - 跳蚤過敏確認
+        - 食物過敏確認
+        - 特發性
+clinicalPearls:
+  - EGC口腔形式的非典型表現可能被誤診為腫瘤，活檢是關鍵
+  - 積極跳蚤控制應作為所有病例的第一線治療嘗試
+  - 食物排除試驗需要至少8週才能看到效果
+monitoringItems:
+  - 治療後2-4週評估病灶大小和數量
+  - CBC追蹤嗜酸性球變化
+  - 類固醇或cyclosporine副作用監測
+  - 長期追蹤復發情形
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: halitosis-stomatitis
+    frequency: common
+ddxSource: book

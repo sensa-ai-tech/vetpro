@@ -1,0 +1,134 @@
+slug: distributive-shock
+nameEn: Distributive Shock
+nameZh: 分配性休克
+description: 因全身性血管擴張和血管通透性增加導致有效循環血量嚴重分佈不均的休克類型。包括敗血性休克、過敏性休克和神經性休克。血管內容量正常但血管張力喪失導致組織灌流不足。
+bodySystem: neurological
+species:
+  - speciesCommon: dog
+  - speciesCommon: cat
+etiology:
+  categories:
+    - name: Risk Factors
+      examples:
+        - 敗血症（腹膜炎、肺炎、腎盂腎炎）
+        - 過敏原暴露（疫苗、蜂螫、藥物）
+        - 脊髓損傷（神經性休克）
+        - 嚴重創傷或燒傷
+        - 免疫抑制狀態
+clinicalSigns:
+  early:
+    - 敗血性：感染病灶或手術後發熱
+    - 過敏性：疫苗注射或蟲螫後數分鐘內急性發作
+    - 神經性：脊髓創傷史
+    - 突發虛弱或倒地
+    - 嘔吐或腹瀉
+    - 面部腫脹（過敏性）
+  progressive:
+    - 黏膜充血（高動力期）或蒼白（失代償期）
+    - CRT<1秒（高動力期）或>2秒（失代償期）
+    - 心搏過速
+    - 脈搏洪大跳躍（高動力期）或微弱（失代償期）
+    - 低血壓（對輸液反應差）
+    - 體溫升高（敗血性）或正常/偏低（過敏性）
+    - 蕁麻疹/血管性水腫（過敏性）
+diagnosis:
+  primaryTests:
+    - 血壓測量（低血壓為核心特徵）
+    - 乳酸測定（>4 mmol/L提示組織灌流不足）
+    - CBC/生化（白血球計數、感染標記）
+    - 血液培養（敗血性休克）
+    - 血氣分析
+  additional:
+    - PCT降鈣素原（敗血症標記）
+    - 心臟超音波（排除心因性）
+    - TFAST/AFAST
+    - 影像學（定位感染灶）
+treatment:
+  principles:
+    - 過敏性休克首選：Epinephrine 0.01-0.02 mg/kg IM/IV（每5-15分鐘可重複）
+    - 晶體液快速輸注：犬20 mL/kg、貓10 mL/kg bolus over 15 min（可重複）
+    - 膠體液：Hetastarch 5 mL/kg bolus（血管通透性增加時）
+    - 升壓藥（輸液反應不足時）：Norepinephrine 0.1-2 μg/kg/min或Vasopressin 0.5-5 mU/kg/min
+    - Dopamine 5-20 μg/kg/min CRI（次選升壓藥）
+    - 敗血性：廣效抗生素（在第一小時內給予）
+  general:
+    - 敗血性：source control（感染灶清除/引流/手術）
+    - 過敏性：抗組織胺（Diphenhydramine 2 mg/kg IM）+H2 blocker+類固醇
+    - 持續升壓藥支持和逐步減量
+    - 營養支持與免疫功能恢復
+prognosis: 過敏性休克若即時給予Epinephrine預後良好。敗血性休克死亡率40-70%，取決於感染來源是否可控制和器官功能損害程度。神經性休克視脊髓損傷程度而定。所有亞型的預後均與介入速度密切相關。
+diagnosticAlgorithm:
+  title: 分配性休克 診斷與處置流程
+  steps:
+    - step: 1
+      action: 休克類型鑑別
+      details: 評估血液動力學模式和病因線索
+      findings:
+        - 高動力期：黏膜充血、脈搏洪大、CRT<1秒
+        - 失代償期：黏膜蒼白、脈搏微弱
+        - 病因線索：感染?過敏暴露?脊髓損傷?
+        - 低血壓+輸液反應差=分配性休克
+    - step: 2
+      action: 快速病因評估
+      details: 區分敗血性/過敏性/神經性
+      findings:
+        - 發熱+感染灶→敗血性
+        - 過敏原暴露+蕁麻疹→過敏性
+        - 脊髓創傷+心搏過緩→神經性
+        - 血液培養送檢（敗血性）
+    - step: 3
+      action: 病因導向治療
+      details: 針對亞型給予第一線治療
+      findings:
+        - 過敏性→Epinephrine IM/IV
+        - 敗血性→廣效抗生素+輸液
+        - 神經性→輸液+升壓藥
+        - 所有亞型：MAP目標≥65 mmHg
+    - step: 4
+      action: 升壓藥與器官支持
+      details: 輸液反應不足時啟動升壓藥
+      findings:
+        - Norepinephrine首選升壓藥
+        - Vasopressin作為附加
+        - 乳酸清除率作為復甦指標
+        - source control（敗血性）
+clinicalPearls:
+  - 分配性休克的血液動力學特徵：高心搏出量+低血管阻力（與心因性休克相反）
+  - 犬的過敏性休克靶器官是肝臟（門脈充血），貓是肺部
+  - Epinephrine是過敏性休克唯一的第一線藥物，抗組織胺和類固醇僅為輔助
+  - 敗血性休克的黃金一小時：在第一小時內給予抗生素和輸液復甦
+  - 如果輸液無法維持血壓→早期開始升壓藥（Norepinephrine首選）
+monitoringItems:
+  - 血壓（連續監測，MAP目標≥65 mmHg）
+  - 乳酸（復甦指標，q2-4h）
+  - CVP（容量狀態）
+  - 尿量（>1-2 mL/kg/hr）
+  - 體溫
+  - 血液培養追蹤（敗血性）
+  - 心電圖
+associatedSymptoms:
+  - symptomId: melaena
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: oliguria-anuria
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book-only

@@ -3,12 +3,13 @@ nameEn: Cholecalciferol Rodenticide Toxicosis
 nameZh: 膽鈣化醇殺鼠劑中毒
 bodySystem: toxicology
 description: 膽鈣化醇 (cholecalciferol/vitamin D3) 殺鼠劑中毒引起嚴重高鈣血症與高磷血症，導致軟組織鈣化（腎臟、心臟、血管壁）。毒性劑量低且治療困難，為潛在致命性中毒。需要數週的積極監測與治療。
-
 aliases:
-  - { alias: 維生素D殺鼠劑中毒, language: zh }
-  - { alias: Vitamin D3 Rodenticide Toxicosis, language: en }
-  - { alias: Cholecalciferol Poisoning, language: en }
-
+  - alias: 維生素D殺鼠劑中毒
+    language: zh
+  - alias: Vitamin D3 Rodenticide Toxicosis
+    language: en
+  - alias: Cholecalciferol Poisoning
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓同樣易感。含 cholecalciferol 的外用乾癬軟膏也是意外暴露來源。
-
 etiology:
   categories:
     - name: 毒性機制
@@ -30,7 +30,6 @@ etiology:
         - 含 cholecalciferol 的殺鼠劑
         - 含 calcipotriene 的外用乾癬藥膏
         - 維生素 D 補充劑過量
-
 clinicalSigns:
   early:
     - 食慾下降（攝入後 12-36 小時）
@@ -44,7 +43,6 @@ clinicalSigns:
     - 消化道出血
     - 肌肉震顫
     - 軟組織鈣化
-
 diagnosis:
   primaryTests:
     - name: 血清鈣與磷
@@ -56,7 +54,6 @@ diagnosis:
     - 心電圖（QT 間距縮短、心律不整）
     - 尿液分析（等張尿、鈣結晶）
     - 影像學（腎臟/軟組織鈣化）
-
 treatment:
   principles:
     - 促進鈣排泄
@@ -72,9 +69,57 @@ treatment:
     - Calcitonin 4-6 IU/kg SC q8-12h（急性高鈣血症）
     - 低鈣飲食
     - 監測血鈣每 24-48 小時持續 2-4 週
-
 prognosis: Cholecalciferol 中毒預後視診治時效與腎損傷程度而定。早期積極治療（24 小時內）預後可良好。已發展腎衰竭或嚴重軟組織鈣化者預後差。高鈣血症可持續 2-4 週，需長期監測。
-
 pubmedQueries:
   - query: '"cholecalciferol" AND (rodenticide OR toxicosis) AND (veterinary OR canine OR feline)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: oliguria-anuria
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 膽鈣化醇殺鼠劑中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - trembling 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清鈣與磷
+          notes: 高鈣血症（>12 mg/dL）與高磷血症為特徵性發現。可在攝入後 12-24 小時出現。離子鈣更準確
+        - name: 腎功能檢查
+          notes: BUN、creatinine 升高（腎臟鈣化損傷）
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 25-hydroxyvitamin D3 血清濃度（確認暴露）
+        - 心電圖（QT 間距縮短、心律不整）
+        - 尿液分析（等張尿、鈣結晶）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 促進鈣排泄
+        - 減少腸道鈣吸收
+        - 保護腎功能
+ddxSource: auto-generated

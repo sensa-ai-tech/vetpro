@@ -3,11 +3,11 @@ nameEn: Elbow Luxation
 nameZh: Elbow Luxation
 bodySystem: orthopedic
 description: 關節脫位,關節面失去正常對位關係。需緊急復位並評估穩定性,決定是否需手術固定。
-
 aliases:
-  - { alias: Elbow Luxation, language: zh }
-  - { alias: Elbow Luxation, language: en }
-
+  - alias: Elbow Luxation
+    language: zh
+  - alias: Elbow Luxation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 外傷
       examples:
         - 退化性變化
         - 先天性異常
-
 clinicalSigns:
   early:
     - 跛行
@@ -32,41 +30,62 @@ clinicalSigns:
   progressive:
     - 肌肉萎縮
     - 關節畸形
-
 diagnosis:
   primaryTests:
     - name: 骨科檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: X光(多方位)
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 非類固醇消炎藥(Carprofen 2-4 mg/kg PO q12-24h)
     - 疼痛控制
   surgical:
     - name: 根據病況可能需手術治療(骨折固定、韌帶重建、關節置換等)
-      notes: "依病況評估"
-
+      notes: 依病況評估
 prognosis:
-  general: "預後取決於損傷嚴重度、治療方式與飼主配合度。早期適當治療可改善功能恢復。"
-
+  general: 預後取決於損傷嚴重度、治療方式與飼主配合度。早期適當治療可改善功能恢復。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: Presumed concurrent medial coronoid process fracture is a frequent radiographic finding in dogs and cats with humeral condylar fractures.
+    title: >-
+      Presumed concurrent medial coronoid process fracture is a frequent radiographic finding in dogs and cats with
+      humeral condylar fractures.
     url: https://pubmed.ncbi.nlm.nih.gov/38103371/
     type: review
-    pmid: "38103371"
+    pmid: '38103371'
   - sourceOrg: American journal of veterinary research
-    title: The use of radioulnar ultra-high-molecular-weight polyethylene suture shows promise in surgical treatment of dogs with type 1 congenital elbow luxation.
+    title: >-
+      The use of radioulnar ultra-high-molecular-weight polyethylene suture shows promise in surgical treatment of dogs
+      with type 1 congenital elbow luxation.
     url: https://pubmed.ncbi.nlm.nih.gov/40997887/
     type: case-report
-    pmid: "40997887"
+    pmid: '40997887'
+associatedSymptoms:
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: Elbow Luxation 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cachexia-muscle-wasting 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 骨科檢查
+          notes: 需詳細評估
+        - name: X光(多方位)
+          notes: 協助確診
+ddxSource: auto-generated

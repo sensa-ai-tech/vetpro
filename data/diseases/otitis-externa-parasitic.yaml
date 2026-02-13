@@ -3,13 +3,15 @@ nameEn: Otitis Externa Parasitic
 nameZh: 寄生蟲性外耳炎
 bodySystem: ear
 description: 由耳蟎（Otodectes cynotis）或其他寄生蟲感染外耳道引起的炎症性疾病，以深色乾燥的耳垢及劇烈搔癢為特徵，為貓外耳炎最常見的原因之一。
-
 aliases:
-  - { alias: 寄生蟲性耳炎, language: zh }
-  - { alias: 耳蟎性外耳炎, language: zh }
-  - { alias: Parasitic otitis, language: en }
-  - { alias: Otoacariasis, language: en }
-
+  - alias: 寄生蟲性耳炎
+    language: zh
+  - alias: 耳蟎性外耳炎
+    language: zh
+  - alias: Parasitic otitis
+    language: en
+  - alias: Otoacariasis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓外耳炎中耳蟎佔 50% 以上，幼貓及多貓家庭尤其常見。高度接觸性傳染。
-
 etiology:
   categories:
     - name: 寄生蟲病原
@@ -34,7 +35,6 @@ etiology:
         - 酵母菌繼發感染
         - 過敏性反應（對蟎蟲抗原）
         - 機械性損傷（搔抓）
-
 clinicalSigns:
   early:
     - 劇烈搔耳
@@ -47,19 +47,17 @@ clinicalSigns:
     - 耳血腫（因過度搔抓）
     - 繼發性細菌/酵母菌感染
     - 疼痛
-
 diagnosis:
   primaryTests:
     - name: 耳鏡檢查
-      notes: "可直接觀察到活動的白色蟎蟲（Otodectes）。深色乾燥耳垢為特徵性發現"
+      notes: 可直接觀察到活動的白色蟎蟲（Otodectes）。深色乾燥耳垢為特徵性發現
     - name: 耳垢鏡檢
-      notes: "礦物油浸泡耳垢後低倍鏡檢，可見蟎蟲成蟲、幼蟲及卵"
+      notes: 礦物油浸泡耳垢後低倍鏡檢，可見蟎蟲成蟲、幼蟲及卵
   differentialDiagnoses:
     - 過敏性外耳炎
     - 酵母菌性外耳炎
     - 異物性外耳炎
     - 中耳炎
-
 treatment:
   medical:
     - 全身性驅蟎——Selamectin（Revolution）6-12 mg/kg 局部點滴，每月一次連續 2-3 次
@@ -68,39 +66,60 @@ treatment:
     - 耳道清潔後使用含 ivermectin 或 thiabendazole 耳藥
     - 同居動物同時治療（高度接觸傳染）
   surgical: []
-
 prognosis:
-  general: "使用適當驅蟎藥物預後良好，多數病例 2-4 週可完全清除。需同時治療所有接觸動物以防再感染。繼發感染需同步處理。"
-
+  general: 使用適當驅蟎藥物預後良好，多數病例 2-4 週可完全清除。需同時治療所有接觸動物以防再感染。繼發感染需同步處理。
 prevention:
   - 新進動物檢疫與耳道檢查
   - 定期使用廣譜驅蟲藥（含耳蟎覆蓋）
   - 多貓家庭定期耳道監測
   - 環境清潔（蟎蟲離開宿主可存活數週）
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline immune-mediated skin disorders: Part 2."
+    title: 'Feline immune-mediated skin disorders: Part 2.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12033568/
     type: review
-    pmid: "40219647"
+    pmid: '40219647'
     relevance: primary
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline immune-mediated skin disorders: Part 1."
+    title: 'Feline immune-mediated skin disorders: Part 1.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12033501/
     type: review
-    pmid: "40219649"
+    pmid: '40219649'
     relevance: primary
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: "The most effective systemic treatment in cats with otodectic mange: A critically appraised topic."
+    title: 'The most effective systemic treatment in cats with otodectic mange: A critically appraised topic.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12152695/
     type: review
-    pmid: "40510273"
+    pmid: '40510273'
     relevance: primary
   - sourceOrg: Microorganisms
-    title: A Retrospective Study (2019-2023) on the Prevalence and Antimicrobial Resistance of Isolates from Canine Clinical Samples Submitted to the University Veterinary Hospital in Stara Zagora, Bulgaria.
+    title: >-
+      A Retrospective Study (2019-2023) on the Prevalence and Antimicrobial Resistance of Isolates from Canine Clinical
+      Samples Submitted to the University Veterinary Hospital in Stara Zagora, Bulgaria.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11356874/
     type: research
-    pmid: "39203512"
+    pmid: '39203512'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: uncommon
+  - symptomId: alopecia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 寄生蟲性外耳炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 耳鏡檢查
+          notes: 可直接觀察到活動的白色蟎蟲（Otodectes）。深色乾燥耳垢為特徵性發現
+        - name: 耳垢鏡檢
+          notes: 礦物油浸泡耳垢後低倍鏡檢，可見蟎蟲成蟲、幼蟲及卵
+ddxSource: auto-generated

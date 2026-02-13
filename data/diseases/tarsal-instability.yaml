@@ -3,12 +3,13 @@ nameEn: Tarsal Instability
 nameZh: 跗關節不穩定
 bodySystem: orthopedic
 description: 跗關節（hock/tarsus）韌帶損傷導致的關節不穩定與過度活動。可因急性外傷（韌帶撕裂）或慢性退化引起。嚴重時後肢呈平足跟步態。
-
 aliases:
-  - { alias: "Hock Instability", language: en }
-  - { alias: "Tarsal Ligament Injury", language: en }
-  - { alias: "飛節不穩定", language: zh }
-
+  - alias: Hock Instability
+    language: en
+  - alias: Tarsal Ligament Injury
+    language: en
+  - alias: 飛節不穩定
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓偶見。高處墜落。
-
 etiology:
   categories:
     - name: 韌帶損傷
@@ -24,7 +24,6 @@ etiology:
         - 急性外傷
         - 慢性退化性
         - 免疫媒介性關節炎後
-
 clinicalSigns:
   early:
     - 後肢跛行
@@ -34,14 +33,12 @@ clinicalSigns:
     - 飛節不穩定
     - 平足跟步態（嚴重時）
     - 繼發性關節炎
-
 diagnosis:
   primaryTests:
     - name: 應力 X 光
       notes: 飛節異常鬆弛度
     - name: 觸診
       notes: 內翻/外翻不穩定
-
 treatment:
   principles:
     - 手術穩定
@@ -50,9 +47,32 @@ treatment:
     - 部分融合（proximal intertarsal）
     - 外固定架
     - 術後限制活動
-
 prognosis: 融合術後功能恢復良好。適應期 2-3 個月。犬適應三關節融合後行走正常。
-
 pubmedQueries:
   - query: '"tarsal instability" AND (veterinary OR canine OR feline) AND ("arthrodesis" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 跗關節不穩定 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 應力 X 光
+          notes: 飛節異常鬆弛度
+        - name: 觸診
+          notes: 內翻/外翻不穩定
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術穩定
+ddxSource: auto-generated

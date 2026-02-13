@@ -3,11 +3,11 @@ nameEn: Ameloblastoma
 nameZh: 造釉細胞瘤
 bodySystem: dental
 description: 齒源性上皮來源的良性但局部侵犯性腫瘤。生長緩慢但可造成顯著骨質破壞。犬以棘皮型最常見。需廣範圍切除以防復發。
-
 aliases:
-  - { alias: "Acanthomatous Ameloblastoma", language: en }
-  - { alias: "造牙細胞瘤", language: zh }
-
+  - alias: Acanthomatous Ameloblastoma
+    language: en
+  - alias: 造牙細胞瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 齒源性腫瘤
@@ -23,7 +22,6 @@ etiology:
         - 齒板上皮細胞增生
         - 良性但局部侵犯性強
         - 不轉移但局部骨質破壞
-
 clinicalSigns:
   early:
     - 牙齦腫塊
@@ -34,14 +32,12 @@ clinicalSigns:
     - 面部變形
     - 進食困難
     - 骨質破壞
-
 diagnosis:
   primaryTests:
     - name: 活檢
       notes: 組織病理確診。典型棘皮型排列
     - name: CT
       notes: 評估骨質侵犯範圍規劃手術
-
 treatment:
   principles:
     - 廣範圍手術切除
@@ -51,41 +47,78 @@ treatment:
     - 上顎骨部分切除（maxillectomy）
     - 需 1-2 cm 骨邊緣
     - 放射治療（無法手術時）
-
 prognosis: 廣範圍切除後預後良好。不完全切除復發率高。放射治療有效但需長期追蹤。不會轉移。
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Orofacial masses in domestic rabbits: a retrospective review of 120 cases from 2 institutions, 2000-2023."
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: 'Orofacial masses in domestic rabbits: a retrospective review of 120 cases from 2 institutions, 2000-2023.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11462579/
     type: review
-    pmid: "38389410"
+    pmid: '38389410'
   - sourceOrg: BMC oral health
     title: Metastasising ameloblastoma or ameloblastic carcinoma? A case report with mutation analyses.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10423427/
     type: review
-    pmid: "37573343"
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Ameloblastic carcinoma in horses: case report and literature review."
+    pmid: '37573343'
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: 'Ameloblastic carcinoma in horses: case report and literature review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9254059/
     type: review
-    pmid: "35037545"
+    pmid: '35037545'
   - sourceOrg: Frontiers in veterinary science
-    title: "Surgical Margins for Ameloblastoma in Dogs: A Review With an Emphasis on the Future."
+    title: 'Surgical Margins for Ameloblastoma in Dogs: A Review With an Emphasis on the Future.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8980539/
     type: review
-    pmid: "35392113"
+    pmid: '35392113'
   - sourceOrg: Medicina oral, patologia oral y cirugia bucal
     title: Analysis of 55 cases of adenomatoid odontogenic tumor in an Indian population and review of literature.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8719791/
     type: review
-    pmid: "34874924"
+    pmid: '34874924'
   - sourceOrg: Veterinary sciences
-    title: Identification of Ameloblastin as an Amyloid Precursor Protein of Amyloid-Producing Ameloblastoma in Dogs and Cats.
+    title: >-
+      Identification of Ameloblastin as an Amyloid Precursor Protein of Amyloid-Producing Ameloblastoma in Dogs and
+      Cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9963920/
     type: case-report
-    pmid: "36851470"
+    pmid: '36851470'
 pubmedQueries:
   - query: '"ameloblastoma" AND (veterinary OR canine) AND ("mandibulectomy" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: failure-to-grow
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 造釉細胞瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - failure-to-grow 相關症狀
+        - dysphagia 相關症狀
+        - halitosis-stomatitis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 活檢
+          notes: 組織病理確診。典型棘皮型排列
+        - name: CT
+          notes: 評估骨質侵犯範圍規劃手術
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 廣範圍手術切除
+        - 需包含足夠骨邊緣
+ddxSource: auto-generated

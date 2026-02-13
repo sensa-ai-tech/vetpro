@@ -3,13 +3,15 @@ nameEn: Prostatic Disease
 nameZh: 前列腺疾病
 bodySystem: reproductive
 description: 犬前列腺疾病為未絕育公犬常見問題，包括良性前列腺增生 (BPH)、前列腺炎、前列腺囊腫、前列腺膿瘍與前列腺腫瘤。BPH 為最常見型態，幾乎所有未結紮公犬 >5 歲均有不同程度增生。去勢為多數良性前列腺疾病的根治方法。
-
 aliases:
-  - { alias: 前列腺肥大, language: zh }
-  - { alias: Benign Prostatic Hyperplasia, language: en }
-  - { alias: BPH, language: en }
-  - { alias: Prostatic Disorders, language: en }
-
+  - alias: 前列腺肥大
+    language: zh
+  - alias: Benign Prostatic Hyperplasia
+    language: en
+  - alias: BPH
+    language: en
+  - alias: Prostatic Disorders
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓前列腺疾病極罕見。偶有前列腺囊腫或腫瘤報告。
-
 etiology:
   categories:
     - name: 前列腺疾病分類
@@ -32,7 +33,6 @@ etiology:
         - 未結紮公犬（BPH、囊腫、感染）
         - 高齡
         - 已結紮犬（腫瘤風險反而增加）
-
 clinicalSigns:
   early:
     - 帶血或混濁尿道分泌物
@@ -44,7 +44,6 @@ clinicalSigns:
     - 後肢僵硬（前列腺壓迫神經）
     - 發燒（前列腺炎/膿瘍）
     - 全身性感染（膿瘍破裂）
-
 diagnosis:
   primaryTests:
     - name: 直腸觸診
@@ -57,7 +56,6 @@ diagnosis:
     - 前列腺細針穿刺 (FNA) 細胞學
     - 腹部 X-ray（鈣化提示腫瘤）
     - CPSE（犬前列腺特異性酯酶）
-
 treatment:
   principles:
     - 去勢為多數良性疾病的根治方法
@@ -69,41 +67,108 @@ treatment:
     - 前列腺囊腫：去勢 ± 囊腫引流
     - 前列腺膿瘍：外科引流 + 去勢 + 抗生素
     - 前列腺腫瘤：預後差，姑息性 NSAIDs（piroxicam）
-
 prognosis: BPH 去勢後預後極佳。前列腺炎長療程抗生素 + 去勢後預後佳。前列腺膿瘍手術風險較高但可治癒。前列腺腫瘤預後極差（多已轉移），中位存活期數月。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Canine Perineal Hernia Associated with Prostatic Disorders: Is Castration Really Beneficial? A Retrospective Study."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Canine Perineal Hernia Associated with Prostatic Disorders: Is Castration Really Beneficial? A Retrospective
+      Study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12071062/
     type: research
-    pmid: "40362021"
+    pmid: '40362021'
     relevance: supporting
   - sourceOrg: Journal of advanced research
-    title: "Targeting benign prostate hyperplasia treatments: AR/TGF-&#x3b2;/NOX4 inhibition by apocynin suppresses inflammation and proliferation."
+    title: >-
+      Targeting benign prostate hyperplasia treatments: AR/TGF-&#x3b2;/NOX4 inhibition by apocynin suppresses
+      inflammation and proliferation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10918329/
     type: research
-    pmid: "37061215"
+    pmid: '37061215'
     relevance: supporting
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Total Perineal Prostatectomy: A Retrospective Study in Six Dogs."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Total Perineal Prostatectomy: A Retrospective Study in Six Dogs.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8773252/
     type: research
-    pmid: "35049822"
+    pmid: '35049822'
     relevance: supporting
-  - sourceOrg: "Veterinary radiology &amp; ultrasound : the official journal of the American College of Veterinary Radiology and the International Veterinary Radiology Association"
-    title: "CT measurement of prostate volume using OsiriX&#xae; viewer is reliable, repeatable, and not dependent on observer, CT protocol, or contrast enhancement in dogs."
+  - sourceOrg: >-
+      Veterinary radiology &amp; ultrasound : the official journal of the American College of Veterinary Radiology and
+      the International Veterinary Radiology Association
+    title: >-
+      CT measurement of prostate volume using OsiriX&#xae; viewer is reliable, repeatable, and not dependent on
+      observer, CT protocol, or contrast enhancement in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9795897/
     type: research
-    pmid: "35790051"
+    pmid: '35790051'
     relevance: supporting
-  - sourceOrg: "Veterinary surgery : VS"
+  - sourceOrg: 'Veterinary surgery : VS'
     title: Surgical treatment and outcome of sterile prostatic cysts in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8360136/
     type: research
-    pmid: "33960429"
+    pmid: '33960429'
     relevance: supporting
 pubmedQueries:
   - query: '"prostatic disease" OR "benign prostatic hyperplasia" AND (veterinary OR canine) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 前列腺疾病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估排便排尿困難及血尿（未絕育公犬）
+      findings:
+        - 排便困難
+        - 血尿或尿道分泌物
+        - 後肢僵硬
+        - 發燒（膿瘍）
+    - step: 2
+      action: 直腸觸診
+      details: 前列腺大小與對稱性
+      findings:
+        - 前列腺腫大
+        - 對稱增生（BPH）vs不對稱（腫瘤/膿瘍）
+        - 疼痛（攝護腺炎/膿瘍）
+        - 固定不動（腫瘤）
+    - step: 3
+      action: 影像學
+      details: 腹部X光與超音波
+      findings:
+        - 前列腺腫大
+        - 囊腫或膿瘍（無回音區）
+        - 礦化（腫瘤高度懷疑）
+        - 區域淋巴結評估
+    - step: 4
+      action: 細胞學與培養
+      details: 前列腺液或細針抽吸
+      findings:
+        - 前列腺液細胞學
+        - 細菌培養與藥敏
+        - 細針抽吸排除腫瘤
+        - 絕育後追蹤BPH縮小
+clinicalPearls:
+  - 直腸觸診是評估前列腺的基本方法
+  - BPH是未絕育公犬最常見前列腺問題
+  - 絕育不預防前列腺癌（可能甚至增加風險）
+  - 前列腺液或精液培養比尿液培養更準確
+  - 抗生素需能穿透前列腺屏障
+monitoringItems:
+  - 前列腺大小（超聲）
+  - 尿液培養
+  - 臨床症狀
+  - 若腫瘤：定期影像學分期
+associatedSymptoms:
+  - symptomId: constipation
+    frequency: common
+  - symptomId: faecal-tenesmus
+    frequency: common
+  - symptomId: pollakiuria
+    frequency: common
+  - symptomId: haematuria
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+ddxSource: book

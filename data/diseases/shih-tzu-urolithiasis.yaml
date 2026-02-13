@@ -3,18 +3,18 @@ nameEn: Shih Tzu Urolithiasis
 nameZh: 西施犬尿路結石
 bodySystem: urinary
 description: 西施犬常見的泌尿系統疾病,易形成草酸鈣與磷酸銨鎂結石。與品種代謝特性、飲食與遺傳相關,可引起尿路阻塞、血尿與反覆泌尿道感染。
-
 aliases:
-  - { alias: 西施犬膀胱結石, language: zh }
-  - { alias: Shih Tzu Bladder Stones, language: en }
-  - { alias: 西施犬尿石症, language: zh }
-
+  - alias: 西施犬膀胱結石
+    language: zh
+  - alias: Shih Tzu Bladder Stones
+    language: en
+  - alias: 西施犬尿石症
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 西施犬為高風險品種,草酸鈣結石發生率高,公犬因尿道狹窄易阻塞,發病年齡3歲以上
-
 etiology:
   categories:
     - name: 代謝因素
@@ -35,7 +35,6 @@ etiology:
       examples:
         - 泌尿道感染(磷酸銨鎂結石)
         - 皮質醇過多症
-
 clinicalSigns:
   early:
     - 血尿(hematuria)
@@ -46,23 +45,21 @@ clinicalSigns:
     - 反覆泌尿道感染
     - 尿失禁
     - 嚴重阻塞:嘔吐、虛脫、氮血症(急性腎後性腎衰竭)
-
 diagnosis:
   primaryTests:
     - name: 尿液分析
-      notes: "血尿、結晶尿(草酸鈣或磷酸銨鎂結晶)、細菌尿、pH值"
+      notes: 血尿、結晶尿(草酸鈣或磷酸銨鎂結晶)、細菌尿、pH值
     - name: 腹部X光
-      notes: "多數結石可見不透射影像,草酸鈣結石密度高"
+      notes: 多數結石可見不透射影像,草酸鈣結石密度高
     - name: 腹部超音波
-      notes: "偵測小結石或X光陰性結石(尿酸鹽、胱胺酸),評估腎盂積水"
+      notes: 偵測小結石或X光陰性結石(尿酸鹽、胱胺酸),評估腎盂積水
     - name: 結石分析
-      notes: "手術或自然排出結石成分分析,指導治療與預防"
+      notes: 手術或自然排出結石成分分析,指導治療與預防
   differentialDiagnoses:
     - 細菌性膀胱炎
     - 膀胱腫瘤
     - 前列腺疾病(公犬)
     - 特發性膀胱炎
-
 treatment:
   medical:
     - 草酸鈣結石:無法溶解,需外科或微創取出(膀胱切開術、雷射碎石)
@@ -72,10 +69,8 @@ treatment:
     - 止痛:Buprenorphine 0.01-0.02 mg/kg IV/IM q6-8h
     - 預防飲食:處方飼料(c/d或u/d),增加飲水
     - 尿液鹼化劑(草酸鈣預防):Potassium citrate 40-75 mg/kg PO q12h
-
 prognosis:
-  general: "成功取出結石後預後良好,但復發率高(草酸鈣50%於3年內復發)。需長期飲食管理與定期監測。未治療阻塞可於24-48小時內死亡。預防復發為管理重點。"
-
+  general: 成功取出結石後預後良好,但復發率高(草酸鈣50%於3年內復發)。需長期飲食管理與定期監測。未治療阻塞可於24-48小時內死亡。預防復發為管理重點。
 prevention:
   - 增加飲水(濕食、飲水機、多處水碗)
   - 結石預防處方飼料
@@ -83,3 +78,35 @@ prevention:
   - 維持理想體重
   - 控制尿路感染
   - 避免高草酸食物(菠菜、巧克力、堅果)
+associatedSymptoms:
+  - symptomId: haematuria
+    frequency: common
+  - symptomId: pollakiuria
+    frequency: common
+  - symptomId: urinary-incontinence
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 西施犬尿路結石 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - haematuria 相關症狀
+        - pollakiuria 相關症狀
+        - urinary-incontinence 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 尿液分析
+          notes: 血尿、結晶尿(草酸鈣或磷酸銨鎂結晶)、細菌尿、pH值
+        - name: 腹部X光
+          notes: 多數結石可見不透射影像,草酸鈣結石密度高
+        - name: 腹部超音波
+          notes: 偵測小結石或X光陰性結石(尿酸鹽、胱胺酸),評估腎盂積水
+ddxSource: auto-generated

@@ -3,19 +3,21 @@ nameEn: German Shepherd Degenerative Myelopathy
 nameZh: 德國牧羊犬退化性脊髓病
 bodySystem: neurology
 description: 退化性脊髓病（DM）是德國牧羊犬最常見的脊髓疾病，為一種進行性、非疼痛性的脊髓白質退化。SOD1 基因突變與疾病高度相關。臨床表現從後肢共濟失調逐漸進展至後肢癱瘓，最終影響前肢與呼吸功能。
-
 aliases:
-  - { alias: GSD 退化性脊髓病, language: zh }
-  - { alias: 犬退化性脊髓病變, language: zh }
-  - { alias: German Shepherd DM, language: en }
-  - { alias: Canine degenerative myelopathy, language: en }
-  - { alias: SOD1-associated myelopathy, language: en }
-
+  - alias: GSD 退化性脊髓病
+    language: zh
+  - alias: 犬退化性脊髓病變
+    language: zh
+  - alias: German Shepherd DM
+    language: en
+  - alias: Canine degenerative myelopathy
+    language: en
+  - alias: SOD1-associated myelopathy
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
     notes: 德國牧羊犬為最典型好發品種。8-14 歲為發病年齡。SOD1 基因突變純合子（A/A）為高風險。其他大型犬品種亦有報告。
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -28,7 +30,6 @@ etiology:
         - 脊髓白質軸索退化與脫髓鞘
         - 胸腰段脊髓最先受累
         - 類似人類肌萎縮性側索硬化症（ALS）
-
 clinicalSigns:
   early:
     - 後肢本體感覺減退（指關節翻正反射延遲）
@@ -41,7 +42,6 @@ clinicalSigns:
     - 排尿排便困難
     - 前肢受累（晚期）
     - 呼吸肌受累（終末期）
-
 diagnosis:
   primaryTests:
     - name: SOD1 基因檢測
@@ -50,7 +50,6 @@ diagnosis:
       notes: 後肢上運動神經元徵象。非疼痛性。進行性對稱性
     - name: MRI
       notes: 排除壓迫性脊髓疾病（椎間盤突出、腫瘤）。DM 的 MRI 通常無明顯異常
-
 treatment:
   principles:
     - 目前無有效治療可阻止疾病進展
@@ -65,9 +64,44 @@ treatment:
     - 維持營養
     - 高劑量維生素 E 與 C 補充（效果未確認）
     - 繁殖篩選（SOD1 基因檢測）
-
 prognosis: 預後不良。DM 為進行性不可逆疾病，無有效治療。從後肢共濟失調到完全癱瘓通常 6-12 個月。物理復健可延緩功能喪失速度。多數犬在 2-3 年內因生活品質考量而安樂死。基因篩選可避免繁殖出受影響個體。
-
 pubmedQueries:
   - query: '"degenerative myelopathy" AND ("German Shepherd" OR canine) AND (treatment OR management OR SOD1)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: constipation
+    frequency: uncommon
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 德國牧羊犬退化性脊髓病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - constipation 相關症狀
+        - paresis-paralysis 相關症狀
+        - ataxia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: SOD1 基因檢測
+          notes: DNA 基因型分析。純合子突變（A/A）支持診斷。但確診需排除其他疾病
+        - name: 神經學檢查
+          notes: 後肢上運動神經元徵象。非疼痛性。進行性對稱性
+        - name: MRI
+          notes: 排除壓迫性脊髓疾病（椎間盤突出、腫瘤）。DM 的 MRI 通常無明顯異常
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 目前無有效治療可阻止疾病進展
+        - 物理復健維持活動能力
+        - 支持性照護
+ddxSource: auto-generated

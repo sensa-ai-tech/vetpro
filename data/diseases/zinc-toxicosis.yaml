@@ -3,14 +3,17 @@ nameEn: Zinc Toxicosis
 nameZh: 鋅中毒
 bodySystem: toxicology
 description: 攝入含鋅金屬物（尤其美分硬幣與鍍鋅螺帽）後鋅溶解於胃酸中，引起嚴重溶血性貧血、肝腎損傷與胰臟炎的急性中毒症。犬最常見。
-
 aliases:
-  - { alias: 鋅中毒症, language: zh }
-  - { alias: 硬幣中毒, language: zh }
-  - { alias: Zinc Poisoning, language: en }
-  - { alias: Zinc Penny Toxicosis, language: en }
-  - { alias: Zinc Intoxication, language: en }
-
+  - alias: 鋅中毒症
+    language: zh
+  - alias: 硬幣中毒
+    language: zh
+  - alias: Zinc Poisoning
+    language: en
+  - alias: Zinc Penny Toxicosis
+    language: en
+  - alias: Zinc Intoxication
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓鋅中毒罕見，偶有吞食含鋅異物的病例報告。
-
 etiology:
   categories:
     - name: 常見鋅來源
@@ -39,7 +41,6 @@ etiology:
         - 直接肝細胞毒性
         - 胰臟損傷（鋅通過胰管時的局部毒性）
         - 腎小管損傷
-
 clinicalSigns:
   early:
     - 嘔吐（常為首發症狀）
@@ -60,25 +61,23 @@ clinicalSigns:
     - 胰臟炎
     - 多器官衰竭
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 腹部 X 光
-      notes: "胃內或腸道內高密度金屬異物。美分硬幣外觀典型且易辨識。為最重要的初始診斷工具"
+      notes: 胃內或腸道內高密度金屬異物。美分硬幣外觀典型且易辨識。為最重要的初始診斷工具
     - name: 血清鋅濃度
-      notes: "正常犬 0.7-2.0 μg/mL。中毒犬通常 >10 μg/mL。確診但結果可能延遲，不應等待結果才治療"
+      notes: 正常犬 0.7-2.0 μg/mL。中毒犬通常 >10 μg/mL。確診但結果可能延遲，不應等待結果才治療
   imaging:
     - name: 腹部 X 光
-      notes: "金屬異物定位。追蹤異物是否移動或已取出"
+      notes: 金屬異物定位。追蹤異物是否移動或已取出
     - name: 腹部超音波
-      notes: "評估胰臟炎徵象、腎臟變化"
+      notes: 評估胰臟炎徵象、腎臟變化
   additional:
     - CBC（溶血性貧血、Heinz body、球形紅血球 spherocytes）
     - 生化（肝指數上升、BUN/creatinine、bilirubin、amylase/lipase）
     - 尿液分析（血紅素尿、管型）
     - 凝血功能（DIC 篩檢）
     - 網狀紅血球計數
-
 treatment:
   principles:
     - 立即移除鋅源為最重要步驟
@@ -96,36 +95,94 @@ treatment:
     - 監測 PCV/TS 每 4-6 小時直至穩定
     - 移除異物後鋅濃度通常在 24-48 小時內下降
     - 螯合治療 (CaNa2-EDTA) 在等待手術/內視鏡期間可考慮使用
-
 prognosis: 及時移除鋅源並給予支持治療者預後良好至佳。延遲診斷導致嚴重溶血與多器官衰竭者預後差。鋅異物停留胃內時間越長，溶血越嚴重。多數在移除鋅源後 1-2 週內完全康復。
-
 guidelineRefs:
   - sourceOrg: Journal of the American Veterinary Medical Association
     title: Zinc-induced hemolytic anemia in dogs caused by ingestion of pennies
     url: https://pubmed.ncbi.nlm.nih.gov/2407459/
     type: research
-    pmid: "2407459"
+    pmid: '2407459'
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
     title: Zinc toxicosis in small animals
     url: https://pubmed.ncbi.nlm.nih.gov/21029299/
     type: review
-    pmid: "21029299"
+    pmid: '21029299'
   - sourceOrg: Journal of the American Animal Hospital Association
-    title: "Zinc intoxication in dogs: 19 cases (1991-2003)"
+    title: 'Zinc intoxication in dogs: 19 cases (1991-2003)'
     url: https://pubmed.ncbi.nlm.nih.gov/15533962/
     type: research
-    pmid: "15533962"
+    pmid: '15533962'
   - sourceOrg: JFMS open reports
     title: Zinc toxicosis in a cat associated with ingestion of a metal screw nut.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9685144/
     type: case-report
-    pmid: "36439681"
+    pmid: '36439681'
     relevance: supporting
 pubmedQueries:
-  - query: '"zinc" AND ("toxicosis" OR "poisoning" OR "intoxication") AND (dog OR cat OR canine OR feline) AND ("hemolytic" OR "penny" OR "treatment")'
+  - query: >-
+      "zinc" AND ("toxicosis" OR "poisoning" OR "intoxication") AND (dog OR cat OR canine OR feline) AND ("hemolytic" OR
+      "penny" OR "treatment")
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "TOX"
-  sectionTitle: "ZINC TOXICOSIS"
+  chapter: TOX
+  sectionTitle: ZINC TOXICOSIS
   pdfPage: 3129
+diagnosticAlgorithm:
+  title: 鋅中毒 診斷流程
+  steps:
+    - step: 1
+      action: 急診評估
+      details: 評估黏膜顏色、PCV和異物攝入史
+      findings:
+        - 蒼白黏膜
+        - 黃疸
+        - 血紅素尿
+    - step: 2
+      action: 影像學檢查
+      details: 腹部X光確認金屬異物
+      findings:
+        - 金屬異物可見
+        - 胃內硬幣
+        - 腸道異物
+    - step: 3
+      action: 血液學確認
+      details: CBC、生化、凝血功能評估溶血和器官損傷
+      findings:
+        - 溶血性貧血
+        - 肝腎指數升高
+        - DIC徵象
+    - step: 4
+      action: 緊急治療
+      details: 移除異物+輸血+支持治療
+      findings:
+        - 內視鏡移除
+        - 手術移除
+        - 需輸血
+clinicalPearls:
+  - 1982年後美國硬幣含97.5%鋅，幼犬吞食硬幣是最常見的鋅中毒原因
+  - 腹部X光見到金屬異物+溶血性貧血=高度懷疑鋅中毒
+  - 移除鋅來源是最重要的治療，螯合劑在鋅中毒中效果有限
+monitoringItems:
+  - PCV每4-6小時監測直到穩定
+  - 網織紅血球計數追蹤再生反應
+  - 腎功能和尿液輸出量監測
+  - 異物移除後確認血鋅濃度下降
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+ddxSource: book

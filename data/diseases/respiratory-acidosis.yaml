@@ -3,13 +3,15 @@ nameEn: Respiratory Acidosis
 nameZh: 呼吸性酸中毒
 bodySystem: respiratory
 description: 因肺泡通氣不足（hypoventilation）導致二氧化碳蓄積，PaCO2 升高而引起血液 pH 下降的酸鹼失衡。常見於上呼吸道阻塞、呼吸肌疾病或中樞神經系統抑制，嚴重時需機械通氣支持。
-
 aliases:
-  - { alias: 呼吸性酸血症, language: zh }
-  - { alias: 高碳酸血症, language: zh }
-  - { alias: Hypercapnia, language: en }
-  - { alias: Respiratory Acidaemia, language: en }
-
+  - alias: 呼吸性酸血症
+    language: zh
+  - alias: 高碳酸血症
+    language: zh
+  - alias: Hypercapnia
+    language: en
+  - alias: Respiratory Acidaemia
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓可見於嚴重貓氣喘發作、胸腔積液/氣胸壓迫肺臟或麻醉後通氣恢復不良。
-
 etiology:
   categories:
     - name: 通氣功能障礙
@@ -30,7 +31,6 @@ etiology:
         - 麻醉藥物或鴉片類過量
         - 腦幹病變
         - 高位頸髓損傷
-
 clinicalSigns:
   early:
     - 呼吸費力
@@ -42,14 +42,12 @@ clinicalSigns:
     - 呼吸型態異常（淺快或深慢）
     - 心律不整
     - 昏迷
-
 diagnosis:
   primaryTests:
     - name: 動脈血氣分析
       notes: pH <7.35，PaCO2 >45 mmHg（犬貓）。急性時 HCO3- 正常或輕度升高，慢性時腎臟代償使 HCO3- 明顯升高。
     - name: 呼吸功能評估
       notes: 呼吸率、潮氣量、呼吸型態。End-tidal CO2（ETCO2）監測可即時反映通氣狀態。
-
 treatment:
   principles:
     - 改善通氣為根本治療
@@ -62,41 +60,75 @@ treatment:
     - 藥物性呼吸抑制→使用拮抗劑（Naloxone 拮抗鴉片類）
     - 嚴重通氣衰竭→機械通氣
     - 監測 ETCO2 或間歇性 ABG
-
 prognosis: 預後取決於通氣功能障礙的可逆性。可解除的阻塞（如氣胸引流、喉麻痺手術）預後良好。需長期機械通氣者預後不佳。慢性呼吸性酸中毒（如嚴重肺纖維化）預後取決於基礎病因。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Causes, Effects and Methods of Monitoring Gas Exchange Disturbances during Equine General Anaesthesia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8300395/
     type: review
-    pmid: "34359177"
+    pmid: '34359177'
     relevance: primary
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Analgesia during Parturition in Domestic Animals: Perspectives and Controversies on Its Use."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Analgesia during Parturition in Domestic Animals: Perspectives and Controversies on Its Use.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9558556/
     type: review
-    pmid: "36230426"
+    pmid: '36230426'
     relevance: primary
   - sourceOrg: Cardiovascular drugs and therapy
-    title: "Searching for Preclinical Models of Acute Decompensated Heart Failure: a Concise Narrative Overview and a Novel Swine Model."
+    title: >-
+      Searching for Preclinical Models of Acute Decompensated Heart Failure: a Concise Narrative Overview and a Novel
+      Swine Model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9270312/
     type: review
-    pmid: "33098053"
+    pmid: '33098053'
     relevance: primary
   - sourceOrg: Microbiology spectrum
     title: Gut microbiota modulates lung gene expression and metabolism to aid SD rats in adapting to low-pressure hypoxia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12131785/
     type: research
-    pmid: "40326772"
+    pmid: '40326772'
     relevance: supporting
   - sourceOrg: Epilepsia open
-    title: Tolerability and pharmacokinetics of intravenous allopregnanolone with and without midazolam pretreatment in two healthy dogs.
+    title: >-
+      Tolerability and pharmacokinetics of intravenous allopregnanolone with and without midazolam pretreatment in two
+      healthy dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10235566/
     type: research
-    pmid: "36919379"
+    pmid: '36919379'
     relevance: supporting
 pubmedQueries:
   - query: '"Respiratory Acidosis" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: coma-stupor
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 呼吸性酸中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - coma-stupor 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 動脈血氣分析
+          notes: pH <7.35，PaCO2 >45 mmHg（犬貓）。急性時 HCO3- 正常或輕度升高，慢性時腎臟代償使 HCO3- 明顯升高。
+        - name: 呼吸功能評估
+          notes: 呼吸率、潮氣量、呼吸型態。End-tidal CO2（ETCO2）監測可即時反映通氣狀態。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 改善通氣為根本治療
+        - 解除呼吸道阻塞
+        - 嚴重者需機械通氣
+ddxSource: auto-generated

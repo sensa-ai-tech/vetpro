@@ -3,17 +3,16 @@ nameEn: Feline Plasma Cell Pododermatitis
 nameZh: 貓漿細胞性足墊炎
 bodySystem: dermatology
 description: 貓特有之免疫介導性足墊疾病，漿細胞浸潤導致足墊腫脹、潰瘍。多發於中央掌墊或蹠墊，可能與FIV感染相關。預後通常良好。
-
 aliases:
-  - { alias: 貓枕墊炎, language: zh }
-  - { alias: Pillow Foot, language: en }
-
+  - alias: 貓枕墊炎
+    language: zh
+  - alias: Pillow Foot
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 任何年齡貓皆可能發生，FIV陽性貓風險較高
-
 etiology:
   categories:
     - name: 免疫介導機制
@@ -26,7 +25,6 @@ etiology:
         - 病毒感染（FIV, FeLV）
         - 過敏反應
         - 接觸性刺激物
-
 clinicalSigns:
   early:
     - 單一或多個足墊柔軟腫脹
@@ -37,23 +35,21 @@ clinicalSigns:
     - 出血
     - 疼痛、明顯跛行
     - 繼發細菌感染
-
 diagnosis:
   primaryTests:
     - name: 足墊細針抽吸細胞學
-      notes: "大量成熟漿細胞（Russell bodies）"
+      notes: 大量成熟漿細胞（Russell bodies）
     - name: 組織切片
-      notes: "真皮漿細胞浸潤、淋巴濾泡形成"
+      notes: 真皮漿細胞浸潤、淋巴濾泡形成
     - name: FIV/FeLV檢測
-      notes: "排除相關病毒感染"
+      notes: 排除相關病毒感染
     - name: 血清蛋白電泳
-      notes: "多株性高免疫球蛋白血症"
+      notes: 多株性高免疫球蛋白血症
   differentialDiagnoses:
     - 嗜酸性肉芽腫
     - 腫瘤（肥大細胞瘤、淋巴瘤）
     - 細菌或真菌感染
     - 外傷
-
 treatment:
   medical:
     - 輕症可能自發緩解，觀察即可
@@ -62,11 +58,31 @@ treatment:
     - 環孢素 5 mg/kg PO q24h（難治型）
     - 外科切除（單一病灶、難治性潰瘍）
     - 繼發感染：適當抗生素
-
 prognosis:
-  general: "預後良好，多數病例對治療反應佳或自發緩解。部分病例需長期低劑量免疫抑制。極少數可能復發。"
-
+  general: 預後良好，多數病例對治療反應佳或自發緩解。部分病例需長期低劑量免疫抑制。極少數可能復發。
 prevention:
   - FIV/FeLV預防及檢測
   - 避免足墊外傷
   - 定期檢查足墊健康
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 貓漿細胞性足墊炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 足墊細針抽吸細胞學
+          notes: 大量成熟漿細胞（Russell bodies）
+        - name: 組織切片
+          notes: 真皮漿細胞浸潤、淋巴濾泡形成
+        - name: FIV/FeLV檢測
+          notes: 排除相關病毒感染
+ddxSource: auto-generated

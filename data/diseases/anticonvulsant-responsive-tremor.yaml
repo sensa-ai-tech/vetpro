@@ -3,11 +3,11 @@ nameEn: Anticonvulsant Responsive Tremor
 nameZh: Anticonvulsant Responsive Tremor
 bodySystem: neurology
 description: 不自主的節律性肌肉收縮,可能為原發性或繼發於其他神經疾病。需鑑別診斷確定病因,部分類型對抗癲癇藥物有反應。
-
 aliases:
-  - { alias: Anticonvulsant Responsive Tremor, language: zh }
-  - { alias: Anticonvulsant Responsive Tremor, language: en }
-
+  - alias: Anticonvulsant Responsive Tremor
+    language: zh
+  - alias: Anticonvulsant Responsive Tremor
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 神經元異常放電
       examples:
         - 髓鞘或軸突病變
         - 腦血管疾病
-
 clinicalSigns:
   early:
     - 神經功能輕度異常
@@ -32,33 +30,55 @@ clinicalSigns:
   progressive:
     - 神經缺損加重
     - 癱瘓或意識障礙
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: MRI或CT
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 抗癲癇藥物(Phenobarbital 2-3 mg/kg PO q12h)
     - 支持性治療
-
 prognosis:
-  general: "預後取決於根本病因與治療反應。早期診斷與適當治療可改善預後。"
-
+  general: 預後取決於根本病因與治療反應。早期診斷與適當治療可改善預後。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
-  - sourceOrg: "Biomedicine &amp; pharmacotherapy = Biomedecine &amp; pharmacotherapie"
-    title: "Preconditioning by ultra-low dose of tramadol reduces the severity of tramadol-induced seizure: Contribution of glutamate receptors."
+  - sourceOrg: Biomedicine &amp; pharmacotherapy = Biomedecine &amp; pharmacotherapie
+    title: >-
+      Preconditioning by ultra-low dose of tramadol reduces the severity of tramadol-induced seizure: Contribution of
+      glutamate receptors.
     url: https://pubmed.ncbi.nlm.nih.gov/33249277/
     type: research
-    pmid: "33249277"
+    pmid: '33249277'
+associatedSymptoms:
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: Anticonvulsant Responsive Tremor 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - behaviour-change 相關症狀
+        - paresis-paralysis 相關症狀
+        - seizures 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 需詳細評估
+        - name: MRI或CT
+          notes: 協助確診
+ddxSource: auto-generated

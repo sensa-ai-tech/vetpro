@@ -2,14 +2,18 @@ slug: filaroides
 nameEn: Filaroides
 nameZh: 絲狀蟲感染
 bodySystem: infectious
-description: Filaroides spp.（主要為 F. hirthi 及 Oslerus osleri）為犬呼吸道寄生線蟲。O. osleri 寄居氣管分岔處形成結節，引起慢性咳嗽。F. hirthi 寄居肺泡，多數為亞臨床感染但免疫抑制犬可發展嚴重肺炎。
-
+description: >-
+  Filaroides spp.（主要為 F. hirthi 及 Oslerus osleri）為犬呼吸道寄生線蟲。O. osleri 寄居氣管分岔處形成結節，引起慢性咳嗽。F. hirthi
+  寄居肺泡，多數為亞臨床感染但免疫抑制犬可發展嚴重肺炎。
 aliases:
-  - { alias: 犬呼吸道絲狀蟲, language: zh }
-  - { alias: Oslerus osleri 感染, language: zh }
-  - { alias: Oslerus Infection, language: en }
-  - { alias: Filaroides hirthi, language: en }
-
+  - alias: 犬呼吸道絲狀蟲
+    language: zh
+  - alias: Oslerus osleri 感染
+    language: zh
+  - alias: Oslerus Infection
+    language: en
+  - alias: Filaroides hirthi
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓 Filaroides/Oslerus 感染極罕見，偶有報告。
-
 etiology:
   categories:
     - name: 主要種類
@@ -30,7 +33,6 @@ etiology:
         - O. osleri 經母犬唾液/嘔吐物傳播給幼犬
         - F. hirthi 排出 L1 幼蟲可直接感染（不需中間宿主）
         - 犬舍內可能爆發
-
 clinicalSigns:
   early:
     - 慢性乾咳（O. osleri）
@@ -41,7 +43,6 @@ clinicalSigns:
     - 呼吸困難
     - 運動不耐
     - F. hirthi 超級感染：嚴重肺炎
-
 diagnosis:
   primaryTests:
     - name: 支氣管鏡檢
@@ -52,7 +53,6 @@ diagnosis:
     - 胸腔 X-ray（O. osleri 結節、F. hirthi 間質性肺浸潤）
     - BAL 細胞學
     - 組織病理學（結節生檢）
-
 treatment:
   principles:
     - O. osleri 治療以 fenbendazole 為首選
@@ -64,9 +64,51 @@ treatment:
     - O. osleri 嚴重氣管阻塞考慮內視鏡下移除結節
     - F. hirthi 超級感染需停用或減量 corticosteroid
     - 治療後追蹤糞便檢查與影像
-
 prognosis: O. osleri 適當治療後預後良好，結節可在數週至數月內縮小消失。F. hirthi 免疫正常犬預後佳。免疫抑制犬超級感染預後謹慎。
-
 pubmedQueries:
   - query: '"Filaroides" OR "Oslerus osleri" AND (canine OR veterinary) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: stertor-stridor
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 絲狀蟲感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - coughing 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 支氣管鏡檢
+          notes: O. osleri 氣管分岔處可直接觀察到粉色至白色結節。可同時生檢確認
+        - name: 糞便 Baermann 法
+          notes: F. hirthi 排出的 L1 幼蟲。O. osleri 幼蟲也可偵測但敏感度較低
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 胸腔 X-ray（O. osleri 結節、F. hirthi 間質性肺浸潤）
+        - BAL 細胞學
+        - 組織病理學（結節生檢）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - O. osleri 治療以 fenbendazole 為首選
+        - F. hirthi 免疫正常者多自行清除
+        - 減少免疫抑制劑使用
+ddxSource: auto-generated

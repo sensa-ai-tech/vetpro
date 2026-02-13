@@ -3,18 +3,18 @@ nameEn: Vaccination Protocol Rabbit
 nameZh: 兔疫苗接種方案
 bodySystem: other
 description: 兔的疫苗接種指引,主要針對兔出血症病毒(RHDV)及兔黏液瘤病毒。這兩種疾病致死率極高,疫苗接種為關鍵預防措施,尤其在疾病流行地區。
-
 aliases:
-  - { alias: 兔預防接種, language: zh }
-  - { alias: Rabbit vaccination schedule, language: en }
-  - { alias: Myxomatosis and RHDV vaccination, language: en }
-
+  - alias: 兔預防接種
+    language: zh
+  - alias: Rabbit vaccination schedule
+    language: en
+  - alias: Myxomatosis and RHDV vaccination
+    language: en
 species:
   - speciesCommon: rabbit
     speciesScientific: Oryctolagus cuniculus
     prevalence: moderate
     notes: 歐洲及澳洲地區兔出血症及黏液瘤高度流行,疫苗接種為標準預防措施
-
 etiology:
   categories:
     - name: 疫苗種類
@@ -22,7 +22,6 @@ etiology:
         - 兔出血症病毒疫苗 (RHDV1 + RHDV2)
         - 兔黏液瘤病毒疫苗
         - 混合疫苗(某些地區可取得)
-
 clinicalSigns:
   early:
     - 注射部位輕微腫脹
@@ -30,61 +29,87 @@ clinicalSigns:
   progressive:
     - 輕度發燒(罕見)
     - 嗜睡持續24-48小時
-
 diagnosis:
   primaryTests:
     - name: 接種前健康檢查
-      notes: "確認體重、體溫、呼吸狀態正常"
+      notes: 確認體重、體溫、呼吸狀態正常
     - name: 流行病學風險評估
-      notes: "評估地域流行狀況及接觸史"
+      notes: 評估地域流行狀況及接觸史
   differentialDiagnoses:
     - 疫苗過敏反應
     - 其他感染性疾病
-
 treatment:
   medical:
     - RHDV疫苗:5週齡以上,每6-12個月補強一次
     - 黏液瘤疫苗:4-6週齡首次接種,每6-12個月補強
     - 混合疫苗可簡化接種流程
-
 prognosis:
-  general: "疫苗安全有效,保護力可達90%以上。定期補強接種可維持持續保護。"
-
+  general: 疫苗安全有效,保護力可達90%以上。定期補強接種可維持持續保護。
 prevention:
   - 避免在懷孕、哺乳或生病期間接種
   - 皮下注射,避免肌肉注射
   - 記錄疫苗廠牌及批號
   - 接種後觀察30分鐘確認無過敏反應
-
-
 guidelineRefs:
   - sourceOrg: Virology journal
     title: Multiple gene-deletion vaccinia virus Tiantan strain against mpox.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11762464/
     type: research
-    pmid: "39863910"
+    pmid: '39863910'
     relevance: supporting
   - sourceOrg: Parasitology research
     title: Functional annotation and analysis of the hard tick Dermacentor nuttalli midgut genes.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12078433/
     type: research
-    pmid: "40369327"
+    pmid: '40369327'
     relevance: supporting
   - sourceOrg: BMC veterinary research
-    title: An efficient method for the selective isolation of feline herpesvirus 1(FHV-1) in feline calicivirus (FCV) coinfected specimens.
+    title: >-
+      An efficient method for the selective isolation of feline herpesvirus 1(FHV-1) in feline calicivirus (FCV)
+      coinfected specimens.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12057004/
     type: research
-    pmid: "40329322"
+    pmid: '40329322'
     relevance: supporting
   - sourceOrg: BMC veterinary research
-    title: Complete genome sequencing, molecular and antigenic characterization of duck hepatitis A virus type 1 isolated in Benha, Egypt.
+    title: >-
+      Complete genome sequencing, molecular and antigenic characterization of duck hepatitis A virus type 1 isolated in
+      Benha, Egypt.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12492683/
     type: research
-    pmid: "41044682"
+    pmid: '41044682'
     relevance: supporting
   - sourceOrg: Scientific reports
-    title: The impact of innate and humoral immune mechanisms on vaccine induced protection against avian influenza H9N2 in broilers.
+    title: >-
+      The impact of innate and humoral immune mechanisms on vaccine induced protection against avian influenza H9N2 in
+      broilers.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12675785/
     type: research
-    pmid: "41331407"
+    pmid: '41331407'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔疫苗接種方案 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - weakness 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 接種前健康檢查
+          notes: 確認體重、體溫、呼吸狀態正常
+        - name: 流行病學風險評估
+          notes: 評估地域流行狀況及接觸史
+ddxSource: auto-generated

@@ -3,19 +3,20 @@ nameEn: Golden Retriever Muscular Dystrophy
 nameZh: 黃金獵犬肌肉萎縮症
 bodySystem: musculoskeletal
 description: 黃金獵犬肌肉萎縮症（GRMD）是 Duchenne 肌肉萎縮症的犬類同源疾病，由 X 染色體上 dystrophin 基因突變引起。肌細胞膜缺乏 dystrophin 蛋白，導致進行性肌肉壞死與纖維化。公犬發病，母犬為攜帶者。
-
 aliases:
-  - { alias: 黃金獵犬 GRMD, language: zh }
-  - { alias: 犬 Duchenne 型肌萎縮, language: zh }
-  - { alias: GRMD, language: en }
-  - { alias: Canine Duchenne muscular dystrophy, language: en }
-
+  - alias: 黃金獵犬 GRMD
+    language: zh
+  - alias: 犬 Duchenne 型肌萎縮
+    language: zh
+  - alias: GRMD
+    language: en
+  - alias: Canine Duchenne muscular dystrophy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: rare
     notes: X 連鎖隱性遺傳，僅公犬發病。症狀 6-8 週齡出現。GRMD 是人類 Duchenne 肌肉萎縮症的重要動物模型。
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -29,7 +30,6 @@ etiology:
         - 反覆壞死-再生循環
         - 進行性纖維化與脂肪浸潤
         - 肌力進行性喪失
-
 clinicalSigns:
   early:
     - 幼犬吸吮無力
@@ -44,21 +44,19 @@ clinicalSigns:
     - 關節攣縮
     - 心肌病變
     - 呼吸困難
-
 diagnosis:
   primaryTests:
     - name: 血清 CK
-      notes: "顯著升高（數萬至數十萬 U/L）。出生後即可偵測"
+      notes: 顯著升高（數萬至數十萬 U/L）。出生後即可偵測
     - name: Dystrophin 基因檢測
-      notes: "確診金標準。PCR 或定序偵測突變"
+      notes: 確診金標準。PCR 或定序偵測突變
     - name: 肌肉活檢
-      notes: "免疫組化染色顯示 dystrophin 缺失。壞死-再生交替、纖維化"
+      notes: 免疫組化染色顯示 dystrophin 缺失。壞死-再生交替、纖維化
   differentialDiagnoses:
     - 多發性肌炎
     - 中心核肌病
     - 先天性重症肌無力
     - 糖原儲積病
-
 treatment:
   medical:
     - 無治癒性治療（研究中有基因治療試驗）
@@ -66,34 +64,64 @@ treatment:
     - 軟質易消化食物（吞嚥困難時）
     - 物理治療維持關節活動度
     - 類固醇（Prednisone）可能短暫改善（研究資料）
-
 prognosis:
-  general: "預後不良。多數受影響犬在 1-2 歲因呼吸衰竭、吸入性肺炎或心肌病變死亡。部分犬可存活較久但生活品質明顯下降。GRMD 是重要的基因治療研究模型。"
-
+  general: 預後不良。多數受影響犬在 1-2 歲因呼吸衰竭、吸入性肺炎或心肌病變死亡。部分犬可存活較久但生活品質明顯下降。GRMD 是重要的基因治療研究模型。
 prevention:
   - 攜帶母犬的基因篩選
   - 攜帶者母犬不應繁殖
   - 公犬出生後 CK 檢測可早期辨識
-
-
 guidelineRefs:
   - sourceOrg: Biomedicines
     title: Skipping Multiple Exons to Treat DMD-Promises and Challenges.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5874658/
     type: review
-    pmid: "29301272"
+    pmid: '29301272'
   - sourceOrg: Skeletal muscle
     title: The golden retriever model of Duchenne muscular dystrophy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5438519/
     type: review
-    pmid: "28526070"
+    pmid: '28526070'
   - sourceOrg: Journal of cachexia, sarcopenia and muscle
-    title: Receptor interacting protein kinase-3 mediates both myopathy and cardiomyopathy in preclinical animal models of Duchenne muscular dystrophy.
+    title: >-
+      Receptor interacting protein kinase-3 mediates both myopathy and cardiomyopathy in preclinical animal models of
+      Duchenne muscular dystrophy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10751447/
     type: research
-    pmid: "37909859"
+    pmid: '37909859'
   - sourceOrg: Molecular imaging and biology
     title: Glucose Metabolism as a Pre-clinical Biomarker for the Golden Retriever Model of Duchenne Muscular Dystrophy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6153676/
     type: research
-    pmid: "29508262"
+    pmid: '29508262'
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: ptyalism
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 黃金獵犬肌肉萎縮症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - dysphagia 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清 CK
+          notes: 顯著升高（數萬至數十萬 U/L）。出生後即可偵測
+        - name: Dystrophin 基因檢測
+          notes: 確診金標準。PCR 或定序偵測突變
+        - name: 肌肉活檢
+          notes: 免疫組化染色顯示 dystrophin 缺失。壞死-再生交替、纖維化
+ddxSource: auto-generated

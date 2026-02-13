@@ -3,11 +3,11 @@ nameEn: Typhlitis
 nameZh: 盲腸炎
 bodySystem: gastrointestinal
 description: 盲腸發炎,可能因感染、異物或發炎性腸病引起。臨床表現為腹瀉、腹痛及血便。
-
 aliases:
-  - { alias: 盲腸發炎, language: zh }
-  - { alias: Cecal Inflammation, language: en }
-
+  - alias: 盲腸發炎
+    language: zh
+  - alias: Cecal Inflammation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 罕見
-
 etiology:
   categories:
     - name: 感染性
@@ -27,7 +26,6 @@ etiology:
     - name: 發炎性
       examples:
         - 發炎性腸病
-
 clinicalSigns:
   early:
     - 腹瀉 (可能帶血)
@@ -36,63 +34,103 @@ clinicalSigns:
     - 持續腹瀉
     - 體重減輕
     - 發燒
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "盲腸壁增厚"
+      notes: 盲腸壁增厚
     - name: 結腸鏡檢查
-      notes: "直視盲腸,取組織切片"
+      notes: 直視盲腸,取組織切片
     - name: 糞便檢查
-      notes: "寄生蟲、培養"
+      notes: 寄生蟲、培養
   differentialDiagnoses:
     - 結腸炎
     - 盲腸腫瘤
     - 腸套疊
-
 treatment:
   medical:
     - 抗生素 (Metronidazole, Tylosin)
     - 驅蟲
     - 抗發炎飲食
     - 外科切除 (嚴重或慢性病例)
-
 prognosis:
-  general: "預後良好至謹慎;感染性病因預後佳;慢性或發炎性腸病預後謹慎"
-
+  general: 預後良好至謹慎;感染性病因預後佳;慢性或發炎性腸病預後謹慎
 prevention:
   - 定期驅蟲
   - 適當飲食管理
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Clostridium spiroforme-associated enteric disease in domestic rabbits: a retrospective study of 32 cases in California, 1992-2019, and literature review."
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: >-
+      Clostridium spiroforme-associated enteric disease in domestic rabbits: a retrospective study of 32 cases in
+      California, 1992-2019, and literature review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11457741/
     type: review
-    pmid: "38842433"
+    pmid: '38842433'
     relevance: primary
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Postmortem examination of equids &gt;1-year-old with enterotyphlocolitis in Ontario: a retrospective descriptive study."
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: >-
+      Postmortem examination of equids &gt;1-year-old with enterotyphlocolitis in Ontario: a retrospective descriptive
+      study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10331376/
     type: review
-    pmid: "37204051"
+    pmid: '37204051'
     relevance: primary
   - sourceOrg: Clinical microbiology reviews
     title: The Spirochete Brachyspira pilosicoli, Enteric Pathogen of Animals and Humans.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5740978/
     type: review
-    pmid: "29187397"
+    pmid: '29187397'
     relevance: supporting
   - sourceOrg: Iranian journal of veterinary research
-    title: The first record of Heterakis gallinarum as a cause of fatal nodular typhlitis in golden pheasants (Chrysolophus pictus) in India.
+    title: >-
+      The first record of Heterakis gallinarum as a cause of fatal nodular typhlitis in golden pheasants (Chrysolophus
+      pictus) in India.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11127738/
     type: case-report
-    pmid: "38799286"
+    pmid: '38799286'
     relevance: supporting
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: Torsion of the caudate lobe of the liver and concurrent necrohemorrhagic typhlocolitis in a zoo-housed Patagonian mara.
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: >-
+      Torsion of the caudate lobe of the liver and concurrent necrohemorrhagic typhlocolitis in a zoo-housed Patagonian
+      mara.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11185122/
     type: case-report
-    pmid: "38702955"
+    pmid: '38702955'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: haematochezia
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+diagnosticAlgorithm:
+  title: 盲腸炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - hyperthermia 相關症狀
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 盲腸壁增厚
+        - name: 結腸鏡檢查
+          notes: 直視盲腸,取組織切片
+        - name: 糞便檢查
+          notes: 寄生蟲、培養
+ddxSource: auto-generated

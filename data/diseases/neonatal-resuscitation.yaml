@@ -3,12 +3,13 @@ nameEn: Neonatal Resuscitation
 nameZh: 新生兒復甦術
 bodySystem: other
 description: 新生犬貓出生時因缺氧、窒息或心肺功能不全需進行的緊急復甦處置。包含氣道清理、刺激呼吸、給氧及心肺復甦術等標準化急救流程。
-
 aliases:
-  - { alias: 新生動物急救, language: zh }
-  - { alias: Neonatal CPR, language: en }
-  - { alias: Puppy Resuscitation, language: en }
-
+  - alias: 新生動物急救
+    language: zh
+  - alias: Neonatal CPR
+    language: en
+  - alias: Puppy Resuscitation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 初產母貓及波斯貓等品種較常見
-
 etiology:
   categories:
     - name: 產程問題
@@ -32,7 +32,6 @@ etiology:
         - 早產或低體重
         - 先天性心肺異常
         - 呼吸道阻塞
-
 clinicalSigns:
   early:
     - 出生後無呼吸或呼吸微弱
@@ -43,18 +42,16 @@ clinicalSigns:
     - 持續無反應
     - 體溫下降
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 臨床評估
-      notes: "Apgar評分：評估呼吸、心跳、肌肉張力、反射、黏膜顏色"
+      notes: Apgar評分：評估呼吸、心跳、肌肉張力、反射、黏膜顏色
     - name: 體溫測量
-      notes: "正常直腸溫度應>35°C"
+      notes: 正常直腸溫度應>35°C
   differentialDiagnoses:
     - 先天性畸形
     - 嚴重感染
     - 代謝性疾病
-
 treatment:
   medical:
     - 立即清除口鼻羊水及黏液(使用球型吸引器)
@@ -65,45 +62,69 @@ treatment:
     - 保溫(溫度維持35-37°C)
     - 靜脈給予葡萄糖(5-10% 1-2 mL皮下)若血糖過低
     - Epinephrine 0.01 mg/kg稀釋後舌下或氣管內給予(若需要)
-
 prognosis:
-  general: "5分鐘內成功復甦者預後良好；超過10分鐘仍無反應者預後不良，可能有神經學後遺症"
-
+  general: 5分鐘內成功復甦者預後良好；超過10分鐘仍無反應者預後不良，可能有神經學後遺症
 prevention:
   - 產前健康檢查確保母體健康
   - 難產時及時剖腹產
   - 準備復甦設備(吸引器、氧氣、保溫墊)
   - 產程中監測胎心
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
-    title: "RECOVER Guidelines: Newborn Resuscitation in Dogs and Cats. Clinical Guidelines."
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
+    title: 'RECOVER Guidelines: Newborn Resuscitation in Dogs and Cats. Clinical Guidelines.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12374490/
     type: guideline
-    pmid: "40847797"
+    pmid: '40847797'
     relevance: primary
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
-    title: "RECOVER Guidelines: Newborn Resuscitation in Dogs and Cats. Evidence and Knowledge Gap Analysis With Treatment Recommendations."
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
+    title: >-
+      RECOVER Guidelines: Newborn Resuscitation in Dogs and Cats. Evidence and Knowledge Gap Analysis With Treatment
+      Recommendations.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12374491/
     type: review
-    pmid: "40847798"
+    pmid: '40847798'
     relevance: primary
   - sourceOrg: Plants (Basel, Switzerland)
-    title: "Gymnema sylvestre as a Potential Anti-Inflammatory and Anti-Biofilm Agent Against Anaerobic Infections: An In Vitro Study."
+    title: >-
+      Gymnema sylvestre as a Potential Anti-Inflammatory and Anti-Biofilm Agent Against Anaerobic Infections: An In
+      Vitro Study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11860129/
     type: research
-    pmid: "40006756"
+    pmid: '40006756'
     relevance: supporting
   - sourceOrg: Pediatric research
-    title: Neonatal resuscitation with continuous chest compressions and high frequency percussive ventilation in preterm lambs.
+    title: >-
+      Neonatal resuscitation with continuous chest compressions and high frequency percussive ventilation in preterm
+      lambs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11840558/
     type: research
-    pmid: "37726545"
+    pmid: '37726545'
     relevance: supporting
   - sourceOrg: European journal of pediatrics
-    title: Impact of in situ simulation training on quality of postnatal stabilization and resuscitation-a before-and-after, non-controlled quality improvement study.
+    title: >-
+      Impact of in situ simulation training on quality of postnatal stabilization and resuscitation-a before-and-after,
+      non-controlled quality improvement study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11473610/
     type: research
-    pmid: "39311967"
+    pmid: '39311967'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: pallor-cyanosis
+    frequency: common
+diagnosticAlgorithm:
+  title: 新生兒復甦術 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pallor-cyanosis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床評估
+          notes: Apgar評分：評估呼吸、心跳、肌肉張力、反射、黏膜顏色
+        - name: 體溫測量
+          notes: 正常直腸溫度應>35°C
+ddxSource: auto-generated

@@ -3,12 +3,13 @@ nameEn: Enamel Hypoplasia
 nameZh: 琺瑯質發育不全
 bodySystem: dental
 description: 牙齒琺瑯質形成不完全或缺陷，導致牙齒表面粗糙、凹陷或變色。可因幼犬期發燒性疾病（犬瘟熱）、營養不良或外傷干擾琺瑯質形成。
-
 aliases:
-  - { alias: "Enamel Defect", language: en }
-  - { alias: "Distemper Teeth", language: en }
-  - { alias: "琺瑯缺損", language: zh }
-
+  - alias: Enamel Defect
+    language: en
+  - alias: Distemper Teeth
+    language: en
+  - alias: 琺瑯缺損
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓偶見。幼貓期感染相關。
-
 etiology:
   categories:
     - name: 發育期干擾
@@ -25,7 +25,6 @@ etiology:
         - 營養不良
         - 外傷或感染
         - 氟化物過量
-
 clinicalSigns:
   early:
     - 牙齒表面粗糙凹陷
@@ -35,14 +34,12 @@ clinicalSigns:
     - 琺瑯質剝落
     - 齲齒加速
     - 牙髓暴露
-
 diagnosis:
   primaryTests:
     - name: 口腔檢查
       notes: 典型琺瑯質缺損外觀
     - name: 口腔 X 光
       notes: 評估牙齒結構與齒根
-
 treatment:
   principles:
     - 保護牙齒結構
@@ -52,36 +49,65 @@ treatment:
     - 嚴重缺損：複合樹脂修復或金屬冠
     - 牙髓暴露：根管治療或拔牙
     - 定期牙科追蹤
-
 prognosis: 輕度缺損預後良好。嚴重缺損需積極保護避免齲齒。已形成的缺損為永久性。
-
-
 guidelineRefs:
-  - sourceOrg: "Anatomical record (Hoboken, N.J. : 2007)"
-    title: "Dental fluorosis in the European roe deer (Capreolus capreolus): A review of the pathological changes in the enamel of fluorotic cheek teeth and the abnormal pattern of dental wear in affected dentitions."
+  - sourceOrg: 'Anatomical record (Hoboken, N.J. : 2007)'
+    title: >-
+      Dental fluorosis in the European roe deer (Capreolus capreolus): A review of the pathological changes in the
+      enamel of fluorotic cheek teeth and the abnormal pattern of dental wear in affected dentitions.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12688017/
     type: review
-    pmid: "40170328"
+    pmid: '40170328'
   - sourceOrg: International dental journal
     title: The Prevalence, Dental Complications, and Effects of Infant Oral Mutilation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11123534/
     type: review
-    pmid: "38238211"
+    pmid: '38238211'
   - sourceOrg: Journal of anatomy
-    title: Estimation of age at onset of linear enamel hypoplasia. New calculation tool, description and comparison of current methods.
+    title: >-
+      Estimation of age at onset of linear enamel hypoplasia. New calculation tool, description and comparison of
+      current methods.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8450483/
     type: review
-    pmid: "34081785"
+    pmid: '34081785'
   - sourceOrg: Frontiers in veterinary science
-    title: Developmental Structural Tooth Defects in Dogs - Experience From Veterinary Dental Referral Practice and Review of the Literature.
+    title: >-
+      Developmental Structural Tooth Defects in Dogs - Experience From Veterinary Dental Referral Practice and Review of
+      the Literature.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4744861/
     type: review
-    pmid: "26904551"
+    pmid: '26904551'
   - sourceOrg: Genes
     title: Identification of a Homozygous PEX26 Mutation in a Heimler Syndrome Patient.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8146857/
     type: case-report
-    pmid: "33926089"
+    pmid: '33926089'
 pubmedQueries:
   - query: '"enamel hypoplasia" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: hyperthermia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 琺瑯質發育不全 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 口腔檢查
+          notes: 典型琺瑯質缺損外觀
+        - name: 口腔 X 光
+          notes: 評估牙齒結構與齒根
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 保護牙齒結構
+        - 預防齲齒與牙髓暴露
+ddxSource: auto-generated

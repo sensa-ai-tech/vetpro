@@ -3,22 +3,26 @@ nameEn: Ferret Cardiomyopathy
 nameZh: 雪貂心肌病
 bodySystem: cardiac
 description: 雪貂常見的心臟疾病，包含擴張型心肌病 (DCM) 與肥厚型心肌病 (HCM)，以 DCM 最常見，表現為漸進性心臟衰竭，為中老年雪貂常見的致死原因之一。
-
 aliases:
-  - { alias: 雪貂擴張型心肌病, language: zh }
-  - { alias: 雪貂肥厚型心肌病, language: zh }
-  - { alias: 雪貂心臟病, language: zh }
-  - { alias: Ferret dilated cardiomyopathy, language: en }
-  - { alias: Ferret DCM, language: en }
-  - { alias: Ferret HCM, language: en }
-  - { alias: Ferret heart disease, language: en }
-
+  - alias: 雪貂擴張型心肌病
+    language: zh
+  - alias: 雪貂肥厚型心肌病
+    language: zh
+  - alias: 雪貂心臟病
+    language: zh
+  - alias: Ferret dilated cardiomyopathy
+    language: en
+  - alias: Ferret DCM
+    language: en
+  - alias: Ferret HCM
+    language: en
+  - alias: Ferret heart disease
+    language: en
 species:
   - speciesCommon: ferret
     speciesScientific: Mustela putorius furo
     prevalence: common
     notes: 為雪貂最常見的心臟疾病。DCM 佔約 60-70%，HCM 佔約 20-30%。中老年 (>3 歲) 多見。牛磺酸缺乏可能是 DCM 的可修正原因之一。雄性稍多。瓣膜性心臟病亦有報告。
-
 etiology:
   categories:
     - name: 退化性/特發性
@@ -36,7 +40,6 @@ etiology:
         - 不當飲食 (低品質飼料)
         - 肥胖
         - 遺傳易感性
-
 clinicalSigns:
   early:
     - 運動耐受力下降
@@ -58,24 +61,22 @@ clinicalSigns:
     - 暈厥
     - 心律不整
     - 猝死
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波 (echocardiography)
-      notes: "確診金標準。DCM：心室擴張、收縮功能下降 (FS <30%)、心壁變薄。HCM：心室壁增厚 (>5 mm)、心室腔縮小。評估瓣膜逆流"
+      notes: 確診金標準。DCM：心室擴張、收縮功能下降 (FS <30%)、心壁變薄。HCM：心室壁增厚 (>5 mm)、心室腔縮小。評估瓣膜逆流
     - name: 胸腔 X 光
-      notes: "心臟輪廓增大。肺水腫 (肺野密度增加)。胸腔積液。脊椎心臟大小 (VHS) 評估"
+      notes: 心臟輪廓增大。肺水腫 (肺野密度增加)。胸腔積液。脊椎心臟大小 (VHS) 評估
     - name: 心電圖 (ECG)
-      notes: "心律不整偵測。心房擴大徵象。室性早期收縮。傳導障礙"
+      notes: 心律不整偵測。心房擴大徵象。室性早期收縮。傳導障礙
   imaging:
     - name: 腹部超音波
-      notes: "腹水評估。肝靜脈鬱血。排除腹腔腫塊"
+      notes: 腹水評估。肝靜脈鬱血。排除腹腔腫塊
   additional:
     - 血漿牛磺酸濃度 (排除牛磺酸缺乏)
     - proBNP (心臟生物標記，雪貂參考值有限)
     - CBC/生化 (評估整體健康與器官灌流)
     - 血壓測量
-
 treatment:
   principles:
     - DCM：增加心臟收縮力 + 減輕前後負荷
@@ -85,22 +86,22 @@ treatment:
     - 終生治療
   medications:
     - name: Furosemide
-      dose: "1-4 mg/kg PO/SC/IM BID-TID"
+      dose: 1-4 mg/kg PO/SC/IM BID-TID
       notes: 環利尿劑。充血性心衰竭管理。急性肺水腫時 IV/IM。慢性管理 PO。監測腎功能與電解質
     - name: Enalapril
-      dose: "0.25-0.5 mg/kg PO SID-BID"
+      dose: 0.25-0.5 mg/kg PO SID-BID
       notes: ACE 抑制劑。降低後負荷。DCM 與 HCM 均適用。監測腎功能
     - name: Pimobendan
-      dose: "0.5 mg/kg PO BID"
+      dose: 0.5 mg/kg PO BID
       notes: 正性肌力劑 + 血管擴張。DCM 效果佳。HCM 使用有爭議 (部分作者認為禁忌)
     - name: Digoxin
-      dose: "0.005-0.01 mg/kg PO SID-BID"
+      dose: 0.005-0.01 mg/kg PO SID-BID
       notes: 正性肌力劑。DCM 心房顫動時特別適用。治療窗窄需監測血中濃度。雪貂對毒性敏感
     - name: Atenolol
-      dose: "3.125-6.25 mg/ferret PO SID-BID"
+      dose: 3.125-6.25 mg/ferret PO SID-BID
       notes: Beta 阻斷劑。HCM 首選。減慢心率改善舒張充填。DCM 禁忌
     - name: Taurine
-      dose: "100-250 mg PO SID-BID"
+      dose: 100-250 mg PO SID-BID
       notes: 牛磺酸補充。牛磺酸缺乏性 DCM 可逆。即使非缺乏也建議常規補充
   general:
     - 限制活動 (急性心衰期)
@@ -111,43 +112,103 @@ treatment:
     - 體重監測 (惡病體質或液體滯留)
     - 家中監測靜態呼吸頻率
     - 氧氣治療 (急性呼吸困難)
-
-prognosis: DCM 確診後中位存活時間約 6-12 個月 (積極治療下)。牛磺酸缺乏性 DCM 如早期發現並補充，部分可逆轉預後較佳。HCM 預後變異大 (數月至數年)。充血性心衰竭一旦發生預後較差。猝死風險存在。配合良好的藥物治療可顯著改善生活品質。
-
+prognosis: >-
+  DCM 確診後中位存活時間約 6-12 個月 (積極治療下)。牛磺酸缺乏性 DCM 如早期發現並補充，部分可逆轉預後較佳。HCM 預後變異大
+  (數月至數年)。充血性心衰竭一旦發生預後較差。猝死風險存在。配合良好的藥物治療可顯著改善生活品質。
 guidelineRefs:
   - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
     title: Cardiovascular Disease in Ferrets
     url: https://pubmed.ncbi.nlm.nih.gov/30717891/
     type: review
-    pmid: "30717891"
+    pmid: '30717891'
   - sourceOrg: Journal of Veterinary Internal Medicine
-    title: "Cardiac disease in ferrets: diagnosis and management"
+    title: 'Cardiac disease in ferrets: diagnosis and management'
     url: https://pubmed.ncbi.nlm.nih.gov/24329404/
     type: review
-    pmid: "24329404"
+    pmid: '24329404'
   - sourceOrg: Veterinary pathology
     title: Endocrinopathy and Aging in Ferrets.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5397995/
     type: review
-    pmid: "26936751"
+    pmid: '26936751'
     relevance: supporting
   - sourceOrg: The veterinary clinics of North America. Exotic animal practice
     title: Ferret Cardiology.
     url: https://pubmed.ncbi.nlm.nih.gov/35422266/
     type: review
-    pmid: "35422266"
+    pmid: '35422266'
     relevance: primary
   - sourceOrg: Journal of the American Veterinary Medical Association
     title: Pathology in Practice.
     url: https://pubmed.ncbi.nlm.nih.gov/26885592/
     type: case-report
-    pmid: "26885592"
+    pmid: '26885592'
     relevance: supporting
 pubmedQueries:
-  - query: '"ferret" AND ("cardiomyopathy" OR "heart disease" OR "cardiac") AND ("treatment" OR "diagnosis" OR "echocardiography")'
+  - query: >-
+      "ferret" AND ("cardiomyopathy" OR "heart disease" OR "cardiac") AND ("treatment" OR "diagnosis" OR
+      "echocardiography")
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "END"
-  sectionTitle: "DISEASE"
+  chapter: END
+  sectionTitle: DISEASE
   pdfPage: 582
+associatedSymptoms:
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: paresis-paralysis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: heart-murmur
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: coughing
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 雪貂心肌病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pallor-cyanosis 相關症狀
+        - weight-loss 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波 (echocardiography)
+          notes: 確診金標準。DCM：心室擴張、收縮功能下降 (FS <30%)、心壁變薄。HCM：心室壁增厚 (>5 mm)、心室腔縮小。評估瓣膜逆流
+        - name: 胸腔 X 光
+          notes: 心臟輪廓增大。肺水腫 (肺野密度增加)。胸腔積液。脊椎心臟大小 (VHS) 評估
+        - name: 心電圖 (ECG)
+          notes: 心律不整偵測。心房擴大徵象。室性早期收縮。傳導障礙
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 血漿牛磺酸濃度 (排除牛磺酸缺乏)
+        - proBNP (心臟生物標記，雪貂參考值有限)
+        - CBC/生化 (評估整體健康與器官灌流)
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - DCM：增加心臟收縮力 + 減輕前後負荷
+        - HCM：改善舒張功能 + 減慢心率
+        - 管理充血性心衰竭 (利尿劑)
+ddxSource: auto-generated

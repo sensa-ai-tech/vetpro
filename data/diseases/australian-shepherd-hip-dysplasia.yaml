@@ -3,18 +3,18 @@ nameEn: Australian Shepherd Hip Dysplasia
 nameZh: 澳洲牧羊犬髖關節發育不良
 bodySystem: orthopedic
 description: 澳洲牧羊犬常見的遺傳性骨科疾病,髖關節球窩結構發育異常導致關節鬆弛與退化性關節炎。多基因遺傳,表現為運動不耐與跛行,需長期管理或手術治療。
-
 aliases:
-  - { alias: 澳牧CHD, language: zh }
-  - { alias: Australian Shepherd CHD, language: en }
-  - { alias: 澳牧髖發育異常, language: zh }
-
+  - alias: 澳牧CHD
+    language: zh
+  - alias: Australian Shepherd CHD
+    language: en
+  - alias: 澳牧髖發育異常
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 澳洲牧羊犬為中等風險品種,多基因遺傳+環境因素,發病年齡4個月至數年
-
 etiology:
   categories:
     - name: 遺傳性結構異常
@@ -33,7 +33,6 @@ etiology:
         - 關節鬆弛導致不穩定
         - 軟骨磨損
         - 退化性關節炎
-
 clinicalSigns:
   early:
     - 運動後後肢僵硬
@@ -46,24 +45,22 @@ clinicalSigns:
     - 髖關節操作疼痛,Ortolani test陽性
     - 起身困難,長時間休息後更明顯
     - 慢性疼痛,生活品質下降
-
 diagnosis:
   primaryTests:
     - name: 髖關節X光(OFA或PennHIP評分)
-      notes: "需麻醉下標準姿勢,評估關節鬆弛度、股骨頭覆蓋、骨關節炎變化"
+      notes: 需麻醉下標準姿勢,評估關節鬆弛度、股骨頭覆蓋、骨關節炎變化
     - name: 骨科理學檢查
-      notes: "Ortolani test、Bardens test評估關節鬆弛,髖關節伸展/外轉疼痛"
+      notes: Ortolani test、Bardens test評估關節鬆弛,髖關節伸展/外轉疼痛
     - name: PennHIP檢測(幼犬篩檢)
-      notes: "16週齡即可評估,測量distraction index(DI),預測關節炎風險"
+      notes: 16週齡即可評估,測量distraction index(DI),預測關節炎風險
     - name: CT或MRI
-      notes: "精確評估軟組織與關節軟骨狀況(非常規)"
+      notes: 精確評估軟組織與關節軟骨狀況(非常規)
   differentialDiagnoses:
     - 腰薦椎疾病
     - 前十字韌帶斷裂
     - Legg-Calvé-Perthes病
     - 髖關節脫位
     - 骨盆骨折
-
 treatment:
   medical:
     - 幼犬輕中度:保守治療
@@ -73,16 +70,44 @@ treatment:
     - 關節保健品:Glucosamine 20 mg/kg + Chondroitin 15 mg/kg PO SID
     - 物理治療:水療、被動關節活動
     - 手術選項:
-      - 幼犬(<6月):JPS(juvenile pubic symphysiodesis)或DPO/TPO(骨盆截骨)
-      - 成犬:THR(全髖關節置換,金標準)或FHO(股骨頭切除術)
+        - 幼犬(<6月):JPS(juvenile pubic symphysiodesis)或DPO/TPO(骨盆截骨)
+        - 成犬:THR(全髖關節置換,金標準)或FHO(股骨頭切除術)
     - Adequan注射(polysulfated glycosaminoglycan)2 mg/kg IM,每週2次×4週
-
 prognosis:
-  general: "輕中度病例經保守治療可維持良好生活品質。嚴重病例需手術,THR成功率>95%,預後優良。未治療嚴重病例將進展為嚴重骨關節炎,長期疼痛。"
-
+  general: 輕中度病例經保守治療可維持良好生活品質。嚴重病例需手術,THR成功率>95%,預後優良。未治療嚴重病例將進展為嚴重骨關節炎,長期疼痛。
 prevention:
   - 繁殖前髖關節評估(OFA或PennHIP)
   - 僅繁殖Excellent、Good或Fair評級犬隻
   - 幼犬避免過度運動與跳躍
   - 維持理想體重,避免快速生長
   - 均衡飲食,避免過度補鈣
+associatedSymptoms:
+  - symptomId: failure-to-grow
+    frequency: uncommon
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 澳洲牧羊犬髖關節發育不良 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - failure-to-grow 相關症狀
+        - exercise-intolerance 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 髖關節X光(OFA或PennHIP評分)
+          notes: 需麻醉下標準姿勢,評估關節鬆弛度、股骨頭覆蓋、骨關節炎變化
+        - name: 骨科理學檢查
+          notes: Ortolani test、Bardens test評估關節鬆弛,髖關節伸展/外轉疼痛
+        - name: PennHIP檢測(幼犬篩檢)
+          notes: 16週齡即可評估,測量distraction index(DI),預測關節炎風險
+ddxSource: auto-generated

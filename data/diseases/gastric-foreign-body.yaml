@@ -3,11 +3,11 @@ nameEn: Gastric Foreign Body
 nameZh: 胃異物
 bodySystem: gastrointestinal
 description: 胃異物為滯留於胃腔內的異物，犬隻因異食癖（pica）為常見問題。異物可能自行通過幽門進入腸道，或長期滯留於胃內。大型或尖銳異物有胃壁穿孔風險。臨床表現從無症狀到急性嘔吐不等。
-
 aliases:
-  - { alias: 胃內異物, language: zh }
-  - { alias: Stomach Foreign Body, language: en }
-
+  - alias: 胃內異物
+    language: zh
+  - alias: Stomach Foreign Body
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻以線狀異物（string foreign body）、髮飾、橡皮筋較常見。
-
 etiology:
   categories:
     - name: 常見異物（犬）
@@ -31,7 +30,6 @@ etiology:
         - 髮飾
         - 橡皮筋
         - 塑膠碎片
-
 clinicalSigns:
   early:
     - 嘔吐（急性或間歇性）
@@ -43,14 +41,12 @@ clinicalSigns:
     - 食慾廢絕
     - 腹痛
     - 胃穿孔：急性腹膜炎（發燒、劇烈腹痛、休克）
-
 diagnosis:
   primaryTests:
     - name: 腹部 X 光
       notes: 金屬或礦物性異物可直接顯影。不透射異物（衣物、塑膠）可能不可見，但可見胃擴張或異物輪廓。造影劑檢查可描繪不透射異物。
     - name: 腹部超音波
       notes: 可見胃內強回聲結構伴聲影。評估胃壁完整性。較 X 光更能偵測不透射異物。
-
 treatment:
   principles:
     - 內視鏡取出為首選
@@ -62,9 +58,68 @@ treatment:
     - 胃穿孔：緊急探查性剖腹手術 + 腹膜沖洗
     - 術後禁食 12-24 小時後逐漸恢復飲食
     - 止吐治療：Maropitant 1 mg/kg SC/IV q24h
-
 prognosis: 及時內視鏡或手術取出後預後極好。延遲取出導致胃穿孔與腹膜炎者預後較差但及時手術仍有機會恢復。飼主教育避免異物接觸很重要。
-
 pubmedQueries:
   - query: '"gastric foreign body" AND (veterinary OR canine OR feline) AND ("endoscopy" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 胃異物 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估與病史
+      details: 詢問可能的異物攝入事件、嘔吐時間與頻率
+      findings:
+        - 急性或間歇性嘔吐
+        - 已知或疑似攝入異物
+        - 食慾減退
+        - 流涎或嘔吐未消化食物
+    - step: 2
+      action: 腹部X光檢查
+      details: 腹部正側位X光評估胃內異物
+      findings:
+        - 放射不透明異物（金屬/骨頭/石頭）
+        - 胃擴張積氣
+        - 放射可透過異物需顯影劑研究
+        - 排除下游腸道阻塞
+    - step: 3
+      action: 內視鏡檢查與取出
+      details: 上消化道內視鏡直接觀察並嘗試內視鏡取出
+      findings:
+        - 內視鏡直接觀察異物類型
+        - 評估胃黏膜損傷
+        - 評估內視鏡取出可行性
+        - 若無法內視鏡取出則轉手術
+    - step: 4
+      action: 術後評估
+      details: 取出後評估消化道損傷程度
+      findings:
+        - 胃壁穿孔排除
+        - 腹膜炎徵象監測
+        - 電解質與酸鹼平衡矯正
+        - 逐漸恢復飲食
+clinicalPearls:
+  - 催吐窗口期約為吞食後2小時內，之後效果差
+  - 尖銳異物和腐蝕性物質絕對禁止催吐
+  - 內視鏡取出是胃異物的首選方法（創傷最小）
+  - 含鋅物品（硬幣、螺絲）可引起嚴重溶血性貧血
+  - 慢性間歇性嘔吐的犬應考慮胃異物
+  - 部分異物可在胃中存在數週而僅有輕微症狀
+monitoringItems:
+  - 催吐後確認異物完整排出
+  - 內視鏡取出後觀察4-6小時
+  - 手術後監測嘔吐和食慾恢復
+  - 含鋅異物：監測PCV和溶血指標
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

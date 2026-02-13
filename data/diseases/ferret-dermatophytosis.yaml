@@ -3,20 +3,22 @@ nameEn: Ferret Dermatophytosis
 nameZh: 雪貂皮黴菌症
 bodySystem: dermatology
 description: 雪貂感染皮黴菌 (主要為 Microsporum canis 或 Trichophyton mentagrophytes) 引起的表淺性黴菌性皮膚感染，表現為環形脫毛、鱗屑與結痂，為人畜共通傳染病。
-
 aliases:
-  - { alias: 雪貂黴菌感染, language: zh }
-  - { alias: 雪貂癬, language: zh }
-  - { alias: 雪貂錢癬, language: zh }
-  - { alias: Ferret ringworm, language: en }
-  - { alias: Ferret fungal skin infection, language: en }
-
+  - alias: 雪貂黴菌感染
+    language: zh
+  - alias: 雪貂癬
+    language: zh
+  - alias: 雪貂錢癬
+    language: zh
+  - alias: Ferret ringworm
+    language: en
+  - alias: Ferret fungal skin infection
+    language: en
 species:
   - speciesCommon: ferret
     speciesScientific: Mustela putorius furo
     prevalence: uncommon
     notes: 較犬貓少見但仍可發生。M. canis 與 T. mentagrophytes 為主要病原。幼貂、免疫抑制個體較易感。人畜共通，可傳播給人類與其他動物。潛伏期 1-3 週。
-
 etiology:
   categories:
     - name: 黴菌性
@@ -32,7 +34,6 @@ etiology:
         - 與感染犬貓同居
         - 環境潮濕
         - 緊迫
-
 clinicalSigns:
   early:
     - 局部圓形脫毛斑 (經典環形病灶)
@@ -50,23 +51,21 @@ clinicalSigns:
     - 繼發性細菌感染 (膿皮症)
     - 深部黴菌性毛囊炎 (kerion)
     - 全身性感染 (罕見，嚴重免疫抑制時)
-
 diagnosis:
   primaryTests:
     - name: 伍氏燈檢查 (Wood's lamp)
-      notes: "M. canis 約 50% 株會產生蘋果綠色螢光。T. mentagrophytes 不螢光。僅為篩檢工具，陰性不能排除"
+      notes: M. canis 約 50% 株會產生蘋果綠色螢光。T. mentagrophytes 不螢光。僅為篩檢工具，陰性不能排除
     - name: 皮膚刮搔/毛髮 KOH 封片
-      notes: "拔取病灶邊緣毛髮加 KOH 或 DMSO 鏡檢。可見毛幹外 (ectothrix) 或毛幹內 (endothrix) 孢子與菌絲"
+      notes: 拔取病灶邊緣毛髮加 KOH 或 DMSO 鏡檢。可見毛幹外 (ectothrix) 或毛幹內 (endothrix) 孢子與菌絲
     - name: 黴菌培養 (DTM)
-      notes: "確診金標準。拔取病灶邊緣毛髮接種 DTM 培養基。M. canis 7-14 天生長。培養基同時變色為紅色"
+      notes: 確診金標準。拔取病灶邊緣毛髮接種 DTM 培養基。M. canis 7-14 天生長。培養基同時變色為紅色
   imaging:
     - name: 不適用
-      notes: "皮黴菌症為表淺性感染，無需影像學檢查"
+      notes: 皮黴菌症為表淺性感染，無需影像學檢查
   additional:
     - 皮膚組織切片 (慢性或非典型病例)
     - PAS 或 GMS 染色 (組織中黴菌偵測)
     - 同居動物檢查
-
 treatment:
   principles:
     - 全身性抗黴菌藥物 + 局部治療
@@ -75,16 +74,16 @@ treatment:
     - 人畜共通注意事項告知飼主
   medications:
     - name: Itraconazole
-      dose: "5-10 mg/kg PO SID，連續 4-6 週"
+      dose: 5-10 mg/kg PO SID，連續 4-6 週
       notes: 口服抗黴菌首選。與食物一起給予增加吸收。脈衝療法亦可 (1 週用 1 週停)。監測肝功能
     - name: Terbinafine
-      dose: "10-30 mg/kg PO SID，連續 4-6 週"
+      dose: 10-30 mg/kg PO SID，連續 4-6 週
       notes: 替代口服選擇。對 T. mentagrophytes 效果佳
     - name: Lime sulfur dip (2%)
-      dose: "每週全身藥浴 1 次，連續 4-6 週"
+      dose: 每週全身藥浴 1 次，連續 4-6 週
       notes: 有效的局部殺黴劑。氣味刺鼻但安全。可能暫時使毛色泛黃
     - name: Miconazole/Chlorhexidine shampoo
-      dose: "每週藥浴 1-2 次"
+      dose: 每週藥浴 1-2 次
       notes: 輔助局部治療。減少環境孢子散佈
   general:
     - 全身性 + 局部治療併用效果最佳
@@ -95,26 +94,62 @@ treatment:
     - 隔離患貂
     - 人類衛生教育 (洗手、免疫抑制者避免接觸)
     - 同居動物同時檢查與預防性治療
-
 prognosis: 適當治療預後良好，多數 6-8 週內治癒。免疫正常雪貂對治療反應佳。免疫抑制個體可能治療時間延長或復發。環境消毒不徹底為復發主因。人畜共通風險需特別注意。
-
 guidelineRefs:
   - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
-    title: "Dermatologic Diseases of Ferrets"
+    title: Dermatologic Diseases of Ferrets
     url: https://pubmed.ncbi.nlm.nih.gov/23642862/
     type: review
-    pmid: "23642862"
+    pmid: '23642862'
   - sourceOrg: Veterinary Dermatology
-    title: "Dermatophytosis in small mammals"
+    title: Dermatophytosis in small mammals
     url: https://pubmed.ncbi.nlm.nih.gov/15030559/
     type: review
-    pmid: "15030559"
-
+    pmid: '15030559'
 pubmedQueries:
   - query: '"ferret" AND ("dermatophytosis" OR "ringworm" OR "Microsporum" OR "Trichophyton") AND ("treatment" OR "diagnosis")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "INFECTION"
+  chapter: DIG
+  sectionTitle: INFECTION
   pdfPage: 525
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: uncommon
+  - symptomId: alopecia
+    frequency: common
+diagnosticAlgorithm:
+  title: 雪貂皮黴菌症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 伍氏燈檢查 (Wood's lamp)
+          notes: M. canis 約 50% 株會產生蘋果綠色螢光。T. mentagrophytes 不螢光。僅為篩檢工具，陰性不能排除
+        - name: 皮膚刮搔/毛髮 KOH 封片
+          notes: 拔取病灶邊緣毛髮加 KOH 或 DMSO 鏡檢。可見毛幹外 (ectothrix) 或毛幹內 (endothrix) 孢子與菌絲
+        - name: 黴菌培養 (DTM)
+          notes: 確診金標準。拔取病灶邊緣毛髮接種 DTM 培養基。M. canis 7-14 天生長。培養基同時變色為紅色
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 皮膚組織切片 (慢性或非典型病例)
+        - PAS 或 GMS 染色 (組織中黴菌偵測)
+        - 同居動物檢查
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 全身性抗黴菌藥物 + 局部治療
+        - 環境消毒 (減少孢子污染)
+        - 治療至培養陰性 (通常 6-8 週)
+ddxSource: auto-generated

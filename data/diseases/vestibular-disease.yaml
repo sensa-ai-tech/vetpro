@@ -3,14 +3,17 @@ nameEn: Vestibular Disease
 nameZh: 前庭疾病
 bodySystem: neurology
 description: 影響前庭系統（維持平衡與空間定向）的疾病總稱，分為周邊型與中樞型，老年犬特發性前庭症候群為最常見類型。
-
 aliases:
-  - { alias: Vestibular Syndrome, language: en }
-  - { alias: Old Dog Vestibular Disease, language: en }
-  - { alias: Idiopathic Vestibular Disease, language: en }
-  - { alias: 前庭症候群, language: zh }
-  - { alias: 老年犬前庭症候群, language: zh }
-
+  - alias: Vestibular Syndrome
+    language: en
+  - alias: Old Dog Vestibular Disease
+    language: en
+  - alias: Idiopathic Vestibular Disease
+    language: en
+  - alias: 前庭症候群
+    language: zh
+  - alias: 老年犬前庭症候群
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓特發性前庭疾病較犬少見。中耳炎/內耳炎為貓常見前庭疾病原因。鼻咽息肉可導致貓前庭症狀。
-
 etiology:
   categories:
     - name: 周邊型 (內耳/前庭神經)
@@ -44,9 +46,10 @@ etiology:
       examples:
         - 小腦絨狀葉病變
         - 頭歪向病變對側 (與典型周邊型相反)
-
-pathophysiology: 前庭系統由周邊部分 (內耳半規管、橢圓囊、球囊、前庭神經) 及中樞部分 (腦幹前庭核、小腦) 組成，負責維持平衡、姿勢及眼球運動的協調。正常狀態下，雙側前庭系統輸入等量的張力信號至腦幹。當單側前庭功能障礙時，兩側輸入不對稱，大腦感知為旋轉運動，產生眩暈、頭歪斜及眼球震顫。周邊型損傷影響前庭神經或內耳，通常造成水平或旋轉性眼球震顫 (快相朝向健側)、同側頭歪斜及身體傾倒。中樞型損傷影響腦幹或小腦，可出現變向性或垂直性眼球震顫，常伴隨其他腦幹/小腦神經學缺損。特發性前庭疾病的確切病理機制不明，推測可能為前庭神經暫時性功能異常。
-
+pathophysiology: >-
+  前庭系統由周邊部分 (內耳半規管、橢圓囊、球囊、前庭神經) 及中樞部分 (腦幹前庭核、小腦)
+  組成，負責維持平衡、姿勢及眼球運動的協調。正常狀態下，雙側前庭系統輸入等量的張力信號至腦幹。當單側前庭功能障礙時，兩側輸入不對稱，大腦感知為旋轉運動，產生眩暈、頭歪斜及眼球震顫。周邊型損傷影響前庭神經或內耳，通常造成水平或旋轉性眼球震顫
+  (快相朝向健側)、同側頭歪斜及身體傾倒。中樞型損傷影響腦幹或小腦，可出現變向性或垂直性眼球震顫，常伴隨其他腦幹/小腦神經學缺損。特發性前庭疾病的確切病理機制不明，推測可能為前庭神經暫時性功能異常。
 clinicalSigns:
   early:
     - 急性發作的頭歪斜 (head tilt，患側向下)
@@ -65,29 +68,27 @@ clinicalSigns:
     - 中樞型：多條腦神經異常
     - 中樞型：垂直性眼球震顫或變向性眼球震顫
     - 持續性頭歪斜 (部分特發性病例可能殘留)
-
 diagnosis:
   primaryTests:
     - name: 完整神經學檢查
-      notes: "關鍵在區分周邊型 vs 中樞型。周邊型：水平/旋轉性眼球震顫 (快相固定方向)、無姿勢反應缺損。中樞型：垂直/變向性眼球震顫、姿勢反應缺損、意識改變"
+      notes: 關鍵在區分周邊型 vs 中樞型。周邊型：水平/旋轉性眼球震顫 (快相固定方向)、無姿勢反應缺損。中樞型：垂直/變向性眼球震顫、姿勢反應缺損、意識改變
     - name: 耳鏡檢查
-      notes: "評估鼓膜完整性。中耳炎時鼓膜可能混濁、膨出或破裂"
+      notes: 評估鼓膜完整性。中耳炎時鼓膜可能混濁、膨出或破裂
     - name: CBC、生化、T4
-      notes: "排除甲狀腺低下 (犬)、全身性疾病"
+      notes: 排除甲狀腺低下 (犬)、全身性疾病
   imaging:
     - name: 頭部 MRI
-      notes: "中樞型首選影像。評估腦幹、小腦病變 (腫瘤、炎症、梗塞)。亦可評估中/內耳"
+      notes: 中樞型首選影像。評估腦幹、小腦病變 (腫瘤、炎症、梗塞)。亦可評估中/內耳
     - name: 頭部 CT
-      notes: "評估鼓室 (中耳炎)。骨結構評估優於 MRI。MRI 不可用時替代"
+      notes: 評估鼓室 (中耳炎)。骨結構評估優於 MRI。MRI 不可用時替代
     - name: 鼓室 X 光 (Bulla Series)
-      notes: "評估鼓室骨壁增厚/溶解。敏感度低於 CT/MRI"
+      notes: 評估鼓室骨壁增厚/溶解。敏感度低於 CT/MRI
   additional:
     - 鼓膜穿刺 (myringotomy) + 中耳液培養藥敏
     - 腦脊髓液 (CSF) 分析 (中樞型 — 排除腦膜腦炎/腫瘤)
     - 血壓測量 (排除高血壓性腦血管事件)
     - T4 + TSH (犬甲狀腺低下相關前庭神經病變)
     - 凝血功能 (腦血管出血)
-
 treatment:
   principles:
     - 特發性前庭疾病為支持性治療，多數 2-4 週自行改善
@@ -97,16 +98,16 @@ treatment:
     - 護理照護 (防跌倒/受傷)
   medications:
     - name: Maropitant (Cerenia)
-      dose: "1 mg/kg SC 或 2 mg/kg PO SID"
+      dose: 1 mg/kg SC 或 2 mg/kg PO SID
       notes: 止吐。建議急性期前 3-5 天使用
     - name: Meclizine
-      dose: "25 mg/犬 PO BID-TID (中大型犬)"
+      dose: 25 mg/犬 PO BID-TID (中大型犬)
       notes: 抗組織胺/抗眩暈。減輕噁心與眩暈
     - name: 全身性抗生素 (中耳炎/內耳炎)
-      dose: "Clindamycin 11 mg/kg PO BID 或 Amoxicillin-Clavulanate 12.5-25 mg/kg PO BID × 4-6 週"
+      dose: Clindamycin 11 mg/kg PO BID 或 Amoxicillin-Clavulanate 12.5-25 mg/kg PO BID × 4-6 週
       notes: 中耳炎需長療程。理想依培養藥敏結果選擇
     - name: Levothyroxine (甲狀腺低下相關)
-      dose: "0.02 mg/kg PO BID"
+      dose: 0.02 mg/kg PO BID
       notes: 甲狀腺低下引起的前庭神經病變。補充後數週至數月可能改善
   general:
     - 特發性前庭：支持性照護 (協助進食飲水、防跌倒、軟墊環境)
@@ -115,43 +116,118 @@ treatment:
     - 中樞型：依病因治療 (腫瘤 — 放射/手術；腦炎 — 免疫抑制；梗塞 — 支持性)
     - Metronidazole 毒性：立即停藥 (通常 1-2 週改善)
     - 物理復健 (平衡訓練)
-
 prognosis: 特發性前庭疾病預後良好，多數犬 2-4 週明顯改善，部分可殘留輕微頭歪斜。復發可能但少見。中耳炎/內耳炎經適當抗生素治療預後中等至良好。中樞型預後取決於潛在病因 (腦梗塞預後尚可；腫瘤/嚴重腦炎預後不佳)。
-
 guidelineRefs:
   - sourceOrg: ACVIM
     title: Vestibular Disease in Dogs and Cats — Clinical Review
     url: https://pubmed.ncbi.nlm.nih.gov/26332382/
     type: review
-    pmid: "26332382"
+    pmid: '26332382'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline vestibular disorders. Part I: anatomy and clinical signs."
+    title: 'Feline vestibular disorders. Part I: anatomy and clinical signs.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10822464/
     type: review
-    pmid: "11919020"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Encephalitozoonosis in Pet Rabbits: Epidemiology, Pathogenesis, Immunology and Consensus on Clinical Management."
+    pmid: '11919020'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Encephalitozoonosis in Pet Rabbits: Epidemiology, Pathogenesis, Immunology and Consensus on Clinical Management.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12838174/
     type: review
-    pmid: "41594534"
+    pmid: '41594534'
     relevance: primary
   - sourceOrg: Pathogens (Basel, Switzerland)
-    title: Antemortem and Postmortem Diagnosis of Encephalitozoon cuniculi in a Pet Rabbit (Oryctolagus cuniculus)-A Case Report.
+    title: >-
+      Antemortem and Postmortem Diagnosis of Encephalitozoon cuniculi in a Pet Rabbit (Oryctolagus cuniculus)-A Case
+      Report.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11676482/
     type: case-report
-    pmid: "39770381"
+    pmid: '39770381'
     relevance: supporting
   - sourceOrg: Journal of veterinary internal medicine
     title: Clinical features and outcome of 10 dogs with suspected idiopathic vestibular epilepsy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11099704/
     type: research
-    pmid: "38514172"
+    pmid: '38514172'
     relevance: supporting
 pubmedQueries:
   - query: '"vestibular disease" AND (dog OR canine OR cat OR feline) AND ("idiopathic" OR "peripheral" OR "central")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "END"
-  sectionTitle: "DISEASE"
+  chapter: END
+  sectionTitle: DISEASE
   pdfPage: 582
+diagnosticAlgorithm:
+  title: 前庭疾病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估頭部歪斜、眼球震顫方向
+      findings:
+        - 頭部歪斜
+        - 自發性眼球震顫
+        - 共濟失調（向患側偏倒）
+        - 嘔吐噁心
+    - step: 2
+      action: 神經學定位
+      details: 區分周邊與中樞前庭
+      findings:
+        - 水平或旋轉眼震（周邊）
+        - 垂直或方向改變眼震（中樞）
+        - 對側本體感覺缺失（中樞）
+        - 面癱或Horner（周邊）
+    - step: 3
+      action: 耳鏡與影像
+      details: 耳道檢查及影像學
+      findings:
+        - 耳鏡檢查排除中耳炎
+        - CT/MRI鼓室泡評估
+        - MRI腦幹與小腦（疑似中樞型）
+        - 排除腦腫瘤
+    - step: 4
+      action: 進階病因確認
+      details: 特定病因檢查
+      findings:
+        - 甲狀腺功能（老犬）
+        - CSF分析（中樞型）
+        - 壁蝨傳染病篩檢
+        - 老犬特發性前庭疾病（排除診斷）
+clinicalPearls:
+  - 犬特發性前庭病是老犬「中風樣」發作最常見原因
+  - 周邊型和中樞型的區分至關重要
+  - 本體感覺缺失提示中樞型
+  - 垂直眼球震顫幾乎確定是中樞型
+  - 特發性無需影像學（除非懷疑中樞）
+  - 恢復期頭傾斜可能永久存在
+monitoringItems:
+  - 神經功能進展
+  - 食慾和水分攝取
+  - 嘔吐情況
+  - 行走能力
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: head-tilt
+    frequency: common
+  - symptomId: head-tilt
+    frequency: common
+  - symptomId: nystagmus
+    frequency: common
+  - symptomId: nystagmus
+    frequency: uncommon
+  - symptomId: nystagmus
+    frequency: common
+  - symptomId: nystagmus
+    frequency: common
+ddxSource: book

@@ -3,11 +3,11 @@ nameEn: Peritoneal Dialysis
 nameZh: 腹膜透析
 bodySystem: renal
 description: 利用腹膜作為半透膜進行透析治療,用於急性腎損傷或慢性腎臟病末期患者,透析液注入腹腔後移除代謝廢物及過多水分。
-
 aliases:
-  - { alias: 腹透, language: zh }
-  - { alias: PD, language: en }
-
+  - alias: 腹透
+    language: zh
+  - alias: PD
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓體型小腹腔容積有限,操作難度較高
-
 etiology:
   categories:
     - name: 適應症
@@ -26,7 +25,6 @@ etiology:
         - 藥物中毒需快速移除毒素(如乙二醇中毒)
         - 嚴重電解質紊亂(高鉀血症、代謝性酸中毒)
         - 無法進行血液透析時的替代治療
-
 clinicalSigns:
   early:
     - 嚴重氮血症(BUN >100 mg/dL, 肌酐 >8 mg/dL)
@@ -38,20 +36,18 @@ clinicalSigns:
     - 代謝性酸中毒
     - 肺水腫或胸腔積液
     - 低體溫、休克
-
 diagnosis:
   primaryTests:
     - name: 血液生化
-      notes: "BUN、肌酐、鉀、磷顯著升高,評估透析需求"
+      notes: BUN、肌酐、鉀、磷顯著升高,評估透析需求
     - name: 血氣分析
-      notes: "代謝性酸中毒(pH <7.2, HCO3 <12 mmol/L)"
+      notes: 代謝性酸中毒(pH <7.2, HCO3 <12 mmol/L)
     - name: 心電圖
-      notes: "監測高鉀血症心律變化(T波高尖、QRS波增寬)"
+      notes: 監測高鉀血症心律變化(T波高尖、QRS波增寬)
   differentialDiagnoses:
     - 血液透析
     - 內科支持性治療
     - 慢性腎臟病末期安樂死
-
 treatment:
   medical:
     - 腹腔置入透析導管(外科手術或經皮穿刺)
@@ -61,44 +57,82 @@ treatment:
     - 監測血液生化、電解質、體重、腹腔液體外觀
     - 廣效抗生素預防腹膜炎(Cefazolin 22 mg/kg IV TID)
     - 支持性治療(止吐藥、輸液、營養支持)
-
 prognosis:
-  general: "急性腎損傷且腎功能可恢復者預後尚可;慢性腎臟病末期或合併多器官衰竭者預後不良。成功率約30-50%。"
-
+  general: 急性腎損傷且腎功能可恢復者預後尚可;慢性腎臟病末期或合併多器官衰竭者預後不良。成功率約30-50%。
 prevention:
   - 及早識別並治療急性腎損傷
   - 毒物中毒時儘早洗胃及支持治療
   - 維持充足水合狀態及電解質平衡
-
-
 guidelineRefs:
   - sourceOrg: Proteomes
     title: Spatial Proteomics for the Molecular Characterization of Breast Cancer.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10204503/
     type: review
-    pmid: "37218922"
+    pmid: '37218922'
     relevance: primary
   - sourceOrg: Veterinary research communications
-    title: "Ulcerative and pyogranulomatous pododermatitis due to Pseudomonas luteola infection in a domestic ferret (Mustela putorius furo): a case report with literature review of this emerging zoonotic disease in ferrets."
+    title: >-
+      Ulcerative and pyogranulomatous pododermatitis due to Pseudomonas luteola infection in a domestic ferret (Mustela
+      putorius furo): a case report with literature review of this emerging zoonotic disease in ferrets.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11442507/
     type: review
-    pmid: "39042223"
+    pmid: '39042223'
     relevance: primary
   - sourceOrg: BMC nephrology
-    title: "Pet-related Pasteurella multocida induced peritonitis in peritoneal dialysis: a case report and review of the literatures."
+    title: >-
+      Pet-related Pasteurella multocida induced peritonitis in peritoneal dialysis: a case report and review of the
+      literatures.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7081570/
     type: review
-    pmid: "32192435"
+    pmid: '32192435'
     relevance: primary
   - sourceOrg: Journal of investigative medicine high impact case reports
-    title: Peritonitis Secondary to Uncommon Gram-Negative Coccobacillus Transmitted From a Cat in a Patient on Peritoneal Dialysis.
+    title: >-
+      Peritonitis Secondary to Uncommon Gram-Negative Coccobacillus Transmitted From a Cat in a Patient on Peritoneal
+      Dialysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6913050/
     type: review
-    pmid: "31838876"
+    pmid: '31838876'
     relevance: supporting
   - sourceOrg: JCI insight
     title: Involvement of impaired carnitine-induced fatty acid oxidation in experimental and human diabetic kidney disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12288908/
     type: research
-    pmid: "40402578"
+    pmid: '40402578'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: oliguria-anuria
+    frequency: common
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 腹膜透析 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+        - hypothermia-sign 相關症狀
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液生化
+          notes: BUN、肌酐、鉀、磷顯著升高,評估透析需求
+        - name: 血氣分析
+          notes: 代謝性酸中毒(pH <7.2, HCO3 <12 mmol/L)
+        - name: 心電圖
+          notes: 監測高鉀血症心律變化(T波高尖、QRS波增寬)
+ddxSource: auto-generated

@@ -3,14 +3,17 @@ nameEn: Bile Duct Obstruction
 nameZh: 膽管阻塞
 bodySystem: hepatic
 description: 膽管阻塞是指肝外或肝內膽管因各種原因導致膽汁流通受阻的疾病。常見原因包括胰臟炎、膽石症、腫瘤和炎症性膽管病變。阻塞性黃疸是主要臨床表現。
-
 aliases:
-  - { alias: 膽道阻塞, language: zh }
-  - { alias: 阻塞性黃疸, language: zh }
-  - { alias: Biliary Obstruction, language: en }
-  - { alias: Obstructive Jaundice, language: en }
-  - { alias: Extrahepatic Bile Duct Obstruction, language: en }
-
+  - alias: 膽道阻塞
+    language: zh
+  - alias: 阻塞性黃疸
+    language: zh
+  - alias: Biliary Obstruction
+    language: en
+  - alias: Obstructive Jaundice
+    language: en
+  - alias: Extrahepatic Bile Duct Obstruction
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓膽管阻塞與胰臟炎、膽管炎、炎性腸病（三合一症）密切相關。膽管結石在貓較犬少見。
-
 etiology:
   categories:
     - name: 炎症性
@@ -39,7 +41,6 @@ etiology:
         - 膽管黏液囊腫
         - 膽管狹窄（先天性或後天性）
         - 膽管寄生蟲（肝吸蟲）
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -53,19 +54,17 @@ clinicalSigns:
     - 體重減輕
     - 脂溶性維生素吸收障礙
     - 凝血功能異常（維生素 K 缺乏）
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "總膽管擴張（犬 >3mm、貓 >4mm）為主要影像學發現。可見膽囊擴張、膽管結石、胰臟腫脹或腫塊。"
+      notes: 總膽管擴張（犬 >3mm、貓 >4mm）為主要影像學發現。可見膽囊擴張、膽管結石、胰臟腫脹或腫塊。
     - name: 血液生化
-      notes: "阻塞性黃疸特徵：總膽紅素顯著升高（以直接膽紅素為主）、GGT 與 ALP 明顯升高、ALT 中度升高。"
+      notes: 阻塞性黃疸特徵：總膽紅素顯著升高（以直接膽紅素為主）、GGT 與 ALP 明顯升高、ALT 中度升高。
   differentialDiagnoses:
     - 肝實質性黃疸（肝炎、肝硬化）
     - 溶血性黃疸
     - 膽囊黏液囊腫
     - 肝內膽汁鬱滯
-
 treatment:
   medical:
     - 針對病因治療（如胰臟炎的內科處理）
@@ -78,39 +77,71 @@ treatment:
     - 膽囊十二指腸吻合術 (cholecystoduodenostomy) 或膽囊空腸吻合術
     - 膽管切開取石術
     - 腫瘤相關阻塞的姑息性膽管引流
-
 prognosis:
-  general: "預後取決於病因。胰臟炎引起的暫時性阻塞內科治療後預後良好。膽石症手術治療後預後佳。腫瘤相關阻塞預後不良。長期阻塞可導致繼發性膽汁性肝硬化。"
-
+  general: 預後取決於病因。胰臟炎引起的暫時性阻塞內科治療後預後良好。膽石症手術治療後預後佳。腫瘤相關阻塞預後不良。長期阻塞可導致繼發性膽汁性肝硬化。
 prevention:
   - 胰臟炎的及時治療以預防繼發性膽管阻塞
   - 膽管炎的積極治療
   - 定期監測已知膽道疾病患者
-
-
 guidelineRefs:
   - sourceOrg: The Journal of veterinary medical science
-    title: "Enterococcus casseliflavus infection in a captive Southern Cassowary (Casuarius casuarius): clinical and post-mortem findings."
+    title: >-
+      Enterococcus casseliflavus infection in a captive Southern Cassowary (Casuarius casuarius): clinical and
+      post-mortem findings.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10315551/
     type: case-report
-    pmid: "37150614"
+    pmid: '37150614'
   - sourceOrg: Annals of hepato-biliary-pancreatic surgery
-    title: The effect of Lactococcus lactis D4 on the expression of Ki-67 and liver fibrosis in a rat model of obstructive jaundice.
+    title: >-
+      The effect of Lactococcus lactis D4 on the expression of Ki-67 and liver fibrosis in a rat model of obstructive
+      jaundice.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12643807/
     type: research
-    pmid: "40947111"
+    pmid: '40947111'
   - sourceOrg: Clinical and experimental hepatology
-    title: "Taurine mitigates bile duct obstruction-associated cholemic nephropathy: effect on oxidative stress and mitochondrial parameters."
+    title: >-
+      Taurine mitigates bile duct obstruction-associated cholemic nephropathy: effect on oxidative stress and
+      mitochondrial parameters.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8122090/
     type: research
-    pmid: "34027113"
+    pmid: '34027113'
   - sourceOrg: Journal of Zhejiang University. Science. B
     title: A novel ameliorated rat model of reversible obstructive jaundice.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10106395/
     type: research
-    pmid: "37056210"
+    pmid: '37056210'
   - sourceOrg: Quantitative imaging in medicine and surgery
-    title: "Black blood T1rho MR imaging may diagnose early stage liver fibrosis: a proof-of-principle study with rat biliary duct ligation model."
+    title: >-
+      Black blood T1rho MR imaging may diagnose early stage liver fibrosis: a proof-of-principle study with rat biliary
+      duct ligation model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5009096/
     type: research
-    pmid: "27709071"
+    pmid: '27709071'
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: jaundice
+    frequency: common
+diagnosticAlgorithm:
+  title: 膽管阻塞 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 總膽管擴張（犬 >3mm、貓 >4mm）為主要影像學發現。可見膽囊擴張、膽管結石、胰臟腫脹或腫塊。
+        - name: 血液生化
+          notes: 阻塞性黃疸特徵：總膽紅素顯著升高（以直接膽紅素為主）、GGT 與 ALP 明顯升高、ALT 中度升高。
+ddxSource: auto-generated

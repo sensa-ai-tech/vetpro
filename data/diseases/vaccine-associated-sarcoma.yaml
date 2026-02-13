@@ -2,16 +2,22 @@ slug: vaccine-associated-sarcoma
 nameEn: Vaccine Associated Sarcoma
 nameZh: 疫苗相關肉瘤
 bodySystem: oncology
-description: 疫苗相關肉瘤 (vaccine-associated sarcoma/injection-site sarcoma) 為貓最具臨床意義的醫源性腫瘤，發生率約 1-10/10,000 次注射。多為高度惡性纖維肉瘤，局部侵襲性極強，復發率高。犬極罕見。發生機制與注射部位的慢性發炎反應相關。
-
+description: >-
+  疫苗相關肉瘤 (vaccine-associated sarcoma/injection-site sarcoma) 為貓最具臨床意義的醫源性腫瘤，發生率約 1-10/10,000
+  次注射。多為高度惡性纖維肉瘤，局部侵襲性極強，復發率高。犬極罕見。發生機制與注射部位的慢性發炎反應相關。
 aliases:
-  - { alias: 注射部位肉瘤, language: zh }
-  - { alias: 貓疫苗肉瘤, language: zh }
-  - { alias: Injection-Site Sarcoma, language: en }
-  - { alias: Feline Injection-Site Sarcoma, language: en }
-  - { alias: FISS, language: en }
-  - { alias: VAS, language: en }
-
+  - alias: 注射部位肉瘤
+    language: zh
+  - alias: 貓疫苗肉瘤
+    language: zh
+  - alias: Injection-Site Sarcoma
+    language: en
+  - alias: Feline Injection-Site Sarcoma
+    language: en
+  - alias: FISS
+    language: en
+  - alias: VAS
+    language: en
 species:
   - speciesCommon: cat
     prevalence: uncommon
@@ -19,7 +25,6 @@ species:
   - speciesCommon: dog
     prevalence: rare
     notes: 犬注射部位肉瘤極罕見，但曾有個案報告。生物學行為與貓相似。
-
 etiology:
   categories:
     - name: 發生機制
@@ -39,7 +44,6 @@ etiology:
         - 同一部位反覆注射
         - 低溫注射液
         - 個體基因易感性
-
 clinicalSigns:
   early:
     - 注射部位出現堅硬、無痛性腫塊
@@ -52,7 +56,6 @@ clinicalSigns:
     - 局部疼痛
     - 皮膚潰瘍
     - 遠端轉移（肺最常見，約 10-25%）
-
 diagnosis:
   primaryTests:
     - name: 3-2-1 規則評估
@@ -66,7 +69,6 @@ diagnosis:
     - 胸腔 X-ray 三視圖（肺轉移篩檢）
     - 腹部超音波
     - 術前 CBC 與生化檢查
-
 treatment:
   principles:
     - 首次手術為最佳治癒機會（廣泛切除）
@@ -78,13 +80,55 @@ treatment:
     - 四肢遠端腫瘤考慮截肢（預後較佳）
     - 術前或術後放射治療（改善局部控制率）
     - 化療可考慮 doxorubicin 或 carboplatin
-    - "預防措施：遵循 VAFSTF 接種部位建議"
-    - "疫苗接種部位：右後肢遠端（FeLV）、右肩下方（狂犬病）"
+    - 預防措施：遵循 VAFSTF 接種部位建議
+    - 疫苗接種部位：右後肢遠端（FeLV）、右肩下方（狂犬病）
     - 使用無佐劑疫苗（如 PureVax 狂犬病）
     - 避免同一部位反覆注射
-
 prognosis: 貓疫苗相關肉瘤預後視初次手術切緣而定。首次廣泛切除（切緣乾淨）合併放療，中位存活 2-3 年以上。切緣不乾淨或不完整切除後復發率高達 30-70%。截肢患畜局部復發率最低。肺轉移者預後不良。
-
 pubmedQueries:
   - query: '"injection-site sarcoma" OR "vaccine-associated sarcoma" AND (feline OR cat) AND ("treatment" OR "guidelines")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 注射部位肉瘤 診斷流程
+  steps:
+    - step: 1
+      action: 腫塊監測
+      details: 套用3-2-1法則評估注射部位腫塊
+      findings:
+        - '>3個月仍存在'
+        - '>2cm'
+        - 1個月內增大
+    - step: 2
+      action: 組織診斷
+      details: FNA初篩+切開式活檢確診
+      findings:
+        - 肉芽腫（觀察）
+        - 肉瘤確診
+        - 不確定（需活檢）
+    - step: 3
+      action: 分期檢查
+      details: CT/MRI評估腫瘤範圍+胸部X光排除轉移
+      findings:
+        - 局部腫瘤
+        - 深層延伸
+        - 肺轉移
+    - step: 4
+      action: 治療計畫
+      details: 轉診外科專科進行激進手術+輔助治療
+      findings:
+        - 激進手術可行
+        - 需截肢
+        - 多模式治療
+clinicalPearls:
+  - 3-2-1法則：注射後3個月仍存在、直徑>2cm、或1個月內在增大的腫塊應立即活檢
+  - 首次手術必須激進（3-5cm邊界），保守手術後復發的再手術更困難
+  - 疫苗應注射在四肢遠端（而非肩胛間），以便必要時可截肢治療
+monitoringItems:
+  - 術後每月觸診手術部位3個月
+  - 之後每3個月檢查共2年
+  - 每3-6個月胸腔X光（肺轉移監測）
+  - 復發早期發現可提高再手術成功率
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: rare
+ddxSource: book

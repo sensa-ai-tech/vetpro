@@ -3,18 +3,18 @@ nameEn: Collie Dermatomyositis
 nameZh: 柯利犬皮膚肌炎
 bodySystem: neurology
 description: 柯利犬及喜樂蒂牧羊犬的遺傳性炎症性疾病,同時侵犯皮膚及肌肉。幼犬期發病,臉部皮膚病變、肌肉萎縮及無力,嚴重度變異大,體染色體顯性遺傳。
-
 aliases:
-  - { alias: 皮膚肌炎, language: zh }
-  - { alias: Canine Familial Dermatomyositis, language: en }
-  - { alias: DMS, language: en }
-
+  - alias: 皮膚肌炎
+    language: zh
+  - alias: Canine Familial Dermatomyositis
+    language: en
+  - alias: DMS
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 柯利犬、喜樂蒂牧羊犬為主要好發品種,體染色體顯性遺傳
-
 etiology:
   categories:
     - name: 遺傳性炎症疾病
@@ -22,7 +22,6 @@ etiology:
         - 體染色體顯性遺傳(可變外顯率)
         - 血管炎導致缺血性損傷
         - 免疫介導性成分
-
 clinicalSigns:
   early:
     - 臉部皮膚病變(眼周、耳尖、唇部)
@@ -33,22 +32,20 @@ clinicalSigns:
     - 吞嚥困難、嗆咳
     - 食道擴張(巨食道症)
     - 步態僵硬、運動不耐
-
 diagnosis:
   primaryTests:
     - name: 皮膚活檢
-      notes: "界面性皮膚炎,血管炎,基底細胞液化變性"
+      notes: 界面性皮膚炎,血管炎,基底細胞液化變性
     - name: 肌肉活檢
-      notes: "肌纖維萎縮、壞死,血管周圍炎症"
+      notes: 肌纖維萎縮、壞死,血管周圍炎症
     - name: 肌電圖(EMG)
-      notes: "肌病性變化,自發性電位"
+      notes: 肌病性變化,自發性電位
     - name: 食道X光或透視
-      notes: "評估食道功能"
+      notes: 評估食道功能
   differentialDiagnoses:
     - 紅斑性狼瘡
     - 其他肌炎
     - 毛囊炎
-
 treatment:
   medical:
     - Prednisone 1-2 mg/kg PO q12h(抗炎,漸減)
@@ -57,11 +54,41 @@ treatment:
     - 防曬及皮膚保護
     - 高立食器(巨食道症病例)
     - 繼發性感染抗生素治療
-
 prognosis:
-  general: "病程變異大。輕症可能在成年後自發緩解,嚴重病例預後不良。巨食道症併發吸入性肺炎為主要死因。"
-
+  general: 病程變異大。輕症可能在成年後自發緩解,嚴重病例預後不良。巨食道症併發吸入性肺炎為主要死因。
 prevention:
   - 受影響犬隻不應繁殖
   - 基因檢測可用
   - 繁殖前遺傳諮詢
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: alopecia
+    frequency: common
+diagnosticAlgorithm:
+  title: 柯利犬皮膚肌炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dysphagia 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 皮膚活檢
+          notes: 界面性皮膚炎,血管炎,基底細胞液化變性
+        - name: 肌肉活檢
+          notes: 肌纖維萎縮、壞死,血管周圍炎症
+        - name: 肌電圖(EMG)
+          notes: 肌病性變化,自發性電位
+ddxSource: auto-generated

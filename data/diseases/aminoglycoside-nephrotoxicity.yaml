@@ -3,13 +3,15 @@ nameEn: Aminoglycoside Nephrotoxicity
 nameZh: 胺基糖苷類腎毒性
 bodySystem: toxicology
 description: 胺基糖苷類抗生素（如 gentamicin、amikacin）的腎毒性是其最重要的劑量限制性副作用。藥物蓄積於近端腎小管上皮細胞，引起急性腎小管壞死。
-
 aliases:
-  - { alias: 胺基配醣體腎毒性, language: zh }
-  - { alias: Gentamicin 腎毒性, language: zh }
-  - { alias: Aminoglycoside-Induced Nephrotoxicity, language: en }
-  - { alias: Gentamicin Nephrotoxicity, language: en }
-
+  - alias: 胺基配醣體腎毒性
+    language: zh
+  - alias: Gentamicin 腎毒性
+    language: zh
+  - alias: Aminoglycoside-Induced Nephrotoxicity
+    language: en
+  - alias: Gentamicin Nephrotoxicity
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓對胺基糖苷類腎毒性同樣敏感。貓腎功能儲備較低，更需注意監測。
-
 etiology:
   categories:
     - name: 常見藥物
@@ -35,7 +36,6 @@ etiology:
         - 粒線體功能障礙
         - 近端腎小管上皮細胞壞死
         - 谷濃度持續偏高是腎毒性主要風險因素
-
 clinicalSigns:
   early:
     - 多尿（腎小管濃縮功能受損初期）
@@ -49,19 +49,17 @@ clinicalSigns:
     - 食慾下降
     - 嘔吐
     - 脫水
-
 diagnosis:
   primaryTests:
     - name: 腎功能監測
-      notes: "BUN/Creatinine 每日或隔日監測（使用期間）。肌酐上升落後於腎損傷實際發生。GFR 下降先於肌酐上升。"
+      notes: BUN/Creatinine 每日或隔日監測（使用期間）。肌酐上升落後於腎損傷實際發生。GFR 下降先於肌酐上升。
     - name: 尿液分析
-      notes: "尿液比重下降（等張尿）、管型（顆粒管型、上皮管型）、蛋白尿為早期指標。尿 GGT/Creatinine 比值升高為早期標記。"
+      notes: 尿液比重下降（等張尿）、管型（顆粒管型、上皮管型）、蛋白尿為早期指標。尿 GGT/Creatinine 比值升高為早期標記。
   differentialDiagnoses:
     - 其他藥物性腎損傷
     - 急性腎損傷（其他原因）
     - 脫水導致的腎前性氮血症
     - 泌尿道阻塞
-
 treatment:
   medical:
     - 立即停用胺基糖苷類抗生素
@@ -72,10 +70,8 @@ treatment:
     - 轉換為非腎毒性抗生素繼續感染治療
   surgical:
     - 通常不適用手術治療
-
 prognosis:
-  general: "早期停藥並積極輸液支持者腎功能多可恢復（腎小管上皮可再生），恢復期通常需2-4週。已進展至嚴重少尿性腎衰竭者預後謹慎。腎功能完全恢復需要數週至數月。"
-
+  general: 早期停藥並積極輸液支持者腎功能多可恢復（腎小管上皮可再生），恢復期通常需2-4週。已進展至嚴重少尿性腎衰竭者預後謹慎。腎功能完全恢復需要數週至數月。
 prevention:
   - 使用胺基糖苷類前確認腎功能正常
   - 每日一次給藥方案 (Once-daily dosing) 降低腎毒性風險
@@ -83,16 +79,48 @@ prevention:
   - 維持適當水合狀態
   - 避免與其他腎毒性藥物併用（NSAIDs、amphotericin B）
   - 療程越短越好
-
-
 guidelineRefs:
   - sourceOrg: Kidney360
-    title: Lrpap1 (RAP) Inhibits Proximal Tubule Clathrin Mediated and Clathrin Independent Endocytosis, Ameliorating Renal Aminoglycoside Nephrotoxicity.
+    title: >-
+      Lrpap1 (RAP) Inhibits Proximal Tubule Clathrin Mediated and Clathrin Independent Endocytosis, Ameliorating Renal
+      Aminoglycoside Nephrotoxicity.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10278819/
     type: research
-    pmid: "36848531"
-  - sourceOrg: "Biomedicine &amp; pharmacotherapy = Biomedecine &amp; pharmacotherapie"
-    title: Combination of rosuvastatin and curcumin outperforms monotherapies in alleviating gentamicin-induced nephrotoxicity, audiotoxicity and vestibulotoxicity in a rat animal model.
+    pmid: '36848531'
+  - sourceOrg: Biomedicine &amp; pharmacotherapy = Biomedecine &amp; pharmacotherapie
+    title: >-
+      Combination of rosuvastatin and curcumin outperforms monotherapies in alleviating gentamicin-induced
+      nephrotoxicity, audiotoxicity and vestibulotoxicity in a rat animal model.
     url: https://pubmed.ncbi.nlm.nih.gov/41401640/
     type: research
-    pmid: "41401640"
+    pmid: '41401640'
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: oliguria-anuria
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 胺基糖苷類腎毒性 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - polyuria-polydipsia 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腎功能監測
+          notes: BUN/Creatinine 每日或隔日監測（使用期間）。肌酐上升落後於腎損傷實際發生。GFR 下降先於肌酐上升。
+        - name: 尿液分析
+          notes: 尿液比重下降（等張尿）、管型（顆粒管型、上皮管型）、蛋白尿為早期指標。尿 GGT/Creatinine 比值升高為早期標記。
+ddxSource: auto-generated

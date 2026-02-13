@@ -3,13 +3,15 @@ nameEn: Spinal Cord Trauma
 nameZh: 脊髓創傷
 bodySystem: neurology
 description: 脊髓創傷為外傷引起的脊髓損傷，常見於車禍、高處墜落與犬咬傷。損傷程度取決於脊髓受損節段與嚴重度。深部痛覺 (deep pain perception) 的有無為最重要的預後指標。急性期穩定脊椎與預防繼發性損傷為治療重點。
-
 aliases:
-  - { alias: 脊髓損傷, language: zh }
-  - { alias: 脊椎外傷, language: zh }
-  - { alias: Spinal Cord Injury, language: en }
-  - { alias: Spinal Fracture, language: en }
-
+  - alias: 脊髓損傷
+    language: zh
+  - alias: 脊椎外傷
+    language: zh
+  - alias: Spinal Cord Injury
+    language: en
+  - alias: Spinal Fracture
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓脊髓創傷常見於車禍與高處墜落。薦尾椎損傷導致排尿/排便功能障礙為貓特別常見。
-
 etiology:
   categories:
     - name: 原發性損傷
@@ -32,7 +33,6 @@ etiology:
         - 缺血
         - 自由基損傷
         - 興奮性毒性（glutamate）
-
 clinicalSigns:
   early:
     - 急性癱瘓（損傷節段以下）
@@ -44,7 +44,6 @@ clinicalSigns:
     - 排尿功能障礙（上運動神經元或下運動神經元膀胱）
     - Schiff-Sherrington 姿勢（胸腰椎損傷）
     - 脊髓休克
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
@@ -55,7 +54,6 @@ diagnosis:
     - CT（骨折細節、椎管狹窄）
     - MRI（脊髓實質損傷評估 — 金標準）
     - 膀胱功能評估（殘餘尿量）
-
 treatment:
   principles:
     - 脊椎固定（避免進一步損傷）
@@ -71,41 +69,80 @@ treatment:
     - 褥瘡預防（軟墊、翻身 q4h）
     - 物理治療（被動關節活動、水療）
     - 類固醇目前不建議（NASCIS 結論有爭議且副作用大）
-
 prognosis: 深部痛覺保留者預後佳（功能恢復率 >80%）。深部痛覺喪失者預後差（恢復率 <5%）。薦尾椎損傷（貓常見）排尿功能恢復率約 50%。早期手術介入可改善恢復。物理治療對功能恢復重要。
-
-
 guidelineRefs:
   - sourceOrg: Neural regeneration research
-    title: "Brain and spinal cord trauma: what we know about the therapeutic potential of insulin growth factor 1 gene therapy."
+    title: >-
+      Brain and spinal cord trauma: what we know about the therapeutic potential of insulin growth factor 1 gene
+      therapy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9396494/
     type: review
-    pmid: "35900399"
+    pmid: '35900399'
     relevance: primary
-  - sourceOrg: "The Neuroscientist : a review journal bringing neurobiology, neurology and psychiatry"
+  - sourceOrg: 'The Neuroscientist : a review journal bringing neurobiology, neurology and psychiatry'
     title: Pericytes Make Spinal Cord Breathless after Injury.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6092246/
     type: review
-    pmid: "29283016"
+    pmid: '29283016'
     relevance: supporting
   - sourceOrg: Biomedicines
     title: Neuroprotective Effect of Subdural Infusion of Serp-1 in Spinal Cord Trauma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7598159/
     type: research
-    pmid: "32977430"
+    pmid: '32977430'
     relevance: supporting
   - sourceOrg: Journal of nanobiotechnology
-    title: Neuroimmune modulating and energy supporting nanozyme-mimic scaffold synergistically promotes axon regeneration after spinal cord injury.
+    title: >-
+      Neuroimmune modulating and energy supporting nanozyme-mimic scaffold synergistically promotes axon regeneration
+      after spinal cord injury.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11225227/
     type: research
-    pmid: "38970101"
+    pmid: '38970101'
     relevance: supporting
-  - sourceOrg: "Neurotherapeutics : the journal of the American Society for Experimental NeuroTherapeutics"
-    title: Therapeutic Potential of Combinative shRNA-Encoded Lentivirus-Mediated Gene Silencing to Accelerate Somatosensory Recovery After Spinal Cord Trauma.
+  - sourceOrg: 'Neurotherapeutics : the journal of the American Society for Experimental NeuroTherapeutics'
+    title: >-
+      Therapeutic Potential of Combinative shRNA-Encoded Lentivirus-Mediated Gene Silencing to Accelerate Somatosensory
+      Recovery After Spinal Cord Trauma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10121969/
     type: research
-    pmid: "36401079"
+    pmid: '36401079'
     relevance: supporting
 pubmedQueries:
-  - query: '"spinal cord trauma" OR "spinal cord injury" AND (veterinary OR canine OR feline) AND ("treatment" OR "surgery" OR "prognosis")'
+  - query: >-
+      "spinal cord trauma" OR "spinal cord injury" AND (veterinary OR canine OR feline) AND ("treatment" OR "surgery" OR
+      "prognosis")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 脊髓創傷 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - paresis-paralysis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 定位損傷節段。評估深部痛覺（最重要預後指標）。上/下運動神經元征分辨
+        - name: 脊椎 X-ray
+          notes: 骨折、脫位、椎體塌陷
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CT（骨折細節、椎管狹窄）
+        - MRI（脊髓實質損傷評估 — 金標準）
+        - 膀胱功能評估（殘餘尿量）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 脊椎固定（避免進一步損傷）
+        - 手術減壓/固定（脊椎不穩定或壓迫持續時）
+        - 預防繼發性損傷
+ddxSource: auto-generated

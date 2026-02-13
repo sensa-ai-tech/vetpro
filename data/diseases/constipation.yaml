@@ -3,11 +3,11 @@ nameEn: Constipation
 nameZh: 便秘
 bodySystem: gastrointestinal
 description: 便秘為排便困難或排便頻率減少的狀態。犬貓便秘可因飲食不當（低纖維、脫水）、疼痛（肛門疾病、骨盆骨折）、神經肌肉功能障礙、代謝異常（低血鉀、甲狀腺功能低下）或阻塞性因素導致。貓隻便秘尤其常見。
-
 aliases:
-  - { alias: 排便困難, language: zh }
-  - { alias: Fecal Retention, language: en }
-
+  - alias: 排便困難
+    language: zh
+  - alias: Fecal Retention
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓隻便秘極常見，可因脫水、巨結腸症、骨盆骨折後狹窄或特發性原因引起。中年公貓好發。
-
 etiology:
   categories:
     - name: 飲食/環境
@@ -35,7 +34,6 @@ etiology:
         - 低血鉀
         - 甲狀腺功能低下
         - 藥物（opioids、抗膽鹼藥）
-
 clinicalSigns:
   early:
     - 排便頻率減少
@@ -47,55 +45,93 @@ clinicalSigns:
     - 嗜睡
     - 嘔吐（嚴重阻塞時）
     - 腹痛
-
 diagnosis:
   primaryTests:
     - name: 腹部 X 光
       notes: 結腸內大量糞便蓄積。評估結腸擴張程度。排除骨盆骨折、異物。
     - name: 腹部觸診與直腸指診
       notes: 結腸內可觸及硬化糞便。直腸指診評估肛門括約肌張力、前列腺大小、骨盆通道寬度。
-
 treatment:
   principles:
     - 軟化與排出滯留糞便
     - 預防復發
     - 治療基礎病因
   general:
-    - "輕度：增加飲水、高纖維飲食、Lactulose 0.5 mL/kg PO q8-12h"
-    - "中度：溫水灌腸（warm water enema）+ 輕度鎮靜下手動排糞（manual disimpaction）"
-    - "促腸蠕動：Cisapride 0.5-1 mg/kg PO q8-12h（貓首選）"
-    - "Polyethylene glycol（MiraLAX）1/8-1/4 tsp/cat q12h 混入食物"
+    - 輕度：增加飲水、高纖維飲食、Lactulose 0.5 mL/kg PO q8-12h
+    - 中度：溫水灌腸（warm water enema）+ 輕度鎮靜下手動排糞（manual disimpaction）
+    - 促腸蠕動：Cisapride 0.5-1 mg/kg PO q8-12h（貓首選）
+    - Polyethylene glycol（MiraLAX）1/8-1/4 tsp/cat q12h 混入食物
     - 增加飲水（濕食、水噴泉）
-
 prognosis: 單純飲食性便秘在矯正後預後極好。反覆便秘需要長期飲食與藥物管理。進展為 obstipation（嚴重頑固性便秘）或巨結腸症者管理較困難。骨盆骨折後通道狹窄者可能需要手術。
-
-
 guidelineRefs:
   - sourceOrg: Obesity pillars
-    title: "Nutritional and lifestyle supportive care recommendations for management of obesity with GLP-1 - based therapies: An expert consensus statement using a modified Delphi approach."
+    title: >-
+      Nutritional and lifestyle supportive care recommendations for management of obesity with GLP-1 - based therapies:
+      An expert consensus statement using a modified Delphi approach.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12768930/
     type: review
-    pmid: "41502845"
+    pmid: '41502845'
   - sourceOrg: Frontiers in nutrition
-    title: "Impact of fermented foods consumption on gastrointestinal wellbeing in healthy adults: a systematic review and meta-analysis."
+    title: >-
+      Impact of fermented foods consumption on gastrointestinal wellbeing in healthy adults: a systematic review and
+      meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12549620/
     type: review
-    pmid: "41141260"
+    pmid: '41141260'
   - sourceOrg: Veterinary medicine and science
-    title: "A Spotlight on Archaea in Humans, Livestock and Poultry: A Review."
+    title: 'A Spotlight on Archaea in Humans, Livestock and Poultry: A Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11875071/
     type: review
-    pmid: "40028749"
+    pmid: '40028749'
   - sourceOrg: Microorganisms
-    title: "Probiotics and Cat Health: A Review of Progress and Prospects."
+    title: 'Probiotics and Cat Health: A Review of Progress and Prospects.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11205573/
     type: review
-    pmid: "38930462"
-  - sourceOrg: "Naunyn-Schmiedeberg's archives of pharmacology"
-    title: "The phytochemical profiling, pharmacological activities, and safety of malva sylvestris: a review."
+    pmid: '38930462'
+  - sourceOrg: Naunyn-Schmiedeberg's archives of pharmacology
+    title: 'The phytochemical profiling, pharmacological activities, and safety of malva sylvestris: a review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9898411/
     type: review
-    pmid: "36418467"
+    pmid: '36418467'
 pubmedQueries:
   - query: '"constipation" AND (veterinary OR canine OR feline) AND ("lactulose" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: constipation
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 便秘 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - constipation 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部 X 光
+          notes: 結腸內大量糞便蓄積。評估結腸擴張程度。排除骨盆骨折、異物。
+        - name: 腹部觸診與直腸指診
+          notes: 結腸內可觸及硬化糞便。直腸指診評估肛門括約肌張力、前列腺大小、骨盆通道寬度。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 軟化與排出滯留糞便
+        - 預防復發
+        - 治療基礎病因
+ddxSource: auto-generated

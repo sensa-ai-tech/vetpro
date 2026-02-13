@@ -3,12 +3,13 @@ nameEn: Bronchoscopy
 nameZh: 支氣管鏡檢查
 bodySystem: other
 description: 下呼吸道內視鏡檢查,評估氣管、支氣管結構及取樣。用於慢性咳嗽、氣道塌陷、腫塊或異物診斷治療。
-
 aliases:
-  - { alias: 支氣管內視鏡, language: zh }
-  - { alias: Tracheobronchoscopy, language: en }
-  - { alias: 氣管鏡, language: zh }
-
+  - alias: 支氣管內視鏡
+    language: zh
+  - alias: Tracheobronchoscopy
+    language: en
+  - alias: 氣管鏡
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓氣喘、腫瘤、異物評估
-
 etiology:
   categories:
     - name: 診斷適應症
@@ -31,7 +31,6 @@ etiology:
         - 異物取出
         - 支氣管肺泡灌洗(BAL)
         - 氣道擴張或支架置入
-
 clinicalSigns:
   early:
     - 術後短暫咳嗽增加
@@ -40,19 +39,17 @@ clinicalSigns:
   progressive:
     - 症狀改善(若異物取出或治療)
     - BAL結果指引治療
-
 diagnosis:
   primaryTests:
     - name: 支氣管鏡視診
-      notes: "評估氣道塌陷程度、黏膜、分泌物"
+      notes: 評估氣道塌陷程度、黏膜、分泌物
     - name: 支氣管肺泡灌洗
-      notes: "細胞學、培養、PCR分析"
+      notes: 細胞學、培養、PCR分析
     - name: 組織活檢
-      notes: "可疑腫塊或黏膜異常處"
+      notes: 可疑腫塊或黏膜異常處
   differentialDiagnoses:
     - 胸腔CT(非侵入但無細胞學)
     - 經皮肺活檢(氣胸風險)
-
 treatment:
   medical:
     - 麻醉:全身麻醉,短效肌鬆劑避免咳嗽
@@ -60,40 +57,68 @@ treatment:
     - BAL技術:無菌食鹽水1-2 mL/kg分次灌洗
     - 術後:氧氣支持,監控呼吸窘迫
     - 抗生素:依培養結果
-
 prognosis:
-  general: "安全性高,嚴重併發症罕見。BAL診斷率60-80%。氣道塌陷可量化評估。異物取出成功率>90%,避免開胸手術。"
-
+  general: 安全性高,嚴重併發症罕見。BAL診斷率60-80%。氣道塌陷可量化評估。異物取出成功率>90%,避免開胸手術。
 prevention:
   - 術前胸腔X光評估
   - 麻醉監控氧合及通氣
   - 無菌技術避免醫源性感染
   - 術後監控氣道痙攣或出血
-
-
 guidelineRefs:
   - sourceOrg: BMJ open respiratory research
-    title: "No difference in microbial diversity between bronchoalveolar lavage and tracheal sampling: a systematic review and meta-analysis."
+    title: >-
+      No difference in microbial diversity between bronchoalveolar lavage and tracheal sampling: a systematic review and
+      meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12551526/
     type: review
-    pmid: "41130610"
-  - sourceOrg: "European respiratory review : an official journal of the European Respiratory Society"
+    pmid: '41130610'
+  - sourceOrg: 'European respiratory review : an official journal of the European Respiratory Society'
     title: Bronchoscopic treatment of inoperable nonsmall cell lung cancer.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9488570/
     type: review
-    pmid: "33153988"
+    pmid: '33153988'
   - sourceOrg: World journal of emergency medicine
-    title: "Airway foreign bodies: A critical review for a common pediatric emergency."
+    title: 'Airway foreign bodies: A critical review for a common pediatric emergency.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4786499/
     type: review
-    pmid: "27006731"
+    pmid: '27006731'
   - sourceOrg: JFMS open reports
-    title: "Sclerosing encapsulating peritonitis in cats: a two-case report and literature review."
+    title: 'Sclerosing encapsulating peritonitis in cats: a two-case report and literature review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10331345/
     type: case-report
-    pmid: "37434990"
+    pmid: '37434990'
   - sourceOrg: JFMS open reports
     title: Tooth aspiration in two cats following maxillofacial trauma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9554134/
     type: case-report
-    pmid: "36249673"
+    pmid: '36249673'
+associatedSymptoms:
+  - symptomId: coughing
+    frequency: common
+  - symptomId: stertor-stridor
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 支氣管鏡檢查 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - coughing 相關症狀
+        - stertor-stridor 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 支氣管鏡視診
+          notes: 評估氣道塌陷程度、黏膜、分泌物
+        - name: 支氣管肺泡灌洗
+          notes: 細胞學、培養、PCR分析
+        - name: 組織活檢
+          notes: 可疑腫塊或黏膜異常處
+ddxSource: auto-generated

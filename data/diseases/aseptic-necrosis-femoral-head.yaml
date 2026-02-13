@@ -3,12 +3,13 @@ nameEn: Aseptic Necrosis Femoral Head
 nameZh: 股骨頭無血管性壞死
 bodySystem: orthopedic
 description: 股骨頭因血液供應中斷導致骨壞死的退化性疾病，又稱 Legg-Calvé-Perthes 病。好發於小型品種幼犬（4-11 月齡）。表現為進行性後肢跛行與肌肉萎縮。
-
 aliases:
-  - { alias: "Legg-Calve-Perthes Disease", language: en }
-  - { alias: "AVN Femoral Head", language: en }
-  - { alias: "股骨頭壞死", language: zh }
-
+  - alias: Legg-Calve-Perthes Disease
+    language: en
+  - alias: AVN Femoral Head
+    language: en
+  - alias: 股骨頭壞死
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 血管性
@@ -24,7 +24,6 @@ etiology:
         - 股骨頭/頸部血液供應中斷
         - 確切原因不明
         - 可能有遺傳傾向
-
 clinicalSigns:
   early:
     - 漸進性後肢跛行
@@ -35,14 +34,12 @@ clinicalSigns:
     - 關節活動範圍減少
     - 嚴重跛行
     - 觸診髖關節劇痛
-
 diagnosis:
   primaryTests:
     - name: 骨盆 X 光
       notes: 股骨頭不規則、塌陷、透亮區。進展期股骨頭碎裂
     - name: CT
       notes: 早期微小變化的評估
-
 treatment:
   principles:
     - 手術切除壞死股骨頭為首選
@@ -52,41 +49,75 @@ treatment:
     - 術後積極物理治療
     - 止痛管理
     - 體重控制
-
 prognosis: FHO 手術後預後良好至優良。小型犬功能恢復佳。需 4-8 週恢復期配合物理治療。
-
-
 guidelineRefs:
   - sourceOrg: Orthopaedic surgery
-    title: "Analysis of Animal Models of Traumatic Osteonecrosis of the Femoral Head Based on Blood Supply: A Literature Review."
+    title: >-
+      Analysis of Animal Models of Traumatic Osteonecrosis of the Femoral Head Based on Blood Supply: A Literature
+      Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11872375/
     type: review
-    pmid: "39837780"
+    pmid: '39837780'
   - sourceOrg: Journal of orthopaedic surgery and research
-    title: "Integrative analyses of genes related to femoral head osteonecrosis: an umbrella review of systematic reviews and meta-analyses of observational studies."
+    title: >-
+      Integrative analyses of genes related to femoral head osteonecrosis: an umbrella review of systematic reviews and
+      meta-analyses of observational studies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8961967/
     type: review
-    pmid: "35346283"
+    pmid: '35346283'
   - sourceOrg: Chinese medicine
-    title: "Traditional Chinese medicine Youguiyin decoction ameliorate glucocorticoid-induced osteonecrosis in rat by modulating ROS/PHD2/HIF-1&#x3b1; oxidative stress signaling pathway in bone marrow mesenchymal stem cells."
+    title: >-
+      Traditional Chinese medicine Youguiyin decoction ameliorate glucocorticoid-induced osteonecrosis in rat by
+      modulating ROS/PHD2/HIF-1&#x3b1; oxidative stress signaling pathway in bone marrow mesenchymal stem cells.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12049805/
     type: research
-    pmid: "40319297"
+    pmid: '40319297'
   - sourceOrg: Molecular medicine (Cambridge, Mass.)
-    title: SOST/Sclerostin impairs the osteogenesis and angiogesis in glucocorticoid-associated osteonecrosis of femoral head.
+    title: >-
+      SOST/Sclerostin impairs the osteogenesis and angiogesis in glucocorticoid-associated osteonecrosis of femoral
+      head.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11439244/
     type: research
-    pmid: "39342093"
-  - sourceOrg: "Cellular and molecular life sciences : CMLS"
+    pmid: '39342093'
+  - sourceOrg: 'Cellular and molecular life sciences : CMLS'
     title: MAGL blockade alleviates steroid-induced femoral head osteonecrosis by reprogramming BMSC fate in rat.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11455816/
     type: research
-    pmid: "39368012"
+    pmid: '39368012'
   - sourceOrg: The veterinary quarterly
     title: Glycolytic reprogramming impairs chondrocyte function in broilers with femoral head necrosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12573555/
     type: research
-    pmid: "41158005"
+    pmid: '41158005'
 pubmedQueries:
   - query: '"Legg-Calve-Perthes" OR "avascular necrosis femoral head" AND (veterinary OR canine) AND ("treatment" OR "FHO")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 股骨頭無血管性壞死 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cachexia-muscle-wasting 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 骨盆 X 光
+          notes: 股骨頭不規則、塌陷、透亮區。進展期股骨頭碎裂
+        - name: CT
+          notes: 早期微小變化的評估
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術切除壞死股骨頭為首選
+        - 保守治療效果不佳
+ddxSource: auto-generated

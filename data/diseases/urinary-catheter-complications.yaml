@@ -3,11 +3,11 @@ nameEn: Urinary Catheter Complications
 nameZh: 導尿管相關併發症
 bodySystem: urinary
 description: 留置導尿管期間發生的各種併發症,包括感染、尿道損傷、導管阻塞及脫落等,需要密切監測及適當處理。
-
 aliases:
-  - { alias: 導尿併發症, language: zh }
-  - { alias: Catheter-associated complications, language: en }
-
+  - alias: 導尿併發症
+    language: zh
+  - alias: Catheter-associated complications
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 雄貓尿道阻塞後留置導管常見,細菌感染風險高
-
 etiology:
   categories:
     - name: 感染性併發症
@@ -36,7 +35,6 @@ etiology:
         - 導管尺寸選擇不當
         - 插入深度不足或過深
         - 無菌技術不當
-
 clinicalSigns:
   early:
     - 導管周圍尿液滲漏
@@ -48,21 +46,19 @@ clinicalSigns:
     - 尿流突然減少或停止(阻塞)
     - 尿道口出血或膿性分泌物
     - 氮血症惡化(完全阻塞)
-
 diagnosis:
   primaryTests:
     - name: 尿液分析+培養
-      notes: "評估感染存在及病原菌,留置導管超過3天常見菌尿"
+      notes: 評估感染存在及病原菌,留置導管超過3天常見菌尿
     - name: 導管灌洗測試
-      notes: "判斷導管是否通暢"
+      notes: 判斷導管是否通暢
     - name: 尿道鏡或X光檢查
-      notes: "評估尿道損傷程度或導管位置"
+      notes: 評估尿道損傷程度或導管位置
   differentialDiagnoses:
     - 原發性尿道阻塞復發
     - 膀胱腫瘤或結石
     - 嚴重膀胱炎
     - 凝血功能異常導致血尿
-
 treatment:
   medical:
     - 導管阻塞時以無菌生理食鹽水輕柔灌洗
@@ -72,13 +68,36 @@ treatment:
     - 定期更換導管(建議每5-7天)及無菌維護
     - 氣球無法放氣時以注射針穿刺破壞氣球
     - 止痛及抗痙攣治療(Buprenorphine 0.01-0.02 mg/kg IV TID + Prazosin 0.5-1 mg PO BID)
-
 prognosis:
-  general: "多數併發症經適當處理可控制;嚴重尿道損傷或敗血症者預後保守。儘早移除導管可減少併發症發生率。"
-
+  general: 多數併發症經適當處理可控制;嚴重尿道損傷或敗血症者預後保守。儘早移除導管可減少併發症發生率。
 prevention:
   - 嚴格無菌技術插管及維護
   - 選擇適當尺寸及材質導管
   - 密閉式引流系統減少感染風險
   - 儘早移除導管(一旦不再需要)
   - 定期監測尿液品質及導管通暢度
+associatedSymptoms:
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: common
+diagnosticAlgorithm:
+  title: 導尿管相關併發症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - hyperthermia 相關症狀
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 尿液分析+培養
+          notes: 評估感染存在及病原菌,留置導管超過3天常見菌尿
+        - name: 導管灌洗測試
+          notes: 判斷導管是否通暢
+        - name: 尿道鏡或X光檢查
+          notes: 評估尿道損傷程度或導管位置
+ddxSource: auto-generated

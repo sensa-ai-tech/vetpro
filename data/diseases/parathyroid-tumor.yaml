@@ -3,14 +3,17 @@ nameEn: Parathyroid Tumor
 nameZh: 副甲狀腺腫瘤
 bodySystem: oncology
 description: 副甲狀腺腫瘤以腺瘤最常見，導致原發性副甲狀腺機能亢進症。過量副甲狀腺素分泌引起高鈣血症，可損害腎臟及其他器官。手術切除為標準治療。
-
 aliases:
-  - { alias: 副甲狀腺腺瘤, language: zh }
-  - { alias: 原發性副甲狀腺機能亢進, language: zh }
-  - { alias: Parathyroid Adenoma, language: en }
-  - { alias: Primary Hyperparathyroidism, language: en }
-  - { alias: PHPT, language: en }
-
+  - alias: 副甲狀腺腺瘤
+    language: zh
+  - alias: 原發性副甲狀腺機能亢進
+    language: zh
+  - alias: Parathyroid Adenoma
+    language: en
+  - alias: Primary Hyperparathyroidism
+    language: en
+  - alias: PHPT
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓原發性副甲狀腺機能亢進症較少見，但隨診斷技術進步有增加趨勢。老年貓好發。
-
 etiology:
   categories:
     - name: 腫瘤類型
@@ -34,7 +36,6 @@ etiology:
         - 促進骨骼鈣釋放及腸道鈣吸收
         - 增加腎臟鈣重吸收
         - 長期高鈣血症損害腎臟
-
 clinicalSigns:
   early:
     - 多飲多尿
@@ -48,22 +49,20 @@ clinicalSigns:
     - 腎臟鈣化
     - 腎功能衰退
     - 骨骼脫礦化
-
 diagnosis:
   primaryTests:
     - name: 血清鈣及離子鈣
-      notes: "持續性高鈣血症（離子鈣 >1.4 mmol/L）為診斷基礎"
+      notes: 持續性高鈣血症（離子鈣 >1.4 mmol/L）為診斷基礎
     - name: PTH 測量
-      notes: "不當升高的 PTH 值（高鈣血症時 PTH 應被抑制）。PTH 正常高值伴高鈣血症即具診斷意義"
+      notes: 不當升高的 PTH 值（高鈣血症時 PTH 應被抑制）。PTH 正常高值伴高鈣血症即具診斷意義
     - name: 頸部超音波
-      notes: "可偵測腫大的副甲狀腺結節（正常副甲狀腺超音波不可見）"
+      notes: 可偵測腫大的副甲狀腺結節（正常副甲狀腺超音波不可見）
   differentialDiagnoses:
     - 惡性腫瘤相關高鈣血症（淋巴瘤、肛門囊腺癌）
     - 維生素 D 中毒
     - 腎性繼發性副甲狀腺機能亢進
     - Addison 病
     - 肉芽腫性疾病
-
 treatment:
   surgical:
     - 受累副甲狀腺切除為標準治療
@@ -72,21 +71,51 @@ treatment:
   medical:
     - 術前高鈣血症急性處理（生理食鹽水輸液、Furosemide）
     - 術後監測低鈣血症（對側副甲狀腺萎縮期間）
-    - "術後低鈣血症治療：Calcitriol 及口服鈣補充"
+    - 術後低鈣血症治療：Calcitriol 及口服鈣補充
     - 維生素 D 補充（短期）
-
 prognosis:
-  general: "手術切除後預後極佳，治癒率 >90%。術後需密切監測血鈣 5-7 天（低鈣血症風險）。腺癌罕見但預後較差。腎功能損傷可能不可逆。"
-
+  general: 手術切除後預後極佳，治癒率 >90%。術後需密切監測血鈣 5-7 天（低鈣血症風險）。腺癌罕見但預後較差。腎功能損傷可能不可逆。
 prevention:
   - 偶然發現高鈣血症應進一步檢查副甲狀腺
   - 反覆性泌尿道結石應評估鈣代謝
-
-
 guidelineRefs:
   - sourceOrg: 3 Biotech
-    title: Establishment and characterization of long-term human primary parathyroid tumor subclones derived from Indian PHPT.
+    title: >-
+      Establishment and characterization of long-term human primary parathyroid tumor subclones derived from Indian
+      PHPT.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10160248/
     type: research
-    pmid: "37152002"
+    pmid: '37152002'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: constipation
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 副甲狀腺腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - polyuria-polydipsia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清鈣及離子鈣
+          notes: 持續性高鈣血症（離子鈣 >1.4 mmol/L）為診斷基礎
+        - name: PTH 測量
+          notes: 不當升高的 PTH 值（高鈣血症時 PTH 應被抑制）。PTH 正常高值伴高鈣血症即具診斷意義
+        - name: 頸部超音波
+          notes: 可偵測腫大的副甲狀腺結節（正常副甲狀腺超音波不可見）
+ddxSource: auto-generated

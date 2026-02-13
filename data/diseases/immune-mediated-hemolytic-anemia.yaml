@@ -3,13 +3,15 @@ nameEn: Immune-Mediated Hemolytic Anemia
 nameZh: 免疫介導性溶血性貧血
 bodySystem: hematology
 description: 免疫系統異常攻擊自身紅血球導致的溶血性貧血。犬常見，為最常見的自體免疫疾病之一。
-
 aliases:
-  - { alias: IMHA, language: en }
-  - { alias: Autoimmune Hemolytic Anemia, language: en }
-  - { alias: AIHA, language: en }
-  - { alias: 自體免疫溶血性貧血, language: zh }
-
+  - alias: IMHA
+    language: en
+  - alias: Autoimmune Hemolytic Anemia
+    language: en
+  - alias: AIHA
+    language: en
+  - alias: 自體免疫溶血性貧血
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓較少見，常與 FeLV、Mycoplasma haemofelis 等感染相關。
-
 etiology:
   categories:
     - name: 原發性 (自體免疫)
@@ -33,7 +34,6 @@ etiology:
         - 疫苗接種後 (罕見)
         - 腫瘤 (淋巴瘤、血管肉瘤)
         - 蜂螫
-
 clinicalSigns:
   early:
     - 虛弱、嗜睡
@@ -50,20 +50,19 @@ clinicalSigns:
     - 呼吸困難
     - 血栓栓塞 (肺動脈栓塞為主要死因)
     - DIC
-
 diagnosis:
   primaryTests:
     - name: CBC
-      notes: "再生性貧血 (網狀紅血球增加)、球狀紅血球、自動凝集 (saline agglutination test)"
+      notes: 再生性貧血 (網狀紅血球增加)、球狀紅血球、自動凝集 (saline agglutination test)
     - name: 抹片檢查
-      notes: "球狀紅血球、多染性紅血球、嗜中性球左移"
+      notes: 球狀紅血球、多染性紅血球、嗜中性球左移
     - name: Coombs' test (直接抗球蛋白試驗)
-      notes: "陽性支持診斷，但陰性不能排除"
+      notes: 陽性支持診斷，但陰性不能排除
   imaging:
     - name: 腹部超音波
-      notes: "評估脾腫大、排除腫瘤 (血管肉瘤)"
+      notes: 評估脾腫大、排除腫瘤 (血管肉瘤)
     - name: 胸腔 X 光
-      notes: "排除肺動脈栓塞、轉移性腫瘤"
+      notes: 排除肺動脈栓塞、轉移性腫瘤
   additional:
     - 生化 (膽紅素升高)
     - 網狀紅血球計數
@@ -71,7 +70,6 @@ diagnosis:
     - 血型配對 (輸血前)
     - PCR (Babesia、Mycoplasma)
     - 尿液分析 (血紅素尿 vs 血尿)
-
 treatment:
   principles:
     - 免疫抑制治療為基石
@@ -79,58 +77,133 @@ treatment:
     - 預防血栓栓塞併發症
   medications:
     - name: Prednisolone/Prednisone
-      dose: "1-2 mg/kg PO BID (total daily dose 2-4 mg/kg/day; ACVIM consensus recommends starting at 2 mg/kg/day)"
+      dose: 1-2 mg/kg PO BID (total daily dose 2-4 mg/kg/day; ACVIM consensus recommends starting at 2 mg/kg/day)
       notes: 穩定後逐漸減量，療程通常 3-6 個月
     - name: Mycophenolate mofetil
-      dose: "10 mg/kg PO BID"
+      dose: 10 mg/kg PO BID
       notes: 常作為第二線免疫抑制劑，減少類固醇用量
     - name: Azathioprine (僅犬)
-      dose: "2 mg/kg PO SID × 2 週，後改隔日"
+      dose: 2 mg/kg PO SID × 2 週，後改隔日
       notes: 貓禁用 (骨髓抑制)
     - name: Cyclosporine
-      dose: "5 mg/kg PO BID"
+      dose: 5 mg/kg PO BID
       notes: 難治性案例的替代選擇
   general:
     - 輸血 (PCV <15% 或臨床嚴重不穩定時)
     - 低劑量 aspirin (0.5 mg/kg PO SID) 或 clopidogrel (犬 2 mg/kg PO SID) 預防血栓
     - 住院監測 (急性期)
     - 排除繼發性原因
-
 emergencyNotes: 重度貧血 (PCV <12%) 需緊急輸血。注意肺動脈栓塞為主要死因。DIC 徵兆需積極處理。
-
 prognosis: 總死亡率約 30-40%。存活過第一週的犬預後改善。約 15% 會復發。併發血栓栓塞的預後較差。
-
 guidelineRefs:
   - sourceOrg: ACVIM
     title: ACVIM Consensus Statement on the Diagnosis and Treatment of IMHA in Dogs
     url: https://pubmed.ncbi.nlm.nih.gov/30806491/
     type: consensus
-    pmid: "30806491"
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
-    title: 2022 Update of the Consensus on the Rational Use of Antithrombotics and Thrombolytics in Veterinary Critical Care (CURATIVE) Domain 1- Defining populations at risk.
+    pmid: '30806491'
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
+    title: >-
+      2022 Update of the Consensus on the Rational Use of Antithrombotics and Thrombolytics in Veterinary Critical Care
+      (CURATIVE) Domain 1- Defining populations at risk.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9322658/
     type: consensus
-    pmid: "35499966"
+    pmid: '35499966'
   - sourceOrg: Journal of veterinary internal medicine
     title: ACVIM consensus statement on the treatment of immune-mediated hemolytic anemia in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6524099/
     type: consensus
-    pmid: "30847984"
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Immune-mediated hemolytic anemia in a bottlenose dolphin: case report and literature review."
+    pmid: '30847984'
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: 'Immune-mediated hemolytic anemia in a bottlenose dolphin: case report and literature review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11523176/
     type: review
-    pmid: "39305173"
+    pmid: '39305173'
   - sourceOrg: Veterinary medicine (Auckland, N.Z.)
-    title: "Canine autoimmune hemolytic anemia: management challenges."
+    title: 'Canine autoimmune hemolytic anemia: management challenges.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6055891/
     type: review
-    pmid: "30050843"
+    pmid: '30050843'
 pubmedQueries:
   - query: '"immune-mediated hemolytic anemia" AND dog AND "consensus"'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "IMM"
-  sectionTitle: "Immune-mediated Hemolytic Anemia"
+  chapter: IMM
+  sectionTitle: Immune-mediated Hemolytic Anemia
   pdfPage: 867
+diagnosticAlgorithm:
+  title: 免疫介導性溶血性貧血 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 詢問病史、用藥史及疫苗史，進行全面理學檢查
+      findings:
+        - 黏膜蒼白或黃疸
+        - 心搏過速
+        - 脾臟腫大
+        - 發燒
+    - step: 2
+      action: 血液學檢查
+      details: 進行CBC含網織紅血球計數及血液抹片檢查
+      findings:
+        - 再生性貧血（網織紅血球增加）
+        - 球形紅血球增多
+        - 白血球增多
+        - 血小板減少
+    - step: 3
+      action: 免疫學檢測
+      details: 進行Coombs試驗（直接抗球蛋白試驗）及自體凝集試驗
+      findings:
+        - Coombs試驗陽性
+        - 鹽水自體凝集試驗陽性
+        - 血清膽紅素升高
+    - step: 4
+      action: 進階影像與排除
+      details: 腹部超音波及胸腔X光，排除潛在病因
+      findings:
+        - 肝脾腫大
+        - 排除腫瘤性疾病
+        - 排除感染性病因（壁蝨傳染病）
+clinicalPearls:
+  - 約60-70%為原發性（特發性），30-40%為繼發性
+  - 血栓栓塞併發症常見且致命
+  - 治療反應通常在1-2週內可見
+  - 長期免疫抑制治療需監測副作用
+monitoringItems:
+  - PCV每日（住院期間）
+  - 網織紅血球計數
+  - 血小板（排除Evans syndrome）
+  - 凝血功能
+associatedSymptoms:
+  - symptomId: jaundice
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: petechiae-ecchymoses
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: hepatomegaly
+    frequency: common
+  - symptomId: splenomegaly
+    frequency: common
+associatedLabFindings:
+  - labId: anaemia-regenerative
+    frequency: common
+  - labId: spherocytosis
+    frequency: common
+ddxSource: book

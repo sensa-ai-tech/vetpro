@@ -3,11 +3,11 @@ nameEn: Microphthalmia
 nameZh: 先天性小眼症
 bodySystem: ophthalmology
 description: 先天性小眼症為眼球發育異常導致眼球體積明顯小於正常。可為單側或雙側，常伴隨其他眼部畸形（如白內障、視網膜發育不全）。與 merle 色基因（犬）及白色基因相關。
-
 aliases:
-  - { alias: 小眼球症, language: zh }
-  - { alias: Small eye syndrome, language: en }
-
+  - alias: 小眼球症
+    language: zh
+  - alias: Small eye syndrome
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: Merle 色犬（澳洲牧羊犬、大丹犬）好發。白色貓亦有報告。
-
 etiology:
   categories:
     - name: 先天發育異常
@@ -23,7 +22,6 @@ etiology:
         - 眼球發育不全
         - 與色素基因相關（merle, white）
         - 遺傳性
-
 clinicalSigns:
   early:
     - 眼球明顯較小
@@ -33,48 +31,76 @@ clinicalSigns:
     - 可能伴隨白內障
     - 視網膜發育不全
     - 結膜囊縮小
-
 diagnosis:
   primaryTests:
     - name: 影像與臨床檢查
       notes: 眼科檢查見眼球縮小。超音波測量眼軸長度。
-
 treatment:
   principles:
     - 依嚴重程度決定保守或手術治療
     - 支持療法
   general:
     - 無法恢復眼球大小。義眼植入改善外觀（需要時）。伴隨白內障可評估手術。
-
 prognosis: 視力預後取決於嚴重程度。嚴重雙側者失明。單側輕度者對側眼可代償。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in cell and developmental biology
-    title: "Closing the Gap: Mechanisms of Epithelial Fusion During Optic Fissure Closure."
+    title: 'Closing the Gap: Mechanisms of Epithelial Fusion During Optic Fissure Closure.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7829581/
     type: review
-    pmid: "33505973"
+    pmid: '33505973'
   - sourceOrg: International journal of nanomedicine
-    title: Icariin-Enhanced Osteoclast-Derived Exosomes Promote Repair of Infected Bone Defects by Regulating Osteoclast and Osteoblast Communication.
+    title: >-
+      Icariin-Enhanced Osteoclast-Derived Exosomes Promote Repair of Infected Bone Defects by Regulating Osteoclast and
+      Osteoblast Communication.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11587802/
     type: research
-    pmid: "39588260"
-  - sourceOrg: "Journal of the American Society of Nephrology : JASN"
-    title: Negative Modulation of B Cell Activation by Melanocortin 1 Receptor Signaling Protects against Membranous Nephropathy.
+    pmid: '39588260'
+  - sourceOrg: 'Journal of the American Society of Nephrology : JASN'
+    title: >-
+      Negative Modulation of B Cell Activation by Melanocortin 1 Receptor Signaling Protects against Membranous
+      Nephropathy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10103281/
     type: research
-    pmid: "36446431"
+    pmid: '36446431'
   - sourceOrg: International journal of stem cells
-    title: The Suppression Effects of Fat Mass and Obesity Associated Gene on the Hair Follicle-Derived Neural Crest Stem Cells Differentiating into Melanocyte by N6-Methyladenosine Modifying Microphthalmia-Associated Transcription Factor.
+    title: >-
+      The Suppression Effects of Fat Mass and Obesity Associated Gene on the Hair Follicle-Derived Neural Crest Stem
+      Cells Differentiating into Melanocyte by N6-Methyladenosine Modifying Microphthalmia-Associated Transcription
+      Factor.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10226864/
     type: research
-    pmid: "36823977"
+    pmid: '36823977'
   - sourceOrg: Experimental animals
-    title: The rat Downunder (Du) coat color mutation is associated with eye anomalies and embryonic lethality and maps to a 3.9-Mb region on chromosome 3.
+    title: >-
+      The rat Downunder (Du) coat color mutation is associated with eye anomalies and embryonic lethality and maps to a
+      3.9-Mb region on chromosome 3.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9978131/
     type: research
-    pmid: "36123037"
+    pmid: '36123037'
 pubmedQueries:
   - query: '"Microphthalmia" AND (veterinary OR canine OR feline) AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: blindness
+    frequency: common
+diagnosticAlgorithm:
+  title: 先天性小眼症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 影像與臨床檢查
+          notes: 眼科檢查見眼球縮小。超音波測量眼軸長度。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 依嚴重程度決定保守或手術治療
+        - 支持療法
+ddxSource: auto-generated

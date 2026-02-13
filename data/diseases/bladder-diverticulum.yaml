@@ -3,11 +3,11 @@ nameEn: Bladder Diverticulum
 nameZh: 膀胱憩室
 bodySystem: renal
 description: 膀胱壁局部袋狀突出形成囊袋狀結構，可為先天性或後天性，常導致尿液滯留、反覆感染及結石形成。
-
 aliases:
-  - { alias: 膀胱壁憩室, language: zh }
-  - { alias: Vesical diverticulum, language: en }
-
+  - alias: 膀胱壁憩室
+    language: zh
+  - alias: Vesical diverticulum
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少見，通常為先天性異常
-
 etiology:
   categories:
     - name: 先天性
@@ -29,7 +28,6 @@ etiology:
         - 慢性尿道阻塞致膀胱內壓增高
         - 膀胱炎反覆發作導致壁層薄弱
         - 膀胱逼尿肌功能障礙
-
 clinicalSigns:
   early:
     - 頻尿、排尿困難
@@ -40,32 +38,58 @@ clinicalSigns:
     - 膀胱結石形成
     - 慢性腹痛
     - 尿失禁
-
 diagnosis:
   primaryTests:
     - name: 對比劑膀胱造影
-      notes: "顯示膀胱壁突出的囊袋狀結構，與主膀胱腔相連"
+      notes: 顯示膀胱壁突出的囊袋狀結構，與主膀胱腔相連
     - name: 膀胱超音波
-      notes: "可見膀胱壁局部突出的囊狀構造，內含尿液或沉積物"
+      notes: 可見膀胱壁局部突出的囊狀構造，內含尿液或沉積物
     - name: 膀胱鏡檢查
-      notes: "直視下可見憩室開口及內部黏膜狀態"
+      notes: 直視下可見憩室開口及內部黏膜狀態
   differentialDiagnoses:
     - 膀胱結石
     - 膀胱腫瘤
     - 膀胱炎合併壁層增厚
     - 輸尿管囊腫
-
 treatment:
   medical:
     - 抗生素治療併發感染（Amoxicillin-clavulanate 12.5-25 mg/kg PO BID）
     - 手術切除憩室（適用於憩室較大或反覆感染病例）
     - 解除尿道阻塞（如前列腺疾病、尿道結石）
     - 膀胱結石同時移除
-
 prognosis:
-  general: "小型無症狀憩室可長期穩定；大型憩室或合併反覆感染、結石者需手術治療，術後預後良好。"
-
+  general: 小型無症狀憩室可長期穩定；大型憩室或合併反覆感染、結石者需手術治療，術後預後良好。
 prevention:
   - 及時治療尿道阻塞性疾病
   - 維持充足飲水量及定期排尿
   - 早期控制膀胱炎以防慢性壁層損傷
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: common
+  - symptomId: urinary-incontinence
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: common
+diagnosticAlgorithm:
+  title: 膀胱憩室 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pollakiuria 相關症狀
+        - urinary-incontinence 相關症狀
+        - abdominal-pain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 對比劑膀胱造影
+          notes: 顯示膀胱壁突出的囊袋狀結構，與主膀胱腔相連
+        - name: 膀胱超音波
+          notes: 可見膀胱壁局部突出的囊狀構造，內含尿液或沉積物
+        - name: 膀胱鏡檢查
+          notes: 直視下可見憩室開口及內部黏膜狀態
+ddxSource: auto-generated

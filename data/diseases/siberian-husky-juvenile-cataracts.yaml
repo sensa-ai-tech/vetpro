@@ -3,18 +3,18 @@ nameEn: Siberian Husky Juvenile Cataracts
 nameZh: 西伯利亞哈士奇幼年型白內障
 bodySystem: ophthalmology
 description: 西伯利亞哈士奇的遺傳性白內障,通常在6-18月齡發病,雙眼晶狀體混濁逐漸進展,最終導致視力喪失。體染色體顯性遺傳,需外科摘除恢復視力。
-
 aliases:
-  - { alias: 遺傳性白內障, language: zh }
-  - { alias: Hereditary Cataracts, language: en }
-  - { alias: Juvenile Cataracts, language: en }
-
+  - alias: 遺傳性白內障
+    language: zh
+  - alias: Hereditary Cataracts
+    language: en
+  - alias: Juvenile Cataracts
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 西伯利亞哈士奇、阿拉斯加雪橇犬、波士頓㹴等多種品種
-
 etiology:
   categories:
     - name: 遺傳性晶狀體病變
@@ -22,7 +22,6 @@ etiology:
         - 體染色體顯性遺傳(不完全外顯)
         - 晶狀體蛋白代謝異常
         - 晶狀體纖維變性
-
 clinicalSigns:
   early:
     - 雙眼晶狀體局部混濁(6-18月齡)
@@ -33,31 +32,49 @@ clinicalSigns:
     - 視力逐漸喪失
     - 可能續發葡萄膜炎
     - 晶狀體脫位(晚期)
-
 diagnosis:
   primaryTests:
     - name: 裂隙燈檢查
-      notes: "雙眼晶狀體皮質或核混濁,進行性惡化"
+      notes: 雙眼晶狀體皮質或核混濁,進行性惡化
     - name: 眼底鏡檢查
-      notes: "評估視網膜功能(術前評估)"
+      notes: 評估視網膜功能(術前評估)
     - name: 視網膜電圖(ERG)
-      notes: "確認視網膜功能正常(手術候選評估)"
+      notes: 確認視網膜功能正常(手術候選評估)
   differentialDiagnoses:
     - 老年性白內障
     - 糖尿病性白內障
     - 外傷性白內障
-
 treatment:
   medical:
     - 白內障超音波乳化手術+人工晶體植入(視力嚴重受損時)
     - 術前抗炎(NSAID眼藥水)
     - 術後類固醇及抗生素眼藥水
     - 無藥物可逆轉或延緩白內障
-
 prognosis:
-  general: "手術成功率85-95%,多數可恢復良好視力。未手術將逐漸失明,但可適應環境。術後續發性青光眼風險約5-10%。"
-
+  general: 手術成功率85-95%,多數可恢復良好視力。未手術將逐漸失明,但可適應環境。術後續發性青光眼風險約5-10%。
 prevention:
   - 受影響犬隻不應繁殖
   - 眼科遺傳篩檢(CERF/OFA)
   - 繁殖前基因檢測
+associatedSymptoms:
+  - symptomId: blindness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 西伯利亞哈士奇幼年型白內障 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 裂隙燈檢查
+          notes: 雙眼晶狀體皮質或核混濁,進行性惡化
+        - name: 眼底鏡檢查
+          notes: 評估視網膜功能(術前評估)
+        - name: 視網膜電圖(ERG)
+          notes: 確認視網膜功能正常(手術候選評估)
+ddxSource: auto-generated

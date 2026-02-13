@@ -3,12 +3,13 @@ nameEn: Spider Envenomation
 nameZh: 蜘蛛咬傷中毒
 bodySystem: toxicology
 description: 犬貓臨床重要的蜘蛛咬傷主要包括棕色隱士蛛 (Loxosceles reclusa) 與黑寡婦蛛 (Latrodectus spp.)。棕色隱士蛛毒素引起壞死性皮膚傷口；黑寡婦蛛毒素引起神經肌肉症狀。貓對黑寡婦蛛毒素特別敏感。
-
 aliases:
-  - { alias: 毒蜘蛛咬傷, language: zh }
-  - { alias: Spider Bite, language: en }
-  - { alias: Arachnid Envenomation, language: en }
-
+  - alias: 毒蜘蛛咬傷
+    language: zh
+  - alias: Spider Bite
+    language: en
+  - alias: Arachnid Envenomation
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓對黑寡婦蛛 alpha-latrotoxin 特別敏感，致死率較犬高。貓可表現嚴重疼痛與麻痺。
-
 etiology:
   categories:
     - name: 主要毒蜘蛛
@@ -27,7 +27,6 @@ etiology:
       examples:
         - 棕色隱士蛛：sphingomyelinase D 引起局部血管炎與組織壞死
         - 黑寡婦蛛：alpha-latrotoxin 促進突觸前神經末梢大量釋放神經傳導物質
-
 clinicalSigns:
   early:
     - 棕色隱士蛛：咬傷處紅腫、疼痛（數小時內）
@@ -36,7 +35,6 @@ clinicalSigns:
     - 棕色隱士蛛：壞死性潰瘍（「靶心」樣病灶）、溶血性貧血（罕見）
     - 黑寡婦蛛：嚴重腹肌僵硬（板狀腹）、高血壓、心動過速
     - 貓：麻痺、呼吸困難
-
 diagnosis:
   primaryTests:
     - name: 臨床懷疑
@@ -48,31 +46,65 @@ diagnosis:
     - CK（肌肉損傷）
     - 凝血功能
     - 傷口培養（繼發感染）
-
 treatment:
   principles:
     - 棕色隱士蛛：傷口護理為主
     - 黑寡婦蛛：疼痛管理與支持
     - 抗蛇毒血清可用於黑寡婦蛛
   general:
-    - "棕色隱士蛛：傷口清潔護理、抗生素（繼發感染）"
+    - 棕色隱士蛛：傷口清潔護理、抗生素（繼發感染）
     - 避免早期清創（壞死範圍尚未確定）
-    - "黑寡婦蛛：疼痛管理（opioid、methocarbamol）"
+    - 黑寡婦蛛：疼痛管理（opioid、methocarbamol）
     - 黑寡婦蛛抗毒血清（Antivenin Latrodectus mactans）可考慮
     - IV 輸液支持
     - 監測心血管功能
     - 嚴重者住院 24-48 小時
-
 prognosis: 棕色隱士蛛咬傷多數局部壞死傷口可癒合（數週），全身性溶血型較危險。黑寡婦蛛犬中毒多數存活（支持療法）。貓黑寡婦蛛中毒預後較差，致死率較犬高。
-
-
 guidelineRefs:
-  - sourceOrg: "Toxicon : official journal of the International Society on Toxinology"
-    title: VEGF/VEGFR-2 system exerts neuroprotection against Phoneutria nigriventer spider envenomation through PI3K-AKT-dependent pathway.
+  - sourceOrg: 'Toxicon : official journal of the International Society on Toxinology'
+    title: >-
+      VEGF/VEGFR-2 system exerts neuroprotection against Phoneutria nigriventer spider envenomation through
+      PI3K-AKT-dependent pathway.
     url: https://pubmed.ncbi.nlm.nih.gov/32649934/
     type: research
-    pmid: "32649934"
+    pmid: '32649934'
     relevance: supporting
 pubmedQueries:
-  - query: '"spider envenomation" OR "spider bite" AND (veterinary OR canine OR feline) AND ("treatment" OR "Loxosceles" OR "Latrodectus")'
+  - query: >-
+      "spider envenomation" OR "spider bite" AND (veterinary OR canine OR feline) AND ("treatment" OR "Loxosceles" OR
+      "Latrodectus")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 蜘蛛咬傷中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床懷疑
+          notes: 多數未目睹咬傷，依據壞死性傷口（棕色隱士蛛）或神經肌肉症狀（黑寡婦蛛）臨床懷疑
+        - name: 蜘蛛鑑定
+          notes: 若可捕獲蜘蛛進行鑑定最有價值
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC（溶血性貧血，棕色隱士蛛嚴重型）
+        - CK（肌肉損傷）
+        - 凝血功能
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 棕色隱士蛛：傷口護理為主
+        - 黑寡婦蛛：疼痛管理與支持
+        - 抗蛇毒血清可用於黑寡婦蛛
+ddxSource: auto-generated

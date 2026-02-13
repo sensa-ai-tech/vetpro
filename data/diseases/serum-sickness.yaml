@@ -2,14 +2,18 @@ slug: serum-sickness
 nameEn: Serum Sickness
 nameZh: 血清病
 bodySystem: immunology
-description: 血清病 (serum sickness) 為第三型過敏反應，因注入異種蛋白（血清、抗毒素）或某些藥物後形成循環免疫複合物，沉積於血管、關節與腎臟引起全身性炎症。犬中可見於抗蛇毒血清使用後。藥物引起的類血清病反應 (serum sickness-like reaction) 更為常見。
-
+description: >-
+  血清病 (serum sickness) 為第三型過敏反應，因注入異種蛋白（血清、抗毒素）或某些藥物後形成循環免疫複合物，沉積於血管、關節與腎臟引起全身性炎症。犬中可見於抗蛇毒血清使用後。藥物引起的類血清病反應 (serum
+  sickness-like reaction) 更為常見。
 aliases:
-  - { alias: 血清病反應, language: zh }
-  - { alias: 類血清病反應, language: zh }
-  - { alias: Serum Sickness-Like Reaction, language: en }
-  - { alias: Immune Complex Disease, language: en }
-
+  - alias: 血清病反應
+    language: zh
+  - alias: 類血清病反應
+    language: zh
+  - alias: Serum Sickness-Like Reaction
+    language: en
+  - alias: Immune Complex Disease
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓血清病極罕見。理論上暴露於異種蛋白後可發生。
-
 etiology:
   categories:
     - name: 致病機制
@@ -32,7 +35,6 @@ etiology:
         - Cephalosporin 類抗生素
         - 生物製劑（單株抗體）
         - 異種血漿輸注
-
 clinicalSigns:
   early:
     - 發燒（暴露後 7-14 天）
@@ -44,7 +46,6 @@ clinicalSigns:
     - 腎絲球腎炎（蛋白尿）
     - 血管炎（皮膚紫斑）
     - 嗜睡、厭食
-
 diagnosis:
   primaryTests:
     - name: 臨床表現與時間關聯
@@ -56,7 +57,6 @@ diagnosis:
     - CBC（嗜中性球增多、血小板減少）
     - 關節液分析
     - 腎功能
-
 treatment:
   principles:
     - 停止致敏物質
@@ -69,41 +69,88 @@ treatment:
     - NSAIDs（關節疼痛，與類固醇擇一）
     - IV 輸液（維持腎灌注）
     - 多數 2-3 週內自行緩解
-
 prognosis: 血清病為自限性疾病，停止暴露致敏物質後多數在 2-3 週內完全恢復。嚴重腎絲球腎炎者需較長恢復期。未來需避免同一異種蛋白製劑。
-
-
 guidelineRefs:
   - sourceOrg: BioFactors (Oxford, England)
-    title: "The role of PAF in immunopathology: From immediate hypersensitivity reactions to fungal defense."
+    title: 'The role of PAF in immunopathology: From immediate hypersensitivity reactions to fungal defense.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10087027/
     type: review
-    pmid: "36176024"
+    pmid: '36176024'
     relevance: primary
   - sourceOrg: Vaccine
-    title: Benefits of using heterologous polyclonal antibodies and potential applications to new and undertreated infectious pathogens.
+    title: >-
+      Benefits of using heterologous polyclonal antibodies and potential applications to new and undertreated infectious
+      pathogens.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7131169/
     type: review
-    pmid: "26802604"
+    pmid: '26802604'
     relevance: supporting
   - sourceOrg: Toxins
     title: Development of a Biosensor to Detect Venom of Malayan Krait (Bungarus candidus).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10820552/
     type: research
-    pmid: "38276532"
+    pmid: '38276532'
     relevance: supporting
   - sourceOrg: International journal of molecular sciences
-    title: A Dual Strategy-In Vitro and In Silico-To Evaluate Human Antitetanus mAbs Addressing Their Potential Protective Action on TeNT Endocytosis in Primary Rat Neuronal Cells.
+    title: >-
+      A Dual Strategy-In Vitro and In Silico-To Evaluate Human Antitetanus mAbs Addressing Their Potential Protective
+      Action on TeNT Endocytosis in Primary Rat Neuronal Cells.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11171557/
     type: research
-    pmid: "38891974"
+    pmid: '38891974'
     relevance: supporting
   - sourceOrg: Frontiers in endocrinology
-    title: Antithymocyte Globulin as Second-Line Therapy in Graves Orbitopathy-Preliminary Results From a Prospective Single-Center Study.
+    title: >-
+      Antithymocyte Globulin as Second-Line Therapy in Graves Orbitopathy-Preliminary Results From a Prospective
+      Single-Center Study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9124791/
     type: research
-    pmid: "35615718"
+    pmid: '35615718'
     relevance: supporting
 pubmedQueries:
   - query: '"serum sickness" AND (veterinary OR canine OR feline) AND ("treatment" OR "immune complex")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: uncommon
+  - symptomId: polyarthritis
+    frequency: common
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: common
+diagnosticAlgorithm:
+  title: 血清病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - polyarthritis 相關症狀
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床表現與時間關聯
+          notes: 暴露異種蛋白或藥物後 7-21 天出現發燒 + 關節炎 + 皮膚反應
+        - name: 實驗室檢查
+          notes: 補體 C3 下降、ESR/CRP 升高
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 尿液分析（蛋白尿）
+        - CBC（嗜中性球增多、血小板減少）
+        - 關節液分析
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 停止致敏物質
+        - 抗炎治療
+        - 多為自限性
+ddxSource: auto-generated

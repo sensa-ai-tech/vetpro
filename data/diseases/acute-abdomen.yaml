@@ -3,12 +3,13 @@ nameEn: Acute Abdomen
 nameZh: 急性腹症
 bodySystem: emergency
 description: 急性腹症為腹部急性劇烈疼痛的臨床症候群，需緊急鑑別是否為外科急症。犬貓常見外科急腹症包括胃扭轉 (GDV)、腸阻塞、脾臟扭轉/破裂、子宮蓄膿與腸繫膜扭轉。快速鑑別外科 vs 內科腹症為處置關鍵。
-
 aliases:
-  - { alias: 急腹症, language: zh }
-  - { alias: Surgical Abdomen, language: en }
-  - { alias: Abdominal Emergency, language: en }
-
+  - alias: 急腹症
+    language: zh
+  - alias: Surgical Abdomen
+    language: en
+  - alias: Abdominal Emergency
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓急性腹症：尿道阻塞、腸套疊、線狀異物、膽管阻塞。貓隱藏疼痛，腹痛表現可能不明顯。
-
 etiology:
   categories:
     - name: 外科急腹症
@@ -35,7 +35,6 @@ etiology:
         - Addison 危象
         - 腹膜炎（感染性）
         - 肝膿瘍
-
 clinicalSigns:
   early:
     - 腹部疼痛（蜷縮、拱背、拒絕觸碰）
@@ -48,7 +47,6 @@ clinicalSigns:
     - 休克征象（心搏過速、蒼白、低血壓）
     - 脫水
     - 體溫異常（高或低）
-
 diagnosis:
   primaryTests:
     - name: 腹部影像
@@ -61,7 +59,6 @@ diagnosis:
     - 乳酸（>2.5 mmol/L 提示組織低灌注）
     - 凝血功能
     - 腹部 CT（複雜病例）
-
 treatment:
   principles:
     - 快速鑑別外科 vs 內科急腹症
@@ -78,41 +75,109 @@ treatment:
     - 子宮蓄膿：OHE
     - 內科急腹症：針對原因治療
     - NPO（禁食）
-
 prognosis: 急性腹症預後取決於原因與介入時間。GDV 及時手術存活率 >80%。腸繫膜扭轉預後極差。腹膜炎死亡率約 30-50%。胰臟炎多數可保守管理。早期辨識與決策為關鍵。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary clinical pathology
     title: Measurement and clinical applications of C-reactive protein in gastrointestinal diseases of dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9303876/
     type: review
-    pmid: "35014071"
+    pmid: '35014071'
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Blood and Peritoneal Lactate, Ratio and Difference, and&#xa0;Peritoneal Lactate to Total Solids Ratio for Detection of&#xa0;Intestinal Strangulating Obstructions in Horses."
+    title: >-
+      Blood and Peritoneal Lactate, Ratio and Difference, and&#xa0;Peritoneal Lactate to Total Solids Ratio for
+      Detection of&#xa0;Intestinal Strangulating Obstructions in Horses.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12125956/
     type: research
-    pmid: "40448701"
+    pmid: '40448701'
   - sourceOrg: Frontiers in veterinary science
     title: Alactic base excess is not a sensitive or specific diagnostic tool for outcome in horses with colic.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12396145/
     type: research
-    pmid: "40895787"
+    pmid: '40895787'
   - sourceOrg: World journal of hepatology
-    title: Yinchenhao decoction alleviates obstructive jaundice liver injury by modulating epidermal growth factor receptor and constitutive androstane receptor signaling.
+    title: >-
+      Yinchenhao decoction alleviates obstructive jaundice liver injury by modulating epidermal growth factor receptor
+      and constitutive androstane receptor signaling.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11959654/
     type: research
-    pmid: "40177192"
+    pmid: '40177192'
   - sourceOrg: Stem cell reviews and reports
-    title: "Mesenchymal Stem Cells Derived from Different Adipose Tissue Depots Ameliorate Severe Acute Pancreatitis by Inhibiting NF-&#x3ba;B/NLRP3/Caspase-1 Pathways."
+    title: >-
+      Mesenchymal Stem Cells Derived from Different Adipose Tissue Depots Ameliorate Severe Acute Pancreatitis by
+      Inhibiting NF-&#x3ba;B/NLRP3/Caspase-1 Pathways.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12408687/
     type: research
-    pmid: "40549290"
+    pmid: '40549290'
   - sourceOrg: JFMS open reports
     title: Uterine torsion in a full-term pregnant cat.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5564926/
     type: case-report
-    pmid: "28839948"
+    pmid: '28839948'
 pubmedQueries:
   - query: '"acute abdomen" AND (veterinary OR canine OR feline) AND ("treatment" OR "surgical" OR "emergency")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 急性腹部疾病 診斷流程
+  steps:
+    - step: 1
+      action: 緊急評估
+      details: 評估腹痛嚴重程度與全身狀態
+      findings:
+        - 嚴重腹痛祈禱姿勢/不願移動
+        - 腹部膨大或繃緊
+        - 嘔吐
+        - 心動過速與虛弱
+    - step: 2
+      action: 影像學檢查
+      details: 腹部X光與超音波快速評估
+      findings:
+        - X光腸阻塞/胃擴張扭轉/游離氣體
+        - 超音波腹腔積液/腸壁異常
+        - 腹腔穿刺液分析
+        - 器官腫大或腫塊
+    - step: 3
+      action: 實驗室檢查
+      details: 全面血液學與生化評估
+      findings:
+        - CBC白血球異常
+        - 乳酸升高
+        - 生化評估臟器功能
+        - 凝血功能
+    - step: 4
+      action: 手術決策
+      details: 判斷是否需要緊急探查手術
+      findings:
+        - GDV緊急手術
+        - 腸穿孔緊急手術
+        - 脾臟破裂緊急手術
+        - 穩定觀察vs立即手術決策
+clinicalPearls:
+  - 腹腔積液中細菌或退化性嗜中性球提示敗血性腹膜炎，需緊急手術
+  - 腹腔積液肌酐>血清肌酐2倍提示尿腹症
+  - 腹腔積液膽紅素>血清膽紅素2倍提示膽汁性腹膜炎
+  - 祈禱姿勢是前腹部疼痛的典型姿勢
+monitoringItems:
+  - 生命徵象
+  - 腹部觸診
+  - PCV/TS
+  - 乳酸
+  - 尿量
+  - 體溫
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+  - symptomId: hypothermia-sign
+    frequency: common
+ddxSource: book

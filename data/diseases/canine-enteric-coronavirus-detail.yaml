@@ -3,19 +3,20 @@ nameEn: Canine Enteric Coronavirus Detail
 nameZh: 犬腸道冠狀病毒詳述
 bodySystem: infectious
 description: 犬腸道冠狀病毒 (CCoV) 為犬常見的腸道病原，屬 Alphacoronavirus。單獨感染通常引起輕度自限性腸炎，但與犬小病毒共感時可顯著加重病情。
-
 aliases:
-  - { alias: 犬冠狀病毒腸炎, language: zh }
-  - { alias: CCoV 感染, language: zh }
-  - { alias: CCoV, language: en }
-  - { alias: Canine Enteric Coronavirus, language: en }
-
+  - alias: 犬冠狀病毒腸炎
+    language: zh
+  - alias: CCoV 感染
+    language: zh
+  - alias: CCoV
+    language: en
+  - alias: Canine Enteric Coronavirus
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 幼犬群體中盛行率高。單獨感染多為輕症，與 CPV-2 共感可增加死亡率。CCoV 疫苗為非核心疫苗，僅在高風險環境建議使用。
-
 etiology:
   categories:
     - name: 病原特性
@@ -29,7 +30,6 @@ etiology:
         - 破壞小腸絨毛上皮導致吸收不良
         - 不感染隱窩細胞（與 CPV 不同）
         - 新近出現的泛嗜性 CCoV 變異株可引起全身性感染
-
 clinicalSigns:
   early:
     - 軟便或輕度腹瀉
@@ -41,13 +41,12 @@ clinicalSigns:
     - 脫水（幼犬明顯）
     - 發燒
     - 與 CPV 共感時出現血便及嚴重白血球低下
-
 diagnosis:
   primaryTests:
     - name: 糞便 PCR
-      notes: "RT-PCR 為確診方法。可區分 CCoV-I 及 CCoV-II 型。注意與 CPV 共檢"
+      notes: RT-PCR 為確診方法。可區分 CCoV-I 及 CCoV-II 型。注意與 CPV 共檢
     - name: 糞便抗原檢測
-      notes: "快速檢測試劑可用，但敏感性較 PCR 低"
+      notes: 快速檢測試劑可用，但敏感性較 PCR 低
   differentialDiagnoses:
     - 犬小病毒腸炎
     - 寄生蟲性腸炎
@@ -55,7 +54,6 @@ diagnosis:
     - 飲食不當
     - 腸套疊
     - 異物
-
 treatment:
   medical:
     - 多數病例為自限性（3-7 天）
@@ -64,11 +62,41 @@ treatment:
     - 腸道保護劑
     - 合併 CPV 感染時需積極治療
     - 益生菌輔助
-
 prognosis:
-  general: "單純 CCoV 感染預後極佳，多自行恢復。與 CPV 共感時預後取決於 CPV 感染的嚴重程度。泛嗜性變異株引起的全身性感染預後較差。"
-
+  general: 單純 CCoV 感染預後極佳，多自行恢復。與 CPV 共感時預後取決於 CPV 感染的嚴重程度。泛嗜性變異株引起的全身性感染預後較差。
 prevention:
   - CCoV 疫苗為非核心疫苗，僅在高風險環境考慮
   - 環境消毒及衛生管理
   - 減少幼犬群居密度
+associatedSymptoms:
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: haematochezia
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 犬腸道冠狀病毒詳述 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - diarrhoea 相關症狀
+        - weakness 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便 PCR
+          notes: RT-PCR 為確診方法。可區分 CCoV-I 及 CCoV-II 型。注意與 CPV 共檢
+        - name: 糞便抗原檢測
+          notes: 快速檢測試劑可用，但敏感性較 PCR 低
+ddxSource: auto-generated

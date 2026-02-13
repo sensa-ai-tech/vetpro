@@ -3,11 +3,11 @@ nameEn: Listeriosis
 nameZh: 李斯特菌感染
 bodySystem: infectious
 description: 李斯特菌感染 (listeriosis) 由單核球增多性李斯特菌 (Listeria monocytogenes) 引起的人畜共通傳染病。犬貓感染罕見，但可表現為敗血症、腦膜腦炎或流產。為兼性細胞內寄生菌，免疫抑制動物風險最高。
-
 aliases:
-  - { alias: 李氏桿菌病, language: zh }
-  - { alias: Listeria Infection, language: en }
-
+  - alias: 李氏桿菌病
+    language: zh
+  - alias: Listeria Infection
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓感染亦罕見。可表現為腸胃炎、敗血症或中樞神經系統感染。生食飲食為潛在風險。
-
 etiology:
   categories:
     - name: 病原特性
@@ -30,7 +29,6 @@ etiology:
         - 生食飲食
         - 幼齡或高齡動物
         - 懷孕動物（流產風險）
-
 clinicalSigns:
   early:
     - 發燒
@@ -42,7 +40,6 @@ clinicalSigns:
     - 敗血症
     - 流產（懷孕動物）
     - 眼部感染（葡萄膜炎）
-
 diagnosis:
   primaryTests:
     - name: 血液或腦脊液培養
@@ -53,7 +50,6 @@ diagnosis:
     - CBC（單核球增多為特徵但非必然）
     - 腦脊液分析（單核球性腦膜炎）
     - MRI（腦幹病變）
-
 treatment:
   principles:
     - 需可穿透細胞內的抗生素
@@ -66,36 +62,85 @@ treatment:
     - 神經症狀管理（抗癲癇、止吐）
     - IV 輸液支持
     - 營養支持
-
 prognosis: 犬貓李斯特菌感染預後視臨床型態而定。腸胃炎型預後較佳。敗血症或腦膜腦炎型預後謹慎至不良，尤其免疫抑制動物。早期積極治療可改善存活率。
-
-
 guidelineRefs:
   - sourceOrg: Microorganisms
-    title: "Listeriosis: Characteristics, Occurrence in Domestic Animals, Public Health Significance, Surveillance and Control."
+    title: >-
+      Listeriosis: Characteristics, Occurrence in Domestic Animals, Public Health Significance, Surveillance and
+      Control.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11510258/
     type: review
-    pmid: "39458364"
+    pmid: '39458364'
   - sourceOrg: One health (Amsterdam, Netherlands)
-    title: A systematic review and meta-analysis of the prevalence of Listeria monocytogenes in South-East Asia; a one-health approach of human-animal-food-environment.
+    title: >-
+      A systematic review and meta-analysis of the prevalence of Listeria monocytogenes in South-East Asia; a one-health
+      approach of human-animal-food-environment.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9582554/
     type: review
-    pmid: "36277096"
+    pmid: '36277096'
   - sourceOrg: The Onderstepoort journal of veterinary research
-    title: "A review of Listeria monocytogenes from meat and meat products: Epidemiology, virulence factors, antimicrobial resistance and diagnosis."
+    title: >-
+      A review of Listeria monocytogenes from meat and meat products: Epidemiology, virulence factors, antimicrobial
+      resistance and diagnosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7565150/
     type: review
-    pmid: "33054262"
+    pmid: '33054262'
   - sourceOrg: Microbiology spectrum
     title: Epidemiology and Clinical Manifestations of Listeria monocytogenes Infection.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11026082/
     type: review
-    pmid: "31837132"
+    pmid: '31837132'
   - sourceOrg: Microbiology spectrum
     title: Antimicrobial Resistance in Listeria Species.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11633604/
     type: review
-    pmid: "30027884"
+    pmid: '30027884'
 pubmedQueries:
   - query: '"listeriosis" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: head-tilt
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 李斯特菌感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - ataxia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液或腦脊液培養
+          notes: 確定診斷。培養可能需 2-5 天。冷增殖技術 (cold enrichment) 可提高敏感度
+        - name: PCR
+          notes: 血液或腦脊液 PCR 較培養快速
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC（單核球增多為特徵但非必然）
+        - 腦脊液分析（單核球性腦膜炎）
+        - MRI（腦幹病變）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 需可穿透細胞內的抗生素
+        - 長療程治療
+        - 神經型需積極支持療法
+ddxSource: auto-generated

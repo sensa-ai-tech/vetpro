@@ -3,12 +3,13 @@ nameEn: Prescription Diet Urinary
 nameZh: 泌尿道處方飲食
 bodySystem: urinary
 description: 專為泌尿道結石及膀胱炎設計的飲食，可溶解特定結石(如鳥糞石)、預防復發、酸化或鹼化尿液。不同結石類型需不同配方。
-
 aliases:
-  - { alias: 泌尿處方飼料, language: zh }
-  - { alias: Urinary Diet, language: en }
-  - { alias: Stone Dissolution Diet, language: en }
-
+  - alias: 泌尿處方飼料
+    language: zh
+  - alias: Urinary Diet
+    language: en
+  - alias: Stone Dissolution Diet
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 自發性膀胱炎、結石極常見
-
 etiology:
   categories:
     - name: 鳥糞石(Struvite)飲食特點
@@ -37,7 +37,6 @@ etiology:
         - 草酸鈣結石(僅預防)
         - 貓自發性膀胱炎(FIC)
         - 預防結石復發
-
 clinicalSigns:
   early:
     - 頻尿、血尿改善
@@ -47,21 +46,19 @@ clinicalSigns:
     - 症狀完全緩解
     - 結石消失
     - 復發率降低
-
 diagnosis:
   primaryTests:
     - name: 尿液分析
-      notes: "pH、結晶、細菌培養"
+      notes: pH、結晶、細菌培養
     - name: 影像學
-      notes: "X光、超音波確認結石大小及位置"
+      notes: X光、超音波確認結石大小及位置
     - name: 結石成分分析
-      notes: "確認結石類型(若有手術取出)"
+      notes: 確認結石類型(若有手術取出)
   differentialDiagnoses:
     - 鳥糞石結石
     - 草酸鈣結石
     - 其他結石類型
     - 膀胱炎
-
 treatment:
   medical:
     - 鳥糞石結石飲食
@@ -81,33 +78,83 @@ treatment:
     - 抗生素(細菌性膀胱炎)
     - 止痛藥
     - 尿液酸鹼調節劑(若需要)
-
 prognosis:
-  general: "鳥糞石可溶解率80-90%，需4-12週；草酸鈣無法溶解僅能預防；配合飲食可降低復發率"
-
+  general: 鳥糞石可溶解率80-90%，需4-12週；草酸鈣無法溶解僅能預防；配合飲食可降低復發率
 prevention:
   - 長期使用泌尿處方
   - 增加水分攝取
   - 定期尿液及影像檢查
   - 控制體重
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in pharmacology
-    title: Liuwei Dihuang pills ameliorate renal injury in experimental type 2 diabetes mellitus rat by regulating host-gut microbiota interaction.
+    title: >-
+      Liuwei Dihuang pills ameliorate renal injury in experimental type 2 diabetes mellitus rat by regulating host-gut
+      microbiota interaction.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12827525/
     type: research
-    pmid: "41585896"
+    pmid: '41585896'
     relevance: supporting
   - sourceOrg: Journal of feline medicine and surgery
-    title: Survey of veterinarians in the USA to evaluate trends in the treatment approach for non-obstructive feline idiopathic cystitis.
+    title: >-
+      Survey of veterinarians in the USA to evaluate trends in the treatment approach for non-obstructive feline
+      idiopathic cystitis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11418619/
     type: research
-    pmid: "39163476"
+    pmid: '39163476'
     relevance: supporting
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Clinical management of feline chronic kidney disease in Portugal: a questionnaire-based study."
+    title: 'Clinical management of feline chronic kidney disease in Portugal: a questionnaire-based study.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10811999/
     type: research
-    pmid: "37987623"
+    pmid: '37987623'
     relevance: supporting
+diagnosticAlgorithm:
+  title: 飲食不當 診斷流程
+  steps:
+    - step: 1
+      action: 病史確認
+      details: 詳細詢問近期飲食變化或垃圾攝入史
+      findings:
+        - 攝入不當食物或垃圾
+        - 突然更換飲食
+        - 進食量過大
+        - 攝入高脂肪食物
+    - step: 2
+      action: 臨床評估
+      details: 評估消化道症狀與脫水程度
+      findings:
+        - 急性嘔吐與腹瀉
+        - 腹部不適但無嚴重腹痛
+        - 精神食慾輕度下降
+        - 脫水程度評估
+    - step: 3
+      action: 排除嚴重病因
+      details: 確認非異物/毒物/胰臟炎等嚴重問題
+      findings:
+        - 腹部X光排除異物
+        - 排除毒物攝入
+        - 嚴重時排除胰臟炎
+        - 排除腸道感染
+clinicalPearls:
+  - 飲食不當是犬急性嘔吐腹瀉最常見的原因
+  - 症狀超過48小時不改善應重新評估診斷
+  - 高脂食物攝入需警惕急性胰臟炎併發
+  - 飼主教育是預防復發的關鍵
+  - 確認無毒物攝入史非常重要
+monitoringItems:
+  - 嘔吐和腹瀉頻率
+  - 水分攝取
+  - 食慾恢復
+  - 脫水程度
+associatedSymptoms:
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

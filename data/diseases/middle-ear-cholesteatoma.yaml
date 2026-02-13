@@ -3,13 +3,15 @@ nameEn: Middle Ear Cholesteatoma
 nameZh: 中耳膽脂瘤
 bodySystem: ear
 description: 中耳腔內角化鱗狀上皮異常增生形成的囊狀腫塊，具有局部侵蝕性，可破壞鼓泡骨壁並向周圍結構擴展，為慢性中耳炎的嚴重併發症。
-
 aliases:
-  - { alias: 耳膽脂瘤, language: zh }
-  - { alias: 珍珠瘤, language: zh }
-  - { alias: Cholesteatoma, language: en }
-  - { alias: Keratinizing epithelial cyst of middle ear, language: en }
-
+  - alias: 耳膽脂瘤
+    language: zh
+  - alias: 珍珠瘤
+    language: zh
+  - alias: Cholesteatoma
+    language: en
+  - alias: Keratinizing epithelial cyst of middle ear
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓膽脂瘤極罕見，偶見報告。可能與慢性中耳炎或鼓膜反覆損傷相關。
-
 etiology:
   categories:
     - name: 病因學
@@ -34,7 +35,6 @@ etiology:
         - 膽固醇結晶沉積
         - 酵素分解周圍骨組織
         - 繼發感染加速破壞
-
 clinicalSigns:
   early:
     - 慢性外耳炎對治療反應不佳
@@ -46,19 +46,17 @@ clinicalSigns:
     - Horner syndrome
     - 耳根腫脹
     - 前庭症狀
-
 diagnosis:
   primaryTests:
     - name: CT 影像
-      notes: "鼓泡內軟組織密度腫塊，伴鼓泡壁骨溶解與擴張。為評估膽脂瘤範圍的首選影像學"
+      notes: 鼓泡內軟組織密度腫塊，伴鼓泡壁骨溶解與擴張。為評估膽脂瘤範圍的首選影像學
     - name: MRI
-      notes: "評估軟組織範圍及顱內延伸。膽脂瘤在 T1WI 低信號、T2WI 高信號"
+      notes: 評估軟組織範圍及顱內延伸。膽脂瘤在 T1WI 低信號、T2WI 高信號
   differentialDiagnoses:
     - 慢性中耳炎
     - 中耳腫瘤（鱗狀細胞癌、腺癌）
     - 中耳積液
     - 鼻咽息肉
-
 treatment:
   medical:
     - 單純內科治療效果不佳
@@ -68,32 +66,53 @@ treatment:
     - 鼓泡切開術（ventral bulla osteotomy）徹底清除膽脂瘤
     - 全耳道切除合併側鼓泡切開術（TECA-LBO）——合併終末期外耳炎
     - 術後需確認完整清除（殘留角化上皮將復發）
-
 prognosis:
-  general: "手術完整清除後預後合理，但復發風險存在。早期手術優於晚期。顱內延伸者預後不良。術後顏面神經麻痺可能為暫時性或永久性。"
-
+  general: 手術完整清除後預後合理，但復發風險存在。早期手術優於晚期。顱內延伸者預後不良。術後顏面神經麻痺可能為暫時性或永久性。
 prevention:
   - 積極治療慢性中耳炎
   - 慢性耳病定期影像學監測
   - 早期手術介入反覆治療無效的中耳炎
-
-
 guidelineRefs:
   - sourceOrg: JFMS open reports
     title: Middle ear cholesteatoma in two cats diagnosed with the aid of video-otoscopy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10540574/
     type: case-report
-    pmid: "37781725"
+    pmid: '37781725'
     relevance: supporting
   - sourceOrg: Cell cycle (Georgetown, Tex.)
     title: Osteopontin-driven partial epithelial-mesenchymal transition governs the development of middle ear cholesteatoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11135870/
     type: research
-    pmid: "38662954"
+    pmid: '38662954'
     relevance: supporting
-  - sourceOrg: "Acta otorhinolaryngologica Italica : organo ufficiale della Societa italiana di otorinolaringologia e chirurgia cervico-facciale"
+  - sourceOrg: >-
+      Acta otorhinolaryngologica Italica : organo ufficiale della Societa italiana di otorinolaringologia e chirurgia
+      cervico-facciale
     title: Inhibitory effect of mesna and 5-fluorouracil on propylene glycol-induced cholesteatoma in rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8569662/
     type: research
-    pmid: "34734585"
+    pmid: '34734585'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: head-tilt
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 中耳膽脂瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - head-tilt 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: CT 影像
+          notes: 鼓泡內軟組織密度腫塊，伴鼓泡壁骨溶解與擴張。為評估膽脂瘤範圍的首選影像學
+        - name: MRI
+          notes: 評估軟組織範圍及顱內延伸。膽脂瘤在 T1WI 低信號、T2WI 高信號
+ddxSource: auto-generated

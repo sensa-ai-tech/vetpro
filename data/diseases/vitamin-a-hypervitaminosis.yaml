@@ -3,11 +3,11 @@ nameEn: Vitamin A Hypervitaminosis
 nameZh: 維生素A過多症
 bodySystem: metabolic
 description: 長期過量攝取維生素A可引起骨骼異常、皮膚病變及肝損傷。貓因嗜食肝臟較易發生。
-
 aliases:
-  - { alias: 維生素A中毒, language: zh }
-  - { alias: Vitamin A Toxicity, language: en }
-
+  - alias: 維生素A中毒
+    language: zh
+  - alias: Vitamin A Toxicity
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 長期餵食肝臟易發生
-
 etiology:
   categories:
     - name: 飲食過量
       examples:
         - 長期餵食肝臟(>10%飲食)
         - 過量維生素A補充品
-
 clinicalSigns:
   early:
     - 食慾不振、體重減輕
@@ -33,61 +31,89 @@ clinicalSigns:
     - 頸椎骨刺形成(貓)
     - 活動僵硬、疼痛
     - 牙齦炎、牙齒脫落
-
 diagnosis:
   primaryTests:
     - name: 飲食史
-      notes: "確認長期肝臟或維生素A攝取"
+      notes: 確認長期肝臟或維生素A攝取
     - name: X光檢查
-      notes: "頸椎骨刺、骨質增生"
+      notes: 頸椎骨刺、骨質增生
     - name: 血清維生素A
-      notes: ">200 μg/dL異常升高"
+      notes: '>200 μg/dL異常升高'
   differentialDiagnoses:
     - 骨關節炎
     - 脊椎疾病
-
 treatment:
   medical:
     - 停止維生素A過量來源
     - 疼痛管理: NSAIDs
     - 骨骼變化多為不可逆
-
 prognosis:
-  general: "早期停止攝取可防止進展,但已形成骨刺無法逆轉。"
-
+  general: 早期停止攝取可防止進展,但已形成骨刺無法逆轉。
 prevention:
   - 肝臟不超過飲食5-10%
   - 避免過量補充維生素A
-
-
 guidelineRefs:
   - sourceOrg: BMC nutrition
-    title: "Effect of vitamin A supplementation and the role of infections and inflammation on vitamin A status in children aged 36-59 months in rural Burkina Faso: results of a community-based pre-post intervention study."
+    title: >-
+      Effect of vitamin A supplementation and the role of infections and inflammation on vitamin A status in children
+      aged 36-59 months in rural Burkina Faso: results of a community-based pre-post intervention study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12882606/
     type: research
-    pmid: "41519844"
+    pmid: '41519844'
     relevance: supporting
   - sourceOrg: Journal of health, population, and nutrition
-    title: "Association between vitamin A status, inflammations, and infections in children 36-59 months of age in rural Burkina Faso: A cross - sectional study."
+    title: >-
+      Association between vitamin A status, inflammations, and infections in children 36-59 months of age in rural
+      Burkina Faso: A cross - sectional study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11972520/
     type: research
-    pmid: "40188114"
+    pmid: '40188114'
     relevance: supporting
   - sourceOrg: Frontiers in veterinary science
-    title: "Concentrations of Retinol and &#x3b1;-Tocopherol in Tissue Samples From Anna's Hummingbirds (Calypte anna)."
+    title: Concentrations of Retinol and &#x3b1;-Tocopherol in Tissue Samples From Anna's Hummingbirds (Calypte anna).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7553074/
     type: research
-    pmid: "33134339"
+    pmid: '33134339'
     relevance: supporting
   - sourceOrg: Bone reports
     title: Bones in human CYP26B1 deficiency and rats with hypervitaminosis A phenocopy Vegfa overexpression.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6039751/
     type: research
-    pmid: "30003121"
+    pmid: '30003121'
     relevance: supporting
   - sourceOrg: Upsala journal of medical sciences
-    title: Studies of indirect and direct effects of hypervitaminosis A on rat bone by comparing free access to food and pair-feeding.
+    title: >-
+      Studies of indirect and direct effects of hypervitaminosis A on rat bone by comparing free access to food and
+      pair-feeding.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6055747/
     type: research
-    pmid: "29697007"
+    pmid: '29697007'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: alopecia
+    frequency: common
+diagnosticAlgorithm:
+  title: 維生素A過多症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 飲食史
+          notes: 確認長期肝臟或維生素A攝取
+        - name: X光檢查
+          notes: 頸椎骨刺、骨質增生
+        - name: 血清維生素A
+          notes: '>200 μg/dL異常升高'
+ddxSource: auto-generated

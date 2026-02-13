@@ -3,18 +3,18 @@ nameEn: Belgian Tervuren Epilepsy
 nameZh: 比利時坦比連犬癲癇
 bodySystem: neurology
 description: 比利時坦比連犬的遺傳性特發性癲癇,與瑪利諾犬相同品系共有此遺傳傾向。通常在1-3歲首次發作,表現為全身性癲癇,需長期藥物控制。
-
 aliases:
-  - { alias: 特發性癲癇, language: zh }
-  - { alias: Idiopathic Epilepsy, language: en }
-  - { alias: Genetic Epilepsy, language: en }
-
+  - alias: 特發性癲癇
+    language: zh
+  - alias: Idiopathic Epilepsy
+    language: en
+  - alias: Genetic Epilepsy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 比利時坦比連犬、瑪利諾犬等比利時牧羊犬品系
-
 etiology:
   categories:
     - name: 遺傳性神經興奮異常
@@ -22,7 +22,6 @@ etiology:
         - 多基因遺傳
         - 離子通道功能異常
         - GABA抑制性傳導缺陷
-
 clinicalSigns:
   early:
     - 首次全身性癲癇發作(1-3歲)
@@ -33,23 +32,21 @@ clinicalSigns:
     - 發作模式可能改變
     - 叢集發作風險
     - 發作間期行為正常
-
 diagnosis:
   primaryTests:
     - name: 詳細病史及神經學檢查
-      notes: "發作間期神經學檢查正常為特發性癲癇關鍵"
+      notes: 發作間期神經學檢查正常為特發性癲癇關鍵
     - name: 血液學、生化、電解質
-      notes: "排除代謝性或中毒性原因"
+      notes: 排除代謝性或中毒性原因
     - name: MRI腦部掃描
-      notes: "排除腫瘤、炎症、發育異常"
+      notes: 排除腫瘤、炎症、發育異常
     - name: 腦脊髓液檢查
-      notes: "排除感染性或免疫介導性腦病"
+      notes: 排除感染性或免疫介導性腦病
   differentialDiagnoses:
     - 症狀性癲癇(腦腫瘤、腦炎)
     - 反應性癲癇(低血糖、肝病)
     - 暈厥
     - 心因性發作
-
 treatment:
   medical:
     - Phenobarbital 2-3 mg/kg PO q12h(首選,目標血中濃度20-30 μg/ml)
@@ -57,11 +54,37 @@ treatment:
     - Levetiracetam 20 mg/kg PO q8h(輔助治療)
     - 定期監測藥物濃度、肝腎功能
     - 避免突然停藥
-
 prognosis:
-  general: "多數病例藥物控制良好,約60-70%可達到無發作或發作頻率大幅減少。需終生服藥。早期控制不佳或頻繁發作預後較差。"
-
+  general: 多數病例藥物控制良好,約60-70%可達到無發作或發作頻率大幅減少。需終生服藥。早期控制不佳或頻繁發作預後較差。
 prevention:
   - 受影響犬隻不應繁殖
   - 親代或同窩犬有癲癇史應謹慎繁殖
   - 品種健康監測計畫
+associatedSymptoms:
+  - symptomId: seizures
+    frequency: common
+  - symptomId: coma-stupor
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 比利時坦比連犬癲癇 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - seizures 相關症狀
+        - coma-stupor 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 詳細病史及神經學檢查
+          notes: 發作間期神經學檢查正常為特發性癲癇關鍵
+        - name: 血液學、生化、電解質
+          notes: 排除代謝性或中毒性原因
+        - name: MRI腦部掃描
+          notes: 排除腫瘤、炎症、發育異常
+ddxSource: auto-generated

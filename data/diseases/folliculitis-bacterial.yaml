@@ -3,11 +3,11 @@ nameEn: Folliculitis Bacterial
 nameZh: Folliculitis Bacterial
 bodySystem: infectious
 description: 感染性疾病,由病原體(細菌、病毒、真菌或寄生蟲)引起。需實驗室診斷確定病原並給予抗感染治療。
-
 aliases:
-  - { alias: Folliculitis Bacterial, language: zh }
-  - { alias: Folliculitis Bacterial, language: en }
-
+  - alias: Folliculitis Bacterial
+    language: zh
+  - alias: Folliculitis Bacterial
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 細菌感染
       examples:
         - 病毒感染
         - 真菌感染
-
 clinicalSigns:
   early:
     - 發燒
@@ -32,56 +30,79 @@ clinicalSigns:
   progressive:
     - 全身性感染
     - 器官衰竭
-
 diagnosis:
   primaryTests:
     - name: 血液學檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: 病原培養與鑑定
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 抗生素、抗病毒或抗真菌藥
     - 支持性治療
   surgical:
     - name: 根據病況可能需引流或清創
-      notes: "依病況評估"
-
+      notes: 依病況評估
 prognosis:
-  general: "預後取決於病原類型、宿主免疫狀態與治療時機。早期診斷與適當治療可改善預後。"
-
+  general: 預後取決於病原類型、宿主免疫狀態與治療時機。早期診斷與適當治療可改善預後。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
-    title: Effect of institutional antimicrobial stewardship guidelines on prescription of critically important antimicrobials for dogs and cats.
+    title: >-
+      Effect of institutional antimicrobial stewardship guidelines on prescription of critically important
+      antimicrobials for dogs and cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11099728/
     type: guideline
-    pmid: "38465850"
+    pmid: '38465850'
   - sourceOrg: Journal of veterinary research
     title: Treatment of Selected Canine Dermatological Conditions in Portugal - A Research Survey.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6364160/
     type: research
-    pmid: "30729217"
+    pmid: '30729217'
   - sourceOrg: Scientific reports
     title: Development of an aerogenous Escherichia coli infection model in adult broiler breeders.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8486767/
     type: research
-    pmid: "34599201"
+    pmid: '34599201'
   - sourceOrg: Frontiers in immunology
-    title: "IBT-V02: A Multicomponent Toxoid Vaccine Protects Against Primary and Secondary Skin Infections Caused by Staphylococcus aureus."
+    title: >-
+      IBT-V02: A Multicomponent Toxoid Vaccine Protects Against Primary and Secondary Skin Infections Caused by
+      Staphylococcus aureus.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7987673/
     type: research
-    pmid: "33777005"
+    pmid: '33777005'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: Hostage to history - questioning the duration of systemic antimicrobial therapy for the treatment of canine superficial bacterial folliculitis.
+    title: >-
+      Hostage to history - questioning the duration of systemic antimicrobial therapy for the treatment of canine
+      superficial bacterial folliculitis.
     url: https://pubmed.ncbi.nlm.nih.gov/35507517/
     type: research
-    pmid: "35507517"
+    pmid: '35507517'
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+diagnosticAlgorithm:
+  title: Folliculitis Bacterial 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液學檢查
+          notes: 需詳細評估
+        - name: 病原培養與鑑定
+          notes: 協助確診
+ddxSource: auto-generated

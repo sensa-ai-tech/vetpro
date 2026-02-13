@@ -3,11 +3,11 @@ nameEn: Type II Disc Protrusion
 nameZh: 第二型椎間盤突出
 bodySystem: neurology
 description: 纖維環慢性退化、膨出壓迫脊髓,常見於大型犬種,進展緩慢,症狀逐漸惡化,治療可選擇內科或手術。
-
 aliases:
-  - { alias: Hansen Type II, language: en }
-  - { alias: 慢性椎間盤突出, language: zh }
-
+  - alias: Hansen Type II
+    language: en
+  - alias: 慢性椎間盤突出
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少見
-
 etiology:
   categories:
     - name: 慢性退化
@@ -31,7 +30,6 @@ etiology:
         - 年齡相關退化
         - 長期負重或活動
         - 肥胖增加椎間盤負擔
-
 clinicalSigns:
   early:
     - 間歇性後肢無力或跛行
@@ -43,65 +41,91 @@ clinicalSigns:
     - 慢性進展至癱瘓(數週至數月)
     - 肌肉萎縮
     - 尿失禁(晚期)
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
-      notes: "定位病灶,評估UMN或LMN症狀"
+      notes: 定位病灶,評估UMN或LMN症狀
     - name: 脊椎X光
-      notes: "可見椎間隙變窄、骨贅形成(退化性變化),但無法確診壓迫"
+      notes: 可見椎間隙變窄、骨贅形成(退化性變化),但無法確診壓迫
     - name: MRI
-      notes: "顯示纖維環背側膨出、脊髓慢性壓迫,T2可見脊髓水腫或萎縮"
+      notes: 顯示纖維環背側膨出、脊髓慢性壓迫,T2可見脊髓水腫或萎縮
     - name: CT myelography
-      notes: "顯示脊髓壓迫,MRI不可用時使用"
+      notes: 顯示脊髓壓迫,MRI不可用時使用
   differentialDiagnoses:
     - 第一型椎間盤突出(急性)
     - 退化性腰薦椎狹窄
     - 脊椎骨贅或關節炎
     - 脊髓腫瘤
     - 退化性脊髓病變(DM)
-
 treatment:
   medical:
-    - 輕度症狀(Grade 1-2):內科治療
-      - 籠休4-8週
-      - 體重管理
-      - NSAIDs(Carprofen 2-4 mg/kg PO BID)
-      - 物理治療、水療
-    - 中重度症狀(Grade 3-5)或內科治療失敗:手術減壓
-      - Hemilaminectomy(胸腰椎)
-      - Dorsal laminectomy(多節段壓迫)
+    - 輕度症狀(Grade 1-2):內科治療 - 籠休4-8週 - 體重管理 - NSAIDs(Carprofen 2-4 mg/kg PO BID) - 物理治療、水療
+    - 中重度症狀(Grade 3-5)或內科治療失敗:手術減壓 - Hemilaminectomy(胸腰椎) - Dorsal laminectomy(多節段壓迫)
     - 術後復健:
-      - 物理治療、水療加速恢復
-      - 逐步增加活動量
+        - 物理治療、水療加速恢復
+        - 逐步增加活動量
     - 疼痛控制(Gabapentin 10-20 mg/kg PO TID)
-
 prognosis:
-  general: "早期內科治療成功率約60-70%;手術治療成功率80-90%,但恢復較Type I緩慢。慢性壓迫導致脊髓不可逆損傷者預後保守。"
-
+  general: 早期內科治療成功率約60-70%;手術治療成功率80-90%,但恢復較Type I緩慢。慢性壓迫導致脊髓不可逆損傷者預後保守。
 prevention:
   - 大型犬維持理想體重
   - 避免過度跳躍或劇烈運動
   - 早期症狀(後肢無力)出現時及早檢查
   - 定期適度運動維持肌肉強度
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: Efficacy of Medical Ozone as an Adjuvant Treatment in Dogs with Intervertebral Disc Protusions-A Retrospective Study.
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Efficacy of Medical Ozone as an Adjuvant Treatment in Dogs with Intervertebral Disc Protusions-A Retrospective
+      Study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10705131/
     type: research
-    pmid: "38067068"
+    pmid: '38067068'
     relevance: supporting
   - sourceOrg: Chinese medical journal
     title: Diffusion-weighted 7.0T Magnetic Resonance Imaging in Assessment of Intervertebral Disc Degeneration in Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5754960/
     type: research
-    pmid: "29271382"
+    pmid: '29271382'
     relevance: supporting
   - sourceOrg: Orthopaedic surgery
     title: Mesenchymal Stem Cells Induced by Microencapsulated Chondrocytes on Repairing of Intervertebral Disc Degeneration.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6594535/
     type: research
-    pmid: "30485683"
+    pmid: '30485683'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: paresis-paralysis
+    frequency: common
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: urinary-incontinence
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 第二型椎間盤突出 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - paresis-paralysis 相關症狀
+        - ataxia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 定位病灶,評估UMN或LMN症狀
+        - name: 脊椎X光
+          notes: 可見椎間隙變窄、骨贅形成(退化性變化),但無法確診壓迫
+        - name: MRI
+          notes: 顯示纖維環背側膨出、脊髓慢性壓迫,T2可見脊髓水腫或萎縮
+ddxSource: auto-generated

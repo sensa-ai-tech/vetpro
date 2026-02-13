@@ -3,11 +3,11 @@ nameEn: Sinus Bradycardia
 nameZh: 竇性心搏過緩
 bodySystem: cardiac
 description: 竇房結發出的電脈衝頻率過慢，心跳低於正常範圍。可為生理性 (運動員、迷走神經張力高) 或病理性 (藥物、疾病)。
-
 aliases:
-  - { alias: 竇性心動過緩, language: zh }
-  - { alias: Sinus Bradyarrhythmia, language: en }
-
+  - alias: 竇性心動過緩
+    language: zh
+  - alias: Sinus Bradyarrhythmia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 多為病理性 (低體溫、藥物)
-
 etiology:
   categories:
     - name: 生理性
@@ -34,7 +33,6 @@ etiology:
         - 低體溫
         - 病態竇房結症候群
         - 高血鉀
-
 clinicalSigns:
   early:
     - 心跳緩慢 (犬 < 60 bpm, 貓 < 120 bpm)
@@ -44,20 +42,18 @@ clinicalSigns:
     - 運動不耐
     - 暈厥
     - 嗜睡
-
 diagnosis:
   primaryTests:
     - name: 心電圖
-      notes: "確認竇性 P 波存在，心室率過慢"
+      notes: 確認竇性 P 波存在，心室率過慢
     - name: 血液檢查
-      notes: "電解質 (鉀)、T4 (貓)"
+      notes: 電解質 (鉀)、T4 (貓)
     - name: Atropine 反應測試
-      notes: "0.04 mg/kg IV，若心率上升為生理性或迷走相關"
+      notes: 0.04 mg/kg IV，若心率上升為生理性或迷走相關
   differentialDiagnoses:
     - 房室傳導阻滯
     - 心房靜止
     - 病態竇房結症候群
-
 treatment:
   medical:
     - 生理性無需治療
@@ -65,44 +61,74 @@ treatment:
     - Atropine 0.02-0.04 mg/kg IV/IM (急性處理)
     - Glycopyrrolate 0.005-0.01 mg/kg IV (替代 atropine)
     - Pacemaker (嚴重症狀性病例)
-
 prognosis:
-  general: "生理性預後良好；藥物性停藥後恢復；病態竇房結症候群需 pacemaker，預後尚可"
-
+  general: 生理性預後良好；藥物性停藥後恢復；病態竇房結症候群需 pacemaker，預後尚可
 prevention:
   - 謹慎使用心跳抑制藥物
   - 監測麻醉中心率
   - 維持正常體溫
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in physiology
     title: Electrophysiological and sick sinus syndrome effects of Remdesivir challenge in guinea-pig hearts.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11347342/
     type: research
-    pmid: "39193439"
+    pmid: '39193439'
     relevance: supporting
   - sourceOrg: Brazilian journal of anesthesiology (Elsevier)
-    title: Changes in gap junction proteins Connexin30.2 and Connexin40 expression in the sinoatrial node of rats with dexmedetomidine-induced sinus bradycardia.
+    title: >-
+      Changes in gap junction proteins Connexin30.2 and Connexin40 expression in the sinoatrial node of rats with
+      dexmedetomidine-induced sinus bradycardia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9659980/
     type: research
-    pmid: "35618083"
+    pmid: '35618083'
     relevance: supporting
   - sourceOrg: Hippokratia
-    title: The relevance between graft preservation solutions and QTc interval during living donor kidney transplantation and rat cardiomyocytes sampling.
+    title: >-
+      The relevance between graft preservation solutions and QTc interval during living donor kidney transplantation and
+      rat cardiomyocytes sampling.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8877929/
     type: research
-    pmid: "35221652"
+    pmid: '35221652'
     relevance: supporting
   - sourceOrg: Scientific reports
     title: Silencing miR-370-3p rescues funny current and sinus node function in heart failure.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7347645/
     type: research
-    pmid: "32647133"
+    pmid: '32647133'
     relevance: supporting
   - sourceOrg: Heart rhythm
-    title: Small-conductance calcium-activated potassium current modulates the ventricular escape rhythm in normal rabbit hearts.
+    title: >-
+      Small-conductance calcium-activated potassium current modulates the ventricular escape rhythm in normal rabbit
+      hearts.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6443460/
     type: research
-    pmid: "30445170"
+    pmid: '30445170'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 竇性心搏過緩 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心電圖
+          notes: 確認竇性 P 波存在，心室率過慢
+        - name: 血液檢查
+          notes: 電解質 (鉀)、T4 (貓)
+        - name: Atropine 反應測試
+          notes: 0.04 mg/kg IV，若心率上升為生理性或迷走相關
+ddxSource: auto-generated

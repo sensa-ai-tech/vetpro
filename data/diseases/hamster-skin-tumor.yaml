@@ -3,22 +3,20 @@ nameEn: Hamster Skin Tumor
 nameZh: 倉鼠皮膚腫瘤
 bodySystem: dermatology
 description: 倉鼠各類皮膚及皮下腫瘤，為老年倉鼠常見問題。包括黑色素瘤、乳頭狀瘤、T 細胞淋巴瘤等，體表腫塊需盡早評估與切除。
-
 aliases:
-  - { alias: "倉鼠皮膚腫瘤", language: zh }
-  - { alias: "Hamster Skin Tumor", language: en }
-
+  - alias: 倉鼠皮膚腫瘤
+    language: zh
+  - alias: Hamster Skin Tumor
+    language: en
 species:
   - speciesCommon: hamster
     prevalence: uncommon
     notes: 倉鼠可受此疾病影響。
-
 etiology:
   categories:
     - name: 病因
       examples:
         - 詳見臨床文獻
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -27,14 +25,12 @@ clinicalSigns:
   progressive:
     - 症狀加重
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 完整理學檢查與病史評估。
     - name: 實驗室檢查
       notes: CBC/生化排除系統性疾病。
-
 treatment:
   principles:
     - 治療基礎病因
@@ -44,36 +40,74 @@ treatment:
     - 依病因治療
     - 支持性照護
     - 定期追蹤
-
 prognosis: 預後取決於疾病嚴重度與治療時效。早期診斷與適當治療可改善預後。
-
-
 guidelineRefs:
   - sourceOrg: Cancers
-    title: "Merkel Cell Polyomavirus: Infection, Genome, Transcripts and Its Role in Development of Merkel Cell Carcinoma."
+    title: 'Merkel Cell Polyomavirus: Infection, Genome, Transcripts and Its Role in Development of Merkel Cell Carcinoma.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9857234/
     type: review
-    pmid: "36672392"
+    pmid: '36672392'
   - sourceOrg: Viruses
-    title: "Hamster Polyomavirus Research: Past, Present, and Future."
+    title: 'Hamster Polyomavirus Research: Past, Present, and Future.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8153644/
     type: review
-    pmid: "34068409"
+    pmid: '34068409'
   - sourceOrg: Journal of toxicology and environmental health. Part B, Critical reviews
-    title: Concordance between sites of tumor development in humans and in experimental animals for 111 agents that are carcinogenic to humans.
+    title: >-
+      Concordance between sites of tumor development in humans and in experimental animals for 111 agents that are
+      carcinogenic to humans.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7139235/
     type: review
-    pmid: "31795923"
+    pmid: '31795923'
   - sourceOrg: International journal of molecular sciences
-    title: Transplantable Melanomas in Hamsters and Gerbils as Models for Human Melanoma. Sensitization in Melanoma Radiotherapy-From Animal Models to Clinical Trials.
+    title: >-
+      Transplantable Melanomas in Hamsters and Gerbils as Models for Human Melanoma. Sensitization in Melanoma
+      Radiotherapy-From Animal Models to Clinical Trials.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5979283/
     type: review
-    pmid: "29614755"
+    pmid: '29614755'
   - sourceOrg: Protoplasma
     title: Melanization as unfavorable factor in amelanotic melanoma cell biology.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8433105/
     type: research
-    pmid: "33506271"
+    pmid: '33506271'
 pubmedQueries:
   - query: '"Hamster Skin Tumor" AND (veterinary OR hamster) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 倉鼠皮膚腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 完整理學檢查與病史評估。
+        - name: 實驗室檢查
+          notes: CBC/生化排除系統性疾病。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 支持性照護
+        - 監測恢復進度
+ddxSource: auto-generated

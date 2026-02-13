@@ -2,13 +2,16 @@ slug: acute-hepatic-failure
 nameEn: Acute Hepatic Failure
 nameZh: 急性肝衰竭
 bodySystem: hepatic
-description: 急性肝衰竭為肝臟功能在短時間內（數天至數週）急速惡化的危急狀態，常見原因包括藥物中毒（Xylitol、Acetaminophen、NSAID）、毒素攝入（Amanita mushroom、Sago palm）、感染性肝炎與缺血性損傷。臨床表現為黃疸、凝血障礙、肝性腦病與多器官衰竭。
-
+description: >-
+  急性肝衰竭為肝臟功能在短時間內（數天至數週）急速惡化的危急狀態，常見原因包括藥物中毒（Xylitol、Acetaminophen、NSAID）、毒素攝入（Amanita mushroom、Sago
+  palm）、感染性肝炎與缺血性損傷。臨床表現為黃疸、凝血障礙、肝性腦病與多器官衰竭。
 aliases:
-  - { alias: 急性肝功能衰竭, language: zh }
-  - { alias: Acute Liver Failure, language: en }
-  - { alias: Fulminant Hepatic Failure, language: en }
-
+  - alias: 急性肝功能衰竭
+    language: zh
+  - alias: Acute Liver Failure
+    language: en
+  - alias: Fulminant Hepatic Failure
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻急性肝衰竭可因 Acetaminophen 中毒（極度敏感）、脂肪肝急性惡化、感染性原因引起。
-
 etiology:
   categories:
     - name: 毒素與藥物
@@ -36,7 +38,6 @@ etiology:
         - 熱射病（heat stroke）
         - 肝臟缺血（shock liver）
         - 急性 Budd-Chiari 症候群
-
 clinicalSigns:
   early:
     - 急性嘔吐與食慾廢絕
@@ -48,14 +49,12 @@ clinicalSigns:
     - 腹水
     - 低血糖
     - 多器官衰竭
-
 diagnosis:
   primaryTests:
     - name: 血液生化
       notes: ALT、AST 急速升高（常 >10 倍正常值）。膽紅素升高。低白蛋白。低血糖。BUN 降低。氨升高。
     - name: 凝血檢查
       notes: PT、aPTT 延長。纖維蛋白原降低。凝血因子合成功能喪失為預後不良指標。
-
 treatment:
   principles:
     - 移除或治療病因
@@ -64,46 +63,122 @@ treatment:
   general:
     - 靜脈輸液維持灌注（避免乳酸林格氏液，使用 0.9% NaCl 或 Normosol-R）
     - 低血糖矯正（Dextrose 2.5-5% 加入輸液）
-    - "肝性腦病控制：Lactulose 0.5 mL/kg PO q8h + Metronidazole 7.5 mg/kg PO q12h"
-    - "肝保護：N-Acetylcysteine 140 mg/kg IV loading → 70 mg/kg IV q6h"
-    - "抗氧化：S-Adenosylmethionine（SAMe）20 mg/kg PO q24h"
+    - 肝性腦病控制：Lactulose 0.5 mL/kg PO q8h + Metronidazole 7.5 mg/kg PO q12h
+    - 肝保護：N-Acetylcysteine 140 mg/kg IV loading → 70 mg/kg IV q6h
+    - 抗氧化：S-Adenosylmethionine（SAMe）20 mg/kg PO q24h
     - 凝血障礙處理（新鮮冷凍血漿 FFP）
     - Vitamin K1 補充
-
 prognosis: 預後取決於病因與肝損傷程度。藥物性肝毒性若早期發現並移除病因預後較好。Sago palm 與 Amanita 中毒死亡率極高（50-90%）。肝性腦病與凝血障礙同時出現者預後差。肝臟具有再生能力，存活者可能完全恢復。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in microbiology
-    title: "Zoonotic Hepatitis E Virus: An Ignored Risk for Public Health."
+    title: 'Zoonotic Hepatitis E Virus: An Ignored Risk for Public Health.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5723051/
     type: review
-    pmid: "29255453"
+    pmid: '29255453'
   - sourceOrg: Pathogens (Basel, Switzerland)
-    title: "Suspected Adenovirus Causing an Emerging HEPATITIS among Children below 10 Years: A Review."
+    title: 'Suspected Adenovirus Causing an Emerging HEPATITIS among Children below 10 Years: A Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9317240/
     type: review
-    pmid: "35889958"
+    pmid: '35889958'
   - sourceOrg: BMC gastroenterology
-    title: "New-onset and relapsed liver diseases following COVID-19 vaccination: a systematic review."
+    title: 'New-onset and relapsed liver diseases following COVID-19 vaccination: a systematic review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9559550/
     type: review
-    pmid: "36229799"
-  - sourceOrg: "Experimental &amp; molecular medicine"
+    pmid: '36229799'
+  - sourceOrg: Experimental &amp; molecular medicine
     title: The wide utility of rabbits as models of human diseases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5964082/
     type: review
-    pmid: "29789565"
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
+    pmid: '29789565'
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
     title: Delayed Zinc Phosphide Toxicosis in a Dog.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12322358/
     type: case-report
-    pmid: "40566877"
-  - sourceOrg: "Journal of medical toxicology : official journal of the American College of Medical Toxicology"
+    pmid: '40566877'
+  - sourceOrg: 'Journal of medical toxicology : official journal of the American College of Medical Toxicology'
     title: Acute Hepatic Failure in a Dog after Xylitol Ingestion.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4880608/
     type: case-report
-    pmid: "26691320"
+    pmid: '26691320'
 pubmedQueries:
-  - query: '"acute hepatic failure" OR "acute liver failure" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
+  - query: >-
+      "acute hepatic failure" OR "acute liver failure" AND (veterinary OR canine OR feline) AND ("treatment" OR
+      "prognosis")
     frequency: monthly
+diagnosticAlgorithm:
+  title: 急性肝衰竭 診斷流程
+  steps:
+    - step: 1
+      action: 緊急評估
+      details: 評估急性肝衰竭徵象
+      findings:
+        - 急性黃疸
+        - 嘔吐與食慾廢絕
+        - 凝血障礙出血
+        - 精神意識改變肝性腦病
+    - step: 2
+      action: 實驗室檢查
+      details: 肝功能與凝血功能全面評估
+      findings:
+        - ALT/AST極度升高
+        - 膽紅素升高
+        - PT/aPTT延長
+        - 低血糖
+    - step: 3
+      action: 病因調查
+      details: 確認急性肝衰竭原因
+      findings:
+        - 毒物攝入史
+        - 感染性鈎端螺旋體/ICH
+        - 缺氧性肝損傷
+        - 急性膽道阻塞
+    - step: 4
+      action: 併發症監測
+      details: 監測多器官衰竭發展
+      findings:
+        - DIC發展
+        - 肝性腦病進展
+        - 腎功能惡化
+        - 酸鹼電解質失衡
+clinicalPearls:
+  - Acetaminophen對貓有極高毒性，微量即可致命
+  - N-Acetylcysteine是急性肝毒性的重要解毒劑
+  - 低血糖是急性肝衰竭的嚴重併發症，需頻繁監測
+  - 肝臟有強大再生能力，若能度過急性期可恢復功能
+  - 凝血障礙先於臨床黃疸出現
+monitoringItems:
+  - 凝血功能（每6-12小時）
+  - 血糖（每2-4小時）
+  - 肝臟酵素
+  - 血氨
+  - 神經學狀態
+  - 電解質
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: petechiae-ecchymoses
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: uncommon
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+associatedLabFindings:
+  - labId: hypoglycaemia
+    frequency: uncommon
+  - labId: hypoalbuminaemia
+    frequency: common
+  - labId: ammonia-elevated
+    frequency: uncommon
+  - labId: pt-prolonged
+    frequency: uncommon
+ddxSource: book

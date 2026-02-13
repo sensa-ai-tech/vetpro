@@ -3,12 +3,13 @@ nameEn: Aspergillosis Disseminated
 nameZh: 播散性麴菌病
 bodySystem: infectious
 description: 播散性麴菌病是由麴菌屬真菌(主要為煙麴黴)引起的全身性侵襲性感染,主要見於德國牧羊犬,與免疫缺陷相關。此病侵犯多重器官(骨骼、腎臟、脊髓、眼睛),表現為跛行、腎衰竭、脊髓病變及視力喪失,預後極不良,死亡率極高。
-
 aliases:
-  - { alias: 全身性麴菌病, language: zh }
-  - { alias: Disseminated Aspergillosis, language: en }
-  - { alias: SDA, language: en }
-
+  - alias: 全身性麴菌病
+    language: zh
+  - alias: Disseminated Aspergillosis
+    language: en
+  - alias: SDA
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓播散性麴菌病極為罕見,主要見於FIV/FeLV陽性或免疫抑制治療貓
-
 etiology:
   categories:
     - name: 全身性真菌感染
@@ -28,7 +28,6 @@ etiology:
         - 吸入或經傷口侵入
         - 品種特異性免疫缺陷(德國牧羊犬)
         - 免疫抑制(類固醇、化療、FIV/FeLV)
-
 clinicalSigns:
   early:
     - 發燒、精神沉鬱、食慾下降
@@ -41,31 +40,29 @@ clinicalSigns:
     - 眼部:前葡萄膜炎、視網膜剝離、失明
     - 皮膚:潰瘍、瘻管(罕見)
     - 多重器官衰竭
-
 diagnosis:
   primaryTests:
     - name: 骨骼X光
-      notes: "長骨溶解性病灶、骨膜增生(常見於腰椎、骨盆、長骨)"
+      notes: 長骨溶解性病灶、骨膜增生(常見於腰椎、骨盆、長骨)
     - name: 尿液或血清抗原檢測
-      notes: "Aspergillus galactomannan抗原ELISA(敏感性60-80%)"
+      notes: Aspergillus galactomannan抗原ELISA(敏感性60-80%)
     - name: 組織切片
-      notes: "骨骼、腎臟或其他組織切片可見分隔菌絲侵入血管(血管侵襲性)"
+      notes: 骨骼、腎臟或其他組織切片可見分隔菌絲侵入血管(血管侵襲性)
     - name: 真菌培養
-      notes: "組織或尿液培養(敏感性低,僅30-50%陽性)"
+      notes: 組織或尿液培養(敏感性低,僅30-50%陽性)
     - name: 血清學檢查
-      notes: "抗Aspergillus抗體效價升高"
+      notes: 抗Aspergillus抗體效價升高
     - name: MRI
-      notes: "脊髓病變可見硬膜外或椎間盤病灶"
+      notes: 脊髓病變可見硬膜外或椎間盤病灶
   differentialDiagnoses:
     - 骨腫瘤(骨肉瘤、軟骨肉瘤)
     - 椎間盤疾病
     - 慢性腎臟病(其他病因)
     - 其他全身性真菌病
     - 多發性骨髓炎
-
 treatment:
   medical:
-    - 全身性抗真菌(療程3-12個月以上):
+    - 全身性抗真菌(療程3-12個月以上): null
     - Posaconazole 5-10 mg/kg PO BID(首選,對A. terreus較有效)
     - 或Itraconazole 5-10 mg/kg PO BID + Terbinafine 5-10 mg/kg PO SID
     - 或Voriconazole 3-6 mg/kg PO BID(較新,穿透BBB佳)
@@ -75,20 +72,56 @@ treatment:
     - 腎衰竭:靜脈輸液、磷結合劑
     - 脊髓病變:類固醇(短期,低劑量)、物理治療
     - 監測:血清抗原每月檢測、肝腎功能、X光追蹤
-
 prognosis:
-  general: "預後極不良。即使積極治療,死亡率仍高達60-80%,多數病例在診斷後數週至數月內死亡或安樂死。少數存活病例需終身抗真菌治療,復發率極高。脊髓或中樞神經侵犯預後極差。"
-
+  general: 預後極不良。即使積極治療,死亡率仍高達60-80%,多數病例在診斷後數週至數月內死亡或安樂死。少數存活病例需終身抗真菌治療,復發率極高。脊髓或中樞神經侵犯預後極差。
 prevention:
   - 德國牧羊犬定期健康檢查,早期發現症狀
   - 避免不必要的免疫抑制治療
   - 減少接觸高濃度麴菌孢子環境
   - 無有效疫苗
-
-
 guidelineRefs:
   - sourceOrg: Microbiology spectrum
     title: Caspofungin Cerebral Penetration and Therapeutic Efficacy in Experimental Cerebral Aspergillosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9241807/
     type: research
-    pmid: "35435756"
+    pmid: '35435756'
+associatedSymptoms:
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: blindness
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 播散性麴菌病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - polyuria-polydipsia 相關症狀
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 骨骼X光
+          notes: 長骨溶解性病灶、骨膜增生(常見於腰椎、骨盆、長骨)
+        - name: 尿液或血清抗原檢測
+          notes: Aspergillus galactomannan抗原ELISA(敏感性60-80%)
+        - name: 組織切片
+          notes: 骨骼、腎臟或其他組織切片可見分隔菌絲侵入血管(血管侵襲性)
+ddxSource: auto-generated

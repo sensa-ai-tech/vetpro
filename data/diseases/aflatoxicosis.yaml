@@ -2,12 +2,14 @@ slug: aflatoxicosis
 nameEn: Aflatoxicosis
 nameZh: 黃麴毒素中毒
 bodySystem: toxicology
-description: 黃麴毒素 (aflatoxin) 由黃麴菌 (Aspergillus flavus/A. parasiticus) 產生，汙染穀物與花生類食材。犬對黃麴毒素敏感，引起急性或慢性肝損傷。歷史上曾因汙染商業犬糧造成大規模中毒事件。犬糧召回事件中黃麴毒素為重要原因。
-
+description: >-
+  黃麴毒素 (aflatoxin) 由黃麴菌 (Aspergillus flavus/A. parasiticus)
+  產生，汙染穀物與花生類食材。犬對黃麴毒素敏感，引起急性或慢性肝損傷。歷史上曾因汙染商業犬糧造成大規模中毒事件。犬糧召回事件中黃麴毒素為重要原因。
 aliases:
-  - { alias: 黃麴黴素中毒, language: zh }
-  - { alias: Aflatoxin Poisoning, language: en }
-
+  - alias: 黃麴黴素中毒
+    language: zh
+  - alias: Aflatoxin Poisoning
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓對黃麴毒素相對較犬耐受。中毒報告極少。
-
 etiology:
   categories:
     - name: 毒素類型
@@ -29,7 +30,6 @@ etiology:
         - 受汙染玉米、花生、棉籽粕
         - 汙染商業犬糧
         - 高溫高濕儲存條件利於黃麴菌生長
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -41,7 +41,6 @@ clinicalSigns:
     - 腹水
     - 肝性腦病變
     - 慢性：肝纖維化、肝細胞癌
-
 diagnosis:
   primaryTests:
     - name: 肝功能檢查
@@ -53,7 +52,6 @@ diagnosis:
     - 膽汁酸
     - 腹部超音波（肝臟）
     - 肝臟生檢（確認損傷型態）
-
 treatment:
   principles:
     - 停止暴露來源
@@ -68,41 +66,90 @@ treatment:
     - IV 輸液
     - 低蛋白飲食（肝性腦病變時）
     - 長期追蹤肝功能
-
 prognosis: 急性黃麴毒素中毒肝衰竭者預後不良（致死率可達 60%）。存活者可能發展慢性肝病。輕度暴露停止接觸後可恢復。飼料品質管控為預防關鍵。
-
-
 guidelineRefs:
   - sourceOrg: Aquaculture nutrition
     title: A Brief Review on Aflatoxicosis in Aquaculture With a Focus on Fish.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11663045/
     type: review
-    pmid: "39713178"
+    pmid: '39713178'
   - sourceOrg: Toxins
-    title: "Dietary Mycotoxins: An Overview on Toxicokinetics, Toxicodynamics, Toxicity, Epidemiology, Detection, and Their Mitigation with Special Emphasis on Aflatoxicosis in Humans and Animals."
+    title: >-
+      Dietary Mycotoxins: An Overview on Toxicokinetics, Toxicodynamics, Toxicity, Epidemiology, Detection, and Their
+      Mitigation with Special Emphasis on Aflatoxicosis in Humans and Animals.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11598113/
     type: review
-    pmid: "39591238"
+    pmid: '39591238'
   - sourceOrg: One health outlook
-    title: "Plant health and its effects on food safety and security in a One Health framework: four case studies."
+    title: 'Plant health and its effects on food safety and security in a One Health framework: four case studies.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8011176/
     type: review
-    pmid: "33829143"
+    pmid: '33829143'
   - sourceOrg: International journal of molecular sciences
-    title: "AFB1 Toxicity in Human Food and Animal Feed Consumption: A Review of Experimental Treatments and Preventive Measures."
+    title: >-
+      AFB1 Toxicity in Human Food and Animal Feed Consumption: A Review of Experimental Treatments and Preventive
+      Measures.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11121597/
     type: review
-    pmid: "38791343"
+    pmid: '38791343'
   - sourceOrg: Toxins
-    title: "Mycotoxins in Poultry Feed and Feed Ingredients from Sub-Saharan Africa and Their Impact on the Production of Broiler and Layer Chickens: A Review."
+    title: >-
+      Mycotoxins in Poultry Feed and Feed Ingredients from Sub-Saharan Africa and Their Impact on the Production of
+      Broiler and Layer Chickens: A Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8473361/
     type: review
-    pmid: "34564637"
+    pmid: '34564637'
   - sourceOrg: Toxins
-    title: "Aflatoxins in Feed: Types, Metabolism, Health Consequences in Swine and Mitigation Strategies."
+    title: 'Aflatoxins in Feed: Types, Metabolism, Health Consequences in Swine and Mitigation Strategies.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9783261/
     type: review
-    pmid: "36548750"
+    pmid: '36548750'
 pubmedQueries:
   - query: '"aflatoxicosis" AND (veterinary OR canine) AND ("treatment" OR "dog food" OR "contamination")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: petechiae-ecchymoses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 黃麴毒素中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - weakness 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 肝功能檢查
+          notes: ALT、AST、ALP、膽紅素急遽升高。白蛋白降低
+        - name: 食物黃麴毒素檢測
+          notes: 疑似飼料送檢 aflatoxin 含量（ELISA 或 HPLC）
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 凝血功能（PT、aPTT 延長）
+        - 膽汁酸
+        - 腹部超音波（肝臟）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 停止暴露來源
+        - 保肝治療
+        - 凝血障礙管理
+ddxSource: auto-generated

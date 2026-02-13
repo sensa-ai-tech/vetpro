@@ -3,15 +3,19 @@ nameEn: Transfusion Reactions
 nameZh: 輸血反應
 bodySystem: hematology
 description: 輸注血液製品（全血、濃縮紅血球、血漿、血小板）過程中或之後發生的不良免疫性或非免疫性反應。包括急性溶血性、發燒性非溶血性、過敏性及輸血相關急性肺損傷等類型。
-
 aliases:
-  - { alias: 輸血不良反應, language: zh }
-  - { alias: 血液製品反應, language: zh }
-  - { alias: Transfusion-Associated Adverse Events, language: en }
-  - { alias: Hemolytic Transfusion Reaction, language: en }
-  - { alias: TACO, language: en }
-  - { alias: TRALI, language: en }
-
+  - alias: 輸血不良反應
+    language: zh
+  - alias: 血液製品反應
+    language: zh
+  - alias: Transfusion-Associated Adverse Events
+    language: en
+  - alias: Hemolytic Transfusion Reaction
+    language: en
+  - alias: TACO
+    language: en
+  - alias: TRALI
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -21,7 +25,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓有 A、B、AB 三種血型。Type B 貓具有高效價天然抗 A 抗體，即使首次輸入 Type A 血亦可發生致命性急性溶血反應。輸血前配血檢測為必要。
-
 etiology:
   categories:
     - name: 免疫性急性反應
@@ -42,7 +45,6 @@ etiology:
         - 低體溫（冷藏血液未回溫）
         - 枸櫞酸鹽中毒（大量輸血時低血鈣）
         - 高血鉀（儲存血液鉀離子滲出）
-
 clinicalSigns:
   early:
     - 發燒（體溫升高 ≥1°C）
@@ -64,18 +66,17 @@ clinicalSigns:
     - DIC
     - 急性呼吸窘迫 (TRALI)
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 臨床監測
-      notes: "輸血開始後前 15-30 分鐘密切監測體溫、心率、呼吸速率、血壓。之後每 30 分鐘評估一次直至輸血完成"
+      notes: 輸血開始後前 15-30 分鐘密切監測體溫、心率、呼吸速率、血壓。之後每 30 分鐘評估一次直至輸血完成
     - name: 血漿外觀
-      notes: "輸血後抽血離心——血漿呈粉紅色/紅色（血管內溶血）。與輸血前血漿顏色比較"
+      notes: 輸血後抽血離心——血漿呈粉紅色/紅色（血管內溶血）。與輸血前血漿顏色比較
     - name: 配血試驗 (crossmatch)
-      notes: "主配 (major)：供體紅血球 + 受體血清。副配 (minor)：受體紅血球 + 供體血清。凝集或溶血為不合"
+      notes: 主配 (major)：供體紅血球 + 受體血清。副配 (minor)：受體紅血球 + 供體血清。凝集或溶血為不合
   imaging:
     - name: 胸腔 X 光
-      notes: "評估 TACO（肺水腫、心臟擴大）或 TRALI（雙側肺浸潤，無心臟擴大）"
+      notes: 評估 TACO（肺水腫、心臟擴大）或 TRALI（雙側肺浸潤，無心臟擴大）
   additional:
     - 血型鑑定（犬 DEA 1.1；貓 A/B/AB）
     - 直接 Coombs test（輸血後陽性轉為支持溶血性反應）
@@ -91,7 +92,6 @@ diagnosis:
     - 急性肺水腫 — 心因性 (Cardiogenic Pulmonary Edema)
     - 枸櫞酸鹽中毒 (Citrate Toxicity)
     - 輸血相關循環超負荷 vs 輸血相關急性肺損傷 (TACO vs TRALI 鑑別)
-
 treatment:
   principles:
     - 立即停止輸血
@@ -100,16 +100,16 @@ treatment:
     - 嚴重溶血需積極液體治療保護腎臟
   medications:
     - name: Diphenhydramine
-      dose: "1-2 mg/kg IM 或緩慢 IV"
+      dose: 1-2 mg/kg IM 或緩慢 IV
       notes: 過敏性/蕁麻疹反應。輕度反應可給予後減慢輸血速度繼續
     - name: Dexamethasone SP
-      dose: "0.1-0.2 mg/kg IV"
+      dose: 0.1-0.2 mg/kg IV
       notes: 嚴重過敏反應或溶血反應的抗炎處理
     - name: Epinephrine
-      dose: "0.01-0.02 mg/kg IV 或 IM"
+      dose: 0.01-0.02 mg/kg IV 或 IM
       notes: 過敏性休克時使用。注意稀釋至 1:10,000 溶液
     - name: Furosemide
-      dose: "1-2 mg/kg IV"
+      dose: 1-2 mg/kg IV
       notes: TACO 的利尿治療。溶血反應促進腎臟排泄游離血紅素
   general:
     - 急性溶血反應：立即停止輸血，積極 IV 輸液 (crystalloid bolus 20 mL/kg) 維持腎臟灌流
@@ -120,44 +120,93 @@ treatment:
     - TRALI：氧氣支持、呼吸支持（可能需正壓通氣）
     - 保留血袋與輸血組送檢（培養、重新配血）
     - 所有反應均需詳細記錄（時間、症狀、處理、預後）
-
 emergencyNotes: 急性溶血反應為輸血最嚴重併發症。立即停止輸血、維持靜脈通路。積極 crystalloid bolus 維持腎灌流。過敏性休克給予 epinephrine。Type B 貓誤輸 Type A 血可在數分鐘內死亡。
-
-prognosis: 發燒性非溶血性反應與輕度過敏反應預後極佳，通常可在處理後繼續使用不同血品。急性溶血性反應若及時停止輸血並積極輸液保護腎臟，多數可存活，但併發 DIC 或急性腎衰竭者預後差。延遲性溶血反應通常於輸血後 2-21 天發生，多為自限性但需密切觀察。TRALI 死亡率可達 5-10%。Type B 貓具有高效價天然抗 A 抗體，首次誤輸 Type A 血即可在數分鐘內致命，凸顯貓輸血前血型鑑定的絕對必要性。預防勝於治療——輸血前血型鑑定與配血檢測可大幅降低風險。
-
+prognosis: >-
+  發燒性非溶血性反應與輕度過敏反應預後極佳，通常可在處理後繼續使用不同血品。急性溶血性反應若及時停止輸血並積極輸液保護腎臟，多數可存活，但併發 DIC 或急性腎衰竭者預後差。延遲性溶血反應通常於輸血後 2-21
+  天發生，多為自限性但需密切觀察。TRALI 死亡率可達 5-10%。Type B 貓具有高效價天然抗 A 抗體，首次誤輸 Type A
+  血即可在數分鐘內致命，凸顯貓輸血前血型鑑定的絕對必要性。預防勝於治療——輸血前血型鑑定與配血檢測可大幅降低風險。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
     title: Transfusion medicine in small animals
     url: https://pubmed.ncbi.nlm.nih.gov/23855442/
     type: review
-    pmid: "23855442"
+    pmid: '23855442'
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: Evaluation of transfusion reactions in dogs
     url: https://pubmed.ncbi.nlm.nih.gov/19175739/
     type: research
-    pmid: "19175739"
+    pmid: '19175739'
   - sourceOrg: Journal of the American Veterinary Medical Association
     title: Naturally occurring alloantibodies in cats and transfusion compatibility
     url: https://pubmed.ncbi.nlm.nih.gov/16190601/
     type: research
-    pmid: "16190601"
+    pmid: '16190601'
   - sourceOrg: Journal of feline medicine and surgery
     title: 2021 ISFM Consensus Guidelines on the Collection and Administration of Blood and Blood Products in Cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10741281/
     type: consensus
-    pmid: "33896248"
+    pmid: '33896248'
     relevance: primary
   - sourceOrg: Journal of veterinary internal medicine
-    title: A prospective multicenter observational study assessing incidence and risk factors for acute blood transfusion reactions in dogs.
+    title: >-
+      A prospective multicenter observational study assessing incidence and risk factors for acute blood transfusion
+      reactions in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11423481/
     type: research
-    pmid: "39239720"
+    pmid: '39239720'
     relevance: supporting
 pubmedQueries:
   - query: '"transfusion reaction" AND (dog OR cat OR canine OR feline) AND ("hemolytic" OR "crossmatch" OR "blood type")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "EE"
-  sectionTitle: "Australian Shepherds. Specific therapy"
+  chapter: EE
+  sectionTitle: Australian Shepherds. Specific therapy
   pdfPage: 534
+diagnosticAlgorithm:
+  title: 輸血反應 診斷流程
+  steps:
+    - step: 1
+      action: 急性監測
+      details: 輸血過程中和輸血後密切監測
+      findings:
+        - 發熱（體溫上升 >1°C）
+        - 蕁麻疹或面部水腫
+        - 嘔吐和腹瀉
+        - 心搏過速和低血壓
+    - step: 2
+      action: 反應分類
+      details: 區分免疫性和非免疫性輸血反應
+      findings:
+        - 急性溶血：血紅素尿、黃疸、休克
+        - 遲發性溶血：PCV下降、膽紅素升高
+        - 發熱性非溶血反應：僅發熱
+        - 過敏性反應：蕁麻疹、血管性水腫
+    - step: 3
+      action: 實驗室確認
+      details: 進行輸血反應相關實驗室檢查
+      findings:
+        - 直接Coombs試驗
+        - 血漿和尿液游離血紅素
+        - 膽紅素變化
+        - 重複交叉配血試驗
+clinicalPearls:
+  - 貓的 B 型血有高力價的天然抗 A 抗體——B 型貓首次接受 A 型血即可發生致命溶血反應，因此貓輸血前必須做血型鑑定
+  - 犬首次輸血通常不會有嚴重溶血反應（缺乏預存抗體），但 4 天後抗體產生使第二次輸血風險大增
+  - 輸血開始後的前 15 分鐘以低速輸注（1 mL/kg/hr），密切觀察是否有反應
+  - 發燒是最常見的輸血反應，但不能僅因發燒就假設無大礙——需排除溶血和敗血症
+monitoringItems:
+  - 輸血期間每 15-30 分鐘監測體溫、心率、呼吸頻率
+  - 輸血前後 PCV/TS 和血漿顏色比較
+  - 尿液顏色和尿量監測
+  - 嚴重反應後追蹤凝血功能和腎功能 24-48 小時
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+ddxSource: book

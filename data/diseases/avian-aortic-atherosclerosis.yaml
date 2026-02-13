@@ -3,18 +3,19 @@ nameEn: Avian Aortic Atherosclerosis
 nameZh: 禽類主動脈粥狀硬化
 bodySystem: cardiac
 description: 禽類主動脈粥狀硬化為鳥類大血管壁脂質沉積與粥狀斑塊形成的慢性疾病，好發於老年鸚鵡，特別是灰鸚鵡與亞馬遜鸚鵡。可導致血管狹窄、破裂出血或血栓形成。
-
 aliases:
-  - { alias: 鳥類動脈硬化, language: zh }
-  - { alias: 禽粥狀動脈硬化, language: zh }
-  - { alias: Atherosclerosis in parrots, language: en }
-  - { alias: Avian arteriosclerosis, language: en }
-
+  - alias: 鳥類動脈硬化
+    language: zh
+  - alias: 禽粥狀動脈硬化
+    language: zh
+  - alias: Atherosclerosis in parrots
+    language: en
+  - alias: Avian arteriosclerosis
+    language: en
 species:
   - speciesCommon: bird
     prevalence: moderate
     notes: 灰鸚鵡、亞馬遜鸚鵡、巴丹鸚鵡為高風險物種。高脂飲食、缺乏運動與高齡為主要風險因子。發病率隨年齡增加。
-
 etiology:
   categories:
     - name: 風險因素
@@ -31,7 +32,6 @@ etiology:
         - 粥狀斑塊形成
         - 血管壁鈣化
         - 管腔狹窄或血栓形成
-
 clinicalSigns:
   early:
     - 多數無明顯症狀（潛伏性疾病）
@@ -43,21 +43,19 @@ clinicalSigns:
     - 後肢缺血性壞死（血栓）
     - 中風症狀（神經缺損）
     - 心臟衰竭表現
-
 diagnosis:
   primaryTests:
     - name: 血液生化
-      notes: "膽固醇與三酸甘油酯升高。總膽固醇 >300 mg/dL 為風險因子"
+      notes: 膽固醇與三酸甘油酯升高。總膽固醇 >300 mg/dL 為風險因子
     - name: 影像學
-      notes: "X光可見主動脈壁鈣化。超音波可評估血管壁厚度與血流速度"
+      notes: X光可見主動脈壁鈣化。超音波可評估血管壁厚度與血流速度
     - name: 心電圖
-      notes: "評估心律異常與心肌缺血徵象"
+      notes: 評估心律異常與心肌缺血徵象
   differentialDiagnoses:
     - 心臟瓣膜疾病
     - 心肌病
     - 主動脈瘤
     - 血栓栓塞症
-
 treatment:
   medical:
     - 低脂飲食轉換（以顆粒飼料取代種子）
@@ -66,41 +64,68 @@ treatment:
     - Omega-3 脂肪酸補充
     - 抗血小板治療（低劑量 aspirin，研究中）
     - 體重管理
-
 prognosis:
-  general: "預後謹慎。粥狀硬化為不可逆病變，但飲食與生活管理可延緩進展。猝死（主動脈破裂）為常見結局。多數病例為剖檢時偶然發現。"
-
+  general: 預後謹慎。粥狀硬化為不可逆病變，但飲食與生活管理可延緩進展。猝死（主動脈破裂）為常見結局。多數病例為剖檢時偶然發現。
 prevention:
   - 低脂均衡飲食（避免高脂種子為主食）
   - 提供運動機會
   - 維持正常體重
   - 定期血脂檢查
   - Omega-3 脂肪酸補充
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
-    title: Shape of the Pulmonary Doppler Sonography Blood Flow Profile of the Congo Grey Parrot (Psittacus erithacus) and the Influence of Heart Disease.
+    title: >-
+      Shape of the Pulmonary Doppler Sonography Blood Flow Profile of the Congo Grey Parrot (Psittacus erithacus) and
+      the Influence of Heart Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12115744/
     type: research
-    pmid: "40431561"
+    pmid: '40431561'
   - sourceOrg: Nutrients
-    title: Dietary Avian Proteins Are Comparable to Soybean Proteins on the Atherosclerosis Development and Fatty Liver Disease in Apoe-Deficient Mice.
+    title: >-
+      Dietary Avian Proteins Are Comparable to Soybean Proteins on the Atherosclerosis Development and Fatty Liver
+      Disease in Apoe-Deficient Mice.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8227708/
     type: research
-    pmid: "34072167"
+    pmid: '34072167'
   - sourceOrg: Journal of virology
-    title: "De Novo Cholesterol Biosynthesis and Its Trafficking in LAMP-1-Positive Vesicles Are Involved in Replication and Spread of Marek's Disease Virus."
+    title: >-
+      De Novo Cholesterol Biosynthesis and Its Trafficking in LAMP-1-Positive Vesicles Are Involved in Replication and
+      Spread of Marek's Disease Virus.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7925193/
     type: research
-    pmid: "32999035"
+    pmid: '32999035'
   - sourceOrg: BMC complementary and alternative medicine
     title: Protective effects of Arctium lappa L. root extracts (AREs) on high fat diet induced quail atherosclerosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4706685/
     type: research
-    pmid: "26746431"
+    pmid: '26746431'
   - sourceOrg: Physiological research
     title: Experimental models of hyperlipoproteinemia and atherosclerosis.
     url: https://pubmed.ncbi.nlm.nih.gov/28379031/
     type: review
-    pmid: "28379031"
+    pmid: '28379031'
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類主動脈粥狀硬化 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液生化
+          notes: 膽固醇與三酸甘油酯升高。總膽固醇 >300 mg/dL 為風險因子
+        - name: 影像學
+          notes: X光可見主動脈壁鈣化。超音波可評估血管壁厚度與血流速度
+        - name: 心電圖
+          notes: 評估心律異常與心肌缺血徵象
+ddxSource: auto-generated

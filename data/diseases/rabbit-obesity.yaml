@@ -3,18 +3,18 @@ nameEn: Rabbit Obesity
 nameZh: 兔肥胖症
 bodySystem: metabolic
 description: 家兔因過度餵食、運動不足導致的體重過重與體脂肪過多。肥胖為多種嚴重併發症（脂肪肝、妊娠毒血症、蠅蛆症、足底皮膚炎、消化道停滯）的主要風險因素，嚴重影響兔的健康與壽命。
-
 aliases:
-  - { alias: 兔過胖, language: zh }
-  - { alias: 兔體重過重, language: zh }
-  - { alias: Rabbit Overweight, language: en }
-
+  - alias: 兔過胖
+    language: zh
+  - alias: 兔體重過重
+    language: zh
+  - alias: Rabbit Overweight
+    language: en
 species:
   - speciesCommon: rabbit
     speciesScientific: Oryctolagus cuniculus
     prevalence: common
     notes: 家兔肥胖率極高，部分統計超過 30%。絕育後、活動量不足、過多顆粒飼料/零食為主因。矮種品種 (Netherland Dwarf) 因體型小，少量過食即顯著過重。
-
 etiology:
   categories:
     - name: 飲食因素
@@ -33,7 +33,6 @@ etiology:
         - 品種差異（部分品種易胖）
         - 年齡增長代謝率下降
         - 遺傳因素
-
 clinicalSigns:
   early:
     - 體重增加
@@ -53,22 +52,20 @@ clinicalSigns:
     - 關節負荷過重（退化性關節病）
     - 呼吸困難（腹腔脂肪壓迫橫膈膜）
     - 麻醉風險顯著增加
-
 diagnosis:
   primaryTests:
     - name: 體重評估
-      notes: "與品種標準體重比較。無固定品種兔以 Body Condition Score (BCS 1-5) 評估，目標 BCS 3"
+      notes: 與品種標準體重比較。無固定品種兔以 Body Condition Score (BCS 1-5) 評估，目標 BCS 3
     - name: 體態評分 (BCS)
-      notes: "觸診肋骨覆蓋脂肪厚度、腰部線條、腹部脂肪。BCS 4-5 為過重/肥胖"
+      notes: 觸診肋骨覆蓋脂肪厚度、腰部線條、腹部脂肪。BCS 4-5 為過重/肥胖
   imaging:
     - name: 腹部 X 光
-      notes: "評估腹腔脂肪量、肝臟大小。排除其他腹部異常"
+      notes: 評估腹腔脂肪量、肝臟大小。排除其他腹部異常
   additional:
     - 生化（肝指數——排除脂肪肝）
     - 甲狀腺功能（兔甲狀腺功能低下罕見，但可排除）
     - 糞便檢查（排除寄生蟲）
     - 足底檢查（壓瘡評估）
-
 treatment:
   principles:
     - 逐漸減重（過快減重可誘發脂肪肝！）
@@ -76,48 +73,86 @@ treatment:
     - 增加活動量
     - 目標每週減重 1-2% 體重
   general:
-    - "飲食調整：無限供應禾本科乾草 (timothy, orchard grass)——佔飲食 80% 以上"
-    - "限制顆粒飼料：成兔每天 1/4 杯 (約 25 g) / 2.5 kg 體重"
-    - "停止所有零食、穀物、水果"
-    - "適量低糖蔬菜（1-2 杯/天切碎的深色葉菜）"
-    - "逐漸減少飼料量（每週減 10%，非突然斷糧——避免厭食）"
-    - "增加活動空間：至少每天 3-4 小時自由活動"
-    - "環境豐富化：隧道、挖掘箱、覓食玩具"
-    - "定期體重監測（每週秤重）"
-    - "絕對避免突然斷食——兔禁食超過 12 小時即有脂肪肝風險"
-    - "會陰部清潔護理（無法自行清潔時飼主需協助）"
-
+    - 飲食調整：無限供應禾本科乾草 (timothy, orchard grass)——佔飲食 80% 以上
+    - 限制顆粒飼料：成兔每天 1/4 杯 (約 25 g) / 2.5 kg 體重
+    - 停止所有零食、穀物、水果
+    - 適量低糖蔬菜（1-2 杯/天切碎的深色葉菜）
+    - 逐漸減少飼料量（每週減 10%，非突然斷糧——避免厭食）
+    - 增加活動空間：至少每天 3-4 小時自由活動
+    - 環境豐富化：隧道、挖掘箱、覓食玩具
+    - 定期體重監測（每週秤重）
+    - 絕對避免突然斷食——兔禁食超過 12 小時即有脂肪肝風險
+    - 會陰部清潔護理（無法自行清潔時飼主需協助）
 prognosis: 配合飲食調整與運動增加，多數兔可在數月內達到理想體重。主要風險在於減重過程中的厭食——任何時候兔超過 12 小時不進食都需立即就醫。長期肥胖已造成的關節損傷可能不可逆。飼主教育與長期配合為成功關鍵。
-
 guidelineRefs:
   - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
     title: Nutrition and weight management in rabbits
     url: https://pubmed.ncbi.nlm.nih.gov/24157571/
     type: review
-    pmid: "24157571"
+    pmid: '24157571'
   - sourceOrg: Journal of Exotic Pet Medicine
     title: Obesity in pet rabbits
     url: https://pubmed.ncbi.nlm.nih.gov/25015871/
     type: review
-    pmid: "25015871"
+    pmid: '25015871'
   - sourceOrg: Psychology research and behavior management
-    title: "Mitigating Harms of Social Media for Adolescent Body Image and Eating Disorders: A Review."
+    title: 'Mitigating Harms of Social Media for Adolescent Body Image and Eating Disorders: A Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11229793/
     type: review
-    pmid: "38978847"
+    pmid: '38978847'
     relevance: primary
   - sourceOrg: The Canadian journal of cardiology
-    title: "Role of Hyperinsulinemia and Insulin Resistance in Hypertension: Metabolic Syndrome Revisited."
+    title: 'Role of Hyperinsulinemia and Insulin Resistance in Hypertension: Metabolic Syndrome Revisited.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7219403/
     type: review
-    pmid: "32389340"
+    pmid: '32389340'
     relevance: primary
   - sourceOrg: International journal of molecular sciences
     title: Large Animal Models for Investigating Cell Therapies of Stress Urinary Incontinence.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8201285/
     type: review
-    pmid: "34198749"
+    pmid: '34198749'
     relevance: primary
 pubmedQueries:
   - query: '"obesity" AND rabbit AND ("nutrition" OR "weight management" OR "diet")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-gain
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔肥胖症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-gain 相關症狀
+        - dyspnoea 相關症狀
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 體重評估
+          notes: 與品種標準體重比較。無固定品種兔以 Body Condition Score (BCS 1-5) 評估，目標 BCS 3
+        - name: 體態評分 (BCS)
+          notes: 觸診肋骨覆蓋脂肪厚度、腰部線條、腹部脂肪。BCS 4-5 為過重/肥胖
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 生化（肝指數——排除脂肪肝）
+        - 甲狀腺功能（兔甲狀腺功能低下罕見，但可排除）
+        - 糞便檢查（排除寄生蟲）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 逐漸減重（過快減重可誘發脂肪肝！）
+        - 飲食調整為核心
+        - 增加活動量
+ddxSource: auto-generated

@@ -3,18 +3,18 @@ nameEn: Avian Malnutrition Seed Diet
 nameZh: 鳥類種子飲食營養不良
 bodySystem: metabolic
 description: 單純種子飲食導致的營養不良是寵物鳥常見問題,種子高脂低鈣缺乏多種維生素和礦物質。長期餵食可導致肥胖、脂肪肝、維生素A缺乏和骨質疏鬆,鸚鵡科尤其常見。
-
 aliases:
-  - { alias: 種子飲食症候群, language: zh }
-  - { alias: All Seed Diet Syndrome, language: en }
-  - { alias: Seed Junkie Syndrome, language: en }
-
+  - alias: 種子飲食症候群
+    language: zh
+  - alias: All Seed Diet Syndrome
+    language: en
+  - alias: Seed Junkie Syndrome
+    language: en
 species:
   - speciesCommon: bird
     speciesScientific: Aves
     prevalence: common
     notes: 寵物鸚鵡和文鳥最常見,飼主常誤認種子為完整飲食
-
 etiology:
   categories:
     - name: 營養缺乏
@@ -28,7 +28,6 @@ etiology:
         - 脂肪含量過高(>50%)
         - 磷過多導致鈣磷比失衡
         - 熱量過剩導致肥胖
-
 clinicalSigns:
   early:
     - 羽毛黯淡無光澤
@@ -42,22 +41,20 @@ clinicalSigns:
     - 骨折易發(骨質疏鬆)
     - 脂肪肝導致黃疸和凝血異常
     - 免疫力下降反覆感染
-
 diagnosis:
   primaryTests:
     - name: 飲食史評估
-      notes: "詳細記錄種子種類、攝取比例和其他食物"
+      notes: 詳細記錄種子種類、攝取比例和其他食物
     - name: 血液生化
-      notes: "AST/ALT升高(肝病)、低血鈣、高膽固醇和三酸甘油酯"
+      notes: AST/ALT升高(肝病)、低血鈣、高膽固醇和三酸甘油酯
     - name: 體態評分
-      notes: "評估體重和體脂分佈,龍骨突可觸及程度"
+      notes: 評估體重和體脂分佈,龍骨突可觸及程度
     - name: X光檢查
-      notes: "評估肝臟大小、骨密度和脂肪沉積"
+      notes: 評估肝臟大小、骨密度和脂肪沉積
   differentialDiagnoses:
     - 甲狀腺功能低下
     - 肝臟疾病(其他病因)
     - 代謝性骨病
-
 treatment:
   medical:
     - 逐步轉換至滋養丸(pellet)飲食,混合比例每週增加10-20%
@@ -67,10 +64,8 @@ treatment:
     - 限制種子攝取至總飲食10-20%以下
     - 增加運動和飛行機會促進減重
     - 必要時使用肝臟保護劑(Milk thistle)
-
 prognosis:
-  general: "早期發現並成功轉換飲食預後良好,但需耐心數月至一年。已發展脂肪肝或嚴重肥胖的個體預後謹慎,可能需長期管理。最大挑戰是鳥類對新食物的抗拒,需飼主持續配合。"
-
+  general: 早期發現並成功轉換飲食預後良好,但需耐心數月至一年。已發展脂肪肝或嚴重肥胖的個體預後謹慎,可能需長期管理。最大挑戰是鳥類對新食物的抗拒,需飼主持續配合。
 prevention:
   - 從幼鳥開始提供多樣化飲食
   - 滋養丸應佔總飲食60-80%
@@ -78,3 +73,33 @@ prevention:
   - 種子僅作為零食(不超過20%)
   - 定期體重監測
   - 飼主教育飲食均衡重要性
+associatedSymptoms:
+  - symptomId: weakness
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: weight-gain
+    frequency: common
+  - symptomId: jaundice
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 鳥類種子飲食營養不良 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weakness 相關症狀
+        - dyspnoea 相關症狀
+        - weight-gain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 飲食史評估
+          notes: 詳細記錄種子種類、攝取比例和其他食物
+        - name: 血液生化
+          notes: AST/ALT升高(肝病)、低血鈣、高膽固醇和三酸甘油酯
+        - name: 體態評分
+          notes: 評估體重和體脂分佈,龍骨突可觸及程度
+ddxSource: auto-generated

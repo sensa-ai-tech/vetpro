@@ -3,13 +3,15 @@ nameEn: Uveal Melanoma
 nameZh: 葡萄膜黑色素瘤
 bodySystem: ophthalmology
 description: 起源於葡萄膜 (虹膜、睫狀體、脈絡膜) 黑色素細胞的腫瘤。犬的葡萄膜黑色素瘤多為良性行為，貓的虹膜黑色素瘤則有惡性傾向且可轉移。需與貓的良性虹膜黑色素沉著 (iris melanosis) 鑑別。
-
 aliases:
-  - { alias: Iris Melanoma, language: en }
-  - { alias: Ciliary Body Melanoma, language: en }
-  - { alias: 虹膜黑色素瘤, language: zh }
-  - { alias: 葡萄膜黑色素細胞瘤, language: zh }
-
+  - alias: Iris Melanoma
+    language: en
+  - alias: Ciliary Body Melanoma
+    language: en
+  - alias: 虹膜黑色素瘤
+    language: zh
+  - alias: 葡萄膜黑色素細胞瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓虹膜黑色素瘤惡性率高 (瀰漫性虹膜黑色素瘤)。可轉移至肝臟。
-
 etiology:
   categories:
     - name: 腫瘤性
@@ -25,7 +26,6 @@ etiology:
         - 黑色素細胞增生與惡性轉化
         - 犬多為良性黑色素細胞瘤 (melanocytoma)
         - 貓瀰漫性虹膜黑色素瘤可能從 iris melanosis 進展
-
 clinicalSigns:
   early:
     - 虹膜色素斑 (局部或瀰漫性)
@@ -36,7 +36,6 @@ clinicalSigns:
     - 續發性青光眼 (房角阻塞)
     - 前房出血 (hyphema)
     - 虹膜形狀明顯改變
-
 diagnosis:
   primaryTests:
     - name: 裂隙燈檢查
@@ -45,7 +44,6 @@ diagnosis:
       notes: 續發性青光眼篩檢
     - name: 眼部超音波 / UBM
       notes: 評估睫狀體侵犯與腫塊大小
-
 treatment:
   principles:
     - 犬良性腫瘤可監測追蹤
@@ -56,41 +54,80 @@ treatment:
     - 犬續發性青光眼：眼球摘除
     - 貓瀰漫性虹膜黑色素瘤：眼球摘除送病理
     - 貓術後分期檢查 (腹部超音波評估肝轉移)
-
 prognosis: 犬葡萄膜黑色素瘤多數良性，預後良好。貓瀰漫性虹膜黑色素瘤為惡性，早期摘除預後中等；延遲治療轉移率增加，預後不良。
-
-
 guidelineRefs:
-  - sourceOrg: "Medical hypothesis, discovery &amp; innovation ophthalmology journal"
-    title: "Canonical and noncanonical NF-&#x3ba;B signaling in uveal melanoma: mechanisms, microenvironment, and therapeutic modulation."
+  - sourceOrg: Medical hypothesis, discovery &amp; innovation ophthalmology journal
+    title: >-
+      Canonical and noncanonical NF-&#x3ba;B signaling in uveal melanoma: mechanisms, microenvironment, and therapeutic
+      modulation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12840573/
     type: review
-    pmid: "41608133"
+    pmid: '41608133'
     relevance: primary
   - sourceOrg: Exploration of targeted anti-tumor therapy
-    title: "Exploring recent advances in signaling pathways and hallmarks of uveal melanoma: a comprehensive review."
+    title: 'Exploring recent advances in signaling pathways and hallmarks of uveal melanoma: a comprehensive review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11964777/
     type: review
-    pmid: "40177537"
+    pmid: '40177537'
     relevance: primary
   - sourceOrg: Veterinary sciences
-    title: "Feline Uveal Melanoma Review: Our Current Understanding and Recent Research Advances."
+    title: 'Feline Uveal Melanoma Review: Our Current Understanding and Recent Research Advances.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8877522/
     type: review
-    pmid: "35202299"
+    pmid: '35202299'
     relevance: primary
   - sourceOrg: Molecules (Basel, Switzerland)
     title: Development of Targeted Alpha Particle Therapy for Solid Tumors.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6930656/
     type: review
-    pmid: "31779154"
+    pmid: '31779154'
     relevance: supporting
   - sourceOrg: International journal of molecular sciences
-    title: Transplantable Melanomas in Hamsters and Gerbils as Models for Human Melanoma. Sensitization in Melanoma Radiotherapy-From Animal Models to Clinical Trials.
+    title: >-
+      Transplantable Melanomas in Hamsters and Gerbils as Models for Human Melanoma. Sensitization in Melanoma
+      Radiotherapy-From Animal Models to Clinical Trials.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5979283/
     type: review
-    pmid: "29614755"
+    pmid: '29614755'
     relevance: supporting
 pubmedQueries:
   - query: '"uveal melanoma" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 虹膜黑色素瘤 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估虹膜表面色素變化，區分良性虹膜黑色素沉著與惡性黑色素瘤，犬大多良性而貓大多惡性
+      findings:
+        - 虹膜表面局部色素增加或腫塊
+        - 瞳孔形狀改變（變形瞳孔）
+        - 貓的虹膜色素擴散（瀰漫性虹膜黑色素瘤）
+    - step: 2
+      action: 眼科詳細檢查
+      details: 進行裂隙燈檢查評估腫瘤深度和範圍，隅角鏡檢查評估前房角浸潤，監測眼壓
+      findings:
+        - 裂隙燈顯示虹膜增厚或隆起
+        - 隅角鏡可見前房角色素浸潤
+        - 眼壓升高提示繼發性青光眼
+    - step: 3
+      action: 影像學與確診
+      details: 進行眼部超音波評估腫瘤範圍，必要時眼球摘除後組織病理學確診
+      findings:
+        - 超音波顯示虹膜/睫狀體腫塊
+        - 組織病理學確認黑色素瘤類型及惡性程度
+        - 貓應評估轉移風險
+clinicalPearls:
+  - 貓的虹膜「雀斑」需定期監測，可能進展為惡性黑色素瘤
+  - 貓虹膜色素擴展、虹膜表面隆起或瞳孔變形是惡性化的警示徵象
+  - 犬的虹膜黑色素瘤多為良性，不要急於摘除眼球
+  - 貓的早期眼球摘除優於等待腫瘤進展
+monitoringItems:
+  - 定期虹膜攝影比較
+  - 眼壓變化
+  - 瞳孔形狀
+  - 貓：胸腔X光和腹部超音波（每3-6個月）
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+ddxSource: book

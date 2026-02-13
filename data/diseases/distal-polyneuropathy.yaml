@@ -3,11 +3,11 @@ nameEn: Distal Polyneuropathy
 nameZh: Distal Polyneuropathy
 bodySystem: neurology
 description: 神經系統疾病,導致運動、感覺或認知功能障礙。需完整神經學檢查與影像學評估確診。
-
 aliases:
-  - { alias: Distal Polyneuropathy, language: zh }
-  - { alias: Distal Polyneuropathy, language: en }
-
+  - alias: Distal Polyneuropathy
+    language: zh
+  - alias: Distal Polyneuropathy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 神經元異常放電
       examples:
         - 髓鞘或軸突病變
         - 腦血管疾病
-
 clinicalSigns:
   early:
     - 神經功能輕度異常
@@ -32,25 +30,70 @@ clinicalSigns:
   progressive:
     - 神經缺損加重
     - 癱瘓或意識障礙
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: MRI或CT
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 抗癲癇藥物(Phenobarbital 2-3 mg/kg PO q12h)
     - 支持性治療
-
 prognosis:
-  general: "預後取決於根本病因與治療反應。早期診斷與適當治療可改善預後。"
-
+  general: 預後取決於根本病因與治療反應。早期診斷與適當治療可改善預後。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
+diagnosticAlgorithm:
+  title: 犬遠端多發性神經病變 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估遠端為主的對稱性神經病變症狀
+      findings:
+        - 遠端肢體無力
+        - 指甲過度磨損
+        - 四肢遠端肌肉萎縮
+        - 漸進性病程
+    - step: 2
+      action: 神經學檢查
+      details: 進行完整神經學檢查評估分布模式
+      findings:
+        - 遠端反射減退
+        - 本體感覺缺陷
+        - 肌張力降低
+        - 對稱性分布
+    - step: 3
+      action: 電生理學與病因篩檢
+      details: 進行肌電圖、神經傳導速度和代謝篩檢
+      findings:
+        - 遠端神經傳導速度下降
+        - 自發性電位活動
+        - 甲狀腺和血糖檢查
+        - 排除毒物暴露
+    - step: 4
+      action: 神經活檢確診
+      details: 進行周邊神經和肌肉活檢
+      findings:
+        - 遠端軸索退化
+        - 脫髓鞘變化
+        - 排除炎症性病因
+        - 確認退化性vs免疫介導性
+clinicalPearls:
+  - 犬的「plantigrade stance」（跗關節完全觸地）是遠端神經病變的高度特徵性表現
+  - 指甲磨損不均且無明確創傷史 — 應考慮早期遠端神經病變
+  - 甲狀腺功能低下是犬最常見的可治療性多發性神經病變病因之一
+  - EMG 及神經傳導速度檢查需在專門的獸醫神經科中心進行
+monitoringItems:
+  - 每 4-8 週評估遠端肌力及感覺功能
+  - 記錄功能性能力（行走距離、跌倒頻率）
+  - 若有甲狀腺素治療，每 4-6 週監測 T4 濃度
+  - 定期檢查足部皮膚完整性（感覺缺失導致無痛性損傷風險）
+associatedSymptoms:
+  - symptomId: cachexia-muscle-wasting
+    frequency: common
+ddxSource: book

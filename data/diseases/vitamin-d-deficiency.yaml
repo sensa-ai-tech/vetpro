@@ -3,13 +3,15 @@ nameEn: Vitamin D Deficiency
 nameZh: 維生素 D 缺乏症
 bodySystem: metabolic
 description: 維生素 D 攝入不足或代謝異常導致的營養缺乏，影響鈣磷代謝與骨骼健康。犬貓不同於人類，主要依賴飲食攝取維生素 D 而非皮膚合成，因此飲食中缺乏維生素 D 是主要風險因素。
-
 aliases:
-  - { alias: 維生素丁缺乏, language: zh }
-  - { alias: 佝僂病, language: zh }
-  - { alias: Hypovitaminosis D, language: en }
-  - { alias: Rickets, language: en }
-
+  - alias: 維生素丁缺乏
+    language: zh
+  - alias: 佝僂病
+    language: zh
+  - alias: Hypovitaminosis D
+    language: en
+  - alias: Rickets
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓幾乎完全依賴飲食獲取維生素 D。室內貓更需注意飲食中維生素 D 充足。
-
 etiology:
   categories:
     - name: 攝入不足
@@ -29,7 +30,6 @@ etiology:
         - 慢性腎病（1,25-dihydroxyvitamin D 活化障礙）
         - 肝臟疾病（25-hydroxylation 障礙）
         - 腸道吸收不良
-
 clinicalSigns:
   early:
     - 生長遲緩
@@ -40,14 +40,12 @@ clinicalSigns:
     - 骨軟化症（成犬：骨折風險增加）
     - 低鈣血症（肌肉震顫、癲癇）
     - 牙齒發育不良
-
 diagnosis:
   primaryTests:
     - name: 血清 25-hydroxyvitamin D
       notes: 25(OH)D 為維生素 D 營養狀態最佳指標。<20 ng/mL 為缺乏。
     - name: 鈣磷及 PTH
       notes: 低鈣、低磷、PTH 升高（繼發性副甲狀腺功能亢進）。ALP 升高（骨骼代謝活躍）。
-
 treatment:
   principles:
     - 維生素 D 補充
@@ -60,41 +58,77 @@ treatment:
     - 轉換至營養均衡商業飼料
     - 慢性腎病需使用活性維生素 D（Calcitriol）
     - 定期監測 25(OH)D、鈣、磷及 PTH
-
 prognosis: 幼犬佝僂病如在骨骼生長板閉合前診斷並治療，骨骼畸形可部分改善。成犬骨軟化症補充後骨密度可恢復。維生素 D 過量補充可導致高鈣血症腎衰竭，需謹慎監測。
-
-
 guidelineRefs:
   - sourceOrg: Nutrients
-    title: "Perspective: Vitamin D Deficiency Relationship to Initiation of Diseases."
+    title: 'Perspective: Vitamin D Deficiency Relationship to Initiation of Diseases.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12430116/
     type: review
-    pmid: "40944288"
+    pmid: '40944288'
     relevance: primary
   - sourceOrg: Dentistry journal
     title: Vitamin D in Peri-Implant and Periodontal Tissue.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12564239/
     type: review
-    pmid: "41149095"
+    pmid: '41149095'
     relevance: primary
   - sourceOrg: Cells
-    title: Vitamin D Influences the Activity of Mast Cells in Allergic Manifestations and Potentiates Their Effector Functions against Pathogens.
+    title: >-
+      Vitamin D Influences the Activity of Mast Cells in Allergic Manifestations and Potentiates Their Effector
+      Functions against Pathogens.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10528041/
     type: review
-    pmid: "37759494"
+    pmid: '37759494'
     relevance: primary
   - sourceOrg: Nutrients
     title: The Possible Influence of Vitamin D Levels on the Development of Atrial Fibrillation-An Update.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10302036/
     type: review
-    pmid: "37375629"
+    pmid: '37375629'
     relevance: primary
   - sourceOrg: European journal of clinical nutrition
-    title: "Global Perspective of the Vitamin D Status of African-Caribbean Populations: A Systematic Review and Meta-analysis."
+    title: >-
+      Global Perspective of the Vitamin D Status of African-Caribbean Populations: A Systematic Review and
+      Meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8993683/
     type: review
-    pmid: "34282293"
+    pmid: '34282293'
     relevance: primary
 pubmedQueries:
   - query: '"Vitamin D Deficiency" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: failure-to-grow
+    frequency: uncommon
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 維生素 D 缺乏症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - failure-to-grow 相關症狀
+        - trembling 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清 25-hydroxyvitamin D
+          notes: 25(OH)D 為維生素 D 營養狀態最佳指標。<20 ng/mL 為缺乏。
+        - name: 鈣磷及 PTH
+          notes: 低鈣、低磷、PTH 升高（繼發性副甲狀腺功能亢進）。ALP 升高（骨骼代謝活躍）。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 維生素 D 補充
+        - 矯正鈣磷失衡
+        - 改善飲食
+ddxSource: auto-generated

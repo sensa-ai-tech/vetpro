@@ -3,12 +3,13 @@ nameEn: Crown Root Fracture
 nameZh: 牙冠牙根骨折
 bodySystem: dental
 description: 牙冠牙根骨折是指骨折線同時涉及牙冠和牙根的複雜性骨折,通常伴隨牙髓暴露。多因嚴重創傷造成,骨折線延伸至齦下,治療困難,多數需拔牙。
-
 aliases:
-  - { alias: 冠根聯合骨折, language: zh }
-  - { alias: Complex Crown Fracture, language: en }
-  - { alias: Crown-Root Split, language: en }
-
+  - alias: 冠根聯合骨折
+    language: zh
+  - alias: Complex Crown Fracture
+    language: en
+  - alias: Crown-Root Split
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓罕見但嚴重
-
 etiology:
   categories:
     - name: 嚴重創傷
@@ -27,7 +27,6 @@ etiology:
         - 高處墜落
         - 被踢或重擊
         - 咬咬過硬物體導致劈裂
-
 clinicalSigns:
   early:
     - 明顯牙冠斷裂
@@ -39,19 +38,17 @@ clinicalSigns:
     - 牙冠碎片鬆動
     - 牙齦腫脹和感染
     - 拒食
-
 diagnosis:
   primaryTests:
     - name: 視診
-      notes: "明顯牙冠骨折,骨折線延伸至齦下"
+      notes: 明顯牙冠骨折,骨折線延伸至齦下
     - name: 牙科X光
-      notes: "顯示骨折線延伸至牙根,評估骨折深度"
+      notes: 顯示骨折線延伸至牙根,評估骨折深度
     - name: 探診
-      notes: "評估齦下骨折範圍"
+      notes: 評估齦下骨折範圍
   differentialDiagnoses:
     - 單純牙冠骨折
     - 垂直牙根裂
-
 treatment:
   medical:
     - 多數情況建議拔牙
@@ -60,11 +57,31 @@ treatment:
     - 術後抗生素Amoxicillin-Clavulanate 12.5-25 mg/kg PO BID
     - 軟食2-4週
     - 定期追蹤評估
-
 prognosis:
-  general: "預後謹慎至不良。骨折延伸至齦下深處者難以修復,拔牙為最佳選擇。嘗試保留牙齒的成功率低,且需複雜昂貴的治療,復發和感染風險高。"
-
+  general: 預後謹慎至不良。骨折延伸至齦下深處者難以修復,拔牙為最佳選擇。嘗試保留牙齒的成功率低,且需複雜昂貴的治療,復發和感染風險高。
 prevention:
   - 避免高風險活動
   - 不提供過硬咀嚼物
   - 交通安全
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 牙冠牙根骨折 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 視診
+          notes: 明顯牙冠骨折,骨折線延伸至齦下
+        - name: 牙科X光
+          notes: 顯示骨折線延伸至牙根,評估骨折深度
+        - name: 探診
+          notes: 評估齦下骨折範圍
+ddxSource: auto-generated

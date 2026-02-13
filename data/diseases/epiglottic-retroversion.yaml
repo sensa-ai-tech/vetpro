@@ -3,12 +3,13 @@ nameEn: Epiglottic Retroversion
 nameZh: 會厭翻轉
 bodySystem: respiratory
 description: 會厭翻轉為會厭軟骨向後方翻轉或塌陷，阻塞喉部入口導致吸氣性呼吸困難。可為原發性（會厭軟骨鬆弛）或繼發於短頭犬呼吸道症候群。在嚴重呼吸困難發作時，會厭被吸入聲門上方導致急性上呼吸道阻塞。
-
 aliases:
-  - { alias: 會厭後翻, language: zh }
-  - { alias: Epiglottic Collapse, language: en }
-  - { alias: Epiglottic Entrapment, language: en }
-
+  - alias: 會厭後翻
+    language: zh
+  - alias: Epiglottic Collapse
+    language: en
+  - alias: Epiglottic Entrapment
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻極為罕見。
-
 etiology:
   categories:
     - name: 原發性
@@ -29,7 +29,6 @@ etiology:
         - 喉麻痺
         - 喉部手術後併發症
         - 慢性上呼吸道阻塞
-
 clinicalSigns:
   early:
     - 間歇性吸氣性喘鳴（stridor）
@@ -39,14 +38,12 @@ clinicalSigns:
     - 發紺
     - 虛脫（急性阻塞時）
     - 呼吸性窘迫
-
 diagnosis:
   primaryTests:
     - name: 喉鏡檢查（Laryngoscopy）
       notes: 確診必須。輕度麻醉下直接觀察會厭位置與運動。會厭翻轉時可見會厭向後方塌陷覆蓋聲門。需同時評估喉麻痺與其他喉部異常。
     - name: 頸部 X 光
       notes: 側位片可能顯示會厭位置異常。透視檢查（fluoroscopy）可動態評估呼吸時會厭運動。
-
 treatment:
   principles:
     - 急性呼吸困難需緊急處理
@@ -57,16 +54,48 @@ treatment:
     - 會厭固定術（epiglottopexy，將會厭縫合固定於舌基部）
     - 會厭部分切除術（partial epiglottectomy）
     - 同時矯正其他上呼吸道阻塞（軟顎修剪、鼻孔擴大）
-
 prognosis: 手術矯正後預後中等至良好。epiglottopexy 成功率較高。需注意術後吸入性肺炎風險。合併其他喉部疾病（喉麻痺）者管理較困難。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Retrospective Study of Chronic Coughing in Dogs in a Referral Centre in the UK: 329 Cases (2012-2021)."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Retrospective Study of Chronic Coughing in Dogs in a Referral Centre in the UK: 329 Cases (2012-2021).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11758286/
     type: research
-    pmid: "39858253"
+    pmid: '39858253'
 pubmedQueries:
   - query: '"epiglottic retroversion" OR "epiglottic collapse" AND (veterinary OR canine) AND ("surgery" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: stertor-stridor
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 會厭翻轉 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - weakness 相關症狀
+        - stertor-stridor 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 喉鏡檢查（Laryngoscopy）
+          notes: 確診必須。輕度麻醉下直接觀察會厭位置與運動。會厭翻轉時可見會厭向後方塌陷覆蓋聲門。需同時評估喉麻痺與其他喉部異常。
+        - name: 頸部 X 光
+          notes: 側位片可能顯示會厭位置異常。透視檢查（fluoroscopy）可動態評估呼吸時會厭運動。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 急性呼吸困難需緊急處理
+        - 手術矯正為確定性治療
+        - 合併短頭犬呼吸道症候群需同時處理
+ddxSource: auto-generated

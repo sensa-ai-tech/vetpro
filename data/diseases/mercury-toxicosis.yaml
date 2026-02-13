@@ -3,11 +3,11 @@ nameEn: Mercury Toxicosis
 nameZh: 汞中毒
 bodySystem: toxicology
 description: 汞 (mercury) 中毒在犬貓中罕見但曾有報告。有機汞（甲基汞）主要影響中樞神經系統，無機汞主要損傷腎臟與消化道。貓食用高汞含量魚類為慢性暴露途徑。汞溫度計破碎為急性暴露的偶見來源。
-
 aliases:
-  - { alias: 水銀中毒, language: zh }
-  - { alias: Mercury Poisoning, language: en }
-
+  - alias: 水銀中毒
+    language: zh
+  - alias: Mercury Poisoning
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓長期食用高汞魚類可能慢性蓄積。有機汞引起中樞神經毒性。歷史上著名的「水俣病」即甲基汞經食物鏈造成貓中毒。
-
 etiology:
   categories:
     - name: 汞的形態與毒性
@@ -29,7 +28,6 @@ etiology:
         - 含汞溫度計破碎
         - 環境汙染
         - 含汞消毒劑（已少用）
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -41,7 +39,6 @@ clinicalSigns:
     - 震顫
     - 癲癇
     - 感覺障礙
-
 diagnosis:
   primaryTests:
     - name: 全血汞濃度
@@ -52,22 +49,73 @@ diagnosis:
     - 腎功能（無機汞腎毒性）
     - 神經學檢查
     - MRI（有機汞中樞神經病變）
-
 treatment:
   principles:
     - 螯合劑治療
     - 支持療法
     - 移除暴露來源
   general:
-    - "Succimer (DMSA) 10 mg/kg PO TID × 10 天"
+    - Succimer (DMSA) 10 mg/kg PO TID × 10 天
     - 無機汞腎損傷需 IV 輸液支持
     - 消化道去汙染（催吐、全腸灌洗）
     - 有機汞中樞神經損傷多為不可逆
     - 飲食更換（避免高汞魚類）
     - 環境除汞
-
 prognosis: 無機汞急性腎損傷適當治療後可能恢復。有機汞引起的中樞神經損傷多為不可逆，預後較差。慢性低劑量暴露停止後可能部分改善。
-
 pubmedQueries:
   - query: '"mercury toxicosis" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: blindness
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 汞中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - ataxia 相關症狀
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 全血汞濃度
+          notes: 全血汞 >0.5 ppm 有臨床意義。有機汞以全血測量最佳
+        - name: 尿液汞濃度
+          notes: 無機汞暴露以尿液汞最能反映體內負荷
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 腎功能（無機汞腎毒性）
+        - 神經學檢查
+        - MRI（有機汞中樞神經病變）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 螯合劑治療
+        - 支持療法
+        - 移除暴露來源
+ddxSource: auto-generated

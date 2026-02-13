@@ -3,11 +3,11 @@ nameEn: Diagnostic Peritoneal Lavage
 nameZh: 診斷性腹膜灌洗
 bodySystem: emergency
 description: 腹部鈍傷時快速診斷腹腔內出血或臟器破裂的技術。注入溫鹽水後抽取分析。
-
 aliases:
-  - { alias: DPL, language: zh }
-  - { alias: Peritoneal Lavage, language: en }
-
+  - alias: DPL
+    language: zh
+  - alias: Peritoneal Lavage
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,29 +17,25 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 同犬
-
 etiology:
   categories:
     - name: 適應症
       examples:
         - 腹部鈍傷、懷疑腹腔內出血或臟器破裂
-
 clinicalSigns:
   early:
     - 腹部創傷史
     - 腹痛、防禦
   progressive:
     - 腹膜炎徵兆
-
 diagnosis:
   primaryTests:
     - name: DPL技術
-      notes: "注入20 mL/kg溫鹽水,抽取分析"
+      notes: 注入20 mL/kg溫鹽水,抽取分析
     - name: 回收液分析
-      notes: "RBC>100000/μL、WBC>500/μL、細菌或植物纖維陽性"
+      notes: RBC>100000/μL、WBC>500/μL、細菌或植物纖維陽性
   differentialDiagnoses:
     - 腹腔積液(其他原因)
-
 treatment:
   medical:
     - 腹部中線置入導管
@@ -47,9 +43,27 @@ treatment:
     - 溫和搖動腹部
     - 抽取回收液送檢
     - 陽性結果需剖腹探查
-
 prognosis:
-  general: "敏感性高,可快速診斷內出血或臟器破裂。"
-
+  general: 敏感性高,可快速診斷內出血或臟器破裂。
 prevention:
   - 避免腹部創傷
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+diagnosticAlgorithm:
+  title: 診斷性腹膜灌洗 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - abdominal-pain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: DPL技術
+          notes: 注入20 mL/kg溫鹽水,抽取分析
+        - name: 回收液分析
+          notes: RBC>100000/μL、WBC>500/μL、細菌或植物纖維陽性
+ddxSource: auto-generated

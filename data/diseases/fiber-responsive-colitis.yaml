@@ -3,11 +3,11 @@ nameEn: Fiber Responsive Colitis
 nameZh: 纖維反應性結腸炎
 bodySystem: gastrointestinal
 description: 纖維反應性結腸炎為犬隻慢性大腸性腹瀉的常見原因，特徵為增加飲食中可溶性纖維含量後臨床症狀即可改善。可能與結腸運動功能失調或腸道微生態有關。為診斷排除性疾病（需排除其他結腸炎原因）。
-
 aliases:
-  - { alias: 纖維反應性大腸炎, language: zh }
-  - { alias: Fiber-Responsive Diarrhea, language: en }
-
+  - alias: 纖維反應性大腸炎
+    language: zh
+  - alias: Fiber-Responsive Diarrhea
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻亦可見纖維反應性結腸症狀。
-
 etiology:
   categories:
     - name: 可能機轉
@@ -24,7 +23,6 @@ etiology:
         - 腸道微生態失衡
         - 短鏈脂肪酸生成不足（結腸細胞能量來源）
         - 可溶性纖維不足
-
 clinicalSigns:
   early:
     - 慢性大腸性腹瀉（少量頻繁、帶黏液）
@@ -34,55 +32,93 @@ clinicalSigns:
     - 偶有便血
     - 體重通常維持正常
     - 間歇性腹部不適
-
 diagnosis:
   primaryTests:
     - name: 排除診斷 + 飲食試驗
       notes: 排除寄生蟲（糞便檢查）、感染性腸炎、食物過敏後，進行高纖維飲食試驗。纖維增加後 1-2 週內症狀改善即可確認診斷。
     - name: 糞便檢查
       notes: 糞便浮游法排除寄生蟲。糞便培養排除病原菌。Giardia 抗原檢測。
-
 treatment:
   principles:
     - 飲食纖維補充為主要治療
     - 可溶性纖維效果通常較好
     - 長期飲食管理
   general:
-    - "可溶性纖維補充：洋車前子（Psyllium）1-3 茶匙/餐混入食物"
+    - 可溶性纖維補充：洋車前子（Psyllium）1-3 茶匙/餐混入食物
     - 高纖維商業處方飲食
     - 南瓜泥（canned pumpkin）1-4 湯匙/餐
     - 益生菌輔助
     - 多數不需要藥物治療
-
 prognosis: 預後極好。多數犬隻在增加飲食纖維後症狀可完全控制。需要長期維持高纖維飲食。停止纖維補充後可能復發。
-
-
 guidelineRefs:
   - sourceOrg: Computational and structural biotechnology journal
-    title: "Advances in gut microbiota functions in inflammatory bowel disease: Dysbiosis, management, cytotoxicity assessment, and therapeutic perspectives."
+    title: >-
+      Advances in gut microbiota functions in inflammatory bowel disease: Dysbiosis, management, cytotoxicity
+      assessment, and therapeutic perspectives.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11925123/
     type: review
-    pmid: "40115534"
+    pmid: '40115534'
   - sourceOrg: National science review
-    title: Chronic neurostimulation of splenic nerve enabled by hydrogel-bioelectronics for wireless electroceutical immunomodulation therapy.
+    title: >-
+      Chronic neurostimulation of splenic nerve enabled by hydrogel-bioelectronics for wireless electroceutical
+      immunomodulation therapy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12831029/
     type: research
-    pmid: "41585589"
+    pmid: '41585589'
   - sourceOrg: Inflammatory bowel diseases
-    title: Attenuation of Colitis-Induced Visceral Hypersensitivity and Pain by Selective Silencing of TRPV1-Expressing Fibers in Rat Colon.
+    title: >-
+      Attenuation of Colitis-Induced Visceral Hypersensitivity and Pain by Selective Silencing of TRPV1-Expressing
+      Fibers in Rat Colon.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11447070/
     type: research
-    pmid: "38478397"
+    pmid: '38478397'
   - sourceOrg: Neural plasticity
-    title: Electroacupuncture Alleviated Referral Hindpaw Hyperalgesia via Suppressing Spinal Long-Term Potentiation (LTP) in TNBS-Induced Colitis Rats.
+    title: >-
+      Electroacupuncture Alleviated Referral Hindpaw Hyperalgesia via Suppressing Spinal Long-Term Potentiation (LTP) in
+      TNBS-Induced Colitis Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6432704/
     type: research
-    pmid: "30984253"
+    pmid: '30984253'
   - sourceOrg: British journal of pharmacology
-    title: Newly developed serine protease inhibitors decrease visceral hypersensitivity in a post-inflammatory rat model for irritable bowel syndrome.
+    title: >-
+      Newly developed serine protease inhibitors decrease visceral hypersensitivity in a post-inflammatory rat model for
+      irritable bowel syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6086981/
     type: research
-    pmid: "29911328"
+    pmid: '29911328'
 pubmedQueries:
   - query: '"fiber-responsive" AND "colitis" AND (veterinary OR canine) AND ("treatment" OR "diet")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: faecal-tenesmus
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 纖維反應性結腸炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - faecal-tenesmus 相關症狀
+        - abdominal-pain 相關症狀
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 排除診斷 + 飲食試驗
+          notes: 排除寄生蟲（糞便檢查）、感染性腸炎、食物過敏後，進行高纖維飲食試驗。纖維增加後 1-2 週內症狀改善即可確認診斷。
+        - name: 糞便檢查
+          notes: 糞便浮游法排除寄生蟲。糞便培養排除病原菌。Giardia 抗原檢測。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 飲食纖維補充為主要治療
+        - 可溶性纖維效果通常較好
+        - 長期飲食管理
+ddxSource: auto-generated

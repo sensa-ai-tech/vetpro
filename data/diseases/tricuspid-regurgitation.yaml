@@ -3,12 +3,13 @@ nameEn: Tricuspid Regurgitation
 nameZh: 三尖瓣閉鎖不全
 bodySystem: cardiac
 description: 三尖瓣無法完全閉合，導致收縮期血流逆流至右心房，引起右心擴張及體循環鬱血。常伴隨肺動脈高壓或僧帽瓣疾病。
-
 aliases:
-  - { alias: 三尖瓣逆流, language: zh }
-  - { alias: Tricuspid Insufficiency, language: en }
-  - { alias: TR, language: en }
-
+  - alias: 三尖瓣逆流
+    language: zh
+  - alias: Tricuspid Insufficiency
+    language: en
+  - alias: TR
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 多因心肌病變引起
-
 etiology:
   categories:
     - name: 繼發性
@@ -32,7 +32,6 @@ etiology:
     - name: 感染性
       examples:
         - 心內膜炎
-
 clinicalSigns:
   early:
     - 輕度運動不耐
@@ -42,64 +41,96 @@ clinicalSigns:
     - 頸靜脈怒張
     - 肝腫大
     - 周邊水腫
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波
-      notes: "評估三尖瓣逆流程度、右心房/右心室大小、肺動脈壓"
+      notes: 評估三尖瓣逆流程度、右心房/右心室大小、肺動脈壓
     - name: 胸部 X 光
-      notes: "右心擴張、後腔靜脈擴張"
+      notes: 右心擴張、後腔靜脈擴張
     - name: 心電圖
-      notes: "右心房擴張 (P 波增高)"
+      notes: 右心房擴張 (P 波增高)
   differentialDiagnoses:
     - 心絲蟲病
     - 肺動脈狹窄
     - 僧帽瓣閉鎖不全
-
 treatment:
   medical:
     - Furosemide 2-4 mg/kg PO q12-24h (控制腹水)
     - Spironolactone 1-2 mg/kg PO q12-24h
     - ACE 抑制劑 (enalapril 0.5 mg/kg PO q12-24h)
     - 治療原發病因 (如心絲蟲、肺動脈高壓)
-
 prognosis:
-  general: "取決於原發病因及嚴重度；繼發性三尖瓣閉鎖不全預後與原發疾病一致；晚期右心衰竭預後不良"
-
+  general: 取決於原發病因及嚴重度；繼發性三尖瓣閉鎖不全預後與原發疾病一致；晚期右心衰竭預後不良
 prevention:
   - 早期診斷及治療肺動脈高壓
   - 定期心絲蟲預防
   - 監測心臟疾病進展
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
-    title: ACVIM consensus statement guidelines for the diagnosis, classification, treatment, and monitoring of pulmonary hypertension in dogs.
+    title: >-
+      ACVIM consensus statement guidelines for the diagnosis, classification, treatment, and monitoring of pulmonary
+      hypertension in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7097566/
     type: consensus
-    pmid: "32065428"
+    pmid: '32065428'
     relevance: primary
   - sourceOrg: Bioengineering (Basel, Switzerland)
-    title: Mechanics of the Tricuspid Valve-From Clinical Diagnosis/Treatment, In-Vivo and In-Vitro Investigations, to Patient-Specific Biomechanical Modeling.
+    title: >-
+      Mechanics of the Tricuspid Valve-From Clinical Diagnosis/Treatment, In-Vivo and In-Vitro Investigations, to
+      Patient-Specific Biomechanical Modeling.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6630695/
     type: review
-    pmid: "31121881"
+    pmid: '31121881'
     relevance: primary
   - sourceOrg: Case reports in veterinary medicine
     title: Valvular Regurgitation and Congestive Heart Failure in an Elderly Dutch Rabbit (Oryctolagus cuniculus).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12752866/
     type: research
-    pmid: "41477563"
+    pmid: '41477563'
     relevance: supporting
   - sourceOrg: Journal of veterinary internal medicine
-    title: Clinical Outcomes of Mitral Valve Repair in Dogs With Pulmonary Hypertension Secondary to Myxomatous Mitral Valve Disease.
+    title: >-
+      Clinical Outcomes of Mitral Valve Repair in Dogs With Pulmonary Hypertension Secondary to Myxomatous Mitral Valve
+      Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12012645/
     type: research
-    pmid: "40260776"
+    pmid: '40260776'
     relevance: supporting
   - sourceOrg: Veterinary sciences
     title: Assessment of Pulmonary Vein Diameters in Cavalier King Charles Spaniels with Myxomatous Mitral Valve Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12299408/
     type: research
-    pmid: "40711275"
+    pmid: '40711275'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 三尖瓣閉鎖不全 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+        - exercise-intolerance 相關症狀
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波
+          notes: 評估三尖瓣逆流程度、右心房/右心室大小、肺動脈壓
+        - name: 胸部 X 光
+          notes: 右心擴張、後腔靜脈擴張
+        - name: 心電圖
+          notes: 右心房擴張 (P 波增高)
+ddxSource: auto-generated

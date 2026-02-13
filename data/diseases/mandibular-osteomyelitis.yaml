@@ -3,11 +3,11 @@ nameEn: Mandibular Osteomyelitis
 nameZh: 下顎骨骨髓炎
 bodySystem: dental
 description: 下顎骨的感染性發炎，常因嚴重牙周病或齒根膿瘍擴展至骨骼引起。可導致病理性下顎骨折。小型犬因下顎骨薄風險較高。
-
 aliases:
-  - { alias: "Jaw Osteomyelitis", language: en }
-  - { alias: "下顎骨感染", language: zh }
-
+  - alias: Jaw Osteomyelitis
+    language: en
+  - alias: 下顎骨感染
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓偶見。
-
 etiology:
   categories:
     - name: 齒源性感染
@@ -23,7 +22,6 @@ etiology:
         - 嚴重牙周病擴展
         - 齒根膿瘍
         - 拔牙後感染
-
 clinicalSigns:
   early:
     - 面部腫脹
@@ -33,14 +31,12 @@ clinicalSigns:
     - 瘻管排膿
     - 下顎不穩定/病理性骨折
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 口腔 X 光 / CT
       notes: 下顎骨溶解與新生骨反應
     - name: 細菌培養
       notes: 骨組織取樣培養
-
 treatment:
   principles:
     - 移除感染源
@@ -52,16 +48,46 @@ treatment:
     - 全身性抗生素 4-6 週
     - 病理性骨折需固定
     - 營養支持（管飼）
-
 prognosis: 及時治療預後中等。延遲治療可能需下顎骨部分切除。病理性骨折癒合困難。
-
-
 guidelineRefs:
   - sourceOrg: International journal of surgery case reports
     title: Secondary mandibular osteomyelitis complicated with a pathological fracture.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11283122/
     type: case-report
-    pmid: "38964230"
+    pmid: '38964230'
 pubmedQueries:
   - query: '"mandibular osteomyelitis" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: common
+  - symptomId: halitosis-stomatitis
+    frequency: common
+diagnosticAlgorithm:
+  title: 下顎骨骨髓炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - dysphagia 相關症狀
+        - halitosis-stomatitis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 口腔 X 光 / CT
+          notes: 下顎骨溶解與新生骨反應
+        - name: 細菌培養
+          notes: 骨組織取樣培養
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 移除感染源
+        - 長期抗生素
+        - 穩定骨折
+ddxSource: auto-generated

@@ -3,11 +3,11 @@ nameEn: Malunion
 nameZh: Malunion
 bodySystem: orthopedic
 description: 骨骼肌肉系統疾病,影響運動功能。需骨科檢查與影像學評估確診並制定治療計劃。
-
 aliases:
-  - { alias: Malunion, language: zh }
-  - { alias: Malunion, language: en }
-
+  - alias: Malunion
+    language: zh
+  - alias: Malunion
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 外傷
       examples:
         - 退化性變化
         - 先天性異常
-
 clinicalSigns:
   early:
     - 跛行
@@ -32,61 +30,80 @@ clinicalSigns:
   progressive:
     - 肌肉萎縮
     - 關節畸形
-
 diagnosis:
   primaryTests:
     - name: 骨科檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: X光(多方位)
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 非類固醇消炎藥(Carprofen 2-4 mg/kg PO q12-24h)
     - 疼痛控制
   surgical:
     - name: 根據病況可能需手術治療(骨折固定、韌帶重建、關節置換等)
-      notes: "依病況評估"
-
+      notes: 依病況評估
 prognosis:
-  general: "預後取決於損傷嚴重度、治療方式與飼主配合度。早期適當治療可改善功能恢復。"
-
+  general: 預後取決於損傷嚴重度、治療方式與飼主配合度。早期適當治療可改善功能恢復。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: JFMS open reports
     title: Surgical management of traumatic atlantoaxial subluxation in two cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8264740/
     type: case-report
-    pmid: "34285810"
+    pmid: '34285810'
     relevance: supporting
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
     title: Internal hemipelvectomy for treatment of obstipation secondary to pelvic malunion in 3 cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4982566/
     type: case-report
-    pmid: "27587887"
+    pmid: '27587887'
     relevance: supporting
   - sourceOrg: Veterinary world
-    title: Comparative biochemical analysis of platelet-rich plasma-chitosan and platelet-rich fibrin-chitosan for treating tibial bone defects in rabbits.
+    title: >-
+      Comparative biochemical analysis of platelet-rich plasma-chitosan and platelet-rich fibrin-chitosan for treating
+      tibial bone defects in rabbits.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11536730/
     type: research
-    pmid: "39507798"
+    pmid: '39507798'
     relevance: supporting
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Fracture Healing in 37 Dogs and Cats with Implant Failure after Surgery (2013-2018).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10177280/
     type: research
-    pmid: "37174586"
+    pmid: '37174586'
     relevance: supporting
-  - sourceOrg: "Veterinary surgery : VS"
+  - sourceOrg: 'Veterinary surgery : VS'
     title: Delayed union, non-union and mal-union in 442 dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9804201/
     type: research
-    pmid: "36053918"
+    pmid: '36053918'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: Malunion 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cachexia-muscle-wasting 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 骨科檢查
+          notes: 需詳細評估
+        - name: X光(多方位)
+          notes: 協助確診
+ddxSource: auto-generated

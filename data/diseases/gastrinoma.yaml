@@ -3,11 +3,11 @@ nameEn: Gastrinoma
 nameZh: 胃泌素瘤
 bodySystem: endocrine
 description: 胰臟或十二指腸G細胞腫瘤分泌過量胃泌素,導致難治性胃十二指腸潰瘍、嘔吐、腹瀉及體重減輕,為功能性胰臟神經內分泌腫瘤。
-
 aliases:
-  - { alias: Zollinger-Ellison症候群, language: zh }
-  - { alias: Gastrin-secreting tumor, language: en }
-
+  - alias: Zollinger-Ellison症候群
+    language: zh
+  - alias: Gastrin-secreting tumor
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 極罕見
-
 etiology:
   categories:
     - name: 腫瘤來源
@@ -31,7 +30,6 @@ etiology:
         - 持續高胃酸導致消化性潰瘍
         - 胃酸過多損傷小腸黏膜致腹瀉
         - 酸性環境抑制胰臟酵素活性導致吸收不良
-
 clinicalSigns:
   early:
     - 慢性嘔吐(常含血)
@@ -43,25 +41,23 @@ clinicalSigns:
     - 嚴重貧血(慢性出血)
     - 吸收不良、營養不良
     - 腹痛
-
 diagnosis:
   primaryTests:
     - name: 血清胃泌素濃度
-      notes: "顯著升高(>200 pg/mL,正常<100 pg/mL),但需禁食12小時採血"
+      notes: 顯著升高(>200 pg/mL,正常<100 pg/mL),但需禁食12小時採血
     - name: 胃液pH測定
-      notes: "pH <2(正常禁食時pH 3-5),顯示高胃酸"
+      notes: pH <2(正常禁食時pH 3-5),顯示高胃酸
     - name: 上消化道內視鏡
-      notes: "胃及十二指腸多發性潰瘍,食道炎"
+      notes: 胃及十二指腸多發性潰瘍,食道炎
     - name: 腹部超音波或CT
-      notes: "胰臟或十二指腸腫塊,評估肝臟轉移"
+      notes: 胰臟或十二指腸腫塊,評估肝臟轉移
     - name: 血液常規
-      notes: "貧血(慢性出血)"
+      notes: 貧血(慢性出血)
   differentialDiagnoses:
     - 非功能性胃潰瘍(NSAIDs、類固醇)
     - 胰臟炎
     - 炎症性腸病
     - 其他功能性胰臟腫瘤
-
 treatment:
   medical:
     - 手術切除腫瘤(若可切除,但多已轉移)
@@ -73,19 +69,49 @@ treatment:
     - 胃腸道保護劑(Sucralfate 0.5-1 g PO TID)
     - 輸血(嚴重貧血)
     - 營養支持
-
 prognosis:
-  general: "預後不良,多數診斷時已轉移。即使手術切除,復發常見。中位存活時間約6-12個月。質子幫浦抑制劑可改善症狀但無法治癒。"
-
+  general: 預後不良,多數診斷時已轉移。即使手術切除,復發常見。中位存活時間約6-12個月。質子幫浦抑制劑可改善症狀但無法治癒。
 prevention:
   - 無有效預防
   - 難治性消化性潰瘍或反覆嘔吐時應考慮功能性腫瘤
   - 早期影像學評估胰臟及十二指腸
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Gastrinoma and Zollinger-Ellison syndrome in canids: a literature review and a case in a Mexican gray wolf."
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: 'Gastrinoma and Zollinger-Ellison syndrome in canids: a literature review and a case in a Mexican gray wolf.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6505925/
     type: review
-    pmid: "29860931"
+    pmid: '29860931'
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: melaena
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 胃泌素瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - vomiting 相關症狀
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清胃泌素濃度
+          notes: 顯著升高(>200 pg/mL,正常<100 pg/mL),但需禁食12小時採血
+        - name: 胃液pH測定
+          notes: pH <2(正常禁食時pH 3-5),顯示高胃酸
+        - name: 上消化道內視鏡
+          notes: 胃及十二指腸多發性潰瘍,食道炎
+ddxSource: auto-generated

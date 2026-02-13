@@ -3,11 +3,11 @@ nameEn: Aneurysm
 nameZh: 動脈瘤
 bodySystem: vascular
 description: 動脈壁局部異常擴張形成囊狀或梭狀突起，可能因壓迫周圍組織或破裂引發致命性出血。犬貓罕見，常與感染性心內膜炎、寄生蟲或先天性血管異常相關。
-
 aliases:
-  - { alias: 血管瘤樣擴張, language: zh }
-  - { alias: Arterial Aneurysm, language: en }
-
+  - alias: 血管瘤樣擴張
+    language: zh
+  - alias: Arterial Aneurysm
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓罕見，可能與心肌病或系統性感染有關
-
 etiology:
   categories:
     - name: 感染性
@@ -33,7 +32,6 @@ etiology:
       examples:
         - 外傷後假性動脈瘤
         - 動脈粥狀硬化
-
 clinicalSigns:
   early:
     - 多數無症狀，偶然影像學檢查發現
@@ -42,21 +40,19 @@ clinicalSigns:
     - 壓迫周圍器官（呼吸困難、吞嚥困難）
     - 急性破裂：蒼白、虛脫、腹腔或胸腔積血
     - 血栓形成或栓塞
-
 diagnosis:
   primaryTests:
     - name: 胸腹腔超音波
-      notes: "可見動脈局部擴張、血流紊流"
+      notes: 可見動脈局部擴張、血流紊流
     - name: 血管造影或 CT 血管攝影
-      notes: "確認動脈瘤位置、大小及與周圍結構關係"
+      notes: 確認動脈瘤位置、大小及與周圍結構關係
     - name: 心臟超音波
-      notes: "評估心內膜炎或心絲蟲"
+      notes: 評估心內膜炎或心絲蟲
   differentialDiagnoses:
     - 血管腫瘤
     - 淋巴結腫大
     - 血腫
     - 囊腫
-
 treatment:
   medical:
     - 小型無症狀動脈瘤：定期影像追蹤
@@ -64,39 +60,69 @@ treatment:
     - 外科切除或血管結紮（適用於可及部位）
     - 血管內栓塞術或支架置放（專科中心）
     - 急性破裂：緊急輸血、液體復甦、外科止血
-
 prognosis:
-  general: "預後取決於動脈瘤位置、大小及是否破裂。未破裂且可手術切除者預後良好，但破裂性動脈瘤死亡率極高（>80%）。感染性動脈瘤需長期抗生素治療。"
-
+  general: 預後取決於動脈瘤位置、大小及是否破裂。未破裂且可手術切除者預後良好，但破裂性動脈瘤死亡率極高（>80%）。感染性動脈瘤需長期抗生素治療。
 prevention:
   - 心絲蟲定期預防（犬）
   - 心臟病患者定期心臟超音波
   - 避免高血壓未控制
-
-
 guidelineRefs:
-  - sourceOrg: "Parasites &amp; vectors"
-    title: "Neurobartonelloses: emerging from obscurity!"
+  - sourceOrg: Parasites &amp; vectors
+    title: 'Neurobartonelloses: emerging from obscurity!'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11452993/
     type: review
-    pmid: "39369199"
+    pmid: '39369199'
   - sourceOrg: Cells
     title: Cellular, Molecular and Clinical Aspects of Aortic Aneurysm-Vascular Physiology and Pathophysiology.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10854611/
     type: review
-    pmid: "38334666"
+    pmid: '38334666'
   - sourceOrg: The Journal of international medical research
-    title: "Utilizing indocyanine green video angiography to bridge intracranial aneurysm treatment gaps in low- and middle-income countries: a mini-review."
+    title: >-
+      Utilizing indocyanine green video angiography to bridge intracranial aneurysm treatment gaps in low- and
+      middle-income countries: a mini-review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10590043/
     type: review
-    pmid: "37862677"
+    pmid: '37862677'
   - sourceOrg: Biomedicines
-    title: "Multilineage-Differentiating Stress-Enduring Cells (Muse Cells): The Future of Human and Veterinary Regenerative Medicine."
+    title: >-
+      Multilineage-Differentiating Stress-Enduring Cells (Muse Cells): The Future of Human and Veterinary Regenerative
+      Medicine.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9953712/
     type: review
-    pmid: "36831171"
+    pmid: '36831171'
   - sourceOrg: Journal of neuropathology and experimental neurology
     title: Histological Findings After Aortic Cross-Clamping in Preclinical Animal Models.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8783616/
     type: review
-    pmid: "34534333"
+    pmid: '34534333'
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 動脈瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - dysphagia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸腹腔超音波
+          notes: 可見動脈局部擴張、血流紊流
+        - name: 血管造影或 CT 血管攝影
+          notes: 確認動脈瘤位置、大小及與周圍結構關係
+        - name: 心臟超音波
+          notes: 評估心內膜炎或心絲蟲
+ddxSource: auto-generated

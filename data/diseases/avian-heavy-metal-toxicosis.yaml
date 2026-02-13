@@ -3,20 +3,23 @@ nameEn: Avian Heavy Metal Toxicosis
 nameZh: 禽類重金屬中毒
 bodySystem: toxicology
 description: 禽類重金屬中毒以鉛與鋅中毒最為常見，因鸚鵡類好奇啃咬金屬物品而發生。鉛中毒影響消化道、神經與血液系統，鋅中毒主要影響消化道與胰臟。為寵物鳥常見的急診疾病。
-
 aliases:
-  - { alias: 鳥類重金屬中毒, language: zh }
-  - { alias: 鸚鵡鉛中毒, language: zh }
-  - { alias: 鸚鵡鋅中毒, language: zh }
-  - { alias: Lead poisoning in birds, language: en }
-  - { alias: Zinc toxicosis in birds, language: en }
-  - { alias: Metal fume fever in birds, language: en }
-
+  - alias: 鳥類重金屬中毒
+    language: zh
+  - alias: 鸚鵡鉛中毒
+    language: zh
+  - alias: 鸚鵡鋅中毒
+    language: zh
+  - alias: Lead poisoning in birds
+    language: en
+  - alias: Zinc toxicosis in birds
+    language: en
+  - alias: Metal fume fever in birds
+    language: en
 species:
   - speciesCommon: bird
     prevalence: common
     notes: 鸚鵡類（尤其好奇性強的大型鸚鵡）最常見。金絲雀、雀科亦有報告。居家環境中金屬物品為主要暴露來源。
-
 etiology:
   categories:
     - name: 鉛暴露來源
@@ -36,7 +39,6 @@ etiology:
       examples:
         - 銅中毒（較少見）
         - 汞中毒（極少見）
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -52,7 +54,6 @@ clinicalSigns:
     - 失明（鉛）
     - 溶血性貧血
     - 後肢無力
-
 diagnosis:
   primaryTests:
     - name: X 光
@@ -61,7 +62,6 @@ diagnosis:
       notes: 全血鉛濃度 >0.2 ppm 異常，>0.5 ppm 具臨床意義。血清鋅 >2 ppm 異常
     - name: CBC
       notes: 溶血性貧血。鉛中毒可見嗜鹼性點彩紅血球
-
 treatment:
   principles:
     - 移除消化道內金屬異物
@@ -77,41 +77,87 @@ treatment:
     - 營養支持
     - 移除家中所有潛在金屬暴露來源
     - 治療後追蹤血液重金屬濃度
-
 prognosis: 早期診斷並治療者預後良好。螯合治療通常有效降低血液重金屬濃度。出現嚴重神經症狀（癲癇、失明）者預後謹慎，部分神經損傷可能不可逆。延遲治療者死亡率增加。消除暴露源為預防復發的關鍵。
-
-
 guidelineRefs:
   - sourceOrg: BMC veterinary research
-    title: "Acute tea tree oil intoxication in a pet cockatiel (Nymphicus hollandicus): a case report."
+    title: 'Acute tea tree oil intoxication in a pet cockatiel (Nymphicus hollandicus): a case report.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6995176/
     type: case-report
-    pmid: "32005244"
+    pmid: '32005244'
   - sourceOrg: Environmental science and pollution research international
     title: Zinc oxide nanoparticles induce dose-dependent toxicosis in broiler chickens reared in summer season.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9356964/
     type: research
-    pmid: "35292898"
+    pmid: '35292898'
   - sourceOrg: Journal of avian medicine and surgery
     title: Subclinical Lead Exposure Among Backyard Chicken Flocks in Massachusetts.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12817250/
     type: research
-    pmid: "30204020"
+    pmid: '30204020'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Evaluation and treatment of lead toxicosis in rehabilitated avian species: 95 cases (2014-2023)."
+    title: 'Evaluation and treatment of lead toxicosis in rehabilitated avian species: 95 cases (2014-2023).'
     url: https://pubmed.ncbi.nlm.nih.gov/39793202/
     type: research
-    pmid: "39793202"
+    pmid: '39793202'
   - sourceOrg: Environmental toxicology and pharmacology
-    title: Validation of the Lead Care II System in Cape vultures (Gyps coprotheres) in comparison to ICP-MS using pure standards.
+    title: >-
+      Validation of the Lead Care II System in Cape vultures (Gyps coprotheres) in comparison to ICP-MS using pure
+      standards.
     url: https://pubmed.ncbi.nlm.nih.gov/39117251/
     type: research
-    pmid: "39117251"
+    pmid: '39117251'
   - sourceOrg: BMC veterinary research
-    title: "Lead toxicosis of captive vultures: case description and responses to chelation therapy."
+    title: 'Lead toxicosis of captive vultures: case description and responses to chelation therapy.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3566908/
     type: case-report
-    pmid: "23324224"
+    pmid: '23324224'
 pubmedQueries:
   - query: '"heavy metal" AND (avian OR bird OR psittacine) AND ("lead" OR "zinc") AND (treatment OR toxicosis)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: blindness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類重金屬中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - paresis-paralysis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: X 光
+          notes: 消化道內金屬異物（高密度不透光物）。可見嗉囊、前胃或肌胃中金屬碎片
+        - name: 血液重金屬濃度
+          notes: 全血鉛濃度 >0.2 ppm 異常，>0.5 ppm 具臨床意義。血清鋅 >2 ppm 異常
+        - name: CBC
+          notes: 溶血性貧血。鉛中毒可見嗜鹼性點彩紅血球
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 移除消化道內金屬異物
+        - 螯合治療排除體內重金屬
+        - 支持療法
+ddxSource: auto-generated

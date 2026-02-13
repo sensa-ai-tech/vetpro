@@ -3,11 +3,11 @@ nameEn: Corneal Perforation
 nameZh: Corneal Perforation
 bodySystem: ophthalmology
 description: 角膜疾病,可能影響視力與眼部舒適度。需及時治療以避免視力喪失或眼球穿孔等併發症。
-
 aliases:
-  - { alias: Corneal Perforation, language: zh }
-  - { alias: Corneal Perforation, language: en }
-
+  - alias: Corneal Perforation
+    language: zh
+  - alias: Corneal Perforation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 先天性異常
       examples:
         - 外傷
         - 感染
-
 clinicalSigns:
   early:
     - 眼部不適
@@ -32,56 +30,78 @@ clinicalSigns:
   progressive:
     - 視力喪失
     - 眼內壓異常
-
 diagnosis:
   primaryTests:
     - name: 眼科檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: 眼壓測量
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 眼藥水(抗生素或消炎)
     - 止痛藥
   surgical:
     - name: 根據病況可能需手術治療(角膜移植、青光眼閥膜植入、眼球摘除等)
-      notes: "依病況評估"
-
+      notes: 依病況評估
 prognosis:
-  general: "預後取決於疾病類型、嚴重度與治療時機。早期治療可改善預後並保存視力。"
-
+  general: 預後取決於疾病類型、嚴重度與治療時機。早期治療可改善預後並保存視力。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of ophthalmic &amp; vision research"
+  - sourceOrg: Journal of ophthalmic &amp; vision research
     title: Aloe Vera Gel-derived Eye Drops for Alkaline Corneal Injury in a Rabbit Model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001018/
     type: review
-    pmid: "32095203"
+    pmid: '32095203'
   - sourceOrg: BMC veterinary research
-    title: "Evaluation of risk factors for treatment failure in canine patients undergoing photoactivated chromophore for keratitis - corneal cross-linking (PACK-CXL): a retrospective study using additive bayesian network analysis."
+    title: >-
+      Evaluation of risk factors for treatment failure in canine patients undergoing photoactivated chromophore for
+      keratitis - corneal cross-linking (PACK-CXL): a retrospective study using additive bayesian network analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10621152/
     type: research
-    pmid: "37919690"
+    pmid: '37919690'
   - sourceOrg: The ocular surface
-    title: Predatory bacteria can reduce Pseudomonas aeruginosa induced corneal perforation and proliferation in a rabbit keratitis model.
+    title: >-
+      Predatory bacteria can reduce Pseudomonas aeruginosa induced corneal perforation and proliferation in a rabbit
+      keratitis model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11265785/
     type: research
-    pmid: "37146902"
-  - sourceOrg: "bioRxiv : the preprint server for biology"
-    title: Predatory Bacteria can Reduce Pseudomonas aeruginosa Induced Corneal Perforation and Proliferation in a Rabbit Keratitis Model.
+    pmid: '37146902'
+  - sourceOrg: 'bioRxiv : the preprint server for biology'
+    title: >-
+      Predatory Bacteria can Reduce Pseudomonas aeruginosa Induced Corneal Perforation and Proliferation in a Rabbit
+      Keratitis Model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10055036/
     type: research
-    pmid: "36993476"
+    pmid: '36993476'
   - sourceOrg: Frontiers in medicine
-    title: Comparison of Corneal Collagen Cross-Linking and Voriconazole Treatments in Experimental Fungal Keratitis for Aspergillus fumigatus.
+    title: >-
+      Comparison of Corneal Collagen Cross-Linking and Voriconazole Treatments in Experimental Fungal Keratitis for
+      Aspergillus fumigatus.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9273744/
     type: research
-    pmid: "35836944"
+    pmid: '35836944'
+associatedSymptoms:
+  - symptomId: blindness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: Corneal Perforation 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 眼科檢查
+          notes: 需詳細評估
+        - name: 眼壓測量
+          notes: 協助確診
+ddxSource: auto-generated

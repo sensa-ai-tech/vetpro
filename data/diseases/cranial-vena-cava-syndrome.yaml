@@ -3,13 +3,15 @@ nameEn: Cranial Vena Cava Syndrome
 nameZh: 前腔靜脈症候群
 bodySystem: vascular
 description: 前腔靜脈（cranial vena cava）受壓迫或阻塞導致頭頸部及前肢靜脈回流障礙的臨床症候群，常見原因包括縱膈腫瘤、淋巴瘤及心臟基部腫瘤。
-
 aliases:
-  - { alias: 上腔靜脈症候群, language: zh }
-  - { alias: 前大靜脈症候群, language: zh }
-  - { alias: Superior vena cava syndrome, language: en }
-  - { alias: CVCS, language: en }
-
+  - alias: 上腔靜脈症候群
+    language: zh
+  - alias: 前大靜脈症候群
+    language: zh
+  - alias: Superior vena cava syndrome
+    language: en
+  - alias: CVCS
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓前腔靜脈症候群常與縱膈型淋巴瘤相關，好發於幼年 FeLV 陽性貓。
-
 etiology:
   categories:
     - name: 壓迫性
@@ -33,7 +34,6 @@ etiology:
         - 中央靜脈導管相關血栓
         - 腫瘤侵犯前腔靜脈
         - 心絲蟲（Caval syndrome 的變異）
-
 clinicalSigns:
   early:
     - 頭頸部輕度腫脹
@@ -45,20 +45,18 @@ clinicalSigns:
     - 呼吸困難
     - 胸腔積液
     - 前肢嚴重水腫
-
 diagnosis:
   primaryTests:
     - name: 胸部 X 光
-      notes: "縱膈增寬。前縱膈腫塊。胸腔積液。心臟基部腫塊"
+      notes: 縱膈增寬。前縱膈腫塊。胸腔積液。心臟基部腫塊
     - name: 胸部超音波
-      notes: "評估腫塊性質。心包積液。引導穿刺取樣"
+      notes: 評估腫塊性質。心包積液。引導穿刺取樣
     - name: CT 血管攝影
-      notes: "精確評估腫塊與前腔靜脈的關係、血栓範圍、側支循環"
+      notes: 精確評估腫塊與前腔靜脈的關係、血栓範圍、側支循環
   differentialDiagnoses:
     - 右心衰竭
     - 心包積液
     - 縱膈腫塊（非壓迫性）
-
 treatment:
   medical:
     - 治療基礎腫瘤（化療——淋巴瘤首選）
@@ -69,18 +67,42 @@ treatment:
   surgical:
     - 胸腺瘤——手術切除（如可能）
     - 心臟基部腫瘤——心包切除術（緩解性）
-
 prognosis:
-  general: "預後取決於基礎疾病。淋巴瘤對化療反應良好，症狀可迅速改善。胸腺瘤手術切除後預後合理。心臟基部腫瘤預後較差。"
-
+  general: 預後取決於基礎疾病。淋巴瘤對化療反應良好，症狀可迅速改善。胸腺瘤手術切除後預後合理。心臟基部腫瘤預後較差。
 prevention:
   - 無特異性預防措施
   - 早期發現縱膈腫塊
-
-
 guidelineRefs:
   - sourceOrg: Comparative medicine
     title: Cranial Vena Cava Syndrome in Guinea Pigs with Chronic Jugular Vein Catheters.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7024777/
     type: case-report
-    pmid: "31948513"
+    pmid: '31948513'
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: regurgitation
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: common
+diagnosticAlgorithm:
+  title: 前腔靜脈症候群 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - regurgitation 相關症狀
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸部 X 光
+          notes: 縱膈增寬。前縱膈腫塊。胸腔積液。心臟基部腫塊
+        - name: 胸部超音波
+          notes: 評估腫塊性質。心包積液。引導穿刺取樣
+        - name: CT 血管攝影
+          notes: 精確評估腫塊與前腔靜脈的關係、血栓範圍、側支循環
+ddxSource: auto-generated

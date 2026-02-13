@@ -3,12 +3,13 @@ nameEn: Chondrosarcoma Oncology
 nameZh: 軟骨肉瘤
 bodySystem: oncology
 description: 軟骨肉瘤 (chondrosarcoma) 為起源於軟骨組織的惡性腫瘤，為犬第二常見的原發性骨腫瘤。好發於扁平骨（肋骨、鼻腔、骨盆），轉移率較骨肉瘤低，但局部侵襲性強。貓較少見但生物學行為相似。
-
 aliases:
-  - { alias: 軟骨肉瘤腫瘤, language: zh }
-  - { alias: Chondrosarcoma, language: en }
-  - { alias: CSA, language: en }
-
+  - alias: 軟骨肉瘤腫瘤
+    language: zh
+  - alias: Chondrosarcoma
+    language: en
+  - alias: CSA
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓軟骨肉瘤罕見，生物學行為可能更具侵襲性。肩胛骨及長骨為好發部位。
-
 etiology:
   categories:
     - name: 腫瘤特性
@@ -31,7 +31,6 @@ etiology:
         - 骨盆
         - 長骨（較少見）
         - 椎體
-
 clinicalSigns:
   early:
     - 局部腫脹或腫塊
@@ -43,7 +42,6 @@ clinicalSigns:
     - 鼻腔型出現面部變形
     - 肋骨型可能影響呼吸
     - 嚴重跛行或病理性骨折
-
 diagnosis:
   primaryTests:
     - name: 影像學檢查（X-ray）
@@ -57,7 +55,6 @@ diagnosis:
     - 胸腔 X-ray（三視圖，評估肺轉移）
     - 腹部超音波（評估遠端轉移）
     - CBC 與生化檢查（術前評估）
-
 treatment:
   principles:
     - 手術廣泛切除為主要治療方式
@@ -71,41 +68,84 @@ treatment:
     - 化療效果有限，但可考慮 carboplatin 或 cisplatin
     - 疼痛管理（NSAIDs、gabapentin、tramadol）
     - 定期影像追蹤（每 2-3 個月 X-ray）
-
 prognosis: 犬軟骨肉瘤手術完整切除後預後較骨肉瘤好，中位存活時間可達 1-3 年以上。低分級腫瘤（Grade I）預後最佳。高分級、切緣不乾淨或已轉移者預後較差。鼻腔型合併放療中位存活約 12-18 個月。
-
-
 guidelineRefs:
   - sourceOrg: The Journal of veterinary medical science
-    title: Chondrosarcoma with undifferentiated neoplastic cell proliferation around the distal tibiotarsus bone in a wild Hooded Crane (Grus monacha).
+    title: >-
+      Chondrosarcoma with undifferentiated neoplastic cell proliferation around the distal tibiotarsus bone in a wild
+      Hooded Crane (Grus monacha).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7468071/
     type: case-report
-    pmid: "32507786"
+    pmid: '32507786'
   - sourceOrg: Oncoimmunology
     title: Description of the immune microenvironment of chondrosarcoma and contribution to progression.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5353901/
     type: research
-    pmid: "28344871"
+    pmid: '28344871'
   - sourceOrg: Journal of veterinary internal medicine
-    title: Clinical-dosimetric relationship between lacrimal gland dose and keratoconjunctivitis sicca in dogs with sinonasal tumors treated with radiation therapy.
+    title: >-
+      Clinical-dosimetric relationship between lacrimal gland dose and keratoconjunctivitis sicca in dogs with sinonasal
+      tumors treated with radiation therapy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7096656/
     type: research
-    pmid: "32086981"
+    pmid: '32086981'
   - sourceOrg: Oncogenesis
     title: Bcl-xl as the most promising Bcl-2 family member in targeted treatment of chondrosarcoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6155044/
     type: research
-    pmid: "30242253"
+    pmid: '30242253'
   - sourceOrg: Molecular imaging and biology
     title: Tumor Formation of Adult Stem Cell Transplants in Rodent Arthritic Joints.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6279627/
     type: research
-    pmid: "29869062"
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
+    pmid: '29869062'
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
     title: Sinonasal chondrosarcoma in a llama.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11529137/
     type: case-report
-    pmid: "38835270"
+    pmid: '38835270'
 pubmedQueries:
   - query: '"chondrosarcoma" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: epistaxis
+    frequency: common
+  - symptomId: lameness
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 軟骨肉瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - epistaxis 相關症狀
+        - lameness 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 影像學檢查（X-ray）
+          notes: 可見溶骨性或混合性骨病變，常伴有鈣化基質（軟骨特徵性「爆米花樣」鈣化）。需與骨肉瘤鑑別
+        - name: 組織病理學切片
+          notes: 確定診斷需組織生檢。評估分化程度與惡性分級（Grade I-III），影響預後判斷
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 胸腔 X-ray（三視圖，評估肺轉移）
+        - 腹部超音波（評估遠端轉移）
+        - CBC 與生化檢查（術前評估）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術廣泛切除為主要治療方式
+        - 化療敏感度較骨肉瘤低
+        - 放射治療可作為姑息治療或輔助治療
+ddxSource: auto-generated

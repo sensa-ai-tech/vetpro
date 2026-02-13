@@ -3,16 +3,15 @@ nameEn: Rabbit Seizure
 nameZh: 兔癲癇發作
 bodySystem: neurology
 description: 兔大腦神經元異常放電導致的突發性意識、運動或行為異常。兔癲癇最常見原因為 E. cuniculi 腦炎，其他原因包括中毒、代謝異常及腦腫瘤。
-
 aliases:
-  - { alias: "兔癲癇發作", language: zh }
-  - { alias: "Rabbit Seizure", language: en }
-
+  - alias: 兔癲癇發作
+    language: zh
+  - alias: Rabbit Seizure
+    language: en
 species:
   - speciesCommon: rabbit
     prevalence: uncommon
     notes: 兔可受此疾病影響。
-
 etiology:
   categories:
     - name: 感染性
@@ -25,7 +24,6 @@ etiology:
         - 低血糖
         - 肝臟腦病
         - 鉛中毒
-
 clinicalSigns:
   early:
     - 間歇性行為異常
@@ -36,14 +34,12 @@ clinicalSigns:
     - 意識喪失
     - 四肢划水運動
     - 發作後定向障礙
-
 diagnosis:
   primaryTests:
     - name: E. cuniculi 抗體
       notes: 配合臨床症狀判讀。
     - name: 血液檢查
       notes: CBC/生化排除代謝原因（低鈣、低糖、肝功能）。
-
 treatment:
   principles:
     - 急性發作以 Midazolam 控制
@@ -55,9 +51,42 @@ treatment:
     - 抗癲癇維持：Levetiracetam 20-30 mg/kg PO TID
     - 治療代謝異常
     - 抗炎：Meloxicam
-
 prognosis: E. cuniculi 腦炎導致的癲癇經治療後多數可控制。代謝原因矯正後癲癇常可停止。反覆嚴重癲癇或腦腫瘤預後不佳。
-
 pubmedQueries:
   - query: '"Rabbit Seizure" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: trembling
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: common
+diagnosticAlgorithm:
+  title: 兔癲癇發作 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - trembling 相關症狀
+        - seizures 相關症狀
+        - coma-stupor 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: E. cuniculi 抗體
+          notes: 配合臨床症狀判讀。
+        - name: 血液檢查
+          notes: CBC/生化排除代謝原因（低鈣、低糖、肝功能）。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 急性發作以 Midazolam 控制
+        - 找出並治療基礎原因
+        - 長期抗癲癇藥物（反覆發作時）
+ddxSource: auto-generated

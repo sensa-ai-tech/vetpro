@@ -3,11 +3,11 @@ nameEn: Fluid Therapy Resuscitation
 nameZh: 復甦性輸液治療
 bodySystem: electrolyte
 description: 針對休克或嚴重低血容的緊急輸液治療,目標快速恢復組織灌流及血壓。犬使用震盪劑量(shock dose)為晶體液90 mL/kg/hr,貓為60 mL/kg/hr,分次給予並評估反應。
-
 aliases:
-  - { alias: 休克輸液治療, language: zh }
-  - { alias: Shock Fluid Therapy, language: en }
-
+  - alias: 休克輸液治療
+    language: zh
+  - alias: Shock Fluid Therapy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓震盪劑量為 60 mL/kg/hr（貓對過度輸液敏感,需謹慎）
-
 etiology:
   categories:
     - name: 低血容性休克
@@ -32,7 +31,6 @@ etiology:
     - name: 心因性休克
       examples:
         - 嚴重心臟病（需謹慎輸液）
-
 clinicalSigns:
   early:
     - 心搏過速、脈搏微弱
@@ -43,45 +41,68 @@ clinicalSigns:
     - 意識改變、嗜睡
     - 四肢冰冷、尿量減少
     - 器官灌流不足
-
 diagnosis:
   primaryTests:
     - name: 血壓測量
-      notes: "收縮壓 <90 mmHg 為低血壓"
+      notes: 收縮壓 <90 mmHg 為低血壓
     - name: 灌流參數評估
-      notes: "CRT、黏膜顏色、心搏、脈搏品質、四肢溫度"
+      notes: CRT、黏膜顏色、心搏、脈搏品質、四肢溫度
     - name: 乳酸濃度
-      notes: "乳酸 >2.5 mmol/L 提示組織灌流不足"
+      notes: 乳酸 >2.5 mmol/L 提示組織灌流不足
   differentialDiagnoses:
     - 低血容性休克
     - 敗血性休克
     - 心因性休克
     - 分佈性休克
-
 treatment:
   medical:
     - 犬震盪劑量：晶體液 90 mL/kg/hr（分次給予 1/4 量 = 22.5 mL/kg over 15 min）
     - 貓震盪劑量：晶體液 60 mL/kg/hr（分次給予 1/4 量 = 15 mL/kg over 15 min）
     - 評估反應（心搏、血壓、CRT、乳酸）後決定是否重複
-    - 輸液類型：
-      - 等張晶體液（LRS, 0.9% NaCl, Plasma-Lyte）
-      - 膠體液（Hetastarch 5-10 mL/kg,用於晶體液反應不佳者）
-      - 輸血（PCV <20% 或急性失血）
+    - 輸液類型： - 等張晶體液（LRS, 0.9% NaCl, Plasma-Lyte） - 膠體液（Hetastarch 5-10 mL/kg,用於晶體液反應不佳者） - 輸血（PCV <20% 或急性失血）
     - 心因性休克需謹慎輸液,避免肺水腫
     - 持續監測血壓、心搏、尿量、乳酸
-
 prognosis:
-  general: "預後取決於休克原因及治療時機。低血容性休克早期治療預後良好,但敗血性休克或心因性休克死亡率高。過度輸液可能導致肺水腫或稀釋性凝血病變。"
-
+  general: 預後取決於休克原因及治療時機。低血容性休克早期治療預後良好,但敗血性休克或心因性休克死亡率高。過度輸液可能導致肺水腫或稀釋性凝血病變。
 prevention:
   - 早期識別休克徵象
   - 積極治療潛在病因
   - 監測輸液反應避免過度輸液
-
-
 guidelineRefs:
   - sourceOrg: The Veterinary clinics of North America. Small animal practice
     title: Fluid and Electrolyte Therapy During Vomiting and Diarrhea.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7185384/
     type: review
-    pmid: "27939861"
+    pmid: '27939861'
+associatedSymptoms:
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 復甦性輸液治療 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pallor-cyanosis 相關症狀
+        - coma-stupor 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血壓測量
+          notes: 收縮壓 <90 mmHg 為低血壓
+        - name: 灌流參數評估
+          notes: CRT、黏膜顏色、心搏、脈搏品質、四肢溫度
+        - name: 乳酸濃度
+          notes: 乳酸 >2.5 mmol/L 提示組織灌流不足
+ddxSource: auto-generated

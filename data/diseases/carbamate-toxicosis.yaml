@@ -3,11 +3,11 @@ nameEn: Carbamate Toxicosis
 nameZh: 氨基甲酸酯中毒
 bodySystem: toxicology
 description: 攝入氨基甲酸酯類殺蟲劑引發的膽鹼性中毒,透過可逆性膽鹼酯酶抑制導致乙醯膽鹼蓄積。臨床症狀類似有機磷中毒但較輕且恢復較快,禁用 pralidoxime(2-PAM)治療。
-
 aliases:
-  - { alias: Carbamate 殺蟲劑中毒, language: en }
-  - { alias: 胺基甲酸鹽中毒, language: zh }
-
+  - alias: Carbamate 殺蟲劑中毒
+    language: en
+  - alias: 胺基甲酸鹽中毒
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少接觸但同樣敏感,症狀與犬類似
-
 etiology:
   categories:
     - name: 氨基甲酸酯類殺蟲劑
@@ -27,7 +26,6 @@ etiology:
         - Aldicarb (好年冬)
         - Methomyl
         - Carbofuran
-
 clinicalSigns:
   early:
     - 過度流涎
@@ -42,40 +40,74 @@ clinicalSigns:
     - 肌肉無力
     - 震顫或癲癇發作(高劑量)
     - 呼吸衰竭
-
 diagnosis:
   primaryTests:
     - name: 病史詢問
-      notes: "確認氨基甲酸酯產品接觸史,攜帶產品標籤"
+      notes: 確認氨基甲酸酯產品接觸史,攜帶產品標籤
     - name: 臨床膽鹼性症候群
-      notes: "SLUD 症狀、縮瞳、心搏過緩為特徵"
+      notes: SLUD 症狀、縮瞳、心搏過緩為特徵
     - name: 全血膽鹼酯酶活性
-      notes: "下降,但因可逆性結合,採樣後數小時內可能恢復正常"
+      notes: 下降,但因可逆性結合,採樣後數小時內可能恢復正常
     - name: Atropine 反應測試
-      notes: "對 atropine 治療反應良好,可作為診斷性治療"
+      notes: 對 atropine 治療反應良好,可作為診斷性治療
   differentialDiagnoses:
     - 有機磷中毒(臨床難以區分,病史為關鍵)
     - 其他膽鹼促效劑中毒
     - 毒蕈中毒(毒蠅傘型)
     - 尼古丁中毒
-
 treatment:
   medical:
     - 去污染:皮膚徹底清洗(戴手套),催吐(口服且無禁忌症)
     - 活性碳 1-4 g/kg PO
     - Atropine 0.2-2 mg/kg:1/4 劑量 IV 測試,後每 15-30 分鐘調整至黏膜乾燥、心率正常
-    - "**禁用 Pralidoxime (2-PAM)**:可能加重氨基甲酸酯中毒"
+    - '**禁用 Pralidoxime (2-PAM)**:可能加重氨基甲酸酯中毒'
     - 靜脈輸液支持治療
     - Maropitant 1 mg/kg SC 控制嘔吐
     - Diazepam 0.5-1 mg/kg IV 控制癲癇發作
     - 氧氣治療(呼吸困難時)
     - 監測心電圖和呼吸狀態
-
 prognosis:
-  general: "預後通常良好,優於有機磷中毒。氨基甲酸酯與膽鹼酯酶的結合可逆,酵素活性數小時內恢復。及時使用 atropine 治療的患者多數在 24-48 小時內完全恢復。高劑量 aldicarb 中毒預後較差。"
-
+  general: 預後通常良好,優於有機磷中毒。氨基甲酸酯與膽鹼酯酶的結合可逆,酵素活性數小時內恢復。及時使用 atropine 治療的患者多數在 24-48 小時內完全恢復。高劑量 aldicarb 中毒預後較差。
 prevention:
   - 氨基甲酸酯殺蟲劑儲存於上鎖區域
   - 避免使用農業用高毒性產品(如 aldicarb)於寵物環境
   - 環境噴灑後遵循安全等待期
   - 選擇低毒性或寵物專用體外寄生蟲防治產品
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: trembling
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 氨基甲酸酯中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - seizures 相關症狀
+        - ptyalism 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史詢問
+          notes: 確認氨基甲酸酯產品接觸史,攜帶產品標籤
+        - name: 臨床膽鹼性症候群
+          notes: SLUD 症狀、縮瞳、心搏過緩為特徵
+        - name: 全血膽鹼酯酶活性
+          notes: 下降,但因可逆性結合,採樣後數小時內可能恢復正常
+ddxSource: auto-generated

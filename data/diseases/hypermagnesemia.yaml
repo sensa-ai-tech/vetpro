@@ -3,13 +3,15 @@ nameEn: Hypermagnesemia
 nameZh: 高鎂血症
 bodySystem: metabolic
 description: 血清鎂離子濃度高於正常值（>2.5 mg/dL）的電解質異常，臨床上較低鎂血症少見。高鎂血症主要見於腎衰竭患者（腎臟排泄鎂離子受損）或醫源性鎂鹽過量輸注，嚴重時可抑制神經肌肉傳導及心臟功能。
-
 aliases:
-  - { alias: 高血鎂, language: zh }
-  - { alias: 血鎂過高, language: zh }
-  - { alias: High Magnesium, language: en }
-  - { alias: Magnesium Excess, language: en }
-
+  - alias: 高血鎂
+    language: zh
+  - alias: 血鎂過高
+    language: zh
+  - alias: High Magnesium
+    language: en
+  - alias: Magnesium Excess
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓高鎂血症常見於尿道阻塞合併急性腎後性腎衰竭，鎂離子無法由腎臟排出。
-
 etiology:
   categories:
     - name: 腎臟排泄障礙
@@ -29,7 +30,6 @@ etiology:
       examples:
         - 含鎂抗酸劑或瀉劑過量
         - 靜脈鎂鹽輸注過量或過快
-
 clinicalSigns:
   early:
     - 嗜睡
@@ -42,14 +42,12 @@ clinicalSigns:
     - 呼吸抑制
     - 心電圖變化（PR 間距延長、QRS 增寬）
     - 心搏停止（極嚴重時）
-
 diagnosis:
   primaryTests:
     - name: 血清總鎂
-      notes: ">2.5 mg/dL。>5 mg/dL 為嚴重高鎂血症，有心臟毒性風險。需同時評估腎功能。"
+      notes: '>2.5 mg/dL。>5 mg/dL 為嚴重高鎂血症，有心臟毒性風險。需同時評估腎功能。'
     - name: 心電圖
       notes: PR 間距延長、QRS 增寬、T 波高聳（類似高鉀表現）。嚴重時出現房室傳導阻斷。
-
 treatment:
   principles:
     - 停止所有外源性鎂補充
@@ -62,31 +60,76 @@ treatment:
     - 心臟毒性時：10% 葡萄糖酸鈣 0.5-1.5 mL/kg IV 緩慢推注（拮抗鎂的心臟抑制作用）
     - 嚴重腎衰竭無法排鎂時需考慮血液透析
     - 持續心電圖監測
-
 prognosis: 輕度高鎂血症在停止鎂源並恢復腎功能後預後良好。嚴重高鎂血症合併心臟毒性為緊急狀況，若能及時鈣劑拮抗並恢復腎功能預後尚可。腎衰竭無法逆轉者預後取決於腎病本身。
-
-
 guidelineRefs:
   - sourceOrg: Veterinarni medicina
-    title: "Retrospective study using biosensor data of&#xa0;a&#xa0;milking Holstein cow with jejunal haemorrhage syndrome."
+    title: Retrospective study using biosensor data of&#xa0;a&#xa0;milking Holstein cow with jejunal haemorrhage syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10646544/
     type: case-report
-    pmid: "37981941"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Dysmagnesemia Incidence in Hospitalized Dogs and Cats: A Retrospective Study."
+    pmid: '37981941'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Dysmagnesemia Incidence in Hospitalized Dogs and Cats: A Retrospective Study.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12024414/
     type: research
-    pmid: "40282004"
+    pmid: '40282004'
   - sourceOrg: Scientific reports
-    title: Biodegradable Magnesium (Mg) Implantation Does Not Impose Related Metabolic Disorders in Rats with Chronic Renal Failure.
+    title: >-
+      Biodegradable Magnesium (Mg) Implantation Does Not Impose Related Metabolic Disorders in Rats with Chronic Renal
+      Failure.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4876325/
     type: research
-    pmid: "27210744"
-  - sourceOrg: "Yakugaku zasshi : Journal of the Pharmaceutical Society of Japan"
-    title: "[Pharmacokinetic Studies of Orally Administered Magnesium Oxide in Rats]."
+    pmid: '27210744'
+  - sourceOrg: 'Yakugaku zasshi : Journal of the Pharmaceutical Society of Japan'
+    title: '[Pharmacokinetic Studies of Orally Administered Magnesium Oxide in Rats].'
     url: https://pubmed.ncbi.nlm.nih.gov/28123145/
     type: research
-    pmid: "28123145"
+    pmid: '28123145'
 pubmedQueries:
   - query: '"Hypermagnesemia" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 高鎂血症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估肌肉無力、低血壓和心搏過緩等表現，注意腎功能狀態和含鎂藥物使用
+      findings:
+        - 肌肉無力和嗜睡
+        - 低血壓
+        - 心搏過緩
+    - step: 2
+      action: 實驗室與心電圖檢查
+      details: 測量血清鎂濃度，進行心電圖監測，評估腎功能
+      findings:
+        - 血清鎂>2.5 mg/dL
+        - 心電圖可見PR間期延長
+        - 腎功能評估（BUN、肌酐）
+    - step: 3
+      action: 病因確認
+      details: 確認腎衰竭或醫源性原因（含鎂灌腸劑、含鎂制酸劑）
+      findings:
+        - 腎衰竭為最常見原因
+        - 檢查是否有含鎂藥物過量使用
+        - Addison's病也可能導致
+clinicalPearls:
+  - 高鎂血症幾乎總是伴隨腎功能障礙——腎功能正常者極難發生
+  - Calcium gluconate是高鎂血症的特異性拮抗劑
+  - 深部腱反射消失是臨床上判斷嚴重高鎂的重要指標
+  - 含鎂制酸劑及瀉劑在腎衰竭動物中禁忌使用
+  - ECG變化與高鉀類似——PR延長、QRS增寬
+monitoringItems:
+  - 血清鎂濃度
+  - ECG持續監測（嚴重時）
+  - 腎功能指標
+  - 深部腱反射
+  - 血壓
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

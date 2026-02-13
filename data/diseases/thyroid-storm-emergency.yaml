@@ -3,11 +3,11 @@ nameEn: Thyroid Storm Emergency
 nameZh: 甲狀腺風暴
 bodySystem: endocrine
 description: 嚴重甲狀腺機能亢進危象,可引起高體溫、心律不整及多器官衰竭。罕見但致命性高。
-
 aliases:
-  - { alias: 甲亢危象, language: zh }
-  - { alias: Thyrotoxic Crisis, language: en }
-
+  - alias: 甲亢危象
+    language: zh
+  - alias: Thyrotoxic Crisis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,13 +17,11 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 未治療甲亢可能發生
-
 etiology:
   categories:
     - name: 誘發因子
       examples:
         - 甲狀腺腫瘤、嚴重感染、手術、突然停藥
-
 clinicalSigns:
   early:
     - 心搏過速(>240/min貓)
@@ -31,14 +29,12 @@ clinicalSigns:
   progressive:
     - 心律不整、心衰竭
     - 昏迷、多器官衰竭
-
 diagnosis:
   primaryTests:
     - name: 甲狀腺素
-      notes: "T4極度升高"
+      notes: T4極度升高
   differentialDiagnoses:
     - 其他高體溫、心律不整
-
 treatment:
   medical:
     - 抗甲狀腺藥: Methimazole 5-10 mg PO/直腸 q8h
@@ -47,18 +43,38 @@ treatment:
     - 靜脈輸液
     - 治療心律不整
     - ICU監護
-
 prognosis:
-  general: "預後不良,死亡率高。早期積極治療可能存活。"
-
+  general: 預後不良,死亡率高。早期積極治療可能存活。
 prevention:
   - 甲亢早期診斷治療
-
-
 guidelineRefs:
   - sourceOrg: Clinical case reports
     title: Long-term survival in a dog with probable thyroid storm.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10229745/
     type: case-report
-    pmid: "37266347"
+    pmid: '37266347'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: coma-stupor
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 甲狀腺風暴 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+        - hyperthermia 相關症狀
+        - coma-stupor 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 甲狀腺素
+          notes: T4極度升高
+ddxSource: auto-generated

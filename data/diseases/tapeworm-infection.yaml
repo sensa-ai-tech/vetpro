@@ -3,13 +3,15 @@ nameEn: Tapeworm Infection
 nameZh: 絛蟲感染
 bodySystem: infectious
 description: 絛蟲感染由多種絛蟲引起，犬貓最常見為 Dipylidium caninum（跳蚤絛蟲）與 Taenia spp.。需中間宿主完成生活史。飼主常因發現寵物肛門或糞便中的節片（似米粒）而就診。多數感染輕微，嚴重蟲荷量可影響營養吸收。
-
 aliases:
-  - { alias: 條蟲感染, language: zh }
-  - { alias: 絛蟲病, language: zh }
-  - { alias: Cestode Infection, language: en }
-  - { alias: Tapeworm Disease, language: en }
-
+  - alias: 條蟲感染
+    language: zh
+  - alias: 絛蟲病
+    language: zh
+  - alias: Cestode Infection
+    language: en
+  - alias: Tapeworm Disease
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: D. caninum 為貓最常見絛蟲。戶外捕獵貓可能感染 Taenia taeniaeformis。Echinococcus multilocularis 在部分地區為公衛問題。
-
 etiology:
   categories:
     - name: 常見絛蟲種
@@ -31,7 +32,6 @@ etiology:
         - D. caninum 經攝食含囊尾蚴的跳蚤
         - Taenia 經攝食含囊尾蚴的中間宿主
         - Echinococcus 經攝食含水泡囊的中間宿主內臟
-
 clinicalSigns:
   early:
     - 肛門周圍可見蠕動的白色節片（似米粒或芝麻）
@@ -42,7 +42,6 @@ clinicalSigns:
     - 嚴重感染可引起營養不良
     - 幼畜生長遲緩
     - 多數感染為輕微或無症狀
-
 diagnosis:
   primaryTests:
     - name: 節片觀察
@@ -52,7 +51,6 @@ diagnosis:
   additional:
     - Echinococcus 需糞便 PCR 確認（公衛重要性）
     - 糞便抗原檢測（研究中）
-
 treatment:
   principles:
     - Praziquantel 為特效驅絛蟲藥
@@ -65,41 +63,96 @@ treatment:
     - 預防捕獵行為（減少 Taenia 感染）
     - 定期糞便檢查
     - 每月廣效驅蟲（含 praziquantel 成分）
-
 prognosis: 絛蟲感染預後極佳，單次 praziquantel 治療即可清除。再感染常見（未控制跳蚤或持續捕獵行為）。Echinococcus 感染需特別關注公衛防控。
-
-
 guidelineRefs:
-  - sourceOrg: "Medical science monitor : international medical journal of experimental and clinical research"
-    title: "Comprehensive Insights into Arecoline Hydrobromide: Pharmacology, Toxicity, and Pharmacokinetics."
+  - sourceOrg: 'Medical science monitor : international medical journal of experimental and clinical research'
+    title: 'Comprehensive Insights into Arecoline Hydrobromide: Pharmacology, Toxicity, and Pharmacokinetics.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11566040/
     type: review
-    pmid: "39523587"
+    pmid: '39523587'
     relevance: primary
   - sourceOrg: Tropical parasitology
-    title: "Coinfection with Hymenolepis nana and Hymenolepis diminuta infection in a child from North India: A rare case report."
+    title: >-
+      Coinfection with Hymenolepis nana and Hymenolepis diminuta infection in a child from North India: A rare case
+      report.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7365497/
     type: case-report
-    pmid: "32775295"
+    pmid: '32775295'
     relevance: supporting
-  - sourceOrg: "Parasites &amp; vectors"
-    title: Identification of serum biomarkers for cystic echinococcosis in sheep through untargeted metabolomic analysis using LC-MS/MS technology.
+  - sourceOrg: Parasites &amp; vectors
+    title: >-
+      Identification of serum biomarkers for cystic echinococcosis in sheep through untargeted metabolomic analysis
+      using LC-MS/MS technology.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11686990/
     type: research
-    pmid: "39736799"
+    pmid: '39736799'
     relevance: supporting
   - sourceOrg: Microorganisms
-    title: Hymenolepis diminuta Reduce Lactic Acid Bacterial Load and Induce Dysbiosis in the Early Infection of the Probiotic Colonization of Swiss Albino Rat.
+    title: >-
+      Hymenolepis diminuta Reduce Lactic Acid Bacterial Load and Induce Dysbiosis in the Early Infection of the
+      Probiotic Colonization of Swiss Albino Rat.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9785584/
     type: research
-    pmid: "36557581"
+    pmid: '36557581'
     relevance: supporting
   - sourceOrg: PLoS pathogens
-    title: Infection with intestinal helminth (Hymenolepis diminuta) impacts exploratory behavior and cognitive processes in rats by changing the central level of neurotransmitters.
+    title: >-
+      Infection with intestinal helminth (Hymenolepis diminuta) impacts exploratory behavior and cognitive processes in
+      rats by changing the central level of neurotransmitters.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8947016/
     type: research
-    pmid: "35286352"
+    pmid: '35286352'
     relevance: supporting
 pubmedQueries:
   - query: '"tapeworm" AND (veterinary OR canine OR feline) AND ("treatment" OR "Dipylidium" OR "Echinococcus")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 絛蟲感染 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 觀察肛門周圍與糞便中蟲體，詢問跳蚤防控史
+      findings:
+        - 肛門周圍見白色米粒狀蟲節片
+        - 糞便表面蟲節片
+        - 肛門搔癢蹭地行為
+        - 跳蚤感染史
+    - step: 2
+      action: 糞便檢查
+      details: 糞便浮游法與直接抹片檢查
+      findings:
+        - 糞便浮游法敏感度低蟲卵包在節片內
+        - 節片壓片可見蟲卵包
+        - 蟲卵特徵鑑定
+        - 直接見到蟲節片即可確診
+    - step: 3
+      action: 種類鑑定與公衛評估
+      details: 確認絛蟲種類，評估人畜共患風險
+      findings:
+        - 瓜實絛蟲跳蚤傳播
+        - 犬絛蟲獵食傳播
+        - 包蟲人畜共患風險高
+        - 確認跳蚤防控狀態
+clinicalPearls:
+  - 糞便浮游法對絛蟲的檢出率低（約僅5-10%），肉眼觀察節片更可靠
+  - 見到白色米粒狀物在肛門周圍移動幾乎可確診Dipylidium
+  - 控制跳蚤是預防Dipylidium再感染的關鍵
+  - Echinococcus granulosus和E. multilocularis有重要人畜共通傳染意義
+  - 驅蟲後可能在24-48小時內排出大量蟲體
+monitoringItems:
+  - 驅蟲後糞便觀察
+  - 跳蚤控制效果
+  - 再感染跡象
+  - 定期糞便檢查
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+ddxSource: book

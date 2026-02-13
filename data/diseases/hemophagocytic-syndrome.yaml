@@ -2,14 +2,17 @@ slug: hemophagocytic-syndrome
 nameEn: Hemophagocytic Syndrome
 nameZh: 噬血症候群
 bodySystem: hematology
-description: 噬血症候群（HPS/HLH）為巨噬細胞/組織球過度活化並吞噬正常血球細胞的嚴重免疫失調疾病。特徵為全血球減少、高三酸甘油酯血症、高鐵蛋白血症、脾腫大與肝腫大。犬隻可為感染性（Leishmania、Ehrlichia）、腫瘤性或免疫介導性。
-
+description: >-
+  噬血症候群（HPS/HLH）為巨噬細胞/組織球過度活化並吞噬正常血球細胞的嚴重免疫失調疾病。特徵為全血球減少、高三酸甘油酯血症、高鐵蛋白血症、脾腫大與肝腫大。犬隻可為感染性（Leishmania、Ehrlichia）、腫瘤性或免疫介導性。
 aliases:
-  - { alias: HPS, language: en }
-  - { alias: HLH, language: en }
-  - { alias: Hemophagocytic Lymphohistiocytosis, language: en }
-  - { alias: 噬血細胞症候群, language: zh }
-
+  - alias: HPS
+    language: en
+  - alias: HLH
+    language: en
+  - alias: Hemophagocytic Lymphohistiocytosis
+    language: en
+  - alias: 噬血細胞症候群
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +20,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻罕見，可與嚴重感染或腫瘤相關。
-
 etiology:
   categories:
     - name: 感染相關
@@ -35,7 +37,6 @@ etiology:
       examples:
         - 原發性免疫介導性 HPS
         - 自體免疫性疾病觸發
-
 clinicalSigns:
   early:
     - 發燒
@@ -47,14 +48,12 @@ clinicalSigns:
     - 黃疸
     - 出血傾向
     - 多器官衰竭
-
 diagnosis:
   primaryTests:
     - name: 全血球計數（CBC）
       notes: 全血球減少（bi- 或 pancytopenia）。非再生性貧血。可見血液抹片中巨噬細胞吞噬血球的現象。
     - name: 骨髓穿刺或脾臟/肝臟細胞學
       notes: 確診需見到巨噬細胞/組織球吞噬正常紅血球、白血球或血小板（hemophagocytosis）。骨髓、脾臟或肝臟抹片中找到噬血巨噬細胞。
-
 treatment:
   principles:
     - 治療基礎病因（感染、腫瘤）
@@ -62,25 +61,61 @@ treatment:
     - 支持性治療
   general:
     - 治療感染性病因（Doxycycline、抗真菌藥等）
-    - "免疫抑制：Dexamethasone 或 Prednisolone 高劑量"
-    - "Cyclosporine 5-10 mg/kg PO q12h（嚴重病例）"
+    - 免疫抑制：Dexamethasone 或 Prednisolone 高劑量
+    - Cyclosporine 5-10 mg/kg PO q12h（嚴重病例）
     - 支持性輸血
     - 腫瘤相關：化療（若可行）
-
 prognosis: 預後不良，死亡率高。感染相關 HPS 在感染控制後有可能恢復。腫瘤相關（特別是惡性組織球增生症）預後極差。免疫抑制治療可暫時改善症狀，但長期預後取決於基礎病因控制。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in medicine
-    title: "Severe pneumonia caused by Chlamydia abortus complicated by hemophagocytic syndrome: a case report."
+    title: 'Severe pneumonia caused by Chlamydia abortus complicated by hemophagocytic syndrome: a case report.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11933035/
     type: case-report
-    pmid: "40134914"
+    pmid: '40134914'
   - sourceOrg: The Turkish journal of pediatrics
     title: Different clinical spectrum of leptospirosis.
     url: https://pubmed.ncbi.nlm.nih.gov/27976565/
     type: case-report
-    pmid: "27976565"
+    pmid: '27976565'
 pubmedQueries:
   - query: '"hemophagocytic syndrome" OR "hemophagocytic lymphohistiocytosis" AND (veterinary OR canine OR feline)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: splenomegaly
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: jaundice
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 噬血症候群 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - hepatomegaly 相關症狀
+        - splenomegaly 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 全血球計數（CBC）
+          notes: 全血球減少（bi- 或 pancytopenia）。非再生性貧血。可見血液抹片中巨噬細胞吞噬血球的現象。
+        - name: 骨髓穿刺或脾臟/肝臟細胞學
+          notes: 確診需見到巨噬細胞/組織球吞噬正常紅血球、白血球或血小板（hemophagocytosis）。骨髓、脾臟或肝臟抹片中找到噬血巨噬細胞。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因（感染、腫瘤）
+        - 免疫抑制控制過度免疫活化
+        - 支持性治療
+ddxSource: auto-generated

@@ -3,18 +3,18 @@ nameEn: Dachshund Acanthosis Nigricans
 nameZh: 臘腸犬黑棘皮症
 bodySystem: dermatology
 description: 臘腸犬特有的皮膚病,以腋下與腹股溝等摩擦部位出現色素沉著、皮膚增厚與脫毛為特徵。可為原發性(遺傳)或繼發性(內分泌或過敏相關),影響生活品質。
-
 aliases:
-  - { alias: 臘腸犬黑色棘皮病, language: zh }
-  - { alias: Dachshund AN, language: en }
-  - { alias: 臘腸犬色素沉著症, language: zh }
-
+  - alias: 臘腸犬黑色棘皮病
+    language: zh
+  - alias: Dachshund AN
+    language: en
+  - alias: 臘腸犬色素沉著症
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 臘腸犬為唯一好發原發性黑棘皮症的品種,通常於1歲前發病,繼發性可見於任何品種
-
 etiology:
   categories:
     - name: 原發性(臘腸犬特異)
@@ -27,7 +27,6 @@ etiology:
         - 慢性摩擦或肥胖
         - 過敏性皮膚炎
         - 皮膚感染
-
 clinicalSigns:
   early:
     - 腋下、腹股溝出現輕度色素沉著
@@ -39,21 +38,19 @@ clinicalSigns:
     - 繼發性細菌或酵母菌感染
     - 油膩感與惡臭(若感染)
     - 搔癢(繼發性病例)
-
 diagnosis:
   primaryTests:
     - name: 皮膚組織病理
-      notes: "表皮過度角化、棘層肥厚、基底層黑色素增加,真皮淺層輕度炎症"
+      notes: 表皮過度角化、棘層肥厚、基底層黑色素增加,真皮淺層輕度炎症
     - name: 內分泌篩檢
-      notes: "甲狀腺功能(T4, TSH)、皮質醇(LDDS test)排除繼發性原因"
+      notes: 甲狀腺功能(T4, TSH)、皮質醇(LDDS test)排除繼發性原因
     - name: 皮膚細胞學
-      notes: "評估繼發性細菌或Malassezia感染"
+      notes: 評估繼發性細菌或Malassezia感染
   differentialDiagnoses:
     - 內分泌性皮膚病
     - 慢性過敏性皮膚炎
     - 皮膚淋巴瘤
     - 色素失禁症
-
 treatment:
   medical:
     - 原發性:無法根治,症狀治療為主
@@ -63,12 +60,48 @@ treatment:
     - 繼發性:治療潛在原因(甲狀腺素補充、控制過敏等)
     - 繼發感染:外用抗菌洗劑(Chlorhexidine 2-4%)或口服抗生素
     - 減重(肥胖病例)
-
 prognosis:
-  general: "原發性黑棘皮症為進行性疾病,無法治癒但可控制症狀,不影響壽命。繼發性病例治療潛在原因後可顯著改善或痊癒。定期皮膚護理與感染控制為管理重點。"
-
+  general: 原發性黑棘皮症為進行性疾病,無法治癒但可控制症狀,不影響壽命。繼發性病例治療潛在原因後可顯著改善或痊癒。定期皮膚護理與感染控制為管理重點。
 prevention:
   - 原發性:避免繁殖患病臘腸犬
   - 維持理想體重減少皮膚摩擦
   - 定期皮膚檢查,早期治療繼發感染
   - 內分泌疾病早期診斷與治療
+diagnosticAlgorithm:
+  title: 黑色棘皮症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估皮膚色素沉著和增厚部位
+      findings:
+        - 腋窩和腹股溝對稱性色素沉著
+        - 皮膚增厚和苔蘚化
+        - 臘腸犬為原發型好發品種
+        - 繼發型可見於任何品種
+    - step: 2
+      action: 基礎疾病篩檢
+      details: 排除繼發性黑色棘皮症的基礎病因
+      findings:
+        - 甲狀腺功能低下篩檢
+        - 腎上腺皮質功能亢進篩檢
+        - 過敏性皮膚炎評估
+        - 皮膚感染（細菌、酵母菌）
+    - step: 3
+      action: 組織病理學
+      details: 進行皮膚活檢確認病理變化
+      findings:
+        - 表皮棘層增厚
+        - 乳頭狀瘤樣增生
+        - 黑色素沉著增加
+        - 可能伴有繼發性感染
+clinicalPearls:
+  - 繼發性黑色棘皮症遠比原發性常見，必須積極尋找基礎病因
+  - Malassezia過度增殖常伴隨黑色棘皮症，抗酵母菌治療是重要環節
+  - 臘腸犬的原發性黑色棘皮症通常在1歲前出現且逐漸進展
+  - 控制肥胖和過敏可顯著改善繼發性病例
+monitoringItems:
+  - 每4-6週追蹤評估治療反應
+  - 監測繼發感染（酵母菌和細菌）
+  - 定期評估基礎病因的控制狀態
+  - 體重管理監測
+ddxSource: book

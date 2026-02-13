@@ -3,11 +3,11 @@ nameEn: Bilateral Adrenalectomy
 nameZh: 雙側腎上腺切除術
 bodySystem: urinary
 description: 手術移除雙側腎上腺,用於治療雙側腎上腺腫瘤或嚴重垂體依賴性庫興氏症,術後需終生糖皮質激素及鹽皮質激素補充治療。
-
 aliases:
-  - { alias: 雙側腎上腺摘除, language: zh }
-  - { alias: Bilateral adrenal gland removal, language: en }
-
+  - alias: 雙側腎上腺摘除
+    language: zh
+  - alias: Bilateral adrenal gland removal
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 極罕見,貓庫興氏症本身就少見
-
 etiology:
   categories:
     - name: 適應症
@@ -30,7 +29,6 @@ etiology:
         - 術中大出血(後腔靜脈損傷)
         - 術後急性腎上腺功能不全
         - 麻醉風險(庫興氏症犬併發症多)
-
 clinicalSigns:
   early:
     - 術後立即出現腎上腺功能不全症狀(若激素補充不足)
@@ -40,20 +38,18 @@ clinicalSigns:
     - 電解質紊亂(低鈉、高鉀)
     - 低血糖
     - 庫興氏症症狀消失(多渴多尿、腹部膨大改善)
-
 diagnosis:
   primaryTests:
     - name: 術前評估
-      notes: "ACTH刺激試驗、影像學確認雙側病變、全身健康評估"
+      notes: ACTH刺激試驗、影像學確認雙側病變、全身健康評估
     - name: 術後監測
-      notes: "電解質(每4-8小時)、血糖、血壓、臨床症狀"
+      notes: 電解質(每4-8小時)、血糖、血壓、臨床症狀
     - name: ACTH刺激試驗
-      notes: "術後基礎及post-ACTH皮質醇均應極低,確認腎上腺切除完全"
+      notes: 術後基礎及post-ACTH皮質醇均應極低,確認腎上腺切除完全
   differentialDiagnoses:
     - 單側腎上腺切除(若僅單側病變)
     - 內科治療(Trilostane或Mitotane)
     - 垂體照射治療(PDH)
-
 treatment:
   medical:
     - 術前準備: Trilostane或Mitotane控制庫興氏症症狀數週
@@ -65,39 +61,73 @@ treatment:
     - 壓力狀況時增加Prednisolone劑量1.5-2倍
     - 靜脈輸液支持及密集監護
     - 終生激素補充治療
-
 prognosis:
-  general: "手術死亡率約10-20%,存活者術後生活品質改善。需終生仔細監測激素補充劑量,預後取決於術前併發症嚴重程度及術後照護品質。"
-
+  general: 手術死亡率約10-20%,存活者術後生活品質改善。需終生仔細監測激素補充劑量,預後取決於術前併發症嚴重程度及術後照護品質。
 prevention:
   - 優先考慮內科治療(Trilostane),手術為最後選擇
   - 術前優化全身狀況(控制庫興氏症、糖尿病、高血壓等)
   - 術後密集監測及激素補充
-
-
 guidelineRefs:
   - sourceOrg: Endocrine
-    title: "Recurrence after pituitary surgery in adult Cushing's disease: a systematic review on diagnosis and treatment."
+    title: 'Recurrence after pituitary surgery in adult Cushing''s disease: a systematic review on diagnosis and treatment.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7396205/
     type: review
-    pmid: "32743767"
+    pmid: '32743767'
   - sourceOrg: Frontiers in surgery
     title: Development of an experimental model for vascularized adrenal gland transplantation in rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12833046/
     type: research
-    pmid: "41602923"
+    pmid: '41602923'
   - sourceOrg: Frontiers in veterinary science
-    title: "Laparoscopic vs. open adrenalectomy: perioperative data and survival analysis in 70 dogs with an adrenal tumor."
+    title: 'Laparoscopic vs. open adrenalectomy: perioperative data and survival analysis in 70 dogs with an adrenal tumor.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10468569/
     type: research
-    pmid: "37662979"
+    pmid: '37662979'
   - sourceOrg: Biomolecules
-    title: Stereological Evidence of Non-Selective Hippocampal Neurodegeneration, IGF-1 Depletion, and Behavioral Deficit following Short Term Bilateral Adrenalectomy in Wistar Rats.
+    title: >-
+      Stereological Evidence of Non-Selective Hippocampal Neurodegeneration, IGF-1 Depletion, and Behavioral Deficit
+      following Short Term Bilateral Adrenalectomy in Wistar Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9855887/
     type: research
-    pmid: "36671407"
+    pmid: '36671407'
   - sourceOrg: Frontiers in physiology
-    title: Glucocorticoids contribute to metabolic and liver impairments induced by lactation overnutrition in male adult rats.
+    title: >-
+      Glucocorticoids contribute to metabolic and liver impairments induced by lactation overnutrition in male adult
+      rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10206267/
     type: research
-    pmid: "37234421"
+    pmid: '37234421'
+associatedSymptoms:
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+diagnosticAlgorithm:
+  title: 雙側腎上腺切除術 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - abdominal-distension 相關症狀
+        - dehydration 相關症狀
+        - polyuria-polydipsia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 術前評估
+          notes: ACTH刺激試驗、影像學確認雙側病變、全身健康評估
+        - name: 術後監測
+          notes: 電解質(每4-8小時)、血糖、血壓、臨床症狀
+        - name: ACTH刺激試驗
+          notes: 術後基礎及post-ACTH皮質醇均應極低,確認腎上腺切除完全
+ddxSource: auto-generated

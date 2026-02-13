@@ -3,11 +3,11 @@ nameEn: Paragonimus Kellicotti
 nameZh: 肺吸蟲感染
 bodySystem: respiratory
 description: 吸蟲寄生於肺實質形成囊腫,可能侵犯胸膜或其他器官。透過攝食生的淡水螃蟹或小龍蝦感染。
-
 aliases:
-  - { alias: 肺吸蟲病, language: zh }
-  - { alias: Lung Fluke, language: en }
-
+  - alias: 肺吸蟲病
+    language: zh
+  - alias: Lung Fluke
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,13 +17,11 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 同上
-
 etiology:
   categories:
     - name: 寄生蟲感染
       examples:
         - Paragonimus kellicotti (吸蟲)
-
 clinicalSigns:
   early:
     - 慢性咳嗽
@@ -32,38 +30,62 @@ clinicalSigns:
     - 呼吸困難
     - 氣胸 (若囊腫破裂)
     - 胸腔積液
-
 diagnosis:
   primaryTests:
     - name: 糞便沉澱法
-      notes: "檢測吸蟲卵 (金黃色、有蓋)"
+      notes: 檢測吸蟲卵 (金黃色、有蓋)
     - name: 胸部 X 光
-      notes: "肺囊腫、結節、氣胸、胸腔積液"
+      notes: 肺囊腫、結節、氣胸、胸腔積液
     - name: 胸腔積液分析
-      notes: "可能發現蟲卵"
+      notes: 可能發現蟲卵
   differentialDiagnoses:
     - 肺腫瘤
     - 真菌性肺炎
     - 肺膿瘍
-
 treatment:
   medical:
     - Praziquantel 25 mg/kg PO q8h x 3 天
     - Fenbendazole 50 mg/kg PO q24h x 10-14 天
     - 氣胸處理 (若發生)
-
 prognosis:
-  general: "預後良好;經適當治療可完全康復;囊腫可能需數月吸收"
-
+  general: 預後良好;經適當治療可完全康復;囊腫可能需數月吸收
 prevention:
   - 避免生食淡水螃蟹或小龍蝦
   - 流行區定期糞檢
-
-
 guidelineRefs:
   - sourceOrg: Food and waterborne parasitology
-    title: "Endemic Paragonimus kellicotti infections in animals and humans in USA and Canada: Review and personal perspective."
+    title: >-
+      Endemic Paragonimus kellicotti infections in animals and humans in USA and Canada: Review and personal
+      perspective.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9801091/
     type: review
-    pmid: "36588917"
+    pmid: '36588917'
     relevance: primary
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: haemoptysis
+    frequency: common
+diagnosticAlgorithm:
+  title: 肺吸蟲感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - coughing 相關症狀
+        - haemoptysis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便沉澱法
+          notes: 檢測吸蟲卵 (金黃色、有蓋)
+        - name: 胸部 X 光
+          notes: 肺囊腫、結節、氣胸、胸腔積液
+        - name: 胸腔積液分析
+          notes: 可能發現蟲卵
+ddxSource: auto-generated

@@ -3,22 +3,20 @@ nameEn: Chinchilla Diarrhea
 nameZh: 龍貓腹瀉
 bodySystem: gastrointestinal
 description: 龍貓排出軟便或水樣便，可因飲食突變、細菌感染（Pseudomonas、Proteus）或寄生蟲引起。龍貓腹瀉可快速導致脫水，需積極處理。
-
 aliases:
-  - { alias: "龍貓腹瀉", language: zh }
-  - { alias: "Chinchilla Diarrhea", language: en }
-
+  - alias: 龍貓腹瀉
+    language: zh
+  - alias: Chinchilla Diarrhea
+    language: en
 species:
   - speciesCommon: chinchilla
     prevalence: uncommon
     notes: 龍貓可受此疾病影響。
-
 etiology:
   categories:
     - name: 病因
       examples:
         - 詳見臨床文獻
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -27,14 +25,12 @@ clinicalSigns:
   progressive:
     - 症狀加重
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 完整理學檢查與病史評估。
     - name: 實驗室檢查
       notes: CBC/生化排除系統性疾病。
-
 treatment:
   principles:
     - 治療基礎病因
@@ -44,26 +40,64 @@ treatment:
     - 依病因治療
     - 支持性照護
     - 定期追蹤
-
 prognosis: 預後取決於疾病嚴重度與治療時效。早期診斷與適當治療可改善預後。
-
-
 guidelineRefs:
   - sourceOrg: The veterinary clinics of North America. Exotic animal practice
     title: Pathology of the exotic companion mammal gastrointestinal system.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7172800/
     type: review
-    pmid: "24767738"
+    pmid: '24767738'
   - sourceOrg: mSphere
-    title: Immunization with a Biofilm-Disrupting Nontypeable Haemophilus influenzae Vaccine Antigen Did Not Alter the Gut Microbiome in Chinchillas, Unlike Oral Delivery of a Broad-Spectrum Antibiotic Commonly Used for Otitis Media.
+    title: >-
+      Immunization with a Biofilm-Disrupting Nontypeable Haemophilus influenzae Vaccine Antigen Did Not Alter the Gut
+      Microbiome in Chinchillas, Unlike Oral Delivery of a Broad-Spectrum Antibiotic Commonly Used for Otitis Media.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7160684/
     type: research
-    pmid: "32295873"
+    pmid: '32295873'
   - sourceOrg: The veterinary clinics of North America. Exotic animal practice
     title: Gastroenterology in Rodents.
     url: https://pubmed.ncbi.nlm.nih.gov/40000281/
     type: review
-    pmid: "40000281"
+    pmid: '40000281'
 pubmedQueries:
   - query: '"Chinchilla Diarrhea" AND (veterinary OR chinchilla) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 龍貓腹瀉 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 完整理學檢查與病史評估。
+        - name: 實驗室檢查
+          notes: CBC/生化排除系統性疾病。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 支持性照護
+        - 監測恢復進度
+ddxSource: auto-generated

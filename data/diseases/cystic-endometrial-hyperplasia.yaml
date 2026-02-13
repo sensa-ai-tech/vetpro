@@ -2,13 +2,16 @@ slug: cystic-endometrial-hyperplasia
 nameEn: Cystic Endometrial Hyperplasia
 nameZh: 囊性子宮內膜增生
 bodySystem: reproductive
-description: 囊性子宮內膜增生 (cystic endometrial hyperplasia, CEH) 為黃體酮長期刺激子宮內膜引起的增生性病變，常為子宮蓄膿 (pyometra) 的前驅病變。好發於中老齡未絕育母犬，通常在發情後黃體期（diestrus）發展。CEH-pyometra complex 為完整母犬最重要的生殖疾病之一。
-
+description: >-
+  囊性子宮內膜增生 (cystic endometrial hyperplasia, CEH) 為黃體酮長期刺激子宮內膜引起的增生性病變，常為子宮蓄膿 (pyometra)
+  的前驅病變。好發於中老齡未絕育母犬，通常在發情後黃體期（diestrus）發展。CEH-pyometra complex 為完整母犬最重要的生殖疾病之一。
 aliases:
-  - { alias: 子宮內膜囊性增生, language: zh }
-  - { alias: CEH, language: en }
-  - { alias: CEH-Pyometra Complex, language: en }
-
+  - alias: 子宮內膜囊性增生
+    language: zh
+  - alias: CEH
+    language: en
+  - alias: CEH-Pyometra Complex
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓為誘發排卵動物，自然 CEH 較犬少。外源性黃體酮投與或持續性黃體可引起。
-
 etiology:
   categories:
     - name: 致病機制
@@ -31,7 +33,6 @@ etiology:
         - 高齡
         - 外源性黃體酮或雌激素投與
         - 反覆假懷孕
-
 clinicalSigns:
   early:
     - 可能無臨床症狀（早期 CEH）
@@ -43,7 +44,6 @@ clinicalSigns:
     - 多飲多尿
     - 厭食、嗜睡、嘔吐
     - 敗血症（閉鎖型 pyometra）
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
@@ -55,7 +55,6 @@ diagnosis:
     - 陰道細胞學
     - 血清黃體酮
     - 尿液分析
-
 treatment:
   principles:
     - 卵巢子宮摘除術 (OHE) 為首選根治治療
@@ -69,36 +68,81 @@ treatment:
     - 廣效抗生素（amoxicillin-clavulanate）
     - 藥物治療後建議下次發情即配種
     - 術後或藥物治療後密切追蹤
-
 prognosis: OHE 根治率極高。藥物治療繁殖用犬成功率約 60-80%，但 CEH-pyometra 復發率高（>70% 在後續發情週期）。閉鎖型 pyometra 未治療可致死（子宮破裂、敗血症）。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
-    title: "\"My Bitch Is Empty!\" An Overview of the Reasons for Pregnancy Loss in Dogs."
+    title: '"My Bitch Is Empty!" An Overview of the Reasons for Pregnancy Loss in Dogs.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11860774/
     type: review
-    pmid: "40005887"
+    pmid: '40005887'
   - sourceOrg: Veterinary sciences
-    title: "\"My Bitch Is Empty!\" an Overview of the Preconceptional Causes of Infertility in Dogs."
+    title: '"My Bitch Is Empty!" an Overview of the Preconceptional Causes of Infertility in Dogs.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12298178/
     type: review
-    pmid: "40711323"
+    pmid: '40711323'
   - sourceOrg: Theriogenology
     title: Infertility in purebred cats - A review of the potential causes.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7521919/
     type: review
-    pmid: "33038819"
+    pmid: '33038819'
   - sourceOrg: Journal of medical primatology
-    title: A case report of ovotesticular disorder of sex development (OT-DSD) in a baboon (Papio spp.) and a brief review of the non-human primate literature.
+    title: >-
+      A case report of ovotesticular disorder of sex development (OT-DSD) in a baboon (Papio spp.) and a brief review of
+      the non-human primate literature.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5934321/
     type: review
-    pmid: "29504143"
+    pmid: '29504143'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Pyometra in the queen: To spay or not to spay?"
+    title: 'Pyometra in the queen: To spay or not to spay?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11148877/
     type: review
-    pmid: "26733546"
+    pmid: '26733546'
 pubmedQueries:
-  - query: '"cystic endometrial hyperplasia" OR "CEH-pyometra" AND (veterinary OR canine OR feline) AND ("treatment" OR "aglepristone")'
+  - query: >-
+      "cystic endometrial hyperplasia" OR "CEH-pyometra" AND (veterinary OR canine OR feline) AND ("treatment" OR
+      "aglepristone")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 囊性子宮內膜增生 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - abdominal-distension 相關症狀
+        - polyuria-polydipsia 相關症狀
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 子宮腫大，內膜增厚，腺體囊性變化。Pyometra 時子宮腔液體蓄積
+        - name: CBC + 生化
+          notes: Pyometra 時白血球增多（left shift）、BUN/Cr 可能升高（腎損傷）
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 腹部 X-ray（子宮腫大）
+        - 陰道細胞學
+        - 血清黃體酮
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 卵巢子宮摘除術 (OHE) 為首選根治治療
+        - 繁殖用犬可考慮藥物治療
+        - Pyometra 為外科急症
+ddxSource: auto-generated

@@ -3,12 +3,13 @@ nameEn: Redirected Aggression
 nameZh: 轉向性攻擊
 bodySystem: behavioral
 description: 動物在被激發攻擊狀態時，無法接觸到實際刺激源而轉向攻擊就近的其他對象（人或動物）。貓特別常見，例如看到窗外的貓而攻擊身旁的同居貓或飼主。
-
 aliases:
-  - { alias: "重定向攻擊", language: zh }
-  - { alias: "轉嫁攻擊", language: zh }
-  - { alias: "Displaced Aggression", language: en }
-
+  - alias: 重定向攻擊
+    language: zh
+  - alias: 轉嫁攻擊
+    language: zh
+  - alias: Displaced Aggression
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓轉向性攻擊極為常見，窗外貓引發的激動可轉向攻擊同居貓，且可導致長期關係破裂。
-
 etiology:
   categories:
     - name: 激發狀態轉移
@@ -29,7 +29,6 @@ etiology:
         - 窗邊觀察引發激動
         - 牽繩遛狗時遇到其他犬
         - 高噪音環境過度刺激
-
 clinicalSigns:
   early:
     - 注視窗外高度激動
@@ -41,14 +40,12 @@ clinicalSigns:
     - 貓間關係破裂（長期互相攻擊）
     - 受害者變得恐懼迴避
     - 攻擊可能非常猛烈且無預警
-
 diagnosis:
   primaryTests:
     - name: 事件分析
       notes: 確認攻擊發生時是否有明確的外部刺激物（窗外動物、噪音）且攻擊對象並非該刺激源。
     - name: 環境評估
       notes: 檢視家中動物觀察外部環境的機會（窗台、陽台）。
-
 treatment:
   principles:
     - 辨識並移除觸發刺激
@@ -61,17 +58,55 @@ treatment:
     - 貓間關係破裂需隔離後重新漸進式介紹
     - 費洛蒙擴散器（Feliway，貓）
     - 嚴重時藥物輔助（Fluoxetine）
-
 prognosis: 找出並消除觸發刺激後預後良好。貓間轉向性攻擊導致的關係破裂恢復困難，需數週至數月的漸進式重新介紹。部分貓間關係可能無法修復。犬轉向性攻擊經管理後通常可控。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Stress in owned cats: behavioural changes and welfare implications."
+    title: 'Stress in owned cats: behavioural changes and welfare implications.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10816390/
     type: review
-    pmid: "26101238"
+    pmid: '26101238'
     relevance: supporting
 pubmedQueries:
   - query: '"Redirected Aggression" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 重導向攻擊行為 診斷流程
+  steps:
+    - step: 1
+      action: 事件重建
+      details: 詳細還原攻擊前後的時間線和環境
+      findings:
+        - 可識別激動源
+        - 激動後攻擊無關目標
+        - 無明確觸發
+    - step: 2
+      action: 醫學排除
+      details: 體格、神經學檢查和基本血液學
+      findings:
+        - 醫學正常
+        - 疼痛來源
+        - 神經異常
+    - step: 3
+      action: 環境評估
+      details: 檢查窗外視野和外部動物活動
+      findings:
+        - 外部動物確認
+        - 門鈴/噪音觸發
+        - 未知觸發
+    - step: 4
+      action: 管理方案
+      details: 阻斷激動源+飼主教育+必要時藥物
+      findings:
+        - 環境修正有效
+        - 需藥物輔助
+        - 同住動物需重新介紹
+clinicalPearls:
+  - 永遠不要觸碰或試圖安撫正在高度激動狀態的貓，等待其自行冷靜
+  - 窗外的陌生貓是貓重導向攻擊最常見的觸發因子
+  - 一次嚴重的重導向攻擊可能導致同住貓之間永久性的敵對關係
+monitoringItems:
+  - 攻擊事件頻率追蹤
+  - 環境修正效果評估
+  - 同住動物關係恢復進度
+  - 飼主安全行為遵從度
+ddxSource: book

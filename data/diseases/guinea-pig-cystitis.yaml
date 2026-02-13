@@ -3,22 +3,20 @@ nameEn: Guinea Pig Cystitis
 nameZh: 天竺鼠膀胱炎
 bodySystem: urinary
 description: 天竺鼠下泌尿道感染，常伴隨結石或尿液沉渣。天竺鼠正常排出含碳酸鈣結晶的白色混濁尿液，但過量鈣攝入可導致泌尿道結石。
-
 aliases:
-  - { alias: "天竺鼠膀胱炎", language: zh }
-  - { alias: "Guinea Pig Cystitis", language: en }
-
+  - alias: 天竺鼠膀胱炎
+    language: zh
+  - alias: Guinea Pig Cystitis
+    language: en
 species:
   - speciesCommon: guinea pig
     prevalence: uncommon
     notes: 天竺鼠可受此疾病影響。
-
 etiology:
   categories:
     - name: 病因
       examples:
         - 詳見臨床文獻
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -27,14 +25,12 @@ clinicalSigns:
   progressive:
     - 症狀加重
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 完整理學檢查與病史評估。
     - name: 實驗室檢查
       notes: CBC/生化排除系統性疾病。
-
 treatment:
   principles:
     - 治療基礎病因
@@ -44,38 +40,72 @@ treatment:
     - 依病因治療
     - 支持性照護
     - 定期追蹤
-
 prognosis: 預後取決於疾病嚴重度與治療時效。早期診斷與適當治療可改善預後。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Lower Urinary Tract Diseases in Guinea Pigs: A 14-Year Retrospective Study (2004-2018)."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Lower Urinary Tract Diseases in Guinea Pigs: A 14-Year Retrospective Study (2004-2018).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9817880/
     type: research
-    pmid: "36611721"
+    pmid: '36611721'
   - sourceOrg: mSphere
     title: Glycosuria Alters Uropathogenic Escherichia coli Global Gene Expression and Virulence.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9241551/
     type: research
-    pmid: "35477301"
+    pmid: '35477301'
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
     title: Chondroblastic osteosarcoma of the middle ear in a guinea pig (Cavia porcellus).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6049327/
     type: research
-    pmid: "30104775"
+    pmid: '30104775'
   - sourceOrg: PloS one
     title: Acute radiation impacts contractility of guinea-pig bladder strips affecting mucosal-detrusor interactions.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5841802/
     type: research
-    pmid: "29513744"
+    pmid: '29513744'
     relevance: supporting
   - sourceOrg: Frontiers in pharmacology
-    title: Netupitant, a Potent and Highly Selective NK1 Receptor Antagonist, Alleviates Acetic Acid-Induced Bladder Overactivity in Anesthetized Guinea-Pigs.
+    title: >-
+      Netupitant, a Potent and Highly Selective NK1 Receptor Antagonist, Alleviates Acetic Acid-Induced Bladder
+      Overactivity in Anesthetized Guinea-Pigs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4972833/
     type: research
-    pmid: "27540361"
+    pmid: '27540361'
     relevance: supporting
 pubmedQueries:
   - query: '"Guinea Pig Cystitis" AND (veterinary OR "guinea pig") AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 天竺鼠膀胱炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 完整理學檢查與病史評估。
+        - name: 實驗室檢查
+          notes: CBC/生化排除系統性疾病。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 支持性照護
+        - 監測恢復進度
+ddxSource: auto-generated

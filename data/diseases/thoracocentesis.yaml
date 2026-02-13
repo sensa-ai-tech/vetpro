@@ -3,11 +3,11 @@ nameEn: Thoracocentesis
 nameZh: 胸腔穿刺術
 bodySystem: emergency
 description: 胸腔積液或氣胸的診斷性或治療性穿刺抽吸。於第7-9肋間進行。
-
 aliases:
-  - { alias: 胸腔穿刺, language: zh }
-  - { alias: Thoracic Paracentesis, language: en }
-
+  - alias: 胸腔穿刺
+    language: zh
+  - alias: Thoracic Paracentesis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,29 +17,25 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 同犬
-
 etiology:
   categories:
     - name: 適應症
       examples:
         - 胸腔積液、氣胸、診斷性抽吸
-
 clinicalSigns:
   early:
     - 呼吸困難、張口呼吸
     - 胸腔鈍音或過度共鳴(氣胸)
   progressive:
     - 紫紺、呼吸衰竭
-
 diagnosis:
   primaryTests:
     - name: 胸部X光
-      notes: "確認胸水或氣胸"
+      notes: 確認胸水或氣胸
     - name: 超音波
-      notes: "定位積液"
+      notes: 定位積液
   differentialDiagnoses:
     - 心源性肺水腫
-
 treatment:
   medical:
     - 第7-9肋間穿刺
@@ -47,30 +43,50 @@ treatment:
     - 抽取液體或氣體
     - 送檢胸水(細胞學、培養)
     - 胸部X光確認改善
-
 prognosis:
-  general: "可快速緩解呼吸困難。可能需重複穿刺或置入胸管。"
-
+  general: 可快速緩解呼吸困難。可能需重複穿刺或置入胸管。
 prevention:
   - 監測復發
-
-
 guidelineRefs:
   - sourceOrg: BMC veterinary research
-    title: Constrictive-effusive pericarditis and epicarditis as a cause of restrictive cardiomyopathy associated with Dirofilaria repens infection in a dog.
+    title: >-
+      Constrictive-effusive pericarditis and epicarditis as a cause of restrictive cardiomyopathy associated with
+      Dirofilaria repens infection in a dog.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12522316/
     type: case-report
-    pmid: "41088168"
+    pmid: '41088168'
     relevance: supporting
   - sourceOrg: Frontiers in veterinary science
     title: A retrospective study on parapneumonic effusion in 130 dogs with a clinical diagnosis of pneumonia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10060870/
     type: research
-    pmid: "37008361"
+    pmid: '37008361'
     relevance: supporting
   - sourceOrg: Journal of feline medicine and surgery
-    title: Clinicopathological and radiographic features in 40 cats diagnosed with pulmonary and cutaneous Rhodococcus equi infection (2012-2018).
+    title: >-
+      Clinicopathological and radiographic features in 40 cats diagnosed with pulmonary and cutaneous Rhodococcus equi
+      infection (2012-2018).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7206563/
     type: research
-    pmid: "32400257"
+    pmid: '32400257'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 胸腔穿刺術 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸部X光
+          notes: 確認胸水或氣胸
+        - name: 超音波
+          notes: 定位積液
+ddxSource: auto-generated

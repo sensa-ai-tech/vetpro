@@ -1,0 +1,96 @@
+slug: idiopathic-cystitis
+nameEn: Feline Idiopathic Cystitis (FIC)
+nameZh: 貓自發性膀胱炎
+description: 貓最常見的下泌尿道疾病，佔貓下泌尿道症狀（FLUTD）病例的55-69%。特徵為無菌性膀胱壁發炎，病因不明但與神經內分泌系統失調和環境壓力密切相關。屬排除性診斷，需先排除感染、結石和腫瘤等已知病因。
+bodySystem: renal
+species:
+  - speciesCommon: dog
+  - speciesCommon: cat
+etiology:
+  categories:
+    - name: Risk Factors
+      examples:
+        - 室內飼養且缺乏環境豐富化
+        - 肥胖/體重過重
+        - 多貓家庭或環境壓力
+        - 乾飼料為主食（飲水量不足）
+        - 緊張型性格
+        - 缺乏運動
+clinicalSigns:
+  early:
+    - 頻尿（頻繁進出貓砂盆）
+    - 血尿（尿液帶粉紅色至紅色）
+    - 排尿困難或排尿姿勢異常
+    - 不在貓砂盆外排尿
+    - 過度舔舐生殖區域
+    - 症狀反覆發作，常與壓力事件相關
+  progressive:
+    - 膀胱觸診敏感或增厚
+    - 公貓可能出現尿道阻塞（膀胱脹大、堅硬）
+    - 會陰部可見尿液汙染
+    - 體態評分常偏高
+    - 其餘理學檢查多無特異性發現
+diagnosis:
+  primaryTests:
+    - 完整尿液分析（無菌採集）
+    - 尿液培養與藥敏試驗
+    - 腹部X光（排除結石）
+    - CBC/血液生化（評估全身狀態）
+  additional:
+    - 腹部超音波（評估膀胱壁厚度、排除腫瘤）
+    - 膀胱鏡檢（見黏膜下出血點—肎皮球體）
+    - 尿液GAG濃度測定
+    - 對比攝影排除解剖異常
+treatment:
+  principles:
+    - 阻塞型：緊急導尿解除阻塞+靜脈輸液矯正電解質
+    - 疼痛管理：Buprenorphine 0.01-0.03 mg/kg SL q6-8h
+    - 短期抗痙攣藥：Prazosin 0.25-0.5 mg/cat PO q12h（公貓）
+  general:
+    - 環境豐富化：增加貓砂盆數量（N+1原則）、垂直空間、藏匿處
+    - 飲食轉換為濕食為主（增加飲水量）
+    - 費洛蒙擴散器（Feliway®）減壓
+    - 嚴重復發型：Amitriptyline 2.5-12.5 mg/cat PO q24h
+prognosis: 多數急性發作在5-7天內自行緩解，但約50%的貓在6-12個月內復發。透過完善的環境修正（MEMO），復發率可降低70-80%。少數貓發展為慢性持續型，需長期管理。公貓尿道阻塞未及時處理可致命。
+diagnosticAlgorithm:
+  title: 貓自發性膀胱炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與臨床評估
+      details: 確認FLUTD症狀（頻尿、血尿、排尿困難），評估環境壓力因子
+      findings:
+        - 頻尿/血尿/排尿困難
+        - 室內飼養+環境壓力
+    - step: 2
+      action: 尿液分析與培養
+      details: 無菌採集尿液進行完整分析和細菌培養
+      findings:
+        - 血尿但培養陰性
+        - 結晶可能存在但非主因
+    - step: 3
+      action: 影像學檢查
+      details: X光和/或超音波排除結石和腫瘤
+      findings:
+        - 無結石或腫塊
+        - 膀胱壁可能增厚
+    - step: 4
+      action: 排除性確診
+      details: 排除感染、結石、腫瘤和解剖異常後確診FIC
+      findings:
+        - 所有已知病因被排除
+        - 確診FIC並制定MEMO計畫
+clinicalPearls:
+  - FIC是排除診斷——年輕貓（<10歲）的FLUTD先排除結石和阻塞，老年貓要先排除UTI和腫瘤
+  - 環境修正（MEMO）的效果遠優於任何藥物治療，是最重要的長期管理策略
+  - 公貓尿道阻塞是急診，48小時未處理可因高血鉀導致心律不整死亡
+monitoringItems:
+  - 症狀日記（排尿頻率、血尿程度、壓力事件記錄）
+  - 體重管理（維持理想體態BCS 4-5/9）
+  - 飲水量監測（目標增加至少50%）
+  - 定期尿液分析（q3-6個月，監測復發）
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: rare
+ddxSource: book-only

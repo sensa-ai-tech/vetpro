@@ -3,13 +3,15 @@ nameEn: Jugular Vein Thrombosis
 nameZh: 頸靜脈血栓
 bodySystem: vascular
 description: 頸靜脈內的血栓形成，最常因靜脈留置針或中央靜脈導管導致的血管內膜損傷所引起，可導致頸部腫脹、頭面部水腫及敗血症風險。
-
 aliases:
-  - { alias: 頸靜脈栓塞, language: zh }
-  - { alias: 頸靜脈血栓性靜脈炎, language: zh }
-  - { alias: Jugular thrombophlebitis, language: en }
-  - { alias: Jugular vein thrombophlebitis, language: en }
-
+  - alias: 頸靜脈栓塞
+    language: zh
+  - alias: 頸靜脈血栓性靜脈炎
+    language: zh
+  - alias: Jugular thrombophlebitis
+    language: en
+  - alias: Jugular vein thrombophlebitis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓頸靜脈血栓亦與導管相關為主。貓頸靜脈較細，留置針損傷風險更高。
-
 etiology:
   categories:
     - name: 醫源性
@@ -33,7 +34,6 @@ etiology:
         - 高凝血狀態
         - 頸部腫瘤壓迫
         - 感染性血栓性靜脈炎
-
 clinicalSigns:
   early:
     - 靜脈穿刺部位腫脹
@@ -45,18 +45,16 @@ clinicalSigns:
     - 頸靜脈不充盈或堅硬條索狀
     - 發燒（感染性）
     - 頭面部水腫（雙側時）
-
 diagnosis:
   primaryTests:
     - name: 頸部超音波（Doppler）
-      notes: "頸靜脈內血栓直接觀察。Doppler 無血流信號。靜脈不可壓縮"
+      notes: 頸靜脈內血栓直接觀察。Doppler 無血流信號。靜脈不可壓縮
     - name: 血液培養
-      notes: "感染性血栓——血培養確認菌血症"
+      notes: 感染性血栓——血培養確認菌血症
   differentialDiagnoses:
     - 頸部蜂窩織炎
     - 頸部腫瘤
     - 導管部位感染（無血栓）
-
 treatment:
   medical:
     - 移除靜脈導管
@@ -68,28 +66,47 @@ treatment:
   surgical:
     - 極少需手術
     - 嚴重感染性血栓——靜脈切開引流（罕見）
-
 prognosis:
-  general: "移除導管後多數可自行再通。感染性血栓需適當抗生素治療。單側血栓預後良好（對側代償）。雙側頸靜脈血栓較嚴重但罕見。"
-
+  general: 移除導管後多數可自行再通。感染性血栓需適當抗生素治療。單側血栓預後良好（對側代償）。雙側頸靜脈血栓較嚴重但罕見。
 prevention:
   - 靜脈導管無菌操作
   - 定期評估導管部位
   - 導管留置時間最小化
   - 避免反覆穿刺同一靜脈
   - 避免經頸靜脈注射刺激性藥物
-
-
 guidelineRefs:
   - sourceOrg: Medical physics
     title: The feasibility of ultrasound-assisted endovascular laser thrombolysis in an acute rabbit thrombosis model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9396669/
     type: research
-    pmid: "34214203"
+    pmid: '34214203'
     relevance: supporting
   - sourceOrg: Journal of vascular surgery
     title: Synthetic, organic compound vepoloxamer (P-188) potentiates tissue plasminogen activator.
     url: https://pubmed.ncbi.nlm.nih.gov/27939143/
     type: research
-    pmid: "27939143"
+    pmid: '27939143'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 頸靜脈血栓 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - hyperthermia 相關症狀
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 頸部超音波（Doppler）
+          notes: 頸靜脈內血栓直接觀察。Doppler 無血流信號。靜脈不可壓縮
+        - name: 血液培養
+          notes: 感染性血栓——血培養確認菌血症
+ddxSource: auto-generated

@@ -3,13 +3,15 @@ nameEn: Ear Canal Tumor
 nameZh: 耳道腫瘤
 bodySystem: oncology
 description: 發生於外耳道或中耳的腫瘤，包括良性 (息肉、腺瘤) 與惡性 (腺癌、鱗狀上皮細胞癌)。犬以耵聹腺瘤 (ceruminous gland adenoma) 與腺癌最常見，貓以發炎性息肉與鱗狀上皮細胞癌最常見。慢性耳炎為可能的危險因子。
-
 aliases:
-  - { alias: Aural Neoplasia, language: en }
-  - { alias: Ceruminous Gland Tumor, language: en }
-  - { alias: 耳道新生物, language: zh }
-  - { alias: 外耳道腫瘤, language: zh }
-
+  - alias: Aural Neoplasia
+    language: en
+  - alias: Ceruminous Gland Tumor
+    language: en
+  - alias: 耳道新生物
+    language: zh
+  - alias: 外耳道腫瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓以發炎性息肉 (良性) 與耵聹腺腺癌最常見。
-
 etiology:
   categories:
     - name: 腫瘤性
@@ -29,7 +30,6 @@ etiology:
       examples:
         - 慢性外耳炎
         - 慢性耳道刺激
-
 clinicalSigns:
   early:
     - 單側外耳炎對治療反應不佳
@@ -40,7 +40,6 @@ clinicalSigns:
     - 疼痛
     - 面神經麻痺 (中耳侵犯)
     - Horner 症候群 (中/內耳侵犯)
-
 diagnosis:
   primaryTests:
     - name: 耳鏡檢查
@@ -49,7 +48,6 @@ diagnosis:
       notes: 評估腫瘤範圍、骨質侵犯、中耳累及程度
     - name: 組織活檢
       notes: 確定腫瘤類型與良惡性
-
 treatment:
   principles:
     - 手術切除為主要治療
@@ -60,9 +58,36 @@ treatment:
     - 惡性腫瘤：TECA-BO (全耳道切除 + 側鼓室骨切開)
     - 不完全切除：術後放射治療
     - 化療效果有限
-
 prognosis: 良性息肉切除後預後極佳 (貓復發率約 30-50% 需再次手術)。惡性耵聹腺腺癌 TECA-BO 後中位存活 1-2 年。早期手術預後優於晚期。骨質侵犯者預後不良。
-
 pubmedQueries:
   - query: '"ear canal tumor" OR "ceruminous gland" AND (veterinary OR canine OR feline) AND ("surgery" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 耳道腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 耳鏡檢查
+          notes: 耳道內可見腫塊。大腫塊可能需鎮靜才能完整觀察
+        - name: CT
+          notes: 評估腫瘤範圍、骨質侵犯、中耳累及程度
+        - name: 組織活檢
+          notes: 確定腫瘤類型與良惡性
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術切除為主要治療
+        - 惡性腫瘤可能需要全耳道切除
+        - 輔助放射治療
+ddxSource: auto-generated

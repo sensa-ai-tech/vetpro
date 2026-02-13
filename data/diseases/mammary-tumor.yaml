@@ -3,14 +3,17 @@ nameEn: Mammary Tumor
 nameZh: 乳腺腫瘤
 bodySystem: oncology
 description: 犬貓常見腫瘤，未絕育母犬約50%為惡性，貓則高達80-90%為惡性。早期絕育可大幅降低發生風險。
-
 aliases:
-  - { alias: Mammary Gland Tumor, language: en }
-  - { alias: MGT, language: en }
-  - { alias: Mammary Carcinoma, language: en }
-  - { alias: 乳腺癌, language: zh }
-  - { alias: 乳房腫瘤, language: zh }
-
+  - alias: Mammary Gland Tumor
+    language: en
+  - alias: MGT
+    language: en
+  - alias: Mammary Carcinoma
+    language: en
+  - alias: 乳腺癌
+    language: zh
+  - alias: 乳房腫瘤
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓第三常見腫瘤。約 80-90% 為惡性 (多為腺癌)。Siamese 品種風險較高。未絕育母貓風險是絕育貓的 7 倍。中位年齡 10-12 歲。
-
 etiology:
   categories:
     - name: 荷爾蒙因素
@@ -38,9 +40,10 @@ etiology:
       examples:
         - 肥胖 (幼年期肥胖增加風險)
         - 年齡 (腫瘤發生率隨年齡增加)
-
-pathophysiology: 乳腺腫瘤的發生與荷爾蒙依賴性細胞增殖密切相關。雌激素與黃體素透過各自受體促進乳腺上皮細胞增殖。長期反覆的荷爾蒙刺激 (發情週期) 增加 DNA 複製錯誤的機會，累積致癌突變。犬乳腺腫瘤從良性 (腺瘤、良性混合瘤) 到惡性 (腺癌、炎性乳癌) 存在連續進展光譜。惡性腫瘤可經淋巴管及血行轉移，最常見轉移部位為肺臟及區域淋巴結。貓乳腺腫瘤絕大多數為惡性，侵犯性強，早期轉移率高。炎性乳癌 (inflammatory mammary carcinoma) 為特殊亞型，生長極快，預後極差。
-
+pathophysiology: >-
+  乳腺腫瘤的發生與荷爾蒙依賴性細胞增殖密切相關。雌激素與黃體素透過各自受體促進乳腺上皮細胞增殖。長期反覆的荷爾蒙刺激 (發情週期) 增加 DNA 複製錯誤的機會，累積致癌突變。犬乳腺腫瘤從良性 (腺瘤、良性混合瘤) 到惡性
+  (腺癌、炎性乳癌) 存在連續進展光譜。惡性腫瘤可經淋巴管及血行轉移，最常見轉移部位為肺臟及區域淋巴結。貓乳腺腫瘤絕大多數為惡性，侵犯性強，早期轉移率高。炎性乳癌 (inflammatory mammary carcinoma)
+  為特殊亞型，生長極快，預後極差。
 clinicalSigns:
   early:
     - 乳腺區域可觸診之結節或腫塊 (單一或多發)
@@ -58,26 +61,24 @@ clinicalSigns:
     - 炎性乳癌 (紅、腫、熱、痛，彌漫性硬化)
     - 惡病質
     - 骨轉移 (罕見)
-
 diagnosis:
   primaryTests:
     - name: FNA + 細胞學
-      notes: "初步評估。可區分上皮性/間葉性/混合性。但乳腺腫瘤良惡性判定細胞學準確率有限，需組織病理確診"
+      notes: 初步評估。可區分上皮性/間葉性/混合性。但乳腺腫瘤良惡性判定細胞學準確率有限，需組織病理確診
     - name: 組織病理學 (切除活檢)
-      notes: "確診金標準。WHO 分類：腺瘤、腺癌、複雜型/簡單型、炎性乳癌等。評估血管/淋巴管侵犯、切除邊緣、有絲分裂指數"
+      notes: 確診金標準。WHO 分類：腺瘤、腺癌、複雜型/簡單型、炎性乳癌等。評估血管/淋巴管侵犯、切除邊緣、有絲分裂指數
     - name: 免疫組化
-      notes: "ER/PR 受體狀態 (荷爾蒙依賴性評估)、Ki-67、HER2、CK/Vimentin (上皮間質轉化)"
+      notes: ER/PR 受體狀態 (荷爾蒙依賴性評估)、Ki-67、HER2、CK/Vimentin (上皮間質轉化)
   imaging:
     - name: 胸腔 X 光 (三方向)
-      notes: "肺轉移篩檢。所有惡性乳腺腫瘤術前必做"
+      notes: 肺轉移篩檢。所有惡性乳腺腫瘤術前必做
     - name: 腹部超音波
-      notes: "腹腔淋巴結、肝/脾轉移評估"
+      notes: 腹腔淋巴結、肝/脾轉移評估
   additional:
     - 區域淋巴結 FNA (腋下、鼠蹊)
     - CBC、生化全套
     - 腹部 X 光 (腰下淋巴結)
     - CT (進階分期，大型/浸潤性腫瘤)
-
 treatment:
   principles:
     - 手術切除為首要治療
@@ -86,16 +87,16 @@ treatment:
     - 同時絕育 (若尚未絕育)
   medications:
     - name: Doxorubicin
-      dose: "30 mg/m² IV 每 3 週 × 5 次"
+      dose: 30 mg/m² IV 每 3 週 × 5 次
       notes: 惡性乳腺腫瘤術後輔助化療。適用於大型腫瘤、淋巴結轉移、血管侵犯等高風險因子
     - name: Carboplatin
-      dose: "300 mg/m² IV 每 3 週 × 4 次"
+      dose: 300 mg/m² IV 每 3 週 × 4 次
       notes: 另一輔助化療選擇。部分研究顯示對貓乳腺癌有效
     - name: Mitoxantrone
-      dose: "5-6 mg/m² IV 每 3 週"
+      dose: 5-6 mg/m² IV 每 3 週
       notes: Doxorubicin 替代方案，心臟毒性較低
     - name: COX-2 抑制劑
-      dose: "Meloxicam 0.1 mg/kg PO SID (犬) 或 Piroxicam 0.3 mg/kg PO SID"
+      dose: Meloxicam 0.1 mg/kg PO SID (犬) 或 Piroxicam 0.3 mg/kg PO SID
       notes: COX-2 過度表現的腫瘤可能受益。抗腫瘤輔助作用
   general:
     - 犬小腫瘤 (<1 cm)：局部切除或區域乳腺切除
@@ -104,41 +105,98 @@ treatment:
     - 同時或先行卵巢子宮切除術 (OHE)
     - 炎性乳癌：手術效果極差，以姑息治療為主
     - 放射治療 (不完全切除邊緣、不可切除腫瘤)
-
-prognosis: 犬良性腫瘤手術後預後極佳。犬惡性腫瘤預後取決於腫瘤大小 (<3 cm 預後較佳)、組織學分級、淋巴結/血管侵犯。犬惡性腫瘤完全切除後中位存活約 1-2 年。貓乳腺腫瘤預後較差，腫瘤直徑 <2 cm 中位存活約 3 年；2-3 cm 約 2 年；>3 cm 約 4-12 個月。炎性乳癌預後極差 (中位存活數週)。
-
+prognosis: >-
+  犬良性腫瘤手術後預後極佳。犬惡性腫瘤預後取決於腫瘤大小 (<3 cm 預後較佳)、組織學分級、淋巴結/血管侵犯。犬惡性腫瘤完全切除後中位存活約 1-2 年。貓乳腺腫瘤預後較差，腫瘤直徑 <2 cm 中位存活約 3 年；2-3 cm 約
+  2 年；>3 cm 約 4-12 個月。炎性乳癌預後極差 (中位存活數週)。
 guidelineRefs:
   - sourceOrg: ESAVS
     title: European Society of Veterinary Oncology — Mammary Tumors Guidelines
     url: https://pubmed.ncbi.nlm.nih.gov/28027571/
     type: guideline
-    pmid: "28027571"
+    pmid: '28027571'
   - sourceOrg: International journal of molecular sciences
-    title: "Dysregulated Signaling Pathways in Canine Mammary Tumor and Human Triple Negative Breast Cancer: Advances and Potential Therapeutic Targets."
+    title: >-
+      Dysregulated Signaling Pathways in Canine Mammary Tumor and Human Triple Negative Breast Cancer: Advances and
+      Potential Therapeutic Targets.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11720488/
     type: review
-    pmid: "39796003"
+    pmid: '39796003'
   - sourceOrg: International journal of molecular sciences
-    title: "Canine Mammary Tumors: Classification, Biomarkers, Traditional and Personalized Therapies."
+    title: 'Canine Mammary Tumors: Classification, Biomarkers, Traditional and Personalized Therapies.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10931591/
     type: review
-    pmid: "38474142"
+    pmid: '38474142'
   - sourceOrg: Journal of breast cancer
     title: Canine as a Comparative and Translational Model for Human Mammary Tumor.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9981990/
     type: review
-    pmid: "36762784"
+    pmid: '36762784'
   - sourceOrg: Genes
     title: Rodent Models Assessing Mammary Tumor Prevention by Soy or Soy Isoflavones.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6722900/
     type: review
-    pmid: "31357528"
+    pmid: '31357528'
     relevance: supporting
 pubmedQueries:
   - query: '"mammary tumor" AND (dog OR cat OR canine OR feline) AND ("surgery" OR "prognosis" OR "classification")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "REP"
-  sectionTitle: "MAMMARY TUMORS"
+  chapter: REP
+  sectionTitle: MAMMARY TUMORS
   pdfPage: 1444
+diagnosticAlgorithm:
+  title: 乳腺腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 觸診所有乳腺鏈（犬5對、貓4對），記錄腫塊位置、大小、數量
+      findings:
+        - 乳腺腫塊（單一或多發）
+        - 後段乳腺好發（犬）
+        - 腫塊固定或可移動
+        - 可能有潰瘍或分泌物
+    - step: 2
+      action: 理學檢查與FNA
+      details: 區域淋巴結觸診，FNA細胞學初步判斷良惡性
+      findings:
+        - 腹股溝或腋下淋巴結腫大
+        - FNA見上皮細胞特徵
+        - 良性vs惡性初步判斷
+        - 犬50%良性/貓85%惡性
+    - step: 3
+      action: 分期檢查
+      details: 三段式胸部X光排除肺轉移、腹部超音波評估區域淋巴結
+      findings:
+        - 胸部X光排除肺轉移
+        - 腹部超音波淋巴結評估
+        - 基礎血液檢查
+        - 評估是否適合手術
+    - step: 4
+      action: 手術切除與病理分級
+      details: 手術切除（腫瘤切除至乳腺鏈切除不等），病理分型及分級
+      findings:
+        - 腫瘤組織學類型確認
+        - 惡性程度分級
+        - 淋巴管侵犯評估
+        - 切除邊界評估
+clinicalPearls:
+  - 早期絕育是最有效的預防措施
+  - 貓乳腺腫瘤應視為惡性直到證明為良性
+  - 腫瘤大小是犬貓最重要的預後因素
+  - 炎性乳腺癌常被誤診為乳腺炎
+monitoringItems:
+  - 術後胸部X光（每3個月，持續2年）
+  - 手術部位觸診
+  - 對側乳腺鏈
+  - 區域淋巴結
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: common
+ddxSource: book

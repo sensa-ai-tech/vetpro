@@ -3,19 +3,20 @@ nameEn: Abyssinian Cat Retinal Degeneration
 nameZh: 阿比西尼亞貓視網膜退化
 bodySystem: ophthalmology
 description: 阿比西尼亞貓的遺傳性視網膜退化,由CEP290基因突變引起。幼貓期視網膜光受體細胞逐漸退化,最終導致失明,體染色體隱性遺傳。
-
 aliases:
-  - { alias: 進行性視網膜萎縮, language: zh }
-  - { alias: Progressive Retinal Atrophy, language: en }
-  - { alias: PRA, language: en }
-  - { alias: rdAc, language: en }
-
+  - alias: 進行性視網膜萎縮
+    language: zh
+  - alias: Progressive Retinal Atrophy
+    language: en
+  - alias: PRA
+    language: en
+  - alias: rdAc
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 阿比西尼亞、索馬利貓,體染色體隱性遺傳
-
 etiology:
   categories:
     - name: 遺傳性視網膜疾病
@@ -23,7 +24,6 @@ etiology:
         - CEP290基因突變
         - 光受體細胞退化
         - 體染色體隱性遺傳
-
 clinicalSigns:
   early:
     - 暗處視力下降(1.5-2歲)
@@ -34,29 +34,47 @@ clinicalSigns:
     - 完全失明(3-5歲)
     - 適應熟悉環境
     - 無眼部疼痛
-
 diagnosis:
   primaryTests:
     - name: 眼底鏡檢查
-      notes: "視網膜血管衰減、視網膜反光增強、視神經盤萎縮"
+      notes: 視網膜血管衰減、視網膜反光增強、視神經盤萎縮
     - name: 視網膜電圖(ERG)
-      notes: "光反應減弱或消失"
+      notes: 光反應減弱或消失
     - name: CEP290基因檢測
-      notes: "確診及繁殖篩檢"
+      notes: 確診及繁殖篩檢
   differentialDiagnoses:
     - 牛磺酸缺乏性視網膜病變
     - 高血壓性視網膜病變
     - 視網膜剝離
-
 treatment:
   medical:
     - 無治癒方法
     - 環境調整(熟悉環境、避免移動家具)
     - 抗氧化補充劑(延緩進展,證據有限)
-
 prognosis:
-  general: "無法治癒,進行性惡化至失明。貓隻可適應失明並維持良好生活品質。不影響壽命。"
-
+  general: 無法治癒,進行性惡化至失明。貓隻可適應失明並維持良好生活品質。不影響壽命。
 prevention:
   - 繁殖前基因檢測強制
   - 帶因者不應繁殖
+associatedSymptoms:
+  - symptomId: blindness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 阿比西尼亞貓視網膜退化 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 眼底鏡檢查
+          notes: 視網膜血管衰減、視網膜反光增強、視神經盤萎縮
+        - name: 視網膜電圖(ERG)
+          notes: 光反應減弱或消失
+        - name: CEP290基因檢測
+          notes: 確診及繁殖篩檢
+ddxSource: auto-generated

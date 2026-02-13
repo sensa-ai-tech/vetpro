@@ -2,13 +2,16 @@ slug: atypical-hypoadrenocorticism
 nameEn: Atypical Hypoadrenocorticism
 nameZh: 非典型腎上腺皮質功能低下
 bodySystem: endocrine
-description: 非典型腎上腺皮質功能低下為腎上腺皮質醇分泌不足但醛固酮（aldosterone）分泌正常的阿迪森氏症變異型。約佔犬隻自發性腎上腺皮質功能低下的 10-30%。因缺乏典型的電解質異常（高血鉀、低血鈉），常被忽略或延遲診斷。部分病例可能隨時間進展為典型型。
-
+description: >-
+  非典型腎上腺皮質功能低下為腎上腺皮質醇分泌不足但醛固酮（aldosterone）分泌正常的阿迪森氏症變異型。約佔犬隻自發性腎上腺皮質功能低下的
+  10-30%。因缺乏典型的電解質異常（高血鉀、低血鈉），常被忽略或延遲診斷。部分病例可能隨時間進展為典型型。
 aliases:
-  - { alias: 非典型阿迪森氏症, language: zh }
-  - { alias: Atypical Addison's Disease, language: en }
-  - { alias: Glucocorticoid-Deficient Hypoadrenocorticism, language: en }
-
+  - alias: 非典型阿迪森氏症
+    language: zh
+  - alias: Atypical Addison's Disease
+    language: en
+  - alias: Glucocorticoid-Deficient Hypoadrenocorticism
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻阿迪森氏症本身罕見，非典型更少見。
-
 etiology:
   categories:
     - name: 病因
@@ -30,7 +32,6 @@ etiology:
         - 醛固酮分泌正常或接近正常
         - 無典型電解質異常（Na/K 比值正常）
         - 約 30% 可能進展為典型型
-
 clinicalSigns:
   early:
     - 間歇性嗜睡
@@ -43,35 +44,67 @@ clinicalSigns:
     - 體重持續減輕
     - 應激時症狀惡化（「the great pretender」——模擬多種疾病）
     - 急性腎上腺危象（較典型型少見但可能發生）
-
 diagnosis:
   primaryTests:
     - name: ACTH stimulation test
       notes: 確診金標準。基礎皮質醇低。ACTH 刺激後皮質醇仍低（<2 μg/dL）。與典型型相同的 ACTH 刺激試驗結果。電解質可能正常（Na/K >27）。
     - name: 基礎血液檢查
       notes: 電解質正常（與典型型鑑別的關鍵）。可能有淋巴球計數升高、嗜酸性球計數升高（缺乏皮質醇的壓力白血球計數）。低白蛋白可能存在。低血糖（偶見）。
-
 treatment:
   principles:
     - 糖皮質激素補充為核心
     - 可能不需要礦物性皮質激素（醛固酮正常）
     - 長期監測電解質（可能進展為典型型）
   general:
-    - "Prednisolone 0.1-0.2 mg/kg PO q24h（生理劑量補充）"
+    - Prednisolone 0.1-0.2 mg/kg PO q24h（生理劑量補充）
     - 應激時增加劑量 2-10 倍（手術、住院、旅行）
     - 定期監測電解質（每 3-6 個月）——偵測是否進展為典型型
     - 若電解質出現異常（Na/K <27）需加用 DOCP 或 Fludrocortisone
     - 急性危象：Dexamethasone IV + 靜脈輸液
-
 prognosis: 預後良好。適當糖皮質激素補充後多數犬隻可恢復正常生活品質。需終生藥物治療。約 30% 可能在數月至數年內進展為典型型（需加用醛固酮替代）。定期電解質監測是管理關鍵。急性危象若及時處理可恢復。
-
-
 guidelineRefs:
   - sourceOrg: The Journal of small animal practice
-    title: "A retrospective study of dogs with atypical hypoadrenocorticism: a&#xa0;diagnostic cut-off or continuum?"
+    title: 'A retrospective study of dogs with atypical hypoadrenocorticism: a&#xa0;diagnostic cut-off or continuum?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5496775/
     type: research
-    pmid: "28247992"
+    pmid: '28247992'
 pubmedQueries:
-  - query: '"atypical hypoadrenocorticism" OR "atypical Addison" AND (veterinary OR canine) AND ("glucocorticoid" OR "treatment")'
+  - query: >-
+      "atypical hypoadrenocorticism" OR "atypical Addison" AND (veterinary OR canine) AND ("glucocorticoid" OR
+      "treatment")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 非典型腎上腺皮質功能低下 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - weakness 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: ACTH stimulation test
+          notes: 確診金標準。基礎皮質醇低。ACTH 刺激後皮質醇仍低（<2 μg/dL）。與典型型相同的 ACTH 刺激試驗結果。電解質可能正常（Na/K >27）。
+        - name: 基礎血液檢查
+          notes: 電解質正常（與典型型鑑別的關鍵）。可能有淋巴球計數升高、嗜酸性球計數升高（缺乏皮質醇的壓力白血球計數）。低白蛋白可能存在。低血糖（偶見）。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 糖皮質激素補充為核心
+        - 可能不需要礦物性皮質激素（醛固酮正常）
+        - 長期監測電解質（可能進展為典型型）
+ddxSource: auto-generated

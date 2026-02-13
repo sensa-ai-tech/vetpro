@@ -3,18 +3,19 @@ nameEn: Avian Conure Bleeding Syndrome
 nameZh: 錐尾鸚鵡出血症候群
 bodySystem: hematology
 description: 錐尾鸚鵡出血症候群是一種好發於錐尾鸚鵡（Conures）的出血性疾病，推測與飲食中鈣及維生素 K 不足引起的凝血功能障礙有關。臨床表現為自發性出血，包括便血、瘀斑及出血不止。
-
 aliases:
-  - { alias: 錐尾鸚鵡出血病, language: zh }
-  - { alias: Conure出血症, language: zh }
-  - { alias: Conure bleeding syndrome, language: en }
-  - { alias: CBS, language: en }
-
+  - alias: 錐尾鸚鵡出血病
+    language: zh
+  - alias: Conure出血症
+    language: zh
+  - alias: Conure bleeding syndrome
+    language: en
+  - alias: CBS
+    language: en
 species:
   - speciesCommon: bird
     prevalence: uncommon
     notes: 主要見於錐尾鸚鵡屬（如太陽錐尾、綠頰錐尾）。與飲食中維生素 K 及鈣不足高度相關。全種子飲食為主要風險因子。
-
 etiology:
   categories:
     - name: 營養缺乏
@@ -30,7 +31,6 @@ etiology:
       examples:
         - 遺傳易感性（品種特異性）
         - 緊迫誘發
-
 clinicalSigns:
   early:
     - 輕微瘀斑
@@ -44,7 +44,6 @@ clinicalSigns:
     - 蒼白黏膜
     - 呼吸急促
     - 突然死亡
-
 diagnosis:
   primaryTests:
     - name: 凝血功能檢測
@@ -53,7 +52,6 @@ diagnosis:
       notes: 貧血（出血導致）。評估血小板數量
     - name: 血液生化
       notes: 血鈣、肝功能指標。排除肝臟疾病
-
 treatment:
   principles:
     - 緊急止血
@@ -68,9 +66,44 @@ treatment:
     - 長期維生素 K 與鈣補充
     - 減少環境緊迫
     - 定期健康監測
-
 prognosis: 及時補充維生素 K 與鈣質後預後良好。飲食改善後可預防復發。未經治療的嚴重出血可致死。長期飲食管理是預防的關鍵。有出血史的個體在手術或創傷時需預防性補充維生素 K。
-
 pubmedQueries:
   - query: '"conure bleeding syndrome" OR ("conure" AND "bleeding" AND "vitamin K") AND treatment'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: haematochezia
+    frequency: common
+  - symptomId: petechiae-ecchymoses
+    frequency: common
+diagnosticAlgorithm:
+  title: 錐尾鸚鵡出血症候群 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - weakness 相關症狀
+        - haematochezia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 凝血功能檢測
+          notes: 凝血時間延長。PT/aPTT 可能延長
+        - name: CBC
+          notes: 貧血（出血導致）。評估血小板數量
+        - name: 血液生化
+          notes: 血鈣、肝功能指標。排除肝臟疾病
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 緊急止血
+        - 維生素 K 補充
+        - 鈣質補充
+ddxSource: auto-generated

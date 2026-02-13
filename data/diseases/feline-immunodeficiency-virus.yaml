@@ -3,19 +3,20 @@ nameEn: Feline Immunodeficiency Virus Infection
 nameZh: 貓免疫不全病毒感染
 bodySystem: infectious
 description: 由貓免疫不全病毒 (FIV) 引起的慢性反轉錄病毒感染，主要經咬傷傳播，導致漸進性免疫功能衰退，類似人類 HIV 感染。
-
 aliases:
-  - { alias: FIV, language: en }
-  - { alias: Feline AIDS, language: en }
-  - { alias: 貓愛滋, language: zh }
-  - { alias: 貓免疫缺乏病毒, language: zh }
-
+  - alias: FIV
+    language: en
+  - alias: Feline AIDS
+    language: en
+  - alias: 貓愛滋
+    language: zh
+  - alias: 貓免疫缺乏病毒
+    language: zh
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
     notes: 全球分佈。盛行率約 2-5% (地區差異大)。未結紮的成年公貓風險最高 (因打鬥咬傷傳播)。戶外放養貓盛行率顯著高於室內貓。
-
 etiology:
   categories:
     - name: 病毒性
@@ -31,9 +32,10 @@ etiology:
         - 戶外放養
         - 流浪貓接觸
         - 高密度貓群環境 (但社交傳播少見)
-
-pathophysiology: FIV 主要感染 CD4+ T 淋巴球，經由病毒表面醣蛋白與 CD134 (OX40) 受體及 CXCR4 趨化因子共受體結合進入細胞。感染後分為三個階段：(1) 急性期 (2-6 週) — 短暫病毒血症、發燒、淋巴結腫大、嗜中性球減少，多數自行緩解；(2) 無症狀帶菌期 — 可持續數年至十年以上，CD4+ T 細胞漸進性下降，CD4:CD8 比值逆轉；(3) 免疫不全期 (AIDS-like phase) — CD4+ T 細胞嚴重耗竭，免疫監控失能，繼發機會性感染與腫瘤。病毒整合入宿主基因組 (前病毒 DNA)，終身感染無法根除。
-
+pathophysiology: >-
+  FIV 主要感染 CD4+ T 淋巴球，經由病毒表面醣蛋白與 CD134 (OX40) 受體及 CXCR4 趨化因子共受體結合進入細胞。感染後分為三個階段：(1) 急性期 (2-6 週) —
+  短暫病毒血症、發燒、淋巴結腫大、嗜中性球減少，多數自行緩解；(2) 無症狀帶菌期 — 可持續數年至十年以上，CD4+ T 細胞漸進性下降，CD4:CD8 比值逆轉；(3) 免疫不全期 (AIDS-like phase) — CD4+ T
+  細胞嚴重耗竭，免疫監控失能，繼發機會性感染與腫瘤。病毒整合入宿主基因組 (前病毒 DNA)，終身感染無法根除。
 clinicalSigns:
   early:
     - 急性期：短暫發燒、全身淋巴結腫大 (1-2 週後自行消退)
@@ -54,27 +56,25 @@ clinicalSigns:
     - 神經症狀 (行為改變、認知障礙、癲癇、面部抽搐)
     - 腎臟病 (免疫複合體腎絲球腎炎)
     - 消瘦/惡病質
-
 diagnosis:
   primaryTests:
     - name: SNAP FIV 抗體快速檢測 (ELISA)
-      notes: "偵測 FIV 抗體。篩檢首選。陽性需確認。注意：FIV 疫苗接種貓 (北美已停產) 與母源抗體幼貓可能假陽性"
+      notes: 偵測 FIV 抗體。篩檢首選。陽性需確認。注意：FIV 疫苗接種貓 (北美已停產) 與母源抗體幼貓可能假陽性
     - name: Western Blot (確認性檢測)
-      notes: "ELISA 陽性的確認檢測。特異度高。區分真陽性與疫苗抗體"
+      notes: ELISA 陽性的確認檢測。特異度高。區分真陽性與疫苗抗體
     - name: PCR (前病毒 DNA)
-      notes: "偵測整合入基因組的前病毒 DNA。可在抗體產生前偵測 (急性期)。區分感染與疫苗抗體。實驗室品質差異大"
+      notes: 偵測整合入基因組的前病毒 DNA。可在抗體產生前偵測 (急性期)。區分感染與疫苗抗體。實驗室品質差異大
   imaging:
     - name: 胸腔 X 光
-      notes: "評估肺部感染、淋巴瘤"
+      notes: 評估肺部感染、淋巴瘤
     - name: 腹部超音波
-      notes: "評估腹腔臟器、淋巴結腫大"
+      notes: 評估腹腔臟器、淋巴結腫大
   additional:
     - CBC (淋巴球減少、嗜中性球減少、貧血、血小板減少)
     - 生化 (腎功能、肝功能、球蛋白常升高)
     - 尿液分析 (蛋白尿評估)
     - CD4:CD8 比值 (免疫功能評估，研究用途為主)
     - 細針穿刺 (淋巴結腫大、腫塊評估)
-
 treatment:
   principles:
     - 無法根治 FIV 感染 — 管理重於治療
@@ -84,16 +84,16 @@ treatment:
     - 維持良好營養與生活品質
   medications:
     - name: 抗生素 (依繼發感染選擇)
-      dose: "依感染類型與培養結果調整"
+      dose: 依感染類型與培養結果調整
       notes: 繼發性細菌感染需積極且足夠療程的抗生素治療。免疫抑制貓可能需較長療程
     - name: Corticosteroids (口腔炎)
-      dose: "Prednisolone 1-2 mg/kg PO SID，遞減至最低有效劑量"
+      dose: Prednisolone 1-2 mg/kg PO SID，遞減至最低有效劑量
       notes: 嚴重口腔炎的免疫調節。長期使用需權衡免疫抑制風險
     - name: Cyclosporine (口腔炎)
-      dose: "2.5-5 mg/kg PO SID"
+      dose: 2.5-5 mg/kg PO SID
       notes: 難治性口腔炎的免疫調節選擇。需監測腎功能
     - name: 干擾素 (Feline Interferon Omega)
-      dose: "1 MU/kg SC SID × 5 天 (間歇療程)"
+      dose: 1 MU/kg SC SID × 5 天 (間歇療程)
       notes: 可能改善口腔炎與整體免疫功能。證據等級中等
   general:
     - 嚴格室內飼養 (最重要！防止傳播與減少接觸病原)
@@ -105,9 +105,9 @@ treatment:
     - 口腔護理 (定期牙科檢查與清潔)
     - 壓力管理 (環境穩定、豐富化)
     - 嚴重口腔炎考慮全口拔牙 (約 60-80% 改善)
-
-prognosis: FIV 感染貓在良好管理下可存活多年，中位存活時間約 5 年或更長。許多 FIV 陽性貓終身無症狀或僅輕度症狀。室內飼養、定期健康檢查、及時治療繼發感染可顯著延長壽命與維持生活品質。進展至免疫不全期後預後較差。FIV 並非安樂死指標 — 多數感染貓可過正常品質的生活。
-
+prognosis: >-
+  FIV 感染貓在良好管理下可存活多年，中位存活時間約 5 年或更長。許多 FIV 陽性貓終身無症狀或僅輕度症狀。室內飼養、定期健康檢查、及時治療繼發感染可顯著延長壽命與維持生活品質。進展至免疫不全期後預後較差。FIV 並非安樂死指標 —
+  多數感染貓可過正常品質的生活。
 guidelineRefs:
   - sourceOrg: AAFP
     title: AAFP Feline Retrovirus Testing and Management Guidelines
@@ -117,27 +117,81 @@ guidelineRefs:
     title: European Advisory Board on Cat Diseases — FIV Guidelines
     url: https://www.abcdcatsvets.org/feline-immunodeficiency-virus-fiv/
     type: guideline
-  - sourceOrg: "Veterinary journal (London, England : 1997)"
-    title: "The neuropathogenesis of feline immunodeficiency virus infection: barriers to overcome."
+  - sourceOrg: 'Veterinary journal (London, England : 1997)'
+    title: 'The neuropathogenesis of feline immunodeficiency virus infection: barriers to overcome.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3051004/
     type: review
-    pmid: "20418131"
-  - sourceOrg: "Frontiers in bioscience : a journal and virtual library"
+    pmid: '20418131'
+  - sourceOrg: 'Frontiers in bioscience : a journal and virtual library'
     title: Immunopathogenesis of feline immunodeficiency virus infection in the fetal and neonatal cat.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2278015/
     type: review
-    pmid: "17485330"
-  - sourceOrg: "Parasites &amp; vectors"
+    pmid: '17485330'
+  - sourceOrg: Parasites &amp; vectors
     title: Review and statistical analysis of clinical management of feline leishmaniosis caused by Leishmania infantum.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9272864/
     type: review
-    pmid: "35818075"
+    pmid: '35818075'
     relevance: primary
 pubmedQueries:
   - query: '"feline immunodeficiency virus" OR "FIV" AND ("management" OR "treatment" OR "prognosis")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "INFECTION"
+  chapter: DIG
+  sectionTitle: INFECTION
   pdfPage: 525
+diagnosticAlgorithm:
+  title: 貓免疫缺陷病毒感染 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估慢性感染、口腔疾病、體重下降，注意高風險群（未絕育公貓、流浪貓）
+      findings:
+        - 慢性口炎/齒齦炎
+        - 反覆上呼吸道感染
+        - 慢性腹瀉
+        - 體重下降
+    - step: 2
+      action: 篩檢測試
+      details: ELISA/快速免疫層析法偵測抗FIV抗體
+      findings:
+        - 抗FIV抗體陽性
+        - 注意疫苗接種史（疫苗可致假陽性）
+        - 幼貓<6月齡可能有母體抗體
+        - 高風險群建議篩檢
+    - step: 3
+      action: 確認試驗
+      details: Western blot或PCR確認篩檢陽性結果
+      findings:
+        - Western blot確認抗體
+        - PCR偵測前病毒DNA
+        - 區分疫苗抗體vs感染抗體
+        - 幼貓>6月齡後複查
+    - step: 4
+      action: 感染分期與監測
+      details: 評估免疫功能（CD4:CD8比值）、相關疾病篩檢
+      findings:
+        - CD4+ T細胞計數
+        - 基礎疾病評估
+        - 口腔疾病管理
+        - 室內飼養防止傳播
+clinicalPearls:
+  - FIV陽性貓不等於立即安樂死，多數可正常生活多年
+  - 幼貓<6月齡陽性應在6月齡後重新檢測（排除母源抗體）
+  - 口腔炎是FIV最常見的臨床問題
+  - FIV疫苗會導致抗體檢測陽性，目前已不建議使用
+monitoringItems:
+  - 每6個月健康檢查
+  - 全血球計數（CD4淋巴球）
+  - 體重
+  - 口腔健康
+  - 繼發感染徵兆
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+ddxSource: book

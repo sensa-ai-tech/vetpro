@@ -3,13 +3,15 @@ nameEn: Erythema Multiforme
 nameZh: 多形性紅斑
 bodySystem: dermatology
 description: 急性免疫媒介性皮膚病，因藥物反應或感染觸發細胞毒性 T 細胞攻擊角質細胞。典型表現為多形性皮膚病灶（紅斑、靶環狀斑、水泡、潰瘍），可累及皮膚與黏膜。
-
 aliases:
-  - { alias: "EM", language: en }
-  - { alias: "Stevens-Johnson Syndrome", language: en }
-  - { alias: "多形紅斑", language: zh }
-  - { alias: "標靶環狀紅斑", language: zh }
-
+  - alias: EM
+    language: en
+  - alias: Stevens-Johnson Syndrome
+    language: en
+  - alias: 多形紅斑
+    language: zh
+  - alias: 標靶環狀紅斑
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 藥物反應
@@ -29,7 +30,6 @@ etiology:
       examples:
         - 疱疹病毒
         - 上呼吸道感染後
-
 clinicalSigns:
   early:
     - 突然出現多形性皮膚病灶
@@ -40,14 +40,12 @@ clinicalSigns:
     - 口腔黏膜潰瘍
     - 足墊潰瘍
     - 發燒、疼痛
-
 diagnosis:
   primaryTests:
     - name: 皮膚活檢
       notes: 確診需組織病理。見角質細胞壞死（apoptosis）與淋巴球浸潤
     - name: 藥物史回顧
       notes: 確認發病前 1-3 週是否有新藥使用
-
 treatment:
   principles:
     - 停用可疑藥物
@@ -58,21 +56,56 @@ treatment:
     - 輕度：支持性照護可自行緩解
     - 嚴重（SJS/TEN）：免疫抑制（Cyclosporine）
     - 傷口護理與疼痛管理
-
 prognosis: 輕度多形性紅斑停藥後預後良好。Stevens-Johnson 症候群預後謹慎至不良。中毒性表皮壞死（TEN）預後極差。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline immune-mediated skin disorders: Part 1."
+    title: 'Feline immune-mediated skin disorders: Part 1.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12033501/
     type: review
-    pmid: "40219649"
+    pmid: '40219649'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline immune-mediated skin disorders: Part 2."
+    title: 'Feline immune-mediated skin disorders: Part 2.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12033568/
     type: review
-    pmid: "40219647"
+    pmid: '40219647'
 pubmedQueries:
   - query: '"erythema multiforme" AND (veterinary OR canine OR feline) AND ("drug reaction" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 多形性紅斑 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估皮膚黏膜病變特徵和藥物/感染暴露史
+      findings:
+        - 急性發作的多形性皮膚病變
+        - 標靶樣環狀病灶
+        - 口腔黏膜潰瘍
+        - 近期藥物使用或感染病史
+    - step: 2
+      action: 實驗室檢查
+      details: 進行基本實驗室檢查評估全身狀態
+      findings:
+        - 血液學可見白血球增多
+        - 藥物相關病史回顧
+        - 感染篩檢
+        - 自體免疫標記物
+    - step: 3
+      action: 組織病理學確診
+      details: 進行皮膚活檢確認診斷
+      findings:
+        - 基底層淋巴球浸潤
+        - 角質細胞個別壞死（凋亡）
+        - 界面性皮膚炎
+        - 與SLE和TEN鑑別
+clinicalPearls:
+  - 多形性紅斑與中毒性表皮壞死溶解症（TEN）屬於同一疾病譜，TEN為更嚴重的形式
+  - 最常見的藥物觸發因素包括磺胺類藥物、頭孢菌素和NSAIDs
+  - 組織病理學是確診的金標準，界面性皮膚炎伴角質細胞凋亡為特徵性表現
+  - 貓的多形性紅斑較少見但可能與疱疹病毒感染相關
+monitoringItems:
+  - 每1-2週複診評估病變消退情況
+  - 定期監測CBC和肝腎功能（免疫抑制劑使用時）
+  - 記錄並避免已知的觸發藥物
+  - 監測是否有繼發感染
+ddxSource: book

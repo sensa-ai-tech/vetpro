@@ -3,13 +3,15 @@ nameEn: Hydrocephalus Congenital
 nameZh: 先天性水腦症
 bodySystem: neurology
 description: 先天性水腦症為腦室內腦脊液異常蓄積導致腦室擴大與顱內壓增高的先天缺陷。吉娃娃、約克夏梗、馬爾濟斯等玩賞犬品種好發。嚴重者可見開放囟門與顱骨穹隆膨大。
-
 aliases:
-  - { alias: 水腦症, language: zh }
-  - { alias: 先天性腦積水, language: zh }
-  - { alias: Congenital hydrocephalus, language: en }
-  - { alias: Ventriculomegaly, language: en }
-
+  - alias: 水腦症
+    language: zh
+  - alias: 先天性腦積水
+    language: zh
+  - alias: Congenital hydrocephalus
+    language: en
+  - alias: Ventriculomegaly
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓較少見。
-
 etiology:
   categories:
     - name: 先天發育異常
@@ -29,7 +30,6 @@ etiology:
       examples:
         - 胎兒期感染（貓瘟病毒）
         - 遺傳因素
-
 clinicalSigns:
   early:
     - 穹隆狀顱骨（domed skull）
@@ -41,14 +41,12 @@ clinicalSigns:
     - 行為異常
     - 共濟失調
     - 意識程度下降
-
 diagnosis:
   primaryTests:
     - name: 頭部超音波
       notes: 經開放囟門超音波可見腦室擴大。幼犬最方便的檢查
     - name: MRI
       notes: 金標準。評估腦室大小與腦實質壓迫程度
-
 treatment:
   principles:
     - 輕度者保守治療
@@ -60,16 +58,50 @@ treatment:
     - 癲癇控制（Levetiracetam、Phenobarbital）
     - 嚴重者：腦室腹膜分流術（VP shunt）
     - 避免頭部外傷
-
 prognosis: 輕度水腦症可能終生穩定。嚴重者預後謹慎。VP shunt 可改善症狀但有併發症風險。無症狀的腦室擴大不一定需要治療。
-
-
 guidelineRefs:
   - sourceOrg: International journal of molecular sciences
-    title: A Paternal Methylation Error in the Congenital Hydrocephalic Texas (H-Tx) Rat Is Partially Rescued with Natural Folate Supplements.
+    title: >-
+      A Paternal Methylation Error in the Congenital Hydrocephalic Texas (H-Tx) Rat Is Partially Rescued with Natural
+      Folate Supplements.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9860872/
     type: research
-    pmid: "36675153"
+    pmid: '36675153'
 pubmedQueries:
   - query: '"hydrocephalus" AND (congenital OR canine OR feline) AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: blindness
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 先天性水腦症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - seizures 相關症狀
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 頭部超音波
+          notes: 經開放囟門超音波可見腦室擴大。幼犬最方便的檢查
+        - name: MRI
+          notes: 金標準。評估腦室大小與腦實質壓迫程度
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 輕度者保守治療
+        - 嚴重者可行 VP shunt
+        - 降低顱內壓
+ddxSource: auto-generated

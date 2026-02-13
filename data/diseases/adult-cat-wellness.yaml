@@ -3,18 +3,18 @@ nameEn: Adult Cat Wellness
 nameZh: 成貓健康照護
 bodySystem: other
 description: 成貓(1-7歲)的年度健康檢查及預防保健計畫。包括疫苗補強、寄生蟲預防、牙科保健、體重管理及貓科特有疾病篩檢,維持成貓長期健康。
-
 aliases:
-  - { alias: 成貓預防保健, language: zh }
-  - { alias: Adult cat preventive care, language: en }
-  - { alias: Annual cat wellness exam, language: en }
-
+  - alias: 成貓預防保健
+    language: zh
+  - alias: Adult cat preventive care
+    language: en
+  - alias: Annual cat wellness exam
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
     notes: 室內貓建議每年檢查,室外貓建議每半年檢查一次
-
 etiology:
   categories:
     - name: 預防保健項目
@@ -25,7 +25,6 @@ etiology:
         - 體重及體態評分
         - 行為及環境評估
         - 甲狀腺功能篩檢(7歲起)
-
 clinicalSigns:
   early:
     - 健康成貓應警覺、活動正常
@@ -35,23 +34,21 @@ clinicalSigns:
     - 體重異常變化
     - 牙齦炎或口臭
     - 排尿或飲水習慣改變
-
 diagnosis:
   primaryTests:
     - name: 年度完整身體檢查
-      notes: "心肺聽診、腹部觸診、甲狀腺觸診、口腔檢查、皮膚評估"
+      notes: 心肺聽診、腹部觸診、甲狀腺觸診、口腔檢查、皮膚評估
     - name: 尿液分析
-      notes: "評估腎功能及尿路健康(建議每年)"
+      notes: 評估腎功能及尿路健康(建議每年)
     - name: 基礎血檢
-      notes: "CBC及生化(7歲前至少一次)"
+      notes: CBC及生化(7歲前至少一次)
     - name: 血壓測量
-      notes: "7歲起建議每年測量"
+      notes: 7歲起建議每年測量
   differentialDiagnoses:
     - 早期腎臟病
     - 甲狀腺機能亢進
     - 糖尿病
     - 牙周病
-
 treatment:
   medical:
     - 每1-3年補強疫苗:FVRCP(依抗體力價或風險)
@@ -59,41 +56,63 @@ treatment:
     - 每月體內外寄生蟲預防(室外貓必須)
     - 建議每年或每2年洗牙(依牙結石嚴重度)
     - 維持理想體重:控制飲食,增加活動
-
 prognosis:
-  general: "定期預防保健可及早發現貓科常見疾病(腎病、甲亢、糖尿病),顯著改善預後。"
-
+  general: 定期預防保健可及早發現貓科常見疾病(腎病、甲亢、糖尿病),顯著改善預後。
 prevention:
   - 室內貓每年檢查,室外貓每半年檢查
   - 持續寄生蟲預防(即使室內貓也需預防)
   - 維持理想體重,避免肥胖
   - 提供環境豐富化(垂直空間、玩具、互動)
   - 監測飲水量、排尿頻率及貓砂盆使用
-
-
 guidelineRefs:
   - sourceOrg: Australian veterinary journal
-    title: "Feline immunodeficiency virus (FIV) infection in domestic pet cats in Australia and New Zealand: Guidelines for diagnosis, prevention and management."
+    title: >-
+      Feline immunodeficiency virus (FIV) infection in domestic pet cats in Australia and New Zealand: Guidelines for
+      diagnosis, prevention and management.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9546031/
     type: guideline
-    pmid: "35578381"
+    pmid: '35578381'
   - sourceOrg: Journal of feline medicine and surgery
     title: 2021 AAHA/AAFP Feline Life Stage Guidelines.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812130/
     type: guideline
-    pmid: "33627003"
+    pmid: '33627003'
   - sourceOrg: Autophagy
     title: Guidelines for the use and interpretation of assays for monitoring autophagy (3rd edition).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4835977/
     type: guideline
-    pmid: "26799652"
+    pmid: '26799652'
   - sourceOrg: Australian veterinary journal
-    title: "Feline leukaemia virus (FeLV) infection in domestic pet cats in Australia and New Zealand: Guidelines for diagnosis, prevention and management."
+    title: >-
+      Feline leukaemia virus (FeLV) infection in domestic pet cats in Australia and New Zealand: Guidelines for
+      diagnosis, prevention and management.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12500364/
     type: review
-    pmid: "40716042"
+    pmid: '40716042'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Dietary phosphorus and renal disease in cats: where are we?"
+    title: 'Dietary phosphorus and renal disease in cats: where are we?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11529143/
     type: review
-    pmid: "39376053"
+    pmid: '39376053'
+associatedSymptoms:
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 成貓健康照護 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - halitosis-stomatitis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 年度完整身體檢查
+          notes: 心肺聽診、腹部觸診、甲狀腺觸診、口腔檢查、皮膚評估
+        - name: 尿液分析
+          notes: 評估腎功能及尿路健康(建議每年)
+        - name: 基礎血檢
+          notes: CBC及生化(7歲前至少一次)
+ddxSource: auto-generated

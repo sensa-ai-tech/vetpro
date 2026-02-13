@@ -3,11 +3,11 @@ nameEn: Cardiac Tumor
 nameZh: 心臟腫瘤
 bodySystem: oncology
 description: 心臟的原發性腫瘤，犬以血管肉瘤（右心房/心耳）與心基底部腫瘤（chemodectoma）最常見。常以心包膜積液/心包填塞急診發現。
-
 aliases:
-  - { alias: "Heart Tumor", language: en }
-  - { alias: "心臟新生物", language: zh }
-
+  - alias: Heart Tumor
+    language: en
+  - alias: 心臟新生物
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓極罕見。
-
 etiology:
   categories:
     - name: 腫瘤性
@@ -23,7 +22,6 @@ etiology:
         - 血管肉瘤（右心房，最常見）
         - 心基底部腫瘤（chemodectoma/aortic body tumor）
         - 淋巴瘤
-
 clinicalSigns:
   early:
     - 運動不耐受
@@ -34,14 +32,12 @@ clinicalSigns:
     - 休克
     - 呼吸困難
     - 猝死
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波
       notes: 心包膜積液、心臟腫塊定位
     - name: 心包膜穿刺
       notes: 引流積液穩定血流動力學。液體細胞學
-
 treatment:
   principles:
     - 穩定心包填塞
@@ -51,41 +47,76 @@ treatment:
     - 心包膜切除術（反覆積液）
     - 血管肉瘤：化療（Doxorubicin）
     - chemodectoma：多為緩慢生長，心包膜切除後可長期控制
-
 prognosis: 心臟血管肉瘤預後極差（中位存活 < 4 個月）。Chemodectoma 心包膜切除後中位存活 > 1 年。
-
-
 guidelineRefs:
   - sourceOrg: Journal of clinical medicine
-    title: "Particularities of a Cardiac Amorphous Left Ventricular Tumor in a Patient with Coronary Artery Disease-Diagnostic and Therapeutic Challenges: A Case Report and Literature Review."
+    title: >-
+      Particularities of a Cardiac Amorphous Left Ventricular Tumor in a Patient with Coronary Artery Disease-Diagnostic
+      and Therapeutic Challenges: A Case Report and Literature Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11508710/
     type: review
-    pmid: "39458043"
+    pmid: '39458043'
   - sourceOrg: Journal of veterinary internal medicine
     title: Transatrial stenting for long-term management of cardiac tumor obstruction of the right atrium in 3 dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7848387/
     type: research
-    pmid: "33338301"
+    pmid: '33338301'
   - sourceOrg: Mediators of inflammation
-    title: "Paeonol Attenuates Methotrexate-Induced Cardiac Toxicity in Rats by Inhibiting Oxidative Stress and Suppressing TLR4-Induced NF-&#x3ba;B Inflammatory Pathway."
+    title: >-
+      Paeonol Attenuates Methotrexate-Induced Cardiac Toxicity in Rats by Inhibiting Oxidative Stress and Suppressing
+      TLR4-Induced NF-&#x3ba;B Inflammatory Pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7035561/
     type: research
-    pmid: "32104151"
+    pmid: '32104151'
   - sourceOrg: International journal of surgery (London, England)
-    title: "Cardiac tumors prevalence and mortality: A systematic review and meta-analysis."
+    title: 'Cardiac tumors prevalence and mortality: A systematic review and meta-analysis.'
     url: https://pubmed.ncbi.nlm.nih.gov/32169566/
     type: review
-    pmid: "32169566"
-  - sourceOrg: "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology"
-    title: "Heart base tumors in French Bulldogs: a case series."
+    pmid: '32169566'
+  - sourceOrg: 'Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology'
+    title: 'Heart base tumors in French Bulldogs: a case series.'
     url: https://pubmed.ncbi.nlm.nih.gov/40359626/
     type: research
-    pmid: "40359626"
+    pmid: '40359626'
   - sourceOrg: Methodist DeBakey cardiovascular journal
-    title: "Calcified amorphous tumor of the heart: case report and review of the literature."
+    title: 'Calcified amorphous tumor of the heart: case report and review of the literature.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4051333/
     type: review
-    pmid: "24932362"
+    pmid: '24932362'
 pubmedQueries:
   - query: '"cardiac tumor" AND (veterinary OR canine) AND ("hemangiosarcoma" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 心臟腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波
+          notes: 心包膜積液、心臟腫塊定位
+        - name: 心包膜穿刺
+          notes: 引流積液穩定血流動力學。液體細胞學
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 穩定心包填塞
+        - 手術切除（可行時）
+ddxSource: auto-generated

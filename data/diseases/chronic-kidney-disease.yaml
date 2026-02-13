@@ -3,13 +3,15 @@ nameEn: Chronic Kidney Disease
 nameZh: 慢性腎臟病
 bodySystem: renal
 description: 腎臟功能進行性且不可逆的喪失，為老年犬貓最常見的腎臟疾病。
-
 aliases:
-  - { alias: CKD, language: en }
-  - { alias: Chronic Renal Failure, language: en }
-  - { alias: CRF, language: en }
-  - { alias: 慢性腎衰竭, language: zh }
-
+  - alias: CKD
+    language: en
+  - alias: Chronic Renal Failure
+    language: en
+  - alias: CRF
+    language: en
+  - alias: 慢性腎衰竭
+    language: zh
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
@@ -19,7 +21,6 @@ species:
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 好發品種包括 CKCS、Cocker Spaniel、Bull Terrier。
-
 etiology:
   categories:
     - name: 先天性/遺傳性
@@ -38,7 +39,6 @@ etiology:
     - name: 特發性
       examples:
         - 貓常無法找到明確病因
-
 clinicalSigns:
   early:
     - 多尿多渴 (PU/PD)
@@ -55,68 +55,79 @@ clinicalSigns:
     - 痙攣
     - 嚴重貧血 (非再生性)
     - 代謝性酸中毒
-
 diagnosis:
   primaryTests:
     - name: Creatinine
-      notes: ">75% 腎元喪失才會升高；受肌肉量影響"
+      notes: '>75% 腎元喪失才會升高；受肌肉量影響'
     - name: SDMA
-      notes: "約 40% 腎元喪失即升高，不受肌肉量影響"
+      notes: 約 40% 腎元喪失即升高，不受肌肉量影響
     - name: BUN
-      notes: "受飲食、水合狀態、消化道出血影響"
+      notes: 受飲食、水合狀態、消化道出血影響
     - name: 尿液分析
-      notes: "USG 貓 <1.035、犬 <1.030 提示濃縮能力不足；UPC 評估蛋白尿"
+      notes: USG 貓 <1.035、犬 <1.030 提示濃縮能力不足；UPC 評估蛋白尿
   imaging:
     - name: 腹部超音波
-      notes: "小且不規則腎臟 (慢性)；評估結石、腫瘤、水腎"
+      notes: 小且不規則腎臟 (慢性)；評估結石、腫瘤、水腎
     - name: X 光
-      notes: "腎臟大小評估；腎結石"
+      notes: 腎臟大小評估；腎結石
   additional:
     - 血壓測量
     - UPC ratio
     - 電解質 (K+、磷、鈣)
     - CBC (非再生性貧血)
     - T4 (貓 — 排除甲亢掩蓋 CKD)
-
 stagingSystem:
   name: IRIS CKD Staging
   sourceUrl: https://www.iris-kidney.com/iris-staging-system
   stages:
     - stage: 1
       label: 非氮血症期
-      creatinineDog: "<1.4 mg/dL (<125 μmol/L)"
-      creatinineCat: "<1.6 mg/dL (<140 μmol/L)"
-      sdma: "<18 μg/dL"
+      creatinineDog: <1.4 mg/dL (<125 μmol/L)
+      creatinineCat: <1.6 mg/dL (<140 μmol/L)
+      sdma: <18 μg/dL
       description: 存在腎臟異常但無氮血症
     - stage: 2
       label: 輕度腎性氮血症
-      creatinineDog: "1.4-2.8 mg/dL (125-250 μmol/L)"
-      creatinineCat: "1.6-2.8 mg/dL (140-250 μmol/L)"
-      sdma: "18-35 μg/dL"
+      creatinineDog: 1.4-2.8 mg/dL (125-250 μmol/L)
+      creatinineCat: 1.6-2.8 mg/dL (140-250 μmol/L)
+      sdma: 18-35 μg/dL
       description: 可能出現輕微臨床症狀
     - stage: 3
       label: 中度腎性氮血症
-      creatinineDog: "2.9-5.0 mg/dL (251-440 μmol/L)"
-      creatinineCat: "2.9-5.0 mg/dL (251-440 μmol/L)"
-      sdma: "36-54 μg/dL"
+      creatinineDog: 2.9-5.0 mg/dL (251-440 μmol/L)
+      creatinineCat: 2.9-5.0 mg/dL (251-440 μmol/L)
+      sdma: 36-54 μg/dL
       description: 預期出現全身性臨床症狀
     - stage: 4
       label: 重度腎性氮血症
-      creatinineDog: ">5.0 mg/dL (>440 μmol/L)"
-      creatinineCat: ">5.0 mg/dL (>440 μmol/L)"
-      sdma: ">54 μg/dL"
+      creatinineDog: '>5.0 mg/dL (>440 μmol/L)'
+      creatinineCat: '>5.0 mg/dL (>440 μmol/L)'
+      sdma: '>54 μg/dL'
       description: 尿毒危象風險高
   substaging:
     proteinuria:
-      - { category: 無蛋白尿, upcDog: "<0.2", upcCat: "<0.2" }
-      - { category: 邊緣性蛋白尿, upcDog: "0.2-0.5", upcCat: "0.2-0.4" }
-      - { category: 蛋白尿, upcDog: ">0.5", upcCat: ">0.4" }
+      - category: 無蛋白尿
+        upcDog: <0.2
+        upcCat: <0.2
+      - category: 邊緣性蛋白尿
+        upcDog: 0.2-0.5
+        upcCat: 0.2-0.4
+      - category: 蛋白尿
+        upcDog: '>0.5'
+        upcCat: '>0.4'
     bloodPressure:
-      - { category: 正常血壓, systolic: "<140 mmHg", risk: 低 }
-      - { category: 高血壓前期, systolic: "140-159 mmHg", risk: 低-中 }
-      - { category: 高血壓, systolic: "160-179 mmHg", risk: 中-高 }
-      - { category: 嚴重高血壓, systolic: "≥180 mmHg", risk: 高 }
-
+      - category: 正常血壓
+        systolic: <140 mmHg
+        risk: 低
+      - category: 高血壓前期
+        systolic: 140-159 mmHg
+        risk: 低-中
+      - category: 高血壓
+        systolic: 160-179 mmHg
+        risk: 中-高
+      - category: 嚴重高血壓
+        systolic: ≥180 mmHg
+        risk: 高
 treatment:
   principles:
     - 治療為支持性，目標在減緩進展
@@ -136,15 +147,12 @@ treatment:
       - 紅血球生成素製劑 (嚴重貧血)
       - 補鉀 (若低鉀血症)
       - 矯正代謝性酸中毒
-
 prognosis: IRIS Stage 1-2 存活時間中位數可達數年；Stage 3-4 預後較差，中位存活時間數月至一年。早期診斷與積極管理可顯著延長存活時間。
-
 ontologyMappings:
   - source: MONDO
-    code: "MONDO:0005300"
+    code: MONDO:0005300
     label: chronic kidney disease
     confidence: exact
-
 guidelineRefs:
   - sourceOrg: IRIS
     title: IRIS CKD Staging and Treatment Guidelines
@@ -154,28 +162,109 @@ guidelineRefs:
     title: 2024 ISFM and AAFP consensus guidelines on the long-term use of NSAIDs in cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11103309/
     type: consensus
-    pmid: "38587872"
+    pmid: '38587872'
   - sourceOrg: Journal of feline medicine and surgery
     title: ISFM Consensus Guidelines on the Diagnosis and Management of Feline Chronic Kidney Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11148907/
     type: consensus
-    pmid: "26936494"
+    pmid: '26936494'
   - sourceOrg: Journal of feline medicine and surgery
     title: ISFM Consensus Guidelines on the Diagnosis and Management of Hypertension in Cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11119534/
     type: guideline
-    pmid: "28245741"
+    pmid: '28245741'
   - sourceOrg: Journal of feline medicine and surgery
     title: 2016 AAFP Guidelines for the Management of Feline Hyperthyroidism.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11132203/
     type: guideline
-    pmid: "27143042"
+    pmid: '27143042'
     relevance: primary
 pubmedQueries:
   - query: '"chronic kidney disease" AND (cat OR feline OR dog OR canine) AND "consensus statement"'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "URN"
-  sectionTitle: "Chronic Kidney Disease"
+  chapter: URN
+  sectionTitle: Chronic Kidney Disease
   pdfPage: 1553
+diagnosticAlgorithm:
+  title: 慢性腎臟病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估多飲多尿、體重減輕病史
+      findings:
+        - 多飲多尿
+        - 體重減輕與肌肉流失
+        - 口腔潰瘍
+        - 被毛粗糙
+    - step: 2
+      action: 血液生化與IRIS分期
+      details: 腎功能指標及分期
+      findings:
+        - 肌酐與SDMA升高
+        - IRIS分期（1-4期）
+        - 電解質異常
+        - 非再生性貧血
+    - step: 3
+      action: 尿液分析與UPC
+      details: 尿液評估與蛋白定量
+      findings:
+        - 尿比重持續偏低
+        - 蛋白尿（UPC>0.4犬/>0.2貓）
+        - 亞分期（蛋白尿與高血壓）
+    - step: 4
+      action: 影像與並發症
+      details: 腎臟形態與血壓
+      findings:
+        - 腎臟縮小表面不規則（晚期）
+        - 超音波腎臟回音增強
+        - 血壓測量
+        - 甲狀腺功能（貓）
+clinicalPearls:
+  - SDMA比Creatinine更早偵測腎功能下降（約40% vs 75%功能喪失）
+  - 貓CKD常合併甲狀腺亢進，治療甲亢後腎功能可能惡化
+  - 腎臟處方飲食可延長2-3倍存活時間
+  - 高磷血症加速CKD進展
+  - 血壓>160 mmHg需要治療以保護靶器官
+monitoringItems:
+  - BUN/Crea/SDMA q2-4週（初期）then q2-4月
+  - UPC
+  - 血壓q1-3月
+  - 電解質
+  - PCV
+  - 體重
+  - 生活品質評估
+associatedSymptoms:
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: halitosis-stomatitis
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+associatedLabFindings:
+  - labId: anaemia-non-regenerative
+    frequency: common
+  - labId: azotaemia
+    frequency: common
+  - labId: hypokalaemia
+    frequency: common
+  - labId: creatinine-elevated
+    frequency: common
+  - labId: usg-low
+    frequency: common
+ddxSource: book

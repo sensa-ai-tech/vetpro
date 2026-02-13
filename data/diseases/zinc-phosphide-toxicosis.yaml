@@ -3,12 +3,13 @@ nameEn: Zinc Phosphide Toxicosis
 nameZh: 磷化鋅中毒
 bodySystem: toxicology
 description: 磷化鋅 (zinc phosphide) 殺鼠劑在胃酸環境中釋放高毒性的磷化氫 (phosphine) 氣體，直接損傷細胞粒線體。犬貓攝入後迅速發展嚴重消化道與全身性毒性。因釋放磷化氫氣體，嘔吐物對救治人員也有危險。
-
 aliases:
-  - { alias: 磷化鋅殺鼠劑中毒, language: zh }
-  - { alias: Zinc Phosphide Poisoning, language: en }
-  - { alias: Phosphine Toxicosis, language: en }
-
+  - alias: 磷化鋅殺鼠劑中毒
+    language: zh
+  - alias: Zinc Phosphide Poisoning
+    language: en
+  - alias: Phosphine Toxicosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓較少接觸但同樣易感。致死劑量約 40 mg/kg。
-
 etiology:
   categories:
     - name: 毒性機制
@@ -29,7 +29,6 @@ etiology:
       examples:
         - 磷化鋅顆粒殺鼠劑
         - 農業用鼴鼠藥
-
 clinicalSigns:
   early:
     - 嘔吐（嘔吐物可能有大蒜味或腐魚味）
@@ -42,7 +41,6 @@ clinicalSigns:
     - 肝衰竭
     - 腎衰竭
     - 休克與死亡（數小時至數天）
-
 diagnosis:
   primaryTests:
     - name: 病史確認
@@ -54,7 +52,6 @@ diagnosis:
     - 腎功能
     - 血液氣體
     - 心電圖
-
 treatment:
   principles:
     - 催吐需在通風環境操作
@@ -70,17 +67,60 @@ treatment:
     - 心律不整管理
     - 抗氧化劑（vitamin C、vitamin E）
     - 住院密切監測 48-72 小時
-
 prognosis: 磷化鋅中毒預後視攝入量與就醫時效而定。早期催吐去汙染可改善預後。已發展多器官衰竭者預後差。致死率可達 50-100%（高劑量暴露）。
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
     title: Delayed Zinc Phosphide Toxicosis in a Dog.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12322358/
     type: case-report
-    pmid: "40566877"
+    pmid: '40566877'
     relevance: supporting
 pubmedQueries:
   - query: '"zinc phosphide" AND (toxicosis OR poisoning) AND (veterinary OR canine)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+diagnosticAlgorithm:
+  title: 磷化鋅中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - dyspnoea 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史確認
+          notes: 確認磷化鋅暴露。嘔吐物的大蒜/腐魚氣味為線索。需注意嘔吐物中磷化氫對人的危險性
+        - name: 胃內容物化學分析
+          notes: 銀硝酸試紙測試胃內容物或嘔吐物中的磷化氫
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 肝功能指數（ALT、AST 急遽升高）
+        - 腎功能
+        - 血液氣體
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 催吐需在通風環境操作
+        - 降低胃酸減少磷化氫釋放
+        - 無特效解毒劑
+ddxSource: auto-generated

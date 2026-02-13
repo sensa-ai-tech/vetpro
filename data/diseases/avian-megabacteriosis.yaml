@@ -3,19 +3,21 @@ nameEn: Avian Megabacteriosis
 nameZh: 禽類巨菌症
 bodySystem: gastrointestinal
 description: 禽類巨菌症由 Macrorhabdus ornithogaster（前稱 megabacteria）引起，為一種影響腺胃（前胃）的酵母菌感染。好發於虎皮鸚鵡、金絲雀及雀科鳥類，導致腺胃功能障礙、消瘦及死亡。
-
 aliases:
-  - { alias: 巨菌感染, language: zh }
-  - { alias: 腺胃酵母菌感染, language: zh }
-  - { alias: Macrorhabdus ornithogaster infection, language: en }
-  - { alias: Avian gastric yeast, language: en }
-  - { alias: Going light syndrome, language: en }
-
+  - alias: 巨菌感染
+    language: zh
+  - alias: 腺胃酵母菌感染
+    language: zh
+  - alias: Macrorhabdus ornithogaster infection
+    language: en
+  - alias: Avian gastric yeast
+    language: en
+  - alias: Going light syndrome
+    language: en
 species:
   - speciesCommon: bird
     prevalence: common
     notes: 虎皮鸚鵡、金絲雀、雀科鳥類最常見。可長期無症狀帶原。緊迫時發病。群體中感染率可能很高。
-
 etiology:
   categories:
     - name: 感染性
@@ -31,7 +33,6 @@ etiology:
         - 營養不良
         - 高密度飼養
         - 併發其他疾病
-
 clinicalSigns:
   early:
     - 體重緩慢下降（食慾看似正常）
@@ -44,7 +45,6 @@ clinicalSigns:
     - 嗜睡
     - 被毛蓬亂
     - 突然死亡
-
 diagnosis:
   primaryTests:
     - name: 糞便鏡檢
@@ -53,7 +53,6 @@ diagnosis:
       notes: 嘔吐物或嗉囊沖洗液中可見病原體
     - name: 病理學
       notes: 剖檢見腺胃黏膜增厚、潰瘍。組織切片見大量酵母菌體附著
-
 treatment:
   principles:
     - 抗真菌治療
@@ -67,9 +66,42 @@ treatment:
     - 營養補充與體重監測
     - 減少環境緊迫
     - 治療期間隔離以降低傳播
-
 prognosis: 預後謹慎。早期治療反應較好，但完全清除病原困難。停藥後常復發。慢性消瘦個體預後較差。嚴重腺胃病變（潰瘍、出血）預後不良。群體管理中需長期監測。
-
 pubmedQueries:
   - query: '"megabacteriosis" OR "Macrorhabdus ornithogaster" AND (avian OR bird) AND treatment'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+diagnosticAlgorithm:
+  title: 禽類巨菌症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - weakness 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便鏡檢
+          notes: 新鮮糞便濕片見大型棒狀酵母菌體。革蘭氏染色為陽性大型桿菌狀
+        - name: 嗉囊拭子
+          notes: 嘔吐物或嗉囊沖洗液中可見病原體
+        - name: 病理學
+          notes: 剖檢見腺胃黏膜增厚、潰瘍。組織切片見大量酵母菌體附著
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 抗真菌治療
+        - 降低胃酸促進藥物作用
+        - 營養支持
+ddxSource: auto-generated

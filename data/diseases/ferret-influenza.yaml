@@ -3,20 +3,22 @@ nameEn: Ferret Influenza
 nameZh: 雪貂流感
 bodySystem: respiratory
 description: 雪貂感染人類流感病毒 (Influenza A 或 B) 引起的上呼吸道疾病，雪貂對人類流感病毒高度易感，可與人類互相傳播，為流感研究的重要動物模型。
-
 aliases:
-  - { alias: 雪貂流行性感冒, language: zh }
-  - { alias: 雪貂流感病毒感染, language: zh }
-  - { alias: Ferret flu, language: en }
-  - { alias: Influenza virus infection in ferrets, language: en }
-  - { alias: Ferret human influenza, language: en }
-
+  - alias: 雪貂流行性感冒
+    language: zh
+  - alias: 雪貂流感病毒感染
+    language: zh
+  - alias: Ferret flu
+    language: en
+  - alias: Influenza virus infection in ferrets
+    language: en
+  - alias: Ferret human influenza
+    language: en
 species:
   - speciesCommon: ferret
     speciesScientific: Mustela putorius furo
     prevalence: common
     notes: 雪貂對人類流感病毒高度易感 (呼吸道唾液酸受體與人類相似)。人貂雙向傳播。多為自限性。幼貂與老年貂病情較嚴重。流感季節家庭飼養雪貂常從飼主感染。
-
 etiology:
   categories:
     - name: 病毒性
@@ -32,7 +34,6 @@ etiology:
         - 幼貂 (<6 月齡，免疫未成熟)
         - 老年貂或免疫抑制個體
         - 多貂家庭 (快速傳播)
-
 clinicalSigns:
   early:
     - 打噴嚏 (最常見首發症狀)
@@ -52,21 +53,19 @@ clinicalSigns:
     - 嚴重脫水 (幼貂)
     - 呼吸困難 (下呼吸道感染)
     - 幼貂可致死
-
 diagnosis:
   primaryTests:
     - name: 臨床表徵與病史
-      notes: "流感季節 + 飼主近期有流感症狀 + 打噴嚏與鼻分泌物即高度懷疑。多數病例不需進一步確診"
+      notes: 流感季節 + 飼主近期有流感症狀 + 打噴嚏與鼻分泌物即高度懷疑。多數病例不需進一步確診
     - name: 快速流感抗原檢測
-      notes: "人用快速流感試劑 (鼻咽拭子) 可用於雪貂。敏感度中等，特異度高。10-15 分鐘出結果"
+      notes: 人用快速流感試劑 (鼻咽拭子) 可用於雪貂。敏感度中等，特異度高。10-15 分鐘出結果
   imaging:
     - name: 胸腔 X 光
-      notes: "僅嚴重病例需要。繼發性肺炎評估。間質至肺泡浸潤"
+      notes: 僅嚴重病例需要。繼發性肺炎評估。間質至肺泡浸潤
   additional:
     - RT-PCR (鼻咽拭子，確認亞型)
     - 病毒分離培養 (研究用途)
     - CBC (淋巴球減少可見於急性期)
-
 treatment:
   principles:
     - 多數為自限性疾病 (5-14 天痊癒)
@@ -75,16 +74,16 @@ treatment:
     - 隔離避免傳播 (人貂雙向)
   medications:
     - name: Diphenhydramine
-      dose: "1-2 mg/kg PO BID-TID"
+      dose: 1-2 mg/kg PO BID-TID
       notes: 抗組織胺緩解鼻分泌物。幼貂劑量保守使用
     - name: Amoxicillin-Clavulanate
-      dose: "12.5-25 mg/kg PO BID"
+      dose: 12.5-25 mg/kg PO BID
       notes: 預防或治療繼發性細菌感染。非治療病毒本身
     - name: 皮下輸液 (Warmed Lactated Ringer's)
-      dose: "雪貂每次 20-40 mL SC，每 12 小時"
+      dose: 雪貂每次 20-40 mL SC，每 12 小時
       notes: 脫水或食慾差時補液。幼貂更易脫水
     - name: Meloxicam
-      dose: "0.2 mg/kg PO/SC SID"
+      dose: 0.2 mg/kg PO/SC SID
       notes: 發燒與不適緩解。確認水合狀態
   general:
     - 保暖舒適環境
@@ -95,43 +94,91 @@ treatment:
     - 隔離患貂避免傳染其他雪貂
     - 感染飼主避免密切接觸雪貂 (戴口罩、勤洗手)
     - 通常 5-14 天自行痊癒
-
 prognosis: 成年健康雪貂預後良好，多為自限性 (5-14 天)。幼貂 (<6 月齡) 因脫水與繼發感染致死率較高，需積極治療。老年貂或有基礎疾病者病程可能延長。繼發性細菌性肺炎如未治療可致死。飼主流感期間注意隔離防護可有效預防。
-
 guidelineRefs:
   - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
     title: Respiratory Diseases in Ferrets
     url: https://pubmed.ncbi.nlm.nih.gov/33246539/
     type: review
-    pmid: "33246539"
+    pmid: '33246539'
   - sourceOrg: Future Virology
     title: The ferret as a model for influenza virus transmission
     url: https://pubmed.ncbi.nlm.nih.gov/25214830/
     type: review
-    pmid: "25214830"
-  - sourceOrg: "Microbiology and molecular biology reviews : MMBR"
+    pmid: '25214830'
+  - sourceOrg: 'Microbiology and molecular biology reviews : MMBR'
     title: Complexities in Ferret Influenza Virus Pathogenesis and Transmission Models.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4981671/
     type: review
-    pmid: "27412880"
+    pmid: '27412880'
     relevance: supporting
   - sourceOrg: Molecular therapy. Nucleic acids
     title: Polymeric nanoparticle-based mRNA vaccine is protective against influenza virus infection in ferrets.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10914582/
     type: research
-    pmid: "38444702"
+    pmid: '38444702'
     relevance: supporting
   - sourceOrg: British journal of clinical pharmacology
-    title: Safety, tolerability, and pharmacokinetics of radavirsen (AVI-7100), an antisense oligonucleotide targeting influenza a M1/M2 translation.
+    title: >-
+      Safety, tolerability, and pharmacokinetics of radavirsen (AVI-7100), an antisense oligonucleotide targeting
+      influenza a M1/M2 translation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5736848/
     type: research
-    pmid: "28929521"
+    pmid: '28929521'
     relevance: supporting
 pubmedQueries:
   - query: '"ferret" AND "influenza" AND ("clinical" OR "treatment" OR "transmission") NOT "model"'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "INFECTION"
+  chapter: DIG
+  sectionTitle: INFECTION
   pdfPage: 525
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: sneezing
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: coughing
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 雪貂流感 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - sneezing 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床表徵與病史
+          notes: 流感季節 + 飼主近期有流感症狀 + 打噴嚏與鼻分泌物即高度懷疑。多數病例不需進一步確診
+        - name: 快速流感抗原檢測
+          notes: 人用快速流感試劑 (鼻咽拭子) 可用於雪貂。敏感度中等，特異度高。10-15 分鐘出結果
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - RT-PCR (鼻咽拭子，確認亞型)
+        - 病毒分離培養 (研究用途)
+        - CBC (淋巴球減少可見於急性期)
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 多數為自限性疾病 (5-14 天痊癒)
+        - 支持性照護為主
+        - 幼貂與嚴重病例需積極治療
+ddxSource: auto-generated

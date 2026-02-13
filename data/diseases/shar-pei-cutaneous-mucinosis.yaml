@@ -3,18 +3,18 @@ nameEn: Shar-Pei Cutaneous Mucinosis
 nameZh: 沙皮犬皮膚黏蛋白沉積症
 bodySystem: dermatology
 description: 沙皮犬品種特徵性皮膚病,因透明質酸過度產生導致皮膚黏蛋白沉積與皺褶形成。為品種標準特徵,但過度沉積可引起皮膚脆弱、起泡與繼發感染,需適度管理。
-
 aliases:
-  - { alias: 沙皮黏蛋白症, language: zh }
-  - { alias: Shar-Pei Mucinosis, language: en }
-  - { alias: 沙皮透明質酸過多症, language: zh }
-
+  - alias: 沙皮黏蛋白症
+    language: zh
+  - alias: Shar-Pei Mucinosis
+    language: en
+  - alias: 沙皮透明質酸過多症
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 沙皮犬品種標準特徵,所有沙皮均有不同程度mucinosis,HAS2基因重複擴增相關
-
 etiology:
   categories:
     - name: 遺傳性基因異常
@@ -31,55 +31,75 @@ etiology:
       examples:
         - 皺褶皮膚為育種目標
         - '"肉嘴"型mucinosis更明顯'
-
 clinicalSigns:
   early:
     - 正常品種特徵:頭部、頸部皮膚皺褶
     - 皮膚觸感厚實、柔軟
     - 幼犬皺褶更明顯
   progressive:
-    - 過度mucinosis病例:
+    - 過度mucinosis病例: null
     - 皮膚極度增厚,河馬樣外觀
     - 皮膚脆弱,易起水泡(vesicles/bullae)
     - 水泡破裂後滲出黏稠液體
     - 皺褶內繼發性皮膚感染(細菌、酵母菌)
     - 皮膚紅腫、惡臭
     - 可能併發沙皮熱(Shar-Pei Fever,週期性發燒與關節腫脹)
-
 diagnosis:
   primaryTests:
     - name: 臨床診斷
-      notes: "沙皮犬品種+特徵性皮膚增厚與皺褶"
+      notes: 沙皮犬品種+特徵性皮膚增厚與皺褶
     - name: 皮膚組織病理
-      notes: "真皮內大量黏蛋白沉積,Alcian blue染色陽性"
+      notes: 真皮內大量黏蛋白沉積,Alcian blue染色陽性
     - name: 基因檢測
-      notes: "HAS2基因重複擴增檢測,拷貝數與嚴重度相關"
+      notes: HAS2基因重複擴增檢測,拷貝數與嚴重度相關
     - name: 皮膚細胞學
-      notes: "評估繼發感染(細菌、Malassezia)"
+      notes: 評估繼發感染(細菌、Malassezia)
   differentialDiagnoses:
     - 黏液水腫(甲狀腺低能)
     - 系統性黏蛋白症
     - 過敏性皮膚炎
     - 皮膚感染
     - 自體免疫性水泡病
-
 treatment:
   medical:
     - 輕中度mucinosis:無需治療,品種正常特徵
     - 過度mucinosis或起泡:
-      - 皮膚護理:保持皺褶乾燥清潔
-      - 抗菌洗劑:Chlorhexidine 2-4% q3-7天
-      - 繼發感染:抗生素或抗黴菌藥
-      - 水泡處理:無菌引流,抗生素眼藥塗抹
+        - 皮膚護理:保持皺褶乾燥清潔
+        - 抗菌洗劑:Chlorhexidine 2-4% q3-7天
+        - 繼發感染:抗生素或抗黴菌藥
+        - 水泡處理:無菌引流,抗生素眼藥塗抹
     - Dimethyl sulfoxide(DMSO)50%外用(減少黏蛋白,實驗性)
     - 嚴重病例:考慮皺褶整形手術
     - 沙皮熱相關:Colchicine 0.01-0.03 mg/kg PO SID(預防澱粉樣變性)
-
 prognosis:
-  general: "多數沙皮犬mucinosis為良性品種特徵,不影響健康。過度mucinosis病例可能反覆皮膚感染,生活品質下降。皺褶整形手術可改善,但可能影響品種外觀。"
-
+  general: 多數沙皮犬mucinosis為良性品種特徵,不影響健康。過度mucinosis病例可能反覆皮膚感染,生活品質下降。皺褶整形手術可改善,但可能影響品種外觀。
 prevention:
   - 育種選擇中等皺褶個體,避免極端mucinosis
   - 定期皮膚護理,保持皺褶清潔乾燥
   - 早期治療繼發感染
   - 基因檢測指導繁殖計畫(HAS2拷貝數)
+associatedSymptoms:
+  - symptomId: polyarthritis
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 沙皮犬皮膚黏蛋白沉積症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - polyarthritis 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床診斷
+          notes: 沙皮犬品種+特徵性皮膚增厚與皺褶
+        - name: 皮膚組織病理
+          notes: 真皮內大量黏蛋白沉積,Alcian blue染色陽性
+        - name: 基因檢測
+          notes: HAS2基因重複擴增檢測,拷貝數與嚴重度相關
+ddxSource: auto-generated

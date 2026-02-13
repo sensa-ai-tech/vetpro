@@ -3,13 +3,15 @@ nameEn: Cutaneous Vasculitis Detail
 nameZh: 皮膚型血管炎詳解
 bodySystem: dermatology
 description: 局限於皮膚及皮下組織血管的炎症性疾病，導致紫斑、潰瘍、壞死及脫毛，可為免疫介導性、藥物反應、感染性或品種特異性，為犬皮膚科重要的鑑別診斷之一。
-
 aliases:
-  - { alias: 皮膚血管炎, language: zh }
-  - { alias: 皮膚壞死性血管炎, language: zh }
-  - { alias: Cutaneous vasculitis, language: en }
-  - { alias: Dermal vasculitis, language: en }
-
+  - alias: 皮膚血管炎
+    language: zh
+  - alias: 皮膚壞死性血管炎
+    language: zh
+  - alias: Cutaneous vasculitis
+    language: en
+  - alias: Dermal vasculitis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓皮膚型血管炎少見。
-
 etiology:
   categories:
     - name: 免疫介導性
@@ -37,7 +38,6 @@ etiology:
       examples:
         - 灰狗——cutaneous vasculopathy
         - 傑克羅素㹴——familial cutaneous vasculopathy
-
 clinicalSigns:
   early:
     - 紫斑（purpura）
@@ -51,22 +51,20 @@ clinicalSigns:
     - 肉墊潰瘍
     - 四肢遠端水腫
     - 痂皮形成
-
 diagnosis:
   primaryTests:
     - name: 皮膚生檢
-      notes: "確診必備。組織病理學顯示小血管壁炎症、纖維素沉積、血管周圍炎症浸潤"
+      notes: 確診必備。組織病理學顯示小血管壁炎症、纖維素沉積、血管周圍炎症浸潤
     - name: 壁蝨傳播疾病篩檢
-      notes: "排除感染性原因。4DX + PCR"
+      notes: 排除感染性原因。4DX + PCR
     - name: 血液學檢查
-      notes: "CBC（血小板）、凝血功能、ANA、生化"
+      notes: CBC（血小板）、凝血功能、ANA、生化
   differentialDiagnoses:
     - 凍瘡
     - 瀰漫性血管內凝血（DIC）
     - 血小板減少症
     - 蒼蠅叮咬皮膚炎
     - 冷凝集素病
-
 treatment:
   medical:
     - 免疫介導性——Prednisolone 1-2 mg/kg PO SID 漸減
@@ -78,29 +76,76 @@ treatment:
   surgical:
     - 嚴重壞死——清創
     - 大範圍壞死——可能需截趾
-
 prognosis:
-  general: "多數對免疫抑制治療反應良好。藥物反應性停藥後預後佳。品種相關者可能需長期管理。感染性者治療原發感染後預後良好。"
-
+  general: 多數對免疫抑制治療反應良好。藥物反應性停藥後預後佳。品種相關者可能需長期管理。感染性者治療原發感染後預後良好。
 prevention:
   - 監測疫苗反應（尤其狂犬病疫苗）
   - 壁蝨預防
   - 避免已知致敏藥物
-
-
 guidelineRefs:
   - sourceOrg: Animal models and experimental medicine
-    title: "Animal models for anti-neutrophil cytoplasmic antibody-associated vasculitis: Are current models good enough?"
+    title: 'Animal models for anti-neutrophil cytoplasmic antibody-associated vasculitis: Are current models good enough?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10614129/
     type: review
-    pmid: "37614099"
+    pmid: '37614099'
   - sourceOrg: Viruses
-    title: Insights into the Pathogenesis of Viral Haemorrhagic Fever Based on Virus Tropism and Tissue Lesions of Natural Rift Valley Fever.
+    title: >-
+      Insights into the Pathogenesis of Viral Haemorrhagic Fever Based on Virus Tropism and Tissue Lesions of Natural
+      Rift Valley Fever.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8073615/
     type: review
-    pmid: "33923863"
+    pmid: '33923863'
   - sourceOrg: European journal of medical research
     title: Mechanism of HMGB1-RAGE in Kawasaki disease with coronary artery injury.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7079349/
     type: research
-    pmid: "32183905"
+    pmid: '32183905'
+diagnosticAlgorithm:
+  title: 皮膚血管炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估皮膚血管炎典型病變
+      findings:
+        - 紫癜和瘀點瘀斑
+        - 耳尖、尾尖和肉墊壞死
+        - 皮膚潰瘍
+        - 水腫和出血性水疱
+    - step: 2
+      action: 實驗室檢查
+      details: 進行血液學和免疫學篩檢
+      findings:
+        - 全血計數評估血小板
+        - 凝血功能檢查
+        - ANA和類風濕因子
+        - 感染篩檢（壁蝨媒介疾病等）
+    - step: 3
+      action: 組織病理學確診
+      details: 進行早期病灶的皮膚活檢
+      findings:
+        - 血管壁纖維素樣壞死
+        - 白血球碎裂性血管炎
+        - 血管周圍嗜中性球或淋巴球浸潤
+        - 紅血球外溢
+    - step: 4
+      action: 病因學調查
+      details: 系統性調查可能的觸發因子
+      findings:
+        - 藥物反應
+        - 感染相關
+        - 疫苗接種史
+        - 自體免疫疾病
+clinicalPearls:
+  - Pentoxifylline是治療皮膚血管炎的一線藥物，因其可改善微循環和抑制促炎細胞因子
+  - 疫苗接種後的血管炎通常在接種後3-6個月出現，好發於注射部位
+  - 耳翼邊緣壞死是犬皮膚血管炎最常見的臨床表現
+  - Doxycycline-Niacinamide組合具有免疫調節作用，可作為輕度病例的首選
+monitoringItems:
+  - 每2-4週評估病變消退和新病變出現
+  - 免疫抑制劑使用期間定期監測CBC和生化
+  - 記錄可能的觸發因素
+  - 疫苗接種策略調整（避免不必要的疫苗）
+associatedSymptoms:
+  - symptomId: peripheral-oedema
+    frequency: common
+ddxSource: book

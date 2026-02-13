@@ -2,14 +2,18 @@ slug: cancer-associated-cachexia
 nameEn: Cancer Associated Cachexia
 nameZh: 癌症相關惡病質
 bodySystem: oncology
-description: 癌症相關惡病質 (cancer cachexia) 為腫瘤引起的代謝紊亂綜合症，表現為進行性體重減輕、肌肉萎縮及食慾下降。此症候群涉及碳水化合物、蛋白質及脂肪代謝異常，即使給予充足營養仍難以逆轉。犬貓腫瘤患畜中發生率可達 50-80%，嚴重影響生活品質與存活時間。
-
+description: >-
+  癌症相關惡病質 (cancer cachexia) 為腫瘤引起的代謝紊亂綜合症，表現為進行性體重減輕、肌肉萎縮及食慾下降。此症候群涉及碳水化合物、蛋白質及脂肪代謝異常，即使給予充足營養仍難以逆轉。犬貓腫瘤患畜中發生率可達
+  50-80%，嚴重影響生活品質與存活時間。
 aliases:
-  - { alias: 腫瘤惡病質, language: zh }
-  - { alias: 癌症消耗症候群, language: zh }
-  - { alias: Cancer Cachexia, language: en }
-  - { alias: Paraneoplastic Cachexia, language: en }
-
+  - alias: 腫瘤惡病質
+    language: zh
+  - alias: 癌症消耗症候群
+    language: zh
+  - alias: Cancer Cachexia
+    language: en
+  - alias: Paraneoplastic Cachexia
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓腫瘤患畜同樣常見惡病質，肌肉流失可能更為顯著。淋巴瘤及鱗狀細胞癌患貓特別容易發展此併發症。
-
 etiology:
   categories:
     - name: 代謝異常
@@ -36,7 +39,6 @@ etiology:
         - 血管肉瘤 (hemangiosarcoma)
         - 骨肉瘤 (osteosarcoma)
         - 口腔鱗狀細胞癌
-
 clinicalSigns:
   early:
     - 漸進性體重減輕
@@ -49,7 +51,6 @@ clinicalSigns:
     - 虛弱無力
     - 傷口癒合不良
     - 免疫功能下降，易繼發感染
-
 diagnosis:
   primaryTests:
     - name: 體態評分 (BCS) 與肌肉評分 (MCS)
@@ -64,7 +65,6 @@ diagnosis:
     - 白蛋白、前白蛋白 (prealbumin)
     - 血清乳酸
     - 發炎指標（CRP、fibrinogen）
-
 treatment:
   principles:
     - 營養支持為核心治療策略
@@ -79,21 +79,62 @@ treatment:
     - 積極治療原發腫瘤（化療、手術或放療）
     - 疼痛管理以改善食慾
     - 定期監測體重與體組成變化
-
 prognosis: 癌症惡病質預後取決於原發腫瘤控制程度。早期介入營養支持可延緩惡病質進展，改善生活品質。嚴重惡病質（體重減少 >20%、明顯肌肉流失）者預後較差，常為安樂死的主要考量因素之一。
-
-
 guidelineRefs:
   - sourceOrg: Amino acids
     title: Effects of cancer-induced cachexia and administration of L-glutathione on the intestinal mucosa in rat.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11009745/
     type: research
-    pmid: "38607556"
+    pmid: '38607556'
   - sourceOrg: Molecules (Basel, Switzerland)
-    title: Flaxseed Increases Animal Lifespan and Reduces Ovarian Cancer Severity by Toxically Augmenting One-Carbon Metabolism.
+    title: >-
+      Flaxseed Increases Animal Lifespan and Reduces Ovarian Cancer Severity by Toxically Augmenting One-Carbon
+      Metabolism.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8471351/
     type: research
-    pmid: "34577143"
+    pmid: '34577143'
 pubmedQueries:
   - query: '"cancer cachexia" AND (veterinary OR canine OR feline) AND ("nutrition" OR "management")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 癌症相關惡病質 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 體態評分 (BCS) 與肌肉評分 (MCS)
+          notes: 連續追蹤體重、BCS (1-9 分) 及 MCS 變化。MCS 評估顳肌、肩胛骨及腰椎兩側肌肉量
+        - name: 血液生化檢查
+          notes: 評估低白蛋白血症、血糖變化、高乳酸血症。CRP 及 fibrinogen 可反映系統性發炎
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC（評估貧血、免疫細胞變化）
+        - 白蛋白、前白蛋白 (prealbumin)
+        - 血清乳酸
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 營養支持為核心治療策略
+        - 高脂肪、適量蛋白、低碳水化合物飲食
+        - 控制原發腫瘤以減少代謝紊亂
+ddxSource: auto-generated

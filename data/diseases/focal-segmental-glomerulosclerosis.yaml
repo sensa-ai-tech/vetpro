@@ -3,13 +3,15 @@ nameEn: Focal Segmental Glomerulosclerosis
 nameZh: 局灶節段性腎絲球硬化
 bodySystem: renal
 description: 局灶節段性腎絲球硬化 (FSGS) 是以部分腎絲球（局灶性）中某些節段（節段性）發生硬化與玻璃樣變性為特徵的腎絲球疾病。可為原發性或繼發於其他腎臟疾病。
-
 aliases:
-  - { alias: FSGS, language: zh }
-  - { alias: 局灶節段硬化腎病, language: zh }
-  - { alias: FSGS, language: en }
-  - { alias: Focal Sclerosis, language: en }
-
+  - alias: FSGS
+    language: zh
+  - alias: 局灶節段硬化腎病
+    language: zh
+  - alias: FSGS
+    language: en
+  - alias: Focal Sclerosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓 FSGS 較犬少見，可能為慢性腎病的繼發性病理改變。
-
 etiology:
   categories:
     - name: 原發性
@@ -34,7 +35,6 @@ etiology:
         - 慢性高血壓
         - 糖尿病腎病
         - 病毒感染
-
 clinicalSigns:
   early:
     - 蛋白尿（程度不一）
@@ -45,19 +45,17 @@ clinicalSigns:
     - 進行性腎功能衰退
     - 水腫
     - 貧血
-
 diagnosis:
   primaryTests:
     - name: 腎臟活檢
-      notes: "確診需組織病理學。光學顯微鏡見部分腎絲球的節段性硬化、玻璃樣沉積。因病變為局灶性，活檢取樣需足夠數量的腎絲球。"
+      notes: 確診需組織病理學。光學顯微鏡見部分腎絲球的節段性硬化、玻璃樣沉積。因病變為局灶性，活檢取樣需足夠數量的腎絲球。
     - name: 尿蛋白/肌酐比 (UPC)
-      notes: "UPC 升高（程度不一，可從 <1 到 >10）。蛋白尿程度與疾病嚴重度相關。"
+      notes: UPC 升高（程度不一，可從 <1 到 >10）。蛋白尿程度與疾病嚴重度相關。
   differentialDiagnoses:
     - 膜性腎絲球腎炎
     - 微小變化病
     - 澱粉樣變性
     - 腎絲球硬化（aging change）
-
 treatment:
   medical:
     - ACE 抑制劑：Enalapril 0.5 mg/kg PO q12-24h（降蛋白尿首選）
@@ -68,39 +66,57 @@ treatment:
     - 抗血栓（低白蛋白血症時）
   surgical:
     - 腎臟活檢（診斷性）
-
 prognosis:
-  general: "預後謹慎至不良。FSGS 傾向於進行性腎功能惡化。對免疫抑制治療的反應不如微小變化病理想。蛋白尿控制程度是預後的重要指標。繼發性 FSGS 取決於原發病因的可控性。"
-
+  general: 預後謹慎至不良。FSGS 傾向於進行性腎功能惡化。對免疫抑制治療的反應不如微小變化病理想。蛋白尿控制程度是預後的重要指標。繼發性 FSGS 取決於原發病因的可控性。
 prevention:
   - 維持適當體重（避免肥胖相關的腎絲球過度濾過）
   - 高血壓的控制
   - 蛋白尿的定期監測
-
-
 guidelineRefs:
   - sourceOrg: Molecular neurodegeneration
-    title: "CD2AP at the junction of nephropathy and Alzheimer's disease."
+    title: CD2AP at the junction of nephropathy and Alzheimer's disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12135550/
     type: review
-    pmid: "40462155"
+    pmid: '40462155'
   - sourceOrg: International journal of molecular sciences
     title: Kidney Damage Caused by Obesity and Its Feasible Treatment Drugs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8775419/
     type: review
-    pmid: "35054932"
+    pmid: '35054932'
   - sourceOrg: BioMed research international
     title: FSGS Recurrence in Adults after Renal Transplantation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4842050/
     type: review
-    pmid: "27144163"
+    pmid: '27144163'
   - sourceOrg: Renal failure
-    title: Single-cell transcriptomics and machine-learning reveal M1 macrophage-driven progression from minimal change disease to focal segmental glomerulosclerosis.
+    title: >-
+      Single-cell transcriptomics and machine-learning reveal M1 macrophage-driven progression from minimal change
+      disease to focal segmental glomerulosclerosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12865855/
     type: research
-    pmid: "41622775"
+    pmid: '41622775'
   - sourceOrg: Journal of veterinary internal medicine
     title: Analysis of survival among biopsy-determined categories of kidney disease in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11808253/
     type: research
-    pmid: "39925194"
+    pmid: '39925194'
+associatedSymptoms:
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 局灶節段性腎絲球硬化 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腎臟活檢
+          notes: 確診需組織病理學。光學顯微鏡見部分腎絲球的節段性硬化、玻璃樣沉積。因病變為局灶性，活檢取樣需足夠數量的腎絲球。
+        - name: 尿蛋白/肌酐比 (UPC)
+          notes: UPC 升高（程度不一，可從 <1 到 >10）。蛋白尿程度與疾病嚴重度相關。
+ddxSource: auto-generated

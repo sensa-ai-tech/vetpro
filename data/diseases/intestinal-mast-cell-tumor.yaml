@@ -3,11 +3,11 @@ nameEn: Intestinal Mast Cell Tumor
 nameZh: 腸道肥大細胞瘤
 bodySystem: oncology
 description: 腸道原發性肥大細胞瘤,貓較常見,好發於小腸。可能引起嘔吐、腹瀉、腸阻塞及潰瘍。
-
 aliases:
-  - { alias: 腸道肥胖細胞瘤, language: zh }
-  - { alias: Gastrointestinal Mast Cell Tumor, language: en }
-
+  - alias: 腸道肥胖細胞瘤
+    language: zh
+  - alias: Gastrointestinal Mast Cell Tumor
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,13 +17,11 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓第二常見腸道腫瘤,老年貓好發
-
 etiology:
   categories:
     - name: 腫瘤性
       examples:
         - 惡性肥大細胞瘤
-
 clinicalSigns:
   early:
     - 間歇性嘔吐
@@ -33,29 +31,57 @@ clinicalSigns:
     - 腹部腫塊
     - 腸阻塞
     - 黑便 (潰瘍出血)
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "腸壁增厚、腫塊、淋巴結腫大"
+      notes: 腸壁增厚、腫塊、淋巴結腫大
     - name: 組織切片
-      notes: "確診肥大細胞瘤"
+      notes: 確診肥大細胞瘤
     - name: 血液檢查
-      notes: "嗜酸性球增多、貧血"
+      notes: 嗜酸性球增多、貧血
   differentialDiagnoses:
     - 腸道淋巴瘤
     - 腸道腺癌
     - 發炎性腸病
-
 treatment:
   medical:
     - 外科切除 + 淋巴結摘除
     - 化療 (Lomustine, Vinblastine)
     - Prednisolone 1-2 mg/kg PO q12-24h
     - H2 blocker 或 PPI (預防潰瘍)
-
 prognosis:
-  general: "預後謹慎至不良;貓中位存活時間 9-12 個月 (手術 + 化療);犬預後更差"
-
+  general: 預後謹慎至不良;貓中位存活時間 9-12 個月 (手術 + 化療);犬預後更差
 prevention:
   - 無特定預防措施
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: melaena
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 腸道肥大細胞瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - vomiting 相關症狀
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 腸壁增厚、腫塊、淋巴結腫大
+        - name: 組織切片
+          notes: 確診肥大細胞瘤
+        - name: 血液檢查
+          notes: 嗜酸性球增多、貧血
+ddxSource: auto-generated

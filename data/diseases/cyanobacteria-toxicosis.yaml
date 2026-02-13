@@ -2,14 +2,18 @@ slug: cyanobacteria-toxicosis
 nameEn: Cyanobacteria Toxicosis
 nameZh: 藍菌毒素中毒
 bodySystem: toxicology
-description: 藍菌 (cyanobacteria) 毒素中毒為藍綠藻中毒的細菌學正名。產毒藍菌屬包括 Microcystis、Anabaena、Aphanizomenon 等。毒素可分為肝毒素、神經毒素與皮膚毒素三大類。水體藻華期間風險最高，犬為主要臨床受害物種。
-
+description: >-
+  藍菌 (cyanobacteria) 毒素中毒為藍綠藻中毒的細菌學正名。產毒藍菌屬包括 Microcystis、Anabaena、Aphanizomenon
+  等。毒素可分為肝毒素、神經毒素與皮膚毒素三大類。水體藻華期間風險最高，犬為主要臨床受害物種。
 aliases:
-  - { alias: 藍菌中毒, language: zh }
-  - { alias: Cyanobacterial Toxicosis, language: en }
-  - { alias: Harmful Algal Bloom Toxicosis, language: en }
-  - { alias: HAB Toxicosis, language: en }
-
+  - alias: 藍菌中毒
+    language: zh
+  - alias: Cyanobacterial Toxicosis
+    language: en
+  - alias: Harmful Algal Bloom Toxicosis
+    language: en
+  - alias: HAB Toxicosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓極少接觸藻華水體。飲用受汙染水源為理論上可能的暴露途徑。
-
 etiology:
   categories:
     - name: 產毒藍菌屬
@@ -32,7 +35,6 @@ etiology:
         - 水溫 >25°C
         - 低水流速
         - 強光照射
-
 clinicalSigns:
   early:
     - 接觸受汙染水體後數分鐘至數小時發病
@@ -43,7 +45,6 @@ clinicalSigns:
     - 神經毒素型：癲癇、呼吸麻痺、猝死
     - DIC
     - 多器官衰竭
-
 diagnosis:
   primaryTests:
     - name: 環境與暴露史
@@ -55,7 +56,6 @@ diagnosis:
     - 凝血功能
     - 腎功能
     - CBC
-
 treatment:
   principles:
     - 無特效解毒劑
@@ -70,9 +70,51 @@ treatment:
     - 神經毒素型：癲癇控制、呼吸支持
     - 凝血障礙管理
     - 避免在藻華期間讓犬接觸水體
-
 prognosis: 藍菌毒素中毒致死率高。神經毒素型可在數分鐘內致死。肝毒素型積極治療存活率約 30-50%。預防（避免藻華水體接觸、留意當地水質警報）為最有效策略。
-
 pubmedQueries:
   - query: '"cyanobacteria" AND (toxicosis OR poisoning) AND (veterinary OR canine) AND ("treatment" OR "harmful algal bloom")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: trembling
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 藍菌毒素中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - trembling 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 環境與暴露史
+          notes: 近期接觸藻華水體為最重要線索。水體外觀特徵（綠色浮沫、油漆狀表層）
+        - name: 水體/組織毒素分析
+          notes: ELISA 或 LC-MS/MS 分析水樣與組織中毒素濃度
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 肝功能
+        - 凝血功能
+        - 腎功能
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 無特效解毒劑
+        - 去汙染（洗浴 + 催吐 + 活性炭）
+        - 類型特異性支持療法
+ddxSource: auto-generated

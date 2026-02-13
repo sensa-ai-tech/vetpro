@@ -3,18 +3,18 @@ nameEn: Abyssinian Cat Gingivitis
 nameZh: 阿比西尼亞貓牙齦炎
 bodySystem: dental
 description: 阿比西尼亞貓較易發生慢性牙齦炎及牙周病,可能與遺傳性免疫反應異常有關。表現為牙齦紅腫、口臭、流涎,需積極牙科照護。
-
 aliases:
-  - { alias: 慢性牙齦炎, language: zh }
-  - { alias: Chronic Gingivitis, language: en }
-  - { alias: Periodontal Disease, language: en }
-
+  - alias: 慢性牙齦炎
+    language: zh
+  - alias: Chronic Gingivitis
+    language: en
+  - alias: Periodontal Disease
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
     notes: 阿比西尼亞、索馬利、暹羅等品種易感
-
 etiology:
   categories:
     - name: 多因子口腔疾病
@@ -23,7 +23,6 @@ etiology:
         - 免疫反應異常
         - 遺傳易感性
         - 病毒感染(FCV、FHV)
-
 clinicalSigns:
   early:
     - 牙齦紅腫、出血
@@ -34,20 +33,18 @@ clinicalSigns:
     - 牙周病、牙齒鬆動
     - 口腔疼痛、流涎
     - 拒食、體重下降
-
 diagnosis:
   primaryTests:
     - name: 口腔檢查
-      notes: "牙齦紅腫、牙菌斑、牙結石"
+      notes: 牙齦紅腫、牙菌斑、牙結石
     - name: 麻醉下牙科檢查
-      notes: "評估牙周袋深度、牙齒鬆動"
+      notes: 評估牙周袋深度、牙齒鬆動
     - name: 病毒檢測
-      notes: "排除FCV、FeLV、FIV"
+      notes: 排除FCV、FeLV、FIV
   differentialDiagnoses:
     - 口炎
     - 腎病相關口腔病變
     - 口腔腫瘤
-
 treatment:
   medical:
     - 專業洗牙、牙根整平
@@ -55,11 +52,39 @@ treatment:
     - 抗生素(Clindamycin 5-10 mg/kg PO q12h)
     - 止痛藥(Buprenorphine、Meloxicam)
     - 每日刷牙(維持性)
-
 prognosis:
-  general: "早期治療預後良好。嚴重牙周病需拔除多顆牙齒,術後生活品質通常改善。需終生口腔照護。"
-
+  general: 早期治療預後良好。嚴重牙周病需拔除多顆牙齒,術後生活品質通常改善。需終生口腔照護。
 prevention:
   - 每日刷牙
   - 牙科飲食或潔牙零食
   - 定期牙科檢查
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: common
+diagnosticAlgorithm:
+  title: 阿比西尼亞貓牙齦炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - ptyalism 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 口腔檢查
+          notes: 牙齦紅腫、牙菌斑、牙結石
+        - name: 麻醉下牙科檢查
+          notes: 評估牙周袋深度、牙齒鬆動
+        - name: 病毒檢測
+          notes: 排除FCV、FeLV、FIV
+ddxSource: auto-generated

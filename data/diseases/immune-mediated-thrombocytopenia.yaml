@@ -3,13 +3,15 @@ nameEn: Immune-Mediated Thrombocytopenia
 nameZh: 免疫介導性血小板減少症
 bodySystem: hematology
 description: 免疫系統異常破壞自身血小板或抑制骨髓血小板生成，導致血小板嚴重減少與出血傾向。
-
 aliases:
-  - { alias: ITP, language: en }
-  - { alias: IMT, language: en }
-  - { alias: Immune Thrombocytopenic Purpura, language: en }
-  - { alias: 免疫性血小板減少性紫癜, language: zh }
-
+  - alias: ITP
+    language: en
+  - alias: IMT
+    language: en
+  - alias: Immune Thrombocytopenic Purpura
+    language: en
+  - alias: 免疫性血小板減少性紫癜
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓罕見。常為繼發性 (FeLV、FIV、Mycoplasma)。
-
 etiology:
   categories:
     - name: 原發性 (自體免疫)
@@ -34,7 +35,6 @@ etiology:
         - 疫苗相關 (MLV 疫苗後 1-3 週，罕見)
         - 腫瘤 (淋巴瘤、血管肉瘤)
         - 其他自體免疫疾病 (SLE、Evans syndrome — IMT + IMHA)
-
 clinicalSigns:
   early:
     - 皮膚瘀斑/瘀點 (petechiae/ecchymoses)
@@ -52,20 +52,19 @@ clinicalSigns:
     - 腦出血 (神經症狀)
     - 關節血腫
     - 失血性貧血
-
 diagnosis:
   primaryTests:
     - name: CBC
-      notes: "血小板嚴重減少 (通常 <30,000/μL，常 <10,000/μL)。巨血小板 (MPV 增加) 提示骨髓反應"
+      notes: 血小板嚴重減少 (通常 <30,000/μL，常 <10,000/μL)。巨血小板 (MPV 增加) 提示骨髓反應
     - name: 血液抹片
-      notes: "確認血小板減少 (排除 EDTA 假性血小板減少、貓血小板凝集)。評估血小板大小與形態"
+      notes: 確認血小板減少 (排除 EDTA 假性血小板減少、貓血小板凝集)。評估血小板大小與形態
     - name: 骨髓檢查
-      notes: "巨核球數量正常或增加 (破壞性)。減少提示骨髓抑制或免疫介導性巨核球破壞"
+      notes: 巨核球數量正常或增加 (破壞性)。減少提示骨髓抑制或免疫介導性巨核球破壞
   imaging:
     - name: 腹部超音波
-      notes: "排除脾臟腫瘤、淋巴結腫大、其他腫瘤"
+      notes: 排除脾臟腫瘤、淋巴結腫大、其他腫瘤
     - name: 胸腔 X 光
-      notes: "排除轉移性腫瘤"
+      notes: 排除轉移性腫瘤
   additional:
     - 抗血小板抗體檢測 (PF-4/heparin ELISA — 可用性受限)
     - 凝血功能 (PT/APTT — ITP 正常，DIC 異常)
@@ -74,7 +73,6 @@ diagnosis:
     - Coombs' test (排除 Evans syndrome)
     - 尿液分析 (血尿)
     - 網狀紅血球計數 (若合併貧血)
-
 treatment:
   principles:
     - 免疫抑制治療為基石
@@ -83,19 +81,19 @@ treatment:
     - 輸血小板效果短暫 (被快速破壞)
   medications:
     - name: Prednisolone/Dexamethasone
-      dose: "Prednisolone 2 mg/kg PO BID (初始)；急性可用 Dexamethasone 0.3 mg/kg IV"
+      dose: Prednisolone 2 mg/kg PO BID (初始)；急性可用 Dexamethasone 0.3 mg/kg IV
       notes: 一線免疫抑制。抑制巨噬細胞吞噬 + 降低抗體產生。穩定後逐漸減量 (3-6 個月)
     - name: Mycophenolate mofetil
-      dose: "10 mg/kg PO BID"
+      dose: 10 mg/kg PO BID
       notes: 常作為第二線免疫抑制劑與類固醇合併使用
     - name: Human IV Immunoglobulin (hIVIG)
-      dose: "0.5-1 g/kg IV over 6-12 hr (單次)"
+      dose: 0.5-1 g/kg IV over 6-12 hr (單次)
       notes: 急性嚴重出血時使用。阻斷 Fc 受體，快速 (24-48 hr) 提升血小板。費用高
     - name: Vincristine
-      dose: "0.02 mg/kg IV (單次)"
+      dose: 0.02 mg/kg IV (單次)
       notes: 促進骨髓釋放血小板。危及生命出血時的輔助治療
     - name: Azathioprine (僅犬)
-      dose: "2 mg/kg PO SID × 2 週，後改隔日"
+      dose: 2 mg/kg PO SID × 2 週，後改隔日
       notes: 貓禁用。第二線免疫抑制
   general:
     - 嚴格籠休 (避免外傷誘發出血)
@@ -105,46 +103,113 @@ treatment:
     - 胃腸保護 (omeprazole，因高劑量類固醇)
     - 排除蜱蟲傳染疾病 (經驗性 doxycycline 可考慮)
     - Evans syndrome (IMT + IMHA)：更積極的免疫抑制
-
 prognosis: 原發性 ITP 對免疫抑制治療反應率約 70-90%。多數 2-7 天內血小板開始回升。復發率約 20-30%。Evans syndrome 預後較差。致命性出血 (CNS、嚴重消化道) 為主要死因。長期預後良好，多數可逐步停藥。
-
 ontologyMappings:
   - source: MONDO
-    code: "MONDO:0003843"
+    code: MONDO:0003843
     label: immune thrombocytopenic purpura
     confidence: exact
-
 guidelineRefs:
   - sourceOrg: ACVIM
     title: ACVIM Consensus Statement on the Treatment of Immune-Mediated Hemolytic Anemia and Immune Thrombocytopenia in Dogs
     url: https://pubmed.ncbi.nlm.nih.gov/30806491/
     type: consensus
-    pmid: "30806491"
+    pmid: '30806491'
   - sourceOrg: Journal of the neurological sciences
-    title: "Clinical review of cerebral venous thrombosis in the context of COVID-19 vaccinations: Evaluation, management, and scientific questions."
+    title: >-
+      Clinical review of cerebral venous thrombosis in the context of COVID-19 vaccinations: Evaluation, management, and
+      scientific questions.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8178065/
     type: review
-    pmid: "34134058"
+    pmid: '34134058'
   - sourceOrg: Acta veterinaria Scandinavica
-    title: "Thromboelastography-guided transfusion in dogs with hypocoagulable disorders: a case series."
+    title: 'Thromboelastography-guided transfusion in dogs with hypocoagulable disorders: a case series.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6647138/
     type: case-report
-    pmid: "31331398"
+    pmid: '31331398'
   - sourceOrg: Veterinary medicine and science
-    title: "Causes of thrombocytopenia in dogs in the United Kingdom: A retrospective study of 762 cases."
+    title: 'Causes of thrombocytopenia in dogs in the United Kingdom: A retrospective study of 762 cases.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10357222/
     type: research
-    pmid: "37218364"
+    pmid: '37218364'
   - sourceOrg: Journal of veterinary internal medicine
-    title: A retrospective study of adverse effects of mycophenolate mofetil administration to dogs with immune-mediated disease.
+    title: >-
+      A retrospective study of adverse effects of mycophenolate mofetil administration to dogs with immune-mediated
+      disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8478029/
     type: research
-    pmid: "34231261"
+    pmid: '34231261'
 pubmedQueries:
   - query: '"immune thrombocytopenia" AND (dog OR canine) AND ("treatment" OR "immunosuppressive")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "IMM"
-  sectionTitle: "Immune-mediated thrombocytopenia"
+  chapter: IMM
+  sectionTitle: Immune-mediated thrombocytopenia
   pdfPage: 868
+diagnosticAlgorithm:
+  title: 免疫性血小板減少症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估出血傾向，檢查黏膜與皮膚出血點
+      findings:
+        - 瘀斑或紫斑（皮膚/黏膜）
+        - 鼻出血或牙齦出血
+        - 黑便或血尿
+        - 精神沉鬱與虛弱
+    - step: 2
+      action: 血液學檢查
+      details: CBC與血液抹片檢查確認血小板數量與型態
+      findings:
+        - 血小板嚴重減少（<50,000/μL，常<20,000/μL）
+        - 血液抹片確認非假性血小板減少
+        - 大型血小板存在（再生反應）
+        - 可能合併再生性貧血（Evans syndrome）
+    - step: 3
+      action: 排除性檢查
+      details: 排除其他血小板減少原因
+      findings:
+        - 蜱媒疾病篩查（Ehrlichia/Anaplasma）
+        - 骨髓檢查（巨核球增生/正常提示周邊破壞）
+        - 凝血功能檢測（排除DIC）
+        - FeLV/FIV檢測（貓）
+    - step: 4
+      action: 治療反應評估
+      details: 免疫抑制治療後監測血小板恢復
+      findings:
+        - 類固醇治療後3-7天血小板開始回升
+        - 2-4週血小板恢復正常範圍
+        - 加用免疫抑制劑（難治型）
+        - 監測復發風險
+clinicalPearls:
+  - 血液抹片必須先排除EDTA引起的假性血小板減少
+  - 瘀點是血小板疾病的特徵性表現，凝血因子缺乏通常不會出現
+  - Vincristine可在24-48小時內緊急提升血小板計數
+  - 停藥過快是復發的最常見原因，需緩慢減量
+  - 約30%的IMT犬同時有Coombs test陽性（Evans syndrome）
+  - 繼發性原因（ehrlichiosis、腫瘤）必須排除後才診斷原發性IMT
+monitoringItems:
+  - 治療初期每1-2天血小板計數
+  - 穩定後每週一次直至正常範圍
+  - Prednisolone減量期間每2-4週血小板追蹤
+  - 長期類固醇副作用監測（多飲多尿、肝指數）
+  - 停藥後前6個月密切監測復發
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: petechiae-ecchymoses
+    frequency: common
+  - symptomId: splenomegaly
+    frequency: common
+ddxSource: book

@@ -3,11 +3,11 @@ nameEn: Thyroid Panel Interpretation
 nameZh: 甲狀腺功能檢查判讀
 bodySystem: endocrine
 description: 犬貓甲狀腺功能檢查判讀,包括T4、fT4、TSH、T3檢測。犬常見甲狀腺功能低下,貓常見甲狀腺機能亢進,需正確判讀並排除非甲狀腺疾病影響。
-
 aliases:
-  - { alias: 甲狀腺檢查, language: zh }
-  - { alias: Thyroid function tests, language: en }
-
+  - alias: 甲狀腺檢查
+    language: zh
+  - alias: Thyroid function tests
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 甲狀腺機能亢進常見,老年貓好發
-
 etiology:
   categories:
     - name: 甲狀腺檢測項目
@@ -26,35 +25,60 @@ etiology:
         - 游離T4(fT4,更準確)
         - TSH(犬,貓不可靠)
         - T3(不建議單獨使用)
-
 clinicalSigns:
   early:
     - 甲狀腺檢測為診斷工具
   progressive:
     - 犬甲減:嗜睡、肥胖、皮膚病
     - 貓甲亢:體重減輕、多食、過動
-
 diagnosis:
   primaryTests:
     - name: 犬甲狀腺功能低下
-      notes: "T4低、TSH高(但TSH可正常)。fT4低確診"
+      notes: T4低、TSH高(但TSH可正常)。fT4低確診
     - name: 貓甲狀腺機能亢進
-      notes: "T4高(>4 μg/dL)。邊緣值需重複檢測或fT4、核醫掃描"
+      notes: T4高(>4 μg/dL)。邊緣值需重複檢測或fT4、核醫掃描
     - name: 非甲狀腺疾病症候群
-      notes: "嚴重疾病可抑制甲狀腺功能,T4降低但非真正甲減"
+      notes: 嚴重疾病可抑制甲狀腺功能,T4降低但非真正甲減
   differentialDiagnoses:
     - 甲狀腺功能低下(犬)
     - 甲狀腺機能亢進(貓)
     - 非甲狀腺疾病症候群
-
 treatment:
   medical:
     - 犬甲減:levothyroxine 0.02 mg/kg PO q12h
     - 貓甲亢:methimazole或碘131治療
-
 prognosis:
-  general: "甲狀腺疾病需長期監測管理,預後良好。"
-
+  general: 甲狀腺疾病需長期監測管理,預後良好。
 prevention:
   - 避免在嚴重疾病期間檢測
   - 定期監測調整藥物劑量
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: weight-gain
+    frequency: uncommon
+  - symptomId: polyphagia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 甲狀腺功能檢查判讀 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - weight-gain 相關症狀
+        - polyphagia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 犬甲狀腺功能低下
+          notes: T4低、TSH高(但TSH可正常)。fT4低確診
+        - name: 貓甲狀腺機能亢進
+          notes: T4高(>4 μg/dL)。邊緣值需重複檢測或fT4、核醫掃描
+        - name: 非甲狀腺疾病症候群
+          notes: 嚴重疾病可抑制甲狀腺功能,T4降低但非真正甲減
+ddxSource: auto-generated

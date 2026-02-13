@@ -3,11 +3,11 @@ nameEn: Pulmonary Abscess
 nameZh: 肺膿瘍
 bodySystem: infectious
 description: 肺膿瘍為肺實質內局限性化膿性感染，形成壁包裹的膿液腔。犬隻常見原因包括吸入性肺炎進展、異物遷移（草芒）、血行性感染播散及肺炎局部化。厭氧菌與需氧菌混合感染為常見病原組合。
-
 aliases:
-  - { alias: 肺膿瘡, language: zh }
-  - { alias: Lung Abscess, language: en }
-
+  - alias: 肺膿瘡
+    language: zh
+  - alias: Lung Abscess
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻肺膿瘍罕見，可繼發於胸腔創傷或嚴重肺炎。
-
 etiology:
   categories:
     - name: 感染途徑
@@ -30,7 +29,6 @@ etiology:
         - Pasteurella、E. coli、Staphylococcus
         - Bacteroides、Fusobacterium（厭氧菌）
         - Nocardia、Actinomyces
-
 clinicalSigns:
   early:
     - 發燒
@@ -43,60 +41,98 @@ clinicalSigns:
     - 呼吸困難
     - 咯血
     - 破裂入胸腔可致膿胸
-
 diagnosis:
   primaryTests:
     - name: 胸腔 X 光
       notes: 肺部團塊狀病變，可見液氣平面（air-fluid level）。厚壁空洞性病變。需與肺腫瘤、肺肉芽腫鑑別。
     - name: CT 掃描
       notes: 較 X 光更精確評估膿瘍大小、位置與壁特徵。環狀增強（ring enhancement）為特徵。引導經皮穿刺引流。
-
 treatment:
   principles:
     - 長期抗生素治療為基礎
     - 大型膿瘍可能需要引流或手術
     - 異物引起者需移除異物
   general:
-    - "長期廣效抗生素：Amoxicillin-Clavulanate + Metronidazole（覆蓋厭氧菌）× 6-8 週"
+    - 長期廣效抗生素：Amoxicillin-Clavulanate + Metronidazole（覆蓋厭氧菌）× 6-8 週
     - 依培養藥敏結果調整抗生素
     - 大型膿瘍：CT 引導下經皮穿刺引流
     - 無法引流或抗生素無效：肺葉切除術
     - 異物移除（若為草芒等異物引起）
-
 prognosis: 肺膿瘍在長期適當抗生素治療下預後中等至良好。治療時間通常需要 6-8 週以上。手術引流或肺葉切除可加速恢復。異物引起者在異物移除後預後改善。破裂入胸腔導致膿胸者需更積極治療。
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary pharmacology and therapeutics
-    title: Is Rifampin (Rifampicin) Essential for the Treatment of Rhodococcus equi Infections in Foals? A Critical Review of the Role of Rifampin.
+    title: >-
+      Is Rifampin (Rifampicin) Essential for the Treatment of Rhodococcus equi Infections in Foals? A Critical Review of
+      the Role of Rifampin.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12415837/
     type: review
-    pmid: "40552784"
+    pmid: '40552784'
     relevance: primary
   - sourceOrg: Microorganisms
     title: The First Report of a Pulmonary Abscess Due to Streptococcus intermedius in Rabbits in Romania.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12029145/
     type: case-report
-    pmid: "40284606"
+    pmid: '40284606'
     relevance: supporting
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
     title: Diaphragmatic hernia in a pet chinchilla (Chinchilla lanigera).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5901851/
     type: case-report
-    pmid: "29904206"
+    pmid: '29904206'
     relevance: supporting
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
     title: Diaphragmatic hernia in a pet chinchilla (Chinchilla lanigera).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5432149/
     type: case-report
-    pmid: "28588332"
+    pmid: '28588332'
     relevance: supporting
-  - sourceOrg: "Brazilian journal of microbiology : [publication of the Brazilian Society for Microbiology]"
-    title: "Peritonitis-related bacterial infections: a large-scale case-series retrospective study in 160 domestic animals (2009-2022)."
+  - sourceOrg: 'Brazilian journal of microbiology : [publication of the Brazilian Society for Microbiology]'
+    title: >-
+      Peritonitis-related bacterial infections: a large-scale case-series retrospective study in 160 domestic animals
+      (2009-2022).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11711992/
     type: research
-    pmid: "39477882"
+    pmid: '39477882'
     relevance: supporting
 pubmedQueries:
   - query: '"pulmonary abscess" OR "lung abscess" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: coughing
+    frequency: common
+diagnosticAlgorithm:
+  title: 肺膿瘍 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸腔 X 光
+          notes: 肺部團塊狀病變，可見液氣平面（air-fluid level）。厚壁空洞性病變。需與肺腫瘤、肺肉芽腫鑑別。
+        - name: CT 掃描
+          notes: 較 X 光更精確評估膿瘍大小、位置與壁特徵。環狀增強（ring enhancement）為特徵。引導經皮穿刺引流。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 長期抗生素治療為基礎
+        - 大型膿瘍可能需要引流或手術
+        - 異物引起者需移除異物
+ddxSource: auto-generated

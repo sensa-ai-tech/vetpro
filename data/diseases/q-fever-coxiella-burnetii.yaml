@@ -2,13 +2,16 @@ slug: q-fever-coxiella-burnetii
 nameEn: Q Fever Coxiella Burnetii
 nameZh: Q熱伯納氏立克次體
 bodySystem: infectious
-description: Q熱是由伯納氏立克次體(Coxiella burnetii)引起的人畜共通傳染病,主要透過吸入含菌氣溶膠(產畜胎盤、羊水、糞便、尿液)或蜱蟲叮咬傳播。犬貓多數為無症狀帶菌者,人類感染可能導致嚴重肺炎或慢性心內膜炎,獸醫及畜主為高風險族群。
-
+description: >-
+  Q熱是由伯納氏立克次體(Coxiella
+  burnetii)引起的人畜共通傳染病,主要透過吸入含菌氣溶膠(產畜胎盤、羊水、糞便、尿液)或蜱蟲叮咬傳播。犬貓多數為無症狀帶菌者,人類感染可能導致嚴重肺炎或慢性心內膜炎,獸醫及畜主為高風險族群。
 aliases:
-  - { alias: Q熱, language: zh }
-  - { alias: Query Fever, language: en }
-  - { alias: 伯納氏柯克斯體, language: zh }
-
+  - alias: Q熱
+    language: zh
+  - alias: Query Fever
+    language: en
+  - alias: 伯納氏柯克斯體
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓血清陽性率約5-20%,多為無症狀帶菌,可經尿液、糞便排菌
-
 etiology:
   categories:
     - name: 立克次體感染(人畜共通)
@@ -27,7 +29,6 @@ etiology:
         - 蜱蟲叮咬傳播
         - 接觸感染動物的體液、組織
         - 食入未經殺菌的乳製品(罕見)
-
 clinicalSigns:
   early:
     - 多數犬貓完全無症狀
@@ -38,23 +39,21 @@ clinicalSigns:
     - 肝炎(肝酵素升高)
     - 心肌炎(極罕見)
     - 人類接觸感染:發燒、嚴重頭痛、肺炎
-
 diagnosis:
   primaryTests:
     - name: 血清學檢查
-      notes: "IFA檢測C. burnetii IgG/IgM抗體,Phase II抗體表示急性感染"
+      notes: IFA檢測C. burnetii IgG/IgM抗體,Phase II抗體表示急性感染
     - name: PCR檢測
-      notes: "胎盤、陰道分泌物、血液C. burnetii DNA檢測"
+      notes: 胎盤、陰道分泌物、血液C. burnetii DNA檢測
     - name: 生化檢查
-      notes: "肝酵素(ALT、ALP)輕度升高"
+      notes: 肝酵素(ALT、ALP)輕度升高
     - name: 胎盤組織學
-      notes: "病理檢查可見壞死性胎盤炎"
+      notes: 病理檢查可見壞死性胎盤炎
   differentialDiagnoses:
     - 犬布魯氏菌病(犬)
     - 貓弓形蟲病
     - 其他流產原因(Neospora、病毒性)
     - 萊普托螺旋體病
-
 treatment:
   medical:
     - 抗生素(犬貓):Doxycycline 10 mg/kg PO BID x 28天
@@ -62,10 +61,8 @@ treatment:
     - 懷孕動物:可使用Doxycycline(獲益大於風險)
     - 流產後支持治療:靜脈輸液、子宮收縮劑(Oxytocin)
     - 人類暴露預防:Doxycycline 100 mg PO BID x 5-7天(暴露後預防)
-
 prognosis:
-  general: "犬貓預後良好,多數無症狀或僅輕微症狀,經抗生素治療後康復。流產後生育能力通常不受影響。人類感染預後取決於早期診斷及治療,慢性Q熱可能導致心內膜炎。"
-
+  general: 犬貓預後良好,多數無症狀或僅輕微症狀,經抗生素治療後康復。流產後生育能力通常不受影響。人類感染預後取決於早期診斷及治療,慢性Q熱可能導致心內膜炎。
 prevention:
   - 獸醫及畜主防護:處理產畜或流產物時戴手套、口罩
   - 流產胎盤、胎兒應密封後焚燒或深埋
@@ -73,12 +70,37 @@ prevention:
   - 懷孕動物隔離產房,產後徹底消毒
   - 高風險族群(免疫低下、孕婦、心臟病患)避免接觸產畜
   - 流行區產畜血清學篩檢
-
-
 guidelineRefs:
   - sourceOrg: BMC veterinary research
-    title: Seroprevalence of Abortion-Related infectious diseases and associated risk factors among Brucellosis-free herds in Northern central Algeria.
+    title: >-
+      Seroprevalence of Abortion-Related infectious diseases and associated risk factors among Brucellosis-free herds in
+      Northern central Algeria.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11921590/
     type: research
-    pmid: "40108603"
+    pmid: '40108603'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: vaginal-discharge
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: common
+diagnosticAlgorithm:
+  title: Q熱伯納氏立克次體 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - vaginal-discharge 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清學檢查
+          notes: IFA檢測C. burnetii IgG/IgM抗體,Phase II抗體表示急性感染
+        - name: PCR檢測
+          notes: 胎盤、陰道分泌物、血液C. burnetii DNA檢測
+        - name: 生化檢查
+          notes: 肝酵素(ALT、ALP)輕度升高
+ddxSource: auto-generated

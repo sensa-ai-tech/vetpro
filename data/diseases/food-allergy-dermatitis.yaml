@@ -3,13 +3,15 @@ nameEn: Food Allergy Dermatitis
 nameZh: 食物過敏性皮膚炎
 bodySystem: dermatology
 description: 因食物中特定蛋白質（最常見為牛肉、乳製品、雞肉、小麥）引起的免疫媒介性皮膚反應。臨床表現為非季節性搔癢，常累及面部、耳朵、足部與會陰部。確診需嚴格排除飲食試驗。
-
 aliases:
-  - { alias: "Cutaneous Adverse Food Reaction", language: en }
-  - { alias: "Food Hypersensitivity", language: en }
-  - { alias: "食物過敏", language: zh }
-  - { alias: "食物不良反應", language: zh }
-
+  - alias: Cutaneous Adverse Food Reaction
+    language: en
+  - alias: Food Hypersensitivity
+    language: en
+  - alias: 食物過敏
+    language: zh
+  - alias: 食物不良反應
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓常見。為貓搔癢的常見原因之一。可表現為粟粒性皮膚炎。
-
 etiology:
   categories:
     - name: 食物蛋白過敏
@@ -25,7 +26,6 @@ etiology:
         - 牛肉、乳製品、雞肉（犬最常見）
         - 牛肉、魚、乳製品（貓最常見）
         - 小麥、大豆（較少見）
-
 clinicalSigns:
   early:
     - 非季節性搔癢
@@ -36,14 +36,12 @@ clinicalSigns:
     - 會陰部搔癢
     - 反覆外耳炎
     - 繼發性膿皮症
-
 diagnosis:
   primaryTests:
     - name: 排除飲食試驗
       notes: 水解蛋白或新型蛋白飼料餵食 8-12 週。唯一可靠的診斷方式
     - name: 食物激發試驗
       notes: 排除飲食改善後逐一加回原食材，觀察症狀復發
-
 treatment:
   principles:
     - 排除飲食試驗為診斷金標準
@@ -53,36 +51,59 @@ treatment:
     - 避免含過敏蛋白的零食與餐食
     - 搔癢控制（Oclacitinib 過渡期使用）
     - 繼發感染治療
-
 prognosis: 嚴格飲食控制後預後良好。需終生避免過敏食物。部分犬貓可能發展出對新蛋白的過敏。
-
-
 guidelineRefs:
-  - sourceOrg: "Cellular &amp; molecular immunology"
+  - sourceOrg: Cellular &amp; molecular immunology
     title: Type 2 immunity in allergic diseases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11868591/
     type: review
-    pmid: "39962262"
+    pmid: '39962262'
   - sourceOrg: Mucosal immunology
-    title: "Atopic dermatitis and food allergy: More than sensitization."
+    title: 'Atopic dermatitis and food allergy: More than sensitization.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11471387/
     type: review
-    pmid: "38906220"
+    pmid: '38906220'
   - sourceOrg: International journal of molecular sciences
     title: Treatment of Allergies to Fur Animals.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11241144/
     type: review
-    pmid: "39000328"
+    pmid: '39000328'
   - sourceOrg: Clinical and translational allergy
-    title: "Atopic dermatitis in cats and dogs: a difficult disease for animals and owners."
+    title: 'Atopic dermatitis in cats and dogs: a difficult disease for animals and owners.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6172809/
     type: review
-    pmid: "30323921"
+    pmid: '30323921'
   - sourceOrg: Allergy
     title: Advances and highlights in biomarkers of allergic diseases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9292545/
     type: review
-    pmid: "34519063"
+    pmid: '34519063'
 pubmedQueries:
   - query: '"food allergy" AND (veterinary OR canine OR feline) AND ("elimination diet" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: common
+diagnosticAlgorithm:
+  title: 食物過敏性皮膚炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 排除飲食試驗
+          notes: 水解蛋白或新型蛋白飼料餵食 8-12 週。唯一可靠的診斷方式
+        - name: 食物激發試驗
+          notes: 排除飲食改善後逐一加回原食材，觀察症狀復發
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 排除飲食試驗為診斷金標準
+        - 確診後長期迴避過敏食物
+ddxSource: auto-generated

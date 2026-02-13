@@ -3,12 +3,13 @@ nameEn: Irritable Bowel Syndrome
 nameZh: 腸躁症
 bodySystem: gastrointestinal
 description: 腸躁症（IBS）為功能性腸胃道障礙，特徵為慢性或反覆發作的腹瀉、便秘或兩者交替，但無可識別的結構性或炎症性病變。與緊迫、焦慮或飲食改變相關。為排除診斷（需排除 IBD、感染、腫瘤等器質性疾病）。
-
 aliases:
-  - { alias: IBS, language: en }
-  - { alias: 激躁性腸症候群, language: zh }
-  - { alias: Spastic Colon, language: en }
-
+  - alias: IBS
+    language: en
+  - alias: 激躁性腸症候群
+    language: zh
+  - alias: Spastic Colon
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻功能性腸胃道障礙可能被低估。緊迫為重要觸發因素。
-
 etiology:
   categories:
     - name: 功能性障礙
@@ -30,7 +30,6 @@ etiology:
         - 飲食突然改變
         - 環境變化
         - 腸道微生態失衡
-
 clinicalSigns:
   early:
     - 間歇性大腸性腹瀉（與緊迫事件相關）
@@ -41,14 +40,12 @@ clinicalSigns:
     - 黏液便
     - 腹部不適
     - 體重通常維持正常
-
 diagnosis:
   primaryTests:
     - name: 排除診斷
       notes: 排除所有器質性疾病後診斷。糞便檢查、血液檢查、腹部影像學、必要時內視鏡活檢均正常。
     - name: 結腸鏡活檢
       notes: 組織學正常或僅有極輕微非特異性變化。排除 IBD 與腸道腫瘤。
-
 treatment:
   principles:
     - 飲食管理與纖維補充
@@ -56,41 +53,77 @@ treatment:
     - 必要時藥物輔助
   general:
     - 高消化率飲食或高纖維飲食（依症狀類型）
-    - "可溶性纖維補充：Psyllium 1-3 茶匙/餐"
+    - 可溶性纖維補充：Psyllium 1-3 茶匙/餐
     - 減少環境緊迫因素
-    - "腹瀉型：Loperamide 0.1 mg/kg PO q8-12h（短期，犬隻）"
-    - "抗焦慮：Trazodone 或 Fluoxetine（緊迫相關者）"
+    - 腹瀉型：Loperamide 0.1 mg/kg PO q8-12h（短期，犬隻）
+    - 抗焦慮：Trazodone 或 Fluoxetine（緊迫相關者）
     - 益生菌
-
 prognosis: 預後良好。IBS 不會進展為更嚴重的器質性疾病。多數犬隻通過飲食管理與環境調整可控制症狀。間歇性發作與緊迫事件相關。
-
-
 guidelineRefs:
   - sourceOrg: Nutrients
     title: Moderate Wine Consumption and Gastrointestinal Diseases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12114267/
     type: review
-    pmid: "40431349"
+    pmid: '40431349'
   - sourceOrg: International journal of molecular sciences
-    title: "Resistant Starch and Microbiota-Derived Secondary Metabolites: A Focus on Postbiotic Pathways in Gut Health and Irritable Bowel Syndrome."
+    title: >-
+      Resistant Starch and Microbiota-Derived Secondary Metabolites: A Focus on Postbiotic Pathways in Gut Health and
+      Irritable Bowel Syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12386623/
     type: review
-    pmid: "40869071"
+    pmid: '40869071'
   - sourceOrg: Frontiers in microbiology
     title: The signaling pathway of hypoxia inducible factor in regulating gut homeostasis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10641782/
     type: review
-    pmid: "37965556"
+    pmid: '37965556'
   - sourceOrg: Frontiers in cellular and infection microbiology
     title: Review of microbiota gut brain axis and innate immunity in inflammatory and infective diseases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10585369/
     type: review
-    pmid: "37868345"
+    pmid: '37868345'
   - sourceOrg: Pathogens (Basel, Switzerland)
-    title: "Probiotics and Postbiotics as an Alternative to Antibiotics: An Emphasis on Pigs."
+    title: 'Probiotics and Postbiotics as an Alternative to Antibiotics: An Emphasis on Pigs.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10383198/
     type: review
-    pmid: "37513721"
+    pmid: '37513721'
 pubmedQueries:
   - query: '"irritable bowel syndrome" AND (veterinary OR canine OR feline) AND ("stress" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: faecal-tenesmus
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: constipation
+    frequency: uncommon
+  - symptomId: flatulence
+    frequency: common
+diagnosticAlgorithm:
+  title: 腸躁症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - faecal-tenesmus 相關症狀
+        - abdominal-pain 相關症狀
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 排除診斷
+          notes: 排除所有器質性疾病後診斷。糞便檢查、血液檢查、腹部影像學、必要時內視鏡活檢均正常。
+        - name: 結腸鏡活檢
+          notes: 組織學正常或僅有極輕微非特異性變化。排除 IBD 與腸道腫瘤。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 飲食管理與纖維補充
+        - 減少緊迫因素
+        - 必要時藥物輔助
+ddxSource: auto-generated

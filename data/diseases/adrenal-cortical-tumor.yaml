@@ -3,14 +3,17 @@ nameEn: Adrenal Cortical Tumor
 nameZh: 腎上腺皮質腫瘤
 bodySystem: oncology
 description: 腎上腺皮質來源的腫瘤，包括良性腺瘤及惡性腺癌。功能性腫瘤可分泌過量皮質醇或醛固酮，導致庫欣氏症候群或原發性醛固酮增多症。
-
 aliases:
-  - { alias: 腎上腺皮質腺瘤, language: zh }
-  - { alias: 腎上腺皮質腺癌, language: zh }
-  - { alias: Adrenal Cortical Adenoma, language: en }
-  - { alias: Adrenal Cortical Carcinoma, language: en }
-  - { alias: Adrenal Dependent Hyperadrenocorticism, language: en }
-
+  - alias: 腎上腺皮質腺瘤
+    language: zh
+  - alias: 腎上腺皮質腺癌
+    language: zh
+  - alias: Adrenal Cortical Adenoma
+    language: en
+  - alias: Adrenal Cortical Carcinoma
+    language: en
+  - alias: Adrenal Dependent Hyperadrenocorticism
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓腎上腺皮質腫瘤較少見。貓的功能性腎上腺腫瘤可導致糖尿病難以控制。醛固酮分泌型在貓有增加報導趨勢。
-
 etiology:
   categories:
     - name: 腫瘤類型
@@ -34,7 +36,6 @@ etiology:
         - 醛固酮分泌型（導致高血壓、低鉀血症）
         - 性荷爾蒙分泌型（罕見）
         - 非功能性（偶然發現）
-
 clinicalSigns:
   early:
     - 多飲多尿（皮質醇分泌型）
@@ -49,22 +50,20 @@ clinicalSigns:
     - 肝腫大
     - 高血壓
     - 反覆泌尿道感染
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "可見單側腎上腺腫大（對側可能萎縮）。評估腫瘤大小、侵犯範圍及後腔靜脈血栓"
+      notes: 可見單側腎上腺腫大（對側可能萎縮）。評估腫瘤大小、侵犯範圍及後腔靜脈血栓
     - name: 內分泌檢測
-      notes: "低劑量 Dexamethasone 抑制試驗、ACTH 刺激試驗、尿液皮質醇肌酐比。高劑量 Dex 試驗區分垂體與腎上腺來源"
+      notes: 低劑量 Dexamethasone 抑制試驗、ACTH 刺激試驗、尿液皮質醇肌酐比。高劑量 Dex 試驗區分垂體與腎上腺來源
     - name: CT/MRI
-      notes: "評估腫瘤大小、侵犯後腔靜脈及轉移。手術規劃必備"
+      notes: 評估腫瘤大小、侵犯後腔靜脈及轉移。手術規劃必備
   differentialDiagnoses:
     - 垂體依賴型庫欣氏症候群
     - 嗜鉻細胞瘤
     - 腎上腺髓質腫瘤
     - 腎臟腫瘤
     - 醫源性庫欣氏症
-
 treatment:
   surgical:
     - 腎上腺切除術為首選治療
@@ -76,10 +75,63 @@ treatment:
     - Mitotane 為替代選擇（但對腺癌效果有限）
     - 高血壓管理
     - 化療對腺癌效果有限
-
 prognosis:
-  general: "腺瘤完全切除後預後良好，可達治癒。腺癌若完全切除中位生存時間約 18-36 個月。已侵犯後腔靜脈或有遠端轉移者預後差。"
-
+  general: 腺瘤完全切除後預後良好，可達治癒。腺癌若完全切除中位生存時間約 18-36 個月。已侵犯後腔靜脈或有遠端轉移者預後差。
 prevention:
   - 庫欣氏症候群的系統性評估應包括腎上腺影像學
   - 偶然發現的腎上腺腫塊應定期追蹤
+diagnosticAlgorithm:
+  title: 腎上腺腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估內分泌或腫塊效應症狀
+      findings:
+        - 庫欣症狀（功能性腫瘤）
+        - 腹部腫塊
+        - 高血壓
+        - 體重變化
+    - step: 2
+      action: 內分泌功能
+      details: LDDS及ACTH刺激試驗
+      findings:
+        - LDDS不被抑制
+        - ACTH刺激過度或無反應
+        - 電解質（醛固酮瘤）
+        - 兒茶酚胺（嗜鉻細胞瘤）
+    - step: 3
+      action: 影像定位
+      details: 超音波與CT
+      findings:
+        - 腎上腺腫塊大小
+        - 血管侵犯（後腔靜脈血栓）
+        - 對側腎上腺萎縮（功能性腺瘤）
+        - 轉移評估
+    - step: 4
+      action: 手術計畫
+      details: 術前準備與評估
+      findings:
+        - 腫瘤可切除性
+        - 術前穩定（嗜鉻細胞瘤需α阻斷）
+        - 凝血功能
+        - 術後腎上腺功能不全風險
+clinicalPearls:
+  - 腎上腺「偶發瘤」(incidentaloma)：偶然發現，需評估功能和惡性度
+  - 腫瘤>2cm惡性可能性增加
+  - 後腔靜脈侵犯不一定是手術禁忌，但風險增加
+  - 功能性ADH對側腎上腺可能萎縮 - 術後需皮質醇補充
+  - CT對血管侵犯評估優於超音波
+monitoringItems:
+  - 術後：皮質醇（腎上腺功能恢復）
+  - 影像追蹤（復發/轉移）
+  - 藥物治療時：ACTH刺激試驗、電解質
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+ddxSource: book

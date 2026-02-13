@@ -3,24 +3,22 @@ nameEn: Sphynx Cat Hereditary Myopathy
 nameZh: 斯芬克斯貓遺傳性肌病
 bodySystem: neurology
 description: 斯芬克斯貓及Devon Rex的遺傳性肌肉疾病,全身肌肉無力、震顫、巨食道。幼貓期發病,進行性惡化,預後不良。
-
 aliases:
-  - { alias: 遺傳性肌病, language: zh }
-  - { alias: Congenital Myopathy, language: en }
-
+  - alias: 遺傳性肌病
+    language: zh
+  - alias: Congenital Myopathy
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 斯芬克斯、Devon Rex
-
 etiology:
   categories:
     - name: 遺傳性肌肉疾病
       examples:
         - 肌肉代謝缺陷
         - 體染色體隱性遺傳
-
 clinicalSigns:
   early:
     - 全身肌肉無力(幼貓)
@@ -31,25 +29,47 @@ clinicalSigns:
     - 吸入性肺炎
     - 呼吸肌無力
     - 進行性惡化
-
 diagnosis:
   primaryTests:
     - name: 肌肉活檢
-      notes: "肌纖維變性、萎縮"
+      notes: 肌纖維變性、萎縮
     - name: 肌電圖
-      notes: "肌病性變化"
+      notes: 肌病性變化
   differentialDiagnoses:
     - 重症肌無力
     - 多發性肌炎
-
 treatment:
   medical:
     - 無特效治療
     - 支持性照護
     - 預防吸入性肺炎
-
 prognosis:
-  general: "預後不良,多數幼貓早期死於吸入性肺炎或呼吸衰竭。"
-
+  general: 預後不良,多數幼貓早期死於吸入性肺炎或呼吸衰竭。
 prevention:
   - 基因篩檢
+associatedSymptoms:
+  - symptomId: dysphagia
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: trembling
+    frequency: common
+diagnosticAlgorithm:
+  title: 斯芬克斯貓遺傳性肌病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dysphagia 相關症狀
+        - weakness 相關症狀
+        - trembling 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 肌肉活檢
+          notes: 肌纖維變性、萎縮
+        - name: 肌電圖
+          notes: 肌病性變化
+ddxSource: auto-generated

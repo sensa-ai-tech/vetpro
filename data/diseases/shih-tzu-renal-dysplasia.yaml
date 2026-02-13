@@ -3,18 +3,18 @@ nameEn: Shih Tzu Renal Dysplasia
 nameZh: 西施犬腎臟發育不良
 bodySystem: urinary
 description: 西施犬好發的先天性腎臟發育異常,腎單元分化不全導致慢性腎衰竭。多於幼年至青年期發病,表現為多渴多尿、生長遲緩與氮血症,預後不良。
-
 aliases:
-  - { alias: 西施犬腎發育異常, language: zh }
-  - { alias: Shih Tzu Juvenile Renal Disease, language: en }
-  - { alias: 西施犬幼年型腎病, language: zh }
-
+  - alias: 西施犬腎發育異常
+    language: zh
+  - alias: Shih Tzu Juvenile Renal Disease
+    language: en
+  - alias: 西施犬幼年型腎病
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 西施犬為高風險品種,可能為體染色體隱性或顯性遺傳,發病年齡數月至2歲
-
 etiology:
   categories:
     - name: 遺傳性發育缺陷
@@ -28,7 +28,6 @@ etiology:
         - 腎小管囊性擴張
         - 間質纖維化
         - 腎實質不成熟
-
 clinicalSigns:
   early:
     - 生長遲緩,體型較同窩小
@@ -41,24 +40,22 @@ clinicalSigns:
     - 蒼白黏膜(貧血)
     - 骨骼發育異常(腎性骨病)
     - 高血壓與其併發症
-
 diagnosis:
   primaryTests:
     - name: 血液生化
-      notes: "氮血症(BUN、Creatinine升高),高磷血症,代謝性酸中毒,貧血"
+      notes: 氮血症(BUN、Creatinine升高),高磷血症,代謝性酸中毒,貧血
     - name: 尿液分析
-      notes: "低比重尿(USG<1.015),蛋白尿,可能有圓柱體"
+      notes: 低比重尿(USG<1.015),蛋白尿,可能有圓柱體
     - name: 腎臟超音波
-      notes: "雙側腎臟體積小,皮髓質分界不清,囊性變化"
+      notes: 雙側腎臟體積小,皮髓質分界不清,囊性變化
     - name: 腎臟活檢(確診)
-      notes: "組織病理見原始腎小球、發育不全腎小管、間質纖維化"
+      notes: 組織病理見原始腎小球、發育不全腎小管、間質纖維化
   differentialDiagnoses:
     - 先天性多囊腎
     - 慢性腎炎
     - 腎澱粉樣變性
     - 遺傳性腎病(familial nephropathy)
     - 中毒性腎病
-
 treatment:
   medical:
     - 慢性腎病支持治療(無特異性治療)
@@ -69,12 +66,46 @@ treatment:
     - 制酸劑:Omeprazole 0.5-1 mg/kg PO SID
     - 皮下輸液(脫水或氮血症惡化時)
     - 末期:安寧照護或安樂死
-
 prognosis:
-  general: "進行性疾病,預後不良。多數患犬於2歲前進展至末期腎衰竭。早期診斷與積極支持治療可延長存活時間數月至1-2年,但無法治癒。生活品質為決策重點。"
-
+  general: 進行性疾病,預後不良。多數患犬於2歲前進展至末期腎衰竭。早期診斷與積極支持治療可延長存活時間數月至1-2年,但無法治癒。生活品質為決策重點。
 prevention:
   - 避免繁殖患病犬隻及其直系親屬
   - 幼犬早期腎功能篩檢(尿比重、BUN/Cre)
   - 疑似家系進行配種前評估
   - 遺傳諮詢與繁殖計畫調整
+associatedSymptoms:
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: failure-to-grow
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+diagnosticAlgorithm:
+  title: 西施犬腎臟發育不良 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - polyuria-polydipsia 相關症狀
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液生化
+          notes: 氮血症(BUN、Creatinine升高),高磷血症,代謝性酸中毒,貧血
+        - name: 尿液分析
+          notes: 低比重尿(USG<1.015),蛋白尿,可能有圓柱體
+        - name: 腎臟超音波
+          notes: 雙側腎臟體積小,皮髓質分界不清,囊性變化
+ddxSource: auto-generated

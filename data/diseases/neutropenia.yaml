@@ -2,13 +2,16 @@ slug: neutropenia
 nameEn: Neutropenia
 nameZh: 嗜中性球減少症
 bodySystem: hematology
-description: 嗜中性球減少症為循環血液中嗜中性球計數降低（犬 <3,000/μL，貓 <2,500/μL）。嚴重嗜中性球減少（<1,000/μL）顯著增加感染風險。原因包括骨髓生成不足、破壞/消耗增加、或分佈異常（邊緣池增加）。為重要的臨床發現，需積極排查病因。
-
+description: >-
+  嗜中性球減少症為循環血液中嗜中性球計數降低（犬 <3,000/μL，貓
+  <2,500/μL）。嚴重嗜中性球減少（<1,000/μL）顯著增加感染風險。原因包括骨髓生成不足、破壞/消耗增加、或分佈異常（邊緣池增加）。為重要的臨床發現，需積極排查病因。
 aliases:
-  - { alias: 嗜中性白血球減少, language: zh }
-  - { alias: Low Neutrophil Count, language: en }
-  - { alias: Granulocytopenia, language: en }
-
+  - alias: 嗜中性白血球減少
+    language: zh
+  - alias: Low Neutrophil Count
+    language: en
+  - alias: Granulocytopenia
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓隻常見原因包括 FeLV、FIV、FPV（貓泛白血球減少症）、藥物性（Chloramphenicol、Griseofulvin）。
-
 etiology:
   categories:
     - name: 生成減少
@@ -33,7 +35,6 @@ etiology:
       examples:
         - 內毒素血症（嗜中性球移至邊緣池）
         - 過敏性休克
-
 clinicalSigns:
   early:
     - 發燒（感染引起時）
@@ -45,56 +46,88 @@ clinicalSigns:
     - 肺炎
     - 敗血症
     - 嚴重嗜中性球減少伴發燒為急診（febrile neutropenia）
-
 diagnosis:
   primaryTests:
     - name: 全血球計數（CBC）與血液抹片
       notes: 確認嗜中性球計數降低。評估是否伴隨其他血球系列異常（pancytopenia）。血液抹片觀察嗜中性球形態（毒性變化、帶狀核比例）。
     - name: 感染性疾病篩檢
       notes: 犬小病毒抗原、FeLV/FIV 抗體、壁蝨傳播性疾病篩檢。嚴重嗜中性球減少伴發燒需進行血液培養。
-
 treatment:
   principles:
     - 嗜中性球減少伴發燒為急診，需立即廣效抗生素
     - 治療基礎病因
     - 嚴重者考慮造血生長因子
   general:
-    - "Febrile neutropenia：廣效抗生素（如 Ampicillin-Sulbactam + Enrofloxacin）"
+    - Febrile neutropenia：廣效抗生素（如 Ampicillin-Sulbactam + Enrofloxacin）
     - 停用可能致病的藥物
     - 治療感染性病因（CPV 支持治療、Doxycycline 治療壁蝨病等）
-    - "G-CSF（Filgrastim）5 μg/kg SC q24h（促進嗜中性球生成，但長期使用人類 G-CSF 會產生抗體）"
+    - G-CSF（Filgrastim）5 μg/kg SC q24h（促進嗜中性球生成，但長期使用人類 G-CSF 會產生抗體）
     - 免疫介導性：免疫抑制治療
     - 嚴格無菌護理
-
 prognosis: 預後取決於病因與嚴重程度。藥物引起的嗜中性球減少症在停藥後通常 3-5 天恢復。CPV 感染在度過嗜中性球最低點後預後改善。嚴重敗血症伴嗜中性球減少症死亡率高。免疫介導性對治療反應變異大。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in immunology
     title: Combating bone marrow failure with polymer materials.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11061490/
     type: review
-    pmid: "38694497"
+    pmid: '38694497'
   - sourceOrg: Cells
-    title: "A Comparative Review of Cytokines and Cytokine Targeting in Sepsis: From Humans to Horses."
+    title: 'A Comparative Review of Cytokines and Cytokine Targeting in Sepsis: From Humans to Horses.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11394191/
     type: review
-    pmid: "39273060"
+    pmid: '39273060'
   - sourceOrg: Frontiers in cellular and infection microbiology
     title: Elucidating the role played by bone marrow in visceral leishmaniasis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10582953/
     type: review
-    pmid: "37860064"
+    pmid: '37860064'
   - sourceOrg: Frontiers in immunology
-    title: "Diagnosis and Management of Hematological Adverse Events Induced by Immune Checkpoint Inhibitors: A Systematic Review."
+    title: >-
+      Diagnosis and Management of Hematological Adverse Events Induced by Immune Checkpoint Inhibitors: A Systematic
+      Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7640759/
     type: review
-    pmid: "33193289"
-  - sourceOrg: "Veterinary journal (London, England : 1997)"
+    pmid: '33193289'
+  - sourceOrg: 'Veterinary journal (London, England : 1997)'
     title: Enteric coronavirus infection in adult horses.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7110460/
     type: review
-    pmid: "29429482"
+    pmid: '29429482'
 pubmedQueries:
   - query: '"neutropenia" AND (veterinary OR canine OR feline) AND ("febrile" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+diagnosticAlgorithm:
+  title: 嗜中性球減少症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - halitosis-stomatitis 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 全血球計數（CBC）與血液抹片
+          notes: 確認嗜中性球計數降低。評估是否伴隨其他血球系列異常（pancytopenia）。血液抹片觀察嗜中性球形態（毒性變化、帶狀核比例）。
+        - name: 感染性疾病篩檢
+          notes: 犬小病毒抗原、FeLV/FIV 抗體、壁蝨傳播性疾病篩檢。嚴重嗜中性球減少伴發燒需進行血液培養。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 嗜中性球減少伴發燒為急診，需立即廣效抗生素
+        - 治療基礎病因
+        - 嚴重者考慮造血生長因子
+ddxSource: auto-generated

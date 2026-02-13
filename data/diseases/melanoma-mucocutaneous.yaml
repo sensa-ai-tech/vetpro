@@ -3,13 +3,15 @@ nameEn: Melanoma Mucocutaneous
 nameZh: 黏膜皮膚交界黑色素瘤
 bodySystem: oncology
 description: 發生於皮膚與黏膜交界處的黑色素瘤，包括唇部、眼瞼邊緣、肛門周圍等區域。犬的黏膜皮膚交界處黑色素瘤惡性程度高，轉移率顯著。
-
 aliases:
-  - { alias: 皮膚黏膜交界黑色素瘤, language: zh }
-  - { alias: 唇部黑色素瘤, language: zh }
-  - { alias: Mucocutaneous Melanoma, language: en }
-  - { alias: Lip Margin Melanoma, language: en }
-
+  - alias: 皮膚黏膜交界黑色素瘤
+    language: zh
+  - alias: 唇部黑色素瘤
+    language: zh
+  - alias: Mucocutaneous Melanoma
+    language: en
+  - alias: Lip Margin Melanoma
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓的黏膜皮膚交界黑色素瘤較少報導，生物學行為尚未完全釐清。
-
 etiology:
   categories:
     - name: 腫瘤特性
@@ -33,7 +34,6 @@ etiology:
         - 眼瞼邊緣
         - 肛門周圍
         - 外生殖器區域
-
 clinicalSigns:
   early:
     - 黏膜皮膚交界處可見色素沉著性腫塊
@@ -45,22 +45,20 @@ clinicalSigns:
     - 區域淋巴結腫大
     - 局部組織侵犯
     - 無色素型表現為粉紅色至紅色腫塊
-
 diagnosis:
   primaryTests:
     - name: 細針抽吸細胞學 (FNA)
-      notes: "腫瘤及區域淋巴結 FNA。黑色素顆粒有助診斷，無色素型需特殊染色"
+      notes: 腫瘤及區域淋巴結 FNA。黑色素顆粒有助診斷，無色素型需特殊染色
     - name: 組織切片病理學
-      notes: "確認腫瘤分級、有絲分裂指數、手術邊緣。免疫組化 Melan-A、PNL2 標記"
+      notes: 確認腫瘤分級、有絲分裂指數、手術邊緣。免疫組化 Melan-A、PNL2 標記
     - name: 分期檢查
-      notes: "胸腔 X 光、腹部超音波評估轉移。區域淋巴結 FNA"
+      notes: 胸腔 X 光、腹部超音波評估轉移。區域淋巴結 FNA
   differentialDiagnoses:
     - 鱗狀細胞癌 (SCC)
     - 肥大細胞瘤
     - 黑色素細胞瘤（良性）
     - 基底細胞瘤
     - 血管瘤/血管肉瘤
-
 treatment:
   surgical:
     - 廣泛手術切除（至少 2 cm 邊緣）
@@ -71,19 +69,42 @@ treatment:
     - 化療（Carboplatin）作為輔助治療
     - 放射治療用於不完全切除病例
     - 疼痛管理
-
 prognosis:
-  general: "預後取決於腫瘤部位、大小及分級。完全切除且無轉移者中位生存時間可達 1-2 年。有絲分裂指數高或已轉移者預後較差。"
-
+  general: 預後取決於腫瘤部位、大小及分級。完全切除且無轉移者中位生存時間可達 1-2 年。有絲分裂指數高或已轉移者預後較差。
 prevention:
   - 定期檢查口唇、眼瞼邊緣及黏膜皮膚交界區域
   - 發現色素沉著異常腫塊應及早活檢
-
-
 guidelineRefs:
-  - sourceOrg: "Biomedicine &amp; pharmacotherapy = Biomedecine &amp; pharmacotherapie"
-    title: "Bioactive compounds and their libraries: An insight into prospective phytotherapeutics approach for oral mucocutaneous cancers."
+  - sourceOrg: Biomedicine &amp; pharmacotherapy = Biomedecine &amp; pharmacotherapie
+    title: >-
+      Bioactive compounds and their libraries: An insight into prospective phytotherapeutics approach for oral
+      mucocutaneous cancers.
     url: https://pubmed.ncbi.nlm.nih.gov/34144454/
     type: review
-    pmid: "34144454"
+    pmid: '34144454'
     relevance: primary
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 黏膜皮膚交界黑色素瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 細針抽吸細胞學 (FNA)
+          notes: 腫瘤及區域淋巴結 FNA。黑色素顆粒有助診斷，無色素型需特殊染色
+        - name: 組織切片病理學
+          notes: 確認腫瘤分級、有絲分裂指數、手術邊緣。免疫組化 Melan-A、PNL2 標記
+        - name: 分期檢查
+          notes: 胸腔 X 光、腹部超音波評估轉移。區域淋巴結 FNA
+ddxSource: auto-generated

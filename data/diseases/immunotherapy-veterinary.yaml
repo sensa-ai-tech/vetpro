@@ -3,13 +3,15 @@ nameEn: Immunotherapy Veterinary
 nameZh: 獸醫免疫治療
 bodySystem: oncology
 description: 利用免疫系統辨識並攻擊腫瘤細胞的治療策略。包括治療性疫苗、免疫調節劑、單株抗體及細胞治療等。犬腫瘤免疫治療為獸醫腫瘤學的重要新興領域。
-
 aliases:
-  - { alias: 腫瘤免疫治療, language: zh }
-  - { alias: 癌症免疫療法, language: zh }
-  - { alias: Cancer Immunotherapy, language: en }
-  - { alias: Veterinary Immuno-oncology, language: en }
-
+  - alias: 腫瘤免疫治療
+    language: zh
+  - alias: 癌症免疫療法
+    language: zh
+  - alias: Cancer Immunotherapy
+    language: en
+  - alias: Veterinary Immuno-oncology
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,23 +21,21 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓腫瘤免疫治療研究較少。注射部位肉瘤的免疫治療為研究重點之一。部分犬用免疫治療策略正在探索貓的應用。
-
 etiology:
   categories:
     - name: 免疫治療類型
       examples:
-        - "治療性疫苗（Oncept 黑色素瘤 DNA 疫苗）"
-        - "免疫調節劑（Imiquimod、BCG）"
-        - "小分子標靶藥（Toceranib/Palladia、Masitinib）"
-        - "單株抗體（研究階段：抗 PD-1、抗 PD-L1）"
-        - "細胞治療（CAR-T 研究中）"
+        - 治療性疫苗（Oncept 黑色素瘤 DNA 疫苗）
+        - 免疫調節劑（Imiquimod、BCG）
+        - 小分子標靶藥（Toceranib/Palladia、Masitinib）
+        - 單株抗體（研究階段：抗 PD-1、抗 PD-L1）
+        - 細胞治療（CAR-T 研究中）
     - name: 作用機制
       examples:
         - 活化抗腫瘤 T 細胞免疫
         - 阻斷免疫檢查點 (checkpoint inhibition)
         - 抑制腫瘤新生血管
         - 直接抑制腫瘤細胞增殖信號
-
 clinicalSigns:
   early:
     - 注射部位暫時性反應（疫苗型）
@@ -47,63 +47,84 @@ clinicalSigns:
     - 跛行（Toceranib）
     - 蛋白尿（Toceranib）
     - 免疫介導性反應（罕見）
-
 diagnosis:
   primaryTests:
     - name: 治療前評估
-      notes: "完整腫瘤分期。組織病理確認腫瘤類型。基準 CBC、生化、尿液分析"
+      notes: 完整腫瘤分期。組織病理確認腫瘤類型。基準 CBC、生化、尿液分析
     - name: 治療監測
-      notes: "定期 CBC 及生化。Toceranib 治療需監測尿蛋白。影像學評估腫瘤反應"
+      notes: 定期 CBC 及生化。Toceranib 治療需監測尿蛋白。影像學評估腫瘤反應
   differentialDiagnoses:
     - 傳統化療
     - 手術治療
     - 放射治療
     - 姑息治療
-
 treatment:
   medical:
-    - "Toceranib (Palladia) 2.75 mg/kg PO 隔日（犬肥大細胞瘤核准用藥）"
-    - "Oncept 犬黑色素瘤疫苗（見 melanoma-vaccine 詞條）"
-    - "Metronomic 化療具有抗血管新生免疫調節效果"
-    - "免疫檢查點抑制劑（多項犬臨床試驗進行中）"
+    - Toceranib (Palladia) 2.75 mg/kg PO 隔日（犬肥大細胞瘤核准用藥）
+    - Oncept 犬黑色素瘤疫苗（見 melanoma-vaccine 詞條）
+    - Metronomic 化療具有抗血管新生免疫調節效果
+    - 免疫檢查點抑制劑（多項犬臨床試驗進行中）
     - 不良反應管理（減量或暫停給藥）
-
 prognosis:
-  general: "預後因腫瘤類型及免疫治療方式而異。免疫治療通常與其他治療模式合併使用效果最佳。部分病例可觀察到持久的腫瘤緩解。此領域快速發展中，新治療選項持續增加。"
-
+  general: 預後因腫瘤類型及免疫治療方式而異。免疫治療通常與其他治療模式合併使用效果最佳。部分病例可觀察到持久的腫瘤緩解。此領域快速發展中，新治療選項持續增加。
 prevention:
   - 免疫治療需在獸醫腫瘤專科醫師指導下進行
   - 定期監測不良反應
-
-
 guidelineRefs:
   - sourceOrg: Archives of Razi Institute
-    title: "Comprehensive Analysis of Papillomavirus (PV) and Its Implications in Cancer: Bridging the Gap between Human and Veterinary Medicine."
+    title: >-
+      Comprehensive Analysis of Papillomavirus (PV) and Its Implications in Cancer: Bridging the Gap between Human and
+      Veterinary Medicine.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12207925/
     type: review
-    pmid: "40599446"
+    pmid: '40599446'
     relevance: primary
   - sourceOrg: Viruses
-    title: "BCG Immunotherapy in Equine Sarcoid Treatment: Mechanisms, Clinical Efficacy, and Challenges in Veterinary Oncology."
+    title: >-
+      BCG Immunotherapy in Equine Sarcoid Treatment: Mechanisms, Clinical Efficacy, and Challenges in Veterinary
+      Oncology.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12567874/
     type: review
-    pmid: "41157593"
+    pmid: '41157593'
     relevance: primary
   - sourceOrg: The veterinary quarterly
-    title: "Immunotherapy in mastitis: state of knowledge, research gaps and way forward."
+    title: 'Immunotherapy in mastitis: state of knowledge, research gaps and way forward.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11232650/
     type: review
-    pmid: "38973225"
+    pmid: '38973225'
     relevance: primary
   - sourceOrg: Veterinary and comparative oncology
-    title: "There and back again: Translating adoptive cell therapy to canine cancer and improving human treatment."
+    title: 'There and back again: Translating adoptive cell therapy to canine cancer and improving human treatment.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9310446/
     type: review
-    pmid: "34169631"
+    pmid: '34169631'
     relevance: primary
   - sourceOrg: Frontiers in immunology
-    title: "The Veterinary Immunological Toolbox: Past, Present, and Future."
+    title: 'The Veterinary Immunological Toolbox: Past, Present, and Future.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7399100/
     type: review
-    pmid: "32849568"
+    pmid: '32849568'
     relevance: primary
+associatedSymptoms:
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 獸醫免疫治療 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - diarrhoea 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 治療前評估
+          notes: 完整腫瘤分期。組織病理確認腫瘤類型。基準 CBC、生化、尿液分析
+        - name: 治療監測
+          notes: 定期 CBC 及生化。Toceranib 治療需監測尿蛋白。影像學評估腫瘤反應
+ddxSource: auto-generated

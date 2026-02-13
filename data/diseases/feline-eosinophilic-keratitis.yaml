@@ -3,18 +3,19 @@ nameEn: Feline Eosinophilic Keratitis
 nameZh: 貓嗜酸性角膜炎
 bodySystem: ophthalmology
 description: 貓特有的角膜疾病，嗜酸性球浸潤角膜表面形成白色至粉紅色肉芽組織樣斑塊。可能與 FHV-1 感染或免疫異常相關。若不治療會逐漸覆蓋角膜導致失明。
-
 aliases:
-  - { alias: Eosinophilic Keratoconjunctivitis, language: en }
-  - { alias: Proliferative Keratitis, language: en }
-  - { alias: 貓嗜酸球性角膜炎, language: zh }
-  - { alias: 增殖性角膜炎, language: zh }
-
+  - alias: Eosinophilic Keratoconjunctivitis
+    language: en
+  - alias: Proliferative Keratitis
+    language: en
+  - alias: 貓嗜酸球性角膜炎
+    language: zh
+  - alias: 增殖性角膜炎
+    language: zh
 species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓特有疾病。可影響任何年齡，中年貓較常見。可能與 FHV-1 潛伏感染相關。
-
 etiology:
   categories:
     - name: 免疫媒介性
@@ -22,7 +23,6 @@ etiology:
         - 嗜酸性球異常浸潤角膜
         - 可能與 FHV-1 潛伏感染觸發免疫反應相關
         - 確切機轉不明
-
 clinicalSigns:
   early:
     - 角膜邊緣出現白色至粉紅色斑塊
@@ -33,7 +33,6 @@ clinicalSigns:
     - 角膜新生血管
     - 白色乾酪樣沉積
     - 視力下降
-
 diagnosis:
   primaryTests:
     - name: 角膜細胞學
@@ -42,7 +41,6 @@ diagnosis:
       notes: 白色至粉紅色增殖性角膜病變，常從角膜邊緣向中央擴展
     - name: FHV-1 PCR
       notes: 評估是否有相關病毒感染
-
 treatment:
   principles:
     - 局部免疫抑制治療
@@ -53,9 +51,45 @@ treatment:
     - Cyclosporine 或 Tacrolimus 眼藥水 (長期維持)
     - Megestrol acetate 口服 (頑固病例，短期使用)
     - FHV-1 相關者加用 Famciclovir 口服
-
 prognosis: 對局部免疫抑制治療反應良好。停藥後復發常見，多數需長期維持治療。配合抗病毒治療可減少復發。不治療會進行性覆蓋角膜。
-
 pubmedQueries:
   - query: '"eosinophilic keratitis" AND (veterinary OR feline) AND ("treatment" OR "FHV-1")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 貓嗜酸性角膜炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估貓角膜表面白粉色隆起斑塊、血管新生和角膜水腫
+      findings:
+        - 角膜表面白粉色肉芽組織斑塊
+        - 角膜血管新生
+        - 輕度至中度眼部不適
+    - step: 2
+      action: 角膜細胞學檢查
+      details: 進行角膜刮搔細胞學檢查，確認嗜酸性球浸潤
+      findings:
+        - 大量嗜酸性球浸潤
+        - 可能發現肥大細胞
+        - 排除角膜感染
+    - step: 3
+      action: 確診與病因調查
+      details: 根據細胞學確診，檢測FHV-1（貓疱疹病毒）感染作為潛在觸發因素
+      findings:
+        - 細胞學確認嗜酸性角膜炎
+        - FHV-1 PCR可能陽性
+        - 對局部類固醇或環孢素治療反應良好
+clinicalPearls:
+  - 角膜刮片細胞學是最簡單快速的確診方法
+  - 外用類固醇效果顯著但不可在有角膜潰瘍時使用
+  - 約75%的病例可檢出FHV-1 DNA
+  - 復發常見，需長期追蹤
+monitoringItems:
+  - 角膜病變範圍和外觀
+  - 螢光素染色（監測潰瘍）
+  - 治療反應和復發
+  - 類固醇副作用
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+ddxSource: book

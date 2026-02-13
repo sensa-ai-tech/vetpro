@@ -3,12 +3,13 @@ nameEn: Herbicide Toxicosis
 nameZh: 除草劑中毒
 bodySystem: toxicology
 description: 攝入除草劑化學物質引發的中毒反應,包含多種化學類別如氯酸鹽、聯吡啶類、苯氧酸類等。毒性機轉和臨床症狀因除草劑類型而異,從輕度胃腸道刺激至致命性多器官衰竭。
-
 aliases:
-  - { alias: 殺草劑中毒, language: zh }
-  - { alias: Weedkiller Poisoning, language: en }
-  - { alias: Herbicide Poisoning, language: en }
-
+  - alias: 殺草劑中毒
+    language: zh
+  - alias: Weedkiller Poisoning
+    language: en
+  - alias: Herbicide Poisoning
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓主要因毛髮污染後梳理行為而攝入
-
 etiology:
   categories:
     - name: 聯吡啶類
@@ -36,7 +36,6 @@ etiology:
       examples:
         - Glyphosate (嘉磷塞)
         - Glufosinate
-
 clinicalSigns:
   early:
     - 過度流涎
@@ -50,26 +49,24 @@ clinicalSigns:
     - 變性血紅素血症(氯酸鹽類)
     - 肌肉僵硬(苯氧酸類)
     - 口腔和食道潰瘍(腐蝕性除草劑)
-
 diagnosis:
   primaryTests:
     - name: 病史詢問
-      notes: "確認除草劑接觸史,攜帶產品容器或標籤"
+      notes: 確認除草劑接觸史,攜帶產品容器或標籤
     - name: 全血球計數和血液抹片
-      notes: "變性血紅素血症、Heinz bodies(氯酸鹽類)"
+      notes: 變性血紅素血症、Heinz bodies(氯酸鹽類)
     - name: 血液生化
-      notes: "肝酶、腎功能、電解質、血糖"
+      notes: 肝酶、腎功能、電解質、血糖
     - name: 胸部 X 光
-      notes: "Paraquat 中毒可見肺浸潤和纖維化(數日後)"
+      notes: Paraquat 中毒可見肺浸潤和纖維化(數日後)
     - name: 尿液檢查
-      notes: "某些除草劑可於尿液中測得(如 Paraquat)"
+      notes: 某些除草劑可於尿液中測得(如 Paraquat)
   differentialDiagnoses:
     - 其他農藥中毒(殺蟲劑、殺鼠劑)
     - 急性胃腸炎
     - 肝腎疾病(其他原因)
     - 毒蕈中毒
     - 重金屬中毒
-
 treatment:
   medical:
     - 去污染:催吐(僅腐蝕性產品禁用),皮膚/眼睛徹底沖洗
@@ -82,12 +79,50 @@ treatment:
     - Paraquat 中毒:避免氧氣治療(加重肺毒性),考慮血液透析
     - 癲癇控制:Diazepam, Levetiracetam
     - 肝腎支持治療,密集監護
-
 prognosis:
-  general: "預後高度取決於除草劑類型和攝入量。Glyphosate 預後通常良好,Paraquat 預後極差(肺纖維化常致命)。苯氧酸類和氯酸鹽類中度毒性,早期治療可改善預後。"
-
+  general: 預後高度取決於除草劑類型和攝入量。Glyphosate 預後通常良好,Paraquat 預後極差(肺纖維化常致命)。苯氧酸類和氯酸鹽類中度毒性,早期治療可改善預後。
 prevention:
   - 除草劑儲存於上鎖櫃中,遠離寵物
   - 噴灑後遵循標籤建議的安全等待期
   - 使用寵物友善除草劑或有機替代品
   - 防止寵物舔舐噴灑後草坪或植物
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 除草劑中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - dyspnoea 相關症狀
+        - seizures 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史詢問
+          notes: 確認除草劑接觸史,攜帶產品容器或標籤
+        - name: 全血球計數和血液抹片
+          notes: 變性血紅素血症、Heinz bodies(氯酸鹽類)
+        - name: 血液生化
+          notes: 肝酶、腎功能、電解質、血糖
+ddxSource: auto-generated

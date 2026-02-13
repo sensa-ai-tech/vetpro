@@ -3,12 +3,13 @@ nameEn: Second Generation Anticoagulant Rodenticide
 nameZh: 第二代抗凝血滅鼠劑中毒
 bodySystem: toxicology
 description: 第二代抗凝血劑(如溴敵隆、溴鼠靈)抑制維生素K循環,導致凝血因子缺乏。半衰期長,中毒效應可持續數週。
-
 aliases:
-  - { alias: 長效抗凝血劑中毒, language: zh }
-  - { alias: Brodifacoum Poisoning, language: en }
-  - { alias: Bromadiolone Toxicosis, language: en }
-
+  - alias: 長效抗凝血劑中毒
+    language: zh
+  - alias: Brodifacoum Poisoning
+    language: en
+  - alias: Bromadiolone Toxicosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓較少直接攝入,但可能捕食中毒齧齒動物
-
 etiology:
   categories:
     - name: 直接攝入
@@ -29,7 +29,6 @@ etiology:
       examples:
         - 捕食中毒齧齒動物
         - 攝入污染食物
-
 clinicalSigns:
   early:
     - 無明顯症狀(潛伏期3-5天)
@@ -40,74 +39,110 @@ clinicalSigns:
     - 呼吸困難(胸腔或肺出血)
     - 黏膜蒼白(貧血)
     - 腹腔內出血、休克
-
 diagnosis:
   primaryTests:
     - name: 凝血功能檢查
-      notes: "PT(凝血酶原時間)延長>正常2-3倍,PIVKA(誘導的維生素K缺乏)陽性"
+      notes: PT(凝血酶原時間)延長>正常2-3倍,PIVKA(誘導的維生素K缺乏)陽性
     - name: 全血球計數
-      notes: "貧血(PCV<25%),血小板通常正常"
+      notes: 貧血(PCV<25%),血小板通常正常
     - name: 胸腔/腹腔超音波或X光
-      notes: "檢測內出血"
+      notes: 檢測內出血
   differentialDiagnoses:
     - 免疫介導性血小板減少症
     - 血友病
     - 肝臟疾病
     - 血管肉瘤
-
 treatment:
   medical:
     - 維生素K1治療(關鍵):
-      - 溴敵隆: 2.5-5 mg/kg PO q12h,持續4-6週
-      - 溴鼠靈: 2.5-5 mg/kg PO q12h,持續3-4週
-      - 與油性食物併服增加吸收
+        - 溴敵隆: 2.5-5 mg/kg PO q12h,持續4-6週
+        - 溴鼠靈: 2.5-5 mg/kg PO q12h,持續3-4週
+        - 與油性食物併服增加吸收
     - 催吐(若攝入4-6小時內): 3% H2O2 1-2 mL/kg PO
     - 活性碳 1-2 g/kg PO(攝入12小時內)
     - 嚴重出血:
-      - 新鮮全血或血漿輸血 10-20 mL/kg IV
-      - 氧氣治療(若呼吸困難)
-      - 胸腔穿刺引流(若大量胸水)
+        - 新鮮全血或血漿輸血 10-20 mL/kg IV
+        - 氧氣治療(若呼吸困難)
+        - 胸腔穿刺引流(若大量胸水)
     - 絕對臥床休息,避免活動加劇出血
     - 停藥後48小時複查PT,若延長則延長治療
-
 prognosis:
-  general: "及早治療預後良好(存活率>95%)。嚴重內出血或延遲治療可能致命。完整療程後復發罕見。"
-
+  general: 及早治療預後良好(存活率>95%)。嚴重內出血或延遲治療可能致命。完整療程後復發罕見。
 prevention:
   - 使用寵物無法接觸的誘餌盒
   - 選擇第一代抗凝血劑或非抗凝血類滅鼠劑
   - 定期檢查環境,移除可疑餌劑
   - 懷疑暴露即使無症狀也應就診
-
-
 guidelineRefs:
   - sourceOrg: Journal of analytical toxicology
     title: LC-MS-MS Analysis of Brodifacoum Isomers in Rat Tissue.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4834430/
     type: research
-    pmid: "26912564"
+    pmid: '26912564'
     relevance: supporting
   - sourceOrg: New Zealand veterinary journal
     title: Suspected brodifacoum poisoning in tuatara (Sphenodon punctatus).
     url: https://pubmed.ncbi.nlm.nih.gov/40319479/
     type: case-report
-    pmid: "40319479"
+    pmid: '40319479'
     relevance: supporting
   - sourceOrg: The Science of the total environment
-    title: Predictive framework for estimating the risks to raptors from ecologically relevant exposure to second generation anticoagulant rodenticides.
+    title: >-
+      Predictive framework for estimating the risks to raptors from ecologically relevant exposure to second generation
+      anticoagulant rodenticides.
     url: https://pubmed.ncbi.nlm.nih.gov/40582051/
     type: research
-    pmid: "40582051"
+    pmid: '40582051'
     relevance: supporting
   - sourceOrg: Archives of toxicology
-    title: "Comparative biological properties of the four stereoisomers of difethialone, a second-generation anticoagulant rodenticide, in rats: development of a model allowing to choose the appropriate stereoisomeric ratio."
+    title: >-
+      Comparative biological properties of the four stereoisomers of difethialone, a second-generation anticoagulant
+      rodenticide, in rats: development of a model allowing to choose the appropriate stereoisomeric ratio.
     url: https://pubmed.ncbi.nlm.nih.gov/32047980/
     type: research
-    pmid: "32047980"
+    pmid: '32047980'
     relevance: supporting
   - sourceOrg: Toxicology letters
-    title: Differences in teratogenicity of some vitamin K antagonist substances used as human therapeutic or rodenticide are due to major differences in their fate after an oral administration.
+    title: >-
+      Differences in teratogenicity of some vitamin K antagonist substances used as human therapeutic or rodenticide are
+      due to major differences in their fate after an oral administration.
     url: https://pubmed.ncbi.nlm.nih.gov/32768651/
     type: research
-    pmid: "32768651"
+    pmid: '32768651'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: epistaxis
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: haematuria
+    frequency: uncommon
+  - symptomId: petechiae-ecchymoses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 第二代抗凝血滅鼠劑中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - dyspnoea 相關症狀
+        - pallor-cyanosis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 凝血功能檢查
+          notes: PT(凝血酶原時間)延長>正常2-3倍,PIVKA(誘導的維生素K缺乏)陽性
+        - name: 全血球計數
+          notes: 貧血(PCV<25%),血小板通常正常
+        - name: 胸腔/腹腔超音波或X光
+          notes: 檢測內出血
+ddxSource: auto-generated

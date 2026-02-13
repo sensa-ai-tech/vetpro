@@ -3,27 +3,34 @@ nameEn: Eclampsia
 nameZh: 產褥性低血鈣
 bodySystem: reproductive
 description: 產褥性低血鈣（Eclampsia）又稱產褥熱或泌乳性低血鈣，是哺乳期母犬貓因鈣質大量流失至乳汁而導致的急性低血鈣症。為真正的醫療急症，未及時治療可導致癲癇、高體溫及死亡。
-
 aliases:
-  - { alias: Puerperal Hypocalcemia, language: en }
-  - { alias: Puerperal Tetany, language: en }
-  - { alias: Lactation Tetany, language: en }
-  - { alias: Milk Fever, language: en }
-  - { alias: Periparturient Hypocalcemia, language: en }
-  - { alias: 產褥熱, language: zh }
-  - { alias: 泌乳性低血鈣, language: zh }
-  - { alias: 產後低鈣抽搐, language: zh }
-
+  - alias: Puerperal Hypocalcemia
+    language: en
+  - alias: Puerperal Tetany
+    language: en
+  - alias: Lactation Tetany
+    language: en
+  - alias: Milk Fever
+    language: en
+  - alias: Periparturient Hypocalcemia
+    language: en
+  - alias: 產褥熱
+    language: zh
+  - alias: 泌乳性低血鈣
+    language: zh
+  - alias: 產後低鈣抽搐
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: uncommon
-    notes: 好發於小型犬（Chihuahua、Toy Poodle、Miniature Pinscher、Pomeranian、Shih Tzu）。最常發生於泌乳高峰期（產後 1-4 週），但亦可在產前或產後 6 週內發生。產仔數多的母犬風險較高。初產母犬與營養不良者風險增加。懷孕期過度補鈣反而增加風險（抑制 PTH 反應）。
+    notes: >-
+      好發於小型犬（Chihuahua、Toy Poodle、Miniature Pinscher、Pomeranian、Shih Tzu）。最常發生於泌乳高峰期（產後 1-4 週），但亦可在產前或產後 6
+      週內發生。產仔數多的母犬風險較高。初產母犬與營養不良者風險增加。懷孕期過度補鈣反而增加風險（抑制 PTH 反應）。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較犬罕見。發生時臨床表現可能不典型，以嗜睡、食慾下降、步態僵硬為主。大量仔貓泌乳需求高時風險增加。
-
 etiology:
   categories:
     - name: 鈣質流失機制
@@ -44,7 +51,6 @@ etiology:
         - 細胞外鈣降低 → 神經細胞膜去極化閾值降低 → 自發性肌肉收縮
         - 嚴重低血鈣導致持續性肌肉痙攣（tetany）
         - 持續肌肉痙攣導致高體溫（>41°C 可致死）
-
 clinicalSigns:
   early:
     - 焦躁不安、踱步
@@ -69,22 +75,20 @@ clinicalSigns:
     - 喉頭痙攣導致呼吸困難
     - 昏迷
     - 死亡（未治療可在 12-24 小時內死亡）
-
 diagnosis:
   primaryTests:
     - name: 臨床症狀與病史
-      notes: "泌乳期母犬出現肌肉震顫、強直性痙攣或癲癇發作，具高度診斷價值。典型病例根據病史與臨床表現即可初步診斷並開始治療"
+      notes: 泌乳期母犬出現肌肉震顫、強直性痙攣或癲癇發作，具高度診斷價值。典型病例根據病史與臨床表現即可初步診斷並開始治療
     - name: 血清總鈣/離子鈣
-      notes: "確診依據：總鈣 <7 mg/dL（正常 9-11.5 mg/dL）或離子鈣 <0.8 mmol/L（正常 1.1-1.4 mmol/L）。離子鈣更具診斷價值。注意：不應等待檢驗結果才開始治療"
+      notes: 確診依據：總鈣 <7 mg/dL（正常 9-11.5 mg/dL）或離子鈣 <0.8 mmol/L（正常 1.1-1.4 mmol/L）。離子鈣更具診斷價值。注意：不應等待檢驗結果才開始治療
     - name: 心電圖 (ECG)
-      notes: "低鈣心電圖變化：QT 間期延長、ST 段延長。嚴重時可見心律不整。治療前後監測"
+      notes: 低鈣心電圖變化：QT 間期延長、ST 段延長。嚴重時可見心律不整。治療前後監測
   additional:
     - 血清磷（低鈣常伴隨高磷）
     - 血糖（排除低血糖——小型犬泌乳期可合併低血糖）
     - 血清鎂（低鎂可使低鈣難以糾正）
     - 電解質全套
     - CBC/生化基線
-
 treatment:
   principles:
     - 急性低血鈣為醫療急症——靜脈鈣劑緩慢注射為首要治療
@@ -94,13 +98,13 @@ treatment:
     - 暫時或永久停止哺乳（依嚴重度決定）
   medications:
     - name: 10% Calcium Gluconate
-      dose: "0.5-1.5 mL/kg IV 緩慢注射（10-30 分鐘），稀釋於等量生理食鹽水"
-      notes: "急救首選。必須緩慢給予（>10 分鐘）。全程監測心率——若出現心搏過緩、嘔吐或心律不整立即停止。避免使用 Calcium Chloride（組織壞死風險高）"
+      dose: 0.5-1.5 mL/kg IV 緩慢注射（10-30 分鐘），稀釋於等量生理食鹽水
+      notes: 急救首選。必須緩慢給予（>10 分鐘）。全程監測心率——若出現心搏過緩、嘔吐或心律不整立即停止。避免使用 Calcium Chloride（組織壞死風險高）
     - name: 口服鈣質補充
-      dose: "Calcium Carbonate 25-50 mg/kg/day 元素鈣，分 2-3 次給予"
+      dose: Calcium Carbonate 25-50 mg/kg/day 元素鈣，分 2-3 次給予
       notes: 穩定後口服維持。視臨床反應調整劑量。搭配維生素 D 促進吸收
     - name: Calcitriol（活性維生素 D3）
-      dose: "0.02-0.03 μg/kg PO q24h"
+      dose: 0.02-0.03 μg/kg PO q24h
       notes: 促進腸道鈣質吸收，嚴重或復發性病例使用。需監測血鈣避免高血鈣
   general:
     - 高體溫處理：濕毛巾降溫、風扇、避免冰浴（血管收縮反而不利散熱），目標降至 39.5°C 即停止
@@ -109,37 +113,41 @@ treatment:
     - 幼犬管理：輕度病例穩定後可恢復哺乳但需減少哺乳頻率並補充人工奶；嚴重或復發性病例需完全停止哺乳，改為人工哺育
     - 飲食調整：確保高品質泌乳期飼料，鈣磷比適當（1.2-1.4:1）
     - 預防復發：口服鈣劑持續至斷奶。避免懷孕期過度補鈣
-
-emergencyNotes: 產褥性低血鈣為急症。處理順序：(1) 10% Calcium Gluconate 0.5-1.5 mL/kg IV 緩慢注射（>10 分鐘），全程監測心電圖或心率——心搏過緩或心律不整立即暫停；(2) 同時降溫（若體溫 >40°C）；(3) 癲癇持續發作時 Diazepam 0.5-1 mg/kg IV；(4) 靜脈輸液；(5) 穩定後轉為 Calcium Gluconate SC（稀釋後皮下注射維持 12 小時）或口服鈣劑；(6) 評估是否需停止哺乳。多數犬在靜脈鈣劑給予後 15-30 分鐘內臨床症狀顯著改善。
-
-prognosis: 及時診斷與適當治療下預後極佳，大多數犬在靜脈鈣劑治療後迅速恢復（15-30 分鐘內症狀改善）。復發率約 25-40%（同次泌乳期或下次懷孕）。嚴重且延遲治療者可因持續性高體溫（>42°C）導致腦損傷或多器官衰竭而預後不良。已發生 eclampsia 的母犬未來懷孕復發風險高，建議預防性管理或考慮絕育。
-
+emergencyNotes: >-
+  產褥性低血鈣為急症。處理順序：(1) 10% Calcium Gluconate 0.5-1.5 mL/kg IV 緩慢注射（>10 分鐘），全程監測心電圖或心率——心搏過緩或心律不整立即暫停；(2) 同時降溫（若體溫
+  >40°C）；(3) 癲癇持續發作時 Diazepam 0.5-1 mg/kg IV；(4) 靜脈輸液；(5) 穩定後轉為 Calcium Gluconate SC（稀釋後皮下注射維持 12 小時）或口服鈣劑；(6)
+  評估是否需停止哺乳。多數犬在靜脈鈣劑給予後 15-30 分鐘內臨床症狀顯著改善。
+prognosis: >-
+  及時診斷與適當治療下預後極佳，大多數犬在靜脈鈣劑治療後迅速恢復（15-30 分鐘內症狀改善）。復發率約 25-40%（同次泌乳期或下次懷孕）。嚴重且延遲治療者可因持續性高體溫（>42°C）導致腦損傷或多器官衰竭而預後不良。已發生
+  eclampsia 的母犬未來懷孕復發風險高，建議預防性管理或考慮絕育。
 guidelineRefs:
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Puerperal tetany in the bitch: a retrospective study of 26 cases"
+    title: 'Puerperal tetany in the bitch: a retrospective study of 26 cases'
     url: https://pubmed.ncbi.nlm.nih.gov/9564386/
     type: research
-    pmid: "9564386"
+    pmid: '9564386'
   - sourceOrg: Veterinary Clinics of North America Small Animal Practice
     title: Emergency management of the small animal obstetric patient
     url: https://pubmed.ncbi.nlm.nih.gov/22381180/
     type: review
-    pmid: "22381180"
+    pmid: '22381180'
   - sourceOrg: Topics in Companion Animal Medicine
     title: Periparturient diseases in the dam
     url: https://pubmed.ncbi.nlm.nih.gov/27968831/
     type: review
-    pmid: "27968831"
+    pmid: '27968831'
   - sourceOrg: Frontiers in endocrinology
-    title: "Expression of placental glycans and its role in regulating peripheral blood NK cells during preeclampsia: a perspective."
+    title: >-
+      Expression of placental glycans and its role in regulating peripheral blood NK cells during preeclampsia: a
+      perspective.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10190602/
     type: review
-    pmid: "37206444"
+    pmid: '37206444'
   - sourceOrg: Frontiers in immunology
-    title: "Regulatory T Cells in Pregnancy Adverse Outcomes: A Systematic Review and Meta-Analysis."
+    title: 'Regulatory T Cells in Pregnancy Adverse Outcomes: A Systematic Review and Meta-Analysis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8586555/
     type: review
-    pmid: "34777347"
+    pmid: '34777347'
     relevance: primary
 pubmedQueries:
   - query: '"eclampsia" OR "puerperal hypocalcemia" AND (dog OR canine) AND ("treatment" OR "calcium" OR "lactation")'
@@ -148,6 +156,67 @@ pubmedQueries:
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "END"
-  sectionTitle: "Puerperal Tetany: Puerperal tetany"
+  chapter: END
+  sectionTitle: 'Puerperal Tetany: Puerperal tetany'
   pdfPage: 612
+diagnosticAlgorithm:
+  title: 產褥癇 診斷流程
+  steps:
+    - step: 1
+      action: 臨床識別
+      details: 哺乳母犬出現震顫/抽搐
+      findings:
+        - 哺乳期1-4週
+        - 小型犬
+        - 肌肉震顫→抽搐
+    - step: 2
+      action: 急診血液檢查
+      details: 確認低血鈣
+      findings:
+        - 總鈣<7 mg/dL
+        - 離子鈣降低
+        - 血糖正常或低
+    - step: 3
+      action: 緊急治療
+      details: IV鈣劑+心電圖監測
+      findings:
+        - 治療性診斷：IV鈣後快速改善
+        - 體溫監測
+    - step: 4
+      action: 後續管理
+      details: 離乳+口服鈣補充
+      findings:
+        - 幼仔管理
+        - 口服鈣劑量調整
+        - 復發預防
+clinicalPearls:
+  - 產後1-4週哺乳小型犬出現震顫→高度懷疑產褥癇
+  - 妊娠期過度補鈣反而增加產褥癇風險
+  - IV鈣劑必須緩慢給予並監測心電圖
+  - 嚴重者需立即離乳，後續可逐漸恢復部分哺乳
+monitoringItems:
+  - 血清鈣濃度追蹤
+  - 體溫監測
+  - 幼仔營養狀況
+  - 母犬神經肌肉狀態
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: mydriasis
+    frequency: common
+associatedLabFindings:
+  - labId: calcium-low
+    frequency: common
+ddxSource: book

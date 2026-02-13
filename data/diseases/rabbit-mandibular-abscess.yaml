@@ -3,16 +3,15 @@ nameEn: Rabbit Mandibular Abscess
 nameZh: 兔下顎膿瘍
 bodySystem: infectious
 description: 兔下顎骨區域因臼齒齒根感染蔓延形成的膿瘍，為兔牙科疾病最嚴重的併發症之一。下顎膿瘍治療困難且復發率高，常需多次手術。
-
 aliases:
-  - { alias: "兔下顎膿瘍", language: zh }
-  - { alias: "Rabbit Mandibular Abscess", language: en }
-
+  - alias: 兔下顎膿瘍
+    language: zh
+  - alias: Rabbit Mandibular Abscess
+    language: en
 species:
   - speciesCommon: rabbit
     prevalence: uncommon
     notes: 兔可受此疾病影響。
-
 etiology:
   categories:
     - name: 齒源性
@@ -20,7 +19,6 @@ etiology:
         - 臼齒齒根感染向骨骼蔓延
         - 齒根膿瘍穿透顎骨
         - 骨髓炎繼發
-
 clinicalSigns:
   early:
     - 下顎區腫脹
@@ -31,14 +29,12 @@ clinicalSigns:
     - 皮膚穿孔排膿
     - 消瘦
     - 骨骼變形
-
 diagnosis:
   primaryTests:
     - name: 顱骨 X 光/CT
       notes: CT 為最佳評估工具。可見齒根延長、骨溶解及膿瘍腔。
     - name: 細菌培養
       notes: 指導抗生素選擇。Pasteurella、厭氧菌常見。
-
 treatment:
   principles:
     - 外科清創 + 拔除病齒
@@ -50,35 +46,75 @@ treatment:
     - 膿瘍腔填塞含抗生素的骨水泥（AIPMMA beads）
     - 全身性抗生素 6-12 週
     - 定期追蹤 X 光/CT
-
 prognosis: 下顎膿瘍治療困難，復發率 50-70%。常需多次手術。完全根治罕見但長期控制可能。飼主需了解長期治療與費用的承諾。
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Orofacial masses in domestic rabbits: a retrospective review of 120 cases from 2 institutions, 2000-2023."
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: 'Orofacial masses in domestic rabbits: a retrospective review of 120 cases from 2 institutions, 2000-2023.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11462579/
     type: review
-    pmid: "38389410"
+    pmid: '38389410'
     relevance: primary
   - sourceOrg: Materials today. Bio
-    title: Bilateral double site (calvarial and mandibular) critical-size bone defect model in rabbits for evaluation of a craniofacial tissue engineering constructs.
+    title: >-
+      Bilateral double site (calvarial and mandibular) critical-size bone defect model in rabbits for evaluation of a
+      craniofacial tissue engineering constructs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9061786/
     type: research
-    pmid: "35514436"
+    pmid: '35514436'
     relevance: supporting
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Computed Tomographic Findings of Dental Disease and Secondary Diseases of the Head Area in Client-Owned Domestic Rabbits (Oryctolagus cuniculus): 90 Cases."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Computed Tomographic Findings of Dental Disease and Secondary Diseases of the Head Area in Client-Owned Domestic
+      Rabbits (Oryctolagus cuniculus): 90 Cases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11047664/
     type: research
-    pmid: "38672307"
+    pmid: '38672307'
     relevance: supporting
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Diagnosis and outcome of odontogenic abscesses in client-owned rabbits (Oryctolagus cuniculus): 72 cases (2011-2022)."
+    title: >-
+      Diagnosis and outcome of odontogenic abscesses in client-owned rabbits (Oryctolagus cuniculus): 72 cases
+      (2011-2022).
     url: https://pubmed.ncbi.nlm.nih.gov/38467111/
     type: research
-    pmid: "38467111"
+    pmid: '38467111'
     relevance: supporting
 pubmedQueries:
   - query: '"Rabbit Mandibular Abscess" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dysphagia
+    frequency: common
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔下顎膿瘍 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dysphagia 相關症狀
+        - weight-loss 相關症狀
+        - ptyalism 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 顱骨 X 光/CT
+          notes: CT 為最佳評估工具。可見齒根延長、骨溶解及膿瘍腔。
+        - name: 細菌培養
+          notes: 指導抗生素選擇。Pasteurella、厭氧菌常見。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 外科清創 + 拔除病齒
+        - 長期抗生素
+        - 反覆手術可能需要
+ddxSource: auto-generated

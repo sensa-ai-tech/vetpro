@@ -3,11 +3,11 @@ nameEn: Endometritis
 nameZh: 子宮內膜炎
 bodySystem: reproductive
 description: 子宮內膜細菌感染及炎症，可為急性或慢性。常見於產後、配種後或子宮頸開放期。可能影響生育能力。
-
 aliases:
-  - { alias: 子宮炎, language: zh }
-  - { alias: Metritis, language: en }
-
+  - alias: 子宮炎
+    language: zh
+  - alias: Metritis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少見
-
 etiology:
   categories:
     - name: 產後感染
@@ -33,7 +32,6 @@ etiology:
       examples:
         - 子宮頸開放期上行感染
         - 免疫功能低下
-
 clinicalSigns:
   early:
     - 陰道分泌物（膿性、血性或褐色）
@@ -44,23 +42,21 @@ clinicalSigns:
     - 脫水
     - 敗血症（急性產後子宮炎）
     - 不孕或反覆流產（慢性）
-
 diagnosis:
   primaryTests:
     - name: 陰道檢查
-      notes: "膿性分泌物、子宮頸開放"
+      notes: 膿性分泌物、子宮頸開放
     - name: 陰道分泌物細菌培養
-      notes: "E. coli、Streptococcus等"
+      notes: E. coli、Streptococcus等
     - name: 腹部超音波
-      notes: "子宮壁增厚、內容物蓄積"
+      notes: 子宮壁增厚、內容物蓄積
     - name: 全血球計數
-      notes: "白血球增多、中性球左移"
+      notes: 白血球增多、中性球左移
   differentialDiagnoses:
     - 子宮蓄膿
     - 陰道炎
     - 產後正常惡露
     - 流產
-
 treatment:
   medical:
     - 廣效抗生素：amoxicillin-clavulanate 20 mg/kg PO q12h 至少14天
@@ -69,40 +65,72 @@ treatment:
     - 支持療法：IV輸液、止吐
     - 嚴重或慢性：卵巢子宮切除術
     - 保留繁殖：積極抗生素治療
-
 prognosis:
-  general: "急性感染早期治療預後佳。慢性子宮內膜炎可能影響生育。嚴重產後子宮炎可能致命。"
-
+  general: 急性感染早期治療預後佳。慢性子宮內膜炎可能影響生育。嚴重產後子宮炎可能致命。
 prevention:
   - 產後監測（體溫、分泌物）
   - 配種及人工授精無菌操作
   - 胎盤滯留早期處理
   - 產後子宮收縮劑（催產素）
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Current Insights in the Repeat Breeder Cow Syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10340006/
     type: review
-    pmid: "37443985"
-  - sourceOrg: "Reproductive biology and endocrinology : RB&amp;E"
-    title: "Uterus didelphys: the first case report on molecular profiling of endometrial tissue from both uterine cavities."
+    pmid: '37443985'
+  - sourceOrg: 'Reproductive biology and endocrinology : RB&amp;E'
+    title: 'Uterus didelphys: the first case report on molecular profiling of endometrial tissue from both uterine cavities.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11699791/
     type: case-report
-    pmid: "39755646"
+    pmid: '39755646'
   - sourceOrg: Veterinary research
-    title: Development of a novel chimeric lysin to combine parental phage lysin and cefquinome for preventing sow endometritis after artificial insemination.
+    title: >-
+      Development of a novel chimeric lysin to combine parental phage lysin and cefquinome for preventing sow
+      endometritis after artificial insemination.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11816537/
     type: research
-    pmid: "39934866"
+    pmid: '39934866'
   - sourceOrg: BMC veterinary research
     title: Changes in fecal microbiota of dairy cows with and without endometritis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11934761/
     type: research
-    pmid: "40128871"
+    pmid: '40128871'
   - sourceOrg: Veterinary research
-    title: "GSK3&#x3b2;-mediated NRF2 degradation drives Escherichia coli-induced ferroptosis in the bovine endometrium."
+    title: GSK3&#x3b2;-mediated NRF2 degradation drives Escherichia coli-induced ferroptosis in the bovine endometrium.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12715911/
     type: research
-    pmid: "41413615"
+    pmid: '41413615'
+associatedSymptoms:
+  - symptomId: vaginal-discharge
+    frequency: common
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 子宮內膜炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - vaginal-discharge 相關症狀
+        - anorexia 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 陰道檢查
+          notes: 膿性分泌物、子宮頸開放
+        - name: 陰道分泌物細菌培養
+          notes: E. coli、Streptococcus等
+        - name: 腹部超音波
+          notes: 子宮壁增厚、內容物蓄積
+ddxSource: auto-generated

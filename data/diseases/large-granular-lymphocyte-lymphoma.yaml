@@ -3,11 +3,11 @@ nameEn: Large Granular Lymphocyte Lymphoma
 nameZh: 大顆粒淋巴球淋巴瘤
 bodySystem: oncology
 description: 一種特殊亞型的 T 細胞/NK 細胞淋巴瘤，腫瘤細胞含有嗜天青顆粒。常累及消化道與腹腔器官。預後較差，對傳統化療反應率低。
-
 aliases:
-  - { alias: "LGL Lymphoma", language: en }
-  - { alias: "大顆粒淋巴瘤", language: zh }
-
+  - alias: LGL Lymphoma
+    language: en
+  - alias: 大顆粒淋巴瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 腫瘤性
@@ -23,7 +22,6 @@ etiology:
         - T 細胞或 NK 細胞惡性增生
         - 含嗜天青顆粒
         - 高度惡性
-
 clinicalSigns:
   early:
     - 嘔吐
@@ -34,14 +32,12 @@ clinicalSigns:
     - 腹部腫塊
     - 貧血
     - 播散性疾病
-
 diagnosis:
   primaryTests:
     - name: 細胞學
       notes: 大型淋巴球含嗜天青顆粒
     - name: 免疫表型分析
       notes: CD3+（T 細胞）或 CD56+（NK 細胞）
-
 treatment:
   principles:
     - 化療反應率低
@@ -51,16 +47,49 @@ treatment:
     - Lomustine 可考慮
     - 支持性照護
     - 營養支持
-
 prognosis: 預後不良。中位存活通常 < 3 個月。對化療反應差。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary and comparative oncology
-    title: "Feline large granular lymphocyte lymphoma: An Italian Society of Veterinary Oncology (SIONCOV) retrospective study."
+    title: >-
+      Feline large granular lymphocyte lymphoma: An Italian Society of Veterinary Oncology (SIONCOV) retrospective
+      study.
     url: https://pubmed.ncbi.nlm.nih.gov/28556532/
     type: research
-    pmid: "28556532"
+    pmid: '28556532'
 pubmedQueries:
   - query: '"large granular lymphocyte lymphoma" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 大顆粒淋巴球淋巴瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - vomiting 相關症狀
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 細胞學
+          notes: 大型淋巴球含嗜天青顆粒
+        - name: 免疫表型分析
+          notes: CD3+（T 細胞）或 CD56+（NK 細胞）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 化療反應率低
+        - 支持性照護重要
+ddxSource: auto-generated

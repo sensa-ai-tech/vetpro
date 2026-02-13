@@ -3,14 +3,17 @@ nameEn: Cuterebra
 nameZh: 膚蠅幼蟲感染
 bodySystem: infectious
 description: 膚蠅幼蟲感染 (cuterebriasis) 由 Cuterebra 屬蠅類幼蟲引起的皮下寄生蟲病。自然宿主為嚙齒類與兔，犬貓為偶然宿主。幼蟲在皮下形成含呼吸孔的腫包。貓偶見幼蟲異位移行至腦部引起致命性神經症狀。
-
 aliases:
-  - { alias: 膚蠅蛆病, language: zh }
-  - { alias: 皮膚蠅感染, language: zh }
-  - { alias: Cuterebriasis, language: en }
-  - { alias: Warble Fly Larva, language: en }
-  - { alias: Bot Fly Infection, language: en }
-
+  - alias: 膚蠅蛆病
+    language: zh
+  - alias: 皮膚蠅感染
+    language: zh
+  - alias: Cuterebriasis
+    language: en
+  - alias: Warble Fly Larva
+    language: en
+  - alias: Bot Fly Infection
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -18,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓膚蠅感染較犬更受關注，因幼蟲可能異位移行至腦部引起致命性腦膜腦炎。戶外貓夏秋季風險最高。
-
 etiology:
   categories:
     - name: 生活史
@@ -30,10 +32,9 @@ etiology:
     - name: 異位移行
       examples:
         - 幼蟲可能偏離正常路徑移行至異常部位
-        - "貓：腦部移行引起腦膜腦炎"
+        - 貓：腦部移行引起腦膜腦炎
         - 眼眶移行
         - 咽喉/上呼吸道移行
-
 clinicalSigns:
   early:
     - 皮膚腫包伴中央呼吸孔
@@ -44,7 +45,6 @@ clinicalSigns:
     - 繼發感染（細菌性膿瘍）
     - 異位腦移行：急性神經症狀（癲癇、共濟失調、盲目、昏迷）
     - 眼眶型：眼球突出、結膜炎
-
 diagnosis:
   primaryTests:
     - name: 臨床檢查
@@ -54,7 +54,6 @@ diagnosis:
   additional:
     - 幼蟲鑑定（取出後依形態學鑑定種別）
     - CSF 分析（腦移行：嗜酸球增多）
-
 treatment:
   principles:
     - 完整取出幼蟲為首選
@@ -68,26 +67,62 @@ treatment:
     - 腦移行：corticosteroid 減輕腦水腫 + 抗癲癇藥物
     - 腦移行幼蟲無法手術取出，以支持療法為主
     - Ivermectin 可能有助於殺死移行幼蟲（證據有限）
-
 prognosis: 皮下型膚蠅感染完整取出幼蟲後預後極佳。腦移行型預後差至不良，多數貓出現永久性神經後遺症或死亡。早期 corticosteroid 治療可能改善部分腦移行病例。
-
-
 guidelineRefs:
-  - sourceOrg: "Parasites &amp; vectors"
-    title: "Myiasis in domestic cats: a global review."
+  - sourceOrg: Parasites &amp; vectors
+    title: 'Myiasis in domestic cats: a global review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6664729/
     type: review
-    pmid: "31358036"
+    pmid: '31358036'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline ophthalmomyiasis externa caused by Cuterebra larvae: four cases (2005-2020)."
+    title: 'Feline ophthalmomyiasis externa caused by Cuterebra larvae: four cases (2005-2020).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812180/
     type: case-report
-    pmid: "33988048"
+    pmid: '33988048'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Systemic manifestations of Cuterebra infection in dogs and cats: 42 cases (2000-2014)."
+    title: 'Systemic manifestations of Cuterebra infection in dogs and cats: 42 cases (2000-2014).'
     url: https://pubmed.ncbi.nlm.nih.gov/29190191/
     type: research
-    pmid: "29190191"
+    pmid: '29190191'
 pubmedQueries:
   - query: '"Cuterebra" AND (veterinary OR canine OR feline) AND ("treatment" OR "aberrant migration")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 膚蠅幼蟲感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - seizures 相關症狀
+        - coma-stupor 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床檢查
+          notes: 皮下腫包伴中央呼吸孔為典型表現。呼吸孔可見幼蟲運動。夏秋季節性
+        - name: MRI（異位腦移行）
+          notes: 貓疑似腦移行時必要。可見腦實質內移行軌跡與腫脹
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 幼蟲鑑定（取出後依形態學鑑定種別）
+        - CSF 分析（腦移行：嗜酸球增多）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 完整取出幼蟲為首選
+        - 不可壓碎幼蟲（避免過敏反應）
+        - 腦移行需抗發炎治療
+ddxSource: auto-generated

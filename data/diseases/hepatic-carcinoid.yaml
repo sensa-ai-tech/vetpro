@@ -3,13 +3,15 @@ nameEn: Hepatic Carcinoid
 nameZh: 肝臟類癌
 bodySystem: oncology
 description: 肝臟類癌是一種罕見的神經內分泌腫瘤，起源於肝臟內的神經內分泌細胞。該腫瘤惡性度高，確診時常已發生轉移，預後不良。
-
 aliases:
-  - { alias: 肝神經內分泌瘤, language: zh }
-  - { alias: 肝臟類癌腫瘤, language: zh }
-  - { alias: Hepatic Neuroendocrine Tumor, language: en }
-  - { alias: Liver Carcinoid, language: en }
-
+  - alias: 肝神經內分泌瘤
+    language: zh
+  - alias: 肝臟類癌腫瘤
+    language: zh
+  - alias: Hepatic Neuroendocrine Tumor
+    language: en
+  - alias: Liver Carcinoid
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓肝臟類癌更為罕見，文獻報告極少。臨床表現與犬相似。
-
 etiology:
   categories:
     - name: 腫瘤來源
@@ -32,7 +33,6 @@ etiology:
         - 免疫組織化學染色 chromogranin A 和 synaptophysin 陽性
         - 高度浸潤性生長模式
         - 常見肝內與遠端轉移
-
 clinicalSigns:
   early:
     - 非特異性消化道症狀
@@ -45,19 +45,17 @@ clinicalSigns:
     - 黃疸
     - 肝腫大可觸及
     - 腹水
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "可見肝臟多發性結節或大型腫塊，常伴有肝內擴散。評估腹腔淋巴結及其他臟器轉移。"
+      notes: 可見肝臟多發性結節或大型腫塊，常伴有肝內擴散。評估腹腔淋巴結及其他臟器轉移。
     - name: 肝臟組織活檢
-      notes: "確診需組織病理學，免疫組化染色 chromogranin A、synaptophysin 陽性可確認神經內分泌分化。"
+      notes: 確診需組織病理學，免疫組化染色 chromogranin A、synaptophysin 陽性可確認神經內分泌分化。
   differentialDiagnoses:
     - 肝細胞癌 (Hepatocellular Carcinoma)
     - 膽管細胞癌 (Cholangiocarcinoma)
     - 肝臟轉移性腫瘤
     - 肝臟血管肉瘤 (Hemangiosarcoma)
-
 treatment:
   medical:
     - 化學治療效果有限，可嘗試 doxorubicin 為基礎的化療方案
@@ -65,10 +63,42 @@ treatment:
   surgical:
     - 單一肝葉腫瘤可考慮肝葉切除術
     - 多發性或已轉移者手術預後極差
-
 prognosis:
-  general: "預後不良。多數病例確診時已有肝內廣泛擴散或遠端轉移。手術可切除的單一腫塊預後較佳，但仍需密切追蹤復發。中位存活時間文獻資料有限。"
-
+  general: 預後不良。多數病例確診時已有肝內廣泛擴散或遠端轉移。手術可切除的單一腫塊預後較佳，但仍需密切追蹤復發。中位存活時間文獻資料有限。
 prevention:
   - 無已知有效預防措施
   - 老年犬定期腹部超音波檢查有助於早期發現
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: abdominal-distension
+    frequency: common
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肝臟類癌 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - abdominal-distension 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 可見肝臟多發性結節或大型腫塊，常伴有肝內擴散。評估腹腔淋巴結及其他臟器轉移。
+        - name: 肝臟組織活檢
+          notes: 確診需組織病理學，免疫組化染色 chromogranin A、synaptophysin 陽性可確認神經內分泌分化。
+ddxSource: auto-generated

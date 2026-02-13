@@ -3,13 +3,15 @@ nameEn: Plague
 nameZh: 鼠疫
 bodySystem: infectious
 description: 鼠疫由耶爾辛氏鼠疫桿菌 (Yersinia pestis) 引起，經跳蚤叮咬或接觸感染動物傳播。貓對鼠疫高度易感，可表現為腺鼠疫、敗血鼠疫或肺鼠疫。犬感染通常較輕。此為重要人畜共通傳染病，獸醫人員需特別注意職業暴露風險。
-
 aliases:
-  - { alias: 黑死病, language: zh }
-  - { alias: 耶氏鼠疫桿菌感染, language: zh }
-  - { alias: Yersinia pestis Infection, language: en }
-  - { alias: Bubonic Plague, language: en }
-
+  - alias: 黑死病
+    language: zh
+  - alias: 耶氏鼠疫桿菌感染
+    language: zh
+  - alias: Yersinia pestis Infection
+    language: en
+  - alias: Bubonic Plague
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓對鼠疫高度易感，病死率可達 50% 以上。獵捕嚙齒類為主要感染途徑。肺鼠疫型貓可直接經飛沫傳播給人類，為重要公衛風險。
-
 etiology:
   categories:
     - name: 病原與傳播
@@ -31,7 +32,6 @@ etiology:
         - 腺鼠疫 (bubonic) — 最常見，區域淋巴結腫大
         - 敗血鼠疫 (septicemic) — 菌血症為主
         - 肺鼠疫 (pneumonic) — 最危險，可人畜傳播
-
 clinicalSigns:
   early:
     - 高燒
@@ -46,7 +46,6 @@ clinicalSigns:
     - 咳嗽、血痰
     - DIC、多器官衰竭
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 淋巴結抽吸物/膿液培養
@@ -58,7 +57,6 @@ diagnosis:
     - 胸腔 X-ray（肺鼠疫）
     - 血清學（F1 抗體）
     - CBC 與生化
-
 treatment:
   principles:
     - 立即啟動抗生素治療
@@ -66,7 +64,7 @@ treatment:
     - 通報公衛機關
     - 保護醫療人員安全
   general:
-    - "Gentamicin 2 mg/kg IV/IM q8h（首選殺菌劑）"
+    - Gentamicin 2 mg/kg IV/IM q8h（首選殺菌劑）
     - 替代：doxycycline 5 mg/kg PO/IV BID
     - 治療至少 21 天
     - IV 輸液支持
@@ -74,36 +72,89 @@ treatment:
     - 肺鼠疫需呼吸道隔離
     - 立即通報當地公衛機關
     - 跳蚤控制（患畜與環境）
-
 prognosis: 貓鼠疫未治療病死率 >50%。早期抗生素治療可顯著改善預後。腺鼠疫治療後預後較佳。肺鼠疫與敗血鼠疫即使治療預後仍謹慎。犬感染通常自限性。
-
-
 guidelineRefs:
   - sourceOrg: Virulence
     title: Pathogenicity and virulence of Yersinia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10896167/
     type: review
-    pmid: "38389313"
+    pmid: '38389313'
   - sourceOrg: Epidemiology and health
-    title: "The prevalence of Q fever in the Eastern Mediterranean region: a systematic review and meta-analysis."
+    title: 'The prevalence of Q fever in the Eastern Mediterranean region: a systematic review and meta-analysis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10396516/
     type: review
-    pmid: "36317399"
+    pmid: '36317399'
   - sourceOrg: PLoS neglected tropical diseases
     title: Towards harmonisation of entomological surveillance in the Mediterranean area.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6563966/
     type: review
-    pmid: "31194743"
+    pmid: '31194743'
   - sourceOrg: PLoS neglected tropical diseases
     title: Seroprevalence of Q fever among human and animal in Iran; A systematic review and meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5398711/
     type: review
-    pmid: "28394889"
+    pmid: '28394889'
   - sourceOrg: BMC infectious diseases
-    title: "Climatic variations and Yersinia pestis host-vector abundance: a case study in Ankazobe district to understand plague epidemiology in Madagascar."
+    title: >-
+      Climatic variations and Yersinia pestis host-vector abundance: a case study in Ankazobe district to understand
+      plague epidemiology in Madagascar.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11995555/
     type: research
-    pmid: "40229690"
+    pmid: '40229690'
 pubmedQueries:
   - query: '"plague" AND "Yersinia pestis" AND (veterinary OR feline OR canine) AND ("treatment" OR "zoonosis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 鼠疫 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估急性發熱、淋巴結腫大和全身敗血症表現，詢問嚙齒類動物接觸史及流行地區居住史
+      findings:
+        - 急性高熱與精神沉鬱
+        - 下頜或頸部淋巴結顯著腫大（腺鼠疫型）
+        - 呼吸困難（肺鼠疫型）
+    - step: 2
+      action: 實驗室與病原學檢查
+      details: 進行CBC、淋巴結抽吸物革蘭氏染色及培養，注意安全等級要求
+      findings:
+        - 淋巴結抽吸物發現雙極染色桿菌
+        - 白血球增多伴核左移
+        - 血培養Yersinia pestis陽性
+    - step: 3
+      action: 確診與通報
+      details: PCR確認病原，此為法定通報傳染病，須立即通報相關單位
+      findings:
+        - PCR確認鼠疫桿菌
+        - 為法定通報傳染病需立即通報
+clinicalPearls:
+  - 鼠疫是法定報告傳染病——確診或高度懷疑時必須通報公共衛生機關
+  - 貓的肺型鼠疫可經飛沫傳播給人——嚴重的公共衛生風險
+  - 犬的主要風險不是犬本身發病，而是將帶菌跳蚤帶入家庭
+  - 革蘭氏染色的雙極染色桿菌（safety pin appearance）是Y. pestis的特徵
+  - 處理疑似鼠疫動物時需嚴格防護措施
+monitoringItems:
+  - 體溫和臨床反應（應在24-48小時內改善）
+  - 隔離措施直至完成治療
+  - 接觸者（人和動物）的監測
+  - 跳蚤控制效果評估
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+ddxSource: book

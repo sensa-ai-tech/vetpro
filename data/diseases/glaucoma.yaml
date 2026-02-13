@@ -3,12 +3,13 @@ nameEn: Glaucoma
 nameZh: 青光眼
 bodySystem: ophthalmology
 description: 眼內壓 (IOP) 異常升高導致視網膜神經節細胞與視神經損傷的疾病，為犬不可逆失明的主要原因之一。
-
 aliases:
-  - { alias: Canine Glaucoma, language: en }
-  - { alias: Feline Glaucoma, language: en }
-  - { alias: 綠內障, language: zh }
-
+  - alias: Canine Glaucoma
+    language: en
+  - alias: Feline Glaucoma
+    language: en
+  - alias: 綠內障
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓多為繼發性 (前葡萄膜炎、眼內腫瘤)。原發性青光眼罕見 (Burmese、Siamese 報告)。
-
 etiology:
   categories:
     - name: 原發性 (犬)
@@ -39,7 +39,6 @@ etiology:
         - 壓力損傷視網膜神經節細胞與軸突
         - 視神經頭缺血
         - 不可逆的視神經萎縮
-
 clinicalSigns:
   early:
     - 眼壓升高 (IOP >25 mmHg)
@@ -57,26 +56,24 @@ clinicalSigns:
     - 視網膜退化
     - 完全且不可逆失明
     - 視神經萎縮 (視乳頭凹陷 cupping)
-
 diagnosis:
   primaryTests:
     - name: 眼壓測量 (Tonometry)
-      notes: "金標準。正常犬貓 IOP 10-25 mmHg。>25 mmHg 高度懷疑；>30 mmHg 需緊急處理。使用 Tono-Pen 或 TonoVet"
+      notes: 金標準。正常犬貓 IOP 10-25 mmHg。>25 mmHg 高度懷疑；>30 mmHg 需緊急處理。使用 Tono-Pen 或 TonoVet
     - name: 隅角鏡檢 (Gonioscopy)
-      notes: "評估隅角開放度。對側眼隅角評估可預測風險。Pectinate ligament dysplasia 為 PACG 標誌"
+      notes: 評估隅角開放度。對側眼隅角評估可預測風險。Pectinate ligament dysplasia 為 PACG 標誌
     - name: 眼底檢查
-      notes: "評估視乳頭凹陷 (cupping)、視網膜退化"
+      notes: 評估視乳頭凹陷 (cupping)、視網膜退化
   imaging:
     - name: 眼部超音波
-      notes: "評估水晶體位置、眼內腫瘤、視網膜剝離"
+      notes: 評估水晶體位置、眼內腫瘤、視網膜剝離
     - name: 高解析度超音波生物顯微鏡 (UBM)
-      notes: "詳細評估前房角結構"
+      notes: 詳細評估前房角結構
   additional:
     - PLR (瞳孔光反射) 與 dazzle reflex
     - 視網膜電圖 (ERG，評估視網膜功能)
     - 對側眼隅角評估 (預防性評估)
     - 前葡萄膜炎原因排查 (感染性、腫瘤性)
-
 treatment:
   principles:
     - 急性青光眼為眼科急症，需立即降壓
@@ -85,16 +82,16 @@ treatment:
     - 對側眼預防性治療
   medications:
     - name: Latanoprost (0.005%)
-      dose: "1 滴 Q12H"
+      dose: 1 滴 Q12H
       notes: 前列腺素類似物。急性發作急救用藥 (15-30 分鐘內可降壓)。PACG 首選。開放隅角型青光眼與繼發性可能無效
     - name: Dorzolamide (2%)
-      dose: "1 滴 Q8H"
+      dose: 1 滴 Q8H
       notes: 碳酸酐酶抑制劑。降低房水生成。可長期使用
     - name: Timolol (0.5%)
-      dose: "1 滴 Q12H"
+      dose: 1 滴 Q12H
       notes: 非選擇性 beta-blocker。常與 dorzolamide 合併 (Cosopt)
     - name: Mannitol (急救)
-      dose: "1-2 g/kg IV 緩慢滴注 (20 分鐘)"
+      dose: 1-2 g/kg IV 緩慢滴注 (20 分鐘)
       notes: 急性青光眼急救用。滲透性利尿劑快速降低 IOP。注意心腎功能
   general:
     - 急性青光眼急救：Latanoprost 點眼 + Mannitol IV + 全身 CAI
@@ -102,17 +99,13 @@ treatment:
     - 失明且疼痛的眼球：眼球摘除 (enucleation) 或 intrascleral prosthesis
     - 對側眼預防：Latanoprost 或 demecarium bromide 預防性點眼
     - 定期眼壓追蹤
-
 emergencyNotes: 急性青光眼 (IOP >40 mmHg) 為眼科急症，每小時延遲都增加永久視力喪失風險。立即 latanoprost 0.005% 點眼 + mannitol 1-2 g/kg IV。30 分鐘後評估反應。轉介眼科專科。
-
 prognosis: 原發性青光眼長期預後差，多數犬最終失明 (中位時間約 8-12 個月)。對側眼 50% 在 8 個月內發病。繼發性青光眼取決於根本原因。早期積極治療可延長有用視力時間。
-
 ontologyMappings:
   - source: MONDO
-    code: "MONDO:0005657"
+    code: MONDO:0005657
     label: glaucoma
     confidence: exact
-
 guidelineRefs:
   - sourceOrg: ACVO
     title: ACVO Genetics Committee — Ocular Disorders Presumed to be Inherited in Purebred Dogs
@@ -122,30 +115,88 @@ guidelineRefs:
     title: The future of canine glaucoma therapy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6744300/
     type: review
-    pmid: "31106969"
-  - sourceOrg: "Investigative ophthalmology &amp; visual science"
-    title: Consensus Recommendations for Studies of Outflow Facility and Intraocular Pressure Regulation Using Ex Vivo Perfusion Approaches.
+    pmid: '31106969'
+  - sourceOrg: Investigative ophthalmology &amp; visual science
+    title: >-
+      Consensus Recommendations for Studies of Outflow Facility and Intraocular Pressure Regulation Using Ex Vivo
+      Perfusion Approaches.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11708870/
     type: consensus
-    pmid: "39693082"
+    pmid: '39693082'
     relevance: primary
   - sourceOrg: Clinical microbiology reviews
-    title: "Viral infections and pathogenesis of glaucoma: a comprehensive review."
+    title: 'Viral infections and pathogenesis of glaucoma: a comprehensive review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10870729/
     type: review
-    pmid: "37966199"
+    pmid: '37966199'
     relevance: primary
   - sourceOrg: Biomedicines
-    title: "Bridging Retinal and Cerebral Neurodegeneration: A Focus on Crosslinks between Alzheimer-Perusini's Disease and Retinal Dystrophies."
+    title: >-
+      Bridging Retinal and Cerebral Neurodegeneration: A Focus on Crosslinks between Alzheimer-Perusini's Disease and
+      Retinal Dystrophies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10741418/
     type: review
-    pmid: "38137479"
+    pmid: '38137479'
     relevance: primary
 pubmedQueries:
   - query: '"glaucoma" AND (dog OR canine) AND ("treatment" OR "surgery" OR "consensus")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "EE"
-  sectionTitle: "GLAUCOMA"
+  chapter: EE
+  sectionTitle: GLAUCOMA
   pdfPage: 538
+diagnosticAlgorithm:
+  title: 青光眼 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估眼部疼痛、視力及眼球外觀
+      findings:
+        - 眼紅充血
+        - 角膜水腫（藍灰色）
+        - 瞳孔擴大固定
+        - 眼球腫大（慢性）
+    - step: 2
+      action: 眼壓測量
+      details: Tonopen或Tonovet眼壓計
+      findings:
+        - 眼壓>25 mmHg（犬）
+        - 眼壓>30 mmHg（貓）
+        - 雙眼眼壓比較
+        - 需緊急處理
+    - step: 3
+      action: 眼底與前房角檢查
+      details: 眼底鏡及隅角鏡檢查
+      findings:
+        - 視神經盤杯盤比增大
+        - 視網膜血管變化
+        - 隅角開放或關閉
+        - 晶體脫位評估
+    - step: 4
+      action: 鑑別原發與繼發
+      details: 區分原發性與繼發性青光眼
+      findings:
+        - 品種好發性（原發性）
+        - 葡萄膜炎繼發
+        - 晶體脫位繼發
+        - 眼內腫瘤繼發
+clinicalPearls:
+  - 急性青光眼是眼科急症
+  - 眼壓>30 mmHg 24-48小時可致永久失明
+  - 原發性青光眼對側眼50%會發病
+  - 與葡萄膜炎區分很重要（治療不同）
+monitoringItems:
+  - 眼壓
+  - 視力
+  - 對側眼
+associatedSymptoms:
+  - symptomId: blindness
+    frequency: common
+  - symptomId: red-eye
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: common
+  - symptomId: mydriasis
+    frequency: common
+ddxSource: book

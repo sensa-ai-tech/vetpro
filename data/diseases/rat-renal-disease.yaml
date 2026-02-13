@@ -3,19 +3,21 @@ nameEn: Rat Renal Disease
 nameZh: 大鼠腎臟疾病
 bodySystem: urinary
 description: 大鼠腎臟疾病是老年大鼠極為常見的退行性疾病，以慢性進行性腎病（Chronic Progressive Nephropathy, CPN）為主要表現。雄性大鼠發病率與嚴重程度顯著高於雌性，高蛋白飲食為重要惡化因子。
-
 aliases:
-  - { alias: 大鼠慢性腎病, language: zh }
-  - { alias: 大鼠慢性進行性腎病, language: zh }
-  - { alias: Rat chronic progressive nephropathy, language: en }
-  - { alias: Rat CPN, language: en }
-  - { alias: Old rat kidney disease, language: en }
-
+  - alias: 大鼠慢性腎病
+    language: zh
+  - alias: 大鼠慢性進行性腎病
+    language: zh
+  - alias: Rat chronic progressive nephropathy
+    language: en
+  - alias: Rat CPN
+    language: en
+  - alias: Old rat kidney disease
+    language: en
 species:
   - speciesCommon: rat
     prevalence: common
     notes: 老年大鼠（>18 月齡）極為常見，尤其是雄性。幾乎所有老年雄鼠都有不同程度的腎臟病變。高蛋白飲食顯著加速疾病進展。
-
 etiology:
   categories:
     - name: 年齡相關退行性變化
@@ -33,7 +35,6 @@ etiology:
         - 雄性荷爾蒙（雄鼠發病率較高）
         - 遺傳易感性（品系差異）
         - 高血壓
-
 clinicalSigns:
   early:
     - 多飲多尿
@@ -47,7 +48,6 @@ clinicalSigns:
     - 嗜睡
     - 腹部膨大（腎腫大或腹水）
     - 口腔潰瘍（尿毒症）
-
 diagnosis:
   primaryTests:
     - name: 尿液分析
@@ -56,7 +56,6 @@ diagnosis:
       notes: BUN 與肌酐升高。磷升高。SDMA 可較早偵測腎功能下降
     - name: 腹部超音波
       notes: 評估腎臟大小、結構。晚期腎臟可能縮小或不規則
-
 treatment:
   principles:
     - 控制蛋白質攝取量
@@ -70,41 +69,89 @@ treatment:
     - 磷結合劑（高磷血症時）
     - 避免腎毒性藥物
     - 定期監測腎功能指標
-
 prognosis: 慢性進行性腎病為不可逆疾病。早期介入飲食管理可顯著延緩惡化。雄鼠預後較雌鼠差。已出現尿毒症狀者預後不良。適當管理可維持數月的生活品質，但最終多因腎衰竭影響生活品質。
-
-
 guidelineRefs:
   - sourceOrg: Journal of molecular medicine (Berlin, Germany)
-    title: "Dapagliflozin inhibits TGF-&#x3b2;-induced transdifferentiation of valvular interstitial cells and mitral valvular degeneration."
+    title: >-
+      Dapagliflozin inhibits TGF-&#x3b2;-induced transdifferentiation of valvular interstitial cells and mitral valvular
+      degeneration.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12702807/
     type: research
-    pmid: "41392217"
+    pmid: '41392217'
     relevance: supporting
-  - sourceOrg: "BMC pharmacology &amp; toxicology"
-    title: Gallic acid lessens kidney injury induced by inorganic arsenic and zinc oxide nanoparticles in rats via controlling electrolyte balance, oxidative stress, and Nrf-2 and HSP-90 expression.
+  - sourceOrg: BMC pharmacology &amp; toxicology
+    title: >-
+      Gallic acid lessens kidney injury induced by inorganic arsenic and zinc oxide nanoparticles in rats via
+      controlling electrolyte balance, oxidative stress, and Nrf-2 and HSP-90 expression.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12670756/
     type: research
-    pmid: "41318635"
+    pmid: '41318635'
     relevance: supporting
   - sourceOrg: Discover nano
     title: Histopathological and biochemical profiling of Carfilzomib-loaded Fe-Co MOFs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12350853/
     type: research
-    pmid: "40804566"
+    pmid: '40804566'
     relevance: supporting
   - sourceOrg: Scientific reports
-    title: The nephroprotective potential of russelioside B isolated from Caralluma quadrangula in gentamicin-induced acute kidney injury via modulation of SIRT-1 pathway.
+    title: >-
+      The nephroprotective potential of russelioside B isolated from Caralluma quadrangula in gentamicin-induced acute
+      kidney injury via modulation of SIRT-1 pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12705675/
     type: research
-    pmid: "41390524"
+    pmid: '41390524'
     relevance: supporting
   - sourceOrg: Scientific reports
-    title: A novel nanoparticle glutathione and Lepidium sativum treatment for gentamicin-induced acute renal failure in rats.
+    title: >-
+      A novel nanoparticle glutathione and Lepidium sativum treatment for gentamicin-induced acute renal failure in
+      rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12181309/
     type: research
-    pmid: "40542040"
+    pmid: '40542040'
     relevance: supporting
 pubmedQueries:
   - query: '"rat" AND ("chronic progressive nephropathy" OR "renal disease") AND ("treatment" OR "management")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 大鼠腎臟疾病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - abdominal-distension 相關症狀
+        - halitosis-stomatitis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 尿液分析
+          notes: 蛋白尿為早期指標。尿比重下降反映濃縮功能受損
+        - name: 血液生化
+          notes: BUN 與肌酐升高。磷升高。SDMA 可較早偵測腎功能下降
+        - name: 腹部超音波
+          notes: 評估腎臟大小、結構。晚期腎臟可能縮小或不規則
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 控制蛋白質攝取量
+        - 維持適當水分攝取
+        - 對症支持治療
+ddxSource: auto-generated

@@ -3,11 +3,11 @@ nameEn: Pelvic Fracture
 nameZh: 骨盆骨折
 bodySystem: orthopedic
 description: 骨盆骨的骨折，常因車禍等高能量創傷引起。骨盆為環狀結構，通常在多處同時斷裂。需評估骨盆腔狹窄程度（影響排便排尿）與合併的泌尿生殖道損傷。
-
 aliases:
-  - { alias: "Pelvic Ring Fracture", language: en }
-  - { alias: "骨盆環骨折", language: zh }
-
+  - alias: Pelvic Ring Fracture
+    language: en
+  - alias: 骨盆環骨折
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -15,14 +15,12 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓常見，車禍與高處墜落。
-
 etiology:
   categories:
     - name: 高能量外傷
       examples:
         - 車禍（最常見）
         - 高處墜落
-
 clinicalSigns:
   early:
     - 後肢不願行走
@@ -32,14 +30,12 @@ clinicalSigns:
     - 骨盆腔狹窄（影響排便）
     - 排尿困難
     - 髖關節功能障礙
-
 diagnosis:
   primaryTests:
     - name: 骨盆 X 光
       notes: 確認骨折位置與數目。評估骨盆腔狹窄
     - name: 尿道造影/超音波
       notes: 排除膀胱或尿道損傷（常見合併傷）
-
 treatment:
   principles:
     - 評估是否需手術
@@ -49,31 +45,60 @@ treatment:
     - 不穩定骨折或骨盆腔狹窄 > 50%：手術固定
     - 髖臼骨折需手術復位
     - 止痛管理
-
 prognosis: 保守治療穩定性骨折預後良好。手術固定不穩定骨折預後中等至良好。骨盆腔狹窄可能導致長期便秘。
-
-
 guidelineRefs:
   - sourceOrg: Cureus
-    title: "Compact Arterial Monitoring Device Use in Resuscitative Endovascular Balloon Occlusion of the Aorta (REBOA): A Simple Validation Study in Swine."
+    title: >-
+      Compact Arterial Monitoring Device Use in Resuscitative Endovascular Balloon Occlusion of the Aorta (REBOA): A
+      Simple Validation Study in Swine.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11531354/
     type: research
-    pmid: "39493181"
+    pmid: '39493181'
   - sourceOrg: Frontiers in bioengineering and biotechnology
-    title: Comparison of the therapeutic effects of human umbilical cord blood-derived mesenchymal stem cells and adipose-derived stem cells on erectile dysfunction in a rat model of bilateral cavernous nerve injury.
+    title: >-
+      Comparison of the therapeutic effects of human umbilical cord blood-derived mesenchymal stem cells and
+      adipose-derived stem cells on erectile dysfunction in a rat model of bilateral cavernous nerve injury.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9585154/
     type: research
-    pmid: "36277409"
+    pmid: '36277409'
   - sourceOrg: Frontiers in veterinary science
     title: Magnetic Resonance Imaging Findings in 13 Neurologic Pot-Bellied Pigs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7006440/
     type: research
-    pmid: "32076601"
-  - sourceOrg: "Veterinary journal (London, England : 1997)"
-    title: Retrospective evaluation of the diagnosis of acetabular fracture in cattle and the outcome after conservative treatment.
+    pmid: '32076601'
+  - sourceOrg: 'Veterinary journal (London, England : 1997)'
+    title: >-
+      Retrospective evaluation of the diagnosis of acetabular fracture in cattle and the outcome after conservative
+      treatment.
     url: https://pubmed.ncbi.nlm.nih.gov/40378945/
     type: research
-    pmid: "40378945"
+    pmid: '40378945'
 pubmedQueries:
   - query: '"pelvic fracture" AND (veterinary OR canine OR feline) AND ("fixation" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 骨盆骨折 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pollakiuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 骨盆 X 光
+          notes: 確認骨折位置與數目。評估骨盆腔狹窄
+        - name: 尿道造影/超音波
+          notes: 排除膀胱或尿道損傷（常見合併傷）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 評估是否需手術
+        - 保守治療適用於穩定性骨折
+ddxSource: auto-generated

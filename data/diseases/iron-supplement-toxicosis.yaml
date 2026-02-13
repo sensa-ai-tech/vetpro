@@ -3,11 +3,11 @@ nameEn: Iron Supplement Toxicosis
 nameZh: 鐵劑補充品中毒
 bodySystem: toxicology
 description: 鐵劑過量可引起嚴重胃腸道腐蝕、代謝性酸中毒及多器官衰竭。產前維生素含高劑量鐵質,毒性極大。
-
 aliases:
-  - { alias: 鐵中毒, language: zh }
-  - { alias: Iron Poisoning, language: en }
-
+  - alias: 鐵中毒
+    language: zh
+  - alias: Iron Poisoning
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 較少攝入
-
 etiology:
   categories:
     - name: 鐵劑補充品
       examples:
         - 硫酸亞鐵、葡萄糖酸亞鐵
         - 產前維生素(含60-90 mg鐵/錠)
-
 clinicalSigns:
   early:
     - 1-6小時: 嚴重嘔吐(可能血性)、腹瀉
@@ -34,35 +32,56 @@ clinicalSigns:
     - 12-96小時: 代謝性酸中毒、休克
     - 肝腎衰竭、凝血異常
     - 胃腸道穿孔(罕見)
-
 diagnosis:
   primaryTests:
     - name: 血清鐵濃度
-      notes: "總鐵>300 μg/dL提示中毒,>500 μg/dL嚴重"
+      notes: 總鐵>300 μg/dL提示中毒,>500 μg/dL嚴重
     - name: 腹部X光
-      notes: "鐵劑為放射性不透明,可見胃腸道內"
+      notes: 鐵劑為放射性不透明,可見胃腸道內
     - name: 血液生化
-      notes: "代謝性酸中毒、肝酵素升高"
+      notes: 代謝性酸中毒、肝酵素升高
   differentialDiagnoses:
     - 其他腐蝕性物質中毒
     - 胃腸道出血
-
 treatment:
   medical:
     - 催吐(若1小時內)或全身麻醉下胃沖洗
     - 腹部X光確認是否仍有鐵劑殘留,考慮內視鏡移除
     - Deferoxamine(去鐵胺)螯合劑:
-      - 15 mg/kg/hr IV持續輸注(血清鐵>500 μg/dL)
-      - 直至血清鐵<150 μg/dL
+        - 15 mg/kg/hr IV持續輸注(血清鐵>500 μg/dL)
+        - 直至血清鐵<150 μg/dL
     - 積極靜脈輸液
     - 碳酸氫鈉(若代謝性酸中毒)
     - 保肝治療
     - 監測肝腎功能、凝血、血清鐵濃度
-
 prognosis:
-  general: "輕度中毒預後良好。嚴重中毒(>60 mg/kg元素鐵)可能致命,死亡率10-30%。及時去鐵胺治療可改善預後。"
-
+  general: 輕度中毒預後良好。嚴重中毒(>60 mg/kg元素鐵)可能致命,死亡率10-30%。及時去鐵胺治療可改善預後。
 prevention:
   - 妥善存放鐵劑及維生素
   - 產前維生素尤其危險,需嚴格收納
   - 計算元素鐵劑量(硫酸亞鐵含20%元素鐵)
+associatedSymptoms:
+  - symptomId: melaena
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+diagnosticAlgorithm:
+  title: 鐵劑補充品中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - melaena 相關症狀
+        - abdominal-pain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清鐵濃度
+          notes: 總鐵>300 μg/dL提示中毒,>500 μg/dL嚴重
+        - name: 腹部X光
+          notes: 鐵劑為放射性不透明,可見胃腸道內
+        - name: 血液生化
+          notes: 代謝性酸中毒、肝酵素升高
+ddxSource: auto-generated

@@ -3,12 +3,13 @@ nameEn: Mandibular Fracture Dental Detail
 nameZh: 下頜骨折(牙科相關)詳論
 bodySystem: dental
 description: 下頜骨折在犬貓常見,尤其與牙周病或牙科手術相關的病理性骨折。小型犬種因齒槽骨薄弱和嚴重牙周病特別容易發生,需外科固定並處理牙齒病灶。
-
 aliases:
-  - { alias: 下顎骨折, language: zh }
-  - { alias: Jaw Fracture, language: en }
-  - { alias: Mandible Fracture, language: en }
-
+  - alias: 下顎骨折
+    language: zh
+  - alias: Jaw Fracture
+    language: en
+  - alias: Mandible Fracture
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 多因高處墜落
-
 etiology:
   categories:
     - name: 創傷性
@@ -31,7 +31,6 @@ etiology:
         - 嚴重牙周病骨質流失
         - 拔牙術中或術後骨折
         - 腫瘤侵蝕骨質
-
 clinicalSigns:
   early:
     - 下頜不對稱或移位
@@ -43,20 +42,18 @@ clinicalSigns:
     - 咬合嚴重異常
     - 呼吸困難(雙側骨折)
     - 骨折處可觸及捻髮音
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
-      notes: "下頜觸診可發現異常活動度、疼痛、腫脹"
+      notes: 下頜觸診可發現異常活動度、疼痛、腫脹
     - name: 口腔X光或頭顱X光
-      notes: "顯示骨折線位置、類型(橫向、斜向、粉碎性)和移位程度"
+      notes: 顯示骨折線位置、類型(橫向、斜向、粉碎性)和移位程度
     - name: CT掃描
-      notes: "複雜骨折或多處骨折需3D評估"
+      notes: 複雜骨折或多處骨折需3D評估
   differentialDiagnoses:
     - 顳頜關節脫位
     - 下頜腫瘤
     - 骨髓炎
-
 treatment:
   medical:
     - 單純骨折:骨板固定或跨骨折線結紮
@@ -68,21 +65,44 @@ treatment:
     - Meloxicam 0.1 mg/kg PO SID
     - 抗生素(開放性骨折或感染)
     - 定期X光追蹤癒合(2週、4週、6週)
-
 prognosis:
-  general: "單純創傷性骨折經固定預後良好,6-8週可癒合。病理性骨折預後取決於骨質狀況,老年小型犬癒合較慢。粉碎性骨折或嚴重骨質流失預後謹慎,可能需長期固定或重建。"
-
+  general: 單純創傷性骨折經固定預後良好,6-8週可癒合。病理性骨折預後取決於骨質狀況,老年小型犬癒合較慢。粉碎性骨折或嚴重骨質流失預後謹慎,可能需長期固定或重建。
 prevention:
   - 控制牙周病維持骨質健康
   - 小型犬定期牙科檢查
   - 拔牙操作謹慎
   - 避免咬硬物和創傷
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: Follow Up on Simple (Closed) Extraction of Fractured Maxillary Canine Teeth in Domestic Ferrets (Mustela putorius furo).
+    title: >-
+      Follow Up on Simple (Closed) Extraction of Fractured Maxillary Canine Teeth in Domestic Ferrets (Mustela putorius
+      furo).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8155246/
     type: research
-    pmid: "34055958"
+    pmid: '34055958'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+diagnosticAlgorithm:
+  title: 下頜骨折(牙科相關)詳論 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - ptyalism 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 下頜觸診可發現異常活動度、疼痛、腫脹
+        - name: 口腔X光或頭顱X光
+          notes: 顯示骨折線位置、類型(橫向、斜向、粉碎性)和移位程度
+        - name: CT掃描
+          notes: 複雜骨折或多處骨折需3D評估
+ddxSource: auto-generated

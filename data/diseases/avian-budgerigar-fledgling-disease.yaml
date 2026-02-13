@@ -3,20 +3,23 @@ nameEn: Avian Budgerigar Fledgling Disease
 nameZh: 虎皮鸚鵡幼鳥病
 bodySystem: infectious
 description: 虎皮鸚鵡幼鳥病（BFD）由多瘤病毒（Avian Polyomavirus, APV）引起，主要影響離巢期虎皮鸚鵡幼鳥，造成急性全身性感染與高死亡率。其他鸚鵡物種亦可感染。
-
 aliases:
-  - { alias: 虎皮鸚鵡多瘤病毒感染, language: zh }
-  - { alias: 禽類多瘤病毒病, language: zh }
-  - { alias: Budgerigar fledgling disease, language: en }
-  - { alias: Avian polyomavirus infection, language: en }
-  - { alias: BFD, language: en }
-  - { alias: APV infection, language: en }
-
+  - alias: 虎皮鸚鵡多瘤病毒感染
+    language: zh
+  - alias: 禽類多瘤病毒病
+    language: zh
+  - alias: Budgerigar fledgling disease
+    language: en
+  - alias: Avian polyomavirus infection
+    language: en
+  - alias: BFD
+    language: en
+  - alias: APV infection
+    language: en
 species:
   - speciesCommon: bird
     prevalence: moderate
     notes: 虎皮鸚鵡幼鳥最典型。其他鸚鵡如金剛鸚鵡、巴丹鸚鵡幼鳥亦可感染。成鳥多為無症狀帶原。離巢前 14-56 日齡最易感。
-
 etiology:
   categories:
     - name: 病原體
@@ -31,7 +34,6 @@ etiology:
         - 繁殖場高密度飼養
         - 帶原成鳥與幼鳥接觸
         - 營養不良
-
 clinicalSigns:
   early:
     - 精神沉鬱
@@ -43,62 +45,88 @@ clinicalSigns:
     - 羽毛發育異常（特徵性）
     - 尾羽與飛羽缺失或營養不良性變形
     - 突然死亡（急性型無前驅症狀）
-
 diagnosis:
   primaryTests:
     - name: PCR 檢測
-      notes: "泄殖腔拭子、血液或受損羽毛 PCR 檢測 APV DNA"
+      notes: 泄殖腔拭子、血液或受損羽毛 PCR 檢測 APV DNA
     - name: 血液學檢查
-      notes: "白血球減少、貧血。肝酶升高"
+      notes: 白血球減少、貧血。肝酶升高
     - name: 病理學
-      notes: "特徵性核內包涵體。肝、脾、腎壞死。羽囊上皮細胞病變"
+      notes: 特徵性核內包涵體。肝、脾、腎壞死。羽囊上皮細胞病變
   differentialDiagnoses:
     - PBFD（鸚鵡喙羽症）
     - 披衣菌感染
     - 細菌性敗血症
     - 黴菌感染
-
 treatment:
   medical:
     - 無特效抗病毒治療
     - 支持療法（保溫、輔助餵食、輸液）
     - 治療繼發性細菌感染
     - 隔離感染個體
-
 prognosis:
-  general: "急性感染幼鳥死亡率極高（可達 100%）。存活個體可能成為無症狀帶原者。成鳥感染多為亞臨床或輕症。繁殖場一旦引入病毒難以根除。"
-
+  general: 急性感染幼鳥死亡率極高（可達 100%）。存活個體可能成為無症狀帶原者。成鳥感染多為亞臨床或輕症。繁殖場一旦引入病毒難以根除。
 prevention:
   - 繁殖前篩檢種鳥 APV 狀態
   - 新進鳥隔離檢疫與 PCR 篩檢
   - APV 疫苗可用於部分鸚鵡物種
   - 維持繁殖環境衛生
   - 限制訪客進出繁殖區
-
-
 guidelineRefs:
   - sourceOrg: Viruses
     title: Pathogenicity of Avian Polyomaviruses and Prospect of Vaccine Development.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9505546/
     type: review
-    pmid: "36146885"
+    pmid: '36146885'
   - sourceOrg: Archives of virology
-    title: Prevalence, genotypes, and infection risk factors of psittacine beak and feather disease virus and budgerigar fledgling disease virus in captive birds in Hong Kong.
+    title: >-
+      Prevalence, genotypes, and infection risk factors of psittacine beak and feather disease virus and budgerigar
+      fledgling disease virus in captive birds in Hong Kong.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10997714/
     type: research
-    pmid: "38578455"
+    pmid: '38578455'
   - sourceOrg: Journal of veterinary science
     title: Molecular characteristics of Budgerigar fledgling disease polyomavirus detected from parrots in South Korea.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9523338/
     type: research
-    pmid: "36038188"
+    pmid: '36038188'
   - sourceOrg: Frontiers in veterinary science
     title: Molecular Characterization of a Novel Budgerigar Fledgling Disease Virus Strain From Budgerigars in China.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8787288/
     type: research
-    pmid: "35087894"
-  - sourceOrg: "Avian pathology : journal of the W.V.P.A"
+    pmid: '35087894'
+  - sourceOrg: 'Avian pathology : journal of the W.V.P.A'
     title: Genetic characterization of avian polyomaviruses identified from psittacine birds in South Korea.
     url: https://pubmed.ncbi.nlm.nih.gov/37565272/
     type: research
-    pmid: "37565272"
+    pmid: '37565272'
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: splenomegaly
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 虎皮鸚鵡幼鳥病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - abdominal-distension 相關症狀
+        - hepatomegaly 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: PCR 檢測
+          notes: 泄殖腔拭子、血液或受損羽毛 PCR 檢測 APV DNA
+        - name: 血液學檢查
+          notes: 白血球減少、貧血。肝酶升高
+        - name: 病理學
+          notes: 特徵性核內包涵體。肝、脾、腎壞死。羽囊上皮細胞病變
+ddxSource: auto-generated

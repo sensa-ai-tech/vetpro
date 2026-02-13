@@ -3,16 +3,15 @@ nameEn: Rabbit Fur Mites
 nameZh: 兔毛蟎
 bodySystem: dermatology
 description: 由 Cheyletiella parasitovorax 引起的兔表皮寄生蟲感染，又稱「行走的頭皮屑」（walking dandruff）。傳染性強，可短暫傳給人類造成搔癢性皮疹。
-
 aliases:
-  - { alias: "兔毛蟎", language: zh }
-  - { alias: "Rabbit Fur Mites", language: en }
-
+  - alias: 兔毛蟎
+    language: zh
+  - alias: Rabbit Fur Mites
+    language: en
 species:
   - speciesCommon: rabbit
     prevalence: uncommon
     notes: 兔可受此疾病影響。
-
 etiology:
   categories:
     - name: 寄生蟲性
@@ -20,7 +19,6 @@ etiology:
         - Cheyletiella parasitovorax
         - 直接接觸傳播
         - 環境（墊料、籠具）傳播
-
 clinicalSigns:
   early:
     - 背部大量鱗屑（「頭皮屑」樣）
@@ -31,14 +29,12 @@ clinicalSigns:
     - 皮膚紅腫
     - 嚴重搔癢
     - 結痂
-
 diagnosis:
   primaryTests:
     - name: 顯微鏡檢查
       notes: 透明膠帶法或皮屑刮片在低倍鏡下可見蟎蟲。蟎蟲體型較大，肉眼有時可見。
     - name: 梳毛法
       notes: 密梳收集皮屑後顯微鏡檢查。
-
 treatment:
   principles:
     - 驅蟲治療
@@ -50,17 +46,46 @@ treatment:
     - Selamectin（Revolution）spot-on 每月
     - 環境徹底清潔消毒
     - 所有同住兔同時治療
-
 prognosis: 適當驅蟲治療後預後極佳。環境消毒不徹底可能復發。人類接觸感染為自限性，兔治療後即可改善。
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of parasitic diseases : official organ of the Indian Society for Parasitology"
-    title: Preliminary detection of mites and coccidia with their zoonotic potential in meat-farmed rabbits in three districts in Selangor, Malaysia.
+  - sourceOrg: 'Journal of parasitic diseases : official organ of the Indian Society for Parasitology'
+    title: >-
+      Preliminary detection of mites and coccidia with their zoonotic potential in meat-farmed rabbits in three
+      districts in Selangor, Malaysia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7921235/
     type: research
-    pmid: "33746402"
+    pmid: '33746402'
     relevance: supporting
 pubmedQueries:
   - query: '"Rabbit Fur Mites" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: common
+  - symptomId: alopecia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔毛蟎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 顯微鏡檢查
+          notes: 透明膠帶法或皮屑刮片在低倍鏡下可見蟎蟲。蟎蟲體型較大，肉眼有時可見。
+        - name: 梳毛法
+          notes: 密梳收集皮屑後顯微鏡檢查。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 驅蟲治療
+        - 環境消毒
+        - 所有同住兔同時治療
+ddxSource: auto-generated

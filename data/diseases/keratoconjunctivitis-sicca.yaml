@@ -3,22 +3,24 @@ nameEn: Keratoconjunctivitis Sicca
 nameZh: 乾眼症
 bodySystem: ophthalmology
 description: 淚液分泌不足導致的慢性角結膜炎症疾病，未治療可導致角膜潰瘍、色素沉著與視力喪失。
-
 aliases:
-  - { alias: KCS, language: en }
-  - { alias: Dry Eye, language: en }
-  - { alias: 乾性角結膜炎, language: zh }
-
+  - alias: KCS
+    language: en
+  - alias: Dry Eye
+    language: en
+  - alias: 乾性角結膜炎
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
-    notes: 盛行率約 1-4%。好發品種：Cavalier King Charles Spaniel、English Bulldog、Lhasa Apso、Shih Tzu、West Highland White Terrier、Cocker Spaniel、Pug。
+    notes: >-
+      盛行率約 1-4%。好發品種：Cavalier King Charles Spaniel、English Bulldog、Lhasa Apso、Shih Tzu、West Highland White
+      Terrier、Cocker Spaniel、Pug。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓罕見。多與 FHV-1 感染繼發的淚腺破壞有關。
-
 etiology:
   categories:
     - name: 免疫介導性 (最常見，犬)
@@ -43,7 +45,6 @@ etiology:
         - 代謝性 (甲狀腺低下、糖尿病)
         - 第三眼瞼腺切除後 (cherry eye 手術不當)
         - 放射線治療
-
 clinicalSigns:
   early:
     - 黏液性至黏液膿性眼分泌物
@@ -61,15 +62,14 @@ clinicalSigns:
     - 角膜穿孔 (嚴重潰瘍)
     - 角膜疤痕
     - 視力下降至失明
-
 diagnosis:
   primaryTests:
     - name: Schirmer Tear Test (STT I)
-      notes: "金標準篩檢。正常 >15 mm/min。10-15 mm/min 為早期/邊緣；<10 mm/min 確診 KCS；<5 mm/min 為嚴重"
+      notes: 金標準篩檢。正常 >15 mm/min。10-15 mm/min 為早期/邊緣；<10 mm/min 確診 KCS；<5 mm/min 為嚴重
     - name: 螢光染色 (fluorescein stain)
-      notes: "評估角膜潰瘍。KCS 患犬常有點狀角膜糜爛或潰瘍"
+      notes: 評估角膜潰瘍。KCS 患犬常有點狀角膜糜爛或潰瘍
     - name: 眼科檢查
-      notes: "評估角膜血管新生、色素沉著、黏液膿性分泌物"
+      notes: 評估角膜血管新生、色素沉著、黏液膿性分泌物
   imaging: []
   additional:
     - Rose bengal 染色 (評估角膜上皮退化)
@@ -77,7 +77,6 @@ diagnosis:
     - 淚膜破裂時間 (TFBUT，評估質性淚液異常)
     - 甲狀腺功能 (排除甲狀腺低下)
     - 神經學檢查 (神經性 KCS)
-
 treatment:
   principles:
     - 免疫調節藥物刺激淚液分泌 (核心治療)
@@ -86,31 +85,28 @@ treatment:
     - 終生治療
   medications:
     - name: Cyclosporine A (眼用)
-      dose: "0.2% 眼藥膏或 1-2% 眼用製劑 BID"
+      dose: 0.2% 眼藥膏或 1-2% 眼用製劑 BID
       notes: 一線免疫調節治療。通常 2-6 週見效。約 70-80% 犬有反應
     - name: Tacrolimus (眼用)
-      dose: "0.02-0.03% 眼藥水 BID"
+      dose: 0.02-0.03% 眼藥水 BID
       notes: Cyclosporine 無效時的替代。效力更強。約 50% 對 CsA 無反應的犬有效
     - name: 人工淚液
-      dose: "視需要頻繁使用 (Q2-6H)"
+      dose: 視需要頻繁使用 (Q2-6H)
       notes: 含玻尿酸或 carboxymethylcellulose 的無防腐劑製劑較佳
     - name: 局部抗生素
-      dose: "依感染狀況"
+      dose: 依感染狀況
       notes: 繼發感染時使用。避免含類固醇的複方 (角膜潰瘍風險)
   general:
     - 定期清潔眼部分泌物
     - 定期追蹤 STT 監測治療反應
     - 手術：腮腺管轉位 (parotid duct transposition) — 對藥物完全無反應的嚴重病例
     - 避免第三眼瞼腺切除 (cherry eye 應以復位術處理)
-
 prognosis: 多數犬對 cyclosporine 或 tacrolimus 反應良好，可維持舒適與功能性視力。需終生治療與定期追蹤。藥物無反應者可考慮腮腺管轉位，但可能有礦物質沉著等併發症。
-
 ontologyMappings:
   - source: MONDO
-    code: "MONDO:0005607"
+    code: MONDO:0005607
     label: keratoconjunctivitis sicca
     confidence: exact
-
 guidelineRefs:
   - sourceOrg: ACVO
     title: ACVO Genetics Committee — Breed-specific Ocular Diseases
@@ -120,30 +116,81 @@ guidelineRefs:
     title: Cyclosporine A Delivery Platform for Veterinary Ophthalmology-A New Concept for Advanced Ophthalmology.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9599649/
     type: review
-    pmid: "36291734"
+    pmid: '36291734'
   - sourceOrg: Veterinary medicine international
-    title: "Platelet-Rich Plasma for the Treatment of Ocular Surface Disease in Animals: A Systematic Review."
+    title: 'Platelet-Rich Plasma for the Treatment of Ocular Surface Disease in Animals: A Systematic Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12208767/
     type: review
-    pmid: "40590020"
+    pmid: '40590020'
     relevance: primary
   - sourceOrg: Archives of Razi Institute
     title: Therapeutic Potential of Platelet-Rich Plasma in Canine Medicine.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8791002/
     type: review
-    pmid: "35096308"
+    pmid: '35096308'
     relevance: primary
   - sourceOrg: In vivo (Athens, Greece)
-    title: "Therapeutic Effect of EPA/DHA Supplementation in Neoplastic and Non-neoplastic Companion Animal Diseases: A Systematic Review."
+    title: >-
+      Therapeutic Effect of EPA/DHA Supplementation in Neoplastic and Non-neoplastic Companion Animal Diseases: A
+      Systematic Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8193331/
     type: review
-    pmid: "33910819"
+    pmid: '33910819'
     relevance: primary
 pubmedQueries:
   - query: '"keratoconjunctivitis sicca" AND (dog OR canine) AND ("cyclosporine" OR "tacrolimus" OR "treatment")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "EE"
-  sectionTitle: "Terrier. Courtesy of K. Gelatt."
+  chapter: EE
+  sectionTitle: Terrier. Courtesy of K. Gelatt.
   pdfPage: 532
+diagnosticAlgorithm:
+  title: 乾性角結膜炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 觀察眼部黏稠分泌物、角膜混濁、眼睛不適，注意好發品種（西施犬、鬥牛犬、可卡犬）
+      findings:
+        - 黏稠黃綠色眼分泌物
+        - 角膜混濁或新生血管
+        - 眨眼頻繁
+        - 結膜充血
+    - step: 2
+      action: 淚液測試（STT）
+      details: Schirmer淚液測試為確診金標準，正常值犬>15mm/min
+      findings:
+        - STT<10mm/min（KCS確診）
+        - STT 10-15mm/min（可疑）
+        - STT>15mm/min（正常）
+        - 雙眼比較
+    - step: 3
+      action: 眼科全面評估
+      details: 螢光素染色評估角膜損傷、裂隙燈評估角膜狀態、眼壓測量
+      findings:
+        - 角膜潰瘍（螢光素陽性）
+        - 角膜色素沉著
+        - 角膜新生血管
+        - 角膜脂質沉積
+    - step: 4
+      action: 病因評估
+      details: 區分免疫媒介性（最常見）、藥物性、神經性、先天性原因
+      findings:
+        - 免疫媒介性（最常見，淚腺淋巴細胞浸潤）
+        - 藥物性（磺胺類藥物）
+        - 神經性（面神經或三叉神經異常）
+        - 先天性（淚腺發育不全）
+clinicalPearls:
+  - STT應在任何眼科檢查操作之前進行
+  - Tacrolimus效力約為環孢素的4倍
+  - 藥物反應通常需2-6週才完全顯現
+  - Sulfonamide引起的KCS可能為不可逆
+monitoringItems:
+  - STT每月追蹤至穩定，後每3-6個月
+  - 角膜健康評估
+  - 藥物依從性
+  - 繼發感染
+associatedSymptoms:
+  - symptomId: red-eye
+    frequency: common
+ddxSource: book

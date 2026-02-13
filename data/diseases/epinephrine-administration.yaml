@@ -3,11 +3,11 @@ nameEn: Epinephrine Administration
 nameZh: 腎上腺素給藥
 bodySystem: emergency
 description: 腎上腺素為急救關鍵藥物,用於心肺復甦、過敏性休克及嚴重低血壓。正確劑量及途徑至關重要。
-
 aliases:
-  - { alias: 腎上腺素注射, language: zh }
-  - { alias: Adrenaline Injection, language: en }
-
+  - alias: 腎上腺素注射
+    language: zh
+  - alias: Adrenaline Injection
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,68 +17,86 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 同犬
-
 etiology:
   categories:
     - name: 適應症
       examples:
         - 心跳停止、過敏性休克、嚴重支氣管痙攣
-
 clinicalSigns:
   early:
     - 依病況(心跳停止、休克)
   progressive:
     - 死亡(若未治療)
-
 diagnosis:
   primaryTests:
     - name: 臨床評估
-      notes: "確認適應症"
+      notes: 確認適應症
   differentialDiagnoses:
     - 無
-
 treatment:
   medical:
     - 心肺復甦(CPR):
-      - 低劑量: 0.01 mg/kg IV/IO q3-5min
-      - 高劑量: 0.1 mg/kg IV/IO(若低劑量無效)
+        - 低劑量: 0.01 mg/kg IV/IO q3-5min
+        - 高劑量: 0.1 mg/kg IV/IO(若低劑量無效)
     - 過敏性休克:
-      - 0.01-0.02 mg/kg IM/IV
+        - 0.01-0.02 mg/kg IM/IV
     - 稀釋: 1:1000(1 mg/mL)或1:10000(0.1 mg/mL)
     - 副作用: 心律不整、高血壓
     - 監測心電圖及血壓
-
 prognosis:
-  general: "可挽救生命,但需正確劑量及時機。過量可能致命性心律不整。"
-
+  general: 可挽救生命,但需正確劑量及時機。過量可能致命性心律不整。
 prevention:
   - 精確計算劑量
   - 確認稀釋濃度
-
-
 guidelineRefs:
   - sourceOrg: Korean journal of anesthesiology
     title: Effect of lipid emulsion on vasoconstriction induced by epinephrine or norepinephrine in isolated rat aorta.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11467498/
     type: research
-    pmid: "38945551"
+    pmid: '38945551'
   - sourceOrg: Biomedicines
-    title: "&#x3b2;-Adrenoceptor Agonists Attenuate Thrombin-Induced Impairment of Human Lung Endothelial Cell Barrier Function and Protect the Lung Vascular Barrier during Resuscitation from Hemorrhagic Shock."
+    title: >-
+      &#x3b2;-Adrenoceptor Agonists Attenuate Thrombin-Induced Impairment of Human Lung Endothelial Cell Barrier
+      Function and Protect the Lung Vascular Barrier during Resuscitation from Hemorrhagic Shock.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11352179/
     type: research
-    pmid: "39200278"
+    pmid: '39200278'
   - sourceOrg: Children (Basel, Switzerland)
-    title: Effect of a Larger Flush Volume on Bioavailability and Efficacy of Umbilical Venous Epinephrine during Neonatal Resuscitation in Ovine Asphyxial Arrest.
+    title: >-
+      Effect of a Larger Flush Volume on Bioavailability and Efficacy of Umbilical Venous Epinephrine during Neonatal
+      Resuscitation in Ovine Asphyxial Arrest.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8228479/
     type: research
-    pmid: "34205843"
-  - sourceOrg: "Learning &amp; memory (Cold Spring Harbor, N.Y.)"
-    title: The separate and combined effects of a dangerous context and an epinephrine injection on sensory preconditioning in rats.
+    pmid: '34205843'
+  - sourceOrg: Learning &amp; memory (Cold Spring Harbor, N.Y.)
+    title: >-
+      The separate and combined effects of a dangerous context and an epinephrine injection on sensory preconditioning
+      in rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7970739/
     type: research
-    pmid: "33723031"
+    pmid: '33723031'
   - sourceOrg: BMC urology
-    title: "The comparison of the effect of phenylephrine and epinephrine on penile spongy tissue in rats after experimental hypospadias surgery: a quantitative stereological study."
+    title: >-
+      The comparison of the effect of phenylephrine and epinephrine on penile spongy tissue in rats after experimental
+      hypospadias surgery: a quantitative stereological study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6584989/
     type: research
-    pmid: "31221140"
+    pmid: '31221140'
+associatedSymptoms:
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 腎上腺素給藥 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dehydration 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床評估
+          notes: 確認適應症
+ddxSource: auto-generated

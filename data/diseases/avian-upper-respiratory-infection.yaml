@@ -3,18 +3,19 @@ nameEn: Avian Upper Respiratory Infection
 nameZh: 禽類上呼吸道感染
 bodySystem: respiratory
 description: 禽類上呼吸道感染為涉及鼻腔、鼻竇、咽喉及氣管上段的感染性疾病總稱，可由細菌、病毒、黴菌或披衣菌等多種病原引起，為鳥類臨床最常見的就診原因之一。
-
 aliases:
-  - { alias: 鳥類上呼吸道感染, language: zh }
-  - { alias: 禽呼吸道感染, language: zh }
-  - { alias: Avian URI, language: en }
-  - { alias: Bird upper respiratory disease, language: en }
-
+  - alias: 鳥類上呼吸道感染
+    language: zh
+  - alias: 禽呼吸道感染
+    language: zh
+  - alias: Avian URI
+    language: en
+  - alias: Bird upper respiratory disease
+    language: en
 species:
   - speciesCommon: bird
     prevalence: common
     notes: 所有鳥種均可發生。鸚鵡、金絲雀、雀科鳥類最常見。環境緊迫與營養不良為主要誘發因素。
-
 etiology:
   categories:
     - name: 細菌性
@@ -37,7 +38,6 @@ etiology:
         - 通風不良
         - 環境緊迫
         - 免疫抑制
-
 clinicalSigns:
   early:
     - 打噴嚏
@@ -52,22 +52,20 @@ clinicalSigns:
     - 聲音改變
     - 呼吸困難
     - 食慾明顯下降
-
 diagnosis:
   primaryTests:
     - name: 病原學檢查
-      notes: "咽喉拭子與泄殖腔拭子進行培養、PCR（披衣菌、黴漿菌）"
+      notes: 咽喉拭子與泄殖腔拭子進行培養、PCR（披衣菌、黴漿菌）
     - name: 血液學檢查
-      notes: "白血球計數與分類。異嗜球增加提示細菌感染"
+      notes: 白血球計數與分類。異嗜球增加提示細菌感染
     - name: X光檢查
-      notes: "評估鼻竇、氣管與肺部有無病變延伸"
+      notes: 評估鼻竇、氣管與肺部有無病變延伸
   differentialDiagnoses:
     - 披衣菌感染
     - 麴菌感染
     - 維生素 A 缺乏
     - 鼻腔異物
     - 鼻腔腫瘤
-
 treatment:
   medical:
     - 經驗性抗生素治療（Doxycycline 25-50 mg/kg PO BID 或 Enrofloxacin 15 mg/kg PO BID）
@@ -76,41 +74,111 @@ treatment:
     - 維生素 A 補充
     - 霧化治療（生理食鹽水 + 抗生素）
     - 保溫與支持療法
-
 prognosis:
-  general: "單純細菌性上呼吸道感染預後良好。披衣菌感染需完成 45 天療程。黴菌性感染預後較差。營養狀態矯正後復發率降低。"
-
+  general: 單純細菌性上呼吸道感染預後良好。披衣菌感染需完成 45 天療程。黴菌性感染預後較差。營養狀態矯正後復發率降低。
 prevention:
   - 均衡飲食確保維生素 A 充足
   - 良好通風環境
   - 新進鳥隔離檢疫
   - 減少環境緊迫
   - 維持適當溫濕度
-
-
 guidelineRefs:
-  - sourceOrg: "European journal of clinical microbiology &amp; infectious diseases : official publication of the European Society of Clinical Microbiology"
-    title: "The emergence of highly pathogenic avian influenza H5N1 in dairy cattle: implications for public health, animal health, and pandemic preparedness."
+  - sourceOrg: >-
+      European journal of clinical microbiology &amp; infectious diseases : official publication of the European Society
+      of Clinical Microbiology
+    title: >-
+      The emergence of highly pathogenic avian influenza H5N1 in dairy cattle: implications for public health, animal
+      health, and pandemic preparedness.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12321667/
     type: review
-    pmid: "40369349"
+    pmid: '40369349'
   - sourceOrg: International journal of molecular sciences
     title: Latest Findings in Immunoglobulin Y Technologies and Applications.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12250558/
     type: review
-    pmid: "40650158"
+    pmid: '40650158'
   - sourceOrg: Pathogens (Basel, Switzerland)
-    title: "Comprehensive Insights into Highly Pathogenic Avian Influenza H5N1 in Dairy Cattle: Transmission Dynamics, Milk-Borne Risks, Public Health Implications, Biosecurity Recommendations, and One Health Strategies for Outbreak Control."
+    title: >-
+      Comprehensive Insights into Highly Pathogenic Avian Influenza H5N1 in Dairy Cattle: Transmission Dynamics,
+      Milk-Borne Risks, Public Health Implications, Biosecurity Recommendations, and One Health Strategies for Outbreak
+      Control.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11944845/
     type: review
-    pmid: "40137763"
+    pmid: '40137763'
   - sourceOrg: Cold Spring Harbor perspectives in medicine
     title: Equine Influenza.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8725621/
     type: review
-    pmid: "32152243"
+    pmid: '32152243'
   - sourceOrg: Proceedings of the National Academy of Sciences of the United States of America
-    title: "Pandemic origins and a One Health approach to preparedness and prevention: Solutions based on SARS-CoV-2 and other RNA viruses."
+    title: >-
+      Pandemic origins and a One Health approach to preparedness and prevention: Solutions based on SARS-CoV-2 and other
+      RNA viruses.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9586299/
     type: review
-    pmid: "36215506"
+    pmid: '36215506'
+diagnosticAlgorithm:
+  title: 貓上呼吸道感染 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估上呼吸道症狀嚴重程度
+      findings:
+        - 打噴嚏與鼻分泌物
+        - 結膜炎與眼分泌物
+        - 發燒與精神沉鬱
+        - 食慾下降嗅覺喪失
+    - step: 2
+      action: 臨床病原推測
+      details: 根據臨床特徵初步判斷病原
+      findings:
+        - FHV-1角膜潰瘍樹枝狀潰瘍
+        - FCV口腔潰瘍跛行
+        - Chlamydia結膜炎為主
+        - Bordetella/Mycoplasma下呼吸道擴展
+    - step: 3
+      action: 實驗室檢查
+      details: 重症或慢性病例進行病原檢測
+      findings:
+        - 呼吸道PCR面板
+        - FIV/FeLV狀態評估
+        - CBC排除免疫抑制
+        - 慢性病例CT排除鼻腔結構問題
+    - step: 4
+      action: 併發症評估
+      details: 評估幼貓或免疫抑制貓的嚴重併發症
+      findings:
+        - 脫水與營養不良不進食
+        - 繼發性細菌性肺炎
+        - 角膜穿孔FHV重症
+        - 慢性鼻竇炎發展
+clinicalPearls:
+  - FHV-1和FCV合計佔貓URI約80-90%
+  - FHV-1導致角膜潰瘍，FCV導致口腔潰瘍是鑑別要點
+  - 嗅覺喪失是貓食慾下降的重要原因，鼻腔通暢有助恢復食慾
+  - 收容所環境發病率可達100%
+  - 核心疫苗可減輕但不能完全預防感染
+monitoringItems:
+  - 食慾和水分攝取
+  - 體重
+  - 呼吸狀態
+  - 眼部症狀
+  - 脫水程度
+associatedSymptoms:
+  - symptomId: sneezing
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+ddxSource: book

@@ -3,13 +3,15 @@ nameEn: Peripheral Neuropathy
 nameZh: 周邊神經病變
 bodySystem: neurology
 description: 周邊神經系統的結構或功能異常，包括運動神經、感覺神經或自主神經的病變。犬貓可為遺傳性、後天性或特發性。
-
 aliases:
-  - { alias: Polyneuropathy, language: en }
-  - { alias: Peripheral Nerve Disease, language: en }
-  - { alias: 多發性神經病變, language: zh }
-  - { alias: 末梢神經病變, language: zh }
-
+  - alias: Polyneuropathy
+    language: en
+  - alias: Peripheral Nerve Disease
+    language: en
+  - alias: 多發性神經病變
+    language: zh
+  - alias: 末梢神經病變
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓最常見為糖尿病性神經病變 (跗關節著地步態)。其他包括甲亢性、FIP 相關、副腫瘤性神經病變。
-
 etiology:
   categories:
     - name: 免疫介導性
@@ -50,7 +51,6 @@ etiology:
         - 胰島素瘤相關
         - 淋巴瘤相關
         - 其他腫瘤相關
-
 clinicalSigns:
   early:
     - 後肢無力 (通常對稱性)
@@ -68,20 +68,19 @@ clinicalSigns:
     - 呼吸肌無力 (肋間肌、膈肌)
     - 巨食道症 (迷走神經受累)
     - 自主神經功能障礙 (心律不整、瞳孔異常、尿滯留)
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
-      notes: "下運動神經元徵象：反射減弱/消失、肌肉萎縮、肌張力低下。評估分布模式 (遠端/近端、對稱/不對稱)"
+      notes: 下運動神經元徵象：反射減弱/消失、肌肉萎縮、肌張力低下。評估分布模式 (遠端/近端、對稱/不對稱)
     - name: 肌電圖 (EMG) + 神經傳導速度 (NCV)
-      notes: "金標準電生理學檢查。去神經電位 (fibrillation potentials、positive sharp waves)。NCV 減慢提示脫髓鞘，波幅降低提示軸突變性"
+      notes: 金標準電生理學檢查。去神經電位 (fibrillation potentials、positive sharp waves)。NCV 減慢提示脫髓鞘，波幅降低提示軸突變性
     - name: 神經/肌肉活檢
-      notes: "確定診斷。區分軸突變性 vs 脫髓鞘。免疫組化評估炎症浸潤"
+      notes: 確定診斷。區分軸突變性 vs 脫髓鞘。免疫組化評估炎症浸潤
   imaging:
     - name: 胸腔 X 光
-      notes: "評估巨食道症、吸入性肺炎風險"
+      notes: 評估巨食道症、吸入性肺炎風險
     - name: 腹部超音波
-      notes: "篩檢胰島素瘤或其他腫瘤"
+      notes: 篩檢胰島素瘤或其他腫瘤
   additional:
     - CBC/生化 (血糖、甲狀腺功能、肝腎功能)
     - 空腹血糖 + 胰島素 (排除胰島素瘤)
@@ -91,7 +90,6 @@ diagnosis:
     - 蜱蟲篩檢 (排除蜱蟲麻痺)
     - 腦脊髓液 (排除神經根病變)
     - 基因檢測 (品種特異性遺傳神經病)
-
 treatment:
   principles:
     - 治療取決於病因
@@ -101,16 +99,16 @@ treatment:
     - 支持療法與物理復健為所有類型的重要輔助
   medications:
     - name: Prednisolone (免疫介導性)
-      dose: "1-2 mg/kg PO BID (誘導)，逐步減量"
+      dose: 1-2 mg/kg PO BID (誘導)，逐步減量
       notes: CIDP 的一線治療。AIPN 類固醇效果有限 (多為自限性)
     - name: Mycophenolate mofetil (免疫介導性)
-      dose: "10-20 mg/kg PO BID"
+      dose: 10-20 mg/kg PO BID
       notes: CIDP 的二線免疫抑制
     - name: 胰島素 (糖尿病性)
-      dose: "依糖尿病治療方案"
+      dose: 依糖尿病治療方案
       notes: 良好的血糖控制可逆轉貓糖尿病性神經病 (數週至數月)
     - name: Methylcobalamin (維生素 B12)
-      dose: "犬 500-1000 μg/day PO; 貓 250 μg/day PO"
+      dose: 犬 500-1000 μg/day PO; 貓 250 μg/day PO
       notes: 輔助神經修復。糖尿病性神經病可能有幫助
   general:
     - 物理復健 (被動關節活動、站立訓練、水中跑步機)
@@ -119,42 +117,95 @@ treatment:
     - 巨食道症管理 (立式餵食)
     - AIPN 通常自限性，4-6 週開始恢復，完全恢復需數月
     - 褥瘡預防
-
-prognosis: 差異極大，取決於病因。AIPN 多數可完全恢復 (4-12 週)，但恢復期長。CIDP 需長期免疫抑制，部分可控制。糖尿病性神經病在血糖控制良好後可逆轉 (貓)。遺傳性通常進行性，無治療方法。蜱蟲麻痺移除蜱蟲後預後良好。副腫瘤性取決於原發腫瘤控制。
-
+prognosis: >-
+  差異極大，取決於病因。AIPN 多數可完全恢復 (4-12 週)，但恢復期長。CIDP 需長期免疫抑制，部分可控制。糖尿病性神經病在血糖控制良好後可逆轉
+  (貓)。遺傳性通常進行性，無治療方法。蜱蟲麻痺移除蜱蟲後預後良好。副腫瘤性取決於原發腫瘤控制。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: Acute canine polyradiculoneuritis — clinical features, electrophysiology, and outcome
     url: https://pubmed.ncbi.nlm.nih.gov/20175766/
     type: research
-    pmid: "20175766"
+    pmid: '20175766'
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: Diabetic neuropathy in cats — clinical and electrophysiological findings
     url: https://pubmed.ncbi.nlm.nih.gov/9316126/
     type: research
-    pmid: "9316126"
+    pmid: '9316126'
   - sourceOrg: Veterinary Clinics of North America Small Animal Practice
     title: Disorders of the peripheral nerves
     url: https://pubmed.ncbi.nlm.nih.gov/24766697/
     type: review
-    pmid: "24766697"
+    pmid: '24766697'
   - sourceOrg: Autophagy
     title: Guidelines for the use and interpretation of assays for monitoring autophagy (4th edition)1.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7996087/
     type: guideline
-    pmid: "33634751"
+    pmid: '33634751'
     relevance: primary
   - sourceOrg: Biomedicines
-    title: "Indirect Comparison of 10 kHz Spinal Cord Stimulation (SCS) versus Traditional Low-Frequency SCS for the Treatment of Painful Diabetic Neuropathy: A Systematic Review of Randomized Controlled Trials."
+    title: >-
+      Indirect Comparison of 10 kHz Spinal Cord Stimulation (SCS) versus Traditional Low-Frequency SCS for the Treatment
+      of Painful Diabetic Neuropathy: A Systematic Review of Randomized Controlled Trials.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9599433/
     type: review
-    pmid: "36289892"
+    pmid: '36289892'
     relevance: primary
 pubmedQueries:
   - query: '"peripheral neuropathy" OR "polyneuropathy" AND (dog OR cat) AND ("diagnosis" OR "treatment" OR "review")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "END"
-  sectionTitle: "DISEASE"
+  chapter: END
+  sectionTitle: DISEASE
   pdfPage: 582
+diagnosticAlgorithm:
+  title: 周邊神經病變 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估下運動神經元症狀和分布模式
+      findings:
+        - 漸進性四肢無力
+        - 肌肉萎縮
+        - 反射減退或消失
+        - 感覺異常或疼痛
+    - step: 2
+      action: 實驗室檢查
+      details: 進行基本血液學和生化排除代謝性和內分泌原因
+      findings:
+        - 甲狀腺功能檢查
+        - 血糖評估（糖尿病性神經病變）
+        - 感染篩檢
+        - 腫瘤標記物
+    - step: 3
+      action: 電生理學檢查
+      details: 進行肌電圖和神經傳導速度檢查
+      findings:
+        - 神經傳導速度下降（脫髓鞘型）
+        - 複合肌肉動作電位振幅降低（軸索型）
+        - 自發性電位活動
+        - 纖維顫動和正尖波
+    - step: 4
+      action: 神經活檢
+      details: 視情況進行周邊神經活檢確認病理類型
+      findings:
+        - 脫髓鞘性vs軸索性病變
+        - 炎症性浸潤
+        - Wallerian退化
+        - 腫瘤性浸潤
+clinicalPearls:
+  - 犬的急性四肢無力：首先排除蜱麻痺（檢查全身有無蜱蟲），其次考慮免疫媒介性多發性神經根炎
+  - 甲狀腺功能低下是犬多發性神經病變的重要可治療病因，應常規篩查
+  - EMG 需在去神經支配後 5-7 天才會出現典型異常放電，太早檢查可能假陰性
+  - 呼吸功能監測極為重要 — 膈神經受累可能導致急性呼吸衰竭
+monitoringItems:
+  - 每 1-2 週評估肌力及神經學功能恢復進度
+  - 監測呼吸功能（呼吸頻率、血氧飽和度）
+  - 定期 EMG 追蹤去神經支配及再支配情況
+  - 免疫抑制治療期間監測 CBC、肝腎功能
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+ddxSource: book

@@ -3,11 +3,11 @@ nameEn: Thymoma
 nameZh: 胸腺瘤
 bodySystem: respiratory
 description: 胸腺瘤為起源於胸腺上皮細胞的腫瘤，位於前縱膈腔。多數為低度惡性，局部生長緩慢，遠處轉移率低。可伴隨副腫瘤症候群，最常見為重症肌無力（myasthenia gravis）。犬貓均可發生，中老年動物好發。
-
 aliases:
-  - { alias: 胸腺腫瘤, language: zh }
-  - { alias: Thymic Tumor, language: en }
-
+  - alias: 胸腺腫瘤
+    language: zh
+  - alias: Thymic Tumor
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻胸腺瘤罕見。需與前縱膈淋巴瘤鑑別。中老年貓好發。
-
 etiology:
   categories:
     - name: 腫瘤特性
@@ -30,7 +29,6 @@ etiology:
         - 巨食道症（megaesophagus，與 MG 相關）
         - 高鈣血症
         - 非溶血性免疫介導性貧血
-
 clinicalSigns:
   early:
     - 輕度呼吸急促
@@ -42,14 +40,12 @@ clinicalSigns:
     - 前腔靜脈症候群（面部水腫）
     - 重症肌無力症狀：全身性肌無力、吞嚥困難、反芻
     - 吸入性肺炎（繼發於巨食道）
-
 diagnosis:
   primaryTests:
     - name: 胸腔 X 光
       notes: 前縱膈腔腫塊。氣管背側偏移。可伴胸腔積液。需與淋巴瘤鑑別。
     - name: 細針穿刺或組織活檢
       notes: 超音波引導下 FNA。細胞學可見混合淋巴球（小型成熟）與上皮細胞。確診需組織病理學。乙醯膽鹼受體抗體測定排除 MG。
-
 treatment:
   principles:
     - 手術切除為首選治療
@@ -57,45 +53,96 @@ treatment:
     - 手術不可行時考慮放射線治療
   general:
     - 手術切除（median sternotomy，首選）
-    - "重症肌無力：Pyridostigmine 0.5-3 mg/kg PO q8-12h"
+    - 重症肌無力：Pyridostigmine 0.5-3 mg/kg PO q8-12h
     - 術前穩定 MG 症狀
     - 吸入性肺炎風險管理（巨食道患者）
-    - "手術不可行時：放射線治療"
-
+    - 手術不可行時：放射線治療
 prognosis: 手術完全切除後預後良好，中位存活時間可達 1-3 年以上。胸腺瘤相關重症肌無力在腫瘤切除後約 50% 可改善或緩解。併發巨食道症與吸入性肺炎者預後較差。不完全切除或侵襲性胸腺瘤預後中等。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Cutaneous paraneoplastic syndromes in cats: a comparative clinical review."
+    title: 'Cutaneous paraneoplastic syndromes in cats: a comparative clinical review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12855766/
     type: review
-    pmid: "41607126"
+    pmid: '41607126'
     relevance: primary
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline immune-mediated skin disorders: Part 1."
+    title: 'Feline immune-mediated skin disorders: Part 1.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12033501/
     type: review
-    pmid: "40219649"
+    pmid: '40219649'
     relevance: primary
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline immune-mediated skin disorders: Part 2."
+    title: 'Feline immune-mediated skin disorders: Part 2.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12033568/
     type: review
-    pmid: "40219647"
+    pmid: '40219647'
     relevance: primary
   - sourceOrg: Journal of veterinary internal medicine
     title: Classification of myasthenia gravis and congenital myasthenic syndromes in dogs and cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7517852/
     type: review
-    pmid: "32668077"
+    pmid: '32668077'
     relevance: primary
   - sourceOrg: Acta pharmaceutica Sinica. B
-    title: "New possible silver lining for pancreatic cancer therapy: Hydrogen sulfide and its donors."
+    title: 'New possible silver lining for pancreatic cancer therapy: Hydrogen sulfide and its donors.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8144891/
     type: review
-    pmid: "34094825"
+    pmid: '34094825'
     relevance: primary
 pubmedQueries:
   - query: '"thymoma" AND (veterinary OR canine OR feline) AND ("myasthenia gravis" OR "treatment" OR "surgery")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 胸腺瘤 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估前縱隔腫塊引起的呼吸困難和運動不耐受，注意伴隨的副腫瘤症候群
+      findings:
+        - 呼吸困難和運動不耐受
+        - 前腔靜脈症候群（頭頸部水腫）
+        - 可能合併重症肌無力或皮膚病變
+    - step: 2
+      action: 影像學檢查
+      details: 進行胸腔X光和CT評估前縱隔腫塊的大小和範圍
+      findings:
+        - 胸腔X光顯示前縱隔腫塊
+        - CT精確評估腫塊範圍和侵犯程度
+        - 可能伴隨胸腔積液
+    - step: 3
+      action: 細胞學/組織學確診
+      details: 進行CT引導細針抽吸或開胸活檢，同時評估重症肌無力等副腫瘤症候群
+      findings:
+        - 細胞學或組織學確認胸腺瘤
+        - 區分胸腺瘤與淋巴瘤
+        - 乙醯膽鹼受體抗體檢測評估重症肌無力
+clinicalPearls:
+  - 前縱隔腫塊+重症肌無力高度提示胸腺瘤
+  - 胸腺淋巴瘤（特別是貓）是最重要的鑑別診斷——免疫表型區分
+  - 術後重症肌無力可能暫時惡化（肌無力危象），需準備機械通氣
+  - 貓胸腺瘤的FNA可能難以與淋巴瘤區分，需組織活檢
+  - 巨食道患者的麻醉需特別注意吸入性肺炎風險
+monitoringItems:
+  - 術後胸腔X光追蹤復發
+  - AChR抗體追蹤（MG患者）
+  - 食道功能評估
+  - 肌力評估
+  - 鈣濃度追蹤
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+ddxSource: book

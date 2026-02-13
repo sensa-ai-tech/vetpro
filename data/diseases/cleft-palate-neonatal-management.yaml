@@ -3,12 +3,13 @@ nameEn: Cleft Palate Neonatal Management
 nameZh: 新生兒唇顎裂管理
 bodySystem: other
 description: 新生犬貓唇顎裂的早期照護管理，包含管餵技巧、吸入性肺炎預防及手術時機評估。唇顎裂幼犬無法正常吸乳，需特殊照護才能存活。
-
 aliases:
-  - { alias: 先天性唇顎裂照護, language: zh }
-  - { alias: Cleft Palate Management, language: en }
-  - { alias: Oronasal Fistula Neonatal, language: en }
-
+  - alias: 先天性唇顎裂照護
+    language: zh
+  - alias: Cleft Palate Management
+    language: en
+  - alias: Oronasal Fistula Neonatal
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 比犬少見
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -30,7 +30,6 @@ etiology:
         - 孕期營養不良(葉酸缺乏)
         - 孕期藥物或毒素暴露
         - 母體疾病
-
 clinicalSigns:
   early:
     - 無法正常吸乳
@@ -42,21 +41,19 @@ clinicalSigns:
     - 鼻炎、鼻竇炎
     - 營養不良
     - 死亡(若未適當照護)
-
 diagnosis:
   primaryTests:
     - name: 口腔檢查
-      notes: "直視硬顎裂隙，可能涉及軟顎或延伸至唇部"
+      notes: 直視硬顎裂隙，可能涉及軟顎或延伸至唇部
     - name: 胸部X光
-      notes: "評估吸入性肺炎"
+      notes: 評估吸入性肺炎
     - name: 體重監測
-      notes: "評估營養攝取"
+      notes: 評估營養攝取
   differentialDiagnoses:
     - 單純唇裂
     - 硬顎裂
     - 軟顎裂
     - 完全性唇顎裂
-
 treatment:
   medical:
     - 管餵：使用胃管或食道餵食管(避免吸入)
@@ -67,20 +64,44 @@ treatment:
     - 手術修補：通常8-12週齡，體重達2kg後
     - 術前評估全身健康狀況及麻醉風險
     - 術後照護：軟食、防止抓撓
-
 prognosis:
-  general: "小型裂隙經適當管餵及手術修補預後良好；大型裂隙或併發嚴重肺炎預後不良"
-
+  general: 小型裂隙經適當管餵及手術修補預後良好；大型裂隙或併發嚴重肺炎預後不良
 prevention:
   - 避免近親繁殖
   - 有唇顎裂病史的犬隻不建議繁殖
   - 孕期營養充足(補充葉酸)
   - 避免孕期藥物濫用
-
-
 guidelineRefs:
   - sourceOrg: Lancet (London, England)
-    title: "Burden of 375 diseases and injuries, risk-attributable burden of 88 risk factors, and healthy life expectancy in 204 countries and territories, including 660 subnational locations, 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023."
+    title: >-
+      Burden of 375 diseases and injuries, risk-attributable burden of 88 risk factors, and healthy life expectancy in
+      204 countries and territories, including 660 subnational locations, 1990-2023: a systematic analysis for the
+      Global Burden of Disease Study 2023.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12535840/
     type: research
-    pmid: "41092926"
+    pmid: '41092926'
+associatedSymptoms:
+  - symptomId: sneezing
+    frequency: common
+  - symptomId: coughing
+    frequency: common
+diagnosticAlgorithm:
+  title: 新生兒唇顎裂管理 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - sneezing 相關症狀
+        - coughing 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 口腔檢查
+          notes: 直視硬顎裂隙，可能涉及軟顎或延伸至唇部
+        - name: 胸部X光
+          notes: 評估吸入性肺炎
+        - name: 體重監測
+          notes: 評估營養攝取
+ddxSource: auto-generated

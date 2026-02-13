@@ -3,12 +3,13 @@ nameEn: Metaldehyde Toxicosis
 nameZh: 聚乙醛中毒
 bodySystem: toxicology
 description: 聚乙醛 (metaldehyde) 為蝸牛/蛞蝓餌劑的常見活性成分，犬攝入後引起嚴重肌肉震顫、癲癇與高燒。毒性機制涉及 GABA 濃度降低與 monoamine 神經傳導物質增加。致死率高，需緊急治療。
-
 aliases:
-  - { alias: 蝸牛餌劑中毒, language: zh }
-  - { alias: Metaldehyde Poisoning, language: en }
-  - { alias: Slug Bait Poisoning, language: en }
-
+  - alias: 蝸牛餌劑中毒
+    language: zh
+  - alias: Metaldehyde Poisoning
+    language: en
+  - alias: Slug Bait Poisoning
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓中毒較少見但同樣易感。致死劑量約 200 mg/kg。
-
 etiology:
   categories:
     - name: 毒性機制
@@ -29,7 +29,6 @@ etiology:
       examples:
         - 顆粒狀或液態蝸牛/蛞蝓餌劑
         - 固體燃料片（camping fuel）
-
 clinicalSigns:
   early:
     - 不安與過度興奮（攝入後 1-3 小時）
@@ -44,7 +43,6 @@ clinicalSigns:
     - 代謝性酸中毒
     - 肝衰竭（存活者 2-3 天後）
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 病史確認
@@ -56,7 +54,6 @@ diagnosis:
     - 血液氣體（嚴重代謝性酸中毒）
     - 肝功能（延遲性肝損傷）
     - CK（橫紋肌溶解）
-
 treatment:
   principles:
     - 控制震顫與癲癇最優先
@@ -72,9 +69,63 @@ treatment:
     - 肝保護（SAMe、NAC）
     - 住院 48-72 小時監測肝功能
     - 使用含 iron phosphate 的安全替代蝸牛餌劑
-
 prognosis: 犬 metaldehyde 中毒致死率可達 50%（未治療）。積極控制震顫與高燒可大幅改善預後。存活者需監測 2-3 天後的肝損傷。完全恢復者通常無後遺症。
-
 pubmedQueries:
   - query: '"metaldehyde" AND (toxicosis OR poisoning) AND (veterinary OR canine)'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 滅蝸靈中毒 診斷流程
+  steps:
+    - step: 1
+      action: 急診評估
+      details: 評估暴露史、神經症狀和體溫
+      findings:
+        - 震顫/癲癇
+        - 高體溫
+        - 蝸牛餌接觸史
+    - step: 2
+      action: 穩定患者
+      details: 立即控制癲癇和降溫
+      findings:
+        - diazepam有效
+        - 需methocarbamol
+        - 需propofol
+    - step: 3
+      action: 實驗室評估
+      details: 血氣、乳酸、肝腎功能
+      findings:
+        - 代謝性酸中毒
+        - 乳酸升高
+        - 肝指數升高
+    - step: 4
+      action: 持續監測
+      details: 48-72小時ICU監護
+      findings:
+        - 神經症狀改善
+        - 遲發性肝損傷
+        - 完全恢復
+clinicalPearls:
+  - 「搖擺與烘烤」(shake and bake)——肌肉震顫/癲癇+高體溫是滅蝸靈中毒的典型特徵
+  - 沒有特異性解毒劑，治療以支持療法為主
+  - Methocarbamol是控制肌肉震顫的重要藥物
+monitoringItems:
+  - 體溫每30分鐘監測直到正常
+  - 神經狀態持續評估
+  - 肝功能48-72小時後追蹤
+  - 酸鹼平衡和乳酸監測
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: mydriasis
+    frequency: uncommon
+ddxSource: book

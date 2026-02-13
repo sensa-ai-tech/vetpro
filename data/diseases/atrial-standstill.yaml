@@ -3,11 +3,11 @@ nameEn: Atrial Standstill
 nameZh: 心房靜止
 bodySystem: cardiac
 description: 心房無電氣活性，心電圖無 P 波。可為高血鉀引起 (暫時性) 或心房肌病變 (永久性)。為緊急狀況。
-
 aliases:
-  - { alias: 心房停頓, language: zh }
-  - { alias: Atrial Paralysis, language: en }
-
+  - alias: 心房停頓
+    language: zh
+  - alias: Atrial Paralysis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 多因尿道阻塞導致高血鉀
-
 etiology:
   categories:
     - name: 高血鉀
@@ -31,7 +30,6 @@ etiology:
     - name: 心肌病變
       examples:
         - 擴張型心肌病變晚期
-
 clinicalSigns:
   early:
     - 虛弱
@@ -41,51 +39,74 @@ clinicalSigns:
     - 暈厥
     - 休克
     - 猝死風險
-
 diagnosis:
   primaryTests:
     - name: 心電圖
-      notes: "無 P 波，心室率 40-60 bpm (交界性或心室性逃脫律)"
+      notes: 無 P 波，心室率 40-60 bpm (交界性或心室性逃脫律)
     - name: 血液檢查
-      notes: "電解質 (鉀)、腎功能"
+      notes: 電解質 (鉀)、腎功能
     - name: ACTH 刺激測試
-      notes: "若懷疑愛迪生氏病"
+      notes: 若懷疑愛迪生氏病
   differentialDiagnoses:
     - 高度房室傳導阻滯
     - 交界性心律
     - 病態竇房結症候群
-
 treatment:
   medical:
     - 高血鉀緊急處理:
-      - Calcium gluconate 10% 0.5-1 ml/kg IV slow
-      - Regular insulin 0.1-0.25 U/kg IV + dextrose 1-2 g/U
-      - Sodium bicarbonate (若酸中毒)
+        - Calcium gluconate 10% 0.5-1 ml/kg IV slow
+        - Regular insulin 0.1-0.25 U/kg IV + dextrose 1-2 g/U
+        - Sodium bicarbonate (若酸中毒)
     - 解除尿道阻塞
     - 永久性: Pacemaker
-
 prognosis:
-  general: "暫時性 (高血鉀) 預後良好若能迅速處理；永久性需 pacemaker，預後謹慎"
-
+  general: 暫時性 (高血鉀) 預後良好若能迅速處理；永久性需 pacemaker，預後謹慎
 prevention:
   - 早期診斷及治療下泌尿道疾病
   - 監測腎功能及電解質
   - 遺傳篩檢 (英國跳犬)
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology"
+  - sourceOrg: 'Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology'
     title: Indications for permanent pacing in dogs and cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7185536/
     type: review
-    pmid: "30709617"
+    pmid: '30709617'
   - sourceOrg: JFMS open reports
-    title: Transient myocardial thickening associated with acute myocardial injury and congestive heart failure in two Toxoplasma gondii-positive cats.
+    title: >-
+      Transient myocardial thickening associated with acute myocardial injury and congestive heart failure in two
+      Toxoplasma gondii-positive cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9629561/
     type: case-report
-    pmid: "36339325"
+    pmid: '36339325'
   - sourceOrg: Journal of the American Heart Association
-    title: "Dysfunction of Myosin Light-Chain 4 (MYL4) Leads to Heritable Atrial Cardiomyopathy With Electrical, Contractile, and Structural Components: Evidence From Genetically-Engineered Rats."
+    title: >-
+      Dysfunction of Myosin Light-Chain 4 (MYL4) Leads to Heritable Atrial Cardiomyopathy With Electrical, Contractile,
+      and Structural Components: Evidence From Genetically-Engineered Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5721782/
     type: research
-    pmid: "29080865"
+    pmid: '29080865'
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 心房靜止 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心電圖
+          notes: 無 P 波，心室率 40-60 bpm (交界性或心室性逃脫律)
+        - name: 血液檢查
+          notes: 電解質 (鉀)、腎功能
+        - name: ACTH 刺激測試
+          notes: 若懷疑愛迪生氏病
+ddxSource: auto-generated

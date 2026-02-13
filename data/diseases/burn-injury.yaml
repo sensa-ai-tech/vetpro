@@ -3,15 +3,19 @@ nameEn: Burn Injury
 nameZh: 燒燙傷
 bodySystem: other
 description: 熱能、化學物質、電流或輻射造成的皮膚與軟組織損傷。犬貓燒燙傷可依深度分為表淺性（一度）、部分厚度（二度）與全層厚度（三度）。體表面積 > 20% 的嚴重燒傷可引發全身性炎症反應與多器官衰竭。
-
 aliases:
-  - { alias: 燒傷, language: zh }
-  - { alias: 燙傷, language: zh }
-  - { alias: 灼傷, language: zh }
-  - { alias: Thermal Injury, language: en }
-  - { alias: Burn Wound, language: en }
-  - { alias: Scald Injury, language: en }
-
+  - alias: 燒傷
+    language: zh
+  - alias: 燙傷
+    language: zh
+  - alias: 灼傷
+    language: zh
+  - alias: Thermal Injury
+    language: en
+  - alias: Burn Wound
+    language: en
+  - alias: Scald Injury
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -21,7 +25,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓燒燙傷常因跳上廚房熱源（電爐、熱水壺）、火災、咬電線（電灼傷+口腔燒傷）。貓足墊燒傷常見於火災後。貓的皮膚較犬薄，相同熱源下損傷可能更嚴重。
-
 etiology:
   categories:
     - name: 熱燒傷（Thermal，最常見）
@@ -45,7 +48,6 @@ etiology:
       examples:
         - 放射線治療副作用
         - 日光性皮炎（白色或無色素區域）
-
 clinicalSigns:
   early:
     - 表淺性（一度）：紅斑、疼痛、輕微腫脹、毛髮仍附著
@@ -59,24 +61,23 @@ clinicalSigns:
     - 傷口感染（紅腫加重、膿性分泌物、異味）
     - 全身性炎症反應（SIRS）：發燒/低體溫、心搏過速、呼吸急促
   late:
-    - "燒傷休克（TBSA > 20%）：大量液體喪失、低血容量性休克"
+    - 燒傷休克（TBSA > 20%）：大量液體喪失、低血容量性休克
     - 敗血症（燒傷傷口為細菌進入門戶）
     - 急性腎損傷
     - DIC
     - 嚴重疼痛與應激性胃潰瘍（Curling's ulcer）
     - 嚴重瘢痕攣縮
-
 diagnosis:
   primaryTests:
     - name: 燒傷深度評估
-      notes: "表淺性（一度，僅表皮）、淺層部分厚度（二度淺，表皮+淺層真皮）、深層部分厚度（二度深，延伸至深層真皮）、全層（三度，全部真皮層破壞）。犬貓因毛髮覆蓋，初期評估常低估損傷深度。24-72 小時後重新評估。"
+      notes: 表淺性（一度，僅表皮）、淺層部分厚度（二度淺，表皮+淺層真皮）、深層部分厚度（二度深，延伸至深層真皮）、全層（三度，全部真皮層破壞）。犬貓因毛髮覆蓋，初期評估常低估損傷深度。24-72 小時後重新評估。
     - name: 體表面積（TBSA）估計
-      notes: "犬貓使用九分法改良版或手掌法（患者手掌 ≈ 1% TBSA）。前肢各 9%、後肢各 18%、頭頸 9%、背側軀幹 18%、腹側軀幹 18%。TBSA > 20% 為嚴重燒傷，> 50% 預後極差。"
+      notes: 犬貓使用九分法改良版或手掌法（患者手掌 ≈ 1% TBSA）。前肢各 9%、後肢各 18%、頭頸 9%、背側軀幹 18%、腹側軀幹 18%。TBSA > 20% 為嚴重燒傷，> 50% 預後極差。
   imaging:
     - name: 胸腔 X 光
-      notes: "火災患者評估吸入性損傷。煙霧吸入可導致急性肺損傷/ARDS。"
+      notes: 火災患者評估吸入性損傷。煙霧吸入可導致急性肺損傷/ARDS。
     - name: 超音波
-      notes: "評估腹部器官灌流、排除深部組織損傷。"
+      notes: 評估腹部器官灌流、排除深部組織損傷。
   additional:
     - CBC（白血球升高或降低、貧血）
     - 生化（BUN/Creatinine 評估腎功能、白蛋白、電解質、血糖）
@@ -84,7 +85,6 @@ diagnosis:
     - 血氣分析（火災患者評估 CO 中毒，COHb 升高）
     - 尿液分析（血紅素尿、肌紅素尿）
     - 傷口培養與敏感性試驗（感染時）
-
 treatment:
   principles:
     - 初級穩定（ABC 評估、輸液復甦）
@@ -93,47 +93,49 @@ treatment:
     - 傷口照護（清創、濕潤癒合環境）
     - 營養支持
   general:
-    - "初步冷卻：傷後 30 分鐘內以室溫水（15-20°C）沖洗 20 分鐘。禁用冰水（加重組織損傷）。"
-    - "輸液復甦（TBSA > 20%）：Parkland 公式改良版 — 4 mL/kg × %TBSA LRS 前 24 小時，前 8 小時給一半，後 16 小時給一半。依尿量調整（目標 1-2 mL/kg/hr）。"
-    - "疼痛管理：Fentanyl CRI 2-5 μg/kg/hr IV（嚴重燒傷）或 Methadone 0.1-0.5 mg/kg IV q4-6h"
-    - "Ketamine CRI 2-5 μg/kg/min IV（輔助止痛、NMDA 拮抗劑）"
-    - "局部疼痛管理：Lidocaine CRI 25-50 μg/kg/min IV（犬；貓需謹慎減量）"
-    - "傷口清創：移除壞死組織與焦痂。每日換藥評估。"
-    - "局部藥物：Silver sulfadiazine 1% cream（廣效抗菌，為燒傷傷口金標準局部藥物）"
-    - "Medical grade honey（Manuka honey）敷料：抗菌、促進肉芽組織生長、維持濕潤環境"
-    - "全身性抗生素（僅感染時使用）：Amoxicillin-clavulanate 12.5-25 mg/kg PO q12h 或 Cefazolin 22 mg/kg IV q8h"
-    - "消化道保護：Omeprazole 1 mg/kg PO/IV SID（預防應激性胃潰瘍）"
-    - "營養支持：熱量需求可達 RER 的 1.5-2 倍。高蛋白飲食（蛋白質佔 30-50% ME）。食道造口管餵食。"
-    - "大面積全層燒傷：需皮膚移植術（mesh graft 或 full-thickness graft）"
-
-prognosis: 表淺與淺層部分厚度燒傷（一度與二度淺）預後良好，通常 2-3 週內癒合。深層部分厚度與全層燒傷需長期治療與可能的手術重建。TBSA > 50% 預後極差，建議考慮安樂死。TBSA 20-50% 預後謹慎至保守。吸入性損傷（煙霧吸入）顯著增加死亡率。敗血症為嚴重燒傷最主要死因。營養支持充足與積極傷口照護可改善預後。
-
+    - 初步冷卻：傷後 30 分鐘內以室溫水（15-20°C）沖洗 20 分鐘。禁用冰水（加重組織損傷）。
+    - 輸液復甦（TBSA > 20%）：Parkland 公式改良版 — 4 mL/kg × %TBSA LRS 前 24 小時，前 8 小時給一半，後 16 小時給一半。依尿量調整（目標 1-2 mL/kg/hr）。
+    - 疼痛管理：Fentanyl CRI 2-5 μg/kg/hr IV（嚴重燒傷）或 Methadone 0.1-0.5 mg/kg IV q4-6h
+    - Ketamine CRI 2-5 μg/kg/min IV（輔助止痛、NMDA 拮抗劑）
+    - 局部疼痛管理：Lidocaine CRI 25-50 μg/kg/min IV（犬；貓需謹慎減量）
+    - 傷口清創：移除壞死組織與焦痂。每日換藥評估。
+    - 局部藥物：Silver sulfadiazine 1% cream（廣效抗菌，為燒傷傷口金標準局部藥物）
+    - Medical grade honey（Manuka honey）敷料：抗菌、促進肉芽組織生長、維持濕潤環境
+    - 全身性抗生素（僅感染時使用）：Amoxicillin-clavulanate 12.5-25 mg/kg PO q12h 或 Cefazolin 22 mg/kg IV q8h
+    - 消化道保護：Omeprazole 1 mg/kg PO/IV SID（預防應激性胃潰瘍）
+    - 營養支持：熱量需求可達 RER 的 1.5-2 倍。高蛋白飲食（蛋白質佔 30-50% ME）。食道造口管餵食。
+    - 大面積全層燒傷：需皮膚移植術（mesh graft 或 full-thickness graft）
+prognosis: >-
+  表淺與淺層部分厚度燒傷（一度與二度淺）預後良好，通常 2-3 週內癒合。深層部分厚度與全層燒傷需長期治療與可能的手術重建。TBSA > 50% 預後極差，建議考慮安樂死。TBSA 20-50%
+  預後謹慎至保守。吸入性損傷（煙霧吸入）顯著增加死亡率。敗血症為嚴重燒傷最主要死因。營養支持充足與積極傷口照護可改善預後。
 guidelineRefs:
   - sourceOrg: Veterinary Surgery
-    title: "Thermal burn injuries in dogs and cats: 40 cases"
+    title: 'Thermal burn injuries in dogs and cats: 40 cases'
     url: https://pubmed.ncbi.nlm.nih.gov/25040920/
     type: research
-    pmid: "25040920"
+    pmid: '25040920'
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
     title: Burn wound management in small animals
     url: https://pubmed.ncbi.nlm.nih.gov/20487242/
     type: review
-    pmid: "20487242"
+    pmid: '20487242'
   - sourceOrg: Veterinary Clinics of North America Small Animal Practice
-    title: "Management of specific injuries: burns and electrical injuries"
+    title: 'Management of specific injuries: burns and electrical injuries'
     url: https://pubmed.ncbi.nlm.nih.gov/16564071/
     type: review
-    pmid: "16564071"
+    pmid: '16564071'
   - sourceOrg: International journal of surgery (London, England)
-    title: "Unveiling advanced strategies for therapeutic stem cell interventions in severe burn injuries: a comprehensive review."
+    title: >-
+      Unveiling advanced strategies for therapeutic stem cell interventions in severe burn injuries: a comprehensive
+      review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11487052/
     type: review
-    pmid: "38869979"
+    pmid: '38869979'
   - sourceOrg: BMC veterinary research
-    title: "Evidence-based guidelines for the post-fire assessment of domestic ruminants: a scoping review."
+    title: 'Evidence-based guidelines for the post-fire assessment of domestic ruminants: a scoping review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11956198/
     type: review
-    pmid: "40165281"
+    pmid: '40165281'
     relevance: primary
 pubmedQueries:
   - query: '"burn" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "wound management" OR "fluid resuscitation")'
@@ -142,6 +144,50 @@ pubmedQueries:
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "EMG"
-  sectionTitle: "Thermal injuries"
+  chapter: EMG
+  sectionTitle: Thermal injuries
   pdfPage: 1760
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 燒燙傷 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - hypothermia-sign 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 燒傷深度評估
+          notes: 表淺性（一度，僅表皮）、淺層部分厚度（二度淺，表皮+淺層真皮）、深層部分厚度（二度深，延伸至深層真皮）、全層（三度，全部真皮層破壞）。犬貓因毛髮覆蓋，初期評估常低估損傷深度。24-72 小時後重新評估。
+        - name: 體表面積（TBSA）估計
+          notes: 犬貓使用九分法改良版或手掌法（患者手掌 ≈ 1% TBSA）。前肢各 9%、後肢各 18%、頭頸 9%、背側軀幹 18%、腹側軀幹 18%。TBSA > 20% 為嚴重燒傷，> 50% 預後極差。
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC（白血球升高或降低、貧血）
+        - 生化（BUN/Creatinine 評估腎功能、白蛋白、電解質、血糖）
+        - 乳酸（組織灌流指標）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 初級穩定（ABC 評估、輸液復甦）
+        - 冷卻傷口（僅限受傷後 30 分鐘內）
+        - 積極疼痛管理
+ddxSource: auto-generated

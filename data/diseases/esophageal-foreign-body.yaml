@@ -3,11 +3,11 @@ nameEn: Esophageal Foreign Body
 nameZh: 食道異物
 bodySystem: gastrointestinal
 description: 食道異物為滯留於食道內的異物，犬隻最常見於胸廓入口、心基底部與橫膈前方等解剖狹窄處。常見異物包括骨頭、魚刺、玩具碎片與釘子。長時間滯留可導致食道壁壞死、穿孔與縱膈炎，為需要緊急處理的急症。
-
 aliases:
-  - { alias: 食道卡異物, language: zh }
-  - { alias: Esophageal Obstruction, language: en }
-
+  - alias: 食道卡異物
+    language: zh
+  - alias: Esophageal Obstruction
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻較少見。魚骨、線狀異物為常見類型。
-
 etiology:
   categories:
     - name: 常見異物
@@ -29,7 +28,6 @@ etiology:
         - 胸廓入口（最常見）
         - 心基底部
         - 橫膈前方（食道裂孔處）
-
 clinicalSigns:
   early:
     - 急性吞嚥困難
@@ -42,14 +40,12 @@ clinicalSigns:
     - 脫水
     - 發燒（食道穿孔時）
     - 皮下氣腫（食道穿孔伴空氣外漏）
-
 diagnosis:
   primaryTests:
     - name: 胸腔 X 光
       notes: 多數骨頭或金屬異物可直接在 X 光上顯影。食道擴張（異物上方）。氣管偏移。穿孔時可見縱膈氣腫或胸腔積液。
     - name: 食道鏡檢查
       notes: 確診並可同時取出異物。評估食道黏膜損傷程度。不透射異物需內視鏡確認。
-
 treatment:
   principles:
     - 盡早取出異物避免食道壁壞死
@@ -59,39 +55,104 @@ treatment:
     - 內視鏡異物取出（首選，成功率 >90%）
     - 無法內視鏡取出時輕推異物至胃部（小型光滑異物）
     - 食道切開術（esophagotomy，內視鏡失敗時）
-    - "術後禁食 24-48 小時後給予流質飲食"
-    - "Sucralfate 0.5-1 g PO q8h（保護食道黏膜）"
-    - "Omeprazole 1 mg/kg PO q12h（減少胃酸反流）"
-
+    - 術後禁食 24-48 小時後給予流質飲食
+    - Sucralfate 0.5-1 g PO q8h（保護食道黏膜）
+    - Omeprazole 1 mg/kg PO q12h（減少胃酸反流）
 prognosis: 早期取出（<24 小時）預後良好。延遲取出（>48 小時）食道壁壞死風險增加，可能發展為食道狹窄。食道穿孔伴縱膈炎或膿胸預後不良。術後食道狹窄為最常見併發症（約 10-20%），可能需要球囊擴張治療。
-
-
 guidelineRefs:
   - sourceOrg: World journal of clinical cases
-    title: "Disappearing intraesophageal foreign body: A case report."
+    title: 'Disappearing intraesophageal foreign body: A case report.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12362437/
     type: case-report
-    pmid: "40881890"
-  - sourceOrg: "Indian journal of critical care medicine : peer-reviewed, official publication of Indian Society of Critical Care Medicine"
+    pmid: '40881890'
+  - sourceOrg: >-
+      Indian journal of critical care medicine : peer-reviewed, official publication of Indian Society of Critical Care
+      Medicine
     title: Flexible Fiberoptic Bronchoscopy for Esophageal Foreign Body Removal in Children.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12532218/
     type: research
-    pmid: "41114395"
-  - sourceOrg: "The journal of medical investigation : JMI"
+    pmid: '41114395'
+  - sourceOrg: 'The journal of medical investigation : JMI'
     title: Esophageal Impaction of a Large Chicken Bone in a Patient with Schizophrenia.
     url: https://pubmed.ncbi.nlm.nih.gov/41183955/
     type: case-report
-    pmid: "41183955"
+    pmid: '41183955'
   - sourceOrg: Revista espanola de enfermedades digestivas
-    title: "Cast the bait in human fishing: an expected esophageal foreign body."
+    title: 'Cast the bait in human fishing: an expected esophageal foreign body.'
     url: https://pubmed.ncbi.nlm.nih.gov/35899701/
     type: case-report
-    pmid: "35899701"
+    pmid: '35899701'
   - sourceOrg: Journal of the American Veterinary Medical Association
     title: Diagnosis and treatment of esophageal foreign body or stricture in three ferrets (Mustela putorius furo).
     url: https://pubmed.ncbi.nlm.nih.gov/28763273/
     type: case-report
-    pmid: "28763273"
+    pmid: '28763273'
 pubmedQueries:
   - query: '"esophageal foreign body" AND (veterinary OR canine OR feline) AND ("endoscopy" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 食道異物 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 急性吞嚥困難與流涎
+      findings:
+        - 急性劇烈流涎
+        - 吞嚥困難
+        - 反流
+        - 頸部或胸部疼痛
+    - step: 2
+      action: 影像確認
+      details: 頸胸部X光
+      findings:
+        - 不透光異物直接可見
+        - 食道擴張含氣
+        - 排除食道穿孔（氣縱膈、胸腔積液）
+        - 骨頭卡在心基部食道
+    - step: 3
+      action: 內視鏡取出
+      details: 食道內視鏡評估與取出
+      findings:
+        - 直視異物
+        - 評估食道黏膜損傷
+        - 內視鏡抓取或推入胃
+        - 嚴重損傷時需手術
+    - step: 4
+      action: 術後評估
+      details: 食道損傷程度與併發症監測
+      findings:
+        - 食道穿孔風險評估
+        - 術後禁食期管理
+        - 食道狹窄風險監測
+        - 抗生素與黏膜保護劑
+clinicalPearls:
+  - 時間是關鍵 - 越早取出，併發症越少
+  - 骨頭是最常見的食道異物
+  - 不要嘗試讓動物自行嘔出，可能加重損傷
+  - 皮下氣腫提示穿孔
+  - 內視鏡是首選取出方法
+  - 食道狹窄可能在取出後1-3週形成
+monitoringItems:
+  - 食慾和吞嚥功能
+  - 發燒
+  - 胸腔X光（若有穿孔風險）
+  - 反流症狀
+  - 食道狹窄徵象
+associatedSymptoms:
+  - symptomId: regurgitation
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

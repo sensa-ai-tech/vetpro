@@ -3,13 +3,15 @@ nameEn: Splenic Mass
 nameZh: 脾臟腫塊
 bodySystem: oncology
 description: 脾臟腫塊 (splenic mass) 為犬腹腔最常見的偶然發現之一，犬脾臟腫塊中約 50-65% 為惡性。包含腫瘤性與非腫瘤性病變，術前影像學無法可靠區分良惡性，因此脾臟切除術為診斷與治療的首選方法。常以急性腹腔出血的急診方式就醫。
-
 aliases:
-  - { alias: 脾臟包塊, language: zh }
-  - { alias: 脾臟佔位性病變, language: zh }
-  - { alias: Splenic Lesion, language: en }
-  - { alias: Splenic Nodule, language: en }
-
+  - alias: 脾臟包塊
+    language: zh
+  - alias: 脾臟佔位性病變
+    language: zh
+  - alias: Splenic Lesion
+    language: en
+  - alias: Splenic Nodule
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓脾臟腫塊較犬少見。肥大細胞瘤與淋巴瘤為最常見惡性原因。髓外造血與脾臟淀粉樣變性也需考慮。
-
 etiology:
   categories:
     - name: 腫瘤性病變
@@ -33,7 +34,6 @@ etiology:
         - 膿瘍
         - 髓外造血 (extramedullary hematopoiesis)
         - 梗塞
-
 clinicalSigns:
   early:
     - 偶然發現（健檢或影像檢查時）
@@ -46,7 +46,6 @@ clinicalSigns:
     - 心動過速
     - 腹痛
     - 休克徵象（破裂出血時）
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
@@ -63,7 +62,6 @@ diagnosis:
     - 凝血功能（PT、aPTT、D-dimer — DIC 篩檢）
     - 血清生化
     - 不建議術前 FNA（出血風險高且診斷價值有限）
-
 treatment:
   principles:
     - 脾臟切除術為首選
@@ -78,41 +76,94 @@ treatment:
     - 根據組織病理結果決定是否需輔助化療
     - 血管肉瘤確認後啟動 doxorubicin 化療
     - 結節性增生或良性腫瘤僅需手術即可
-
 prognosis: 非腫瘤性脾臟腫塊（結節性增生、血腫）脾切除後預後極佳。良性腫瘤（血管瘤）預後好。惡性腫瘤預後取決於類型：血管肉瘤最差（中位存活數月），淋巴瘤視化療反應，肥大細胞瘤經脾切除可控制數月至數年。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline abdominal ultrasonography: What's normal? What's abnormal? The spleen."
+    title: 'Feline abdominal ultrasonography: What''s normal? What''s abnormal? The spleen.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812128/
     type: review
-    pmid: "33627002"
+    pmid: '33627002'
     relevance: primary
   - sourceOrg: Veterinary sciences
-    title: Analysis of the Prevalence of Canine Splenic Mass Lesions in Republic of Korea via Histopathological Diagnosis with Immunohistochemistry.
+    title: >-
+      Analysis of the Prevalence of Canine Splenic Mass Lesions in Republic of Korea via Histopathological Diagnosis
+      with Immunohistochemistry.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10143242/
     type: research
-    pmid: "37104402"
+    pmid: '37104402'
     relevance: supporting
   - sourceOrg: Molecules (Basel, Switzerland)
-    title: "Galangin/&#x3b2;-Cyclodextrin Inclusion Complex as a Drug-Delivery System for Improved Solubility and Biocompatibility in Breast Cancer Treatment."
+    title: >-
+      Galangin/&#x3b2;-Cyclodextrin Inclusion Complex as a Drug-Delivery System for Improved Solubility and
+      Biocompatibility in Breast Cancer Treatment.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9318178/
     type: research
-    pmid: "35889394"
+    pmid: '35889394'
     relevance: supporting
-  - sourceOrg: "Journal of immunology (Baltimore, Md. : 1950)"
-    title: "Oral NaHCO3 Activates a Splenic Anti-Inflammatory Pathway: Evidence That Cholinergic Signals Are Transmitted via Mesothelial Cells."
+  - sourceOrg: 'Journal of immunology (Baltimore, Md. : 1950)'
+    title: >-
+      Oral NaHCO3 Activates a Splenic Anti-Inflammatory Pathway: Evidence That Cholinergic Signals Are Transmitted via
+      Mesothelial Cells.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5940560/
     type: research
-    pmid: "29661827"
+    pmid: '29661827'
     relevance: supporting
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Evaluation of the validity of the double two-thirds rule for diagnosing hemangiosarcoma in dogs with nontraumatic hemoperitoneum due to a ruptured splenic mass: a systematic review."
+    title: >-
+      Evaluation of the validity of the double two-thirds rule for diagnosing hemangiosarcoma in dogs with nontraumatic
+      hemoperitoneum due to a ruptured splenic mass: a systematic review.
     url: https://pubmed.ncbi.nlm.nih.gov/36322487/
     type: review
-    pmid: "36322487"
+    pmid: '36322487'
     relevance: primary
 pubmedQueries:
   - query: '"splenic mass" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "splenectomy" OR "outcome")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 脾臟腫塊 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - abdominal-distension 相關症狀
+        - pallor-cyanosis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 偵測脾臟腫塊首選方法。評估數量、大小、回音性質。偵測腹腔游離液體。但無法區分良惡性
+        - name: 腹腔穿刺 (abdominocentesis)
+          notes: 急性腹水時評估。血性腹水需測定 PCV、比重。非凝固性血液提示活動性出血
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC（裂片紅血球 schistocytes、球形紅血球、血小板減少）
+        - 凝血功能（PT、aPTT、D-dimer — DIC 篩檢）
+        - 血清生化
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 脾臟切除術為首選
+        - 急性出血需緊急穩定化
+        - 術後組織病理決定後續治療
+ddxSource: auto-generated

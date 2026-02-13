@@ -3,23 +3,21 @@ nameEn: Rabbit Ovarian Cyst
 nameZh: 兔卵巢囊腫
 bodySystem: reproductive
 description: 未絕育母兔卵巢形成液體填充的囊性結構，可為功能性（卵泡囊腫）或非功能性。為未絕育母兔常見的生殖系統疾病，可能伴隨行為改變及假懷孕。
-
 aliases:
-  - { alias: "兔卵巢囊腫", language: zh }
-  - { alias: "Rabbit Ovarian Cyst", language: en }
-
+  - alias: 兔卵巢囊腫
+    language: zh
+  - alias: Rabbit Ovarian Cyst
+    language: en
 species:
   - speciesCommon: rabbit
     prevalence: uncommon
     notes: 兔可受此疾病影響。
-
 etiology:
   categories:
     - name: 荷爾蒙性
       examples:
         - 持續排卵刺激（兔為誘發排卵動物，未交配可導致卵泡囊腫）
         - 黃體囊腫
-
 clinicalSigns:
   early:
     - 行為改變（攻擊性、築巢行為增加）
@@ -30,14 +28,12 @@ clinicalSigns:
     - 食慾下降
     - 脫毛
     - 乳腺腫脹
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
       notes: 卵巢上可見單個或多個無回音囊性結構。
     - name: 理學檢查
       notes: 腹部觸診可觸及囊性結構。
-
 treatment:
   principles:
     - 卵巢子宮摘除為根治方法
@@ -46,41 +42,72 @@ treatment:
     - 卵巢子宮摘除術（ovariohysterectomy，首選且根治性）
     - 術後止痛
     - 灌食支持（術後恢復期）
-
 prognosis: 卵巢子宮摘除後預後極佳。同時預防了子宮腺癌的風險。保守治療（不手術）囊腫可能復發或增大。
-
-
 guidelineRefs:
   - sourceOrg: Antioxidants (Basel, Switzerland)
-    title: N-Acetylcysteine Alleviates D-Galactose-Induced Injury of Ovarian Granulosa Cells in Female Rabbits by Regulating the PI3K/Akt/mTOR Signaling Pathway.
+    title: >-
+      N-Acetylcysteine Alleviates D-Galactose-Induced Injury of Ovarian Granulosa Cells in Female Rabbits by Regulating
+      the PI3K/Akt/mTOR Signaling Pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11047383/
     type: research
-    pmid: "38671832"
+    pmid: '38671832'
     relevance: supporting
   - sourceOrg: PloS one
     title: Natural autoantibodies to the gonadotropin-releasing hormone receptor in polycystic ovarian syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8018624/
     type: research
-    pmid: "33798258"
+    pmid: '33798258'
     relevance: supporting
   - sourceOrg: The Journal of veterinary medical science
     title: Ovarian lesions in 44 rabbits (Oryctolagus cuniculus).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5745178/
     type: research
-    pmid: "29057758"
+    pmid: '29057758'
     relevance: supporting
   - sourceOrg: Journal of comparative pathology
-    title: "Mammary and reproductive tract tumours and tumour-like lesions of 286 small pet mammals: a retrospective study."
+    title: 'Mammary and reproductive tract tumours and tumour-like lesions of 286 small pet mammals: a retrospective study.'
     url: https://pubmed.ncbi.nlm.nih.gov/39116801/
     type: research
-    pmid: "39116801"
+    pmid: '39116801'
     relevance: supporting
   - sourceOrg: Turkish journal of medical sciences
-    title: "Effects of naloxone and yohimbine in polycystic ovary syndrome: a rabbit model study."
+    title: 'Effects of naloxone and yohimbine in polycystic ovary syndrome: a rabbit model study.'
     url: https://pubmed.ncbi.nlm.nih.gov/27513434/
     type: research
-    pmid: "27513434"
+    pmid: '27513434'
     relevance: supporting
 pubmedQueries:
   - query: '"Rabbit Ovarian Cyst" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: alopecia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔卵巢囊腫 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - behaviour-change 相關症狀
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 卵巢上可見單個或多個無回音囊性結構。
+        - name: 理學檢查
+          notes: 腹部觸診可觸及囊性結構。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 卵巢子宮摘除為根治方法
+        - 同時預防子宮腺癌
+ddxSource: auto-generated

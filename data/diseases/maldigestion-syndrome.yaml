@@ -3,11 +3,11 @@ nameEn: Maldigestion Syndrome
 nameZh: 消化不良症候群
 bodySystem: gastrointestinal
 description: 食物無法正常消化,主要因胰外分泌功能不全 (EPI) 導致消化酵素缺乏。症狀為大量油膩糞便及體重減輕。
-
 aliases:
-  - { alias: 消化障礙, language: zh }
-  - { alias: Digestive Insufficiency, language: en }
-
+  - alias: 消化障礙
+    language: zh
+  - alias: Digestive Insufficiency
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 罕見,可能因慢性胰臟炎
-
 etiology:
   categories:
     - name: 胰外分泌功能不全
@@ -27,7 +26,6 @@ etiology:
     - name: 膽汁分泌不足
       examples:
         - 肝膽疾病
-
 clinicalSigns:
   early:
     - 大量軟便或腹瀉 (油膩、惡臭)
@@ -36,30 +34,51 @@ clinicalSigns:
     - 嚴重體重減輕
     - 食糞行為
     - 營養不良
-
 diagnosis:
   primaryTests:
     - name: 血清 TLI
-      notes: "犬 < 2.5 μg/L、貓 < 8 μg/L 確診 EPI"
+      notes: 犬 < 2.5 μg/L、貓 < 8 μg/L 確診 EPI
     - name: 糞便檢查
-      notes: "未消化脂肪、澱粉"
+      notes: 未消化脂肪、澱粉
     - name: Cobalamin/Folate
-      notes: "評估繼發吸收不良"
+      notes: 評估繼發吸收不良
   differentialDiagnoses:
     - 吸收不良症候群
     - IBD
     - 小腸細菌過度生長
-
 treatment:
   medical:
     - 胰酵素補充 (隨餐給予)
     - 高消化性、低脂飲食
     - Cobalamin 補充 (若缺乏)
     - 抗生素 (若有 SIBO)
-
 prognosis:
-  general: "預後良好;終身胰酵素補充可維持正常生活,多數病例體重恢復"
-
+  general: 預後良好;終身胰酵素補充可維持正常生活,多數病例體重恢復
 prevention:
   - 遺傳篩檢 (德國狼犬)
   - 早期診斷及治療胰臟炎
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 消化不良症候群 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清 TLI
+          notes: 犬 < 2.5 μg/L、貓 < 8 μg/L 確診 EPI
+        - name: 糞便檢查
+          notes: 未消化脂肪、澱粉
+        - name: Cobalamin/Folate
+          notes: 評估繼發吸收不良
+ddxSource: auto-generated

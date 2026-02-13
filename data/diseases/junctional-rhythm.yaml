@@ -3,12 +3,13 @@ nameEn: Junctional Rhythm
 nameZh: 交界性心律
 bodySystem: cardiac
 description: 房室結取代竇房結成為心臟起搏點，通常因竇房結功能不全或迷走神經張力過高。心電圖顯示無 P 波或逆行 P 波。
-
 aliases:
-  - { alias: 房室交界性心律, language: zh }
-  - { alias: AV Junctional Rhythm, language: en }
-  - { alias: Nodal Rhythm, language: en }
-
+  - alias: 房室交界性心律
+    language: zh
+  - alias: AV Junctional Rhythm
+    language: en
+  - alias: Nodal Rhythm
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 罕見
-
 etiology:
   categories:
     - name: 迷走神經相關
@@ -33,7 +33,6 @@ etiology:
       examples:
         - α2-agonist
         - Digoxin 毒性
-
 clinicalSigns:
   early:
     - 心跳規則但略慢
@@ -42,30 +41,51 @@ clinicalSigns:
     - 虛弱
     - 運動不耐
     - 暈厥 (嚴重時)
-
 diagnosis:
   primaryTests:
     - name: 心電圖
-      notes: "無 P 波或 P 波在 QRS 後 (逆行)，QRS 形態正常，心室率 40-60 bpm"
+      notes: 無 P 波或 P 波在 QRS 後 (逆行)，QRS 形態正常，心室率 40-60 bpm
     - name: Atropine 反應測試
-      notes: "若竇性節律恢復，提示迷走相關"
+      notes: 若竇性節律恢復，提示迷走相關
     - name: 血液檢查
-      notes: "電解質、digoxin 濃度 (若有使用)"
+      notes: 電解質、digoxin 濃度 (若有使用)
   differentialDiagnoses:
     - 竇性心搏過緩
     - 房室傳導阻滯
     - 心房靜止
-
 treatment:
   medical:
     - 若無症狀，無需治療
     - Atropine 0.02-0.04 mg/kg IV (急性處理)
     - 停用相關藥物
     - Pacemaker (嚴重症狀性病例)
-
 prognosis:
-  general: "預後良好；多為暫時性 (麻醉或迷走刺激)；持續性需評估竇房結功能"
-
+  general: 預後良好；多為暫時性 (麻醉或迷走刺激)；持續性需評估竇房結功能
 prevention:
   - 謹慎使用迷走刺激藥物
   - 監測麻醉中心律
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 交界性心律 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心電圖
+          notes: 無 P 波或 P 波在 QRS 後 (逆行)，QRS 形態正常，心室率 40-60 bpm
+        - name: Atropine 反應測試
+          notes: 若竇性節律恢復，提示迷走相關
+        - name: 血液檢查
+          notes: 電解質、digoxin 濃度 (若有使用)
+ddxSource: auto-generated

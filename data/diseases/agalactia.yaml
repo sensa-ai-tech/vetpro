@@ -3,13 +3,15 @@ nameEn: Agalactia
 nameZh: 無乳症
 bodySystem: reproductive
 description: 無乳症 (agalactia) 為產後母犬或母貓無法產生或分泌乳汁的狀態。可為原發性（泌乳機制障礙）或繼發性（乳腺炎、全身性疾病、壓力）。新生仔畜完全依賴母乳獲取初乳抗體與營養，無乳症可導致新生兒低血糖、脫水與死亡。
-
 aliases:
-  - { alias: 泌乳不足, language: zh }
-  - { alias: 乳汁缺乏, language: zh }
-  - { alias: Hypogalactia, language: en }
-  - { alias: Lactation Failure, language: en }
-
+  - alias: 泌乳不足
+    language: zh
+  - alias: 乳汁缺乏
+    language: zh
+  - alias: Hypogalactia
+    language: en
+  - alias: Lactation Failure
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓無乳症較犬少見。剖腹產後與高壓力環境為風險因子。初產母貓需較多時間建立泌乳。
-
 etiology:
   categories:
     - name: 原發性無乳
@@ -34,7 +35,6 @@ etiology:
         - 剖腹產後
         - 營養不良
         - 藥物影響（cabergoline 等 dopamine agonist）
-
 clinicalSigns:
   early:
     - 乳腺無腫脹或泌乳
@@ -45,7 +45,6 @@ clinicalSigns:
     - 新生仔畜脫水
     - 新生仔畜體重不增反降
     - 新生仔畜死亡
-
 diagnosis:
   primaryTests:
     - name: 乳腺評估
@@ -56,7 +55,6 @@ diagnosis:
     - 母犬全身評估（排除全身性疾病）
     - 血清 prolactin（如可測）
     - 乳腺超音波（排除膿瘍）
-
 treatment:
   principles:
     - 確保新生仔畜營養（人工哺乳）
@@ -71,41 +69,83 @@ treatment:
     - 治療乳腺炎（如有）
     - 減少環境壓力
     - 營養充足飲食
-
 prognosis: 繼發性無乳症在消除潛在原因後多數可恢復泌乳。原發性乳腺發育不全者預後差。新生仔畜早期人工哺乳介入為存活關鍵。初乳攝取不足的新生仔畜免疫力較差，需特別注意感染預防。
-
-
 guidelineRefs:
   - sourceOrg: Open veterinary journal
-    title: "Lumpy skin disease: A growing threat to the global livestock industry."
+    title: 'Lumpy skin disease: A growing threat to the global livestock industry.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11974308/
     type: review
-    pmid: "40201838"
+    pmid: '40201838'
   - sourceOrg: Veterinary sciences
-    title: "Pharmacokinetics of Meloxicam in Different Animal Species: A Comprehensive Review."
+    title: 'Pharmacokinetics of Meloxicam in Different Animal Species: A Comprehensive Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11598963/
     type: review
-    pmid: "39591293"
+    pmid: '39591293'
   - sourceOrg: Vaccines
-    title: "Mycoplasma agalactiae Vaccines: Current Status, Hurdles, and Opportunities Due to Advances in Pathogenicity Studies."
+    title: >-
+      Mycoplasma agalactiae Vaccines: Current Status, Hurdles, and Opportunities Due to Advances in Pathogenicity
+      Studies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10892753/
     type: review
-    pmid: "38400139"
+    pmid: '38400139'
   - sourceOrg: Journal of mammary gland biology and neoplasia
     title: Development and Pathology of the Equine Mammary Gland.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8236023/
     type: review
-    pmid: "33280071"
+    pmid: '33280071'
   - sourceOrg: Pathogens (Basel, Switzerland)
-    title: "Vaccines for Mycoplasma Diseases of Small Ruminants: A Neglected Area of Research."
+    title: 'Vaccines for Mycoplasma Diseases of Small Ruminants: A Neglected Area of Research.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8781016/
     type: review
-    pmid: "35056023"
+    pmid: '35056023'
   - sourceOrg: Clinical and experimental vaccine research
-    title: "Porcine epidemic diarrhea: a review of current epidemiology and available vaccines."
+    title: 'Porcine epidemic diarrhea: a review of current epidemiology and available vaccines.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4524901/
     type: review
-    pmid: "26273575"
+    pmid: '26273575'
 pubmedQueries:
   - query: '"agalactia" OR "lactation failure" AND (veterinary OR canine OR feline) AND ("treatment" OR "neonatal")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 無乳症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估產後母體乳汁分泌不足
+      findings:
+        - 幼崽持續哭叫和體重不增
+        - 乳腺發育不良或無乳汁
+        - 產後母體精神狀態評估
+        - 首次生產或早產
+    - step: 2
+      action: 母體評估
+      details: 評估母體健康和荷爾蒙狀態
+      findings:
+        - 全身健康狀態評估
+        - 乳腺觸診（發育程度）
+        - 排除乳腺炎
+        - 排除全身性疾病
+    - step: 3
+      action: 病因鑑別
+      details: 確定無乳症的原因
+      findings:
+        - 原發性：乳腺發育不全
+        - 繼發性：全身性疾病、營養不良
+        - 藥物相關（某些藥物抑制泌乳）
+        - 心理因素（緊迫、排斥幼崽）
+clinicalPearls:
+  - 最重要的是先確保幼崽存活（保溫 + 補充營養），再處理母犬問題
+  - 剖腹產後常見暫時性無乳症，通常 24-48 小時內改善
+  - Metoclopramide 同時有止吐和促泌乳作用
+  - 幼崽吸吮本身是最強的泌乳刺激
+monitoringItems:
+  - 幼崽每 4-6 小時體重監測
+  - 監測幼崽體溫（應 >35°C）
+  - 母犬乳腺充盈程度每日評估
+  - 母犬食慾和精神狀態監測
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+ddxSource: book

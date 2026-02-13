@@ -3,11 +3,11 @@ nameEn: Agenesis of Corpus Callosum
 nameZh: 胼胝體發育不全
 bodySystem: neurology
 description: 胼胝體發育不全是大腦兩半球間最大連合纖維束未發育或發育不完全的先天畸形。犬貓均有報告，臨床表現從無症狀到嚴重行為與神經功能異常。
-
 aliases:
-  - { alias: 胼胝體缺如, language: zh }
-  - { alias: Corpus callosum agenesis, language: en }
-
+  - alias: 胼胝體缺如
+    language: zh
+  - alias: Corpus callosum agenesis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 犬貓均罕見。可能伴隨其他腦部畸形。
-
 etiology:
   categories:
     - name: 先天發育異常
@@ -23,7 +22,6 @@ etiology:
         - 大腦連合纖維發育障礙
         - 胚胎期腦部發育異常
         - 可能伴隨其他畸形
-
 clinicalSigns:
   early:
     - 可能無明顯症狀
@@ -32,33 +30,57 @@ clinicalSigns:
     - 行為異常
     - 癲癇發作
     - 認知功能障礙
-
 diagnosis:
   primaryTests:
     - name: 影像與臨床檢查
       notes: MRI 可明確顯示胼胝體缺失。可能合併其他腦部異常。
-
 treatment:
   principles:
     - 依嚴重程度決定保守或手術治療
     - 支持療法
   general:
     - 無特效治療。癲癇者給予抗癲癇藥。支持性照護。
-
 prognosis: 視併發症嚴重程度而定。單純胼胝體缺失可能無明顯臨床影響。伴隨其他畸形者預後較差。
-
-
 guidelineRefs:
-  - sourceOrg: "Experimental &amp; molecular medicine"
-    title: Progressive neuroinflammation and deficits in motor function in a mouse model with an Epg5 pathogenic variant of Vici syndrome.
+  - sourceOrg: Experimental &amp; molecular medicine
+    title: >-
+      Progressive neuroinflammation and deficits in motor function in a mouse model with an Epg5 pathogenic variant of
+      Vici syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12868609/
     type: research
-    pmid: "41618100"
+    pmid: '41618100'
   - sourceOrg: Proceedings of the National Academy of Sciences of the United States of America
     title: Cryo-EM structures elucidate the multiligand receptor nature of megalin.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11145282/
     type: research
-    pmid: "38771880"
+    pmid: '38771880'
 pubmedQueries:
   - query: '"Agenesis of Corpus Callosum" AND (veterinary OR canine OR feline) AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 胼胝體發育不全 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - seizures 相關症狀
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 影像與臨床檢查
+          notes: MRI 可明確顯示胼胝體缺失。可能合併其他腦部異常。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 依嚴重程度決定保守或手術治療
+        - 支持療法
+ddxSource: auto-generated

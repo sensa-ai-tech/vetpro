@@ -2,14 +2,18 @@ slug: giardiasis-infectious
 nameEn: Giardiasis Infectious
 nameZh: 梨形鞭毛蟲感染
 bodySystem: infectious
-description: 梨形鞭毛蟲感染 (giardiasis) 由 Giardia duodenalis（syn. G. lamblia, G. intestinalis）引起的腸道原蟲病。犬貓常見，經糞口途徑傳播。臨床表現從無症狀到慢性軟便/腹瀉不等。為人畜共通傳染病，但犬貓與人的基因型多數不同。
-
+description: >-
+  梨形鞭毛蟲感染 (giardiasis) 由 Giardia duodenalis（syn. G. lamblia, G.
+  intestinalis）引起的腸道原蟲病。犬貓常見，經糞口途徑傳播。臨床表現從無症狀到慢性軟便/腹瀉不等。為人畜共通傳染病，但犬貓與人的基因型多數不同。
 aliases:
-  - { alias: 梨形鞭毛蟲病, language: zh }
-  - { alias: 賈第蟲感染, language: zh }
-  - { alias: Giardia Infection, language: en }
-  - { alias: Giardiasis, language: en }
-
+  - alias: 梨形鞭毛蟲病
+    language: zh
+  - alias: 賈第蟲感染
+    language: zh
+  - alias: Giardia Infection
+    language: en
+  - alias: Giardiasis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓感染率約 5-15%。貓特異性基因型（Assemblage F）為主。多貓環境感染率更高。幼貓較易表現臨床症狀。
-
 etiology:
   categories:
     - name: 病原與傳播
@@ -32,7 +35,6 @@ etiology:
         - 破壞微絨毛刷狀緣
         - 引起吸收不良
         - 可能激活宿主免疫反應
-
 clinicalSigns:
   early:
     - 軟便或輕度腹瀉
@@ -44,7 +46,6 @@ clinicalSigns:
     - 黏液便
     - 脫水（嚴重者）
     - 被毛品質變差
-
 diagnosis:
   primaryTests:
     - name: 糞便抗原 ELISA/快篩
@@ -54,7 +55,6 @@ diagnosis:
   additional:
     - 糞便 PCR（最敏感，可做基因型鑑定）
     - 排除其他腸道病原（混合感染常見）
-
 treatment:
   principles:
     - 臨床症狀犬貓應治療
@@ -69,36 +69,74 @@ treatment:
     - 多犬/多貓家庭所有動物同時治療
     - 飲水衛生
     - 治療 2-4 週後追蹤糞便抗原
-
 prognosis: 犬貓梨形鞭毛蟲感染預後良好。適當藥物治療配合環境管理通常可清除感染。再感染常見（特別是群養環境）。慢性感染可能影響幼畜生長但一般不致命。
-
-
 guidelineRefs:
   - sourceOrg: PLoS neglected tropical diseases
-    title: "Global prevalence of Giardia infection in nonhuman mammalian hosts: A systematic review and meta-analysis of five million animals."
+    title: >-
+      Global prevalence of Giardia infection in nonhuman mammalian hosts: A systematic review and meta-analysis of five
+      million animals.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12052165/
     type: review
-    pmid: "40273200"
+    pmid: '40273200'
   - sourceOrg: AAS open research
-    title: "The nexus between improved water supply and water-borne diseases in urban areas in Africa: a scoping review."
+    title: 'The nexus between improved water supply and water-borne diseases in urban areas in Africa: a scoping review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8311817/
     type: review
-    pmid: "34368620"
+    pmid: '34368620'
   - sourceOrg: Microorganisms
-    title: "Giardia duodenalis Styles, 1902 Prevalence in Cattle (Bos taurus Linnaeus, 1758) in Europe: A Systematic Review."
+    title: 'Giardia duodenalis Styles, 1902 Prevalence in Cattle (Bos taurus Linnaeus, 1758) in Europe: A Systematic Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9965812/
     type: review
-    pmid: "36838274"
+    pmid: '36838274'
   - sourceOrg: Food and waterborne parasitology
     title: Molecular epidemiologic tools for waterborne pathogens Cryptosporidium spp. and Giardia duodenalis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7034008/
     type: review
-    pmid: "32095639"
+    pmid: '32095639'
   - sourceOrg: Parasite (Paris, France)
-    title: "Update on Cryptosporidium spp.: highlights from the Seventh International Giardia and Cryptosporidium Conference."
+    title: 'Update on Cryptosporidium spp.: highlights from the Seventh International Giardia and Cryptosporidium Conference.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7069357/
     type: review
-    pmid: "32167464"
+    pmid: '32167464'
 pubmedQueries:
   - query: '"giardiasis" AND (veterinary OR canine OR feline) AND ("treatment" OR "guidelines")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 梨形鞭毛蟲感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - diarrhoea 相關症狀
+        - dehydration 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便抗原 ELISA/快篩
+          notes: 敏感度與特異性高（>90%），為推薦的首選檢測。比直接鏡檢更可靠
+        - name: 糞便直接鏡檢與浮游法
+          notes: 硫酸鋅浮游法可見囊體。新鮮糞便直接抹片偶可見運動中的營養體。需多次檢查（間歇性排囊體）
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 糞便 PCR（最敏感，可做基因型鑑定）
+        - 排除其他腸道病原（混合感染常見）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 臨床症狀犬貓應治療
+        - 無症狀帶原是否治療有爭議
+        - 環境去汙染防止再感染
+ddxSource: auto-generated

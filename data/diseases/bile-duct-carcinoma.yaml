@@ -3,11 +3,11 @@ nameEn: Bile Duct Carcinoma
 nameZh: 膽管癌
 bodySystem: oncology
 description: 膽管上皮細胞的惡性腫瘤（cholangiocarcinoma）。為犬貓原發性肝臟惡性腫瘤中較常見的類型。局部侵犯性強且早期腹膜腔轉移常見。
-
 aliases:
-  - { alias: "Cholangiocarcinoma", language: en }
-  - { alias: "膽管細胞癌", language: zh }
-
+  - alias: Cholangiocarcinoma
+    language: en
+  - alias: 膽管細胞癌
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,14 +15,12 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓為貓最常見的原發性肝臟腫瘤。
-
 etiology:
   categories:
     - name: 腫瘤性
       examples:
         - 膽管上皮惡性增生
         - 可能與慢性膽管炎相關（貓）
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -33,14 +31,12 @@ clinicalSigns:
     - 腹水
     - 肝腫大
     - 惡病質
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
       notes: 肝臟腫塊或瀰漫性浸潤
     - name: 細針穿刺/活檢
       notes: 組織病理確診
-
 treatment:
   principles:
     - 手術切除（單葉型可能可行）
@@ -50,31 +46,72 @@ treatment:
     - 化療效果有限
     - 支持性照護
     - 止痛
-
 prognosis: 預後不良。完全切除罕見。中位存活通常 < 6 個月。貓略優於犬。
-
-
 guidelineRefs:
   - sourceOrg: Oncology letters
     title: Genetic alterations in Japanese extrahepatic biliary tract cancer.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5494721/
     type: research
-    pmid: "28693246"
+    pmid: '28693246'
   - sourceOrg: Journal of comparative pathology
-    title: Gross, cytological and histological features of a cholangiocarcinoma, with immunolabelling of cytokeratin 19, in a bronze-winged parrot (Pionus chalcopterus).
+    title: >-
+      Gross, cytological and histological features of a cholangiocarcinoma, with immunolabelling of cytokeratin 19, in a
+      bronze-winged parrot (Pionus chalcopterus).
     url: https://pubmed.ncbi.nlm.nih.gov/39970837/
     type: case-report
-    pmid: "39970837"
+    pmid: '39970837'
   - sourceOrg: Veterinary and comparative oncology
-    title: "Feline primary nonhematopoietic malignant liver tumours: A multicenter retrospective study (2000-2021)."
+    title: 'Feline primary nonhematopoietic malignant liver tumours: A multicenter retrospective study (2000-2021).'
     url: https://pubmed.ncbi.nlm.nih.gov/36635958/
     type: research
-    pmid: "36635958"
+    pmid: '36635958'
   - sourceOrg: Journal of biomedical optics
     title: Quantitative analysis of liver tumors at different stages using microscopic hyperspectral imaging technology.
     url: https://pubmed.ncbi.nlm.nih.gov/30277033/
     type: research
-    pmid: "30277033"
+    pmid: '30277033'
 pubmedQueries:
-  - query: '"bile duct carcinoma" OR "cholangiocarcinoma" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
+  - query: >-
+      "bile duct carcinoma" OR "cholangiocarcinoma" AND (veterinary OR canine OR feline) AND ("treatment" OR
+      "prognosis")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 膽管癌 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 肝臟腫塊或瀰漫性浸潤
+        - name: 細針穿刺/活檢
+          notes: 組織病理確診
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術切除（單葉型可能可行）
+        - 預後通常不良
+ddxSource: auto-generated

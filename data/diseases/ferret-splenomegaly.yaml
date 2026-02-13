@@ -3,19 +3,20 @@ nameEn: Ferret Splenomegaly
 nameZh: 雪貂脾腫大
 bodySystem: hematology
 description: 雪貂脾臟異常腫大為極常見的臨床發現，病因範圍從良性的髓外造血到惡性的淋巴瘤或脾臟腫瘤，需要系統性鑑別診斷判斷臨床意義。
-
 aliases:
-  - { alias: 雪貂脾臟腫大, language: zh }
-  - { alias: 雪貂脾腫, language: zh }
-  - { alias: Ferret enlarged spleen, language: en }
-  - { alias: Ferret splenic disease, language: en }
-
+  - alias: 雪貂脾臟腫大
+    language: zh
+  - alias: 雪貂脾腫
+    language: zh
+  - alias: Ferret enlarged spleen
+    language: en
+  - alias: Ferret splenic disease
+    language: en
 species:
   - speciesCommon: ferret
     speciesScientific: Mustela putorius furo
     prevalence: very common
     notes: 雪貂脾腫大極為常見，幾乎所有中老年雪貂都有某種程度的脾腫大。多數為良性 (髓外造血或反應性增生)。需鑑別良性與惡性原因。腹部觸診幾乎是雪貂理學檢查的常規發現。
-
 etiology:
   categories:
     - name: 良性原因
@@ -36,7 +37,6 @@ etiology:
         - 阿留申病毒 (Aleutian disease virus, ADV)
         - 全身性感染
         - 慢性炎症
-
 clinicalSigns:
   early:
     - 腹部觸診可摸到腫大脾臟 (多數為偶然發現)
@@ -54,26 +54,24 @@ clinicalSigns:
     - 脾臟破裂致腹腔內出血 (急性腹痛、蒼白、休克)
     - 貧血 (脾功能亢進或腫瘤)
     - 全身衰弱 (惡性疾病)
-
 diagnosis:
   primaryTests:
     - name: 腹部觸診
-      notes: "幾乎所有病例的初始發現。評估脾臟大小、質地 (柔軟/硬實)、形狀 (均勻/結節狀)。巨大脾臟可能佔據大部分腹腔"
+      notes: 幾乎所有病例的初始發現。評估脾臟大小、質地 (柔軟/硬實)、形狀 (均勻/結節狀)。巨大脾臟可能佔據大部分腹腔
     - name: CBC/生化
-      notes: "貧血 (脾功能亢進、出血或腫瘤)。血球型態異常。肝腎功能評估。蛋白電泳 (ADV 篩檢)"
+      notes: 貧血 (脾功能亢進、出血或腫瘤)。血球型態異常。肝腎功能評估。蛋白電泳 (ADV 篩檢)
     - name: 脾臟細針穿刺 (FNA)
-      notes: "區分良性髓外造血與惡性淋巴瘤。髓外造血見多種造血前驅細胞。淋巴瘤見均質性不成熟淋巴球"
+      notes: 區分良性髓外造血與惡性淋巴瘤。髓外造血見多種造血前驅細胞。淋巴瘤見均質性不成熟淋巴球
   imaging:
     - name: 腹部超音波
-      notes: "脾臟大小、回音性、結節或腫塊評估。導引 FNA。腹腔其他器官評估"
+      notes: 脾臟大小、回音性、結節或腫塊評估。導引 FNA。腹腔其他器官評估
     - name: 腹部 X 光
-      notes: "脾臟輪廓增大。排除其他腹腔疾病。脾臟佔位效應評估"
+      notes: 脾臟輪廓增大。排除其他腹腔疾病。脾臟佔位效應評估
   additional:
     - ADV PCR 或抗體檢測 (排除阿留申病)
     - 組織病理學 (脾切除術後確診)
     - 血液抹片 (異常細胞偵測)
     - 骨髓穿刺 (全血球減少或懷疑骨髓疾病)
-
 treatment:
   principles:
     - 良性脾腫大通常不需治療 (監測即可)
@@ -82,13 +80,13 @@ treatment:
     - 找出並處理根本原因
   medications:
     - name: Prednisolone
-      dose: "1-2 mg/kg PO SID-BID"
+      dose: 1-2 mg/kg PO SID-BID
       notes: 淋巴瘤相關脾腫使用。暫時性腫瘤縮小
     - name: 輸血 (全血)
-      dose: "供血貂 6-12 mL"
+      dose: 供血貂 6-12 mL
       notes: 嚴重貧血或脾臟破裂出血時
     - name: Meloxicam
-      dose: "0.2 mg/kg PO/SC SID"
+      dose: 0.2 mg/kg PO/SC SID
       notes: 疼痛或不適緩解
   general:
     - 良性脾腫：定期觸診與超音波追蹤 (每 3-6 個月)
@@ -98,43 +96,91 @@ treatment:
     - ADV 陽性需支持性治療與隔離
     - 術後恢復通常良好 (雪貂可無脾存活)
     - 教導飼主觸診監測脾臟大小
-
 prognosis: 良性脾腫大 (髓外造血、反應性增生) 預後良好，多數雪貂可正常生活。淋巴瘤預後取決於類型與分期 (中位存活數月至 1 年)。脾臟破裂如及時手術預後謹慎至良好。ADV 相關脾腫預後變異大。
-
 guidelineRefs:
   - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
     title: Hematologic and Splenic Diseases of Ferrets
     url: https://pubmed.ncbi.nlm.nih.gov/30717889/
     type: review
-    pmid: "30717889"
+    pmid: '30717889'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Splenomegaly in ferrets: clinical assessment"
+    title: 'Splenomegaly in ferrets: clinical assessment'
     url: https://pubmed.ncbi.nlm.nih.gov/16332362/
     type: review
-    pmid: "16332362"
+    pmid: '16332362'
   - sourceOrg: Veterinary pathology
     title: Endocrinopathy and Aging in Ferrets.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5397995/
     type: review
-    pmid: "26936751"
+    pmid: '26936751'
     relevance: supporting
   - sourceOrg: Pathogens (Basel, Switzerland)
-    title: "Mycobacteriosis in a Pet Ferret (Mustela putorius furo) Caused by Mycobacterium xenopi: A Case Report on Neglected Risk of Zoonotic Transmission."
+    title: >-
+      Mycobacteriosis in a Pet Ferret (Mustela putorius furo) Caused by Mycobacterium xenopi: A Case Report on Neglected
+      Risk of Zoonotic Transmission.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11054065/
     type: case-report
-    pmid: "38668283"
+    pmid: '38668283'
     relevance: supporting
   - sourceOrg: Veterinary ophthalmology
     title: Pyogranulomatous panophthalmitis with systemic coronavirus disease in a domestic ferret (Mustela putorius furo).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7169242/
     type: case-report
-    pmid: "25918975"
+    pmid: '25918975'
     relevance: supporting
 pubmedQueries:
-  - query: '"ferret" AND ("splenomegaly" OR "splenic" OR "spleen") AND ("diagnosis" OR "treatment" OR "extramedullary hematopoiesis")'
+  - query: >-
+      "ferret" AND ("splenomegaly" OR "splenic" OR "spleen") AND ("diagnosis" OR "treatment" OR "extramedullary
+      hematopoiesis")
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "END"
-  sectionTitle: "DISEASE"
+  chapter: END
+  sectionTitle: DISEASE
   pdfPage: 582
+associatedSymptoms:
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: splenomegaly
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 雪貂脾腫大 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - abdominal-distension 相關症狀
+        - splenomegaly 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部觸診
+          notes: 幾乎所有病例的初始發現。評估脾臟大小、質地 (柔軟/硬實)、形狀 (均勻/結節狀)。巨大脾臟可能佔據大部分腹腔
+        - name: CBC/生化
+          notes: 貧血 (脾功能亢進、出血或腫瘤)。血球型態異常。肝腎功能評估。蛋白電泳 (ADV 篩檢)
+        - name: 脾臟細針穿刺 (FNA)
+          notes: 區分良性髓外造血與惡性淋巴瘤。髓外造血見多種造血前驅細胞。淋巴瘤見均質性不成熟淋巴球
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - ADV PCR 或抗體檢測 (排除阿留申病)
+        - 組織病理學 (脾切除術後確診)
+        - 血液抹片 (異常細胞偵測)
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 良性脾腫大通常不需治療 (監測即可)
+        - 惡性原因需針對性治療
+        - 脾臟切除僅在特定適應症
+ddxSource: auto-generated

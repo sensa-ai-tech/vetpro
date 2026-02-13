@@ -3,18 +3,18 @@ nameEn: Cesarean Section Feline
 nameZh: 貓剖腹產
 bodySystem: other
 description: 母貓因難產進行的剖腹產手術。相較於犬,貓科動物品種差異小但仍有難產風險。手術需考量幼貓體型小及麻醉敏感性。
-
 aliases:
-  - { alias: 貓剖宮產, language: zh }
-  - { alias: C-section cat, language: en }
-  - { alias: 貓隻緊急分娩, language: zh }
-
+  - alias: 貓剖宮產
+    language: zh
+  - alias: C-section cat
+    language: en
+  - alias: 貓隻緊急分娩
+    language: zh
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 波斯貓、異國短毛貓等短頭品種風險較高
-
 etiology:
   categories:
     - name: 母體因素
@@ -27,7 +27,6 @@ etiology:
         - 單胎過大
         - 死胎或畸形
         - 胎位不正
-
 clinicalSigns:
   early:
     - 用力分娩>60分鐘無幼貓產出
@@ -37,20 +36,18 @@ clinicalSigns:
     - 母貓嚴重虛脫
     - 體溫下降(<37.8°C)
     - 持續哀鳴或不安
-
 diagnosis:
   primaryTests:
     - name: 腹腔超音波
-      notes: "評估胎兒心跳(正常>220 bpm)及活力"
+      notes: 評估胎兒心跳(正常>220 bpm)及活力
     - name: 陰道檢查
-      notes: "評估子宮頸擴張及胎兒可觸性"
+      notes: 評估子宮頸擴張及胎兒可觸性
     - name: 放射線
-      notes: "確認胎兒數量(懷孕後期骨骼可視)"
+      notes: 確認胎兒數量(懷孕後期骨骼可視)
   differentialDiagnoses:
     - 正常分娩休息期(貓可間隔數小時)
     - 假懷孕
     - 子宮蓄膿
-
 treatment:
   medical:
     - 麻醉:Alfaxalone 3-5 mg/kg IV或Ketamine 2-5 mg/kg + Midazolam 0.2 mg/kg IV
@@ -58,40 +55,62 @@ treatment:
     - 手術:中線剖腹,迅速取出幼貓(<5分鐘理想)
     - 幼貓處理:立即清除口鼻羊水、剪斷臍帶、刺激呼吸
     - 術後:Oxytocin 2-5 IU IM,Buprenorphine 0.01-0.02 mg/kg SC止痛
-
 prognosis:
-  general: "計畫性手術預後極佳。緊急手術幼貓存活率60-80%,母貓存活率>90%。術後哺乳及母性行為通常正常。"
-
+  general: 計畫性手術預後極佳。緊急手術幼貓存活率60-80%,母貓存活率>90%。術後哺乳及母性行為通常正常。
 prevention:
   - 避免高齡首胎配種
   - 懷孕晚期限制活動避免外傷
   - 預產期前準備24小時緊急聯絡
   - 分娩時密切監控並記錄進度
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
-    title: "RECOVER Guidelines: Newborn Resuscitation in Dogs and Cats. Clinical Guidelines."
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
+    title: 'RECOVER Guidelines: Newborn Resuscitation in Dogs and Cats. Clinical Guidelines.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12374490/
     type: guideline
-    pmid: "40847797"
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
-    title: "RECOVER Guidelines: Newborn Resuscitation in Dogs and Cats. Evidence and Knowledge Gap Analysis With Treatment Recommendations."
+    pmid: '40847797'
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
+    title: >-
+      RECOVER Guidelines: Newborn Resuscitation in Dogs and Cats. Evidence and Knowledge Gap Analysis With Treatment
+      Recommendations.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12374491/
     type: review
-    pmid: "40847798"
+    pmid: '40847798'
   - sourceOrg: Acta veterinaria Scandinavica
     title: A retrospective study on dystocia in the cat, evaluation of 111 cases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11993979/
     type: research
-    pmid: "40221772"
+    pmid: '40221772'
   - sourceOrg: Journal of feline medicine and surgery
     title: Feline dystocia and kitten mortality up to 12 weeks in pedigree cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11632851/
     type: research
-    pmid: "39656270"
+    pmid: '39656270'
   - sourceOrg: Journal of feline medicine and surgery
-    title: Retrospective evaluation of the induction of anaesthesia with alfaxalone or propofol in cats undergoing caesarean section.
+    title: >-
+      Retrospective evaluation of the induction of anaesthesia with alfaxalone or propofol in cats undergoing caesarean
+      section.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11577479/
     type: research
-    pmid: "39560346"
+    pmid: '39560346'
+associatedSymptoms:
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 貓剖腹產 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹腔超音波
+          notes: 評估胎兒心跳(正常>220 bpm)及活力
+        - name: 陰道檢查
+          notes: 評估子宮頸擴張及胎兒可觸性
+        - name: 放射線
+          notes: 確認胎兒數量(懷孕後期骨骼可視)
+ddxSource: auto-generated

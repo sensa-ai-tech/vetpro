@@ -3,11 +3,11 @@ nameEn: Targeted Temperature Management
 nameZh: 目標體溫管理
 bodySystem: emergency
 description: 心搏停止後輕度低體溫治療(32-34°C)以減少腦損傷。需精確控溫及密集監護。
-
 aliases:
-  - { alias: 治療性低體溫, language: zh }
-  - { alias: Therapeutic Hypothermia, language: en }
-
+  - alias: 治療性低體溫
+    language: zh
+  - alias: Therapeutic Hypothermia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,72 +17,86 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 同犬
-
 etiology:
   categories:
     - name: 適應症
       examples:
         - 心跳停止後、嚴重腦缺氧、中暑後
-
 clinicalSigns:
   early:
     - 誘導低體溫
   progressive:
     - 維持目標溫度
-
 diagnosis:
   primaryTests:
     - name: 核心體溫監測
-      notes: "持續監測食道或直腸溫度"
+      notes: 持續監測食道或直腸溫度
   differentialDiagnoses:
     - 無
-
 treatment:
   medical:
     - 誘導期: 冰敷、冷鹽水IV,降至32-34°C
     - 維持期: 12-24小時
     - 復溫期: 緩慢升溫(0.25-0.5°C/hr)
     - 監測併發症:
-      - 心律不整
-      - 凝血異常
-      - 電解質異常
-      - 免疫抑制
-
+        - 心律不整
+        - 凝血異常
+        - 電解質異常
+        - 免疫抑制
 prognosis:
-  general: "獸醫學證據有限。人醫可改善神經預後。需專業設備及監護。"
-
+  general: 獸醫學證據有限。人醫可改善神經預後。需專業設備及監護。
 prevention:
   - 限於有能力的重症中心
-
-
 guidelineRefs:
   - sourceOrg: PloS one
-    title: "Prediction performance of scoring systems after out-of-hospital cardiac arrest: A systematic review and meta-analysis."
+    title: >-
+      Prediction performance of scoring systems after out-of-hospital cardiac arrest: A systematic review and
+      meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10833585/
     type: review
-    pmid: "38300929"
+    pmid: '38300929'
     relevance: primary
   - sourceOrg: Cell death discovery
     title: Targeted temperature management alleviates post-resuscitation myocardial dysfunction by inhibiting ferroptosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11845627/
     type: research
-    pmid: "39984437"
+    pmid: '39984437'
     relevance: supporting
   - sourceOrg: Therapeutic hypothermia and temperature management
-    title: Differential Effects of Targeted Temperature Management on Sex-Dependent Outcomes After Experimental Asphyxial Cardiac Arrest.
+    title: >-
+      Differential Effects of Targeted Temperature Management on Sex-Dependent Outcomes After Experimental Asphyxial
+      Cardiac Arrest.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11665272/
     type: research
-    pmid: "38386544"
+    pmid: '38386544'
     relevance: supporting
   - sourceOrg: Critical care (London, England)
-    title: "36th International Symposium on Intensive Care and Emergency Medicine : Brussels, Belgium. 15-18 March 2016."
+    title: '36th International Symposium on Intensive Care and Emergency Medicine : Brussels, Belgium. 15-18 March 2016.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5493079/
     type: research
-    pmid: "27885969"
+    pmid: '27885969'
     relevance: supporting
   - sourceOrg: Frontiers in neuroscience
     title: Targeted therapeutic hypothermia protects against noise induced hearing loss.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10826421/
     type: research
-    pmid: "38292902"
+    pmid: '38292902'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: hypothermia-sign
+    frequency: common
+diagnosticAlgorithm:
+  title: 目標體溫管理 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - hypothermia-sign 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 核心體溫監測
+          notes: 持續監測食道或直腸溫度
+ddxSource: auto-generated

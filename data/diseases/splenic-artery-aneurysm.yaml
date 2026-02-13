@@ -3,11 +3,11 @@ nameEn: Splenic Artery Aneurysm
 nameZh: 脾動脈瘤
 bodySystem: vascular
 description: 脾動脈局部異常擴張，多為偶然發現。犬貓極罕見，可能與脾臟腫瘤、門脈高壓或血管壁退化有關。破裂可導致急性腹腔內出血。
-
 aliases:
-  - { alias: 脾血管瘤樣擴張, language: zh }
-  - { alias: Splenic Arterial Dilation, language: en }
-
+  - alias: 脾血管瘤樣擴張
+    language: zh
+  - alias: Splenic Arterial Dilation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓極罕見，文獻報告極少
-
 etiology:
   categories:
     - name: 脾臟腫瘤相關
@@ -33,7 +32,6 @@ etiology:
       examples:
         - 肝硬化
         - 門脈靜脈栓塞
-
 clinicalSigns:
   early:
     - 多數無症狀，腹部超音波偶然發現
@@ -42,41 +40,71 @@ clinicalSigns:
     - 急性破裂：虛脫、腹痛、黏膜蒼白
     - 腹腔積血、低血壓休克
     - 慢性滲血：貧血、虛弱
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "可見脾動脈局部擴張、血流紊流、脾臟腫塊"
+      notes: 可見脾動脈局部擴張、血流紊流、脾臟腫塊
     - name: 腹部 CT 血管攝影
-      notes: "確認動脈瘤位置、大小及與脾臟關係"
+      notes: 確認動脈瘤位置、大小及與脾臟關係
     - name: 血液學
-      notes: "急性失血性貧血、血小板減少"
+      notes: 急性失血性貧血、血小板減少
   differentialDiagnoses:
     - 脾臟腫瘤（血管肉瘤、血腫）
     - 腹腔腫塊
     - 門脈高壓
     - 腹腔內出血
-
 treatment:
   medical:
     - 穩定患者：輸血、晶體液復甦
     - 外科脾切除術（適用於破裂或高風險病例）
     - 血管內栓塞術（專科中心）
     - 定期影像追蹤（小型無症狀動脈瘤）
-
 prognosis:
-  general: "預後取決於是否破裂及潛在病因。破裂性脾動脈瘤預後極差（死亡率 >70%），未破裂者經脾切除術預後良好。若合併惡性腫瘤，預後保留。"
-
+  general: 預後取決於是否破裂及潛在病因。破裂性脾動脈瘤預後極差（死亡率 >70%），未破裂者經脾切除術預後良好。若合併惡性腫瘤，預後保留。
 prevention:
   - 定期腹部超音波健檢（老年犬）
   - 脾臟腫塊早期評估
   - 控制門脈高壓
-
-
 guidelineRefs:
   - sourceOrg: Endoscopy
-    title: "One stone for two birds: Successful treatment of splenic artery aneurysm and gastric varices using endoscopic ultrasound-guided coil and glue embolization."
+    title: >-
+      One stone for two birds: Successful treatment of splenic artery aneurysm and gastric varices using endoscopic
+      ultrasound-guided coil and glue embolization.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12618139/
     type: research
-    pmid: "41237824"
+    pmid: '41237824'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: splenomegaly
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 脾動脈瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pallor-cyanosis 相關症狀
+        - dehydration 相關症狀
+        - splenomegaly 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 可見脾動脈局部擴張、血流紊流、脾臟腫塊
+        - name: 腹部 CT 血管攝影
+          notes: 確認動脈瘤位置、大小及與脾臟關係
+        - name: 血液學
+          notes: 急性失血性貧血、血小板減少
+ddxSource: auto-generated

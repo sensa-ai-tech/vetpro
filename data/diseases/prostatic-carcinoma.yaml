@@ -3,12 +3,13 @@ nameEn: Prostatic Carcinoma
 nameZh: 前列腺癌
 bodySystem: oncology
 description: 犬前列腺癌（腺癌或移行細胞癌）為高度惡性腫瘤，診斷時多已局部侵犯或遠端轉移。與人類不同，犬前列腺癌好發於已結紮公犬。預後極差，治療以姑息為主。常見轉移部位為腰椎、骨盆骨、肺與淋巴結。
-
 aliases:
-  - { alias: 前列腺腺癌, language: zh }
-  - { alias: Prostatic Adenocarcinoma, language: en }
-  - { alias: Prostatic Transitional Cell Carcinoma, language: en }
-
+  - alias: 前列腺腺癌
+    language: zh
+  - alias: Prostatic Adenocarcinoma
+    language: en
+  - alias: Prostatic Transitional Cell Carcinoma
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓前列腺腫瘤極罕見。
-
 etiology:
   categories:
     - name: 腫瘤特性
@@ -31,7 +31,6 @@ etiology:
         - 肺臟
         - 腰下淋巴結（sublumbar lymph nodes）
         - 膀胱
-
 clinicalSigns:
   early:
     - 排尿困難
@@ -43,7 +42,6 @@ clinicalSigns:
     - 體重下降
     - 腹痛
     - 後肢水腫（淋巴結壓迫）
-
 diagnosis:
   primaryTests:
     - name: 直腸觸診
@@ -55,7 +53,6 @@ diagnosis:
     - 尿液細胞學（移行細胞癌可脫落至尿液）
     - CT（分期評估）
     - BRAF 突變檢測（移行細胞癌）
-
 treatment:
   principles:
     - 多數為姑息性治療
@@ -70,41 +67,88 @@ treatment:
     - 疼痛管理（骨轉移疼痛）
     - 去勢對腫瘤本身無效（但可控制 BPH 成分）
     - 根治性前列腺切除術（技術困難，尿失禁風險高）
-
 prognosis: 犬前列腺癌預後極差。中位存活期約 1-3 個月（未治療）至 6-7 個月（姑息治療）。診斷時多已轉移。COX-2 抑制劑可改善生活品質。尿道阻塞為常見死亡原因。
-
-
 guidelineRefs:
   - sourceOrg: Cancers
-    title: "Comparative Pathobiology of Canine and Human Prostate Cancer: State of the Art and Future Directions."
+    title: 'Comparative Pathobiology of Canine and Human Prostate Cancer: State of the Art and Future Directions.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9179314/
     type: review
-    pmid: "35681707"
+    pmid: '35681707'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
     title: A Review on Canine and Feline Prostate Pathology.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9201985/
     type: review
-    pmid: "35720846"
+    pmid: '35720846'
     relevance: primary
   - sourceOrg: Veterinary medicine and science
-    title: "Highlights on the Canine Prostatic Specific Esterase (CPSE): A diagnostic and screening tool in veterinary andrology."
+    title: >-
+      Highlights on the Canine Prostatic Specific Esterase (CPSE): A diagnostic and screening tool in veterinary
+      andrology.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7840190/
     type: review
-    pmid: "32881401"
+    pmid: '32881401'
     relevance: primary
   - sourceOrg: Open veterinary journal
-    title: "Prostatectomy as a treatment for canine prostate cancer: a literature review."
+    title: 'Prostatectomy as a treatment for canine prostate cancer: a literature review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7703606/
     type: review
-    pmid: "33282703"
+    pmid: '33282703'
     relevance: primary
   - sourceOrg: Open access Macedonian journal of medical sciences
     title: Expression of ERG Protein and TMRPSS2-ERG Fusion in Prostatic Carcinoma in Egyptian Patients.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5420765/
     type: research
-    pmid: "28507619"
+    pmid: '28507619'
     relevance: supporting
 pubmedQueries:
   - query: '"prostatic carcinoma" OR "prostatic adenocarcinoma" AND (veterinary OR canine) AND ("treatment" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: constipation
+    frequency: common
+  - symptomId: pollakiuria
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: common
+  - symptomId: lameness
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 前列腺癌 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - constipation 相關症狀
+        - pollakiuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 直腸觸診
+          notes: 前列腺不規則、硬結、不對稱、可能固定。去勢犬前列腺增大高度懷疑腫瘤
+        - name: 腹部超音波 + 胸部 X-ray
+          notes: 前列腺內不均質回音、礦化。胸部 X-ray 評估肺轉移。腰椎 X-ray 評估骨轉移
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 超音波引導 FNA 或 Tru-cut 生檢（確診）
+        - 尿液細胞學（移行細胞癌可脫落至尿液）
+        - CT（分期評估）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 多數為姑息性治療
+        - 根治性手術困難（局部侵犯廣泛）
+        - NSAIDs（COX-2 抑制）為姑息治療基礎
+ddxSource: auto-generated

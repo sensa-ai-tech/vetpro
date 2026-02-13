@@ -3,18 +3,19 @@ nameEn: Shiba Inu Glaucoma
 nameZh: 柴犬青光眼
 bodySystem: ophthalmology
 description: 柴犬為原發性隅角閉鎖性青光眼（PACG）最高風險犬種之一，因遺傳性隅角發育異常導致房水排出障礙，眼壓急性升高。常突發性發作，若未在 24-48 小時內控制眼壓，可導致不可逆視網膜與視神經損傷而失明。
-
 aliases:
-  - { alias: 柴犬原發性青光眼, language: zh }
-  - { alias: 柴犬眼壓過高, language: zh }
-  - { alias: Shiba Inu primary glaucoma, language: en }
-  - { alias: Shiba Inu PACG, language: en }
-
+  - alias: 柴犬原發性青光眼
+    language: zh
+  - alias: 柴犬眼壓過高
+    language: zh
+  - alias: Shiba Inu primary glaucoma
+    language: en
+  - alias: Shiba Inu PACG
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
     notes: 柴犬為亞洲犬種中原發性青光眼最高風險品種。4-8 歲為好發年齡。常先單側發作，對側眼高風險後續發作。
-
 etiology:
   categories:
     - name: 遺傳性
@@ -28,7 +29,6 @@ etiology:
         - 眼內壓急性升高（正常 <25 mmHg，青光眼 >40 mmHg）
         - 視網膜神經節細胞凋亡
         - 視神經損傷
-
 clinicalSigns:
   early:
     - 眼睛充血（結膜與鞏膜充血）
@@ -42,7 +42,6 @@ clinicalSigns:
     - 嗜睡（嚴重疼痛）
     - 食慾下降
     - 鞏膜血管充血明顯
-
 diagnosis:
   primaryTests:
     - name: 眼壓測量
@@ -51,7 +50,6 @@ diagnosis:
       notes: Gonioscopy 評估隅角開放程度。對側眼預防評估。隅角狹窄為品種風險因子
     - name: 眼底檢查
       notes: 評估視神經盤凹陷程度。視網膜血管改變。視力評估
-
 treatment:
   principles:
     - 急性發作為眼科急症
@@ -66,9 +64,46 @@ treatment:
     - 對側眼預防性使用 Latanoprost 滴眼
     - 不可逆失明且疼痛之眼球：義眼植入或摘除
     - 繁殖篩選（隅角鏡檢查）
-
 prognosis: 急性青光眼若在數小時內控制眼壓，保留視力機率較高。延遲超過 24-48 小時多已不可逆失明。長期眼壓控制困難，多數患眼最終失明。對側眼預防性治療可延緩但不能完全防止發作。早期篩檢與繁殖管理為品種健康改善的關鍵。
-
 pubmedQueries:
   - query: '"Shiba Inu" AND ("glaucoma" OR "intraocular pressure") AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: blindness
+    frequency: uncommon
+  - symptomId: mydriasis
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 柴犬青光眼 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - blindness 相關症狀
+        - mydriasis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 眼壓測量
+          notes: Tonometry 眼壓 >25 mmHg 異常，>40 mmHg 為急性青光眼。為最重要的診斷工具
+        - name: 隅角鏡檢查
+          notes: Gonioscopy 評估隅角開放程度。對側眼預防評估。隅角狹窄為品種風險因子
+        - name: 眼底檢查
+          notes: 評估視神經盤凹陷程度。視網膜血管改變。視力評估
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 急性發作為眼科急症
+        - 快速降低眼壓
+        - 長期眼壓控制
+ddxSource: auto-generated

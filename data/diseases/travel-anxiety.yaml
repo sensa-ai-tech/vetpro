@@ -3,11 +3,11 @@ nameEn: Travel Anxiety
 nameZh: 旅行焦慮
 bodySystem: behavioral
 description: 犬貓對交通工具（汽車、飛機）之焦慮或暈動病。可能因恐懼或生理暈車。需區分原因並給予適當藥物或行為治療。
-
 aliases:
-  - { alias: 車車焦慮, language: zh }
-  - { alias: Car Sickness, language: en }
-
+  - alias: 車車焦慮
+    language: zh
+  - alias: Car Sickness
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓多為焦慮而非暈車
-
 etiology:
   categories:
     - name: 生理性暈動病
@@ -29,7 +28,6 @@ etiology:
         - 負面經驗聯結（就醫、嘔吐）
         - 陌生環境恐懼
         - 缺乏習慣化
-
 clinicalSigns:
   early:
     - 上車時抗拒
@@ -40,18 +38,16 @@ clinicalSigns:
     - 嚎叫、哭泣
     - 排泄失禁
     - 過度活動或僵直
-
 diagnosis:
   primaryTests:
     - name: 區分暈車或焦慮
-      notes: "暈車：流口水、嘔吐；焦慮：喘氣、顫抖、發聲"
+      notes: 暈車：流口水、嘔吐；焦慮：喘氣、顫抖、發聲
     - name: 行為史
-      notes: "首次發作時機、進展"
+      notes: 首次發作時機、進展
   differentialDiagnoses:
     - 純暈動病
     - 純焦慮
     - 混合型
-
 treatment:
   medical:
     - 暈動病藥物：
@@ -68,11 +64,35 @@ treatment:
     - 環境管理：
     - 通風、朝前坐、限制視野
     - 空腹2-4小時
-
 prognosis:
-  general: "幼犬暈車多隨年齡改善。焦慮性需行為修正但預後良好。藥物可有效控制症狀。"
-
+  general: 幼犬暈車多隨年齡改善。焦慮性需行為修正但預後良好。藥物可有效控制症狀。
 prevention:
   - 幼犬早期正向車程經驗
   - 短程愉快旅行（非僅就醫）
   - 漸進式習慣化
+associatedSymptoms:
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 旅行焦慮 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - vomiting 相關症狀
+        - diarrhoea 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 區分暈車或焦慮
+          notes: 暈車：流口水、嘔吐；焦慮：喘氣、顫抖、發聲
+        - name: 行為史
+          notes: 首次發作時機、進展
+ddxSource: auto-generated

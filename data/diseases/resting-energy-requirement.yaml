@@ -3,12 +3,13 @@ nameEn: Resting Energy Requirement
 nameZh: 靜息能量需求
 bodySystem: metabolic
 description: 動物在靜息狀態下維持基本生理功能所需的最低熱量。為所有營養計算的基礎，疾病狀態通常使用RER而非MER。
-
 aliases:
-  - { alias: RER, language: zh }
-  - { alias: Basal Energy Requirement, language: en }
-  - { alias: BER, language: en }
-
+  - alias: RER
+    language: zh
+  - alias: Basal Energy Requirement
+    language: en
+  - alias: BER
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 計算方式相同
-
 etiology:
   categories:
     - name: RER定義
@@ -32,7 +32,6 @@ etiology:
         - 簡化公式：RER = 30 × 體重kg + 70(2-45kg)
         - 極小型(<2kg)：RER = 體重kg × 70
         - 極大型(>45kg)：使用標準公式
-
 clinicalSigns:
   early:
     - 適當RER：體重穩定、營養指標正常
@@ -41,16 +40,14 @@ clinicalSigns:
   progressive:
     - 長期低於RER：嚴重營養不良
     - 疾病恢復：可增加至RER以上
-
 diagnosis:
   primaryTests:
     - name: 體重測量
-      notes: "精確體重(kg)"
+      notes: 精確體重(kg)
     - name: 營養評估
-      notes: "BCS、白蛋白"
+      notes: BCS、白蛋白
   differentialDiagnoses:
     - 各種需營養支持的疾病狀態
-
 treatment:
   medical:
     - RER計算範例
@@ -68,27 +65,45 @@ treatment:
     - MER = RER × 活動係數(1.2-3.0)
     - 健康維持使用MER
     - 疾病/住院使用RER
-
 prognosis:
-  general: "RER為營養計算的基礎，正確計算對營養支持至關重要"
-
+  general: RER為營養計算的基礎，正確計算對營養支持至關重要
 prevention:
   - 使用精確體重
   - 選擇適當公式
   - 疾病狀態從低熱量開始
   - 根據反應調整
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline comorbidities: Pathophysiology and management of the obese diabetic cat."
+    title: 'Feline comorbidities: Pathophysiology and management of the obese diabetic cat.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812123/
     type: review
-    pmid: "34167340"
+    pmid: '34167340'
     relevance: primary
   - sourceOrg: American journal of veterinary research
-    title: Effects of weight loss with a moderate-protein, high-fiber diet on body composition, voluntary physical activity, and fecal microbiota of obese cats.
+    title: >-
+      Effects of weight loss with a moderate-protein, high-fiber diet on body composition, voluntary physical activity,
+      and fecal microbiota of obese cats.
     url: https://pubmed.ncbi.nlm.nih.gov/29359972/
     type: research
-    pmid: "29359972"
+    pmid: '29359972'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+diagnosticAlgorithm:
+  title: 靜息能量需求 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 體重測量
+          notes: 精確體重(kg)
+        - name: 營養評估
+          notes: BCS、白蛋白
+ddxSource: auto-generated

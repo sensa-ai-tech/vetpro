@@ -3,18 +3,18 @@ nameEn: Cesarean Section Canine
 nameZh: 犬剖腹產
 bodySystem: other
 description: 母犬因難產或高風險品種需進行的緊急或計畫性剖腹產手術。目標為確保母犬及幼犬存活,需快速麻醉及精準手術技術。
-
 aliases:
-  - { alias: 犬隻剖宮產, language: zh }
-  - { alias: C-section dog, language: en }
-  - { alias: 緊急剖腹生產, language: zh }
-
+  - alias: 犬隻剖宮產
+    language: zh
+  - alias: C-section dog
+    language: en
+  - alias: 緊急剖腹生產
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 短頭犬種(鬥牛犬、法鬥、波士頓梗)及小型犬(吉娃娃)高風險
-
 etiology:
   categories:
     - name: 母體因素
@@ -27,7 +27,6 @@ etiology:
         - 胎位不正
         - 胎兒過大
         - 死胎或畸形胎
-
 clinicalSigns:
   early:
     - 分娩遲滯:用力>30分鐘未產出
@@ -37,20 +36,18 @@ clinicalSigns:
     - 母犬虛弱、黏膜蒼白
     - 胎兒心跳減弱(<180 bpm)
     - 母犬體溫異常或休克徵象
-
 diagnosis:
   primaryTests:
     - name: 陰道觸診
-      notes: "評估產道及胎兒位置"
+      notes: 評估產道及胎兒位置
     - name: 腹腔超音波
-      notes: "評估胎兒心跳(正常>200 bpm)及胎兒數量"
+      notes: 評估胎兒心跳(正常>200 bpm)及胎兒數量
     - name: 放射線檢查
-      notes: "確認胎兒數量、大小及骨盆腔空間"
+      notes: 確認胎兒數量、大小及骨盆腔空間
   differentialDiagnoses:
     - 正常分娩間歇期
     - 假性分娩
     - 原發性子宮無力
-
 treatment:
   medical:
     - 麻醉:Propofol 4-6 mg/kg IV快速誘導(幼犬影響小)或Alfaxalone 2-3 mg/kg IV
@@ -58,40 +55,72 @@ treatment:
     - 手術:中線剖腹,完整取出子宮角,逐一娩出幼犬
     - 幼犬復甦:清除羊水、搓揉刺激、Doxapram 1-2滴舌下
     - 術後:Oxytocin 5-20 IU IM促子宮收縮,Cefazolin 22 mg/kg IV抗生素
-
 prognosis:
-  general: "計畫性手術母犬及幼犬存活率>95%,緊急手術視延遲時間而定。術後子宮復原良好可再繁殖,但建議評估風險。"
-
+  general: 計畫性手術母犬及幼犬存活率>95%,緊急手術視延遲時間而定。術後子宮復原良好可再繁殖,但建議評估風險。
 prevention:
   - 高風險品種建議計畫性剖腹產
   - 懷孕期定期超音波追蹤
   - 預產期前準備緊急手術計畫
   - 分娩初期密切監控進展
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
-    title: "RECOVER Guidelines: Newborn Resuscitation in Dogs and Cats. Clinical Guidelines."
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
+    title: 'RECOVER Guidelines: Newborn Resuscitation in Dogs and Cats. Clinical Guidelines.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12374490/
     type: guideline
-    pmid: "40847797"
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
-    title: "RECOVER Guidelines: Newborn Resuscitation in Dogs and Cats. Evidence and Knowledge Gap Analysis With Treatment Recommendations."
+    pmid: '40847797'
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
+    title: >-
+      RECOVER Guidelines: Newborn Resuscitation in Dogs and Cats. Evidence and Knowledge Gap Analysis With Treatment
+      Recommendations.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12374491/
     type: review
-    pmid: "40847798"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '40847798'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Factors Affecting Gut Microbiota of Puppies from Birth to Weaning.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9951692/
     type: review
-    pmid: "36830365"
+    pmid: '36830365'
   - sourceOrg: Journal of feline medicine and surgery
-    title: Retrospective evaluation of the induction of anaesthesia with alfaxalone or propofol in cats undergoing caesarean section.
+    title: >-
+      Retrospective evaluation of the induction of anaesthesia with alfaxalone or propofol in cats undergoing caesarean
+      section.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11577479/
     type: research
-    pmid: "39560346"
-  - sourceOrg: "Veterinary surgery : VS"
-    title: Risk factors for neonatal mortality prior to hospital discharge in brachycephalic and nonbrachycephalic dogs undergoing cesarean section.
+    pmid: '39560346'
+  - sourceOrg: 'Veterinary surgery : VS'
+    title: >-
+      Risk factors for neonatal mortality prior to hospital discharge in brachycephalic and nonbrachycephalic dogs
+      undergoing cesarean section.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9804973/
     type: research
-    pmid: "35946489"
+    pmid: '35946489'
+associatedSymptoms:
+  - symptomId: vaginal-discharge
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 犬剖腹產 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - vaginal-discharge 相關症狀
+        - pallor-cyanosis 相關症狀
+        - dehydration 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 陰道觸診
+          notes: 評估產道及胎兒位置
+        - name: 腹腔超音波
+          notes: 評估胎兒心跳(正常>200 bpm)及胎兒數量
+        - name: 放射線檢查
+          notes: 確認胎兒數量、大小及骨盆腔空間
+ddxSource: auto-generated

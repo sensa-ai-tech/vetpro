@@ -3,13 +3,15 @@ nameEn: Spirocerca Lupi
 nameZh: 犬食道線蟲病
 bodySystem: infectious
 description: 由Spirocerca lupi線蟲經甲蟲中間宿主傳播的食道寄生蟲病,主要見於熱帶及亞熱帶。成蟲寄生於食道壁形成結節,可能惡性轉化為骨肉瘤。
-
 aliases:
-  - { alias: 食道蟲病, language: zh }
-  - { alias: 犬旋尾線蟲病, language: zh }
-  - { alias: Esophageal Worm, language: en }
-  - { alias: Spirocercosis, language: en }
-
+  - alias: 食道蟲病
+    language: zh
+  - alias: 犬旋尾線蟲病
+    language: zh
+  - alias: Esophageal Worm
+    language: en
+  - alias: Spirocercosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓極少感染
-
 etiology:
   categories:
     - name: 病原體
@@ -31,7 +32,6 @@ etiology:
         - 副終宿主:蛙類、蛇類、鳥類、齧齒類
         - 犬攝食感染宿主→幼蟲穿透胃壁→移行至主動脈→食道壁(3-6個月成熟)
         - 成蟲在食道結節內產卵,蟲卵隨糞便排出
-
 clinicalSigns:
   early:
     - 吞嚥困難、流涎
@@ -44,26 +44,24 @@ clinicalSigns:
     - 骨肉瘤轉化:惡病質、肺轉移
     - 肥厚性骨病(HOD):四肢疼痛、骨膜增生
     - 脊髓壓迫:後肢無力、癱瘓
-
 diagnosis:
   primaryTests:
     - name: 糞便檢查
-      notes: "飽和鹽水浮游法見典型蟲卵(30-37 × 11-15 μm,兩端塞子)"
+      notes: 飽和鹽水浮游法見典型蟲卵(30-37 × 11-15 μm,兩端塞子)
     - name: 食道X光或透視
-      notes: "食道後縱隔見軟組織腫塊(結節),可能鈣化"
+      notes: 食道後縱隔見軟組織腫塊(結節),可能鈣化
     - name: 胸部X光
-      notes: "主動脈擴張或動脈瘤,肺轉移(若惡性轉化)"
+      notes: 主動脈擴張或動脈瘤,肺轉移(若惡性轉化)
     - name: 食道鏡檢查
-      notes: "直視見食道腔內結節性腫塊,中央可能有瘻管開口"
+      notes: 直視見食道腔內結節性腫塊,中央可能有瘻管開口
     - name: 骨骼X光
-      notes: "肥厚性骨病:長骨骨膜增生,呈「流蠟」樣"
+      notes: 肥厚性骨病:長骨骨膜增生,呈「流蠟」樣
   differentialDiagnoses:
     - 食道異物
     - 食道腫瘤(鱗狀細胞癌、纖維肉瘤)
     - 食道狹窄或瘢痕
     - 巨食道症
     - 縱隔腫瘤
-
 treatment:
   medical:
     - Doramectin 400 μg/kg SC,每週1次,連續4-6週
@@ -75,39 +73,83 @@ treatment:
   surgical:
     - 大型結節阻塞食道:外科切除(風險高,可能穿孔或出血)
     - 惡性轉化:不建議手術,預後極差
-
 prognosis:
-  general: "預後取決於併發症。單純食道結節經驅蟲治療預後尚可,但完全治癒困難,結節可能永久存在。主動脈瘤破裂致死率100%。骨肉瘤轉化預後極差,中位生存期<3個月。肥厚性骨病在驅蟲後數月可能改善。"
-
+  general: 預後取決於併發症。單純食道結節經驅蟲治療預後尚可,但完全治癒困難,結節可能永久存在。主動脈瘤破裂致死率100%。骨肉瘤轉化預後極差,中位生存期<3個月。肥厚性骨病在驅蟲後數月可能改善。
 prevention:
   - 每月預防藥:Moxidectin或Milbemycin
   - 避免攝食甲蟲、糞便或腐肉
   - 流行區每年糞便檢查
   - 控制環境中甲蟲數量
-
-
 guidelineRefs:
   - sourceOrg: Pathogens (Basel, Switzerland)
-    title: "Spirocerca lupi Proteomics and Its Role in Cancer Development: An Overview of Spirocercosis-Induced Sarcomas and Revision of Helminth-Induced Carcinomas."
+    title: >-
+      Spirocerca lupi Proteomics and Its Role in Cancer Development: An Overview of Spirocercosis-Induced Sarcomas and
+      Revision of Helminth-Induced Carcinomas.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7911836/
     type: review
-    pmid: "33530324"
+    pmid: '33530324'
     relevance: primary
   - sourceOrg: Iranian journal of parasitology
-    title: "Esophageal Infection of Spirocerca lupi with Vulpes rueppellii in Yazd Province, Iran: Case Report."
+    title: 'Esophageal Infection of Spirocerca lupi with Vulpes rueppellii in Yazd Province, Iran: Case Report.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6815866/
     type: case-report
-    pmid: "31673269"
+    pmid: '31673269'
     relevance: supporting
-  - sourceOrg: "Parasites &amp; vectors"
-    title: "Retrospective study of spirocercosis in coyotes (Canis latrans) in Costa Rica: epidemiology, pathological findings, and molecular characterization of Spirocerca lupi."
+  - sourceOrg: Parasites &amp; vectors
+    title: >-
+      Retrospective study of spirocercosis in coyotes (Canis latrans) in Costa Rica: epidemiology, pathological
+      findings, and molecular characterization of Spirocerca lupi.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12560332/
     type: research
-    pmid: "41146318"
+    pmid: '41146318'
     relevance: supporting
-  - sourceOrg: "Journal of parasitic diseases : official organ of the Indian Society for Parasitology"
-    title: "Morphological and molecular identification of Spirocerca lupi (Nematoda: Spiruridae) found in the Andean fox (Lycalopex culpaeus)."
+  - sourceOrg: 'Journal of parasitic diseases : official organ of the Indian Society for Parasitology'
+    title: >-
+      Morphological and molecular identification of Spirocerca lupi (Nematoda: Spiruridae) found in the Andean fox
+      (Lycalopex culpaeus).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6104241/
     type: research
-    pmid: "30166794"
+    pmid: '30166794'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: dysphagia
+    frequency: common
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 犬食道線蟲病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - dysphagia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便檢查
+          notes: 飽和鹽水浮游法見典型蟲卵(30-37 × 11-15 μm,兩端塞子)
+        - name: 食道X光或透視
+          notes: 食道後縱隔見軟組織腫塊(結節),可能鈣化
+        - name: 胸部X光
+          notes: 主動脈擴張或動脈瘤,肺轉移(若惡性轉化)
+ddxSource: auto-generated

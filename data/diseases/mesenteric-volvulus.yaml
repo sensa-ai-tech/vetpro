@@ -3,13 +3,15 @@ nameEn: Mesenteric Volvulus
 nameZh: 腸繫膜扭轉
 bodySystem: gastrointestinal
 description: 腸繫膜扭轉是小腸沿腸繫膜根部旋轉，導致腸管與腸繫膜血管的絞窄。此為獸醫急診中最嚴重的腹部急症之一，快速導致大範圍腸缺血壞死、內毒素血症、休克與死亡。好發於大型犬種，死亡率極高。
-
 aliases:
-  - { alias: 腸扭轉, language: zh }
-  - { alias: 小腸扭轉, language: zh }
-  - { alias: Intestinal Volvulus, language: en }
-  - { alias: Mesenteric Torsion, language: en }
-
+  - alias: 腸扭轉
+    language: zh
+  - alias: 小腸扭轉
+    language: zh
+  - alias: Intestinal Volvulus
+    language: en
+  - alias: Mesenteric Torsion
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓隻極為罕見。少數個案報告。
-
 etiology:
   categories:
     - name: 誘發因素
@@ -40,7 +41,6 @@ etiology:
         - 腸繫膜淋巴結腫大
         - 腸道異物或腫瘤
         - 腹腔手術後沾黏
-
 clinicalSigns:
   early:
     - 突發性劇烈腹痛
@@ -58,24 +58,22 @@ clinicalSigns:
     - 多器官衰竭
     - 意識改變（低血壓導致腦灌注不足）
     - 死亡（常在數小時內）
-
 diagnosis:
   primaryTests:
     - name: 腹部 X 光
-      notes: "可見大範圍擴張充氣的小腸腸管。腸壁增厚或模糊。腹腔積液。腸管排列異常。"
+      notes: 可見大範圍擴張充氣的小腸腸管。腸壁增厚或模糊。腹腔積液。腸管排列異常。
     - name: 腹部超音波
-      notes: "腸壁增厚、黏膜層回音減低。腸壁都卜勒血流消失或減少。腹腔游離液。腸繫膜血管扭轉徵象。"
+      notes: 腸壁增厚、黏膜層回音減低。腸壁都卜勒血流消失或減少。腹腔游離液。腸繫膜血管扭轉徵象。
   imaging:
     - name: CT 血管造影
-      notes: "可精確顯示腸繫膜血管扭轉位置與腸壁灌流異常。但因病程急促，多數病例無時間進行 CT。"
+      notes: 可精確顯示腸繫膜血管扭轉位置與腸壁灌流異常。但因病程急促，多數病例無時間進行 CT。
     - name: 無其他常規影像
-      notes: "診斷主要依靠臨床懷疑與影像學快速評估。"
+      notes: 診斷主要依靠臨床懷疑與影像學快速評估。
   additional:
     - 血液學（白血球增多或減少，PCV 升高提示血液濃縮）
     - 血液生化（乳酸升高、代謝性酸中毒、電解質失衡）
     - 凝血檢查（DIC 評估）
     - 腹腔穿刺液分析（血性液體，細菌可能陽性）
-
 treatment:
   principles:
     - 此為外科急診，需立即手術
@@ -83,39 +81,101 @@ treatment:
     - 手術復位與壞死腸管切除
     - 預後極差，即使積極治療
   general:
-    - "急診液體復甦：等張晶體液 60-90 mL/kg/hr（shock rate），合併膠體液 10-20 mL/kg"
-    - "廣效抗生素：Ampicillin/Sulbactam 30 mg/kg IV q8h + Enrofloxacin 5 mg/kg IV q24h"
-    - "緊急探查性開腹術：評估腸管存活度，復位扭轉，切除壞死腸段並吻合"
-    - "腸管存活度評估：顏色、蠕動、腸繫膜動脈搏動、都卜勒血流"
-    - "術中溫暖沖洗腹腔"
-    - "術後加護監護：持續液體治療、血壓監測、心電圖監測"
-    - "再灌注損傷管理：術後可能需要血管加壓素支持"
-    - "營養支持：術後腸外營養或早期腸內營養"
-
+    - 急診液體復甦：等張晶體液 60-90 mL/kg/hr（shock rate），合併膠體液 10-20 mL/kg
+    - 廣效抗生素：Ampicillin/Sulbactam 30 mg/kg IV q8h + Enrofloxacin 5 mg/kg IV q24h
+    - 緊急探查性開腹術：評估腸管存活度，復位扭轉，切除壞死腸段並吻合
+    - 腸管存活度評估：顏色、蠕動、腸繫膜動脈搏動、都卜勒血流
+    - 術中溫暖沖洗腹腔
+    - 術後加護監護：持續液體治療、血壓監測、心電圖監測
+    - 再灌注損傷管理：術後可能需要血管加壓素支持
+    - 營養支持：術後腸外營養或早期腸內營養
 prognosis: 預後極差，死亡率 > 70-80%，即使積極外科與加護治療。早期（< 6 小時內）手術介入者存活率稍高。廣泛腸壞死（> 50% 小腸長度）者預後極不良。術後再灌注損傷、DIC 與敗血症為主要死因。倖存者可能面臨短腸症候群。
-
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
-    title: "Mesenteric volvulus in dogs: survival and prognostic factors"
+    title: 'Mesenteric volvulus in dogs: survival and prognostic factors'
     url: https://pubmed.ncbi.nlm.nih.gov/16871338/
     type: consensus
-    pmid: "16871338"
+    pmid: '16871338'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Intestinal volvulus in dogs: clinical findings and outcome"
+    title: 'Intestinal volvulus in dogs: clinical findings and outcome'
     url: https://pubmed.ncbi.nlm.nih.gov/9272135/
     type: consensus
-    pmid: "9272135"
+    pmid: '9272135'
   - sourceOrg: Journal of veterinary internal medicine
     title: Left Displacement of the Abomasum in 4 Beef Calves.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5089626/
     type: case-report
-    pmid: "27248852"
+    pmid: '27248852'
     relevance: supporting
 pubmedQueries:
   - query: '"mesenteric volvulus" AND (dog OR canine) AND ("surgery" OR "outcome")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "Volvulus: A small-intestinal volvulus"
+  chapter: DIG
+  sectionTitle: 'Volvulus: A small-intestinal volvulus'
   pdfPage: 301
+diagnosticAlgorithm:
+  title: 腸繫膜扭轉 診斷流程
+  steps:
+    - step: 1
+      action: 緊急評估
+      details: 辨識急腹症與休克表現
+      findings:
+        - 急性劇烈腹痛
+        - 血性嘔吐或腹瀉
+        - 迅速進展的休克
+        - 腹部膨脹
+    - step: 2
+      action: 理學檢查與復甦
+      details: 快速評估並同時進行休克復甦
+      findings:
+        - 嚴重低血壓與心搏過速
+        - 腹部觸診劇痛
+        - 黏膜蒼白或發紺
+        - 體溫過低
+    - step: 3
+      action: 影像學檢查
+      details: 腹部X光與超音波急診評估
+      findings:
+        - 腸管廣泛擴張
+        - 腸壁增厚或氣腫
+        - 腹腔游離液（血性）
+        - 超音波顯示腸繫膜血管異常
+    - step: 4
+      action: 確診與手術
+      details: 緊急剖腹探查確診並治療
+      findings:
+        - 手術中確認腸繫膜扭轉
+        - 評估腸管存活力
+        - 大範圍腸壞死預後極差
+        - 乳酸值與預後相關
+clinicalPearls:
+  - 腸繫膜扭轉是犬最致命的急腹症之一，死亡率極高
+  - 不應為了完善檢查而延誤手術——如臨床高度懷疑，應立即手術探查
+  - 乳酸濃度是評估組織灌注和預後的重要指標
+  - 德國牧羊犬可能有較高的易感性
+  - 術後再灌注損傷可能比初始缺血更具破壞性
+monitoringItems:
+  - 術後持續血壓和心電圖監測
+  - 乳酸每2-4小時追蹤
+  - 凝血功能（DIC監測）
+  - 體溫和尿量
+  - 腹圍和腹部疼痛評估
+  - 白蛋白和總蛋白
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

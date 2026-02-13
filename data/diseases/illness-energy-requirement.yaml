@@ -3,12 +3,13 @@ nameEn: Illness Energy Requirement
 nameZh: 疾病狀態能量需求
 bodySystem: metabolic
 description: 重症或疾病狀態下的能量需求計算。與健康動物不同，疾病狀態通常使用RER且需謹慎增加以避免再餵食症候群。
-
 aliases:
-  - { alias: 重症能量需求, language: zh }
-  - { alias: Critical Illness Energy, language: en }
-  - { alias: Hospitalized Animal Nutrition, language: en }
-
+  - alias: 重症能量需求
+    language: zh
+  - alias: Critical Illness Energy
+    language: en
+  - alias: Hospitalized Animal Nutrition
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓對營養不足特別敏感
-
 etiology:
   categories:
     - name: 疾病對代謝的影響
@@ -39,7 +39,6 @@ etiology:
         - 創傷：RER × 1.0-1.5
         - 敗血症：RER × 1.0-1.25
         - 燒傷：RER × 1.25-2.0
-
 clinicalSigns:
   early:
     - 適當營養：體重穩定、白蛋白改善
@@ -48,20 +47,18 @@ clinicalSigns:
   progressive:
     - 再餵食症候群：嚴重虛弱、心律不整、呼吸衰竭
     - 適當營養：疾病恢復
-
 diagnosis:
   primaryTests:
     - name: 營養評估
-      notes: "體重、BCS、白蛋白、總蛋白"
+      notes: 體重、BCS、白蛋白、總蛋白
     - name: 電解質監測
-      notes: "特別注意磷、鉀、鎂"
+      notes: 特別注意磷、鉀、鎂
     - name: 血糖監測
-      notes: "避免高血糖"
+      notes: 避免高血糖
   differentialDiagnoses:
     - 再餵食症候群
     - 過度餵食併發症
     - 營養不足
-
 treatment:
   medical:
     - 疾病狀態餵食原則
@@ -85,45 +82,70 @@ treatment:
     - 敗血症：RER × 1.0-1.25
     - 多重創傷：RER × 1.25-1.5
     - 嚴重燒傷：RER × 1.5-2.0
-
 prognosis:
-  general: "謹慎的營養支持可改善重症動物預後；過度餵食或過快增加有害"
-
+  general: 謹慎的營養支持可改善重症動物預後；過度餵食或過快增加有害
 prevention:
   - 從低熱量開始
   - 逐步增加
   - 密切監測電解質
   - 避免過度餵食
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in nutrition
     title: Ramadan Fasting and NCDs-Example of the Diabetes.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8925911/
     type: review
-    pmid: "35308269"
+    pmid: '35308269'
     relevance: primary
   - sourceOrg: International journal of molecular sciences
     title: A Systematic Review of Neuroprotective Strategies in the Management of Hypoglycemia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6386855/
     type: review
-    pmid: "30696060"
+    pmid: '30696060'
     relevance: supporting
   - sourceOrg: Nutrients
-    title: "The Metabolic Response to Stress and Infection in Critically Ill Children: The Opportunity of an Individualized Approach."
+    title: >-
+      The Metabolic Response to Stress and Infection in Critically Ill Children: The Opportunity of an Individualized
+      Approach.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5622792/
     type: review
-    pmid: "28926994"
+    pmid: '28926994'
     relevance: supporting
   - sourceOrg: Frontiers in veterinary science
-    title: Hepatic lipidosis in nine African white-bellied pangolins (Phataginus tricuspis) from a North American zoologic institution.
+    title: >-
+      Hepatic lipidosis in nine African white-bellied pangolins (Phataginus tricuspis) from a North American zoologic
+      institution.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12170562/
     type: research
-    pmid: "40530035"
+    pmid: '40530035'
     relevance: supporting
   - sourceOrg: Critical care (London, England)
-    title: "36th International Symposium on Intensive Care and Emergency Medicine : Brussels, Belgium. 15-18 March 2016."
+    title: '36th International Symposium on Intensive Care and Emergency Medicine : Brussels, Belgium. 15-18 March 2016.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5493079/
     type: research
-    pmid: "27885969"
+    pmid: '27885969'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 疾病狀態能量需求 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 營養評估
+          notes: 體重、BCS、白蛋白、總蛋白
+        - name: 電解質監測
+          notes: 特別注意磷、鉀、鎂
+        - name: 血糖監測
+          notes: 避免高血糖
+ddxSource: auto-generated

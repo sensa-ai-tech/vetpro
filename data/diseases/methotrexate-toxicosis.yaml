@@ -3,12 +3,13 @@ nameEn: Methotrexate Toxicosis
 nameZh: 甲氨蝶呤中毒
 bodySystem: toxicology
 description: 甲氨蝶呤為葉酸拮抗劑,用於化療及免疫抑制。中毒可引起骨髓抑制、胃腸道黏膜損傷及肝腎毒性。
-
 aliases:
-  - { alias: 甲胺喋呤毒性, language: zh }
-  - { alias: Methotrexate Poisoning, language: en }
-  - { alias: MTX Toxicity, language: en }
-
+  - alias: 甲胺喋呤毒性
+    language: zh
+  - alias: Methotrexate Poisoning
+    language: en
+  - alias: MTX Toxicity
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 較少使用,對骨髓抑制更敏感
-
 etiology:
   categories:
     - name: 劑量累積
@@ -29,7 +29,6 @@ etiology:
       examples:
         - 與NSAIDs併用增加毒性
         - 與其他骨髓抑制藥物併用
-
 clinicalSigns:
   early:
     - 嚴重嘔吐、腹瀉(常為血便)
@@ -40,21 +39,19 @@ clinicalSigns:
     - 敗血症、發燒
     - 黃疸、肝腎衰竭
     - 出血傾向
-
 diagnosis:
   primaryTests:
     - name: 全血球計數(CBC)
-      notes: "白血球<2000/μL,血小板<50000/μL,貧血"
+      notes: 白血球<2000/μL,血小板<50000/μL,貧血
     - name: 血液生化
-      notes: "肌酸酐、BUN、ALT升高"
+      notes: 肌酸酐、BUN、ALT升高
     - name: 血清甲氨蝶呤濃度
-      notes: "濃度>10 μmol/L(24小時後)提示毒性風險"
+      notes: 濃度>10 μmol/L(24小時後)提示毒性風險
   differentialDiagnoses:
     - 其他化療藥物毒性
     - 骨髓疾病
     - 胰臟炎
     - 敗血症
-
 treatment:
   medical:
     - 葉酸救援療法(Leucovorin rescue): Leucovorin 3-5 mg/m² IV/PO q6h,直至甲氨蝶呤濃度<0.05 μmol/L
@@ -64,12 +61,46 @@ treatment:
     - 止吐藥: Maropitant 1 mg/kg SC q24h
     - 血小板輸血(若血小板<20000/μL或出血)
     - 集落刺激因子(G-CSF): Filgrastim 5 μg/kg SC q24h(嚴重中性球減少)
-
 prognosis:
-  general: "若及早葉酸救援,預後尚可。嚴重骨髓抑制或敗血症死亡率高(>50%)。恢復期需2-3週。"
-
+  general: 若及早葉酸救援,預後尚可。嚴重骨髓抑制或敗血症死亡率高(>50%)。恢復期需2-3週。
 prevention:
   - 化療前評估腎功能,調整劑量
   - 避免與NSAIDs或其他腎毒性藥物併用
   - 高劑量化療方案必須配合葉酸救援
   - 定期監測CBC及腎功能
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: halitosis-stomatitis
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: haematochezia
+    frequency: common
+  - symptomId: jaundice
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 甲氨蝶呤中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - halitosis-stomatitis 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 全血球計數(CBC)
+          notes: 白血球<2000/μL,血小板<50000/μL,貧血
+        - name: 血液生化
+          notes: 肌酸酐、BUN、ALT升高
+        - name: 血清甲氨蝶呤濃度
+          notes: 濃度>10 μmol/L(24小時後)提示毒性風險
+ddxSource: auto-generated

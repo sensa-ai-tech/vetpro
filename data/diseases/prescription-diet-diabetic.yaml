@@ -3,12 +3,13 @@ nameEn: Prescription Diet Diabetic
 nameZh: 糖尿病處方飲食
 bodySystem: metabolic
 description: 專為糖尿病設計的高纖維、低脂、複合碳水化合物飲食。有助穩定血糖、減少胰島素需求、維持理想體重。
-
 aliases:
-  - { alias: 糖尿病飲食, language: zh }
-  - { alias: Diabetic Diet, language: en }
-  - { alias: Glucose Management Diet, language: en }
-
+  - alias: 糖尿病飲食
+    language: zh
+  - alias: Diabetic Diet
+    language: en
+  - alias: Glucose Management Diet
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓使用低碳水高蛋白飲食效果更佳
-
 etiology:
   categories:
     - name: 犬糖尿病飲食特點
@@ -33,7 +33,6 @@ etiology:
         - 高蛋白質
         - 適度纖維
         - 罐頭優於乾糧
-
 clinicalSigns:
   early:
     - 血糖穩定
@@ -42,18 +41,16 @@ clinicalSigns:
   progressive:
     - 胰島素需求減少
     - 部分貓可能達到緩解(停用胰島素)
-
 diagnosis:
   primaryTests:
     - name: 血糖監測
-      notes: "家用血糖機或持續血糖監測"
+      notes: 家用血糖機或持續血糖監測
     - name: 果糖胺
-      notes: "評估2-3週血糖控制"
+      notes: 評估2-3週血糖控制
     - name: 尿糖及酮體
-      notes: "監測糖尿病控制"
+      notes: 監測糖尿病控制
   differentialDiagnoses:
     - 犬貓糖尿病
-
 treatment:
   medical:
     - 犬糖尿病飼料
@@ -71,45 +68,69 @@ treatment:
     - 胰島素治療
     - 血糖監測
     - 定期獸醫追蹤
-
 prognosis:
-  general: "配合適當飲食可穩定控制血糖，改善生活品質；部分貓可達緩解"
-
+  general: 配合適當飲食可穩定控制血糖，改善生活品質；部分貓可達緩解
 prevention:
   - 維持理想體重
   - 定時定量餵食
   - 定期血糖監測
   - 避免高糖零食
-
-
 guidelineRefs:
-  - sourceOrg: "Diabetes, metabolic syndrome and obesity : targets and therapy"
+  - sourceOrg: 'Diabetes, metabolic syndrome and obesity : targets and therapy'
     title: The Shengmai San Exerts Therapeutic Effects on Type 2 Diabetes by Modulating the PI3K/AKT/GSK3B Signaling Pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11972573/
     type: research
-    pmid: "40191827"
+    pmid: '40191827'
     relevance: supporting
-  - sourceOrg: "Diabetes, metabolic syndrome and obesity : targets and therapy"
-    title: Network Pharmacology and Experimental Validation of the Effects of Shenling Baizhu San, Quzhi Ruangan Fang and Gexia Zhuyu Tang on the Intestinal Flora of Rats with NAFLD.
+  - sourceOrg: 'Diabetes, metabolic syndrome and obesity : targets and therapy'
+    title: >-
+      Network Pharmacology and Experimental Validation of the Effects of Shenling Baizhu San, Quzhi Ruangan Fang and
+      Gexia Zhuyu Tang on the Intestinal Flora of Rats with NAFLD.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12011051/
     type: research
-    pmid: "40260263"
+    pmid: '40260263'
     relevance: supporting
   - sourceOrg: Journal of traditional Chinese medicine = Chung i tsa chih ying wen pan
     title: Dangua Fang regulating tricarboxylic acid cycle and respiratory chain and its mechanism in diabetic rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10623262/
     type: research
-    pmid: "37946477"
+    pmid: '37946477'
     relevance: supporting
   - sourceOrg: Diabetologia
-    title: Antihypertensive medication needs and blood pressure control with weight loss in the Diabetes Remission Clinical Trial (DiRECT).
+    title: >-
+      Antihypertensive medication needs and blood pressure control with weight loss in the Diabetes Remission Clinical
+      Trial (DiRECT).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8382659/
     type: research
-    pmid: "34056684"
+    pmid: '34056684'
     relevance: supporting
   - sourceOrg: Nutrients
-    title: Diosgenin Ameliorated Type II Diabetes-Associated Nonalcoholic Fatty Liver Disease through Inhibiting De Novo Lipogenesis and Improving Fatty Acid Oxidation and Mitochondrial Function in Rats.
+    title: >-
+      Diosgenin Ameliorated Type II Diabetes-Associated Nonalcoholic Fatty Liver Disease through Inhibiting De Novo
+      Lipogenesis and Improving Fatty Acid Oxidation and Mitochondrial Function in Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9738614/
     type: research
-    pmid: "36501024"
+    pmid: '36501024'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: polyuria-polydipsia
+    frequency: common
+diagnosticAlgorithm:
+  title: 糖尿病處方飲食 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - polyuria-polydipsia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血糖監測
+          notes: 家用血糖機或持續血糖監測
+        - name: 果糖胺
+          notes: 評估2-3週血糖控制
+        - name: 尿糖及酮體
+          notes: 監測糖尿病控制
+ddxSource: auto-generated

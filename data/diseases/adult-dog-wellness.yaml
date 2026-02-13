@@ -3,18 +3,18 @@ nameEn: Adult Dog Wellness
 nameZh: 成犬健康照護
 bodySystem: other
 description: 成犬(1-7歲)的年度健康檢查及預防保健計畫。包括疫苗補強、寄生蟲預防、牙科保健、體重管理及早期疾病篩檢,維持成犬最佳健康狀態。
-
 aliases:
-  - { alias: 成犬預防保健, language: zh }
-  - { alias: Adult dog preventive care, language: en }
-  - { alias: Annual dog wellness exam, language: en }
-
+  - alias: 成犬預防保健
+    language: zh
+  - alias: Adult dog preventive care
+    language: en
+  - alias: Annual dog wellness exam
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 成犬應每年接受一次完整健康檢查,大型犬可考慮每半年一次
-
 etiology:
   categories:
     - name: 預防保健項目
@@ -25,7 +25,6 @@ etiology:
         - 牙科檢查及洗牙
         - 體重及體態評分
         - 行為評估
-
 clinicalSigns:
   early:
     - 健康成犬應精神活潑、食慾正常
@@ -35,22 +34,20 @@ clinicalSigns:
     - 體重異常增減
     - 牙結石形成
     - 行為改變
-
 diagnosis:
   primaryTests:
     - name: 年度完整身體檢查
-      notes: "心肺聽診、腹部觸診、淋巴結檢查、皮膚毛色、關節活動度"
+      notes: 心肺聽診、腹部觸診、淋巴結檢查、皮膚毛色、關節活動度
     - name: 心絲蟲抗原檢測
-      notes: "每年一次(預防用藥前)"
+      notes: 每年一次(預防用藥前)
     - name: 糞便檢查
-      notes: "每年或依寄生蟲暴露風險"
+      notes: 每年或依寄生蟲暴露風險
     - name: 基礎血檢
-      notes: "CBC及生化檢查(建議7歲前至少一次建立基礎值)"
+      notes: CBC及生化檢查(建議7歲前至少一次建立基礎值)
   differentialDiagnoses:
     - 早期慢性疾病
     - 寄生蟲感染
     - 牙周病
-
 treatment:
   medical:
     - 每年補強疫苗:DHPP及狂犬病(或依3年方案)
@@ -58,41 +55,63 @@ treatment:
     - 建議每年洗牙(依牙結石嚴重度)
     - 維持理想體重:調整飲食及運動量
     - 每日刷牙或使用潔牙產品
-
 prognosis:
-  general: "定期預防保健可及早發現疾病,維持成犬最佳健康及生活品質。"
-
+  general: 定期預防保健可及早發現疾病,維持成犬最佳健康及生活品質。
 prevention:
   - 每年獸醫檢查至少一次
   - 持續心絲蟲及寄生蟲預防,全年不間斷
   - 維持理想體重,避免肥胖
   - 提供適當運動及心智刺激
   - 注意任何行為或食慾改變
-
-
 guidelineRefs:
   - sourceOrg: The Veterinary record
     title: Prioritisation of animal welfare issues in the UK using expert consensus.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7848064/
     type: consensus
-    pmid: "32631849"
+    pmid: '32631849'
   - sourceOrg: Scientific reports
-    title: "Dog owners are more likely to meet physical activity guidelines than people without a dog: An investigation of the association between dog ownership and physical activity levels in a UK community."
+    title: >-
+      Dog owners are more likely to meet physical activity guidelines than people without a dog: An investigation of the
+      association between dog ownership and physical activity levels in a UK community.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6473089/
     type: guideline
-    pmid: "31000795"
+    pmid: '31000795'
   - sourceOrg: International journal of environmental research and public health
     title: Understanding the Role of Therapy Dogs in Human Health Promotion.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10217936/
     type: review
-    pmid: "37239529"
+    pmid: '37239529'
   - sourceOrg: Frontiers in veterinary science
-    title: "Environmental risk factors in puppies and kittens for developing chronic disorders in adulthood: A call for research on developmental programming."
+    title: >-
+      Environmental risk factors in puppies and kittens for developing chronic disorders in adulthood: A call for
+      research on developmental programming.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9816871/
     type: review
-    pmid: "36619947"
+    pmid: '36619947'
   - sourceOrg: Epilepsia
-    title: "Dietary medium chain triglycerides for management of epilepsy: New data from human, dog, and rodent studies."
+    title: 'Dietary medium chain triglycerides for management of epilepsy: New data from human, dog, and rodent studies.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8453917/
     type: review
-    pmid: "34169513"
+    pmid: '34169513'
+associatedSymptoms:
+  - symptomId: behaviour-change
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 成犬健康照護 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 年度完整身體檢查
+          notes: 心肺聽診、腹部觸診、淋巴結檢查、皮膚毛色、關節活動度
+        - name: 心絲蟲抗原檢測
+          notes: 每年一次(預防用藥前)
+        - name: 糞便檢查
+          notes: 每年或依寄生蟲暴露風險
+ddxSource: auto-generated

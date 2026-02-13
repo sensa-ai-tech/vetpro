@@ -3,12 +3,13 @@ nameEn: Fiber Supplementation
 nameZh: 纖維補充
 bodySystem: metabolic
 description: 可溶性及不溶性纖維在犬貓疾病管理中的應用。可改善腸道功能、血糖控制、體重管理及肛門腺問題。
-
 aliases:
-  - { alias: 膳食纖維, language: zh }
-  - { alias: Dietary Fiber, language: en }
-  - { alias: Fiber Supplement, language: en }
-
+  - alias: 膳食纖維
+    language: zh
+  - alias: Dietary Fiber
+    language: en
+  - alias: Fiber Supplement
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 毛球、便秘、體重管理
-
 etiology:
   categories:
     - name: 纖維類型
@@ -42,25 +42,22 @@ etiology:
         - 增加糞便體積
         - 促進腸道蠕動
         - 產生短鏈脂肪酸(發酵性纖維)
-
 clinicalSigns:
   early:
     - 適當纖維：糞便成形、體重管理改善
     - 過量：腹瀉、脹氣、營養吸收不良
   progressive:
     - 長期使用：體重控制、血糖穩定、腸道健康
-
 diagnosis:
   primaryTests:
     - name: 糞便評估
-      notes: "成形度、水分、體積"
+      notes: 成形度、水分、體積
     - name: 體重監測
-      notes: "體重管理效果"
+      notes: 體重管理效果
     - name: 血糖監測
-      notes: "糖尿病控制"
+      notes: 糖尿病控制
   differentialDiagnoses:
     - 各種需纖維治療的疾病
-
 treatment:
   medical:
     - 纖維補充劑量
@@ -84,40 +81,67 @@ treatment:
     - 同時增加水分攝取
     - 過量可能導致便秘(矛盾)
     - 可能減少其他營養素吸收
-
 prognosis:
-  general: "適當纖維補充可有效改善多種疾病症狀；需根據個別情況選擇纖維類型及劑量"
-
+  general: 適當纖維補充可有效改善多種疾病症狀；需根據個別情況選擇纖維類型及劑量
 prevention:
   - 從低劑量開始
   - 增加水分攝取
   - 根據糞便品質調整
   - 避免過量
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
     title: Nutritional Factors Related to Canine Gallbladder Diseases-A Scoping Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11768938/
     type: review
-    pmid: "39852880"
+    pmid: '39852880'
   - sourceOrg: Nutrition reviews
-    title: "Fiber intake and fiber intervention in depression and anxiety: a systematic review and meta-analysis of observational studies and randomized controlled trials."
+    title: >-
+      Fiber intake and fiber intervention in depression and anxiety: a systematic review and meta-analysis of
+      observational studies and randomized controlled trials.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11551482/
     type: review
-    pmid: "38007616"
+    pmid: '38007616'
   - sourceOrg: Nutrients
-    title: "Yeast Beta-Glucans Ingestion Does Not Influence Body Weight: A Systematic Review and Meta-Analysis of Pre-Clinical Studies."
+    title: >-
+      Yeast Beta-Glucans Ingestion Does Not Influence Body Weight: A Systematic Review and Meta-Analysis of Pre-Clinical
+      Studies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8707765/
     type: review
-    pmid: "34959802"
+    pmid: '34959802'
   - sourceOrg: Journal of evidence-based integrative medicine
-    title: "Complementary and Alternative Therapies for Weight Loss: A Narrative Review."
+    title: 'Complementary and Alternative Therapies for Weight Loss: A Narrative Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8436299/
     type: review
-    pmid: "34496677"
-  - sourceOrg: "BMC sports science, medicine &amp; rehabilitation"
-    title: "A 30% high-fiber diet mitigates oxidative stress and inflammation while modulating cecal microbiota in rats undergoing high-intensity exercise."
+    pmid: '34496677'
+  - sourceOrg: BMC sports science, medicine &amp; rehabilitation
+    title: >-
+      A 30% high-fiber diet mitigates oxidative stress and inflammation while modulating cecal microbiota in rats
+      undergoing high-intensity exercise.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12771793/
     type: research
-    pmid: "41318525"
+    pmid: '41318525'
+associatedSymptoms:
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: flatulence
+    frequency: common
+diagnosticAlgorithm:
+  title: 纖維補充 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - diarrhoea 相關症狀
+        - flatulence 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便評估
+          notes: 成形度、水分、體積
+        - name: 體重監測
+          notes: 體重管理效果
+        - name: 血糖監測
+          notes: 糖尿病控制
+ddxSource: auto-generated

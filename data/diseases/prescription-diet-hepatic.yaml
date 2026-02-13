@@ -3,12 +3,13 @@ nameEn: Prescription Diet Hepatic
 nameZh: 肝臟處方飲食
 bodySystem: hepatic
 description: 專為肝臟疾病設計的低蛋白、高支鏈胺基酸、低銅飲食。可減少肝性腦病變、支持肝臟再生、改善肝功能。
-
 aliases:
-  - { alias: 肝處方飼料, language: zh }
-  - { alias: Hepatic Diet, language: en }
-  - { alias: Liver Support Diet, language: en }
-
+  - alias: 肝處方飼料
+    language: zh
+  - alias: Hepatic Diet
+    language: en
+  - alias: Liver Support Diet
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 脂肪肝、膽管炎使用
-
 etiology:
   categories:
     - name: 飲食特點
@@ -35,7 +35,6 @@ etiology:
         - 門脈分流
         - 肝性腦病變
         - 銅蓄積性肝病
-
 clinicalSigns:
   early:
     - 肝性腦病變症狀改善
@@ -45,18 +44,16 @@ clinicalSigns:
     - 肝功能指數穩定
     - 腹水減少
     - 體重增加
-
 diagnosis:
   primaryTests:
     - name: 肝功能檢查
-      notes: "ALT、ALP、GGT、總膽紅素、白蛋白"
+      notes: ALT、ALP、GGT、總膽紅素、白蛋白
     - name: 血氨濃度
-      notes: "肝性腦病變監測"
+      notes: 肝性腦病變監測
     - name: 腹部超音波
-      notes: "評估肝臟大小、結構"
+      notes: 評估肝臟大小、結構
   differentialDiagnoses:
     - 各類肝臟疾病
-
 treatment:
   medical:
     - 商業肝處方飼料
@@ -72,45 +69,74 @@ treatment:
     - 抗生素(肝性腦病變時)
     - 利尿劑(腹水)
     - 銅螯合劑(銅蓄積)
-
 prognosis:
-  general: "配合肝處方可改善症狀及肝功能；預後取決於原發肝病嚴重度"
-
+  general: 配合肝處方可改善症狀及肝功能；預後取決於原發肝病嚴重度
 prevention:
   - 早期診斷肝臟疾病
   - 及時使用肝處方飲食
   - 定期肝功能監測
   - 避免肝毒性藥物
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in pharmacology
-    title: Study on the effect and mechanism of Ershiyiwei Lvronghao concentrated Pills in the treatment of nonalcoholic fatty liver disease.
+    title: >-
+      Study on the effect and mechanism of Ershiyiwei Lvronghao concentrated Pills in the treatment of nonalcoholic
+      fatty liver disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12872746/
     type: research
-    pmid: "41657771"
+    pmid: '41657771'
     relevance: supporting
   - sourceOrg: Metabolites
-    title: Fufang Muji Granules Ameliorate Liver Fibrosis by Reducing Oxidative Stress and Inflammation, Inhibiting Apoptosis, and Modulating Overall Metabolism.
+    title: >-
+      Fufang Muji Granules Ameliorate Liver Fibrosis by Reducing Oxidative Stress and Inflammation, Inhibiting
+      Apoptosis, and Modulating Overall Metabolism.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11356414/
     type: research
-    pmid: "39195542"
+    pmid: '39195542'
     relevance: supporting
   - sourceOrg: Heliyon
-    title: Integrative proteomics and metabolomics explore the effect and mechanism of Qiyin granules on improving nonalcoholic fatty liver disease.
+    title: >-
+      Integrative proteomics and metabolomics explore the effect and mechanism of Qiyin granules on improving
+      nonalcoholic fatty liver disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10912341/
     type: research
-    pmid: "38444462"
+    pmid: '38444462'
     relevance: supporting
   - sourceOrg: Frontiers in cellular and infection microbiology
-    title: Lingguizhugan decoction improves non-alcoholic steatohepatitis partially by modulating gut microbiota and correlated metabolites.
+    title: >-
+      Lingguizhugan decoction improves non-alcoholic steatohepatitis partially by modulating gut microbiota and
+      correlated metabolites.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9908757/
     type: research
-    pmid: "36779187"
+    pmid: '36779187'
     relevance: supporting
   - sourceOrg: Journal of traditional Chinese medicine = Chung i tsa chih ying wen pan
     title: Dangua Fang regulating tricarboxylic acid cycle and respiratory chain and its mechanism in diabetic rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10623262/
     type: research
-    pmid: "37946477"
+    pmid: '37946477'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-gain
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肝臟處方飲食 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-gain 相關症狀
+        - ascites 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 肝功能檢查
+          notes: ALT、ALP、GGT、總膽紅素、白蛋白
+        - name: 血氨濃度
+          notes: 肝性腦病變監測
+        - name: 腹部超音波
+          notes: 評估肝臟大小、結構
+ddxSource: auto-generated

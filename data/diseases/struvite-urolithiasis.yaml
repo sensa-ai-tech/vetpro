@@ -2,14 +2,18 @@ slug: struvite-urolithiasis
 nameEn: Struvite Urolithiasis
 nameZh: 磷酸銨鎂尿路結石
 bodySystem: urinary
-description: 磷酸銨鎂結石（struvite, magnesium ammonium phosphate）為犬隻最常見的尿路結石類型。犬隻 struvite 結石絕大多數與泌尿道感染（特別是產脲酶細菌 urease-producing bacteria）相關，貓隻則多為無菌性（sterile struvite）。Struvite 結石可透過飲食與抗生素治療溶解。
-
+description: >-
+  磷酸銨鎂結石（struvite, magnesium ammonium phosphate）為犬隻最常見的尿路結石類型。犬隻 struvite 結石絕大多數與泌尿道感染（特別是產脲酶細菌 urease-producing
+  bacteria）相關，貓隻則多為無菌性（sterile struvite）。Struvite 結石可透過飲食與抗生素治療溶解。
 aliases:
-  - { alias: 鳥糞石, language: zh }
-  - { alias: Struvite Stones, language: en }
-  - { alias: Triple Phosphate Stones, language: en }
-  - { alias: MAP Stones, language: en }
-
+  - alias: 鳥糞石
+    language: zh
+  - alias: Struvite Stones
+    language: en
+  - alias: Triple Phosphate Stones
+    language: en
+  - alias: MAP Stones
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓隻 struvite 結石多為無菌性。近年比例下降但仍常見。可透過飲食溶解。
-
 etiology:
   categories:
     - name: 感染相關（犬隻為主）
@@ -31,7 +34,6 @@ etiology:
         - 鹼性尿液
         - 低水分攝取
         - 尿液濃縮
-
 clinicalSigns:
   early:
     - 頻尿
@@ -42,37 +44,66 @@ clinicalSigns:
     - 尿路阻塞（公犬尿道、公貓尿道）
     - 排尿疼痛
     - 急性腎後性腎衰竭（完全阻塞時）
-
 diagnosis:
   primaryTests:
     - name: 影像學
       notes: X 光：struvite 結石為中度至高度放射密度。腹部超音波可偵測膀胱與腎臟結石。
     - name: 尿液培養
       notes: 犬隻 struvite 結石幾乎都有 UTI——尿液培養與感受性試驗很重要。尿液 pH 通常 >7.0。結石分析確認成分。
-
 treatment:
   principles:
     - Struvite 結石可透過飲食溶解（與草酸鈣不同）
     - 犬隻需同時治療 UTI
     - 預防復發
   general:
-    - "飲食溶解：泌尿道溶石處方飲食（Hill's s/d、Royal Canin SO）× 4-12 週"
+    - 飲食溶解：泌尿道溶石處方飲食（Hill's s/d、Royal Canin SO）× 4-12 週
     - 犬隻同時抗生素治療 UTI（根據培養結果，治療至結石溶解後 1 個月）
     - 大型結石或阻塞性結石需手術（cystotomy）
-    - "預防復發飲食：泌尿道維護處方飲食（Hill's c/d、Royal Canin SO）"
+    - 預防復發飲食：泌尿道維護處方飲食（Hill's c/d、Royal Canin SO）
     - 增加水分攝取
     - 犬隻定期尿液培養追蹤
-
-prognosis: 預後良好。飲食溶解通常在 4-12 週內完成。犬隻感染性 struvite 結石在 UTI 治療成功後復發率降低。貓隻無菌性 struvite 結石以處方飲食預防效果良好。復發率以適當飲食管理可降至 5-10%。定期影像學與尿液檢查追蹤。
-
-
+prognosis: >-
+  預後良好。飲食溶解通常在 4-12 週內完成。犬隻感染性 struvite 結石在 UTI 治療成功後復發率降低。貓隻無菌性 struvite 結石以處方飲食預防效果良好。復發率以適當飲食管理可降至
+  5-10%。定期影像學與尿液檢查追蹤。
 guidelineRefs:
   - sourceOrg: Journal of the American Veterinary Medical Association
     title: Ureteroneocystostomy for treatment of struvite urolithiasis in a ferret.
     url: https://pubmed.ncbi.nlm.nih.gov/37217174/
     type: research
-    pmid: "37217174"
+    pmid: '37217174'
     relevance: supporting
 pubmedQueries:
-  - query: '"struvite" AND "urolithiasis" AND (veterinary OR canine OR feline) AND ("dissolution" OR "treatment" OR "prevention")'
+  - query: >-
+      "struvite" AND "urolithiasis" AND (veterinary OR canine OR feline) AND ("dissolution" OR "treatment" OR
+      "prevention")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: common
+  - symptomId: haematuria
+    frequency: common
+diagnosticAlgorithm:
+  title: 磷酸銨鎂尿路結石 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pollakiuria 相關症狀
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 影像學
+          notes: X 光：struvite 結石為中度至高度放射密度。腹部超音波可偵測膀胱與腎臟結石。
+        - name: 尿液培養
+          notes: 犬隻 struvite 結石幾乎都有 UTI——尿液培養與感受性試驗很重要。尿液 pH 通常 >7.0。結石分析確認成分。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - Struvite 結石可透過飲食溶解（與草酸鈣不同）
+        - 犬隻需同時治療 UTI
+        - 預防復發
+ddxSource: auto-generated

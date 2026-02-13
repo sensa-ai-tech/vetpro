@@ -3,11 +3,11 @@ nameEn: Ebstein Anomaly
 nameZh: 艾伯斯坦氏異常
 bodySystem: cardiac
 description: 三尖瓣瓣葉向下移位進入右心室,導致右心房擴大及三尖瓣閉鎖不全。罕見先天性心臟病,可能合併其他心臟異常。
-
 aliases:
-  - { alias: 艾伯斯坦畸形, language: zh }
-  - { alias: Ebstein's Malformation, language: en }
-
+  - alias: 艾伯斯坦畸形
+    language: zh
+  - alias: Ebstein's Malformation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 極罕見
-
 etiology:
   categories:
     - name: 先天性
       examples:
         - 三尖瓣發育異常
         - 胚胎期心臟形成缺陷
-
 clinicalSigns:
   early:
     - 右側收縮期雜音
@@ -34,29 +32,55 @@ clinicalSigns:
     - 心律不整
     - 發紺 (若合併右向左分流)
     - 右心衰竭
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波
-      notes: "三尖瓣瓣葉向心室側移位、右心房擴大、三尖瓣閉鎖不全"
+      notes: 三尖瓣瓣葉向心室側移位、右心房擴大、三尖瓣閉鎖不全
     - name: 心電圖
-      notes: "右心房擴張 (高 P 波)、可能有預激症候群"
+      notes: 右心房擴張 (高 P 波)、可能有預激症候群
     - name: 胸部 X 光
-      notes: "右心擴大、心臟呈球形"
+      notes: 右心擴大、心臟呈球形
   differentialDiagnoses:
     - 三尖瓣發育不良
     - 三尖瓣閉鎖不全
     - 心房中隔缺損
-
 treatment:
   medical:
     - 支持性治療 (利尿劑、ACE 抑制劑)
     - 控制心律不整
     - 外科修補 (罕見,技術困難)
-
 prognosis:
-  general: "預後謹慎至不良;輕度病例可能長期穩定;嚴重病例出現右心衰竭,中位存活時間 1-2 年"
-
+  general: 預後謹慎至不良;輕度病例可能長期穩定;嚴重病例出現右心衰竭,中位存活時間 1-2 年
 prevention:
   - 遺傳篩檢
   - 避免繁殖受影響犬隻
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 艾伯斯坦氏異常 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - ascites 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波
+          notes: 三尖瓣瓣葉向心室側移位、右心房擴大、三尖瓣閉鎖不全
+        - name: 心電圖
+          notes: 右心房擴張 (高 P 波)、可能有預激症候群
+        - name: 胸部 X 光
+          notes: 右心擴大、心臟呈球形
+ddxSource: auto-generated

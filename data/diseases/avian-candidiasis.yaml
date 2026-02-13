@@ -3,19 +3,21 @@ nameEn: Avian Candidiasis
 nameZh: 禽類念珠菌症
 bodySystem: gastrointestinal
 description: 禽類念珠菌症是由白色念珠菌（Candida albicans）引起的消化道真菌感染，主要影響嗉囊與上消化道。手養幼鳥及免疫抑制個體最常見。嗉囊內壁白色增厚性病變為特徵性表現。
-
 aliases:
-  - { alias: 鳥類念珠菌感染, language: zh }
-  - { alias: 嗉囊念珠菌症, language: zh }
-  - { alias: Avian thrush, language: en }
-  - { alias: Crop candidiasis, language: en }
-  - { alias: Avian yeast infection, language: en }
-
+  - alias: 鳥類念珠菌感染
+    language: zh
+  - alias: 嗉囊念珠菌症
+    language: zh
+  - alias: Avian thrush
+    language: en
+  - alias: Crop candidiasis
+    language: en
+  - alias: Avian yeast infection
+    language: en
 species:
   - speciesCommon: bird
     prevalence: common
     notes: 手養幼鳥、長期使用抗生素之鸚鵡最常見。免疫抑制為重要風險因子。嗉囊為最常受累部位。
-
 etiology:
   categories:
     - name: 感染性
@@ -31,7 +33,6 @@ etiology:
         - 飲食不均衡（高糖飲食）
         - 嗉囊排空延遲
         - 免疫抑制疾病
-
 clinicalSigns:
   early:
     - 嗉囊排空緩慢
@@ -45,7 +46,6 @@ clinicalSigns:
     - 體重下降
     - 嗜睡
     - 嗉囊脹大
-
 diagnosis:
   primaryTests:
     - name: 嗉囊拭子細胞學
@@ -54,7 +54,6 @@ diagnosis:
       notes: 真菌培養確認菌種與藥敏試驗。少量念珠菌可為正常菌群
     - name: 嗉囊內視鏡
       notes: 嗉囊黏膜增厚、白色斑塊性病變
-
 treatment:
   principles:
     - 抗真菌藥物治療
@@ -69,41 +68,81 @@ treatment:
     - 維生素 A 補充
     - 改善飲食（減少糖分）
     - 手養幼鳥注意配方奶溫度與衛生
-
 prognosis: 預後良好。單純嗉囊念珠菌症經適當治療通常反應良好。移除誘發因素（如停用不必要抗生素）是預防復發的關鍵。反覆感染需排除潛在免疫抑制疾病。全身性念珠菌症（罕見）預後較差。
-
-
 guidelineRefs:
   - sourceOrg: Journal of fungi (Basel, Switzerland)
-    title: "Changing Climate, Changing Candida: Environmental and Social Pressures on Invasive Candidiasis and Antifungal Resistance in Latin America."
+    title: >-
+      Changing Climate, Changing Candida: Environmental and Social Pressures on Invasive Candidiasis and Antifungal
+      Resistance in Latin America.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12471215/
     type: review
-    pmid: "41003155"
+    pmid: '41003155'
   - sourceOrg: Medical mycology
-    title: "Fungal infections in animals: a patchwork of different situations."
+    title: 'Fungal infections in animals: a patchwork of different situations.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6251577/
     type: review
-    pmid: "29538732"
+    pmid: '29538732'
   - sourceOrg: Journal of Zhejiang University. Science. B
-    title: "Fungal spondylodiscitis in a patient recovered from H7N9 virus infection: a case study and a literature review of the differences between Candida and Aspergillus spondylodiscitis."
+    title: >-
+      Fungal spondylodiscitis in a patient recovered from H7N9 virus infection: a case study and a literature review of
+      the differences between Candida and Aspergillus spondylodiscitis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5120229/
     type: review
-    pmid: "27819134"
+    pmid: '27819134'
   - sourceOrg: Cureus
-    title: "Histoplasmosis: No Longer Just a Disease of the Immunocompromised."
+    title: 'Histoplasmosis: No Longer Just a Disease of the Immunocompromised.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11872003/
     type: case-report
-    pmid: "40027064"
-  - sourceOrg: "Brazilian journal of microbiology : [publication of the Brazilian Society for Microbiology]"
-    title: Case report of respiratory aspergillosis and candidiasis in wild Magellanic penguins (Spheniscus magellanicus), Brazil.
+    pmid: '40027064'
+  - sourceOrg: 'Brazilian journal of microbiology : [publication of the Brazilian Society for Microbiology]'
+    title: >-
+      Case report of respiratory aspergillosis and candidiasis in wild Magellanic penguins (Spheniscus magellanicus),
+      Brazil.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8105484/
     type: case-report
-    pmid: "33566323"
+    pmid: '33566323'
   - sourceOrg: Open veterinary journal
     title: Mortality of four captive-born crested screamer chicks (Chauna torquata).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6626153/
     type: case-report
-    pmid: "31360650"
+    pmid: '31360650'
 pubmedQueries:
   - query: '"candidiasis" AND (avian OR bird OR psittacine) AND ("treatment" OR "crop")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+diagnosticAlgorithm:
+  title: 禽類念珠菌症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 嗉囊拭子細胞學
+          notes: 革蘭氏染色見酵母菌與菌絲。大量芽生酵母菌具診斷意義
+        - name: 嗉囊沖洗液培養
+          notes: 真菌培養確認菌種與藥敏試驗。少量念珠菌可為正常菌群
+        - name: 嗉囊內視鏡
+          notes: 嗉囊黏膜增厚、白色斑塊性病變
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 抗真菌藥物治療
+        - 移除誘發因素
+        - 恢復正常消化道菌群
+ddxSource: auto-generated

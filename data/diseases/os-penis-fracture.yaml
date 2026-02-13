@@ -3,11 +3,11 @@ nameEn: Os Penis Fracture
 nameZh: 陰莖骨骨折
 bodySystem: reproductive
 description: 犬陰莖骨骨折，多因外傷、車禍或跨越障礙時傷及。可能導致尿道損傷、排尿困難。需手術固定或切除。
-
 aliases:
-  - { alias: 陰莖骨斷裂, language: zh }
-  - { alias: Baculum Fracture, language: en }
-
+  - alias: 陰莖骨斷裂
+    language: zh
+  - alias: Baculum Fracture
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓陰莖骨較小，骨折罕見
-
 etiology:
   categories:
     - name: 外傷
@@ -26,7 +25,6 @@ etiology:
         - 跨越障礙（籬笆、牆壁）
         - 咬傷
         - 跌落
-
 clinicalSigns:
   early:
     - 陰莖腫脹、疼痛
@@ -36,20 +34,18 @@ clinicalSigns:
     - 陰莖變形
     - 尿道狹窄或阻塞
     - 尿瀦留、膀胱破裂
-
 diagnosis:
   primaryTests:
     - name: X光檢查
-      notes: "陰莖骨骨折、錯位"
+      notes: 陰莖骨骨折、錯位
     - name: 尿道造影
-      notes: "評估尿道完整性"
+      notes: 評估尿道完整性
     - name: 膀胱超音波
-      notes: "評估尿瀦留"
+      notes: 評估尿瀦留
   differentialDiagnoses:
     - 陰莖外傷（無骨折）
     - 尿道結石
     - 尿道腫瘤
-
 treatment:
   medical:
     - 穩定性骨折、無尿道損傷：保守治療
@@ -60,11 +56,34 @@ treatment:
     - 陰莖骨部分或全切除
     - 尿道重建（若損傷）
     - 術後抗生素及止痛
-
 prognosis:
-  general: "穩定性骨折保守治療預後尚可。嚴重尿道損傷預後保留，可能長期排尿困難或尿道狹窄。"
-
+  general: 穩定性骨折保守治療預後尚可。嚴重尿道損傷預後保留，可能長期排尿困難或尿道狹窄。
 prevention:
   - 避免外傷風險
   - 限制跨越高障礙
   - 絕育降低遊蕩行為
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: common
+  - symptomId: haematuria
+    frequency: common
+diagnosticAlgorithm:
+  title: 陰莖骨骨折 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pollakiuria 相關症狀
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: X光檢查
+          notes: 陰莖骨骨折、錯位
+        - name: 尿道造影
+          notes: 評估尿道完整性
+        - name: 膀胱超音波
+          notes: 評估尿瀦留
+ddxSource: auto-generated

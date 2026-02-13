@@ -3,13 +3,15 @@ nameEn: Amyloidosis
 nameZh: 類澱粉沉積症
 bodySystem: metabolic
 description: 異常摺疊的蛋白質（類澱粉蛋白）沉積於組織器官導致進行性器官功能障礙的全身性疾病。犬貓以腎臟及肝臟沉積最常見，Shar Pei 犬及 Abyssinian 貓有遺傳易感性。AA 型（反應性）類澱粉沉積為最常見類型。
-
 aliases:
-  - { alias: 澱粉樣變性, language: zh }
-  - { alias: 類澱粉蛋白沉積, language: zh }
-  - { alias: Systemic Amyloidosis, language: en }
-  - { alias: AA Amyloidosis, language: en }
-
+  - alias: 澱粉樣變性
+    language: zh
+  - alias: 類澱粉蛋白沉積
+    language: zh
+  - alias: Systemic Amyloidosis
+    language: en
+  - alias: AA Amyloidosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: Abyssinian、Siamese、Oriental Shorthair 有家族性腎類澱粉沉積。Abyssinian 貓可累及肝臟而非腎臟。
-
 etiology:
   categories:
     - name: 反應性（AA 型）
@@ -30,7 +31,6 @@ etiology:
         - Shar Pei 犬家族性類澱粉沉積
         - Abyssinian 貓家族性類澱粉沉積
         - Beagle 犬家族性類澱粉沉積
-
 clinicalSigns:
   early:
     - 蛋白尿（腎臟沉積型）
@@ -41,14 +41,12 @@ clinicalSigns:
     - 腎病症候群（大量蛋白尿、低白蛋白、水腫）
     - 肝功能衰竭（Abyssinian 貓肝沉積型）
     - 血栓栓塞（低白蛋白→抗凝血蛋白流失）
-
 diagnosis:
   primaryTests:
     - name: 尿液分析
       notes: 蛋白尿（UPC 升高）。腎類澱粉沉積以腎小球損傷為主。
     - name: 組織活檢
       notes: 腎臟或肝臟活檢以剛果紅染色確診。偏光顯微鏡下呈蘋果綠雙折射為確定診斷。
-
 treatment:
   principles:
     - 目前無有效逆轉類澱粉沉積的療法
@@ -61,41 +59,106 @@ treatment:
     - 抗血栓預防（低劑量 Aspirin 或 Clopidogrel）
     - 腎衰竭支持療法（輸液、磷結合劑、紅血球生成素）
     - Shar Pei 犬反覆發燒期：NSAIDs 控制
-
 prognosis: 類澱粉沉積症目前無法根治，為進行性疾病。腎類澱粉沉積發展為腎衰竭的中位存活時間約數月至 1-2 年。Shar Pei 犬早期控制炎症可延緩進展。肝臟沉積型（Abyssinian 貓）可因肝破裂出血而猝死。
-
-
 guidelineRefs:
   - sourceOrg: Pharmaceutics
     title: Comparative Pharmacological and Pharmaceutical Perspectives on Antidiabetic Therapies in Humans, Dogs, and Cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12472474/
     type: review
-    pmid: "41012437"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Efficacy and Safety of Non-Insulin Antidiabetic Drugs in Cats: A Systematic Review."
+    pmid: '41012437'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Efficacy and Safety of Non-Insulin Antidiabetic Drugs in Cats: A Systematic Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12427183/
     type: review
-    pmid: "40941356"
+    pmid: '40941356'
   - sourceOrg: Journal of clinical medicine
-    title: "Epidemiological Changes in Transthyretin Cardiac Amyloidosis: Evidence from In Vivo Data and Autoptic Series."
+    title: 'Epidemiological Changes in Transthyretin Cardiac Amyloidosis: Evidence from In Vivo Data and Autoptic Series.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11396392/
     type: review
-    pmid: "39274353"
+    pmid: '39274353'
   - sourceOrg: Zoological research
-    title: "Targeting autophagy in Alzheimer's disease: Animal models and mechanisms."
+    title: 'Targeting autophagy in Alzheimer''s disease: Animal models and mechanisms.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10802106/
     type: review
-    pmid: "37963840"
+    pmid: '37963840'
   - sourceOrg: Veterinary world
-    title: Comparative occurrence of diabetes in canine, feline, and few wild animals and their association with pancreatic diseases and ketoacidosis with therapeutic approach.
+    title: >-
+      Comparative occurrence of diabetes in canine, feline, and few wild animals and their association with pancreatic
+      diseases and ketoacidosis with therapeutic approach.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5960778/
     type: review
-    pmid: "29805204"
+    pmid: '29805204'
   - sourceOrg: International journal of molecular sciences
-    title: "Micro- and Nanoplastics' Effects on Protein Folding and Amyloidosis."
+    title: Micro- and Nanoplastics' Effects on Protein Folding and Amyloidosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9499421/
     type: review
-    pmid: "36142234"
+    pmid: '36142234'
 pubmedQueries:
   - query: '"Amyloidosis" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 類澱粉沉積症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估腎臟型（蛋白尿、腎衰竭）或肝臟型（肝腫大、肝破裂），沙皮犬有品種傾向
+      findings:
+        - 蛋白尿伴漸進性腎衰竭（腎臟型）
+        - 肝腫大或急性腹腔出血（肝臟型，沙皮犬常見）
+        - 反覆性發熱史（沙皮犬家族性澱粉沉積症）
+    - step: 2
+      action: 實驗室檢查
+      details: 進行尿液分析、生化檢查評估腎臟和肝臟功能
+      findings:
+        - 顯著蛋白尿（尿蛋白/肌酐比升高）
+        - 低白蛋白血症
+        - 氮質血症（腎臟型）或肝酵素升高（肝臟型）
+    - step: 3
+      action: 活檢確診
+      details: 進行腎臟或肝臟活檢，剛果紅染色確認類澱粉蛋白沉積
+      findings:
+        - 剛果紅染色陽性（蘋果綠雙折射）
+        - 組織病理學確認AA型類澱粉蛋白沉積
+        - 評估臟器損害程度
+clinicalPearls:
+  - 沙皮犬反覆發熱+關節腫脹（沙皮犬熱）=家族性類澱粉沉積高風險，應早期監測UPC
+  - 阿比西尼亞貓及暹羅貓為貓類澱粉沉積的好發品種
+  - 腎絲球類澱粉沉積（犬）vs 腎髓質類澱粉沉積（貓）——不同的病理表現
+  - UPC>3.5合併低白蛋白血症在好發品種高度提示
+  - Colchicine對家族性型可能有預防價值，但對已沉積的類澱粉無溶解效果
+monitoringItems:
+  - UPC定期追蹤（每1-3個月）
+  - 血清白蛋白及膽固醇
+  - 腎功能指標（BUN、Creatinine、SDMA）
+  - 血壓
+  - 凝血功能（AT-III）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: hepatomegaly
+    frequency: uncommon
+ddxSource: book

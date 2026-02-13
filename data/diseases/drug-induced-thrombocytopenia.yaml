@@ -3,11 +3,11 @@ nameEn: Drug Induced Thrombocytopenia
 nameZh: 藥物引起血小板減少症
 bodySystem: hematology
 description: 免疫介導性藥物反應導致血小板破壞或生成抑制。常見致病藥物包括磺胺類、頭孢菌素類及化療藥物。可能造成嚴重出血。
-
 aliases:
-  - { alias: 藥物性血小板低下, language: zh }
-  - { alias: Drug-Associated Thrombocytopenia, language: en }
-
+  - alias: 藥物性血小板低下
+    language: zh
+  - alias: Drug-Associated Thrombocytopenia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少見，但對某些藥物更敏感
-
 etiology:
   categories:
     - name: 免疫介導型
@@ -34,7 +33,6 @@ etiology:
       examples:
         - 肝素
         - 阿斯匹靈（高劑量）
-
 clinicalSigns:
   early:
     - 瘀點、瘀斑
@@ -46,23 +44,21 @@ clinicalSigns:
     - 關節腔出血
     - 蒼白
     - 嚴重出血（血小板 <20,000/μL）
-
 diagnosis:
   primaryTests:
     - name: 全血球計數（CBC）
-      notes: "血小板計數顯著降低"
+      notes: 血小板計數顯著降低
     - name: 血液抹片檢查
-      notes: "確認無假性血小板減少、評估血小板形態"
+      notes: 確認無假性血小板減少、評估血小板形態
     - name: 骨髓檢查
-      notes: "巨核細胞數量正常或增加（免疫型）、減少（抑制型）"
+      notes: 巨核細胞數量正常或增加（免疫型）、減少（抑制型）
     - name: 藥物史詢問
-      notes: "確認用藥時間及劑量"
+      notes: 確認用藥時間及劑量
   differentialDiagnoses:
     - 免疫介導性血小板減少症
     - 假性血小板減少
     - 再生不良性貧血
     - 白血病
-
 treatment:
   medical:
     - 立即停用可疑藥物
@@ -70,12 +66,40 @@ treatment:
     - 嚴重出血：血小板輸血
     - 支持療法：限制活動、避免外傷
     - 免疫抑制：環孢素 5 mg/kg PO q12h（難治型）
-
 prognosis:
-  general: "停藥後多數病例於1-2週內改善。骨髓抑制型恢復較慢（2-4週）。預後取決於早期診斷及停藥。"
-
+  general: 停藥後多數病例於1-2週內改善。骨髓抑制型恢復較慢（2-4週）。預後取決於早期診斷及停藥。
 prevention:
   - 謹慎使用已知致血小板減少藥物
   - 長期用藥需定期監測血球計數
   - 病史記錄藥物過敏史
   - 避免重複使用曾引起反應之藥物
+associatedSymptoms:
+  - symptomId: epistaxis
+    frequency: uncommon
+  - symptomId: haematochezia
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: uncommon
+  - symptomId: petechiae-ecchymoses
+    frequency: common
+diagnosticAlgorithm:
+  title: 藥物引起血小板減少症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - epistaxis 相關症狀
+        - haematochezia 相關症狀
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 全血球計數（CBC）
+          notes: 血小板計數顯著降低
+        - name: 血液抹片檢查
+          notes: 確認無假性血小板減少、評估血小板形態
+        - name: 骨髓檢查
+          notes: 巨核細胞數量正常或增加（免疫型）、減少（抑制型）
+ddxSource: auto-generated

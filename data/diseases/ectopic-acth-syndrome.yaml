@@ -3,11 +3,11 @@ nameEn: Ectopic ACTH Syndrome
 nameZh: 異位ACTH症候群
 bodySystem: other
 description: 非垂體腫瘤異位分泌ACTH導致庫興氏症症狀,極為罕見,常見於肺部或胰臟神經內分泌腫瘤,預後通常不良。
-
 aliases:
-  - { alias: 異位促腎上腺皮質激素症候群, language: zh }
-  - { alias: Paraneoplastic Cushing's syndrome, language: en }
-
+  - alias: 異位促腎上腺皮質激素症候群
+    language: zh
+  - alias: Paraneoplastic Cushing's syndrome
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓更罕見
-
 etiology:
   categories:
     - name: 腫瘤來源
@@ -32,7 +31,6 @@ etiology:
         - ACTH刺激腎上腺皮質醇分泌
         - 雙側腎上腺增生
         - 類似垂體依賴性庫興氏症但來源不同
-
 clinicalSigns:
   early:
     - 庫興氏症典型症狀(多渴多尿、腹部膨大)
@@ -43,24 +41,22 @@ clinicalSigns:
     - 嚴重低鉀血症
     - 原發腫瘤症狀(咳嗽、呼吸困難、嘔吐等)
     - 快速惡化、惡病質
-
 diagnosis:
   primaryTests:
     - name: ACTH刺激試驗
-      notes: "過度反應,類似PDH"
+      notes: 過度反應,類似PDH
     - name: 內源性ACTH濃度
-      notes: "顯著升高(常>100 pg/mL,遠高於典型PDH)"
+      notes: 顯著升高(常>100 pg/mL,遠高於典型PDH)
     - name: 高劑量地塞米松抑制試驗(HDDST)
-      notes: "不被抑制(與腎上腺腫瘤相似但ACTH升高)"
+      notes: 不被抑制(與腎上腺腫瘤相似但ACTH升高)
     - name: 胸腹腔影像學(X光、CT)
-      notes: "尋找原發腫瘤(肺、胰臟、胸腺等)"
+      notes: 尋找原發腫瘤(肺、胰臟、胸腺等)
     - name: 電解質
-      notes: "常見嚴重低鉀血症(<3 mEq/L)"
+      notes: 常見嚴重低鉀血症(<3 mEq/L)
   differentialDiagnoses:
     - 垂體依賴性庫興氏症(PDH)
     - 腎上腺腫瘤
     - 醫源性庫興氏症
-
 treatment:
   medical:
     - 控制皮質醇分泌(Trilostane 2-4 mg/kg PO BID,常需高劑量)
@@ -69,11 +65,47 @@ treatment:
     - Mitotane可能比Trilostane更有效(破壞腎上腺)
     - 症狀支持治療(輸液、營養支持)
     - 監測電解質、皮質醇控制
-
 prognosis:
-  general: "預後不良,多數病例於診斷後數週至數月內死亡。腫瘤通常已轉移且進展快速,控制庫興氏症症狀困難。"
-
+  general: 預後不良,多數病例於診斷後數週至數月內死亡。腫瘤通常已轉移且進展快速,控制庫興氏症症狀困難。
 prevention:
   - 無有效預防
   - 懷疑PDH但ACTH極度升高或HDDST不抑制時應考慮此診斷
   - 早期影像學尋找原發腫瘤
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: abdominal-distension
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 異位ACTH症候群 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - dyspnoea 相關症狀
+        - abdominal-distension 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: ACTH刺激試驗
+          notes: 過度反應,類似PDH
+        - name: 內源性ACTH濃度
+          notes: 顯著升高(常>100 pg/mL,遠高於典型PDH)
+        - name: 高劑量地塞米松抑制試驗(HDDST)
+          notes: 不被抑制(與腎上腺腫瘤相似但ACTH升高)
+ddxSource: auto-generated

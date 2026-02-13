@@ -3,18 +3,19 @@ nameEn: Miniature Schnauzer Pancreatitis
 nameZh: 迷你雪納瑞胰臟炎
 bodySystem: gastrointestinal
 description: 迷你雪納瑞為胰臟炎最高風險犬種，與該品種高盛行率的高三酸甘油酯血症密切相關。急性胰臟炎表現為嚴重腹痛、嘔吐與全身性發炎反應，嚴重者可致命。慢性胰臟炎可導致胰外分泌功能不全。
-
 aliases:
-  - { alias: 雪納瑞胰臟炎, language: zh }
-  - { alias: 迷你雪納瑞急性胰臟炎, language: zh }
-  - { alias: Miniature Schnauzer acute pancreatitis, language: en }
-  - { alias: Schnauzer pancreatitis, language: en }
-
+  - alias: 雪納瑞胰臟炎
+    language: zh
+  - alias: 迷你雪納瑞急性胰臟炎
+    language: zh
+  - alias: Miniature Schnauzer acute pancreatitis
+    language: en
+  - alias: Schnauzer pancreatitis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
     notes: 迷你雪納瑞胰臟炎發病率為其他品種的 3-5 倍。與品種高脂血症高度相關。中年至老年肥胖犬風險最高。
-
 etiology:
   categories:
     - name: 品種相關
@@ -28,7 +29,6 @@ etiology:
         - 肥胖
         - 藥物（類固醇、Azathioprine）
         - 甲狀腺功能低下
-
 clinicalSigns:
   early:
     - 嘔吐
@@ -43,7 +43,6 @@ clinicalSigns:
     - 發燒
     - 黃疸（膽管阻塞時）
     - 休克（嚴重壞死性胰臟炎）
-
 diagnosis:
   primaryTests:
     - name: 犬特異性胰脂酶（cPLI/Spec cPL）
@@ -52,7 +51,6 @@ diagnosis:
       notes: 胰臟區域低回音、周圍脂肪高回音（脂肪壞死）。腹腔積液
     - name: 血液檢查
       notes: 白血球增多、BUN 與肝指標可能升高。三酸甘油酯通常明顯升高
-
 treatment:
   principles:
     - 積極輸液治療
@@ -68,16 +66,60 @@ treatment:
     - 恢復後長期低脂飲食
     - 治療基礎高脂血症
     - 體重管理
-
 prognosis: 輕度胰臟炎預後良好（死亡率 <5%）。嚴重壞死性胰臟炎死亡率可達 30-50%。復發率高（尤其未控制高脂血症者）。長期低脂飲食與高脂血症管理為預防復發的關鍵。慢性反覆胰臟炎可能導致胰外分泌功能不全或糖尿病。
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
     title: Spontaneous remission and relapse of diabetes mellitus in a male dog.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10937483/
     type: case-report
-    pmid: "38240130"
+    pmid: '38240130'
 pubmedQueries:
   - query: '"Miniature Schnauzer" AND "pancreatitis" AND (treatment OR management OR prognosis)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: haematochezia
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 迷你雪納瑞胰臟炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - abdominal-pain 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 犬特異性胰脂酶（cPLI/Spec cPL）
+          notes: 靈敏度與特異度最高的胰臟炎指標。>400 μg/L 支持胰臟炎
+        - name: 腹部超音波
+          notes: 胰臟區域低回音、周圍脂肪高回音（脂肪壞死）。腹腔積液
+        - name: 血液檢查
+          notes: 白血球增多、BUN 與肝指標可能升高。三酸甘油酯通常明顯升高
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 積極輸液治療
+        - 止吐止痛
+        - 營養支持
+ddxSource: auto-generated

@@ -3,14 +3,17 @@ nameEn: Ear Margin Vasculitis Detail
 nameZh: 耳翼邊緣血管炎詳解
 bodySystem: dermatology
 description: 耳翼邊緣小血管的炎症性疾病，導致耳翼尖端或邊緣缺血性壞死、結痂、潰瘍及脫毛，可為免疫介導性、藥物反應或寒冷損傷所致。
-
 aliases:
-  - { alias: 耳緣血管炎, language: zh }
-  - { alias: 耳翼壞死, language: zh }
-  - { alias: Pinnal vasculitis, language: en }
-  - { alias: Ear tip vasculitis, language: en }
-  - { alias: Ear margin dermatosis, language: en }
-
+  - alias: 耳緣血管炎
+    language: zh
+  - alias: 耳翼壞死
+    language: zh
+  - alias: Pinnal vasculitis
+    language: en
+  - alias: Ear tip vasculitis
+    language: en
+  - alias: Ear margin dermatosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓耳翼血管炎少見，偶見與全身性血管炎或冷凝集素病相關。白色耳尖的貓日光性損傷需鑑別。
-
 etiology:
   categories:
     - name: 免疫介導性
@@ -33,7 +35,6 @@ etiology:
         - 寒冷損傷（凍瘡 frostbite）
         - 品種特異性耳緣皮脂溢（臘腸犬）
         - 感染性血管炎（Rickettsia, Ehrlichia）
-
 clinicalSigns:
   early:
     - 耳翼邊緣結痂
@@ -45,20 +46,18 @@ clinicalSigns:
     - 耳翼裂開或缺損
     - 出血
     - 疼痛
-
 diagnosis:
   primaryTests:
     - name: 皮膚生檢（組織病理學）
-      notes: "確診必備。典型表現為小血管壁纖維素樣壞死、白血球碎裂性血管炎、血栓形成"
+      notes: 確診必備。典型表現為小血管壁纖維素樣壞死、白血球碎裂性血管炎、血栓形成
     - name: 血液學檢查
-      notes: "CBC、生化、ANA、Coombs test、壁蝨傳播疾病篩檢"
+      notes: CBC、生化、ANA、Coombs test、壁蝨傳播疾病篩檢
   differentialDiagnoses:
     - 蒼蠅叮咬性皮膚炎
     - 日光性皮膚炎
     - 耳翼皮脂溢
     - 疥蟎（耳翼邊緣）
     - 皮膚型紅斑狼瘡
-
 treatment:
   medical:
     - 免疫介導性——Prednisolone 1-2 mg/kg PO SID 漸減
@@ -70,11 +69,29 @@ treatment:
   surgical:
     - 嚴重壞死組織需清創
     - 大面積耳翼壞死——耳翼截短（pinnectomy）
-
 prognosis:
-  general: "免疫介導性血管炎多數對免疫抑制治療反應良好，但可能需長期維持治療。藥物反應性停藥後預後佳。臘腸犬耳緣皮脂溢為美觀問題，預後良好。"
-
+  general: 免疫介導性血管炎多數對免疫抑制治療反應良好，但可能需長期維持治療。藥物反應性停藥後預後佳。臘腸犬耳緣皮脂溢為美觀問題，預後良好。
 prevention:
   - 監測藥物反應
   - 寒冷環境保護耳翼
   - 壁蝨預防（排除壁蝨傳播疾病原因）
+associatedSymptoms:
+  - symptomId: alopecia
+    frequency: common
+diagnosticAlgorithm:
+  title: 耳翼邊緣血管炎詳解 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 皮膚生檢（組織病理學）
+          notes: 確診必備。典型表現為小血管壁纖維素樣壞死、白血球碎裂性血管炎、血栓形成
+        - name: 血液學檢查
+          notes: CBC、生化、ANA、Coombs test、壁蝨傳播疾病篩檢
+ddxSource: auto-generated

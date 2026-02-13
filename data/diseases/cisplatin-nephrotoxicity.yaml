@@ -3,12 +3,13 @@ nameEn: Cisplatin Nephrotoxicity
 nameZh: 順鉑腎毒性
 bodySystem: toxicology
 description: 順鉑為鉑類化療藥,對貓具嚴重腎毒性及肺毒性,犬則主要為腎損傷。可導致急性腎小管壞死及慢性腎功能不全。
-
 aliases:
-  - { alias: 順鉑腎臟毒性, language: zh }
-  - { alias: Cisplatin-Induced Nephrotoxicity, language: en }
-  - { alias: Platinum Nephrotoxicity, language: en }
-
+  - alias: 順鉑腎臟毒性
+    language: zh
+  - alias: Cisplatin-Induced Nephrotoxicity
+    language: en
+  - alias: Platinum Nephrotoxicity
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓對順鉑極度敏感,禁用(致命性肺水腫)
-
 etiology:
   categories:
     - name: 直接腎毒性
@@ -30,7 +30,6 @@ etiology:
         - 既有腎功能不全
         - 水化不足
         - 與其他腎毒性藥物併用
-
 clinicalSigns:
   early:
     - 多尿、多渴(腎小管濃縮能力喪失)
@@ -41,37 +40,33 @@ clinicalSigns:
     - 氮血症(BUN、肌酸酐升高)
     - 電解質異常(高鉀、低鈣、酸中毒)
     - 尿毒症(口腔潰瘍、昏迷)
-
 diagnosis:
   primaryTests:
     - name: 血液生化
-      notes: "肌酸酐>1.5 mg/dL(犬),BUN>30 mg/dL提示腎損傷"
+      notes: 肌酸酐>1.5 mg/dL(犬),BUN>30 mg/dL提示腎損傷
     - name: 尿液分析
-      notes: "低比重(<1.020)、蛋白尿、腎上皮細胞"
+      notes: 低比重(<1.020)、蛋白尿、腎上皮細胞
     - name: 對稱性二甲基精氨酸(SDMA)
-      notes: "SDMA>14 μg/dL提示早期腎功能下降"
+      notes: SDMA>14 μg/dL提示早期腎功能下降
   differentialDiagnoses:
     - 其他腎毒性藥物(NSAIDs、氨基糖苷類)
     - 急性腎衰竭(其他原因)
     - 慢性腎臟病急性惡化
-
 treatment:
   medical:
     - 立即停用順鉑
     - 積極靜脈輸液治療:
-      - 生理食鹽水 120-180 mL/kg/day IV,維持尿量>1-2 mL/kg/hr
-      - 利尿劑: Furosemide 2-4 mg/kg IV(若少尿且無脫水)
+        - 生理食鹽水 120-180 mL/kg/day IV,維持尿量>1-2 mL/kg/hr
+        - 利尿劑: Furosemide 2-4 mg/kg IV(若少尿且無脫水)
     - 電解質校正:
-      - 高鉀血症: Insulin + Dextrose, Calcium gluconate
-      - 代謝性酸中毒: 碳酸氫鈉
+        - 高鉀血症: Insulin + Dextrose, Calcium gluconate
+        - 代謝性酸中毒: 碳酸氫鈉
     - 止吐藥: Maropitant 1 mg/kg SC q24h, Ondansetron 0.5 mg/kg IV q12h
     - 胃保護: Famotidine 0.5-1 mg/kg IV/PO q12-24h
     - 營養支持: 鼻胃管或食道胃管
     - 透析治療(若嚴重氮血症或無尿)
-
 prognosis:
-  general: "早期發現並積極治療,部分腎功能可恢復,但多數留有慢性腎損傷。嚴重無尿性腎衰竭死亡率高(>70%)。"
-
+  general: 早期發現並積極治療,部分腎功能可恢復,但多數留有慢性腎損傷。嚴重無尿性腎衰竭死亡率高(>70%)。
 prevention:
   - 化療前評估腎功能,腎病動物禁用
   - 積極水化方案: 化療前4小時開始靜脈輸液,持續至化療後2-4小時
@@ -79,31 +74,67 @@ prevention:
   - 避免與NSAIDs或其他腎毒性藥物併用
   - 定期監測腎功能(每次化療前)
   - 貓絕對禁用順鉑
-
-
 guidelineRefs:
   - sourceOrg: BioMed research international
-    title: "Cisplatin-Induced Rodent Model of Kidney Injury: Characteristics and Challenges."
+    title: 'Cisplatin-Induced Rodent Model of Kidney Injury: Characteristics and Challenges.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6157122/
     type: review
-    pmid: "30276200"
-  - sourceOrg: "Saudi pharmaceutical journal : SPJ : the official publication of the Saudi Pharmaceutical Society"
-    title: "Amlodipine alleviates cisplatin-induced nephrotoxicity in rats through gamma-glutamyl transpeptidase (GGT) enzyme inhibition, associated with regulation of Nrf2/HO-1, MAPK/NF-&#x3ba;B, and Bax/Bcl-2 signaling."
+    pmid: '30276200'
+  - sourceOrg: 'Saudi pharmaceutical journal : SPJ : the official publication of the Saudi Pharmaceutical Society'
+    title: >-
+      Amlodipine alleviates cisplatin-induced nephrotoxicity in rats through gamma-glutamyl transpeptidase (GGT) enzyme
+      inhibition, associated with regulation of Nrf2/HO-1, MAPK/NF-&#x3ba;B, and Bax/Bcl-2 signaling.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7679434/
     type: research
-    pmid: "33250641"
-  - sourceOrg: "Naunyn-Schmiedeberg's archives of pharmacology"
-    title: Electric field-directed migration of mesenchymal stem cells enhances their therapeutic potential on cisplatin-induced acute nephrotoxicity in rats.
+    pmid: '33250641'
+  - sourceOrg: Naunyn-Schmiedeberg's archives of pharmacology
+    title: >-
+      Electric field-directed migration of mesenchymal stem cells enhances their therapeutic potential on
+      cisplatin-induced acute nephrotoxicity in rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10185611/
     type: research
-    pmid: "36640200"
-  - sourceOrg: "Journal of pharmacy &amp; bioallied sciences"
+    pmid: '36640200'
+  - sourceOrg: Journal of pharmacy &amp; bioallied sciences
     title: Comparative Effect of Curcumin and Nanocurcumin on Nephroprotection at Cisplatin-induced Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7020831/
     type: research
-    pmid: "32148365"
+    pmid: '32148365'
   - sourceOrg: International journal of molecular sciences
     title: A Micellar Formulation of Quercetin Prevents Cisplatin Nephrotoxicity.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7828436/
     type: research
-    pmid: "33450917"
+    pmid: '33450917'
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: oliguria-anuria
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 順鉑腎毒性 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - halitosis-stomatitis 相關症狀
+        - polyuria-polydipsia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液生化
+          notes: 肌酸酐>1.5 mg/dL(犬),BUN>30 mg/dL提示腎損傷
+        - name: 尿液分析
+          notes: 低比重(<1.020)、蛋白尿、腎上皮細胞
+        - name: 對稱性二甲基精氨酸(SDMA)
+          notes: SDMA>14 μg/dL提示早期腎功能下降
+ddxSource: auto-generated

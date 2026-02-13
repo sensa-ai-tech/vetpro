@@ -3,14 +3,17 @@ nameEn: Degenerative Joint Disease
 nameZh: 退化性關節疾病
 bodySystem: orthopedic
 description: 關節軟骨進行性退化與喪失，伴隨骨贅增生、滑液膜炎與關節周圍組織變化的慢性疼痛性疾病，為犬貓最常見的慢性疼痛原因之一。
-
 aliases:
-  - { alias: DJD, language: en }
-  - { alias: OA, language: en }
-  - { alias: Osteoarthritis, language: en }
-  - { alias: 骨關節炎, language: zh }
-  - { alias: 關節退化, language: zh }
-
+  - alias: DJD
+    language: en
+  - alias: OA
+    language: en
+  - alias: Osteoarthritis
+    language: en
+  - alias: 骨關節炎
+    language: zh
+  - alias: 關節退化
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 長期被低估。X 光研究顯示 >90% 的 12 歲以上貓有 DJD 影像學證據。肘關節與髖關節最常受影響。臨床症狀隱匿，常表現為行為改變而非明顯跛行。
-
 etiology:
   categories:
     - name: 繼發性 (最常見)
@@ -41,9 +43,10 @@ etiology:
         - 過度或不適當的運動
         - 反覆性微創傷
         - 關節不穩定
-
-pathophysiology: DJD 的核心為關節軟骨的進行性退化。正常關節軟骨由軟骨細胞 (chondrocyte) 維持第二型膠原與蛋白聚糖 (proteoglycan/aggrecan) 的代謝平衡。當分解超過合成時，軟骨基質逐漸喪失。促炎細胞因子 (IL-1β、TNF-α、IL-6) 與基質金屬蛋白酶 (MMPs、ADAMTS) 驅動軟骨破壞。滑液膜發炎加劇惡性循環。軟骨下骨硬化與骨贅形成為代償性反應。關節囊纖維化限制活動度。神經敏化 (central sensitization) 導致慢性疼痛狀態，使疼痛感知與實際組織損傷程度不成比例。肥胖不僅增加機械負荷，脂肪組織分泌的 adipokine (leptin、adiponectin) 亦直接促進關節炎症。
-
+pathophysiology: >-
+  DJD 的核心為關節軟骨的進行性退化。正常關節軟骨由軟骨細胞 (chondrocyte) 維持第二型膠原與蛋白聚糖 (proteoglycan/aggrecan) 的代謝平衡。當分解超過合成時，軟骨基質逐漸喪失。促炎細胞因子
+  (IL-1β、TNF-α、IL-6) 與基質金屬蛋白酶 (MMPs、ADAMTS) 驅動軟骨破壞。滑液膜發炎加劇惡性循環。軟骨下骨硬化與骨贅形成為代償性反應。關節囊纖維化限制活動度。神經敏化 (central
+  sensitization) 導致慢性疼痛狀態，使疼痛感知與實際組織損傷程度不成比例。肥胖不僅增加機械負荷，脂肪組織分泌的 adipokine (leptin、adiponectin) 亦直接促進關節炎症。
 clinicalSigns:
   early:
     - 起身緩慢 (晨僵，morning stiffness)
@@ -64,26 +67,24 @@ clinicalSigns:
     - 顯著活動力喪失
     - 生活品質嚴重下降
     - 行為改變 (易怒、退縮、食慾下降)
-
 diagnosis:
   primaryTests:
     - name: 骨科觸診
-      notes: "關節腫大、骨贅可觸及、活動範圍減少、關節捻發音 (crepitus)、操作時疼痛。評估肌肉量對稱性"
+      notes: 關節腫大、骨贅可觸及、活動範圍減少、關節捻發音 (crepitus)、操作時疼痛。評估肌肉量對稱性
     - name: 步態評估
-      notes: "觀察行走、小跑、起立與坐下。客觀評估跛行分級。壓力板步態分析 (force plate) 最客觀"
+      notes: 觀察行走、小跑、起立與坐下。客觀評估跛行分級。壓力板步態分析 (force plate) 最客觀
     - name: X 光
-      notes: "骨贅增生 (osteophytes)、關節間隙狹窄、軟骨下骨硬化、關節積液、軟組織腫脹。注意：X 光嚴重度與臨床疼痛不一定相關"
+      notes: 骨贅增生 (osteophytes)、關節間隙狹窄、軟骨下骨硬化、關節積液、軟組織腫脹。注意：X 光嚴重度與臨床疼痛不一定相關
   imaging:
     - name: X 光 (受影響關節)
-      notes: "正交雙向投影。評估骨贅、軟骨下硬化、關節間隙變化"
+      notes: 正交雙向投影。評估骨贅、軟骨下硬化、關節間隙變化
     - name: CT/MRI
-      notes: "CT 評估骨骼細節；MRI 評估軟骨、韌帶、半月板等軟組織。研究用途較多"
+      notes: CT 評估骨骼細節；MRI 評估軟骨、韌帶、半月板等軟組織。研究用途較多
   additional:
     - 關節液分析 (排除感染性或免疫介導性關節炎)
     - 疼痛評估量表 (CBPI — Canine Brief Pain Inventory；CSOM — Client Specific Outcome Measures)
     - 貓疼痛評估 (FMPI — Feline Musculoskeletal Pain Index)
     - 血液檢查 (排除全身性疾病、監測 NSAID 副作用)
-
 treatment:
   principles:
     - 多模式 (multimodal) 疼痛管理為核心策略
@@ -92,19 +93,21 @@ treatment:
     - 結合藥物、營養、運動與環境調整
   medications:
     - name: NSAIDs (Meloxicam/Carprofen/Grapiprant/Robenacoxib)
-      dose: "依藥物標準劑量。犬：Meloxicam 0.1 mg/kg PO SID (首日 0.2)；Grapiprant 2 mg/kg PO SID。貓：Meloxicam 0.05 mg/kg PO SID (短期) 或 Robenacoxib 1-2.4 mg/kg PO SID"
+      dose: >-
+        依藥物標準劑量。犬：Meloxicam 0.1 mg/kg PO SID (首日 0.2)；Grapiprant 2 mg/kg PO SID。貓：Meloxicam 0.05 mg/kg PO SID (短期) 或
+        Robenacoxib 1-2.4 mg/kg PO SID
       notes: 疼痛管理基石。長期使用需定期監測肝腎功能 (每 3-6 個月)。Grapiprant (piprant 類) 為 EP4 受體拮抗劑，腎毒性可能較低
     - name: Gabapentin
-      dose: "犬 5-10 mg/kg PO BID-TID；貓 5-10 mg/kg PO BID"
+      dose: 犬 5-10 mg/kg PO BID-TID；貓 5-10 mg/kg PO BID
       notes: 慢性疼痛 (中樞敏化) 輔助。貓的 DJD 疼痛管理常用
     - name: Bedinvetmab (Librela — 犬)
-      dose: "0.5-1.0 mg/kg SC 每月一次"
+      dose: 0.5-1.0 mg/kg SC 每月一次
       notes: 抗 NGF 單株抗體。2023 年上市。長效 (每月一次)，無肝腎負擔。不建議與 NSAIDs 合用於已知關節不穩定的犬
     - name: Frunevetmab (Solensia — 貓)
-      dose: "1.0-2.8 mg/kg SC 每月一次"
+      dose: 1.0-2.8 mg/kg SC 每月一次
       notes: 貓專用抗 NGF 單株抗體。貓 DJD 管理的重大突破。每月一次注射，飼主接受度高
     - name: Adequan (PSGAG)
-      dose: "5 mg/kg IM 每 3-5 天 × 8 次，後每月維持"
+      dose: 5 mg/kg IM 每 3-5 天 × 8 次，後每月維持
       notes: 關節保護劑 (disease-modifying osteoarthritis drug, DMOAD)
   general:
     - 體重管理 (減重 6-8% 即可顯著改善)
@@ -115,9 +118,9 @@ treatment:
     - 關節補充品 (glucosamine + chondroitin sulfate + green-lipped mussel)
     - 處方關節照護飲食
     - 矯形床墊/軟墊
-
-prognosis: DJD 為進行性疾病，無法治癒但可有效管理。早期介入 (體重管理 + 多模式止痛) 可顯著延緩進展並維持生活品質。多數犬貓在適當管理下可維持良好生活品質數年。抗 NGF 單株抗體的問世大幅改善了長期疼痛管理。晚期嚴重關節炎影響生活品質時需考慮安樂死評估。
-
+prognosis: >-
+  DJD 為進行性疾病，無法治癒但可有效管理。早期介入 (體重管理 + 多模式止痛) 可顯著延緩進展並維持生活品質。多數犬貓在適當管理下可維持良好生活品質數年。抗 NGF
+  單株抗體的問世大幅改善了長期疼痛管理。晚期嚴重關節炎影響生活品質時需考慮安樂死評估。
 guidelineRefs:
   - sourceOrg: WSAVA
     title: WSAVA Guidelines for Recognition, Assessment and Treatment of Pain
@@ -131,23 +134,82 @@ guidelineRefs:
     title: 2024 ISFM and AAFP consensus guidelines on the long-term use of NSAIDs in cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11103309/
     type: consensus
-    pmid: "38587872"
+    pmid: '38587872'
   - sourceOrg: Journal of feline medicine and surgery
     title: 2021 AAFP Feline Senior Care Guidelines.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812122/
     type: guideline
-    pmid: "34167339"
+    pmid: '34167339'
   - sourceOrg: Journal of feline medicine and surgery
     title: 2023 AAFP/IAAHPC feline hospice and palliative care guidelines.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812026/
     type: review
-    pmid: "37768060"
+    pmid: '37768060'
     relevance: primary
 pubmedQueries:
-  - query: '"osteoarthritis" OR "degenerative joint disease" AND (dog OR cat OR canine OR feline) AND ("multimodal" OR "anti-NGF" OR "pain management")'
+  - query: >-
+      "osteoarthritis" OR "degenerative joint disease" AND (dog OR cat OR canine OR feline) AND ("multimodal" OR
+      "anti-NGF" OR "pain management")
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "END"
-  sectionTitle: "DISEASE"
+  chapter: END
+  sectionTitle: DISEASE
   pdfPage: 582
+diagnosticAlgorithm:
+  title: 骨關節炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估慢性進行性跛行、僵硬（尤其休息後）、活動量下降，詢問品種及年齡
+      findings:
+        - 慢性進行性跛行
+        - 休息後僵硬（起立困難）
+        - 活動量及遊戲意願下降
+        - 行為改變（攻擊性增加、不願被觸碰）
+    - step: 2
+      action: 骨科檢查
+      details: 系統性評估所有關節的活動範圍、疼痛、腫脹、捻發音
+      findings:
+        - 關節活動範圍受限
+        - 關節操作時疼痛
+        - 關節腫脹及骨贅增生
+        - 捻發音（關節磨擦感）
+    - step: 3
+      action: 影像學確診
+      details: 受累關節X光確認退化性變化
+      findings:
+        - 骨贅形成
+        - 關節間隙狹窄
+        - 軟骨下骨硬化
+        - 關節積液
+    - step: 4
+      action: 排除繼發原因
+      details: 評估是否有原發性關節疾病導致繼發性OA，關節液分析排除其他關節炎
+      findings:
+        - 前十字韌帶疾病繼發
+        - 髖關節發育不良繼發
+        - 髕骨脫位繼發
+        - 原發性退化性關節炎
+clinicalPearls:
+  - 貓的OA發生率可能高達90%（>12歲），但極少表現典型跛行
+  - 體重減輕6-8%即可顯著改善症狀
+  - 抗NGF單抗（Librela/Solensia）是近年突破性治療
+  - X光嚴重程度與臨床症狀不一定相關
+monitoringItems:
+  - 疼痛評分（如CBPI犬簡短疼痛量表）
+  - 活動功能
+  - 體重
+  - NSAIDs長期使用的腎肝功能監測
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: common
+ddxSource: book

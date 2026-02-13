@@ -3,18 +3,19 @@ nameEn: Avian Bacterial Sinusitis
 nameZh: 禽類細菌性鼻竇炎
 bodySystem: respiratory
 description: 禽類細菌性鼻竇炎為鳥類鼻竇（主要為眶下竇）的細菌感染，導致鼻竇腫脹、鼻分泌物與呼吸困難。常因原發性呼吸道感染或維生素 A 缺乏繼發。
-
 aliases:
-  - { alias: 鳥類鼻竇炎, language: zh }
-  - { alias: 禽眶下竇炎, language: zh }
-  - { alias: Infraorbital sinusitis in birds, language: en }
-  - { alias: Avian sinus infection, language: en }
-
+  - alias: 鳥類鼻竇炎
+    language: zh
+  - alias: 禽眶下竇炎
+    language: zh
+  - alias: Infraorbital sinusitis in birds
+    language: en
+  - alias: Avian sinus infection
+    language: en
 species:
   - speciesCommon: bird
     prevalence: common
     notes: 所有鳥種均可發生。鸚鵡、金絲雀與家禽常見。鳥類的眶下竇廣大，感染時可造成明顯的眼周與面部腫脹。
-
 etiology:
   categories:
     - name: 細菌感染
@@ -31,7 +32,6 @@ etiology:
         - 通風不良環境
         - 粉塵過多
         - 免疫抑制
-
 clinicalSigns:
   early:
     - 打噴嚏
@@ -44,21 +44,19 @@ clinicalSigns:
     - 呼吸困難
     - 食慾下降
     - 精神沉鬱
-
 diagnosis:
   primaryTests:
     - name: 臨床檢查
-      notes: "眶下區域觸診腫脹波動感。鼻分泌物性質評估"
+      notes: 眶下區域觸診腫脹波動感。鼻分泌物性質評估
     - name: 鼻竇穿刺與沖洗
-      notes: "穿刺抽取內容物送細菌培養與藥敏試驗"
+      notes: 穿刺抽取內容物送細菌培養與藥敏試驗
     - name: X光或CT
-      notes: "評估鼻竇填塞程度與骨壁完整性"
+      notes: 評估鼻竇填塞程度與骨壁完整性
   differentialDiagnoses:
     - 披衣菌感染
     - 黴菌性鼻竇炎
     - 鼻竇腫瘤
     - 維生素 A 缺乏
-
 treatment:
   medical:
     - 鼻竇沖洗（生理食鹽水，每日至隔日）
@@ -68,40 +66,70 @@ treatment:
     - 改善環境通風與粉塵
   surgical:
     - 慢性鼻竇炎可能需要手術引流或清創
-
 prognosis:
-  general: "急性細菌性鼻竇炎經適當抗生素治療預後良好。慢性病例可能需要長期或反覆沖洗。潛在的維生素 A 缺乏需同時矯正。"
-
+  general: 急性細菌性鼻竇炎經適當抗生素治療預後良好。慢性病例可能需要長期或反覆沖洗。潛在的維生素 A 缺乏需同時矯正。
 prevention:
   - 確保飲食中維生素 A 充足
   - 維持環境通風良好
   - 減少粉塵暴露
   - 新進鳥篩檢呼吸道病原
-
-
 guidelineRefs:
   - sourceOrg: BMC veterinary research
     title: Untargeted metabolomics analysis of the spleens of ducks infected with Clostridium perfringens type A.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12039087/
     type: research
-    pmid: "40301878"
+    pmid: '40301878'
   - sourceOrg: BMC microbiology
-    title: Isolation, molecular detection, and sequence analysis of Avibacterium paragallinarum from suspected cases of infectious coryza infected chickens from different areas of Ethiopia, 2022-2024.
+    title: >-
+      Isolation, molecular detection, and sequence analysis of Avibacterium paragallinarum from suspected cases of
+      infectious coryza infected chickens from different areas of Ethiopia, 2022-2024.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11909890/
     type: research
-    pmid: "40087555"
+    pmid: '40087555'
   - sourceOrg: International journal for parasitology. Parasites and wildlife
-    title: Avian trichomonosis mortality events in band-tailed pigeons (Patagioenas fasciata) in California during winter 2014-2015.
+    title: >-
+      Avian trichomonosis mortality events in band-tailed pigeons (Patagioenas fasciata) in California during winter
+      2014-2015.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6068076/
     type: research
-    pmid: "30073142"
+    pmid: '30073142'
   - sourceOrg: Veterinary world
     title: First report of Avian metapneumovirus type B in Iraqi broiler flocks with swollen head syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8924383/
     type: research
-    pmid: "35369601"
+    pmid: '35369601'
   - sourceOrg: Veterinary world
-    title: The first isolation and detection of Ornithobacterium rhinotracheale from swollen head syndrome-infected broiler flocks in Iraq.
+    title: >-
+      The first isolation and detection of Ornithobacterium rhinotracheale from swollen head syndrome-infected broiler
+      flocks in Iraq.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8613788/
     type: research
-    pmid: "34840453"
+    pmid: '34840453'
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: sneezing
+    frequency: common
+diagnosticAlgorithm:
+  title: 禽類細菌性鼻竇炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - dyspnoea 相關症狀
+        - sneezing 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床檢查
+          notes: 眶下區域觸診腫脹波動感。鼻分泌物性質評估
+        - name: 鼻竇穿刺與沖洗
+          notes: 穿刺抽取內容物送細菌培養與藥敏試驗
+        - name: X光或CT
+          notes: 評估鼻竇填塞程度與骨壁完整性
+ddxSource: auto-generated

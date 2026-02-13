@@ -3,13 +3,15 @@ nameEn: Mesenteric Vascular Disease
 nameZh: 腸系膜血管疾病
 bodySystem: vascular
 description: 影響腸系膜動脈或靜脈的血管疾病，包括血栓栓塞、扭轉及血管炎等，導致腸道缺血性損傷、壞死及急性腹部危機。
-
 aliases:
-  - { alias: 腸系膜血栓, language: zh }
-  - { alias: 腸系膜缺血, language: zh }
-  - { alias: Mesenteric ischemia, language: en }
-  - { alias: Mesenteric thromboembolism, language: en }
-
+  - alias: 腸系膜血栓
+    language: zh
+  - alias: 腸系膜缺血
+    language: zh
+  - alias: Mesenteric ischemia
+    language: en
+  - alias: Mesenteric thromboembolism
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓腸系膜血栓罕見，可與心肌病相關的全身性血栓栓塞同時發生。
-
 etiology:
   categories:
     - name: 血栓栓塞
@@ -34,7 +35,6 @@ etiology:
         - GDV（胃扭轉）
         - 腸套疊
         - 腸系膜撕裂
-
 clinicalSigns:
   early:
     - 急性劇烈腹痛
@@ -47,22 +47,20 @@ clinicalSigns:
     - 嚴重出血性腹瀉
     - 敗血症
     - 多器官衰竭
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "腸壁增厚或紙薄。腸蠕動消失。腹腔積液。腸系膜血管 Doppler 血流評估"
+      notes: 腸壁增厚或紙薄。腸蠕動消失。腹腔積液。腸系膜血管 Doppler 血流評估
     - name: 腹部 X 光
-      notes: "腸管擴張。氣液面。腹腔積液。腸壁氣腫（嚴重壞死）"
+      notes: 腸管擴張。氣液面。腹腔積液。腸壁氣腫（嚴重壞死）
     - name: 探查性剖腹手術
-      notes: "確診與治療同時進行。評估腸壁活性"
+      notes: 確診與治療同時進行。評估腸壁活性
   differentialDiagnoses:
     - 腸套疊
     - GDV
     - 腸異物阻塞
     - 腸扭轉
     - 急性胰臟炎
-
 treatment:
   medical:
     - 積極靜脈輸液復甦
@@ -74,10 +72,38 @@ treatment:
     - 壞死腸段切除與吻合
     - 腸系膜血管修復（如可能）
     - 術後密切監測
-
 prognosis:
-  general: "急性腸系膜缺血預後不良。早期手術介入且壞死範圍有限者預後較佳。廣泛腸壞死者預後極差。短腸症候群為存活者的長期併發症。"
-
+  general: 急性腸系膜缺血預後不良。早期手術介入且壞死範圍有限者預後較佳。廣泛腸壞死者預後極差。短腸症候群為存活者的長期併發症。
 prevention:
   - 高凝血狀態的預防性治療
   - GDV 高風險品種的預防性胃固定
+associatedSymptoms:
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: haematochezia
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+diagnosticAlgorithm:
+  title: 腸系膜血管疾病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - vomiting 相關症狀
+        - diarrhoea 相關症狀
+        - haematochezia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 腸壁增厚或紙薄。腸蠕動消失。腹腔積液。腸系膜血管 Doppler 血流評估
+        - name: 腹部 X 光
+          notes: 腸管擴張。氣液面。腹腔積液。腸壁氣腫（嚴重壞死）
+        - name: 探查性剖腹手術
+          notes: 確診與治療同時進行。評估腸壁活性
+ddxSource: auto-generated

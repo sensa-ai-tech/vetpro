@@ -3,13 +3,15 @@ nameEn: Copper Deficiency
 nameZh: 銅缺乏症
 bodySystem: metabolic
 description: 銅為多種金屬酶的輔因子，參與鐵代謝、結締組織合成、黑色素生成及神經髓鞘形成。缺乏可導致貧血、毛色變淡、骨骼異常及神經症狀，但犬貓食用商業飼料時極少發生。
-
 aliases:
-  - { alias: 缺銅, language: zh }
-  - { alias: 銅營養不良, language: zh }
-  - { alias: Copper Deficiency Syndrome, language: en }
-  - { alias: Hypocupremia, language: en }
-
+  - alias: 缺銅
+    language: zh
+  - alias: 銅營養不良
+    language: zh
+  - alias: Copper Deficiency Syndrome
+    language: en
+  - alias: Hypocupremia
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓銅缺乏極罕見，商業飼料含足夠銅。
-
 etiology:
   categories:
     - name: 攝入不足
@@ -28,7 +29,6 @@ etiology:
       examples:
         - 過量鋅補充（銅鋅競爭腸道吸收）
         - 高鐵飲食（鐵拮抗銅吸收）
-
 clinicalSigns:
   early:
     - 毛色變淡（黑色毛變為棕紅色）
@@ -38,14 +38,12 @@ clinicalSigns:
     - 骨骼異常（幼犬長骨發育不良）
     - 運動失調（神經髓鞘合成障礙）
     - 免疫功能低下
-
 diagnosis:
   primaryTests:
     - name: 血清銅/血漿銅藍蛋白
       notes: 血清銅及銅藍蛋白（ceruloplasmin）低於正常值。
     - name: 肝臟銅含量
       notes: 肝活檢銅含量降低為確定診斷（但侵入性大，臨床少用）。
-
 treatment:
   principles:
     - 口服銅補充
@@ -56,36 +54,64 @@ treatment:
     - 停止過量鋅補充
     - 轉換至均衡商業飼料
     - 貧血嚴重時同時補充鐵劑
-
 prognosis: 銅缺乏經適當補充後多數症狀可逆，毛色恢復需數月。骨骼畸形若在生長期未矯正可能永久。神經症狀恢復程度因損傷嚴重度而異。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Copper Supplementation, A Challenge in Cattle.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7602799/
     type: review
-    pmid: "33076570"
+    pmid: '33076570'
   - sourceOrg: The Journal of nutrition
     title: Animal Models of Normal and Disturbed Iron and Copper Metabolism.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6887953/
     type: review
-    pmid: "31504675"
+    pmid: '31504675'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: Copper and manganese levels are associated with infectious abortions, stillbirths, and early neonatal deaths in upper Midwest beef cattle herds.
+    title: >-
+      Copper and manganese levels are associated with infectious abortions, stillbirths, and early neonatal deaths in
+      upper Midwest beef cattle herds.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12085280/
     type: research
-    pmid: "40154320"
-  - sourceOrg: "Indian journal of clinical biochemistry : IJCB"
-    title: Protein Carbonyl, Lipid Peroxidation, Glutathione and Enzymatic Antioxidant Status in Male Wistar Brain Sub-regions After Dietary Copper Deficiency.
+    pmid: '40154320'
+  - sourceOrg: 'Indian journal of clinical biochemistry : IJCB'
+    title: >-
+      Protein Carbonyl, Lipid Peroxidation, Glutathione and Enzymatic Antioxidant Status in Male Wistar Brain
+      Sub-regions After Dietary Copper Deficiency.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10784247/
     type: research
-    pmid: "38223011"
+    pmid: '38223011'
   - sourceOrg: The Journal of pharmacology and experimental therapeutics
     title: Elesclomol rescues mitochondrial copper deficiency in disease models without triggering cuproptosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12718110/
     type: research
-    pmid: "40023603"
+    pmid: '40023603'
 pubmedQueries:
   - query: '"Copper Deficiency" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: failure-to-grow
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 銅缺乏症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - failure-to-grow 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清銅/血漿銅藍蛋白
+          notes: 血清銅及銅藍蛋白（ceruloplasmin）低於正常值。
+        - name: 肝臟銅含量
+          notes: 肝活檢銅含量降低為確定診斷（但侵入性大，臨床少用）。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 口服銅補充
+        - 減少鋅或鐵的過量攝入
+        - 轉換至營養均衡飲食
+ddxSource: auto-generated

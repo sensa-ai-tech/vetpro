@@ -3,13 +3,15 @@ nameEn: Renal Vascular Disease
 nameZh: 腎血管疾病
 bodySystem: urinary
 description: 影響腎臟血管的疾病，包括腎動脈血栓栓塞、腎靜脈血栓及腎臟梗塞等，導致急性或慢性腎功能損傷，常與全身性高凝血狀態或心臟疾病相關。
-
 aliases:
-  - { alias: 腎動脈栓塞, language: zh }
-  - { alias: 腎梗塞, language: zh }
-  - { alias: Renal infarction, language: en }
-  - { alias: Renal artery thrombosis, language: en }
-
+  - alias: 腎動脈栓塞
+    language: zh
+  - alias: 腎梗塞
+    language: zh
+  - alias: Renal infarction
+    language: en
+  - alias: Renal artery thrombosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓腎動脈血栓可為心肌病相關全身性血栓栓塞的一部分。腎梗塞可導致急性腎損傷。
-
 etiology:
   categories:
     - name: 動脈性
@@ -33,7 +34,6 @@ etiology:
         - 腎靜脈血栓（蛋白質流失性腎病）
         - 後腔靜脈血栓延伸
         - 腎腫瘤侵犯
-
 clinicalSigns:
   early:
     - 急性腰痛
@@ -46,21 +46,19 @@ clinicalSigns:
     - 高血壓
     - 蛋白尿加劇
     - 雙側腎梗塞——急性腎衰竭
-
 diagnosis:
   primaryTests:
     - name: 腎臟超音波（Doppler）
-      notes: "腎臟灌流評估。楔形低回音區域（梗塞灶）。Doppler 腎動脈/靜脈血流"
+      notes: 腎臟灌流評估。楔形低回音區域（梗塞灶）。Doppler 腎動脈/靜脈血流
     - name: CT 血管攝影
-      notes: "腎臟灌流缺損。血栓直接觀察。梗塞範圍評估"
+      notes: 腎臟灌流缺損。血栓直接觀察。梗塞範圍評估
     - name: 血液學
-      notes: "BUN、肌酐、電解質。凝血功能。尿液分析"
+      notes: BUN、肌酐、電解質。凝血功能。尿液分析
   differentialDiagnoses:
     - 急性腎損傷（其他原因）
     - 腎盂腎炎
     - 腎臟腫瘤
     - 腎結石
-
 treatment:
   medical:
     - 抗凝血——Enoxaparin 0.8-1 mg/kg SC q12h
@@ -72,26 +70,54 @@ treatment:
   surgical:
     - 取栓術（極少執行）
     - 腎切除（單側完全梗塞，對側功能正常時）
-
 prognosis:
-  general: "單側部分梗塞經適當治療後腎功能可能恢復。雙側嚴重梗塞預後不良。基礎疾病控制為關鍵。慢性腎損傷需長期管理。"
-
+  general: 單側部分梗塞經適當治療後腎功能可能恢復。雙側嚴重梗塞預後不良。基礎疾病控制為關鍵。慢性腎損傷需長期管理。
 prevention:
   - 高凝血狀態的預防性抗血栓治療
   - 心肌病患者使用 Clopidogrel 預防
   - 蛋白質流失性腎病的抗血栓預防
-
-
 guidelineRefs:
   - sourceOrg: Natural products and bioprospecting
     title: Plants Used as Antihypertensive.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7981375/
     type: review
-    pmid: "33174095"
+    pmid: '33174095'
     relevance: primary
   - sourceOrg: Frontiers in bioengineering and biotechnology
-    title: 3D-Printed Cold Preservation Device in Renal Autotransplantation for the Treatment of a Patient With Renal Artery Stenosis.
+    title: >-
+      3D-Printed Cold Preservation Device in Renal Autotransplantation for the Treatment of a Patient With Renal Artery
+      Stenosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8762299/
     type: case-report
-    pmid: "35047485"
+    pmid: '35047485'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: haematuria
+    frequency: common
+  - symptomId: oliguria-anuria
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 腎血管疾病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - vomiting 相關症狀
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腎臟超音波（Doppler）
+          notes: 腎臟灌流評估。楔形低回音區域（梗塞灶）。Doppler 腎動脈/靜脈血流
+        - name: CT 血管攝影
+          notes: 腎臟灌流缺損。血栓直接觀察。梗塞範圍評估
+        - name: 血液學
+          notes: BUN、肌酐、電解質。凝血功能。尿液分析
+ddxSource: auto-generated

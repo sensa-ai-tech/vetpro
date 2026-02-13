@@ -3,18 +3,19 @@ nameEn: Avian Copper Toxicosis
 nameZh: 禽類銅中毒
 bodySystem: toxicology
 description: 禽類銅中毒為鳥類攝入過量銅導致的中毒，主要影響肝臟與消化道。較鉛鋅中毒少見，但在接觸銅製品或含銅殺菌劑的環境中可能發生。
-
 aliases:
-  - { alias: 鳥類銅中毒, language: zh }
-  - { alias: 禽銅毒症, language: zh }
-  - { alias: Copper poisoning in birds, language: en }
-  - { alias: Copper toxicity avian, language: en }
-
+  - alias: 鳥類銅中毒
+    language: zh
+  - alias: 禽銅毒症
+    language: zh
+  - alias: Copper poisoning in birds
+    language: en
+  - alias: Copper toxicity avian
+    language: en
 species:
   - speciesCommon: bird
     prevalence: rare
     notes: 較鉛鋅中毒少見。某些鳥種（如巨嘴鳥 Toucans、椋鳥 Mynahs）因體內鐵代謝特性對銅更敏感。鸚鵡偶有報告。
-
 etiology:
   categories:
     - name: 銅來源
@@ -29,7 +30,6 @@ etiology:
         - 引發氧化壓力與肝細胞壞死
         - 溶血性貧血
         - 腎小管損傷
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -43,21 +43,19 @@ clinicalSigns:
     - 多渴多尿
     - 肝腫大
     - 急性死亡
-
 diagnosis:
   primaryTests:
     - name: 血液銅濃度
-      notes: "血液銅升高。正常值因鳥種而異。需結合臨床表現判斷"
+      notes: 血液銅升高。正常值因鳥種而異。需結合臨床表現判斷
     - name: 肝臟銅含量
-      notes: "肝組織銅含量為確診金標準（活檢或剖檢）"
+      notes: 肝組織銅含量為確診金標準（活檢或剖檢）
     - name: 血液學與生化
-      notes: "肝酶升高（AST、LDH）。溶血性貧血。膽紅素升高"
+      notes: 肝酶升高（AST、LDH）。溶血性貧血。膽紅素升高
   differentialDiagnoses:
     - 其他重金屬中毒（鉛、鋅）
     - 感染性肝炎
     - 黃麴毒素中毒
     - 原發性肝臟疾病
-
 treatment:
   medical:
     - D-penicillamine 55 mg/kg PO BID（首選螯合劑）
@@ -66,12 +64,44 @@ treatment:
     - 輸血（嚴重溶血時）
   surgical:
     - 消化道內銅異物手術移除
-
 prognosis:
-  general: "早期診斷並移除暴露源後預後尚可。嚴重肝壞死或急性溶血危機預後不良。慢性銅蓄積導致不可逆肝損傷。"
-
+  general: 早期診斷並移除暴露源後預後尚可。嚴重肝壞死或急性溶血危機預後不良。慢性銅蓄積導致不可逆肝損傷。
 prevention:
   - 避免使用銅製品作為鳥類器具
   - 使用不鏽鋼飲水器與食盤
   - 避免使用含銅管的初始水
   - 遠離含銅殺菌劑
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類銅中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - hepatomegaly 相關症狀
+        - polyuria-polydipsia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液銅濃度
+          notes: 血液銅升高。正常值因鳥種而異。需結合臨床表現判斷
+        - name: 肝臟銅含量
+          notes: 肝組織銅含量為確診金標準（活檢或剖檢）
+        - name: 血液學與生化
+          notes: 肝酶升高（AST、LDH）。溶血性貧血。膽紅素升高
+ddxSource: auto-generated

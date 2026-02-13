@@ -2,13 +2,16 @@ slug: uroabdomen
 nameEn: Uroabdomen
 nameZh: 尿腹
 bodySystem: emergency
-description: 尿腹 (uroabdomen/uroperitoneum) 為尿液漏入腹腔的緊急狀態。常見原因包括膀胱破裂（外傷或尿道阻塞導致）、輸尿管損傷與尿道損傷。腹腔尿液引起化學性腹膜炎與高血鉀、高氮血症。腹腔液 creatinine 高於血清 >2 倍為確診依據。
-
+description: >-
+  尿腹 (uroabdomen/uroperitoneum) 為尿液漏入腹腔的緊急狀態。常見原因包括膀胱破裂（外傷或尿道阻塞導致）、輸尿管損傷與尿道損傷。腹腔尿液引起化學性腹膜炎與高血鉀、高氮血症。腹腔液 creatinine 高於血清
+  >2 倍為確診依據。
 aliases:
-  - { alias: 尿性腹水, language: zh }
-  - { alias: Uroperitoneum, language: en }
-  - { alias: Urinary Peritonitis, language: en }
-
+  - alias: 尿性腹水
+    language: zh
+  - alias: Uroperitoneum
+    language: en
+  - alias: Urinary Peritonitis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓 uroabdomen 可因長時間尿道阻塞致膀胱過度擴張破裂。尿道導管放置或 perineal urethrostomy 術後併發症。
-
 etiology:
   categories:
     - name: 漏尿來源
@@ -31,7 +33,6 @@ etiology:
         - 長時間尿道阻塞→膀胱壞死破裂
         - 手術併發症（OHE 時輸尿管損傷）
         - 骨盆骨折（尿道撕裂）
-
 clinicalSigns:
   early:
     - 腹部膨脹
@@ -44,7 +45,6 @@ clinicalSigns:
     - 氮血症（BUN/Cr 急遽升高）
     - 腹膜炎征象
     - 休克
-
 diagnosis:
   primaryTests:
     - name: 腹腔穿刺液分析
@@ -56,7 +56,6 @@ diagnosis:
     - 靜脈泌尿道造影 (IVP) 或 CT（輸尿管損傷定位）
     - CBC、生化（高血鉀、高 BUN/Cr）
     - 心電圖
-
 treatment:
   principles:
     - 矯正高血鉀（緊急）
@@ -73,23 +72,78 @@ treatment:
     - 輸尿管損傷：reimplantation 或 stent
     - 尿道損傷：導管留置 ± 手術修補
     - 術後監測排尿功能
-
 prognosis: 膀胱破裂手術修補預後佳（>85% 存活）。輸尿管損傷手術較複雜但可成功修復。高血鉀未矯正前致死風險高。慢性漏尿引起嚴重腹膜炎者預後較差。
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
-    title: Retrospective evaluation of the use of small-bore wire-guided catheters for the management of peritoneal effusion in cats and dogs.
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
+    title: >-
+      Retrospective evaluation of the use of small-bore wire-guided catheters for the management of peritoneal effusion
+      in cats and dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10099829/
     type: research
-    pmid: "36452983"
+    pmid: '36452983'
     relevance: supporting
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Outcomes in dogs with uroabdomen: 43 cases (2006-2015)."
+    title: 'Outcomes in dogs with uroabdomen: 43 cases (2006-2015).'
     url: https://pubmed.ncbi.nlm.nih.gov/29244609/
     type: research
-    pmid: "29244609"
+    pmid: '29244609'
     relevance: supporting
 pubmedQueries:
   - query: '"uroabdomen" OR "uroperitoneum" AND (veterinary OR canine OR feline) AND ("treatment" OR "bladder rupture")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 尿液腹 診斷流程
+  steps:
+    - step: 1
+      action: 臨床懷疑
+      details: 外傷後或術後出現少尿、腹脹、氮質血症
+      findings:
+        - 腹部膨脹+波動感
+        - 高BUN/肌酸酐+高血鉀
+    - step: 2
+      action: 腹水採樣分析
+      details: 腹腔穿刺取腹水，比較腹水與血清肌酸酐
+      findings:
+        - 腹水/血清肌酸酐比 ≥2:1
+        - 腹水/血清鉀比 >1.4:1
+    - step: 3
+      action: 穩定患者
+      details: 靜脈輸液、處理高血鉀、放置引流管
+      findings:
+        - 電解質逐步改善
+        - 血流動力學穩定
+    - step: 4
+      action: 影像定位+手術
+      details: 對比攝影定位破裂部位，穩定後手術修補
+      findings:
+        - 確認破裂部位
+        - 手術修補+術後監測
+clinicalPearls:
+  - 腹水肌酸酐/血清肌酸酐比 ≥2:1 是確診的金標準——急診中簡單快速且準確
+  - Uroabdomen是內科急症而非外科急症——先穩定電解質再開刀
+  - 高血鉀是最致命的併發症，心電圖監測（尋找帳篷狀T波和心搏過緩）至關重要
+monitoringItems:
+  - 每2-4小時監測電解質（特別是鉀離子）
+  - 精確尿量測量（目標 >1-2 ml/kg/hr）
+  - 腹水量監測（引流管產出量）
+  - 術後追蹤腎功能（BUN/Cr q24-48h）
+associatedSymptoms:
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: oliguria-anuria
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+ddxSource: book

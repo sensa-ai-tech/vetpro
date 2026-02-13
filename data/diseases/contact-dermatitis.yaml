@@ -3,12 +3,13 @@ nameEn: Contact Dermatitis
 nameZh: 接觸性皮膚炎
 bodySystem: dermatology
 description: 皮膚直接接觸刺激物或過敏原後引起的局部炎症反應。分為刺激性接觸皮膚炎（直接化學損傷）與過敏性接觸皮膚炎（延遲型過敏反應）。病灶分布於無毛或毛髮稀疏的接觸區域。
-
 aliases:
-  - { alias: "Irritant Contact Dermatitis", language: en }
-  - { alias: "Allergic Contact Dermatitis", language: en }
-  - { alias: "接觸性過敏", language: zh }
-
+  - alias: Irritant Contact Dermatitis
+    language: en
+  - alias: Allergic Contact Dermatitis
+    language: en
+  - alias: 接觸性過敏
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見，因厚毛覆蓋保護。
-
 etiology:
   categories:
     - name: 刺激性
@@ -29,7 +29,6 @@ etiology:
         - 塑膠/橡膠（食碗）
         - 植物（毒常春藤）
         - 藥物（Neomycin 外用）
-
 clinicalSigns:
   early:
     - 接觸區紅斑
@@ -40,14 +39,12 @@ clinicalSigns:
     - 皮膚增厚苔蘚化
     - 脫毛
     - 色素沉著
-
 diagnosis:
   primaryTests:
     - name: 病史與接觸史
       notes: 病灶分布與接觸區域一致。移除可疑物後改善
     - name: 貼片試驗
       notes: 過敏性接觸皮膚炎的確診方式，但臨床不常用
-
 treatment:
   principles:
     - 辨識並避免接觸致敏物
@@ -57,36 +54,81 @@ treatment:
     - 局部類固醇藥膏
     - 全身性止癢（嚴重時）
     - 屏障保護（穿衣服或鞋套）
-
 prognosis: 辨識並避免接觸物後預後極佳。無法避免接觸時需長期管理。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary medicine and science
     title: Reapplication of the Type IV Hypersensitivity Quantitative Risk Assessment to Assess Ingredients Used on Canines.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12178314/
     type: review
-    pmid: "40536915"
+    pmid: '40536915'
   - sourceOrg: Contact dermatitis
-    title: "Benzoyl Peroxide's Sensitisation Potential and Potency in Experimental Methods and Review of Contact Allergy and Allergic Contact Dermatitis."
+    title: >-
+      Benzoyl Peroxide's Sensitisation Potential and Potency in Experimental Methods and Review of Contact Allergy and
+      Allergic Contact Dermatitis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12055316/
     type: review
-    pmid: "39910957"
+    pmid: '39910957'
   - sourceOrg: International journal of molecular sciences
     title: Treatment of Allergies to Fur Animals.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11241144/
     type: review
-    pmid: "39000328"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '39000328'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Impact of Growth Rate on the Welfare of Broilers.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11591019/
     type: review
-    pmid: "39595382"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '39595382'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Evolutions in Commercial Meat Poultry Breeding.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10571742/
     type: review
-    pmid: "37835756"
+    pmid: '37835756'
 pubmedQueries:
   - query: '"contact dermatitis" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 接觸性皮膚炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 詳細詢問環境暴露史與皮膚病變分布
+      findings:
+        - 無毛或少毛區域紅疹
+        - 腹部、腋下、腹股溝好發
+        - 接觸刺激物後發作
+        - 瘙癢程度不等
+    - step: 2
+      action: 皮膚學檢查
+      details: 仔細檢查皮膚病變型態與分布
+      findings:
+        - 界線分明的紅斑與丘疹
+        - 病變限於接觸區域
+        - 可能有水泡或糜爛
+        - 慢性病例出現苔蘚化
+    - step: 3
+      action: 排除性診斷
+      details: 皮膚刮片與細胞學排除其他皮膚病
+      findings:
+        - 皮膚刮片排除疥蟎
+        - 細胞學排除細菌或酵母菌感染
+        - 排除食物過敏與異位性皮膚炎
+    - step: 4
+      action: 確診
+      details: 移除可疑接觸物觀察改善，必要時進行貼膚試驗
+      findings:
+        - 移除可疑物後皮膚改善
+        - 貼膚試驗確認致敏原
+        - 皮膚切片顯示表皮海綿水腫與淋巴球浸潤
+clinicalPearls:
+  - 接觸性皮膚炎的病變分布是診斷的關鍵線索——無毛區域和接觸面
+  - 塑膠碗過敏是下巴粉刺樣病變的常見原因，應建議更換不銹鋼碗
+  - 過敏性接觸性皮膚炎需要先前致敏期，首次接觸不會立即出現症狀
+  - 診斷常需要排除更常見的過敏性皮膚病（異位性皮膚炎、食物過敏）
+monitoringItems:
+  - 避免接觸後2-3週評估改善程度
+  - 繼發感染的追蹤
+  - 若使用糖皮質激素需監測副作用
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+ddxSource: book

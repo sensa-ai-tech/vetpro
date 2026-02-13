@@ -3,12 +3,13 @@ nameEn: Vaginal Prolapse
 nameZh: 陰道脫垂
 bodySystem: reproductive
 description: 陰道脫垂 (vaginal prolapse/vaginal hyperplasia) 為犬陰道黏膜在雌激素刺激下過度增生並從陰門突出。好發於大型犬發情期間。為雌激素依賴性，OHE 可根治。需與陰道腫瘤和子宮脫垂鑑別。
-
 aliases:
-  - { alias: 陰道增生, language: zh }
-  - { alias: Vaginal Hyperplasia, language: en }
-  - { alias: Vaginal Fold Prolapse, language: en }
-
+  - alias: 陰道增生
+    language: zh
+  - alias: Vaginal Hyperplasia
+    language: en
+  - alias: Vaginal Fold Prolapse
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓陰道脫垂極罕見。
-
 etiology:
   categories:
     - name: 致病機制
@@ -31,7 +31,6 @@ etiology:
         - 未絕育
         - 反覆發情
         - 品種遺傳傾向
-
 clinicalSigns:
   early:
     - 陰門見粉紅色腫塊突出
@@ -43,7 +42,6 @@ clinicalSigns:
     - 排尿困難（尿道被遮蓋）
     - 無法自然交配
     - 組織壞死（未保護時）
-
 diagnosis:
   primaryTests:
     - name: 視診
@@ -54,7 +52,6 @@ diagnosis:
     - 陰道鏡
     - 細胞學或生檢（排除腫瘤）
     - 陰道細胞學（確認發情階段）
-
 treatment:
   principles:
     - OHE 為根治方法
@@ -67,23 +64,65 @@ treatment:
     - 嚴重脫出：手術切除多餘組織 (submucosal resection)
     - GnRH 或 hCG 促進排卵/黃體化（縮短雌激素刺激期）
     - 壞死組織清創
-
 prognosis: OHE 後預後極佳，不再復發。未絕育犬每次發情可能復發且逐次加重。繁殖用犬可透過人工授精維持繁殖，但建議退役後 OHE。手術切除多餘組織後可能影響未來自然分娩。
-
-
 guidelineRefs:
   - sourceOrg: Research square
-    title: Functional outcome of the anterior vaginal wall in a pelvic surgery injury rat model after treatment with stem cell-derived progenitors of smooth muscle cells.
+    title: >-
+      Functional outcome of the anterior vaginal wall in a pelvic surgery injury rat model after treatment with stem
+      cell-derived progenitors of smooth muscle cells.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11213168/
     type: research
-    pmid: "38946968"
+    pmid: '38946968'
     relevance: supporting
-  - sourceOrg: "Stem cell research &amp; therapy"
-    title: Functional outcome of the anterior vaginal wall in a pelvic surgery injury rat model after treatment with stem cell-derived progenitors of smooth muscle cells.
+  - sourceOrg: Stem cell research &amp; therapy
+    title: >-
+      Functional outcome of the anterior vaginal wall in a pelvic surgery injury rat model after treatment with stem
+      cell-derived progenitors of smooth muscle cells.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11389472/
     type: research
-    pmid: "39256865"
+    pmid: '39256865'
     relevance: supporting
 pubmedQueries:
   - query: '"vaginal prolapse" OR "vaginal hyperplasia" AND (veterinary OR canine) AND ("treatment" OR "surgery")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 陰道脫垂 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估陰道組織脫出的程度和時機
+      findings:
+        - 陰道口可見粉紅色組織突出
+        - 通常發生於動情前期/動情期
+        - 舔舐會陰部
+        - 排尿困難或困難
+    - step: 2
+      action: 臨床分級
+      details: 評估脫垂嚴重程度
+      findings:
+        - 第一型：輕度脫出（黏膜外翻）
+        - 第二型：中度脫出
+        - 第三型：完全脫垂（甜甜圈狀）
+        - 組織活力評估（壞死、水腫）
+    - step: 3
+      action: 鑑別與評估
+      details: 排除其他會陰腫塊原因
+      findings:
+        - 與陰道腫瘤鑑別
+        - 與子宮脫垂鑑別
+        - 荷爾蒙狀態評估
+        - 排除泌尿道阻塞
+clinicalPearls:
+  - 發情期陰道增生常被誤認為腫瘤，細胞學和組織學可鑑別
+  - 必須確認尿道口位置以避免排尿阻塞
+  - OHE 是最有效的預防和治療方法
+  - 繁殖犬可考慮在發情結束後自然回縮，但下次發情可能復發
+monitoringItems:
+  - 術後監測傷口癒合
+  - 監測排尿功能是否正常
+  - 未絕育者每次發情期密切觀察
+  - 組織壞死病例術後監測感染徵兆
+associatedSymptoms:
+  - symptomId: peripheral-oedema
+    frequency: common
+ddxSource: book

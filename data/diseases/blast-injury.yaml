@@ -3,11 +3,11 @@ nameEn: Blast Injury
 nameZh: 爆炸傷
 bodySystem: emergency
 description: 爆炸引起的複合性創傷,包括衝擊波損傷、穿刺傷、燒傷及擠壓傷。常見肺、耳、腹部損傷。
-
 aliases:
-  - { alias: 爆震傷, language: zh }
-  - { alias: Explosion Trauma, language: en }
-
+  - alias: 爆震傷
+    language: zh
+  - alias: Explosion Trauma
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,13 +17,11 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 同犬
-
 etiology:
   categories:
     - name: 損傷類型
       examples:
         - 初級(衝擊波)、次級(碎片)、三級(拋擲)、四級(燒傷/吸入)
-
 clinicalSigns:
   early:
     - 多重創傷、出血
@@ -31,16 +29,14 @@ clinicalSigns:
   progressive:
     - 肺挫傷、氣胸
     - 腹腔內出血
-
 diagnosis:
   primaryTests:
     - name: 全身創傷評估
-      notes: "ABCDE評估"
+      notes: ABCDE評估
     - name: 影像學
-      notes: "胸腹部X光/超音波"
+      notes: 胸腹部X光/超音波
   differentialDiagnoses:
     - 其他複合性創傷
-
 treatment:
   medical:
     - 系統性創傷處理
@@ -49,37 +45,55 @@ treatment:
     - 胸管(若氣胸)
     - 手術(若需要)
     - 燒傷處理
-
 prognosis:
-  general: "預後視傷勢嚴重度。多重器官損傷預後不良。"
-
+  general: 預後視傷勢嚴重度。多重器官損傷預後不良。
 prevention:
   - 避免危險環境
-
-
 guidelineRefs:
   - sourceOrg: Experimental eye research
-    title: "Blast injury: Impact to the cornea."
+    title: 'Blast injury: Impact to the cornea.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11179966/
     type: review
-    pmid: "38677709"
+    pmid: '38677709'
   - sourceOrg: Frontiers in bioengineering and biotechnology
     title: A synoptic literature review of animal models for investigating the biomechanics of knee osteoarthritis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11311206/
     type: review
-    pmid: "39132255"
+    pmid: '39132255'
   - sourceOrg: British journal of anaesthesia
-    title: "Neuroprotection by the noble gases argon and xenon as treatments for acquired brain injury: a preclinical systematic review and meta-analysis."
+    title: >-
+      Neuroprotection by the noble gases argon and xenon as treatments for acquired brain injury: a preclinical
+      systematic review and meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9428918/
     type: review
-    pmid: "35688658"
+    pmid: '35688658'
   - sourceOrg: Neuropharmacology
-    title: "Blast-induced \"PTSD\": Evidence from an animal model."
+    title: 'Blast-induced "PTSD": Evidence from an animal model.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12199260/
     type: review
-    pmid: "30227150"
+    pmid: '30227150'
   - sourceOrg: Neurotrauma reports
     title: (2R,6R)-Hydroxynorketamine Treatment of Rats Exposed to Repetitive Low-Level Blast Injury.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10068674/
     type: research
-    pmid: "37020715"
+    pmid: '37020715'
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 爆炸傷 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 全身創傷評估
+          notes: ABCDE評估
+        - name: 影像學
+          notes: 胸腹部X光/超音波
+ddxSource: auto-generated

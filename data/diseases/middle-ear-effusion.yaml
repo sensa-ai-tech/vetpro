@@ -3,13 +3,15 @@ nameEn: Middle Ear Effusion
 nameZh: 中耳積液
 bodySystem: ear
 description: 中耳腔（鼓室）內非感染性或低度感染性液體蓄積，導致傳導性聽力損失及鼓膜異常，可能與慢性外耳炎、耳咽管功能不全或炎症反應相關。
-
 aliases:
-  - { alias: 中耳滲出液, language: zh }
-  - { alias: 分泌性中耳炎, language: zh }
-  - { alias: Secretory otitis media, language: en }
-  - { alias: Middle ear fluid, language: en }
-
+  - alias: 中耳滲出液
+    language: zh
+  - alias: 分泌性中耳炎
+    language: zh
+  - alias: Secretory otitis media
+    language: en
+  - alias: Middle ear fluid
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓中耳積液常與上呼吸道感染或鼻咽息肉相關。
-
 etiology:
   categories:
     - name: 原發性
@@ -33,7 +34,6 @@ etiology:
         - 中耳炎後殘留積液
         - 鼻咽息肉（貓）
         - 上呼吸道感染
-
 clinicalSigns:
   early:
     - 聽力下降
@@ -46,19 +46,17 @@ clinicalSigns:
     - 疼痛反應（觸壓耳根）
     - CKCS 可能出現頸部搔抓（與脊髓空洞症鑑別）
     - 鼓膜膨隆
-
 diagnosis:
   primaryTests:
     - name: 耳鏡檢查（鎮靜下）
-      notes: "鼓膜膨隆、透明度降低、可見液面水平。PSOM 患犬鼓膜可能完整但膨隆"
+      notes: 鼓膜膨隆、透明度降低、可見液面水平。PSOM 患犬鼓膜可能完整但膨隆
     - name: 影像學（CT/MRI）
-      notes: "鼓泡內液體密度充填。CT 可評估骨壁狀態。MRI 可區分液體性質"
+      notes: 鼓泡內液體密度充填。CT 可評估骨壁狀態。MRI 可區分液體性質
   differentialDiagnoses:
     - 化膿性中耳炎
     - 中耳膽脂瘤
     - 中耳腫瘤
     - 鼻咽息肉
-
 treatment:
   medical:
     - 鎮靜下鼓膜穿刺引流（myringotomy）
@@ -69,44 +67,95 @@ treatment:
   surgical:
     - 反覆復發病例可考慮鼓泡切開術
     - 貓——鼻咽息肉牽拉切除
-
 prognosis:
-  general: "單次引流後可能復發，尤其 PSOM 患犬常需多次穿刺引流。找出並處理根本原因後預後改善。CKCS 品種需長期監測。"
-
+  general: 單次引流後可能復發，尤其 PSOM 患犬常需多次穿刺引流。找出並處理根本原因後預後改善。CKCS 品種需長期監測。
 prevention:
   - 積極治療慢性外耳炎
   - CKCS 品種定期耳科檢查
   - 貓——早期處理上呼吸道疾病
-
-
 guidelineRefs:
   - sourceOrg: BioMed research international
-    title: "Retracted: Effect of Erdosteine on Middle Ear Effusion in Rats by Mediating TLR4 Signaling Pathway."
+    title: 'Retracted: Effect of Erdosteine on Middle Ear Effusion in Rats by Mediating TLR4 Signaling Pathway.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10791281/
     type: research
-    pmid: "38230104"
+    pmid: '38230104'
     relevance: supporting
   - sourceOrg: Turkish archives of otorhinolaryngology
     title: Effects of Cross-linked Hyaluronic Acid in a Rat Model of Vestibular and Cochlear Toxicity.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10652050/
     type: research
-    pmid: "38020411"
+    pmid: '38020411'
     relevance: supporting
   - sourceOrg: BioMed research international
     title: Effect of Erdosteine on Middle Ear Effusion in Rats by Mediating TLR4 Signaling Pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8560256/
     type: research
-    pmid: "34734089"
+    pmid: '34734089'
     relevance: supporting
   - sourceOrg: Journal of inflammation research
     title: IL-17 is a Potential Therapeutic Target in a Rodent Model of Otitis Media with Effusion.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8818970/
     type: research
-    pmid: "35140496"
+    pmid: '35140496'
     relevance: supporting
   - sourceOrg: Scientific reports
-    title: Longitudinal optical coherence tomography to visualize the in vivo response of middle ear biofilms to antibiotic therapy.
+    title: >-
+      Longitudinal optical coherence tomography to visualize the in vivo response of middle ear biofilms to antibiotic
+      therapy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7933323/
     type: research
-    pmid: "33664323"
+    pmid: '33664323'
     relevance: supporting
+diagnosticAlgorithm:
+  title: 中耳積液/PSOM 診斷流程
+  steps:
+    - step: 1
+      action: 臨床懷疑
+      details: 品種+頭頸疼痛+耳部症狀
+      findings:
+        - Cavalier品種
+        - 頸部觸診疼痛
+        - 耳部搔抓/搖頭
+        - 聽力下降
+    - step: 2
+      action: 耳鏡檢查
+      details: 評估鼓膜和外耳道
+      findings:
+        - 鼓膜膨出（光滑完整但凸出）
+        - 外耳道可能無炎症（PSOM特徵）
+        - 鼓膜顏色改變
+        - 神經學異常?
+    - step: 3
+      action: 影像確認
+      details: MRI或CT評估鼓室泡
+      findings:
+        - MRI：鼓室泡高訊號
+        - CT：鼓室泡軟組織密度
+        - 雙側vs單側
+        - 排除腫瘤和膽脂瘤
+    - step: 4
+      action: 治療性引流
+      details: Myringotomy+沖洗+培養
+      findings:
+        - 鼓膜穿刺引流
+        - 黏稠黏液（PSOM特徵）
+        - 生理鹽水反覆沖洗
+        - 培養+類固醇+抗生素
+clinicalPearls:
+  - Cavalier King Charles Spaniel有頭頸疼痛或抓耳→務必考慮PSOM
+  - PSOM特徵：鼓膜膨出但外耳道看似正常——不像一般中耳炎有外耳炎
+  - MRI是偵測PSOM最可靠的影像學方法
+  - PSOM的黏液極為黏稠——需要反覆沖洗才能清除
+  - 頭頸疼痛可能被誤診為頸椎病——CKCS務必排除PSOM
+monitoringItems:
+  - 頭頸疼痛改善
+  - 鼓膜狀態（定期耳鏡追蹤）
+  - 聽力評估
+  - 神經功能（面神經、霍納氏）
+  - PSOM復發監測
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: head-tilt
+    frequency: uncommon
+ddxSource: book

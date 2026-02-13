@@ -3,12 +3,13 @@ nameEn: Tendon Injury
 nameZh: 肌腱損傷
 bodySystem: orthopedic
 description: 肌腱的急性撕裂或慢性退化性損傷。包括部分或完全斷裂以及慢性肌腱病變 (tendinopathy)。犬以跟腱 (Achilles) 與二頭肌腱最常見。
-
 aliases:
-  - { alias: "Tendon Rupture", language: en }
-  - { alias: "Tendinopathy", language: en }
-  - { alias: "肌腱撕裂", language: zh }
-
+  - alias: Tendon Rupture
+    language: en
+  - alias: Tendinopathy
+    language: en
+  - alias: 肌腱撕裂
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 外傷性
@@ -24,7 +24,6 @@ etiology:
         - 急性撕裂（跳躍、急停）
         - 切割傷
         - 慢性退化性病變後斷裂
-
 clinicalSigns:
   early:
     - 突然跛行
@@ -34,14 +33,12 @@ clinicalSigns:
     - 關節不穩定（完全斷裂）
     - 肌肉萎縮
     - 慢性跛行
-
 diagnosis:
   primaryTests:
     - name: 超音波
       notes: 評估肌腱連續性與部分撕裂
     - name: MRI
       notes: 複雜肌腱損傷的精確評估
-
 treatment:
   principles:
     - 完全斷裂需手術修復
@@ -51,41 +48,71 @@ treatment:
     - 部分撕裂：限制活動 + 物理治療
     - PRP（富血小板血漿）注射（探索中）
     - 逐步恢復運動
-
 prognosis: 手術修復後多數預後良好。恢復期需 8-12 週。慢性肌腱病變預後較急性好。
-
-
 guidelineRefs:
   - sourceOrg: Faculty reviews
     title: Recent advances in tendinopathy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7886058/
     type: review
-    pmid: "33659948"
+    pmid: '33659948'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
-    title: "The roles and mechanisms of the NF-&#x3ba;B signaling pathway in tendon disorders."
+    title: The roles and mechanisms of the NF-&#x3ba;B signaling pathway in tendon disorders.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11228182/
     type: review
-    pmid: "38978635"
+    pmid: '38978635'
     relevance: primary
-  - sourceOrg: "Journal of orthopaedic research : official publication of the Orthopaedic Research Society"
-    title: "Preclinical tendon and ligament models: Beyond the 3Rs (replacement, reduction, and refinement) to 5W1H (why, who, what, where, when, how)."
+  - sourceOrg: 'Journal of orthopaedic research : official publication of the Orthopaedic Research Society'
+    title: >-
+      Preclinical tendon and ligament models: Beyond the 3Rs (replacement, reduction, and refinement) to 5W1H (why, who,
+      what, where, when, how).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10561191/
     type: review
-    pmid: "37573480"
+    pmid: '37573480'
     relevance: primary
   - sourceOrg: Medicina (Kaunas, Lithuania)
-    title: "Efficacy of Adipose-Derived Mesenchymal Stem Cells and Stromal Vascular Fraction Alone and Combined to Biomaterials in Tendinopathy or Tendon Injury: Systematic Review of Current Concepts."
+    title: >-
+      Efficacy of Adipose-Derived Mesenchymal Stem Cells and Stromal Vascular Fraction Alone and Combined to
+      Biomaterials in Tendinopathy or Tendon Injury: Systematic Review of Current Concepts.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9963687/
     type: review
-    pmid: "36837474"
+    pmid: '36837474'
     relevance: primary
   - sourceOrg: Veterinary medicine and science
-    title: "Equine tendon mechanical behaviour: Prospects for repair and regeneration applications."
+    title: 'Equine tendon mechanical behaviour: Prospects for repair and regeneration applications.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10508504/
     type: review
-    pmid: "37471573"
+    pmid: '37471573'
     relevance: primary
 pubmedQueries:
   - query: '"tendon injury" AND (veterinary OR canine) AND ("surgery" OR "rehabilitation")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 肌腱損傷 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cachexia-muscle-wasting 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 超音波
+          notes: 評估肌腱連續性與部分撕裂
+        - name: MRI
+          notes: 複雜肌腱損傷的精確評估
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 完全斷裂需手術修復
+        - 部分撕裂可保守治療
+ddxSource: auto-generated

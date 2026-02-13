@@ -3,18 +3,19 @@ nameEn: Avian Chronic Egg Laying
 nameZh: 禽類慢性產蛋症
 bodySystem: reproductive
 description: 禽類慢性產蛋症為雌鳥持續過度產蛋的繁殖異常，導致鈣質耗竭、卵巢與輸卵管疾病及全身性營養不良。好發於雞尾鸚鵡、虎皮鸚鵡及愛情鳥等小型鸚鵡。
-
 aliases:
-  - { alias: 慢性產蛋, language: zh }
-  - { alias: 過度產蛋症候群, language: zh }
-  - { alias: Chronic egg laying syndrome, language: en }
-  - { alias: Excessive egg production, language: en }
-
+  - alias: 慢性產蛋
+    language: zh
+  - alias: 過度產蛋症候群
+    language: zh
+  - alias: Chronic egg laying syndrome
+    language: en
+  - alias: Excessive egg production
+    language: en
 species:
   - speciesCommon: bird
     prevalence: common
     notes: 雞尾鸚鵡為最常見物種。虎皮鸚鵡、愛情鳥、巴丹鸚鵡亦常見。單獨飼養的雌鳥可在無配對情況下產蛋。光照時間過長為主要誘因。
-
 etiology:
   categories:
     - name: 荷爾蒙因素
@@ -28,7 +29,6 @@ etiology:
         - 飲食過於充足（模擬食物豐富期）
         - 缺乏環境改變與刺激
         - 與鏡中影像或玩具形成配對行為
-
 clinicalSigns:
   early:
     - 頻繁產蛋（連續多窩）
@@ -42,21 +42,19 @@ clinicalSigns:
     - 卵巢囊腫
     - 卵黃性腹膜炎
     - 輸卵管脫垂
-
 diagnosis:
   primaryTests:
     - name: 繁殖史
-      notes: "記錄產蛋頻率與窩數。正常鸚鵡每年 1-2 窩，慢性產蛋者可連續不斷"
+      notes: 記錄產蛋頻率與窩數。正常鸚鵡每年 1-2 窩，慢性產蛋者可連續不斷
     - name: 血液生化
-      notes: "血鈣降低（離子鈣 <1.0 mmol/L）。總蛋白與白蛋白下降。高脂血症"
+      notes: 血鈣降低（離子鈣 <1.0 mmol/L）。總蛋白與白蛋白下降。高脂血症
     - name: X光檢查
-      notes: "可見骨質密度下降、病理性骨折。腹腔內蛋體。髓質骨增生"
+      notes: 可見骨質密度下降、病理性骨折。腹腔內蛋體。髓質骨增生
   differentialDiagnoses:
     - 卵巢腫瘤
     - 輸卵管疾病
     - 腹腔腫瘤
     - 代謝性骨病（其他原因）
-
 treatment:
   medical:
     - 環境管理（減少光照至 10-12 小時/天）
@@ -68,41 +66,73 @@ treatment:
     - Deslorelin implant（4.7 mg SC，效果可持續數月至1年以上）
   surgical:
     - 卵巢輸卵管切除術（反覆發作且藥物無效時）
-
 prognosis:
-  general: "環境管理配合荷爾蒙治療多數可控制。嚴重低血鈣或卵黃性腹膜炎需緊急處理。卵巢輸卵管切除為最終解決方案。不治療可危及生命。"
-
+  general: 環境管理配合荷爾蒙治療多數可控制。嚴重低血鈣或卵黃性腹膜炎需緊急處理。卵巢輸卵管切除為最終解決方案。不治療可危及生命。
 prevention:
   - 控制光照時間（每天 10-12 小時，嚴格暗房）
   - 避免提供巢箱與封閉空間
   - 不觸摸鳥的背部與腹部
   - 定期改變環境佈置
   - 均衡飲食包含適當鈣質
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in physiology
-    title: Chronic heat stress compromises egg production and quality parameters through changes in blood biochemistry and uterine gene expression in laying hens raised under cage-free environment.
+    title: >-
+      Chronic heat stress compromises egg production and quality parameters through changes in blood biochemistry and
+      uterine gene expression in laying hens raised under cage-free environment.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12875927/
     type: research
-    pmid: "41657551"
+    pmid: '41657551'
   - sourceOrg: Poultry science
     title: Automatic detection of bumblefoot in cage-free hens using computer vision technologies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11067544/
     type: research
-    pmid: "38688138"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '38688138'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Effects of Housing System on Anxiety, Chronic Stress, Fear, and Immune Function in Bovan Brown Laying Hens.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9311790/
     type: research
-    pmid: "35883350"
+    pmid: '35883350'
   - sourceOrg: Journal of animal science
-    title: Effects and potential mechanism of dietary vitamin C supplementation on hepatic lipid metabolism in growing laying hens under chronic heat stress.
+    title: >-
+      Effects and potential mechanism of dietary vitamin C supplementation on hepatic lipid metabolism in growing laying
+      hens under chronic heat stress.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10588821/
     type: research
-    pmid: "37843035"
+    pmid: '37843035'
   - sourceOrg: Proceedings. Biological sciences
-    title: Experimental reduction of haemosporidian infection affects maternal reproductive investment, parental behaviour and offspring condition.
+    title: >-
+      Experimental reduction of haemosporidian infection affects maternal reproductive investment, parental behaviour
+      and offspring condition.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9709520/
     type: research
-    pmid: "36448284"
+    pmid: '36448284'
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類慢性產蛋症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - weakness 相關症狀
+        - trembling 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 繁殖史
+          notes: 記錄產蛋頻率與窩數。正常鸚鵡每年 1-2 窩，慢性產蛋者可連續不斷
+        - name: 血液生化
+          notes: 血鈣降低（離子鈣 <1.0 mmol/L）。總蛋白與白蛋白下降。高脂血症
+        - name: X光檢查
+          notes: 可見骨質密度下降、病理性骨折。腹腔內蛋體。髓質骨增生
+ddxSource: auto-generated

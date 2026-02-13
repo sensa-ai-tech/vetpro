@@ -2,13 +2,16 @@ slug: cryptococcosis-detail
 nameEn: Cryptococcosis Detail
 nameZh: 隱球菌病詳述
 bodySystem: infectious
-description: 隱球菌病是由新型隱球菌(Cryptococcus neoformans)及格特隱球菌(C. gattii)引起的全身性真菌感染,主要經吸入鳥糞(特別是鴿糞)污染環境中的孢子感染。此病侵犯上呼吸道、中樞神經系統及眼睛,貓較犬易感,表現為鼻腔肉芽腫、腦膜炎及視網膜炎,需長期抗真菌治療。
-
+description: >-
+  隱球菌病是由新型隱球菌(Cryptococcus neoformans)及格特隱球菌(C.
+  gattii)引起的全身性真菌感染,主要經吸入鳥糞(特別是鴿糞)污染環境中的孢子感染。此病侵犯上呼吸道、中樞神經系統及眼睛,貓較犬易感,表現為鼻腔肉芽腫、腦膜炎及視網膜炎,需長期抗真菌治療。
 aliases:
-  - { alias: 隱球菌症, language: zh }
-  - { alias: Crypto, language: en }
-  - { alias: 歐洲芽生菌病, language: zh }
-
+  - alias: 隱球菌症
+    language: zh
+  - alias: Crypto
+    language: en
+  - alias: 歐洲芽生菌病
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓為最易感動物,FIV/FeLV陽性貓風險最高,鼻腔型最常見
-
 etiology:
   categories:
     - name: 全身性真菌感染
@@ -27,7 +29,6 @@ etiology:
         - C. gattii(樹木棲息,如桉樹)
         - 全球分布,都市環境常見(鴿子聚集處)
         - FIV/FeLV陽性、免疫低下為危險因子
-
 clinicalSigns:
   early:
     - 鼻腔型(貓最常見):單側或雙側鼻分泌物(黏液或血樣)
@@ -40,28 +41,26 @@ clinicalSigns:
     - 皮膚:結節、潰瘍(罕見)
     - 淋巴結腫大
     - 全身播散:肺炎、骨髓炎
-
 diagnosis:
   primaryTests:
     - name: 細胞學檢查
-      notes: "鼻腔分泌物、淋巴結吸出物可見厚莢膜酵母(5-20 μm,窄基底出芽)"
+      notes: 鼻腔分泌物、淋巴結吸出物可見厚莢膜酵母(5-20 μm,窄基底出芽)
     - name: 墨汁染色
-      notes: "莢膜在墨汁襯托下呈透明暈圈(診斷性發現)"
+      notes: 莢膜在墨汁襯托下呈透明暈圈(診斷性發現)
     - name: 血清或CSF隱球菌抗原檢測
-      notes: "Latex agglutination test(LAT)或ELISA(敏感性>90%,效價>1:1有診斷意義)"
+      notes: Latex agglutination test(LAT)或ELISA(敏感性>90%,效價>1:1有診斷意義)
     - name: 真菌培養
-      notes: "鼻腔分泌物、CSF或組織培養(需1-2週)"
+      notes: 鼻腔分泌物、CSF或組織培養(需1-2週)
     - name: 胸部X光/CT
-      notes: "鼻腔肉芽腫、鼻甲骨溶解、肺結節(播散型)"
+      notes: 鼻腔肉芽腫、鼻甲骨溶解、肺結節(播散型)
     - name: MRI
-      notes: "中樞神經型可見腦膜增厚、隱球菌瘤"
+      notes: 中樞神經型可見腦膜增厚、隱球菌瘤
   differentialDiagnoses:
     - 鼻腔淋巴瘤
     - 鼻腔腺癌
     - 慢性鼻炎(細菌、真菌)
     - 腦膜腦炎(其他病因)
     - 弓形蟲病
-
 treatment:
   medical:
     - 輕中度鼻腔型:Fluconazole 50-100 mg/cat PO SID或5-10 mg/kg PO SID(犬)x 6-12個月
@@ -72,12 +71,46 @@ treatment:
     - 監測:血清抗原效價每月檢測(下降至<1:4可考慮停藥)
     - 支持性照護:營養、氧氣、抗癲癇藥物(中樞神經型)
     - 療程:抗原陰性後再延長2-3個月,最少6個月
-
 prognosis:
-  general: "預後謹慎。鼻腔型經治療存活率約70-85%,中樞神經型預後較差(存活率40-60%),眼部侵犯可能永久失明。FIV/FeLV陽性貓預後不良。復發率約10-20%,需長期監測。"
-
+  general: 預後謹慎。鼻腔型經治療存活率約70-85%,中樞神經型預後較差(存活率40-60%),眼部侵犯可能永久失明。FIV/FeLV陽性貓預後不良。復發率約10-20%,需長期監測。
 prevention:
   - 避免接觸鴿糞或鳥糞污染環境
   - FIV/FeLV篩檢及疫苗接種(貓)
   - 免疫低下動物減少戶外活動
   - 無有效疫苗
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: head-tilt
+    frequency: uncommon
+  - symptomId: sneezing
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: blindness
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 隱球菌病詳述 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - ataxia 相關症狀
+        - head-tilt 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 細胞學檢查
+          notes: 鼻腔分泌物、淋巴結吸出物可見厚莢膜酵母(5-20 μm,窄基底出芽)
+        - name: 墨汁染色
+          notes: 莢膜在墨汁襯托下呈透明暈圈(診斷性發現)
+        - name: 血清或CSF隱球菌抗原檢測
+          notes: Latex agglutination test(LAT)或ELISA(敏感性>90%,效價>1:1有診斷意義)
+ddxSource: auto-generated

@@ -3,13 +3,15 @@ nameEn: Vestibular Disease Otogenic
 nameZh: 耳源性前庭疾病
 bodySystem: ear
 description: 因中耳或內耳疾病導致的周邊前庭功能障礙，表現為頭歪斜、眼球震顫及失衡，與中耳炎或內耳炎密切相關，需與中樞性前庭疾病及特發性前庭症候群鑑別。
-
 aliases:
-  - { alias: 耳源性前庭症候群, language: zh }
-  - { alias: 周邊前庭疾病, language: zh }
-  - { alias: Otogenic vestibular syndrome, language: en }
-  - { alias: Peripheral vestibular disease (otitis), language: en }
-
+  - alias: 耳源性前庭症候群
+    language: zh
+  - alias: 周邊前庭疾病
+    language: zh
+  - alias: Otogenic vestibular syndrome
+    language: en
+  - alias: Peripheral vestibular disease (otitis)
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓耳源性前庭疾病常與中耳息肉、中耳炎或內耳炎相關。需與特發性貓前庭症候群鑑別。
-
 etiology:
   categories:
     - name: 耳源性原因
@@ -34,7 +35,6 @@ etiology:
         - 前庭器官感染或炎症
         - 前庭神經受壓或損傷
         - 內耳淋巴液成分改變
-
 clinicalSigns:
   early:
     - 頭歪斜（患側向下）
@@ -47,21 +47,19 @@ clinicalSigns:
     - 合併顏面神經麻痺
     - Horner syndrome
     - 聽力喪失
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
-      notes: "區分周邊 vs 中樞前庭疾病。周邊：姿勢反應正常、水平/旋轉眼震、無意識異常。中樞：姿勢反應異常、垂直眼震、可能意識改變"
+      notes: 區分周邊 vs 中樞前庭疾病。周邊：姿勢反應正常、水平/旋轉眼震、無意識異常。中樞：姿勢反應異常、垂直眼震、可能意識改變
     - name: 耳科檢查
-      notes: "耳鏡評估外耳道與鼓膜。尋找中耳炎證據"
+      notes: 耳鏡評估外耳道與鼓膜。尋找中耳炎證據
     - name: CT/MRI
-      notes: "評估中耳與內耳。MRI 為內耳評估首選。排除中樞病變"
+      notes: 評估中耳與內耳。MRI 為內耳評估首選。排除中樞病變
   differentialDiagnoses:
     - 特發性前庭症候群
     - 中樞性前庭疾病（腦幹腫瘤、腦炎）
     - 甲狀腺功能低下相關前庭神經病變
     - 耳毒性藥物
-
 treatment:
   medical:
     - 全身性抗生素（依中耳培養藥敏，6-8 週）
@@ -72,11 +70,39 @@ treatment:
   surgical:
     - 內科治療無效時——鼓泡切開術（VBO）
     - TECA-LBO（合併終末期外耳炎）
-
 prognosis:
-  general: "前庭症狀多在 2-4 週內顯著改善（中樞代償）。殘留頭歪斜常見但不影響功能。聽力喪失可能為永久性。原發疾病需積極治療以防復發。"
-
+  general: 前庭症狀多在 2-4 週內顯著改善（中樞代償）。殘留頭歪斜常見但不影響功能。聽力喪失可能為永久性。原發疾病需積極治療以防復發。
 prevention:
   - 積極治療中耳炎
   - 慢性耳病定期影像學監測
   - 避免使用耳毒性藥物
+associatedSymptoms:
+  - symptomId: nystagmus
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: trembling
+    frequency: common
+  - symptomId: head-tilt
+    frequency: common
+diagnosticAlgorithm:
+  title: 耳源性前庭疾病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - nystagmus 相關症狀
+        - vomiting 相關症狀
+        - trembling 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 區分周邊 vs 中樞前庭疾病。周邊：姿勢反應正常、水平/旋轉眼震、無意識異常。中樞：姿勢反應異常、垂直眼震、可能意識改變
+        - name: 耳科檢查
+          notes: 耳鏡評估外耳道與鼓膜。尋找中耳炎證據
+        - name: CT/MRI
+          notes: 評估中耳與內耳。MRI 為內耳評估首選。排除中樞病變
+ddxSource: auto-generated

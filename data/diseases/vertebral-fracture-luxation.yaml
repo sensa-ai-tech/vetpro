@@ -3,11 +3,11 @@ nameEn: Vertebral Fracture Luxation
 nameZh: Vertebral Fracture Luxation
 bodySystem: neurology
 description: 神經系統疾病,導致運動、感覺或認知功能障礙。需完整神經學檢查與影像學評估確診。
-
 aliases:
-  - { alias: Vertebral Fracture Luxation, language: zh }
-  - { alias: Vertebral Fracture Luxation, language: en }
-
+  - alias: Vertebral Fracture Luxation
+    language: zh
+  - alias: Vertebral Fracture Luxation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 神經元異常放電
       examples:
         - 髓鞘或軸突病變
         - 腦血管疾病
-
 clinicalSigns:
   early:
     - 神經功能輕度異常
@@ -32,25 +30,71 @@ clinicalSigns:
   progressive:
     - 神經缺損加重
     - 癱瘓或意識障礙
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: MRI或CT
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 抗癲癇藥物(Phenobarbital 2-3 mg/kg PO q12h)
     - 支持性治療
-
 prognosis:
-  general: "預後取決於根本病因與治療反應。早期診斷與適當治療可改善預後。"
-
+  general: 預後取決於根本病因與治療反應。早期診斷與適當治療可改善預後。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
+diagnosticAlgorithm:
+  title: 脊椎骨折脫位 診斷流程
+  steps:
+    - step: 1
+      action: 緊急穩定與固定
+      details: 避免二次損傷，脊椎固定
+      findings:
+        - 急性癱瘓
+        - 脊椎疼痛
+        - 外傷史
+        - 固定患者避免脊椎移動
+    - step: 2
+      action: 神經學評估
+      details: 精確神經定位與深層痛覺評估
+      findings:
+        - 癱瘓部位定位
+        - 深層痛覺存在與否關鍵預後指標
+        - 膀胱功能評估
+        - 肛門反射
+    - step: 3
+      action: 影像學檢查
+      details: 脊椎X光與CT/MRI
+      findings:
+        - X光骨折/脫位確認
+        - CT骨骼損傷詳細評估
+        - MRI脊髓損傷程度
+        - 不穩定性評估
+    - step: 4
+      action: 治療與預後
+      details: 根據穩定性與神經功能決策
+      findings:
+        - 深層痛覺喪失預後差
+        - 不穩定骨折需手術固定
+        - 穩定骨折可保守治療
+        - 復健計劃
+clinicalPearls:
+  - 深部痛覺喪失>48小時是功能恢復的極差預後指標
+  - 搬運脊椎損傷動物時必須保護脊椎（避免屈曲旋轉）
+  - Schiff-Sherrington姿勢不代表預後不良，需評估深部痛覺
+  - Methylprednisolone的使用目前有爭議，需在受傷極早期使用才可能有益
+monitoringItems:
+  - 神經功能（每日評估）
+  - 膀胱功能和尿液培養
+  - 褥瘡預防
+  - 骨折癒合（X光追蹤）
+  - 復健進度
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+ddxSource: book

@@ -3,13 +3,15 @@ nameEn: Uremic Stomatitis
 nameZh: 尿毒性口腔炎
 bodySystem: dental
 description: 尿毒性口腔炎是尿毒症時尿毒素（主要為尿素分解產生的氨）刺激口腔黏膜引起的潰瘍性口腔炎。常見於嚴重腎衰竭患者，是尿毒症的口腔表現。
-
 aliases:
-  - { alias: 腎性口腔炎, language: zh }
-  - { alias: 尿毒症口腔潰瘍, language: zh }
-  - { alias: Uremic Oral Ulceration, language: en }
-  - { alias: Uremic Mouth Disease, language: en }
-
+  - alias: 腎性口腔炎
+    language: zh
+  - alias: 尿毒症口腔潰瘍
+    language: zh
+  - alias: Uremic Oral Ulceration
+    language: en
+  - alias: Uremic Mouth Disease
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓嚴重腎衰竭時可出現舌尖與舌緣潰瘍。需與貓口腔炎（feline stomatitis）鑑別。
-
 etiology:
   categories:
     - name: 病因機制
@@ -34,7 +35,6 @@ etiology:
         - 口腔衛生不良加重症狀
         - 脫水使唾液濃縮
         - 尿毒症性凝血功能異常使潰瘍出血
-
 clinicalSigns:
   early:
     - 口臭（氨味/尿騷味）
@@ -47,20 +47,18 @@ clinicalSigns:
     - 進食疼痛拒食
     - 出血性潰瘍
     - 棕色舌苔（尿毒素沉積）
-
 diagnosis:
   primaryTests:
     - name: 口腔檢查
-      notes: "口腔黏膜潰瘍，好發於舌緣、舌腹面和頰黏膜。潰瘍底部可能覆蓋灰白色偽膜。嚴重時舌尖壞死。"
+      notes: 口腔黏膜潰瘍，好發於舌緣、舌腹面和頰黏膜。潰瘍底部可能覆蓋灰白色偽膜。嚴重時舌尖壞死。
     - name: 血液生化
-      notes: "BUN 與 Creatinine 顯著升高確認尿毒症。通常 BUN >80-100 mg/dL 時開始出現口腔病變。"
+      notes: BUN 與 Creatinine 顯著升高確認尿毒症。通常 BUN >80-100 mg/dL 時開始出現口腔病變。
   differentialDiagnoses:
     - 貓口腔炎 (Feline Stomatitis)
     - 口腔腫瘤
     - 自體免疫性口腔炎
     - 化學性灼傷
     - 病毒性口腔潰瘍
-
 treatment:
   medical:
     - 控制尿毒症：積極靜脈輸液、腎臟支持治療
@@ -72,12 +70,36 @@ treatment:
   surgical:
     - 通常不需手術
     - 嚴重舌尖壞死偶需清創
-
 prognosis:
-  general: "預後取決於腎臟疾病的可逆性。急性腎損傷矯正後口腔潰瘍通常1-2週內癒合。慢性腎病末期的尿毒性口腔炎是預後不良的指標，反映嚴重尿毒症。"
-
+  general: 預後取決於腎臟疾病的可逆性。急性腎損傷矯正後口腔潰瘍通常1-2週內癒合。慢性腎病末期的尿毒性口腔炎是預後不良的指標，反映嚴重尿毒症。
 prevention:
   - 慢性腎病的積極管理控制 BUN
   - 定期口腔健康檢查
   - 適當水分攝取維持尿毒素稀釋
   - 腎臟處方飲食
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: halitosis-stomatitis
+    frequency: common
+diagnosticAlgorithm:
+  title: 尿毒性口腔炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - ptyalism 相關症狀
+        - halitosis-stomatitis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 口腔檢查
+          notes: 口腔黏膜潰瘍，好發於舌緣、舌腹面和頰黏膜。潰瘍底部可能覆蓋灰白色偽膜。嚴重時舌尖壞死。
+        - name: 血液生化
+          notes: BUN 與 Creatinine 顯著升高確認尿毒症。通常 BUN >80-100 mg/dL 時開始出現口腔病變。
+ddxSource: auto-generated

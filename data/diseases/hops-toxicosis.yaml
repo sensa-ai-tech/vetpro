@@ -3,11 +3,11 @@ nameEn: Hops Toxicosis
 nameZh: 啤酒花中毒
 bodySystem: toxicology
 description: 啤酒花(釀酒用)對犬具毒性,可引起惡性高體溫、代謝性酸中毒及多器官衰竭。死亡率高。
-
 aliases:
-  - { alias: 忽布中毒, language: zh }
-  - { alias: Hops Poisoning, language: en }
-
+  - alias: 忽布中毒
+    language: zh
+  - alias: Hops Poisoning
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 較少暴露,毒性不明
-
 etiology:
   categories:
     - name: 誤食啤酒花
       examples:
         - 新鮮或乾燥啤酒花
         - 家釀啤酒殘渣
-
 clinicalSigns:
   early:
     - 30分鐘-數小時內
@@ -36,34 +34,58 @@ clinicalSigns:
     - 肌肉僵硬
     - 多器官衰竭、DIC
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 暴露史
-      notes: "確認啤酒花接觸"
+      notes: 確認啤酒花接觸
     - name: 體溫測量
-      notes: "體溫>41°C高度懷疑"
+      notes: 體溫>41°C高度懷疑
     - name: 血液生化
-      notes: "代謝性酸中毒、肝腎功能惡化、CK升高"
+      notes: 代謝性酸中毒、肝腎功能惡化、CK升高
   differentialDiagnoses:
     - 中暑
     - 惡性高體溫(麻醉相關)
-
 treatment:
   medical:
     - 積極降溫(關鍵):
-      - 冷水浴、酒精擦拭、冰敷
-      - 目標體溫<39.5°C
+        - 冷水浴、酒精擦拭、冰敷
+        - 目標體溫<39.5°C
     - 催吐或洗胃(若極早期)
     - 積極靜脈輸液
     - 碳酸氫鈉(若代謝性酸中毒)
     - 抗癲癇藥(若需要)
     - Dantrolene 2-5 mg/kg IV(肌肉鬆弛劑)
     - 密集監護
-
 prognosis:
-  general: "預後不良,死亡率30-50%。體溫>42°C持續或出現DIC,幾乎致命。存活關鍵在於快速降溫。"
-
+  general: 預後不良,死亡率30-50%。體溫>42°C持續或出現DIC,幾乎致命。存活關鍵在於快速降溫。
 prevention:
   - 避免犬接觸啤酒花植物或釀酒材料
   - 家釀啤酒殘渣妥善處理
+associatedSymptoms:
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 啤酒花中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - seizures 相關症狀
+        - hyperthermia 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 暴露史
+          notes: 確認啤酒花接觸
+        - name: 體溫測量
+          notes: 體溫>41°C高度懷疑
+        - name: 血液生化
+          notes: 代謝性酸中毒、肝腎功能惡化、CK升高
+ddxSource: auto-generated

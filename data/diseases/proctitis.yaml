@@ -3,11 +3,11 @@ nameEn: Proctitis
 nameZh: 直腸炎
 bodySystem: gastrointestinal
 description: 直腸黏膜發炎,可能因感染、異物、發炎性腸病或腫瘤引起。症狀包含血便、裡急後重及排便疼痛。
-
 aliases:
-  - { alias: 直腸發炎, language: zh }
-  - { alias: Rectal Inflammation, language: en }
-
+  - alias: 直腸發炎
+    language: zh
+  - alias: Rectal Inflammation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 常見原因包含便秘、發炎性腸病
-
 etiology:
   categories:
     - name: 感染性
@@ -30,7 +29,6 @@ etiology:
     - name: 腫瘤性
       examples:
         - 直腸息肉或腫瘤
-
 clinicalSigns:
   early:
     - 血便 (鮮紅色)
@@ -39,64 +37,88 @@ clinicalSigns:
     - 排便疼痛
     - 排便困難
     - 黏液便
-
 diagnosis:
   primaryTests:
     - name: 直腸觸診
-      notes: "評估黏膜、腫塊、異物"
+      notes: 評估黏膜、腫塊、異物
     - name: 結腸鏡檢查
-      notes: "直視黏膜,取組織切片"
+      notes: 直視黏膜,取組織切片
     - name: 糞便檢查
-      notes: "寄生蟲、培養"
+      notes: 寄生蟲、培養
   differentialDiagnoses:
     - 結腸炎
     - 直腸腫瘤
     - 肛門腺疾病
-
 treatment:
   medical:
     - 抗生素 (Metronidazole 10-15 mg/kg PO q12h)
     - 抗發炎飲食
     - 移除異物或息肉
     - 治療原發病因
-
 prognosis:
-  general: "預後良好至謹慎;感染性或異物性預後佳;發炎性腸病需長期管理"
-
+  general: 預後良好至謹慎;感染性或異物性預後佳;發炎性腸病需長期管理
 prevention:
   - 避免異物攝入
   - 適當飲食管理
   - 早期診斷及治療腸道疾病
-
-
 guidelineRefs:
   - sourceOrg: Immunity, inflammation and disease
-    title: "Correction to \"Efficacy and Mechanism of Action of Ginsenoside Rg3 on Radiation Proctitis in Rats\"."
+    title: Correction to "Efficacy and Mechanism of Action of Ginsenoside Rg3 on Radiation Proctitis in Rats".
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11600447/
     type: research
-    pmid: "39601475"
+    pmid: '39601475'
     relevance: supporting
   - sourceOrg: Immunity, inflammation and disease
     title: Efficacy and mechanism of action of ginsenoside Rg3 on radiation proctitis in rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11421044/
     type: research
-    pmid: "39315884"
+    pmid: '39315884'
     relevance: supporting
   - sourceOrg: Frontiers in cellular and infection microbiology
-    title: "Ginsenoside Rg3 treats acute radiation proctitis through the TLR4/MyD88/NF-&#x3ba;B pathway and regulation of intestinal flora."
+    title: >-
+      Ginsenoside Rg3 treats acute radiation proctitis through the TLR4/MyD88/NF-&#x3ba;B pathway and regulation of
+      intestinal flora.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9853003/
     type: research
-    pmid: "36683687"
+    pmid: '36683687'
     relevance: supporting
-  - sourceOrg: "Ulusal travma ve acil cerrahi dergisi = Turkish journal of trauma &amp; emergency surgery : TJTES"
+  - sourceOrg: 'Ulusal travma ve acil cerrahi dergisi = Turkish journal of trauma &amp; emergency surgery : TJTES'
     title: Effects of hyaluronic acid and chondroitin sulfate on acute radiation proctitis in rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10277333/
     type: research
-    pmid: "37145048"
+    pmid: '37145048'
     relevance: supporting
   - sourceOrg: Yonsei medical journal
     title: Effects of Mesenchymal Stem Cells Treatment on Radiation-Induced Proctitis in Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9971437/
     type: research
-    pmid: "36825342"
+    pmid: '36825342'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: constipation
+    frequency: uncommon
+  - symptomId: faecal-tenesmus
+    frequency: common
+  - symptomId: haematochezia
+    frequency: common
+diagnosticAlgorithm:
+  title: 直腸炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - constipation 相關症狀
+        - faecal-tenesmus 相關症狀
+        - haematochezia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 直腸觸診
+          notes: 評估黏膜、腫塊、異物
+        - name: 結腸鏡檢查
+          notes: 直視黏膜,取組織切片
+        - name: 糞便檢查
+          notes: 寄生蟲、培養
+ddxSource: auto-generated

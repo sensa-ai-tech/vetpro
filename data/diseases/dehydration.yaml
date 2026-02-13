@@ -3,13 +3,15 @@ nameEn: Dehydration
 nameZh: 脫水
 bodySystem: metabolic
 description: 體液流失超過攝入導致的體內總水量減少，可伴隨電解質失衡。脫水為獸醫臨床最常見的病理生理狀態之一，評估脫水程度（皮膚彈性、黏膜濕潤度、眼球凹陷等）並適當補液為基礎臨床技能。
-
 aliases:
-  - { alias: 體液缺乏, language: zh }
-  - { alias: 缺水, language: zh }
-  - { alias: Fluid Deficit, language: en }
-  - { alias: Volume Depletion, language: en }
-
+  - alias: 體液缺乏
+    language: zh
+  - alias: 缺水
+    language: zh
+  - alias: Fluid Deficit
+    language: en
+  - alias: Volume Depletion
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓脫水極為常見，尤其慢性腎病貓。貓原本飲水量偏低，皮下輸液為貓常用的居家輔助療法。
-
 etiology:
   categories:
     - name: 液體流失增加
@@ -31,7 +32,6 @@ etiology:
         - 厭食/拒飲水
         - 飲水來源受限
         - 吞嚥困難
-
 clinicalSigns:
   early:
     - 皮膚彈性輕微下降（5% 脫水）
@@ -45,14 +45,12 @@ clinicalSigns:
     - CRT 延長
     - 少尿
     - 意識遲鈍（>10% 脫水為嚴重，可致休克）
-
 diagnosis:
   primaryTests:
     - name: 理學檢查評估脫水程度
       notes: 皮膚彈性（頸背部）、黏膜濕潤度、眼球位置、CRT。肥胖動物皮膚彈性評估可能偏差。
     - name: PCV/TP
       notes: 脫水時 PCV 與 TP 平行上升（血液濃縮）。貧血動物 PCV 可能假性正常。
-
 treatment:
   principles:
     - 計算液體缺乏量（體重 kg × 脫水 % × 1000 = mL）
@@ -66,36 +64,70 @@ treatment:
     - 等張晶體液首選（0.9% NaCl 或 Lactated Ringer's）
     - 維持量：犬貓約 40-60 mL/kg/day
     - 監測尿量、PCV/TP 及體重變化評估補液效果
-
 prognosis: 單純脫水經適當補液後預後極佳。預後主要取決於導致脫水的基礎疾病（如急性胃腸炎 vs 慢性腎病）。嚴重脫水（>10%）合併休克若未即時處理可致命。幼犬幼貓脫水進展快速需積極處理。
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
-    title: "24-Hour Kinetics of Cardiac Troponin-T Using a \"High-Sensitivity\" Assay in Thoroughbred Chuckwagon Racing Geldings after Race and Associated Clinical Sampling Guidelines."
+    title: >-
+      24-Hour Kinetics of Cardiac Troponin-T Using a "High-Sensitivity" Assay in Thoroughbred Chuckwagon Racing Geldings
+      after Race and Associated Clinical Sampling Guidelines.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5787185/
     type: guideline
-    pmid: "29171090"
+    pmid: '29171090'
   - sourceOrg: Veterinary research communications
     title: Advances in diagnosis of diseases causing diarrhea in newborn calves.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12394334/
     type: review
-    pmid: "40875162"
+    pmid: '40875162'
   - sourceOrg: Pathogens (Basel, Switzerland)
-    title: "Epidemiology and Diversity of Paratuberculosis in the Arabian Peninsula: A Systematic Review and Meta-Analysis with Implications for One Health."
+    title: >-
+      Epidemiology and Diversity of Paratuberculosis in the Arabian Peninsula: A Systematic Review and Meta-Analysis
+      with Implications for One Health.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12472523/
     type: review
-    pmid: "41011742"
+    pmid: '41011742'
   - sourceOrg: Frontiers in veterinary science
-    title: "A Review of Swine Transportation Research on Priority Welfare Issues: A Canadian Perspective."
+    title: 'A Review of Swine Transportation Research on Priority Welfare Issues: A Canadian Perspective.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6395376/
     type: review
-    pmid: "30854374"
+    pmid: '30854374'
   - sourceOrg: Scientific reports
     title: Molecular propensity and stress tolerance of dehydrins from desert plants.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12855248/
     type: research
-    pmid: "41449242"
+    pmid: '41449242'
 pubmedQueries:
   - query: '"Dehydration" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: oliguria-anuria
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: common
+diagnosticAlgorithm:
+  title: 脫水 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+        - oliguria-anuria 相關症狀
+        - dehydration 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查評估脫水程度
+          notes: 皮膚彈性（頸背部）、黏膜濕潤度、眼球位置、CRT。肥胖動物皮膚彈性評估可能偏差。
+        - name: PCV/TP
+          notes: 脫水時 PCV 與 TP 平行上升（血液濃縮）。貧血動物 PCV 可能假性正常。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 計算液體缺乏量（體重 kg × 脫水 % × 1000 = mL）
+        - 缺乏量在 4-24 小時內補充（依嚴重度）
+        - 同時考慮維持量與持續流失量
+ddxSource: auto-generated

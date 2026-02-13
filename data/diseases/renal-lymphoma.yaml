@@ -3,12 +3,13 @@ nameEn: Renal Lymphoma
 nameZh: 腎臟淋巴瘤
 bodySystem: oncology
 description: 腎臟淋巴瘤為腎臟最常見的惡性腫瘤（特別是貓隻）。貓隻腎臟淋巴瘤常為雙側性，可為原發性或全身性淋巴瘤的腎臟浸潤。犬隻腎臟淋巴瘤多為多中心淋巴瘤的腎臟受累。臨床表現為腎腫大、腎衰竭與全身性症狀。
-
 aliases:
-  - { alias: 腎淋巴瘤, language: zh }
-  - { alias: Kidney Lymphoma, language: en }
-  - { alias: Renal Lymphosarcoma, language: en }
-
+  - alias: 腎淋巴瘤
+    language: zh
+  - alias: Kidney Lymphoma
+    language: en
+  - alias: Renal Lymphosarcoma
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓隻腎臟淋巴瘤為腎臟最常見腫瘤。常為雙側性。FeLV 相關（但近年 FeLV 陰性者增加）。多見於老年貓。
-
 etiology:
   categories:
     - name: 腫瘤類型
@@ -29,7 +29,6 @@ etiology:
         - FeLV 感染（貓隻）
         - 免疫抑制
         - 老年動物
-
 clinicalSigns:
   early:
     - 體重減輕
@@ -42,61 +41,97 @@ clinicalSigns:
     - 嗜睡
     - 惡病質
     - 淋巴結腫大（全身性時）
-
 diagnosis:
   primaryTests:
     - name: 腎臟細針穿刺
       notes: 細胞學可見大量淋巴母細胞。超音波導引 FNA 為首選診斷方法。免疫表型分型（B-cell vs T-cell）。
     - name: 腹部超音波
       notes: 雙側腎腫大（貓隻特徵性）。腎臟回音性異常（低回音或混合回音）。正常腎臟結構消失。評估其他腹腔器官。
-
 treatment:
   principles:
     - 化學治療為主要療法
     - 同時管理腎衰竭
     - 貓隻腎臟淋巴瘤化療反應率尚可
   general:
-    - "貓隻：COP 方案（Cyclophosphamide、Vincristine、Prednisolone）"
-    - "或 CHOP 方案（加入 Doxorubicin）"
-    - "或 Lomustine（CCNU）50-60 mg/m² PO q4-6 週"
+    - 貓隻：COP 方案（Cyclophosphamide、Vincristine、Prednisolone）
+    - 或 CHOP 方案（加入 Doxorubicin）
+    - 或 Lomustine（CCNU）50-60 mg/m² PO q4-6 週
     - 腎衰竭管理（靜脈輸液、低磷飲食）
     - 止吐與營養支持
     - 定期監測腎功能與腫瘤大小
-
 prognosis: 貓隻腎臟淋巴瘤化療反應率約 50-65%。完全緩解者中位存活約 6-12 個月。未治療者存活時間通常 <2 個月。雙側腎臟受累與嚴重腎衰竭者預後較差。FeLV 陽性者預後可能較差。犬隻多中心淋巴瘤累及腎臟預後取決於整體分期。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
     title: Ultrasonographic characteristics of renal lymphoma in cats receiving chemotherapy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12701241/
     type: research
-    pmid: "41133985"
+    pmid: '41133985'
     relevance: supporting
   - sourceOrg: Veterinary sciences
-    title: "Feline Lymphoma in Focus: Examining the Patterns and Types in Croatia's Pathological Records."
+    title: 'Feline Lymphoma in Focus: Examining the Patterns and Types in Croatia''s Pathological Records.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12567832/
     type: research
-    pmid: "41150128"
+    pmid: '41150128'
     relevance: supporting
   - sourceOrg: The Journal of veterinary medical science
     title: Suspected renal interstitial cell tumor causing polycythemia in two dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11061571/
     type: research
-    pmid: "38383003"
+    pmid: '38383003'
     relevance: supporting
   - sourceOrg: Viruses
     title: Identification of A Novel Papillomavirus Associated with Squamous Cell Carcinoma in A Domestic Cat.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7019393/
     type: research
-    pmid: "31968684"
+    pmid: '31968684'
     relevance: supporting
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Incidence and treatment of feline renal lymphoma: 27 cases."
+    title: 'Incidence and treatment of feline renal lymphoma: 27 cases.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11197130/
     type: research
-    pmid: "33464143"
+    pmid: '33464143'
     relevance: supporting
 pubmedQueries:
   - query: '"renal lymphoma" OR "kidney lymphoma" AND (veterinary OR canine OR feline) AND ("chemotherapy" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: uncommon
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 腎臟淋巴瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腎臟細針穿刺
+          notes: 細胞學可見大量淋巴母細胞。超音波導引 FNA 為首選診斷方法。免疫表型分型（B-cell vs T-cell）。
+        - name: 腹部超音波
+          notes: 雙側腎腫大（貓隻特徵性）。腎臟回音性異常（低回音或混合回音）。正常腎臟結構消失。評估其他腹腔器官。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 化學治療為主要療法
+        - 同時管理腎衰竭
+        - 貓隻腎臟淋巴瘤化療反應率尚可
+ddxSource: auto-generated

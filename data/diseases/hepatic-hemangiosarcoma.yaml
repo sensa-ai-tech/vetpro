@@ -3,11 +3,11 @@ nameEn: Hepatic Hemangiosarcoma
 nameZh: 肝血管肉瘤
 bodySystem: oncology
 description: 肝臟惡性血管肉瘤,犬常見,預後極差。常為脾血管肉瘤轉移或多中心性發生,易破裂出血導致急性腹腔出血。
-
 aliases:
-  - { alias: 肝臟血管惡性瘤, language: zh }
-  - { alias: Liver Hemangiosarcoma, language: en }
-
+  - alias: 肝臟血管惡性瘤
+    language: zh
+  - alias: Liver Hemangiosarcoma
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,13 +17,11 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 極罕見
-
 etiology:
   categories:
     - name: 惡性腫瘤
       examples:
         - 血管內皮細胞惡性增生
-
 clinicalSigns:
   early:
     - 可能無症狀
@@ -32,47 +30,69 @@ clinicalSigns:
     - 腹部腫塊
     - 腹水 (血性)
     - 休克
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "肝腫塊、腹腔積液 (血性)"
+      notes: 肝腫塊、腹腔積液 (血性)
     - name: 腹水分析
-      notes: "血性積液"
+      notes: 血性積液
     - name: 胸部 X 光 / CT
-      notes: "評估肺轉移 (常見)"
+      notes: 評估肺轉移 (常見)
     - name: 組織病理學
-      notes: "確診血管肉瘤"
+      notes: 確診血管肉瘤
   differentialDiagnoses:
     - 肝細胞癌
     - 肝血管瘤
     - 脾血管肉瘤轉移
-
 treatment:
   medical:
     - 外科切除 + 脾切除 (若可行)
     - 化療 (Doxorubicin)
     - 輸血 (急性出血)
     - 姑息性照護
-
 prognosis:
-  general: "預後極差;中位存活時間 < 3 個月;手術 + 化療可能延長至 6-9 個月,但轉移率極高"
-
+  general: 預後極差;中位存活時間 < 3 個月;手術 + 化療可能延長至 6-9 個月,但轉移率極高
 prevention:
   - 無特定預防措施
   - 高風險品種定期腹部超音波篩檢
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Evaluation of hepatic tumor portal perfusion using mesenteric angiography: A pilot study in 5 dogs."
+    title: 'Evaluation of hepatic tumor portal perfusion using mesenteric angiography: A pilot study in 5 dogs.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6430931/
     type: research
-    pmid: "30565353"
+    pmid: '30565353'
     relevance: supporting
-  - sourceOrg: "Disease models &amp; mechanisms"
+  - sourceOrg: Disease models &amp; mechanisms
     title: Fischer-344 Tp53-knockout rats exhibit a high rate of bone and brain neoplasia with frequent metastasis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5087826/
     type: research
-    pmid: "27528400"
+    pmid: '27528400'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肝血管肉瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weakness 相關症狀
+        - ascites 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 肝腫塊、腹腔積液 (血性)
+        - name: 腹水分析
+          notes: 血性積液
+        - name: 胸部 X 光 / CT
+          notes: 評估肺轉移 (常見)
+ddxSource: auto-generated

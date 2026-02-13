@@ -3,11 +3,11 @@ nameEn: Pericardial Constriction
 nameZh: 縮窄性心包炎
 bodySystem: cardiac
 description: 心包膜纖維化增厚,限制心室舒張,導致心輸出量降低及體循環鬱血。罕見於犬貓,多因慢性心包炎或感染。
-
 aliases:
-  - { alias: 限制性心包疾病, language: zh }
-  - { alias: Constrictive Pericarditis, language: en }
-
+  - alias: 限制性心包疾病
+    language: zh
+  - alias: Constrictive Pericarditis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 極罕見,可能因 FIP
-
 etiology:
   categories:
     - name: 感染性
@@ -30,7 +29,6 @@ etiology:
     - name: 外傷性
       examples:
         - 慢性血胸後遺症
-
 clinicalSigns:
   early:
     - 運動不耐
@@ -40,29 +38,79 @@ clinicalSigns:
     - 頸靜脈怒張
     - 肝腫大
     - 虛弱
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波
-      notes: "心包膜增厚 (> 3 mm)、心室充填受限、舒張期功能異常"
+      notes: 心包膜增厚 (> 3 mm)、心室充填受限、舒張期功能異常
     - name: 胸部 X 光
-      notes: "心臟輪廓可能正常或略小、後腔靜脈擴張"
+      notes: 心臟輪廓可能正常或略小、後腔靜脈擴張
     - name: 心導管檢查
-      notes: "舒張壓等化 (equalization of diastolic pressures)"
+      notes: 舒張壓等化 (equalization of diastolic pressures)
   differentialDiagnoses:
     - 心包填塞
     - 限制型心肌病變
     - 右心衰竭
-
 treatment:
   medical:
     - 心包膜切除術 (pericardiectomy, definitive treatment)
     - 利尿劑 (術前控制腹水)
     - 抗生素 (若為感染性)
-
 prognosis:
-  general: "預後謹慎;心包膜切除術後可能改善,但手術風險高;未治療預後不良"
-
+  general: 預後謹慎;心包膜切除術後可能改善,但手術風險高;未治療預後不良
 prevention:
   - 早期診斷及治療心包炎
   - 避免慢性心包積液
+diagnosticAlgorithm:
+  title: 縮窄性心包炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估右心衰竭表現，包括腹水、頸靜脈怒張和肝腫大，注意先前心包炎病史
+      findings:
+        - 腹水為主要表現
+        - 頸靜脈怒張
+        - 運動不耐受伴肝腫大
+    - step: 2
+      action: 影像學檢查
+      details: 進行胸腔X光和心臟超音波評估心包厚度和心臟舒張功能
+      findings:
+        - X光可能顯示心包鈣化
+        - 心臟超音波見心包增厚
+        - 舒張期心室充盈受限
+    - step: 3
+      action: 進階檢查與確診
+      details: CT/MRI更精確評估心包厚度，心導管檢查確認舒張壓均等化
+      findings:
+        - CT/MRI顯示心包顯著增厚（>4mm）
+        - 心導管顯示雙心室舒張壓均等化
+        - 確診需手術心包切除及病理檢查
+clinicalPearls:
+  - 與心包積液的鑑別：縮窄性心包炎通常無大量積液但有心包增厚
+  - 「方根號」舒張壓波形為經典但非特異性血行動力學發現
+  - CT/MRI對心包厚度評估優於超音波
+  - 植物芒（grass awn）穿透是犬縮窄性心包炎的重要病因
+  - 術後可能出現低輸出量症候群，需密切監測
+monitoringItems:
+  - 術後心臟超音波追蹤
+  - 術後ECG監測心律不整
+  - 腹水量追蹤
+  - 肝功能指標
+  - 體重及運動耐受度
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: hepatomegaly
+    frequency: common
+ddxSource: book

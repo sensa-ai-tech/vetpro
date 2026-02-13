@@ -2,13 +2,16 @@ slug: mycotoxicosis
 nameEn: Mycotoxicosis
 nameZh: 黴菌毒素中毒
 bodySystem: toxicology
-description: 黴菌毒素中毒 (mycotoxicosis) 為攝入黴菌代謝產生的有毒物質所引起的疾病總稱。犬常見相關毒素包括黃麴毒素、震顫素 (tremorgens)、赭麴毒素 (ochratoxin) 與嘔吐毒素 (vomitoxin/DON)。攝入發霉食物或受汙染飼料為常見暴露途徑。
-
+description: >-
+  黴菌毒素中毒 (mycotoxicosis) 為攝入黴菌代謝產生的有毒物質所引起的疾病總稱。犬常見相關毒素包括黃麴毒素、震顫素 (tremorgens)、赭麴毒素 (ochratoxin) 與嘔吐毒素
+  (vomitoxin/DON)。攝入發霉食物或受汙染飼料為常見暴露途徑。
 aliases:
-  - { alias: 黴菌毒素病, language: zh }
-  - { alias: Mycotoxin Poisoning, language: en }
-  - { alias: Mold Toxicosis, language: en }
-
+  - alias: 黴菌毒素病
+    language: zh
+  - alias: Mycotoxin Poisoning
+    language: en
+  - alias: Mold Toxicosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓因較挑食，攝入發霉食物較犬少。但商業飼料汙染仍為潛在風險。
-
 etiology:
   categories:
     - name: 主要黴菌毒素
@@ -31,7 +33,6 @@ etiology:
         - 受汙染穀物飼料
         - 發霉乳酪
         - 儲存不當的寵物食品
-
 clinicalSigns:
   early:
     - 震顫素型：全身性肌肉震顫（數小時內發作）
@@ -42,7 +43,6 @@ clinicalSigns:
     - 肝毒素型：黃疸、凝血障礙
     - 腎毒素型：多飲多尿、腎衰竭
     - 慢性：免疫抑制、生長遲緩
-
 diagnosis:
   primaryTests:
     - name: 暴露史
@@ -54,7 +54,6 @@ diagnosis:
     - 肝腎功能
     - 凝血功能
     - 胃內容物毒素分析
-
 treatment:
   principles:
     - 停止暴露來源
@@ -69,36 +68,87 @@ treatment:
     - IV 輸液
     - 更換飼料
     - 防止犬翻食垃圾桶
-
 prognosis: 震顫素型犬多數支持療法下 24-48 小時恢復。肝毒素型（黃麴毒素）預後較差。嘔吐毒素型通常自限性。預防（避免發霉食物、飼料正確儲存）為關鍵。
-
-
 guidelineRefs:
   - sourceOrg: Molecules (Basel, Switzerland)
     title: Health Problems with Mycotoxins in Cattle-A Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12786409/
     type: review
-    pmid: "41515340"
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
+    pmid: '41515340'
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
     title: An overview of mycotoxicoses in rabbits.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11457744/
     type: review
-    pmid: "38804173"
+    pmid: '38804173'
   - sourceOrg: Frontiers in pharmacology
-    title: "Natural products for Gut-X axis: pharmacology, toxicology and microbiology in mycotoxin-caused diseases."
+    title: 'Natural products for Gut-X axis: pharmacology, toxicology and microbiology in mycotoxin-caused diseases.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11228701/
     type: review
-    pmid: "38978980"
+    pmid: '38978980'
   - sourceOrg: Toxins
-    title: "Dietary Mycotoxins: An Overview on Toxicokinetics, Toxicodynamics, Toxicity, Epidemiology, Detection, and Their Mitigation with Special Emphasis on Aflatoxicosis in Humans and Animals."
+    title: >-
+      Dietary Mycotoxins: An Overview on Toxicokinetics, Toxicodynamics, Toxicity, Epidemiology, Detection, and Their
+      Mitigation with Special Emphasis on Aflatoxicosis in Humans and Animals.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11598113/
     type: review
-    pmid: "39591238"
+    pmid: '39591238'
   - sourceOrg: Toxics
-    title: "Ferroptosis as a Potential Therapeutic Target of Traditional Chinese Medicine for Mycotoxicosis: A Review."
+    title: 'Ferroptosis as a Potential Therapeutic Target of Traditional Chinese Medicine for Mycotoxicosis: A Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10142935/
     type: review
-    pmid: "37112624"
+    pmid: '37112624'
 pubmedQueries:
   - query: '"mycotoxicosis" AND (veterinary OR canine OR feline) AND ("treatment" OR "tremorgenic" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 黴菌毒素中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - trembling 相關症狀
+        - anorexia 相關症狀
+        - ataxia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 暴露史
+          notes: 確認攝入發霉食物或受汙染飼料。保留食物樣本送檢
+        - name: 臨床表現分型
+          notes: 震顫型、肝型、腎型或消化道型有助推斷毒素類型
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 食物/飼料黴菌毒素分析
+        - 肝腎功能
+        - 凝血功能
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 停止暴露來源
+        - 去汙染
+        - 類型針對性支持療法
+ddxSource: auto-generated

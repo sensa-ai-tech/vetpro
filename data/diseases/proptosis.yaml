@@ -3,13 +3,15 @@ nameEn: Proptosis
 nameZh: 眼球脫出
 bodySystem: ophthalmology
 description: 眼球前移超出眼眶邊緣並被眼瞼卡住無法回納的緊急狀態。常因頭部外傷引起，短頭品種犬因眼眶淺且眼裂大，輕微外力即可脫出。需緊急處理以挽救眼球與視力。
-
 aliases:
-  - { alias: Globe Proptosis, language: en }
-  - { alias: Traumatic Globe Luxation, language: en }
-  - { alias: 眼球脫臼, language: zh }
-  - { alias: 眼球突脫, language: zh }
-
+  - alias: Globe Proptosis
+    language: en
+  - alias: Traumatic Globe Luxation
+    language: en
+  - alias: 眼球脫臼
+    language: zh
+  - alias: 眼球突脫
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓因眼眶較深需較大外力才會脫出，通常伴隨嚴重頭部外傷。
-
 etiology:
   categories:
     - name: 外傷性
@@ -26,7 +27,6 @@ etiology:
         - 車禍
         - 高處墜落
         - 頸部過度束縛 (短頭品種)
-
 clinicalSigns:
   early:
     - 眼球完全脫出眼眶
@@ -38,14 +38,12 @@ clinicalSigns:
     - 角膜潰瘍/穿孔
     - 眼外肌撕裂 (長頭品種常見)
     - 視神經牽拉損傷
-
 diagnosis:
   primaryTests:
     - name: 臨床視診
       notes: 診斷明確。重點評估預後因素：瞳孔反應、眼外肌完整性、角膜狀態
     - name: 預後評估
       notes: 瞳孔光反射存在 + 3 條以上眼外肌完整→保留眼球機會較大
-
 treatment:
   principles:
     - 緊急手術回納眼球
@@ -57,41 +55,99 @@ treatment:
     - 全身性抗生素 + 抗炎
     - 2-3 週後拆線評估
     - 嚴重損傷 (多條眼外肌斷裂、瞳孔無反應)：眼球摘除
-
 prognosis: 短頭品種犬預後較佳 (視力保留率約 50%)。長頭品種因需較大外力，伴隨損傷嚴重，視力保留率低。瞳孔光反射消失預後極差。即使視力喪失，回納後保留外觀仍有意義。
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
     title: Lymphoma in 2 black vultures.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12446273/
     type: case-report
-    pmid: "40963267"
+    pmid: '40963267'
     relevance: supporting
   - sourceOrg: Journal of clinical biochemistry and nutrition
-    title: Sanguinarine attenuates hypoxia/reoxygenation-triggered H9c2 cell injury through activation of the Nrf2/NLRP3 pathway.
+    title: >-
+      Sanguinarine attenuates hypoxia/reoxygenation-triggered H9c2 cell injury through activation of the Nrf2/NLRP3
+      pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12326247/
     type: research
-    pmid: "40777813"
+    pmid: '40777813'
     relevance: supporting
   - sourceOrg: Canadian respiratory journal
     title: Gentiopicroside Ameliorates Sepsis-Induced Acute Lung Injury via Inhibiting Inflammatory Response.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11392574/
     type: research
-    pmid: "39268525"
+    pmid: '39268525'
     relevance: supporting
   - sourceOrg: mBio
-    title: Host E3 ubiquitin ligase ITCH mediates Toxoplasma gondii effector GRA35-triggered NLRP1 inflammasome activation and cell-autonomous immunity.
+    title: >-
+      Host E3 ubiquitin ligase ITCH mediates Toxoplasma gondii effector GRA35-triggered NLRP1 inflammasome activation
+      and cell-autonomous immunity.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10936166/
     type: research
-    pmid: "38376248"
+    pmid: '38376248'
     relevance: supporting
   - sourceOrg: Frontiers in veterinary science
     title: Incidence of concurrent systemic injuries with traumatic proptosis and its effect on outcome - 100 dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10824934/
     type: research
-    pmid: "38292129"
+    pmid: '38292129'
     relevance: supporting
 pubmedQueries:
   - query: '"proptosis" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 眼球脫出 診斷流程
+  steps:
+    - step: 1
+      action: 緊急評估
+      details: 評估外傷程度與眼球存活力
+      findings:
+        - 眼球突出於眼眶外
+        - 眼瞼嵌頓於眼球赤道後方
+        - 角膜暴露乾燥
+        - 眼周出血與腫脹
+    - step: 2
+      action: 眼科學評估
+      details: 評估眼球存活預後指標
+      findings:
+        - 瞳孔對光反射評估
+        - 眼外肌完整性（>2條斷裂預後差）
+        - 前房出血程度
+        - 角膜完整性評估
+    - step: 3
+      action: 全身評估
+      details: 評估其他伴隨外傷
+      findings:
+        - 頭部外傷評估
+        - 口腔與顎骨骨折檢查
+        - 神經學檢查
+        - 胸腹部X光排除其他損傷
+    - step: 4
+      action: 確診與治療決策
+      details: 決定眼球保留或摘除
+      findings:
+        - 評估視覺恢復可能性
+        - 短頭種犬預後較佳
+        - 嚴重眼外肌斷裂考慮摘除
+        - 立即復位與暫時瞼緣縫合
+clinicalPearls:
+  - 眼球脫出是真正的急症——就診速度直接影響預後
+  - 短頭種犬飼主應了解此風險並避免頸圈過度束縛
+  - 超過3條眼外肌斷裂或瞳孔固定散大時保留功能視力的機會極低
+  - 復位後的暫時性眼瞼縫合至關重要，過早拆除會導致再脫出
+  - 貓的眼球脫出通常表示極嚴重的外傷，預後較犬差
+monitoringItems:
+  - 術後每日評估角膜狀態（透過縫合間隙）
+  - 2-3週後拆除眼瞼縫合評估
+  - 視力和瞳孔反射追蹤
+  - 眼壓監測
+  - 乾眼症篩查（Schirmer test）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: common
+  - symptomId: mydriasis
+    frequency: common
+ddxSource: book

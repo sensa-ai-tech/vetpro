@@ -3,14 +3,17 @@ nameEn: Corneal Sequestrum
 nameZh: 角膜壞死斑
 bodySystem: ophthalmology
 description: 貓特有的角膜疾病（犬極罕見），角膜基質局部壞死形成棕色至黑色斑塊。常與慢性角膜刺激、FHV-1 感染或眼瞼異常相關。Persian 與 Himalayan 品種好發。
-
 aliases:
-  - { alias: Corneal Nigrum, language: en }
-  - { alias: Corneal Mummification, language: en }
-  - { alias: Feline Corneal Sequestrum, language: en }
-  - { alias: 角膜黑斑, language: zh }
-  - { alias: 角膜壞死, language: zh }
-
+  - alias: Corneal Nigrum
+    language: en
+  - alias: Corneal Mummification
+    language: en
+  - alias: Feline Corneal Sequestrum
+    language: en
+  - alias: 角膜黑斑
+    language: zh
+  - alias: 角膜壞死
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -18,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓特有疾病。Persian、Himalayan、Burmese、Siamese 品種好發。可單側或雙側。
-
 etiology:
   categories:
     - name: 慢性角膜刺激
@@ -31,7 +33,6 @@ etiology:
         - Persian / Himalayan (扁臉品種)
         - Burmese
         - Siamese
-
 clinicalSigns:
   early:
     - 角膜出現淡棕色斑點
@@ -42,7 +43,6 @@ clinicalSigns:
     - 明顯疼痛 (blepharospasm)
     - 角膜新生血管
     - 壞死組織逐漸深入基質
-
 diagnosis:
   primaryTests:
     - name: 裂隙燈檢查
@@ -51,7 +51,6 @@ diagnosis:
       notes: 壞死斑本身可能不吸收 (表面上皮覆蓋) 或周圍吸收
     - name: FHV-1 PCR
       notes: 排除病毒感染為誘因
-
 treatment:
   principles:
     - 手術切除壞死組織為根治方式
@@ -62,36 +61,83 @@ treatment:
     - 術後結膜瓣或角膜移植覆蓋
     - FHV-1 相關者加用抗病毒治療 (Famciclovir)
     - 矯正眼瞼異常
-
 prognosis: 手術切除後預後良好。復發率約 10-20%（尤其 FHV-1 相關者）。不手術壞死斑可能自行脫落但癒合慢且疼痛。早期手術角膜疤痕較小。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary ophthalmology
     title: Feline Conjunctival Sequestra-A Case Series.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12765223/
     type: case-report
-    pmid: "40717243"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Recurrent vs. Nonrecurrent Superficial Non-Healing Corneal Ulcers in Cats: A Multifactorial Retrospective Analysis."
+    pmid: '40717243'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Recurrent vs. Nonrecurrent Superficial Non-Healing Corneal Ulcers in Cats: A Multifactorial Retrospective
+      Analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12291713/
     type: research
-    pmid: "40723566"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Lamellar Keratoplasty Using Acellular Bioengineering Cornea (BioCorneaVetTM) for the Treatment of Feline Corneal Sequestrum: A Retrospective Study of 62 Eyes (2018-2021)."
+    pmid: '40723566'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Lamellar Keratoplasty Using Acellular Bioengineering Cornea (BioCorneaVetTM) for the Treatment of Feline Corneal
+      Sequestrum: A Retrospective Study of 62 Eyes (2018-2021).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9026742/
     type: research
-    pmid: "35454262"
+    pmid: '35454262'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Clinical features of cats with aqueous tear deficiency: a retrospective case series of 10 patients (17 eyes)."
+    title: 'Clinical features of cats with aqueous tear deficiency: a retrospective case series of 10 patients (17 eyes).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11132248/
     type: research
-    pmid: "30417738"
+    pmid: '30417738'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline corneal sequestra: outcome of corneoconjunctival transposition in 97 cats (109 eyes)."
+    title: 'Feline corneal sequestra: outcome of corneoconjunctival transposition in 97 cats (109 eyes).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11128799/
     type: research
-    pmid: "27107040"
+    pmid: '27107040'
 pubmedQueries:
   - query: '"corneal sequestrum" AND (veterinary OR feline) AND ("keratectomy" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 角膜壞死斑 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估角膜病變特徵，貓特別常見
+      findings:
+        - 角膜上棕色至黑色斑塊
+        - 貓（波斯、喜馬拉雅等好發）
+        - 流淚和瞇眼
+        - 慢性角膜刺激史
+    - step: 2
+      action: 眼科檢查
+      details: 進行完整眼科檢查評估嚴重程度
+      findings:
+        - 裂隙燈檢查評估深度
+        - 螢光素染色評估周圍潰瘍
+        - 角膜血管新生程度
+        - 眼壓測量排除青光眼
+    - step: 3
+      action: 病因評估
+      details: 評估促發因子
+      findings:
+        - 疱疹病毒PCR（貓）
+        - 眼瞼異常（內翻、異位睫毛）
+        - 乾眼症評估（Schirmer試驗）
+        - 慢性角膜暴露
+    - step: 4
+      action: 手術評估
+      details: 評估手術切除指征
+      findings:
+        - 壞死斑深度評估
+        - 角膜切除手術規劃
+        - 結膜或角膜移植術需求評估
+        - 術後追蹤計劃
+clinicalPearls:
+  - 角膜壞死斑幾乎僅發生於貓，犬出現類似病變時需考慮其他診斷
+  - FHV-1感染與角膜壞死斑的關聯性強，抗病毒治療應納入考慮
+  - 淺層角膜切除術是標準治療，術後使用結膜瓣覆蓋可促進癒合
+  - 短頭貓品種因眼球突出和淚膜不穩定而好發
+monitoringItems:
+  - 術後每週複診至角膜完全癒合
+  - 長期監測復發
+  - Schirmer淚液試驗定期追蹤
+  - 監測FHV-1活化跡象
+ddxSource: book

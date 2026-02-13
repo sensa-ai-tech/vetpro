@@ -3,11 +3,11 @@ nameEn: Bullous Keratopathy
 nameZh: Bullous Keratopathy
 bodySystem: ophthalmology
 description: 眼科疾病,可能影響視力或眼部舒適度。需專業眼科檢查與治療。
-
 aliases:
-  - { alias: Bullous Keratopathy, language: zh }
-  - { alias: Bullous Keratopathy, language: en }
-
+  - alias: Bullous Keratopathy
+    language: zh
+  - alias: Bullous Keratopathy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 先天性異常
       examples:
         - 外傷
         - 感染
-
 clinicalSigns:
   early:
     - 眼部不適
@@ -32,56 +30,78 @@ clinicalSigns:
   progressive:
     - 視力喪失
     - 眼內壓異常
-
 diagnosis:
   primaryTests:
     - name: 眼科檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: 眼壓測量
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 眼藥水(抗生素或消炎)
     - 止痛藥
   surgical:
     - name: 根據病況可能需手術治療(角膜移植、青光眼閥膜植入、眼球摘除等)
-      notes: "依病況評估"
-
+      notes: 依病況評估
 prognosis:
-  general: "預後取決於疾病類型、嚴重度與治療時機。早期治療可改善預後並保存視力。"
-
+  general: 預後取決於疾病類型、嚴重度與治療時機。早期治療可改善預後並保存視力。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: Biomedicines
-    title: "Therapeutic Potential of Rho Kinase Inhibitors in Corneal Disease: A Systematic Review of Preclinical and Clinical Studies."
+    title: >-
+      Therapeutic Potential of Rho Kinase Inhibitors in Corneal Disease: A Systematic Review of Preclinical and Clinical
+      Studies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12292609/
     type: review
-    pmid: "40722674"
+    pmid: '40722674'
   - sourceOrg: Biomolecules
-    title: "The Cornea: No Difference in the Wound Healing Response to Injury Related to Whether, or Not, There's a Bowman's Layer."
+    title: >-
+      The Cornea: No Difference in the Wound Healing Response to Injury Related to Whether, or Not, There's a Bowman's
+      Layer.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10216545/
     type: review
-    pmid: "37238641"
+    pmid: '37238641'
   - sourceOrg: Experimental eye research
-    title: "Bowman's layer in the cornea- structure and function and regeneration."
+    title: Bowman's layer in the cornea- structure and function and regeneration.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7283008/
     type: review
-    pmid: "32339517"
+    pmid: '32339517'
   - sourceOrg: Veterinary ophthalmology
-    title: "Clinical, ultrasonographic, and histopathologic findings in seven horses with Descemet's membrane detachment: A case series."
+    title: >-
+      Clinical, ultrasonographic, and histopathologic findings in seven horses with Descemet's membrane detachment: A
+      case series.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7003845/
     type: case-report
-    pmid: "31544302"
+    pmid: '31544302'
   - sourceOrg: Cells
-    title: "Cell Counting and Cell Cycle Analysis of Simple Non-Cultured Endothelial Cell Injection (SNEC-I) Therapy: Characterization for Clinical Translation."
+    title: >-
+      Cell Counting and Cell Cycle Analysis of Simple Non-Cultured Endothelial Cell Injection (SNEC-I) Therapy:
+      Characterization for Clinical Translation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12248661/
     type: research
-    pmid: "40643507"
+    pmid: '40643507'
+associatedSymptoms:
+  - symptomId: blindness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: Bullous Keratopathy 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 眼科檢查
+          notes: 需詳細評估
+        - name: 眼壓測量
+          notes: 協助確診
+ddxSource: auto-generated

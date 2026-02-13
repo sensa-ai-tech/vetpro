@@ -3,15 +3,19 @@ nameEn: Acetaminophen Toxicosis
 nameZh: 乙醯胺酚中毒
 bodySystem: toxicology
 description: 乙醯胺酚 (acetaminophen/paracetamol) 中毒，貓因缺乏 UDP-葡萄糖醛酸轉移酶 (UGT) 而極度敏感，半顆人用劑量即可致命。犬高劑量亦可引起嚴重肝損傷。
-
 aliases:
-  - { alias: 普拿疼中毒, language: zh }
-  - { alias: 撲熱息痛中毒, language: zh }
-  - { alias: 對乙醯胺基酚中毒, language: zh }
-  - { alias: Paracetamol Toxicosis, language: en }
-  - { alias: Tylenol Poisoning, language: en }
-  - { alias: APAP Toxicosis, language: en }
-
+  - alias: 普拿疼中毒
+    language: zh
+  - alias: 撲熱息痛中毒
+    language: zh
+  - alias: 對乙醯胺基酚中毒
+    language: zh
+  - alias: Paracetamol Toxicosis
+    language: en
+  - alias: Tylenol Poisoning
+    language: en
+  - alias: APAP Toxicosis
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
@@ -21,7 +25,6 @@ species:
     speciesScientific: Canis lupus familiaris
     prevalence: uncommon
     notes: 犬可耐受低劑量 acetaminophen，但超過 75 mg/kg 可引起肝損傷，200 mg/kg 以上可致肝壞死。犬較少出現變性血紅素血症，主要為肝毒性。
-
 etiology:
   categories:
     - name: 毒物來源
@@ -31,54 +34,51 @@ etiology:
         - 飼主善意但錯誤的自行投藥
     - name: 毒性劑量
       examples:
-        - "貓：10 mg/kg 即具毒性，50 mg/kg 可致死"
-        - "犬：>75 mg/kg 肝損傷，>200 mg/kg 肝壞死"
+        - 貓：10 mg/kg 即具毒性，50 mg/kg 可致死
+        - 犬：>75 mg/kg 肝損傷，>200 mg/kg 肝壞死
     - name: 毒性機制
       examples:
         - 正常代謝主要經葡萄糖醛酸化與硫酸化途徑
         - 貓缺乏 UGT1A6 酵素，葡萄糖醛酸化途徑幾乎不存在
         - 代謝產物 NAPQI (N-acetyl-p-benzoquinone imine) 蓄積
         - NAPQI 耗竭穀胱甘肽 (glutathione) 後與細胞蛋白結合
-        - "貓：NAPQI 氧化血紅素為變性血紅素 (methemoglobin)"
-        - "犬：NAPQI 主要造成肝細胞壞死 (centrilobular necrosis)"
-
+        - 貓：NAPQI 氧化血紅素為變性血紅素 (methemoglobin)
+        - 犬：NAPQI 主要造成肝細胞壞死 (centrilobular necrosis)
 clinicalSigns:
   early:
-    - "貓：面部與爪墊水腫（攝入後 1-4 小時）"
+    - 貓：面部與爪墊水腫（攝入後 1-4 小時）
     - 嘔吐
     - 流涎
     - 嗜睡
     - 食慾下降
   progressive:
-    - "貓：黏膜由粉紅轉為棕色/巧克力色（變性血紅素血症）"
+    - 貓：黏膜由粉紅轉為棕色/巧克力色（變性血紅素血症）
     - 呼吸急促 (tachypnea)
     - 發紺
     - 血紅素尿（深褐色尿液）
-    - "犬：肝區疼痛，嘔吐加重"
+    - 犬：肝區疼痛，嘔吐加重
   late:
-    - "貓：嚴重變性血紅素血症（MetHb >50%），Heinz body 溶血性貧血"
+    - 貓：嚴重變性血紅素血症（MetHb >50%），Heinz body 溶血性貧血
     - 呼吸困難
     - 低體溫
-    - "犬：急性肝壞死、黃疸、凝血障礙"
+    - 犬：急性肝壞死、黃疸、凝血障礙
     - 昏迷
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 病史與暴露確認
-      notes: "詢問是否給予人用止痛藥。確認產品名稱、劑量、攝入時間"
+      notes: 詢問是否給予人用止痛藥。確認產品名稱、劑量、攝入時間
     - name: 血液抹片與變性血紅素測量
-      notes: "貓：血液呈巧克力棕色（MetHb 升高）。血液抹片可見 Heinz body。MetHb co-oximetry 定量"
+      notes: 貓：血液呈巧克力棕色（MetHb 升高）。血液抹片可見 Heinz body。MetHb co-oximetry 定量
   imaging:
     - name: 腹部超音波
-      notes: "犬：評估肝臟大小與迴音變化（急性肝損傷）"
+      notes: 犬：評估肝臟大小與迴音變化（急性肝損傷）
   additional:
     - CBC（貧血評估、Heinz body、網狀紅血球計數）
     - 肝功能指數 (ALT、AST、ALP、bilirubin)
     - 凝血功能 (PT、aPTT)
     - 血液氣體分析
     - 尿液分析（血紅素尿）
-
 treatment:
   principles:
     - N-acetylcysteine (NAC) 為特效解毒劑，補充穀胱甘肽
@@ -86,10 +86,10 @@ treatment:
     - 保護肝功能（犬）
     - 支持氧合
   general:
-    - "N-acetylcysteine (NAC) 140 mg/kg IV 或 PO loading dose，之後 70 mg/kg q6h × 至少 7 次"
+    - N-acetylcysteine (NAC) 140 mg/kg IV 或 PO loading dose，之後 70 mg/kg q6h × 至少 7 次
     - IV NAC 以 5% dextrose 稀釋為 5% 溶液，30 分鐘緩慢輸注
-    - "S-adenosylmethionine (SAMe) 20 mg/kg PO SID（補充穀胱甘肽前驅物）"
-    - "Ascorbic acid (Vitamin C) 30 mg/kg PO/IV q6h（還原變性血紅素，貓尤其重要）"
+    - S-adenosylmethionine (SAMe) 20 mg/kg PO SID（補充穀胱甘肽前驅物）
+    - Ascorbic acid (Vitamin C) 30 mg/kg PO/IV q6h（還原變性血紅素，貓尤其重要）
     - 催吐（攝入後 1-2 小時內，患畜無症狀時）
     - 活性炭 1-2 g/kg PO（攝入後早期）
     - IV 輸液支持
@@ -97,31 +97,97 @@ treatment:
     - 嚴重貧血考慮輸血（PCV <15%）
     - 住院監測 48-72 小時
     - 禁用其他 NSAID
-
 prognosis: 貓攝入乙醯胺酚後及早給予 NAC 治療預後可良好。延遲超過 8-12 小時就醫者預後差。MetHb 超過 50% 者預後謹慎。犬肝損傷若未發展為急性肝衰竭，多可恢復。
-
 guidelineRefs:
   - sourceOrg: Veterinary Clinics of North America
-    title: "Acetaminophen toxicosis in small animals: clinical pharmacology, pathology, and treatment"
+    title: 'Acetaminophen toxicosis in small animals: clinical pharmacology, pathology, and treatment'
     url: https://pubmed.ncbi.nlm.nih.gov/16517793/
     type: review
-    pmid: "16517793"
+    pmid: '16517793'
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
-    title: "Retrospective evaluation of feline acetaminophen toxicosis: 40 cases (2000-2015)"
+    title: 'Retrospective evaluation of feline acetaminophen toxicosis: 40 cases (2000-2015)'
     url: https://pubmed.ncbi.nlm.nih.gov/28493626/
     type: research
-    pmid: "28493626"
+    pmid: '28493626'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Clinical and clinicopathologic effects of experimentally induced acetaminophen toxicosis in cats"
+    title: Clinical and clinicopathologic effects of experimentally induced acetaminophen toxicosis in cats
     url: https://pubmed.ncbi.nlm.nih.gov/1429686/
     type: research
-    pmid: "1429686"
-
+    pmid: '1429686'
 pubmedQueries:
-  - query: '"acetaminophen" AND (cat OR feline OR dog OR canine) AND ("toxicosis" OR "poisoning" OR "methemoglobinemia" OR "N-acetylcysteine")'
+  - query: >-
+      "acetaminophen" AND (cat OR feline OR dog OR canine) AND ("toxicosis" OR "poisoning" OR "methemoglobinemia" OR
+      "N-acetylcysteine")
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "TOX"
-  sectionTitle: "TOXICOSIS"
+  chapter: TOX
+  sectionTitle: TOXICOSIS
   pdfPage: 3128
+diagnosticAlgorithm:
+  title: 乙醯胺酚中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史確認與物種差異
+      details: 確認攝入劑量，注意貓極度敏感
+      findings:
+        - 確認攝入劑量貓10mg/kg即可致命
+        - 貓比犬敏感10倍以上
+        - 攝入時間
+        - 可能來源人用感冒藥/止痛藥
+    - step: 2
+      action: 臨床症狀評估
+      details: 評估變性血紅素血症與肝損傷
+      findings:
+        - 黏膜發紺或巧克力色
+        - 面部與爪部水腫貓特徵
+        - 呼吸急促
+        - 嘔吐與精神沉鬱
+    - step: 3
+      action: 血液學與生化檢查
+      details: 評估紅血球氧化損傷與肝功能
+      findings:
+        - 變性血紅素升高
+        - Heinz小體形成
+        - 肝酶升高犬較明顯
+        - 血液呈巧克力棕色
+    - step: 4
+      action: 治療反應監測
+      details: N-乙醯半胱胺酸NAC治療反應追蹤
+      findings:
+        - NAC治療後變性血紅素下降
+        - 肝酶追蹤
+        - 貧血程度監測可能需輸血
+        - 腎功能監測
+clinicalPearls:
+  - 一顆普通Tylenol（500 mg）即可殺死一隻成貓
+  - 貓的巧克力棕色黏膜是變性血紅素血症的特徵
+  - 貓的面部水腫幾乎是乙醯胺酚中毒的病徵
+  - NAC越早給予效果越好
+  - 脈搏血氧儀在變性血紅素血症時讀數不準確（假正常）
+  - 永遠不要給貓任何人用止痛藥
+monitoringItems:
+  - 變性血紅素濃度
+  - PCV和血紅素
+  - 肝酵素（每12-24小時）
+  - Heinz小體百分比
+  - 臨床症狀（水腫、呼吸）
+  - 尿液顏色
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: common
+ddxSource: book

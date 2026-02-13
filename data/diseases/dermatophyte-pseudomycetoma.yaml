@@ -3,13 +3,15 @@ nameEn: Dermatophyte Pseudomycetoma
 nameZh: 皮癬菌假性菌瘤
 bodySystem: dermatology
 description: 一種罕見的深層皮癬菌感染,形成結節性皮下腫塊,主要見於波斯貓及短毛品種。病原菌侵入真皮及皮下組織形成肉芽腫性炎症反應,與典型表淺皮癬感染不同。
-
 aliases:
-  - { alias: 皮黴菌假菌瘤, language: zh }
-  - { alias: 深層皮癬菌病, language: zh }
-  - { alias: Dermatophytic Pseudomycetoma, language: en }
-  - { alias: Deep Dermatophytosis, language: en }
-
+  - alias: 皮黴菌假菌瘤
+    language: zh
+  - alias: 深層皮癬菌病
+    language: zh
+  - alias: Dermatophytic Pseudomycetoma
+    language: en
+  - alias: Deep Dermatophytosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 波斯貓好發,常見於頭頸部及背部,呈現多發性結節
-
 etiology:
   categories:
     - name: 真菌感染
@@ -32,7 +33,6 @@ etiology:
         - 免疫功能低下(FIV/FeLV感染)
         - 長期類固醇使用
         - 糖尿病或其他代謝疾病
-
 clinicalSigns:
   early:
     - 局部無痛性皮下結節,直徑1-3公分
@@ -43,24 +43,22 @@ clinicalSigns:
     - 排出黃白色濃稠膿性分泌物
     - 區域淋巴結腫大
     - 多發病灶融合形成廣泛性肉芽腫
-
 diagnosis:
   primaryTests:
     - name: 病灶深部組織切片
-      notes: "組織病理見肉芽腫性炎症及真菌菌絲,PAS染色陽性"
+      notes: 組織病理見肉芽腫性炎症及真菌菌絲,PAS染色陽性
     - name: 真菌培養
-      notes: "使用DTM培養基,需培養4週以上,可見典型菌落"
+      notes: 使用DTM培養基,需培養4週以上,可見典型菌落
     - name: Wood's燈檢查
-      notes: "M. canis約50%陽性,呈現蘋果綠螢光"
+      notes: M. canis約50%陽性,呈現蘋果綠螢光
     - name: 細針抽吸細胞學
-      notes: "可見化膿性肉芽腫性炎症及真菌孢子"
+      notes: 可見化膿性肉芽腫性炎症及真菌孢子
   differentialDiagnoses:
     - 細菌性肉芽腫(放線菌病/諾卡菌病)
     - 深層真菌感染(隱球菌/芽生菌)
     - 無菌性結節性脂膜炎
     - 皮膚淋巴瘤
     - 肥大細胞瘤
-
 treatment:
   medical:
     - 全身性抗真菌藥:Itraconazole 5-10 mg/kg PO q24h,持續3-6個月
@@ -71,13 +69,66 @@ treatment:
   surgical:
     - 侷限性病灶可進行外科完整切除,搭配術後全身抗真菌治療
     - 廣泛病灶不建議手術,以藥物治療為主
-
 prognosis:
-  general: "預後取決於病灶範圍及免疫狀態。單一病灶配合完整治療預後良好,治癒率達70-80%。廣泛性病灶或免疫抑制個體預後保留,需長期治療。治療期間需每月監測真菌培養及肝功能,復發率約15-20%。"
-
+  general: 預後取決於病灶範圍及免疫狀態。單一病灶配合完整治療預後良好,治癒率達70-80%。廣泛性病灶或免疫抑制個體預後保留,需長期治療。治療期間需每月監測真菌培養及肝功能,復發率約15-20%。
 prevention:
   - 感染貓隻完全隔離治療,避免傳播至其他動物或人
   - 環境徹底消毒,使用稀釋漂白水(1:10)或Enilconazole消毒劑
   - 定期真菌培養監測,連續2-3次陰性方可解除隔離
   - 免疫抑制患者避免接觸感染動物
   - 多貓家庭中所有貓隻應同時篩檢及預防性治療
+diagnosticAlgorithm:
+  title: 全身性皮膚黴菌病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估免疫狀態與廣泛性皮膚病灶
+      findings:
+        - 多發性皮下結節
+        - 結節可能排膿
+        - 免疫抑制背景
+        - 常規抗黴菌治療無效
+    - step: 2
+      action: 皮膚學檢查
+      details: 病灶採樣與細胞學檢查
+      findings:
+        - 細針抽吸見肉芽腫性炎症
+        - 可能見真菌結構
+        - Wood's燈檢查（部分Microsporum canis螢光）
+    - step: 3
+      action: 真菌培養與組織學
+      details: 組織活檢與真菌培養確認
+      findings:
+        - 真菌培養鑑定皮黴菌種
+        - 組織病理見假黴菌瘤（pseudomycetoma）
+        - PAS/GMS染色見真菌菌絲與孢子
+        - 深部組織侵犯
+    - step: 4
+      action: 確診與免疫評估
+      details: 確認全身性感染並評估免疫狀態
+      findings:
+        - 免疫功能評估
+        - 排除FeLV/FIV（貓）
+        - 影像學排除內臟播散
+        - 波斯貓品種傾向
+clinicalPearls:
+  - 全身性皮膚黴菌病是罕見疾病，波斯貓有明確的品種傾向
+  - 正常免疫功能的動物幾乎不會發展為全身性皮膚黴菌感染
+  - 假菌瘤（pseudomycetoma）是特徵性的組織學型態
+  - 治療需結合手術和長期全身性抗真菌藥物
+  - 必須評估和矯正潛在的免疫抑制因素
+monitoringItems:
+  - 臨床檢查追蹤結節復發
+  - 真菌培養確認治療效果
+  - 肝功能監測（長期抗真菌藥物）
+  - 免疫狀態評估
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: uncommon
+  - symptomId: alopecia
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: common
+ddxSource: book

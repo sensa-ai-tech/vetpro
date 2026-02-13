@@ -3,13 +3,15 @@ nameEn: Cerebellar Hypoplasia Congenital
 nameZh: 先天性小腦發育不全
 bodySystem: neurology
 description: 先天性小腦發育不全最常見於幼貓，因母貓在妊娠期感染貓瘟病毒（Feline panleukopenia virus）導致胎兒小腦顆粒層細胞損傷。表現為非進行性共濟失調與意向性震顫。犬則多為遺傳性原因。
-
 aliases:
-  - { alias: 小腦發育不全, language: zh }
-  - { alias: 貓瘟後小腦病, language: zh }
-  - { alias: Cerebellar hypoplasia, language: en }
-  - { alias: CH in kittens, language: en }
-
+  - alias: 小腦發育不全
+    language: zh
+  - alias: 貓瘟後小腦病
+    language: zh
+  - alias: Cerebellar hypoplasia
+    language: en
+  - alias: CH in kittens
+    language: en
 species:
   - speciesCommon: cat
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: dog
     prevalence: rare
     notes: 犬較少見，多為遺傳性品種相關。
-
 etiology:
   categories:
     - name: 感染性（貓）
@@ -28,7 +29,6 @@ etiology:
       examples:
         - 品種特異性小腦退化
         - 遺傳性小腦皮質營養不良
-
 clinicalSigns:
   early:
     - 出生時即有症狀
@@ -39,14 +39,12 @@ clinicalSigns:
     - 步態誇張（hypermetria）
     - 身體搖擺
     - 平衡能力差
-
 diagnosis:
   primaryTests:
     - name: 臨床表徵
       notes: 幼貓非進行性對稱性小腦共濟失調。母貓疫苗史或感染史
     - name: MRI
       notes: 小腦體積縮小。確認小腦發育不全
-
 treatment:
   principles:
     - 無特效治療
@@ -58,21 +56,50 @@ treatment:
     - 低矮食碗與水碗
     - 室內飼養
     - 多數輕中度個體可適應良好
-
 prognosis: 預後良好。非進行性，多數動物可適應症狀。輕至中度個體生活品質良好。嚴重者日常生活需較多輔助。壽命通常不受影響。
-
-
 guidelineRefs:
   - sourceOrg: PloS one
-    title: A KCNC3 mutation causes a neurodevelopmental, non-progressive SCA13 subtype associated with dominant negative effects and aberrant EGFR trafficking.
+    title: >-
+      A KCNC3 mutation causes a neurodevelopmental, non-progressive SCA13 subtype associated with dominant negative
+      effects and aberrant EGFR trafficking.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5414954/
     type: research
-    pmid: "28467418"
+    pmid: '28467418'
   - sourceOrg: American journal of veterinary research
     title: Cache Valley virus serologically identified in sheep with congenitally malformed lambs in Alabama.
     url: https://pubmed.ncbi.nlm.nih.gov/41038248/
     type: research
-    pmid: "41038248"
+    pmid: '41038248'
 pubmedQueries:
   - query: '"cerebellar hypoplasia" AND (congenital OR feline OR canine) AND (management OR prognosis)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: trembling
+    frequency: common
+diagnosticAlgorithm:
+  title: 先天性小腦發育不全 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - trembling 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床表徵
+          notes: 幼貓非進行性對稱性小腦共濟失調。母貓疫苗史或感染史
+        - name: MRI
+          notes: 小腦體積縮小。確認小腦發育不全
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 無特效治療
+        - 非進行性，不會惡化
+        - 適應性環境管理
+ddxSource: auto-generated

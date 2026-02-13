@@ -2,13 +2,16 @@ slug: streptococcal-infection
 nameEn: Streptococcal Infection
 nameZh: 鏈球菌感染
 bodySystem: infectious
-description: 鏈球菌 (Streptococcus spp.) 感染可引起犬貓多種臨床疾病，包括壞死性筋膜炎、菌血症、泌尿道感染、肺炎及新生兒敗血症。S. canis 為犬貓最常見致病種。A 群鏈球菌 (GAS) 引起的壞死性筋膜炎為嚴重且致命的感染。
-
+description: >-
+  鏈球菌 (Streptococcus spp.) 感染可引起犬貓多種臨床疾病，包括壞死性筋膜炎、菌血症、泌尿道感染、肺炎及新生兒敗血症。S. canis 為犬貓最常見致病種。A 群鏈球菌 (GAS)
+  引起的壞死性筋膜炎為嚴重且致命的感染。
 aliases:
-  - { alias: 鏈球菌病, language: zh }
-  - { alias: Streptococcus Infection, language: en }
-  - { alias: Strep Infection, language: en }
-
+  - alias: 鏈球菌病
+    language: zh
+  - alias: Streptococcus Infection
+    language: en
+  - alias: Strep Infection
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓鏈球菌感染類似犬。S. canis 為主要致病種。上呼吸道與皮膚/軟組織為常見感染部位。
-
 etiology:
   categories:
     - name: 主要致病種
@@ -32,7 +34,6 @@ etiology:
         - 泌尿道感染
         - 菌血症/敗血症
         - 新生兒敗血症
-
 clinicalSigns:
   early:
     - 局部紅腫熱痛（軟組織感染）
@@ -44,7 +45,6 @@ clinicalSigns:
     - 壞死性筋膜炎（極度疼痛、組織壞死、敗血性休克）
     - 多器官功能障礙
     - 新生幼犬突然死亡
-
 diagnosis:
   primaryTests:
     - name: 細菌培養與藥敏
@@ -55,7 +55,6 @@ diagnosis:
     - CBC（白血球增多伴左移，或嚴重感染時白血球減少）
     - 生化（乳酸升高、器官功能評估）
     - 影像學（超音波或 CT 評估軟組織感染範圍）
-
 treatment:
   principles:
     - 針對性抗生素治療
@@ -69,35 +68,95 @@ treatment:
     - 根據藥敏結果調整抗生素
     - 泌尿道感染 amoxicillin 11-22 mg/kg PO BID × 7-14 天
     - 傷口護理
-
 prognosis: 單純皮膚/軟組織感染或泌尿道感染預後良好。壞死性筋膜炎死亡率可達 40-70%，即使積極手術清創與抗生素治療。新生兒敗血症預後差。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Streptococcal infection and its antimicrobial resistance profile associated with bovine mastitis in Ethiopia: a systematic review and meta-analysis."
+    title: >-
+      Streptococcal infection and its antimicrobial resistance profile associated with bovine mastitis in Ethiopia: a
+      systematic review and meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11938844/
     type: review
-    pmid: "40144523"
+    pmid: '40144523'
     relevance: primary
   - sourceOrg: Immunity, inflammation and disease
-    title: Inflammatory Responses Potentiate GAS M Protein Induced Cardiac Damage in an Experimental Model of Rheumatic Heart Disease.
+    title: >-
+      Inflammatory Responses Potentiate GAS M Protein Induced Cardiac Damage in an Experimental Model of Rheumatic Heart
+      Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12246833/
     type: research
-    pmid: "40642941"
+    pmid: '40642941'
     relevance: supporting
-  - sourceOrg: "Clinical &amp; translational immunology"
-    title: Combinatorial liposomal peptide vaccine induces IgA and confers protection against influenza virus and bacterial super-infection.
+  - sourceOrg: Clinical &amp; translational immunology
+    title: >-
+      Combinatorial liposomal peptide vaccine induces IgA and confers protection against influenza virus and bacterial
+      super-infection.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8432089/
     type: research
-    pmid: "34527244"
+    pmid: '34527244'
     relevance: supporting
   - sourceOrg: Molecular medicine reports
-    title: "Activation of activin/Smad2 and 3 signaling pathway and the&amp;nbsp;potential involvement of endothelial&#x2011;mesenchymal transition in the valvular damage due to rheumatic heart disease."
+    title: >-
+      Activation of activin/Smad2 and 3 signaling pathway and the&amp;nbsp;potential involvement of
+      endothelial&#x2011;mesenchymal transition in the valvular damage due to rheumatic heart disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7673319/
     type: research
-    pmid: "33179113"
+    pmid: '33179113'
     relevance: supporting
 pubmedQueries:
   - query: '"streptococcal infection" AND (veterinary OR canine OR feline) AND ("treatment" OR "necrotizing fasciitis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 鏈球菌感染 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估感染部位和嚴重程度
+      findings:
+        - 皮膚軟組織感染
+        - 發熱與全身性炎症
+        - 新生幼犬敗血症
+        - 呼吸道或泌尿道感染
+    - step: 2
+      action: 實驗室檢查
+      details: 進行全血計數和炎症指標檢查
+      findings:
+        - 白血球增多伴嗜中性球增多
+        - 左移
+        - C反應蛋白升高
+        - 纖維蛋白原升高
+    - step: 3
+      action: 細菌培養與鑑定
+      details: 從感染部位採樣進行細菌培養
+      findings:
+        - 血液或病灶培養分離鏈球菌
+        - 溶血類型鑑定（α、β、γ）
+        - Lancefield分群
+        - 抗生素藥敏試驗
+    - step: 4
+      action: 感染源與併發症評估
+      details: 評估感染來源和可能的併發症
+      findings:
+        - 傷口或手術部位感染源
+        - 心內膜炎風險評估
+        - 腎小球腎炎篩檢
+        - 多部位感染評估
+clinicalPearls:
+  - S. canis對Penicillin類抗生素通常高度敏感——是治療首選
+  - S. equi subsp. zooepidemicus在收容所犬群可引起爆發性出血性肺炎，致死率高
+  - 犬的化膿性關節炎最常見病原之一即為鏈球菌——關節液需送培養
+  - 新生犬敗血症中鏈球菌是重要病原——母犬產道感染可垂直傳播
+monitoringItems:
+  - 感染指標（WBC、CRP）追蹤
+  - 抗生素療程足夠（通常至少14-21天）
+  - 化膿性關節炎需追蹤關節液改善
+  - 收容所爆發需隔離和環境消毒
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+ddxSource: book

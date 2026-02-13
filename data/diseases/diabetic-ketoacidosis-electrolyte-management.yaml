@@ -3,11 +3,11 @@ nameEn: Diabetic Ketoacidosis Electrolyte Management
 nameZh: 糖尿病酮酸中毒電解質管理
 bodySystem: electrolyte
 description: 糖尿病酮酸中毒（DKA）治療過程中的電解質管理,包括鉀、磷、鎂補充及酸鹼平衡矯正。胰島素治療後電解質會快速進入細胞內,需密集監測避免致命性低血鉀或低血磷。
-
 aliases:
-  - { alias: DKA電解質平衡, language: zh }
-  - { alias: DKA Electrolyte Protocol, language: en }
-
+  - alias: DKA電解質平衡
+    language: zh
+  - alias: DKA Electrolyte Protocol
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓DKA較少見,但電解質異常同樣嚴重
-
 etiology:
   categories:
     - name: DKA相關電解質異常
@@ -30,7 +29,6 @@ etiology:
         - 鉀、磷快速進入細胞內
         - 血清濃度驟降
         - 再餵食症候群風險
-
 clinicalSigns:
   early:
     - DKA診斷時常血鉀正常或偏高（假性正常）
@@ -39,51 +37,61 @@ clinicalSigns:
     - 胰島素治療後數小時低血鉀（<3.0 mEq/L）
     - 低血磷（<2.0 mg/dL）
     - 溶血、肌肉無力、心律不整
-
 diagnosis:
   primaryTests:
     - name: 血清電解質
-      notes: "治療前及治療後每2-4小時監測鉀、磷、鎂"
+      notes: 治療前及治療後每2-4小時監測鉀、磷、鎂
     - name: 血液氣體分析
-      notes: "監測代謝性酸中毒改善（pH, HCO3-, AG）"
+      notes: 監測代謝性酸中毒改善（pH, HCO3-, AG）
     - name: 血糖
-      notes: "每1-2小時監測,目標緩慢降至250-300 mg/dL"
+      notes: 每1-2小時監測,目標緩慢降至250-300 mg/dL
   differentialDiagnoses:
     - 低血鉀症
     - 低血磷症
     - 再餵食症候群
-
 treatment:
   medical:
-    - 鉀離子補充（最重要）：
-      - 治療前血鉀 <3.5 mEq/L：先補鉀再給胰島素
-      - 治療前血鉀 3.5-5.0 mEq/L：KCl 20-40 mEq/L於輸液中
-      - 治療前血鉀 >5.0 mEq/L：開始胰島素後再補鉀
-      - 每2-4小時監測血鉀,目標3.5-5.0 mEq/L
-    - 磷離子補充：
-      - 預防性補充 Potassium phosphate（部分鉀補充可用磷酸鉀）
-      - 監測血磷每4-6小時
-    - 鎂離子補充：
-      - Magnesium sulfate 0.75-1.0 mEq/kg/day（若低鎂）
-    - 酸鹼平衡：
-      - 避免常規使用 Sodium bicarbonate（除非pH <6.9）
-      - 治療DKA後酸中毒自然改善
-    - 胰島素治療：
-      - Regular insulin 0.1-0.2 U/kg IM initial,再0.1 U/kg/hr CRI
-      - 血糖降至250-300 mg/dL後改5% Dextrose輸液
-
+    - >-
+      鉀離子補充（最重要）： - 治療前血鉀 <3.5 mEq/L：先補鉀再給胰島素 - 治療前血鉀 3.5-5.0 mEq/L：KCl 20-40 mEq/L於輸液中 - 治療前血鉀 >5.0 mEq/L：開始胰島素後再補鉀 -
+      每2-4小時監測血鉀,目標3.5-5.0 mEq/L
+    - 磷離子補充： - 預防性補充 Potassium phosphate（部分鉀補充可用磷酸鉀） - 監測血磷每4-6小時
+    - 鎂離子補充： - Magnesium sulfate 0.75-1.0 mEq/kg/day（若低鎂）
+    - 酸鹼平衡： - 避免常規使用 Sodium bicarbonate（除非pH <6.9） - 治療DKA後酸中毒自然改善
+    - 胰島素治療： - Regular insulin 0.1-0.2 U/kg IM initial,再0.1 U/kg/hr CRI - 血糖降至250-300 mg/dL後改5% Dextrose輸液
 prognosis:
-  general: "預後取決於是否適當電解質管理。密集監測及補充鉀、磷可顯著改善存活率（70-90%）。未適當補充鉀可能導致心律不整致死,嚴重低血磷可致溶血或呼吸衰竭。"
-
+  general: 預後取決於是否適當電解質管理。密集監測及補充鉀、磷可顯著改善存活率（70-90%）。未適當補充鉀可能導致心律不整致死,嚴重低血磷可致溶血或呼吸衰竭。
 prevention:
   - DKA治療前評估電解質基礎值
   - 胰島素治療前確保血鉀>3.5 mEq/L
   - 治療過程密集監測電解質每2-4小時
-
-
 guidelineRefs:
   - sourceOrg: Critical care (London, England)
-    title: "36th International Symposium on Intensive Care and Emergency Medicine : Brussels, Belgium. 15-18 March 2016."
+    title: '36th International Symposium on Intensive Care and Emergency Medicine : Brussels, Belgium. 15-18 March 2016.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5493079/
     type: research
-    pmid: "27885969"
+    pmid: '27885969'
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 糖尿病酮酸中毒電解質管理 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清電解質
+          notes: 治療前及治療後每2-4小時監測鉀、磷、鎂
+        - name: 血液氣體分析
+          notes: 監測代謝性酸中毒改善（pH, HCO3-, AG）
+        - name: 血糖
+          notes: 每1-2小時監測,目標緩慢降至250-300 mg/dL
+ddxSource: auto-generated

@@ -3,19 +3,20 @@ nameEn: Boston Terrier Corneal Dystrophy
 nameZh: 波士頓梗角膜營養不良
 bodySystem: ophthalmology
 description: 波士頓梗角膜營養不良是該品種好發的遺傳性角膜疾病，脂質或礦物質沉積於角膜基質層，形成雙側對稱的白色至灰白色混濁區域。通常不影響視力，為良性疾病。
-
 aliases:
-  - { alias: 波士頓梗角膜混濁, language: zh }
-  - { alias: 角膜脂質沉著, language: zh }
-  - { alias: Boston Terrier corneal dystrophy, language: en }
-  - { alias: Endothelial corneal dystrophy, language: en }
-
+  - alias: 波士頓梗角膜混濁
+    language: zh
+  - alias: 角膜脂質沉著
+    language: zh
+  - alias: Boston Terrier corneal dystrophy
+    language: en
+  - alias: Endothelial corneal dystrophy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 波士頓梗為角膜營養不良好發品種。通常為雙側對稱。基質型（脂質沉著）與內皮型均有報告。中年後發病。
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -28,7 +29,6 @@ etiology:
         - 角膜基質脂質沉著（基質型）
         - 角膜內皮細胞退化（內皮型）
         - 角膜水腫（內皮型）
-
 clinicalSigns:
   early:
     - 角膜中央灰白色混濁（雙側）
@@ -39,21 +39,19 @@ clinicalSigns:
     - 角膜水腫（內皮型）
     - 角膜大疱（內皮型進展期）
     - 疼痛性角膜潰瘍（大疱破裂時）
-
 diagnosis:
   primaryTests:
     - name: 裂隙燈檢查
-      notes: "角膜基質層內結晶樣或混濁沉著。雙側對稱。無炎症反應"
+      notes: 角膜基質層內結晶樣或混濁沉著。雙側對稱。無炎症反應
     - name: 角膜厚度測量
-      notes: "內皮型時角膜增厚（水腫）"
+      notes: 內皮型時角膜增厚（水腫）
     - name: 血清脂質檢查
-      notes: "排除繼發性脂質角膜病變（高脂血症）"
+      notes: 排除繼發性脂質角膜病變（高脂血症）
   differentialDiagnoses:
     - 脂質性角膜退化
     - 角膜鈣化
     - 角膜疤痕
     - 高脂血症引起的角膜脂質沉著
-
 treatment:
   medical:
     - 基質型（脂質沉著）：通常不需治療
@@ -62,18 +60,36 @@ treatment:
   surgical:
     - 嚴重內皮型：角膜內皮移植（少數專科中心）
     - 熱灼術（thermokeratoplasty）穩定大疱
-
 prognosis:
-  general: "基質型預後良好，多數犬不需治療且視力不受顯著影響。內皮型為進行性，可能最終影響視力。定期眼科追蹤即可。"
-
+  general: 基質型預後良好，多數犬不需治療且視力不受顯著影響。內皮型為進行性，可能最終影響視力。定期眼科追蹤即可。
 prevention:
   - 受影響犬不建議繁殖
   - 定期眼科檢查
-
-
 guidelineRefs:
   - sourceOrg: Cornea
     title: A Retrospective Study of Corneal Endothelial Dystrophy in Dogs (1991-2014).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7960559/
     type: research
-    pmid: "32947393"
+    pmid: '32947393'
+associatedSymptoms:
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 波士頓梗角膜營養不良 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 裂隙燈檢查
+          notes: 角膜基質層內結晶樣或混濁沉著。雙側對稱。無炎症反應
+        - name: 角膜厚度測量
+          notes: 內皮型時角膜增厚（水腫）
+        - name: 血清脂質檢查
+          notes: 排除繼發性脂質角膜病變（高脂血症）
+ddxSource: auto-generated

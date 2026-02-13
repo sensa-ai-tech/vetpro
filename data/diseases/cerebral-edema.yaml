@@ -3,11 +3,11 @@ nameEn: Cerebral Edema
 nameZh: Cerebral Edema
 bodySystem: neurology
 description: 神經系統疾病,導致運動、感覺或認知功能障礙。需完整神經學檢查與影像學評估確診。
-
 aliases:
-  - { alias: Cerebral Edema, language: zh }
-  - { alias: Cerebral Edema, language: en }
-
+  - alias: Cerebral Edema
+    language: zh
+  - alias: Cerebral Edema
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 神經元異常放電
       examples:
         - 髓鞘或軸突病變
         - 腦血管疾病
-
 clinicalSigns:
   early:
     - 神經功能輕度異常
@@ -32,53 +30,74 @@ clinicalSigns:
   progressive:
     - 神經缺損加重
     - 癱瘓或意識障礙
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: MRI或CT
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 抗癲癇藥物(Phenobarbital 2-3 mg/kg PO q12h)
     - 支持性治療
-
 prognosis:
-  general: "預後取決於根本病因與治療反應。早期診斷與適當治療可改善預後。"
-
+  general: 預後取決於根本病因與治療反應。早期診斷與適當治療可改善預後。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Sodium toxicosis in chickens: case series (2014-2023) and literature review."
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: 'Sodium toxicosis in chickens: case series (2014-2023) and literature review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11656456/
     type: review
-    pmid: "39698824"
+    pmid: '39698824'
   - sourceOrg: International journal of molecular sciences
-    title: "The Role of Arginine-Vasopressin in Stroke and the Potential Use of Arginine-Vasopressin Type 1 Receptor Antagonists in Stroke Therapy: A Narrative Review."
+    title: >-
+      The Role of Arginine-Vasopressin in Stroke and the Potential Use of Arginine-Vasopressin Type 1 Receptor
+      Antagonists in Stroke Therapy: A Narrative Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9916514/
     type: review
-    pmid: "36768443"
+    pmid: '36768443'
   - sourceOrg: Frontiers in immunology
     title: The mechanism of ferroptosis in early brain injury after subarachnoid hemorrhage.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10229825/
     type: review
-    pmid: "37266433"
-  - sourceOrg: "CNS neuroscience &amp; therapeutics"
+    pmid: '37266433'
+  - sourceOrg: CNS neuroscience &amp; therapeutics
     title: Role of hydrogen sulfide in subarachnoid hemorrhage.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9062544/
     type: review
-    pmid: "35315575"
-  - sourceOrg: "Journal of applied physiology (Bethesda, Md. : 1985)"
+    pmid: '35315575'
+  - sourceOrg: 'Journal of applied physiology (Bethesda, Md. : 1985)'
     title: The impact of hypoxia on blood-brain, blood-CSF, and CSF-brain barriers.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8461807/
     type: review
-    pmid: "34264124"
+    pmid: '34264124'
+associatedSymptoms:
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: Cerebral Edema 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - behaviour-change 相關症狀
+        - paresis-paralysis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 需詳細評估
+        - name: MRI或CT
+          notes: 協助確診
+ddxSource: auto-generated

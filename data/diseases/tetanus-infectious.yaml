@@ -2,14 +2,18 @@ slug: tetanus-infectious
 nameEn: Tetanus Infectious
 nameZh: 破傷風
 bodySystem: infectious
-description: 破傷風由破傷風梭狀芽孢桿菌 (Clostridium tetani) 產生的神經毒素 (tetanospasmin) 引起。毒素經逆行軸突運輸至中樞神經系統，阻斷抑制性神經傳導物質釋放，導致肌肉強直痙攣。犬偶發，貓極罕見（天然抗性較強）。
-
+description: >-
+  破傷風由破傷風梭狀芽孢桿菌 (Clostridium tetani) 產生的神經毒素 (tetanospasmin)
+  引起。毒素經逆行軸突運輸至中樞神經系統，阻斷抑制性神經傳導物質釋放，導致肌肉強直痙攣。犬偶發，貓極罕見（天然抗性較強）。
 aliases:
-  - { alias: 破傷風感染, language: zh }
-  - { alias: 強直痙攣症, language: zh }
-  - { alias: Tetanus, language: en }
-  - { alias: Lockjaw, language: en }
-
+  - alias: 破傷風感染
+    language: zh
+  - alias: 強直痙攣症
+    language: zh
+  - alias: Tetanus
+    language: en
+  - alias: Lockjaw
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓對破傷風毒素天然抗性極強（約為犬的 7,200 倍），臨床病例極罕見。一旦發病，局部型較常見。
-
 etiology:
   categories:
     - name: 病原與毒素
@@ -32,7 +35,6 @@ etiology:
         - 導致 alpha 運動神經元持續興奮
         - 肌肉強直痙攣
         - 自主神經功能障礙
-
 clinicalSigns:
   early:
     - 受傷肢體僵硬（局部型）
@@ -46,7 +48,6 @@ clinicalSigns:
     - 呼吸肌痙攣導致呼吸困難
     - 自主神經功能障礙（心律不整、血壓波動）
     - 尿滯留
-
 diagnosis:
   primaryTests:
     - name: 臨床診斷
@@ -57,7 +58,6 @@ diagnosis:
     - 血清毒素檢測（研究用途，臨床不實用）
     - 排除其他痙攣原因（strychnine 中毒、腦膜炎）
     - CBC 與生化（通常正常）
-
 treatment:
   principles:
     - 中和未結合毒素
@@ -73,41 +73,86 @@ treatment:
     - 營養支持（管飼）
     - 導尿（尿滯留時）
     - 嚴重者可能需機械通氣
-
 prognosis: 犬破傷風局部型預後良好（存活率 >90%）。全身型預後視嚴重程度而定，輕至中度存活率 50-90%，需機械通氣者預後差。恢復期可能需 3-4 週以上。貓因極罕見，數據有限但局部型預後尚可。
-
-
 guidelineRefs:
   - sourceOrg: BMJ global health
-    title: "Association of gross domestic product with equitable access to childhood vaccines in 195 countries: a systematic review and meta-analysis."
+    title: >-
+      Association of gross domestic product with equitable access to childhood vaccines in 195 countries: a systematic
+      review and meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11749592/
     type: review
-    pmid: "39828433"
+    pmid: '39828433'
     relevance: primary
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Diseases of the nervous system of equids in Brazil: a review."
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: 'Diseases of the nervous system of equids in Brazil: a review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12125018/
     type: review
-    pmid: "40443203"
+    pmid: '40443203'
     relevance: primary
   - sourceOrg: Vaccines
-    title: "Equids' Core Vaccines Guidelines in North America: Considerations and Prospective."
+    title: 'Equids'' Core Vaccines Guidelines in North America: Considerations and Prospective.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8955191/
     type: review
-    pmid: "35335029"
+    pmid: '35335029'
     relevance: primary
-  - sourceOrg: "Vaccine: X"
-    title: A literature review and evidence-based evaluation of the Dutch national immunisation schedule yield possibilities for improvements.
+  - sourceOrg: 'Vaccine: X'
+    title: >-
+      A literature review and evidence-based evaluation of the Dutch national immunisation schedule yield possibilities
+      for improvements.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11497366/
     type: review
-    pmid: "39444596"
+    pmid: '39444596'
     relevance: primary
   - sourceOrg: Frontiers in immunology
-    title: "Maternal vaccination: shaping the neonatal response to pertussis."
+    title: 'Maternal vaccination: shaping the neonatal response to pertussis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10374427/
     type: review
-    pmid: "37520565"
+    pmid: '37520565'
     relevance: primary
 pubmedQueries:
   - query: '"tetanus" AND (canine OR veterinary) AND ("treatment" OR "management")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: common
+diagnosticAlgorithm:
+  title: 破傷風 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - dysphagia 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床診斷
+          notes: 典型臨床表現（肌肉強直、牙關緊閉、角弓反張）加上傷口史通常足以臨床診斷
+        - name: 傷口培養
+          notes: 傷口厭氧培養可分離 C. tetani，但敏感度低（培養陰性不排除診斷）
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 血清毒素檢測（研究用途，臨床不實用）
+        - 排除其他痙攣原因（strychnine 中毒、腦膜炎）
+        - CBC 與生化（通常正常）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 中和未結合毒素
+        - 清除病原（傷口處理 + 抗生素）
+        - 控制肌肉痙攣
+ddxSource: auto-generated

@@ -3,11 +3,11 @@ nameEn: Mast Cell Tumor Grade III
 nameZh: Mast Cell Tumor Grade III
 bodySystem: oncology
 description: 肥大細胞瘤,常見的皮膚惡性腫瘤。預後取決於組織學分級與臨床分期,需外科切除並考慮輔助治療。
-
 aliases:
-  - { alias: Mast Cell Tumor Grade III, language: zh }
-  - { alias: Mast Cell Tumor Grade III, language: en }
-
+  - alias: Mast Cell Tumor Grade III
+    language: zh
+  - alias: Mast Cell Tumor Grade III
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 遺傳易感性
       examples:
         - 環境因子
         - 病毒感染
-
 clinicalSigns:
   early:
     - 局部腫塊
@@ -32,49 +30,67 @@ clinicalSigns:
   progressive:
     - 腫瘤增大
     - 轉移徵象
-
 diagnosis:
   primaryTests:
     - name: 細針抽吸細胞學
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: 組織切片病理學
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 化療(依腫瘤類型選擇方案)
     - 標靶治療
   surgical:
     - name: 手術切除為首選(需評估切除邊緣)
-      notes: "依病況評估"
-
+      notes: 依病況評估
 prognosis:
-  general: "預後高度變異,取決於腫瘤類型、分級、分期與治療方式。早期診斷與積極治療可延長存活期。"
-
+  general: 預後高度變異,取決於腫瘤類型、分級、分期與治療方式。早期診斷與積極治療可延長存活期。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: Veterinary medicine and science
-    title: Combination vinblastine, prednisolone and toceranib phosphate for treatment of grade II and III mast cell tumours in dogs.
+    title: >-
+      Combination vinblastine, prednisolone and toceranib phosphate for treatment of grade II and III mast cell tumours
+      in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6090407/
     type: research
-    pmid: "29797551"
+    pmid: '29797551'
     relevance: supporting
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Immunohistochemical and Molecular Genetic Analysis of Canine Digital Mast Cell Tumours.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10215161/
     type: research
-    pmid: "37238124"
+    pmid: '37238124'
     relevance: supporting
   - sourceOrg: Veterinary sciences
-    title: The Role of Fine Needle Aspiration of Liver and Spleen in the Staging of Low-Grade Canine Cutaneous Mast Cell Tumor.
+    title: >-
+      The Role of Fine Needle Aspiration of Liver and Spleen in the Staging of Low-Grade Canine Cutaneous Mast Cell
+      Tumor.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9506313/
     type: research
-    pmid: "36136689"
+    pmid: '36136689'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: Mast Cell Tumor Grade III 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 細針抽吸細胞學
+          notes: 需詳細評估
+        - name: 組織切片病理學
+          notes: 協助確診
+ddxSource: auto-generated

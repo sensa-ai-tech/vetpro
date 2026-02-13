@@ -3,11 +3,11 @@ nameEn: Pericardiocentesis
 nameZh: 心包穿刺術
 bodySystem: emergency
 description: 引流心包積液以解除心包填塞。於右側第4-5肋間、肋骨與胸骨交界處穿刺進入心包腔。
-
 aliases:
-  - { alias: 心包引流術, language: zh }
-  - { alias: Pericardial Tap, language: en }
-
+  - alias: 心包引流術
+    language: zh
+  - alias: Pericardial Tap
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,29 +17,25 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 較少見心包積液
-
 etiology:
   categories:
     - name: 適應症
       examples:
         - 心包填塞、心包腫瘤、外傷性血心包
-
 clinicalSigns:
   early:
     - 虛弱、運動不耐
     - 心音鈍弱、腹水
   progressive:
     - 休克、昏厥、死亡
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波
-      notes: "確認心包積液,評估心臟壓迫"
+      notes: 確認心包積液,評估心臟壓迫
     - name: 心電圖
-      notes: "低電壓、電氣交替"
+      notes: 低電壓、電氣交替
   differentialDiagnoses:
     - 心衰竭
-
 treatment:
   medical:
     - 超音波或盲穿引導
@@ -47,42 +43,72 @@ treatment:
     - 抽取心包液至臨床改善
     - 送檢積液(細胞學、培養)
     - 監測復發
-
 prognosis:
-  general: "立即改善臨床症狀,但可能復發。腫瘤性積液預後不良。"
-
+  general: 立即改善臨床症狀,但可能復發。腫瘤性積液預後不良。
 prevention:
   - 定期監測心包積液復發
-
-
 guidelineRefs:
   - sourceOrg: Life (Basel, Switzerland)
     title: Review on the Clinical, Imaging, and Therapeutic Aspects of Cardiac Masses in Dog.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12298529/
     type: review
-    pmid: "40724594"
+    pmid: '40724594'
     relevance: primary
   - sourceOrg: BMC veterinary research
-    title: Constrictive-effusive pericarditis and epicarditis as a cause of restrictive cardiomyopathy associated with Dirofilaria repens infection in a dog.
+    title: >-
+      Constrictive-effusive pericarditis and epicarditis as a cause of restrictive cardiomyopathy associated with
+      Dirofilaria repens infection in a dog.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12522316/
     type: case-report
-    pmid: "41088168"
+    pmid: '41088168'
     relevance: supporting
   - sourceOrg: The American journal of case reports
-    title: "Severe Disseminated Adenovirus Infection After Haploidentical Hematopoietic Stem Cell Transplantation: A Case Report."
+    title: >-
+      Severe Disseminated Adenovirus Infection After Haploidentical Hematopoietic Stem Cell Transplantation: A Case
+      Report.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12418897/
     type: case-report
-    pmid: "40903875"
+    pmid: '40903875'
     relevance: supporting
   - sourceOrg: Veterinary and comparative oncology
-    title: Retrospective Study Evaluating Outcomes Following Palliative Radiotherapy With or Without Chemotherapy for Dogs With Presumed Cardiac Hemangiosarcoma.
+    title: >-
+      Retrospective Study Evaluating Outcomes Following Palliative Radiotherapy With or Without Chemotherapy for Dogs
+      With Presumed Cardiac Hemangiosarcoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12378083/
     type: research
-    pmid: "40443234"
+    pmid: '40443234'
     relevance: supporting
   - sourceOrg: Journal of veterinary internal medicine
     title: Thirteen dogs and a cat with ultrasonographically detected gallbladder wall edema associated with cardiac disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8163112/
     type: research
-    pmid: "33826214"
+    pmid: '33826214'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: syncope
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: ascites
+    frequency: common
+diagnosticAlgorithm:
+  title: 心包穿刺術 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - syncope 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波
+          notes: 確認心包積液,評估心臟壓迫
+        - name: 心電圖
+          notes: 低電壓、電氣交替
+ddxSource: auto-generated

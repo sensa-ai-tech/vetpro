@@ -3,25 +3,30 @@ nameEn: Lens Luxation
 nameZh: 水晶體脫位
 bodySystem: ophthalmology
 description: 水晶體懸韌帶 (zonular fibers) 斷裂導致水晶體從正常解剖位置移位，分為完全脫位 (luxation) 與部分脫位 (subluxation)，前脫位為眼科急症。
-
 aliases:
-  - { alias: Ectopia Lentis, language: en }
-  - { alias: Lens Subluxation, language: en }
-  - { alias: Anterior Lens Luxation, language: en }
-  - { alias: Posterior Lens Luxation, language: en }
-  - { alias: 水晶體異位, language: zh }
-  - { alias: 水晶體半脫位, language: zh }
-
+  - alias: Ectopia Lentis
+    language: en
+  - alias: Lens Subluxation
+    language: en
+  - alias: Anterior Lens Luxation
+    language: en
+  - alias: Posterior Lens Luxation
+    language: en
+  - alias: 水晶體異位
+    language: zh
+  - alias: 水晶體半脫位
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
-    notes: 原發性水晶體脫位好發梗犬品種 (terrier breeds)：Jack Russell Terrier、Tibetan Terrier、Wire Fox Terrier、Sealyham Terrier、Chinese Crested、Lancashire Heeler。ADAMTS17 基因突變為主要遺傳因素。通常 3-8 歲發病，雙側性。
+    notes: >-
+      原發性水晶體脫位好發梗犬品種 (terrier breeds)：Jack Russell Terrier、Tibetan Terrier、Wire Fox Terrier、Sealyham Terrier、Chinese
+      Crested、Lancashire Heeler。ADAMTS17 基因突變為主要遺傳因素。通常 3-8 歲發病，雙側性。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓較少見原發性，多為繼發性 (慢性前葡萄膜炎、青光眼致眼球腫大)。
-
 etiology:
   categories:
     - name: 原發性 (遺傳性)
@@ -41,7 +46,6 @@ etiology:
         - 前脫位 (anterior luxation)：水晶體移入前房 — 急症
         - 後脫位 (posterior luxation)：水晶體落入玻璃體腔 — 相對穩定
         - 半脫位 (subluxation)：部分懸韌帶斷裂，水晶體仍在瞳孔平面附近
-
 clinicalSigns:
   early:
     - 虹膜震顫 (iridodonesis) — 懸韌帶弱化的早期徵兆
@@ -58,26 +62,24 @@ clinicalSigns:
     - 嚴重眼痛 (前脫位合併青光眼)
     - 後脫位合併玻璃體液化與視網膜剝離
     - 失明
-
 diagnosis:
   primaryTests:
     - name: 裂隙燈檢查 (Slit lamp)
-      notes: "觀察水晶體位置、懸韌帶完整性、前房深度、玻璃體是否疝入前房。散瞳後可見水晶體赤道部 (半脫位)"
+      notes: 觀察水晶體位置、懸韌帶完整性、前房深度、玻璃體是否疝入前房。散瞳後可見水晶體赤道部 (半脫位)
     - name: 眼壓測量 (Tonometry)
-      notes: "前脫位常伴眼壓急性升高 (>30-50 mmHg)。後脫位眼壓可正常或升高"
+      notes: 前脫位常伴眼壓急性升高 (>30-50 mmHg)。後脫位眼壓可正常或升高
     - name: 眼部超音波 (B-scan)
-      notes: "確認水晶體位置 (前房/玻璃體腔)，評估視網膜是否剝離"
+      notes: 確認水晶體位置 (前房/玻璃體腔)，評估視網膜是否剝離
   imaging:
     - name: 眼部超音波
-      notes: "角膜水腫嚴重無法透視時尤為重要。評估水晶體位置與視網膜狀態"
+      notes: 角膜水腫嚴重無法透視時尤為重要。評估水晶體位置與視網膜狀態
     - name: 前段 OCT
-      notes: "高解析度評估前房結構與水晶體位置"
+      notes: 高解析度評估前房結構與水晶體位置
   additional:
     - 直接/間接眼底檢查 (評估視網膜)
     - 隅角鏡檢 (gonioscopy，評估對側眼隅角)
     - 基因檢測 (ADAMTS17，梗犬品種)
     - 對側眼完整評估 (原發性常為雙側)
-
 treatment:
   principles:
     - 前脫位為眼科急症，需 24-48 小時內手術
@@ -86,16 +88,16 @@ treatment:
     - 原發性雙側者對側眼需預防性縮瞳
   medications:
     - name: Latanoprost 0.005%
-      dose: "1 滴 Q12H (前脫位合併青光眼急救)"
+      dose: 1 滴 Q12H (前脫位合併青光眼急救)
       notes: 急性降眼壓。注意前脫位時縮瞳可能使水晶體卡住更緊 (controversy)
     - name: Dorzolamide 2%/Timolol 0.5% (Cosopt)
-      dose: "1 滴 Q8-12H"
+      dose: 1 滴 Q8-12H
       notes: 降眼壓輔助。長期用於後脫位或半脫位控制眼壓
     - name: Pilocarpine 1-2%
-      dose: "1 滴 Q8-12H"
+      dose: 1 滴 Q8-12H
       notes: 縮瞳劑。半脫位時將水晶體固定在瞳孔後方防止前脫位。對側預防性使用。前脫位時禁用 (可能使水晶體困在前房)
     - name: Prednisolone acetate 1% 眼藥水
-      dose: "Q6-12H"
+      dose: Q6-12H
       notes: 控制葡萄膜炎反應
   general:
     - 前脫位手術：水晶體囊內摘除 (intracapsular lens extraction, ICLE)，需專科設備與技術
@@ -104,38 +106,81 @@ treatment:
     - 對側眼預防：Pilocarpine 預防性縮瞳 (原發性雙側者)
     - 失明且疼痛的眼球：眼球摘除 (enucleation) 或眼內義眼 (intrascleral prosthesis)
     - 基因檢測篩選繁殖犬
-
-emergencyNotes: "前脫位 (anterior lens luxation) 為眼科急症。水晶體阻擋房水流出導致急性青光眼 (IOP 常 >40 mmHg) 並壓迫角膜內皮造成水腫。立即降眼壓 (Dorzolamide/Timolol + Mannitol IV)。盡快轉介眼科專科行水晶體摘除術 (24-48 小時內)。注意：前脫位時避免使用縮瞳劑 (可能將水晶體嵌頓在前房)。"
-
+emergencyNotes: >-
+  前脫位 (anterior lens luxation) 為眼科急症。水晶體阻擋房水流出導致急性青光眼 (IOP 常 >40 mmHg) 並壓迫角膜內皮造成水腫。立即降眼壓 (Dorzolamide/Timolol + Mannitol
+  IV)。盡快轉介眼科專科行水晶體摘除術 (24-48 小時內)。注意：前脫位時避免使用縮瞳劑 (可能將水晶體嵌頓在前房)。
 prognosis: 前脫位手術成功率約 70-90% (視力保留)，但術後繼發性青光眼風險 12-40%。後脫位短期預後尚可，但長期約 50% 會併發青光眼或視網膜剝離。原發性雙側者對側眼預防性縮瞳可延遲發病。早期基因篩檢與繁殖管理是預防的關鍵。
-
 guidelineRefs:
   - sourceOrg: Veterinary Ophthalmology
-    title: "Primary lens luxation in dogs: a review"
+    title: 'Primary lens luxation in dogs: a review'
     url: https://pubmed.ncbi.nlm.nih.gov/21929609/
     type: review
-    pmid: "21929609"
+    pmid: '21929609'
   - sourceOrg: Veterinary Ophthalmology
     title: ADAMTS17 mutation associated with primary lens luxation is widespread among breeds
     url: https://pubmed.ncbi.nlm.nih.gov/21929614/
     type: research
-    pmid: "21929614"
+    pmid: '21929614'
   - sourceOrg: Journal of Small Animal Practice
-    title: "Primary lens luxation in the dog: management and visual outcome"
+    title: 'Primary lens luxation in the dog: management and visual outcome'
     url: https://pubmed.ncbi.nlm.nih.gov/23163756/
     type: research
-    pmid: "23163756"
+    pmid: '23163756'
   - sourceOrg: Canine genetics and epidemiology
     title: Correlation of neuter status and expression of heritable disorders.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5445488/
     type: research
-    pmid: "28560045"
+    pmid: '28560045'
     relevance: supporting
 pubmedQueries:
   - query: '"lens luxation" AND (dog OR canine) AND ("surgery" OR "ADAMTS17" OR "treatment")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "EMG"
-  sectionTitle: "ANTERIOR LENS LUXATION"
+  chapter: EMG
+  sectionTitle: ANTERIOR LENS LUXATION
   pdfPage: 1740
+diagnosticAlgorithm:
+  title: 水晶體脫位 診斷流程
+  steps:
+    - step: 1
+      action: 裂隙燈檢查
+      details: 確認水晶體位置（前脫位/後脫位/半脫位）
+      findings:
+        - 前房內水晶體（前脫位）
+        - 前房加深+虹膜震顫（後脫位）
+    - step: 2
+      action: 眼壓測量
+      details: 立即測量雙眼眼壓
+      findings:
+        - 前脫位常>40 mmHg
+        - 後脫位眼壓可能正常
+    - step: 3
+      action: 視力評估
+      details: 評估威脅反射、瞳孔對光反射和障礙物迴避
+      findings:
+        - 視力狀態決定治療急迫性
+        - PLR消失提示預後不良
+    - step: 4
+      action: 病因鑑別+處理
+      details: 犬評估品種遺傳史；貓排查葡萄膜炎病因
+      findings:
+        - 犬：ADAMTS17基因相關
+        - 貓：慢性葡萄膜炎（FIP、淋巴瘤等）
+clinicalPearls:
+  - 前脫位是眼科急症——每延遲1小時，視力保留機率下降；目標24小時內手術
+  - 梗犬品種（JRT、Fox Terrier）有ADAMTS17基因突變，一眼脫位後對側眼需密切監測
+  - 貓的水晶體脫位多為慢性葡萄膜炎繼發——治療脫位的同時要找潛在病因（FIP、淋巴瘤、弓蟲症）
+monitoringItems:
+  - 眼壓（術後daily×1週，之後weekly×1月，之後monthly）
+  - 對側眼定期裂隙燈檢查（原發性者q3-6月）
+  - 視力評估（威脅反射、障礙物迴避）
+  - 眼底檢查（監測視網膜剝離和視神經損傷）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: common
+ddxSource: book

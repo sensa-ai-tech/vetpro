@@ -3,13 +3,15 @@ nameEn: Granulomatous Meningoencephalomyelitis
 nameZh: 肉芽腫性腦脊髓膜炎
 bodySystem: neurology
 description: 中樞神經系統特發性非感染性炎症性疾病，以血管周圍單核球/組織球浸潤形成肉芽腫為特徵。為犬 MUO 中最常見的亞型。
-
 aliases:
-  - { alias: GME, language: en }
-  - { alias: Reticulosis, language: en }
-  - { alias: MUO, language: en }
-  - { alias: 肉芽腫性腦膜腦脊髓炎, language: zh }
-
+  - alias: GME
+    language: en
+  - alias: Reticulosis
+    language: en
+  - alias: MUO
+    language: en
+  - alias: 肉芽腫性腦膜腦脊髓炎
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓極罕見報告。貓的中樞神經炎症性疾病病因分布不同 (FIP 為主)。
-
 etiology:
   categories:
     - name: 免疫介導性 (疑似)
@@ -32,7 +33,6 @@ etiology:
         - 瀰漫型 (disseminated) — 最常見，多灶性病灶
         - 局灶型 (focal) — 單一腫塊樣病灶，可模擬腫瘤
         - 視神經型 (ocular) — 累及視神經與視交叉
-
 clinicalSigns:
   early:
     - 取決於病灶位置 (前腦、腦幹、脊髓、視神經)
@@ -48,26 +48,24 @@ clinicalSigns:
     - 意識程度下降
     - 難治性癲癇發作
     - 嚴重顱內壓升高
-
 diagnosis:
   primaryTests:
     - name: MRI
-      notes: "金標準影像學。瀰漫型：多灶性 T2W/FLAIR 高信號，不規則對比增強。局灶型：單一佔位病灶，可模擬腫瘤。視神經型：視神經增粗"
+      notes: 金標準影像學。瀰漫型：多灶性 T2W/FLAIR 高信號，不規則對比增強。局灶型：單一佔位病灶，可模擬腫瘤。視神經型：視神經增粗
     - name: 腦脊髓液分析 (CSF)
-      notes: "單核球性或混合性細胞增多 (典型 >5 cells/μL)，蛋白質升高。非特異性但有助於診斷"
+      notes: 單核球性或混合性細胞增多 (典型 >5 cells/μL)，蛋白質升高。非特異性但有助於診斷
     - name: 神經學檢查
-      notes: "定位病灶。多灶性神經缺損高度提示炎症性疾病"
+      notes: 定位病灶。多灶性神經缺損高度提示炎症性疾病
   imaging:
     - name: 腦部 MRI
-      notes: "首選影像。評估病灶分布、大小與對比增強模式"
+      notes: 首選影像。評估病灶分布、大小與對比增強模式
     - name: 脊髓 MRI
-      notes: "脊髓型時需要。脊髓內 T2W 高信號"
+      notes: 脊髓型時需要。脊髓內 T2W 高信號
   additional:
     - 感染性疾病篩檢 (排除感染性腦炎：Toxoplasma、Neospora、CDV、真菌)
     - 血清抗體檢測 (Toxoplasma IgG/IgM、Neospora)
     - CBC/生化 (通常正常)
     - 確定診斷需腦組織病理學 (生前以 MRI + CSF + 臨床反應做假定診斷)
-
 treatment:
   principles:
     - 免疫抑制治療為基礎
@@ -76,60 +74,133 @@ treatment:
     - 需長期維持治療，停藥易復發
   medications:
     - name: Prednisolone
-      dose: "1-2 mg/kg PO BID (誘導期)，逐步減量至 0.5-1 mg/kg QOD (維持)"
+      dose: 1-2 mg/kg PO BID (誘導期)，逐步減量至 0.5-1 mg/kg QOD (維持)
       notes: 一線藥物。長期使用注意類固醇副作用 (PU/PD、肝病、醫源性 Cushing)
     - name: Cytarabine (Ara-C)
-      dose: "50 mg/m² SC BID × 2 天，每 3-4 週"
+      dose: 50 mg/m² SC BID × 2 天，每 3-4 週
       notes: 最常使用的二線免疫抑制劑。可穿越血腦屏障。與 prednisolone 合併使用
     - name: Mycophenolate mofetil
-      dose: "10-20 mg/kg PO BID"
+      dose: 10-20 mg/kg PO BID
       notes: 二線藥物，類固醇減量期輔助。胃腸道副作用常見
     - name: Cyclosporine
-      dose: "5-10 mg/kg PO BID"
+      dose: 5-10 mg/kg PO BID
       notes: 替代性二線藥物。需監測血中濃度
     - name: Leflunomide
-      dose: "2-4 mg/kg PO SID"
+      dose: 2-4 mg/kg PO SID
       notes: 替代性免疫抑制劑。需監測肝功能
   general:
     - 癲癇發作控制 (phenobarbital、levetiracetam)
     - 顱內壓管理 (Mannitol 0.5-1 g/kg IV 急性期)
     - 定期神經學評估監測反應
     - 定期 MRI 追蹤 (局灶型)
-
 prognosis: 預後差異大。瀰漫型中位存活約 3-6 個月 (僅類固醇) 至 >14 個月 (聯合免疫抑制)。局灶型預後相對較佳，中位存活可達 12-18 個月。視神經型視力恢復不一。約 25-50% 在治療下可維持穩定數月至數年。
-
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Internal Medicine
-    title: Signalment, clinical signs, and outcome of dogs with meningoencephalomyelitis of unknown origin treated with immunosuppressive protocols
+    title: >-
+      Signalment, clinical signs, and outcome of dogs with meningoencephalomyelitis of unknown origin treated with
+      immunosuppressive protocols
     url: https://pubmed.ncbi.nlm.nih.gov/25929341/
     type: research
-    pmid: "25929341"
+    pmid: '25929341'
   - sourceOrg: Journal of Veterinary Internal Medicine
-    title: A multicenter randomized controlled trial of cytosine arabinoside vs. mycophenolate mofetil for treatment of MUO in dogs
+    title: >-
+      A multicenter randomized controlled trial of cytosine arabinoside vs. mycophenolate mofetil for treatment of MUO
+      in dogs
     url: https://pubmed.ncbi.nlm.nih.gov/31389080/
     type: research
-    pmid: "31389080"
+    pmid: '31389080'
   - sourceOrg: Veterinary Journal
     title: Meningoencephalomyelitis of unknown origin — a review
     url: https://pubmed.ncbi.nlm.nih.gov/24878264/
     type: review
-    pmid: "24878264"
+    pmid: '24878264'
   - sourceOrg: American journal of translational research
-    title: "The role of regulatory T cells in central nervous system diseases in dogs: fighting with a double-edged sword toward translational discoveries."
+    title: >-
+      The role of regulatory T cells in central nervous system diseases in dogs: fighting with a double-edged sword
+      toward translational discoveries.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12628236/
     type: review
-    pmid: "41268269"
+    pmid: '41268269'
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: "Neuroinflammatory diseases of the central nervous system of dogs: A retrospective study of 207 cases (2008-2019)."
+    title: 'Neuroinflammatory diseases of the central nervous system of dogs: A retrospective study of 207 cases (2008-2019).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8759338/
     type: research
-    pmid: "35110776"
+    pmid: '35110776'
     relevance: supporting
 pubmedQueries:
   - query: '"granulomatous meningoencephalomyelitis" OR "MUO" AND dog AND ("immunosuppressive" OR "treatment" OR "review")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "NER"
-  sectionTitle: "ENCEPHALOMYELITIS"
+  chapter: NER
+  sectionTitle: ENCEPHALOMYELITIS
   pdfPage: 1303
+diagnosticAlgorithm:
+  title: 肉芽腫性腦膜腦炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估急性多灶性神經症狀
+      findings:
+        - 急性進行性神經缺失
+        - 多灶性腦部徵象
+        - 頸部疼痛
+        - 小型犬好發
+    - step: 2
+      action: 血液與基本檢查
+      details: 排除感染性原因
+      findings:
+        - CBC與生化篩檢
+        - 壁蝨傳染病篩檢
+        - 隱球菌抗原
+        - 弓形蟲抗體
+    - step: 3
+      action: MRI腦部
+      details: 評估病灶特徵與分佈
+      findings:
+        - 多灶性或單灶性強化病灶
+        - 腦膜強化
+        - 腦幹或小腦病灶常見
+        - 需與腦腫瘤鑑別
+    - step: 4
+      action: CSF分析
+      details: 腦脊髓液細胞學與蛋白
+      findings:
+        - 單核球性白血球增多
+        - 蛋白質升高
+        - PCR排除感染
+        - 免疫抑制治療前確認
+clinicalPearls:
+  - GME屬於「不明原因腦膜腦炎(MUE)」大類
+  - 與NME和NLE統稱為「犬特發性非感染性腦炎」
+  - Ara-C是小動物腫瘤科常用藥物，在GME有良好效果
+  - MRI雖高度提示但無法與NME/NLE或腫瘤完全區分
+  - 早期積極治療可能改善預後
+  - 類固醇副作用在長期治療中是顯著問題
+monitoringItems:
+  - 神經功能評估
+  - 類固醇副作用（PU/PD、食慾、皮膚、肌肉）
+  - 追蹤MRI（評估療效）
+  - 腦脊液複查（部分病例）
+associatedSymptoms:
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: head-tilt
+    frequency: uncommon
+  - symptomId: head-tilt
+    frequency: rare
+  - symptomId: cachexia-muscle-wasting
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: rare
+ddxSource: book

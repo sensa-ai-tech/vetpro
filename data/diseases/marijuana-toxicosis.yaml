@@ -3,15 +3,19 @@ nameEn: Marijuana Toxicosis
 nameZh: 大麻中毒
 bodySystem: toxicology
 description: 犬貓攝入含 delta-9-tetrahydrocannabinol (THC) 的大麻植物、大麻食品 (edibles) 或大麻製品後引起的中毒。犬為最常見受影響物種，大麻食品（尤其含巧克力或 xylitol 者）可造成複合毒性。
-
 aliases:
-  - { alias: 大麻毒性, language: zh }
-  - { alias: THC 中毒, language: zh }
-  - { alias: Cannabis Toxicosis, language: en }
-  - { alias: THC Toxicosis, language: en }
-  - { alias: Marijuana Poisoning, language: en }
-  - { alias: Cannabis Ingestion, language: en }
-
+  - alias: 大麻毒性
+    language: zh
+  - alias: THC 中毒
+    language: zh
+  - alias: Cannabis Toxicosis
+    language: en
+  - alias: THC Toxicosis
+    language: en
+  - alias: Marijuana Poisoning
+    language: en
+  - alias: Cannabis Ingestion
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -21,7 +25,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓病例較犬少，可能因攝入頻率較低。但貓同樣具 CB1 受體，暴露後可出現臨床症狀。
-
 etiology:
   categories:
     - name: 毒物來源
@@ -43,7 +46,6 @@ etiology:
         - 影響小腦（共濟失調）、腦幹（體溫調節、心率）、大腦皮質（意識狀態改變）
         - 犬小腦後腦 CB1 受體密度高，解釋為何步態異常嚴重
         - THC 具高脂溶性，蓄積於脂肪組織，症狀可持續數天
-
 clinicalSigns:
   early:
     - 步態不穩 (ataxia)（最常見且最具特徵性）
@@ -64,24 +66,22 @@ clinicalSigns:
     - 嚴重心搏過緩
     - 呼吸抑制
     - 死亡極罕見（純 THC），但 edibles 含巧克力或 xylitol 時可致命
-
 diagnosis:
   primaryTests:
     - name: 病史詢問
-      notes: "直接詢問大麻暴露史。飼主可能因法律顧慮否認。強調不判斷、專注治療的態度有助獲取準確病史"
+      notes: 直接詢問大麻暴露史。飼主可能因法律顧慮否認。強調不判斷、專注治療的態度有助獲取準確病史
     - name: 臨床症狀組合
-      notes: "典型三聯徵：步態不穩 + 嗜睡/意識改變 + 尿失禁，加上瞳孔散大，高度懷疑大麻中毒"
+      notes: 典型三聯徵：步態不穩 + 嗜睡/意識改變 + 尿失禁，加上瞳孔散大，高度懷疑大麻中毒
     - name: 人用 THC 尿液檢測
-      notes: "可用於犬尿液。但犬的 THC 代謝物與人類不同，偽陰性率較高。陽性結果支持診斷，陰性不能排除"
+      notes: 可用於犬尿液。但犬的 THC 代謝物與人類不同，偽陰性率較高。陽性結果支持診斷，陰性不能排除
   imaging:
     - name: 腹部 X 光
-      notes: "排除異物攝入。部分 edibles 包裝可在 X 光上可見"
+      notes: 排除異物攝入。部分 edibles 包裝可在 X 光上可見
   additional:
     - 血糖（排除低血糖，尤其 edibles 可能含 xylitol）
     - CBC/生化/電解質（排除其他病因）
     - 體溫監測（低體溫常見）
     - 鑑別診斷排除（乙二醇中毒、有機磷中毒、前庭疾病、腦病變）
-
 treatment:
   principles:
     - 以支持性治療為主（無特效解毒劑）
@@ -100,33 +100,103 @@ treatment:
     - 若同時攝入巧克力，需同時按巧克力中毒處理
     - 住院觀察直至症狀消退（通常 12-36 小時，濃縮物可達 72 小時）
     - 嚴重嗜睡者禁食避免誤吸
-
 emergencyNotes: 單純 THC 中毒罕見致死，但 edibles 含巧克力或 xylitol 時可能致命。嚴重意識抑制需監測呼吸功能。高濃度濃縮物 (wax/shatter) 可造成嚴重昏迷。立即詢問食品成分評估複合毒性。
-
-prognosis: 單純大麻/THC 中毒預後極佳，大多數犬在 12-36 小時內完全恢復。濃縮物中毒恢復較慢（可達 72 小時）。致死極罕見。合併巧克力或 xylitol 中毒時預後取決於合併毒物的嚴重度。合成大麻素（synthetic cannabinoids）毒性更高且不可預測，預後較差。
-
+prognosis: >-
+  單純大麻/THC 中毒預後極佳，大多數犬在 12-36 小時內完全恢復。濃縮物中毒恢復較慢（可達 72 小時）。致死極罕見。合併巧克力或 xylitol 中毒時預後取決於合併毒物的嚴重度。合成大麻素（synthetic
+  cannabinoids）毒性更高且不可預測，預後較差。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
-    title: "Marijuana toxicosis in dogs: a retrospective study of 213 cases"
+    title: 'Marijuana toxicosis in dogs: a retrospective study of 213 cases'
     url: https://pubmed.ncbi.nlm.nih.gov/22827829/
     type: research
-    pmid: "22827829"
+    pmid: '22827829'
   - sourceOrg: Topics in Companion Animal Medicine
-    title: "Cannabis toxicosis in pets: an update"
+    title: 'Cannabis toxicosis in pets: an update'
     url: https://pubmed.ncbi.nlm.nih.gov/30236445/
     type: review
-    pmid: "30236445"
+    pmid: '30236445'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Clinical examination findings and electrolyte abnormalities of dogs with marijuana/tetrahydrocannabinol toxicity: 223 cases (January 2017-July 2021)."
+    title: >-
+      Clinical examination findings and electrolyte abnormalities of dogs with marijuana/tetrahydrocannabinol toxicity:
+      223 cases (January 2017-July 2021).
     url: https://pubmed.ncbi.nlm.nih.gov/38608656/
     type: research
-    pmid: "38608656"
+    pmid: '38608656'
     relevance: supporting
 pubmedQueries:
-  - query: '"marijuana" OR "cannabis" OR "THC" AND (dog OR canine OR feline) AND ("toxicosis" OR "poisoning" OR "intoxication")'
+  - query: >-
+      "marijuana" OR "cannabis" OR "THC" AND (dog OR canine OR feline) AND ("toxicosis" OR "poisoning" OR
+      "intoxication")
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "TOX"
-  sectionTitle: "TOXICOSIS"
+  chapter: TOX
+  sectionTitle: TOXICOSIS
   pdfPage: 3128
+diagnosticAlgorithm:
+  title: 大麻中毒 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 詳細詢問暴露史與評估神經症狀
+      findings:
+        - 共濟失調與步態不穩
+        - 瞳孔散大
+        - 嗜睡或過度興奮
+        - 尿失禁
+    - step: 2
+      action: 理學檢查
+      details: 全身神經學與生命徵象評估
+      findings:
+        - 心搏過緩或心搏過速
+        - 體溫過低
+        - 對聲音過度敏感
+        - 流涎
+    - step: 3
+      action: 實驗室檢查
+      details: 排除其他中毒與代謝異常
+      findings:
+        - 基本生化檢查通常正常
+        - 尿液THC快篩（人用試劑可用但敏感度有限）
+        - 排除其他神經毒物暴露
+    - step: 4
+      action: 確診
+      details: 根據暴露史與臨床表現推斷性診斷
+      findings:
+        - 典型臨床症狀組合
+        - 飼主承認暴露史
+        - 支持性治療後12-24小時改善
+        - 排除其他CNS抑制劑中毒
+clinicalPearls:
+  - 飼主可能不願承認大麻暴露——以不帶評判的方式詢問對診斷至關重要
+  - 人用尿液THC快速檢測在犬的假陰性率高，陰性結果不能排除中毒
+  - 含有巧克力的大麻食品是雙重中毒風險
+  - 活性碳在THC中毒中特別有用，因為可中斷腸肝循環
+  - 脂質乳劑療法（intralipid）對嚴重THC中毒可能有效
+monitoringItems:
+  - 神經狀態每1-2小時評估
+  - 心率和體溫監測
+  - 血糖監測
+  - 尿量觀察
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: mydriasis
+    frequency: common
+  - symptomId: hypothermia-sign
+    frequency: common
+ddxSource: book

@@ -3,11 +3,11 @@ nameEn: Transplant Rejection
 nameZh: 移植排斥反應
 bodySystem: immunology
 description: 受體免疫系統辨識移植器官為外來抗原而發動攻擊。可分為超急性、急性及慢性排斥。犬貓腎臟移植最常見，需終生免疫抑制。
-
 aliases:
-  - { alias: 器官排斥, language: zh }
-  - { alias: Allograft Rejection, language: en }
-
+  - alias: 器官排斥
+    language: zh
+  - alias: Allograft Rejection
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓慢性腎病腎移植較常見，存活率較犬高
-
 etiology:
   categories:
     - name: 超急性排斥
@@ -34,7 +33,6 @@ etiology:
         - 抗體及細胞共同介導
         - 移植後數月至數年
         - 血管病變、纖維化
-
 clinicalSigns:
   early:
     - 急性排斥：發燒、移植器官腫脹
@@ -45,23 +43,21 @@ clinicalSigns:
     - 慢性排斥：漸進性功能惡化
     - 高血壓、蛋白尿（腎移植）
     - 免疫抑制副作用（感染、腫瘤）
-
 diagnosis:
   primaryTests:
     - name: 移植器官功能監測
-      notes: "腎移植：肌酸酐、BUN、尿檢"
+      notes: 腎移植：肌酸酐、BUN、尿檢
     - name: 超音波檢查
-      notes: "器官大小、血流評估"
+      notes: 器官大小、血流評估
     - name: 器官組織切片
-      notes: "淋巴球浸潤、血管炎、纖維化"
+      notes: 淋巴球浸潤、血管炎、纖維化
     - name: 供體特異性抗體（DSA）
-      notes: "抗體介導排斥"
+      notes: 抗體介導排斥
   differentialDiagnoses:
     - 移植器官缺血再灌注損傷
     - 感染（BK病毒、CMV）
     - 藥物腎毒性（環孢素、他克莫司）
     - 尿路阻塞
-
 treatment:
   medical:
     - 維持免疫抑制（終生）
@@ -70,46 +66,67 @@ treatment:
     - 急性排斥：甲基潑尼松龍 10-30 mg/kg IV 脈衝治療
     - 黴酚酸酯 10 mg/kg PO q12h
     - 他克莫司（tacrolimus）0.1-0.3 mg/kg PO q12h（替代環孢素）
-
 prognosis:
-  general: "貓腎移植1年存活率約80%，3年約60%。急性排斥若及時治療多可逆轉。慢性排斥為長期主要問題。"
-
+  general: 貓腎移植1年存活率約80%，3年約60%。急性排斥若及時治療多可逆轉。慢性排斥為長期主要問題。
 prevention:
   - 移植前組織配型
   - 術後嚴格免疫抑制方案
   - 定期監測移植器官功能及藥物濃度
   - 預防感染及腫瘤監測
   - 避免疫苗接種（活毒疫苗）
-
-
 guidelineRefs:
   - sourceOrg: Mucosal immunology
     title: Local complement activation and modulation in mucosal immunity.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11929374/
     type: review
-    pmid: "38838816"
+    pmid: '38838816'
     relevance: primary
   - sourceOrg: Biomedicines
     title: Animal Models for Heart Transplantation Focusing on the Pathological Conditions.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10216327/
     type: review
-    pmid: "37239085"
+    pmid: '37239085'
     relevance: primary
   - sourceOrg: Frontiers in pharmacology
     title: Involvement of oxidative species in cyclosporine-mediated cholestasis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9679297/
     type: review
-    pmid: "36425570"
+    pmid: '36425570'
     relevance: primary
   - sourceOrg: Transplantation
     title: Immunological Determinants of Liver Transplant Outcomes Uncovered by the Rat Model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8376267/
     type: review
-    pmid: "33417410"
+    pmid: '33417410'
     relevance: primary
   - sourceOrg: Frontiers in immunology
     title: Therapeutic Application of Mesenchymal Stem Cells Derived Extracellular Vesicles for Immunomodulation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6889906/
     type: review
-    pmid: "31849929"
+    pmid: '31849929'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+diagnosticAlgorithm:
+  title: 移植排斥反應 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 移植器官功能監測
+          notes: 腎移植：肌酸酐、BUN、尿檢
+        - name: 超音波檢查
+          notes: 器官大小、血流評估
+        - name: 器官組織切片
+          notes: 淋巴球浸潤、血管炎、纖維化
+ddxSource: auto-generated

@@ -3,11 +3,11 @@ nameEn: Fat Embolism Syndrome
 nameZh: 脂肪栓塞症候群
 bodySystem: emergency
 description: 長骨骨折或骨科手術後脂肪微粒進入血流,栓塞肺臟及其他器官。引起呼吸窘迫及神經症狀。
-
 aliases:
-  - { alias: FES, language: zh }
-  - { alias: Fat Embolism, language: en }
-
+  - alias: FES
+    language: zh
+  - alias: Fat Embolism
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,13 +17,11 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 同犬
-
 etiology:
   categories:
     - name: 原因
       examples:
         - 長骨骨折、骨髓損傷、骨科手術
-
 clinicalSigns:
   early:
     - 骨折後24-72小時
@@ -32,16 +30,14 @@ clinicalSigns:
     - ARDS、紫紺
     - 意識改變、癲癇
     - 點狀出血
-
 diagnosis:
   primaryTests:
     - name: 臨床診斷
-      notes: "骨折後呼吸窘迫+神經症狀"
+      notes: 骨折後呼吸窘迫+神經症狀
     - name: 胸部X光
-      notes: "肺浸潤(雪花狀)"
+      notes: 肺浸潤(雪花狀)
   differentialDiagnoses:
     - 肺炎、肺挫傷
-
 treatment:
   medical:
     - 支持性療法
@@ -49,38 +45,62 @@ treatment:
     - 靜脈輸液
     - 早期骨折固定(減少脂肪釋放)
     - 類固醇(Methylprednisolone 30 mg/kg IV)爭議性
-
 prognosis:
-  general: "預後不良,死亡率可達10-20%。無特異性治療。"
-
+  general: 預後不良,死亡率可達10-20%。無特異性治療。
 prevention:
   - 早期骨折固定
   - 避免過度操作骨髓腔
-
-
 guidelineRefs:
   - sourceOrg: Journal of clinical orthopaedics and trauma
     title: Can IL-6 predict the development of fat embolism in polytrauma? A rabbit model pilot experimental study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6976997/
     type: research
-    pmid: "31992925"
+    pmid: '31992925'
   - sourceOrg: Journal of cellular and molecular medicine
     title: Ursodeoxycholic acid protects against lung injury induced by fat embolism syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7754031/
     type: research
-    pmid: "33145933"
+    pmid: '33145933'
   - sourceOrg: Cell transplantation
     title: The Protective Roles of Urinary Trypsin Inhibitor in Brain Injury Following Fat Embolism Syndrome in a Rat Model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6686433/
     type: research
-    pmid: "30449147"
+    pmid: '30449147'
   - sourceOrg: Archives of plastic surgery
-    title: "Correlation between the time elapsed after liposuction and the risk of fat embolism: An animal model."
+    title: 'Correlation between the time elapsed after liposuction and the risk of fat embolism: An animal model.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5784386/
     type: research
-    pmid: "29076330"
-  - sourceOrg: "Biomedicine &amp; pharmacotherapy = Biomedecine &amp; pharmacotherapie"
+    pmid: '29076330'
+  - sourceOrg: Biomedicine &amp; pharmacotherapy = Biomedecine &amp; pharmacotherapie
     title: Effects of the ALX/FPR2 receptors of lipoxin A4 on lung injury induced by fat embolism syndrome in rats.
     url: https://pubmed.ncbi.nlm.nih.gov/30784911/
     type: research
-    pmid: "30784911"
+    pmid: '30784911'
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: petechiae-ecchymoses
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 脂肪栓塞症候群 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - coma-stupor 相關症狀
+        - petechiae-ecchymoses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床診斷
+          notes: 骨折後呼吸窘迫+神經症狀
+        - name: 胸部X光
+          notes: 肺浸潤(雪花狀)
+ddxSource: auto-generated

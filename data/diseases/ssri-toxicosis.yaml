@@ -2,14 +2,18 @@ slug: ssri-toxicosis
 nameEn: SSRI Toxicosis
 nameZh: 選擇性血清素再攝取抑制劑中毒
 bodySystem: toxicology
-description: 選擇性血清素再攝取抑制劑 (SSRI) 中毒為犬貓常見藥物中毒之一，因誤食飼主抗憂鬱藥物（如 fluoxetine、sertraline、paroxetine、citalopram）引起血清素症候群 (serotonin syndrome)。犬亦可因獸醫處方 fluoxetine 過量而中毒。
-
+description: >-
+  選擇性血清素再攝取抑制劑 (SSRI) 中毒為犬貓常見藥物中毒之一，因誤食飼主抗憂鬱藥物（如 fluoxetine、sertraline、paroxetine、citalopram）引起血清素症候群 (serotonin
+  syndrome)。犬亦可因獸醫處方 fluoxetine 過量而中毒。
 aliases:
-  - { alias: 血清素症候群, language: zh }
-  - { alias: SSRI Overdose, language: en }
-  - { alias: Serotonin Syndrome, language: en }
-  - { alias: Selective Serotonin Reuptake Inhibitor Toxicosis, language: en }
-
+  - alias: 血清素症候群
+    language: zh
+  - alias: SSRI Overdose
+    language: en
+  - alias: Serotonin Syndrome
+    language: en
+  - alias: Selective Serotonin Reuptake Inhibitor Toxicosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓 fluoxetine 用於行為問題。貓對 SSRI 較犬敏感。5 mg fluoxetine 在小型貓即可引起症狀。
-
 etiology:
   categories:
     - name: 毒性機制
@@ -32,7 +35,6 @@ etiology:
         - Paroxetine (Paxil)
         - Citalopram/Escitalopram (Celexa/Lexapro)
         - Fluvoxamine (Luvox)
-
 clinicalSigns:
   early:
     - 躁動、焦慮
@@ -47,7 +49,6 @@ clinicalSigns:
     - 癲癇
     - 瞳孔散大
     - 嚴重者：橫紋肌溶解、DIC
-
 diagnosis:
   primaryTests:
     - name: 暴露史
@@ -59,7 +60,6 @@ diagnosis:
     - 心電圖
     - CBC、生化（CK）
     - 凝血功能（DIC 篩檢）
-
 treatment:
   principles:
     - Cyproheptadine 為特異性 serotonin 拮抗劑
@@ -75,9 +75,60 @@ treatment:
     - 嚴重震顫：methocarbamol
     - 避免同時給予 tramadol、MAOi 或其他血清素作用藥物
     - 住院監測 24-72 小時
-
 prognosis: SSRI 中毒在給予 cyproheptadine 與支持療法下多數預後良好。Fluoxetine 半衰期長（犬約 1-2 天）需更長觀察。併用 MAOi 或其他血清素藥物時風險顯著增加。致命案例多與嚴重高體溫相關。
-
 pubmedQueries:
   - query: '"SSRI" OR "serotonin syndrome" AND (toxicosis OR poisoning) AND (veterinary OR canine OR feline) AND "treatment"'
     frequency: monthly
+diagnosticAlgorithm:
+  title: SSRI 血清素症候群中毒 診斷流程
+  steps:
+    - step: 1
+      action: 暴露史與臨床評估
+      details: 確認SSRI藥物攝入和劑量
+      findings:
+        - 已知SSRI藥物攝入（fluoxetine、sertraline等）
+        - 發作時間評估（通常數小時內）
+        - 躁動不安
+        - 高體溫
+    - step: 2
+      action: 神經肌肉評估
+      details: 評估血清素症候群特徵性表現
+      findings:
+        - 肌陣攣和震顫
+        - 過度反射和肌肉僵硬
+        - 瞳孔散大
+        - 腹瀉和嘔吐
+    - step: 3
+      action: 監測與支持性檢查
+      details: 進行持續性生命徵象和實驗室監測
+      findings:
+        - 體溫持續監測（可致命性高熱）
+        - 心電圖監測（心律不整風險）
+        - 血壓監測
+        - CK升高（嚴重肌肉活動）
+    - step: 4
+      action: 鑑別診斷
+      details: 排除其他類似表現的中毒
+      findings:
+        - 與抗膽鹼藥物中毒鑑別
+        - 與交感神經興奮劑中毒鑑別
+        - 排除惡性高熱
+        - 藥物交互作用評估（MAOIs等）
+clinicalPearls:
+  - 賽庚啶（cyproheptadine）是血清素症候群的特異性拮抗劑，應在藥物清單中備用
+  - 不要使用 acepromazine 鎮靜，因其可能降低癲癇閾值且加重低血壓
+  - 體溫控制極為重要 — 高熱（>41°C）是預後不良的主要指標
+  - 如果犬正在服用治療劑量的 SSRI，同時攝入其他血清素作用藥物（如 tramadol）也可引發血清素症候群
+monitoringItems:
+  - 持續體溫監測（目標 <39.5°C）
+  - 心電圖及血壓監測
+  - 每 4-6 小時評估神經學狀態
+  - 監測 CK 及腎功能（橫紋肌溶解風險）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: mydriasis
+    frequency: common
+ddxSource: book

@@ -3,23 +3,24 @@ nameEn: Systemic Inflammatory Response Syndrome
 nameZh: 全身性發炎反應症候群
 bodySystem: emergency
 description: 由感染性或非感染性原因觸發的全身性過度炎症反應，以體溫、心率、呼吸頻率與白血球計數異常為特徵。可進展為敗血症、多器官功能障礙與死亡。
-
 aliases:
-  - { alias: SIRS, language: en }
-  - { alias: 全身性炎症反應, language: zh }
-  - { alias: Sepsis, language: en }
-  - { alias: 敗血症, language: zh }
-
+  - alias: SIRS
+    language: en
+  - alias: 全身性炎症反應
+    language: zh
+  - alias: Sepsis
+    language: en
+  - alias: 敗血症
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
-    notes: "犬 SIRS 診斷標準（符合 ≥2 項）：體溫 >39.2°C 或 <37.8°C；心率 >120 bpm；呼吸 >20 次/min；WBC >16,000 或 <6,000 /μL 或 >3% band"
+    notes: 犬 SIRS 診斷標準（符合 ≥2 項）：體溫 >39.2°C 或 <37.8°C；心率 >120 bpm；呼吸 >20 次/min；WBC >16,000 或 <6,000 /μL 或 >3% band
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
-    notes: "貓 SIRS 診斷標準（符合 ≥3 項）：體溫 >39.7°C 或 <37.8°C；心率 >225 bpm 或 <140 bpm；呼吸 >40 次/min；WBC >19,500 或 <5,000 /μL 或 >5% band"
-
+    notes: 貓 SIRS 診斷標準（符合 ≥3 項）：體溫 >39.7°C 或 <37.8°C；心率 >225 bpm 或 <140 bpm；呼吸 >40 次/min；WBC >19,500 或 <5,000 /μL 或 >5% band
 etiology:
   categories:
     - name: 感染性 (Sepsis)
@@ -45,7 +46,6 @@ etiology:
         - 凝血瀑布活化 (DIC)
         - 血管內皮損傷與通透性增加
         - 組織灌流不足
-
 clinicalSigns:
   early:
     - 發燒或低體溫
@@ -67,16 +67,15 @@ clinicalSigns:
     - ARDS
     - 肝衰竭
     - 多器官功能障礙症候群 (MODS)
-
 diagnosis:
   primaryTests:
     - name: CBC
-      notes: "白血球升高伴左移或白血球減少（耗竭）。血小板減少提示 DIC 風險"
+      notes: 白血球升高伴左移或白血球減少（耗竭）。血小板減少提示 DIC 風險
     - name: 血液乳酸
-      notes: ">2.5 mmol/L 提示組織低灌流。連續監測乳酸清除率為重要預後指標"
+      notes: '>2.5 mmol/L 提示組織低灌流。連續監測乳酸清除率為重要預後指標'
   imaging:
     - name: 聚焦超音波 (AFAST/TFAST)
-      notes: "快速評估胸腹腔積液。尋找感染源（腹水、膿胸等）"
+      notes: 快速評估胸腹腔積液。尋找感染源（腹水、膿胸等）
   additional:
     - 生化 (肝腎功能、葡萄糖、電解質)
     - 凝血功能 (PT/aPTT、D-dimer、fibrinogen)
@@ -84,7 +83,6 @@ diagnosis:
     - 血液培養 (懷疑菌血症時)
     - 尿液分析與培養
     - C-反應蛋白 (CRP，犬) / 血清澱粉樣蛋白 A (SAA，貓)
-
 treatment:
   principles:
     - 早期目標導向液體復甦
@@ -101,42 +99,113 @@ treatment:
     - 新鮮冷凍血漿 (若 DIC 或低白蛋白)
     - 感染源控制 (外科引流膿瘍、清創等)
     - 連續監測：心電圖、血壓、尿量、乳酸、血氧
-
 prognosis: SIRS 預後取決於病因與器官受損程度。單純 SIRS 死亡率約 20-30%，進展為敗血症約 40-50%，發展為 MODS 死亡率可達 70-90%。乳酸清除率為最重要的預後指標之一。早期積極治療可顯著改善存活率。
-
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
     title: Systemic inflammatory response syndrome, sepsis, and multiple organ dysfunction
     url: https://pubmed.ncbi.nlm.nih.gov/21029299/
     type: review
-    pmid: "21029299"
+    pmid: '21029299'
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: Evaluation of the Surviving Sepsis Campaign guidelines for resuscitation in dogs
     url: https://pubmed.ncbi.nlm.nih.gov/31368155/
     type: review
-    pmid: "31368155"
+    pmid: '31368155'
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
     title: Definition and clinical assessment of SIRS and sepsis in dogs and cats
     url: https://pubmed.ncbi.nlm.nih.gov/11542441/
     type: consensus
-    pmid: "11542441"
+    pmid: '11542441'
   - sourceOrg: JAMA
     title: International Consensus Criteria for Pediatric Sepsis and Septic Shock.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10900966/
     type: consensus
-    pmid: "38245889"
+    pmid: '38245889'
     relevance: primary
   - sourceOrg: Allergy
     title: Recent developments in the immunopathology of COVID-19.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10108124/
     type: review
-    pmid: "36420736"
+    pmid: '36420736'
     relevance: primary
 pubmedQueries:
-  - query: '"systemic inflammatory response syndrome" OR "SIRS" OR "sepsis" AND (dog OR cat OR canine OR feline) AND ("guidelines" OR "consensus")'
+  - query: >-
+      "systemic inflammatory response syndrome" OR "SIRS" OR "sepsis" AND (dog OR cat OR canine OR feline) AND
+      ("guidelines" OR "consensus")
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "Bacterial Infections and Sepsis:"
+  chapter: DIG
+  sectionTitle: 'Bacterial Infections and Sepsis:'
   pdfPage: 496
+diagnosticAlgorithm:
+  title: 敗血症/全身炎症反應症候群 診斷流程
+  steps:
+    - step: 1
+      action: SIRS標準評估
+      details: 確認是否符合SIRS診斷標準（犬需2項以上，貓需3項以上）
+      findings:
+        - 體溫異常
+        - 心率加速
+        - 呼吸急促
+        - 白血球異常
+    - step: 2
+      action: 感染源調查
+      details: 確認SIRS加感染等於敗血症，尋找感染灶
+      findings:
+        - 腹腔感染腹膜炎/子宮蓄膿
+        - 肺炎
+        - 泌尿道感染
+        - 皮膚/軟組織感染或手術部位感染
+    - step: 3
+      action: 實驗室與培養
+      details: 血液學、生化、凝血、血液培養
+      findings:
+        - 乳酸升高組織低灌流指標
+        - 血糖低或高
+        - 凝血異常DIC篩查
+        - 血液培養抗生素使用前採集
+    - step: 4
+      action: 器官功能評估
+      details: 評估多器官功能障礙MODS
+      findings:
+        - 腎功能BUN/Creatinine升高寡尿
+        - 肝功能膽紅素/ALT升高
+        - 凝血DIC
+        - 血壓低血壓需升壓劑
+clinicalPearls:
+  - 乳酸鹽是評估組織灌注和預後的重要指標
+  - 敗血症的黃金1小時：第一小時內完成液體復甦和抗生素給予
+  - 低血糖在敗血症中常見且為不良預後指標
+  - 貓的SIRS標準與犬不同，貓可能表現為心搏過慢而非過速
+  - 血液培養應在抗生素使用前採集，但不應延遲抗生素給予
+  - 子宮蓄膿是犬最常見的敗血症原因之一
+monitoringItems:
+  - 生命徵象（每1-4小時）
+  - 乳酸鹽（每4-8小時）
+  - 尿量（目標>1 mL/kg/hr）
+  - 血壓（MAP目標>65 mmHg）
+  - 血糖
+  - 凝血功能
+  - 器官功能指標
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+associatedLabFindings:
+  - labId: hypoglycaemia
+    frequency: common
+  - labId: bilirubin-elevated
+    frequency: uncommon
+ddxSource: book

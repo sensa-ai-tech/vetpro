@@ -2,14 +2,18 @@ slug: osteochondroma
 nameEn: Osteochondroma
 nameZh: 骨軟骨瘤
 bodySystem: oncology
-description: 骨軟骨瘤 (osteochondroma) 為良性骨腫瘤，由軟骨帽覆蓋的骨性突起構成，可為單發或多發（多發性軟骨性外骨疣，hereditary multiple exostoses）。犬常見於長骨幹骺端，多為偶然發現。貓的骨軟骨瘤可能與 FeLV 感染相關，且惡性轉化風險較高。
-
+description: >-
+  骨軟骨瘤 (osteochondroma) 為良性骨腫瘤，由軟骨帽覆蓋的骨性突起構成，可為單發或多發（多發性軟骨性外骨疣，hereditary multiple exostoses）。犬常見於長骨幹骺端，多為偶然發現。貓的骨軟骨瘤可能與
+  FeLV 感染相關，且惡性轉化風險較高。
 aliases:
-  - { alias: 骨軟骨外骨疣, language: zh }
-  - { alias: 軟骨性外骨疣, language: zh }
-  - { alias: Osteochondral Exostosis, language: en }
-  - { alias: Multiple Cartilaginous Exostoses, language: en }
-
+  - alias: 骨軟骨外骨疣
+    language: zh
+  - alias: 軟骨性外骨疣
+    language: zh
+  - alias: Osteochondral Exostosis
+    language: en
+  - alias: Multiple Cartilaginous Exostoses
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,21 +21,19 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓骨軟骨瘤可能與 FeLV 感染相關，可在成年後仍持續生長。惡性轉化為骨軟骨肉瘤 (osteochondrosarcoma) 的風險較犬高。
-
 etiology:
   categories:
     - name: 病因
       examples:
         - 生長板 (physis) 異常發育，軟骨細胞方向偏移形成外骨疣
         - 遺傳性多發型（EXT 基因突變）
-        - "貓：FeLV 逆轉錄病毒可能誘發"
+        - 貓：FeLV 逆轉錄病毒可能誘發
     - name: 好發部位
       examples:
         - 長骨幹骺端（股骨遠端、脛骨近端、肱骨近端）
         - 肋骨
         - 椎體
         - 肩胛骨
-
 clinicalSigns:
   early:
     - 觸診可發現硬質無痛腫塊
@@ -43,7 +45,6 @@ clinicalSigns:
     - 跛行
     - 椎體型可造成脊髓壓迫症狀
     - 快速增大或疼痛加劇提示惡性轉化
-
 diagnosis:
   primaryTests:
     - name: X-ray
@@ -52,9 +53,8 @@ diagnosis:
       notes: 評估腫瘤與周圍結構的關係，尤其椎體型。評估軟骨帽厚度（>2 cm 提示惡性轉化可能）
   additional:
     - 組織病理學（手術切除後確認良性）
-    - "貓：FeLV/FIV 篩檢"
+    - 貓：FeLV/FIV 篩檢
     - 胸腔 X-ray（排除惡性轉化後轉移）
-
 treatment:
   principles:
     - 無症狀者可保守觀察
@@ -67,16 +67,50 @@ treatment:
     - 疑似惡性轉化（快速生長、疼痛）立即手術
     - 術後組織病理確認切緣與良惡性
     - 復發罕見但需定期追蹤
-
 prognosis: 犬單發性骨軟骨瘤預後極佳，手術切除後復發罕見。多發型需長期追蹤惡性轉化風險。貓骨軟骨瘤預後較謹慎，尤其 FeLV 陽性者，惡性轉化風險較高。
-
-
 guidelineRefs:
   - sourceOrg: Scientific reports
     title: First Documented Pathologies in Tenontosaurus tilletti with Comments on Infection in Non-Avian Dinosaurs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6581885/
     type: research
-    pmid: "31213629"
+    pmid: '31213629'
 pubmedQueries:
   - query: '"osteochondroma" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 骨軟骨瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: X-ray
+          notes: 典型表現為骨性突起，與母骨骨皮質及骨髓腔連續。軟骨帽在 X-ray 上可能不可見。多發型可見多處病灶
+        - name: CT 掃描
+          notes: 評估腫瘤與周圍結構的關係，尤其椎體型。評估軟骨帽厚度（>2 cm 提示惡性轉化可能）
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 組織病理學（手術切除後確認良性）
+        - 貓：FeLV/FIV 篩檢
+        - 胸腔 X-ray（排除惡性轉化後轉移）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 無症狀者可保守觀察
+        - 有症狀或疑似惡性轉化者手術切除
+        - 貓的病變建議積極處理
+ddxSource: auto-generated

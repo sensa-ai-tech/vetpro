@@ -3,11 +3,11 @@ nameEn: Stertor and Stridor
 nameZh: 鼾聲與喘鳴
 bodySystem: respiratory
 description: Stertor 為上呼吸道軟組織振動產生的低沉鼾聲;Stridor 為氣流通過狹窄氣道產生的高音調喘鳴。兩者提示上呼吸道阻塞。
-
 aliases:
-  - { alias: 呼吸雜音, language: zh }
-  - { alias: Respiratory Noise, language: en }
-
+  - alias: 呼吸雜音
+    language: zh
+  - alias: Respiratory Noise
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 鼻咽疾病常見
-
 etiology:
   categories:
     - name: Stertor 原因
@@ -30,7 +29,6 @@ etiology:
         - 喉麻痺
         - 氣管塌陷
         - 喉腫瘤
-
 clinicalSigns:
   early:
     - 呼吸雜音
@@ -39,31 +37,57 @@ clinicalSigns:
     - 呼吸困難
     - 發紺
     - 暈厥
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
-      notes: "區分 stertor (鼻咽) vs stridor (喉氣管)"
+      notes: 區分 stertor (鼻咽) vs stridor (喉氣管)
     - name: 喉鏡檢查
-      notes: "評估喉及軟顎"
+      notes: 評估喉及軟顎
     - name: 胸部 X 光
-      notes: "評估氣管"
+      notes: 評估氣管
     - name: CT/內視鏡
-      notes: "評估鼻咽腔"
+      notes: 評估鼻咽腔
   differentialDiagnoses:
     - 依原發病因而定
-
 treatment:
   medical:
     - 治療原發病因
     - 外科矯正 (短頭犬氣道症候群、軟顎切除)
     - 氧氣治療 (急性期)
     - 控制體重
-
 prognosis:
-  general: "取決於原發病因;短頭犬氣道症候群手術後改善;喉麻痺需外科處理"
-
+  general: 取決於原發病因;短頭犬氣道症候群手術後改善;喉麻痺需外科處理
 prevention:
   - 避免繁殖短頭品種極端特徵
   - 控制體重
   - 避免過熱及劇烈運動
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: stertor-stridor
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 鼾聲與喘鳴 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - stertor-stridor 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 區分 stertor (鼻咽) vs stridor (喉氣管)
+        - name: 喉鏡檢查
+          notes: 評估喉及軟顎
+        - name: 胸部 X 光
+          notes: 評估氣管
+ddxSource: auto-generated

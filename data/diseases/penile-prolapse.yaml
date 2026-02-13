@@ -2,13 +2,16 @@ slug: penile-prolapse
 nameEn: Penile Prolapse
 nameZh: 陰莖脫垂
 bodySystem: reproductive
-description: 陰莖脫垂 (penile prolapse) 為陰莖持續暴露於包皮外的異常狀態，可因嵌頓包莖 (paraphimosis)、脊髓損傷、陰莖外傷或腫瘤引起。暴露的陰莖黏膜迅速乾燥、水腫與壞死。需緊急處理。與 paraphimosis 密切相關但亦可見於非勃起狀態的陰莖突出。
-
+description: >-
+  陰莖脫垂 (penile prolapse) 為陰莖持續暴露於包皮外的異常狀態，可因嵌頓包莖 (paraphimosis)、脊髓損傷、陰莖外傷或腫瘤引起。暴露的陰莖黏膜迅速乾燥、水腫與壞死。需緊急處理。與 paraphimosis
+  密切相關但亦可見於非勃起狀態的陰莖突出。
 aliases:
-  - { alias: 陰莖突出, language: zh }
-  - { alias: Penile Protrusion, language: en }
-  - { alias: Priapism-Related Prolapse, language: en }
-
+  - alias: 陰莖突出
+    language: zh
+  - alias: Penile Protrusion
+    language: en
+  - alias: Priapism-Related Prolapse
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓陰莖脫垂可見於 urethral obstruction 相關持續刺激、脊髓損傷或鎮靜藥物副作用。
-
 etiology:
   categories:
     - name: 常見原因
@@ -30,7 +32,6 @@ etiology:
       examples:
         - 鎮靜藥物（acepromazine → priapism）
         - 麻醉藥物
-
 clinicalSigns:
   early:
     - 陰莖持續暴露於包皮外
@@ -42,7 +43,6 @@ clinicalSigns:
     - 組織壞死
     - 排尿困難
     - 疼痛
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
@@ -53,7 +53,6 @@ diagnosis:
     - 腹部/骨盆 X-ray（骨折排除）
     - 陰莖超音波（血流評估、腫塊排除）
     - 脊椎影像（神經原因評估）
-
 treatment:
   principles:
     - 組織保濕保護
@@ -68,9 +67,44 @@ treatment:
     - 嚴重壞死：陰莖截斷術 + 尿道造口
     - 腫瘤：手術切除
     - 術後 E-collar
-
 prognosis: 可復位的陰莖脫垂預後佳。神經性脫垂需長期管理。嚴重壞死需截斷但可保留排尿功能。原因可矯正者預後良好。
-
 pubmedQueries:
   - query: '"penile prolapse" OR "penile protrusion" AND (veterinary OR canine OR feline) AND ("treatment" OR "surgery")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 陰莖脫垂 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pollakiuria 相關症狀
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 評估陰莖暴露原因（包皮狹窄、勃起、腫塊）。評估組織活力
+        - name: 神經學檢查
+          notes: 排除脊髓/骨盆神經損傷（球海綿體反射、肛門反射）
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 腹部/骨盆 X-ray（骨折排除）
+        - 陰莖超音波（血流評估、腫塊排除）
+        - 脊椎影像（神經原因評估）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 組織保濕保護
+        - 針對原因治療
+        - 壞死組織需手術
+ddxSource: auto-generated

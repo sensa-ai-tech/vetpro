@@ -3,13 +3,15 @@ nameEn: Phenobarbital Hepatotoxicity
 nameZh: 苯巴比妥肝毒性
 bodySystem: toxicology
 description: 苯巴比妥肝毒性是長期使用苯巴比妥控制癲癇時可能發生的慢性肝損傷。苯巴比妥是犬癲癇的一線抗癲癇藥物，但長期使用可導致肝臟酵素誘導、膽汁鬱滯甚至嚴重肝衰竭。
-
 aliases:
-  - { alias: 苯巴比妥致肝損傷, language: zh }
-  - { alias: 苯巴比妥性肝病, language: zh }
-  - { alias: Phenobarbital-Induced Liver Injury, language: en }
-  - { alias: Phenobarbitone Hepatotoxicity, language: en }
-
+  - alias: 苯巴比妥致肝損傷
+    language: zh
+  - alias: 苯巴比妥性肝病
+    language: zh
+  - alias: Phenobarbital-Induced Liver Injury
+    language: en
+  - alias: Phenobarbitone Hepatotoxicity
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓使用苯巴比妥較少，肝毒性報告亦少。貓更常使用其他抗癲癇藥物。
-
 etiology:
   categories:
     - name: 藥物因素
@@ -34,7 +35,6 @@ etiology:
         - 膽汁鬱滯
         - 慢性進展至肝纖維化與肝硬化
         - 特異體質反應（idiosyncratic）偶見
-
 clinicalSigns:
   early:
     - ALP 升高（酵素誘導效應，常見且可能良性）
@@ -50,19 +50,17 @@ clinicalSigns:
     - 黃疸
     - 腹水
     - 凝血功能異常
-
 diagnosis:
   primaryTests:
     - name: 血液生化監測
-      notes: "區分酵素誘導（僅 ALP 升高）與真正肝損傷（ALT 同步升高、低白蛋白、膽紅素升高）。每6個月監測一次。"
+      notes: 區分酵素誘導（僅 ALP 升高）與真正肝損傷（ALT 同步升高、低白蛋白、膽紅素升高）。每6個月監測一次。
     - name: 苯巴比妥血清濃度
-      notes: "治療範圍 15-35 μg/mL。谷濃度（給藥前採血）。>35 μg/mL 肝毒性風險增加。"
+      notes: 治療範圍 15-35 μg/mL。谷濃度（給藥前採血）。>35 μg/mL 肝毒性風險增加。
   differentialDiagnoses:
     - 原發性慢性肝炎
     - 銅儲積性肝病
     - 肝臟腫瘤
     - 腎上腺皮質功能亢進（Cushing's disease，ALP 亦升高）
-
 treatment:
   medical:
     - 輕度酵素誘導：繼續用藥但加強監測
@@ -73,45 +71,81 @@ treatment:
     - Silymarin (milk thistle) 作為輔助肝保護
   surgical:
     - 不適用手術治療
-
 prognosis:
-  general: "早期發現並轉換藥物者預後良好，肝功能可部分或完全恢復。已進展至肝硬化者預後不良。ALP 單獨升高多為良性酵素誘導效應，ALT 同步持續升高才需積極處理。"
-
+  general: 早期發現並轉換藥物者預後良好，肝功能可部分或完全恢復。已進展至肝硬化者預後不良。ALP 單獨升高多為良性酵素誘導效應，ALT 同步持續升高才需積極處理。
 prevention:
   - 使用最低有效劑量控制癲癇
   - 每6個月監測肝功能（ALT、ALP、白蛋白）與苯巴比妥血清濃度
   - 血清濃度維持在 15-30 μg/mL
   - 考慮肝保護劑（SAMe）預防性使用
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
     title: The effect of oral zonisamide treatment on serum phenobarbital concentrations in epileptic dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11168201/
     type: research
-    pmid: "38868500"
+    pmid: '38868500'
     relevance: supporting
   - sourceOrg: Molecules (Basel, Switzerland)
-    title: CYP450s-Activity Relations of Celastrol to Interact with Triptolide Reveal the Reasons of Hepatotoxicity of Tripterygium wilfordii.
+    title: >-
+      CYP450s-Activity Relations of Celastrol to Interact with Triptolide Reveal the Reasons of Hepatotoxicity of
+      Tripterygium wilfordii.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6600472/
     type: research
-    pmid: "31181731"
+    pmid: '31181731'
     relevance: supporting
   - sourceOrg: Scientific reports
-    title: The enhanced atorvastatin hepatotoxicity in diabetic rats was partly attributed to the upregulated hepatic Cyp3a and SLCO1B1.
+    title: >-
+      The enhanced atorvastatin hepatotoxicity in diabetic rats was partly attributed to the upregulated hepatic Cyp3a
+      and SLCO1B1.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5021965/
     type: research
-    pmid: "27624558"
+    pmid: '27624558'
     relevance: supporting
   - sourceOrg: Brazilian journal of biology = Revista brasleira de biologia
     title: Antioxidant associated chemoprophylaxis effect of natural spice and green vegetable on hepatotoxicity.
     url: https://pubmed.ncbi.nlm.nih.gov/36629639/
     type: research
-    pmid: "36629639"
+    pmid: '36629639'
     relevance: supporting
   - sourceOrg: The Journal of toxicological sciences
-    title: The effects on the endocrine system under hepatotoxicity induction by phenobarbital and di(2-ethylhexyl)phthalate in intact juvenile male rats.
+    title: >-
+      The effects on the endocrine system under hepatotoxicity induction by phenobarbital and di(2-ethylhexyl)phthalate
+      in intact juvenile male rats.
     url: https://pubmed.ncbi.nlm.nih.gov/31270302/
     type: research
-    pmid: "31270302"
+    pmid: '31270302'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: polyphagia
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 苯巴比妥肝毒性 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - polyuria-polydipsia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液生化監測
+          notes: 區分酵素誘導（僅 ALP 升高）與真正肝損傷（ALT 同步升高、低白蛋白、膽紅素升高）。每6個月監測一次。
+        - name: 苯巴比妥血清濃度
+          notes: 治療範圍 15-35 μg/mL。谷濃度（給藥前採血）。>35 μg/mL 肝毒性風險增加。
+ddxSource: auto-generated

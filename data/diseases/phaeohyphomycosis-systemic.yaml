@@ -3,13 +3,15 @@ nameEn: Phaeohyphomycosis Systemic
 nameZh: 全身性暗色絲孢菌病
 bodySystem: infectious
 description: 由產生黑色素的暗色真菌引起的全身性深部真菌感染,常侵犯中樞神經系統、呼吸系統及皮下組織。主要見於免疫抑制犬貓,預後通常不良。
-
 aliases:
-  - { alias: 暗色真菌病, language: zh }
-  - { alias: 黑黴菌病, language: zh }
-  - { alias: Dematiaceous Fungal Infection, language: en }
-  - { alias: Black Fungal Disease, language: en }
-
+  - alias: 暗色真菌病
+    language: zh
+  - alias: 黑黴菌病
+    language: zh
+  - alias: Dematiaceous Fungal Infection
+    language: en
+  - alias: Black Fungal Disease
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較犬罕見,常見鼻腔及呼吸道侵犯
-
 etiology:
   categories:
     - name: 病原真菌
@@ -33,7 +34,6 @@ etiology:
         - 免疫抑制(FIV/FeLV,化療,長期類固醇)
         - 糖尿病或庫欣氏症
         - 外傷後真菌植入
-
 clinicalSigns:
   early:
     - 非特異性症狀:發燒、食慾不振、體重減輕
@@ -44,24 +44,22 @@ clinicalSigns:
     - 皮下腫塊形成,可能潰瘍並排出黑色分泌物
     - 全身性感染:多器官衰竭、敗血性休克
     - 眼部侵犯:葡萄膜炎、視網膜剝離、眼球突出
-
 diagnosis:
   primaryTests:
     - name: MRI或CT掃描
-      notes: "腦部可見環狀強化病灶,常位於額葉或基底核區"
+      notes: 腦部可見環狀強化病灶,常位於額葉或基底核區
     - name: 腦脊髓液分析
-      notes: "蛋白質升高,混合性細胞增多,細胞學可見暗色真菌"
+      notes: 蛋白質升高,混合性細胞增多,細胞學可見暗色真菌
     - name: 真菌培養及鑑定
-      notes: "需使用特殊培養基,菌落呈黑色或褐色,生長緩慢"
+      notes: 需使用特殊培養基,菌落呈黑色或褐色,生長緩慢
     - name: 組織切片
-      notes: "肉芽腫性炎症,PAS及GMS染色見黑色素化菌絲"
+      notes: 肉芽腫性炎症,PAS及GMS染色見黑色素化菌絲
   differentialDiagnoses:
     - 其他真菌性腦膜腦炎(隱球菌/芽生菌)
     - 細菌性腦膜炎或腦膿瘍
     - 原發或轉移性腦腫瘤
     - 壞死性腦炎(GME/NME)
     - 犬瘟熱腦炎
-
 treatment:
   medical:
     - 全身抗真菌藥:Voriconazole 2.5-3 mg/kg IV或PO q12h,可穿透血腦屏障
@@ -72,13 +70,57 @@ treatment:
     - 治療需持續6-12個月,需監測藥物血中濃度及肝腎功能
   surgical:
     - 侷限性腦部或皮下病灶可考慮外科清創,搭配長期抗真菌治療
-
 prognosis:
-  general: "預後極差,特別是中樞神經感染病例。即使積極治療,存活期中位數僅2-6個月,死亡率超過80%。侷限性皮下感染預後較佳。治療反應與病灶範圍、免疫狀態及早期診斷相關。"
-
+  general: 預後極差,特別是中樞神經感染病例。即使積極治療,存活期中位數僅2-6個月,死亡率超過80%。侷限性皮下感染預後較佳。治療反應與病灶範圍、免疫狀態及早期診斷相關。
 prevention:
   - 免疫抑制動物避免接觸土壤及腐爛植物
   - 外傷後徹底清創及消毒
   - FIV/FeLV陽性貓隻避免戶外活動
   - 環境控制真菌孢子暴露
   - 早期發現及治療以改善預後
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: sneezing
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: seizures
+    frequency: common
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: blindness
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 全身性暗色絲孢菌病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: MRI或CT掃描
+          notes: 腦部可見環狀強化病灶,常位於額葉或基底核區
+        - name: 腦脊髓液分析
+          notes: 蛋白質升高,混合性細胞增多,細胞學可見暗色真菌
+        - name: 真菌培養及鑑定
+          notes: 需使用特殊培養基,菌落呈黑色或褐色,生長緩慢
+ddxSource: auto-generated

@@ -3,18 +3,18 @@ nameEn: Border Collie Epilepsy
 nameZh: 邊境牧羊犬癲癇
 bodySystem: neurology
 description: 邊境牧羊犬好發的特發性癲癇,品種遺傳傾向明顯。青年至中年期發病,表現為反覆全身性或局部性癲癇發作,需長期抗癲癇藥物控制。
-
 aliases:
-  - { alias: 邊牧特發性癲癇, language: zh }
-  - { alias: Border Collie Idiopathic Epilepsy, language: en }
-  - { alias: 邊境牧羊犬原發性癲癇, language: zh }
-
+  - alias: 邊牧特發性癲癇
+    language: zh
+  - alias: Border Collie Idiopathic Epilepsy
+    language: en
+  - alias: 邊境牧羊犬原發性癲癇
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 邊境牧羊犬為高風險品種,疑似多基因遺傳,發病年齡6個月至5歲,無性別差異
-
 etiology:
   categories:
     - name: 遺傳性神經元過度興奮
@@ -27,7 +27,6 @@ etiology:
         - GABA抑制功能不足
         - 谷氨酸興奮性增加
         - 癲癇放電閾值降低
-
 clinicalSigns:
   early:
     - 全身性強直陣攣發作(grand mal)
@@ -39,24 +38,22 @@ clinicalSigns:
     - 可能進展為群集性發作(24小時內多次)
     - 癲癇重積狀態(持續>5分鐘或連續發作,急症)
     - 發作間期完全正常
-
 diagnosis:
   primaryTests:
     - name: 排除性診斷
-      notes: "正常血液生化、CBC、T4、膽酸,正常神經學檢查(間歇期)"
+      notes: 正常血液生化、CBC、T4、膽酸,正常神經學檢查(間歇期)
     - name: MRI
-      notes: "排除結構性病變(腫瘤、腦炎、腦積水、先天異常)"
+      notes: 排除結構性病變(腫瘤、腦炎、腦積水、先天異常)
     - name: 腦脊髓液分析
-      notes: "正常,排除腦炎或感染性疾病"
+      notes: 正常,排除腦炎或感染性疾病
     - name: 發作日記
-      notes: "記錄發作日期、時間、持續時間、嚴重度,評估治療效果"
+      notes: 記錄發作日期、時間、持續時間、嚴重度,評估治療效果
   differentialDiagnoses:
     - 反應性癲癇(低血糖、肝性腦病變、電解質異常、中毒)
     - 結構性癲癇(腦腫瘤、腦炎、腦血管病變)
     - 心源性暈厥
     - 前庭疾病
     - Fly-snapping syndrome(邊牧特有行為異常)
-
 treatment:
   medical:
     - 用藥指徵:發作頻率>每2個月1次,或群集發作,或癲癇重積
@@ -66,20 +63,44 @@ treatment:
     - Zonisamide 5-10 mg/kg PO q12h(輔助控制)
     - 急性處理:Diazepam 0.5-1 mg/kg IV/rectal,Midazolam 0.2 mg/kg intranasal
     - 定期監測:肝腎功能、血中藥物濃度(phenobarbital每6個月)
-
 prognosis:
-  general: "多數病例經單一或併用藥物可控制,約70%發作頻率減少≥50%。需終生服藥,不可突然停藥。部分難治型癲癇預後較差,生活品質受影響,需多重藥物控制。"
-
+  general: 多數病例經單一或併用藥物可控制,約70%發作頻率減少≥50%。需終生服藥,不可突然停藥。部分難治型癲癇預後較差,生活品質受影響,需多重藥物控制。
 prevention:
   - 避免繁殖癲癇犬隻及其直系親屬
   - 高風險家系進行遺傳諮詢
   - 避免誘發因素(壓力、睡眠剝奪)
   - 規律服藥與定期監測
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
     title: Phenotypic Characterization of Idiopathic Epilepsy in Border Collies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9133619/
     type: research
-    pmid: "35647099"
+    pmid: '35647099'
+associatedSymptoms:
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: blindness
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+diagnosticAlgorithm:
+  title: 邊境牧羊犬癲癇 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - seizures 相關症狀
+        - blindness 相關症狀
+        - ptyalism 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 排除性診斷
+          notes: 正常血液生化、CBC、T4、膽酸,正常神經學檢查(間歇期)
+        - name: MRI
+          notes: 排除結構性病變(腫瘤、腦炎、腦積水、先天異常)
+        - name: 腦脊髓液分析
+          notes: 正常,排除腦炎或感染性疾病
+ddxSource: auto-generated

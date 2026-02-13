@@ -3,12 +3,13 @@ nameEn: Chemodectoma Oncology
 nameZh: 化學感受器瘤
 bodySystem: oncology
 description: 主動脈體或頸動脈體化學感受器細胞的腫瘤。位於心基底部。短頭品種犬好發。生長通常緩慢，轉移率低。常因心包膜積液被發現。
-
 aliases:
-  - { alias: "Aortic Body Tumor", language: en }
-  - { alias: "Heart Base Tumor", language: en }
-  - { alias: "主動脈體瘤", language: zh }
-
+  - alias: Aortic Body Tumor
+    language: en
+  - alias: Heart Base Tumor
+    language: en
+  - alias: 主動脈體瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,14 +17,12 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓極罕見。
-
 etiology:
   categories:
     - name: 腫瘤性
       examples:
         - 化學感受器細胞增生
         - 慢性低氧可能為促發因子（短頭品種）
-
 clinicalSigns:
   early:
     - 可能無症狀
@@ -32,14 +31,12 @@ clinicalSigns:
     - 心包膜積液
     - 心包填塞
     - 呼吸困難
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波
       notes: 心基底部腫塊
     - name: CT
       notes: 評估腫塊大小與侵犯範圍
-
 treatment:
   principles:
     - 心包膜切除控制積液
@@ -49,41 +46,75 @@ treatment:
     - 手術切除腫塊（困難但可能）
     - 化療效果有限
     - 放射治療（報告有限）
-
 prognosis: 生長緩慢。心包膜切除後中位存活 > 1-2 年。完全切除預後更佳。轉移率低。
-
-
 guidelineRefs:
   - sourceOrg: Cancers
-    title: "Endocrine and Neuroendocrine Tumors Special Issue-Checkpoint Inhibitors for Adrenocortical Carcinoma and Metastatic Pheochromocytoma and Paraganglioma: Do They Work?"
+    title: >-
+      Endocrine and Neuroendocrine Tumors Special Issue-Checkpoint Inhibitors for Adrenocortical Carcinoma and
+      Metastatic Pheochromocytoma and Paraganglioma: Do They Work?
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8833823/
     type: review
-    pmid: "35158739"
+    pmid: '35158739'
   - sourceOrg: The Journal of clinical investigation
-    title: "Hif-2&#x3b1; programs oxygen chemosensitivity in chromaffin cells."
+    title: Hif-2&#x3b1; programs oxygen chemosensitivity in chromaffin cells.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11405041/
     type: research
-    pmid: "39106106"
-  - sourceOrg: "Veterinary radiology &amp; ultrasound : the official journal of the American College of Veterinary Radiology and the International Veterinary Radiology Association"
+    pmid: '39106106'
+  - sourceOrg: >-
+      Veterinary radiology &amp; ultrasound : the official journal of the American College of Veterinary Radiology and
+      the International Veterinary Radiology Association
     title: Imaging features of retroperitoneal extra-adrenal paragangliomas in 10 dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9546460/
     type: research
-    pmid: "35050528"
-  - sourceOrg: "Cell death &amp; disease"
-    title: GIPC2 is an endocrine-specific tumor suppressor gene for both sporadic and hereditary tumors of RET- and SDHB-, but not VHL-associated clusters of pheochromocytoma/paraganglioma.
+    pmid: '35050528'
+  - sourceOrg: Cell death &amp; disease
+    title: >-
+      GIPC2 is an endocrine-specific tumor suppressor gene for both sporadic and hereditary tumors of RET- and SDHB-,
+      but not VHL-associated clusters of pheochromocytoma/paraganglioma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8096975/
     type: research
-    pmid: "33947839"
-  - sourceOrg: "Journal of vascular and interventional radiology : JVIR"
-    title: Relative Initial Weight Is Associated with Improved Survival without Altering Tumor Latency in a Translational Rat Model of Diethylnitrosamine-Induced Hepatocellular Carcinoma and Transarterial Embolization.
+    pmid: '33947839'
+  - sourceOrg: 'Journal of vascular and interventional radiology : JVIR'
+    title: >-
+      Relative Initial Weight Is Associated with Improved Survival without Altering Tumor Latency in a Translational Rat
+      Model of Diethylnitrosamine-Induced Hepatocellular Carcinoma and Transarterial Embolization.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5593422/
     type: research
-    pmid: "28495453"
+    pmid: '28495453'
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
     title: Computed tomography angiography features of a retroperitoneal extra-adrenal paraganglioma in a cat.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11195497/
     type: case-report
-    pmid: "38952751"
+    pmid: '38952751'
 pubmedQueries:
   - query: '"chemodectoma" OR "aortic body tumor" AND (veterinary OR canine) AND ("treatment" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 化學感受器瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波
+          notes: 心基底部腫塊
+        - name: CT
+          notes: 評估腫塊大小與侵犯範圍
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 心包膜切除控制積液
+        - 手術切除（可行時）
+ddxSource: auto-generated

@@ -3,12 +3,13 @@ nameEn: Urticaria
 nameZh: 蕁麻疹
 bodySystem: immunology
 description: 蕁麻疹 (urticaria/hives) 為皮膚真皮層淺表水腫引起的暫時性膨疹。犬表現為全身散布的隆起性皮膚腫塊，毛髮豎立。常與血管性水腫同時出現。為第一型過敏反應的皮膚表現。多數為自限性，但需警惕進展為全身過敏反應。
-
 aliases:
-  - { alias: 風疹塊, language: zh }
-  - { alias: Hives, language: en }
-  - { alias: Wheals, language: en }
-
+  - alias: 風疹塊
+    language: zh
+  - alias: Hives
+    language: en
+  - alias: Wheals
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓蕁麻疹較犬罕見且不易辨識（被毛遮蔽）。
-
 etiology:
   categories:
     - name: 致病機制
@@ -33,7 +33,6 @@ etiology:
         - 食物過敏
         - 植物接觸
         - 物理刺激（壓力、冷熱）
-
 clinicalSigns:
   early:
     - 全身散布隆起性皮膚腫塊
@@ -44,7 +43,6 @@ clinicalSigns:
     - 膨疹融合
     - 面部腫脹（合併血管性水腫）
     - 全身過敏反應（罕見但需警惕）
-
 diagnosis:
   primaryTests:
     - name: 臨床表現
@@ -54,7 +52,6 @@ diagnosis:
   additional:
     - 過敏原檢測（復發性蕁麻疹）
     - 皮膚生檢（慢性或非典型病例）
-
 treatment:
   principles:
     - 抗組織胺為首選
@@ -67,41 +64,81 @@ treatment:
     - 冷敷（緩解瘙癢）
     - 觀察 2-4 小時確認無進展
     - 輕度者多數 24 小時內自行消退
-
 prognosis: 蕁麻疹預後極佳，多數在數小時內自行消退或治療後迅速改善。極少數進展為全身過敏反應。復發性蕁麻疹需找出並避免特定誘因。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary medicine and science
-    title: "The First Report on Cat Flea (Ctenocephalides felis), a Zoonotic Haematophagous Insect Infestation in Humans in Bangladesh: A Case Report and Literature Review."
+    title: >-
+      The First Report on Cat Flea (Ctenocephalides felis), a Zoonotic Haematophagous Insect Infestation in Humans in
+      Bangladesh: A Case Report and Literature Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12477788/
     type: review
-    pmid: "41020664"
+    pmid: '41020664'
     relevance: primary
   - sourceOrg: Open veterinary journal
-    title: "Lumpy skin disease: A growing threat to the global livestock industry."
+    title: 'Lumpy skin disease: A growing threat to the global livestock industry.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11974308/
     type: review
-    pmid: "40201838"
+    pmid: '40201838'
     relevance: primary
   - sourceOrg: Nutrients
     title: IgE-Mediated Shellfish Allergy in Children.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10301456/
     type: review
-    pmid: "37375617"
+    pmid: '37375617'
     relevance: primary
   - sourceOrg: Veterinary sciences
-    title: Efficacy and Safety of Subcutaneous Allergen-Specific Immuno-Therapy in Horses with Allergic Cutaneous and Respiratory Diseases-A Systematic Review.
+    title: >-
+      Efficacy and Safety of Subcutaneous Allergen-Specific Immuno-Therapy in Horses with Allergic Cutaneous and
+      Respiratory Diseases-A Systematic Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10611411/
     type: review
-    pmid: "37888565"
+    pmid: '37888565'
     relevance: primary
   - sourceOrg: Journal of asthma and allergy
     title: Current and Future Strategies for the Diagnosis and Treatment of the Alpha-Gal Syndrome (AGS).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9307871/
     type: review
-    pmid: "35879928"
+    pmid: '35879928'
     relevance: primary
 pubmedQueries:
   - query: '"urticaria" AND (veterinary OR canine OR feline) AND ("treatment" OR "hypersensitivity")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: common
+  - symptomId: skin-pruritus
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 蕁麻疹 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cutaneous-masses 相關症狀
+        - skin-pruritus 相關症狀
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床表現
+          notes: 急性全身性膨疹（隆起、邊界清楚、消退快）即可診斷
+        - name: 病史
+          notes: 近期暴露史有助確認誘因
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 過敏原檢測（復發性蕁麻疹）
+        - 皮膚生檢（慢性或非典型病例）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 抗組織胺為首選
+        - 移除誘因
+        - 監測是否進展為全身過敏反應
+ddxSource: auto-generated

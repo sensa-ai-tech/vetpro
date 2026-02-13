@@ -3,18 +3,19 @@ nameEn: Avian Wet Pox
 nameZh: 禽類濕痘
 bodySystem: infectious
 description: 禽類濕痘為禽痘病毒感染的黏膜型表現，在口腔、咽喉、氣管及食道黏膜形成增生性偽膜病變，可導致呼吸道阻塞與進食困難，預後較乾痘差。
-
 aliases:
-  - { alias: 黏膜型禽痘, language: zh }
-  - { alias: 禽濕痘, language: zh }
-  - { alias: Diphtheritic avian pox, language: en }
-  - { alias: Wet form avian pox, language: en }
-
+  - alias: 黏膜型禽痘
+    language: zh
+  - alias: 禽濕痘
+    language: zh
+  - alias: Diphtheritic avian pox
+    language: en
+  - alias: Wet form avian pox
+    language: en
 species:
   - speciesCommon: bird
     prevalence: moderate
     notes: 可單獨發生或與乾痘混合型。金絲雀感染濕痘的比例較其他鳥種高。嚴重度較乾痘高，死亡率可達 50% 以上。
-
 etiology:
   categories:
     - name: 病原體
@@ -27,7 +28,6 @@ etiology:
         - 病毒在呼吸道與消化道黏膜上皮細胞內複製
         - 形成增生性壞死性偽膜
         - 偽膜可阻塞氣道
-
 clinicalSigns:
   early:
     - 口腔黏膜出現白色至黃色小斑塊
@@ -41,21 +41,19 @@ clinicalSigns:
     - 鼻分泌物
     - 消瘦與脫水
     - 窒息死亡
-
 diagnosis:
   primaryTests:
     - name: 口腔檢查
-      notes: "口腔、咽喉黃白色偽膜為典型表現。偽膜不易剝離，強行剝離會出血"
+      notes: 口腔、咽喉黃白色偽膜為典型表現。偽膜不易剝離，強行剝離會出血
     - name: 組織病理學
-      notes: "黏膜上皮增生壞死，細胞質內嗜酸性包涵體"
+      notes: 黏膜上皮增生壞死，細胞質內嗜酸性包涵體
     - name: PCR 檢測
-      notes: "偽膜組織 PCR 確認病毒"
+      notes: 偽膜組織 PCR 確認病毒
   differentialDiagnoses:
     - 念珠菌感染
     - 毛滴蟲感染
     - 維生素 A 缺乏
     - 細菌性口腔炎
-
 treatment:
   medical:
     - 輕柔清除口腔偽膜（避免損傷出血）
@@ -65,31 +63,61 @@ treatment:
     - 維生素 A 補充
     - 保溫與輸液支持
     - 嚴重氣道阻塞時可能需要氣囊管插管
-
 prognosis:
-  general: "預後謹慎至不良。死亡率可達 50-70%。嚴重氣道阻塞者預後極差。早期輕症病例在積極支持療法下可能存活。康復後產生免疫力。"
-
+  general: 預後謹慎至不良。死亡率可達 50-70%。嚴重氣道阻塞者預後極差。早期輕症病例在積極支持療法下可能存活。康復後產生免疫力。
 prevention:
   - 防蚊措施
   - 良好通風減少氣溶膠傳播
   - 隔離感染個體
   - 環境消毒
   - 維持良好營養狀態
-
-
 guidelineRefs:
   - sourceOrg: Veterinary medicine international
-    title: Isolation and Molecular Detection of Pigeonpox Virus in a Pigeon With Both Cutaneous and Diphtheritic Forms of Pigeon Pox Disease in Ghana.
+    title: >-
+      Isolation and Molecular Detection of Pigeonpox Virus in a Pigeon With Both Cutaneous and Diphtheritic Forms of
+      Pigeon Pox Disease in Ghana.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12580035/
     type: research
-    pmid: "41185643"
+    pmid: '41185643'
   - sourceOrg: Archives of Razi Institute
     title: Cytokine Immune Response Following Vaccination against Fowl Pox Disease in Specific Pathogen Free Chickens.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12572658/
     type: research
-    pmid: "41179620"
+    pmid: '41179620'
   - sourceOrg: Poultry science
-    title: "Research Note: Simultaneous detection of infectious laryngotracheitis virus, fowlpox virus, and reticuloendotheliosis virus in chicken specimens."
+    title: >-
+      Research Note: Simultaneous detection of infectious laryngotracheitis virus, fowlpox virus, and
+      reticuloendotheliosis virus in chicken specimens.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7921870/
     type: research
-    pmid: "33647723"
+    pmid: '33647723'
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: common
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類濕痘 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - dysphagia 相關症狀
+        - weight-loss 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 口腔檢查
+          notes: 口腔、咽喉黃白色偽膜為典型表現。偽膜不易剝離，強行剝離會出血
+        - name: 組織病理學
+          notes: 黏膜上皮增生壞死，細胞質內嗜酸性包涵體
+        - name: PCR 檢測
+          notes: 偽膜組織 PCR 確認病毒
+ddxSource: auto-generated

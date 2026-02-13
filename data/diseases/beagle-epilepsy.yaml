@@ -3,18 +3,18 @@ nameEn: Beagle Epilepsy
 nameZh: 米格魯癲癇
 bodySystem: neurology
 description: 米格魯犬常見的特發性癲癇,品種遺傳傾向導致反覆癲癇發作。通常於青年期發病,表現為全身性或局部性痙攣,需長期抗癲癇藥物控制。
-
 aliases:
-  - { alias: 米格魯特發性癲癇, language: zh }
-  - { alias: Beagle Idiopathic Epilepsy, language: en }
-  - { alias: 米格魯原發性癲癇, language: zh }
-
+  - alias: 米格魯特發性癲癇
+    language: zh
+  - alias: Beagle Idiopathic Epilepsy
+    language: en
+  - alias: 米格魯原發性癲癇
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 米格魯為高風險品種,疑似多基因遺傳,發病年齡1-5歲,無性別差異
-
 etiology:
   categories:
     - name: 遺傳性神經元過度興奮
@@ -27,7 +27,6 @@ etiology:
         - GABA神經傳導不足
         - 谷氨酸興奮性過度
         - 癲癇放電閾值降低
-
 clinicalSigns:
   early:
     - 首次全身性強直陣攣發作(grand mal seizure)
@@ -39,24 +38,22 @@ clinicalSigns:
     - 可能進展為群集性發作(cluster seizures)
     - 癲癇重積狀態(status epilepticus,急症)
     - 發作間期行為與意識正常
-
 diagnosis:
   primaryTests:
     - name: 排除性診斷
-      notes: "正常血液生化、CBC、T4,正常神經學檢查(發作間期)"
+      notes: 正常血液生化、CBC、T4,正常神經學檢查(發作間期)
     - name: MRI
-      notes: "排除結構性病變(腦腫瘤、腦炎、先天異常)"
+      notes: 排除結構性病變(腦腫瘤、腦炎、先天異常)
     - name: 腦脊髓液分析
-      notes: "正常,排除腦炎或腦膜炎"
+      notes: 正常,排除腦炎或腦膜炎
     - name: 發作日記
-      notes: "記錄發作頻率、持續時間、嚴重度,指導用藥調整"
+      notes: 記錄發作頻率、持續時間、嚴重度,指導用藥調整
   differentialDiagnoses:
     - 反應性癲癇(低血糖、肝性腦病變、中毒)
     - 結構性癲癇(腦腫瘤、腦炎、外傷)
     - 心源性暈厥
     - 前庭疾病
     - 強迫行為
-
 treatment:
   medical:
     - 用藥指徵:發作>每月2次,或群集發作,或癲癇重積
@@ -66,25 +63,45 @@ treatment:
     - Zonisamide 5-10 mg/kg PO q12h(輔助控制)
     - 急性發作:Diazepam 0.5-1 mg/kg IV或rectal,或Midazolam 0.2 mg/kg intranasal
     - 定期監測肝腎功能與血中藥物濃度(phenobarbital)
-
 prognosis:
-  general: "多數病例經單一或併用抗癲癇藥可控制,60-80%發作頻率減少50%以上。需終生服藥,不可驟停。預後因個體差異,部分難治型需多重藥物,生活品質受影響。"
-
+  general: 多數病例經單一或併用抗癲癇藥可控制,60-80%發作頻率減少50%以上。需終生服藥,不可驟停。預後因個體差異,部分難治型需多重藥物,生活品質受影響。
 prevention:
   - 避免繁殖癲癇犬隻及其直系親屬
   - 避免誘發因素(壓力、睡眠剝奪、閃爍光線)
   - 規律服藥,定期監測血中濃度
   - 記錄發作日記,早期識別惡化趨勢
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
     title: A retrospective case series of clinical signs in 28 Beagles with Lafora disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8478043/
     type: research
-    pmid: "34486182"
+    pmid: '34486182'
   - sourceOrg: Molecules (Basel, Switzerland)
-    title: An Optimized and Sensitive Pharmacokinetic Quantitative Method of Investigating Gastrodin, Parishin, and Parishin B, C and E in Beagle Dog Plasma using LC-MS/MS after Intragastric Administration of Tall Gastrodia Capsules.
+    title: >-
+      An Optimized and Sensitive Pharmacokinetic Quantitative Method of Investigating Gastrodin, Parishin, and Parishin
+      B, C and E in Beagle Dog Plasma using LC-MS/MS after Intragastric Administration of Tall Gastrodia Capsules.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6150220/
     type: research
-    pmid: "29125575"
+    pmid: '29125575'
+associatedSymptoms:
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 米格魯癲癇 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - seizures 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 排除性診斷
+          notes: 正常血液生化、CBC、T4,正常神經學檢查(發作間期)
+        - name: MRI
+          notes: 排除結構性病變(腦腫瘤、腦炎、先天異常)
+        - name: 腦脊髓液分析
+          notes: 正常,排除腦炎或腦膜炎
+ddxSource: auto-generated

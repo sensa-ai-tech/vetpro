@@ -3,13 +3,15 @@ nameEn: Persistent Hyperplastic Primary Vitreous
 nameZh: 持續性增生性原發玻璃體
 bodySystem: ophthalmology
 description: 先天性眼部發育異常，胚胎期原發玻璃體 (primary vitreous) 與玻璃體動脈 (hyaloid artery) 未正常退化而殘留增生。表現為晶體後方的纖維血管膜，可導致白內障、眼內出血與視力障礙。
-
 aliases:
-  - { alias: PHPV, language: en }
-  - { alias: Persistent Hyaloid Artery, language: en }
-  - { alias: 持續性玻璃體增生, language: zh }
-  - { alias: 玻璃體動脈殘留, language: zh }
-
+  - alias: PHPV
+    language: en
+  - alias: Persistent Hyaloid Artery
+    language: en
+  - alias: 持續性玻璃體增生
+    language: zh
+  - alias: 玻璃體動脈殘留
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 先天性發育異常
@@ -25,7 +26,6 @@ etiology:
         - 胚胎期原發玻璃體退化不全
         - 玻璃體動脈 (hyaloid artery) 未退化
         - 品種遺傳傾向 (Doberman)
-
 clinicalSigns:
   early:
     - 晶體後方白色斑點或膜 (幼犬檢查發現)
@@ -35,7 +35,6 @@ clinicalSigns:
     - 晶體變形
     - 眼內出血 (殘留血管)
     - 視力障礙
-
 diagnosis:
   primaryTests:
     - name: 裂隙燈檢查
@@ -44,7 +43,6 @@ diagnosis:
       notes: 評估玻璃體內結構異常與視網膜狀態
     - name: 品種篩檢
       notes: Doberman 繁殖前眼科篩檢
-
 treatment:
   principles:
     - 輕度病例不需治療
@@ -54,21 +52,47 @@ treatment:
     - 輕度：定期追蹤
     - 白內障手術 (超音波乳化術) — 需注意纖維血管膜出血風險
     - 嚴重眼內出血需處理
-
 prognosis: 輕度 PHPV (僅殘留小白點) 預後良好，通常不影響視力。嚴重型伴白內障者手術預後較一般白內障手術差 (出血風險)。受影響犬不建議繁殖。
-
-
 guidelineRefs:
   - sourceOrg: Autophagy
     title: Modulating EGFR-MTORC1-autophagy as a potential therapy for persistent fetal vasculature (PFV) disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7469569/
     type: research
-    pmid: "31462148"
+    pmid: '31462148'
   - sourceOrg: Toxicologic pathology
     title: Proceedings of the 2015 National Toxicology Program Satellite Symposium.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5500208/
     type: research
-    pmid: "27075180"
+    pmid: '27075180'
 pubmedQueries:
   - query: '"persistent hyperplastic primary vitreous" OR "PHPV" AND (veterinary OR canine) AND ("diagnosis" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: blindness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 持續性增生性原發玻璃體 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 裂隙燈檢查
+          notes: 晶體後囊面纖維血管膜或色素斑。玻璃體動脈殘留 (Mittendorf dot 至視神經乳頭)
+        - name: 眼部超音波
+          notes: 評估玻璃體內結構異常與視網膜狀態
+        - name: 品種篩檢
+          notes: Doberman 繁殖前眼科篩檢
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 輕度病例不需治療
+        - 白內障顯著影響視力時考慮手術
+        - 手術風險較一般白內障手術高
+ddxSource: auto-generated

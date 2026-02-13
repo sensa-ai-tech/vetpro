@@ -3,12 +3,13 @@ nameEn: Type III Hypersensitivity
 nameZh: 第三型過敏反應
 bodySystem: immunology
 description: 第三型過敏反應（免疫複合物型過敏反應）為抗原抗體形成免疫複合物沉積於組織，活化補體引起局部或全身性炎症。犬貓代表性疾病包括全身性紅斑狼瘡 (SLE)、免疫複合物腎絲球腎炎、血管炎與血清病。
-
 aliases:
-  - { alias: 免疫複合物型過敏反應, language: zh }
-  - { alias: Immune Complex Hypersensitivity, language: en }
-  - { alias: Arthus Reaction, language: en }
-
+  - alias: 免疫複合物型過敏反應
+    language: zh
+  - alias: Immune Complex Hypersensitivity
+    language: en
+  - alias: Arthus Reaction
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓 FIP（貓傳染性腹膜炎）部分涉及第三型過敏反應機制。免疫複合物腎病在貓亦有報告。
-
 etiology:
   categories:
     - name: 致病機制
@@ -36,7 +36,6 @@ etiology:
         - 血管炎
         - 血清病
         - 慢性感染相關免疫複合物病
-
 clinicalSigns:
   early:
     - 發燒
@@ -47,7 +46,6 @@ clinicalSigns:
     - 腎絲球腎炎：蛋白尿、水腫、腎衰竭
     - 血管炎：皮膚紫斑、潰瘍
     - 淋巴結腫大
-
 diagnosis:
   primaryTests:
     - name: ANA（抗核抗體）
@@ -61,7 +59,6 @@ diagnosis:
     - 腎臟生檢（免疫螢光見 Ig/C3 沉積）
     - LE cell 試驗（特異性高但敏感度低）
     - 傳染病篩檢
-
 treatment:
   principles:
     - 免疫抑制
@@ -74,29 +71,87 @@ treatment:
     - 慢性感染相關：治療原發感染
     - 血栓預防（低劑量 aspirin）
     - 長期免疫抑制管理
-
 prognosis: 第三型過敏反應疾病預後取決於受累器官與嚴重度。SLE 為慢性進行性疾病，需終身免疫抑制。腎絲球腎炎進展至腎衰竭者預後差。感染相關免疫複合物病在消除感染後多可改善。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary research
     title: Retrospective investigation of porcine circoviruses in cases of porcine dermatitis and nephropathy syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11549871/
     type: research
-    pmid: "39521988"
+    pmid: '39521988'
     relevance: supporting
   - sourceOrg: Respiratory research
     title: Enhanced immune complex formation in the lungs of patients with dermatomyositis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10024827/
     type: research
-    pmid: "36934274"
+    pmid: '36934274'
     relevance: supporting
-  - sourceOrg: "Human vaccines &amp; immunotherapeutics"
-    title: Type III hypersensitivity reactions to a B cell epitope antigen are abrogated using a depot forming vaccine platform.
+  - sourceOrg: Human vaccines &amp; immunotherapeutics
+    title: >-
+      Type III hypersensitivity reactions to a B cell epitope antigen are abrogated using a depot forming vaccine
+      platform.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5791585/
     type: research
-    pmid: "28933663"
+    pmid: '28933663'
     relevance: supporting
 pubmedQueries:
-  - query: '"type III hypersensitivity" OR "immune complex" AND (veterinary OR canine OR feline) AND ("glomerulonephritis" OR "SLE" OR "treatment")'
+  - query: >-
+      "type III hypersensitivity" OR "immune complex" AND (veterinary OR canine OR feline) AND ("glomerulonephritis" OR
+      "SLE" OR "treatment")
     frequency: monthly
+diagnosticAlgorithm:
+  title: 免疫複合體疾病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 收集病史，評估發熱、關節疼痛、皮膚病變等全身性症狀
+      findings:
+        - 多系統受累表現（皮膚、關節、腎臟）
+        - 發熱與全身性炎症
+        - 皮膚紫癜或血管炎樣病變
+        - 多發性關節炎
+    - step: 2
+      action: 實驗室檢查
+      details: 進行全血計數、生化檢查及尿液分析
+      findings:
+        - 貧血或血小板減少
+        - 低白蛋白血症
+        - 蛋白尿
+        - 補體水平下降
+    - step: 3
+      action: 免疫學檢查
+      details: 進行抗核抗體、類風濕因子及免疫複合體相關檢測
+      findings:
+        - 抗核抗體（ANA）陽性
+        - 循環免疫複合體升高
+        - 補體C3/C4降低
+        - Coombs試驗可能陽性
+    - step: 4
+      action: 組織病理學檢查
+      details: 對受累組織進行活檢及免疫螢光檢查
+      findings:
+        - 血管壁免疫複合體沉積
+        - 白血球碎裂性血管炎
+        - 腎絲球免疫複合體沉積
+        - 免疫螢光顯示IgG/IgM/C3沉積
+clinicalPearls:
+  - 不明原因的多關節炎合併發燒在犬中，免疫介導性（第三型過敏反應）比感染性更常見
+  - 關節液分析是區分免疫介導性和感染性多關節炎的關鍵：免疫介導性為無菌性炎症
+  - 免疫複合體沉積偏好高濾過壓的組織，因此腎絲球、關節和小血管是最常受累的部位
+  - 治療前應系統性搜尋可能的潛在原因（慢性感染、腫瘤），因約25-50%的免疫介導性多關節炎有可辨認的基礎病因
+  - 蛋白尿是腎絲球免疫複合體沉積的早期指標，所有免疫複合體疾病的患者都應進行尿液分析
+monitoringItems:
+  - 治療初期每1-2週監測全血球計數和生化指標
+  - 每月監測尿蛋白/肌酐比（UPC）評估腎絲球功能
+  - 每2-4週臨床評估關節腫脹和疼痛程度
+  - 使用免疫抑制藥物時監測肝腎功能和血球計數
+  - Azathioprine使用者需監測骨髓抑制（白血球和血小板減少）
+  - 長期使用類固醇監測多飲多尿、Cushing症候群及尿路感染
+  - 定期評估是否可逐步減量免疫抑制藥物
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+ddxSource: book

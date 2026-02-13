@@ -3,12 +3,13 @@ nameEn: Gastrostomy Tube PEG
 nameZh: 胃造口管
 bodySystem: metabolic
 description: 經皮內視鏡胃造口(PEG)或手術置放的胃餵食管。為長期營養支持(數月至數年)的金標準方法，適合慢性疾病或長期無法進食動物。
-
 aliases:
-  - { alias: 經皮內視鏡胃造口, language: zh }
-  - { alias: PEG Tube, language: en }
-  - { alias: Gastrostomy Feeding Tube, language: en }
-
+  - alias: 經皮內視鏡胃造口
+    language: zh
+  - alias: PEG Tube
+    language: en
+  - alias: Gastrostomy Feeding Tube
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 體型小內視鏡操作較困難
-
 etiology:
   categories:
     - name: 適應症
@@ -35,7 +35,6 @@ etiology:
         - 不經過食道(適合巨食道症)
         - 照護簡便
         - 可在家操作
-
 clinicalSigns:
   early:
     - 置放後：腹部造口輕度腫脹
@@ -43,16 +42,14 @@ clinicalSigns:
   progressive:
     - 長期使用：疾病控制、生活品質改善
     - 併發症(罕見)：造口感染、管路移位
-
 diagnosis:
   primaryTests:
     - name: 置放前評估
-      notes: "凝血功能、麻醉風險、胃部評估"
+      notes: 凝血功能、麻醉風險、胃部評估
     - name: 內視鏡檢查
-      notes: "確認胃部狀況適合置放"
+      notes: 確認胃部狀況適合置放
   differentialDiagnoses:
     - 需長期營養支持的慢性疾病
-
 treatment:
   medical:
     - PEG置放方法
@@ -77,12 +74,30 @@ treatment:
     - 移除時機
     - 疾病康復可自主進食
     - 拔除後傷口需縫合
-
 prognosis:
-  general: "PEG tube為長期營養支持最有效方法；可顯著改善生活品質及預後"
-
+  general: PEG tube為長期營養支持最有效方法；可顯著改善生活品質及預後
 prevention:
   - 無菌置放技術
   - 適當造口照護
   - 防止管路移位或咬扯
   - 定期獸醫檢查
+associatedSymptoms:
+  - symptomId: dysphagia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 胃造口管 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dysphagia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 置放前評估
+          notes: 凝血功能、麻醉風險、胃部評估
+        - name: 內視鏡檢查
+          notes: 確認胃部狀況適合置放
+ddxSource: auto-generated

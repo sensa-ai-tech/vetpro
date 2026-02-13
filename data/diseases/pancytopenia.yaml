@@ -3,13 +3,15 @@ nameEn: Pancytopenia
 nameZh: 全血球減少症
 bodySystem: hematology
 description: 同時出現貧血（紅血球減少）、白血球減少與血小板減少的血液學異常。非獨立疾病，而是多種骨髓疾病、感染或藥物反應的共同表現。嚴重時可危及生命。
-
 aliases:
-  - { alias: 全血球低下症, language: zh }
-  - { alias: 汎血球減少症, language: zh }
-  - { alias: Aplastic Pancytopenia, language: en }
-  - { alias: Bone Marrow Failure, language: en }
-
+  - alias: 全血球低下症
+    language: zh
+  - alias: 汎血球減少症
+    language: zh
+  - alias: Aplastic Pancytopenia
+    language: en
+  - alias: Bone Marrow Failure
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 常見於 FeLV 感染、FIV、骨髓增殖性疾病。貓泛白血球減少症（FPV）亦可造成短暫性全血球減少。
-
 etiology:
   categories:
     - name: 感染性
@@ -46,7 +47,6 @@ etiology:
       examples:
         - 免疫介導性全血球減少症
         - 繼發於系統性紅斑狼瘡 (SLE)
-
 clinicalSigns:
   early:
     - 嗜睡、虛弱（貧血）
@@ -62,18 +62,17 @@ clinicalSigns:
     - 無法控制的出血
     - 嚴重貧血（PCV <15%）
     - 多器官功能衰竭
-
 diagnosis:
   primaryTests:
     - name: CBC
-      notes: "三系均低：非再生性貧血（網狀紅血球低）、白血球減少（尤其嗜中性球）、血小板減少。是診斷的起點"
+      notes: 三系均低：非再生性貧血（網狀紅血球低）、白血球減少（尤其嗜中性球）、血小板減少。是診斷的起點
     - name: 骨髓穿刺與活檢
-      notes: "金標準。區分骨髓低下（aplasia/hypoplasia）vs 骨髓浸潤（腫瘤、纖維化）。評估各系列細胞比例與形態"
+      notes: 金標準。區分骨髓低下（aplasia/hypoplasia）vs 骨髓浸潤（腫瘤、纖維化）。評估各系列細胞比例與形態
   imaging:
     - name: 腹部超音波
-      notes: "評估脾臟大小、肝臟、淋巴結腫大（排除腫瘤性疾病）"
+      notes: 評估脾臟大小、肝臟、淋巴結腫大（排除腫瘤性疾病）
     - name: 胸腔 X 光
-      notes: "評估感染（肺炎）、腫瘤、淋巴結腫大"
+      notes: 評估感染（肺炎）、腫瘤、淋巴結腫大
   additional:
     - 血液抹片鏡檢（異常細胞形態、球狀紅血球、blast cells）
     - 傳染病篩檢 (Ehrlichia PCR/抗體、FeLV/FIV 檢測、Babesia)
@@ -81,7 +80,6 @@ diagnosis:
     - ANA 抗體（排除 SLE）
     - 網狀紅血球計數（區分再生 vs 非再生性貧血）
     - 血清鐵、鐵蛋白
-
 treatment:
   principles:
     - 找出並治療根本病因為首要目標
@@ -90,16 +88,16 @@ treatment:
     - 必要時考慮免疫抑制治療
   medications:
     - name: Doxycycline
-      dose: "5-10 mg/kg PO BID × 28 天"
+      dose: 5-10 mg/kg PO BID × 28 天
       notes: Ehrlichia 感染首選。即使 PCR 陰性但高度懷疑仍建議經驗性治療
     - name: Prednisolone
-      dose: "2-4 mg/kg PO SID (免疫介導性)"
+      dose: 2-4 mg/kg PO SID (免疫介導性)
       notes: 免疫介導性全血球減少症的免疫抑制治療
     - name: Mycophenolate mofetil
-      dose: "10 mg/kg PO BID"
+      dose: 10 mg/kg PO BID
       notes: 作為類固醇的輔助免疫抑制劑
     - name: Filgrastim (G-CSF)
-      dose: "5-10 μg/kg SC SID × 3-5 天"
+      dose: 5-10 μg/kg SC SID × 3-5 天
       notes: 嚴重嗜中性球低下時刺激骨髓產生嗜中性球。人源製劑，犬貓可能產生抗體
   general:
     - 輸血支持（pRBC 治療貧血、血小板輸注治療嚴重血小板減少伴活動性出血）
@@ -108,44 +106,110 @@ treatment:
     - Sertoli cell tumor 引起者需睪丸切除
     - 嚴格無菌處理所有侵入性操作
     - 密切監測 CBC（每 1-3 天）
-
 emergencyNotes: 嗜中性球 <500/μL 合併發燒為粒性球缺乏性發燒（febrile neutropenia），需立即廣譜抗生素。嚴重貧血（PCV <15%）需輸血。活動性出血合併血小板 <10,000/μL 考慮血小板輸注。
-
-prognosis: 預後取決於根本病因。Ehrlichia 感染早期治療反應佳。藥物誘發停藥後多數可恢復（但 estrogen 誘發的再生不良性貧血預後差）。骨髓腫瘤性浸潤預後謹慎至差。免疫介導性對免疫抑制治療反應不一。嚴重再生不良性貧血若骨髓穿刺顯示極度低下 (<5% cellularity)，預後較差。
-
+prognosis: >-
+  預後取決於根本病因。Ehrlichia 感染早期治療反應佳。藥物誘發停藥後多數可恢復（但 estrogen
+  誘發的再生不良性貧血預後差）。骨髓腫瘤性浸潤預後謹慎至差。免疫介導性對免疫抑制治療反應不一。嚴重再生不良性貧血若骨髓穿刺顯示極度低下 (<5% cellularity)，預後較差。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: Infectious cyclic thrombocytopenia in dogs infected with Ehrlichia platys
     url: https://pubmed.ncbi.nlm.nih.gov/3503552/
     type: research
-    pmid: "3503552"
+    pmid: '3503552'
   - sourceOrg: Veterinary Pathology
     title: Estrogen-induced bone marrow toxicosis in dogs
     url: https://pubmed.ncbi.nlm.nih.gov/3544183/
     type: research
-    pmid: "3544183"
+    pmid: '3544183'
   - sourceOrg: Journal of the American Veterinary Medical Association
     title: Pancytopenia associated with FeLV infection in cats
     url: https://pubmed.ncbi.nlm.nih.gov/6381525/
     type: research
-    pmid: "6381525"
+    pmid: '6381525'
   - sourceOrg: Tropical medicine and infectious disease
-    title: "Visceral Leishmaniasis in Pediatrics: A Case Series and a Narrative Review with Global Insights."
+    title: 'Visceral Leishmaniasis in Pediatrics: A Case Series and a Narrative Review with Global Insights.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12115772/
     type: review
-    pmid: "40423365"
+    pmid: '40423365'
     relevance: primary
   - sourceOrg: The Lancet. Infectious diseases
-    title: Haemophagocytic lymphohistiocytosis associated with bartonella peliosis hepatis following kidney transplantation in a patient with HIV.
+    title: >-
+      Haemophagocytic lymphohistiocytosis associated with bartonella peliosis hepatis following kidney transplantation
+      in a patient with HIV.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9942922/
     type: review
-    pmid: "35500593"
+    pmid: '35500593'
     relevance: primary
 pubmedQueries:
   - query: '"pancytopenia" AND (dog OR cat OR canine OR feline) AND ("bone marrow" OR "aplastic" OR "ehrlichia")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "CIR"
-  sectionTitle: "Stem-cell Injury and Pancytopenia:"
+  chapter: CIR
+  sectionTitle: 'Stem-cell Injury and Pancytopenia:'
   pdfPage: 103
+diagnosticAlgorithm:
+  title: 全血球減少症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估與血液學檢查
+      details: 進行全血計數確認三系血球同時減少
+      findings:
+        - 白血球減少
+        - 紅血球減少（貧血）
+        - 血小板減少
+        - 可能伴有發熱、出血傾向、虛弱
+    - step: 2
+      action: 血液抹片與生化檢查
+      details: 仔細檢查血液抹片形態，進行全套生化及感染篩檢
+      findings:
+        - 異常細胞或母細胞存在
+        - 網狀紅血球計數評估骨髓再生能力
+        - 生化評估肝腎功能
+        - 壁蝨媒介疾病篩檢
+    - step: 3
+      action: 骨髓穿刺檢查
+      details: 進行骨髓抽吸和/或核心活檢以確定全血球減少的原因
+      findings:
+        - 骨髓增生不良提示再生不良性貧血
+        - 異常細胞增生提示白血病或骨髓增生異常
+        - 骨髓纖維化
+        - 傳染性病原體（如利什曼原蟲）
+    - step: 4
+      action: 病因學鑑別
+      details: 根據骨髓結果和輔助檢查確定具體病因
+      findings:
+        - 藥物或毒物暴露史（如化療藥物、氯黴素）
+        - 感染性病因（Ehrlichia、Leishmania等）
+        - 免疫介導性破壞
+        - 骨髓腫瘤浸潤
+clinicalPearls:
+  - 全血球減少症是實驗室發現，不是最終診斷——必須找出根本病因
+  - 骨髓穿刺和活檢是確定病因的關鍵檢查，不應省略
+  - 貓的全血球減少症首先排除 FeLV 感染
+  - 藥物引起的骨髓抑制可能在停藥後 1-3 週才開始恢復
+  - 嗜中性球 < 1000/μL 的患者有極高敗血症風險，需預防性抗生素
+monitoringItems:
+  - 每日至每隔一日 CBC 追蹤血球恢復趨勢
+  - 體溫監測（嗜中性球低下時感染風險極高）
+  - 出血徵象監測（瘀斑、黑便、血尿）
+  - 骨髓活檢追蹤（治療 2-4 週後評估恢復情況）
+  - 網織紅血球計數追蹤再生跡象
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: petechiae-ecchymoses
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: splenomegaly
+    frequency: common
+  - symptomId: hypothermia-sign
+    frequency: common
+ddxSource: book

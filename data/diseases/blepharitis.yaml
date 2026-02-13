@@ -3,12 +3,13 @@ nameEn: Blepharitis
 nameZh: 眼瞼炎
 bodySystem: ophthalmology
 description: 眼瞼皮膚與腺體的發炎疾病，可為感染性、免疫媒介性或寄生蟲性。犬以細菌性與免疫媒介性最常見，可能為全身性皮膚病的局部表現。慢性眼瞼炎可影響淚膜穩定性與角膜健康。
-
 aliases:
-  - { alias: Eyelid Inflammation, language: en }
-  - { alias: Meibomitis, language: en }
-  - { alias: 眼瞼發炎, language: zh }
-
+  - alias: Eyelid Inflammation
+    language: en
+  - alias: Meibomitis
+    language: en
+  - alias: 眼瞼發炎
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓較少見。可與 FHV-1、過敏或嗜酸性肉芽腫相關。
-
 etiology:
   categories:
     - name: 感染性
@@ -33,7 +33,6 @@ etiology:
       examples:
         - 異位性皮膚炎
         - 接觸性過敏
-
 clinicalSigns:
   early:
     - 眼瞼紅腫
@@ -44,7 +43,6 @@ clinicalSigns:
     - 膿皰或潰瘍
     - 眼瞼增厚/瘢痕
     - 繼發性結膜炎
-
 diagnosis:
   primaryTests:
     - name: 皮膚刮片
@@ -53,7 +51,6 @@ diagnosis:
       notes: 膿皰或潰瘍處取樣做細菌培養
     - name: 皮膚活檢
       notes: 免疫媒介性疾病需組織病理確診
-
 treatment:
   principles:
     - 找出並治療根本原因
@@ -63,41 +60,73 @@ treatment:
     - 細菌性：局部或全身性抗生素
     - 蠕形蟎：Isoxazoline 類驅蟲藥
     - 免疫媒介性：免疫抑制劑
-
 prognosis: 細菌性眼瞼炎治療後預後良好。蠕形蟎相關者驅蟲後預後佳。免疫媒介性需長期管理。慢性眼瞼炎可能需持續局部護理。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary medicine and science
-    title: "Prevalence and Clinical Impacts of Canine Herpesvirus-1 (CHV-1) in Dogs: A Review of Reproductive Effects and Ocular Lesions."
+    title: >-
+      Prevalence and Clinical Impacts of Canine Herpesvirus-1 (CHV-1) in Dogs: A Review of Reproductive Effects and
+      Ocular Lesions.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12628679/
     type: review
-    pmid: "41259018"
+    pmid: '41259018'
   - sourceOrg: BMC ophthalmology
-    title: "Capnocytophaga canimorsus blebitis: case report and review of literature."
+    title: 'Capnocytophaga canimorsus blebitis: case report and review of literature.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7839216/
     type: review
-    pmid: "33499831"
+    pmid: '33499831'
   - sourceOrg: BMC veterinary research
     title: Photodermatitis and ocular changes in nine horses after ingestion of wild parsnip (pastinaca sativa).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8881838/
     type: case-report
-    pmid: "35219345"
+    pmid: '35219345'
   - sourceOrg: Toxicology and applied pharmacology
-    title: Dexamethasone targets actin cytoskeleton signaling and inflammatory mediators to reverse sulfur mustard-induced toxicity in rabbit corneas.
+    title: >-
+      Dexamethasone targets actin cytoskeleton signaling and inflammatory mediators to reverse sulfur mustard-induced
+      toxicity in rabbit corneas.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10923037/
     type: research
-    pmid: "38266871"
-  - sourceOrg: "Investigative ophthalmology &amp; visual science"
+    pmid: '38266871'
+  - sourceOrg: Investigative ophthalmology &amp; visual science
     title: Unique Attributes of Guinea Pigs as New Models to Study Ocular Herpes Pathophysiology and Recurrence.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10691389/
     type: research
-    pmid: "38015175"
+    pmid: '38015175'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Leishmaniosis in cats: ABCD guidelines on prevention and management."
+    title: 'Leishmaniosis in cats: ABCD guidelines on prevention and management.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11148954/
     type: review
-    pmid: "23813831"
+    pmid: '23813831'
 pubmedQueries:
   - query: '"blepharitis" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: common
+  - symptomId: alopecia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 眼瞼炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 皮膚刮片
+          notes: 排除蠕形蟎 (Demodex)
+        - name: 細胞學 / 培養
+          notes: 膿皰或潰瘍處取樣做細菌培養
+        - name: 皮膚活檢
+          notes: 免疫媒介性疾病需組織病理確診
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 找出並治療根本原因
+        - 局部清潔 + 抗感染
+ddxSource: auto-generated

@@ -3,16 +3,15 @@ nameEn: Rabbit Cheek Teeth Malocclusion
 nameZh: 兔臼齒咬合不正
 bodySystem: dental
 description: 兔臼齒（cheek teeth）過度生長或角度異常導致的咬合問題，為兔最常見的牙科疾病。兔的牙齒為終身持續生長（elodont），飲食中長纖維乾草不足是最主要的致病因素。
-
 aliases:
-  - { alias: "兔臼齒咬合不正", language: zh }
-  - { alias: "Rabbit Cheek Teeth Malocclusion", language: en }
-
+  - alias: 兔臼齒咬合不正
+    language: zh
+  - alias: Rabbit Cheek Teeth Malocclusion
+    language: en
 species:
   - speciesCommon: rabbit
     prevalence: uncommon
     notes: 兔可受此疾病影響。
-
 etiology:
   categories:
     - name: 飲食性
@@ -24,7 +23,6 @@ etiology:
       examples:
         - 遺傳性下顎短小（brachygnathism）
         - 矮胖品種（Lop、Netherland Dwarf）風險較高
-
 clinicalSigns:
   early:
     - 進食速度變慢
@@ -37,14 +35,12 @@ clinicalSigns:
     - 眼淚或鼻分泌物增加（淚管受壓）
     - 面部膿瘍
     - 明顯消瘦
-
 diagnosis:
   primaryTests:
     - name: 口腔檢查
       notes: 需鎮靜後以耳鏡或專用口腔鏡檢查臼齒。尖銳齒突（spurs）可刺傷舌頭或頰部黏膜。
     - name: 顱骨 X 光/CT
       notes: 評估齒根長度、齒根膿瘍及顎骨變化。斜位 X 光檢查臼齒排列。
-
 treatment:
   principles:
     - 定期磨牙處理（修剪尖銳齒突）
@@ -58,17 +54,49 @@ treatment:
     - 齒根膿瘍需拔牙 + 引流
     - 止痛管理（Meloxicam）
     - 灌食支持（厭食時）
-
 prognosis: 飲食性臼齒過長經矯正飲食與定期修剪後預後良好，但多數需終身定期牙科照護（每 4-12 週）。先天性咬合不正預後較差，需更頻繁的處理。齒根膿瘍治療困難且復發率高。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: Dental Disease in Rabbits (Oryctolagus cuniculus) and Its Risk Factors-A Private Practice Study in the Metropolitan Region of Chile.
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Dental Disease in Rabbits (Oryctolagus cuniculus) and Its Risk Factors-A Private Practice Study in the
+      Metropolitan Region of Chile.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9951937/
     type: research
-    pmid: "36830463"
+    pmid: '36830463'
     relevance: supporting
 pubmedQueries:
   - query: '"Rabbit Cheek Teeth Malocclusion" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+diagnosticAlgorithm:
+  title: 兔臼齒咬合不正 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - ptyalism 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 口腔檢查
+          notes: 需鎮靜後以耳鏡或專用口腔鏡檢查臼齒。尖銳齒突（spurs）可刺傷舌頭或頰部黏膜。
+        - name: 顱骨 X 光/CT
+          notes: 評估齒根長度、齒根膿瘍及顎骨變化。斜位 X 光檢查臼齒排列。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 定期磨牙處理（修剪尖銳齒突）
+        - 飲食改為以乾草為主
+        - 齒根膿瘍需外科處理
+ddxSource: auto-generated

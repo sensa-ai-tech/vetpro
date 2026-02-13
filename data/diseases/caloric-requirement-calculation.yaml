@@ -3,12 +3,13 @@ nameEn: Caloric Requirement Calculation
 nameZh: 熱量需求計算
 bodySystem: metabolic
 description: 犬貓每日熱量需求的計算方法，包含靜息能量需求(RER)、維持能量需求(MER)及疾病狀態的調整係數。
-
 aliases:
-  - { alias: 卡路里需求, language: zh }
-  - { alias: Energy Requirements, language: en }
-  - { alias: Calorie Calculation, language: en }
-
+  - alias: 卡路里需求
+    language: zh
+  - alias: Energy Requirements
+    language: en
+  - alias: Calorie Calculation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓計算方式相同
-
 etiology:
   categories:
     - name: RER計算公式
@@ -42,7 +42,6 @@ etiology:
         - 生長期：RER × 2.0-3.0
         - 懷孕後期：RER × 1.5-2.0
         - 哺乳期：RER × 2.0-4.0
-
 clinicalSigns:
   early:
     - 適當熱量：體重穩定、活力正常
@@ -51,20 +50,18 @@ clinicalSigns:
   progressive:
     - 長期熱量不足：營養不良
     - 長期熱量過多：肥胖相關疾病
-
 diagnosis:
   primaryTests:
     - name: 體重監測
-      notes: "每週或每兩週秤重"
+      notes: 每週或每兩週秤重
     - name: 體態評分
-      notes: "BCS 1-9分，理想4-5分"
+      notes: BCS 1-9分，理想4-5分
     - name: 肌肉質量評估
-      notes: "MCS評分"
+      notes: MCS評分
   differentialDiagnoses:
     - 營養不足
     - 營養過剩
     - 代謝性疾病
-
 treatment:
   medical:
     - 熱量計算步驟
@@ -86,25 +83,48 @@ treatment:
     - 使用理想體重計算RER
     - RER × 0.8-1.0作為減重熱量
     - 目標：每週減重1-2%(犬)或0.5-1%(貓)
-
 prognosis:
-  general: "適當熱量管理為營養支持成功的關鍵"
-
+  general: 適當熱量管理為營養支持成功的關鍵
 prevention:
   - 定期體重監測
   - 根據體態評分調整
   - 避免過度餵食
   - 定期重新計算需求
-
-
 guidelineRefs:
   - sourceOrg: Journal of dairy science
-    title: "Symposium review: Re-evaluation of National Research Council energy estimates in calf starters."
+    title: 'Symposium review: Re-evaluation of National Research Council energy estimates in calf starters.'
     url: https://pubmed.ncbi.nlm.nih.gov/30772024/
     type: review
-    pmid: "30772024"
+    pmid: '30772024'
   - sourceOrg: American journal of veterinary research
-    title: Ex vivo energy restriction in obese cats reveals more amino acid and vitamin intakes below recommendations with over-the-counter compared to veterinary weight-loss diets.
+    title: >-
+      Ex vivo energy restriction in obese cats reveals more amino acid and vitamin intakes below recommendations with
+      over-the-counter compared to veterinary weight-loss diets.
     url: https://pubmed.ncbi.nlm.nih.gov/41135581/
     type: research
-    pmid: "41135581"
+    pmid: '41135581'
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: weight-gain
+    frequency: common
+diagnosticAlgorithm:
+  title: 熱量需求計算 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - weight-gain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 體重監測
+          notes: 每週或每兩週秤重
+        - name: 體態評分
+          notes: BCS 1-9分，理想4-5分
+        - name: 肌肉質量評估
+          notes: MCS評分
+ddxSource: auto-generated

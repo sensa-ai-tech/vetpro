@@ -3,14 +3,17 @@ nameEn: Perinephric Pseudocyst
 nameZh: 腎周圍假性囊腫
 bodySystem: renal
 description: 腎周圍假性囊腫是腎臟被膜下或腎周圍積聚液體形成的囊性結構，因缺乏真正的上皮內襯而稱為假性囊腫。在貓中較常見，常與慢性腎病相關。
-
 aliases:
-  - { alias: 腎被膜下積液, language: zh }
-  - { alias: 腎包膜假性囊腫, language: zh }
-  - { alias: Perirenal Pseudocyst, language: en }
-  - { alias: Capsular Effusion, language: en }
-  - { alias: Subcapsular Renal Cyst, language: en }
-
+  - alias: 腎被膜下積液
+    language: zh
+  - alias: 腎包膜假性囊腫
+    language: zh
+  - alias: Perirenal Pseudocyst
+    language: en
+  - alias: Capsular Effusion
+    language: en
+  - alias: Subcapsular Renal Cyst
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓腎周圍假性囊腫較常見，中老年貓好發。常為雙側性，與慢性腎病高度相關。可導致顯著的腹部膨大。
-
 etiology:
   categories:
     - name: 可能原因
@@ -35,7 +37,6 @@ etiology:
         - 偶為血性液體
         - 肌酐和尿素氮濃度若高於血清提示尿液滲漏
         - 與腹水的區別在於被腎被膜包裹
-
 clinicalSigns:
   early:
     - 腹部膨大（雙側腎區）
@@ -47,19 +48,17 @@ clinicalSigns:
     - 體重增加（液體蓄積）
     - 慢性腎病症狀（多飲多尿、嘔吐）
     - 呼吸急促（大量液體壓迫橫膈）
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "腎臟周圍無回音液體積聚，腎臟被液體環繞呈「漂浮」狀。可為單側或雙側。腎實質評估慢性腎病變化。"
+      notes: 腎臟周圍無回音液體積聚，腎臟被液體環繞呈「漂浮」狀。可為單側或雙側。腎實質評估慢性腎病變化。
     - name: 囊液分析
-      notes: "穿刺液分析：細胞學（排除腫瘤性積液）、蛋白含量、肌酐/BUN（與血清比較排除尿液滲漏）。"
+      notes: 穿刺液分析：細胞學（排除腫瘤性積液）、蛋白含量、肌酐/BUN（與血清比較排除尿液滲漏）。
   differentialDiagnoses:
     - 多囊腎
     - 腎臟腫瘤
     - 腎水腫 (Hydronephrosis)
     - 腹水
-
 treatment:
   medical:
     - 小型無症狀囊腫可定期監測
@@ -69,20 +68,50 @@ treatment:
     - 反覆復發者：手術開窗引流至腹腔（囊壁造口術）
     - 部分囊壁切除術
     - 腎切除術（嚴重損傷且對側腎功能尚可時）
-
 prognosis:
-  general: "假性囊腫本身預後尚可，引流後症狀可顯著改善。但預後主要取決於潛在的慢性腎病嚴重度。穿刺引流後復發率高，反覆者需手術處理。多數貓可維持數月至數年的可接受生活品質。"
-
+  general: 假性囊腫本身預後尚可，引流後症狀可顯著改善。但預後主要取決於潛在的慢性腎病嚴重度。穿刺引流後復發率高，反覆者需手術處理。多數貓可維持數月至數年的可接受生活品質。
 prevention:
   - 無特異性預防措施
   - 慢性腎病的積極管理
   - 定期腹部超音波追蹤
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Case series: Pleural effusion caused by urinary ultrafiltrate in two cats without evidence of urinary obstruction, trauma, or simultaneous perinephric pseudocysts."
+    title: >-
+      Case series: Pleural effusion caused by urinary ultrafiltrate in two cats without evidence of urinary obstruction,
+      trauma, or simultaneous perinephric pseudocysts.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9720303/
     type: case-report
-    pmid: "36478950"
+    pmid: '36478950'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-gain
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: abdominal-distension
+    frequency: common
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 腎周圍假性囊腫 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-gain 相關症狀
+        - anorexia 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 腎臟周圍無回音液體積聚，腎臟被液體環繞呈「漂浮」狀。可為單側或雙側。腎實質評估慢性腎病變化。
+        - name: 囊液分析
+          notes: 穿刺液分析：細胞學（排除腫瘤性積液）、蛋白含量、肌酐/BUN（與血清比較排除尿液滲漏）。
+ddxSource: auto-generated

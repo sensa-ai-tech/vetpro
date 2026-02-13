@@ -3,15 +3,19 @@ nameEn: Kennel Cough
 nameZh: 犬舍咳
 bodySystem: respiratory
 description: 犬傳染性氣管支氣管炎的俗稱，由多種病毒與細菌混合感染引起的高度傳染性上呼吸道疾病，以陣發性乾咳為主要特徵，多數為自限性。
-
 aliases:
-  - { alias: CIRD, language: en }
-  - { alias: Canine Infectious Respiratory Disease Complex, language: en }
-  - { alias: Infectious Tracheobronchitis, language: en }
-  - { alias: ITB, language: en }
-  - { alias: 犬傳染性氣管支氣管炎, language: zh }
-  - { alias: 犬窩咳, language: zh }
-
+  - alias: CIRD
+    language: en
+  - alias: Canine Infectious Respiratory Disease Complex
+    language: en
+  - alias: Infectious Tracheobronchitis
+    language: en
+  - alias: ITB
+    language: en
+  - alias: 犬傳染性氣管支氣管炎
+    language: zh
+  - alias: 犬窩咳
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -21,7 +25,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: Bordetella bronchiseptica 可感染貓 (尤其免疫低下或幼貓)，但臨床上不常見。貓上呼吸道感染通常由 FHV-1 與 FCV 引起。
-
 etiology:
   categories:
     - name: 主要病毒病原
@@ -44,9 +47,10 @@ etiology:
         - 幼犬 (免疫系統未成熟)
         - 緊迫 (運輸、環境改變)
         - 寒冷潮濕環境
-
-pathophysiology: 病原體經飛沫或直接接觸傳播，首先附著於呼吸道纖毛上皮。Bordetella bronchiseptica 產生黏附素 (filamentous hemagglutinin、pertactin) 黏附氣管纖毛上皮，並分泌毒素 (adenylate cyclase toxin、dermonecrotic toxin、tracheal cytotoxin) 破壞纖毛運動功能，損傷黏膜纖毛清除機制。病毒感染進一步破壞呼吸道上皮完整性，導致繼發性細菌感染。氣管與支氣管黏膜炎症、水腫與分泌物增加刺激咳嗽反射。潛伏期約 3-10 天，排毒期可長達 2-3 個月 (Bordetella)。
-
+pathophysiology: >-
+  病原體經飛沫或直接接觸傳播，首先附著於呼吸道纖毛上皮。Bordetella bronchiseptica 產生黏附素 (filamentous hemagglutinin、pertactin) 黏附氣管纖毛上皮，並分泌毒素
+  (adenylate cyclase toxin、dermonecrotic toxin、tracheal cytotoxin)
+  破壞纖毛運動功能，損傷黏膜纖毛清除機制。病毒感染進一步破壞呼吸道上皮完整性，導致繼發性細菌感染。氣管與支氣管黏膜炎症、水腫與分泌物增加刺激咳嗽反射。潛伏期約 3-10 天，排毒期可長達 2-3 個月 (Bordetella)。
 clinicalSigns:
   early:
     - 陣發性乾咳 (harsh, honking cough)
@@ -65,23 +69,21 @@ clinicalSigns:
     - 嚴重嗜睡與食慾廢絕
     - 呼吸困難
     - 黏液膿性至膿性分泌物
-
 diagnosis:
   primaryTests:
     - name: 臨床診斷
-      notes: "典型病史 (群養環境暴露 + 3-10 天潛伏期) + 陣發性乾咳 + tracheal pinch 陽性。多數不需實驗室確認"
+      notes: 典型病史 (群養環境暴露 + 3-10 天潛伏期) + 陣發性乾咳 + tracheal pinch 陽性。多數不需實驗室確認
     - name: PCR 呼吸道病原體套組
-      notes: "鼻/咽拭子 PCR 可同時檢測多種病原 (Bordetella、CPIV、CAV-2、CIV、Mycoplasma 等)。群體爆發或嚴重病例建議做"
+      notes: 鼻/咽拭子 PCR 可同時檢測多種病原 (Bordetella、CPIV、CAV-2、CIV、Mycoplasma 等)。群體爆發或嚴重病例建議做
     - name: 細菌培養
-      notes: "氣管灌洗液 (TTW) 或深部鼻拭子培養。Bordetella 培養需特殊培養基。藥敏試驗指導抗生素選擇"
+      notes: 氣管灌洗液 (TTW) 或深部鼻拭子培養。Bordetella 培養需特殊培養基。藥敏試驗指導抗生素選擇
   imaging:
     - name: 胸腔 X 光
-      notes: "單純氣管支氣管炎通常正常。懷疑併發肺炎時拍攝：可見支氣管紋路增加、肺泡浸潤"
+      notes: 單純氣管支氣管炎通常正常。懷疑併發肺炎時拍攝：可見支氣管紋路增加、肺泡浸潤
   additional:
     - CBC (輕度白血球增多或正常。嚴重併發肺炎可見嗜中性球增多)
     - 犬流感快篩 (流感季或群體爆發時)
     - 犬瘟熱排除 (未接種幼犬、嚴重全身性症狀)
-
 treatment:
   principles:
     - 多數為自限性 (7-14 天自行緩解)
@@ -90,16 +92,16 @@ treatment:
     - 嚴格隔離防止傳播
   medications:
     - name: Doxycycline
-      dose: "5 mg/kg PO BID 或 10 mg/kg PO SID × 10-14 天"
+      dose: 5 mg/kg PO BID 或 10 mg/kg PO SID × 10-14 天
       notes: Bordetella 首選抗生素。呼吸道組織穿透性佳。餵食後給藥避免食道刺激
     - name: Azithromycin
-      dose: "5-10 mg/kg PO SID × 3 天，後隔日 × 12 天"
+      dose: 5-10 mg/kg PO SID × 3 天，後隔日 × 12 天
       notes: Doxycycline 替代選擇。Mycoplasma 也有效
     - name: Hydrocodone
-      dose: "0.22 mg/kg PO BID-QID"
+      dose: 0.22 mg/kg PO BID-QID
       notes: 中樞性止咳。僅用於嚴重乾咳影響休息時。濕咳不用 (需排痰)
     - name: Nebulization (霧化)
-      dose: "0.9% NaCl 霧化 15-20 分鐘 BID-TID"
+      dose: 0.9% NaCl 霧化 15-20 分鐘 BID-TID
       notes: 濕化呼吸道分泌物，促進排痰。嚴重病例可加入 gentamicin
   general:
     - 隔離病犬至少 2 週 (排毒期可更長)
@@ -109,9 +111,7 @@ treatment:
     - 保持適當溫濕度
     - 幼犬與重症病例密切監測肺炎徵兆
     - 疫苗預防：Bordetella 鼻噴/口服疫苗 (入住犬舍前至少 72 小時)；CPIV + CAV-2 包含在核心疫苗中
-
 prognosis: 免疫健全的成犬預後極佳，多數 7-14 天自行緩解。併發肺炎的幼犬或免疫低下犬需積極治療，及時處理預後仍良好。犬瘟熱合併感染預後差。Streptococcus zooepidemicus 引起的出血性肺炎為最嚴重型態，致死率高。
-
 guidelineRefs:
   - sourceOrg: WSAVA
     title: WSAVA Guidelines for the Vaccination of Dogs and Cats
@@ -121,27 +121,84 @@ guidelineRefs:
     title: Molecular biology of canine parainfluenza virus V protein and its potential applications in tumor immunotherapy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10761501/
     type: review
-    pmid: "38173672"
+    pmid: '38173672'
   - sourceOrg: The Veterinary clinics of North America. Small animal practice
     title: Canine Infectious Respiratory Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7132485/
     type: review
-    pmid: "31813556"
+    pmid: '31813556'
   - sourceOrg: The Journal of pharmacy and pharmacology
     title: The challenges in developing effective canine infectious respiratory disease vaccines.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7166679/
     type: review
-    pmid: "25736813"
+    pmid: '25736813'
   - sourceOrg: Reviews in medical virology
     title: Parainfluenza virus 5-vectored vaccines against human and animal infectious diseases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7169218/
     type: review
-    pmid: "29316047"
+    pmid: '29316047'
 pubmedQueries:
-  - query: '"kennel cough" OR "canine infectious respiratory disease" OR "Bordetella bronchiseptica" AND (dog OR canine) AND ("treatment" OR "vaccine")'
+  - query: >-
+      "kennel cough" OR "canine infectious respiratory disease" OR "Bordetella bronchiseptica" AND (dog OR canine) AND
+      ("treatment" OR "vaccine")
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "Disease Complex"
+  chapter: DIG
+  sectionTitle: Disease Complex
   pdfPage: 308
+diagnosticAlgorithm:
+  title: 犬傳染性呼吸道疾病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 詢問接觸史（犬舍/寄宿/狗公園），評估咳嗽型態
+      findings:
+        - 急性發作的乾咳或鵝鳴樣咳嗽
+        - 近期群居接觸史
+        - 氣管觸診誘咳陽性
+        - 一般精神食慾尚可
+    - step: 2
+      action: 理學檢查與初步排除
+      details: 完整理學檢查排除其他咳嗽原因
+      findings:
+        - 體溫正常或輕度升高
+        - 肺音通常正常
+        - 漿液性至黏液膿性鼻分泌物
+        - 排除心臟雜音
+    - step: 3
+      action: 進階檢查（複雜病例）
+      details: 症狀持續超過10-14天或惡化時進行進階檢查
+      findings:
+        - 胸腔X光排除肺炎
+        - CBC評估白血球變化
+        - 呼吸道PCR面板（Bordetella/CPiV/CIV/Mycoplasma）
+        - 氣管灌洗液細胞學與培養
+    - step: 4
+      action: 併發症監測
+      details: 監測是否進展為支氣管肺炎
+      findings:
+        - 持續發燒不退
+        - 呼吸急促或呼吸困難
+        - 肺部囉音
+        - 食慾下降與精神沉鬱加重
+clinicalPearls:
+  - 最常見的門診咳嗽原因之一
+  - 止咳藥僅用於乾咳影響生活品質時，有分泌物時不應抑制咳嗽
+  - Doxycycline對Bordetella和Mycoplasma均有效，為首選抗生素
+  - 疫苗預防（鼻內或注射型）可減輕但不能完全預防感染
+  - 犬流感病毒（H3N8、H3N2）是近年需注意的新興病原
+  - 群聚暴發時需嚴格隔離和環境消毒
+monitoringItems:
+  - 7-10天後評估症狀改善
+  - 持續咳嗽超過2週需進一步檢查
+  - 群聚環境監控其他犬隻發病
+  - 嚴重病例監測呼吸頻率和體溫
+associatedSymptoms:
+  - symptomId: coughing
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+ddxSource: book

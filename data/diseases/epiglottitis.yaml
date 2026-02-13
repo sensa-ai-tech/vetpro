@@ -3,11 +3,11 @@ nameEn: Epiglottitis
 nameZh: 會厭炎
 bodySystem: respiratory
 description: 會厭軟骨發炎腫脹,可能導致急性氣道阻塞。罕見於犬貓,多因感染或創傷引起。
-
 aliases:
-  - { alias: 會厭軟骨炎, language: zh }
-  - { alias: Epiglottic Inflammation, language: en }
-
+  - alias: 會厭軟骨炎
+    language: zh
+  - alias: Epiglottic Inflammation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 極罕見
-
 etiology:
   categories:
     - name: 感染性
@@ -27,7 +26,6 @@ etiology:
       examples:
         - 異物
         - 插管創傷
-
 clinicalSigns:
   early:
     - 吞嚥困難
@@ -36,41 +34,65 @@ clinicalSigns:
     - 吸氣性喘鳴
     - 呼吸困難
     - 發燒
-
 diagnosis:
   primaryTests:
     - name: 喉鏡檢查
-      notes: "會厭腫脹、發紅"
+      notes: 會厭腫脹、發紅
     - name: 血液檢查
-      notes: "白血球增多"
+      notes: 白血球增多
   differentialDiagnoses:
     - 喉炎
     - 異物
     - 喉膿瘍
-
 treatment:
   medical:
     - 抗生素 (廣效性)
     - 類固醇 (減輕腫脹)
     - 氧氣治療
     - 氣管插管或氣切 (嚴重時)
-
 prognosis:
-  general: "預後良好至謹慎;早期治療預後佳;嚴重氣道阻塞需緊急處理"
-
+  general: 預後良好至謹慎;早期治療預後佳;嚴重氣道阻塞需緊急處理
 prevention:
   - 適當異物管理
   - 輕柔插管技術
-
-
 guidelineRefs:
   - sourceOrg: SAGE open medical case reports
-    title: "Severe epiglottitis caused by Pasteurella multocida: A case report and the literature review."
+    title: 'Severe epiglottitis caused by Pasteurella multocida: A case report and the literature review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12231968/
     type: case-report
-    pmid: "40625382"
+    pmid: '40625382'
   - sourceOrg: Equine veterinary journal
-    title: "Equine epiglottitis: Diagnosis, treatment and outcome."
+    title: 'Equine epiglottitis: Diagnosis, treatment and outcome.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12699098/
     type: research
-    pmid: "40371873"
+    pmid: '40371873'
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: stertor-stridor
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+diagnosticAlgorithm:
+  title: 會厭炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - dysphagia 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 喉鏡檢查
+          notes: 會厭腫脹、發紅
+        - name: 血液檢查
+          notes: 白血球增多
+ddxSource: auto-generated

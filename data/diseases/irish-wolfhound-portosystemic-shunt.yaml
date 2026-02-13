@@ -3,18 +3,18 @@ nameEn: Irish Wolfhound Portosystemic Shunt
 nameZh: 愛爾蘭獵狼犬門脈系統分流
 bodySystem: hepatic
 description: 愛爾蘭獵狼犬可能發生先天性肝外或肝內門脈分流,導致血液繞過肝臟直接進入體循環,引起肝性腦病與生長遲緩。
-
 aliases:
-  - { alias: 愛爾蘭獵狼犬 PSS, language: zh }
-  - { alias: Irish Wolfhound PSS, language: en }
-  - { alias: Liver Shunt Irish Wolfhound, language: en }
-
+  - alias: 愛爾蘭獵狼犬 PSS
+    language: zh
+  - alias: Irish Wolfhound PSS
+    language: en
+  - alias: Liver Shunt Irish Wolfhound
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: rare
     notes: 大型犬多為肝內分流,發病率較小型犬低,幼年至成年皆可發病
-
 etiology:
   categories:
     - name: 先天性異常
@@ -24,7 +24,6 @@ etiology:
     - name: 遺傳傾向
       examples:
         - 愛爾蘭獵狼犬等大型犬品種遺傳易感性
-
 clinicalSigns:
   early:
     - 生長遲緩,體型較小
@@ -34,25 +33,23 @@ clinicalSigns:
     - 肝性腦病(嗜睡,流涎,轉圈,癲癇)
     - 黃疸
     - 腹水
-
 diagnosis:
   primaryTests:
     - name: 血液生化
-      notes: "低白蛋白,低 BUN,高血氨,肝酶輕度升高"
+      notes: 低白蛋白,低 BUN,高血氨,肝酶輕度升高
     - name: 血氨濃度
-      notes: "空腹血氨 >100 μmol/L(正常 <50 μmol/L)"
+      notes: 空腹血氨 >100 μmol/L(正常 <50 μmol/L)
     - name: 膽酸刺激試驗
-      notes: "餐前與餐後 2 小時膽酸,餐後 >25 μmol/L 為異常"
+      notes: 餐前與餐後 2 小時膽酸,餐後 >25 μmol/L 為異常
     - name: 腹部超音波+都卜勒
-      notes: "肝臟微小,異常血管分流,門靜脈血流減少"
+      notes: 肝臟微小,異常血管分流,門靜脈血流減少
     - name: CT 血管造影
-      notes: "確認分流位置與數量,手術規劃金標準"
+      notes: 確認分流位置與數量,手術規劃金標準
   differentialDiagnoses:
     - 微血管發育不良
     - 急性肝炎
     - 肝硬化
     - 先天性尿素循環障礙
-
 treatment:
   medical:
     - 內科管理(不適合手術者):低蛋白飲食(Hill's l/d),Lactulose 0.25-0.5 mL/kg PO q8-12h(降低血氨)
@@ -61,10 +58,46 @@ treatment:
     - 抗癲癇藥物(若有肝性腦病發作):Levetiracetam 20 mg/kg PO q8h(避免肝代謝藥物)
     - 手術治療:肝外分流結紮術(ameroid constrictor 或絲線漸進性結紮)
     - 肝內分流:介入性栓塞或手術結紮(技術難度高,成功率較低)
-
 prognosis:
-  general: "肝外分流手術矯正預後良好,80-90% 可恢復正常生活。肝內分流手術預後保守,成功率 50-70%,術後併發症率較高。僅內科管理預後保留,需終生飲食與藥物控制,平均存活期 2-4 年。"
-
+  general: 肝外分流手術矯正預後良好,80-90% 可恢復正常生活。肝內分流手術預後保守,成功率 50-70%,術後併發症率較高。僅內科管理預後保留,需終生飲食與藥物控制,平均存活期 2-4 年。
 prevention:
   - 受影響犬隻不應繁殖
   - 高風險品種幼犬生長遲緩或異常行為時應進行肝功能篩檢
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 愛爾蘭獵狼犬門脈系統分流 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - polyuria-polydipsia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液生化
+          notes: 低白蛋白,低 BUN,高血氨,肝酶輕度升高
+        - name: 血氨濃度
+          notes: 空腹血氨 >100 μmol/L(正常 <50 μmol/L)
+        - name: 膽酸刺激試驗
+          notes: 餐前與餐後 2 小時膽酸,餐後 >25 μmol/L 為異常
+ddxSource: auto-generated

@@ -3,12 +3,13 @@ nameEn: Fertilizer Toxicosis
 nameZh: 肥料中毒
 bodySystem: toxicology
 description: 攝入化學肥料引發的中毒反應,主要含氮磷鉀化合物及微量元素。症狀取決於肥料類型,可致胃腸道刺激、電解質失衡或重金屬中毒。有機肥料可能含黴菌毒素或病原菌。
-
 aliases:
-  - { alias: 化學肥料中毒, language: zh }
-  - { alias: NPK Fertilizer Poisoning, language: en }
-  - { alias: 園藝肥料中毒, language: zh }
-
+  - alias: 化學肥料中毒
+    language: zh
+  - alias: NPK Fertilizer Poisoning
+    language: en
+  - alias: 園藝肥料中毒
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少接觸戶外肥料,但可能因梳理被污染的毛髮而攝入
-
 etiology:
   categories:
     - name: 化學肥料成分
@@ -31,7 +31,6 @@ etiology:
       examples:
         - 除草劑或殺蟲劑
         - 有機物載體(可能含黴菌毒素)
-
 clinicalSigns:
   early:
     - 過度流涎
@@ -45,23 +44,21 @@ clinicalSigns:
     - 胃腸道異物或阻塞(顆粒狀肥料)
     - 震顫或癲癇(含殺蟲劑或除草劑時)
     - 重金屬中毒症狀(鐵、鋅過量)
-
 diagnosis:
   primaryTests:
     - name: 病史詢問
-      notes: "確認施肥活動或肥料儲存區接觸史,攜帶肥料包裝標示"
+      notes: 確認施肥活動或肥料儲存區接觸史,攜帶肥料包裝標示
     - name: 全血球計數
-      notes: "評估脫水程度,變性血紅素血症時可見 chocolate-brown 血液"
+      notes: 評估脫水程度,變性血紅素血症時可見 chocolate-brown 血液
     - name: 血液生化
-      notes: "電解質(特別是鉀)、腎功能、肝功能"
+      notes: 電解質(特別是鉀)、腎功能、肝功能
     - name: 腹部影像學
-      notes: "X 光可見不透光肥料顆粒聚集於胃腸道"
+      notes: X 光可見不透光肥料顆粒聚集於胃腸道
   differentialDiagnoses:
     - 除草劑或殺蟲劑中毒
     - 急性胃腸炎
     - 胃腸道異物
     - 重金屬中毒(鐵、鋅)
-
 treatment:
   medical:
     - 去污染:催吐(攝入後<2小時且無腐蝕性成分)
@@ -74,20 +71,50 @@ treatment:
     - 變性血紅素血症:Methylene blue 1-2 mg/kg IV 緩慢(僅貓需謹慎)
     - 鐵中毒:Deferoxamine 10-40 mg/kg IM 每4-8小時
     - 胃腸道阻塞:考慮內視鏡或手術移除
-
 prognosis:
-  general: "多數單純化學肥料中毒預後良好,輕度胃腸道症狀 24-48 小時內恢復。嚴重電解質失衡、變性血紅素血症或胃腸道阻塞預後保留。含除草劑/殺蟲劑產品毒性更強。"
-
+  general: 多數單純化學肥料中毒預後良好,輕度胃腸道症狀 24-48 小時內恢復。嚴重電解質失衡、變性血紅素血症或胃腸道阻塞預後保留。含除草劑/殺蟲劑產品毒性更強。
 prevention:
   - 肥料儲存於寵物無法接觸的密閉容器中
   - 施肥後至少 24-48 小時禁止寵物進入草坪
   - 使用寵物友善或有機肥料產品
   - 遵循產品標示的安全等待期
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Iron EDTA ingestion and toxicosis in 61 dogs: a multicenter retrospective study of Australian hospital records."
+    title: 'Iron EDTA ingestion and toxicosis in 61 dogs: a multicenter retrospective study of Australian hospital records.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12520899/
     type: research
-    pmid: "41104280"
+    pmid: '41104280'
+associatedSymptoms:
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肥料中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ptyalism 相關症狀
+        - vomiting 相關症狀
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史詢問
+          notes: 確認施肥活動或肥料儲存區接觸史,攜帶肥料包裝標示
+        - name: 全血球計數
+          notes: 評估脫水程度,變性血紅素血症時可見 chocolate-brown 血液
+        - name: 血液生化
+          notes: 電解質(特別是鉀)、腎功能、肝功能
+ddxSource: auto-generated

@@ -1,0 +1,132 @@
+slug: cardiogenic-shock
+nameEn: Cardiogenic Shock
+nameZh: 心因性休克
+description: 因心臟幫浦功能嚴重障礙（收縮或舒張功能異常）導致心搏出量不足、組織灌流不全的危急狀態。與低血容積性休克不同，血管內容量正常或增加，但心臟無法有效輸出。
+bodySystem: cardiovascular
+species:
+  - speciesCommon: dog
+  - speciesCommon: cat
+etiology:
+  categories:
+    - name: Risk Factors
+      examples:
+        - 擴張性心肌病（DCM，大型犬）
+        - 肥厚性心肌病（HCM，貓）
+        - 嚴重瓣膜疾病
+        - 心包填塞
+        - 嚴重心律不整
+        - 心肌炎
+clinicalSigns:
+  early:
+    - 呼吸急促/困難進行性加重
+    - 運動不耐或突然虛弱
+    - 已知心臟病史
+    - 咳嗽（犬為主）
+    - 食慾下降
+    - 開口呼吸（貓）
+  progressive:
+    - 心搏過速或心律不整
+    - 脈搏微弱
+    - 肺部囉音（肺水腫）
+    - 心雜音或奔馬律
+    - 頸靜脈怒張
+    - 肝腫大
+    - 黏膜蒼白或發紺
+    - 口鼻血泡沫（嚴重肺水腫）
+diagnosis:
+  primaryTests:
+    - 胸腔X光（心臟擴大、肺水腫）
+    - 心臟超音波（FS%降低、室壁運動異常）
+    - 心電圖（心律不整、傳導異常）
+    - 血壓測量（收縮壓<90 mmHg）
+    - NT-proBNP或cardiac troponin
+  additional:
+    - 進階心臟超音波（E/A比值、組織都普勒）
+    - 中心靜脈壓（CVP升高）
+    - 連續血壓監測
+    - 乳酸/血氣分析
+treatment:
+  principles:
+    - 氧氣治療（優先穩定呼吸）
+    - 利尿劑：Furosemide 2-4 mg/kg IV（犬），1-2 mg/kg IV（貓）PRN
+    - 正性肌力藥：Dobutamine 5-15 μg/kg/min CRI（改善收縮力）
+    - 血管擴張劑：Nitroglycerin外用或Nitroprusside 1-5 μg/kg/min（降低後負荷）
+    - 抗心律不整：依據心律類型選擇（Lidocaine、Diltiazem等）
+    - 禁忌：大量快速輸液（會加重肺水腫）
+  general:
+    - 口服心衰藥物（Pimobendan 0.25 mg/kg PO q12h、ACE inhibitor）
+    - 口服利尿劑維持（Furosemide、Spironolactone）
+    - 飲食管理（限鈉）
+    - 活動限制與環境壓力控制
+prognosis: 急性心因性休克預後嚴峻，住院死亡率高。犬DCM穩定後中位存活3-6個月。貓HCM合併CHF中位存活約18個月。瓣膜疾病經藥物控制後存活相對較長。心包填塞引起者若能排液預後較佳。
+diagnosticAlgorithm:
+  title: 心因性休克 診斷與處置流程
+  steps:
+    - step: 1
+      action: 休克鑑別
+      details: 評估休克類型——是否有容量過載（充血）證據
+      findings:
+        - 頸靜脈怒張
+        - 肺部囉音/呼吸困難
+        - 心雜音或奔馬律
+        - 肝腫大
+    - step: 2
+      action: 心臟功能評估
+      details: 胸腔X光+心臟超音波+ECG
+      findings:
+        - 心臟擴大（X光VHS增加）
+        - FS%<25%或E/A異常
+        - 肺水腫（X光肺紋增粗）
+        - 心律不整（ECG）
+    - step: 3
+      action: 穩定呼吸功能
+      details: 氧氣+利尿劑，禁止大量輸液
+      findings:
+        - Furosemide IV→30-60分鐘內尿量增加
+        - 氧氣治療→SpO2改善
+        - 限制輸液速率
+        - 呼吸頻率下降
+    - step: 4
+      action: 心肌支持與病因治療
+      details: 正性肌力藥+血管擴張劑+抗心律不整
+      findings:
+        - Dobutamine CRI→血壓改善
+        - Pimobendan口服（穩定後）
+        - 針對性抗心律不整
+        - 長期心衰管理計畫
+clinicalPearls:
+  - 心因性休克禁忌大量快速輸液——這是與低血容積性休克的最關鍵區別
+  - 犬有肺囉音+心雜音+頸靜脈怒張=高度懷疑心因性休克
+  - Dobutamine是急性心因性休克首選正性肌力藥
+  - 貓的心因性休克常以呼吸窘迫為首發表現，需避免過度stress
+  - 測量NT-proBNP有助於區分心源性vs非心源性呼吸困難
+monitoringItems:
+  - 血壓（連續監測）
+  - 呼吸頻率與型態
+  - 心電圖連續監測
+  - SpO2
+  - 尿量（利尿反應評估）
+  - 胸腔X光（肺水腫變化）
+  - 心臟超音波追蹤
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: hepatomegaly
+    frequency: common
+ddxSource: book-only

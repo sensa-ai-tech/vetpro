@@ -3,11 +3,11 @@ nameEn: Mandibular Fracture
 nameZh: 下顎骨骨折
 bodySystem: orthopedic
 description: 下顎骨（mandible）的骨折，可因外傷或病理性因素（牙周病、腫瘤）引起。犬貓常見於下顎聯合 (symphysis) 處分離。需注意咬合對位與牙齒保留。
-
 aliases:
-  - { alias: "Jaw Fracture", language: en }
-  - { alias: "下巴骨折", language: zh }
-
+  - alias: Jaw Fracture
+    language: en
+  - alias: 下巴骨折
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓常見。高處墜落典型造成下顎聯合分離。
-
 etiology:
   categories:
     - name: 外傷性
@@ -27,7 +26,6 @@ etiology:
       examples:
         - 嚴重牙周病（骨質疏鬆）
         - 下顎腫瘤
-
 clinicalSigns:
   early:
     - 無法閉合嘴巴
@@ -38,14 +36,12 @@ clinicalSigns:
     - 咬合不正
     - 下顎不穩定
     - 腫脹
-
 diagnosis:
   primaryTests:
     - name: 口腔 X 光
       notes: 確認骨折類型與位置。評估牙齒損傷
     - name: CT
       notes: 複雜骨折的精確評估
-
 treatment:
   principles:
     - 恢復正確咬合對位
@@ -57,36 +53,79 @@ treatment:
     - 咬合對位確認
     - 管飼餵食恢復期
     - 3-4 週後移除鋼絲
-
 prognosis: 下顎聯合分離手術後預後極佳。骨體骨折視粉碎程度而定。病理性骨折需同時處理牙周病或腫瘤。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Mandibular fracture repair techniques in cats: a dentist's perspective."
+    title: 'Mandibular fracture repair techniques in cats: a dentist''s perspective.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812066/
     type: review
-    pmid: "36744847"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "The Cat Mandible (II): Manipulation of the Jaw, with a New Prosthesis Proposal, to Avoid Iatrogenic Complications."
+    pmid: '36744847'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'The Cat Mandible (II): Manipulation of the Jaw, with a New Prosthesis Proposal, to Avoid Iatrogenic Complications.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8001173/
     type: review
-    pmid: "33806397"
+    pmid: '33806397'
   - sourceOrg: Antimicrobial resistance and infection control
     title: Severe recurrent Streptobacillus moniliformis endocarditis in a pregnant woman, and review of the literature.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7391614/
     type: review
-    pmid: "32727581"
+    pmid: '32727581'
   - sourceOrg: International journal of surgery case reports
     title: Secondary mandibular osteomyelitis complicated with a pathological fracture.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11283122/
     type: case-report
-    pmid: "38964230"
+    pmid: '38964230'
   - sourceOrg: Frontiers in veterinary science
     title: Clinical and diagnostic imaging outcomes of mandibular fracture management in 109 cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12327238/
     type: research
-    pmid: "40771948"
+    pmid: '40771948'
 pubmedQueries:
   - query: '"mandibular fracture" AND (veterinary OR canine OR feline) AND ("fixation" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 頜骨骨折 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 外傷患者先穩定生命徵象，評估多重創傷
+      findings:
+        - 生命徵象穩定
+        - 多重創傷
+        - 呼吸道阻塞
+    - step: 2
+      action: 口腔觸診
+      details: 評估咬合、骨折活動度和軟組織損傷
+      findings:
+        - 咬合不正
+        - 異常活動度
+        - 捻髮音
+    - step: 3
+      action: 影像學檢查
+      details: 放射線或CT確認骨折位置和類型
+      findings:
+        - 骨折位置和移位
+        - 骨折線與齒根關係
+        - 多發骨折
+    - step: 4
+      action: 治療計畫
+      details: 根據骨折穩定度和咬合評估選擇固定方式
+      findings:
+        - 保守治療
+        - 齒間固定
+        - 手術固定
+clinicalPearls:
+  - 貓頜骨骨折發生率（15%）遠高於犬（3%），多與高處墜落相關
+  - 下頜聯合（mandibular symphysis）分離在貓極為常見，用鋼絲固定效果良好
+  - 小型犬牙周病相關骨折的骨癒合較差，可能需要長期軟食
+monitoringItems:
+  - 術後2週評估咬合和固定穩定度
+  - 4-6週放射線追蹤骨癒合
+  - 8-12週移除固定裝置
+  - 定期口腔檢查監測咬合和牙周狀態
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+ddxSource: book

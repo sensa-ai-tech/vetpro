@@ -3,19 +3,20 @@ nameEn: Rat Diet Related Disease
 nameZh: 大鼠飲食相關疾病
 bodySystem: metabolic
 description: 大鼠飲食相關疾病涵蓋因營養不均衡、不當食物選擇或缺乏特定營養素導致的多種健康問題，包括維生素缺乏、礦物質失衡及蛋白質攝取不當等。
-
 aliases:
-  - { alias: 鼠營養不良, language: zh }
-  - { alias: 大鼠營養性疾病, language: zh }
-  - { alias: Rat nutritional disease, language: en }
-  - { alias: Rat malnutrition, language: en }
-
+  - alias: 鼠營養不良
+    language: zh
+  - alias: 大鼠營養性疾病
+    language: zh
+  - alias: Rat nutritional disease
+    language: en
+  - alias: Rat malnutrition
+    language: en
 species:
   - speciesCommon: rat
     speciesScientific: Rattus norvegicus
     prevalence: common
     notes: 常見於僅餵食種子混合飼料或人類食物殘渣的寵物鼠。幼鼠及老年鼠更為敏感。
-
 etiology:
   categories:
     - name: 營養缺乏
@@ -34,7 +35,6 @@ etiology:
         - 僅餵食種子混合飼料（選擇性進食導致營養偏差）
         - 人類加工食品（高鈉、高糖）
         - 缺乏新鮮蔬果
-
 clinicalSigns:
   early:
     - 被毛粗糙無光澤
@@ -46,21 +46,19 @@ clinicalSigns:
     - 眼睛分泌物增加
     - 生殖障礙
     - 免疫力下降導致反覆感染
-
 diagnosis:
   primaryTests:
     - name: 飲食史評估
-      notes: "詳細詢問飲食種類、比例與頻率，為診斷關鍵"
+      notes: 詳細詢問飲食種類、比例與頻率，為診斷關鍵
     - name: 血液生化檢查
-      notes: "評估蛋白質、鈣磷比、肝腎功能指標"
+      notes: 評估蛋白質、鈣磷比、肝腎功能指標
     - name: X光檢查
-      notes: "評估骨密度與骨骼畸形"
+      notes: 評估骨密度與骨骼畸形
   differentialDiagnoses:
     - 慢性腎病
     - 內分泌疾病
     - 寄生蟲感染
     - 慢性感染性疾病
-
 treatment:
   medical:
     - 飲食矯正為首要治療
@@ -68,46 +66,70 @@ treatment:
     - 適當補充新鮮蔬果
     - 嚴重缺乏時短期補充特定維生素或礦物質
     - 監測體重與臨床改善
-
 prognosis:
-  general: "早期飲食矯正後多數可改善。嚴重營養不良導致的器官損傷可能不可逆。幼鼠生長期營養缺乏造成的骨骼畸形預後較差。"
-
+  general: 早期飲食矯正後多數可改善。嚴重營養不良導致的器官損傷可能不可逆。幼鼠生長期營養缺乏造成的骨骼畸形預後較差。
 prevention:
   - 以高品質商業鼠糧為主食（佔 80%）
   - 每日提供少量新鮮蔬菜
   - 避免高脂種子與堅果作為主食
   - 避免餵食人類加工食品
   - 提供清潔飲水
-
-
 guidelineRefs:
   - sourceOrg: International journal of molecular sciences
     title: Rodent Models for Atherosclerosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12786042/
     type: review
-    pmid: "41516253"
+    pmid: '41516253'
     relevance: primary
   - sourceOrg: Molecules (Basel, Switzerland)
-    title: "Polyphenols and Microbiota Modulation: Insights from Swine and Other Animal Models for Human Therapeutic Strategies."
+    title: >-
+      Polyphenols and Microbiota Modulation: Insights from Swine and Other Animal Models for Human Therapeutic
+      Strategies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11678809/
     type: review
-    pmid: "39770115"
+    pmid: '39770115'
     relevance: primary
   - sourceOrg: Nutrients
     title: Consequences of Paternal Nutrition on Offspring Health and Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8400857/
     type: review
-    pmid: "34444978"
+    pmid: '34444978'
     relevance: primary
   - sourceOrg: Journal of neuroinflammation
-    title: "Mitigating organophosphate nerve agent, soman (GD), induced long-term neurotoxicity: Saracatinib, a Src Tyrosine Kinase inhibitor, as a potential countermeasure."
+    title: >-
+      Mitigating organophosphate nerve agent, soman (GD), induced long-term neurotoxicity: Saracatinib, a Src Tyrosine
+      Kinase inhibitor, as a potential countermeasure.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12326679/
     type: research
-    pmid: "40764938"
+    pmid: '40764938'
     relevance: supporting
   - sourceOrg: Journal of advanced research
-    title: "Nervonic acid triggered ovarian inflammation by inducing mitochondrial oxidative stress to activate NLRP3/ IL-1&#x3b2; pathway."
+    title: >-
+      Nervonic acid triggered ovarian inflammation by inducing mitochondrial oxidative stress to activate NLRP3/
+      IL-1&#x3b2; pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12225940/
     type: research
-    pmid: "39181200"
+    pmid: '39181200'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: alopecia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 大鼠飲食相關疾病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 飲食史評估
+          notes: 詳細詢問飲食種類、比例與頻率，為診斷關鍵
+        - name: 血液生化檢查
+          notes: 評估蛋白質、鈣磷比、肝腎功能指標
+        - name: X光檢查
+          notes: 評估骨密度與骨骼畸形
+ddxSource: auto-generated

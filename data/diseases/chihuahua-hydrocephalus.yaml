@@ -3,19 +3,20 @@ nameEn: Chihuahua Hydrocephalus
 nameZh: 吉娃娃水腦症
 bodySystem: neurology
 description: 吉娃娃水腦症是該品種因先天性腦脊液循環障礙導致腦室擴大的神經系統疾病。過多的腦脊液蓄積壓迫腦組織，引起神經功能障礙。吉娃娃因囟門未閉合與蘋果型頭顱而特別易感。
-
 aliases:
-  - { alias: 吉娃娃腦水腫, language: zh }
-  - { alias: 先天性水腦, language: zh }
-  - { alias: Chihuahua hydrocephalus, language: en }
-  - { alias: Congenital hydrocephalus, language: en }
-
+  - alias: 吉娃娃腦水腫
+    language: zh
+  - alias: 先天性水腦
+    language: zh
+  - alias: Chihuahua hydrocephalus
+    language: en
+  - alias: Congenital hydrocephalus
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 吉娃娃為水腦症最好發品種。蘋果型頭顱犬發生率更高。可伴隨開放性囟門（molera）。幼犬期即可出現症狀。
-
 etiology:
   categories:
     - name: 先天因素
@@ -29,7 +30,6 @@ etiology:
         - 腦炎後黏連
         - 腫瘤阻塞
         - 外傷
-
 clinicalSigns:
   early:
     - 圓頂形頭顱（較同齡犬更圓更大）
@@ -43,21 +43,19 @@ clinicalSigns:
     - 轉圈行為
     - 共濟失調
     - 嚴重者嗜睡至昏迷
-
 diagnosis:
   primaryTests:
     - name: 頭部超音波（經囟門）
-      notes: "開放囟門犬可經由囟門以超音波評估腦室大小。簡單無侵入性"
+      notes: 開放囟門犬可經由囟門以超音波評估腦室大小。簡單無侵入性
     - name: MRI
-      notes: "金標準。精確評估腦室擴大程度、腦組織壓迫與阻塞點"
+      notes: 金標準。精確評估腦室擴大程度、腦組織壓迫與阻塞點
     - name: CT 掃描
-      notes: "可替代 MRI。評估腦室擴張與顱骨結構"
+      notes: 可替代 MRI。評估腦室擴張與顱骨結構
   differentialDiagnoses:
     - 腦炎
     - 腦腫瘤
     - 肝性腦病（門脈分流）
     - 低血糖性腦病
-
 treatment:
   medical:
     - Omeprazole（0.5-1 mg/kg PO SID）減少腦脊液分泌
@@ -67,11 +65,43 @@ treatment:
   surgical:
     - 腦室腹腔引流術（VP shunt）
     - 分流管需隨生長更換或調整
-
 prognosis:
-  general: "預後因嚴重程度而異。輕度水腦犬可在藥物治療下維持可接受的生活品質。嚴重腦組織損傷者預後不良。VP 分流手術可顯著改善症狀但有併發症風險（感染、阻塞）。"
-
+  general: 預後因嚴重程度而異。輕度水腦犬可在藥物治療下維持可接受的生活品質。嚴重腦組織損傷者預後不良。VP 分流手術可顯著改善症狀但有併發症風險（感染、阻塞）。
 prevention:
   - 避免繁殖蘋果型頭顱過度的個體
   - 開放性囟門犬應避免頭部創傷
   - 繁殖犬神經學評估
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: blindness
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 吉娃娃水腦症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - seizures 相關症狀
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 頭部超音波（經囟門）
+          notes: 開放囟門犬可經由囟門以超音波評估腦室大小。簡單無侵入性
+        - name: MRI
+          notes: 金標準。精確評估腦室擴大程度、腦組織壓迫與阻塞點
+        - name: CT 掃描
+          notes: 可替代 MRI。評估腦室擴張與顱骨結構
+ddxSource: auto-generated

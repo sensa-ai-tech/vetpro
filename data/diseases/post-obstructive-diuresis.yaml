@@ -3,11 +3,11 @@ nameEn: Post Obstructive Diuresis
 nameZh: 阻塞後利尿
 bodySystem: electrolyte
 description: 尿路阻塞解除後出現的過度利尿現象,可能因腎小管功能障礙、滲透性利尿或壓力性利尿引起。可導致嚴重脫水及電解質失衡（低血鉀、低血鈉）,需密集監測及補充。
-
 aliases:
-  - { alias: 阻塞解除後多尿, language: zh }
-  - { alias: POD, language: en }
-
+  - alias: 阻塞解除後多尿
+    language: zh
+  - alias: POD
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓尿道阻塞（FLUTD）解除後極常見,可持續24-72小時
-
 etiology:
   categories:
     - name: 尿路阻塞解除後
@@ -30,7 +29,6 @@ etiology:
         - 腎小管濃縮功能障礙
         - 尿素及電解質滲透性利尿
         - 腎臟血流恢復後壓力性利尿
-
 clinicalSigns:
   early:
     - 阻塞解除後數小時內開始
@@ -39,45 +37,57 @@ clinicalSigns:
     - 脫水（皮膚彈性差、黏膜乾燥）
     - 電解質失衡（低血鉀、低血鈉）
     - 持續24-72小時（偶爾更久）
-
 diagnosis:
   primaryTests:
     - name: 尿量監測
-      notes: "尿量 >2 mL/kg/hr,嚴重可達4-6 mL/kg/hr"
+      notes: 尿量 >2 mL/kg/hr,嚴重可達4-6 mL/kg/hr
     - name: 血清電解質
-      notes: "低血鉀（<3.5 mEq/L）、低血鈉（<140 mEq/L）常見"
+      notes: 低血鉀（<3.5 mEq/L）、低血鈉（<140 mEq/L）常見
     - name: 尿比重
-      notes: "尿比重降低（<1.020）,反映腎小管濃縮功能障礙"
+      notes: 尿比重降低（<1.020）,反映腎小管濃縮功能障礙
   differentialDiagnoses:
     - 生理性利尿（輸液過量）
     - 腎性尿崩症
     - 慢性腎臟病
-
 treatment:
   medical:
     - 密集監測尿量（每1-4小時）
-    - 靜脈輸液補充：
-      - 輸液速率 = 尿量 + 不顯性流失（20-30 mL/kg/day）+ 維持量
-      - 避免輸液速率超過尿量的1.5倍（防止過度水合）
-    - 電解質補充：
-      - KCl 添加於輸液（20-40 mEq/L）
-      - 監測血鉀每4-6小時
+    - 靜脈輸液補充： - 輸液速率 = 尿量 + 不顯性流失（20-30 mL/kg/day）+ 維持量 - 避免輸液速率超過尿量的1.5倍（防止過度水合）
+    - 電解質補充： - KCl 添加於輸液（20-40 mEq/L） - 監測血鉀每4-6小時
     - 每日評估體重、水合狀態
     - 通常24-72小時後尿量逐漸恢復正常
-
 prognosis:
-  general: "預後良好,多數病例經適當輸液及電解質管理後可完全恢復。嚴重阻塞導致急性腎損傷者可能需數天至數週腎功能恢復。未適當補充可能導致脫水或電解質危機。"
-
+  general: 預後良好,多數病例經適當輸液及電解質管理後可完全恢復。嚴重阻塞導致急性腎損傷者可能需數天至數週腎功能恢復。未適當補充可能導致脫水或電解質危機。
 prevention:
   - 尿路阻塞患者解除後立即密集監測
   - 避免輸液不足或過量
   - 定期監測電解質及尿量
-
-
 guidelineRefs:
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: "In-hospital medical management of feline urethral obstruction: A review of recent clinical research."
+    title: 'In-hospital medical management of feline urethral obstruction: A review of recent clinical research.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7236633/
     type: review
-    pmid: "32675811"
+    pmid: '32675811'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 阻塞後利尿 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dehydration 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 尿量監測
+          notes: 尿量 >2 mL/kg/hr,嚴重可達4-6 mL/kg/hr
+        - name: 血清電解質
+          notes: 低血鉀（<3.5 mEq/L）、低血鈉（<140 mEq/L）常見
+        - name: 尿比重
+          notes: 尿比重降低（<1.020）,反映腎小管濃縮功能障礙
+ddxSource: auto-generated

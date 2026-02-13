@@ -3,13 +3,15 @@ nameEn: Canine Parvovirus Enteritis
 nameZh: 犬小病毒腸炎
 bodySystem: infectious
 description: 由犬小病毒第二型 (CPV-2) 引起的高度傳染性急性出血性腸炎，為幼犬最致命的感染性疾病之一。
-
 aliases:
-  - { alias: CPV, language: en }
-  - { alias: Parvo, language: en }
-  - { alias: CPV-2, language: en }
-  - { alias: 犬細小病毒, language: zh }
-
+  - alias: CPV
+    language: en
+  - alias: Parvo
+    language: en
+  - alias: CPV-2
+    language: en
+  - alias: 犬細小病毒
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓小病毒 (FPV) 為不同但相關病毒。CPV-2a/2b/2c 變異株可能感染貓。
-
 etiology:
   categories:
     - name: 病毒性
@@ -35,7 +36,6 @@ etiology:
         - 收容所/群養環境
         - 腸道寄生蟲共感染
         - 緊迫 (斷奶、運輸、手術)
-
 clinicalSigns:
   early:
     - 食慾廢絕
@@ -54,27 +54,25 @@ clinicalSigns:
     - 低血糖
     - 腸套疊
     - 心肌炎 (新生幼犬，罕見)
-
 diagnosis:
   primaryTests:
     - name: 糞便 CPV 抗原快速檢測 (SNAP test)
-      notes: "ELISA 或免疫層析法。敏感度約 80%。疫苗接種後 5-12 天可能假陽性。臨床高度懷疑但快篩陰性時不排除"
+      notes: ELISA 或免疫層析法。敏感度約 80%。疫苗接種後 5-12 天可能假陽性。臨床高度懷疑但快篩陰性時不排除
     - name: CBC
-      notes: "白血球減少 (尤其淋巴球與嗜中性球) 為重要線索。WBC <2000/μL 預後較差"
+      notes: 白血球減少 (尤其淋巴球與嗜中性球) 為重要線索。WBC <2000/μL 預後較差
     - name: 糞便 PCR
-      notes: "敏感度最高。可區分疫苗株與野生株 (部分實驗室)"
+      notes: 敏感度最高。可區分疫苗株與野生株 (部分實驗室)
   imaging:
     - name: 腹部 X 光
-      notes: "小腸擴張充液、排除腸套疊或異物"
+      notes: 小腸擴張充液、排除腸套疊或異物
     - name: 腹部超音波
-      notes: "小腸壁增厚或變薄、腸道蠕動減少、腸套疊評估"
+      notes: 小腸壁增厚或變薄、腸道蠕動減少、腸套疊評估
   additional:
     - 生化 (低白蛋白、低血糖、電解質異常)
     - 血液乳酸 (預後指標)
     - 凝血功能 (DIC 篩檢)
     - 血液培養 (懷疑敗血症)
     - 糞便浮游法 (排除寄生蟲共感染)
-
 treatment:
   principles:
     - 積極支持性治療為基石 (無特異性抗病毒藥物)
@@ -84,16 +82,16 @@ treatment:
     - 嚴格隔離防止院內傳播
   medications:
     - name: 晶體液 (LRS 或 Normosol-R)
-      dose: "休克劑量 60-90 mL/kg/hr (犬)，後依脫水程度與持續流失調整"
+      dose: 休克劑量 60-90 mL/kg/hr (犬)，後依脫水程度與持續流失調整
       notes: 靜脈輸液為最重要治療。嚴重低白蛋白考慮膠體液
     - name: Maropitant (Cerenia)
-      dose: "1 mg/kg IV/SC SID"
+      dose: 1 mg/kg IV/SC SID
       notes: NK1 受體拮抗劑止吐藥。效果顯著。可能有腸道保護作用
     - name: Ampicillin-Sulbactam
-      dose: "22 mg/kg IV TID"
+      dose: 22 mg/kg IV TID
       notes: 廣效抗生素覆蓋腸道菌轉位。白血球減少時尤其重要
     - name: Metronidazole
-      dose: "10-15 mg/kg IV BID"
+      dose: 10-15 mg/kg IV BID
       notes: 厭氧菌覆蓋。與 ampicillin 合併提供廣效保護
   general:
     - 嚴格隔離 (高度傳染性)
@@ -104,32 +102,79 @@ treatment:
     - 驅蟲 (穩定後)
     - 環境消毒 (dilute bleach 1:30 為最有效消毒劑)
     - 住院治療通常需 5-7 天
-
 emergencyNotes: 犬小病毒腸炎為急症。立即建立靜脈通路，積極液體復甦。監測血糖 (低血糖常見且致命)。嚴重白血球減少 (<1000/μL) 感染風險極高。敗血性休克需血管升壓藥支持。低體溫為不良預後指標。嚴格隔離！
-
 prognosis: 住院積極治療存活率約 80-95%。未治療死亡率 >90%。WBC <1000/μL、低白蛋白、低體溫、乳酸升高為不良預後指標。存活犬通常完全恢復，可獲得長期免疫力。
-
 ontologyMappings:
   - source: MONDO
-    code: "MONDO:0025527"
+    code: MONDO:0025527
     label: parvovirus infectious disease
     confidence: broad
-
 guidelineRefs:
   - sourceOrg: AAHA
-    title: "AAHA Canine Vaccination Guidelines"
+    title: AAHA Canine Vaccination Guidelines
     url: https://www.aaha.org/aaha-guidelines/vaccination-canine-configuration/vaccination-canine/
     type: guideline
   - sourceOrg: WSAVA
-    title: "WSAVA Vaccination Guidelines"
+    title: WSAVA Vaccination Guidelines
     url: https://wsava.org/global-guidelines/vaccination-guidelines/
     type: guideline
-
 pubmedQueries:
   - query: '"canine parvovirus" AND ("treatment" OR "prognosis" OR "outcome")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "REP"
-  sectionTitle: "Porcine Parvovirus: Porcine parvovirus"
+  chapter: REP
+  sectionTitle: 'Porcine Parvovirus: Porcine parvovirus'
   pdfPage: 1383
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: hypothermia-sign
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 犬小病毒腸炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - abdominal-pain 相關症狀
+        - hypothermia-sign 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便 CPV 抗原快速檢測 (SNAP test)
+          notes: ELISA 或免疫層析法。敏感度約 80%。疫苗接種後 5-12 天可能假陽性。臨床高度懷疑但快篩陰性時不排除
+        - name: CBC
+          notes: 白血球減少 (尤其淋巴球與嗜中性球) 為重要線索。WBC <2000/μL 預後較差
+        - name: 糞便 PCR
+          notes: 敏感度最高。可區分疫苗株與野生株 (部分實驗室)
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 生化 (低白蛋白、低血糖、電解質異常)
+        - 血液乳酸 (預後指標)
+        - 凝血功能 (DIC 篩檢)
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 積極支持性治療為基石 (無特異性抗病毒藥物)
+        - 液體復甦與電解質矯正
+        - 廣效抗生素預防/治療繼發性敗血症
+ddxSource: auto-generated

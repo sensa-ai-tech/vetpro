@@ -3,20 +3,22 @@ nameEn: Labrador Retriever Centronuclear Myopathy
 nameZh: 拉布拉多中心核肌病
 bodySystem: musculoskeletal
 description: 拉布拉多中心核肌病（CNM）是一種體染色體隱性遺傳的肌肉疾病，由 PTPLA 基因突變引起。病犬肌纖維發育異常，細胞核位於中心而非正常的周邊位置，導致進行性肌無力與運動不耐受。
-
 aliases:
-  - { alias: 拉布拉多遺傳性肌病, language: zh }
-  - { alias: 中央核肌病, language: zh }
-  - { alias: Labrador CNM, language: en }
-  - { alias: PTPLA myopathy, language: en }
-  - { alias: Hereditary myopathy of Labrador Retrievers, language: en }
-
+  - alias: 拉布拉多遺傳性肌病
+    language: zh
+  - alias: 中央核肌病
+    language: zh
+  - alias: Labrador CNM
+    language: en
+  - alias: PTPLA myopathy
+    language: en
+  - alias: Hereditary myopathy of Labrador Retrievers
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: rare
     notes: 拉布拉多犬特有遺傳疾病。攜帶率在某些血統高達 10-15%。症狀通常 2-5 月齡出現。體染色體隱性遺傳。
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -29,7 +31,6 @@ etiology:
         - 肌纖維核中心化
         - 肌管成熟障礙
         - 第 II 型肌纖維選擇性萎縮
-
 clinicalSigns:
   early:
     - 幼犬期運動不耐受
@@ -43,32 +44,60 @@ clinicalSigns:
     - 膝反射消失或減弱
     - 寒冷天氣症狀加重
     - 巨食道（部分病例）
-
 diagnosis:
   primaryTests:
     - name: PTPLA 基因檢測
-      notes: "DNA 檢測為確診金標準。可區分正常、攜帶者與受影響犬"
+      notes: DNA 檢測為確診金標準。可區分正常、攜帶者與受影響犬
     - name: 肌肉活檢
-      notes: "組織學特徵：肌纖維核中心化、第 II 型纖維萎縮"
+      notes: 組織學特徵：肌纖維核中心化、第 II 型纖維萎縮
     - name: 血清 CK
-      notes: "血清肌酸激酶可正常或輕度升高"
+      notes: 血清肌酸激酶可正常或輕度升高
   differentialDiagnoses:
     - 重症肌無力
     - 多發性肌炎
     - 運動誘發虛脫（EIC）
     - 糖原儲積病
-
 treatment:
   medical:
     - 無特效治療
     - 避免過度運動與寒冷環境
     - 營養支持
     - 抬高餵食（如伴發巨食道）
-
 prognosis:
-  general: "預後謹慎至不良。疾病為進行性但進展速度因個體而異。部分犬可維持數年的可接受生活品質，但肌肉萎縮最終影響日常功能。基因篩選為預防關鍵。"
-
+  general: 預後謹慎至不良。疾病為進行性但進展速度因個體而異。部分犬可維持數年的可接受生活品質，但肌肉萎縮最終影響日常功能。基因篩選為預防關鍵。
 prevention:
   - 繁殖犬 PTPLA 基因篩選
   - 避免攜帶者間配種
   - 基因型為 N/CNM 的攜帶者應僅與 N/N 配種
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 拉布拉多中心核肌病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dysphagia 相關症狀
+        - trembling 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: PTPLA 基因檢測
+          notes: DNA 檢測為確診金標準。可區分正常、攜帶者與受影響犬
+        - name: 肌肉活檢
+          notes: 組織學特徵：肌纖維核中心化、第 II 型纖維萎縮
+        - name: 血清 CK
+          notes: 血清肌酸激酶可正常或輕度升高
+ddxSource: auto-generated

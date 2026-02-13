@@ -3,11 +3,11 @@ nameEn: Rib Fracture
 nameZh: 肋骨骨折
 bodySystem: emergency
 description: 肋骨骨折為胸部外傷常見損傷，可為單根或多根。疼痛導致自主限制呼吸為主要臨床影響。嚴重多發肋骨骨折可形成連枷胸。骨折端可能刺穿肺臟引起氣胸或血胸。多數保守管理，有效止痛為關鍵。
-
 aliases:
-  - { alias: 肋骨斷裂, language: zh }
-  - { alias: Costal Fracture, language: en }
-
+  - alias: 肋骨斷裂
+    language: zh
+  - alias: Costal Fracture
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓肋骨骨折見於車禍與高處墜落。貓肋骨較薄易骨折但亦易癒合。
-
 etiology:
   categories:
     - name: 常見原因
@@ -30,7 +29,6 @@ etiology:
         - 血胸
         - 連枷胸（多發骨折）
         - 肺挫傷
-
 clinicalSigns:
   early:
     - 胸壁疼痛（觸碰或呼吸時）
@@ -40,7 +38,6 @@ clinicalSigns:
     - 呼吸困難（合併氣/血胸或肺挫傷時）
     - 皮下氣腫（氣胸合併時）
     - 胸壁腫脹
-
 diagnosis:
   primaryTests:
     - name: 胸部 X-ray
@@ -50,7 +47,6 @@ diagnosis:
   additional:
     - TFAST 超音波（氣胸/血胸快速篩檢）
     - 動脈血氣（嚴重者）
-
 treatment:
   principles:
     - 止痛為核心
@@ -65,41 +61,101 @@ treatment:
     - 限制活動 3-4 週
     - 避免胸帶過緊包紮（限制呼吸）
     - 手術（罕需）：嚴重錯位影響通氣或內臟損傷
-
 prognosis: 單純肋骨骨折預後極佳，3-4 週癒合。合併肺挫傷或氣胸者需較密切監測但多數可恢復。多發肋骨骨折（連枷胸）預後較差但仍多數可存活。
-
-
 guidelineRefs:
   - sourceOrg: Prehospital emergency care
-    title: Proportional Versus Fixed Chest Compression Depth for Guideline-Compliant Resuscitation of Infant Asphyxial Cardiac Arrest.
+    title: >-
+      Proportional Versus Fixed Chest Compression Depth for Guideline-Compliant Resuscitation of Infant Asphyxial
+      Cardiac Arrest.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12018585/
     type: guideline
-    pmid: "39374029"
+    pmid: '39374029'
     relevance: primary
   - sourceOrg: The journal of trauma and acute care surgery
     title: Platelet-rich plasma enhances rib fracture strength and callus formation in vivo.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12396507/
     type: research
-    pmid: "39238099"
+    pmid: '39238099'
     relevance: supporting
   - sourceOrg: Scientific reports
-    title: Hemodynamics of active abdominal compression decompression CPR in a rat model of multiple rib fractures with asphyxial cardiac arrest.
+    title: >-
+      Hemodynamics of active abdominal compression decompression CPR in a rat model of multiple rib fractures with
+      asphyxial cardiac arrest.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12606286/
     type: research
-    pmid: "41219255"
+    pmid: '41219255'
     relevance: supporting
   - sourceOrg: BMC surgery
     title: An innovative animal experimental model of rib fracture with bone displacement.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11951796/
     type: research
-    pmid: "40155911"
+    pmid: '40155911'
     relevance: supporting
   - sourceOrg: Journal of thoracic disease
-    title: Antibacterial molybdenum disulfide with silver phosphate coating on titanium fixator in rabbit models of rib fracture infection.
+    title: >-
+      Antibacterial molybdenum disulfide with silver phosphate coating on titanium fixator in rabbit models of rib
+      fracture infection.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12340302/
     type: research
-    pmid: "40809248"
+    pmid: '40809248'
     relevance: supporting
 pubmedQueries:
   - query: '"rib fracture" AND (veterinary OR canine OR feline) AND ("treatment" OR "thoracic trauma")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 骨折 診斷流程
+  steps:
+    - step: 1
+      action: 緊急穩定與初步評估
+      details: 優先處理危及生命的傷害，穩定後進行骨骼評估
+      findings:
+        - 疼痛與患肢不能負重
+        - 局部腫脹與變形
+        - 骨摩擦音或異常活動度
+        - 外傷史（車禍/墜落/踩踏）
+    - step: 2
+      action: X光檢查
+      details: 受傷部位至少兩個正交角度X光，含近遠端關節
+      findings:
+        - 骨折線型態（橫向/斜向/螺旋/粉碎）
+        - 骨折移位程度
+        - 關節面是否受累
+        - 幼犬Salter-Harris分型
+    - step: 3
+      action: 全身評估
+      details: 多發傷動物全身影像學與實驗室檢查
+      findings:
+        - 胸腔X光排除氣胸/肺挫傷
+        - 腹部超音波排除內臟損傷
+        - CBC/生化評估失血與臟器損傷
+        - 尿液分析排除泌尿道損傷
+    - step: 4
+      action: 治療計劃
+      details: 根據骨折類型選擇固定方式
+      findings:
+        - 開放vs閉鎖骨折確認
+        - 手術固定指征評估
+        - 外固定vs內固定選擇
+        - 軟組織損傷程度評估
+clinicalPearls:
+  - 車禍患畜必須全身評估，骨折可能不是最危急問題
+  - 幼年動物的不完全骨折（青枝骨折）易被忽略
+  - 指骨、橈骨遠端和股骨是小型犬最常見骨折部位
+  - 貓高處墜落常見多發性損傷（骨折+氣胸+口腔傷）
+  - 病理性骨折需排查骨腫瘤
+  - 術後感染率開放性骨折遠高於閉合性
+monitoringItems:
+  - 術後X光追蹤（4-6週間隔）
+  - 骨痂形成評估
+  - 感染跡象
+  - 植入物穩定性
+  - 關節活動度和肌肉恢復
+  - 止痛藥需求
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: common
+  - symptomId: constipation
+    frequency: common
+  - symptomId: faecal-tenesmus
+    frequency: uncommon
+ddxSource: book

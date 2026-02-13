@@ -3,13 +3,15 @@ nameEn: Hepatic Lipidosis Metabolic
 nameZh: 肝臟脂肪變性（代謝性）
 bodySystem: hepatic
 description: 過量脂肪堆積於肝細胞內導致肝功能障礙的代謝性疾病。貓為最常見罹患物種，肥胖貓在厭食數天後即可快速發展為嚴重肝脂肪變性，為貓最常見的肝臟疾病，未及時治療死亡率極高。
-
 aliases:
-  - { alias: 脂肪肝, language: zh }
-  - { alias: 肝脂肪浸潤, language: zh }
-  - { alias: Fatty Liver Disease, language: en }
-  - { alias: Feline Hepatic Lipidosis, language: en }
-
+  - alias: 脂肪肝
+    language: zh
+  - alias: 肝脂肪浸潤
+    language: zh
+  - alias: Fatty Liver Disease
+    language: en
+  - alias: Feline Hepatic Lipidosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓為此病最常見物種。肥胖貓厭食 3-7 天即可發生。為貓最常見的肝臟疾病，佔貓肝病的 50% 以上。
-
 etiology:
   categories:
     - name: 原發性（貓特別好發）
@@ -32,7 +33,6 @@ etiology:
         - 炎症性腸病
         - 糖尿病
         - 任何導致長期厭食的疾病
-
 clinicalSigns:
   early:
     - 厭食超過 3 天
@@ -45,14 +45,12 @@ clinicalSigns:
     - 流涎（貓）
     - 凝血異常（維生素 K 依賴因子合成下降）
     - 肝性腦病（嚴重時）
-
 diagnosis:
   primaryTests:
     - name: 肝臟生化
       notes: ALP 顯著升高（貓 ALP 升高更具意義）、ALT/AST 中度升高、膽紅素升高（黃疸）。低白蛋白血症。
     - name: 腹部超音波
       notes: 肝臟瀰漫性高回音（比腎皮質更亮）。肝腫大。可同時評估膽管及胰臟。
-
 treatment:
   principles:
     - 早期積極營養支持為治療關鍵
@@ -67,36 +65,78 @@ treatment:
     - 補充 L-carnitine 60-120 mg/kg/day（促進脂肪代謝）
     - 監測電解質（低鉀、低磷）
     - 止吐藥（Maropitant）控制噁心
-
 prognosis: 積極營養支持下存活率約 60-80%。食道管灌食需維持數週至數月。肥胖貓且無嚴重併發症者預後較佳。合併肝性腦病或嚴重凝血障礙預後較差。原發性比繼發性預後好（繼發性取決於基礎疾病）。
-
-
 guidelineRefs:
   - sourceOrg: International journal of molecular sciences
-    title: "A Narrative Review: The Effect and Importance of Carotenoids on Aging and Aging-Related Diseases."
+    title: 'A Narrative Review: The Effect and Importance of Carotenoids on Aging and Aging-Related Diseases.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10607816/
     type: review
-    pmid: "37894880"
+    pmid: '37894880'
   - sourceOrg: International journal of molecular sciences
-    title: "The Effects of Probiotics, Prebiotics and Synbiotics in Non-Alcoholic Fat Liver Disease (NAFLD) and Non-Alcoholic Steatohepatitis (NASH): A Systematic Review."
+    title: >-
+      The Effects of Probiotics, Prebiotics and Synbiotics in Non-Alcoholic Fat Liver Disease (NAFLD) and Non-Alcoholic
+      Steatohepatitis (NASH): A Systematic Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9369010/
     type: review
-    pmid: "35955942"
+    pmid: '35955942'
   - sourceOrg: Scientific reports
     title: AMPK affects the development of early-stage NAFLD by activating autophagy and fatty acid oxidation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12795851/
     type: research
-    pmid: "41345258"
+    pmid: '41345258'
   - sourceOrg: Lipids in health and disease
-    title: High fat diet exacerbated glycolipid metabolism disorder in kidney Yang deficiency rats by interfering with IRS 1-PI3K (p85) -Akt-GLUT 4 pathway.
+    title: >-
+      High fat diet exacerbated glycolipid metabolism disorder in kidney Yang deficiency rats by interfering with IRS
+      1-PI3K (p85) -Akt-GLUT 4 pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12506369/
     type: research
-    pmid: "41063104"
+    pmid: '41063104'
   - sourceOrg: Scientific reports
     title: Metabolomic profiling of serum alterations and biomarker discovery in feline hepatic liposis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11885465/
     type: research
-    pmid: "40050321"
+    pmid: '40050321'
 pubmedQueries:
   - query: '"Hepatic Lipidosis" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: weight-gain
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肝臟脂肪變性（代謝性） 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - hepatomegaly 相關症狀
+        - weight-gain 相關症狀
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 肝臟生化
+          notes: ALP 顯著升高（貓 ALP 升高更具意義）、ALT/AST 中度升高、膽紅素升高（黃疸）。低白蛋白血症。
+        - name: 腹部超音波
+          notes: 肝臟瀰漫性高回音（比腎皮質更亮）。肝腫大。可同時評估膽管及胰臟。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 早期積極營養支持為治療關鍵
+        - 食道造瘻管或胃造瘻管灌食
+        - 治療潛在疾病（繼發性）
+ddxSource: auto-generated

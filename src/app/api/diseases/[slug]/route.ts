@@ -98,6 +98,10 @@ export async function GET(
     prognosis: disease.prognosis,
     stagingSystem: parseJson(disease.stagingSystem),
     emergencyNotes: disease.emergencyNotes,
+    diagnosticAlgorithm: parseJson(disease.diagnosticAlgorithm),
+    clinicalPearls: parseJson(disease.clinicalPearls),
+    monitoringItems: parseJson(disease.monitoringItems),
+    ddxSource: disease.ddxSource,
     aliases: aliases.map((a) => ({ alias: a.alias, language: a.language })),
     species: species.map((s) => ({
       speciesCommon: s.speciesCommon,

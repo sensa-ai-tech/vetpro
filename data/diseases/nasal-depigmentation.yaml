@@ -3,11 +3,11 @@ nameEn: Nasal Depigmentation
 nameZh: Nasal Depigmentation
 bodySystem: dermatology
 description: 皮膚疾病,可能影響皮膚完整性、毛髮生長或引起不適。需皮膚科檢查與實驗室診斷確定病因。
-
 aliases:
-  - { alias: Nasal Depigmentation, language: zh }
-  - { alias: Nasal Depigmentation, language: en }
-
+  - alias: Nasal Depigmentation
+    language: zh
+  - alias: Nasal Depigmentation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 感染(細菌、真菌、寄生蟲)
       examples:
         - 過敏
         - 免疫介導
-
 clinicalSigns:
   early:
     - 搔癢
@@ -32,25 +30,41 @@ clinicalSigns:
   progressive:
     - 皮膚增厚
     - 色素沉著
-
 diagnosis:
   primaryTests:
     - name: 皮膚刮搔檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: 毛髮拔除檢查
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 局部治療(藥浴、藥膏)
     - 全身性抗生素或抗真菌藥
-
 prognosis:
-  general: "預後取決於根本病因。感染性疾病治療後多可痊癒,免疫或遺傳性疾病需長期管理。"
-
+  general: 預後取決於根本病因。感染性疾病治療後多可痊癒,免疫或遺傳性疾病需長期管理。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: common
+diagnosticAlgorithm:
+  title: Nasal Depigmentation 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 皮膚刮搔檢查
+          notes: 需詳細評估
+        - name: 毛髮拔除檢查
+          notes: 協助確診
+ddxSource: auto-generated

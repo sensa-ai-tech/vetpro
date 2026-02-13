@@ -2,14 +2,18 @@ slug: otitis-interna
 nameEn: Otitis Interna
 nameZh: 內耳炎
 bodySystem: ear
-description: 內耳 (inner ear) 的感染或發炎，累及耳蝸 (cochlea) 與前庭系統 (vestibular apparatus)。多由中耳炎 (otitis media) 擴展而來。臨床表現為周邊前庭症狀 (頭部傾斜、旋轉性眼球震顫) 合併聽力喪失。
-
+description: >-
+  內耳 (inner ear) 的感染或發炎，累及耳蝸 (cochlea) 與前庭系統 (vestibular apparatus)。多由中耳炎 (otitis media) 擴展而來。臨床表現為周邊前庭症狀 (頭部傾斜、旋轉性眼球震顫)
+  合併聽力喪失。
 aliases:
-  - { alias: Inner Ear Infection, language: en }
-  - { alias: Labyrinthitis, language: en }
-  - { alias: 迷路炎, language: zh }
-  - { alias: 內耳感染, language: zh }
-
+  - alias: Inner Ear Infection
+    language: en
+  - alias: Labyrinthitis
+    language: en
+  - alias: 迷路炎
+    language: zh
+  - alias: 內耳感染
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓可見。鼻咽息肉或中耳炎延伸為常見原因。
-
 etiology:
   categories:
     - name: 感染性 (中耳炎延伸)
@@ -29,7 +32,6 @@ etiology:
         - 鼻咽息肉 (貓)
         - 耳道腫瘤侵犯
         - 外傷性 (顳骨骨折)
-
 clinicalSigns:
   early:
     - 頭部傾斜 (向患側)
@@ -40,7 +42,6 @@ clinicalSigns:
     - 聽力喪失 (患側)
     - Horner 症候群 (同側)
     - 面神經麻痺 (同側)
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
@@ -49,7 +50,6 @@ diagnosis:
       notes: 評估鼓室骨增厚、液體積聚。MRI 更敏感評估內耳與腦幹
     - name: 耳鏡 + 鼓膜評估
       notes: 評估外耳道與鼓膜完整性
-
 treatment:
   principles:
     - 長期全身性抗生素
@@ -60,26 +60,86 @@ treatment:
     - 中耳沖洗 (鎮靜下經鼓膜沖洗引流)
     - 止吐藥 (Maropitant) 控制嘔吐
     - 嚴重慢性病例：TECA-BO (全耳道切除 + 鼓室骨切開)
-
 prognosis: 前庭症狀多數在 2-4 週明顯改善 (代償性恢復)。頭部傾斜可能殘留。聽力喪失可能為永久性。及時長期抗生素治療預後中等至良好。
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
     title: Facial Myokymia With or Without Concurrent Neurological Deficits in Seven Dogs and Two Cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11919749/
     type: research
-    pmid: "40103261"
+    pmid: '40103261'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "A Pandora's box in feline medicine: presenting signs and surgical outcomes in 58 previously hoarded cats with chronic otitis media-interna."
+    title: >-
+      A Pandora's box in feline medicine: presenting signs and surgical outcomes in 58 previously hoarded cats with
+      chronic otitis media-interna.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812028/
     type: research
-    pmid: "37728478"
+    pmid: '37728478'
   - sourceOrg: BMC veterinary research
-    title: "Prevalence of neurological disorders in French bulldog: a retrospective study of 343 cases (2002-2016)."
+    title: 'Prevalence of neurological disorders in French bulldog: a retrospective study of 343 cases (2002-2016).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5497356/
     type: research
-    pmid: "28676057"
+    pmid: '28676057'
 pubmedQueries:
   - query: '"otitis interna" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 內耳炎 診斷流程
+  steps:
+    - step: 1
+      action: 前庭症狀評估
+      details: 神經學檢查區分周邊vs中樞前庭疾病
+      findings:
+        - 頭部傾斜方向
+        - 眼球震顫類型和方向
+        - 姿態反應（周邊正常/中樞異常）
+        - 意識狀態（周邊正常/中樞可能異常）
+    - step: 2
+      action: 耳部檢查
+      details: 耳鏡檢查+鼓膜評估+培養
+      findings:
+        - 鼓膜完整性
+        - 外耳道分泌物性質
+        - 細菌培養及藥敏
+        - 面神經功能和霍納氏症候群
+    - step: 3
+      action: 影像學評估
+      details: CT/MRI評估鼓室泡和內耳
+      findings:
+        - CT：鼓室泡骨溶解或硬化
+        - 鼓室泡內軟組織密度增加
+        - MRI：內耳訊號改變
+        - 排除中樞前庭病變
+    - step: 4
+      action: 治療計畫
+      details: 依嚴重程度選擇藥物或手術
+      findings:
+        - 培養導向抗生素4-6週
+        - 抗發炎+止吐
+        - 嚴重→手術（VBO或TECA-LBO）
+        - 追蹤前庭症狀和聽力
+clinicalPearls:
+  - 內耳炎的眼球震顫為水平或旋轉性，快相朝向健側——與中樞前庭疾病的方向多變性不同
+  - 霍納氏症候群（瞳孔縮小、眼瞼下垂、第三眼瞼脫出）常伴隨內耳炎/中耳炎
+  - CT比X光更敏感於偵測鼓室泡病變
+  - 貓的中耳炎/內耳炎應排除鼻咽息肉
+  - 耳毒性藥物（Gentamicin耳滴劑）在鼓膜穿孔時禁用——可加重內耳損傷
+monitoringItems:
+  - 前庭症狀改善程度
+  - 面神經功能恢復
+  - 聽力評估（BAER）
+  - 耳道分泌物培養追蹤
+  - 影像學追蹤（鼓室泡癒合）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: head-tilt
+    frequency: common
+  - symptomId: nystagmus
+    frequency: common
+ddxSource: book

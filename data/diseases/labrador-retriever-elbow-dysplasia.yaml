@@ -3,19 +3,20 @@ nameEn: Labrador Retriever Elbow Dysplasia
 nameZh: 拉布拉多肘關節發育不良
 bodySystem: orthopedic
 description: 拉布拉多犬肘關節發育不良是一組包括肘突游離（UAP）、冠狀突游離（FCP）、肱骨內上髁骨軟骨炎（OCD）及關節不一致性的先天性骨骼疾病。為該品種最常見的前肢跛行原因之一，通常雙側發病。
-
 aliases:
-  - { alias: 拉布拉多肘異位, language: zh }
-  - { alias: 肘關節發育異常, language: zh }
-  - { alias: Labrador elbow dysplasia, language: en }
-  - { alias: Elbow incongruity, language: en }
-
+  - alias: 拉布拉多肘異位
+    language: zh
+  - alias: 肘關節發育異常
+    language: zh
+  - alias: Labrador elbow dysplasia
+    language: en
+  - alias: Elbow incongruity
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 拉布拉多犬為高度好發品種，遺傳率約 0.27-0.45。通常 4-10 月齡出現症狀。公犬發生率高於母犬。
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -29,7 +30,6 @@ etiology:
         - 關節面不吻合
         - 快速生長期的營養過剩
         - 過度運動加速損傷
-
 clinicalSigns:
   early:
     - 前肢跛行（運動後加重）
@@ -41,20 +41,18 @@ clinicalSigns:
     - 關節腫脹與積液
     - 肘關節伸展時疼痛
     - 續發退化性關節炎
-
 diagnosis:
   primaryTests:
     - name: X 光檢查
-      notes: "基本影像學評估。可見骨贅增生、UAP、關節不一致性。建議標準屈曲側位片與前後位片"
+      notes: 基本影像學評估。可見骨贅增生、UAP、關節不一致性。建議標準屈曲側位片與前後位片
     - name: CT 掃描
-      notes: "金標準。精確評估冠狀突碎裂、關節面不一致性與 OCD 病灶"
+      notes: 金標準。精確評估冠狀突碎裂、關節面不一致性與 OCD 病灶
     - name: 關節鏡檢查
-      notes: "診斷與治療兼具。可直視評估軟骨損傷程度"
+      notes: 診斷與治療兼具。可直視評估軟骨損傷程度
   differentialDiagnoses:
     - 肱骨骨折
     - 全骨炎（Panosteitis）
     - 前肢骨軟骨炎
-
 treatment:
   medical:
     - NSAIDs 止痛抗炎（Carprofen 4.4 mg/kg PO SID 或 Meloxicam 0.1 mg/kg PO SID）
@@ -65,27 +63,55 @@ treatment:
     - 關節鏡碎片摘除術
     - 尺骨截骨術（矯正關節不一致性）
     - 嚴重退行性變者考慮全肘關節置換術
-
 prognosis:
-  general: "預後中等至良好。早期診斷與手術治療效果較佳。多數犬經適當治療後可維持良好生活品質，但退化性關節炎為不可避免的長期併發症。繁殖篩選（X 光評估）為降低品種發病率的關鍵。"
-
+  general: 預後中等至良好。早期診斷與手術治療效果較佳。多數犬經適當治療後可維持良好生活品質，但退化性關節炎為不可避免的長期併發症。繁殖篩選（X 光評估）為降低品種發病率的關鍵。
 prevention:
   - 繁殖犬肘關節 X 光篩選
   - 幼犬期避免營養過剩
   - 適度運動避免關節過度負荷
   - 維持理想體重
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Assisting Decision-Making on Age of Neutering for 35 Breeds of Dogs: Associated Joint Disorders, Cancers, and Urinary Incontinence."
+    title: >-
+      Assisting Decision-Making on Age of Neutering for 35 Breeds of Dogs: Associated Joint Disorders, Cancers, and
+      Urinary Incontinence.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7359819/
     type: research
-    pmid: "32733924"
+    pmid: '32733924'
     relevance: supporting
   - sourceOrg: BMC veterinary research
     title: Computed tomography findings in a cohort of 169 dogs with elbow dysplasia - a retrospective study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8419939/
     type: research
-    pmid: "34488762"
+    pmid: '34488762'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: failure-to-grow
+    frequency: uncommon
+  - symptomId: polyarthritis
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 拉布拉多肘關節發育不良 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - failure-to-grow 相關症狀
+        - polyarthritis 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: X 光檢查
+          notes: 基本影像學評估。可見骨贅增生、UAP、關節不一致性。建議標準屈曲側位片與前後位片
+        - name: CT 掃描
+          notes: 金標準。精確評估冠狀突碎裂、關節面不一致性與 OCD 病灶
+        - name: 關節鏡檢查
+          notes: 診斷與治療兼具。可直視評估軟骨損傷程度
+ddxSource: auto-generated

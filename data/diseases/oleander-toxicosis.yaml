@@ -2,13 +2,16 @@ slug: oleander-toxicosis
 nameEn: Oleander Toxicosis
 nameZh: 夾竹桃中毒
 bodySystem: toxicology
-description: 夾竹桃 (Nerium oleander) 所有部位含有心臟毒性的強心苷 (cardiac glycosides)，包括 oleandrin 與 neriine。攝入少量即可引起致命性心律不整。犬貓均易感。為全球最危險的常見觀賞植物之一。
-
+description: >-
+  夾竹桃 (Nerium oleander) 所有部位含有心臟毒性的強心苷 (cardiac glycosides)，包括 oleandrin 與
+  neriine。攝入少量即可引起致命性心律不整。犬貓均易感。為全球最危險的常見觀賞植物之一。
 aliases:
-  - { alias: 夾竹桃毒素中毒, language: zh }
-  - { alias: Oleander Poisoning, language: en }
-  - { alias: Cardiac Glycoside Toxicosis, language: en }
-
+  - alias: 夾竹桃毒素中毒
+    language: zh
+  - alias: Oleander Poisoning
+    language: en
+  - alias: Cardiac Glycoside Toxicosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓較少攝食植物但仍有報告。小體型使少量即可引起嚴重毒性。
-
 etiology:
   categories:
     - name: 毒性物質
@@ -31,7 +33,6 @@ etiology:
         - 增加心肌細胞內鈣離子
         - 引起心律不整（傳導阻滯與異位節律）
         - 增加迷走神經張力
-
 clinicalSigns:
   early:
     - 嘔吐（攝入後 1-4 小時）
@@ -45,7 +46,6 @@ clinicalSigns:
     - 低血壓
     - 虛弱與倒臥
     - 猝死
-
 diagnosis:
   primaryTests:
     - name: 病史確認
@@ -56,7 +56,6 @@ diagnosis:
     - 血清鉀（高鉀血症常見且危險）
     - Digoxin 免疫分析可能交叉反應陽性（但非特異）
     - 生化（腎功能）
-
 treatment:
   principles:
     - 心律不整管理最優先
@@ -71,9 +70,55 @@ treatment:
     - 室性心律不整：lidocaine 2 mg/kg IV bolus
     - IV 輸液支持
     - 持續心電圖監測 24-48 小時
-
 prognosis: 夾竹桃中毒致死率高（未治療）。Digoxin-specific Fab 抗體可大幅改善預後但可能不易取得。積極心律不整管理與電解質矯正可改善存活率。度過最初 24-48 小時者預後改善。
-
 pubmedQueries:
   - query: '"oleander" AND (toxicosis OR poisoning) AND (veterinary OR canine OR feline)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+diagnosticAlgorithm:
+  title: 夾竹桃中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ptyalism 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - dehydration 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史確認
+          notes: 確認夾竹桃暴露。辨識植物至關重要
+        - name: 心電圖
+          notes: 必要且緊急。可見各種心律不整：心動過緩、AV block、室性期外收縮、室性心搏過速
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 血清鉀（高鉀血症常見且危險）
+        - Digoxin 免疫分析可能交叉反應陽性（但非特異）
+        - 生化（腎功能）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 心律不整管理最優先
+        - Digoxin-specific Fab 抗體為特效解毒劑
+        - 矯正高鉀血症
+ddxSource: auto-generated

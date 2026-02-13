@@ -3,11 +3,11 @@ nameEn: Anophthalmia
 nameZh: 先天性無眼症
 bodySystem: ophthalmology
 description: 先天性無眼症為一側或雙側眼球完全缺失的罕見先天畸形。胚胎期眼泡發育完全失敗所致。常與其他先天畸形並存。受影響動物可透過適應良好地生活。
-
 aliases:
-  - { alias: 無眼球症, language: zh }
-  - { alias: Congenital anophthalmia, language: en }
-
+  - alias: 無眼球症
+    language: zh
+  - alias: Congenital anophthalmia
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 極為罕見。可能與遺傳或胚胎期環境因素有關。
-
 etiology:
   categories:
     - name: 先天發育異常
@@ -23,7 +22,6 @@ etiology:
         - 眼泡發育完全失敗
         - 胚胎期發育障礙
         - 可能伴隨其他先天異常
-
 clinicalSigns:
   early:
     - 出生時眼窩內無眼球
@@ -32,53 +30,80 @@ clinicalSigns:
   progressive:
     - 單側者可正常適應
     - 雙側者完全失明但可透過其他感官補償
-
 diagnosis:
   primaryTests:
     - name: 影像與臨床檢查
       notes: 臨床檢查即可診斷。超音波或 MRI 確認眼窩內無眼球組織。
-
 treatment:
   principles:
     - 依嚴重程度決定保守或手術治療
     - 支持療法
   general:
     - 無法治療。義眼植入改善外觀。環境安全管理。
-
 prognosis: 不影響壽命。單側者日常生活通常不受影響。雙側者需安全環境管理但多數可良好適應。
-
-
 guidelineRefs:
   - sourceOrg: Birth defects research
-    title: "Developmental Toxicity of Disinfection Byproducts in F344 Rats: Effects on Pregnancy Maintenance and Eye Development."
+    title: >-
+      Developmental Toxicity of Disinfection Byproducts in F344 Rats: Effects on Pregnancy Maintenance and Eye
+      Development.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11837256/
     type: research
-    pmid: "39763132"
+    pmid: '39763132'
   - sourceOrg: Bioactive materials
-    title: Tuning zinc content in wollastonite bioceramic endowing outstanding angiogenic and antibacterial functions beneficial for orbital reconstruction.
+    title: >-
+      Tuning zinc content in wollastonite bioceramic endowing outstanding angiogenic and antibacterial functions
+      beneficial for orbital reconstruction.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11276934/
     type: research
-    pmid: "39072286"
+    pmid: '39072286'
   - sourceOrg: Experimental animals
-    title: The rat Downunder (Du) coat color mutation is associated with eye anomalies and embryonic lethality and maps to a 3.9-Mb region on chromosome 3.
+    title: >-
+      The rat Downunder (Du) coat color mutation is associated with eye anomalies and embryonic lethality and maps to a
+      3.9-Mb region on chromosome 3.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9978131/
     type: research
-    pmid: "36123037"
+    pmid: '36123037'
   - sourceOrg: Mechanisms of development
     title: Disconnect between the developing eye and craniofacial prominences in the avian embryo.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7581833/
     type: research
-    pmid: "32044294"
+    pmid: '32044294'
   - sourceOrg: Bone marrow research
-    title: "A Reliable and Reproducible Model for Assessing the Effect of Different Concentrations of &#x3b1;-Solanine on Rat Bone Marrow Mesenchymal Stem Cells."
+    title: >-
+      A Reliable and Reproducible Model for Assessing the Effect of Different Concentrations of &#x3b1;-Solanine on Rat
+      Bone Marrow Mesenchymal Stem Cells.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5671669/
     type: research
-    pmid: "29201465"
+    pmid: '29201465'
   - sourceOrg: Clinical case reports
     title: Congenital bilateral clinical anophthalmia and brachygnathia superior in a fighting bull calf.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10196413/
     type: case-report
-    pmid: "37215960"
+    pmid: '37215960'
 pubmedQueries:
   - query: '"Anophthalmia" AND (veterinary OR canine OR feline) AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: blindness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 先天性無眼症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 影像與臨床檢查
+          notes: 臨床檢查即可診斷。超音波或 MRI 確認眼窩內無眼球組織。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 依嚴重程度決定保守或手術治療
+        - 支持療法
+ddxSource: auto-generated

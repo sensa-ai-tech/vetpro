@@ -3,12 +3,13 @@ nameEn: Cardiac Ultrasound Echocardiography
 nameZh: 心臟超音波檢查
 bodySystem: cardiac
 description: 犬貓心臟超音波(超音波心動圖)檢查,評估心臟結構、功能、血流動力學。為診斷心臟病、評估嚴重程度及預後的黃金標準,可測量心室功能、瓣膜功能、心輸出量等。
-
 aliases:
-  - { alias: 超音波心動圖, language: zh }
-  - { alias: Echocardiography, language: en }
-  - { alias: Cardiac ultrasound, language: en }
-
+  - alias: 超音波心動圖
+    language: zh
+  - alias: Echocardiography
+    language: en
+  - alias: Cardiac ultrasound
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓肥厚型心肌病診斷需心臟超音波確診
-
 etiology:
   categories:
     - name: 檢查模式
@@ -35,68 +35,96 @@ etiology:
         - 心肌厚度
         - 心輸出量
         - 肺動脈壓
-
 clinicalSigns:
   early:
     - 心臟超音波為診斷工具
   progressive:
     - 對應心臟病症狀(咳嗽、運動不耐、昏厥)
-
 diagnosis:
   primaryTests:
     - name: 左心室功能評估
-      notes: "FS%(fractional shortening)正常犬>25%,貓>30%"
+      notes: FS%(fractional shortening)正常犬>25%,貓>30%
     - name: 瓣膜逆流評估
-      notes: "彩色都卜勒評估逆流嚴重程度(輕/中/重度)"
+      notes: 彩色都卜勒評估逆流嚴重程度(輕/中/重度)
     - name: 心肌病診斷
-      notes: "HCM:左心室壁厚度>6mm(貓);DCM:左心室擴大+FS%降低(犬)"
+      notes: HCM:左心室壁厚度>6mm(貓);DCM:左心室擴大+FS%降低(犬)
     - name: 肺動脈壓評估
-      notes: "經三尖瓣逆流速度計算,正常<30 mmHg"
+      notes: 經三尖瓣逆流速度計算,正常<30 mmHg
   differentialDiagnoses:
     - 瓣膜性心臟病(二尖瓣閉鎖不全)
     - 擴張型心肌病(DCM)
     - 肥厚型心肌病(HCM)
     - 先天性心臟病
     - 心包積液
-
 treatment:
   medical:
     - 心臟超音波為診斷及監測工具
     - 依診斷給予適當心臟藥物
     - 定期追蹤超音波評估病程進展及治療反應
-
 prognosis:
-  general: "心臟超音波為心臟病診斷黃金標準,可準確評估嚴重程度及預後。需專業訓練及經驗。"
-
+  general: 心臟超音波為心臟病診斷黃金標準,可準確評估嚴重程度及預後。需專業訓練及經驗。
 prevention:
   - 心臟雜音或心律不整應進行心臟超音波評估
   - 高風險品種(如大丹、都柏文、緬因貓等)篩檢
   - 定期追蹤評估疾病進展
-
-
 guidelineRefs:
   - sourceOrg: Lancet (London, England)
-    title: "Burden of 375 diseases and injuries, risk-attributable burden of 88 risk factors, and healthy life expectancy in 204 countries and territories, including 660 subnational locations, 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023."
+    title: >-
+      Burden of 375 diseases and injuries, risk-attributable burden of 88 risk factors, and healthy life expectancy in
+      204 countries and territories, including 660 subnational locations, 1990-2023: a systematic analysis for the
+      Global Burden of Disease Study 2023.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12535840/
     type: research
-    pmid: "41092926"
+    pmid: '41092926'
   - sourceOrg: Journal of veterinary internal medicine
-    title: Clinical Outcomes of Mitral Valve Repair in Dogs With Pulmonary Hypertension Secondary to Myxomatous Mitral Valve Disease.
+    title: >-
+      Clinical Outcomes of Mitral Valve Repair in Dogs With Pulmonary Hypertension Secondary to Myxomatous Mitral Valve
+      Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12012645/
     type: research
-    pmid: "40260776"
+    pmid: '40260776'
   - sourceOrg: BMC veterinary research
     title: Physiological stage dependent hematobiochemical and echocardiographic changes in dromedary camels.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12232854/
     type: research
-    pmid: "40619378"
+    pmid: '40619378'
   - sourceOrg: BMC veterinary research
-    title: "The impact of anxiety on canine heart function: a study using echocardiographic techniques."
+    title: 'The impact of anxiety on canine heart function: a study using echocardiographic techniques.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12522505/
     type: research
-    pmid: "41088226"
+    pmid: '41088226'
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Automated echocardiographic left ventricular dimension assessment in dogs using artificial intelligence: Development and validation."
+    title: >-
+      Automated echocardiographic left ventricular dimension assessment in dogs using artificial intelligence:
+      Development and validation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10937473/
     type: research
-    pmid: "38362960"
+    pmid: '38362960'
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: syncope
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 心臟超音波檢查 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - syncope 相關症狀
+        - coughing 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 左心室功能評估
+          notes: FS%(fractional shortening)正常犬>25%,貓>30%
+        - name: 瓣膜逆流評估
+          notes: 彩色都卜勒評估逆流嚴重程度(輕/中/重度)
+        - name: 心肌病診斷
+          notes: HCM:左心室壁厚度>6mm(貓);DCM:左心室擴大+FS%降低(犬)
+ddxSource: auto-generated

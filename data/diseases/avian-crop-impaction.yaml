@@ -3,18 +3,19 @@ nameEn: Avian Crop Impaction
 nameZh: 禽類嗉囊阻塞
 bodySystem: gastrointestinal
 description: 禽類嗉囊阻塞為嗉囊內食物或異物過量堆積導致無法正常排空的急症，常見於手養幼鳥餵食不當或成鳥攝入異物。未及時處理可導致嗉囊壞死或窒息。
-
 aliases:
-  - { alias: 嗉囊積食, language: zh }
-  - { alias: 嗉囊填塞, language: zh }
-  - { alias: Crop stasis, language: en }
-  - { alias: Ingluvial impaction, language: en }
-
+  - alias: 嗉囊積食
+    language: zh
+  - alias: 嗉囊填塞
+    language: zh
+  - alias: Crop stasis
+    language: en
+  - alias: Ingluvial impaction
+    language: en
 species:
   - speciesCommon: bird
     prevalence: common
     notes: 手養幼鳥最常見（餵食溫度不當或過量）。成鳥可因異物、念珠菌感染或嗉囊運動障礙發生。所有鳥種均可受影響。
-
 etiology:
   categories:
     - name: 幼鳥常見原因
@@ -30,7 +31,6 @@ etiology:
         - 嗉囊念珠菌感染
         - 甲狀腺功能低下
         - 前胃疾病導致逆向阻塞
-
 clinicalSigns:
   early:
     - 嗉囊排空延遲
@@ -44,22 +44,20 @@ clinicalSigns:
     - 脫水
     - 嗉囊壁變薄壞死
     - 吸入性肺炎風險
-
 diagnosis:
   primaryTests:
     - name: 觸診
-      notes: "嗉囊觸診感覺異常飽滿、硬實或含有異物。評估內容物性質"
+      notes: 嗉囊觸診感覺異常飽滿、硬實或含有異物。評估內容物性質
     - name: X光檢查
-      notes: "嗉囊擴張、內含物密度評估。金屬異物或不透光物可見。對比劑評估排空速度"
+      notes: 嗉囊擴張、內含物密度評估。金屬異物或不透光物可見。對比劑評估排空速度
     - name: 嗉囊沖洗液檢查
-      notes: "評估感染（念珠菌、細菌）。細胞學與培養"
+      notes: 評估感染（念珠菌、細菌）。細胞學與培養
   differentialDiagnoses:
     - 嗉囊異物
     - 嗉囊念珠菌感染
     - 前胃擴張症
     - 甲狀腺腫
     - 嗉囊腫瘤
-
 treatment:
   medical:
     - 嗉囊灌洗（溫生理食鹽水反覆沖洗）
@@ -71,13 +69,39 @@ treatment:
   surgical:
     - 嗉囊切開取出異物（ingluiviotomy）
     - 嗉囊壞死部位切除修補
-
 prognosis:
-  general: "單純食物嗉囊阻塞經灌洗後預後良好。異物導致者需手術取出。嗉囊壁壞死預後較差。反覆發作需尋找並治療潛在原因。"
-
+  general: 單純食物嗉囊阻塞經灌洗後預後良好。異物導致者需手術取出。嗉囊壁壞死預後較差。反覆發作需尋找並治療潛在原因。
 prevention:
   - 幼鳥餵食溫度控制在 38-40°C
   - 避免過量餵食
   - 移除環境中的小型異物
   - 定期監測嗉囊排空時間
   - 及時治療念珠菌感染
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類嗉囊阻塞 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - vomiting 相關症狀
+        - dehydration 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 觸診
+          notes: 嗉囊觸診感覺異常飽滿、硬實或含有異物。評估內容物性質
+        - name: X光檢查
+          notes: 嗉囊擴張、內含物密度評估。金屬異物或不透光物可見。對比劑評估排空速度
+        - name: 嗉囊沖洗液檢查
+          notes: 評估感染（念珠菌、細菌）。細胞學與培養
+ddxSource: auto-generated

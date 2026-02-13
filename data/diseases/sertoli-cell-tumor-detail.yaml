@@ -3,11 +3,11 @@ nameEn: Sertoli Cell Tumor Detail
 nameZh: 塞氏細胞瘤詳述
 bodySystem: oncology
 description: 睪丸性索間質腫瘤，可分泌雌激素導致雌激素化症候群，包括對稱性脫毛、骨髓抑制及行為改變。隱睪症高風險。
-
 aliases:
-  - { alias: 支持細胞瘤, language: zh }
-  - { alias: Sertoli Cell Tumor, language: en }
-
+  - alias: 支持細胞瘤
+    language: zh
+  - alias: Sertoli Cell Tumor
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓極罕見
-
 etiology:
   categories:
     - name: 細胞起源
@@ -28,7 +27,6 @@ etiology:
       examples:
         - 隱睪症（腹腔或鼠蹊隱睪）
         - 高齡公犬
-
 clinicalSigns:
   early:
     - 睪丸腫大、硬化
@@ -41,24 +39,22 @@ clinicalSigns:
     - 包皮下垂、吸引公犬
     - 骨髓抑制：貧血、血小板減少
     - 前列腺鱗狀上皮化生
-
 diagnosis:
   primaryTests:
     - name: 睪丸觸診/超音波
-      notes: "腫塊、不對稱"
+      notes: 腫塊、不對稱
     - name: 血清雌激素檢測
-      notes: "功能性腫瘤顯著升高"
+      notes: 功能性腫瘤顯著升高
     - name: 全血球計數
-      notes: "貧血、血小板減少、白血球減少"
+      notes: 貧血、血小板減少、白血球減少
     - name: 骨髓檢查
-      notes: "若嚴重骨髓抑制"
+      notes: 若嚴重骨髓抑制
     - name: 組織病理學
-      notes: "確診"
+      notes: 確診
   differentialDiagnoses:
     - 顆粒細胞瘤（卵巢）
     - 其他睪丸腫瘤
     - 庫欣氏症（脫毛）
-
 treatment:
   medical:
     - 去勢手術（雙側切除）
@@ -66,20 +62,41 @@ treatment:
     - 貧血、血小板減少：輸血（若需要）
     - 轉移或惡性（10-20%）：化療
     - 卡鉑（carboplatin）300 mg/m² IV q21d
-
 prognosis:
-  general: "良性腫瘤切除後預後極佳，雌激素及骨髓功能數週內恢復。惡性轉移率10-20%，預後保留。"
-
+  general: 良性腫瘤切除後預後極佳，雌激素及骨髓功能數週內恢復。惡性轉移率10-20%，預後保留。
 prevention:
   - 早期絕育
   - 隱睪早期手術切除
   - 定期睪丸檢查（老年犬）
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of visualized experiments : JoVE"
+  - sourceOrg: 'Journal of visualized experiments : JoVE'
     title: Isolation of Sertoli Cells and Peritubular Cells from Rat Testes.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4781745/
     type: research
-    pmid: "26890157"
+    pmid: '26890157'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: alopecia
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 塞氏細胞瘤詳述 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - alopecia 相關症狀
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 睪丸觸診/超音波
+          notes: 腫塊、不對稱
+        - name: 血清雌激素檢測
+          notes: 功能性腫瘤顯著升高
+        - name: 全血球計數
+          notes: 貧血、血小板減少、白血球減少
+ddxSource: auto-generated

@@ -3,12 +3,13 @@ nameEn: Umbilical Hernia
 nameZh: 臍疝
 bodySystem: other
 description: 臍疝是犬貓最常見的先天性腹壁缺損，因出生後臍環未能完全閉合，導致腹腔內容物（通常為腹腔脂肪或大網膜）從臍部突出至皮下。多數臍疝為小型且臨床上無顯著意義，但大型臍疝可能有腸管嵌頓風險。
-
 aliases:
-  - { alias: 臍疝氣, language: zh }
-  - { alias: 肚臍疝, language: zh }
-  - { alias: Umbilical Hernia, language: en }
-
+  - alias: 臍疝氣
+    language: zh
+  - alias: 肚臍疝
+    language: zh
+  - alias: Umbilical Hernia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓隻臍疝較犬少見。通常小型且無臨床意義。
-
 etiology:
   categories:
     - name: 先天性
@@ -35,7 +35,6 @@ etiology:
         - 可縮復性（reducible）：內容物可推回腹腔
         - 不可縮復性（irreducible）：內容物無法推回（黏連或嵌頓）
         - 小型（< 1 cm 缺損）至大型（> 3 cm 缺損）
-
 clinicalSigns:
   early:
     - 臍部可見或可觸摸到軟性圓形突起
@@ -50,21 +49,19 @@ clinicalSigns:
     - 腸管嵌頓（罕見但可能危及生命）：突然腫脹變硬、疼痛、嘔吐
     - 嵌頓器官缺血壞死
     - 腹膜炎（腸壞死穿孔時）
-
 diagnosis:
   primaryTests:
     - name: 體格檢查
-      notes: "臍部可觸及軟性突起。評估大小（缺損直徑）與可縮復性。站立位觸診最佳。"
+      notes: 臍部可觸及軟性突起。評估大小（缺損直徑）與可縮復性。站立位觸診最佳。
     - name: 腹部超音波
-      notes: "確認疝出內容物（脂肪、大網膜、腸管）。評估是否有嵌頓或腸管血流異常。"
+      notes: 確認疝出內容物（脂肪、大網膜、腸管）。評估是否有嵌頓或腸管血流異常。
   imaging:
     - name: 腹部 X 光
-      notes: "通常不需要。大型疝或懷疑腸嵌頓時可見臍部區域含氣腸管。"
+      notes: 通常不需要。大型疝或懷疑腸嵌頓時可見臍部區域含氣腸管。
     - name: 無其他特殊影像
-      notes: "體格檢查與超音波即可確診。"
+      notes: 體格檢查與超音波即可確診。
   additional:
     - 嵌頓時：血液學與生化（評估器官功能與感染）
-
 treatment:
   principles:
     - 小型臍疝（< 1 cm）可能自行閉合，可觀察至 6 月齡
@@ -72,50 +69,92 @@ treatment:
     - 常於絕育手術時同時修復
     - 嵌頓性臍疝為急診
   general:
-    - "小型臍疝（< 1 cm）：觀察至 6 月齡，可能自行閉合"
-    - "手術修復：臍環缺損直接縫合（herniorrhaphy），通常與絕育手術同時進行"
-    - "大型缺損：可能需要網狀補片（mesh）修補"
-    - "嵌頓性臍疝：緊急手術。評估嵌頓器官存活度，壞死組織切除"
-    - "術後：限制活動 10-14 天"
-    - "術後疼痛管理通常僅需術後 NSAIDs"
-
+    - 小型臍疝（< 1 cm）：觀察至 6 月齡，可能自行閉合
+    - 手術修復：臍環缺損直接縫合（herniorrhaphy），通常與絕育手術同時進行
+    - 大型缺損：可能需要網狀補片（mesh）修補
+    - 嵌頓性臍疝：緊急手術。評估嵌頓器官存活度，壞死組織切除
+    - 術後：限制活動 10-14 天
+    - 術後疼痛管理通常僅需術後 NSAIDs
 prognosis: 預後極佳。擇期手術修復簡單且成功率 > 99%。小型臍疝（< 1 cm）約 50% 可在 6 月齡前自行閉合。嵌頓性臍疝若即時手術預後良好。復發率極低。受影響動物建議不繁殖以減少遺傳傳遞。
-
 guidelineRefs:
   - sourceOrg: Journal of Small Animal Practice
-    title: "Umbilical hernias in dogs: prevalence and management"
+    title: 'Umbilical hernias in dogs: prevalence and management'
     url: https://pubmed.ncbi.nlm.nih.gov/14510846/
     type: consensus
-    pmid: "14510846"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '14510846'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Congenital Malformations in River Buffalo (Bubalus bubalis).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5332930/
     type: review
-    pmid: "28208595"
+    pmid: '28208595'
     relevance: supporting
   - sourceOrg: Italian journal of pediatrics
-    title: "Cardio-facio-cutaneous syndrome and gastrointestinal defects: report on a newborn with 19p13.3 deletion including the MAP&#xa0;2&#x2009;K2 gene."
+    title: >-
+      Cardio-facio-cutaneous syndrome and gastrointestinal defects: report on a newborn with 19p13.3 deletion including
+      the MAP&#xa0;2&#x2009;K2 gene.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9069788/
     type: case-report
-    pmid: "35509048"
+    pmid: '35509048'
     relevance: supporting
   - sourceOrg: BMC veterinary research
-    title: "Multiple midline defects identified in a litter of golden retrievers following gestational administration of prednisone and doxycycline: a case series."
+    title: >-
+      Multiple midline defects identified in a litter of golden retrievers following gestational administration of
+      prednisone and doxycycline: a case series.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5848590/
     type: case-report
-    pmid: "29530019"
+    pmid: '29530019'
     relevance: supporting
   - sourceOrg: BMC genomics
     title: Genetic and epigenetic markers in the METTL21C gene associated with umbilical hernia in pigs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12696900/
     type: research
-    pmid: "41257561"
+    pmid: '41257561'
     relevance: supporting
 pubmedQueries:
   - query: '"umbilical hernia" AND (dog OR canine) AND ("surgery" OR "prevalence")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "Airedale Terriers are overrepresented. In"
+  chapter: DIG
+  sectionTitle: Airedale Terriers are overrepresented. In
   pdfPage: 208
+diagnosticAlgorithm:
+  title: 臍疝 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 觸診臍部腫塊
+      findings:
+        - 臍部軟性腫塊
+        - 通常可還納
+        - 幼犬常見
+        - 大小不一
+    - step: 2
+      action: 疝環評估
+      details: 觸診疝環大小與是否可還納
+      findings:
+        - 疝環大小測量
+        - 內容物是否可還納
+        - 不可還納需緊急評估嵌頓風險
+        - 疝囊內容物判斷
+    - step: 3
+      action: 影像學必要時
+      details: 大型或不可還納疝需影像確認
+      findings:
+        - 超音波確認疝內容物脂肪/網膜/腸管
+        - 腸管嵌頓排除
+        - 腹腔其他異常排除
+        - 小型可還納疝可能自行閉合
+clinicalPearls:
+  - 小的可還納臍疝可等到絕育時一併修復
+  - 大的不可還納臍疝應儘早手術以防嵌頓
+  - 有遺傳傾向，受影響動物的繁殖應慎重考慮
+  - 嵌頓是緊急情況，需立即手術
+monitoringItems:
+  - 觀察期間監測大小變化和可還納性
+  - 術後傷口癒合
+  - 復發（罕見）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+ddxSource: book

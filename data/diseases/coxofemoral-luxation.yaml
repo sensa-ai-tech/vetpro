@@ -3,11 +3,11 @@ nameEn: Coxofemoral Luxation
 nameZh: 股髖關節脫位
 bodySystem: orthopedic
 description: 與 hip luxation 為同義詞，指股骨頭脫出髖臼的損傷。此條目著重於手術治療選項與慢性/復發性脫位的管理。
-
 aliases:
-  - { alias: "Hip Joint Luxation", language: en }
-  - { alias: "股骨頭脫位", language: zh }
-
+  - alias: Hip Joint Luxation
+    language: en
+  - alias: 股骨頭脫位
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓常見。
-
 etiology:
   categories:
     - name: 外傷性/退化性
@@ -23,7 +22,6 @@ etiology:
         - 急性外傷
         - 髖關節發育不良繼發
         - 復發性脫位
-
 clinicalSigns:
   early:
     - 後肢不負重
@@ -33,14 +31,12 @@ clinicalSigns:
     - 復發性脫位
     - 關節退化
     - 肌肉萎縮
-
 diagnosis:
   primaryTests:
     - name: X 光
       notes: 確認脫位方向與合併病變
     - name: CT
       notes: 複雜病例評估
-
 treatment:
   principles:
     - 急性首選閉合復位
@@ -50,26 +46,58 @@ treatment:
     - 手術選項：Toggle pin fixation
     - FHO（股骨頭頸切除）
     - THR（全髖關節置換，最佳功能恢復）
-
 prognosis: Toggle pin 固定成功率約 85%。FHO 功能恢復良好（尤其小型犬）。THR 功能恢復最佳。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
-    title: Surgical Stabilisation of a Coxofemoral Luxation in a Northern Goshawk (Accipter gentilis) with Transarticular Pinning.
+    title: >-
+      Surgical Stabilisation of a Coxofemoral Luxation in a Northern Goshawk (Accipter gentilis) with Transarticular
+      Pinning.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10051546/
     type: case-report
-    pmid: "36977244"
+    pmid: '36977244'
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Prognostic indicators for survival of downer cattle treated using a flotation tank in a referral hospital: 190 cases (2000-2020)."
+    title: >-
+      Prognostic indicators for survival of downer cattle treated using a flotation tank in a referral hospital: 190
+      cases (2000-2020).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9889702/
     type: research
-    pmid: "36472312"
+    pmid: '36472312'
   - sourceOrg: Acta veterinaria Scandinavica
-    title: Antimicrobial prophylaxis is considered sufficient to preserve an acceptable surgical site infection rate in clean orthopaedic and neurosurgeries in dogs.
+    title: >-
+      Antimicrobial prophylaxis is considered sufficient to preserve an acceptable surgical site infection rate in clean
+      orthopaedic and neurosurgeries in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7495856/
     type: research
-    pmid: "32943076"
+    pmid: '32943076'
 pubmedQueries:
   - query: '"coxofemoral luxation" AND (veterinary OR canine OR feline) AND ("toggle pin" OR "FHO" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: failure-to-grow
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 股髖關節脫位 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - failure-to-grow 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: X 光
+          notes: 確認脫位方向與合併病變
+        - name: CT
+          notes: 複雜病例評估
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 急性首選閉合復位
+        - 復發或合併髖關節發育不良需手術
+ddxSource: auto-generated

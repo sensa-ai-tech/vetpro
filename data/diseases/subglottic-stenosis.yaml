@@ -3,11 +3,11 @@ nameEn: Subglottic Stenosis
 nameZh: 聲門下狹窄
 bodySystem: respiratory
 description: 聲門下狹窄為聲門下方喉部或氣管上端的異常狹窄。犬貓可為先天性或後天性（氣管插管損傷後瘢痕形成為最常見後天性原因）。導致上呼吸道阻塞症狀，嚴重者可危及生命。
-
 aliases:
-  - { alias: 聲門下方狹窄, language: zh }
-  - { alias: Subglottic Tracheal Stenosis, language: en }
-
+  - alias: 聲門下方狹窄
+    language: zh
+  - alias: Subglottic Tracheal Stenosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻因喉部解剖較小，氣管插管損傷後狹窄風險可能較高。
-
 etiology:
   categories:
     - name: 後天性（較常見）
@@ -28,7 +27,6 @@ etiology:
       examples:
         - 先天性聲門下腔狹窄
         - 軟骨發育異常
-
 clinicalSigns:
   early:
     - 吸氣性喘鳴（stridor）
@@ -40,14 +38,12 @@ clinicalSigns:
     - 發紺
     - 運動不耐
     - 急性呼吸困難發作
-
 diagnosis:
   primaryTests:
     - name: 喉鏡/氣管鏡檢查
       notes: 確診金標準。直接觀察聲門下腔狹窄程度與範圍。評估狹窄性質（瘢痕性、黏膜性、軟骨性）。
     - name: CT 掃描
       notes: 評估狹窄範圍與嚴重程度。術前計劃。
-
 treatment:
   principles:
     - 恢復氣道通暢為治療目標
@@ -56,38 +52,72 @@ treatment:
   general:
     - 球囊擴張術（balloon dilation，可重複進行）
     - 雷射切除瘢痕組織
-    - "短期皮質類固醇減少再狹窄：Dexamethasone 0.1-0.2 mg/kg IV"
+    - 短期皮質類固醇減少再狹窄：Dexamethasone 0.1-0.2 mg/kg IV
     - Mitomycin C 局部塗布（減少瘢痕再形成）
     - 嚴重者：氣管切開術（暫時或永久）或氣管切除吻合術
-
 prognosis: 預後取決於狹窄範圍與嚴重程度。球囊擴張術後復發率中等。反覆擴張可能需要。雷射切除結合球囊擴張效果較佳。嚴重環狀狹窄可能需要永久性氣管切開。
-
-
 guidelineRefs:
   - sourceOrg: Laryngoscope investigative otolaryngology
     title: Effects of Inhaled Dexamethasone/Ciprofloxacin on Acute Subglottic Stenosis in a Rabbit Model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12023402/
     type: research
-    pmid: "40291573"
+    pmid: '40291573'
     relevance: supporting
   - sourceOrg: The Laryngoscope
     title: Quantitative Evaluation of Subglottic Stenosis Using Ultrashort Echo Time MRI in a Rabbit Model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9575155/
     type: research
-    pmid: "33399240"
+    pmid: '33399240'
     relevance: supporting
-  - sourceOrg: "Indian journal of otolaryngology and head and neck surgery : official publication of the Association of Otolaryngologists of India"
+  - sourceOrg: >-
+      Indian journal of otolaryngology and head and neck surgery : official publication of the Association of
+      Otolaryngologists of India
     title: Role of Topical Medication in Prevention of Post-extubation Subglottic Stenosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5581755/
     type: research
-    pmid: "28929076"
+    pmid: '28929076'
     relevance: supporting
   - sourceOrg: The Laryngoscope
     title: Diagnosis of subglottic stenosis in a rabbit model using long-range optical coherence tomography.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5326617/
     type: research
-    pmid: "27559721"
+    pmid: '27559721'
     relevance: supporting
 pubmedQueries:
   - query: '"subglottic stenosis" AND (veterinary OR canine OR feline) AND ("balloon dilation" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: stertor-stridor
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 聲門下狹窄 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - stertor-stridor 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 喉鏡/氣管鏡檢查
+          notes: 確診金標準。直接觀察聲門下腔狹窄程度與範圍。評估狹窄性質（瘢痕性、黏膜性、軟骨性）。
+        - name: CT 掃描
+          notes: 評估狹窄範圍與嚴重程度。術前計劃。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 恢復氣道通暢為治療目標
+        - 球囊擴張術為首選微創治療
+        - 嚴重狹窄可能需要手術
+ddxSource: auto-generated

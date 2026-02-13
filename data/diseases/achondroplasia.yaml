@@ -3,11 +3,11 @@ nameEn: Achondroplasia
 nameZh: 無軟骨發育症
 bodySystem: orthopedic
 description: 無軟骨發育症（軟骨發育不全的嚴重形式）為軟骨內化骨嚴重受損導致明顯的矮小體型與骨骼畸形。在非短肢品種中為病理性畸形，可導致嚴重的四肢與脊椎異常。
-
 aliases:
-  - { alias: 軟骨發育不全症, language: zh }
-  - { alias: Achondroplastic dwarfism, language: en }
-
+  - alias: 軟骨發育不全症
+    language: zh
+  - alias: Achondroplastic dwarfism
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 非短肢犬種中為病理性。部分品種有特定基因突變。
-
 etiology:
   categories:
     - name: 先天發育異常
@@ -23,7 +22,6 @@ etiology:
         - FGFR3 基因突變（部分品種）
         - 軟骨增殖區功能障礙
         - 遺傳性
-
 clinicalSigns:
   early:
     - 四肢明顯短小粗壯
@@ -33,53 +31,76 @@ clinicalSigns:
     - 脊椎壓迫性疾病
     - 呼吸困難
     - 關節異常
-
 diagnosis:
   primaryTests:
     - name: 影像與臨床檢查
       notes: X 光見嚴重長骨短縮。基因檢測。
-
 treatment:
   principles:
     - 依嚴重程度決定保守或手術治療
     - 支持療法
   general:
     - 對症治療相關併發症。脊椎壓迫時手術減壓。疼痛管理。
-
 prognosis: 視畸形嚴重程度與併發症而定。嚴重脊椎壓迫可致癱瘓。
-
-
 guidelineRefs:
   - sourceOrg: Endocrine reviews
     title: Preclinical Rodent Models for Human Bone Disease, Including a Focus on Cortical Bone.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11244217/
     type: review
-    pmid: "38315213"
+    pmid: '38315213'
   - sourceOrg: Animal genetics
-    title: Signatures of selection detected from whole-genome sequencing indicate that the small body size in dwarf rabbit breeds is caused by polygenic effects with a few major loci.
+    title: >-
+      Signatures of selection detected from whole-genome sequencing indicate that the small body size in dwarf rabbit
+      breeds is caused by polygenic effects with a few major loci.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12224565/
     type: research
-    pmid: "40607659"
-  - sourceOrg: "Developmental dynamics : an official publication of the American Association of Anatomists"
+    pmid: '40607659'
+  - sourceOrg: 'Developmental dynamics : an official publication of the American Association of Anatomists'
     title: Infigratinib, a selective FGFR1-3 tyrosine kinase inhibitor, alters dentoalveolar development at high doses.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10784415/
     type: research
-    pmid: "37435833"
+    pmid: '37435833'
   - sourceOrg: Scientific reports
     title: Evaluation of FGFR inhibitor ASP5878 as a drug candidate for achondroplasia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7708468/
     type: research
-    pmid: "33262386"
+    pmid: '33262386'
   - sourceOrg: International journal of molecular sciences
     title: Natriuretic Peptide Expression and Function in GH3 Somatolactotropes and Feline Somatotrope Pituitary Tumours.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7865297/
     type: research
-    pmid: "33499110"
+    pmid: '33499110'
   - sourceOrg: International journal of molecular sciences
-    title: Pharmacological and Genetic Disruption of C-Type Natriuretic Peptide (nppcl) Expression in Zebrafish (Danio rerio) Causes Stunted Growth during Development.
+    title: >-
+      Pharmacological and Genetic Disruption of C-Type Natriuretic Peptide (nppcl) Expression in Zebrafish (Danio rerio)
+      Causes Stunted Growth during Development.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10454581/
     type: research
-    pmid: "37629102"
+    pmid: '37629102'
 pubmedQueries:
   - query: '"Achondroplasia" AND (veterinary OR canine OR feline) AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 無軟骨發育症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 影像與臨床檢查
+          notes: X 光見嚴重長骨短縮。基因檢測。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 依嚴重程度決定保守或手術治療
+        - 支持療法
+ddxSource: auto-generated

@@ -2,13 +2,16 @@ slug: metritis
 nameEn: Metritis
 nameZh: 子宮炎
 bodySystem: reproductive
-description: 子宮炎 (metritis) 為產後或流產後子宮的急性細菌感染，不同於 pyometra（慢性、荷爾蒙驅動）。常見致病菌為 E. coli、Streptococcus、Staphylococcus。好發於難產後、胎盤滯留或助產操作後。為產後緊急狀態，需積極治療。
-
+description: >-
+  子宮炎 (metritis) 為產後或流產後子宮的急性細菌感染，不同於 pyometra（慢性、荷爾蒙驅動）。常見致病菌為 E.
+  coli、Streptococcus、Staphylococcus。好發於難產後、胎盤滯留或助產操作後。為產後緊急狀態，需積極治療。
 aliases:
-  - { alias: 產後子宮炎, language: zh }
-  - { alias: Postpartum Metritis, language: en }
-  - { alias: Puerperal Metritis, language: en }
-
+  - alias: 產後子宮炎
+    language: zh
+  - alias: Postpartum Metritis
+    language: en
+  - alias: Puerperal Metritis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓產後子宮炎較犬少見但可發生。病因與犬類似。
-
 etiology:
   categories:
     - name: 致病機制
@@ -32,7 +34,6 @@ etiology:
         - 胎盤滯留
         - 死胎滯留
         - 不潔環境分娩
-
 clinicalSigns:
   early:
     - 惡臭陰道分泌物（暗紅色或膿性）
@@ -45,7 +46,6 @@ clinicalSigns:
     - 敗血症（低血壓、心搏過速）
     - 泌乳減少（影響新生仔畜）
     - 腹膜炎（子宮破裂時）
-
 diagnosis:
   primaryTests:
     - name: 臨床表現
@@ -57,7 +57,6 @@ diagnosis:
     - 陰道分泌物培養與藥敏
     - 生化（腎功能、電解質）
     - 腹部 X-ray（滯留胎兒）
-
 treatment:
   principles:
     - 積極抗生素
@@ -72,36 +71,85 @@ treatment:
     - 嚴重敗血症或對藥物無反應：緊急 OHE
     - 新生仔畜需人工哺乳（母犬病情嚴重或抗生素使用時）
     - 住院監測直到穩定
-
 prognosis: 子宮炎及時治療預後佳。延遲治療可導致敗血症、DIC 與死亡。OHE 為最確實的治療。繁殖用犬藥物治療需密切監測。未來繁殖力可能受影響。
-
-
 guidelineRefs:
   - sourceOrg: Open veterinary journal
-    title: "Bovine trichomoniasis: A hidden threat to reproductive efficiency."
+    title: 'Bovine trichomoniasis: A hidden threat to reproductive efficiency.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11682740/
     type: review
-    pmid: "39737020"
+    pmid: '39737020'
   - sourceOrg: Animal reproduction
     title: Recent advances and future directions for uterine diseases diagnosis, pathogenesis, and management in dairy cows.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7534574/
     type: review
-    pmid: "33029222"
+    pmid: '33029222'
   - sourceOrg: International journal of molecular sciences
-    title: "Pathogenicity and Virulence of Trueperella pyogenes: A Review."
+    title: 'Pathogenicity and Virulence of Trueperella pyogenes: A Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6600626/
     type: review
-    pmid: "31167367"
+    pmid: '31167367'
   - sourceOrg: Molecules (Basel, Switzerland)
-    title: "Selenium in Cattle: A Review."
+    title: 'Selenium in Cattle: A Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6274551/
     type: review
-    pmid: "27120589"
+    pmid: '27120589'
   - sourceOrg: BMC veterinary research
     title: Changes in fecal microbiota of dairy cows with and without endometritis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11934761/
     type: research
-    pmid: "40128871"
+    pmid: '40128871'
 pubmedQueries:
   - query: '"metritis" AND (veterinary OR canine OR feline) AND ("postpartum" OR "treatment" OR "diagnosis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 子宮炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史評估
+      details: 產後時間和分娩過程
+      findings:
+        - 產後1-7天
+        - 難產或助產史
+        - 惡臭陰道分泌物
+    - step: 2
+      action: 理學+實驗室
+      details: 全身評估和感染指標
+      findings:
+        - 發燒
+        - 嗜中性球增多
+        - 子宮觸診腫大疼痛
+    - step: 3
+      action: 影像學
+      details: 超音波和X光
+      findings:
+        - 子宮液體積聚
+        - 排除滯留胎兒
+        - 子宮壁增厚
+    - step: 4
+      action: 培養+治療
+      details: 分泌物培養+經驗性抗生素
+      findings:
+        - E. coli最常見
+        - 培養藥敏指導用藥
+clinicalPearls:
+  - 產後1-7天的惡臭陰道分泌物=高度懷疑子宮炎
+  - 區分正常惡露（紅棕色、量少、無臭）和子宮炎分泌物（膿性、惡臭）
+  - 必須排除滯留胎兒或胎盤（X光或超音波）
+  - PGF2α可促進子宮排空但有副作用（嘔吐、腹瀉、流涎）
+monitoringItems:
+  - 體溫追蹤
+  - 陰道分泌物量和性質
+  - CBC追蹤（感染控制）
+  - 幼仔健康和營養
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+ddxSource: book

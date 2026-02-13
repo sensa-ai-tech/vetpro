@@ -3,20 +3,23 @@ nameEn: Avian Teflon Toxicosis
 nameZh: 禽類鐵氟龍中毒
 bodySystem: toxicology
 description: 鐵氟龍中毒是因聚四氟乙烯（PTFE）不沾鍋等含氟聚合物在高溫下分解釋放有毒氣體導致的急性呼吸衰竭。對禽類高度致命，常在數分鐘至數小時內導致死亡。為居家養鳥最重要的環境毒物之一。
-
 aliases:
-  - { alias: PTFE 中毒, language: zh }
-  - { alias: 聚四氟乙烯中毒, language: zh }
-  - { alias: 不沾鍋中毒, language: zh }
-  - { alias: PTFE toxicosis in birds, language: en }
-  - { alias: Polytetrafluoroethylene poisoning, language: en }
-  - { alias: Teflon fume fever in birds, language: en }
-
+  - alias: PTFE 中毒
+    language: zh
+  - alias: 聚四氟乙烯中毒
+    language: zh
+  - alias: 不沾鍋中毒
+    language: zh
+  - alias: PTFE toxicosis in birds
+    language: en
+  - alias: Polytetrafluoroethylene poisoning
+    language: en
+  - alias: Teflon fume fever in birds
+    language: en
 species:
   - speciesCommon: bird
     prevalence: uncommon
     notes: 所有鳥類均極度敏感。禽類獨特的呼吸系統（氣囊系統）使其對吸入性毒物極為脆弱。廚房附近飼養的鳥類風險最高。
-
 etiology:
   categories:
     - name: 毒物來源
@@ -31,7 +34,6 @@ etiology:
         - 吸入後導致急性肺水腫
         - 毛細血管通透性劇增
         - 呼吸交換面積喪失
-
 clinicalSigns:
   early:
     - 突然呼吸急促
@@ -43,7 +45,6 @@ clinicalSigns:
     - 從棲木掉落
     - 共濟失調
     - 急速死亡（數分鐘至數小時內）
-
 diagnosis:
   primaryTests:
     - name: 病史
@@ -52,7 +53,6 @@ diagnosis:
       notes: 急性呼吸衰竭 + PTFE 暴露史即可臨床診斷
     - name: 病理學
       notes: 剖檢見嚴重肺水腫、肺出血。氣囊充血
-
 treatment:
   principles:
     - 立即移出毒物環境
@@ -67,16 +67,48 @@ treatment:
     - 保溫減少氧耗
     - 最小化處理緊迫
     - 預防：家中絕對不使用不沾鍋或 PTFE 製品
-
 prognosis: 預後極差。大多數鳥類在暴露後迅速死亡。即時移除暴露源並給予氧氣支持的輕度病例可能存活。嚴重暴露者即使積極治療死亡率仍極高。存活者可能有永久性肺損傷。預防是唯一有效策略。
-
-
 guidelineRefs:
   - sourceOrg: Comparative medicine
     title: Polytetrafluoroethylene toxicosis in recently hatched chickens (Gallus domesticus).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3276392/
     type: case-report
-    pmid: "22330651"
+    pmid: '22330651'
 pubmedQueries:
   - query: '"PTFE" OR "teflon" OR "polytetrafluoroethylene" AND (avian OR bird) AND (toxicosis OR poisoning)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類鐵氟龍中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - ataxia 相關症狀
+        - pallor-cyanosis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史
+          notes: 暴露史是最重要的診斷線索。詢問是否有不沾鍋過熱、自清烤箱使用等
+        - name: 臨床表徵
+          notes: 急性呼吸衰竭 + PTFE 暴露史即可臨床診斷
+        - name: 病理學
+          notes: 剖檢見嚴重肺水腫、肺出血。氣囊充血
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 立即移出毒物環境
+        - 緊急氧氣支持
+        - 抗發炎與利尿
+ddxSource: auto-generated

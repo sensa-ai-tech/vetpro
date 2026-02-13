@@ -3,13 +3,15 @@ nameEn: Hyperkalemia
 nameZh: 高鉀血症
 bodySystem: electrolyte
 description: 血清鉀離子濃度異常升高，為小動物急診中最危險的電解質異常之一。嚴重高鉀血症可導致致命性心律不整，需緊急處理。常見於尿道阻塞、急性腎損傷及腎上腺功能低下症。
-
 aliases:
-  - { alias: Hyperkalaemia, language: en }
-  - { alias: High Potassium, language: en }
-  - { alias: 高血鉀, language: zh }
-  - { alias: 鉀離子過高, language: zh }
-
+  - alias: Hyperkalaemia
+    language: en
+  - alias: High Potassium
+    language: en
+  - alias: 高血鉀
+    language: zh
+  - alias: 鉀離子過高
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 最常見於公貓尿道阻塞（FLUTD）。急性腎損傷（尤其雙側輸尿管阻塞）、糖尿病酮酸中毒（胰島素缺乏）、腎上腺功能低下症（貓罕見）亦可發生。
-
 etiology:
   categories:
     - name: 排泄減少（最常見機制）
@@ -45,7 +46,6 @@ etiology:
         - 溶血檢體（最常見偽因）
         - 血小板過多症
         - 高鉀紅血球品種（Akita、Shiba Inu）
-
 clinicalSigns:
   early:
     - 可能無症狀（輕度升高 K+ 5.5-6.5 mEq/L）
@@ -59,29 +59,27 @@ clinicalSigns:
     - 心律不整
   late:
     - 嚴重心搏過緩
-    - "心室顫動或心搏停止（K+ >8-10 mEq/L）"
+    - 心室顫動或心搏停止（K+ >8-10 mEq/L）
     - 弛緩性癱瘓
     - 低血壓/心因性休克
     - 猝死
-
 diagnosis:
   primaryTests:
     - name: 血清電解質
-      notes: "犬正常 K+：3.5-5.5 mEq/L；貓正常 K+：3.5-5.8 mEq/L。輕度升高 5.5-6.5 mEq/L；中度 6.5-8.0 mEq/L；重度 >8.0 mEq/L。檢體溶血會假性升高"
+      notes: 犬正常 K+：3.5-5.5 mEq/L；貓正常 K+：3.5-5.8 mEq/L。輕度升高 5.5-6.5 mEq/L；中度 6.5-8.0 mEq/L；重度 >8.0 mEq/L。檢體溶血會假性升高
     - name: 心電圖（ECG）
-      notes: "K+ >6.5 mEq/L：高尖 T 波。K+ >7-8 mEq/L：P 波振幅降低/消失、PR 間期延長。K+ >8-9 mEq/L：QRS 波增寬、正弦波型態。K+ >10 mEq/L：心室顫動/心搏停止"
+      notes: K+ >6.5 mEq/L：高尖 T 波。K+ >7-8 mEq/L：P 波振幅降低/消失、PR 間期延長。K+ >8-9 mEq/L：QRS 波增寬、正弦波型態。K+ >10 mEq/L：心室顫動/心搏停止
     - name: 血液氣體分析
-      notes: "評估酸鹼狀態。代謝性酸中毒常伴隨高鉀血症"
+      notes: 評估酸鹼狀態。代謝性酸中毒常伴隨高鉀血症
   imaging:
     - name: 腹部超音波/X 光
-      notes: "評估泌尿系統（膀胱膨脹、輸尿管擴張、腎臟腫大、腹腔積液提示 uroabdomen）"
+      notes: 評估泌尿系統（膀胱膨脹、輸尿管擴張、腎臟腫大、腹腔積液提示 uroabdomen）
   additional:
     - 全血計數與生化（BUN/Creatinine 評估腎功能）
     - 尿液分析
     - 皮質醇刺激試驗（懷疑 Addison's disease）
     - Na/K 比值（<27 高度懷疑 Addison's disease）
     - 腹腔積液 creatinine 比（腹水/血清 creatinine >2:1 提示 uroabdomen）
-
 treatment:
   principles:
     - 高鉀血症伴心電圖異常為急診，需立即處理
@@ -90,16 +88,16 @@ treatment:
     - 治療根本病因（解除阻塞、治療 AKI、補充 mineralocorticoid）
   medications:
     - name: 10% Calcium gluconate
-      dose: "0.5-1.5 mL/kg IV slow（over 10-15 min），心電圖監控"
+      dose: 0.5-1.5 mL/kg IV slow（over 10-15 min），心電圖監控
       notes: 心肌保護劑，不降低血鉀但拮抗鉀對心肌的毒性。效果即時但短暫（30-60 min）。禁忌與 bicarbonate 同一管路
     - name: Regular insulin + Dextrose
-      dose: "Regular insulin 0.25-0.5 IU/kg IV + 50% dextrose 1-2 g/unit insulin IV"
+      dose: Regular insulin 0.25-0.5 IU/kg IV + 50% dextrose 1-2 g/unit insulin IV
       notes: 促進鉀離子進入細胞。起效 15-30 min，持續 4-6 hr。需監測血糖避免低血糖。隨後 2.5-5% dextrose 輸液維持
     - name: Sodium bicarbonate
-      dose: "1-2 mEq/kg IV slow（over 15-20 min）"
+      dose: 1-2 mEq/kg IV slow（over 15-20 min）
       notes: 鹼化促進 K+ 進入細胞。適用於同時有代謝性酸中毒的情況。不建議常規使用
     - name: Terbutaline（β2-agonist）
-      dose: "犬/貓 0.01 mg/kg IV"
+      dose: 犬/貓 0.01 mg/kg IV
       notes: 刺激 Na+/K+-ATPase 促進鉀進入細胞。可作為輔助治療
   general:
     - 靜脈輸液（0.9% NaCl 為首選，不含鉀）促進腎臟鉀排泄
@@ -108,44 +106,99 @@ treatment:
     - 持續心電圖監測直到 K+ 正常化
     - 避免含鉀輸液（LRS 含 K+ 4 mEq/L，急性高鉀血症時改用 0.9% NaCl）
     - 監測血鉀每 2-4 小時直到穩定
-
-emergencyNotes: K+ >7 mEq/L 伴心電圖異常為緊急狀況。立即 10% calcium gluconate 0.5-1.5 mL/kg IV slow + ECG 監控。隨後 regular insulin 0.25-0.5 IU/kg IV + dextrose。公貓尿道阻塞常見 K+ >8-10 mEq/L，需先穩定心臟再導尿。
-
-prognosis: 取決於根本病因與嚴重程度。尿道阻塞解除後高鉀血症通常在數小時內恢復。Addison's disease 經適當 mineralocorticoid 替代預後良好。AKI 相關的高鉀血症預後取決於腎臟恢復程度。嚴重高鉀血症（>10 mEq/L）已出現嚴重心電圖異常者死亡風險高，但及時處理仍可存活。
-
+emergencyNotes: >-
+  K+ >7 mEq/L 伴心電圖異常為緊急狀況。立即 10% calcium gluconate 0.5-1.5 mL/kg IV slow + ECG 監控。隨後 regular insulin 0.25-0.5 IU/kg IV +
+  dextrose。公貓尿道阻塞常見 K+ >8-10 mEq/L，需先穩定心臟再導尿。
+prognosis: >-
+  取決於根本病因與嚴重程度。尿道阻塞解除後高鉀血症通常在數小時內恢復。Addison's disease 經適當 mineralocorticoid 替代預後良好。AKI 相關的高鉀血症預後取決於腎臟恢復程度。嚴重高鉀血症（>10
+  mEq/L）已出現嚴重心電圖異常者死亡風險高，但及時處理仍可存活。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
     title: Electrolyte disturbances in critically ill dogs and cats
     url: https://pubmed.ncbi.nlm.nih.gov/23855441/
     type: review
-    pmid: "23855441"
+    pmid: '23855441'
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: Evaluation of clinical and clinicopathological variables in male cats with urethral obstruction
     url: https://pubmed.ncbi.nlm.nih.gov/28940461/
     type: research
-    pmid: "28940461"
+    pmid: '28940461'
   - sourceOrg: Veterinary Clinics of North America Small Animal Practice
     title: Fluid, electrolyte, and acid-base disturbances in small animal patients
     url: https://pubmed.ncbi.nlm.nih.gov/28012874/
     type: review
-    pmid: "28012874"
+    pmid: '28012874'
   - sourceOrg: Foods (Basel, Switzerland)
-    title: "Rethinking Nutrition in Chronic Kidney Disease: Plant Foods, Bioactive Compounds, and the Shift Beyond Traditional Limitations: A Narrative Review."
+    title: >-
+      Rethinking Nutrition in Chronic Kidney Disease: Plant Foods, Bioactive Compounds, and the Shift Beyond Traditional
+      Limitations: A Narrative Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12523900/
     type: review
-    pmid: "41097524"
+    pmid: '41097524'
     relevance: primary
   - sourceOrg: Equine veterinary journal
-    title: "Suspected vagal reflex and&#xa0;hyperkalaemia&#xa0;inducing asystole in an anaesthetised horse."
+    title: Suspected vagal reflex and&#xa0;hyperkalaemia&#xa0;inducing asystole in an anaesthetised horse.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9543672/
     type: review
-    pmid: "34738246"
+    pmid: '34738246'
     relevance: primary
 pubmedQueries:
   - query: '"hyperkalemia" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "emergency" OR "ECG")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "MET"
-  sectionTitle: "Treatment: Hyperkalemia should"
+  chapter: MET
+  sectionTitle: 'Treatment: Hyperkalemia should'
   pdfPage: 1046
+diagnosticAlgorithm:
+  title: 高血鉀症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估心率、肌肉無力及排尿狀態
+      findings:
+        - 心搏過緩
+        - 肌肉無力
+        - 少尿或無尿
+        - 嘔吐腹瀉
+    - step: 2
+      action: 電解質與腎功能
+      details: 血清鉀、BUN、肌酐測量
+      findings:
+        - 血清鉀>5.5 mEq/L
+        - 氮血症
+        - 代謝性酸中毒
+        - 鈉鉀比評估
+    - step: 3
+      action: 心電圖評估
+      details: 緊急評估心臟傳導影響
+      findings:
+        - T波高尖
+        - P波消失
+        - QRS增寬
+        - 嚴重時心室停搏風險
+    - step: 4
+      action: 病因確認與處理
+      details: 區分腎臟性、腎上腺性或阻塞性原因
+      findings:
+        - 尿道阻塞（公貓）
+        - 急性腎衰竭
+        - Addison病
+        - 膀胱破裂
+clinicalPearls:
+  - K>7 mEq/L需緊急處理
+  - 鈣不降低血鉀但保護心肌
+  - 胰島素促進鉀進入細胞
+  - Addison病的Na:K<27是重要線索
+monitoringItems:
+  - ECG連續監測
+  - 電解質q1-2h（急性期）
+  - 尿量
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+ddxSource: book

@@ -3,25 +3,30 @@ nameEn: Exocrine Pancreatic Insufficiency
 nameZh: 外分泌胰臟功能不全
 bodySystem: gastrointestinal
 description: 胰臟腺泡細胞無法分泌足夠消化酵素，導致嚴重消化吸收不良，犬以 German Shepherd 的胰臟腺泡萎縮 (PAA) 為最常見原因。
-
 aliases:
-  - { alias: EPI, language: en }
-  - { alias: Pancreatic Acinar Atrophy, language: en }
-  - { alias: PAA, language: en }
-  - { alias: 胰外分泌不全, language: zh }
-  - { alias: 胰臟腺泡萎縮, language: zh }
-  - { alias: 消化酵素不足, language: zh }
-
+  - alias: EPI
+    language: en
+  - alias: Pancreatic Acinar Atrophy
+    language: en
+  - alias: PAA
+    language: en
+  - alias: 胰外分泌不全
+    language: zh
+  - alias: 胰臟腺泡萎縮
+    language: zh
+  - alias: 消化酵素不足
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: uncommon
-    notes: German Shepherd 為最好發品種（佔報告病例 >60%），其次為 Rough-Coated Collie、Eurasier、Cavalier King Charles Spaniel、Chow Chow。PAA 為犬 EPI 最常見原因（約 50-70%），慢性胰臟炎為第二常見。通常 1-5 歲發病（PAA），中老年犬發病多為慢性胰臟炎後遺症。
+    notes: >-
+      German Shepherd 為最好發品種（佔報告病例 >60%），其次為 Rough-Coated Collie、Eurasier、Cavalier King Charles Spaniel、Chow Chow。PAA 為犬
+      EPI 最常見原因（約 50-70%），慢性胰臟炎為第二常見。通常 1-5 歲發病（PAA），中老年犬發病多為慢性胰臟炎後遺症。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓少見。慢性胰臟炎為貓 EPI 最常見原因（非 PAA）。常與 IBD 和膽管肝炎併存（triaditis）。中老年貓好發。
-
 etiology:
   categories:
     - name: 胰臟腺泡萎縮 (PAA) — 犬最常見
@@ -44,9 +49,11 @@ etiology:
       examples:
         - 胰管阻塞
         - 先天性胰臟發育不全
-
-pathophysiology: 胰臟外分泌部（腺泡細胞）正常分泌消化酵素（蛋白酶 trypsin/chymotrypsin、脂肪酶 lipase、澱粉酶 amylase）與碳酸氫鈉至十二指腸。EPI 中，腺泡細胞大量減少（PAA 為免疫介導性進行性破壞；慢性胰臟炎為纖維化替代），當 >90% 外分泌功能喪失時出現臨床症狀。消化酵素不足導致脂肪、蛋白質與碳水化合物無法正常消化吸收 — 脂肪消化受影響最嚴重（脂肪酶缺乏 + 膽鹽解離不良）。未消化的營養素在腸道中被細菌發酵，導致小腸細菌過度增生 (SIBO/dysbiosis)，進一步損傷腸道黏膜。同時，胰臟分泌的內因子 (intrinsic factor) 對犬貓 cobalamin (維生素 B12) 吸收至關重要（犬胰臟內因子 > 胃內因子），EPI 導致嚴重 cobalamin 缺乏。Cobalamin 缺乏影響 DNA 合成與細胞分裂，進一步損害腸道黏膜修復能力，形成惡性循環。脂溶性維生素 (A、D、E、K) 吸收亦受損。
-
+pathophysiology: >-
+  胰臟外分泌部（腺泡細胞）正常分泌消化酵素（蛋白酶 trypsin/chymotrypsin、脂肪酶 lipase、澱粉酶 amylase）與碳酸氫鈉至十二指腸。EPI 中，腺泡細胞大量減少（PAA
+  為免疫介導性進行性破壞；慢性胰臟炎為纖維化替代），當 >90% 外分泌功能喪失時出現臨床症狀。消化酵素不足導致脂肪、蛋白質與碳水化合物無法正常消化吸收 — 脂肪消化受影響最嚴重（脂肪酶缺乏 +
+  膽鹽解離不良）。未消化的營養素在腸道中被細菌發酵，導致小腸細菌過度增生 (SIBO/dysbiosis)，進一步損傷腸道黏膜。同時，胰臟分泌的內因子 (intrinsic factor) 對犬貓 cobalamin (維生素 B12)
+  吸收至關重要（犬胰臟內因子 > 胃內因子），EPI 導致嚴重 cobalamin 缺乏。Cobalamin 缺乏影響 DNA 合成與細胞分裂，進一步損害腸道黏膜修復能力，形成惡性循環。脂溶性維生素 (A、D、E、K) 吸收亦受損。
 clinicalSigns:
   early:
     - 糞便量增加、鬆軟
@@ -71,20 +78,19 @@ clinicalSigns:
     - 皮膚病變（脂溶性維生素缺乏）
     - 神經症狀（嚴重 cobalamin 缺乏 — 罕見）
     - 凝血異常（維生素 K 缺乏 — 罕見）
-
 diagnosis:
   primaryTests:
     - name: 犬胰臟特異性免疫反應性脂肪酶 (cTLI / Canine Trypsin-Like Immunoreactivity)
-      notes: "確診金標準。12 小時禁食後血清 cTLI <2.5 μg/L 確診犬 EPI（正常 5.7-45.2 μg/L）。2.5-5.7 μg/L 為灰色區域（可能為亞臨床 PAA 或其他因素，建議 4 週後重測）。犬特異性檢測"
+      notes: 確診金標準。12 小時禁食後血清 cTLI <2.5 μg/L 確診犬 EPI（正常 5.7-45.2 μg/L）。2.5-5.7 μg/L 為灰色區域（可能為亞臨床 PAA 或其他因素，建議 4 週後重測）。犬特異性檢測
     - name: 貓胰臟特異性免疫反應性脂肪酶 (fTLI)
-      notes: "貓 EPI 確診。12 小時禁食後血清 fTLI <8 μg/L 確診（正常 12-82 μg/L）。8-12 μg/L 為灰色區域"
+      notes: 貓 EPI 確診。12 小時禁食後血清 fTLI <8 μg/L 確診（正常 12-82 μg/L）。8-12 μg/L 為灰色區域
     - name: 血清 Cobalamin (維生素 B12) 與 Folate
-      notes: "Cobalamin 低下（犬 EPI 約 80% 缺乏 — 胰臟內因子不足）。Folate 升高（小腸細菌過度增生產生葉酸）。Cobalamin 低 + Folate 高 = 強烈支持 EPI + dysbiosis"
+      notes: Cobalamin 低下（犬 EPI 約 80% 缺乏 — 胰臟內因子不足）。Folate 升高（小腸細菌過度增生產生葉酸）。Cobalamin 低 + Folate 高 = 強烈支持 EPI + dysbiosis
   imaging:
     - name: 腹部超音波
-      notes: "胰臟萎縮/體積縮小（PAA）。慢性胰臟炎可見胰臟高回音、鈣化。排除胰臟腫塊。但正常超音波不排除 EPI"
+      notes: 胰臟萎縮/體積縮小（PAA）。慢性胰臟炎可見胰臟高回音、鈣化。排除胰臟腫塊。但正常超音波不排除 EPI
     - name: 腹部 X 光
-      notes: "非特異性。排除腸道異物/阻塞。通常無特殊發現"
+      notes: 非特異性。排除腸道異物/阻塞。通常無特殊發現
   additional:
     - 糞便彈性蛋白酶 (Fecal Elastase) — 種屬特異性不需禁食，可替代 TLI 但敏感度略低
     - CBC (通常正常。淋巴球增多可見於嚴重 cobalamin 缺乏)
@@ -92,7 +98,6 @@ diagnosis:
     - 脂溶性維生素水平 (25-OH Vitamin D — 常低下)
     - 糞便脂肪定量 (Sudan stain — 篩檢但非特異)
     - 胰臟特異性脂肪酶 (Spec cPL/fPL) — 排除活動性胰臟炎
-
 treatment:
   principles:
     - 胰臟酵素補充為治療核心（終身）
@@ -102,16 +107,18 @@ treatment:
     - EPI 不可治癒，需終身管理
   medications:
     - name: 胰臟酵素補充 (Pancreatic Enzyme Supplementation)
-      dose: "乾燥豬胰臟粉末：每餐 1-2 茶匙/10 kg 體重，與食物混合。初始可用較高劑量再逐步調低至最低有效劑量"
+      dose: 乾燥豬胰臟粉末：每餐 1-2 茶匙/10 kg 體重，與食物混合。初始可用較高劑量再逐步調低至最低有效劑量
       notes: 一線治療。生鮮豬胰臟 (30-90 g/餐) 效果最佳但取得不便。乾燥粉末為最常用劑型。膠囊/錠劑效果較粉末差。與食物混合後不需預孵化（曾建議預孵化 20-30 分鐘但證據不支持額外益處）。腸溶衣產品可用但劑量需增加
     - name: Cobalamin (維生素 B12) 補充
-      dose: "犬：250-1500 μg SC 每週一次 × 6 週，之後每月一次維持。劑量依體重：<5 kg 250 μg；5-10 kg 400 μg；10-20 kg 600 μg；20-40 kg 800 μg；>40 kg 1000-1500 μg。口服 cyanocobalamin 50 μg/kg/day 近年研究顯示可替代注射"
+      dose: >-
+        犬：250-1500 μg SC 每週一次 × 6 週，之後每月一次維持。劑量依體重：<5 kg 250 μg；5-10 kg 400 μg；10-20 kg 600 μg；20-40 kg 800 μg；>40 kg
+        1000-1500 μg。口服 cyanocobalamin 50 μg/kg/day 近年研究顯示可替代注射
       notes: 幾乎所有 EPI 犬貓均需補充。低 cobalamin 為預後不良因子。補充後追蹤血清 cobalamin 水平。口服吸收途徑獨立於內因子（高劑量被動擴散），為便利替代方案
     - name: Tylosin (酪霉素)
-      dose: "犬 10-20 mg/kg PO BID × 4-6 週"
+      dose: 犬 10-20 mg/kg PO BID × 4-6 週
       notes: 用於持續性 SIBO/dysbiosis（酵素補充後腹瀉未完全改善）。也可用 Metronidazole 10-15 mg/kg PO BID。不常規使用，僅用於有臨床指征的菌群失調
     - name: Omeprazole (質子幫浦抑制劑)
-      dose: "犬 1 mg/kg PO SID-BID"
+      dose: 犬 1 mg/kg PO SID-BID
       notes: 部分酵素補充反應不佳的病例，胃酸可能破壞口服酵素活性。PPI 提升十二指腸 pH 可改善酵素效力。非常規使用
   general:
     - 高消化性飲食（低纖維、中等脂肪含量 — 近年研究顯示不需嚴格低脂）
@@ -122,9 +129,10 @@ treatment:
     - 脂溶性維生素補充（維生素 E 400 IU/day 犬；Vitamin D 如有缺乏）
     - 長期管理需調整至最低有效酵素劑量以降低費用
     - 同時管理合併疾病（犬 IBD、貓 triaditis）
-
-prognosis: 治療反應良好時預後佳。約 60-80% 犬在適當酵素補充 + cobalamin 治療後臨床顯著改善（體重增加、糞便改善），但多數無法完全回到發病前狀態。約 20% 治療反應欠佳，常見原因包括：cobalamin 未補充或水平持續低下、合併 IBD/食物過敏、小腸菌群失調未控制、飼主配合度不足。Cobalamin 正常化為預後良好的重要指標。終身治療費用為飼主主要負擔。PAA 犬預期壽命在適當管理下可接近正常。貓 EPI 預後與合併疾病相關（triaditis 管理複雜度較高）。
-
+prognosis: >-
+  治療反應良好時預後佳。約 60-80% 犬在適當酵素補充 + cobalamin 治療後臨床顯著改善（體重增加、糞便改善），但多數無法完全回到發病前狀態。約 20% 治療反應欠佳，常見原因包括：cobalamin
+  未補充或水平持續低下、合併 IBD/食物過敏、小腸菌群失調未控制、飼主配合度不足。Cobalamin 正常化為預後良好的重要指標。終身治療費用為飼主主要負擔。PAA 犬預期壽命在適當管理下可接近正常。貓 EPI
+  預後與合併疾病相關（triaditis 管理複雜度較高）。
 guidelineRefs:
   - sourceOrg: ACVIM
     title: ACVIM Consensus Statement on Exocrine Pancreatic Insufficiency in Dogs and Cats
@@ -134,27 +142,90 @@ guidelineRefs:
     title: WSAVA Gastrointestinal Guidelines — Exocrine Pancreatic Disease
     url: https://www.wsava.org/guidelines/gastrointestinal-guidelines
     type: guideline
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Chronic Enteropathy and Vitamins in Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11898182/
     type: review
-    pmid: "40075932"
+    pmid: '40075932'
   - sourceOrg: Journal of veterinary internal medicine
-    title: "A review: Pancreatic enzymes in the treatment of chronic pancreatic insufficiency in companion animals."
+    title: 'A review: Pancreatic enzymes in the treatment of chronic pancreatic insufficiency in companion animals.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11256127/
     type: review
-    pmid: "38721836"
+    pmid: '38721836'
   - sourceOrg: Chest
     title: Cystic Fibrosis and the Nervous System.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5472519/
     type: review
-    pmid: "27876591"
+    pmid: '27876591'
     relevance: supporting
 pubmedQueries:
-  - query: '"exocrine pancreatic insufficiency" AND (dog OR canine) AND ("trypsin-like immunoreactivity" OR "enzyme supplementation" OR "cobalamin")'
+  - query: >-
+      "exocrine pancreatic insufficiency" AND (dog OR canine) AND ("trypsin-like immunoreactivity" OR "enzyme
+      supplementation" OR "cobalamin")
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "INSUFFICIENCY"
+  chapter: DIG
+  sectionTitle: INSUFFICIENCY
   pdfPage: 450
+diagnosticAlgorithm:
+  title: 胰外分泌功能不全 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估體重減輕與大量脂肪便
+      findings:
+        - 體重進行性減輕
+        - 食慾正常或增加
+        - 大量泡沫狀脂肪便
+        - 被毛粗糙
+    - step: 2
+      action: 胰臟功能檢測
+      details: 血清TLI（胰臟免疫反應性脂肪酶）
+      findings:
+        - 犬TLI<2.5 μg/L確診
+        - 貓TLI<8 μg/L確診
+        - 空腹12小時後採血
+    - step: 3
+      action: 營養評估
+      details: 評估吸收不良的影響
+      findings:
+        - 血清葉酸降低
+        - 血清B12降低
+        - 低膽固醇
+        - 脂溶性維生素缺乏
+    - step: 4
+      action: 治療反應確認
+      details: 胰臟酵素補充試驗
+      findings:
+        - 補充胰臟酵素後症狀改善
+        - B12補充注射
+        - 體重恢復
+        - 糞便性狀改善
+clinicalPearls:
+  - German Shepherd的PAA有遺傳性，不建議繁殖
+  - TLI是種屬特異性的，犬貓需要分別檢測
+  - Cobalamin缺乏會影響治療反應，必須補充
+  - 初始治療可能需要2-4週才見明顯改善
+  - 酶預先與食物混合不會增加效果
+  - 貓EPI通常繼發於慢性胰臟炎，可能同時有糖尿病
+monitoringItems:
+  - 體重
+  - 糞便性狀
+  - Cobalamin（治療初期每月）
+  - 食慾和精神狀態
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: polyphagia
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: flatulence
+    frequency: uncommon
+associatedLabFindings:
+  - labId: tli-low
+    frequency: common
+  - labId: cobalamin-low
+    frequency: common
+ddxSource: book

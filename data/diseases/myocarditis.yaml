@@ -2,12 +2,14 @@ slug: myocarditis
 nameEn: Myocarditis
 nameZh: 心肌炎
 bodySystem: cardiac
-description: 心肌炎為心肌的炎症性疾病，可由感染性（病毒、細菌、原蟲）、免疫介導性或毒物等多種原因引起。臨床表現多樣，從無症狀到急性心衰竭與致命性心律不整。犬隻以感染性原因較常見，特別是 Trypanosoma cruzi（Chagas 病）與病毒感染。
-
+description: >-
+  心肌炎為心肌的炎症性疾病，可由感染性（病毒、細菌、原蟲）、免疫介導性或毒物等多種原因引起。臨床表現多樣，從無症狀到急性心衰竭與致命性心律不整。犬隻以感染性原因較常見，特別是 Trypanosoma cruzi（Chagas
+  病）與病毒感染。
 aliases:
-  - { alias: 心肌發炎, language: zh }
-  - { alias: Inflammatory Cardiomyopathy, language: en }
-
+  - alias: 心肌發炎
+    language: zh
+  - alias: Inflammatory Cardiomyopathy
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻心肌炎少見，可與 FIP、弓形蟲感染相關。
-
 etiology:
   categories:
     - name: 感染性
@@ -33,7 +34,6 @@ etiology:
         - 藥物引起（Doxorubicin 心臟毒性）
         - 蛇毒
         - 蜂毒
-
 clinicalSigns:
   early:
     - 心律不整（心室性早期收縮為常見首發表現）
@@ -45,14 +45,12 @@ clinicalSigns:
     - 昏厥
     - 致命性心律不整
     - 突然死亡
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波（Echocardiography）
       notes: 可見局部或全面性心室壁運動異常、心室擴大、收縮功能降低。急性期可見心肌水腫（回聲改變）。需與擴張性心肌病鑑別。
     - name: 心電圖（ECG）
       notes: 心律不整（心室性早期收縮、心室頻脈）、ST 段與 T 波異常、傳導異常。
-
 treatment:
   principles:
     - 治療基礎病因（感染性病原）
@@ -60,40 +58,104 @@ treatment:
     - 支持性心衰竭治療
   general:
     - 治療感染性病因（如 Benznidazole 治療 Chagas 病）
-    - "心律不整控制：Lidocaine IV（急性期）→ Sotalol 或 Mexiletine PO（長期）"
-    - "心衰竭治療：Furosemide + Pimobendan + ACE inhibitor"
+    - 心律不整控制：Lidocaine IV（急性期）→ Sotalol 或 Mexiletine PO（長期）
+    - 心衰竭治療：Furosemide + Pimobendan + ACE inhibitor
     - 嚴格籠內休息（減少心臟負擔）
     - 免疫介導性可考慮免疫抑制治療
-
 prognosis: 預後取決於病因與心肌損害嚴重程度。輕度感染性心肌炎在適當治療後可完全恢復。Chagas 病慢性期預後較差。藥物性心肌炎（如 Doxorubicin）通常為不可逆。暴發性心肌炎死亡率高。部分病例可恢復正常心功能。
-
-
 guidelineRefs:
   - sourceOrg: Microorganisms
-    title: "Overview of Recent Advances in Canine Parvovirus Research: Current Status and Future Perspectives."
+    title: 'Overview of Recent Advances in Canine Parvovirus Research: Current Status and Future Perspectives.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11767475/
     type: review
-    pmid: "39858815"
+    pmid: '39858815'
   - sourceOrg: Frontiers in immunology
     title: Immune checkpoint inhibitors associated cardiovascular immune-related adverse events.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10875074/
     type: review
-    pmid: "38375475"
+    pmid: '38375475'
   - sourceOrg: Journal of personalized medicine
-    title: "Pharmacomicrobiomics of Antidepressants in Depression: A Systematic Review."
+    title: 'Pharmacomicrobiomics of Antidepressants in Depression: A Systematic Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10381387/
     type: review
-    pmid: "37511699"
+    pmid: '37511699'
   - sourceOrg: Journal of inflammation research
-    title: "Microglia-Mediated Neuroinflammation: A Potential Target for the Treatment of Cardiovascular Diseases."
+    title: 'Microglia-Mediated Neuroinflammation: A Potential Target for the Treatment of Cardiovascular Diseases.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9148574/
     type: review
-    pmid: "35642214"
-  - sourceOrg: "Journal of nuclear cardiology : official publication of the American Society of Nuclear Cardiology"
+    pmid: '35642214'
+  - sourceOrg: 'Journal of nuclear cardiology : official publication of the American Society of Nuclear Cardiology'
     title: Hybrid PET/MR imaging in myocardial inflammation post-myocardial infarction.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7391987/
     type: review
-    pmid: "31797321"
+    pmid: '31797321'
 pubmedQueries:
   - query: '"myocarditis" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 心肌炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估心臟功能異常與全身感染徵象
+      findings:
+        - 心律不整
+        - 心動過速或奔馬律
+        - 運動不耐受或突然虛弱
+        - 發燒或近期感染史
+    - step: 2
+      action: 心電圖與心臟標記物
+      details: 連續ECG監測與心肌損傷標記物檢測
+      findings:
+        - 心室早期收縮或心室心動過速
+        - ST段變化
+        - 心肌肌鈣蛋白I升高
+        - NT-proBNP升高
+    - step: 3
+      action: 心臟超音波
+      details: 評估心臟結構與收縮功能
+      findings:
+        - 局部或全面壁運動減低
+        - 收縮功能下降
+        - 心腔擴大
+        - 心包積液
+    - step: 4
+      action: 病因調查
+      details: 確認感染性或免疫媒介性病因
+      findings:
+        - 病毒PCR檢測
+        - 弓形蟲/巴貝斯蟲篩查
+        - 蜱媒疾病篩查
+        - 心肌活檢（少見執行）
+clinicalPearls:
+  - 犬小病毒心肌炎在廣泛疫苗接種後已少見
+  - cTnI是評估心肌損傷的敏感生物標記
+  - 心律不整可能是唯一的臨床表現
+  - Chagas病在美洲南部犬為重要鑑別診斷
+monitoringItems:
+  - 心電圖（Holter監測）
+  - 心臟超音波
+  - cTnI
+  - 臨床症狀
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: hypothermia-sign
+    frequency: common
+ddxSource: book

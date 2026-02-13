@@ -3,11 +3,11 @@ nameEn: Continuous Rate Infusion Protocols
 nameZh: 持續輸注流程
 bodySystem: emergency
 description: 持續靜脈輸注藥物以維持穩定血中濃度。常用於止痛、鎮靜、升壓、抗心律不整。
-
 aliases:
-  - { alias: CRI流程, language: zh }
-  - { alias: CRI Protocols, language: en }
-
+  - alias: CRI流程
+    language: zh
+  - alias: CRI Protocols
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,69 +17,87 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 同犬
-
 etiology:
   categories:
     - name: 常用CRI藥物
       examples:
         - Fentanyl(止痛)、Ketamine(止痛)、Dexmedetomidine(鎮靜)、Dobutamine(強心)
-
 clinicalSigns:
   early:
     - 依適應症
   progressive:
     - 無
-
 diagnosis:
   primaryTests:
     - name: 臨床評估
-      notes: "確認需CRI藥物"
+      notes: 確認需CRI藥物
   differentialDiagnoses:
     - 無
-
 treatment:
   medical:
     - 止痛CRI:
-      - Fentanyl 2-10 μg/kg/hr
-      - Ketamine 2-10 μg/kg/min
-      - Lidocaine 25-75 μg/kg/min(犬)
+        - Fentanyl 2-10 μg/kg/hr
+        - Ketamine 2-10 μg/kg/min
+        - Lidocaine 25-75 μg/kg/min(犬)
     - 鎮靜CRI:
-      - Dexmedetomidine 0.5-3 μg/kg/hr
+        - Dexmedetomidine 0.5-3 μg/kg/hr
     - 計算公式: (劑量 × 體重 × 60) / (藥物濃度 × 1000) = mL/hr
     - 輸液幫浦精確控制
     - 定期評估效果調整劑量
-
 prognosis:
-  general: "可提供穩定藥物濃度。注意藥物蓄積及副作用。"
-
+  general: 可提供穩定藥物濃度。注意藥物蓄積及副作用。
 prevention:
   - 精確計算劑量
   - 密切監測臨床反應
-
-
 guidelineRefs:
   - sourceOrg: Veterinary medicine international
     title: Anesthetic Protocols for Enhancing Physiological Stability in Rabbits During Hemorrhagic Shock.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12537241/
     type: research
-    pmid: "41122131"
-  - sourceOrg: "Journal of the American Association for Laboratory Animal Science : JAALAS"
-    title: Alfaxalone as a Total Intravenous Anesthesia Protocol in New Zealand White Rabbits (Oryctolagus cuniculus) Improves Cardiovascular Stability Compared to Isoflurane.
+    pmid: '41122131'
+  - sourceOrg: 'Journal of the American Association for Laboratory Animal Science : JAALAS'
+    title: >-
+      Alfaxalone as a Total Intravenous Anesthesia Protocol in New Zealand White Rabbits (Oryctolagus cuniculus)
+      Improves Cardiovascular Stability Compared to Isoflurane.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12532112/
     type: research
-    pmid: "40695466"
+    pmid: '40695466'
   - sourceOrg: Cureus
-    title: "Compact Arterial Monitoring Device Use in Resuscitative Endovascular Balloon Occlusion of the Aorta (REBOA): A Simple Validation Study in Swine."
+    title: >-
+      Compact Arterial Monitoring Device Use in Resuscitative Endovascular Balloon Occlusion of the Aorta (REBOA): A
+      Simple Validation Study in Swine.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11531354/
     type: research
-    pmid: "39493181"
+    pmid: '39493181'
   - sourceOrg: Journal of veterinary internal medicine
-    title: A retrospective study of hydrocortisone continuous rate infusion compared with administration of dexamethasone boluses in dogs with adrenal crisis.
+    title: >-
+      A retrospective study of hydrocortisone continuous rate infusion compared with administration of dexamethasone
+      boluses in dogs with adrenal crisis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10937513/
     type: research
-    pmid: "38353573"
+    pmid: '38353573'
   - sourceOrg: Veterinary sciences
-    title: Comparison of Xylazine and Lidocaine Infusion versus Medetomidine Continuous Rate Infusion during General Anesthesia with Isoflurane in Horses Undergoing Emergency Laparotomy.
+    title: >-
+      Comparison of Xylazine and Lidocaine Infusion versus Medetomidine Continuous Rate Infusion during General
+      Anesthesia with Isoflurane in Horses Undergoing Emergency Laparotomy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11125707/
     type: research
-    pmid: "38787168"
+    pmid: '38787168'
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 持續輸注流程 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床評估
+          notes: 確認需CRI藥物
+ddxSource: auto-generated

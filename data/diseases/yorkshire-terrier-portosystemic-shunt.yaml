@@ -3,20 +3,22 @@ nameEn: Yorkshire Terrier Portosystemic Shunt
 nameZh: 約克夏梗門脈系統分流
 bodySystem: hepatic
 description: 約克夏梗門脈系統分流（PSS）是該品種高度好發的先天性血管異常，門脈血液繞過肝臟直接進入全身循環。導致毒素（氨、膽酸等）無法被肝臟代謝，引起肝性腦病與肝臟發育不良。
-
 aliases:
-  - { alias: 約克夏肝門脈分流, language: zh }
-  - { alias: 先天性門體分流, language: zh }
-  - { alias: Yorkshire Terrier PSS, language: en }
-  - { alias: Liver shunt, language: en }
-  - { alias: Portosystemic shunt, language: en }
-
+  - alias: 約克夏肝門脈分流
+    language: zh
+  - alias: 先天性門體分流
+    language: zh
+  - alias: Yorkshire Terrier PSS
+    language: en
+  - alias: Liver shunt
+    language: en
+  - alias: Portosystemic shunt
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 約克夏梗為先天性肝外門脈分流最好發品種之一，相對風險為一般犬種的 35 倍。通常幼犬期即有症狀。單一肝外分流為主。
-
 etiology:
   categories:
     - name: 先天畸形
@@ -29,7 +31,6 @@ etiology:
         - 肝臟因門脈血流不足而發育不良（小肝症）
         - 毒素（氨、硫醇等）直接進入全身循環
         - 尿酸鹽結石形成
-
 clinicalSigns:
   early:
     - 生長遲緩（同胎最小）
@@ -42,23 +43,21 @@ clinicalSigns:
     - 尿酸鹽結石（血尿或尿路阻塞）
     - 體重過輕
     - 麻醉後恢復延遲
-
 diagnosis:
   primaryTests:
     - name: 血液生化
-      notes: "BUN 低、白蛋白低、血糖低、膽固醇低。肝酵素輕度升高"
+      notes: BUN 低、白蛋白低、血糖低、膽固醇低。肝酵素輕度升高
     - name: 空腹與餐後膽酸試驗
-      notes: "餐後膽酸顯著升高（>100 μmol/L）。高度敏感的篩選測試"
+      notes: 餐後膽酸顯著升高（>100 μmol/L）。高度敏感的篩選測試
     - name: 腹部超音波
-      notes: "小肝症、異常血管走向。Doppler 評估門脈血流"
+      notes: 小肝症、異常血管走向。Doppler 評估門脈血流
     - name: CT 血管攝影
-      notes: "金標準。精確定位分流血管走向與數量"
+      notes: 金標準。精確定位分流血管走向與數量
   differentialDiagnoses:
     - 後天性門脈分流
     - 微血管肝臟發育不良
     - 尿素循環障礙
     - 慢性肝炎
-
 treatment:
   medical:
     - 低蛋白飲食
@@ -69,11 +68,49 @@ treatment:
     - Ameroid constrictor 漸進性分流血管閉合（首選）
     - 薄膜帶（cellophane band）包紮
     - 完全結紮（需評估門脈壓力）
-
 prognosis:
-  general: "手術治療預後良好。Ameroid constrictor 成功率 >85%。術後多數犬可恢復正常肝功能。僅保守治療的中位存活約 2 年。早期手術效果最佳。"
-
+  general: 手術治療預後良好。Ameroid constrictor 成功率 >85%。術後多數犬可恢復正常肝功能。僅保守治療的中位存活約 2 年。早期手術效果最佳。
 prevention:
   - 繁殖犬膽酸篩選
   - 受影響犬不應繁殖
   - 已知家系應進行幼犬篩檢
+associatedSymptoms:
+  - symptomId: failure-to-grow
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 約克夏梗門脈系統分流 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - failure-to-grow 相關症狀
+        - behaviour-change 相關症狀
+        - polyuria-polydipsia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液生化
+          notes: BUN 低、白蛋白低、血糖低、膽固醇低。肝酵素輕度升高
+        - name: 空腹與餐後膽酸試驗
+          notes: 餐後膽酸顯著升高（>100 μmol/L）。高度敏感的篩選測試
+        - name: 腹部超音波
+          notes: 小肝症、異常血管走向。Doppler 評估門脈血流
+ddxSource: auto-generated

@@ -2,13 +2,16 @@ slug: multiple-myeloma
 nameEn: Multiple Myeloma
 nameZh: 多發性骨髓瘤
 bodySystem: hematology
-description: 多發性骨髓瘤為漿細胞（plasma cell）的惡性腫瘤，特徵為骨髓中漿細胞異常增殖、單克隆免疫球蛋白（M protein）過量分泌、溶骨性病變與高鈣血症。診斷需滿足經典四項中的至少兩項：骨髓漿細胞增生、M protein、溶骨性病變、Bence Jones 蛋白尿。
-
+description: >-
+  多發性骨髓瘤為漿細胞（plasma cell）的惡性腫瘤，特徵為骨髓中漿細胞異常增殖、單克隆免疫球蛋白（M protein）過量分泌、溶骨性病變與高鈣血症。診斷需滿足經典四項中的至少兩項：骨髓漿細胞增生、M
+  protein、溶骨性病變、Bence Jones 蛋白尿。
 aliases:
-  - { alias: MM, language: en }
-  - { alias: 骨髓瘤, language: zh }
-  - { alias: Plasma Cell Myeloma, language: en }
-
+  - alias: MM
+    language: en
+  - alias: 骨髓瘤
+    language: zh
+  - alias: Plasma Cell Myeloma
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻多發性骨髓瘤罕見。
-
 etiology:
   categories:
     - name: 腫瘤特性
@@ -30,7 +32,6 @@ etiology:
         - 高黏稠度症候群（M protein 過量）
         - 腎損傷（輕鏈沉積、高鈣血症）
         - 免疫缺陷（正常免疫球蛋白受抑制）
-
 clinicalSigns:
   early:
     - 嗜睡與活動力下降
@@ -42,55 +43,109 @@ clinicalSigns:
     - 高黏稠度症候群（視力異常、神經症狀、出血傾向）
     - 反覆感染
     - 腎衰竭
-
 diagnosis:
   primaryTests:
     - name: 血清蛋白電泳（SPE）
       notes: 確認 M protein（單克隆免疫球蛋白尖峰）。高球蛋白血症。免疫固定電泳（IFE）確認免疫球蛋白類型。
     - name: 骨髓穿刺
       notes: 漿細胞佔骨髓有核細胞 >20%（部分文獻 >10%）。漿細胞形態可能不成熟或異型。
-
 treatment:
   principles:
     - 化療為主要治療方式
     - 治療高鈣血症與高黏稠度
     - 支持性治療骨骼病變
   general:
-    - "Melphalan 0.1 mg/kg PO q24h × 10 天後 0.05 mg/kg PO q24h + Prednisolone 0.5-1 mg/kg/day"
-    - "高鈣血症：靜脈輸液 + Furosemide + Prednisolone + Bisphosphonate（Pamidronate 1-2 mg/kg IV）"
-    - "高黏稠度症候群：Plasmapheresis（血漿置換，急性期）"
+    - Melphalan 0.1 mg/kg PO q24h × 10 天後 0.05 mg/kg PO q24h + Prednisolone 0.5-1 mg/kg/day
+    - 高鈣血症：靜脈輸液 + Furosemide + Prednisolone + Bisphosphonate（Pamidronate 1-2 mg/kg IV）
+    - 高黏稠度症候群：Plasmapheresis（血漿置換，急性期）
     - 止痛治療（骨骼疼痛）
     - 病理性骨折處理
-
 prognosis: 犬隻多發性骨髓瘤對 Melphalan + Prednisolone 反應率約 75-90%。中位存活時間約 18-24 個月。高鈣血症、腎衰竭或高黏稠度症候群為不良預後因素。溶骨性病變多處者預後較差。
-
-
 guidelineRefs:
   - sourceOrg: Molecular biomedicine
-    title: "Multiple myeloma: signaling pathways and targeted therapy."
+    title: 'Multiple myeloma: signaling pathways and targeted therapy.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11222366/
     type: review
-    pmid: "38961036"
+    pmid: '38961036'
   - sourceOrg: Therapeutic advances in vaccines and immunotherapy
     title: Multiple myeloma and the potential of new checkpoint inhibitors for immunotherapy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11467827/
     type: review
-    pmid: "39399301"
+    pmid: '39399301'
   - sourceOrg: Veterinary medicine and science
     title: Markers for internal neoplasia in the horse.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9857019/
     type: review
-    pmid: "36495211"
+    pmid: '36495211'
   - sourceOrg: Cancer reports (Hoboken, N.J.)
     title: Identifying monoclonal gammopathy of undetermined significance from electronic health records.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10026307/
     type: review
-    pmid: "36464325"
+    pmid: '36464325'
   - sourceOrg: International journal of molecular sciences
     title: Oncolytic Virotherapy and Microenvironment in Multiple Myeloma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7956262/
     type: review
-    pmid: "33668361"
+    pmid: '33668361'
 pubmedQueries:
   - query: '"multiple myeloma" AND (veterinary OR canine OR feline) AND ("melphalan" OR "treatment" OR "prognosis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 多發性骨髓瘤 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估骨痛/跛行、嗜睡、出血傾向等表現，注意老年犬更常見
+      findings:
+        - 骨骼疼痛或病理性骨折
+        - 嗜睡與體重下降
+        - 黏膜出血或鼻出血
+    - step: 2
+      action: 實驗室檢查
+      details: 進行CBC、血清蛋白電泳、尿液分析和骨骼X光
+      findings:
+        - 血清蛋白電泳見單株M蛋白帶
+        - 尿液Bence-Jones蛋白陽性
+        - X光顯示多處骨質溶解性病變
+    - step: 3
+      action: 骨髓檢查確診
+      details: 進行骨髓抽吸和活檢確認漿細胞增生程度
+      findings:
+        - 骨髓漿細胞>20%
+        - 漿細胞異型性明顯
+        - 符合骨髓瘤診斷標準（M蛋白+骨溶解+骨髓漿細胞增生）
+clinicalPearls:
+  - 血清蛋白電泳的單株尖峰是最具特徵性的發現
+  - 「CRAB」記憶法：Calcium（高鈣）、Renal（腎衰）、Anemia（貧血）、Bone（骨病變）
+  - Melphalan為烷化劑，長期使用有致白血病風險
+  - 高黏稠度症候群在IgM型最常見（Waldenström巨球蛋白血症）
+  - 溶骨性病變在肋骨、椎體、骨盆和四肢長骨最常見
+monitoringItems:
+  - 每2-4週CBC監測骨髓抑制
+  - 血清蛋白電泳追蹤M蛋白量（治療反應指標）
+  - 血清鈣濃度
+  - 腎功能指標
+  - 骨骼X光追蹤
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: petechiae-ecchymoses
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+  - symptomId: splenomegaly
+    frequency: common
+associatedLabFindings:
+  - labId: hyperglobulinaemia
+    frequency: uncommon
+ddxSource: book

@@ -3,13 +3,15 @@ nameEn: Bladder Transitional Cell Carcinoma Detail
 nameZh: 膀胱移行細胞癌詳述
 bodySystem: oncology
 description: 犬最常見的膀胱惡性腫瘤，好發於膀胱三角區。蘇格蘭梗風險最高。BRAF 突變檢測可用於非侵入性診斷。Piroxicam 為標準治療的一部分。
-
 aliases:
-  - { alias: 膀胱移行上皮癌, language: zh }
-  - { alias: 膀胱尿路上皮癌, language: zh }
-  - { alias: Bladder TCC, language: en }
-  - { alias: Urothelial Carcinoma Canine, language: en }
-
+  - alias: 膀胱移行上皮癌
+    language: zh
+  - alias: 膀胱尿路上皮癌
+    language: zh
+  - alias: Bladder TCC
+    language: en
+  - alias: Urothelial Carcinoma Canine
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓膀胱 TCC 較少見。貓膀胱腫瘤約 50% 為移行細胞癌。臨床行為與犬相似但資料有限。
-
 etiology:
   categories:
     - name: 分子特徵
@@ -34,7 +35,6 @@ etiology:
         - 肥胖
         - 母犬略高於公犬
         - 環己胺類暴露
-
 clinicalSigns:
   early:
     - 血尿（最常見初始症狀）
@@ -46,28 +46,26 @@ clinicalSigns:
     - 尿路阻塞（部分或完全）
     - 腎後性氮血症（雙側輸尿管受阻）
     - 體重減輕
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "可見膀胱三角區不規則腫塊。評估腎盂擴張及輸尿管受阻情況"
+      notes: 可見膀胱三角區不規則腫塊。評估腎盂擴張及輸尿管受阻情況
     - name: 尿液 BRAF V595E 突變檢測
-      notes: "非侵入性診斷工具。敏感性約 85%，特異性接近 100%。需自由排出尿液（非膀胱穿刺）"
+      notes: 非侵入性診斷工具。敏感性約 85%，特異性接近 100%。需自由排出尿液（非膀胱穿刺）
     - name: 經尿道鏡膀胱切片
-      notes: "組織病理確認。注意：膀胱穿刺 FNA 有腫瘤沿針道播種風險，應避免"
+      notes: 組織病理確認。注意：膀胱穿刺 FNA 有腫瘤沿針道播種風險，應避免
   differentialDiagnoses:
     - 慢性細菌性膀胱炎
     - 膀胱息肉
     - 膀胱結石
     - 其他膀胱腫瘤（平滑肌瘤、淋巴瘤）
     - 前列腺疾病
-
 treatment:
   medical:
-    - "Piroxicam 0.3 mg/kg PO SID（COX-2 抑制劑，為標準治療核心）"
-    - "Mitoxantrone + Piroxicam 合併方案"
-    - "Vinblastine + Piroxicam 方案"
-    - "Carboplatin 方案"
+    - Piroxicam 0.3 mg/kg PO SID（COX-2 抑制劑，為標準治療核心）
+    - Mitoxantrone + Piroxicam 合併方案
+    - Vinblastine + Piroxicam 方案
+    - Carboplatin 方案
     - Toceranib (Palladia) 用於難治性病例
     - 膀胱內灌注化療（研究中）
   surgical:
@@ -75,24 +73,48 @@ treatment:
     - 三角區腫瘤手術困難，多以內科治療為主
     - 尿路支架置放術（尿道阻塞時的姑息治療）
     - 輸尿管支架或腎造瘻（上尿路阻塞時）
-
 prognosis:
-  general: "中位生存時間約 6-12 個月（Piroxicam 基礎治療）。合併化療可延長至 9-15 個月。BRAF 突變陽性者對標靶治療反應可能較佳。尿路完全阻塞為常見死因。"
-
+  general: 中位生存時間約 6-12 個月（Piroxicam 基礎治療）。合併化療可延長至 9-15 個月。BRAF 突變陽性者對標靶治療反應可能較佳。尿路完全阻塞為常見死因。
 prevention:
   - 減少除草劑及殺蟲劑暴露（尤其蘇格蘭梗）
   - 慢性血尿或排尿異常應及早進行影像學檢查
   - 高風險品種定期尿液篩檢
-
-
 guidelineRefs:
   - sourceOrg: Veterinary pathology
     title: Review of Histological Grading Systems in Veterinary Medicine.
     url: https://pubmed.ncbi.nlm.nih.gov/33769136/
     type: review
-    pmid: "33769136"
+    pmid: '33769136'
   - sourceOrg: Journal of comparative pathology
     title: Histological Characterization of Feline Bladder Urothelial Carcinoma.
     url: https://pubmed.ncbi.nlm.nih.gov/33494910/
     type: research
-    pmid: "33494910"
+    pmid: '33494910'
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: pollakiuria
+    frequency: common
+  - symptomId: haematuria
+    frequency: common
+diagnosticAlgorithm:
+  title: 膀胱移行細胞癌詳述 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - pollakiuria 相關症狀
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 可見膀胱三角區不規則腫塊。評估腎盂擴張及輸尿管受阻情況
+        - name: 尿液 BRAF V595E 突變檢測
+          notes: 非侵入性診斷工具。敏感性約 85%，特異性接近 100%。需自由排出尿液（非膀胱穿刺）
+        - name: 經尿道鏡膀胱切片
+          notes: 組織病理確認。注意：膀胱穿刺 FNA 有腫瘤沿針道播種風險，應避免
+ddxSource: auto-generated

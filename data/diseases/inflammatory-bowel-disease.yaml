@@ -3,12 +3,13 @@ nameEn: Inflammatory Bowel Disease
 nameZh: 炎症性腸病
 bodySystem: gastrointestinal
 description: 胃腸道黏膜慢性炎症細胞浸潤導致的持續性消化道症狀，需組織病理確診。
-
 aliases:
-  - { alias: IBD, language: en }
-  - { alias: 發炎性腸病, language: zh }
-  - { alias: Chronic Enteropathy, language: en }
-
+  - alias: IBD
+    language: en
+  - alias: 發炎性腸病
+    language: zh
+  - alias: Chronic Enteropathy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 中老年貓常見。淋巴球-漿細胞性腸炎最常見。常與胰臟炎、膽管炎並存 (triaditis)。需與小腸淋巴瘤鑑別。
-
 etiology:
   categories:
     - name: 免疫介導/失調
@@ -39,7 +39,6 @@ etiology:
         - 小腸淋巴瘤 (尤其貓)
         - 感染性 (梨形鞭毛蟲、鉤蟲等)
         - 胰外分泌不足 (EPI)
-
 clinicalSigns:
   early:
     - 慢性間歇性嘔吐
@@ -56,18 +55,17 @@ clinicalSigns:
     - 嚴重營養不良/惡病質
     - 腸道增厚/腸繫膜淋巴結腫大
     - 貓：可能進展為小腸淋巴瘤
-
 diagnosis:
   primaryTests:
     - name: 內視鏡 + 組織病理
-      notes: "金標準。需要多處切片 (胃、十二指腸、迴腸、結腸)。WSAVA 組織學分級標準"
+      notes: 金標準。需要多處切片 (胃、十二指腸、迴腸、結腸)。WSAVA 組織學分級標準
     - name: 血清白蛋白/球蛋白
-      notes: "低白蛋白血症提示 PLE。白蛋白 <2 g/dL 預後不良"
+      notes: 低白蛋白血症提示 PLE。白蛋白 <2 g/dL 預後不良
     - name: Cobalamin (Vit B12)
-      notes: "常降低 (吸收不良)。<200 ng/L 需補充。貓尤其常見"
+      notes: 常降低 (吸收不良)。<200 ng/L 需補充。貓尤其常見
   imaging:
     - name: 腹部超音波
-      notes: "腸壁增厚、層次結構改變、腸繫膜淋巴結腫大。肌肉層增厚可能提示淋巴瘤 (貓)"
+      notes: 腸壁增厚、層次結構改變、腸繫膜淋巴結腫大。肌肉層增厚可能提示淋巴瘤 (貓)
   additional:
     - CBC、生化 (低白蛋白、低球蛋白、肝指數)
     - 葉酸 (folate) — 近端小腸功能
@@ -76,7 +74,6 @@ diagnosis:
     - 糞便 PCR dysbiosis index (犬)
     - TLI (排除 EPI)
     - 全層切片 (full-thickness biopsy) — 若內視鏡切片不夠深或懷疑淋巴瘤
-
 treatment:
   principles:
     - 逐步診斷法：先排除食物反應性 → 再考慮免疫抑制
@@ -85,16 +82,16 @@ treatment:
     - 免疫抑制治療用於食物/抗生素無反應的確診 IBD
   medications:
     - name: Prednisolone
-      dose: "犬 1-2 mg/kg PO BID × 2-4 週，逐漸減量；貓 2 mg/kg PO SID"
+      dose: 犬 1-2 mg/kg PO BID × 2-4 週，逐漸減量；貓 2 mg/kg PO SID
       notes: 一線免疫抑制。貓優先使用 prednisolone (非 prednisone)
     - name: Budesonide
-      dose: "犬 3 mg/m² PO SID；貓 1 mg/cat PO SID"
+      dose: 犬 3 mg/m² PO SID；貓 1 mg/cat PO SID
       notes: 局部作用皮質類固醇，首過效應高，全身副作用較少
     - name: Chlorambucil
-      dose: "貓 2 mg/cat PO 隔日；犬 4-6 mg/m² PO 隔日"
+      dose: 貓 2 mg/cat PO 隔日；犬 4-6 mg/m² PO 隔日
       notes: 用於類固醇反應不佳或需排除低度淋巴瘤的貓。與 prednisolone 併用
     - name: Metronidazole
-      dose: "10-15 mg/kg PO BID"
+      dose: 10-15 mg/kg PO BID
       notes: 抗菌 + 免疫調節作用。腸道菌群失衡時考慮
   general:
     - 水解蛋白飲食或新型蛋白飲食
@@ -103,15 +100,12 @@ treatment:
     - PLE：白蛋白 <1.5 g/dL 考慮輸注血漿或人血白蛋白
     - 低脂飲食 (PLE 伴淋巴管擴張)
     - 長期管理與定期追蹤
-
 prognosis: 食物反應性腸病預後最佳。類固醇反應性 IBD 多數可良好控制。PLE 預後取決於白蛋白回復情況。白蛋白 <2 g/dL 為負面預後因子。貓 IBD 需長期監測是否進展為淋巴瘤。
-
 ontologyMappings:
   - source: MONDO
-    code: "MONDO:0005265"
+    code: MONDO:0005265
     label: inflammatory bowel disease
     confidence: broad
-
 guidelineRefs:
   - sourceOrg: WSAVA
     title: WSAVA Gastrointestinal Standardization Group — Histopathological Standards
@@ -121,29 +115,101 @@ guidelineRefs:
     title: ACVIM Consensus on Chronic Enteropathies in Dogs
     url: https://pubmed.ncbi.nlm.nih.gov/20113381/
     type: consensus
-    pmid: "20113381"
+    pmid: '20113381'
   - sourceOrg: Journal of veterinary internal medicine
-    title: ACVIM consensus statement guidelines on diagnosing and distinguishing low-grade neoplastic from inflammatory lymphocytic chronic enteropathies in cats.
+    title: >-
+      ACVIM consensus statement guidelines on diagnosing and distinguishing low-grade neoplastic from inflammatory
+      lymphocytic chronic enteropathies in cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10229359/
     type: consensus
-    pmid: "37130034"
+    pmid: '37130034'
   - sourceOrg: Annals of the rheumatic diseases
-    title: "EULAR recommendations for the management of psoriatic arthritis with pharmacological therapies: 2023 update."
+    title: 'EULAR recommendations for the management of psoriatic arthritis with pharmacological therapies: 2023 update.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11103320/
     type: guideline
-    pmid: "38499325"
+    pmid: '38499325'
     relevance: primary
   - sourceOrg: The Journal of rheumatology
-    title: "Management of Concomitant Inflammatory Bowel Disease or Uveitis in Patients with Psoriatic Arthritis: An Updated Review Informing the 2021 GRAPPA Treatment Recommendations."
+    title: >-
+      Management of Concomitant Inflammatory Bowel Disease or Uveitis in Patients with Psoriatic Arthritis: An Updated
+      Review Informing the 2021 GRAPPA Treatment Recommendations.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10921838/
     type: review
-    pmid: "36455946"
+    pmid: '36455946'
     relevance: primary
 pubmedQueries:
   - query: '"inflammatory bowel disease" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "consensus")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "INFLAMMATORY BOWEL DISEASE"
+  chapter: DIG
+  sectionTitle: INFLAMMATORY BOWEL DISEASE
   pdfPage: 332
+diagnosticAlgorithm:
+  title: 發炎性腸病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 詢問慢性嘔吐腹瀉、體重減輕病史
+      findings:
+        - 慢性嘔吐（>3週）
+        - 慢性小腸或大腸型腹瀉
+        - 漸進性體重減輕
+        - 食慾改變
+    - step: 2
+      action: 血液生化與排除
+      details: 基本篩檢排除其他原因
+      findings:
+        - 低白蛋白血症
+        - 葉酸/B12測量
+        - 排除寄生蟲
+        - 排除胰外分泌功能不全
+    - step: 3
+      action: 腹部超音波
+      details: 腸壁厚度與淋巴結評估
+      findings:
+        - 腸壁增厚
+        - 腸壁層次結構改變
+        - 腸系膜淋巴結腫大
+        - 排除腫瘤性病變
+    - step: 4
+      action: 內視鏡與組織切片
+      details: 胃腸道內視鏡及多部位切片
+      findings:
+        - 胃十二指腸鏡+結腸鏡
+        - 多點切片（每部位6-8處）
+        - 病理分型（淋巴球漿細胞型等）
+        - 排除腸道淋巴瘤
+clinicalPearls:
+  - IBD和腸道淋巴瘤（尤其貓小細胞淋巴瘤）可能難以區分
+  - Cobalamin缺乏會影響治療反應，需要補充
+  - German Shepherd的IBD常較嚴重且難治
+  - Basenji的免疫增生性腸病預後較差
+  - 飲食試驗需要嚴格執行才有診斷價值
+  - 全層活檢比內視鏡活檢更能評估深層病變
+monitoringItems:
+  - 體重
+  - CCECAI或FCEAI臨床評分
+  - 白蛋白
+  - Cobalamin
+  - 臨床症狀
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: haematochezia
+    frequency: common
+  - symptomId: flatulence
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: halitosis-stomatitis
+    frequency: common
+ddxSource: book

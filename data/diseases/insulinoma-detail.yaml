@@ -3,14 +3,17 @@ nameEn: Insulinoma Detail
 nameZh: 胰島素瘤詳述
 bodySystem: endocrine
 description: 胰臟 beta 細胞功能性腫瘤，持續分泌過量胰島素導致低血糖。犬較常見，症狀與低血糖嚴重程度相關。手術切除為首選，部分切除後可合併內科管理。
-
 aliases:
-  - { alias: 胰島細胞瘤, language: zh }
-  - { alias: 胰臟 beta 細胞瘤, language: zh }
-  - { alias: Insulinoma, language: en }
-  - { alias: Pancreatic Beta Cell Tumor, language: en }
-  - { alias: Insulin-secreting Tumor, language: en }
-
+  - alias: 胰島細胞瘤
+    language: zh
+  - alias: 胰臟 beta 細胞瘤
+    language: zh
+  - alias: Insulinoma
+    language: en
+  - alias: Pancreatic Beta Cell Tumor
+    language: en
+  - alias: Insulin-secreting Tumor
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓胰島素瘤極少見。臨床表現與犬相似，但診斷經驗及治療資料有限。
-
 etiology:
   categories:
     - name: 病理生理學
@@ -34,7 +36,6 @@ etiology:
         - 區域淋巴結為最常見轉移部位
         - 肝臟轉移常見
         - 確診時約 50% 已有轉移
-
 clinicalSigns:
   early:
     - 間歇性虛弱或無力
@@ -47,71 +48,109 @@ clinicalSigns:
     - 後肢癱瘓（周邊神經病變）
     - 體重增加（胰島素促進合成代謝）
     - 昏迷
-
 diagnosis:
   primaryTests:
     - name: 空腹血糖與胰島素同步測量
-      notes: "低血糖（<60 mg/dL）伴不當升高的胰島素值（正常或升高）為診斷關鍵。修正胰島素比值 (AIGR) 可輔助診斷"
+      notes: 低血糖（<60 mg/dL）伴不當升高的胰島素值（正常或升高）為診斷關鍵。修正胰島素比值 (AIGR) 可輔助診斷
     - name: 腹部超音波
-      notes: "可偵測胰臟腫塊（常 <2 cm，偵測率約 30-75%）。評估肝臟及淋巴結轉移"
+      notes: 可偵測胰臟腫塊（常 <2 cm，偵測率約 30-75%）。評估肝臟及淋巴結轉移
     - name: CT 增強掃描
-      notes: "增強 CT 對小型胰島素瘤的偵測率優於超音波"
+      notes: 增強 CT 對小型胰島素瘤的偵測率優於超音波
   differentialDiagnoses:
     - 肝臟疾病（肝衰竭、肝腫瘤）
     - 腎上腺皮質功能低下症
     - 敗血症
     - 藥物性低血糖
     - 副腫瘤性低血糖（其他腫瘤）
-
 treatment:
   surgical:
     - 胰臟部分切除術為首選
     - 術中仔細探查整個胰臟及腹腔
     - 可見轉移灶儘量切除
   medical:
-    - "少量多餐（高蛋白、低單醣飲食）"
-    - "Prednisone 0.25-0.5 mg/kg PO BID（促進糖質新生）"
-    - "Diazoxide 5-30 mg/kg PO BID（抑制胰島素分泌）"
-    - "Octreotide 10-40 mcg SC BID-TID（生長抑素類似物）"
+    - 少量多餐（高蛋白、低單醣飲食）
+    - Prednisone 0.25-0.5 mg/kg PO BID（促進糖質新生）
+    - Diazoxide 5-30 mg/kg PO BID（抑制胰島素分泌）
+    - Octreotide 10-40 mcg SC BID-TID（生長抑素類似物）
     - 避免長時間禁食及劇烈運動
     - 緊急低血糖時靜注葡萄糖（避免大量 bolus，防止反彈性胰島素釋放）
-
 prognosis:
-  general: "手術切除後中位生存時間約 12-18 個月。僅內科管理約 6-12 個月。無轉移且完全切除者預後最佳（可達 2-3 年）。已轉移者預後較差但內科管理仍可維持生活品質。"
-
+  general: 手術切除後中位生存時間約 12-18 個月。僅內科管理約 6-12 個月。無轉移且完全切除者預後最佳（可達 2-3 年）。已轉移者預後較差但內科管理仍可維持生活品質。
 prevention:
   - 反覆性低血糖發作應系統性排除胰島素瘤
   - 中老年犬出現不明原因虛弱或癲癇應檢測空腹血糖
-
-
 guidelineRefs:
   - sourceOrg: Molecules (Basel, Switzerland)
-    title: The Combination of Whole Cell Lipidomics Analysis and Single Cell Confocal Imaging of Fluidity and Micropolarity Provides Insight into Stress-Induced Lipid Turnover in Subcellular Organelles of Pancreatic Beta Cells.
+    title: >-
+      The Combination of Whole Cell Lipidomics Analysis and Single Cell Confocal Imaging of Fluidity and Micropolarity
+      Provides Insight into Stress-Induced Lipid Turnover in Subcellular Organelles of Pancreatic Beta Cells.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6833103/
     type: review
-    pmid: "31627330"
+    pmid: '31627330'
     relevance: supporting
   - sourceOrg: International journal of molecular sciences
-    title: Optical Nanoscopy of Cytokine-Induced Structural Alterations of the Endoplasmic Reticulum and Golgi Apparatus in Insulin-Secreting Cells.
+    title: >-
+      Optical Nanoscopy of Cytokine-Induced Structural Alterations of the Endoplasmic Reticulum and Golgi Apparatus in
+      Insulin-Secreting Cells.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11476361/
     type: research
-    pmid: "39408721"
+    pmid: '39408721'
     relevance: supporting
   - sourceOrg: Toxicology research
-    title: "Melatonin protects against nonylphenol caused pancreatic &#x3b2;-cells damage through MDM2-P53-P21 axis."
+    title: Melatonin protects against nonylphenol caused pancreatic &#x3b2;-cells damage through MDM2-P53-P21 axis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9244227/
     type: research
-    pmid: "35782637"
+    pmid: '35782637'
     relevance: supporting
   - sourceOrg: Frontiers in physiology
-    title: Single-molecule analysis of intracellular insulin granule behavior and its application to analyzing cytoskeletal dependence and pathophysiological implications.
+    title: >-
+      Single-molecule analysis of intracellular insulin granule behavior and its application to analyzing cytoskeletal
+      dependence and pathophysiological implications.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10731264/
     type: research
-    pmid: "38124716"
+    pmid: '38124716'
     relevance: supporting
-  - sourceOrg: "Molecular &amp; cellular proteomics : MCP"
-    title: Domain Mapping of Chondroitin/Dermatan Sulfate Glycosaminoglycans Enables Structural Characterization of Proteoglycans.
+  - sourceOrg: 'Molecular &amp; cellular proteomics : MCP'
+    title: >-
+      Domain Mapping of Chondroitin/Dermatan Sulfate Glycosaminoglycans Enables Structural Characterization of
+      Proteoglycans.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8724862/
     type: research
-    pmid: "33757834"
+    pmid: '33757834'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-gain
+    frequency: uncommon
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: trembling
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 胰島素瘤詳述 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-gain 相關症狀
+        - paresis-paralysis 相關症狀
+        - ataxia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 空腹血糖與胰島素同步測量
+          notes: 低血糖（<60 mg/dL）伴不當升高的胰島素值（正常或升高）為診斷關鍵。修正胰島素比值 (AIGR) 可輔助診斷
+        - name: 腹部超音波
+          notes: 可偵測胰臟腫塊（常 <2 cm，偵測率約 30-75%）。評估肝臟及淋巴結轉移
+        - name: CT 增強掃描
+          notes: 增強 CT 對小型胰島素瘤的偵測率優於超音波
+ddxSource: auto-generated

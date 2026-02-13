@@ -3,12 +3,13 @@ nameEn: Alcohol Toxicosis
 nameZh: 酒精中毒
 bodySystem: toxicology
 description: 酒精 (ethanol) 中毒常見於犬攝入含酒精飲料、未烘烤的含酵母麵團或含酒精的藥品/漱口水。乙醇迅速吸收引起中樞神經抑制、低血糖與代謝性酸中毒。含酵母麵團在胃內發酵持續產生乙醇，毒性更為嚴重。
-
 aliases:
-  - { alias: 乙醇中毒, language: zh }
-  - { alias: Ethanol Toxicosis, language: en }
-  - { alias: Alcohol Poisoning, language: en }
-
+  - alias: 乙醇中毒
+    language: zh
+  - alias: Ethanol Toxicosis
+    language: en
+  - alias: Alcohol Poisoning
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓酒精中毒較少報告。貓代謝乙醇能力較犬差。含酒精外用消毒劑偶可引起經皮吸收。
-
 etiology:
   categories:
     - name: 常見來源
@@ -31,7 +31,6 @@ etiology:
         - 中樞神經系統抑制
         - 低血糖（抑制糖質新生）
         - 代謝性酸中毒
-
 clinicalSigns:
   early:
     - 嘔吐
@@ -46,7 +45,6 @@ clinicalSigns:
     - 代謝性酸中毒
     - 昏迷
     - 含酵母麵團另可引起胃擴張
-
 diagnosis:
   primaryTests:
     - name: 病史與臨床表現
@@ -57,7 +55,6 @@ diagnosis:
     - 血糖（低血糖常見）
     - 血液氣體（代謝性酸中毒）
     - 腹部 X-ray（含酵母麵團引起胃擴張）
-
 treatment:
   principles:
     - 支持療法為核心
@@ -72,9 +69,57 @@ treatment:
     - 含酵母麵團：冷水洗胃以停止發酵，或手術取出
     - 催吐僅在極早期（<30 分鐘）且意識清醒時考慮
     - 監測至完全清醒
-
 prognosis: 犬酒精中毒適當支持療法下預後良好。輕至中度中毒通常 12-24 小時內恢復。含酵母麵團因胃擴張風險預後稍差。嚴重呼吸抑制或代謝性酸中毒若未治療可能致命。
-
 pubmedQueries:
   - query: '"alcohol toxicosis" OR "ethanol poisoning" AND (veterinary OR canine OR feline)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 酒精中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - ptyalism 相關症狀
+        - hypothermia-sign 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史與臨床表現
+          notes: 確認攝入含酒精物質的種類與量。酒醉樣症狀（共濟失調、嗜睡、嘔吐）
+        - name: 血液乙醇濃度
+          notes: 可定量確認。但多數醫院無法即時測定
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 血糖（低血糖常見）
+        - 血液氣體（代謝性酸中毒）
+        - 腹部 X-ray（含酵母麵團引起胃擴張）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 支持療法為核心
+        - 維持血糖與體溫
+        - 含酵母麵團需考慮胃擴張
+ddxSource: auto-generated

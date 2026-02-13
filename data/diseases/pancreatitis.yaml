@@ -3,12 +3,13 @@ nameEn: Pancreatitis
 nameZh: 胰臟炎
 bodySystem: gastrointestinal
 description: 胰臟自體消化引起的炎症反應，分為急性與慢性。犬以急性為主，貓以慢性居多。
-
 aliases:
-  - { alias: 胰腺炎, language: zh }
-  - { alias: Acute Pancreatitis, language: en }
-  - { alias: Chronic Pancreatitis, language: en }
-
+  - alias: 胰腺炎
+    language: zh
+  - alias: Acute Pancreatitis
+    language: en
+  - alias: Chronic Pancreatitis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 慢性低度胰臟炎較常見。常與 IBD、膽管炎並存 (triaditis)。臨床表現不典型。
-
 etiology:
   categories:
     - name: 犬常見病因
@@ -34,7 +34,6 @@ etiology:
         - 與 IBD/膽管炎相關 (triaditis)
         - 感染性 (弓蟲、FIP)
         - 創傷
-
 clinicalSigns:
   early:
     - 嘔吐 (犬最常見；貓僅約 35%)
@@ -51,21 +50,19 @@ clinicalSigns:
     - DIC
     - 多器官衰竭
     - 休克
-
 diagnosis:
   primaryTests:
     - name: Spec cPL / Spec fPL
-      notes: "物種特異性胰臟脂肪酶，敏感度與特異度最高。犬 >400 μg/L、貓 >5.4 μg/L 提示胰臟炎"
+      notes: 物種特異性胰臟脂肪酶，敏感度與特異度最高。犬 >400 μg/L、貓 >5.4 μg/L 提示胰臟炎
     - name: SNAP cPL / fPL
-      notes: "院內快速測試，陰性預測值高，適合排除診斷"
+      notes: 院內快速測試，陰性預測值高，適合排除診斷
   imaging:
     - name: 腹部超音波
-      notes: "胰臟腫大、低迴音、胰周脂肪高迴音、胰周積液。犬敏感度約 68%，貓較低"
+      notes: 胰臟腫大、低迴音、胰周脂肪高迴音、胰周積液。犬敏感度約 68%，貓較低
   additional:
     - CBC (嗜中性球升高、左移)
     - 生化 (肝指數升高、高膽紅素、電解質異常)
     - 凝血功能 (若懷疑 DIC)
-
 treatment:
   principles:
     - 支持性治療為主
@@ -80,41 +77,117 @@ treatment:
     - 犬：轉換為低脂飲食
     - 貓：治療併存疾病 (IBD、膽管炎)
     - 嚴重壞死性胰臟炎可能需要手術
-
 prognosis: 輕度胰臟炎預後良好。重度壞死性胰臟炎死亡率可達 25-50%。復發率高，尤其有持續風險因子的犬。貓慢性胰臟炎需長期管理。
-
 guidelineRefs:
   - sourceOrg: ACVIM
     title: ACVIM Consensus Statement on Pancreatitis in Cats
     url: https://pubmed.ncbi.nlm.nih.gov/33098171/
     type: consensus
-    pmid: "33098171"
+    pmid: '33098171'
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Letter regarding \"ACVIM consensus statement on pancreatitis in cats\"."
+    title: Letter regarding "ACVIM consensus statement on pancreatitis in cats".
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10800181/
     type: consensus
-    pmid: "38006296"
+    pmid: '38006296'
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Response to letter regarding \"ACVIM consensus statement on pancreatitis in cats\"."
+    title: Response to letter regarding "ACVIM consensus statement on pancreatitis in cats".
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10800204/
     type: consensus
-    pmid: "38032253"
+    pmid: '38032253'
   - sourceOrg: Journal of veterinary internal medicine
     title: ACVIM consensus statement on pancreatitis in cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7995362/
     type: consensus
-    pmid: "33587762"
+    pmid: '33587762'
   - sourceOrg: Journal of veterinary internal medicine
-    title: "ACVIM consensus statement: Support for rational administration of gastrointestinal protectants to dogs and cats."
+    title: 'ACVIM consensus statement: Support for rational administration of gastrointestinal protectants to dogs and cats.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6271318/
     type: consensus
-    pmid: "30378711"
+    pmid: '30378711'
     relevance: primary
 pubmedQueries:
   - query: '"pancreatitis" AND (dog OR cat OR canine OR feline) AND ("consensus" OR "guidelines")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "PANCREATITIS"
+  chapter: DIG
+  sectionTitle: PANCREATITIS
   pdfPage: 448
+diagnosticAlgorithm:
+  title: 胰臟炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 詢問飲食史、嘔吐及腹痛症狀，進行腹部觸診
+      findings:
+        - 上腹部疼痛
+        - 嘔吐
+        - 厭食
+        - 脫水
+    - step: 2
+      action: 血液生化檢查
+      details: 進行CBC、血清生化及胰臟特異性脂肪酶檢測
+      findings:
+        - 犬胰臟特異性脂肪酶（cPLI/Spec cPL）升高
+        - 白血球增多
+        - 肝指數輕度升高
+        - 氮血症
+    - step: 3
+      action: 腹部超音波
+      details: 評估胰臟形態及周圍組織變化
+      findings:
+        - 胰臟腫大、低回音
+        - 胰臟周圍脂肪高回音
+        - 腹腔積液
+        - 十二指腸壁增厚
+    - step: 4
+      action: 鑑別排除
+      details: 排除腸阻塞、異物及其他急腹症
+      findings:
+        - 排除腸道異物
+        - 排除胃擴張扭轉
+        - 排除膽道阻塞
+clinicalPearls:
+  - 貓的胰臟炎症狀通常比犬更隱蔽
+  - 不再建議長期禁食，早期腸內營養有益
+  - 監測並治療併發症（DIC、SIRS、MODS）
+  - 貓常見三體炎（胰臟炎+IBD+膽管炎）
+monitoringItems:
+  - 臨床症狀
+  - 電解質
+  - 疼痛評估
+  - 營養狀態
+  - cPL/fPL追蹤
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: jaundice
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+  - symptomId: hypothermia-sign
+    frequency: common
+associatedLabFindings:
+  - labId: ggt-elevated
+    frequency: uncommon
+  - labId: calcium-low
+    frequency: uncommon
+  - labId: amylase-elevated
+    frequency: common
+  - labId: lipase-elevated
+    frequency: common
+  - labId: cpli-fpli-elevated
+    frequency: common
+  - labId: cpli-fpli-elevated
+    frequency: uncommon
+ddxSource: book

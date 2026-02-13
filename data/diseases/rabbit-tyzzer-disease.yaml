@@ -3,16 +3,15 @@ nameEn: Rabbit Tyzzer Disease
 nameZh: 兔泰澤氏病
 bodySystem: infectious
 description: 由 Clostridium piliforme 引起的急性致死性腸肝疾病，好發於幼兔及免疫低下兔。壓力為重要的觸發因素，斷奶、過度擁擠或運輸後可爆發。
-
 aliases:
-  - { alias: "兔泰澤氏病", language: zh }
-  - { alias: "Rabbit Tyzzer Disease", language: en }
-
+  - alias: 兔泰澤氏病
+    language: zh
+  - alias: Rabbit Tyzzer Disease
+    language: en
 species:
   - speciesCommon: rabbit
     prevalence: uncommon
     notes: 兔可受此疾病影響。
-
 etiology:
   categories:
     - name: 感染性
@@ -25,7 +24,6 @@ etiology:
         - 壓力（斷奶、運輸、過度擁擠）
         - 免疫抑制
         - 不良衛生環境
-
 clinicalSigns:
   early:
     - 突然厭食
@@ -36,14 +34,12 @@ clinicalSigns:
     - 脫水
     - 低體溫
     - 猝死（超急性）
-
 diagnosis:
   primaryTests:
     - name: 屍體剖檢
       notes: 肝臟多發性灰白色壞死灶為特徵。盲腸水腫、出血。
     - name: 組織病理
       notes: 特殊染色（Warthin-Starry 銀染）見胞內菌。PCR 確診。
-
 treatment:
   principles:
     - 急性病例預後極差
@@ -55,17 +51,53 @@ treatment:
     - 積極輸液支持
     - 環境徹底消毒
     - 減少壓力（避免過度擁擠）
-
 prognosis: 急性泰澤氏病死亡率高（>50%）。超急性型常在治療介入前即死亡。慢性型較少見但預後稍佳。預防（減壓、環境衛生）為關鍵。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Unusual Epidemic of Tyzzer's Disease in Commercial Rabbit Breeders: Clinical, Pathological, and Therapeutic Observations."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Unusual Epidemic of Tyzzer's Disease in Commercial Rabbit Breeders: Clinical, Pathological, and Therapeutic
+      Observations.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12524181/
     type: case-report
-    pmid: "41096515"
+    pmid: '41096515'
     relevance: supporting
 pubmedQueries:
   - query: '"Rabbit Tyzzer Disease" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔泰澤氏病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - diarrhoea 相關症狀
+        - hypothermia-sign 相關症狀
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 屍體剖檢
+          notes: 肝臟多發性灰白色壞死灶為特徵。盲腸水腫、出血。
+        - name: 組織病理
+          notes: 特殊染色（Warthin-Starry 銀染）見胞內菌。PCR 確診。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 急性病例預後極差
+        - 支持性治療
+        - 環境消毒與壓力減輕為預防策略
+ddxSource: auto-generated

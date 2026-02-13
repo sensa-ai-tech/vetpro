@@ -3,11 +3,11 @@ nameEn: Insulin Resistance
 nameZh: 胰島素阻抗
 bodySystem: endocrine
 description: 組織對胰島素反應性降低,導致血糖控制不佳,需要更高劑量胰島素才能達到治療效果,常見於肥胖、內分泌疾病或藥物使用。
-
 aliases:
-  - { alias: 胰島素抗性, language: zh }
-  - { alias: Insulin insensitivity, language: en }
-
+  - alias: 胰島素抗性
+    language: zh
+  - alias: Insulin insensitivity
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 肥胖貓極常見,是第二型糖尿病主要病理機制
-
 etiology:
   categories:
     - name: 內分泌疾病
@@ -41,7 +40,6 @@ etiology:
         - 慢性胰臟炎
         - 感染或發炎性疾病
         - 胰島澱粉樣沉積(貓)
-
 clinicalSigns:
   early:
     - 糖尿病控制不良(血糖持續>250 mg/dL)
@@ -51,21 +49,19 @@ clinicalSigns:
     - 體重增加或難以減重
     - 反覆低血糖事件(高劑量胰島素)
     - 併發疾病症狀(如庫興氏症的腹部膨大、多渴多尿)
-
 diagnosis:
   primaryTests:
     - name: 血糖曲線
-      notes: "胰島素注射後血糖下降幅度小,最低點仍>150-200 mg/dL"
+      notes: 胰島素注射後血糖下降幅度小,最低點仍>150-200 mg/dL
     - name: 內分泌功能檢查
-      notes: "ACTH刺激試驗(庫興氏症)、IGF-1(肢端肥大症)、T4(甲狀腺)"
+      notes: ACTH刺激試驗(庫興氏症)、IGF-1(肢端肥大症)、T4(甲狀腺)
     - name: 果糖胺
-      notes: "持續升高(>500 μmol/L)顯示長期血糖控制不佳"
+      notes: 持續升高(>500 μmol/L)顯示長期血糖控制不佳
   differentialDiagnoses:
     - 胰島素注射技術不當或失效
     - 索莫吉效應(反彈性高血糖)
     - 胰島素抗體形成
     - 併發感染或發炎
-
 treatment:
   medical:
     - 治療原發性內分泌疾病(Trilostane 用於庫興氏症, Methimazole 用於甲狀腺亢進)
@@ -75,45 +71,71 @@ treatment:
     - 增加胰島素劑量(謹慎調整,監測低血糖)
     - 口服降血糖藥輔助(貓可考慮Glipizide 2.5 mg PO BID)
     - 治療併發感染(抗生素)
-
 prognosis:
-  general: "若能找出並治療原發病因(如庫興氏症、肥胖),胰島素阻抗可改善;無法矯正原因者需持續高劑量胰島素治療,預後保守。"
-
+  general: 若能找出並治療原發病因(如庫興氏症、肥胖),胰島素阻抗可改善;無法矯正原因者需持續高劑量胰島素治療,預後保守。
 prevention:
   - 維持理想體重,避免肥胖
   - 避免長期使用糖皮質激素
   - 早期診斷並治療內分泌疾病
   - 定期監測糖尿病控制狀況
-
-
 guidelineRefs:
   - sourceOrg: European stroke journal
-    title: European Stroke Organisation (ESO) guideline on pharmacological interventions for long-term secondary prevention after ischaemic stroke or transient ischaemic attack.
+    title: >-
+      European Stroke Organisation (ESO) guideline on pharmacological interventions for long-term secondary prevention
+      after ischaemic stroke or transient ischaemic attack.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9446324/
     type: guideline
-    pmid: "36082250"
+    pmid: '36082250'
     relevance: primary
   - sourceOrg: Life (Basel, Switzerland)
-    title: "Systematic Review: Exploring Inter-Species Variability in Diabetes Mellitus for Translational Medicine."
+    title: 'Systematic Review: Exploring Inter-Species Variability in Diabetes Mellitus for Translational Medicine.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12843455/
     type: review
-    pmid: "41598218"
+    pmid: '41598218'
     relevance: primary
   - sourceOrg: Frontiers in nutrition
-    title: "Full-fat dairy products and cardiometabolic health outcomes: Does the dairy-fat matrix matter?"
+    title: 'Full-fat dairy products and cardiometabolic health outcomes: Does the dairy-fat matrix matter?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11317386/
     type: review
-    pmid: "39135556"
+    pmid: '39135556'
     relevance: primary
   - sourceOrg: Antioxidants (Basel, Switzerland)
-    title: "Ginkgo biloba in the Aging Process: A Narrative Review."
+    title: 'Ginkgo biloba in the Aging Process: A Narrative Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8944638/
     type: review
-    pmid: "35326176"
+    pmid: '35326176'
     relevance: primary
   - sourceOrg: Veterinary medicine (Auckland, N.Z.)
-    title: "Managing feline diabetes: current perspectives."
+    title: 'Managing feline diabetes: current perspectives.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6053045/
     type: review
-    pmid: "30050865"
+    pmid: '30050865'
     relevance: primary
+associatedSymptoms:
+  - symptomId: weight-gain
+    frequency: uncommon
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+diagnosticAlgorithm:
+  title: 胰島素阻抗 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-gain 相關症狀
+        - abdominal-distension 相關症狀
+        - polyuria-polydipsia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血糖曲線
+          notes: 胰島素注射後血糖下降幅度小,最低點仍>150-200 mg/dL
+        - name: 內分泌功能檢查
+          notes: ACTH刺激試驗(庫興氏症)、IGF-1(肢端肥大症)、T4(甲狀腺)
+        - name: 果糖胺
+          notes: 持續升高(>500 μmol/L)顯示長期血糖控制不佳
+ddxSource: auto-generated

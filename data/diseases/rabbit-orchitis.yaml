@@ -3,16 +3,15 @@ nameEn: Rabbit Orchitis
 nameZh: 兔睪丸炎
 bodySystem: reproductive
 description: 兔睪丸的炎症或感染，多由 Pasteurella 或 Treponema（兔梅毒）引起。未絕育公兔可能發生，表現為陰囊腫脹、疼痛及繁殖功能下降。
-
 aliases:
-  - { alias: "兔睪丸炎", language: zh }
-  - { alias: "Rabbit Orchitis", language: en }
-
+  - alias: 兔睪丸炎
+    language: zh
+  - alias: Rabbit Orchitis
+    language: en
 species:
   - speciesCommon: rabbit
     prevalence: uncommon
     notes: 兔可受此疾病影響。
-
 etiology:
   categories:
     - name: 感染性
@@ -20,7 +19,6 @@ etiology:
         - Pasteurella multocida
         - Treponema cuniculi（兔梅毒）
         - 外傷後繼發感染
-
 clinicalSigns:
   early:
     - 單側或雙側陰囊腫脹
@@ -32,14 +30,12 @@ clinicalSigns:
     - 皮膚潰瘍
     - 厭食
     - 發燒
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 陰囊觸診評估腫脹程度、溫度及疼痛反應。
     - name: 超音波
       notes: 評估睪丸實質是否有膿瘍或腫瘤。
-
 treatment:
   principles:
     - 抗生素治療感染
@@ -50,9 +46,37 @@ treatment:
     - 絕育手術（去勢）為根治選擇
     - 止痛管理
     - Treponema 感染：Penicillin G 注射
-
 prognosis: 去勢後預後良好。保守抗生素治療可控制輕度感染但可能復發。睪丸腫瘤需去勢後病理確認。
-
 pubmedQueries:
   - query: '"Rabbit Orchitis" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔睪丸炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 陰囊觸診評估腫脹程度、溫度及疼痛反應。
+        - name: 超音波
+          notes: 評估睪丸實質是否有膿瘍或腫瘤。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 抗生素治療感染
+        - 嚴重者絕育
+        - 排除腫瘤
+ddxSource: auto-generated

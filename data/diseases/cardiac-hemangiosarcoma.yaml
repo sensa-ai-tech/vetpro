@@ -2,13 +2,16 @@ slug: cardiac-hemangiosarcoma
 nameEn: Cardiac Hemangiosarcoma
 nameZh: 心臟血管肉瘤
 bodySystem: oncology
-description: 心臟血管肉瘤（cardiac HSA）為犬隻最常見的原發性心臟腫瘤，起源於血管內皮細胞，最常侵犯右心耳（right auricular appendage）。腫瘤生長迅速且高度惡性，常伴隨心包積液與心包填塞。轉移率極高（>90%），確診時多數已發生遠處轉移。
-
+description: >-
+  心臟血管肉瘤（cardiac HSA）為犬隻最常見的原發性心臟腫瘤，起源於血管內皮細胞，最常侵犯右心耳（right auricular
+  appendage）。腫瘤生長迅速且高度惡性，常伴隨心包積液與心包填塞。轉移率極高（>90%），確診時多數已發生遠處轉移。
 aliases:
-  - { alias: Cardiac HSA, language: en }
-  - { alias: 心臟血管肉瘤, language: zh }
-  - { alias: Right Atrial Hemangiosarcoma, language: en }
-
+  - alias: Cardiac HSA
+    language: en
+  - alias: 心臟血管肉瘤
+    language: zh
+  - alias: Right Atrial Hemangiosarcoma
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻心臟血管肉瘤極為罕見。
-
 etiology:
   categories:
     - name: 腫瘤特性
@@ -29,7 +31,6 @@ etiology:
         - 品種傾向（German Shepherd、Golden Retriever）
         - 中老年犬
         - 可能與紫外線暴露相關（皮膚型）
-
 clinicalSigns:
   early:
     - 急性虛脫（心包填塞）
@@ -42,14 +43,12 @@ clinicalSigns:
     - 呼吸困難
     - 心律不整
     - 突然死亡（腫瘤破裂大量出血）
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波（Echocardiography）
       notes: 可見右心耳或右心房壁的低至中回聲腫塊，伴心包積液。評估腫塊大小、是否侵犯心肌。心包積液引流後更容易觀察腫塊。
     - name: 腹部超音波
       notes: 評估脾臟、肝臟轉移病灶。犬隻血管肉瘤常為多中心性（心臟 + 脾臟 + 肝臟）。
-
 treatment:
   principles:
     - 預後極差，治療以延長生存時間與改善生活品質為目標
@@ -58,19 +57,59 @@ treatment:
   general:
     - 緊急心包穿刺引流（pericardiocentesis）
     - 心包切除術 ± 右心耳腫塊切除（若可行）
-    - "化療方案：Doxorubicin 30 mg/m² IV q3w × 5 cycles"
-    - "Doxorubicin + Cyclophosphamide 交替方案"
+    - 化療方案：Doxorubicin 30 mg/m² IV q3w × 5 cycles
+    - Doxorubicin + Cyclophosphamide 交替方案
     - 酪胺酸激酶抑制劑（Toceranib）可考慮為輔助治療
-
 prognosis: 預後極差。僅心包穿刺引流的中位存活時間約 1-2 個月。手術切除加化療的中位存活時間約 4-6 個月。心包切除術可防止反覆心包填塞。確診時 >90% 已有轉移。右心耳以外位置的心臟腫塊預後更差。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary and comparative oncology
-    title: Retrospective Study Evaluating Outcomes Following Palliative Radiotherapy With or Without Chemotherapy for Dogs With Presumed Cardiac Hemangiosarcoma.
+    title: >-
+      Retrospective Study Evaluating Outcomes Following Palliative Radiotherapy With or Without Chemotherapy for Dogs
+      With Presumed Cardiac Hemangiosarcoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12378083/
     type: research
-    pmid: "40443234"
+    pmid: '40443234'
 pubmedQueries:
   - query: '"cardiac hemangiosarcoma" AND (veterinary OR canine) AND ("treatment" OR "prognosis" OR "chemotherapy")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 心臟血管肉瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - abdominal-distension 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波（Echocardiography）
+          notes: 可見右心耳或右心房壁的低至中回聲腫塊，伴心包積液。評估腫塊大小、是否侵犯心肌。心包積液引流後更容易觀察腫塊。
+        - name: 腹部超音波
+          notes: 評估脾臟、肝臟轉移病灶。犬隻血管肉瘤常為多中心性（心臟 + 脾臟 + 肝臟）。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 預後極差，治療以延長生存時間與改善生活品質為目標
+        - 手術切除 ± 化療
+        - 心包切除術可改善心包填塞復發
+ddxSource: auto-generated

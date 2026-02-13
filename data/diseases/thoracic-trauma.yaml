@@ -3,12 +3,13 @@ nameEn: Thoracic Trauma
 nameZh: 胸部創傷
 bodySystem: emergency
 description: 胸部創傷包括鈍性（車禍、踢傷）與穿透性（咬傷、異物）胸部損傷，可導致氣胸、血胸、肺挫傷、連枷胸與膈疝。為創傷犬貓的主要死因之一。初始穩定需遵循 ABC 原則，胸腔穿刺為緊急介入。
-
 aliases:
-  - { alias: 胸腔外傷, language: zh }
-  - { alias: Chest Trauma, language: en }
-  - { alias: Thoracic Injury, language: en }
-
+  - alias: 胸腔外傷
+    language: zh
+  - alias: Chest Trauma
+    language: en
+  - alias: Thoracic Injury
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓胸部創傷常見於高處墜落與車禍。貓較犬更易發生膈疝。氣胸在貓亦常見。
-
 etiology:
   categories:
     - name: 鈍性損傷
@@ -34,7 +34,6 @@ etiology:
         - 膈疝 (diaphragmatic hernia)
         - 肋骨骨折
         - 心臟挫傷
-
 clinicalSigns:
   early:
     - 呼吸困難（最常見主訴）
@@ -47,7 +46,6 @@ clinicalSigns:
     - 腹部器官移位至胸腔（膈疝）
     - 心律不整（心臟挫傷）
     - 休克
-
 diagnosis:
   primaryTests:
     - name: 胸部 X-ray
@@ -59,7 +57,6 @@ diagnosis:
     - 心電圖（心臟挫傷→心律不整）
     - 心肌 troponin I
     - CT（複雜損傷詳細評估）
-
 treatment:
   principles:
     - ABC 穩定
@@ -75,41 +72,84 @@ treatment:
     - 連枷胸：止痛（肋間神經阻斷）+ 氧氣
     - 開放性傷口：三面貼紮封閉
     - 止痛（opioids、局部阻斷）
-
 prognosis: 胸部創傷整體存活率約 60-80%。單純氣胸預後佳。肺挫傷多數 3-5 天改善。膈疝手術修補預後佳（慢性較急性佳）。大量血胸合併休克預後較差。
-
-
 guidelineRefs:
   - sourceOrg: Journal of translational medicine
-    title: "Modeling trauma in rats: similarities to humans and potential pitfalls to consider."
+    title: 'Modeling trauma in rats: similarities to humans and potential pitfalls to consider.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6728963/
     type: review
-    pmid: "31488164"
+    pmid: '31488164'
     relevance: supporting
   - sourceOrg: Open veterinary journal
-    title: "Autologous blood patch pleurodesis treatment for persistent pneumothorax: A case series of five dogs (2016-2020)."
+    title: 'Autologous blood patch pleurodesis treatment for persistent pneumothorax: A case series of five dogs (2016-2020).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8288745/
     type: case-report
-    pmid: "34307086"
+    pmid: '34307086'
     relevance: supporting
   - sourceOrg: Medicina (Kaunas, Lithuania)
     title: Effects of Bosentan on Hypoxia, Inflammation and Oxidative Stress in Experimental Blunt Thoracic Trauma Model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11278988/
     type: research
-    pmid: "39064577"
+    pmid: '39064577'
     relevance: supporting
   - sourceOrg: Turk gogus kalp damar cerrahisi dergisi
-    title: "The effect of rutin on pulmonary contusion induced by blunt trauma in rats: Biochemical and histopathological evaluation."
+    title: >-
+      The effect of rutin on pulmonary contusion induced by blunt trauma in rats: Biochemical and histopathological
+      evaluation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9580287/
     type: research
-    pmid: "36303692"
+    pmid: '36303692'
     relevance: supporting
   - sourceOrg: Bulletin of experimental biology and medicine
-    title: Chronic Effects of Modeled Myocardial Infarction, Thoracic Trauma, and Denervation of Hind Limb on Rheographic Parameters of Rat Femoral Arteries In Situ.
+    title: >-
+      Chronic Effects of Modeled Myocardial Infarction, Thoracic Trauma, and Denervation of Hind Limb on Rheographic
+      Parameters of Rat Femoral Arteries In Situ.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9288922/
     type: research
-    pmid: "35844022"
+    pmid: '35844022'
     relevance: supporting
 pubmedQueries:
   - query: '"thoracic trauma" AND (veterinary OR canine OR feline) AND ("treatment" OR "pneumothorax" OR "emergency")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: common
+diagnosticAlgorithm:
+  title: 胸部創傷 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - dehydration 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸部 X-ray
+          notes: 氣胸（肺葉塌陷、心臟上抬）、血胸（液體線）、肺挫傷（肺泡型態）、膈疝
+        - name: TFAST 超音波
+          notes: 快速評估胸腔液體、氣胸（滑動征消失）、心包液
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 動脈血氣
+        - 心電圖（心臟挫傷→心律不整）
+        - 心肌 troponin I
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - ABC 穩定
+        - 緊急胸腔減壓（氣胸、血胸）
+        - 氧氣補充
+ddxSource: auto-generated

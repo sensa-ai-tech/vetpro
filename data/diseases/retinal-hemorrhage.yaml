@@ -3,13 +3,15 @@ nameEn: Retinal Hemorrhage
 nameZh: 視網膜出血
 bodySystem: ophthalmology
 description: 視網膜血管破裂導致血液滲入視網膜各層的病理表現。非獨立疾病，而是全身性疾病 (高血壓、血液疾病、凝血異常) 或眼內疾病的重要徵象。發現視網膜出血需積極排查全身性原因。
-
 aliases:
-  - { alias: Retinal Bleeding, language: en }
-  - { alias: Fundus Hemorrhage, language: en }
-  - { alias: 眼底出血, language: zh }
-  - { alias: 視網膜血管出血, language: zh }
-
+  - alias: Retinal Bleeding
+    language: en
+  - alias: Fundus Hemorrhage
+    language: en
+  - alias: 眼底出血
+    language: zh
+  - alias: 視網膜血管出血
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓最常見原因為全身性高血壓 (繼發於 CKD 或甲亢)。
-
 etiology:
   categories:
     - name: 全身性高血壓
@@ -35,7 +36,6 @@ etiology:
         - 血管炎
         - 高黏稠度症候群 (多發性骨髓瘤)
         - 外傷
-
 clinicalSigns:
   early:
     - 可能無明顯外觀異常
@@ -44,7 +44,6 @@ clinicalSigns:
     - 突然失明 (大量出血或視網膜剝離)
     - 瞳孔散大
     - 眼底可見各形態出血灶
-
 diagnosis:
   primaryTests:
     - name: 間接眼底鏡檢查
@@ -53,7 +52,6 @@ diagnosis:
       notes: 排除高血壓 (systolic > 160 mmHg)。貓高血壓視網膜病變極為常見
     - name: CBC + 凝血功能
       notes: 排除血小板減少、貧血、凝血異常
-
 treatment:
   principles:
     - 治療根本原因為首要
@@ -63,41 +61,73 @@ treatment:
     - 血小板減少：免疫抑制治療
     - 凝血異常：Vitamin K1 (抗凝血劑中毒)
     - 定期眼底追蹤
-
 prognosis: 取決於根本原因與視網膜損傷程度。高血壓控制後輕度出血可吸收。視網膜剝離或大量出血者視力恢復不佳。早期辨識與治療根本原因可保留視力。
-
-
 guidelineRefs:
   - sourceOrg: Asian journal of neurosurgery
     title: Autonomic Dysreflexia following Spinal Cord Injury.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9473833/
     type: review
-    pmid: "36120615"
+    pmid: '36120615'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
-    title: "Case report: Evaluation of head trauma in a tawny owl (Strix aluco) with advanced imaging diagnostic, FVEP and BAER test."
+    title: >-
+      Case report: Evaluation of head trauma in a tawny owl (Strix aluco) with advanced imaging diagnostic, FVEP and
+      BAER test.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11374603/
     type: case-report
-    pmid: "39239386"
+    pmid: '39239386'
     relevance: supporting
   - sourceOrg: American journal of ophthalmology case reports
-    title: "Sub-internal limiting membrane hemorrhage associated with Weil's disease."
+    title: Sub-internal limiting membrane hemorrhage associated with Weil's disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6732731/
     type: case-report
-    pmid: "31517138"
+    pmid: '31517138'
     relevance: supporting
   - sourceOrg: International journal of ophthalmology
-    title: Characterization and validation of a chronic retinal neovascularization rabbit model by evaluating the efficacy of anti-angiogenic and anti-inflammatory drugs.
+    title: >-
+      Characterization and validation of a chronic retinal neovascularization rabbit model by evaluating the efficacy of
+      anti-angiogenic and anti-inflammatory drugs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8720349/
     type: research
-    pmid: "35047351"
+    pmid: '35047351'
     relevance: supporting
   - sourceOrg: Experimental eye research
     title: Retinal safety evaluation of photoacoustic microscopy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8018531/
     type: research
-    pmid: "33242491"
+    pmid: '33242491'
     relevance: supporting
 pubmedQueries:
   - query: '"retinal hemorrhage" AND (veterinary OR canine OR feline) AND ("hypertension" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: mydriasis
+    frequency: uncommon
+  - symptomId: blindness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 視網膜出血 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - mydriasis 相關症狀
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 間接眼底鏡檢查
+          notes: 視網膜出血分類：點狀、火焰狀、片狀、視網膜前或視網膜下出血
+        - name: 血壓測量
+          notes: 排除高血壓 (systolic > 160 mmHg)。貓高血壓視網膜病變極為常見
+        - name: CBC + 凝血功能
+          notes: 排除血小板減少、貧血、凝血異常
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療根本原因為首要
+        - 控制血壓保護眼底
+ddxSource: auto-generated

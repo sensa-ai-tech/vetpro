@@ -3,17 +3,16 @@ nameEn: Somali Cat Retinal Degeneration
 nameZh: 索馬利貓視網膜退化
 bodySystem: ophthalmology
 description: 索馬利貓與阿比西尼亞貓共有的遺傳性視網膜退化(CEP290基因突變)。光受體細胞逐漸退化,最終失明,體染色體隱性遺傳。
-
 aliases:
-  - { alias: PRA, language: en }
-  - { alias: 進行性視網膜萎縮, language: zh }
-
+  - alias: PRA
+    language: en
+  - alias: 進行性視網膜萎縮
+    language: zh
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 索馬利貓、阿比西尼亞貓,體染色體隱性遺傳
-
 etiology:
   categories:
     - name: 遺傳性視網膜疾病
@@ -21,7 +20,6 @@ etiology:
         - CEP290基因突變
         - 光受體細胞退化
         - 體染色體隱性遺傳
-
 clinicalSigns:
   early:
     - 夜盲(1.5-2歲)
@@ -31,28 +29,46 @@ clinicalSigns:
     - 白天視力逐漸喪失
     - 完全失明(3-5歲)
     - 適應環境
-
 diagnosis:
   primaryTests:
     - name: 眼底鏡檢查
-      notes: "視網膜血管衰減、視網膜反光增強"
+      notes: 視網膜血管衰減、視網膜反光增強
     - name: 視網膜電圖(ERG)
-      notes: "光反應減弱或消失"
+      notes: 光反應減弱或消失
     - name: CEP290基因檢測
-      notes: "確診及繁殖篩檢"
+      notes: 確診及繁殖篩檢
   differentialDiagnoses:
     - 牛磺酸缺乏
     - 高血壓性視網膜病變
-
 treatment:
   medical:
     - 無治癒方法
     - 環境調整
     - 抗氧化補充劑(證據有限)
-
 prognosis:
-  general: "進行性失明,但貓隻可適應並維持良好生活品質。不影響壽命。"
-
+  general: 進行性失明,但貓隻可適應並維持良好生活品質。不影響壽命。
 prevention:
   - 繁殖前基因檢測
   - 帶因者不應繁殖
+associatedSymptoms:
+  - symptomId: blindness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 索馬利貓視網膜退化 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 眼底鏡檢查
+          notes: 視網膜血管衰減、視網膜反光增強
+        - name: 視網膜電圖(ERG)
+          notes: 光反應減弱或消失
+        - name: CEP290基因檢測
+          notes: 確診及繁殖篩檢
+ddxSource: auto-generated

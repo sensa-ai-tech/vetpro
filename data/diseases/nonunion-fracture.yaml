@@ -3,11 +3,11 @@ nameEn: Nonunion Fracture
 nameZh: Nonunion Fracture
 bodySystem: orthopedic
 description: 骨折,骨骼完整性中斷。需評估骨折類型、穩定性與是否有神經血管損傷,決定保守或手術治療。
-
 aliases:
-  - { alias: Nonunion Fracture, language: zh }
-  - { alias: Nonunion Fracture, language: en }
-
+  - alias: Nonunion Fracture
+    language: zh
+  - alias: Nonunion Fracture
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 外傷
       examples:
         - 退化性變化
         - 先天性異常
-
 clinicalSigns:
   early:
     - 跛行
@@ -32,61 +30,84 @@ clinicalSigns:
   progressive:
     - 肌肉萎縮
     - 關節畸形
-
 diagnosis:
   primaryTests:
     - name: 骨科檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: X光(多方位)
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 非類固醇消炎藥(Carprofen 2-4 mg/kg PO q12-24h)
     - 疼痛控制
   surgical:
     - name: 根據病況可能需手術治療(骨折固定、韌帶重建、關節置換等)
-      notes: "依病況評估"
-
+      notes: 依病況評估
 prognosis:
-  general: "預後取決於損傷嚴重度、治療方式與飼主配合度。早期適當治療可改善功能恢復。"
-
+  general: 預後取決於損傷嚴重度、治療方式與飼主配合度。早期適當治療可改善功能恢復。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: In vivo (Athens, Greece)
-    title: Surgical Reconstruction of Canine Nonunion Fractures Using Bone Morphogenetic Protein-2-loaded Alginate Microbeads and Bone Allografts.
+    title: >-
+      Surgical Reconstruction of Canine Nonunion Fractures Using Bone Morphogenetic Protein-2-loaded Alginate Microbeads
+      and Bone Allografts.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10905487/
     type: case-report
-    pmid: "38418118"
+    pmid: '38418118'
     relevance: supporting
   - sourceOrg: Journal of orthopaedic surgery and research
     title: Bone marrow mesenchymal stem cell exosomes improve fracture union via remodeling metabolism in nonunion rat model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11934688/
     type: research
-    pmid: "40128748"
+    pmid: '40128748'
     relevance: supporting
   - sourceOrg: Regenerative medicine
-    title: CGRP promotes osteogenic differentiation by regulating macrophage M2 polarization through HDAC6/AKAP12 signaling pathway.
+    title: >-
+      CGRP promotes osteogenic differentiation by regulating macrophage M2 polarization through HDAC6/AKAP12 signaling
+      pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11370908/
     type: research
-    pmid: "39072399"
+    pmid: '39072399'
     relevance: supporting
   - sourceOrg: Journal of pain research
-    title: Increased Calcitonin Gene-Related Peptide Expression in DRG and Nerve Fibers Proliferation Caused by Nonunion Fracture in Rats.
+    title: >-
+      Increased Calcitonin Gene-Related Peptide Expression in DRG and Nerve Fibers Proliferation Caused by Nonunion
+      Fracture in Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8604636/
     type: research
-    pmid: "34815709"
+    pmid: '34815709'
     relevance: supporting
   - sourceOrg: Clinical orthopaedics and related research
     title: Vascularized Periosteal Flaps Accelerate Osteointegration and Revascularization of Allografts in Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6437352/
     type: research
-    pmid: "30810538"
+    pmid: '30810538'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: Nonunion Fracture 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cachexia-muscle-wasting 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 骨科檢查
+          notes: 需詳細評估
+        - name: X光(多方位)
+          notes: 協助確診
+ddxSource: auto-generated

@@ -3,13 +3,15 @@ nameEn: Gastric Dilatation-Volvulus
 nameZh: 胃擴張扭轉
 bodySystem: gastrointestinal
 description: 胃急性擴張並沿腸繫膜軸扭轉的外科急症，好發於大型深胸犬，未治療致死率極高。
-
 aliases:
-  - { alias: GDV, language: en }
-  - { alias: Bloat, language: en }
-  - { alias: Gastric Torsion, language: en }
-  - { alias: 胃扭轉, language: zh }
-
+  - alias: GDV
+    language: en
+  - alias: Bloat
+    language: en
+  - alias: Gastric Torsion
+    language: en
+  - alias: 胃扭轉
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 極罕見。
-
 etiology:
   categories:
     - name: 解剖/體型因素
@@ -41,7 +42,6 @@ etiology:
         - 焦慮型氣質
         - 一等親有 GDV 病史
         - 脾臟切除後 (爭議性)
-
 clinicalSigns:
   early:
     - 焦躁不安
@@ -61,16 +61,15 @@ clinicalSigns:
     - 胃壁壞死
     - 脾臟扭轉/梗塞
     - 多器官衰竭
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
-      notes: "腹部膨脹、叩診鼓音、非生產性嘔吐三聯徵。休克徵兆評估"
+      notes: 腹部膨脹、叩診鼓音、非生產性嘔吐三聯徵。休克徵兆評估
     - name: 腹部 X 光 (右側躺)
-      notes: "經典 double bubble sign / shelf sign / compartmentalization。扭轉時幽門移位至背側"
+      notes: 經典 double bubble sign / shelf sign / compartmentalization。扭轉時幽門移位至背側
   imaging:
     - name: 腹部 X 光
-      notes: "右側臥位最佳。評估胃擴張程度、是否扭轉、有無游離腹腔氣體 (胃穿孔)"
+      notes: 右側臥位最佳。評估胃擴張程度、是否扭轉、有無游離腹腔氣體 (胃穿孔)
   additional:
     - 乳酸 (>6 mmol/L 提示胃壁壞死風險高)
     - 血液氣體 (代謝性酸中毒)
@@ -78,7 +77,6 @@ diagnosis:
     - CBC/生化 (基線)
     - 凝血功能 (DIC 評估)
     - ECG (心律不整監測，術前/術中/術後)
-
 treatment:
   principles:
     - 此為外科急症，穩定後盡快手術
@@ -87,16 +85,16 @@ treatment:
     - 手術復位 + 胃固定術
   medications:
     - name: IV 晶體液 (LRS)
-      dose: "休克劑量 60-90 mL/kg/hr (犬)，快速靜脈通路 (雙靜脈管路)"
+      dose: 休克劑量 60-90 mL/kg/hr (犬)，快速靜脈通路 (雙靜脈管路)
       notes: 積極容量復甦。考慮膠體液 (HES 或 plasma)
     - name: Lidocaine
-      dose: "2 mg/kg IV bolus，後 CRI 25-80 μg/kg/min"
+      dose: 2 mg/kg IV bolus，後 CRI 25-80 μg/kg/min
       notes: 術後心室性心律不整首選。抗心律不整 + 止痛 + 抗炎
     - name: Methadone / Fentanyl
-      dose: "Methadone 0.2-0.5 mg/kg IV；Fentanyl CRI 2-5 μg/kg/hr"
+      dose: Methadone 0.2-0.5 mg/kg IV；Fentanyl CRI 2-5 μg/kg/hr
       notes: 止痛
     - name: Maropitant
-      dose: "1 mg/kg IV"
+      dose: 1 mg/kg IV
       notes: 止吐
   general:
     - 胃減壓 (18G 針頭 trocar 右側肋骨後方 或 口胃管)
@@ -105,17 +103,15 @@ treatment:
     - 術後心律不整監測 48-72 hr (VPCs 高峰在 12-36 hr 後)
     - 術後逐漸恢復口服攝食
     - 預防性胃固定術：高風險品種可在絕育手術時同時進行
-
-emergencyNotes: GDV 為真正的急診，延遲治療致死率極高。到院立即進行休克復甦 (雙靜脈管路、shock rate fluids)，同時胃減壓 (trocar 或胃管)。乳酸 >6 mmol/L 強烈提示胃壁壞死，術中評估存活度。術後 VPCs：Lidocaine bolus + CRI。R-on-T 現象需立即處理。
-
+emergencyNotes: >-
+  GDV 為真正的急診，延遲治療致死率極高。到院立即進行休克復甦 (雙靜脈管路、shock rate fluids)，同時胃減壓 (trocar 或胃管)。乳酸 >6 mmol/L 強烈提示胃壁壞死，術中評估存活度。術後
+  VPCs：Lidocaine bolus + CRI。R-on-T 現象需立即處理。
 prognosis: 總死亡率約 15-33% (含術中及術後)。無胃壁壞死存活率 >90%。需部分胃切除者死亡率升至 28-38%。脾臟切除不影響預後。未行胃固定術復發率 >75%。預防性胃固定術幾乎可完全預防扭轉。
-
 ontologyMappings:
   - source: MONDO
-    code: "MONDO:0001956"
+    code: MONDO:0001956
     label: gastric volvulus
     confidence: exact
-
 guidelineRefs:
   - sourceOrg: ACVS
     title: ACVS — Gastric Dilatation-Volvulus
@@ -125,30 +121,105 @@ guidelineRefs:
     title: Gastric dilatation-volvulus in dogs.
     url: https://pubmed.ncbi.nlm.nih.gov/8063591/
     type: review
-    pmid: "8063591"
+    pmid: '8063591'
   - sourceOrg: Frontiers in veterinary science
-    title: "Comparison of etiology and outcome of dogs undergoing cardiopulmonary resuscitation with different conformation: the Shepherd versus the Bulldog."
+    title: >-
+      Comparison of etiology and outcome of dogs undergoing cardiopulmonary resuscitation with different conformation:
+      the Shepherd versus the Bulldog.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12425984/
     type: research
-    pmid: "40948617"
+    pmid: '40948617'
     relevance: supporting
   - sourceOrg: Canine genetics and epidemiology
     title: Correlation of neuter status and expression of heritable disorders.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5445488/
     type: research
-    pmid: "28560045"
+    pmid: '28560045'
     relevance: supporting
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: Perioperative characteristics and long-term outcomes following prophylactic total laparoscopic gastropexy using a novel knotless tissue control device in 44 dogs.
+    title: >-
+      Perioperative characteristics and long-term outcomes following prophylactic total laparoscopic gastropexy using a
+      novel knotless tissue control device in 44 dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10286145/
     type: research
-    pmid: "37397695"
+    pmid: '37397695'
     relevance: supporting
 pubmedQueries:
   - query: '"gastric dilatation volvulus" AND dog AND ("gastropexy" OR "treatment" OR "prognosis")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "Clinical Findings: Several bloated pigs in"
+  chapter: DIG
+  sectionTitle: 'Clinical Findings: Several bloated pigs in'
   pdfPage: 341
+diagnosticAlgorithm:
+  title: 胃擴張扭轉 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 緊急評估腹部膨脹與休克徵象
+      findings:
+        - 急性腹部膨脹
+        - 非生產性乾嘔
+        - 腹部觸診鼓音
+        - 休克徵象（心搏過速、蒼白黏膜）
+    - step: 2
+      action: 影像確認
+      details: 腹部X光右側臥位
+      findings:
+        - 胃擴張含氣
+        - 雙泡徵（double bubble sign）
+        - 脾臟位移
+        - 排除單純胃擴張
+    - step: 3
+      action: 穩定與減壓
+      details: 緊急液體復甦與胃減壓
+      findings:
+        - 大口徑靜脈導管輸液
+        - 胃管或穿刺減壓
+        - 心電圖監測（心室心律不整）
+        - 電解質與乳酸監測
+    - step: 4
+      action: 手術治療
+      details: 剖腹探查與固定術
+      findings:
+        - 胃復位與評估存活性
+        - 脾臟評估（可能需切除）
+        - 胃固定術預防復發
+        - 術後48小時心律監測
+clinicalPearls:
+  - 「時間就是胃壁」- 延遲手術增加壞死風險
+  - Great Dane終生GDV風險約40%
+  - 預防性胃固定術可考慮於高風險犬（如絕育時同時進行）
+  - 術後心律不整（室性早搏、室速）常見，峰值在12-72小時
+  - 乳酸是良好的預後指標
+  - 右側臥X光最能顯示「雙氣泡」征
+monitoringItems:
+  - ECG（持續監測48-72小時）
+  - 乳酸
+  - 電解質（尤其鉀）
+  - 血壓
+  - 尿量
+  - 傷口/腹部
+associatedSymptoms:
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: abdominal-distension
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

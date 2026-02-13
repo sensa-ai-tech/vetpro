@@ -3,14 +3,17 @@ nameEn: Lead Toxicosis
 nameZh: 鉛中毒
 bodySystem: toxicology
 description: 攝入含鉛物質導致的多系統中毒症，主要影響消化系統、神經系統與造血系統。犬較貓常見，幼犬因啃咬行為風險最高。為小動物最常見的重金屬中毒。
-
 aliases:
-  - { alias: 鉛中毒症, language: zh }
-  - { alias: 重金屬鉛中毒, language: zh }
-  - { alias: Lead Poisoning, language: en }
-  - { alias: Plumbism, language: en }
-  - { alias: Lead Intoxication, language: en }
-
+  - alias: 鉛中毒症
+    language: zh
+  - alias: 重金屬鉛中毒
+    language: zh
+  - alias: Lead Poisoning
+    language: en
+  - alias: Plumbism
+    language: en
+  - alias: Lead Intoxication
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓鉛中毒較罕見，但室內環境含鉛粉塵經舔毛攝入為潛在途徑。貓的臨床表現以神經症狀為主。
-
 etiology:
   categories:
     - name: 常見鉛來源
@@ -45,7 +47,6 @@ etiology:
         - 神經毒性（干擾神經傳導物質釋放、損害血腦屏障）
         - 腎小管上皮損傷
         - 干擾鈣代謝
-
 clinicalSigns:
   early:
     - 嘔吐
@@ -68,18 +69,17 @@ clinicalSigns:
     - 嚴重貧血
     - 昏迷
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 全血鉛濃度
-      notes: "確診金標準。>40 μg/dL（0.4 ppm）結合臨床症狀即可診斷。>60 μg/dL 通常有明顯臨床症狀"
+      notes: 確診金標準。>40 μg/dL（0.4 ppm）結合臨床症狀即可診斷。>60 μg/dL 通常有明顯臨床症狀
     - name: 血液抹片
-      notes: "嗜鹼性點彩紅血球 (basophilic stippling) 為特徵性發現，但非所有病例均可見。有核紅血球 (nRBC) 增加"
+      notes: 嗜鹼性點彩紅血球 (basophilic stippling) 為特徵性發現，但非所有病例均可見。有核紅血球 (nRBC) 增加
   imaging:
     - name: 腹部 X 光
-      notes: "胃腸道內高密度不透光異物（鉛碎片）。為判斷是否需要外科或內視鏡移除的重要依據"
+      notes: 胃腸道內高密度不透光異物（鉛碎片）。為判斷是否需要外科或內視鏡移除的重要依據
     - name: 長骨 X 光
-      notes: "幼犬骨骺端可見「鉛線」(lead lines)——密度增加的橫帶（慢性暴露）"
+      notes: 幼犬骨骺端可見「鉛線」(lead lines)——密度增加的橫帶（慢性暴露）
   additional:
     - CBC（輕度至中度再生性貧血、嗜鹼性點彩、有核紅血球、紅血球大小不等 [anisocytosis]、異形紅血球 [poikilocytosis]、多色紅血球 [polychromasia]、低色素性 [hypochromia]）
     - 生化（肝腎功能評估）
@@ -92,7 +92,6 @@ diagnosis:
     - 肝性腦病 (Hepatic Encephalopathy)
     - 灰質腦軟化症 — 硫胺素缺乏 (Polioencephalomalacia)
     - 異物性胃腸炎 (Foreign Body Gastroenteritis)
-
 treatment:
   principles:
     - 螯合治療 (chelation therapy) 為核心
@@ -100,8 +99,8 @@ treatment:
     - 控制神經症狀
     - 移除環境鉛源防止再暴露
   general:
-    - "CaNa2-EDTA (calcium disodium EDTA) 25 mg/kg SC QID × 5 天，停 5 天後視需要重複療程"
-    - "Succimer (DMSA) 10 mg/kg PO TID × 10 天（口服螯合劑，適合門診追蹤治療）"
+    - CaNa2-EDTA (calcium disodium EDTA) 25 mg/kg SC QID × 5 天，停 5 天後視需要重複療程
+    - Succimer (DMSA) 10 mg/kg PO TID × 10 天（口服螯合劑，適合門診追蹤治療）
     - 胃腸道內可見鉛異物需先移除（內視鏡或手術取出、灌腸）
     - 全腸道灌洗 (whole bowel irrigation) 用 PEG 溶液（若鉛碎片多且分散）
     - 癲癇控制 (diazepam 0.5-1 mg/kg IV)
@@ -110,42 +109,102 @@ treatment:
     - 止吐 (maropitant 1 mg/kg SC SID)
     - 螯合治療期間監測腎功能（CaNa2-EDTA 具腎毒性）
     - 環境除鉛（飼主教育）
-
-prognosis: 無嚴重神經症狀者經螯合治療後預後良好。出現癲癇發作者預後謹慎，部分個體可能遺留永久神經後遺症。慢性低劑量暴露可能造成腎臟與神經系統永久損傷。環境鉛源未移除者再暴露風險高。鑑別並消除鉛暴露來源對預防復發至關重要。動物鉛中毒病例可作為環境鉛污染之哨兵，提示人類（尤其兒童）亦可能面臨暴露風險。
-
+prognosis: >-
+  無嚴重神經症狀者經螯合治療後預後良好。出現癲癇發作者預後謹慎，部分個體可能遺留永久神經後遺症。慢性低劑量暴露可能造成腎臟與神經系統永久損傷。環境鉛源未移除者再暴露風險高。鑑別並消除鉛暴露來源對預防復發至關重要。動物鉛中毒病例可作為環境鉛污染之哨兵，提示人類（尤其兒童）亦可能面臨暴露風險。
 guidelineRefs:
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Lead poisoning in small companion animals: an update (1987-1992)"
+    title: 'Lead poisoning in small companion animals: an update (1987-1992)'
     url: https://pubmed.ncbi.nlm.nih.gov/8288476/
     type: research
-    pmid: "8288476"
+    pmid: '8288476'
   - sourceOrg: Veterinary Clinics of North America Small Animal Practice
     title: Lead toxicosis in small animals
     url: https://pubmed.ncbi.nlm.nih.gov/15223206/
     type: review
-    pmid: "15223206"
+    pmid: '15223206'
   - sourceOrg: Journal of Veterinary Internal Medicine
-    title: "Retrospective evaluation of lead poisoning in dogs: 20 cases"
+    title: 'Retrospective evaluation of lead poisoning in dogs: 20 cases'
     url: https://pubmed.ncbi.nlm.nih.gov/20456091/
     type: research
-    pmid: "20456091"
-  - sourceOrg: "Journal of medical toxicology : official journal of the American College of Medical Toxicology"
+    pmid: '20456091'
+  - sourceOrg: 'Journal of medical toxicology : official journal of the American College of Medical Toxicology'
     title: Severe Lead Toxicosis in a Lionhead Rabbit.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5330967/
     type: case-report
-    pmid: "28091810"
+    pmid: '28091810'
     relevance: supporting
   - sourceOrg: Journal of avian medicine and surgery
     title: Subclinical Lead Exposure Among Backyard Chicken Flocks in Massachusetts.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12817250/
     type: research
-    pmid: "30204020"
+    pmid: '30204020'
     relevance: supporting
 pubmedQueries:
-  - query: '"lead" AND ("toxicosis" OR "poisoning" OR "plumbism") AND (dog OR cat OR canine OR feline) AND ("chelation" OR "treatment")'
+  - query: >-
+      "lead" AND ("toxicosis" OR "poisoning" OR "plumbism") AND (dog OR cat OR canine OR feline) AND ("chelation" OR
+      "treatment")
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "TOX"
-  sectionTitle: "LEAD POISONING"
+  chapter: TOX
+  sectionTitle: LEAD POISONING
   pdfPage: 3119
+diagnosticAlgorithm:
+  title: 鉛中毒 診斷流程
+  steps:
+    - step: 1
+      action: 臨床懷疑
+      details: GI症狀+神經症狀+環境暴露史
+      findings:
+        - 嘔吐+癲癇
+        - 老屋翻修
+        - 金屬異物攝入
+    - step: 2
+      action: 血液學初篩
+      details: 血液塗片和腹部X光
+      findings:
+        - 有核紅血球
+        - 嗜鹼性點彩
+        - 金屬異物
+    - step: 3
+      action: 確認檢查
+      details: 全血鉛濃度測定
+      findings:
+        - 血鉛>2.9μmol/L確診
+        - 血鉛臨界值需追蹤
+    - step: 4
+      action: 治療
+      details: 移除鉛源+螯合治療+控制症狀
+      findings:
+        - 螯合治療反應良好
+        - 癲癇需控制
+        - 環境源需移除
+clinicalPearls:
+  - 血液塗片見有核紅血球和嗜鹼性點彩紅血球是鉛中毒的重要線索
+  - 必須在開始螯合治療前先移除消化道內的鉛異物（Ca-EDTA會增加腸道鉛吸收）
+  - Succimer (DMSA)是目前推薦的首選螯合劑，副作用比Ca-EDTA少
+monitoringItems:
+  - 螯合治療後7天追蹤血鉛濃度
+  - 可能需要第二療程螯合治療
+  - CBC監測貧血改善
+  - 神經功能持續評估
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: common
+ddxSource: book

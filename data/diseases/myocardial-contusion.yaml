@@ -3,12 +3,13 @@ nameEn: Myocardial Contusion
 nameZh: 心肌挫傷
 bodySystem: cardiac
 description: 胸部鈍傷導致心肌損傷、出血或水腫。可能引起心律不整、心肌功能異常,嚴重時可致命。
-
 aliases:
-  - { alias: 心肌撞傷, language: zh }
-  - { alias: Cardiac Contusion, language: en }
-  - { alias: 心臟鈍傷, language: zh }
-
+  - alias: 心肌撞傷
+    language: zh
+  - alias: Cardiac Contusion
+    language: en
+  - alias: 心臟鈍傷
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 同上
-
 etiology:
   categories:
     - name: 創傷性
@@ -26,7 +26,6 @@ etiology:
         - 車禍
         - 高處墜落
         - 胸部踢擊
-
 clinicalSigns:
   early:
     - 胸壁疼痛
@@ -37,23 +36,21 @@ clinicalSigns:
     - 呼吸困難
     - 休克
     - 肺水腫
-
 diagnosis:
   primaryTests:
     - name: 心電圖
-      notes: "心律不整 (VPCs 常見)、ST 段變化"
+      notes: 心律不整 (VPCs 常見)、ST 段變化
     - name: Cardiac troponin I
-      notes: "升高提示心肌損傷"
+      notes: 升高提示心肌損傷
     - name: 心臟超音波
-      notes: "評估心肌壁運動、心包積液、瓣膜損傷"
+      notes: 評估心肌壁運動、心包積液、瓣膜損傷
     - name: 胸部 X 光
-      notes: "肋骨骨折、肺挫傷、氣胸"
+      notes: 肋骨骨折、肺挫傷、氣胸
   differentialDiagnoses:
     - 肺挫傷
     - 氣胸
     - 心包填塞
     - 創傷性橫膈疝氣
-
 treatment:
   medical:
     - 氧氣治療
@@ -61,19 +58,58 @@ treatment:
     - 抗心律不整藥物 (若有症狀性 VPCs)
     - 限制活動
     - 監測 24-48 小時
-
 prognosis:
-  general: "預後良好至謹慎;輕度挫傷多在數日內恢復;嚴重心律不整或心肌破裂預後不良"
-
+  general: 預後良好至謹慎;輕度挫傷多在數日內恢復;嚴重心律不整或心肌破裂預後不良
 prevention:
   - 避免創傷 (牽繩、圍欄)
   - 創傷後早期評估心臟功能
-
-
 guidelineRefs:
-  - sourceOrg: "Ulusal travma ve acil cerrahi dergisi = Turkish journal of trauma &amp; emergency surgery : TJTES"
+  - sourceOrg: 'Ulusal travma ve acil cerrahi dergisi = Turkish journal of trauma &amp; emergency surgery : TJTES'
     title: Effects of amifostine against blunt chest trauma-induced cardiac injury in rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10225843/
     type: research
-    pmid: "36880625"
+    pmid: '36880625'
     relevance: supporting
+diagnosticAlgorithm:
+  title: 心肌挫傷 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估胸部外傷後心律不整，注意車禍等高能量創傷病史
+      findings:
+        - 胸部外傷病史
+        - 心律不整（心室早期收縮最常見）
+        - 心搏過速或低血壓
+    - step: 2
+      action: 心臟監測與生物標記
+      details: 進行持續心電圖監測和心肌肌鈣蛋白I/T檢測
+      findings:
+        - 心電圖顯示心室早期收縮或心室性心搏過速
+        - 心肌肌鈣蛋白I升高
+        - ST段改變
+    - step: 3
+      action: 心臟超音波評估
+      details: 進行心臟超音波評估心肌收縮功能和心包積液
+      findings:
+        - 局部心壁運動異常
+        - 可能伴隨心包積液
+        - 評估心輸出量和整體收縮功能
+clinicalPearls:
+  - 所有鈍性胸部創傷患畜都應進行至少 48-72 小時的連續 ECG 監測，因為心律不整可能延遲出現
+  - 心律不整的高峰期通常在創傷後 24-72 小時，即使初始 ECG 正常也不能排除後續心律不整
+  - 心肌肌鈣蛋白 I（cTnI）是犬心肌損傷最敏感的生物標記，但升高程度不一定與臨床嚴重性直接相關
+  - 只有血流動力學顯著的心律不整才需要抗心律不整治療（VPC 頻率 >20-30/min 或 R-on-T 現象或心室頻脈）
+  - 即使沒有直接心臟創傷，全身性創傷、疼痛和兒茶酚胺釋放也可引起心律不整——需區分創傷性心律不整和真正的心肌挫傷
+monitoringItems:
+  - 連續 ECG 監測至少 48-72 小時（可使用 Holter monitor）
+  - 連續血壓監測（arterial blood pressure）
+  - 心肌肌鈣蛋白 I（cTnI）：入院時和 12-24 小時後複查評估趨勢
+  - 血氧飽和度（SpO2）和血液氣體分析
+  - 尿量監測（目標 >1 mL/kg/hr）評估心輸出量和灌流
+  - 出院後 1-2 週追蹤 ECG 和心臟超音波評估心功能恢復
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

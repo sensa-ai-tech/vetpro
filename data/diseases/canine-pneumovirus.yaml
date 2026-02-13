@@ -3,18 +3,18 @@ nameEn: Canine Pneumovirus
 nameZh: 犬肺病毒
 bodySystem: infectious
 description: 犬肺病毒 (CnPnV) 為新興犬呼吸道病原，屬副黏液病毒科。在群居犬環境中可引起嚴重下呼吸道感染，為犬傳染性呼吸道疾病複合體的病原之一。
-
 aliases:
-  - { alias: 犬肺炎病毒, language: zh }
-  - { alias: CnPnV, language: en }
-  - { alias: Canine Pneumovirus, language: en }
-
+  - alias: 犬肺炎病毒
+    language: zh
+  - alias: CnPnV
+    language: en
+  - alias: Canine Pneumovirus
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 收容所及群居環境中盛行率較高。可引起從輕度上呼吸道到嚴重支氣管肺炎的不同程度疾病。幼犬及免疫抑制犬風險最高。
-
 etiology:
   categories:
     - name: 病原特性
@@ -28,7 +28,6 @@ etiology:
         - 2010 年首次在犬群中鑑定
         - 群居犬環境（收容所）為主要流行場所
         - 可與其他 CIRDC 病原共感
-
 clinicalSigns:
   early:
     - 咳嗽
@@ -41,13 +40,12 @@ clinicalSigns:
     - 支氣管肺炎
     - 食慾下降
     - 嗜睡
-
 diagnosis:
   primaryTests:
     - name: RT-PCR
-      notes: "鼻拭子或咽喉拭子 RT-PCR 確診。通常包含在呼吸道病原多聯 PCR 面板中"
+      notes: 鼻拭子或咽喉拭子 RT-PCR 確診。通常包含在呼吸道病原多聯 PCR 面板中
     - name: 血清學
-      notes: "配對血清抗體效價升高可回溯性確診"
+      notes: 配對血清抗體效價升高可回溯性確診
   differentialDiagnoses:
     - 犬流感
     - 犬副流感病毒
@@ -55,7 +53,6 @@ diagnosis:
     - 百日咳桿菌感染
     - 細菌性肺炎
     - 犬呼吸道冠狀病毒
-
 treatment:
   medical:
     - 輕症者支持治療為主
@@ -64,20 +61,48 @@ treatment:
     - 輸液維持水合
     - 霧化治療
     - 止咳藥（適當情況下）
-
 prognosis:
-  general: "多數免疫功能正常的成犬預後良好。幼犬或合併其他病原感染時可能發展為嚴重肺炎。死亡率通常低，但收容所環境中可引起顯著發病率。"
-
+  general: 多數免疫功能正常的成犬預後良好。幼犬或合併其他病原感染時可能發展為嚴重肺炎。死亡率通常低，但收容所環境中可引起顯著發病率。
 prevention:
   - 群居環境通風及消毒
   - 新進犬隻隔離
   - 目前無商用疫苗
   - 減少群居密度
-
-
 guidelineRefs:
   - sourceOrg: Journal of comparative pathology
     title: Aetiology of Canine Infectious Respiratory Disease Complex and Prevalence of its Pathogens in Europe.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7103302/
     type: review
-    pmid: "32359641"
+    pmid: '32359641'
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: sneezing
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+diagnosticAlgorithm:
+  title: 犬肺病毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - dyspnoea 相關症狀
+        - sneezing 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: RT-PCR
+          notes: 鼻拭子或咽喉拭子 RT-PCR 確診。通常包含在呼吸道病原多聯 PCR 面板中
+        - name: 血清學
+          notes: 配對血清抗體效價升高可回溯性確診
+ddxSource: auto-generated

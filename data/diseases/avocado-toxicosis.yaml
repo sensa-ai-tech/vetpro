@@ -3,12 +3,13 @@ nameEn: Avocado Toxicosis
 nameZh: 酪梨中毒
 bodySystem: toxicology
 description: 酪梨 (avocado) 含有 persin 毒素，對鳥類與反芻動物毒性最強。犬貓對 persin 相對耐受，主要風險為酪梨核引起的腸阻塞及高脂肪含量引起的胰臟炎。鳥類攝入可引起致命性心肌壞死。
-
 aliases:
-  - { alias: 牛油果中毒, language: zh }
-  - { alias: Avocado Poisoning, language: en }
-  - { alias: Persin Toxicosis, language: en }
-
+  - alias: 牛油果中毒
+    language: zh
+  - alias: Avocado Poisoning
+    language: en
+  - alias: Persin Toxicosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓酪梨毒性報告極少。高脂肪可能引起消化道不適。鳥類為高風險物種（心肌壞死、肺水腫）。
-
 etiology:
   categories:
     - name: 毒性物質
@@ -29,7 +29,6 @@ etiology:
         - 酪梨核引起異物阻塞
         - 高脂肪含量引起胰臟炎
         - 鳥類：心肌壞死與呼吸窘迫
-
 clinicalSigns:
   early:
     - 嘔吐
@@ -39,7 +38,6 @@ clinicalSigns:
     - 胰臟炎症狀（嘔吐、腹痛、嗜睡）
     - 異物阻塞（持續嘔吐、腹脹、不排便）
     - 輕度心肌損傷（大量攝入，罕見）
-
 diagnosis:
   primaryTests:
     - name: 病史確認
@@ -49,7 +47,6 @@ diagnosis:
   additional:
     - 胰臟炎標記物（cPLI/fPLI）
     - CBC 與生化
-
 treatment:
   principles:
     - 多數僅需觀察與支持療法
@@ -61,9 +58,52 @@ treatment:
     - 疑似胰臟炎：NPO + IV 輸液 + 止吐 + 止痛
     - 異物阻塞需內視鏡或手術取出
     - 監測 24-48 小時
-
 prognosis: 犬貓酪梨中毒預後良好。果肉攝入多為自限性消化道症狀。酪梨核阻塞需手術但預後佳。鳥類預後差（致命性心肌壞死）。
-
 pubmedQueries:
   - query: '"avocado" AND (toxicosis OR poisoning) AND (veterinary OR canine OR feline)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 酪梨中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - weakness 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史確認
+          notes: 確認攝入酪梨的部位（果肉、果皮、果核、葉片）與量
+        - name: 腹部影像學
+          notes: 腹部 X-ray 或超音波評估是否有酪梨核引起的異物阻塞
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 胰臟炎標記物（cPLI/fPLI）
+        - CBC 與生化
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 多數僅需觀察與支持療法
+        - 異物阻塞需外科介入
+        - 胰臟炎需積極治療
+ddxSource: auto-generated

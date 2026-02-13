@@ -3,24 +3,22 @@ nameEn: Chin Acne Feline
 nameZh: Chin Acne Feline
 bodySystem: dermatology
 description: 皮膚疾病,可能影響皮膚完整性、毛髮生長或引起不適。需皮膚科檢查與實驗室診斷確定病因。
-
 aliases:
-  - { alias: Chin Acne Feline, language: zh }
-  - { alias: Chin Acne Feline, language: en }
-
+  - alias: Chin Acne Feline
+    language: zh
+  - alias: Chin Acne Feline
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 感染(細菌、真菌、寄生蟲)
       examples:
         - 過敏
         - 免疫介導
-
 clinicalSigns:
   early:
     - 搔癢
@@ -28,25 +26,62 @@ clinicalSigns:
   progressive:
     - 皮膚增厚
     - 色素沉著
-
 diagnosis:
   primaryTests:
     - name: 皮膚刮搔檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: 毛髮拔除檢查
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 局部治療(藥浴、藥膏)
     - 全身性抗生素或抗真菌藥
-
 prognosis:
-  general: "預後取決於根本病因。感染性疾病治療後多可痊癒,免疫或遺傳性疾病需長期管理。"
-
+  general: 預後取決於根本病因。感染性疾病治療後多可痊癒,免疫或遺傳性疾病需長期管理。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
+diagnosticAlgorithm:
+  title: 貓粉刺 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估下巴部位特徵性病變
+      findings:
+        - 下巴黑色粉刺
+        - 毛囊堵塞
+        - 輕度至重度發展
+        - 下巴腫脹嚴重時
+    - step: 2
+      action: 分級與繼發感染評估
+      details: 評估嚴重程度與細菌感染
+      findings:
+        - 輕度粉刺為主
+        - 中度膿皰與紅腫
+        - 重度毛囊炎與蜂窩組織炎
+        - 細胞學檢查細菌感染
+    - step: 3
+      action: 鑑別診斷
+      details: 排除其他下巴病變
+      findings:
+        - 排除蠕形蟎
+        - 排除皮膚黴菌感染
+        - 排除嗜酸性肉芽腫
+        - 排除腫瘤老年貓下巴腫塊
+clinicalPearls:
+  - 更換塑膠碗為不銹鋼或陶瓷碗是簡單有效的第一步措施
+  - 輕度貓粉刺是美容性問題，不一定需要積極治療
+  - 下巴的「髒污」外觀可能被飼主誤認為只是食物殘渣
+  - 嚴重的貓粉刺可發展為疼痛的蜂窩組織炎，不應輕忽
+  - benzoyl peroxide在貓的使用濃度應低於犬，且可能引起刺激
+monitoringItems:
+  - 治療後2-4週評估反應
+  - 清潔和局部治療依從性追蹤
+  - 復發性病例定期追蹤
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+ddxSource: book

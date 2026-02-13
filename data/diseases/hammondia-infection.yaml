@@ -3,12 +3,13 @@ nameEn: Hammondia Infection
 nameZh: 哈蒙原蟲感染
 bodySystem: infectious
 description: 由Hammondia屬原蟲引起的輕微腸道感染,犬貓為終宿主。臨床症狀罕見,主要透過糞便檢查發現孢囊,需與Toxoplasma區分。齧齒動物為中間宿主。
-
 aliases:
-  - { alias: 哈蒙蟲病, language: zh }
-  - { alias: Hammondia heydorni, language: zh }
-  - { alias: Hammondia hammondi, language: zh }
-
+  - alias: 哈蒙蟲病
+    language: zh
+  - alias: Hammondia heydorni
+    language: zh
+  - alias: Hammondia hammondi
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: H. hammondi,形態類似Toxoplasma,但無人畜共通風險
-
 etiology:
   categories:
     - name: 病原體
@@ -30,7 +30,6 @@ etiology:
         - 攝食中間宿主(齧齒類、牛)組織包囊
         - 腸道有性生殖,排出孢囊
         - 孢囊形態與Toxoplasma幾乎相同
-
 clinicalSigns:
   early:
     - 絕大多數無臨床症狀
@@ -38,21 +37,19 @@ clinicalSigns:
   progressive:
     - 無進展性症狀
     - 不侵犯腸道外組織
-
 diagnosis:
   primaryTests:
     - name: 糞便檢查
-      notes: "飽和鹽水浮游法見孢囊(10-13 μm),形態與Toxoplasma無法區分"
+      notes: 飽和鹽水浮游法見孢囊(10-13 μm),形態與Toxoplasma無法區分
     - name: 糞便PCR
-      notes: "唯一可靠鑑別方法,區分Hammondia、Toxoplasma、Neospora"
+      notes: 唯一可靠鑑別方法,區分Hammondia、Toxoplasma、Neospora
     - name: 生物試驗
-      notes: "研究用,Hammondia孢囊不感染小鼠,Toxoplasma可感染"
+      notes: 研究用,Hammondia孢囊不感染小鼠,Toxoplasma可感染
   differentialDiagnoses:
     - Toxoplasma gondii (貓)
     - Neospora caninum (犬)
     - Besnoitia darlingi
     - Cystoisospora species
-
 treatment:
   medical:
     - 通常無需治療
@@ -60,39 +57,61 @@ treatment:
   prevention:
     - 避免攝食生肉或齧齒類
     - 糞便衛生管理
-
 prognosis:
-  general: "預後極佳,無臨床意義。主要重要性在於與Toxoplasma鑑別診斷,避免誤判人畜共通風險。孢囊排出1-2週後自然停止,無需治療。"
-
+  general: 預後極佳,無臨床意義。主要重要性在於與Toxoplasma鑑別診斷,避免誤判人畜共通風險。孢囊排出1-2週後自然停止,無需治療。
 prevention:
   - 不餵食生肉
   - 貓隻室內飼養,避免捕食齧齒類
   - 糞便PCR確認蟲種,排除Toxoplasma風險
-
-
 guidelineRefs:
   - sourceOrg: Parasitology
-    title: Importance of serological cross-reactivity among Toxoplasma gondii, Hammondia spp., Neospora spp., Sarcocystis spp. and Besnoitia besnoiti.
+    title: >-
+      Importance of serological cross-reactivity among Toxoplasma gondii, Hammondia spp., Neospora spp., Sarcocystis
+      spp. and Besnoitia besnoiti.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5471829/
     type: review
-    pmid: "28241894"
+    pmid: '28241894'
   - sourceOrg: Parasitology research
-    title: "Outcome of parasitological examinations in cats in Germany: a retrospective survey."
+    title: 'Outcome of parasitological examinations in cats in Germany: a retrospective survey.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12334491/
     type: research
-    pmid: "40779070"
+    pmid: '40779070'
   - sourceOrg: Acta veterinaria Scandinavica
     title: Low intestinal parasite prevalence in Finnish pet dogs and cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11421109/
     type: research
-    pmid: "39313799"
+    pmid: '39313799'
   - sourceOrg: International journal for parasitology. Parasites and wildlife
-    title: "Sentinels in the shadows: Exploring Toxoplasma gondii and other Sarcocystidae parasites in synanthropic rodents and their public health implications."
+    title: >-
+      Sentinels in the shadows: Exploring Toxoplasma gondii and other Sarcocystidae parasites in synanthropic rodents
+      and their public health implications.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11035367/
     type: research
-    pmid: "38655448"
-  - sourceOrg: "Parasites &amp; vectors"
+    pmid: '38655448'
+  - sourceOrg: Parasites &amp; vectors
     title: Parasites and vector-borne diseases disseminated by rehomed dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7653694/
     type: research
-    pmid: "33168100"
+    pmid: '33168100'
+associatedSymptoms:
+  - symptomId: diarrhoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 哈蒙原蟲感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便檢查
+          notes: 飽和鹽水浮游法見孢囊(10-13 μm),形態與Toxoplasma無法區分
+        - name: 糞便PCR
+          notes: 唯一可靠鑑別方法,區分Hammondia、Toxoplasma、Neospora
+        - name: 生物試驗
+          notes: 研究用,Hammondia孢囊不感染小鼠,Toxoplasma可感染
+ddxSource: auto-generated

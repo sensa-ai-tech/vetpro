@@ -3,14 +3,17 @@ nameEn: Calcinosis Cutis
 nameZh: 皮膚鈣質沉著
 bodySystem: dermatology
 description: 不可溶性鈣鹽沉積於皮膚及皮下組織的病理狀態，犬最常見的原因為醫源性或自發性腎上腺皮質功能亢進症 (Cushing's disease)。
-
 aliases:
-  - { alias: Cutaneous Calcinosis, language: en }
-  - { alias: Metastatic Calcification, language: en }
-  - { alias: Dystrophic Calcification, language: en }
-  - { alias: 皮膚鈣化症, language: zh }
-  - { alias: 皮膚鈣沉著症, language: zh }
-
+  - alias: Cutaneous Calcinosis
+    language: en
+  - alias: Metastatic Calcification
+    language: en
+  - alias: Dystrophic Calcification
+    language: en
+  - alias: 皮膚鈣化症
+    language: zh
+  - alias: 皮膚鈣沉著症
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓極罕見。偶見於注射部位局部鈣化或慢性腎病相關的轉移性鈣化。
-
 etiology:
   categories:
     - name: 營養不良性鈣化 (Dystrophic)
@@ -39,9 +41,9 @@ etiology:
         - Calcinosis circumscripta (局限性鈣化，幼犬，常見於肢端/足墊)
         - 特發性鈣質沉著 (無明確潛在病因)
         - 注射部位鈣化
-
-pathophysiology: 在營養不良性鈣化中，慢性高皮質醇血症改變膠原蛋白結構與代謝，使損傷或變性的組織基質成為鈣鹽沉積的核心。皮質醇抑制膠原蛋白合成、促進蛋白水解，造成真皮膠原纖維變性退化，退化的膠原親和鈣離子而產生沉積。在轉移性鈣化中，血清鈣磷乘積 (Ca x P) 升高超過閾值 (>60-70 mg2/dL2)，使正常組織也發生鈣鹽沉積。沉積的鈣鹽引起異物反應、肉芽腫性炎症，表面皮膚可破潰釋出白堊色物質。繼發性細菌感染常見。
-
+pathophysiology: >-
+  在營養不良性鈣化中，慢性高皮質醇血症改變膠原蛋白結構與代謝，使損傷或變性的組織基質成為鈣鹽沉積的核心。皮質醇抑制膠原蛋白合成、促進蛋白水解，造成真皮膠原纖維變性退化，退化的膠原親和鈣離子而產生沉積。在轉移性鈣化中，血清鈣磷乘積 (Ca
+  x P) 升高超過閾值 (>60-70 mg2/dL2)，使正常組織也發生鈣鹽沉積。沉積的鈣鹽引起異物反應、肉芽腫性炎症，表面皮膚可破潰釋出白堊色物質。繼發性細菌感染常見。
 clinicalSigns:
   early:
     - 皮膚硬結性丘疹或斑塊 (砂礫感)
@@ -60,25 +62,23 @@ clinicalSigns:
     - 慢性不癒合潰瘍
     - 嚴重繼發感染 (蜂窩組織炎)
     - 影響活動 (足墊病變時)
-
 diagnosis:
   primaryTests:
     - name: 皮膚活檢
-      notes: "病理組織學可見真皮內鈣鹽沉積 (von Kossa 染色陽性)、異物巨細胞反應、肉芽腫性炎症"
+      notes: 病理組織學可見真皮內鈣鹽沉積 (von Kossa 染色陽性)、異物巨細胞反應、肉芽腫性炎症
     - name: 細針抽吸細胞學
-      notes: "可見無定形鈣質物質、巨噬細胞、異物巨細胞。砂礫感觸診具提示性"
+      notes: 可見無定形鈣質物質、巨噬細胞、異物巨細胞。砂礫感觸診具提示性
     - name: ACTH 刺激試驗 / 低劑量 dexamethasone 抑制試驗
-      notes: "評估腎上腺皮質功能亢進。大多數犬 calcinosis cutis 與 Cushing's 相關"
+      notes: 評估腎上腺皮質功能亢進。大多數犬 calcinosis cutis 與 Cushing's 相關
   imaging:
     - name: X 光
-      notes: "皮膚/皮下軟組織鈣化影。可評估鈣化範圍"
+      notes: 皮膚/皮下軟組織鈣化影。可評估鈣化範圍
   additional:
     - 血清生化 (Ca、P、BUN、Cr、ALP、cholesterol)
     - 尿液皮質醇/肌酐比 (Cushing's 篩檢)
     - 腹部超音波 (腎上腺大小評估)
     - 副甲狀腺激素 (PTH) 測定
     - 離子化鈣測定
-
 treatment:
   principles:
     - 治療潛在病因為首要 (控制 Cushing's、停止外源性類固醇)
@@ -87,16 +87,16 @@ treatment:
     - 嚴重病灶可能需手術切除
   medications:
     - name: Trilostane
-      dose: "1-2 mg/kg PO BID (或 2-5 mg/kg SID)"
+      dose: 1-2 mg/kg PO BID (或 2-5 mg/kg SID)
       notes: 治療自發性 Cushing's 的首選。控制後鈣化灶可逐漸消退
     - name: Minocycline
-      dose: "5-10 mg/kg PO BID"
+      dose: 5-10 mg/kg PO BID
       notes: 具有螯合鈣質及抗炎特性，可輔助鈣化灶消退
     - name: DMSO 局部外用
-      dose: "局部塗抹 (90% DMSO 溶液)"
+      dose: 局部塗抹 (90% DMSO 溶液)
       notes: 可促進鈣質溶解。需避免過度塗抹 (皮膚刺激)
     - name: 抗生素 (依培養結果)
-      dose: "Cephalexin 22-30 mg/kg PO BID 或依藥敏選擇"
+      dose: Cephalexin 22-30 mg/kg PO BID 或依藥敏選擇
       notes: 繼發性感染治療。開放性潰瘍病灶常需要
   general:
     - 逐漸減停外源性類固醇 (醫源性 Cushing's)
@@ -105,41 +105,94 @@ treatment:
     - 手術切除 (大型局部病灶，或 calcinosis circumscripta)
     - 飲食管理 (腎病相關者：限磷飲食)
     - 定期追蹤 ACTH 刺激試驗評估 Cushing's 控制
-
-prognosis: 醫源性 Cushing's 引起者在停止類固醇後預後良好，鈣化灶數週至數月可消退。自發性 Cushing's 者取決於疾病控制程度，trilostane 有效控制後多數可改善。廣泛性病灶消退緩慢。繼發感染控制困難時預後較差。Calcinosis circumscripta 手術切除後預後極佳。
-
+prognosis: >-
+  醫源性 Cushing's 引起者在停止類固醇後預後良好，鈣化灶數週至數月可消退。自發性 Cushing's 者取決於疾病控制程度，trilostane
+  有效控制後多數可改善。廣泛性病灶消退緩慢。繼發感染控制困難時預後較差。Calcinosis circumscripta 手術切除後預後極佳。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Internal Medicine
-    title: "ACVIM consensus statement: guidelines for the diagnosis and treatment of canine Cushing's syndrome"
+    title: 'ACVIM consensus statement: guidelines for the diagnosis and treatment of canine Cushing''s syndrome'
     url: https://pubmed.ncbi.nlm.nih.gov/22775566/
     type: guideline
-    pmid: "22775566"
+    pmid: '22775566'
   - sourceOrg: Veterinary Dermatology
-    title: "Calcinosis cutis in dogs: histopathological and clinical analysis of 46 cases"
+    title: 'Calcinosis cutis in dogs: histopathological and clinical analysis of 46 cases'
     url: https://pubmed.ncbi.nlm.nih.gov/22524413/
     type: research
-    pmid: "22524413"
+    pmid: '22524413'
   - sourceOrg: Veterinary Pathology
     title: Cutaneous calcinosis in dogs and cats
     url: https://pubmed.ncbi.nlm.nih.gov/31526108/
     type: review
-    pmid: "31526108"
+    pmid: '31526108'
   - sourceOrg: Biomolecules
-    title: "Animal Tissue Mineralization: An Overview of Disease Processes, Comparative Pathology, and Diagnostic Approaches."
+    title: 'Animal Tissue Mineralization: An Overview of Disease Processes, Comparative Pathology, and Diagnostic Approaches.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12839363/
     type: review
-    pmid: "41594636"
+    pmid: '41594636'
   - sourceOrg: Biochemistry. Biokhimiia
     title: Spontaneous and Experimentally Induced Pathologies in the Naked Mole Rat (Heterocephalus glaber).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7088389/
     type: review
-    pmid: "29486700"
+    pmid: '29486700'
     relevance: supporting
 pubmedQueries:
   - query: '"calcinosis cutis" AND (dog OR canine) AND ("Cushing" OR "hyperadrenocorticism" OR "treatment")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "MUS"
-  sectionTitle: "OSTEOPATHIES IN SMALL ANIMALS 1203"
+  chapter: MUS
+  sectionTitle: OSTEOPATHIES IN SMALL ANIMALS 1203
   pdfPage: 1244
+diagnosticAlgorithm:
+  title: 皮膚鈣質沉著症 診斷流程
+  steps:
+    - step: 1
+      action: 臨床評估
+      details: 皮膚病灶形態和基礎疾病病史
+      findings:
+        - 白色硬結斑塊
+        - 庫欣氏症症狀
+        - 類固醇使用史
+    - step: 2
+      action: 皮膚活檢
+      details: 確認鈣質沉積和發炎反應
+      findings:
+        - von Kossa陽性
+        - 肉芽腫性發炎
+        - 排除其他病因
+    - step: 3
+      action: 基礎病因調查
+      details: ACTH刺激試驗、鈣磷和腎功能
+      findings:
+        - 庫欣氏症
+        - 醫源性
+        - 腎病
+        - 維生素D中毒
+    - step: 4
+      action: 治療基礎病因
+      details: 控制庫欣氏症或停藥+局部護理
+      findings:
+        - 病因控制後消退
+        - 需手術切除大病灶
+        - 持續管理
+clinicalPearls:
+  - 庫欣氏症犬出現皮膚白色硬結即應懷疑鈣質沉著症
+  - 控制基礎病因（停藥/治療庫欣氏症）是最重要的治療
+  - 鈣質沉著可為庫欣氏症的首發或唯一皮膚表現
+monitoringItems:
+  - 基礎疾病控制指標（ACTH刺激試驗、鈣磷）
+  - 皮膚病灶大小和數量追蹤
+  - 繼發感染監測
+  - 鈣質沉著消退進度評估
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: cutaneous-masses
+    frequency: rare
+ddxSource: book

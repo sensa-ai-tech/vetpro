@@ -3,12 +3,13 @@ nameEn: Vasculitis
 nameZh: 血管炎
 bodySystem: immunology
 description: 血管炎 (vasculitis) 為免疫介導性血管壁炎症，可侵犯皮膚、腎臟、關節等多個器官系統。犬的血管炎可為原發性（免疫介導）或繼發於感染、藥物、疫苗、腫瘤等。皮膚血管炎為最常見表現形式。
-
 aliases:
-  - { alias: 免疫介導性血管炎, language: zh }
-  - { alias: Cutaneous Vasculitis, language: en }
-  - { alias: Immune-Mediated Vasculitis, language: en }
-
+  - alias: 免疫介導性血管炎
+    language: zh
+  - alias: Cutaneous Vasculitis
+    language: en
+  - alias: Immune-Mediated Vasculitis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓血管炎較犬少見。可與 FeLV、FIV 感染相關。
-
 etiology:
   categories:
     - name: 致病機制
@@ -33,7 +33,6 @@ etiology:
         - 腫瘤（副腫瘤症候群）
         - 食物過敏（罕見）
         - 原發性免疫介導（排除性診斷）
-
 clinicalSigns:
   early:
     - 皮膚紫斑（瘀斑、瘀點）
@@ -45,7 +44,6 @@ clinicalSigns:
     - 發燒
     - 全身性：腎絲球腎炎、關節炎
     - 嚴重者：多器官受累
-
 diagnosis:
   primaryTests:
     - name: 皮膚生檢
@@ -58,7 +56,6 @@ diagnosis:
     - ANA
     - 免疫螢光（血管壁免疫複合物沉積）
     - 傳染病血清學/PCR
-
 treatment:
   principles:
     - 找出並治療潛在原因
@@ -72,41 +69,80 @@ treatment:
     - Azathioprine 或 mycophenolate（steroid-sparing）
     - 傷口護理（皮膚潰瘍）
     - Vitamin E 補充
-
 prognosis: 血管炎預後取決於潛在原因與受累器官。感染相關型在消除感染後多數可控。原發性免疫介導型需長期免疫抑制。皮膚局限型預後佳。合併腎絲球腎炎者預後較差。
-
-
 guidelineRefs:
   - sourceOrg: Journal of extracellular vesicles
-    title: "Minimal information for studies of extracellular vesicles 2018 (MISEV2018): a position statement of the International Society for Extracellular Vesicles and update of the MISEV2014 guidelines."
+    title: >-
+      Minimal information for studies of extracellular vesicles 2018 (MISEV2018): a position statement of the
+      International Society for Extracellular Vesicles and update of the MISEV2014 guidelines.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6322352/
     type: guideline
-    pmid: "30637094"
+    pmid: '30637094'
     relevance: primary
-  - sourceOrg: "Parasites &amp; vectors"
-    title: "Neurobartonelloses: emerging from obscurity!"
+  - sourceOrg: Parasites &amp; vectors
+    title: 'Neurobartonelloses: emerging from obscurity!'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11452993/
     type: review
-    pmid: "39369199"
+    pmid: '39369199'
     relevance: primary
   - sourceOrg: Iranian journal of veterinary research
     title: Clinical and laboratorial description of the differential diagnoses of hemostatic disorders in the horse.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7183377/
     type: review
-    pmid: "32368218"
+    pmid: '32368218'
     relevance: primary
   - sourceOrg: Viruses
     title: The Spectrum of Neurological Manifestations of Varicella-Zoster Virus Reactivation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10457770/
     type: review
-    pmid: "37632006"
+    pmid: '37632006'
     relevance: primary
   - sourceOrg: Experimental and therapeutic medicine
     title: Clinical spectrum of symptoms in cerebral Toxocariasis (Review).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8014984/
     type: review
-    pmid: "33815594"
+    pmid: '33815594'
     relevance: primary
 pubmedQueries:
   - query: '"vasculitis" AND (veterinary OR canine OR feline) AND ("treatment" OR "immune-mediated" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: petechiae-ecchymoses
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: common
+diagnosticAlgorithm:
+  title: 血管炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - hyperthermia 相關症狀
+        - petechiae-ecchymoses 相關症狀
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 皮膚生檢
+          notes: 血管壁與血管周圍炎症細胞浸潤，血管壁纖維素壞死，紅血球外滲
+        - name: 感染疾病篩檢
+          notes: 排除 Rickettsia、Ehrlichia、Leishmania 等感染原因
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC、生化
+        - 尿液分析（蛋白尿 — 腎絲球腎炎）
+        - ANA
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 找出並治療潛在原因
+        - 免疫抑制（原發性）
+        - 改善血管灌注
+ddxSource: auto-generated

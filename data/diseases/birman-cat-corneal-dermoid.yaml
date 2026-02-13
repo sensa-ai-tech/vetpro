@@ -3,24 +3,22 @@ nameEn: Birman Cat Corneal Dermoid
 nameZh: 伯曼貓角膜皮樣囊腫
 bodySystem: ophthalmology
 description: 伯曼貓的先天性角膜異常,角膜或結膜上出現毛髮及皮膚組織。導致刺激、流淚及視力障礙,需外科切除。
-
 aliases:
-  - { alias: 角膜皮樣囊腫, language: zh }
-  - { alias: Dermoid Cyst, language: en }
-
+  - alias: 角膜皮樣囊腫
+    language: zh
+  - alias: Dermoid Cyst
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 伯曼貓、緬因貓等
-
 etiology:
   categories:
     - name: 先天性發育異常
       examples:
         - 胚胎期表皮組織異位
         - 可能遺傳
-
 clinicalSigns:
   early:
     - 角膜或結膜毛髮生長
@@ -29,30 +27,42 @@ clinicalSigns:
   progressive:
     - 角膜刺激、潰瘍
     - 視力障礙
-
 diagnosis:
   primaryTests:
     - name: 眼科檢查
-      notes: "角膜或結膜上皮膚組織及毛髮"
+      notes: 角膜或結膜上皮膚組織及毛髮
   differentialDiagnoses:
     - 異物
     - 腫瘤
-
 treatment:
   medical:
     - 外科切除(淺層角膜切除術)
     - 術後抗生素眼藥水
-
 prognosis:
-  general: "外科切除後預後良好,復發率低。"
-
+  general: 外科切除後預後良好,復發率低。
 prevention:
   - 受影響貓不應繁殖
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Ocular dermoids in 13 cats: a multicentre retrospective study."
+    title: 'Ocular dermoids in 13 cats: a multicentre retrospective study.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812258/
     type: research
-    pmid: "34519242"
+    pmid: '34519242'
+associatedSymptoms:
+  - symptomId: blindness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 伯曼貓角膜皮樣囊腫 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 眼科檢查
+          notes: 角膜或結膜上皮膚組織及毛髮
+ddxSource: auto-generated

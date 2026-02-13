@@ -3,11 +3,11 @@ nameEn: Prostatic Adenocarcinoma
 nameZh: 前列腺腺癌
 bodySystem: oncology
 description: 前列腺腺體上皮的特定惡性腫瘤亞型。臨床與前列腺癌相似，為犬前列腺惡性腫瘤中最常見的組織學類型。局部侵犯性強，好轉移至腰椎骨。
-
 aliases:
-  - { alias: "Prostatic Carcinoma", language: en }
-  - { alias: "前列腺腺體癌", language: zh }
-
+  - alias: Prostatic Carcinoma
+    language: en
+  - alias: 前列腺腺體癌
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓極罕見。
-
 etiology:
   categories:
     - name: 腫瘤性
@@ -23,7 +22,6 @@ etiology:
         - 前列腺腺體上皮惡性增生
         - 高度惡性
         - 不受去勢影響
-
 clinicalSigns:
   early:
     - 排尿異常
@@ -34,14 +32,12 @@ clinicalSigns:
     - 骨轉移
     - 尿道阻塞
     - 惡病質
-
 diagnosis:
   primaryTests:
     - name: 超音波引導穿刺
       notes: 組織病理確診
     - name: CT
       notes: 評估局部侵犯與轉移
-
 treatment:
   principles:
     - 姑息性治療為主
@@ -51,41 +47,78 @@ treatment:
     - 化療
     - 放射治療（姑息性止痛）
     - 支持性照護
-
 prognosis: 預後不良。與前列腺癌相似。中位存活 < 6 個月。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Case report: Chronic disseminated intravascular coagulopathy with concurrent paraneoplastic secondary hyperfibrinolysis in a dog with metastatic nasal adenocarcinoma."
+    title: >-
+      Case report: Chronic disseminated intravascular coagulopathy with concurrent paraneoplastic secondary
+      hyperfibrinolysis in a dog with metastatic nasal adenocarcinoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11152169/
     type: case-report
-    pmid: "38840638"
+    pmid: '38840638'
     relevance: supporting
   - sourceOrg: The journal of venomous animals and toxins including tropical diseases
     title: Hemolytic, anticancer and antigiardial activity of Palythoa caribaeorum venom.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5905176/
     type: research
-    pmid: "29692802"
+    pmid: '29692802'
     relevance: supporting
   - sourceOrg: BMC veterinary research
-    title: "Comparison of outcomes between medical and surgical treatment in dogs with prostatic adenocarcinoma: a retrospective study."
+    title: >-
+      Comparison of outcomes between medical and surgical treatment in dogs with prostatic adenocarcinoma: a
+      retrospective study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8760710/
     type: research
-    pmid: "35033065"
+    pmid: '35033065'
     relevance: supporting
   - sourceOrg: International journal of experimental pathology
-    title: "CXXC5 expression in prostate cancer: implications for cancer progression."
+    title: 'CXXC5 expression in prostate cancer: implications for cancer progression.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5639265/
     type: research
-    pmid: "29027288"
+    pmid: '29027288'
     relevance: supporting
-  - sourceOrg: "Veterinary surgery : VS"
+  - sourceOrg: 'Veterinary surgery : VS'
     title: Total prostatectomy as a treatment for prostatic carcinoma in 25 dogs.
     url: https://pubmed.ncbi.nlm.nih.gov/29400404/
     type: research
-    pmid: "29400404"
+    pmid: '29400404'
     relevance: supporting
 pubmedQueries:
   - query: '"prostatic adenocarcinoma" AND (veterinary OR canine) AND ("treatment" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: constipation
+    frequency: common
+  - symptomId: pollakiuria
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: common
+diagnosticAlgorithm:
+  title: 前列腺腺癌 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - constipation 相關症狀
+        - pollakiuria 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 超音波引導穿刺
+          notes: 組織病理確診
+        - name: CT
+          notes: 評估局部侵犯與轉移
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 姑息性治療為主
+        - 手術切除困難
+ddxSource: auto-generated

@@ -3,12 +3,13 @@ nameEn: Tooth Root Abscess Detail
 nameZh: 齒根膿瘍詳論
 bodySystem: infectious
 description: 齒根膿瘍是根尖周圍組織的化膿性感染,多因牙髓壞死或深度牙周感染導致。臨床表現為臉部腫脹、瘻管形成,犬常見於上頜第四前臼齒(裂齒),治療需拔牙或根管治療。
-
 aliases:
-  - { alias: 根尖膿瘍, language: zh }
-  - { alias: Periapical Abscess, language: en }
-  - { alias: Apical Periodontitis, language: en }
-
+  - alias: 根尖膿瘍
+    language: zh
+  - alias: Periapical Abscess
+    language: en
+  - alias: Apical Periodontitis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓較少見但嚴重
-
 etiology:
   categories:
     - name: 牙髓疾病
@@ -33,7 +33,6 @@ etiology:
     - name: 血源性感染
       examples:
         - 菌血症經由根尖孔侵入
-
 clinicalSigns:
   early:
     - 咀嚼時疼痛或偏好單側
@@ -45,21 +44,19 @@ clinicalSigns:
     - 瘻管形成流膿
     - 淋巴結腫大
     - 發燒和全身性感染徵兆
-
 diagnosis:
   primaryTests:
     - name: 口腔檢查
-      notes: "患齒可能變色、斷裂或嚴重牙周病"
+      notes: 患齒可能變色、斷裂或嚴重牙周病
     - name: 牙科X光
-      notes: "根尖周圍透亮區(骨質溶解),牙周韌帶空間增寬"
+      notes: 根尖周圍透亮區(骨質溶解),牙周韌帶空間增寬
     - name: 探診和叩診
-      notes: "患齒叩診疼痛,探診可能有深牙周袋"
+      notes: 患齒叩診疼痛,探診可能有深牙周袋
   differentialDiagnoses:
     - 齒槽骨骨髓炎
     - 腫瘤
     - 囊腫
     - 唾液腺囊腫
-
 treatment:
   medical:
     - 拔牙為最常用治療(成功率高且經濟)
@@ -69,21 +66,61 @@ treatment:
     - 術後Meloxicam 0.1 mg/kg PO SID 3-5天
     - 術後抗生素續用7-10天
     - 軟食2週
-
 prognosis:
-  general: "拔牙後預後優良,瘻管通常在7-14天內癒合,症狀迅速改善。根管治療成功率約85-90%但昂貴且需專科技術。未治療會持續疼痛、感染擴散,可能導致下頜骨骨髓炎或菌血症。"
-
+  general: 拔牙後預後優良,瘻管通常在7-14天內癒合,症狀迅速改善。根管治療成功率約85-90%但昂貴且需專科技術。未治療會持續疼痛、感染擴散,可能導致下頜骨骨髓炎或菌血症。
 prevention:
   - 定期牙科檢查和洗牙
   - 避免咬硬物防止牙齒斷裂
   - 牙齒損傷及早治療
   - 控制牙周病
-
-
 guidelineRefs:
   - sourceOrg: Case reports in veterinary medicine
-    title: "Tooth Root Abscess and Mandibular Infections in Old World Camelids: 3 Cases."
+    title: 'Tooth Root Abscess and Mandibular Infections in Old World Camelids: 3 Cases.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11003790/
     type: case-report
-    pmid: "38595336"
+    pmid: '38595336'
     relevance: supporting
+diagnosticAlgorithm:
+  title: 牙根膿腫 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估面部腫脹（常見於眼下或下頜），流膿性瘻管，食慾下降和咀嚼困難
+      findings:
+        - 面部局部腫脹或瘻管
+        - 口臭伴流涎
+        - 患側咀嚼疼痛
+    - step: 2
+      action: 口腔與影像學檢查
+      details: 進行口腔檢查評估牙齒完整性，牙科X光確認牙根病變
+      findings:
+        - 患牙鬆動或變色
+        - 牙科X光顯示牙根周圍透射區
+        - 牙周韌帶增寬或牙根吸收
+    - step: 3
+      action: 確診與治療計畫
+      details: 根據臨床表現和X光確診，制定拔牙或根管治療計畫
+      findings:
+        - X光確認牙根膿腫範圍
+        - 評估受影響牙齒是否可保留
+        - 制定手術拔牙或根管治療方案
+clinicalPearls:
+  - 面部（眼下方）反覆不癒合的瘺管首先考慮上顎裂齒牙根膿腫
+  - 牙科X光是診斷牙根膿腫不可或缺的工具
+  - 單純使用抗生素可暫時改善但無法根治
+  - 牙齒變灰色提示牙髓壞死，即使無明顯斷裂也需評估
+monitoringItems:
+  - 術後面部瘺管癒合
+  - 食慾和咀嚼功能恢復
+  - 定期牙科檢查
+  - 口腔衛生維護
+associatedSymptoms:
+  - symptomId: sneezing
+    frequency: common
+  - symptomId: epistaxis
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: halitosis-stomatitis
+    frequency: common
+ddxSource: book

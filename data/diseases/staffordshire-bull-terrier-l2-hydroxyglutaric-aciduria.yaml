@@ -3,18 +3,18 @@ nameEn: Staffordshire Bull Terrier L2 Hydroxyglutaric Aciduria
 nameZh: 斯塔福郡鬥牛㹴犬L2-羥基戊二酸尿症
 bodySystem: other
 description: 斯塔福郡鬥牛㹴罕見的遺傳性代謝疾病,因L2HGDH酵素缺乏導致腦內L-2-羥基戊二酸累積與神經損傷。幼年發病,表現為癲癇、共濟失調與行為異常,預後不良。
-
 aliases:
-  - { alias: 斯塔福L2HGA, language: zh }
-  - { alias: Stafford L2HGA, language: en }
-  - { alias: 斯塔福代謝性腦病, language: zh }
-
+  - alias: 斯塔福L2HGA
+    language: zh
+  - alias: Stafford L2HGA
+    language: en
+  - alias: 斯塔福代謝性腦病
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: rare
     notes: 斯塔福郡鬥牛㹴品種特異性,體染色體隱性遺傳(L2HGDH基因突變),發病年齡6個月至1歲
-
 etiology:
   categories:
     - name: 遺傳性酵素缺陷
@@ -32,7 +32,6 @@ etiology:
         - 腦白質海綿狀變性
         - 大腦皮層損傷
         - 小腦變化
-
 clinicalSigns:
   early:
     - 6-12個月開始出現癲癇發作
@@ -46,43 +45,69 @@ clinicalSigns:
     - 認知功能下降
     - 部分病例症狀穩定,部分進行性惡化
     - 嚴重病例:無法站立,持續癲癇
-
 diagnosis:
   primaryTests:
     - name: 基因檢測
-      notes: "L2HGDH基因突變檢測,確診並用於繁殖篩檢"
+      notes: L2HGDH基因突變檢測,確診並用於繁殖篩檢
     - name: 尿液有機酸分析
-      notes: "L-2-羥基戊二酸顯著升高(確診)"
+      notes: L-2-羥基戊二酸顯著升高(確診)
     - name: MRI
-      notes: "T2加權影像見腦白質高訊號(海綿狀變性),大腦皮層與小腦變化"
+      notes: T2加權影像見腦白質高訊號(海綿狀變性),大腦皮層與小腦變化
     - name: 腦脊髓液分析
-      notes: "L-2-羥基戊二酸濃度升高"
+      notes: L-2-羥基戊二酸濃度升高
   differentialDiagnoses:
     - 特發性癲癇
     - 其他代謝性腦病
     - 腦炎
     - 儲積症
     - 中毒性腦病變
-
 treatment:
   medical:
     - 無治癒方法,症狀治療為主
     - 癲癇控制:
-      - Levetiracetam 20-30 mg/kg PO q8h(首選)
-      - Phenobarbital 2-3 mg/kg PO q12h(或併用)
-      - Zonisamide 5-10 mg/kg PO q12h(輔助)
+        - Levetiracetam 20-30 mg/kg PO q8h(首選)
+        - Phenobarbital 2-3 mg/kg PO q12h(或併用)
+        - Zonisamide 5-10 mg/kg PO q12h(輔助)
     - 行為異常:Fluoxetine 1-2 mg/kg PO SID
     - 實驗性治療:Riboflavin補充(效果不確定)
     - 避免誘發因素(壓力、睡眠剝奪)
     - 環境調整:熟悉環境,減少刺激
     - 定期監測與藥物調整
-
 prognosis:
-  general: "病程因個體差異大,部分病例症狀穩定可維持正常生活品質,部分進行性惡化需安樂死。癲癇通常可藥物控制,但行為異常可能影響生活品質。壽命可能正常或縮短。"
-
+  general: 病程因個體差異大,部分病例症狀穩定可維持正常生活品質,部分進行性惡化需安樂死。癲癇通常可藥物控制,但行為異常可能影響生活品質。壽命可能正常或縮短。
 prevention:
   - 繁殖前基因檢測(L2HGDH突變)
   - 帶因者僅可與基因陰性個體配對
   - 患病犬與帶因者不應繁殖
   - 英國KC已將L2HGA納入篩檢計畫
   - 商業基因檢測廣泛可用
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: common
+diagnosticAlgorithm:
+  title: 斯塔福郡鬥牛㹴犬L2-羥基戊二酸尿症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - trembling 相關症狀
+        - seizures 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 基因檢測
+          notes: L2HGDH基因突變檢測,確診並用於繁殖篩檢
+        - name: 尿液有機酸分析
+          notes: L-2-羥基戊二酸顯著升高(確診)
+        - name: MRI
+          notes: T2加權影像見腦白質高訊號(海綿狀變性),大腦皮層與小腦變化
+ddxSource: auto-generated

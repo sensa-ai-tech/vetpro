@@ -3,12 +3,13 @@ nameEn: Azalea Rhododendron Toxicosis
 nameZh: 杜鵑花中毒
 bodySystem: toxicology
 description: 攝入杜鵑花屬植物所致的中毒反應,grayanotoxins 干擾細胞膜鈉通道引發神經肌肉和心血管症狀。所有部位均有毒性,少量即可致病,嚴重者可致死。
-
 aliases:
-  - { alias: 杜鵑中毒, language: zh }
-  - { alias: Rhododendron Poisoning, language: en }
-  - { alias: Azalea Poisoning, language: en }
-
+  - alias: 杜鵑中毒
+    language: zh
+  - alias: Rhododendron Poisoning
+    language: en
+  - alias: Azalea Poisoning
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,14 +19,12 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少接觸杜鵑花但對 grayanotoxins 同樣敏感,臨床症狀類似犬
-
 etiology:
   categories:
     - name: 植物毒素
       examples:
         - Grayanotoxins (灰安毒素)
         - 所有杜鵑花屬植物部位(葉、花、莖、根)
-
 clinicalSigns:
   early:
     - 過度流涎
@@ -39,21 +38,19 @@ clinicalSigns:
     - 共濟失調
     - 癲癇發作
     - 昏迷
-
 diagnosis:
   primaryTests:
     - name: 病史詢問
-      notes: "確認接觸杜鵑花屬植物(庭院、花束、盆栽)"
+      notes: 確認接觸杜鵑花屬植物(庭院、花束、盆栽)
     - name: 心電圖
-      notes: "可見竇性心搏過緩、房室傳導阻滯、室性早期收縮"
+      notes: 可見竇性心搏過緩、房室傳導阻滯、室性早期收縮
     - name: 血液生化
-      notes: "評估電解質異常(低血鉀、低血鈉)和腎功能"
+      notes: 評估電解質異常(低血鉀、低血鈉)和腎功能
   differentialDiagnoses:
     - 其他心臟毒性植物中毒(毛地黃、夾竹桃)
     - β-阻斷劑或鈣離子通道阻斷劑中毒
     - 急性胰臟炎
     - 有機磷中毒
-
 treatment:
   medical:
     - 去污染:催吐(攝入後2小時內且動物清醒)或洗胃
@@ -62,11 +59,51 @@ treatment:
     - Atropine 0.02-0.04 mg/kg IV/SC 治療症狀性心搏過緩
     - Dextrose 5-10% 靜脈輸注治療低血糖
     - 癲癇控制:Diazepam 0.5-1 mg/kg IV 或 Midazolam 0.1-0.3 mg/kg IV/IM
-
 prognosis:
-  general: "預後取決於攝入量和治療時機。早期去污染和支持治療的患者預後良好,通常24-48小時內恢復。嚴重心律不整或持續低血壓者預後保留。"
-
+  general: 預後取決於攝入量和治療時機。早期去污染和支持治療的患者預後良好,通常24-48小時內恢復。嚴重心律不整或持續低血壓者預後保留。
 prevention:
   - 移除居家環境中的杜鵑花屬植物或確保寵物無法接觸
   - 監督戶外活動,避免啃咬庭院植物
   - 飼主教育:辨識有毒觀賞植物
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: coma-stupor
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 杜鵑花中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - ataxia 相關症狀
+        - seizures 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史詢問
+          notes: 確認接觸杜鵑花屬植物(庭院、花束、盆栽)
+        - name: 心電圖
+          notes: 可見竇性心搏過緩、房室傳導阻滯、室性早期收縮
+        - name: 血液生化
+          notes: 評估電解質異常(低血鉀、低血鈉)和腎功能
+ddxSource: auto-generated

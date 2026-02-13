@@ -3,18 +3,18 @@ nameEn: Saint Bernard Osteochondritis Dissecans
 nameZh: 聖伯納犬剝離性骨軟骨炎
 bodySystem: orthopedic
 description: 聖伯納犬幼年快速生長期好發的發育性骨軟骨病變,軟骨內骨化異常導致關節軟骨剝離。常見於肩關節、肘關節與跗關節。
-
 aliases:
-  - { alias: 聖伯納犬 OCD, language: zh }
-  - { alias: Saint Bernard OCD, language: en }
-  - { alias: Osteochondrosis Dissecans Saint Bernard, language: en }
-
+  - alias: 聖伯納犬 OCD
+    language: zh
+  - alias: Saint Bernard OCD
+    language: en
+  - alias: Osteochondrosis Dissecans Saint Bernard
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 聖伯納等巨型犬種高發,4-10 月齡快速生長期,雄性發病率高於雌性
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -29,7 +29,6 @@ etiology:
       examples:
         - 幼年過度運動
         - 關節微創傷累積
-
 clinicalSigns:
   early:
     - 漸進性跛行,負重困難
@@ -39,21 +38,19 @@ clinicalSigns:
     - 肌肉萎縮
     - 關節僵硬,關節炎
     - 雙側性病變(30-60% 病例)
-
 diagnosis:
   primaryTests:
     - name: X 光檢查
-      notes: "關節軟骨下骨質凹陷或扁平化,游離骨軟骨碎片(肩關節尾側,肘關節內側),關節積液"
+      notes: 關節軟骨下骨質凹陷或扁平化,游離骨軟骨碎片(肩關節尾側,肘關節內側),關節積液
     - name: CT 掃描
-      notes: "更清晰顯示軟骨缺損範圍與游離體位置"
+      notes: 更清晰顯示軟骨缺損範圍與游離體位置
     - name: 關節鏡檢查
-      notes: "直接視覺化軟骨損傷,評估病變嚴重度,可同時治療"
+      notes: 直接視覺化軟骨損傷,評估病變嚴重度,可同時治療
   differentialDiagnoses:
     - 肘關節發育不良
     - 髕骨內側冠狀突碎裂(FCP)
     - 髖關節發育不良
     - 創傷性關節炎
-
 treatment:
   medical:
     - 保守治療(輕度病變,無游離體):限制運動 4-8 週,體重控制,NSAID(Carprofen 2.2 mg/kg PO q12h 或 Meloxicam 0.1 mg/kg PO q24h)
@@ -62,12 +59,38 @@ treatment:
     - 軟骨保護劑:Glucosamine 20 mg/kg + Chondroitin 15 mg/kg PO q24h
     - Polysulfated glycosaminoglycan (Adequan) 4.4 mg/kg IM 每 3-4 天 x 8 次
     - 物理治療:水療,被動關節活動
-
 prognosis:
-  general: "預後取決於病變嚴重度與治療時機。肩關節 OCD 手術治療預後良好,85-90% 恢復正常功能。肘關節與跗關節 OCD 預後較差,多數發展為退化性關節炎。早期診斷與手術可改善預後。保守治療預後較差。"
-
+  general: 預後取決於病變嚴重度與治療時機。肩關節 OCD 手術治療預後良好,85-90% 恢復正常功能。肘關節與跗關節 OCD 預後較差,多數發展為退化性關節炎。早期診斷與手術可改善預後。保守治療預後較差。
 prevention:
   - 幼犬期避免過度餵食,控制生長速度
   - 選擇適合大型犬幼犬配方飼料(鈣 0.8-1.2%,磷 0.6-1.0%)
   - 限制劇烈運動與跳躍,避免樓梯
   - 受影響犬隻不應繁殖
+associatedSymptoms:
+  - symptomId: polyarthritis
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 聖伯納犬剝離性骨軟骨炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - polyarthritis 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: X 光檢查
+          notes: 關節軟骨下骨質凹陷或扁平化,游離骨軟骨碎片(肩關節尾側,肘關節內側),關節積液
+        - name: CT 掃描
+          notes: 更清晰顯示軟骨缺損範圍與游離體位置
+        - name: 關節鏡檢查
+          notes: 直接視覺化軟骨損傷,評估病變嚴重度,可同時治療
+ddxSource: auto-generated

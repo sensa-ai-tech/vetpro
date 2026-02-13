@@ -3,18 +3,18 @@ nameEn: Airedale Terrier Cerebellar Hypoplasia
 nameZh: 萬能㹴小腦發育不全
 bodySystem: other
 description: 萬能㹴的遺傳性小腦發育異常,出生時小腦結構不完整或體積過小。幼犬出生後即顯現運動失調、意向性震顫等症狀,但不進行性惡化。
-
 aliases:
-  - { alias: 小腦發育不全, language: zh }
-  - { alias: Cerebellar Hypoplasia, language: en }
-  - { alias: CH, language: en }
-
+  - alias: 小腦發育不全
+    language: zh
+  - alias: Cerebellar Hypoplasia
+    language: en
+  - alias: CH
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: rare
     notes: 萬能㹴、查理王騎士犬、波士頓㹴等品種有報告
-
 etiology:
   categories:
     - name: 先天性發育異常
@@ -22,7 +22,6 @@ etiology:
         - 遺傳性基因突變
         - 胚胎期小腦發育受損
         - 可能為體染色體隱性遺傳
-
 clinicalSigns:
   early:
     - 運動失調(出生後即顯現)
@@ -33,29 +32,45 @@ clinicalSigns:
     - 過度伸展步態
     - 症狀不進行性惡化
     - 智力及意識正常
-
 diagnosis:
   primaryTests:
     - name: MRI腦部掃描
-      notes: "顯示小腦體積縮小、腦溝增寬,第四腦室擴大"
+      notes: 顯示小腦體積縮小、腦溝增寬,第四腦室擴大
     - name: 神經學檢查
-      notes: "小腦性運動失調、姿勢反應異常"
+      notes: 小腦性運動失調、姿勢反應異常
   differentialDiagnoses:
     - 小腦炎
     - 小腦變性
     - 前庭系統疾病
-
 treatment:
   medical:
     - 無特效治療
     - 環境安全管理(防止跌倒受傷)
     - 輔助行動設備(止滑墊、扶手)
     - 物理復健治療
-
 prognosis:
-  general: "症狀不會進行性惡化,多數犬隻可適應症狀並維持可接受的生活品質。壽命通常不受影響,但需終生特殊照護。"
-
+  general: 症狀不會進行性惡化,多數犬隻可適應症狀並維持可接受的生活品質。壽命通常不受影響,但需終生特殊照護。
 prevention:
   - 受影響犬隻不應繁殖
   - 親代及同窩幼犬應進行神經學評估
   - 遺傳諮詢及篩檢
+associatedSymptoms:
+  - symptomId: trembling
+    frequency: common
+diagnosticAlgorithm:
+  title: 萬能㹴小腦發育不全 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - trembling 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: MRI腦部掃描
+          notes: 顯示小腦體積縮小、腦溝增寬,第四腦室擴大
+        - name: 神經學檢查
+          notes: 小腦性運動失調、姿勢反應異常
+ddxSource: auto-generated

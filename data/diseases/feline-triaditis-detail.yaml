@@ -3,20 +3,22 @@ nameEn: Feline Triaditis Detail
 nameZh: 貓三合一症詳解
 bodySystem: hepatic
 description: 貓三合一症 (Triaditis) 是膽管炎、胰臟炎與炎性腸病 (IBD) 同時存在的複合疾病。三者的解剖學關聯（總膽管與胰管在十二指腸乳頭合流）使其在貓中特別常見且相互影響。
-
 aliases:
-  - { alias: 貓三病聯症, language: zh }
-  - { alias: 貓膽管炎胰臟炎腸炎複合症, language: zh }
-  - { alias: Feline Triaditis, language: en }
-  - { alias: Feline Triad Disease, language: en }
-  - { alias: Cholangitis-Pancreatitis-IBD Complex, language: en }
-
+  - alias: 貓三病聯症
+    language: zh
+  - alias: 貓膽管炎胰臟炎腸炎複合症
+    language: zh
+  - alias: Feline Triaditis
+    language: en
+  - alias: Feline Triad Disease
+    language: en
+  - alias: Cholangitis-Pancreatitis-IBD Complex
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓三合一症在臨床上常見。組織學研究顯示高達50-56%的膽管炎貓同時有胰臟炎，83%有IBD。中老年貓好發。
-
 etiology:
   categories:
     - name: 解剖學基礎
@@ -31,7 +33,6 @@ etiology:
         - 免疫介導機制（淋巴球性膽管炎成分）
         - 腸道通透性增加允許細菌移位
         - 各疾病間炎症介質的交互作用
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -47,19 +48,17 @@ clinicalSigns:
     - 腹部疼痛
     - 發燒（嗜中性球性膽管炎成分）
     - 肝脂肪沉積（繼發於厭食）
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "評估肝膽系統（膽管擴張、膽囊壁增厚）、胰臟（腫脹、低回音性、周圍脂肪高回音性）和腸道（壁增厚、層次結構變化）。"
+      notes: 評估肝膽系統（膽管擴張、膽囊壁增厚）、胰臟（腫脹、低回音性、周圍脂肪高回音性）和腸道（壁增厚、層次結構變化）。
     - name: 血液檢查組合
-      notes: "ALT/ALP/GGT/膽紅素（肝膽評估）、fPLI/Spec fPL（胰臟炎標記）、Cobalamin/Folate（腸吸收功能）。全面評估三個系統。"
+      notes: ALT/ALP/GGT/膽紅素（肝膽評估）、fPLI/Spec fPL（胰臟炎標記）、Cobalamin/Folate（腸吸收功能）。全面評估三個系統。
   differentialDiagnoses:
     - 單純膽管炎
     - 單純胰臟炎
     - 腸道淋巴瘤
     - 肝脂肪沉積症
-
 treatment:
   medical:
     - 膽管炎：嗜中性球性用抗生素（amoxicillin-clavulanate 4-6週）；淋巴球性用 prednisolone
@@ -72,12 +71,77 @@ treatment:
   surgical:
     - 肝臟與腸道活檢（確認各疾病成分的組織學類型）
     - 膽管阻塞的手術解除
-
 prognosis:
-  general: "預後謹慎至良好，取決於各疾病成分的嚴重度與類型。積極多方面治療可顯著改善臨床症狀。淋巴球性膽管炎成分對免疫抑制反應良好。維持營養攝入預防肝脂肪沉積是關鍵。需長期管理與定期追蹤。"
-
+  general: 預後謹慎至良好，取決於各疾病成分的嚴重度與類型。積極多方面治療可顯著改善臨床症狀。淋巴球性膽管炎成分對免疫抑制反應良好。維持營養攝入預防肝脂肪沉積是關鍵。需長期管理與定期追蹤。
 prevention:
   - 無特異性預防措施
   - 消化道疾病的早期治療
   - 維持適當營養與體重
   - 定期健康檢查監測肝功能與胰臟指標
+diagnosticAlgorithm:
+  title: 貓三體炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估同時涉及肝膽/胰臟/腸道的症狀
+      findings:
+        - 嘔吐與食慾廢絕
+        - 精神極度沉鬱
+        - 黃疸
+        - 腹痛與脫水
+    - step: 2
+      action: 實驗室檢查
+      details: 肝膽/胰臟/腸道相關指標全面評估
+      findings:
+        - 肝酶ALT/ALP/GGT升高
+        - 膽紅素升高
+        - fPLI升高胰臟炎
+        - 低白蛋白/低鈷胺素腸道吸收不良
+    - step: 3
+      action: 腹部超音波
+      details: 評估三個器官的影像變化
+      findings:
+        - 膽管擴張或膽囊壁增厚
+        - 胰臟腫大或周圍脂肪回音增強
+        - 腸壁增厚
+        - 腸系膜淋巴結腫大
+    - step: 4
+      action: 組織學確診
+      details: 肝臟/腸道活檢確認炎症型態
+      findings:
+        - 膽管炎淋巴球性或嗜中性球性
+        - 胰臟炎確認
+        - 炎症性腸病IBD
+        - 三者同時發生確認三體炎
+clinicalPearls:
+  - 貓的三體炎與其獨特的膽胰管解剖密切相關
+  - 厭食超過3-5天的貓應考慮放置食管餵食管
+  - 鈷胺素缺乏在貓三體炎中極常見且影響預後
+  - 黃疸貓應同時評估三個器官系統
+  - 慢性嘔吐的貓應篩檢三體炎三個成分
+monitoringItems:
+  - 肝臟酵素和膽紅素
+  - fPLI
+  - 體重和食慾
+  - 鈷胺素濃度
+  - 糞便品質
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

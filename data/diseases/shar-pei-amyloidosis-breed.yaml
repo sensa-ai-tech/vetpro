@@ -3,19 +3,21 @@ nameEn: Shar-Pei Amyloidosis Breed
 nameZh: 沙皮犬類澱粉樣變性
 bodySystem: urinary
 description: 沙皮犬類澱粉樣變性是該品種特有的反應性（AA 型）類澱粉沉積疾病，與沙皮犬家族性發熱密切相關。反覆發炎導致血清類澱粉 A 蛋白（SAA）過量產生，沉積於腎臟與肝臟，最終導致器官衰竭。
-
 aliases:
-  - { alias: 沙皮犬腎澱粉樣變, language: zh }
-  - { alias: 沙皮犬系統性類澱粉沉積, language: zh }
-  - { alias: Shar-Pei renal amyloidosis, language: en }
-  - { alias: Shar-Pei AA amyloidosis, language: en }
-  - { alias: Familial Shar-Pei fever amyloidosis, language: en }
-
+  - alias: 沙皮犬腎澱粉樣變
+    language: zh
+  - alias: 沙皮犬系統性類澱粉沉積
+    language: zh
+  - alias: Shar-Pei renal amyloidosis
+    language: en
+  - alias: Shar-Pei AA amyloidosis
+    language: en
+  - alias: Familial Shar-Pei fever amyloidosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
     notes: 沙皮犬為犬種中類澱粉樣變性最高風險品種。常繼發於反覆發熱（Shar-Pei Fever）。中年犬最常確診。為該品種重要死因。
-
 etiology:
   categories:
     - name: 免疫遺傳因素
@@ -29,7 +31,6 @@ etiology:
         - AA 型類澱粉蛋白沉積於腎臟（腎絲球與腎髓質）
         - 肝臟類澱粉沉積
         - 漸進性器官功能喪失
-
 clinicalSigns:
   early:
     - 反覆發熱史（沙皮犬發熱症候群）
@@ -44,7 +45,6 @@ clinicalSigns:
     - 嗜睡
     - 嘔吐（尿毒症）
     - 血栓栓塞併發症
-
 diagnosis:
   primaryTests:
     - name: 尿液分析
@@ -53,7 +53,6 @@ diagnosis:
       notes: BUN、肌酐、SDMA 升高。白蛋白降低。膽固醇升高
     - name: 腎臟活檢
       notes: 剛果紅染色見類澱粉沉積。偏光顯微鏡見蘋果綠雙折射。為確診方法
-
 treatment:
   principles:
     - 預防與控制發炎（減少 SAA 產生）
@@ -68,9 +67,50 @@ treatment:
     - 低劑量 Aspirin（抗血栓）
     - 腎衰竭支持治療（補液、磷結合劑）
     - 定期監測腎功能與尿蛋白
-
 prognosis: 預後謹慎至不良。類澱粉沉積為進行性不可逆。早期使用 Colchicine 與控制發炎可延緩進展。一旦出現腎衰竭臨床症狀，中位存活時間數月。血栓栓塞為嚴重併發症。繁殖篩選可能有助降低品種風險。
-
 pubmedQueries:
   - query: '"Shar-Pei" AND ("amyloidosis" OR "renal amyloid") AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 沙皮犬類澱粉樣變性 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - polyuria-polydipsia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 尿液分析
+          notes: 蛋白尿（尿蛋白/肌酐比升高）為早期指標。配合腎功能指標
+        - name: 血液生化
+          notes: BUN、肌酐、SDMA 升高。白蛋白降低。膽固醇升高
+        - name: 腎臟活檢
+          notes: 剛果紅染色見類澱粉沉積。偏光顯微鏡見蘋果綠雙折射。為確診方法
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 預防與控制發炎（減少 SAA 產生）
+        - 腎臟保護治療
+        - 控制併發症
+ddxSource: auto-generated

@@ -3,11 +3,11 @@ nameEn: Esophageal Perforation
 nameZh: 食道穿孔
 bodySystem: gastrointestinal
 description: 食道壁破裂,內容物漏至縱膈腔或胸腔,引起縱膈炎或膿胸。為緊急狀況,死亡率高。
-
 aliases:
-  - { alias: 食管破裂, language: zh }
-  - { alias: Esophageal Rupture, language: en }
-
+  - alias: 食管破裂
+    language: zh
+  - alias: Esophageal Rupture
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 罕見
-
 etiology:
   categories:
     - name: 異物性
@@ -30,7 +29,6 @@ etiology:
     - name: 自發性
       examples:
         - 嚴重嘔吐
-
 clinicalSigns:
   early:
     - 急性虛弱
@@ -41,20 +39,18 @@ clinicalSigns:
     - 呼吸困難
     - 休克
     - 縱膈氣腫或氣胸
-
 diagnosis:
   primaryTests:
     - name: 胸部 X 光
-      notes: "縱膈氣腫、胸腔積液、氣胸"
+      notes: 縱膈氣腫、胸腔積液、氣胸
     - name: 食道攝影
-      notes: "水溶性顯影劑漏出 (避免鋇劑)"
+      notes: 水溶性顯影劑漏出 (避免鋇劑)
     - name: 胸腔積液分析
-      notes: "膿性、細菌培養陽性"
+      notes: 膿性、細菌培養陽性
   differentialDiagnoses:
     - 食道異物
     - 吸入性肺炎
     - 縱膈腫瘤
-
 treatment:
   medical:
     - 緊急外科修補
@@ -62,38 +58,68 @@ treatment:
     - 廣效抗生素
     - 禁食,胃造口管或靜脈營養
     - 積極支持性照護
-
 prognosis:
-  general: "預後不良;死亡率高 (> 50%);早期診斷及手術可能改善預後"
-
+  general: 預後不良;死亡率高 (> 50%);早期診斷及手術可能改善預後
 prevention:
   - 避免餵食骨頭或尖銳物
   - 謹慎插管及內視鏡操作
-
-
 guidelineRefs:
   - sourceOrg: Cureus
-    title: "Management of Laparoscopic Adjustable Gastric Band Erosion: A Case Report."
+    title: 'Management of Laparoscopic Adjustable Gastric Band Erosion: A Case Report.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10675987/
     type: case-report
-    pmid: "38021841"
+    pmid: '38021841'
   - sourceOrg: Materials today. Bio
     title: Esophageal wound healing by aligned smooth muscle cell-laden nanofibrous patch.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9898453/
     type: research
-    pmid: "36747583"
+    pmid: '36747583'
   - sourceOrg: Archives of plastic surgery
-    title: Is Robot-Assisted Surgery Really Scarless Surgery? Immediate Reconstruction with a Jejunal Free Flap for Esophageal Rupture after Robot-Assisted Thyroidectomy.
+    title: >-
+      Is Robot-Assisted Surgery Really Scarless Surgery? Immediate Reconstruction with a Jejunal Free Flap for
+      Esophageal Rupture after Robot-Assisted Thyroidectomy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5801790/
     type: research
-    pmid: "29069877"
+    pmid: '29069877'
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
     title: Clinical indications, complications, and long-term outcome of esophageal surgeries in 27 horses.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5109628/
     type: research
-    pmid: "27928172"
+    pmid: '27928172'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: Successful and unsuccessful nonsurgical removal of ingested golf balls and an artificial egg in four rat snakes (Pantherophis alleghaniensis).
+    title: >-
+      Successful and unsuccessful nonsurgical removal of ingested golf balls and an artificial egg in four rat snakes
+      (Pantherophis alleghaniensis).
     url: https://pubmed.ncbi.nlm.nih.gov/33944601/
     type: case-report
-    pmid: "33944601"
+    pmid: '33944601'
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+diagnosticAlgorithm:
+  title: 食道穿孔 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - weakness 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸部 X 光
+          notes: 縱膈氣腫、胸腔積液、氣胸
+        - name: 食道攝影
+          notes: 水溶性顯影劑漏出 (避免鋇劑)
+        - name: 胸腔積液分析
+          notes: 膿性、細菌培養陽性
+ddxSource: auto-generated

@@ -3,25 +3,24 @@ nameEn: Manx Cat Sacrocaudal Dysgenesis
 nameZh: 曼島貓薦尾椎發育不全
 bodySystem: other
 description: 曼島貓的薦椎及尾椎先天性發育異常,導致後肢神經支配不足、大小便功能障礙。曼島症候群的核心病理,嚴重度變異大。
-
 aliases:
-  - { alias: 曼島症候群, language: zh }
-  - { alias: Manx Syndrome, language: en }
-  - { alias: Sacrocaudal Dysgenesis, language: en }
-
+  - alias: 曼島症候群
+    language: zh
+  - alias: Manx Syndrome
+    language: en
+  - alias: Sacrocaudal Dysgenesis
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
     notes: 曼島貓,與無尾基因相關
-
 etiology:
   categories:
     - name: 先天性脊柱畸形
       examples:
         - 無尾基因(T基因)突變
         - 薦椎、尾椎、腰椎發育不全
-
 clinicalSigns:
   early:
     - 無尾或極短尾
@@ -32,17 +31,15 @@ clinicalSigns:
     - 尿失禁或滯留
     - 後肢肌肉萎縮
     - 繼發性泌尿道或皮膚感染
-
 diagnosis:
   primaryTests:
     - name: 脊椎X光或CT
-      notes: "薦椎、尾椎缺失或畸形,可能累及腰椎"
+      notes: 薦椎、尾椎缺失或畸形,可能累及腰椎
     - name: 神經學檢查
-      notes: "後肢反射減弱或消失、肛門尿道括約肌功能異常"
+      notes: 後肢反射減弱或消失、肛門尿道括約肌功能異常
   differentialDiagnoses:
     - 外傷性脊髓損傷
     - 椎間盤疾病
-
 treatment:
   medical:
     - 無法治癒骨骼畸形
@@ -50,10 +47,34 @@ treatment:
     - 軟便劑(便秘時)
     - 預防泌尿道感染
     - 會陰區清潔照護
-
 prognosis:
-  general: "嚴重度變異極大。輕症可維持良好生活品質,嚴重病例可能需安樂死。需終生特殊照護。"
-
+  general: 嚴重度變異極大。輕症可維持良好生活品質,嚴重病例可能需安樂死。需終生特殊照護。
 prevention:
   - 避免完全無尾(rumpy)貓相互繁殖
   - 無尾與有尾貓雜交降低風險
+associatedSymptoms:
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: urinary-incontinence
+    frequency: uncommon
+  - symptomId: constipation
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 曼島貓薦尾椎發育不全 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cachexia-muscle-wasting 相關症狀
+        - urinary-incontinence 相關症狀
+        - constipation 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 脊椎X光或CT
+          notes: 薦椎、尾椎缺失或畸形,可能累及腰椎
+        - name: 神經學檢查
+          notes: 後肢反射減弱或消失、肛門尿道括約肌功能異常
+ddxSource: auto-generated

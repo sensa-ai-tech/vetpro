@@ -3,16 +3,21 @@ nameEn: Electrical Injury
 nameZh: 電擊傷
 bodySystem: emergency
 description: 動物因接觸電流導致的組織損傷，幼犬/幼貓咬嚼電線為最常見情境。電流通過組織可引起口腔灼傷、神經源性非心因性肺水腫與致命性心律不整。低壓家用電 (110-220V) 以局部灼傷與肺水腫為主，高壓電/雷擊可致心室顫動與大面積組織壞死。
-
 aliases:
-  - { alias: Electrocution, language: en }
-  - { alias: Electric Shock, language: en }
-  - { alias: Electrical Cord Bite Injury, language: en }
-  - { alias: Lightning Strike, language: en }
-  - { alias: 觸電, language: zh }
-  - { alias: 電燒傷, language: zh }
-  - { alias: 雷擊傷, language: zh }
-
+  - alias: Electrocution
+    language: en
+  - alias: Electric Shock
+    language: en
+  - alias: Electrical Cord Bite Injury
+    language: en
+  - alias: Lightning Strike
+    language: en
+  - alias: 觸電
+    language: zh
+  - alias: 電燒傷
+    language: zh
+  - alias: 雷擊傷
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -22,7 +27,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 幼貓因好奇心咬電線也常發生。貓電擊後肺水腫發生率可能較犬高且更嚴重。聖誕燈飾線為季節性風險。
-
 etiology:
   categories:
     - name: 低壓電傷（家用 — 最常見）
@@ -43,9 +47,12 @@ etiology:
         - 電流通過心臟 → 心律不整/心室顫動
         - 交感神經風暴 → 神經源性肺水腫
         - 血管內皮損傷 → 血栓形成
-
-pathophysiology: 電流對組織的損傷取決於電壓、電流強度 (安培)、電流類型（AC vs DC）、接觸時間與電流路徑。家用 AC (交流電)：引起肌肉強直性收縮（tetanic contraction）→ 動物咬住電線無法鬆開 → 延長接觸時間。電流由口腔（入口）通過身體組織至接地點（出口）。組織阻抗決定損傷程度 — 骨骼阻抗最高（產熱最多）、血管與神經阻抗最低。口腔灼傷：電流通過口腔黏膜/舌/唇產生焦耳熱 → 凝固性壞死。壞死組織邊界在 2-3 週後才完全界定。肺水腫：電擊觸發交感神經系統大量放電（sympathetic storm）→ 全身性血管收縮 → 血液重新分布至肺循環 → 肺毛細血管壓力急遽升高 → 毛細血管內皮損傷 → 蛋白質滲漏至肺泡 → 非心因性（神經源性）肺水腫。肺水腫可在電擊後數分鐘至數小時內出現。心律不整：電流直接通過心肌可觸發心室早期收縮 (VPCs)、心室頻脈 (VT) 或心室顫動 (VF)。低壓 AC 主要引起 VF；高壓 DC（雷擊）可引起心搏停止（asystole）。
-
+pathophysiology: >-
+  電流對組織的損傷取決於電壓、電流強度 (安培)、電流類型（AC vs DC）、接觸時間與電流路徑。家用 AC (交流電)：引起肌肉強直性收縮（tetanic contraction）→ 動物咬住電線無法鬆開 →
+  延長接觸時間。電流由口腔（入口）通過身體組織至接地點（出口）。組織阻抗決定損傷程度 — 骨骼阻抗最高（產熱最多）、血管與神經阻抗最低。口腔灼傷：電流通過口腔黏膜/舌/唇產生焦耳熱 → 凝固性壞死。壞死組織邊界在 2-3
+  週後才完全界定。肺水腫：電擊觸發交感神經系統大量放電（sympathetic storm）→ 全身性血管收縮 → 血液重新分布至肺循環 → 肺毛細血管壓力急遽升高 → 毛細血管內皮損傷 → 蛋白質滲漏至肺泡 →
+  非心因性（神經源性）肺水腫。肺水腫可在電擊後數分鐘至數小時內出現。心律不整：電流直接通過心肌可觸發心室早期收縮 (VPCs)、心室頻脈 (VT) 或心室顫動 (VF)。低壓 AC 主要引起 VF；高壓
+  DC（雷擊）可引起心搏停止（asystole）。
 clinicalSigns:
   early:
     - 口腔灼傷（唇、舌、硬顎可見白色/灰色焦痂或潰瘍 — 典型位於口角處）
@@ -68,18 +75,17 @@ clinicalSigns:
     - 口腔壞死組織脫落 → 出血/穿孔（電擊後 2-3 週）
     - 心搏停止
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 病史與理學檢查
-      notes: "確認電擊暴露事件。口腔檢查 — 灼傷位置典型在口角（上下唇交界處），可見白色/灰色焦痂。飼主可能目擊或發現咬斷的電線"
+      notes: 確認電擊暴露事件。口腔檢查 — 灼傷位置典型在口角（上下唇交界處），可見白色/灰色焦痂。飼主可能目擊或發現咬斷的電線
     - name: 心電圖 (ECG)
-      notes: "必須立即進行且持續監測 24-48 小時。常見異常：竇性心搏過速、VPCs、VT。ST 段變化（心肌損傷）。QT 間距延長"
+      notes: 必須立即進行且持續監測 24-48 小時。常見異常：竇性心搏過速、VPCs、VT。ST 段變化（心肌損傷）。QT 間距延長
     - name: 胸腔 X 光
-      notes: "評估肺水腫。典型為後肺葉瀰漫性肺泡浸潤。可在電擊後數分鐘至數小時出現。肺門區域可能較嚴重。需連續追蹤（肺水腫可能延遲出現或進行性惡化）"
+      notes: 評估肺水腫。典型為後肺葉瀰漫性肺泡浸潤。可在電擊後數分鐘至數小時出現。肺門區域可能較嚴重。需連續追蹤（肺水腫可能延遲出現或進行性惡化）
   imaging:
     - name: 胸腔 X 光（連續追蹤）
-      notes: "每 6-12 小時重複至肺水腫改善或排除。初始 X 光正常不代表安全"
+      notes: 每 6-12 小時重複至肺水腫改善或排除。初始 X 光正常不代表安全
   additional:
     - SpO₂/動脈血氣分析（氧合與通氣評估）
     - CBC/生化（CK 升高提示肌肉損傷/橫紋肌溶解 — 高壓電尤其明顯）
@@ -87,7 +93,6 @@ diagnosis:
     - 肌鈣蛋白 (cardiac troponin I — 心肌損傷評估)
     - 尿液分析（肌球蛋白尿 — 高壓電橫紋肌溶解）
     - 口腔灼傷範圍與深度評估
-
 treatment:
   principles:
     - 安全第一 — 先斷電源再接觸動物
@@ -96,22 +101,22 @@ treatment:
     - 口腔灼傷多可保守治療，延遲清創
   medications:
     - name: 氧氣治療
-      dose: "Flow-by、鼻導管或氧氣籠。目標 SpO₂ >94%"
+      dose: Flow-by、鼻導管或氧氣籠。目標 SpO₂ >94%
       notes: 肺水腫時第一線支持治療。嚴重者需 CPAP 或機械通氣
     - name: Furosemide
-      dose: "1-2 mg/kg IV，可 q1-4h 重複（依反應調整）"
+      dose: 1-2 mg/kg IV，可 q1-4h 重複（依反應調整）
       notes: 肺水腫治療。注意神經源性肺水腫主因為毛細血管通透性增加（非容量超負荷），利尿劑效果可能有限但仍為標準治療
     - name: Lidocaine
-      dose: "犬 2 mg/kg IV bolus，後 CRI 25-80 μg/kg/min"
+      dose: 犬 2 mg/kg IV bolus，後 CRI 25-80 μg/kg/min
       notes: 心室性心律不整 (VPCs/VT) 首選。貓慎用（劑量減半、緩慢給予）
     - name: 止痛藥
-      dose: "Buprenorphine 0.01-0.02 mg/kg IV/IM q6-8h；嚴重疼痛：Methadone 0.2-0.5 mg/kg IV"
+      dose: Buprenorphine 0.01-0.02 mg/kg IV/IM q6-8h；嚴重疼痛：Methadone 0.2-0.5 mg/kg IV
       notes: 口腔灼傷疼痛管理。促進進食。注意呼吸抑制（肺水腫患者尤需小心）
     - name: 支氣管擴張劑
-      dose: "Aminophylline 5-10 mg/kg IV 緩慢推注 q8-12h；或 Albuterol 霧化"
+      dose: Aminophylline 5-10 mg/kg IV 緩慢推注 q8-12h；或 Albuterol 霧化
       notes: 支氣管痙攣時輔助使用
     - name: 廣效抗生素
-      dose: "Amoxicillin-Clavulanate 12.5-25 mg/kg PO BID"
+      dose: Amoxicillin-Clavulanate 12.5-25 mg/kg PO BID
       notes: 口腔灼傷嚴重時預防續發性感染。非所有病例均需
   general:
     - 急救：先斷電源或用乾燥非導電物體移開電線 — 絕對不可在動物仍接觸電源時徒手觸碰
@@ -122,43 +127,117 @@ treatment:
     - 口腔大範圍灼傷可能需延遲重建手術（唇部、顎骨缺損）
     - 若心室顫動 → CPR + 電擊去顫（如可用）
     - 癲癇控制：Diazepam 0.5-1 mg/kg IV
-
-emergencyNotes: 電擊傷到院處理：(1) 確認動物已脫離電源；(2) ABC 評估 — 無心跳 → CPR；(3) 立即 ECG（心律不整？）— VT → Lidocaine；(4) 胸腔 X 光評估肺水腫；(5) SpO₂/氧氣（肺水腫 → O₂ + Furosemide）；(6) 口腔檢查記錄灼傷範圍；(7) 止痛；(8) 建立靜脈通路（保守輸液）；(9) 持續 ECG 監測 24-48 小時。幼犬咬電線：最常見情境。飼主描述「看到閃光/聽到尖叫/發現斷的電線」→ 即使看起來狀況不嚴重也需住院觀察（肺水腫可能延遲出現）。
-
-prognosis: 口腔灼傷單獨發生時預後極佳 — 通常 2-3 週內癒合。肺水腫經積極治療（氧氣 + Furosemide），多數在 24-72 小時內明顯改善，存活率高。整體存活率約 80-90%。心室顫動為最嚴重但罕見的併發症 — 發生時若無去顫器，死亡率極高。高壓電/雷擊預後較家用低壓電差（大面積組織壞死、橫紋肌溶解、心臟驟停）。口腔大範圍壞死者可能需要後續重建手術，但功能預後通常良好。壞死組織脫落期（2-3 週）需注意出血併發症。
-
+emergencyNotes: >-
+  電擊傷到院處理：(1) 確認動物已脫離電源；(2) ABC 評估 — 無心跳 → CPR；(3) 立即 ECG（心律不整？）— VT → Lidocaine；(4) 胸腔 X 光評估肺水腫；(5) SpO₂/氧氣（肺水腫 → O₂ +
+  Furosemide）；(6) 口腔檢查記錄灼傷範圍；(7) 止痛；(8) 建立靜脈通路（保守輸液）；(9) 持續 ECG 監測 24-48 小時。幼犬咬電線：最常見情境。飼主描述「看到閃光/聽到尖叫/發現斷的電線」→
+  即使看起來狀況不嚴重也需住院觀察（肺水腫可能延遲出現）。
+prognosis: >-
+  口腔灼傷單獨發生時預後極佳 — 通常 2-3 週內癒合。肺水腫經積極治療（氧氣 + Furosemide），多數在 24-72 小時內明顯改善，存活率高。整體存活率約 80-90%。心室顫動為最嚴重但罕見的併發症 —
+  發生時若無去顫器，死亡率極高。高壓電/雷擊預後較家用低壓電差（大面積組織壞死、橫紋肌溶解、心臟驟停）。口腔大範圍壞死者可能需要後續重建手術，但功能預後通常良好。壞死組織脫落期（2-3 週）需注意出血併發症。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
     title: Electrocution and non-cardiogenic pulmonary edema in small animals
     url: https://pubmed.ncbi.nlm.nih.gov/23016822/
     type: review
-    pmid: "23016822"
+    pmid: '23016822'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Electrical cord bite injury in dogs and cats: 50 cases"
+    title: 'Electrical cord bite injury in dogs and cats: 50 cases'
     url: https://pubmed.ncbi.nlm.nih.gov/8050958/
     type: retrospective
-    pmid: "8050958"
+    pmid: '8050958'
   - sourceOrg: Veterinary Clinics of North America Small Animal Practice
     title: Non-cardiogenic pulmonary edema in veterinary patients
     url: https://pubmed.ncbi.nlm.nih.gov/17953057/
     type: review
-    pmid: "17953057"
+    pmid: '17953057'
   - sourceOrg: Atherosclerosis plus
-    title: Semaglutide treatment attenuates vessel remodelling in ApoE-/- mice following vascular injury and blood flow perturbation.
+    title: >-
+      Semaglutide treatment attenuates vessel remodelling in ApoE-/- mice following vascular injury and blood flow
+      perturbation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9833261/
     type: research
-    pmid: "36644202"
+    pmid: '36644202'
   - sourceOrg: Scientific reports
-    title: Electrical current injury shows no specific acute histological changes in peripheral nerves and their vascular supply.
+    title: >-
+      Electrical current injury shows no specific acute histological changes in peripheral nerves and their vascular
+      supply.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12876991/
     type: research
-    pmid: "41526665"
+    pmid: '41526665'
     relevance: supporting
 pubmedQueries:
-  - query: '"electrocution" OR "electrical injury" AND (dog OR cat OR canine OR feline) AND ("pulmonary edema" OR "treatment" OR "outcome")'
+  - query: >-
+      "electrocution" OR "electrical injury" AND (dog OR cat OR canine OR feline) AND ("pulmonary edema" OR "treatment"
+      OR "outcome")
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "GEN"
-  sectionTitle: "LIGHTNING STROKE AND ELECTROCUTION"
+  chapter: GEN
+  sectionTitle: LIGHTNING STROKE AND ELECTROCUTION
   pdfPage: 696
+diagnosticAlgorithm:
+  title: 觸電傷害 診斷與處置流程
+  steps:
+    - step: 1
+      action: 初始評估與穩定
+      details: ABCD approach + 確認電源暴露史
+      findings:
+        - 口腔燒傷檢查
+        - 呼吸型態評估
+        - 心律評估
+        - 意識狀態
+    - step: 2
+      action: 心肺功能評估
+      details: 胸腔X光+ECG+SpO2
+      findings:
+        - X光：肺水腫（可能初期正常）
+        - ECG：心律不整類型
+        - SpO2下降
+        - 心臟超音波排除心因性
+    - step: 3
+      action: 急性治療
+      details: 氧氣+利尿劑+抗心律不整
+      findings:
+        - Furosemide→肺水腫改善
+        - Lidocaine→VPC控制
+        - 氧氣治療→SpO2改善
+        - 疼痛管理（口腔燒傷）
+    - step: 4
+      action: 延遲性併發症監測
+      details: 住院12-36小時監測延遲性肺水腫
+      findings:
+        - 連續X光q12h
+        - 肺水腫通常12-24h消退
+        - 口腔壞死組織追蹤（1-2週）
+        - 心律監測24小時
+clinicalPearls:
+  - 非心因性肺水腫可延遲12-36小時出現——即使初期X光正常也需住院監測
+  - 口腔燒傷是觸電的「指紋」——灰白色凝固壞死斑見於嘴唇或腭部
+  - 神經源性肺水腫機制：兒茶酚胺風暴→肺微血管壓力驟升
+  - 壞死組織脫落可能在1-2週後發生，可能導致口鼻瘻管
+  - 假期期間（聖誕燈串）是幼犬幼貓觸電高峰期
+monitoringItems:
+  - 胸腔X光（q12h前36小時）
+  - 心電圖連續監測24小時
+  - SpO2
+  - 呼吸頻率
+  - 口腔傷口狀態
+  - 食慾與進食能力
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+ddxSource: book

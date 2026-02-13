@@ -3,15 +3,19 @@ nameEn: Gastric Ulceration
 nameZh: 胃潰瘍
 bodySystem: gastrointestinal
 description: 胃黏膜缺損深達黏膜肌層或更深的病變，可引起嘔血、黑便及腹膜炎 (穿孔時)。常見原因包括 NSAIDs 使用、腫瘤 (肥大細胞瘤、胃泌素瘤)、肝腎疾病及壓力。
-
 aliases:
-  - { alias: GI Ulceration, language: en }
-  - { alias: Gastric Erosion, language: en }
-  - { alias: Gastroduodenal Ulceration, language: en }
-  - { alias: 胃十二指腸潰瘍, language: zh }
-  - { alias: 胃糜爛, language: zh }
-  - { alias: 消化性潰瘍, language: zh }
-
+  - alias: GI Ulceration
+    language: en
+  - alias: Gastric Erosion
+    language: en
+  - alias: Gastroduodenal Ulceration
+    language: en
+  - alias: 胃十二指腸潰瘍
+    language: zh
+  - alias: 胃糜爛
+    language: zh
+  - alias: 消化性潰瘍
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -21,7 +25,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓對 NSAIDs 極度敏感，低劑量即可引起胃潰瘍。腎衰竭相關尿毒性胃炎為貓的常見原因。
-
 etiology:
   categories:
     - name: 藥物性 (最常見)
@@ -46,7 +49,6 @@ etiology:
         - 嚴重疾病/手術/外傷後
         - 脊髓損傷後 (尤其椎間盤疾病)
         - 運動犬高強度訓練
-
 clinicalSigns:
   early:
     - 食慾下降/厭食
@@ -65,29 +67,27 @@ clinicalSigns:
     - 嚴重失血性貧血
     - 低血容量性休克
     - 敗血症 (穿孔後)
-
 diagnosis:
   primaryTests:
     - name: 上消化道內視鏡 (Esophagogastroduodenoscopy)
-      notes: "金標準。直接觀察胃黏膜潰瘍/糜爛位置、大小及數量。同時取切片排除腫瘤。評估十二指腸黏膜"
+      notes: 金標準。直接觀察胃黏膜潰瘍/糜爛位置、大小及數量。同時取切片排除腫瘤。評估十二指腸黏膜
     - name: CBC
-      notes: "再生性貧血 (失血性)。可見血小板增多 (慢性失血刺激)。嗜酸性球增多提示肥大細胞瘤"
+      notes: 再生性貧血 (失血性)。可見血小板增多 (慢性失血刺激)。嗜酸性球增多提示肥大細胞瘤
     - name: 糞便潛血檢測 (Fecal Occult Blood)
-      notes: "偵測少量消化道出血。敏感度高但特異度低 (飲食可干擾)"
+      notes: 偵測少量消化道出血。敏感度高但特異度低 (飲食可干擾)
   imaging:
     - name: 腹部超音波
-      notes: "評估胃壁增厚、腫塊。肝臟/脾臟腫瘤篩檢。偵測游離腹水 (穿孔)"
+      notes: 評估胃壁增厚、腫塊。肝臟/脾臟腫瘤篩檢。偵測游離腹水 (穿孔)
     - name: 腹部 X 光
-      notes: "穿孔時可見游離氣體 (pneumoperitoneum)。評估胃擴張或異物"
+      notes: 穿孔時可見游離氣體 (pneumoperitoneum)。評估胃擴張或異物
     - name: 腹部 CT
-      notes: "懷疑腫瘤或穿孔時。增強 CT 更精確"
+      notes: 懷疑腫瘤或穿孔時。增強 CT 更精確
   additional:
     - 生化 (BUN 升高可見於消化道出血、腎功能評估)
     - 血清胃泌素濃度 (懷疑胃泌素瘤時)
     - 凝血功能 (排除凝血異常性出血)
     - 皮質醇 (排除 Addison's disease)
     - 肥大細胞瘤篩檢 (腹部超音波、肝脾細針抽吸)
-
 treatment:
   principles:
     - 停用所有 NSAIDs 及皮質類固醇
@@ -97,19 +97,19 @@ treatment:
     - 治療根本原因
   medications:
     - name: Omeprazole
-      dose: "1-2 mg/kg PO BID"
+      dose: 1-2 mg/kg PO BID
       notes: 質子幫浦抑制劑 (PPI)。胃潰瘍一線用藥。比 H2 blocker 更有效抑制胃酸
     - name: Pantoprazole
-      dose: "1 mg/kg IV BID"
+      dose: 1 mg/kg IV BID
       notes: 注射型 PPI。無法口服時使用 (嚴重嘔吐、術後)
     - name: Sucralfate
-      dose: "犬 0.5-1 g PO TID；貓 0.25 g PO TID"
+      dose: 犬 0.5-1 g PO TID；貓 0.25 g PO TID
       notes: 黏膜保護劑。與潰瘍面結合形成保護膜。需與其他口服藥間隔 2 小時
     - name: Misoprostol
-      dose: "2-5 μg/kg PO TID"
+      dose: 2-5 μg/kg PO TID
       notes: 前列腺素 E1 類似物。預防 NSAIDs 胃潰瘍最有效。孕畜禁用
     - name: Famotidine
-      dose: "0.5-1 mg/kg PO/IV BID"
+      dose: 0.5-1 mg/kg PO/IV BID
       notes: H2 受體拮抗劑。效果不如 PPI，但可用於輕度病例
   general:
     - 立即停用 NSAIDs 及皮質類固醇
@@ -120,37 +120,36 @@ treatment:
     - 少量多餐、易消化飲食
     - PPI 治療至少 4-6 週，內視鏡追蹤確認癒合
     - 肥大細胞瘤：同時給予 famotidine + omeprazole + 腫瘤治療
-
 emergencyNotes: 胃穿孔致急性腹膜炎為外科急症。急性大量嘔血需緊急輸血及靜脈 PPI。休克時積極液體復甦。穿孔手術前開始廣效抗生素。NSAIDs 中毒需立即催吐 (若近期攝入) 及活性碳。
-
 prognosis: 藥物性胃潰瘍停藥後加 PPI 治療預後良好，多數 2-4 週癒合。腫瘤性潰瘍取決於腫瘤類型及分期。胃穿孔伴腹膜炎手術死亡率約 50-70%。腎衰竭相關尿毒性胃炎需控制腎臟疾病。肥大細胞瘤引起的胃潰瘍需同時控制腫瘤及胃酸分泌。
-
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: ACVIM consensus statement on the use of nonsteroidal anti-inflammatory drugs in dogs and cats
     url: https://pubmed.ncbi.nlm.nih.gov/31532019/
     type: consensus
-    pmid: "31532019"
+    pmid: '31532019'
   - sourceOrg: Journal of the American Veterinary Medical Association
     title: Gastrointestinal tract perforation in dogs treated with corticosteroids and nonsteroidal anti-inflammatory drugs
     url: https://pubmed.ncbi.nlm.nih.gov/16579680/
     type: research
-    pmid: "16579680"
+    pmid: '16579680'
   - sourceOrg: Journal of Veterinary Internal Medicine
-    title: "Gastroduodenal ulceration in dogs: retrospective study of 43 cases and literature review"
+    title: 'Gastroduodenal ulceration in dogs: retrospective study of 43 cases and literature review'
     url: https://pubmed.ncbi.nlm.nih.gov/18564224/
     type: research
-    pmid: "18564224"
+    pmid: '18564224'
   - sourceOrg: JFMS open reports
     title: Feline gastric pneumatosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6077914/
     type: case-report
-    pmid: "30090636"
+    pmid: '30090636'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "From theory to therapy: a One Health approach guides current and future acid suppressant use in veterinary medicine."
+    title: >-
+      From theory to therapy: a One Health approach guides current and future acid suppressant use in veterinary
+      medicine.
     url: https://pubmed.ncbi.nlm.nih.gov/39168146/
     type: review
-    pmid: "39168146"
+    pmid: '39168146'
     relevance: primary
 pubmedQueries:
   - query: '"gastric ulcer" AND (dog OR canine OR cat OR feline) AND ("NSAID" OR "treatment" OR "omeprazole")'
@@ -159,6 +158,76 @@ pubmedQueries:
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "LIP LACERATIONS"
+  chapter: DIG
+  sectionTitle: LIP LACERATIONS
   pdfPage: 254
+diagnosticAlgorithm:
+  title: 胃潰瘍 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估嘔血、黑便及腹痛
+      findings:
+        - 嘔吐（可能含咖啡渣樣物）
+        - 黑便（melena）
+        - 上腹部疼痛
+        - 用藥史（NSAIDs）
+    - step: 2
+      action: 血液學與生化
+      details: 評估貧血與潛在出血
+      findings:
+        - 再生性貧血
+        - 低蛋白血症
+        - BUN升高（消化道出血）
+        - 凝血功能評估
+    - step: 3
+      action: 影像學
+      details: 腹部超音波及X光
+      findings:
+        - 胃壁增厚
+        - 腹腔積液
+        - 排除胃腫瘤
+        - 肝臟與腎臟評估
+    - step: 4
+      action: 內視鏡確診
+      details: 胃鏡直視及切片
+      findings:
+        - 直視潰瘍病灶
+        - 切片排除腫瘤
+        - Helicobacter篩檢
+        - 評估潰瘍深度與活動性
+clinicalPearls:
+  - NSAIDs + 皮質類固醇併用風險顯著增加
+  - BUN升高但Creatinine正常提示消化道出血
+  - 肥大細胞瘤應列入鑑別診斷
+  - PPI比H2阻斷劑更有效抑制胃酸
+  - Sucralfate需空腹給予，會影響其他藥物吸收
+  - 貓的胃潰瘍較少見但可發生
+monitoringItems:
+  - PCV/TS
+  - 糞便顏色
+  - 食慾和嘔吐
+  - 腹部疼痛
+  - 內視鏡追蹤（嚴重病例）
+associatedSymptoms:
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

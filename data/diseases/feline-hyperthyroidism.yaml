@@ -3,18 +3,18 @@ nameEn: Feline Hyperthyroidism
 nameZh: 貓甲狀腺功能亢進
 bodySystem: endocrine
 description: 甲狀腺荷爾蒙過度分泌導致的多系統疾病，為中老年貓最常見的內分泌疾病。
-
 aliases:
-  - { alias: Hyperthyroidism, language: en }
-  - { alias: 貓甲亢, language: zh }
-  - { alias: Thyrotoxicosis, language: en }
-
+  - alias: Hyperthyroidism
+    language: en
+  - alias: 貓甲亢
+    language: zh
+  - alias: Thyrotoxicosis
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
     notes: 中老年貓 (>8 歲) 盛行率約 10%。無明顯品種好發性。暹羅貓與喜馬拉雅貓風險略低。
-
 etiology:
   categories:
     - name: 良性腫瘤
@@ -31,7 +31,6 @@ etiology:
         - 環境中多溴二苯醚 (PBDEs，阻燃劑)
         - 碘攝取異常
         - 貓砂類型
-
 clinicalSigns:
   early:
     - 體重減輕伴食慾增加 (多食消瘦)
@@ -50,28 +49,26 @@ clinicalSigns:
     - 全身性高血壓 (視網膜剝離)
     - 冷漠型甲亢 (apathetic hyperthyroidism)：嗜睡、食慾下降
     - CKD 暴露 (治療甲亢後 GFR 下降)
-
 diagnosis:
   primaryTests:
     - name: 總 T4 (Total T4)
-      notes: "篩檢首選。升高 (>4 μg/dL) 即可確診。正常高值 (2.5-4.0) 可能為早期甲亢或非甲狀腺疾病干擾"
+      notes: 篩檢首選。升高 (>4 μg/dL) 即可確診。正常高值 (2.5-4.0) 可能為早期甲亢或非甲狀腺疾病干擾
     - name: 游離 T4 (Free T4 by ED)
-      notes: "T4 正常但臨床懷疑時追加。較敏感但特異度略低"
+      notes: T4 正常但臨床懷疑時追加。較敏感但特異度略低
     - name: TSH
-      notes: "犬 TSH 檢測可用於貓。甲亢時被抑制 (<0.05 ng/mL)"
+      notes: 犬 TSH 檢測可用於貓。甲亢時被抑制 (<0.05 ng/mL)
   imaging:
     - name: 甲狀腺核醫掃描 (Tc-99m pertechnetate)
-      notes: "金標準定位病變。區分單側/雙側。偵測異位甲狀腺組織與轉移"
+      notes: 金標準定位病變。區分單側/雙側。偵測異位甲狀腺組織與轉移
     - name: 頸部超音波
-      notes: "評估甲狀腺大小，體積 >0.3 cm³ 提示增大"
+      notes: 評估甲狀腺大小，體積 >0.3 cm³ 提示增大
     - name: 心臟超音波
-      notes: "評估甲亢性心肌病 (LV 肥厚)、瓣膜功能"
+      notes: 評估甲亢性心肌病 (LV 肥厚)、瓣膜功能
   additional:
     - CBC、生化 (肝指數常升高、BUN/Crea 可能假性正常因高 GFR)
     - 尿液分析 (USG 降低)
     - 血壓測量
     - T4 抑制試驗 (少用)
-
 treatment:
   principles:
     - 四種治療選擇：藥物、手術、放射碘、限碘飲食
@@ -79,13 +76,13 @@ treatment:
     - 治療前後須監測腎功能 (治療可能暴露潛在 CKD)
   medications:
     - name: Methimazole (Felimazole)
-      dose: "2.5 mg PO BID (起始)，根據 T4 調整至 SID-TID"
+      dose: 2.5 mg PO BID (起始)，根據 T4 調整至 SID-TID
       notes: 最常用藥物治療。副作用包括嘔吐、厭食、搔癢、肝毒性、骨髓抑制 (罕見)
     - name: Carbimazole
-      dose: "10-15 mg PO SID (長效型)"
+      dose: 10-15 mg PO SID (長效型)
       notes: Methimazole 前驅藥，歐洲較常用。胃腸副作用可能較少
     - name: Transdermal Methimazole
-      dose: "2.5 mg per ear BID (耳廓內側塗抹)"
+      dose: 2.5 mg per ear BID (耳廓內側塗抹)
       notes: 不能口服藥的貓的替代方案。吸收可能不穩定
   general:
     - 放射碘 I-131 (根治性，單次治療治癒率 >95%)
@@ -94,15 +91,12 @@ treatment:
     - 治療後 2-4 週複檢 T4 與腎功能
     - 治療前甲亢伴血壓升高：amlodipine 0.625-1.25 mg/cat PO SID
     - β-blocker (atenolol 6.25-12.5 mg/cat PO BID) 控制心率
-
 prognosis: 治療預後良好。I-131 治癒率 >95%，大多數貓在治療後可正常生活數年。Methimazole 控制良好的貓中位存活約 2-4 年。主要限制因素為併存 CKD。甲狀腺癌預後較差。
-
 ontologyMappings:
   - source: MONDO
-    code: "MONDO:0004425"
+    code: MONDO:0004425
     label: hyperthyroidism
     confidence: broad
-
 guidelineRefs:
   - sourceOrg: AAFP
     title: AAFP Guidelines for the Management of Feline Hyperthyroidism
@@ -116,23 +110,113 @@ guidelineRefs:
     title: 2016 AAFP Guidelines for the Management of Feline Hyperthyroidism.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11148894/
     type: guideline
-    pmid: "27562983"
+    pmid: '27562983'
   - sourceOrg: Journal of feline medicine and surgery
     title: 2016 AAFP Guidelines for the Management of Feline Hyperthyroidism.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11132203/
     type: guideline
-    pmid: "27143042"
+    pmid: '27143042'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline Comorbidities: Balancing hyperthyroidism and concurrent chronic kidney disease."
+    title: 'Feline Comorbidities: Balancing hyperthyroidism and concurrent chronic kidney disease.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11107990/
     type: review
-    pmid: "35481810"
+    pmid: '35481810'
     relevance: primary
 pubmedQueries:
   - query: '"hyperthyroidism" AND (cat OR feline) AND ("treatment" OR "radioiodine" OR "methimazole")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "END"
-  sectionTitle: "HYPERTHYROIDISM"
+  chapter: END
+  sectionTitle: HYPERTHYROIDISM
   pdfPage: 600
+diagnosticAlgorithm:
+  title: 甲狀腺功能亢進 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 觸診甲狀腺、評估體重變化及心率
+      findings:
+        - 甲狀腺腫大可觸及
+        - 體重減輕但食慾增加
+        - 心搏過速
+        - 被毛粗糙
+    - step: 2
+      action: 甲狀腺功能檢測
+      details: 測量血清總T4及游離T4
+      findings:
+        - 血清總T4升高
+        - 游離T4升高
+        - 若T4邊界值則進行TSH抑制試驗
+    - step: 3
+      action: 全面評估併發症
+      details: 血壓測量、心臟評估及腎功能檢查
+      findings:
+        - 高血壓
+        - 心臟肥大
+        - 腎指數需評估（治療後可能惡化）
+        - 肝指數升高
+    - step: 4
+      action: 影像定位
+      details: 甲狀腺閃爍掃描或超音波
+      findings:
+        - 甲狀腺閃爍掃描定位功能亢進組織
+        - 超音波評估甲狀腺結節大小
+        - 排除甲狀腺癌
+clinicalPearls:
+  - 甲亢可「掩蓋」CKD（因增加腎血流），治療後肌酐可能上升
+  - Methimazole試驗可在手術/I-131前評估腎功能
+  - 95%以上為良性腺瘤
+  - 心臟變化通常在治療後可逆
+monitoringItems:
+  - T4每2-4週（調整期）
+  - 腎功能
+  - 血壓
+  - 肝功能（Methimazole副作用）
+associatedSymptoms:
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: polyphagia
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: tachycardia-bradycardia
+    frequency: rare
+  - symptomId: tachycardia-bradycardia
+    frequency: rare
+  - symptomId: cutaneous-masses
+    frequency: rare
+  - symptomId: cutaneous-masses
+    frequency: rare
+  - symptomId: cachexia-muscle-wasting
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: rare
+associatedLabFindings:
+  - labId: elevated-t4
+    frequency: common
+  - labId: alp-elevated
+    frequency: common
+ddxSource: book

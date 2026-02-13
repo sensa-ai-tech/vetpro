@@ -3,12 +3,13 @@ nameEn: Salt Toxicosis
 nameZh: 食鹽中毒
 bodySystem: toxicology
 description: 食鹽 (sodium chloride) 中毒因過量攝入鈉鹽或飲水不足引起高鈉血症，導致腦細胞脫水與中樞神經系統損傷。常見來源包括食用鹽水、除冰鹽、畫桌黏土與鹽燈。矯正高鈉血症需緩慢進行以避免腦水腫。
-
 aliases:
-  - { alias: 高鈉血症中毒, language: zh }
-  - { alias: Salt Poisoning, language: en }
-  - { alias: Sodium Chloride Toxicosis, language: en }
-
+  - alias: 高鈉血症中毒
+    language: zh
+  - alias: Salt Poisoning
+    language: en
+  - alias: Sodium Chloride Toxicosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓舔舐鹽燈為近年報告增加的來源。小體型使少量鈉即可引起毒性。
-
 etiology:
   categories:
     - name: 毒性機制
@@ -32,7 +32,6 @@ etiology:
         - 自製黏土 (playdough)
         - 鹽燈
         - 含鹽食物
-
 clinicalSigns:
   early:
     - 嘔吐
@@ -44,7 +43,6 @@ clinicalSigns:
     - 癲癇
     - 昏迷
     - 腦水腫（矯正過快時）
-
 diagnosis:
   primaryTests:
     - name: 血清鈉濃度
@@ -56,7 +54,6 @@ diagnosis:
     - 尿液分析
     - 神經學檢查
     - MRI（腦水腫評估）
-
 treatment:
   principles:
     - 緩慢矯正高鈉血症（每小時 <0.5 mEq/L）
@@ -64,16 +61,74 @@ treatment:
     - 控制神經症狀
     - 密切監測血鈉
   general:
-    - "緩慢 IV 輸液矯正：5% dextrose in water 或 0.45% NaCl"
+    - 緩慢 IV 輸液矯正：5% dextrose in water 或 0.45% NaCl
     - 目標：血鈉每小時下降 <0.5 mEq/L（每 24 小時 <10-12 mEq/L）
     - 每 2-4 小時監測血鈉
     - 癲癇控制（diazepam、levetiracetam）
     - 腦水腫管理（mannitol 0.5-1 g/kg IV）
     - 少量多次飲水（非自由飲水）
     - 住院 24-48 小時以上
-
 prognosis: 食鹽中毒預後取決於高鈉血症嚴重度與矯正速率。輕度高鈉（<170 mEq/L）緩慢矯正後預後佳。嚴重高鈉（>190 mEq/L）或已出現神經症狀者預後較差。矯正過快導致腦水腫為主要死因。
-
 pubmedQueries:
   - query: '"salt toxicosis" OR "sodium chloride" AND (toxicosis OR poisoning) AND (veterinary OR canine OR feline)'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 鹽/鈉中毒 診斷流程
+  steps:
+    - step: 1
+      action: 暴露史與臨床評估
+      details: 確認過量鹽攝入或限水導致的高鈉血症
+      findings:
+        - 攝入大量含鹽食物或自製鹽黏土
+        - 限水後突然大量飲水
+        - 嘔吐和腹瀉
+        - 神經症狀（震顫、癲癇）
+    - step: 2
+      action: 電解質與血液檢查
+      details: 進行電解質和滲透壓檢測
+      findings:
+        - 高鈉血症（Na+ >160 mEq/L）
+        - 血漿滲透壓升高
+        - 可能伴有高氯血症
+        - BUN/Creatinine可能升高
+    - step: 3
+      action: 神經學評估
+      details: 評估中樞神經系統受累程度
+      findings:
+        - 共濟失調和盲目行走
+        - 癲癇發作
+        - 意識障礙至昏迷
+        - 肌肉僵硬
+    - step: 4
+      action: 監測與糾正
+      details: 監測鈉濃度並緩慢糾正
+      findings:
+        - 連續鈉離子監測（每2-4小時）
+        - 糾正速度不超過0.5 mEq/L/小時
+        - 腦水腫風險評估
+        - 尿比重和尿鈉監測
+clinicalPearls:
+  - 糾正高鈉血症最危險的錯誤是降鈉過快 — 必須在 48-72 小時內緩慢糾正
+  - 每 2-4 小時監測血清鈉濃度，確保下降速率在安全範圍內
+  - 自製鹹水麵團（鹽麵團）可含極高鈉量，同時麵團在胃中發酵膨脹可造成胃擴張
+  - 油漆球（paintballs）含高濃度山梨醇及可能的鈉鹽，也是常見鈉中毒來源
+monitoringItems:
+  - 每 2-4 小時監測血清鈉濃度
+  - 持續神經學評估
+  - 尿量及尿比重監測
+  - 每日體重監測（評估體液狀態）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: head-tilt
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+associatedLabFindings:
+  - labId: sodium-elevated
+    frequency: rare
+ddxSource: book

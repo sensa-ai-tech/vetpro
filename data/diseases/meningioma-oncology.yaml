@@ -3,11 +3,11 @@ nameEn: Meningioma Oncology
 nameZh: 腦膜瘤（腫瘤科）
 bodySystem: oncology
 description: 腦膜細胞來源的腫瘤，為犬貓最常見的顱內原發性腫瘤。犬多為單發但侵犯性，貓多為單發良性可完全切除。好發於老年動物。
-
 aliases:
-  - { alias: "Meningeal Tumor", language: en }
-  - { alias: "腦膜腫瘤", language: zh }
-
+  - alias: Meningeal Tumor
+    language: en
+  - alias: 腦膜腫瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓最常見的顱內腫瘤。老年貓。手術切除預後佳。
-
 etiology:
   categories:
     - name: 腫瘤性
@@ -23,7 +22,6 @@ etiology:
         - 腦膜細胞增生
         - 多數為良性行為但犬侵犯性較貓強
         - 貓多為良性可完全切除
-
 clinicalSigns:
   early:
     - 新發癲癇
@@ -33,14 +31,12 @@ clinicalSigns:
     - 神經功能進行性惡化
     - 前腦徵象（行為異常、走圈）
     - 視力喪失
-
 diagnosis:
   primaryTests:
     - name: MRI
       notes: 典型均勻強化、寬基底附著硬腦膜的腫塊。dural tail sign
     - name: CT
       notes: 可見鈣化與骨質增生
-
 treatment:
   principles:
     - 手術切除是理想治療
@@ -50,36 +46,71 @@ treatment:
     - 術後放射治療（犬，降低復發）
     - Hydroxyurea（無法手術的犬）
     - Prednisolone + 抗癲癇藥物（姑息性）
-
 prognosis: 貓手術切除預後良好（中位存活 > 2 年，部分 > 5 年）。犬手術 + 放射中位存活 > 2 年。姑息性治療中位存活數月。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: An Illustrated Scoping Review of the Magnetic Resonance Imaging Characteristics of Canine and Feline Brain Tumors.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11010916/
     type: review
-    pmid: "38612283"
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
+    pmid: '38612283'
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
     title: Diagnostic immunohistochemistry of primary and secondary central nervous system neoplasms of dogs and cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10929637/
     type: review
-    pmid: "38234003"
+    pmid: '38234003'
   - sourceOrg: Life (Basel, Switzerland)
-    title: "Domestic Animal Models of Central Nervous System Tumors: Focus on Meningiomas."
+    title: 'Domestic Animal Models of Central Nervous System Tumors: Focus on Meningiomas.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10744527/
     type: review
-    pmid: "38137885"
+    pmid: '38137885'
   - sourceOrg: Frontiers in oncology
-    title: "Canine Primary Intracranial Cancer: A Clinicopathologic and Comparative Review of Glioma, Meningioma, and Choroid Plexus Tumors."
+    title: >-
+      Canine Primary Intracranial Cancer: A Clinicopathologic and Comparative Review of Glioma, Meningioma, and Choroid
+      Plexus Tumors.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6856054/
     type: review
-    pmid: "31788444"
+    pmid: '31788444'
   - sourceOrg: Journal of veterinary science
-    title: "Surgical treatment of feline intracranial meningiomas: a retrospective study of 26 cases."
+    title: 'Surgical treatment of feline intracranial meningiomas: a retrospective study of 26 cases.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10990911/
     type: research
-    pmid: "38568826"
+    pmid: '38568826'
 pubmedQueries:
   - query: '"meningioma" AND (veterinary OR canine OR feline) AND ("surgery" OR "radiation" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: common
+  - symptomId: blindness
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: seizures
+    frequency: common
+diagnosticAlgorithm:
+  title: 腦膜瘤（腫瘤科） 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+        - blindness 相關症狀
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: MRI
+          notes: 典型均勻強化、寬基底附著硬腦膜的腫塊。dural tail sign
+        - name: CT
+          notes: 可見鈣化與骨質增生
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術切除是理想治療
+        - 輔助放射治療
+ddxSource: auto-generated

@@ -2,13 +2,16 @@ slug: neorickettsia-helminthoeca
 nameEn: Neorickettsia Helminthoeca
 nameZh: 蠕蟲新立克次體
 bodySystem: infectious
-description: 蠕蟲新立克次體(Neorickettsia helminthoeca)是引起鮭魚中毒病(Salmon Poisoning Disease)的致病原,透過吸蟲(Nanophyetus salmincola)作為媒介,犬隻食入含感染期吸蟲的生鮭魚或鱒魚後感染。此病原主要分布於北美太平洋西北部,未治療死亡率高達90%。
-
+description: >-
+  蠕蟲新立克次體(Neorickettsia helminthoeca)是引起鮭魚中毒病(Salmon Poisoning Disease)的致病原,透過吸蟲(Nanophyetus
+  salmincola)作為媒介,犬隻食入含感染期吸蟲的生鮭魚或鱒魚後感染。此病原主要分布於北美太平洋西北部,未治療死亡率高達90%。
 aliases:
-  - { alias: 鮭魚中毒病病原, language: zh }
-  - { alias: Salmon Poisoning Disease Agent, language: en }
-  - { alias: SPD病原, language: en }
-
+  - alias: 鮭魚中毒病病原
+    language: zh
+  - alias: Salmon Poisoning Disease Agent
+    language: en
+  - alias: SPD病原
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓對此病原具抵抗力,極少發病
-
 etiology:
   categories:
     - name: 立克次體-吸蟲媒介感染
@@ -27,7 +29,6 @@ etiology:
         - 吸蟲囊幼攜帶Neorickettsia helminthoeca
         - 吸蟲附著於小腸黏膜時釋放立克次體
         - 立克次體侵犯淋巴系統
-
 clinicalSigns:
   early:
     - 食入生魚後5-7天出現症狀
@@ -42,26 +43,24 @@ clinicalSigns:
     - 鼻/眼分泌物
     - 神經症狀(晚期)
     - 未治療者通常7-10天內死亡
-
 diagnosis:
   primaryTests:
     - name: 糞便檢查
-      notes: "可見Nanophyetus salmincola蟲卵(小型橢圓形,76-97 x 35-55 μm)"
+      notes: 可見Nanophyetus salmincola蟲卵(小型橢圓形,76-97 x 35-55 μm)
     - name: 淋巴結細針抽吸
-      notes: "細胞學檢查可見立克次體包涵體(組織巨噬細胞內)"
+      notes: 細胞學檢查可見立克次體包涵體(組織巨噬細胞內)
     - name: PCR檢測
-      notes: "淋巴結或血液N. helminthoeca DNA檢測"
+      notes: 淋巴結或血液N. helminthoeca DNA檢測
     - name: 血液學檢查
-      notes: "白血球減少、血小板減少、貧血"
+      notes: 白血球減少、血小板減少、貧血
     - name: 生化檢查
-      notes: "低白蛋白血症、電解質異常"
+      notes: 低白蛋白血症、電解質異常
   differentialDiagnoses:
     - Elokomin Fluke Fever(N. elokominica)
     - 犬瘟熱
     - 犬小病毒腸炎
     - 其他立克次體病(Ehrlichia、Anaplasma)
     - 急性腹瀉性疾病
-
 treatment:
   medical:
     - 抗生素(首選):Doxycycline 10 mg/kg PO/IV BID x 7-10天(立克次體治療)
@@ -72,22 +71,56 @@ treatment:
     - 抗生素(繼發感染):Ampicillin 22 mg/kg IV TID
     - 輸血(嚴重貧血)
     - 營養支持:鼻胃管或靜脈營養
-
 prognosis:
-  general: "未治療死亡率高達90%。早期診斷並使用Doxycycline治療,存活率可達95%以上,通常治療後24-48小時內症狀顯著改善。延遲治療預後不良。康復後對同一病原產生免疫。"
-
+  general: 未治療死亡率高達90%。早期診斷並使用Doxycycline治療,存活率可達95%以上,通常治療後24-48小時內症狀顯著改善。延遲治療預後不良。康復後對同一病原產生免疫。
 prevention:
   - 避免餵食生鮭魚、鱒魚或其他淡水魚
   - 煮熟魚肉(加熱至63°C以上)可殺死吸蟲囊幼
   - 冷凍魚肉(-20°C x 24小時)可殺死吸蟲
   - 流行區犬隻避免飲用溪流水或接觸生魚
   - 早期發現症狀立即就醫
-
-
 guidelineRefs:
   - sourceOrg: Antonie van Leeuwenhoek
-    title: Anaplasmataceae closely related to Ehrlichia chaffeensis and Neorickettsia helminthoeca from birds in Central Europe, Hungary.
+    title: >-
+      Anaplasmataceae closely related to Ehrlichia chaffeensis and Neorickettsia helminthoeca from birds in Central
+      Europe, Hungary.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7272389/
     type: research
-    pmid: "32318980"
+    pmid: '32318980'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 蠕蟲新立克次體 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便檢查
+          notes: 可見Nanophyetus salmincola蟲卵(小型橢圓形,76-97 x 35-55 μm)
+        - name: 淋巴結細針抽吸
+          notes: 細胞學檢查可見立克次體包涵體(組織巨噬細胞內)
+        - name: PCR檢測
+          notes: 淋巴結或血液N. helminthoeca DNA檢測
+ddxSource: auto-generated

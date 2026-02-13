@@ -3,12 +3,13 @@ nameEn: Cardiac Troponin Elevation
 nameZh: 心肌旋轉蛋白升高
 bodySystem: cardiac
 description: 心肌旋轉蛋白 (cTnI) 為心肌損傷的特異性生物標記,升高提示心肌細胞壞死。可見於心臟或全身性疾病。
-
 aliases:
-  - { alias: 心肌肌鈣蛋白升高, language: zh }
-  - { alias: cTnI Elevation, language: en }
-  - { alias: Troponinemia, language: en }
-
+  - alias: 心肌肌鈣蛋白升高
+    language: zh
+  - alias: cTnI Elevation
+    language: en
+  - alias: Troponinemia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 常見於心肌病變、甲狀腺功能亢進、腎衰竭
-
 etiology:
   categories:
     - name: 心臟疾病
@@ -35,7 +35,6 @@ etiology:
       examples:
         - 心肌挫傷
         - 電擊
-
 clinicalSigns:
   early:
     - 依原發病因而定
@@ -43,33 +42,51 @@ clinicalSigns:
   progressive:
     - 心律不整
     - 心衰竭症狀 (若心臟受損嚴重)
-
 diagnosis:
   primaryTests:
     - name: Cardiac troponin I
-      notes: "犬 > 0.2 ng/ml、貓 > 0.16 ng/ml 為異常;數值越高損傷越嚴重"
+      notes: 犬 > 0.2 ng/ml、貓 > 0.16 ng/ml 為異常;數值越高損傷越嚴重
     - name: 心電圖
-      notes: "評估心律不整"
+      notes: 評估心律不整
     - name: 心臟超音波
-      notes: "評估結構性心臟病、心肌功能"
+      notes: 評估結構性心臟病、心肌功能
     - name: 血液檢查
-      notes: "評估全身性疾病 (腎功能、電解質)"
+      notes: 評估全身性疾病 (腎功能、電解質)
   differentialDiagnoses:
     - 原發性心臟病
     - 敗血症性心肌病變
     - 腎衰竭 (可能輕度升高)
-
 treatment:
   medical:
     - 治療原發病因
     - 支持性照護
     - 心律不整治療 (若需要)
     - 限制活動
-
 prognosis:
-  general: "取決於原發病因及 cTnI 升高程度;輕度升高且可逆病因預後良好;持續高值或原發性心臟病預後謹慎"
-
+  general: 取決於原發病因及 cTnI 升高程度;輕度升高且可逆病因預後良好;持續高值或原發性心臟病預後謹慎
 prevention:
   - 早期診斷及治療心臟疾病
   - 避免全身性疾病 (敗血症、胃擴張扭轉)
   - 高風險病患監測 cTnI
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 心肌旋轉蛋白升高 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: Cardiac troponin I
+          notes: 犬 > 0.2 ng/ml、貓 > 0.16 ng/ml 為異常;數值越高損傷越嚴重
+        - name: 心電圖
+          notes: 評估心律不整
+        - name: 心臟超音波
+          notes: 評估結構性心臟病、心肌功能
+ddxSource: auto-generated

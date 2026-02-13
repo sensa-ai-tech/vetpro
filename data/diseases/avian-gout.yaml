@@ -3,18 +3,19 @@ nameEn: Avian Gout
 nameZh: 禽類痛風
 bodySystem: metabolic
 description: 禽類痛風是尿酸代謝異常導致尿酸鹽沉積於關節（關節型）或內臟器官（內臟型）的疾病。常因腎功能不全、脫水或高蛋白飲食引起。內臟型更為常見且預後較差，關節型則表現為關節腫脹與跛行。
-
 aliases:
-  - { alias: 鳥類痛風, language: zh }
-  - { alias: 禽類尿酸沉積症, language: zh }
-  - { alias: Articular gout in birds, language: en }
-  - { alias: Visceral gout in birds, language: en }
-
+  - alias: 鳥類痛風
+    language: zh
+  - alias: 禽類尿酸沉積症
+    language: zh
+  - alias: Articular gout in birds
+    language: en
+  - alias: Visceral gout in birds
+    language: en
 species:
   - speciesCommon: bird
     prevalence: common
     notes: 各種鳥類均可發生。鸚鵡類及猛禽較常見。腎功能不全為最主要潛在原因。老年鳥發病率較高。
-
 etiology:
   categories:
     - name: 腎功能障礙
@@ -32,7 +33,6 @@ etiology:
       examples:
         - 遺傳易感性
         - 代謝性疾病
-
 clinicalSigns:
   early:
     - 多飲多尿
@@ -45,7 +45,6 @@ clinicalSigns:
     - 嗜睡
     - 體重下降
     - 羽毛蓬亂
-
 diagnosis:
   primaryTests:
     - name: 血液尿酸檢測
@@ -54,7 +53,6 @@ diagnosis:
       notes: 關節型痛風可抽出白色尿酸鹽結晶。偏光顯微鏡見雙折射針狀結晶
     - name: X 光
       notes: 關節周圍軟組織腫脹。腎臟腫大。內臟器官鈣化
-
 treatment:
   principles:
     - 降低血清尿酸濃度
@@ -69,16 +67,58 @@ treatment:
     - 確保充足飲水量
     - 維生素 A 補充
     - 疼痛管理（Meloxicam 0.5-1 mg/kg SID）
-
 prognosis: 關節型痛風經治療後可穩定控制，預後尚可。內臟型痛風預後不良，發現時通常已有廣泛器官損害。早期診斷並矯正飲食與水合狀態是改善預後的關鍵。嚴重腎衰竭者預後極差。
-
-
 guidelineRefs:
   - sourceOrg: The journal of poultry science
     title: Network Pharmacology Suggests Mechanisms for Therapeutic Effects of Caulis Sinomenii on Avian Gout.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11701077/
     type: research
-    pmid: "39781185"
+    pmid: '39781185'
 pubmedQueries:
   - query: '"avian gout" OR ("gout" AND (bird OR psittacine)) AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: polyarthritis
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類痛風 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - polyarthritis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液尿酸檢測
+          notes: 血清尿酸濃度升高（>15 mg/dL 具臨床意義）。正常鳥尿酸也偏高需注意
+        - name: 關節穿刺
+          notes: 關節型痛風可抽出白色尿酸鹽結晶。偏光顯微鏡見雙折射針狀結晶
+        - name: X 光
+          notes: 關節周圍軟組織腫脹。腎臟腫大。內臟器官鈣化
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 降低血清尿酸濃度
+        - 治療基礎腎臟疾病
+        - 飲食調整
+ddxSource: auto-generated

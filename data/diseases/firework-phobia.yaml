@@ -3,11 +3,11 @@ nameEn: Firework Phobia
 nameZh: 煙火恐懼症
 bodySystem: behavioral
 description: 犬對煙火聲響之極度恐懼。常與雷雨恐懼重疊。可能導致逃跑、自我傷害。需行為修正及藥物預防性治療。
-
 aliases:
-  - { alias: 鞭炮恐懼, language: zh }
-  - { alias: Firecracker Fear, language: en }
-
+  - alias: 鞭炮恐懼
+    language: zh
+  - alias: Firecracker Fear
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓可能躲藏反應
-
 etiology:
   categories:
     - name: 聲響敏感
@@ -30,7 +29,6 @@ etiology:
         - 遺傳傾向
         - 缺乏社會化
         - 創傷經驗
-
 clinicalSigns:
   early:
     - 煙火聲開始時焦慮
@@ -41,18 +39,16 @@ clinicalSigns:
     - 破壞行為
     - 排泄失禁
     - 自我傷害
-
 diagnosis:
   primaryTests:
     - name: 行為史
-      notes: "特定於煙火或廣泛噪音恐懼"
+      notes: 特定於煙火或廣泛噪音恐懼
     - name: 嚴重度評估
-      notes: "1-5分量表"
+      notes: 1-5分量表
   differentialDiagnoses:
     - 雷雨恐懼
     - 一般噪音恐懼
     - 分離焦慮
-
 treatment:
   medical:
     - 預防性藥物（煙火節前）：
@@ -64,11 +60,32 @@ treatment:
     - 安全避難區
     - 分散注意力（遊戲、零食）
     - 環境管理：關窗、白噪音、避難所
-
 prognosis:
-  general: "預防性藥物及行為修正可顯著改善。需每年煙火季節重複治療。"
-
+  general: 預防性藥物及行為修正可顯著改善。需每年煙火季節重複治療。
 prevention:
   - 幼犬聲響社會化
   - 煙火季節前預防性訓練
   - 保持平靜態度
+associatedSymptoms:
+  - symptomId: trembling
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 煙火恐懼症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - trembling 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 行為史
+          notes: 特定於煙火或廣泛噪音恐懼
+        - name: 嚴重度評估
+          notes: 1-5分量表
+ddxSource: auto-generated

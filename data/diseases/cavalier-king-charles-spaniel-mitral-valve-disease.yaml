@@ -3,19 +3,21 @@ nameEn: Cavalier King Charles Spaniel Mitral Valve Disease
 nameZh: 查理士王小獵犬二尖瓣疾病
 bodySystem: cardiac
 description: 查理士王小獵犬（CKCS）為黏液瘤性二尖瓣退化（MMVD）最高風險品種，幾乎所有 CKCS 在老年時都會發展出不同程度的二尖瓣疾病。相較其他品種，CKCS 發病年齡更早、進展更快，為該品種最重要的健康問題。
-
 aliases:
-  - { alias: CKCS 二尖瓣疾病, language: zh }
-  - { alias: 查理士王心臟病, language: zh }
-  - { alias: CKCS MVD, language: en }
-  - { alias: Cavalier mitral valve disease, language: en }
-  - { alias: CKCS myxomatous mitral valve degeneration, language: en }
-
+  - alias: CKCS 二尖瓣疾病
+    language: zh
+  - alias: 查理士王心臟病
+    language: zh
+  - alias: CKCS MVD
+    language: en
+  - alias: Cavalier mitral valve disease
+    language: en
+  - alias: CKCS myxomatous mitral valve degeneration
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
     notes: 幾乎所有查理士王小獵犬在 10 歲前都會發展出二尖瓣疾病。約 50% 在 5 歲前即出現心雜音。為該品種首要健康問題與常見死因。
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -29,7 +31,6 @@ etiology:
         - 瓣葉增厚、脫垂
         - 腱索伸長或斷裂
         - 二尖瓣閉鎖不全導致血液逆流
-
 clinicalSigns:
   early:
     - 左側心尖區收縮期心雜音
@@ -42,7 +43,6 @@ clinicalSigns:
     - 暈厥
     - 腹水（右側心衰竭時）
     - 心律不整
-
 diagnosis:
   primaryTests:
     - name: 心臟聽診
@@ -51,7 +51,6 @@ diagnosis:
       notes: 評估二尖瓣形態、逆流程度、左心房與心室大小。EPIC 試驗分期標準
     - name: 胸腔 X 光
       notes: 評估心臟大小（VHS）、肺靜脈擴張、肺水腫
-
 treatment:
   principles:
     - 依 ACVIM 分期指引治療
@@ -66,9 +65,50 @@ treatment:
     - 限鈉飲食
     - 適度運動
     - 繁殖篩選（心雜音個體不建議繁殖）
-
 prognosis: 品種特異性進行性疾病。B1 期可維持多年穩定。B2 期開始 Pimobendan 可延長至 CHF 發作前時間。一旦進入 C 期，中位存活時間約 9-12 個月（藥物控制下）。早期篩選與繁殖管理為降低品種疾病盛行率的關鍵。
-
 pubmedQueries:
   - query: '"Cavalier King Charles Spaniel" AND ("mitral valve" OR "MMVD") AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: heart-murmur
+    frequency: common
+  - symptomId: coughing
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 查理士王小獵犬二尖瓣疾病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟聽診
+          notes: 左側心尖區收縮期心雜音。雜音強度分級（I-VI/VI）。建議定期追蹤
+        - name: 心臟超音波
+          notes: 評估二尖瓣形態、逆流程度、左心房與心室大小。EPIC 試驗分期標準
+        - name: 胸腔 X 光
+          notes: 評估心臟大小（VHS）、肺靜脈擴張、肺水腫
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 依 ACVIM 分期指引治療
+        - B2 期開始 Pimobendan
+        - CHF 時三聯療法
+ddxSource: auto-generated

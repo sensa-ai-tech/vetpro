@@ -3,19 +3,22 @@ nameEn: Hepatitis Chronic Canine
 nameZh: 犬慢性肝炎
 bodySystem: hepatic
 description: 犬慢性肝炎是以肝臟持續性炎症反應與進行性肝細胞壞死為特徵的疾病，可由多種病因引起，包括銅蓄積、免疫介導、感染性及藥物誘發等。是犬最常見的肝臟疾病之一。
-
 aliases:
-  - { alias: 犬慢性活動性肝炎, language: zh }
-  - { alias: 犬特發性慢性肝炎, language: zh }
-  - { alias: Canine Chronic Active Hepatitis, language: en }
-  - { alias: Canine Idiopathic Chronic Hepatitis, language: en }
-
+  - alias: 犬慢性活動性肝炎
+    language: zh
+  - alias: 犬特發性慢性肝炎
+    language: zh
+  - alias: Canine Chronic Active Hepatitis
+    language: en
+  - alias: Canine Idiopathic Chronic Hepatitis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
-    notes: 犬慢性肝炎好發於中老年犬。品種好發傾向明顯：Cocker Spaniel、Doberman Pinscher、Labrador Retriever、West Highland White Terrier、Bedlington Terrier。雌犬發病率略高。
-
+    notes: >-
+      犬慢性肝炎好發於中老年犬。品種好發傾向明顯：Cocker Spaniel、Doberman Pinscher、Labrador Retriever、West Highland White Terrier、Bedlington
+      Terrier。雌犬發病率略高。
 etiology:
   categories:
     - name: 銅相關
@@ -37,7 +40,6 @@ etiology:
         - 長期使用 phenobarbital
         - Lomustine (CCNU) 肝毒性
         - 長期使用 carprofen 等 NSAIDs
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -52,20 +54,18 @@ clinicalSigns:
     - 腹水
     - 肝性腦病（行為異常、無目的遊走、頭頂壁）
     - 凝血功能異常
-
 diagnosis:
   primaryTests:
     - name: 肝臟穿刺活檢
-      notes: "確診金標準。組織病理學顯示門脈區或小葉周圍炎症細胞浸潤、肝細胞壞死、纖維化程度。銅染色評估銅蓄積。"
+      notes: 確診金標準。組織病理學顯示門脈區或小葉周圍炎症細胞浸潤、肝細胞壞死、纖維化程度。銅染色評估銅蓄積。
     - name: 血液生化
-      notes: "ALT 持續升高（>正常上限2倍持續超過4週）為篩檢指標。ALP 常同步升高。低白蛋白血症、低BUN提示肝功能不全。"
+      notes: ALT 持續升高（>正常上限2倍持續超過4週）為篩檢指標。ALP 常同步升高。低白蛋白血症、低BUN提示肝功能不全。
   differentialDiagnoses:
     - 銅儲積性肝病
     - 肝臟腫瘤
     - 結節性增生
     - 反應性肝炎
     - 膽管炎
-
 treatment:
   medical:
     - 免疫抑制治療（特發性/免疫介導型）：Prednisolone 1-2 mg/kg PO q24h 漸減
@@ -78,45 +78,95 @@ treatment:
   surgical:
     - 通常不適用手術治療
     - 肝臟活檢需超音波引導或腹腔鏡取樣
-
 prognosis:
-  general: "預後取決於診斷時的纖維化程度與病因。早期診斷且對治療反應良好者中位存活時間可超過2年。已進展至肝硬化者預後不良，中位存活時間約數月。銅相關慢性肝炎若早期治療反應較佳。"
-
+  general: 預後取決於診斷時的纖維化程度與病因。早期診斷且對治療反應良好者中位存活時間可超過2年。已進展至肝硬化者預後不良，中位存活時間約數月。銅相關慢性肝炎若早期治療反應較佳。
 prevention:
   - 好發品種定期肝酵素篩檢
   - 使用肝毒性藥物時定期監測肝功能
   - 飲食銅含量管理
   - Bedlington Terrier 的 COMMD1 基因篩檢
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
     title: ACVIM consensus statement on the diagnosis and treatment of chronic hepatitis in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6524396/
     type: consensus
-    pmid: "30844094"
+    pmid: '30844094'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
     title: Comparative review of copper-associated chronic hepatitis in dogs and Wilson disease in humans.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12711481/
     type: review
-    pmid: "41427142"
+    pmid: '41427142'
     relevance: primary
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
     title: Serum protein electrophoresis in 26 dogs with chronic hepatitis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9266494/
     type: review
-    pmid: "35686386"
+    pmid: '35686386'
     relevance: primary
-  - sourceOrg: "Liver international : official journal of the International Association for the Study of the Liver"
-    title: "The global epidemiology of hepatitis E virus infection: A systematic review and meta-analysis."
+  - sourceOrg: 'Liver international : official journal of the International Association for the Study of the Liver'
+    title: 'The global epidemiology of hepatitis E virus infection: A systematic review and meta-analysis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7384095/
     type: review
-    pmid: "32281721"
+    pmid: '32281721'
     relevance: primary
   - sourceOrg: Frontiers in pharmacology
-    title: The Traditional Uses, Phytochemistry, Pharmacology, Toxicology, and Clinical Uses of Metagentiana Rhodantha (Franch.) T.N.Ho and S.W.Liu, an Ethnomedicine in Southwest China.
+    title: >-
+      The Traditional Uses, Phytochemistry, Pharmacology, Toxicology, and Clinical Uses of Metagentiana Rhodantha
+      (Franch.) T.N.Ho and S.W.Liu, an Ethnomedicine in Southwest China.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8107381/
     type: review
-    pmid: "33981236"
+    pmid: '33981236'
     relevance: primary
+diagnosticAlgorithm:
+  title: 犬慢性支氣管炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估持續2個月以上的慢性咳嗽，排除其他呼吸道和心臟疾病
+      findings:
+        - 持續性咳嗽超過2個月
+        - 咳嗽可能在運動或興奮時加劇
+        - 可能有黏液性痰液產生
+    - step: 2
+      action: 影像學與排除性檢查
+      details: 進行胸腔X光排除心臟病和腫瘤，心臟超音波評估心功能
+      findings:
+        - X光顯示支氣管壁增厚（甜甜圈和軌道線徵象）
+        - 排除心臟擴大和充血性心衰竭
+        - 排除肺腫瘤
+    - step: 3
+      action: 支氣管鏡與確診
+      details: 進行支氣管鏡檢查和支氣管肺泡灌洗液（BAL）分析確認炎症類型
+      findings:
+        - 支氣管鏡見黏膜充血和黏液增加
+        - BAL細胞學顯示中性球或混合性炎症
+        - 排除感染性原因後確診
+clinicalPearls:
+  - 慢性咳嗽犬必須先排除心臟病——NT-proBNP是有用的篩檢工具
+  - 吸入型類固醇可避免全身性副作用，是長期抗炎治療的首選
+  - 減重是肥胖犬慢性支氣管炎管理最重要的非藥物措施
+  - BAL細胞學以嗜中性球為主提示感染性成分，嗜酸性球為主提示過敏性成分
+  - 支氣管擴張症（bronchiectasis）是不可逆的終末期變化
+monitoringItems:
+  - 臨床症狀評估（咳嗽頻率、運動耐受度）
+  - 定期胸腔X光
+  - BAL追蹤（評估治療反應，必要時）
+  - 體重管理追蹤
+  - 動脈血氧飽和度
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: stertor-stridor
+    frequency: uncommon
+ddxSource: book

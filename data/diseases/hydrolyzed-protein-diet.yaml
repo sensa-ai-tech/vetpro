@@ -3,12 +3,13 @@ nameEn: Hydrolyzed Protein Diet
 nameZh: 水解蛋白飲食
 bodySystem: metabolic
 description: 將蛋白質分解為小分子胜肽的飲食，分子量過小無法引發免疫反應。為食物過敏的金標準治療飲食，優於新奇蛋白飲食。
-
 aliases:
-  - { alias: 水解處方飼料, language: zh }
-  - { alias: Hydrolyzed Diet, language: en }
-  - { alias: Hypoallergenic Diet, language: en }
-
+  - alias: 水解處方飼料
+    language: zh
+  - alias: Hydrolyzed Diet
+    language: en
+  - alias: Hypoallergenic Diet
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓較難適應口感但有效
-
 etiology:
   categories:
     - name: 作用機轉
@@ -32,7 +32,6 @@ etiology:
         - 炎症性腸病(IBD)
         - 慢性腸胃炎
         - 蛋白質流失性腸病
-
 clinicalSigns:
   early:
     - 使用水解飲食後症狀改善
@@ -41,18 +40,16 @@ clinicalSigns:
   progressive:
     - 持續使用：症狀完全控制
     - 停用或吃到其他食物：症狀復發
-
 diagnosis:
   primaryTests:
     - name: 排除試驗飲食
-      notes: "8-12週純水解飲食"
+      notes: 8-12週純水解飲食
     - name: 臨床反應評估
-      notes: "皮膚搔癢評分、糞便品質"
+      notes: 皮膚搔癢評分、糞便品質
   differentialDiagnoses:
     - 食物過敏
     - 炎症性腸病
     - 環境過敏
-
 treatment:
   medical:
     - 商業水解處方飼料
@@ -68,21 +65,39 @@ treatment:
     - 益生菌
     - Omega-3脂肪酸(抗發炎)
     - 必要時類固醇(短期控制症狀)
-
 prognosis:
-  general: "食物過敏犬貓使用水解飲食有效率80-90%；需終生維持"
-
+  general: 食物過敏犬貓使用水解飲食有效率80-90%；需終生維持
 prevention:
   - 確診食物過敏後嚴格執行
   - 教育家庭成員重要性
   - 避免交叉污染
   - 定期追蹤評估
-
-
 guidelineRefs:
   - sourceOrg: BMC veterinary research
-    title: Undeclared animal species in dry and wet novel and hydrolyzed protein diets for dogs and cats detected by microarray analysis.
+    title: >-
+      Undeclared animal species in dry and wet novel and hydrolyzed protein diets for dogs and cats detected by
+      microarray analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6020431/
     type: research
-    pmid: "29945610"
+    pmid: '29945610'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: common
+diagnosticAlgorithm:
+  title: 水解蛋白飲食 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 排除試驗飲食
+          notes: 8-12週純水解飲食
+        - name: 臨床反應評估
+          notes: 皮膚搔癢評分、糞便品質
+ddxSource: auto-generated

@@ -3,12 +3,13 @@ nameEn: Pica
 nameZh: 異食癖
 bodySystem: behavioral
 description: 動物持續攝食非食物物質（如布料、塑膠、岩石、紙張等）的行為異常。需排除營養缺乏或腸胃道疾病等醫學原因後方可歸因於行為問題。異食癖可導致腸道異物阻塞等嚴重併發症。
-
 aliases:
-  - { alias: "異嗜癖", language: zh }
-  - { alias: "非食物攝食", language: zh }
-  - { alias: "Non-Food Ingestion", language: en }
-
+  - alias: 異嗜癖
+    language: zh
+  - alias: 非食物攝食
+    language: zh
+  - alias: Non-Food Ingestion
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓異食癖以羊毛/布料吸吮與攝食最具代表性，Siamese 及 Burmese 品種好發。
-
 etiology:
   categories:
     - name: 行為性
@@ -31,7 +31,6 @@ etiology:
         - 腸胃道疾病
         - 腦部疾病
         - 胰外分泌功能不足
-
 clinicalSigns:
   early:
     - 反覆舔咬非食物物品
@@ -42,14 +41,12 @@ clinicalSigns:
     - 腸道阻塞（急症）
     - 體重下降
     - 營養不良
-
 diagnosis:
   primaryTests:
     - name: 完整醫學檢查
       notes: CBC/生化、甲狀腺、TLI（排除 EPI）。腹部 X 光排除異物。排除所有醫學原因。
     - name: 行為評估
       notes: 評估異食行為的觸發因子、頻率、攝食物質種類及環境因素。
-
 treatment:
   principles:
     - 排除醫學原因
@@ -62,36 +59,68 @@ treatment:
     - 行為修正（正向轉移注意力）
     - Fluoxetine 1-2 mg/kg PO SID（強迫症型）
     - Clomipramine 1-3 mg/kg PO BID（替代選擇）
-
 prognosis: 醫學原因導致的異食癖治療基礎疾病後可改善。行為性異食癖需長期管理，藥物與環境管理結合可顯著降低頻率。腸道異物為最主要的併發症風險，飼主教育至關重要。
-
-
 guidelineRefs:
   - sourceOrg: Biological reviews of the Cambridge Philosophical Society
     title: Are we overestimating risk of enteric pathogen spillover from wild birds to humans?
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7317827/
     type: review
-    pmid: "32003106"
+    pmid: '32003106'
   - sourceOrg: Journal of medical entomology
-    title: "Impact of West Nile Virus on Bird Populations: Limited Lasting Effects, Evidence for Recovery, and Gaps in Our Understanding of Impacts on Ecosystems."
+    title: >-
+      Impact of West Nile Virus on Bird Populations: Limited Lasting Effects, Evidence for Recovery, and Gaps in Our
+      Understanding of Impacts on Ecosystems.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6821264/
     type: review
-    pmid: "31549723"
-  - sourceOrg: "Neuromodulation : journal of the International Neuromodulation Society"
+    pmid: '31549723'
+  - sourceOrg: 'Neuromodulation : journal of the International Neuromodulation Society'
     title: Chemotherapy-Induced Pica in Rats Reduced by Electroacupuncture.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6946630/
     type: review
-    pmid: "29094451"
+    pmid: '29094451'
   - sourceOrg: JFMS open reports
     title: Human-directed aggression and pica in a 1-year-old cat, which worsened following international relocation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10334008/
     type: case-report
-    pmid: "37441538"
+    pmid: '37441538'
   - sourceOrg: BMC veterinary research
-    title: "Functional dyspepsia: from human to dog, a retrospective study of 29 cases illustrating a complex entity."
+    title: 'Functional dyspepsia: from human to dog, a retrospective study of 29 cases illustrating a complex entity.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12512554/
     type: research
-    pmid: "41074059"
+    pmid: '41074059'
 pubmedQueries:
   - query: '"Pica" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 異食癖 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - behaviour-change 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 完整醫學檢查
+          notes: CBC/生化、甲狀腺、TLI（排除 EPI）。腹部 X 光排除異物。排除所有醫學原因。
+        - name: 行為評估
+          notes: 評估異食行為的觸發因子、頻率、攝食物質種類及環境因素。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 排除醫學原因
+        - 環境管理（移除可攝食的物品）
+        - 提供替代活動
+ddxSource: auto-generated

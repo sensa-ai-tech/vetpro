@@ -3,13 +3,15 @@ nameEn: Water Intoxication
 nameZh: 水中毒
 bodySystem: toxicology
 description: 水中毒 (water intoxication) 因短時間內大量攝水引起稀釋性低鈉血症，導致腦水腫與中樞神經系統損傷。犬常見於長時間水中玩耍（撿球、游泳時大量吞水）或飲水競賽後。進展快速，可在數小時內致命。
-
 aliases:
-  - { alias: 低鈉血症中毒, language: zh }
-  - { alias: 稀釋性低鈉血症, language: zh }
-  - { alias: Hyponatremia, language: en }
-  - { alias: Water Toxemia, language: en }
-
+  - alias: 低鈉血症中毒
+    language: zh
+  - alias: 稀釋性低鈉血症
+    language: zh
+  - alias: Hyponatremia
+    language: en
+  - alias: Water Toxemia
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓水中毒極罕見（自然避水行為）。
-
 etiology:
   categories:
     - name: 致病機制
@@ -32,7 +33,6 @@ etiology:
         - 長時間游泳
         - 水管噴水玩耍
         - 飲水競賽
-
 clinicalSigns:
   early:
     - 嗜睡
@@ -45,7 +45,6 @@ clinicalSigns:
     - 昏迷
     - 呼吸抑制
     - 死亡（可在數小時內發生）
-
 diagnosis:
   primaryTests:
     - name: 血清鈉
@@ -56,7 +55,6 @@ diagnosis:
     - CBC（血容量增加稀釋效應）
     - 尿液分析（極低比重尿）
     - 神經學檢查
-
 treatment:
   principles:
     - 緩慢矯正低鈉血症
@@ -71,41 +69,92 @@ treatment:
     - Mannitol（腦水腫管理）
     - 癲癇控制
     - 每 1-2 小時監測血鈉
-
 prognosis: 犬水中毒早期發現並適當矯正預後可良好。嚴重低鈉（<120 mEq/L）伴癲癇者預後謹慎。矯正過快可能引起滲透性脫髓鞘症候群。預防（限制水中玩耍時間、休息間隔）最為重要。
-
-
 guidelineRefs:
   - sourceOrg: Physiological research
     title: Effect of methylprednisolone on experimental brain edema in rats - own experience reviewed.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8884394/
     type: review
-    pmid: "35099248"
+    pmid: '35099248'
     relevance: primary
   - sourceOrg: Physiological research
     title: Cerebral perfusion pressure and behavior monitoring in freely moving rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10861253/
     type: research
-    pmid: "38165758"
+    pmid: '38165758'
     relevance: supporting
   - sourceOrg: Physiological research
     title: Determination of brain water content by dry/wet weight measurement for the detection of experimental brain edema.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9906661/
     type: research
-    pmid: "36647915"
+    pmid: '36647915'
     relevance: supporting
-  - sourceOrg: "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism"
-    title: Malignant astrocyte swelling and impaired glutamate clearance drive the expansion of injurious spreading depolarization foci.
+  - sourceOrg: >-
+      Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood
+      Flow and Metabolism
+    title: >-
+      Malignant astrocyte swelling and impaired glutamate clearance drive the expansion of injurious spreading
+      depolarization foci.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8943616/
     type: research
-    pmid: "34427145"
+    pmid: '34427145'
     relevance: supporting
   - sourceOrg: Physiological research
     title: Effect of methylprednisolone on experimental brain edema in magnetic resonance imaging.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8549911/
     type: research
-    pmid: "32901489"
+    pmid: '32901489'
     relevance: supporting
 pubmedQueries:
   - query: '"water intoxication" OR "hyponatremia" AND (veterinary OR canine) AND ("treatment" OR "exercise")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: mydriasis
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: abdominal-distension
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 水中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - mydriasis 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清鈉
+          notes: 低鈉血症（<130 mEq/L）確認。<120 mEq/L 為嚴重
+        - name: 血清滲透壓
+          notes: 低滲血症
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC（血容量增加稀釋效應）
+        - 尿液分析（極低比重尿）
+        - 神經學檢查
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 緩慢矯正低鈉血症
+        - 控制腦水腫
+        - 限制水分攝入
+ddxSource: auto-generated

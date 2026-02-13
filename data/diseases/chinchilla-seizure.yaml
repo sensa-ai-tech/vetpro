@@ -3,22 +3,20 @@ nameEn: Chinchilla Seizure
 nameZh: 龍貓癲癇發作
 bodySystem: neurology
 description: 龍貓大腦異常放電導致的突發性意識、運動異常。可因中暑、低血鈣、中毒或腦部疾病引起。需快速降溫（若過熱）並控制發作。
-
 aliases:
-  - { alias: "龍貓癲癇發作", language: zh }
-  - { alias: "Chinchilla Seizure", language: en }
-
+  - alias: 龍貓癲癇發作
+    language: zh
+  - alias: Chinchilla Seizure
+    language: en
 species:
   - speciesCommon: chinchilla
     prevalence: uncommon
     notes: 龍貓可受此疾病影響。
-
 etiology:
   categories:
     - name: 病因
       examples:
         - 詳見臨床文獻
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -27,14 +25,12 @@ clinicalSigns:
   progressive:
     - 症狀加重
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 完整理學檢查與病史評估。
     - name: 實驗室檢查
       notes: CBC/生化排除系統性疾病。
-
 treatment:
   principles:
     - 治療基礎病因
@@ -44,21 +40,55 @@ treatment:
     - 依病因治療
     - 支持性照護
     - 定期追蹤
-
 prognosis: 預後取決於疾病嚴重度與治療時效。早期診斷與適當治療可改善預後。
-
-
 guidelineRefs:
   - sourceOrg: Molecules (Basel, Switzerland)
-    title: "Effects of St John's wort (Hypericum perforatum L.) extracts on epileptogenesis."
+    title: Effects of St John's wort (Hypericum perforatum L.) extracts on epileptogenesis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6264782/
     type: research
-    pmid: "21931287"
+    pmid: '21931287'
   - sourceOrg: Veterinary pathology
     title: Clinical, pathologic, and immunohistochemical features of pituitary tumors in 4 chinchillas.
     url: https://pubmed.ncbi.nlm.nih.gov/36869824/
     type: research
-    pmid: "36869824"
+    pmid: '36869824'
 pubmedQueries:
   - query: '"Chinchilla Seizure" AND (veterinary OR chinchilla) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 龍貓癲癇發作 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - seizures 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 完整理學檢查與病史評估。
+        - name: 實驗室檢查
+          notes: CBC/生化排除系統性疾病。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 支持性照護
+        - 監測恢復進度
+ddxSource: auto-generated

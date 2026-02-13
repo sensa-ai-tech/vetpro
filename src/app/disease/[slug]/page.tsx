@@ -118,6 +118,9 @@ export default async function DiseasePage({
   const diagnosis = parseJson(disease.diagnosis);
   const treatment = parseJson(disease.treatment);
   const stagingSystem = parseJson(disease.stagingSystem);
+  const diagnosticAlgorithm = parseJson(disease.diagnosticAlgorithm);
+  const clinicalPearls = parseJson(disease.clinicalPearls);
+  const monitoringItems = parseJson(disease.monitoringItems);
 
   const siteUrl =
     process.env.NEXT_PUBLIC_SITE_URL || "https://vetpro.example.com";
@@ -422,6 +425,101 @@ export default async function DiseasePage({
           {disease.prognosis && (
             <Section title="預後 Prognosis">
               <p className="text-sm">{disease.prognosis}</p>
+            </Section>
+          )}
+
+          {/* Diagnostic Algorithm */}
+          {diagnosticAlgorithm && diagnosticAlgorithm.steps?.length > 0 && (
+            <Section title="診斷流程 Diagnostic Algorithm">
+              {diagnosticAlgorithm.title && (
+                <p className="mb-3 text-sm font-medium text-muted">
+                  {diagnosticAlgorithm.title}
+                </p>
+              )}
+              <div className="space-y-3">
+                {diagnosticAlgorithm.steps.map(
+                  (
+                    step: {
+                      step: number;
+                      action: string;
+                      details: string;
+                      findings: string[];
+                    },
+                    i: number
+                  ) => (
+                    <div
+                      key={i}
+                      className="relative rounded-lg border border-border bg-card p-3 pl-12"
+                    >
+                      <span className="absolute left-3 top-3 flex h-6 w-6 items-center justify-center rounded-full bg-primary text-xs font-bold text-white">
+                        {step.step}
+                      </span>
+                      <h4 className="text-sm font-semibold">{step.action}</h4>
+                      {step.details && (
+                        <p className="mt-1 text-xs text-muted">
+                          {step.details}
+                        </p>
+                      )}
+                      {step.findings?.length > 0 && (
+                        <div className="mt-2 flex flex-wrap gap-1.5">
+                          {step.findings.map((f: string, j: number) => (
+                            <span
+                              key={j}
+                              className="rounded-full bg-accent-light/40 px-2 py-0.5 text-xs text-accent"
+                            >
+                              {f}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  )
+                )}
+              </div>
+              {disease.ddxSource && (
+                <p className="mt-2 text-xs text-muted">
+                  來源：
+                  {disease.ddxSource === "book"
+                    ? "專家審閱"
+                    : disease.ddxSource === "book-only"
+                      ? "專家審閱"
+                      : "自動產生"}
+                </p>
+              )}
+            </Section>
+          )}
+
+          {/* Clinical Pearls */}
+          {clinicalPearls && clinicalPearls.length > 0 && (
+            <Section title="臨床重點 Clinical Pearls">
+              <div className="space-y-2">
+                {clinicalPearls.map((pearl: string, i: number) => (
+                  <div
+                    key={i}
+                    className="flex items-start gap-2 rounded-lg bg-yellow-50 px-3 py-2 text-sm dark:bg-yellow-900/10"
+                  >
+                    <span className="mt-0.5 shrink-0 text-yellow-500">💡</span>
+                    <span>{pearl}</span>
+                  </div>
+                ))}
+              </div>
+            </Section>
+          )}
+
+          {/* Monitoring Items */}
+          {monitoringItems && monitoringItems.length > 0 && (
+            <Section title="追蹤監控 Monitoring">
+              <ul className="space-y-1.5">
+                {monitoringItems.map((item: string, i: number) => (
+                  <li
+                    key={i}
+                    className="flex items-start gap-2 text-sm"
+                  >
+                    <span className="mt-0.5 shrink-0 text-primary">📋</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </Section>
           )}
         </div>

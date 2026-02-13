@@ -3,19 +3,20 @@ nameEn: Rat Obesity
 nameZh: 大鼠肥胖症
 bodySystem: metabolic
 description: 大鼠肥胖症為寵物鼠常見的代謝問題，主因過度餵食高脂高碳水化合物食物及運動不足，可繼發脂肪肝、心血管疾病、腫瘤及壽命縮短。
-
 aliases:
-  - { alias: 鼠肥胖, language: zh }
-  - { alias: 寵物鼠過重, language: zh }
-  - { alias: Rat overweight, language: en }
-  - { alias: Obesity in pet rats, language: en }
-
+  - alias: 鼠肥胖
+    language: zh
+  - alias: 寵物鼠過重
+    language: zh
+  - alias: Rat overweight
+    language: en
+  - alias: Obesity in pet rats
+    language: en
 species:
   - speciesCommon: rat
     speciesScientific: Rattus norvegicus
     prevalence: common
     notes: 寵物鼠極為常見。雌性去勢後及老年鼠風險更高。某些品系（如 Zucker rats）具有遺傳傾向。
-
 etiology:
   categories:
     - name: 營養性
@@ -29,7 +30,6 @@ etiology:
         - 缺乏環境豐富化
         - 去勢後代謝率下降
         - 老年代謝減緩
-
 clinicalSigns:
   early:
     - 體重持續增加
@@ -41,19 +41,17 @@ clinicalSigns:
     - 呼吸費力（脂肪壓迫胸腔）
     - 自我理毛困難
     - 皮膚皺摺間皮炎
-
 diagnosis:
   primaryTests:
     - name: 體重與體態評分
-      notes: "定期秤重並以體態評分（BCS）評估。成年公鼠正常體重約 450-650g，母鼠約 250-450g"
+      notes: 定期秤重並以體態評分（BCS）評估。成年公鼠正常體重約 450-650g，母鼠約 250-450g
     - name: 血液生化檢查
-      notes: "檢測血糖、三酸甘油酯、膽固醇等代謝指標"
+      notes: 檢測血糖、三酸甘油酯、膽固醇等代謝指標
   differentialDiagnoses:
     - 腹水
     - 腹腔腫瘤
     - 妊娠
     - 子宮蓄膿
-
 treatment:
   medical:
     - 漸進式減少每日餵食量（每週減少 10-15%）
@@ -61,46 +59,71 @@ treatment:
     - 限制種子與堅果類零食
     - 增加新鮮蔬菜比例
     - 增加運動量（提供大型跑輪、探索空間）
-
 prognosis:
-  general: "飲食管理配合運動增加後通常可改善。肥胖持續則易發展出脂肪肝、糖尿病及腫瘤，顯著縮短壽命。"
-
+  general: 飲食管理配合運動增加後通常可改善。肥胖持續則易發展出脂肪肝、糖尿病及腫瘤，顯著縮短壽命。
 prevention:
   - 提供均衡的商業鼠糧為主食
   - 限制高脂零食
   - 提供足夠運動空間與跑輪
   - 定期秤重監測
   - 去勢後適度減少餵食量
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in nutrition
-    title: "Obesity in the Otsuka Long Evans Tokushima Fatty Rat: Mechanisms and Discoveries."
+    title: 'Obesity in the Otsuka Long Evans Tokushima Fatty Rat: Mechanisms and Discoveries.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4961687/
     type: review
-    pmid: "27512691"
+    pmid: '27512691'
     relevance: supporting
   - sourceOrg: Biomolecules
     title: Melatonin Administration Attenuates High-Fat-Diet-Induced Renal Damage in Wistar Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12839221/
     type: research
-    pmid: "41594577"
+    pmid: '41594577'
     relevance: supporting
   - sourceOrg: International journal of molecular sciences
-    title: Effects of Sleeve Gastrectomy and Treadmill Exercise on Skeletal Muscle and Ectopic Fat in High-Fat Diet-Induced Obese Rats.
+    title: >-
+      Effects of Sleeve Gastrectomy and Treadmill Exercise on Skeletal Muscle and Ectopic Fat in High-Fat Diet-Induced
+      Obese Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12154429/
     type: research
-    pmid: "40508104"
+    pmid: '40508104'
     relevance: supporting
-  - sourceOrg: "Molecular nutrition &amp; food research"
-    title: Grape-Seed Proanthocyanidin Extract (GSPE) Modulates Diurnal Rhythms of Hepatic Metabolic Genes and Metabolites, and Reduces Lipid Deposition in Cafeteria-Fed Rats in a Time-of-Day-Dependent Manner.
+  - sourceOrg: Molecular nutrition &amp; food research
+    title: >-
+      Grape-Seed Proanthocyanidin Extract (GSPE) Modulates Diurnal Rhythms of Hepatic Metabolic Genes and Metabolites,
+      and Reduces Lipid Deposition in Cafeteria-Fed Rats in a Time-of-Day-Dependent Manner.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11653167/
     type: research
-    pmid: "39523911"
+    pmid: '39523911'
     relevance: supporting
   - sourceOrg: International journal of molecular sciences
-    title: Roux-En-Y Gastric Bypass (RYGB) Surgery during High Liquid Sucrose Diet Leads to Gut Microbiota-Related Systematic Alterations.
+    title: >-
+      Roux-En-Y Gastric Bypass (RYGB) Surgery during High Liquid Sucrose Diet Leads to Gut Microbiota-Related Systematic
+      Alterations.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8835548/
     type: research
-    pmid: "35163046"
+    pmid: '35163046'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: weight-gain
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 大鼠肥胖症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - weight-gain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 體重與體態評分
+          notes: 定期秤重並以體態評分（BCS）評估。成年公鼠正常體重約 450-650g，母鼠約 250-450g
+        - name: 血液生化檢查
+          notes: 檢測血糖、三酸甘油酯、膽固醇等代謝指標
+ddxSource: auto-generated

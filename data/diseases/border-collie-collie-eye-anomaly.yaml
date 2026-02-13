@@ -3,18 +3,18 @@ nameEn: Border Collie Collie Eye Anomaly
 nameZh: 邊境牧羊犬柯利眼異常
 bodySystem: ophthalmology
 description: 邊境牧羊犬常見的遺傳性眼部發育異常,包括脈絡膜發育不全、視網膜剝離與眼球內腔出血。為常染色體隱性遺傳,可導致視力障礙甚至失明。
-
 aliases:
-  - { alias: 邊牧CEA, language: zh }
-  - { alias: Border Collie CEA, language: en }
-  - { alias: 邊境牧羊犬眼發育異常, language: zh }
-
+  - alias: 邊牧CEA
+    language: zh
+  - alias: Border Collie CEA
+    language: en
+  - alias: 邊境牧羊犬眼發育異常
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 邊境牧羊犬與柯利犬為最高風險品種,常染色體隱性遺傳(NHEJ1基因缺失),出生時即存在
-
 etiology:
   categories:
     - name: 遺傳性基因缺陷
@@ -28,7 +28,6 @@ etiology:
         - 視神經盤畸形(coloboma)
         - 視網膜剝離
         - 眼內出血
-
 clinicalSigns:
   early:
     - 多數病例無明顯臨床症狀(輕度型)
@@ -40,21 +39,19 @@ clinicalSigns:
     - 視力障礙,撞擊障礙物
     - 瞳孔對光反射減弱或消失
     - 嚴重病例:完全失明,眼球萎縮
-
 diagnosis:
   primaryTests:
     - name: 眼底鏡檢查
-      notes: "6-8週齡前檢查,見脈絡膜發育不全(視網膜下可見鞏膜白色),視神經盤畸形"
+      notes: 6-8週齡前檢查,見脈絡膜發育不全(視網膜下可見鞏膜白色),視神經盤畸形
     - name: 基因檢測
-      notes: "NHEJ1基因缺失檢測,可於出生前確診,用於繁殖篩檢"
+      notes: NHEJ1基因缺失檢測,可於出生前確診,用於繁殖篩檢
     - name: 眼部超音波
-      notes: "評估視網膜剝離程度與眼內出血"
+      notes: 評估視網膜剝離程度與眼內出血
   differentialDiagnoses:
     - 進行性視網膜萎縮(PRA)
     - 視網膜發育不良
     - 青光眼
     - 白內障
-
 treatment:
   medical:
     - 輕度型:無需治療,定期監測
@@ -63,13 +60,33 @@ treatment:
     - 環境調整:熟悉環境,移除障礙物
     - 盲犬照護:聲音引導,保持環境穩定
     - 支持性照護,維持生活品質
-
 prognosis:
-  general: "輕度型(80-85%病例)預後良好,視力正常或輕度受損,不影響生活。重度型(15-20%)視力嚴重受損至失明,但多數可適應環境,生活品質尚可。"
-
+  general: 輕度型(80-85%病例)預後良好,視力正常或輕度受損,不影響生活。重度型(15-20%)視力嚴重受損至失明,但多數可適應環境,生活品質尚可。
 prevention:
   - 繁殖前基因檢測(NHEJ1缺失)
   - 僅繁殖基因正常犬隻(clear/clear)
   - 帶因者(carrier)不應繁殖
   - 幼犬6-8週齡眼科檢查
   - 英美育種協會已建立篩檢計畫
+associatedSymptoms:
+  - symptomId: blindness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 邊境牧羊犬柯利眼異常 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 眼底鏡檢查
+          notes: 6-8週齡前檢查,見脈絡膜發育不全(視網膜下可見鞏膜白色),視神經盤畸形
+        - name: 基因檢測
+          notes: NHEJ1基因缺失檢測,可於出生前確診,用於繁殖篩檢
+        - name: 眼部超音波
+          notes: 評估視網膜剝離程度與眼內出血
+ddxSource: auto-generated

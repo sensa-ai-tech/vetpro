@@ -3,11 +3,11 @@ nameEn: Foxglove Toxicosis
 nameZh: 毛地黃中毒
 bodySystem: toxicology
 description: 由毛地黃屬植物含cardiac glycosides引起的心臟毒性,所有部位均劇毒。毒素抑制Na-K-ATPase,引起高鉀血症及嚴重心律不整,死亡率高。
-
 aliases:
-  - { alias: 洋地黃中毒, language: zh }
-  - { alias: Digitalis Toxicity, language: en }
-
+  - alias: 洋地黃中毒
+    language: zh
+  - alias: Digitalis Toxicity
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少接觸但同樣敏感
-
 etiology:
   categories:
     - name: 毒性植物
@@ -27,7 +26,6 @@ etiology:
     - name: 毒性成分
       examples:
         - Digitoxin, Digoxin, Lanatoside(cardiac glycosides)
-
 clinicalSigns:
   early:
     - 嘔吐、腹瀉、流涎(30分鐘-6小時)
@@ -38,21 +36,19 @@ clinicalSigns:
     - 高鉀血症(">6 mEq/L")
     - 低血壓、休克
     - 昏迷、死亡
-
 diagnosis:
   primaryTests:
     - name: 心電圖
-      notes: "心搏過緩、PR延長、ST-T變化、VPC、AV block"
+      notes: 心搏過緩、PR延長、ST-T變化、VPC、AV block
     - name: 血鉀
-      notes: "高鉀血症,常\">6-8 mEq/L\""
+      notes: 高鉀血症,常">6-8 mEq/L"
     - name: Digoxin血中濃度
-      notes: "若攝食藥用毛地黃或用藥過量,血中濃度\">2 ng/mL\""
+      notes: 若攝食藥用毛地黃或用藥過量,血中濃度">2 ng/mL"
   differentialDiagnoses:
     - 紅豆杉中毒
     - 夾竹桃中毒
     - 高鉀血症其他原因
     - Digoxin藥物過量
-
 treatment:
   medical:
     - 去污:Apomorphine催吐(若<1 hr),活性碳1-4 g/kg PO q4-6h
@@ -63,11 +59,45 @@ treatment:
     - 避免使用Calcium(可能加重心臟毒性)
   supportive:
     - 輸液,心電監測,氧氣
-
 prognosis:
-  general: "預後保留,死亡率40-60%。早期去污及Fab抗體給予可改善預後。高鉀血症及嚴重心律不整為主要致死原因。存活最初24-48小時預後改善。"
-
+  general: 預後保留,死亡率40-60%。早期去污及Fab抗體給予可改善預後。高鉀血症及嚴重心律不整為主要致死原因。存活最初24-48小時預後改善。
 prevention:
   - 移除庭園毛地黃植物
   - Digoxin用藥犬貓定期監測血中濃度
   - 避免接觸觀賞植物
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+diagnosticAlgorithm:
+  title: 毛地黃中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+        - dehydration 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心電圖
+          notes: 心搏過緩、PR延長、ST-T變化、VPC、AV block
+        - name: 血鉀
+          notes: 高鉀血症,常">6-8 mEq/L"
+        - name: Digoxin血中濃度
+          notes: 若攝食藥用毛地黃或用藥過量,血中濃度">2 ng/mL"
+ddxSource: auto-generated

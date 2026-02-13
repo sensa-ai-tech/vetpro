@@ -3,13 +3,15 @@ nameEn: Lissencephaly
 nameZh: 平腦症
 bodySystem: neurology
 description: 先天性大腦皮質發育異常，腦回 (gyri) 與腦溝 (sulci) 缺失或減少，導致腦表面光滑。屬於神經元遷移障礙 (neuronal migration disorder)，臨床表現為癲癇、行為異常與認知功能障礙。
-
 aliases:
-  - { alias: Smooth Brain, language: en }
-  - { alias: Agyria, language: en }
-  - { alias: 無腦回症, language: zh }
-  - { alias: 光滑腦, language: zh }
-
+  - alias: Smooth Brain
+    language: en
+  - alias: Agyria
+    language: en
+  - alias: 無腦回症
+    language: zh
+  - alias: 光滑腦
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓極為罕見，偶有個案報告。
-
 etiology:
   categories:
     - name: 遺傳性
@@ -28,7 +29,6 @@ etiology:
       examples:
         - 胚胎期 (妊娠中期) 神經元遷移障礙
         - 子宮內感染可能為誘因
-
 clinicalSigns:
   early:
     - 幼犬學習能力差
@@ -39,7 +39,6 @@ clinicalSigns:
     - 共濟失調
     - 難以訓練
     - 反應遲鈍
-
 diagnosis:
   primaryTests:
     - name: MRI
@@ -48,7 +47,6 @@ diagnosis:
       notes: 前腦徵象：行為異常、視覺障礙、癲癇
     - name: 腦電圖 (EEG)
       notes: 可見異常放電模式
-
 treatment:
   principles:
     - 無法治癒
@@ -58,36 +56,76 @@ treatment:
     - 抗癲癇藥物 (Phenobarbital、Levetiracetam)
     - 環境管理 (避免高處、尖銳物品)
     - 行為評估與生活品質監測
-
 prognosis: 預後謹慎至不良。無法治癒的先天性疾病。癲癇控制效果因個體而異。輕度病例可維持可接受的生活品質，但嚴重病例可能需考慮安樂死。不建議繁殖受影響品系。
-
-
 guidelineRefs:
   - sourceOrg: Cells
     title: Brain Organization and Human Diseases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9139716/
     type: review
-    pmid: "35626679"
+    pmid: '35626679'
   - sourceOrg: Journal of clinical medicine
-    title: "The Reeler Mouse: A Translational Model of Human Neurological Conditions, or Simply a Good Tool for Better Understanding Neurodevelopment?"
+    title: >-
+      The Reeler Mouse: A Translational Model of Human Neurological Conditions, or Simply a Good Tool for Better
+      Understanding Neurodevelopment?
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6947477/
     type: review
-    pmid: "31805691"
+    pmid: '31805691'
   - sourceOrg: Journal of neuroscience methods
     title: Genetic animal models of malformations of cortical development and epilepsy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4618289/
     type: review
-    pmid: "25911067"
+    pmid: '25911067'
   - sourceOrg: Human molecular genetics
-    title: Identification of a novel synaptic protein, TMTC3, involved in periventricular nodular heterotopia with intellectual disability and epilepsy.
+    title: >-
+      Identification of a novel synaptic protein, TMTC3, involved in periventricular nodular heterotopia with
+      intellectual disability and epilepsy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5886076/
     type: case-report
-    pmid: "28973161"
+    pmid: '28973161'
   - sourceOrg: eLife
-    title: TUBA1A tubulinopathy mutants disrupt neuron morphogenesis and override XMAP215/Stu2 regulation of microtubule dynamics.
+    title: >-
+      TUBA1A tubulinopathy mutants disrupt neuron morphogenesis and override XMAP215/Stu2 regulation of microtubule
+      dynamics.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9236607/
     type: research
-    pmid: "35511030"
+    pmid: '35511030'
 pubmedQueries:
   - query: '"lissencephaly" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "MRI")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: blindness
+    frequency: common
+diagnosticAlgorithm:
+  title: 平腦症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - seizures 相關症狀
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: MRI
+          notes: 腦皮質表面光滑，缺乏正常腦回與腦溝。皮質增厚。確診首選影像學檢查
+        - name: 神經學檢查
+          notes: 前腦徵象：行為異常、視覺障礙、癲癇
+        - name: 腦電圖 (EEG)
+          notes: 可見異常放電模式
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 無法治癒
+        - 控制癲癇為主要治療目標
+        - 提供安全的生活環境
+ddxSource: auto-generated

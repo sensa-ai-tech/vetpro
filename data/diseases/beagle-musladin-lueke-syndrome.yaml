@@ -3,18 +3,18 @@ nameEn: Beagle Musladin Lueke Syndrome
 nameZh: 米格魯Musladin-Lueke症候群
 bodySystem: other
 description: 米格魯罕見的遺傳性結締組織疾病,因纖維蛋白異常導致皮膚緊繃、關節攣縮與步態異常。為常染色體隱性遺傳,外觀特徵明顯,預後不良。
-
 aliases:
-  - { alias: 米格魯MLS, language: zh }
-  - { alias: Beagle Chinese Beagle Syndrome, language: en }
-  - { alias: 米格魯纖維化症候群, language: zh }
-
+  - alias: 米格魯MLS
+    language: zh
+  - alias: Beagle Chinese Beagle Syndrome
+    language: en
+  - alias: 米格魯纖維化症候群
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: rare
     notes: 米格魯品種特異性疾病,體染色體隱性遺傳(ADAMTSL2基因),出生時即有症狀
-
 etiology:
   categories:
     - name: 遺傳性基因突變
@@ -27,7 +27,6 @@ etiology:
         - 皮膚、肌腱、韌帶纖維化
         - 關節囊增厚與攣縮
         - 內臟器官纖維化(心臟、肺)
-
 clinicalSigns:
   early:
     - 出生即有特徵性外觀:"踮腳尖"步態
@@ -40,23 +39,21 @@ clinicalSigns:
     - 關節攣縮惡化,無法正常行走
     - 心肺纖維化,運動不耐
     - 生長遲緩,體重不足
-
 diagnosis:
   primaryTests:
     - name: 臨床診斷
-      notes: "特徵性外觀與步態,米格魯幼犬出生即可識別"
+      notes: 特徵性外觀與步態,米格魯幼犬出生即可識別
     - name: 基因檢測
-      notes: "ADAMTSL2基因突變檢測,確診並用於繁殖篩檢"
+      notes: ADAMTSL2基因突變檢測,確診並用於繁殖篩檢
     - name: 皮膚組織病理
-      notes: "真皮纖維化,膠原纖維排列異常,彈性纖維減少"
+      notes: 真皮纖維化,膠原纖維排列異常,彈性纖維減少
     - name: 影像學檢查
-      notes: "X光見關節攣縮,心臟超音波評估心肌纖維化"
+      notes: X光見關節攣縮,心臟超音波評估心肌纖維化
   differentialDiagnoses:
     - 先天性關節攣縮症
     - 皮膚無力症(cutaneous asthenia)
     - 先天性肌病
     - 儲積症
-
 treatment:
   medical:
     - 無治癒方法,僅支持性照護
@@ -65,13 +62,41 @@ treatment:
     - 營養支持:高熱量飲食
     - 環境調整:軟墊、防滑地板
     - 多數病例於1歲前因生活品質不佳而安樂死
-
 prognosis:
-  general: "預後極差,無有效治療。多數患犬於1歲前死亡或安樂死,因嚴重關節攣縮、心肺功能不全。罕見存活至成年病例,生活品質嚴重受限。"
-
+  general: 預後極差,無有效治療。多數患犬於1歲前死亡或安樂死,因嚴重關節攣縮、心肺功能不全。罕見存活至成年病例,生活品質嚴重受限。
 prevention:
   - 繁殖前基因檢測(ADAMTSL2突變)
   - 帶因者僅可與基因陰性個體配對
   - 患病犬隻不應繁殖
   - 家系追蹤,避免近親繁殖
   - 美國已有商業基因檢測服務
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: weight-loss
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 米格魯Musladin-Lueke症候群 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - lameness 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床診斷
+          notes: 特徵性外觀與步態,米格魯幼犬出生即可識別
+        - name: 基因檢測
+          notes: ADAMTSL2基因突變檢測,確診並用於繁殖篩檢
+        - name: 皮膚組織病理
+          notes: 真皮纖維化,膠原纖維排列異常,彈性纖維減少
+ddxSource: auto-generated

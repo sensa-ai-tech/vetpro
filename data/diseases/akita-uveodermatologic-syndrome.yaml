@@ -3,18 +3,18 @@ nameEn: Akita Uveodermatologic Syndrome
 nameZh: 秋田犬葡萄膜皮膚症候群
 bodySystem: immunology
 description: 秋田犬為葡萄膜皮膚症候群最高風險品種之一。自體免疫攻擊黑色素細胞,導致雙側肉芽腫性葡萄膜炎、視網膜剝離及皮膚白斑。未治療將導致失明,需積極免疫抑制治療。
-
 aliases:
-  - { alias: VKH-like Syndrome, language: en }
-  - { alias: UDS, language: en }
-  - { alias: 葡萄膜皮膚症候群, language: zh }
-
+  - alias: VKH-like Syndrome
+    language: en
+  - alias: UDS
+    language: en
+  - alias: 葡萄膜皮膚症候群
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 秋田犬為最高風險品種,西伯利亞哈士奇、薩摩耶也常見
-
 etiology:
   categories:
     - name: 自體免疫疾病
@@ -22,7 +22,6 @@ etiology:
         - 針對黑色素細胞的T細胞免疫反應
         - 類似人類Vogt-小柳-原田症候群
         - 遺傳易感性
-
 clinicalSigns:
   early:
     - 雙側急性葡萄膜炎(眼紅、畏光、視力模糊)
@@ -33,22 +32,20 @@ clinicalSigns:
     - 鼻鏡、眼瞼、耳廓白斑
     - 毛色變白(poliosis)
     - 永久性失明(未治療)
-
 diagnosis:
   primaryTests:
     - name: 眼科詳細檢查
-      notes: "雙側肉芽腫性葡萄膜炎,脈絡膜病變,視網膜剝離"
+      notes: 雙側肉芽腫性葡萄膜炎,脈絡膜病變,視網膜剝離
     - name: 眼內壓測量
-      notes: "急性期降低,慢性期可能升高"
+      notes: 急性期降低,慢性期可能升高
     - name: 皮膚病變活檢
-      notes: "界面性皮膚炎,黑色素細胞破壞,淋巴球浸潤"
+      notes: 界面性皮膚炎,黑色素細胞破壞,淋巴球浸潤
     - name: 眼超音波
-      notes: "評估視網膜剝離程度"
+      notes: 評估視網膜剝離程度
   differentialDiagnoses:
     - 感染性葡萄膜炎(弓蟲、黴菌)
     - 白癜風
     - 眼內淋巴瘤
-
 treatment:
   medical:
     - 全身性免疫抑制(Prednisone 2-4 mg/kg PO q12h,漸減至維持劑量)
@@ -56,19 +53,53 @@ treatment:
     - 局部類固醇(Prednisolone 1% 眼藥水 q4-6h)
     - 散瞳劑(Atropine 1% q12-24h)
     - 終生免疫抑制治療
-
 prognosis:
-  general: "早期積極治療(發病數日內)可保存視力,預後尚可。延遲治療導致不可逆視網膜損傷及失明。需終生免疫抑制,復發率30-50%。"
-
+  general: 早期積極治療(發病數日內)可保存視力,預後尚可。延遲治療導致不可逆視網膜損傷及失明。需終生免疫抑制,復發率30-50%。
 prevention:
   - 高風險品種定期眼科檢查
   - 眼紅或視力改變立即就診
   - 早期診斷關鍵
-
-
 guidelineRefs:
   - sourceOrg: Journal of the American Veterinary Medical Association
     title: Clinical findings and outcomes for dogs with uveodermatologic syndrome.
     url: https://pubmed.ncbi.nlm.nih.gov/29701516/
     type: research
-    pmid: "29701516"
+    pmid: '29701516'
+diagnosticAlgorithm:
+  title: 葡萄膜皮膚症候群 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估雙側前葡萄膜炎合併皮膚色素脫失的典型表現，好發於秋田犬、哈士奇等北方犬種
+      findings:
+        - 雙側前葡萄膜炎（眼紅、畏光、流淚）
+        - 鼻鏡、唇部皮膚色素脫失
+        - 被毛白化（白毛症）
+    - step: 2
+      action: 眼科與皮膚檢查
+      details: 進行完整眼科檢查（裂隙燈、眼底鏡），同時評估皮膚色素變化分布
+      findings:
+        - 前房閃光及角膜後沉積物
+        - 視網膜剝離或脈絡膜炎
+        - 皮膚活檢顯示黑色素細胞消失
+    - step: 3
+      action: 組織病理確診
+      details: 皮膚活檢顯示淋巴細胞性界面性皮膚炎伴黑色素細胞破壞，為自體免疫性疾病
+      findings:
+        - 活檢顯示淋巴細胞浸潤攻擊黑色素細胞
+        - 組織病理學與Vogt-小柳-原田症候群一致
+        - 確診為自體免疫介導的色素細胞破壞
+clinicalPearls:
+  - 眼部症狀通常先於皮膚症狀數週至數月
+  - 秋田犬是最好發的犬種
+  - 一旦懷疑應立即開始積極治療，延遲治療顯著惡化預後
+  - 繼發性青光眼是最常見的致盲併發症
+monitoringItems:
+  - 眼壓和眼底變化
+  - 視力狀態
+  - 皮膚色素變化
+  - 免疫抑制劑副作用（骨髓抑制、肝功能）
+associatedSymptoms:
+  - symptomId: peripheral-oedema
+    frequency: common
+ddxSource: book

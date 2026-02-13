@@ -2,14 +2,18 @@ slug: borreliosis
 nameEn: Borreliosis
 nameZh: 包柔螺旋體感染症
 bodySystem: infectious
-description: 包柔螺旋體感染症 (borreliosis) 由 Borrelia burgdorferi sensu lato 複合群引起，經硬蜱 (Ixodes spp.) 叮咬傳播。犬為主要臨床宿主，可引起多關節炎、腎病及心肌炎。貓自然感染罕見且臨床意義不明。蜱蟲需附著至少 36-48 小時才能傳播病原。
-
+description: >-
+  包柔螺旋體感染症 (borreliosis) 由 Borrelia burgdorferi sensu lato 複合群引起，經硬蜱 (Ixodes spp.)
+  叮咬傳播。犬為主要臨床宿主，可引起多關節炎、腎病及心肌炎。貓自然感染罕見且臨床意義不明。蜱蟲需附著至少 36-48 小時才能傳播病原。
 aliases:
-  - { alias: 萊姆包柔體病, language: zh }
-  - { alias: 伯氏疏螺旋體感染, language: zh }
-  - { alias: Lyme Borreliosis, language: en }
-  - { alias: Borrelia Infection, language: en }
-
+  - alias: 萊姆包柔體病
+    language: zh
+  - alias: 伯氏疏螺旋體感染
+    language: zh
+  - alias: Lyme Borreliosis
+    language: en
+  - alias: Borrelia Infection
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓自然感染極罕見，臨床意義不明確。實驗感染可產生抗體但少有臨床症狀。
-
 etiology:
   categories:
     - name: 病原與傳播
@@ -31,7 +34,6 @@ etiology:
         - 北美東北部與中西部上游
         - 歐洲溫帶地區
         - 亞洲部分地區
-
 clinicalSigns:
   early:
     - 急性跛行（一肢或多肢，游走性）
@@ -44,7 +46,6 @@ clinicalSigns:
     - 蛋白尿、水腫、氮血症
     - 心肌炎（罕見）
     - 神經型（罕見）
-
 diagnosis:
   primaryTests:
     - name: SNAP 4Dx（C6 抗體）
@@ -56,7 +57,6 @@ diagnosis:
     - CBC、生化（腎功能評估）
     - 關節液分析（非化膿性多關節炎）
     - Western blot（特殊情況確認）
-
 treatment:
   principles:
     - 抗生素治療為核心
@@ -71,41 +71,84 @@ treatment:
     - Lyme nephritis 需積極治療（ACE 抑制劑、免疫抑制劑、透析）
     - 蜱蟲預防為長期管理重點
     - 流行區犬考慮疫苗接種
-
 prognosis: 單純 Lyme 關節炎抗生素治療後預後良好，多數 24-48 小時內改善。Lyme nephritis 預後極差，多數在數週至數月內進展為腎衰竭。早期偵測蛋白尿可能改善預後。
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
     title: ACVIM consensus update on Lyme borreliosis in dogs and cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5980284/
     type: consensus
-    pmid: "29566442"
+    pmid: '29566442'
   - sourceOrg: Microorganisms
     title: Recommendations to Improve Tick-Borne Encephalitis Surveillance and Vaccine Uptake in Europe.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9322045/
     type: review
-    pmid: "35889002"
+    pmid: '35889002'
   - sourceOrg: Frontiers in medicine
     title: Recent Progress in Lyme Disease and Remaining Challenges.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8416313/
     type: review
-    pmid: "34485323"
+    pmid: '34485323'
   - sourceOrg: Pathogens (Basel, Switzerland)
     title: An Overview of Anthropogenic Actions as Drivers for Emerging and Re-Emerging Zoonotic Diseases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9692567/
     type: review
-    pmid: "36422627"
+    pmid: '36422627'
   - sourceOrg: Zoonoses and public health
-    title: "Questing Ixodes ricinus ticks and Borrelia spp. in urban green space across Europe: A review."
+    title: 'Questing Ixodes ricinus ticks and Borrelia spp. in urban green space across Europe: A review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9487987/
     type: review
-    pmid: "35122422"
+    pmid: '35122422'
   - sourceOrg: Microorganisms
-    title: "Vector-Borne Infections in Romania: From Surveillance to Prediction."
+    title: 'Vector-Borne Infections in Romania: From Surveillance to Prediction.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12843925/
     type: review
-    pmid: "41597580"
+    pmid: '41597580'
 pubmedQueries:
   - query: '"borreliosis" OR "Borrelia burgdorferi" AND (veterinary OR canine) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: polyarthritis
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: lameness
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 包柔螺旋體感染症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - polyarthritis 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: SNAP 4Dx（C6 抗體）
+          notes: 偵測 C6 抗體（VlsE 蛋白之 C6 肽段），不受疫苗干擾。陽性僅代表暴露，需結合臨床症狀判斷
+        - name: Quant C6 定量檢測
+          notes: C6 抗體定量，>30 U/mL 提示活動性感染。治療後追蹤下降幅度（>50% 下降為治療有效指標）
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 尿液蛋白質/肌酸酐比值 (UPC)（篩檢 Lyme nephritis）
+        - CBC、生化（腎功能評估）
+        - 關節液分析（非化膿性多關節炎）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 抗生素治療為核心
+        - Doxycycline 為首選藥物
+        - 臨床反應通常快速
+ddxSource: auto-generated

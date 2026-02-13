@@ -3,13 +3,15 @@ nameEn: Conjunctivitis
 nameZh: 結膜炎
 bodySystem: ophthalmology
 description: 結膜的發炎反應，為小動物眼科最常見疾病之一。犬以細菌性與過敏性最常見，貓以病毒性 (FHV-1、FCV) 最常見。臨床表現為結膜充血、水腫與分泌物。
-
 aliases:
-  - { alias: Pink Eye, language: en }
-  - { alias: Bacterial Conjunctivitis, language: en }
-  - { alias: 紅眼症, language: zh }
-  - { alias: 結膜發炎, language: zh }
-
+  - alias: Pink Eye
+    language: en
+  - alias: Bacterial Conjunctivitis
+    language: en
+  - alias: 紅眼症
+    language: zh
+  - alias: 結膜發炎
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓極為常見。FHV-1 與 FCV 為主要原因。Chlamydophila felis 也常見。
-
 etiology:
   categories:
     - name: 感染性
@@ -32,7 +33,6 @@ etiology:
         - 乾眼症 (KCS) 續發
         - 異物刺激
         - 眼瞼異常 (entropion、ectropion)
-
 clinicalSigns:
   early:
     - 結膜充血 (紅眼)
@@ -43,7 +43,6 @@ clinicalSigns:
     - 黏液或黏液膿性分泌物
     - 眼瞼黏合 (晨起)
     - 第三眼瞼突出
-
 diagnosis:
   primaryTests:
     - name: 眼科基本檢查
@@ -52,7 +51,6 @@ diagnosis:
       notes: 排除 KCS 為潛在原因 (正常 > 15 mm/min)
     - name: 結膜拭子培養
       notes: 慢性或難治病例做細菌培養藥敏。貓做 FHV-1 PCR 與 Chlamydophila PCR
-
 treatment:
   principles:
     - 確定並治療根本原因
@@ -63,36 +61,88 @@ treatment:
     - FHV-1：Famciclovir 口服 + L-lysine 補充
     - Chlamydophila：Doxycycline 口服 (28 天)
     - 過敏性：移除過敏原 + 抗組織胺眼藥水
-
 prognosis: 大部分結膜炎預後良好。細菌性通常 7-14 天治癒。FHV-1 可能反覆發作 (潛伏感染)。慢性病例需找出潛在原因才能有效控制。
-
-
 guidelineRefs:
   - sourceOrg: International journal of molecular sciences
     title: Treatment of Allergies to Fur Animals.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11241144/
     type: review
-    pmid: "39000328"
+    pmid: '39000328'
   - sourceOrg: The Yale journal of biology and medicine
     title: Zoonotic Ocular Onchocercosis by Onchocerca lupi.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8223538/
     type: review
-    pmid: "34211352"
+    pmid: '34211352'
   - sourceOrg: Frontiers in veterinary science
     title: Herpesviruses in Reptiles.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8131531/
     type: review
-    pmid: "34026888"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '34026888'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Sanitary Emergencies at the Wild/Domestic Caprines Interface in Europe.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6912786/
     type: review
-    pmid: "31694211"
+    pmid: '31694211'
   - sourceOrg: Current clinical microbiology reports
     title: Chlamydial Antibiotic Resistance and Treatment Failure in Veterinary and Human Medicine.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4845085/
     type: review
-    pmid: "27218014"
+    pmid: '27218014'
 pubmedQueries:
   - query: '"conjunctivitis" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 結膜炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估眼部症狀、分泌物性質與分布（單側/雙側）
+      findings:
+        - 結膜紅腫充血
+        - 眼分泌物（漿液性/黏液性/膿性）
+        - 眨眼頻率增加
+        - 輕度不適或搔癢
+    - step: 2
+      action: 眼科基本檢查
+      details: 角膜螢光素染色、Schirmer淚液試驗、眼壓測量
+      findings:
+        - 螢光素染色排除角膜潰瘍
+        - 淚液分泌量（排除乾眼症）
+        - 眼壓正常（排除青光眼/葡萄膜炎）
+        - 瞳孔對光反射正常
+    - step: 3
+      action: 病因調查
+      details: 根據臨床表現與物種進行病因分類
+      findings:
+        - 感染性：FHV/Chlamydia/Mycoplasma（貓）
+        - 過敏性：季節性，雙側
+        - 細菌性：膿性分泌物，犬常見
+        - 異物/刺激性：單側急性發作
+    - step: 4
+      action: 進階檢查（慢性或反覆病例）
+      details: 結膜拭子細胞學、培養或PCR檢測
+      findings:
+        - 結膜細胞學（嗜酸性球→過敏/嗜中性球→細菌/淋巴球→病毒）
+        - PCR檢測特定病原
+        - 細菌培養與藥敏試驗
+        - 眼瞼結構異常排除（內翻/倒睫）
+clinicalPearls:
+  - 螢光素染色和STT是結膜炎評估的必做檢查
+  - 犬的結膜炎很少是原發性細菌感染，多為過敏或KCS繼發
+  - 貓的結膜炎首先考慮FHV-1、FCV和衣原體
+  - 單側結膜炎需排除鼻淚管阻塞、異物和角膜疾病
+  - 外用類固醇使用前務必排除角膜潰瘍
+  - 犬單純結膜炎若反覆發作，高度考慮過敏或KCS
+monitoringItems:
+  - 治療後5-7天追蹤評估
+  - STT定期監測（KCS患者）
+  - 過敏性結膜炎：季節性評估
+  - 貓反覆發作者：FHV-1管理策略評估
+associatedSymptoms:
+  - symptomId: red-eye
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+ddxSource: book

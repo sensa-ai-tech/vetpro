@@ -3,11 +3,11 @@ nameEn: Electrolyte Panel Interpretation
 nameZh: 電解質檢查判讀
 bodySystem: other
 description: 犬貓電解質檢查判讀,評估鈉、鉀、氯、鈣、磷平衡。電解質異常可導致嚴重併發症,需及時診斷治療。常見於腎病、內分泌疾病、胃腸疾病等。
-
 aliases:
-  - { alias: 電解質分析, language: zh }
-  - { alias: Electrolyte analysis, language: en }
-
+  - alias: 電解質分析
+    language: zh
+  - alias: Electrolyte analysis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓慢性腎病、尿道阻塞電解質異常
-
 etiology:
   categories:
     - name: 主要電解質
@@ -27,48 +26,71 @@ etiology:
         - 氯(Cl):正常105-120 mEq/L
         - 鈣(Ca):總鈣及游離鈣
         - 磷(P):與腎功能及副甲狀腺相關
-
 clinicalSigns:
   early:
     - 電解質檢查為診斷工具
   progressive:
     - 虛弱、嘔吐、心律不整
-
 diagnosis:
   primaryTests:
     - name: 低血鉀
-      notes: "<3.0 mEq/L,常見於嘔吐、利尿劑使用、慢性腎病"
+      notes: <3.0 mEq/L,常見於嘔吐、利尿劑使用、慢性腎病
     - name: 高血鉀
-      notes: ">6.0 mEq/L,愛迪生氏症、尿道阻塞、腎衰竭。>7.0有心律不整風險"
+      notes: '>6.0 mEq/L,愛迪生氏症、尿道阻塞、腎衰竭。>7.0有心律不整風險'
     - name: 低血鈉
-      notes: "<135 mEq/L,愛迪生氏症、腎病、充血性心衰"
+      notes: <135 mEq/L,愛迪生氏症、腎病、充血性心衰
     - name: 鈣磷異常
-      notes: "腎病、副甲狀腺疾病、腫瘤相關高血鈣"
+      notes: 腎病、副甲狀腺疾病、腫瘤相關高血鈣
   differentialDiagnoses:
     - 愛迪生氏症(低Na高K)
     - 腎衰竭
     - 尿道阻塞(貓)
     - 胃腸疾病
-
 treatment:
   medical:
     - 電解質檢查為診斷工具
     - 靜脈補充或口服補充
     - 治療根本原因
-
 prognosis:
-  general: "電解質異常需及時矯正,嚴重異常可危及生命。需監測治療反應。"
-
+  general: 電解質異常需及時矯正,嚴重異常可危及生命。需監測治療反應。
 prevention:
   - 血清或血漿採集
   - 避免溶血(影響鉀值)
   - 重症動物即時檢測(iSTAT等)
   - 定期監測調整治療
-
-
 guidelineRefs:
   - sourceOrg: Neurotoxicology and teratology
-    title: "Anesthetics disrupt growth cone guidance cue sensing through actions on the GABAA &#x3b1;2 receptor mediated by the immature chloride gradient."
+    title: >-
+      Anesthetics disrupt growth cone guidance cue sensing through actions on the GABAA &#x3b1;2 receptor mediated by
+      the immature chloride gradient.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6650745/
     type: research
-    pmid: "31251980"
+    pmid: '31251980'
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 電解質檢查判讀 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+        - weakness 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 低血鉀
+          notes: <3.0 mEq/L,常見於嘔吐、利尿劑使用、慢性腎病
+        - name: 高血鉀
+          notes: '>6.0 mEq/L,愛迪生氏症、尿道阻塞、腎衰竭。>7.0有心律不整風險'
+        - name: 低血鈉
+          notes: <135 mEq/L,愛迪生氏症、腎病、充血性心衰
+ddxSource: auto-generated

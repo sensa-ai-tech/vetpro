@@ -3,12 +3,13 @@ nameEn: Raw Diet Benefits Risks
 nameZh: 生食飲食利弊分析
 bodySystem: metabolic
 description: 犬貓生食飲食(BARF或其他生肉骨飲食)的科學評估，包含潛在效益、食安風險、營養均衡考量及獸醫學界立場。
-
 aliases:
-  - { alias: 生肉骨飲食, language: zh }
-  - { alias: Raw Meat Diet, language: en }
-  - { alias: BARF Diet, language: en }
-
+  - alias: 生肉骨飲食
+    language: zh
+  - alias: Raw Meat Diet
+    language: en
+  - alias: BARF Diet
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 肉食性動物，生食爭議較犬小
-
 etiology:
   categories:
     - name: 聲稱的效益
@@ -34,7 +34,6 @@ etiology:
         - 營養不均衡
         - 骨頭異物或穿孔
         - 人畜共通疾病傳播
-
 clinicalSigns:
   early:
     - 健康犬貓：可能無症狀
@@ -45,21 +44,19 @@ clinicalSigns:
     - 骨頭併發症：腸阻塞、穿孔
     - 營養缺乏：骨骼疾病、心肌病變
     - 甲狀腺亢進(過量含頸部的肉)
-
 diagnosis:
   primaryTests:
     - name: 糞便細菌培養
-      notes: "檢測致病菌"
+      notes: 檢測致病菌
     - name: 營養分析
-      notes: "評估飲食配方是否均衡"
+      notes: 評估飲食配方是否均衡
     - name: 血液生化
-      notes: "檢測營養缺乏(鈣、磷、牛磺酸等)"
+      notes: 檢測營養缺乏(鈣、磷、牛磺酸等)
   differentialDiagnoses:
     - 細菌性腸胃炎
     - 寄生蟲感染
     - 營養性次發性副甲狀腺亢進
     - 異物腸阻塞
-
 treatment:
   medical:
     - 若選擇生食飲食
@@ -75,34 +72,60 @@ treatment:
     - 獸醫學界建議
     - AVMA、AAHA、WSAVA不建議生食
     - 建議熟食或商業平衡飼料
-
 prognosis:
-  general: "健康成犬短期生食風險相對低；幼犬、老年、免疫低下及人類接觸者(孩童、孕婦)風險高"
-
+  general: 健康成犬短期生食風險相對低；幼犬、老年、免疫低下及人類接觸者(孩童、孕婦)風險高
 prevention:
   - 選擇經獸醫營養師設計的配方
   - 嚴格食品衛生管理
   - 定期營養及健康檢查
   - 考慮使用商業熟食或HPP產品
   - 高風險族群避免生食
-
-
 guidelineRefs:
   - sourceOrg: Health science reports
-    title: "Update on the Seroepidemiology of Human Cystic Echinococcosis and Associated Risk Factors in Iran: A Systematic Review and Meta-Analysis."
+    title: >-
+      Update on the Seroepidemiology of Human Cystic Echinococcosis and Associated Risk Factors in Iran: A Systematic
+      Review and Meta-Analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12010200/
     type: review
-    pmid: "40260044"
+    pmid: '40260044'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
-    title: "Risk factors for antimicrobial-resistant Enterobacterales in dogs: a systematic review."
+    title: 'Risk factors for antimicrobial-resistant Enterobacterales in dogs: a systematic review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11493919/
     type: review
-    pmid: "39439826"
+    pmid: '39439826'
     relevance: primary
   - sourceOrg: The Journal of small animal practice
-    title: "Raw diets for dogs and cats: a review, with particular reference to microbiological hazards."
+    title: 'Raw diets for dogs and cats: a review, with particular reference to microbiological hazards.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6849757/
     type: review
-    pmid: "31025713"
+    pmid: '31025713'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 生食飲食利弊分析 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - hyperthermia 相關症狀
+        - vomiting 相關症狀
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便細菌培養
+          notes: 檢測致病菌
+        - name: 營養分析
+          notes: 評估飲食配方是否均衡
+        - name: 血液生化
+          notes: 檢測營養缺乏(鈣、磷、牛磺酸等)
+ddxSource: auto-generated

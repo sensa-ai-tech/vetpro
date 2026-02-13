@@ -3,12 +3,13 @@ nameEn: Cardiac Neoplasia Overview
 nameZh: 心臟腫瘤概論
 bodySystem: oncology
 description: 心臟腫瘤包含原發性 (血管肉瘤、心臟腫瘤、淋巴瘤) 及轉移性腫瘤。症狀取決於腫瘤位置,可能導致心包填塞、心律不整或心衰竭。
-
 aliases:
-  - { alias: 心臟癌症, language: zh }
-  - { alias: Cardiac Tumor, language: en }
-  - { alias: 心臟贅生物, language: zh }
-
+  - alias: 心臟癌症
+    language: zh
+  - alias: Cardiac Tumor
+    language: en
+  - alias: 心臟贅生物
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 罕見,最常見為淋巴瘤
-
 etiology:
   categories:
     - name: 原發性惡性
@@ -34,7 +34,6 @@ etiology:
       examples:
         - 肺腺癌
         - 惡性黑色素瘤
-
 clinicalSigns:
   early:
     - 運動不耐
@@ -45,22 +44,20 @@ clinicalSigns:
     - 腹水、胸腔積液
     - 右心衰竭症狀
     - 暈厥
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波
-      notes: "評估腫瘤位置、大小、心包積液"
+      notes: 評估腫瘤位置、大小、心包積液
     - name: 胸部 X 光
-      notes: "心臟輪廓擴大、肺轉移"
+      notes: 心臟輪廓擴大、肺轉移
     - name: 心包穿刺液分析
-      notes: "細胞學檢查 (多為血液性)"
+      notes: 細胞學檢查 (多為血液性)
     - name: CT/MRI
-      notes: "評估腫瘤範圍及轉移"
+      notes: 評估腫瘤範圍及轉移
   differentialDiagnoses:
     - 特發性心包積液
     - 心衰竭
     - 感染性心包炎
-
 treatment:
   medical:
     - 心包穿刺 (緊急處理填塞)
@@ -68,28 +65,58 @@ treatment:
     - 心包膜切除術 (姑息性)
     - 化療 (淋巴瘤)
     - Doxorubicin (血管肉瘤,效果有限)
-
 prognosis:
-  general: "預後不良;血管肉瘤中位存活時間 1-3 個月;心底腫瘤若能手術切除可存活 1-2 年;淋巴瘤對化療反應較佳"
-
+  general: 預後不良;血管肉瘤中位存活時間 1-3 個月;心底腫瘤若能手術切除可存活 1-2 年;淋巴瘤對化療反應較佳
 prevention:
   - 無特定預防措施
   - 高風險品種定期心臟超音波篩檢
-
-
 guidelineRefs:
   - sourceOrg: International journal of molecular sciences
     title: An Overview of the Enhanced Effects of Curcumin and Chemotherapeutic Agents in Combined Cancer Treatments.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10454892/
     type: review
-    pmid: "37628772"
+    pmid: '37628772'
   - sourceOrg: The International journal of developmental biology
-    title: "Michael Abercrombie: contact inhibition of locomotion and more."
+    title: 'Michael Abercrombie: contact inhibition of locomotion and more.'
     url: https://pubmed.ncbi.nlm.nih.gov/29616739/
     type: review
-    pmid: "29616739"
+    pmid: '29616739'
   - sourceOrg: Placenta
-    title: "Natural killer cells in placentation and cancer: Implications for hypertension during pregnancy."
+    title: 'Natural killer cells in placentation and cancer: Implications for hypertension during pregnancy.'
     url: https://pubmed.ncbi.nlm.nih.gov/28318556/
     type: review
-    pmid: "28318556"
+    pmid: '28318556'
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: heart-murmur
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 心臟腫瘤概論 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - pallor-cyanosis 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波
+          notes: 評估腫瘤位置、大小、心包積液
+        - name: 胸部 X 光
+          notes: 心臟輪廓擴大、肺轉移
+        - name: 心包穿刺液分析
+          notes: 細胞學檢查 (多為血液性)
+ddxSource: auto-generated

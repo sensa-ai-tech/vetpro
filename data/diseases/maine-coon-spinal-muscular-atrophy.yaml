@@ -3,17 +3,16 @@ nameEn: Maine Coon Spinal Muscular Atrophy
 nameZh: 緬因貓脊髓性肌萎縮症
 bodySystem: neurology
 description: 緬因貓的遺傳性運動神經元疾病,脊髓前角細胞退化導致肌肉萎縮及無力。幼貓3-4月齡發病,後肢無力、步態異常,但不影響壽命。
-
 aliases:
-  - { alias: SMA, language: en }
-  - { alias: 脊髓性肌萎縮, language: zh }
-
+  - alias: SMA
+    language: en
+  - alias: 脊髓性肌萎縮
+    language: zh
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 緬因貓,體染色體隱性遺傳
-
 etiology:
   categories:
     - name: 遺傳性神經疾病
@@ -21,7 +20,6 @@ etiology:
         - LIX1基因突變
         - 脊髓前角運動神經元退化
         - 體染色體隱性遺傳
-
 clinicalSigns:
   early:
     - 3-4月齡發病
@@ -32,30 +30,56 @@ clinicalSigns:
     - 姿勢異常(蹲坐姿勢)
     - 跳躍能力喪失
     - 不進展為癱瘓
-
 diagnosis:
   primaryTests:
     - name: 基因檢測
-      notes: "LIX1基因突變確診"
+      notes: LIX1基因突變確診
     - name: 肌電圖(EMG)
-      notes: "神經源性肌肉變化"
+      notes: 神經源性肌肉變化
     - name: 肌肉活檢
-      notes: "神經源性萎縮"
+      notes: 神經源性萎縮
   differentialDiagnoses:
     - 其他肌病
     - 脊髓病變
     - 代謝性肌病
-
 treatment:
   medical:
     - 無特效治療
     - 支持性照護
     - 環境調整(低矮食盆、貓砂盆)
     - 物理治療
-
 prognosis:
-  general: "不影響壽命,症狀在青春期後穩定。生活品質可接受,可適應環境。預後良好。"
-
+  general: 不影響壽命,症狀在青春期後穩定。生活品質可接受,可適應環境。預後良好。
 prevention:
   - 繁殖前基因檢測
   - 帶因者不應繁殖
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: uncommon
+  - symptomId: paresis-paralysis
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 緬因貓脊髓性肌萎縮症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+        - paresis-paralysis 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 基因檢測
+          notes: LIX1基因突變確診
+        - name: 肌電圖(EMG)
+          notes: 神經源性肌肉變化
+        - name: 肌肉活檢
+          notes: 神經源性萎縮
+ddxSource: auto-generated

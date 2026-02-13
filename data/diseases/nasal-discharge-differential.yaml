@@ -3,11 +3,11 @@ nameEn: Nasal Discharge Differential
 nameZh: 鼻分泌物鑑別診斷
 bodySystem: respiratory
 description: 鼻分泌物為常見症狀,需依分泌物性質 (漿液性、黏液性、化膿性、血性)、單側或雙側及伴隨症狀進行鑑別診斷。
-
 aliases:
-  - { alias: 鼻漏鑑別, language: zh }
-  - { alias: Rhinorrhea Differential, language: en }
-
+  - alias: 鼻漏鑑別
+    language: zh
+  - alias: Rhinorrhea Differential
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 常見原因包含上呼吸道感染、鼻炎
-
 etiology:
   categories:
     - name: 感染性
@@ -35,7 +34,6 @@ etiology:
     - name: 牙科疾病
       examples:
         - 口鼻廔管
-
 clinicalSigns:
   early:
     - 打噴嚏
@@ -44,20 +42,18 @@ clinicalSigns:
     - 鼻出血 (腫瘤、真菌)
     - 臉部變形 (腫瘤)
     - 呼吸困難
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
-      notes: "評估分泌物性質、單側或雙側、牙科檢查"
+      notes: 評估分泌物性質、單側或雙側、牙科檢查
     - name: 鼻鏡檢查
-      notes: "直視鼻腔、取組織切片"
+      notes: 直視鼻腔、取組織切片
     - name: 頭部 X 光 / CT
-      notes: "評估鼻腔結構、腫瘤、異物"
+      notes: 評估鼻腔結構、腫瘤、異物
     - name: 鼻沖洗液
-      notes: "細胞學、培養、真菌培養"
+      notes: 細胞學、培養、真菌培養
   differentialDiagnoses:
     - 依分泌物性質及檢查結果確認
-
 treatment:
   medical:
     - 依原發病因治療
@@ -65,44 +61,72 @@ treatment:
     - 抗真菌藥 (真菌性)
     - 移除異物
     - 腫瘤治療 (手術、放療)
-
 prognosis:
-  general: "取決於原發病因;感染性預後良好;腫瘤預後不良"
-
+  general: 取決於原發病因;感染性預後良好;腫瘤預後不良
 prevention:
   - 疫苗接種
   - 定期牙科照護
   - 避免異物吸入
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Streptococcus equi Infections in Horses: Guidelines for Treatment, Control, and Prevention of Strangles-Revised Consensus Statement."
+    title: >-
+      Streptococcus equi Infections in Horses: Guidelines for Treatment, Control, and Prevention of Strangles-Revised
+      Consensus Statement.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5867011/
     type: consensus
-    pmid: "29424487"
+    pmid: '29424487'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
     title: Epidemiology of Pestivirus H in Brazil and Its Control Implications.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8342886/
     type: review
-    pmid: "34368280"
+    pmid: '34368280'
     relevance: primary
   - sourceOrg: BMC infectious diseases
-    title: "Chlamydia psittaci pneumonia manifested as pulmonary nodules and cavitary lesions: a case report."
+    title: 'Chlamydia psittaci pneumonia manifested as pulmonary nodules and cavitary lesions: a case report.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12482870/
     type: case-report
-    pmid: "41023968"
+    pmid: '41023968'
     relevance: supporting
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: Calcium carbonate rhinolithiasis associated with chronic lymphocytic rhinitis in a pet rabbit (Oryctolagus cuniculus).
+    title: >-
+      Calcium carbonate rhinolithiasis associated with chronic lymphocytic rhinitis in a pet rabbit (Oryctolagus
+      cuniculus).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11265829/
     type: case-report
-    pmid: "39091480"
+    pmid: '39091480'
     relevance: supporting
   - sourceOrg: Microorganisms
     title: Upper Respiratory Tract Disease in a Dog Infected by a Highly Pathogenic Avian A/H5N1 Virus.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11051868/
     type: case-report
-    pmid: "38674633"
+    pmid: '38674633'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: sneezing
+    frequency: common
+  - symptomId: epistaxis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 鼻分泌物鑑別診斷 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - sneezing 相關症狀
+        - epistaxis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 評估分泌物性質、單側或雙側、牙科檢查
+        - name: 鼻鏡檢查
+          notes: 直視鼻腔、取組織切片
+        - name: 頭部 X 光 / CT
+          notes: 評估鼻腔結構、腫瘤、異物
+ddxSource: auto-generated

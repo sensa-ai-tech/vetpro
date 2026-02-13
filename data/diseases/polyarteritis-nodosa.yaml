@@ -2,14 +2,18 @@ slug: polyarteritis-nodosa
 nameEn: Polyarteritis Nodosa
 nameZh: 結節性多發動脈炎
 bodySystem: immunology
-description: 結節性多發動脈炎 (polyarteritis nodosa, PAN) 為侵犯中型動脈的壞死性血管炎。犬中以 Beagle 疼痛症候群 (Beagle pain syndrome) 最為典型，表現為頸部僵硬、發燒與劇烈疼痛。可侵犯冠狀動脈、腎動脈與腸繫膜動脈。
-
+description: >-
+  結節性多發動脈炎 (polyarteritis nodosa, PAN) 為侵犯中型動脈的壞死性血管炎。犬中以 Beagle 疼痛症候群 (Beagle pain syndrome)
+  最為典型，表現為頸部僵硬、發燒與劇烈疼痛。可侵犯冠狀動脈、腎動脈與腸繫膜動脈。
 aliases:
-  - { alias: 多發性動脈炎, language: zh }
-  - { alias: Beagle 疼痛症候群, language: zh }
-  - { alias: PAN, language: en }
-  - { alias: Beagle Pain Syndrome, language: en }
-
+  - alias: 多發性動脈炎
+    language: zh
+  - alias: Beagle 疼痛症候群
+    language: zh
+  - alias: PAN
+    language: en
+  - alias: Beagle Pain Syndrome
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓 PAN 極罕見。多為屍檢意外發現。
-
 etiology:
   categories:
     - name: 致病機制
@@ -31,7 +34,6 @@ etiology:
         - Beagle 品種遺傳傾向
         - 免疫調節異常
         - 病因多數不明（特發性）
-
 clinicalSigns:
   early:
     - 週期性發燒
@@ -44,7 +46,6 @@ clinicalSigns:
     - 腸繫膜動脈炎→腹痛、血便
     - 冠狀動脈炎→心肌梗塞、猝死
     - 腎動脈炎→高血壓、腎損傷
-
 diagnosis:
   primaryTests:
     - name: CBC
@@ -56,7 +57,6 @@ diagnosis:
     - 超音波心圖（冠狀動脈評估）
     - 血壓
     - 尿液分析
-
 treatment:
   principles:
     - 免疫抑制控制血管炎
@@ -68,29 +68,76 @@ treatment:
     - 疼痛管理（gabapentin、NSAIDs — 注意與類固醇衝突）
     - 低劑量 aspirin（抗血栓，部分專家建議）
     - 定期監測腎功能、心臟功能
-
 prognosis: Beagle pain syndrome 在免疫抑制療法下多數可控制，部分犬可達到長期緩解。冠狀動脈侵犯者有猝死風險。非 Beagle 犬的全身性 PAN 預後較差。需長期追蹤。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
-    title: "Canine Cardiac and Cardiovascular Pathology: Four Major Life-Threatening Non-Degenerative, Non-Hereditary Conditions."
+    title: >-
+      Canine Cardiac and Cardiovascular Pathology: Four Major Life-Threatening Non-Degenerative, Non-Hereditary
+      Conditions.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12656747/
     type: review
-    pmid: "41295698"
+    pmid: '41295698'
     relevance: primary
   - sourceOrg: Scientific reports
     title: Arterial Remodeling in B-Type Natriuretic Peptide Knock-Out Females.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4861904/
     type: research
-    pmid: "27162120"
+    pmid: '27162120'
     relevance: supporting
   - sourceOrg: Acta reumatologica portuguesa
-    title: "Primary systemic vasculitides as the bridge in immune-mediated disorders: small vessels for autoimmunity, medium vessels for autoinflammation."
+    title: >-
+      Primary systemic vasculitides as the bridge in immune-mediated disorders: small vessels for autoimmunity, medium
+      vessels for autoinflammation.
     url: https://pubmed.ncbi.nlm.nih.gov/33820892/
     type: review
-    pmid: "33820892"
+    pmid: '33820892'
     relevance: primary
 pubmedQueries:
   - query: '"polyarteritis nodosa" OR "Beagle pain syndrome" AND (veterinary OR canine) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: polyarthritis
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: haematochezia
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 結節性多發動脈炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - polyarthritis 相關症狀
+        - weakness 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: CBC
+          notes: 嗜中性球增多、可見 left shift。CRP 顯著升高
+        - name: 動脈組織生檢
+          notes: 中型動脈壁壞死性炎症、纖維素壞死、各期病灶共存
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 腦脊液分析（嗜中性球性腦膜炎 — Beagle pain syndrome）
+        - 超音波心圖（冠狀動脈評估）
+        - 血壓
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 免疫抑制控制血管炎
+        - 疼痛管理
+        - 監測器官損傷
+ddxSource: auto-generated

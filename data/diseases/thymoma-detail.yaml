@@ -3,13 +3,15 @@ nameEn: Thymoma Detail
 nameZh: 胸腺瘤詳述
 bodySystem: oncology
 description: 起源於胸腺上皮細胞的前縱膈腫瘤，犬及貓均可發生。常伴發副腫瘤症候群如重症肌無力。手術切除為首選治療，完全切除後預後良好。
-
 aliases:
-  - { alias: 胸腺上皮瘤, language: zh }
-  - { alias: 前縱膈腫瘤, language: zh }
-  - { alias: Thymoma, language: en }
-  - { alias: Thymic Epithelial Neoplasm, language: en }
-
+  - alias: 胸腺上皮瘤
+    language: zh
+  - alias: 前縱膈腫瘤
+    language: zh
+  - alias: Thymoma
+    language: en
+  - alias: Thymic Epithelial Neoplasm
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓胸腺瘤較犬少見但並非罕見。需與胸腺淋巴瘤鑑別。貓胸腺瘤亦可伴發重症肌無力及剝脫性皮膚炎。
-
 etiology:
   categories:
     - name: 腫瘤分類
@@ -34,7 +35,6 @@ etiology:
         - 高鈣血症
         - 皮膚病變（貓的剝脫性皮膚炎）
         - 免疫介導性疾病
-
 clinicalSigns:
   early:
     - 咳嗽
@@ -47,24 +47,22 @@ clinicalSigns:
     - 反流性肺炎
     - 前腔靜脈症候群（面部/前肢水腫）
     - 胸腔積液
-
 diagnosis:
   primaryTests:
     - name: 胸腔 X 光
-      notes: "前縱膈腫塊為典型表現。可見氣管背側偏移及心影模糊"
+      notes: 前縱膈腫塊為典型表現。可見氣管背側偏移及心影模糊
     - name: CT
-      notes: "評估腫塊範圍、侵犯程度及手術可行性。區分囊性與實質性成分"
+      notes: 評估腫塊範圍、侵犯程度及手術可行性。區分囊性與實質性成分
     - name: 超音波引導 FNA 或 Tru-cut 切片
-      notes: "細胞學可見上皮細胞與淋巴球混合。需與淋巴瘤鑑別"
+      notes: 細胞學可見上皮細胞與淋巴球混合。需與淋巴瘤鑑別
     - name: 乙醯膽鹼受體抗體
-      notes: "評估是否伴發重症肌無力"
+      notes: 評估是否伴發重症肌無力
   differentialDiagnoses:
     - 前縱膈淋巴瘤
     - 異位甲狀腺腫瘤
     - 心基底腫瘤
     - 前縱膈囊腫
     - 脂肪瘤
-
 treatment:
   surgical:
     - 胸腺切除術為首選治療
@@ -76,25 +74,57 @@ treatment:
     - 化療效果有限
     - 胸腔積液管理
     - 反流性肺炎預防及治療
-
 prognosis:
-  general: "完全手術切除後預後良好，中位生存時間 >2 年。重症肌無力在胸腺切除後約 60% 可改善或緩解。侵襲性胸腺瘤或無法完全切除者預後較差。"
-
+  general: 完全手術切除後預後良好，中位生存時間 >2 年。重症肌無力在胸腺切除後約 60% 可改善或緩解。侵襲性胸腺瘤或無法完全切除者預後較差。
 prevention:
   - 前縱膈腫塊應及早進行影像學及組織學評估
   - 新發全身性肌無力應檢查前縱膈
-
-
 guidelineRefs:
   - sourceOrg: Indian dermatology online journal
-    title: "Paraneoplastic Autoimmune Multiorgan Syndrome: A Retrospective Study from a Tertiary Care Center in South India."
+    title: 'Paraneoplastic Autoimmune Multiorgan Syndrome: A Retrospective Study from a Tertiary Care Center in South India.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8354390/
     type: research
-    pmid: "34430462"
+    pmid: '34430462'
     relevance: supporting
   - sourceOrg: American journal of translational research
     title: microRNA-22 attenuates neuronal cell apoptosis in a cell model of traumatic brain injury.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4859918/
     type: research
-    pmid: "27186313"
+    pmid: '27186313'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 胸腺瘤詳述 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - dysphagia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸腔 X 光
+          notes: 前縱膈腫塊為典型表現。可見氣管背側偏移及心影模糊
+        - name: CT
+          notes: 評估腫塊範圍、侵犯程度及手術可行性。區分囊性與實質性成分
+        - name: 超音波引導 FNA 或 Tru-cut 切片
+          notes: 細胞學可見上皮細胞與淋巴球混合。需與淋巴瘤鑑別
+ddxSource: auto-generated

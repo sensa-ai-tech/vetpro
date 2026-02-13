@@ -3,12 +3,13 @@ nameEn: Tritrichomonas Foetus
 nameZh: 胎兒三毛滴蟲感染
 bodySystem: gastrointestinal
 description: 胎兒三毛滴蟲（Tritrichomonas foetus）為貓隻大腸的原蟲寄生蟲，引起慢性大腸性腹瀉。在多貓家庭與純種貓舍流行率高。幼貓至年輕成貓好發。糞便中可見運動的滴蟲體。多數貓最終可自行清除感染。
-
 aliases:
-  - { alias: 貓三毛滴蟲感染, language: zh }
-  - { alias: Tritrichomonas Infection, language: en }
-  - { alias: T. foetus, language: en }
-
+  - alias: 貓三毛滴蟲感染
+    language: zh
+  - alias: Tritrichomonas Infection
+    language: en
+  - alias: T. foetus
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓隻為主要宿主。多貓家庭與純種貓舍流行率約 30-50%。幼貓至年輕成貓（<3 歲）好發。
-
 etiology:
   categories:
     - name: 病原體
@@ -30,7 +30,6 @@ etiology:
         - 純種貓舍
         - 幼貓密集飼養
         - 共用貓砂盆
-
 clinicalSigns:
   early:
     - 軟便至水樣腹瀉
@@ -42,60 +41,92 @@ clinicalSigns:
     - 肛門脫垂（反覆裡急後重）
     - 體重通常維持正常
     - 精神狀態通常良好
-
 diagnosis:
   primaryTests:
     - name: 糞便 PCR
       notes: 確診金標準。T. foetus 特異性 PCR（使用 InPouch 培養基培養後 PCR 敏感度更高）。
     - name: 新鮮糞便直接抹片
       notes: 新鮮糞便（<2 小時）稀釋後鏡檢可見運動的滴蟲（undulating membrane 特徵）。需與 Giardia 鑑別（Giardia 為 falling leaf motion）。
-
 treatment:
   principles:
     - Ronidazole 為唯一有效藥物（但有神經毒性風險）
     - 部分貓可自行清除（2 年內）
     - Metronidazole 無效
   general:
-    - "Ronidazole 30 mg/kg PO q24h × 14 天（唯一證實有效的藥物）"
+    - Ronidazole 30 mg/kg PO q24h × 14 天（唯一證實有效的藥物）
     - 注意 Ronidazole 神經毒性（共濟失調、震顫、癲癇，通常停藥後可逆）
     - Metronidazole 無效（不可用 Metronidazole 替代）
     - 環境管理：增加貓砂盆數量、定期清潔
     - 輕度無症狀者可選擇觀察等待
-
 prognosis: Ronidazole 治療緩解率約 80-90%。復發可能（特別是多貓環境）。多數貓在 2 年內可自行清除感染。神經毒性為 Ronidazole 的重要副作用但通常可逆。長期預後良好。
-
-
 guidelineRefs:
   - sourceOrg: International journal of molecular sciences
-    title: "A Multi-Omics Perspective on Tritrichomonas foetus: From Genomics to Future Directions."
+    title: 'A Multi-Omics Perspective on Tritrichomonas foetus: From Genomics to Future Directions.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12428144/
     type: review
-    pmid: "40943266"
+    pmid: '40943266'
     relevance: primary
   - sourceOrg: Parasite immunology
-    title: "Systematic Review of Vaccine Strategies Against Tritrichomonas foetus Infection in Cattle: Insights, Challenges, and Prospects."
+    title: >-
+      Systematic Review of Vaccine Strategies Against Tritrichomonas foetus Infection in Cattle: Insights, Challenges,
+      and Prospects.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11751591/
     type: review
-    pmid: "39838701"
+    pmid: '39838701'
     relevance: primary
   - sourceOrg: Open veterinary journal
-    title: "Bovine trichomoniasis: A hidden threat to reproductive efficiency."
+    title: 'Bovine trichomoniasis: A hidden threat to reproductive efficiency.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11682740/
     type: review
-    pmid: "39737020"
+    pmid: '39737020'
     relevance: primary
   - sourceOrg: Veterinary and animal science
-    title: What about the bull? A systematic review about the role of males in bovine infectious infertility within cattle herds.
+    title: >-
+      What about the bull? A systematic review about the role of males in bovine infectious infertility within cattle
+      herds.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9840180/
     type: review
-    pmid: "36647444"
+    pmid: '36647444'
     relevance: primary
   - sourceOrg: Trends in parasitology
     title: Persistent Trichomonas vaginalis infections and the pseudocyst form.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10844888/
     type: review
-    pmid: "37806787"
+    pmid: '37806787'
     relevance: primary
 pubmedQueries:
   - query: '"Tritrichomonas foetus" AND (feline OR cat) AND ("ronidazole" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: faecal-tenesmus
+    frequency: uncommon
+  - symptomId: haematochezia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 胎兒三毛滴蟲感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - diarrhoea 相關症狀
+        - faecal-tenesmus 相關症狀
+        - haematochezia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便 PCR
+          notes: 確診金標準。T. foetus 特異性 PCR（使用 InPouch 培養基培養後 PCR 敏感度更高）。
+        - name: 新鮮糞便直接抹片
+          notes: 新鮮糞便（<2 小時）稀釋後鏡檢可見運動的滴蟲（undulating membrane 特徵）。需與 Giardia 鑑別（Giardia 為 falling leaf motion）。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - Ronidazole 為唯一有效藥物（但有神經毒性風險）
+        - 部分貓可自行清除（2 年內）
+        - Metronidazole 無效
+ddxSource: auto-generated

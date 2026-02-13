@@ -3,12 +3,13 @@ nameEn: Gastric Neoplasia
 nameZh: 胃腫瘤
 bodySystem: gastrointestinal
 description: 犬貓胃腫瘤相對少見（佔犬所有腫瘤 <1%），但多數為惡性。犬隻以腺癌（adenocarcinoma）最常見，其次為淋巴瘤、平滑肌瘤/肉瘤與胃腸道基質腫瘤（GIST）。貓隻以淋巴瘤最常見。確診時多已局部晚期或有轉移。
-
 aliases:
-  - { alias: 胃癌, language: zh }
-  - { alias: Gastric Cancer, language: en }
-  - { alias: Stomach Tumor, language: en }
-
+  - alias: 胃癌
+    language: zh
+  - alias: Gastric Cancer
+    language: en
+  - alias: Stomach Tumor
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻胃腫瘤以淋巴瘤最常見。胃腺癌亦有報告但少見。
-
 etiology:
   categories:
     - name: 常見腫瘤類型（犬）
@@ -30,7 +30,6 @@ etiology:
         - 淋巴瘤（最常見）
         - 腺癌
         - 肥大細胞腫瘤
-
 clinicalSigns:
   early:
     - 慢性間歇性嘔吐
@@ -42,35 +41,71 @@ clinicalSigns:
     - 黑便（melena）
     - 腹痛
     - 貧血
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
       notes: 胃壁局部或瀰漫性增厚。黏膜下層結構破壞。腫塊性病變。評估局部淋巴結腫大與肝臟轉移。
     - name: 內視鏡活檢
       notes: 確診必須。直接觀察腫瘤外觀並取活檢。多點深層活檢提高診斷率。部分黏膜下腫瘤表面活檢可能為陰性。
-
 treatment:
   principles:
     - 胃腺癌手術切除為唯一可能的治癒手段
     - 淋巴瘤以化療為主
     - GIST 可考慮標靶治療
   general:
-    - "胃腺癌：部分或全胃切除（gastrectomy）+ 區域淋巴結清除"
-    - "胃淋巴瘤（犬）：CHOP 化療方案"
-    - "胃淋巴瘤（貓）：COP 或 CHOP 方案，部分可 Prednisolone + Chlorambucil"
-    - "GIST：手術切除 + Toceranib（Palladia）或 Imatinib 標靶治療"
+    - 胃腺癌：部分或全胃切除（gastrectomy）+ 區域淋巴結清除
+    - 胃淋巴瘤（犬）：CHOP 化療方案
+    - 胃淋巴瘤（貓）：COP 或 CHOP 方案，部分可 Prednisolone + Chlorambucil
+    - GIST：手術切除 + Toceranib（Palladia）或 Imatinib 標靶治療
     - 支持性治療：止吐、營養支持、貧血矯正
-
 prognosis: 胃腺癌預後不良，即使手術切除中位存活時間約 2-6 個月，確診時多已轉移。胃淋巴瘤化療反應率中等。GIST 手術完全切除後預後相對較好（中位存活時間可達 1-3 年）。良性腫瘤（平滑肌瘤）手術切除後預後極好。
-
-
 guidelineRefs:
   - sourceOrg: Pharmaceutics
-    title: "Helicobacter Pylori-Induced Gastric Infections: From Pathogenesis to Novel Therapeutic Approaches Using Silver Nanoparticles."
+    title: >-
+      Helicobacter Pylori-Induced Gastric Infections: From Pathogenesis to Novel Therapeutic Approaches Using Silver
+      Nanoparticles.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9318142/
     type: review
-    pmid: "35890358"
+    pmid: '35890358'
 pubmedQueries:
-  - query: '"gastric neoplasia" OR "gastric adenocarcinoma" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
+  - query: >-
+      "gastric neoplasia" OR "gastric adenocarcinoma" AND (veterinary OR canine OR feline) AND ("treatment" OR
+      "prognosis")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: melaena
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 胃腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 胃壁局部或瀰漫性增厚。黏膜下層結構破壞。腫塊性病變。評估局部淋巴結腫大與肝臟轉移。
+        - name: 內視鏡活檢
+          notes: 確診必須。直接觀察腫瘤外觀並取活檢。多點深層活檢提高診斷率。部分黏膜下腫瘤表面活檢可能為陰性。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 胃腺癌手術切除為唯一可能的治癒手段
+        - 淋巴瘤以化療為主
+        - GIST 可考慮標靶治療
+ddxSource: auto-generated

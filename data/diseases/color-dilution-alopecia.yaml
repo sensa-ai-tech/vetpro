@@ -3,12 +3,13 @@ nameEn: Color Dilution Alopecia
 nameZh: 色素稀釋性脫毛
 bodySystem: dermatology
 description: 帶有稀釋色 (dilute) 被毛的犬發生的遺傳性脫毛疾病。因黑色素不規則聚集在毛幹中導致毛幹結構脆弱斷裂。藍色（blue）或淡黃色（fawn）被毛犬好發。
-
 aliases:
-  - { alias: "CDA", language: en }
-  - { alias: "Blue Dog Disease", language: en }
-  - { alias: "藍色犬脫毛症", language: zh }
-
+  - alias: CDA
+    language: en
+  - alias: Blue Dog Disease
+    language: en
+  - alias: 藍色犬脫毛症
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓極罕見。
-
 etiology:
   categories:
     - name: 遺傳性
@@ -24,7 +24,6 @@ etiology:
         - MLPH 基因 (melanophilin) 突變相關
         - 稀釋色基因導致黑色素不規則聚集
         - 毛幹結構脆弱
-
 clinicalSigns:
   early:
     - 稀釋色被毛區域進行性脫毛
@@ -35,14 +34,12 @@ clinicalSigns:
     - 毛囊角質栓
     - 繼發性膿皮症
     - 皮膚乾燥鱗屑
-
 diagnosis:
   primaryTests:
     - name: 毛髮顯微鏡檢查
       notes: 毛幹內見不規則黑色素聚集（melanin clumping）與毛幹斷裂
     - name: 品種與被毛顏色
       notes: 稀釋色犬的特徵性脫毛分布
-
 treatment:
   principles:
     - 無法治癒
@@ -53,9 +50,48 @@ treatment:
     - 保濕潤膚
     - 必要脂肪酸補充
     - 穿衣服保護皮膚
-
 prognosis: 無法治癒的遺傳性疾病。適當皮膚護理可維持良好生活品質。不危及生命。受影響犬不建議繁殖。
-
 pubmedQueries:
   - query: '"color dilution alopecia" AND (veterinary OR canine) AND ("diagnosis" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 色素稀釋性脫毛症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估稀釋色被毛區域的脫毛特徵
+      findings:
+        - 藍色或淡黃褐色被毛犬
+        - 稀釋色區域漸進性脫毛
+        - 通常6個月至3歲發病
+        - 非稀釋色區域毛髮正常
+    - step: 2
+      action: 毛髮檢查
+      details: 進行毛髮拔取和顯微鏡檢查
+      findings:
+        - 毛幹內黑色素團塊不規則分布
+        - 毛幹扭曲和斷裂
+        - 色素團塊呈巨大不規則塊狀
+        - 毛囊萎縮
+    - step: 3
+      action: 組織病理學確診
+      details: 進行皮膚活檢確認毛囊病變
+      findings:
+        - 毛囊內黑色素巨大團塊
+        - 毛囊角化異常
+        - 毛囊周圍輕度炎症
+        - 與其他脫毛症鑑別
+clinicalPearls:
+  - 並非所有稀釋色犬隻都會發生CDA，但在某些品種如藍色杜賓犬中發病率極高
+  - 毛髮顯微鏡檢查是最快速且低成本的初步診斷方法
+  - 治療重點在控制繼發感染和皮膚護理，而非試圖恢復毛髮生長
+  - 需與內分泌性脫毛鑑別，CDA僅影響稀釋色區域為重要特徵
+monitoringItems:
+  - 每2-3個月定期皮膚檢查
+  - 監測繼發性細菌感染的徵兆
+  - 評估脫毛進展程度
+  - 營養狀態和被毛品質評估
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+ddxSource: book

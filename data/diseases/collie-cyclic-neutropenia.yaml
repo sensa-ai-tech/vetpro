@@ -3,18 +3,18 @@ nameEn: Collie Cyclic Neutropenia
 nameZh: 柯利犬週期性嗜中性白血球減少症
 bodySystem: hematology
 description: 灰色柯利犬症候群,伴隨毛色稀釋及週期性嗜中性白血球減少。每12-14天白血球數降至危險低點,導致反覆感染。體染色體隱性遺傳,預後極差。
-
 aliases:
-  - { alias: 灰色柯利症候群, language: zh }
-  - { alias: Gray Collie Syndrome, language: en }
-  - { alias: Cyclic Hematopoiesis, language: en }
-
+  - alias: 灰色柯利症候群
+    language: zh
+  - alias: Gray Collie Syndrome
+    language: en
+  - alias: Cyclic Hematopoiesis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: rare
     notes: 僅見於灰色柯利犬,體染色體隱性遺傳
-
 etiology:
   categories:
     - name: 遺傳性造血異常
@@ -22,7 +22,6 @@ etiology:
         - AP3B1基因突變
         - 造血幹細胞週期性成熟障礙
         - 體染色體隱性遺傳
-
 clinicalSigns:
   early:
     - 灰色或淡化毛色
@@ -33,20 +32,18 @@ clinicalSigns:
     - 生長遲緩
     - 關節炎、骨髓炎
     - 多數在6月齡前死亡
-
 diagnosis:
   primaryTests:
     - name: 連續血液學檢查
-      notes: "每3-4天採血,顯示12-14天週期性嗜中性球減少(可降至0)"
+      notes: 每3-4天採血,顯示12-14天週期性嗜中性球減少(可降至0)
     - name: 骨髓檢查
-      notes: "週期性成熟停滯"
+      notes: 週期性成熟停滯
     - name: 基因檢測
-      notes: "AP3B1基因突變確診"
+      notes: AP3B1基因突變確診
   differentialDiagnoses:
     - 其他原因嗜中性白血球減少
     - 免疫介導性白血球減少
     - 骨髓增生異常
-
 treatment:
   medical:
     - 無治癒方法
@@ -54,19 +51,45 @@ treatment:
     - G-CSF(granulocyte colony-stimulating factor)試驗性治療
     - 支持性照護
     - 積極治療感染
-
 prognosis:
-  general: "預後極差,多數幼犬在6-12月齡內因嚴重感染死亡。極少數存活至成年,但生活品質差,壽命縮短。"
-
+  general: 預後極差,多數幼犬在6-12月齡內因嚴重感染死亡。極少數存活至成年,但生活品質差,壽命縮短。
 prevention:
   - 灰色柯利犬不應繁殖
   - 親代基因檢測篩除帶因者
   - 繁殖計畫嚴格管控
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Cyclic hematopoiesis in a mixed-breed dog: case report and brief review."
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: 'Cyclic hematopoiesis in a mixed-breed dog: case report and brief review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9597339/
     type: review
-    pmid: "35904319"
+    pmid: '35904319'
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+diagnosticAlgorithm:
+  title: 柯利犬週期性嗜中性白血球減少症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - weakness 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 連續血液學檢查
+          notes: 每3-4天採血,顯示12-14天週期性嗜中性球減少(可降至0)
+        - name: 骨髓檢查
+          notes: 週期性成熟停滯
+        - name: 基因檢測
+          notes: AP3B1基因突變確診
+ddxSource: auto-generated

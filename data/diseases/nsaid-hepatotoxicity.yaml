@@ -3,13 +3,15 @@ nameEn: NSAID Hepatotoxicity
 nameZh: 非類固醇消炎藥肝毒性
 bodySystem: toxicology
 description: 非類固醇消炎藥 (NSAID) 肝毒性是使用 NSAIDs 後引起的藥物性肝損傷，可表現為急性或慢性肝炎。犬中以 carprofen 的特異體質反應最為人知，但所有 NSAIDs 均有潛在肝毒性風險。
-
 aliases:
-  - { alias: NSAID 肝損傷, language: zh }
-  - { alias: 消炎藥肝毒性, language: zh }
-  - { alias: NSAID-Induced Liver Injury, language: en }
-  - { alias: NSAID Hepatopathy, language: en }
-
+  - alias: NSAID 肝損傷
+    language: zh
+  - alias: 消炎藥肝毒性
+    language: zh
+  - alias: NSAID-Induced Liver Injury
+    language: en
+  - alias: NSAID Hepatopathy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓因藥物代謝（葡萄糖醛酸化能力低下）對 NSAIDs 更敏感。Meloxicam 為貓唯一核准長期使用的 NSAID，但仍需謹慎。
-
 etiology:
   categories:
     - name: 常見相關藥物
@@ -36,7 +37,6 @@ etiology:
         - 粒線體功能障礙
         - 氧化壓力
         - 劑量相關性肝損傷（過量或長期使用）
-
 clinicalSigns:
   early:
     - 食慾下降（開始用藥後數天至數週）
@@ -50,19 +50,17 @@ clinicalSigns:
     - 凝血功能異常
     - 腹水
     - 肝性腦病
-
 diagnosis:
   primaryTests:
     - name: 血液生化
-      notes: "ALT 急劇升高（可達數千）。ALP、膽紅素同步升高。低白蛋白血症。需確認近期 NSAID 使用史。"
+      notes: ALT 急劇升高（可達數千）。ALP、膽紅素同步升高。低白蛋白血症。需確認近期 NSAID 使用史。
     - name: 用藥史確認
-      notes: "詳細確認 NSAID 種類、劑量、使用時間。特異體質反應可在開始用藥後數天至數週出現。"
+      notes: 詳細確認 NSAID 種類、劑量、使用時間。特異體質反應可在開始用藥後數天至數週出現。
   differentialDiagnoses:
     - 其他藥物性肝損傷
     - 急性感染性肝炎
     - 銅儲積性肝病急性發作
     - 黃麴毒素中毒
-
 treatment:
   medical:
     - 立即停用所有 NSAIDs
@@ -74,46 +72,78 @@ treatment:
     - 凝血功能異常時補充維生素 K1 與新鮮冷凍血漿
   surgical:
     - 通常不適用手術治療
-
 prognosis:
-  general: "早期停藥者多數可恢復，預後良好至謹慎。已發展至嚴重肝衰竭者預後不良。Carprofen 特異體質反應在 Labrador Retriever 中報告死亡率較高。肝功能恢復可能需要數週至數月。"
-
+  general: 早期停藥者多數可恢復，預後良好至謹慎。已發展至嚴重肝衰竭者預後不良。Carprofen 特異體質反應在 Labrador Retriever 中報告死亡率較高。肝功能恢復可能需要數週至數月。
 prevention:
   - 使用 NSAIDs 前檢測基線肝功能
   - 開始用藥後2-4週複檢肝酵素
   - 使用最低有效劑量與最短療程
   - 避免多種 NSAIDs 或 NSAID 與皮質類固醇併用
   - 教育飼主注意食慾下降等早期警訊
-
-
 guidelineRefs:
   - sourceOrg: Molecules (Basel, Switzerland)
     title: Quercetin and Ferulic Acid Elicit Estrogenic Activities In Vivo and In Silico.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10343488/
     type: research
-    pmid: "37446770"
+    pmid: '37446770'
     relevance: supporting
   - sourceOrg: Scientific reports
     title: Prophylactic consequences of sodium salicylate nanoparticles in cisplatin-mediated hepatotoxicity.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10284791/
     type: research
-    pmid: "37344526"
+    pmid: '37344526'
     relevance: supporting
   - sourceOrg: International journal of nanomedicine
     title: Long-Circulating Lipid Nanospheres Loaded with Flurbiprofen Axetil for Targeted Rheumatoid Arthritis Treatment.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10497098/
     type: research
-    pmid: "37705869"
+    pmid: '37705869'
     relevance: supporting
   - sourceOrg: Inflammopharmacology
-    title: "Trichopus zeylanicus ameliorates ibuprofen inebriated hepatotoxicity and enteropathy: an insight into its modulatory impact on pro/anti-inflammatory cytokines and apoptotic signaling pathways."
+    title: >-
+      Trichopus zeylanicus ameliorates ibuprofen inebriated hepatotoxicity and enteropathy: an insight into its
+      modulatory impact on pro/anti-inflammatory cytokines and apoptotic signaling pathways.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9410745/
     type: research
-    pmid: "36008576"
+    pmid: '36008576'
     relevance: supporting
   - sourceOrg: Molecules (Basel, Switzerland)
     title: Drug Design, Synthesis and Biological Evaluation of Heterocyclic Molecules as Anti-Inflammatory Agents.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8876616/
     type: research
-    pmid: "35209053"
+    pmid: '35209053'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 非類固醇消炎藥肝毒性 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - abdominal-pain 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液生化
+          notes: ALT 急劇升高（可達數千）。ALP、膽紅素同步升高。低白蛋白血症。需確認近期 NSAID 使用史。
+        - name: 用藥史確認
+          notes: 詳細確認 NSAID 種類、劑量、使用時間。特異體質反應可在開始用藥後數天至數週出現。
+ddxSource: auto-generated

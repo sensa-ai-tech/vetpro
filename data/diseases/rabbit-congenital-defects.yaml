@@ -3,16 +3,15 @@ nameEn: Rabbit Congenital Defects
 nameZh: 兔先天性缺陷
 bodySystem: gastrointestinal
 description: 兔出生即存在的結構或功能異常，包括水腦症、多指/趾、唇顎裂、肢體畸形等。近親繁殖增加先天缺陷風險，部分缺陷可手術矯正。
-
 aliases:
-  - { alias: "兔先天性缺陷", language: zh }
-  - { alias: "Rabbit Congenital Defects", language: en }
-
+  - alias: 兔先天性缺陷
+    language: zh
+  - alias: Rabbit Congenital Defects
+    language: en
 species:
   - speciesCommon: rabbit
     prevalence: uncommon
     notes: 兔可受此疾病影響。
-
 etiology:
   categories:
     - name: 遺傳性
@@ -25,7 +24,6 @@ etiology:
         - 孕期藥物暴露
         - 孕期營養缺乏
         - 孕期感染
-
 clinicalSigns:
   early:
     - 出生時可見結構異常
@@ -34,14 +32,12 @@ clinicalSigns:
   progressive:
     - 發育不良
     - 功能障礙程度因缺陷類型而異
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 出生後詳細全身檢查。評估缺陷嚴重度及可矯正性。
     - name: 影像學
       notes: X 光評估骨骼異常。必要時超音波或 CT。
-
 treatment:
   principles:
     - 評估缺陷對生活品質的影響
@@ -53,41 +49,73 @@ treatment:
     - 輕微肢體缺陷：適應性管理
     - 不適合繁殖的個體絕育
     - 支持性照護
-
 prognosis: 預後高度取決於缺陷類型與嚴重度。輕微缺陷不影響生活品質。嚴重缺陷（如水腦症、嚴重唇顎裂）預後不良。
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
     title: An overview of mycotoxicoses in rabbits.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11457744/
     type: review
-    pmid: "38804173"
+    pmid: '38804173'
     relevance: primary
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
     title: Segmental aplasia of the paramesonephric duct in a New Zealand white rabbit and a review of the literature.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11529434/
     type: review
-    pmid: "38282435"
+    pmid: '38282435'
     relevance: primary
   - sourceOrg: Veterinary sciences
     title: Pregnancy Complications and Feto-Maternal Monitoring in Rabbits.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10610772/
     type: review
-    pmid: "37888574"
+    pmid: '37888574'
     relevance: primary
   - sourceOrg: Circulation research
-    title: "MUSCLEMOTION: A Versatile Open Software Tool to Quantify Cardiomyocyte and Cardiac Muscle Contraction In Vitro and In Vivo."
+    title: >-
+      MUSCLEMOTION: A Versatile Open Software Tool to Quantify Cardiomyocyte and Cardiac Muscle Contraction In Vitro and
+      In Vivo.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5805275/
     type: review
-    pmid: "29282212"
+    pmid: '29282212'
     relevance: supporting
   - sourceOrg: Critical reviews in toxicology
-    title: "Comparison of rat and rabbit embryo-fetal developmental toxicity data for 379 pharmaceuticals: on the nature and severity of developmental effects."
+    title: >-
+      Comparison of rat and rabbit embryo-fetal developmental toxicity data for 379 pharmaceuticals: on the nature and
+      severity of developmental effects.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8865449/
     type: review
-    pmid: "27848393"
+    pmid: '27848393'
     relevance: supporting
 pubmedQueries:
   - query: '"Rabbit Congenital Defects" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: failure-to-grow
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔先天性缺陷 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - failure-to-grow 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 出生後詳細全身檢查。評估缺陷嚴重度及可矯正性。
+        - name: 影像學
+          notes: X 光評估骨骼異常。必要時超音波或 CT。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 評估缺陷對生活品質的影響
+        - 可矯正者考慮手術
+        - 不可矯正且嚴重影響生活品質者考慮安樂死
+ddxSource: auto-generated

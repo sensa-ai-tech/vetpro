@@ -3,12 +3,13 @@ nameEn: Enamel Hypomineralization
 nameZh: 琺瑯質礦化不全
 bodySystem: dental
 description: 琺瑯質礦化不全是牙齒發育過程中琺瑯質形成異常,導致牙齒表面缺陷、變色和敏感。可能因發燒、營養不良、犬瘟熱或遺傳因素造成,需保護治療預防進一步損傷。
-
 aliases:
-  - { alias: 牙釉質發育不全, language: zh }
-  - { alias: Enamel Hypoplasia, language: en }
-  - { alias: Enamel Defect, language: en }
-
+  - alias: 牙釉質發育不全
+    language: zh
+  - alias: Enamel Hypoplasia
+    language: en
+  - alias: Enamel Defect
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少見
-
 etiology:
   categories:
     - name: 系統性疾病
@@ -34,7 +34,6 @@ etiology:
       examples:
         - 品種易感性
         - 遺傳性琺瑯質發育不全
-
 clinicalSigns:
   early:
     - 牙齒表面凹陷或坑洞
@@ -45,20 +44,18 @@ clinicalSigns:
     - 牙齒易磨損或斷裂
     - 繼發蛀牙或牙髓炎
     - 嚴重美觀問題
-
 diagnosis:
   primaryTests:
     - name: 視診
-      notes: "牙齒表面凹陷、變色、粗糙"
+      notes: 牙齒表面凹陷、變色、粗糙
     - name: 病史
-      notes: "幼齡期疾病史(犬瘟熱、發燒)"
+      notes: 幼齡期疾病史(犬瘟熱、發燒)
     - name: X光
-      notes: "評估牙髓和象牙質狀況"
+      notes: 評估牙髓和象牙質狀況
   differentialDiagnoses:
     - 牙齒磨耗
     - 氟中毒
     - 牙齒吸收
-
 treatment:
   medical:
     - 輕度:定期塗氟強化
@@ -67,30 +64,48 @@ treatment:
     - 中度:複合樹脂填補修復
     - 嚴重:牙冠修復或拔除
     - 預防繼發感染
-
 prognosis:
-  general: "無法逆轉但可保護治療。輕中度經保護和修復預後良好。嚴重病例需長期監控,部分牙齒可能需拔除。關鍵是預防進一步損傷和繼發感染。"
-
+  general: 無法逆轉但可保護治療。輕中度經保護和修復預後良好。嚴重病例需長期監控,部分牙齒可能需拔除。關鍵是預防進一步損傷和繼發感染。
 prevention:
   - 幼犬疫苗接種預防犬瘟熱
   - 幼齡期營養充足
   - 及時治療發燒和感染
   - 遺傳性避免繁殖
-
-
 guidelineRefs:
   - sourceOrg: The Journal of biological chemistry
     title: G protein-coupled receptor Gpr115 (Adgrf4) is required for enamel mineralization mediated by ameloblasts.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7650236/
     type: research
-    pmid: "32868297"
+    pmid: '32868297'
   - sourceOrg: Frontiers in physiology
     title: Expression of Steroid Receptors in Ameloblasts during Amelogenesis in Rat Incisors.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5090168/
     type: research
-    pmid: "27853434"
-  - sourceOrg: "Journal of bone and mineral research : the official journal of the American Society for Bone and Mineral Research"
+    pmid: '27853434'
+  - sourceOrg: 'Journal of bone and mineral research : the official journal of the American Society for Bone and Mineral Research'
     title: Chronic Exposure to Bisphenol A Exacerbates Dental Fluorosis in Growing Rats.
     url: https://pubmed.ncbi.nlm.nih.gov/27257137/
     type: research
-    pmid: "27257137"
+    pmid: '27257137'
+associatedSymptoms:
+  - symptomId: hyperthermia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 琺瑯質礦化不全 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 視診
+          notes: 牙齒表面凹陷、變色、粗糙
+        - name: 病史
+          notes: 幼齡期疾病史(犬瘟熱、發燒)
+        - name: X光
+          notes: 評估牙髓和象牙質狀況
+ddxSource: auto-generated

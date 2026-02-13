@@ -3,12 +3,13 @@ nameEn: Mammary Hyperplasia
 nameZh: 乳腺增生
 bodySystem: reproductive
 description: 乳腺增生為犬貓荷爾蒙影響下乳腺組織良性增殖。犬常見於假懷孕期間乳腺腫脹與泌乳。貓則以纖維上皮增生 (fibroepithelial hyperplasia) 為特徵性表現，常與黃體酮（內源或外源性）相關。需與乳腺腫瘤鑑別。
-
 aliases:
-  - { alias: 乳腺肥大, language: zh }
-  - { alias: Mammary Gland Hyperplasia, language: en }
-  - { alias: Mammary Gland Enlargement, language: en }
-
+  - alias: 乳腺肥大
+    language: zh
+  - alias: Mammary Gland Hyperplasia
+    language: en
+  - alias: Mammary Gland Enlargement
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓乳腺纖維上皮增生 (FEH) 好發於年輕母貓（首次發情後）或使用外源性黃體酮（megestrol acetate）的公貓/母貓。Aglepristone 為有效治療。
-
 etiology:
   categories:
     - name: 致病機制
@@ -30,7 +30,6 @@ etiology:
         - 外源性黃體酮投與
         - 卵巢殘留症候群
         - 妊娠
-
 clinicalSigns:
   early:
     - 乳腺腫脹
@@ -42,7 +41,6 @@ clinicalSigns:
     - 皮膚繃緊、可能潰瘍
     - 疼痛
     - 行走困難（嚴重腫大時）
-
 diagnosis:
   primaryTests:
     - name: 臨床評估
@@ -53,7 +51,6 @@ diagnosis:
     - 血清黃體酮（確認黃體酮來源）
     - 腹部超音波（卵巢殘留評估）
     - 組織生檢（不確定時）
-
 treatment:
   principles:
     - 移除荷爾蒙來源
@@ -66,36 +63,81 @@ treatment:
     - OHE（根治性預防復發）
     - 皮膚潰瘍護理
     - 避免冰敷或擠壓乳腺
-
 prognosis: 犬假懷孕乳腺增生為自限性，預後極佳。貓 FEH 對 aglepristone 反應率 >90%。OHE 可預防復發。未治療的嚴重 FEH 可引起皮膚壞死與繼發感染。
-
-
 guidelineRefs:
   - sourceOrg: Comparative medicine
     title: Spontaneous Pituitary Neoplasm in Two Female Geriatric Southern Giant Pouched Rats (Cricetomys ansorgei).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10752360/
     type: case-report
-    pmid: "38217070"
+    pmid: '38217070'
   - sourceOrg: Annals of translational medicine
-    title: "Artesunate attenuates proliferation of epithelial cells by downregulating the NF-&#x3ba;B and AKT signaling pathways in benign mammary gland hyperplasia rats."
+    title: >-
+      Artesunate attenuates proliferation of epithelial cells by downregulating the NF-&#x3ba;B and AKT signaling
+      pathways in benign mammary gland hyperplasia rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8184455/
     type: research
-    pmid: "34164482"
+    pmid: '34164482'
   - sourceOrg: Advances in pharmacological and pharmaceutical sciences
     title: In Vitro and In Vivo Antiproliferative Actions of Solanum gilo Raddi (Solanaceae) Fruit Extract on Breast Tissues.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9529474/
     type: research
-    pmid: "36199376"
-  - sourceOrg: "Biomedicine &amp; pharmacotherapy = Biomedecine &amp; pharmacotherapie"
-    title: "Gynura procumbens and selected metabolites: Amelioration of depressive-like behaviors in mice and risperidone-induced hyperprolactinemia in rats."
+    pmid: '36199376'
+  - sourceOrg: Biomedicine &amp; pharmacotherapy = Biomedecine &amp; pharmacotherapie
+    title: >-
+      Gynura procumbens and selected metabolites: Amelioration of depressive-like behaviors in mice and
+      risperidone-induced hyperprolactinemia in rats.
     url: https://pubmed.ncbi.nlm.nih.gov/38428310/
     type: research
-    pmid: "38428310"
-  - sourceOrg: "Biomedicine &amp; pharmacotherapy = Biomedecine &amp; pharmacotherapie"
-    title: "Metabolite profiling of traditional Chinese medicine XIAOPI formula: An integrated strategy based on UPLC-Q-Orbitrap MS combined with network pharmacology analysis."
+    pmid: '38428310'
+  - sourceOrg: Biomedicine &amp; pharmacotherapy = Biomedecine &amp; pharmacotherapie
+    title: >-
+      Metabolite profiling of traditional Chinese medicine XIAOPI formula: An integrated strategy based on
+      UPLC-Q-Orbitrap MS combined with network pharmacology analysis.
     url: https://pubmed.ncbi.nlm.nih.gov/31739163/
     type: research
-    pmid: "31739163"
+    pmid: '31739163'
 pubmedQueries:
-  - query: '"mammary hyperplasia" OR "fibroepithelial hyperplasia" AND (veterinary OR canine OR feline) AND ("treatment" OR "aglepristone")'
+  - query: >-
+      "mammary hyperplasia" OR "fibroepithelial hyperplasia" AND (veterinary OR canine OR feline) AND ("treatment" OR
+      "aglepristone")
     frequency: monthly
+diagnosticAlgorithm:
+  title: 乳腺增生 診斷流程
+  steps:
+    - step: 1
+      action: 臨床評估
+      details: 年齡、性別、激素暴露史
+      findings:
+        - 年輕未絕育母貓
+        - 多腺體快速腫大
+        - 近期發情或黃體素用藥
+    - step: 2
+      action: 細胞學篩檢
+      details: 細針穿刺
+      findings:
+        - 纖維上皮增生
+        - 無異型細胞
+        - 排除腫瘤
+    - step: 3
+      action: 影像排除轉移
+      details: 胸部X光
+      findings:
+        - 無肺轉移→支持良性診斷
+        - 有轉移→重新考慮惡性腫瘤
+    - step: 4
+      action: 組織學確診
+      details: 切片活檢
+      findings:
+        - 纖維腺瘤樣增生確認
+        - 無惡性特徵
+clinicalPearls:
+  - 年輕母貓多腺體快速對稱腫大→高度懷疑FAH而非腫瘤
+  - Aglepristone是特異性治療，6天內即見效
+  - 必須做組織學排除乳腺癌
+  - 外源性黃體素（megestrol acetate）可在公貓引起FAH
+monitoringItems:
+  - 腫塊大小追蹤（治療後）
+  - 皮膚完整性
+  - 復發監測
+  - 黃體素暴露避免
+ddxSource: book

@@ -3,20 +3,22 @@ nameEn: Pug Encephalitis
 nameZh: 巴哥犬腦炎
 bodySystem: neurology
 description: 巴哥犬腦炎（Pug Dog Encephalitis, PDE）是壞死性腦膜腦炎（NME）在巴哥犬中的表現，為免疫介導性中樞神經系統疾病。特徵為大腦皮質與白質的多灶性壞死性發炎，進展快速且預後不良。
-
 aliases:
-  - { alias: 巴哥腦炎, language: zh }
-  - { alias: 壞死性腦膜腦炎, language: zh }
-  - { alias: Pug Dog Encephalitis, language: en }
-  - { alias: PDE, language: en }
-  - { alias: Necrotizing meningoencephalitis, language: en }
-
+  - alias: 巴哥腦炎
+    language: zh
+  - alias: 壞死性腦膜腦炎
+    language: zh
+  - alias: Pug Dog Encephalitis
+    language: en
+  - alias: PDE
+    language: en
+  - alias: Necrotizing meningoencephalitis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: rare
     notes: 巴哥犬特有疾病。通常 9 月齡至 7 歲發病，好發 2-3 歲。母犬發生率稍高。與 DLA class II 基因型有關。小鹿色巴哥更常見。
-
 etiology:
   categories:
     - name: 免疫因素
@@ -29,7 +31,6 @@ etiology:
         - 大腦皮質多灶性壞死
         - 非化膿性腦膜腦炎
         - 腦組織液化性壞死
-
 clinicalSigns:
   early:
     - 癲癇發作（最常見的首發症狀）
@@ -43,41 +44,67 @@ clinicalSigns:
     - 失明
     - 快速神經功能惡化
     - 昏迷
-
 diagnosis:
   primaryTests:
     - name: MRI
-      notes: "大腦皮質多灶性壞死病灶。T2WI 與 FLAIR 高訊號。灰白質界面模糊"
+      notes: 大腦皮質多灶性壞死病灶。T2WI 與 FLAIR 高訊號。灰白質界面模糊
     - name: 腦脊液分析
-      notes: "單核球性多形細胞增多。蛋白升高"
+      notes: 單核球性多形細胞增多。蛋白升高
     - name: DLA 基因型檢測
-      notes: "DRB1*00201 純合子風險最高。可用於繁殖篩選"
+      notes: DRB1*00201 純合子風險最高。可用於繁殖篩選
   differentialDiagnoses:
     - 肉芽腫性腦膜腦炎（GME）
     - 犬瘟熱腦炎
     - 腦腫瘤
     - 中毒性腦病
-
 treatment:
   medical:
     - 免疫抑制劑（Prednisolone 1-2 mg/kg + Cytarabine 或 Cyclosporine）
     - 抗癲癇藥（Levetiracetam、Phenobarbital）
     - 癲癇持續狀態緊急處理
     - 支持性護理
-
 prognosis:
-  general: "預後不良。PDE 為進行性致死性疾病。中位存活時間約 3-6 個月。免疫抑制治療可延長存活但無法治癒。部分犬對治療反應較好可存活 1-2 年。癲癇控制是生活品質的關鍵。"
-
+  general: 預後不良。PDE 為進行性致死性疾病。中位存活時間約 3-6 個月。免疫抑制治療可延長存活但無法治癒。部分犬對治療反應較好可存活 1-2 年。癲癇控制是生活品質的關鍵。
 prevention:
   - DLA 基因型繁殖篩選
   - 避免高風險基因型犬的繁殖
   - 早期辨識癲癇症狀
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
     title: Breed-Specific Magnetic Resonance Imaging Characteristics of Necrotizing Encephalitis in Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5723069/
     type: review
-    pmid: "29255715"
+    pmid: '29255715'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: common
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: blindness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 巴哥犬腦炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - seizures 相關症狀
+        - coma-stupor 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: MRI
+          notes: 大腦皮質多灶性壞死病灶。T2WI 與 FLAIR 高訊號。灰白質界面模糊
+        - name: 腦脊液分析
+          notes: 單核球性多形細胞增多。蛋白升高
+        - name: DLA 基因型檢測
+          notes: DRB1*00201 純合子風險最高。可用於繁殖篩選
+ddxSource: auto-generated

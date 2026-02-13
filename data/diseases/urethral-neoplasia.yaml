@@ -3,11 +3,11 @@ nameEn: Urethral Neoplasia
 nameZh: 尿道腫瘤
 bodySystem: oncology
 description: 尿道原發性或轉移性腫瘤,包括移行上皮癌、腺癌、鱗狀上皮癌等,常導致尿道阻塞、血尿及排尿困難,預後通常不良。
-
 aliases:
-  - { alias: 尿道癌, language: zh }
-  - { alias: Urethral carcinoma, language: en }
-
+  - alias: 尿道癌
+    language: zh
+  - alias: Urethral carcinoma
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 極少見,移行上皮癌或腺癌為主
-
 etiology:
   categories:
     - name: 原發性腫瘤
@@ -35,7 +34,6 @@ etiology:
       examples:
         - 慢性尿道炎或感染
         - 環境致癌物暴露
-
 clinicalSigns:
   early:
     - 血尿(尤其排尿末段)
@@ -47,23 +45,21 @@ clinicalSigns:
     - 會陰部或下腹部腫塊
     - 後肢水腫(淋巴或血管壓迫)
     - 氮血症症狀
-
 diagnosis:
   primaryTests:
     - name: 尿道鏡檢查+活檢
-      notes: "直視下可見腫塊並採樣進行組織病理學確診"
+      notes: 直視下可見腫塊並採樣進行組織病理學確診
     - name: 對比劑尿道造影
-      notes: "顯示尿道管腔充盈缺損或不規則狹窄"
+      notes: 顯示尿道管腔充盈缺損或不規則狹窄
     - name: 腹部/骨盆腔超音波或CT
-      notes: "評估腫瘤大小、侵犯範圍及淋巴結轉移"
+      notes: 評估腫瘤大小、侵犯範圍及淋巴結轉移
     - name: 尿液細胞學
-      notes: "可檢出惡性細胞,但敏感性不高"
+      notes: 可檢出惡性細胞,但敏感性不高
   differentialDiagnoses:
     - 尿道結石
     - 慢性尿道炎合併息肉
     - 前列腺腫大壓迫尿道
     - 膀胱腫瘤延伸至尿道
-
 treatment:
   medical:
     - 手術切除(適用於局限性腫瘤,如尿道部分切除+尿道吻合或會陰尿道造口)
@@ -72,11 +68,41 @@ treatment:
     - NSAIDs(Piroxicam 0.3 mg/kg PO SID 或 Meloxicam 0.1 mg/kg PO SID)
     - 膀胱造口術(姑息性引流尿液)
     - 止痛治療(Tramadol 2-5 mg/kg PO BID-TID)
-
 prognosis:
-  general: "預後不良,多數病例診斷時已為晚期。移行上皮癌中位存活時間約6-12個月,手術切除乾淨者可延長至1-2年。"
-
+  general: 預後不良,多數病例診斷時已為晚期。移行上皮癌中位存活時間約6-12個月,手術切除乾淨者可延長至1-2年。
 prevention:
   - 及時治療慢性尿道炎及泌尿道感染
   - 減少環境致癌物暴露
   - 中老年犬定期泌尿系統健康檢查
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: common
+  - symptomId: urinary-incontinence
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 尿道腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pollakiuria 相關症狀
+        - urinary-incontinence 相關症狀
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 尿道鏡檢查+活檢
+          notes: 直視下可見腫塊並採樣進行組織病理學確診
+        - name: 對比劑尿道造影
+          notes: 顯示尿道管腔充盈缺損或不規則狹窄
+        - name: 腹部/骨盆腔超音波或CT
+          notes: 評估腫瘤大小、侵犯範圍及淋巴結轉移
+ddxSource: auto-generated

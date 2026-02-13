@@ -3,14 +3,17 @@ nameEn: Panosteitis
 nameZh: 全骨炎
 bodySystem: orthopedic
 description: 長骨骨幹的自限性骨內膜發炎疾病，好發於大型品種幼犬（5-18 月齡）。又稱「生長痛」。特徵為遊走性跛行（shifting leg lameness），一肢好轉另一肢又發作。German Shepherd 最好發。
-
 aliases:
-  - { alias: "Growing Pains", language: en }
-  - { alias: "Pano", language: en }
-  - { alias: "Eosinophilic Panosteitis", language: en }
-  - { alias: "生長痛", language: zh }
-  - { alias: "全骨骨膜炎", language: zh }
-
+  - alias: Growing Pains
+    language: en
+  - alias: Pano
+    language: en
+  - alias: Eosinophilic Panosteitis
+    language: en
+  - alias: 生長痛
+    language: zh
+  - alias: 全骨骨膜炎
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -18,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓極罕見。
-
 etiology:
   categories:
     - name: 自限性骨髓腔炎症
@@ -26,7 +28,6 @@ etiology:
         - 確切病因不明
         - 可能與骨髓脂肪壞死相關
         - 品種遺傳傾向
-
 clinicalSigns:
   early:
     - 突然跛行（一肢）
@@ -36,14 +37,12 @@ clinicalSigns:
     - 跛行遊走至其他肢
     - 可能數月反覆發作
     - 食慾下降
-
 diagnosis:
   primaryTests:
     - name: X 光
       notes: 長骨骨幹髓腔內斑點狀密度增加。早期可能正常
     - name: 骨幹觸診疼痛
       notes: 用力觸壓長骨骨幹引起疼痛反應
-
 treatment:
   principles:
     - 自限性疾病，止痛為主
@@ -53,9 +52,65 @@ treatment:
     - 限制劇烈活動
     - 2 歲前通常自行緩解
     - 避免高蛋白高鈣飲食
-
 prognosis: 預後極佳。自限性疾病，2 歲前幾乎全部自行緩解。不留後遺症。
-
 pubmedQueries:
   - query: '"panosteitis" AND (veterinary OR canine) AND ("diagnosis" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 全骨炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估遊走性跛行，確認年齡與品種
+      findings:
+        - 遊走性跛行不同肢體輪替
+        - 大型犬5-18月齡
+        - 長骨骨幹觸診疼痛
+        - 輕度發燒與食慾下降
+    - step: 2
+      action: X光檢查
+      details: 四肢長骨X光，多處檢查
+      findings:
+        - 長骨骨髓腔內斑塊狀密度增加
+        - 骨膜反應
+        - 尺骨最常受影響
+        - 病變可在多處長骨出現
+    - step: 3
+      action: 鑑別診斷排除
+      details: 排除其他青年犬跛行原因
+      findings:
+        - 排除肥大性骨營養不良HOD
+        - 排除OCD
+        - 排除骨腫瘤
+        - 排除骨折或關節感染
+    - step: 4
+      action: 治療反應與預後
+      details: 症狀治療後觀察自限性病程
+      findings:
+        - NSAIDs治療反應良好
+        - 自限性疾病數週至數月
+        - 可能復發數次
+        - 長期預後良好
+clinicalPearls:
+  - 骨幹中段深壓疼痛（而非關節）是關鍵診斷發現
+  - X光變化可能比臨床症狀晚1-2週出現
+  - 移行性跛行是特徵性表現
+  - 不要誤診為骨肉瘤（年齡是重要區分點）
+  - 不需要抗生素治療
+  - 德國牧羊犬幼犬跛行的最常見原因之一
+monitoringItems:
+  - 跛行嚴重程度
+  - 止痛藥效果
+  - 體溫
+  - X光追蹤（必要時）
+  - 生長發育
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: common
+ddxSource: book

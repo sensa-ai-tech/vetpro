@@ -3,11 +3,11 @@ nameEn: Septic Arthritis
 nameZh: 化膿性關節炎
 bodySystem: orthopedic
 description: 關節腔的細菌感染。可因穿透傷、關節手術後、血行性播散或鄰近組織感染擴散引起。急性期若不及時治療可導致關節軟骨不可逆破壞。
-
 aliases:
-  - { alias: "Infectious Arthritis", language: en }
-  - { alias: "感染性關節炎", language: zh }
-
+  - alias: Infectious Arthritis
+    language: en
+  - alias: 感染性關節炎
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓偶見。打架咬傷相關。
-
 etiology:
   categories:
     - name: 感染性
@@ -24,7 +23,6 @@ etiology:
         - 術後感染
         - 血行性播散
         - Staphylococcus 最常見
-
 clinicalSigns:
   early:
     - 急性關節腫脹
@@ -36,14 +34,12 @@ clinicalSigns:
     - 持續跛行
     - 關節僵硬
     - 全身性感染症狀
-
 diagnosis:
   primaryTests:
     - name: 關節液抽取分析
       notes: 混濁液體。細胞計數 > 40,000/μL 以嗜中性球為主。培養確認病原
     - name: X 光
       notes: 關節周圍軟組織腫脹。晚期可見骨質溶解
-
 treatment:
   principles:
     - 緊急關節沖洗
@@ -53,41 +49,95 @@ treatment:
     - 全身性抗生素 4-6 週（依培養結果）
     - 止痛管理
     - 物理治療維持關節功能
-
 prognosis: 及時沖洗 + 抗生素預後中等至良好。延遲治療關節軟骨不可逆破壞，預後差。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Inter- and intra-rater agreement among novices and comparison to an experienced consensus using the G&#xe4;chter scale for the evaluation of septic joints."
+    title: >-
+      Inter- and intra-rater agreement among novices and comparison to an experienced consensus using the G&#xe4;chter
+      scale for the evaluation of septic joints.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12306484/
     type: consensus
-    pmid: "40735284"
+    pmid: '40735284'
     relevance: primary
   - sourceOrg: International journal of rheumatic diseases
-    title: "Toward Identifying a Multivariate Correlation of Septic Arthritis With a Machine Learning Approach: Time to Reset the Current Australasian Guidelines?"
+    title: >-
+      Toward Identifying a Multivariate Correlation of Septic Arthritis With a Machine Learning Approach: Time to Reset
+      the Current Australasian Guidelines?
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12357062/
     type: guideline
-    pmid: "40817605"
+    pmid: '40817605'
     relevance: primary
   - sourceOrg: Forensic science, medicine, and pathology
-    title: "Post-mortem diagnosis of septic arthritis by Pasteurella multocida: a case report and literature review of fatal septic arthritis."
+    title: >-
+      Post-mortem diagnosis of septic arthritis by Pasteurella multocida: a case report and literature review of fatal
+      septic arthritis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12325534/
     type: review
-    pmid: "39797963"
+    pmid: '39797963'
     relevance: primary
   - sourceOrg: Medicina (Kaunas, Lithuania)
     title: Infective Endocarditis by Capnocytophaga Species-A Narrative Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10972404/
     type: review
-    pmid: "38541108"
+    pmid: '38541108'
     relevance: primary
   - sourceOrg: Clinical rheumatology
-    title: "Synovial biopsies in clinical practice and research: current developments and perspectives."
+    title: 'Synovial biopsies in clinical practice and research: current developments and perspectives.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8189968/
     type: review
-    pmid: "33274415"
+    pmid: '33274415'
     relevance: primary
 pubmedQueries:
   - query: '"septic arthritis" AND (veterinary OR canine OR feline) AND ("lavage" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 化膿性關節炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估急性關節炎症和全身症狀
+      findings:
+        - 急性單關節或多關節腫脹
+        - 劇烈疼痛和跛行
+        - 發熱和精神沉鬱
+        - 穿透傷或手術史
+    - step: 2
+      action: 關節液分析
+      details: 進行關節穿刺和滑液分析
+      findings:
+        - 滑液混濁至膿性
+        - 有核細胞顯著增多（>40,000/μL）
+        - 嗜中性球 >90%
+        - 退化性嗜中性球和細菌
+    - step: 3
+      action: 微生物學檢查
+      details: 進行滑液培養和藥敏試驗
+      findings:
+        - 細菌培養分離病原菌
+        - 常見：Staphylococcus、Streptococcus、E. coli
+        - 抗生素藥敏指導治療
+        - 血液培養排除菌血症
+    - step: 4
+      action: 影像學評估
+      details: 進行X光和進階影像評估關節損傷
+      findings:
+        - 關節腫脹和軟組織增厚
+        - 關節間隙改變
+        - 骨質侵蝕（晚期）
+        - 排除骨髓炎累及
+clinicalPearls:
+  - 關節液 WBC >40,000/μL 伴退化性嗜中性球高度提示感染
+  - 與 IMPA 鑑別：IMPA 通常多關節、非退化性嗜中性球、培養陰性
+  - 術後關節感染可在手術後數天到數週才出現
+  - 抗生素療程不足是復發的主要原因，至少 4 週
+monitoringItems:
+  - 關節液分析每 1-2 週追蹤至正常化
+  - X 光每 2-4 週評估骨改變
+  - 體溫和跛行程度每日評估（住院期間）
+  - 抗生素完成後 2 週複驗關節液
+associatedSymptoms:
+  - symptomId: polyarthritis
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+ddxSource: book

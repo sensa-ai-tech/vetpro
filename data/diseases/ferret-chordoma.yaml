@@ -3,22 +3,20 @@ nameEn: Ferret Chordoma
 nameZh: 雪貂脊索瘤
 bodySystem: endocrine
 description: 雪貂尾部好發的骨腫瘤，起源於脊索殘留組織。表現為尾巴末端硬質腫塊，局部侵襲性但轉移率低。截尾術為治療選擇。
-
 aliases:
-  - { alias: "雪貂脊索瘤", language: zh }
-  - { alias: "Ferret Chordoma", language: en }
-
+  - alias: 雪貂脊索瘤
+    language: zh
+  - alias: Ferret Chordoma
+    language: en
 species:
   - speciesCommon: ferret
     prevalence: uncommon
     notes: 雪貂可受此疾病影響。
-
 etiology:
   categories:
     - name: 病因
       examples:
         - 詳見臨床文獻
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -27,14 +25,12 @@ clinicalSigns:
   progressive:
     - 症狀加重
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 完整理學檢查與病史評估。
     - name: 實驗室檢查
       notes: CBC/生化排除系統性疾病。
-
 treatment:
   principles:
     - 治療基礎病因
@@ -44,26 +40,64 @@ treatment:
     - 依病因治療
     - 支持性照護
     - 定期追蹤
-
 prognosis: 預後取決於疾病嚴重度與治療時效。早期診斷與適當治療可改善預後。
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
     title: Chordoma of the sacrum of an adult naked mole-rat.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7003236/
     type: case-report
-    pmid: "31838959"
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Coccygeal chordoma in a degu: case report and review of the literature."
+    pmid: '31838959'
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: 'Coccygeal chordoma in a degu: case report and review of the literature.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6505757/
     type: case-report
-    pmid: "30541399"
+    pmid: '30541399'
   - sourceOrg: Laboratory animal research
     title: Chordoma in the tail of a ferret.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3145987/
     type: case-report
-    pmid: "21826161"
+    pmid: '21826161'
 pubmedQueries:
   - query: '"Ferret Chordoma" AND (veterinary OR ferret) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 雪貂脊索瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 完整理學檢查與病史評估。
+        - name: 實驗室檢查
+          notes: CBC/生化排除系統性疾病。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 支持性照護
+        - 監測恢復進度
+ddxSource: auto-generated

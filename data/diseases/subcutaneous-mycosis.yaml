@@ -3,11 +3,11 @@ nameEn: Subcutaneous Mycosis
 nameZh: Subcutaneous Mycosis
 bodySystem: dermatology
 description: 真菌性皮膚病,可為表淺或深部感染。需抗真菌治療,療程通常較長。
-
 aliases:
-  - { alias: Subcutaneous Mycosis, language: zh }
-  - { alias: Subcutaneous Mycosis, language: en }
-
+  - alias: Subcutaneous Mycosis
+    language: zh
+  - alias: Subcutaneous Mycosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 感染(細菌、真菌、寄生蟲)
       examples:
         - 過敏
         - 免疫介導
-
 clinicalSigns:
   early:
     - 搔癢
@@ -32,58 +30,74 @@ clinicalSigns:
   progressive:
     - 皮膚增厚
     - 色素沉著
-
 diagnosis:
   primaryTests:
     - name: 皮膚刮搔檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: 毛髮拔除檢查
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 局部治療(藥浴、藥膏)
     - 全身性抗生素或抗真菌藥
-
 prognosis:
-  general: "預後取決於根本病因。感染性疾病治療後多可痊癒,免疫或遺傳性疾病需長期管理。"
-
+  general: 預後取決於根本病因。感染性疾病治療後多可痊癒,免疫或遺傳性疾病需長期管理。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: Journal of fungi (Basel, Switzerland)
-    title: "Genetic Manipulation in Sporothrix Species: Molecular Tools, Challenges, and Applications."
+    title: 'Genetic Manipulation in Sporothrix Species: Molecular Tools, Challenges, and Applications.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12843236/
     type: review
-    pmid: "41590473"
+    pmid: '41590473'
     relevance: primary
   - sourceOrg: Journal of fungi (Basel, Switzerland)
-    title: "Sporothrix brasiliensis: Epidemiology, Therapy, and Recent Developments."
+    title: 'Sporothrix brasiliensis: Epidemiology, Therapy, and Recent Developments.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10532502/
     type: review
-    pmid: "37755029"
+    pmid: '37755029'
     relevance: primary
   - sourceOrg: Current fungal infection reports
-    title: "Sporotrichosis in Children: Case series and Narrative Review."
+    title: 'Sporotrichosis in Children: Case series and Narrative Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8902271/
     type: review
-    pmid: "35284035"
+    pmid: '35284035'
     relevance: primary
-  - sourceOrg: "Brazilian journal of microbiology : [publication of the Brazilian Society for Microbiology]"
-    title: "The Historical Burden of Sporotrichosis in Brazil: a Systematic Review of Cases Reported from 1907 to 2020."
+  - sourceOrg: 'Brazilian journal of microbiology : [publication of the Brazilian Society for Microbiology]'
+    title: 'The Historical Burden of Sporotrichosis in Brazil: a Systematic Review of Cases Reported from 1907 to 2020.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8882507/
     type: review
-    pmid: "34825345"
+    pmid: '34825345'
     relevance: primary
   - sourceOrg: Current research in microbial sciences
-    title: "Global distribution of animal sporotrichosis: A systematic review of Sporothrix sp. identified using molecular tools."
+    title: >-
+      Global distribution of animal sporotrichosis: A systematic review of Sporothrix sp. identified using molecular
+      tools.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9325896/
     type: review
-    pmid: "35909607"
+    pmid: '35909607'
     relevance: primary
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: common
+diagnosticAlgorithm:
+  title: Subcutaneous Mycosis 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 皮膚刮搔檢查
+          notes: 需詳細評估
+        - name: 毛髮拔除檢查
+          notes: 協助確診
+ddxSource: auto-generated

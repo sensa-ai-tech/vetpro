@@ -3,12 +3,13 @@ nameEn: Adrenal Dependent Hyperadrenocorticism
 nameZh: 腎上腺依賴性腎上腺皮質功能亢進
 bodySystem: urinary
 description: 腎上腺依賴性腎上腺皮質功能亢進（AT，adrenal tumor）為腎上腺皮質腫瘤（腺瘤或腺癌）自主分泌過量皮質醇所致，約佔犬隻庫欣氏症的 15-20%。通常為單側性腎上腺腫瘤，伴對側腎上腺萎縮。腎上腺癌可侵犯後腔靜脈並遠處轉移。
-
 aliases:
-  - { alias: 腎上腺腫瘤型庫欣氏症, language: zh }
-  - { alias: AT Cushing's, language: en }
-  - { alias: Adrenal Tumor Hyperadrenocorticism, language: en }
-
+  - alias: 腎上腺腫瘤型庫欣氏症
+    language: zh
+  - alias: AT Cushing's
+    language: en
+  - alias: Adrenal Tumor Hyperadrenocorticism
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻腎上腺腫瘤型庫欣氏症極罕見。
-
 etiology:
   categories:
     - name: 腫瘤類型
@@ -30,7 +30,6 @@ etiology:
         - 自主分泌皮質醇
         - ACTH 被負回饋抑制→對側腎上腺萎縮
         - 腺癌可侵犯後腔靜脈（tumor thrombus）
-
 clinicalSigns:
   early:
     - 多飲多尿
@@ -41,14 +40,12 @@ clinicalSigns:
     - 腹部觸診腫塊（大型腎上腺腫瘤）
     - 腺癌可能有轉移相關症狀
     - 後肢水腫（後腔靜脈侵犯壓迫時）
-
 diagnosis:
   primaryTests:
     - name: 篩檢與鑑別試驗
       notes: LDDS test 陽性。HDDS test 通常不被抑制（與 PDH 鑑別）。內源性 ACTH 低於正常或偵測不到（腫瘤自主分泌皮質醇抑制 ACTH）。
     - name: 腹部超音波/CT
       notes: 單側腎上腺腫塊（>20 mm 或非對稱性增大）。對側腎上腺萎縮。評估後腔靜脈侵犯。CT 為最佳術前評估工具。評估肺臟轉移。
-
 treatment:
   principles:
     - 腎上腺切除術為根治療法
@@ -58,12 +55,49 @@ treatment:
     - 腎上腺切除術（adrenalectomy）——需經驗豐富的外科醫師
     - 術前 CT 分期（排除轉移、評估血管侵犯）
     - 術後類固醇補充（對側腎上腺萎縮期間，通常 2-6 個月逐步停藥）
-    - "術後 Dexamethasone 0.1 mg/kg IV → Prednisolone PO 逐步減量"
-    - "無法手術者：Trilostane 1-2 mg/kg PO q12h（姑息性控制）"
+    - 術後 Dexamethasone 0.1 mg/kg IV → Prednisolone PO 逐步減量
+    - 無法手術者：Trilostane 1-2 mg/kg PO q12h（姑息性控制）
     - 後腔靜脈腫瘤血栓需特殊手術技術
-
 prognosis: 腎上腺腺瘤完整切除後預後良好（治癒性）。腎上腺腺癌切除後中位存活時間約 12-36 個月（取決於轉移狀態）。後腔靜脈侵犯者手術風險較高但仍可執行。Trilostane 姑息治療可控制症狀但無法治癒。術後腎上腺功能恢復需數週至數月。
-
 pubmedQueries:
-  - query: '"adrenal dependent hyperadrenocorticism" OR "adrenal tumor" AND (veterinary OR canine) AND ("adrenalectomy" OR "treatment")'
+  - query: >-
+      "adrenal dependent hyperadrenocorticism" OR "adrenal tumor" AND (veterinary OR canine) AND ("adrenalectomy" OR
+      "treatment")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: abdominal-distension
+    frequency: common
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: polyphagia
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 腎上腺依賴性腎上腺皮質功能亢進 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - abdominal-distension 相關症狀
+        - polyuria-polydipsia 相關症狀
+        - polyphagia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 篩檢與鑑別試驗
+          notes: LDDS test 陽性。HDDS test 通常不被抑制（與 PDH 鑑別）。內源性 ACTH 低於正常或偵測不到（腫瘤自主分泌皮質醇抑制 ACTH）。
+        - name: 腹部超音波/CT
+          notes: 單側腎上腺腫塊（>20 mm 或非對稱性增大）。對側腎上腺萎縮。評估後腔靜脈侵犯。CT 為最佳術前評估工具。評估肺臟轉移。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 腎上腺切除術為根治療法
+        - 術前評估與準備很重要
+        - 無法手術者以藥物控制
+ddxSource: auto-generated

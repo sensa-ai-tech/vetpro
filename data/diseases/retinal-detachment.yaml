@@ -3,25 +3,30 @@ nameEn: Retinal Detachment
 nameZh: 視網膜剝離
 bodySystem: ophthalmology
 description: 神經視網膜 (neurosensory retina) 從下方的視網膜色素上皮 (RPE) 分離，導致光感受器失去營養供應而退化，為犬貓急性或亞急性失明的重要原因。
-
 aliases:
-  - { alias: RD, language: en }
-  - { alias: Rhegmatogenous Retinal Detachment, language: en }
-  - { alias: Exudative Retinal Detachment, language: en }
-  - { alias: Tractional Retinal Detachment, language: en }
-  - { alias: 視網膜脫離, language: zh }
-  - { alias: 網膜剝離, language: zh }
-
+  - alias: RD
+    language: en
+  - alias: Rhegmatogenous Retinal Detachment
+    language: en
+  - alias: Exudative Retinal Detachment
+    language: en
+  - alias: Tractional Retinal Detachment
+    language: en
+  - alias: 視網膜脫離
+    language: zh
+  - alias: 網膜剝離
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: uncommon
-    notes: 原因多樣。好發品種包括 Shih Tzu (先天性視網膜發育不全)、Labrador Retriever、Australian Shepherd (膠原異常)。繼發於白內障手術 (3-10%)、高血壓或 Ehrlichia 感染。
+    notes: >-
+      原因多樣。好發品種包括 Shih Tzu (先天性視網膜發育不全)、Labrador Retriever、Australian Shepherd (膠原異常)。繼發於白內障手術 (3-10%)、高血壓或 Ehrlichia
+      感染。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓以高血壓性視網膜剝離最常見 (全身性高血壓，收縮壓 >160 mmHg)。慢性腎臟病與甲狀腺機能亢進為最常見的潛在原因。
-
 etiology:
   categories:
     - name: 滲出性/漿液性 (Exudative/Serous)
@@ -45,7 +50,6 @@ etiology:
       examples:
         - 視網膜發育不全 (retinal dysplasia，Labrador、Springer Spaniel)
         - 膠原異常 (Australian Shepherd — CEA/Collie Eye Anomaly 相關品種)
-
 clinicalSigns:
   early:
     - 突發性失明 (滲出性全剝離時)
@@ -63,20 +67,19 @@ clinicalSigns:
     - 繼發性青光眼 (慢性剝離)
     - 眼球萎縮 (phthisis bulbi，慢性末期)
     - 白內障形成
-
 diagnosis:
   primaryTests:
     - name: 散瞳眼底檢查 (直接/間接眼底鏡)
-      notes: "金標準初步檢查。剝離的視網膜呈灰白色、隆起、可見皺摺。血管走向異常。部分剝離可見邊界"
+      notes: 金標準初步檢查。剝離的視網膜呈灰白色、隆起、可見皺摺。血管走向異常。部分剝離可見邊界
     - name: 眼部超音波 (B-scan)
-      notes: "當角膜混濁、前房出血或白內障無法透視眼底時必用。可見高回音的 V 型或帳篷狀結構 (視網膜)"
+      notes: 當角膜混濁、前房出血或白內障無法透視眼底時必用。可見高回音的 V 型或帳篷狀結構 (視網膜)
     - name: 血壓測量
-      notes: "所有急性視網膜剝離患者必測。貓收縮壓 >160 mmHg 即為高血壓。犬 >160-180 mmHg"
+      notes: 所有急性視網膜剝離患者必測。貓收縮壓 >160 mmHg 即為高血壓。犬 >160-180 mmHg
   imaging:
     - name: 眼部超音波 (B-scan)
-      notes: "評估剝離範圍 (部分/全部)、視網膜下液體、玻璃體狀態、排除眼內腫瘤"
+      notes: 評估剝離範圍 (部分/全部)、視網膜下液體、玻璃體狀態、排除眼內腫瘤
     - name: OCT (光學同調斷層掃描)
-      notes: "可精確評估視網膜層次分離、黃斑區 (area centralis) 狀態"
+      notes: 可精確評估視網膜層次分離、黃斑區 (area centralis) 狀態
   additional:
     - 完整血液學與生化 (腎功能、甲狀腺、血球計數)
     - 尿液分析 + UPC (蛋白尿 — 腎臟病)
@@ -84,7 +87,6 @@ diagnosis:
     - 感染性疾病篩檢 (Ehrlichia、Rickettsia 血清學/PCR，黴菌抗原)
     - 胸腹腔影像 (排除腫瘤)
     - ERG (評估視網膜功能，判斷復位後視力恢復潛力)
-
 treatment:
   principles:
     - 找出並治療根本原因為最重要步驟
@@ -94,16 +96,16 @@ treatment:
     - 時間是關鍵 — 視網膜剝離超過 24-48 小時光感受器退化顯著加速
   medications:
     - name: Amlodipine (貓高血壓)
-      dose: "0.625-1.25 mg/cat PO SID (起始)，可增至 2.5 mg/cat"
+      dose: 0.625-1.25 mg/cat PO SID (起始)，可增至 2.5 mg/cat
       notes: 貓高血壓首選降壓藥。目標收縮壓 <160 mmHg。需 1-3 天降壓效果明顯。定期監測血壓
     - name: Benazepril (犬高血壓輔助)
-      dose: "0.25-0.5 mg/kg PO SID-BID"
+      dose: 0.25-0.5 mg/kg PO SID-BID
       notes: ACE inhibitor。常作為犬高血壓或蛋白尿腎病的輔助降壓
     - name: Prednisolone acetate 1% 眼藥水
-      dose: "Q6-12H"
+      dose: Q6-12H
       notes: 控制伴隨的前葡萄膜炎/脈絡膜炎
     - name: 全身性抗炎/免疫抑制
-      dose: "Prednisolone 1-2 mg/kg PO 漸減 (免疫介導性)"
+      dose: Prednisolone 1-2 mg/kg PO 漸減 (免疫介導性)
       notes: 免疫介導性脈絡膜炎/血管炎引起的滲出性剝離
   general:
     - 高血壓性視網膜剝離：積極降壓後約 50-60% 的貓視網膜可部分或完全復位
@@ -111,44 +113,97 @@ treatment:
     - 感染性病因：針對性抗生素或抗黴菌治療
     - 腫瘤性：視病灶範圍與類型決定治療 (雷射、眼球摘除)
     - 定期追蹤眼底與血壓 (尤其慢性腎臟病患者)
-
-emergencyNotes: "急性雙側失明合併視網膜剝離為急症。立即測量血壓 — 高血壓性視網膜剝離需緊急降壓 (Amlodipine)。早期降壓可促進視網膜復位與視力恢復。發現後 24-48 小時內治療效果最佳。貓急性失明三大鑑別：高血壓性視網膜剝離、視網膜退化 (taurine deficiency/PRA)、視神經疾病。"
-
-prognosis: 高血壓性滲出性視網膜剝離若早期控制血壓，約 50-60% 可部分至完全復位，但視力恢復程度不一。裂孔性視網膜剝離手術成功率約 50-70% (獸醫眼科)。剝離時間越長、範圍越大，預後越差。慢性完全剝離 (>2-4 週) 多為不可逆。根本原因 (腎臟病、腫瘤) 的預後也直接影響整體結果。
-
+emergencyNotes: >-
+  急性雙側失明合併視網膜剝離為急症。立即測量血壓 — 高血壓性視網膜剝離需緊急降壓 (Amlodipine)。早期降壓可促進視網膜復位與視力恢復。發現後 24-48 小時內治療效果最佳。貓急性失明三大鑑別：高血壓性視網膜剝離、視網膜退化
+  (taurine deficiency/PRA)、視神經疾病。
+prognosis: >-
+  高血壓性滲出性視網膜剝離若早期控制血壓，約 50-60% 可部分至完全復位，但視力恢復程度不一。裂孔性視網膜剝離手術成功率約 50-70% (獸醫眼科)。剝離時間越長、範圍越大，預後越差。慢性完全剝離 (>2-4 週)
+  多為不可逆。根本原因 (腎臟病、腫瘤) 的預後也直接影響整體結果。
 guidelineRefs:
   - sourceOrg: Journal of Feline Medicine and Surgery
     title: ISFM consensus guidelines on the diagnosis and management of hypertension in cats
     url: https://pubmed.ncbi.nlm.nih.gov/28438078/
     type: consensus
-    pmid: "28438078"
+    pmid: '28438078'
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: ACVIM consensus statement on the treatment of hypertension in cats
     url: https://pubmed.ncbi.nlm.nih.gov/17564728/
     type: consensus
-    pmid: "17564728"
+    pmid: '17564728'
   - sourceOrg: Veterinary Ophthalmology
-    title: "Retinal detachment in dogs and cats: a review"
+    title: 'Retinal detachment in dogs and cats: a review'
     url: https://pubmed.ncbi.nlm.nih.gov/24112538/
     type: review
-    pmid: "24112538"
+    pmid: '24112538'
   - sourceOrg: Frontiers in veterinary science
     title: Manifestations of systemic disease in the retina and fundus of cats and dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10912207/
     type: review
-    pmid: "38444779"
+    pmid: '38444779'
     relevance: primary
   - sourceOrg: Neural regeneration research
-    title: "The future of retinal gene therapy: evolving from subretinal to intravitreal vector delivery."
+    title: 'The future of retinal gene therapy: evolving from subretinal to intravitreal vector delivery.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8328774/
     type: review
-    pmid: "33510064"
+    pmid: '33510064'
     relevance: primary
 pubmedQueries:
   - query: '"retinal detachment" AND (dog OR cat OR canine OR feline) AND ("hypertension" OR "surgery" OR "treatment")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "EMG"
-  sectionTitle: "RETINAL DETACHMENT"
+  chapter: EMG
+  sectionTitle: RETINAL DETACHMENT
   pdfPage: 1742
+diagnosticAlgorithm:
+  title: 視網膜脫離 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估視覺功能喪失程度與發病速度
+      findings:
+        - 突發性失明
+        - 瞳孔散大且對光反射減弱
+        - 犬貓可能撞到物品
+        - 可能單側或雙側
+    - step: 2
+      action: 眼科學檢查
+      details: 直接與間接眼底鏡檢查
+      findings:
+        - 視網膜離位浮起
+        - 視網膜血管走向異常
+        - 視網膜下液體蓄積
+        - 可能見到視網膜裂孔
+    - step: 3
+      action: 進階檢查
+      details: 超音波與全身檢查尋找病因
+      findings:
+        - B-scan超音波確認脫離範圍
+        - 血壓測量排除高血壓性視網膜病變
+        - 血液檢查排除全身性疾病
+        - 視網膜電圖（ERG）評估視網膜功能
+    - step: 4
+      action: 確診與病因分類
+      details: 確認脫離類型與潛在病因
+      findings:
+        - 滲出性/牽引性/裂孔性分類
+        - 高血壓相關（貓最常見）
+        - 免疫介導性或腫瘤性病因
+        - 評估視覺恢復可能性
+clinicalPearls:
+  - 貓的突然失明首先要測量血壓——高血壓是最常見的可治療原因
+  - 視網膜脫離後越早治療越有機會恢復視力
+  - 所有新診斷的貓高血壓都應進行眼底檢查
+  - SARDS和視網膜脫離都表現為急性失明，但ERG可區分兩者
+monitoringItems:
+  - 治療後每週眼底檢查追蹤視網膜復位
+  - 血壓定期監測（每週至穩定，之後每1-3個月）
+  - 腎功能和甲狀腺功能定期追蹤
+associatedSymptoms:
+  - symptomId: blindness
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: mydriasis
+    frequency: common
+ddxSource: book

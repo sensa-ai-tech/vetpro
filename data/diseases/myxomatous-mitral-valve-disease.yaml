@@ -3,20 +3,22 @@ nameEn: Myxomatous Mitral Valve Disease
 nameZh: 黏液瘤性二尖瓣膜病
 bodySystem: cardiac
 description: 犬最常見的後天性心臟病，以二尖瓣黏液瘤性退化為特徵，導致瓣膜閉鎖不全。
-
 aliases:
-  - { alias: MMVD, language: en }
-  - { alias: Degenerative Mitral Valve Disease, language: en }
-  - { alias: DMVD, language: en }
-  - { alias: Endocardiosis, language: en }
-  - { alias: 二尖瓣退化性疾病, language: zh }
-
+  - alias: MMVD
+    language: en
+  - alias: Degenerative Mitral Valve Disease
+    language: en
+  - alias: DMVD
+    language: en
+  - alias: Endocardiosis
+    language: en
+  - alias: 二尖瓣退化性疾病
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 佔所有犬心臟病 75%。好發於小型犬，尤其 CKCS、Dachshund、Poodle、Chihuahua。
-
 etiology:
   categories:
     - name: 退化性
@@ -27,7 +29,6 @@ etiology:
       examples:
         - CKCS 有明確遺傳傾向
         - 多基因遺傳模式
-
 clinicalSigns:
   early:
     - 心雜音 (左心尖區收縮期雜音)
@@ -42,23 +43,21 @@ clinicalSigns:
     - 昏厥
     - 心房顫動
     - 右心衰竭 (腹水、頸靜脈怒張)
-
 diagnosis:
   primaryTests:
     - name: 胸腔 X 光
-      notes: "評估心臟大小 (VHS)、左心房擴大、肺水腫"
+      notes: 評估心臟大小 (VHS)、左心房擴大、肺水腫
     - name: 心臟超音波
-      notes: "確認瓣膜病變、評估左心房大小 (LA/Ao)、LVIDDN、E peak velocity"
+      notes: 確認瓣膜病變、評估左心房大小 (LA/Ao)、LVIDDN、E peak velocity
     - name: NT-proBNP
-      notes: "心肌壓力指標，協助區分心因性與非心因性呼吸困難"
+      notes: 心肌壓力指標，協助區分心因性與非心因性呼吸困難
   imaging:
     - name: 心臟超音波
-      notes: "金標準。M-mode + 2D + Doppler 評估瓣膜反流程度"
+      notes: 金標準。M-mode + 2D + Doppler 評估瓣膜反流程度
   additional:
     - 心電圖 (評估心律)
     - 血壓測量
     - 腎功能指標 (治療監測)
-
 stagingSystem:
   name: ACVIM MMVD Staging
   sourceUrl: https://pubmed.ncbi.nlm.nih.gov/31430397/
@@ -78,7 +77,6 @@ stagingSystem:
     - stage: D
       label: 難治性心衰竭
       description: 對標準治療無反應的終末期心衰竭
-
 treatment:
   principles:
     - B1 期不需藥物治療
@@ -106,47 +104,121 @@ treatment:
       - 考慮加入 torasemide
       - Sildenafil (肺高壓)
       - 住院氧氣治療 (急性)
-
 prognosis: B2 期開始 pimobendan 可延緩 15 個月才進展至心衰竭 (EPIC trial)。C 期中位存活時間約 9-12 個月。D 期預後差。
-
 ontologyMappings:
   - source: MONDO
-    code: "MONDO:0005279"
+    code: MONDO:0005279
     label: mitral valve insufficiency
     confidence: broad
-
 guidelineRefs:
   - sourceOrg: ACVIM
     title: ACVIM Consensus Guidelines for the Diagnosis and Treatment of MMVD in Dogs (2019)
     url: https://pubmed.ncbi.nlm.nih.gov/31430397/
     type: consensus
-    pmid: "31430397"
+    pmid: '31430397'
   - sourceOrg: Journal of veterinary internal medicine
     title: ACVIM consensus guidelines for the diagnosis and treatment of myxomatous mitral valve disease in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6524084/
     type: guideline
-    pmid: "30974015"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Management of Chronic Congestive Heart Failure Caused by Myxomatous Mitral Valve Disease in Dogs: A Narrative Review from 1970 to 2020."
+    pmid: '30974015'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Management of Chronic Congestive Heart Failure Caused by Myxomatous Mitral Valve Disease in Dogs: A Narrative
+      Review from 1970 to 2020.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8773235/
     type: review
-    pmid: "35049831"
+    pmid: '35049831'
   - sourceOrg: BMC veterinary research
     title: Iron parameters analysis in dogs with myxomatous mitral valve disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11102178/
     type: research
-    pmid: "38762716"
+    pmid: '38762716'
   - sourceOrg: PloS one
     title: Symmetric dimethylarginine in dogs with myxomatous mitral valve disease at various stages of disease severity.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7462265/
     type: research
-    pmid: "32870923"
+    pmid: '32870923'
     relevance: supporting
 pubmedQueries:
   - query: '"myxomatous mitral valve" AND dog AND "consensus"'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "END"
-  sectionTitle: "DISEASE"
+  chapter: END
+  sectionTitle: DISEASE
   pdfPage: 582
+diagnosticAlgorithm:
+  title: 二尖瓣疾病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 聽診左心尖心雜音及評估症狀
+      findings:
+        - 左心尖收縮期心雜音
+        - 咳嗽（尤其夜間或興奮時）
+        - 運動不耐
+        - 中老年小型犬
+    - step: 2
+      action: 胸腔X光
+      details: 評估心臟大小及肺水腫
+      findings:
+        - 左心房擴大
+        - 左心室擴大
+        - 肺靜脈擴張
+        - 肺水腫（失代償期）
+    - step: 3
+      action: 心臟超音波
+      details: 評估瓣膜形態及血流動力學
+      findings:
+        - 二尖瓣增厚不規則
+        - 二尖瓣返流（彩色都卜勒）
+        - 左心房/主動脈比值>1.6
+        - 左心室擴大（LVIDDN>1.7）
+    - step: 4
+      action: 分期與監測
+      details: ACVIM B1/B2/C/D分期
+      findings:
+        - ACVIM分期指導治療
+        - NT-proBNP趨勢追蹤
+        - Holter監測心律不整
+        - 呼吸頻率居家監測
+clinicalPearls:
+  - 雜音強度≥3/6且有心臟擴大才建議開始Pimobendan（B2期）
+  - 家中呼吸頻率監測是最重要的居家監測指標
+  - 咳嗽可能是肺水腫或左主支氣管受壓，需區分
+  - 騎士查理王小獵犬常早發且進展快
+  - 外科二尖瓣修復在專業中心有良好成果
+  - 心房顫動預後較差
+monitoringItems:
+  - 家中呼吸頻率（RRR<30/min）
+  - 胸腔X光
+  - 心臟超聲（每6-12個月）
+  - 腎功能和電解質
+  - 體重
+  - 血壓
+associatedSymptoms:
+  - symptomId: heart-murmur
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+ddxSource: book

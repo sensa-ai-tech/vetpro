@@ -3,12 +3,13 @@ nameEn: Palatal Defect Repair
 nameZh: 齶部缺損修復
 bodySystem: dental
 description: 齶部缺損修復是針對硬齶或軟齶破損的外科重建,缺損可能源於先天性齶裂、創傷、腫瘤切除或醫源性併發症。修復目標是恢復口鼻分隔,防止食物逆流和吸入性肺炎。
-
 aliases:
-  - { alias: 齶部重建, language: zh }
-  - { alias: Palate Reconstruction, language: en }
-  - { alias: Palatal Closure, language: en }
-
+  - alias: 齶部重建
+    language: zh
+  - alias: Palate Reconstruction
+    language: en
+  - alias: Palatal Closure
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少見
-
 etiology:
   categories:
     - name: 先天性
@@ -31,7 +31,6 @@ etiology:
         - 電燒傷(咬電線)
         - 腫瘤切除後缺損
         - 拔牙併發症
-
 clinicalSigns:
   early:
     - 進食時食物從鼻孔流出
@@ -42,19 +41,17 @@ clinicalSigns:
     - 生長遲緩(幼齡動物)
     - 吸入性肺炎
     - 營養不良
-
 diagnosis:
   primaryTests:
     - name: 口腔檢查
-      notes: "直視齶部缺損大小和位置"
+      notes: 直視齶部缺損大小和位置
     - name: CT掃描
-      notes: "評估缺損範圍和骨性結構"
+      notes: 評估缺損範圍和骨性結構
     - name: 胸部X光
-      notes: "排除吸入性肺炎"
+      notes: 排除吸入性肺炎
   differentialDiagnoses:
     - 口鼻瘻管
     - 鼻咽息肉
-
 treatment:
   medical:
     - 手術時機:先天性齶裂8-12週齡,後天性缺損傷口穩定後
@@ -66,45 +63,69 @@ treatment:
     - Elizabeth collar 2-3週
     - 抗生素預防感染
     - 避免咀嚼硬物
-
 prognosis:
-  general: "小缺損(<1cm)成功率>90%,中缺損(1-2cm)成功率70-80%,大缺損(>2cm)成功率50-60%。失敗主要因張力過大、血供不足或感染。可能需分次手術。"
-
+  general: 小缺損(<1cm)成功率>90%,中缺損(1-2cm)成功率70-80%,大缺損(>2cm)成功率50-60%。失敗主要因張力過大、血供不足或感染。可能需分次手術。
 prevention:
   - 繁殖篩檢避免齶裂遺傳
   - 預防創傷
   - 拔牙技術正確
   - 腫瘤切除計畫完善重建
-
-
 guidelineRefs:
   - sourceOrg: Cells
-    title: "Mesenchymal Stem Cell-Based Therapies for Temporomandibular Joint Repair: A Systematic Review of Preclinical Studies."
+    title: >-
+      Mesenchymal Stem Cell-Based Therapies for Temporomandibular Joint Repair: A Systematic Review of Preclinical
+      Studies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11171901/
     type: review
-    pmid: "38891122"
+    pmid: '38891122'
     relevance: primary
   - sourceOrg: International dental journal
     title: Fibroblast Dysfunction and Immune Dysregulation Impair Palatal Wound Healing in Diabetic Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12790083/
     type: research
-    pmid: "40939226"
+    pmid: '40939226'
     relevance: supporting
   - sourceOrg: Journal of dental research
     title: RNA Technology to Regenerate and Repair Alveolar Bone Defects.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11122091/
     type: research
-    pmid: "38715225"
+    pmid: '38715225'
     relevance: supporting
   - sourceOrg: Frontiers in bioengineering and biotechnology
-    title: In situ photo-crosslinked hydrogel promotes oral mucosal wound healing through sustained delivery of ginsenoside Rg1.
+    title: >-
+      In situ photo-crosslinked hydrogel promotes oral mucosal wound healing through sustained delivery of ginsenoside
+      Rg1.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10569426/
     type: research
-    pmid: "37840668"
+    pmid: '37840668'
     relevance: supporting
   - sourceOrg: Frontiers in pharmacology
-    title: Fabrication and optimization of phospholipids-based phase separation in-situ gel loaded with BMP-2 nanosized emulsion for bone defect.
+    title: >-
+      Fabrication and optimization of phospholipids-based phase separation in-situ gel loaded with BMP-2 nanosized
+      emulsion for bone defect.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10616790/
     type: research
-    pmid: "37915413"
+    pmid: '37915413'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: sneezing
+    frequency: common
+diagnosticAlgorithm:
+  title: 齶部缺損修復 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - sneezing 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 口腔檢查
+          notes: 直視齶部缺損大小和位置
+        - name: CT掃描
+          notes: 評估缺損範圍和骨性結構
+        - name: 胸部X光
+          notes: 排除吸入性肺炎
+ddxSource: auto-generated

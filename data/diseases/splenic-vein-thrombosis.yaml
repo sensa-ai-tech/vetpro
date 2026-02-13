@@ -3,12 +3,13 @@ nameEn: Splenic Vein Thrombosis
 nameZh: 脾靜脈血栓
 bodySystem: vascular
 description: 脾靜脈內的血栓形成，可導致脾臟充血腫大、腹痛及門脈高壓，常與脾臟腫瘤、胰臟炎或全身性高凝血狀態相關。
-
 aliases:
-  - { alias: 脾靜脈栓塞, language: zh }
-  - { alias: 脾門脈血栓, language: zh }
-  - { alias: Splenic vein thromboembolism, language: en }
-
+  - alias: 脾靜脈栓塞
+    language: zh
+  - alias: 脾門脈血栓
+    language: zh
+  - alias: Splenic vein thromboembolism
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓脾靜脈血栓極罕見，偶見個案報告。
-
 etiology:
   categories:
     - name: 局部因素
@@ -32,7 +32,6 @@ etiology:
         - 高凝血狀態
         - 免疫介導性溶血性貧血
         - 腫瘤相關凝血異常
-
 clinicalSigns:
   early:
     - 腹痛
@@ -43,19 +42,17 @@ clinicalSigns:
     - 嚴重腹痛
     - 脾臟梗塞
     - 門脈高壓（血栓延伸至門脈時）
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波（Doppler）
-      notes: "脾靜脈內血栓。脾臟充血腫大。Doppler 評估血流"
+      notes: 脾靜脈內血栓。脾臟充血腫大。Doppler 評估血流
     - name: CT 血管攝影
-      notes: "評估血栓範圍、脾臟灌流及門脈系統"
+      notes: 評估血栓範圍、脾臟灌流及門脈系統
   differentialDiagnoses:
     - 脾臟腫瘤
     - 脾扭轉
     - 門靜脈血栓
     - 腹腔腫塊
-
 treatment:
   medical:
     - 抗凝血治療（Enoxaparin 0.8-1 mg/kg SC q12h）
@@ -64,19 +61,43 @@ treatment:
   surgical:
     - 脾臟切除（合併脾臟腫瘤或脾扭轉時）
     - 取栓術（罕見需要）
-
 prognosis:
-  general: "預後取決於基礎原因。腫瘤相關者預後隨腫瘤類型而定。感染或炎症性者經適當治療可能恢復。脾臟梗塞需脾臟切除。"
-
+  general: 預後取決於基礎原因。腫瘤相關者預後隨腫瘤類型而定。感染或炎症性者經適當治療可能恢復。脾臟梗塞需脾臟切除。
 prevention:
   - 監測脾臟腫塊
   - 高凝血狀態的預防性抗血栓治療
-
-
 guidelineRefs:
   - sourceOrg: Journal of the American Animal Hospital Association
     title: Thromboembolism in Dogs with Protein-Losing Enteropathy with Non-Neoplastic Chronic Small Intestinal Disease.
     url: https://pubmed.ncbi.nlm.nih.gov/27841681/
     type: research
-    pmid: "27841681"
+    pmid: '27841681'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: splenomegaly
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 脾靜脈血栓 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - splenomegaly 相關症狀
+        - abdominal-pain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波（Doppler）
+          notes: 脾靜脈內血栓。脾臟充血腫大。Doppler 評估血流
+        - name: CT 血管攝影
+          notes: 評估血栓範圍、脾臟灌流及門脈系統
+ddxSource: auto-generated

@@ -3,13 +3,15 @@ nameEn: Hermaphroditism
 nameZh: 雌雄同體
 bodySystem: reproductive
 description: 雌雄同體（或稱性發育異常，DSD）為同時具有雄性與雌性生殖組織的先天異常。可分為真性雌雄同體（同時有卵巢與睪丸組織）與假性雌雄同體。外生殖器表現曖昧不明。
-
 aliases:
-  - { alias: 性發育異常, language: zh }
-  - { alias: DSD, language: zh }
-  - { alias: Intersex, language: en }
-  - { alias: Disorder of sex development, language: en }
-
+  - alias: 性發育異常
+    language: zh
+  - alias: DSD
+    language: zh
+  - alias: Intersex
+    language: en
+  - alias: Disorder of sex development
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 犬貓均有報告。可卡犬、迷你雪納瑞有較多報告。
-
 etiology:
   categories:
     - name: 先天發育異常
@@ -25,7 +26,6 @@ etiology:
         - 性染色體異常（XX/XY 嵌合）
         - 性別決定基因異常
         - 類固醇合成酶缺陷
-
 clinicalSigns:
   early:
     - 外生殖器曖昧不明
@@ -35,33 +35,54 @@ clinicalSigns:
     - 泌尿道感染風險增加
     - 行為異常
     - 不孕
-
 diagnosis:
   primaryTests:
     - name: 影像與臨床檢查
       notes: 核型分析（染色體檢查）。超音波評估內生殖器。手術探查與組織病理學。
-
 treatment:
   principles:
     - 依嚴重程度決定保守或手術治療
     - 支持療法
   general:
     - 手術摘除不適當的生殖組織。性別指定後行絕育手術。泌尿道畸形矯正。
-
 prognosis: 手術後預後良好。生活品質通常不受影響。不孕為預期結果。
-
-
 guidelineRefs:
   - sourceOrg: Journal of medical primatology
-    title: A case report of ovotesticular disorder of sex development (OT-DSD) in a baboon (Papio spp.) and a brief review of the non-human primate literature.
+    title: >-
+      A case report of ovotesticular disorder of sex development (OT-DSD) in a baboon (Papio spp.) and a brief review of
+      the non-human primate literature.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5934321/
     type: review
-    pmid: "29504143"
+    pmid: '29504143'
   - sourceOrg: Bioscience reports
     title: CRISPR/Cas9-mediated mosaic mutation of SRY gene induces hermaphroditism in rabbits.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861328/
     type: research
-    pmid: "29439141"
+    pmid: '29439141'
 pubmedQueries:
   - query: '"Hermaphroditism" AND (veterinary OR canine OR feline) AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: behaviour-change
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 雌雄同體 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 影像與臨床檢查
+          notes: 核型分析（染色體檢查）。超音波評估內生殖器。手術探查與組織病理學。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 依嚴重程度決定保守或手術治療
+        - 支持療法
+ddxSource: auto-generated

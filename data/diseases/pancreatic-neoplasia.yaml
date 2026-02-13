@@ -3,12 +3,13 @@ nameEn: Pancreatic Neoplasia
 nameZh: 胰臟腫瘤
 bodySystem: oncology
 description: 胰臟腫瘤分為外分泌腺腫瘤（腺癌，最常見惡性型）與內分泌腫瘤（胰島素瘤、胃泌素瘤等）。外分泌胰臟腺癌高度惡性，確診時多已轉移，預後極差。胰臟腺瘤（良性）罕見。犬隻以胰島素瘤較外分泌腺癌更常報告。
-
 aliases:
-  - { alias: 胰臟癌, language: zh }
-  - { alias: Pancreatic Cancer, language: en }
-  - { alias: Pancreatic Adenocarcinoma, language: en }
-
+  - alias: 胰臟癌
+    language: zh
+  - alias: Pancreatic Cancer
+    language: en
+  - alias: Pancreatic Adenocarcinoma
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻外分泌胰臟腺癌罕見。老年貓好發。
-
 etiology:
   categories:
     - name: 外分泌腫瘤
@@ -28,7 +28,6 @@ etiology:
         - 胰島素瘤（insulinoma）
         - 胃泌素瘤（gastrinoma）
         - 升糖素瘤（glucagonoma）
-
 clinicalSigns:
   early:
     - 嗜睡與食慾下降
@@ -40,14 +39,12 @@ clinicalSigns:
     - 黃疸（腫瘤壓迫膽管）
     - 腹水
     - 消化不良（EPI 症狀，腫瘤破壞大量胰臟組織時）
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
       notes: 胰臟區域腫塊性病變，通常回聲不均勻。評估局部淋巴結與肝臟轉移。膽管擴張（腫瘤壓迫時）。
     - name: CT 掃描
       notes: 評估腫瘤範圍、血管侵犯與轉移病灶。手術可行性評估。
-
 treatment:
   principles:
     - 外分泌腺癌手術為唯一可能治癒手段
@@ -59,16 +56,56 @@ treatment:
     - 化療效果不確定（Gemcitabine 有初步報告）
     - 止痛治療（胰臟癌疼痛顯著）
     - 營養支持
-
 prognosis: 外分泌胰臟腺癌預後極差，中位存活時間通常僅數週至數月。手術完全切除者（罕見）預後可改善。確診時 >80% 已有轉移。內分泌腫瘤（如胰島素瘤）預後較外分泌腺癌好。
-
-
 guidelineRefs:
   - sourceOrg: Toxicology letters
     title: Chronic toxicity and oncogenicity of octamethylcyclotetrasiloxane (D4) in the Fischer 344 rat.
     url: https://pubmed.ncbi.nlm.nih.gov/28676441/
     type: research
-    pmid: "28676441"
+    pmid: '28676441'
 pubmedQueries:
-  - query: '"pancreatic neoplasia" OR "pancreatic adenocarcinoma" AND (veterinary OR canine OR feline) AND ("prognosis" OR "treatment")'
+  - query: >-
+      "pancreatic neoplasia" OR "pancreatic adenocarcinoma" AND (veterinary OR canine OR feline) AND ("prognosis" OR
+      "treatment")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 胰臟腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 胰臟區域腫塊性病變，通常回聲不均勻。評估局部淋巴結與肝臟轉移。膽管擴張（腫瘤壓迫時）。
+        - name: CT 掃描
+          notes: 評估腫瘤範圍、血管侵犯與轉移病灶。手術可行性評估。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 外分泌腺癌手術為唯一可能治癒手段
+        - 確診時多已轉移，手術可行性低
+        - 姑息性治療維持生活品質
+ddxSource: auto-generated

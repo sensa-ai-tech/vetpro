@@ -3,12 +3,13 @@ nameEn: Seasonal Flank Alopecia
 nameZh: 季節性側腹脫毛
 bodySystem: dermatology
 description: 週期性/季節性發生的對稱性側腹脫毛，通常在日照減少的秋冬季發生，春夏季自行恢復。病因與光週期 (photoperiod) 變化影響毛囊週期相關。
-
 aliases:
-  - { alias: "Cyclic Flank Alopecia", language: en }
-  - { alias: "Recurrent Flank Alopecia", language: en }
-  - { alias: "週期性側腹脫毛", language: zh }
-
+  - alias: Cyclic Flank Alopecia
+    language: en
+  - alias: Recurrent Flank Alopecia
+    language: en
+  - alias: 週期性側腹脫毛
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓極罕見。
-
 etiology:
   categories:
     - name: 光週期相關
@@ -24,7 +24,6 @@ etiology:
         - 日照時間減少觸發毛囊休止
         - 褪黑激素 (melatonin) 代謝異常
         - 品種遺傳傾向
-
 clinicalSigns:
   early:
     - 秋冬季對稱性側腹脫毛
@@ -34,14 +33,12 @@ clinicalSigns:
     - 脫毛範圍可能每年略有不同
     - 皮膚色素沉著加深
     - 春夏多數自行恢復
-
 diagnosis:
   primaryTests:
     - name: 病史與季節性
       notes: 反覆秋冬脫毛春夏恢復的規律
     - name: 皮膚活檢
       notes: 排除其他內分泌性脫毛。見毛囊萎縮與角質栓
-
 treatment:
   principles:
     - 純美觀問題，不影響健康
@@ -50,9 +47,36 @@ treatment:
     - Melatonin 口服（可能預防或加速恢復）
     - 多數不需治療，等待自行恢復
     - 確保排除甲狀腺功能低下
-
 prognosis: 不危及生命的美觀問題。多數每年自行恢復。部分犬隨年齡恢復越來越不完全。
-
 pubmedQueries:
   - query: '"seasonal flank alopecia" AND (veterinary OR canine) AND ("melatonin" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: common
+  - symptomId: alopecia
+    frequency: common
+diagnosticAlgorithm:
+  title: 季節性側腹脫毛 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史與季節性
+          notes: 反覆秋冬脫毛春夏恢復的規律
+        - name: 皮膚活檢
+          notes: 排除其他內分泌性脫毛。見毛囊萎縮與角質栓
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 純美觀問題，不影響健康
+        - 可選擇性治療
+ddxSource: auto-generated

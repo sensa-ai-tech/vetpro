@@ -3,11 +3,11 @@ nameEn: Prostate Carcinoma
 nameZh: 前列腺癌
 bodySystem: oncology
 description: 前列腺的惡性腫瘤。與人類不同，犬前列腺癌不受去勢影響（結紮犬也會發生）。高度惡性，早期即可轉移至腰椎與骨盆骨。預後不良。
-
 aliases:
-  - { alias: "Prostatic Neoplasia", language: en }
-  - { alias: "前列腺惡性腫瘤", language: zh }
-
+  - alias: Prostatic Neoplasia
+    language: en
+  - alias: 前列腺惡性腫瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓極罕見。
-
 etiology:
   categories:
     - name: 腫瘤性
@@ -23,7 +22,6 @@ etiology:
         - 前列腺上皮惡性增生
         - 不受雄性素影響（與人類不同）
         - 結紮不能預防
-
 clinicalSigns:
   early:
     - 排尿困難/滴尿
@@ -34,7 +32,6 @@ clinicalSigns:
     - 骨盆疼痛
     - 尿道阻塞
     - 消瘦
-
 diagnosis:
   primaryTests:
     - name: 直腸觸診
@@ -43,7 +40,6 @@ diagnosis:
       notes: 前列腺內低回音腫塊
     - name: X 光
       notes: 腰椎/骨盆骨轉移（溶骨性病灶）
-
 treatment:
   principles:
     - 手術切除困難
@@ -53,41 +49,82 @@ treatment:
     - 化療（Carboplatin、Mitoxantrone）
     - 放射治療（姑息性）
     - 尿道支架（尿道阻塞時）
-
 prognosis: 預後不良。中位存活 < 6 個月。診斷時多數已轉移。NSAIDs 可能略延長存活。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
-    title: "Canine Prostate Cancer: Current Treatments and the Role of Interventional Oncology."
+    title: 'Canine Prostate Cancer: Current Treatments and the Role of Interventional Oncology.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11054006/
     type: review
-    pmid: "38668436"
+    pmid: '38668436'
     relevance: primary
   - sourceOrg: Cancers
-    title: "Comparative Pathobiology of Canine and Human Prostate Cancer: State of the Art and Future Directions."
+    title: 'Comparative Pathobiology of Canine and Human Prostate Cancer: State of the Art and Future Directions.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9179314/
     type: review
-    pmid: "35681707"
+    pmid: '35681707'
     relevance: primary
   - sourceOrg: JMIR bioinformatics and biotechnology
-    title: "The Differentially Expressed Genes Responsible for the Development of T Helper 9 Cells From T Helper 2 Cells in Various Disease States: Immuno-Interactomics Study."
+    title: >-
+      The Differentially Expressed Genes Responsible for the Development of T Helper 9 Cells From T Helper 2 Cells in
+      Various Disease States: Immuno-Interactomics Study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11135241/
     type: research
-    pmid: "38935935"
+    pmid: '38935935'
     relevance: supporting
   - sourceOrg: Cells
     title: Characterization of Lysophospholipase D Activity in Mammalian Cell Membranes.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10969092/
     type: research
-    pmid: "38534364"
+    pmid: '38534364'
     relevance: supporting
   - sourceOrg: ACS omega
-    title: Systematic Development of Solid Lipid Nanoparticles of Abiraterone Acetate with Improved Oral Bioavailability and Anticancer Activity for Prostate Carcinoma Treatment.
+    title: >-
+      Systematic Development of Solid Lipid Nanoparticles of Abiraterone Acetate with Improved Oral Bioavailability and
+      Anticancer Activity for Prostate Carcinoma Treatment.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9134222/
     type: research
-    pmid: "35647451"
+    pmid: '35647451'
     relevance: supporting
 pubmedQueries:
   - query: '"prostate carcinoma" AND (veterinary OR canine) AND ("treatment" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: constipation
+    frequency: common
+  - symptomId: pollakiuria
+    frequency: common
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: common
+diagnosticAlgorithm:
+  title: 前列腺癌 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - constipation 相關症狀
+        - pollakiuria 相關症狀
+        - paresis-paralysis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 直腸觸診
+          notes: 前列腺不規則硬化增大
+        - name: 腹部超音波
+          notes: 前列腺內低回音腫塊
+        - name: X 光
+          notes: 腰椎/骨盆骨轉移（溶骨性病灶）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術切除困難
+        - 化療與姑息治療
+ddxSource: auto-generated

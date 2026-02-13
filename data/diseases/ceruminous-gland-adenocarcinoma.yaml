@@ -3,13 +3,15 @@ nameEn: Ceruminous Gland Adenocarcinoma
 nameZh: 耵聹腺腺癌
 bodySystem: oncology
 description: 外耳道耵聹腺的惡性腫瘤，為犬貓耳道最常見的惡性腫瘤之一。局部侵犯性強，可侵犯中耳骨性結構與周圍軟組織。轉移率中等，可轉移至局部淋巴結與肺部。
-
 aliases:
-  - { alias: Ceruminous Gland Carcinoma, language: en }
-  - { alias: Apocrine Gland Carcinoma of Ear, language: en }
-  - { alias: 耵聹腺癌, language: zh }
-  - { alias: 耳道腺癌, language: zh }
-
+  - alias: Ceruminous Gland Carcinoma
+    language: en
+  - alias: Apocrine Gland Carcinoma of Ear
+    language: en
+  - alias: 耵聹腺癌
+    language: zh
+  - alias: 耳道腺癌
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓耳道惡性腫瘤中常見。老年貓好發。
-
 etiology:
   categories:
     - name: 腫瘤性
@@ -25,7 +26,6 @@ etiology:
         - 耵聹腺 (改良型汗腺) 惡性轉化
         - 慢性外耳炎/中耳炎可能為促發因子
         - 確切病因不明
-
 clinicalSigns:
   early:
     - 耳道內腫塊 (粉紅至紫色)
@@ -36,7 +36,6 @@ clinicalSigns:
     - 面神經麻痺
     - Horner 症候群
     - 下頷淋巴結腫大
-
 diagnosis:
   primaryTests:
     - name: CT
@@ -45,7 +44,6 @@ diagnosis:
       notes: 確診。區分腺瘤 (良性) 與腺癌 (惡性)
     - name: 胸腔 X 光
       notes: 肺轉移篩檢
-
 treatment:
   principles:
     - 積極手術切除
@@ -56,21 +54,69 @@ treatment:
     - 術後放射治療 (不完全切除時)
     - 化療效果有限但可考慮 (Carboplatin)
     - 姑息性放療 (無法手術者)
-
 prognosis: TECA-BO 後犬中位存活約 1-2 年。完全切除者預後較佳。骨質侵犯與淋巴結轉移為負面預後因子。貓預後與犬相似。早期診斷與手術是改善預後的關鍵。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Clinical presentation and outcome in cats with aural squamous cell carcinoma: a review of 25 cases (2010-2021)."
+    title: 'Clinical presentation and outcome in cats with aural squamous cell carcinoma: a review of 25 cases (2010-2021).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812305/
     type: review
-    pmid: "36066435"
-  - sourceOrg: "Veterinary radiology &amp; ultrasound : the official journal of the American College of Veterinary Radiology and the International Veterinary Radiology Association"
+    pmid: '36066435'
+  - sourceOrg: >-
+      Veterinary radiology &amp; ultrasound : the official journal of the American College of Veterinary Radiology and
+      the International Veterinary Radiology Association
     title: Computed Tomographic Features of Benign and Malignant External Ear Canal Neoplasms in 39 Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12788333/
     type: research
-    pmid: "41511806"
+    pmid: '41511806'
 pubmedQueries:
   - query: '"ceruminous gland adenocarcinoma" AND (veterinary OR canine OR feline) AND ("prognosis" OR "TECA")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 耵聹腺腺癌 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估外耳道症狀，常見於貓
+      findings:
+        - 單側耳道出血或分泌物
+        - 耳道內可見腫塊
+        - 慢性外耳炎病史
+        - 頭部傾斜或疼痛
+    - step: 2
+      action: 耳鏡與影像學檢查
+      details: 進行耳鏡檢查和頭顱CT/MRI評估腫瘤範圍
+      findings:
+        - 耳道內息肉樣或潰瘍性腫塊
+        - CT評估鼓泡是否受侵犯
+        - 區域淋巴結評估
+        - 排除中耳受累
+    - step: 3
+      action: 組織病理學確診
+      details: 進行活檢確認腫瘤類型和分級
+      findings:
+        - 耵聹腺分化的腺癌
+        - 管狀或乳頭狀結構
+        - 局部浸潤性生長
+        - 評估血管和神經侵犯
+    - step: 4
+      action: 分期檢查
+      details: 進行全身分期評估轉移風險
+      findings:
+        - 區域淋巴結細針抽吸
+        - 胸部X光排除肺轉移
+        - 腹部超音波排除腹腔轉移
+        - 評估手術切除可行性
+clinicalPearls:
+  - 慢性反覆發作的單側外耳炎，尤其在老年貓，應高度懷疑耵聹腺腺癌
+  - CT是術前評估的關鍵，可判斷鼓泡是否受侵犯以決定手術範圍
+  - 即使腫瘤已侵犯鼓泡，TECA-LBO仍可提供合理的存活時間
+  - 術後面神經麻痺是常見併發症，術前應告知飼主
+monitoringItems:
+  - 術後每3個月CT或局部檢查
+  - 觀察面神經功能恢復
+  - 胸腔X光評估肺轉移（每3-6個月）
+  - 對側耳道定期檢查
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: common
+ddxSource: book

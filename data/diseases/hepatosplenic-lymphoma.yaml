@@ -3,11 +3,11 @@ nameEn: Hepatosplenic Lymphoma
 nameZh: 肝脾型淋巴瘤
 bodySystem: oncology
 description: 原發於肝臟與脾臟的淋巴瘤，淋巴結不腫大。較少見的解剖型。多為 T 細胞型，預後較差。表現為肝脾腫大、全身症狀與血液學異常。
-
 aliases:
-  - { alias: "Hepatic Lymphoma", language: en }
-  - { alias: "肝脾淋巴瘤", language: zh }
-
+  - alias: Hepatic Lymphoma
+    language: en
+  - alias: 肝脾淋巴瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,14 +15,12 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓偶見。
-
 etiology:
   categories:
     - name: 腫瘤性
       examples:
         - 肝脾淋巴球惡性增生
         - 多為 T 細胞型
-
 clinicalSigns:
   early:
     - 腹部膨大
@@ -33,7 +31,6 @@ clinicalSigns:
     - 脾腫大/肝腫大
     - 貧血
     - 血小板減少
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
@@ -42,7 +39,6 @@ diagnosis:
       notes: 肝脾穿刺見惡性淋巴球
     - name: CBC/生化
       notes: 血球減少、肝酶升高
-
 treatment:
   principles:
     - 化療
@@ -51,21 +47,60 @@ treatment:
     - CHOP 或其他化療方案
     - 支持性照護
     - 輸血（嚴重貧血時）
-
 prognosis: 預後不良。中位存活通常 < 6 個月。對化療反應率低於多中心型。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
     title: L-LOP/LOPP for the treatment of canine gastrointestinal/hepatosplenic lymphoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11153818/
     type: research
-    pmid: "38846784"
+    pmid: '38846784'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Clinical features and outcome in horses with severe large intestinal thickening diagnosed with transabdominal ultrasonography: 25 cases (2003-2010)."
+    title: >-
+      Clinical features and outcome in horses with severe large intestinal thickening diagnosed with transabdominal
+      ultrasonography: 25 cases (2003-2010).
     url: https://pubmed.ncbi.nlm.nih.gov/29911939/
     type: research
-    pmid: "29911939"
+    pmid: '29911939'
 pubmedQueries:
   - query: '"hepatosplenic lymphoma" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: abdominal-distension
+    frequency: common
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: splenomegaly
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: jaundice
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肝脾型淋巴瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - abdominal-distension 相關症狀
+        - hepatomegaly 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 肝脾瀰漫性浸潤或結節性病灶
+        - name: 細針穿刺
+          notes: 肝脾穿刺見惡性淋巴球
+        - name: CBC/生化
+          notes: 血球減少、肝酶升高
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 化療
+        - 預後較多中心型差
+ddxSource: auto-generated

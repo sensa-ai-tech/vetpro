@@ -3,15 +3,19 @@ nameEn: Vitamin D Toxicosis
 nameZh: 維生素D中毒
 bodySystem: metabolic
 description: 過量維生素 D（cholecalciferol）攝入或體內過度活化導致的高鈣血症與高磷血症。最常見原因為誤食含 cholecalciferol 的滅鼠劑或含過量維生素 D 的商業飼料。可造成嚴重的軟組織鈣化、急性腎損傷甚至死亡。
-
 aliases:
-  - { alias: 維生素D3中毒, language: zh }
-  - { alias: 膽鈣化醇中毒, language: zh }
-  - { alias: 高鈣血症（維生素D相關）, language: zh }
-  - { alias: Cholecalciferol Toxicosis, language: en }
-  - { alias: Vitamin D3 Poisoning, language: en }
-  - { alias: Hypervitaminosis D, language: en }
-
+  - alias: 維生素D3中毒
+    language: zh
+  - alias: 膽鈣化醇中毒
+    language: zh
+  - alias: 高鈣血症（維生素D相關）
+    language: zh
+  - alias: Cholecalciferol Toxicosis
+    language: en
+  - alias: Vitamin D3 Poisoning
+    language: en
+  - alias: Hypervitaminosis D
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -21,7 +25,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少見（較少接觸滅鼠劑）。可因外用含 calcipotriol/calcipotriene 的人用銀屑病藥膏經皮膚吸收或舔舐中毒。中毒劑量貓約 0.5 mg/kg。
-
 etiology:
   categories:
     - name: 外源性攝入
@@ -41,7 +44,6 @@ etiology:
         - 過量活性維生素 D → 腸道鈣磷吸收增加、骨骼鈣動員增加
         - 高鈣血症 + 高磷血症 → 鈣磷乘積升高 → 軟組織礦質化
         - 腎臟、胃黏膜、心肌、血管壁、肺臟的異營性鈣化
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -62,20 +64,19 @@ clinicalSigns:
     - 癲癇發作
     - 軟組織廣泛鈣化（腎臟、心臟、肺臟、胃壁）
     - 死亡（通常在攝入後 2-5 天，未治療時）
-
 diagnosis:
   primaryTests:
     - name: 血清鈣與離子鈣
-      notes: "高鈣血症為關鍵發現。總鈣 > 12 mg/dL（犬）或 > 11 mg/dL（貓）。離子鈣 > 1.4 mmol/L。鈣磷乘積 > 60-70 預後不良"
+      notes: 高鈣血症為關鍵發現。總鈣 > 12 mg/dL（犬）或 > 11 mg/dL（貓）。離子鈣 > 1.4 mmol/L。鈣磷乘積 > 60-70 預後不良
     - name: 血清磷
-      notes: "高磷血症常見。與高鈣血症同時存在為維生素 D 中毒的特徵（與 PTH 相關性高鈣血症鑑別）"
+      notes: 高磷血症常見。與高鈣血症同時存在為維生素 D 中毒的特徵（與 PTH 相關性高鈣血症鑑別）
     - name: 腎指數（BUN、Creatinine、SDMA）
-      notes: "急性腎損傷時顯著升高。需連續監測以評估進展與治療反應"
+      notes: 急性腎損傷時顯著升高。需連續監測以評估進展與治療反應
   imaging:
     - name: 腹部 X 光
-      notes: "腎臟、胃壁、血管壁的礦質化（攝入後 2-4 天可見）。腎臟可見瀰漫性鈣化增白"
+      notes: 腎臟、胃壁、血管壁的礦質化（攝入後 2-4 天可見）。腎臟可見瀰漫性鈣化增白
     - name: 腹部超音波
-      notes: "腎臟皮質高迴音（腎臟鈣化）。胃壁高迴音帶。評估腎臟損傷程度"
+      notes: 腎臟皮質高迴音（腎臟鈣化）。胃壁高迴音帶。評估腎臟損傷程度
   additional:
     - 25-hydroxyvitamin D 血清濃度（升高確認維生素 D 中毒，正常犬 24-86 ng/mL）
     - PTH 測定（維生素 D 中毒時應被抑制，排除原發性副甲狀腺功能亢進）
@@ -83,7 +84,6 @@ diagnosis:
     - 電解質（鉀、鎂、鈉）
     - ECG（評估高鈣血症對心臟的影響——QT 間距縮短）
     - 尿液分析（等張尿或稀釋尿、管型）
-
 treatment:
   principles:
     - 降低血鈣為治療核心
@@ -92,46 +92,108 @@ treatment:
     - 保護腎臟功能
     - 攝入 72 小時內催吐/洗胃（若適用）
   general:
-    - "急性攝入（<2-4 小時）：催吐（Apomorphine 0.03 mg/kg IV 犬；Dexmedetomidine 40 μg/m² IM 貓）+ 活性碳 1-2 g/kg PO"
-    - "積極靜脈輸液：0.9% NaCl 4-6 mL/kg/hr（促進鈣利尿，避免含鈣輸液）"
-    - "Furosemide 2-4 mg/kg IV q8-12h（促進鈣排泄，需先糾正脫水）"
-    - "Prednisolone 1-2 mg/kg PO/IV BID（減少腸道鈣吸收、減少骨骼鈣動員）"
-    - "Pamidronate 1.3-2 mg/kg IV 單次 2-4 小時輸注（雙磷酸鹽，抑制破骨細胞活性，嚴重高鈣血症首選）"
-    - "Calcitonin 4-6 IU/kg SC q8-12h（快速降鈣，但效果短暫，易產生耐受性）"
-    - "Aluminium hydroxide 30-90 mg/kg PO TID（腸道磷結合劑，降低血磷）"
-    - "低鈣低維生素 D 飲食"
-    - "連續監測離子鈣 q6-12h 直至穩定"
-    - "監測腎功能、電解質至少 2-4 週"
-
-prognosis: 預後取決於攝入劑量、就診時間與腎臟損傷程度。早期治療（攝入後 24 小時內）且腎功能未嚴重受損時預後良好至謹慎。已出現嚴重腎衰竭、鈣磷乘積 >70 或廣泛軟組織鈣化時預後不良。Cholecalciferol 的半衰期長（數週），需長期監測與治療。腎臟鈣化可能造成永久性慢性腎病。
-
+    - 急性攝入（<2-4 小時）：催吐（Apomorphine 0.03 mg/kg IV 犬；Dexmedetomidine 40 μg/m² IM 貓）+ 活性碳 1-2 g/kg PO
+    - 積極靜脈輸液：0.9% NaCl 4-6 mL/kg/hr（促進鈣利尿，避免含鈣輸液）
+    - Furosemide 2-4 mg/kg IV q8-12h（促進鈣排泄，需先糾正脫水）
+    - Prednisolone 1-2 mg/kg PO/IV BID（減少腸道鈣吸收、減少骨骼鈣動員）
+    - Pamidronate 1.3-2 mg/kg IV 單次 2-4 小時輸注（雙磷酸鹽，抑制破骨細胞活性，嚴重高鈣血症首選）
+    - Calcitonin 4-6 IU/kg SC q8-12h（快速降鈣，但效果短暫，易產生耐受性）
+    - Aluminium hydroxide 30-90 mg/kg PO TID（腸道磷結合劑，降低血磷）
+    - 低鈣低維生素 D 飲食
+    - 連續監測離子鈣 q6-12h 直至穩定
+    - 監測腎功能、電解質至少 2-4 週
+prognosis: >-
+  預後取決於攝入劑量、就診時間與腎臟損傷程度。早期治療（攝入後 24 小時內）且腎功能未嚴重受損時預後良好至謹慎。已出現嚴重腎衰竭、鈣磷乘積 >70 或廣泛軟組織鈣化時預後不良。Cholecalciferol
+  的半衰期長（數週），需長期監測與治療。腎臟鈣化可能造成永久性慢性腎病。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
-    title: "Cholecalciferol rodenticide toxicosis in dogs: 58 cases"
+    title: 'Cholecalciferol rodenticide toxicosis in dogs: 58 cases'
     url: https://pubmed.ncbi.nlm.nih.gov/21029297/
     type: retrospective
-    pmid: "21029297"
+    pmid: '21029297'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Cholecalciferol toxicity in dogs: a retrospective study"
+    title: 'Cholecalciferol toxicity in dogs: a retrospective study'
     url: https://pubmed.ncbi.nlm.nih.gov/15900941/
     type: retrospective
-    pmid: "15900941"
+    pmid: '15900941'
   - sourceOrg: ASPCA Animal Poison Control Center
     title: Vitamin D toxicosis in dogs from commercially available pet food
     url: https://pubmed.ncbi.nlm.nih.gov/33030359/
     type: retrospective
-    pmid: "33030359"
+    pmid: '33030359'
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
     title: Intravenous lipid emulsion therapy in 2 dogs and 2 cats with vitamin D toxicosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10637706/
     type: case-report
-    pmid: "38046423"
+    pmid: '38046423'
     relevance: supporting
 pubmedQueries:
-  - query: '"vitamin D toxicosis" OR "cholecalciferol toxicosis" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "hypercalcemia")'
+  - query: >-
+      "vitamin D toxicosis" OR "cholecalciferol toxicosis" AND (dog OR cat OR canine OR feline) AND ("treatment" OR
+      "hypercalcemia")
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "TOX"
-  sectionTitle: "CHOLECALCIFEROL"
+  chapter: TOX
+  sectionTitle: CHOLECALCIFEROL
   pdfPage: 3209
+diagnosticAlgorithm:
+  title: 維生素D過多症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估多尿多渴、嘔吐、食慾下降等高鈣血症表現，詢問維生素D補充劑或殺鼠劑暴露史
+      findings:
+        - 多尿多渴
+        - 嘔吐和食慾下降
+        - 嗜睡與虛弱
+    - step: 2
+      action: 實驗室檢查
+      details: 測量血清鈣、磷、25(OH)D和1,25(OH)2D濃度，評估腎功能
+      findings:
+        - 高鈣血症
+        - 高磷血症
+        - 血清25(OH)D或骨化三醇濃度升高
+    - step: 3
+      action: 病因確認與併發症評估
+      details: 確認維生素D來源（補充劑、殺鼠劑、牛皮癬藥膏），評估軟組織鈣化
+      findings:
+        - 確認維生素D暴露來源
+        - X光或超音波評估軟組織鈣化（腎臟、胃壁）
+        - 評估腎功能損害程度
+clinicalPearls:
+  - 高鈣血症加高磷血症的組合高度提示維生素D中毒（腫瘤性高鈣通常磷正常或低）
+  - Cholecalciferol鼠藥是犬維生素D中毒最常見原因
+  - 高鈣血症可持續數週——需要長期積極治療
+  - Pamidronate是治療cholecalciferol中毒的重要藥物
+  - 25(OH)D3濃度確認暴露但不完全與臨床嚴重度相關
+  - 寵物食品召回事件中維生素D過量添加曾造成大規模中毒
+monitoringItems:
+  - 血清鈣及磷每12-24小時監測（急性期）
+  - BUN/Creatinine（腎功能）
+  - 尿量
+  - ECG
+  - 待穩定後每週監測直至血鈣正常化
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+associatedLabFindings:
+  - labId: hypercalcaemia
+    frequency: uncommon
+  - labId: phosphorus-elevated
+    frequency: uncommon
+ddxSource: book

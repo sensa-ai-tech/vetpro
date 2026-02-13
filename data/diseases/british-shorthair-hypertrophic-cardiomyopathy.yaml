@@ -3,24 +3,22 @@ nameEn: British Shorthair Hypertrophic Cardiomyopathy
 nameZh: 英國短毛貓肥厚性心肌病
 bodySystem: neurology
 description: 英國短毛貓為貓肥厚性心肌病高風險品種,左心室心肌異常肥厚導致舒張功能障礙。可能導致心衰竭、血栓栓塞及猝死。
-
 aliases:
-  - { alias: HCM, language: en }
-  - { alias: 肥厚性心肌病, language: zh }
-
+  - alias: HCM
+    language: en
+  - alias: 肥厚性心肌病
+    language: zh
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
     notes: 英國短毛、緬因、布偶等品種高風險
-
 etiology:
   categories:
     - name: 遺傳性心肌病變
       examples:
         - 多基因遺傳(部分品種有特定基因突變)
         - 心肌肌小節蛋白基因異常
-
 clinicalSigns:
   early:
     - 多數無症狀(早期)
@@ -31,20 +29,18 @@ clinicalSigns:
     - 後肢急性癱瘓(動脈血栓)
     - 暈厥
     - 猝死
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波
-      notes: "左心室壁肥厚>6mm,左心房擴大"
+      notes: 左心室壁肥厚>6mm,左心房擴大
     - name: 心電圖
-      notes: "左心室肥大,心律不整"
+      notes: 左心室肥大,心律不整
     - name: NT-proBNP血檢
-      notes: "升高提示心衰竭"
+      notes: 升高提示心衰竭
   differentialDiagnoses:
     - 甲狀腺機能亢進性心肌病
     - 高血壓性心肌病
     - 限制性心肌病
-
 treatment:
   medical:
     - Atenolol 6.25-12.5 mg PO q12-24h(β阻斷劑)
@@ -52,10 +48,38 @@ treatment:
     - Clopidogrel 18.75 mg PO q24h(抗血栓)
     - 利尿劑(Furosemide,心衰竭時)
     - ACE抑制劑(Benazepril)
-
 prognosis:
-  general: "變異極大。無症狀可能多年穩定,心衰竭或血栓發生後預後較差(中位存活期數月至1-2年)。"
-
+  general: 變異極大。無症狀可能多年穩定,心衰竭或血栓發生後預後較差(中位存活期數月至1-2年)。
 prevention:
   - 繁殖前心臟超音波篩檢
   - 受影響貓不應繁殖
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: heart-murmur
+    frequency: common
+  - symptomId: coughing
+    frequency: uncommon
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 英國短毛貓肥厚性心肌病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - heart-murmur 相關症狀
+        - coughing 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波
+          notes: 左心室壁肥厚>6mm,左心房擴大
+        - name: 心電圖
+          notes: 左心室肥大,心律不整
+        - name: NT-proBNP血檢
+          notes: 升高提示心衰竭
+ddxSource: auto-generated

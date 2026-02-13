@@ -3,18 +3,19 @@ nameEn: Avian Cloacal Papilloma
 nameZh: 禽類泄殖腔乳突瘤
 bodySystem: oncology
 description: 禽類泄殖腔乳突瘤為發生於泄殖腔黏膜的良性增生性腫瘤，與禽類鸚鵡乳突瘤病毒（Psittacid Herpesvirus）感染相關。可引起排泄困難、出血及泄殖腔脫垂。
-
 aliases:
-  - { alias: 泄殖腔乳頭狀瘤, language: zh }
-  - { alias: 鳥類泄殖腔腫瘤, language: zh }
-  - { alias: Cloacal papillomatosis, language: en }
-  - { alias: Papilloma of the cloaca, language: en }
-
+  - alias: 泄殖腔乳頭狀瘤
+    language: zh
+  - alias: 鳥類泄殖腔腫瘤
+    language: zh
+  - alias: Cloacal papillomatosis
+    language: en
+  - alias: Papilloma of the cloaca
+    language: en
 species:
   - speciesCommon: bird
     prevalence: moderate
     notes: 亞馬遜鸚鵡、金剛鸚鵡最常報告。與 Psittacid Herpesvirus（PsHV）感染相關。可同時出現膽管癌及胰腺癌，故需監測內臟腫瘤。
-
 etiology:
   categories:
     - name: 病毒性
@@ -27,7 +28,6 @@ etiology:
         - 良性上皮增生
         - 可多發或單發
         - 有惡性轉化風險
-
 clinicalSigns:
   early:
     - 泄殖腔周圍偶見粉紅色突起
@@ -40,21 +40,19 @@ clinicalSigns:
     - 持續性泄殖腔脫垂
     - 反覆繼發感染
     - 便秘或排尿困難
-
 diagnosis:
   primaryTests:
     - name: 泄殖腔檢查
-      notes: "直接觀察或內視鏡檢查可見泄殖腔黏膜菜花狀增生"
+      notes: 直接觀察或內視鏡檢查可見泄殖腔黏膜菜花狀增生
     - name: 組織病理學
-      notes: "活檢確認乳突瘤並排除惡性轉化"
+      notes: 活檢確認乳突瘤並排除惡性轉化
     - name: PsHV PCR
-      notes: "泄殖腔拭子 PCR 檢測 PsHV"
+      notes: 泄殖腔拭子 PCR 檢測 PsHV
   differentialDiagnoses:
     - 泄殖腔鱗狀上皮癌
     - 泄殖腔脫垂
     - 泄殖腔息肉
     - 寄生蟲性肉芽腫
-
 treatment:
   medical:
     - 小型乳突瘤可觀察追蹤
@@ -64,12 +62,38 @@ treatment:
     - 冷凍治療（液態氮）
     - 雷射切除
     - 術後復發率高，需定期追蹤
-
 prognosis:
-  general: "良性乳突瘤經手術切除後短期預後良好，但復發率高。需長期監測內臟腫瘤（膽管癌、胰腺癌），特別是亞馬遜鸚鵡。惡性轉化風險存在。"
-
+  general: 良性乳突瘤經手術切除後短期預後良好，但復發率高。需長期監測內臟腫瘤（膽管癌、胰腺癌），特別是亞馬遜鸚鵡。惡性轉化風險存在。
 prevention:
   - 新進鳥 PsHV 篩檢
   - 避免與已知感染鳥接觸
   - 定期泄殖腔檢查
   - 早期發現早期處理
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: uncommon
+  - symptomId: constipation
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類泄殖腔乳突瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pollakiuria 相關症狀
+        - constipation 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 泄殖腔檢查
+          notes: 直接觀察或內視鏡檢查可見泄殖腔黏膜菜花狀增生
+        - name: 組織病理學
+          notes: 活檢確認乳突瘤並排除惡性轉化
+        - name: PsHV PCR
+          notes: 泄殖腔拭子 PCR 檢測 PsHV
+ddxSource: auto-generated

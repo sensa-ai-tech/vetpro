@@ -3,12 +3,13 @@ nameEn: Gastroparesis
 nameZh: 胃輕癱
 bodySystem: gastrointestinal
 description: 胃輕癱為胃排空延遲而無機械性阻塞的功能性疾病。犬隻可因自主神經病變（糖尿病性）、術後腸阻塞（postoperative ileus）、電解質異常或特發性原因導致。導致慢性嘔吐、食物滯留與營養吸收障礙。
-
 aliases:
-  - { alias: 胃排空延遲, language: zh }
-  - { alias: Delayed Gastric Emptying, language: en }
-  - { alias: Gastric Motility Disorder, language: en }
-
+  - alias: 胃排空延遲
+    language: zh
+  - alias: Delayed Gastric Emptying
+    language: en
+  - alias: Gastric Motility Disorder
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻胃輕癱較少報告，可繼發於糖尿病神經病變或手術後。
-
 etiology:
   categories:
     - name: 繼發性
@@ -30,7 +30,6 @@ etiology:
       examples:
         - 原因不明的胃平滑肌功能障礙
         - 可能與腸肌神經叢退化有關
-
 clinicalSigns:
   early:
     - 進食後嘔吐（含未消化食物）
@@ -42,55 +41,91 @@ clinicalSigns:
     - 體重減輕
     - 脫水
     - 營養不良
-
 diagnosis:
   primaryTests:
     - name: 腹部 X 光（禁食後）
       notes: 禁食 12 小時後仍見胃內食物滯留。X 光造影劑通過時間延長。排除機械性幽門阻塞（異物、腫瘤、狹窄）。
     - name: 腹部超音波
       notes: 胃擴張伴食物滯留。排除幽門腫塊或增厚。評估胃壁運動（減少或消失）。
-
 treatment:
   principles:
     - 治療基礎病因
     - 促進胃排空的藥物治療
     - 飲食管理
   general:
-    - "Metoclopramide 0.2-0.5 mg/kg PO q8h 或 1-2 mg/kg/day CRI（多巴胺拮抗劑，促胃排空）"
-    - "Cisapride 0.5-1 mg/kg PO q8h（5-HT4 受體激動劑，促胃腸蠕動）"
-    - "Erythromycin 0.5-1 mg/kg PO q8h（低劑量作為 motilin 受體激動劑）"
+    - Metoclopramide 0.2-0.5 mg/kg PO q8h 或 1-2 mg/kg/day CRI（多巴胺拮抗劑，促胃排空）
+    - Cisapride 0.5-1 mg/kg PO q8h（5-HT4 受體激動劑，促胃腸蠕動）
+    - Erythromycin 0.5-1 mg/kg PO q8h（低劑量作為 motilin 受體激動劑）
     - 飲食管理：少量多餐、低脂低纖維、液態或半液態食物
     - 治療基礎病因（糖尿病控制、電解質矯正等）
-
 prognosis: 預後取決於基礎病因。可逆性原因（電解質異常、藥物）在矯正後恢復。糖尿病性胃輕癱在血糖控制改善後可能好轉。特發性胃輕癱可能需要長期藥物與飲食管理。嚴重不可逆者營養管理困難。
-
-
 guidelineRefs:
   - sourceOrg: Journal of neurogastroenterology and motility
-    title: "Neural Gastric Electrical Stimulation: Future Prospects in Managing Gastric Emptying Disorders."
+    title: 'Neural Gastric Electrical Stimulation: Future Prospects in Managing Gastric Emptying Disorders.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12780909/
     type: review
-    pmid: "41492155"
-  - sourceOrg: "Autopsy &amp; case reports"
+    pmid: '41492155'
+  - sourceOrg: Autopsy &amp; case reports
     title: Sarcina ventriculi a rare pathogen.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8530536/
     type: review
-    pmid: "34692571"
-  - sourceOrg: "Journal of medical toxicology : official journal of the American College of Medical Toxicology"
+    pmid: '34692571'
+  - sourceOrg: 'Journal of medical toxicology : official journal of the American College of Medical Toxicology'
     title: Severe Lead Toxicosis in a Lionhead Rabbit.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5330967/
     type: case-report
-    pmid: "28091810"
+    pmid: '28091810'
   - sourceOrg: Iranian journal of basic medical sciences
     title: Atractylodes chinensis volatile oil up-regulated IGF-1 to improve diabetic gastroparesis in rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9150807/
     type: research
-    pmid: "35656073"
-  - sourceOrg: "Pharmacology research &amp; perspectives"
+    pmid: '35656073'
+  - sourceOrg: Pharmacology research &amp; perspectives
     title: Metopimazine is primarily metabolized by a liver amidase in humans.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8929364/
     type: research
-    pmid: "34918875"
+    pmid: '34918875'
 pubmedQueries:
-  - query: '"gastroparesis" OR "delayed gastric emptying" AND (veterinary OR canine OR feline) AND ("treatment" OR "prokinetic")'
+  - query: >-
+      "gastroparesis" OR "delayed gastric emptying" AND (veterinary OR canine OR feline) AND ("treatment" OR
+      "prokinetic")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 胃輕癱 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部 X 光（禁食後）
+          notes: 禁食 12 小時後仍見胃內食物滯留。X 光造影劑通過時間延長。排除機械性幽門阻塞（異物、腫瘤、狹窄）。
+        - name: 腹部超音波
+          notes: 胃擴張伴食物滯留。排除幽門腫塊或增厚。評估胃壁運動（減少或消失）。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 促進胃排空的藥物治療
+        - 飲食管理
+ddxSource: auto-generated

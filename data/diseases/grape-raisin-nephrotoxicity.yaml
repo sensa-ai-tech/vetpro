@@ -3,13 +3,15 @@ nameEn: Grape Raisin Nephrotoxicity
 nameZh: 葡萄與葡萄乾腎毒性
 bodySystem: toxicology
 description: 葡萄與葡萄乾腎毒性是犬攝入葡萄、葡萄乾或相關產品後引起的急性腎衰竭。毒性成分近年確認可能為酒石酸 (tartaric acid)，但個體敏感度差異極大。
-
 aliases:
-  - { alias: 葡萄中毒, language: zh }
-  - { alias: 葡萄乾腎衰竭, language: zh }
-  - { alias: Grape Toxicosis, language: en }
-  - { alias: Raisin Toxicosis, language: en }
-
+  - alias: 葡萄中毒
+    language: zh
+  - alias: 葡萄乾腎衰竭
+    language: zh
+  - alias: Grape Toxicosis
+    language: en
+  - alias: Raisin Toxicosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓的葡萄腎毒性報告極少，但理論上可能受影響。建議同樣避免餵食。
-
 etiology:
   categories:
     - name: 有毒產品
@@ -34,7 +35,6 @@ etiology:
         - 酒石酸含量因品種和生長條件而異，解釋個體差異
         - 導致近端腎小管壞死
         - 確切毒性閾值不明（個體差異極大）
-
 clinicalSigns:
   early:
     - 嘔吐（攝入後數小時內，最常見初始症狀）
@@ -49,19 +49,17 @@ clinicalSigns:
     - 口臭（尿騷味）
     - 嘔吐加劇
     - 癲癇（尿毒症性）
-
 diagnosis:
   primaryTests:
     - name: 病史確認
-      notes: "確認葡萄/葡萄乾攝入史、攝入量與時間。糞便或嘔吐物中可能發現葡萄殘渣。"
+      notes: 確認葡萄/葡萄乾攝入史、攝入量與時間。糞便或嘔吐物中可能發現葡萄殘渣。
     - name: 腎功能監測
-      notes: "BUN/Creatinine 每6-12小時連續監測至少72小時。尿量監測。電解質（高鉀、高磷）。"
+      notes: BUN/Creatinine 每6-12小時連續監測至少72小時。尿量監測。電解質（高鉀、高磷）。
   differentialDiagnoses:
     - 乙二醇中毒
     - 百合中毒（貓）
     - 其他腎毒性物質
     - 急性腎損傷（其他原因）
-
 treatment:
   medical:
     - 攝入後2小時內催吐
@@ -74,20 +72,54 @@ treatment:
     - 已發展腎衰竭者考慮透析
   surgical:
     - 通常不適用手術治療
-
 prognosis:
-  general: "攝入後早期催吐與積極輸液者預後良好。已發展至少尿性腎衰竭者預後不良至極差。腎衰竭的發展與否似乎取決於個體敏感度，而非攝入量。維持尿量是預後的關鍵指標。"
-
+  general: 攝入後早期催吐與積極輸液者預後良好。已發展至少尿性腎衰竭者預後不良至極差。腎衰竭的發展與否似乎取決於個體敏感度，而非攝入量。維持尿量是預後的關鍵指標。
 prevention:
   - 所有葡萄、葡萄乾和醋栗製品遠離犬隻
   - 飼主教育葡萄毒性的不可預測性
   - 即使犬隻過去曾安全食用葡萄也應禁止（個體敏感度可能改變）
   - 含葡萄食品（蛋糕、水果沙拉等）的安全存放
-
-
 guidelineRefs:
   - sourceOrg: Pharmaceutics
     title: Paradoxical Effect of Grape Pomace Extract on Cisplatin-Induced Acute Kidney Injury in Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6956102/
     type: research
-    pmid: "31817713"
+    pmid: '31817713'
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: oliguria-anuria
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 葡萄與葡萄乾腎毒性 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - abdominal-pain 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史確認
+          notes: 確認葡萄/葡萄乾攝入史、攝入量與時間。糞便或嘔吐物中可能發現葡萄殘渣。
+        - name: 腎功能監測
+          notes: BUN/Creatinine 每6-12小時連續監測至少72小時。尿量監測。電解質（高鉀、高磷）。
+ddxSource: auto-generated

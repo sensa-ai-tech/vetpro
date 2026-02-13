@@ -2,14 +2,18 @@ slug: cyclic-hematopoiesis
 nameEn: Cyclic Hematopoiesis
 nameZh: 週期性造血異常
 bodySystem: immunology
-description: 週期性造血異常 (cyclic hematopoiesis) 為 Collie 犬種的遺傳性造血幹細胞缺陷（又稱 grey Collie syndrome），受影響犬表現出約每 11-14 天的嗜中性球減少週期，期間極易發生致命性感染。為 autosomal recessive 遺傳，伴隨特徵性銀灰色被毛稀釋。
-
+description: >-
+  週期性造血異常 (cyclic hematopoiesis) 為 Collie 犬種的遺傳性造血幹細胞缺陷（又稱 grey Collie syndrome），受影響犬表現出約每 11-14
+  天的嗜中性球減少週期，期間極易發生致命性感染。為 autosomal recessive 遺傳，伴隨特徵性銀灰色被毛稀釋。
 aliases:
-  - { alias: 週期性嗜中性球減少, language: zh }
-  - { alias: 灰色柯利犬症候群, language: zh }
-  - { alias: Cyclic Neutropenia, language: en }
-  - { alias: Grey Collie Syndrome, language: en }
-
+  - alias: 週期性嗜中性球減少
+    language: zh
+  - alias: 灰色柯利犬症候群
+    language: zh
+  - alias: Cyclic Neutropenia
+    language: en
+  - alias: Grey Collie Syndrome
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓週期性造血異常極罕見。偶有散發性報告。
-
 etiology:
   categories:
     - name: 遺傳學
@@ -32,7 +35,6 @@ etiology:
         - 嗜中性球週期最明顯（約 11-14 天一次低谷）
         - 血小板、網織紅血球亦呈週期性波動
         - 嗜中性球低谷期間（<500/μL）極易感染
-
 clinicalSigns:
   early:
     - 銀灰色被毛（出生即可辨識）
@@ -46,7 +48,6 @@ clinicalSigns:
     - 敗血症
     - 關節疼痛
     - 多數未治療犬於 6 月齡前死亡
-
 diagnosis:
   primaryTests:
     - name: 連續 CBC 監測
@@ -57,7 +58,6 @@ diagnosis:
     - 骨髓檢查（造血幹細胞評估）
     - 基因檢測（AP3B1 突變）
     - 血小板與網織紅血球連續計數
-
 treatment:
   principles:
     - 骨髓移植為唯一根治方法
@@ -72,16 +72,59 @@ treatment:
     - 口腔護理（齒齦炎管理）
     - 支持療法
     - 遺傳諮詢（攜帶者檢測、不繁殖）
-
 prognosis: 週期性造血異常犬預後極差，未治療者多於 6 月齡前死亡。骨髓移植可根治但執行困難。G-CSF 治療可延長壽命但非根治。受影響 Collie 繁殖線應檢測並淘汰帶原者。
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Cyclic hematopoiesis in a mixed-breed dog: case report and brief review."
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: 'Cyclic hematopoiesis in a mixed-breed dog: case report and brief review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9597339/
     type: review
-    pmid: "35904319"
+    pmid: '35904319'
 pubmedQueries:
-  - query: '"cyclic hematopoiesis" OR "cyclic neutropenia" OR "grey Collie" AND (veterinary OR canine) AND ("treatment" OR "AP3B1")'
+  - query: >-
+      "cyclic hematopoiesis" OR "cyclic neutropenia" OR "grey Collie" AND (veterinary OR canine) AND ("treatment" OR
+      "AP3B1")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: haematochezia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 週期性造血異常 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - halitosis-stomatitis 相關症狀
+        - weakness 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 連續 CBC 監測
+          notes: 每天或隔天 CBC 持續 3-4 週，記錄嗜中性球週期性波動（11-14 天週期）
+        - name: 被毛顏色
+          notes: Collie 幼犬異常銀灰色被毛為重要線索
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 骨髓檢查（造血幹細胞評估）
+        - 基因檢測（AP3B1 突變）
+        - 血小板與網織紅血球連續計數
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 骨髓移植為唯一根治方法
+        - 感染期積極抗生素
+        - G-CSF 可緩解嗜中性球減少
+ddxSource: auto-generated

@@ -3,12 +3,13 @@ nameEn: Iatrogenic Hyperadrenocorticism
 nameZh: 醫源性腎上腺皮質功能亢進
 bodySystem: endocrine
 description: 醫源性腎上腺皮質功能亢進為長期外源性糖皮質激素使用導致的庫欣氏症臨床表現。為獸醫臨床最常見的庫欣氏症原因（比自發性更常見）。所有給藥途徑（口服、注射、外用、眼藥）均可引起。同時導致下視丘-腦下垂體-腎上腺軸（HPA axis）抑制。
-
 aliases:
-  - { alias: 醫源性庫欣氏症, language: zh }
-  - { alias: Iatrogenic Cushing's Syndrome, language: en }
-  - { alias: Exogenous Hyperadrenocorticism, language: en }
-
+  - alias: 醫源性庫欣氏症
+    language: zh
+  - alias: Iatrogenic Cushing's Syndrome
+    language: en
+  - alias: Exogenous Hyperadrenocorticism
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻對外源性糖皮質激素較犬隻不敏感。但長期高劑量仍可引起。
-
 etiology:
   categories:
     - name: 外源性糖皮質激素
@@ -32,7 +32,6 @@ etiology:
         - 高劑量
         - 長效型製劑
         - 小型犬對類固醇更敏感
-
 clinicalSigns:
   early:
     - 多飲多尿
@@ -46,14 +45,12 @@ clinicalSigns:
     - 反覆泌尿道感染
     - 鈣質沉著（calcinosis cutis）
     - HPA axis 抑制（突然停藥可致腎上腺危象）
-
 diagnosis:
   primaryTests:
     - name: 用藥史
       notes: 詳細用藥史（包括外用製劑與眼藥）是診斷關鍵。ACTH stimulation test 顯示低平反應（cortisol baseline 低，stimulation 後亦低）。內源性 ACTH 極低。
     - name: ACTH stimulation test
       notes: 基礎皮質醇低。ACTH 刺激後皮質醇仍低（flat response）。與自發性庫欣氏症（ACTH stim 後升高）鑑別。腹部超音波：雙側腎上腺萎縮（小）。
-
 treatment:
   principles:
     - 逐步減量停用外源性糖皮質激素
@@ -66,9 +63,48 @@ treatment:
     - 腎上腺功能不全症狀處理（必要時短暫增加劑量）
     - HPA axis 恢復可能需要數週至數月
     - 考慮替代性治療原發病的非類固醇選項
-
 prognosis: 預後良好。逐步減量停用糖皮質激素後庫欣氏症臨床表現可完全消退。HPA axis 恢復通常需 2-6 個月。皮膚症狀恢復可能較慢。鈣質沉著可能持續數月。關鍵是避免突然停藥導致腎上腺危象。
-
 pubmedQueries:
-  - query: '"iatrogenic hyperadrenocorticism" OR "iatrogenic Cushing" AND (veterinary OR canine OR feline) AND ("glucocorticoid" OR "treatment")'
+  - query: >-
+      "iatrogenic hyperadrenocorticism" OR "iatrogenic Cushing" AND (veterinary OR canine OR feline) AND
+      ("glucocorticoid" OR "treatment")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: polyphagia
+    frequency: common
+  - symptomId: alopecia
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 醫源性腎上腺皮質功能亢進 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - abdominal-distension 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+        - polyuria-polydipsia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 用藥史
+          notes: 詳細用藥史（包括外用製劑與眼藥）是診斷關鍵。ACTH stimulation test 顯示低平反應（cortisol baseline 低，stimulation 後亦低）。內源性 ACTH 極低。
+        - name: ACTH stimulation test
+          notes: 基礎皮質醇低。ACTH 刺激後皮質醇仍低（flat response）。與自發性庫欣氏症（ACTH stim 後升高）鑑別。腹部超音波：雙側腎上腺萎縮（小）。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 逐步減量停用外源性糖皮質激素
+        - 絕不可突然停藥（腎上腺危象風險）
+        - HPA axis 恢復需要時間
+ddxSource: auto-generated

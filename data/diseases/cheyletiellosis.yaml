@@ -3,13 +3,15 @@ nameEn: Cheyletiellosis
 nameZh: 毛蝨蟎症
 bodySystem: dermatology
 description: 由 Cheyletiella 蟎蟲引起的表面性皮膚寄生蟲病，又稱「會走路的頭皮屑」（walking dandruff）。蟎蟲生活在角質層表面，產生大量皮屑。高度傳染性，可暫時感染人類。
-
 aliases:
-  - { alias: "Walking Dandruff", language: en }
-  - { alias: "Cheyletiella Dermatitis", language: en }
-  - { alias: "行走的頭皮屑", language: zh }
-  - { alias: "毛蝨蟎感染", language: zh }
-
+  - alias: Walking Dandruff
+    language: en
+  - alias: Cheyletiella Dermatitis
+    language: en
+  - alias: 行走的頭皮屑
+    language: zh
+  - alias: 毛蝨蟎感染
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: C. blakei 為貓主要種。
-
 etiology:
   categories:
     - name: 寄生蟲
@@ -25,7 +26,6 @@ etiology:
         - Cheyletiella yasguri（犬）
         - Cheyletiella blakei（貓）
         - 直接接觸或環境傳播
-
 clinicalSigns:
   early:
     - 背部大量白色皮屑
@@ -36,14 +36,12 @@ clinicalSigns:
     - 脫毛
     - 結痂
     - 人類接觸者出現丘疹（暫時性）
-
 diagnosis:
   primaryTests:
     - name: 透明膠帶法
       notes: 透明膠帶黏取皮屑後顯微鏡下觀察蟎蟲
     - name: 皮屑顯微鏡檢查
       notes: 大型白色蟎蟲，有明顯的附肢鉤
-
 treatment:
   principles:
     - 殺蟎治療
@@ -54,21 +52,48 @@ treatment:
     - Isoxazoline 類藥物
     - Ivermectin
     - 環境使用殺蟲劑噴霧
-
 prognosis: 治療預後極佳。2-3 次治療即可痊癒。環境殘留蟎蟲可存活約 10 天。
-
-
 guidelineRefs:
   - sourceOrg: Open veterinary journal
     title: Main mites associated with dermatopathies present in dogs and other members of the Canidae family.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10105784/
     type: review
-    pmid: "37073249"
+    pmid: '37073249'
   - sourceOrg: The Veterinary record
     title: Selamectin versus ivermectin for cheyletiellosis in pet rabbits.
     url: https://pubmed.ncbi.nlm.nih.gov/27034299/
     type: research
-    pmid: "27034299"
+    pmid: '27034299'
 pubmedQueries:
   - query: '"Cheyletiella" OR "cheyletiellosis" AND (veterinary OR canine OR feline) AND ("treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: common
+  - symptomId: alopecia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 毛蝨蟎症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 透明膠帶法
+          notes: 透明膠帶黏取皮屑後顯微鏡下觀察蟎蟲
+        - name: 皮屑顯微鏡檢查
+          notes: 大型白色蟎蟲，有明顯的附肢鉤
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 殺蟎治療
+        - 同居動物同時治療
+        - 環境清潔
+ddxSource: auto-generated

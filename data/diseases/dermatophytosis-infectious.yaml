@@ -3,14 +3,17 @@ nameEn: Dermatophytosis Infectious
 nameZh: 皮黴菌感染
 bodySystem: dermatology
 description: 皮黴菌感染 (dermatophytosis) 由嗜角質真菌引起的淺表性真菌感染，犬貓最常見病原為 Microsporum canis（佔貓病例 >90%）。典型表現為環形脫毛與皮屑。為重要人畜共通傳染病，特別是免疫力較弱的兒童與老人。
-
 aliases:
-  - { alias: 皮癬菌感染, language: zh }
-  - { alias: 貓癬, language: zh }
-  - { alias: 錢癬, language: zh }
-  - { alias: Ringworm, language: en }
-  - { alias: Dermatophyte Infection, language: en }
-
+  - alias: 皮癬菌感染
+    language: zh
+  - alias: 貓癬
+    language: zh
+  - alias: 錢癬
+    language: zh
+  - alias: Ringworm
+    language: en
+  - alias: Dermatophyte Infection
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -18,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: M. canis 佔貓病例 >90%。長毛貓（波斯貓）為主要帶原者，可無症狀。幼貓與免疫抑制貓症狀較嚴重。收容所中傳播迅速。
-
 etiology:
   categories:
     - name: 主要病原
@@ -32,7 +34,6 @@ etiology:
         - 間接接觸汙染物品（梳子、床鋪、環境）
         - 孢子在環境中可存活 12-18 個月
         - 人畜共通傳播
-
 clinicalSigns:
   early:
     - 局部環形脫毛
@@ -45,7 +46,6 @@ clinicalSigns:
     - 結痂性皮膚炎
     - 甲癬 (onychomycosis)
     - 深部真菌結節 (kerion, pseudomycetoma)
-
 diagnosis:
   primaryTests:
     - name: Wood's lamp 檢查
@@ -56,7 +56,6 @@ diagnosis:
     - 毛髮直接鏡檢（KOH 處理後觀察菌絲與關節孢子）
     - PCR（快速鑑定真菌種類）
     - 組織病理學（非典型病例）
-
 treatment:
   principles:
     - 系統性加局部治療為最佳策略
@@ -72,36 +71,73 @@ treatment:
     - 隔離感染動物
     - 人類家庭成員注意防護
     - 免疫抑制者需同時處理根本原因
-
 prognosis: 免疫正常犬貓皮黴菌感染預後良好，多數在適當治療 6-12 週後痊癒。未治療者免疫正常犬可能 3-4 個月自行痊癒。收容所環境中控制困難。慢性帶原（無症狀貓）需長期環境管理。
-
-
 guidelineRefs:
   - sourceOrg: Pathogens (Basel, Switzerland)
     title: Current Topics in Dermatophyte Classification and Clinical Diagnosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9502385/
     type: review
-    pmid: "36145389"
+    pmid: '36145389'
   - sourceOrg: Mycopathologia
     title: Genetic Predisposition and its Heredity in the Context of Increased Prevalence of Dermatophytoses.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8106586/
     type: review
-    pmid: "33523393"
+    pmid: '33523393'
   - sourceOrg: Veterinary medicine and science
     title: Zoonotic implications of camel diseases in Iran.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7397890/
     type: review
-    pmid: "32160657"
+    pmid: '32160657'
   - sourceOrg: Journal of fungi (Basel, Switzerland)
-    title: "Emerging Fungal Infections: New Patients, New Patterns, and New Pathogens."
+    title: 'Emerging Fungal Infections: New Patients, New Patterns, and New Pathogens.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6787706/
     type: review
-    pmid: "31330862"
+    pmid: '31330862'
   - sourceOrg: Journal of fungi (Basel, Switzerland)
     title: Antifungal Efficacy of Luliconazole-Loaded Nanostructured Lipid-Carrier Gel in an Animal Model of Dermatophytosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12028575/
     type: research
-    pmid: "40278144"
+    pmid: '40278144'
 pubmedQueries:
   - query: '"dermatophytosis" AND (veterinary OR canine OR feline) AND ("treatment" OR "guidelines")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: uncommon
+  - symptomId: alopecia
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 皮黴菌感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+        - alopecia 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: Wood's lamp 檢查
+          notes: M. canis 約 50% 菌株在 Wood's lamp 下呈蘋果綠螢光。陰性不排除。需與皮屑/藥物螢光區分
+        - name: 真菌培養 (DTM)
+          notes: 確定診斷金標準。DTM 培養基變紅且有真菌菌落生長為陽性。需 1-3 週
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 毛髮直接鏡檢（KOH 處理後觀察菌絲與關節孢子）
+        - PCR（快速鑑定真菌種類）
+        - 組織病理學（非典型病例）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 系統性加局部治療為最佳策略
+        - 環境去汙染不可忽略
+        - 治療至培養陰性
+ddxSource: auto-generated

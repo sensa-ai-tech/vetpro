@@ -3,13 +3,15 @@ nameEn: Amelanotic Melanoma
 nameZh: 無色素性黑色素瘤
 bodySystem: oncology
 description: 缺乏黑色素顆粒的黑色素瘤變異型，因外觀不典型常被誤診。犬口腔及趾部的無色素性黑色素瘤惡性度高，需免疫組化染色確診。
-
 aliases:
-  - { alias: 無黑色素黑色素瘤, language: zh }
-  - { alias: 缺色素性黑色素瘤, language: zh }
-  - { alias: Amelanotic Melanoma, language: en }
-  - { alias: Non-pigmented Melanoma, language: en }
-
+  - alias: 無黑色素黑色素瘤
+    language: zh
+  - alias: 缺色素性黑色素瘤
+    language: zh
+  - alias: Amelanotic Melanoma
+    language: en
+  - alias: Non-pigmented Melanoma
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓的無色素性黑色素瘤較少見，但診斷困難度更高，需依賴免疫組化確認。
-
 etiology:
   categories:
     - name: 腫瘤特性
@@ -32,7 +33,6 @@ etiology:
         - 黑色素合成途徑中酪胺酸酶活性低下
         - 腫瘤分化程度低
         - 具體原因不明
-
 clinicalSigns:
   early:
     - 口腔或趾部粉紅色至紅色腫塊
@@ -43,22 +43,20 @@ clinicalSigns:
     - 表面潰瘍出血
     - 區域淋巴結腫大
     - 遠端轉移（肺、肝）
-
 diagnosis:
   primaryTests:
     - name: 組織病理學
-      notes: "光學顯微鏡下缺乏黑色素顆粒，形態學可能類似未分化癌或肉瘤"
+      notes: 光學顯微鏡下缺乏黑色素顆粒，形態學可能類似未分化癌或肉瘤
     - name: 免疫組織化學染色
-      notes: "Melan-A、PNL2、S-100、Sox10 等標記用於確認黑色素細胞來源。Melan-A 敏感性最高"
+      notes: Melan-A、PNL2、S-100、Sox10 等標記用於確認黑色素細胞來源。Melan-A 敏感性最高
     - name: Fontana-Masson 染色
-      notes: "可偵測極微量黑色素顆粒，有助鑑別"
+      notes: 可偵測極微量黑色素顆粒，有助鑑別
   differentialDiagnoses:
     - 鱗狀細胞癌 (SCC)
     - 纖維肉瘤
     - 未分化癌
     - 肉芽腫性炎症
     - 漿細胞瘤
-
 treatment:
   surgical:
     - 廣泛手術切除為首選
@@ -69,33 +67,56 @@ treatment:
     - Carboplatin 輔助化療
     - 放射治療
     - 治療方案與有色素型相同
-
 prognosis:
-  general: "預後與有色素型黑色素瘤相似或略差，主要因診斷延遲。口腔無色素性黑色素瘤的中位生存時間約 8-14 個月。早期診斷與積極多模式治療可改善預後。"
-
+  general: 預後與有色素型黑色素瘤相似或略差，主要因診斷延遲。口腔無色素性黑色素瘤的中位生存時間約 8-14 個月。早期診斷與積極多模式治療可改善預後。
 prevention:
   - 口腔內任何粉紅色或紅色增生性病變均應進行活檢
   - 不可僅憑缺乏色素排除黑色素瘤的可能性
-
-
 guidelineRefs:
   - sourceOrg: Protoplasma
     title: Melanization as unfavorable factor in amelanotic melanoma cell biology.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8433105/
     type: research
-    pmid: "33506271"
-  - sourceOrg: "Cancer microenvironment : official journal of the International Cancer Microenvironment Society"
-    title: Participation of Tumor-Associated Myeloid Cells in Progression of Amelanotic Melanoma (RMM Tumor Line) in F344 Rats, with Particular Reference to MHC Class II- and CD163-Expressing Cells.
+    pmid: '33506271'
+  - sourceOrg: 'Cancer microenvironment : official journal of the International Cancer Microenvironment Society'
+    title: >-
+      Participation of Tumor-Associated Myeloid Cells in Progression of Amelanotic Melanoma (RMM Tumor Line) in F344
+      Rats, with Particular Reference to MHC Class II- and CD163-Expressing Cells.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5750197/
     type: research
-    pmid: "28623530"
+    pmid: '28623530'
   - sourceOrg: Cell biology and toxicology
     title: Proteasome inhibitors against amelanotic melanoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5658467/
     type: research
-    pmid: "28281027"
+    pmid: '28281027'
   - sourceOrg: Folia histochemica et cytobiologica
     title: Melanization of Bomirski hamster amelanotic melanoma cells (Ab line) depends on the type of culture medium.
     url: https://pubmed.ncbi.nlm.nih.gov/30370913/
     type: research
-    pmid: "30370913"
+    pmid: '30370913'
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 無色素性黑色素瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 組織病理學
+          notes: 光學顯微鏡下缺乏黑色素顆粒，形態學可能類似未分化癌或肉瘤
+        - name: 免疫組織化學染色
+          notes: Melan-A、PNL2、S-100、Sox10 等標記用於確認黑色素細胞來源。Melan-A 敏感性最高
+        - name: Fontana-Masson 染色
+          notes: 可偵測極微量黑色素顆粒，有助鑑別
+ddxSource: auto-generated

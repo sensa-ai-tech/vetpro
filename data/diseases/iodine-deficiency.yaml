@@ -3,13 +3,15 @@ nameEn: Iodine Deficiency
 nameZh: 碘缺乏症
 bodySystem: metabolic
 description: 碘為甲狀腺激素（T3、T4）合成的必要元素，缺乏導致甲狀腺代償性腫大（甲狀腺腫）及甲狀腺功能低下。現代商業飼料中碘含量充足，碘缺乏主要見於餵食不含碘鹽的自製飲食或碘貧乏地區。
-
 aliases:
-  - { alias: 缺碘, language: zh }
-  - { alias: 碘缺乏性甲狀腺腫, language: zh }
-  - { alias: Iodine Deficiency Goiter, language: en }
-  - { alias: Hypothyroidism Iodine Related, language: en }
-
+  - alias: 缺碘
+    language: zh
+  - alias: 碘缺乏性甲狀腺腫
+    language: zh
+  - alias: Iodine Deficiency Goiter
+    language: en
+  - alias: Hypothyroidism Iodine Related
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓碘缺乏同樣罕見。商業貓糧含適量碘。
-
 etiology:
   categories:
     - name: 攝入不足
@@ -28,7 +29,6 @@ etiology:
       examples:
         - 高量十字花科蔬菜（捲心菜、花椰菜含硫氰酸鹽）
         - 大豆基飲食（異黃酮抑制碘利用）
-
 clinicalSigns:
   early:
     - 甲狀腺區域腫大（頸部觸診可及）
@@ -39,14 +39,12 @@ clinicalSigns:
     - 心搏過緩
     - 繁殖障礙（不孕、流產）
     - 幼犬先天性甲狀腺功能低下（cretinism）
-
 diagnosis:
   primaryTests:
     - name: 甲狀腺功能檢查
       notes: 總 T4 降低。TSH 升高（反映甲狀腺功能低下→垂體代償）。
     - name: 飲食病史
       notes: 自製飲食且無碘補充為關鍵線索。
-
 treatment:
   principles:
     - 飲食碘補充
@@ -57,36 +55,74 @@ treatment:
     - 轉換至含適量碘的商業飼料
     - 甲狀腺功能低下嚴重者：Levothyroxine 替代療法
     - 定期監測 T4 及 TSH
-
 prognosis: 早期碘補充後甲狀腺腫可縮小，功能可恢復。幼犬先天性碘缺乏導致的發育遲緩可能無法完全逆轉。成犬預後良好。
-
-
 guidelineRefs:
   - sourceOrg: The veterinary quarterly
-    title: "Exploring thyroid function in main domestic ruminants: a scoping review of physio-anatomy, diseases and diagnostic tools."
+    title: >-
+      Exploring thyroid function in main domestic ruminants: a scoping review of physio-anatomy, diseases and diagnostic
+      tools.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12777779/
     type: review
-    pmid: "41439355"
+    pmid: '41439355'
   - sourceOrg: JBRA assisted reproduction
-    title: "Melatonin on hypothyroidism and gonadal development in rats: a review."
+    title: 'Melatonin on hypothyroidism and gonadal development in rats: a review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7558891/
     type: review
-    pmid: "32945645"
+    pmid: '32945645'
   - sourceOrg: Toxics
-    title: Iodine Deficiency Exacerbates Thyroidal and Neurological Effects of Developmental Perchlorate Exposure in the Neonatal and Adult Rat.
+    title: >-
+      Iodine Deficiency Exacerbates Thyroidal and Neurological Effects of Developmental Perchlorate Exposure in the
+      Neonatal and Adult Rat.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11679215/
     type: research
-    pmid: "39771057"
+    pmid: '39771057'
   - sourceOrg: Nutrients
-    title: Iodine Bioavailability and Biochemical Effects of Brassica oleracea var. sabellica L. Biofortified with 8-Hydroxy-7-iodo-5-quinolinesulfonic Acid in Wistar Rats.
+    title: >-
+      Iodine Bioavailability and Biochemical Effects of Brassica oleracea var. sabellica L. Biofortified with
+      8-Hydroxy-7-iodo-5-quinolinesulfonic Acid in Wistar Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11547991/
     type: research
-    pmid: "39519410"
+    pmid: '39519410'
   - sourceOrg: Toxics
     title: Structural Malformations in the Neonatal Rat Brain Accompany Developmental Exposure to Ammonium Perchlorate.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10747616/
     type: research
-    pmid: "38133428"
+    pmid: '38133428'
 pubmedQueries:
   - query: '"Iodine Deficiency" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-gain
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: alopecia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 碘缺乏症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-gain 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 甲狀腺功能檢查
+          notes: 總 T4 降低。TSH 升高（反映甲狀腺功能低下→垂體代償）。
+        - name: 飲食病史
+          notes: 自製飲食且無碘補充為關鍵線索。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 飲食碘補充
+        - 矯正飲食來源
+        - 甲狀腺功能低下嚴重者需甲狀腺激素替代
+ddxSource: auto-generated

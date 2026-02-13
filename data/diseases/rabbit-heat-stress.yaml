@@ -3,16 +3,15 @@ nameEn: Rabbit Heat Stress
 nameZh: 兔熱緊迫
 bodySystem: metabolic
 description: 兔無汗腺且散熱主要依賴耳朵血管擴張與呼吸，環境溫度超過 28°C 即有熱緊迫風險。肥胖、長毛品種及懷孕母兔特別易感。嚴重時可導致器官衰竭與死亡。
-
 aliases:
-  - { alias: "兔熱緊迫", language: zh }
-  - { alias: "Rabbit Heat Stress", language: en }
-
+  - alias: 兔熱緊迫
+    language: zh
+  - alias: Rabbit Heat Stress
+    language: en
 species:
   - speciesCommon: rabbit
     prevalence: uncommon
     notes: 兔可受此疾病影響。
-
 etiology:
   categories:
     - name: 環境性
@@ -27,7 +26,6 @@ etiology:
         - 長毛品種（Angora）
         - 懷孕後期
         - 老年兔
-
 clinicalSigns:
   early:
     - 呼吸急促
@@ -40,14 +38,12 @@ clinicalSigns:
     - 虛脫
     - 癲癇
     - 昏迷
-
 diagnosis:
   primaryTests:
     - name: 體溫測量
       notes: 肛溫 >40°C（正常 38.5-40°C）。>41°C 為嚴重中暑。
     - name: 生化檢查
       notes: 評估器官損傷（肝腎指數）。凝血功能（DIC 風險）。
-
 treatment:
   principles:
     - 立即降溫
@@ -61,41 +57,83 @@ treatment:
     - 氧氣支持
     - 監測體溫每 15 分鐘
     - 環境溫控（<25°C 為理想）
-
 prognosis: 輕度熱緊迫及時降溫後預後良好。嚴重中暑（>41°C）合併器官損傷預後不良。多器官衰竭或 DIC 發生時預後極差。預防（溫控環境、陰涼處、冷凍水瓶）為最佳策略。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary and animal science
-    title: "Quercetin as a bioactive feed additive: nutritional, antioxidant, and gut health implications in poultry and rabbits."
+    title: >-
+      Quercetin as a bioactive feed additive: nutritional, antioxidant, and gut health implications in poultry and
+      rabbits.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12308014/
     type: review
-    pmid: "40740308"
+    pmid: '40740308'
     relevance: primary
   - sourceOrg: Veterinary sciences
-    title: "Anti-Inflammatory and Antioxidative Phytogenic Substances against Secret Killers in Poultry: Current Status and Prospects."
+    title: >-
+      Anti-Inflammatory and Antioxidative Phytogenic Substances against Secret Killers in Poultry: Current Status and
+      Prospects.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9866488/
     type: review
-    pmid: "36669057"
+    pmid: '36669057'
     relevance: primary
   - sourceOrg: Antioxidants (Basel, Switzerland)
-    title: "Ramifications of Heat Stress on Rabbit Production and Role of Nutraceuticals in Alleviating Its Negative Impacts: An Updated Review."
+    title: >-
+      Ramifications of Heat Stress on Rabbit Production and Role of Nutraceuticals in Alleviating Its Negative Impacts:
+      An Updated Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10376432/
     type: review
-    pmid: "37507946"
+    pmid: '37507946'
     relevance: primary
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Bee Products for Poultry and Rabbits: Current Challenges and Perspectives."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Bee Products for Poultry and Rabbits: Current Challenges and Perspectives.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10668745/
     type: review
-    pmid: "38003135"
+    pmid: '38003135'
     relevance: primary
   - sourceOrg: Molecules (Basel, Switzerland)
-    title: "Physicochemical Properties, Antioxidant Markers, and Meat Quality as Affected by Heat Stress: A Review."
+    title: 'Physicochemical Properties, Antioxidant Markers, and Meat Quality as Affected by Heat Stress: A Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10147039/
     type: review
-    pmid: "37110566"
+    pmid: '37110566'
     relevance: primary
 pubmedQueries:
   - query: '"Rabbit Heat Stress" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: weight-gain
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔熱緊迫 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - weight-gain 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 體溫測量
+          notes: 肛溫 >40°C（正常 38.5-40°C）。>41°C 為嚴重中暑。
+        - name: 生化檢查
+          notes: 評估器官損傷（肝腎指數）。凝血功能（DIC 風險）。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 立即降溫
+        - 輸液支持
+        - 監測器官功能
+ddxSource: auto-generated

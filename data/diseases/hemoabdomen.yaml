@@ -2,14 +2,18 @@ slug: hemoabdomen
 nameEn: Hemoabdomen
 nameZh: 腹腔出血
 bodySystem: emergency
-description: 腹腔出血 (hemoabdomen/hemoperitoneum) 為血液蓄積於腹腔的緊急狀態。犬最常見原因為脾臟 hemangiosarcoma 破裂（非外傷性）與外傷（外傷性）。AFAST 超音波為快速診斷工具。腹腔穿刺液 PCV >25% 確認血腹。需快速鑑別是否為可手術控制的出血。
-
+description: >-
+  腹腔出血 (hemoabdomen/hemoperitoneum) 為血液蓄積於腹腔的緊急狀態。犬最常見原因為脾臟 hemangiosarcoma 破裂（非外傷性）與外傷（外傷性）。AFAST 超音波為快速診斷工具。腹腔穿刺液 PCV
+  >25% 確認血腹。需快速鑑別是否為可手術控制的出血。
 aliases:
-  - { alias: 血腹, language: zh }
-  - { alias: 腹腔積血, language: zh }
-  - { alias: Hemoperitoneum, language: en }
-  - { alias: Abdominal Hemorrhage, language: en }
-
+  - alias: 血腹
+    language: zh
+  - alias: 腹腔積血
+    language: zh
+  - alias: Hemoperitoneum
+    language: en
+  - alias: Abdominal Hemorrhage
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓 hemoabdomen 較犬少見。外傷、肝臟腫瘤與凝血障礙為主要原因。
-
 etiology:
   categories:
     - name: 非外傷性
@@ -32,7 +35,6 @@ etiology:
         - 咬傷
         - 高處墜落
         - 腹部鈍性創傷
-
 clinicalSigns:
   early:
     - 急性虛弱、倒下
@@ -45,7 +47,6 @@ clinicalSigns:
     - 低血壓
     - 意識改變
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: AFAST 超音波
@@ -58,7 +59,6 @@ diagnosis:
     - 凝血功能（排除凝血障礙）
     - 血型/交叉配血
     - 腹部 X-ray
-
 treatment:
   principles:
     - 穩定血循環
@@ -73,36 +73,91 @@ treatment:
     - 手術：脾臟切除（腫瘤/破裂）、肝臟裂傷修補
     - 凝血障礙：vitamin K1、新鮮冷凍血漿
     - 術後送組織病理（確認脾臟腫瘤類型）
-
 prognosis: 外傷性 hemoabdomen 手術控制出血後預後佳。脾臟 hemangiosarcoma 短期可穩定但長期預後極差（中位存活 1-3 個月）。脾臟血腫（良性）切除後預後佳。凝血障礙矯正後多數可恢復。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: Retrospective evaluation of autotransfusion using a cell saver device versus allotransfusion in the perioperative management of acute hemoperitoneum in 43 dogs (2017-2021).
+    title: >-
+      Retrospective evaluation of autotransfusion using a cell saver device versus allotransfusion in the perioperative
+      management of acute hemoperitoneum in 43 dogs (2017-2021).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11832480/
     type: research
-    pmid: "39968106"
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
-    title: Retrospective evaluation of the use of small-bore wire-guided catheters for the management of peritoneal effusion in cats and dogs.
+    pmid: '39968106'
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
+    title: >-
+      Retrospective evaluation of the use of small-bore wire-guided catheters for the management of peritoneal effusion
+      in cats and dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10099829/
     type: research
-    pmid: "36452983"
+    pmid: '36452983'
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Therapeutic response and prognostic factors of 14 dogs undergoing transcatheter arterial embolization for hepatocellular masses: A retrospective study."
+    title: >-
+      Therapeutic response and prognostic factors of 14 dogs undergoing transcatheter arterial embolization for
+      hepatocellular masses: A retrospective study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10365048/
     type: research
-    pmid: "37224273"
+    pmid: '37224273'
   - sourceOrg: Frontiers in veterinary science
-    title: Resuscitation Patterns and Massive Transfusion for the Critical Bleeding Dog-A Multicentric Retrospective Study of 69 Cases (2007-2013).
+    title: >-
+      Resuscitation Patterns and Massive Transfusion for the Critical Bleeding Dog-A Multicentric Retrospective Study of
+      69 Cases (2007-2013).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8766795/
     type: research
-    pmid: "35071385"
+    pmid: '35071385'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: Retrospective evaluation of thrombocytopenia and tumor stage as prognostic indicators in dogs with splenic hemangiosarcoma.
+    title: >-
+      Retrospective evaluation of thrombocytopenia and tumor stage as prognostic indicators in dogs with splenic
+      hemangiosarcoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8559062/
     type: research
-    pmid: "33683962"
+    pmid: '33683962'
 pubmedQueries:
-  - query: '"hemoabdomen" OR "hemoperitoneum" AND (veterinary OR canine OR feline) AND ("treatment" OR "spleen" OR "emergency")'
+  - query: >-
+      "hemoabdomen" OR "hemoperitoneum" AND (veterinary OR canine OR feline) AND ("treatment" OR "spleen" OR
+      "emergency")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: abdominal-distension
+    frequency: common
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 腹腔出血 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - abdominal-distension 相關症狀
+        - coma-stupor 相關症狀
+        - pallor-cyanosis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: AFAST 超音波
+          notes: 腹腔游離液體。快速且高敏感度
+        - name: 腹腔穿刺
+          notes: 不凝固血液（腹腔血液 fibrinolysis 後不凝固）。PCV >25% 確認 hemoabdomen
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - PCV/TP 連續追蹤（PCV 下降趨勢）
+        - 腹部超音波（找出出血源 — 脾臟腫塊？）
+        - 凝血功能（排除凝血障礙）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 穩定血循環
+        - 找出出血源
+        - 決定手術時機
+ddxSource: auto-generated

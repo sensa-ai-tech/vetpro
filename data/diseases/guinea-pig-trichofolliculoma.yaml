@@ -3,22 +3,20 @@ nameEn: Guinea Pig Trichofolliculoma
 nameZh: 天竺鼠毛囊瘤
 bodySystem: gastrointestinal
 description: 天竺鼠好發的良性皮膚附屬器腫瘤，通常表現為臀部或背部的皮膚結節，內含角質碎屑與毛髮。外科切除為治療方法，預後良好。
-
 aliases:
-  - { alias: "天竺鼠毛囊瘤", language: zh }
-  - { alias: "Guinea Pig Trichofolliculoma", language: en }
-
+  - alias: 天竺鼠毛囊瘤
+    language: zh
+  - alias: Guinea Pig Trichofolliculoma
+    language: en
 species:
   - speciesCommon: guinea pig
     prevalence: uncommon
     notes: 天竺鼠可受此疾病影響。
-
 etiology:
   categories:
     - name: 病因
       examples:
         - 詳見臨床文獻
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -27,14 +25,12 @@ clinicalSigns:
   progressive:
     - 症狀加重
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 完整理學檢查與病史評估。
     - name: 實驗室檢查
       notes: CBC/生化排除系統性疾病。
-
 treatment:
   principles:
     - 治療基礎病因
@@ -44,26 +40,62 @@ treatment:
     - 依病因治療
     - 支持性照護
     - 定期追蹤
-
 prognosis: 預後取決於疾病嚴重度與治療時效。早期診斷與適當治療可改善預後。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Common Spontaneous Tumors and Tumor-like Lesions in 70 Pet Rodents and Negative MMTV Detection in Mammary Tumors.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11117349/
     type: research
-    pmid: "38791685"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '38791685'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Cutaneous and Subcutaneous Tumours of Small Pet Mammals-Retrospective Study of 256 Cases (2014-2021).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9028556/
     type: research
-    pmid: "35454212"
+    pmid: '35454212'
   - sourceOrg: Topics in companion animal medicine
-    title: "A Conscious Minimally Invasive Approach to the Removal of a Trichofolliculoma in an American Guinea Pig: A Case Study."
+    title: >-
+      A Conscious Minimally Invasive Approach to the Removal of a Trichofolliculoma in an American Guinea Pig: A Case
+      Study.
     url: https://pubmed.ncbi.nlm.nih.gov/36828174/
     type: case-report
-    pmid: "36828174"
+    pmid: '36828174'
 pubmedQueries:
   - query: '"Guinea Pig Trichofolliculoma" AND (veterinary OR "guinea pig") AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 天竺鼠毛囊瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 完整理學檢查與病史評估。
+        - name: 實驗室檢查
+          notes: CBC/生化排除系統性疾病。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 支持性照護
+        - 監測恢復進度
+ddxSource: auto-generated

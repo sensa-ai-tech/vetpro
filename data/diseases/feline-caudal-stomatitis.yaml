@@ -3,18 +3,18 @@ nameEn: Feline Caudal Stomatitis
 nameZh: 貓後口炎
 bodySystem: dental
 description: 貓後口炎特指軟齶兩側、顎咽弓和舌根後方的嚴重增生性炎症,是貓慢性齒齦口炎的特徵性病變。此區域炎症特別劇烈,對藥物治療反應差,需全口拔牙改善。
-
 aliases:
-  - { alias: 貓咽峽炎, language: zh }
-  - { alias: Caudal Mucositis, language: en }
-  - { alias: Faucitis, language: en }
-
+  - alias: 貓咽峽炎
+    language: zh
+  - alias: Caudal Mucositis
+    language: en
+  - alias: Faucitis
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
     notes: 常與齒齦口炎並存,但也可單獨發生
-
 etiology:
   categories:
     - name: 免疫介導
@@ -25,7 +25,6 @@ etiology:
       examples:
         - 該區域神經分布密集
         - 神經源性炎症
-
 clinicalSigns:
   early:
     - 軟齶兩側輕度發紅
@@ -38,20 +37,18 @@ clinicalSigns:
     - 進食時甩頭
     - 流涎和口臭
     - 拒食
-
 diagnosis:
   primaryTests:
     - name: 口腔檢查(麻醉下)
-      notes: "軟齶兩側、顎咽弓嚴重增生性炎症,呈鵝卵石狀或息肉樣"
+      notes: 軟齶兩側、顎咽弓嚴重增生性炎症,呈鵝卵石狀或息肉樣
     - name: 組織病理
-      notes: "淋巴濾泡增生,漿細胞浸潤"
+      notes: 淋巴濾泡增生,漿細胞浸潤
     - name: FCV PCR
-      notes: "檢測杯狀病毒感染"
+      notes: 檢測杯狀病毒感染
   differentialDiagnoses:
     - 淋巴瘤
     - 咽部息肉
     - 嗜酸性肉芽腫
-
 treatment:
   medical:
     - 全口拔牙為最有效治療(即使僅後口炎)
@@ -61,19 +58,45 @@ treatment:
     - 抗生素:Clindamycin 5-10 mg/kg PO BID
     - 鐳射治療(輔助,昂貴)
     - 營養支持必要時餵食管
-
 prognosis:
-  general: "後口炎對治療反應較齒齦炎差。全口拔牙後約50-70%可改善,但仍可能需長期免疫抑制。單純藥物治療效果不佳,通常僅能暫時緩解。未治療會持續疼痛和體重下降。"
-
+  general: 後口炎對治療反應較齒齦炎差。全口拔牙後約50-70%可改善,但仍可能需長期免疫抑制。單純藥物治療效果不佳,通常僅能暫時緩解。未治療會持續疼痛和體重下降。
 prevention:
   - 早期診斷早期全口拔牙
   - 定期口腔檢查
   - FCV疫苗接種
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Relationship between Feline calicivirus Load, Oral Lesions, and Outcome in Feline Chronic Gingivostomatitis (Caudal Stomatitis): Retrospective Study in 104 Cats."
+    title: >-
+      Relationship between Feline calicivirus Load, Oral Lesions, and Outcome in Feline Chronic Gingivostomatitis
+      (Caudal Stomatitis): Retrospective Study in 104 Cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5724031/
     type: research
-    pmid: "29270412"
+    pmid: '29270412'
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 貓後口炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - ptyalism 相關症狀
+        - halitosis-stomatitis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 口腔檢查(麻醉下)
+          notes: 軟齶兩側、顎咽弓嚴重增生性炎症,呈鵝卵石狀或息肉樣
+        - name: 組織病理
+          notes: 淋巴濾泡增生,漿細胞浸潤
+        - name: FCV PCR
+          notes: 檢測杯狀病毒感染
+ddxSource: auto-generated

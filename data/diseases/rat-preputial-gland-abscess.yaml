@@ -3,19 +3,20 @@ nameEn: Rat Preputial Gland Abscess
 nameZh: 大鼠包皮腺膿瘍
 bodySystem: infectious
 description: 大鼠包皮腺（preputial gland）為雄性大鼠特有的皮脂腺體，位於生殖器兩側，感染時形成膿瘍，為公鼠常見的外科問題。
-
 aliases:
-  - { alias: 鼠包皮腺感染, language: zh }
-  - { alias: 包皮腺炎, language: zh }
-  - { alias: Rat preputial gland infection, language: en }
-  - { alias: Preputial gland adenitis, language: en }
-
+  - alias: 鼠包皮腺感染
+    language: zh
+  - alias: 包皮腺炎
+    language: zh
+  - alias: Rat preputial gland infection
+    language: en
+  - alias: Preputial gland adenitis
+    language: en
 species:
   - speciesCommon: rat
     speciesScientific: Rattus norvegicus
     prevalence: moderate
     notes: 僅見於未去勢公鼠。包皮腺為雄性荷爾蒙依賴性腺體，去勢後萎縮。肥胖公鼠較易發生。
-
 etiology:
   categories:
     - name: 感染性
@@ -29,7 +30,6 @@ etiology:
         - 肥胖（腺體分泌旺盛）
         - 環境潮濕不潔
         - 自我理毛不足
-
 clinicalSigns:
   early:
     - 生殖器兩側腫脹
@@ -41,21 +41,19 @@ clinicalSigns:
     - 行走不適
     - 食慾下降
     - 過度舔舐患部
-
 diagnosis:
   primaryTests:
     - name: 臨床檢查
-      notes: "生殖器兩側可觸及腫大的腺體，擠壓可排出膿性分泌物。需與腫瘤鑑別"
+      notes: 生殖器兩側可觸及腫大的腺體，擠壓可排出膿性分泌物。需與腫瘤鑑別
     - name: 細胞學檢查
-      notes: "分泌物抹片可見嗜中性球與細菌"
+      notes: 分泌物抹片可見嗜中性球與細菌
     - name: 細菌培養
-      notes: "確認致病菌及藥敏結果"
+      notes: 確認致病菌及藥敏結果
   differentialDiagnoses:
     - 包皮腺腫瘤
     - 皮下膿瘍
     - 鼠蹊部疝氣
     - 睪丸腫瘤
-
 treatment:
   medical:
     - 膿瘍切開引流並沖洗
@@ -64,12 +62,32 @@ treatment:
   surgical:
     - 去勢手術（減少荷爾蒙刺激，降低復發率）
     - 嚴重或反覆感染時可考慮腺體切除
-
 prognosis:
-  general: "適當治療後預後良好。未去勢者復發率高，建議同時進行去勢手術。併發敗血症者預後較差。"
-
+  general: 適當治療後預後良好。未去勢者復發率高，建議同時進行去勢手術。併發敗血症者預後較差。
 prevention:
   - 考慮早期去勢
   - 維持環境清潔乾燥
   - 定期檢查包皮腺區域
   - 維持適當體重
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 大鼠包皮腺膿瘍 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床檢查
+          notes: 生殖器兩側可觸及腫大的腺體，擠壓可排出膿性分泌物。需與腫瘤鑑別
+        - name: 細胞學檢查
+          notes: 分泌物抹片可見嗜中性球與細菌
+        - name: 細菌培養
+          notes: 確認致病菌及藥敏結果
+ddxSource: auto-generated

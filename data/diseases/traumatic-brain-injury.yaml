@@ -2,14 +2,18 @@ slug: traumatic-brain-injury
 nameEn: Traumatic Brain Injury
 nameZh: 創傷性腦損傷
 bodySystem: emergency
-description: 創傷性腦損傷 (traumatic brain injury, TBI) 為頭部外傷引起的腦實質損傷，常見於車禍、高處墜落與咬傷。損傷分為原發性（撞擊直接損傷）與繼發性（腦水腫、顱內壓升高、缺血）。修正 Glasgow 昏迷量表 (MGCS) 用於評估嚴重度與預後。
-
+description: >-
+  創傷性腦損傷 (traumatic brain injury, TBI) 為頭部外傷引起的腦實質損傷，常見於車禍、高處墜落與咬傷。損傷分為原發性（撞擊直接損傷）與繼發性（腦水腫、顱內壓升高、缺血）。修正 Glasgow 昏迷量表
+  (MGCS) 用於評估嚴重度與預後。
 aliases:
-  - { alias: 頭部外傷, language: zh }
-  - { alias: 腦外傷, language: zh }
-  - { alias: TBI, language: en }
-  - { alias: Head Trauma, language: en }
-
+  - alias: 頭部外傷
+    language: zh
+  - alias: 腦外傷
+    language: zh
+  - alias: TBI
+    language: en
+  - alias: Head Trauma
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓 TBI 常見於高處墜落（high-rise syndrome）與車禍。貓顱骨較薄，損傷風險較高。
-
 etiology:
   categories:
     - name: 原發性損傷
@@ -33,7 +36,6 @@ etiology:
         - 腦缺血/缺氧
         - 電解質異常
         - 癲癇
-
 clinicalSigns:
   early:
     - 意識改變（嗜睡至昏迷）
@@ -44,7 +46,6 @@ clinicalSigns:
     - 癲癇
     - 腦疝（腦幹壓迫→呼吸停止）
     - 多重器官損傷（合併外傷時）
-
 diagnosis:
   primaryTests:
     - name: 修正 Glasgow 昏迷量表 (MGCS)
@@ -57,7 +58,6 @@ diagnosis:
     - 血壓（低血壓加重繼發性損傷）
     - 血氣分析
     - 全身影像（合併外傷評估）
-
 treatment:
   principles:
     - 預防繼發性損傷
@@ -74,41 +74,88 @@ treatment:
     - 癲癇控制（levetiracetam、diazepam）
     - 避免類固醇（TBI 中無益且有害）
     - 顱骨骨折凹陷：手術減壓
-
 prognosis: TBI 預後取決於 MGCS 評分。MGCS >14 存活率 >80%。MGCS <8 存活率約 20-50%。雙側瞳孔散大固定為極差預後。多數改善發生在前 48-72 小時。殘留神經功能障礙可能持續。
-
-
 guidelineRefs:
   - sourceOrg: BMJ open
-    title: "Specialist healthcare services for concussion/mild traumatic brain injury in England: a consensus statement using modified Delphi methodology."
+    title: >-
+      Specialist healthcare services for concussion/mild traumatic brain injury in England: a consensus statement using
+      modified Delphi methodology.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10729241/
     type: consensus
-    pmid: "38070886"
+    pmid: '38070886'
     relevance: primary
   - sourceOrg: PloS one
-    title: "Guidelines for the management of a brain death donor in the rhesus macaque: A translational transplant model."
+    title: 'Guidelines for the management of a brain death donor in the rhesus macaque: A translational transplant model.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5604963/
     type: guideline
-    pmid: "28926566"
+    pmid: '28926566'
     relevance: primary
   - sourceOrg: Brain sciences
-    title: Are Sex Differences in Collegiate and High School Sports-Related Concussion Reflected in the Guidelines? A Scoping Review.
+    title: >-
+      Are Sex Differences in Collegiate and High School Sports-Related Concussion Reflected in the Guidelines? A Scoping
+      Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10526868/
     type: review
-    pmid: "37759911"
+    pmid: '37759911'
     relevance: primary
   - sourceOrg: Brain sciences
-    title: "Seizure-Related Head Injuries: A Narrative Review."
+    title: 'Seizure-Related Head Injuries: A Narrative Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11118010/
     type: review
-    pmid: "38790452"
+    pmid: '38790452'
     relevance: primary
   - sourceOrg: Epilepsia
-    title: "Commonalities in epileptogenic processes from different acute brain insults: Do they translate?"
+    title: 'Commonalities in epileptogenic processes from different acute brain insults: Do they translate?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5993212/
     type: review
-    pmid: "29247482"
+    pmid: '29247482'
     relevance: supporting
 pubmedQueries:
-  - query: '"traumatic brain injury" OR "head trauma" AND (veterinary OR canine OR feline) AND ("treatment" OR "MGCS" OR "intracranial pressure")'
+  - query: >-
+      "traumatic brain injury" OR "head trauma" AND (veterinary OR canine OR feline) AND ("treatment" OR "MGCS" OR
+      "intracranial pressure")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: coma-stupor
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 創傷性腦損傷 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - coma-stupor 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 修正 Glasgow 昏迷量表 (MGCS)
+          notes: 評估運動活動、腦幹反射與意識水平（3-18 分）。<8 分預後差
+        - name: 神經學檢查
+          notes: 瞳孔大小與反射、意識水平、姿勢反應、腦神經評估
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 頭部 CT（金標準 — 顱骨骨折、出血、腦水腫）
+        - 頭部 X-ray（顱骨骨折篩檢）
+        - 血壓（低血壓加重繼發性損傷）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 預防繼發性損傷
+        - 維持腦灌注壓
+        - 控制顱內壓
+ddxSource: auto-generated

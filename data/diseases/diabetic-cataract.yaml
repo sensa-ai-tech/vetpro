@@ -3,11 +3,11 @@ nameEn: Diabetic Cataract
 nameZh: 糖尿病性白內障
 bodySystem: endocrine
 description: 糖尿病患者因高血糖導致晶狀體滲透壓改變及代謝異常,快速形成白內障致視力喪失,犬比貓常見且進展快速。
-
 aliases:
-  - { alias: 糖尿病白內障, language: zh }
-  - { alias: Osmotic cataract, language: en }
-
+  - alias: 糖尿病白內障
+    language: zh
+  - alias: Osmotic cataract
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少發生,可能與其晶狀體醛糖還原酶活性較低有關
-
 etiology:
   categories:
     - name: 滲透壓機制
@@ -31,7 +30,6 @@ etiology:
         - 晶狀體蛋白質糖化
         - 氧化應激損傷
         - 晶狀體上皮細胞功能障礙
-
 clinicalSigns:
   early:
     - 雙眼瞳孔區呈灰白色霧狀混濁
@@ -43,23 +41,21 @@ clinicalSigns:
     - 晶狀體誘發性葡萄膜炎(眼紅、疼痛、縮瞳)
     - 續發性青光眼(眼壓升高)
     - 晶狀體脫位
-
 diagnosis:
   primaryTests:
     - name: 眼科檢查
-      notes: "裂隙燈檢查可見晶狀體皮質及核混濁,犬常呈快速進展性"
+      notes: 裂隙燈檢查可見晶狀體皮質及核混濁,犬常呈快速進展性
     - name: 眼底檢查
-      notes: "評估視網膜功能(白內障手術前必須確認視網膜健康)"
+      notes: 評估視網膜功能(白內障手術前必須確認視網膜健康)
     - name: 眼壓測量
-      notes: "排除續發性青光眼"
+      notes: 排除續發性青光眼
     - name: 視網膜電圖(ERG)
-      notes: "評估視網膜功能,預測手術後視力恢復可能性"
+      notes: 評估視網膜功能,預測手術後視力恢復可能性
   differentialDiagnoses:
     - 老年性白內障
     - 遺傳性白內障
     - 外傷性白內障
     - 葡萄膜炎續發白內障
-
 treatment:
   medical:
     - 嚴格控制血糖(胰島素治療調整,目標血糖100-250 mg/dL)
@@ -68,39 +64,57 @@ treatment:
     - 術後抗發炎及抗生素(Prednisolone acetate 1% + Tobramycin 0.3% 眼藥水 QID 逐漸減量)
     - 晶狀體誘發性葡萄膜炎治療(局部類固醇 + NSAIDs眼藥水)
     - 若無法手術,維持內科治療控制葡萄膜炎
-
 prognosis:
-  general: "手術成功率約85-90%,多數犬可恢復視力;糖尿病控制不佳或併發嚴重葡萄膜炎、青光眼者預後保守。貓因發生率低,預後較佳。"
-
+  general: 手術成功率約85-90%,多數犬可恢復視力;糖尿病控制不佳或併發嚴重葡萄膜炎、青光眼者預後保守。貓因發生率低,預後較佳。
 prevention:
   - 嚴格控制血糖於診斷初期
   - 定期眼科檢查監測白內障形成
   - 早期發現白內障時積極控制血糖可能延緩進展
-
-
 guidelineRefs:
   - sourceOrg: Progress in retinal and eye research
-    title: "Aldose reductase, ocular diabetic complications and the development of topical Kinostat(&#xae;)."
+    title: Aldose reductase, ocular diabetic complications and the development of topical Kinostat(&#xae;).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11844803/
     type: review
-    pmid: "27102270"
+    pmid: '27102270'
   - sourceOrg: iScience
     title: Icariin interacts with IGFBP3 to alleviate diabetic cataract through PI3K/AKT signaling pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12226389/
     type: research
-    pmid: "40620905"
-  - sourceOrg: "Investigative ophthalmology &amp; visual science"
+    pmid: '40620905'
+  - sourceOrg: Investigative ophthalmology &amp; visual science
     title: SIRT1 Inhibits High Glucose-Induced TXNIP/NLRP3 Inflammasome Activation and Cataract Formation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10007902/
     type: research
-    pmid: "36881408"
+    pmid: '36881408'
   - sourceOrg: International journal of ophthalmology
     title: Astragalin attenuates diabetic cataracts via inhibiting aldose reductase activity in rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10398533/
     type: research
-    pmid: "37602342"
+    pmid: '37602342'
   - sourceOrg: Journal of biomedical science
     title: Pre-hyperglycemia immune cell trafficking underlies subclinical diabetic cataractogenesis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9872438/
     type: research
-    pmid: "36694206"
+    pmid: '36694206'
+associatedSymptoms:
+  - symptomId: blindness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 糖尿病性白內障 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 眼科檢查
+          notes: 裂隙燈檢查可見晶狀體皮質及核混濁,犬常呈快速進展性
+        - name: 眼底檢查
+          notes: 評估視網膜功能(白內障手術前必須確認視網膜健康)
+        - name: 眼壓測量
+          notes: 排除續發性青光眼
+ddxSource: auto-generated

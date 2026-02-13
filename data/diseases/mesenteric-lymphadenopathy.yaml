@@ -3,11 +3,11 @@ nameEn: Mesenteric Lymphadenopathy
 nameZh: 腸系膜淋巴結病變
 bodySystem: gastrointestinal
 description: 腸系膜淋巴結腫大,可能因發炎、感染或腫瘤引起。超音波常見偶發性發現,需評估原發病因。
-
 aliases:
-  - { alias: 腸系膜淋巴結腫大, language: zh }
-  - { alias: Mesenteric Lymph Node Enlargement, language: en }
-
+  - alias: 腸系膜淋巴結腫大
+    language: zh
+  - alias: Mesenteric Lymph Node Enlargement
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 常見於 IBD、淋巴瘤、FIP
-
 etiology:
   categories:
     - name: 反應性
@@ -29,7 +28,6 @@ etiology:
     - name: 感染性
       examples:
         - FIP (貓)、真菌感染
-
 clinicalSigns:
   early:
     - 可能無症狀 (偶發現)
@@ -37,44 +35,70 @@ clinicalSigns:
     - 腹瀉、嘔吐 (若有腸道疾病)
     - 腹部腫塊 (嚴重腫大時)
     - 體重減輕
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "淋巴結大小、回音性、血流"
+      notes: 淋巴結大小、回音性、血流
     - name: 細針抽吸細胞學
-      notes: "區分反應性或腫瘤性"
+      notes: 區分反應性或腫瘤性
     - name: 組織切片
-      notes: "確診淋巴瘤或其他腫瘤"
+      notes: 確診淋巴瘤或其他腫瘤
   differentialDiagnoses:
     - IBD
     - 淋巴瘤
     - 轉移性腫瘤
     - FIP
-
 treatment:
   medical:
     - 治療原發病因
     - 化療 (淋巴瘤)
     - 抗發炎治療 (IBD)
-
 prognosis:
-  general: "取決於原發病因;反應性預後良好;淋巴瘤預後謹慎;轉移性腫瘤預後不良"
-
+  general: 取決於原發病因;反應性預後良好;淋巴瘤預後謹慎;轉移性腫瘤預後不良
 prevention:
   - 早期診斷及治療腸道疾病
-
-
 guidelineRefs:
   - sourceOrg: Open veterinary journal
     title: A comprehensive review of paratuberculosis in animals and its implications for public health.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11682747/
     type: review
-    pmid: "39737030"
+    pmid: '39737030'
     relevance: primary
   - sourceOrg: Comparative medicine
     title: Pancreatitis and Systemic Coronavirus Infection in a Ferret (Mustela putorius furo).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6008714/
     type: case-report
-    pmid: "29776456"
+    pmid: '29776456'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: uncommon
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 腸系膜淋巴結病變 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - weight-loss 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 淋巴結大小、回音性、血流
+        - name: 細針抽吸細胞學
+          notes: 區分反應性或腫瘤性
+        - name: 組織切片
+          notes: 確診淋巴瘤或其他腫瘤
+ddxSource: auto-generated

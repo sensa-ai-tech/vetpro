@@ -3,11 +3,11 @@ nameEn: Vascular Ring Anomaly Detail
 nameZh: 血管環異常（詳細）
 bodySystem: vascular
 description: 胚胎期主動脈弓發育異常形成環狀結構壓迫食道，導致巨食道及吞嚥困難。最常見為持續性右主動脈弓（PRAA），多見於幼犬。
-
 aliases:
-  - { alias: 血管環壓迫症候群, language: zh }
-  - { alias: Vascular Ring Compression, language: en }
-
+  - alias: 血管環壓迫症候群
+    language: zh
+  - alias: Vascular Ring Compression
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓極罕見，文獻報告極少
-
 etiology:
   categories:
     - name: 先天性主動脈弓異常
@@ -26,7 +25,6 @@ etiology:
         - 雙主動脈弓
         - 異常左鎖骨下動脈
         - 持續性動脈導管合併 PRAA
-
 clinicalSigns:
   early:
     - 離乳期開始出現吞嚥困難
@@ -37,53 +35,79 @@ clinicalSigns:
     - 巨食道（胸前段擴張）
     - 咳嗽、呼吸困難、發燒
     - 嚴重營養不良
-
 diagnosis:
   primaryTests:
     - name: 胸腔 X 光
-      notes: "可見胸前段食道擴張、心底部血管異常、可能有吸入性肺炎"
+      notes: 可見胸前段食道擴張、心底部血管異常、可能有吸入性肺炎
     - name: 食道鋇劑造影
-      notes: "確認食道狹窄位置（心底部水平）及擴張程度"
+      notes: 確認食道狹窄位置（心底部水平）及擴張程度
     - name: 胸腔 CT 血管攝影
-      notes: "明確診斷血管環類型及與食道關係"
+      notes: 明確診斷血管環類型及與食道關係
   differentialDiagnoses:
     - 先天性巨食道
     - 食道異物
     - 食道狹窄
     - 重症肌無力
-
 treatment:
   medical:
     - 外科血管環切開術（切斷異常血管韌帶或動脈導管）
     - 術前支持：直立餵食、流質或半流質飲食
     - 吸入性肺炎治療：抗生素（Amoxicillin-Clavulanate 12.5-25 mg/kg PO BID）
     - 術後食道功能恢復需數週至數月，部分病例可能永久巨食道
-
 prognosis:
-  general: "預後取決於手術時機及巨食道嚴重程度。早期診斷（3-6 月齡前）並手術治療預後良好（80% 改善），但延遲診斷或嚴重巨食道者預後保留，終生需特殊餵食管理。"
-
+  general: 預後取決於手術時機及巨食道嚴重程度。早期診斷（3-6 月齡前）並手術治療預後良好（80% 改善），但延遲診斷或嚴重巨食道者預後保留，終生需特殊餵食管理。
 prevention:
   - 好發品種繁殖前篩檢家族史
   - 幼犬出現吞嚥困難應儘早影像學檢查
   - 避免繁殖已確診個體
-
-
 guidelineRefs:
   - sourceOrg: Cells
     title: Contribution of Adventitia-Derived Stem and Progenitor Cells to New Vessel Formation in Tumors.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8304670/
     type: research
-    pmid: "34359889"
+    pmid: '34359889'
     relevance: supporting
   - sourceOrg: Molecular medicine reports
-    title: Protective effect of troxerutin and cerebroprotein hydrolysate injection on cerebral ischemia through inhibition of oxidative stress and promotion of angiogenesis in rats.
+    title: >-
+      Protective effect of troxerutin and cerebroprotein hydrolysate injection on cerebral ischemia through inhibition
+      of oxidative stress and promotion of angiogenesis in rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6423560/
     type: research
-    pmid: "30816516"
+    pmid: '30816516'
     relevance: supporting
   - sourceOrg: Experimental biology and medicine (Maywood, N.J.)
     title: Levistilide A inhibits angiogenesis in liver fibrosis via vascular endothelial growth factor signaling pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5407594/
     type: research
-    pmid: "28440736"
+    pmid: '28440736'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 血管環異常（詳細） 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - dysphagia 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸腔 X 光
+          notes: 可見胸前段食道擴張、心底部血管異常、可能有吸入性肺炎
+        - name: 食道鋇劑造影
+          notes: 確認食道狹窄位置（心底部水平）及擴張程度
+        - name: 胸腔 CT 血管攝影
+          notes: 明確診斷血管環類型及與食道關係
+ddxSource: auto-generated

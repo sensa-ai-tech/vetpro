@@ -2,12 +2,14 @@ slug: lagenidiosis
 nameEn: Lagenidiosis
 nameZh: 拉根菌感染
 bodySystem: infectious
-description: 拉根菌感染 (lagenidiosis) 由水生卵菌 Lagenidium giganteum（犬致病株）引起的嚴重真菌樣感染。主要感染犬，引起進行性皮膚/皮下病變或播散性疾病。好發於美國東南部。與 pythiosis 臨床表現相似但預後更差。
-
+description: >-
+  拉根菌感染 (lagenidiosis) 由水生卵菌 Lagenidium giganteum（犬致病株）引起的嚴重真菌樣感染。主要感染犬，引起進行性皮膚/皮下病變或播散性疾病。好發於美國東南部。與 pythiosis
+  臨床表現相似但預後更差。
 aliases:
-  - { alias: 拉格尼迪菌感染, language: zh }
-  - { alias: Lagenidium Infection, language: en }
-
+  - alias: 拉格尼迪菌感染
+    language: zh
+  - alias: Lagenidium Infection
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓感染極罕見，僅有零星報告。臨床特徵類似犬。
-
 etiology:
   categories:
     - name: 病原特性
@@ -29,7 +30,6 @@ etiology:
         - 游動孢子經皮膚侵入
         - 血管侵襲性強
         - 可血行播散至肺、骨骼、大血管
-
 clinicalSigns:
   early:
     - 四肢或軀幹進行性皮膚/皮下腫塊
@@ -41,7 +41,6 @@ clinicalSigns:
     - 水腫（淋巴管阻塞或血管侵犯）
     - 播散至肺、骨骼
     - 大血管病變可引起致命性出血
-
 diagnosis:
   primaryTests:
     - name: 組織病理學
@@ -52,7 +51,6 @@ diagnosis:
     - 真菌培養（需特殊培養基）
     - 影像學（評估播散範圍）
     - 血清學
-
 treatment:
   principles:
     - 手術切除為主要治療手段
@@ -66,21 +64,58 @@ treatment:
     - 免疫治療（實驗性）
     - 播散型預後極差
     - 避免接觸高風險水源
-
 prognosis: 拉根菌感染預後極差。局部型早期廣泛切除或截肢可能治癒，但復發率高。播散型幾乎無法治癒。與 pythiosis 相比預後更差，因血管侵襲性更強且播散傾向更高。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Invasive Fungal Infections and Oomycoses in Cats: 1. Diagnostic approach."
+    title: 'Invasive Fungal Infections and Oomycoses in Cats: 1. Diagnostic approach.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10949879/
     type: review
-    pmid: "38189288"
+    pmid: '38189288'
   - sourceOrg: Journal of feline medicine and surgery
     title: Invasive fungal infections and oomycoses in cats 2. Antifungal therapy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10949877/
     type: review
-    pmid: "38189264"
+    pmid: '38189264'
 pubmedQueries:
   - query: '"lagenidiosis" OR "Lagenidium" AND (veterinary OR canine) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 拉根菌感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - peripheral-oedema 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 組織病理學
+          notes: 寬大、不規則分隔的菌絲。GMS 或 PAS 染色陽性。形態學上與 Pythium 相似
+        - name: 免疫組織化學或 PCR
+          notes: 區分 Lagenidium 與 Pythium 的關鍵。種特異性抗體或分子鑑定
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 真菌培養（需特殊培養基）
+        - 影像學（評估播散範圍）
+        - 血清學
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術切除為主要治療手段
+        - 傳統抗真菌藥物效果差（非真正真菌）
+        - 早期積極手術可能為唯一治癒機會
+ddxSource: auto-generated

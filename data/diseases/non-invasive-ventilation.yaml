@@ -3,11 +3,11 @@ nameEn: Non-Invasive Ventilation
 nameZh: 非侵入性通氣
 bodySystem: emergency
 description: 經面罩或鼻導管提供呼吸支持,避免插管。適用於輕中度呼吸衰竭。
-
 aliases:
-  - { alias: NIV, language: zh }
-  - { alias: CPAP/BiPAP, language: en }
-
+  - alias: NIV
+    language: zh
+  - alias: CPAP/BiPAP
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,26 +17,22 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 同犬,耐受性較差
-
 etiology:
   categories:
     - name: 適應症
       examples:
         - 心源性肺水腫、肺炎、上呼吸道阻塞
-
 clinicalSigns:
   early:
     - 呼吸困難、血氧下降
   progressive:
     - 呼吸衰竭
-
 diagnosis:
   primaryTests:
     - name: 血氧監測
-      notes: "SpO2<92%考慮通氣支持"
+      notes: SpO2<92%考慮通氣支持
   differentialDiagnoses:
     - 無
-
 treatment:
   medical:
     - 面罩或鼻導管給氧
@@ -45,42 +41,56 @@ treatment:
     - 監測血氧、呼吸功
     - 改善後逐漸減量
     - 失敗則改插管
-
 prognosis:
-  general: "可避免插管,但需患者配合。失敗率30-50%。"
-
+  general: 可避免插管,但需患者配合。失敗率30-50%。
 prevention:
   - 密切監測,及時調整
-
-
 guidelineRefs:
   - sourceOrg: Critical care (London, England)
-    title: "Treatment of the lung injury of drowning: a systematic review."
+    title: 'Treatment of the lung injury of drowning: a systematic review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8287554/
     type: review
-    pmid: "34281609"
+    pmid: '34281609'
     relevance: primary
   - sourceOrg: Heliyon
     title: Non-invasive ventilation restores the gut microbiota in rats with acute heart failure.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11332900/
     type: research
-    pmid: "39161838"
+    pmid: '39161838'
     relevance: supporting
   - sourceOrg: Critical care (London, England)
-    title: "36th International Symposium on Intensive Care and Emergency Medicine : Brussels, Belgium. 15-18 March 2016."
+    title: '36th International Symposium on Intensive Care and Emergency Medicine : Brussels, Belgium. 15-18 March 2016.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5493079/
     type: research
-    pmid: "27885969"
+    pmid: '27885969'
     relevance: supporting
   - sourceOrg: BMC veterinary research
     title: Proposed protocol for utilising high-flow nasal oxygen therapy in treatment of dogs hospitalised due to pneumonia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10512590/
     type: research
-    pmid: "37735404"
+    pmid: '37735404'
     relevance: supporting
   - sourceOrg: Frontiers in neurology
     title: Identification and validation of ferroptosis-related hub genes in obstructive sleep apnea syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10018165/
     type: research
-    pmid: "36937508"
+    pmid: '36937508'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 非侵入性通氣 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血氧監測
+          notes: SpO2<92%考慮通氣支持
+ddxSource: auto-generated

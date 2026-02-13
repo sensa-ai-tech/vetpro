@@ -3,17 +3,16 @@ nameEn: Neonatal Puppy Care
 nameZh: 新生幼犬照護
 bodySystem: other
 description: 新生幼犬(出生至2週齡)的綜合照護,包括保溫、餵食、排泄刺激、健康監測。新生幼犬體溫調節、免疫功能不全,需密集照護確保存活及健康成長。
-
 aliases:
-  - { alias: 新生犬照護, language: zh }
-  - { alias: Neonatal puppy management, language: en }
-
+  - alias: 新生犬照護
+    language: zh
+  - alias: Neonatal puppy management
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 所有新生幼犬都需適當照護
-
 etiology:
   categories:
     - name: 新生幼犬特徵
@@ -22,26 +21,23 @@ etiology:
         - 免疫系統未成熟
         - 無法自主排泄(需刺激)
         - 眼耳未開(10-14天開眼)
-
 clinicalSigns:
   early:
     - 健康幼犬:頻繁吸乳、安靜睡眠、體重每日增加5-10%
   progressive:
     - 異常徵兆:哭鬧不停、體重未增、低體溫
-
 diagnosis:
   primaryTests:
     - name: 每日體重監測
-      notes: "體重未增或減輕為警訊"
+      notes: 體重未增或減輕為警訊
     - name: 體溫監測
-      notes: "第1週35-36°C,第2-3週36-37°C,第4週後37-38°C"
+      notes: 第1週35-36°C,第2-3週36-37°C,第4週後37-38°C
     - name: 血糖監測
-      notes: "低血糖常見,需密切監測"
+      notes: 低血糖常見,需密切監測
   differentialDiagnoses:
     - 新生幼犬症候群(fading puppy)
     - 低血糖
     - 低體溫
-
 treatment:
   medical:
     - 保溫:環境溫度第1週30-32°C,逐週降低
@@ -49,46 +45,66 @@ treatment:
     - 餵食:每2-4小時,母乳或代乳
     - 排泄刺激:溫濕毛巾輕擦生殖器及肛門
     - 低血糖:5-10%葡萄糖水口服或皮下
-
 prognosis:
-  general: "適當照護可提高存活率。新生期死亡率可達10-30%。"
-
+  general: 適當照護可提高存活率。新生期死亡率可達10-30%。
 prevention:
   - 確保初乳攝取
   - 維持適當環境溫度
   - 每日體重監測
   - 觀察吸乳及活力
   - 母犬健康及營養良好
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
-    title: "RECOVER Guidelines: Newborn Resuscitation in Dogs and Cats. Clinical Guidelines."
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
+    title: 'RECOVER Guidelines: Newborn Resuscitation in Dogs and Cats. Clinical Guidelines.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12374490/
     type: guideline
-    pmid: "40847797"
+    pmid: '40847797'
     relevance: primary
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
-    title: "RECOVER Guidelines: Newborn Resuscitation in Dogs and Cats. Evidence and Knowledge Gap Analysis With Treatment Recommendations."
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
+    title: >-
+      RECOVER Guidelines: Newborn Resuscitation in Dogs and Cats. Evidence and Knowledge Gap Analysis With Treatment
+      Recommendations.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12374491/
     type: review
-    pmid: "40847798"
+    pmid: '40847798'
     relevance: primary
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Neonatal Clinical Assessment of the Puppy and Kitten: How to Identify Newborns at Risk?"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Neonatal Clinical Assessment of the Puppy and Kitten: How to Identify Newborns at Risk?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11640698/
     type: review
-    pmid: "39682383"
+    pmid: '39682383'
     relevance: primary
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Fading kitten syndrome: Factors predisposing to 'faders' and treatment options."
+    title: 'Fading kitten syndrome: Factors predisposing to ''faders'' and treatment options.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10845402/
     type: review
-    pmid: "35209774"
+    pmid: '35209774'
     relevance: primary
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Dead or Alive? A Review of Perinatal Factors That Determine Canine Neonatal Viability.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9179255/
     type: review
-    pmid: "35681866"
+    pmid: '35681866'
     relevance: primary
+associatedSymptoms:
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 新生幼犬照護 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - hypothermia-sign 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 每日體重監測
+          notes: 體重未增或減輕為警訊
+        - name: 體溫監測
+          notes: 第1週35-36°C,第2-3週36-37°C,第4週後37-38°C
+        - name: 血糖監測
+          notes: 低血糖常見,需密切監測
+ddxSource: auto-generated

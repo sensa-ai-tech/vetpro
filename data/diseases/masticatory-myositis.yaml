@@ -3,24 +3,28 @@ nameEn: Masticatory Muscle Myositis
 nameZh: 咀嚼肌炎
 bodySystem: immunology
 description: 犬特有的免疫介導性炎症疾病，選擇性攻擊咀嚼肌群（顳肌、咬肌、翼狀肌）中的 Type 2M 肌纖維。急性期表現為咀嚼肌腫脹與開口疼痛，慢性期則出現肌肉萎縮與牙關緊閉。
-
 aliases:
-  - { alias: MMM, language: en }
-  - { alias: 咀嚼肌肌炎, language: zh }
-  - { alias: 嚼肌炎, language: zh }
-  - { alias: Masticatory Myositis, language: en }
-  - { alias: Eosinophilic Myositis, language: en }
-
+  - alias: MMM
+    language: en
+  - alias: 咀嚼肌肌炎
+    language: zh
+  - alias: 嚼肌炎
+    language: zh
+  - alias: Masticatory Myositis
+    language: en
+  - alias: Eosinophilic Myositis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: uncommon
-    notes: 大型犬好發，尤其 German Shepherd、Golden Retriever、Labrador Retriever、Cavalier King Charles Spaniel、Rottweiler。平均發病年齡約 3 歲，但各年齡皆可發生。
+    notes: >-
+      大型犬好發，尤其 German Shepherd、Golden Retriever、Labrador Retriever、Cavalier King Charles Spaniel、Rottweiler。平均發病年齡約 3
+      歲，但各年齡皆可發生。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓極罕見，文獻僅有零星個案報告。貓咀嚼肌是否含 2M 纖維尚存爭議。
-
 etiology:
   categories:
     - name: 免疫病理機轉
@@ -34,7 +38,6 @@ etiology:
         - 品種遺傳易感性
         - 可能與 MHC (主要組織相容性複合體) 相關
         - 環境觸發因子不明
-
 clinicalSigns:
   early:
     - 咀嚼肌腫脹（顳肌、咬肌雙側對稱性腫大）
@@ -53,23 +56,21 @@ clinicalSigns:
     - 吞嚥困難
     - 眼球內陷 (enophthalmos，肌肉萎縮後)
     - 營養不良
-
 diagnosis:
   primaryTests:
     - name: 2M 抗體 ELISA
-      notes: "檢測抗 Type 2M 肌纖維抗體，敏感度約 85-90%，特異度高。為目前首選診斷方法 (UC San Diego CMMS 實驗室)"
+      notes: 檢測抗 Type 2M 肌纖維抗體，敏感度約 85-90%，特異度高。為目前首選診斷方法 (UC San Diego CMMS 實驗室)
     - name: 咀嚼肌切片
-      notes: "病理特徵：淋巴球漿細胞性或嗜酸性球性浸潤、肌纖維壞死與再生、纖維化（慢性）。需在免疫抑制治療前採樣"
+      notes: 病理特徵：淋巴球漿細胞性或嗜酸性球性浸潤、肌纖維壞死與再生、纖維化（慢性）。需在免疫抑制治療前採樣
   imaging:
     - name: 頭部 MRI
-      notes: "急性期咀嚼肌信號增強（T2 高信號、顯影增強）。可排除腫瘤等其他病因"
+      notes: 急性期咀嚼肌信號增強（T2 高信號、顯影增強）。可排除腫瘤等其他病因
     - name: 頭部 CT
-      notes: "評估肌肉體積變化與排除骨性牙關緊閉"
+      notes: 評估肌肉體積變化與排除骨性牙關緊閉
   additional:
     - CK (肌酸激酶，急性期可升高，但非特異)
     - CBC (嗜酸性球可能升高)
     - 全身肌電圖 EMG (僅咀嚼肌出現自發性活動)
-
 treatment:
   principles:
     - 早期積極免疫抑制是關鍵
@@ -86,31 +87,72 @@ treatment:
     - 軟食或流質飲食 (急性期無法張口時)
     - 嚴重牙關緊閉可能需麻醉下輕柔打開並開始物理治療
     - 定期監測 CK 與 2M 抗體以評估治療反應
-
 prognosis: 急性期若及時開始免疫抑制治療，預後良好，多數犬可恢復正常開口功能。延誤治療導致纖維化者預後差，永久性牙關緊閉不可逆。約 25-30% 在類固醇減量過程中復發。需要長期用藥管理。大多數接受適當治療的犬可維持良好生活品質。
-
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Internal Medicine
-    title: "Masticatory muscle myositis: pathogenesis, diagnosis, and treatment"
+    title: 'Masticatory muscle myositis: pathogenesis, diagnosis, and treatment'
     url: https://pubmed.ncbi.nlm.nih.gov/15209441/
     type: review
-    pmid: "15209441"
+    pmid: '15209441'
   - sourceOrg: Neuromuscular Disorders
-    title: "Immune-mediated canine masticatory muscle myositis"
+    title: Immune-mediated canine masticatory muscle myositis
     url: https://pubmed.ncbi.nlm.nih.gov/16005651/
     type: review
-    pmid: "16005651"
+    pmid: '16005651'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Immunohistochemical identification of 2M fibers in canine masticatory muscle myositis"
+    title: Immunohistochemical identification of 2M fibers in canine masticatory muscle myositis
     url: https://pubmed.ncbi.nlm.nih.gov/1740729/
     type: original-research
-    pmid: "1740729"
-
+    pmid: '1740729'
 pubmedQueries:
   - query: '"masticatory myositis" OR "masticatory muscle myositis" AND (dog OR canine) AND ("treatment" OR "diagnosis")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "MUS"
-  sectionTitle: "MASTICATORY MYOSITIS"
+  chapter: MUS
+  sectionTitle: MASTICATORY MYOSITIS
   pdfPage: 1242
+diagnosticAlgorithm:
+  title: 咀嚼肌炎 診斷流程
+  steps:
+    - step: 1
+      action: 臨床評估
+      details: 評估開口程度、咀嚼肌體積和對稱性
+      findings:
+        - 開口受限
+        - 肌肉腫脹或萎縮
+        - 觸診疼痛
+    - step: 2
+      action: 2M抗體檢測
+      details: 血清送檢2M纖維抗體免疫螢光試驗
+      findings:
+        - 陽性（確診）
+        - 陰性（考慮其他鑑別診斷或已用類固醇）
+    - step: 3
+      action: 輔助檢查
+      details: CBC、CK、必要時肌肉活檢
+      findings:
+        - CK升高
+        - 嗜酸性球增多
+        - 活檢見肌纖維壞死和炎症浸潤
+    - step: 4
+      action: 免疫抑制治療
+      details: 開始免疫抑制劑量prednisone並追蹤反應
+      findings:
+        - 4週內改善
+        - 無改善需重新評估診斷
+clinicalPearls:
+  - 2M抗體檢測特異度100%，陽性即可確診
+  - 開始免疫抑制治療前應先採血檢測，類固醇可能造成假陰性
+  - 治療目標是抑制免疫反應並在纖維化發生前恢復肌肉功能
+monitoringItems:
+  - 每2-4週評估開口角度改善
+  - 定期CK監測（反映肌肉損傷程度）
+  - 類固醇副作用監測（PU/PD、肝指數）
+  - 減藥期間密切觀察復發徵象
+associatedSymptoms:
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+ddxSource: book

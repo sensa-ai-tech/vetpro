@@ -3,13 +3,15 @@ nameEn: Dental Prophylaxis Importance
 nameZh: 牙科預防保健重要性
 bodySystem: dental
 description: 犬貓定期牙科保健的重要性及實施方式。牙周病為最常見疾病之一,不僅影響口腔健康,還可導致全身性併發症。定期洗牙、居家口腔照護及早期治療為關鍵。
-
 aliases:
-  - { alias: 牙齒保健, language: zh }
-  - { alias: Dental prophylaxis, language: en }
-  - { alias: Dental cleaning, language: en }
-  - { alias: Periodontal disease prevention, language: en }
-
+  - alias: 牙齒保健
+    language: zh
+  - alias: Dental prophylaxis
+    language: en
+  - alias: Dental cleaning
+    language: en
+  - alias: Periodontal disease prevention
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓牙周病及齒吸收病變常見,3歲以上70%貓有口腔疾病
-
 etiology:
   categories:
     - name: 口腔疾病類型
@@ -34,7 +35,6 @@ etiology:
         - 細菌性心內膜炎風險
         - 肝腎功能影響
         - 慢性疼痛及食慾降低
-
 clinicalSigns:
   early:
     - 口臭
@@ -45,20 +45,18 @@ clinicalSigns:
     - 牙齦出血
     - 牙齒鬆動或脫落
     - 面部腫脹(齒根膿瘍)
-
 diagnosis:
   primaryTests:
     - name: 口腔檢查
-      notes: "評估牙齦炎、牙結石嚴重度、牙齒鬆動度"
+      notes: 評估牙齦炎、牙結石嚴重度、牙齒鬆動度
     - name: 牙科X光(dental radiograph)
-      notes: "麻醉下評估齒根及齒槽骨健康,必要檢查"
+      notes: 麻醉下評估齒根及齒槽骨健康,必要檢查
     - name: 牙周探測
-      notes: "測量牙周囊袋深度,評估牙周病嚴重度"
+      notes: 測量牙周囊袋深度,評估牙周病嚴重度
   differentialDiagnoses:
     - 口腔腫瘤
     - 口炎(貓)
     - 自體免疫性口腔疾病
-
 treatment:
   medical:
     - 全身麻醉下專業洗牙:超音波洗牙+齒下刮治+拋光
@@ -67,10 +65,8 @@ treatment:
     - 止痛藥:洗牙或拔牙後(meloxicam、buprenorphine)
     - 居家照護:每日刷牙(最有效)、牙科咀嚼玩具、口腔保健飼料
     - 定期洗牙頻率:每6-12個月(依個體狀況)
-
 prognosis:
-  general: "早期牙齦炎可逆,但進展至牙周炎會造成不可逆齒槽骨流失。定期洗牙及居家照護可顯著改善口腔健康。"
-
+  general: 早期牙齦炎可逆,但進展至牙周炎會造成不可逆齒槽骨流失。定期洗牙及居家照護可顯著改善口腔健康。
 prevention:
   - 每日刷牙(使用寵物專用牙膏,勿用人用)
   - 定期專業洗牙(每6-12個月或依需要)
@@ -78,26 +74,54 @@ prevention:
   - 考慮使用口腔保健飼料(VOHC認證)
   - 幼年時建立刷牙習慣
   - 定期獸醫口腔檢查
-
-
 guidelineRefs:
   - sourceOrg: Pathogens (Basel, Switzerland)
     title: An Overview of the Most Significant Zoonotic Viral Pathogens Transmitted from Animal to Human in Saudi Arabia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6471281/
     type: review
-    pmid: "30813309"
+    pmid: '30813309'
   - sourceOrg: Pathogens (Basel, Switzerland)
-    title: "Amoxicillin-Resistant Streptococci Carriage in the Mouths of Children: A Systematic Review and Meta-Analysis."
+    title: 'Amoxicillin-Resistant Streptococci Carriage in the Mouths of Children: A Systematic Review and Meta-Analysis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9609730/
     type: review
-    pmid: "36297172"
+    pmid: '36297172'
   - sourceOrg: Frontiers in veterinary science
     title: Most common diagnoses and antibiotics used in South American Camelid patients at a university clinic in Austria.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10588649/
     type: research
-    pmid: "37869490"
+    pmid: '37869490'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Variation in knowledge, attitude, and practices toward antibiotic use among diplomates of the American Veterinary Dental College: a survey-based study."
+    title: >-
+      Variation in knowledge, attitude, and practices toward antibiotic use among diplomates of the American Veterinary
+      Dental College: a survey-based study.
     url: https://pubmed.ncbi.nlm.nih.gov/37696501/
     type: research
-    pmid: "37696501"
+    pmid: '37696501'
+associatedSymptoms:
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: common
+diagnosticAlgorithm:
+  title: 牙科預防保健重要性 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dysphagia 相關症狀
+        - ptyalism 相關症狀
+        - halitosis-stomatitis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 口腔檢查
+          notes: 評估牙齦炎、牙結石嚴重度、牙齒鬆動度
+        - name: 牙科X光(dental radiograph)
+          notes: 麻醉下評估齒根及齒槽骨健康,必要檢查
+        - name: 牙周探測
+          notes: 測量牙周囊袋深度,評估牙周病嚴重度
+ddxSource: auto-generated

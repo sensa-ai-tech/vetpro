@@ -3,11 +3,11 @@ nameEn: Chronic Vomiting Diagnostic Approach
 nameZh: 慢性嘔吐診斷策略
 bodySystem: gastrointestinal
 description: 慢性嘔吐 (持續 > 1-2 週) 的系統性診斷方法,需區分胃腸道或非胃腸道原因,並依序排除各種可能病因。
-
 aliases:
-  - { alias: 慢性嘔吐鑑別, language: zh }
-  - { alias: Chronic Vomiting Workup, language: en }
-
+  - alias: 慢性嘔吐鑑別
+    language: zh
+  - alias: Chronic Vomiting Workup
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 常見原因包含毛球、IBD、腎衰竭、甲亢、胰臟炎
-
 etiology:
   categories:
     - name: 胃腸道
@@ -32,7 +31,6 @@ etiology:
     - name: 神經性
       examples:
         - 腦部疾病、前庭疾病
-
 clinicalSigns:
   early:
     - 嘔吐 > 1-2 週
@@ -41,61 +39,89 @@ clinicalSigns:
     - 體重減輕
     - 食慾下降
     - 脫水
-
 diagnosis:
   primaryTests:
     - name: 血液檢查
-      notes: "CBC, 生化, T4 (貓), fPLI/cPLI, ACTH"
+      notes: CBC, 生化, T4 (貓), fPLI/cPLI, ACTH
     - name: 尿液檢查
-      notes: "評估腎功能"
+      notes: 評估腎功能
     - name: 腹部 X 光
-      notes: "評估異物、腸阻塞"
+      notes: 評估異物、腸阻塞
     - name: 腹部超音波
-      notes: "評估胃腸道、胰臟、肝臟"
+      notes: 評估胃腸道、胰臟、肝臟
     - name: 內視鏡檢查
-      notes: "直視胃腸道,取組織切片"
+      notes: 直視胃腸道,取組織切片
   differentialDiagnoses:
     - 依診斷流程逐步排除
-
 treatment:
   medical:
     - 依原發病因治療
     - 支持性治療: 止吐藥、補液
     - 飲食管理: 低脂、易消化
     - 胃保護藥 (PPI, Sucralfate)
-
 prognosis:
-  general: "取決於原發病因;飲食性或代謝性可逆病因預後良好;腫瘤性預後不良"
-
+  general: 取決於原發病因;飲食性或代謝性可逆病因預後良好;腫瘤性預後不良
 prevention:
   - 適當飲食管理
   - 避免異物攝入
   - 定期健康檢查 (老年貓)
-
-
 guidelineRefs:
-  - sourceOrg: "Veterinary research forum : an international quarterly journal"
-    title: "A review of inflammatory bowel diseases in humans and pets: treatment strategies."
+  - sourceOrg: 'Veterinary research forum : an international quarterly journal'
+    title: 'A review of inflammatory bowel diseases in humans and pets: treatment strategies.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12854167/
     type: review
-    pmid: "41623954"
+    pmid: '41623954'
   - sourceOrg: Italian journal of pediatrics
     title: Pharmacological interventions on early functional gastrointestinal disorders.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4947301/
     type: review
-    pmid: "27423188"
+    pmid: '27423188'
   - sourceOrg: BMC veterinary research
-    title: "Functional dyspepsia: from human to dog, a retrospective study of 29 cases illustrating a complex entity."
+    title: 'Functional dyspepsia: from human to dog, a retrospective study of 29 cases illustrating a complex entity.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12512554/
     type: research
-    pmid: "41074059"
+    pmid: '41074059'
   - sourceOrg: Scientific reports
-    title: Efficacy of esophageal balloon dilatation with Botox injection in children with achalasia referred to a tertiary care center.
+    title: >-
+      Efficacy of esophageal balloon dilatation with Botox injection in children with achalasia referred to a tertiary
+      care center.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12378198/
     type: research
-    pmid: "40854912"
+    pmid: '40854912'
   - sourceOrg: Research in veterinary science
-    title: "Prevalence of inflammatory versus neoplastic lesions in dogs with chronic gastrointestinal signs undergoing gastroduodenoscopy: 195 cases (2007-2015)."
+    title: >-
+      Prevalence of inflammatory versus neoplastic lesions in dogs with chronic gastrointestinal signs undergoing
+      gastroduodenoscopy: 195 cases (2007-2015).
     url: https://pubmed.ncbi.nlm.nih.gov/35320735/
     type: research
-    pmid: "35320735"
+    pmid: '35320735'
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 慢性嘔吐診斷策略 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液檢查
+          notes: CBC, 生化, T4 (貓), fPLI/cPLI, ACTH
+        - name: 尿液檢查
+          notes: 評估腎功能
+        - name: 腹部 X 光
+          notes: 評估異物、腸阻塞
+ddxSource: auto-generated

@@ -3,19 +3,21 @@ nameEn: Canine Papillomatosis
 nameZh: 犬乳頭瘤病毒感染
 bodySystem: infectious
 description: 犬乳頭瘤病毒 (CPV/COPV) 感染引起的良性上皮增生性病變，最常見於口腔黏膜（口腔乳頭瘤）。好發於免疫系統尚未成熟的幼犬（<2 歲），多數在數週至數月內自行消退。免疫抑制犬可能出現持續性或廣泛性病灶。
-
 aliases:
-  - { alias: 犬疣, language: zh }
-  - { alias: 犬口腔乳頭瘤, language: zh }
-  - { alias: Canine Viral Papilloma, language: en }
-  - { alias: Canine Oral Papillomatosis, language: en }
-  - { alias: Dog Warts, language: en }
-
+  - alias: 犬疣
+    language: zh
+  - alias: 犬口腔乳頭瘤
+    language: zh
+  - alias: Canine Viral Papilloma
+    language: en
+  - alias: Canine Oral Papillomatosis
+    language: en
+  - alias: Dog Warts
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
     notes: 幼犬極為常見，特別是犬舍或狗公園等群居環境。多數 1-5 個月內自然消退。免疫正常犬消退後獲得終身免疫。免疫抑制犬可能持續存在或惡性轉化。
-
 etiology:
   categories:
     - name: 病原特性
@@ -30,7 +32,6 @@ etiology:
         - 眼結膜
         - 皮膚（指間、軀幹）
         - 生殖器黏膜
-
 clinicalSigns:
   early:
     - 口腔內出現白色至灰色小突起
@@ -43,7 +44,6 @@ clinicalSigns:
     - 口臭（續發感染時）
     - 過度流涎
     - 免疫抑制犬病灶可能持續擴展
-
 diagnosis:
   primaryTests:
     - name: 臨床外觀
@@ -53,7 +53,6 @@ diagnosis:
   additional:
     - 免疫抑制犬排除其他免疫功能障礙原因
     - 持續性或異常外觀病灶需排除鱗狀細胞癌
-
 treatment:
   principles:
     - 多數自行消退，無需治療
@@ -66,9 +65,59 @@ treatment:
     - Imiquimod 5% 外用（促進局部免疫反應）
     - 嚴重免疫抑制犬考慮自體疫苗 (autogenous vaccine)
     - 隔離感染犬以防傳播給其他幼犬
-
 prognosis: 免疫正常犬預後極佳，幾乎所有病例在 1-5 個月內自行消退並獲得終身免疫。免疫抑制犬預後較謹慎，持續性病灶偶有惡性轉化（鱗狀細胞癌）的報告，但極罕見。
-
 pubmedQueries:
   - query: '"canine papillomatosis" OR "canine papillomavirus" AND ("treatment" OR "management")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 犬乳突狀瘤病毒感染 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估口腔或皮膚增生性病灶，注意幼犬年齡
+      findings:
+        - 口腔內多發性花椰菜狀腫塊
+        - 唇部與舌頭好發
+        - 幼犬或免疫抑制犬
+        - 通常無痛無癢
+    - step: 2
+      action: 臨床檢查
+      details: 詳細檢查病灶分布與形態
+      findings:
+        - 典型菜花狀或指狀突起
+        - 表面粗糙灰白色
+        - 單發或多發
+        - 皮膚型呈圓形丘疹
+    - step: 3
+      action: 組織學確認
+      details: 必要時進行活檢
+      findings:
+        - 組織病理見表皮乳突狀增生
+        - 角質化過度
+        - 可見核內包涵體
+        - 排除鱗狀細胞癌
+    - step: 4
+      action: 確診
+      details: 根據典型外觀與年齡確診
+      findings:
+        - 典型臨床外觀通常足以診斷
+        - 免疫正常犬多於1-5個月內自行消退
+        - 持續不消退或快速增大需活檢排除惡性
+clinicalPearls:
+  - 犬口腔乳頭瘤病是年輕犬最常見的口腔腫塊原因
+  - 大多數病例4-8週自行消退——不必急於治療
+  - 免疫抑制犬的病灶可能不消退且有惡性轉化風險
+  - 病毒具犬特異性——不傳播給人或貓
+  - azithromycin可能有助於加速消退（可能透過免疫調節作用）
+monitoringItems:
+  - 每2-4週觀察病灶大小和數量變化
+  - 超過3-6個月不消退的病灶建議活檢排除惡性轉化
+  - 免疫抑制犬需更密切監測
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: halitosis-stomatitis
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: common
+ddxSource: book

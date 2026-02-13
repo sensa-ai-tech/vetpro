@@ -3,11 +3,11 @@ nameEn: Eyelid Agenesis
 nameZh: Eyelid Agenesis
 bodySystem: ophthalmology
 description: 眼瞼異常,可能影響角膜健康與眼部功能。部分病例需外科矯正。
-
 aliases:
-  - { alias: Eyelid Agenesis, language: zh }
-  - { alias: Eyelid Agenesis, language: en }
-
+  - alias: Eyelid Agenesis
+    language: zh
+  - alias: Eyelid Agenesis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 先天性異常
       examples:
         - 外傷
         - 感染
-
 clinicalSigns:
   early:
     - 眼部不適
@@ -32,41 +30,76 @@ clinicalSigns:
   progressive:
     - 視力喪失
     - 眼內壓異常
-
 diagnosis:
   primaryTests:
     - name: 眼科檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: 眼壓測量
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 眼藥水(抗生素或消炎)
     - 止痛藥
   surgical:
     - name: 根據病況可能需手術治療(角膜移植、青光眼閥膜植入、眼球摘除等)
-      notes: "依病況評估"
-
+      notes: 依病況評估
 prognosis:
-  general: "預後取決於疾病類型、嚴重度與治療時機。早期治療可改善預後並保存視力。"
-
+  general: 預後取決於疾病類型、嚴重度與治療時機。早期治療可改善預後並保存視力。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Prevalence of feline ophthalmic disorders in South Korea: a retrospective study (2009-2021)."
+    title: 'Prevalence of feline ophthalmic disorders in South Korea: a retrospective study (2009-2021).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812074/
     type: research
-    pmid: "36779421"
+    pmid: '36779421'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Ocular dermoids in 13 cats: a multicentre retrospective study."
+    title: 'Ocular dermoids in 13 cats: a multicentre retrospective study.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812258/
     type: research
-    pmid: "34519242"
+    pmid: '34519242'
+diagnosticAlgorithm:
+  title: 眼瞼缺損 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估先天性眼瞼結構缺損，貓常見
+      findings:
+        - 上眼瞼外側部分缺損（最常見）
+        - 角膜暴露和慢性刺激
+        - 結膜充血和分泌物
+        - 幼齡貓
+    - step: 2
+      action: 眼科檢查
+      details: 評估角膜和結膜續發性變化
+      findings:
+        - 角膜血管新生
+        - 角膜色素沉著
+        - 角膜潰瘍
+        - 乾眼症（Schirmer試驗）
+    - step: 3
+      action: 手術規劃
+      details: 評估重建手術選項
+      findings:
+        - 缺損範圍和程度評估
+        - 皮瓣重建選項
+        - Roberts-Bistner或Mustardé旋轉皮瓣
+        - 角膜保護評估
+clinicalPearls:
+  - 眼瞼缺損最常發生在貓的上眼瞼外側三分之一處
+  - 早期手術修復比等待角膜病變惡化後再手術效果更好
+  - 術後局部Cyclosporine可幫助減少角膜色素沉著
+  - 可能合併其他先天性眼部異常如持續性瞳孔膜或虹膜缺損
+monitoringItems:
+  - 術後每週追蹤至傷口完全癒合
+  - 長期監測角膜色素沉著消退情況
+  - 評估重建的眼瞼邊緣功能
+  - 監測角膜潰瘍復發
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+ddxSource: book

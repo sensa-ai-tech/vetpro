@@ -3,11 +3,11 @@ nameEn: Hyperglycemic Crisis
 nameZh: 高血糖危象
 bodySystem: emergency
 description: 嚴重高血糖(>600 mg/dL)伴脫水及電解質異常。包括DKA及HHS,需積極治療。
-
 aliases:
-  - { alias: 高血糖急症, language: zh }
-  - { alias: Severe Hyperglycemia, language: en }
-
+  - alias: 高血糖急症
+    language: zh
+  - alias: Severe Hyperglycemia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,29 +17,25 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: HHS較常見
-
 etiology:
   categories:
     - name: 原因
       examples:
         - 未診斷糖尿病、胰島素劑量不足、嚴重感染
-
 clinicalSigns:
   early:
     - 多尿、多渴
     - 嘔吐、脫水
   progressive:
     - 昏迷、休克
-
 diagnosis:
   primaryTests:
     - name: 血糖
-      notes: ">600 mg/dL"
+      notes: '>600 mg/dL'
     - name: 滲透壓
-      notes: "HHS: >350 mOsm/kg"
+      notes: 'HHS: >350 mOsm/kg'
   differentialDiagnoses:
     - DKA
-
 treatment:
   medical:
     - 積極靜脈輸液
@@ -47,24 +43,76 @@ treatment:
     - 電解質校正
     - 緩慢降低血糖(避免腦水腫)
     - 治療併發症
-
 prognosis:
-  general: "HHS死亡率較DKA高。及時治療可改善。"
-
+  general: HHS死亡率較DKA高。及時治療可改善。
 prevention:
   - 糖尿病規律治療
-
-
 guidelineRefs:
   - sourceOrg: Critical care (London, England)
-    title: "36th International Symposium on Intensive Care and Emergency Medicine : Brussels, Belgium. 15-18 March 2016."
+    title: '36th International Symposium on Intensive Care and Emergency Medicine : Brussels, Belgium. 15-18 March 2016.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5493079/
     type: research
-    pmid: "27885969"
+    pmid: '27885969'
     relevance: supporting
   - sourceOrg: Clinical epidemiology
-    title: "Risks of Developing Diabetes and Hyperglycemic Crisis Following Carbon Monoxide Poisoning: A Study Incorporating Epidemiologic Analysis and Animal Experiment."
+    title: >-
+      Risks of Developing Diabetes and Hyperglycemic Crisis Following Carbon Monoxide Poisoning: A Study Incorporating
+      Epidemiologic Analysis and Animal Experiment.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9636896/
     type: research
-    pmid: "36345392"
+    pmid: '36345392'
     relevance: supporting
+diagnosticAlgorithm:
+  title: 高血糖症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 詢問多喝多尿多食症狀及體重變化
+      findings:
+        - 多飲多尿
+        - 體重減輕（糖尿病）
+        - 應激相關（貓）
+        - 用藥史（類固醇）
+    - step: 2
+      action: 血糖與尿液分析
+      details: 血糖測量及尿液試紙檢查
+      findings:
+        - 血糖持續>200 mg/dL
+        - 尿糖陽性
+        - 尿酮體陽性（糖尿病酮酸中毒）
+        - 尿比重高
+    - step: 3
+      action: 糖尿病確認檢查
+      details: 果糖胺及糖化血色素測量
+      findings:
+        - 果糖胺升高（排除應激性高血糖）
+        - 持續性高血糖確認糖尿病
+        - 血液氣體分析（代謝性酸中毒）
+    - step: 4
+      action: 併發症評估
+      details: 全面生化及影像評估併發症
+      findings:
+        - 胰臟炎共病
+        - 泌尿道感染
+        - 白內障（犬）
+        - 肝臟脂肪沉積（貓）
+clinicalPearls:
+  - 貓應激血糖可達300-400 mg/dL
+  - 果糖胺可區分暫時性和持續性高血糖
+  - 持續高血糖>250 mg/dL需要治療
+  - 監測併發症（DKA、高滲性）
+monitoringItems:
+  - 血糖
+  - 尿糖
+  - 果糖胺
+  - 臨床症狀
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

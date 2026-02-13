@@ -3,18 +3,19 @@ nameEn: Avian Zinc Poisoning
 nameZh: 禽類鋅中毒
 bodySystem: toxicology
 description: 禽類鋅中毒為鳥類攝入含鋅金屬物導致的中毒，常見來源為鍍鋅鳥籠鐵絲。臨床表現與鉛中毒相似，包括消化道、神經系統及造血系統症狀。
-
 aliases:
-  - { alias: 鳥類鋅中毒, language: zh }
-  - { alias: 新籠病, language: zh }
-  - { alias: Zinc toxicosis in birds, language: en }
-  - { alias: New wire disease, language: en }
-
+  - alias: 鳥類鋅中毒
+    language: zh
+  - alias: 新籠病
+    language: zh
+  - alias: Zinc toxicosis in birds
+    language: en
+  - alias: New wire disease
+    language: en
 species:
   - speciesCommon: bird
     prevalence: common
     notes: 所有鳥種均可發生。鸚鵡因咬嚼鐵絲習性最常見。「新籠病」因新鍍鋅籠鐵絲表面鋅含量最高而得名。
-
 etiology:
   categories:
     - name: 鋅來源
@@ -30,7 +31,6 @@ etiology:
         - 抑制含銅酵素活性
         - 胃腸道黏膜直接刺激
         - 造血系統毒性
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -45,22 +45,20 @@ clinicalSigns:
     - 癲癇（嚴重病例）
     - 肝腎功能異常
     - 羽毛狀況惡化
-
 diagnosis:
   primaryTests:
     - name: 血鋅濃度
-      notes: "血鋅正常值因鳥種而異（一般 1-3 μg/mL）。>3 μg/mL 提示中毒"
+      notes: 血鋅正常值因鳥種而異（一般 1-3 μg/mL）。>3 μg/mL 提示中毒
     - name: X光檢查
-      notes: "腹腔內金屬密度異物。鋅碎片不如鉛密度高但仍可見"
+      notes: 腹腔內金屬密度異物。鋅碎片不如鉛密度高但仍可見
     - name: 血液學與生化
-      notes: "貧血、肝酶升高、胰臟酵素異常"
+      notes: 貧血、肝酶升高、胰臟酵素異常
   differentialDiagnoses:
     - 鉛中毒
     - 其他重金屬中毒
     - 感染性腸炎
     - 肝病
     - 胰腺炎
-
 treatment:
   medical:
     - CaEDTA 35-50 mg/kg IM BID（螯合治療）
@@ -69,41 +67,77 @@ treatment:
     - 移除鋅暴露源
   surgical:
     - 內視鏡或手術移除消化道內金屬異物
-
 prognosis:
-  general: "移除暴露源並螯合治療後預後良好。慢性低劑量暴露如不治療可致嚴重器官損傷。嚴重貧血或肝衰竭預後較差。"
-
+  general: 移除暴露源並螯合治療後預後良好。慢性低劑量暴露如不治療可致嚴重器官損傷。嚴重貧血或肝衰竭預後較差。
 prevention:
   - 使用不鏽鋼或粉體塗裝鳥籠（非鍍鋅）
   - 新鍍鋅籠使用前以醋刷洗並風乾
   - 移除所有鍍鋅金屬玩具或配件
   - 定期檢查籠內金屬物品狀態
   - 監督鳥類活動避免接觸含鋅物品
-
-
 guidelineRefs:
   - sourceOrg: Biology
-    title: "Heavy Metal Poisoning and Its Impacts on the Conservation of Amazonian Parrots: An Interdisciplinary Review."
+    title: 'Heavy Metal Poisoning and Its Impacts on the Conservation of Amazonian Parrots: An Interdisciplinary Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12189678/
     type: review
-    pmid: "40563911"
+    pmid: '40563911'
   - sourceOrg: Environmental science and pollution research international
-    title: "Lead, cadmium, and other trace elements in the liver of golden eagles and white-tailed eagles: recent data from Poland and a systematic review of previous studies."
+    title: >-
+      Lead, cadmium, and other trace elements in the liver of golden eagles and white-tailed eagles: recent data from
+      Poland and a systematic review of previous studies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10039830/
     type: review
-    pmid: "36585589"
+    pmid: '36585589'
   - sourceOrg: Poultry science
-    title: "Zn glycine mitigates the LPS-induced hepatic injury and inflammation through NrF2/NF&#x3ba;B signaling in geese."
+    title: Zn glycine mitigates the LPS-induced hepatic injury and inflammation through NrF2/NF&#x3ba;B signaling in geese.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12464707/
     type: research
-    pmid: "40957293"
+    pmid: '40957293'
   - sourceOrg: Open veterinary journal
     title: Retrospective analysis of animal poisoning in the province of Viterbo, Italy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11799649/
     type: research
-    pmid: "39927375"
+    pmid: '39927375'
   - sourceOrg: Poultry science
     title: Protective effect of honokiol on cadmium-induced liver injury in chickens.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11338095/
     type: research
-    pmid: "39067123"
+    pmid: '39067123'
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類鋅中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - ataxia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血鋅濃度
+          notes: 血鋅正常值因鳥種而異（一般 1-3 μg/mL）。>3 μg/mL 提示中毒
+        - name: X光檢查
+          notes: 腹腔內金屬密度異物。鋅碎片不如鉛密度高但仍可見
+        - name: 血液學與生化
+          notes: 貧血、肝酶升高、胰臟酵素異常
+ddxSource: auto-generated

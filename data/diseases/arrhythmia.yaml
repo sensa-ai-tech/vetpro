@@ -1,0 +1,100 @@
+slug: arrhythmia
+nameEn: Cardiac Arrhythmia
+nameZh: 心律不整
+description: >-
+  心律不整是指心臟電傳導系統異常導致心跳節律、頻率或傳導路徑偏離正常竇性節律的疾病總稱。包括心搏過速（SVT、VT）、心搏過緩（竇房結病變、房室傳導阻滯）和期前收縮（APCs、VPCs）。犬常見DCM相關室性心律不整，貓以HCM相關心房顫動較多。
+bodySystem: cardiovascular
+species:
+  - speciesCommon: dog
+  - speciesCommon: cat
+etiology:
+  categories:
+    - name: Risk Factors
+      examples:
+        - 心臟病
+        - 電解質失衡
+        - 藥物
+        - 全身性疾病
+clinicalSigns:
+  early:
+    - 可能無症狀
+    - 虛弱
+    - 昏厥
+    - 運動不耐
+    - 猝死
+  progressive:
+    - 心律不規則
+    - 脈搏虧損
+    - 心搏過速或過緩
+diagnosis:
+  primaryTests:
+    - ECG
+    - 電解質
+    - 心臟超聲
+  additional:
+    - 24小時Holter監測
+    - 電生理檢查
+treatment:
+  principles:
+    - 室上性心搏過速：迷走刺激、Diltiazem、β-blocker
+    - 心室心搏過速：Lidocaine（急性）、Sotalol/Mexiletine（慢性）
+    - 心搏過緩：Atropine試驗、心律調節器
+  general:
+    - 治療原發心臟病
+    - 避免誘發因素
+prognosis: 取決於類型和原發病。單純心房顫動預後較好。惡性心室心律不整預後差。
+diagnosticAlgorithm:
+  title: 心律不整 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 聽診心律、評估脈搏及灌流
+      findings:
+        - 心律不規則
+        - 脈搏缺損
+        - 虛弱或昏厥
+        - 運動不耐
+    - step: 2
+      action: 心電圖檢查
+      details: 12導程ECG或Holter監測
+      findings:
+        - 心房顫動
+        - 心室早期收縮
+        - 房室傳導阻滯
+        - 竇性心搏過緩或過速
+    - step: 3
+      action: 心臟超音波
+      details: 評估心臟結構與功能
+      findings:
+        - 心腔擴大
+        - 心肌收縮力評估
+        - 瓣膜疾病
+        - 腫瘤（心基部或右心房）
+    - step: 4
+      action: 進階檢查與病因
+      details: 電解質、甲狀腺及Holter
+      findings:
+        - 電解質異常（鉀、鈣）
+        - 甲狀腺功能
+        - 24小時Holter確認心律不整頻率
+        - 評估是否需要抗心律不整治療
+clinicalPearls:
+  - 犬竇性心律不整常為正常
+  - 脈搏虧損提示血流動力學重要性
+  - Holter可發現間歇性心律不整
+  - Boxer和Doberman有遺傳性心律不整傾向
+monitoringItems:
+  - ECG
+  - Holter
+  - 臨床症狀
+  - 藥物濃度
+associatedSymptoms:
+  - symptomId: syncope
+    frequency: common
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+ddxSource: book-only

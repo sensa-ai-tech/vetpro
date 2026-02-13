@@ -3,13 +3,15 @@ nameEn: Premature Ventricular Complexes
 nameZh: 心室早期收縮
 bodySystem: cardiac
 description: 心室異位起搏點提前發出電脈衝導致不規則心跳。可為良性或提示潛在心臟疾病、電解質異常或全身性疾病。
-
 aliases:
-  - { alias: 心室性期前收縮, language: zh }
-  - { alias: Ventricular Premature Contractions, language: en }
-  - { alias: VPCs, language: en }
-  - { alias: PVCs, language: en }
-
+  - alias: 心室性期前收縮
+    language: zh
+  - alias: Ventricular Premature Contractions
+    language: en
+  - alias: VPCs
+    language: en
+  - alias: PVCs
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 多因心肌病變或全身性疾病
-
 etiology:
   categories:
     - name: 心臟疾病
@@ -36,7 +37,6 @@ etiology:
       examples:
         - 低血鉀
         - 低血鎂
-
 clinicalSigns:
   early:
     - 心跳不規則
@@ -46,22 +46,20 @@ clinicalSigns:
     - 暈厥
     - 運動不耐
     - 猝死 (嚴重時)
-
 diagnosis:
   primaryTests:
     - name: 心電圖
-      notes: "確認 VPCs 頻率、形態 (單形或多形)、R-on-T 現象"
+      notes: 確認 VPCs 頻率、形態 (單形或多形)、R-on-T 現象
     - name: 24 小時 Holter 監測
-      notes: "評估 VPC 負荷量 (> 300-500/24h 需治療)"
+      notes: 評估 VPC 負荷量 (> 300-500/24h 需治療)
     - name: 心臟超音波
-      notes: "排除結構性心臟病"
+      notes: 排除結構性心臟病
     - name: 血液檢查
-      notes: "電解質、troponin I"
+      notes: 電解質、troponin I
   differentialDiagnoses:
     - 竇性心律不整
     - 心房早期收縮
     - 房室傳導阻滯
-
 treatment:
   medical:
     - 治療原發病因
@@ -69,44 +67,67 @@ treatment:
     - Mexiletine 5-8 mg/kg PO q8h
     - 電解質補充 (低血鉀)
     - 緊急情況: Lidocaine 2-4 mg/kg IV bolus
-
 prognosis:
-  general: "取決於原發病因及 VPC 嚴重度；良性 VPCs 預後良好；頻繁或多形 VPCs 提示嚴重疾病，預後謹慎"
-
+  general: 取決於原發病因及 VPC 嚴重度；良性 VPCs 預後良好；頻繁或多形 VPCs 提示嚴重疾病，預後謹慎
 prevention:
   - 高風險品種定期心臟篩檢
   - 避免全身麻醉前未評估
   - 早期診斷及治療心臟疾病
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
-    title: "Role of Diet as a Predisposing Factor for Dilated Cardiomyopathy in Dogs: A Narrative Review."
+    title: 'Role of Diet as a Predisposing Factor for Dilated Cardiomyopathy in Dogs: A Narrative Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12656978/
     type: review
-    pmid: "41295744"
+    pmid: '41295744'
     relevance: primary
   - sourceOrg: Cardiovascular research
     title: Initiation of ventricular arrhythmia in the acquired long QT syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10064840/
     type: research
-    pmid: "35727943"
+    pmid: '35727943'
     relevance: supporting
   - sourceOrg: Heart rhythm
     title: Lower sarcoplasmic reticulum Ca2+ threshold for triggering afterdepolarizations in diabetic rat hearts.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6491240/
     type: research
-    pmid: "30414461"
+    pmid: '30414461'
     relevance: supporting
   - sourceOrg: The Journal of physiology
-    title: Mechanisms linking T-wave alternans to spontaneous initiation of ventricular arrhythmias in rabbit models of long QT syndrome.
+    title: >-
+      Mechanisms linking T-wave alternans to spontaneous initiation of ventricular arrhythmias in rabbit models of long
+      QT syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5899976/
     type: research
-    pmid: "29377142"
+    pmid: '29377142'
     relevance: supporting
   - sourceOrg: PLoS computational biology
     title: Mechanistic insight into spontaneous transition from cellular alternans to arrhythmia-A simulation study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6291170/
     type: research
-    pmid: "30500818"
+    pmid: '30500818'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 心室早期收縮 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心電圖
+          notes: 確認 VPCs 頻率、形態 (單形或多形)、R-on-T 現象
+        - name: 24 小時 Holter 監測
+          notes: 評估 VPC 負荷量 (> 300-500/24h 需治療)
+        - name: 心臟超音波
+          notes: 排除結構性心臟病
+ddxSource: auto-generated

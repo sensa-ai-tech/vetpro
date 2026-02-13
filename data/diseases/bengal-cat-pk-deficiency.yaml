@@ -3,19 +3,21 @@ nameEn: Bengal Cat PK Deficiency
 nameZh: 孟加拉貓丙酮酸激酶缺乏症
 bodySystem: hematology
 description: 丙酮酸激酶（PK）缺乏症是孟加拉貓的重要遺傳性溶血性貧血，由 PKLR 基因突變導致紅血球能量代謝異常。紅血球壽命縮短造成慢性間歇性溶血性貧血。為體染色體隱性遺傳，基因檢測可識別攜帶者。
-
 aliases:
-  - { alias: 孟加拉貓 PK 缺乏, language: zh }
-  - { alias: 貓丙酮酸激酶缺乏症, language: zh }
-  - { alias: Bengal cat pyruvate kinase deficiency, language: en }
-  - { alias: Feline PK deficiency, language: en }
-  - { alias: Erythrocyte PK deficiency, language: en }
-
+  - alias: 孟加拉貓 PK 缺乏
+    language: zh
+  - alias: 貓丙酮酸激酶缺乏症
+    language: zh
+  - alias: Bengal cat pyruvate kinase deficiency
+    language: en
+  - alias: Feline PK deficiency
+    language: en
+  - alias: Erythrocyte PK deficiency
+    language: en
 species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 孟加拉貓為最常見受影響品種。阿比西尼亞貓、索馬利貓亦有報告。體染色體隱性遺傳。基因檢測攜帶率各族群不同。
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -29,7 +31,6 @@ etiology:
         - 紅血球壽命縮短
         - 慢性間歇性血管外溶血
         - 脾臟代償性紅血球破壞增加
-
 clinicalSigns:
   early:
     - 間歇性嗜睡
@@ -42,7 +43,6 @@ clinicalSigns:
     - 心搏過速
     - 體重下降
     - 嚴重貧血導致虛弱
-
 diagnosis:
   primaryTests:
     - name: PKLR 基因檢測
@@ -51,7 +51,6 @@ diagnosis:
       notes: 再生性貧血（PCV 降低、網狀紅血球增多）。波動性貧血為特徵
     - name: PK 酵素活性測定
       notes: 紅血球 PK 酵素活性降低。但受影響貓可能因年輕紅血球代償而看似正常
-
 treatment:
   principles:
     - 無特效治療
@@ -65,9 +64,48 @@ treatment:
     - 避免氧化性藥物與物質
     - 定期 CBC 監測
     - 繁殖篩選（基因檢測避免兩攜帶者交配）
-
 prognosis: 預後中等。多數受影響貓可存活數年但生活品質波動。間歇性溶血危機可能需要緊急輸血。脾臟切除可能改善臨床穩定性。少數貓可能在較年輕時因嚴重貧血或肝臟衰竭（鐵沉積）而死亡。繁殖篩選為消除品種疾病的關鍵。
-
 pubmedQueries:
   - query: '"Bengal" AND ("pyruvate kinase" OR "PK deficiency") AND (feline OR cat) AND (treatment OR diagnosis)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: splenomegaly
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 孟加拉貓丙酮酸激酶缺乏症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - pallor-cyanosis 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: PKLR 基因檢測
+          notes: DNA 基因型分析。可識別受影響者（mut/mut）與攜帶者（wt/mut）。繁殖篩選首選
+        - name: CBC
+          notes: 再生性貧血（PCV 降低、網狀紅血球增多）。波動性貧血為特徵
+        - name: PK 酵素活性測定
+          notes: 紅血球 PK 酵素活性降低。但受影響貓可能因年輕紅血球代償而看似正常
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 無特效治療
+        - 支持療法
+        - 嚴重貧血時輸血
+ddxSource: auto-generated

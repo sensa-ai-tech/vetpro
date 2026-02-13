@@ -3,13 +3,15 @@ nameEn: Ceruminous Gland Hyperplasia
 nameZh: 耵聹腺增生
 bodySystem: ear
 description: 外耳道耵聹腺（ceruminous glands）因慢性炎症刺激而過度增生，形成耳道壁結節狀或息肉樣腫塊，為慢性外耳炎的重要永續因素，需與耵聹腺腺瘤/腺癌鑑別。
-
 aliases:
-  - { alias: 耵聹腺過度增生, language: zh }
-  - { alias: 耳蠟腺增生, language: zh }
-  - { alias: Ceruminous gland hypertrophy, language: en }
-  - { alias: Apocrine gland hyperplasia of ear canal, language: en }
-
+  - alias: 耵聹腺過度增生
+    language: zh
+  - alias: 耳蠟腺增生
+    language: zh
+  - alias: Ceruminous gland hypertrophy
+    language: en
+  - alias: Apocrine gland hyperplasia of ear canal
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓耵聹腺增生較犬少見。老年貓需與耵聹腺腺瘤/腺癌鑑別。
-
 etiology:
   categories:
     - name: 慢性炎症刺激
@@ -34,7 +35,6 @@ etiology:
         - 腺體體積增大
         - 分泌活性增強
         - 結節狀或息肉樣突起
-
 clinicalSigns:
   early:
     - 耳垢量增加
@@ -46,19 +46,17 @@ clinicalSigns:
     - 局部藥物療效下降
     - 反覆感染
     - 大量蠟狀分泌物
-
 diagnosis:
   primaryTests:
     - name: 耳鏡檢查
-      notes: "耳道壁可見多發性粉紅色或暗紅色結節。需與腫瘤性病變鑑別"
+      notes: 耳道壁可見多發性粉紅色或暗紅色結節。需與腫瘤性病變鑑別
     - name: 組織病理學
-      notes: "生檢確認為增生性而非腫瘤性變化。典型為腺體增生伴炎症反應"
+      notes: 生檢確認為增生性而非腫瘤性變化。典型為腺體增生伴炎症反應
   differentialDiagnoses:
     - 耵聹腺腺瘤
     - 耵聹腺腺癌
     - 外耳道息肉
     - 增生性外耳炎
-
 treatment:
   medical:
     - 治療原發外耳炎
@@ -69,11 +67,29 @@ treatment:
     - CO2 雷射或電燒切除增生組織
     - 側方耳道切除術改善通風
     - TECA-LBO（嚴重耳道狹窄時）
-
 prognosis:
-  general: "原發炎症因素控制後增生可部分消退。嚴重增生合併耳道狹窄需手術介入。需與耵聹腺腫瘤鑑別以確定預後。"
-
+  general: 原發炎症因素控制後增生可部分消退。嚴重增生合併耳道狹窄需手術介入。需與耵聹腺腫瘤鑑別以確定預後。
 prevention:
   - 早期有效治療外耳炎
   - 定期耳道維護性清潔
   - 控制潛在過敏疾病
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 耵聹腺增生 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 耳鏡檢查
+          notes: 耳道壁可見多發性粉紅色或暗紅色結節。需與腫瘤性病變鑑別
+        - name: 組織病理學
+          notes: 生檢確認為增生性而非腫瘤性變化。典型為腺體增生伴炎症反應
+ddxSource: auto-generated

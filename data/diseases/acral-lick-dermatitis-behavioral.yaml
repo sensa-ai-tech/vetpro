@@ -3,13 +3,15 @@ nameEn: Acral Lick Dermatitis Behavioral
 nameZh: 肢端舔皮膚炎（行為性）
 bodySystem: dermatology
 description: 犬反覆持續舔咬肢體遠端（通常為前肢腕關節以上）導致的慢性增生性皮膚病變，為犬常見的強迫/焦慮行為表現。長期舔咬形成增厚、脫毛、潰瘍的肉芽腫病灶，常繼發細菌感染。
-
 aliases:
-  - { alias: "肢端舔咬肉芽腫", language: zh }
-  - { alias: "舔肉芽腫", language: zh }
-  - { alias: "Lick Granuloma", language: en }
-  - { alias: "Acral Lick Granuloma", language: en }
-
+  - alias: 肢端舔咬肉芽腫
+    language: zh
+  - alias: 舔肉芽腫
+    language: zh
+  - alias: Lick Granuloma
+    language: en
+  - alias: Acral Lick Granuloma
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓較少見典型肢端舔肉芽腫，但可有類似的過度理毛損傷。
-
 etiology:
   categories:
     - name: 行為性
@@ -34,7 +35,6 @@ etiology:
         - 蠕形蟎
         - 異物
         - 骨腫瘤
-
 clinicalSigns:
   early:
     - 反覆舔咬前肢特定區域
@@ -46,14 +46,12 @@ clinicalSigns:
     - 繼發性細菌感染
     - 病灶周圍色素沉著
     - 多發性病灶（雙前肢）
-
 diagnosis:
   primaryTests:
     - name: 皮膚活檢
       notes: 表淺與深層皮膚炎、纖維化、肉芽腫。排除腫瘤（鑑別黴菌肉芽腫或肥大細胞瘤）。
     - name: 影像學
       notes: X 光排除骨關節病變。排除骨腫瘤（大型犬前肢遠端為骨肉瘤好發部位）。
-
 treatment:
   principles:
     - 同時治療行為與皮膚病灶
@@ -67,9 +65,34 @@ treatment:
     - 環境豐富化、增加運動量
     - 分離焦慮需同時處理
     - 避免長期使用伊莉莎白圈
-
 prognosis: 肢端舔皮膚炎為慢性難治性疾病。行為藥物結合局部治療可改善但完全根治率低。慢性纖維化病灶即使行為改善也可能持續。早期介入效果優於長期病灶。多數需長期甚至終身管理。
-
 pubmedQueries:
   - query: '"Acral Lick Dermatitis Behavioral" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: alopecia
+    frequency: common
+diagnosticAlgorithm:
+  title: 肢端舔皮膚炎（行為性） 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 皮膚活檢
+          notes: 表淺與深層皮膚炎、纖維化、肉芽腫。排除腫瘤（鑑別黴菌肉芽腫或肥大細胞瘤）。
+        - name: 影像學
+          notes: X 光排除骨關節病變。排除骨腫瘤（大型犬前肢遠端為骨肉瘤好發部位）。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 同時治療行為與皮膚病灶
+        - 排除潛在醫學誘因
+        - 長期管理
+ddxSource: auto-generated

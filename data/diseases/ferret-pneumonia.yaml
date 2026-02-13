@@ -3,22 +3,20 @@ nameEn: Ferret Pneumonia
 nameZh: 雪貂肺炎
 bodySystem: respiratory
 description: 雪貂細菌性或病毒性肺炎，可繼發於流感感染或吸入性損傷。表現為呼吸困難、咳嗽及鼻分泌物。需積極抗生素治療。
-
 aliases:
-  - { alias: "雪貂肺炎", language: zh }
-  - { alias: "Ferret Pneumonia", language: en }
-
+  - alias: 雪貂肺炎
+    language: zh
+  - alias: Ferret Pneumonia
+    language: en
 species:
   - speciesCommon: ferret
     prevalence: uncommon
     notes: 雪貂可受此疾病影響。
-
 etiology:
   categories:
     - name: 病因
       examples:
         - 詳見臨床文獻
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -27,14 +25,12 @@ clinicalSigns:
   progressive:
     - 症狀加重
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 完整理學檢查與病史評估。
     - name: 實驗室檢查
       notes: CBC/生化排除系統性疾病。
-
 treatment:
   principles:
     - 治療基礎病因
@@ -44,38 +40,74 @@ treatment:
     - 依病因治療
     - 支持性照護
     - 定期追蹤
-
 prognosis: 預後取決於疾病嚴重度與治療時效。早期診斷與適當治療可改善預後。
-
-
 guidelineRefs:
   - sourceOrg: Zoological research
-    title: "Ferrets: A powerful model of SARS-CoV-2."
+    title: 'Ferrets: A powerful model of SARS-CoV-2.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10083223/
     type: review
-    pmid: "36799224"
+    pmid: '36799224'
   - sourceOrg: Veterinary pathology
-    title: "Influence of SARS-CoV-2 on airway mucus production: A review and proposed model."
+    title: 'Influence of SARS-CoV-2 on airway mucus production: A review and proposed model.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11441722/
     type: review
-    pmid: "34794359"
+    pmid: '34794359'
   - sourceOrg: Transboundary and emerging diseases
     title: Potential zoonotic sources of SARS-CoV-2 infections.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7675418/
     type: review
-    pmid: "33034151"
+    pmid: '33034151'
   - sourceOrg: Memorias do Instituto Oswaldo Cruz
     title: Animal models and SARS-CoV-2-induced pulmonary and neurological injuries.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9870265/
     type: review
-    pmid: "36700583"
+    pmid: '36700583'
     relevance: primary
   - sourceOrg: Molecules and cells
     title: Experimental Models for SARS-CoV-2 Infection.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8245318/
     type: review
-    pmid: "34187969"
+    pmid: '34187969'
     relevance: primary
 pubmedQueries:
   - query: '"Ferret Pneumonia" AND (veterinary OR ferret) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: coughing
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 雪貂肺炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 完整理學檢查與病史評估。
+        - name: 實驗室檢查
+          notes: CBC/生化排除系統性疾病。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 支持性照護
+        - 監測恢復進度
+ddxSource: auto-generated

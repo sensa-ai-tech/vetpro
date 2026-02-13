@@ -3,11 +3,11 @@ nameEn: Dermatomyositis Detail
 nameZh: 皮肌炎詳述
 bodySystem: neurology
 description: 犬貓免疫介導性皮膚肌肉疾病，主要影響皮膚、肌肉及血管。好發於柯利牧羊犬及雪特蘭牧羊犬幼犬。可能造成永久性肌肉萎縮。
-
 aliases:
-  - { alias: 皮膚肌炎, language: zh }
-  - { alias: Familial Canine Dermatomyositis, language: en }
-
+  - alias: 皮膚肌炎
+    language: zh
+  - alias: Familial Canine Dermatomyositis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓罕見，多為成年發病
-
 etiology:
   categories:
     - name: 遺傳免疫異常
@@ -25,7 +24,6 @@ etiology:
         - 家族性遺傳（柯利犬、雪特蘭犬）
         - 自體免疫性血管炎
         - 補體介導組織破壞
-
 clinicalSigns:
   early:
     - 顏面、耳尖、尾尖對稱性脫毛
@@ -37,21 +35,19 @@ clinicalSigns:
     - 甲床潰瘍及脫甲
     - 步態僵硬
     - 吞嚥困難（巨食道症）
-
 diagnosis:
   primaryTests:
     - name: 皮膚肌肉組織切片
-      notes: "介面性皮膚炎、肌纖維變性、血管炎"
+      notes: 介面性皮膚炎、肌纖維變性、血管炎
     - name: 肌電圖檢查
-      notes: "肌病變型態"
+      notes: 肌病變型態
     - name: 血清肌酸激酶
-      notes: "通常正常或輕度上升"
+      notes: 通常正常或輕度上升
   differentialDiagnoses:
     - 多發性肌炎
     - 全身性紅斑狼瘡
     - 毛囊蟲症
     - 接觸性皮膚炎
-
 treatment:
   medical:
     - 輕症：避免陽光曝曬及外傷
@@ -59,11 +55,53 @@ treatment:
     - 魚油（omega-3）50 mg/kg PO q24h
     - 重症：潑尼松龍 1-2 mg/kg PO q12h 漸減
     - 五味子素（pentoxifylline）10 mg/kg PO q12h
-
 prognosis:
-  general: "輕症可能自發緩解；重症預後保留，可能永久性肌肉萎縮及功能障礙。避免繁殖患病犬隻。"
-
+  general: 輕症可能自發緩解；重症預後保留，可能永久性肌肉萎縮及功能障礙。避免繁殖患病犬隻。
 prevention:
   - 避免近親繁殖
   - 患病犬隻應絕育，不可用於育種
   - 減少陽光曝曬及皮膚外傷
+diagnosticAlgorithm:
+  title: 皮肌炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估幼犬面部、耳尖和四肢遠端的皮膚病變，注意肌肉萎縮，好發於可利牧羊犬和喜樂蒂
+      findings:
+        - 面部、耳尖脫毛伴結痂
+        - 四肢遠端及尾尖病變
+        - 顳肌和咀嚼肌萎縮
+    - step: 2
+      action: 肌電圖與肌酶檢查
+      details: 進行肌電圖評估肌肉病變，檢測血清CK值
+      findings:
+        - 肌電圖異常自發電位
+        - 血清CK可能輕度升高
+        - 肌肉萎縮程度評估
+    - step: 3
+      action: 皮膚及肌肉活檢確診
+      details: 同時進行皮膚和肌肉活檢送病理學檢查確診
+      findings:
+        - 皮膚活檢顯示界面性皮膚炎
+        - 肌肉活檢顯示肌纖維萎縮及炎性浸潤
+        - 組織病理學確認皮肌炎診斷
+clinicalPearls:
+  - 是少數有明確基因檢測的遺傳性皮膚病
+  - 症狀嚴重度在同窩幼犬間可有極大差異
+  - 日曬和創傷是已知的加重因素
+  - 巨食道是最嚴重的併發症，可致命
+monitoringItems:
+  - 皮膚病變範圍和嚴重度
+  - 肌肉質量和力量
+  - 吞嚥功能
+  - 體重和營養狀態
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: cachexia-muscle-wasting
+    frequency: rare
+ddxSource: book

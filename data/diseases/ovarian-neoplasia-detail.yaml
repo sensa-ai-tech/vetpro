@@ -3,11 +3,11 @@ nameEn: Ovarian Neoplasia Detail
 nameZh: 卵巢腫瘤詳述
 bodySystem: oncology
 description: 卵巢腫瘤包括上皮性、生殖細胞及性索間質腫瘤。罕見於犬貓，多為良性。顆粒細胞瘤最常見，可能分泌雌激素。
-
 aliases:
-  - { alias: 卵巢癌, language: zh }
-  - { alias: Ovarian Tumor, language: en }
-
+  - alias: 卵巢癌
+    language: zh
+  - alias: Ovarian Tumor
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓極罕見
-
 etiology:
   categories:
     - name: 性索間質腫瘤
@@ -33,7 +32,6 @@ etiology:
       examples:
         - 腺癌
         - 乳頭狀囊腺瘤
-
 clinicalSigns:
   early:
     - 多數無症狀
@@ -44,25 +42,23 @@ clinicalSigns:
     - 腹部膨大
     - 體重減輕、食慾下降
     - 腹水（惡性或破裂）
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波/CT
-      notes: "卵巢腫塊，評估轉移"
+      notes: 卵巢腫塊，評估轉移
     - name: 血清雌激素檢測
-      notes: "功能性腫瘤可能升高"
+      notes: 功能性腫瘤可能升高
     - name: 胸腔X光
-      notes: "評估肺轉移"
+      notes: 評估肺轉移
     - name: 腹水細胞學
-      notes: "若有腹水"
+      notes: 若有腹水
     - name: 組織病理學
-      notes: "手術切除後確診"
+      notes: 手術切除後確診
   differentialDiagnoses:
     - 卵巢囊腫
     - 腎上腺腫瘤
     - 腹腔其他腫瘤
     - 子宮蓄膿
-
 treatment:
   medical:
     - 手術：卵巢子宮切除術（首選）
@@ -71,43 +67,75 @@ treatment:
     - 卡鉑（carboplatin）300 mg/m² IV q21d
     - 紫杉醇（paclitaxel）130-150 mg/m² IV q21d
     - 預後保留腫瘤：單純切除，避免化療
-
 prognosis:
-  general: "良性腫瘤切除後預後極佳。顆粒細胞瘤多為良性。惡性腫瘤預後保留，中位存活時間6-12個月。"
-
+  general: 良性腫瘤切除後預後極佳。顆粒細胞瘤多為良性。惡性腫瘤預後保留，中位存活時間6-12個月。
 prevention:
   - 早期絕育降低風險
   - 定期腹部超音波檢查（高齡母犬）
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Disorders of the Female Reproductive Tract in Chelonians: A Review."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Disorders of the Female Reproductive Tract in Chelonians: A Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12070840/
     type: review
-    pmid: "40362091"
+    pmid: '40362091'
     relevance: primary
   - sourceOrg: Aging and disease
     title: Shedding Light on the Interaction Between Rif1 and Telomeres in Ovarian Cancer.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10917528/
     type: review
-    pmid: "37548940"
+    pmid: '37548940'
     relevance: primary
-  - sourceOrg: "Cellular and molecular life sciences : CMLS"
-    title: "Preclinical models of epithelial ovarian cancer: practical considerations and challenges for a meaningful application."
+  - sourceOrg: 'Cellular and molecular life sciences : CMLS'
+    title: >-
+      Preclinical models of epithelial ovarian cancer: practical considerations and challenges for a meaningful
+      application.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9200670/
     type: review
-    pmid: "35705879"
+    pmid: '35705879'
     relevance: primary
   - sourceOrg: Clinical obstetrics and gynecology
-    title: "Preclinical Models of Ovarian Cancer: Pathogenesis, Problems, and Implications for Prevention."
+    title: 'Preclinical Models of Ovarian Cancer: Pathogenesis, Problems, and Implications for Prevention.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5843373/
     type: review
-    pmid: "28719396"
+    pmid: '28719396'
     relevance: supporting
   - sourceOrg: Cells
     title: Characterization of Lysophospholipase D Activity in Mammalian Cell Membranes.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10969092/
     type: research
-    pmid: "38534364"
+    pmid: '38534364'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: alopecia
+    frequency: uncommon
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 卵巢腫瘤詳述 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - alopecia 相關症狀
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波/CT
+          notes: 卵巢腫塊，評估轉移
+        - name: 血清雌激素檢測
+          notes: 功能性腫瘤可能升高
+        - name: 胸腔X光
+          notes: 評估肺轉移
+ddxSource: auto-generated

@@ -3,12 +3,13 @@ nameEn: Intestinal Parasite Prevention
 nameZh: 腸道寄生蟲預防
 bodySystem: gastrointestinal
 description: 犬貓腸道寄生蟲的綜合預防策略,包括定期驅蟲、糞便檢查及環境衛生管理。常見寄生蟲包括蛔蟲、鉤蟲、鞭蟲、絛蟲及梨形鞭毛蟲,部分具人畜共通性。
-
 aliases:
-  - { alias: 腸道寄生蟲控制, language: zh }
-  - { alias: Intestinal parasite control, language: en }
-  - { alias: Deworming protocol, language: en }
-
+  - alias: 腸道寄生蟲控制
+    language: zh
+  - alias: Intestinal parasite control
+    language: en
+  - alias: Deworming protocol
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 室外貓風險較高,但室內貓也需定期檢查
-
 etiology:
   categories:
     - name: 常見腸道寄生蟲
@@ -29,7 +29,6 @@ etiology:
         - 絛蟲(Dipylidium、Taenia)
         - 梨形鞭毛蟲(Giardia,人畜共通)
         - 球蟲(Cystoisospora)
-
 clinicalSigns:
   early:
     - 輕度感染可能無症狀
@@ -38,19 +37,17 @@ clinicalSigns:
     - 腹瀉(可能帶血或黏液)
     - 體重減輕、毛色無光澤
     - 嘔吐、食慾不振
-
 diagnosis:
   primaryTests:
     - name: 糞便浮游檢查
-      notes: "檢測蟲卵,建議每年至少2-4次"
+      notes: 檢測蟲卵,建議每年至少2-4次
     - name: Giardia抗原檢測
-      notes: "SNAP test或ELISA,梨形鞭毛蟲不易在糞檢發現"
+      notes: SNAP test或ELISA,梨形鞭毛蟲不易在糞檢發現
     - name: 絛蟲片節觀察
-      notes: "肛門周圍或糞便中發現米粒狀片節"
+      notes: 肛門周圍或糞便中發現米粒狀片節
   differentialDiagnoses:
     - 其他腸胃道疾病
     - 食物過敏或不耐
-
 treatment:
   medical:
     - 幼犬幼貓:2、4、6、8週齡驅蟲(pyrantel或fenbendazole)
@@ -59,10 +56,8 @@ treatment:
     - 鞭蟲:fenbendazole 50 mg/kg PO q24h×3天
     - 絛蟲:praziquantel 5-10 mg/kg PO一次
     - 梨形鞭毛蟲:metronidazole或fenbendazole,療程5-7天
-
 prognosis:
-  general: "定期驅蟲及糞便檢查可有效控制腸道寄生蟲。人畜共通寄生蟲需特別注意公共衛生。"
-
+  general: 定期驅蟲及糞便檢查可有效控制腸道寄生蟲。人畜共通寄生蟲需特別注意公共衛生。
 prevention:
   - 幼犬幼貓從2週齡開始驅蟲,每2週一次至3個月齡
   - 成犬成貓每月使用含廣效驅蟲成分的預防藥
@@ -71,36 +66,70 @@ prevention:
   - 避免接觸其他動物糞便
   - 控制跳蚤(絛蟲中間宿主)
   - 多貓家庭定期清潔消毒貓砂盆
-
-
 guidelineRefs:
   - sourceOrg: Pathogens (Basel, Switzerland)
     title: A Systematic Review of Zoonotic Enteric Parasites in Synanthropic Mammalian Species in Florida.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11728782/
     type: review
-    pmid: "39770325"
+    pmid: '39770325'
     relevance: primary
   - sourceOrg: Australian veterinary journal
     title: Australian guidelines for equine internal parasite management.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11962583/
     type: review
-    pmid: "39837536"
+    pmid: '39837536'
     relevance: primary
   - sourceOrg: Pathogens and global health
-    title: "Parasites in surgically removed appendices as a neglected public health concern: a systematic review and meta-analysis."
+    title: >-
+      Parasites in surgically removed appendices as a neglected public health concern: a systematic review and
+      meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9387334/
     type: review
-    pmid: "34842078"
+    pmid: '34842078'
     relevance: primary
   - sourceOrg: One health (Amsterdam, Netherlands)
-    title: Preventive chemotherapy and anthelmintic resistance of soil-transmitted helminths - Can we learn nothing from veterinary medicine?
+    title: >-
+      Preventive chemotherapy and anthelmintic resistance of soil-transmitted helminths - Can we learn nothing from
+      veterinary medicine?
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6957790/
     type: review
-    pmid: "31956691"
+    pmid: '31956691'
     relevance: supporting
   - sourceOrg: Scientific reports
     title: Evaluation of a novel vaccine candidate derived from newly excysted juveniles of Fasciola hepatica in sheep.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12049522/
     type: research
-    pmid: "40319070"
+    pmid: '40319070'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: abdominal-distension
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 腸道寄生蟲預防 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - abdominal-distension 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便浮游檢查
+          notes: 檢測蟲卵,建議每年至少2-4次
+        - name: Giardia抗原檢測
+          notes: SNAP test或ELISA,梨形鞭毛蟲不易在糞檢發現
+        - name: 絛蟲片節觀察
+          notes: 肛門周圍或糞便中發現米粒狀片節
+ddxSource: auto-generated

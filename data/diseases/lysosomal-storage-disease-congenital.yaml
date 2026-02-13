@@ -3,11 +3,11 @@ nameEn: Lysosomal Storage Disease Congenital
 nameZh: 先天性溶酶體儲積症
 bodySystem: neurology
 description: 溶酶體儲積症為一群溶酶體酵素缺陷導致代謝產物在細胞內異常蓄積的遺傳性疾病。影響中樞神經系統為主，表現為進行性神經退化。種類繁多，包括神經節苷脂儲積症、黏多醣儲積症等。
-
 aliases:
-  - { alias: 先天性溶酶體儲積症, language: zh }
-  - { alias: Lysosomal Storage Disease Congenital, language: en }
-
+  - alias: 先天性溶酶體儲積症
+    language: zh
+  - alias: Lysosomal Storage Disease Congenital
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 先天性疾病，偶見於貓。
-
 etiology:
   categories:
     - name: 先天/遺傳因素
@@ -23,18 +22,15 @@ etiology:
         - 遺傳性發育異常
         - 基因突變
         - 胚胎發育障礙
-
 clinicalSigns:
   early:
     - 出生時或幼年期即可發現異常
   progressive:
     - 症狀隨年齡可能穩定或進展
-
 diagnosis:
   primaryTests:
     - name: 臨床與影像檢查
       notes: 依據具體疾病選擇適當檢查方法。基因檢測可確診部分遺傳性疾病
-
 treatment:
   principles:
     - 依疾病類型選擇保守或手術治療
@@ -42,26 +38,76 @@ treatment:
   general:
     - 對症支持治療
     - 基因篩選避免繁殖出受影響個體
-
 prognosis: 預後不良。多數為進行性致命疾病。神經退化不可逆。確診後中位存活時間數月至1-2年。繁殖篩選（基因檢測或酵素活性測定）為唯一預防策略。
-
-
 guidelineRefs:
   - sourceOrg: Journal of applied genetics
     title: Impact of gene therapy for canine monogenic diseases on the progress of preclinical studies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7148265/
     type: review
-    pmid: "32189222"
+    pmid: '32189222'
   - sourceOrg: Cellular and molecular gastroenterology and hepatology
     title: A Functional Relationship Between UNC45A and MYO5B Connects Two Rare Diseases With Shared Enteropathy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9218578/
     type: research
-    pmid: "35421597"
+    pmid: '35421597'
   - sourceOrg: Nature communications
     title: The glycosylation design space for recombinant lysosomal replacement enzymes produced in CHO cells.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6491494/
     type: research
-    pmid: "31040271"
+    pmid: '31040271'
 pubmedQueries:
   - query: '"Lysosomal Storage Disease Congenital" AND (veterinary OR canine OR feline) AND (treatment OR management)'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 溶酶體儲積症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估幼齡動物進行性神經症狀和品種背景
+      findings:
+        - 幼年動物進行性神經退化
+        - 品種易感性
+        - 生長發育遲緩
+        - 視覺障礙或行為異常
+    - step: 2
+      action: 血液學與生化檢查
+      details: 進行血液學和相關酶學檢查
+      findings:
+        - 白血球內異常顆粒或空泡
+        - 血漿特定酶活性降低
+        - 尿液寡醣或黏多醣排出異常
+        - 肝臟酶可能異常
+    - step: 3
+      action: 進階影像學
+      details: 進行MRI評估腦部結構變化
+      findings:
+        - 腦白質異常信號
+        - 腦室擴大
+        - 腦萎縮
+        - 小腦萎縮
+    - step: 4
+      action: 酶學與基因診斷
+      details: 進行特定酶活性測定和基因檢測確診
+      findings:
+        - 白血球或成纖維細胞特定酶活性測定
+        - 基因突變檢測（部分疾病可用）
+        - 組織活檢見特徵性儲積物
+        - 電子顯微鏡見特徵性包涵體
+clinicalPearls:
+  - 幼齡動物出現進行性神經退化 — 需將溶酶體儲積症列入鑑別診斷
+  - 周邊血液抹片檢查淋巴球有無空泡是簡便的初步篩查方法
+  - 繁殖犬貓的品種特異性基因檢測是預防此類疾病的最有效策略
+  - 同窩動物可能也受影響 — 建議對同窩幼犬/幼貓進行篩查
+monitoringItems:
+  - 每 2-4 週評估神經學功能退化速度
+  - 定期評估生活品質（進食能力、行動能力、認知狀態）
+  - 癲癇控制情況追蹤
+  - 遺傳諮詢及繁殖犬貓的基因篩檢建議
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: hepatomegaly
+    frequency: rare
+  - symptomId: splenomegaly
+    frequency: rare
+ddxSource: book

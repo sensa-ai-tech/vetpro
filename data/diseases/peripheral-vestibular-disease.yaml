@@ -2,12 +2,14 @@ slug: peripheral-vestibular-disease
 nameEn: Peripheral Vestibular Disease
 nameZh: 周邊前庭疾病
 bodySystem: neurology
-description: 周邊前庭疾病為內耳前庭系統或前庭蝸牛神經（cranial nerve VIII）病變導致的平衡障礙。犬貓常見原因包括中耳炎/內耳炎（otitis media/interna）、特發性前庭症候群與腫瘤。臨床特徵為頭部傾斜、眼球震顫、共濟失調與前旋。需與中樞性前庭疾病鑑別。
-
+description: >-
+  周邊前庭疾病為內耳前庭系統或前庭蝸牛神經（cranial nerve VIII）病變導致的平衡障礙。犬貓常見原因包括中耳炎/內耳炎（otitis
+  media/interna）、特發性前庭症候群與腫瘤。臨床特徵為頭部傾斜、眼球震顫、共濟失調與前旋。需與中樞性前庭疾病鑑別。
 aliases:
-  - { alias: 周邊型前庭疾病, language: zh }
-  - { alias: Peripheral Vestibular Syndrome, language: en }
-
+  - alias: 周邊型前庭疾病
+    language: zh
+  - alias: Peripheral Vestibular Syndrome
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -15,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓隻周邊前庭疾病常見。中耳炎（常與上呼吸道感染或鼻咽息肉相關）、特發性前庭症候群、耳道腫瘤。
-
 etiology:
   categories:
     - name: 感染性
@@ -28,7 +29,6 @@ etiology:
         - 耳道腫瘤（ceruminous gland adenocarcinoma）
         - 耳毒性藥物（Aminoglycosides）
         - 甲狀腺功能低下相關（犬隻，有爭議）
-
 clinicalSigns:
   early:
     - 急性頭部傾斜（向病側）
@@ -40,37 +40,71 @@ clinicalSigns:
     - 食慾下降
     - Horner syndrome（同側，中耳病變時）
     - 面神經麻痺（同側，中耳病變時）
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
       notes: 區分周邊 vs 中樞性前庭疾病。周邊型：水平/旋轉性眼球震顫、無姿勢反應缺損、無意識改變。中樞型：垂直眼球震顫、姿勢反應缺損、可能有意識改變。
     - name: 影像學
       notes: 耳道鏡檢查（tympanic membrane 評估）。頭部 CT 或 MRI（評估鼓泡 bulla、內耳、腦幹）。CT 優於 X 光評估鼓泡病變。
-
 treatment:
   principles:
     - 治療基礎原因
     - 中耳炎需長期抗生素
     - 特發性型預後良好
   general:
-    - "中耳炎：長期抗生素（4-6 週以上），根據培養結果"
-    - "經驗性抗生素：Amoxicillin-Clavulanate 或 Enrofloxacin + Clindamycin"
+    - 中耳炎：長期抗生素（4-6 週以上），根據培養結果
+    - 經驗性抗生素：Amoxicillin-Clavulanate 或 Enrofloxacin + Clindamycin
     - 嚴重中耳炎：全耳道切除 + 鼓泡骨切開術（TECA-BO）
-    - "止吐：Maropitant（Cerenia）1 mg/kg SC/PO q24h"
+    - 止吐：Maropitant（Cerenia）1 mg/kg SC/PO q24h
     - 支持性護理（輔助進食、防止跌倒）
     - 特發性型：支持性治療（通常 2-4 週內自行改善）
     - 貓隻鼻咽息肉：手術摘除
-
 prognosis: 特發性前庭症候群預後良好，多數在 2-4 週內顯著改善。殘餘輕微頭部傾斜可能持續。中耳炎經適當長期抗生素治療預後尚可。耳毒性藥物引起者停藥後可能部分改善。耳道腫瘤預後取決於腫瘤類型。
-
-
 guidelineRefs:
   - sourceOrg: BMC veterinary research
-    title: "Clinical signs, MRI findings and outcome in dogs with peripheral vestibular disease: a retrospective study."
+    title: 'Clinical signs, MRI findings and outcome in dogs with peripheral vestibular disease: a retrospective study.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7249679/
     type: research
-    pmid: "32450859"
+    pmid: '32450859'
 pubmedQueries:
   - query: '"peripheral vestibular disease" AND (veterinary OR canine OR feline) AND ("otitis" OR "treatment" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: head-tilt
+    frequency: common
+  - symptomId: nystagmus
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: trembling
+    frequency: common
+diagnosticAlgorithm:
+  title: 周邊前庭疾病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - ataxia 相關症狀
+        - head-tilt 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 區分周邊 vs 中樞性前庭疾病。周邊型：水平/旋轉性眼球震顫、無姿勢反應缺損、無意識改變。中樞型：垂直眼球震顫、姿勢反應缺損、可能有意識改變。
+        - name: 影像學
+          notes: 耳道鏡檢查（tympanic membrane 評估）。頭部 CT 或 MRI（評估鼓泡 bulla、內耳、腦幹）。CT 優於 X 光評估鼓泡病變。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎原因
+        - 中耳炎需長期抗生素
+        - 特發性型預後良好
+ddxSource: auto-generated

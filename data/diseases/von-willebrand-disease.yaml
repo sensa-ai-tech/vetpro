@@ -3,23 +3,27 @@ nameEn: Von Willebrand Disease
 nameZh: 乏乙烯布蘭德氏症
 bodySystem: hematology
 description: 乏乙烯布蘭德因子 (vWF) 量的減少或質的異常導致的遺傳性出血疾病，為犬最常見的遺傳性凝血障礙，分為 Type 1、2、3 三型。
-
 aliases:
-  - { alias: vWD, language: en }
-  - { alias: Von Willebrand's Disease, language: en }
-  - { alias: 乏乙烯布蘭德氏病, language: zh }
-  - { alias: 乙乙布蘭德氏病, language: zh }
-
+  - alias: vWD
+    language: en
+  - alias: Von Willebrand's Disease
+    language: en
+  - alias: 乏乙烯布蘭德氏病
+    language: zh
+  - alias: 乙乙布蘭德氏病
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
-    notes: 犬最常見的遺傳性出血疾病。Type 1 好發 Doberman Pinscher (盛行率 >50%)、German Shepherd、Golden Retriever、Shetland Sheepdog、Pembroke Welsh Corgi。Type 2 好發 German Shorthaired Pointer、German Wirehaired Pointer。Type 3 好發 Scottish Terrier、Shetland Sheepdog、Dutch Kooiker。體染色體遺傳。
+    notes: >-
+      犬最常見的遺傳性出血疾病。Type 1 好發 Doberman Pinscher (盛行率 >50%)、German Shepherd、Golden Retriever、Shetland Sheepdog、Pembroke
+      Welsh Corgi。Type 2 好發 German Shorthaired Pointer、German Wirehaired Pointer。Type 3 好發 Scottish Terrier、Shetland
+      Sheepdog、Dutch Kooiker。體染色體遺傳。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓極為罕見。僅有少數病例報告。Himalayan 品種有報告。
-
 etiology:
   categories:
     - name: Type 1 (量的減少，最常見)
@@ -40,9 +44,10 @@ etiology:
         - 體染色體隱性遺傳
         - 好發品種：Scottish Terrier、Shetland Sheepdog、Dutch Kooiker
         - 出血嚴重，致命性風險最高
-
-pathophysiology: von Willebrand factor (vWF) 是一種大型多聚體醣蛋白，由血管內皮細胞與巨核球合成。vWF 的主要功能為：(1) 介導血小板黏附至受損血管壁的暴露膠原 (透過 GPIb/IX/V 受體)，(2) 作為第八凝血因子 (Factor VIII) 的載體蛋白保護其不被分解。vWF 缺乏或異常導致初級止血障礙——血小板無法有效黏附至損傷部位形成血小板栓。高分子量多聚體 (high molecular weight multimers, HMWM) 止血效能最強，因此 Type 2 (HMWM 選擇性缺失) 出血較 Type 1 (等比例減少) 嚴重。Type 3 完全缺乏 vWF 且 Factor VIII 因失去載體保護而加速分解，導致初級與次級止血均受影響。
-
+pathophysiology: >-
+  von Willebrand factor (vWF) 是一種大型多聚體醣蛋白，由血管內皮細胞與巨核球合成。vWF 的主要功能為：(1) 介導血小板黏附至受損血管壁的暴露膠原 (透過 GPIb/IX/V 受體)，(2) 作為第八凝血因子
+  (Factor VIII) 的載體蛋白保護其不被分解。vWF 缺乏或異常導致初級止血障礙——血小板無法有效黏附至損傷部位形成血小板栓。高分子量多聚體 (high molecular weight multimers, HMWM)
+  止血效能最強，因此 Type 2 (HMWM 選擇性缺失) 出血較 Type 1 (等比例減少) 嚴重。Type 3 完全缺乏 vWF 且 Factor VIII 因失去載體保護而加速分解，導致初級與次級止血均受影響。
 clinicalSigns:
   early:
     - 黏膜出血 (口腔、鼻腔)
@@ -60,27 +65,25 @@ clinicalSigns:
     - 關節出血 (hemarthrosis，罕見，較血友病少)
     - 嚴重貧血 (失血性)
     - 外科或產科致命性出血
-
 diagnosis:
   primaryTests:
     - name: vWF 抗原濃度 (vWF:Ag)
-      notes: "金標準。ELISA 法。正常 >70%。Type 1：通常 15-60%。Type 3：<1% 或測不到。注意：緊迫、運動、懷孕可暫時升高 vWF"
+      notes: 金標準。ELISA 法。正常 >70%。Type 1：通常 15-60%。Type 3：<1% 或測不到。注意：緊迫、運動、懷孕可暫時升高 vWF
     - name: 頰黏膜出血時間 (BMBT)
-      notes: "初級止血功能篩檢。使用標準化切口裝置 (Surgicutt)。正常犬 <4 分鐘。vWD 延長。術前簡易篩檢"
+      notes: 初級止血功能篩檢。使用標準化切口裝置 (Surgicutt)。正常犬 <4 分鐘。vWD 延長。術前簡易篩檢
     - name: 基因檢測 (DNA test)
-      notes: "可用於 Type 1 (Doberman、Corgi 等)、Type 2 (GSP) 與 Type 3 (Scottish Terrier、Shetland Sheepdog)。繁殖篩檢首選"
+      notes: 可用於 Type 1 (Doberman、Corgi 等)、Type 2 (GSP) 與 Type 3 (Scottish Terrier、Shetland Sheepdog)。繁殖篩檢首選
   imaging:
     - name: 腹部超音波
-      notes: "評估出血部位 (脾臟、腹腔出血)"
+      notes: 評估出血部位 (脾臟、腹腔出血)
     - name: 胸腔 X 光
-      notes: "排除出血相關併發症"
+      notes: 排除出血相關併發症
   additional:
     - CBC (評估貧血程度、血小板計數正常)
     - PT/APTT (Type 1-2 通常正常；Type 3 APTT 可能延長因 Factor VIII 降低)
     - vWF 多聚體分析 (區分 Type 1 vs Type 2，需專門實驗室)
     - 甲狀腺功能 (甲狀腺低下可降低 vWF，治療後改善)
     - 排除其他出血原因 (血小板減少、凝血因子缺乏)
-
 treatment:
   principles:
     - 無法根治，治療為支持性與預防性
@@ -90,16 +93,16 @@ treatment:
     - 繁殖管理 (基因檢測篩選)
   medications:
     - name: Desmopressin (DDAVP)
-      dose: "1 μg/kg SC/IV 稀釋緩慢給予 (術前 30 分鐘)"
+      dose: 1 μg/kg SC/IV 稀釋緩慢給予 (術前 30 分鐘)
       notes: 刺激內皮細胞釋放 vWF 儲存。僅對 Type 1 有效 (可提升 vWF 2-5 倍)。Type 2、3 無效或效果極有限。效果持續 2-4 小時。反覆使用效力遞減 (tachyphylaxis)
     - name: Cryoprecipitate
-      dose: "1 單位/10 kg IV"
+      dose: 1 單位/10 kg IV
       notes: 含高濃度 vWF + Factor VIII + Fibrinogen。所有 Type vWD 出血的首選血液製品。量少但 vWF 含量高
     - name: 新鮮冷凍血漿 (FFP)
-      dose: "10-20 mL/kg IV"
+      dose: 10-20 mL/kg IV
       notes: Cryoprecipitate 不可得時的替代。vWF 濃度較低，需大量輸注。注意容量負荷
     - name: Aminocaproic acid (EACA)
-      dose: "100-200 mg/kg PO TID"
+      dose: 100-200 mg/kg PO TID
       notes: 抗纖溶。口腔/鼻腔黏膜出血的輔助治療
   general:
     - 術前計畫：高風險品種術前檢測 vWF:Ag 或 BMBT
@@ -109,44 +112,100 @@ treatment:
     - 基因檢測篩選繁殖犬 (攜帶者 × 攜帶者 = 25% 患犬)
     - 避免外傷性活動
     - 戴牌提醒獸醫注意出血風險
-
-emergencyNotes: 嚴重出血為急症。立即輸注 cryoprecipitate (首選) 或 FFP。Type 1 可先試 DDAVP 1 μg/kg SC。失血性貧血需輸 pRBC。直接壓迫止血。避免 NSAIDs 止痛 (改用 opioid)。Type 3 手術中可能需反覆輸注 cryoprecipitate (每 6-12 小時)。
-
+emergencyNotes: >-
+  嚴重出血為急症。立即輸注 cryoprecipitate (首選) 或 FFP。Type 1 可先試 DDAVP 1 μg/kg SC。失血性貧血需輸 pRBC。直接壓迫止血。避免 NSAIDs 止痛 (改用 opioid)。Type
+  3 手術中可能需反覆輸注 cryoprecipitate (每 6-12 小時)。
 prognosis: Type 1 多數犬症狀輕微至中度，日常管理佳，術前預防得當可安全進行手術。Type 2 出血較嚴重但適當管理仍可維持。Type 3 最嚴重，有自發性致命性出血風險，預後較差。所有類型透過繁殖管理 (基因檢測) 可有效降低後代罹病率。
-
 guidelineRefs:
   - sourceOrg: Iranian journal of veterinary research
     title: Clinical and laboratorial description of the differential diagnoses of hemostatic disorders in the horse.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7183377/
     type: review
-    pmid: "32368218"
+    pmid: '32368218'
   - sourceOrg: Equine veterinary journal
     title: Genetics of equine bleeding disorders.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7704864/
     type: review
-    pmid: "32463964"
+    pmid: '32463964'
   - sourceOrg: Seminars in hematology
     title: Animal models of hemophilia and related bleeding disorders.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3742033/
     type: review
-    pmid: "23956467"
+    pmid: '23956467'
   - sourceOrg: Research and practice in thrombosis and haemostasis
     title: A rat model of severe VWD by elimination of the VWF gene using CRISPR/Cas9.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6971331/
     type: research
-    pmid: "31989086"
+    pmid: '31989086'
     relevance: supporting
   - sourceOrg: Journal of blood medicine
-    title: Structure and Function of Recombinant versus Plasma-Derived von Willebrand Factor and Impact on Multimer Pharmacokinetics in von Willebrand Disease.
+    title: >-
+      Structure and Function of Recombinant versus Plasma-Derived von Willebrand Factor and Impact on Multimer
+      Pharmacokinetics in von Willebrand Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9673800/
     type: research
-    pmid: "36405429"
+    pmid: '36405429'
     relevance: supporting
 pubmedQueries:
   - query: '"von Willebrand disease" AND (dog OR canine) AND ("diagnosis" OR "treatment" OR "DDAVP")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "END"
-  sectionTitle: "DISEASE"
+  chapter: END
+  sectionTitle: DISEASE
   pdfPage: 582
+diagnosticAlgorithm:
+  title: 乏乙醯蘭特氏病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 詢問出血病史，確認品種傾向（杜賓犬、德牧、黃金獵犬等）
+      findings:
+        - 黏膜出血傾向（牙齦/鼻腔）
+        - 手術或外傷後出血時間延長
+        - 發情出血或分娩出血過多
+        - 品種遺傳傾向
+    - step: 2
+      action: 凝血篩檢
+      details: 基礎凝血功能檢測與頰黏膜出血時間
+      findings:
+        - 頰黏膜出血時間延長（BMBT >4分鐘）
+        - PT和aPTT通常正常
+        - 血小板計數正常
+        - 血液抹片無異常
+    - step: 3
+      action: vWF抗原定量
+      details: von Willebrand因子抗原定量為確診金標準
+      findings:
+        - vWF:Ag<50%為異常
+        - vWF:Ag<35%有臨床出血風險
+        - 分型（第1/2/3型）
+        - 基因檢測可確認攜帶者
+    - step: 4
+      action: 術前評估
+      details: 計劃手術前的風險評估與預防措施
+      findings:
+        - 評估出血風險等級
+        - 備血或新鮮冷凍血漿
+        - Desmopressin（DDAVP）反應測試（第1型）
+        - 避免影響血小板功能的藥物
+clinicalPearls:
+  - DDAVP僅對Type 1有效，對Type 2和Type 3無效
+  - 杜賓犬是vWD最高發病品種，繁殖前應基因篩檢
+  - 手術前高風險品種應檢測vWF:Ag
+  - vWD犬的血小板計數通常正常，但BMBT延長
+  - 避免使用NSAIDs和其他影響血小板功能的藥物
+  - 甲狀腺功能低下可降低vWF濃度，治療後vWF可改善
+monitoringItems:
+  - 手術前後密切監測出血
+  - 定期vWF:Ag監測無必要（先天性穩定數值）
+  - 繁殖犬基因篩檢
+  - 監測是否有甲狀腺功能低下（可加重出血傾向）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: petechiae-ecchymoses
+    frequency: common
+ddxSource: book

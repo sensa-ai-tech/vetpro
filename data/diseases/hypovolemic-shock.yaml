@@ -1,0 +1,126 @@
+slug: hypovolemic-shock
+nameEn: Hypovolemic Shock
+nameZh: 低血容積性休克
+description: 因血管內容量嚴重不足導致心搏出量降低、組織灌流不全的休克類型。可因失血（出血性）或非出血性體液喪失（嚴重嘔吐、腹瀉、第三間隙積液、燒傷）引起。是小動物急診中最常見的休克類型。
+bodySystem: cardiovascular
+species:
+  - speciesCommon: dog
+  - speciesCommon: cat
+etiology:
+  categories:
+    - name: Risk Factors
+      examples:
+        - 創傷
+        - 嚴重嘔吐腹瀉（腸胃炎、腸阻塞）
+        - 第三間隙體液喪失（腹膜炎、胰臟炎）
+        - 嚴重燒傷
+        - 大量出血（手術、腫瘤破裂）
+clinicalSigns:
+  early:
+    - 已知體液喪失病因（嘔吐、腹瀉、創傷、出血）
+    - 進行性虛弱
+    - 食慾廢絕
+    - 尿量減少
+    - 意識改變
+  progressive:
+    - 心搏過速
+    - 脈搏微弱細速
+    - 黏膜蒼白或灰白
+    - CRT延長>2秒
+    - 皮膚彈性降低（脫水）
+    - 低血壓（收縮壓<90 mmHg）
+    - 四肢冰冷
+    - 嗜睡或昏迷
+diagnosis:
+  primaryTests:
+    - PCV/TP（快速評估）
+    - 血壓測量
+    - 乳酸測定
+    - 電解質+血糖
+    - BUN/Crea（腎灌流評估）
+  additional:
+    - 血氣分析（酸鹼平衡）
+    - TFAST/AFAST超音波（腔體積液）
+    - 凝血功能
+    - CVP測量（指導輸液）
+treatment:
+  principles:
+    - 等張晶體液：犬shock dose 60-90 mL/kg（分1/4劑量bolus，每次評估反應），貓40-60 mL/kg
+    - 快速輸液bolus：犬20-25 mL/kg over 15-30 min，貓10-20 mL/kg over 15-30 min
+    - 膠體液：Hetastarch 5 mL/kg bolus（低蛋白或持續低血壓時）
+    - 高張鹽水：7.5% NaCl 3-5 mL/kg over 5-10 min（快速擴容，出血性低容積）
+    - 輸血：PCV<20%（急性出血）→pRBC 10-20 mL/kg
+    - 電解質矯正：低鉀血症、低鈣血症等
+  general:
+    - 治療潛在病因（止血、止瀉、手術）
+    - 維持輸液（維持需求量+持續喪失量+脫水矯正量）
+    - 營養支持（早期腸道營養）
+    - 逐步減少輸液速率
+prognosis: 輕中度低血容積性休克經適當輸液復甦預後良好。重度休克（失代償期）且合併多器官功能障礙者死亡率顯著增高。預後取決於病因可逆性、介入時間及器官損傷程度。乳酸清除率是重要預後指標。
+diagnosticAlgorithm:
+  title: 低血容積性休克 診斷與處置流程
+  steps:
+    - step: 1
+      action: 休克辨識與分級
+      details: 評估灌流指標：HR、脈搏品質、CRT、黏膜、血壓、意識
+      findings:
+        - 代償期：心搏過速+黏膜正常+CRT正常
+        - 早期失代償：心搏過速+黏膜蒼白+CRT延長
+        - 晚期失代償：心搏過緩+黏膜灰白+低血壓
+        - 乳酸>4 mmol/L提示組織灌流不足
+    - step: 2
+      action: 病因評估
+      details: 判斷出血性vs非出血性體液喪失
+      findings:
+        - PCV/TP同步下降→出血性
+        - PCV正常+TP下降→蛋白喪失
+        - 病史：嘔吐/腹瀉→非出血性
+        - AFAST→腹腔/胸腔積液
+    - step: 3
+      action: 容積復甦
+      details: 分段式bolus輸液+評估反應
+      findings:
+        - 晶體液1/4 shock dose→15 min後評估
+        - HR下降+BP改善=正向反應
+        - 無反應→重複bolus或加膠體
+        - PCV<20%→輸血準備
+    - step: 4
+      action: 持續治療與監測
+      details: 維持灌流+治療病因+監測併發症
+      findings:
+        - 乳酸q2h追蹤清除率
+        - 尿量>1-2 mL/kg/hr
+        - MAP≥65 mmHg
+        - 治療潛在病因
+clinicalPearls:
+  - 低血容積性休克是小動物急診最常見休克類型，輸液是基石治療
+  - 犬的shock dose晶體液90 mL/kg、貓44-60 mL/kg——但不要一次全給，分1/4劑量逐步評估
+  - 高張鹽水可快速擴容但效果短暫（30-60分鐘），必須後續接等張晶體液
+  - 貓的輸液復甦要更保守——過量易導致肺水腫
+  - 乳酸清除率（每2小時下降>50%）比單一數值更能預測預後
+monitoringItems:
+  - 血壓（每15-30分鐘或連續）
+  - 乳酸（q2-4h，追蹤清除率）
+  - PCV/TP（q2-4h急性期）
+  - 尿量（>1-2 mL/kg/hr）
+  - 心率與脈搏品質
+  - 電解質與血糖
+  - 體重（輸液過量指標）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book-only

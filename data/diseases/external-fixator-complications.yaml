@@ -3,11 +3,11 @@ nameEn: External Fixator Complications
 nameZh: External Fixator Complications
 bodySystem: orthopedic
 description: 骨科手術或疾病的併發症。需及時識別與處理以避免治療失敗或長期後遺症。
-
 aliases:
-  - { alias: External Fixator Complications, language: zh }
-  - { alias: External Fixator Complications, language: en }
-
+  - alias: External Fixator Complications
+    language: zh
+  - alias: External Fixator Complications
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 外傷
       examples:
         - 退化性變化
         - 先天性異常
-
 clinicalSigns:
   early:
     - 跛行
@@ -32,56 +30,77 @@ clinicalSigns:
   progressive:
     - 肌肉萎縮
     - 關節畸形
-
 diagnosis:
   primaryTests:
     - name: 骨科檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: X光(多方位)
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 非類固醇消炎藥(Carprofen 2-4 mg/kg PO q12-24h)
     - 疼痛控制
   surgical:
     - name: 根據病況可能需手術治療(骨折固定、韌帶重建、關節置換等)
-      notes: "依病況評估"
-
+      notes: 依病況評估
 prognosis:
-  general: "預後取決於損傷嚴重度、治療方式與飼主配合度。早期適當治療可改善功能恢復。"
-
+  general: 預後取決於損傷嚴重度、治療方式與飼主配合度。早期適當治療可改善功能恢復。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Management of severe stifle trauma: 1. Stifle luxation."
+    title: 'Management of severe stifle trauma: 1. Stifle luxation.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10814416/
     type: review
-    pmid: "31018821"
+    pmid: '31018821'
   - sourceOrg: Open veterinary journal
-    title: Minimally invasive percutaneous elastic plate osteosynthesis as a treatment option for tibial diaphyseal fracture in skeletally immature dogs.
+    title: >-
+      Minimally invasive percutaneous elastic plate osteosynthesis as a treatment option for tibial diaphyseal fracture
+      in skeletally immature dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10824082/
     type: case-report
-    pmid: "38292707"
+    pmid: '38292707'
   - sourceOrg: Veterinary medicine and science
     title: Multiligament stifle injury, a multicenter retrospective study in 26 dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10188087/
     type: case-report
-    pmid: "36930812"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '36930812'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Healing of Comminuted Fractures of Long Bones in Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11815741/
     type: research
-    pmid: "39943184"
-  - sourceOrg: "Veterinary surgery : VS"
-    title: Linear external skeletal fixation applied in minimally invasive fashion for stabilization of nonarticular tibial fractures in dogs and cats.
+    pmid: '39943184'
+  - sourceOrg: 'Veterinary surgery : VS'
+    title: >-
+      Linear external skeletal fixation applied in minimally invasive fashion for stabilization of nonarticular tibial
+      fractures in dogs and cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10100410/
     type: research
-    pmid: "36382668"
+    pmid: '36382668'
+associatedSymptoms:
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: External Fixator Complications 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cachexia-muscle-wasting 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 骨科檢查
+          notes: 需詳細評估
+        - name: X光(多方位)
+          notes: 協助確診
+ddxSource: auto-generated

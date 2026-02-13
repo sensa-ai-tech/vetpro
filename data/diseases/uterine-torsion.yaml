@@ -3,11 +3,11 @@ nameEn: Uterine Torsion
 nameZh: 子宮扭轉
 bodySystem: reproductive
 description: 子宮軸向扭轉，導致血流阻斷及組織壞死。多見於懷孕末期母犬，罕見於貓。為急症，需緊急手術。
-
 aliases:
-  - { alias: 子宮扭曲, language: zh }
-  - { alias: Uterine Twist, language: en }
-
+  - alias: 子宮扭曲
+    language: zh
+  - alias: Uterine Twist
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓極罕見
-
 etiology:
   categories:
     - name: 危險因素
@@ -26,7 +25,6 @@ etiology:
         - 胎兒活動或外力撞擊
         - 單側子宮角過度擴張
         - 子宮蓄膿（非孕）
-
 clinicalSigns:
   early:
     - 急性腹痛
@@ -37,23 +35,21 @@ clinicalSigns:
     - 腹部膨大、觸診疼痛
     - 胎兒窘迫或死亡
     - 腹膜炎（子宮壞死破裂）
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "子宮扭轉、胎兒心跳消失或減弱"
+      notes: 子宮扭轉、胎兒心跳消失或減弱
     - name: 腹部X光
-      notes: "子宮位置異常、胎兒影像"
+      notes: 子宮位置異常、胎兒影像
     - name: 全血球計數及生化
-      notes: "白血球增多、電解質異常"
+      notes: 白血球增多、電解質異常
     - name: 剖腹探查
-      notes: "確診及治療"
+      notes: 確診及治療
   differentialDiagnoses:
     - 子宮破裂
     - 難產
     - 急性胃擴張扭轉
     - 脾臟扭轉
-
 treatment:
   medical:
     - 緊急穩定：IV輸液、氧氣、止痛
@@ -62,44 +58,105 @@ treatment:
     - 剖腹產取出胎兒
     - 卵巢子宮切除術（多數病例，子宮壞死）
     - 術後支持療法：廣效抗生素、止痛
-
 prognosis:
-  general: "預後保留。早期診斷及手術可能存活。胎兒存活率極低。延遲治療易致敗血症、DIC及死亡。"
-
+  general: 預後保留。早期診斷及手術可能存活。胎兒存活率極低。延遲治療易致敗血症、DIC及死亡。
 prevention:
   - 懷孕期避免劇烈活動或外力撞擊
   - 懷孕末期密切監測
   - 考慮絕育（根本預防）
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
-    title: "\"My Bitch Is Empty!\" An Overview of the Reasons for Pregnancy Loss in Dogs."
+    title: '"My Bitch Is Empty!" An Overview of the Reasons for Pregnancy Loss in Dogs.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11860774/
     type: review
-    pmid: "40005887"
+    pmid: '40005887'
     relevance: primary
   - sourceOrg: BMC veterinary research
-    title: "Protective effects of folic acid on ischemia&#x2012;reperfusion injury in rat uterus: reduces inflammation damage and apoptotic death."
+    title: >-
+      Protective effects of folic acid on ischemia&#x2012;reperfusion injury in rat uterus: reduces inflammation damage
+      and apoptotic death.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12288322/
     type: research
-    pmid: "40702451"
+    pmid: '40702451'
     relevance: supporting
   - sourceOrg: Animal models and experimental medicine
     title: A new animal model for uterine torsion and uterine ischemia-reperfusion studies, but not fetal hypoxia studies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6388049/
     type: research
-    pmid: "30891571"
+    pmid: '30891571'
     relevance: supporting
   - sourceOrg: Journal of equine science
-    title: "Factors affecting the prognosis for uterine torsion: the effect of treatment based on measurements of serum progesterone and estradiol concentrations after surgery."
+    title: >-
+      Factors affecting the prognosis for uterine torsion: the effect of treatment based on measurements of serum
+      progesterone and estradiol concentrations after surgery.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5735315/
     type: research
-    pmid: "29270075"
+    pmid: '29270075'
     relevance: supporting
   - sourceOrg: The Veterinary clinics of North America. Equine practice
-    title: "Managing Reproduction Emergencies in the Field: Part 1: Injuries in Stallions; Injury of the External Portion of the Reproductive Tract and Gestational Conditions in the Mare."
+    title: >-
+      Managing Reproduction Emergencies in the Field: Part 1: Injuries in Stallions; Injury of the External Portion of
+      the Reproductive Tract and Gestational Conditions in the Mare.
     url: https://pubmed.ncbi.nlm.nih.gov/34243877/
     type: review
-    pmid: "34243877"
+    pmid: '34243877'
     relevance: primary
+diagnosticAlgorithm:
+  title: 子宮扭轉 診斷流程
+  steps:
+    - step: 1
+      action: 急性腹痛評估
+      details: 理學檢查和病史
+      findings:
+        - 急性腹痛
+        - 妊娠或子宮病變史
+        - 休克徵象
+    - step: 2
+      action: 影像學
+      details: 超音波和X光
+      findings:
+        - 子宮異常腫大
+        - 子宮血流異常
+        - 腹腔液體
+    - step: 3
+      action: 穩定和準備手術
+      details: 休克矯正+手術準備
+      findings:
+        - IV輸液抗休克
+        - 血液檢查
+        - 凝血功能
+    - step: 4
+      action: 手術探查
+      details: 開腹確診+治療
+      findings:
+        - 子宮扭轉確認
+        - 組織活力評估
+        - OHE±剖腹產
+clinicalPearls:
+  - 子宮扭轉是罕見但致命的急症
+  - 妊娠晚期急性腹痛+分娩停滯→考慮子宮扭轉
+  - 確診通常需手術探查
+  - 及時手術是改善預後的關鍵
+monitoringItems:
+  - 術後生命徵象
+  - 腹膜炎徵象
+  - 傷口癒合
+  - DIC監測
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: pallor-cyanosis
+    frequency: rare
+  - symptomId: tachycardia-bradycardia
+    frequency: rare
+  - symptomId: dehydration
+    frequency: rare
+ddxSource: book

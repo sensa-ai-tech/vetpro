@@ -2,12 +2,15 @@ slug: rabies
 nameEn: Rabies
 nameZh: 狂犬病
 bodySystem: neurology
-description: 狂犬病為狂犬病病毒（Rabies virus，Lyssavirus 屬，Rhabdoviridae 科）感染中樞神經系統導致的致命性腦脊髓炎。為重要人畜共通傳染病。透過被感染動物咬傷傳播（唾液中病毒經傷口進入）。臨床分為狂躁型（furious）與癱瘓型（dumb/paralytic）。一旦出現臨床症狀幾乎 100% 致死。疫苗接種為最有效預防。
-
+description: >-
+  狂犬病為狂犬病病毒（Rabies virus，Lyssavirus 屬，Rhabdoviridae
+  科）感染中樞神經系統導致的致命性腦脊髓炎。為重要人畜共通傳染病。透過被感染動物咬傷傳播（唾液中病毒經傷口進入）。臨床分為狂躁型（furious）與癱瘓型（dumb/paralytic）。一旦出現臨床症狀幾乎 100%
+  致死。疫苗接種為最有效預防。
 aliases:
-  - { alias: 瘋狗病, language: zh }
-  - { alias: Hydrophobia, language: en }
-
+  - alias: 瘋狗病
+    language: zh
+  - alias: Hydrophobia
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +18,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻狂犬病在美國等已開發國家已超過犬隻成為最常報告的家畜狂犬病動物。流浪貓接觸野生動物風險高。
-
 etiology:
   categories:
     - name: 病原體
@@ -28,7 +30,6 @@ etiology:
         - 被感染動物咬傷（唾液中病毒經傷口進入）
         - 野生動物儲主（蝙蝠、浣熊、臭鼬、狐狸）
         - 極罕見經黏膜或氣霧傳播
-
 clinicalSigns:
   early:
     - 行為改變（友善動物變攻擊性或害怕動物變親人）
@@ -40,14 +41,12 @@ clinicalSigns:
     - 嚴重流涎（吞嚥困難相關）
     - 癲癇
     - 昏迷與死亡（通常發病後 3-7 天）
-
 diagnosis:
   primaryTests:
     - name: 死後腦組織檢查
       notes: 確診為死後診斷。直接免疫螢光試驗（DFA/dFA）檢測腦組織中病毒抗原——金標準。腦組織 RT-PCR。Negri bodies（嗜酸性胞質內包涵體）在海馬迴與 Purkinje 細胞。
     - name: 生前診斷
       notes: 生前確診困難。皮膚活檢（頸背毛囊周圍神經 DFA）。唾液 RT-PCR。血清抗體效價（未接種動物陽性有意義）。角膜壓片。
-
 treatment:
   principles:
     - 無有效治療
@@ -59,41 +58,93 @@ treatment:
     - 疑似暴露動物：依據當地法規隔離觀察（已接種動物 45-90 天，未接種動物通常建議安樂死）
     - 暴露後預防（人類）：傷口清洗 + 狂犬病免疫球蛋白 + 疫苗
     - 預防為核心：定期疫苗接種
-
 prognosis: 臨床症狀出現後幾乎 100% 致死。無有效治療。預防接種為唯一有效防護。暴露後迅速處理（人類）可防止發病。獸醫人員為職業暴露高風險群。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
     title: 2020 AAHA/AAFP Feline Vaccination Guidelines.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11135662/
     type: guideline
-    pmid: "32845224"
+    pmid: '32845224'
     relevance: primary
   - sourceOrg: Vaccines
-    title: "Equids' Core Vaccines Guidelines in North America: Considerations and Prospective."
+    title: 'Equids'' Core Vaccines Guidelines in North America: Considerations and Prospective.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8955191/
     type: review
-    pmid: "35335029"
+    pmid: '35335029'
     relevance: primary
   - sourceOrg: PLoS neglected tropical diseases
-    title: "Rabies epidemiology, prevention and control in Nigeria: Scoping progress towards elimination."
+    title: 'Rabies epidemiology, prevention and control in Nigeria: Scoping progress towards elimination.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8389847/
     type: review
-    pmid: "34398902"
+    pmid: '34398902'
     relevance: primary
   - sourceOrg: Veterinary medicine (Auckland, N.Z.)
-    title: "Vaccine-associated feline sarcoma: current perspectives."
+    title: 'Vaccine-associated feline sarcoma: current perspectives.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6042530/
     type: review
-    pmid: "30050850"
+    pmid: '30050850'
     relevance: supporting
   - sourceOrg: Bulletin of the World Health Organization
-    title: "Pre-exposure rabies prophylaxis: a systematic review."
+    title: 'Pre-exposure rabies prophylaxis: a systematic review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5328107/
     type: review
-    pmid: "28250534"
+    pmid: '28250534'
     relevance: supporting
 pubmedQueries:
   - query: '"rabies" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "vaccination" OR "epidemiology")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 狂犬病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 詢問咬傷史、疫苗史及神經行為變化
+      findings:
+        - 行為急劇改變
+        - 攻擊性增加或異常溫順
+        - 流涎過多
+        - 吞嚥困難
+    - step: 2
+      action: 神經學檢查
+      details: 全面神經學評估
+      findings:
+        - 進行性神經功能障礙
+        - 瞳孔不等大
+        - 下頜麻痺
+        - 漸進性癱瘓
+    - step: 3
+      action: 隔離觀察
+      details: 法規要求的隔離觀察程序
+      findings:
+        - 10天隔離觀察（已接種犬）
+        - 觀察期內監測神經症狀進展
+        - 疑似病例通報衛生單位
+    - step: 4
+      action: 死後確診
+      details: 腦組織螢光抗體檢測（FAT）
+      findings:
+        - 直接螢光抗體法（DFA）
+        - Negri體（組織病理）
+        - RT-PCR確認
+        - 注意：活體無法確診
+clinicalPearls:
+  - 法定傳染病，必須通報
+  - 人類暴露後需緊急處理
+  - 疫苗是唯一預防方法
+  - 「麻痺型」比「狂躁型」更常見
+monitoringItems:
+  - 隔離觀察
+associatedSymptoms:
+  - symptomId: dysphagia
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: uncommon
+ddxSource: book

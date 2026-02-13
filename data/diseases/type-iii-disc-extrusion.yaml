@@ -3,12 +3,13 @@ nameEn: Type III Disc Extrusion
 nameZh: 第三型椎間盤突出
 bodySystem: neurology
 description: 急性非壓迫性髓核突出,高速衝擊脊髓導致脊髓挫傷而非持續壓迫,症狀急性嚴重但影像學壓迫輕微,多不需手術。
-
 aliases:
-  - { alias: Acute non-compressive nucleus pulposus extrusion, language: en }
-  - { alias: ANNPE, language: en }
-  - { alias: 急性非壓迫性髓核突出, language: zh }
-
+  - alias: Acute non-compressive nucleus pulposus extrusion
+    language: en
+  - alias: ANNPE
+    language: en
+  - alias: 急性非壓迫性髓核突出
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓罕見
-
 etiology:
   categories:
     - name: 高速髓核突出
@@ -32,7 +32,6 @@ etiology:
         - 直接機械性損傷
         - 繼發性血管損傷、水腫
         - 發炎反應、細胞凋亡
-
 clinicalSigns:
   early:
     - 運動或跳躍後突發性癱瘓或嚴重無力
@@ -43,40 +42,61 @@ clinicalSigns:
     - 本體感覺缺失
     - 深層痛覺可能存在或喪失
     - 症狀於24-72小時內可能自行改善或維持穩定
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
-      notes: "症狀嚴重程度與影像學壓迫程度不成比例"
+      notes: 症狀嚴重程度與影像學壓迫程度不成比例
     - name: MRI
-      notes: "脊髓T2高訊號(挫傷、水腫),椎管內少量髓核物質,無明顯壓迫"
+      notes: 脊髓T2高訊號(挫傷、水腫),椎管內少量髓核物質,無明顯壓迫
     - name: CT myelography
-      notes: "可見少量椎管內物質,但脊髓壓迫輕微"
+      notes: 可見少量椎管內物質,但脊髓壓迫輕微
   differentialDiagnoses:
     - 第一型椎間盤突出(有明顯壓迫)
     - 纖維軟骨栓塞(FCE,症狀相似但MRI無椎管內物質)
     - 脊椎骨折或脫位
     - 脊髓腫瘤
-
 treatment:
   medical:
     - 主要為內科支持治療(多不需手術):
-      - 嚴格籠休4-6週
-      - 糖皮質激素爭議性(Methylprednisolone 30 mg/kg IV僅於發病6小時內,爭議大)
-      - NSAIDs(Carprofen 2-4 mg/kg PO BID,疼痛控制)
-      - 物理治療、水療
-      - 膀胱管理(導尿或擠壓)
+        - 嚴格籠休4-6週
+        - 糖皮質激素爭議性(Methylprednisolone 30 mg/kg IV僅於發病6小時內,爭議大)
+        - NSAIDs(Carprofen 2-4 mg/kg PO BID,疼痛控制)
+        - 物理治療、水療
+        - 膀胱管理(導尿或擠壓)
     - 手術僅於影像學顯示明顯壓迫或症狀惡化時考慮:
-      - Hemilaminectomy移除髓核物質
+        - Hemilaminectomy移除髓核物質
     - 支持照護:
-      - 翻身避免褥瘡
-      - 營養支持
-      - 復健運動
-
+        - 翻身避免褥瘡
+        - 營養支持
+        - 復健運動
 prognosis:
-  general: "預後良好至尚可,60-80%病例於數週至數月內恢復行走能力。預後取決於脊髓挫傷嚴重程度,深層痛覺存在者預後較佳。"
-
+  general: 預後良好至尚可,60-80%病例於數週至數月內恢復行走能力。預後取決於脊髓挫傷嚴重程度,深層痛覺存在者預後較佳。
 prevention:
   - 大型活躍犬種避免過度劇烈跳躍
   - 運動前適當暖身
   - 避免滑倒或不當跳躍姿勢
+associatedSymptoms:
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 第三型椎間盤突出 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - paresis-paralysis 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 症狀嚴重程度與影像學壓迫程度不成比例
+        - name: MRI
+          notes: 脊髓T2高訊號(挫傷、水腫),椎管內少量髓核物質,無明顯壓迫
+        - name: CT myelography
+          notes: 可見少量椎管內物質,但脊髓壓迫輕微
+ddxSource: auto-generated

@@ -3,14 +3,17 @@ nameEn: Grape and Raisin Toxicosis
 nameZh: 葡萄/葡萄乾中毒
 bodySystem: toxicology
 description: 犬攝入葡萄、葡萄乾、醋栗 (currants) 或含有葡萄成分的食物後引起的急性腎小管壞死。毒性個體差異大，部分犬攝入少量即可發生致命性腎衰竭。確切毒素目前認為是酒石酸 (tartaric acid)。
-
 aliases:
-  - { alias: 葡萄中毒, language: zh }
-  - { alias: 葡萄乾中毒, language: zh }
-  - { alias: Grape Toxicosis, language: en }
-  - { alias: Raisin Toxicosis, language: en }
-  - { alias: Currant Toxicosis, language: en }
-
+  - alias: 葡萄中毒
+    language: zh
+  - alias: 葡萄乾中毒
+    language: zh
+  - alias: Grape Toxicosis
+    language: en
+  - alias: Raisin Toxicosis
+    language: en
+  - alias: Currant Toxicosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓的暴露機率低（對葡萄興趣不大）。理論上可能有毒性，但臨床報告極少。仍建議避免餵食。
-
 etiology:
   categories:
     - name: 毒物來源
@@ -42,7 +44,6 @@ etiology:
         - 葡萄：部分報告 3-11 g/kg 即出現毒性
         - 葡萄乾：部分報告 0.7 g/kg 即出現毒性
         - 無安全劑量——任何攝入量均應視為有潛在危險
-
 clinicalSigns:
   early:
     - 嘔吐（通常攝入後 6-12 小時內，常見未消化葡萄/葡萄乾殘渣）
@@ -62,18 +63,17 @@ clinicalSigns:
     - 高血磷、高血鉀
     - 代謝性酸中毒
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 病史與暴露確認
-      notes: "確認攝入葡萄/葡萄乾的種類、量與時間。嘔吐物中可見葡萄/葡萄乾殘渣可作為佐證"
+      notes: 確認攝入葡萄/葡萄乾的種類、量與時間。嘔吐物中可見葡萄/葡萄乾殘渣可作為佐證
     - name: 腎功能指標
-      notes: "BUN、creatinine 連續監測（攝入後 24-72 小時開始升高）。SDMA 可能更早反映腎損傷。基線與連續追蹤值的趨勢比單一數值更重要"
+      notes: BUN、creatinine 連續監測（攝入後 24-72 小時開始升高）。SDMA 可能更早反映腎損傷。基線與連續追蹤值的趨勢比單一數值更重要
   imaging:
     - name: 腹部超音波
-      notes: "腎臟腫大、皮質迴音增強（急性腎小管壞死）。可見腎周少量積液"
+      notes: 腎臟腫大、皮質迴音增強（急性腎小管壞死）。可見腎周少量積液
     - name: 腹部 X 光
-      notes: "腎臟腫大。可能見到消化道內未消化的葡萄"
+      notes: 腎臟腫大。可能見到消化道內未消化的葡萄
   additional:
     - 尿液分析（糖尿、蛋白尿、管型、等張尿或稀釋不良）
     - 電解質（高血鉀、高血磷——腎衰竭指標）
@@ -81,7 +81,6 @@ diagnosis:
     - CBC（通常正常或輕度應激白血球升高）
     - 尿量監測（從多尿轉為寡尿是惡化指標）
     - 血清鈣（低血鈣可見於高血磷腎衰竭）
-
 treatment:
   principles:
     - 攝入後儘早減少毒物吸收
@@ -99,37 +98,100 @@ treatment:
     - 發展為無尿性腎衰竭時考慮血液透析 (hemodialysis)
     - 營養支持（腎處方飲食）
     - 若無法進行透析，腹膜透析為替代方案
-
 emergencyNotes: 任何量的葡萄/葡萄乾攝入均應視為緊急狀況。攝入 <2 小時立即催吐。攝入量不明時假設為高風險。即使催吐成功仍建議住院輸液觀察 48-72 小時。發展為無尿性腎衰竭且無透析資源時預後極差。
-
 prognosis: 早期催吐加積極輸液治療者預後良好。延遲治療超過 24 小時或已出現少尿/無尿者預後差。接受血液透析的無尿患犬存活率約 50%。未治療且發展為急性腎衰竭者幾乎 100% 死亡。部分犬存活後可能有永久性腎功能損害。
-
 guidelineRefs:
   - sourceOrg: Journal of the American Veterinary Medical Association
     title: Acute renal failure in dogs after the ingestion of grapes or raisins
     url: https://pubmed.ncbi.nlm.nih.gov/15900942/
     type: research
-    pmid: "15900942"
+    pmid: '15900942'
   - sourceOrg: ASPCA APCC
     title: Grape and raisin toxicity in dogs
     url: https://pubmed.ncbi.nlm.nih.gov/16231710/
     type: review
-    pmid: "16231710"
+    pmid: '16231710'
   - sourceOrg: Journal of the American Veterinary Medical Association
     title: Tartaric acid as the likely toxin in grapes for dogs
     url: https://pubmed.ncbi.nlm.nih.gov/33939029/
     type: research
-    pmid: "33939029"
+    pmid: '33939029'
   - sourceOrg: Journal of veterinary internal medicine
     title: Toxicosis with grapes or raisins causing acute kidney injury and neurological signs in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7517833/
     type: research
-    pmid: "32893916"
+    pmid: '32893916'
 pubmedQueries:
   - query: '"grape" OR "raisin" AND (dog OR canine) AND ("toxicosis" OR "nephrotoxicity" OR "acute kidney" OR "tartaric acid")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "TOX"
-  sectionTitle: "TOXICOSIS"
+  chapter: TOX
+  sectionTitle: TOXICOSIS
   pdfPage: 3128
+diagnosticAlgorithm:
+  title: 葡萄/葡萄乾中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史確認
+      details: 確認攝入量與時間，注意個體敏感性差異大
+      findings:
+        - 確認攝入量毒性劑量不定
+        - 葡萄乾毒性高於葡萄
+        - 攝入時間
+        - 既往腎臟健康狀態
+    - step: 2
+      action: 早期臨床評估
+      details: 攝入後6-24小時內評估消化道症狀
+      findings:
+        - 嘔吐最早出現通常6-12小時內
+        - 腹瀉
+        - 食慾廢絕
+        - 腹痛與精神沉鬱
+    - step: 3
+      action: 腎功能監測
+      details: 攝入後24-72小時密集監測腎功能
+      findings:
+        - BUN/Creatinine升高
+        - 寡尿或無尿預後不良指標
+        - 高磷血症與高鈣血症
+        - 尿液沉渣顆粒管型與葡萄糖尿
+    - step: 4
+      action: 預後評估
+      details: 根據腎功能與尿量評估預後
+      findings:
+        - 無尿預後極差
+        - 寡尿需積極液體治療與利尿劑
+        - 血液透析評估
+        - 腎功能72小時追蹤
+clinicalPearls:
+  - 目前無法確定安全攝入量，任何劑量都應視為潛在有毒
+  - 葡萄乾比葡萄毒性更濃縮（脫水後）
+  - 嘔吐通常在攝入後6-12小時內出現，是早期症狀
+  - 攝入後48-72小時腎損傷可能才明顯
+  - BUN和Creatinine正常不代表腎臟安全，需持續監測
+  - 近年研究指向酒石酸為潛在毒素成分
+monitoringItems:
+  - 尿量（目標>2 mL/kg/hr）
+  - BUN和Creatinine（每12-24小時共72小時）
+  - 電解質（尤其鉀和磷）
+  - 尿液分析
+  - 水合狀態
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+  - symptomId: oliguria-anuria
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+ddxSource: book

@@ -3,12 +3,13 @@ nameEn: Vitamin D Rodenticide Detail
 nameZh: 維生素D滅鼠劑中毒詳述
 bodySystem: metabolic
 description: 含膽鈣化醇的滅鼠劑可引起嚴重高血鈣,導致軟組織鈣化、腎衰竭及心血管異常。中毒效應可持續數週至數月。
-
 aliases:
-  - { alias: 膽鈣化醇滅鼠劑中毒, language: zh }
-  - { alias: Cholecalciferol Rodenticide Poisoning, language: en }
-  - { alias: Vitamin D3 Toxicosis, language: en }
-
+  - alias: 膽鈣化醇滅鼠劑中毒
+    language: zh
+  - alias: Cholecalciferol Rodenticide Poisoning
+    language: en
+  - alias: Vitamin D3 Toxicosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓較少獵捕滅鼠劑,但誤食仍可能
-
 etiology:
   categories:
     - name: 直接攝入
@@ -29,7 +29,6 @@ etiology:
       examples:
         - 寵物食品配方錯誤
         - 人用維生素D過量給予
-
 clinicalSigns:
   early:
     - 食慾不振、嘔吐
@@ -40,22 +39,20 @@ clinicalSigns:
     - 心律不整、心搏過緩
     - 肌肉震顫、癲癇
     - 軟組織鈣化(腎、心、血管、胃腸)
-
 diagnosis:
   primaryTests:
     - name: 血清鈣濃度
-      notes: "總鈣>12 mg/dL(犬)或>11 mg/dL(貓)提示高血鈣"
+      notes: 總鈣>12 mg/dL(犬)或>11 mg/dL(貓)提示高血鈣
     - name: 血清磷濃度
-      notes: "磷通常同時升高"
+      notes: 磷通常同時升高
     - name: 腎功能檢查
-      notes: "BUN、肌酸酐升高,尿比重降低"
+      notes: BUN、肌酸酐升高,尿比重降低
     - name: 25-羥維生素D檢測
-      notes: "濃度明顯升高(>150 ng/mL)確診"
+      notes: 濃度明顯升高(>150 ng/mL)確診
   differentialDiagnoses:
     - 副甲狀腺機能亢進
     - 惡性腫瘤相關高血鈣
     - 葡萄/葡萄乾中毒(腎衰竭)
-
 treatment:
   medical:
     - 催吐(若攝入2小時內且無症狀): 3% H2O2 1-2 mL/kg PO
@@ -63,17 +60,51 @@ treatment:
     - 積極靜脈輸液: 生理食鹽水 100-125 mL/kg/day IV,促進鈣排泄
     - 利尿: Furosemide 2-4 mg/kg IV q8-12h(增加鈣排泄)
     - 降鈣藥物:
-      - Pamidronate 1-2 mg/kg IV緩慢滴注(>2小時),每1-2週重複
-      - Calcitonin 4-6 IU/kg SC q8-12h(急性期)
+        - Pamidronate 1-2 mg/kg IV緩慢滴注(>2小時),每1-2週重複
+        - Calcitonin 4-6 IU/kg SC q8-12h(急性期)
     - 類固醇: Prednisolone 1-2 mg/kg PO q12h(減少腸道鈣吸收)
     - 低鈣飲食,避免維生素D補充
     - 長期監測(數週至數月)
-
 prognosis:
-  general: "早期治療預後較佳,但需長期追蹤。嚴重腎衰竭或軟組織鈣化預後不良。即使存活,可能留有慢性腎病。治療可能需數月。"
-
+  general: 早期治療預後較佳,但需長期追蹤。嚴重腎衰竭或軟組織鈣化預後不良。即使存活,可能留有慢性腎病。治療可能需數月。
 prevention:
   - 妥善放置滅鼠劑,遠離寵物活動區域
   - 使用寵物無法接觸的誘餌盒
   - 避免使用維生素D類滅鼠劑,選擇其他類型
   - 確認寵物食品維生素D含量符合標準
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 維生素D滅鼠劑中毒詳述 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - trembling 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清鈣濃度
+          notes: 總鈣>12 mg/dL(犬)或>11 mg/dL(貓)提示高血鈣
+        - name: 血清磷濃度
+          notes: 磷通常同時升高
+        - name: 腎功能檢查
+          notes: BUN、肌酸酐升高,尿比重降低
+ddxSource: auto-generated

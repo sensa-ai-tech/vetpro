@@ -3,19 +3,20 @@ nameEn: Hamster Pyometra
 nameZh: 倉鼠子宮蓄膿
 bodySystem: reproductive
 description: 倉鼠子宮內膜感染化膿導致子宮內蓄積膿液的急性至亞急性疾病，為未絕育雌倉鼠常見的生殖系統急症，需緊急手術治療。
-
 aliases:
-  - { alias: 倉鼠子宮蓄膿症, language: zh }
-  - { alias: 倉鼠子宮感染, language: zh }
-  - { alias: Hamster uterine infection, language: en }
-  - { alias: Hamster endometritis, language: en }
-
+  - alias: 倉鼠子宮蓄膿症
+    language: zh
+  - alias: 倉鼠子宮感染
+    language: zh
+  - alias: Hamster uterine infection
+    language: en
+  - alias: Hamster endometritis
+    language: en
 species:
   - speciesCommon: hamster
     speciesScientific: Mesocricetus auratus
     prevalence: common
     notes: 未絕育雌性倉鼠常見，尤其 >1 歲。敘利亞倉鼠與侏儒倉鼠均可發生。開放型 (陰道有分泌物) 與閉鎖型 (無分泌物但更危險) 均有報告。
-
 etiology:
   categories:
     - name: 感染性
@@ -32,7 +33,6 @@ etiology:
         - 黃體期子宮內膜增生 (黃體酮影響)
         - 重複假性懷孕
         - 子宮內膜囊性增生
-
 clinicalSigns:
   early:
     - 陰道血性或膿性分泌物 (開放型)
@@ -51,23 +51,21 @@ clinicalSigns:
     - 子宮破裂致腹膜炎
     - 休克
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
-      notes: "腹部觸診可摸到增大的子宮角 (需輕柔避免破裂)。會陰分泌物檢查。體溫評估"
+      notes: 腹部觸診可摸到增大的子宮角 (需輕柔避免破裂)。會陰分泌物檢查。體溫評估
     - name: CBC/生化
-      notes: "白血球升高 (嗜中性球左移)。BUN/Creatinine 可能升高。低白蛋白血症。高球蛋白血症"
+      notes: 白血球升高 (嗜中性球左移)。BUN/Creatinine 可能升高。低白蛋白血症。高球蛋白血症
   imaging:
     - name: 腹部 X 光
-      notes: "增大的管狀子宮陰影。與懷孕鑑別 (懷孕可見胎兒骨骼)"
+      notes: 增大的管狀子宮陰影。與懷孕鑑別 (懷孕可見胎兒骨骼)
     - name: 腹部超音波
-      notes: "子宮增大充滿液體 (低至中等回音)。子宮壁增厚。腹水評估"
+      notes: 子宮增大充滿液體 (低至中等回音)。子宮壁增厚。腹水評估
   additional:
     - 陰道分泌物細胞學 (退化嗜中性球、細菌)
     - 細菌培養與藥敏試驗
     - 凝血功能 (排除 DIC)
-
 treatment:
   principles:
     - 卵巢子宮切除術 (OHE) 為首選且最有效治療
@@ -76,16 +74,16 @@ treatment:
     - 藥物保守治療效果差且復發率高
   medications:
     - name: Enrofloxacin
-      dose: "5-10 mg/kg PO/SC BID"
+      dose: 5-10 mg/kg PO/SC BID
       notes: 術前開始使用。待培養結果調整。覆蓋革蘭氏陰性菌
     - name: 皮下輸液 (Warmed Lactated Ringer's)
-      dose: "倉鼠體重 3-4% SC，每 8-12 小時"
+      dose: 倉鼠體重 3-4% SC，每 8-12 小時
       notes: 術前穩定脫水。加溫至體溫給予
     - name: Meloxicam
-      dose: "0.2-0.3 mg/kg PO/SC SID"
+      dose: 0.2-0.3 mg/kg PO/SC SID
       notes: 術後止痛。確認水合狀態穩定後使用
     - name: Buprenorphine
-      dose: "0.05-0.1 mg/kg SC 每 8-12 小時"
+      dose: 0.05-0.1 mg/kg SC 每 8-12 小時
       notes: 術後止痛。術前 30 分鐘先行給予
   general:
     - 緊急卵巢子宮切除術
@@ -95,26 +93,73 @@ treatment:
     - 術後輔助餵食 (24-48 小時內)
     - 術後抗生素持續 7-14 天
     - 每日監測傷口與食慾
-
 prognosis: 早期手術治療預後良好至謹慎 (存活率約 60-80%)。閉鎖型子宮蓄膿因延遲診斷預後較差。敗血症或子宮破裂致腹膜炎預後極差。術後恢復良好者長期預後佳。藥物保守治療復發率極高不建議。
-
 guidelineRefs:
   - sourceOrg: Journal of Exotic Pet Medicine
-    title: "Reproductive disorders in small mammals"
+    title: Reproductive disorders in small mammals
     url: https://pubmed.ncbi.nlm.nih.gov/28314472/
     type: review
-    pmid: "28314472"
+    pmid: '28314472'
   - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
-    title: "Soft Tissue Surgery of Small Mammals"
+    title: Soft Tissue Surgery of Small Mammals
     url: https://pubmed.ncbi.nlm.nih.gov/26611925/
     type: review
-    pmid: "26611925"
-
+    pmid: '26611925'
 pubmedQueries:
   - query: '"hamster" AND ("pyometra" OR "uterine infection" OR "endometritis") AND ("treatment" OR "surgery")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "INFECTION"
+  chapter: DIG
+  sectionTitle: INFECTION
   pdfPage: 525
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 倉鼠子宮蓄膿 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - abdominal-distension 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 腹部觸診可摸到增大的子宮角 (需輕柔避免破裂)。會陰分泌物檢查。體溫評估
+        - name: CBC/生化
+          notes: 白血球升高 (嗜中性球左移)。BUN/Creatinine 可能升高。低白蛋白血症。高球蛋白血症
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 陰道分泌物細胞學 (退化嗜中性球、細菌)
+        - 細菌培養與藥敏試驗
+        - 凝血功能 (排除 DIC)
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 卵巢子宮切除術 (OHE) 為首選且最有效治療
+        - 術前穩定 (補液、抗生素)
+        - 術後密切監測
+ddxSource: auto-generated

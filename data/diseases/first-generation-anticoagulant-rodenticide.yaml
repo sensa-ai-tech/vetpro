@@ -3,12 +3,13 @@ nameEn: First Generation Anticoagulant Rodenticide
 nameZh: 第一代抗凝血滅鼠劑中毒
 bodySystem: toxicology
 description: 第一代抗凝血劑(如華法林、氯敵鼠)作用機轉同第二代,但效力較弱、半衰期較短,需重複暴露或大量攝入才致毒。
-
 aliases:
-  - { alias: 華法林滅鼠劑中毒, language: zh }
-  - { alias: Warfarin Poisoning, language: en }
-  - { alias: Short-Acting Anticoagulant Toxicosis, language: en }
-
+  - alias: 華法林滅鼠劑中毒
+    language: zh
+  - alias: Warfarin Poisoning
+    language: en
+  - alias: Short-Acting Anticoagulant Toxicosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少直接攝入
-
 etiology:
   categories:
     - name: 重複暴露
@@ -28,7 +28,6 @@ etiology:
     - name: 大量單次攝入
       examples:
         - 誤食大量滅鼠劑
-
 clinicalSigns:
   early:
     - 潛伏期較短(1-3天)
@@ -39,48 +38,78 @@ clinicalSigns:
     - 皮下瘀血
     - 貧血、虛弱
     - 呼吸困難(肺或胸腔出血)
-
 diagnosis:
   primaryTests:
     - name: 凝血功能檢查
-      notes: "PT延長,aPTT可能正常或輕度延長"
+      notes: PT延長,aPTT可能正常或輕度延長
     - name: 全血球計數
-      notes: "貧血(PCV下降),血小板數量正常"
+      notes: 貧血(PCV下降),血小板數量正常
     - name: 糞便潛血
-      notes: "檢測胃腸道出血"
+      notes: 檢測胃腸道出血
   differentialDiagnoses:
     - 第二代抗凝血劑中毒(區別在於持續時間)
     - 肝病相關凝血異常
     - 血小板疾病
-
 treatment:
   medical:
     - 維生素K1治療:
-      - 華法林: 2.5-5 mg/kg PO q12h,持續7-14天(較第二代短)
-      - 氯敵鼠: 2.5-5 mg/kg PO q12h,持續14-21天
+        - 華法林: 2.5-5 mg/kg PO q12h,持續7-14天(較第二代短)
+        - 氯敵鼠: 2.5-5 mg/kg PO q12h,持續14-21天
     - 催吐(若攝入4小時內): 3% H2O2 1-2 mL/kg PO
     - 活性碳 1-2 g/kg PO
     - 嚴重出血: 輸血治療 10-20 mL/kg IV
     - 支持性療法: 靜脈輸液、氧氣、休息
     - 停藥後48-72小時複查PT
-
 prognosis:
-  general: "因半衰期較短,預後通常優於第二代滅鼠劑中毒。及時治療存活率>95%。治療期較短,復發風險低。"
-
+  general: 因半衰期較短,預後通常優於第二代滅鼠劑中毒。及時治療存活率>95%。治療期較短,復發風險低。
 prevention:
   - 第一代滅鼠劑現已較少使用
   - 儲存滅鼠劑遠離寵物
   - 懷疑暴露應立即就醫,即使無症狀
-
-
 guidelineRefs:
   - sourceOrg: Journal of arthropod-borne diseases
-    title: "Exploring the Effectiveness of Chlorophacinone in Managing Urban Rat Infestation: A Laboratory Study on the Norway Rat, Rattus norvegicus, a Common Urban Rat in Malaysia."
+    title: >-
+      Exploring the Effectiveness of Chlorophacinone in Managing Urban Rat Infestation: A Laboratory Study on the Norway
+      Rat, Rattus norvegicus, a Common Urban Rat in Malaysia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12630056/
     type: research
-    pmid: "41278179"
+    pmid: '41278179'
   - sourceOrg: Ecotoxicology and environmental safety
-    title: "Toxicokinetic analysis of the anticoagulant rodenticides warfarin &amp; diphacinone in Egyptian fruit bats (Rousettus aegyptiacus) as a comparative sensitivity assessment for Bonin fruit bats (Pteropus pselaphon)."
+    title: >-
+      Toxicokinetic analysis of the anticoagulant rodenticides warfarin &amp; diphacinone in Egyptian fruit bats
+      (Rousettus aegyptiacus) as a comparative sensitivity assessment for Bonin fruit bats (Pteropus pselaphon).
     url: https://pubmed.ncbi.nlm.nih.gov/35981482/
     type: research
-    pmid: "35981482"
+    pmid: '35981482'
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: melaena
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 第一代抗凝血滅鼠劑中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - dyspnoea 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 凝血功能檢查
+          notes: PT延長,aPTT可能正常或輕度延長
+        - name: 全血球計數
+          notes: 貧血(PCV下降),血小板數量正常
+        - name: 糞便潛血
+          notes: 檢測胃腸道出血
+ddxSource: auto-generated

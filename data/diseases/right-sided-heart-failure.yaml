@@ -3,12 +3,13 @@ nameEn: Right Sided Heart Failure
 nameZh: 右側心臟衰竭
 bodySystem: cardiac
 description: 右心功能衰竭導致體循環靜脈回流受阻，引起腹水、胸水及周邊水腫。常見於三尖瓣疾病、肺動脈高壓或心絲蟲感染後。
-
 aliases:
-  - { alias: 右心衰竭, language: zh }
-  - { alias: Right Heart Failure, language: en }
-  - { alias: RHF, language: en }
-
+  - alias: 右心衰竭
+    language: zh
+  - alias: Right Heart Failure
+    language: en
+  - alias: RHF
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 多因肺動脈高壓或限制型心肌病變引起
-
 etiology:
   categories:
     - name: 三尖瓣疾病
@@ -32,7 +32,6 @@ etiology:
     - name: 寄生蟲感染
       examples:
         - 心絲蟲病
-
 clinicalSigns:
   early:
     - 運動不耐
@@ -43,21 +42,19 @@ clinicalSigns:
     - 胸腔積液
     - 頸靜脈怒張
     - 肝腫大
-
 diagnosis:
   primaryTests:
     - name: 胸部 X 光
-      notes: "評估心臟輪廓、胸腔積液、肺動脈擴張"
+      notes: 評估心臟輪廓、胸腔積液、肺動脈擴張
     - name: 心臟超音波
-      notes: "評估右心房/右心室擴張、三尖瓣功能、肺動脈壓"
+      notes: 評估右心房/右心室擴張、三尖瓣功能、肺動脈壓
     - name: 腹部超音波
-      notes: "確認腹水、肝靜脈擴張、肝腫大"
+      notes: 確認腹水、肝靜脈擴張、肝腫大
   differentialDiagnoses:
     - 低蛋白血症
     - 肝硬化
     - 腹腔腫瘤
     - 後腔靜脈阻塞
-
 treatment:
   medical:
     - Furosemide 2-4 mg/kg PO/IV q12-24h (利尿)
@@ -65,44 +62,98 @@ treatment:
     - ACE 抑制劑 (enalapril 0.5 mg/kg PO q12-24h)
     - 限鈉飲食
     - 治療原發病因 (如心絲蟲、三尖瓣疾病)
-
 prognosis:
-  general: "取決於原發病因；若為心絲蟲或可逆性原因預後較佳；慢性瓣膜病變或肺動脈高壓預後謹慎至不良"
-
+  general: 取決於原發病因；若為心絲蟲或可逆性原因預後較佳；慢性瓣膜病變或肺動脈高壓預後謹慎至不良
 prevention:
   - 定期心絲蟲預防
   - 早期診斷及治療心臟疾病
   - 控制體重及適度運動
-
-
 guidelineRefs:
   - sourceOrg: Pathogens (Basel, Switzerland)
     title: Hemostatic Dysfunction in Dogs Naturally Infected with Angiostrongylus vasorum-A Narrative Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8878016/
     type: review
-    pmid: "35215192"
+    pmid: '35215192'
     relevance: primary
   - sourceOrg: The American journal of pathology
     title: Plexiform Arteriopathy in Rodent Models of Pulmonary Arterial Hypertension.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6584781/
     type: review
-    pmid: "30926336"
+    pmid: '30926336'
     relevance: supporting
   - sourceOrg: Cureus
-    title: "Coexistence of Severe Valvular Pulmonary Stenosis and Papillary Thyroid Carcinoma: A Rare Association or Coincidence?"
+    title: >-
+      Coexistence of Severe Valvular Pulmonary Stenosis and Papillary Thyroid Carcinoma: A Rare Association or
+      Coincidence?
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12534900/
     type: case-report
-    pmid: "41111846"
+    pmid: '41111846'
     relevance: supporting
   - sourceOrg: PloS one
-    title: Mitochondrial function remains impaired in the hypertrophied right ventricle of pulmonary hypertensive rats following short duration metoprolol treatment.
+    title: >-
+      Mitochondrial function remains impaired in the hypertrophied right ventricle of pulmonary hypertensive rats
+      following short duration metoprolol treatment.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6456253/
     type: research
-    pmid: "30964911"
+    pmid: '30964911'
     relevance: supporting
   - sourceOrg: PloS one
-    title: Synergistic interaction between a PDE5 inhibitor (sildenafil) and a new adenosine A2A receptor agonist (LASSBio-1359) improves pulmonary hypertension in rats.
+    title: >-
+      Synergistic interaction between a PDE5 inhibitor (sildenafil) and a new adenosine A2A receptor agonist
+      (LASSBio-1359) improves pulmonary hypertension in rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5909907/
     type: research
-    pmid: "29677206"
+    pmid: '29677206'
     relevance: supporting
+diagnosticAlgorithm:
+  title: 右心衰竭 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估體循環淤血徵象
+      findings:
+        - 腹部膨大（腹水）
+        - 頸靜脈怒張或肝頸靜脈回流陽性
+        - 皮下水腫
+        - 運動不耐受
+    - step: 2
+      action: 影像學檢查
+      details: 胸腹部X光與超音波評估
+      findings:
+        - 右心擴大
+        - 後腔靜脈擴張
+        - 胸腔積液
+        - 腹部超音波確認腹水
+    - step: 3
+      action: 心臟超音波
+      details: 評估右心結構與功能，確認病因
+      findings:
+        - 三尖瓣反流
+        - 右心室擴大或肥厚
+        - 肺動脈高壓估算
+        - 心包積液排除
+    - step: 4
+      action: 病因調查
+      details: 確認導致右心衰竭的根本原因
+      findings:
+        - 心絲蟲病篩查
+        - 肺動脈高壓病因
+        - 心包疾病排除
+        - 先天性心臟病評估
+clinicalPearls:
+  - 犬右心衰竭最常見原因為三尖瓣退化性疾病和心絲蟲感染
+  - 腹水分析呈改良漏出液有助於區分心因性腹水
+  - 頸靜脈擴張是右心衰竭的重要臨床指標
+  - 治療右心衰竭時需注意不要過度利尿導致低血壓
+monitoringItems:
+  - 呼吸頻率
+  - 腹圍
+  - 體重
+  - 腎功能及電解質
+  - 心臟超音波追蹤
+associatedSymptoms:
+  - symptomId: ascites
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: common
+ddxSource: book

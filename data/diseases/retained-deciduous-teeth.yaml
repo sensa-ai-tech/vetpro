@@ -3,12 +3,13 @@ nameEn: Retained Deciduous Teeth
 nameZh: 乳齒滯留
 bodySystem: dental
 description: 恆齒萌發後乳齒未正常脫落，導致雙排牙齒並存。可能造成牙齒擁擠、齒列不正及牙周病，需及時拔除滯留乳齒。
-
 aliases:
-  - { alias: 乳牙未脫落, language: zh }
-  - { alias: Persistent Deciduous Teeth, language: en }
-  - { alias: Baby Teeth Retention, language: en }
-
+  - alias: 乳牙未脫落
+    language: zh
+  - alias: Persistent Deciduous Teeth
+    language: en
+  - alias: Baby Teeth Retention
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 比犬少見
-
 etiology:
   categories:
     - name: 風險因素
@@ -32,7 +32,6 @@ etiology:
         - 犬齒(最常見)
         - 門齒
         - 前臼齒
-
 clinicalSigns:
   early:
     - 恆齒萌出後乳齒仍存在(雙排牙)
@@ -44,18 +43,16 @@ clinicalSigns:
     - 牙齦炎、口臭
     - 牙周病
     - 咬合異常
-
 diagnosis:
   primaryTests:
     - name: 口腔檢查
-      notes: "直視雙排牙齒、評估恆齒位置"
+      notes: 直視雙排牙齒、評估恆齒位置
     - name: 牙科X光
-      notes: "評估乳齒根部殘留"
+      notes: 評估乳齒根部殘留
   differentialDiagnoses:
     - 正常換牙過程(恆齒剛萌出)
     - 多生齒(supernumerary teeth)
     - 恆齒缺失
-
 treatment:
   medical:
     - 拔除滯留乳齒(需全身麻醉)
@@ -68,21 +65,61 @@ treatment:
     - 止痛藥(Meloxicam 0.1 mg/kg SID)
     - 避免咀嚼玩具1週
     - 口腔消毒(稀釋氯己定漱口水)
-
 prognosis:
-  general: "及早拔除預後良好；延遲處理可能導致永久性齒列不正及牙周病"
-
+  general: 及早拔除預後良好；延遲處理可能導致永久性齒列不正及牙周病
 prevention:
   - 定期口腔檢查(6-8月齡)
   - 滯留乳齒及早拔除
   - 避免有病史犬隻繁殖
   - 飼主教育：認識正常換牙時程
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
     title: Chronic paronychia in cats with patellar fracture and dental anomaly syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812158/
     type: research
-    pmid: "33759602"
+    pmid: '33759602'
     relevance: supporting
+diagnosticAlgorithm:
+  title: 乳齒滯留 診斷流程
+  steps:
+    - step: 1
+      action: 口腔視診
+      details: 檢查是否有乳齒與永久齒並存
+      findings:
+        - 雙排犬齒
+        - 雙排切齒
+        - 永久齒偏位
+    - step: 2
+      action: 牙科放射線
+      details: 確認永久齒齒胚存在且乳齒齒根未吸收
+      findings:
+        - 永久齒已萌出
+        - 乳齒齒根完整未吸收
+        - 永久齒缺失（需保留乳齒）
+    - step: 3
+      action: 咬合評估
+      details: 評估咬合關係及永久齒偏位程度
+      findings:
+        - 正常咬合
+        - 輕度偏位
+        - 嚴重咬合異常
+    - step: 4
+      action: 治療決策
+      details: 根據永久齒存在與否及咬合狀態決定拔除時機
+      findings:
+        - 立即拔除
+        - 擇期拔除
+        - 保留乳齒（無永久齒時）
+clinicalPearls:
+  - 規則：永久齒一旦萌出且乳齒未脫落，即應拔除乳齒
+  - 拔除乳齒時必須確認齒根完整拔出，殘留齒根可導致持續問題
+  - 犬齒滯留最常見，且最容易導致咬合異常
+monitoringItems:
+  - 拔除後1-2週回診確認傷口癒合
+  - 追蹤永久齒是否移動至正常位置
+  - 4-6週後評估咬合改善情形
+  - 定期口腔檢查預防牙周病
+associatedSymptoms:
+  - symptomId: halitosis-stomatitis
+    frequency: common
+ddxSource: book

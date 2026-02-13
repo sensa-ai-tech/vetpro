@@ -1,0 +1,91 @@
+slug: galactostasis
+nameEn: Galactostasis
+nameZh: 乳汁鬱積
+description: 乳汁鬱積是乳汁在乳腺內滯留導致的非感染性乳腺炎。常見於假懷孕動物或突然斷奶時。乳腺因殘留乳汁充脹而腫脹、疼痛，但無細菌感染。若不處理可能繼發為感染性乳腺炎。
+bodySystem: infectious
+species:
+  - speciesCommon: dog
+  - speciesCommon: cat
+etiology:
+  categories:
+    - name: Risk Factors
+      examples:
+        - 假懷孕
+        - 突然斷奶（非漸進式）
+        - 乳腺排空不足
+        - 窩仔數少（部分乳腺未被吸吮）
+clinicalSigns:
+  early:
+    - 乳腺腫脹硬實
+    - 近期斷奶或假懷孕
+    - 不適或疼痛表現
+    - 舔舐乳腺
+  progressive:
+    - 一個或多個乳腺腫脹充盈
+    - 觸診溫暖但無明顯發熱
+    - 輕度至中度疼痛
+    - 乳汁可被擠出（正常外觀）
+    - 無全身症狀（不發燒）
+diagnosis:
+  primaryTests:
+    - 乳腺觸診和乳汁外觀評估
+    - 乳汁細胞學（排除感染：無大量嗜中性球）
+    - 體溫監測
+  additional:
+    - 乳汁培養（排除細菌感染）
+    - 乳腺超音波（排除膿瘍或腫塊）
+treatment:
+  principles:
+    - 冷敷或溫敷乳腺（減輕不適）
+    - 適度擠出滯留乳汁（不要完全排空以免刺激再泌乳）
+    - 止痛：NSAID（如meloxicam）
+  general:
+    - 漸進式斷奶（減少餵食次數和量）
+    - 減少母犬食物和水的攝取量（降低泌乳）
+    - 假懷孕者：Cabergoline 5 μg/kg/day口服（抑制泌乳素）
+    - 伊麗莎白圈（防止自我吸吮刺激泌乳）
+prognosis: 乳汁鬱積預後極佳。多數在減少泌乳刺激後數天至1-2週緩解。預防重點在漸進式斷奶。假懷孕引起者可用Cabergoline有效控制。需監測是否繼發感染。
+diagnosticAlgorithm:
+  title: 乳汁鬱積 診斷流程
+  steps:
+    - step: 1
+      action: 病史確認
+      details: 斷奶時間或假懷孕狀態
+      findings:
+        - 近期斷奶
+        - 假懷孕
+        - 未哺乳但泌乳
+    - step: 2
+      action: 理學檢查
+      details: 乳腺評估和全身狀態
+      findings:
+        - 乳腺充脹
+        - 無發燒
+        - 乳汁外觀正常
+    - step: 3
+      action: 排除感染
+      details: 乳汁細胞學和培養
+      findings:
+        - 無大量嗜中性球→非感染性
+        - 有嗜中性球/細菌→感染性乳腺炎
+    - step: 4
+      action: 治療和監測
+      details: 物理療法+泌乳控制
+      findings:
+        - 冷/溫敷
+        - 減少飲食量
+        - Cabergoline（假懷孕）
+clinicalPearls:
+  - 乳汁鬱積 vs 感染性乳腺炎：前者不發燒、乳汁正常外觀、無全身症狀
+  - 不要完全排空乳腺（會反射性增加泌乳）
+  - 漸進式斷奶是最佳預防方法
+  - 假懷孕是未絕育母犬乳汁鬱積的常見原因
+monitoringItems:
+  - 乳腺腫脹程度
+  - 體溫（排除繼發感染）
+  - 乳汁性狀
+  - 食慾和精神狀態
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+ddxSource: book-only

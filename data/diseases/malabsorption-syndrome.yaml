@@ -3,11 +3,11 @@ nameEn: Malabsorption Syndrome
 nameZh: 吸收不良症候群
 bodySystem: gastrointestinal
 description: 小腸無法正常吸收營養素,導致慢性腹瀉、體重減輕及營養不良。可能因腸黏膜病變、淋巴管擴張或胰外分泌功能不全。
-
 aliases:
-  - { alias: 吸收障礙, language: zh }
-  - { alias: Malabsorptive Disorder, language: en }
-
+  - alias: 吸收障礙
+    language: zh
+  - alias: Malabsorptive Disorder
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 常見於 IBD、淋巴瘤
-
 etiology:
   categories:
     - name: 黏膜病變
@@ -29,7 +28,6 @@ etiology:
     - name: 胰臟疾病
       examples:
         - EPI
-
 clinicalSigns:
   early:
     - 慢性腹瀉 (大量、油膩)
@@ -38,22 +36,20 @@ clinicalSigns:
     - 嚴重體重減輕
     - 營養不良
     - 低蛋白血症、水腫
-
 diagnosis:
   primaryTests:
     - name: 血液檢查
-      notes: "低白蛋白、低球蛋白、低膽固醇、貧血"
+      notes: 低白蛋白、低球蛋白、低膽固醇、貧血
     - name: TLI
-      notes: "評估 EPI"
+      notes: 評估 EPI
     - name: Cobalamin/Folate
-      notes: "評估吸收功能"
+      notes: 評估吸收功能
     - name: 腸組織切片
-      notes: "確診 IBD、淋巴瘤、淋巴管擴張"
+      notes: 確診 IBD、淋巴瘤、淋巴管擴張
   differentialDiagnoses:
     - 蛋白流失性腸病變
     - 消化不良症候群
     - 慢性腹瀉其他原因
-
 treatment:
   medical:
     - 治療原發病因
@@ -61,43 +57,72 @@ treatment:
     - 胰酵素補充 (EPI)
     - Cobalamin 補充
     - 類固醇 (IBD)
-
 prognosis:
-  general: "取決於原發病因;EPI 預後良好;IBD 需長期管理;淋巴瘤預後不良"
-
+  general: 取決於原發病因;EPI 預後良好;IBD 需長期管理;淋巴瘤預後不良
 prevention:
   - 早期診斷及治療腸道疾病
   - 適當營養管理
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
-    title: "Reovirus Infections in Broiler Chickens: A Narrative Review."
+    title: 'Reovirus Infections in Broiler Chickens: A Narrative Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12656835/
     type: review
-    pmid: "41295659"
+    pmid: '41295659'
     relevance: primary
   - sourceOrg: Viruses
-    title: "Avian Orthoreoviruses: A Systematic Review of Their Distribution, Dissemination Patterns, and Genotypic Clustering."
+    title: >-
+      Avian Orthoreoviruses: A Systematic Review of Their Distribution, Dissemination Patterns, and Genotypic
+      Clustering.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11281703/
     type: review
-    pmid: "39066218"
+    pmid: '39066218'
     relevance: primary
   - sourceOrg: Acta veterinaria Scandinavica
     title: Abscence of specific humoral response in three dogs with clinical leishmaniosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12147281/
     type: case-report
-    pmid: "40484952"
+    pmid: '40484952'
     relevance: supporting
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Detection and Identification of Avian Reovirus in Young Geese (Anser anser domestica) in Poland.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9736766/
     type: case-report
-    pmid: "36496863"
+    pmid: '36496863'
     relevance: supporting
   - sourceOrg: Frontiers in veterinary science
-    title: "Simultaneous detection and partial molecular characterization of five RNA viruses associated with enteric disease in chickens: chicken astrovirus, avian nephritis virus, infectious bronchitis virus, avian rotavirus a and avian orthoreovirus, via multiplex RT-qPCR."
+    title: >-
+      Simultaneous detection and partial molecular characterization of five RNA viruses associated with enteric disease
+      in chickens: chicken astrovirus, avian nephritis virus, infectious bronchitis virus, avian rotavirus a and avian
+      orthoreovirus, via multiplex RT-qPCR.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12058722/
     type: research
-    pmid: "40343369"
+    pmid: '40343369'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 吸收不良症候群 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - diarrhoea 相關症狀
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液檢查
+          notes: 低白蛋白、低球蛋白、低膽固醇、貧血
+        - name: TLI
+          notes: 評估 EPI
+        - name: Cobalamin/Folate
+          notes: 評估吸收功能
+ddxSource: auto-generated

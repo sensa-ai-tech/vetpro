@@ -3,11 +3,11 @@ nameEn: Mastitis Detail
 nameZh: 乳腺炎詳述
 bodySystem: reproductive
 description: 乳腺細菌感染及炎症，多發於哺乳期。可能為急性敗血性或慢性化膿性。需積極抗生素治療，嚴重者需手術引流或切除。
-
 aliases:
-  - { alias: 急性乳腺炎, language: zh }
-  - { alias: Acute Mastitis, language: en }
-
+  - alias: 急性乳腺炎
+    language: zh
+  - alias: Acute Mastitis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少見
-
 etiology:
   categories:
     - name: 細菌感染
@@ -30,7 +29,6 @@ etiology:
         - 乳汁過多、幼犬死亡或早期離乳
         - 乳腺外傷
         - 衛生不良
-
 clinicalSigns:
   early:
     - 乳腺腫脹、發熱、觸痛
@@ -41,22 +39,20 @@ clinicalSigns:
     - 膿腫形成
     - 敗血症
     - 幼犬哭鬧、體重減輕（毒性乳汁）
-
 diagnosis:
   primaryTests:
     - name: 乳腺觸診
-      notes: "腫脹、發熱、疼痛、硬化"
+      notes: 腫脹、發熱、疼痛、硬化
     - name: 乳汁細胞學及培養
-      notes: "白血球增多、細菌培養及藥敏"
+      notes: 白血球增多、細菌培養及藥敏
     - name: 全血球計數
-      notes: "白血球增多、中性球左移"
+      notes: 白血球增多、中性球左移
     - name: 超音波
-      notes: "膿腫評估"
+      notes: 膿腫評估
   differentialDiagnoses:
     - 乳腺腫瘤
     - 乳腺增生
     - 假孕乳腺充血
-
 treatment:
   medical:
     - 廣效抗生素（至少2-3週）：
@@ -67,45 +63,70 @@ treatment:
     - 持續哺乳（若乳汁無毒性）或人工擠奶
     - 膿腫：手術引流
     - 壞死或復發：乳腺切除術
-
 prognosis:
-  general: "早期治療預後佳。嚴重敗血症或膿腫預後保留。哺乳幼犬可能受影響。"
-
+  general: 早期治療預後佳。嚴重敗血症或膿腫預後保留。哺乳幼犬可能受影響。
 prevention:
   - 維持哺乳環境清潔
   - 定期檢查乳腺
   - 修剪幼犬指甲
   - 幼犬死亡或離乳後逐步減少餵食量
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
     title: Treatment of clinically severe bovine mastitis - a scoping review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10834645/
     type: review
-    pmid: "38313061"
+    pmid: '38313061'
     relevance: primary
   - sourceOrg: Open veterinary journal
-    title: "Antibiotic resistance in mastitis-causing bacteria: Exploring antibiotic-resistance genes, underlying mechanisms, and their implications for dairy animal and public health."
+    title: >-
+      Antibiotic resistance in mastitis-causing bacteria: Exploring antibiotic-resistance genes, underlying mechanisms,
+      and their implications for dairy animal and public health.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12587892/
     type: review
-    pmid: "41200317"
+    pmid: '41200317'
     relevance: primary
   - sourceOrg: Microorganisms
     title: The Role of Streptococcus spp. in Bovine Mastitis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8305581/
     type: review
-    pmid: "34361932"
+    pmid: '34361932'
     relevance: primary
   - sourceOrg: Microorganisms
     title: Prototheca Infections and Ecology from a One Health Perspective.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9144699/
     type: review
-    pmid: "35630382"
+    pmid: '35630382'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
-    title: "Comparing Blanket vs. Selective Dry Cow Treatment Approaches for Elimination and Prevention of Intramammary Infections During the Dry Period: A Systematic Review and Meta-Analysis."
+    title: >-
+      Comparing Blanket vs. Selective Dry Cow Treatment Approaches for Elimination and Prevention of Intramammary
+      Infections During the Dry Period: A Systematic Review and Meta-Analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8240810/
     type: review
-    pmid: "34212023"
+    pmid: '34212023'
     relevance: primary
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: common
+diagnosticAlgorithm:
+  title: 乳腺炎詳述 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 乳腺觸診
+          notes: 腫脹、發熱、疼痛、硬化
+        - name: 乳汁細胞學及培養
+          notes: 白血球增多、細菌培養及藥敏
+        - name: 全血球計數
+          notes: 白血球增多、中性球左移
+ddxSource: auto-generated

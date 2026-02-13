@@ -3,12 +3,13 @@ nameEn: Cirrhosis
 nameZh: 肝硬化
 bodySystem: hepatic
 description: 肝硬化為慢性肝臟疾病的終末期，以瀰漫性纖維化、再生結節形成與正常肝臟結構破壞為特徵。為不可逆性病變。犬隻常見原因為慢性肝炎（特發性、銅蓄積性、免疫介導性）。臨床上表現為門脈高壓、肝功能不全與後天性門體分流。
-
 aliases:
-  - { alias: 肝臟硬化, language: zh }
-  - { alias: Liver Cirrhosis, language: en }
-  - { alias: End-Stage Liver Disease, language: en }
-
+  - alias: 肝臟硬化
+    language: zh
+  - alias: Liver Cirrhosis
+    language: en
+  - alias: End-Stage Liver Disease
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻肝硬化少見，可見於慢性膽管炎末期。
-
 etiology:
   categories:
     - name: 慢性肝炎
@@ -30,7 +30,6 @@ etiology:
         - 慢性膽管阻塞
         - 慢性右心衰竭
         - 先天性門脈異常伴肝萎縮
-
 clinicalSigns:
   early:
     - 慢性食慾下降
@@ -44,57 +43,93 @@ clinicalSigns:
     - 低白蛋白血症
     - 後天性門體分流
     - 惡病質
-
 diagnosis:
   primaryTests:
     - name: 肝臟活檢
       notes: 確診金標準。瀰漫性纖維化橋接（bridging fibrosis）。再生結節。正常肝小葉結構消失。注意凝血狀態（活檢前評估凝血功能）。
     - name: 腹部超音波
       notes: 肝臟縮小且結構不規則。回音性增加。再生結節（結節性外觀）。腹水。門脈血流異常。脾腫大。
-
 treatment:
   principles:
     - 不可逆病變，治療為支持性
     - 控制併發症（腹水、肝性腦病）
     - 改善生活品質
   general:
-    - "腹水管理：Spironolactone 1-2 mg/kg PO q12h ± Furosemide 1-2 mg/kg PO q12-24h"
-    - "肝性腦病：Lactulose 0.5 mL/kg PO q8h + Metronidazole 7.5 mg/kg PO q12h"
+    - 腹水管理：Spironolactone 1-2 mg/kg PO q12h ± Furosemide 1-2 mg/kg PO q12-24h
+    - 肝性腦病：Lactulose 0.5 mL/kg PO q8h + Metronidazole 7.5 mg/kg PO q12h
     - 低蛋白低鈉飲食
-    - "肝保護：SAMe 20 mg/kg PO q24h + Ursodiol 10-15 mg/kg PO q24h"
+    - 肝保護：SAMe 20 mg/kg PO q24h + Ursodiol 10-15 mg/kg PO q24h
     - 凝血障礙處理（Vitamin K1、FFP）
     - 治療基礎病因（若仍可治療）
     - 嚴重腹水可考慮腹腔穿刺排液
-
 prognosis: 肝硬化為不可逆終末期病變，長期預後不佳。存活時間中位數約 6-12 個月。控制腹水與肝性腦病可改善生活品質。基礎病因若可控制（如銅蓄積性肝病開始治療）可延緩疾病進展。多數犬隻最終因難治性腹水或肝性腦病而安樂。
-
-
 guidelineRefs:
   - sourceOrg: Autophagy
     title: Guidelines for the use and interpretation of assays for monitoring autophagy (3rd edition).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4835977/
     type: guideline
-    pmid: "26799652"
+    pmid: '26799652'
   - sourceOrg: International journal of molecular sciences
-    title: "A Narrative Review: The Effect and Importance of Carotenoids on Aging and Aging-Related Diseases."
+    title: 'A Narrative Review: The Effect and Importance of Carotenoids on Aging and Aging-Related Diseases.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10607816/
     type: review
-    pmid: "37894880"
+    pmid: '37894880'
   - sourceOrg: Nature communications
-    title: Systematic review and individual-patient-data meta-analysis of non-invasive fibrosis markers for chronic hepatitis B in Africa.
+    title: >-
+      Systematic review and individual-patient-data meta-analysis of non-invasive fibrosis markers for chronic hepatitis
+      B in Africa.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9810658/
     type: review
-    pmid: "36596805"
-  - sourceOrg: "Nature reviews. Gastroenterology &amp; hepatology"
+    pmid: '36596805'
+  - sourceOrg: Nature reviews. Gastroenterology &amp; hepatology
     title: Friend or foe? The elusive role of hepatic stellate cells in liver cancer.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10671228/
     type: review
-    pmid: "37550577"
+    pmid: '37550577'
   - sourceOrg: Journal of veterinary internal medicine
     title: Hepatic Fibrosis in Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5787209/
     type: review
-    pmid: "29194760"
+    pmid: '29194760'
 pubmedQueries:
   - query: '"cirrhosis" AND (veterinary OR canine OR feline) AND ("chronic hepatitis" OR "portal hypertension" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肝硬化 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+        - polyuria-polydipsia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 肝臟活檢
+          notes: 確診金標準。瀰漫性纖維化橋接（bridging fibrosis）。再生結節。正常肝小葉結構消失。注意凝血狀態（活檢前評估凝血功能）。
+        - name: 腹部超音波
+          notes: 肝臟縮小且結構不規則。回音性增加。再生結節（結節性外觀）。腹水。門脈血流異常。脾腫大。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 不可逆病變，治療為支持性
+        - 控制併發症（腹水、肝性腦病）
+        - 改善生活品質
+ddxSource: auto-generated

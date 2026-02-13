@@ -3,13 +3,15 @@ nameEn: Pneumocystosis
 nameZh: 肺囊蟲病
 bodySystem: infectious
 description: 由Pneumocystis真菌引起的伺機性肺部感染,主要見於嚴重免疫抑制的犬貓。病原體寄生於肺泡上皮細胞,引起間質性肺炎及進行性呼吸衰竭。
-
 aliases:
-  - { alias: 卡氏肺囊蟲肺炎, language: zh }
-  - { alias: 肺孢子蟲病, language: zh }
-  - { alias: Pneumocystis Pneumonia, language: en }
-  - { alias: PCP, language: en }
-
+  - alias: 卡氏肺囊蟲肺炎
+    language: zh
+  - alias: 肺孢子蟲病
+    language: zh
+  - alias: Pneumocystis Pneumonia
+    language: en
+  - alias: PCP
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: FIV/FeLV陽性貓隻高風險,預後極差
-
 etiology:
   categories:
     - name: 病原體
@@ -32,7 +33,6 @@ etiology:
         - 先天性免疫缺陷
         - 長期高劑量類固醇或化療
         - 嚴重營養不良
-
 clinicalSigns:
   early:
     - 進行性呼吸困難及呼吸急促
@@ -44,26 +44,24 @@ clinicalSigns:
     - 發紺,黏膜蒼白
     - 低氧血症導致虛弱及昏厥
     - 繼發性細菌感染併發症
-
 diagnosis:
   primaryTests:
     - name: 胸部X光
-      notes: "雙側瀰漫性間質性肺浸潤,呈現磨玻璃狀或網狀結節影"
+      notes: 雙側瀰漫性間質性肺浸潤,呈現磨玻璃狀或網狀結節影
     - name: 支氣管肺泡灌洗(BAL)
-      notes: "細胞學見泡沫狀滲出物,GMS或Giemsa染色見囊體"
+      notes: 細胞學見泡沫狀滲出物,GMS或Giemsa染色見囊體
     - name: 血氧分析
-      notes: "動脈血氧分壓(PaO2)<60 mmHg,A-a梯度增加"
+      notes: 動脈血氧分壓(PaO2)<60 mmHg,A-a梯度增加
     - name: 經支氣管鏡肺切片
-      notes: "組織病理見肺泡腔內大量囊體及間質性炎症"
+      notes: 組織病理見肺泡腔內大量囊體及間質性炎症
     - name: PCR檢測
-      notes: "BAL液或組織Pneumocystis DNA檢測,高敏感度"
+      notes: BAL液或組織Pneumocystis DNA檢測,高敏感度
   differentialDiagnoses:
     - 其他間質性肺炎(病毒/細菌)
     - 肺水腫(心源性或非心源性)
     - 肺纖維化
     - 淋巴瘤或轉移性肺腫瘤
     - 過敏性肺炎
-
 treatment:
   medical:
     - Trimethoprim-sulfamethoxazole 15-30 mg/kg PO q12h,持續3-4週
@@ -75,22 +73,60 @@ treatment:
     - 重症照護:呼吸器支持(若需要)
     - 監測血氧及電解質
     - 高蛋白低過敏飲食
-
 prognosis:
-  general: "預後極差,特別是免疫功能無法恢復的病例。即使積極治療,死亡率仍達60-80%。存活者需長期預防性治療,復發風險高。早期診斷及治療可改善預後,但整體預後保留。"
-
+  general: 預後極差,特別是免疫功能無法恢復的病例。即使積極治療,死亡率仍達60-80%。存活者需長期預防性治療,復發風險高。早期診斷及治療可改善預後,但整體預後保留。
 prevention:
   - FIV/FeLV陽性貓隻預防性給予Trimethoprim-sulfamethoxazole
   - 免疫抑制動物避免接觸病原體環境
   - 類固醇治療期間密切監測呼吸狀況
   - 化療病患定期胸部X光篩檢
   - 環境衛生控制,減少孢子暴露
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Pneumocystosis in dogs: meta-analysis of 43 published cases including clinical signs, diagnostic procedures, and treatment."
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: >-
+      Pneumocystosis in dogs: meta-analysis of 43 published cases including clinical signs, diagnostic procedures, and
+      treatment.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6504147/
     type: review
-    pmid: "29145787"
+    pmid: '29145787'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: syncope
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: coughing
+    frequency: common
+diagnosticAlgorithm:
+  title: 肺囊蟲病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸部X光
+          notes: 雙側瀰漫性間質性肺浸潤,呈現磨玻璃狀或網狀結節影
+        - name: 支氣管肺泡灌洗(BAL)
+          notes: 細胞學見泡沫狀滲出物,GMS或Giemsa染色見囊體
+        - name: 血氧分析
+          notes: 動脈血氧分壓(PaO2)<60 mmHg,A-a梯度增加
+ddxSource: auto-generated

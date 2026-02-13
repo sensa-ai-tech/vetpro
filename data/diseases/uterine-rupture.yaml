@@ -3,11 +3,11 @@ nameEn: Uterine Rupture
 nameZh: 子宮破裂
 bodySystem: reproductive
 description: 子宮壁完全破裂，胎兒或內容物進入腹腔。多見於難產、子宮蓄膿或外傷。為急症，高死亡率，需緊急手術。
-
 aliases:
-  - { alias: 子宮穿孔, language: zh }
-  - { alias: Uterine Perforation, language: en }
-
+  - alias: 子宮穿孔
+    language: zh
+  - alias: Uterine Perforation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少見
-
 etiology:
   categories:
     - name: 產科原因
@@ -30,7 +29,6 @@ etiology:
         - 子宮蓄膿壁變薄
         - 腹部鈍傷或車禍
         - 子宮腫瘤壞死
-
 clinicalSigns:
   early:
     - 難產過程突然虛弱
@@ -41,23 +39,21 @@ clinicalSigns:
     - 腹腔出血、腹膜炎
     - 胎兒於腹腔觸診
     - 敗血症
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "子宮壁連續性中斷、腹腔積液、胎兒或膿於腹腔"
+      notes: 子宮壁連續性中斷、腹腔積液、胎兒或膿於腹腔
     - name: 腹腔穿刺
-      notes: "血性或膿性腹水"
+      notes: 血性或膿性腹水
     - name: 全血球計數
-      notes: "貧血、白血球增多"
+      notes: 貧血、白血球增多
     - name: 剖腹探查
-      notes: "確診及治療"
+      notes: 確診及治療
   differentialDiagnoses:
     - 子宮扭轉
     - 難產
     - 脾臟破裂
     - 肝臟腫瘤破裂
-
 treatment:
   medical:
     - 緊急穩定：大量IV輸液、氧氣、廣效抗生素
@@ -66,46 +62,99 @@ treatment:
     - 卵巢子宮切除術
     - 腹腔沖洗（腹膜炎）
     - 術後重症監護：抗生素、止痛、營養支持
-
 prognosis:
-  general: "預後保留至不良。早期診斷及手術提高存活率。敗血症、DIC及多重器官衰竭為主要死因。"
-
+  general: 預後保留至不良。早期診斷及手術提高存活率。敗血症、DIC及多重器官衰竭為主要死因。
 prevention:
   - 難產早期識別及處理
   - 謹慎使用催產素（僅無阻塞時）
   - 避免過度產道操作
   - 子宮蓄膿早期手術
   - 絕育預防
-
-
 guidelineRefs:
   - sourceOrg: Cell transplantation
     title: The effect and mechanism of human amniotic mesenchymal stem cells on scar formation in rat uterine incision.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12678918/
     type: research
-    pmid: "41169129"
+    pmid: '41169129'
     relevance: supporting
   - sourceOrg: Acta obstetricia et gynecologica Scandinavica
-    title: "Toward human uterus tissue engineering: Uterine decellularization in a non-human primate species."
+    title: 'Toward human uterus tissue engineering: Uterine decellularization in a non-human primate species.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11871112/
     type: research
-    pmid: "39641531"
+    pmid: '39641531'
     relevance: supporting
-  - sourceOrg: "Malawi medical journal : the journal of Medical Association of Malawi"
-    title: A preliminary investigation of the effects of labour inducing plant, Cissampelos mucronata, on the outcomes of pregnancy using rat models.
+  - sourceOrg: 'Malawi medical journal : the journal of Medical Association of Malawi'
+    title: >-
+      A preliminary investigation of the effects of labour inducing plant, Cissampelos mucronata, on the outcomes of
+      pregnancy using rat models.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6307056/
     type: research
-    pmid: "30627349"
+    pmid: '30627349'
     relevance: supporting
-  - sourceOrg: "Reproduction &amp; fertility"
-    title: Development of a rabbit model of uterine rupture after caesarean section, histological, biomechanical and polarimetric analysis of the uterine tissue.
+  - sourceOrg: Reproduction &amp; fertility
+    title: >-
+      Development of a rabbit model of uterine rupture after caesarean section, histological, biomechanical and
+      polarimetric analysis of the uterine tissue.
     url: https://pubmed.ncbi.nlm.nih.gov/41020921/
     type: research
-    pmid: "41020921"
+    pmid: '41020921'
     relevance: supporting
   - sourceOrg: Biomaterials
-    title: Biomimetic nanostructural materials based on placental amniotic membrane-derived nanofibers for self-healing and anti-adhesion during cesarean section.
+    title: >-
+      Biomimetic nanostructural materials based on placental amniotic membrane-derived nanofibers for self-healing and
+      anti-adhesion during cesarean section.
     url: https://pubmed.ncbi.nlm.nih.gov/39787897/
     type: research
-    pmid: "39787897"
+    pmid: '39787897'
     relevance: supporting
+diagnosticAlgorithm:
+  title: 子宮破裂 診斷流程
+  steps:
+    - step: 1
+      action: 緊急評估
+      details: 評估急性腹部危象和休克徵象
+      findings:
+        - 急性腹痛和腹部膨脹
+        - 休克徵象（蒼白黏膜、心搏過速）
+        - 分娩困難病史
+        - 陰道出血或停止分娩努力
+    - step: 2
+      action: 影像學檢查
+      details: 進行腹部X光和超音波緊急評估
+      findings:
+        - 腹腔游離液體（血性腹水）
+        - 胎兒位於子宮外
+        - 腹腔內游離氣體
+        - 子宮輪廓異常
+    - step: 3
+      action: 實驗室與穩定
+      details: 進行緊急實驗室檢查並穩定患者
+      findings:
+        - PCV/TP評估出血程度
+        - 凝血功能評估
+        - 電解質和酸鹼平衡
+        - 腹腔穿刺液分析
+    - step: 4
+      action: 手術確診與治療
+      details: 緊急探查性剖腹術確診並修復
+      findings:
+        - 子宮破裂部位確認
+        - 胎兒存活評估
+        - 腹腔汙染程度
+        - 決定修復或切除子宮
+clinicalPearls:
+  - 催產素使用必須謹慎：確認無胎兒-骨盆不相稱（FPD）後才可使用
+  - 難產持續時間越長，子宮破裂風險越高
+  - 陰道出血量少不能排除子宮破裂（血液流入腹腔）
+  - X 光上腹腔內游離胎兒是高度特異性徵兆
+monitoringItems:
+  - 術後 ICU 密集監護 24-72 小時
+  - 連續血壓和心電圖監測
+  - PCV/TS 每 4-6 小時（監測持續出血）
+  - 腹腔引流液量和性質監測
+associatedSymptoms:
+  - symptomId: pallor-cyanosis
+    frequency: rare
+  - symptomId: dehydration
+    frequency: rare
+ddxSource: book

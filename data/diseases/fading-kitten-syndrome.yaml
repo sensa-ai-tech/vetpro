@@ -3,12 +3,13 @@ nameEn: Fading Kitten Syndrome
 nameZh: 幼貓消逝症候群
 bodySystem: reproductive
 description: 幼貓消逝症候群為出生後數天至數週內看似正常的幼貓突然衰弱並死亡的統稱。常見原因包括初乳攝取不足、低體溫、低血糖、新生兒同種免疫溶血（B 型母貓 × A 型幼貓）、感染（FPV、FIP、FeLV）與先天畸形。為繁殖貓舍的重要問題。
-
 aliases:
-  - { alias: 新生幼貓衰竭, language: zh }
-  - { alias: Fading Kitten, language: en }
-  - { alias: Neonatal Kitten Mortality, language: en }
-
+  - alias: 新生幼貓衰竭
+    language: zh
+  - alias: Fading Kitten
+    language: en
+  - alias: Neonatal Kitten Mortality
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 純種貓幼貓消逝症候群發生率較高。B 型母貓所生 A 型幼貓的新生兒同種免疫溶血為特有且可預防的原因。FPV 垂直感染引起小腦發育不全。
-
 etiology:
   categories:
     - name: 非感染性原因
@@ -39,7 +39,6 @@ etiology:
         - 無乳或泌乳不足
         - 母性行為不良
         - 母貓感染（FeLV、FIV）
-
 clinicalSigns:
   early:
     - 吸吮力減弱
@@ -53,7 +52,6 @@ clinicalSigns:
     - 呼吸急促或不規則
     - 黃疸（新生兒溶血）
     - 迅速衰竭死亡
-
 diagnosis:
   primaryTests:
     - name: 體重與體溫監測
@@ -66,7 +64,6 @@ diagnosis:
     - FPV 糞便 PCR
     - 屍體剖檢（群體問題時必要）
     - 母貓 FCoV 抗體
-
 treatment:
   principles:
     - 保溫為最優先
@@ -82,16 +79,57 @@ treatment:
     - 促進排泄（溫棉球刺激肛周）
     - 感染：amoxicillin 15 mg/kg PO BID
     - 繁殖場管理：母貓篩檢（FeLV/FIV/血型）、環境消毒
-
 prognosis: 幼貓消逝症候群一旦明顯衰弱，死亡率極高。預防（母貓血型配對、初乳確保、環境保溫、感染篩檢）為最有效策略。新生兒溶血幼貓及時移除初乳可挽救。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Fading kitten syndrome: Factors predisposing to 'faders' and treatment options."
+    title: 'Fading kitten syndrome: Factors predisposing to ''faders'' and treatment options.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10845402/
     type: review
-    pmid: "35209774"
+    pmid: '35209774'
 pubmedQueries:
   - query: '"fading kitten" OR "neonatal kitten" AND (mortality OR syndrome) AND (veterinary OR feline) AND "treatment"'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 幼貓消逝症候群 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - hypothermia-sign 相關症狀
+        - abdominal-distension 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 體重與體溫監測
+          notes: 每日秤重與測溫。體重下降 >10% 或持續 2 天不增為警訊
+        - name: 母貓與幼貓血型
+          notes: 排除新生兒同種免疫溶血。B 型母貓 + A 型幼貓為高風險組合
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 血糖快速檢測
+        - FeLV/FIV 快篩（母貓）
+        - FPV 糞便 PCR
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 保溫為最優先
+        - 確保營養攝取
+        - 新生兒溶血需移除初乳
+ddxSource: auto-generated

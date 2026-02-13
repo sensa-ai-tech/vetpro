@@ -2,14 +2,18 @@ slug: choroid-plexus-tumor
 nameEn: Choroid Plexus Tumor
 nameZh: 脈絡叢腫瘤
 bodySystem: oncology
-description: 脈絡叢腫瘤為起源於腦室脈絡叢上皮的腫瘤，分為脈絡叢乳頭瘤（choroid plexus papilloma, CPP，良性）與脈絡叢癌（choroid plexus carcinoma, CPC，惡性）。位於腦室內，常導致阻塞性水腦症（obstructive hydrocephalus）。犬隻為最常見受影響物種。
-
+description: >-
+  脈絡叢腫瘤為起源於腦室脈絡叢上皮的腫瘤，分為脈絡叢乳頭瘤（choroid plexus papilloma, CPP，良性）與脈絡叢癌（choroid plexus carcinoma,
+  CPC，惡性）。位於腦室內，常導致阻塞性水腦症（obstructive hydrocephalus）。犬隻為最常見受影響物種。
 aliases:
-  - { alias: 脈絡叢乳頭瘤, language: zh }
-  - { alias: Choroid Plexus Papilloma, language: en }
-  - { alias: Choroid Plexus Carcinoma, language: en }
-  - { alias: CPP, language: en }
-
+  - alias: 脈絡叢乳頭瘤
+    language: zh
+  - alias: Choroid Plexus Papilloma
+    language: en
+  - alias: Choroid Plexus Carcinoma
+    language: en
+  - alias: CPP
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻脈絡叢腫瘤極罕見。
-
 etiology:
   categories:
     - name: 腫瘤類型
@@ -29,7 +32,6 @@ etiology:
         - 側腦室（lateral ventricle）
         - 第四腦室（fourth ventricle）
         - 第三腦室（third ventricle，較少見）
-
 clinicalSigns:
   early:
     - 行為改變
@@ -42,14 +44,12 @@ clinicalSigns:
     - 共濟失調（第四腦室腫瘤）
     - 前旋
     - 頭部傾斜
-
 diagnosis:
   primaryTests:
     - name: 腦部 MRI
       notes: 腦室內花椰菜狀（cauliflower-like）均勻造影劑增強腫塊。伴隨腦室擴張（水腦症）。T1 等至低訊號、T2 等至高訊號。
     - name: CSF 分析
       notes: 蛋白質升高。可能有腫瘤細胞脫落（CPC 較常見）。注意顱內壓升高時 CSF 採集風險。
-
 treatment:
   principles:
     - 手術切除為首選（特別是 CPP）
@@ -60,34 +60,78 @@ treatment:
     - CPP 手術完整切除可能治癒
     - 水腦症嚴重者可考慮 VP shunt（ventriculoperitoneal shunt）
     - CPC 術後放射治療
-    - "抗癲癇管理：Levetiracetam 或 Phenobarbital"
-    - "短期類固醇減輕水腫：Dexamethasone"
+    - 抗癲癇管理：Levetiracetam 或 Phenobarbital
+    - 短期類固醇減輕水腫：Dexamethasone
     - Omeprazole（減少 CSF 分泌，輔助管理水腦症）
-
 prognosis: CPP 手術完整切除後預後良好，中位存活可達 1-3 年以上。CPC 預後較差（惡性，可經 CSF 播散），中位存活約 6-12 個月。手術風險取決於腫瘤位置（第四腦室手術風險較高）。水腦症管理影響生活品質。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: An Illustrated Scoping Review of the Magnetic Resonance Imaging Characteristics of Canine and Feline Brain Tumors.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11010916/
     type: review
-    pmid: "38612283"
+    pmid: '38612283'
   - sourceOrg: Frontiers in oncology
-    title: "Canine Primary Intracranial Cancer: A Clinicopathologic and Comparative Review of Glioma, Meningioma, and Choroid Plexus Tumors."
+    title: >-
+      Canine Primary Intracranial Cancer: A Clinicopathologic and Comparative Review of Glioma, Meningioma, and Choroid
+      Plexus Tumors.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6856054/
     type: review
-    pmid: "31788444"
+    pmid: '31788444'
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Solitary intraventricular tumors in dogs and cats treated with radiotherapy alone or combined with ventriculoperitoneal shunts: A retrospective descriptive case series."
+    title: >-
+      Solitary intraventricular tumors in dogs and cats treated with radiotherapy alone or combined with
+      ventriculoperitoneal shunts: A retrospective descriptive case series.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9889607/
     type: research
-    pmid: "36382395"
+    pmid: '36382395'
   - sourceOrg: Frontiers in veterinary science
-    title: "Case Report: Ventriculoperitoneal Shunting and Radiation Therapy Treatment in a Cat With a Suspected Choroid Plexus Tumor and Hypertensive Hydrocephalus."
+    title: >-
+      Case Report: Ventriculoperitoneal Shunting and Radiation Therapy Treatment in a Cat With a Suspected Choroid
+      Plexus Tumor and Hypertensive Hydrocephalus.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8989464/
     type: case-report
-    pmid: "35400094"
+    pmid: '35400094'
 pubmedQueries:
   - query: '"choroid plexus tumor" OR "choroid plexus papilloma" AND (veterinary OR canine) AND ("surgery" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: common
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: blindness
+    frequency: uncommon
+  - symptomId: head-tilt
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: common
+diagnosticAlgorithm:
+  title: 脈絡叢腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+        - ataxia 相關症狀
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腦部 MRI
+          notes: 腦室內花椰菜狀（cauliflower-like）均勻造影劑增強腫塊。伴隨腦室擴張（水腦症）。T1 等至低訊號、T2 等至高訊號。
+        - name: CSF 分析
+          notes: 蛋白質升高。可能有腫瘤細胞脫落（CPC 較常見）。注意顱內壓升高時 CSF 採集風險。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術切除為首選（特別是 CPP）
+        - 水腦症管理
+        - CPC 可能需額外治療
+ddxSource: auto-generated

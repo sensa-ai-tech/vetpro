@@ -3,11 +3,11 @@ nameEn: Meningomyelocele
 nameZh: 脊膜脊髓膨出
 bodySystem: neurology
 description: 脊膜脊髓膨出是脊柱裂的嚴重形式，脊髓與脊膜經椎弓缺損處向外突出形成囊狀膨出。英國鬥牛犬與曼島貓好發，可導致嚴重後肢神經功能障礙與排泄失禁。
-
 aliases:
-  - { alias: 脊髓脊膜膨出, language: zh }
-  - { alias: Myelomeningocele, language: en }
-
+  - alias: 脊髓脊膜膨出
+    language: zh
+  - alias: Myelomeningocele
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 英國鬥牛犬、曼島貓品種好發。
-
 etiology:
   categories:
     - name: 先天發育異常
@@ -23,7 +22,6 @@ etiology:
         - 神經管閉合失敗
         - 脊髓與脊膜向外疝出
         - 椎弓發育缺陷
-
 clinicalSigns:
   early:
     - 背部腰薦區域囊狀腫塊
@@ -32,48 +30,76 @@ clinicalSigns:
     - 後肢癱瘓
     - 排尿排便失禁
     - 囊腫破裂感染風險
-
 diagnosis:
   primaryTests:
     - name: 影像與臨床檢查
       notes: MRI 確認脊髓膨出範圍與程度。X 光見椎弓缺損。
-
 treatment:
   principles:
     - 依嚴重程度決定保守或手術治療
     - 支持療法
   general:
     - 手術修復囊腫覆蓋。神經功能缺損多不可逆。終生泌尿與排便管理。
-
 prognosis: 預後謹慎至不良。神經功能缺損通常為永久性。需評估生活品質。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Lumbosacral (myelo) meningoceles in dogs, related tethered cord syndrome, and their surgical management: review of the literature and clinical experience."
+    title: >-
+      Lumbosacral (myelo) meningoceles in dogs, related tethered cord syndrome, and their surgical management: review of
+      the literature and clinical experience.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11975860/
     type: review
-    pmid: "40201081"
+    pmid: '40201081'
   - sourceOrg: Fetal diagnosis and therapy
     title: Evolution and Variations of the Ovine Model of Spina Bifida.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10757987/
     type: review
-    pmid: "37393899"
+    pmid: '37393899'
   - sourceOrg: International journal of molecular sciences
-    title: "Molecular Mechanism Operating in Animal Models of Neurogenic Detrusor Overactivity: A Systematic Review Focusing on Bladder Dysfunction of Neurogenic Origin."
+    title: >-
+      Molecular Mechanism Operating in Animal Models of Neurogenic Detrusor Overactivity: A Systematic Review Focusing
+      on Bladder Dysfunction of Neurogenic Origin.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9959149/
     type: review
-    pmid: "36834694"
+    pmid: '36834694'
   - sourceOrg: Prenatal diagnosis
-    title: "Preclinical stem cell therapy in fetuses with myelomeningocele: A systematic review and meta-analysis."
+    title: 'Preclinical stem cell therapy in fetuses with myelomeningocele: A systematic review and meta-analysis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7611444/
     type: review
-    pmid: "33427329"
+    pmid: '33427329'
   - sourceOrg: Brain and behavior
-    title: A preliminary investigation of high retinoic acid exposure during fetal development on behavioral competency and litter characteristics in newborn rats.
+    title: >-
+      A preliminary investigation of high retinoic acid exposure during fetal development on behavioral competency and
+      litter characteristics in newborn rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8553327/
     type: research
-    pmid: "34473418"
+    pmid: '34473418'
 pubmedQueries:
   - query: '"Meningomyelocele" AND (veterinary OR canine OR feline) AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 脊膜脊髓膨出 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - paresis-paralysis 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 影像與臨床檢查
+          notes: MRI 確認脊髓膨出範圍與程度。X 光見椎弓缺損。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 依嚴重程度決定保守或手術治療
+        - 支持療法
+ddxSource: auto-generated

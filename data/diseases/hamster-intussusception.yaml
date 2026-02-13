@@ -3,22 +3,20 @@ nameEn: Hamster Intussusception
 nameZh: 倉鼠腸套疊
 bodySystem: gastrointestinal
 description: 倉鼠腸管套入相鄰腸段導致的腸道阻塞急症，好發於幼鼠或患有腸道疾病的倉鼠。表現為急性腹痛、血便及直腸脫出，需緊急手術。
-
 aliases:
-  - { alias: "倉鼠腸套疊", language: zh }
-  - { alias: "Hamster Intussusception", language: en }
-
+  - alias: 倉鼠腸套疊
+    language: zh
+  - alias: Hamster Intussusception
+    language: en
 species:
   - speciesCommon: hamster
     prevalence: uncommon
     notes: 倉鼠可受此疾病影響。
-
 etiology:
   categories:
     - name: 病因
       examples:
         - 詳見臨床文獻
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -27,14 +25,12 @@ clinicalSigns:
   progressive:
     - 症狀加重
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 完整理學檢查與病史評估。
     - name: 實驗室檢查
       notes: CBC/生化排除系統性疾病。
-
 treatment:
   principles:
     - 治療基礎病因
@@ -44,16 +40,54 @@ treatment:
     - 依病因治療
     - 支持性照護
     - 定期追蹤
-
 prognosis: 預後取決於疾病嚴重度與治療時效。早期診斷與適當治療可改善預後。
-
-
 guidelineRefs:
   - sourceOrg: Microscopy research and technique
-    title: The effect of the anti-angiogenic drug sunitinib malate on the vascular architecture of oral squamous cell carcinoma.
+    title: >-
+      The effect of the anti-angiogenic drug sunitinib malate on the vascular architecture of oral squamous cell
+      carcinoma.
     url: https://pubmed.ncbi.nlm.nih.gov/24458724/
     type: research
-    pmid: "24458724"
+    pmid: '24458724'
 pubmedQueries:
   - query: '"Hamster Intussusception" AND (veterinary OR hamster) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: haematochezia
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 倉鼠腸套疊 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 完整理學檢查與病史評估。
+        - name: 實驗室檢查
+          notes: CBC/生化排除系統性疾病。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 支持性照護
+        - 監測恢復進度
+ddxSource: auto-generated

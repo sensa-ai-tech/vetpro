@@ -3,17 +3,16 @@ nameEn: Bengal Cat Patellar Luxation
 nameZh: 孟加拉貓髕骨脫位
 bodySystem: orthopedic
 description: 孟加拉貓較易發生髕骨脫位,多為內側脫位。輕度可能無症狀,中重度導致跛行、疼痛及退化性關節炎,需外科矯正。
-
 aliases:
-  - { alias: 髕骨脫位, language: zh }
-  - { alias: Patella Luxation, language: en }
-
+  - alias: 髕骨脫位
+    language: zh
+  - alias: Patella Luxation
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 孟加拉貓、阿比西尼亞、德文Rex
-
 etiology:
   categories:
     - name: 骨骼發育異常
@@ -21,7 +20,6 @@ etiology:
         - 遺傳因素
         - 股骨滑車溝淺平
         - 膝關節結構異常
-
 clinicalSigns:
   early:
     - 間歇性後肢跛行
@@ -32,35 +30,52 @@ clinicalSigns:
     - 膝關節疼痛、腫脹
     - 肌肉萎縮
     - 退化性關節炎
-
 diagnosis:
   primaryTests:
     - name: 骨科理學檢查
-      notes: "髕骨可手動脫位,分級I-IV級"
+      notes: 髕骨可手動脫位,分級I-IV級
     - name: 膝關節X光
-      notes: "評估退化性變化及骨骼排列"
+      notes: 評估退化性變化及骨骼排列
   differentialDiagnoses:
     - 前十字韌帶斷裂
     - 髖關節疾病
-
 treatment:
   medical:
     - 輕度(I-II級):保守治療(體重控制、止痛)
     - 中重度(III-IV級):外科矯正(滑車溝加深、脛骨粗隆轉位)
     - NSAIDs(Meloxicam 0.05 mg/kg PO)
     - 物理復健
-
 prognosis:
-  general: "外科矯正後預後良好(成功率85-90%)。未治療中重度病例發展為退化性關節炎。"
-
+  general: 外科矯正後預後良好(成功率85-90%)。未治療中重度病例發展為退化性關節炎。
 prevention:
   - 繁殖前骨科檢查
   - 受影響貓不應繁殖
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Osteochondrosis in the feline stifle: a case series and literature review."
+    title: 'Osteochondrosis in the feline stifle: a case series and literature review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11924091/
     type: review
-    pmid: "40108987"
+    pmid: '40108987'
+associatedSymptoms:
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 孟加拉貓髕骨脫位 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cachexia-muscle-wasting 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 骨科理學檢查
+          notes: 髕骨可手動脫位,分級I-IV級
+        - name: 膝關節X光
+          notes: 評估退化性變化及骨骼排列
+ddxSource: auto-generated

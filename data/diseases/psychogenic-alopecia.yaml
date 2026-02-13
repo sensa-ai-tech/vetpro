@@ -3,13 +3,15 @@ nameEn: Psychogenic Alopecia
 nameZh: 心因性脫毛
 bodySystem: dermatology
 description: 犬貓因過度理毛（overgrooming）導致的非炎症性脫毛，為焦慮或強迫行為的表現。貓心因性脫毛需在排除所有皮膚科原因（尤其過敏）後方可診斷，真正純行為性原因較先前認為的少見。
-
 aliases:
-  - { alias: "過度理毛", language: zh }
-  - { alias: "心理性脫毛", language: zh }
-  - { alias: "Psychogenic Overgrooming", language: en }
-  - { alias: "Feline Psychogenic Alopecia", language: en }
-
+  - alias: 過度理毛
+    language: zh
+  - alias: 心理性脫毛
+    language: zh
+  - alias: Psychogenic Overgrooming
+    language: en
+  - alias: Feline Psychogenic Alopecia
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓心因性脫毛較常見，好發於腹部、大腿內側及側腹部。需嚴格排除食物過敏、跳蚤過敏等。
-
 etiology:
   categories:
     - name: 行為性
@@ -32,7 +33,6 @@ etiology:
         - 皮膚黴菌感染
         - 蠕形蟎
         - 異位性皮膚炎
-
 clinicalSigns:
   early:
     - 理毛時間明顯增加
@@ -43,14 +43,12 @@ clinicalSigns:
     - 禿毛區域皮膚正常（無炎症）
     - 新生毛髮短且斷裂
     - 嚴重時出現繼發性皮膚損傷
-
 diagnosis:
   primaryTests:
     - name: 系統性皮膚科排除
       notes: 跳蚤梳檢、皮膚刮片、黴菌培養、食物排除試驗（8-12 週）。必須嚴格排除所有過敏原因。
     - name: 毛髮檢查（trichogram）
       notes: 顯微鏡下見毛髮尖端斷裂（被舔斷）而非自然脫落。確認脫毛為過度理毛所致。
-
 treatment:
   principles:
     - 嚴格排除所有皮膚科原因
@@ -64,9 +62,51 @@ treatment:
     - Fluoxetine 0.5-1 mg/kg PO SID（首選藥物）
     - Clomipramine 0.25-0.5 mg/kg PO SID（替代選擇）
     - 不建議使用伊莉莎白圈（增加壓力且不治本）
-
 prognosis: 排除醫學原因後，純行為性心因性脫毛以環境管理結合藥物治療預後中等。多數可減少但不一定完全消除過度理毛。移除壓力源後部分貓可自行恢復。停藥後復發常見。
-
 pubmedQueries:
   - query: '"Psychogenic Alopecia" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 心因性脫毛症 診斷流程
+  steps:
+    - step: 1
+      action: 皮膚學檢查
+      details: 皮膚刮片、毛髮鏡檢、黴菌培養
+      findings:
+        - 蟎蟲
+        - 黴菌感染
+        - 正常
+    - step: 2
+      action: 跳蚤和食物排除
+      details: 8週嚴格跳蚤控制+8-12週食物排除試驗
+      findings:
+        - 跳蚤過敏確認
+        - 食物過敏確認
+        - 無改善
+    - step: 3
+      action: 全身性排除
+      details: 甲狀腺功能、皮膚活檢、過敏檢測
+      findings:
+        - 甲狀腺亢進
+        - 特應性皮炎
+        - 無醫學原因
+    - step: 4
+      action: 行為性診斷
+      details: 確認壓力源並開始環境修正和藥物治療
+      findings:
+        - 環境壓力確認
+        - 需行為藥物
+        - 多因子
+clinicalPearls:
+  - 76%被懷疑為心因性脫毛的貓實際上有醫學原因——必須徹底排除
+  - 食物過敏是最常見的隱蔽性搔癢原因，排除試驗需至少8週
+  - 貓可能只在飼主不在時過度理毛（隱蔽性理毛），監視攝影機可協助診斷
+monitoringItems:
+  - 脫毛範圍和毛髮再生追蹤
+  - 食物排除試驗遵從度確認
+  - 行為藥物副作用監測
+  - 家庭環境壓力源持續評估
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: rare
+ddxSource: book

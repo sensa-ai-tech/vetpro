@@ -3,22 +3,20 @@ nameEn: Chinchilla Diabetes
 nameZh: 龍貓糖尿病
 bodySystem: endocrine
 description: 龍貓胰臟 beta 細胞功能障礙導致的高血糖代謝疾病，多與飲食過多含糖零食有關。表現為多飲多尿、體重變化。飲食控制為管理基礎。
-
 aliases:
-  - { alias: "龍貓糖尿病", language: zh }
-  - { alias: "Chinchilla Diabetes", language: en }
-
+  - alias: 龍貓糖尿病
+    language: zh
+  - alias: Chinchilla Diabetes
+    language: en
 species:
   - speciesCommon: chinchilla
     prevalence: uncommon
     notes: 龍貓可受此疾病影響。
-
 etiology:
   categories:
     - name: 病因
       examples:
         - 詳見臨床文獻
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -27,14 +25,12 @@ clinicalSigns:
   progressive:
     - 症狀加重
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 完整理學檢查與病史評估。
     - name: 實驗室檢查
       notes: CBC/生化排除系統性疾病。
-
 treatment:
   principles:
     - 治療基礎病因
@@ -44,38 +40,78 @@ treatment:
     - 依病因治療
     - 支持性照護
     - 定期追蹤
-
 prognosis: 預後取決於疾病嚴重度與治療時效。早期診斷與適當治療可改善預後。
-
-
 guidelineRefs:
   - sourceOrg: Comparative medicine
-    title: Diagnosis, Surveillance and Management of Streptococcus equi subspecies zooepidemicus Infections in Chinchillas (Chinchilla lanigera).
+    title: >-
+      Diagnosis, Surveillance and Management of Streptococcus equi subspecies zooepidemicus Infections in Chinchillas
+      (Chinchilla lanigera).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7446643/
     type: case-report
-    pmid: "32731906"
+    pmid: '32731906'
   - sourceOrg: SAGE open medical case reports
-    title: "Case of Erdheim-Chester presenting with xanthelasma-like eruption and osteolytic bone lesions: A case report."
+    title: 'Case of Erdheim-Chester presenting with xanthelasma-like eruption and osteolytic bone lesions: A case report.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6503601/
     type: case-report
-    pmid: "31105942"
+    pmid: '31105942'
   - sourceOrg: Pediatric diabetes
-    title: "Perceived Knowledge and Confidence for Providing Youth-Specific Type 1 Diabetes Exercise Recommendations amongst Pediatric Diabetes Healthcare Professionals: An International, Cross-Sectional, Online Survey."
+    title: >-
+      Perceived Knowledge and Confidence for Providing Youth-Specific Type 1 Diabetes Exercise Recommendations amongst
+      Pediatric Diabetes Healthcare Professionals: An International, Cross-Sectional, Online Survey.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12016985/
     type: research
-    pmid: "40303245"
-  - sourceOrg: "Contrast media &amp; molecular imaging"
-    title: "Biodistribution of [11C]-Metformin and mRNA Expression of Placentae Metformin Transporters in the Pregnant Chinchilla."
+    pmid: '40303245'
+  - sourceOrg: Contrast media &amp; molecular imaging
+    title: >-
+      Biodistribution of [11C]-Metformin and mRNA Expression of Placentae Metformin Transporters in the Pregnant
+      Chinchilla.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6515019/
     type: research
-    pmid: "31182937"
+    pmid: '31182937'
     relevance: supporting
   - sourceOrg: Nucleic acids research
-    title: "The Year of the Rat: The Rat Genome Database at 20: a multi-species knowledgebase and analysis platform."
+    title: 'The Year of the Rat: The Rat Genome Database at 20: a multi-species knowledgebase and analysis platform.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7145519/
     type: research
-    pmid: "31713623"
+    pmid: '31713623'
     relevance: supporting
 pubmedQueries:
   - query: '"Chinchilla Diabetes" AND (veterinary OR chinchilla) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 龍貓糖尿病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 完整理學檢查與病史評估。
+        - name: 實驗室檢查
+          notes: CBC/生化排除系統性疾病。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 支持性照護
+        - 監測恢復進度
+ddxSource: auto-generated

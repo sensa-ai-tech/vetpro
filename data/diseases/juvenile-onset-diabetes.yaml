@@ -3,12 +3,13 @@ nameEn: Juvenile Onset Diabetes
 nameZh: 幼年型糖尿病
 bodySystem: endocrine
 description: 幼年犬貓(<1歲)發生的糖尿病，通常為第一型(胰島素依賴型)，胰臟β細胞破壞導致胰島素絕對缺乏。需終生胰島素治療。
-
 aliases:
-  - { alias: 幼年糖尿病, language: zh }
-  - { alias: Type 1 Diabetes Juvenile, language: en }
-  - { alias: Juvenile Diabetes Mellitus, language: en }
-
+  - alias: 幼年糖尿病
+    language: zh
+  - alias: Type 1 Diabetes Juvenile
+    language: en
+  - alias: Juvenile Diabetes Mellitus
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 極罕見，貓多為第二型糖尿病且發生於成年
-
 etiology:
   categories:
     - name: 病理機轉
@@ -31,7 +31,6 @@ etiology:
         - 品種遺傳
         - 病毒感染(疑似觸發自體免疫)
         - 家族史
-
 clinicalSigns:
   early:
     - 多渴、多尿
@@ -42,23 +41,21 @@ clinicalSigns:
     - 白內障形成(犬)
     - 糖尿病酮酸中毒(DKA)：嘔吐、虛弱、昏迷
     - 周邊神經病變(貓)
-
 diagnosis:
   primaryTests:
     - name: 血糖測定
-      notes: "空腹血糖>250 mg/dL且持續性高血糖"
+      notes: 空腹血糖>250 mg/dL且持續性高血糖
     - name: 尿液檢查
-      notes: "尿糖陽性、尿酮體(若DKA)"
+      notes: 尿糖陽性、尿酮體(若DKA)
     - name: 果糖胺
-      notes: "反映2-3週平均血糖"
+      notes: 反映2-3週平均血糖
     - name: 生化檢查
-      notes: "評估併發症(腎功能、電解質、酸鹼值)"
+      notes: 評估併發症(腎功能、電解質、酸鹼值)
   differentialDiagnoses:
     - 第一型糖尿病
     - 胰臟炎繼發性糖尿病
     - 庫欣氏症(罕見於幼年)
     - 壓力性高血糖(貓)
-
 treatment:
   medical:
     - 胰島素治療(終生)
@@ -72,27 +69,61 @@ treatment:
     - 電解質補充(鉀)
     - 治療潛在原因
     - 長期監測：血糖、果糖胺、體重
-
 prognosis:
-  general: "需終生治療，飼主配合度佳且控制良好可正常生活；控制不良易發生DKA危及生命"
-
+  general: 需終生治療，飼主配合度佳且控制良好可正常生活；控制不良易發生DKA危及生命
 prevention:
   - 遺傳篩檢(高風險品種)
   - 避免有病史犬隻繁殖
   - 早期症狀識別及就醫
   - 定期健康檢查
-
-
 guidelineRefs:
   - sourceOrg: Scientific reports
-    title: "Wfs1- deficient rats develop primary symptoms of Wolfram syndrome: insulin-dependent diabetes, optic nerve atrophy and medullary degeneration."
+    title: >-
+      Wfs1- deficient rats develop primary symptoms of Wolfram syndrome: insulin-dependent diabetes, optic nerve atrophy
+      and medullary degeneration.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5579261/
     type: research
-    pmid: "28860598"
+    pmid: '28860598'
     relevance: supporting
-  - sourceOrg: "Biological &amp; pharmaceutical bulletin"
-    title: Fluorescein Permeability of the Blood-Brain Barrier Is Enhanced in Juvenile- but Not Young Adult-Onset Type 1 Diabetes in Rats.
+  - sourceOrg: Biological &amp; pharmaceutical bulletin
+    title: >-
+      Fluorescein Permeability of the Blood-Brain Barrier Is Enhanced in Juvenile- but Not Young Adult-Onset Type 1
+      Diabetes in Rats.
     url: https://pubmed.ncbi.nlm.nih.gov/34334494/
     type: research
-    pmid: "34334494"
+    pmid: '34334494'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: polyphagia
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 幼年型糖尿病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - polyuria-polydipsia 相關症狀
+        - polyphagia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血糖測定
+          notes: 空腹血糖>250 mg/dL且持續性高血糖
+        - name: 尿液檢查
+          notes: 尿糖陽性、尿酮體(若DKA)
+        - name: 果糖胺
+          notes: 反映2-3週平均血糖
+ddxSource: auto-generated

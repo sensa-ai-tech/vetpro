@@ -3,13 +3,15 @@ nameEn: Hepatic Myelolipoma
 nameZh: 肝臟髓脂瘤
 bodySystem: hepatic
 description: 肝臟髓脂瘤是一種罕見的良性腫瘤，由成熟脂肪組織與造血組織組成。通常為偶然影像學發現，臨床意義不大，但需與其他肝臟腫瘤鑑別。
-
 aliases:
-  - { alias: 肝髓脂瘤, language: zh }
-  - { alias: 肝臟髓樣脂肪瘤, language: zh }
-  - { alias: Liver Myelolipoma, language: en }
-  - { alias: Hepatic Extramedullary Hematopoiesis with Lipoma, language: en }
-
+  - alias: 肝髓脂瘤
+    language: zh
+  - alias: 肝臟髓樣脂肪瘤
+    language: zh
+  - alias: Liver Myelolipoma
+    language: en
+  - alias: Hepatic Extramedullary Hematopoiesis with Lipoma
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓肝臟髓脂瘤文獻報告極少，臨床特徵與犬相似。
-
 etiology:
   categories:
     - name: 病因假說
@@ -32,7 +33,6 @@ etiology:
         - 成熟脂肪細胞與骨髓造血組織混合
         - 含有各系造血前驅細胞（紅血球、白血球、巨核細胞系）
         - 腫瘤邊界清楚，無浸潤性生長
-
 clinicalSigns:
   early:
     - 多數無臨床症狀
@@ -40,19 +40,17 @@ clinicalSigns:
   progressive:
     - 大型腫塊可能引起腹部膨隆
     - 壓迫鄰近結構時偶爾出現消化道症狀
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "肝臟內混合回音團塊，含高回音（脂肪成分）與低回音（造血組織成分）區域。邊界通常清晰。"
+      notes: 肝臟內混合回音團塊，含高回音（脂肪成分）與低回音（造血組織成分）區域。邊界通常清晰。
     - name: 組織病理學
-      notes: "確診需組織學檢查，顯示成熟脂肪組織與骨髓造血元素混合，無異型性。"
+      notes: 確診需組織學檢查，顯示成熟脂肪組織與骨髓造血元素混合，無異型性。
   differentialDiagnoses:
     - 肝臟脂肪瘤
     - 肝臟血管瘤
     - 結節性增生 (Nodular Hyperplasia)
     - 肝細胞腺瘤
-
 treatment:
   medical:
     - 無症狀且確認良性者通常不需治療
@@ -60,19 +58,37 @@ treatment:
   surgical:
     - 大型腫塊引起臨床症狀者可考慮肝葉切除術
     - 手術切除後預後極佳
-
 prognosis:
-  general: "良性腫瘤，預後極佳。多數病例無需治療。手術切除後復發罕見。需與惡性肝臟腫瘤鑑別以避免不必要的積極治療。"
-
+  general: 良性腫瘤，預後極佳。多數病例無需治療。手術切除後復發罕見。需與惡性肝臟腫瘤鑑別以避免不必要的積極治療。
 prevention:
   - 無已知預防措施
   - 定期健康檢查中的腹部超音波有助於偶然發現
-
-
 guidelineRefs:
   - sourceOrg: Diseases of aquatic organisms
-    title: "Hepatic lipomas and myelolipomas in subsistence-harvested bowhead whales Balaena mysticetus, Alaska (USA): a case review 1980-2016."
+    title: >-
+      Hepatic lipomas and myelolipomas in subsistence-harvested bowhead whales Balaena mysticetus, Alaska (USA): a case
+      review 1980-2016.
     url: https://pubmed.ncbi.nlm.nih.gov/29256430/
     type: review
-    pmid: "29256430"
+    pmid: '29256430'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肝臟髓脂瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 肝臟內混合回音團塊，含高回音（脂肪成分）與低回音（造血組織成分）區域。邊界通常清晰。
+        - name: 組織病理學
+          notes: 確診需組織學檢查，顯示成熟脂肪組織與骨髓造血元素混合，無異型性。
+ddxSource: auto-generated

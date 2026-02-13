@@ -3,18 +3,18 @@ nameEn: Pomeranian Cryptorchidism
 nameZh: 博美犬隱睪症
 bodySystem: other
 description: 博美犬常見的先天性疾病,一側或雙側睪丸未能正常下降至陰囊內,滯留於腹腔或鼠蹊部。增加睪丸腫瘤風險,屬遺傳性疾病不建議繁殖。
-
 aliases:
-  - { alias: 博美隱睪, language: zh }
-  - { alias: Pomeranian Undescended Testicle, language: en }
-  - { alias: 博美睪丸未降, language: zh }
-
+  - alias: 博美隱睪
+    language: zh
+  - alias: Pomeranian Undescended Testicle
+    language: en
+  - alias: 博美睪丸未降
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 博美犬發生率高於平均值,通常於6-8個月齡確診,單側隱睪較雙側常見
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -29,7 +29,6 @@ etiology:
       examples:
         - 精索過短
         - 腹股溝管狹窄
-
 clinicalSigns:
   early:
     - 陰囊內僅可觸及一側或無睪丸
@@ -40,20 +39,18 @@ clinicalSigns:
     - 腫瘤相關症狀:腹部腫塊、對稱性脫毛
     - 雌性化徵候(gynecomastia、包皮下垂)
     - 骨髓抑制(嚴重病例)
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
-      notes: "6月齡以上陰囊內無法觸及雙側睪丸即可診斷"
+      notes: 6月齡以上陰囊內無法觸及雙側睪丸即可診斷
     - name: 腹部超音波
-      notes: "定位滯留睪丸位置(腹腔或鼠蹊部)"
+      notes: 定位滯留睪丸位置(腹腔或鼠蹊部)
     - name: 血清雄激素測定
-      notes: "hCG或GnRH刺激試驗,確認睪丸組織存在"
+      notes: hCG或GnRH刺激試驗,確認睪丸組織存在
   differentialDiagnoses:
     - 睪丸萎縮
     - 單側睪丸切除術後
     - 性別發育異常(intersex)
-
 treatment:
   medical:
     - 外科摘除滯留睪丸(cryptorchidectomy)
@@ -61,12 +58,35 @@ treatment:
     - 若已腫瘤化,評估是否需化療
     - 不建議保留用於繁殖(遺傳性疾病)
     - 術前評估腫瘤相關骨髓抑制(若有雌性化徵候)
-
 prognosis:
-  general: "早期去勢預後良好。滯留睪丸腫瘤發生率為正常睪丸10-14倍,Sertoli cell tumor可能分泌雌激素引起全身性併發症。建議於青春期前完成手術。"
-
+  general: 早期去勢預後良好。滯留睪丸腫瘤發生率為正常睪丸10-14倍,Sertoli cell tumor可能分泌雌激素引起全身性併發症。建議於青春期前完成手術。
 prevention:
   - 隱睪犬隻不應用於繁殖
   - 同窩犬隻應審慎評估繁殖價值
   - 購犬時確認睪丸已正常下降
   - 定期理學檢查追蹤
+associatedSymptoms:
+  - symptomId: alopecia
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 博美犬隱睪症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - alopecia 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 6月齡以上陰囊內無法觸及雙側睪丸即可診斷
+        - name: 腹部超音波
+          notes: 定位滯留睪丸位置(腹腔或鼠蹊部)
+        - name: 血清雄激素測定
+          notes: hCG或GnRH刺激試驗,確認睪丸組織存在
+ddxSource: auto-generated

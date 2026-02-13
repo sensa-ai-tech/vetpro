@@ -3,20 +3,22 @@ nameEn: Rabbit Pasteurellosis
 nameZh: 兔巴斯德桿菌症
 bodySystem: infectious
 description: 由 Pasteurella multocida 引起的兔常見細菌性疾病，可造成上呼吸道感染（鼻膿漏 snuffles）、中耳炎、肺炎、膿瘍及敗血症等多系統病變，為家兔最重要的細菌性病原之一。
-
 aliases:
-  - { alias: 兔鼻膿漏, language: zh }
-  - { alias: 兔巴氏桿菌感染, language: zh }
-  - { alias: Snuffles, language: en }
-  - { alias: Pasteurella multocida infection, language: en }
-  - { alias: Rabbit snuffles, language: en }
-
+  - alias: 兔鼻膿漏
+    language: zh
+  - alias: 兔巴氏桿菌感染
+    language: zh
+  - alias: Snuffles
+    language: en
+  - alias: Pasteurella multocida infection
+    language: en
+  - alias: Rabbit snuffles
+    language: en
 species:
   - speciesCommon: rabbit
     speciesScientific: Oryctolagus cuniculus
     prevalence: common
     notes: P. multocida 帶原率極高 (鼻腔帶菌率 20-80%)。多數帶原兔無症狀，緊迫或免疫力下降時發病。可經直接接觸、飛沫或汙染物傳播。
-
 etiology:
   categories:
     - name: 細菌性
@@ -32,7 +34,6 @@ etiology:
         - 併發其他感染 (Bordetella bronchiseptica 共感染)
         - 免疫抑制 (類固醇使用、營養不良)
         - 幼兔或老年兔
-
 clinicalSigns:
   early:
     - 打噴嚏 (sneezing)
@@ -54,22 +55,21 @@ clinicalSigns:
     - 化膿性腦膜炎
     - 骨髓炎
     - 心包炎與胸膜炎（嚴重肺部感染擴散）
-
 diagnosis:
   primaryTests:
     - name: 細菌培養與藥敏試驗
-      notes: "取鼻腔深部拭子、膿瘍內容物或病灶檢體。P. multocida 在血液培養基上生長良好。藥敏試驗對選擇抗生素至關重要"
+      notes: 取鼻腔深部拭子、膿瘍內容物或病灶檢體。P. multocida 在血液培養基上生長良好。藥敏試驗對選擇抗生素至關重要
     - name: CBC/生化
-      notes: "可見白血球增多 (heterophilia)。嚴重感染可見低白蛋白與急性期蛋白升高"
+      notes: 可見白血球增多 (heterophilia)。嚴重感染可見低白蛋白與急性期蛋白升高
     - name: PCR
-      notes: "快速偵測 P. multocida DNA，可用於鼻拭子或組織樣本"
+      notes: 快速偵測 P. multocida DNA，可用於鼻拭子或組織樣本
   imaging:
     - name: 頭部 X 光/CT
-      notes: "鼻竇液體蓄積、鼻甲骨溶解。鼓室泡 (tympanic bulla) 液體蓄積提示中耳炎"
+      notes: 鼻竇液體蓄積、鼻甲骨溶解。鼓室泡 (tympanic bulla) 液體蓄積提示中耳炎
     - name: 胸腔 X 光
-      notes: "肺部浸潤、膿胸評估"
+      notes: 肺部浸潤、膿胸評估
     - name: 頭部 CT
-      notes: "中耳炎/鼻竇炎的金標準影像學，優於 X 光"
+      notes: 中耳炎/鼻竇炎的金標準影像學，優於 X 光
   additional:
     - 膿瘍穿刺細胞學 (變性嗜中性球與細菌)
     - 鼓室穿刺 (中耳炎確診與取樣)
@@ -81,7 +81,6 @@ diagnosis:
     - 齒根膿瘍 (Dental Abscess)
     - 胸腺瘤 (Thymoma) — 呼吸困難之鑑別
     - 兔出血症病毒 (Rabbit Hemorrhagic Disease)
-
 treatment:
   principles:
     - 長期抗生素治療 (根據藥敏試驗，至少 2-4 週，慢性病例更久)
@@ -90,19 +89,19 @@ treatment:
     - 支持性照護維持進食與水分
   medications:
     - name: Enrofloxacin
-      dose: "10-20 mg/kg PO BID"
+      dose: 10-20 mg/kg PO BID
       notes: 對 P. multocida 效果佳。避免用於幼兔 (軟骨毒性)。長期使用注意腸道菌叢失調。近年觀察到 Pasteurella spp. 對部分抗生素的抗藥性有上升趨勢，藥敏試驗更為重要
     - name: Penicillin G (Procaine/Benzathine)
-      dose: "42,000-84,000 IU/kg SC q48-72h"
+      dose: 42,000-84,000 IU/kg SC q48-72h
       notes: 對 P. multocida 敏感性高。僅限皮下注射，絕不可口服 (致死性腸炎)
     - name: Azithromycin
-      dose: "15-30 mg/kg PO SID"
+      dose: 15-30 mg/kg PO SID
       notes: 組織穿透力佳，可用於呼吸道感染
     - name: Chloramphenicol
-      dose: "50 mg/kg PO BID"
+      dose: 50 mg/kg PO BID
       notes: 廣效抗菌，穿透力佳。注意人畜共通風險 (操作時戴手套)
     - name: Meloxicam
-      dose: "0.3-0.5 mg/kg PO/SC SID"
+      dose: 0.3-0.5 mg/kg PO/SC SID
       notes: 止痛消炎。中耳炎或膿瘍疼痛管理
   general:
     - 膿瘍完整摘除 (en bloc resection) 優於切開引流
@@ -111,43 +110,91 @@ treatment:
     - 維持進食 (食慾下降時針筒輔助餵食)
     - 環境改善 (通風、降低氨氣、減少緊迫)
     - 隔離新進兔 (減少傳播)
-
-prognosis: 上呼吸道感染 (snuffles) 經適當抗生素治療多可控制，但根除困難，復發率高。皮下膿瘍完整摘除預後良好。中耳炎需手術者預後中等至良好。肺炎與敗血症預後較差。慢性胸腔病變與多發性關節炎可作為長期後遺症持續存在。早期積極治療有助於預防慢性併發症的發生。帶原狀態通常終身存在。
-
+prognosis: >-
+  上呼吸道感染 (snuffles)
+  經適當抗生素治療多可控制，但根除困難，復發率高。皮下膿瘍完整摘除預後良好。中耳炎需手術者預後中等至良好。肺炎與敗血症預後較差。慢性胸腔病變與多發性關節炎可作為長期後遺症持續存在。早期積極治療有助於預防慢性併發症的發生。帶原狀態通常終身存在。
 guidelineRefs:
   - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
     title: Respiratory Disease in Rabbits
     url: https://pubmed.ncbi.nlm.nih.gov/33610948/
     type: review
-    pmid: "33610948"
+    pmid: '33610948'
   - sourceOrg: Journal of Exotic Pet Medicine
     title: Abscess management in rabbits
     url: https://pubmed.ncbi.nlm.nih.gov/30902343/
     type: review
-    pmid: "30902343"
+    pmid: '30902343'
   - sourceOrg: The Journal of veterinary medical science
     title: Immunohistochemical and molecular analysis of Pasteurella multocida in a rabbit with suppurative pleuropneumonia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6983660/
     type: case-report
-    pmid: "31801931"
+    pmid: '31801931'
     relevance: supporting
   - sourceOrg: BMC veterinary research
     title: Pharmacokinetic/pharmacodynamic evaluation of gamithromycin against rabbit pasteurellosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11031915/
     type: research
-    pmid: "38643185"
+    pmid: '38643185'
     relevance: supporting
   - sourceOrg: Microbiology resource announcements
     title: Genome Sequences of 17 Pasteurella multocida Strains Involved in Cases of Rabbit Pasteurellosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6742792/
     type: research
-    pmid: "31515341"
+    pmid: '31515341'
     relevance: supporting
 pubmedQueries:
   - query: '"Pasteurella multocida" AND "rabbit" AND ("treatment" OR "management" OR "snuffles")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "INFECTION"
+  chapter: DIG
+  sectionTitle: INFECTION
   pdfPage: 525
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: polyarthritis
+    frequency: uncommon
+  - symptomId: head-tilt
+    frequency: uncommon
+  - symptomId: nystagmus
+    frequency: uncommon
+  - symptomId: sneezing
+    frequency: common
+  - symptomId: trembling
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔巴斯德桿菌症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - polyarthritis 相關症狀
+        - head-tilt 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 細菌培養與藥敏試驗
+          notes: 取鼻腔深部拭子、膿瘍內容物或病灶檢體。P. multocida 在血液培養基上生長良好。藥敏試驗對選擇抗生素至關重要
+        - name: CBC/生化
+          notes: 可見白血球增多 (heterophilia)。嚴重感染可見低白蛋白與急性期蛋白升高
+        - name: PCR
+          notes: 快速偵測 P. multocida DNA，可用於鼻拭子或組織樣本
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 膿瘍穿刺細胞學 (變性嗜中性球與細菌)
+        - 鼓室穿刺 (中耳炎確診與取樣)
+        - 淚管沖洗 (評估淚管通暢性)
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 長期抗生素治療 (根據藥敏試驗，至少 2-4 週，慢性病例更久)
+        - 膿瘍需外科處理 (兔的膿液為固態乾酪樣，引流效果差)
+        - 中耳炎可能需鼓室切開術
+ddxSource: auto-generated

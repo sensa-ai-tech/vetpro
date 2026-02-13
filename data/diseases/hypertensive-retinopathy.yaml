@@ -3,14 +3,17 @@ nameEn: Hypertensive Retinopathy
 nameZh: 高血壓性視網膜病變
 bodySystem: ophthalmology
 description: 全身性高血壓導致的視網膜、脈絡膜與視神經血管損傷，表現為視網膜出血、水腫、滲出與剝離，為貓急性失明最常見的原因之一。
-
 aliases:
-  - { alias: Hypertensive Choroidopathy, language: en }
-  - { alias: Hypertensive Ocular Disease, language: en }
-  - { alias: Target Organ Damage - Eye, language: en }
-  - { alias: 高血壓性眼病, language: zh }
-  - { alias: 高血壓性脈絡膜病變, language: zh }
-
+  - alias: Hypertensive Choroidopathy
+    language: en
+  - alias: Hypertensive Ocular Disease
+    language: en
+  - alias: Target Organ Damage - Eye
+    language: en
+  - alias: 高血壓性眼病
+    language: zh
+  - alias: 高血壓性脈絡膜病變
+    language: zh
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
@@ -20,7 +23,6 @@ species:
     speciesScientific: Canis lupus familiaris
     prevalence: uncommon
     notes: 犬較少見但確實發生。常見原因包括慢性腎臟病、腎上腺皮質機能亢進 (Cushing)、嗜鉻細胞瘤 (pheochromocytoma)、糖尿病。犬高血壓定義收縮壓 >160-180 mmHg。
-
 etiology:
   categories:
     - name: 貓常見原因
@@ -44,7 +46,6 @@ etiology:
         - 視網膜下液體積聚導致漿液性視網膜剝離
         - 脈絡膜血管損傷 (choroidopathy)
         - 視網膜出血 (動脈壁破裂)
-
 clinicalSigns:
   early:
     - 視網膜小動脈扭曲 (tortuosity)
@@ -64,20 +65,19 @@ clinicalSigns:
     - 嚴重玻璃體出血
     - 視網膜退化與萎縮 (慢性)
     - 繼發性青光眼 (罕見)
-
 diagnosis:
   primaryTests:
     - name: 血壓測量 (Doppler 或 oscillometric)
-      notes: "所有急性失明犬貓必測。貓正常 <140 mmHg，高血壓 >160 mmHg。犬 >160-180 mmHg。需在安靜環境反覆測量 (至少 5-7 次取平均值，去除最高與最低)"
+      notes: 所有急性失明犬貓必測。貓正常 <140 mmHg，高血壓 >160 mmHg。犬 >160-180 mmHg。需在安靜環境反覆測量 (至少 5-7 次取平均值，去除最高與最低)
     - name: 散瞳眼底檢查 (直接/間接眼底鏡)
-      notes: "典型可見：視網膜出血、水腫、剝離、血管扭曲。雙側多焦點視網膜剝離高度懷疑高血壓"
+      notes: 典型可見：視網膜出血、水腫、剝離、血管扭曲。雙側多焦點視網膜剝離高度懷疑高血壓
     - name: 眼部超音波 (B-scan)
-      notes: "角膜混濁或前房出血無法透視眼底時使用。確認視網膜剝離範圍與類型"
+      notes: 角膜混濁或前房出血無法透視眼底時使用。確認視網膜剝離範圍與類型
   imaging:
     - name: 眼底攝影
-      notes: "記錄與追蹤視網膜病變。治療後比較變化"
+      notes: 記錄與追蹤視網膜病變。治療後比較變化
     - name: OCT
-      notes: "精確評估視網膜與脈絡膜厚度變化"
+      notes: 精確評估視網膜與脈絡膜厚度變化
   additional:
     - 完整血液學與生化 (腎功能 BUN/Cre、血糖)
     - 尿液分析 + UPC (蛋白尿評估)
@@ -86,7 +86,6 @@ diagnosis:
     - 尿蛋白/肌酐比 (UPC)
     - 心臟超音波 (左心室肥大評估)
     - 電解質 (鉀 — 高醛固酮症)
-
 treatment:
   principles:
     - 降壓為第一優先 — 視網膜剝離越早降壓越有機會復位
@@ -95,16 +94,16 @@ treatment:
     - 長期血壓控制與靶器官監測
   medications:
     - name: Amlodipine (鈣離子通道阻斷劑)
-      dose: "貓 0.625-1.25 mg/cat PO SID (可增至 2.5 mg)；犬 0.1-0.5 mg/kg PO SID"
+      dose: 貓 0.625-1.25 mg/cat PO SID (可增至 2.5 mg)；犬 0.1-0.5 mg/kg PO SID
       notes: 貓高血壓首選降壓藥。效果可靠，1-3 天開始見效。可能需要 2-4 週達到穩態效果。單藥控制率約 60-70%
     - name: Benazepril (ACE inhibitor)
-      dose: "0.25-0.5 mg/kg PO SID-BID"
+      dose: 0.25-0.5 mg/kg PO SID-BID
       notes: 可與 amlodipine 合併使用。腎臟保護效果。單獨降壓效果較弱
     - name: Telmisartan (ARB)
-      dose: "貓 1-2 mg/kg PO SID"
+      dose: 貓 1-2 mg/kg PO SID
       notes: 血管張力素受體阻斷劑。可作為 benazepril 的替代或合併。貓有適口性佳的口服液製劑 (Semintra)
     - name: Prednisolone acetate 1% 眼藥水
-      dose: "Q6-12H"
+      dose: Q6-12H
       notes: 控制伴隨的前葡萄膜炎/視網膜炎反應
   general:
     - 急性失明合併高血壓：立即開始 amlodipine，同時進行全身性檢查
@@ -113,43 +112,90 @@ treatment:
     - 定期眼底追蹤檢查 (評估視網膜復位與恢復)
     - 潛在疾病管理 (CKD 飲食、甲狀腺藥物等)
     - 低鈉飲食 (輔助)
-
-emergencyNotes: "急性雙側失明合併瞳孔散大為常見初診表現。立即測量血壓 — 若收縮壓 >180 mmHg 合併視網膜剝離，立即開始 amlodipine。不要等血液報告回來才開始治療。視網膜剝離超過 24-48 小時後，即使成功復位視力恢復也大幅下降。同時排除其他急性失明原因 (SARD、視神經疾病)。"
-
-prognosis: 早期發現並控制血壓的貓，約 50-60% 可見視網膜部分至完全復位。視力恢復取決於剝離持續時間 — 48 小時內降壓復位者預後最佳。慢性剝離 (>2-4 週) 視網膜萎縮為不可逆。根本原因 (CKD 分期、腫瘤性) 直接影響整體存活。多數貓即使失明仍可適應良好。定期血壓監測可預防復發。
-
+emergencyNotes: >-
+  急性雙側失明合併瞳孔散大為常見初診表現。立即測量血壓 — 若收縮壓 >180 mmHg 合併視網膜剝離，立即開始 amlodipine。不要等血液報告回來才開始治療。視網膜剝離超過 24-48
+  小時後，即使成功復位視力恢復也大幅下降。同時排除其他急性失明原因 (SARD、視神經疾病)。
+prognosis: >-
+  早期發現並控制血壓的貓，約 50-60% 可見視網膜部分至完全復位。視力恢復取決於剝離持續時間 — 48 小時內降壓復位者預後最佳。慢性剝離 (>2-4 週) 視網膜萎縮為不可逆。根本原因 (CKD 分期、腫瘤性)
+  直接影響整體存活。多數貓即使失明仍可適應良好。定期血壓監測可預防復發。
 guidelineRefs:
   - sourceOrg: Journal of Feline Medicine and Surgery
     title: ISFM consensus guidelines on the diagnosis and management of hypertension in cats
     url: https://pubmed.ncbi.nlm.nih.gov/28438078/
     type: consensus
-    pmid: "28438078"
+    pmid: '28438078'
   - sourceOrg: Journal of Veterinary Internal Medicine
-    title: "ACVIM consensus statement: guidelines for the identification, evaluation, and management of systemic hypertension in dogs and cats"
+    title: >-
+      ACVIM consensus statement: guidelines for the identification, evaluation, and management of systemic hypertension
+      in dogs and cats
     url: https://pubmed.ncbi.nlm.nih.gov/29171106/
     type: consensus
-    pmid: "29171106"
+    pmid: '29171106'
   - sourceOrg: Veterinary Ophthalmology
-    title: "Hypertensive retinopathy in cats: visual and ocular outcomes"
+    title: 'Hypertensive retinopathy in cats: visual and ocular outcomes'
     url: https://pubmed.ncbi.nlm.nih.gov/24289847/
     type: research
-    pmid: "24289847"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: High Prevalence of Lesions of Systemic Hypertension in Bile-Extracted Asiatic Black Bears (Ursus thibetanus) and Associated Renal Disease.
+    pmid: '24289847'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      High Prevalence of Lesions of Systemic Hypertension in Bile-Extracted Asiatic Black Bears (Ursus thibetanus) and
+      Associated Renal Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12249298/
     type: research
-    pmid: "40646840"
+    pmid: '40646840'
   - sourceOrg: Experimental eye research
     title: Decreased retinal and choroidal endothelial surface molecules in spontaneously hypertensive rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10474786/
     type: research
-    pmid: "37595676"
+    pmid: '37595676'
     relevance: supporting
 pubmedQueries:
   - query: '"hypertensive retinopathy" AND (cat OR feline) AND ("amlodipine" OR "treatment" OR "outcome")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "END"
-  sectionTitle: "DISEASE"
+  chapter: END
+  sectionTitle: DISEASE
   pdfPage: 582
+associatedSymptoms:
+  - symptomId: mydriasis
+    frequency: uncommon
+  - symptomId: blindness
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: common
+diagnosticAlgorithm:
+  title: 高血壓性視網膜病變 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - mydriasis 相關症狀
+        - blindness 相關症狀
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血壓測量 (Doppler 或 oscillometric)
+          notes: 所有急性失明犬貓必測。貓正常 <140 mmHg，高血壓 >160 mmHg。犬 >160-180 mmHg。需在安靜環境反覆測量 (至少 5-7 次取平均值，去除最高與最低)
+        - name: 散瞳眼底檢查 (直接/間接眼底鏡)
+          notes: 典型可見：視網膜出血、水腫、剝離、血管扭曲。雙側多焦點視網膜剝離高度懷疑高血壓
+        - name: 眼部超音波 (B-scan)
+          notes: 角膜混濁或前房出血無法透視眼底時使用。確認視網膜剝離範圍與類型
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 完整血液學與生化 (腎功能 BUN/Cre、血糖)
+        - 尿液分析 + UPC (蛋白尿評估)
+        - T4 甲狀腺功能 (貓)
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 降壓為第一優先 — 視網膜剝離越早降壓越有機會復位
+        - 找出並治療高血壓的根本原因
+        - 緊急降壓不宜過快 (避免灌注不足)
+ddxSource: auto-generated

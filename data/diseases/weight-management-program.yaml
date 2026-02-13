@@ -3,11 +3,11 @@ nameEn: Weight Management Program
 nameZh: 體重管理計畫
 bodySystem: other
 description: 體重管理計畫為犬貓肥胖治療與預防的系統性方案。包括熱量限制、飲食調整、運動計畫及定期追蹤。肥胖增加骨關節炎、糖尿病、心血管疾病等風險。維持理想體重可延長壽命。
-
 aliases:
-  - { alias: 體重管理計畫, language: zh }
-  - { alias: Weight Management Program, language: en }
-
+  - alias: 體重管理計畫
+    language: zh
+  - alias: Weight Management Program
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓亦適用，部分方法需調整。
-
 etiology:
   categories:
     - name: 適應症
@@ -24,18 +23,15 @@ etiology:
         - 術後復健
         - 功能恢復
         - 生活品質改善
-
 clinicalSigns:
   early:
     - 依基礎疾病而異
   progressive:
     - 功能障礙加重需介入管理
-
 diagnosis:
   primaryTests:
     - name: 臨床評估
       notes: 疼痛評估量表。功能評估。生活品質評分
-
 treatment:
   principles:
     - 個別化治療計畫
@@ -46,23 +42,49 @@ treatment:
     - 依據個別狀況制定治療計畫
     - 定期追蹤評估效果
     - 必要時調整方案
-
 prognosis: 系統性體重管理計畫成功率取決於飼主配合度。減重 10-15% 即可顯著改善關節疼痛。維持理想體重可延長壽命 1-2 年。
-
-
 guidelineRefs:
   - sourceOrg: Chest
-    title: "A Total Diet Replacement Weight Management Program for Difficult-to-Treat Asthma Associated With Obesity: A Randomized Controlled Feasibility Trial."
+    title: >-
+      A Total Diet Replacement Weight Management Program for Difficult-to-Treat Asthma Associated With Obesity: A
+      Randomized Controlled Feasibility Trial.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10808069/
     type: research
-    pmid: "36649753"
+    pmid: '36649753'
     relevance: supporting
-  - sourceOrg: "Diabetic medicine : a journal of the British Diabetic Association"
-    title: "Banting Memorial Lecture 2021-Banting, banting, banter and bravado: Convictions meet evidence in the scientific process: Diabetes UK Professional Conference, 27 April 2021."
+  - sourceOrg: 'Diabetic medicine : a journal of the British Diabetic Association'
+    title: >-
+      Banting Memorial Lecture 2021-Banting, banting, banter and bravado: Convictions meet evidence in the scientific
+      process: Diabetes UK Professional Conference, 27 April 2021.
     url: https://pubmed.ncbi.nlm.nih.gov/34288105/
     type: review
-    pmid: "34288105"
+    pmid: '34288105'
     relevance: primary
 pubmedQueries:
   - query: '"Weight Management Program" AND (veterinary OR canine OR feline) AND (treatment OR management OR "evidence-based")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-gain
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 體重管理計畫 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-gain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床評估
+          notes: 疼痛評估量表。功能評估。生活品質評分
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 個別化治療計畫
+        - 多模式介入
+        - 定期評估與調整
+ddxSource: auto-generated

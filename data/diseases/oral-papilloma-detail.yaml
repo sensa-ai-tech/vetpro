@@ -3,12 +3,13 @@ nameEn: Oral Papilloma Detail
 nameZh: 口腔乳突瘤詳論
 bodySystem: dental
 description: 口腔乳突瘤是病毒引起的良性增生性腫瘤,犬最常見由犬乳突瘤病毒(Canine Oral Papillomavirus)感染。多發於幼犬,呈花椰菜狀,具傳染性但多數自行消退,僅需支持療法。
-
 aliases:
-  - { alias: 犬口腔疣, language: zh }
-  - { alias: Canine Oral Papillomatosis, language: en }
-  - { alias: Viral Warts Oral, language: en }
-
+  - alias: 犬口腔疣
+    language: zh
+  - alias: Canine Oral Papillomatosis
+    language: en
+  - alias: Viral Warts Oral
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓罕見
-
 etiology:
   categories:
     - name: 病毒感染
@@ -26,7 +26,6 @@ etiology:
         - Canine Oral Papillomavirus (COPV)
         - 直接接觸傳播
         - 共用玩具或食碗
-
 clinicalSigns:
   early:
     - 單一或少數小腫塊(<5mm)
@@ -38,20 +37,18 @@ clinicalSigns:
     - 可達數十個至上百個
     - 干擾進食或流涎(大量時)
     - 偶爾出血
-
 diagnosis:
   primaryTests:
     - name: 臨床外觀
-      notes: "特徵性花椰菜狀外觀,幼犬多發性"
+      notes: 特徵性花椰菜狀外觀,幼犬多發性
     - name: 組織病理
-      notes: "乳突狀增生,基底細胞層病毒包涵體"
+      notes: 乳突狀增生,基底細胞層病毒包涵體
     - name: PCR檢測
-      notes: "確認COPV感染"
+      notes: 確認COPV感染
   differentialDiagnoses:
     - 牙齦增生
     - 纖維瘤
     - 鱗狀細胞癌(老年犬)
-
 treatment:
   medical:
     - 多數病例:觀察等待自然消退(4-12週)
@@ -60,12 +57,35 @@ treatment:
     - 或Interferon治療(昂貴)
     - 自體疫苗(將腫瘤組織製成疫苗注射,爭議性)
     - 避免與其他犬接觸防止傳播
-
 prognosis:
-  general: "預後極佳,免疫功能正常的幼犬90%以上在4-12週內自然消退且終身免疫。老年犬或免疫抑制患者可能持續存在或惡性轉化,需密切監控。復發罕見。"
-
+  general: 預後極佳,免疫功能正常的幼犬90%以上在4-12週內自然消退且終身免疫。老年犬或免疫抑制患者可能持續存在或惡性轉化,需密切監控。復發罕見。
 prevention:
   - 避免與感染犬接觸
   - 不共用玩具和食碗
   - 多犬家庭隔離感染個體至消退
   - 增強免疫力
+associatedSymptoms:
+  - symptomId: ptyalism
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 口腔乳突瘤詳論 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ptyalism 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床外觀
+          notes: 特徵性花椰菜狀外觀,幼犬多發性
+        - name: 組織病理
+          notes: 乳突狀增生,基底細胞層病毒包涵體
+        - name: PCR檢測
+          notes: 確認COPV感染
+ddxSource: auto-generated

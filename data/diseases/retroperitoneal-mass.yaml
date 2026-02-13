@@ -3,11 +3,11 @@ nameEn: Retroperitoneal Mass
 nameZh: 後腹膜腔腫塊
 bodySystem: oncology
 description: 後腹膜腔腫瘤,可能為腎臟、腎上腺、淋巴結或軟組織腫瘤。常無特異症狀,診斷時可能已較大。
-
 aliases:
-  - { alias: 腹膜後腫瘤, language: zh }
-  - { alias: Retroperitoneal Tumor, language: en }
-
+  - alias: 腹膜後腫瘤
+    language: zh
+  - alias: Retroperitoneal Tumor
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 常見為腎淋巴瘤、腎上腺瘤
-
 etiology:
   categories:
     - name: 腎臟腫瘤
@@ -29,7 +28,6 @@ etiology:
     - name: 軟組織肉瘤
       examples:
         - 血管肉瘤、平滑肌肉瘤
-
 clinicalSigns:
   early:
     - 可能無症狀
@@ -38,30 +36,56 @@ clinicalSigns:
     - 腹痛
     - 血尿 (腎腫瘤)
     - 體重減輕
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "定位腫塊,評估起源"
+      notes: 定位腫塊,評估起源
     - name: 腹部 CT
-      notes: "評估腫瘤範圍、血管浸潤、轉移"
+      notes: 評估腫瘤範圍、血管浸潤、轉移
     - name: 細針抽吸或組織切片
-      notes: "確診腫瘤類型"
+      notes: 確診腫瘤類型
     - name: 胸部 X 光
-      notes: "評估肺轉移"
+      notes: 評估肺轉移
   differentialDiagnoses:
     - 依起源器官分類
-
 treatment:
   medical:
     - 外科切除 (若可行)
     - 化療 (淋巴瘤)
     - Trilostane (腎上腺皮質瘤)
     - 姑息性照護
-
 prognosis:
-  general: "取決於腫瘤類型;淋巴瘤對化療反應較佳;腎腫瘤或肉瘤預後謹慎至不良"
-
+  general: 取決於腫瘤類型;淋巴瘤對化療反應較佳;腎腫瘤或肉瘤預後謹慎至不良
 prevention:
   - 無特定預防措施
   - 定期健康檢查
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 後腹膜腔腫塊 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - abdominal-pain 相關症狀
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 定位腫塊,評估起源
+        - name: 腹部 CT
+          notes: 評估腫瘤範圍、血管浸潤、轉移
+        - name: 細針抽吸或組織切片
+          notes: 確診腫瘤類型
+ddxSource: auto-generated

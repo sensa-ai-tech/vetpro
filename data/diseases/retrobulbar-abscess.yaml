@@ -3,13 +3,15 @@ nameEn: Retrobulbar Abscess
 nameZh: 球後膿瘍
 bodySystem: infectious
 description: 眼球後方組織的化膿性感染，常因口腔感染 (齒根膿瘍) 穿透眶底或異物穿刺引起。表現為急性單側眼球突出、劇烈疼痛與張口困難。為眼科急症需快速診斷與引流。
-
 aliases:
-  - { alias: Orbital Abscess, language: en }
-  - { alias: Periorbital Abscess, language: en }
-  - { alias: 眼眶膿瘍, language: zh }
-  - { alias: 眶後膿瘍, language: zh }
-
+  - alias: Orbital Abscess
+    language: en
+  - alias: Periorbital Abscess
+    language: en
+  - alias: 眼眶膿瘍
+    language: zh
+  - alias: 眶後膿瘍
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓可見，常與打架傷口感染或齒根膿瘍相關。
-
 etiology:
   categories:
     - name: 齒源性
@@ -32,7 +33,6 @@ etiology:
       examples:
         - 穿透性眼眶外傷
         - 血行性感染播散 (罕見)
-
 clinicalSigns:
   early:
     - 急性單側眼球突出
@@ -43,7 +43,6 @@ clinicalSigns:
     - 結膜充血水腫
     - 發燒
     - 口腔黏膜 (硬顎後方) 腫脹
-
 diagnosis:
   primaryTests:
     - name: 口腔檢查
@@ -52,7 +51,6 @@ diagnosis:
       notes: 球後低回聲液體聚集。與腫瘤鑑別
     - name: CT
       notes: 評估膿瘍範圍、異物定位、齒源性感染確認
-
 treatment:
   principles:
     - 引流膿瘍為首要
@@ -64,17 +62,62 @@ treatment:
     - 止痛 (NSAIDs + Tramadol)
     - 治療齒源性感染 (拔牙)
     - 異物需手術取出
-
 prognosis: 及時引流與適當抗生素治療預後良好。多數犬 3-7 天明顯改善。需處理根本原因防止復發。延遲治療可能導致眶周蜂窩組織炎。
-
-
 guidelineRefs:
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Long-term systemic antibiotics and surgical treatment can be an effective treatment option for retrobulbar abscesses in rabbits (Oryctolagus cuniculus): 21 cases (2011-2022)."
+    title: >-
+      Long-term systemic antibiotics and surgical treatment can be an effective treatment option for retrobulbar
+      abscesses in rabbits (Oryctolagus cuniculus): 21 cases (2011-2022).
     url: https://pubmed.ncbi.nlm.nih.gov/37451680/
     type: research
-    pmid: "37451680"
+    pmid: '37451680'
     relevance: supporting
 pubmedQueries:
   - query: '"retrobulbar abscess" AND (veterinary OR canine OR feline) AND ("drainage" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 眼球後膿腫 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估急性單側眼球突出、張口疼痛和結膜充血水腫
+      findings:
+        - 急性單側眼球突出
+        - 張口時劇烈疼痛
+        - 結膜充血水腫伴第三眼瞼突出
+    - step: 2
+      action: 口腔與影像檢查
+      details: 口腔檢查注意最後臼齒後方黏膜腫脹，進行眼眶超音波或CT/MRI評估
+      findings:
+        - 最後臼齒後方口腔黏膜腫脹或波動感
+        - 超音波顯示眼球後方低回聲/無回聲區
+        - CT/MRI顯示眼眶後方膿腫腔
+    - step: 3
+      action: 穿刺引流與確診
+      details: 經口腔最後臼齒後方穿刺引流膿液，進行細菌培養及藥敏試驗
+      findings:
+        - 穿刺引出膿性分泌物
+        - 細菌培養鑑定致病菌（常為口腔厭氧菌）
+        - 藥敏試驗指導抗生素選擇
+clinicalPearls:
+  - 張口劇痛是眼球後膿腫最特徵性的表現，與眼眶腫瘤鑑別
+  - 口腔後方觸診有波動感時可直接穿刺引流
+  - 厭氧菌培養非常重要
+  - 需同時評估牙齒狀況尋找感染來源
+monitoringItems:
+  - 眼球位置恢復正常
+  - 張口功能恢復
+  - 體溫
+  - 複查影像確認膿腫消退
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: common
+ddxSource: book

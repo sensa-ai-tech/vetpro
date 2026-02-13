@@ -3,13 +3,15 @@ nameEn: Babesiosis
 nameZh: 巴貝絲蟲症
 bodySystem: infectious
 description: 巴貝絲蟲症是由巴貝絲蟲屬原蟲感染紅血球所引起的蜱媒傳染病，主要透過壁蝨叮咬傳播。臨床上以溶血性貧血、發熱及脾腫大為特徵，嚴重病例可出現多重器官衰竭。犬隻較貓更常見，且大型巴貝絲蟲與小型巴貝絲蟲的致病性與治療策略有所不同。
-
 aliases:
-  - { alias: 焦蟲症, language: zh }
-  - { alias: 梨形蟲症, language: zh }
-  - { alias: Canine Babesiosis, language: en }
-  - { alias: Piroplasmosis, language: en }
-
+  - alias: 焦蟲症
+    language: zh
+  - alias: 梨形蟲症
+    language: zh
+  - alias: Canine Babesiosis
+    language: en
+  - alias: Piroplasmosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓巴貝絲蟲症較罕見，主要由 Babesia felis 引起，多見於南非地區。免疫抑制貓隻較易感染。
-
 etiology:
   categories:
     - name: 病原體
@@ -40,7 +41,6 @@ etiology:
         - 脾臟切除後
         - 免疫抑制狀態
         - 品種易感性（美國鬥牛㹴、比特犬對 B. gibsoni）
-
 clinicalSigns:
   early:
     - 發熱（39.5-41°C）
@@ -61,25 +61,23 @@ clinicalSigns:
     - 急性呼吸窘迫症候群（ARDS）
     - 腦型巴貝絲蟲症（神經症狀、癲癇）
     - 休克與多重器官衰竭
-
 diagnosis:
   primaryTests:
     - name: 血液抹片鏡檢
-      notes: "薄層血液抹片以 Giemsa 或 Wright 染色，觀察紅血球內原蟲。大型巴貝絲蟲呈梨形成對出現，小型巴貝絲蟲呈環形或不規則形。急性感染時寄生蟲血症較明顯。"
+      notes: 薄層血液抹片以 Giemsa 或 Wright 染色，觀察紅血球內原蟲。大型巴貝絲蟲呈梨形成對出現，小型巴貝絲蟲呈環形或不規則形。急性感染時寄生蟲血症較明顯。
     - name: PCR 檢測
-      notes: "為最敏感的確診方法，可區分不同種別。對於慢性帶原或低寄生蟲血症時特別重要。建議使用 18S rRNA 基因為標靶。"
+      notes: 為最敏感的確診方法，可區分不同種別。對於慢性帶原或低寄生蟲血症時特別重要。建議使用 18S rRNA 基因為標靶。
     - name: 血清學檢測（IFAT/ELISA）
-      notes: "間接螢光抗體試驗或 ELISA 檢測抗體。急性感染早期可能呈偽陰性（抗體尚未產生），慢性帶原者則持續陽性。"
+      notes: 間接螢光抗體試驗或 ELISA 檢測抗體。急性感染早期可能呈偽陰性（抗體尚未產生），慢性帶原者則持續陽性。
   imaging:
     - name: 腹部超音波
-      notes: "評估脾臟大小（脾腫大常見）、肝臟變化及腎臟情況。嚴重病例可見脾臟瀰漫性腫大。"
+      notes: 評估脾臟大小（脾腫大常見）、肝臟變化及腎臟情況。嚴重病例可見脾臟瀰漫性腫大。
   additional:
     - 全血球計數（CBC）：再生性貧血、血小板減少症
     - 血液生化：膽紅素升高、BUN/Creatinine 升高（腎損傷時）、肝酵素升高
     - 尿液分析：血紅素尿、膽紅素尿
     - Coombs 試驗：排除免疫媒介性溶血性貧血
     - 凝血功能檢查：PT/aPTT（評估 DIC 風險）
-
 treatment:
   principles:
     - 抗原蟲藥物治療消滅病原體
@@ -87,42 +85,44 @@ treatment:
     - 針對併發症（DIC、腎衰竭）進行對症治療
     - B. gibsoni 較難完全清除，可能需要聯合用藥
   general:
-    - "Imidocarb dipropionate 6.6 mg/kg IM 或 SC，間隔 14 天重複一次（對 B. canis 有效）"
-    - "B. gibsoni 聯合療法：Atovaquone 13.3 mg/kg PO q8h + Azithromycin 10 mg/kg PO q24h，連續 10 天"
-    - "輸血治療：PCV < 15% 或出現嚴重臨床症狀時給予濃縮紅血球"
-    - "靜脈輸液療法維持水合狀態與腎臟灌流"
-    - "嚴重病例給予抗嘔吐藥（Maropitant 1 mg/kg SC q24h）"
-    - "DIC 時考慮新鮮冷凍血漿輸注"
-    - "壁蝨預防：使用 isoxazoline 類藥物（如 Fluralaner、Sarolaner）持續預防"
-
-prognosis: 輕度至中度感染且及時治療者預後良好。B. canis 以 imidocarb 治療後多可完全清除。B. gibsoni 感染預後較謹慎，即使治療後仍可能成為慢性帶原者。出現 DIC、急性腎衰竭或腦型併發症者預後不良，死亡率可達 10-20%。脾臟切除犬隻復發風險較高。
-
+    - Imidocarb dipropionate 6.6 mg/kg IM 或 SC，間隔 14 天重複一次（對 B. canis 有效）
+    - B. gibsoni 聯合療法：Atovaquone 13.3 mg/kg PO q8h + Azithromycin 10 mg/kg PO q24h，連續 10 天
+    - 輸血治療：PCV < 15% 或出現嚴重臨床症狀時給予濃縮紅血球
+    - 靜脈輸液療法維持水合狀態與腎臟灌流
+    - 嚴重病例給予抗嘔吐藥（Maropitant 1 mg/kg SC q24h）
+    - DIC 時考慮新鮮冷凍血漿輸注
+    - 壁蝨預防：使用 isoxazoline 類藥物（如 Fluralaner、Sarolaner）持續預防
+prognosis: >-
+  輕度至中度感染且及時治療者預後良好。B. canis 以 imidocarb 治療後多可完全清除。B. gibsoni 感染預後較謹慎，即使治療後仍可能成為慢性帶原者。出現 DIC、急性腎衰竭或腦型併發症者預後不良，死亡率可達
+  10-20%。脾臟切除犬隻復發風險較高。
 guidelineRefs:
   - sourceOrg: Veterinary Clinics of North America
-    title: "Canine babesiosis: a review"
+    title: 'Canine babesiosis: a review'
     url: https://pubmed.ncbi.nlm.nih.gov/20610015/
     type: consensus
-    pmid: "20610015"
+    pmid: '20610015'
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: Efficacy of atovaquone and azithromycin for treatment of Babesia gibsoni in dogs
     url: https://pubmed.ncbi.nlm.nih.gov/15195581/
     type: consensus
-    pmid: "15195581"
+    pmid: '15195581'
   - sourceOrg: Veterinary Parasitology
-    title: "Canine babesiosis: from molecular taxonomy to control"
+    title: 'Canine babesiosis: from molecular taxonomy to control'
     url: https://pubmed.ncbi.nlm.nih.gov/15710523/
     type: consensus
-    pmid: "15710523"
-  - sourceOrg: "Parasites &amp; vectors"
-    title: "A review of canine babesiosis: the European perspective."
+    pmid: '15710523'
+  - sourceOrg: Parasites &amp; vectors
+    title: 'A review of canine babesiosis: the European perspective.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4902949/
     type: review
-    pmid: "27289223"
+    pmid: '27289223'
   - sourceOrg: Pathogens (Basel, Switzerland)
-    title: "Research on Integrated Management for Cattle Fever Ticks and Bovine Babesiosis in the United States and Mexico: Current Status and Opportunities for Binational Coordination."
+    title: >-
+      Research on Integrated Management for Cattle Fever Ticks and Bovine Babesiosis in the United States and Mexico:
+      Current Status and Opportunities for Binational Coordination.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7690670/
     type: review
-    pmid: "33114005"
+    pmid: '33114005'
     relevance: supporting
 pubmedQueries:
   - query: '"babesiosis" AND (dog OR canine) AND ("treatment" OR "diagnosis")'
@@ -131,6 +131,67 @@ pubmedQueries:
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "CIR"
-  sectionTitle: "BABESIOSIS"
+  chapter: CIR
+  sectionTitle: BABESIOSIS
   pdfPage: 62
+diagnosticAlgorithm:
+  title: 乏漿體症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 詢問壁蝨暴露史、評估貧血與黃疸
+      findings:
+        - 發燒
+        - 蒼白黏膜
+        - 黃疸
+        - 脾臟腫大
+        - 深色尿
+    - step: 2
+      action: 血液抹片檢查
+      details: 薄血片及厚血片染色鏡檢
+      findings:
+        - 紅血球內見梨形或環形蟲體
+        - Babesia canis（大型）或B. gibsoni（小型）
+        - 再生性貧血
+    - step: 3
+      action: PCR確認與分型
+      details: 分子生物學確認及種別鑑定
+      findings:
+        - PCR陽性確認感染
+        - 區分Babesia種類
+        - 低蟲血症時PCR敏感度較高
+    - step: 4
+      action: 併發症評估
+      details: 評估多器官損傷
+      findings:
+        - 溶血性貧血程度
+        - 急性腎損傷
+        - DIC篩檢
+        - 免疫介導性共病評估
+clinicalPearls:
+  - 大型Babesia（B. canis）和小型Babesia（B. gibsoni）治療不同
+  - B. gibsoni常見於Pit Bull，可能無法清除
+  - 可能併發真正的IMHA
+  - Imidocarb可能引起膽鹼能副作用
+monitoringItems:
+  - PCV
+  - 網織紅血球
+  - 臨床症狀
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: splenomegaly
+    frequency: uncommon
+ddxSource: book

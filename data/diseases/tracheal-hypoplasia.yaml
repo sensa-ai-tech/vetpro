@@ -2,12 +2,14 @@ slug: tracheal-hypoplasia
 nameEn: Tracheal Hypoplasia
 nameZh: 氣管發育不全
 bodySystem: respiratory
-description: 氣管發育不全為先天性氣管狹窄，氣管軟骨環重疊導致氣管內徑減小。短頭犬品種（English Bulldog 最常見）好發，常與短頭犬呼吸道症候群合併出現。嚴重程度依氣管直徑與胸廓入口比值（TDI/TI ratio）判定。輕度病例可無症狀，嚴重者有顯著呼吸障礙。
-
+description: >-
+  氣管發育不全為先天性氣管狹窄，氣管軟骨環重疊導致氣管內徑減小。短頭犬品種（English Bulldog 最常見）好發，常與短頭犬呼吸道症候群合併出現。嚴重程度依氣管直徑與胸廓入口比值（TDI/TI
+  ratio）判定。輕度病例可無症狀，嚴重者有顯著呼吸障礙。
 aliases:
-  - { alias: 先天性氣管狹窄, language: zh }
-  - { alias: Congenital Tracheal Stenosis, language: en }
-
+  - alias: 先天性氣管狹窄
+    language: zh
+  - alias: Congenital Tracheal Stenosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻極為罕見。
-
 etiology:
   categories:
     - name: 先天性發育異常
@@ -27,7 +28,6 @@ etiology:
       examples:
         - 短頭犬呼吸道症候群（軟顎過長、鼻孔狹窄、喉囊外翻）
         - 其他先天性心臟異常（部分報告）
-
 clinicalSigns:
   early:
     - 輕度病例可無症狀
@@ -39,14 +39,12 @@ clinicalSigns:
     - 反覆呼吸道感染
     - 運動或興奮時呼吸困難加重
     - 發紺（嚴重者）
-
 diagnosis:
   primaryTests:
     - name: 胸腔 X 光
-      notes: "測量 TDI/TI ratio（氣管直徑/胸廓入口比值）。正常犬 >0.20，English Bulldog 正常 >0.16。氣管內徑一致性狹窄（與動態塌陷不同）。"
+      notes: 測量 TDI/TI ratio（氣管直徑/胸廓入口比值）。正常犬 >0.20，English Bulldog 正常 >0.16。氣管內徑一致性狹窄（與動態塌陷不同）。
     - name: 支氣管鏡
       notes: 直接觀察氣管內腔狹窄程度，評估軟骨環形態。排除其他氣管疾病（塌陷、異物、腫瘤）。
-
 treatment:
   principles:
     - 輕度病例通常不需治療
@@ -58,29 +56,80 @@ treatment:
     - 避免劇烈運動與高溫環境
     - 呼吸道感染時積極抗生素治療
     - 使用胸帶取代頸圈
-
 prognosis: 輕度氣管發育不全預後良好，多數犬隻可正常生活。嚴重狹窄伴隨短頭犬呼吸道症候群者預後較差，呼吸危機風險增加。手術矯正合併的上呼吸道阻塞可改善症狀。氣管本身無法手術擴大。
-
-
 guidelineRefs:
   - sourceOrg: Journal of anaesthesiology, clinical pharmacology
-    title: "Going down the rabbit hole: Tracheal hypoplasia disguised as unanticipated difficult airway."
+    title: 'Going down the rabbit hole: Tracheal hypoplasia disguised as unanticipated difficult airway.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11694878/
     type: research
-    pmid: "39759050"
+    pmid: '39759050'
     relevance: supporting
   - sourceOrg: Veterinary sciences
     title: Comparison of the Trachea in Normocephalic versus Brachycephalic Cats on the Basis of CT-Derived Measurements.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10610650/
     type: research
-    pmid: "37888554"
+    pmid: '37888554'
     relevance: supporting
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: Radiographic tracheal dimensions in brachycephalic breeds before and after surgical treatment for brachycephalic airway syndrome.
+    title: >-
+      Radiographic tracheal dimensions in brachycephalic breeds before and after surgical treatment for brachycephalic
+      airway syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7424946/
     type: research
-    pmid: "32879523"
+    pmid: '32879523'
     relevance: supporting
 pubmedQueries:
   - query: '"tracheal hypoplasia" AND (veterinary OR canine) AND ("brachycephalic" OR "diagnosis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 氣管發育不全 診斷流程
+  steps:
+    - step: 1
+      action: 品種和症狀評估
+      details: 短頭種犬合併呼吸困難
+      findings:
+        - 短頭種（特別是英國鬥牛犬）
+        - 呼吸音增大
+        - 運動不耐
+    - step: 2
+      action: 頸胸X光
+      details: 側位X光測量氣管直徑
+      findings:
+        - 氣管管徑狹窄
+        - TD/TI ratio降低
+        - 排除氣管塌陷
+    - step: 3
+      action: CT掃描
+      details: 精確評估氣管各段直徑
+      findings:
+        - 全段或局部氣管狹窄
+        - 軟骨環融合/重疊
+    - step: 4
+      action: BOAS綜合評估
+      details: 評估所有短頭種氣道組成
+      findings:
+        - 鼻孔狹窄程度
+        - 軟顎長度
+        - 喉囊狀態
+clinicalPearls:
+  - 英國鬥牛犬超過半數有氣管發育不全
+  - TD/TI ratio < 0.20 高度提示氣管發育不全
+  - 部分幼犬可隨成長改善，不需急於介入
+  - 氣管發育不全無法手術矯正，重點在管理BOAS
+monitoringItems:
+  - 定期X光追蹤氣管直徑（幼犬）
+  - 體重管理
+  - 呼吸功能評估
+  - BOAS症狀監測
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: stertor-stridor
+    frequency: uncommon
+ddxSource: book

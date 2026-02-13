@@ -3,13 +3,15 @@ nameEn: Aflatoxin Hepatopathy
 nameZh: 黃麴毒素肝病
 bodySystem: hepatic
 description: 黃麴毒素肝病是由黃麴黴菌 (Aspergillus flavus/parasiticus) 產生的黃麴毒素汙染食物引起的肝臟中毒性疾病。犬對黃麴毒素極度敏感，攝入汙染飼料可導致急性肝衰竭。
-
 aliases:
-  - { alias: 黃麴毒素中毒, language: zh }
-  - { alias: 黃麴毒素性肝損傷, language: zh }
-  - { alias: Aflatoxicosis, language: en }
-  - { alias: Aflatoxin Poisoning, language: en }
-
+  - alias: 黃麴毒素中毒
+    language: zh
+  - alias: 黃麴毒素性肝損傷
+    language: zh
+  - alias: Aflatoxicosis
+    language: en
+  - alias: Aflatoxin Poisoning
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓對黃麴毒素的敏感度較犬稍低，但仍可受影響。臨床報告較犬少見。
-
 etiology:
   categories:
     - name: 毒素來源
@@ -35,7 +36,6 @@ etiology:
         - 抑制蛋白質合成
         - 導致肝細胞壞死與膽管增生
         - 慢性暴露具致癌性（肝細胞癌）
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -49,19 +49,17 @@ clinicalSigns:
     - 肝腫大
     - 多飲多尿
     - 肝性腦病
-
 diagnosis:
   primaryTests:
     - name: 飼料檢測
-      notes: "飼料中黃麴毒素定量分析（HPLC 或 ELISA 法）。FDA 容許犬飼料上限 20 ppb。"
+      notes: 飼料中黃麴毒素定量分析（HPLC 或 ELISA 法）。FDA 容許犬飼料上限 20 ppb。
     - name: 血液生化
-      notes: "ALT、AST 顯著升高。膽紅素升高。低白蛋白血症。凝血時間延長（PT、aPTT）。低血糖（嚴重肝衰竭時）。"
+      notes: ALT、AST 顯著升高。膽紅素升高。低白蛋白血症。凝血時間延長（PT、aPTT）。低血糖（嚴重肝衰竭時）。
   differentialDiagnoses:
     - 其他肝毒性物質中毒
     - 急性肝炎（感染性）
     - 鉤端螺旋體感染
     - 銅儲積性肝病急性發作
-
 treatment:
   medical:
     - 立即停止可疑飼料
@@ -74,40 +72,80 @@ treatment:
     - 抗氧化劑（Vitamin E、Silymarin）
   surgical:
     - 通常不適用手術治療
-
 prognosis:
-  general: "急性大量暴露預後不良至極差，死亡率可達60%以上。早期發現並停止暴露源者預後較佳。慢性低劑量暴露可導致肝纖維化和潛在的肝細胞癌風險。存活者需長期肝功能追蹤。"
-
+  general: 急性大量暴露預後不良至極差，死亡率可達60%以上。早期發現並停止暴露源者預後較佳。慢性低劑量暴露可導致肝纖維化和潛在的肝細胞癌風險。存活者需長期肝功能追蹤。
 prevention:
   - 選擇信譽良好的商業飼料品牌
   - 避免餵食發霉穀物或堅果
   - 飼料適當儲存（低溫乾燥）
   - 注意飼料召回通知
-
-
 guidelineRefs:
   - sourceOrg: Toxins
-    title: "Species Differences in the Biotransformation of Aflatoxin B1: Primary Determinants of Relative Carcinogenic Potency in Different Animal Species."
+    title: >-
+      Species Differences in the Biotransformation of Aflatoxin B1: Primary Determinants of Relative Carcinogenic
+      Potency in Different Animal Species.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11768628/
     type: review
-    pmid: "39852983"
+    pmid: '39852983'
   - sourceOrg: Toxins
-    title: "Fifty Years of Aflatoxin Research in Qidong, China: A Celebration of Team Science to Improve Public Health."
+    title: 'Fifty Years of Aflatoxin Research in Qidong, China: A Celebration of Team Science to Improve Public Health.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11860843/
     type: review
-    pmid: "39998096"
+    pmid: '39998096'
   - sourceOrg: Cancers
-    title: "In Vivo and In Vitro Models of Hepatocellular Carcinoma: Current Strategies for Translational Modeling."
+    title: 'In Vivo and In Vitro Models of Hepatocellular Carcinoma: Current Strategies for Translational Modeling.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8582701/
     type: review
-    pmid: "34771745"
+    pmid: '34771745'
   - sourceOrg: Toxins
-    title: "Aflatoxins in Feed: Types, Metabolism, Health Consequences in Swine and Mitigation Strategies."
+    title: 'Aflatoxins in Feed: Types, Metabolism, Health Consequences in Swine and Mitigation Strategies.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9783261/
     type: review
-    pmid: "36548750"
+    pmid: '36548750'
   - sourceOrg: Toxins
-    title: "The Efficacy of Additives for the Mitigation of Aflatoxins in Animal Feed: A Systematic Review and Network Meta-Analysis."
+    title: >-
+      The Efficacy of Additives for the Mitigation of Aflatoxins in Animal Feed: A Systematic Review and Network
+      Meta-Analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9607122/
     type: review
-    pmid: "36287975"
+    pmid: '36287975'
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: epistaxis
+    frequency: uncommon
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: petechiae-ecchymoses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 黃麴毒素肝病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - epistaxis 相關症狀
+        - hepatomegaly 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 飼料檢測
+          notes: 飼料中黃麴毒素定量分析（HPLC 或 ELISA 法）。FDA 容許犬飼料上限 20 ppb。
+        - name: 血液生化
+          notes: ALT、AST 顯著升高。膽紅素升高。低白蛋白血症。凝血時間延長（PT、aPTT）。低血糖（嚴重肝衰竭時）。
+ddxSource: auto-generated

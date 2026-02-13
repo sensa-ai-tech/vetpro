@@ -3,11 +3,11 @@ nameEn: Ovarian Tumor
 nameZh: 卵巢腫瘤
 bodySystem: oncology
 description: 卵巢的原發性腫瘤，包括上皮性（腺瘤/腺癌）、性索間質性（顆粒細胞瘤）與生殖細胞性（畸胎瘤）。未結紮母犬偶見。部分可分泌賀爾蒙引起內分泌症狀。
-
 aliases:
-  - { alias: "Ovarian Neoplasia", language: en }
-  - { alias: "卵巢新生物", language: zh }
-
+  - alias: Ovarian Neoplasia
+    language: en
+  - alias: 卵巢新生物
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,14 +15,12 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 腫瘤性
       examples:
         - 卵巢上皮/間質/生殖細胞增生
         - 未結紮為先決條件
-
 clinicalSigns:
   early:
     - 腹部膨大
@@ -33,14 +31,12 @@ clinicalSigns:
     - 貧血
     - 骨髓抑制（雌激素過多）
     - 轉移
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
       notes: 卵巢腫塊
     - name: 賀爾蒙檢測
       notes: 雌二醇、黃體素升高（功能性腫瘤）
-
 treatment:
   principles:
     - 手術切除（卵巢子宮切除）
@@ -50,36 +46,68 @@ treatment:
     - 分期（胸腔 X 光、腹部超音波）
     - 惡性腫瘤術後化療
     - Cisplatin 或 Carboplatin
-
 prognosis: 良性腫瘤切除後預後極佳。惡性卵巢腫瘤完全切除預後中等。已轉移者預後不良。
-
-
 guidelineRefs:
   - sourceOrg: Cancers
-    title: Ovarian Cancer and Cancer Stem Cells-Cellular and Molecular Characteristics, Signaling Pathways, and Usefulness as a Diagnostic Tool in Medicine and Oncology.
+    title: >-
+      Ovarian Cancer and Cancer Stem Cells-Cellular and Molecular Characteristics, Signaling Pathways, and Usefulness as
+      a Diagnostic Tool in Medicine and Oncology.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8394875/
     type: review
-    pmid: "34439332"
+    pmid: '34439332'
   - sourceOrg: BMC veterinary research
     title: A case of giant panda ovarian cancer diagnosis and histopathology.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6186091/
     type: case-report
-    pmid: "30314476"
+    pmid: '30314476'
   - sourceOrg: Journal for immunotherapy of cancer
     title: HERV-derived epitopes represent new targets for T-cell-based immunotherapies in ovarian cancer.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12320039/
     type: research
-    pmid: "40759443"
+    pmid: '40759443'
   - sourceOrg: Annals of surgical oncology
-    title: "Pressurized IntraPeritoneal Aerosol Chemotherapy (PIPAC) Applied to Platinum-Resistant Recurrence of Ovarian Tumor: A Single-Institution Experience (ID: PARROT Trial)."
+    title: >-
+      Pressurized IntraPeritoneal Aerosol Chemotherapy (PIPAC) Applied to Platinum-Resistant Recurrence of Ovarian
+      Tumor: A Single-Institution Experience (ID: PARROT Trial).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10761392/
     type: research
-    pmid: "38099993"
+    pmid: '38099993'
   - sourceOrg: Molecules (Basel, Switzerland)
-    title: Flaxseed Increases Animal Lifespan and Reduces Ovarian Cancer Severity by Toxically Augmenting One-Carbon Metabolism.
+    title: >-
+      Flaxseed Increases Animal Lifespan and Reduces Ovarian Cancer Severity by Toxically Augmenting One-Carbon
+      Metabolism.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8471351/
     type: research
-    pmid: "34577143"
+    pmid: '34577143'
 pubmedQueries:
   - query: '"ovarian tumor" AND (veterinary OR canine OR feline) AND ("surgery" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: abdominal-distension
+    frequency: common
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 卵巢腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - abdominal-distension 相關症狀
+        - ascites 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 卵巢腫塊
+        - name: 賀爾蒙檢測
+          notes: 雌二醇、黃體素升高（功能性腫瘤）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術切除（卵巢子宮切除）
+        - 分期評估
+ddxSource: auto-generated

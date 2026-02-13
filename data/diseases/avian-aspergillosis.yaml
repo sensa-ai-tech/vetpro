@@ -3,18 +3,19 @@ nameEn: Avian Aspergillosis
 nameZh: 禽類麴菌症
 bodySystem: infectious
 description: 禽類麴菌症是由 Aspergillus fumigatus 等麴菌引起的真菌性呼吸道感染，為鸚鵡及猛禽最常見的真菌性疾病。急性型常見於免疫低下個體，慢性型形成氣囊與肺部肉芽腫，治療困難且預後謹慎。
-
 aliases:
-  - { alias: 鳥類麴菌病, language: zh }
-  - { alias: 禽類真菌性肺炎, language: zh }
-  - { alias: Avian aspergillus infection, language: en }
-  - { alias: Fungal pneumonia in birds, language: en }
-
+  - alias: 鳥類麴菌病
+    language: zh
+  - alias: 禽類真菌性肺炎
+    language: zh
+  - alias: Avian aspergillus infection
+    language: en
+  - alias: Fungal pneumonia in birds
+    language: en
 species:
   - speciesCommon: bird
     prevalence: common
     notes: 鸚鵡類（尤其灰鸚鵡、亞馬遜鸚鵡）及猛禽高發。免疫抑制、緊迫、抗生素長期使用為重要風險因子。環境中黴菌孢子量高時發病率增加。
-
 etiology:
   categories:
     - name: 感染性
@@ -30,7 +31,6 @@ etiology:
         - 通風不良的飼養環境
         - 發霉飼料或墊料
         - 維生素 A 缺乏
-
 clinicalSigns:
   early:
     - 輕微呼吸音改變
@@ -45,7 +45,6 @@ clinicalSigns:
     - 嗜睡
     - 食慾降低
     - 運動不耐受
-
 diagnosis:
   primaryTests:
     - name: 胸腔/氣囊 X 光
@@ -54,7 +53,6 @@ diagnosis:
       notes: 血清 Galactomannan 抗原測試。結合臨床表徵判讀
     - name: 蛋白電泳
       notes: Gamma globulin 升高支持慢性真菌感染。A/G 比值下降
-
 treatment:
   principles:
     - 長期抗真菌治療（數週至數月）
@@ -69,41 +67,85 @@ treatment:
     - 改善環境通風與衛生
     - 補充維生素 A
     - 定期監測治療反應（X 光、血液檢查）
-
 prognosis: 預後謹慎。慢性麴菌症治療困難，需長期抗真菌藥物治療。早期診斷並積極治療者預後較好。廣泛性氣囊感染或免疫嚴重低下者預後不良。治療期間需定期監測肝腎功能（抗真菌藥物毒性）。
-
-
 guidelineRefs:
   - sourceOrg: Microorganisms
-    title: "Aspergillosis, Avian Species and the One Health Perspective: The Possible Importance of Birds in Azole Resistance."
+    title: 'Aspergillosis, Avian Species and the One Health Perspective: The Possible Importance of Birds in Azole Resistance.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7767009/
     type: review
-    pmid: "33352774"
+    pmid: '33352774'
   - sourceOrg: Open veterinary journal
-    title: Multisystemic aspergillosis with unusual vertebral osteomyelitis in a turkey flock in Bordj Bou Arreridj Province, Algeria.
+    title: >-
+      Multisystemic aspergillosis with unusual vertebral osteomyelitis in a turkey flock in Bordj Bou Arreridj Province,
+      Algeria.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12184441/
     type: case-report
-    pmid: "40557069"
+    pmid: '40557069'
   - sourceOrg: Journal of fungi (Basel, Switzerland)
-    title: Aspergillus spp. Isolated from Lungs of Poultry (Gallus gallus) at the Mycology Laboratory, School of Veterinary Medicine, Universidad Nacional, Heredia, Costa Rica between 2008 and 2021 and Associated Factors.
+    title: >-
+      Aspergillus spp. Isolated from Lungs of Poultry (Gallus gallus) at the Mycology Laboratory, School of Veterinary
+      Medicine, Universidad Nacional, Heredia, Costa Rica between 2008 and 2021 and Associated Factors.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9863504/
     type: research
-    pmid: "36675879"
+    pmid: '36675879'
   - sourceOrg: Antibiotics (Basel, Switzerland)
-    title: Pulmonary Aspergillosis in Humboldt Penguins-Susceptibility Patterns and Molecular Epidemiology of Clinical and Environmental Aspergillus fumigatus Isolates from a Belgian Zoo, 2017-2022.
+    title: >-
+      Pulmonary Aspergillosis in Humboldt Penguins-Susceptibility Patterns and Molecular Epidemiology of Clinical and
+      Environmental Aspergillus fumigatus Isolates from a Belgian Zoo, 2017-2022.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10044460/
     type: research
-    pmid: "36978451"
+    pmid: '36978451'
   - sourceOrg: Frontiers in veterinary science
-    title: Epidemiological characteristics and financial losses due to avian aspergillosis in households in the Almaty region, Republic of Kazakhstan.
+    title: >-
+      Epidemiological characteristics and financial losses due to avian aspergillosis in households in the Almaty
+      region, Republic of Kazakhstan.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10150056/
     type: research
-    pmid: "37138907"
+    pmid: '37138907'
   - sourceOrg: Veterinary medicine and science
     title: Aspergillus flavus genetic structure at a turkey farm.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9857098/
     type: research
-    pmid: "36445341"
+    pmid: '36445341'
 pubmedQueries:
   - query: '"aspergillosis" AND (avian OR bird OR psittacine) AND ("treatment" OR "management")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類麴菌症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - exercise-intolerance 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸腔/氣囊 X 光
+          notes: 氣囊壁增厚、肺部結節或浸潤。氣囊內真菌團塊
+        - name: Aspergillus 抗原檢測
+          notes: 血清 Galactomannan 抗原測試。結合臨床表徵判讀
+        - name: 蛋白電泳
+          notes: Gamma globulin 升高支持慢性真菌感染。A/G 比值下降
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 長期抗真菌治療（數週至數月）
+        - 改善環境通風
+        - 營養支持與免疫力提升
+ddxSource: auto-generated

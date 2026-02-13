@@ -3,11 +3,11 @@ nameEn: Ovarian Cyst Detail
 nameZh: 卵巢囊腫詳述
 bodySystem: reproductive
 description: 卵巢濾泡或黃體囊腫，可能引起賀爾蒙異常及生殖障礙。多見於未絕育母犬貓。囊腫可自發消退或需手術切除。
-
 aliases:
-  - { alias: 卵巢囊泡, language: zh }
-  - { alias: Ovarian Follicular Cyst, language: en }
-
+  - alias: 卵巢囊泡
+    language: zh
+  - alias: Ovarian Follicular Cyst
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少見，誘導排卵失敗可能增加風險
-
 etiology:
   categories:
     - name: 濾泡囊腫
@@ -30,7 +29,6 @@ etiology:
         - 黃體退化異常
         - 黃體素持續分泌
         - 可能引起假孕
-
 clinicalSigns:
   early:
     - 多數無明顯症狀
@@ -41,21 +39,19 @@ clinicalSigns:
     - 對稱性脫毛（雌激素過多）
     - 腹部膨大（大型囊腫）
     - 不孕
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "卵巢囊性結構，直徑 >1 cm"
+      notes: 卵巢囊性結構，直徑 >1 cm
     - name: 血清雌激素/黃體素檢測
-      notes: "濾泡囊腫：雌激素升高；黃體囊腫：黃體素升高"
+      notes: 濾泡囊腫：雌激素升高；黃體囊腫：黃體素升高
     - name: 陰道細胞學
-      notes: "評估發情階段及雌激素影響"
+      notes: 評估發情階段及雌激素影響
   differentialDiagnoses:
     - 卵巢腫瘤
     - 正常發情期濾泡
     - 子宮蓄膿
     - 腎上腺疾病（脫毛）
-
 treatment:
   medical:
     - 小型囊腫（<2.5 cm）可能自發消退，觀察2-3週
@@ -63,44 +59,71 @@ treatment:
     - GnRH類似物：促進濾泡成熟及排卵
     - 手術：卵巢子宮切除術（建議治療，特別是複發性囊腫）
     - 囊腫穿刺（暫時性，易復發）
-
 prognosis:
-  general: "切除卵巢後預後極佳。保守治療可能復發。不影響壽命，但可能影響生育能力。"
-
+  general: 切除卵巢後預後極佳。保守治療可能復發。不影響壽命，但可能影響生育能力。
 prevention:
   - 絕育手術（根本預防）
   - 避免不適當使用外源性賀爾蒙
   - 定期生殖系統檢查（繁殖母犬）
-
-
 guidelineRefs:
   - sourceOrg: Journal of ovarian research
-    title: "Polycystic ovarian syndrome a risk factor for non-communicable diseases: insights into recent research and prevention approaches."
+    title: >-
+      Polycystic ovarian syndrome a risk factor for non-communicable diseases: insights into recent research and
+      prevention approaches.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12512731/
     type: review
-    pmid: "41074063"
+    pmid: '41074063'
     relevance: primary
   - sourceOrg: Frontiers in endocrinology
-    title: "Rodent models of functional hypothalamic amenorrhea: a systematic scoping review."
+    title: 'Rodent models of functional hypothalamic amenorrhea: a systematic scoping review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12174910/
     type: review
-    pmid: "40535339"
+    pmid: '40535339'
     relevance: primary
   - sourceOrg: BMC endocrine disorders
-    title: "Effects of Genistein on polycystic ovary syndrome of rats: a systematic review and meta-analysis."
+    title: 'Effects of Genistein on polycystic ovary syndrome of rats: a systematic review and meta-analysis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12482266/
     type: review
-    pmid: "41029281"
+    pmid: '41029281'
     relevance: primary
   - sourceOrg: Nutrients
-    title: The Utilization of Bee Products as a Holistic Approach to Managing Polycystic Ovarian Syndrome-Related Infertility.
+    title: >-
+      The Utilization of Bee Products as a Holistic Approach to Managing Polycystic Ovarian Syndrome-Related
+      Infertility.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10005493/
     type: review
-    pmid: "36904163"
+    pmid: '36904163'
     relevance: primary
   - sourceOrg: Veterinary sciences
-    title: Coexistence of Rete Ovarii Cysts and Cystic Endometrial Hyperplasia in a Guinea Pig (Cavia porcellus)-A Detailed Clinical Case Report.
+    title: >-
+      Coexistence of Rete Ovarii Cysts and Cystic Endometrial Hyperplasia in a Guinea Pig (Cavia porcellus)-A Detailed
+      Clinical Case Report.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12846476/
     type: case-report
-    pmid: "41600687"
+    pmid: '41600687'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: alopecia
+    frequency: uncommon
+  - symptomId: abdominal-distension
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 卵巢囊腫詳述 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - alopecia 相關症狀
+        - abdominal-distension 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 卵巢囊性結構，直徑 >1 cm
+        - name: 血清雌激素/黃體素檢測
+          notes: 濾泡囊腫：雌激素升高；黃體囊腫：黃體素升高
+        - name: 陰道細胞學
+          notes: 評估發情階段及雌激素影響
+ddxSource: auto-generated

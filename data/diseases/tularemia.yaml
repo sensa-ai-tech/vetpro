@@ -3,13 +3,15 @@ nameEn: Tularemia
 nameZh: 土拉倫斯病
 bodySystem: infectious
 description: 土拉倫斯病是由土拉弗朗西斯菌（Francisella tularensis）引起的人畜共通傳染病。貓對此菌特別敏感，可發展為嚴重全身性疾病。犬隻通常呈亞臨床感染或輕度疾病。傳播途徑包括蜱叮咬、接觸感染兔子或齧齒類以及攝入污染水源。
-
 aliases:
-  - { alias: 兔熱病, language: zh }
-  - { alias: 鹿蠅熱, language: zh }
-  - { alias: Rabbit Fever, language: en }
-  - { alias: Deer Fly Fever, language: en }
-
+  - alias: 兔熱病
+    language: zh
+  - alias: 鹿蠅熱
+    language: zh
+  - alias: Rabbit Fever
+    language: en
+  - alias: Deer Fly Fever
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓隻對 F. tularensis 高度敏感，可發展嚴重全身性疾病。獵食兔子或齧齒類的戶外貓風險最高。為重要的人畜共通傳染病傳播源。
-
 etiology:
   categories:
     - name: 病原體
@@ -38,7 +39,6 @@ etiology:
         - 貓為重要傳播源（咬傷、抓傷傳播給人類）
         - 獸醫人員處理感染貓時有感染風險
         - 接觸感染動物組織可經皮膚傷口感染
-
 clinicalSigns:
   early:
     - 突發性高燒
@@ -57,24 +57,22 @@ clinicalSigns:
     - 多器官衰竭
     - 瀰漫性血管內凝血（DIC）
     - 死亡（未治療的貓隻死亡率高）
-
 diagnosis:
   primaryTests:
     - name: 血清學檢測
-      notes: "微量凝集試驗（MAT）：急性期與恢復期配對血清。效價 > 1:128 或四倍升高有診斷意義。"
+      notes: 微量凝集試驗（MAT）：急性期與恢復期配對血清。效價 > 1:128 或四倍升高有診斷意義。
     - name: PCR 檢測
-      notes: "血液或組織 PCR 可快速確認 F. tularensis DNA。特異性與敏感性高。"
+      notes: 血液或組織 PCR 可快速確認 F. tularensis DNA。特異性與敏感性高。
   imaging:
     - name: 胸腔 X 光
-      notes: "肺炎型可見肺部浸潤影。胸腔積液（偶見）。"
+      notes: 肺炎型可見肺部浸潤影。胸腔積液（偶見）。
     - name: 腹部超音波
-      notes: "肝脾腫大。肝脾微膿瘍（壞死灶）。淋巴結腫大。"
+      notes: 肝脾腫大。肝脾微膿瘍（壞死灶）。淋巴結腫大。
   additional:
     - 血液學（白血球增多或減少、血小板減少）
     - 血液生化（肝酵素升高、膽紅素升高）
     - 細菌培養（需 BSL-3 實驗室設備，不建議常規培養因有感染風險）
     - 組織病理學（肝脾壞死性肉芽腫）
-
 treatment:
   principles:
     - 早期抗生素治療至關重要
@@ -82,50 +80,108 @@ treatment:
     - 支持性照護
     - 注意人畜共通傳染風險
   general:
-    - "Gentamicin 6 mg/kg IV/IM q24h x 10-14 天（一線藥物）"
-    - "Doxycycline 5 mg/kg PO q12h x 14-21 天（替代方案）"
-    - "Enrofloxacin 5 mg/kg PO q24h x 14 天（犬替代方案，貓慎用）"
-    - "支持性治療：靜脈輸液、營養支持"
-    - "隔離措施：戴手套處理感染動物，避免人員感染"
-    - "蜱蟲防治：預防性外寄生蟲驅蟲"
-    - "人畜共通提醒：告知畜主感染風險，建議就醫諮詢"
-
+    - Gentamicin 6 mg/kg IV/IM q24h x 10-14 天（一線藥物）
+    - Doxycycline 5 mg/kg PO q12h x 14-21 天（替代方案）
+    - Enrofloxacin 5 mg/kg PO q24h x 14 天（犬替代方案，貓慎用）
+    - 支持性治療：靜脈輸液、營養支持
+    - 隔離措施：戴手套處理感染動物，避免人員感染
+    - 蜱蟲防治：預防性外寄生蟲驅蟲
+    - 人畜共通提醒：告知畜主感染風險，建議就醫諮詢
 prognosis: 犬隻感染通常自限性或經治療後預後良好。貓隻未治療者死亡率高（可達 60%），早期抗生素治療可顯著改善預後。全身性敗血症型預後較差。重要的人畜共通傳染病考量——獸醫人員應採取適當防護措施。
-
 guidelineRefs:
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Tularemia in dogs and cats: clinical presentation and zoonotic risk"
+    title: 'Tularemia in dogs and cats: clinical presentation and zoonotic risk'
     url: https://pubmed.ncbi.nlm.nih.gov/14510846/
     type: consensus
-    pmid: "14510846"
+    pmid: '14510846'
   - sourceOrg: Journal of Feline Medicine and Surgery
-    title: "Tularemia in cats: review of clinical features"
+    title: 'Tularemia in cats: review of clinical features'
     url: https://pubmed.ncbi.nlm.nih.gov/19481039/
     type: consensus
-    pmid: "19481039"
+    pmid: '19481039'
   - sourceOrg: Epidemiology and health
-    title: "The prevalence of Q fever in the Eastern Mediterranean region: a systematic review and meta-analysis."
+    title: 'The prevalence of Q fever in the Eastern Mediterranean region: a systematic review and meta-analysis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10396516/
     type: review
-    pmid: "36317399"
+    pmid: '36317399'
     relevance: primary
   - sourceOrg: Folia microbiologica
-    title: "Tularemia: a re-emerging tick-borne infectious disease."
+    title: 'Tularemia: a re-emerging tick-borne infectious disease.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7521936/
     type: review
-    pmid: "32989563"
+    pmid: '32989563'
     relevance: primary
   - sourceOrg: International journal of environmental research and public health
-    title: "Rodent-Related Zoonotic Pathogens at the Human-Animal-Environment Interface in Qatar: A Systematic Review and Meta-Analysis."
+    title: >-
+      Rodent-Related Zoonotic Pathogens at the Human-Animal-Environment Interface in Qatar: A Systematic Review and
+      Meta-Analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8198466/
     type: review
-    pmid: "34073025"
+    pmid: '34073025'
     relevance: primary
 pubmedQueries:
   - query: '"tularemia" AND (cat OR dog) AND ("clinical" OR "zoonotic")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "GEN"
-  sectionTitle: "TULAREMIA"
+  chapter: GEN
+  sectionTitle: TULAREMIA
   pdfPage: 733
+diagnosticAlgorithm:
+  title: 土拉倫病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估急性發熱、淋巴結腫大、口腔潰瘍等表現，詢問蜱蟲叮咬或野兔接觸史，貓比犬更易感
+      findings:
+        - 急性高熱與嗜睡
+        - 局部淋巴結腫大伴壓痛
+        - 口腔潰瘍或皮膚潰瘍
+    - step: 2
+      action: 實驗室檢查
+      details: 進行CBC及生化檢查，注意肝功能異常，血清學檢測抗體效價
+      findings:
+        - 白血球增多或減少
+        - 肝酵素升高
+        - 血清凝集抗體效價升高
+    - step: 3
+      action: 確診
+      details: 透過PCR或特殊培養（需BSL-3實驗室）確認Francisella tularensis，此為人畜共通傳染病
+      findings:
+        - PCR確認Francisella tularensis
+        - 需通報為人畜共通傳染病
+clinicalPearls:
+  - 土拉倫病是法定報告傳染病——確診後必須通報
+  - F. tularensis極度感染性——實驗室人員感染風險高，必須通知實驗室
+  - 貓比犬更易發展為嚴重全身性疾病
+  - 與鼠疫臨床相似——流行地區需列入鑑別
+  - 處理疑似感染動物時需嚴格手套和防護
+monitoringItems:
+  - 體溫和臨床改善追蹤
+  - 肝功能監測
+  - 腎功能監測（gentamicin腎毒性）
+  - 接觸者監測
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: splenomegaly
+    frequency: uncommon
+ddxSource: book

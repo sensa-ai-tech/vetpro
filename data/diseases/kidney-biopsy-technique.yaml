@@ -3,12 +3,13 @@ nameEn: Kidney Biopsy Technique
 nameZh: 腎臟切片技術
 bodySystem: urinary
 description: 經皮超音波導引或手術方式取得腎臟組織,用於診斷蛋白尿、腎衰竭或腎腫瘤。需謹慎評估風險因出血可能危及腎功能。
-
 aliases:
-  - { alias: 腎臟活檢, language: zh }
-  - { alias: Renal biopsy, language: en }
-  - { alias: 腎穿刺, language: zh }
-
+  - alias: 腎臟活檢
+    language: zh
+  - alias: Renal biopsy
+    language: en
+  - alias: 腎穿刺
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓慢性腎病病理分型需要
-
 etiology:
   categories:
     - name: 診斷適應症
@@ -31,7 +31,6 @@ etiology:
         - 超音波導引Tru-cut穿刺
         - 腹腔鏡腎切片
         - 剖腹手術楔形切片
-
 clinicalSigns:
   early:
     - 操作後輕微血尿(前24-48小時)
@@ -40,19 +39,17 @@ clinicalSigns:
   progressive:
     - 正常恢復:血尿48小時內消失
     - 併發症:嚴重血尿、腎周血腫、動靜脈瘻管(罕見)
-
 diagnosis:
   primaryTests:
     - name: 凝血功能檢查
-      notes: "PT, aPTT, 血小板(需>80,000/μL)"
+      notes: PT, aPTT, 血小板(需>80,000/μL)
     - name: 血壓測量
-      notes: "收縮壓<180 mmHg為理想"
+      notes: 收縮壓<180 mmHg為理想
     - name: 腎臟超音波
-      notes: "評估腎臟大小、結構、導引穿刺"
+      notes: 評估腎臟大小、結構、導引穿刺
   differentialDiagnoses:
     - 尿蛋白電泳(非侵入性但資訊有限)
     - 影像學診斷
-
 treatment:
   medical:
     - 麻醉:全身麻醉或深度鎮靜,確保動物不動
@@ -60,45 +57,67 @@ treatment:
     - 止血:穿刺後監控5-10分鐘,超音波確認無出血
     - 術後:靜脈輸液維持腎灌流,監測尿色及血壓
     - 止痛:Buprenorphine 0.01-0.02 mg/kg IV q6-8h
-
 prognosis:
-  general: "併發症發生率5-10%,多為自限性血尿。嚴重出血需輸血<1%。病理診斷準確率>90%,對治療決策有重要價值。"
-
+  general: 併發症發生率5-10%,多為自限性血尿。嚴重出血需輸血<1%。病理診斷準確率>90%,對治療決策有重要價值。
 prevention:
   - 術前矯正凝血異常及高血壓
   - 超音波導引避開腎血管及腎盂
   - 單側腎病變優先選擇該側
   - 術後監控尿色、血壓、腹圍24小時
-
-
 guidelineRefs:
   - sourceOrg: Nature medicine
-    title: Second international consensus report on gaps and opportunities for the clinical translation of precision diabetes medicine.
+    title: >-
+      Second international consensus report on gaps and opportunities for the clinical translation of precision diabetes
+      medicine.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10735053/
     type: consensus
-    pmid: "37794253"
+    pmid: '37794253'
     relevance: primary
   - sourceOrg: Autophagy
     title: Guidelines for the use and interpretation of assays for monitoring autophagy (4th edition)1.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7996087/
     type: guideline
-    pmid: "33634751"
+    pmid: '33634751'
     relevance: primary
   - sourceOrg: PloS one
-    title: "Guidelines for the management of a brain death donor in the rhesus macaque: A translational transplant model."
+    title: 'Guidelines for the management of a brain death donor in the rhesus macaque: A translational transplant model.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5604963/
     type: guideline
-    pmid: "28926566"
+    pmid: '28926566'
     relevance: primary
   - sourceOrg: Autophagy
     title: Guidelines for the use and interpretation of assays for monitoring autophagy (3rd edition).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4835977/
     type: guideline
-    pmid: "26799652"
+    pmid: '26799652'
     relevance: primary
   - sourceOrg: Vaccines
-    title: "Solid Organ Rejection following SARS-CoV-2 Vaccination or COVID-19 Infection: A Systematic Review and Meta-Analysis."
+    title: >-
+      Solid Organ Rejection following SARS-CoV-2 Vaccination or COVID-19 Infection: A Systematic Review and
+      Meta-Analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9412452/
     type: review
-    pmid: "36016180"
+    pmid: '36016180'
     relevance: primary
+associatedSymptoms:
+  - symptomId: haematuria
+    frequency: common
+diagnosticAlgorithm:
+  title: 腎臟切片技術 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 凝血功能檢查
+          notes: PT, aPTT, 血小板(需>80,000/μL)
+        - name: 血壓測量
+          notes: 收縮壓<180 mmHg為理想
+        - name: 腎臟超音波
+          notes: 評估腎臟大小、結構、導引穿刺
+ddxSource: auto-generated

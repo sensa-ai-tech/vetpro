@@ -3,13 +3,15 @@ nameEn: Renal Infarction
 nameZh: 腎梗塞
 bodySystem: urinary
 description: 腎梗塞是腎動脈或其分支血流中斷導致的腎組織缺血性壞死。通常由血栓栓塞引起，可為局灶性或彌漫性，是多種全身性疾病的併發症。
-
 aliases:
-  - { alias: 腎臟梗塞, language: zh }
-  - { alias: 腎動脈栓塞, language: zh }
-  - { alias: Renal Thromboembolism, language: en }
-  - { alias: Kidney Infarction, language: en }
-
+  - alias: 腎臟梗塞
+    language: zh
+  - alias: 腎動脈栓塞
+    language: zh
+  - alias: Renal Thromboembolism
+    language: en
+  - alias: Kidney Infarction
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓腎梗塞可與心臟病相關的動脈血栓栓塞 (ATE) 同時發生，但以後肢動脈栓塞更常見。
-
 etiology:
   categories:
     - name: 血栓栓塞來源
@@ -34,7 +35,6 @@ etiology:
         - 手術中血管夾傷
         - DIC
         - 腎動脈纖維肌性發育不良
-
 clinicalSigns:
   early:
     - 急性腹部疼痛（腎區）
@@ -47,22 +47,22 @@ clinicalSigns:
     - 少尿或無尿（雙側大面積梗塞時）
     - 高血壓（腎素-血管緊張素系統活化）
     - 蛋白尿
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波（含都卜勒）
-      notes: "受影響腎區回音性改變（急性期低回音，慢性期高回音萎縮）。彩色都卜勒可顯示血流缺損區域。腎臟大小不對稱。"
+      notes: 受影響腎區回音性改變（急性期低回音，慢性期高回音萎縮）。彩色都卜勒可顯示血流缺損區域。腎臟大小不對稱。
     - name: 血液檢查
-      notes: "BUN/Creatinine 升高（雙側或單側嚴重梗塞時）。LDH 升高。凝血功能評估。尋找潛在高凝狀態（尿蛋白/肌酐比、抗凝血酶 III）。"
+      notes: BUN/Creatinine 升高（雙側或單側嚴重梗塞時）。LDH 升高。凝血功能評估。尋找潛在高凝狀態（尿蛋白/肌酐比、抗凝血酶 III）。
   differentialDiagnoses:
     - 急性腎盂腎炎
     - 腎臟腫瘤
     - 腎臟創傷
     - 輸尿管阻塞
-
 treatment:
   medical:
-    - 抗凝血治療：Unfractionated heparin 200-300 IU/kg SC q6-8h 或 Low molecular weight heparin (dalteparin 150 IU/kg SC q8-12h)
+    - >-
+      抗凝血治療：Unfractionated heparin 200-300 IU/kg SC q6-8h 或 Low molecular weight heparin (dalteparin 150 IU/kg SC
+      q8-12h)
     - 長期抗血栓：Clopidogrel 1-2 mg/kg PO q24h
     - 止痛（opioid 類止痛劑）
     - 靜脈輸液支持
@@ -71,45 +71,98 @@ treatment:
   surgical:
     - 急性大血管栓塞理論上可手術取栓但實際應用極有限
     - 嚴重損傷的腎臟可考慮腎切除（對側功能正常時）
-
 prognosis:
-  general: "預後取決於梗塞範圍與潛在病因。單側局灶性梗塞預後良好，對側腎臟可代償。雙側大面積梗塞或潛在病因無法控制者預後不良。需長期抗血栓治療預防復發。"
-
+  general: 預後取決於梗塞範圍與潛在病因。單側局灶性梗塞預後良好，對側腎臟可代償。雙側大面積梗塞或潛在病因無法控制者預後不良。需長期抗血栓治療預防復發。
 prevention:
   - 高凝狀態疾病的積極管理
   - 蛋白喪失性腎病患者預防性抗血栓治療
   - 心臟病患者的抗血栓策略
   - 定期監測凝血功能
-
-
 guidelineRefs:
   - sourceOrg: Cureus
-    title: "An Unusual Vascular Catastrophe: Atheromatous Aortic Dissection With Renal Artery Thrombosis and Cortical Laminar Necrosis Post Cerebral Ischemia."
+    title: >-
+      An Unusual Vascular Catastrophe: Atheromatous Aortic Dissection With Renal Artery Thrombosis and Cortical Laminar
+      Necrosis Post Cerebral Ischemia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12623509/
     type: case-report
-    pmid: "41262839"
+    pmid: '41262839'
     relevance: supporting
   - sourceOrg: Texas Heart Institute journal
     title: Q Fever Endocarditis Presenting with Superior Mesenteric Artery Embolism and Renal Infarction.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4810597/
     type: case-report
-    pmid: "27047296"
+    pmid: '27047296'
     relevance: supporting
   - sourceOrg: Urology case reports
-    title: "\"Isolated Spontaneous Renal Artery Thrombosis - A Rare Cause of Acute Flank Pain\"."
+    title: '"Isolated Spontaneous Renal Artery Thrombosis - A Rare Cause of Acute Flank Pain".'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5007596/
     type: case-report
-    pmid: "27617211"
+    pmid: '27617211'
     relevance: supporting
   - sourceOrg: American journal of physiology. Renal physiology
-    title: A new low-nephron CKD model with hypertension, progressive decline of renal function, and enhanced inflammation in C57BL/6 mice.
+    title: >-
+      A new low-nephron CKD model with hypertension, progressive decline of renal function, and enhanced inflammation in
+      C57BL/6 mice.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6031904/
     type: research
-    pmid: "29412703"
+    pmid: '29412703'
     relevance: supporting
   - sourceOrg: Acta cirurgica brasileira
-    title: Adipose tissue derived mesenchymal stem cell transplantation in the treatment of ischemia/reperfusion induced acute kidney injury in rats. Application route and therapeutic window1.
+    title: >-
+      Adipose tissue derived mesenchymal stem cell transplantation in the treatment of ischemia/reperfusion induced
+      acute kidney injury in rats. Application route and therapeutic window1.
     url: https://pubmed.ncbi.nlm.nih.gov/30517328/
     type: research
-    pmid: "30517328"
+    pmid: '30517328'
     relevance: supporting
+diagnosticAlgorithm:
+  title: 腎梗塞 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估急性腎臟疼痛和潛在栓塞來源
+      findings:
+        - 急性腹痛或腰痛
+        - 血尿
+        - 發熱
+        - 心臟疾病（栓塞來源）
+    - step: 2
+      action: 實驗室檢查
+      details: 進行腎功能和凝血評估
+      findings:
+        - 肌酐和BUN可能升高
+        - LDH升高
+        - 白血球增多
+        - 尿液分析見血尿和蛋白尿
+    - step: 3
+      action: 影像學確診
+      details: 進行腎臟超音波和都卜勒評估
+      findings:
+        - 腎臟楔形低回音區域
+        - 都卜勒顯示局部血流缺失
+        - 造影CT見楔形灌注缺損
+        - 腎臟大小可能不對稱
+    - step: 4
+      action: 栓塞來源調查
+      details: 調查血栓栓塞的來源
+      findings:
+        - 心臟超音波排除心臟內血栓
+        - 凝血功能全套評估
+        - 抗凝血酶III測定
+        - 腫瘤相關高凝狀態篩檢
+clinicalPearls:
+  - 犬急性腰痛、血尿和氮血症的三聯徵應高度懷疑腎梗塞
+  - 診斷後必須積極尋找基礎病因——腎梗塞幾乎總是全身性疾病的表現
+  - 都卜勒超音波可快速評估腎臟血流灌注，但 CT 血管造影是最精確的診斷工具
+  - IMHA 和腎病症候群是犬最常見的高凝狀態，均有顯著的血栓風險
+monitoringItems:
+  - 腎功能指標（BUN、Creatinine）每 24-48 小時追蹤（急性期）
+  - 凝血功能監測（使用抗凝劑時）
+  - 重複腹部超音波評估腎臟大小和血流恢復
+  - 基礎疾病的相關監測項目
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+ddxSource: book

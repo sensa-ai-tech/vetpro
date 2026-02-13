@@ -3,17 +3,16 @@ nameEn: Weimaraner Immunodeficiency
 nameZh: 威瑪犬免疫缺陷症候群
 bodySystem: immunology
 description: 威瑪犬幼犬特異性免疫功能障礙,表現為反覆感染、生長遲緩與高死亡率。可能涉及 T 細胞與 B 細胞功能異常。
-
 aliases:
-  - { alias: 威瑪犬幼犬免疫不全, language: zh }
-  - { alias: Weimaraner Puppy Immunodeficiency, language: en }
-
+  - alias: 威瑪犬幼犬免疫不全
+    language: zh
+  - alias: Weimaraner Puppy Immunodeficiency
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: rare
     notes: 威瑪犬幼犬(8-16 週齡)好發,可能為遺傳性免疫缺陷
-
 etiology:
   categories:
     - name: 先天性免疫缺陷
@@ -21,7 +20,6 @@ etiology:
         - T 細胞功能低下
         - 低丙種球蛋白血症
         - 可能為 combined immunodeficiency
-
 clinicalSigns:
   early:
     - 反覆發燒
@@ -31,23 +29,21 @@ clinicalSigns:
     - 反覆呼吸道或腸道感染
     - 淋巴結腫大
     - 骨骼肌疼痛與關節炎
-
 diagnosis:
   primaryTests:
     - name: 全血球計數
-      notes: "中性球減少或功能異常,淋巴球減少"
+      notes: 中性球減少或功能異常,淋巴球減少
     - name: 血清免疫球蛋白
-      notes: "IgG, IgM, IgA 低下"
+      notes: IgG, IgM, IgA 低下
     - name: T 細胞與 B 細胞功能測試
-      notes: "淋巴球增殖反應低下"
+      notes: 淋巴球增殖反應低下
     - name: 疫苗抗體效價
-      notes: "疫苗接種後抗體反應不佳"
+      notes: 疫苗接種後抗體反應不佳
   differentialDiagnoses:
     - 犬瘟熱
     - 犬小病毒感染
     - 營養不良
     - 寄生蟲感染
-
 treatment:
   medical:
     - 積極治療繼發感染:廣效抗生素
@@ -55,10 +51,61 @@ treatment:
     - 營養支持,高品質飲食
     - 避免接觸病原,隔離飼養
     - 定期監測感染徵象
-
 prognosis:
-  general: "預後極差。多數幼犬於 4-6 月齡內死於嚴重感染或安樂死。少數存活至成年,但終生需密集醫療管理。"
-
+  general: 預後極差。多數幼犬於 4-6 月齡內死於嚴重感染或安樂死。少數存活至成年,但終生需密集醫療管理。
 prevention:
   - 受影響犬隻家族不應繁殖
   - 幼犬期反覆感染應儘早免疫功能評估
+diagnosticAlgorithm:
+  title: 原發性免疫缺乏症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估反覆感染病史和品種背景
+      findings:
+        - 反覆不同部位感染
+        - 對常規治療反應不佳
+        - 幼年動物發病
+        - 品種易感性
+    - step: 2
+      action: 基礎免疫學檢查
+      details: 進行免疫功能基礎評估
+      findings:
+        - 全血計數評估各系白血球
+        - 血清免疫球蛋白定量（IgG、IgM、IgA）
+        - 淋巴球亞群分析
+        - 嗜中性球功能試驗
+    - step: 3
+      action: 進階免疫功能評估
+      details: 進行特異性免疫功能檢測
+      findings:
+        - 淋巴球增生試驗
+        - 補體活性測定
+        - 嗜中性球殺菌功能
+        - 流式細胞術淋巴球分型
+    - step: 4
+      action: 基因診斷
+      details: 進行已知免疫缺陷基因檢測
+      findings:
+        - X-linked SCID（Basset Hound）
+        - IgA缺乏（多品種）
+        - 白血球黏附缺陷（LAD）
+        - 特定品種基因突變篩檢
+clinicalPearls:
+  - 幼犬在 3-6 月齡開始反覆感染且抗生素治療效果不佳，應懷疑原發性免疫缺乏
+  - 確診前必須先排除繼發性免疫抑制原因（FIV、腫瘤、藥物等）
+  - SCID 患者絕對禁止接種活毒疫苗——可能引發致命感染
+  - 品種背景是重要線索——特定品種的特定免疫缺陷已有明確的基因定位
+monitoringItems:
+  - 感染頻率和嚴重程度的臨床追蹤
+  - 定期 CBC 和免疫球蛋白定量（每 2-3 個月）
+  - 體重和生長曲線監測（幼犬）
+  - 抗生素敏感性試驗（避免耐藥菌發展）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: pallor-cyanosis
+    frequency: rare
+ddxSource: book

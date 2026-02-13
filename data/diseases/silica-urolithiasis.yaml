@@ -2,13 +2,16 @@ slug: silica-urolithiasis
 nameEn: Silica Urolithiasis
 nameZh: 矽酸鹽尿路結石
 bodySystem: urinary
-description: 矽酸鹽尿路結石為少見的尿路結石類型，與高矽酸鹽飲食攝入（含大量植物性成分或矽膠的飼料）相關。犬隻較貓隻常見。結石成分為 silica dioxide。German Shepherd、Golden Retriever、Labrador 可能好發。需手術移除且預防復發重點在飲食調整。
-
+description: >-
+  矽酸鹽尿路結石為少見的尿路結石類型，與高矽酸鹽飲食攝入（含大量植物性成分或矽膠的飼料）相關。犬隻較貓隻常見。結石成分為 silica dioxide。German Shepherd、Golden Retriever、Labrador
+  可能好發。需手術移除且預防復發重點在飲食調整。
 aliases:
-  - { alias: 矽結石, language: zh }
-  - { alias: Silica Stones, language: en }
-  - { alias: Silicate Urolithiasis, language: en }
-
+  - alias: 矽結石
+    language: zh
+  - alias: Silica Stones
+    language: en
+  - alias: Silicate Urolithiasis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻矽酸鹽結石極罕見。
-
 etiology:
   categories:
     - name: 飲食因素
@@ -28,7 +30,6 @@ etiology:
       examples:
         - 品種遺傳傾向
         - 異食癖（攝入含矽物質如土壤、矽膠）
-
 clinicalSigns:
   early:
     - 頻尿
@@ -38,14 +39,12 @@ clinicalSigns:
     - 尿道阻塞
     - 排尿疼痛
     - 反覆血尿
-
 diagnosis:
   primaryTests:
     - name: 影像學
       notes: X 光：矽酸鹽結石放射密度中等至低，可能不易在 X 光上看到。腹部超音波可偵測膀胱結石。結石外觀常為 jackstone 形態（突出刺狀表面）。
     - name: 結石分析
       notes: 定量結石分析確認矽酸鹽成分。結石外觀為特徵性 jackstone（多刺外觀）。顏色通常為白色至棕色。
-
 treatment:
   principles:
     - 矽酸鹽結石無法以飲食溶解
@@ -58,9 +57,37 @@ treatment:
     - 增加水分攝取
     - 避免異食癖（土壤、矽膠等）
     - 定期影像學追蹤
-
 prognosis: 手術取石後功能恢復良好。飲食調整後復發率可降低。未改變飲食者復發率高。矽酸鹽結石整體較其他類型少見，相關研究與文獻也較少。終生飲食管理與定期追蹤是預防復發的關鍵。
-
 pubmedQueries:
   - query: '"silica" AND "urolithiasis" AND (veterinary OR canine) AND ("treatment" OR "prevention")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: common
+  - symptomId: haematuria
+    frequency: common
+diagnosticAlgorithm:
+  title: 矽酸鹽尿路結石 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pollakiuria 相關症狀
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 影像學
+          notes: X 光：矽酸鹽結石放射密度中等至低，可能不易在 X 光上看到。腹部超音波可偵測膀胱結石。結石外觀常為 jackstone 形態（突出刺狀表面）。
+        - name: 結石分析
+          notes: 定量結石分析確認矽酸鹽成分。結石外觀為特徵性 jackstone（多刺外觀）。顏色通常為白色至棕色。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 矽酸鹽結石無法以飲食溶解
+        - 需手術移除
+        - 飲食調整預防復發
+ddxSource: auto-generated

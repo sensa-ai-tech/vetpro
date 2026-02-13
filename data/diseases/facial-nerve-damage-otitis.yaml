@@ -3,13 +3,15 @@ nameEn: Facial Nerve Damage Otitis
 nameZh: 耳炎相關顏面神經損傷
 bodySystem: ear
 description: 因中耳炎或耳科手術導致的第七對腦神經（顏面神經）損傷，表現為患側面部肌肉麻痺、嘴唇下垂、眼瞼閉合不全及乾眼症等症狀。
-
 aliases:
-  - { alias: 耳炎性面神經麻痺, language: zh }
-  - { alias: 中耳炎面癱, language: zh }
-  - { alias: Otitis-related facial nerve paralysis, language: en }
-  - { alias: Facial nerve palsy from otitis media, language: en }
-
+  - alias: 耳炎性面神經麻痺
+    language: zh
+  - alias: 中耳炎面癱
+    language: zh
+  - alias: Otitis-related facial nerve paralysis
+    language: en
+  - alias: Facial nerve palsy from otitis media
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓鼻咽息肉手術或中耳炎均可能導致顏面神經損傷。VBO 手術後暫時性面癱為常見併發症。
-
 etiology:
   categories:
     - name: 中耳炎相關
@@ -32,7 +33,6 @@ etiology:
         - 鼓泡切開術中機械性損傷
         - TECA-LBO 手術
         - 鼻咽息肉牽拉切除時
-
 clinicalSigns:
   early:
     - 患側嘴唇下垂
@@ -45,21 +45,19 @@ clinicalSigns:
     - 角膜潰瘍
     - 面部肌肉萎縮
     - 進食困難
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
-      notes: "顏面神經功能評估——眨眼反射、嘴唇張力、耳朵活動度。區分上運動神經元 vs 下運動神經元面癱"
+      notes: 顏面神經功能評估——眨眼反射、嘴唇張力、耳朵活動度。區分上運動神經元 vs 下運動神經元面癱
     - name: Schirmer 淚液試驗
-      notes: "患側淚液量評估。顏面神經損傷可導致淚液分泌減少（KCS）"
+      notes: 患側淚液量評估。顏面神經損傷可導致淚液分泌減少（KCS）
     - name: 中耳影像學
-      notes: "CT/MRI 評估中耳病變與顏面神經管狀態"
+      notes: CT/MRI 評估中耳病變與顏面神經管狀態
   differentialDiagnoses:
     - 特發性顏面神經麻痺
     - 甲狀腺功能低下相關面癱
     - 腦幹疾病
     - 顏面神經腫瘤
-
 treatment:
   medical:
     - 治療原發中耳疾病（抗生素、手術）
@@ -70,19 +68,42 @@ treatment:
   surgical:
     - 中耳病灶清除（VBO 或 TECA-LBO）
     - 永久性面癱合併嚴重角膜病變——永久性瞼裂縫合
-
 prognosis:
-  general: "中耳炎相關面癱——治療原發疾病後約 50-75% 可恢復（數週至數月）。手術相關面癱多為暫時性（2-4 週恢復）。永久性面癱需終生眼部護理。"
-
+  general: 中耳炎相關面癱——治療原發疾病後約 50-75% 可恢復（數週至數月）。手術相關面癱多為暫時性（2-4 週恢復）。永久性面癱需終生眼部護理。
 prevention:
   - 積極治療中耳炎
   - 手術中謹慎操作保護顏面神經
   - 術後密切監測顏面神經功能
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of otolaryngology - head &amp; neck surgery = Le Journal d'oto-rhino-laryngologie et de chirurgie cervico-faciale"
+  - sourceOrg: >-
+      Journal of otolaryngology - head &amp; neck surgery = Le Journal d'oto-rhino-laryngologie et de chirurgie
+      cervico-faciale
     title: Safety of transtympanic application of probiotics in a chinchilla animal model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5700520/
     type: research
-    pmid: "29166927"
+    pmid: '29166927'
+associatedSymptoms:
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 耳炎相關顏面神經損傷 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dysphagia 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 顏面神經功能評估——眨眼反射、嘴唇張力、耳朵活動度。區分上運動神經元 vs 下運動神經元面癱
+        - name: Schirmer 淚液試驗
+          notes: 患側淚液量評估。顏面神經損傷可導致淚液分泌減少（KCS）
+        - name: 中耳影像學
+          notes: CT/MRI 評估中耳病變與顏面神經管狀態
+ddxSource: auto-generated

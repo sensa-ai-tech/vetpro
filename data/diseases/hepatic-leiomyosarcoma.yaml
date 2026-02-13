@@ -3,13 +3,15 @@ nameEn: Hepatic Leiomyosarcoma
 nameZh: 肝臟平滑肌肉瘤
 bodySystem: oncology
 description: 肝臟平滑肌肉瘤是起源於肝臟內平滑肌組織（血管壁或膽管壁）的罕見惡性間葉腫瘤。惡性度高，可局部侵犯並遠端轉移。
-
 aliases:
-  - { alias: 肝平滑肌肉瘤, language: zh }
-  - { alias: 肝臟間葉性惡性腫瘤, language: zh }
-  - { alias: Liver Leiomyosarcoma, language: en }
-  - { alias: Hepatic Smooth Muscle Sarcoma, language: en }
-
+  - alias: 肝平滑肌肉瘤
+    language: zh
+  - alias: 肝臟間葉性惡性腫瘤
+    language: zh
+  - alias: Liver Leiomyosarcoma
+    language: en
+  - alias: Hepatic Smooth Muscle Sarcoma
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓肝臟平滑肌肉瘤文獻報告極少。
-
 etiology:
   categories:
     - name: 腫瘤來源
@@ -33,7 +34,6 @@ etiology:
         - 免疫組化 α-smooth muscle actin 和 desmin 陽性
         - 可局部浸潤和血行性轉移
         - 需與其他梭形細胞腫瘤鑑別
-
 clinicalSigns:
   early:
     - 非特異性症狀
@@ -46,19 +46,17 @@ clinicalSigns:
     - 嘔吐
     - 黃疸（壓迫膽管時）
     - 腫瘤破裂可致腹腔出血
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "肝臟腫塊，回音性可能不均質。評估腫瘤大小、侵犯範圍及是否有腹腔轉移。"
+      notes: 肝臟腫塊，回音性可能不均質。評估腫瘤大小、侵犯範圍及是否有腹腔轉移。
     - name: 組織病理學
-      notes: "確診需活檢或手術後組織病理。免疫組化染色（α-SMA、desmin、vimentin）區分腫瘤類型。"
+      notes: 確診需活檢或手術後組織病理。免疫組化染色（α-SMA、desmin、vimentin）區分腫瘤類型。
   differentialDiagnoses:
     - 肝血管肉瘤 (Hemangiosarcoma)
     - 肝細胞癌
     - 膽管細胞癌
     - 其他間葉性腫瘤（纖維肉瘤）
-
 treatment:
   medical:
     - 化療效果資料有限，可嘗試 doxorubicin 為基礎方案
@@ -67,10 +65,38 @@ treatment:
     - 肝葉切除術（腫瘤限於單一肝葉時的首選治療）
     - 術後評估是否需要輔助化療
     - 已有轉移者手術預後差
-
 prognosis:
-  general: "預後謹慎至不良。手術完整切除邊緣清淨者預後較佳，但復發與轉移風險仍存在。確診時已有轉移者預後極差。因腫瘤罕見，大規模生存資料有限。"
-
+  general: 預後謹慎至不良。手術完整切除邊緣清淨者預後較佳，但復發與轉移風險仍存在。確診時已有轉移者預後極差。因腫瘤罕見，大規模生存資料有限。
 prevention:
   - 無已知預防措施
   - 老年犬定期腹部超音波有助早期發現
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肝臟平滑肌肉瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - abdominal-distension 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 肝臟腫塊，回音性可能不均質。評估腫瘤大小、侵犯範圍及是否有腹腔轉移。
+        - name: 組織病理學
+          notes: 確診需活檢或手術後組織病理。免疫組化染色（α-SMA、desmin、vimentin）區分腫瘤類型。
+ddxSource: auto-generated

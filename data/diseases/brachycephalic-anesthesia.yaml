@@ -3,13 +3,15 @@ nameEn: Brachycephalic Anesthesia
 nameZh: 短鼻犬種麻醉
 bodySystem: respiratory
 description: 針對法國鬥牛犬、英國鬥牛犬、巴哥犬、波士頓梗等短頭顱犬種的麻醉管理。這些品種因上呼吸道解剖異常(BOAS)導致麻醉風險顯著增加,需要特殊的術前評估和圍手術期照護。
-
 aliases:
-  - { alias: 短頭顱犬種麻醉, language: zh }
-  - { alias: 短吻犬麻醉, language: zh }
-  - { alias: Brachycephalic Syndrome Anesthesia, language: en }
-  - { alias: BOAS Anesthesia Management, language: en }
-
+  - alias: 短頭顱犬種麻醉
+    language: zh
+  - alias: 短吻犬麻醉
+    language: zh
+  - alias: Brachycephalic Syndrome Anesthesia
+    language: en
+  - alias: BOAS Anesthesia Management
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 波斯貓、異國短毛貓也有短頭顱特徵,但麻醉風險較犬種低
-
 etiology:
   categories:
     - name: 解剖異常
@@ -38,7 +39,6 @@ etiology:
         - 肥胖(BMI >7/9)
         - 炎熱天氣或緊迫狀態
         - 上呼吸道手術(軟顎切除、鼻孔擴大術)
-
 clinicalSigns:
   early:
     - 術前喘鳴、運動不耐、打鼾
@@ -48,39 +48,36 @@ clinicalSigns:
     - 順利誘導後維持期相對穩定
     - 拔管後可能快速惡化(軟組織腫脹)
     - 術後24小時內仍有呼吸道阻塞風險
-
 diagnosis:
   primaryTests:
-    - name: "術前BOAS評分"
-      notes: "運動耐受性、呼吸聲音、發紺史評估嚴重度"
+    - name: 術前BOAS評分
+      notes: 運動耐受性、呼吸聲音、發紺史評估嚴重度
     - name: 胸部X光
-      notes: "評估是否有吸入性肺炎或肺水腫"
+      notes: 評估是否有吸入性肺炎或肺水腫
     - name: 喉鏡檢查
-      notes: "麻醉下評估軟顎長度、喉囊狀況"
+      notes: 麻醉下評估軟顎長度、喉囊狀況
     - name: SpO2持續監測
-      notes: "維持>95%,低於92%立即介入"
+      notes: 維持>95%,低於92%立即介入
     - name: 呼氣末CO2
-      notes: "EtCO2 >55 mmHg提示通氣不足"
+      notes: EtCO2 >55 mmHg提示通氣不足
   differentialDiagnoses:
     - 單純BOAS未合併其他系統疾病
     - BOAS合併心臟病(肺動脈高壓)
     - BOAS合併胃食道逆流和吸入性肺炎
-
 treatment:
   medical:
-    - "術前準備:禁食8-12小時,術前30分鐘Maropitant 1 mg/kg SC(減少嘔吐)"
-    - "術前給氧:100% O2流鼻導管至少10分鐘"
-    - "誘導藥物:Propofol 4-6 mg/kg IV緩慢推注(避免呼吸停止)"
-    - "立即氣管插管:使用適當大小氣管內管(可能需比預期小1-2號),充氣袖帶確保密閉"
-    - "維持麻醉:Isoflurane或Sevoflurane最低有效濃度(0.8-1.2%)"
-    - "延遲拔管:患者完全清醒有吞嚥反射後才拔管,持續供氧"
-    - "術後監測:至少24小時住院觀察,SpO2持續監測"
-    - "緊急處置:若拔管後呼吸窘迫,立即重新插管或氣管切開"
-    - "抗發炎:Dexamethasone 0.1-0.2 mg/kg IV減少上呼吸道腫脹"
-
+    - 術前準備:禁食8-12小時,術前30分鐘Maropitant 1 mg/kg SC(減少嘔吐)
+    - 術前給氧:100% O2流鼻導管至少10分鐘
+    - 誘導藥物:Propofol 4-6 mg/kg IV緩慢推注(避免呼吸停止)
+    - 立即氣管插管:使用適當大小氣管內管(可能需比預期小1-2號),充氣袖帶確保密閉
+    - 維持麻醉:Isoflurane或Sevoflurane最低有效濃度(0.8-1.2%)
+    - 延遲拔管:患者完全清醒有吞嚥反射後才拔管,持續供氧
+    - 術後監測:至少24小時住院觀察,SpO2持續監測
+    - 緊急處置:若拔管後呼吸窘迫,立即重新插管或氣管切開
+    - 抗發炎:Dexamethasone 0.1-0.2 mg/kg IV減少上呼吸道腫脹
 prognosis:
-  general: "麻醉相關死亡率約0.5-1.2%(一般品種<0.1%)。最危險時期為拔管後4小時內,約70%嚴重併發症發生於此時。若能延遲拔管至完全清醒並提供術後24小時監測,死亡率可降低至<0.3%。術前BOAS評分高(嚴重臨床症狀)、肥胖、年齡>6歲為預後不良因子。接受上呼吸道矯正手術的患者長期預後良好,90%症狀顯著改善。"
-
+  general: >-
+    麻醉相關死亡率約0.5-1.2%(一般品種<0.1%)。最危險時期為拔管後4小時內,約70%嚴重併發症發生於此時。若能延遲拔管至完全清醒並提供術後24小時監測,死亡率可降低至<0.3%。術前BOAS評分高(嚴重臨床症狀)、肥胖、年齡>6歲為預後不良因子。接受上呼吸道矯正手術的患者長期預後良好,90%症狀顯著改善。
 prevention:
   - 術前體重管理(肥胖者延期非緊急手術直到減重)
   - 避免炎熱天氣手術,提供涼爽環境
@@ -92,31 +89,63 @@ prevention:
   - 術後持續供氧和監測至少4-6小時
   - 高風險患者(BOAS評分高、肥胖、老年)考慮轉診專科
   - 客戶衛教:建議考慮BOAS矯正手術降低長期風險
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
     title: Clinical review of high-flow nasal oxygen therapy in human and veterinary patients.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10027015/
     type: review
-    pmid: "36950541"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Consequences and Management of Canine Brachycephaly in Veterinary Practice: Perspectives from Australian Veterinarians and Veterinary Specialists."
+    pmid: '36950541'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Consequences and Management of Canine Brachycephaly in Veterinary Practice: Perspectives from Australian
+      Veterinarians and Veterinary Specialists.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6356869/
     type: review
-    pmid: "30577619"
+    pmid: '30577619'
   - sourceOrg: Frontiers in veterinary science
-    title: "Comparison of etiology and outcome of dogs undergoing cardiopulmonary resuscitation with different conformation: the Shepherd versus the Bulldog."
+    title: >-
+      Comparison of etiology and outcome of dogs undergoing cardiopulmonary resuscitation with different conformation:
+      the Shepherd versus the Bulldog.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12425984/
     type: research
-    pmid: "40948617"
+    pmid: '40948617'
   - sourceOrg: Frontiers in veterinary science
     title: Normal variation of clinical mobility of the mandibular symphysis in cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10910029/
     type: research
-    pmid: "38440387"
+    pmid: '38440387'
   - sourceOrg: Frontiers in veterinary science
     title: Normal variation of clinical mobility of the mandibular symphysis in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10687424/
     type: research
-    pmid: "38033640"
+    pmid: '38033640'
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: stertor-stridor
+    frequency: common
+  - symptomId: seizures
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 短鼻犬種麻醉 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - stertor-stridor 相關症狀
+        - seizures 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 術前BOAS評分
+          notes: 運動耐受性、呼吸聲音、發紺史評估嚴重度
+        - name: 胸部X光
+          notes: 評估是否有吸入性肺炎或肺水腫
+        - name: 喉鏡檢查
+          notes: 麻醉下評估軟顎長度、喉囊狀況
+ddxSource: auto-generated

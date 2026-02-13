@@ -3,11 +3,11 @@ nameEn: Extraskeletal Osteosarcoma
 nameZh: Extraskeletal Osteosarcoma
 bodySystem: oncology
 description: 腫瘤性疾病,需完整診斷分期並制定多模式治療計劃。預後取決於腫瘤類型、分期與治療反應。
-
 aliases:
-  - { alias: Extraskeletal Osteosarcoma, language: zh }
-  - { alias: Extraskeletal Osteosarcoma, language: en }
-
+  - alias: Extraskeletal Osteosarcoma
+    language: zh
+  - alias: Extraskeletal Osteosarcoma
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 遺傳易感性
       examples:
         - 環境因子
         - 病毒感染
-
 clinicalSigns:
   early:
     - 局部腫塊
@@ -32,56 +30,74 @@ clinicalSigns:
   progressive:
     - 腫瘤增大
     - 轉移徵象
-
 diagnosis:
   primaryTests:
     - name: 細針抽吸細胞學
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: 組織切片病理學
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 化療(依腫瘤類型選擇方案)
     - 標靶治療
   surgical:
     - name: 手術切除為首選(需評估切除邊緣)
-      notes: "依病況評估"
-
+      notes: 依病況評估
 prognosis:
-  general: "預後高度變異,取決於腫瘤類型、分級、分期與治療方式。早期診斷與積極治療可延長存活期。"
-
+  general: 預後高度變異,取決於腫瘤類型、分級、分期與治療方式。早期診斷與積極治療可延長存活期。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: Veterinary medicine and science
-    title: "Primary Meningeal Extraskeletal Osteosarcoma in a Domestic Shorthaired Cat: Case Report and Review of Comparative Pathology."
+    title: >-
+      Primary Meningeal Extraskeletal Osteosarcoma in a Domestic Shorthaired Cat: Case Report and Review of Comparative
+      Pathology.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12895088/
     type: review
-    pmid: "41674146"
+    pmid: '41674146'
   - sourceOrg: Brazilian journal of veterinary medicine
-    title: Histopathological and immunohistochemical analysis of a suspected extraskeletal osteosarcoma in a rabbit (Oryctolagus cuniculus).
+    title: >-
+      Histopathological and immunohistochemical analysis of a suspected extraskeletal osteosarcoma in a rabbit
+      (Oryctolagus cuniculus).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11469577/
     type: case-report
-    pmid: "39399861"
+    pmid: '39399861'
   - sourceOrg: The Journal of veterinary medical science
     title: Intraocular extraskeletal osteosarcoma in a rabbit (Oryctolagus cuniculus).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7468059/
     type: case-report
-    pmid: "32612011"
+    pmid: '32612011'
   - sourceOrg: Journal of toxicologic pathology
     title: An extraskeletal osteosarcoma in the auricle of a Wistar Hannover rat.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6682555/
     type: case-report
-    pmid: "31404367"
+    pmid: '31404367'
   - sourceOrg: Veterinary sciences
-    title: "Case Series: Computed Tomography Features of Extraskeletal Osteosarcoma in Six Dogs."
+    title: 'Case Series: Computed Tomography Features of Extraskeletal Osteosarcoma in Six Dogs.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11209523/
     type: research
-    pmid: "38922029"
+    pmid: '38922029'
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: Extraskeletal Osteosarcoma 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 細針抽吸細胞學
+          notes: 需詳細評估
+        - name: 組織切片病理學
+          notes: 協助確診
+ddxSource: auto-generated

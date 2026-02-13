@@ -3,12 +3,13 @@ nameEn: Syndrome of Inappropriate Antidiuretic Hormone
 nameZh: 抗利尿激素分泌不當症候群
 bodySystem: endocrine
 description: 抗利尿激素分泌不當症候群（SIADH）為 ADH（vasopressin）在缺乏正常生理刺激下持續過量分泌，導致水分滯留、稀釋性低血鈉與血漿低滲透壓。犬貓極罕見。可能原因包括腦部疾病、肺臟疾病、藥物與副腫瘤症候群。為排除性診斷。
-
 aliases:
-  - { alias: SIADH, language: en }
-  - { alias: ADH 分泌不當症候群, language: zh }
-  - { alias: SIAD, language: en }
-
+  - alias: SIADH
+    language: en
+  - alias: ADH 分泌不當症候群
+    language: zh
+  - alias: SIAD
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻 SIADH 極罕見。偶有個案報告。
-
 etiology:
   categories:
     - name: 可能原因
@@ -30,7 +30,6 @@ etiology:
         - ADH 在低血漿滲透壓下仍持續分泌
         - 水分滯留→稀釋性低血鈉
         - 尿液濃縮不適當（尿液滲透壓 >100 mOsm/kg 且血漿低滲）
-
 clinicalSigns:
   early:
     - 輕度嗜睡
@@ -41,14 +40,12 @@ clinicalSigns:
     - 神經症狀（癲癇、定向障礙、昏迷）——嚴重低血鈉時
     - 肌肉震顫
     - 無水腫（與心衰、腎衰不同）
-
 diagnosis:
   primaryTests:
     - name: 血液生化與滲透壓
       notes: 低血鈉（<135 mEq/L）。低血漿滲透壓（<280 mOsm/kg）。尿液滲透壓不適當地高（>100 mOsm/kg，通常 >300）。尿鈉 >30 mEq/L。
     - name: 排除性診斷
       notes: 排除腎衰竭、肝硬化、心衰竭、甲狀腺功能低下、腎上腺功能低下等其他低血鈉原因。腎上腺功能正常（ACTH stimulation test）。腎功能正常。
-
 treatment:
   principles:
     - 治療基礎原因
@@ -57,45 +54,87 @@ treatment:
   general:
     - 治療基礎疾病（腦部腫瘤、肺炎等）
     - 限制水分攝取（每日體重的 40-60 mL/kg）
-    - "嚴重症狀性低血鈉：3% NaCl 緩慢輸注（不超過 0.5-1 mEq/L/hr，避免 osmotic demyelination）"
-    - "Furosemide 1-2 mg/kg IV（增加游離水排泄）"
+    - 嚴重症狀性低血鈉：3% NaCl 緩慢輸注（不超過 0.5-1 mEq/L/hr，避免 osmotic demyelination）
+    - Furosemide 1-2 mg/kg IV（增加游離水排泄）
     - 慢性 SIADH 可考慮 Tolvaptan（vasopressin V2 receptor antagonist，犬貓使用經驗有限）
     - 監測電解質與血漿滲透壓
-
-prognosis: 預後取決於基礎原因。可治療的基礎疾病移除後 SIADH 可能恢復。副腫瘤性 SIADH 預後取決於腫瘤。特發性 SIADH 長期管理以限水為主。嚴重急性低血鈉（<120 mEq/L）可致命。低血鈉矯正過快可致 osmotic demyelination syndrome。
-
-
+prognosis: >-
+  預後取決於基礎原因。可治療的基礎疾病移除後 SIADH 可能恢復。副腫瘤性 SIADH 預後取決於腫瘤。特發性 SIADH 長期管理以限水為主。嚴重急性低血鈉（<120 mEq/L）可致命。低血鈉矯正過快可致 osmotic
+  demyelination syndrome。
 guidelineRefs:
   - sourceOrg: Journal of clinical medicine
     title: Pathophysiology of Drug-Induced Hyponatremia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9572915/
     type: review
-    pmid: "36233678"
+    pmid: '36233678'
     relevance: primary
   - sourceOrg: Internal medicine (Tokyo, Japan)
-    title: Early Relowering of Serum Sodium Concentration Overcomes Disturbances in Consciousness during Hyponatremia Overcorrection and Prevents Osmotic Demyelination Syndrome.
+    title: >-
+      Early Relowering of Serum Sodium Concentration Overcomes Disturbances in Consciousness during Hyponatremia
+      Overcorrection and Prevents Osmotic Demyelination Syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6148173/
     type: case-report
-    pmid: "30111674"
+    pmid: '30111674'
     relevance: supporting
   - sourceOrg: Biomedicines
     title: Aldosterone Contributes to Vasopressin Escape through Changes in Water and Urea Transport.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10376660/
     type: research
-    pmid: "37509484"
+    pmid: '37509484'
     relevance: supporting
   - sourceOrg: Molecular and cellular endocrinology
     title: Hyponatremia elicits gene expression changes driving osteoclast differentiation and functions.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10586021/
     type: research
-    pmid: "35843385"
+    pmid: '35843385'
     relevance: supporting
   - sourceOrg: PeerJ
     title: Effects of arginine vasopressin on the urine proteome in rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5444365/
     type: research
-    pmid: "28560103"
+    pmid: '28560103'
     relevance: supporting
 pubmedQueries:
-  - query: '"SIADH" OR "syndrome of inappropriate antidiuretic hormone" AND (veterinary OR canine OR feline) AND ("hyponatremia" OR "treatment")'
+  - query: >-
+      "SIADH" OR "syndrome of inappropriate antidiuretic hormone" AND (veterinary OR canine OR feline) AND
+      ("hyponatremia" OR "treatment")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 抗利尿激素分泌不當症候群 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - trembling 相關症狀
+        - weakness 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液生化與滲透壓
+          notes: 低血鈉（<135 mEq/L）。低血漿滲透壓（<280 mOsm/kg）。尿液滲透壓不適當地高（>100 mOsm/kg，通常 >300）。尿鈉 >30 mEq/L。
+        - name: 排除性診斷
+          notes: 排除腎衰竭、肝硬化、心衰竭、甲狀腺功能低下、腎上腺功能低下等其他低血鈉原因。腎上腺功能正常（ACTH stimulation test）。腎功能正常。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎原因
+        - 控制水分攝取
+        - 嚴重低血鈉需緊急處理
+ddxSource: auto-generated

@@ -3,11 +3,11 @@ nameEn: Third Eyelid Tumor
 nameZh: Third Eyelid Tumor
 bodySystem: oncology
 description: 腫瘤性疾病,可能為良性或惡性。需細針抽吸或切片確診,並根據診斷制定治療計劃。
-
 aliases:
-  - { alias: Third Eyelid Tumor, language: zh }
-  - { alias: Third Eyelid Tumor, language: en }
-
+  - alias: Third Eyelid Tumor
+    language: zh
+  - alias: Third Eyelid Tumor
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 遺傳易感性
       examples:
         - 環境因子
         - 病毒感染
-
 clinicalSigns:
   early:
     - 局部腫塊
@@ -32,55 +30,93 @@ clinicalSigns:
   progressive:
     - 腫瘤增大
     - 轉移徵象
-
 diagnosis:
   primaryTests:
     - name: 細針抽吸細胞學
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: 組織切片病理學
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 化療(依腫瘤類型選擇方案)
     - 標靶治療
   surgical:
     - name: 手術切除為首選(需評估切除邊緣)
-      notes: "依病況評估"
-
+      notes: 依病況評估
 prognosis:
-  general: "預後高度變異,取決於腫瘤類型、分級、分期與治療方式。早期診斷與積極治療可延長存活期。"
-
+  general: 預後高度變異,取決於腫瘤類型、分級、分期與治療方式。早期診斷與積極治療可延長存活期。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
-    title: Clinicopathologic Features, Surgical Treatment, and Pathological Characterization of Canine Dacryops with Different Localization.
+    title: >-
+      Clinicopathologic Features, Surgical Treatment, and Pathological Characterization of Canine Dacryops with
+      Different Localization.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12389879/
     type: case-report
-    pmid: "40872659"
+    pmid: '40872659'
     relevance: supporting
   - sourceOrg: Frontiers in veterinary science
-    title: "Epidemiology of ocular pathology in domestic animals: insights from a 20-year retrospective study."
+    title: 'Epidemiology of ocular pathology in domestic animals: insights from a 20-year retrospective study.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12812750/
     type: research
-    pmid: "41560857"
+    pmid: '41560857'
     relevance: supporting
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Conjunctival Extramedullary Plasmacytoma in Dogs and a Cat: Clinical Characteristics and Histopathological Findings."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Conjunctival Extramedullary Plasmacytoma in Dogs and a Cat: Clinical Characteristics and Histopathological
+      Findings.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9653729/
     type: research
-    pmid: "36359139"
+    pmid: '36359139'
     relevance: supporting
   - sourceOrg: Journal of ophthalmology
     title: Evaluating the Functionality of Conjunctiva Using a Rabbit Dry Eye Model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4818808/
     type: research
-    pmid: "27088007"
+    pmid: '27088007'
     relevance: supporting
+diagnosticAlgorithm:
+  title: 眼瞼腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估眼瞼腫塊特徵，犬以良性瞼板腺瘤最常見，貓眼瞼腫瘤多為惡性（鱗狀上皮細胞癌）
+      findings:
+        - 眼瞼邊緣有蒂或寬基底腫塊
+        - 可能伴隨眼部分泌物增加
+        - 腫塊摩擦角膜引起不適
+    - step: 2
+      action: 細胞學檢查
+      details: 進行細針抽吸或印壓細胞學初步評估腫瘤性質
+      findings:
+        - 細胞學初步評估腫瘤類型
+        - 犬常見瞼板腺瘤/黑色素瘤
+        - 貓常見鱗狀上皮細胞癌
+    - step: 3
+      action: 手術切除與組織病理確診
+      details: 手術切除腫塊送組織病理學檢查確認腫瘤類型和切除邊緣
+      findings:
+        - 組織病理學確認腫瘤類型與良惡性
+        - 評估手術切除邊緣是否乾淨
+        - 惡性腫瘤需評估區域淋巴結
+clinicalPearls:
+  - 犬眼瞼腫瘤約75%為良性，但仍建議切片確認
+  - 貓白色眼瞼的鱗狀細胞癌與紫外線密切相關
+  - 眼瞼手術需保留足夠長度避免術後眼瞼閉合不全
+  - 小腫瘤切除比等腫瘤長大再手術容易得多
+monitoringItems:
+  - 手術部位復發
+  - 角膜狀態
+  - 眼瞼閉合功能
+  - 貓：對側眼瞼和鼻鏡的新生病變
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: common
+ddxSource: book

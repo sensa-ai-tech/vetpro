@@ -3,19 +3,20 @@ nameEn: Pug Pigmentary Keratopathy
 nameZh: 巴哥犬色素性角膜病變
 bodySystem: ophthalmology
 description: 巴哥犬色素性角膜病變是該品種因短頭犬種眼部結構問題導致的慢性角膜色素沉著。鼻皺褶摩擦、內翻性眼瞼、暴露性角膜炎及乾眼症均為促發因素。進展性色素覆蓋可導致視力嚴重受損。
-
 aliases:
-  - { alias: 巴哥角膜色素沉著, language: zh }
-  - { alias: 色素性角膜炎, language: zh }
-  - { alias: Pug pigmentary keratitis, language: en }
-  - { alias: Corneal pigmentation in pugs, language: en }
-
+  - alias: 巴哥角膜色素沉著
+    language: zh
+  - alias: 色素性角膜炎
+    language: zh
+  - alias: Pug pigmentary keratitis
+    language: en
+  - alias: Corneal pigmentation in pugs
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 巴哥犬為色素性角膜病變最好發品種。盛行率估計 80% 以上。與內眥贅皮、鼻皺褶摩擦、淚膜不足密切相關。
-
 etiology:
   categories:
     - name: 結構因素
@@ -30,7 +31,6 @@ etiology:
         - 眼瞼內翻
         - 三叉神經角膜分支異常
         - 慢性角膜刺激
-
 clinicalSigns:
   early:
     - 角膜內側邊緣色素沉著
@@ -43,21 +43,19 @@ clinicalSigns:
     - 視力下降
     - 嚴重者角膜完全被色素覆蓋
     - 失明
-
 diagnosis:
   primaryTests:
     - name: 裂隙燈檢查
-      notes: "評估色素沉著範圍、角膜血管新生、眼瞼結構"
+      notes: 評估色素沉著範圍、角膜血管新生、眼瞼結構
     - name: Schirmer 淚液試驗
-      notes: "排除或確認乾眼症。巴哥常伴有淚液不足"
+      notes: 排除或確認乾眼症。巴哥常伴有淚液不足
     - name: 螢光素染色
-      notes: "評估角膜潰瘍。鼻皺褶摩擦區域常有點狀染色"
+      notes: 評估角膜潰瘍。鼻皺褶摩擦區域常有點狀染色
   differentialDiagnoses:
     - Pannus（慢性淺層角膜炎）
     - 角膜營養不良
     - 角膜腫瘤
     - 角膜異物
-
 treatment:
   medical:
     - 局部 Cyclosporine 或 Tacrolimus（減少色素沉著與炎症）
@@ -69,12 +67,35 @@ treatment:
     - 鼻皺褶切除術
     - 角膜表層切除術（嚴重色素沉著時）
     - 眼瞼內翻矯正術
-
 prognosis:
-  general: "積極治療（內眥手術 + 局部免疫抑制劑）可有效控制進展。手術矯正結構問題後色素可能部分消退。需終生局部用藥維持。未治療者色素持續擴展致失明。"
-
+  general: 積極治療（內眥手術 + 局部免疫抑制劑）可有效控制進展。手術矯正結構問題後色素可能部分消退。需終生局部用藥維持。未治療者色素持續擴展致失明。
 prevention:
   - 避免繁殖嚴重短頭與眼突的個體
   - 幼犬期評估眼部結構
   - 鼻皺褶定期清潔
   - 早期使用 Cyclosporine 預防色素擴展
+associatedSymptoms:
+  - symptomId: seizures
+    frequency: common
+  - symptomId: blindness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 巴哥犬色素性角膜病變 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - seizures 相關症狀
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 裂隙燈檢查
+          notes: 評估色素沉著範圍、角膜血管新生、眼瞼結構
+        - name: Schirmer 淚液試驗
+          notes: 排除或確認乾眼症。巴哥常伴有淚液不足
+        - name: 螢光素染色
+          notes: 評估角膜潰瘍。鼻皺褶摩擦區域常有點狀染色
+ddxSource: auto-generated

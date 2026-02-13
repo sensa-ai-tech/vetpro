@@ -3,11 +3,11 @@ nameEn: Prolapsed Gland Third Eyelid
 nameZh: Prolapsed Gland Third Eyelid
 bodySystem: ophthalmology
 description: 眼瞼異常,可能影響角膜健康與眼部功能。部分病例需外科矯正。
-
 aliases:
-  - { alias: Prolapsed Gland Third Eyelid, language: zh }
-  - { alias: Prolapsed Gland Third Eyelid, language: en }
-
+  - alias: Prolapsed Gland Third Eyelid
+    language: zh
+  - alias: Prolapsed Gland Third Eyelid
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 先天性異常
       examples:
         - 外傷
         - 感染
-
 clinicalSigns:
   early:
     - 眼部不適
@@ -32,43 +30,57 @@ clinicalSigns:
   progressive:
     - 視力喪失
     - 眼內壓異常
-
 diagnosis:
   primaryTests:
     - name: 眼科檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: 眼壓測量
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 眼藥水(抗生素或消炎)
     - 止痛藥
   surgical:
     - name: 根據病況可能需手術治療(角膜移植、青光眼閥膜植入、眼球摘除等)
-      notes: "依病況評估"
-
+      notes: 依病況評估
 prognosis:
-  general: "預後取決於疾病類型、嚴重度與治療時機。早期治療可改善預後並保存視力。"
-
+  general: 預後取決於疾病類型、嚴重度與治療時機。早期治療可改善預後並保存視力。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
     title: An Evidence-Based Rapid Review of Surgical Techniques for Correction of Prolapsed Nictitans Glands in Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6163435/
     type: review
-    pmid: "30142957"
+    pmid: '30142957'
     relevance: supporting
   - sourceOrg: Veterinary ophthalmology
-    title: "Keratoconjunctivitis sicca in intact Aksaray Malakli breed dogs: Evaluation of 50 cases."
+    title: 'Keratoconjunctivitis sicca in intact Aksaray Malakli breed dogs: Evaluation of 50 cases.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12488534/
     type: research
-    pmid: "39663691"
+    pmid: '39663691'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: blindness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: Prolapsed Gland Third Eyelid 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 眼科檢查
+          notes: 需詳細評估
+        - name: 眼壓測量
+          notes: 協助確診
+ddxSource: auto-generated

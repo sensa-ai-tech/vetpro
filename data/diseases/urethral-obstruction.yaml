@@ -3,14 +3,17 @@ nameEn: Urethral Obstruction
 nameZh: 尿道阻塞
 bodySystem: renal
 description: 尿道完全或部分阻塞導致無法正常排尿的急診狀態，公貓最常見。完全阻塞超過 24-48 小時可因高血鉀心律不整與腎後性氮質血症致命。
-
 aliases:
-  - { alias: Urethral Blockage, language: en }
-  - { alias: Blocked Cat, language: en }
-  - { alias: UO, language: en }
-  - { alias: 尿道堵塞, language: zh }
-  - { alias: 排尿阻塞, language: zh }
-
+  - alias: Urethral Blockage
+    language: en
+  - alias: Blocked Cat
+    language: en
+  - alias: UO
+    language: en
+  - alias: 尿道堵塞
+    language: zh
+  - alias: 排尿阻塞
+    language: zh
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
@@ -20,7 +23,6 @@ species:
     speciesScientific: Canis lupus familiaris
     prevalence: uncommon
     notes: 公犬較母犬多（尿道經 os penis 處最窄）。常因結石嵌頓（CaOx、urate）。腫瘤性阻塞（TCC）見於老年犬。
-
 etiology:
   categories:
     - name: 貓尿道阻塞
@@ -42,9 +44,10 @@ etiology:
         - 尿管置入後尿道水腫/創傷
         - 手術後狹窄
         - 不適當膀胱沖洗導致結石移位
-
-pathophysiology: 尿道完全阻塞後，尿液無法排出，膀胱壓力持續升高。背壓傳導至腎臟導致腎後性氮質血症（BUN、Creatinine 急速上升）。腎小球濾過率 (GFR) 下降，鉀離子無法排泄導致高血鉀。高血鉀 (>6.5 mEq/L) 嚴重影響心臟傳導系統 — 先出現帳篷狀 T 波 → P 波消失 → QRS 增寬 → 正弦波形 → 心室顫動或心臟停搏。同時出現代謝性酸中毒（氫離子無法排泄），加重高血鉀的心臟毒性。離子化鈣降低進一步加重心肌興奮性。膀胱壁長時間過度膨脹可導致逼尿肌損傷（detrusor atony）。
-
+pathophysiology: >-
+  尿道完全阻塞後，尿液無法排出，膀胱壓力持續升高。背壓傳導至腎臟導致腎後性氮質血症（BUN、Creatinine 急速上升）。腎小球濾過率 (GFR) 下降，鉀離子無法排泄導致高血鉀。高血鉀 (>6.5 mEq/L) 嚴重影響心臟傳導系統
+  — 先出現帳篷狀 T 波 → P 波消失 → QRS 增寬 → 正弦波形 →
+  心室顫動或心臟停搏。同時出現代謝性酸中毒（氫離子無法排泄），加重高血鉀的心臟毒性。離子化鈣降低進一步加重心肌興奮性。膀胱壁長時間過度膨脹可導致逼尿肌損傷（detrusor atony）。
 clinicalSigns:
   early:
     - 反覆進出貓砂盆
@@ -67,25 +70,23 @@ clinicalSigns:
     - 虛弱/倒下
     - 昏迷
     - 心臟停搏/死亡
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
-      notes: "大且硬的膀胱（如球狀）為最重要發現。陰莖/尿道口觀察（栓子外露）。心搏過緩。脫水評估。體溫"
+      notes: 大且硬的膀胱（如球狀）為最重要發現。陰莖/尿道口觀察（栓子外露）。心搏過緩。脫水評估。體溫
     - name: 血液檢查 (STAT)
-      notes: "電解質（K+ 最關鍵！>6.5 mEq/L 危險、>8.0 mEq/L 致命）。BUN/Creatinine（腎後性氮質血症）。iCa（低值加重心毒性）。血氣（代謝性酸中毒）"
+      notes: 電解質（K+ 最關鍵！>6.5 mEq/L 危險、>8.0 mEq/L 致命）。BUN/Creatinine（腎後性氮質血症）。iCa（低值加重心毒性）。血氣（代謝性酸中毒）
     - name: 心電圖 (ECG)
-      notes: "高血鉀 ECG 變化：帳篷狀 T 波 (>6.5) → P 波振幅降低/消失 (>7.0) → QRS 增寬 (>7.5) → 正弦波 (>8.0) → 心室顫動/停搏。指導緊急治療"
+      notes: 高血鉀 ECG 變化：帳篷狀 T 波 (>6.5) → P 波振幅降低/消失 (>7.0) → QRS 增寬 (>7.5) → 正弦波 (>8.0) → 心室顫動/停搏。指導緊急治療
   imaging:
     - name: 腹部 X 光
-      notes: "膀胱極度膨脹。不透射結石偵測（膀胱、尿道）。排除腹腔積液（膀胱破裂）"
+      notes: 膀胱極度膨脹。不透射結石偵測（膀胱、尿道）。排除腹腔積液（膀胱破裂）
     - name: 腹部超音波
-      notes: "膀胱壁狀態。沉渣量。腎盂擴張（背壓）。腹腔游離液評估"
+      notes: 膀胱壁狀態。沉渣量。腎盂擴張（背壓）。腹腔游離液評估
   additional:
     - 尿液分析（解除阻塞後取樣 — 結晶型態、感染評估）
     - 尿液培養
     - 逆行尿道攝影（犬，懷疑結石或腫瘤阻塞時）
-
 treatment:
   principles:
     - 高血鉀為首要致命威脅，必須最先處理
@@ -94,22 +95,22 @@ treatment:
     - 預防再阻塞
   medications:
     - name: 10% Calcium Gluconate
-      dose: "0.5-1.0 mL/kg IV slow (5-10 分鐘)，ECG 監測"
+      dose: 0.5-1.0 mL/kg IV slow (5-10 分鐘)，ECG 監測
       notes: 緊急心肌保護。不降低血鉀但拮抗其心臟毒性。效果持續 20-30 分鐘。K+ >7.0 或 ECG 異常時立即給予
     - name: Regular Insulin + Dextrose
-      dose: "Insulin 0.25-0.5 U/kg IV + 50% Dextrose 1-2 g per unit insulin"
+      dose: Insulin 0.25-0.5 U/kg IV + 50% Dextrose 1-2 g per unit insulin
       notes: 將鉀離子驅入細胞內。效果在 15-30 分鐘內。持續數小時。監測血糖
     - name: Sodium Bicarbonate
-      dose: "1-2 mEq/kg IV slow"
+      dose: 1-2 mEq/kg IV slow
       notes: 矯正嚴重代謝性酸中毒 (pH <7.1)。將鉀驅入細胞內。需血氣監測指導。可能加重低鈣
     - name: Buprenorphine
-      dose: "0.01-0.03 mg/kg IV/IM/buccal"
+      dose: 0.01-0.03 mg/kg IV/IM/buccal
       notes: 止痛。阻塞解除前後均需。貓頰黏膜給藥方便
     - name: Prazosin
-      dose: "0.25-0.5 mg/cat PO BID-TID"
+      dose: 0.25-0.5 mg/cat PO BID-TID
       notes: α1 拮抗劑。降低尿道平滑肌張力。阻塞解除後預防再阻塞。於尿管移除前 24 小時開始
     - name: Maropitant
-      dose: "1 mg/kg SC/IV SID"
+      dose: 1 mg/kg SC/IV SID
       notes: 止吐
   general:
     - 靜脈輸液（0.9% NaCl 首選 — 不含鉀！避免 LRS 於嚴重高血鉀時）
@@ -121,44 +122,119 @@ treatment:
     - 反覆阻塞貓（3 次以上）強烈建議會陰尿道造口術 (PU)
     - 長期環境豐富化與飲食管理（濕食、水攝取增加）
     - Struvite 相關：處方溶石飲食 (Hill's c/d, Royal Canin S/O)
-
-emergencyNotes: 尿道完全阻塞為急診！超過 24-48 小時可致命。到院後立即建立靜脈通路、抽血電解質與 ECG。K+ >7.0 或 ECG 異常時先以 10% calcium gluconate 0.5-1.0 mL/kg IV slow 保護心臟。嚴重心搏過緩 (<60 bpm) 不反應於 atropine 時提示高血鉀嚴重。膀胱破裂時腹腔穿刺可見高鉀高肌酐腹水（腹水 creatinine/血清 creatinine >2:1）。嚴重低體溫需緩慢回溫。
-
-prognosis: 及時解除阻塞並矯正電解質異常後預後良好，住院死亡率約 5-8%。再阻塞率約 15-40%（多數在首次阻塞後 6 個月內）。PU 手術可將再阻塞率降至 <10%。環境豐富化與飲食管理可降低復發。延遲就醫（>48 小時完全阻塞）預後差，可能已發生不可逆腎損傷或心臟停搏。逼尿肌損傷者（長時間過度膨脹）功能恢復可能需數天至數週。
-
+emergencyNotes: >-
+  尿道完全阻塞為急診！超過 24-48 小時可致命。到院後立即建立靜脈通路、抽血電解質與 ECG。K+ >7.0 或 ECG 異常時先以 10% calcium gluconate 0.5-1.0 mL/kg IV slow
+  保護心臟。嚴重心搏過緩 (<60 bpm) 不反應於 atropine 時提示高血鉀嚴重。膀胱破裂時腹腔穿刺可見高鉀高肌酐腹水（腹水 creatinine/血清 creatinine >2:1）。嚴重低體溫需緩慢回溫。
+prognosis: >-
+  及時解除阻塞並矯正電解質異常後預後良好，住院死亡率約 5-8%。再阻塞率約 15-40%（多數在首次阻塞後 6 個月內）。PU 手術可將再阻塞率降至 <10%。環境豐富化與飲食管理可降低復發。延遲就醫（>48
+  小時完全阻塞）預後差，可能已發生不可逆腎損傷或心臟停搏。逼尿肌損傷者（長時間過度膨脹）功能恢復可能需數天至數週。
 guidelineRefs:
   - sourceOrg: Journal of Feline Medicine and Surgery
     title: ISFM consensus guidelines on the management of urethral obstruction in male cats.
     url: https://pubmed.ncbi.nlm.nih.gov/33100164/
     type: consensus
-    pmid: "33100164"
+    pmid: '33100164'
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
     title: Predictors of short-term outcome in cats with urethral obstruction.
     url: https://pubmed.ncbi.nlm.nih.gov/18691383/
     type: research
-    pmid: "18691383"
+    pmid: '18691383'
   - sourceOrg: Journal of the American Veterinary Medical Association
     title: Recurrence rate and long-term outcome after perineal urethrostomy in cats with urethral obstruction.
     url: https://pubmed.ncbi.nlm.nih.gov/22332622/
     type: research
-    pmid: "22332622"
+    pmid: '22332622'
   - sourceOrg: Journal of feline medicine and surgery
     title: 2025 iCatCare consensus guidelines on the diagnosis and management of lower urinary tract diseases in cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11816079/
     type: guideline
-    pmid: "39935081"
+    pmid: '39935081'
     relevance: primary
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: "In-hospital medical management of feline urethral obstruction: A review of recent clinical research."
+    title: 'In-hospital medical management of feline urethral obstruction: A review of recent clinical research.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7236633/
     type: review
-    pmid: "32675811"
+    pmid: '32675811'
     relevance: supporting
 pubmedQueries:
   - query: '"urethral obstruction" AND (cat OR feline) AND ("management" OR "outcome" OR "perineal urethrostomy")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "URN"
-  sectionTitle: "Treatment: The urethral obstruction"
+  chapter: URN
+  sectionTitle: 'Treatment: The urethral obstruction'
   pdfPage: 1562
+diagnosticAlgorithm:
+  title: 尿道阻塞 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 緊急評估排尿狀態與全身狀態
+      findings:
+        - 多次嘗試排尿但無尿
+        - 膀胱觸診極度膨大且疼痛
+        - 嘔吐與嗜睡
+        - 公貓最常見
+    - step: 2
+      action: 血液急診檢查
+      details: 電解質與腎功能
+      findings:
+        - 高血鉀（致命風險）
+        - 代謝性酸中毒
+        - 氮血症
+        - 心電圖監測
+    - step: 3
+      action: 導尿解除阻塞
+      details: 尿道導管置放
+      findings:
+        - 鎮靜後尿道導管置放
+        - 沖洗尿道塞子
+        - 留置導管24-72小時
+        - 收集尿液分析
+    - step: 4
+      action: 病因分析與預防
+      details: 結石分析與復發預防
+      findings:
+        - 尿液結晶分析
+        - 結石成分分析
+        - 飲食調整（處方飼料）
+        - 嚴重復發考慮會陰尿道造口術
+clinicalPearls:
+  - 公貓尿道阻塞是急診，不能等待
+  - 先穩定高血鉀再嘗試導尿
+  - Calcium gluconate保護心臟但不降低血鉀
+  - 導尿後24-48小時可能出現「阻塞後利尿」
+  - PU手術改變尿道解剖，不治療潛在病因
+monitoringItems:
+  - ECG（術中和術後）
+  - 尿量（目標>2 mL/kg/h）
+  - 電解質（q4-8h初期）
+  - BUN/Creatinine
+  - 移除導尿管後排尿情況
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: oliguria-anuria
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+  - symptomId: hypothermia-sign
+    frequency: common
+associatedLabFindings:
+  - labId: hyperkalaemia
+    frequency: common
+  - labId: creatinine-elevated
+    frequency: common
+ddxSource: book

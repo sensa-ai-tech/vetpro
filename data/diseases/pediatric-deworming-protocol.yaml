@@ -3,12 +3,13 @@ nameEn: Pediatric Deworming Protocol
 nameZh: 幼年期驅蟲計畫
 bodySystem: other
 description: 犬貓幼年期內外寄生蟲的預防及治療計畫。幼犬貓易經胎盤、乳汁或環境感染寄生蟲，定期驅蟲是健康成長的基礎。
-
 aliases:
-  - { alias: 幼犬驅蟲時程, language: zh }
-  - { alias: Puppy Deworming Schedule, language: en }
-  - { alias: Kitten Parasite Control, language: en }
-
+  - alias: 幼犬驅蟲時程
+    language: zh
+  - alias: Puppy Deworming Schedule
+    language: en
+  - alias: Kitten Parasite Control
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 蛔蟲主要經乳汁傳染
-
 etiology:
   categories:
     - name: 常見內寄生蟲
@@ -35,7 +35,6 @@ etiology:
         - 壁蝨(Tick)
         - 耳疥蟲(Ear mite)
         - 疥癬蟲(Sarcoptic mange)
-
 clinicalSigns:
   early:
     - 腹部膨大("大肚子")
@@ -47,23 +46,21 @@ clinicalSigns:
     - 腸阻塞(大量蛔蟲)
     - 營養不良、消瘦
     - 脫肛(嚴重寄生蟲感染)
-
 diagnosis:
   primaryTests:
     - name: 糞便檢查
-      notes: "直接塗片、浮游法檢查蟲卵"
+      notes: 直接塗片、浮游法檢查蟲卵
     - name: 糞便抗原檢測
-      notes: "Giardia快篩"
+      notes: Giardia快篩
     - name: 血液檢查
-      notes: "評估貧血程度(鉤蟲)"
+      notes: 評估貧血程度(鉤蟲)
     - name: 皮膚刮取
-      notes: "外寄生蟲診斷"
+      notes: 外寄生蟲診斷
   differentialDiagnoses:
     - 蛔蟲症
     - 鉤蟲症
     - 球蟲症
     - 梨形鞭毛蟲症
-
 treatment:
   medical:
     - 幼犬驅蟲時程
@@ -79,10 +76,8 @@ treatment:
     - 特殊寄生蟲治療
     - 球蟲：Sulfadimethoxine 50 mg/kg首劑，之後25 mg/kg q24h連續10-14天
     - Giardia：Metronidazole 25 mg/kg q12h連續5-7天
-
 prognosis:
-  general: "定期驅蟲預後良好；嚴重感染可能導致生長遲緩或死亡"
-
+  general: 定期驅蟲預後良好；嚴重感染可能導致生長遲緩或死亡
 prevention:
   - 母體產前驅蟲
   - 幼犬貓2週齡開始定期驅蟲
@@ -90,12 +85,40 @@ prevention:
   - 避免接觸受污染環境
   - 成年後持續每月預防性驅蟲
   - 多隻飼養時同時驅蟲
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of clinical and diagnostic research : JCDR"
-    title: "Hymenolepis diminuta Infection in a School Going Child: First Case Report from Uttarakhand."
+  - sourceOrg: 'Journal of clinical and diagnostic research : JCDR'
+    title: 'Hymenolepis diminuta Infection in a School Going Child: First Case Report from Uttarakhand.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5071938/
     type: case-report
-    pmid: "27790438"
+    pmid: '27790438'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: abdominal-distension
+    frequency: common
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 幼年期驅蟲計畫 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - abdominal-distension 相關症狀
+        - weight-loss 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便檢查
+          notes: 直接塗片、浮游法檢查蟲卵
+        - name: 糞便抗原檢測
+          notes: Giardia快篩
+        - name: 血液檢查
+          notes: 評估貧血程度(鉤蟲)
+ddxSource: auto-generated

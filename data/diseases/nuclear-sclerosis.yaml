@@ -3,13 +3,15 @@ nameEn: Nuclear Sclerosis
 nameZh: 水晶體核硬化
 bodySystem: ophthalmology
 description: 水晶體核硬化（lenticular sclerosis）是犬貓的正常老化現象，因水晶體核心（nucleus）纖維隨年齡壓縮硬化而產生灰藍色混濁外觀。此為非病理性變化，不影響視力。臨床上需與白內障鑑別，因兩者外觀相似但預後與治療完全不同。
-
 aliases:
-  - { alias: 水晶體硬化, language: zh }
-  - { alias: 老年性水晶體混濁, language: zh }
-  - { alias: Lenticular Sclerosis, language: en }
-  - { alias: Senile Nuclear Sclerosis, language: en }
-
+  - alias: 水晶體硬化
+    language: zh
+  - alias: 老年性水晶體混濁
+    language: zh
+  - alias: Lenticular Sclerosis
+    language: en
+  - alias: Senile Nuclear Sclerosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓隻同樣會發生。通常在 8-10 歲以上出現。臨床意義與犬隻相同。
-
 etiology:
   categories:
     - name: 老化過程
@@ -40,7 +41,6 @@ etiology:
         - 進展緩慢且可預測
         - 不影響視力
         - 所有老年犬貓均會發生
-
 clinicalSigns:
   early:
     - 中年犬貓眼睛出現輕微灰藍色混濁
@@ -56,23 +56,21 @@ clinicalSigns:
     - 仍不影響視力
     - 不會進展為白內障
     - 畜主需教育此為正常老化
-
 diagnosis:
   primaryTests:
     - name: 直接眼底鏡/裂隙燈檢查
-      notes: "關鍵鑑別要點：散瞳後使用直接眼底鏡，核硬化仍可清楚觀察到眼底反射（tapetal reflection）。白內障則阻擋眼底反射。裂隙燈可見水晶體核心密度增加但皮質透明。"
+      notes: 關鍵鑑別要點：散瞳後使用直接眼底鏡，核硬化仍可清楚觀察到眼底反射（tapetal reflection）。白內障則阻擋眼底反射。裂隙燈可見水晶體核心密度增加但皮質透明。
     - name: 逆行照明法
-      notes: "使用直接眼底鏡在約 50 cm 距離觀察瞳孔反射。核硬化：眼底反射完整，瞳孔呈均勻橘紅色。白內障：眼底反射中可見暗影（不透明區域）。"
+      notes: 使用直接眼底鏡在約 50 cm 距離觀察瞳孔反射。核硬化：眼底反射完整，瞳孔呈均勻橘紅色。白內障：眼底反射中可見暗影（不透明區域）。
   imaging:
     - name: 眼部超音波
-      notes: "通常不需要。核硬化不會在超音波上顯示異常。可用於排除併發的水晶體後方病變。"
+      notes: 通常不需要。核硬化不會在超音波上顯示異常。可用於排除併發的水晶體後方病變。
     - name: 無其他影像需要
-      notes: "臨床檢查即可確診，不需要進一步影像學。"
+      notes: 臨床檢查即可確診，不需要進一步影像學。
   additional:
     - 威脅反射與障礙物測試（確認視力正常）
     - 瞳孔光反射（正常）
     - 眼壓測量（排除青光眼）
-
 treatment:
   principles:
     - 無需治療——核硬化為正常老化現象
@@ -80,20 +78,58 @@ treatment:
     - 需與白內障鑑別以避免不必要的擔心
     - 定期眼科追蹤
   general:
-    - "無需任何治療"
-    - "畜主教育：解釋此為正常老化現象，不影響視力"
-    - "與白內障鑑別：若有疑慮，轉介獸醫眼科專科評估"
-    - "建議每年常規眼科檢查（老年犬貓健檢的一部分）"
-    - "不需要使用任何眼藥水或保健品"
-
+    - 無需任何治療
+    - 畜主教育：解釋此為正常老化現象，不影響視力
+    - 與白內障鑑別：若有疑慮，轉介獸醫眼科專科評估
+    - 建議每年常規眼科檢查（老年犬貓健檢的一部分）
+    - 不需要使用任何眼藥水或保健品
 prognosis: 核硬化為正常老化過程，預後極佳。不影響視力，不會進展為白內障，不需要任何治療。動物可維持正常視力與生活品質。唯一需要的是正確診斷以與白內障區分，避免不必要的治療或擔心。
-
 guidelineRefs:
   - sourceOrg: Veterinary Ophthalmology
-    title: "Age-related changes in the canine lens: clinical significance"
+    title: 'Age-related changes in the canine lens: clinical significance'
     url: https://pubmed.ncbi.nlm.nih.gov/16771758/
     type: consensus
-    pmid: "16771758"
+    pmid: '16771758'
 pubmedQueries:
   - query: '"nuclear sclerosis" AND (dog OR canine) AND ("cataract" OR "differentiation")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 水晶體核硬化症 診斷流程
+  steps:
+    - step: 1
+      action: 飼主主訴評估
+      details: 飼主注意到老年犬貓眼睛變灰白色
+      findings:
+        - 雙眼對稱性藍灰色改變
+        - 視力行為無明顯變化
+    - step: 2
+      action: 眼底反射測試
+      details: 用直接眼底鏡觀察眼底反射
+      findings:
+        - 核硬化：眼底反射正常可見
+        - 白內障：眼底反射減弱或消失
+    - step: 3
+      action: 裂隙燈檢查
+      details: 散瞳後裂隙燈檢查水晶體各層
+      findings:
+        - 核部密度增加呈藍灰色
+        - 皮質清澈透明
+    - step: 4
+      action: 確認診斷+衛教
+      details: 排除白內障後向飼主說明正常老化
+      findings:
+        - 確認為核硬化非白內障
+        - 不需治療，定期追蹤
+clinicalPearls:
+  - 核硬化 vs 白內障最快速的鑑別法：用直接眼底鏡——核硬化可看到眼底反射（tapetal reflection），白內障看不到
+  - 所有>7歲的犬和>10歲的貓都有不同程度的核硬化——向飼主解釋這是正常老化，不是白內障
+  - 散瞳後在裂隙燈下可清楚看到核硬化僅限核部，皮質仍完全透明
+monitoringItems:
+  - 年度眼科檢查（排除併發白內障）
+  - 視力行為觀察（飼主居家評估）
+  - 眼壓測量（老年犬貓常規篩檢）
+  - 眼底檢查（排除其他老年性眼病）
+associatedSymptoms:
+  - symptomId: mydriasis
+    frequency: uncommon
+ddxSource: book

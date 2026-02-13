@@ -3,18 +3,19 @@ nameEn: Avian Hypovitaminosis A
 nameZh: 禽類維生素A缺乏症
 bodySystem: metabolic
 description: 維生素 A 缺乏症是寵物鳥最常見的營養性疾病之一，因長期全種子飲食缺乏β-胡蘿蔔素所致。影響上皮組織分化，導致口腔、鼻竇、呼吸道及泌尿生殖道的上皮鱗狀化生，增加感染風險。
-
 aliases:
-  - { alias: 鳥類維生素A缺乏, language: zh }
-  - { alias: 禽類維生素A不足, language: zh }
-  - { alias: Vitamin A deficiency in birds, language: en }
-  - { alias: Hypovitaminosis A in parrots, language: en }
-
+  - alias: 鳥類維生素A缺乏
+    language: zh
+  - alias: 禽類維生素A不足
+    language: zh
+  - alias: Vitamin A deficiency in birds
+    language: en
+  - alias: Hypovitaminosis A in parrots
+    language: en
 species:
   - speciesCommon: bird
     prevalence: common
     notes: 全種子飲食的鸚鵡類極為常見。種子類食物幾乎不含維生素 A 或其前驅物。灰鸚鵡、亞馬遜鸚鵡、虎皮鸚鵡為高風險群。
-
 etiology:
   categories:
     - name: 飲食缺乏
@@ -28,7 +29,6 @@ etiology:
         - 腸道疾病影響脂溶性維生素吸收
         - 肝臟疾病影響維生素 A 代謝
         - 慢性消化道感染
-
 clinicalSigns:
   early:
     - 口腔黏膜出現白色小結節（鱗狀化生）
@@ -42,7 +42,6 @@ clinicalSigns:
     - 嗜睡
     - 腎臟功能障礙
     - 繁殖力下降
-
 diagnosis:
   primaryTests:
     - name: 飲食病史
@@ -51,7 +50,6 @@ diagnosis:
       notes: 口腔黏膜白色結節為特徵性表現（鱗狀化生）。嗉囊開口周圍亦可見
     - name: 組織切片
       notes: 上皮鱗狀化生的組織病理學確認
-
 treatment:
   principles:
     - 維生素 A 補充
@@ -65,31 +63,62 @@ treatment:
     - 轉換為高品質滋養丸（含維生素 A）
     - 口腔結節通常在營養改善後數週自行消退
     - 繼發感染給予抗生素
-
 prognosis: 預後良好。飲食改善與維生素 A 補充後，大多數臨床症狀可在數週至數月內改善。口腔結節消退較快。慢性鼻竇炎可能需要更長治療時間。嚴重腎臟損傷可能不可逆。避免維生素 A 過量（脂溶性維生素有中毒風險）。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
-    title: Histopathological Findings and Metagenomic Analysis of Esophageal Papillary Proliferation Identified in Laying Broiler Breeders.
+    title: >-
+      Histopathological Findings and Metagenomic Analysis of Esophageal Papillary Proliferation Identified in Laying
+      Broiler Breeders.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9320596/
     type: case-report
-    pmid: "35878349"
+    pmid: '35878349'
   - sourceOrg: Veterinary medicine and science
     title: Stillbirth Caused by Vitamin A Deficiency in Captive African Lion Cubs (Panthera leo).
     url: https://pubmed.ncbi.nlm.nih.gov/40171990/
     type: case-report
-    pmid: "40171990"
-  - sourceOrg: "Journal of zoo and wildlife medicine : official publication of the American Association of Zoo Veterinarians"
+    pmid: '40171990'
+  - sourceOrg: 'Journal of zoo and wildlife medicine : official publication of the American Association of Zoo Veterinarians'
     title: SUSPECTED HYPOVITAMINOSIS A-ASSOCIATED SALT GLAND ADENITIS IN NORTHERN ROCKHOPPER PENGUINS ( EUDYPTES MOSELEYI).
     url: https://pubmed.ncbi.nlm.nih.gov/29900787/
     type: case-report
-    pmid: "29900787"
+    pmid: '29900787'
   - sourceOrg: Poultry science
     title: Effects of vitamin A on growth performance and tissue retinol of starter White Pekin ducks.
     url: https://pubmed.ncbi.nlm.nih.gov/30597070/
     type: research
-    pmid: "30597070"
+    pmid: '30597070'
 pubmedQueries:
   - query: '"hypovitaminosis A" AND (avian OR bird OR psittacine) AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 禽類維生素A缺乏症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weakness 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 飲食病史
+          notes: 長期全種子飲食為最重要的診斷線索。評估飲食中β-胡蘿蔔素來源
+        - name: 口腔檢查
+          notes: 口腔黏膜白色結節為特徵性表現（鱗狀化生）。嗉囊開口周圍亦可見
+        - name: 組織切片
+          notes: 上皮鱗狀化生的組織病理學確認
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 維生素 A 補充
+        - 飲食全面改善
+        - 治療繼發感染
+ddxSource: auto-generated

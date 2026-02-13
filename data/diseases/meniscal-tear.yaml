@@ -3,11 +3,11 @@ nameEn: Meniscal Tear
 nameZh: Meniscal Tear
 bodySystem: orthopedic
 description: 骨骼肌肉系統疾病,影響運動功能。需骨科檢查與影像學評估確診並制定治療計劃。
-
 aliases:
-  - { alias: Meniscal Tear, language: zh }
-  - { alias: Meniscal Tear, language: en }
-
+  - alias: Meniscal Tear
+    language: zh
+  - alias: Meniscal Tear
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 外傷
       examples:
         - 退化性變化
         - 先天性異常
-
 clinicalSigns:
   early:
     - 跛行
@@ -32,61 +30,88 @@ clinicalSigns:
   progressive:
     - 肌肉萎縮
     - 關節畸形
-
 diagnosis:
   primaryTests:
     - name: 骨科檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: X光(多方位)
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 非類固醇消炎藥(Carprofen 2-4 mg/kg PO q12-24h)
     - 疼痛控制
   surgical:
     - name: 根據病況可能需手術治療(骨折固定、韌帶重建、關節置換等)
-      notes: "依病況評估"
-
+      notes: 依病況評估
 prognosis:
-  general: "預後取決於損傷嚴重度、治療方式與飼主配合度。早期適當治療可改善功能恢復。"
-
+  general: 預後取決於損傷嚴重度、治療方式與飼主配合度。早期適當治療可改善功能恢復。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Evidence of osteoarthritis disease modification with a Sn-117m microparticle device: a review and validation in mammalian models."
+    title: >-
+      Evidence of osteoarthritis disease modification with a Sn-117m microparticle device: a review and validation in
+      mammalian models.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12290414/
     type: review
-    pmid: "40717911"
+    pmid: '40717911'
     relevance: primary
-  - sourceOrg: "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA"
-    title: Subchondral bone remodeling patterns in larger animal models of meniscal injuries inducing knee osteoarthritis - a systematic review.
+  - sourceOrg: 'Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA'
+    title: >-
+      Subchondral bone remodeling patterns in larger animal models of meniscal injuries inducing knee osteoarthritis - a
+      systematic review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10719152/
     type: review
-    pmid: "37742232"
+    pmid: '37742232'
     relevance: primary
   - sourceOrg: Materials today. Bio
-    title: "Injectable decellularized Wharton's jelly hydrogel containing CD56+ umbilical cord mesenchymal stem cell-derived exosomes for meniscus tear healing and cartilage protection."
+    title: >-
+      Injectable decellularized Wharton's jelly hydrogel containing CD56+ umbilical cord mesenchymal stem cell-derived
+      exosomes for meniscus tear healing and cartilage protection.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11437876/
     type: research
-    pmid: "39347017"
+    pmid: '39347017'
     relevance: supporting
   - sourceOrg: Cartilage
-    title: Earlier and More Severe Cartilage Degeneration Occurs After Meniscal Tears in Juvenile Rabbits Compared with Adults.
+    title: >-
+      Earlier and More Severe Cartilage Degeneration Occurs After Meniscal Tears in Juvenile Rabbits Compared with
+      Adults.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10076899/
     type: research
-    pmid: "36444115"
+    pmid: '36444115'
     relevance: supporting
   - sourceOrg: Science translational medicine
-    title: Inhibition of a signaling modality within the gp130 receptor enhances tissue regeneration and mitigates osteoarthritis.
+    title: >-
+      Inhibition of a signaling modality within the gp130 receptor enhances tissue regeneration and mitigates
+      osteoarthritis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10792550/
     type: research
-    pmid: "36947594"
+    pmid: '36947594'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: Meniscal Tear 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cachexia-muscle-wasting 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 骨科檢查
+          notes: 需詳細評估
+        - name: X光(多方位)
+          notes: 協助確診
+ddxSource: auto-generated

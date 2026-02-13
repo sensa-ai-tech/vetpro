@@ -3,13 +3,15 @@ nameEn: Diaphragmatic Hernia Congenital
 nameZh: 先天性橫膈疝氣
 bodySystem: respiratory
 description: 先天性橫膈疝氣為橫膈膜發育缺損導致腹腔臟器疝入胸腔的畸形。以心包膜腹膜橫膈疝（PPDH）最為常見，為一種特殊的先天性橫膈缺損合併心包膜缺損。
-
 aliases:
-  - { alias: 先天橫膈疝, language: zh }
-  - { alias: 心包膜腹膜橫膈疝, language: zh }
-  - { alias: PPDH, language: en }
-  - { alias: Peritoneopericardial diaphragmatic hernia, language: en }
-
+  - alias: 先天橫膈疝
+    language: zh
+  - alias: 心包膜腹膜橫膈疝
+    language: zh
+  - alias: PPDH
+    language: en
+  - alias: Peritoneopericardial diaphragmatic hernia
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 波斯貓、喜馬拉雅貓為高風險品種。犬中威瑪獵犬有報告。
-
 etiology:
   categories:
     - name: 先天發育異常
@@ -25,7 +26,6 @@ etiology:
         - 橫膈膜與心包膜胚胎發育缺陷
         - 腹腔臟器疝入心包腔或胸腔
         - PPDH 為最常見先天型
-
 clinicalSigns:
   early:
     - 可能無症狀（偶然發現）
@@ -35,28 +35,73 @@ clinicalSigns:
     - 呼吸困難加重
     - 腸鳴音在胸腔聽到
     - 嘔吐（疝入腸道嵌頓時）
-
 diagnosis:
   primaryTests:
     - name: 影像與臨床檢查
       notes: 胸腔 X 光見心臟輪廓擴大或腸道在心影內。超音波確認。
-
 treatment:
   principles:
     - 依嚴重程度決定保守或手術治療
     - 支持療法
   general:
     - 手術修復橫膈缺損。無症狀者可保守觀察。嵌頓者需緊急手術。
-
 prognosis: 手術修復後預後良好。PPDH 無症狀者可終生穩定。嵌頓型預後取決於臟器存活度。
-
-
 guidelineRefs:
   - sourceOrg: BJS open
-    title: "Major surgical conditions of childhood and their lifelong implications: comprehensive review."
+    title: 'Major surgical conditions of childhood and their lifelong implications: comprehensive review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11110943/
     type: review
-    pmid: "38776252"
+    pmid: '38776252'
 pubmedQueries:
   - query: '"Diaphragmatic Hernia Congenital" AND (veterinary OR canine OR feline) AND (treatment OR management)'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 先天性橫膈疝氣 診斷流程
+  steps:
+    - step: 1
+      action: 理學檢查+聽診
+      details: 評估呼吸型態和胸腔聽診異常
+      findings:
+        - 肺音減弱/消失
+        - 胸腔腸蠕動音
+        - 心音移位
+    - step: 2
+      action: 胸腹X光
+      details: 正側位X光評估橫膈完整性
+      findings:
+        - 橫膈輪廓消失
+        - 胸腔內可見腹腔臟器影像
+        - 心影增大（PPDH）
+    - step: 3
+      action: 超音波+對比攝影
+      details: 進一步確認疝出內容物
+      findings:
+        - 肝臟/腸道位於胸腔
+        - 心包內可見臟器（PPDH）
+    - step: 4
+      action: CT術前評估
+      details: 複雜病例的手術計畫
+      findings:
+        - 精確定位缺損大小和位置
+        - 評估併發臟器損傷
+clinicalPearls:
+  - PPDH常為偶然影像學發現，無症狀者仍建議手術以防未來嵌頓
+  - 術後緩慢復位肺葉以減少再膨脹性肺水腫風險
+  - 先天性橫膈疝氣在貓比犬更常見
+monitoringItems:
+  - 術後呼吸監測（再膨脹性肺水腫）
+  - 術後胸腔X光追蹤
+  - 活動限制2-4週
+  - 長期預後評估
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+ddxSource: book

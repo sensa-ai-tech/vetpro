@@ -3,19 +3,21 @@ nameEn: Rat Seizure
 nameZh: 大鼠癲癇發作
 bodySystem: neurology
 description: 大鼠癲癇發作可由多種原因引起，包括腦部腫瘤（尤其是垂體腺瘤）、代謝異常、中毒及特發性癲癇。老年大鼠的癲癇發作常與垂體腺瘤相關，是寵物大鼠神經系統疾病中需優先排除的重要診斷。
-
 aliases:
-  - { alias: 大鼠癲癇, language: zh }
-  - { alias: 大鼠抽搐, language: zh }
-  - { alias: Rat epilepsy, language: en }
-  - { alias: Rat convulsions, language: en }
-  - { alias: Seizures in pet rats, language: en }
-
+  - alias: 大鼠癲癇
+    language: zh
+  - alias: 大鼠抽搐
+    language: zh
+  - alias: Rat epilepsy
+    language: en
+  - alias: Rat convulsions
+    language: en
+  - alias: Seizures in pet rats
+    language: en
 species:
   - speciesCommon: rat
     prevalence: uncommon
     notes: 老年大鼠偶見，常與垂體腺瘤相關。某些品系（如 Sprague-Dawley）可能有較高特發性癲癇發生率。
-
 etiology:
   categories:
     - name: 顱內原因
@@ -35,7 +37,6 @@ etiology:
         - 鉛中毒
         - 有機磷中毒
         - 藥物副作用
-
 clinicalSigns:
   early:
     - 行為異常（呆滯、迷茫）
@@ -48,7 +49,6 @@ clinicalSigns:
     - 排尿排便失禁
     - 發作後意識混亂（發作後期）
     - 反覆發作（癲癇持續狀態）
-
 diagnosis:
   primaryTests:
     - name: 臨床評估
@@ -57,7 +57,6 @@ diagnosis:
       notes: 血糖、鈣、BUN、肝功能指標。排除代謝性原因
     - name: 頭部影像
       notes: X 光或 CT 評估垂體腺瘤或其他顱內腫塊
-
 treatment:
   principles:
     - 緊急處理癲癇發作
@@ -71,41 +70,79 @@ treatment:
     - 低血糖者給予糖水或食物
     - 發作期間確保安全環境（移除尖銳物品）
     - 記錄發作日誌監測療效
-
 prognosis: 預後取決於根本原因。特發性癲癇透過藥物控制預後尚可。垂體腺瘤相關癲癇預後謹慎，因腫瘤會持續進展。代謝性原因若可糾正則預後較好。癲癇持續狀態為急診，需立即處理。
-
-
 guidelineRefs:
   - sourceOrg: Cells
     title: Imipramine, an Acid Sphingomyelinase Inhibitor, Promotes Newborn Neuron Survival in the Hippocampus After Seizure.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11853442/
     type: research
-    pmid: "39996753"
+    pmid: '39996753'
     relevance: supporting
   - sourceOrg: International journal of molecular sciences
     title: Effects of Phenosanic Acid in Rat Seizure Models.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12193637/
     type: research
-    pmid: "40565132"
+    pmid: '40565132'
     relevance: supporting
   - sourceOrg: Toxicology and applied pharmacology
-    title: A novel genetically modified mouse seizure model for evaluating anticonvulsive and neuroprotective efficacy of an A1 adenosine receptor agonist following soman intoxication.
+    title: >-
+      A novel genetically modified mouse seizure model for evaluating anticonvulsive and neuroprotective efficacy of an
+      A1 adenosine receptor agonist following soman intoxication.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10228141/
     type: research
-    pmid: "36849019"
+    pmid: '36849019'
     relevance: supporting
   - sourceOrg: Epilepsia
-    title: "OV329, a novel highly potent &#x3b3;-aminobutyric acid aminotransferase inactivator, induces pronounced anticonvulsant effects in the pentylenetetrazole seizure threshold test and in amygdala-kindled rats."
+    title: >-
+      OV329, a novel highly potent &#x3b3;-aminobutyric acid aminotransferase inactivator, induces pronounced
+      anticonvulsant effects in the pentylenetetrazole seizure threshold test and in amygdala-kindled rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8639636/
     type: research
-    pmid: "34617595"
+    pmid: '34617595'
     relevance: supporting
   - sourceOrg: British journal of pharmacology
-    title: A new mechanism for cannabidiol in regulating the one-carbon cycle and methionine levels in Dictyostelium and in mammalian epilepsy models.
+    title: >-
+      A new mechanism for cannabidiol in regulating the one-carbon cycle and methionine levels in Dictyostelium and in
+      mammalian epilepsy models.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7024701/
     type: research
-    pmid: "31693171"
+    pmid: '31693171'
     relevance: supporting
 pubmedQueries:
   - query: '"rat" AND ("seizure" OR "epilepsy" OR "convulsion") AND (veterinary OR "pet rat") AND treatment'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: ptyalism
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 大鼠癲癇發作 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - seizures 相關症狀
+        - behaviour-change 相關症狀
+        - ptyalism 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床評估
+          notes: 詳細病史（發作頻率、持續時間、型態）。神經學檢查評估顱內病變
+        - name: 血液生化
+          notes: 血糖、鈣、BUN、肝功能指標。排除代謝性原因
+        - name: 頭部影像
+          notes: X 光或 CT 評估垂體腺瘤或其他顱內腫塊
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 緊急處理癲癇發作
+        - 找出並治療根本原因
+        - 長期抗癲癇藥物控制
+ddxSource: auto-generated

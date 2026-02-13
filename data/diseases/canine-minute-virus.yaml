@@ -3,18 +3,18 @@ nameEn: Canine Minute Virus
 nameZh: 犬微小病毒
 bodySystem: infectious
 description: 犬微小病毒(Canine Minute Virus, CMV)是犬細小病毒科的非致病性病毒,常見於健康犬隻的糞便中,不引起明顯臨床症狀。此病毒主要作為犬隻腸道菌叢的一部分存在,但在免疫低下個體可能與其他病原共同感染時作為協同因子。
-
 aliases:
-  - { alias: CMV, language: en }
-  - { alias: 犬小DNA病毒, language: zh }
-  - { alias: Canine Parvovirus-like agent, language: en }
-
+  - alias: CMV
+    language: en
+  - alias: 犬小DNA病毒
+    language: zh
+  - alias: Canine Parvovirus-like agent
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 廣泛存在於健康犬隻腸道,血清陽性率可達40-80%,通常不引起疾病
-
 etiology:
   categories:
     - name: 病毒性共生
@@ -23,7 +23,6 @@ etiology:
         - 糞口傳播
         - 母體垂直傳播可能
         - 常與其他腸道病毒共存
-
 clinicalSigns:
   early:
     - 通常無明顯症狀
@@ -32,46 +31,64 @@ clinicalSigns:
     - 免疫低下個體可能出現輕度腹瀉
     - 與細小病毒混合感染時症狀加重
     - 極少數病例報告輕微腸炎
-
 diagnosis:
   primaryTests:
     - name: PCR檢測
-      notes: "糞便樣本CMV核酸檢測(通常為偶然發現)"
+      notes: 糞便樣本CMV核酸檢測(通常為偶然發現)
     - name: 電子顯微鏡
-      notes: "糞便病毒顆粒觀察(研究用途)"
+      notes: 糞便病毒顆粒觀察(研究用途)
     - name: 血清學檢查
-      notes: "抗體檢測(流行病學調查用)"
+      notes: 抗體檢測(流行病學調查用)
   differentialDiagnoses:
     - 犬細小病毒感染(致病性)
     - 犬冠狀病毒
     - 其他非致病性腸道病毒
     - 正常腸道菌叢
-
 treatment:
   medical:
     - 通常無需特殊治療
     - 支持性照護(若有輕微症狀):充足水分、易消化食物
     - 益生菌:Lactobacillus spp. 1-10億CFU PO SID
     - 免疫低下犬隻需評估整體健康狀況
-
 prognosis:
-  general: "預後極佳,CMV本身幾乎不引起疾病。免疫正常犬隻無需任何治療,帶毒狀態不影響健康。僅在嚴重免疫缺陷或多重感染時可能作為次要致病因子。"
-
+  general: 預後極佳,CMV本身幾乎不引起疾病。免疫正常犬隻無需任何治療,帶毒狀態不影響健康。僅在嚴重免疫缺陷或多重感染時可能作為次要致病因子。
 prevention:
   - 無需特殊預防措施
   - 維持良好衛生習慣:定期清理糞便
   - 避免過度擁擠飼養環境
   - 支持免疫系統健康:適當營養、減少壓力
-
-
 guidelineRefs:
   - sourceOrg: Viruses
     title: Structural Characterization of Canine Minute Virus, Rat and Porcine Bocavirus.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10534443/
     type: research
-    pmid: "37766206"
+    pmid: '37766206'
   - sourceOrg: Environment international
-    title: "Untapped potential of wastewater for animal and potentially zoonotic virus surveillance: Pilot study to detect non-human animal viruses in urban settings."
+    title: >-
+      Untapped potential of wastewater for animal and potentially zoonotic virus surveillance: Pilot study to detect
+      non-human animal viruses in urban settings.
     url: https://pubmed.ncbi.nlm.nih.gov/40318358/
     type: research
-    pmid: "40318358"
+    pmid: '40318358'
+associatedSymptoms:
+  - symptomId: diarrhoea
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 犬微小病毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: PCR檢測
+          notes: 糞便樣本CMV核酸檢測(通常為偶然發現)
+        - name: 電子顯微鏡
+          notes: 糞便病毒顆粒觀察(研究用途)
+        - name: 血清學檢查
+          notes: 抗體檢測(流行病學調查用)
+ddxSource: auto-generated

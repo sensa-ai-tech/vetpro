@@ -3,11 +3,11 @@ nameEn: Patent Foramen Ovale
 nameZh: 卵圓孔未閉
 bodySystem: cardiac
 description: 出生後卵圓孔未完全閉合,在心房間留下潛在通道。多數無症狀,但可能導致反常性栓塞或右向左分流。
-
 aliases:
-  - { alias: 未閉卵圓孔, language: zh }
-  - { alias: PFO, language: en }
-
+  - alias: 未閉卵圓孔
+    language: zh
+  - alias: PFO
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,13 +17,11 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 罕見
-
 etiology:
   categories:
     - name: 先天性
       examples:
         - 出生後卵圓孔未完全閉合
-
 clinicalSigns:
   early:
     - 多數無症狀
@@ -31,42 +29,59 @@ clinicalSigns:
     - 反常性栓塞症狀 (若有右向左分流)
     - 發紺 (嚴重分流)
     - 運動不耐
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波 (含對比劑)
-      notes: "微泡對比劑顯示心房間分流"
+      notes: 微泡對比劑顯示心房間分流
     - name: 彩色都卜勒
-      notes: "評估分流方向及血流量"
+      notes: 評估分流方向及血流量
   differentialDiagnoses:
     - 心房中隔缺損
     - 心室中隔缺損
     - 肺動脈高壓
-
 treatment:
   medical:
     - 無症狀無需治療
     - 預防栓塞 (若有右向左分流)
     - 外科修補 (罕見,僅嚴重病例)
-
 prognosis:
-  general: "預後良好;多數無臨床意義;嚴重分流可能導致栓塞或發紺"
-
+  general: 預後良好;多數無臨床意義;嚴重分流可能導致栓塞或發紺
 prevention:
   - 無特定預防措施
   - 先天性心臟病篩檢
-
-
 guidelineRefs:
-  - sourceOrg: "Evolution &amp; development"
+  - sourceOrg: Evolution &amp; development
     title: Low incidence of atrial septal defects in nonmammalian vertebrates.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9285691/
     type: research
-    pmid: "31597012"
+    pmid: '31597012'
     relevance: supporting
   - sourceOrg: Brain, behavior, and immunity
     title: Maternal immune activation induces epilepsy- patent foramen ovale comorbidity in offspring.
     url: https://pubmed.ncbi.nlm.nih.gov/41610964/
     type: research
-    pmid: "41610964"
+    pmid: '41610964'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 卵圓孔未閉 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - pallor-cyanosis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波 (含對比劑)
+          notes: 微泡對比劑顯示心房間分流
+        - name: 彩色都卜勒
+          notes: 評估分流方向及血流量
+ddxSource: auto-generated

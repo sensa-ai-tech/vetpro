@@ -3,13 +3,15 @@ nameEn: Horner Syndrome
 nameZh: 霍納氏症候群
 bodySystem: neurology
 description: 因交感神經通路中斷所致的眼部與面部症候群，表現為瞳孔縮小 (miosis)、上眼瞼下垂 (ptosis)、眼球內陷 (enophthalmos) 及第三眼瞼突出。病因涉及中樞、節前或節後三段交感神經之損傷。
-
 aliases:
-  - { alias: Horner's Syndrome, language: en }
-  - { alias: Oculosympathetic Paresis, language: en }
-  - { alias: 霍納症候群, language: zh }
-  - { alias: 交感神經眼麻痺, language: zh }
-
+  - alias: Horner's Syndrome
+    language: en
+  - alias: Oculosympathetic Paresis
+    language: en
+  - alias: 霍納症候群
+    language: zh
+  - alias: 交感神經眼麻痺
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓較常見與中耳炎或耳部手術相關，也可因胸部腫瘤或外傷引起。
-
 etiology:
   categories:
     - name: 中樞性 (第一階神經元)
@@ -35,7 +36,6 @@ etiology:
         - 中耳炎 / 耳道手術
         - 球後病變
         - 特發性 (最常見)
-
 clinicalSigns:
   early:
     - 單側瞳孔縮小 (miosis)
@@ -45,7 +45,6 @@ clinicalSigns:
     - 眼球內陷 (enophthalmos)
     - 患側結膜充血
     - 患側耳朵/面部皮膚溫度升高 (血管擴張)
-
 diagnosis:
   primaryTests:
     - name: 藥理學定位試驗 (Phenylephrine test)
@@ -54,7 +53,6 @@ diagnosis:
       notes: 檢查鼓膜完整性及中耳是否有積液/感染
     - name: 胸腔 X 光 / CT
       notes: 排除胸腔腫塊壓迫交感神經幹
-
 treatment:
   principles:
     - 治療根本原因為首要目標
@@ -63,36 +61,83 @@ treatment:
     - 針對中耳炎給予適當抗生素治療
     - 胸腔腫瘤需腫瘤科評估
     - 0.125% Phenylephrine 眼藥水可暫時改善症狀 (非必要)
-
 prognosis: 特發性 Horner 症候群預後良好，多數 6-16 週自行恢復。繼發於中耳炎者治療原發病後預後佳。繼發於胸腔腫瘤者預後取決於腫瘤類型與分期。
-
-
 guidelineRefs:
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: "A review of Horner's syndrome in small animals."
+    title: A review of Horner's syndrome in small animals.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6294019/
     type: review
-    pmid: "30651655"
+    pmid: '30651655'
   - sourceOrg: The Veterinary record
-    title: "Peripheral vestibular syndrome in cats: Clinical presentation, diagnostic findings and outcome in 196 cases."
+    title: 'Peripheral vestibular syndrome in cats: Clinical presentation, diagnostic findings and outcome in 196 cases.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12578361/
     type: research
-    pmid: "40391779"
+    pmid: '40391779'
   - sourceOrg: Journal of veterinary internal medicine
     title: Horner syndrome as a physiological biomarker of disease in canine cervical myelopathy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10061174/
     type: research
-    pmid: "36704850"
+    pmid: '36704850'
   - sourceOrg: Journal of dental anesthesia and pain medicine
-    title: Changes in blood flow at the mandibular angle and Horner syndrome in a rat model of superior cervical ganglion block.
+    title: >-
+      Changes in blood flow at the mandibular angle and Horner syndrome in a rat model of superior cervical ganglion
+      block.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5932997/
     type: research
-    pmid: "29744385"
+    pmid: '29744385'
   - sourceOrg: BMC veterinary research
-    title: "Clinical signs, MRI findings and outcome in dogs with peripheral vestibular disease: a retrospective study."
+    title: 'Clinical signs, MRI findings and outcome in dogs with peripheral vestibular disease: a retrospective study.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7249679/
     type: research
-    pmid: "32450859"
+    pmid: '32450859'
 pubmedQueries:
   - query: '"Horner syndrome" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 霍納氏症候群 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估眼部三聯征
+      findings:
+        - 瞳孔縮小（miosis）
+        - 眼瞼下垂（ptosis）
+        - 眼球內陷（enophthalmos）
+        - 第三眼瞼突出
+    - step: 2
+      action: 藥理學定位
+      details: 局部去甲腎上腺素或苯福林試驗
+      findings:
+        - 1% Phenylephrine 20分鐘內散瞳（節後型）
+        - 20-40分鐘散瞳（節前型）
+        - 超過40分鐘（中樞型）
+    - step: 3
+      action: 耳部與頸部檢查
+      details: 評估中耳與頸部結構
+      findings:
+        - 耳鏡檢查排除中耳炎
+        - 頸部觸診腫塊
+        - 甲狀腺區域評估
+    - step: 4
+      action: 進階影像
+      details: CT/MRI定位病灶
+      findings:
+        - 鼓室泡CT評估
+        - 頸部與胸腔影像
+        - 腦幹MRI（中樞型）
+        - 排除腫瘤性病因
+clinicalPearls:
+  - 霍納氏症候群本身不影響視力
+  - 藥理試驗幫助定位但不總是準確
+  - 中耳疾病是犬貓最常見病因
+  - Golden Retriever的特發性病例常見
+  - 若有其他神經徵象，需更積極尋找病因
+  - 特發性通常自行恢復，需耐心等待
+monitoringItems:
+  - 霍納徵象變化
+  - 原發疾病治療反應
+  - 神經功能
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+ddxSource: book

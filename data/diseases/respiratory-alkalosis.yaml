@@ -3,13 +3,15 @@ nameEn: Respiratory Alkalosis
 nameZh: 呼吸性鹼中毒
 bodySystem: respiratory
 description: 因過度換氣（hyperventilation）導致二氧化碳過度排出，PaCO2 下降而引起血液 pH 升高的酸鹼失衡。常見於疼痛、焦慮、低血氧代償性過度換氣或中樞神經系統疾病，通常為繼發表現而非原發疾病。
-
 aliases:
-  - { alias: 呼吸性鹼血症, language: zh }
-  - { alias: 低碳酸血症, language: zh }
-  - { alias: Hypocapnia, language: en }
-  - { alias: Respiratory Alkalaemia, language: en }
-
+  - alias: 呼吸性鹼血症
+    language: zh
+  - alias: 低碳酸血症
+    language: zh
+  - alias: Hypocapnia
+    language: en
+  - alias: Respiratory Alkalaemia
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓呼吸性鹼中毒可見於嚴重疼痛、貓氣喘急性發作初期或中暑時過度喘息。
-
 etiology:
   categories:
     - name: 低血氧驅動
@@ -31,7 +32,6 @@ etiology:
         - 高體溫/中暑
         - 中樞神經疾病（腦炎、腦腫瘤）
         - 肝臟衰竭（氨刺激呼吸中樞）
-
 clinicalSigns:
   early:
     - 呼吸急促
@@ -42,14 +42,12 @@ clinicalSigns:
     - 暈厥
     - 意識改變
     - 心律不整
-
 diagnosis:
   primaryTests:
     - name: 動脈血氣分析
       notes: pH >7.45，PaCO2 <35 mmHg。急性時 HCO3- 正常，慢性時腎臟代償使 HCO3- 降低。
     - name: 基礎疾病評估
       notes: 胸腔 X 光（肺實質病變）、體溫（高體溫）、疼痛評估、神經學檢查。
-
 treatment:
   principles:
     - 治療潛在病因為首要（止痛、降溫、改善氧合）
@@ -62,41 +60,77 @@ treatment:
     - 降溫處理（高體溫時）
     - 焦慮鎮靜（必要時低劑量 Acepromazine 或 Butorphanol）
     - 治療基礎神經或肝臟疾病
-
 prognosis: 呼吸性鹼中毒本身較少直接致命，預後取決於基礎病因。疼痛或焦慮引起者控制後迅速改善。低血氧代償性過度換氣者預後取決於肺部疾病嚴重度。中樞性過度換氣提示腦幹病變，預後較差。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Heat stress in poultry: the role of nutritional supplements in alleviating heat stress and enhancing gut health in poultry."
+    title: >-
+      Heat stress in poultry: the role of nutritional supplements in alleviating heat stress and enhancing gut health in
+      poultry.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12629944/
     type: review
-    pmid: "41280425"
+    pmid: '41280425'
     relevance: primary
   - sourceOrg: Temperature (Austin, Tex.)
     title: Characteristics of hyperthermia-induced hyperventilation in humans.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4879782/
     type: review
-    pmid: "27227102"
+    pmid: '27227102'
     relevance: supporting
   - sourceOrg: American journal of respiratory cell and molecular biology
-    title: "The Impact of Inflammation on Thermal Hyperpnea: Relevance for Heat Stress and Febrile Seizures."
+    title: 'The Impact of Inflammation on Thermal Hyperpnea: Relevance for Heat Stress and Febrile Seizures.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11299082/
     type: research
-    pmid: "38597725"
+    pmid: '38597725'
     relevance: supporting
   - sourceOrg: Veterinary sciences
-    title: "Relationship between Respiratory Rate, Oxygen Saturation, and Blood Test Results in Dogs with Chronic or Acute Respiratory Disease: A Retrospective Study."
+    title: >-
+      Relationship between Respiratory Rate, Oxygen Saturation, and Blood Test Results in Dogs with Chronic or Acute
+      Respiratory Disease: A Retrospective Study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10818868/
     type: research
-    pmid: "38250933"
+    pmid: '38250933'
     relevance: supporting
   - sourceOrg: eLife
     title: Respiratory alkalosis provokes spike-wave discharges in seizure-prone rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8860449/
     type: research
-    pmid: "34982032"
+    pmid: '34982032'
     relevance: supporting
 pubmedQueries:
   - query: '"Respiratory Alkalosis" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+diagnosticAlgorithm:
+  title: 呼吸性鹼中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - trembling 相關症狀
+        - coma-stupor 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 動脈血氣分析
+          notes: pH >7.45，PaCO2 <35 mmHg。急性時 HCO3- 正常，慢性時腎臟代償使 HCO3- 降低。
+        - name: 基礎疾病評估
+          notes: 胸腔 X 光（肺實質病變）、體溫（高體溫）、疼痛評估、神經學檢查。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療潛在病因為首要（止痛、降溫、改善氧合）
+        - 呼吸性鹼中毒本身通常不需直接治療
+        - 矯正低氧血症
+ddxSource: auto-generated

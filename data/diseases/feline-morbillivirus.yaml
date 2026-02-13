@@ -3,18 +3,18 @@ nameEn: Feline Morbillivirus
 nameZh: 貓麻疹病毒
 bodySystem: infectious
 description: 貓麻疹病毒(Feline Morbillivirus, FeMV)是近年發現的副黏液病毒科病毒,與慢性腎臟病及尿路上皮細胞存在關聯性。此病毒經呼吸道及尿液傳播,全球貓群血清陽性率約10-40%,其致病機轉及臨床意義仍在研究中。
-
 aliases:
-  - { alias: FeMV, language: en }
-  - { alias: 貓副黏液病毒, language: zh }
-  - { alias: Feline Paramyxovirus, language: en }
-
+  - alias: FeMV
+    language: en
+  - alias: 貓副黏液病毒
+    language: zh
+  - alias: Feline Paramyxovirus
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 全球流行,尤以亞洲地區陽性率較高,慢性腎病貓隻檢出率顯著高於健康貓
-
 etiology:
   categories:
     - name: 病毒性感染
@@ -23,7 +23,6 @@ etiology:
         - 呼吸道飛沫傳播
         - 尿液接觸傳播
         - 可能經口鼻分泌物傳播
-
 clinicalSigns:
   early:
     - 多數感染無明顯症狀
@@ -35,24 +34,22 @@ clinicalSigns:
     - 蛋白尿、血尿
     - 體重減輕、食慾下降
     - 口腔炎(部分病例)
-
 diagnosis:
   primaryTests:
     - name: RT-PCR檢測
-      notes: "尿液、血液或口腔拭子FeMV核酸檢測"
+      notes: 尿液、血液或口腔拭子FeMV核酸檢測
     - name: 血清學檢查
-      notes: "FeMV特異性IgG抗體檢測"
+      notes: FeMV特異性IgG抗體檢測
     - name: 腎功能檢查
-      notes: "BUN、Creatinine、SDMA升高,尿比重下降"
+      notes: BUN、Creatinine、SDMA升高,尿比重下降
     - name: 腎臟超音波
-      notes: "慢性腎病貓可見腎臟體積縮小、皮質回音增強"
+      notes: 慢性腎病貓可見腎臟體積縮小、皮質回音增強
   differentialDiagnoses:
     - 慢性腎臟病(其他病因)
     - 貓傳染性腹膜炎(FIP)
     - 貓免疫缺陷病毒(FIV)
     - 貓白血病病毒(FeLV)
     - 慢性間質性腎炎
-
 treatment:
   medical:
     - 無特異性抗病毒治療
@@ -61,41 +58,69 @@ treatment:
     - 磷結合劑:Aluminum hydroxide 30-90 mg/kg PO與食物混合
     - 促紅血球生成素(貧血時):Darbepoetin 1 μg/kg SC每週1次
     - 止吐藥:Maropitant 1 mg/kg SC SID
-
 prognosis:
-  general: "預後取決於腎臟損傷程度。輕度感染或無症狀帶毒貓隻預後良好,但與慢性腎病相關的病例預後謹慎。FeMV與腎病的因果關係仍待進一步研究證實。"
-
+  general: 預後取決於腎臟損傷程度。輕度感染或無症狀帶毒貓隻預後良好,但與慢性腎病相關的病例預後謹慎。FeMV與腎病的因果關係仍待進一步研究證實。
 prevention:
   - 目前無商業疫苗
   - 多貓家庭保持良好衛生:定期清潔貓砂盆
   - 減少貓隻接觸陌生貓的機會
   - 定期健康檢查:監測腎功能(BUN, Creatinine, SDMA)
   - 避免過度擁擠飼養環境
-
-
 guidelineRefs:
   - sourceOrg: Viruses
-    title: "Feline Morbillivirus: Clinical Relevance of a Widespread Endemic Viral Infection of Cats."
+    title: 'Feline Morbillivirus: Clinical Relevance of a Widespread Endemic Viral Infection of Cats.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10611265/
     type: review
-    pmid: "37896864"
+    pmid: '37896864'
   - sourceOrg: Viruses
     title: Feline Morbillivirus, a New Paramyxovirus Possibly Associated with Feline Kidney Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7290405/
     type: review
-    pmid: "32370044"
+    pmid: '32370044'
   - sourceOrg: Viruses
-    title: "Feline Morbillivirus Infection in Domestic Cats: What Have We Learned So Far?"
+    title: 'Feline Morbillivirus Infection in Domestic Cats: What Have We Learned So Far?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8071394/
     type: review
-    pmid: "33921104"
+    pmid: '33921104'
   - sourceOrg: BMC veterinary research
-    title: Pathological alteration and caspase-dependent activity of feline kidneys in natural infection of feline morbillivirus.
+    title: >-
+      Pathological alteration and caspase-dependent activity of feline kidneys in natural infection of feline
+      morbillivirus.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12291386/
     type: research
-    pmid: "40713721"
+    pmid: '40713721'
   - sourceOrg: Viruses
     title: Identification of Novel Feline Paramyxoviruses in Guignas (Leopardus guigna) from Chile.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7762136/
     type: research
-    pmid: "33291219"
+    pmid: '33291219'
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: uncommon
+  - symptomId: sneezing
+    frequency: common
+diagnosticAlgorithm:
+  title: 貓麻疹病毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: RT-PCR檢測
+          notes: 尿液、血液或口腔拭子FeMV核酸檢測
+        - name: 血清學檢查
+          notes: FeMV特異性IgG抗體檢測
+        - name: 腎功能檢查
+          notes: BUN、Creatinine、SDMA升高,尿比重下降
+ddxSource: auto-generated

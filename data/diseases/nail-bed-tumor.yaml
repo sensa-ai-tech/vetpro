@@ -3,12 +3,13 @@ nameEn: Nail Bed Tumor
 nameZh: 甲床腫瘤
 bodySystem: oncology
 description: 趾甲基質（甲床）區域的腫瘤，表現為單趾腫脹、趾甲脫落與跛行。犬以鱗狀上皮細胞癌與黑色素瘤最常見。單趾腫脹需高度懷疑腫瘤並做影像檢查。
-
 aliases:
-  - { alias: "Digital Tumor", language: en }
-  - { alias: "Subungual Tumor", language: en }
-  - { alias: "趾甲腫瘤", language: zh }
-
+  - alias: Digital Tumor
+    language: en
+  - alias: Subungual Tumor
+    language: en
+  - alias: 趾甲腫瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 腫瘤性
@@ -24,7 +24,6 @@ etiology:
         - 鱗狀上皮細胞癌（最常見）
         - 黑色素瘤
         - 軟組織肉瘤
-
 clinicalSigns:
   early:
     - 單趾腫脹
@@ -35,14 +34,12 @@ clinicalSigns:
     - 疼痛加劇
     - 骨質溶解
     - 區域淋巴結腫大
-
 diagnosis:
   primaryTests:
     - name: 趾部 X 光
       notes: 骨質溶解高度提示腫瘤。需包含趾骨遠端
     - name: 活檢
       notes: 確認腫瘤類型。可做細針穿刺或切開活檢
-
 treatment:
   principles:
     - 截趾為首選治療
@@ -52,9 +49,39 @@ treatment:
     - 區域淋巴結評估
     - 鱗狀上皮細胞癌：截趾後預後佳
     - 黑色素瘤：截趾 + 化療/免疫治療
-
 prognosis: 犬甲床鱗狀上皮細胞癌截趾後中位存活 > 1 年（多數不轉移）。黑色素瘤截趾後預後較差（轉移率高）。
-
 pubmedQueries:
   - query: '"nail bed tumor" OR "subungual tumor" AND (veterinary OR canine) AND ("treatment" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 甲床腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - lameness 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 趾部 X 光
+          notes: 骨質溶解高度提示腫瘤。需包含趾骨遠端
+        - name: 活檢
+          notes: 確認腫瘤類型。可做細針穿刺或切開活檢
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 截趾為首選治療
+        - 分期確認轉移狀態
+ddxSource: auto-generated

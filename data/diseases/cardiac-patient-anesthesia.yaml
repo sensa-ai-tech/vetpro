@@ -3,13 +3,15 @@ nameEn: Cardiac Patient Anesthesia
 nameZh: 心臟病患者麻醉
 bodySystem: cardiac
 description: 針對罹患心臟疾病患者(瓣膜疾病、心肌病、先天性心臟病等)的麻醉管理。心臟病患者麻醉風險顯著增加,需要術前心臟功能評估、客製化麻醉方案和加強血流動力學監測。
-
 aliases:
-  - { alias: 心臟疾病麻醉管理, language: zh }
-  - { alias: 心衰患者麻醉, language: zh }
-  - { alias: Anesthesia for Heart Disease, language: en }
-  - { alias: Cardiac Anesthesia Management, language: en }
-
+  - alias: 心臟疾病麻醉管理
+    language: zh
+  - alias: 心衰患者麻醉
+    language: zh
+  - alias: Anesthesia for Heart Disease
+    language: en
+  - alias: Cardiac Anesthesia Management
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓最常見肥厚型心肌病(HCM),常無臨床症狀直到麻醉時才發現
-
 etiology:
   categories:
     - name: 常見心臟疾病
@@ -34,7 +35,6 @@ etiology:
         - 心律不整風險增加
         - 麻醉藥物引起的心肌抑制
         - 肺水腫或心因性休克
-
 clinicalSigns:
   early:
     - 術前可能有心雜音、咳嗽、運動不耐
@@ -44,39 +44,37 @@ clinicalSigns:
     - 術中需密切監測血壓和心律
     - 恢復期可能出現肺水腫
     - 術後心臟功能可能暫時惡化
-
 diagnosis:
   primaryTests:
-    - name: "心臟超音波(必須)"
-      notes: "評估心臟結構、收縮功能、瓣膜疾病嚴重度"
+    - name: 心臟超音波(必須)
+      notes: 評估心臟結構、收縮功能、瓣膜疾病嚴重度
     - name: 胸部X光
-      notes: "評估心臟大小(VHS)、肺水腫、肺靜脈擴張"
+      notes: 評估心臟大小(VHS)、肺水腫、肺靜脈擴張
     - name: 心電圖
-      notes: "檢測心律不整類型和嚴重度"
+      notes: 檢測心律不整類型和嚴重度
     - name: NT-proBNP血檢
-      notes: "評估心衰嚴重度,>900 pmol/L(犬)或>270 pmol/L(貓)提示心衰"
+      notes: 評估心衰嚴重度,>900 pmol/L(犬)或>270 pmol/L(貓)提示心衰
     - name: 血壓監測
-      notes: "術中每3-5分鐘,MAP維持60-80 mmHg"
+      notes: 術中每3-5分鐘,MAP維持60-80 mmHg
   differentialDiagnoses:
     - 輕度瓣膜疾病無心衰(ACVIM B1-B2期)
     - 心衰已藥物控制穩定(ACVIM C期穩定)
     - 未控制的充血性心衰(ACVIM C期失代償或D期)
-
 treatment:
   medical:
-    - "術前穩定:ACVIM C-D期需1-2週藥物控制(利尿劑、ACEI、Pimobendan)才能麻醉"
-    - "術前用藥:繼續心臟藥物直到手術當天,手術當天早晨給予"
-    - "術前鎮靜:Butorphanol 0.2-0.4 mg/kg IM(避免Acepromazine,低血壓風險)"
-    - "誘導藥物:Etomidate 1-2 mg/kg IV(心肌抑制最小)或Alfaxalone 2-3 mg/kg IV"
-    - "維持麻醉:Isoflurane或Sevoflurane <1.2%(最低有效濃度),配合阿片類CRI"
-    - "術中輸液:謹慎輸液2-5 ml/kg/hr(避免肺水腫),使用輸液幫浦精確控制"
-    - "低血壓處理:優先降低麻醉深度,必要時Dobutamine 2.5-10 μg/kg/min CRI(正性肌力藥)"
-    - "心律不整:心室性心律不整Lidocaine 2 mg/kg IV + 50 μg/kg/min CRI,心房顫動Diltiazem 0.05-0.15 mg/kg IV"
-    - "術後監測:至少24小時心電圖和血氧監測,胸部X光確認無肺水腫"
-
+    - 術前穩定:ACVIM C-D期需1-2週藥物控制(利尿劑、ACEI、Pimobendan)才能麻醉
+    - 術前用藥:繼續心臟藥物直到手術當天,手術當天早晨給予
+    - 術前鎮靜:Butorphanol 0.2-0.4 mg/kg IM(避免Acepromazine,低血壓風險)
+    - 誘導藥物:Etomidate 1-2 mg/kg IV(心肌抑制最小)或Alfaxalone 2-3 mg/kg IV
+    - 維持麻醉:Isoflurane或Sevoflurane <1.2%(最低有效濃度),配合阿片類CRI
+    - 術中輸液:謹慎輸液2-5 ml/kg/hr(避免肺水腫),使用輸液幫浦精確控制
+    - 低血壓處理:優先降低麻醉深度,必要時Dobutamine 2.5-10 μg/kg/min CRI(正性肌力藥)
+    - 心律不整:心室性心律不整Lidocaine 2 mg/kg IV + 50 μg/kg/min CRI,心房顫動Diltiazem 0.05-0.15 mg/kg IV
+    - 術後監測:至少24小時心電圖和血氧監測,胸部X光確認無肺水腫
 prognosis:
-  general: "麻醉死亡率依心臟病嚴重度而定:ACVIM B期(無心衰)<1%,C期(穩定心衰)2-5%,D期(難治性心衰)>10%。術前心臟超音波評估和優化藥物控制可降低風險50%以上。最常見併發症為低血壓(30-40%)、心律不整(15-20%)、肺水腫(5-10%)。手術時間<60分鐘且血流動力學穩定的患者預後良好。HCM貓若術前無心衰症狀,麻醉耐受性通常良好。"
-
+  general: >-
+    麻醉死亡率依心臟病嚴重度而定:ACVIM
+    B期(無心衰)<1%,C期(穩定心衰)2-5%,D期(難治性心衰)>10%。術前心臟超音波評估和優化藥物控制可降低風險50%以上。最常見併發症為低血壓(30-40%)、心律不整(15-20%)、肺水腫(5-10%)。手術時間<60分鐘且血流動力學穩定的患者預後良好。HCM貓若術前無心衰症狀,麻醉耐受性通常良好。
 prevention:
   - 術前完整心臟評估(超音波、X光、心電圖、NT-proBNP)
   - 延期非緊急手術直到心衰控制穩定(至少1-2週)
@@ -89,31 +87,68 @@ prevention:
   - 術後加護照顧24-48小時
   - 縮短手術時間(盡量<60分鐘)
   - 高風險患者(ACVIM C-D期)考慮轉診心臟專科或配備完善監測設備的醫院
-
-
 guidelineRefs:
   - sourceOrg: JAMA
     title: International Consensus Criteria for Pediatric Sepsis and Septic Shock.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10900966/
     type: consensus
-    pmid: "38245889"
+    pmid: '38245889'
   - sourceOrg: Autophagy
     title: Guidelines for the use and interpretation of assays for monitoring autophagy (4th edition)1.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7996087/
     type: guideline
-    pmid: "33634751"
+    pmid: '33634751'
   - sourceOrg: Frontiers in veterinary science
-    title: "Prospective Evaluation of Cardiopulmonary Resuscitation Performed in Dogs and Cats According to the RECOVER Guidelines. Part 1: Prognostic Factors According to Utstein-Style Reporting."
+    title: >-
+      Prospective Evaluation of Cardiopulmonary Resuscitation Performed in Dogs and Cats According to the RECOVER
+      Guidelines. Part 1: Prognostic Factors According to Utstein-Style Reporting.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6854014/
     type: guideline
-    pmid: "31788482"
+    pmid: '31788482'
   - sourceOrg: Frontiers in veterinary science
     title: Fluid Resuscitation for Refractory Hypotension.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7987676/
     type: review
-    pmid: "33778035"
+    pmid: '33778035'
   - sourceOrg: Lancet (London, England)
-    title: "Burden of 375 diseases and injuries, risk-attributable burden of 88 risk factors, and healthy life expectancy in 204 countries and territories, including 660 subnational locations, 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023."
+    title: >-
+      Burden of 375 diseases and injuries, risk-attributable burden of 88 risk factors, and healthy life expectancy in
+      204 countries and territories, including 660 subnational locations, 1990-2023: a systematic analysis for the
+      Global Burden of Disease Study 2023.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12535840/
     type: research
-    pmid: "41092926"
+    pmid: '41092926'
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: heart-murmur
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+  - symptomId: coughing
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 心臟病患者麻醉 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - heart-murmur 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波(必須)
+          notes: 評估心臟結構、收縮功能、瓣膜疾病嚴重度
+        - name: 胸部X光
+          notes: 評估心臟大小(VHS)、肺水腫、肺靜脈擴張
+        - name: 心電圖
+          notes: 檢測心律不整類型和嚴重度
+ddxSource: auto-generated

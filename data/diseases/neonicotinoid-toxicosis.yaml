@@ -3,12 +3,13 @@ nameEn: Neonicotinoid Toxicosis
 nameZh: 新菸鹼類殺蟲劑中毒
 bodySystem: toxicology
 description: 新菸鹼類(如益達胺、可尼丁)為常用農業及家用殺蟲劑。中毒可引起尼古丁型乙醯膽鹼受體過度刺激,表現為神經肌肉症狀及中樞神經興奮。
-
 aliases:
-  - { alias: 類尼古丁中毒, language: zh }
-  - { alias: Imidacloprid Toxicity, language: en }
-  - { alias: Neonicotinoid Poisoning, language: en }
-
+  - alias: 類尼古丁中毒
+    language: zh
+  - alias: Imidacloprid Toxicity
+    language: en
+  - alias: Neonicotinoid Poisoning
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 舔舐施藥部位或接觸污染環境
-
 etiology:
   categories:
     - name: 直接攝入
@@ -29,7 +29,6 @@ etiology:
       examples:
         - 過量局部用藥
         - 接觸高濃度環境
-
 clinicalSigns:
   early:
     - 流涎、嘔吐、腹瀉
@@ -39,21 +38,19 @@ clinicalSigns:
     - 共濟失調、虛弱
     - 癲癇發作
     - 呼吸困難、昏迷
-
 diagnosis:
   primaryTests:
     - name: 病史詢問
-      notes: "確認殺蟲劑暴露史,包括產品名稱及接觸時間"
+      notes: 確認殺蟲劑暴露史,包括產品名稱及接觸時間
     - name: 臨床症狀評估
-      notes: "神經肌肉異常及副交感神經症狀"
+      notes: 神經肌肉異常及副交感神經症狀
     - name: 血液學檢查
-      notes: "排除其他中毒或代謝疾病"
+      notes: 排除其他中毒或代謝疾病
   differentialDiagnoses:
     - 有機磷中毒
     - 氨基甲酸酯中毒
     - 尼古丁中毒
     - 毒蕈中毒
-
 treatment:
   medical:
     - 皮膚除污: 溫水及溫和清潔劑徹底清洗
@@ -62,11 +59,49 @@ treatment:
     - 癲癇控制: Diazepam 0.5-1 mg/kg IV
     - 阿托品(Atropine)對新菸鹼類效果有限,僅用於嚴重毒蕈鹼型症狀
     - 支持性療法: 靜脈輸液、氧氣、體溫維持
-
 prognosis:
-  general: "及時治療預後良好,多數24-48小時內恢復。嚴重中毒可能出現持續性神經症狀或死亡。"
-
+  general: 及時治療預後良好,多數24-48小時內恢復。嚴重中毒可能出現持續性神經症狀或死亡。
 prevention:
   - 依產品標示正確使用殺蟲劑
   - 施藥後避免寵物接觸治療區域
   - 妥善存放殺蟲劑,防止寵物誤食
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: trembling
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+diagnosticAlgorithm:
+  title: 新菸鹼類殺蟲劑中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - ataxia 相關症狀
+        - trembling 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史詢問
+          notes: 確認殺蟲劑暴露史,包括產品名稱及接觸時間
+        - name: 臨床症狀評估
+          notes: 神經肌肉異常及副交感神經症狀
+        - name: 血液學檢查
+          notes: 排除其他中毒或代謝疾病
+ddxSource: auto-generated

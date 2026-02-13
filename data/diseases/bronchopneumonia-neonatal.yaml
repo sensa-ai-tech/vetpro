@@ -3,11 +3,11 @@ nameEn: Bronchopneumonia Neonatal
 nameZh: 新生犬貓支氣管肺炎
 bodySystem: respiratory
 description: 新生幼犬貓的肺部感染,常因吸入性肺炎、免疫功能不全或母源感染。死亡率高,需積極治療。
-
 aliases:
-  - { alias: 新生兒肺炎, language: zh }
-  - { alias: Neonatal Pneumonia, language: en }
-
+  - alias: 新生兒肺炎
+    language: zh
+  - alias: Neonatal Pneumonia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 出生後 0-4 週齡
-
 etiology:
   categories:
     - name: 吸入性
@@ -29,7 +28,6 @@ etiology:
     - name: 病毒性
       examples:
         - 犬疱疹病毒
-
 clinicalSigns:
   early:
     - 呼吸急促
@@ -39,20 +37,18 @@ clinicalSigns:
     - 發紺
     - 低體溫
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 臨床評估
-      notes: "呼吸窘迫、發紺、低體溫"
+      notes: 呼吸窘迫、發紺、低體溫
     - name: 胸部 X 光
-      notes: "肺浸潤"
+      notes: 肺浸潤
     - name: 血液培養
-      notes: "確認病原"
+      notes: 確認病原
   differentialDiagnoses:
     - 先天性心臟病
     - 橫膈疝氣
     - 低血糖
-
 treatment:
   medical:
     - 抗生素 (廣效性,Amoxicillin-clavulanate 12.5-25 mg/kg SC/PO q12h)
@@ -60,20 +56,46 @@ treatment:
     - 保溫
     - 補液
     - 營養支持 (管餵)
-
 prognosis:
-  general: "預後謹慎;死亡率高,需積極支持性照護"
-
+  general: 預後謹慎;死亡率高,需積極支持性照護
 prevention:
   - 適當產房衛生
   - 避免難產延遲
   - 確保初乳攝取
   - 母犬貓產前健康檢查
-
-
 guidelineRefs:
   - sourceOrg: Tierarztliche Praxis. Ausgabe G, Grosstiere/Nutztiere
-    title: "[Guidelines for the vaccination of cattle and small ruminants - a summary]."
+    title: '[Guidelines for the vaccination of cattle and small ruminants - a summary].'
     url: https://pubmed.ncbi.nlm.nih.gov/40513601/
     type: guideline
-    pmid: "40513601"
+    pmid: '40513601'
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 新生犬貓支氣管肺炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - hypothermia-sign 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床評估
+          notes: 呼吸窘迫、發紺、低體溫
+        - name: 胸部 X 光
+          notes: 肺浸潤
+        - name: 血液培養
+          notes: 確認病原
+ddxSource: auto-generated

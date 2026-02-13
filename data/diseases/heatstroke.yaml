@@ -3,26 +3,32 @@ nameEn: Heatstroke
 nameZh: 中暑
 bodySystem: emergency
 description: 核心體溫異常升高（犬 >41°C / 106°F）導致多器官熱損傷的危及生命急症。常因環境暴露（密閉車內、高溫高濕環境）或運動過度所致，可在數分鐘內進展至多器官衰竭與死亡。
-
 aliases:
-  - { alias: Heat Stroke, language: en }
-  - { alias: Hyperthermia, language: en }
-  - { alias: Heat Exhaustion, language: en }
-  - { alias: Heat Illness, language: en }
-  - { alias: 熱衰竭, language: zh }
-  - { alias: 熱中暑, language: zh }
-  - { alias: 高熱症, language: zh }
-
+  - alias: Heat Stroke
+    language: en
+  - alias: Hyperthermia
+    language: en
+  - alias: Heat Exhaustion
+    language: en
+  - alias: Heat Illness
+    language: en
+  - alias: 熱衰竭
+    language: zh
+  - alias: 熱中暑
+    language: zh
+  - alias: 高熱症
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
-    notes: 犬為最常見受影響物種。短頭種犬（Bulldog、Pug、Boston Terrier、French Bulldog）風險極高 — 上呼吸道散熱效率差。肥胖犬、老年犬、幼犬、深色毛髮犬、喉麻痺/氣管塌陷犬風險增加。密閉車內為最常見致命情境（車內溫度 10 分鐘內可升高 11°C）。勞力性中暑 (exertional) 好發於工作犬/運動犬。
+    notes: >-
+      犬為最常見受影響物種。短頭種犬（Bulldog、Pug、Boston Terrier、French Bulldog）風險極高 —
+      上呼吸道散熱效率差。肥胖犬、老年犬、幼犬、深色毛髮犬、喉麻痺/氣管塌陷犬風險增加。密閉車內為最常見致命情境（車內溫度 10 分鐘內可升高 11°C）。勞力性中暑 (exertional) 好發於工作犬/運動犬。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓較犬少見，因貓行為上較會尋找陰涼處且活動量較低。但密閉環境（烘乾機意外、車內）、短頭種貓（波斯貓）仍有風險。
-
 etiology:
   categories:
     - name: 非勞力性 (Classic/Environmental)
@@ -47,9 +53,10 @@ etiology:
         - 老年或幼年動物
         - 心肺疾病
         - 既往中暑病史（散熱中樞可能永久受損）
-
-pathophysiology: 犬主要透過喘息 (panting) 蒸發散熱，當環境溫度與濕度過高時散熱效率急遽下降。核心體溫超過 41°C 時，熱應激導致細胞蛋白質變性、細胞膜完整性破壞、線粒體功能障礙。腸道屏障功能破壞 → 腸道細菌與內毒素移位至門靜脈循環 → 全身性炎症反應 (SIRS) 與內毒素血症。熱損傷同時直接損害血管內皮 → 凝血級聯活化 → DIC。肝臟對熱損傷特別敏感（肝細胞壞死高峰在 3-5 天後）。腦部熱損傷可導致腦水腫與神經元壞死。腎臟因低灌流 + 肌球蛋白/血紅蛋白管型 → 急性腎損傷。橫紋肌溶解釋放肌球蛋白加重腎損傷。整體病理類似 SIRS/MODS 級聯反應。
-
+pathophysiology: >-
+  犬主要透過喘息 (panting) 蒸發散熱，當環境溫度與濕度過高時散熱效率急遽下降。核心體溫超過 41°C 時，熱應激導致細胞蛋白質變性、細胞膜完整性破壞、線粒體功能障礙。腸道屏障功能破壞 → 腸道細菌與內毒素移位至門靜脈循環 →
+  全身性炎症反應 (SIRS) 與內毒素血症。熱損傷同時直接損害血管內皮 → 凝血級聯活化 → DIC。肝臟對熱損傷特別敏感（肝細胞壞死高峰在 3-5 天後）。腦部熱損傷可導致腦水腫與神經元壞死。腎臟因低灌流 + 肌球蛋白/血紅蛋白管型
+  → 急性腎損傷。橫紋肌溶解釋放肌球蛋白加重腎損傷。整體病理類似 SIRS/MODS 級聯反應。
 clinicalSigns:
   early:
     - 過度喘息 (excessive panting)
@@ -76,18 +83,17 @@ clinicalSigns:
     - 低血壓/休克
     - 多器官衰竭
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 核心體溫測量
-      notes: "直腸溫度 >41°C (106°F) 結合暴露史即可臨床診斷。到院時體溫可能已因飼主初步降溫或生理代償而降低，不排除診斷"
+      notes: 直腸溫度 >41°C (106°F) 結合暴露史即可臨床診斷。到院時體溫可能已因飼主初步降溫或生理代償而降低，不排除診斷
     - name: CBC
-      notes: "濃縮血比容可能升高（脫水）或降低（DIC 出血）。血小板減少（DIC 消耗）。嗜中性球左移。有核紅血球可出現"
+      notes: 濃縮血比容可能升高（脫水）或降低（DIC 出血）。血小板減少（DIC 消耗）。嗜中性球左移。有核紅血球可出現
     - name: 生化
-      notes: "肝酵素升高（ALT/AST/ALP — 熱損傷，高峰在 3-5 天）。BUN/Creatinine 升高。高血鉀或低血鉀。低血糖。CK 升高（橫紋肌溶解）"
+      notes: 肝酵素升高（ALT/AST/ALP — 熱損傷，高峰在 3-5 天）。BUN/Creatinine 升高。高血鉀或低血鉀。低血糖。CK 升高（橫紋肌溶解）
   imaging:
     - name: 胸腔 X 光
-      notes: "評估肺水腫/ARDS 徵兆"
+      notes: 評估肺水腫/ARDS 徵兆
   additional:
     - 凝血功能（PT/APTT 延長、D-dimer 升高、纖維蛋白原降低 — DIC 評估）
     - 血氣分析（代謝性酸中毒、乳酸升高）
@@ -96,7 +102,6 @@ diagnosis:
     - 電解質監測
     - 血糖（低血糖為不良預後指標）
     - 肌鈣蛋白 (cardiac troponin I — 心肌損傷評估)
-
 treatment:
   principles:
     - 立即積極降溫為最優先處置
@@ -106,16 +111,16 @@ treatment:
     - 48-72 小時密切監測（遲發性器官損傷）
   medications:
     - name: IV 晶體液 (LRS 或 0.9% NaCl)
-      dose: "休克劑量 60-90 mL/kg/hr (犬) 初始 bolus 20-30 mL/kg，依反應調整"
+      dose: 休克劑量 60-90 mL/kg/hr (犬) 初始 bolus 20-30 mL/kg，依反應調整
       notes: 室溫或冷卻至 4°C 的輸液可同時輔助降溫。避免過度輸液引發肺水腫
     - name: Maropitant
-      dose: "1 mg/kg IV SID"
+      dose: 1 mg/kg IV SID
       notes: 止吐
     - name: Sucralfate
-      dose: "犬 0.5-1 g PO TID"
+      dose: 犬 0.5-1 g PO TID
       notes: 胃腸黏膜保護（熱損傷性胃腸道出血）
     - name: Mannitol
-      dose: "0.5-1 g/kg IV over 20 min"
+      dose: 0.5-1 g/kg IV over 20 min
       notes: 腦水腫時使用。亦可考慮高張食鹽水 (3-7.5% NaCl 2-4 mL/kg)
   general:
     - 立即移除熱源/移至陰涼處
@@ -129,43 +134,117 @@ treatment:
     - 避免使用 NSAIDs（加重腎損傷與胃腸出血）
     - 避免使用退熱藥（中暑非發燒，退熱藥無效且有害）
     - 住院監測至少 48-72 小時（肝損傷高峰在 3-5 天）
-
-emergencyNotes: 中暑為超級急症 — 每延遲降溫 1 分鐘均增加死亡風險。到院立即處理：(1) 積極體表降溫（常溫水淋浴 + 風扇）；(2) 核心體溫 39.5°C 時停止降溫；(3) 雙靜脈管路、積極輸液；(4) ECG 監測；(5) 乳酸/血糖/凝血功能立即檢測；(6) 低血糖 → 50% dextrose 0.5-1 mL/kg 稀釋後 IV；(7) DIC 徵兆 → FFP；(8) 癲癇 → Diazepam；(9) 禁用 NSAIDs 與退熱藥。
-
-prognosis: 總死亡率約 39-50%。到院核心體溫 >41.7°C 者死亡率更高。早期積極降溫（症狀出現 90 分鐘內）可顯著改善預後。低血糖、DIC、急性腎衰竭、肝衰竭、癲癇為不良預後因子。存活者多數在 48-72 小時內明顯改善，但需追蹤肝功能 5-7 天。部分存活犬可能有永久性腦損傷或散熱中樞功能受損（增加再次中暑風險）。短頭種犬死亡率高於非短頭種。
-
+emergencyNotes: >-
+  中暑為超級急症 — 每延遲降溫 1 分鐘均增加死亡風險。到院立即處理：(1) 積極體表降溫（常溫水淋浴 + 風扇）；(2) 核心體溫 39.5°C 時停止降溫；(3) 雙靜脈管路、積極輸液；(4) ECG 監測；(5)
+  乳酸/血糖/凝血功能立即檢測；(6) 低血糖 → 50% dextrose 0.5-1 mL/kg 稀釋後 IV；(7) DIC 徵兆 → FFP；(8) 癲癇 → Diazepam；(9) 禁用 NSAIDs 與退熱藥。
+prognosis: >-
+  總死亡率約 39-50%。到院核心體溫 >41.7°C 者死亡率更高。早期積極降溫（症狀出現 90 分鐘內）可顯著改善預後。低血糖、DIC、急性腎衰竭、肝衰竭、癲癇為不良預後因子。存活者多數在 48-72 小時內明顯改善，但需追蹤肝功能
+  5-7 天。部分存活犬可能有永久性腦損傷或散熱中樞功能受損（增加再次中暑風險）。短頭種犬死亡率高於非短頭種。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: A retrospective study of 54 cases of heatstroke in dogs
     url: https://pubmed.ncbi.nlm.nih.gov/17014517/
     type: research
-    pmid: "17014517"
+    pmid: '17014517'
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
     title: Prognostic indicators in dogs with heatstroke
     url: https://pubmed.ncbi.nlm.nih.gov/16740157/
     type: research
-    pmid: "16740157"
+    pmid: '16740157'
   - sourceOrg: Animals
-    title: "Canine heatstroke: a review of clinical features, pathophysiology and treatment"
+    title: 'Canine heatstroke: a review of clinical features, pathophysiology and treatment'
     url: https://pubmed.ncbi.nlm.nih.gov/33466556/
     type: review
-    pmid: "33466556"
+    pmid: '33466556'
   - sourceOrg: Temperature (Austin, Tex.)
     title: Pathophysiology of heatstroke in dogs - revisited.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5800390/
     type: review
-    pmid: "29435477"
+    pmid: '29435477'
   - sourceOrg: Experimental physiology
     title: Biomarkers of heatstroke-induced organ injury and repair.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9529995/
     type: review
-    pmid: "35654394"
+    pmid: '35654394'
     relevance: primary
 pubmedQueries:
   - query: '"heatstroke" AND (dog OR canine) AND ("treatment" OR "prognosis" OR "cooling" OR "organ damage")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "EXL"
-  sectionTitle: "Heat Exhaustion"
+  chapter: EXL
+  sectionTitle: Heat Exhaustion
   pdfPage: 1998
+diagnosticAlgorithm:
+  title: 熱衰竭/中暑 診斷與處置流程
+  steps:
+    - step: 1
+      action: 緊急評估與降溫
+      details: ABCD評估+直腸溫度測量，確認高溫暴露史
+      findings:
+        - 直腸溫度>41°C
+        - 黏膜磚紅色或泥灰色
+        - 意識改變（躁動→昏迷）
+        - 心搏過速+CRT延長
+    - step: 2
+      action: 多器官功能篩檢
+      details: 急查CBC/生化/凝血/血氣，評估器官損傷程度
+      findings:
+        - 血小板<100×10⁹/L（DIC風險）
+        - ALT/AST顯著升高（肝損傷）
+        - BUN/Crea升高（AKI）
+        - 代謝性酸中毒+乳酸升高
+    - step: 3
+      action: 凝血功能詳細評估
+      details: PT/aPTT/D-dimer/纖維蛋白原/血液抹片
+      findings:
+        - PT/aPTT延長
+        - D-dimer升高
+        - 纖維蛋白原降低
+        - 血液抹片見裂片紅血球（DIC確認）
+    - step: 4
+      action: 穩定化與持續監測
+      details: 積極輸液+器官支持，72小時密集監測
+      findings:
+        - 體溫穩定在38-39°C
+        - 尿量>1-2 mL/kg/hr
+        - 凝血指標趨勢改善
+        - 神經狀態評估（延遲性腦損傷）
+clinicalPearls:
+  - 死亡率與最高體溫及持續時間正相關，早期介入是關鍵
+  - 禁用冰水降溫——周邊血管收縮反而阻礙核心散熱
+  - 39.4°C時停止積極降溫，避免低體溫反彈
+  - DIC和AKI可能在降溫後24-72小時才顯現，需持續監測
+  - 短頭犬種即使輕度體溫升高也可能快速惡化
+monitoringItems:
+  - 體溫（每15-30分鐘直到穩定）
+  - 尿量（導尿管監測，目標>1-2 mL/kg/hr）
+  - 凝血功能（PT/aPTT/血小板 q12-24h前72小時）
+  - 腎功能（BUN/Crea/電解質 q12-24h）
+  - 肝功能（ALT/AST/膽紅素）
+  - 神經狀態評估
+  - 心電圖監測
+associatedSymptoms:
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: petechiae-ecchymoses
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+ddxSource: book

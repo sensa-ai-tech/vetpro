@@ -3,12 +3,13 @@ nameEn: Juvenile Hypoglycemia
 nameZh: 幼年期低血糖症
 bodySystem: metabolic
 description: 幼年犬貓(6週至6月齡)因肝醣儲存不足或能量需求高而發生的低血糖症。小型品種及玩具犬種特別易感，需頻繁餵食預防。
-
 aliases:
-  - { alias: 幼犬低血糖, language: zh }
-  - { alias: Toy Breed Hypoglycemia, language: en }
-  - { alias: Juvenile Onset Hypoglycemia, language: en }
-
+  - alias: 幼犬低血糖
+    language: zh
+  - alias: Toy Breed Hypoglycemia
+    language: en
+  - alias: Juvenile Onset Hypoglycemia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 比犬少見
-
 etiology:
   categories:
     - name: 生理性原因
@@ -36,7 +36,6 @@ etiology:
         - 門脈分流
         - 腸胃疾病(寄生蟲、病毒性腸炎)
         - 內分泌疾病(罕見)
-
 clinicalSigns:
   early:
     - 虛弱、嗜睡
@@ -48,23 +47,21 @@ clinicalSigns:
     - 昏迷
     - 體溫過低
     - 死亡(若未及時治療)
-
 diagnosis:
   primaryTests:
     - name: 血糖測量
-      notes: "血糖<60 mg/dL確診；<40 mg/dL為危急值"
+      notes: 血糖<60 mg/dL確診；<40 mg/dL為危急值
     - name: 生化檢查
-      notes: "肝腎功能評估"
+      notes: 肝腎功能評估
     - name: 血氨測定
-      notes: "若懷疑門脈分流"
+      notes: 若懷疑門脈分流
     - name: 禁食試驗
-      notes: "評估是否反覆發作"
+      notes: 評估是否反覆發作
   differentialDiagnoses:
     - 門脈分流
     - 胰島素瘤(罕見於幼年)
     - 敗血症
     - 內分泌疾病
-
 treatment:
   medical:
     - 急性處置：立即給予葡萄糖
@@ -75,13 +72,43 @@ treatment:
     - 避免單純糖類(會刺激胰島素反彈)
     - 治療潛在疾病
     - 預防性措施：隨身攜帶糖漿、頻繁少量餵食
-
 prognosis:
-  general: "單純性幼年低血糖隨年齡增長(6-12月)通常自行改善；若有潛在疾病需進一步處理"
-
+  general: 單純性幼年低血糖隨年齡增長(6-12月)通常自行改善；若有潛在疾病需進一步處理
 prevention:
   - 頻繁少量餵食(每4-6小時)
   - 避免長時間禁食(幼犬不可超過8-12小時)
   - 壓力期間(疫苗注射、外出)預防性補充糖分
   - 提供高品質幼犬飼料
   - 教育飼主識別早期症狀
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: trembling
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: coma-stupor
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 幼年期低血糖症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - trembling 相關症狀
+        - seizures 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血糖測量
+          notes: 血糖<60 mg/dL確診；<40 mg/dL為危急值
+        - name: 生化檢查
+          notes: 肝腎功能評估
+        - name: 血氨測定
+          notes: 若懷疑門脈分流
+ddxSource: auto-generated

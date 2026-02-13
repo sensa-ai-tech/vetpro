@@ -3,11 +3,11 @@ nameEn: Uveodermatologic Syndrome Detail
 nameZh: 葡萄膜皮膚症候群詳述
 bodySystem: immunology
 description: 攻擊黑色素細胞的自體免疫疾病,引起葡萄膜炎及皮膚脫色。類似人類Vogt-Koyanagi-Harada病。
-
 aliases:
-  - { alias: VKH症候群, language: zh }
-  - { alias: UDS, language: en }
-
+  - alias: VKH症候群
+    language: zh
+  - alias: UDS
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,13 +17,11 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 極罕見
-
 etiology:
   categories:
     - name: 免疫攻擊黑色素細胞
       examples:
         - 特發性自體免疫
-
 clinicalSigns:
   early:
     - 雙側葡萄膜炎
@@ -31,25 +29,41 @@ clinicalSigns:
   progressive:
     - 失明
     - 廣泛性皮膚脫色
-
 diagnosis:
   primaryTests:
     - name: 臨床表現
-      notes: "葡萄膜炎+皮膚脫色"
+      notes: 葡萄膜炎+皮膚脫色
     - name: 皮膚切片
-      notes: "界面性皮膚炎"
+      notes: 界面性皮膚炎
   differentialDiagnoses:
     - 白斑症
-
 treatment:
   medical:
     - Prednisolone 2-4 mg/kg/day PO
     - Azathioprine 2 mg/kg/day PO
     - 局部眼藥(類固醇、散瞳劑)
     - 長期維持治療
-
 prognosis:
-  general: "早期治療可保視力,但需終身治療。脫色不可逆。"
-
+  general: 早期治療可保視力,但需終身治療。脫色不可逆。
 prevention:
   - 無法預防
+associatedSymptoms:
+  - symptomId: blindness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 葡萄膜皮膚症候群詳述 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床表現
+          notes: 葡萄膜炎+皮膚脫色
+        - name: 皮膚切片
+          notes: 界面性皮膚炎
+ddxSource: auto-generated

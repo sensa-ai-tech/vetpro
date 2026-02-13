@@ -3,18 +3,18 @@ nameEn: Dalmatian Stone Disease
 nameZh: 斑點狗尿石症
 bodySystem: urinary
 description: 斑點狗品種特異的尿酸鹽代謝異常,所有斑點狗均為高尿酸血症,易形成尿酸銨結石。公犬因尿道狹窄易阻塞,需終生飲食管理與監測,基因突變明確。
-
 aliases:
-  - { alias: 斑點狗尿酸結石, language: zh }
-  - { alias: Dalmatian Urate Urolithiasis, language: en }
-  - { alias: 斑點狗高尿酸血症, language: zh }
-
+  - alias: 斑點狗尿酸結石
+    language: zh
+  - alias: Dalmatian Urate Urolithiasis
+    language: en
+  - alias: 斑點狗高尿酸血症
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 斑點狗100%有代謝異常,約25-30%形成結石,公犬阻塞風險高,SLC2A9基因突變
-
 etiology:
   categories:
     - name: 遺傳性代謝缺陷
@@ -32,7 +32,6 @@ etiology:
         - 尿酸銨結石(100%病例)
         - 酸性尿液促進結石形成
         - 濃縮尿增加風險
-
 clinicalSigns:
   early:
     - 可能無症狀(結石小或位於膀胱)
@@ -44,44 +43,70 @@ clinicalSigns:
     - 嘔吐、嗜睡(阻塞性氮血症)
     - 虛脫(急性腎後性腎衰竭)
     - 未解除阻塞24-48小時內可能致命
-
 diagnosis:
   primaryTests:
     - name: 尿液分析
-      notes: "尿酸銨結晶(棕色菱形結晶),血尿,酸性pH"
+      notes: 尿酸銨結晶(棕色菱形結晶),血尿,酸性pH
     - name: 腹部X光
-      notes: "尿酸鹽結石為X光陰性(不可見),需超音波或造影"
+      notes: 尿酸鹽結石為X光陰性(不可見),需超音波或造影
     - name: 腹部超音波
-      notes: "偵測膀胱或腎結石,評估腎盂積水"
+      notes: 偵測膀胱或腎結石,評估腎盂積水
     - name: 結石分析
-      notes: "手術或自然排出結石成分:尿酸銨"
+      notes: 手術或自然排出結石成分:尿酸銨
     - name: 血液尿酸測定
-      notes: "顯著升高(>4 mg/dL,正常<0.5)"
+      notes: 顯著升高(>4 mg/dL,正常<0.5)
   differentialDiagnoses:
     - 其他類型結石(草酸鈣、磷酸鹽)
     - 細菌性膀胱炎
     - 膀胱腫瘤
     - 前列腺疾病
-
 treatment:
   medical:
     - 溶解治療(尿酸銨結石可溶解):
-      - 低嘌呤處方飼料(Hill's u/d或Royal Canin UC)
-      - Allopurinol 10-20 mg/kg PO q12h(抑制尿酸合成)
-      - 尿液鹼化:Potassium citrate 50-75 mg/kg PO q12h(目標pH 7.0-7.5)
-      - 溶解需4-12週
+        - 低嘌呤處方飼料(Hill's u/d或Royal Canin UC)
+        - Allopurinol 10-20 mg/kg PO q12h(抑制尿酸合成)
+        - 尿液鹼化:Potassium citrate 50-75 mg/kg PO q12h(目標pH 7.0-7.5)
+        - 溶解需4-12週
     - 急性阻塞:緊急導尿、輸液、解除阻塞
     - 無法溶解或阻塞:膀胱切開術取石
     - 預防復發:終生低嘌呤飲食+/-Allopurinol
     - 增加飲水(濕食、多處水碗)
     - 定期監測(尿液分析、超音波每3-6個月)
-
 prognosis:
-  general: "經適當飲食與藥物管理,可控制結石形成,預後良好。未治療公犬易反覆阻塞,危及生命。需終生管理,定期監測,飼主遵從度為關鍵。Allopurinol可能形成黃嘌呤結石(罕見)。"
-
+  general: 經適當飲食與藥物管理,可控制結石形成,預後良好。未治療公犬易反覆阻塞,危及生命。需終生管理,定期監測,飼主遵從度為關鍵。Allopurinol可能形成黃嘌呤結石(罕見)。
 prevention:
   - 所有斑點狗終生低嘌呤飲食
   - 增加飲水,稀釋尿液
   - 定期尿液檢查(每6-12個月)
   - 基因檢測:LUA(Low Uric Acid)育種計畫,選育正常SLC2A9基因個體
   - AKC已認可LUA斑點狗(正常尿酸代謝)
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: common
+diagnosticAlgorithm:
+  title: 斑點狗尿石症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pollakiuria 相關症狀
+        - weakness 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 尿液分析
+          notes: 尿酸銨結晶(棕色菱形結晶),血尿,酸性pH
+        - name: 腹部X光
+          notes: 尿酸鹽結石為X光陰性(不可見),需超音波或造影
+        - name: 腹部超音波
+          notes: 偵測膀胱或腎結石,評估腎盂積水
+ddxSource: auto-generated

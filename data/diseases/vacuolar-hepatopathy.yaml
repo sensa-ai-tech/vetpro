@@ -2,13 +2,16 @@ slug: vacuolar-hepatopathy
 nameEn: Vacuolar Hepatopathy
 nameZh: 空泡性肝病
 bodySystem: hepatic
-description: 空泡性肝病為肝細胞內出現過度空泡化（vacuolization）的病理狀態，以肝醣蓄積（glycogen accumulation）為主要類型。犬隻最常見原因為內源性或外源性糖皮質激素過量（腎上腺皮質功能亢進、長期類固醇治療）。為可逆性病變，移除原因後可改善。
-
+description: >-
+  空泡性肝病為肝細胞內出現過度空泡化（vacuolization）的病理狀態，以肝醣蓄積（glycogen
+  accumulation）為主要類型。犬隻最常見原因為內源性或外源性糖皮質激素過量（腎上腺皮質功能亢進、長期類固醇治療）。為可逆性病變，移除原因後可改善。
 aliases:
-  - { alias: 肝細胞空泡化, language: zh }
-  - { alias: Steroid Hepatopathy, language: en }
-  - { alias: Glycogen Hepatopathy, language: en }
-
+  - alias: 肝細胞空泡化
+    language: zh
+  - alias: Steroid Hepatopathy
+    language: en
+  - alias: Glycogen Hepatopathy
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻空泡性肝病少見。貓隻肝脂肪沉積（hepatic lipidosis）更常見。
-
 etiology:
   categories:
     - name: 糖皮質激素相關
@@ -30,7 +32,6 @@ etiology:
         - 代謝性疾病
         - 特發性空泡性肝病
         - 甲狀腺功能低下
-
 clinicalSigns:
   early:
     - 多數無明顯臨床症狀
@@ -40,14 +41,12 @@ clinicalSigns:
     - 庫欣氏症相關症狀（多飲多尿、多食、腹部膨大、皮膚症狀）
     - 肝臟持續腫大
     - 偶有嘔吐與食慾變化
-
 diagnosis:
   primaryTests:
     - name: 血液生化
       notes: ALP 顯著升高（常 >5-10 倍正常值）。類固醇誘導的 ALP isoenzyme（犬隻特有）。ALT 輕度至中度升高。膽固醇可能升高。
     - name: 肝臟活檢
       notes: 確診。肝細胞瀰漫性空泡化（肝醣蓄積，PAS 染色陽性，diastase 消化後陰性）。需排除脂肪變性。
-
 treatment:
   principles:
     - 移除或治療基礎原因
@@ -56,20 +55,54 @@ treatment:
   general:
     - 治療基礎疾病（Cushing's disease→Trilostane）
     - 減少或停用外源性糖皮質激素（逐步減量）
-    - "肝保護：SAMe 20 mg/kg PO q24h（可選）"
+    - 肝保護：SAMe 20 mg/kg PO q24h（可選）
     - 定期監測肝指數
     - 特發性空泡性肝病：監測觀察
-
 prognosis: 預後通常良好。空泡性肝病為可逆性病變。移除糖皮質激素來源後肝臟可逐漸恢復正常。ALP 可能需要數週至數月才能完全正常化。特發性空泡性肝病多數穩定不進展。極少數嚴重者可能發展為肝臟結節性增生或肝細胞腺瘤。
-
-
 guidelineRefs:
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Hepatocutaneous syndrome in Shih Tzus: 31 cases (1996-2014)."
+    title: 'Hepatocutaneous syndrome in Shih Tzus: 31 cases (1996-2014).'
     url: https://pubmed.ncbi.nlm.nih.gov/27003022/
     type: research
-    pmid: "27003022"
+    pmid: '27003022'
     relevance: supporting
 pubmedQueries:
   - query: '"vacuolar hepatopathy" OR "steroid hepatopathy" AND (veterinary OR canine) AND ("glucocorticoid" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: hepatomegaly
+    frequency: common
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: polyphagia
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 空泡性肝病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - abdominal-distension 相關症狀
+        - hepatomegaly 相關症狀
+        - polyuria-polydipsia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液生化
+          notes: ALP 顯著升高（常 >5-10 倍正常值）。類固醇誘導的 ALP isoenzyme（犬隻特有）。ALT 輕度至中度升高。膽固醇可能升高。
+        - name: 肝臟活檢
+          notes: 確診。肝細胞瀰漫性空泡化（肝醣蓄積，PAS 染色陽性，diastase 消化後陰性）。需排除脂肪變性。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 移除或治療基礎原因
+        - 減少或停用外源性糖皮質激素
+        - 通常為可逆性
+ddxSource: auto-generated

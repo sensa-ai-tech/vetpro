@@ -3,12 +3,13 @@ nameEn: Spinal Fracture
 nameZh: 脊椎骨折
 bodySystem: neurology
 description: 脊椎骨折伴或不伴脊髓損傷，為神經外科急症。常因車禍、高處墜落等高能量創傷引起。脊髓損傷程度決定預後，深層痛覺喪失者預後極差。
-
 aliases:
-  - { alias: "Vertebral Fracture", language: en }
-  - { alias: "Spine Fracture", language: en }
-  - { alias: "脊柱骨折", language: zh }
-
+  - alias: Vertebral Fracture
+    language: en
+  - alias: Spine Fracture
+    language: en
+  - alias: 脊柱骨折
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓偶見。高處墜落與車禍。
-
 etiology:
   categories:
     - name: 高能量外傷
@@ -24,7 +24,6 @@ etiology:
         - 車禍
         - 高處墜落
         - 被踢/踩
-
 clinicalSigns:
   early:
     - 突然癱瘓
@@ -35,7 +34,6 @@ clinicalSigns:
     - 排尿排便失禁
     - 脊髓休克
     - 深層痛覺喪失（嚴重）
-
 diagnosis:
   primaryTests:
     - name: X 光
@@ -44,7 +42,6 @@ diagnosis:
       notes: 評估脊髓壓迫與損傷程度
     - name: 神經學檢查
       notes: 深層痛覺評估為預後關鍵指標
-
 treatment:
   principles:
     - 穩定脊柱防止二次損傷
@@ -56,29 +53,59 @@ treatment:
     - Methylprednisolone 高劑量（爭議大，現多不建議）
     - 術後支持性照護
     - 物理復健
-
 prognosis: 深層痛覺完整者手術後預後中等至良好。深層痛覺喪失超過 48 小時者預後極差。穩定性骨折不合併脊髓壓迫可保守治療。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Canine Seventh Lumbar Vertebra Fracture: A Systematic Review."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Canine Seventh Lumbar Vertebra Fracture: A Systematic Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8773406/
     type: review
-    pmid: "35049817"
+    pmid: '35049817'
     relevance: primary
   - sourceOrg: Bioengineered
-    title: MiRNA-99a alleviates inflammation and oxidative stress in lipopolysaccharide-stimulated PC-12 cells and rats post spinal cord injury.
+    title: >-
+      MiRNA-99a alleviates inflammation and oxidative stress in lipopolysaccharide-stimulated PC-12 cells and rats post
+      spinal cord injury.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8974123/
     type: research
-    pmid: "35135443"
+    pmid: '35135443'
     relevance: supporting
   - sourceOrg: BMC musculoskeletal disorders
-    title: "Intervertebral disc degeneration induced by long-segment in-situ immobilization: a macro, micro, and nanoscale analysis."
+    title: >-
+      Intervertebral disc degeneration induced by long-segment in-situ immobilization: a macro, micro, and nanoscale
+      analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6114269/
     type: research
-    pmid: "30153821"
+    pmid: '30153821'
     relevance: supporting
 pubmedQueries:
   - query: '"spinal fracture" AND (veterinary OR canine OR feline) AND ("surgery" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 脊椎骨折 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - paresis-paralysis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: X 光
+          notes: 脊椎骨折/脫位。需保護性搬運避免加重損傷
+        - name: CT / MRI
+          notes: 評估脊髓壓迫與損傷程度
+        - name: 神經學檢查
+          notes: 深層痛覺評估為預後關鍵指標
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 穩定脊柱防止二次損傷
+        - 手術減壓固定
+        - 深層痛覺為預後指標
+ddxSource: auto-generated

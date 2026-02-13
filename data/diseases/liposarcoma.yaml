@@ -3,11 +3,11 @@ nameEn: Liposarcoma
 nameZh: 脂肪肉瘤
 bodySystem: oncology
 description: 脂肪組織的惡性腫瘤，為脂肪瘤的惡性對應。局部侵犯性強，完全切除後復發率中等。遠端轉移率相對低但可轉移至肺部。需與良性脂肪瘤鑑別，組織病理為確診依據。
-
 aliases:
-  - { alias: "Malignant Lipoma", language: en }
-  - { alias: "脂肪惡性腫瘤", language: zh }
-
+  - alias: Malignant Lipoma
+    language: en
+  - alias: 脂肪惡性腫瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,14 +15,12 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 腫瘤性
       examples:
         - 脂肪細胞惡性增生
         - 確切病因不明
-
 clinicalSigns:
   early:
     - 快速增長的皮下腫塊
@@ -32,14 +30,12 @@ clinicalSigns:
     - 局部侵犯周圍組織
     - 潰瘍
     - 遠端轉移（肺）
-
 diagnosis:
   primaryTests:
     - name: 組織病理
       notes: 確診需活檢。區分低度與高度惡性
     - name: 胸腔 X 光 / CT
       notes: 分期檢查排除轉移
-
 treatment:
   principles:
     - 廣範圍手術切除
@@ -48,36 +44,59 @@ treatment:
     - 廣範圍手術切除
     - 不完全切除考慮放射治療
     - 化療效果有限
-
 prognosis: 完全切除後預後中等。局部復發率約 30-50%。低度惡性預後優於高度惡性。
-
-
 guidelineRefs:
   - sourceOrg: Cureus
-    title: "Imaging Findings of Atypical Spindle Cell/Pleomorphic Lipomatous Tumors: A Case Series and Systematic Review."
+    title: 'Imaging Findings of Atypical Spindle Cell/Pleomorphic Lipomatous Tumors: A Case Series and Systematic Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12596547/
     type: case-report
-    pmid: "41216078"
+    pmid: '41216078'
   - sourceOrg: Veterinary medicine and science
-    title: "Liposarcoma in a Common Quail (Coturnix coturnix): A Case Report."
+    title: 'Liposarcoma in a Common Quail (Coturnix coturnix): A Case Report.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12335207/
     type: case-report
-    pmid: "40782116"
+    pmid: '40782116'
   - sourceOrg: Journal of toxicologic pathology
     title: Dedifferentiated retroperitoneal liposarcoma spontaneously occurring in an aged SD rat.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5938215/
     type: case-report
-    pmid: "29750003"
+    pmid: '29750003'
   - sourceOrg: Cells
     title: Genetic Characteristics of the Rat Fibroblast Cell Line Rat-1.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11719652/
     type: research
-    pmid: "39791722"
+    pmid: '39791722'
   - sourceOrg: Clinical sarcoma research
     title: Immunophenotypic expression of UCP1 in hibernoma and other adipose/non adipose soft tissue tumours.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6515671/
     type: research
-    pmid: "31114671"
+    pmid: '31114671'
 pubmedQueries:
   - query: '"liposarcoma" AND (veterinary OR canine OR feline) AND ("prognosis" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 脂肪肉瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 組織病理
+          notes: 確診需活檢。區分低度與高度惡性
+        - name: 胸腔 X 光 / CT
+          notes: 分期檢查排除轉移
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 廣範圍手術切除
+        - 術後病理評估切除邊緣
+ddxSource: auto-generated

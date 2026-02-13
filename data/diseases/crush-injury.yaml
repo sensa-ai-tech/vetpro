@@ -3,11 +3,11 @@ nameEn: Crush Injury
 nameZh: 擠壓傷
 bodySystem: emergency
 description: 長時間組織受壓引起肌肉壞死、橫紋肌溶解及急性腎衰竭。釋放壓迫後可能發生再灌流傷害。
-
 aliases:
-  - { alias: 擠壓症候群, language: zh }
-  - { alias: Crush Syndrome, language: en }
-
+  - alias: 擠壓症候群
+    language: zh
+  - alias: Crush Syndrome
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,13 +17,11 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 同犬
-
 etiology:
   categories:
     - name: 原因
       examples:
         - 車禍、重物壓迫、建築物倒塌
-
 clinicalSigns:
   early:
     - 肢體腫脹、疼痛
@@ -32,16 +30,14 @@ clinicalSigns:
     - 橫紋肌溶解(肌紅素尿)
     - 高鉀、高磷
     - 急性腎衰竭
-
 diagnosis:
   primaryTests:
     - name: 肌酸激酶(CK)
-      notes: "極度升高(>10000 U/L)"
+      notes: 極度升高(>10000 U/L)
     - name: 肌紅素尿
-      notes: "深咖啡色尿液"
+      notes: 深咖啡色尿液
   differentialDiagnoses:
     - 其他橫紋肌溶解
-
 treatment:
   medical:
     - 積極靜脈輸液(預防腎衰竭)
@@ -50,37 +46,94 @@ treatment:
     - 校正電解質(高鉀)
     - 筋膜切開術(若腔室症候群)
     - 透析(若腎衰竭)
-
 prognosis:
-  general: "及早積極輸液可防止腎衰竭。嚴重案例可能截肢或死亡。"
-
+  general: 及早積極輸液可防止腎衰竭。嚴重案例可能截肢或死亡。
 prevention:
   - 避免創傷
-
-
 guidelineRefs:
   - sourceOrg: Neuromolecular medicine
-    title: Folic Acid Promotes Peripheral Nerve Injury Repair via Regulating DNM3-AKT Pathway Through Mediating Methionine Cycle Metabolism.
+    title: >-
+      Folic Acid Promotes Peripheral Nerve Injury Repair via Regulating DNM3-AKT Pathway Through Mediating Methionine
+      Cycle Metabolism.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11958391/
     type: research
-    pmid: "40163256"
+    pmid: '40163256'
   - sourceOrg: Neuroreport
     title: Cathepsin B promotes optic nerve axonal regeneration.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11949221/
     type: research
-    pmid: "40177832"
+    pmid: '40177832'
   - sourceOrg: Cells
-    title: "Unveiling Neuroprotection and Regeneration Mechanisms in Optic Nerve Injury: Insight from Neural Progenitor Cell Therapy with Focus on Vps35 and Syntaxin12."
+    title: >-
+      Unveiling Neuroprotection and Regeneration Mechanisms in Optic Nerve Injury: Insight from Neural Progenitor Cell
+      Therapy with Focus on Vps35 and Syntaxin12.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10572010/
     type: research
-    pmid: "37830626"
+    pmid: '37830626'
   - sourceOrg: Journal of orthopaedic surgery and research
     title: Effect of necrostatin-1 on sciatic nerve crush injury in rat models.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9885697/
     type: research
-    pmid: "36717933"
+    pmid: '36717933'
   - sourceOrg: Pain
-    title: Long-term tactile hypersensitivity after nerve crush injury in mice is characterized by the persistence of intact sensory axons.
+    title: >-
+      Long-term tactile hypersensitivity after nerve crush injury in mice is characterized by the persistence of intact
+      sensory axons.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10502897/
     type: research
-    pmid: "37366595"
+    pmid: '37366595'
+diagnosticAlgorithm:
+  title: 壓砸傷/壓砸症候群 診斷與處置流程
+  steps:
+    - step: 1
+      action: 現場評估與輸液
+      details: 確認壓迫創傷史，解壓前開始輸液
+      findings:
+        - 受壓時間和範圍評估
+        - 立即建立靜脈通路
+        - 0.9% NaCl 4-6 mL/kg/hr開始
+        - 解壓後密切監測血壓和心律
+    - step: 2
+      action: 高鉀血症緊急評估
+      details: ECG+急查電解質+CK
+      findings:
+        - ECG：高尖T波→帳篷狀T波→QRS增寬
+        - K⁺>6.0 mEq/L需緊急處理
+        - CK顯著升高（>10,000 U/L）
+        - 肌紅蛋白尿（深色尿）
+    - step: 3
+      action: 腎保護策略
+      details: 積極輸液+尿液鹼化+利尿
+      findings:
+        - 尿量目標>2 mL/kg/hr
+        - NaHCO₃鹼化尿液（pH>6.5）
+        - Mannitol利尿
+        - BUN/Crea基線值
+    - step: 4
+      action: 持續監測與後續處理
+      details: 腎功能追蹤+傷口處理+併發症監測
+      findings:
+        - Crea q12-24h追蹤AKI
+        - 電解質q6-12h
+        - CK趨勢（下降=肌肉損傷穩定）
+        - 壞死組織清創評估
+clinicalPearls:
+  - 壓力解除是最危險的時刻——再灌流傷害可致急性高鉀血症和心停止
+  - 理想的做法是在解壓前就開始輸液（pre-rescue fluid resuscitation）
+  - CK>10,000 U/L高度提示橫紋肌溶解，>100,000 U/L預示嚴重AKI風險
+  - 尿液潛血試紙陽性但鏡檢無紅血球→肌紅蛋白尿（非血尿）
+  - 尿液鹼化（pH>6.5）可減少肌紅蛋白在腎小管沉積
+monitoringItems:
+  - 電解質（K⁺ q4-6h急性期）
+  - CK（橫紋肌溶解趨勢）
+  - BUN/Crea（AKI監測）
+  - 尿量（目標>2 mL/kg/hr）
+  - 尿液顏色和pH
+  - 心電圖連續監測
+  - 血壓
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

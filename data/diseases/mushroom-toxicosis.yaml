@@ -2,13 +2,16 @@ slug: mushroom-toxicosis
 nameEn: Mushroom Toxicosis
 nameZh: 毒菇中毒
 bodySystem: toxicology
-description: 毒菇中毒 (mushroom toxicosis) 為犬常見的植物性中毒之一。毒素種類繁多，包括引起肝壞死的鵝膏毒素 (amatoxin)、引起神經症狀的 ibotenic acid/muscimol，以及引起消化道症狀的多種毒素。Amanita phalloides（死亡帽菇）致死率最高。
-
+description: >-
+  毒菇中毒 (mushroom toxicosis) 為犬常見的植物性中毒之一。毒素種類繁多，包括引起肝壞死的鵝膏毒素 (amatoxin)、引起神經症狀的 ibotenic
+  acid/muscimol，以及引起消化道症狀的多種毒素。Amanita phalloides（死亡帽菇）致死率最高。
 aliases:
-  - { alias: 蕈類中毒, language: zh }
-  - { alias: Mushroom Poisoning, language: en }
-  - { alias: Mycetism, language: en }
-
+  - alias: 蕈類中毒
+    language: zh
+  - alias: Mushroom Poisoning
+    language: en
+  - alias: Mycetism
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓毒菇中毒罕見。攝入報告極少。
-
 etiology:
   categories:
     - name: 主要毒素分類
@@ -30,20 +32,18 @@ etiology:
       examples:
         - 早期發作型（<6 小時）— 通常非致命
         - 延遲發作型（>6 小時）— 可能致命（amatoxin 高度懷疑）
-
 clinicalSigns:
   early:
     - 嘔吐與腹瀉（消化道刺激型，<6 小時）
     - 流涎、流淚（muscarine 型）
     - 共濟失調、行為異常（ibotenic acid 型）
   progressive:
-    - "Amatoxin 型：假性恢復期後急性肝衰竭（24-72 小時）"
+    - Amatoxin 型：假性恢復期後急性肝衰竭（24-72 小時）
     - 黃疸
     - 凝血障礙
     - 腎衰竭
     - 低血糖
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 蕈類辨識
@@ -55,7 +55,6 @@ diagnosis:
     - 凝血功能
     - 尿液 amatoxin 檢測（特殊實驗室）
     - CBC 與生化
-
 treatment:
   principles:
     - 保留蕈類樣本供鑑定
@@ -64,15 +63,66 @@ treatment:
     - 類型針對性支持
   general:
     - 催吐 + 活性炭（多次給予，amatoxin 有腸肝循環）
-    - "Amatoxin 型：silibinin/silymarin 20-50 mg/kg/day IV + NAC + penicillin G"
+    - Amatoxin 型：silibinin/silymarin 20-50 mg/kg/day IV + NAC + penicillin G
     - IV 輸液
     - 保肝治療
     - Muscarine 型：atropine
     - Ibotenic acid 型：支持療法 + benzodiazepine
     - 新鮮冷凍血漿（凝血障礙）
-
 prognosis: 消化道刺激型毒菇中毒預後良好（自限性）。Amatoxin 型中毒致死率高（50-90% 未治療）。早期積極治療（silibinin、NAC）可改善存活率至 50-70%。蕈類辨識為治療決策關鍵。
-
 pubmedQueries:
   - query: '"mushroom toxicosis" AND (veterinary OR canine) AND ("treatment" OR "amatoxin")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 蘑菇中毒 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估與蘑菇鑑定
+      details: 確認蘑菇暴露和種類鑑定
+      findings:
+        - 目擊或疑似蘑菇攝入
+        - 蘑菇樣本收集供鑑定
+        - 症狀發作時間（快速vs延遲）
+        - 延遲發作（>6小時）提示肝毒性蘑菇
+    - step: 2
+      action: 臨床症狀評估
+      details: 根據症狀類型分類毒素類型
+      findings:
+        - 胃腸道型：嘔吐、腹瀉（最常見）
+        - 肝毒性型：延遲性肝衰竭（Amanita phalloides）
+        - 神經毒性型：震顫、癲癇、幻覺
+        - 腎毒性型：急性腎損傷
+    - step: 3
+      action: 實驗室監測
+      details: 進行連續性實驗室監測評估器官損傷
+      findings:
+        - 肝酶連續監測（ALT、AST、ALP）
+        - 腎功能指標
+        - 凝血功能（肝毒性型）
+        - 血糖監測（Amanita致低血糖）
+    - step: 4
+      action: 毒物學與專家諮詢
+      details: 必要時進行毒物學檢測和專家鑑定
+      findings:
+        - 蘑菇種類專家鑑定
+        - 尿液amatoxin檢測（疑似Amanita）
+        - 肝臟活檢（嚴重肝損傷病例）
+        - 動物毒物控制中心諮詢
+clinicalPearls:
+  - 鵝膏毒素中毒的典型病程有「假性恢復期」：初期腸胃症狀 → 6-12 小時後症狀改善 → 24-72 小時後爆發肝衰竭
+  - 蘑菇鑑定困難，建議保留殘餘蘑菇或嘔吐物送真菌學專家鑑定
+  - 潛伏期超過 6 小時的蘑菇中毒應高度懷疑鵝膏毒素，預後較差
+  - 後院或花園中的蘑菇不等於安全，許多劇毒蘑菇外觀普通
+monitoringItems:
+  - 每 12-24 小時監測肝酵素（ALT、AST）
+  - 監測凝血功能（PT、aPTT）
+  - 監測血糖（低血糖提示肝衰竭）
+  - 尿量監測（評估腎功能）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

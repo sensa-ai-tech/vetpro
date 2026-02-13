@@ -3,11 +3,11 @@ nameEn: Aortic Aneurysm
 nameZh: 主動脈瘤
 bodySystem: vascular
 description: 主動脈壁局部異常擴張，可能因血流動力學異常、感染或結構缺陷引起。犬較貓常見，多發生於胸主動脈或腹主動脈。破裂可導致急性大出血致死。
-
 aliases:
-  - { alias: 大動脈瘤, language: zh }
-  - { alias: Aortic Dilation, language: en }
-
+  - alias: 大動脈瘤
+    language: zh
+  - alias: Aortic Dilation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓極罕見，多為先天性或感染性
-
 etiology:
   categories:
     - name: 感染性
@@ -33,7 +32,6 @@ etiology:
       examples:
         - 動脈粥狀硬化
         - 長期未控制高血壓
-
 clinicalSigns:
   early:
     - 多數無症狀，影像學偶然發現
@@ -42,21 +40,19 @@ clinicalSigns:
     - 腹主動脈瘤：腹部可觸診脈動性腫塊
     - 胸主動脈瘤：呼吸困難、咳嗽、吞嚥困難
     - 急性破裂：虛脫、黏膜蒼白、血胸或腹腔積血
-
 diagnosis:
   primaryTests:
     - name: 胸腹腔 X 光
-      notes: "可見主動脈輪廓異常擴張或縱膈腔腫塊"
+      notes: 可見主動脈輪廓異常擴張或縱膈腔腫塊
     - name: 超音波或 CT 血管攝影
-      notes: "確認動脈瘤位置、大小、壁厚及血栓形成"
+      notes: 確認動脈瘤位置、大小、壁厚及血栓形成
     - name: 心臟超音波
-      notes: "評估心絲蟲或心內膜炎"
+      notes: 評估心絲蟲或心內膜炎
   differentialDiagnoses:
     - 縱膈腔腫瘤
     - 淋巴結腫大
     - 腹腔腫塊
     - 主動脈夾層
-
 treatment:
   medical:
     - 小型無症狀動脈瘤：定期影像追蹤（每 3-6 個月）
@@ -64,39 +60,71 @@ treatment:
     - 抗生素治療感染性病因
     - 外科手術或血管內支架（專科中心）
     - 急性破裂：緊急輸血、液體復甦、外科修補
-
 prognosis:
-  general: "預後極度保留。未破裂且小於 2 倍主動脈直徑者可保守追蹤，但破裂性主動脈瘤幾乎無法存活（死亡率 >90%）。外科手術風險高，需專科評估。"
-
+  general: 預後極度保留。未破裂且小於 2 倍主動脈直徑者可保守追蹤，但破裂性主動脈瘤幾乎無法存活（死亡率 >90%）。外科手術風險高，需專科評估。
 prevention:
   - 心絲蟲定期預防
   - 高血壓患者定期血壓監測
   - 心臟病患者定期影像學追蹤
-
-
 guidelineRefs:
   - sourceOrg: Cells
     title: Cellular, Molecular and Clinical Aspects of Aortic Aneurysm-Vascular Physiology and Pathophysiology.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10854611/
     type: review
-    pmid: "38334666"
+    pmid: '38334666'
   - sourceOrg: Biomedicines
-    title: "Multilineage-Differentiating Stress-Enduring Cells (Muse Cells): The Future of Human and Veterinary Regenerative Medicine."
+    title: >-
+      Multilineage-Differentiating Stress-Enduring Cells (Muse Cells): The Future of Human and Veterinary Regenerative
+      Medicine.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9953712/
     type: review
-    pmid: "36831171"
+    pmid: '36831171'
   - sourceOrg: Journal of neuropathology and experimental neurology
     title: Histological Findings After Aortic Cross-Clamping in Preclinical Animal Models.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8783616/
     type: review
-    pmid: "34534333"
+    pmid: '34534333'
   - sourceOrg: Frontiers in cardiovascular medicine
     title: Use of Nanoparticles As Contrast Agents for the Functional and Molecular Imaging of Abdominal Aortic Aneurysm.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5362602/
     type: review
-    pmid: "28386544"
+    pmid: '28386544'
   - sourceOrg: International journal of molecular sciences
     title: Telomere Biology and Thoracic Aortic Aneurysm.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5795955/
     type: review
-    pmid: "29267201"
+    pmid: '29267201'
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 主動脈瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - dysphagia 相關症狀
+        - pallor-cyanosis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸腹腔 X 光
+          notes: 可見主動脈輪廓異常擴張或縱膈腔腫塊
+        - name: 超音波或 CT 血管攝影
+          notes: 確認動脈瘤位置、大小、壁厚及血栓形成
+        - name: 心臟超音波
+          notes: 評估心絲蟲或心內膜炎
+ddxSource: auto-generated

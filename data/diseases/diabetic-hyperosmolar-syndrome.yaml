@@ -3,12 +3,13 @@ nameEn: Diabetic Hyperosmolar Syndrome
 nameZh: 糖尿病高滲透壓症候群
 bodySystem: endocrine
 description: 嚴重高血糖(通常>600 mg/dL)合併高血漿滲透壓但無明顯酮酸中毒,導致脫水、電解質紊亂及意識改變,為糖尿病急症。
-
 aliases:
-  - { alias: 高滲透壓性非酮酸性昏迷, language: zh }
-  - { alias: HHS, language: en }
-  - { alias: HONK, language: en }
-
+  - alias: 高滲透壓性非酮酸性昏迷
+    language: zh
+  - alias: HHS
+    language: en
+  - alias: HONK
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓偶見,常伴隨其他嚴重疾病
-
 etiology:
   categories:
     - name: 誘發因素
@@ -33,7 +33,6 @@ etiology:
         - 極度高血糖導致滲透性利尿
         - 嚴重脫水致血漿滲透壓升高(>350 mOsm/kg)
         - 腦細胞脫水導致神經症狀
-
 clinicalSigns:
   early:
     - 極度多渴但無法飲水
@@ -45,25 +44,23 @@ clinicalSigns:
     - 低體溫
     - 休克症狀(黏膜蒼白、微血管再充填延遲)
     - 可能無酮味呼吸
-
 diagnosis:
   primaryTests:
     - name: 血糖
-      notes: "極度升高,通常>600 mg/dL,可達800-1000 mg/dL以上"
+      notes: 極度升高,通常>600 mg/dL,可達800-1000 mg/dL以上
     - name: 血漿滲透壓
-      notes: ">350 mOsm/kg(計算公式: 2×[Na+K] + 葡萄糖/18 + BUN/2.8)"
+      notes: '>350 mOsm/kg(計算公式: 2×[Na+K] + 葡萄糖/18 + BUN/2.8)'
     - name: 血氣分析
-      notes: "通常無明顯代謝性酸中毒(pH >7.3, HCO3 >15 mmol/L)"
+      notes: 通常無明顯代謝性酸中毒(pH >7.3, HCO3 >15 mmol/L)
     - name: 尿液分析
-      notes: "尿糖陽性,酮體陰性或弱陽性"
+      notes: 尿糖陽性,酮體陰性或弱陽性
     - name: 電解質
-      notes: "可能高鈉血症、低鉀血症、低磷血症"
+      notes: 可能高鈉血症、低鉀血症、低磷血症
   differentialDiagnoses:
     - 糖尿病酮酸中毒
     - 其他原因高滲透壓狀態(高鈉血症)
     - 尿毒症
     - 敗血性休克
-
 treatment:
   medical:
     - 緩慢靜脈輸液復水(0.45% NaCl 或 0.9% NaCl,依血鈉濃度選擇)
@@ -74,12 +71,62 @@ treatment:
     - 血糖降至250 mg/dL後改用5% dextrose輸液
     - 治療原發疾病(感染、胰臟炎等)
     - 密集監測(每1-2小時血糖、電解質、神經狀態)
-
 prognosis:
-  general: "預後保守至不良,死亡率可達40-60%。併發腦水腫、癲癇、多器官衰竭者預後極差。存活者需長期糖尿病管理。"
-
+  general: 預後保守至不良,死亡率可達40-60%。併發腦水腫、癲癇、多器官衰竭者預後極差。存活者需長期糖尿病管理。
 prevention:
   - 糖尿病患者維持充足飲水
   - 早期識別並治療併發疾病
   - 定期監測血糖避免極度失控
   - 避免使用可能誘發高血糖藥物(類固醇)
+diagnosticAlgorithm:
+  title: 高滲透壓高血糖症候群 診斷流程
+  steps:
+    - step: 1
+      action: 血糖與酮體
+      details: 測定血糖和尿酮體
+      findings:
+        - 血糖 >600 mg/dL
+        - 酮體陰性或微量陽性
+    - step: 2
+      action: 滲透壓評估
+      details: 測定或計算血清滲透壓
+      findings:
+        - 犬>325或貓>350 mOsm/kg
+        - 嚴重脫水
+    - step: 3
+      action: 電解質和酸鹼
+      details: 血氣分析和全面電解質評估
+      findings:
+        - pH >7.3（無明顯酸中毒）
+        - Na+常偏高、K+需密切監測
+    - step: 4
+      action: 補液穩定+尋找觸發因子
+      details: 積極補液，同時尋找併發感染等觸發因子
+      findings:
+        - 感染是最常見的觸發因子
+        - 穩定後開始胰島素治療
+clinicalPearls:
+  - HHS vs DKA的關鍵鑑別：HHS血糖更高（>600 vs >250）、無明顯酮症、滲透壓更高、神經症狀更突出
+  - 治療的首要步驟是補液而非胰島素——過早給胰島素會造成滲透壓急劇下降引發腦水腫
+  - 血糖和鈉濃度必須緩慢矯正——每小時血糖下降不超過50-75 mg/dL
+monitoringItems:
+  - 血糖（q1-2h直至穩定）
+  - 血清電解質（q2-4h，特別是鈉和鉀）
+  - 血清滲透壓（q4-6h，確保緩慢下降）
+  - 神經學狀態評估（q2-4h，警惕腦水腫）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+ddxSource: book

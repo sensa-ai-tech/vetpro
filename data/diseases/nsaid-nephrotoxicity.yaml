@@ -3,13 +3,15 @@ nameEn: NSAID Nephrotoxicity
 nameZh: 非類固醇消炎藥腎毒性
 bodySystem: toxicology
 description: 非類固醇消炎藥 (NSAID) 腎毒性是因 NSAIDs 抑制前列腺素合成，導致腎臟血流量減少而引起的急性腎損傷。在脫水、低血壓或腎功能已受損的動物中風險尤高。
-
 aliases:
-  - { alias: NSAID 腎損傷, language: zh }
-  - { alias: 消炎藥腎毒性, language: zh }
-  - { alias: NSAID-Induced Nephropathy, language: en }
-  - { alias: Prostaglandin Inhibition Nephrotoxicity, language: en }
-
+  - alias: NSAID 腎損傷
+    language: zh
+  - alias: 消炎藥腎毒性
+    language: zh
+  - alias: NSAID-Induced Nephropathy
+    language: en
+  - alias: Prostaglandin Inhibition Nephrotoxicity
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓因葡萄糖醛酸化代謝能力低下，對 NSAIDs 更敏感。慢性腎病貓使用 NSAID 需格外謹慎。Meloxicam 長期低劑量使用需密切監測。
-
 etiology:
   categories:
     - name: 機制
@@ -36,7 +37,6 @@ etiology:
         - 術後低血壓
         - 多種 NSAIDs 或 NSAID + 類固醇併用
         - 老年動物
-
 clinicalSigns:
   early:
     - BUN/Creatinine 輕度上升
@@ -50,19 +50,17 @@ clinicalSigns:
     - 脫水
     - 電解質失衡
     - 腹部疼痛
-
 diagnosis:
   primaryTests:
     - name: 腎功能監測
-      notes: "BUN/Creatinine 用藥前基線與用藥後比較。IRIS 分期評估。SDMA 可能較早反映腎功能下降。"
+      notes: BUN/Creatinine 用藥前基線與用藥後比較。IRIS 分期評估。SDMA 可能較早反映腎功能下降。
     - name: 尿液分析
-      notes: "尿液比重下降、管型尿、蛋白尿。尿量監測。"
+      notes: 尿液比重下降、管型尿、蛋白尿。尿量監測。
   differentialDiagnoses:
     - 脫水性腎前性氮血症
     - 急性腎損傷（其他原因）
     - 胺基糖苷類腎毒性
     - 泌尿道阻塞
-
 treatment:
   medical:
     - 立即停用所有 NSAIDs
@@ -73,13 +71,43 @@ treatment:
     - 嚴重者考慮透析
   surgical:
     - 通常不適用手術治療
-
 prognosis:
-  general: "早期停藥並恢復腎灌流者預後良好，多數腎功能可恢復。已有既存腎臟疾病者恢復可能不完全。關鍵在於及時辨識風險因素與早期干預。"
-
+  general: 早期停藥並恢復腎灌流者預後良好，多數腎功能可恢復。已有既存腎臟疾病者恢復可能不完全。關鍵在於及時辨識風險因素與早期干預。
 prevention:
   - 使用 NSAIDs 前確認腎功能與水合狀態
   - 術中維持適當血壓與腎灌流
   - 避免在脫水或低血壓狀態下使用 NSAIDs
   - 老年動物與腎病動物謹慎用藥或選擇替代止痛方案
   - 避免 NSAID + 類固醇或 NSAID + ACEi 三重打擊
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: oliguria-anuria
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 非類固醇消炎藥腎毒性 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - abdominal-pain 相關症狀
+        - dehydration 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腎功能監測
+          notes: BUN/Creatinine 用藥前基線與用藥後比較。IRIS 分期評估。SDMA 可能較早反映腎功能下降。
+        - name: 尿液分析
+          notes: 尿液比重下降、管型尿、蛋白尿。尿量監測。
+ddxSource: auto-generated

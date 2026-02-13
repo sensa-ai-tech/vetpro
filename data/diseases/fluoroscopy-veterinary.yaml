@@ -3,11 +3,11 @@ nameEn: Fluoroscopy Veterinary
 nameZh: 透視檢查應用
 bodySystem: other
 description: 獸醫臨床透視檢查應用,提供即時動態X光影像。用於吞嚥功能評估、異物定位、導管置入導引、關節動態評估等。相較於靜態X光,可觀察動態生理功能。
-
 aliases:
-  - { alias: 動態X光, language: zh }
-  - { alias: Fluoroscopic examination, language: en }
-
+  - alias: 動態X光
+    language: zh
+  - alias: Fluoroscopic examination
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓巨食道症、吞嚥困難評估
-
 etiology:
   categories:
     - name: 臨床應用
@@ -26,61 +25,80 @@ etiology:
         - 氣管塌陷動態評估
         - 異物定位及取出導引
         - 血管或尿路導管置入導引
-
 clinicalSigns:
   early:
     - 透視為診斷工具,需鎮靜或麻醉
   progressive:
     - 對應吞嚥障礙、呼吸困難等症狀
-
 diagnosis:
   primaryTests:
     - name: 鋇劑吞嚥檢查
-      notes: "觀察鋇劑通過食道、胃過程,評估蠕動功能"
+      notes: 觀察鋇劑通過食道、胃過程,評估蠕動功能
     - name: 氣管評估
-      notes: "吸氣呼氣時觀察氣管直徑變化"
+      notes: 吸氣呼氣時觀察氣管直徑變化
   differentialDiagnoses:
     - 巨食道症
     - 氣管塌陷
     - 吞嚥障礙
-
 treatment:
   medical:
     - 透視為診斷及導引工具
     - 依診斷結果決定治療方向
-
 prognosis:
-  general: "透視提供動態影像資訊,為某些疾病診斷必要工具。輻射暴露較高,需適當防護。"
-
+  general: 透視提供動態影像資訊,為某些疾病診斷必要工具。輻射暴露較高,需適當防護。
 prevention:
   - 需專門透視設備
   - 操作人員需輻射防護
   - 與靜態X光互補使用
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary science
-    title: "Fluoroscopic characteristics of tracheal collapse and cervical lung herniation in dogs: 222 cases (2012-2015)."
+    title: 'Fluoroscopic characteristics of tracheal collapse and cervical lung herniation in dogs: 222 cases (2012-2015).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5746443/
     type: case-report
-    pmid: "28057909"
-  - sourceOrg: "Veterinary surgery : VS"
-    title: Accuracy of a table-bound reduction and drill guide system for minimally invasive sacroiliac screw placement in cats.
+    pmid: '28057909'
+  - sourceOrg: 'Veterinary surgery : VS'
+    title: >-
+      Accuracy of a table-bound reduction and drill guide system for minimally invasive sacroiliac screw placement in
+      cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12810432/
     type: research
-    pmid: "40159866"
+    pmid: '40159866'
   - sourceOrg: Veterinary medicine and science
-    title: Use of a videofluoroscopic feeding evaluation to guide management of dogs with congenital idiopathic megaoesophagus.
+    title: >-
+      Use of a videofluoroscopic feeding evaluation to guide management of dogs with congenital idiopathic
+      megaoesophagus.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9297758/
     type: research
-    pmid: "35476311"
+    pmid: '35476311'
   - sourceOrg: Journal of veterinary internal medicine
     title: Videofluoroscopic swallow study features of lower esophageal sphincter achalasia-like syndrome in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6766503/
     type: research
-    pmid: "31381208"
+    pmid: '31381208'
   - sourceOrg: Journal of veterinary science
-    title: "A retrospective study of theophylline-based therapy with tracheal collapse in small-breed dogs: 47 cases (2013-2017)."
+    title: >-
+      A retrospective study of theophylline-based therapy with tracheal collapse in small-breed dogs: 47 cases
+      (2013-2017).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6769334/
     type: research
-    pmid: "31565900"
+    pmid: '31565900'
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 透視檢查應用 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 鋇劑吞嚥檢查
+          notes: 觀察鋇劑通過食道、胃過程,評估蠕動功能
+        - name: 氣管評估
+          notes: 吸氣呼氣時觀察氣管直徑變化
+ddxSource: auto-generated

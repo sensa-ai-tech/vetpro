@@ -3,12 +3,13 @@ nameEn: Pilomatricoma
 nameZh: 毛母質瘤
 bodySystem: dermatology
 description: 毛母質（hair matrix）細胞來源的良性皮膚腫瘤。堅硬的皮膚/皮下結節，觸感如骨頭般硬（因鈣化）。犬常見的良性附屬器腫瘤，手術切除即可。
-
 aliases:
-  - { alias: "Pilomatrixoma", language: en }
-  - { alias: "Calcifying Epithelioma", language: en }
-  - { alias: "鈣化上皮瘤", language: zh }
-
+  - alias: Pilomatrixoma
+    language: en
+  - alias: Calcifying Epithelioma
+    language: en
+  - alias: 鈣化上皮瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,14 +17,12 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 良性毛母質增生
       examples:
         - 毛母質細胞分化腫瘤
         - 常伴鈣化
-
 clinicalSigns:
   early:
     - 堅硬皮內結節
@@ -33,40 +32,64 @@ clinicalSigns:
     - 緩慢增大
     - 可能多發性
     - 惡性變極罕見
-
 diagnosis:
   primaryTests:
     - name: 細針穿刺
       notes: 影細胞（ghost cells）與鈣化碎片
     - name: 組織病理
       notes: 確認診斷
-
 treatment:
   principles:
     - 手術切除
   general:
     - 手術完整切除
     - 多發性需多處切除
-
 prognosis: 切除後預後極佳。惡性毛母質癌極為罕見。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Neoplasia and Proliferative Lesions of New World Camelids: A Systematic Literature Review and Retrospective Study of Cases Submitted to Colorado State University From 1995 to 2020."
+    title: >-
+      Neoplasia and Proliferative Lesions of New World Camelids: A Systematic Literature Review and Retrospective Study
+      of Cases Submitted to Colorado State University From 1995 to 2020.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8569619/
     type: review
-    pmid: "34746283"
+    pmid: '34746283'
   - sourceOrg: Open veterinary journal
-    title: Pathological, histochemical, and immune-histochemical studies on some canine-skin neoplasm at Sharkia province, Egypt.
+    title: >-
+      Pathological, histochemical, and immune-histochemical studies on some canine-skin neoplasm at Sharkia province,
+      Egypt.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11018408/
     type: research
-    pmid: "38633166"
+    pmid: '38633166'
   - sourceOrg: Indian journal of dermatology
-    title: "Cutaneous Adnexal Tumours: A Study of 395 Cases from a Tertiary Care Hospital."
+    title: 'Cutaneous Adnexal Tumours: A Study of 395 Cases from a Tertiary Care Hospital.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10162737/
     type: research
-    pmid: "37151257"
+    pmid: '37151257'
 pubmedQueries:
   - query: '"pilomatricoma" AND (veterinary OR canine) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 毛母質瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 細針穿刺
+          notes: 影細胞（ghost cells）與鈣化碎片
+        - name: 組織病理
+          notes: 確認診斷
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術切除
+ddxSource: auto-generated

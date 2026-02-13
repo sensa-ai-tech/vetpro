@@ -3,11 +3,11 @@ nameEn: Stress Fracture
 nameZh: Stress Fracture
 bodySystem: orthopedic
 description: 骨折,骨骼完整性中斷。需評估骨折類型、穩定性與是否有神經血管損傷,決定保守或手術治療。
-
 aliases:
-  - { alias: Stress Fracture, language: zh }
-  - { alias: Stress Fracture, language: en }
-
+  - alias: Stress Fracture
+    language: zh
+  - alias: Stress Fracture
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 外傷
       examples:
         - 退化性變化
         - 先天性異常
-
 clinicalSigns:
   early:
     - 跛行
@@ -32,61 +30,84 @@ clinicalSigns:
   progressive:
     - 肌肉萎縮
     - 關節畸形
-
 diagnosis:
   primaryTests:
     - name: 骨科檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: X光(多方位)
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 非類固醇消炎藥(Carprofen 2-4 mg/kg PO q12-24h)
     - 疼痛控制
   surgical:
     - name: 根據病況可能需手術治療(骨折固定、韌帶重建、關節置換等)
-      notes: "依病況評估"
-
+      notes: 依病況評估
 prognosis:
-  general: "預後取決於損傷嚴重度、治療方式與飼主配合度。早期適當治療可改善功能恢復。"
-
+  general: 預後取決於損傷嚴重度、治療方式與飼主配合度。早期適當治療可改善功能恢復。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: Current osteoporosis reports
-    title: "Advancements in Subchondral Bone Biomechanics: Insights from Computed Tomography and Micro-Computed Tomography Imaging in Equine Models."
+    title: >-
+      Advancements in Subchondral Bone Biomechanics: Insights from Computed Tomography and Micro-Computed Tomography
+      Imaging in Equine Models.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11499365/
     type: review
-    pmid: "39276168"
+    pmid: '39276168'
     relevance: primary
   - sourceOrg: Equine veterinary journal
     title: A review of equine tibial fractures.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10084381/
     type: review
-    pmid: "35569040"
+    pmid: '35569040'
     relevance: primary
-  - sourceOrg: "Journal of orthopaedic research : official publication of the Orthopaedic Research Society"
-    title: "Vasculogenic gene therapy: No role for revitalization of structural bone allografts."
+  - sourceOrg: 'Journal of orthopaedic research : official publication of the Orthopaedic Research Society'
+    title: 'Vasculogenic gene therapy: No role for revitalization of structural bone allografts.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9984671/
     type: research
-    pmid: "36058614"
+    pmid: '36058614'
     relevance: supporting
   - sourceOrg: Chinese journal of traumatology = Zhonghua chuang shang za zhi
-    title: "Total knee arthroplasty with long tibial stem for tibial stress fractures with knee osteoarthritis: Two birds with one stone."
+    title: >-
+      Total knee arthroplasty with long tibial stem for tibial stress fractures with knee osteoarthritis: Two birds with
+      one stone.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9751529/
     type: research
-    pmid: "35305870"
+    pmid: '35305870'
     relevance: supporting
   - sourceOrg: JBMR plus
-    title: Intermittent Parathyroid Hormone Accelerates Stress Fracture Healing More Effectively Following Cessation of Bisphosphonate Treatment.
+    title: >-
+      Intermittent Parathyroid Hormone Accelerates Stress Fracture Healing More Effectively Following Cessation of
+      Bisphosphonate Treatment.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7507447/
     type: research
-    pmid: "32995690"
+    pmid: '32995690'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: Stress Fracture 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cachexia-muscle-wasting 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 骨科檢查
+          notes: 需詳細評估
+        - name: X光(多方位)
+          notes: 協助確診
+ddxSource: auto-generated

@@ -3,18 +3,18 @@ nameEn: West Highland White Terrier Legg Calve Perthes
 nameZh: 西高地白㹴股骨頭缺血性壞死
 bodySystem: orthopedic
 description: 一種好發於小型犬的股骨頭無菌性壞死疾病,西高地白㹴為高風險品種。通常在5-8月齡發病,導致髖關節疼痛、跛行及退化性關節炎。
-
 aliases:
-  - { alias: LCP病, language: zh }
-  - { alias: Legg-Calvé-Perthes Disease, language: en }
-  - { alias: Avascular Necrosis of Femoral Head, language: en }
-
+  - alias: LCP病
+    language: zh
+  - alias: Legg-Calvé-Perthes Disease
+    language: en
+  - alias: Avascular Necrosis of Femoral Head
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 西高地白㹴、約克夏㹴、曼徹斯特㹴、臘腸犬等小型犬種為高風險群
-
 etiology:
   categories:
     - name: 血管供應不足
@@ -22,7 +22,6 @@ etiology:
         - 股骨頭血管發育異常
         - 微血管栓塞
         - 遺傳因素(體染色體隱性)
-
 clinicalSigns:
   early:
     - 單側後肢間歇性跛行
@@ -33,29 +32,48 @@ clinicalSigns:
     - 患肢肌肉萎縮明顯
     - 髖關節疼痛、僵硬
     - 後肢縮短
-
 diagnosis:
   primaryTests:
     - name: 髖關節X光檢查
-      notes: "顯示股骨頭塌陷、碎裂、密度增加,髖臼邊緣硬化"
+      notes: 顯示股骨頭塌陷、碎裂、密度增加,髖臼邊緣硬化
     - name: CT掃描
-      notes: "早期診斷股骨頭壞死範圍"
+      notes: 早期診斷股骨頭壞死範圍
   differentialDiagnoses:
     - 髖關節發育不良
     - 股骨頭骨折
     - 化膿性關節炎
-
 treatment:
   medical:
     - 股骨頭頸切除術(FHO)為首選外科治療
     - 術前疼痛控制(Carprofen 2-4 mg/kg PO q12h)
     - 術後物理復健治療
     - 體重控制
-
 prognosis:
-  general: "股骨頭頸切除術後預後良好,85-90%小型犬可恢復正常活動能力。保守治療預後較差,易發展為嚴重退化性關節炎。"
-
+  general: 股骨頭頸切除術後預後良好,85-90%小型犬可恢復正常活動能力。保守治療預後較差,易發展為嚴重退化性關節炎。
 prevention:
   - 受影響犬隻不應繁殖
   - 遺傳篩檢及諮詢
   - 幼犬避免過度運動
+associatedSymptoms:
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 西高地白㹴股骨頭缺血性壞死 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cachexia-muscle-wasting 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 髖關節X光檢查
+          notes: 顯示股骨頭塌陷、碎裂、密度增加,髖臼邊緣硬化
+        - name: CT掃描
+          notes: 早期診斷股骨頭壞死範圍
+ddxSource: auto-generated

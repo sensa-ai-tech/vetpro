@@ -3,12 +3,13 @@ nameEn: Lymphocytic Plasmacytic Enteritis
 nameZh: 淋巴細胞漿細胞性腸炎
 bodySystem: gastrointestinal
 description: 淋巴細胞漿細胞性腸炎（LPE）為犬貓最常見的炎症性腸病（IBD）類型，特徵為小腸黏膜固有層（lamina propria）淋巴球與漿細胞過度浸潤。需腸道活檢確診。病因可能與食物過敏、腸道菌群失調或免疫失調有關。
-
 aliases:
-  - { alias: LPE, language: en }
-  - { alias: Lymphoplasmacytic IBD, language: en }
-  - { alias: 淋巴漿細胞性腸炎, language: zh }
-
+  - alias: LPE
+    language: en
+  - alias: Lymphoplasmacytic IBD
+    language: en
+  - alias: 淋巴漿細胞性腸炎
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓隻最常見的 IBD 類型。需與小細胞（低度）腸淋巴瘤鑑別（可能為疾病連續體）。
-
 etiology:
   categories:
     - name: 免疫介導/失調
@@ -30,7 +30,6 @@ etiology:
         - 飲食中的特定蛋白質或碳水化合物
         - 腸道微生態改變
         - 黏膜屏障功能障礙
-
 clinicalSigns:
   early:
     - 慢性間歇性腹瀉
@@ -42,41 +41,71 @@ clinicalSigns:
     - 嘔吐加重
     - 蛋白喪失性腸病（低白蛋白血症）
     - 腹水（嚴重低白蛋白時）
-
 diagnosis:
   primaryTests:
     - name: 腸道活檢（內視鏡或手術）
       notes: 確診必須。內視鏡活檢或全層手術活檢。組織學見固有層淋巴球與漿細胞浸潤增加。WSAVA 標準化評分系統。需排除腸淋巴瘤。
     - name: 排除性檢查
       notes: 排除感染性腸炎（糞便檢查）、EPI（TLI）、食物反應性腸病（排除飲食試驗）。血清 B12 與 Folate 評估吸收功能。
-
 treatment:
   principles:
     - 階梯式治療策略
     - 食物排除試驗為首要步驟
     - 免疫抑制治療
   general:
-    - "食物排除試驗：水解蛋白或新型蛋白飲食 6-8 週"
-    - "Prednisolone 1-2 mg/kg/day PO × 2-4 週後漸減"
-    - "Budesonide 3 mg/m² PO q24h（局部作用皮質類固醇，副作用較少）"
-    - "難治性：Chlorambucil 4-6 mg/m² PO q48h（貓）或 Azathioprine 2 mg/kg PO q48h（犬）"
+    - 食物排除試驗：水解蛋白或新型蛋白飲食 6-8 週
+    - Prednisolone 1-2 mg/kg/day PO × 2-4 週後漸減
+    - Budesonide 3 mg/m² PO q24h（局部作用皮質類固醇，副作用較少）
+    - 難治性：Chlorambucil 4-6 mg/m² PO q48h（貓）或 Azathioprine 2 mg/kg PO q48h（犬）
     - B12 補充（Cobalamin 低時）
-    - "Metronidazole 10-15 mg/kg PO q12h（免疫調節輔助）"
-
+    - Metronidazole 10-15 mg/kg PO q12h（免疫調節輔助）
 prognosis: 多數 LPE 對飲食調整與免疫抑制治療反應良好。食物反應性者預後最好。需長期管理，復發時可能需要增加藥物劑量。蛋白喪失性腸病（PLE）合併低白蛋白者預後較差。貓隻 LPE 需長期追蹤排除腸淋巴瘤轉化。
-
-
 guidelineRefs:
-  - sourceOrg: "Veterinary research forum : an international quarterly journal"
-    title: "A review of inflammatory bowel diseases in humans and pets: treatment strategies."
+  - sourceOrg: 'Veterinary research forum : an international quarterly journal'
+    title: 'A review of inflammatory bowel diseases in humans and pets: treatment strategies.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12854167/
     type: review
-    pmid: "41623954"
+    pmid: '41623954'
   - sourceOrg: Veterinary pathology
     title: Utility of fluorescence imitating brightfield imaging microscopy for the diagnosis of feline chronic enteropathy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9827481/
     type: research
-    pmid: "36286074"
+    pmid: '36286074'
 pubmedQueries:
   - query: '"lymphocytic plasmacytic enteritis" AND (veterinary OR canine OR feline) AND ("IBD" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 淋巴細胞漿細胞性腸炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - vomiting 相關症狀
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腸道活檢（內視鏡或手術）
+          notes: 確診必須。內視鏡活檢或全層手術活檢。組織學見固有層淋巴球與漿細胞浸潤增加。WSAVA 標準化評分系統。需排除腸淋巴瘤。
+        - name: 排除性檢查
+          notes: 排除感染性腸炎（糞便檢查）、EPI（TLI）、食物反應性腸病（排除飲食試驗）。血清 B12 與 Folate 評估吸收功能。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 階梯式治療策略
+        - 食物排除試驗為首要步驟
+        - 免疫抑制治療
+ddxSource: auto-generated

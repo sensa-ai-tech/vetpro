@@ -3,11 +3,11 @@ nameEn: Subcutaneous Hemangiosarcoma
 nameZh: 皮下血管肉瘤
 bodySystem: oncology
 description: 皮下組織血管內皮細胞的惡性腫瘤。與脾臟血管肉瘤相比預後稍佳，但仍具轉移潛力。可能與紫外線曝曬相關，淺色毛短毛犬好發。
-
 aliases:
-  - { alias: "Dermal Hemangiosarcoma", language: en }
-  - { alias: "皮膚血管肉瘤", language: zh }
-
+  - alias: Dermal Hemangiosarcoma
+    language: en
+  - alias: 皮膚血管肉瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 腫瘤性
@@ -23,7 +22,6 @@ etiology:
         - 血管內皮細胞惡性增生
         - 紫外線曝曬為危險因子
         - 淺色皮膚犬風險高
-
 clinicalSigns:
   early:
     - 皮膚/皮下暗紅色至紫色腫塊
@@ -33,14 +31,12 @@ clinicalSigns:
     - 腫塊增大
     - 自發性出血
     - 轉移（肺、肝、脾）
-
 diagnosis:
   primaryTests:
     - name: 組織病理
       notes: 切除活檢確診。血管通道形成的惡性腫瘤
     - name: 分期檢查
       notes: 腹部超音波 + 胸腔 X 光排除轉移
-
 treatment:
   principles:
     - 廣範圍手術切除
@@ -51,9 +47,34 @@ treatment:
     - 分期檢查
     - 化療（Doxorubicin 方案）
     - 限制紫外線曝曬
-
 prognosis: 皮下型預後優於脾臟型。完全切除無轉移者中位存活約 1-2 年。已轉移者預後不良。
-
 pubmedQueries:
   - query: '"subcutaneous hemangiosarcoma" AND (veterinary OR canine) AND ("prognosis" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 皮下血管肉瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 組織病理
+          notes: 切除活檢確診。血管通道形成的惡性腫瘤
+        - name: 分期檢查
+          notes: 腹部超音波 + 胸腔 X 光排除轉移
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 廣範圍手術切除
+        - 分期確認轉移狀態
+        - 輔助化療
+ddxSource: auto-generated

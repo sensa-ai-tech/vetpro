@@ -3,18 +3,18 @@ nameEn: Newfoundland Cystinuria
 nameZh: 紐芬蘭犬胱胺酸尿症
 bodySystem: urinary
 description: 紐芬蘭犬遺傳性腎小管再吸收缺陷,導致胱胺酸異常排泄至尿液,形成胱胺酸結石。雄性犬症狀較明顯。
-
 aliases:
-  - { alias: 紐芬蘭犬胱胺酸結石, language: zh }
-  - { alias: Cystine Urolithiasis Newfoundland, language: en }
-  - { alias: Newfoundland Cystine Stones, language: en }
-
+  - alias: 紐芬蘭犬胱胺酸結石
+    language: zh
+  - alias: Cystine Urolithiasis Newfoundland
+    language: en
+  - alias: Newfoundland Cystine Stones
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 紐芬蘭犬、臘腸犬、英國鬥牛犬為高風險品種,性聯隱性遺傳,雄性發病,雌性為帶因者
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -25,7 +25,6 @@ etiology:
       examples:
         - 尿液胱胺酸濃度升高 (>300 μmol/g creatinine)
         - 酸性尿液環境促進結石形成
-
 clinicalSigns:
   early:
     - 血尿
@@ -35,25 +34,23 @@ clinicalSigns:
     - 尿道阻塞(尤其雄性)
     - 腹痛,嘔吐
     - 無尿,急性腎損傷
-
 diagnosis:
   primaryTests:
     - name: 尿液分析
-      notes: "鹼性 pH,胱胺酸結晶(六角形扁平結晶)"
+      notes: 鹼性 pH,胱胺酸結晶(六角形扁平結晶)
     - name: 尿液胱胺酸定量
-      notes: "胱胺酸排泄量 >300 μmol/g creatinine 為異常"
+      notes: 胱胺酸排泄量 >300 μmol/g creatinine 為異常
     - name: 腹部 X 光/超音波
-      notes: "膀胱或尿道結石(X 光下中等放射不透明度)"
+      notes: 膀胱或尿道結石(X 光下中等放射不透明度)
     - name: 結石分析
-      notes: "胱胺酸結石呈淡黃綠色,確認成分"
+      notes: 胱胺酸結石呈淡黃綠色,確認成分
     - name: 基因檢測
-      notes: "SLC3A1 或 SLC7A9 基因突變檢測"
+      notes: SLC3A1 或 SLC7A9 基因突變檢測
   differentialDiagnoses:
     - 鳥糞石結石
     - 草酸鈣結石
     - 尿酸鹽結石
     - 膀胱炎
-
 treatment:
   medical:
     - 飲食管理:低蛋白飲食(Hill's u/d 或 Royal Canin Urinary S/O),限制甲硫胺酸攝取
@@ -63,12 +60,42 @@ treatment:
     - 增加飲水量(鼓勵飲水,濕食為主)
     - 手術或內視鏡取石:適用於尿道阻塞或大型結石
     - 定期監測尿液 pH 與結晶
-
 prognosis:
-  general: "預後保留至良好。終生需醫療管理與飲食控制。適當治療可減少結石復發率至 30-50%,但無法根治。未治療或治療不佳者結石復發率 >80%,可能導致反覆尿道阻塞與慢性腎病。"
-
+  general: 預後保留至良好。終生需醫療管理與飲食控制。適當治療可減少結石復發率至 30-50%,但無法根治。未治療或治療不佳者結石復發率 >80%,可能導致反覆尿道阻塞與慢性腎病。
 prevention:
   - 基因檢測篩選繁殖犬,避免帶因犬配種
   - 高風險犬隻早期(6 月齡起)尿液篩檢
   - 終生低蛋白飲食與尿液鹼化
   - 充足飲水,頻繁排尿機會
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: common
+  - symptomId: oliguria-anuria
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 紐芬蘭犬胱胺酸尿症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pollakiuria 相關症狀
+        - vomiting 相關症狀
+        - abdominal-pain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 尿液分析
+          notes: 鹼性 pH,胱胺酸結晶(六角形扁平結晶)
+        - name: 尿液胱胺酸定量
+          notes: 胱胺酸排泄量 >300 μmol/g creatinine 為異常
+        - name: 腹部 X 光/超音波
+          notes: 膀胱或尿道結石(X 光下中等放射不透明度)
+ddxSource: auto-generated

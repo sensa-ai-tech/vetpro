@@ -1,0 +1,120 @@
+slug: obstructive-shock
+nameEn: Obstructive Shock
+nameZh: 阻塞性休克
+description: 阻塞性休克是由心臟或大血管的機械性阻塞導致心輸出量急劇下降而引起的休克狀態。常見原因包括心包膜填塞、張力性氣胸、肺動脈血栓栓塞和胃扭轉-擴張症候群（GDV）。
+bodySystem: cardiovascular
+species:
+  - speciesCommon: dog
+  - speciesCommon: cat
+etiology:
+  categories:
+    - name: Risk Factors
+      examples:
+        - 心包膜積液（腫瘤性最常見）
+        - 胸腔創傷（張力性氣胸）
+        - GDV好發品種（大丹犬、德國牧羊犬、標準貴賓犬）
+        - 心絲蟲重度感染（腔靜脈症候群）
+        - 凝血障礙（肺栓塞）
+        - 橫膈膜疝氣
+clinicalSigns:
+  early:
+    - 急性虛脫
+    - 呼吸困難
+    - 運動不耐受
+    - 腹部膨脹（GDV）
+    - 已知心臟腫瘤或心包膜積液病史
+  progressive:
+    - 心跳加速但脈搏微弱
+    - 頸靜脈怒張
+    - 蒼白或發紺黏膜
+    - 延長的毛細血管再充填時間
+    - 心音減弱（心包膜填塞）
+    - 單側呼吸音消失（氣胸）
+    - 奇脈（pulsus paradoxus）
+    - 腹部鼓脹和鼓音（GDV）
+diagnosis:
+  primaryTests:
+    - TFAST/AFAST超音波（快速評估心包積液、胸腔積液/氣胸、腹腔積液）
+    - 胸腔和腹部X光
+    - 心電圖
+    - 血壓測量
+    - 血氣分析和乳酸
+  additional:
+    - 心臟超音波
+    - 凝血功能檢查
+    - D-dimer（疑似肺栓塞時）
+    - CT血管造影（肺栓塞確診）
+treatment:
+  principles:
+    - 心包膜填塞：緊急心包穿刺引流
+    - 張力性氣胸：緊急胸腔穿刺排氣或胸管置入
+    - GDV：胃減壓（口胃管或經皮穿刺）後緊急手術
+    - 靜脈輸液復甦（但心包填塞時需謹慎避免過度）
+    - 氧氣治療
+    - 血管升壓藥（若單獨輸液無法維持血壓）
+    - 止痛
+  general:
+    - 心包膜填塞反覆發作：心包切除術（pericardiectomy）
+    - GDV術後：胃固定術預防復發
+    - 心絲蟲腔靜脈症候群：手術取蟲
+    - 潛在腫瘤的化療評估
+prognosis: 取決於潛在病因和解除阻塞的速度。張力性氣胸和心包填塞經及時引流後預後可良好。GDV經手術治療存活率約70-80%。腫瘤性心包積液的長期預後較差。肺栓塞的預後取決於栓塞範圍。
+diagnosticAlgorithm:
+  title: 阻塞性休克 診斷流程
+  steps:
+    - step: 1
+      action: 緊急評估
+      details: 快速辨識休克表現與阻塞性病因
+      findings:
+        - 低血壓與心搏過速
+        - 頸靜脈怒張
+        - 呼吸困難
+        - 心音減弱（心包填塞）
+    - step: 2
+      action: 緊急檢查
+      details: 快速床邊檢查確認病因
+      findings:
+        - TFAST超音波發現心包積液
+        - 胸腔X光顯示張力性氣胸
+        - 腹部超音波評估大血管栓塞
+        - 血氣分析顯示代謝性酸中毒
+    - step: 3
+      action: 病因鑑別
+      details: 區分不同阻塞性休克病因
+      findings:
+        - 心包填塞：心包穿刺抽液
+        - 張力性氣胸：胸腔穿刺減壓
+        - 肺栓塞：D-dimer升高
+        - GDV：腹部X光確認
+    - step: 4
+      action: 確診與穩定
+      details: 確認病因並進行緊急處置
+      findings:
+        - 血流動力學監測
+        - 中心靜脈壓升高
+        - 確認阻塞解除後血壓改善
+clinicalPearls:
+  - 阻塞性休克的特徵是頸靜脈怒張伴隨低血壓——與低血容性休克的頸靜脈塌陷形成對比
+  - TFAST/AFAST是快速診斷阻塞性休克病因的最有價值工具
+  - 心包填塞時過度輸液可能暫時改善但不能替代穿刺引流
+  - GDV是犬阻塞性休克的常見原因之一，不應忘記檢查腹部
+monitoringItems:
+  - 持續心電圖監測
+  - 血壓和中心靜脈壓
+  - 尿量監測
+  - 連續乳酸測定評估組織灌注恢復
+  - 引流後重複超音波評估
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+ddxSource: book-only

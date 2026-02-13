@@ -3,17 +3,16 @@ nameEn: Spraying Behavior Feline
 nameZh: 貓噴尿行為
 bodySystem: behavioral
 description: 貓直立姿勢於垂直表面噴尿之標記行為。可能因領域、焦慮或醫學問題。絕育及環境管理為主要治療。
-
 aliases:
-  - { alias: 貓標記行為, language: zh }
-  - { alias: Urine Marking, language: en }
-
+  - alias: 貓標記行為
+    language: zh
+  - alias: Urine Marking
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
     notes: 未絕育公貓最常見，母貓及絕育貓也可能發生
-
 etiology:
   categories:
     - name: 正常標記行為
@@ -29,7 +28,6 @@ etiology:
       examples:
         - 泌尿道疾病
         - 認知障礙
-
 clinicalSigns:
   early:
     - 直立姿勢、尾巴顫抖噴尿
@@ -39,20 +37,18 @@ clinicalSigns:
     - 頻率增加
     - 多處標記
     - 可能伴隨不適當排尿
-
 diagnosis:
   primaryTests:
     - name: 區分噴尿或不適當排尿
-      notes: "姿勢、位置、量"
+      notes: 姿勢、位置、量
     - name: 排除泌尿道疾病
-      notes: "尿液分析、影像學"
+      notes: 尿液分析、影像學
     - name: 評估壓力源
-      notes: "多貓互動、環境變化"
+      notes: 多貓互動、環境變化
   differentialDiagnoses:
     - 不適當排尿
     - 膀胱炎
     - 認知障礙
-
 treatment:
   medical:
     - 絕育（未絕育貓，90%改善）
@@ -68,33 +64,51 @@ treatment:
     - 藥物（嚴重或持續）：
     - Fluoxetine 0.5-1 mg/kg PO q24h
     - Clomipramine 0.25-0.5 mg/kg PO q24h
-
 prognosis:
-  general: "未絕育貓絕育後改善率90%。壓力相關需長期管理。多數可改善但可能復發。"
-
+  general: 未絕育貓絕育後改善率90%。壓力相關需長期管理。多數可改善但可能復發。
 prevention:
   - 早期絕育
   - 充足資源（多貓家庭）
   - 減少環境壓力
   - 漸進式引入新貓
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Common feline problem behaviors: Urine spraying."
+    title: 'Common feline problem behaviors: Urine spraying.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11373755/
     type: review
-    pmid: "30810092"
+    pmid: '30810092'
     relevance: supporting
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Common feline problem behaviours: Unacceptable indoor elimination."
+    title: 'Common feline problem behaviours: Unacceptable indoor elimination.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11373752/
     type: review
-    pmid: "30810090"
+    pmid: '30810090'
     relevance: supporting
   - sourceOrg: Memorias do Instituto Oswaldo Cruz
     title: The eco-epidemiology of Triatoma infestans in the temperate Monte Desert ecoregion of mid-western Argentina.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5607519/
     type: research
-    pmid: "28953998"
+    pmid: '28953998'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: trembling
+    frequency: common
+diagnosticAlgorithm:
+  title: 貓噴尿行為 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - trembling 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 區分噴尿或不適當排尿
+          notes: 姿勢、位置、量
+        - name: 排除泌尿道疾病
+          notes: 尿液分析、影像學
+        - name: 評估壓力源
+          notes: 多貓互動、環境變化
+ddxSource: auto-generated

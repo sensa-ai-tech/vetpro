@@ -3,11 +3,11 @@ nameEn: Paraneoplastic Syndrome
 nameZh: 副腫瘤症候群
 bodySystem: oncology
 description: 腫瘤引起的非直接侵犯或轉移造成的全身性效應。常見表現包括高鈣血症（淋巴瘤、肛囊腺癌）、低血糖（insulinoma）、紅血球增多症（腎腫瘤）、肥大性骨病等。
-
 aliases:
-  - { alias: "Paraneoplastic Disease", language: en }
-  - { alias: "副腫瘤效應", language: zh }
-
+  - alias: Paraneoplastic Disease
+    language: en
+  - alias: 副腫瘤效應
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓偶見。
-
 etiology:
   categories:
     - name: 腫瘤分泌物質
@@ -24,7 +23,6 @@ etiology:
         - Insulin 過量→低血糖
         - EPO→紅血球增多
         - 免疫複合物→多發性關節炎
-
 clinicalSigns:
   early:
     - 全身症狀（多飲多尿、虛弱）
@@ -33,14 +31,12 @@ clinicalSigns:
     - 代謝紊亂加重
     - 器官損傷（高鈣→腎損傷）
     - 腫瘤相關症狀出現
-
 diagnosis:
   primaryTests:
     - name: 血液生化
       notes: 鈣、血糖、血球計數異常
     - name: 腫瘤搜尋
       notes: 發現副腫瘤症狀需積極搜尋潛在腫瘤
-
 treatment:
   principles:
     - 治療潛在腫瘤
@@ -50,36 +46,64 @@ treatment:
     - 高鈣血症：輸液利尿 + Bisphosphonate
     - 低血糖：頻繁少量餵食 + Prednisolone
     - 症狀管理
-
 prognosis: 取決於潛在腫瘤類型與治療反應。腫瘤成功治療後副腫瘤症狀通常消退。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
     title: Animal Models of Cancer-Associated Hypercalcemia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5606604/
     type: review
-    pmid: "29056680"
+    pmid: '29056680'
   - sourceOrg: Cureus
-    title: "Killing Two Birds With One Stone: Successful Management With Rituximab in the Coexistence of Myasthenia Gravis and Marginal Zone Lymphoma."
+    title: >-
+      Killing Two Birds With One Stone: Successful Management With Rituximab in the Coexistence of Myasthenia Gravis and
+      Marginal Zone Lymphoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10598348/
     type: case-report
-    pmid: "37885504"
+    pmid: '37885504'
   - sourceOrg: Heliyon
     title: Neuronal autoantibodies in the cerebrospinal fluid of 148 patients with schizophrenia and 151 healthy controls.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11103440/
     type: research
-    pmid: "38770306"
+    pmid: '38770306'
   - sourceOrg: Journal of veterinary internal medicine
     title: Fecal microbiome in dogs with lymphoid and nonlymphoid tumors.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10061189/
     type: research
-    pmid: "36853067"
+    pmid: '36853067'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Video-assisted extirpation of cranial mediastinal masses in dogs: 18 cases (2009-2014)."
+    title: 'Video-assisted extirpation of cranial mediastinal masses in dogs: 18 cases (2009-2014).'
     url: https://pubmed.ncbi.nlm.nih.gov/28509648/
     type: research
-    pmid: "28509648"
+    pmid: '28509648'
 pubmedQueries:
   - query: '"paraneoplastic syndrome" AND (veterinary OR canine OR feline) AND ("hypercalcemia" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 副腫瘤症候群 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - polyuria-polydipsia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液生化
+          notes: 鈣、血糖、血球計數異常
+        - name: 腫瘤搜尋
+          notes: 發現副腫瘤症狀需積極搜尋潛在腫瘤
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療潛在腫瘤
+        - 控制代謝異常
+ddxSource: auto-generated

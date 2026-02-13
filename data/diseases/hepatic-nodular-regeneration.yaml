@@ -3,11 +3,11 @@ nameEn: Hepatic Nodular Regeneration
 nameZh: 肝結節性增生
 bodySystem: hepatic
 description: 肝臟良性結節性增生,老年犬常見偶發現。多為單發或多發小結節,通常無臨床意義,無需治療。
-
 aliases:
-  - { alias: 肝結節增生, language: zh }
-  - { alias: Nodular Hyperplasia, language: en }
-
+  - alias: 肝結節增生
+    language: zh
+  - alias: Nodular Hyperplasia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,47 +17,61 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 罕見
-
 etiology:
   categories:
     - name: 老化相關
       examples:
         - 肝細胞再生性增生
-
 clinicalSigns:
   early:
     - 無症狀
   progressive:
     - 通常無症狀,罕見壓迫鄰近器官
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "單發或多發小結節 (< 2 cm)"
+      notes: 單發或多發小結節 (< 2 cm)
     - name: 細針抽吸或組織切片
-      notes: "確診良性增生,排除腫瘤"
+      notes: 確診良性增生,排除腫瘤
   differentialDiagnoses:
     - 肝細胞腺瘤
     - 肝細胞癌
     - 轉移性腫瘤
-
 treatment:
   medical:
     - 無需治療
     - 定期追蹤超音波 (6-12 個月)
     - 若快速增大,考慮組織切片
-
 prognosis:
-  general: "預後良好;為良性病變,無臨床意義,不影響壽命"
-
+  general: 預後良好;為良性病變,無臨床意義,不影響壽命
 prevention:
   - 無特定預防措施
-
-
 guidelineRefs:
   - sourceOrg: World journal of gastroenterology
-    title: "Liver structural transformation after partial hepatectomy and repeated partial hepatectomy in rats: A renewed view on liver regeneration."
+    title: >-
+      Liver structural transformation after partial hepatectomy and repeated partial hepatectomy in rats: A renewed view
+      on liver regeneration.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7385567/
     type: research
-    pmid: "32774065"
+    pmid: '32774065'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肝結節性增生 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 單發或多發小結節 (< 2 cm)
+        - name: 細針抽吸或組織切片
+          notes: 確診良性增生,排除腫瘤
+ddxSource: auto-generated

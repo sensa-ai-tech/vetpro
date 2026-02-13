@@ -3,18 +3,18 @@ nameEn: Dachshund Lafora Disease
 nameZh: 臘腸犬拉福拉氏病
 bodySystem: other
 description: 迷你短毛臘腸犬罕見的遺傳性進行性肌陣攣癲癇,因糖原代謝異常導致神經元內Lafora小體累積。好發於中老年犬,表現為光敏性肌陣攣與癲癇發作。
-
 aliases:
-  - { alias: 臘腸犬肌陣攣癲癇, language: zh }
-  - { alias: Lafora Progressive Myoclonus Epilepsy, language: en }
-  - { alias: 臘腸犬糖原貯積性癲癇, language: zh }
-
+  - alias: 臘腸犬肌陣攣癲癇
+    language: zh
+  - alias: Lafora Progressive Myoclonus Epilepsy
+    language: en
+  - alias: 臘腸犬糖原貯積性癲癇
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: rare
     notes: 主要見於迷你短毛臘腸犬,體染色體隱性遺傳(EPM2B基因突變),發病年齡6-13歲
-
 etiology:
   categories:
     - name: 遺傳性酵素缺陷
@@ -27,7 +27,6 @@ etiology:
         - 神經元內Lafora小體(多醣體包涵物)
         - 大腦皮質、丘腦、腦幹廣泛分布
         - 神經元功能障礙
-
 clinicalSigns:
   early:
     - 間歇性肌陣攣(myoclonic jerks),尤其後肢
@@ -39,23 +38,21 @@ clinicalSigns:
     - 認知功能下降,定向障礙
     - 視力退化
     - 嚴重病例:無法站立,持續性肌陣攣
-
 diagnosis:
   primaryTests:
     - name: 基因檢測
-      notes: "EPM2B基因突變檢測,可確診並用於繁殖篩檢"
+      notes: EPM2B基因突變檢測,可確診並用於繁殖篩檢
     - name: 腦脊髓液分析
-      notes: "通常正常,排除其他神經疾病"
+      notes: 通常正常,排除其他神經疾病
     - name: 皮膚或肌肉活檢
-      notes: "PAS染色可見Lafora小體(陽性診斷),但基因檢測更便捷"
+      notes: PAS染色可見Lafora小體(陽性診斷),但基因檢測更便捷
     - name: MRI
-      notes: "可能正常或輕度腦萎縮,非特異性"
+      notes: 可能正常或輕度腦萎縮,非特異性
   differentialDiagnoses:
     - 特發性癲癇
     - 其他進行性肌陣攣癲癇
     - 儲積症(Glycogen storage disease)
     - 腦炎
-
 treatment:
   medical:
     - 無治癒方法,症狀控制為主
@@ -66,12 +63,35 @@ treatment:
     - 避免閃爍光源刺激
     - 低醣飲食可能減緩進展(實驗性)
     - 支持性照護:防跌倒、協助行動
-
 prognosis:
-  general: "進行性疾病,無法治癒。診斷後平均存活1-3年,病程因個體差異。抗癲癇藥物可暫時改善症狀,但疾病持續惡化。生活品質下降時需考慮安樂死。"
-
+  general: 進行性疾病,無法治癒。診斷後平均存活1-3年,病程因個體差異。抗癲癇藥物可暫時改善症狀,但疾病持續惡化。生活品質下降時需考慮安樂死。
 prevention:
   - 繁殖前基因檢測(EPM2B突變)
   - 帶因者不應繁殖或僅與陰性個體配對
   - 登錄繁殖資料庫,追蹤家系
   - 高風險家系犬隻避免用於繁殖
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 臘腸犬拉福拉氏病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - seizures 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 基因檢測
+          notes: EPM2B基因突變檢測,可確診並用於繁殖篩檢
+        - name: 腦脊髓液分析
+          notes: 通常正常,排除其他神經疾病
+        - name: 皮膚或肌肉活檢
+          notes: PAS染色可見Lafora小體(陽性診斷),但基因檢測更便捷
+ddxSource: auto-generated

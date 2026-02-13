@@ -3,11 +3,11 @@ nameEn: Veterinary Visit Anxiety
 nameZh: 獸醫院焦慮
 bodySystem: behavioral
 description: 犬貓對獸醫院環境及就診過程之恐懼或焦慮。影響醫療品質及動物福祉。需低壓力就診技巧及可能藥物輔助。
-
 aliases:
-  - { alias: 看診恐懼, language: zh }
-  - { alias: White Coat Syndrome, language: en }
-
+  - alias: 看診恐懼
+    language: zh
+  - alias: White Coat Syndrome
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓普遍有獸醫院焦慮
-
 etiology:
   categories:
     - name: 負面經驗聯結
@@ -29,7 +28,6 @@ etiology:
       examples:
         - 社會化不足
         - 僅於生病時就診
-
 clinicalSigns:
   early:
     - 進入獸醫院時抗拒
@@ -40,18 +38,16 @@ clinicalSigns:
     - 無法檢查
     - 排泄失禁
     - 嚴重壓力反應
-
 diagnosis:
   primaryTests:
     - name: 行為評估
-      notes: "Fear Free或貓友善認證評估"
+      notes: Fear Free或貓友善認證評估
     - name: 壓力指標
-      notes: "犬：喘氣、低姿態、尾巴；貓：瞳孔放大、耳朵後貼、低鳴"
+      notes: 犬：喘氣、低姿態、尾巴；貓：瞳孔放大、耳朵後貼、低鳴
   differentialDiagnoses:
     - 疼痛反應
     - 攻擊性（非恐懼性）
     - 醫療狀況
-
 treatment:
   medical:
     - 行為修正：
@@ -66,45 +62,66 @@ treatment:
     - Gabapentin 10-20 mg/kg PO（就診前2-3小時）
     - Trazodone 3-5 mg/kg PO（犬，就診前2小時）
     - Alprazolam 0.02-0.05 mg/kg PO（就診前1小時）
-
 prognosis:
-  general: "多數可透過低壓力技巧及訓練改善。早期介入效果最佳。"
-
+  general: 多數可透過低壓力技巧及訓練改善。早期介入效果最佳。
 prevention:
   - 幼年期正向獸醫院經驗
   - 定期開心就診
   - 選擇Fear Free認證醫院
   - 使用費洛蒙
-
-
 guidelineRefs:
   - sourceOrg: Lancet (London, England)
-    title: "Disease burden attributable to intimate partner violence against females and sexual violence against children in 204 countries and territories, 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023."
+    title: >-
+      Disease burden attributable to intimate partner violence against females and sexual violence against children in
+      204 countries and territories, 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12775558/
     type: review
-    pmid: "41386261"
+    pmid: '41386261'
     relevance: primary
   - sourceOrg: Veterinary medicine international
-    title: "Tools for the Approach of Fear, Anxiety, and Stress in the Domestic Feline: An Update."
+    title: 'Tools for the Approach of Fear, Anxiety, and Stress in the Domestic Feline: An Update.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12349988/
     type: review
-    pmid: "40809800"
+    pmid: '40809800'
     relevance: primary
   - sourceOrg: Annals of medicine and surgery (2012)
-    title: "Healthcare debts in the United States: a silent fight."
+    title: 'Healthcare debts in the United States: a silent fight.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11918610/
     type: review
-    pmid: "40110309"
+    pmid: '40110309'
     relevance: primary
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: A Review on Mitigating Fear and Aggression in Dogs and Cats in a Veterinary Setting.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7826566/
     type: review
-    pmid: "33445559"
+    pmid: '33445559'
     relevance: primary
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
     title: A review of pre-appointment medications to reduce fear and anxiety in dogs and cats at veterinary visits.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8360309/
     type: review
-    pmid: "34475580"
+    pmid: '34475580'
     relevance: primary
+associatedSymptoms:
+  - symptomId: trembling
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 獸醫院焦慮 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - trembling 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 行為評估
+          notes: Fear Free或貓友善認證評估
+        - name: 壓力指標
+          notes: 犬：喘氣、低姿態、尾巴；貓：瞳孔放大、耳朵後貼、低鳴
+ddxSource: auto-generated

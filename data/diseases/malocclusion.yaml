@@ -3,15 +3,19 @@ nameEn: Malocclusion
 nameZh: 咬合不正
 bodySystem: dental
 description: 上下顎牙齒或顎骨之間的異常咬合關係，可導致口腔軟組織創傷、疼痛與功能障礙。包括骨骼性咬合不正（顎骨長度不協調）與牙齒性咬合不正（個別牙齒位置異常）。
-
 aliases:
-  - { alias: 齒列不正, language: zh }
-  - { alias: 咬合異常, language: zh }
-  - { alias: 錯咬合, language: zh }
-  - { alias: Dental Malocclusion, language: en }
-  - { alias: Skeletal Malocclusion, language: en }
-  - { alias: Misaligned Teeth, language: en }
-
+  - alias: 齒列不正
+    language: zh
+  - alias: 咬合異常
+    language: zh
+  - alias: 錯咬合
+    language: zh
+  - alias: Dental Malocclusion
+    language: en
+  - alias: Skeletal Malocclusion
+    language: en
+  - alias: Misaligned Teeth
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -25,17 +29,16 @@ species:
     speciesScientific: Oryctolagus cuniculus
     prevalence: common
     notes: 兔的咬合不正（下顎前突）可能為最常見的遺傳性疾病。兔齒為持續生長齒，咬合不正導致切齒過度生長，影響進食與飲水。臼齒亦可過度生長造成嚴重舌部或頰黏膜損傷。需定期牙齒修剪。遺傳性咬合不正通常在 3-8 週齡即可檢出。
-
 etiology:
   categories:
     - name: 骨骼性咬合不正 (Skeletal Malocclusion)
       examples:
-        - "下顎短小 (mandibular distoclusion, Class II)：下顎相對上顎偏後。Dachshund、Collie 好發"
-        - "下顎前突 (mandibular mesioclusion, Class III)：下顎相對上顎偏前。短頭型品種為正常"
-        - "上下顎不對稱 (wry bite)：顎骨左右不對稱生長"
+        - 下顎短小 (mandibular distoclusion, Class II)：下顎相對上顎偏後。Dachshund、Collie 好發
+        - 下顎前突 (mandibular mesioclusion, Class III)：下顎相對上顎偏前。短頭型品種為正常
+        - 上下顎不對稱 (wry bite)：顎骨左右不對稱生長
     - name: 牙齒性咬合不正 (Dental Malocclusion)
       examples:
-        - "下顎犬齒舌側偏移 (linguoverted/base narrow mandibular canines)：最常見，犬齒刺入硬腭"
+        - 下顎犬齒舌側偏移 (linguoverted/base narrow mandibular canines)：最常見，犬齒刺入硬腭
         - 上顎犬齒近心傾斜 (mesioverted/lance canines)：Shetland Sheepdog 好發
         - 前齒反咬合 (anterior crossbite)
         - 後齒反咬合 (posterior crossbite)
@@ -45,7 +48,6 @@ etiology:
         - 乳齒滯留阻礙恆齒正常萌出
         - 外傷（幼年期顎骨骨折影響生長）
         - 乳齒過早拔除（影響恆齒引導）
-
 clinicalSigns:
   early:
     - 牙齒排列異常（飼主或獸醫檢查發現）
@@ -63,19 +65,18 @@ clinicalSigns:
     - 牙齒磨耗 (attrition) 或磨損 (abrasion)
     - 牙周病加速進展（擁擠區域牙菌斑堆積）
     - 琺瑯質發育不全（enamel hypoplasia — 齒胚發育期遭受外傷、感染或高燒干擾所致）
-    - "嚴重 wry bite：進食、飲水困難"
-
+    - 嚴重 wry bite：進食、飲水困難
 diagnosis:
   primaryTests:
     - name: 口腔檢查與咬合評估
-      notes: "全身麻醉下進行完整咬合檢查。評估上下顎關係（Class I/II/III）、個別牙齒位置、軟組織創傷"
+      notes: 全身麻醉下進行完整咬合檢查。評估上下顎關係（Class I/II/III）、個別牙齒位置、軟組織創傷
     - name: 齒科 X 光
-      notes: "評估乳齒滯留、恆齒胚發育、齒根狀態、齒槽骨情形"
+      notes: 評估乳齒滯留、恆齒胚發育、齒根狀態、齒槽骨情形
   imaging:
     - name: 齒科 X 光
-      notes: "確認乳齒滯留的齒根吸收狀態。評估恆齒萌出方向與齒根發育"
+      notes: 確認乳齒滯留的齒根吸收狀態。評估恆齒萌出方向與齒根發育
     - name: CT 掃描
-      notes: "複雜骨骼性咬合不正的三維評估，手術計畫"
+      notes: 複雜骨骼性咬合不正的三維評估，手術計畫
   differentialDiagnoses:
     - 乳齒滯留 (Persistent Deciduous Teeth)
     - 口腔腫瘤導致齒列移位 (Oral Neoplasia Causing Tooth Displacement)
@@ -85,7 +86,6 @@ diagnosis:
   additional:
     - 咬合模型 (dental impressions/models)（矯正計畫）
     - 牙周探針檢查（擁擠區域牙周狀態）
-
 treatment:
   principles:
     - 治療目標為功能性舒適咬合 (functional comfortable occlusion)，非美觀矯正
@@ -93,56 +93,97 @@ treatment:
     - 乳齒滯留應及早拔除
     - 遺傳性咬合不正個體不建議繁殖
   general:
-    - "截斷式矯正（Interceptive Orthodontics）：乳齒期選擇性拔除滯留齒以解除齒列互鎖，讓上下顎生長至遺傳潛能。乳齒前咬合反轉可拔除乳齒上顎切齒，促使恆齒以較偏唇側角度萌出"
+    - 截斷式矯正（Interceptive Orthodontics）：乳齒期選擇性拔除滯留齒以解除齒列互鎖，讓上下顎生長至遺傳潛能。乳齒前咬合反轉可拔除乳齒上顎切齒，促使恆齒以較偏唇側角度萌出
     - 乳齒滯留：及早手術拔除（保持恆齒胚完整）
-    - "下顎犬齒舌側偏移（輕度）：齒冠高度縮減 (crown reduction) + 活髓治療"
-    - "下顎犬齒舌側偏移（嚴重）：矯正裝置 (orthodontic appliance) 將犬齒推向頰側"
+    - 下顎犬齒舌側偏移（輕度）：齒冠高度縮減 (crown reduction) + 活髓治療
+    - 下顎犬齒舌側偏移（嚴重）：矯正裝置 (orthodontic appliance) 將犬齒推向頰側
     - 矯正方式包括斜面導板 (inclined plane)、彈性鏈 (power chain)、擴弓器 (expansion device)
     - 上顎犬齒近心傾斜：矯正裝置或拔除
     - 嚴重骨骼性不正且造成功能障礙：考慮顎骨矯正手術（罕見需要）
     - 造成創傷但無法矯正的牙齒：拔牙
-    - "活髓治療（Vital Pulp Therapy）：齒冠縮減後暴露牙髓時進行，使用 MTA 或 calcium hydroxide 覆蓋牙髓切面，需終身定期 X 光追蹤評估是否需要後續根管治療"
-    - "乳齒拔除注意事項：器械不可插入乳齒上顎切齒腭側或乳齒下顎犬齒舌側，以免損傷恆齒胚琺瑯質器官，造成恆齒出現褐色斑點（局灶性琺瑯質缺損）"
-    - "遺傳性咬合不正的個體不應用於繁殖——僅具有正常健康咬合的動物才應納入育種計畫"
+    - 活髓治療（Vital Pulp Therapy）：齒冠縮減後暴露牙髓時進行，使用 MTA 或 calcium hydroxide 覆蓋牙髓切面，需終身定期 X 光追蹤評估是否需要後續根管治療
+    - 乳齒拔除注意事項：器械不可插入乳齒上顎切齒腭側或乳齒下顎犬齒舌側，以免損傷恆齒胚琺瑯質器官，造成恆齒出現褐色斑點（局灶性琺瑯質缺損）
+    - 遺傳性咬合不正的個體不應用於繁殖——僅具有正常健康咬合的動物才應納入育種計畫
     - 術後疼痛管理 (meloxicam 0.1 mg/kg PO SID)
     - 矯正期間軟食飲食，避免硬物咬嚼
-
 prognosis: 乳齒滯留及早拔除後恆齒常可自行移位至正常位置。齒冠高度縮減搭配活髓治療預後良好。矯正裝置成功率約 80-90%。嚴重骨骼性咬合不正預後取決於嚴重程度，部分個體僅能達到功能性改善而非完全矯正。
-
 guidelineRefs:
   - sourceOrg: AAHA
     title: 2019 AAHA Dental Care Guidelines for Dogs and Cats
     url: https://pubmed.ncbi.nlm.nih.gov/30776257/
     type: guideline
-    pmid: "30776257"
+    pmid: '30776257'
   - sourceOrg: Journal of Veterinary Dentistry
     title: Interceptive orthodontics for persistent deciduous teeth and base-narrow mandibular canines in dogs
     url: https://pubmed.ncbi.nlm.nih.gov/17890841/
     type: review
-    pmid: "17890841"
+    pmid: '17890841'
   - sourceOrg: Journal of feline medicine and surgery
     title: 2025 FelineVMA feline oral health and dental care guidelines.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12665832/
     type: guideline
-    pmid: "41319038"
+    pmid: '41319038'
     relevance: primary
   - sourceOrg: Children (Basel, Switzerland)
-    title: "Comparison of Different Types of Palatal Expanders: Scoping Review."
+    title: 'Comparison of Different Types of Palatal Expanders: Scoping Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10378123/
     type: review
-    pmid: "37508755"
+    pmid: '37508755'
     relevance: primary
   - sourceOrg: The Cochrane database of systematic reviews
-    title: Non-surgical adjunctive interventions for accelerating tooth movement in patients undergoing orthodontic treatment.
+    title: >-
+      Non-surgical adjunctive interventions for accelerating tooth movement in patients undergoing orthodontic
+      treatment.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10281004/
     type: review
-    pmid: "37339352"
+    pmid: '37339352'
     relevance: primary
 pubmedQueries:
   - query: '"malocclusion" AND (dog OR cat OR canine OR feline) AND ("orthodontic" OR "treatment" OR "crown reduction")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "Malocclusion and Malformed Jaws"
+  chapter: DIG
+  sectionTitle: Malocclusion and Malformed Jaws
   pdfPage: 225
+associatedSymptoms:
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 咬合不正 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dysphagia 相關症狀
+        - hyperthermia 相關症狀
+        - ptyalism 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 口腔檢查與咬合評估
+          notes: 全身麻醉下進行完整咬合檢查。評估上下顎關係（Class I/II/III）、個別牙齒位置、軟組織創傷
+        - name: 齒科 X 光
+          notes: 評估乳齒滯留、恆齒胚發育、齒根狀態、齒槽骨情形
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 咬合模型 (dental impressions/models)（矯正計畫）
+        - 牙周探針檢查（擁擠區域牙周狀態）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療目標為功能性舒適咬合 (functional comfortable occlusion)，非美觀矯正
+        - 移除造成軟組織創傷的牙齒或矯正其位置
+        - 乳齒滯留應及早拔除
+ddxSource: auto-generated

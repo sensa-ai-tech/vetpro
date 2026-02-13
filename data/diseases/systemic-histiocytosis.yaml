@@ -2,13 +2,16 @@ slug: systemic-histiocytosis
 nameEn: Systemic Histiocytosis
 nameZh: 全身性組織球增生症
 bodySystem: hematology
-description: 全身性組織球增生症為樹突細胞（dendritic cell）來源的反應性增殖性疾病，介於良性皮膚組織球瘤與惡性組織球肉瘤之間。特徵為皮膚與皮下多發性結節伴隨淋巴結、肝、脾、骨髓等全身器官浸潤。Bernese Mountain Dog 為特徵性好發品種。
-
+description: >-
+  全身性組織球增生症為樹突細胞（dendritic cell）來源的反應性增殖性疾病，介於良性皮膚組織球瘤與惡性組織球肉瘤之間。特徵為皮膚與皮下多發性結節伴隨淋巴結、肝、脾、骨髓等全身器官浸潤。Bernese Mountain Dog
+  為特徵性好發品種。
 aliases:
-  - { alias: SH, language: en }
-  - { alias: 全身性組織球症, language: zh }
-  - { alias: Systemic Histiocytic Disease, language: en }
-
+  - alias: SH
+    language: en
+  - alias: 全身性組織球症
+    language: zh
+  - alias: Systemic Histiocytic Disease
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻極為罕見。
-
 etiology:
   categories:
     - name: 免疫失調
@@ -28,7 +30,6 @@ etiology:
       examples:
         - Bernese Mountain Dog 強烈品種傾向
         - 可能為常染色體隱性遺傳
-
 clinicalSigns:
   early:
     - 皮膚與皮下多發性結節（鼻平面、眼瞼、陰囊常見）
@@ -40,28 +41,59 @@ clinicalSigns:
     - 內臟器官浸潤（肝、脾、肺、骨髓）
     - 體重減輕
     - 嗜睡
-
 diagnosis:
   primaryTests:
     - name: 組織病理學
       notes: 皮膚結節切片或細針穿刺。可見組織球（histiocytes）浸潤，混合淋巴球與嗜中性球。免疫組織化學：CD1+、CD11c+、MHC II+（樹突細胞標記）。
     - name: 影像學
       notes: 胸腔 X 光與腹部超音波評估內臟器官浸潤程度。CT 可更精確評估病變範圍。
-
 treatment:
   principles:
     - 免疫抑制治療為主
     - 病程慢性消長，可能需長期治療
     - 需與惡性組織球肉瘤鑑別
   general:
-    - "Prednisolone 2-4 mg/kg/day PO（初始）"
-    - "Leflunomide 2-4 mg/kg PO q24h（免疫調節，較 Prednisolone 效果可能更好）"
-    - "Cyclosporine 5-10 mg/kg PO q12h"
-    - "難治性：Lomustine（CCNU）70-90 mg/m² PO q3-4w"
+    - Prednisolone 2-4 mg/kg/day PO（初始）
+    - Leflunomide 2-4 mg/kg PO q24h（免疫調節，較 Prednisolone 效果可能更好）
+    - Cyclosporine 5-10 mg/kg PO q12h
+    - 難治性：Lomustine（CCNU）70-90 mg/m² PO q3-4w
     - 局部病變可考慮手術切除
-
 prognosis: 預後中等。病程慢性消長，部分病例可自發緩解。Leflunomide 治療反應率較高。內臟器官廣泛浸潤者預後較差。需與惡性組織球肉瘤鑑別（後者預後極差）。長期免疫抑制治療可能需要。
-
 pubmedQueries:
   - query: '"systemic histiocytosis" AND (veterinary OR canine) AND ("treatment" OR "Bernese Mountain Dog")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: uncommon
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 全身性組織球增生症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - weight-loss 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 組織病理學
+          notes: 皮膚結節切片或細針穿刺。可見組織球（histiocytes）浸潤，混合淋巴球與嗜中性球。免疫組織化學：CD1+、CD11c+、MHC II+（樹突細胞標記）。
+        - name: 影像學
+          notes: 胸腔 X 光與腹部超音波評估內臟器官浸潤程度。CT 可更精確評估病變範圍。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 免疫抑制治療為主
+        - 病程慢性消長，可能需長期治療
+        - 需與惡性組織球肉瘤鑑別
+ddxSource: auto-generated

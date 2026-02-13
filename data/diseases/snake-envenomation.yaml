@@ -3,25 +3,31 @@ nameEn: Snake Envenomation
 nameZh: 蛇咬傷
 bodySystem: emergency
 description: 毒蛇咬傷後蛇毒注入組織導致的局部與全身性毒性反應。蛇毒成分複雜，依蛇種不同可造成組織壞死、凝血異常、神經毒性、心臟毒性及急性腎損傷，為獸醫急診的常見急症之一。
-
 aliases:
-  - { alias: Snake Bite, language: en }
-  - { alias: Venomous Snake Bite, language: en }
-  - { alias: Snakebite Envenomation, language: en }
-  - { alias: Ophidian Envenomation, language: en }
-  - { alias: 蛇毒中毒, language: zh }
-  - { alias: 毒蛇咬傷, language: zh }
-
+  - alias: Snake Bite
+    language: en
+  - alias: Venomous Snake Bite
+    language: en
+  - alias: Snakebite Envenomation
+    language: en
+  - alias: Ophidian Envenomation
+    language: en
+  - alias: 蛇毒中毒
+    language: zh
+  - alias: 毒蛇咬傷
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
-    notes: 犬為最常見受毒蛇咬傷的伴侶動物（好奇性格，常以鼻/臉部接近蛇）。咬傷部位以頭部/臉部最常見（約 80%），其次為四肢。好發季節為春夏（蛇活動期）。台灣常見毒蛇：龜殼花 (Protobothrops mucrosquamatus)、赤尾青竹絲 (Trimeresurus stejnegeri)、百步蛇 (Deinagkistrodon acutus)、眼鏡蛇 (Naja atra)、雨傘節 (Bungarus multicinctus)。北美：Crotalinae (pit vipers — rattlesnake, copperhead, cottonmouth) 與 Elapidae (coral snake)。
+    notes: >-
+      犬為最常見受毒蛇咬傷的伴侶動物（好奇性格，常以鼻/臉部接近蛇）。咬傷部位以頭部/臉部最常見（約 80%），其次為四肢。好發季節為春夏（蛇活動期）。台灣常見毒蛇：龜殼花 (Protobothrops
+      mucrosquamatus)、赤尾青竹絲 (Trimeresurus stejnegeri)、百步蛇 (Deinagkistrodon acutus)、眼鏡蛇 (Naja atra)、雨傘節 (Bungarus
+      multicinctus)。北美：Crotalinae (pit vipers — rattlesnake, copperhead, cottonmouth) 與 Elapidae (coral snake)。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓被蛇咬傷較犬少見但仍可發生。貓對某些蛇毒的耐受性可能較犬低（尤其虎蛇毒素 — 澳洲）。貓常延遲就醫，臨床表現可能較不典型。四肢咬傷比例較犬高。
-
 etiology:
   categories:
     - name: 出血毒/組織毒型 (Hemotoxic/Cytotoxic)
@@ -41,9 +47,11 @@ etiology:
         - 多數蛇毒含多種成分（出血毒 + 神經毒 + 心臟毒 + 肌毒）
         - 台灣百步蛇：嚴重出血毒 + 組織壞死
         - 台灣眼鏡蛇：神經毒 + 組織壞死（噴毒致角膜損傷）
-
-pathophysiology: 蛇毒經咬傷注入皮下/肌肉組織後，經淋巴系統與血液循環全身擴散。出血毒型：蛇毒金屬蛋白酶 (SVMP) 降解血管基底膜與細胞外基質 → 局部組織壞死與出血。蛇毒促凝與抗凝成分導致 venom-induced consumptive coagulopathy (VICC) — 類似 DIC 但機制不同：蛇毒直接活化凝血因子 → 大量消耗 → paradoxical hemorrhage。PLA₂ 破壞細胞膜。神經毒型：突觸前神經毒素（如 β-bungarotoxin）破壞運動神經末梢，抑制 ACh 釋放（不可逆 — 需新突觸生長才能恢復）；突觸後神經毒素（如 α-cobratoxin）競爭性阻斷 nAChR（可逆 — 抗蛇毒血清可中和）。神經肌肉阻斷 → 進行性弛緩性麻痺 → 呼吸肌麻痺 → 呼吸衰竭。心臟毒素直接損害心肌細胞。肌毒素導致橫紋肌溶解 → 肌球蛋白腎病 → 急性腎損傷。
-
+pathophysiology: >-
+  蛇毒經咬傷注入皮下/肌肉組織後，經淋巴系統與血液循環全身擴散。出血毒型：蛇毒金屬蛋白酶 (SVMP) 降解血管基底膜與細胞外基質 → 局部組織壞死與出血。蛇毒促凝與抗凝成分導致 venom-induced consumptive
+  coagulopathy (VICC) — 類似 DIC 但機制不同：蛇毒直接活化凝血因子 → 大量消耗 → paradoxical hemorrhage。PLA₂ 破壞細胞膜。神經毒型：突觸前神經毒素（如
+  β-bungarotoxin）破壞運動神經末梢，抑制 ACh 釋放（不可逆 — 需新突觸生長才能恢復）；突觸後神經毒素（如 α-cobratoxin）競爭性阻斷 nAChR（可逆 — 抗蛇毒血清可中和）。神經肌肉阻斷 →
+  進行性弛緩性麻痺 → 呼吸肌麻痺 → 呼吸衰竭。心臟毒素直接損害心肌細胞。肌毒素導致橫紋肌溶解 → 肌球蛋白腎病 → 急性腎損傷。
 clinicalSigns:
   early:
     - 咬傷部位疼痛、腫脹（出血毒型明顯；神經毒型可能輕微）
@@ -69,20 +77,19 @@ clinicalSigns:
     - 橫紋肌溶解
     - 休克（低血容量性 + 分布性）
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 病史與理學檢查
-      notes: "咬傷部位檢查（牙痕、腫脹、壞死）。暴露環境評估。蛇種鑑定（如可能）。注意臉部咬傷可能引起上呼吸道水腫阻塞"
+      notes: 咬傷部位檢查（牙痕、腫脹、壞死）。暴露環境評估。蛇種鑑定（如可能）。注意臉部咬傷可能引起上呼吸道水腫阻塞
     - name: 凝血功能
-      notes: "PT/APTT 延長為出血毒型重要指標 (VICC)。血小板減少。纖維蛋白原降低。D-dimer 升高。每 6-12 小時重複監測"
+      notes: PT/APTT 延長為出血毒型重要指標 (VICC)。血小板減少。纖維蛋白原降低。D-dimer 升高。每 6-12 小時重複監測
     - name: CBC
-      notes: "血小板減少（消耗 + 蛇毒直接破壞）。可能見 schistocytes（微血管病變性溶血）。PCV 變化（出血 vs 脫水）"
+      notes: 血小板減少（消耗 + 蛇毒直接破壞）。可能見 schistocytes（微血管病變性溶血）。PCV 變化（出血 vs 脫水）
   imaging:
     - name: 咬傷部位 X 光
-      notes: "排除蛇牙殘留。評估軟組織腫脹程度與氣體（壞死性筋膜炎）"
+      notes: 排除蛇牙殘留。評估軟組織腫脹程度與氣體（壞死性筋膜炎）
     - name: 胸腔 X 光
-      notes: "評估肺出血、肺水腫、胸腔積液"
+      notes: 評估肺出血、肺水腫、胸腔積液
   additional:
     - 生化（BUN/Creatinine 升高 — 腎損傷；CK 升高 — 橫紋肌溶解；肝酵素；電解質）
     - 尿液分析（肌球蛋白尿、血紅蛋白尿、管型）
@@ -90,7 +97,6 @@ diagnosis:
     - ECG（心律不整監測）
     - 蛇毒快速檢測試劑 (SVDK — 澳洲可用；台灣/北美較少)
     - 20-minute whole blood clotting test (20WBCT — 資源有限地區快速評估凝血)
-
 treatment:
   principles:
     - 抗蛇毒血清 (Antivenom) 為唯一特異性治療
@@ -100,19 +106,21 @@ treatment:
     - 避免有害的民間偏方（止血帶、切開吸毒、冰敷）
   medications:
     - name: 抗蛇毒血清 (Antivenom)
-      dose: "台灣出血毒型：凍晶蛇毒血清 1-2 vial IV（依蛇種與嚴重度）。北美 CroFab：初始 4-6 vials IV。劑量依臨床嚴重度而非體重"
-      notes: 越早給予越有效。稀釋後緩慢 IV infusion。過敏反應風險（Type I/III）— 緩慢輸注並密切監測。皮試不可靠，不推薦。可預先給予 Diphenhydramine。過敏反應發生時暫停、給予 Epinephrine 後可重新啟動
+      dose: 台灣出血毒型：凍晶蛇毒血清 1-2 vial IV（依蛇種與嚴重度）。北美 CroFab：初始 4-6 vials IV。劑量依臨床嚴重度而非體重
+      notes: >-
+        越早給予越有效。稀釋後緩慢 IV infusion。過敏反應風險（Type I/III）— 緩慢輸注並密切監測。皮試不可靠，不推薦。可預先給予 Diphenhydramine。過敏反應發生時暫停、給予 Epinephrine
+        後可重新啟動
     - name: IV 晶體液
-      dose: "犬 10-20 mL/kg bolus，依休克程度調整"
+      dose: 犬 10-20 mL/kg bolus，依休克程度調整
       notes: 維持灌流與腎臟血流。促進蛇毒與肌球蛋白腎排泄
     - name: 止痛藥
-      dose: "Methadone 0.2-0.5 mg/kg IV/IM；或 Fentanyl CRI 2-5 μg/kg/hr"
+      dose: Methadone 0.2-0.5 mg/kg IV/IM；或 Fentanyl CRI 2-5 μg/kg/hr
       notes: 蛇咬傷極度疼痛。避免 NSAIDs（加重凝血異常與腎損傷）
     - name: 廣效抗生素
-      dose: "Amoxicillin-Clavulanate 12.5-25 mg/kg PO/IV BID"
+      dose: Amoxicillin-Clavulanate 12.5-25 mg/kg PO/IV BID
       notes: 咬傷傷口預防性抗生素。蛇口腔菌叢複雜
     - name: 新鮮冷凍血漿 (FFP)
-      dose: "10-15 mL/kg IV"
+      dose: 10-15 mL/kg IV
       notes: 嚴重凝血異常 (VICC) 時補充凝血因子。需搭配抗蛇毒血清使用（否則補充的凝血因子會被蛇毒持續消耗）
   general:
     - 避免有害處置：禁止止血帶、禁止切開吸毒、禁止冰敷（加重組織壞死）
@@ -124,38 +132,39 @@ treatment:
     - 壞死組織清創（待凝血功能穩定後）
     - 神經毒型：呼吸肌麻痺 → 機械通氣（可能需數天至數週）
     - 破傷風預防（依風險評估）
-
-emergencyNotes: 蛇咬傷為時效性急症 — 抗蛇毒血清越早給予效果越好。處理：(1) 穩定 ABC — 臉部咬傷注意氣道；(2) 建立靜脈通路、開始輸液；(3) 血液檢查（CBC、凝血、生化、血型）；(4) 鑑定蛇種（如可能）→ 選擇對應抗蛇毒血清；(5) 抗蛇毒血清稀釋後 IV infusion（緩慢開始、監測過敏反應）；(6) 疼痛管理（opioids，避免 NSAIDs）；(7) 凝血異常嚴重 → FFP；(8) 神經毒型 → 監測呼吸功能，準備插管。台灣：疾管署提供免費抗蛇毒血清。
-
-prognosis: 整體存活率：及時給予抗蛇毒血清並積極支持治療，犬存活率約 80-95%（出血毒型）。神經毒型（雨傘節）需長時間呼吸支持，預後較差。預後因素：蛇種、注毒量（dry bite 約 20-30% — 無注毒）、咬傷部位（軀幹較四肢危險）、就醫時間、抗蛇毒血清給予時效。百步蛇咬傷嚴重度最高（大量組織壞死 + 凝血異常），死亡率較高。貓對蛇毒耐受性可能較差，小體型使每公斤注毒量較高。
-
+emergencyNotes: >-
+  蛇咬傷為時效性急症 — 抗蛇毒血清越早給予效果越好。處理：(1) 穩定 ABC — 臉部咬傷注意氣道；(2) 建立靜脈通路、開始輸液；(3) 血液檢查（CBC、凝血、生化、血型）；(4) 鑑定蛇種（如可能）→ 選擇對應抗蛇毒血清；(5)
+  抗蛇毒血清稀釋後 IV infusion（緩慢開始、監測過敏反應）；(6) 疼痛管理（opioids，避免 NSAIDs）；(7) 凝血異常嚴重 → FFP；(8) 神經毒型 → 監測呼吸功能，準備插管。台灣：疾管署提供免費抗蛇毒血清。
+prognosis: >-
+  整體存活率：及時給予抗蛇毒血清並積極支持治療，犬存活率約 80-95%（出血毒型）。神經毒型（雨傘節）需長時間呼吸支持，預後較差。預後因素：蛇種、注毒量（dry bite 約 20-30% —
+  無注毒）、咬傷部位（軀幹較四肢危險）、就醫時間、抗蛇毒血清給予時效。百步蛇咬傷嚴重度最高（大量組織壞死 + 凝血異常），死亡率較高。貓對蛇毒耐受性可能較差，小體型使每公斤注毒量較高。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
-    title: "Snakebite envenomation in dogs: current perspectives"
+    title: 'Snakebite envenomation in dogs: current perspectives'
     url: https://pubmed.ncbi.nlm.nih.gov/24628677/
     type: review
-    pmid: "24628677"
+    pmid: '24628677'
   - sourceOrg: Toxicon
     title: Clinical effects and treatment of envenomation by Crotalinae snakes in dogs
     url: https://pubmed.ncbi.nlm.nih.gov/23419892/
     type: review
-    pmid: "23419892"
+    pmid: '23419892'
   - sourceOrg: Australian Veterinary Journal
     title: Snake envenomation in cats and dogs in Australia
     url: https://pubmed.ncbi.nlm.nih.gov/24673262/
     type: research
-    pmid: "24673262"
+    pmid: '24673262'
   - sourceOrg: Frontiers in veterinary science
-    title: "Snake envenomation in veterinary medicine: comparative insights and emerging therapies."
+    title: 'Snake envenomation in veterinary medicine: comparative insights and emerging therapies.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12867852/
     type: review
-    pmid: "41647688"
+    pmid: '41647688'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
     title: Mechanical ventilation in snake envenomation of dogs and cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10090310/
     type: review
-    pmid: "37065246"
+    pmid: '37065246'
     relevance: primary
 pubmedQueries:
   - query: '"snake envenomation" AND (dog OR canine) AND ("antivenom" OR "coagulopathy" OR "treatment")'
@@ -164,6 +173,75 @@ pubmedQueries:
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "EMG"
-  sectionTitle: "Rlwdococcus equi pneumonia, West Nile"
+  chapter: EMG
+  sectionTitle: Rlwdococcus equi pneumonia, West Nile
   pdfPage: 1750
+diagnosticAlgorithm:
+  title: 蛇咬傷中毒 診斷流程
+  steps:
+    - step: 1
+      action: 緊急評估
+      details: 評估咬傷部位、腫脹進展與全身症狀
+      findings:
+        - 咬傷部位疼痛腫脹迅速進展
+        - 可見咬痕一或兩個穿刺傷
+        - 精神沉鬱與虛弱
+        - 流涎或嘔吐
+    - step: 2
+      action: 蛇種鑑定與中毒分類
+      details: 根據地理位置與臨床表現判斷蛇種
+      findings:
+        - 出血毒：局部腫脹瘀斑出血
+        - 神經毒：肌肉無力呼吸麻痺
+        - 肌肉毒：橫紋肌溶解
+        - 確認當地常見毒蛇種類
+    - step: 3
+      action: 實驗室檢查
+      details: 凝血功能、血液學與生化全面評估
+      findings:
+        - 凝血功能異常PT/aPTT延長
+        - 血小板減少
+        - CK升高肌肉毒
+        - 溶血性貧血
+    - step: 4
+      action: 持續監測與併發症
+      details: 密集監測臟器損傷進展
+      findings:
+        - 咬傷部位腫脹範圍標記追蹤
+        - DIC發展監測
+        - 腎功能監測
+        - 傷口壞死與繼發感染評估
+clinicalPearls:
+  - 約25%蝮蛇咬傷為乾咬，但仍需觀察
+  - 不要嘗試吸出毒液、切開傷口或使用止血帶
+  - 抗蛇毒血清是唯一確切有效的治療
+  - 凝血障礙可能在咬傷後數小時才出現
+  - Diphenhydramine不治療蛇毒但可減少抗蛇毒血清過敏反應
+  - 面部咬傷的犬需注意呼吸道腫脹導致阻塞
+monitoringItems:
+  - 凝血功能（每4-6小時共24小時）
+  - 腫脹範圍標記和追蹤
+  - PCV/TP
+  - 腎功能
+  - 傷口癒合
+  - 呼吸功能（面部咬傷）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: petechiae-ecchymoses
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+  - symptomId: mydriasis
+    frequency: common
+ddxSource: book

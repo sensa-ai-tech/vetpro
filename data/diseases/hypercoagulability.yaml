@@ -3,12 +3,13 @@ nameEn: Hypercoagulability
 nameZh: 高凝血狀態
 bodySystem: hematology
 description: 高凝血狀態為血液凝固傾向增加的病理狀態，可導致動脈或靜脈血栓形成。犬隻常見於蛋白喪失性腎病（PLN）、免疫介導性溶血性貧血（IMHA）、庫欣氏症、腫瘤及敗血症。肺動脈血栓栓塞（PTE）為犬隻最常見的致命性血栓事件。
-
 aliases:
-  - { alias: 高凝狀態, language: zh }
-  - { alias: Thrombophilia, language: en }
-  - { alias: Prothrombotic State, language: en }
-
+  - alias: 高凝狀態
+    language: zh
+  - alias: Thrombophilia
+    language: en
+  - alias: Prothrombotic State
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻動脈血栓栓塞（ATE）多與心肌病相關（左心房血栓）。PLN 相關高凝血狀態亦有報告。
-
 etiology:
   categories:
     - name: 蛋白丟失性疾病
@@ -33,7 +33,6 @@ etiology:
         - 庫欣氏症（皮質醇促凝血）
         - 惡性腫瘤（paraneoplastic hypercoagulability）
         - 糖尿病
-
 clinicalSigns:
   early:
     - 高凝血狀態本身可無症狀
@@ -43,55 +42,91 @@ clinicalSigns:
     - 腹主動脈血栓：後肢急性癱瘓（犬較少見，貓 ATE 典型）
     - 門脈血栓：腹水
     - 腦血管血栓：急性神經症狀
-
 diagnosis:
   primaryTests:
     - name: 血栓彈力圖（TEG/ROTEM）
       notes: 評估全血凝血狀態的最佳工具。高凝血狀態表現為 R time 縮短、MA 增加、G 值增高。較傳統 PT/APTT 更能反映整體凝血狀態。
     - name: D-dimer 與 Antithrombin III
       notes: D-dimer 升高提示活化的凝血與纖溶。AT III 降低（PLN 丟失）為高凝血狀態的重要機轉。
-
 treatment:
   principles:
     - 治療基礎疾病
     - 抗血栓預防（高風險患者）
     - 已形成血栓的溶栓治療
   general:
-    - "抗血小板：Clopidogrel 2 mg/kg PO q24h（首選犬隻）"
-    - "低劑量 Aspirin 0.5-1 mg/kg PO q24h（IMHA 患者）"
-    - "低分子量 Heparin（Enoxaparin）0.8 mg/kg SC q6h（住院高風險患者）"
-    - "Rivaroxaban（Factor Xa 抑制劑）初步犬隻研究中"
+    - 抗血小板：Clopidogrel 2 mg/kg PO q24h（首選犬隻）
+    - 低劑量 Aspirin 0.5-1 mg/kg PO q24h（IMHA 患者）
+    - 低分子量 Heparin（Enoxaparin）0.8 mg/kg SC q6h（住院高風險患者）
+    - Rivaroxaban（Factor Xa 抑制劑）初步犬隻研究中
     - 治療基礎疾病（IMHA 免疫抑制、PLN 管理、Cushing 治療等）
-
 prognosis: 預後取決於基礎疾病與血栓事件的嚴重程度。IMHA 合併 PTE 死亡率極高。PLN 合併血栓栓塞預後不良。早期預防性抗血栓治療可降低風險。庫欣氏症治療後高凝血狀態可改善。
-
-
 guidelineRefs:
   - sourceOrg: Saudi journal of biological sciences
-    title: "The Impact of COVID-19 On Comorbidities: A Review Of Recent Updates For Combating It."
+    title: 'The Impact of COVID-19 On Comorbidities: A Review Of Recent Updates For Combating It.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8828435/
     type: review
-    pmid: "35165505"
+    pmid: '35165505'
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
     title: Update on the use of trilostane in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5855282/
     type: review
-    pmid: "29606727"
+    pmid: '29606727'
   - sourceOrg: Frontiers in veterinary science
     title: D-Dimer Concentrations and Thromboelastography in Five Dogs With Ischemic Stroke.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6691767/
     type: case-report
-    pmid: "31448295"
+    pmid: '31448295'
   - sourceOrg: Frontiers in veterinary science
-    title: Tissue plasminogen activator modified thromboelastography identifies fibrinolysis resistance in dogs with immune-mediated hemolytic anemia.
+    title: >-
+      Tissue plasminogen activator modified thromboelastography identifies fibrinolysis resistance in dogs with
+      immune-mediated hemolytic anemia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12177219/
     type: research
-    pmid: "40538729"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: Thromboelastographic Assessment of Coagulation Profiles in Dogs with Cardiac Tumors and Their Relationship to Cardiac Function.
+    pmid: '40538729'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Thromboelastographic Assessment of Coagulation Profiles in Dogs with Cardiac Tumors and Their Relationship to
+      Cardiac Function.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12466665/
     type: research
-    pmid: "41007919"
+    pmid: '41007919'
 pubmedQueries:
-  - query: '"hypercoagulability" OR "thromboembolism" AND (veterinary OR canine OR feline) AND ("prevention" OR "antithrombotic")'
+  - query: >-
+      "hypercoagulability" OR "thromboembolism" AND (veterinary OR canine OR feline) AND ("prevention" OR
+      "antithrombotic")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 高凝血狀態 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - paresis-paralysis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血栓彈力圖（TEG/ROTEM）
+          notes: 評估全血凝血狀態的最佳工具。高凝血狀態表現為 R time 縮短、MA 增加、G 值增高。較傳統 PT/APTT 更能反映整體凝血狀態。
+        - name: D-dimer 與 Antithrombin III
+          notes: D-dimer 升高提示活化的凝血與纖溶。AT III 降低（PLN 丟失）為高凝血狀態的重要機轉。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎疾病
+        - 抗血栓預防（高風險患者）
+        - 已形成血栓的溶栓治療
+ddxSource: auto-generated

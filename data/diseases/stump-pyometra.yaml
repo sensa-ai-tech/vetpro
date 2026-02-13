@@ -3,11 +3,11 @@ nameEn: Stump Pyometra
 nameZh: 殘端子宮蓄膿
 bodySystem: reproductive
 description: 絕育手術後殘留子宮或子宮頸組織發生蓄膿。通常因手術技術不當或卵巢組織殘留導致。需再次手術切除。
-
 aliases:
-  - { alias: 子宮殘端感染, language: zh }
-  - { alias: Uterine Stump Infection, language: en }
-
+  - alias: 子宮殘端感染
+    language: zh
+  - alias: Uterine Stump Infection
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較犬少見
-
 etiology:
   categories:
     - name: 手術技術相關
@@ -29,7 +28,6 @@ etiology:
       examples:
         - 殘留組織對黃體素反應
         - 細菌上行感染
-
 clinicalSigns:
   early:
     - 絕育術後數月至數年發病
@@ -40,25 +38,23 @@ clinicalSigns:
     - 多渴多尿
     - 腹痛
     - 敗血症
-
 diagnosis:
   primaryTests:
     - name: 病史確認
-      notes: "曾接受絕育手術"
+      notes: 曾接受絕育手術
     - name: 腹部超音波
-      notes: "子宮殘端囊性或液體蓄積"
+      notes: 子宮殘端囊性或液體蓄積
     - name: 全血球計數及生化
-      notes: "白血球增多、中性球左移"
+      notes: 白血球增多、中性球左移
     - name: 陰道細胞學
-      notes: "評估雌激素影響（若卵巢殘留）"
+      notes: 評估雌激素影響（若卵巢殘留）
     - name: 剖腹探查
-      notes: "確診及治療"
+      notes: 確診及治療
   differentialDiagnoses:
     - 陰道炎
     - 膀胱炎
     - 卵巢殘留症候群（無蓄膿）
     - 腹腔腫瘤
-
 treatment:
   medical:
     - 廣效抗生素穩定：amoxicillin-clavulanate 20 mg/kg PO q12h
@@ -66,33 +62,65 @@ treatment:
     - 同時移除任何殘留卵巢組織
     - 腹腔沖洗（若腹膜炎）
     - 術後抗生素7-14天
-
 prognosis:
-  general: "完整切除殘端及卵巢組織後預後良好。延遲診斷可能併發敗血症、腎衰竭。"
-
+  general: 完整切除殘端及卵巢組織後預後良好。延遲診斷可能併發敗血症、腎衰竭。
 prevention:
   - 絕育手術完整切除子宮頸及卵巢
   - 確認卵巢完整移除
   - 術中無菌技術
   - 術後監測癒合
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Pyometra in the queen: To spay or not to spay?"
+    title: 'Pyometra in the queen: To spay or not to spay?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11148877/
     type: review
-    pmid: "26733546"
+    pmid: '26733546'
     relevance: supporting
   - sourceOrg: Veterinary medicine and science
-    title: "A rare case of vulvar discharge associated with exogenous oestrogen exposure&#xa0;in a spayed&#xa0;Weimaraner bitch."
+    title: >-
+      A rare case of vulvar discharge associated with exogenous oestrogen exposure&#xa0;in a spayed&#xa0;Weimaraner
+      bitch.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9514459/
     type: case-report
-    pmid: "35622883"
+    pmid: '35622883'
     relevance: supporting
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Ovarian Remnant Syndrome in Bitches and Queens: Clinical Aspects and Potential Neoplastic Transformations."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Ovarian Remnant Syndrome in Bitches and Queens: Clinical Aspects and Potential Neoplastic Transformations.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12609093/
     type: research
-    pmid: "41227437"
+    pmid: '41227437'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: vaginal-discharge
+    frequency: common
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 殘端子宮蓄膿 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - vaginal-discharge 相關症狀
+        - anorexia 相關症狀
+        - polyuria-polydipsia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史確認
+          notes: 曾接受絕育手術
+        - name: 腹部超音波
+          notes: 子宮殘端囊性或液體蓄積
+        - name: 全血球計數及生化
+          notes: 白血球增多、中性球左移
+ddxSource: auto-generated

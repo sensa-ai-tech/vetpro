@@ -3,18 +3,18 @@ nameEn: Newfoundland Subvalvular Aortic Stenosis
 nameZh: 紐芬蘭犬主動脈瓣下狹窄
 bodySystem: cardiac
 description: 紐芬蘭犬遺傳性先天性心臟病,左心室流出道因纖維環或肌肉增生導致血流阻塞。為犬最常見的先天性心臟病之一。
-
 aliases:
-  - { alias: 紐芬蘭犬 SAS, language: zh }
-  - { alias: Newfoundland SAS, language: en }
-  - { alias: Subaortic Stenosis Newfoundland, language: en }
-
+  - alias: 紐芬蘭犬 SAS
+    language: zh
+  - alias: Newfoundland SAS
+    language: en
+  - alias: Subaortic Stenosis Newfoundland
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 紐芬蘭犬、黃金獵犬、羅威納、拳師犬為高風險品種,遺傳模式為多基因遺傳
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -25,7 +25,6 @@ etiology:
       examples:
         - 胚胎期心臟流出道發育缺陷
         - 內膜纖維化與肥厚
-
 clinicalSigns:
   early:
     - 多數無症狀,體檢發現心雜音
@@ -35,21 +34,19 @@ clinicalSigns:
     - 昏厥,尤其運動後
     - 猝死(嚴重狹窄時)
     - 充血性心衰竭(晚期)
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波+都卜勒
-      notes: "瓣膜下纖維環或肌肉增生,主動脈流速增加(正常 <2 m/s,輕度 2-3 m/s,中度 3-4.5 m/s,重度 >4.5 m/s),壓力梯度計算"
+      notes: 瓣膜下纖維環或肌肉增生,主動脈流速增加(正常 <2 m/s,輕度 2-3 m/s,中度 3-4.5 m/s,重度 >4.5 m/s),壓力梯度計算
     - name: 心電圖
-      notes: "左心室肥大表現,ST 段改變,心室早期收縮"
+      notes: 左心室肥大表現,ST 段改變,心室早期收縮
     - name: 胸部 X 光
-      notes: "輕度病例正常,嚴重者左心室肥大,主動脈弓後狹窄後擴張"
+      notes: 輕度病例正常,嚴重者左心室肥大,主動脈弓後狹窄後擴張
   differentialDiagnoses:
     - 肺動脈瓣狹窄
     - 動脈導管未閉
     - 主動脈瓣狹窄
     - 心室中隔缺損
-
 treatment:
   medical:
     - 輕度狹窄(壓力梯度 <50 mmHg):無需治療,限制劇烈運動
@@ -58,21 +55,45 @@ treatment:
     - 嚴重狹窄:球囊擴張術(介入性治療,但再狹窄率高且僅部分病例適用)
     - 手術切除纖維環(高風險,需專科心臟外科)
     - 抗心律不整藥物(若有惡性心室性心律不整)
-
 prognosis:
-  general: "預後取決於狹窄嚴重度。輕度狹窄(壓力梯度 <50 mmHg)預後良好,可正常壽命。中度狹窄(50-80 mmHg)存活期縮短,需限制活動。重度狹窄(>80 mmHg)預後不良,猝死風險高,中位存活期 3-5 年。手術治療效果有限。"
-
+  general: 預後取決於狹窄嚴重度。輕度狹窄(壓力梯度 <50 mmHg)預後良好,可正常壽命。中度狹窄(50-80 mmHg)存活期縮短,需限制活動。重度狹窄(>80 mmHg)預後不良,猝死風險高,中位存活期 3-5 年。手術治療效果有限。
 prevention:
   - 受影響犬隻不應繁殖
   - 繁殖前進行心臟超音波篩檢
   - 高風險品種建議 1 歲前完成心臟評估
   - 避免劇烈運動與高溫環境
-
-
 guidelineRefs:
   - sourceOrg: Canine medicine and genetics
     title: Genetics of canine subvalvular aortic stenosis (SAS).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8103588/
     type: review
-    pmid: "33962679"
+    pmid: '33962679'
     relevance: primary
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: heart-murmur
+    frequency: common
+  - symptomId: syncope
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 紐芬蘭犬主動脈瓣下狹窄 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - heart-murmur 相關症狀
+        - syncope 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波+都卜勒
+          notes: 瓣膜下纖維環或肌肉增生,主動脈流速增加(正常 <2 m/s,輕度 2-3 m/s,中度 3-4.5 m/s,重度 >4.5 m/s),壓力梯度計算
+        - name: 心電圖
+          notes: 左心室肥大表現,ST 段改變,心室早期收縮
+        - name: 胸部 X 光
+          notes: 輕度病例正常,嚴重者左心室肥大,主動脈弓後狹窄後擴張
+ddxSource: auto-generated

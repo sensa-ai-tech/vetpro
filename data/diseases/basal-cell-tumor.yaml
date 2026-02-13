@@ -3,11 +3,11 @@ nameEn: Basal Cell Tumor
 nameZh: 基底細胞腫瘤
 bodySystem: oncology
 description: 皮膚基底層細胞來源的腫瘤。犬多為良性行為，貓的基底細胞癌較常見但仍多為低度惡性。為貓最常見的皮膚腫瘤之一。表現為堅實、圓形、有蒂或無蒂的皮膚腫塊。
-
 aliases:
-  - { alias: "Basal Cell Carcinoma", language: en }
-  - { alias: "基底細胞癌", language: zh }
-
+  - alias: Basal Cell Carcinoma
+    language: en
+  - alias: 基底細胞癌
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓最常見皮膚腫瘤之一。多見於頭頸部。Siamese 好發。
-
 etiology:
   categories:
     - name: 腫瘤增生
@@ -23,7 +22,6 @@ etiology:
         - 基底層細胞增生
         - 品種傾向
         - 紫外線可能相關
-
 clinicalSigns:
   early:
     - 頭頸部堅實圓形腫塊
@@ -33,14 +31,12 @@ clinicalSigns:
     - 緩慢增大
     - 可能潰瘍
     - 貓的基底細胞癌可局部侵犯
-
 diagnosis:
   primaryTests:
     - name: 細針穿刺細胞學
       notes: 小圓形基底細胞群
     - name: 組織病理
       notes: 確認良惡性
-
 treatment:
   principles:
     - 手術切除為主要治療
@@ -48,16 +44,55 @@ treatment:
     - 手術完整切除
     - 貓基底細胞癌需確保邊緣乾淨
     - 遠端轉移極少
-
 prognosis: 犬良性基底細胞瘤預後極佳。貓基底細胞癌完全切除後預後良好。
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Orofacial masses in domestic rabbits: a retrospective review of 120 cases from 2 institutions, 2000-2023."
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: 'Orofacial masses in domestic rabbits: a retrospective review of 120 cases from 2 institutions, 2000-2023.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11462579/
     type: review
-    pmid: "38389410"
+    pmid: '38389410'
 pubmedQueries:
   - query: '"basal cell tumor" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 基底細胞瘤 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 檢查皮膚腫塊特徵和位置
+      findings:
+        - 頭頸部或軀幹常見
+        - 圓形、界線明確的腫塊
+        - 表面可能色素沉著或潰瘍
+        - 單發性多見
+    - step: 2
+      action: 細胞學檢查
+      details: 進行細針抽吸細胞學評估
+      findings:
+        - 小型至中型均一基底樣細胞
+        - 細胞排列呈片狀或欄柵狀
+        - 黑色素可能存在
+        - 低度有絲分裂活性
+    - step: 3
+      action: 組織病理學確診
+      details: 進行切除活檢和組織病理學分析
+      findings:
+        - 基底樣細胞增生呈島狀或索狀
+        - 周邊細胞呈欄柵狀排列
+        - 良性表現居多（犬）
+        - 貓的基底細胞瘤多為良性
+clinicalPearls:
+  - 貓頭頸部的黑色皮膚腫塊最常見的診斷是基底細胞瘤，而非黑色素瘤
+  - 細針抽吸通常即可獲得高度懷疑的診斷
+  - 多發性基底細胞瘤在貓偶爾可見，每個腫塊應獨立評估
+  - 犬的基底細胞癌雖名為『癌』但生物行為溫和，不應過度治療
+monitoringItems:
+  - 術後2-4週傷口癒合追蹤
+  - 每6個月全身皮膚檢查（多發性傾向）
+  - 惡性型術後每3個月觸診局部
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: common
+ddxSource: book

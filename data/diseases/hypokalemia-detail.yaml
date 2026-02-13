@@ -3,11 +3,11 @@ nameEn: Hypokalemia Detail
 nameZh: 低血鉀症（詳細）
 bodySystem: electrolyte
 description: 血清鉀離子濃度低於正常範圍（犬貓 <3.5 mEq/L），可能因攝取不足、腎臟或腸道流失、細胞內轉移引起。嚴重低血鉀可導致肌肉無力、心律不整及腎功能損傷。
-
 aliases:
-  - { alias: 血鉀過低, language: zh }
-  - { alias: Hypopotassemia, language: en }
-
+  - alias: 血鉀過低
+    language: zh
+  - alias: Hypopotassemia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓慢性腎臟病最常見電解質異常，多肌病（Hypokalemic Polymyopathy）為特徵表現
-
 etiology:
   categories:
     - name: 腎臟流失
@@ -34,7 +33,6 @@ etiology:
         - 胰島素治療
         - 鹼血症
         - 低鎂血症
-
 clinicalSigns:
   early:
     - 輕度肌肉無力、嗜睡
@@ -44,21 +42,19 @@ clinicalSigns:
     - 便秘、腸麻痺
     - 心律不整、心搏過速
     - 多尿、腎功能惡化
-
 diagnosis:
   primaryTests:
     - name: 血清電解質
-      notes: "K <3.5 mEq/L（輕度 3.0-3.5, 中度 2.5-3.0, 嚴重 <2.5）"
+      notes: K <3.5 mEq/L（輕度 3.0-3.5, 中度 2.5-3.0, 嚴重 <2.5）
     - name: 心電圖
-      notes: "可見 U 波、ST 段下降、T 波平坦或倒置"
+      notes: 可見 U 波、ST 段下降、T 波平坦或倒置
     - name: 血液氣體分析
-      notes: "評估酸鹼平衡及電解質狀態"
+      notes: 評估酸鹼平衡及電解質狀態
   differentialDiagnoses:
     - 低鎂血症
     - 代謝性鹼中毒
     - 腎小管性酸中毒
     - 原發性醛固酮增多症
-
 treatment:
   medical:
     - 輕度（K 3.0-3.5）：口服補充 Potassium gluconate 2-6 mEq/cat/day
@@ -66,26 +62,54 @@ treatment:
     - 嚴重（K <2.5）：持續靜脈輸液補充，監測心電圖及血鉀
     - 治療潛在病因（控制嘔吐、調整利尿劑劑量）
     - 補充鎂離子（低鎂血症會影響鉀補充效果）
-
 prognosis:
-  general: "預後取決於潛在病因及嚴重程度。單純低血鉀經補充後預後良好，但慢性腎臟病相關低血鉀需長期管理。嚴重低血鉀（<2.0 mEq/L）可能導致心律不整或呼吸衰竭，需緊急處理。"
-
+  general: 預後取決於潛在病因及嚴重程度。單純低血鉀經補充後預後良好，但慢性腎臟病相關低血鉀需長期管理。嚴重低血鉀（<2.0 mEq/L）可能導致心律不整或呼吸衰竭，需緊急處理。
 prevention:
   - 慢性腎臟病患者定期監測血鉀
   - 使用利尿劑時定期電解質檢查
   - 腸胃道疾病患者補充電解質溶液
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in pharmacology
-    title: Early reduction of skin potassium without sodium accumulation in the pathogenesis of salt sensitivity in primary aldosteronism.
+    title: >-
+      Early reduction of skin potassium without sodium accumulation in the pathogenesis of salt sensitivity in primary
+      aldosteronism.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12069341/
     type: research
-    pmid: "40365307"
+    pmid: '40365307'
     relevance: supporting
   - sourceOrg: Journal of veterinary internal medicine
     title: Clinical findings and diagnostic procedures in 270 small ruminants with obstructive urolithiasis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5980268/
     type: research
-    pmid: "29660779"
+    pmid: '29660779'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: constipation
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 低血鉀症（詳細） 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+        - polyuria-polydipsia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清電解質
+          notes: K <3.5 mEq/L（輕度 3.0-3.5, 中度 2.5-3.0, 嚴重 <2.5）
+        - name: 心電圖
+          notes: 可見 U 波、ST 段下降、T 波平坦或倒置
+        - name: 血液氣體分析
+          notes: 評估酸鹼平衡及電解質狀態
+ddxSource: auto-generated

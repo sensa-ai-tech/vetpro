@@ -3,18 +3,18 @@ nameEn: Avian Constricted Toe Syndrome
 nameZh: 鳥類趾縮窄症候群
 bodySystem: respiratory
 description: 趾縮窄症候群是雛鳥常見的發育性疾病,特徵為趾部纖維性環狀縮窄,導致血液循環障礙。常見於人工育雛環境,與低濕度、營養不良和遺傳因素有關,嚴重可導致趾端壞死。
-
 aliases:
-  - { alias: 趾環縮窄症, language: zh }
-  - { alias: Constricted Toe Disease, language: en }
-  - { alias: Toe Necrosis Syndrome, language: en }
-
+  - alias: 趾環縮窄症
+    language: zh
+  - alias: Constricted Toe Disease
+    language: en
+  - alias: Toe Necrosis Syndrome
+    language: en
 species:
   - speciesCommon: bird
     speciesScientific: Aves
     prevalence: moderate
     notes: 手養雛鳥和人工孵化雛鳥風險較高,鸚鵡科特別常見
-
 etiology:
   categories:
     - name: 環境因素
@@ -32,7 +32,6 @@ etiology:
         - 遺傳易感性
         - 趾部乾燥皮屑累積
         - 羽毛鞘或纖維纏繞
-
 clinicalSigns:
   early:
     - 趾部環狀凹陷或縮窄
@@ -44,20 +43,18 @@ clinicalSigns:
     - 遠端趾部發紫或蒼白
     - 趾端冰冷無血流
     - 趾部壞死脫落
-
 diagnosis:
   primaryTests:
     - name: 視診
-      notes: "可見明顯環狀縮窄,縮窄遠端腫脹變色"
+      notes: 可見明顯環狀縮窄,縮窄遠端腫脹變色
     - name: 血流評估
-      notes: "檢查趾端溫度和顏色,評估血液循環"
+      notes: 檢查趾端溫度和顏色,評估血液循環
     - name: 營養評估
-      notes: "檢視飼料配方和育雛環境參數"
+      notes: 檢視飼料配方和育雛環境參數
   differentialDiagnoses:
     - 羽毛或線纏繞
     - 外傷性組織壞死
     - 血管炎
-
 treatment:
   medical:
     - 立即增加育雛環境濕度至50-60%
@@ -67,13 +64,33 @@ treatment:
     - 補充維生素A 5000 IU/kg飼料
     - 生物素 1-2 mg/kg飼料
     - 嚴重病例需外科切開縮窄環恢復血流
-
 prognosis:
-  general: "早期發現及時處理預後良好,縮窄環可完全消除。但若延誤治療導致趾端壞死,該趾無法恢復功能,可能需截肢。預防重於治療,適當育雛環境可幾乎完全避免此病。"
-
+  general: 早期發現及時處理預後良好,縮窄環可完全消除。但若延誤治療導致趾端壞死,該趾無法恢復功能,可能需截肢。預防重於治療,適當育雛環境可幾乎完全避免此病。
 prevention:
   - 育雛環境濕度維持50-60%
   - 使用柔軟墊料(毛巾、紙巾)
   - 定期檢查雛鳥趾部
   - 提供均衡營養配方
   - 避免羽毛鞘或纖維累積
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 鳥類趾縮窄症候群 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 視診
+          notes: 可見明顯環狀縮窄,縮窄遠端腫脹變色
+        - name: 血流評估
+          notes: 檢查趾端溫度和顏色,評估血液循環
+        - name: 營養評估
+          notes: 檢視飼料配方和育雛環境參數
+ddxSource: auto-generated

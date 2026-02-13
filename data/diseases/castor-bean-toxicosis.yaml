@@ -2,13 +2,16 @@ slug: castor-bean-toxicosis
 nameEn: Castor Bean Toxicosis
 nameZh: 蓖麻子中毒
 bodySystem: toxicology
-description: 蓖麻子 (Ricinus communis) 含有蓖麻毒素 (ricin)，為一種核醣體失活蛋白 (ribosome-inactivating protein)，極少量即可致命。種子外殼需被咬破才能釋放毒素。引起嚴重出血性腸胃炎與多器官衰竭。無特效解毒劑。
-
+description: >-
+  蓖麻子 (Ricinus communis) 含有蓖麻毒素 (ricin)，為一種核醣體失活蛋白 (ribosome-inactivating
+  protein)，極少量即可致命。種子外殼需被咬破才能釋放毒素。引起嚴重出血性腸胃炎與多器官衰竭。無特效解毒劑。
 aliases:
-  - { alias: 蓖麻毒素中毒, language: zh }
-  - { alias: Ricin Poisoning, language: en }
-  - { alias: Castor Oil Plant Toxicosis, language: en }
-
+  - alias: 蓖麻毒素中毒
+    language: zh
+  - alias: Ricin Poisoning
+    language: en
+  - alias: Castor Oil Plant Toxicosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓同樣易感。攝入較少見。
-
 etiology:
   categories:
     - name: 毒性機制
@@ -30,7 +32,6 @@ etiology:
         - 蓖麻種子（需咬破外殼）
         - 蓖麻葉（毒性較種子低）
         - 蓖麻油（加工過程已去毒）
-
 clinicalSigns:
   early:
     - 嘔吐（攝入後 6-12 小時）
@@ -43,7 +44,6 @@ clinicalSigns:
     - 低血壓與休克
     - DIC
     - 死亡（2-5 天）
-
 diagnosis:
   primaryTests:
     - name: 病史與種子辨識
@@ -55,7 +55,6 @@ diagnosis:
     - 凝血功能
     - CBC
     - Ricin ELISA（特殊實驗室）
-
 treatment:
   principles:
     - 無特效解毒劑
@@ -71,9 +70,51 @@ treatment:
     - 新鮮冷凍血漿（DIC）
     - 腎功能保護
     - 住院至少 3-5 天密切監測
-
 prognosis: 蓖麻子中毒致死率視攝入量與是否咬碎而定。完整吞下未咬碎者可能安全。咬碎後攝入大量者預後不良。早期去汙染加積極支持療法可改善預後。
-
 pubmedQueries:
   - query: '"castor bean" OR "ricin" AND (toxicosis OR poisoning) AND (veterinary OR canine)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: haematochezia
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+diagnosticAlgorithm:
+  title: 蓖麻子中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dehydration 相關症狀
+        - vomiting 相關症狀
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史與種子辨識
+          notes: 確認蓖麻種子攝入。種子外觀獨特（斑紋花紋）。確認是否被咬碎
+        - name: 臨床表現
+          notes: 嚴重出血性腸胃炎在種子攝入數小時後發生
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 肝腎功能
+        - 凝血功能
+        - CBC
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 無特效解毒劑
+        - 積極去汙染
+        - 支持療法為核心
+ddxSource: auto-generated

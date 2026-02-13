@@ -3,12 +3,13 @@ nameEn: Paraphimosis
 nameZh: 嵌頓包莖
 bodySystem: reproductive
 description: 嵌頓包莖 (paraphimosis) 為陰莖伸出包皮後無法縮回的緊急狀態。暴露的陰莖組織迅速水腫、乾燥與壞死。犬常見於交配後、興奮或包皮環狀毛纏繞。需緊急處理以避免永久性陰莖損傷。
-
 aliases:
-  - { alias: 陰莖嵌頓, language: zh }
-  - { alias: 陰莖無法回縮, language: zh }
-  - { alias: Penile Entrapment, language: en }
-
+  - alias: 陰莖嵌頓
+    language: zh
+  - alias: 陰莖無法回縮
+    language: zh
+  - alias: Penile Entrapment
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓嵌頓包莖罕見。可見於交配後或 urethral obstruction 導致的持續勃起。
-
 etiology:
   categories:
     - name: 常見原因
@@ -32,7 +32,6 @@ etiology:
         - 包皮開口壓迫→靜脈回流受阻→水腫
         - 水腫加重→更無法回縮（惡性循環）
         - 長時間暴露→組織壞死
-
 clinicalSigns:
   early:
     - 陰莖伸出包皮外無法回縮
@@ -44,7 +43,6 @@ clinicalSigns:
     - 疼痛
     - 組織壞死（黑色變化）
     - 排尿困難
-
 diagnosis:
   primaryTests:
     - name: 視診
@@ -54,7 +52,6 @@ diagnosis:
   additional:
     - 排除陰莖腫塊或腫瘤
     - 排尿功能評估
-
 treatment:
   principles:
     - 緊急潤滑與復位
@@ -70,16 +67,61 @@ treatment:
     - 嚴重壞死：陰莖截斷術 + 尿道造口術
     - E-collar 防止舔舐
     - 必要時包皮切開術（包皮開口狹窄時）
-
 prognosis: 早期處理（數小時內）復位後預後極佳。延遲處理導致陰莖壞死者需截斷術，可保留排尿功能但喪失繁殖能力。預防（包皮毛髮修剪、監測交配後）為關鍵。
-
-
 guidelineRefs:
   - sourceOrg: The Veterinary clinics of North America. Equine practice
-    title: "Managing Reproduction Emergencies in the Field: Part 1: Injuries in Stallions; Injury of the External Portion of the Reproductive Tract and Gestational Conditions in the Mare."
+    title: >-
+      Managing Reproduction Emergencies in the Field: Part 1: Injuries in Stallions; Injury of the External Portion of
+      the Reproductive Tract and Gestational Conditions in the Mare.
     url: https://pubmed.ncbi.nlm.nih.gov/34243877/
     type: review
-    pmid: "34243877"
+    pmid: '34243877'
 pubmedQueries:
   - query: '"paraphimosis" AND (veterinary OR canine) AND ("treatment" OR "penile" OR "surgery")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 包皮嵌頓 診斷流程
+  steps:
+    - step: 1
+      action: 視診確認
+      details: 陰莖外露無法縮回
+      findings:
+        - 陰莖腫脹充血
+        - 黏膜乾燥
+        - 包皮環緊縮
+    - step: 2
+      action: 組織活力評估
+      details: 評估缺血程度
+      findings:
+        - 粉紅色→活力佳
+        - 發紺→缺血
+        - 黑色→壞死
+    - step: 3
+      action: 誘因搜尋
+      details: 檢查毛髮纏繞、異物、腫塊
+      findings:
+        - 環繞毛髮
+        - 包皮狹窄
+        - 腫瘤
+    - step: 4
+      action: 緊急復位
+      details: 潤滑+消腫+復位
+      findings:
+        - 成功復位
+        - 需手術介入
+clinicalPearls:
+  - '>30-60分鐘未復位即為急診'
+  - Acepromazine是首選鎮靜劑（α-阻斷降壓有利復位）
+  - 復位前先潤滑和消腫，不要強行推回
+  - 復發者需檢查包皮開口是否過小
+monitoringItems:
+  - 復位後陰莖組織恢復
+  - 排尿功能
+  - 復發監測
+  - 包皮周圍衛生
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: pallor-cyanosis
+    frequency: rare
+ddxSource: book

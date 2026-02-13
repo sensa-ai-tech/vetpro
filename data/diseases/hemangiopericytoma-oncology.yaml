@@ -2,15 +2,20 @@ slug: hemangiopericytoma-oncology
 nameEn: Hemangiopericytoma Oncology
 nameZh: 血管外皮瘤
 bodySystem: oncology
-description: 血管外皮瘤 (hemangiopericytoma) 現已重新分類為周邊神經鞘腫瘤 (peripheral nerve sheath tumor, PNST) 或軟組織肉瘤。為犬常見的皮膚/皮下軟組織腫瘤，局部侵襲性中等至強，轉移率低但復發率高。貓少見。
-
+description: >-
+  血管外皮瘤 (hemangiopericytoma) 現已重新分類為周邊神經鞘腫瘤 (peripheral nerve sheath tumor, PNST)
+  或軟組織肉瘤。為犬常見的皮膚/皮下軟組織腫瘤，局部侵襲性中等至強，轉移率低但復發率高。貓少見。
 aliases:
-  - { alias: 周邊神經鞘腫瘤, language: zh }
-  - { alias: 犬軟組織肉瘤, language: zh }
-  - { alias: Peripheral Nerve Sheath Tumor, language: en }
-  - { alias: PNST, language: en }
-  - { alias: Perivascular Wall Tumor, language: en }
-
+  - alias: 周邊神經鞘腫瘤
+    language: zh
+  - alias: 犬軟組織肉瘤
+    language: zh
+  - alias: Peripheral Nerve Sheath Tumor
+    language: en
+  - alias: PNST
+    language: en
+  - alias: Perivascular Wall Tumor
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -18,7 +23,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓少見。行為特徵與犬相似，局部侵襲性強。需與注射部位肉瘤鑑別。
-
 etiology:
   categories:
     - name: 腫瘤起源
@@ -31,7 +35,6 @@ etiology:
         - 中老年犬（中位年齡 7-10 歲）
         - 大型犬品種易感
         - 四肢好發
-
 clinicalSigns:
   early:
     - 皮膚或皮下緩慢生長的堅硬腫塊
@@ -44,7 +47,6 @@ clinicalSigns:
     - 可能壓迫或侵犯周圍結構（神經、血管）
     - 局部疼痛或跛行
     - 皮膚潰瘍（晚期大型腫瘤）
-
 diagnosis:
   primaryTests:
     - name: 細針抽吸細胞學 (FNA)
@@ -58,7 +60,6 @@ diagnosis:
     - 胸腔 X-ray 三視圖（轉移篩檢）
     - 術前 CBC 與生化
     - 免疫組織化學染色（S-100、vimentin）
-
 treatment:
   principles:
     - 廣泛手術切除為首選
@@ -73,21 +74,57 @@ treatment:
     - metronomic chemotherapy（低劑量 cyclophosphamide）可考慮
     - 術後每 3 個月追蹤檢查
     - 疼痛管理
-
 prognosis: 犬軟組織肉瘤（含血管外皮瘤）手術完整切除預後良好。低分級腫瘤（Grade I-II）完整切除後中位無病存活 >3 年。切緣不乾淨復發率高達 30-75%。高分級（Grade III）轉移率約 40%，預後較差。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary and comparative oncology
-    title: "The controversial histologic classification of canine subcutaneous whorling tumours: The path to perivascular wall tumours."
+    title: >-
+      The controversial histologic classification of canine subcutaneous whorling tumours: The path to perivascular wall
+      tumours.
     url: https://pubmed.ncbi.nlm.nih.gov/31778274/
     type: review
-    pmid: "31778274"
+    pmid: '31778274'
   - sourceOrg: Journal of the American Veterinary Medical Association
     title: Use of a frameless computed tomography-guided stereotactic biopsy system for nasal biopsy in five dogs.
     url: https://pubmed.ncbi.nlm.nih.gov/27031420/
     type: research
-    pmid: "27031420"
+    pmid: '27031420'
 pubmedQueries:
   - query: '"hemangiopericytoma" OR "soft tissue sarcoma" AND (veterinary OR canine) AND ("treatment" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 血管外皮瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 細針抽吸細胞學 (FNA)
+          notes: 可初步判斷間葉組織腫瘤，但確定分型需組織病理。梭形細胞為典型特徵
+        - name: 組織病理學（切取式或切除生檢）
+          notes: 確認軟組織肉瘤分級（Grade I-III）。評估有絲分裂指數與壞死比例
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 胸腔 X-ray 三視圖（轉移篩檢）
+        - 術前 CBC 與生化
+        - 免疫組織化學染色（S-100、vimentin）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 廣泛手術切除為首選
+        - 切緣至少 2-3 cm 及一個筋膜面深度
+        - 低分級腫瘤單純手術可能足夠
+ddxSource: auto-generated

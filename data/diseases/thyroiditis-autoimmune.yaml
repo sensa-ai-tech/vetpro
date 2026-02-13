@@ -3,11 +3,11 @@ nameEn: Thyroiditis Autoimmune
 nameZh: 自體免疫性甲狀腺炎
 bodySystem: immunology
 description: 免疫系統攻擊甲狀腺組織導致慢性發炎及破壞,為犬甲狀腺功能低下最常見原因,可檢出抗甲狀腺球蛋白抗體(TgAA)。
-
 aliases:
-  - { alias: 淋巴球性甲狀腺炎, language: zh }
-  - { alias: Lymphocytic thyroiditis, language: en }
-
+  - alias: 淋巴球性甲狀腺炎
+    language: zh
+  - alias: Lymphocytic thyroiditis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓極少見,貓甲狀腺疾病以甲狀腺亢進為主
-
 etiology:
   categories:
     - name: 自體免疫機制
@@ -34,7 +33,6 @@ etiology:
       examples:
         - 感染可能觸發自體免疫反應
         - 疫苗接種(爭議性)
-
 clinicalSigns:
   early:
     - 嗜睡、活力下降
@@ -46,25 +44,23 @@ clinicalSigns:
     - 心搏過緩
     - 神經症狀(周邊神經病變、前庭症狀)
     - 高膽固醇血症
-
 diagnosis:
   primaryTests:
     - name: 血清總T4
-      notes: "低於正常範圍(<15 nmol/L 或 <1.2 μg/dL)"
+      notes: 低於正常範圍(<15 nmol/L 或 <1.2 μg/dL)
     - name: 游離T4 by ED
-      notes: "更準確評估甲狀腺功能,<10 pmol/L 支持診斷"
+      notes: 更準確評估甲狀腺功能,<10 pmol/L 支持診斷
     - name: TSH
-      notes: "升高(>0.6 ng/mL)支持原發性甲狀腺功能低下"
+      notes: 升高(>0.6 ng/mL)支持原發性甲狀腺功能低下
     - name: 抗甲狀腺球蛋白抗體(TgAA)
-      notes: "陽性確診自體免疫性甲狀腺炎,但陰性不排除"
+      notes: 陽性確診自體免疫性甲狀腺炎,但陰性不排除
     - name: 血液常規
-      notes: "可見輕度貧血、高膽固醇血症"
+      notes: 可見輕度貧血、高膽固醇血症
   differentialDiagnoses:
     - 甲狀腺萎縮(非免疫性)
     - 繼發性甲狀腺功能低下(垂體疾病)
     - 藥物誘發(類固醇、抗癲癇藥)
     - 甲狀腺低功能症候群(非甲狀腺疾病引起T4下降)
-
 treatment:
   medical:
     - 甲狀腺素補充(Levothyroxine 0.02 mg/kg PO BID,初始劑量)
@@ -74,44 +70,78 @@ treatment:
     - 穩定後每6-12個月監測T4
     - 終生補充治療
     - 症狀改善(活力、毛髮再生)通常於治療1-3個月內出現
-
 prognosis:
-  general: "預後優良,適當甲狀腺素補充可完全控制症狀並恢復正常生活品質。需終生治療及定期監測。"
-
+  general: 預後優良,適當甲狀腺素補充可完全控制症狀並恢復正常生活品質。需終生治療及定期監測。
 prevention:
   - 遺傳性疾病,無有效預防
   - 高危品種繁殖前可進行TgAA篩檢
   - 早期診斷並治療避免併發症
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in immunology
-    title: Acupuncture attenuates experimental autoimmune thyroiditis by modulating intestinal microbiota and palmitic acid metabolism.
+    title: >-
+      Acupuncture attenuates experimental autoimmune thyroiditis by modulating intestinal microbiota and palmitic acid
+      metabolism.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12066539/
     type: research
-    pmid: "40356922"
+    pmid: '40356922'
     relevance: supporting
   - sourceOrg: Journal of traditional Chinese medicine = Chung i tsa chih ying wen pan
-    title: "Bailing capsule alleviates autoimmune thyroiditis regulating peroxisome proliferator-activated receptor signaling pathway: a multi-omics analysis."
+    title: >-
+      Bailing capsule alleviates autoimmune thyroiditis regulating peroxisome proliferator-activated receptor signaling
+      pathway: a multi-omics analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11589566/
     type: research
-    pmid: "39617707"
+    pmid: '39617707'
     relevance: supporting
   - sourceOrg: Journal of traditional Chinese medicine = Chung i tsa chih ying wen pan
-    title: Protective effect of thyroid and restores of ovarian function of Buzhong Yiqi granule on experimental autoimmune thyroiditis in female rats.
+    title: >-
+      Protective effect of thyroid and restores of ovarian function of Buzhong Yiqi granule on experimental autoimmune
+      thyroiditis in female rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10927403/
     type: research
-    pmid: "38504537"
+    pmid: '38504537'
     relevance: supporting
   - sourceOrg: Drug design, development and therapy
-    title: "Dioscin Ameliorates Experimental Autoimmune Thyroiditis via the mTOR and TLR4/NF-&#x3ba;B Signaling."
+    title: Dioscin Ameliorates Experimental Autoimmune Thyroiditis via the mTOR and TLR4/NF-&#x3ba;B Signaling.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10404412/
     type: research
-    pmid: "37551407"
+    pmid: '37551407'
     relevance: supporting
   - sourceOrg: Frontiers in endocrinology
-    title: A Chinese Patent Medicine JiaYanKangTai Alleviates Inflammatory Lesions of Experimental Autoimmune Thyroiditis by Regulating Interleukin-17 Signaling.
+    title: >-
+      A Chinese Patent Medicine JiaYanKangTai Alleviates Inflammatory Lesions of Experimental Autoimmune Thyroiditis by
+      Regulating Interleukin-17 Signaling.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8843746/
     type: research
-    pmid: "35178026"
+    pmid: '35178026'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: alopecia
+    frequency: uncommon
+  - symptomId: weight-gain
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 自體免疫性甲狀腺炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - alopecia 相關症狀
+        - weight-gain 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清總T4
+          notes: 低於正常範圍(<15 nmol/L 或 <1.2 μg/dL)
+        - name: 游離T4 by ED
+          notes: 更準確評估甲狀腺功能,<10 pmol/L 支持診斷
+        - name: TSH
+          notes: 升高(>0.6 ng/mL)支持原發性甲狀腺功能低下
+ddxSource: auto-generated

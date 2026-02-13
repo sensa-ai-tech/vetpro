@@ -3,18 +3,18 @@ nameEn: Whippet Pattern Baldness
 nameZh: 惠比特犬型禿
 bodySystem: dermatology
 description: 惠比特犬及其他短毛犬種的非發炎性對稱性脫毛,主要影響耳廓、腹側頸部、胸部及大腿內側。屬於良性皮膚病變,僅影響美觀,無健康風險。
-
 aliases:
-  - { alias: 型態性脫毛, language: zh }
-  - { alias: Pattern Alopecia, language: en }
-  - { alias: Pinnal Alopecia, language: en }
-
+  - alias: 型態性脫毛
+    language: zh
+  - alias: Pattern Alopecia
+    language: en
+  - alias: Pinnal Alopecia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 惠比特、短毛臘腸、義大利靈緹、曼徹斯特㹴為好發品種
-
 etiology:
   categories:
     - name: 毛囊發育異常
@@ -22,7 +22,6 @@ etiology:
         - 遺傳性毛囊退化
         - 毛囊周期停滯於休止期
         - 局部皮膚微血管循環不良
-
 clinicalSigns:
   early:
     - 耳廓背側毛髮稀疏(6月齡起)
@@ -33,40 +32,59 @@ clinicalSigns:
     - 大腿內側毛髮減少
     - 皮膚光滑、色素正常
     - 無其他皮膚病變
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
-      notes: "特徵性分布、無發炎、對稱性脫毛"
+      notes: 特徵性分布、無發炎、對稱性脫毛
     - name: 皮膚刮搔檢查
-      notes: "排除寄生蟲"
+      notes: 排除寄生蟲
     - name: 皮膚活檢
-      notes: "毛囊萎縮、無發炎細胞浸潤"
+      notes: 毛囊萎縮、無發炎細胞浸潤
   differentialDiagnoses:
     - 甲狀腺功能低下症
     - 庫興氏症候群
     - 毛囊炎
     - 色素稀釋性脫毛
-
 treatment:
   medical:
     - 無特效治療(非必要治療)
     - Melatonin 3-6 mg PO q12h(可能促進毛髮再生,效果有限)
     - 皮膚保濕(防止乾燥)
     - 防曬(暴露皮膚)
-
 prognosis:
-  general: "良性病變,僅影響美觀,不影響健康或壽命。脫毛通常不可逆,但不會進展為全身性脫毛。無健康風險。"
-
+  general: 良性病變,僅影響美觀,不影響健康或壽命。脫毛通常不可逆,但不會進展為全身性脫毛。無健康風險。
 prevention:
   - 無有效預防方法
   - 遺傳相關,繁殖計畫應考慮此特徵
-
-
 guidelineRefs:
   - sourceOrg: Pathogens (Basel, Switzerland)
     title: Clinical, Immunological and Pathological Characteristics of Ischemic Dermatopathy in Dogs with Leishmaniosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11944567/
     type: research
-    pmid: "40137731"
+    pmid: '40137731'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: alopecia
+    frequency: common
+  - symptomId: skin-pruritus
+    frequency: common
+diagnosticAlgorithm:
+  title: 惠比特犬型禿 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - alopecia 相關症狀
+        - skin-pruritus 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 特徵性分布、無發炎、對稱性脫毛
+        - name: 皮膚刮搔檢查
+          notes: 排除寄生蟲
+        - name: 皮膚活檢
+          notes: 毛囊萎縮、無發炎細胞浸潤
+ddxSource: auto-generated

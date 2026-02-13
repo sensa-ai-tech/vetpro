@@ -3,13 +3,15 @@ nameEn: Vaccine Reactions
 nameZh: 疫苗反應
 bodySystem: immunology
 description: 疫苗不良反應涵蓋從輕微注射部位反應到嚴重過敏性休克的各種免疫反應。犬貓常見反應包括注射部位腫脹、發燒、嗜睡。嚴重反應（全身過敏反應）在小型犬接受多價疫苗時風險最高。貓的注射部位肉瘤 (FISS) 為特殊嚴重併發症。
-
 aliases:
-  - { alias: 疫苗不良反應, language: zh }
-  - { alias: 疫苗過敏反應, language: zh }
-  - { alias: Vaccine Adverse Events, language: en }
-  - { alias: Vaccine Hypersensitivity, language: en }
-
+  - alias: 疫苗不良反應
+    language: zh
+  - alias: 疫苗過敏反應
+    language: zh
+  - alias: Vaccine Adverse Events
+    language: en
+  - alias: Vaccine Hypersensitivity
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓疫苗反應除一般過敏外，需注意注射部位肉瘤 (FISS)。佐劑疫苗風險較高。FISS 發生率約 1-3.6/10,000 劑。
-
 etiology:
   categories:
     - name: 反應類型
@@ -33,7 +34,6 @@ etiology:
         - 多價疫苗同時接種
         - 佐劑疫苗（貓 FISS）
         - 既往疫苗反應史
-
 clinicalSigns:
   early:
     - 注射部位腫脹與疼痛
@@ -45,7 +45,6 @@ clinicalSigns:
     - 嘔吐、腹瀉
     - 全身過敏反應（接種後數分鐘至數小時）
     - 貓 FISS：注射部位進行性硬結（接種後數月至數年）
-
 diagnosis:
   primaryTests:
     - name: 時間關聯性
@@ -56,7 +55,6 @@ diagnosis:
     - CBC（免疫介導性血球減少評估）
     - 注射部位硬結持續 >3 個月需生檢（排除 FISS）
     - 3-2-1 法則（貓 FISS）：>3 個月、>2 cm、持續增大
-
 treatment:
   principles:
     - 輕度反應觀察即可
@@ -69,23 +67,66 @@ treatment:
     - 全身過敏反應：epinephrine 0.01 mg/kg IM + IV 輸液 + 氧氣
     - 貓 FISS：廣泛手術切除 ± 放射治療
     - 未來疫苗接種策略：分開接種、預防性抗組織胺、效價檢測替代
-
 prognosis: 輕中度疫苗反應預後極佳，多數 24-48 小時自行消退。全身過敏反應及時處理後預後佳。貓 FISS 為惡性腫瘤，手術切除後復發率高（約 30-70%）。
-
-
 guidelineRefs:
   - sourceOrg: The Veterinary clinics of North America. Small animal practice
-    title: "Adverse Reactions to Vaccination: From Anaphylaxis to Autoimmunity."
+    title: 'Adverse Reactions to Vaccination: From Anaphylaxis to Autoimmunity.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7114576/
     type: review
-    pmid: "29195924"
+    pmid: '29195924'
     relevance: supporting
   - sourceOrg: Journal of virology
-    title: Co-administration of chicken IL-2 alleviates clinical signs and replication of the ILTV chicken embryo origin vaccine by pre-activating natural killer cells and cytotoxic T lymphocytes.
+    title: >-
+      Co-administration of chicken IL-2 alleviates clinical signs and replication of the ILTV chicken embryo origin
+      vaccine by pre-activating natural killer cells and cytotoxic T lymphocytes.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10688355/
     type: research
-    pmid: "37882519"
+    pmid: '37882519'
     relevance: supporting
 pubmedQueries:
   - query: '"vaccine" AND ("adverse" OR "reaction" OR "hypersensitivity") AND (veterinary OR canine OR feline) AND "treatment"'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 疫苗反應 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - weakness 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 時間關聯性
+          notes: 疫苗接種後出現症狀。急性反應通常在 24 小時內。FISS 可在數月至數年後
+        - name: 臨床表現
+          notes: 注射部位反應、蕁麻疹、過敏性休克等典型表現
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC（免疫介導性血球減少評估）
+        - 注射部位硬結持續 >3 個月需生檢（排除 FISS）
+        - 3-2-1 法則（貓 FISS）：>3 個月、>2 cm、持續增大
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 輕度反應觀察即可
+        - 中度反應抗組織胺 + 類固醇
+        - 全身過敏反應需緊急處理
+ddxSource: auto-generated

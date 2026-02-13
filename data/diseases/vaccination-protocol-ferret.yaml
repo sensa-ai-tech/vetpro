@@ -3,18 +3,18 @@ nameEn: Vaccination Protocol Ferret
 nameZh: 雪貂疫苗接種方案
 bodySystem: other
 description: 雪貂的疫苗接種指引,主要為犬瘟熱疫苗及狂犬病疫苗。犬瘟熱對雪貂�幾乎100%致死,為必須接種的核心疫苗,狂犬病疫苗則視法規要求。
-
 aliases:
-  - { alias: 雪貂預防接種, language: zh }
-  - { alias: Ferret vaccination schedule, language: en }
-  - { alias: Ferret distemper vaccine, language: en }
-
+  - alias: 雪貂預防接種
+    language: zh
+  - alias: Ferret vaccination schedule
+    language: en
+  - alias: Ferret distemper vaccine
+    language: en
 species:
   - speciesCommon: ferret
     speciesScientific: Mustela putorius furo
     prevalence: common
     notes: 犬瘟熱為雪貂最致命傳染病,疫苗接種絕對必要
-
 etiology:
   categories:
     - name: 核心疫苗
@@ -24,7 +24,6 @@ etiology:
     - name: 禁用疫苗
       examples:
         - 犬複合疫苗(含腺病毒、副流感等,雪貂不需要)
-
 clinicalSigns:
   early:
     - 注射部位疼痛腫脹
@@ -32,62 +31,86 @@ clinicalSigns:
   progressive:
     - 過敏反應(雪貂疫苗過敏率較高,約0.5-3%)
     - 嘔吐、腹瀉、臉部腫脹
-
 diagnosis:
   primaryTests:
     - name: 接種前體檢
-      notes: "確認健康狀態,體重≥0.5 kg"
+      notes: 確認健康狀態,體重≥0.5 kg
     - name: 過敏史詢問
-      notes: "曾有疫苗過敏者需預防性給藥"
+      notes: 曾有疫苗過敏者需預防性給藥
   differentialDiagnoses:
     - 疫苗誘發過敏性休克
     - 注射部位膿瘍
-
 treatment:
   medical:
     - 犬瘟熱疫苗:6-8週齡首次,10-12週及14-16週補強,之後每年一次
     - 狂犬病疫苗:12週齡以上首次接種,之後每1-3年(依法規)
     - 高風險個體可於接種前15分鐘給予diphenhydramine 1-2 mg/kg SC
     - 接種後觀察30-60分鐘,備妥腎上腺素應對過敏
-
 prognosis:
-  general: "疫苗有效且必要,但過敏風險高於犬貓。預防性抗組織胺可降低過敏發生率。"
-
+  general: 疫苗有效且必要,但過敏風險高於犬貓。預防性抗組織胺可降低過敏發生率。
 prevention:
   - 僅使用核准用於雪貂的疫苗品牌(如Purevax Ferret Distemper)
   - 犬瘟熱與狂犬病疫苗應分開接種(間隔2週以上)
   - 接種當日避免麻醉或手術
   - 備妥急救藥物(腎上腺素、類固醇、抗組織胺)
-
-
 guidelineRefs:
   - sourceOrg: Viruses
-    title: "Safety and Immunogenicity of Morbillivirus canis Vaccines for Domestic and Wild Animals: A Scoping Review."
+    title: 'Safety and Immunogenicity of Morbillivirus canis Vaccines for Domestic and Wild Animals: A Scoping Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11281360/
     type: review
-    pmid: "39066240"
+    pmid: '39066240'
     relevance: primary
   - sourceOrg: Npj viruses
-    title: Syrian hamsters (Mesocricetus auratus) as an upper respiratory tract model for respiratory syncytial virus infection.
+    title: >-
+      Syrian hamsters (Mesocricetus auratus) as an upper respiratory tract model for respiratory syncytial virus
+      infection.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11721388/
     type: research
-    pmid: "40295717"
+    pmid: '40295717'
     relevance: supporting
   - sourceOrg: Viruses
     title: A Small-Particle Aerosol Model of Ebolavirus Zaire Infection in Ferrets.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11680438/
     type: research
-    pmid: "39772117"
+    pmid: '39772117'
     relevance: supporting
   - sourceOrg: Antibodies (Basel, Switzerland)
-    title: RDE Treatment Prevents Non-Specific Detection of SARS-CoV-2- and Influenza-Specific IgG Antibodies in Heat-Inactivated Serum Samples.
+    title: >-
+      RDE Treatment Prevents Non-Specific Detection of SARS-CoV-2- and Influenza-Specific IgG Antibodies in
+      Heat-Inactivated Serum Samples.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10295076/
     type: research
-    pmid: "37366655"
+    pmid: '37366655'
     relevance: supporting
   - sourceOrg: Transboundary and emerging diseases
     title: Multi-species ELISA for the detection of antibodies against SARS-CoV-2 in animals.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7753575/
     type: research
-    pmid: "33191578"
+    pmid: '33191578'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 雪貂疫苗接種方案 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weakness 相關症狀
+        - vomiting 相關症狀
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 接種前體檢
+          notes: 確認健康狀態,體重≥0.5 kg
+        - name: 過敏史詢問
+          notes: 曾有疫苗過敏者需預防性給藥
+ddxSource: auto-generated

@@ -3,11 +3,11 @@ nameEn: Anion Gap Acidosis
 nameZh: 陰離子間隙性酸中毒
 bodySystem: electrolyte
 description: 代謝性酸中毒伴隨陰離子間隙（AG）升高（>25 mEq/L），常因有機酸累積引起，如乳酸酸中毒、糖尿病酮酸中毒、腎衰竭或毒物中毒。需緊急處理潛在病因。
-
 aliases:
-  - { alias: 高陰離子間隙酸血症, language: zh }
-  - { alias: High Anion Gap Metabolic Acidosis, language: en }
-
+  - alias: 高陰離子間隙酸血症
+    language: zh
+  - alias: High Anion Gap Metabolic Acidosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓常因急性腎損傷、糖尿病酮酸中毒或乙二醇中毒引起
-
 etiology:
   categories:
     - name: 乳酸酸中毒
@@ -38,7 +37,6 @@ etiology:
         - 乙二醇（防凍劑）
         - 水楊酸中毒
         - 甲醇中毒
-
 clinicalSigns:
   early:
     - 過度換氣（呼吸代償）
@@ -48,35 +46,63 @@ clinicalSigns:
     - 嘔吐、腹痛
     - 心律不整、休克
     - 意識改變、昏迷
-
 diagnosis:
   primaryTests:
     - name: 動脈血液氣體
-      notes: "pH <7.35, HCO3- <18 mEq/L, PaCO2 降低（代償）"
+      notes: pH <7.35, HCO3- <18 mEq/L, PaCO2 降低（代償）
     - name: 陰離子間隙
-      notes: "AG = (Na + K) - (Cl + HCO3-), AG >25 mEq/L"
+      notes: AG = (Na + K) - (Cl + HCO3-), AG >25 mEq/L
     - name: 血糖、酮體、乳酸
-      notes: "鑑別糖尿病酮酸中毒或乳酸酸中毒"
+      notes: 鑑別糖尿病酮酸中毒或乳酸酸中毒
     - name: 腎功能及尿液分析
-      notes: "評估腎衰竭及草酸結晶（乙二醇中毒）"
+      notes: 評估腎衰竭及草酸結晶（乙二醇中毒）
   differentialDiagnoses:
     - 糖尿病酮酸中毒
     - 乙二醇中毒
     - 乳酸酸中毒
     - 急性腎損傷
     - 水楊酸中毒
-
 treatment:
   medical:
     - 治療潛在病因（胰島素治療糖尿病、血液透析腎衰竭、4-MP 或 Fomepizole 治療乙二醇中毒）
     - 積極靜脈輸液恢復組織灌流
     - Sodium bicarbonate（pH <7.1 或 HCO3- <12 時考慮）：1-2 mEq/kg IV slowly
     - 監測血氣、電解質、血糖及腎功能
-
 prognosis:
-  general: "預後取決於潛在病因及治療時機。糖尿病酮酸中毒或乙二醇中毒早期治療預後尚可,但嚴重乳酸酸中毒（乳酸 >8 mmol/L）或腎衰竭預後保留。"
-
+  general: 預後取決於潛在病因及治療時機。糖尿病酮酸中毒或乙二醇中毒早期治療預後尚可,但嚴重乳酸酸中毒（乳酸 >8 mmol/L）或腎衰竭預後保留。
 prevention:
   - 糖尿病患者定期監測血糖及酮體
   - 防凍劑妥善存放避免誤食
   - 危重症患者定期監測血氣
+associatedSymptoms:
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 陰離子間隙性酸中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - coma-stupor 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 動脈血液氣體
+          notes: pH <7.35, HCO3- <18 mEq/L, PaCO2 降低（代償）
+        - name: 陰離子間隙
+          notes: AG = (Na + K) - (Cl + HCO3-), AG >25 mEq/L
+        - name: 血糖、酮體、乳酸
+          notes: 鑑別糖尿病酮酸中毒或乳酸酸中毒
+ddxSource: auto-generated

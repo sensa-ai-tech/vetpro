@@ -3,12 +3,13 @@ nameEn: Strychnine Toxicosis
 nameZh: 番木鱉鹼中毒
 bodySystem: toxicology
 description: 番木鱉鹼 (strychnine) 為強效中樞神經系統興奮劑，阻斷脊髓與腦幹的 glycine 抑制性突觸。犬攝入後引起嚴重全身性肌肉強直痙攣，對刺激高度敏感。曾廣泛用於殺鼠劑，目前多數國家已限制使用但仍偶見中毒。
-
 aliases:
-  - { alias: 士的寧中毒, language: zh }
-  - { alias: 馬錢子鹼中毒, language: zh }
-  - { alias: Strychnine Poisoning, language: en }
-
+  - alias: 士的寧中毒
+    language: zh
+  - alias: 馬錢子鹼中毒
+    language: zh
+  - alias: Strychnine Poisoning
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓致死劑量約 2 mg/kg。臨床報告少見。
-
 etiology:
   categories:
     - name: 毒性機制
@@ -30,7 +30,6 @@ etiology:
         - 含 strychnine 的老式殺鼠劑
         - 蓄意投毒
         - 部分傳統草藥
-
 clinicalSigns:
   early:
     - 不安與焦慮（攝入後 10-30 分鐘）
@@ -44,7 +43,6 @@ clinicalSigns:
     - 橫紋肌溶解
     - 高燒
     - 死亡（呼吸衰竭或代謝衰竭）
-
 diagnosis:
   primaryTests:
     - name: 臨床表現
@@ -55,7 +53,6 @@ diagnosis:
     - 血液氣體（代謝性酸中毒）
     - CK（橫紋肌溶解）
     - 腎功能（肌紅蛋白尿致腎損傷）
-
 treatment:
   principles:
     - 控制痙攣為最優先
@@ -71,17 +68,67 @@ treatment:
     - 監測體溫（主動散熱）
     - 機械通氣（呼吸肌麻痺時）
     - 酸鹼平衡矯正
-
 prognosis: 犬 strychnine 中毒若能有效控制痙攣並維持呼吸，度過最初 24 小時後預後可良好。致死主因為呼吸衰竭或橫紋肌溶解性腎衰竭。大劑量暴露即使積極治療致死率仍高。
-
-
 guidelineRefs:
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: "Strychnine poisoning in nontarget species in western Canada: A retrospective case series (2014 to 2023)."
+    title: 'Strychnine poisoning in nontarget species in western Canada: A retrospective case series (2014 to 2023).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11770616/
     type: research
-    pmid: "39898164"
+    pmid: '39898164'
     relevance: supporting
 pubmedQueries:
   - query: '"strychnine" AND (toxicosis OR poisoning) AND (veterinary OR canine)'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 番木鱉鹼中毒 診斷流程
+  steps:
+    - step: 1
+      action: 暴露史與急性評估
+      details: 確認可能的中毒源和急性症狀
+      findings:
+        - 已知接觸含番木鱉鹼的毒餌
+        - 急性發作（15-120分鐘內）
+        - 對刺激極度敏感
+        - 嚴重肌肉僵硬和角弓反張
+    - step: 2
+      action: 臨床特徵評估
+      details: 評估特徵性肌肉痙攣表現
+      findings:
+        - 間歇性強直性痙攣
+        - 觸覺或聲音刺激誘發痙攣
+        - 痙攣間期意識清醒
+        - 四肢伸直僵硬（鋸馬姿勢）
+    - step: 3
+      action: 毒物學確認
+      details: 採集樣本進行毒物學分析
+      findings:
+        - 胃內容物毒物學分析
+        - 尿液番木鱉鹼檢測
+        - 嘔吐物或可疑毒餌分析
+        - 診斷常基於暴露史和典型臨床表現
+    - step: 4
+      action: 鑑別與併發症監測
+      details: 排除其他強直性痙攣原因並監測併發症
+      findings:
+        - 與破傷風鑑別（破傷風為持續性）
+        - 與metaldehyde中毒鑑別
+        - 監測體溫（高熱性橫紋肌溶解風險）
+        - 腎功能監測（肌紅蛋白尿風險）
+clinicalPearls:
+  - 番木鱉鹼中毒與破傷風最重要的鑑別點：番木鱉鹼中毒意識完全清醒，破傷風通常伴有鎖顎（trismus）
+  - 處理痙攣中的動物時避免不必要的刺激 — 光線、聲音、觸碰都可加重痙攣
+  - Methocarbamol 是控制番木鱉鹼引起的肌肉僵直特別有效的藥物
+  - 番木鱉鹼代謝相對快速（半衰期約 10 小時），撐過急性期後恢復良好
+monitoringItems:
+  - 持續呼吸功能監測（SpO2、呼吸頻率）
+  - 體溫監測（高熱需主動降溫）
+  - CK 及腎功能監測（橫紋肌溶解風險）
+  - 每 1-2 小時評估鎮靜深度及痙攣控制情況
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+ddxSource: book

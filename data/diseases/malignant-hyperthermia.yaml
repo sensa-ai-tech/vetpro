@@ -3,11 +3,11 @@ nameEn: Malignant Hyperthermia
 nameZh: 惡性高體溫
 bodySystem: emergency
 description: 麻醉誘發的遺傳性肌肉代謝異常,導致快速高體溫、肌肉僵硬及代謝性酸中毒。需緊急處理。
-
 aliases:
-  - { alias: MH, language: zh }
-  - { alias: Anesthetic Hyperthermia, language: en }
-
+  - alias: MH
+    language: zh
+  - alias: Anesthetic Hyperthermia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,13 +17,11 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 極罕見
-
 etiology:
   categories:
     - name: 誘發藥物
       examples:
         - 吸入麻醉劑(異氟烷、七氟烷)、琥珀膽鹼
-
 clinicalSigns:
   early:
     - 麻醉中快速發作
@@ -33,16 +31,14 @@ clinicalSigns:
     - 極高體溫(>43°C)
     - 代謝性酸中毒、高鉀
     - 心律不整、死亡
-
 diagnosis:
   primaryTests:
     - name: 臨床診斷
-      notes: "麻醉中快速高體溫+肌肉僵硬"
+      notes: 麻醉中快速高體溫+肌肉僵硬
     - name: ETCO2
-      notes: "快速升高"
+      notes: 快速升高
   differentialDiagnoses:
     - 其他麻醉併發症
-
 treatment:
   medical:
     - 立即停止吸入麻醉
@@ -52,43 +48,72 @@ treatment:
     - 碳酸氫鈉(若酸中毒)
     - 治療高鉀、心律不整
     - 監測24-48小時
-
 prognosis:
-  general: "無Dantrolene死亡率>70%。有Dantrolene存活率改善。"
-
+  general: 無Dantrolene死亡率>70%。有Dantrolene存活率改善。
 prevention:
   - 高風險品種避免吸入麻醉
   - 備有Dantrolene
-
-
 guidelineRefs:
   - sourceOrg: Journal of smooth muscle research = Nihon Heikatsukin Gakkai kikanshi
-    title: "Expanding diverse horizons in smooth muscle research: a symposium review of \"Muscle and Pathology/Health: Frontiers of Translational Research\" at the 66th Annual Meeting of Japan Society of Smooth Muscle Research."
+    title: >-
+      Expanding diverse horizons in smooth muscle research: a symposium review of "Muscle and Pathology/Health:
+      Frontiers of Translational Research" at the 66th Annual Meeting of Japan Society of Smooth Muscle Research.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12418040/
     type: review
-    pmid: "40903239"
+    pmid: '40903239'
     relevance: primary
   - sourceOrg: Orphanet journal of rare diseases
-    title: "Preclinical model systems of ryanodine receptor 1-related myopathies and malignant hyperthermia: a comprehensive scoping review of works published 1990-2019."
+    title: >-
+      Preclinical model systems of ryanodine receptor 1-related myopathies and malignant hyperthermia: a comprehensive
+      scoping review of works published 1990-2019.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7204063/
     type: review
-    pmid: "32381029"
+    pmid: '32381029'
     relevance: primary
   - sourceOrg: Conservation physiology
-    title: "Conserving wildlife in a changing world: Understanding capture myopathy-a malignant outcome of stress during capture and translocation."
+    title: >-
+      Conserving wildlife in a changing world: Understanding capture myopathy-a malignant outcome of stress during
+      capture and translocation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6612673/
     type: review
-    pmid: "31304016"
+    pmid: '31304016'
     relevance: supporting
   - sourceOrg: The Journal of biological chemistry
-    title: Putative malignant hyperthermia mutation CaV1.1-R174W is insufficient to trigger a fulminant response to halothane or confer heat stress intolerance.
+    title: >-
+      Putative malignant hyperthermia mutation CaV1.1-R174W is insufficient to trigger a fulminant response to halothane
+      or confer heat stress intolerance.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10413282/
     type: research
-    pmid: "37392848"
+    pmid: '37392848'
     relevance: supporting
   - sourceOrg: eNeuro
-    title: Isoflurane Alters Presynaptic Endoplasmic Reticulum Calcium Dynamics in Wild-Type and Malignant Hyperthermia-Susceptible Rodent Hippocampal Neurons.
+    title: >-
+      Isoflurane Alters Presynaptic Endoplasmic Reticulum Calcium Dynamics in Wild-Type and Malignant
+      Hyperthermia-Susceptible Rodent Hippocampal Neurons.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10467020/
     type: research
-    pmid: "37591734"
+    pmid: '37591734'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+diagnosticAlgorithm:
+  title: 惡性高體溫 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床診斷
+          notes: 麻醉中快速高體溫+肌肉僵硬
+        - name: ETCO2
+          notes: 快速升高
+ddxSource: auto-generated

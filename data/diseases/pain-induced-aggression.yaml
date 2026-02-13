@@ -3,11 +3,11 @@ nameEn: Pain Induced Aggression
 nameZh: 疼痛引起攻擊行為
 bodySystem: behavioral
 description: 因急性或慢性疼痛導致之攻擊行為。處理疼痛部位或預期疼痛時發生。需積極疼痛管理，行為通常隨疼痛緩解改善。
-
 aliases:
-  - { alias: 疼痛性攻擊, language: zh }
-  - { alias: Pain-Related Aggression, language: en }
-
+  - alias: 疼痛性攻擊
+    language: zh
+  - alias: Pain-Related Aggression
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓疼痛表現隱晦，攻擊可能為唯一徵兆
-
 etiology:
   categories:
     - name: 急性疼痛
@@ -30,7 +29,6 @@ etiology:
         - 骨關節炎
         - 椎間盤疾病
         - 腫瘤
-
 clinicalSigns:
   early:
     - 觸摸特定部位時咆哮或咬人
@@ -41,23 +39,21 @@ clinicalSigns:
     - 性格改變（孤僻、易怒）
     - 活動量減少
     - 其他疼痛徵兆
-
 diagnosis:
   primaryTests:
     - name: 完整理學檢查
-      notes: "仔細觸診找出疼痛部位"
+      notes: 仔細觸診找出疼痛部位
     - name: 骨骼肌肉評估
-      notes: "關節活動度、壓痛"
+      notes: 關節活動度、壓痛
     - name: 影像學
-      notes: "X光、超音波、CT/MRI"
+      notes: X光、超音波、CT/MRI
     - name: 疼痛量表
-      notes: "Glasgow疼痛量表"
+      notes: Glasgow疼痛量表
   differentialDiagnoses:
     - 恐懼性攻擊
     - 衝突相關攻擊
     - 認知障礙
     - 神經疾病
-
 treatment:
   medical:
     - 疼痛管理（首要治療）：
@@ -73,12 +69,32 @@ treatment:
     - 避免碰觸疼痛部位
     - 漸進式減敏（疼痛控制後）
     - 正增強訓練
-
 prognosis:
-  general: "疼痛控制後行為通常顯著改善。慢性疼痛需長期管理。預後取決於潛在病因可治療性。"
-
+  general: 疼痛控制後行為通常顯著改善。慢性疼痛需長期管理。預後取決於潛在病因可治療性。
 prevention:
   - 定期健康檢查
   - 早期疼痛識別及治療
   - 老年動物疼痛篩檢
   - 術後適當止痛
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 疼痛引起攻擊行為 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 完整理學檢查
+          notes: 仔細觸診找出疼痛部位
+        - name: 骨骼肌肉評估
+          notes: 關節活動度、壓痛
+        - name: 影像學
+          notes: X光、超音波、CT/MRI
+ddxSource: auto-generated

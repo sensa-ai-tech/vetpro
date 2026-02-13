@@ -3,11 +3,11 @@ nameEn: Salmonellosis
 nameZh: 沙門氏菌感染
 bodySystem: gastrointestinal
 description: 沙門氏菌感染為 Salmonella spp. 引起的腸胃道與全身性感染。犬貓可為無症狀帶菌者或發展為急性腸胃炎、敗血症。人畜共通傳染病，對免疫抑制動物與人類有公共衛生意義。生食飲食（raw diet）為近年重要感染來源。
-
 aliases:
-  - { alias: 沙門桿菌感染, language: zh }
-  - { alias: Salmonella Infection, language: en }
-
+  - alias: 沙門桿菌感染
+    language: zh
+  - alias: Salmonella Infection
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻帶菌率類似犬隻。獵食鳥類與齧齒類的貓風險較高。
-
 etiology:
   categories:
     - name: 病原體
@@ -29,7 +28,6 @@ etiology:
         - 免疫抑制（化療、糖皮質素使用）
         - 幼齡或老齡動物
         - 收容所環境
-
 clinicalSigns:
   early:
     - 急性腹瀉（水樣至黏液血性）
@@ -42,14 +40,12 @@ clinicalSigns:
     - 敗血症（免疫抑制者）
     - 流產（懷孕動物）
     - 慢性帶菌狀態
-
 diagnosis:
   primaryTests:
     - name: 糞便培養
       notes: 確診金標準。Salmonella 特殊培養基（XLD、SS agar）。陽性結果需進行血清型鑑定與藥敏試驗。
     - name: 糞便 PCR
       notes: 較培養更快速。敏感度高。但不提供藥敏資訊。
-
 treatment:
   principles:
     - 無症狀帶菌者通常不建議使用抗生素（可能延長排菌期）
@@ -57,45 +53,107 @@ treatment:
     - 敗血症需廣效抗生素
   general:
     - 無併發症腸胃炎：支持性治療（輸液、止吐）
-    - "敗血症：Enrofloxacin 5 mg/kg IV q24h 或 TMP-Sulfa"
+    - 敗血症：Enrofloxacin 5 mg/kg IV q24h 或 TMP-Sulfa
     - 依藥敏結果調整抗生素
     - 人畜共通傳染病衛教（手部衛生、避免免疫抑制者接觸）
     - 停止生食飲食
-
 prognosis: 免疫正常動物的沙門氏菌腸胃炎通常為自限性，預後良好。敗血症型預後較差，需積極治療。慢性帶菌狀態可能持續數週至數月。公共衛生教育很重要。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary world
-    title: Molecular characterization of antimicrobial resistance and enterobacterial repetitive intergenic consensus-PCR as a molecular typing tool for Salmonella spp. isolated from poultry and humans.
+    title: >-
+      Molecular characterization of antimicrobial resistance and enterobacterial repetitive intergenic consensus-PCR as
+      a molecular typing tool for Salmonella spp. isolated from poultry and humans.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7566269/
     type: consensus
-    pmid: "33132588"
+    pmid: '33132588'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
-    title: "A systematic review and meta-analysis of salmonellosis in poultry farms in Ethiopia: prevalence, risk factors, and antimicrobial resistance."
+    title: >-
+      A systematic review and meta-analysis of salmonellosis in poultry farms in Ethiopia: prevalence, risk factors, and
+      antimicrobial resistance.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12153448/
     type: review
-    pmid: "40502393"
+    pmid: '40502393'
     relevance: primary
   - sourceOrg: One health (Amsterdam, Netherlands)
-    title: "A review and meta-analysis of non-typhoidal Salmonella in Vietnam: Challenges to the control and antimicrobial resistance traits of a neglected zoonotic pathogen."
+    title: >-
+      A review and meta-analysis of non-typhoidal Salmonella in Vietnam: Challenges to the control and antimicrobial
+      resistance traits of a neglected zoonotic pathogen.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10926303/
     type: review
-    pmid: "38468610"
+    pmid: '38468610'
     relevance: primary
   - sourceOrg: International journal of microbiology
-    title: "One Health Perspective of Salmonella Serovars in South Africa Using Pooled Prevalence: Systematic Review and Meta-Analysis."
+    title: >-
+      One Health Perspective of Salmonella Serovars in South Africa Using Pooled Prevalence: Systematic Review and
+      Meta-Analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9046003/
     type: review
-    pmid: "35498396"
+    pmid: '35498396'
     relevance: primary
   - sourceOrg: International journal of food microbiology
-    title: "Prevalence of Campylobacter and Salmonella in African food animals and meat: A systematic review and meta-analysis."
+    title: >-
+      Prevalence of Campylobacter and Salmonella in African food animals and meat: A systematic review and
+      meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6985902/
     type: review
-    pmid: "31710971"
+    pmid: '31710971'
     relevance: supporting
 pubmedQueries:
   - query: '"salmonellosis" AND (veterinary OR canine OR feline) AND ("raw diet" OR "treatment" OR "zoonotic")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 沙門氏菌感染 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 收集飲食史和暴露史，評估胃腸道和全身性症狀
+      findings:
+        - 急性水樣或血性腹瀉
+        - 發熱和腹痛
+        - 嘔吐和脫水
+        - 生食餵養或接觸受汙染食物史
+    - step: 2
+      action: 實驗室檢查
+      details: 進行全血計數和生化檢查評估全身狀態
+      findings:
+        - 白血球減少或增多
+        - 嗜中性球左移
+        - 低白蛋白血症
+        - 電解質紊亂
+    - step: 3
+      action: 細菌培養與鑑定
+      details: 進行糞便和/或血液培養確認沙門氏菌
+      findings:
+        - 糞便培養分離出沙門氏菌
+        - 血液培養陽性（敗血症病例）
+        - 血清型鑑定
+        - 抗生素藥敏試驗
+    - step: 4
+      action: 併發症評估
+      details: 評估是否有全身性播散或敗血症
+      findings:
+        - 敗血症指標監測
+        - 腹部超音波排除腹膜炎
+        - 關節液分析（敗血性關節炎風險）
+        - 公共衛生風險評估
+clinicalPearls:
+  - 餵食生肉飲食（raw diet）的犬排菌風險顯著增加——飼主諮詢時應告知人畜共通風險
+  - 無併發症的沙門氏菌腸炎不建議使用抗生素，以免延長帶原時間和促進抗藥性
+  - 免疫抑制犬（化療、使用免疫抑制劑）感染沙門氏菌風險更高
+  - 糞便培養陽性的犬貓飼主應加強手部衛生——重要的公共衛生議題
+monitoringItems:
+  - 脫水狀態和電解質
+  - 糞便培養追蹤（是否持續排菌）
+  - 抗藥性檢測（選擇適當抗生素）
+  - 家中免疫低下成員的健康狀況
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+ddxSource: book

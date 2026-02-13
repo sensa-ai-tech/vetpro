@@ -3,11 +3,11 @@ nameEn: Viral Pneumonia
 nameZh: 病毒性肺炎
 bodySystem: respiratory
 description: 病毒性肺炎為病毒感染導致的肺部炎症。犬隻常見病毒包括犬瘟熱病毒（CDV）、犬流感病毒（CIV）、犬腺病毒-2（CAV-2）及犬副流感病毒（CPIV）。病毒性肺炎常為上呼吸道感染下行或全身性病毒感染的肺部表現，繼發性細菌感染可加重病情。
-
 aliases:
-  - { alias: 病毒性肺感染, language: zh }
-  - { alias: Viral Lung Infection, language: en }
-
+  - alias: 病毒性肺感染
+    language: zh
+  - alias: Viral Lung Infection
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻可見於 FHV-1、FCV 嚴重感染或 FIP 肺部表現。免疫抑制貓風險較高。
-
 etiology:
   categories:
     - name: 犬隻常見病毒
@@ -29,7 +28,6 @@ etiology:
         - 貓疱疹病毒（FHV-1）
         - 貓卡里西病毒（FCV，virulent systemic form）
         - 貓傳染性腹膜炎病毒（FIP，肺部表現）
-
 clinicalSigns:
   early:
     - 咳嗽（乾咳至濕咳）
@@ -42,14 +40,12 @@ clinicalSigns:
     - 濕囉音
     - 發紺（嚴重者）
     - 繼發性細菌感染加重
-
 diagnosis:
   primaryTests:
     - name: 胸腔 X 光
       notes: 間質型或支氣管間質型浸潤。病毒性肺炎影像通常為瀰漫性間質紋理增加。繼發細菌感染時可見肺泡型浸潤。
     - name: 病毒學檢測
       notes: CDV PCR（結膜拭子、血液）。CIV PCR（鼻腔拭子）。FHV-1/FCV PCR。抗體檢測（配對血清學）。
-
 treatment:
   principles:
     - 支持性治療為主（無特效抗病毒藥物，除特定病毒外）
@@ -57,45 +53,79 @@ treatment:
     - 維持氧氣交換與水分平衡
   general:
     - 支持性治療：氧氣補充、靜脈輸液、營養支持
-    - "繼發性細菌感染：Amoxicillin-Clavulanate 12.5-25 mg/kg PO q12h 或 Doxycycline"
+    - 繼發性細菌感染：Amoxicillin-Clavulanate 12.5-25 mg/kg PO q12h 或 Doxycycline
     - 霧化治療（nebulization）幫助排痰
     - 止咳藥物（僅限乾咳，避免抑制有效排痰）
     - 嚴重呼吸衰竭：機械通氣（ICU 環境）
-
 prognosis: 預後取決於病毒種類與患者免疫狀態。免疫正常動物的輕度病毒性肺炎預後良好。CDV 肺炎伴隨神經症狀者預後不良。CIV 死亡率低（<5%）。繼發性細菌感染控制後預後改善。免疫抑制動物預後較差。
-
-
 guidelineRefs:
   - sourceOrg: American journal of physiology. Lung cellular and molecular physiology
-    title: "Scar wars: the viral menace."
+    title: 'Scar wars: the viral menace.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12871857/
     type: review
-    pmid: "40983473"
+    pmid: '40983473'
     relevance: primary
   - sourceOrg: Frontiers in medicine
     title: Secondary Bacterial Infections in Patients With Viral Pneumonia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7419580/
     type: review
-    pmid: "32850912"
+    pmid: '32850912'
     relevance: primary
   - sourceOrg: International journal of immunopathology and pharmacology
-    title: "COVID-19: A threat to the respiratory system."
+    title: 'COVID-19: A threat to the respiratory system.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11672396/
     type: review
-    pmid: "39716038"
+    pmid: '39716038'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
-    title: "An Insight Into COVID-19: A 21st Century Disaster and Its Relation to Immunocompetence and Food Antioxidants."
+    title: 'An Insight Into COVID-19: A 21st Century Disaster and Its Relation to Immunocompetence and Food Antioxidants.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7838355/
     type: review
-    pmid: "33521076"
+    pmid: '33521076'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
-    title: "COVID-19 in Human, Animal, and Environment: A Review."
+    title: 'COVID-19 in Human, Animal, and Environment: A Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7498845/
     type: review
-    pmid: "33102545"
+    pmid: '33102545'
     relevance: primary
 pubmedQueries:
   - query: '"viral pneumonia" AND (veterinary OR canine OR feline) AND ("treatment" OR "influenza")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: coughing
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 病毒性肺炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - dyspnoea 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸腔 X 光
+          notes: 間質型或支氣管間質型浸潤。病毒性肺炎影像通常為瀰漫性間質紋理增加。繼發細菌感染時可見肺泡型浸潤。
+        - name: 病毒學檢測
+          notes: CDV PCR（結膜拭子、血液）。CIV PCR（鼻腔拭子）。FHV-1/FCV PCR。抗體檢測（配對血清學）。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 支持性治療為主（無特效抗病毒藥物，除特定病毒外）
+        - 預防與治療繼發性細菌感染
+        - 維持氧氣交換與水分平衡
+ddxSource: auto-generated

@@ -2,19 +2,21 @@ slug: mycobacterium-leprae-feline
 nameEn: Mycobacterium Leprae Feline
 nameZh: 貓麻風分枝桿菌
 bodySystem: infectious
-description: 貓麻風分枝桿菌(Mycobacterium lepraemurium及相關菌株)引起貓皮膚肉芽腫性病變,主要透過齧齒類動物咬傷或抓傷傳播。此病表現為單發或多發性皮膚結節、潰瘍,主要分布於頭部、四肢,病程緩慢進展,通常不侵犯內臟,預後良好。
-
+description: >-
+  貓麻風分枝桿菌(Mycobacterium
+  lepraemurium及相關菌株)引起貓皮膚肉芽腫性病變,主要透過齧齒類動物咬傷或抓傷傳播。此病表現為單發或多發性皮膚結節、潰瘍,主要分布於頭部、四肢,病程緩慢進展,通常不侵犯內臟,預後良好。
 aliases:
-  - { alias: 貓麻風, language: zh }
-  - { alias: Feline Leprosy, language: en }
-  - { alias: 貓皮膚分枝桿菌病, language: zh }
-
+  - alias: 貓麻風
+    language: zh
+  - alias: Feline Leprosy
+    language: en
+  - alias: 貓皮膚分枝桿菌病
+    language: zh
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 主要見於溫帶地區戶外貓,狩獵貓風險最高,多發於頭部及四肢(咬傷部位)
-
 etiology:
   categories:
     - name: 分枝桿菌感染
@@ -23,7 +25,6 @@ etiology:
         - 經齧齒類動物(鼠、田鼠)咬傷或抓傷傳播
         - 皮膚傷口接觸污染土壤
         - 不具人畜共通傳染性
-
 clinicalSigns:
   early:
     - 單發皮膚結節(直徑0.5-3 cm)
@@ -36,50 +37,76 @@ clinicalSigns:
     - 脫毛、色素沉著
     - 病程可持續數月至數年
     - 罕見播散至內臟
-
 diagnosis:
   primaryTests:
     - name: 細針抽吸細胞學
-      notes: "吉姆薩染色可見組織巨噬細胞內大量抗酸菌"
+      notes: 吉姆薩染色可見組織巨噬細胞內大量抗酸菌
     - name: 抗酸染色
-      notes: "Ziehl-Neelsen染色呈陽性,細菌成束或聚集"
+      notes: Ziehl-Neelsen染色呈陽性,細菌成束或聚集
     - name: 組織病理
-      notes: "肉芽腫性皮膚炎,組織巨噬細胞內充滿抗酸菌(典型)"
+      notes: 肉芽腫性皮膚炎,組織巨噬細胞內充滿抗酸菌(典型)
     - name: 分枝桿菌培養
-      notes: "M. lepraemurium不易培養(需特殊培養基,成功率低)"
+      notes: M. lepraemurium不易培養(需特殊培養基,成功率低)
     - name: PCR檢測
-      notes: "組織樣本分枝桿菌DNA檢測及菌種鑑定"
+      notes: 組織樣本分枝桿菌DNA檢測及菌種鑑定
   differentialDiagnoses:
     - 其他非典型分枝桿菌感染(MAC)
     - 真菌性肉芽腫(孢子絲菌病)
     - 細菌性肉芽腫
     - 肥大細胞瘤
     - 淋巴瘤(皮膚型)
-
 treatment:
   medical:
     - 外科切除(首選):完整切除病灶及周圍正常組織(手術邊界1-2 cm)
-    - 多重抗生素聯合治療(療程3-6個月):
+    - 多重抗生素聯合治療(療程3-6個月): null
     - Clarithromycin 7.5-15 mg/kg PO BID + Rifampin 10-15 mg/kg PO SID
     - 替代方案:Doxycycline 10 mg/kg PO BID + Enrofloxacin 5 mg/kg PO SID
     - Clofazimine 8-12 mg/kg PO SID(實驗性,可能改善預後)
     - 定期監測肝腎功能(抗生素長期使用)
     - 復發病灶再次手術切除
-
 prognosis:
-  general: "預後良好至佳。單發病灶經完整外科切除後復發率低(<20%)。多發病灶或僅藥物治療,復發率較高(40-60%),但通常不影響全身健康或壽命。罕見進展為播散型。"
-
+  general: 預後良好至佳。單發病灶經完整外科切除後復發率低(<20%)。多發病灶或僅藥物治療,復發率較高(40-60%),但通常不影響全身健康或壽命。罕見進展為播散型。
 prevention:
   - 限制貓戶外活動,避免狩獵齧齒類動物
   - 及時處理皮膚傷口,避免感染
   - 早期發現皮膚結節立即就醫
   - 環境滅鼠控制
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline leprosy due to Candidatus 'Mycobacterium lepraefelis': Further clinical and molecular characterisation of eight previously reported cases and an additional 30 cases."
+    title: >-
+      Feline leprosy due to Candidatus 'Mycobacterium lepraefelis': Further clinical and molecular characterisation of
+      eight previously reported cases and an additional 30 cases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11128897/
     type: research
-    pmid: "28838294"
+    pmid: '28838294'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: alopecia
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 貓麻風分枝桿菌 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - hyperthermia 相關症狀
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 細針抽吸細胞學
+          notes: 吉姆薩染色可見組織巨噬細胞內大量抗酸菌
+        - name: 抗酸染色
+          notes: Ziehl-Neelsen染色呈陽性,細菌成束或聚集
+        - name: 組織病理
+          notes: 肉芽腫性皮膚炎,組織巨噬細胞內充滿抗酸菌(典型)
+ddxSource: auto-generated

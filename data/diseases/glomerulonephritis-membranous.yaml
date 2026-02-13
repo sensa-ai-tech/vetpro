@@ -3,13 +3,15 @@ nameEn: Glomerulonephritis Membranous
 nameZh: 膜性腎絲球腎炎
 bodySystem: renal
 description: 膜性腎絲球腎炎是以腎絲球基底膜增厚與免疫複合物沉積為特徵的腎絲球疾病。在犬中是蛋白尿的重要原因之一，可進展為慢性腎病。
-
 aliases:
-  - { alias: 膜性腎小球腎炎, language: zh }
-  - { alias: 膜性腎病變, language: zh }
-  - { alias: Membranous Nephropathy, language: en }
-  - { alias: Membranous Glomerulopathy, language: en }
-
+  - alias: 膜性腎小球腎炎
+    language: zh
+  - alias: 膜性腎病變
+    language: zh
+  - alias: Membranous Nephropathy
+    language: en
+  - alias: Membranous Glomerulopathy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓膜性腎絲球腎炎較犬少見，但可見於FeLV感染或其他慢性感染相關的免疫複合物沉積。
-
 etiology:
   categories:
     - name: 原發性（特發性）
@@ -38,7 +39,6 @@ etiology:
         - 補體活化導致足細胞損傷
         - 基底膜增厚（spike and dome pattern）
         - 蛋白濾過屏障破壞導致大量蛋白尿
-
 clinicalSigns:
   early:
     - 蛋白尿（可能為唯一早期徵象）
@@ -50,19 +50,17 @@ clinicalSigns:
     - 四肢水腫
     - 血栓栓塞風險增加
     - 進行性腎功能惡化
-
 diagnosis:
   primaryTests:
     - name: 尿蛋白/肌酐比 (UPC)
-      notes: "UPC >2.0 提示腎絲球蛋白尿。UPC >3.5 高度懷疑腎絲球疾病。需排除泌尿道感染等蛋白尿其他原因。"
+      notes: UPC >2.0 提示腎絲球蛋白尿。UPC >3.5 高度懷疑腎絲球疾病。需排除泌尿道感染等蛋白尿其他原因。
     - name: 腎臟活檢
-      notes: "確診需腎臟活檢。光學顯微鏡見基底膜增厚。免疫螢光檢查見 IgG 和 C3 沿基底膜沉積。電子顯微鏡見上皮下電子緻密物。"
+      notes: 確診需腎臟活檢。光學顯微鏡見基底膜增厚。免疫螢光檢查見 IgG 和 C3 沿基底膜沉積。電子顯微鏡見上皮下電子緻密物。
   differentialDiagnoses:
     - 膜增生性腎絲球腎炎
     - 局灶節段性腎絲球硬化
     - 澱粉樣變性
     - 免疫介導腎絲球腎炎（其他類型）
-
 treatment:
   medical:
     - 免疫抑制治療：Mycophenolate mofetil 10 mg/kg PO q12h（犬首選）
@@ -75,40 +73,66 @@ treatment:
   surgical:
     - 腎臟活檢（診斷性手術）
     - 通常不適用其他手術治療
-
 prognosis:
-  general: "預後取決於蛋白尿控制程度與腎功能保留情況。對免疫抑制治療反應良好者（蛋白尿減少 >50%）預後較佳。UPC 持續 >3.5 且無法控制者預後不良。血栓栓塞併發症是嚴重威脅。"
-
+  general: 預後取決於蛋白尿控制程度與腎功能保留情況。對免疫抑制治療反應良好者（蛋白尿減少 >50%）預後較佳。UPC 持續 >3.5 且無法控制者預後不良。血栓栓塞併發症是嚴重威脅。
 prevention:
   - 無特異性預防措施
   - 犬心絲蟲預防可降低 dirofilariasis 相關的腎絲球疾病風險
   - 定期尿液篩檢蛋白尿（好發品種）
   - 傳染性疾病的預防與早期治療
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in immunology
-    title: "Animal models of membranous nephropathy: more choices and higher similarity."
+    title: 'Animal models of membranous nephropathy: more choices and higher similarity.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11532550/
     type: review
-    pmid: "39497816"
+    pmid: '39497816'
   - sourceOrg: Frontiers in immunology
-    title: "Membranous nephropathy: Clearer pathology and mechanisms identify potential strategies for treatment."
+    title: 'Membranous nephropathy: Clearer pathology and mechanisms identify potential strategies for treatment.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9667740/
     type: review
-    pmid: "36405681"
+    pmid: '36405681'
   - sourceOrg: F1000Research
     title: Immunology of membranous nephropathy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6537914/
     type: review
-    pmid: "31168358"
+    pmid: '31168358'
   - sourceOrg: American journal of nephrology
-    title: Klotho Stabilizes the Podocyte Actin Cytoskeleton in Idiopathic Membranous Nephropathy through Regulating the TRPC6/CatL Pathway.
+    title: >-
+      Klotho Stabilizes the Podocyte Actin Cytoskeleton in Idiopathic Membranous Nephropathy through Regulating the
+      TRPC6/CatL Pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11152006/
     type: research
-    pmid: "38330925"
-  - sourceOrg: "Journal of the American Society of Nephrology : JASN"
-    title: Complement C3a and C3a Receptor Activation Mediates Podocyte Injuries in the Mechanism of Primary Membranous Nephropathy.
+    pmid: '38330925'
+  - sourceOrg: 'Journal of the American Society of Nephrology : JASN'
+    title: >-
+      Complement C3a and C3a Receptor Activation Mediates Podocyte Injuries in the Mechanism of Primary Membranous
+      Nephropathy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9529185/
     type: research
-    pmid: "35777783"
+    pmid: '35777783'
+associatedSymptoms:
+  - symptomId: weight-gain
+    frequency: common
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: common
+diagnosticAlgorithm:
+  title: 膜性腎絲球腎炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-gain 相關症狀
+        - ascites 相關症狀
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 尿蛋白/肌酐比 (UPC)
+          notes: UPC >2.0 提示腎絲球蛋白尿。UPC >3.5 高度懷疑腎絲球疾病。需排除泌尿道感染等蛋白尿其他原因。
+        - name: 腎臟活檢
+          notes: 確診需腎臟活檢。光學顯微鏡見基底膜增厚。免疫螢光檢查見 IgG 和 C3 沿基底膜沉積。電子顯微鏡見上皮下電子緻密物。
+ddxSource: auto-generated

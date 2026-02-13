@@ -3,18 +3,19 @@ nameEn: Avian Ganglioneuritis
 nameZh: 禽類神經節炎
 bodySystem: neurology
 description: 禽類神經節炎為鳥類自主神經節的炎症性病變，多由禽波納病毒（ABV）感染引起，導致消化道、心臟及其他器官的自主神經功能障礙。
-
 aliases:
-  - { alias: 鳥類神經節炎, language: zh }
-  - { alias: 淋巴漿細胞性神經節炎, language: zh }
-  - { alias: Lymphoplasmacytic ganglioneuritis, language: en }
-  - { alias: Myenteric ganglioneuritis, language: en }
-
+  - alias: 鳥類神經節炎
+    language: zh
+  - alias: 淋巴漿細胞性神經節炎
+    language: zh
+  - alias: Lymphoplasmacytic ganglioneuritis
+    language: en
+  - alias: Myenteric ganglioneuritis
+    language: en
 species:
   - speciesCommon: bird
     prevalence: moderate
     notes: 與 ABV 感染高度相關。鸚鵡目鳥類最常報告。為 PDD 的核心病理機轉。可影響腸道、心臟、腎上腺等自主神經支配器官。
-
 etiology:
   categories:
     - name: 免疫介導性
@@ -28,7 +29,6 @@ etiology:
         - 特發性神經節炎（病因不明）
         - 其他病毒感染（罕見）
         - 中毒（重金屬）
-
 clinicalSigns:
   early:
     - 消化功能輕度異常
@@ -41,21 +41,19 @@ clinicalSigns:
     - 消瘦
     - 心律不整（心臟神經節受累時）
     - 泌尿功能異常（腎臟神經受累時）
-
 diagnosis:
   primaryTests:
     - name: 嗉囊活檢
-      notes: "嗉囊全層活檢見淋巴漿細胞性神經節炎為生前確診方法"
+      notes: 嗉囊全層活檢見淋巴漿細胞性神經節炎為生前確診方法
     - name: 影像學
-      notes: "X光見前胃擴張。鋇劑造影顯示消化道排空延遲"
+      notes: X光見前胃擴張。鋇劑造影顯示消化道排空延遲
     - name: ABV 相關檢測
-      notes: "PCR 及血清學協助判斷是否為 ABV 相關性神經節炎"
+      notes: PCR 及血清學協助判斷是否為 ABV 相關性神經節炎
   differentialDiagnoses:
     - 消化道機械性阻塞
     - 重金屬中毒
     - 消化道腫瘤
     - 巨菌症
-
 treatment:
   medical:
     - 抗炎治療為核心（Celecoxib 或 Meloxicam）
@@ -63,30 +61,58 @@ treatment:
     - 易消化飲食
     - 營養支持
     - 減少環境緊迫
-
 prognosis:
-  general: "預後謹慎。神經損傷一旦發生多為不可逆。抗炎治療可延緩進展與改善臨床症狀。長期管理可延長存活期。"
-
+  general: 預後謹慎。神經損傷一旦發生多為不可逆。抗炎治療可延緩進展與改善臨床症狀。長期管理可延長存活期。
 prevention:
   - 篩檢 ABV 降低感染風險
   - 維持免疫健康
   - 減少緊迫
   - 良好營養管理
-
-
 guidelineRefs:
   - sourceOrg: The Journal of veterinary medical science
     title: Distribution of lesions in psittacine birds naturally infected with parrot bornavirus in Japan.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11569871/
     type: research
-    pmid: "39343541"
+    pmid: '39343541'
   - sourceOrg: Veterinary medicine (Auckland, N.Z.)
-    title: Comparison Of Four Anti-Avian IgY Secondary Antibodies Used In Western Blot And Dot-Blot ELISA To Detect Avian Bornavirus Antibodies In Four Different Bird Species.
+    title: >-
+      Comparison Of Four Anti-Avian IgY Secondary Antibodies Used In Western Blot And Dot-Blot ELISA To Detect Avian
+      Bornavirus Antibodies In Four Different Bird Species.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858837/
     type: research
-    pmid: "31815098"
+    pmid: '31815098'
   - sourceOrg: Veterinary medicine (Auckland, N.Z.)
-    title: Treatment With Nonsteroidal Anti-Inflammatory Drugs Fails To Ameliorate Pathology In Cockatiels Experimentally Infected With Parrot Bornavirus-2.
+    title: >-
+      Treatment With Nonsteroidal Anti-Inflammatory Drugs Fails To Ameliorate Pathology In Cockatiels Experimentally
+      Infected With Parrot Bornavirus-2.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6878917/
     type: research
-    pmid: "31819861"
+    pmid: '31819861'
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類神經節炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+        - weight-loss 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 嗉囊活檢
+          notes: 嗉囊全層活檢見淋巴漿細胞性神經節炎為生前確診方法
+        - name: 影像學
+          notes: X光見前胃擴張。鋇劑造影顯示消化道排空延遲
+        - name: ABV 相關檢測
+          notes: PCR 及血清學協助判斷是否為 ABV 相關性神經節炎
+ddxSource: auto-generated

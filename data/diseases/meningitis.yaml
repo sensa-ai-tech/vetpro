@@ -3,11 +3,11 @@ nameEn: Meningitis
 nameZh: 腦膜炎
 bodySystem: neurology
 description: 腦膜炎為腦膜（meninges）的炎症反應。犬貓腦膜炎可分為感染性（細菌、真菌、原蟲、病毒）與非感染性/免疫介導性。犬隻最常見的腦膜炎為類固醇反應性腦膜炎動脈炎（SRMA）。臨床特徵為頸部疼痛、發燒與頸部僵硬。CSF 分析為診斷關鍵。
-
 aliases:
-  - { alias: 腦脊髓膜炎, language: zh }
-  - { alias: Meningoencephalitis, language: en }
-
+  - alias: 腦脊髓膜炎
+    language: zh
+  - alias: Meningoencephalitis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻腦膜炎以 FIP 相關最常見。細菌性與原蟲性（Toxoplasma）亦可見。
-
 etiology:
   categories:
     - name: 免疫介導性
@@ -29,7 +28,6 @@ etiology:
         - 真菌性（Cryptococcus，貓隻）
         - 原蟲性（Toxoplasma、Neospora）
         - 病毒性（FIP、Canine distemper）
-
 clinicalSigns:
   early:
     - 頸部疼痛與僵硬
@@ -42,56 +40,115 @@ clinicalSigns:
     - 癲癇（腦膜腦炎時）
     - 顱神經缺損
     - 意識改變
-
 diagnosis:
   primaryTests:
     - name: CSF 分析
       notes: 診斷關鍵。嗜中性球增多（急性細菌性或 SRMA）。單核球增多（慢性或 GME）。蛋白質升高。培養與感受性（細菌性）。PCR 檢測（Toxoplasma、Neospora、CDV、FCoV）。
     - name: 腦部 MRI
       notes: 評估腦膜增強（造影劑後 meningeal enhancement）。排除結構性病變。腦實質病變提示腦膜腦炎。
-
 treatment:
   principles:
     - 鑑別感染性與免疫介導性至關重要
     - 感染性需特異性抗微生物治療
     - 免疫介導性需免疫抑制
   general:
-    - "SRMA：Prednisolone 2-4 mg/kg/day PO（逐步減量至 0.5 mg/kg q48h，總療程 6-12 個月）"
-    - "細菌性：廣效抗生素（能穿透血腦屏障）——Ampicillin + Metronidazole + Enrofloxacin"
-    - "Toxoplasma/Neospora：Clindamycin 10-15 mg/kg PO q12h + TMP-SMX"
-    - "Cryptococcus：Fluconazole 5-10 mg/kg PO q12-24h"
+    - SRMA：Prednisolone 2-4 mg/kg/day PO（逐步減量至 0.5 mg/kg q48h，總療程 6-12 個月）
+    - 細菌性：廣效抗生素（能穿透血腦屏障）——Ampicillin + Metronidazole + Enrofloxacin
+    - Toxoplasma/Neospora：Clindamycin 10-15 mg/kg PO q12h + TMP-SMX
+    - Cryptococcus：Fluconazole 5-10 mg/kg PO q12-24h
     - 支持性治療（輸液、疼痛管理）
     - 抗癲癇（若有發作）
-
-prognosis: SRMA 以類固醇治療預後良好（>80% 緩解）。復發率約 20-30%。細菌性腦膜炎若及時治療預後尚可但死亡率仍高（20-40%）。GME 治療反應不一，中位存活約 3-12 個月。FIP 腦膜炎預後不佳（但新型抗病毒藥物 GS-441524 可能改變預後）。
-
-
+prognosis: >-
+  SRMA 以類固醇治療預後良好（>80% 緩解）。復發率約 20-30%。細菌性腦膜炎若及時治療預後尚可但死亡率仍高（20-40%）。GME 治療反應不一，中位存活約 3-12 個月。FIP 腦膜炎預後不佳（但新型抗病毒藥物
+  GS-441524 可能改變預後）。
 guidelineRefs:
   - sourceOrg: BMJ global health
-    title: "Association of gross domestic product with equitable access to childhood vaccines in 195 countries: a systematic review and meta-analysis."
+    title: >-
+      Association of gross domestic product with equitable access to childhood vaccines in 195 countries: a systematic
+      review and meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11749592/
     type: review
-    pmid: "39828433"
+    pmid: '39828433'
   - sourceOrg: Annals of medicine and surgery (2012)
-    title: "Meningitis in Niger Republic amidst COVID-19: current issues and novel recommendations."
+    title: 'Meningitis in Niger Republic amidst COVID-19: current issues and novel recommendations.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10783331/
     type: review
-    pmid: "38222679"
+    pmid: '38222679'
   - sourceOrg: Infectious diseases of poverty
     title: Cryptococcus neoformans, a global threat to human health.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10020775/
     type: review
-    pmid: "36932414"
+    pmid: '36932414'
   - sourceOrg: Frontiers in veterinary science
-    title: Systematic Review of the Pharmacological Evidence for the Selection of Antimicrobials in Bacterial Infections of the Central Nervous System in Dogs and Cats.
+    title: >-
+      Systematic Review of the Pharmacological Evidence for the Selection of Antimicrobials in Bacterial Infections of
+      the Central Nervous System in Dogs and Cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8803749/
     type: review
-    pmid: "35118150"
+    pmid: '35118150'
   - sourceOrg: Veterinary research
     title: Review of the speculative role of co-infections in Streptococcus suis-associated diseases in pigs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7980725/
     type: review
-    pmid: "33743838"
+    pmid: '33743838'
 pubmedQueries:
   - query: '"meningitis" AND (veterinary OR canine OR feline) AND ("SRMA" OR "treatment" OR "CSF")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 腦膜炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估發燒、頸部疼痛及神經症狀
+      findings:
+        - 頸部僵硬疼痛
+        - 發燒
+        - 嗜睡
+        - 背部弓起
+    - step: 2
+      action: 神經學檢查
+      details: 完整神經學評估
+      findings:
+        - 頸部僵硬
+        - 本體感覺異常
+        - 腦神經功能評估
+        - 意識狀態評估
+    - step: 3
+      action: 腦脊髓液分析
+      details: CSF採集及分析
+      findings:
+        - 白血球增多（嗜中性球或單核球為主）
+        - 蛋白質升高
+        - 培養與藥敏試驗
+        - 細胞學排除腫瘤
+    - step: 4
+      action: 影像學
+      details: MRI或CT評估腦膜與腦實質
+      findings:
+        - 腦膜增厚強化
+        - 腦實質病灶
+        - 排除腫瘤
+        - 評估腦水腫程度
+clinicalPearls:
+  - MUO是描述性診斷，非特定疾病
+  - SRMA好發年輕大型犬，頸痛為主
+  - GME好發小型犬，多灶性神經症狀
+  - 長期治療需監測免疫抑制副作用
+monitoringItems:
+  - 神經症狀
+  - CSF追蹤
+  - 藥物副作用
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+ddxSource: book

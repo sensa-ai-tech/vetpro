@@ -2,14 +2,18 @@ slug: bladder-neoplasia
 nameEn: Bladder Neoplasia
 nameZh: 膀胱腫瘤
 bodySystem: oncology
-description: 膀胱腫瘤為犬隻較常見的泌尿道惡性腫瘤，以移行上皮細胞癌（transitional cell carcinoma, TCC / urothelial carcinoma）為最常見類型。好發部位為膀胱三角區（trigone），常侵犯輸尿管開口與尿道。Scottish Terrier 為最高風險品種。NSAID（Piroxicam）在治療中扮演重要角色。
-
+description: >-
+  膀胱腫瘤為犬隻較常見的泌尿道惡性腫瘤，以移行上皮細胞癌（transitional cell carcinoma, TCC / urothelial
+  carcinoma）為最常見類型。好發部位為膀胱三角區（trigone），常侵犯輸尿管開口與尿道。Scottish Terrier 為最高風險品種。NSAID（Piroxicam）在治療中扮演重要角色。
 aliases:
-  - { alias: 膀胱癌, language: zh }
-  - { alias: Transitional Cell Carcinoma, language: en }
-  - { alias: TCC, language: en }
-  - { alias: Urothelial Carcinoma, language: en }
-
+  - alias: 膀胱癌
+    language: zh
+  - alias: Transitional Cell Carcinoma
+    language: en
+  - alias: TCC
+    language: en
+  - alias: Urothelial Carcinoma
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻膀胱腫瘤罕見。TCC 為最常見類型。亦可見淋巴瘤。
-
 etiology:
   categories:
     - name: 風險因素
@@ -32,7 +35,6 @@ etiology:
         - 好發膀胱三角區
         - 局部侵犯性強
         - 可轉移至淋巴結、肺臟
-
 clinicalSigns:
   early:
     - 血尿
@@ -45,37 +47,69 @@ clinicalSigns:
     - 尿路阻塞（輸尿管或尿道被腫瘤侵犯）
     - 腎後性腎衰竭
     - 後肢水腫（淋巴結轉移壓迫）
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
       notes: 膀胱壁不規則增厚腫塊，好發三角區。評估輸尿管擴張（hydronephrosis）。評估腹腔淋巴結轉移。
     - name: BRAF 突變檢測
       notes: 尿液 BRAF V595E 突變 PCR 檢測（犬隻 TCC 約 85% 陽性）。非侵入性診斷工具。組織學活檢為確診金標準（注意避免經腹穿刺種植轉移→經尿道鏡活檢或經導管活檢）。
-
 treatment:
   principles:
     - 手術完整切除通常不可行（三角區位置）
     - NSAID 為治療基礎
     - 化療提高反應率
   general:
-    - "Piroxicam 0.3 mg/kg PO q24h（COX-2 抑制劑，抗腫瘤與抗發炎）"
-    - "Mitoxantrone 5 mg/m² IV q21d + Piroxicam"
-    - "或 Vinblastine 3 mg/m² IV q14-21d + Piroxicam"
-    - "或 Carboplatin 300 mg/m² IV q21d + Piroxicam"
+    - Piroxicam 0.3 mg/kg PO q24h（COX-2 抑制劑，抗腫瘤與抗發炎）
+    - Mitoxantrone 5 mg/m² IV q21d + Piroxicam
+    - 或 Vinblastine 3 mg/m² IV q14-21d + Piroxicam
+    - 或 Carboplatin 300 mg/m² IV q21d + Piroxicam
     - 尿道支架置入（ureteral stent 或 urethral stent，阻塞性病例）
     - 部分膀胱切除術（腫瘤不在三角區時）
     - 輸尿管支架（SUB device）處理輸尿管阻塞
-
-prognosis: 犬隻膀胱 TCC 以 Piroxicam 單獨治療中位存活約 6 個月。Piroxicam + 化療中位存活約 7-12 個月。部分病例可維持良好生活品質超過 1 年。尿路阻塞管理（支架）可改善症狀。轉移至淋巴結或肺臟者預後較差。BRAF 突變檢測為有用的早期診斷工具。
-
-
+prognosis: >-
+  犬隻膀胱 TCC 以 Piroxicam 單獨治療中位存活約 6 個月。Piroxicam + 化療中位存活約 7-12 個月。部分病例可維持良好生活品質超過 1
+  年。尿路阻塞管理（支架）可改善症狀。轉移至淋巴結或肺臟者預後較差。BRAF 突變檢測為有用的早期診斷工具。
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Silent Threats: A Narrative Review of Urinary Bladder Cancer in Dogs and Cats-Epidemiology and Risk Factors."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Silent Threats: A Narrative Review of Urinary Bladder Cancer in Dogs and Cats-Epidemiology and Risk Factors.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12837244/
     type: review
-    pmid: "41594407"
+    pmid: '41594407'
 pubmedQueries:
-  - query: '"transitional cell carcinoma" OR "urothelial carcinoma" AND (veterinary OR canine) AND ("piroxicam" OR "treatment" OR "BRAF")'
+  - query: >-
+      "transitional cell carcinoma" OR "urothelial carcinoma" AND (veterinary OR canine) AND ("piroxicam" OR "treatment"
+      OR "BRAF")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: common
+  - symptomId: haematuria
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 膀胱腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pollakiuria 相關症狀
+        - haematuria 相關症狀
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 膀胱壁不規則增厚腫塊，好發三角區。評估輸尿管擴張（hydronephrosis）。評估腹腔淋巴結轉移。
+        - name: BRAF 突變檢測
+          notes: 尿液 BRAF V595E 突變 PCR 檢測（犬隻 TCC 約 85% 陽性）。非侵入性診斷工具。組織學活檢為確診金標準（注意避免經腹穿刺種植轉移→經尿道鏡活檢或經導管活檢）。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術完整切除通常不可行（三角區位置）
+        - NSAID 為治療基礎
+        - 化療提高反應率
+ddxSource: auto-generated

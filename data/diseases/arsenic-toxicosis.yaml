@@ -3,11 +3,11 @@ nameEn: Arsenic Toxicosis
 nameZh: 砷中毒
 bodySystem: toxicology
 description: 砷 (arsenic) 中毒可由攝入含砷殺蟲劑、防腐木材處理劑 (CCA) 或工業廢棄物引起。砷化合物干擾細胞氧化磷酸化與酵素功能，引起急性消化道損傷、多器官衰竭。犬貓均可發生。
-
 aliases:
-  - { alias: 砷化物中毒, language: zh }
-  - { alias: Arsenic Poisoning, language: en }
-
+  - alias: 砷化物中毒
+    language: zh
+  - alias: Arsenic Poisoning
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓砷中毒罕見。暴露來源與犬類似。
-
 etiology:
   categories:
     - name: 毒性機制
@@ -30,7 +29,6 @@ etiology:
         - CCA 防腐木材處理劑
         - 工業廢棄物
         - 受汙染水源
-
 clinicalSigns:
   early:
     - 劇烈嘔吐（攝入後數小時）
@@ -44,7 +42,6 @@ clinicalSigns:
     - 肝損傷
     - 心律不整
     - 死亡（數小時至數天）
-
 diagnosis:
   primaryTests:
     - name: 尿液砷濃度
@@ -56,7 +53,6 @@ diagnosis:
     - 心電圖
     - CBC
     - 組織砷分析（毛髮、指甲可反映慢性暴露）
-
 treatment:
   principles:
     - 去汙染
@@ -66,15 +62,59 @@ treatment:
   general:
     - 催吐（極早期）+ 洗胃
     - 活性炭效果有限
-    - "Succimer (DMSA) 10 mg/kg PO TID × 10 天（首選螯合劑）"
+    - Succimer (DMSA) 10 mg/kg PO TID × 10 天（首選螯合劑）
     - 替代：D-penicillamine 或 BAL (dimercaprol)
     - IV 輸液維持腎灌流
     - 電解質矯正
     - 消化道保護
     - 心律不整管理
-
 prognosis: 急性砷中毒預後取決於劑量與就醫時效。大劑量暴露致死率高。螯合劑治療可改善存活率。慢性低劑量暴露可引起皮膚角化與腫瘤。
-
 pubmedQueries:
   - query: '"arsenic toxicosis" AND (veterinary OR canine OR feline) AND ("treatment" OR "chelation")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: haematochezia
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 砷中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - diarrhoea 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 尿液砷濃度
+          notes: 24 小時尿液砷 >0.5 ppm 確認暴露
+        - name: 全血砷濃度
+          notes: 血液砷濃度 >1 ppm 有臨床意義
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 肝腎功能
+        - 心電圖
+        - CBC
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 去汙染
+        - 螯合劑治療
+        - 積極支持療法
+ddxSource: auto-generated

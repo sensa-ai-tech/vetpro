@@ -3,14 +3,17 @@ nameEn: Acute Pain Management
 nameZh: 急性疼痛管理
 bodySystem: emergency
 description: 急性疼痛管理為獸醫急診與圍術期照護的核心環節，涵蓋疼痛評估量表應用、多模式鎮痛策略及各類止痛藥物的合理使用。未經控制的疼痛不僅影響動物福利，也延緩傷口癒合並增加術後併發症風險。
-
 aliases:
-  - { alias: 急性止痛, language: zh }
-  - { alias: 鎮痛治療, language: zh }
-  - { alias: Acute Analgesia, language: en }
-  - { alias: Pain Control, language: en }
-  - { alias: Multimodal Analgesia, language: en }
-
+  - alias: 急性止痛
+    language: zh
+  - alias: 鎮痛治療
+    language: zh
+  - alias: Acute Analgesia
+    language: en
+  - alias: Pain Control
+    language: en
+  - alias: Multimodal Analgesia
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -18,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓疼痛表現隱晦，需使用貓專用量表（Feline Grimace Scale）。貓對 NSAIDs 代謝能力差，需謹慎用藥。
-
 etiology:
   categories:
     - name: 疼痛來源
@@ -32,7 +34,6 @@ etiology:
         - 傷害性疼痛（Nociceptive，組織損傷直接刺激）
         - 內臟痛（Visceral，腸管膨脹或缺血）
         - 神經病理性疼痛（Neuropathic，神經損傷）
-
 clinicalSigns:
   early:
     - 心搏過速、呼吸急促
@@ -45,14 +46,12 @@ clinicalSigns:
     - 食慾廢絕
     - 自殘行為（舔咬患處）
     - 攻擊性增加
-
 diagnosis:
   primaryTests:
     - name: 疼痛評估量表
       notes: 犬：Glasgow Composite Pain Scale (GCPS) 或 Colorado State Pain Scale。貓：Feline Grimace Scale (FGS)。定期重複評估以追蹤止痛效果。
     - name: 生理參數監測
       notes: 心率、血壓、呼吸率變化可輔助疼痛評估，但不應作為唯一依據（壓力亦可導致類似變化）。
-
 treatment:
   principles:
     - 預防性鎮痛優於事後止痛（pre-emptive analgesia）
@@ -66,31 +65,67 @@ treatment:
     - 局部/區域麻醉技術（神經阻斷、硬膜外麻醉）
     - 持續速率輸注（CRI）：Fentanyl、Ketamine、Lidocaine（犬 MLK 配方）
     - 貓 NSAIDs 限短期使用（Meloxicam 0.05 mg/kg SID，不超過 3-5 天）
-
 prognosis: 適當的急性疼痛管理可顯著改善動物舒適度、縮短住院時間並促進康復。多模式鎮痛較單一藥物效果更佳且副作用更少。未經控制的疼痛可導致中樞敏感化，增加慢性疼痛發生風險。
-
-
 guidelineRefs:
   - sourceOrg: The Journal of small animal practice
     title: Analgesic practices for acute pain management in cats and dogs in Africa.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12883314/
     type: research
-    pmid: "40898407"
+    pmid: '40898407'
   - sourceOrg: Scientific reports
-    title: Efficacy of gabapentin as pain management of T2-T4 feline facial squamous cell carcinoma treated with electrochemotherapy.
+    title: >-
+      Efficacy of gabapentin as pain management of T2-T4 feline facial squamous cell carcinoma treated with
+      electrochemotherapy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12311190/
     type: research
-    pmid: "40739323"
+    pmid: '40739323'
   - sourceOrg: Regional anesthesia and pain medicine
     title: Focused ultrasound-induced inhibition of peripheral nerve fibers in an animal model of acute pain.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11233103/
     type: research
-    pmid: "36822815"
+    pmid: '36822815'
   - sourceOrg: Journal of pain research
     title: A Novel Rat Model to Study Postsurgical Pain After Joint Replacement Surgery.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9482957/
     type: research
-    pmid: "36132997"
+    pmid: '36132997'
 pubmedQueries:
   - query: '"Acute Pain Management" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: mydriasis
+    frequency: common
+diagnosticAlgorithm:
+  title: 急性疼痛管理 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - dyspnoea 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 疼痛評估量表
+          notes: >-
+            犬：Glasgow Composite Pain Scale (GCPS) 或 Colorado State Pain Scale。貓：Feline Grimace Scale
+            (FGS)。定期重複評估以追蹤止痛效果。
+        - name: 生理參數監測
+          notes: 心率、血壓、呼吸率變化可輔助疼痛評估，但不應作為唯一依據（壓力亦可導致類似變化）。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 預防性鎮痛優於事後止痛（pre-emptive analgesia）
+        - 多模式鎮痛策略（combining drugs with different mechanisms）
+        - 根據疼痛程度調整止痛方案
+ddxSource: auto-generated

@@ -3,12 +3,13 @@ nameEn: Pulmonary Hemorrhage
 nameZh: 肺出血
 bodySystem: respiratory
 description: 肺實質或微血管出血,導致肺泡填滿血液。可能因創傷、凝血障礙、血管炎或腫瘤引起。
-
 aliases:
-  - { alias: 肺泡出血, language: zh }
-  - { alias: Alveolar Hemorrhage, language: en }
-  - { alias: 咯血, language: zh }
-
+  - alias: 肺泡出血
+    language: zh
+  - alias: Alveolar Hemorrhage
+    language: en
+  - alias: 咯血
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 常因創傷、凝血障礙
-
 etiology:
   categories:
     - name: 創傷性
@@ -33,7 +33,6 @@ etiology:
       examples:
         - 血管炎
         - 肺栓塞
-
 clinicalSigns:
   early:
     - 咳嗽 (可能帶血)
@@ -43,20 +42,18 @@ clinicalSigns:
     - 發紺
     - 黏膜蒼白
     - 休克
-
 diagnosis:
   primaryTests:
     - name: 胸部 X 光
-      notes: "瀰漫性肺泡浸潤"
+      notes: 瀰漫性肺泡浸潤
     - name: 凝血功能檢查
-      notes: "PT, aPTT, 血小板計數"
+      notes: PT, aPTT, 血小板計數
     - name: 支氣管肺泡灌洗
-      notes: "大量紅血球、含鐵血黃素巨噬細胞"
+      notes: 大量紅血球、含鐵血黃素巨噬細胞
   differentialDiagnoses:
     - 肺炎
     - 肺水腫
     - 肺挫傷
-
 treatment:
   medical:
     - 氧氣治療
@@ -64,44 +61,68 @@ treatment:
     - Vitamin K1 10-25 mg/dog IV/SC (鼠藥中毒)
     - Aminocaproic acid 15-30 mg/kg IV q8h (止血)
     - 治療原發病因
-
 prognosis:
-  general: "取決於原發病因;創傷或鼠藥中毒若能早期治療預後良好;免疫介導或血管炎預後謹慎"
-
+  general: 取決於原發病因;創傷或鼠藥中毒若能早期治療預後良好;免疫介導或血管炎預後謹慎
 prevention:
   - 避免創傷
   - 避免接觸鼠藥
   - 定期凝血功能監測 (高風險病例)
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Health of Polo Horses.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11201175/
     type: review
-    pmid: "38929354"
+    pmid: '38929354'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
     title: Mechanical ventilation in snake envenomation of dogs and cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10090310/
     type: review
-    pmid: "37065246"
+    pmid: '37065246'
     relevance: primary
   - sourceOrg: Biology
     title: Update on Stachybotrys chartarum-Black Mold Perceived as Toxigenic and Potentially Pathogenic to Humans.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8945704/
     type: review
-    pmid: "35336726"
+    pmid: '35336726'
     relevance: primary
   - sourceOrg: Pathogens (Basel, Switzerland)
     title: Hemostatic Dysfunction in Dogs Naturally Infected with Angiostrongylus vasorum-A Narrative Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8878016/
     type: review
-    pmid: "35215192"
+    pmid: '35215192'
     relevance: primary
   - sourceOrg: Cureus
-    title: "Severe Leptospirosis: A Case Report."
+    title: 'Severe Leptospirosis: A Case Report.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9695193/
     type: case-report
-    pmid: "36439595"
+    pmid: '36439595'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+diagnosticAlgorithm:
+  title: 肺出血 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - pallor-cyanosis 相關症狀
+        - coughing 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸部 X 光
+          notes: 瀰漫性肺泡浸潤
+        - name: 凝血功能檢查
+          notes: PT, aPTT, 血小板計數
+        - name: 支氣管肺泡灌洗
+          notes: 大量紅血球、含鐵血黃素巨噬細胞
+ddxSource: auto-generated

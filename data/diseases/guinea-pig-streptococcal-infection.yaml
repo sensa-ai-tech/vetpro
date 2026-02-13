@@ -3,22 +3,20 @@ nameEn: Guinea Pig Streptococcal Infection
 nameZh: 天竺鼠鏈球菌感染
 bodySystem: infectious
 description: 由 Streptococcus equi subsp. zooepidemicus 或 S. pneumoniae 引起的天竺鼠全身性感染，可導致淋巴結膿瘍（cervical lymphadenitis）、肺炎或敗血症。
-
 aliases:
-  - { alias: "天竺鼠鏈球菌感染", language: zh }
-  - { alias: "Guinea Pig Streptococcal Infection", language: en }
-
+  - alias: 天竺鼠鏈球菌感染
+    language: zh
+  - alias: Guinea Pig Streptococcal Infection
+    language: en
 species:
   - speciesCommon: guinea pig
     prevalence: uncommon
     notes: 天竺鼠可受此疾病影響。
-
 etiology:
   categories:
     - name: 病因
       examples:
         - 詳見臨床文獻
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -27,14 +25,12 @@ clinicalSigns:
   progressive:
     - 症狀加重
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 完整理學檢查與病史評估。
     - name: 實驗室檢查
       notes: CBC/生化排除系統性疾病。
-
 treatment:
   principles:
     - 治療基礎病因
@@ -44,32 +40,70 @@ treatment:
     - 依病因治療
     - 支持性照護
     - 定期追蹤
-
 prognosis: 預後取決於疾病嚴重度與治療時效。早期診斷與適當治療可改善預後。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in cardiovascular medicine
-    title: Requirements for a Robust Animal Model to Investigate the Disease Mechanism of Autoimmune Complications Associated With ARF/RHD.
+    title: >-
+      Requirements for a Robust Animal Model to Investigate the Disease Mechanism of Autoimmune Complications Associated
+      With ARF/RHD.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8131511/
     type: review
-    pmid: "34026876"
+    pmid: '34026876'
   - sourceOrg: Emerging infectious diseases
     title: Streptococcus equi subsp. zooepidemicus infections associated with guinea pigs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4285269/
     type: case-report
-    pmid: "25531424"
+    pmid: '25531424'
   - sourceOrg: mBio
-    title: An Infant Mouse Model of Influenza Virus Transmission Demonstrates the Role of Virus-Specific Shedding, Humoral Immunity, and Sialidase Expression by Colonizing Streptococcus pneumoniae.
+    title: >-
+      An Infant Mouse Model of Influenza Virus Transmission Demonstrates the Role of Virus-Specific Shedding, Humoral
+      Immunity, and Sialidase Expression by Colonizing Streptococcus pneumoniae.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6299224/
     type: research
-    pmid: "30563897"
+    pmid: '30563897'
   - sourceOrg: Comparative immunology, microbiology and infectious diseases
-    title: Comparative metataxonomic analysis of bacterial communities in healthy and lymphadenitis-affected Cavia porcellus (guinea pig) lymph nodes.
+    title: >-
+      Comparative metataxonomic analysis of bacterial communities in healthy and lymphadenitis-affected Cavia porcellus
+      (guinea pig) lymph nodes.
     url: https://pubmed.ncbi.nlm.nih.gov/41420937/
     type: research
-    pmid: "41420937"
+    pmid: '41420937'
     relevance: supporting
 pubmedQueries:
   - query: '"Guinea Pig Streptococcal Infection" AND (veterinary OR "guinea pig") AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 天竺鼠鏈球菌感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 完整理學檢查與病史評估。
+        - name: 實驗室檢查
+          notes: CBC/生化排除系統性疾病。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 支持性照護
+        - 監測恢復進度
+ddxSource: auto-generated

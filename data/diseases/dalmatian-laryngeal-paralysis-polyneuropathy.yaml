@@ -3,18 +3,18 @@ nameEn: Dalmatian Laryngeal Paralysis Polyneuropathy
 nameZh: 斑點狗喉麻痺多發性神經病變
 bodySystem: neurology
 description: 斑點狗罕見的遺傳性神經病變,喉返神經麻痺合併廣泛性周邊神經病變。青年至中年期發病,表現為呼吸喘鳴、運動不耐與吞嚥困難,預後不良,需手術與支持治療。
-
 aliases:
-  - { alias: 斑點狗GOLPP, language: zh }
-  - { alias: Dalmatian Geriatric Onset Laryngeal Paralysis Polyneuropathy, language: en }
-  - { alias: 斑點狗喉神經病變, language: zh }
-
+  - alias: 斑點狗GOLPP
+    language: zh
+  - alias: Dalmatian Geriatric Onset Laryngeal Paralysis Polyneuropathy
+    language: en
+  - alias: 斑點狗喉神經病變
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: rare
     notes: 斑點狗為高風險品種,發病年齡較一般GOLPP早(3-9歲 vs >10歲),疑似遺傳性
-
 etiology:
   categories:
     - name: 遺傳性軸突病變
@@ -32,7 +32,6 @@ etiology:
         - 喉軟骨外展肌麻痺
         - 喉腔狹窄
         - 食道蠕動障礙
-
 clinicalSigns:
   early:
     - 運動或高溫後呼吸喘鳴(stridor)
@@ -47,44 +46,80 @@ clinicalSigns:
     - 步態異常,腳掌拖地
     - 本體感覺缺失
     - 呼吸衰竭或肺炎致死
-
 diagnosis:
   primaryTests:
     - name: 喉鏡檢查(確診)
-      notes: "麻醉下見披裂軟骨無法外展,雙側或單側麻痺"
+      notes: 麻醉下見披裂軟骨無法外展,雙側或單側麻痺
     - name: 神經學檢查
-      notes: "後肢反射減弱或消失,肌肉萎縮,本體感覺異常"
+      notes: 後肢反射減弱或消失,肌肉萎縮,本體感覺異常
     - name: 肌電圖(EMG)
-      notes: "廣泛性去神經支配電位,周邊神經病變證據"
+      notes: 廣泛性去神經支配電位,周邊神經病變證據
     - name: 胸部X光
-      notes: "評估吸入性肺炎、巨食道症"
+      notes: 評估吸入性肺炎、巨食道症
     - name: 甲狀腺功能
-      notes: "排除甲狀腺低能(可引起周邊神經病變與喉麻痺)"
+      notes: 排除甲狀腺低能(可引起周邊神經病變與喉麻痺)
   differentialDiagnoses:
     - 特發性老年喉麻痺(GOLPP)
     - 甲狀腺低能性喉麻痺
     - 喉腫瘤
     - 重症肌無力
     - 其他多發性神經病變
-
 treatment:
   medical:
     - 喉麻痺手術:單側披裂軟骨外展術(unilateral arytenoid lateralization)
     - 術前穩定:降溫、氧氣、Dexamethasone 0.1-0.2 mg/kg IV(減輕喉部水腫)
     - 術後護理:
-      - 伊莉莎白頸圈2-4週
-      - 軟食或泥狀食物
-      - 直立進食(預防吸入)
+        - 伊莉莎白頸圈2-4週
+        - 軟食或泥狀食物
+        - 直立進食(預防吸入)
     - 吸入性肺炎治療:抗生素、支持性照護
     - 周邊神經病變:無特異治療,支持性照護
     - 物理治療:維持肌力
     - 環境調整:避免高溫、劇烈運動、游泳(溺水風險)
-
 prognosis:
-  general: "喉麻痺手術後呼吸改善,但術後吸入性肺炎風險增加(25-30%)。周邊神經病變進行性惡化,預後較一般GOLPP差。平均存活時間術後1-3年,死因多為吸入性肺炎。"
-
+  general: 喉麻痺手術後呼吸改善,但術後吸入性肺炎風險增加(25-30%)。周邊神經病變進行性惡化,預後較一般GOLPP差。平均存活時間術後1-3年,死因多為吸入性肺炎。
 prevention:
   - 避免繁殖患病犬及其直系親屬
   - 目前無基因檢測
   - 高風險品種定期神經學與喉部評估
   - 早期識別與介入
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: stertor-stridor
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 斑點狗喉麻痺多發性神經病變 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dysphagia 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 喉鏡檢查(確診)
+          notes: 麻醉下見披裂軟骨無法外展,雙側或單側麻痺
+        - name: 神經學檢查
+          notes: 後肢反射減弱或消失,肌肉萎縮,本體感覺異常
+        - name: 肌電圖(EMG)
+          notes: 廣泛性去神經支配電位,周邊神經病變證據
+ddxSource: auto-generated

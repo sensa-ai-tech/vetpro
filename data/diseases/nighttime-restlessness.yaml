@@ -3,11 +3,11 @@ nameEn: Nighttime Restlessness
 nameZh: 夜間不安
 bodySystem: behavioral
 description: 犬貓夜間無法安靜休息，表現為踱步、遊蕩、焦慮。可能因疼痛、認知障礙、焦慮或日間刺激不足。需找出原因治療。
-
 aliases:
-  - { alias: 夜間焦慮, language: zh }
-  - { alias: Night Anxiety, language: en }
-
+  - alias: 夜間焦慮
+    language: zh
+  - alias: Night Anxiety
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓夜行性需區分正常或異常
-
 etiology:
   categories:
     - name: 醫學問題
@@ -31,7 +30,6 @@ etiology:
         - 焦慮
         - 日間活動不足
         - 睡眠環境問題
-
 clinicalSigns:
   early:
     - 夜間踱步、遊蕩
@@ -41,21 +39,19 @@ clinicalSigns:
     - 嚎叫、嗚咽
     - 完全無法休息
     - 影響主人睡眠
-
 diagnosis:
   primaryTests:
     - name: 排除醫學問題
-      notes: "理學檢查、血檢、尿檢"
+      notes: 理學檢查、血檢、尿檢
     - name: 疼痛評估
-      notes: "關節觸診、影像學"
+      notes: 關節觸診、影像學
     - name: 認知評估
-      notes: "DISHAA（老年犬）"
+      notes: DISHAA（老年犬）
   differentialDiagnoses:
     - 認知障礙症
     - 疼痛
     - 焦慮症
     - 日落症候群
-
 treatment:
   medical:
     - 治療潛在醫學問題
@@ -69,12 +65,32 @@ treatment:
     - Trazodone 3-5 mg/kg PO
     - Gabapentin 5-10 mg/kg PO
     - Melatonin 3-9 mg PO
-
 prognosis:
-  general: "醫學問題治療後預後佳。認知障礙為進行性。行為性需長期管理。"
-
+  general: 醫學問題治療後預後佳。認知障礙為進行性。行為性需長期管理。
 prevention:
   - 充足日間運動
   - 定期健康檢查
   - 早期疼痛管理
   - 認知刺激
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 夜間不安 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 排除醫學問題
+          notes: 理學檢查、血檢、尿檢
+        - name: 疼痛評估
+          notes: 關節觸診、影像學
+        - name: 認知評估
+          notes: DISHAA（老年犬）
+ddxSource: auto-generated

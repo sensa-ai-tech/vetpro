@@ -3,13 +3,15 @@ nameEn: Hypomagnesemia
 nameZh: 低鎂血症
 bodySystem: metabolic
 description: 血清鎂離子濃度低於正常值（犬貓 <1.5 mg/dL）的電解質異常。鎂為重要的細胞內陽離子，參與 300 多種酶促反應，低鎂血症可導致頑固性低鉀血症、低鈣血症及難治性心律不整。
-
 aliases:
-  - { alias: 低血鎂, language: zh }
-  - { alias: 鎂缺乏症, language: zh }
-  - { alias: Low Magnesium, language: en }
-  - { alias: Magnesium Deficiency, language: en }
-
+  - alias: 低血鎂
+    language: zh
+  - alias: 鎂缺乏症
+    language: zh
+  - alias: Low Magnesium
+    language: en
+  - alias: Magnesium Deficiency
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓低鎂血症可見於糖尿病酮酸中毒、慢性腎病及重餵食症候群（refeeding syndrome）。
-
 etiology:
   categories:
     - name: 攝入不足/腸道流失
@@ -30,7 +31,6 @@ etiology:
         - 利尿劑使用（呋塞米等袢利尿劑）
         - 糖尿病酮酸中毒（滲透性利尿）
         - 腎小管損傷
-
 clinicalSigns:
   early:
     - 食慾不振
@@ -42,14 +42,12 @@ clinicalSigns:
     - 心律不整（室性早搏、心室頻脈）
     - 癲癇發作
     - 難治性低鈣血症
-
 diagnosis:
   primaryTests:
     - name: 血清總鎂
       notes: 正常犬貓 1.5-2.5 mg/dL。<1.5 mg/dL 確診低鎂血症。離子化鎂更準確但臨床可及性低。
     - name: 電解質全套
       notes: 同時評估鉀、鈣離子。低鎂常伴低鉀低鈣，且單純補鉀補鈣無效時應想到低鎂。
-
 treatment:
   principles:
     - 有症狀或嚴重低鎂需靜脈補充
@@ -62,36 +60,92 @@ treatment:
     - 輸注速度過快可致低血壓及心搏過緩
     - 持續靜脈輸液 24-48 小時後改口服補充
     - 監測血清鎂及心電圖
-
 prognosis: 輕度低鎂血症經補充後預後良好。合併嚴重心律不整或難治性電解質紊亂者預後取決於基礎疾病。重症 ICU 患者低鎂血症為預後不良的獨立因子。
-
-
 guidelineRefs:
   - sourceOrg: Open veterinary journal
-    title: "Paratuberculosis in sheep and goats: Pathogenesis, diagnostic findings, and control strategies."
+    title: 'Paratuberculosis in sheep and goats: Pathogenesis, diagnostic findings, and control strategies.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11910304/
     type: review
-    pmid: "40092194"
+    pmid: '40092194'
   - sourceOrg: Open veterinary journal
-    title: "Clinical insights on paratuberculosis in Arabian camels (Camelus dromedarius): A review."
+    title: 'Clinical insights on paratuberculosis in Arabian camels (Camelus dromedarius): A review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11910307/
     type: review
-    pmid: "40092173"
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: Intrahepatic mucinous cholangiocarcinoma with recurrent colic in a horse case report and literature review of cholangiocarcinoma in horses.
+    pmid: '40092173'
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: >-
+      Intrahepatic mucinous cholangiocarcinoma with recurrent colic in a horse case report and literature review of
+      cholangiocarcinoma in horses.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11185110/
     type: review
-    pmid: "38641993"
+    pmid: '38641993'
   - sourceOrg: International journal of environmental research and public health
-    title: "Safety Assessment on Serious Adverse Events of Targeted Therapeutic Agents Prescribed for RAS Wild-Type Metastatic Colorectal Cancer: Systematic Review and Network Meta-Analysis."
+    title: >-
+      Safety Assessment on Serious Adverse Events of Targeted Therapeutic Agents Prescribed for RAS Wild-Type Metastatic
+      Colorectal Cancer: Systematic Review and Network Meta-Analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9368240/
     type: review
-    pmid: "35954563"
+    pmid: '35954563'
   - sourceOrg: PLoS neglected tropical diseases
-    title: "Micronutrients and Leptospirosis: A Review of the Current Evidence."
+    title: 'Micronutrients and Leptospirosis: A Review of the Current Evidence.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4936698/
     type: review
-    pmid: "27387046"
+    pmid: '27387046'
 pubmedQueries:
   - query: '"Hypomagnesemia" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 低鎂血症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估肌肉震顫、抽搐和心律不整等表現，注意常伴隨低鈣和低鉀血症
+      findings:
+        - 肌肉震顫和抽搐
+        - 心律不整
+        - 難治性低鈣或低鉀血症
+    - step: 2
+      action: 實驗室檢查
+      details: 測量血清鎂、鈣和鉀濃度，進行心電圖監測
+      findings:
+        - 血清鎂<1.5 mg/dL
+        - 可能併發低鈣和低鉀血症
+        - 心電圖可見心律不整
+    - step: 3
+      action: 病因確認
+      details: 調查鎂流失原因，包括胃腸道流失、腎臟流失和攝入不足
+      findings:
+        - 胃腸道流失（慢性腹瀉、嘔吐）
+        - 腎臟流失（利尿劑使用）
+        - 長期靜脈營養不含鎂補充
+clinicalPearls:
+  - 頑固性低鈣血症對鈣補充無反應時應檢查鎂
+  - 頑固性低鉀血症對鉀補充無反應時應檢查鎂
+  - 血清鎂僅反映全身鎂的1%——可能低估鎂缺乏程度
+  - 再餵食症候群是低鎂的重要原因——長期禁食的動物重新餵食時需監測
+  - 低鎂可降低毛地黃耐受性，增加中毒風險
+  - Loop利尿劑（如furosemide）長期使用可致低鎂
+monitoringItems:
+  - 血清鎂濃度
+  - ECG監測
+  - 同時監測鈣、鉀濃度
+  - 腎功能
+  - 臨床症狀改善
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+ddxSource: book

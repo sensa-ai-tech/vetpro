@@ -3,11 +3,11 @@ nameEn: Antihistamine Toxicosis
 nameZh: 抗組織胺中毒
 bodySystem: toxicology
 description: 抗組織胺過量可引起從鎮靜到興奮的雙相作用,包括抗膽鹼效應。第一代抗組織胺毒性較大。
-
 aliases:
-  - { alias: 抗組胺藥中毒, language: zh }
-  - { alias: Antihistamine Overdose, language: en }
-
+  - alias: 抗組胺藥中毒
+    language: zh
+  - alias: Antihistamine Overdose
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 較少使用
-
 etiology:
   categories:
     - name: 第一代抗組織胺
@@ -26,7 +25,6 @@ etiology:
     - name: 第二代抗組織胺
       examples:
         - Cetirizine, loratadine(較安全)
-
 clinicalSigns:
   early:
     - 低劑量: 鎮靜、嗜睡
@@ -36,14 +34,12 @@ clinicalSigns:
     - 癲癇發作
     - 心律不整
     - 呼吸抑制(極高劑量)
-
 diagnosis:
   primaryTests:
     - name: 暴露史
-      notes: "確認抗組織胺種類及劑量"
+      notes: 確認抗組織胺種類及劑量
   differentialDiagnoses:
     - 其他鎮靜劑或興奮劑
-
 treatment:
   medical:
     - 催吐(若2小時內): 3% H2O2 1-2 mL/kg PO
@@ -51,18 +47,35 @@ treatment:
     - 鎮靜(若興奮): Diazepam 0.5-1 mg/kg IV
     - 支持性療法: 靜脈輸液、監測心律
     - 多數12-24小時內恢復
-
 prognosis:
-  general: "預後良好,罕見死亡。第二代抗組織胺更安全。"
-
+  general: 預後良好,罕見死亡。第二代抗組織胺更安全。
 prevention:
   - 依獸醫建議劑量使用
   - 避免第一代抗組織胺高劑量
-
-
 guidelineRefs:
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Diphenhydramine exposure in dogs: 621 cases (2008-2013)."
+    title: 'Diphenhydramine exposure in dogs: 621 cases (2008-2013).'
     url: https://pubmed.ncbi.nlm.nih.gov/27308885/
     type: research
-    pmid: "27308885"
+    pmid: '27308885'
+associatedSymptoms:
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 抗組織胺中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - seizures 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 暴露史
+          notes: 確認抗組織胺種類及劑量
+ddxSource: auto-generated

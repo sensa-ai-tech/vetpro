@@ -3,14 +3,17 @@ nameEn: Vitamin E Deficiency
 nameZh: 維生素 E 缺乏症
 bodySystem: metabolic
 description: 維生素 E（α-生育酚）為重要的脂溶性抗氧化劑，保護細胞膜免受氧化損傷。缺乏可導致脂肪組織炎（pansteatitis，又稱黃脂病）、肌肉退化及神經病變，貓餵食大量不飽和脂肪酸（如魚罐頭）時風險增加。
-
 aliases:
-  - { alias: 維生素戊缺乏, language: zh }
-  - { alias: 黃脂病, language: zh }
-  - { alias: Hypovitaminosis E, language: en }
-  - { alias: Pansteatitis, language: en }
-  - { alias: Yellow Fat Disease, language: en }
-
+  - alias: 維生素戊缺乏
+    language: zh
+  - alias: 黃脂病
+    language: zh
+  - alias: Hypovitaminosis E
+    language: en
+  - alias: Pansteatitis
+    language: en
+  - alias: Yellow Fat Disease
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -18,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓餵食大量紅肉魚罐頭（如鮪魚罐頭）可導致黃脂病（pansteatitis），因高不飽和脂肪酸消耗維生素 E。
-
 etiology:
   categories:
     - name: 攝入不足
@@ -29,7 +31,6 @@ etiology:
       examples:
         - 高不飽和脂肪酸飲食（魚油、魚罐頭）
         - 氧化壓力增加的疾病
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -41,14 +42,12 @@ clinicalSigns:
     - 肌肉無力或僵硬
     - 不願被觸摸（全身性疼痛）
     - 步態異常
-
 diagnosis:
   primaryTests:
     - name: 血清維生素 E 濃度
       notes: 低於正常參考值。需考慮血脂濃度對結果的影響。
     - name: 脂肪活檢
       notes: 組織病理學見脂肪組織壞死、肉芽腫性炎症及黃褐色蠟樣色素沉積（ceroid）。
-
 treatment:
   principles:
     - 維生素 E 補充
@@ -61,41 +60,81 @@ treatment:
     - 抗炎治療（Prednisolone 短期使用）
     - 止痛管理
     - 轉換至營養均衡的商業飼料
-
 prognosis: 早期診斷並改變飲食後預後良好，但恢復緩慢（數週至數月）。嚴重 pansteatitis 合併全身性炎症反應者預後謹慎。預防（均衡飲食、避免過量魚罐頭）遠優於治療。
-
-
 guidelineRefs:
   - sourceOrg: International journal of molecular sciences
-    title: "Potential of Vitamin E Deficiency, Induced by Inhibition of &#x3b1;-Tocopherol Efflux, in Murine Malaria Infection."
+    title: >-
+      Potential of Vitamin E Deficiency, Induced by Inhibition of &#x3b1;-Tocopherol Efflux, in Murine Malaria
+      Infection.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6337606/
     type: review
-    pmid: "30586912"
+    pmid: '30586912'
     relevance: supporting
   - sourceOrg: The Proceedings of the Nutrition Society
-    title: "Vitamin E: necessary nutrient for neural development and cognitive function."
+    title: 'Vitamin E: necessary nutrient for neural development and cognitive function.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8842820/
     type: research
-    pmid: "33896432"
+    pmid: '33896432'
     relevance: supporting
   - sourceOrg: Journal of veterinary internal medicine
-    title: Impact of alpha-tocopherol deficiency and supplementation on sacrocaudalis and gluteal muscle fiber histopathology and morphology in horses.
+    title: >-
+      Impact of alpha-tocopherol deficiency and supplementation on sacrocaudalis and gluteal muscle fiber histopathology
+      and morphology in horses.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6872615/
     type: research
-    pmid: "31660648"
+    pmid: '31660648'
     relevance: supporting
   - sourceOrg: Journal of veterinary internal medicine
     title: Eosinophilic Enteritis in Horses with Motor Neuron Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4913563/
     type: research
-    pmid: "27015868"
+    pmid: '27015868'
     relevance: supporting
   - sourceOrg: The Veterinary clinics of North America. Equine practice
     title: Vitamin E and Selenium-Related Manifestations of Muscle Disease.
     url: https://pubmed.ncbi.nlm.nih.gov/39893124/
     type: review
-    pmid: "39893124"
+    pmid: '39893124'
     relevance: primary
 pubmedQueries:
   - query: '"Vitamin E Deficiency" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: lameness
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 維生素 E 缺乏症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - abdominal-pain 相關症狀
+        - anorexia 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清維生素 E 濃度
+          notes: 低於正常參考值。需考慮血脂濃度對結果的影響。
+        - name: 脂肪活檢
+          notes: 組織病理學見脂肪組織壞死、肉芽腫性炎症及黃褐色蠟樣色素沉積（ceroid）。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 維生素 E 補充
+        - 改變飲食（減少過量魚類/不飽和脂肪酸）
+        - 抗炎止痛
+ddxSource: auto-generated

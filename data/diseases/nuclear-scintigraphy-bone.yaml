@@ -3,17 +3,16 @@ nameEn: Nuclear Scintigraphy Bone
 nameZh: 骨骼核醫掃描
 bodySystem: ear
 description: 骨骼核醫掃描使用Tc-99m MDP同位素評估骨骼代謝活性。可偵測骨折、骨髓炎、骨腫瘤、關節炎等,特別用於賽馬及運動犬跛行診斷,可發現X光陰性的早期骨骼病變。
-
 aliases:
-  - { alias: 骨骼閃爍攝影, language: zh }
-  - { alias: Bone scintigraphy, language: en }
-
+  - alias: 骨骼閃爍攝影
+    language: zh
+  - alias: Bone scintigraphy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 運動犬隱匿性跛行診斷,骨腫瘤分期
-
 etiology:
   categories:
     - name: 臨床應用
@@ -30,69 +29,90 @@ etiology:
         - 骨腫瘤
         - 關節炎
         - 骨骼代謝異常
-
 clinicalSigns:
   early:
     - 核醫掃描為診斷工具
   progressive:
     - 跛行、疼痛、腫脹
-
 diagnosis:
   primaryTests:
     - name: 全身骨骼掃描
-      notes: "靜脈注射Tc-99m MDP後2-4小時影像,評估全身骨骼"
+      notes: 靜脈注射Tc-99m MDP後2-4小時影像,評估全身骨骼
     - name: 熱點(hot spot)判讀
-      notes: "攝取增加區域提示骨骼代謝活躍"
+      notes: 攝取增加區域提示骨骼代謝活躍
     - name: 與X光結合
-      notes: "核醫掃描定位異常,X光評估結構變化"
+      notes: 核醫掃描定位異常,X光評估結構變化
   differentialDiagnoses:
     - 壓力性骨折
     - 骨髓炎
     - 骨肉瘤
     - 關節炎
-
 treatment:
   medical:
     - 核醫掃描為診斷工具
     - 依診斷結果決定治療
-
 prognosis:
-  general: "骨骼核醫掃描為功能性影像,可早期偵測X光陰性病變。對隱匿性跛行診斷特別有價值。"
-
+  general: 骨骼核醫掃描為功能性影像,可早期偵測X光陰性病變。對隱匿性跛行診斷特別有價值。
 prevention:
   - 需專門核醫設施
   - 需全身麻醉或深度鎮靜
   - 與X光互補使用提高診斷率
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Equine Nuclear Medicine in 2024: Use and Value of Scintigraphy and PET in Equine Lameness Diagnosis."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Equine Nuclear Medicine in 2024: Use and Value of Scintigraphy and PET in Equine Lameness Diagnosis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11394151/
     type: review
-    pmid: "39272284"
+    pmid: '39272284'
     relevance: primary
   - sourceOrg: Brazilian journal of medical and biological research = Revista brasileira de pesquisas medicas e biologica
-    title: "Temporal evolution of postsurgical bone repair in a rabbit model: A [99mTc]Tc-MDP scintigraphic study."
+    title: 'Temporal evolution of postsurgical bone repair in a rabbit model: A [99mTc]Tc-MDP scintigraphic study.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10946240/
     type: research
-    pmid: "38511767"
+    pmid: '38511767'
     relevance: supporting
   - sourceOrg: EJNMMI research
-    title: EANM recommendations based on systematic analysis of small animal radionuclide imaging in inflammatory musculoskeletal diseases.
+    title: >-
+      EANM recommendations based on systematic analysis of small animal radionuclide imaging in inflammatory
+      musculoskeletal diseases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421483/
     type: research
-    pmid: "34487263"
+    pmid: '34487263'
     relevance: supporting
   - sourceOrg: Scientific reports
-    title: Performance evaluation of a preclinical SPECT/CT system for multi-animal and multi-isotope quantitative experiments.
+    title: >-
+      Performance evaluation of a preclinical SPECT/CT system for multi-animal and multi-isotope quantitative
+      experiments.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9616809/
     type: research
-    pmid: "36307420"
+    pmid: '36307420'
     relevance: supporting
   - sourceOrg: EJNMMI radiopharmacy and chemistry
-    title: "Bone targeting compounds for radiotherapy and imaging: *Me(III)-DOTA conjugates of bisphosphonic acid, pamidronic acid and zoledronic acid."
+    title: >-
+      Bone targeting compounds for radiotherapy and imaging: *Me(III)-DOTA conjugates of bisphosphonic acid, pamidronic
+      acid and zoledronic acid.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5843815/
     type: research
-    pmid: "29564390"
+    pmid: '29564390'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 骨骼核醫掃描 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 全身骨骼掃描
+          notes: 靜脈注射Tc-99m MDP後2-4小時影像,評估全身骨骼
+        - name: 熱點(hot spot)判讀
+          notes: 攝取增加區域提示骨骼代謝活躍
+        - name: 與X光結合
+          notes: 核醫掃描定位異常,X光評估結構變化
+ddxSource: auto-generated

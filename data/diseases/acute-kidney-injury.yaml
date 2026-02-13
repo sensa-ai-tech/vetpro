@@ -3,13 +3,15 @@ nameEn: Acute Kidney Injury
 nameZh: 急性腎損傷
 bodySystem: renal
 description: 腎功能急性惡化導致氮質血症與尿量異常，若及時診斷治療可能可逆。
-
 aliases:
-  - { alias: AKI, language: en }
-  - { alias: Acute Renal Failure, language: en }
-  - { alias: ARF, language: en }
-  - { alias: 急性腎衰竭, language: zh }
-
+  - alias: AKI
+    language: en
+  - alias: Acute Renal Failure
+    language: en
+  - alias: ARF
+    language: en
+  - alias: 急性腎衰竭
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 百合中毒為貓特有且常見的致命原因。輸尿管阻塞 (CaOx 結石) 亦為重要病因。
-
 etiology:
   categories:
     - name: 腎前性
@@ -40,7 +41,6 @@ etiology:
         - 尿道阻塞
         - 膀胱破裂
         - 腹腔尿液滲漏
-
 clinicalSigns:
   early:
     - 突然食慾廢絕
@@ -59,54 +59,51 @@ clinicalSigns:
     - 嚴重高血鉀 (心律不整)
     - 肺水腫 (容量過負荷)
     - 代謝性酸中毒
-
 diagnosis:
   primaryTests:
     - name: Creatinine / BUN
-      notes: "急性升高，需與 CKD 鑑別 (CKD 腎臟小且不規則；AKI 腎臟正常或腫大)"
+      notes: 急性升高，需與 CKD 鑑別 (CKD 腎臟小且不規則；AKI 腎臟正常或腫大)
     - name: SDMA
-      notes: "較 creatinine 更早升高，有助早期偵測"
+      notes: 較 creatinine 更早升高，有助早期偵測
     - name: 尿液分析
-      notes: "管型 (顆粒管型、上皮管型)、糖尿 (近端腎小管損傷)、等張尿"
+      notes: 管型 (顆粒管型、上皮管型)、糖尿 (近端腎小管損傷)、等張尿
     - name: 電解質
-      notes: "高血鉀 (危及生命)、高磷血症、離子化鈣異常"
+      notes: 高血鉀 (危及生命)、高磷血症、離子化鈣異常
   imaging:
     - name: 腹部超音波
-      notes: "腎臟正常或腫大 (區別 CKD)、腎盂擴張、輸尿管結石、腎皮質迴音增強"
+      notes: 腎臟正常或腫大 (區別 CKD)、腎盂擴張、輸尿管結石、腎皮質迴音增強
     - name: X 光
-      notes: "腎臟大小、不透射結石、體腔積液"
+      notes: 腎臟大小、不透射結石、體腔積液
   additional:
     - 血液氣體分析 (代謝性酸中毒)
     - 凝血功能 (鉤端螺旋體相關)
     - 鉤端螺旋體 PCR/MAT
     - 乙二醇快速檢測
     - 尿量監測 (尿管留置)
-
 stagingSystem:
   name: IRIS AKI Grading
   sourceUrl: https://www.iris-kidney.com/iris-staging-system
   stages:
     - stage: I
       label: 非氮血症性 AKI
-      creatinine: "<1.6 mg/dL (犬) / <1.6 mg/dL (貓)"
+      creatinine: <1.6 mg/dL (犬) / <1.6 mg/dL (貓)
       description: 有 AKI 病史/風險但尚無氮血症，可能有寡尿/無尿
     - stage: II
       label: 輕度 AKI
-      creatinine: "1.7-2.5 mg/dL"
+      creatinine: 1.7-2.5 mg/dL
       description: 輕度氮血症，進展中或對治療反應不足
     - stage: III
       label: 中度 AKI
-      creatinine: "2.6-5.0 mg/dL"
+      creatinine: 2.6-5.0 mg/dL
       description: 中度氮血症，需積極治療
     - stage: IV
       label: 重度 AKI
-      creatinine: "5.1-10.0 mg/dL"
+      creatinine: 5.1-10.0 mg/dL
       description: 重度氮血症，可能需要腎臟替代治療
     - stage: V
       label: 極重度 AKI
-      creatinine: ">10.0 mg/dL"
+      creatinine: '>10.0 mg/dL'
       description: 極重度氮血症，預後極差，建議腎臟替代治療
-
 treatment:
   principles:
     - 去除病因 (停止腎毒素、解除阻塞)
@@ -115,16 +112,16 @@ treatment:
     - 監測尿量以評估治療反應
   medications:
     - name: IV 晶體液 (LRS 或 0.9% NaCl)
-      dose: "矯正脫水 + 維持量 + 持續損失"
+      dose: 矯正脫水 + 維持量 + 持續損失
       notes: 目標恢復正常水合狀態後再調整
     - name: Mannitol
-      dose: "0.5-1 g/kg IV over 20 min"
+      dose: 0.5-1 g/kg IV over 20 min
       notes: 利尿劑，限於容量恢復後仍寡尿的情況
     - name: Furosemide
-      dose: "2-6 mg/kg IV bolus 或 CRI 0.5-1 mg/kg/h"
+      dose: 2-6 mg/kg IV bolus 或 CRI 0.5-1 mg/kg/h
       notes: 寡尿/無尿期嘗試，若無反應考慮血液透析
     - name: 4-methylpyrazole (fomepizole)
-      dose: "犬初始 20 mg/kg IV；貓 125 mg/kg IV"
+      dose: 犬初始 20 mg/kg IV；貓 125 mg/kg IV
       notes: 乙二醇中毒解毒劑，需在攝入後 8-12 小時內使用
   general:
     - 高血鉀緊急處理 (calcium gluconate、insulin+glucose、sodium bicarbonate)
@@ -133,50 +130,129 @@ treatment:
     - 營養支持 (經鼻胃管或食道管)
     - 血液透析或腹膜透析 (藥物治療無效時)
     - 鉤端螺旋體：doxycycline 5 mg/kg PO BID × 2 週
-
-emergencyNotes: 無尿性 AKI 為急診。高血鉀 (K+ >7 mEq/L) 需立即處理 (10% calcium gluconate 0.5-1 mL/kg IV slow)。乙二醇中毒需在攝入後數小時內開始解毒治療。百合中毒需立即積極輸液 (48-72 hr)。
-
+emergencyNotes: >-
+  無尿性 AKI 為急診。高血鉀 (K+ >7 mEq/L) 需立即處理 (10% calcium gluconate 0.5-1 mL/kg IV slow)。乙二醇中毒需在攝入後數小時內開始解毒治療。百合中毒需立即積極輸液
+  (48-72 hr)。
 prognosis: 取決於病因與嚴重程度。腎前性 AKI 經適當治療預後良好。腎性 AKI 存活率約 40-60%。百合中毒若早期治療存活率可達 90%。乙二醇中毒延遲治療預後極差。部分存活動物可能進展為 CKD。
-
 ontologyMappings:
   - source: MONDO
-    code: "MONDO:0002492"
+    code: MONDO:0002492
     label: acute kidney failure
     confidence: exact
-
 guidelineRefs:
   - sourceOrg: IRIS
     title: IRIS AKI Grading and Treatment Recommendations
     url: https://www.iris-kidney.com/iris-staging-system
     type: guideline
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Continuous Renal Replacement Therapy: Application of Kidney Disease Improving Global Outcomes Guidelines for Treatment Prescription in Dogs With Acute Kidney Injury and Outcome Prediction."
+    title: >-
+      Continuous Renal Replacement Therapy: Application of Kidney Disease Improving Global Outcomes Guidelines for
+      Treatment Prescription in Dogs With Acute Kidney Injury and Outcome Prediction.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12231239/
     type: guideline
-    pmid: "40613773"
+    pmid: '40613773'
   - sourceOrg: Journal of veterinary internal medicine
     title: ECEIM consensus statement on equine kidney disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11256176/
     type: consensus
-    pmid: "38801172"
+    pmid: '38801172'
     relevance: primary
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Biomarkers of Kidney Disease in Horses: A Review of the Current Literature."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Biomarkers of Kidney Disease in Horses: A Review of the Current Literature.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9559299/
     type: review
-    pmid: "36230418"
+    pmid: '36230418'
     relevance: primary
   - sourceOrg: Viruses
-    title: "Feline Morbillivirus: Clinical Relevance of a Widespread Endemic Viral Infection of Cats."
+    title: 'Feline Morbillivirus: Clinical Relevance of a Widespread Endemic Viral Infection of Cats.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10611265/
     type: review
-    pmid: "37896864"
+    pmid: '37896864'
     relevance: primary
 pubmedQueries:
   - query: '"acute kidney injury" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "guidelines")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "URN"
-  sectionTitle: "Acute Kidney Injury"
+  chapter: URN
+  sectionTitle: Acute Kidney Injury
   pdfPage: 1557
+diagnosticAlgorithm:
+  title: 急性腎損傷 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估尿量、嘔吐及脫水程度
+      findings:
+        - 突發厭食嘔吐
+        - 少尿或無尿
+        - 口腔潰瘍與氨味
+        - 脫水
+    - step: 2
+      action: 血液生化與電解質
+      details: 腎功能及電解質評估
+      findings:
+        - BUN與肌酐急性升高
+        - SDMA升高
+        - 高血鉀
+        - 代謝性酸中毒
+    - step: 3
+      action: 尿液分析
+      details: 尿液性狀與沉渣
+      findings:
+        - 尿比重低（等張尿）
+        - 尿中管型
+        - 蛋白尿
+        - 葡萄糖尿（腎小管損傷）
+    - step: 4
+      action: 影像與病因確認
+      details: 腎臟超音波與毒物/感染篩查
+      findings:
+        - 腎臟腫大高回音
+        - 排除腎後性阻塞
+        - 毒物暴露史（乙二醇、百合、NSAIDs）
+        - 鉤端螺旋體篩檢
+clinicalPearls:
+  - 尿比重<1.030（犬）或<1.035（貓）伴隨氮質血症提示腎性問題
+  - 腎臟大小正常或腫大提示AKI；萎縮提示CKD
+  - 貓百合中毒24-72小時後出現腎衰竭
+  - 乙二醇中毒治療黃金時間：犬<8-12小時，貓<3小時
+  - 尿量目標：>1-2 mL/kg/h
+monitoringItems:
+  - 尿量（導尿管+收集）
+  - 體重（q8-12h）
+  - BUN/Creatinine（q12-24h）
+  - 電解質（q8-12h）
+  - 血壓
+  - CVP（若有）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: oliguria-anuria
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+associatedLabFindings:
+  - labId: azotaemia
+    frequency: common
+  - labId: hyperkalaemia
+    frequency: common
+  - labId: creatinine-elevated
+    frequency: common
+  - labId: sdma-elevated
+    frequency: common
+  - labId: calcium-low
+    frequency: common
+ddxSource: book

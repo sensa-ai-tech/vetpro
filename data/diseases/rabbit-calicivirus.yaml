@@ -3,16 +3,15 @@ nameEn: Rabbit Calicivirus
 nameZh: 兔杯狀病毒感染
 bodySystem: infectious
 description: 兔杯狀病毒為引起兔病毒性出血症（RHDV/RHD）的病原體。RHDV2 為近年出現的新型變異株，可感染更廣泛年齡層的兔及部分野兔物種，疫苗接種為唯一有效預防手段。
-
 aliases:
-  - { alias: "兔杯狀病毒感染", language: zh }
-  - { alias: "Rabbit Calicivirus", language: en }
-
+  - alias: 兔杯狀病毒感染
+    language: zh
+  - alias: Rabbit Calicivirus
+    language: en
 species:
   - speciesCommon: rabbit
     prevalence: uncommon
     notes: 兔可受此疾病影響。
-
 etiology:
   categories:
     - name: 病毒性
@@ -20,7 +19,6 @@ etiology:
         - RHDV（經典型，Lagovirus europaeus GI.1）
         - RHDV2（新型，GI.2，可感染幼兔）
         - 糞口傳播、直接接觸、媒介昆蟲
-
 clinicalSigns:
   early:
     - 突然厭食
@@ -31,14 +29,12 @@ clinicalSigns:
     - 黃疸
     - 癲癇
     - 猝死
-
 diagnosis:
   primaryTests:
     - name: RT-PCR
       notes: 肝臟組織 PCR 為確診金標準。
     - name: 屍檢
       notes: 肝臟壞死為特徵性病變。
-
 treatment:
   principles:
     - 預防接種為唯一有效策略
@@ -48,41 +44,79 @@ treatment:
     - 疫苗接種預防（首選 RHDV1+2 雙價疫苗）
     - 感染兔：支持性治療（輸液、保暖）
     - 環境消毒（10% 漂白水）
-
 prognosis: 急性感染死亡率極高（>80%）。存活者可能發展慢性肝病。疫苗接種是預防的唯一可靠方法。
-
-
 guidelineRefs:
   - sourceOrg: International journal of molecular sciences
-    title: Characterisation of Lagovirus europaeus GI-RHDVs (Rabbit Haemorrhagic Disease Viruses) in Terms of Their Pathogenicity and Immunogenicity.
+    title: >-
+      Characterisation of Lagovirus europaeus GI-RHDVs (Rabbit Haemorrhagic Disease Viruses) in Terms of Their
+      Pathogenicity and Immunogenicity.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11120834/
     type: review
-    pmid: "38791380"
+    pmid: '38791380'
     relevance: primary
   - sourceOrg: Viruses
     title: First Detection of Benign Rabbit Caliciviruses in Chile.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10974056/
     type: research
-    pmid: "38543804"
+    pmid: '38543804'
     relevance: supporting
   - sourceOrg: Scientific reports
     title: Two decades of occurrence of non-pathogenic rabbit lagoviruses in Italy and their genomic characterization.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11589700/
     type: research
-    pmid: "39587141"
+    pmid: '39587141'
     relevance: supporting
   - sourceOrg: Virus research
-    title: "Recombination between non-structural and structural genes as a mechanism of selection in lagoviruses: The evolutionary dead-end of an RHDV2 isolated from European hare."
+    title: >-
+      Recombination between non-structural and structural genes as a mechanism of selection in lagoviruses: The
+      evolutionary dead-end of an RHDV2 isolated from European hare.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10654597/
     type: research
-    pmid: "38347757"
+    pmid: '38347757'
     relevance: supporting
   - sourceOrg: Viruses
     title: Genetic Characteristics and Phylogeographic Dynamics of Lagoviruses, 1988-2021.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10143477/
     type: research
-    pmid: "37112796"
+    pmid: '37112796'
     relevance: supporting
 pubmedQueries:
   - query: '"Rabbit Calicivirus" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔杯狀病毒感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - weakness 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: RT-PCR
+          notes: 肝臟組織 PCR 為確診金標準。
+        - name: 屍檢
+          notes: 肝臟壞死為特徵性病變。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 預防接種為唯一有效策略
+        - 無特效抗病毒治療
+        - 隔離與消毒
+ddxSource: auto-generated

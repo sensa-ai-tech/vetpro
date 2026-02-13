@@ -3,12 +3,13 @@ nameEn: Hemorrhagic Shock
 nameZh: 出血性休克
 bodySystem: emergency
 description: 出血性休克為急性大量失血導致組織灌注不足的危急狀態。犬貓失血超過血液容量 30-40% 即可致命。常見原因包括外傷、脾臟腫瘤破裂、凝血障礙與手術併發症。快速辨識與積極液體復甦為存活關鍵。
-
 aliases:
-  - { alias: 失血性休克, language: zh }
-  - { alias: Hypovolemic Shock, language: en }
-  - { alias: Hemorrhagic Hypovolemia, language: en }
-
+  - alias: 失血性休克
+    language: zh
+  - alias: Hypovolemic Shock
+    language: en
+  - alias: Hemorrhagic Hypovolemia
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓血液容量約 60-70 mL/kg。貓休克表現與犬不同（心搏過緩而非心搏過速）。輸液策略需較犬保守。
-
 etiology:
   categories:
     - name: 外傷性
@@ -30,7 +30,6 @@ etiology:
         - 凝血障礙（抗凝血劑中毒、DIC）
         - 消化道出血
         - 手術後出血
-
 clinicalSigns:
   early:
     - 心搏過速（犬；貓可能心搏過緩）
@@ -44,7 +43,6 @@ clinicalSigns:
     - 乳酸升高
     - 無尿
     - 心臟停止
-
 diagnosis:
   primaryTests:
     - name: 臨床評估
@@ -57,7 +55,6 @@ diagnosis:
     - AFAST/TFAST 超音波
     - 血氣分析
     - 凝血功能
-
 treatment:
   principles:
     - 快速血管內容量恢復
@@ -74,36 +71,101 @@ treatment:
     - 腹帶包紮（腹腔出血暫時壓迫）
     - Tranexamic acid 10-15 mg/kg IV（抗纖溶）
     - 保溫
-
 prognosis: 出血性休克預後取決於出血量、速度與控制能力。外傷性出血可控制者預後佳。脾臟 hemangiosarcoma 破裂即使穩定後長期預後仍差（腫瘤因素）。嚴重休克（乳酸 >6 mmol/L）致死率高。
-
-
 guidelineRefs:
   - sourceOrg: Acta pharmaceutica Sinica. B
     title: Pulmonary delivery of siRNA against acute lung injury/acute respiratory distress syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8359643/
     type: review
-    pmid: "34401226"
+    pmid: '34401226'
   - sourceOrg: Frontiers in veterinary science
     title: Fluids of the Future.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7859481/
     type: review
-    pmid: "33553287"
+    pmid: '33553287'
   - sourceOrg: Medicina (Kaunas, Lithuania)
-    title: Large Animal Models for Simulating Physiology of Transfusion of Red Cell Concentrates-A Scoping Review of The Literature.
+    title: >-
+      Large Animal Models for Simulating Physiology of Transfusion of Red Cell Concentrates-A Scoping Review of The
+      Literature.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9787038/
     type: review
-    pmid: "36556937"
+    pmid: '36556937'
   - sourceOrg: Frontiers in veterinary science
-    title: "Lessons Learned From the Battlefield and Applicability to Veterinary Medicine-Part 1: Hemorrhage Control."
+    title: 'Lessons Learned From the Battlefield and Applicability to Veterinary Medicine-Part 1: Hemorrhage Control.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7841008/
     type: review
-    pmid: "33521075"
+    pmid: '33521075'
   - sourceOrg: Frontiers in veterinary science
-    title: "Lessons Learned From the Battlefield and Applicability to Veterinary Medicine - Part 2: Transfusion Advances."
+    title: 'Lessons Learned From the Battlefield and Applicability to Veterinary Medicine - Part 2: Transfusion Advances.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8138582/
     type: review
-    pmid: "34026881"
+    pmid: '34026881'
 pubmedQueries:
   - query: '"hemorrhagic shock" AND (veterinary OR canine OR feline) AND ("treatment" OR "resuscitation" OR "transfusion")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 出血性休克 診斷與處置流程
+  steps:
+    - step: 1
+      action: 快速休克評估
+      details: ABCD approach + 休克指數計算
+      findings:
+        - 心搏過速+脈搏微弱
+        - 黏膜蒼白+CRT延長
+        - 低血壓（MAP<65 mmHg）
+        - 意識改變
+    - step: 2
+      action: 出血來源定位
+      details: TFAST/AFAST超音波+PCV/TP/乳酸
+      findings:
+        - AFAST陽性（腹腔積液）
+        - PCV進行性下降
+        - 乳酸>4 mmol/L
+        - 外在出血來源
+    - step: 3
+      action: 容積復甦啟動
+      details: 分段式輸液復甦+輸血準備
+      findings:
+        - 晶體液bolus後評估反應
+        - PCV<20%→啟動輸血
+        - 凝血異常→FFP
+        - 維持MAP 60-65 mmHg
+    - step: 4
+      action: 決定性止血
+      details: 手術或介入處理出血來源
+      findings:
+        - 手術適應症評估
+        - 脾臟切除（腫瘤破裂）
+        - 創傷修復
+        - 持續監測48小時
+clinicalPearls:
+  - 犬總血量約80-90 mL/kg，貓約60-70 mL/kg
+  - PCV在急性出血後數小時才開始下降——初始PCV正常不能排除嚴重出血
+  - AFAST可在數分鐘內偵測腹腔積液，比X光更快速
+  - 低容積復甦策略（permissive hypotension）可減少稀釋性凝血障礙
+  - 貓的輸液復甦劑量約為犬的一半，過量易導致肺水腫
+monitoringItems:
+  - 血壓（連續或每15分鐘）
+  - PCV/TP（每1-2小時急性期）
+  - 乳酸（復甦指標）
+  - 尿量（灌流充足指標 >1-2 mL/kg/hr）
+  - 凝血功能
+  - 心電圖
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

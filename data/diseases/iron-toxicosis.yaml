@@ -3,11 +3,11 @@ nameEn: Iron Toxicosis
 nameZh: 鐵中毒
 bodySystem: toxicology
 description: 鐵中毒多因攝入含鐵補充劑、氧氣吸收劑（暖暖包內容物）或含 iron phosphate 蝸牛餌劑引起。過量鐵離子直接腐蝕消化道黏膜，吸收後引起肝臟壞死與心血管塌陷。犬為主要報告物種。
-
 aliases:
-  - { alias: 鐵劑中毒, language: zh }
-  - { alias: Iron Poisoning, language: en }
-
+  - alias: 鐵劑中毒
+    language: zh
+  - alias: Iron Poisoning
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓鐵中毒罕見，報告極少。
-
 etiology:
   categories:
     - name: 毒性機制
@@ -29,7 +28,6 @@ etiology:
         - 含鐵補充劑（ferrous sulfate、ferrous gluconate）
         - 暖暖包（鐵粉）
         - 含 iron phosphate 蝸牛餌劑（大量攝入）
-
 clinicalSigns:
   early:
     - 嘔吐（可能含血，攝入後 1-6 小時）
@@ -42,11 +40,10 @@ clinicalSigns:
     - 凝血障礙
     - 休克
     - 腸狹窄（存活者後遺症，2-6 週後）
-
 diagnosis:
   primaryTests:
     - name: 血清鐵濃度
-      notes: ">500 μg/dL 提示嚴重中毒。攝入後 4-6 小時測量最有意義"
+      notes: '>500 μg/dL 提示嚴重中毒。攝入後 4-6 小時測量最有意義'
     - name: 腹部 X-ray
       notes: 金屬性鐵製劑在 X-ray 上可見不透光影。評估殘留胃腸道內容物
   additional:
@@ -54,7 +51,6 @@ diagnosis:
     - 凝血功能
     - 血液氣體（代謝性酸中毒）
     - 全鐵結合力 (TIBC)
-
 treatment:
   principles:
     - 去汙染（活性炭無效於鐵）
@@ -64,22 +60,76 @@ treatment:
   general:
     - 催吐（早期）或全腸灌洗 (WBI) 以 PEG 溶液
     - 活性炭對鐵無效
-    - "Deferoxamine 15 mg/kg/hr IV CRI（特效鐵螯合劑）"
+    - Deferoxamine 15 mg/kg/hr IV CRI（特效鐵螯合劑）
     - IV 輸液支持
     - 消化道保護（sucralfate、omeprazole）
     - 肝保護（NAC、SAMe）
     - 矯正酸鹼失衡
     - 監測血清鐵至正常化
-
 prognosis: 鐵中毒預後視劑量與治療時效而定。輕度（<20 mg/kg 元素鐵）通常自限性。嚴重肝壞死與代謝性酸中毒者預後差。Deferoxamine 早期使用可改善預後。腸狹窄為長期併發症。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Iron EDTA ingestion and toxicosis in 61 dogs: a multicenter retrospective study of Australian hospital records."
+    title: 'Iron EDTA ingestion and toxicosis in 61 dogs: a multicenter retrospective study of Australian hospital records.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12520899/
     type: research
-    pmid: "41104280"
+    pmid: '41104280'
 pubmedQueries:
   - query: '"iron toxicosis" AND (veterinary OR canine) AND ("treatment" OR "deferoxamine")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 鐵中毒 診斷流程
+  steps:
+    - step: 1
+      action: 暴露史確認
+      details: 確認鐵劑或含鐵產品攝入量
+      findings:
+        - 攝入含鐵補充劑或維生素
+        - 攝入量評估（>20mg/kg元素鐵為毒性劑量）
+        - 手溫器或氧氣吸收劑攝入
+        - 症狀分期評估
+    - step: 2
+      action: 臨床分期評估
+      details: 根據中毒分期評估症狀
+      findings:
+        - 第一期（0-6小時）：嘔吐、腹瀉、腹痛
+        - 第二期（6-24小時）：表面穩定期
+        - 第三期（12-96小時）：休克、肝衰竭
+        - 第四期：肝衰竭和代謝性酸中毒
+    - step: 3
+      action: 實驗室檢查
+      details: 進行血清鐵和代謝功能評估
+      findings:
+        - 血清鐵濃度升高（>300 μg/dL提示中毒）
+        - 代謝性酸中毒
+        - 肝功能指標升高
+        - 凝血功能異常
+    - step: 4
+      action: 影像與監測
+      details: 進行腹部X光和持續監測
+      findings:
+        - 腹部X光可見含鐵異物（不透光）
+        - 連續肝腎功能監測
+        - 凝血功能連續追蹤
+        - 酸鹼平衡監測
+clinicalPearls:
+  - 活性炭不能有效吸附鐵離子，鐵中毒時不應依賴活性炭除污染
+  - 注意鐵錠標示的「元素鐵含量」與「鐵鹽總量」不同 — 硫酸亞鐵含約 20% 元素鐵
+  - 去鐵胺使用後尿液會變成「vin rosé」（玫瑰酒色）粉紅色，這是正常的鐵-去鐵胺複合物排出
+  - 鐵中毒有「假性恢復期」，類似鵝膏毒素中毒的雙峰病程
+monitoringItems:
+  - 每 4-6 小時監測血清鐵濃度
+  - 每 12 小時監測肝酵素（ALT、AST）
+  - 血氣分析監測酸鹼平衡
+  - 連續腹部 X 光評估腸道鐵錠清除情況
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

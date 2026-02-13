@@ -2,23 +2,29 @@ slug: chemodectoma
 nameEn: Chemodectoma
 nameZh: 化學受體瘤
 bodySystem: cardiac
-description: 化學受體瘤為起源於主動脈體或頸動脈體化學受體細胞的腫瘤，又稱心基底部腫瘤（heart base tumor）。主動脈體化學受體瘤位於主動脈根部與肺動脈之間，可引起心包積液。短頭品種（Boxer、Boston Terrier、English Bulldog）好發，可能與慢性低氧相關。
-
+description: >-
+  化學受體瘤為起源於主動脈體或頸動脈體化學受體細胞的腫瘤，又稱心基底部腫瘤（heart base tumor）。主動脈體化學受體瘤位於主動脈根部與肺動脈之間，可引起心包積液。短頭品種（Boxer、Boston
+  Terrier、English Bulldog）好發，可能與慢性低氧相關。
 aliases:
-  - { alias: Heart Base Tumor, language: en }
-  - { alias: Aortic Body Tumor, language: en }
-  - { alias: 心基底部腫瘤, language: zh }
-  - { alias: 主動脈體瘤, language: zh }
-  - { alias: Paraganglioma, language: en }
-
+  - alias: Heart Base Tumor
+    language: en
+  - alias: Aortic Body Tumor
+    language: en
+  - alias: 心基底部腫瘤
+    language: zh
+  - alias: 主動脈體瘤
+    language: zh
+  - alias: Paraganglioma
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
-    notes: 犬隻第二常見的心臟腫瘤（次於 hemangiosarcoma）。短頭品種顯著好發（Boxer、Boston Terrier、English Bulldog、French Bulldog）。中老年犬（7-15 歲），公犬可能較好發。
+    notes: >-
+      犬隻第二常見的心臟腫瘤（次於 hemangiosarcoma）。短頭品種顯著好發（Boxer、Boston Terrier、English Bulldog、French Bulldog）。中老年犬（7-15
+      歲），公犬可能較好發。
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻極為罕見，僅有零星病例報告。
-
 etiology:
   categories:
     - name: 腫瘤特性
@@ -31,7 +37,6 @@ etiology:
         - 短頭品種（慢性低氧刺激化學受體增生）
         - 高海拔地區犬隻
         - 中老年犬
-
 clinicalSigns:
   early:
     - 心包積液（心音減弱）
@@ -43,14 +48,12 @@ clinicalSigns:
     - 呼吸困難（壓迫氣管或肺動脈）
     - 昏厥
     - 後腔靜脈症候群（腫瘤壓迫後腔靜脈）
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波（Echocardiography）
       notes: 可見心基底部（主動脈根部與肺動脈之間）的實質性腫塊，通常回聲均勻。常伴隨心包積液。需與 hemangiosarcoma 鑑別（位置不同：HSA 多在右心耳）。
     - name: 胸腔 CT 或 MRI
       notes: 評估腫塊範圍、大血管壓迫程度與手術可行性。優於超音波評估腫瘤與周圍結構的關係。
-
 treatment:
   principles:
     - 生長緩慢，治療以控制心包積液為主
@@ -61,17 +64,69 @@ treatment:
     - 心包切除術（pericardiectomy，首選長期控制心包積液）
     - 手術切除腫瘤（若可行，但因位置常不完全切除）
     - 放射線治療（可縮小腫瘤體積）
-    - "Toceranib（Palladia）有初步療效報告"
-
+    - Toceranib（Palladia）有初步療效報告
 prognosis: 與心臟 hemangiosarcoma 相比，chemodectoma 預後明顯較好。心包切除術後中位存活時間可達 1-3 年。腫瘤生長緩慢且轉移率低。單純心包切除術（不切除腫瘤）即可顯著改善臨床症狀與存活時間。
-
-
 guidelineRefs:
   - sourceOrg: Life (Basel, Switzerland)
     title: Review on the Clinical, Imaging, and Therapeutic Aspects of Cardiac Masses in Dog.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12298529/
     type: review
-    pmid: "40724594"
+    pmid: '40724594'
 pubmedQueries:
   - query: '"chemodectoma" OR "heart base tumor" AND (veterinary OR canine) AND ("treatment" OR "prognosis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 化學感受器瘤 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估心臟基底部腫瘤相關症狀，好發於短頭犬品種
+      findings:
+        - 運動不耐或暈厥
+        - 呼吸困難
+        - 心包積液徵象
+        - 短頭犬品種（拳師犬、波士頓㹴等）
+    - step: 2
+      action: 心臟超音波
+      details: 進行心臟超音波評估心臟基底部腫塊
+      findings:
+        - 心臟基底部腫塊（主動脈體或頸動脈體）
+        - 心包積液
+        - 腫塊與大血管的關係
+        - 心臟功能評估
+    - step: 3
+      action: 進階影像學
+      details: 進行CT/MRI精確評估腫瘤範圍
+      findings:
+        - 腫瘤大小和浸潤範圍
+        - 與周圍結構的關係
+        - 區域淋巴結評估
+        - 遠端轉移篩檢
+    - step: 4
+      action: 組織病理學確診
+      details: 手術或活檢取得組織樣本確認診斷
+      findings:
+        - 多角形腫瘤細胞呈巢狀排列
+        - 豐富的血管基質
+        - 免疫組織化學標記陽性
+        - 與甲狀腺腫瘤和淋巴瘤鑑別
+clinicalPearls:
+  - 短頭犬種出現心包積液，化學感受器瘤應列為首要鑑別診斷
+  - 心包積液細胞學通常無法區分化學感受器瘤和血管肉瘤
+  - 心包切除術雖為姑息性，但可提供長期的良好生活品質
+  - 與血管肉瘤不同，化學感受器瘤生長緩慢，不應因診斷而立即放棄治療
+monitoringItems:
+  - 心臟超音波每3個月追蹤腫瘤大小
+  - 評估心衰竭徵象
+  - 胸腔X光監測肺轉移
+  - 生活品質評估
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: hepatomegaly
+    frequency: common
+ddxSource: book

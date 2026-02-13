@@ -3,18 +3,18 @@ nameEn: Great Dane Dilated Cardiomyopathy
 nameZh: 大丹犬擴張型心肌病
 bodySystem: neurology
 description: 大丹犬品種好發的遺傳性心肌病變,心肌收縮力減弱導致心臟擴張與功能不全。好發於 4-10 歲成犬,可能導致猝死或充血性心衰竭。
-
 aliases:
-  - { alias: 大丹犬 DCM, language: zh }
-  - { alias: Great Dane DCM, language: en }
-  - { alias: Canine Dilated Cardiomyopathy Great Dane, language: en }
-
+  - alias: 大丹犬 DCM
+    language: zh
+  - alias: Great Dane DCM
+    language: en
+  - alias: Canine Dilated Cardiomyopathy Great Dane
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 大丹犬為高風險品種,雄性發病率較雌性高,通常 4-10 歲發病
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -25,7 +25,6 @@ etiology:
       examples:
         - 牛磺酸或 L-肉鹼缺乏
         - 低蛋白飼料
-
 clinicalSigns:
   early:
     - 運動不耐,輕微活動後易喘
@@ -35,23 +34,21 @@ clinicalSigns:
     - 呼吸困難,腹水
     - 心律不整,昏厥
     - 後肢無力,四肢水腫
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波
-      notes: "左心室擴張,收縮分率 (FS) <25%,射出分率 (EF) <40%"
+      notes: 左心室擴張,收縮分率 (FS) <25%,射出分率 (EF) <40%
     - name: 胸部 X 光
-      notes: "心臟擴大(椎體心臟比值 VHS >10.5),肺靜脈充血"
+      notes: 心臟擴大(椎體心臟比值 VHS >10.5),肺靜脈充血
     - name: 心電圖
-      notes: "心室早期收縮 (VPCs),心房顫動,傳導阻滯"
+      notes: 心室早期收縮 (VPCs),心房顫動,傳導阻滯
     - name: NT-proBNP
-      notes: "顯著升高 (>1500 pmol/L 提示心衰竭)"
+      notes: 顯著升高 (>1500 pmol/L 提示心衰竭)
   differentialDiagnoses:
     - 犬二尖瓣退化性疾病
     - 心絲蟲病
     - 心肌炎
     - 甲狀腺功能低下症
-
 treatment:
   medical:
     - Pimobendan 0.25-0.3 mg/kg PO q12h(改善收縮力與生活品質)
@@ -61,12 +58,52 @@ treatment:
     - 抗心律不整藥物:Sotalol 1-2 mg/kg PO q12h 或 Mexiletine 5-8 mg/kg PO q8h(嚴重心室性心律不整時)
     - 牛磺酸補充 500-1000 mg PO q12h,L-肉鹼 50-100 mg/kg PO q8h(若確診缺乏)
     - 低鹽飲食,限制活動強度
-
 prognosis:
-  general: "預後保守至不良。確診後中位存活期 6-18 個月,取決於心衰竭嚴重程度與心律不整控制。嚴重心律不整或急性心衰竭患者可能猝死。早期診斷與積極治療可延長存活時間與改善生活品質。"
-
+  general: 預後保守至不良。確診後中位存活期 6-18 個月,取決於心衰竭嚴重程度與心律不整控制。嚴重心律不整或急性心衰竭患者可能猝死。早期診斷與積極治療可延長存活時間與改善生活品質。
 prevention:
   - 繁殖前進行心臟超音波篩檢,排除受影響個體
   - 定期年度心臟檢查(建議 3 歲起每年篩檢)
   - 提供均衡飲食,確保牛磺酸與 L-肉鹼充足
   - 避免劇烈運動,減少心臟負擔
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: syncope
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 大丹犬擴張型心肌病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波
+          notes: 左心室擴張,收縮分率 (FS) <25%,射出分率 (EF) <40%
+        - name: 胸部 X 光
+          notes: 心臟擴大(椎體心臟比值 VHS >10.5),肺靜脈充血
+        - name: 心電圖
+          notes: 心室早期收縮 (VPCs),心房顫動,傳導阻滯
+ddxSource: auto-generated

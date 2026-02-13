@@ -3,11 +3,11 @@ nameEn: Phthisis Bulbi
 nameZh: Phthisis Bulbi
 bodySystem: ophthalmology
 description: 眼科疾病,可能影響視力或眼部舒適度。需專業眼科檢查與治療。
-
 aliases:
-  - { alias: Phthisis Bulbi, language: zh }
-  - { alias: Phthisis Bulbi, language: en }
-
+  - alias: Phthisis Bulbi
+    language: zh
+  - alias: Phthisis Bulbi
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 先天性異常
       examples:
         - 外傷
         - 感染
-
 clinicalSigns:
   early:
     - 眼部不適
@@ -32,49 +30,85 @@ clinicalSigns:
   progressive:
     - 視力喪失
     - 眼內壓異常
-
 diagnosis:
   primaryTests:
     - name: 眼科檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: 眼壓測量
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 眼藥水(抗生素或消炎)
     - 止痛藥
   surgical:
     - name: 根據病況可能需手術治療(角膜移植、青光眼閥膜植入、眼球摘除等)
-      notes: "依病況評估"
-
+      notes: 依病況評估
 prognosis:
-  general: "預後取決於疾病類型、嚴重度與治療時機。早期治療可改善預後並保存視力。"
-
+  general: 預後取決於疾病類型、嚴重度與治療時機。早期治療可改善預後並保存視力。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: Veterinary ophthalmology
-    title: "Intraocular osseous metaplasia in an older red-tailed hawk (Buteo jamaicensis) 24&#x2009;years following traumatic injury to the globe."
+    title: >-
+      Intraocular osseous metaplasia in an older red-tailed hawk (Buteo jamaicensis) 24&#x2009;years following traumatic
+      injury to the globe.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12274122/
     type: case-report
-    pmid: "39229860"
+    pmid: '39229860'
     relevance: supporting
   - sourceOrg: Romanian journal of ophthalmology
     title: A new glaucoma drainage implant with the use of Polytetrafluoroethylene (PTFE). A pilot study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8207869/
     type: research
-    pmid: "34179580"
+    pmid: '34179580'
     relevance: supporting
   - sourceOrg: Ophthalmic research
-    title: Morphological Changes and Potential Mechanisms of Intraocular Pressure Reduction after Micropulse Transscleral Cyclophotocoagulation in Rabbits.
+    title: >-
+      Morphological Changes and Potential Mechanisms of Intraocular Pressure Reduction after Micropulse Transscleral
+      Cyclophotocoagulation in Rabbits.
     url: https://pubmed.ncbi.nlm.nih.gov/32739916/
     type: research
-    pmid: "32739916"
+    pmid: '32739916'
     relevance: supporting
+diagnosticAlgorithm:
+  title: 眼球萎縮 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估眼球縮小和功能喪失
+      findings:
+        - 眼球明顯縮小
+        - 眼球內陷
+        - 視力完全喪失
+        - 慢性眼病病史
+    - step: 2
+      action: 眼科檢查
+      details: 評估殘餘眼球結構
+      findings:
+        - 眼球硬度降低
+        - 角膜混濁或帶狀角膜病變
+        - 前房消失或淺化
+        - 晶體鈣化
+    - step: 3
+      action: 影像學與評估
+      details: 進行眼球超音波和評估是否需要摘除
+      findings:
+        - 眼球超音波顯示內部結構紊亂
+        - 排除眼內腫瘤
+        - 評估義眼植入可行性
+        - 對側眼評估
+clinicalPearls:
+  - 眼球萎縮是不可逆的終末狀態，治療重點在於舒適度而非視力恢復
+  - 萎縮的眼球內可能隱藏眼內腫瘤，超音波或摘除後病理檢查有助排除
+  - 許多飼主對眼球摘除術心理抗拒，需充分解釋動物適應能力良好
+  - 對側眼的保護和監測比治療萎縮眼更重要
+monitoringItems:
+  - 定期檢查萎縮眼是否有感染或不適
+  - 對側眼的定期眼科檢查
+  - 眼球摘除術後的傷口癒合追蹤
+  - 評估動物整體適應和生活品質
+ddxSource: book

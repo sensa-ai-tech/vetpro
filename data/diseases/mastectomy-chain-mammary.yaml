@@ -3,12 +3,13 @@ nameEn: Mastectomy Chain Mammary
 nameZh: 乳腺鏈切除術
 bodySystem: reproductive
 description: 切除單側或雙側完整乳腺鏈的手術,常用於多發性乳腺腫瘤或惡性腫瘤。手術範圍大,需仔細血管結紮及張力釋放技術。
-
 aliases:
-  - { alias: 全乳腺切除, language: zh }
-  - { alias: Radical mastectomy, language: en }
-  - { alias: 單側乳腺鏈摘除, language: zh }
-
+  - alias: 全乳腺切除
+    language: zh
+  - alias: Radical mastectomy
+    language: en
+  - alias: 單側乳腺鏈摘除
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓乳腺腫瘤80-90%為惡性,常需完整切除
-
 etiology:
   categories:
     - name: 適應症
@@ -30,7 +30,6 @@ etiology:
       examples:
         - 對側已有惡性腫瘤
         - 高風險品種預防性切除
-
 clinicalSigns:
   early:
     - 術前:多發性腫塊沿乳腺鏈分布
@@ -39,20 +38,18 @@ clinicalSigns:
   progressive:
     - 正常癒合:切口於10-14天癒合
     - 併發症:皮瓣壞死、血清腫、傷口裂開
-
 diagnosis:
   primaryTests:
     - name: 術前胸腔X光
-      notes: "評估肺部轉移(3方向攝影)"
+      notes: 評估肺部轉移(3方向攝影)
     - name: 腫瘤穿刺細胞學
-      notes: "初步判定良惡性"
+      notes: 初步判定良惡性
     - name: 術前血液檢查
-      notes: "評估手術風險及凝血功能"
+      notes: 評估手術風險及凝血功能
   differentialDiagnoses:
     - 區域性乳腺切除
     - 單一腫塊切除
     - 雙側分期手術
-
 treatment:
   medical:
     - 手術:單側乳腺鏈(含淋巴結)完整切除,注意腹壁血管結紮
@@ -60,12 +57,32 @@ treatment:
     - 術後止痛:Fentanyl patch 2-4 μg/kg q72h或CRI,Gabapentin 10 mg/kg PO q8-12h
     - 抗生素:Cefazolin 22 mg/kg IV術中,Cephalexin 22-30 mg/kg PO q12h術後7天
     - 化療:惡性腫瘤術後考慮Doxorubicin(犬30 mg/m² IV q3週×5次)
-
 prognosis:
-  general: "犬良性腫瘤預後極佳,惡性腫瘤視淋巴結轉移而定(N0中位存活>2年)。貓乳腺癌預後較差(中位存活12-18月),早期切除關鍵。"
-
+  general: 犬良性腫瘤預後極佳,惡性腫瘤視淋巴結轉移而定(N0中位存活>2年)。貓乳腺癌預後較差(中位存活12-18月),早期切除關鍵。
 prevention:
   - 首次發情前絕育可降低風險至<1%
   - 定期乳腺觸診(每月自我檢查)
   - 早期小腫塊時即切除
   - 避免長期外源性雌激素暴露
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 乳腺鏈切除術 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 術前胸腔X光
+          notes: 評估肺部轉移(3方向攝影)
+        - name: 腫瘤穿刺細胞學
+          notes: 初步判定良惡性
+        - name: 術前血液檢查
+          notes: 評估手術風險及凝血功能
+ddxSource: auto-generated

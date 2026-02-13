@@ -3,12 +3,13 @@ nameEn: Orphan Puppy Rearing
 nameZh: 孤兒幼犬人工養育
 bodySystem: other
 description: 因母體死亡、拒絕哺乳或乳汁不足等原因，需由人工方式餵養及照護的幼犬養育指南。包含餵食、保溫、排泄刺激及社會化等全方位照護。
-
 aliases:
-  - { alias: 人工哺育幼犬, language: zh }
-  - { alias: Hand Raising Puppies, language: en }
-  - { alias: Orphan Puppy Care, language: en }
-
+  - alias: 人工哺育幼犬
+    language: zh
+  - alias: Hand Raising Puppies
+    language: en
+  - alias: Orphan Puppy Care
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 孤兒幼貓養育原則相同
-
 etiology:
   categories:
     - name: 需要人工養育的情況
@@ -29,7 +29,6 @@ etiology:
         - 幼犬數量過多
         - 弱勢幼犬無法競爭
         - 母體乳腺炎
-
 clinicalSigns:
   early:
     - 正常：每日體重增加5-10%
@@ -39,21 +38,19 @@ clinicalSigns:
   progressive:
     - 健康成長：2週後睜眼、3週後開始活動
     - 4週後開始斷奶、6-8週完全斷奶
-
 diagnosis:
   primaryTests:
     - name: 每日體重監測
-      notes: "應穩定增加，出生體重約7-10天翻倍"
+      notes: 應穩定增加，出生體重約7-10天翻倍
     - name: 水合狀態評估
-      notes: "皮膚彈性、黏膜濕潤度"
+      notes: 皮膚彈性、黏膜濕潤度
     - name: 排泄功能
-      notes: "需刺激才能排尿排便(3週前)"
+      notes: 需刺激才能排尿排便(3週前)
   differentialDiagnoses:
     - 餵食量不足
     - 代乳配方不當
     - 吸入性肺炎
     - 先天性疾病
-
 treatment:
   medical:
     - 餵食頻率：0-2週每2-4小時，2-4週每4-6小時
@@ -65,13 +62,33 @@ treatment:
     - 環境保溫：第1週30-32°C，第2週26-28°C，第3週24-26°C
     - 4週後開始引入固體食物(泡軟飼料)
     - 社會化：與同齡幼犬互動、人類接觸
-
 prognosis:
-  general: "需投入大量時間精力，若照護得當存活率可達80-90%；缺乏經驗或照護不當死亡率高"
-
+  general: 需投入大量時間精力，若照護得當存活率可達80-90%；缺乏經驗或照護不當死亡率高
 prevention:
   - 準備代乳粉、奶瓶、保溫設備
   - 尋找代理母犬(最佳選擇)
   - 學習正確餵食及照護技巧
   - 定期獸醫檢查
   - 6-8週後開始預防注射
+associatedSymptoms:
+  - symptomId: weight-gain
+    frequency: common
+diagnosticAlgorithm:
+  title: 孤兒幼犬人工養育 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-gain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 每日體重監測
+          notes: 應穩定增加，出生體重約7-10天翻倍
+        - name: 水合狀態評估
+          notes: 皮膚彈性、黏膜濕潤度
+        - name: 排泄功能
+          notes: 需刺激才能排尿排便(3週前)
+ddxSource: auto-generated

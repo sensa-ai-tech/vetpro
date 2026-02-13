@@ -3,12 +3,13 @@ nameEn: Pediatric Spay Neuter Timing
 nameZh: 幼年期絕育手術時機
 bodySystem: other
 description: 犬貓幼年期絕育手術的最佳時機評估，需平衡疾病預防效益與生長發育影響。不同品種及體型的建議時機有所差異。
-
 aliases:
-  - { alias: 早期絕育, language: zh }
-  - { alias: Early Spay Neuter, language: en }
-  - { alias: Pediatric Gonadectomy, language: en }
-
+  - alias: 早期絕育
+    language: zh
+  - alias: Early Spay Neuter
+    language: en
+  - alias: Pediatric Gonadectomy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可於5-6月齡安全進行
-
 etiology:
   categories:
     - name: 早期絕育優點
@@ -39,7 +39,6 @@ etiology:
         - 大型、巨型犬種
         - 運動工作犬
         - 骨科疾病家族史
-
 clinicalSigns:
   early:
     - 手術後正常：輕度疼痛、食慾稍減24-48小時
@@ -47,20 +46,18 @@ clinicalSigns:
   progressive:
     - 併發症(罕見)：傷口感染、出血、疝氣
     - 長期影響：體重增加傾向、毛質變化
-
 diagnosis:
   primaryTests:
     - name: 術前健康檢查
-      notes: "理學檢查、體重評估"
+      notes: 理學檢查、體重評估
     - name: 麻醉前血檢
-      notes: "肝腎功能、凝血功能(視年齡及品種)"
+      notes: 肝腎功能、凝血功能(視年齡及品種)
     - name: 生長板評估
-      notes: "大型犬可拍X光確認生長板狀態"
+      notes: 大型犬可拍X光確認生長板狀態
   differentialDiagnoses:
     - 正常術後反應
     - 術後併發症
     - 麻醉相關問題
-
 treatment:
   medical:
     - 小型犬(<15kg)建議時機
@@ -80,13 +77,33 @@ treatment:
     - 頭套或手術衣防舔咬
     - 限制活動10-14天
     - 拆線(若有)：10-14天後
-
 prognosis:
-  general: "手術安全性高，併發症罕見；適當時機絕育對健康整體有益"
-
+  general: 手術安全性高，併發症罕見；適當時機絕育對健康整體有益
 prevention:
   - 術前禁食8-12小時
   - 確認健康狀態良好
   - 選擇經驗豐富獸醫師
   - 術後密切監測傷口
   - 預防術後肥胖(調整飲食)
+associatedSymptoms:
+  - symptomId: weight-gain
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 幼年期絕育手術時機 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-gain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 術前健康檢查
+          notes: 理學檢查、體重評估
+        - name: 麻醉前血檢
+          notes: 肝腎功能、凝血功能(視年齡及品種)
+        - name: 生長板評估
+          notes: 大型犬可拍X光確認生長板狀態
+ddxSource: auto-generated

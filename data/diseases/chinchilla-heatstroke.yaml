@@ -3,21 +3,24 @@ nameEn: Chinchilla Heatstroke
 nameZh: 絨鼠熱衰竭
 bodySystem: emergency
 description: 絨鼠因環境溫度過高導致的致命性體溫過高急症，絨鼠原生於安地斯山高海拔涼爽環境，對熱極度敏感，環境溫度 >26°C 即可引發熱緊迫，>30°C 可致死。
-
 aliases:
-  - { alias: 龍貓中暑, language: zh }
-  - { alias: 絨鼠熱緊迫, language: zh }
-  - { alias: 絨鼠高體溫症, language: zh }
-  - { alias: Chinchilla heat stress, language: en }
-  - { alias: Chinchilla hyperthermia, language: en }
-  - { alias: Chinchilla heat prostration, language: en }
-
+  - alias: 龍貓中暑
+    language: zh
+  - alias: 絨鼠熱緊迫
+    language: zh
+  - alias: 絨鼠高體溫症
+    language: zh
+  - alias: Chinchilla heat stress
+    language: en
+  - alias: Chinchilla hyperthermia
+    language: en
+  - alias: Chinchilla heat prostration
+    language: en
 species:
   - speciesCommon: chinchilla
     speciesScientific: Chinchilla lanigera
     prevalence: common
     notes: 絨鼠原產於南美安地斯山脈高海拔 (3000-5000m) 乾冷環境。被毛極密 (每個毛囊 60-80 根毛)，散熱能力極差。無汗腺。耳朵為主要散熱部位。環境溫度 >26°C 即危險，>30°C 可致死。台灣夏季為高危期。
-
 etiology:
   categories:
     - name: 環境因素
@@ -34,7 +37,6 @@ etiology:
         - 懷孕個體 (代謝需求高)
         - 籠具通風不佳
         - 運動後 (體熱產生增加)
-
 clinicalSigns:
   early:
     - 耳朵發紅充血 (散熱反應)
@@ -55,22 +57,20 @@ clinicalSigns:
     - DIC (瀰漫性血管內凝血)
     - 多器官衰竭
     - 死亡 (可在數小時內)
-
 diagnosis:
   primaryTests:
     - name: 肛溫測量
-      notes: "正常 36-38°C。>39.5°C 確認高體溫。>41°C 為致命性高體溫。配合環境溫度評估"
+      notes: 正常 36-38°C。>39.5°C 確認高體溫。>41°C 為致命性高體溫。配合環境溫度評估
     - name: 臨床表徵與環境史
-      notes: "高溫環境暴露 + 典型臨床徵象即可快速診斷。不應延遲治療等待檢查結果"
+      notes: 高溫環境暴露 + 典型臨床徵象即可快速診斷。不應延遲治療等待檢查結果
   imaging:
     - name: 不適用 (急性期)
-      notes: "穩定後視需要評估器官損傷"
+      notes: 穩定後視需要評估器官損傷
   additional:
     - CBC/生化 (穩定後：腎肝功能、電解質、肌肉酵素)
     - 凝血功能 (排除 DIC)
     - 尿液分析 (肌紅蛋白尿)
     - 血液氣體分析 (酸鹼平衡)
-
 treatment:
   principles:
     - 立即降溫 (緩慢漸進，避免過快)
@@ -80,16 +80,16 @@ treatment:
     - 預防永遠是最佳策略
   medications:
     - name: 皮下輸液 (Room temperature Lactated Ringer's)
-      dose: "絨鼠體重 3-4% SC"
+      dose: 絨鼠體重 3-4% SC
       notes: 室溫輸液 (不加溫) 輔助降溫同時補液。避免冰冷輸液 (過快降溫)
     - name: Dexamethasone
-      dose: "0.5-2 mg/kg IV/IM (單次)"
+      dose: 0.5-2 mg/kg IV/IM (單次)
       notes: 抗休克。腦水腫風險減低。爭議但嚴重病例仍常使用
     - name: Diazepam
-      dose: "0.5-1 mg/kg IM/IN (癲癇時)"
+      dose: 0.5-1 mg/kg IM/IN (癲癇時)
       notes: 抗痙攣。高體溫性癲癇時緊急使用
     - name: Meloxicam
-      dose: "0.3-0.5 mg/kg SC SID (穩定後)"
+      dose: 0.3-0.5 mg/kg SC SID (穩定後)
       notes: 穩定且水合良好後使用。不適感緩解
   general:
     - 立即移離高溫環境
@@ -103,26 +103,73 @@ treatment:
     - 環境預防：維持 16-22°C 恆溫、空調、除濕
     - 提供大理石板或冰涼墊 (非直接冰塊)
     - 避免陽光直射
-
-prognosis: 輕度熱緊迫 (體溫 <40°C) 及時降溫預後良好。中度 (40-41°C) 預後謹慎，取決於暴露時間與器官損傷程度。重度 (>41°C) 或已出現癲癇、DIC 預後極差。腎臟與肝臟損傷可能在恢復後 24-72 小時才顯現。預防 (恆溫環境) 為最重要的管理措施。
-
+prognosis: >-
+  輕度熱緊迫 (體溫 <40°C) 及時降溫預後良好。中度 (40-41°C) 預後謹慎，取決於暴露時間與器官損傷程度。重度 (>41°C) 或已出現癲癇、DIC 預後極差。腎臟與肝臟損傷可能在恢復後 24-72 小時才顯現。預防
+  (恆溫環境) 為最重要的管理措施。
 guidelineRefs:
   - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
-    title: "Emergency Care of Small Mammals"
+    title: Emergency Care of Small Mammals
     url: https://pubmed.ncbi.nlm.nih.gov/27912826/
     type: review
-    pmid: "27912826"
+    pmid: '27912826'
   - sourceOrg: Journal of Small Animal Practice
-    title: "Thermoregulation in chinchillas and heat-related disease"
+    title: Thermoregulation in chinchillas and heat-related disease
     url: https://pubmed.ncbi.nlm.nih.gov/23560761/
     type: review
-    pmid: "23560761"
-
+    pmid: '23560761'
 pubmedQueries:
-  - query: '"chinchilla" AND ("heatstroke" OR "heat stress" OR "hyperthermia" OR "thermoregulation") AND ("treatment" OR "prevention")'
+  - query: >-
+      "chinchilla" AND ("heatstroke" OR "heat stress" OR "hyperthermia" OR "thermoregulation") AND ("treatment" OR
+      "prevention")
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "MET"
-  sectionTitle: "MALIGNANT HYPERTHERMIA"
+  chapter: MET
+  sectionTitle: MALIGNANT HYPERTHERMIA
   pdfPage: 1068
+associatedSymptoms:
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 絨鼠熱衰竭 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - hyperthermia 相關症狀
+        - dyspnoea 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 肛溫測量
+          notes: 正常 36-38°C。>39.5°C 確認高體溫。>41°C 為致命性高體溫。配合環境溫度評估
+        - name: 臨床表徵與環境史
+          notes: 高溫環境暴露 + 典型臨床徵象即可快速診斷。不應延遲治療等待檢查結果
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC/生化 (穩定後：腎肝功能、電解質、肌肉酵素)
+        - 凝血功能 (排除 DIC)
+        - 尿液分析 (肌紅蛋白尿)
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 立即降溫 (緩慢漸進，避免過快)
+        - 目標降至 39°C 後停止主動降溫
+        - 補液支持
+ddxSource: auto-generated

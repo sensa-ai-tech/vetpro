@@ -3,13 +3,15 @@ nameEn: Hepatozoon Americanum
 nameZh: 美洲肝簇蟲病
 bodySystem: hepatic
 description: 由Hepatozoon americanum原蟲引起的嚴重血液寄生蟲病,僅見於美國南部。與H. canis不同,造成嚴重肌炎、骨膜炎及極度疼痛,預後較差。
-
 aliases:
-  - { alias: 美國型肝簇蟲病, language: zh }
-  - { alias: 美洲犬肝蟲病, language: zh }
-  - { alias: American Canine Hepatozoonosis, language: en }
-  - { alias: Gulf Coast Hepatozoonosis, language: en }
-
+  - alias: 美國型肝簇蟲病
+    language: zh
+  - alias: 美洲犬肝蟲病
+    language: zh
+  - alias: American Canine Hepatozoonosis
+    language: en
+  - alias: Gulf Coast Hepatozoonosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓未見感染報告
-
 etiology:
   categories:
     - name: 病原體
@@ -33,7 +34,6 @@ etiology:
       examples:
         - 裂殖體侵犯骨骼肌,引起壞死性肌炎
         - 骨膜炎導致骨增生
-
 clinicalSigns:
   early:
     - 週期性高燒(39.5-41°C),發作3-7天
@@ -46,73 +46,103 @@ clinicalSigns:
     - 持續性體重減輕,惡病質
     - 血便或黑便(腸道潰瘍)
     - 嚴重個案可能死亡
-
 diagnosis:
   primaryTests:
     - name: 肌肉切片
-      notes: "確診檢查,見肌纖維內裂殖體(洋蔥皮樣囊體,含數百個蟲體)"
+      notes: 確診檢查,見肌纖維內裂殖體(洋蔥皮樣囊體,含數百個蟲體)
     - name: 骨骼X光
-      notes: "長骨骨膜增生,呈現「流蠟」樣外觀,多見於股骨、脛骨"
+      notes: 長骨骨膜增生,呈現「流蠟」樣外觀,多見於股骨、脛骨
     - name: 血液抹片
-      notes: "白血球內配子母細胞少見,檢出率低(<1%)"
+      notes: 白血球內配子母細胞少見,檢出率低(<1%)
     - name: PCR檢測
-      notes: "血液或肌肉組織,可鑑別H. americanum與H. canis"
+      notes: 血液或肌肉組織,可鑑別H. americanum與H. canis
     - name: 血液生化
-      notes: "CK極度升高(常\">10,000 U/L\"),白蛋白降低,ALP升高"
+      notes: CK極度升高(常">10,000 U/L"),白蛋白降低,ALP升高
   differentialDiagnoses:
     - Hepatozoon canis(症狀較輕,無嚴重肌炎)
     - 免疫介導性多發性肌炎
     - Neospora caninum感染
     - 骨腫瘤或骨髓炎
     - 多發性關節炎
-
 treatment:
   medical:
     - 三合一療法(TCP):
-      - Trimethoprim-sulfadiazine 15 mg/kg PO q12h
-      - Clindamycin 10 mg/kg PO q8h
-      - Pyrimethamine 0.25 mg/kg PO q24h
-      - 持續14天,休息14天,再重複2個週期
+        - Trimethoprim-sulfadiazine 15 mg/kg PO q12h
+        - Clindamycin 10 mg/kg PO q8h
+        - Pyrimethamine 0.25 mg/kg PO q24h
+        - 持續14天,休息14天,再重複2個週期
     - Decoquinate 10-20 mg/kg PO q12h,持續2年(預防復發)
     - NSAIDs:Carprofen 2-4 mg/kg PO q12h或Firocoxib 5 mg/kg PO q24h
     - 注意Pyrimethamine可能引起骨髓抑制,需補充Folic acid 1 mg/kg PO q24h
   supportive:
     - 營養支持,高蛋白高熱量飲食
     - 物理治療,維持肌肉功能
-
 prognosis:
-  general: "預後保留至不良。即使積極治療,仍難以治癒,需長期藥物控制。約60-70%犬隻可透過治療改善臨床症狀,但復發常見。嚴重肌炎及骨膜炎病例預後差,可能永久性殘障。存活期中位數約2-5年。"
-
+  general: 預後保留至不良。即使積極治療,仍難以治癒,需長期藥物控制。約60-70%犬隻可透過治療改善臨床症狀,但復發常見。嚴重肌炎及骨膜炎病例預後差,可能永久性殘障。存活期中位數約2-5年。
 prevention:
   - 美國南部犬隻全年壁蝨預防
   - 避免吞食壁蝨(定期檢查及移除)
   - 獵犬及工作犬加強防護
   - 限制接觸野生齧齒類
   - 無有效疫苗
-
-
 guidelineRefs:
-  - sourceOrg: "Parasites &amp; vectors"
-    title: "Hepatozoon infections in domestic and wild Carnivora: etiology, prevalence, clinical disease, diagnosis and treatment, and redescription of Hepatozoon silvestris, H. martis, and H. ursi."
+  - sourceOrg: Parasites &amp; vectors
+    title: >-
+      Hepatozoon infections in domestic and wild Carnivora: etiology, prevalence, clinical disease, diagnosis and
+      treatment, and redescription of Hepatozoon silvestris, H. martis, and H. ursi.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12462345/
     type: review
-    pmid: "40993772"
+    pmid: '40993772'
     relevance: primary
-  - sourceOrg: "Parasites &amp; vectors"
-    title: "Hepatozoon (Eucoccidiorida: Hepatozoidae) in wild mammals of the Americas: a systematic review."
+  - sourceOrg: Parasites &amp; vectors
+    title: 'Hepatozoon (Eucoccidiorida: Hepatozoidae) in wild mammals of the Americas: a systematic review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10916324/
     type: review
-    pmid: "38444020"
+    pmid: '38444020'
     relevance: primary
   - sourceOrg: Pathogens (Basel, Switzerland)
     title: Potential Role of Birds in the Epidemiology of Coxiella burnetii, Coxiella-like Agents and Hepatozoon spp.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8954922/
     type: review
-    pmid: "35335622"
+    pmid: '35335622'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
-    title: "American Canine Hepatozoonosis Causes Multifocal Periosteal Proliferation on CT: A Case Report of 4 Dogs."
+    title: 'American Canine Hepatozoonosis Causes Multifocal Periosteal Proliferation on CT: A Case Report of 4 Dogs.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9093736/
     type: case-report
-    pmid: "35573416"
+    pmid: '35573416'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: melaena
+    frequency: uncommon
+  - symptomId: haematochezia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 美洲肝簇蟲病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - lameness 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 肌肉切片
+          notes: 確診檢查,見肌纖維內裂殖體(洋蔥皮樣囊體,含數百個蟲體)
+        - name: 骨骼X光
+          notes: 長骨骨膜增生,呈現「流蠟」樣外觀,多見於股骨、脛骨
+        - name: 血液抹片
+          notes: 白血球內配子母細胞少見,檢出率低(<1%)
+ddxSource: auto-generated

@@ -3,11 +3,11 @@ nameEn: Nicotine Toxicosis
 nameZh: 尼古丁中毒
 bodySystem: toxicology
 description: 尼古丁為菸草生物鹼,刺激尼古丁型乙醯膽鹼受體,引起興奮後抑制。常見於誤食菸草製品或電子菸油。
-
 aliases:
-  - { alias: 菸鹼中毒, language: zh }
-  - { alias: Tobacco Poisoning, language: en }
-
+  - alias: 菸鹼中毒
+    language: zh
+  - alias: Tobacco Poisoning
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 較少直接攝入
-
 etiology:
   categories:
     - name: 菸草製品
@@ -27,7 +26,6 @@ etiology:
     - name: 電子菸
       examples:
         - 電子菸油(濃度高,危險性大)
-
 clinicalSigns:
   early:
     - 15分鐘-1小時內發病
@@ -39,17 +37,15 @@ clinicalSigns:
     - 呼吸抑制、紫紺
     - 虛弱、麻痺
     - 癲癇、昏迷
-
 diagnosis:
   primaryTests:
     - name: 暴露史
-      notes: "確認菸草或尼古丁產品接觸"
+      notes: 確認菸草或尼古丁產品接觸
     - name: 臨床症狀
-      notes: "雙相作用: 初期興奮,後期抑制"
+      notes: '雙相作用: 初期興奮,後期抑制'
   differentialDiagnoses:
     - 有機磷中毒
     - 新菸鹼類殺蟲劑中毒
-
 treatment:
   medical:
     - 催吐(若1-2小時內): 3% H2O2 1-2 mL/kg PO
@@ -59,11 +55,47 @@ treatment:
     - 靜脈輸液、氧氣治療
     - 心律不整治療(依類型)
     - 監測心肺功能4-24小時
-
 prognosis:
-  general: "及時治療預後良好,多數12-24小時內恢復。電子菸油高濃度暴露可能致命,需密集監護。"
-
+  general: 及時治療預後良好,多數12-24小時內恢復。電子菸油高濃度暴露可能致命,需密集監護。
 prevention:
   - 妥善棄置菸蒂及菸草製品
   - 電子菸及菸油儲存於寵物無法接觸處
   - 尼古丁貼片使用後立即丟棄
+associatedSymptoms:
+  - symptomId: trembling
+    frequency: common
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 尼古丁中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - trembling 相關症狀
+        - ptyalism 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 暴露史
+          notes: 確認菸草或尼古丁產品接觸
+        - name: 臨床症狀
+          notes: '雙相作用: 初期興奮,後期抑制'
+ddxSource: auto-generated

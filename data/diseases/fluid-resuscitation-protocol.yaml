@@ -3,11 +3,11 @@ nameEn: Fluid Resuscitation Protocol
 nameZh: 液體復甦流程
 bodySystem: emergency
 description: 休克患者的系統性輸液治療。依休克類型選擇晶體液或膠體液,監測復甦終點。
-
 aliases:
-  - { alias: 輸液復甦, language: zh }
-  - { alias: Shock Resuscitation, language: en }
-
+  - alias: 輸液復甦
+    language: zh
+  - alias: Shock Resuscitation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,49 +17,71 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓輸液需更謹慎(心臟病風險)
-
 etiology:
   categories:
     - name: 休克類型
       examples:
         - 低血容性、血源性、心源性、分布性
-
 clinicalSigns:
   early:
     - 心搏過速、CRT延長
     - 黏膜蒼白、四肢冰冷
   progressive:
     - 低血壓、意識改變
-
 diagnosis:
   primaryTests:
     - name: 臨床休克評估
-      notes: "心率、血壓、CRT、黏膜顏色、尿量"
+      notes: 心率、血壓、CRT、黏膜顏色、尿量
     - name: 乳酸
-      notes: "評估組織灌流"
+      notes: 評估組織灌流
   differentialDiagnoses:
     - 無
-
 treatment:
   medical:
     - 初始快速輸液(犬):
-      - 晶體液20-30 mL/kg IV bolus(15-20分鐘)
-      - 膠體液5-10 mL/kg IV bolus
-      - 重複至復甦終點
+        - 晶體液20-30 mL/kg IV bolus(15-20分鐘)
+        - 膠體液5-10 mL/kg IV bolus
+        - 重複至復甦終點
     - 貓: 10-15 mL/kg bolus,更謹慎
     - 復甦終點: HR下降、CRT正常、血壓改善、尿量>1 mL/kg/hr
     - 避免過度輸液(肺水腫風險)
-
 prognosis:
-  general: "及時有效復甦可提高存活率。監測避免過度或不足。"
-
+  general: 及時有效復甦可提高存活率。監測避免過度或不足。
 prevention:
   - 依臨床反應調整輸液
-
-
 guidelineRefs:
-  - sourceOrg: "Evidence-based complementary and alternative medicine : eCAM"
-    title: Effect of Different-Volume Fluid Resuscitation on Organ Functions in Severe Acute Pancreatitis and Therapeutic Effect of Poria cocos.
+  - sourceOrg: 'Evidence-based complementary and alternative medicine : eCAM'
+    title: >-
+      Effect of Different-Volume Fluid Resuscitation on Organ Functions in Severe Acute Pancreatitis and Therapeutic
+      Effect of Poria cocos.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7895597/
     type: research
-    pmid: "33628293"
+    pmid: '33628293'
+associatedSymptoms:
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 液體復甦流程 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - coma-stupor 相關症狀
+        - pallor-cyanosis 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床休克評估
+          notes: 心率、血壓、CRT、黏膜顏色、尿量
+        - name: 乳酸
+          notes: 評估組織灌流
+ddxSource: auto-generated

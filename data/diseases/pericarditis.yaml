@@ -2,12 +2,13 @@ slug: pericarditis
 nameEn: Pericarditis
 nameZh: 心包膜炎
 bodySystem: cardiac
-description: 心包膜炎為心包膜（心外膜與壁側心包）的炎症，可伴隨心包積液。犬隻心包膜炎可為感染性（細菌性化膿性心包炎）或非感染性（特發性、腫瘤相關、免疫介導性）。細菌性心包炎在犬隻雖非最常見的心包疾病，但臨床意義重要，需與特發性心包積液和腫瘤性心包積液鑑別。
-
+description: >-
+  心包膜炎為心包膜（心外膜與壁側心包）的炎症，可伴隨心包積液。犬隻心包膜炎可為感染性（細菌性化膿性心包炎）或非感染性（特發性、腫瘤相關、免疫介導性）。細菌性心包炎在犬隻雖非最常見的心包疾病，但臨床意義重要，需與特發性心包積液和腫瘤性心包積液鑑別。
 aliases:
-  - { alias: 心包炎, language: zh }
-  - { alias: Pericardial Inflammation, language: en }
-
+  - alias: 心包炎
+    language: zh
+  - alias: Pericardial Inflammation
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +16,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻心包炎罕見，可與 FIP（乾型）相關。
-
 etiology:
   categories:
     - name: 感染性
@@ -28,7 +28,6 @@ etiology:
         - 腫瘤相關（hemangiosarcoma、chemodectoma、mesothelioma）
         - 尿毒症性（腎衰竭）
         - 外傷後
-
 clinicalSigns:
   early:
     - 發熱（特別是感染性）
@@ -40,14 +39,12 @@ clinicalSigns:
     - 腹水
     - 運動不耐加重
     - 心音減弱
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波（Echocardiography）
       notes: 可見心包積液（無回聲暗區包圍心臟）。細菌性心包炎積液可含纖維素條帶。排除心臟腫塊。評估心包填塞徵象。
     - name: 心包液分析
       notes: 細菌性：pH 低、葡萄糖低、蛋白高、白血球高（以嗜中性球為主）。細菌培養與藥敏試驗。細胞學排除腫瘤。
-
 treatment:
   principles:
     - 心包填塞需緊急心包穿刺引流
@@ -59,36 +56,72 @@ treatment:
     - 特發性反覆發作：心包切開術（pericardiectomy）
     - 尿毒症性：治療腎衰竭
     - 支持性治療：輸液、營養支持
-
 prognosis: 特發性心包炎經心包切除術後預後良好。細菌性心包炎若及時診斷並適當抗生素治療，預後尚可，但可能發展為縮窄性心包炎。腫瘤相關心包炎預後取決於腫瘤類型。尿毒症性心包炎預後與腎臟疾病控制相關。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
     title: Expanding the role of ultrasonography in cardiopulmonary assessment in dromedary camels.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12509741/
     type: review
-    pmid: "41078488"
+    pmid: '41078488'
   - sourceOrg: Frontiers in veterinary science
-    title: "Fundamentals of diagnostic ultrasonography in sheep and goat medicine: a comprehensive illustrated overview."
+    title: 'Fundamentals of diagnostic ultrasonography in sheep and goat medicine: a comprehensive illustrated overview.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11955829/
     type: review
-    pmid: "40166704"
+    pmid: '40166704'
   - sourceOrg: Frontiers in immunology
     title: Immune checkpoint inhibitors associated cardiovascular immune-related adverse events.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10875074/
     type: review
-    pmid: "38375475"
+    pmid: '38375475'
   - sourceOrg: Frontiers in cell and developmental biology
     title: Triggers of Inflammatory Heart Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7105865/
     type: review
-    pmid: "32266270"
+    pmid: '32266270'
   - sourceOrg: Heliyon
     title: Myocardial infarction following COVID-19 vaccine administration; a systematic review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9650518/
     type: review
-    pmid: "36406668"
+    pmid: '36406668'
 pubmedQueries:
   - query: '"pericarditis" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 心包膜炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+        - anorexia 相關症狀
+        - exercise-intolerance 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波（Echocardiography）
+          notes: 可見心包積液（無回聲暗區包圍心臟）。細菌性心包炎積液可含纖維素條帶。排除心臟腫塊。評估心包填塞徵象。
+        - name: 心包液分析
+          notes: 細菌性：pH 低、葡萄糖低、蛋白高、白血球高（以嗜中性球為主）。細菌培養與藥敏試驗。細胞學排除腫瘤。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 心包填塞需緊急心包穿刺引流
+        - 感染性心包炎需長期抗生素治療
+        - 反覆特發性心包積液考慮心包切除術
+ddxSource: auto-generated

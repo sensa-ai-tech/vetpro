@@ -3,11 +3,11 @@ nameEn: Tracheal Stent Complications
 nameZh: 氣管支架併發症
 bodySystem: respiratory
 description: 氣管支架植入後可能發生的併發症,包括支架移位、肉芽組織增生、黏液栓塞或氣管穿孔。
-
 aliases:
-  - { alias: 氣管內支架問題, language: zh }
-  - { alias: Tracheal Stent Issues, language: en }
-
+  - alias: 氣管內支架問題
+    language: zh
+  - alias: Tracheal Stent Issues
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 罕見使用支架
-
 etiology:
   categories:
     - name: 支架相關
@@ -32,7 +31,6 @@ etiology:
       examples:
         - 支架感染
         - 黏液栓塞
-
 clinicalSigns:
   early:
     - 咳嗽增加
@@ -41,20 +39,18 @@ clinicalSigns:
     - 嚴重呼吸困難
     - 咳血
     - 氣道阻塞
-
 diagnosis:
   primaryTests:
     - name: 胸部 X 光
-      notes: "評估支架位置"
+      notes: 評估支架位置
     - name: 氣管鏡檢查
-      notes: "評估肉芽組織、黏液、支架狀況"
+      notes: 評估肉芽組織、黏液、支架狀況
     - name: CT
-      notes: "詳細評估支架及氣管"
+      notes: 詳細評估支架及氣管
   differentialDiagnoses:
     - 原發性氣管塌陷惡化
     - 氣管炎
     - 氣管異物
-
 treatment:
   medical:
     - 氣管鏡移除肉芽組織
@@ -62,44 +58,70 @@ treatment:
     - 支氣管擴張劑
     - Mucolytic agents
     - 支架移除或更換 (嚴重時)
-
 prognosis:
-  general: "預後謹慎;併發症常見,需長期監測及可能重複處置"
-
+  general: 預後謹慎;併發症常見,需長期監測及可能重複處置
 prevention:
   - 謹慎選擇支架適應症
   - 適當支架尺寸
   - 定期追蹤氣管鏡檢查
-
-
 guidelineRefs:
   - sourceOrg: Veterinary medicine international
-    title: "Biodegradable Stents in Companion Animals: A Systematic Scoping Review."
+    title: 'Biodegradable Stents in Companion Animals: A Systematic Scoping Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11986936/
     type: review
-    pmid: "40224252"
+    pmid: '40224252'
     relevance: primary
   - sourceOrg: Journal of veterinary internal medicine
     title: A systematic review and meta-analysis of prevalence of complications after tracheal stenting in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11256162/
     type: review
-    pmid: "38822531"
+    pmid: '38822531'
     relevance: primary
   - sourceOrg: Materials (Basel, Switzerland)
     title: Stents in Veterinary Medicine.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9959717/
     type: review
-    pmid: "36837110"
+    pmid: '36837110'
     relevance: primary
   - sourceOrg: Materials (Basel, Switzerland)
     title: Antimicrobial and Antiproliferative Coatings for Stents in Veterinary Medicine-State of the Art and Perspectives.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10649059/
     type: review
-    pmid: "37959431"
+    pmid: '37959431'
     relevance: primary
   - sourceOrg: Scientific reports
-    title: Study on the antibacterial activity and biocompatibility of nano-silver/carbon nanotube composite coatings on airway stents prepared by micro-transfer printing.
+    title: >-
+      Study on the antibacterial activity and biocompatibility of nano-silver/carbon nanotube composite coatings on
+      airway stents prepared by micro-transfer printing.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12521536/
     type: research
-    pmid: "41087492"
+    pmid: '41087492'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: coughing
+    frequency: common
+  - symptomId: haemoptysis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 氣管支架併發症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - coughing 相關症狀
+        - haemoptysis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸部 X 光
+          notes: 評估支架位置
+        - name: 氣管鏡檢查
+          notes: 評估肉芽組織、黏液、支架狀況
+        - name: CT
+          notes: 詳細評估支架及氣管
+ddxSource: auto-generated

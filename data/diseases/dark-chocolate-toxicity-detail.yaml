@@ -3,12 +3,13 @@ nameEn: Dark Chocolate Toxicity Detail
 nameZh: 黑巧克力毒性詳述
 bodySystem: toxicology
 description: 黑巧克力含高濃度可可鹼及咖啡因,對犬貓具毒性。可引起興奮、心律不整、癲癇及死亡。濃度越高毒性越強。
-
 aliases:
-  - { alias: 巧克力中毒, language: zh }
-  - { alias: Chocolate Poisoning, language: en }
-  - { alias: Theobromine Toxicity, language: en }
-
+  - alias: 巧克力中毒
+    language: zh
+  - alias: Chocolate Poisoning
+    language: en
+  - alias: Theobromine Toxicity
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 較少攝入但同樣敏感
-
 etiology:
   categories:
     - name: 巧克力種類(可可鹼含量)
@@ -26,7 +26,6 @@ etiology:
         - 黑巧克力/烘焙巧克力: 130-450 mg/oz(最毒)
         - 牛奶巧克力: 44-60 mg/oz
         - 白巧克力: <1 mg/oz(幾乎無毒)
-
 clinicalSigns:
   early:
     - 6-12小時內
@@ -39,17 +38,15 @@ clinicalSigns:
     - 高體溫
     - 呼吸急促
     - 昏迷、死亡(嚴重)
-
 diagnosis:
   primaryTests:
     - name: 暴露史
-      notes: "計算可可鹼劑量: 20 mg/kg輕度,40-50 mg/kg中度,>60 mg/kg嚴重"
+      notes: '計算可可鹼劑量: 20 mg/kg輕度,40-50 mg/kg中度,>60 mg/kg嚴重'
     - name: 心電圖
-      notes: "心律不整(室性早期收縮常見)"
+      notes: 心律不整(室性早期收縮常見)
   differentialDiagnoses:
     - 咖啡因中毒
     - 興奮劑中毒
-
 treatment:
   medical:
     - 催吐(若2-4小時內): 3% H2O2 1-2 mL/kg PO
@@ -59,11 +56,47 @@ treatment:
     - 癲癇控制: Diazepam 0.5-1 mg/kg IV
     - 降溫(若體溫>40°C)
     - 監測心電圖12-24小時
-
 prognosis:
-  general: "輕中度中毒預後良好。嚴重中毒(>60 mg/kg可可鹼)可能致命,死亡率10-20%。症狀可持續72小時。"
-
+  general: 輕中度中毒預後良好。嚴重中毒(>60 mg/kg可可鹼)可能致命,死亡率10-20%。症狀可持續72小時。
 prevention:
   - 妥善存放巧克力
   - 教育家人勿餵食巧克力
   - 節慶期間(情人節、聖誕節)特別注意
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 黑巧克力毒性詳述 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - trembling 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 暴露史
+          notes: '計算可可鹼劑量: 20 mg/kg輕度,40-50 mg/kg中度,>60 mg/kg嚴重'
+        - name: 心電圖
+          notes: 心律不整(室性早期收縮常見)
+ddxSource: auto-generated

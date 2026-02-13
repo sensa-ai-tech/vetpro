@@ -3,11 +3,11 @@ nameEn: Hypocalcemic Crisis
 nameZh: 低血鈣危象
 bodySystem: endocrine
 description: 血清離子鈣急劇下降導致神經肌肉過度興奮,引發強直性痙攣、癲癇發作甚至死亡,為內分泌急症需立即鈣補充治療。
-
 aliases:
-  - { alias: 急性低血鈣, language: zh }
-  - { alias: Acute hypocalcemia, language: en }
-
+  - alias: 急性低血鈣
+    language: zh
+  - alias: Acute hypocalcemia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓常見於副甲狀腺手術後或慢性腎病
-
 etiology:
   categories:
     - name: 副甲狀腺功能異常
@@ -35,7 +34,6 @@ etiology:
         - 慢性腎衰竭(維生素D代謝異常)
         - 低白蛋白血症(總鈣低但離子鈣可能正常)
         - 乙二醇中毒(鈣結晶)
-
 clinicalSigns:
   early:
     - 焦躁不安、過度喘息
@@ -47,43 +45,73 @@ clinicalSigns:
     - 高熱(肌肉活動過度)
     - 心律不整
     - 昏迷、死亡
-
 diagnosis:
   primaryTests:
     - name: 血清離子鈣
-      notes: "降至危險水平(<0.8 mmol/L 或 <3.2 mg/dL)"
+      notes: 降至危險水平(<0.8 mmol/L 或 <3.2 mg/dL)
     - name: 血清總鈣
-      notes: "顯著降低(<7 mg/dL 或 <1.75 mmol/L)"
+      notes: 顯著降低(<7 mg/dL 或 <1.75 mmol/L)
     - name: PTH
-      notes: "副甲狀腺功能低下時抑制,產後低血鈣症時升高或正常"
+      notes: 副甲狀腺功能低下時抑制,產後低血鈣症時升高或正常
     - name: 血清白蛋白
-      notes: "校正總鈣值:校正鈣 = 測得鈣 + 0.4×(4 - 白蛋白 g/dL)"
+      notes: 校正總鈣值:校正鈣 = 測得鈣 + 0.4×(4 - 白蛋白 g/dL)
   differentialDiagnoses:
     - 癲癇(其他原因)
     - 中毒(有機磷、士的寧)
     - 低血糖危象
     - 破傷風
-
 treatment:
   medical:
     - 緊急靜脈鈣補充(癲癇或強直性痙攣):
-      - 10% calcium gluconate 0.5-1.5 mL/kg IV緩慢注射(10-30分鐘)
-      - 監測心律,若出現心搏過緩立即停止
-      - 症狀緩解後停止注射
+        - 10% calcium gluconate 0.5-1.5 mL/kg IV緩慢注射(10-30分鐘)
+        - 監測心律,若出現心搏過緩立即停止
+        - 症狀緩解後停止注射
     - CRI維持(calcium gluconate 0.5-1.5 mL/kg/hr IV CRI稀釋至0.5-1%濃度)
     - 口服鈣補充(calcium carbonate 25-50 mg/kg PO TID-QID)
     - 維生素D補充(Calcitriol 0.02-0.06 μg/kg PO SID,產後低血鈣症通常不需要)
     - 產後低血鈣症處理:
-      - 離乳幼犬貓,減少鈣質需求
-      - 補充鈣+維生素D直至離乳
+        - 離乳幼犬貓,減少鈣質需求
+        - 補充鈣+維生素D直至離乳
     - 密集監測離子鈣(每4-12小時)
     - 控制環境溫度,避免過熱或壓力
-
 prognosis:
-  general: "及時治療預後良好,多數迅速緩解;延誤治療或反覆發作可能致死。產後低血鈣症通常於離乳後完全恢復,副甲狀腺功能低下需長期補充。"
-
+  general: 及時治療預後良好,多數迅速緩解;延誤治療或反覆發作可能致死。產後低血鈣症通常於離乳後完全恢復,副甲狀腺功能低下需長期補充。
 prevention:
   - 哺乳期母犬貓補充鈣質及維生素D
   - 高危犬種(小型犬)哺乳期密切監測
   - 副甲狀腺手術後預防性補充鈣
   - 定期監測血鈣(高危病例)
+associatedSymptoms:
+  - symptomId: trembling
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: skin-pruritus
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 低血鈣危象 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - trembling 相關症狀
+        - seizures 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清離子鈣
+          notes: 降至危險水平(<0.8 mmol/L 或 <3.2 mg/dL)
+        - name: 血清總鈣
+          notes: 顯著降低(<7 mg/dL 或 <1.75 mmol/L)
+        - name: PTH
+          notes: 副甲狀腺功能低下時抑制,產後低血鈣症時升高或正常
+ddxSource: auto-generated

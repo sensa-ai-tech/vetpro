@@ -1,0 +1,113 @@
+slug: feline-chlamydiosis
+nameEn: Feline Chlamydiosis
+nameZh: 貓衣原體感染
+description: 由貓衣原體（Chlamydia felis）引起的上呼吸道和結膜感染，以慢性結膜炎為主要表現。
+bodySystem: infectious
+species:
+  - speciesCommon: cat
+etiology:
+  categories:
+    - name: Risk Factors
+      examples:
+        - 多貓家庭
+        - 收容所環境
+        - 未接種疫苗
+        - 免疫功能低下
+        - 與感染貓密切接觸
+        - 應激因素
+clinicalSigns:
+  early:
+    - 單側結膜炎（後轉為雙側）
+    - 漿液性至膿性眼分泌物
+    - 眨眼和流淚
+    - 輕度鼻腔分泌物
+    - 打噴嚏
+    - 食慾可能正常或輕度下降
+  progressive:
+    - 結膜充血和水腫（化學性結膜炎）
+    - 漿液性至黏膿性眼分泌物
+    - 瞬膜突出
+    - 眼瞼痙攣
+    - 角膜通常不受影響
+    - 輕度鼻腔分泌物
+    - 罕見發燒
+diagnosis:
+  primaryTests:
+    - 結膜拭子PCR
+    - 結膜細胞學（上皮細胞內包含體，敏感度低）
+    - 眼部螢光素染色（排除角膜潰瘍）
+  additional:
+    - 結膜拭子培養
+    - 血清學檢查（IgG/IgM）
+    - FeLV/FIV檢測
+    - 上呼吸道病原體多重PCR
+treatment:
+  principles:
+    - Doxycycline 10 mg/kg PO SID（首選），療程至少4週
+    - 四環素眼藥膏 TID-QID
+    - 眼部清潔（溫生理食鹽水）
+    - 多貓家庭全部貓同時治療
+  general:
+    - 延長Doxycycline療程（症狀消失後再續2週）
+    - 環境消毒
+    - 疫苗接種預防
+    - 減少應激因素
+prognosis: 適當抗生素治療預後良好，大多數貓在2-3週內改善。不治療可能慢性化持續數月。慢性帶原狀態可能存在。
+diagnosticAlgorithm:
+  title: 貓衣原體感染 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估結膜炎症狀，注意單側起始後雙側進展的典型過程
+      findings:
+        - 單側結膜炎起始後雙側進展
+        - 明顯結膜水腫與充血
+        - 漿液性至黏液膿性眼分泌物
+        - 輕度上呼吸道症狀
+    - step: 2
+      action: 鑑別檢查
+      details: 與其他貓上呼吸道病原鑑別
+      findings:
+        - 角膜通常不受影響（與FHV區別）
+        - 口腔潰瘍不常見（與FCV區別）
+        - 打噴嚏可有可無
+        - 幼貓或多貓家庭高風險
+    - step: 3
+      action: 實驗室確診
+      details: 結膜拭子PCR檢測
+      findings:
+        - Chlamydia felis PCR陽性
+        - 結膜細胞學可見包涵體敏感度低
+        - 排除FHV/FCV共感染
+        - FIV/FeLV狀態評估
+    - step: 4
+      action: 治療與控制
+      details: 四環素類抗生素治療至少4週
+      findings:
+        - Doxycycline為首選抗生素
+        - 同居貓需同時治療
+        - 治療不完全易復發
+        - 疫苗可減輕症狀但不防止感染
+clinicalPearls:
+  - 單側起始的結膜炎高度提示衣原體感染（疱疹病毒也可能）
+  - Doxycycline是首選，Azithromycin為替代
+  - 治療不完全是復發的主要原因
+  - 低人畜共通傳染風險（免疫抑制人群需注意）
+  - 多貓環境中需同時治療所有貓以避免交叉感染
+monitoringItems:
+  - 眼部症狀改善
+  - 治療完成後PCR追蹤
+  - 同居貓的症狀
+  - 疫苗接種時程
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: common
+ddxSource: book-only

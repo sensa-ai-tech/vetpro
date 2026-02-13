@@ -3,12 +3,13 @@ nameEn: Dilated Cardiomyopathy
 nameZh: 擴張性心肌病
 bodySystem: cardiac
 description: 心室擴張伴收縮功能障礙的心肌疾病，為大型犬最常見的後天性心臟病。
-
 aliases:
-  - { alias: DCM, language: en }
-  - { alias: 擴張型心肌症, language: zh }
-  - { alias: Congestive Cardiomyopathy, language: en }
-
+  - alias: DCM
+    language: en
+  - alias: 擴張型心肌症
+    language: zh
+  - alias: Congestive Cardiomyopathy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 因飼糧添加 taurine 後已大幅減少。仍偶見於 taurine 缺乏的飲食。
-
 etiology:
   categories:
     - name: 遺傳性/原發性
@@ -37,7 +37,6 @@ etiology:
         - 甲狀腺功能低下 (加重因子)
         - 持續性心搏過速 (tachycardia-induced)
         - 感染性心肌炎
-
 clinicalSigns:
   early:
     - 隱匿期：無明顯症狀 (尤其 Doberman 可持續數年)
@@ -53,26 +52,24 @@ clinicalSigns:
     - 昏厥 (心律不整或低心輸出量)
     - 猝死 (尤其 Doberman 心律不整型)
     - 心因性休克
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波 (Echocardiography)
-      notes: "金標準。LV 擴張、收縮功能降低 (FS <20%、EF <40%)、E-point septal separation (EPSS) 增大"
+      notes: 金標準。LV 擴張、收縮功能降低 (FS <20%、EF <40%)、E-point septal separation (EPSS) 增大
     - name: NT-proBNP
-      notes: "篩檢隱匿期 DCM。犬 >900 pmol/L 高度懷疑"
+      notes: 篩檢隱匿期 DCM。犬 >900 pmol/L 高度懷疑
     - name: Cardiac Troponin I
-      notes: "心肌損傷標記，Doberman 隱匿期可能已升高"
+      notes: 心肌損傷標記，Doberman 隱匿期可能已升高
   imaging:
     - name: 胸腔 X 光
-      notes: "全心擴大 (VHS 增加)、肺靜脈擴張、肺水腫、胸水"
+      notes: 全心擴大 (VHS 增加)、肺靜脈擴張、肺水腫、胸水
     - name: 心電圖 (ECG)
-      notes: "心房顫動 (大型犬常見)、VPCs (Doberman >100/24hr Holter 為異常)"
+      notes: 心房顫動 (大型犬常見)、VPCs (Doberman >100/24hr Holter 為異常)
   additional:
     - Holter 監測 24hr (Doberman 篩檢，VPCs >100/24hr)
     - 全血 taurine 濃度 (懷疑營養性時)
     - 基因檢測 (Doberman PDK4)
     - 甲狀腺功能 (排除甲低)
-
 stagingSystem:
   name: ACVIM DCM Staging
   stages:
@@ -91,7 +88,6 @@ stagingSystem:
     - stage: D
       label: 難治性心衰竭
       description: 對標準治療反應不佳
-
 treatment:
   principles:
     - 隱匿期即應開始治療 (尤其 Doberman)
@@ -99,19 +95,19 @@ treatment:
     - 營養性 DCM 需補充 taurine/L-carnitine
   medications:
     - name: Pimobendan
-      dose: "0.25 mg/kg PO BID"
+      dose: 0.25 mg/kg PO BID
       notes: 正性肌力 + 血管擴張。PROTECT study 顯示隱匿期 Doberman 延長 9 個月至 CHF。EPIC 參考
     - name: Furosemide
-      dose: "2-4 mg/kg PO BID-TID (維持)；IV for acute CHF"
+      dose: 2-4 mg/kg PO BID-TID (維持)；IV for acute CHF
       notes: CHF 必用。最低有效劑量
     - name: Benazepril / Enalapril
-      dose: "Benazepril 0.5 mg/kg PO SID-BID；Enalapril 0.5 mg/kg PO BID"
+      dose: Benazepril 0.5 mg/kg PO SID-BID；Enalapril 0.5 mg/kg PO BID
       notes: ACEi，降低後負荷、抑制 RAAS
     - name: Spironolactone
-      dose: "1-2 mg/kg PO SID-BID"
+      dose: 1-2 mg/kg PO SID-BID
       notes: 醛固酮拮抗劑，與 furosemide 合用
     - name: Sotalol / Mexiletine
-      dose: "Sotalol 2 mg/kg PO BID；Mexiletine 5-8 mg/kg PO TID"
+      dose: Sotalol 2 mg/kg PO BID；Mexiletine 5-8 mg/kg PO TID
       notes: Doberman 心律不整 (VT) 控制。可合併使用
   general:
     - 急性 CHF：氧氣、IV furosemide、dobutamine CRI (重度低心輸出量)
@@ -120,48 +116,129 @@ treatment:
     - 適度運動限制
     - 居家呼吸速率監測 (RRR)
     - Doberman 品種建議每年 Holter + 心超篩檢
-
-prognosis: Doberman DCM 確診 CHF 後中位存活約 3-6 個月。其他大型犬 CHF 中位存活約 6-12 個月。Pimobendan 顯著改善存活時間。營養性 DCM (taurine 缺乏) 補充後可部分至完全恢復。猝死風險 (Doberman 約 30%) 為主要死因。
-
+prognosis: >-
+  Doberman DCM 確診 CHF 後中位存活約 3-6 個月。其他大型犬 CHF 中位存活約 6-12 個月。Pimobendan 顯著改善存活時間。營養性 DCM (taurine 缺乏) 補充後可部分至完全恢復。猝死風險
+  (Doberman 約 30%) 為主要死因。
 ontologyMappings:
   - source: MONDO
-    code: "MONDO:0005021"
+    code: MONDO:0005021
     label: dilated cardiomyopathy
     confidence: exact
-
 guidelineRefs:
   - sourceOrg: ESVC
     title: Doberman Pinscher DCM Screening Guidelines
     url: https://www.esvc.org
     type: guideline
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Use of pimobendan in cats: a practical evidence-based review."
+    title: 'Use of pimobendan in cats: a practical evidence-based review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12701260/
     type: review
-    pmid: "41384556"
+    pmid: '41384556'
   - sourceOrg: The Veterinary clinics of North America. Small animal practice
     title: The Role of Personalized Medicine in Companion Animal Cardiology.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11184409/
     type: review
-    pmid: "37423841"
+    pmid: '37423841'
     relevance: primary
   - sourceOrg: Frontiers in cardiovascular medicine
     title: Multifocal ectopic purkinje-related premature contractions and related cardiomyopathy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10436533/
     type: review
-    pmid: "37600057"
+    pmid: '37600057'
     relevance: primary
   - sourceOrg: Reviews in medical virology
     title: The knowns and unknowns of cardiac autoimmunity in viral myocarditis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12846760/
     type: review
-    pmid: "37658748"
+    pmid: '37658748'
     relevance: primary
 pubmedQueries:
   - query: '"dilated cardiomyopathy" AND (dog OR canine) AND ("pimobendan" OR "treatment" OR "consensus")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "Dilated Cardiomyopathy (DCM): This"
+  chapter: DIG
+  sectionTitle: 'Dilated Cardiomyopathy (DCM): This'
   pdfPage: 156
+diagnosticAlgorithm:
+  title: 擴張型心肌病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估運動不耐、咳嗽及呼吸困難
+      findings:
+        - 運動不耐
+        - 咳嗽（左心衰竭）
+        - 腹水（右心衰竭）
+        - 昏厥
+        - 大型犬品種好發
+    - step: 2
+      action: 胸腔X光
+      details: 評估心臟大小及肺水腫
+      findings:
+        - 全面性心臟擴大
+        - 肺靜脈擴張
+        - 肺水腫
+        - 胸腔積液
+    - step: 3
+      action: 心臟超音波
+      details: M-mode及2D評估心腔與功能
+      findings:
+        - 左心室擴張
+        - 收縮功能下降（FS<25%、EF降低）
+        - 左心房擴大
+        - E點中隔距離增加
+    - step: 4
+      action: 心電圖與生物標記
+      details: ECG及心肌標記物
+      findings:
+        - 心房顫動
+        - 心室早期收縮
+        - cTnI升高
+        - NT-proBNP升高
+        - Holter監測VPC頻率
+clinicalPearls:
+  - 杜賓犬DCM有高達30-50%終生罹患率，建議年度Holter和Echo篩檢
+  - 心房顫動在DCM犬中很常見，需控制心率
+  - Pimobendan可延長DCM犬的存活時間
+  - 隱匿期DCM（無症狀）仍需治療
+  - 某些無穀飼料與DCM的關聯仍在研究中
+  - 貓DCM多與牛磺酸缺乏相關，補充後可能改善
+monitoringItems:
+  - 呼吸頻率（家中監測RRR<30）
+  - 心臟超聲
+  - 胸腔X光
+  - ECG/Holter
+  - 腎功能和電解質
+  - 體重
+  - NT-proBNP
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: heart-murmur
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: hepatomegaly
+    frequency: common
+ddxSource: book

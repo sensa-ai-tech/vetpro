@@ -3,58 +3,77 @@ nameEn: Low Dose Dexamethasone Suppression
 nameZh: 低劑量地塞米松抑制試驗
 bodySystem: other
 description: 低劑量地塞米松抑制試驗(LDDST)為診斷犬庫欣氏症的首選篩檢工具,敏感度高達95%。給予低劑量dexamethasone後測量皮質醇抑制反應,可區分部分腦下垂體或腎上腺源性庫欣。
-
 aliases:
-  - { alias: LDDST, language: zh }
-  - { alias: Low dose dex suppression test, language: en }
-
+  - alias: LDDST
+    language: zh
+  - alias: Low dose dex suppression test
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 庫欣氏症診斷首選檢查
-
 etiology:
   categories:
     - name: 檢查原理
       examples:
         - 正常犬:dexamethasone抑制皮質醇分泌
         - 庫欣犬:皮質醇無法被抑制
-
 clinicalSigns:
   early:
     - LDDST為診斷工具
   progressive:
     - 庫欣症狀:多飲多尿、腹部膨大
-
 diagnosis:
   primaryTests:
     - name: 試驗流程
-      notes: "0小時基礎皮質醇→IV注射dexamethasone 0.01 mg/kg→4及8小時採血"
+      notes: 0小時基礎皮質醇→IV注射dexamethasone 0.01 mg/kg→4及8小時採血
     - name: 陽性結果
-      notes: "8小時皮質醇>1.4 μg/dL診斷庫欣"
+      notes: 8小時皮質醇>1.4 μg/dL診斷庫欣
     - name: 鑑別診斷
-      notes: "4或8小時皮質醇<1.4但後升高提示腦下垂體源性"
+      notes: 4或8小時皮質醇<1.4但後升高提示腦下垂體源性
   differentialDiagnoses:
     - 庫欣氏症(腦下垂體或腎上腺)
-
 treatment:
   medical:
     - LDDST為診斷工具
-
 prognosis:
-  general: "LDDST為庫欣篩檢首選,敏感度高。"
-
+  general: LDDST為庫欣篩檢首選,敏感度高。
 prevention:
   - 正確劑量dexamethasone
   - 準時採血
   - 避免壓力影響
-
-
 guidelineRefs:
   - sourceOrg: Research in veterinary science
-    title: "Frequency of low-dose dexamethasone suppression test (LDDST) response patterns and their correlation with clinicopathologic signs in dogs suspected of having Cushing's syndrome: A retrospective study."
+    title: >-
+      Frequency of low-dose dexamethasone suppression test (LDDST) response patterns and their correlation with
+      clinicopathologic signs in dogs suspected of having Cushing's syndrome: A retrospective study.
     url: https://pubmed.ncbi.nlm.nih.gov/38851053/
     type: research
-    pmid: "38851053"
+    pmid: '38851053'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 低劑量地塞米松抑制試驗 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - abdominal-distension 相關症狀
+        - polyuria-polydipsia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 試驗流程
+          notes: 0小時基礎皮質醇→IV注射dexamethasone 0.01 mg/kg→4及8小時採血
+        - name: 陽性結果
+          notes: 8小時皮質醇>1.4 μg/dL診斷庫欣
+        - name: 鑑別診斷
+          notes: 4或8小時皮質醇<1.4但後升高提示腦下垂體源性
+ddxSource: auto-generated

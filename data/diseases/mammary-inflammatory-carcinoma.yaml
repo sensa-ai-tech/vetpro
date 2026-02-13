@@ -3,13 +3,15 @@ nameEn: Mammary Inflammatory Carcinoma
 nameZh: 乳腺炎性癌
 bodySystem: oncology
 description: 罕見但極度惡性的乳腺癌亞型，以瀰漫性皮膚紅腫、疼痛及水腫為特徵，常被誤診為乳腺炎。確診時多已廣泛轉移，預後極差。
-
 aliases:
-  - { alias: 炎症性乳腺癌, language: zh }
-  - { alias: 發炎性乳癌, language: zh }
-  - { alias: Inflammatory Mammary Carcinoma, language: en }
-  - { alias: IMC, language: en }
-
+  - alias: 炎症性乳腺癌
+    language: zh
+  - alias: 發炎性乳癌
+    language: zh
+  - alias: Inflammatory Mammary Carcinoma
+    language: en
+  - alias: IMC
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓的炎性乳腺癌極少報導，但生物學行為同樣高度侵襲。
-
 etiology:
   categories:
     - name: 病理特徵
@@ -32,7 +33,6 @@ etiology:
         - 未絕育
         - 荷爾蒙變化（假懷孕、黃體期）
         - 可能由其他類型乳腺癌進展而來
-
 clinicalSigns:
   early:
     - 乳腺區域瀰漫性紅腫
@@ -45,22 +45,20 @@ clinicalSigns:
     - 後肢水腫（淋巴回流受阻）
     - 全身狀態快速惡化
     - 瀰漫性凝血異常 (DIC)
-
 diagnosis:
   primaryTests:
     - name: 皮膚穿刺切片
-      notes: "真皮淋巴管內可見癌栓為診斷關鍵。與單純乳腺炎鑑別"
+      notes: 真皮淋巴管內可見癌栓為診斷關鍵。與單純乳腺炎鑑別
     - name: 臨床表現
-      notes: "抗生素治療無效的「乳腺炎」應高度懷疑炎性癌"
+      notes: 抗生素治療無效的「乳腺炎」應高度懷疑炎性癌
     - name: 分期檢查
-      notes: "胸腔 X 光、腹部超音波。確診時多已有肺及腹腔轉移"
+      notes: 胸腔 X 光、腹部超音波。確診時多已有肺及腹腔轉移
   differentialDiagnoses:
     - 急性乳腺炎
     - 乳腺膿瘍
     - 其他類型乳腺癌
     - 皮膚蜂窩性組織炎
     - 過敏性皮膚炎
-
 treatment:
   medical:
     - 化療為主要治療（Doxorubicin、Carboplatin）
@@ -71,43 +69,71 @@ treatment:
   surgical:
     - 一般不建議手術，因瀰漫性侵犯使手術邊緣無法達成
     - 術後傷口癒合極差
-
 prognosis:
-  general: "預後極差。中位生存時間僅約 25-60 天。對化療反應率低。確診後多建議姑息治療或安樂死。是所有乳腺腫瘤類型中預後最差者。"
-
+  general: 預後極差。中位生存時間僅約 25-60 天。對化療反應率低。確診後多建議姑息治療或安樂死。是所有乳腺腫瘤類型中預後最差者。
 prevention:
   - 早期絕育
   - 乳腺區域急性紅腫疼痛抗生素無效時應立即活檢排除炎性癌
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in pharmacology
-    title: DuCLOX-2/5 Inhibition Attenuates Inflammatory Response and Induces Mitochondrial Apoptosis for Mammary Gland Chemoprevention.
+    title: >-
+      DuCLOX-2/5 Inhibition Attenuates Inflammatory Response and Induces Mitochondrial Apoptosis for Mammary Gland
+      Chemoprevention.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5897656/
     type: research
-    pmid: "29681851"
+    pmid: '29681851'
     relevance: supporting
   - sourceOrg: Cancer cell international
-    title: "Antiproliferative effect of indeno[1,2-d]thiazolo[3,2-a]pyrimidine analogues on IL-6 mediated STAT3 and role of the apoptotic pathway in albino Wistar rats of ethyl carbamate-induced lung carcinoma: In-silico, In-vitro, and In-vivo study."
+    title: >-
+      Antiproliferative effect of indeno[1,2-d]thiazolo[3,2-a]pyrimidine analogues on IL-6 mediated STAT3 and role of
+      the apoptotic pathway in albino Wistar rats of ethyl carbamate-induced lung carcinoma: In-silico, In-vitro, and
+      In-vivo study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11201866/
     type: research
-    pmid: "38926695"
+    pmid: '38926695'
     relevance: supporting
   - sourceOrg: JMIR bioinformatics and biotechnology
-    title: "The Differentially Expressed Genes Responsible for the Development of T Helper 9 Cells From T Helper 2 Cells in Various Disease States: Immuno-Interactomics Study."
+    title: >-
+      The Differentially Expressed Genes Responsible for the Development of T Helper 9 Cells From T Helper 2 Cells in
+      Various Disease States: Immuno-Interactomics Study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11135241/
     type: research
-    pmid: "38935935"
+    pmid: '38935935'
     relevance: supporting
   - sourceOrg: Veterinary world
     title: Effect of Ambrosia arborescens Mill. ethanolic extract on breast cancer induced in rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11045533/
     type: research
-    pmid: "38680140"
+    pmid: '38680140'
     relevance: supporting
   - sourceOrg: Nutrients
     title: Synergistic Enhancement of 5-Fluorouracil Chemotherapeutic Efficacy by Taurine in Colon Cancer Rat Model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11434803/
     type: research
-    pmid: "39339648"
+    pmid: '39339648'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: regurgitation
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 乳腺炎性癌 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - regurgitation 相關症狀
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 皮膚穿刺切片
+          notes: 真皮淋巴管內可見癌栓為診斷關鍵。與單純乳腺炎鑑別
+        - name: 臨床表現
+          notes: 抗生素治療無效的「乳腺炎」應高度懷疑炎性癌
+        - name: 分期檢查
+          notes: 胸腔 X 光、腹部超音波。確診時多已有肺及腹腔轉移
+ddxSource: auto-generated

@@ -3,12 +3,13 @@ nameEn: Diet Associated Dilated Cardiomyopathy
 nameZh: 飲食相關擴張性心肌病
 bodySystem: neurology
 description: 與飲食因素相關的擴張性心肌病，主要與無穀飼料及牛磺酸缺乏有關。心臟收縮功能下降導致心衰竭，早期發現並調整飲食可能逆轉。
-
 aliases:
-  - { alias: 營養性DCM, language: zh }
-  - { alias: Nutritional DCM, language: en }
-  - { alias: Taurine Deficiency DCM, language: en }
-
+  - alias: 營養性DCM
+    language: zh
+  - alias: Nutritional DCM
+    language: en
+  - alias: Taurine Deficiency DCM
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓DCM與牛磺酸缺乏明確相關，1980年代發現後商業貓糧已強化
-
 etiology:
   categories:
     - name: 營養因素
@@ -39,7 +39,6 @@ etiology:
         - 美國可卡犬
         - 拉不拉多
         - 大型犬種
-
 clinicalSigns:
   early:
     - 運動不耐
@@ -52,25 +51,23 @@ clinicalSigns:
     - 昏厥
     - 心律不整
     - 猝死
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波
-      notes: "左心室擴大、收縮分率(FS)<25%、EF<40%"
+      notes: 左心室擴大、收縮分率(FS)<25%、EF<40%
     - name: 血漿及全血牛磺酸
-      notes: "血漿<40 nmol/mL或全血<200 nmol/mL為低"
+      notes: 血漿<40 nmol/mL或全血<200 nmol/mL為低
     - name: 胸部X光
-      notes: "全心擴大、肺靜脈鬱血、肺水腫"
+      notes: 全心擴大、肺靜脈鬱血、肺水腫
     - name: 心電圖
-      notes: "心室早期收縮、心房顫動"
+      notes: 心室早期收縮、心房顫動
     - name: 血液左旋肉鹼
-      notes: "評估是否缺乏"
+      notes: 評估是否缺乏
   differentialDiagnoses:
     - 遺傳性DCM
     - 甲狀腺功能低下性心肌病
     - 心絲蟲病
     - 瓣膜性心臟病
-
 treatment:
   medical:
     - 飲食調整(最重要)
@@ -87,20 +84,52 @@ treatment:
     - ACE抑制劑(Enalapril 0.5 mg/kg q12-24h)
     - 抗心律不整藥物(若需要)
     - 追蹤：3-6個月後重複心臟超音波及牛磺酸
-
 prognosis:
-  general: "早期發現且牛磺酸缺乏明確者，50-70%可改善；晚期或遺傳性DCM預後不良"
-
+  general: 早期發現且牛磺酸缺乏明確者，50-70%可改善；晚期或遺傳性DCM預後不良
 prevention:
   - 選擇WSAVA推薦品牌飼料
   - 避免無穀或豆類為主配方
   - 易感品種定期心臟檢查
   - 自製飲食需獸醫營養師指導
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
     title: Retrospective study of dilated cardiomyopathy in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7848368/
     type: research
-    pmid: "33345431"
+    pmid: '33345431'
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: syncope
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 飲食相關擴張性心肌病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波
+          notes: 左心室擴大、收縮分率(FS)<25%、EF<40%
+        - name: 血漿及全血牛磺酸
+          notes: 血漿<40 nmol/mL或全血<200 nmol/mL為低
+        - name: 胸部X光
+          notes: 全心擴大、肺靜脈鬱血、肺水腫
+ddxSource: auto-generated

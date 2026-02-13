@@ -3,11 +3,11 @@ nameEn: Thymoma Oncology
 nameZh: 胸腺瘤
 bodySystem: oncology
 description: 胸腺上皮細胞的腫瘤，位於前縱膈。可伴隨副腫瘤症候群如重症肌無力 (myasthenia gravis)、巨食道症與皮膚病。手術切除為首選治療。
-
 aliases:
-  - { alias: "Thymic Tumor", language: en }
-  - { alias: "胸腺腫瘤", language: zh }
-
+  - alias: Thymic Tumor
+    language: en
+  - alias: 胸腺腫瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,14 +15,12 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。老年貓。
-
 etiology:
   categories:
     - name: 腫瘤性
       examples:
         - 胸腺上皮細胞增生
         - 可能伴副腫瘤症候群
-
 clinicalSigns:
   early:
     - 呼吸困難
@@ -32,7 +30,6 @@ clinicalSigns:
     - 面部/前肢水腫（前腔靜脈壓迫）
     - 全身虛弱（重症肌無力）
     - 巨食道症/吸入性肺炎
-
 diagnosis:
   primaryTests:
     - name: 胸腔 X 光
@@ -41,7 +38,6 @@ diagnosis:
       notes: 評估腫塊範圍與可切除性
     - name: Acetylcholine receptor antibody
       notes: 篩檢副腫瘤性重症肌無力
-
 treatment:
   principles:
     - 手術切除為首選
@@ -51,41 +47,80 @@ treatment:
     - 術前：胸腔穿刺引流積液
     - 術後追蹤重症肌無力（可能改善或惡化）
     - 不可切除：放射治療
-
 prognosis: 手術完全切除後中位存活 > 2 年。不完全切除預後較差。重症肌無力在切除後可能改善。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Cutaneous paraneoplastic syndromes in cats: a comparative clinical review."
+    title: 'Cutaneous paraneoplastic syndromes in cats: a comparative clinical review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12855766/
     type: review
-    pmid: "41607126"
+    pmid: '41607126'
     relevance: primary
   - sourceOrg: Mediastinum (Hong Kong, China)
-    title: "Surgical treatment of thymic epithelial tumors: a narrative review."
+    title: 'Surgical treatment of thymic epithelial tumors: a narrative review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11176987/
     type: review
-    pmid: "38881810"
+    pmid: '38881810'
     relevance: primary
   - sourceOrg: Journal of veterinary internal medicine
     title: Classification of myasthenia gravis and congenital myasthenic syndromes in dogs and cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7517852/
     type: review
-    pmid: "32668077"
+    pmid: '32668077'
     relevance: primary
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Thymoma-associated exfoliative dermatitis in a goat: case report and brief literature review."
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: 'Thymoma-associated exfoliative dermatitis in a goat: case report and brief literature review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6900714/
     type: review
-    pmid: "31650897"
+    pmid: '31650897'
     relevance: supporting
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
     title: Thymoma in an aged backyard Leghorn chicken, with reviews of a database and literature.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7953091/
     type: case-report
-    pmid: "33525992"
+    pmid: '33525992'
     relevance: supporting
 pubmedQueries:
   - query: '"thymoma" AND (veterinary OR canine OR feline) AND ("surgery" OR "myasthenia gravis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 胸腺瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸腔 X 光
+          notes: 前縱膈腫塊
+        - name: CT
+          notes: 評估腫塊範圍與可切除性
+        - name: Acetylcholine receptor antibody
+          notes: 篩檢副腫瘤性重症肌無力
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術切除為首選
+        - 術前評估重症肌無力
+ddxSource: auto-generated

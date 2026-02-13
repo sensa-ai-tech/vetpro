@@ -3,23 +3,26 @@ nameEn: Intervertebral Disc Disease
 nameZh: 椎間盤疾病
 bodySystem: neurology
 description: 椎間盤退化導致的脊髓壓迫性疾病，為犬最常見的脊髓疾病。依據退化類型分為 Hansen Type I 與 Type II。
-
 aliases:
-  - { alias: IVDD, language: en }
-  - { alias: Disc Herniation, language: en }
-  - { alias: Slipped Disc, language: en }
-  - { alias: 椎間盤突出, language: zh }
-
+  - alias: IVDD
+    language: en
+  - alias: Disc Herniation
+    language: en
+  - alias: Slipped Disc
+    language: en
+  - alias: 椎間盤突出
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
-    notes: Hansen Type I 好發於軟骨發育不良品種 (Dachshund、French Bulldog、Beagle、Pekingese、Cocker Spaniel)。Dachshund 終生發病率約 19-24%。Type II 好發於大型犬。通常 3-7 歲發病。
+    notes: >-
+      Hansen Type I 好發於軟骨發育不良品種 (Dachshund、French Bulldog、Beagle、Pekingese、Cocker Spaniel)。Dachshund 終生發病率約 19-24%。Type
+      II 好發於大型犬。通常 3-7 歲發病。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓較少見。發生時多為胸腰段。臨床表現可能不典型。
-
 etiology:
   categories:
     - name: Hansen Type I (椎間盤脫出)
@@ -39,7 +42,6 @@ etiology:
         - 高速少量髓核脫出 (acute non-compressive nucleus pulposus extrusion)
         - 引起脊髓挫傷但無持續壓迫
         - 預後通常較佳
-
 clinicalSigns:
   early:
     - 脊柱疼痛 (頸部僵硬或背痛)
@@ -56,27 +58,25 @@ clinicalSigns:
     - 深層痛覺喪失 (最嚴重，預後差)
     - 尿失禁/尿滯留
     - 上行性脊髓軟化症 (罕見但致命)
-
 diagnosis:
   primaryTests:
     - name: 完整神經學檢查
-      notes: "定位病灶：頸段 (C1-C5, C6-T2)、胸腰段 (T3-L3)、腰薦段 (L4-S3)。評估深層痛覺"
+      notes: 定位病灶：頸段 (C1-C5, C6-T2)、胸腰段 (T3-L3)、腰薦段 (L4-S3)。評估深層痛覺
     - name: MRI
-      notes: "金標準。可評估脊髓壓迫程度、脊髓水腫/出血、精準定位。需全身麻醉"
+      notes: 金標準。可評估脊髓壓迫程度、脊髓水腫/出血、精準定位。需全身麻醉
     - name: CT
-      notes: "可快速識別鈣化髓核脫出。CT myelography 可替代 MRI"
+      notes: 可快速識別鈣化髓核脫出。CT myelography 可替代 MRI
   imaging:
     - name: 脊髓 MRI
-      notes: "首選影像學。評估壓迫與脊髓變化"
+      notes: 首選影像學。評估壓迫與脊髓變化
     - name: CT / CT myelography
-      notes: "MRI 無法取得時的替代選擇"
+      notes: MRI 無法取得時的替代選擇
     - name: X 光
-      notes: "可見椎間隙狹窄、髓核鈣化，但無法直接評估脊髓壓迫"
+      notes: 可見椎間隙狹窄、髓核鈣化，但無法直接評估脊髓壓迫
   additional:
     - 脊髓攝影 (myelography，目前少用)
     - CBC/生化 (術前評估)
     - 凝血功能
-
 stagingSystem:
   name: Modified Frankel Scale (神經學分級)
   stages:
@@ -95,7 +95,6 @@ stagingSystem:
     - stage: 5
       label: 完全癱瘓，無深層痛覺
       description: 完全癱瘓且深層痛覺喪失。預後最差
-
 treatment:
   principles:
     - 治療選擇取決於神經學分級
@@ -104,16 +103,16 @@ treatment:
     - 深層痛覺喪失 >48 小時預後極差
   medications:
     - name: Gabapentin
-      dose: "5-10 mg/kg PO BID-TID"
+      dose: 5-10 mg/kg PO BID-TID
       notes: 疼痛管理。可與 NSAIDs 合併使用
     - name: Methocarbamol
-      dose: "15-44 mg/kg PO BID-TID"
+      dose: 15-44 mg/kg PO BID-TID
       notes: 肌肉鬆弛劑，緩解肌肉痙攣
     - name: NSAIDs (Meloxicam, Carprofen)
-      dose: "依藥物標準劑量"
+      dose: 依藥物標準劑量
       notes: 抗炎止痛。避免與類固醇同時使用
     - name: Prednisolone (爭議)
-      dose: "0.5-1 mg/kg PO SID (短期)"
+      dose: 0.5-1 mg/kg PO SID (短期)
       notes: 目前證據不支持常規使用類固醇。避免與 NSAIDs 同時使用
   general:
     - 手術：hemilaminectomy (胸腰段)、ventral slot (頸段)
@@ -121,46 +120,103 @@ treatment:
     - 物理復健 (水中跑步機、被動關節活動、神經肌肉電刺激)
     - 膀胱管理 (尿滯留時定時擠壓或導尿)
     - 體重管理
-
 prognosis: Grade 1-3 手術成功率 >90%。Grade 4 手術成功率約 85-95%。Grade 5 (深層痛覺喪失) 手術成功率約 50-60%，深層痛覺喪失 >48 小時預後極差。保守治療復發率約 30-50%。
-
 ontologyMappings:
   - source: MONDO
-    code: "MONDO:0005116"
+    code: MONDO:0005116
     label: intervertebral disc disease
     confidence: exact
-
 guidelineRefs:
   - sourceOrg: ACVIM
     title: ACVIM Small Animal Consensus Statement on Diagnosis and Treatment of IVDD
     url: https://pubmed.ncbi.nlm.nih.gov/32056285/
     type: consensus
-    pmid: "32056285"
+    pmid: '32056285'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline intervertebral disc disease: a systematic review and meta-analysis."
+    title: 'Feline intervertebral disc disease: a systematic review and meta-analysis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12669517/
     type: review
-    pmid: "41006947"
+    pmid: '41006947'
   - sourceOrg: Frontiers in veterinary science
     title: Prognostic Factors in Canine Acute Intervertebral Disc Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7725764/
     type: review
-    pmid: "33324703"
+    pmid: '33324703'
   - sourceOrg: Frontiers in veterinary science
     title: Current Approaches to the Management of Acute Thoracolumbar Disc Extrusion in Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7521156/
     type: review
-    pmid: "33117847"
+    pmid: '33117847'
   - sourceOrg: International journal of molecular sciences
     title: Macrophages and Intervertebral Disc Degeneration.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9863885/
     type: review
-    pmid: "36674887"
+    pmid: '36674887'
 pubmedQueries:
   - query: '"intervertebral disc disease" AND dog AND ("surgery" OR "conservative" OR "consensus")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "END"
-  sectionTitle: "DISEASE"
+  chapter: END
+  sectionTitle: DISEASE
   pdfPage: 582
+diagnosticAlgorithm:
+  title: 椎間盤疾病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估疼痛部位、神經功能缺失程度
+      findings:
+        - 背部或頸部疼痛
+        - 後肢無力或癱瘓
+        - 本體感覺異常
+        - 深部痛覺評估
+    - step: 2
+      action: 神經學檢查
+      details: 定位病灶節段
+      findings:
+        - 步態評估
+        - 脊髓反射測試
+        - 本體感覺測試
+        - 疼痛感覺評估（深部痛覺）
+    - step: 3
+      action: 脊椎影像
+      details: X光初步評估
+      findings:
+        - 椎間盤空間狹窄
+        - 椎間盤鈣化
+        - 脊椎X光可能正常
+        - 排除骨折或腫瘤
+    - step: 4
+      action: 進階影像確診
+      details: MRI或CT脊髓造影
+      findings:
+        - MRI確認突出位置與嚴重度
+        - 脊髓壓迫程度
+        - 區分Hansen Type I與II
+        - 指導手術減壓位置
+clinicalPearls:
+  - 深部痛覺是最重要的預後指標
+  - Dachshund的IVDD風險是其他品種的10-12倍
+  - 進行性脊髓軟化(PMM)是致命併發症，約10% Grade V病例
+  - 「籠休」必須嚴格，僅允許出籠大小便
+  - 類固醇與NSAIDs不可併用
+  - MRI可發現X光看不到的軟組織壓迫
+monitoringItems:
+  - 神經功能評估（每日→每週）
+  - 疼痛評估
+  - 膀胱功能
+  - 復健進展
+  - 體重
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: paresis-paralysis
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: common
+ddxSource: book

@@ -3,12 +3,13 @@ nameEn: Anesthesia Complications
 nameZh: 麻醉併發症
 bodySystem: emergency
 description: 麻醉相關的不良事件,包括心血管、呼吸、代謝及其他系統併發症。早期識別及處理可降低死亡率。
-
 aliases:
-  - { alias: 麻醉風險, language: zh }
-  - { alias: Anesthetic adverse events, language: en }
-  - { alias: 麻醉意外, language: zh }
-
+  - alias: 麻醉風險
+    language: zh
+  - alias: Anesthetic adverse events
+    language: en
+  - alias: 麻醉意外
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓麻醉死亡率略高於犬(0.2-0.4%)
-
 etiology:
   categories:
     - name: 心血管併發症
@@ -36,7 +36,6 @@ etiology:
         - 低體溫(<36°C)
         - 惡性高熱(罕見)
         - 喉痙攣(貓)
-
 clinicalSigns:
   early:
     - 低血壓:黏膜蒼白、毛細管再充盈時間延長
@@ -46,17 +45,15 @@ clinicalSigns:
     - 組織灌流不足:乳酸上升、尿量減少
     - 嚴重低氧:發紺、心律不整
     - 心跳停止
-
 diagnosis:
   primaryTests:
     - name: 持續監控
-      notes: "心電圖、血壓、SpO2, ETCO2, 體溫"
+      notes: 心電圖、血壓、SpO2, ETCO2, 體溫
     - name: 血液檢查
-      notes: "血氣、乳酸、電解質"
+      notes: 血氣、乳酸、電解質
   differentialDiagnoses:
     - 正常麻醉變化
     - 器械故障或讀值錯誤
-
 treatment:
   medical:
     - 低血壓:增加靜脈輸液10-20 mL/kg快速,Dopamine 5-10 μg/kg/min CRI
@@ -64,21 +61,47 @@ treatment:
     - 低體溫:強制暖空氣、溫暖輸液
     - 心跳停止:CPR(胸外按壓100-120/min、Epinephrine 0.01 mg/kg IV)
     - 喉痙攣:Propofol小劑量IV、Lidocaine噴霧喉頭
-
 prognosis:
-  general: "早期發現及處理多數併發症可逆。心跳停止復甦成功率<10%。高風險患者(ASA III-V)併發症率顯著增加。適當監控及準備為關鍵。"
-
+  general: 早期發現及處理多數併發症可逆。心跳停止復甦成功率<10%。高風險患者(ASA III-V)併發症率顯著增加。適當監控及準備為關鍵。
 prevention:
   - 術前完整評估及ASA分級
   - 適當監控設備
   - 訓練有素的麻醉監控人員
   - 備妥急救藥物及設備
   - 高風險患者增加監控頻率
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Comparison of percutaneous cystolithotomy and open cystotomy for removal of urethral and bladder uroliths in dogs: Retrospective study of 81 cases (2014-2018)."
+    title: >-
+      Comparison of percutaneous cystolithotomy and open cystotomy for removal of urethral and bladder uroliths in dogs:
+      Retrospective study of 81 cases (2014-2018).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9708453/
     type: research
-    pmid: "36315023"
+    pmid: '36315023'
+associatedSymptoms:
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: common
+  - symptomId: hypothermia-sign
+    frequency: common
+diagnosticAlgorithm:
+  title: 麻醉併發症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pallor-cyanosis 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - dehydration 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 持續監控
+          notes: 心電圖、血壓、SpO2, ETCO2, 體溫
+        - name: 血液檢查
+          notes: 血氣、乳酸、電解質
+ddxSource: auto-generated

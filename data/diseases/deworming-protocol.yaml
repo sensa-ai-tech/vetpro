@@ -3,12 +3,13 @@ nameEn: Deworming Protocol
 nameZh: 驅蟲方案
 bodySystem: other
 description: 犬貓的標準驅蟲程序,涵蓋幼齡動物密集驅蟲、成年動物定期預防及特殊情況處理。根據寄生蟲種類、動物年齡及暴露風險設計個別化方案。
-
 aliases:
-  - { alias: 驅蟲計畫, language: zh }
-  - { alias: Deworming schedule, language: en }
-  - { alias: Anthelmintic protocol, language: en }
-
+  - alias: 驅蟲計畫
+    language: zh
+  - alias: Deworming schedule
+    language: en
+  - alias: Anthelmintic protocol
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 幼貓及室外貓為高風險族群
-
 etiology:
   categories:
     - name: 驅蟲藥物類型
@@ -26,7 +26,6 @@ etiology:
         - 廣效驅蟲藥(pyrantel、fenbendazole)
         - 月月投預防藥(含ivermectin或milbemycin)
         - 絛蟲專用藥(praziquantel)
-
 clinicalSigns:
   early:
     - 驅蟲後可能短暫腹瀉(排出蟲體)
@@ -34,17 +33,15 @@ clinicalSigns:
   progressive:
     - 大量寄生蟲感染:嘔吐、腹瀉、體重減輕
     - 幼齡動物腹部膨大
-
 diagnosis:
   primaryTests:
     - name: 糞便浮游檢查
-      notes: "驅蟲前檢查確認寄生蟲種類"
+      notes: 驅蟲前檢查確認寄生蟲種類
     - name: 驅蟲後糞檢
-      notes: "治療後2-4週重複檢查確認驅蟲成功"
+      notes: 治療後2-4週重複檢查確認驅蟲成功
   differentialDiagnoses:
     - 驅蟲藥物副作用
     - 其他腸胃道疾病
-
 treatment:
   medical:
     - 幼犬幼貓:2、4、6、8週齡,每2週一次(pyrantel 5 mg/kg PO或fenbendazole 50 mg/kg PO×3天)
@@ -52,10 +49,8 @@ treatment:
     - 成犬成貓:每月心絲蟲預防藥(通常含腸道寄生蟲成分)或每3個月廣效驅蟲
     - 絛蟲:praziquantel 5-10 mg/kg PO,發現片節時投藥
     - 懷孕犬貓:分娩前後使用安全驅蟲藥(fenbendazole)
-
 prognosis:
-  general: "正確執行驅蟲方案可有效控制腸道寄生蟲,降低人畜共通感染風險。"
-
+  general: 正確執行驅蟲方案可有效控制腸道寄生蟲,降低人畜共通感染風險。
 prevention:
   - 遵循幼齡動物密集驅蟲時程
   - 成年動物持續每月或每季驅蟲
@@ -63,3 +58,31 @@ prevention:
   - 環境衛生管理:及時清理糞便
   - 多寵物家庭所有動物同時驅蟲
   - 新引入動物應先驅蟲再接觸其他寵物
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 驅蟲方案 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - abdominal-distension 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便浮游檢查
+          notes: 驅蟲前檢查確認寄生蟲種類
+        - name: 驅蟲後糞檢
+          notes: 治療後2-4週重複檢查確認驅蟲成功
+ddxSource: auto-generated

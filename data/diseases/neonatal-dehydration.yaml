@@ -3,12 +3,13 @@ nameEn: Neonatal Dehydration
 nameZh: 新生兒脫水
 bodySystem: other
 description: 新生犬貓因體液總量占體重比例高(約80%)，且腎臟濃縮功能未成熟，容易因攝入不足或喪失過多而發生脫水。嚴重脫水可導致循環衰竭及死亡。
-
 aliases:
-  - { alias: 新生動物水分流失, language: zh }
-  - { alias: Neonatal Dehydration, language: en }
-  - { alias: Puppy Dehydration, language: en }
-
+  - alias: 新生動物水分流失
+    language: zh
+  - alias: Neonatal Dehydration
+    language: en
+  - alias: Puppy Dehydration
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 與犬類似
-
 etiology:
   categories:
     - name: 攝入不足
@@ -38,7 +38,6 @@ etiology:
       examples:
         - 腹水
         - 胸水
-
 clinicalSigns:
   early:
     - 輕度脫水(5%)：皮膚彈性稍差、黏膜稍乾
@@ -50,23 +49,21 @@ clinicalSigns:
     - 重度脫水(>12%)：休克、昏迷
     - 心跳微弱、四肢冰冷
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
-      notes: "皮膚彈性測試、黏膜濕潤度、毛細血管回填時間"
+      notes: 皮膚彈性測試、黏膜濕潤度、毛細血管回填時間
     - name: 體重監測
-      notes: "急性體重下降>5%提示脫水"
+      notes: 急性體重下降>5%提示脫水
     - name: 血液檢查
-      notes: "血比容升高、總蛋白升高、BUN/Cr比值升高"
+      notes: 血比容升高、總蛋白升高、BUN/Cr比值升高
     - name: 尿液檢查
-      notes: "尿比重升高、尿量減少"
+      notes: 尿比重升高、尿量減少
   differentialDiagnoses:
     - 腹瀉性疾病
     - 敗血症
     - 腎臟疾病
     - 先天性心臟病
-
 treatment:
   medical:
     - 輕度脫水：口服或皮下補液
@@ -78,13 +75,39 @@ treatment:
     - 治療原發疾病(止瀉、抗生素)
     - 保溫
     - 監測尿量、體重、電解質
-
 prognosis:
-  general: "輕中度脫水經適當補液預後良好；重度脫水合併休克預後謹慎"
-
+  general: 輕中度脫水經適當補液預後良好；重度脫水合併休克預後謹慎
 prevention:
   - 確保充足哺乳
   - 環境溫濕度適當
   - 腹瀉時及早治療
   - 每日體重監測
   - 補充餵食弱勢幼犬
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: common
+diagnosticAlgorithm:
+  title: 新生兒脫水 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - coma-stupor 相關症狀
+        - dehydration 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 皮膚彈性測試、黏膜濕潤度、毛細血管回填時間
+        - name: 體重監測
+          notes: 急性體重下降>5%提示脫水
+        - name: 血液檢查
+          notes: 血比容升高、總蛋白升高、BUN/Cr比值升高
+ddxSource: auto-generated

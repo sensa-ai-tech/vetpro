@@ -3,11 +3,11 @@ nameEn: Barbering Behavior
 nameZh: 理毛行為
 bodySystem: behavioral
 description: 動物拔除或咬斷自己或同伴毛髮。囓齒類常見為社交行為，貓犬可能為強迫症。需區分原因並適當處理。
-
 aliases:
-  - { alias: 拔毛行為, language: zh }
-  - { alias: Hair Pulling, language: en }
-
+  - alias: 拔毛行為
+    language: zh
+  - alias: Hair Pulling
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓可能為過度理毛一種表現
-
 etiology:
   categories:
     - name: 醫學原因
@@ -30,7 +29,6 @@ etiology:
         - 強迫症
         - 焦慮或壓力
         - 社交問題（囓齒類）
-
 clinicalSigns:
   early:
     - 拔除或咬斷毛髮
@@ -39,29 +37,45 @@ clinicalSigns:
     - 廣泛脫毛
     - 皮膚損傷
     - 持續行為
-
 diagnosis:
   primaryTests:
     - name: 排除皮膚病
-      notes: "皮膚刮搔、毛髮檢查"
+      notes: 皮膚刮搔、毛髮檢查
     - name: 行為評估
-      notes: "焦慮、強迫症評估"
+      notes: 焦慮、強迫症評估
   differentialDiagnoses:
     - 過度理毛
     - 皮膚病
     - 寄生蟲
-
 treatment:
   medical:
     - 治療潛在醫學問題
     - 行為修正（心因性）
     - 環境豐富化
     - 藥物：Fluoxetine（心因性）
-
 prognosis:
-  general: "醫學原因治療後預後佳。心因性需長期管理。"
-
+  general: 醫學原因治療後預後佳。心因性需長期管理。
 prevention:
   - 減少壓力
   - 定期皮膚檢查
   - 充足環境刺激
+associatedSymptoms:
+  - symptomId: alopecia
+    frequency: common
+diagnosticAlgorithm:
+  title: 理毛行為 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 排除皮膚病
+          notes: 皮膚刮搔、毛髮檢查
+        - name: 行為評估
+          notes: 焦慮、強迫症評估
+ddxSource: auto-generated

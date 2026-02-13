@@ -3,19 +3,21 @@ nameEn: Feline Hyperesthesia Syndrome
 nameZh: 貓過度興奮症候群
 bodySystem: behavioral
 description: 貓表現出背部皮膚波動（rippling skin）、突然瘋狂奔跑、攻擊自身尾部及對觸碰極度敏感等一系列異常行為的症候群。病因不明，可能涉及癲癇、強迫症、皮膚病或神經肌肉疾病等多重因素。
-
 aliases:
-  - { alias: "貓皮膚顫搐症候群", language: zh }
-  - { alias: "滾動皮膚症候群", language: zh }
-  - { alias: "Rolling Skin Disease", language: en }
-  - { alias: "FHS", language: en }
-  - { alias: "Twitchy Cat Syndrome", language: en }
-
+  - alias: 貓皮膚顫搐症候群
+    language: zh
+  - alias: 滾動皮膚症候群
+    language: zh
+  - alias: Rolling Skin Disease
+    language: en
+  - alias: FHS
+    language: en
+  - alias: Twitchy Cat Syndrome
+    language: en
 species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 好發於 Siamese、Burmese 及其他東方品種。典型發作表現為突然凝視尾部→背部皮膚波動→瘋狂奔跑→攻擊尾部。
-
 etiology:
   categories:
     - name: 可能病因（不明確）
@@ -31,7 +33,6 @@ etiology:
         - 觸碰腰背部
         - 高壓力/激動狀態
         - 特定環境變化
-
 clinicalSigns:
   early:
     - 背部皮膚偶爾波動
@@ -43,14 +44,12 @@ clinicalSigns:
     - 攻擊自身尾部（可能造成嚴重咬傷）
     - 觸碰背部即引發發作
     - 發作間歇期焦慮增加
-
 diagnosis:
   primaryTests:
     - name: 系統排除
       notes: 皮膚科檢查（排除過敏、蠕形蟎）、脊髓 X 光/MRI（排除脊髓疾病）、腦部 MRI（排除癲癇病灶）。
     - name: 試驗性治療
       notes: 對抗癲癇藥或抗焦慮藥的反應可輔助診斷方向。
-
 treatment:
   principles:
     - 排除可治療的醫學原因
@@ -64,9 +63,51 @@ treatment:
     - 環境豐富化與壓力減輕
     - 費洛蒙（Feliway）
     - 避免觸碰腰背部
-
 prognosis: 貓過度興奮症候群為慢性病症，目前無根治方法。多數貓以藥物管理可減少發作頻率與嚴重度。嚴重自殘尾部者可能需截尾。早期介入與良好的環境管理可改善生活品質。部分貓隨年齡增長症狀可能減輕。
-
 pubmedQueries:
   - query: '"Feline Hyperesthesia Syndrome" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 貓皮膚感覺過敏症候群 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估發作性背部皮膚波動、尾巴追咬、突然奔跑和瞳孔散大等典型行為
+      findings:
+        - 發作性背部皮膚波動抽搐
+        - 突然瘋狂奔跑或攻擊自己尾巴
+        - 瞳孔散大伴異常發聲
+    - step: 2
+      action: 排除性檢查
+      details: 進行完整皮膚學檢查排除跳蚤過敏和其他皮膚病，神經學檢查排除癲癇
+      findings:
+        - 皮膚檢查排除跳蚤過敏和其他過敏性皮膚炎
+        - 排除脊椎病變引起的疼痛
+        - 排除甲狀腺功能亢進
+    - step: 3
+      action: 臨床確診
+      details: 排除所有器質性病因後根據典型行為特徵臨床確診
+      findings:
+        - 排除所有器質性病因後臨床確診
+        - 行為特徵符合典型症候群表現
+        - 對加巴噴丁或抗焦慮藥物可能有反應
+clinicalPearls:
+  - FHS是排除性診斷——必須排除跳蚤過敏、食物過敏及脊髓疾病
+  - 嚴格跳蚤預防是第一步，即使在室內貓
+  - 暹羅貓及東方短毛貓系列品種似乎較易罹患
+  - 部分病例實際上是跳蚤過敏——試驗性治療非常重要
+  - Gabapentin是目前最常推薦的初始藥物選擇
+monitoringItems:
+  - 行為日誌（發作頻率及嚴重度）
+  - 皮膚及毛髮狀況評估
+  - 藥物副作用監測
+  - 體重（過度理毛可能影響進食）
+  - 生活品質評估
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: mydriasis
+    frequency: uncommon
+ddxSource: book

@@ -3,19 +3,21 @@ nameEn: Avian Crop Stasis
 nameZh: 禽類嗉囊停滯
 bodySystem: gastrointestinal
 description: 嗉囊停滯是指嗉囊排空功能障礙導致食物滯留的症狀，可由多種原因引起，包括感染（念珠菌、細菌）、異物、神經功能障礙或全身性疾病。手養幼鳥及鸚鵡類最為常見，需迅速找出潛在原因並治療。
-
 aliases:
-  - { alias: 嗉囊延遲排空, language: zh }
-  - { alias: 嗉囊麻痺, language: zh }
-  - { alias: Crop stasis in birds, language: en }
-  - { alias: Delayed crop emptying, language: en }
-  - { alias: Crop impaction, language: en }
-
+  - alias: 嗉囊延遲排空
+    language: zh
+  - alias: 嗉囊麻痺
+    language: zh
+  - alias: Crop stasis in birds
+    language: en
+  - alias: Delayed crop emptying
+    language: en
+  - alias: Crop impaction
+    language: en
 species:
   - speciesCommon: bird
     prevalence: common
     notes: 手養幼鳥極為常見。成鳥中鸚鵡類較多見。為許多疾病的共同表現，非獨立疾病。
-
 etiology:
   categories:
     - name: 感染性
@@ -34,7 +36,6 @@ etiology:
         - 低溫配方奶（手養幼鳥）
         - 全身性疾病（肝病、腎病）
         - 重金屬中毒
-
 clinicalSigns:
   early:
     - 嗉囊排空時間延長
@@ -47,7 +48,6 @@ clinicalSigns:
     - 體重下降
     - 脫水
     - 嗜睡
-
 diagnosis:
   primaryTests:
     - name: 嗉囊拭子細胞學
@@ -56,7 +56,6 @@ diagnosis:
       notes: 嗉囊擴大充滿食物或氣體。評估是否有異物或下消化道阻塞
     - name: 血液檢查
       notes: CBC 與生化排除全身性疾病。重金屬濃度測定
-
 treatment:
   principles:
     - 找出並治療根本原因
@@ -72,9 +71,44 @@ treatment:
     - 補液治療
     - 嗉囊按摩促進排空
     - 針對基礎疾病治療
-
 prognosis: 預後取決於根本原因。單純感染性嗉囊炎經治療後預後良好。PDD 引起者預後謹慎。異物阻塞移除後預後良好。全身性疾病所致者需根據基礎疾病評估。手養幼鳥嗉囊停滯及時處理多能恢復。
-
 pubmedQueries:
   - query: '"crop stasis" AND (avian OR bird OR psittacine) AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類嗉囊停滯 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - weakness 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 嗉囊拭子細胞學
+          notes: 革蘭氏染色評估念珠菌與細菌。正常嗉囊應以革蘭氏陽性菌為主
+        - name: X 光
+          notes: 嗉囊擴大充滿食物或氣體。評估是否有異物或下消化道阻塞
+        - name: 血液檢查
+          notes: CBC 與生化排除全身性疾病。重金屬濃度測定
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 找出並治療根本原因
+        - 嗉囊排空處理
+        - 支持療法
+ddxSource: auto-generated

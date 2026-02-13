@@ -2,18 +2,26 @@ slug: protein-calorie-malnutrition
 nameEn: Protein-Calorie Malnutrition
 nameZh: 蛋白質熱量營養不良
 bodySystem: metabolic
-description: 因蛋白質與/或熱量攝取不足或利用障礙導致的營養缺乏狀態。可分為 marasmus（總熱量不足，消瘦型）與 kwashiorkor 類似型（蛋白質不足但熱量尚足，低白蛋白型）。在獸醫臨床常見於慢性疾病、長期食慾不振、不當飲食管理或動物虐待/忽視案例。
-
+description: >-
+  因蛋白質與/或熱量攝取不足或利用障礙導致的營養缺乏狀態。可分為 marasmus（總熱量不足，消瘦型）與 kwashiorkor
+  類似型（蛋白質不足但熱量尚足，低白蛋白型）。在獸醫臨床常見於慢性疾病、長期食慾不振、不當飲食管理或動物虐待/忽視案例。
 aliases:
-  - { alias: 蛋白質能量營養不良, language: zh }
-  - { alias: 營養不良, language: zh }
-  - { alias: 惡病質, language: zh }
-  - { alias: PCM, language: en }
-  - { alias: Protein-Energy Malnutrition, language: en }
-  - { alias: PEM, language: en }
-  - { alias: Cachexia, language: en }
-  - { alias: Malnutrition, language: en }
-
+  - alias: 蛋白質能量營養不良
+    language: zh
+  - alias: 營養不良
+    language: zh
+  - alias: 惡病質
+    language: zh
+  - alias: PCM
+    language: en
+  - alias: Protein-Energy Malnutrition
+    language: en
+  - alias: PEM
+    language: en
+  - alias: Cachexia
+    language: en
+  - alias: Malnutrition
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -23,7 +31,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓為專性肉食動物，對蛋白質需求較犬高（成貓最低蛋白質需求約 26% DM）。不當的素食飲食或低品質食物易導致蛋白質缺乏。長期食慾不振 > 3-5 天可引發肝臟脂肪沉積症（hepatic lipidosis）。
-
 etiology:
   categories:
     - name: 攝取不足
@@ -53,7 +60,6 @@ etiology:
         - 住院期間營養支持不足
         - 術後長時間禁食
         - 不當飲食限制
-
 clinicalSigns:
   early:
     - 體重減輕（> 10% 體重流失為顯著）
@@ -74,18 +80,19 @@ clinicalSigns:
     - 嚴重貧血
     - 多器官功能障礙
     - 再餵食症候群風險（refeeding syndrome）
-
 diagnosis:
   primaryTests:
     - name: 體態評分（BCS）與肌肉狀態評分（MCS）
-      notes: "BCS 使用 9 分制（1-3 過瘦、4-5 理想、6-9 過重）。MCS 獨立於 BCS，評估肌肉量（正常、輕度/中度/重度萎縮）。兩項評分應同時記錄。"
+      notes: BCS 使用 9 分制（1-3 過瘦、4-5 理想、6-9 過重）。MCS 獨立於 BCS，評估肌肉量（正常、輕度/中度/重度萎縮）。兩項評分應同時記錄。
     - name: 血清白蛋白與前白蛋白
-      notes: "白蛋白 < 2.0 g/dL 為低白蛋白血症（正常犬 2.5-4.0、貓 2.5-3.9 g/dL）。白蛋白半衰期長（約 8 天），反映較長期的蛋白質狀態。前白蛋白（transthyretin）半衰期短，更敏感地反映急性營養變化。"
+      notes: >-
+        白蛋白 < 2.0 g/dL 為低白蛋白血症（正常犬 2.5-4.0、貓 2.5-3.9 g/dL）。白蛋白半衰期長（約 8
+        天），反映較長期的蛋白質狀態。前白蛋白（transthyretin）半衰期短，更敏感地反映急性營養變化。
   imaging:
     - name: 腹部超音波
-      notes: "評估基礎疾病（腸壁增厚提示 IBD、肝臟變化提示脂肪肝等）。可見腹水（低白蛋白性）。"
+      notes: 評估基礎疾病（腸壁增厚提示 IBD、肝臟變化提示脂肪肝等）。可見腹水（低白蛋白性）。
     - name: 胸腔 X 光
-      notes: "評估心臟大小（心肌萎縮）、肺部（感染）。"
+      notes: 評估心臟大小（心肌萎縮）、肺部（感染）。
   differentialDiagnoses:
     - 外分泌胰臟功能不全 (Exocrine Pancreatic Insufficiency)
     - 腎上腺皮質功能不全 (Hypoadrenocorticism)
@@ -100,7 +107,6 @@ diagnosis:
     - 維生素 B12 與葉酸（腸道吸收指標）
     - TLI（Trypsin-Like Immunoreactivity，排除 EPI）
     - 糞便檢查（寄生蟲排除）
-
 treatment:
   principles:
     - 警惕再餵食症候群（refeeding syndrome）風險
@@ -109,49 +115,48 @@ treatment:
     - 監測電解質（磷、鉀、鎂）
     - 維持瘦體組織量（lean body mass）以確保氨代謝與整體代謝功能
   general:
-    - "再餵食症候群預防（關鍵）：嚴重營養不良動物開始餵食前，先矯正脫水與電解質異常"
-    - "起始熱量：從靜止能量需求（RER）的 25-33% 開始，每 12-24 小時增加 25%，3-5 天內達到完整 RER"
-    - "RER 計算：RER (kcal/day) = 70 × (體重 kg)^0.75"
-    - "高蛋白質飲食：蛋白質佔 30-50% ME（除非有肝性腦病或嚴重腎病需限蛋白）"
-    - "食道造口管或鼻胃管輔助餵食：無法自主進食 > 3 天時考慮放置餵食管"
-    - "電解質監測與補充：特別注意磷（< 2.5 mg/dL 需補充）、鉀、鎂"
-    - "磷酸鉀補充：0.01-0.06 mmol/kg/hr IV CRI（低磷血症時）"
-    - "維生素 B 群補充：Thiamine (B1) 25-50 mg/day（犬）、12.5-25 mg/day（貓），預防 Wernicke's encephalopathy"
-    - "Cobalamin (B12) 補充：250 μg（貓）或 250-1500 μg（犬）SC 每週一次 × 6 週"
-    - "白蛋白補充（嚴重低白蛋白 < 1.5 g/dL）：25% human albumin 稀釋至 5% 緩慢 IV"
-    - "n-3 脂肪酸補充（EPA/DHA）：可降低促炎性細胞激素、改善食慾，尤其適用於心臟惡病質與腫瘤惡病質患者"
-    - "食慾促進劑使用須謹慎：可能延遲正規營養支持的啟動。Diazepam/Oxazepam 在貓罕見但可引發特發性猛暴性肝衰竭"
-    - "治療基礎疾病：驅蟲、IBD 治療、EPI 酵素補充等"
-
-prognosis: 預後取決於基礎原因與營養不良的嚴重程度。單純攝取不足（如救援動物）經適當漸進式營養復原後預後良好。慢性疾病相關的營養不良預後取決於基礎疾病的可治療性。癌症惡病質預後通常較差。再餵食症候群若未預防可致命（嚴重低磷血症、心律不整、呼吸衰竭）。住院患者及時啟動營養支持可顯著改善預後。
-
+    - 再餵食症候群預防（關鍵）：嚴重營養不良動物開始餵食前，先矯正脫水與電解質異常
+    - 起始熱量：從靜止能量需求（RER）的 25-33% 開始，每 12-24 小時增加 25%，3-5 天內達到完整 RER
+    - RER 計算：RER (kcal/day) = 70 × (體重 kg)^0.75
+    - 高蛋白質飲食：蛋白質佔 30-50% ME（除非有肝性腦病或嚴重腎病需限蛋白）
+    - 食道造口管或鼻胃管輔助餵食：無法自主進食 > 3 天時考慮放置餵食管
+    - 電解質監測與補充：特別注意磷（< 2.5 mg/dL 需補充）、鉀、鎂
+    - 磷酸鉀補充：0.01-0.06 mmol/kg/hr IV CRI（低磷血症時）
+    - 維生素 B 群補充：Thiamine (B1) 25-50 mg/day（犬）、12.5-25 mg/day（貓），預防 Wernicke's encephalopathy
+    - Cobalamin (B12) 補充：250 μg（貓）或 250-1500 μg（犬）SC 每週一次 × 6 週
+    - 白蛋白補充（嚴重低白蛋白 < 1.5 g/dL）：25% human albumin 稀釋至 5% 緩慢 IV
+    - n-3 脂肪酸補充（EPA/DHA）：可降低促炎性細胞激素、改善食慾，尤其適用於心臟惡病質與腫瘤惡病質患者
+    - 食慾促進劑使用須謹慎：可能延遲正規營養支持的啟動。Diazepam/Oxazepam 在貓罕見但可引發特發性猛暴性肝衰竭
+    - 治療基礎疾病：驅蟲、IBD 治療、EPI 酵素補充等
+prognosis: >-
+  預後取決於基礎原因與營養不良的嚴重程度。單純攝取不足（如救援動物）經適當漸進式營養復原後預後良好。慢性疾病相關的營養不良預後取決於基礎疾病的可治療性。癌症惡病質預後通常較差。再餵食症候群若未預防可致命（嚴重低磷血症、心律不整、呼吸衰竭）。住院患者及時啟動營養支持可顯著改善預後。
 guidelineRefs:
   - sourceOrg: AAHA
     title: 2010 AAHA Nutritional Assessment Guidelines for Dogs and Cats
     url: https://pubmed.ncbi.nlm.nih.gov/20178389/
     type: guideline
-    pmid: "20178389"
+    pmid: '20178389'
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
     title: ACVN/ESVCN consensus statement on nutrition of the critically ill animal
     url: https://pubmed.ncbi.nlm.nih.gov/31152480/
     type: consensus
-    pmid: "31152480"
+    pmid: '31152480'
   - sourceOrg: Veterinary Clinics of North America Small Animal Practice
     title: Enteral nutrition for the critically ill or injured patient
     url: https://pubmed.ncbi.nlm.nih.gov/16564073/
     type: review
-    pmid: "16564073"
+    pmid: '16564073'
   - sourceOrg: Journal of veterinary internal medicine
     title: Refeeding syndrome in small ruminants receiving parenteral nutrition.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7379001/
     type: research
-    pmid: "32588478"
+    pmid: '32588478'
     relevance: supporting
   - sourceOrg: Arquivos de gastroenterologia
     title: ALTERATION OF TASTE BUDS IN EXPERIMENTAL CIRRHOSIS. Is there correlation with human hypogeusia?
     url: https://pubmed.ncbi.nlm.nih.gov/27706460/
     type: research
-    pmid: "27706460"
+    pmid: '27706460'
     relevance: supporting
 pubmedQueries:
   - query: '"malnutrition" AND (dog OR cat OR canine OR feline) AND ("refeeding syndrome" OR "nutritional support")'
@@ -160,6 +165,54 @@ pubmedQueries:
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "NUTRITION"
+  chapter: DIG
+  sectionTitle: NUTRITION
   pdfPage: 480
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 蛋白質熱量營養不良 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 體態評分（BCS）與肌肉狀態評分（MCS）
+          notes: BCS 使用 9 分制（1-3 過瘦、4-5 理想、6-9 過重）。MCS 獨立於 BCS，評估肌肉量（正常、輕度/中度/重度萎縮）。兩項評分應同時記錄。
+        - name: 血清白蛋白與前白蛋白
+          notes: >-
+            白蛋白 < 2.0 g/dL 為低白蛋白血症（正常犬 2.5-4.0、貓 2.5-3.9 g/dL）。白蛋白半衰期長（約 8
+            天），反映較長期的蛋白質狀態。前白蛋白（transthyretin）半衰期短，更敏感地反映急性營養變化。
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 全血球計數（貧血、淋巴球減少提示免疫低下）
+        - 生化全套（BUN 偏低、膽固醇偏低、血糖偏低、電解質異常）
+        - 總蛋白與白蛋白/球蛋白比
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 警惕再餵食症候群（refeeding syndrome）風險
+        - 緩慢漸進式增加營養攝取
+        - 治療基礎疾病
+ddxSource: auto-generated

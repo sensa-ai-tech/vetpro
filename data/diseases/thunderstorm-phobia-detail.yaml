@@ -3,11 +3,11 @@ nameEn: Thunderstorm Phobia Detail
 nameZh: 雷雨恐懼症詳述
 bodySystem: behavioral
 description: 犬對雷雨之極度恐懼反應，可能惡化為廣泛性焦慮。涉及聽覺、視覺及氣壓變化感知。需行為修正及藥物輔助治療。
-
 aliases:
-  - { alias: 打雷恐懼, language: zh }
-  - { alias: Storm Anxiety, language: en }
-
+  - alias: 打雷恐懼
+    language: zh
+  - alias: Storm Anxiety
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少見或症狀較輕
-
 etiology:
   categories:
     - name: 多感官刺激
@@ -31,7 +30,6 @@ etiology:
         - 品種傾向（牧羊犬、獵犬）
         - 創傷經驗
         - 隨年齡敏感化
-
 clinicalSigns:
   early:
     - 暴風雨前或初期焦慮
@@ -43,21 +41,19 @@ clinicalSigns:
     - 自我傷害
     - 症狀提前出現（氣壓變化前）
     - 泛化至其他聲響
-
 diagnosis:
   primaryTests:
     - name: 行為史詢問
-      notes: "發作時機、嚴重度、進展"
+      notes: 發作時機、嚴重度、進展
     - name: 排除醫學問題
-      notes: "疼痛、認知障礙症"
+      notes: 疼痛、認知障礙症
     - name: 影片記錄
-      notes: "評估嚴重度"
+      notes: 評估嚴重度
   differentialDiagnoses:
     - 一般噪音恐懼
     - 分離焦慮
     - 認知障礙症
     - 疼痛相關行為
-
 treatment:
   medical:
     - 行為修正：
@@ -69,11 +65,34 @@ treatment:
     - Trazodone 3-5 mg/kg PO（暴風雨前1-2小時）
     - Fluoxetine 1-2 mg/kg PO q24h（長期預防）
     - Sileo（dexmedetomidine口腔凝膠）（FDA核准噪音恐懼）
-
 prognosis:
-  general: "難以完全治癒，但多數可改善。早期介入效果較佳。需長期管理。"
-
+  general: 難以完全治癒，但多數可改善。早期介入效果較佳。需長期管理。
 prevention:
   - 幼犬社會化包含各種聲響
   - 暴風雨時保持平常態度
   - 早期介入輕微症狀
+associatedSymptoms:
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 雷雨恐懼症詳述 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - trembling 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 行為史詢問
+          notes: 發作時機、嚴重度、進展
+        - name: 排除醫學問題
+          notes: 疼痛、認知障礙症
+        - name: 影片記錄
+          notes: 評估嚴重度
+ddxSource: auto-generated

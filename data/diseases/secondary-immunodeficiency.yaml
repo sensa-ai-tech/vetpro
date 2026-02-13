@@ -3,11 +3,11 @@ nameEn: Secondary Immunodeficiency
 nameZh: 繼發性免疫缺陷
 bodySystem: immunology
 description: 後天因疾病、藥物或營養不良導致之免疫功能低下，較原發性免疫缺陷常見。易反覆感染，需找出並治療潛在病因。
-
 aliases:
-  - { alias: 獲得性免疫缺陷, language: zh }
-  - { alias: Acquired Immunodeficiency, language: en }
-
+  - alias: 獲得性免疫缺陷
+    language: zh
+  - alias: Acquired Immunodeficiency
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: FIV及FeLV為貓繼發性免疫缺陷主因
-
 etiology:
   categories:
     - name: 感染性疾病
@@ -40,7 +39,6 @@ etiology:
         - 淋巴瘤
         - 白血病
         - 多發性骨髓瘤
-
 clinicalSigns:
   early:
     - 反覆細菌或真菌感染
@@ -51,23 +49,21 @@ clinicalSigns:
     - 全身性敗血症
     - 惡病質
     - 多重器官感染
-
 diagnosis:
   primaryTests:
     - name: 全血球計數
-      notes: "白血球減少、淋巴球減少"
+      notes: 白血球減少、淋巴球減少
     - name: 血清蛋白電泳
-      notes: "低免疫球蛋白血症"
+      notes: 低免疫球蛋白血症
     - name: 淋巴球功能檢測
-      notes: "淋巴球增生反應降低"
+      notes: 淋巴球增生反應降低
     - name: 潛在病因篩檢
-      notes: "FIV/FeLV、影像學、骨髓檢查"
+      notes: FIV/FeLV、影像學、骨髓檢查
   differentialDiagnoses:
     - 原發性免疫缺陷
     - 單純感染性疾病
     - 中性球功能異常
     - 脾臟功能低下
-
 treatment:
   medical:
     - 治療潛在病因（停藥、控制病毒、治療腫瘤）
@@ -76,46 +72,69 @@ treatment:
     - 免疫調節：干擾素-ω（feline interferon-ω）1 MU/kg SC q7d（貓）
     - 預防性抗生素（嚴重免疫低下）
     - 停用非必要免疫抑制藥物
-
 prognosis:
-  general: "預後取決於潛在病因。可逆性病因（藥物、營養）預後佳。病毒或腫瘤引起者預後保留。"
-
+  general: 預後取決於潛在病因。可逆性病因（藥物、營養）預後佳。病毒或腫瘤引起者預後保留。
 prevention:
   - FIV/FeLV預防（室內飼養、檢測）
   - 合理使用免疫抑制藥物
   - 維持良好營養狀態
   - 定期健康檢查（老年動物）
   - 疫苗接種（但免疫低下動物避免活毒疫苗）
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in microbiology
     title: Identifying Markers of Emerging SARS-CoV-2 Variants in Patients With Secondary Immunodeficiency.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9283111/
     type: review
-    pmid: "35847101"
+    pmid: '35847101'
     relevance: primary
   - sourceOrg: Journal of neurovirology
     title: Determinants of neurological syndromes caused by varicella zoster virus (VZV).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7438298/
     type: review
-    pmid: "32495195"
+    pmid: '32495195'
     relevance: primary
   - sourceOrg: Journal of neurology
     title: An overview of viral infections of the nervous system in the immunosuppressed.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7552955/
     type: review
-    pmid: "33048220"
+    pmid: '33048220'
     relevance: primary
   - sourceOrg: Journal of medicine and life
-    title: Dynamics of Cytokine Profile Indicators Changes in Animals with Acute Generalized Peritonitis on the Background of Diabetes Mellitus.
+    title: >-
+      Dynamics of Cytokine Profile Indicators Changes in Animals with Acute Generalized Peritonitis on the Background of
+      Diabetes Mellitus.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7550147/
     type: research
-    pmid: "33072216"
+    pmid: '33072216'
     relevance: supporting
-  - sourceOrg: "Wiadomosci lekarskie (Warsaw, Poland : 1960)"
+  - sourceOrg: 'Wiadomosci lekarskie (Warsaw, Poland : 1960)'
     title: The effect of succinic acid in liposomal emulsion on the humoral component of the immune system of rats.
     url: https://pubmed.ncbi.nlm.nih.gov/39874332/
     type: research
-    pmid: "39874332"
+    pmid: '39874332'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 繼發性免疫缺陷 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 全血球計數
+          notes: 白血球減少、淋巴球減少
+        - name: 血清蛋白電泳
+          notes: 低免疫球蛋白血症
+        - name: 淋巴球功能檢測
+          notes: 淋巴球增生反應降低
+ddxSource: auto-generated

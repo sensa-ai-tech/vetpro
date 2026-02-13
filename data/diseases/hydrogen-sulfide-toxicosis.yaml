@@ -3,12 +3,13 @@ nameEn: Hydrogen Sulfide Toxicosis
 nameZh: 硫化氫中毒
 bodySystem: toxicology
 description: 硫化氫為無色劇毒氣體,具臭蛋味。高濃度暴露可引起呼吸麻痺及細胞缺氧,常見於密閉空間或工業環境。
-
 aliases:
-  - { alias: 硫化氫氣體中毒, language: zh }
-  - { alias: Hydrogen Sulfide Poisoning, language: en }
-  - { alias: Sewer Gas Toxicity, language: en }
-
+  - alias: 硫化氫氣體中毒
+    language: zh
+  - alias: Hydrogen Sulfide Poisoning
+    language: en
+  - alias: Sewer Gas Toxicity
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 同犬,較少見
-
 etiology:
   categories:
     - name: 環境暴露
@@ -29,7 +29,6 @@ etiology:
       examples:
         - 石油煉製、硫化物處理
         - 實驗室化學品
-
 clinicalSigns:
   early:
     - 眼睛刺激、流淚
@@ -41,37 +40,69 @@ clinicalSigns:
     - 肺水腫
     - 癲癇、意識喪失
     - 呼吸麻痺、猝死(高濃度)
-
 diagnosis:
   primaryTests:
     - name: 暴露史
-      notes: "確認硫化氫環境接觸史,臭蛋味(低濃度)"
+      notes: 確認硫化氫環境接觸史,臭蛋味(低濃度)
     - name: 臨床症狀
-      notes: "急性呼吸窘迫+神經症狀"
+      notes: 急性呼吸窘迫+神經症狀
     - name: 血液檢測
-      notes: "代謝性酸中毒,乳酸升高"
+      notes: 代謝性酸中毒,乳酸升高
   differentialDiagnoses:
     - 氰化物中毒
     - 一氧化碳中毒
     - 吸入性肺炎
-
 treatment:
   medical:
     - 立即移離暴露環境(救援者需配戴呼吸防護)
     - 100%高流量氧氣治療
     - 亞硝酸鹽治療(類似氰化物):
-      - Sodium nitrite 10 mg/kg IV緩慢推注,誘導高鐵血紅蛋白
+        - Sodium nitrite 10 mg/kg IV緩慢推注,誘導高鐵血紅蛋白
     - 支氣管擴張劑(若支氣管痙攣)
     - 肺水腫治療:
-      - Furosemide 2-4 mg/kg IV
-      - 必要時機械通氣
+        - Furosemide 2-4 mg/kg IV
+        - 必要時機械通氣
     - 靜脈輸液、碳酸氫鈉(若酸中毒)
     - 眼睛沖洗(若眼睛刺激)
-
 prognosis:
-  general: "低濃度暴露預後良好,移除暴露後多可恢復。高濃度暴露可能致命或留有永久性神經及呼吸系統損傷。"
-
+  general: 低濃度暴露預後良好,移除暴露後多可恢復。高濃度暴露可能致命或留有永久性神經及呼吸系統損傷。
 prevention:
   - 避免寵物進入密閉或通風不良空間
   - 下水道或化糞池作業時隔離寵物
   - 確保工業環境通風良好
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 硫化氫中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - ataxia 相關症狀
+        - coma-stupor 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 暴露史
+          notes: 確認硫化氫環境接觸史,臭蛋味(低濃度)
+        - name: 臨床症狀
+          notes: 急性呼吸窘迫+神經症狀
+        - name: 血液檢測
+          notes: 代謝性酸中毒,乳酸升高
+ddxSource: auto-generated

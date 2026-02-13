@@ -2,14 +2,18 @@ slug: rickettsiosis
 nameEn: Rickettsiosis
 nameZh: 立克次體感染症
 bodySystem: infectious
-description: 立克次體感染症 (rickettsiosis) 為一組由立克次體屬 (Rickettsia spp.) 細菌引起的蜱媒疾病總稱。犬主要臨床型包括落磯山斑點熱 (R. rickettsii) 與其他斑點熱群 (spotted fever group)。病原侵犯血管內皮細胞引起系統性血管炎。
-
+description: >-
+  立克次體感染症 (rickettsiosis) 為一組由立克次體屬 (Rickettsia spp.) 細菌引起的蜱媒疾病總稱。犬主要臨床型包括落磯山斑點熱 (R. rickettsii) 與其他斑點熱群 (spotted fever
+  group)。病原侵犯血管內皮細胞引起系統性血管炎。
 aliases:
-  - { alias: 立克次體病, language: zh }
-  - { alias: 蜱媒立克次體感染, language: zh }
-  - { alias: Rickettsial Infection, language: en }
-  - { alias: Spotted Fever Group Rickettsiosis, language: en }
-
+  - alias: 立克次體病
+    language: zh
+  - alias: 蜱媒立克次體感染
+    language: zh
+  - alias: Rickettsial Infection
+    language: en
+  - alias: Spotted Fever Group Rickettsiosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓立克次體感染罕見。實驗感染可引起輕微症狀。臨床自然感染報告極少。
-
 etiology:
   categories:
     - name: 主要病原種
@@ -32,7 +35,6 @@ etiology:
         - 侵犯血管內皮細胞
         - 引起壞死性血管炎
         - 血管通透性增加與微血栓
-
 clinicalSigns:
   early:
     - 發燒
@@ -46,7 +48,6 @@ clinicalSigns:
     - 眼部病變
     - 神經症狀
     - 多器官功能障礙
-
 diagnosis:
   primaryTests:
     - name: 血清學 (IFA)
@@ -58,7 +59,6 @@ diagnosis:
     - 生化（低白蛋白、電解質異常、肝酵素升高）
     - 凝血功能
     - 蜱蟲種類鑑定（有助判斷可能病原）
-
 treatment:
   principles:
     - Doxycycline 為所有立克次體感染的首選治療
@@ -71,41 +71,84 @@ treatment:
     - 監測並管理併發症（DIC、腎損傷、神經症狀）
     - 蜱蟲預防（isoxazoline 類產品）
     - 環境蜱蟲控制
-
 prognosis: 早期 doxycycline 治療預後良好。嚴重型（R. rickettsii）若延遲治療預後較差。輕型立克次體感染（R. parkeri 等）即使未治療通常也可自行恢復。
-
-
 guidelineRefs:
   - sourceOrg: Tropical diseases, travel medicine and vaccines
     title: Addressing the burden of leptospirosis in Africa.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12144825/
     type: review
-    pmid: "40481572"
+    pmid: '40481572'
     relevance: primary
   - sourceOrg: Microorganisms
-    title: "Current Data on Rickettsia felis Occurrence in Vectors, Human and Animal Hosts in Europe: A Scoping Review."
+    title: 'Current Data on Rickettsia felis Occurrence in Vectors, Human and Animal Hosts in Europe: A Scoping Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9781214/
     type: review
-    pmid: "36557744"
+    pmid: '36557744'
     relevance: primary
   - sourceOrg: Revista da Sociedade Brasileira de Medicina Tropical
     title: Spotted fever diagnosis using molecular methods.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11654745/
     type: review
-    pmid: "39570151"
+    pmid: '39570151'
     relevance: primary
   - sourceOrg: One health (Amsterdam, Netherlands)
-    title: "Tick-borne diseases in Egypt: A one health perspective."
+    title: 'Tick-borne diseases in Egypt: A one health perspective.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9767813/
     type: review
-    pmid: "36561707"
+    pmid: '36561707'
     relevance: primary
   - sourceOrg: Current tropical medicine reports
     title: Rickettsia felis, an Emerging Flea-Borne Rickettsiosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4870301/
     type: review
-    pmid: "27340613"
+    pmid: '27340613'
     relevance: primary
 pubmedQueries:
   - query: '"rickettsiosis" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: common
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: petechiae-ecchymoses
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 立克次體感染症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - anorexia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清學 (IFA)
+          notes: 急性與恢復期配對血清（間隔 2-3 週）。四倍效價上升確診。需注意不同 Rickettsia 種間可能有交叉反應
+        - name: PCR
+          notes: 全血 PCR 可在急性期確診。種特異性引物可區分不同 Rickettsia 種
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC（血小板減少、貧血）
+        - 生化（低白蛋白、電解質異常、肝酵素升高）
+        - 凝血功能
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - Doxycycline 為所有立克次體感染的首選治療
+        - 懷疑即治療原則
+        - 支持療法管理系統性併發症
+ddxSource: auto-generated

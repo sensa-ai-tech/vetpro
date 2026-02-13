@@ -3,14 +3,17 @@ nameEn: Triage and Stabilization
 nameZh: 檢傷分類與穩定化處理
 bodySystem: emergency
 description: 獸醫急診中對緊急患者進行快速評估、分類與初步穩定的系統化流程。以 ABC（氣道-呼吸-循環）為核心框架，在最短時間內辨識並處理威脅生命的狀況，為後續確定性治療爭取時間。
-
 aliases:
-  - { alias: 急診檢傷, language: zh }
-  - { alias: 急診穩定化, language: zh }
-  - { alias: Emergency Triage, language: en }
-  - { alias: Initial Stabilization, language: en }
-  - { alias: Primary Survey, language: en }
-
+  - alias: 急診檢傷
+    language: zh
+  - alias: 急診穩定化
+    language: zh
+  - alias: Emergency Triage
+    language: en
+  - alias: Initial Stabilization
+    language: en
+  - alias: Primary Survey
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -18,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓急診常見呼吸窘迫、尿道阻塞及外傷。貓對壓力極度敏感，檢傷時需減少不必要操作。
-
 etiology:
   categories:
     - name: 常見急診就診原因
@@ -32,7 +34,6 @@ etiology:
         - 紅色（立即）：心肺停止、嚴重呼吸窘迫、大量出血
         - 黃色（緊急）：開放性骨折、中度呼吸困難、持續嘔吐
         - 綠色（非緊急）：慢性症狀、穩定的小傷口
-
 clinicalSigns:
   early:
     - 呼吸型態異常（張口呼吸、端坐呼吸）
@@ -44,14 +45,12 @@ clinicalSigns:
     - 低體溫或高體溫
     - 無尿
     - 多器官功能障礙
-
 diagnosis:
   primaryTests:
     - name: 初級評估（Primary Survey）
       notes: ABC 系統：A 氣道通暢性、B 呼吸（頻率/型態/努力度）、C 循環（心率/脈搏品質/CRT/黏膜色）。30 秒內完成。
     - name: 快速實驗室檢查
       notes: PCV/TP、血糖、BUN（Azostick）、電解質、乳酸值。血氣分析（若可取得）。
-
 treatment:
   principles:
     - 先處理威脅生命的問題（ABC 優先）
@@ -66,41 +65,79 @@ treatment:
     - 胸腔穿刺排氣/排液（張力性氣胸為即刻處置）
     - 壓迫止血或止血帶應用
     - 體溫管理（低體溫需主動保溫）
-
 prognosis: 預後高度取決於基礎病因及介入時效。早期正確的檢傷分類與穩定化處理顯著提高存活率。休克患者若能在黃金 1 小時內穩定，預後明顯改善。多器官衰竭或心肺停止後預後不佳。
-
-
 guidelineRefs:
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: "Basic triage in dogs and cats: Part I."
+    title: 'Basic triage in dogs and cats: Part I.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10783570/
     type: review
-    pmid: "38304479"
+    pmid: '38304479'
     relevance: primary
   - sourceOrg: Veterinary sciences
     title: Emergency Approach to Acute Seizures in Dogs and Cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11209469/
     type: review
-    pmid: "38922024"
+    pmid: '38922024'
     relevance: primary
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: "Basic triage in dogs and cats: Part III."
+    title: 'Basic triage in dogs and cats: Part III.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10945444/
     type: review
-    pmid: "38562973"
+    pmid: '38562973'
     relevance: primary
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: "Basic triage in dogs and cats: Part II."
+    title: 'Basic triage in dogs and cats: Part II.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10880400/
     type: review
-    pmid: "38434167"
+    pmid: '38434167'
     relevance: primary
   - sourceOrg: Biomedical engineering online
-    title: "A KNN-based model for non-invasive prediction of hemorrhagic shock severity in prehospital settings: integrating MAP, PBUCO2, PTCO2, and PPV."
+    title: >-
+      A KNN-based model for non-invasive prediction of hemorrhagic shock severity in prehospital settings: integrating
+      MAP, PBUCO2, PTCO2, and PPV.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12090682/
     type: research
-    pmid: "40394569"
+    pmid: '40394569'
     relevance: supporting
 pubmedQueries:
   - query: '"Triage and Stabilization" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+  - symptomId: oliguria-anuria
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: common
+diagnosticAlgorithm:
+  title: 檢傷分類與穩定化處理 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - hyperthermia 相關症狀
+        - hypothermia-sign 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 初級評估（Primary Survey）
+          notes: ABC 系統：A 氣道通暢性、B 呼吸（頻率/型態/努力度）、C 循環（心率/脈搏品質/CRT/黏膜色）。30 秒內完成。
+        - name: 快速實驗室檢查
+          notes: PCV/TP、血糖、BUN（Azostick）、電解質、乳酸值。血氣分析（若可取得）。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 先處理威脅生命的問題（ABC 優先）
+        - 快速建立靜脈通路
+        - 補液抗休克
+ddxSource: auto-generated

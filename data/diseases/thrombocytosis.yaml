@@ -2,13 +2,16 @@ slug: thrombocytosis
 nameEn: Thrombocytosis
 nameZh: 血小板增多症
 bodySystem: hematology
-description: 血小板增多症為血小板計數高於正常範圍（犬 >500,000/μL，貓 >500,000/μL）。多數為反應性（繼發性），繼發於鐵缺乏、慢性炎症、脾切除術後或腫瘤。原發性血小板增多症（essential thrombocythemia，骨髓增殖性疾病）在犬貓極為罕見。反應性血小板增多症通常不需要針對血小板的特異性治療。
-
+description: >-
+  血小板增多症為血小板計數高於正常範圍（犬 >500,000/μL，貓 >500,000/μL）。多數為反應性（繼發性），繼發於鐵缺乏、慢性炎症、脾切除術後或腫瘤。原發性血小板增多症（essential
+  thrombocythemia，骨髓增殖性疾病）在犬貓極為罕見。反應性血小板增多症通常不需要針對血小板的特異性治療。
 aliases:
-  - { alias: 血小板過多症, language: zh }
-  - { alias: Thrombocythemia, language: en }
-  - { alias: Elevated Platelets, language: en }
-
+  - alias: 血小板過多症
+    language: zh
+  - alias: Thrombocythemia
+    language: en
+  - alias: Elevated Platelets
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻反應性血小板增多症可見於慢性炎症、腫瘤。
-
 etiology:
   categories:
     - name: 反應性（繼發性，最常見）
@@ -30,7 +32,6 @@ etiology:
       examples:
         - 原發性血小板增多症（essential thrombocythemia）
         - 骨髓增殖性疾病（myeloproliferative disorder）
-
 clinicalSigns:
   early:
     - 多數反應性血小板增多症無特異性症狀
@@ -39,14 +40,12 @@ clinicalSigns:
     - 原發性血小板增多症可能出現血栓形成
     - 矛盾性出血（極度血小板增多時）
     - 脾腫大（原發性）
-
 diagnosis:
   primaryTests:
     - name: 全血球計數（CBC）
       notes: 血小板計數升高。反應性通常 <1,000,000/μL。原發性可能極高（>1,500,000/μL）。評估其他血球系列排除骨髓增殖性疾病。
     - name: 基礎疾病排查
       notes: 鐵代謝（血清鐵、TIBC、ferritin）、炎症指標（CRP）、影像學（腫瘤篩檢）、腹部超音波（脾臟評估）。
-
 treatment:
   principles:
     - 反應性血小板增多症治療基礎疾病即可
@@ -54,44 +53,101 @@ treatment:
     - 血栓風險高時考慮抗血小板藥物
   general:
     - 反應性：治療基礎疾病（鐵補充、感染控制等）
-    - "原發性：Hydroxyurea 15-25 mg/kg PO q24h（降低血小板計數）"
-    - "抗血小板：Aspirin 0.5-1 mg/kg PO q24h 或 Clopidogrel 2 mg/kg PO q24h"
+    - 原發性：Hydroxyurea 15-25 mg/kg PO q24h（降低血小板計數）
+    - 抗血小板：Aspirin 0.5-1 mg/kg PO q24h 或 Clopidogrel 2 mg/kg PO q24h
     - 監測血小板計數變化
-
 prognosis: 反應性血小板增多症預後取決於基礎疾病，血小板增多本身通常不造成問題。原發性血小板增多症在犬貓罕見，使用 Hydroxyurea 可控制，但需長期治療。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in oncology
     title: The Provocative Roles of Platelets in Liver Disease and Cancer.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8335590/
     type: review
-    pmid: "34367949"
+    pmid: '34367949'
     relevance: primary
   - sourceOrg: World journal of gastroenterology
-    title: "Dualistic role of platelets in living donor liver transplantation: Are they harmful?"
+    title: 'Dualistic role of platelets in living donor liver transplantation: Are they harmful?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8908284/
     type: review
-    pmid: "35317052"
+    pmid: '35317052'
     relevance: primary
   - sourceOrg: Scientific reports
     title: Altered thrombopoiesis in spontaneously hypertensive rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12627532/
     type: research
-    pmid: "41253981"
+    pmid: '41253981'
     relevance: supporting
   - sourceOrg: Cureus
-    title: Anthocephalus indicus and Terminalia arjuna Combination Ameliorates Hematological and Histopathological Changes in a Rat Model of Metabolic Syndrome.
+    title: >-
+      Anthocephalus indicus and Terminalia arjuna Combination Ameliorates Hematological and Histopathological Changes in
+      a Rat Model of Metabolic Syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12572365/
     type: research
-    pmid: "41179088"
+    pmid: '41179088'
     relevance: supporting
   - sourceOrg: Veterinary and animal science
-    title: "A study on subcutaneous infection model of colibacillosis in broilers: Selected immunological and hematological aspects."
+    title: >-
+      A study on subcutaneous infection model of colibacillosis in broilers: Selected immunological and hematological
+      aspects.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11838127/
     type: research
-    pmid: "39974173"
+    pmid: '39974173'
     relevance: supporting
 pubmedQueries:
   - query: '"thrombocytosis" AND (veterinary OR canine OR feline) AND ("reactive" OR "essential")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 反應性血小板增多症 診斷流程
+  steps:
+    - step: 1
+      action: 血液學確認
+      details: 全血計數確認血小板計數顯著升高，排除假性血小板增多
+      findings:
+        - 血小板計數 >600,000/μL
+        - 血液抹片確認真性血小板增多
+        - 血小板形態通常正常
+        - 排除EDTA引起的假性血小板減少
+    - step: 2
+      action: 基礎病因篩檢
+      details: 進行全套生化、感染篩檢和影像學尋找潛在原因
+      findings:
+        - 急性或慢性炎症指標升高
+        - 缺鐵性貧血
+        - 感染或膿瘍證據
+        - 腫瘤性疾病
+    - step: 3
+      action: 排除原發性血小板增多
+      details: 透過骨髓檢查及臨床排除排除原發性（腫瘤性）血小板增多症
+      findings:
+        - 骨髓巨核球增生但形態正常
+        - 無骨髓纖維化
+        - 無其他骨髓增殖性腫瘤證據
+        - 血小板功能通常正常
+    - step: 4
+      action: 病因治療與追蹤
+      details: 針對基礎病因治療，追蹤血小板計數回復
+      findings:
+        - 治療基礎疾病後血小板下降
+        - 排除脾臟切除後反應
+        - 排除長期皮質類固醇使用
+        - 確認反應性而非自主性增生
+clinicalPearls:
+  - 反應性血小板增多症是血小板增多症最常見的原因（> 80%），原發性極為罕見
+  - 反應性血小板增多症本身不需治療，重點是找出並治療潛在疾病
+  - 血小板計數 > 1,000,000/μL 時應更積極排除原發性骨髓增生性疾病
+  - 脾臟切除後血小板增多是預期的正常反應，通常在數週至數月內穩定
+  - 缺鐵性貧血是犬反應性血小板增多症常被忽略的原因
+monitoringItems:
+  - 定期 CBC 追蹤血小板計數恢復趨勢
+  - 潛在疾病的治療反應監測
+  - 鐵代謝指標（缺鐵性貧血病例）
+  - 極端血小板增多病例監測血栓徵象
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+ddxSource: book

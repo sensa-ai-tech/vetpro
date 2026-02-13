@@ -3,19 +3,21 @@ nameEn: Bernese Mountain Dog Histiocytic Sarcoma
 nameZh: 伯恩山犬組織細胞肉瘤
 bodySystem: oncology
 description: 組織細胞肉瘤為伯恩山犬最重要的致死性腫瘤，發病率為其他品種的數十倍。分為局限型與播散型，後者預後極差。來源於樹突狀細胞或巨噬細胞譜系，具高度侵襲性與轉移性。
-
 aliases:
-  - { alias: 伯恩山犬 HS, language: zh }
-  - { alias: 犬組織細胞肉瘤, language: zh }
-  - { alias: Bernese Mountain Dog HS, language: en }
-  - { alias: Canine histiocytic sarcoma, language: en }
-  - { alias: Disseminated histiocytic sarcoma, language: en }
-
+  - alias: 伯恩山犬 HS
+    language: zh
+  - alias: 犬組織細胞肉瘤
+    language: zh
+  - alias: Bernese Mountain Dog HS
+    language: en
+  - alias: Canine histiocytic sarcoma
+    language: en
+  - alias: Disseminated histiocytic sarcoma
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
     notes: 伯恩山犬終生發病率約 15-25%。平均發病年齡 6-7 歲。為該品種首要死因之一。其他扁臉獵犬亦有較高風險。
-
 etiology:
   categories:
     - name: 腫瘤生物學
@@ -28,7 +30,6 @@ etiology:
         - 強烈品種遺傳易感性
         - 多基因遺傳模式
         - 特定基因座與風險相關
-
 clinicalSigns:
   early:
     - 嗜睡
@@ -43,7 +44,6 @@ clinicalSigns:
     - 貧血
     - 神經症狀（CNS 型）
     - 快速惡化
-
 diagnosis:
   primaryTests:
     - name: 細胞學/組織病理學
@@ -52,7 +52,6 @@ diagnosis:
       notes: 胸腹腔 X 光/超音波/CT 全身分期。評估肺、肝、脾、淋巴結
     - name: CBC
       notes: 貧血（骨髓浸潤或慢性疾病）。血小板減少
-
 treatment:
   principles:
     - 局限型可嘗試手術 + 化療
@@ -67,31 +66,77 @@ treatment:
     - 營養支持
     - 化療期間定期 CBC 監測（骨髓抑制）
     - 新型靶向治療研究中
-
 prognosis: 預後不良。播散型中位存活時間約 2-4 個月（治療或未治療）。局限型手術加化療可延長至 6-12 個月。CCNU 化療反應率約 46%。該品種基因研究正在進行，未來可能有更好的篩選與治療策略。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
     title: Canine Histiocytic Malignancies-Challenges and Opportunities.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5644619/
     type: review
-    pmid: "29056712"
+    pmid: '29056712'
   - sourceOrg: Cancers
     title: Alternative Lengthening of Telomeres Is Rare in Canine Histiocytic Sarcoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10487132/
     type: research
-    pmid: "37686490"
+    pmid: '37686490'
   - sourceOrg: Veterinary sciences
-    title: Comparison of the Clinical Characteristics of Histiocytic Sarcoma in Bernese Mountain Dogs and Flat-Coated Retrievers.
+    title: >-
+      Comparison of the Clinical Characteristics of Histiocytic Sarcoma in Bernese Mountain Dogs and Flat-Coated
+      Retrievers.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9504151/
     type: research
-    pmid: "36136714"
+    pmid: '36136714'
   - sourceOrg: Journal of veterinary internal medicine
     title: Clinicopathological characteristics of histiocytic sarcoma affecting the central nervous system in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7096655/
     type: research
-    pmid: "31919895"
+    pmid: '31919895'
 pubmedQueries:
   - query: '"Bernese Mountain Dog" AND ("histiocytic sarcoma" OR "histiocytosis") AND (treatment OR prognosis)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: uncommon
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: splenomegaly
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: lameness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 伯恩山犬組織細胞肉瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 細胞學/組織病理學
+          notes: 腫塊 FNA 或活檢。見多形態大型組織細胞。免疫組織化學染色確認（CD18+, CD11d+）
+        - name: 影像分期
+          notes: 胸腹腔 X 光/超音波/CT 全身分期。評估肺、肝、脾、淋巴結
+        - name: CBC
+          notes: 貧血（骨髓浸潤或慢性疾病）。血小板減少
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 局限型可嘗試手術 + 化療
+        - 播散型化療為主
+        - CCNU（Lomustine）為最常用藥物
+ddxSource: auto-generated

@@ -2,14 +2,18 @@ slug: clostridial-infection
 nameEn: Clostridial Infection
 nameZh: 梭狀芽孢桿菌感染
 bodySystem: infectious
-description: 梭狀芽孢桿菌 (Clostridium spp.) 為革蘭氏陽性厭氧產孢桿菌，可引起多種臨床疾病。C. perfringens 為犬貓最常見腸道致病種，引起急性或慢性腸炎。C. difficile 可引起抗生素相關腹瀉。其他種可引起氣性壞疽、肉毒桿菌中毒等。
-
+description: >-
+  梭狀芽孢桿菌 (Clostridium spp.) 為革蘭氏陽性厭氧產孢桿菌，可引起多種臨床疾病。C. perfringens 為犬貓最常見腸道致病種，引起急性或慢性腸炎。C. difficile
+  可引起抗生素相關腹瀉。其他種可引起氣性壞疽、肉毒桿菌中毒等。
 aliases:
-  - { alias: 梭菌感染, language: zh }
-  - { alias: 產氣莢膜梭菌感染, language: zh }
-  - { alias: Clostridial Disease, language: en }
-  - { alias: Clostridium Infection, language: en }
-
+  - alias: 梭菌感染
+    language: zh
+  - alias: 產氣莢膜梭菌感染
+    language: zh
+  - alias: Clostridial Disease
+    language: en
+  - alias: Clostridium Infection
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓 Clostridium 腸炎較犬少見。C. perfringens 可引起急性腹瀉。C. difficile 偶見於抗生素使用後。
-
 etiology:
   categories:
     - name: 主要致病種
@@ -33,7 +36,6 @@ etiology:
         - 飲食突然改變
         - 壓力（住院、手術）
         - 免疫抑制
-
 clinicalSigns:
   early:
     - 急性水樣或黏液樣腹瀉
@@ -45,7 +47,6 @@ clinicalSigns:
     - 脫水
     - 慢性間歇性大腸性腹瀉
     - 氣性壞疽型：局部組織壞死、捻髮感、敗血症
-
 diagnosis:
   primaryTests:
     - name: 糞便毒素檢測
@@ -57,7 +58,6 @@ diagnosis:
     - 糞便抹片革蘭氏染色（大量產孢桿菌）
     - CBC 與生化
     - 排除其他腸道病原
-
 treatment:
   principles:
     - 毒素型腸炎以抗生素抑制產毒為主
@@ -72,31 +72,80 @@ treatment:
     - C. difficile 停用誘發抗生素
     - 氣性壞疽需緊急清創 + 高劑量 penicillin
     - 飲食調整（高纖維飲食改善大腸性腹瀉）
-
 prognosis: C. perfringens 腸炎預後良好，多數抗生素治療後迅速改善。慢性反覆型可能需長期飲食管理。C. difficile 停藥後通常恢復。氣性壞疽預後差，死亡率高。
-
-
 guidelineRefs:
   - sourceOrg: JFMS open reports
     title: Severe acute intra-abdominal clostridial disease in two cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12576170/
     type: case-report
-    pmid: "41179842"
+    pmid: '41179842'
   - sourceOrg: Scientific reports
-    title: Epidemiology of potential source, risk attribution of Clostridium perfringens from Egyptian broiler farms and genetic diversity of multidrug resistance strains.
+    title: >-
+      Epidemiology of potential source, risk attribution of Clostridium perfringens from Egyptian broiler farms and
+      genetic diversity of multidrug resistance strains.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12326005/
     type: research
-    pmid: "40764721"
+    pmid: '40764721'
   - sourceOrg: Scientific reports
-    title: Drug-independent control strategy of clostridial infection in broiler chickens using anti-toxin environmentally friendly multienzymes.
+    title: >-
+      Drug-independent control strategy of clostridial infection in broiler chickens using anti-toxin environmentally
+      friendly multienzymes.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10079847/
     type: research
-    pmid: "37024623"
+    pmid: '37024623'
   - sourceOrg: Acta veterinaria Scandinavica
     title: Severe subcutaneous infection with Clostridium septicum in a herd of native Icelandic horses.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11800538/
     type: case-report
-    pmid: "39910631"
+    pmid: '39910631'
 pubmedQueries:
-  - query: '"clostridial infection" OR "Clostridium perfringens" AND (veterinary OR canine OR feline) AND ("enteritis" OR "treatment")'
+  - query: >-
+      "clostridial infection" OR "Clostridium perfringens" AND (veterinary OR canine OR feline) AND ("enteritis" OR
+      "treatment")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: faecal-tenesmus
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: haematochezia
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 梭狀芽孢桿菌感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - faecal-tenesmus 相關症狀
+        - abdominal-pain 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便毒素檢測
+          notes: C. perfringens 腸毒素 (CPE) ELISA 或 PCR。需注意健康犬貓也可攜帶產毒株，需結合臨床症狀判斷
+        - name: 糞便培養與毒素分型
+          notes: 厭氧培養分離 Clostridium spp.，搭配毒素基因 PCR 分型
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - C. difficile 毒素 A/B 檢測
+        - 糞便抹片革蘭氏染色（大量產孢桿菌）
+        - CBC 與生化
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 毒素型腸炎以抗生素抑制產毒為主
+        - 支持療法矯正脫水
+        - C. difficile 需停用誘發抗生素
+ddxSource: auto-generated

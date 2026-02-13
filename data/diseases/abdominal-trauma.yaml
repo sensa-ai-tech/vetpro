@@ -3,12 +3,13 @@ nameEn: Abdominal Trauma
 nameZh: 腹部創傷
 bodySystem: emergency
 description: 腹部創傷為鈍性或穿透性外力引起的腹腔器官損傷。常見受損器官包括脾臟、肝臟、膀胱與腸道。AFAST 超音波為快速評估腹腔出血的重要工具。腹腔內出血（hemoabdomen）與空腔器官破裂（腹膜炎）為主要致命併發症。
-
 aliases:
-  - { alias: 腹腔外傷, language: zh }
-  - { alias: Blunt Abdominal Trauma, language: en }
-  - { alias: Abdominal Injury, language: en }
-
+  - alias: 腹腔外傷
+    language: zh
+  - alias: Blunt Abdominal Trauma
+    language: en
+  - alias: Abdominal Injury
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓腹部創傷常見於車禍與高處墜落。肝臟與膀胱為常見受損器官。腹壁疝亦可見。
-
 etiology:
   categories:
     - name: 損傷機制
@@ -31,7 +31,6 @@ etiology:
         - 腸道破裂（腹膜炎）
         - 腎臟損傷
         - 腹壁疝
-
 clinicalSigns:
   early:
     - 腹痛
@@ -42,7 +41,6 @@ clinicalSigns:
     - 腹膜炎征象（腹部板狀僵硬、發燒）
     - 腹水增加
     - 排尿障礙（膀胱破裂）
-
 diagnosis:
   primaryTests:
     - name: AFAST 超音波
@@ -54,7 +52,6 @@ diagnosis:
     - CBC、生化（PCV 追蹤、BUN/Cr）
     - 腹腔液鉀/Cr 與血清比較
     - CT（複雜損傷評估）
-
 treatment:
   principles:
     - 穩定血循環
@@ -70,41 +67,96 @@ treatment:
     - 肝臟裂傷：多數保守管理（自行止血）
     - 止痛
     - 腹帶包紮（暫時壓迫止血）
-
 prognosis: 腹部創傷整體存活率約 60-80%。單一器官損傷預後較佳。多器官損傷與腹膜炎預後較差。及早辨識與手術介入改善存活。
-
-
 guidelineRefs:
   - sourceOrg: International journal of medical sciences
-    title: Early Hyperbaric Oxygen Therapy Promotes Recovery of Blunt Liver Injury in Rats via Inhibiting Inflammatory Response and Oxidative Stress.
+    title: >-
+      Early Hyperbaric Oxygen Therapy Promotes Recovery of Blunt Liver Injury in Rats via Inhibiting Inflammatory
+      Response and Oxidative Stress.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12035843/
     type: research
-    pmid: "40303491"
+    pmid: '40303491'
   - sourceOrg: Experimental and therapeutic medicine
-    title: "Experimental study of the effects of absorbable gelatin sponge and non&#x2011;absorbable polyvinyl alcohol particle material used in transcatheter arterial embolization on liver tissues."
+    title: >-
+      Experimental study of the effects of absorbable gelatin sponge and non&#x2011;absorbable polyvinyl alcohol
+      particle material used in transcatheter arterial embolization on liver tissues.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10126803/
     type: research
-    pmid: "37114170"
+    pmid: '37114170'
   - sourceOrg: Journal of pain research
-    title: Impact of different analgesic depths and abdominal trauma of different severities on stress and recovery of rats undergoing total intravenous anesthesia.
+    title: >-
+      Impact of different analgesic depths and abdominal trauma of different severities on stress and recovery of rats
+      undergoing total intravenous anesthesia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5439989/
     type: research
-    pmid: "28553135"
+    pmid: '28553135'
   - sourceOrg: Frontiers in pharmacology
-    title: "Aucubin Attenuates Liver Ischemia-Reperfusion Injury by Inhibiting the HMGB1/TLR-4/NF-&#x3ba;B Signaling Pathway, Oxidative Stress, and Apoptosis."
+    title: >-
+      Aucubin Attenuates Liver Ischemia-Reperfusion Injury by Inhibiting the HMGB1/TLR-4/NF-&#x3ba;B Signaling Pathway,
+      Oxidative Stress, and Apoptosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7506056/
     type: research
-    pmid: "33013386"
+    pmid: '33013386'
   - sourceOrg: The journal of trauma and acute care surgery
-    title: "Transfer and nontransfer patients in isolated low-grade blunt pediatric solid organ injury: Implications for regionalized trauma systems."
+    title: >-
+      Transfer and nontransfer patients in isolated low-grade blunt pediatric solid organ injury: Implications for
+      regionalized trauma systems.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5860969/
     type: research
-    pmid: "29283968"
-  - sourceOrg: "Veterinary radiology &amp; ultrasound : the official journal of the American College of Veterinary Radiology and the International Veterinary Radiology Association"
-    title: "Imaging Diagnosis-Peritoneal Splenosis in a Dog: Computed Tomographic Findings."
+    pmid: '29283968'
+  - sourceOrg: >-
+      Veterinary radiology &amp; ultrasound : the official journal of the American College of Veterinary Radiology and
+      the International Veterinary Radiology Association
+    title: 'Imaging Diagnosis-Peritoneal Splenosis in a Dog: Computed Tomographic Findings.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12809376/
     type: case-report
-    pmid: "41540971"
+    pmid: '41540971'
 pubmedQueries:
   - query: '"abdominal trauma" AND (veterinary OR canine OR feline) AND ("treatment" OR "hemoabdomen" OR "AFAST")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 腹部創傷 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+        - dehydration 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: AFAST 超音波
+          notes: 4 點快速掃描評估腹腔游離液體。陽性 AFAST 需鑑別血液、尿液或消化道內容物
+        - name: 腹腔穿刺 (abdominocentesis)
+          notes: 腹腔液分析：PCV >25% 確認 hemoabdomen。Creatinine 高於血清確認 uroabdomen
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 腹部 X-ray（游離氣體→空腔器官破裂）
+        - CBC、生化（PCV 追蹤、BUN/Cr）
+        - 腹腔液鉀/Cr 與血清比較
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 穩定血循環
+        - 評估是否需緊急手術
+        - 持續監測
+ddxSource: auto-generated

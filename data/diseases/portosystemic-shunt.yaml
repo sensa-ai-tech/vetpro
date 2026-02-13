@@ -3,15 +3,19 @@ nameEn: Portosystemic Shunt
 nameZh: 門體分流
 bodySystem: hepatic
 description: 門體分流（PSS）是指門靜脈血液繞過肝臟直接進入體循環的異常血管通道。可為先天性（單一血管異常）或後天性（多發側枝循環）。門靜脈血液未經肝臟代謝，導致毒素（尤其是氨）在體內蓄積，引起肝性腦病、發育遲緩及泌尿道結石等問題。
-
 aliases:
-  - { alias: 門體靜脈分流, language: zh }
-  - { alias: 肝門脈分流, language: zh }
-  - { alias: 門脈系統分流, language: zh }
-  - { alias: PSS, language: en }
-  - { alias: Portosystemic Vascular Anomaly, language: en }
-  - { alias: Liver Shunt, language: en }
-
+  - alias: 門體靜脈分流
+    language: zh
+  - alias: 肝門脈分流
+    language: zh
+  - alias: 門脈系統分流
+    language: zh
+  - alias: PSS
+    language: en
+  - alias: Portosystemic Vascular Anomaly
+    language: en
+  - alias: Liver Shunt
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -21,7 +25,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓隻先天性 PSS 較犬少見但仍有報告。臨床表現與犬相似，但貓隻更常出現流涎（ptyalism）作為肝性腦病的特徵性表現。
-
 etiology:
   categories:
     - name: 先天性分流
@@ -42,7 +45,6 @@ etiology:
         - 肝臟因缺乏門靜脈營養因子（肝營養因子）而萎縮
         - 高血氨引起肝性腦病
         - 膽酸代謝異常
-
 clinicalSigns:
   early:
     - 發育遲緩（體型偏小）
@@ -66,20 +68,19 @@ clinicalSigns:
     - 腹水（後天性多發分流較常見）
     - 凝血功能障礙與出血傾向
     - 門靜脈高壓（後天性）
-
 diagnosis:
   primaryTests:
     - name: 血清膽酸試驗（Bile Acids Test）
-      notes: "空腹與餐後 2 小時膽酸測定。先天性 PSS 通常空腹膽酸 > 25 μmol/L，餐後 > 50 μmol/L（正常 < 25 μmol/L）。為 PSS 最敏感的篩檢指標之一。"
+      notes: 空腹與餐後 2 小時膽酸測定。先天性 PSS 通常空腹膽酸 > 25 μmol/L，餐後 > 50 μmol/L（正常 < 25 μmol/L）。為 PSS 最敏感的篩檢指標之一。
     - name: 血氨測定
-      notes: "空腹血氨升高支持 PSS 診斷。正常犬 < 50 μg/dL。需注意樣本處理（需立即冰浴送檢）。部分 PSS 患者血氨可能正常。"
+      notes: 空腹血氨升高支持 PSS 診斷。正常犬 < 50 μg/dL。需注意樣本處理（需立即冰浴送檢）。部分 PSS 患者血氨可能正常。
     - name: 腹部超音波（含都卜勒）
-      notes: "可直視異常分流血管及評估門靜脈血流方向。肝臟通常偏小。腎臟可能增大（腎髓質高回音）。左側睪丸靜脈附近的分流血管辨識。操作者經驗對偵測率影響大。"
+      notes: 可直視異常分流血管及評估門靜脈血流方向。肝臟通常偏小。腎臟可能增大（腎髓質高回音）。左側睪丸靜脈附近的分流血管辨識。操作者經驗對偵測率影響大。
   imaging:
     - name: CT 血管攝影（CTA）
-      notes: "目前為術前評估的金標準。可清楚顯示分流血管的起源、走行與終點。三維重建有助於手術規劃。對肝內分流的偵測優於超音波。"
+      notes: 目前為術前評估的金標準。可清楚顯示分流血管的起源、走行與終點。三維重建有助於手術規劃。對肝內分流的偵測優於超音波。
     - name: 門靜脈攝影（Portography）
-      notes: "術中注射對比劑直接顯影門靜脈系統。可即時確認分流位置與數量。但已逐漸被 CTA 取代。"
+      notes: 術中注射對比劑直接顯影門靜脈系統。可即時確認分流位置與數量。但已逐漸被 CTA 取代。
   differentialDiagnoses:
     - 特發性癲癇 (Idiopathic Epilepsy)
     - 低血糖症 (Hypoglycemia)
@@ -93,7 +94,6 @@ diagnosis:
     - 尿液分析：尿酸銨結晶或結石、等張尿
     - 凝血功能：PT/aPTT 可能延長
     - 蛋白 C 活性：降低，可作為 PSS 的篩檢指標
-
 treatment:
   principles:
     - 先天性單一分流首選手術矯正（漸進式結紮或 ameroid constrictor）
@@ -101,45 +101,49 @@ treatment:
     - 低蛋白飲食減少氨的產生
     - 後天性多發分流以內科管理為主
   general:
-    - "手術治療（先天性單一分流）：Ameroid constrictor 或 Cellophane banding 漸進式閉鎖"
-    - "急性肝性腦病處置：Lactulose 0.5 mL/kg PO q8-12h（酸化腸道，促進氨排出）"
-    - "急性肝性腦病：溫水 Lactulose 灌腸（10-20 mL/kg，1:3 稀釋）"
-    - "Metronidazole 7.5 mg/kg PO q12h（減少腸道產氨菌）或替代 Amoxicillin 20 mg/kg PO q12h"
-    - "低蛋白飲食：限制蛋白質至 14-16%（乾物質），以高品質植物蛋白與乳製品蛋白為主"
-    - "靜脈輸液：2.5-5% dextrose（預防低血糖，避免含乳酸的輸液）"
-    - "尿酸銨結石預防：飲食管理 + 足夠飲水"
-    - "癲癇控制：Levetiracetam 20 mg/kg PO/IV q8h（避免使用需肝臟代謝的藥物如 Phenobarbital）"
-    - "維持瘦體組織量（lean body mass）：骨骼肌為肝外氨代謝（合成麩醯胺酸）的重要途徑，肌肉萎縮會加重高血氨風險"
-    - "注意 PSS 動物對日常健康挑戰（感染性腹瀉、傷口感染、皮膚炎、蜱叮咬等）的耐受力較差，因肝臟無法有效清除毒素與病原"
-
-prognosis: 先天性單一肝外分流經手術矯正後預後良好，長期存活率約 85-95%。肝內分流手術較複雜，併發症風險較高，存活率約 75-85%。僅內科管理的先天性 PSS 中位存活時間約 2 年。後天性多發分流預後取決於基礎肝臟疾病，通常較差。術後門靜脈高壓與多發性後天分流形成為嚴重併發症。
-
+    - 手術治療（先天性單一分流）：Ameroid constrictor 或 Cellophane banding 漸進式閉鎖
+    - 急性肝性腦病處置：Lactulose 0.5 mL/kg PO q8-12h（酸化腸道，促進氨排出）
+    - 急性肝性腦病：溫水 Lactulose 灌腸（10-20 mL/kg，1:3 稀釋）
+    - Metronidazole 7.5 mg/kg PO q12h（減少腸道產氨菌）或替代 Amoxicillin 20 mg/kg PO q12h
+    - 低蛋白飲食：限制蛋白質至 14-16%（乾物質），以高品質植物蛋白與乳製品蛋白為主
+    - 靜脈輸液：2.5-5% dextrose（預防低血糖，避免含乳酸的輸液）
+    - 尿酸銨結石預防：飲食管理 + 足夠飲水
+    - 癲癇控制：Levetiracetam 20 mg/kg PO/IV q8h（避免使用需肝臟代謝的藥物如 Phenobarbital）
+    - 維持瘦體組織量（lean body mass）：骨骼肌為肝外氨代謝（合成麩醯胺酸）的重要途徑，肌肉萎縮會加重高血氨風險
+    - 注意 PSS 動物對日常健康挑戰（感染性腹瀉、傷口感染、皮膚炎、蜱叮咬等）的耐受力較差，因肝臟無法有效清除毒素與病原
+prognosis: >-
+  先天性單一肝外分流經手術矯正後預後良好，長期存活率約 85-95%。肝內分流手術較複雜，併發症風險較高，存活率約 75-85%。僅內科管理的先天性 PSS 中位存活時間約 2
+  年。後天性多發分流預後取決於基礎肝臟疾病，通常較差。術後門靜脈高壓與多發性後天分流形成為嚴重併發症。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Internal Medicine
-    title: "Congenital portosystemic shunts in dogs: a review of 168 cases"
+    title: 'Congenital portosystemic shunts in dogs: a review of 168 cases'
     url: https://pubmed.ncbi.nlm.nih.gov/15595205/
     type: consensus
-    pmid: "15595205"
+    pmid: '15595205'
   - sourceOrg: Veterinary Surgery
     title: Ameroid constrictor versus cellophane banding for extrahepatic portosystemic shunts in dogs
     url: https://pubmed.ncbi.nlm.nih.gov/24117755/
     type: consensus
-    pmid: "24117755"
+    pmid: '24117755'
   - sourceOrg: Journal of the American Veterinary Medical Association
     title: Long-term outcome of dogs treated for congenital portosystemic shunts
     url: https://pubmed.ncbi.nlm.nih.gov/22126556/
     type: consensus
-    pmid: "22126556"
+    pmid: '22126556'
   - sourceOrg: BMC veterinary research
-    title: "Situs inversus totalis with single extrahepatic portosystemic shunt and azygos continuation of the caudal vena cava in a dog: a case report."
+    title: >-
+      Situs inversus totalis with single extrahepatic portosystemic shunt and azygos continuation of the caudal vena
+      cava in a dog: a case report.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11846404/
     type: research
-    pmid: "39987442"
+    pmid: '39987442'
   - sourceOrg: Veterinary sciences
-    title: "Congenital Portosystemic Shunts in Dogs and Cats: Classification, Pathophysiology, Clinical Presentation and Diagnosis."
+    title: >-
+      Congenital Portosystemic Shunts in Dogs and Cats: Classification, Pathophysiology, Clinical Presentation and
+      Diagnosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9961057/
     type: review
-    pmid: "36851464"
+    pmid: '36851464'
 pubmedQueries:
   - query: '"portosystemic shunt" AND (dog OR canine) AND ("surgery" OR "ameroid")'
     frequency: monthly
@@ -147,6 +151,90 @@ pubmedQueries:
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "IMM"
-  sectionTitle: "SYSTEM"
+  chapter: IMM
+  sectionTitle: SYSTEM
   pdfPage: 872
+diagnosticAlgorithm:
+  title: 肝門脈分流 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估神經症狀、生長遲緩及泌尿症狀
+      findings:
+        - 生長遲緩（先天型）
+        - 餐後神經症狀（肝腦病）
+        - 尿酸銨結石
+        - 幼犬或年輕犬
+    - step: 2
+      action: 血液生化與膽汁酸
+      details: 篩檢肝功能
+      findings:
+        - 餐前餐後膽汁酸明顯升高
+        - 低白蛋白
+        - 低BUN
+        - 低血糖
+        - 小紅血球症
+    - step: 3
+      action: 腹部超音波
+      details: 尋找異常分流血管
+      findings:
+        - 門脈分流血管直接可見
+        - 肝臟縮小
+        - 腎臟腫大
+        - 門靜脈血流異常
+    - step: 4
+      action: CT血管造影確診
+      details: 確認分流血管解剖及手術計畫
+      findings:
+        - CT angiography定位分流血管
+        - 區分肝內與肝外分流
+        - 門靜脈壓力評估
+        - 手術（Ameroid收縮環）或內科管理
+clinicalPearls:
+  - 餐後膽汁酸是良好的篩檢工具
+  - 血氨升高但膽汁酸正常需考慮尿素循環酶缺陷
+  - 貓PSS較犬少見但臨床表現類似（常見流涎）
+  - 術前穩定很重要，嚴重肝腦病需先內科控制
+  - 術後「分流性腦病」可能發生（快速閉塞導致門脈高壓）
+  - 年輕時手術預後比年長好（肝臟仍可發育）
+monitoringItems:
+  - 神經狀態
+  - 膽汁酸（術後3個月）
+  - 血氨
+  - 肝指數
+  - 腹部超聲
+associatedSymptoms:
+  - symptomId: failure-to-grow
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: rare
+associatedLabFindings:
+  - labId: bile-acids-elevated
+    frequency: uncommon
+  - labId: ammonia-elevated
+    frequency: common
+ddxSource: book

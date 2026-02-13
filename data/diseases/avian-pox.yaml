@@ -3,19 +3,21 @@ nameEn: Avian Pox
 nameZh: 禽痘
 bodySystem: infectious
 description: 禽痘是由禽痘病毒（Avipoxvirus）引起的病毒性疾病，分為乾燥型（皮膚型）與濕潤型（黏膜型）。皮膚型表現為無羽毛區域的結節性病灶，黏膜型影響口腔與呼吸道，後者預後較差。
-
 aliases:
-  - { alias: 鳥痘, language: zh }
-  - { alias: 禽痘病毒感染, language: zh }
-  - { alias: Bird pox, language: en }
-  - { alias: Avian poxvirus infection, language: en }
-  - { alias: Fowl pox, language: en }
-
+  - alias: 鳥痘
+    language: zh
+  - alias: 禽痘病毒感染
+    language: zh
+  - alias: Bird pox
+    language: en
+  - alias: Avian poxvirus infection
+    language: en
+  - alias: Fowl pox
+    language: en
 species:
   - speciesCommon: bird
     prevalence: uncommon
     notes: 鸚鵡類、金絲雀、雀科鳥類均可感染。蚊蟲叮咬為主要傳播途徑。溫暖潮濕季節發病率較高。
-
 etiology:
   categories:
     - name: 病毒性
@@ -29,7 +31,6 @@ etiology:
         - 蚊蟲暴露（戶外飼養）
         - 免疫力低下
         - 擁擠飼養
-
 clinicalSigns:
   early:
     - 無羽毛區域出現小丘疹（眼周、喙基部、腳）
@@ -41,7 +42,6 @@ clinicalSigns:
     - 眼瞼腫脹閉合
     - 進食困難
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 臨床表徵
@@ -50,7 +50,6 @@ diagnosis:
       notes: 表皮增生，角質層內嗜酸性核內包涵體（Bollinger 小體）
     - name: PCR 檢測
       notes: 病灶組織 PCR 確認禽痘病毒
-
 treatment:
   principles:
     - 無特效抗病毒治療
@@ -65,38 +64,76 @@ treatment:
     - 維生素 A 補充促進黏膜修復
     - 保溫與營養支持
     - 防蚊措施（紗窗、驅蚊）
-
 prognosis: 皮膚型預後良好，多數可自癒。黏膜型預後謹慎，尤其侵犯喉部或氣管時可致死。繼發感染為重要惡化因子。恢復後可獲得免疫力。嚴重眼部病變可能導致永久性視力受損。
-
-
 guidelineRefs:
   - sourceOrg: Ecology and evolution
     title: Prevalence and Transmission Cycle of Avian Pathogens in the Isolated Oceanic Islands of Japan.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11666991/
     type: research
-    pmid: "39720635"
+    pmid: '39720635'
   - sourceOrg: Frontiers in microbiology
-    title: "The quadruplex fluorescent quantitative PCR method for the simultaneous detection of respiratory diseases in quail: Pasteurella multocida, Avibacterium paragallinarum, Mycoplasma gallisepticum, and Mycoplasma synoviae."
+    title: >-
+      The quadruplex fluorescent quantitative PCR method for the simultaneous detection of respiratory diseases in
+      quail: Pasteurella multocida, Avibacterium paragallinarum, Mycoplasma gallisepticum, and Mycoplasma synoviae.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12256535/
     type: research
-    pmid: "40661987"
+    pmid: '40661987'
   - sourceOrg: Veterinary medicine international
-    title: Isolation and Molecular Detection of Pigeonpox Virus in a Pigeon With Both Cutaneous and Diphtheritic Forms of Pigeon Pox Disease in Ghana.
+    title: >-
+      Isolation and Molecular Detection of Pigeonpox Virus in a Pigeon With Both Cutaneous and Diphtheritic Forms of
+      Pigeon Pox Disease in Ghana.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12580035/
     type: research
-    pmid: "41185643"
+    pmid: '41185643'
   - sourceOrg: Poultry science
     title: Molecular and pathological screening of the current circulation of fowlpox and pigeon pox virus in backyard birds.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11532475/
     type: research
-    pmid: "39418793"
+    pmid: '39418793'
     relevance: supporting
   - sourceOrg: Veterinary sciences
     title: Snapshot of the Phylogenetic Relationships among Avian Poxviruses Circulating in Portugal between 2017 and 2023.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10747575/
     type: research
-    pmid: "38133244"
+    pmid: '38133244'
     relevance: supporting
 pubmedQueries:
   - query: '"avian pox" OR "avipoxvirus" AND (parrot OR psittacine OR canary) AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽痘 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - dyspnoea 相關症狀
+        - dysphagia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床表徵
+          notes: 典型皮膚結節或口腔偽膜。無羽毛區域特徵性增殖性病灶
+        - name: 組織病理學
+          notes: 表皮增生，角質層內嗜酸性核內包涵體（Bollinger 小體）
+        - name: PCR 檢測
+          notes: 病灶組織 PCR 確認禽痘病毒
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 無特效抗病毒治療
+        - 支持療法等待自癒
+        - 預防繼發感染
+ddxSource: auto-generated

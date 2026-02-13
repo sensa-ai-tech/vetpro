@@ -3,11 +3,11 @@ nameEn: Tracheostomy Emergency
 nameZh: 緊急氣切術
 bodySystem: emergency
 description: 上呼吸道完全阻塞時的緊急氣道建立術。於第3-4氣管環間切開,插入氣切管。
-
 aliases:
-  - { alias: 緊急氣管切開術, language: zh }
-  - { alias: Emergency Tracheotomy, language: en }
-
+  - alias: 緊急氣管切開術
+    language: zh
+  - alias: Emergency Tracheotomy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,27 +17,23 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 同犬,氣管更細小
-
 etiology:
   categories:
     - name: 適應症
       examples:
         - 喉頭腫瘤、異物、嚴重外傷、無法插管
-
 clinicalSigns:
   early:
     - 嚴重呼吸困難
     - 紫紺、焦慮
   progressive:
     - 呼吸停止、心搏停止
-
 diagnosis:
   primaryTests:
     - name: 臨床評估
-      notes: "上呼吸道完全阻塞,無法插管"
+      notes: 上呼吸道完全阻塞,無法插管
   differentialDiagnoses:
     - 下呼吸道疾病
-
 treatment:
   medical:
     - 於頸部腹側中線定位氣管
@@ -45,9 +41,25 @@ treatment:
     - 插入氣切管並固定
     - 接氧氣或麻醉機
     - 術後照護:濕化、吸痰、每日清潔
-
 prognosis:
-  general: "成功建立氣道可挽救生命。術後需密集照護避免管路阻塞或感染。"
-
+  general: 成功建立氣道可挽救生命。術後需密集照護避免管路阻塞或感染。
 prevention:
   - 及早處理上呼吸道疾病
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 緊急氣切術 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床評估
+          notes: 上呼吸道完全阻塞,無法插管
+ddxSource: auto-generated

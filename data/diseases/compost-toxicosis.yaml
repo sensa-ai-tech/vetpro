@@ -3,12 +3,13 @@ nameEn: Compost Toxicosis
 nameZh: 堆肥中毒
 bodySystem: toxicology
 description: 攝入發酵中的堆肥引發的中毒,真菌代謝產物和腐敗物質產生震顫毒素(tremorgens)和黴菌毒素。可致劇烈神經症狀和體溫過高,犬對腐敗有機物氣味特別感興趣。
-
 aliases:
-  - { alias: 堆肥堆中毒, language: zh }
-  - { alias: Compost Pile Poisoning, language: en }
-  - { alias: Tremorgenic Mycotoxicosis, language: en }
-
+  - alias: 堆肥堆中毒
+    language: zh
+  - alias: Compost Pile Poisoning
+    language: en
+  - alias: Tremorgenic Mycotoxicosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少接觸堆肥堆,但可能因捕食堆肥區齧齒類而間接暴露
-
 etiology:
   categories:
     - name: 真菌毒素
@@ -29,7 +29,6 @@ etiology:
       examples:
         - 腐敗蛋白質產物
         - 黴菌代謝物
-
 clinicalSigns:
   early:
     - 嘔吐
@@ -43,24 +42,22 @@ clinicalSigns:
     - 體溫過高(可達 41-42°C)
     - 橫紋肌溶解症
     - 代謝性酸中毒
-
 diagnosis:
   primaryTests:
     - name: 病史詢問
-      notes: "確認接觸堆肥堆或廚餘堆肥,觀察到翻找腐敗有機物行為"
+      notes: 確認接觸堆肥堆或廚餘堆肥,觀察到翻找腐敗有機物行為
     - name: 神經學檢查
-      notes: "典型的全身性震顫和肌肉僵硬,觸診或聲音刺激加重"
+      notes: 典型的全身性震顫和肌肉僵硬,觸診或聲音刺激加重
     - name: 體溫測量
-      notes: "常見顯著體溫升高 \">40°C\""
+      notes: 常見顯著體溫升高 ">40°C"
     - name: 血液生化
-      notes: "CK 顯著升高,肝酶升高,代謝性酸中毒"
+      notes: CK 顯著升高,肝酶升高,代謝性酸中毒
   differentialDiagnoses:
     - 甲基黃嘌呤中毒(巧克力、咖啡因)
     - 有機磷中毒
     - 番茉莉中毒
     - 甲基硫代吡啶中毒(發霉堅果)
     - 熱衰竭
-
 treatment:
   medical:
     - 去污染:催吐通常不適用(神經症狀出現快速)
@@ -71,12 +68,44 @@ treatment:
     - 積極降溫:冷水灌腸、風扇、冰敷腹股溝和腋下,目標<39.5°C
     - 靜脈輸液 支持和維持腎功能
     - 密集監護 24-72 小時,監測體溫、心律、電解質
-
 prognosis:
-  general: "預後取決於神經症狀嚴重程度和體溫控制。早期積極治療預後尚可。未治療的嚴重體溫過高和橫紋肌溶解可能致命。恢復可能需 1-3 天。"
-
+  general: 預後取決於神經症狀嚴重程度和體溫控制。早期積極治療預後尚可。未治療的嚴重體溫過高和橫紋肌溶解可能致命。恢復可能需 1-3 天。
 prevention:
   - 堆肥堆加蓋或設置圍欄防止寵物接觸
   - 使用封閉式堆肥桶而非開放式堆肥堆
   - 監督戶外活動,訓練避免翻找行為
   - 定期檢查庭院是否有腐敗有機物堆積
+associatedSymptoms:
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+diagnosticAlgorithm:
+  title: 堆肥中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - trembling 相關症狀
+        - hyperthermia 相關症狀
+        - ataxia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史詢問
+          notes: 確認接觸堆肥堆或廚餘堆肥,觀察到翻找腐敗有機物行為
+        - name: 神經學檢查
+          notes: 典型的全身性震顫和肌肉僵硬,觸診或聲音刺激加重
+        - name: 體溫測量
+          notes: 常見顯著體溫升高 ">40°C"
+ddxSource: auto-generated

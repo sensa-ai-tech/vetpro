@@ -3,16 +3,15 @@ nameEn: Rabbit Glaucoma
 nameZh: 兔青光眼
 bodySystem: ophthalmology
 description: 兔眼內壓升高導致視神經損傷的眼科疾病。兔先天性青光眼（buphthalmos）可見於 New Zealand White 品種，後天性青光眼可因 E. cuniculi 晶體破裂或虹膜炎引起。
-
 aliases:
-  - { alias: "兔青光眼", language: zh }
-  - { alias: "Rabbit Glaucoma", language: en }
-
+  - alias: 兔青光眼
+    language: zh
+  - alias: Rabbit Glaucoma
+    language: en
 species:
   - speciesCommon: rabbit
     prevalence: uncommon
     notes: 兔可受此疾病影響。
-
 etiology:
   categories:
     - name: 先天性
@@ -24,7 +23,6 @@ etiology:
         - E. cuniculi 晶體破裂→前房蓄膿→房水排出受阻
         - 前葡萄膜炎
         - 晶體脫位
-
 clinicalSigns:
   early:
     - 眼球輕微腫大
@@ -35,14 +33,12 @@ clinicalSigns:
     - 角膜明顯水腫混濁
     - 視力喪失
     - 疼痛（食慾下降、嗜睡）
-
 diagnosis:
   primaryTests:
     - name: 眼壓測量
       notes: 兔正常眼壓 15-23 mmHg。>25 mmHg 提示青光眼。Tonopen 或 Tonovet 測量。
     - name: 眼部超音波
       notes: 評估晶體位置、前房深度及眼球大小。
-
 treatment:
   principles:
     - 降低眼壓
@@ -53,41 +49,81 @@ treatment:
     - 止痛（Meloxicam）
     - 晶體破裂相關：摘除晶體或眼球
     - 末期疼痛性失明眼：眼球摘除術
-
 prognosis: 兔青光眼多在診斷時已嚴重，視力挽回困難。藥物控制眼壓可緩解疼痛。最終多數需眼球摘除。兔適應單眼視力良好。
-
-
 guidelineRefs:
   - sourceOrg: Scientific reports
-    title: Pluripotent epigenetic regulator OBP-801 attenuates fibrosis and maintains lower intraocular pressure in a rabbit PRESERFLO MicroShunt surgery model.
+    title: >-
+      Pluripotent epigenetic regulator OBP-801 attenuates fibrosis and maintains lower intraocular pressure in a rabbit
+      PRESERFLO MicroShunt surgery model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12858950/
     type: research
-    pmid: "41476143"
+    pmid: '41476143'
     relevance: supporting
   - sourceOrg: Scientific reports
     title: Ultrasonic biomicroscope-guided radiofrequency ablation of the ciliary body in a rabbit glaucoma model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12618522/
     type: research
-    pmid: "41238687"
+    pmid: '41238687'
     relevance: supporting
-  - sourceOrg: "Investigative ophthalmology &amp; visual science"
+  - sourceOrg: Investigative ophthalmology &amp; visual science
     title: VEGF-C and 5-Fluorouracil Improve Bleb Survival in a Rabbit Glaucoma Surgery Trabeculectomy Model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11114614/
     type: research
-    pmid: "38771570"
+    pmid: '38771570'
     relevance: supporting
   - sourceOrg: Drug delivery
-    title: "Chitosan-coated bovine serum albumin nanoparticles for topical tetrandrine delivery in glaucoma: in&#xa0;vitro and in&#xa0;vivo assessment."
+    title: >-
+      Chitosan-coated bovine serum albumin nanoparticles for topical tetrandrine delivery in glaucoma: in&#xa0;vitro and
+      in&#xa0;vivo assessment.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9004496/
     type: research
-    pmid: "35384774"
+    pmid: '35384774'
     relevance: supporting
-  - sourceOrg: "Translational vision science &amp; technology"
-    title: HL3501, a Novel Selective A3 Adenosine Receptor Antagonist, Lowers Intraocular Pressure (IOP) in Animal Glaucoma Models.
+  - sourceOrg: Translational vision science &amp; technology
+    title: >-
+      HL3501, a Novel Selective A3 Adenosine Receptor Antagonist, Lowers Intraocular Pressure (IOP) in Animal Glaucoma
+      Models.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8883152/
     type: research
-    pmid: "35191964"
+    pmid: '35191964'
     relevance: supporting
 pubmedQueries:
   - query: '"Rabbit Glaucoma" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: blindness
+    frequency: uncommon
+  - symptomId: mydriasis
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: common
+diagnosticAlgorithm:
+  title: 兔青光眼 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - blindness 相關症狀
+        - mydriasis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 眼壓測量
+          notes: 兔正常眼壓 15-23 mmHg。>25 mmHg 提示青光眼。Tonopen 或 Tonovet 測量。
+        - name: 眼部超音波
+          notes: 評估晶體位置、前房深度及眼球大小。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 降低眼壓
+        - 控制疼痛
+        - 嚴重失明眼考慮摘除
+ddxSource: auto-generated

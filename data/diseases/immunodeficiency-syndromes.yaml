@@ -3,20 +3,22 @@ nameEn: Immunodeficiency Syndromes
 nameZh: 免疫缺陷症候群
 bodySystem: immunology
 description: 免疫缺陷症候群為先天或後天免疫系統功能不全的統稱。犬貓可因遺傳缺陷（原發性免疫缺陷）或感染、藥物、營養等因素（繼發性免疫缺陷）導致免疫功能低下。表現為反覆或異常嚴重的感染。幼齡動物反覆嚴重感染應懷疑此診斷。
-
 aliases:
-  - { alias: 免疫不全症候群, language: zh }
-  - { alias: Primary Immunodeficiency, language: en }
-  - { alias: Immunodeficiency Disorders, language: en }
-
+  - alias: 免疫不全症候群
+    language: zh
+  - alias: Primary Immunodeficiency
+    language: en
+  - alias: Immunodeficiency Disorders
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
-    notes: 犬原發性免疫缺陷包括 IgA 缺乏（German Shepherd、Shar-Pei）、嗜中性球功能異常（Irish Setter）、SCID（Basset Hound）。繼發性免疫缺陷較常見（parvovirus 感染後、化療後）。
+    notes: >-
+      犬原發性免疫缺陷包括 IgA 缺乏（German Shepherd、Shar-Pei）、嗜中性球功能異常（Irish Setter）、SCID（Basset Hound）。繼發性免疫缺陷較常見（parvovirus
+      感染後、化療後）。
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓 FeLV 與 FIV 引起的繼發性免疫缺陷最為重要。FIV 引起 CD4+ T 細胞減少，類似人類 HIV。先天性免疫缺陷在貓極罕見。
-
 etiology:
   categories:
     - name: 原發性（先天性）免疫缺陷
@@ -34,7 +36,6 @@ etiology:
         - 壓力
         - 老齡
         - 腫瘤（淋巴瘤）
-
 clinicalSigns:
   early:
     - 反覆或慢性感染
@@ -46,7 +47,6 @@ clinicalSigns:
     - 腹瀉（慢性）
     - 皮膚感染反覆發作
     - 呼吸道感染反覆
-
 diagnosis:
   primaryTests:
     - name: CBC + 白血球分類
@@ -60,7 +60,6 @@ diagnosis:
     - 補體活性（CH50）
     - 骨髓檢查
     - 基因檢測（已知突變品種）
-
 treatment:
   principles:
     - 積極治療感染
@@ -74,31 +73,66 @@ treatment:
     - 繼發性：治療潛在原因（停止免疫抑制藥物、營養改善）
     - 疫苗接種策略調整（避免活疫苗）
     - 遺傳諮詢（勿繁殖）
-
 prognosis: 免疫缺陷症候群預後取決於類型與嚴重度。SCID 幼犬多於數月齡死亡。IgA 缺乏犬多數可良好管理。FIV 陽性貓在良好照護下可維持數年品質生活。繼發性免疫缺陷在去除病因後多數可恢復。
-
-
 guidelineRefs:
   - sourceOrg: Journal of neurovirology
     title: Determinants of neurological syndromes caused by varicella zoster virus (VZV).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7438298/
     type: review
-    pmid: "32495195"
+    pmid: '32495195'
   - sourceOrg: mBio
     title: Visualizing Association of the Retroviral Gag Protein with Unspliced Viral RNA in the Nucleus.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7157774/
     type: research
-    pmid: "32265329"
+    pmid: '32265329'
   - sourceOrg: PLoS neglected tropical diseases
-    title: An inexpensive point-of-care immunochromatographic test for Talaromyces marneffei infection based on the yeast phase specific monoclonal antibody 4D1 and Galanthus nivalis agglutinin.
+    title: >-
+      An inexpensive point-of-care immunochromatographic test for Talaromyces marneffei infection based on the yeast
+      phase specific monoclonal antibody 4D1 and Galanthus nivalis agglutinin.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8096094/
     type: research
-    pmid: "33945531"
+    pmid: '33945531'
   - sourceOrg: PloS one
-    title: Development and characterization of an immunochromatographic test for the rapid diagnosis of Talaromyces (Penicillium) marneffei.
+    title: >-
+      Development and characterization of an immunochromatographic test for the rapid diagnosis of Talaromyces
+      (Penicillium) marneffei.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5895032/
     type: research
-    pmid: "29641620"
+    pmid: '29641620'
 pubmedQueries:
   - query: '"immunodeficiency" AND (veterinary OR canine OR feline) AND ("primary" OR "treatment" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: diarrhoea
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 免疫缺陷症候群 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: CBC + 白血球分類
+          notes: 淋巴球減少（T 細胞缺陷）、嗜中性球減少或功能異常
+        - name: 免疫球蛋白定量
+          notes: IgG、IgM、IgA 血清濃度。低球蛋白血症提示體液免疫缺陷
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - FeLV/FIV 檢測（貓）
+        - 淋巴球亞群分析（CD4/CD8 flow cytometry）
+        - 嗜中性球功能試驗（氧化爆發試驗）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 積極治療感染
+        - 免疫調節（如可能）
+        - 預防暴露
+ddxSource: auto-generated

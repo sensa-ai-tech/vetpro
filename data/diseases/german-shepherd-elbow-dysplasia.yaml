@@ -3,19 +3,20 @@ nameEn: German Shepherd Elbow Dysplasia
 nameZh: 德國牧羊犬肘關節發育不良
 bodySystem: orthopedic
 description: 德國牧羊犬肘關節發育不良是該品種高度好發的先天性骨骼疾病，涵蓋肘突游離（UAP）、冠狀突碎裂（FCP）及肘關節不一致性。是前肢跛行的主要原因，通常雙側發病。
-
 aliases:
-  - { alias: 德牧肘異位, language: zh }
-  - { alias: 肘關節發育異常, language: zh }
-  - { alias: German Shepherd elbow dysplasia, language: en }
-  - { alias: GSD ED, language: en }
-
+  - alias: 德牧肘異位
+    language: zh
+  - alias: 肘關節發育異常
+    language: zh
+  - alias: German Shepherd elbow dysplasia
+    language: en
+  - alias: GSD ED
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 德國牧羊犬為肘關節發育不良好發品種，OFA 統計約 19% 異常率。公犬更常發生。通常 5-12 月齡出現症狀。
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -28,7 +29,6 @@ etiology:
         - 關節面不一致性
         - 快速生長與過度營養
         - 幼犬期過度運動
-
 clinicalSigns:
   early:
     - 前肢跛行（尤其運動後）
@@ -40,21 +40,19 @@ clinicalSigns:
     - 肌肉萎縮
     - 關節活動時捻發音
     - 退化性關節炎
-
 diagnosis:
   primaryTests:
     - name: X 光檢查
-      notes: "評估 UAP、關節不一致性與骨贅增生。屈曲側位片最佳"
+      notes: 評估 UAP、關節不一致性與骨贅增生。屈曲側位片最佳
     - name: CT 掃描
-      notes: "精確評估 FCP、關節面不一致性。術前計畫必備"
+      notes: 精確評估 FCP、關節面不一致性。術前計畫必備
     - name: 關節鏡檢查
-      notes: "診斷與治療同步進行。直視軟骨損傷程度"
+      notes: 診斷與治療同步進行。直視軟骨損傷程度
   differentialDiagnoses:
     - 全骨炎
     - 肱骨 OCD
     - 前肢骨折
     - 腫瘤
-
 treatment:
   medical:
     - NSAIDs 長期止痛管理
@@ -65,25 +63,53 @@ treatment:
     - 關節鏡碎片摘除
     - 尺骨截骨術
     - 嚴重者全肘關節置換
-
 prognosis:
-  general: "預後中等。早期手術治療預後較佳，但退化性關節炎為不可避免的長期結果。體重管理與適度運動可顯著改善長期預後。繁殖篩選為降低品種發病率的關鍵。"
-
+  general: 預後中等。早期手術治療預後較佳，但退化性關節炎為不可避免的長期結果。體重管理與適度運動可顯著改善長期預後。繁殖篩選為降低品種發病率的關鍵。
 prevention:
   - 繁殖犬肘關節 X 光篩選
   - 幼犬適量營養
   - 避免幼犬期過度運動
   - 維持理想體重
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Assisting Decision-Making on Age of Neutering for 35 Breeds of Dogs: Associated Joint Disorders, Cancers, and Urinary Incontinence."
+    title: >-
+      Assisting Decision-Making on Age of Neutering for 35 Breeds of Dogs: Associated Joint Disorders, Cancers, and
+      Urinary Incontinence.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7359819/
     type: research
-    pmid: "32733924"
+    pmid: '32733924'
   - sourceOrg: BMC veterinary research
     title: Computed tomography findings in a cohort of 169 dogs with elbow dysplasia - a retrospective study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8419939/
     type: research
-    pmid: "34488762"
+    pmid: '34488762'
+associatedSymptoms:
+  - symptomId: failure-to-grow
+    frequency: uncommon
+  - symptomId: polyarthritis
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 德國牧羊犬肘關節發育不良 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - failure-to-grow 相關症狀
+        - polyarthritis 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: X 光檢查
+          notes: 評估 UAP、關節不一致性與骨贅增生。屈曲側位片最佳
+        - name: CT 掃描
+          notes: 精確評估 FCP、關節面不一致性。術前計畫必備
+        - name: 關節鏡檢查
+          notes: 診斷與治療同步進行。直視軟骨損傷程度
+ddxSource: auto-generated

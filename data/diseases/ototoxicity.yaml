@@ -3,13 +3,15 @@ nameEn: Ototoxicity
 nameZh: 耳毒性
 bodySystem: toxicology
 description: 藥物或化學物質對內耳結構（耳蝸及/或前庭器官）造成的毒性損傷，導致感覺神經性聽力喪失及/或前庭功能障礙，氨基糖苷類抗生素為最常見的致病藥物。
-
 aliases:
-  - { alias: 藥物性耳毒性, language: zh }
-  - { alias: 耳毒性損傷, language: zh }
-  - { alias: Drug-induced ototoxicity, language: en }
-  - { alias: Aminoglycoside ototoxicity, language: en }
-
+  - alias: 藥物性耳毒性
+    language: zh
+  - alias: 耳毒性損傷
+    language: zh
+  - alias: Drug-induced ototoxicity
+    language: en
+  - alias: Aminoglycoside ototoxicity
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓對 aminoglycosides 的耳毒性可能更敏感。局部或全身性使用均需謹慎。
-
 etiology:
   categories:
     - name: 常見耳毒性藥物
@@ -36,7 +37,6 @@ etiology:
         - 長期用藥
         - 高劑量
         - 合併使用多種耳毒性藥物
-
 clinicalSigns:
   early:
     - 聽力下降
@@ -47,19 +47,17 @@ clinicalSigns:
     - 前庭症狀（頭歪斜、眼球震顫）
     - 共濟失調
     - 完全耳聾
-
 diagnosis:
   primaryTests:
     - name: BAER 檢測
-      notes: "確認感覺神經性聽力喪失。與用藥史相關聯"
+      notes: 確認感覺神經性聽力喪失。與用藥史相關聯
     - name: 藥物暴露史
-      notes: "詳細記錄用藥種類、劑量、療程及鼓膜狀態"
+      notes: 詳細記錄用藥種類、劑量、療程及鼓膜狀態
   differentialDiagnoses:
     - 特發性前庭症候群
     - 內耳炎
     - 老年性聽力喪失
     - 先天性耳聾
-
 treatment:
   medical:
     - 立即停用致病藥物
@@ -68,46 +66,70 @@ treatment:
     - 腎功能評估（aminoglycosides 同時有腎毒性）
     - 替代抗生素選擇
   surgical: []
-
 prognosis:
-  general: "藥物性耳蝸毒性（聽力喪失）通常為永久性。前庭毒性可能部分恢復（中樞代償）。早期停藥可限制損傷程度。預防重於治療。"
-
+  general: 藥物性耳蝸毒性（聽力喪失）通常為永久性。前庭毒性可能部分恢復（中樞代償）。早期停藥可限制損傷程度。預防重於治療。
 prevention:
   - 鼓膜破裂時避免使用耳毒性藥物（aminoglycosides、chlorhexidine）
   - 使用 aminoglycosides 時監測腎功能與藥物血中濃度
   - 避免 aminoglycosides 與環利尿劑併用
   - 使用最短有效療程
   - 破裂鼓膜僅用生理食鹽水或 Tris-EDTA 沖洗
-
-
 guidelineRefs:
   - sourceOrg: Neurochemical research
     title: Protective Effect of Selegiline (R-deprenyl) in Aminoglycoside-Induced Hearing Loss.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12165987/
     type: research
-    pmid: "40512245"
+    pmid: '40512245'
     relevance: supporting
   - sourceOrg: Frontiers in veterinary science
     title: Establishment of an optimized guinea pig model of cisplatin-induced ototoxicity.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133486/
     type: research
-    pmid: "37124562"
+    pmid: '37124562'
     relevance: supporting
   - sourceOrg: Frontiers in immunology
     title: Targeting CXCL1 chemokine signaling for treating cisplatin ototoxicity.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10102581/
     type: research
-    pmid: "37063917"
+    pmid: '37063917'
     relevance: supporting
   - sourceOrg: Brazilian journal of otorhinolaryngology
     title: Protective effect of creatine on amikacin-induced ototoxicity.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9483946/
     type: research
-    pmid: "33121925"
+    pmid: '33121925'
     relevance: supporting
   - sourceOrg: Proceedings of the National Academy of Sciences of the United States of America
     title: Dissociating antibacterial from ototoxic effects of gentamicin C-subtypes.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7768767/
     type: research
-    pmid: "33288712"
+    pmid: '33288712'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: nystagmus
+    frequency: uncommon
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: head-tilt
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 耳毒性 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - nystagmus 相關症狀
+        - trembling 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: BAER 檢測
+          notes: 確認感覺神經性聽力喪失。與用藥史相關聯
+        - name: 藥物暴露史
+          notes: 詳細記錄用藥種類、劑量、療程及鼓膜狀態
+ddxSource: auto-generated

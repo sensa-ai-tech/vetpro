@@ -3,19 +3,21 @@ nameEn: Rottweiler Osteosarcoma
 nameZh: 洛威拿犬骨肉瘤
 bodySystem: oncology
 description: 骨肉瘤為洛威拿犬最重要的惡性骨腫瘤，發病率為一般犬群的數倍。好發於附肢骨骼（長骨幹骺端），局部侵襲性強且肺轉移率高。截肢加化療為標準治療，但長期存活率仍偏低。
-
 aliases:
-  - { alias: 洛威拿犬骨癌, language: zh }
-  - { alias: 犬附肢骨肉瘤, language: zh }
-  - { alias: Rottweiler bone cancer, language: en }
-  - { alias: Canine appendicular osteosarcoma, language: en }
-  - { alias: Rottweiler OSA, language: en }
-
+  - alias: 洛威拿犬骨癌
+    language: zh
+  - alias: 犬附肢骨肉瘤
+    language: zh
+  - alias: Rottweiler bone cancer
+    language: en
+  - alias: Canine appendicular osteosarcoma
+    language: en
+  - alias: Rottweiler OSA
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
     notes: 洛威拿犬為骨肉瘤最高風險品種之一。7-10 歲為好發年齡。前肢遠端橈骨與近端肱骨最常見。約 90% 在確診時已有微轉移。
-
 etiology:
   categories:
     - name: 腫瘤特性
@@ -30,7 +32,6 @@ etiology:
         - 品種遺傳易感性
         - 體重（肢體承重負荷）
         - 早期絕育可能增加風險（研究進行中）
-
 clinicalSigns:
   early:
     - 單側肢體間歇性跛行
@@ -43,7 +44,6 @@ clinicalSigns:
     - 病理性骨折
     - 體重下降
     - 呼吸困難（肺轉移時）
-
 diagnosis:
   primaryTests:
     - name: 骨骼 X 光
@@ -52,7 +52,6 @@ diagnosis:
       notes: 評估肺轉移（3 views）。確診時約 10% 可見轉移灶
     - name: 骨活檢
       notes: 組織病理學確認。需排除真菌性骨髓炎（影像類似）
-
 treatment:
   principles:
     - 疼痛控制為首要
@@ -67,17 +66,53 @@ treatment:
     - 止痛：NSAIDs + Gabapentin + 鴉片類（術前）
     - 放射治療（止痛性放療，延緩姑息方案）
     - 營養支持
-
 prognosis: 僅截肢中位存活時間約 4-5 個月。截肢加化療延長至 10-12 個月。一年存活率約 40-50%。兩年存活率約 15-20%。碱性磷酸酶升高者預後較差。大型犬截肢後多數可良好適應三肢生活。
-
-
 guidelineRefs:
   - sourceOrg: PloS one
-    title: "Demographic characteristics, site and phylogenetic distribution of dogs with appendicular osteosarcoma: 744 dogs (2000-2015)."
+    title: >-
+      Demographic characteristics, site and phylogenetic distribution of dogs with appendicular osteosarcoma: 744 dogs
+      (2000-2015).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6936818/
     type: research
-    pmid: "31887114"
+    pmid: '31887114'
     relevance: supporting
 pubmedQueries:
   - query: '"Rottweiler" AND ("osteosarcoma" OR "bone tumor") AND (treatment OR chemotherapy OR prognosis)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 洛威拿犬骨肉瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - dyspnoea 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 骨骼 X 光
+          notes: 溶骨性與增殖性病變。骨膜反應（Sunburst pattern）。Codman 三角
+        - name: 胸腔 X 光
+          notes: 評估肺轉移（3 views）。確診時約 10% 可見轉移灶
+        - name: 骨活檢
+          notes: 組織病理學確認。需排除真菌性骨髓炎（影像類似）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 疼痛控制為首要
+        - 截肢 + 化療為標準方案
+        - 保肢手術為替代選擇
+ddxSource: auto-generated

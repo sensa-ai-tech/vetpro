@@ -3,11 +3,11 @@ nameEn: Panniculitis
 nameZh: 脂膜炎
 bodySystem: dermatology
 description: 皮下脂肪組織的發炎疾病。可為感染性、免疫媒介性、外傷性或特發性。表現為皮下結節，可破潰排出油脂性分泌物。需組織活檢確定病因。
-
 aliases:
-  - { alias: "Subcutaneous Fat Inflammation", language: en }
-  - { alias: "皮下脂肪炎", language: zh }
-
+  - alias: Subcutaneous Fat Inflammation
+    language: en
+  - alias: 皮下脂肪炎
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓偶見。
-
 etiology:
   categories:
     - name: 感染性
@@ -26,7 +25,6 @@ etiology:
         - 無菌性脂膜炎
         - 胰臟炎相關性脂膜炎
         - 全身性紅斑性狼瘡
-
 clinicalSigns:
   early:
     - 皮下深層結節
@@ -36,14 +34,12 @@ clinicalSigns:
     - 結節潰破排出油脂性液體
     - 結痂
     - 瘢痕形成
-
 diagnosis:
   primaryTests:
     - name: 皮膚活檢（楔形切除）
       notes: 需取到皮下脂肪。確認發炎類型與排除感染
     - name: 組織培養
       notes: 排除感染性病因
-
 treatment:
   principles:
     - 確定並治療病因
@@ -53,36 +49,67 @@ treatment:
     - 無菌性：Prednisolone 免疫抑制劑量
     - Vitamin E 補充（輔助）
     - 胰臟炎相關需治療胰臟炎
-
 prognosis: 取決於根本原因。無菌性脂膜炎對類固醇反應良好但可能復發。感染性適當治療預後佳。
-
-
 guidelineRefs:
   - sourceOrg: Medicina (Kaunas, Lithuania)
-    title: "Bone-Ti-Alloy Interaction in Hip Arthroplasty of Patients with Diabetes, Dyslipidaemia, and Kidney Dysfunction: Three Case Reports and Brief Review."
+    title: >-
+      Bone-Ti-Alloy Interaction in Hip Arthroplasty of Patients with Diabetes, Dyslipidaemia, and Kidney Dysfunction:
+      Three Case Reports and Brief Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12734666/
     type: review
-    pmid: "41470229"
+    pmid: '41470229'
   - sourceOrg: Veterinary research communications
-    title: "Ulcerative and pyogranulomatous pododermatitis due to Pseudomonas luteola infection in a domestic ferret (Mustela putorius furo): a case report with literature review of this emerging zoonotic disease in ferrets."
+    title: >-
+      Ulcerative and pyogranulomatous pododermatitis due to Pseudomonas luteola infection in a domestic ferret (Mustela
+      putorius furo): a case report with literature review of this emerging zoonotic disease in ferrets.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11442507/
     type: review
-    pmid: "39042223"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "C-Reactive Protein as a Diagnostic Marker in Dogs: A Review."
+    pmid: '39042223'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'C-Reactive Protein as a Diagnostic Marker in Dogs: A Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9598812/
     type: review
-    pmid: "36290272"
+    pmid: '36290272'
   - sourceOrg: Veterinary research communications
-    title: "Acute pancreatic panniculitis in a domestic ferret (Mustela putorius furo): diagnostic insights and a potential drug-induced etiology."
+    title: >-
+      Acute pancreatic panniculitis in a domestic ferret (Mustela putorius furo): diagnostic insights and a potential
+      drug-induced etiology.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12605372/
     type: case-report
-    pmid: "41217649"
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
+    pmid: '41217649'
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
     title: Sterile traumatic panniculitis in a captive Brent goose.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7081512/
     type: case-report
-    pmid: "32100641"
+    pmid: '32100641'
 pubmedQueries:
   - query: '"panniculitis" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 脂膜炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 皮膚活檢（楔形切除）
+          notes: 需取到皮下脂肪。確認發炎類型與排除感染
+        - name: 組織培養
+          notes: 排除感染性病因
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 確定並治療病因
+        - 免疫抑制治療（無菌性）
+ddxSource: auto-generated

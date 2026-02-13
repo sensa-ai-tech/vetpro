@@ -3,13 +3,15 @@ nameEn: Hyperlipoproteinemia
 nameZh: 高脂蛋白血症
 bodySystem: metabolic
 description: 血液中脂蛋白（含膽固醇及三酸甘油酯）濃度異常升高的代謝異常。可為原發性（遺傳性，如 Miniature Schnauzer）或繼發於其他內分泌/代謝疾病。持續高脂血症可導致胰臟炎、動脈粥樣硬化及眼部脂質沉積。
-
 aliases:
-  - { alias: 高脂血症, language: zh }
-  - { alias: 高三酸甘油酯血症, language: zh }
-  - { alias: Hyperlipidemia, language: en }
-  - { alias: Hypertriglyceridemia, language: en }
-
+  - alias: 高脂血症
+    language: zh
+  - alias: 高三酸甘油酯血症
+    language: zh
+  - alias: Hyperlipidemia
+    language: en
+  - alias: Hypertriglyceridemia
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓高脂血症多繼發於糖尿病或肥胖。原發性少見。
-
 etiology:
   categories:
     - name: 原發性（遺傳性）
@@ -31,7 +32,6 @@ etiology:
         - 糖尿病
         - 胰臟炎
         - 腎病症候群
-
 clinicalSigns:
   early:
     - 多數無症狀（偶然在血檢發現）
@@ -42,14 +42,12 @@ clinicalSigns:
     - 角膜脂質沉積（lipid keratopathy）
     - 皮膚黃色瘤（xanthoma）
     - 癲癇發作（嚴重時）
-
 diagnosis:
   primaryTests:
     - name: 血清生化
       notes: 空腹 12 小時後採血。三酸甘油酯及/或膽固醇升高。脂血影響其他生化值判讀。
     - name: 內分泌篩檢
       notes: T4（甲狀腺功能低下）、低劑量 Dexamethasone 試驗（Cushing）、血糖/果糖胺（糖尿病）排除繼發原因。
-
 treatment:
   principles:
     - 治療基礎疾病（繼發性）
@@ -62,36 +60,94 @@ treatment:
     - 難治性高三酸甘油酯：Omega-3 脂肪酸補充
     - 嚴重時：Gemfibrozil 或 Bezafibrate（犬用，需監測肝功能）
     - 定期空腹脂質追蹤
-
 prognosis: 繼發性高脂血症在基礎疾病控制後預後良好。Miniature Schnauzer 原發性需終身飲食管理，控制良好下預後佳但無法根治。反覆胰臟炎發作增加不良預後風險。
-
-
 guidelineRefs:
   - sourceOrg: Journal of atherosclerosis and thrombosis
-    title: The History of the WHHL Rabbit, an Animal Model of Familial Hypercholesterolemia (I) - Contribution to the Elucidation of the Pathophysiology of Human Hypercholesterolemia and Coronary Heart Disease.
+    title: >-
+      The History of the WHHL Rabbit, an Animal Model of Familial Hypercholesterolemia (I) - Contribution to the
+      Elucidation of the Pathophysiology of Human Hypercholesterolemia and Coronary Heart Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7049476/
     type: review
-    pmid: "31748469"
-  - sourceOrg: "Cell communication and signaling : CCS"
-    title: "Analysis of early effects of human APOE isoforms on Alzheimer's disease and type III hyperlipoproteinemia pathways using knock-in rat models with humanized APP and APOE."
+    pmid: '31748469'
+  - sourceOrg: 'Cell communication and signaling : CCS'
+    title: >-
+      Analysis of early effects of human APOE isoforms on Alzheimer's disease and type III hyperlipoproteinemia pathways
+      using knock-in rat models with humanized APP and APOE.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11438110/
     type: research
-    pmid: "39334477"
+    pmid: '39334477'
   - sourceOrg: Journal of internal medicine
-    title: The red blood cell as a mediator of endothelial dysfunction in patients with familial hypercholesterolemia and dyslipidemia.
+    title: >-
+      The red blood cell as a mediator of endothelial dysfunction in patients with familial hypercholesterolemia and
+      dyslipidemia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10092865/
     type: research
-    pmid: "36324273"
+    pmid: '36324273'
   - sourceOrg: Oxidative medicine and cellular longevity
     title: Idol Depletion Protects against Spontaneous Atherosclerosis in a Hamster Model of Familial Hypercholesterolemia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9155911/
     type: research
-    pmid: "35656026"
+    pmid: '35656026'
   - sourceOrg: International journal of molecular sciences
     title: Features of Lipid Metabolism in Humanized ApoE Knockin Rat Models.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8347964/
     type: research
-    pmid: "34361033"
+    pmid: '34361033'
 pubmedQueries:
   - query: '"Hyperlipoproteinemia" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 高脂蛋白血症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估血清脂質狀態，注意血清乳白色外觀
+      findings:
+        - 血清呈乳白色混濁脂血
+        - 嘔吐與腹痛
+        - 癲癇發作嚴重時
+        - 品種傾向迷你雪納瑞
+    - step: 2
+      action: 禁食脂質檢測
+      details: 12小時禁食後三酸甘油酯與膽固醇測定
+      findings:
+        - 三酸甘油酯升高
+        - 膽固醇可能升高
+        - 禁食後仍異常確認非飲食性
+        - 脂蛋白電泳分型
+    - step: 3
+      action: 繼發性病因排除
+      details: 排除導致高脂血症的潛在疾病
+      findings:
+        - 甲狀腺功能低下檢測
+        - 腎上腺皮質功能亢進
+        - 糖尿病篩查
+        - 腎病症候群排除
+    - step: 4
+      action: 併發症評估
+      details: 評估高脂血症相關併發症
+      findings:
+        - 胰臟炎風險評估
+        - 動脈粥樣硬化犬少見
+        - 眼底脂質沉積
+        - 肝臟脂肪浸潤
+clinicalPearls:
+  - 空腹12小時後採血是準確評估的前提
+  - 迷你雪納瑞是原發性高三酸甘油酯血症的典型品種
+  - 嚴重高三酸甘油酯血症（>500 mg/dL）可干擾其他血液檢查結果
+  - 繼發性原因遠比原發性常見，需先排除
+monitoringItems:
+  - 空腹三酸甘油酯和膽固醇
+  - 基礎疾病指標
+  - cPLI/fPLI（胰臟炎風險）
+  - 體重
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: hepatomegaly
+    frequency: common
+ddxSource: book

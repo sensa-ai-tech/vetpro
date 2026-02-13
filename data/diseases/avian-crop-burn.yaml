@@ -3,19 +3,21 @@ nameEn: Avian Crop Burn
 nameZh: 禽類嗉囊燙傷
 bodySystem: gastrointestinal
 description: 嗉囊燙傷是手養幼鳥因餵食過熱配方奶導致嗉囊黏膜與壁的熱損傷。嚴重者可導致嗉囊壁全層壞死並形成嗉囊瘻管（嗉囊皮膚瘻），需手術修復。為手養幼鳥常見的醫源性傷害。
-
 aliases:
-  - { alias: 嗉囊燒傷, language: zh }
-  - { alias: 嗉囊瘻管, language: zh }
-  - { alias: Crop burn in baby birds, language: en }
-  - { alias: Crop fistula, language: en }
-  - { alias: Thermal crop injury, language: en }
-
+  - alias: 嗉囊燒傷
+    language: zh
+  - alias: 嗉囊瘻管
+    language: zh
+  - alias: Crop burn in baby birds
+    language: en
+  - alias: Crop fistula
+    language: en
+  - alias: Thermal crop injury
+    language: en
 species:
   - speciesCommon: bird
     prevalence: uncommon
     notes: 僅見於手養幼鳥。配方奶溫度過高（>43°C / 109°F）為直接原因。微波加熱配方奶因溫度不均勻為最常見原因。
-
 etiology:
   categories:
     - name: 醫源性/人為因素
@@ -29,7 +31,6 @@ etiology:
         - 全層壁壞死（嚴重者）
         - 壞死組織脫落形成瘻管
         - 繼發性細菌感染
-
 clinicalSigns:
   early:
     - 餵食後幼鳥不適表現
@@ -44,7 +45,6 @@ clinicalSigns:
     - 脫水
     - 體重下降
     - 繼發感染
-
 diagnosis:
   primaryTests:
     - name: 臨床檢查
@@ -53,7 +53,6 @@ diagnosis:
       notes: 評估嗉囊壁完整性。嗉囊內容物是否正常排空
     - name: X 光
       notes: 鋇劑造影評估嗉囊完整性與瘻管位置
-
 treatment:
   principles:
     - 保守等待壞死範圍確定
@@ -68,9 +67,42 @@ treatment:
     - 抗生素預防感染
     - 保溫與補液
     - 預防：配方奶溫度嚴格控制在 39-41°C
-
 prognosis: 預後取決於燙傷嚴重程度。輕度燙傷保守治療可自癒。形成瘻管者經手術修復後預後良好（成功率高）。嚴重廣泛壞死或繼發敗血症者預後不良。術後嗉囊功能通常可恢復正常。
-
 pubmedQueries:
   - query: '"crop burn" AND (avian OR bird OR psittacine OR "hand rearing") AND (treatment OR surgery)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類嗉囊燙傷 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - dehydration 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床檢查
+          notes: 視診嗉囊區域皮膚。壞死區域呈暗色或黑色。瘻管形成時可見食物漏出
+        - name: 嗉囊觸診
+          notes: 評估嗉囊壁完整性。嗉囊內容物是否正常排空
+        - name: X 光
+          notes: 鋇劑造影評估嗉囊完整性與瘻管位置
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 保守等待壞死範圍確定
+        - 手術修復嗉囊與皮膚
+        - 預防感染
+ddxSource: auto-generated

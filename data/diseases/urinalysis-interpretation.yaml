@@ -3,11 +3,11 @@ nameEn: Urinalysis Interpretation
 nameZh: 尿液分析判讀
 bodySystem: other
 description: 犬貓尿液分析的系統性判讀,包括物理性質、化學檢測、顯微鏡沉渣檢查。為評估泌尿系統及全身性疾病的重要工具,需正確採集及保存尿液。
-
 aliases:
-  - { alias: 尿檢, language: zh }
-  - { alias: Urinalysis, language: en }
-
+  - alias: 尿檢
+    language: zh
+  - alias: Urinalysis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓下泌尿道症候群、慢性腎病評估
-
 etiology:
   categories:
     - name: 物理性質
@@ -33,37 +32,57 @@ etiology:
         - 紅血球、白血球
         - 上皮細胞、鑄型
         - 結晶、細菌
-
 clinicalSigns:
   early:
     - 尿液分析為診斷工具
   progressive:
     - 頻尿、血尿、排尿困難
-
 diagnosis:
   primaryTests:
     - name: 尿比重評估
-      notes: "犬正常1.015-1.045,貓1.035-1.060。<1.030(犬)或<1.035(貓)為低比重"
+      notes: 犬正常1.015-1.045,貓1.035-1.060。<1.030(犬)或<1.035(貓)為低比重
     - name: 蛋白尿評估
-      notes: "UPC>0.5異常,>2.0為嚴重蛋白尿"
+      notes: UPC>0.5異常,>2.0為嚴重蛋白尿
     - name: 沉渣檢查
-      notes: "RBC>5/HPF血尿,WBC>5/HPF膿尿,細菌提示感染"
+      notes: RBC>5/HPF血尿,WBC>5/HPF膿尿,細菌提示感染
   differentialDiagnoses:
     - 泌尿道感染
     - 慢性腎病
     - 糖尿病
     - 膀胱結石
-
 treatment:
   medical:
     - 尿液分析為診斷工具
     - 依診斷結果治療
-
 prognosis:
-  general: "尿液分析為簡單但資訊豐富的檢查,需正確採集保存及判讀。"
-
+  general: 尿液分析為簡單但資訊豐富的檢查,需正確採集保存及判讀。
 prevention:
   - 膀胱穿刺或導尿採集(培養用)
   - 自然排尿(一般分析)
   - 30分鐘內檢查或冷藏保存
   - 結合血液檢查判讀
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 尿液分析判讀 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pollakiuria 相關症狀
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 尿比重評估
+          notes: 犬正常1.015-1.045,貓1.035-1.060。<1.030(犬)或<1.035(貓)為低比重
+        - name: 蛋白尿評估
+          notes: UPC>0.5異常,>2.0為嚴重蛋白尿
+        - name: 沉渣檢查
+          notes: RBC>5/HPF血尿,WBC>5/HPF膿尿,細菌提示感染
+ddxSource: auto-generated

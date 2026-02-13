@@ -3,13 +3,15 @@ nameEn: Renal Hematoma
 nameZh: 腎血腫
 bodySystem: urinary
 description: 腎血腫是腎臟內或腎周圍的血液積聚，通常由外傷、腫瘤破裂或凝血功能障礙引起。可表現為急性腹部疼痛，嚴重時可致失血性休克。
-
 aliases:
-  - { alias: 腎臟血腫, language: zh }
-  - { alias: 腎被膜下血腫, language: zh }
-  - { alias: Kidney Hematoma, language: en }
-  - { alias: Subcapsular Renal Hematoma, language: en }
-
+  - alias: 腎臟血腫
+    language: zh
+  - alias: 腎被膜下血腫
+    language: zh
+  - alias: Kidney Hematoma
+    language: en
+  - alias: Subcapsular Renal Hematoma
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓腎血腫多與高處墜落傷或被車輛撞擊等外傷相關。
-
 etiology:
   categories:
     - name: 外傷性
@@ -33,7 +34,6 @@ etiology:
         - 凝血功能障礙（殺鼠劑中毒、DIC）
         - 抗凝血治療併發症
         - 腎動脈瘤破裂
-
 clinicalSigns:
   early:
     - 急性腹部疼痛
@@ -46,19 +46,17 @@ clinicalSigns:
     - 心搏過速
     - 低血壓
     - 失血性休克（大量出血時）
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "腎臟內或周圍高回音（急性）或混合回音（亞急性/慢性）血塊。評估出血量與來源。評估對側腎臟。"
+      notes: 腎臟內或周圍高回音（急性）或混合回音（亞急性/慢性）血塊。評估出血量與來源。評估對側腎臟。
     - name: 血液檢查
-      notes: "PCV/TP 下降（失血）。凝血功能評估（PT、aPTT）。BUN/Creatinine（評估腎功能影響）。CBC（貧血程度）。"
+      notes: PCV/TP 下降（失血）。凝血功能評估（PT、aPTT）。BUN/Creatinine（評估腎功能影響）。CBC（貧血程度）。
   differentialDiagnoses:
     - 腎臟腫瘤
     - 腎周圍假性囊腫
     - 腎膿瘍
     - 腎水腫
-
 treatment:
   medical:
     - 穩定血流動力學：靜脈輸液、必要時輸血
@@ -70,12 +68,42 @@ treatment:
     - 持續出血或失血性休克：緊急手術探查
     - 腎切除術（嚴重腎臟損傷，對側腎功能正常時）
     - 腫瘤破裂出血需腫瘤切除
-
 prognosis:
-  general: "外傷性腎血腫若出血可控制預後良好。腫瘤破裂出血預後取決於腫瘤類型（血管肉瘤預後極差）。凝血功能障礙矯正後預後良好。單側腎切除後對側腎臟可代償。"
-
+  general: 外傷性腎血腫若出血可控制預後良好。腫瘤破裂出血預後取決於腫瘤類型（血管肉瘤預後極差）。凝血功能障礙矯正後預後良好。單側腎切除後對側腎臟可代償。
 prevention:
   - 交通安全管理（限制自由外出）
   - 殺鼠劑的安全存放
   - 使用抗凝血藥物時定期監測
   - 已知腎臟腫瘤的早期處理
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: haematuria
+    frequency: common
+diagnosticAlgorithm:
+  title: 腎血腫 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - abdominal-pain 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 腎臟內或周圍高回音（急性）或混合回音（亞急性/慢性）血塊。評估出血量與來源。評估對側腎臟。
+        - name: 血液檢查
+          notes: PCV/TP 下降（失血）。凝血功能評估（PT、aPTT）。BUN/Creatinine（評估腎功能影響）。CBC（貧血程度）。
+ddxSource: auto-generated

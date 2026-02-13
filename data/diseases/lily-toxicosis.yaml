@@ -3,14 +3,17 @@ nameEn: Lily Toxicosis
 nameZh: 百合中毒
 bodySystem: toxicology
 description: 貓接觸或攝入真百合屬 (Lilium) 或萱草屬 (Hemerocallis) 植物後引起的急性腎小管壞死。極少量即可致命，為貓最危險的植物中毒之一。
-
 aliases:
-  - { alias: 百合花中毒, language: zh }
-  - { alias: 貓百合中毒, language: zh }
-  - { alias: Lily Poisoning, language: en }
-  - { alias: Easter Lily Toxicosis, language: en }
-  - { alias: Lilium Nephrotoxicity, language: en }
-
+  - alias: 百合花中毒
+    language: zh
+  - alias: 貓百合中毒
+    language: zh
+  - alias: Lily Poisoning
+    language: en
+  - alias: Easter Lily Toxicosis
+    language: en
+  - alias: Lilium Nephrotoxicity
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
@@ -20,7 +23,6 @@ species:
     speciesScientific: Canis lupus familiaris
     prevalence: rare
     notes: 犬攝入百合通常僅引起輕度腸胃症狀。不會出現如貓般的急性腎小管壞死。但鈴蘭 (Convallaria majalis) 含心臟毒素，對犬亦有毒。
-
 etiology:
   categories:
     - name: 高毒性百合（對貓致命）
@@ -40,7 +42,6 @@ etiology:
       examples:
         - Peace Lily (Spathiphyllum) — 含不溶性草酸鈣，僅口腔刺激
         - Calla Lily (Zantedeschia) — 含不溶性草酸鈣，非腎毒性
-
 clinicalSigns:
   early:
     - 嘔吐（攝入後 1-3 小時）
@@ -59,24 +60,22 @@ clinicalSigns:
     - 低體溫
     - 癲癇發作
     - 死亡（未治療者多在 3-7 天內死亡）
-
 diagnosis:
   primaryTests:
     - name: 病史與暴露確認
-      notes: "確認貓是否接觸百合植物（包括花粉）。檢查貓毛是否沾有花粉。詢問家中是否有百合花束"
+      notes: 確認貓是否接觸百合植物（包括花粉）。檢查貓毛是否沾有花粉。詢問家中是否有百合花束
     - name: 腎功能指標
-      notes: "BUN 與 creatinine 通常在攝入後 12-24 小時開始上升。SDMA 可能更早反映腎損傷"
+      notes: BUN 與 creatinine 通常在攝入後 12-24 小時開始上升。SDMA 可能更早反映腎損傷
   imaging:
     - name: 腹部超音波
-      notes: "腎臟腫大、皮質迴音增強（急性腎小管壞死）。可見腎周積液"
+      notes: 腎臟腫大、皮質迴音增強（急性腎小管壞死）。可見腎周積液
     - name: 腹部 X 光
-      notes: "腎臟腫大"
+      notes: 腎臟腫大
   additional:
     - 尿液分析（糖尿、蛋白尿、管型、等張尿、腎上皮細胞）
     - 電解質（高血鉀、高血磷、低血鈣）
     - CBC（通常正常或輕度應激性變化）
     - 尿量監測（從多尿轉為寡尿/無尿為惡化指標）
-
 treatment:
   principles:
     - 時間是關鍵——攝入後 18 小時內治療效果最佳
@@ -93,26 +92,89 @@ treatment:
     - 若發展為無尿性腎衰竭，考慮血液透析 (hemodialysis) 或腹膜透析
     - 營養支持（食道餵管或鼻胃管）
     - 住院監測至少 48-72 小時
-
 prognosis: 攝入後 18 小時內開始積極輸液治療預後可為良好。延遲超過 18-24 小時就醫者預後差。一旦發展為無尿性腎衰竭，即使透析治療死亡率仍高。未治療的貓幾乎 100% 死亡。及早就醫是存活關鍵。
-
 guidelineRefs:
   - sourceOrg: ASPCA APCC
-    title: "Easter lily (Lilium longiflorum) poisoning in cats"
+    title: Easter lily (Lilium longiflorum) poisoning in cats
     url: https://pubmed.ncbi.nlm.nih.gov/16231710/
     type: review
-    pmid: "16231710"
+    pmid: '16231710'
   - sourceOrg: Journal of Feline Medicine and Surgery
-    title: "Lily toxicity in the cat"
+    title: Lily toxicity in the cat
     url: https://pubmed.ncbi.nlm.nih.gov/20223679/
     type: review
-    pmid: "20223679"
-
+    pmid: '20223679'
 pubmedQueries:
   - query: '"lily" AND (cat OR feline) AND ("toxicosis" OR "nephrotoxicity" OR "acute kidney")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "TOX"
-  sectionTitle: "TOXICOSIS"
+  chapter: TOX
+  sectionTitle: TOXICOSIS
   pdfPage: 3128
+diagnosticAlgorithm:
+  title: 百合中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史確認與風險評估
+      details: 確認百合種類與接觸方式，貓為高風險物種
+      findings:
+        - 確認真百合屬或萱草屬
+        - 所有部位均有毒包含花粉
+        - 舔舐花粉也可中毒
+        - 貓特異性毒性犬不受影響
+    - step: 2
+      action: 早期症狀評估
+      details: 接觸後0-12小時內的初期表現
+      findings:
+        - 嘔吐通常2-4小時內開始
+        - 流涎
+        - 食慾廢絕
+        - 精神沉鬱
+    - step: 3
+      action: 腎功能密集監測
+      details: 12-72小時內腎功能持續惡化
+      findings:
+        - BUN/Creatinine進行性升高
+        - 腎臟超音波腎臟腫大回音增強
+        - 尿液分析管型蛋白尿等張尿
+        - 寡尿或無尿24-72小時
+    - step: 4
+      action: 積極治療與預後評估
+      details: 靜脈輸液治療效果評估
+      findings:
+        - 早期6小時內治療預後較佳
+        - 延遲治療超過18小時預後差
+        - 無尿為嚴重預後不良指標
+        - 腎臟替代療法評估
+clinicalPearls:
+  - 百合花的任何部分對貓都有致命毒性，包括花粉和花瓶水
+  - 即使只是梳理沾有花粉的毛髮後舔舐也可中毒
+  - 非百合屬植物如鈴蘭和和平百合毒性機制不同
+  - 早期治療是存活的關鍵——18小時黃金窗口
+  - BUN/Creatinine可能在攝入後24小時才升高，不要因初期正常而放鬆警惕
+  - 飼主教育是預防的核心——家中不要擺放百合花
+monitoringItems:
+  - 尿量（每小時記錄）
+  - BUN和Creatinine（每12小時共72小時）
+  - 電解質（尤其鉀）
+  - 水合狀態
+  - 食慾和精神狀態
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+  - symptomId: oliguria-anuria
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+ddxSource: book

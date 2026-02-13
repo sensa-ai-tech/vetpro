@@ -3,19 +3,20 @@ nameEn: German Shepherd Furunculosis
 nameZh: 德國牧羊犬深層膿皮症
 bodySystem: dermatology
 description: 德國牧羊犬深層膿皮症（German Shepherd Deep Pyoderma）是該品種特別好發的慢性深層皮膚感染，涉及毛囊破裂後細菌深入真皮與皮下組織。與品種免疫功能異常（IgA 缺乏）密切相關。
-
 aliases:
-  - { alias: 德牧深層膿皮症, language: zh }
-  - { alias: 德牧毛囊炎, language: zh }
-  - { alias: German Shepherd deep pyoderma, language: en }
-  - { alias: German Shepherd furunculosis, language: en }
-
+  - alias: 德牧深層膿皮症
+    language: zh
+  - alias: 德牧毛囊炎
+    language: zh
+  - alias: German Shepherd deep pyoderma
+    language: en
+  - alias: German Shepherd furunculosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 德國牧羊犬為深層膿皮症最好發品種。與該品種較高的 IgA 缺乏率有關。中年犬多見。慢性反覆發作。
-
 etiology:
   categories:
     - name: 感染因素
@@ -29,7 +30,6 @@ etiology:
         - 細胞免疫功能低下
         - 皮膚屏障功能異常
         - 潛在過敏性疾病
-
 clinicalSigns:
   early:
     - 丘疹與膿疱（後軀、背部多見）
@@ -44,21 +44,19 @@ clinicalSigns:
     - 後軀與臀部大面積脫毛
     - 區域淋巴結腫大
     - 體重減輕與嗜睡
-
 diagnosis:
   primaryTests:
     - name: 皮膚細胞學
-      notes: "壓印抹片見大量嗜中性球與胞內細菌"
+      notes: 壓印抹片見大量嗜中性球與胞內細菌
     - name: 細菌培養與藥敏試驗
-      notes: "必要檢查，尤其耐藥性 MRSP 日益增加。指導抗生素選擇"
+      notes: 必要檢查，尤其耐藥性 MRSP 日益增加。指導抗生素選擇
     - name: 皮膚活檢
-      notes: "深層化膿性與肉芽腫性皮膚炎。排除其他病因"
+      notes: 深層化膿性與肉芽腫性皮膚炎。排除其他病因
   differentialDiagnoses:
     - 蠕形蟎感染
     - 皮膚真菌感染
     - 自體免疫性皮膚病
     - 皮膚腫瘤
-
 treatment:
   medical:
     - 長程全身性抗生素（依藥敏選擇，至少 6-8 週）
@@ -66,12 +64,42 @@ treatment:
     - 潛在過敏控制（跳蚤、食物、環境）
     - 免疫調節（Staphage Lysate 或 autogenous bacterin）
     - 嚴重者短期 Prednisolone 輔助抗炎
-
 prognosis:
-  general: "預後謹慎。疾病常反覆發作，需長期管理。找出並控制潛在病因（過敏）可減少復發。耐藥菌感染增加治療難度。多數犬需終生間歇性治療。"
-
+  general: 預後謹慎。疾病常反覆發作，需長期管理。找出並控制潛在病因（過敏）可減少復發。耐藥菌感染增加治療難度。多數犬需終生間歇性治療。
 prevention:
   - 定期皮膚護理與藥浴
   - 控制潛在過敏原
   - 早期治療淺層膿皮症防止深化
   - 維持良好營養與免疫健康
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: uncommon
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: skin-pruritus
+    frequency: common
+  - symptomId: alopecia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 德國牧羊犬深層膿皮症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - weight-loss 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 皮膚細胞學
+          notes: 壓印抹片見大量嗜中性球與胞內細菌
+        - name: 細菌培養與藥敏試驗
+          notes: 必要檢查，尤其耐藥性 MRSP 日益增加。指導抗生素選擇
+        - name: 皮膚活檢
+          notes: 深層化膿性與肉芽腫性皮膚炎。排除其他病因
+ddxSource: auto-generated

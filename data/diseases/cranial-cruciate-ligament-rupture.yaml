@@ -3,13 +3,15 @@ nameEn: Cranial Cruciate Ligament Rupture
 nameZh: 前十字韌帶斷裂
 bodySystem: orthopedic
 description: 膝關節前十字韌帶的部分或完全斷裂，為犬最常見的後肢跛行原因與骨科手術指征。
-
 aliases:
-  - { alias: CCL Rupture, language: en }
-  - { alias: CCLR, language: en }
-  - { alias: ACL Tear, language: en }
-  - { alias: 十字韌帶斷裂, language: zh }
-
+  - alias: CCL Rupture
+    language: en
+  - alias: CCLR
+    language: en
+  - alias: ACL Tear
+    language: en
+  - alias: 十字韌帶斷裂
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓較少見，通常與外傷有關而非退化性。過重貓風險較高。
-
 etiology:
   categories:
     - name: 退化性 (犬最常見機制)
@@ -38,7 +39,6 @@ etiology:
       examples:
         - 急性扭傷 (貓較常見此機制)
         - 劇烈運動時的超伸展或旋轉
-
 clinicalSigns:
   early:
     - 後肢跛行 (急性發作或漸進性)
@@ -56,27 +56,25 @@ clinicalSigns:
     - 半月板損傷 (cranial horn of medial meniscus)
     - 對側 CCL 斷裂 (30-50%)
     - 慢性疼痛
-
 diagnosis:
   primaryTests:
     - name: 骨科檢查
-      notes: "Cranial drawer test (前抽屜試驗) 與 tibial thrust test (脛骨推進試驗) 陽性。可能需鎮靜放鬆肌肉"
+      notes: Cranial drawer test (前抽屜試驗) 與 tibial thrust test (脛骨推進試驗) 陽性。可能需鎮靜放鬆肌肉
     - name: 膝關節 X 光
-      notes: "關節積液 (fat pad sign 消失)、骨關節炎變化、脛骨前移"
+      notes: 關節積液 (fat pad sign 消失)、骨關節炎變化、脛骨前移
     - name: Stifle joint palpation
-      notes: "膝關節腫脹、medial buttress、疼痛反應"
+      notes: 膝關節腫脹、medial buttress、疼痛反應
   imaging:
     - name: X 光 (膝關節)
-      notes: "標準篩檢。評估骨關節炎程度。術前測量 TPA (tibial plateau angle)"
+      notes: 標準篩檢。評估骨關節炎程度。術前測量 TPA (tibial plateau angle)
     - name: MRI
-      notes: "可直接觀察韌帶與半月板。費用高，通常非必要"
+      notes: 可直接觀察韌帶與半月板。費用高，通常非必要
     - name: 關節鏡
-      notes: "診斷與治療性。可同時處理半月板損傷"
+      notes: 診斷與治療性。可同時處理半月板損傷
   additional:
     - 關節液分析 (非感染性炎症)
     - 對側膝關節評估
     - 骨盆肢 X 光 (排除其他跛行原因)
-
 treatment:
   principles:
     - 手術為大型犬的首選治療
@@ -85,65 +83,110 @@ treatment:
     - 術後復健對恢復至關重要
   medications:
     - name: NSAIDs (Meloxicam, Carprofen, Robenacoxib)
-      dose: "依藥物標準劑量"
+      dose: 依藥物標準劑量
       notes: 疼痛管理與抗炎。術前術後皆可使用
     - name: Gabapentin
-      dose: "5-10 mg/kg PO BID-TID"
+      dose: 5-10 mg/kg PO BID-TID
       notes: 多模式止痛的輔助用藥
     - name: Adequan (polysulfated glycosaminoglycan)
-      dose: "5 mg/kg IM 每 3-5 天 × 8 次"
+      dose: 5 mg/kg IM 每 3-5 天 × 8 次
       notes: 關節保護。可減緩退化性關節炎進展
     - name: Omega-3 脂肪酸
-      dose: "EPA+DHA 依體重補充"
+      dose: EPA+DHA 依體重補充
       notes: 輔助抗炎與關節保護
   general:
-    - 手術選擇：TPLO (tibial plateau leveling osteotomy，目前首選)、TTA (tibial tuberosity advancement)、Extracapsular repair (側副韌帶穩定術，小型犬)
+    - >-
+      手術選擇：TPLO (tibial plateau leveling osteotomy，目前首選)、TTA (tibial tuberosity advancement)、Extracapsular repair
+      (側副韌帶穩定術，小型犬)
     - 術後復健計畫 (被動關節活動、水中跑步機、肌力訓練)
     - 體重管理 (減輕關節負擔)
     - 活動限制 (術後 8-12 週)
     - 保守治療：嚴格限制活動 6-8 週 + 物理治療 + 止痛
-
 prognosis: TPLO/TTA 術後 >90% 的犬恢復良好的功能。保守治療在小型犬成功率較高 (約 85%)，大型犬較差。多數犬術後會有輕度退化性關節炎但功能良好。對側 CCL 斷裂風險需告知飼主。
-
 ontologyMappings:
   - source: MONDO
-    code: "MONDO:0001558"
+    code: MONDO:0001558
     label: rupture of anterior cruciate ligament
     confidence: broad
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Tibial Tuberosity Advancement Techniques (TTAT): A Systematic Review."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Tibial Tuberosity Advancement Techniques (TTAT): A Systematic Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9404911/
     type: review
-    pmid: "36009702"
+    pmid: '36009702'
   - sourceOrg: Veterinarni medicina
-    title: "Patellar luxation and concomitant cranial cruciate ligament rupture in&#xa0;dogs - A&#xa0;review."
+    title: Patellar luxation and concomitant cranial cruciate ligament rupture in&#xa0;dogs - A&#xa0;review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11334444/
     type: review
-    pmid: "39170807"
+    pmid: '39170807'
   - sourceOrg: Veterinary research communications
     title: Effect of center of rotation of angulation-based levelling osteotomy on instantaneous center of rotation ex vivo.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11147888/
     type: research
-    pmid: "38282014"
+    pmid: '38282014'
   - sourceOrg: Frontiers in veterinary science
-    title: "Non-invasive methods to assess muscle function in dogs: A scoping review."
+    title: 'Non-invasive methods to assess muscle function in dogs: A scoping review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9923109/
     type: review
-    pmid: "36793378"
+    pmid: '36793378'
   - sourceOrg: Acta veterinaria Scandinavica
-    title: Antimicrobial prophylaxis is considered sufficient to preserve an acceptable surgical site infection rate in clean orthopaedic and neurosurgeries in dogs.
+    title: >-
+      Antimicrobial prophylaxis is considered sufficient to preserve an acceptable surgical site infection rate in clean
+      orthopaedic and neurosurgeries in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7495856/
     type: research
-    pmid: "32943076"
+    pmid: '32943076'
     relevance: supporting
 pubmedQueries:
   - query: '"cranial cruciate ligament" AND dog AND ("TPLO" OR "surgical" OR "treatment")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "MUS"
-  sectionTitle: "Cranial Cruciate Ligament Rupture"
+  chapter: MUS
+  sectionTitle: Cranial Cruciate Ligament Rupture
   pdfPage: 1239
+diagnosticAlgorithm:
+  title: 前十字韌帶斷裂 診斷流程
+  steps:
+    - step: 1
+      action: 跛行評估
+      details: 後肢跛行+膝關節腫脹
+      findings:
+        - 急性：承重困難
+        - 慢性：間歇性跛行+肌肉萎縮
+    - step: 2
+      action: 骨科檢查
+      details: Drawer test + Tibial thrust
+      findings:
+        - 前抽屜試驗陽性（膝關節前移）
+        - 脛骨壓迫試驗陽性
+    - step: 3
+      action: X光
+      details: 膝關節X光評估
+      findings:
+        - 關節積液（脂肪墊徵象消失）
+        - 骨關節炎變化+脛骨前移
+    - step: 4
+      action: 手術
+      details: TPLO/TTA/lateral suture
+      findings:
+        - TPLO為目前首選術式
+        - 半月板評估（同時損傷常見）
+clinicalPearls:
+  - 前抽屜試驗和脛骨推壓試驗確認不穩定
+  - 約50%有半月板損傷
+  - 對側韌帶也是高風險
+  - TPLO是大型犬首選手術
+monitoringItems:
+  - 術後X光
+  - 功能恢復
+  - 對側監測
+  - 體重管理
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+ddxSource: book

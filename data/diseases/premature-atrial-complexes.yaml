@@ -3,13 +3,15 @@ nameEn: Premature Atrial Complexes
 nameZh: 心房早期收縮
 bodySystem: cardiac
 description: 心房異位起搏點提前發出電脈衝導致不規則心跳。通常良性，但頻繁發生可能提示心房擴張或進展為心房顫動。
-
 aliases:
-  - { alias: 心房性期前收縮, language: zh }
-  - { alias: Atrial Premature Contractions, language: en }
-  - { alias: APCs, language: en }
-  - { alias: PACs, language: en }
-
+  - alias: 心房性期前收縮
+    language: zh
+  - alias: Atrial Premature Contractions
+    language: en
+  - alias: APCs
+    language: en
+  - alias: PACs
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 多因心肌病變及心房擴張
-
 etiology:
   categories:
     - name: 心房擴張
@@ -33,7 +34,6 @@ etiology:
     - name: 原發性
       examples:
         - 特發性
-
 clinicalSigns:
   early:
     - 心跳不規則
@@ -42,30 +42,48 @@ clinicalSigns:
     - 心悸
     - 運動不耐
     - 可能進展為心房顫動
-
 diagnosis:
   primaryTests:
     - name: 心電圖
-      notes: "提早出現的 P 波，形態可能與竇性 P 波不同"
+      notes: 提早出現的 P 波，形態可能與竇性 P 波不同
     - name: 24 小時 Holter 監測
-      notes: "評估 APC 頻率及是否進展為 A-fib"
+      notes: 評估 APC 頻率及是否進展為 A-fib
     - name: 心臟超音波
-      notes: "評估心房大小、瓣膜功能"
+      notes: 評估心房大小、瓣膜功能
   differentialDiagnoses:
     - 竇性心律不整
     - 心室早期收縮
     - 心房顫動
-
 treatment:
   medical:
     - 治療原發病因 (瓣膜病、心肌病變)
     - 控制甲狀腺功能亢進 (貓)
     - 若頻繁或有症狀: Diltiazem 0.5-1.5 mg/kg PO q8h (貓)
     - Atenolol 0.25-1 mg/kg PO q12-24h (犬)
-
 prognosis:
-  general: "預後良好；偶發性 APCs 通常無臨床意義；頻繁 APCs 可能進展為心房顫動，需監測"
-
+  general: 預後良好；偶發性 APCs 通常無臨床意義；頻繁 APCs 可能進展為心房顫動，需監測
 prevention:
   - 早期診斷及治療心臟疾病
   - 定期監測心律 (高風險病例)
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 心房早期收縮 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心電圖
+          notes: 提早出現的 P 波，形態可能與竇性 P 波不同
+        - name: 24 小時 Holter 監測
+          notes: 評估 APC 頻率及是否進展為 A-fib
+        - name: 心臟超音波
+          notes: 評估心房大小、瓣膜功能
+ddxSource: auto-generated

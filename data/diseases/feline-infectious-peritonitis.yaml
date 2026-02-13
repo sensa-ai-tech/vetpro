@@ -2,18 +2,19 @@ slug: feline-infectious-peritonitis
 nameEn: Feline Infectious Peritonitis
 nameZh: 貓傳染性腹膜炎
 bodySystem: infectious
-description: 由貓冠狀病毒 (FCoV) 突變株引起的致命性全身性免疫介導疾病，以血管周圍肉芽腫性炎症與漿膜腔積液為特徵。多貓環境中 FCoV 感染率可高達 90%，但僅不到 5% 的感染貓會發展為 FIP。近年核苷類似物抗病毒治療帶來革命性改變，使原本幾乎 100% 致死的疾病有了治癒的可能。
-
+description: >-
+  由貓冠狀病毒 (FCoV) 突變株引起的致命性全身性免疫介導疾病，以血管周圍肉芽腫性炎症與漿膜腔積液為特徵。多貓環境中 FCoV 感染率可高達 90%，但僅不到 5% 的感染貓會發展為
+  FIP。近年核苷類似物抗病毒治療帶來革命性改變，使原本幾乎 100% 致死的疾病有了治癒的可能。
 aliases:
-  - { alias: FIP, language: en }
-  - { alias: 貓傳腹, language: zh }
-
+  - alias: FIP
+    language: en
+  - alias: 貓傳腹
+    language: zh
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 好發於幼貓 (<2 歲) 及多貓家庭/收容所環境。純種貓風險較高。
-
 etiology:
   categories:
     - name: 病毒性
@@ -27,7 +28,6 @@ etiology:
         - 幼齡 (<2 歲) 或老年 (>10 歲)
         - 免疫抑制 (FeLV、FIV 共感染)
         - 緊迫 (手術、搬家、新貓引入)
-
 clinicalSigns:
   early:
     - 反覆發燒 (對抗生素無反應)
@@ -52,20 +52,19 @@ clinicalSigns:
     - 心包積液 (心音減弱，ECG 與超音波可見特徵性變化)
     - 孤立性腸壁病變 (可能被誤認為腸道腫瘤)
     - 多器官衰竭
-
 diagnosis:
   primaryTests:
     - name: 積液分析
-      notes: "高蛋白 (>3.5 g/dL)、低細胞數、白蛋白/球蛋白比 <0.4。Rivalta test 陽性"
+      notes: 高蛋白 (>3.5 g/dL)、低細胞數、白蛋白/球蛋白比 <0.4。Rivalta test 陽性
     - name: 積液 FCoV RT-PCR
-      notes: "敏感度高，為確認滲出型 FIP 的重要工具"
+      notes: 敏感度高，為確認滲出型 FIP 的重要工具
     - name: 血清生化
-      notes: "高球蛋白血症 (尤其 γ-globulin)、A/G ratio <0.8、高膽紅素"
+      notes: 高球蛋白血症 (尤其 γ-globulin)、A/G ratio <0.8、高膽紅素
   imaging:
     - name: 腹部超音波
-      notes: "腹水、腎臟/肝臟/腸繫膜淋巴結肉芽腫病變"
+      notes: 腹水、腎臟/肝臟/腸繫膜淋巴結肉芽腫病變
     - name: MRI
-      notes: "神經型 FIP：腦膜增強、室管膜炎、腦積水"
+      notes: 神經型 FIP：腦膜增強、室管膜炎、腦積水
   additional:
     - 組織病理學 (病灶內血管周圍混合性炎症含巨噬細胞、嗜中性球、淋巴球與漿細胞，為病理學確診金標準)
     - 免疫組織化學 (FCoV 抗原陽性 — 可在病灶巨噬細胞中確認病毒抗原)
@@ -80,7 +79,6 @@ diagnosis:
     - 貓白血病病毒感染 (FeLV Infection)
     - 全身性黴菌感染 (Systemic Mycosis)
     - 細菌性膿胸或腹膜炎 (Bacterial Pyothorax/Peritonitis)
-
 treatment:
   principles:
     - GS-441524 及其類似物徹底改變了 FIP 的預後
@@ -88,55 +86,121 @@ treatment:
     - 療程通常 12 週 (84 天)
   medications:
     - name: GS-441524
-      dose: "滲出型 4 mg/kg SC SID；非滲出型 6 mg/kg；眼型 8 mg/kg；神經型 10 mg/kg"
+      dose: 滲出型 4 mg/kg SC SID；非滲出型 6 mg/kg；眼型 8 mg/kg；神經型 10 mg/kg
       notes: 注射劑型。療程 84 天。注射部位反應常見
     - name: Molnupiravir (EIDD-2801)
-      dose: "口服替代方案，劑量因製劑而異"
+      dose: 口服替代方案，劑量因製劑而異
       notes: 口服方便但效果相關研究仍在進行中
     - name: GC376 (蛋白酶抑制劑)
-      dose: "15 mg/kg SC BID"
+      dose: 15 mg/kg SC BID
       notes: 可與 GS-441524 合併用於難治型
   general:
     - 支持性治療 (營養支持、止吐)
     - 腹水/胸水引流 (呼吸窘迫時)
     - 定期監測 (體重、血球蛋白比、AGP)
     - 療程結束後追蹤 3 個月觀察復發
-
 emergencyNotes: 嚴重胸水導致呼吸窘迫時需緊急胸腔穿刺引流。避免使用免疫抑制劑（類固醇僅在確診前短期使用）。
-
 prognosis: 未治療幾乎 100% 致死。GS-441524 治療緩解率約 80-90%。神經型預後較差 (緩解率約 60-70%)。復發率約 10-15%。
-
 guidelineRefs:
   - sourceOrg: ABCD
     title: ABCD Guidelines on FIP (European Advisory Board on Cat Diseases)
     url: https://www.abcdcatsvets.org/feline-infectious-peritonitis/
     type: guideline
   - sourceOrg: Journal of feline medicine and surgery
-    title: Recommendations from workshops of the second international feline coronavirus/feline infectious peritonitis symposium.
+    title: >-
+      Recommendations from workshops of the second international feline coronavirus/feline infectious peritonitis
+      symposium.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7129416/
     type: guideline
-    pmid: "15123158"
+    pmid: '15123158'
   - sourceOrg: Pathogens (Basel, Switzerland)
-    title: "Efficacy of GS-441524 for Feline Infectious Peritonitis: A Systematic Review (2018-2024)."
+    title: 'Efficacy of GS-441524 for Feline Infectious Peritonitis: A Systematic Review (2018-2024).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12298711/
     type: review
-    pmid: "40732763"
+    pmid: '40732763'
   - sourceOrg: Viruses
-    title: "Feline Infectious Peritonitis: European Advisory Board on Cat Diseases Guidelines."
+    title: 'Feline Infectious Peritonitis: European Advisory Board on Cat Diseases Guidelines.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10535984/
     type: review
-    pmid: "37766254"
+    pmid: '37766254'
   - sourceOrg: Journal of feline medicine and surgery
     title: 2022 AAFP/EveryCat Feline Infectious Peritonitis Diagnosis Guidelines.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812230/
     type: review
-    pmid: "36002137"
+    pmid: '36002137'
     relevance: primary
 pubmedQueries:
   - query: '"feline infectious peritonitis" AND ("GS-441524" OR "antiviral" OR "treatment")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "GEN"
-  sectionTitle: "FELINE INFECTIOUS PERITONITIS"
+  chapter: GEN
+  sectionTitle: FELINE INFECTIOUS PERITONITIS
   pdfPage: 821
+diagnosticAlgorithm:
+  title: 貓傳染性腹膜炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估年輕貓的持續性發熱、體重下降，區分濕型（積液）和乾型（肉芽腫）
+      findings:
+        - 持續性不退燒
+        - 體重下降、食慾不振
+        - 腹部膨脹（濕型）
+        - 眼部或神經症狀（乾型）
+    - step: 2
+      action: 實驗室檢查
+      details: CBC、生化（白球蛋白比）、急性期蛋白、冠狀病毒抗體效價
+      findings:
+        - 高球蛋白血症
+        - 白球蛋白比<0.6
+        - 淋巴球減少
+        - 非再生性貧血
+    - step: 3
+      action: 積液分析（濕型）
+      details: 腹腔或胸腔積液分析，特徵為高蛋白低細胞數滲出液
+      findings:
+        - 蛋白>3.5g/dL
+        - 黃色黏稠液體
+        - Rivalta試驗陽性
+        - 細胞數偏低（以巨噬細胞為主）
+    - step: 4
+      action: 確診檢查
+      details: 積液或組織的冠狀病毒RT-PCR、免疫組織化學染色
+      findings:
+        - 積液FCoV RT-PCR陽性
+        - 組織免疫組織化學確認冠狀病毒抗原
+        - 肉芽腫性血管炎（病理特徵）
+        - 綜合臨床證據確診
+clinicalPearls:
+  - 冠狀病毒抗體力價高不等於FIP，大多數陽性貓不會發病
+  - Rivalta試驗是簡便有效的積液初步篩查
+  - A/G比<0.4高度提示FIP
+  - GS-441524的出現徹底改變了FIP的預後
+monitoringItems:
+  - 治療期間：臨床症狀、體重、血液檢查（球蛋白、A/G比、AGP）
+  - 停藥後3個月密切追蹤
+  - 復發監測
+associatedSymptoms:
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: common
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+associatedLabFindings:
+  - labId: hyperglobulinaemia
+    frequency: common
+ddxSource: book

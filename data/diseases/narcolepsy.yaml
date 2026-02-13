@@ -3,13 +3,15 @@ nameEn: Narcolepsy
 nameZh: 猝睡症
 bodySystem: neurology
 description: 睡眠-覺醒調節障礙，特徵為不可抗拒的突發性睡眠發作與猝倒 (cataplexy，突然肌張力喪失倒下但意識清楚)。犬的遺傳型與下丘腦分泌素 (hypocretin/orexin) 受體基因突變有關。
-
 aliases:
-  - { alias: Narcolepsy-Cataplexy, language: en }
-  - { alias: Sleep Disorder, language: en }
-  - { alias: 嗜睡症, language: zh }
-  - { alias: 發作性睡病, language: zh }
-
+  - alias: Narcolepsy-Cataplexy
+    language: en
+  - alias: Sleep Disorder
+    language: en
+  - alias: 嗜睡症
+    language: zh
+  - alias: 發作性睡病
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓偶有報告，多為後天型。
-
 etiology:
   categories:
     - name: 遺傳性
@@ -28,7 +29,6 @@ etiology:
       examples:
         - 免疫媒介性下丘腦分泌素神經元破壞
         - 特發性
-
 clinicalSigns:
   early:
     - 白天過度嗜睡
@@ -38,7 +38,6 @@ clinicalSigns:
     - 發作頻率增加
     - 由情緒激動觸發 (進食、玩耍)
     - 發作持續數秒至數分鐘
-
 diagnosis:
   primaryTests:
     - name: 臨床觀察 / 食物誘發試驗
@@ -47,7 +46,6 @@ diagnosis:
       notes: Doberman、Labrador 可做 HCRTR2 基因突變篩檢
     - name: 腦脊液 Hypocretin 濃度
       notes: 後天型患者腦脊液 hypocretin 濃度降低
-
 treatment:
   principles:
     - 控制症狀、減少發作頻率
@@ -57,36 +55,79 @@ treatment:
     - Modafinil 或 Methylphenidate 改善嗜睡
     - 避免過度興奮的情境
     - 飲食管理 (單碗少量餵食)
-
 prognosis: 不危及生命但影響生活品質。藥物可有效控制症狀。遺傳型終生需管理。發作時無痛苦，動物在非發作期完全正常。受影響犬不建議繁殖。
-
-
 guidelineRefs:
   - sourceOrg: Current issues in molecular biology
-    title: "Animal Models of Narcolepsy: From Orexin Deficiency to Immune Mechanisms and Regenerative Therapies."
+    title: 'Animal Models of Narcolepsy: From Orexin Deficiency to Immune Mechanisms and Regenerative Therapies.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12650821/
     type: review
-    pmid: "41296378"
+    pmid: '41296378'
   - sourceOrg: International journal of molecular sciences
-    title: "Molecular Pathways Potentially Involved in Hallucinatory Experiences During Sleep Paralysis: The Emerging Role of &#x3b2;-Arrestin-2."
+    title: >-
+      Molecular Pathways Potentially Involved in Hallucinatory Experiences During Sleep Paralysis: The Emerging Role of
+      &#x3b2;-Arrestin-2.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12346943/
     type: review
-    pmid: "40806366"
+    pmid: '40806366'
   - sourceOrg: Frontiers in neuroscience
     title: Amygdala neurocircuitry at the interface between emotional regulation and narcolepsy with cataplexy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10230954/
     type: review
-    pmid: "37266541"
+    pmid: '37266541'
   - sourceOrg: Veterinary sciences
-    title: "Avian Orexin: Feed Intake Regulator or Something Else?"
+    title: 'Avian Orexin: Feed Intake Regulator or Something Else?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8950792/
     type: review
-    pmid: "35324840"
+    pmid: '35324840'
   - sourceOrg: Handbook of clinical neurology
     title: Pleasure, addiction, and hypocretin (orexin).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8639176/
     type: review
-    pmid: "34225941"
+    pmid: '34225941'
 pubmedQueries:
   - query: '"narcolepsy" AND (veterinary OR canine OR feline) AND ("treatment" OR "genetics")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 猝睡症-猝倒症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估發作性突然入睡和情緒誘發的肌張力喪失，好發於杜賓犬和拉布拉多
+      findings:
+        - 突發性入睡發作（猝睡）
+        - 進食或玩耍時突然肌張力喪失倒地（猝倒）
+        - 發作後迅速恢復正常
+    - step: 2
+      action: 食物誘發試驗
+      details: 進行食物激發試驗觀察是否誘發猝倒發作，排除癲癇和心因性暈厥
+      findings:
+        - 食物激發試驗誘發典型猝倒發作
+        - 腦電圖排除癲癇
+        - 心電圖排除心源性暈厥
+    - step: 3
+      action: 藥物試驗確診
+      details: 靜脈注射atropine或physostigmine觀察是否誘發或緩解發作，CSF下視丘分泌素檢測
+      findings:
+        - Physostigmine靜脈注射誘發猝倒發作
+        - CSF下視丘分泌素（orexin）濃度降低
+        - 對imipramine或fluoxetine治療反應良好
+clinicalPearls:
+  - 猝倒與癲癇的關鍵區別：猝倒發作時意識保留且可被外界刺激喚醒，癲癇則伴有意識喪失
+  - 食物誘發猝倒測試（FECT）是診斷犬猝睡症-猝倒症最實用且特異性最高的臨床方法
+  - Doberman Pinscher 的猝睡症為體染色體隱性遺傳，HCRTR2 基因突變可透過基因檢測確認
+  - 三環抗憂鬱劑主要用於控制猝倒發作（抑制 REM 睡眠），而中樞興奮劑用於控制嗜睡
+  - 後天性猝睡症可能與下視丘腫瘤或發炎性疾病相關，需進行腦部 MRI 排除
+monitoringItems:
+  - 記錄發作頻率、持續時間和誘發因素的日誌
+  - 藥物治療後定期評估發作控制情形和副作用
+  - 三環抗憂鬱劑使用時監測心電圖（可能引起心律不整）
+  - 定期神經學檢查確認無新的神經功能缺損出現
+  - 後天性形式需定期腦部影像追蹤排除進展性病變
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: common
+ddxSource: book

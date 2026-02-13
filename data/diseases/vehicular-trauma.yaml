@@ -2,14 +2,18 @@ slug: vehicular-trauma
 nameEn: Vehicular Trauma
 nameZh: 車禍創傷
 bodySystem: emergency
-description: 車禍創傷 (hit by car, HBC) 為犬貓最常見的嚴重外傷類型。高速撞擊導致多系統損傷，包括骨折、胸腹腔損傷、頭部外傷與皮膚撕裂傷。系統性 primary survey (ABCDE) 為初始評估方法。多數 HBC 患畜有 >1 個器官系統損傷。
-
+description: >-
+  車禍創傷 (hit by car, HBC) 為犬貓最常見的嚴重外傷類型。高速撞擊導致多系統損傷，包括骨折、胸腹腔損傷、頭部外傷與皮膚撕裂傷。系統性 primary survey (ABCDE) 為初始評估方法。多數 HBC 患畜有
+  >1 個器官系統損傷。
 aliases:
-  - { alias: 車禍, language: zh }
-  - { alias: 交通事故創傷, language: zh }
-  - { alias: Hit By Car, language: en }
-  - { alias: HBC, language: en }
-
+  - alias: 車禍
+    language: zh
+  - alias: 交通事故創傷
+    language: zh
+  - alias: Hit By Car
+    language: en
+  - alias: HBC
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓 HBC 常見損傷包括下顎骨折、骨盆骨折、膈疝、尿道損傷。貓可能在車禍後數天才被發現。
-
 etiology:
   categories:
     - name: 常見損傷系統
@@ -34,7 +37,6 @@ etiology:
         - 動物體型
         - 撞擊部位
         - 是否被輾壓
-
 clinicalSigns:
   early:
     - 休克（蒼白、心搏過速、低血壓）
@@ -47,7 +49,6 @@ clinicalSigns:
     - 骨盆骨折出血（大量）
     - 尿道損傷（排尿障礙）
     - TBI 征象
-
 diagnosis:
   primaryTests:
     - name: Primary survey (ABCDE)
@@ -61,7 +62,6 @@ diagnosis:
     - 乳酸
     - 尿液分析（血尿→泌尿道損傷）
     - 凝血功能
-
 treatment:
   principles:
     - ABCDE 系統性處理
@@ -79,35 +79,109 @@ treatment:
     - 肺挫傷：保守管理（氧氣、保守輸液）
     - 48-72 小時持續監測（延遲性損傷）
     - 骨折手術安排（穩定後 3-5 天）
-
 prognosis: HBC 整體存活率約 80-85%（到達醫院者）。多系統損傷、嚴重 TBI 與大量出血為不良預後因子。單純骨折預後佳。肺挫傷多在 3-5 天改善。早期積極穩定為關鍵。
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
-    title: Characteristics of Low-Speed Vehicular Rollover Trauma in Dogs Presenting to an Emergency Service at a Veterinary Teaching Hospital.
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
+    title: >-
+      Characteristics of Low-Speed Vehicular Rollover Trauma in Dogs Presenting to an Emergency Service at a Veterinary
+      Teaching Hospital.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12322364/
     type: research
-    pmid: "40626339"
+    pmid: '40626339'
     relevance: supporting
   - sourceOrg: Frontiers in veterinary science
-    title: "Retrospective evaluation of the agreement between thoracic point-of-care ultrasound and thoracic radiographs in cats with recent trauma: 111 cats."
+    title: >-
+      Retrospective evaluation of the agreement between thoracic point-of-care ultrasound and thoracic radiographs in
+      cats with recent trauma: 111 cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11234836/
     type: research
-    pmid: "38988977"
+    pmid: '38988977'
     relevance: supporting
   - sourceOrg: Frontiers in veterinary science
-    title: "Craniomaxillofacial Trauma in Dogs-Part II: Association Between Fracture Location, Morphology and Etiology."
+    title: 'Craniomaxillofacial Trauma in Dogs-Part II: Association Between Fracture Location, Morphology and Etiology.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7242568/
     type: research
-    pmid: "32478108"
+    pmid: '32478108'
     relevance: supporting
   - sourceOrg: Frontiers in veterinary science
-    title: "Clinical Presentation, Causes, Treatment, and Outcome of Lip Avulsion Injuries in Dogs and Cats: 24 Cases (2001-2017)."
+    title: >-
+      Clinical Presentation, Causes, Treatment, and Outcome of Lip Avulsion Injuries in Dogs and Cats: 24 Cases
+      (2001-2017).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6043682/
     type: research
-    pmid: "30035113"
+    pmid: '30035113'
     relevance: supporting
 pubmedQueries:
-  - query: '"vehicular trauma" OR "hit by car" AND (veterinary OR canine OR feline) AND ("treatment" OR "polytrauma" OR "emergency")'
+  - query: >-
+      "vehicular trauma" OR "hit by car" AND (veterinary OR canine OR feline) AND ("treatment" OR "polytrauma" OR
+      "emergency")
     frequency: monthly
+diagnosticAlgorithm:
+  title: 車禍創傷 診斷流程
+  steps:
+    - step: 1
+      action: 初始穩定與快速評估
+      details: ABCDE急救流程穩定生命徵象
+      findings:
+        - 氣道通暢確認
+        - 呼吸功能評估氣胸/肺挫傷
+        - 循環評估休克/出血
+        - 意識與神經功能初步評估
+    - step: 2
+      action: 全身影像學檢查
+      details: 胸腹部X光與FAST超音波
+      findings:
+        - 胸腔X光氣胸/血胸/肺挫傷/肋骨骨折
+        - FAST超音波腹腔積液
+        - 骨盆X光骨盆骨折
+        - 脊椎X光脊椎骨折
+    - step: 3
+      action: 實驗室檢查
+      details: 評估內出血與臟器損傷
+      findings:
+        - PCV/TP連續監測
+        - 乳酸評估組織灌流
+        - 尿液分析排除泌尿道損傷
+        - 凝血功能評估
+    - step: 4
+      action: 二次評估
+      details: 穩定後完整二次評估
+      findings:
+        - 完整神經學檢查
+        - 四肢骨科檢查
+        - 皮膚傷口完整評估
+        - 48-72小時後複查延遲性損傷
+clinicalPearls:
+  - 創傷性心律不整常在受傷後24-72小時出現
+  - 骨盆骨折常合併泌尿道損傷，務必評估排尿功能
+  - 肺挫傷X光變化可能在受傷後12-24小時才明顯
+  - 皮膚看似完整但深層可能有嚴重損傷
+monitoringItems:
+  - 生命徵象（每1-4小時）
+  - PCV/TS（評估持續出血）
+  - 尿量和排尿功能
+  - ECG（創傷性心律不整）
+  - 呼吸功能
+  - 疼痛評分
+associatedSymptoms:
+  - symptomId: epistaxis
+    frequency: common
+  - symptomId: haematuria
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: horner-syndrome
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

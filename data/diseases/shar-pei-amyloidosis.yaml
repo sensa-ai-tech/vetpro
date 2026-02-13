@@ -3,12 +3,13 @@ nameEn: Shar-Pei Amyloidosis
 nameZh: 沙皮犬澱粉樣變性
 bodySystem: metabolic
 description: Chinese Shar-Pei 品種特異性的全身性澱粉樣蛋白沉積疾病。與 Shar-Pei 熱（familial Shar-Pei fever）相關。反應性 AA 型澱粉樣蛋白沉積於腎臟與肝臟，最終導致器官衰竭。
-
 aliases:
-  - { alias: "Familial Shar-Pei Fever", language: en }
-  - { alias: "Shar-Pei Fever", language: en }
-  - { alias: "沙皮犬熱", language: zh }
-
+  - alias: Familial Shar-Pei Fever
+    language: en
+  - alias: Shar-Pei Fever
+    language: en
+  - alias: 沙皮犬熱
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓澱粉樣變性多與其他品種/疾病相關。
-
 etiology:
   categories:
     - name: 遺傳性自體發炎
@@ -24,7 +24,6 @@ etiology:
         - HAS2 基因過表現相關
         - 反覆發炎導致 AA 型澱粉樣蛋白生成
         - 沉積於腎臟、肝臟
-
 clinicalSigns:
   early:
     - 反覆發燒發作（39.4-41.7°C）
@@ -35,7 +34,6 @@ clinicalSigns:
     - 腎衰竭
     - 肝腫大
     - 全身水腫
-
 diagnosis:
   primaryTests:
     - name: 品種 + 典型病史
@@ -44,7 +42,6 @@ diagnosis:
       notes: 早期腎臟澱粉樣沉積的指標
     - name: 腎臟活檢
       notes: 確診澱粉樣沉積（Congo red 染色）
-
 treatment:
   principles:
     - 減少炎症發作頻率
@@ -54,9 +51,43 @@ treatment:
     - 發燒發作：NSAIDs（Carprofen）
     - 腎臟支持治療（CKD 管理）
     - ACE 抑制劑（蛋白尿控制）
-
 prognosis: 預後謹慎至不良。腎衰竭為最常見死因。早期使用 Colchicine 可能延緩進展。中位壽命較其他犬種短。
-
 pubmedQueries:
   - query: '"Shar-Pei" AND "amyloidosis" AND (veterinary OR canine) AND ("treatment" OR "colchicine")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: polyarthritis
+    frequency: common
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 沙皮犬澱粉樣變性 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - polyarthritis 相關症狀
+        - hepatomegaly 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 品種 + 典型病史
+          notes: Shar-Pei + 反覆發燒 + 踝關節腫脹
+        - name: 尿蛋白/肌酐比
+          notes: 早期腎臟澱粉樣沉積的指標
+        - name: 腎臟活檢
+          notes: 確診澱粉樣沉積（Congo red 染色）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 減少炎症發作頻率
+        - 延緩腎臟損傷
+ddxSource: auto-generated

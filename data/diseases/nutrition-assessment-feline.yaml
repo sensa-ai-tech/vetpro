@@ -3,18 +3,18 @@ nameEn: Nutrition Assessment Feline
 nameZh: 貓營養評估
 bodySystem: metabolic
 description: 貓的綜合營養狀態評估。貓為專性肉食動物,營養需求與犬不同,需特別注意蛋白質、牛磺酸、花生四烯酸等必需營養素。正確評估對預防肥胖及肌肉流失至關重要。
-
 aliases:
-  - { alias: 貓營養狀態評估, language: zh }
-  - { alias: Feline nutritional assessment, language: en }
-  - { alias: Cat nutrition evaluation, language: en }
-
+  - alias: 貓營養狀態評估
+    language: zh
+  - alias: Feline nutritional assessment
+    language: en
+  - alias: Cat nutrition evaluation
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
     notes: 室內貓肥胖率高,老年貓易有肌肉流失,都需密切營養監測
-
 etiology:
   categories:
     - name: 評估項目
@@ -24,7 +24,6 @@ etiology:
         - 飲食史及偏好分析
         - 熱量需求計算
         - 貓科特殊營養需求(牛磺酸、精胺酸、維生素A等)
-
 clinicalSigns:
   early:
     - 理想體態:肋骨可觸摸,腰線可見,腹部適度上收
@@ -33,22 +32,20 @@ clinicalSigns:
     - 過瘦:肋骨突出,嚴重腰線凹陷(BCS 1-3)
     - 過重:肋骨難觸摸,腹部下垂,無腰線(BCS 7-9)
     - 老年貓肌肉流失(sarcopenia)
-
 diagnosis:
   primaryTests:
     - name: 體態評分(BCS)
-      notes: "1-9分制,理想為5分。評估肋骨、腰線、腹部脂肪墊"
+      notes: 1-9分制,理想為5分。評估肋骨、腰線、腹部脂肪墊
     - name: 肌肉狀況評分(MCS)
-      notes: "評估脊椎兩側、骨盆、肩胛肌肉量,老年貓特別重要"
+      notes: 評估脊椎兩側、骨盆、肩胛肌肉量,老年貓特別重要
     - name: 飲食史詳細問診
-      notes: "乾濕食比例、品牌、餵食量、零食、食慾、挑食行為"
+      notes: 乾濕食比例、品牌、餵食量、零食、食慾、挑食行為
     - name: 熱量需求計算
-      notes: "RER=70×(體重kg)^0.75,貓DER通常1.2-1.4×RER(室內貓活動量低)"
+      notes: RER=70×(體重kg)^0.75,貓DER通常1.2-1.4×RER(室內貓活動量低)
   differentialDiagnoses:
     - 肥胖(>60%室內貓)
     - 老年肌肉減少症
     - 甲狀腺機能亢進導致體重減輕
-
 treatment:
   medical:
     - 理想體態維持:1.2-1.4×RER(室內貓),1.4-1.6×RER(活動貓)
@@ -56,10 +53,8 @@ treatment:
     - 增重計畫:增加餵食頻率及適口性,1.4-1.8×RER
     - 老年貓:高蛋白飲食維持肌肉量(除非腎病)
     - 貓專用飲食:確保含牛磺酸、精胺酸、維生素A、花生四烯酸
-
 prognosis:
-  general: "正確營養評估可預防肥胖及肌肉流失。貓減重需緩慢進行避免脂肪肝,老年貓需平衡蛋白質需求與腎功能。"
-
+  general: 正確營養評估可預防肥胖及肌肉流失。貓減重需緩慢進行避免脂肪肝,老年貓需平衡蛋白質需求與腎功能。
 prevention:
   - 每次就診評估BCS及MCS
   - 定期記錄體重(每週至月)
@@ -67,36 +62,58 @@ prevention:
   - 增加環境豐富化促進活動
   - 老年貓維持足夠蛋白質攝取
   - 多貓家庭分開餵食監測攝取量
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
     title: 2022 ISFM Consensus Guidelines on Management of the Inappetent Hospitalised Cat.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11107985/
     type: consensus
-    pmid: "35775307"
+    pmid: '35775307'
     relevance: primary
   - sourceOrg: Journal of feline medicine and surgery
     title: 2021 AAFP Feline Senior Care Guidelines.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812122/
     type: guideline
-    pmid: "34167339"
+    pmid: '34167339'
     relevance: primary
   - sourceOrg: Journal of feline medicine and surgery
     title: 2021 AAHA/AAFP Feline Life Stage Guidelines.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812130/
     type: guideline
-    pmid: "33627003"
+    pmid: '33627003'
     relevance: primary
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Systematic Review and Meta-Analysis of Quality Claims Associated with Fresh Pet Food: Evaluating Scientific Evidence for Additives, Ingredient Quality, and Effects of Processing in Pet Nutrition."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Systematic Review and Meta-Analysis of Quality Claims Associated with Fresh Pet Food: Evaluating Scientific
+      Evidence for Additives, Ingredient Quality, and Effects of Processing in Pet Nutrition.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12784728/
     type: review
-    pmid: "41514729"
+    pmid: '41514729'
     relevance: primary
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline Comorbidities: A nutritional approach to management."
+    title: 'Feline Comorbidities: A nutritional approach to management.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11874005/
     type: review
-    pmid: "40022610"
+    pmid: '40022610'
     relevance: primary
+associatedSymptoms:
+  - symptomId: weight-gain
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 貓營養評估 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-gain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 體態評分(BCS)
+          notes: 1-9分制,理想為5分。評估肋骨、腰線、腹部脂肪墊
+        - name: 肌肉狀況評分(MCS)
+          notes: 評估脊椎兩側、骨盆、肩胛肌肉量,老年貓特別重要
+        - name: 飲食史詳細問診
+          notes: 乾濕食比例、品牌、餵食量、零食、食慾、挑食行為
+ddxSource: auto-generated

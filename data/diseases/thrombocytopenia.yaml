@@ -2,12 +2,14 @@ slug: thrombocytopenia
 nameEn: Thrombocytopenia
 nameZh: 血小板減少症
 bodySystem: hematology
-description: 血小板減少症為血小板計數低於正常範圍（犬 <175,000/μL，貓 <175,000/μL）。機轉包括血小板破壞增加（免疫介導性最常見）、生成減少（骨髓疾病）、消耗增加（DIC）或分佈異常（脾腫大）。臨床出血通常在血小板 <30,000-50,000/μL 時出現。
-
+description: >-
+  血小板減少症為血小板計數低於正常範圍（犬 <175,000/μL，貓 <175,000/μL）。機轉包括血小板破壞增加（免疫介導性最常見）、生成減少（骨髓疾病）、消耗增加（DIC）或分佈異常（脾腫大）。臨床出血通常在血小板
+  <30,000-50,000/μL 時出現。
 aliases:
-  - { alias: 血小板低下, language: zh }
-  - { alias: Low Platelets, language: en }
-
+  - alias: 血小板低下
+    language: zh
+  - alias: Low Platelets
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -15,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓隻血小板減少症常見於 FeLV/FIV 感染、DIC、骨髓疾病。貓隻血小板易發生體外凝集（pseudothrombocytopenia），須注意排除。
-
 etiology:
   categories:
     - name: 破壞增加
@@ -34,7 +35,6 @@ etiology:
         - 瀰漫性血管內凝血（DIC）
         - 大量出血
         - 脾腫大（血小板滯留）
-
 clinicalSigns:
   early:
     - 皮膚或黏膜點狀出血（petechiae）
@@ -46,60 +46,96 @@ clinicalSigns:
     - 血尿
     - 前房出血（hyphema）
     - 嚴重出血（顱內、腹腔）可危及生命
-
 diagnosis:
   primaryTests:
     - name: 全血球計數（CBC）與血液抹片
-      notes: "確認血小板計數降低。血液抹片排除血小板凝集（假性血小板減少）。評估血小板大小（大型血小板提示骨髓再生反應）。"
+      notes: 確認血小板計數降低。血液抹片排除血小板凝集（假性血小板減少）。評估血小板大小（大型血小板提示骨髓再生反應）。
     - name: 壁蝨傳播性疾病篩檢
       notes: Ehrlichia/Anaplasma 抗體或 PCR、Babesia PCR。犬隻血小板減少症應常規排除壁蝨傳播性疾病。
-
 treatment:
   principles:
     - 治療基礎病因
     - 嚴重出血需緊急處理
     - IMT 需免疫抑制治療
   general:
-    - "IMT：Prednisolone 2 mg/kg/day PO + Mycophenolate 10-20 mg/kg PO q12h 或 Azathioprine（犬）"
-    - "壁蝨傳播性疾病：Doxycycline 5 mg/kg PO q12h × 28 天"
-    - "嚴重出血：全血或血小板濃縮液輸注"
-    - "Vincristine 0.02 mg/kg IV single dose（急性 IMT 促進血小板釋放）"
+    - IMT：Prednisolone 2 mg/kg/day PO + Mycophenolate 10-20 mg/kg PO q12h 或 Azathioprine（犬）
+    - 壁蝨傳播性疾病：Doxycycline 5 mg/kg PO q12h × 28 天
+    - 嚴重出血：全血或血小板濃縮液輸注
+    - Vincristine 0.02 mg/kg IV single dose（急性 IMT 促進血小板釋放）
     - 停用可能致病的藥物
-
 prognosis: IMT 對免疫抑制治療反應率約 70-80%，但復發率約 20-30%。壁蝨傳播性疾病相關者在適當抗生素治療後通常可恢復。骨髓疾病導致者預後取決於基礎病因。DIC 導致者需控制原發疾病。
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
     title: ACVIM consensus statement on the treatment of immune thrombocytopenia in dogs and cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11256181/
     type: consensus
-    pmid: "38779941"
+    pmid: '38779941'
     relevance: primary
   - sourceOrg: Journal of veterinary internal medicine
     title: ACVIM consensus statement on the diagnosis of immune thrombocytopenia in dogs and cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11256148/
     type: consensus
-    pmid: "38752421"
+    pmid: '38752421'
     relevance: primary
   - sourceOrg: Viruses
-    title: "Emerging Arboviral Diseases in Pakistan: Epidemiology and Public Health Implications."
+    title: 'Emerging Arboviral Diseases in Pakistan: Epidemiology and Public Health Implications.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11860545/
     type: review
-    pmid: "40006987"
+    pmid: '40006987'
     relevance: primary
   - sourceOrg: Frontiers in immunology
-    title: "Diagnosis and Management of Hematological Adverse Events Induced by Immune Checkpoint Inhibitors: A Systematic Review."
+    title: >-
+      Diagnosis and Management of Hematological Adverse Events Induced by Immune Checkpoint Inhibitors: A Systematic
+      Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7640759/
     type: review
-    pmid: "33193289"
+    pmid: '33193289'
     relevance: primary
   - sourceOrg: Infectious diseases of poverty
-    title: "Severe thrombocytopaenia in patients with vivax malaria compared to falciparum malaria: a systematic review and meta-analysis."
+    title: >-
+      Severe thrombocytopaenia in patients with vivax malaria compared to falciparum malaria: a systematic review and
+      meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5808388/
     type: review
-    pmid: "29427995"
+    pmid: '29427995'
     relevance: supporting
 pubmedQueries:
   - query: '"thrombocytopenia" AND (veterinary OR canine OR feline) AND ("immune-mediated" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: epistaxis
+    frequency: uncommon
+  - symptomId: petechiae-ecchymoses
+    frequency: common
+  - symptomId: splenomegaly
+    frequency: uncommon
+  - symptomId: melaena
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 血小板減少症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - epistaxis 相關症狀
+        - petechiae-ecchymoses 相關症狀
+        - splenomegaly 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 全血球計數（CBC）與血液抹片
+          notes: 確認血小板計數降低。血液抹片排除血小板凝集（假性血小板減少）。評估血小板大小（大型血小板提示骨髓再生反應）。
+        - name: 壁蝨傳播性疾病篩檢
+          notes: Ehrlichia/Anaplasma 抗體或 PCR、Babesia PCR。犬隻血小板減少症應常規排除壁蝨傳播性疾病。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 嚴重出血需緊急處理
+        - IMT 需免疫抑制治療
+ddxSource: auto-generated

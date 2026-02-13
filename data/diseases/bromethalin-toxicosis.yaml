@@ -3,12 +3,13 @@ nameEn: Bromethalin Toxicosis
 nameZh: 溴敵隆中毒
 bodySystem: toxicology
 description: 溴敵隆 (bromethalin) 為非抗凝血型殺鼠劑，作用機制為解偶聯氧化磷酸化，導致腦水腫與脊髓水腫。無特效解毒劑。犬貓均易感，臨床表現為進行性神經症狀。因缺乏特效解毒劑，預後取決於攝入劑量與去汙染時效。
-
 aliases:
-  - { alias: 溴甲烷類殺鼠劑中毒, language: zh }
-  - { alias: Bromethalin Poisoning, language: en }
-  - { alias: Neurotoxic Rodenticide, language: en }
-
+  - alias: 溴甲烷類殺鼠劑中毒
+    language: zh
+  - alias: Bromethalin Poisoning
+    language: en
+  - alias: Neurotoxic Rodenticide
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓對 bromethalin 更敏感，致死劑量約 0.45 mg/kg。二次中繼中毒（攝食中毒嚙齒類）風險存在。
-
 etiology:
   categories:
     - name: 毒性機制
@@ -30,7 +30,6 @@ etiology:
         - 顆粒狀或塊狀殺鼠劑
         - 常見品牌含 bromethalin
         - 二次中繼中毒（食入中毒嚙齒類）
-
 clinicalSigns:
   early:
     - 嘔吐
@@ -43,7 +42,6 @@ clinicalSigns:
     - 角弓反張
     - 昏迷
     - 呼吸衰竭
-
 diagnosis:
   primaryTests:
     - name: 病史確認
@@ -55,7 +53,6 @@ diagnosis:
     - MRI（腦水腫）
     - CBC 與生化（通常正常）
     - 凝血功能（排除抗凝血型殺鼠劑）
-
 treatment:
   principles:
     - 無特效解毒劑
@@ -69,21 +66,69 @@ treatment:
     - 抗癲癇藥物（diazepam、levetiracetam）
     - IV 輸液支持
     - 住院密切監測神經狀態 72 小時以上
-
 prognosis: 犬貓 bromethalin 中毒預後取決於劑量與去汙染時效。早期催吐加活性炭者預後較佳。已出現嚴重神經症狀（癲癇、昏迷）者預後差。無特效解毒劑使治療困難。
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Bromethalin Exposure in Dogs and Cats: A 14-Year Retrospective Study (2010-2023) From the California Animal Health and Food Safety Laboratory System."
+    title: >-
+      Bromethalin Exposure in Dogs and Cats: A 14-Year Retrospective Study (2010-2023) From the California Animal Health
+      and Food Safety Laboratory System.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11938294/
     type: research
-    pmid: "40135768"
+    pmid: '40135768'
   - sourceOrg: PloS one
-    title: "Evidence of bromethalin toxicosis in feral San Francisco \"Telegraph Hill\" conures."
+    title: Evidence of bromethalin toxicosis in feral San Francisco "Telegraph Hill" conures.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6422264/
     type: research
-    pmid: "30883548"
+    pmid: '30883548'
 pubmedQueries:
   - query: '"bromethalin" AND (toxicosis OR poisoning) AND (veterinary OR canine OR feline)'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 溴鼠隆中毒 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估與暴露史確認
+      details: 確認可能的暴露源和時間，評估神經系統症狀
+      findings:
+        - 已知接觸滅鼠劑
+        - 急性神經症狀（震顫、癲癇）
+        - 後肢共濟失調或癱瘓
+        - 意識狀態改變
+    - step: 2
+      action: 神經學檢查
+      details: 進行完整神經學評估
+      findings:
+        - 上運動神經元或下運動神經元徵象
+        - 瞳孔散大和反射遲鈍
+        - 漸進性後肢無力
+        - 嚴重者出現角弓反張和去大腦姿勢
+    - step: 3
+      action: 實驗室與影像學
+      details: 進行支持性實驗室檢查和腦部影像
+      findings:
+        - 常規血液學和生化通常正常
+        - CSF蛋白可能升高
+        - MRI可能見腦水腫
+        - 凝血功能正常（區別於抗凝血滅鼠劑）
+    - step: 4
+      action: 毒物學確認
+      details: 透過毒物學分析確認診斷
+      findings:
+        - 胃內容物或組織樣本毒物學分析
+        - 脂肪組織中bromethalin及其代謝物desmethylbromethalin檢測
+        - 多數為推定性診斷（基於暴露史和臨床表現）
+        - 死後腦組織病理學見海綿狀腦白質病變
+clinicalPearls:
+  - 溴鼠隆中毒無特異性解毒劑，與抗凝血劑殺鼠劑不同，維生素 K 無效
+  - 活性炭的反覆給予非常重要，因溴鼠隆有腸肝循環
+  - 貓對溴鼠隆的敏感度遠高於犬（致死劑量約為犬的 1/5）
+  - 症狀可能在誤食後 10-24 小時才出現，高劑量暴露可在 2-4 小時內發病
+monitoringItems:
+  - 每 4-6 小時評估神經學狀態
+  - 監測意識程度與瞳孔反射
+  - 觀察癲癇發作頻率
+  - 住院期間持續監測至少 72 小時
+associatedSymptoms:
+  - symptomId: mydriasis
+    frequency: common
+ddxSource: book

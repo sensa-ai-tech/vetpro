@@ -3,28 +3,36 @@ nameEn: Meningoencephalitis of Unknown Origin
 nameZh: 腦膜腦炎
 bodySystem: neurology
 description: 中樞神經系統的炎症性疾病，包含肉芽腫性腦膜腦脊髓炎(GME)、壞死性腦膜腦炎(NME)及壞死性白質腦炎(NLE)等，好發小型犬，需免疫抑制治療。
-
 aliases:
-  - { alias: MUO, language: en }
-  - { alias: MUA, language: en }
-  - { alias: Meningoencephalitis of Unknown Aetiology, language: en }
-  - { alias: GME, language: en }
-  - { alias: NME, language: en }
-  - { alias: NLE, language: en }
-  - { alias: 肉芽腫性腦膜腦脊髓炎, language: zh }
-  - { alias: 壞死性腦膜腦炎, language: zh }
-  - { alias: 不明原因腦膜腦炎, language: zh }
-
+  - alias: MUO
+    language: en
+  - alias: MUA
+    language: en
+  - alias: Meningoencephalitis of Unknown Aetiology
+    language: en
+  - alias: GME
+    language: en
+  - alias: NME
+    language: en
+  - alias: NLE
+    language: en
+  - alias: 肉芽腫性腦膜腦脊髓炎
+    language: zh
+  - alias: 壞死性腦膜腦炎
+    language: zh
+  - alias: 不明原因腦膜腦炎
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: uncommon
-    notes: 犬最常見的非感染性 CNS 炎症疾病。小型犬好發。GME：中年小型犬 (任何品種)。NME (Pug encephalitis)：Pug、Maltese、Chihuahua、Papillon、Shih Tzu。NLE (Yorkshire Terrier encephalitis)：Yorkshire Terrier、French Bulldog。DLA class II 基因多型性與風險相關。
+    notes: >-
+      犬最常見的非感染性 CNS 炎症疾病。小型犬好發。GME：中年小型犬 (任何品種)。NME (Pug encephalitis)：Pug、Maltese、Chihuahua、Papillon、Shih Tzu。NLE
+      (Yorkshire Terrier encephalitis)：Yorkshire Terrier、French Bulldog。DLA class II 基因多型性與風險相關。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓罕見。FIP 為貓最重要的腦膜腦炎原因 (需區分)。非感染性腦膜腦炎在貓極少報告。
-
 etiology:
   categories:
     - name: 免疫媒介性 (主要類型)
@@ -45,9 +53,10 @@ etiology:
         - 弓形蟲 (Toxoplasma)
         - 立克次體 (Rickettsia)
         - 原蟲 (Neospora caninum)
-
-pathophysiology: MUO 為自體免疫介導的 CNS 炎症反應。GME 特徵為單核球 (淋巴球、巨噬細胞、漿細胞) 以血管周圍為中心的肉芽腫性浸潤，可累及腦實質、腦膜及脊髓。播散型 GME 為多發微肉芽腫，局灶型 GME 可形成佔據空間的腫塊，模擬腫瘤。NME 以大腦皮質及皮質下白質的壞死為特徵，伴隨嚴重的淋巴球、漿細胞浸潤，腦膜也常受侵犯。NLE 主要影響白質，以壞死及脫髓鞘為主。免疫機制涉及 T 細胞媒介及抗體媒介的雙重反應，針對 CNS 自身抗原 (確切靶抗原尚未完全明確)。DLA class II 等位基因影響抗原呈現，可能導致自身免疫耐受性喪失。
-
+pathophysiology: >-
+  MUO 為自體免疫介導的 CNS 炎症反應。GME 特徵為單核球 (淋巴球、巨噬細胞、漿細胞) 以血管周圍為中心的肉芽腫性浸潤，可累及腦實質、腦膜及脊髓。播散型 GME 為多發微肉芽腫，局灶型 GME
+  可形成佔據空間的腫塊，模擬腫瘤。NME 以大腦皮質及皮質下白質的壞死為特徵，伴隨嚴重的淋巴球、漿細胞浸潤，腦膜也常受侵犯。NLE 主要影響白質，以壞死及脫髓鞘為主。免疫機制涉及 T 細胞媒介及抗體媒介的雙重反應，針對 CNS 自身抗原
+  (確切靶抗原尚未完全明確)。DLA class II 等位基因影響抗原呈現，可能導致自身免疫耐受性喪失。
 clinicalSigns:
   early:
     - 多灶性神經學缺損 (最常見表現)
@@ -69,27 +78,25 @@ clinicalSigns:
     - 四肢癱瘓
     - 呼吸功能障礙 (腦幹侵犯)
     - 急性惡化死亡 (播散型 GME)
-
 diagnosis:
   primaryTests:
     - name: 頭部 MRI
-      notes: "最重要的診斷工具。GME：多灶性或單灶性顯影增強病變。NME：大腦皮質/皮質下不對稱壞死 (T2W 高信號、T1W 低信號)。NLE：白質為主的多灶性病變。MRI 無法確定分型，但可建立高度懷疑"
+      notes: 最重要的診斷工具。GME：多灶性或單灶性顯影增強病變。NME：大腦皮質/皮質下不對稱壞死 (T2W 高信號、T1W 低信號)。NLE：白質為主的多灶性病變。MRI 無法確定分型，但可建立高度懷疑
     - name: 腦脊髓液 (CSF) 分析
-      notes: "多數 MUO 顯示單核球性或混合細胞增多症 (>5 cells/μL)。蛋白質升高。GME：混合性或單核球性。NME：淋巴球為主。CSF 正常不能排除 MUO"
+      notes: 多數 MUO 顯示單核球性或混合細胞增多症 (>5 cells/μL)。蛋白質升高。GME：混合性或單核球性。NME：淋巴球為主。CSF 正常不能排除 MUO
     - name: 腦組織病理 (確診金標準)
-      notes: "活體診斷極少執行 (需腦切片)。多為死後確診。區分 GME/NME/NLE 需靠組織病理"
+      notes: 活體診斷極少執行 (需腦切片)。多為死後確診。區分 GME/NME/NLE 需靠組織病理
   imaging:
     - name: 頭部 MRI (含顯影劑)
-      notes: "首選影像。評估病變分布、範圍、顯影模式。GME 局灶型可能模擬腫瘤"
+      notes: 首選影像。評估病變分布、範圍、顯影模式。GME 局灶型可能模擬腫瘤
     - name: 頭部 CT
-      notes: "MRI 不可用時替代。敏感度低於 MRI"
+      notes: MRI 不可用時替代。敏感度低於 MRI
   additional:
     - 感染性疾病排除 (犬瘟熱 PCR、Toxoplasma/Neospora 血清學、Cryptococcus 抗原、tick-borne disease panel)
     - CBC、生化 (排除代謝性原因)
     - CSF PCR panel (排除感染性腦炎)
     - CSF 培養 (排除細菌性腦膜炎)
     - 抗核抗體 (ANA) (排除全身性自體免疫)
-
 treatment:
   principles:
     - 免疫抑制治療為核心
@@ -99,19 +106,19 @@ treatment:
     - 治療反應監測 (臨床症狀 + MRI 追蹤)
   medications:
     - name: Prednisolone/Dexamethasone
-      dose: "Prednisolone 1-2 mg/kg PO BID (初始) → 漸減至最低有效劑量 (0.5-1 mg/kg QOD)。急性嚴重：Dexamethasone 0.25 mg/kg IV"
+      dose: Prednisolone 1-2 mg/kg PO BID (初始) → 漸減至最低有效劑量 (0.5-1 mg/kg QOD)。急性嚴重：Dexamethasone 0.25 mg/kg IV
       notes: 免疫抑制基礎用藥。所有 MUO 患者都使用。長期副作用需注意
     - name: Cytarabine (Ara-C)
-      dose: "50 mg/m² SC BID × 2 天 (每 3-4 週一個療程)"
+      dose: 50 mg/m² SC BID × 2 天 (每 3-4 週一個療程)
       notes: 穿透血腦障壁佳。與 prednisolone 合併使用可延長存活。常用二線藥物
     - name: Cyclosporine
-      dose: "5-10 mg/kg PO BID"
+      dose: 5-10 mg/kg PO BID
       notes: 第二線免疫抑制劑。與 prednisolone 合併。血藥濃度監測 (目標 trough 200-400 ng/mL)
     - name: Mycophenolate Mofetil (MMF)
-      dose: "10-20 mg/kg PO BID"
+      dose: 10-20 mg/kg PO BID
       notes: 替代免疫抑制劑。可能有腸胃副作用。需監測 CBC
     - name: 抗癲癇藥物
-      dose: "Levetiracetam 20-60 mg/kg PO TID 或 Phenobarbital 2.5-5 mg/kg PO BID"
+      dose: Levetiracetam 20-60 mg/kg PO TID 或 Phenobarbital 2.5-5 mg/kg PO BID
       notes: 痙攣管理。Levetiracetam 為首選 (副作用少)
   general:
     - 急性嚴重病例：ICU 支持治療、控制癲癇持續狀態
@@ -120,42 +127,103 @@ treatment:
     - 類固醇副作用監測 (PU/PD、肝指數)
     - 免疫抑制期間感染風險增加
     - 放射治療 (局灶型 GME 模擬腫瘤者可考慮)
-
-prognosis: MUO 預後從審慎到不佳。GME 播散型預後最差 (未治療中位存活數天至數週)。免疫抑制治療後中位存活約 3-14 個月 (依研究不同)。局灶型 GME 預後優於播散型。NME 中位存活約數月。部分病例可穩定數年。痙攣難以控制者預後較差。早期積極治療與預後正相關。
-
-emergencyNotes: 癲癇持續狀態為急診情況：Diazepam 0.5-1 mg/kg IV (可重複)，無效時 Midazolam 0.1-0.3 mg/kg IV/IM CRI 或 Propofol CRI。同時啟動 Dexamethasone 0.25 mg/kg IV 及 Levetiracetam 60 mg/kg IV loading dose。
-
+prognosis: >-
+  MUO 預後從審慎到不佳。GME 播散型預後最差 (未治療中位存活數天至數週)。免疫抑制治療後中位存活約 3-14 個月 (依研究不同)。局灶型 GME 預後優於播散型。NME
+  中位存活約數月。部分病例可穩定數年。痙攣難以控制者預後較差。早期積極治療與預後正相關。
+emergencyNotes: >-
+  癲癇持續狀態為急診情況：Diazepam 0.5-1 mg/kg IV (可重複)，無效時 Midazolam 0.1-0.3 mg/kg IV/IM CRI 或 Propofol CRI。同時啟動 Dexamethasone 0.25
+  mg/kg IV 及 Levetiracetam 60 mg/kg IV loading dose。
 guidelineRefs:
   - sourceOrg: ACVIM
     title: Meningoencephalitis of Unknown Origin in Dogs — Diagnostic and Treatment Review
     url: https://pubmed.ncbi.nlm.nih.gov/31908063/
     type: review
-    pmid: "31908063"
+    pmid: '31908063'
   - sourceOrg: Frontiers in veterinary science
-    title: "Of potential new treatment targets and polythetic approach in meningoencephalitis of unknown origin: a review."
+    title: 'Of potential new treatment targets and polythetic approach in meningoencephalitis of unknown origin: a review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11518845/
     type: review
-    pmid: "39474275"
+    pmid: '39474275'
   - sourceOrg: Frontiers in veterinary science
-    title: Masticatory muscle changes on magnetic resonance imaging of dogs with Neospora caninum compared to meningoencephalitis of unknown origin.
+    title: >-
+      Masticatory muscle changes on magnetic resonance imaging of dogs with Neospora caninum compared to
+      meningoencephalitis of unknown origin.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11747628/
     type: research
-    pmid: "39840346"
+    pmid: '39840346'
   - sourceOrg: Frontiers in veterinary science
-    title: Magnetic resonance imaging prognostic factors for survival and relapse in dogs with meningoencephalitis of unknown origin.
+    title: >-
+      Magnetic resonance imaging prognostic factors for survival and relapse in dogs with meningoencephalitis of unknown
+      origin.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10933066/
     type: research
-    pmid: "38482167"
+    pmid: '38482167'
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Generalized Tremors in Dogs: 198 Cases (2003-2023)."
+    title: 'Generalized Tremors in Dogs: 198 Cases (2003-2023).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11951301/
     type: research
-    pmid: "40152656"
+    pmid: '40152656'
 pubmedQueries:
   - query: '"meningoencephalitis" AND (dog OR canine) AND ("MUO" OR "GME" OR "NME" OR "immunosuppressive")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "ITG"
-  sectionTitle: "ORIGIN"
+  chapter: ITG
+  sectionTitle: ORIGIN
   pdfPage: 1008
+diagnosticAlgorithm:
+  title: 不明原因腦膜腦炎 診斷流程
+  steps:
+    - step: 1
+      action: 神經學檢查
+      details: 進行完整神經學檢查，評估中樞神經系統受累範圍
+      findings:
+        - 癲癇發作
+        - 意識狀態改變
+        - 共濟失調或圓圈運動
+        - 頸部疼痛與僵硬
+    - step: 2
+      action: 實驗室檢查
+      details: 進行全血計數、生化及感染性疾病篩檢
+      findings:
+        - 白血球計數可能升高
+        - C反應蛋白升高
+        - 壁蝨媒介疾病PCR/血清學
+        - 弓漿蟲、隱球菌抗原檢測
+    - step: 3
+      action: 進階影像學
+      details: 進行MRI檢查評估腦部病變範圍和性質
+      findings:
+        - 多灶性腦實質病變
+        - T2加權和FLAIR高信號
+        - 腦膜增強
+        - 病變分布模式有助於分類（GME、NME、NLE）
+    - step: 4
+      action: 腦脊髓液分析
+      details: 進行CSF採集與分析，確認炎症性質
+      findings:
+        - CSF蛋白升高
+        - 有核細胞增多
+        - 單核球或混合性炎症
+        - 感染性病原體培養和PCR陰性
+    - step: 5
+      action: 排除性確診
+      details: 排除感染性和腫瘤性病因後，確診為MUE
+      findings:
+        - 所有感染篩檢陰性
+        - MRI與CSF表現一致
+        - 腦組織活檢為最終確診手段（非常規）
+        - 臨床分類為GME、NME或NLE亞型
+clinicalPearls:
+  - MUE 是生前臨床診斷——確切的組織學亞型（GME/NME/NLE）通常需要腦活檢或屍檢確認
+  - 小型犬品種（Maltese、Yorkie、Pug、Chihuahua）出現急性神經症狀時，MUE 應列為首要考慮
+  - CSF 採集前必須排除顱內壓升高（先做 MRI），避免腦疝風險
+  - 突然停止免疫抑制治療可導致致命性復發——必須緩慢減量
+  - Cytarabine 被認為能穿越血腦屏障，是 MUE 治療的重要輔助藥物
+monitoringItems:
+  - 定期神經學評估（每 2-4 週，穩定後每 1-3 個月）
+  - 追蹤 MRI 評估病變進展或縮小（治療 2-3 個月後）
+  - 免疫抑制藥物副作用監測（血糖、肝腎功能、感染）
+  - 抗癲癇藥物血中濃度監測（phenobarbital）
+  - CSF 復查評估治療反應（選擇性）
+ddxSource: book

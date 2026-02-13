@@ -3,13 +3,15 @@ nameEn: Traumatic Uveitis
 nameZh: 外傷性葡萄膜炎
 bodySystem: ophthalmology
 description: 因鈍性或穿透性眼部外傷引起的葡萄膜發炎反應。外傷導致血-房水屏障 (blood-aqueous barrier) 破壞、前列腺素釋放及組織損傷。為小動物急性前葡萄膜炎最常見原因之一。
-
 aliases:
-  - { alias: Blunt Trauma Uveitis, language: en }
-  - { alias: Post-traumatic Uveitis, language: en }
-  - { alias: 外傷性眼內炎, language: zh }
-  - { alias: 創傷性葡萄膜炎, language: zh }
-
+  - alias: Blunt Trauma Uveitis
+    language: en
+  - alias: Post-traumatic Uveitis
+    language: en
+  - alias: 外傷性眼內炎
+    language: zh
+  - alias: 創傷性葡萄膜炎
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓常見。貓打架爪傷、高處墜落。穿透傷需警惕感染性眼內炎。
-
 etiology:
   categories:
     - name: 鈍性外傷
@@ -30,7 +31,6 @@ etiology:
         - 貓爪抓傷
         - 尖銳異物穿刺
         - 槍彈傷
-
 clinicalSigns:
   early:
     - 眼睛疼痛
@@ -43,7 +43,6 @@ clinicalSigns:
     - 角膜水腫
     - 晶體脫位 (嚴重外傷)
     - 眼壓降低 (初期) 或升高 (慢性)
-
 diagnosis:
   primaryTests:
     - name: 眼科檢查
@@ -52,7 +51,6 @@ diagnosis:
       notes: 葡萄膜炎典型低眼壓。高眼壓需警惕續發性青光眼
     - name: 眼部超音波
       notes: 排除眼內異物、玻璃體出血、視網膜剝離
-
 treatment:
   principles:
     - 控制炎症防止續發性損傷
@@ -64,9 +62,42 @@ treatment:
     - 全身性 NSAIDs 止痛
     - 穿透傷：全身性抗生素預防感染
     - 角膜穿孔/晶體脫位需手術
-
 prognosis: 單純鈍性外傷引起的葡萄膜炎預後良好，通常 1-2 週消退。穿透傷預後較差。併發前房大量出血或晶體脫位者預後謹慎。慢性未治療可導致續發性青光眼或白內障。
-
 pubmedQueries:
   - query: '"traumatic uveitis" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: red-eye
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+  - symptomId: mydriasis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 外傷性葡萄膜炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - red-eye 相關症狀
+        - peripheral-oedema 相關症狀
+        - mydriasis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 眼科檢查
+          notes: 評估前房反應、前房出血量、瞳孔反應、晶體位置。螢光素染色排除角膜穿孔
+        - name: 眼壓測量
+          notes: 葡萄膜炎典型低眼壓。高眼壓需警惕續發性青光眼
+        - name: 眼部超音波
+          notes: 排除眼內異物、玻璃體出血、視網膜剝離
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 控制炎症防止續發性損傷
+        - 散瞳防止後粘連
+        - 穿透傷需評估感染風險
+ddxSource: auto-generated

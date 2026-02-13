@@ -3,18 +3,18 @@ nameEn: Carnassial Tooth Abscess
 nameZh: 裂齒膿瘍
 bodySystem: infectious
 description: 裂齒膿瘍特指犬上頜第四前臼齒(PM4)的根尖膿瘍,是犬最常見的齒根感染。典型表現為眼下方臉頰腫脹和瘻管,三個牙根中以遠心頰側根最常受累,需拔牙或根管治療。
-
 aliases:
-  - { alias: 上頜第四前臼齒膿瘍, language: zh }
-  - { alias: PM4 Abscess, language: en }
-  - { alias: Maxillary Fourth Premolar Abscess, language: en }
-
+  - alias: 上頜第四前臼齒膿瘍
+    language: zh
+  - alias: PM4 Abscess
+    language: en
+  - alias: Maxillary Fourth Premolar Abscess
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 中大型犬種更常見,德國牧羊犬和黃金獵犬高發
-
 etiology:
   categories:
     - name: 牙髓疾病
@@ -26,7 +26,6 @@ etiology:
       examples:
         - 深度牙周袋至根分叉
         - 牙周牙髓聯合病變
-
 clinicalSigns:
   early:
     - 咀嚼時疼痛
@@ -38,20 +37,18 @@ clinicalSigns:
     - 流出膿血性分泌物
     - 食慾廢絕
     - 臉部疼痛不願撫摸
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
-      notes: "眼下方腫脹,可能見瘻管開口"
+      notes: 眼下方腫脹,可能見瘻管開口
     - name: 口腔檢查(麻醉下)
-      notes: "PM4可能變色、斷裂或牙周病"
+      notes: PM4可能變色、斷裂或牙周病
     - name: 牙科X光
-      notes: "遠心頰側根根尖透亮區最常見,三個牙根需分別評估"
+      notes: 遠心頰側根根尖透亮區最常見,三個牙根需分別評估
   differentialDiagnoses:
     - 眼眶膿瘍
     - 淚腺囊腫
     - 腫瘤
-
 treatment:
   medical:
     - 拔牙:最常用且有效(需完整移除三個牙根)
@@ -60,11 +57,34 @@ treatment:
     - Meloxicam 0.1 mg/kg PO SID
     - 瘻管不需單獨處理,拔牙後自行癒合
     - 軟食2週
-
 prognosis:
-  general: "拔牙預後極佳,瘻管7-14天內閉合,症狀迅速消失。根管治療成功率約80-85%。三個牙根必須完整移除,殘留根尖會導致持續感染。"
-
+  general: 拔牙預後極佳,瘻管7-14天內閉合,症狀迅速消失。根管治療成功率約80-85%。三個牙根必須完整移除,殘留根尖會導致持續感染。
 prevention:
   - 避免咬硬物
   - 定期牙科檢查
   - 牙齒損傷及時處理
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: common
+diagnosticAlgorithm:
+  title: 裂齒膿瘍 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - halitosis-stomatitis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 眼下方腫脹,可能見瘻管開口
+        - name: 口腔檢查(麻醉下)
+          notes: PM4可能變色、斷裂或牙周病
+        - name: 牙科X光
+          notes: 遠心頰側根根尖透亮區最常見,三個牙根需分別評估
+ddxSource: auto-generated

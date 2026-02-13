@@ -3,11 +3,11 @@ nameEn: Prolapsed Uterus Detail
 nameZh: 子宮脫垂詳述
 bodySystem: reproductive
 description: 子宮完全或部分翻出陰道外。多發於產後，因子宮過度鬆弛或用力過度。為急症，需緊急復位或切除。
-
 aliases:
-  - { alias: 子宮外翻, language: zh }
-  - { alias: Uterine Prolapse, language: en }
-
+  - alias: 子宮外翻
+    language: zh
+  - alias: Uterine Prolapse
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓罕見
-
 etiology:
   categories:
     - name: 產科因素
@@ -30,7 +29,6 @@ etiology:
         - 初產或高齡母犬
         - 單胎或巨大胎兒
         - 子宮組織鬆弛
-
 clinicalSigns:
   early:
     - 陰道外可見腫脹紅色組織塊
@@ -41,20 +39,18 @@ clinicalSigns:
     - 出血
     - 休克
     - 繼發感染
-
 diagnosis:
   primaryTests:
     - name: 視診
-      notes: "陰道外露紅色管狀組織（子宮）"
+      notes: 陰道外露紅色管狀組織（子宮）
     - name: 觸診
-      notes: "確認組織類型及存活度"
+      notes: 確認組織類型及存活度
     - name: 全血球計數
-      notes: "評估感染及貧血"
+      notes: 評估感染及貧血
   differentialDiagnoses:
     - 陰道脫垂
     - 陰道腫瘤
     - 膀胱脫垂
-
 treatment:
   medical:
     - 緊急穩定：IV輸液、止痛、抗生素
@@ -66,12 +62,32 @@ treatment:
     - 暫時縫合陰道口
     - 壞死或無法復位：卵巢子宮切除術
     - 術後：催產素促進子宮收縮
-
 prognosis:
-  general: "早期復位預後佳，可保留繁殖能力。組織壞死或復位失敗需切除，預後良好但喪失生育力。"
-
+  general: 早期復位預後佳，可保留繁殖能力。組織壞死或復位失敗需切除，預後良好但喪失生育力。
 prevention:
   - 產後立即監測
   - 謹慎使用催產素
   - 避免過度用力（難產及時剖腹）
   - 產後絕育考慮
+associatedSymptoms:
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 子宮脫垂詳述 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 視診
+          notes: 陰道外露紅色管狀組織（子宮）
+        - name: 觸診
+          notes: 確認組織類型及存活度
+        - name: 全血球計數
+          notes: 評估感染及貧血
+ddxSource: auto-generated

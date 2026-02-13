@@ -3,11 +3,11 @@ nameEn: Flail Chest
 nameZh: 連枷胸
 bodySystem: emergency
 description: 連枷胸 (flail chest) 為三根以上相鄰肋骨各有兩處以上骨折，形成游離胸壁段。呼吸時游離段出現反常運動（paradoxical motion）：吸氣時內陷、呼氣時外凸。導致通氣效率嚴重下降。常伴隨肺挫傷，後者為主要死因。
-
 aliases:
-  - { alias: 連枷胸壁, language: zh }
-  - { alias: Flail Segment, language: en }
-
+  - alias: 連枷胸壁
+    language: zh
+  - alias: Flail Segment
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓連枷胸亦罕見。貓胸壁較薄，嚴重外傷更易發生。
-
 etiology:
   categories:
     - name: 致病因素
@@ -28,7 +27,6 @@ etiology:
         - 游離段反常運動→通氣效率下降
         - 伴隨肺挫傷（通常比連枷胸本身更危及生命）
         - 疼痛→自主限制呼吸→肺膨脹不全
-
 clinicalSigns:
   early:
     - 呼吸困難
@@ -40,7 +38,6 @@ clinicalSigns:
     - 低氧血症
     - 氣胸（肺被肋骨碎片刺穿）
     - 血胸
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
@@ -51,7 +48,6 @@ diagnosis:
     - 動脈血氣（低氧血症評估）
     - TFAST 超音波
     - 胸部 CT（複雜損傷評估）
-
 treatment:
   principles:
     - 止痛為最重要治療
@@ -67,16 +63,47 @@ treatment:
     - 合併肺挫傷：保守管理（避免過度輸液）
     - 手術（罕需）：嚴重錯位骨折的內固定
     - IV 輸液（謹慎，避免加重肺水腫）
-
 prognosis: 連枷胸存活率約 60-80%。主要死因為伴隨的肺挫傷而非連枷胸本身。有效止痛可顯著改善通氣與預後。骨折癒合約 3-4 週。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Thoracic dog bite wounds in cats: a retrospective study of 22 cases (2005-2015)."
+    title: 'Thoracic dog bite wounds in cats: a retrospective study of 22 cases (2005-2015).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10814566/
     type: research
-    pmid: "30806527"
+    pmid: '30806527'
 pubmedQueries:
   - query: '"flail chest" AND (veterinary OR canine OR feline) AND ("treatment" OR "rib fracture" OR "pulmonary contusion")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 連枷胸 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 觸診胸壁可感覺游離段與反常運動。骨折摩擦感
+        - name: 胸部 X-ray
+          notes: 多發肋骨骨折確認。評估伴隨肺挫傷與氣/血胸
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 動脈血氣（低氧血症評估）
+        - TFAST 超音波
+        - 胸部 CT（複雜損傷評估）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 止痛為最重要治療
+        - 氧氣補充
+        - 多數保守管理
+ddxSource: auto-generated

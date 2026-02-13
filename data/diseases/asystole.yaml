@@ -3,12 +3,13 @@ nameEn: Asystole
 nameZh: 心搏停止
 bodySystem: cardiac
 description: 心臟完全無電氣活性,心電圖呈一直線。為心跳停止的最終階段,預後極差,需立即心肺復甦。
-
 aliases:
-  - { alias: 心臟停搏, language: zh }
-  - { alias: Cardiac Arrest, language: en }
-  - { alias: Flatline, language: en }
-
+  - alias: 心臟停搏
+    language: zh
+  - alias: Cardiac Arrest
+    language: en
+  - alias: Flatline
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 同上
-
 etiology:
   categories:
     - name: 心跳停止
@@ -33,7 +33,6 @@ etiology:
       examples:
         - 嚴重低血容
         - 高血鉀
-
 clinicalSigns:
   early:
     - 無意識
@@ -43,18 +42,16 @@ clinicalSigns:
     - 黏膜發紺
     - 瞳孔放大
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 心電圖
-      notes: "平直線，無電氣活性 (確認導線連接正常)"
+      notes: 平直線，無電氣活性 (確認導線連接正常)
     - name: 臨床評估
-      notes: "無脈搏、無意識、無呼吸"
+      notes: 無脈搏、無意識、無呼吸
   differentialDiagnoses:
     - 心室顫動
     - 無脈性電氣活動
     - 導線脫落 (排除)
-
 treatment:
   medical:
     - CPR (立即開始，100-120 次/分鐘胸外按壓)
@@ -62,39 +59,57 @@ treatment:
     - Atropine 0.04 mg/kg IV/IO (若高迷走相關)
     - 插管及正壓通氣
     - 治療可逆原因 (5H5T)
-
 prognosis:
-  general: "預後極差；存活率 < 2%；即使恢復自主循環，多數在 24 小時內死亡"
-
+  general: 預後極差；存活率 < 2%；即使恢復自主循環，多數在 24 小時內死亡
 prevention:
   - 麻醉中密切監測
   - 早期識別及治療危急病患
   - CPR 訓練
-
-
 guidelineRefs:
   - sourceOrg: Equine veterinary journal
-    title: "Suspected vagal reflex and&#xa0;hyperkalaemia&#xa0;inducing asystole in an anaesthetised horse."
+    title: Suspected vagal reflex and&#xa0;hyperkalaemia&#xa0;inducing asystole in an anaesthetised horse.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9543672/
     type: review
-    pmid: "34738246"
+    pmid: '34738246'
   - sourceOrg: JFMS open reports
     title: Inadvertent ligation of pulmonary artery during surgical closure of patent ductus arteriosus in two cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12816530/
     type: case-report
-    pmid: "41567720"
+    pmid: '41567720'
   - sourceOrg: Journal of translational medicine
     title: Knock-in Kcnh2 rabbit model of long QT syndrome type-2, epilepsy, and sudden death.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12001650/
     type: research
-    pmid: "40234944"
+    pmid: '40234944'
   - sourceOrg: Children (Basel, Switzerland)
-    title: Effect of a Larger Flush Volume on Bioavailability and Efficacy of Umbilical Venous Epinephrine during Neonatal Resuscitation in Ovine Asphyxial Arrest.
+    title: >-
+      Effect of a Larger Flush Volume on Bioavailability and Efficacy of Umbilical Venous Epinephrine during Neonatal
+      Resuscitation in Ovine Asphyxial Arrest.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8228479/
     type: research
-    pmid: "34205843"
+    pmid: '34205843'
   - sourceOrg: BMC cardiovascular disorders
     title: Establishment of a nonshockable rhythm cardiac arrest model caused by asphyxia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9798662/
     type: research
-    pmid: "36581829"
+    pmid: '36581829'
+associatedSymptoms:
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 心搏停止 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pallor-cyanosis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心電圖
+          notes: 平直線，無電氣活性 (確認導線連接正常)
+        - name: 臨床評估
+          notes: 無脈搏、無意識、無呼吸
+ddxSource: auto-generated

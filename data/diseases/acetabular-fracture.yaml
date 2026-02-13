@@ -3,11 +3,11 @@ nameEn: Acetabular Fracture
 nameZh: Acetabular Fracture
 bodySystem: orthopedic
 description: 骨折,骨骼完整性中斷。需評估骨折類型、穩定性與是否有神經血管損傷,決定保守或手術治療。
-
 aliases:
-  - { alias: Acetabular Fracture, language: zh }
-  - { alias: Acetabular Fracture, language: en }
-
+  - alias: Acetabular Fracture
+    language: zh
+  - alias: Acetabular Fracture
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 外傷
       examples:
         - 退化性變化
         - 先天性異常
-
 clinicalSigns:
   early:
     - 跛行
@@ -32,41 +30,62 @@ clinicalSigns:
   progressive:
     - 肌肉萎縮
     - 關節畸形
-
 diagnosis:
   primaryTests:
     - name: 骨科檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: X光(多方位)
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 非類固醇消炎藥(Carprofen 2-4 mg/kg PO q12-24h)
     - 疼痛控制
   surgical:
     - name: 根據病況可能需手術治療(骨折固定、韌帶重建、關節置換等)
-      notes: "依病況評估"
-
+      notes: 依病況評估
 prognosis:
-  general: "預後取決於損傷嚴重度、治療方式與飼主配合度。早期適當治療可改善功能恢復。"
-
+  general: 預後取決於損傷嚴重度、治療方式與飼主配合度。早期適當治療可改善功能恢復。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: Medicine
-    title: "Dome impaction classification in acetabular fractures: Identifying atypical dome impactions with absence of the gull sign: A retrospective descriptive study."
+    title: >-
+      Dome impaction classification in acetabular fractures: Identifying atypical dome impactions with absence of the
+      gull sign: A retrospective descriptive study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10589566/
     type: research
-    pmid: "37861513"
-  - sourceOrg: "Veterinary journal (London, England : 1997)"
-    title: Retrospective evaluation of the diagnosis of acetabular fracture in cattle and the outcome after conservative treatment.
+    pmid: '37861513'
+  - sourceOrg: 'Veterinary journal (London, England : 1997)'
+    title: >-
+      Retrospective evaluation of the diagnosis of acetabular fracture in cattle and the outcome after conservative
+      treatment.
     url: https://pubmed.ncbi.nlm.nih.gov/40378945/
     type: research
-    pmid: "40378945"
+    pmid: '40378945'
+associatedSymptoms:
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: Acetabular Fracture 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cachexia-muscle-wasting 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 骨科檢查
+          notes: 需詳細評估
+        - name: X光(多方位)
+          notes: 協助確診
+ddxSource: auto-generated

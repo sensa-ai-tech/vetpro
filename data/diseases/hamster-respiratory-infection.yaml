@@ -3,22 +3,20 @@ nameEn: Hamster Respiratory Infection
 nameZh: 倉鼠呼吸道感染
 bodySystem: respiratory
 description: 倉鼠上/下呼吸道的細菌或病毒感染，表現為打噴嚏、鼻分泌物、呼吸困難。環境因素（氨氣濃度高、通風差）為重要誘因。
-
 aliases:
-  - { alias: "倉鼠呼吸道感染", language: zh }
-  - { alias: "Hamster Respiratory Infection", language: en }
-
+  - alias: 倉鼠呼吸道感染
+    language: zh
+  - alias: Hamster Respiratory Infection
+    language: en
 species:
   - speciesCommon: hamster
     prevalence: uncommon
     notes: 倉鼠可受此疾病影響。
-
 etiology:
   categories:
     - name: 病因
       examples:
         - 詳見臨床文獻
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -27,14 +25,12 @@ clinicalSigns:
   progressive:
     - 症狀加重
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 完整理學檢查與病史評估。
     - name: 實驗室檢查
       notes: CBC/生化排除系統性疾病。
-
 treatment:
   principles:
     - 治療基礎病因
@@ -44,38 +40,74 @@ treatment:
     - 依病因治療
     - 支持性照護
     - 定期追蹤
-
 prognosis: 預後取決於疾病嚴重度與治療時效。早期診斷與適當治療可改善預後。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
     title: An Overview of SARS-CoV-2 and Animal Infection.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7759518/
     type: review
-    pmid: "33363234"
+    pmid: '33363234'
   - sourceOrg: Zoological research
-    title: "Ferrets: A powerful model of SARS-CoV-2."
+    title: 'Ferrets: A powerful model of SARS-CoV-2.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10083223/
     type: review
-    pmid: "36799224"
+    pmid: '36799224'
   - sourceOrg: Veterinary pathology
-    title: "Hamster models of COVID-19 pneumonia reviewed: How human can they be?"
+    title: 'Hamster models of COVID-19 pneumonia reviewed: How human can they be?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9207993/
     type: review
-    pmid: "34856819"
+    pmid: '34856819'
   - sourceOrg: Science in One Health
-    title: "COVID-19 and One Health: potential role of human and animals in SARS-CoV-2 life cycle."
+    title: 'COVID-19 and One Health: potential role of human and animals in SARS-CoV-2 life cycle.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10238119/
     type: review
-    pmid: "39077046"
+    pmid: '39077046'
     relevance: primary
-  - sourceOrg: "Stem cell research &amp; therapy"
+  - sourceOrg: Stem cell research &amp; therapy
     title: Lyophilized MSC-EVs attenuates COVID-19 pathogenesis by regulating the JAK/STAT pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12079845/
     type: research
-    pmid: "40369583"
+    pmid: '40369583'
     relevance: supporting
 pubmedQueries:
   - query: '"Hamster Respiratory Infection" AND (veterinary OR hamster) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: sneezing
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 倉鼠呼吸道感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 完整理學檢查與病史評估。
+        - name: 實驗室檢查
+          notes: CBC/生化排除系統性疾病。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 支持性照護
+        - 監測恢復進度
+ddxSource: auto-generated

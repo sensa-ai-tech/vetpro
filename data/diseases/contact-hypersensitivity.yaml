@@ -3,11 +3,11 @@ nameEn: Contact Hypersensitivity
 nameZh: 接觸性過敏反應
 bodySystem: immunology
 description: 第IV型遲發性過敏反應，由T細胞介導，皮膚接觸過敏原後24-72小時出現症狀。常見過敏原包括金屬、植物、清潔劑及外用藥物。
-
 aliases:
-  - { alias: 接觸性皮膚炎, language: zh }
-  - { alias: Allergic Contact Dermatitis, language: en }
-
+  - alias: 接觸性皮膚炎
+    language: zh
+  - alias: Allergic Contact Dermatitis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少見，可能因自我理毛減少接觸
-
 etiology:
   categories:
     - name: 金屬過敏原
@@ -35,7 +34,6 @@ etiology:
         - 清潔劑、消毒劑
         - 地毯清潔劑
         - 外用抗生素（新黴素）
-
 clinicalSigns:
   early:
     - 接觸部位紅斑
@@ -46,21 +44,19 @@ clinicalSigns:
     - 水泡、結痂
     - 色素沉著
     - 苔蘚化（皮膚增厚）
-
 diagnosis:
   primaryTests:
     - name: 病史及接觸史詢問
-      notes: "確認可能接觸物質及時間關聯"
+      notes: 確認可能接觸物質及時間關聯
     - name: 斑貼試驗（patch test）
-      notes: "將疑似過敏原貼於皮膚48小時"
+      notes: 將疑似過敏原貼於皮膚48小時
     - name: 皮膚組織切片
-      notes: "表皮海綿樣變性、真皮淋巴球浸潤"
+      notes: 表皮海綿樣變性、真皮淋巴球浸潤
   differentialDiagnoses:
     - 異位性皮膚炎
     - 食物過敏
     - 跳蚤過敏性皮膚炎
     - 毛囊蟲症
-
 treatment:
   medical:
     - 移除過敏原（更換食盆、項圈、清潔劑）
@@ -68,40 +64,66 @@ treatment:
     - 抗組織胺：羥嗪（hydroxyzine）2 mg/kg PO q8-12h
     - 外用氫化可體松軟膏 q12h
     - 局部冷敷減輕搔癢
-
 prognosis:
-  general: "移除過敏原後預後極佳，通常1-2週改善。若持續接觸則易復發。"
-
+  general: 移除過敏原後預後極佳，通常1-2週改善。若持續接觸則易復發。
 prevention:
   - 使用不銹鋼或陶瓷食盆
   - 避免使用含香料之清潔劑
   - 限制接觸已知過敏植物
   - 更換無過敏性項圈材質
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in immunology
-    title: Genetic and Imaging Approaches Reveal Pro-Inflammatory and Immunoregulatory Roles of Mast Cells in Contact Hypersensitivity.
+    title: >-
+      Genetic and Imaging Approaches Reveal Pro-Inflammatory and Immunoregulatory Roles of Mast Cells in Contact
+      Hypersensitivity.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5996070/
     type: review
-    pmid: "29922295"
+    pmid: '29922295'
   - sourceOrg: Scientific reports
-    title: Sustained learned immunosuppression could not prevent local allergic ear swelling in a rat model of contact hypersensitivity.
+    title: >-
+      Sustained learned immunosuppression could not prevent local allergic ear swelling in a rat model of contact
+      hypersensitivity.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12340026/
     type: research
-    pmid: "40790057"
+    pmid: '40790057'
   - sourceOrg: Toxicology
-    title: Evaluation of 2-methoxy-4-nitroaniline (MNA) in hypersensitivity, 14-day subacute, reproductive, and genotoxicity studies.
+    title: >-
+      Evaluation of 2-methoxy-4-nitroaniline (MNA) in hypersensitivity, 14-day subacute, reproductive, and genotoxicity
+      studies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7717523/
     type: research
-    pmid: "32380031"
-  - sourceOrg: "Biomedical and environmental sciences : BES"
+    pmid: '32380031'
+  - sourceOrg: 'Biomedical and environmental sciences : BES'
     title: Oral Cadmium Intake Enhances Contact Allergen-induced Skin Reaction in Rats.
     url: https://pubmed.ncbi.nlm.nih.gov/36443256/
     type: research
-    pmid: "36443256"
+    pmid: '36443256'
   - sourceOrg: Journal of pharmacological sciences
-    title: "Effects of 2'-3'-dihydroxy-4',6'-dimethoxychalcone derived from green perilla on auricle thickness in chronic contact dermatitis model mice."
+    title: >-
+      Effects of 2'-3'-dihydroxy-4',6'-dimethoxychalcone derived from green perilla on auricle thickness in chronic
+      contact dermatitis model mice.
     url: https://pubmed.ncbi.nlm.nih.gov/31540843/
     type: research
-    pmid: "31540843"
+    pmid: '31540843'
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: common
+diagnosticAlgorithm:
+  title: 接觸性過敏反應 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史及接觸史詢問
+          notes: 確認可能接觸物質及時間關聯
+        - name: 斑貼試驗（patch test）
+          notes: 將疑似過敏原貼於皮膚48小時
+        - name: 皮膚組織切片
+          notes: 表皮海綿樣變性、真皮淋巴球浸潤
+ddxSource: auto-generated

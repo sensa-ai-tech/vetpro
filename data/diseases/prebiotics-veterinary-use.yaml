@@ -3,12 +3,13 @@ nameEn: Prebiotics Veterinary Use
 nameZh: 益生元獸醫應用
 bodySystem: metabolic
 description: 益生元為益生菌的食物來源，可促進有益菌生長、改善腸道菌叢平衡。常與益生菌併用以增強效果(合生元)。
-
 aliases:
-  - { alias: 益生質, language: zh }
-  - { alias: Prebiotic Fiber, language: en }
-  - { alias: Synbiotic, language: en }
-
+  - alias: 益生質
+    language: zh
+  - alias: Prebiotic Fiber
+    language: en
+  - alias: Synbiotic
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 慢性腸胃病使用
-
 etiology:
   categories:
     - name: 常見益生元
@@ -42,7 +42,6 @@ etiology:
         - 產生短鏈脂肪酸(SCFA)
         - 降低腸道pH
         - 抑制致病菌
-
 clinicalSigns:
   early:
     - 使用後：糞便品質改善
@@ -51,15 +50,13 @@ clinicalSigns:
   progressive:
     - 長期使用：腸道菌叢平衡、健康維持
     - 過量：腹瀉、脹氣
-
 diagnosis:
   primaryTests:
     - name: 臨床症狀評估
-      notes: "糞便品質、腸道症狀"
+      notes: 糞便品質、腸道症狀
   differentialDiagnoses:
     - 腸道菌叢失衡
     - 慢性腸胃病
-
 treatment:
   medical:
     - 益生元劑量
@@ -84,45 +81,64 @@ treatment:
     - 甜菜漿
     - 菊苣根
     - 南瓜(可溶性纖維)
-
 prognosis:
-  general: "益生元安全有效，配合益生菌使用可更好地維持腸道健康"
-
+  general: 益生元安全有效，配合益生菌使用可更好地維持腸道健康
 prevention:
   - 從低劑量開始
   - 配合益生菌使用
   - 選擇合生元產品
   - 長期維持腸道健康
-
-
 guidelineRefs:
   - sourceOrg: Foods (Basel, Switzerland)
-    title: "Antimicrobial Resistance in Aquaculture: Risk Mitigation within the One Health Context."
+    title: 'Antimicrobial Resistance in Aquaculture: Risk Mitigation within the One Health Context.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11311770/
     type: review
-    pmid: "39123639"
+    pmid: '39123639'
     relevance: primary
   - sourceOrg: Frontiers in nutrition
     title: Mushrooms as future generation healthy foods.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9763630/
     type: review
-    pmid: "36562045"
+    pmid: '36562045'
     relevance: primary
   - sourceOrg: International journal of molecular sciences
-    title: "The Effects of Probiotics, Prebiotics and Synbiotics in Non-Alcoholic Fat Liver Disease (NAFLD) and Non-Alcoholic Steatohepatitis (NASH): A Systematic Review."
+    title: >-
+      The Effects of Probiotics, Prebiotics and Synbiotics in Non-Alcoholic Fat Liver Disease (NAFLD) and Non-Alcoholic
+      Steatohepatitis (NASH): A Systematic Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9369010/
     type: review
-    pmid: "35955942"
+    pmid: '35955942'
     relevance: primary
   - sourceOrg: Foods (Basel, Switzerland)
-    title: "Development of Healthier and Functional Dry Fermented Sausages: Present and Future."
+    title: 'Development of Healthier and Functional Dry Fermented Sausages: Present and Future.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9031353/
     type: review
-    pmid: "35454715"
+    pmid: '35454715'
     relevance: primary
   - sourceOrg: PloS one
-    title: "Effect of prebiotics on growth and health of dairy calves: A protocol for a systematic review and meta-analysis."
+    title: 'Effect of prebiotics on growth and health of dairy calves: A protocol for a systematic review and meta-analysis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8232519/
     type: review
-    pmid: "34170953"
+    pmid: '34170953'
     relevance: primary
+associatedSymptoms:
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: flatulence
+    frequency: common
+diagnosticAlgorithm:
+  title: 益生元獸醫應用 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - diarrhoea 相關症狀
+        - flatulence 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床症狀評估
+          notes: 糞便品質、腸道症狀
+ddxSource: auto-generated

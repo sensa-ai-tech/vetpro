@@ -3,11 +3,11 @@ nameEn: Esophageal Neoplasia
 nameZh: 食道腫瘤
 bodySystem: oncology
 description: 食道原發或轉移性腫瘤,罕見於犬貓。多為惡性,臨床表現為吞嚥困難及逆流。
-
 aliases:
-  - { alias: 食管癌, language: zh }
-  - { alias: Esophageal Cancer, language: en }
-
+  - alias: 食管癌
+    language: zh
+  - alias: Esophageal Cancer
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 極罕見,常見為鱗狀細胞癌
-
 etiology:
   categories:
     - name: 惡性腫瘤
@@ -25,7 +24,6 @@ etiology:
         - 鱗狀細胞癌
         - 平滑肌肉瘤
         - 腺癌
-
 clinicalSigns:
   early:
     - 吞嚥困難
@@ -35,36 +33,60 @@ clinicalSigns:
     - 流涎
     - 食道阻塞
     - 吸入性肺炎
-
 diagnosis:
   primaryTests:
     - name: 食道攝影
-      notes: "評估腫瘤位置及阻塞程度"
+      notes: 評估腫瘤位置及阻塞程度
     - name: 內視鏡檢查
-      notes: "直視腫瘤,取組織切片"
+      notes: 直視腫瘤,取組織切片
     - name: 胸部 CT
-      notes: "評估腫瘤範圍及轉移"
+      notes: 評估腫瘤範圍及轉移
   differentialDiagnoses:
     - 食道狹窄
     - 異物
     - 巨食道症
-
 treatment:
   medical:
     - 外科切除 (困難,預後不佳)
     - 姑息性治療 (食道支架、胃造口管)
     - 化療 / 放療 (效果有限)
-
 prognosis:
-  general: "預後不良;多數病例診斷時已無法切除,中位存活時間 < 3 個月"
-
+  general: 預後不良;多數病例診斷時已無法切除,中位存活時間 < 3 個月
 prevention:
   - 無特定預防措施
-
-
 guidelineRefs:
   - sourceOrg: Oncotarget
-    title: Integration of metabolomics, transcriptomics, and microRNA expression profiling reveals a miR-143-HK2-glucose network underlying zinc-deficiency-associated esophageal neoplasia.
+    title: >-
+      Integration of metabolomics, transcriptomics, and microRNA expression profiling reveals a miR-143-HK2-glucose
+      network underlying zinc-deficiency-associated esophageal neoplasia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5669858/
     type: research
-    pmid: "29137232"
+    pmid: '29137232'
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: common
+  - symptomId: ptyalism
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 食道腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - dysphagia 相關症狀
+        - ptyalism 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 食道攝影
+          notes: 評估腫瘤位置及阻塞程度
+        - name: 內視鏡檢查
+          notes: 直視腫瘤,取組織切片
+        - name: 胸部 CT
+          notes: 評估腫瘤範圍及轉移
+ddxSource: auto-generated

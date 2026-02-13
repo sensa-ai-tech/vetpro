@@ -3,19 +3,20 @@ nameEn: Basenji Immunoproliferative Enteropathy
 nameZh: 巴辛吉犬免疫增生性腸病
 bodySystem: immunology
 description: 巴辛吉犬罕見的遺傳性腸道免疫疾病,以嚴重蛋白質流失性腸病與免疫球蛋白異常為特徵。青年期發病,表現為慢性腹瀉、低蛋白血症與惡病質,預後不良。
-
 aliases:
-  - { alias: 巴辛吉IPE, language: zh }
-  - { alias: Basenji IPE, language: en }
-  - { alias: 巴辛吉腸淋巴管擴張症, language: zh }
-  - { alias: Basenji Enteropathy, language: en }
-
+  - alias: 巴辛吉IPE
+    language: zh
+  - alias: Basenji IPE
+    language: en
+  - alias: 巴辛吉腸淋巴管擴張症
+    language: zh
+  - alias: Basenji Enteropathy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: rare
     notes: 巴辛吉品種特異性疾病,疑似遺傳性(模式不明),發病年齡1-6歲,無性別差異
-
 etiology:
   categories:
     - name: 免疫異常
@@ -33,7 +34,6 @@ etiology:
         - 腸蛋白流失(protein-losing enteropathy)
         - 淋巴管滲漏
         - 吸收不良
-
 clinicalSigns:
   early:
     - 慢性間歇性腹瀉
@@ -47,26 +47,24 @@ clinicalSigns:
     - 反覆細菌感染(免疫球蛋白缺乏)
     - 嗜睡、虛弱
     - 可能併發血栓栓塞(低蛋白血症)
-
 diagnosis:
   primaryTests:
     - name: 血液生化
-      notes: "嚴重低白蛋白血症(<2.0 g/dL)、低球蛋白血症、低膽固醇血症"
+      notes: 嚴重低白蛋白血症(<2.0 g/dL)、低球蛋白血症、低膽固醇血症
     - name: 免疫球蛋白測定
-      notes: "IgA、IgG、IgM顯著降低或缺乏"
+      notes: IgA、IgG、IgM顯著降低或缺乏
     - name: 糞便α1-PI測定
-      notes: "升高,確認蛋白質經腸流失"
+      notes: 升高,確認蛋白質經腸流失
     - name: 腸道活檢
-      notes: "組織病理:嚴重淋巴漿細胞性腸炎、絨毛萎縮、淋巴管擴張"
+      notes: 組織病理:嚴重淋巴漿細胞性腸炎、絨毛萎縮、淋巴管擴張
     - name: 腹部超音波
-      notes: "腸壁增厚、腸淋巴管擴張、腹水"
+      notes: 腸壁增厚、腸淋巴管擴張、腹水
   differentialDiagnoses:
     - 其他蛋白質流失性腸病
     - 腸淋巴瘤
     - 炎症性腸病(IBD)
     - 淋巴管擴張症
     - 慢性腸道感染
-
 treatment:
   medical:
     - 超低脂飲食(脂肪<10%乾物質)
@@ -78,12 +76,44 @@ treatment:
     - 靜脈白蛋白輸注(若<1.5 g/dL且腹水嚴重)
     - 抗血栓:Aspirin或Clopidogrel(若低蛋白<2.0 g/dL)
     - 維生素補充(脂溶性維生素A、D、E、K)
-
 prognosis:
-  general: "預後不良,多數病例對治療反應不佳。平均存活時間診斷後數月至1-2年。嚴重低白蛋白血症、免疫球蛋白缺乏為不良預後指標。罕見病例經積極治療可穩定數年。"
-
+  general: 預後不良,多數病例對治療反應不佳。平均存活時間診斷後數月至1-2年。嚴重低白蛋白血症、免疫球蛋白缺乏為不良預後指標。罕見病例經積極治療可穩定數年。
 prevention:
   - 避免繁殖患病犬隻及疑似家系
   - 目前無基因檢測
   - 幼犬定期監測體重與糞便品質
   - 早期識別與診斷
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 巴辛吉犬免疫增生性腸病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液生化
+          notes: 嚴重低白蛋白血症(<2.0 g/dL)、低球蛋白血症、低膽固醇血症
+        - name: 免疫球蛋白測定
+          notes: IgA、IgG、IgM顯著降低或缺乏
+        - name: 糞便α1-PI測定
+          notes: 升高,確認蛋白質經腸流失
+ddxSource: auto-generated

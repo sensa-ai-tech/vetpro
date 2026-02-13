@@ -3,13 +3,15 @@ nameEn: Paraneoplastic Neuropathy
 nameZh: 副腫瘤性神經病變
 bodySystem: neurology
 description: 惡性腫瘤透過免疫介導機制或代謝異常間接損害周邊或中樞神經系統的疾病。犬的胰島素瘤、肺癌及淋巴瘤為最常見相關腫瘤。
-
 aliases:
-  - { alias: 腫瘤相關神經病變, language: zh }
-  - { alias: 副腫瘤性周邊神經病, language: zh }
-  - { alias: Paraneoplastic Neuropathy, language: en }
-  - { alias: Cancer-associated Neuropathy, language: en }
-
+  - alias: 腫瘤相關神經病變
+    language: zh
+  - alias: 副腫瘤性周邊神經病
+    language: zh
+  - alias: Paraneoplastic Neuropathy
+    language: en
+  - alias: Cancer-associated Neuropathy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓的副腫瘤性神經病變罕見，主要與淋巴瘤相關。
-
 etiology:
   categories:
     - name: 機制
@@ -35,7 +36,6 @@ etiology:
         - 淋巴瘤
         - 多發性骨髓瘤
         - 胸腺瘤（合併重症肌無力）
-
 clinicalSigns:
   early:
     - 後肢無力
@@ -48,22 +48,20 @@ clinicalSigns:
     - 吞嚥困難（顱神經受累）
     - 聲音改變（喉返神經）
     - 呼吸肌無力
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
-      notes: "下運動神經元體徵為主：反射低下、肌肉萎縮、肌張力降低。感覺異常可能存在"
+      notes: 下運動神經元體徵為主：反射低下、肌肉萎縮、肌張力降低。感覺異常可能存在
     - name: 肌電圖/神經傳導速度
-      notes: "可區分脫髓鞘型（傳導速度降低）與軸突型（振幅降低）。自發性電位活動"
+      notes: 可區分脫髓鞘型（傳導速度降低）與軸突型（振幅降低）。自發性電位活動
     - name: 腫瘤搜尋
-      notes: "胸腔 X 光、腹部超音波、CBC、生化（血糖、蛋白電泳）。排除已知的腫瘤相關"
+      notes: 胸腔 X 光、腹部超音波、CBC、生化（血糖、蛋白電泳）。排除已知的腫瘤相關
   differentialDiagnoses:
     - 免疫介導性多發性神經根神經炎
     - 代謝性神經病變（糖尿病、甲狀腺低下）
     - 中毒性神經病變
     - 感染性神經炎
     - 退化性神經病變
-
 treatment:
   medical:
     - 控制原發腫瘤為最重要治療
@@ -73,10 +71,40 @@ treatment:
     - 營養支持
   surgical:
     - 原發腫瘤切除後神經病變可能改善
-
 prognosis:
-  general: "預後取決於原發腫瘤的控制情況及神經損傷的可逆性。部分病例在腫瘤控制後神經功能可部分恢復。長期神經損傷可能不可逆。"
-
+  general: 預後取決於原發腫瘤的控制情況及神經損傷的可逆性。部分病例在腫瘤控制後神經功能可部分恢復。長期神經損傷可能不可逆。
 prevention:
   - 不明原因的周邊神經病變應排除潛在惡性腫瘤
   - 胰島素瘤患畜積極控制低血糖可預防神經損傷
+associatedSymptoms:
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+  - symptomId: paresis-paralysis
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 副腫瘤性神經病變 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dysphagia 相關症狀
+        - lameness 相關症狀
+        - paresis-paralysis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 下運動神經元體徵為主：反射低下、肌肉萎縮、肌張力降低。感覺異常可能存在
+        - name: 肌電圖/神經傳導速度
+          notes: 可區分脫髓鞘型（傳導速度降低）與軸突型（振幅降低）。自發性電位活動
+        - name: 腫瘤搜尋
+          notes: 胸腔 X 光、腹部超音波、CBC、生化（血糖、蛋白電泳）。排除已知的腫瘤相關
+ddxSource: auto-generated

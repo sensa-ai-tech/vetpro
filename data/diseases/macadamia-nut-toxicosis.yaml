@@ -3,11 +3,11 @@ nameEn: Macadamia Nut Toxicosis
 nameZh: 夏威夷果中毒
 bodySystem: toxicology
 description: 夏威夷果 (macadamia nut) 中毒為犬特有的食物中毒，毒性機制尚未完全闡明。攝入後 12 小時內引起後肢無力、嘔吐、震顫及高燒。通常為自限性疾病，支持療法下 24-48 小時內恢復。貓未見報告。
-
 aliases:
-  - { alias: 澳洲堅果中毒, language: zh }
-  - { alias: Macadamia Poisoning, language: en }
-
+  - alias: 澳洲堅果中毒
+    language: zh
+  - alias: Macadamia Poisoning
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓夏威夷果毒性未見報告。
-
 etiology:
   categories:
     - name: 毒性機制
@@ -28,7 +27,6 @@ etiology:
         - 純夏威夷果
         - 含堅果的餅乾或巧克力
         - 夏威夷果油（毒性較低）
-
 clinicalSigns:
   early:
     - 後肢無力或不能站立（攝入後 6-12 小時）
@@ -40,7 +38,6 @@ clinicalSigns:
     - 腹痛
     - 關節僵硬腫脹
     - 共濟失調
-
 diagnosis:
   primaryTests:
     - name: 病史確認
@@ -50,7 +47,6 @@ diagnosis:
   additional:
     - CBC 與生化（通常正常或輕度脂肪酶升高）
     - 排除其他後肢無力原因
-
 treatment:
   principles:
     - 自限性疾病，支持療法為主
@@ -64,9 +60,48 @@ treatment:
     - 肌肉鬆弛劑（methocarbamol PRN）
     - 退燒（物理降溫）
     - 合併巧克力攝入需同時按巧克力中毒處理
-
 prognosis: 犬夏威夷果中毒預後極佳。多數 24-48 小時內完全恢復。無致死報告。合併巧克力攝入時需額外評估。
-
 pubmedQueries:
   - query: '"macadamia nut" AND (toxicosis OR poisoning) AND (canine OR veterinary)'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 夏威夷豆中毒 診斷流程
+  steps:
+    - step: 1
+      action: 暴露史確認
+      details: 確認夏威夷豆攝入量和時間
+      findings:
+        - 確認或疑似攝入夏威夷豆
+        - 攝入量評估（>2.4g/kg可致症狀）
+        - 症狀通常在攝入後12小時內出現
+        - 犬特別敏感
+    - step: 2
+      action: 臨床評估
+      details: 評估典型臨床表現
+      findings:
+        - 後肢虛弱或無法站立
+        - 嘔吐
+        - 發熱（體溫升高）
+        - 肌肉震顫和關節僵硬
+    - step: 3
+      action: 實驗室檢查與支持性診斷
+      details: 進行基本實驗室檢查排除其他病因
+      findings:
+        - 血液學通常正常
+        - 三酸甘油脂可能升高
+        - 脂肪酶可能輕微升高
+        - 診斷主要基於暴露史和典型症狀
+clinicalPearls:
+  - 夏威夷豆中毒是少數已知僅影響犬而不影響貓的食物中毒
+  - 巧克力裹覆的夏威夷豆會同時造成可可鹼中毒，需評估兩種毒素的累加效應
+  - 即使外觀嚴重（完全無法站立），預後通常仍然良好
+  - 中毒劑量個體差異大，少量攝入即可能在敏感犬隻引起症狀
+monitoringItems:
+  - 每 6-8 小時評估後肢肌力恢復情況
+  - 監測體溫直至恢復正常
+  - 確認 24-48 小時內症狀完全消退
+  - 若合併巧克力攝入則需心電圖監測
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+ddxSource: book

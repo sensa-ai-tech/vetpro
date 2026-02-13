@@ -3,13 +3,15 @@ nameEn: Polyradiculoneuritis
 nameZh: 多發性神經根神經炎
 bodySystem: neurology
 description: 周邊神經根與神經的急性免疫媒介性發炎疾病，類似人類的 Guillain-Barré 症候群。臨床表現為急性進行性下運動神經元型四肢癱瘓，從後肢開始向前肢蔓延，嚴重時可影響呼吸肌。
-
 aliases:
-  - { alias: Acute Idiopathic Polyradiculoneuritis, language: en }
-  - { alias: AIP, language: en }
-  - { alias: Guillain-Barré-like Syndrome, language: en }
-  - { alias: 急性多發性神經根炎, language: zh }
-
+  - alias: Acute Idiopathic Polyradiculoneuritis
+    language: en
+  - alias: AIP
+    language: en
+  - alias: Guillain-Barré-like Syndrome
+    language: en
+  - alias: 急性多發性神經根炎
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓極罕見，偶有報告。
-
 etiology:
   categories:
     - name: 免疫媒介性
@@ -29,7 +30,6 @@ etiology:
       examples:
         - 上呼吸道感染後
         - 腸胃炎後
-
 clinicalSigns:
   early:
     - 後肢無力/不穩 (最先出現)
@@ -40,7 +40,6 @@ clinicalSigns:
     - 全身肌張力降低
     - 發聲改變 (喉返神經受累)
     - 呼吸困難 (呼吸肌受累，危及生命)
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
@@ -49,7 +48,6 @@ diagnosis:
       notes: 去神經電位、傳導速度減慢。受傷 5-7 天後出現
     - name: 腦脊液分析
       notes: 蛋白質升高但細胞數正常 (albuminocytologic dissociation)
-
 treatment:
   principles:
     - 主要為支持性照護
@@ -60,41 +58,94 @@ treatment:
     - 物理治療維持關節活動度
     - 呼吸肌受累需氧氣支持或機械通氣
     - 免疫抑制治療效果未經證實但部分醫師嘗試使用
-
 prognosis: 多數犬在 3-6 週開始恢復，完全恢復需 2-6 個月。呼吸衰竭為主要死亡原因。保留深層痛覺者預後較佳。復發可能但不常見。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
-    title: Overview of the Current Literature on the Most Common Neurological Diseases in Dogs with a Particular Focus on Rehabilitation.
+    title: >-
+      Overview of the Current Literature on the Most Common Neurological Diseases in Dogs with a Particular Focus on
+      Rehabilitation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9414583/
     type: review
-    pmid: "36006344"
+    pmid: '36006344'
     relevance: primary
   - sourceOrg: Journal of veterinary medicine
     title: Diagnosis and Treatment of Lower Motor Neuron Disease in Australian Dogs and Cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6106963/
     type: review
-    pmid: "30159335"
+    pmid: '30159335'
     relevance: supporting
   - sourceOrg: The Journal of veterinary medical science
     title: Two cases of acute polyradiculoneuritis in dogs consuming a raw poultry diet.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8025411/
     type: case-report
-    pmid: "33518606"
+    pmid: '33518606'
     relevance: supporting
   - sourceOrg: Journal of veterinary science
-    title: "Lithium alleviates paralysis in experimental autoimmune neuritis in Lewis rats by modulating glycogen synthase kinase-3&#x3b2; activity."
+    title: >-
+      Lithium alleviates paralysis in experimental autoimmune neuritis in Lewis rats by modulating glycogen synthase
+      kinase-3&#x3b2; activity.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11450387/
     type: research
-    pmid: "39363657"
+    pmid: '39363657'
     relevance: supporting
   - sourceOrg: Journal of veterinary internal medicine
     title: Investigation of the Role of Campylobacter Infection in Suspected Acute Polyradiculoneuritis in Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5787210/
     type: research
-    pmid: "29356096"
+    pmid: '29356096'
     relevance: supporting
 pubmedQueries:
   - query: '"polyradiculoneuritis" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 多發性神經根神經炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估急性進行性四肢無力
+      findings:
+        - 急性發作後肢無力上行至前肢
+        - 下運動神經元徵象
+        - 脊椎反射減弱或消失
+        - 疼痛感覺保留
+    - step: 2
+      action: 神經學檢查
+      details: 完整神經學定位
+      findings:
+        - 四肢肌張力下降
+        - 膝反射/撓側反射減弱
+        - 顱神經評估面癱/聲帶麻痺
+        - 膀胱功能評估
+    - step: 3
+      action: 鑑別診斷
+      details: 排除其他急性癱瘓原因
+      findings:
+        - 肌電圖去神經電位
+        - 腦脊髓液蛋白升高細胞正常
+        - 排除蜱麻痺
+        - 排除肉毒桿菌中毒
+    - step: 4
+      action: 病因與預後
+      details: 確認誘發因素並評估恢復
+      findings:
+        - 浣熊咬傷/接觸史
+        - 近期疫苗接種史
+        - 恢復期通常3-6週
+        - 呼吸肌受累需監護
+clinicalPearls:
+  - 急性弛緩性四肢癱瘓首先要排除蜱蟲癱瘓（移除蜱蟲後24-48小時即可改善）
+  - 痛覺保留是與脊髓疾病鑑別的重要特徵
+  - 恢復順序通常與發病順序相反（先恢復前肢）
+  - 免疫抑制劑治療的效果未被證實
+monitoringItems:
+  - 呼吸功能（呼吸頻率、潮氣量）
+  - 肌肉萎縮程度
+  - 運動功能恢復進度
+  - 褥瘡預防
+  - 營養狀態
+associatedSymptoms:
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+ddxSource: book

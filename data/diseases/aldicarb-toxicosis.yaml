@@ -3,12 +3,13 @@ nameEn: Aldicarb Toxicosis
 nameZh: 涕滅威中毒
 bodySystem: toxicology
 description: 涕滅威為高毒性氨基甲酸酯類殺蟲劑,常被不當作為滅鼠劑使用。中毒可迅速致命,需緊急處理。
-
 aliases:
-  - { alias: 好年冬中毒, language: zh }
-  - { alias: Temik Poisoning, language: en }
-  - { alias: Carbamate Pesticide Toxicosis, language: en }
-
+  - alias: 好年冬中毒
+    language: zh
+  - alias: Temik Poisoning
+    language: en
+  - alias: Carbamate Pesticide Toxicosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 敏感度高,微量即可致命
-
 etiology:
   categories:
     - name: 惡意投毒
@@ -28,7 +28,6 @@ etiology:
       examples:
         - 攝入涕滅威顆粒
         - 捕食中毒齧齒動物
-
 clinicalSigns:
   early:
     - 急性發作(15分鐘-2小時內)
@@ -40,38 +39,72 @@ clinicalSigns:
     - 呼吸衰竭、紫紺
     - 心搏過緩、心律不整
     - 昏迷、死亡(可於數小時內)
-
 diagnosis:
   primaryTests:
     - name: 急性膽鹼能危象臨床表現
-      notes: "SLUDDE症候群+呼吸窘迫+針尖瞳孔"
+      notes: SLUDDE症候群+呼吸窘迫+針尖瞳孔
     - name: 阿托品反應
-      notes: "症狀快速改善支持診斷"
+      notes: 症狀快速改善支持診斷
     - name: 胃內容物或嘔吐物檢測
-      notes: "可能檢出涕滅威顆粒(黑色/灰色)"
+      notes: 可能檢出涕滅威顆粒(黑色/灰色)
   differentialDiagnoses:
     - 有機磷中毒
     - 其他氨基甲酸酯中毒
     - 惡意毒鼠強中毒
-
 treatment:
   medical:
     - 立即氣道保護及供氧
     - 阿托品緊急治療:
-      - 初始 0.2-0.5 mg/kg IV(重症可達1 mg/kg)
-      - 重複給藥直至症狀控制(可能需大量)
-      - 維持治療12-24小時
+        - 初始 0.2-0.5 mg/kg IV(重症可達1 mg/kg)
+        - 重複給藥直至症狀控制(可能需大量)
+        - 維持治療12-24小時
     - 催吐僅在極早期且無嚴重症狀時考慮
     - 活性碳 2-4 g/kg PO(若無嘔吐或癲癇)
     - 癲癇控制: Diazepam 0.5-1 mg/kg IV,必要時追加
     - 呼吸支持: 機械通氣(若呼吸衰竭)
     - 靜脈輸液、體溫維持
     - 密集監護24-48小時
-
 prognosis:
-  general: "涕滅威毒性極強,即使積極治療死亡率仍高(30-50%)。黃金救治時間僅數小時,延遲治療幾乎必死。存活者通常可完全恢復。"
-
+  general: 涕滅威毒性極強,即使積極治療死亡率仍高(30-50%)。黃金救治時間僅數小時,延遲治療幾乎必死。存活者通常可完全恢復。
 prevention:
   - 涕滅威在多數地區已禁用,切勿非法使用
   - 警覺惡意投毒風險,避免寵物攝入不明食物
   - 懷疑涕滅威暴露應立即急診
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: stertor-stridor
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+diagnosticAlgorithm:
+  title: 涕滅威中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - trembling 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 急性膽鹼能危象臨床表現
+          notes: SLUDDE症候群+呼吸窘迫+針尖瞳孔
+        - name: 阿托品反應
+          notes: 症狀快速改善支持診斷
+        - name: 胃內容物或嘔吐物檢測
+          notes: 可能檢出涕滅威顆粒(黑色/灰色)
+ddxSource: auto-generated

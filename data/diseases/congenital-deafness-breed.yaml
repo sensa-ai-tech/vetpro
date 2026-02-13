@@ -3,11 +3,11 @@ nameEn: Congenital Deafness Breed
 nameZh: 先天性品種遺傳性耳聾
 bodySystem: ear
 description: 先天性感覺神經性耳聾與色素基因相關，好發於白色被毛或斑塊色犬貓。耳蝸血管紋缺乏黑色素細胞導致退化。BAER 檢測為診斷金標準。大麥町犬、白色英國鬥牛梗、白色貓為高風險。
-
 aliases:
-  - { alias: 先天性品種遺傳性耳聾, language: zh }
-  - { alias: Congenital Deafness Breed, language: en }
-
+  - alias: 先天性品種遺傳性耳聾
+    language: zh
+  - alias: Congenital Deafness Breed
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 先天性疾病，偶見於貓。
-
 etiology:
   categories:
     - name: 先天/遺傳因素
@@ -23,18 +22,15 @@ etiology:
         - 遺傳性發育異常
         - 基因突變
         - 胚胎發育障礙
-
 clinicalSigns:
   early:
     - 出生時或幼年期即可發現異常
   progressive:
     - 症狀隨年齡可能穩定或進展
-
 diagnosis:
   primaryTests:
     - name: 臨床與影像檢查
       notes: 依據具體疾病選擇適當檢查方法。基因檢測可確診部分遺傳性疾病
-
 treatment:
   principles:
     - 依疾病類型選擇保守或手術治療
@@ -42,21 +38,67 @@ treatment:
   general:
     - 對症支持治療
     - 基因篩選避免繁殖出受影響個體
-
 prognosis: 耳聾不可逆。視覺口令訓練有效。單側者日常生活不受太大影響。雙側者需安全環境管理。壽命不受影響。
-
-
 guidelineRefs:
   - sourceOrg: Canine medicine and genetics
-    title: Demographic assessment of the Dalmatian dog - effective population size, linkage disequilibrium and inbreeding coefficients.
+    title: >-
+      Demographic assessment of the Dalmatian dog - effective population size, linkage disequilibrium and inbreeding
+      coefficients.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7371805/
     type: research
-    pmid: "32835229"
+    pmid: '32835229'
   - sourceOrg: BMC veterinary research
-    title: "Prevalence of neurological disorders in French bulldog: a retrospective study of 343 cases (2002-2016)."
+    title: 'Prevalence of neurological disorders in French bulldog: a retrospective study of 343 cases (2002-2016).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5497356/
     type: research
-    pmid: "28676057"
+    pmid: '28676057'
 pubmedQueries:
   - query: '"Congenital Deafness Breed" AND (veterinary OR canine OR feline) AND (treatment OR management)'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 先天性耳聾 診斷流程
+  steps:
+    - step: 1
+      action: 臨床懷疑
+      details: 高風險品種+對聲音反應異常
+      findings:
+        - 品種風險評估（Dalmatian、白色貓等）
+        - 飼主報告對聲音無反應
+        - 服從訓練困難
+        - 與同窩比較反應遲鈍
+    - step: 2
+      action: 排除其他聽力障礙
+      details: 耳鏡+理學檢查排除傳導性問題
+      findings:
+        - 耳道通暢
+        - 鼓膜完整
+        - 無中耳炎證據
+        - 神經學檢查正常
+    - step: 3
+      action: BAER確診
+      details: 腦幹聽覺誘發反應檢測
+      findings:
+        - 雙側聾：雙耳無波形
+        - 單側聾：一耳無波形
+        - 正常聽力：I-V波正常
+        - 5-6週齡即可檢測
+    - step: 4
+      action: 管理計畫
+      details: 繁殖建議+飼主教育
+      findings:
+        - 聾犬不繁殖
+        - 視覺訓練方案
+        - 安全環境管理
+        - 品種繁殖者BAER篩選建議
+clinicalPearls:
+  - BAER是唯一能客觀區分單側vs雙側聾的方法——單側聾飼主常不察覺
+  - 犬最早5-6週齡即可做BAER檢測
+  - 白色被毛+藍眼=耳聾風險顯著增加
+  - 雙merle（homozygous merle）後代聾率極高——應避免此配種
+  - 聾犬可以用視覺手勢和振動訓練得很好——不需要安樂死
+monitoringItems:
+  - 定期行為評估
+  - 安全環境維護
+  - 繁殖群BAER篩選計畫
+  - 基因檢測（可用品種）
+ddxSource: book

@@ -3,12 +3,13 @@ nameEn: Aspirin Toxicosis
 nameZh: 阿斯匹靈中毒
 bodySystem: toxicology
 description: 阿斯匹靈 (aspirin/acetylsalicylic acid) 中毒多因飼主自行給藥引起。貓對 aspirin 極度敏感（半衰期長達 37-45 小時），犬中毒多為高劑量或長期使用。可引起消化道潰瘍、腎損傷、肝損傷及凝血障礙。
-
 aliases:
-  - { alias: 乙醯水楊酸中毒, language: zh }
-  - { alias: Aspirin Poisoning, language: en }
-  - { alias: Salicylate Toxicosis, language: en }
-
+  - alias: 乙醯水楊酸中毒
+    language: zh
+  - alias: Aspirin Poisoning
+    language: en
+  - alias: Salicylate Toxicosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓對 aspirin 極度敏感，半衰期約 37-45 小時（犬僅 7-8 小時）。毒性劑量低（25 mg/kg 即可能中毒）。飼主不知情自行餵藥為常見原因。
-
 etiology:
   categories:
     - name: 毒性機制
@@ -31,7 +31,6 @@ etiology:
         - 飼主自行給予人用止痛藥
         - 含 aspirin 的複方藥物
         - Pepto-Bismol（含 bismuth subsalicylate）
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -45,7 +44,6 @@ clinicalSigns:
     - 呼吸急促（代償性呼吸性鹼中毒）
     - 肝損傷
     - 凝血障礙
-
 diagnosis:
   primaryTests:
     - name: 病史確認
@@ -58,7 +56,6 @@ diagnosis:
     - 肝功能
     - 凝血功能（PT 延長）
     - CBC（貧血、Heinz body 在貓）
-
 treatment:
   principles:
     - 去汙染（早期）
@@ -74,9 +71,57 @@ treatment:
     - 消化道出血需輸血與新鮮冷凍血漿
     - 腎損傷需積極輸液維持腎灌流
     - 監測 24-72 小時
-
 prognosis: 犬貓 aspirin 中毒早期適當治療預後良好至佳。消化道潰瘍穿孔或急性腎衰竭者預後較差。貓因半衰期長，毒性可能持續數天。教育飼主避免自行給藥。
-
 pubmedQueries:
   - query: '"aspirin toxicosis" OR "salicylate" AND (veterinary OR canine OR feline) AND ("treatment" OR "poisoning")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: melaena
+    frequency: uncommon
+  - symptomId: haematemesis
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: oliguria-anuria
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 阿斯匹靈中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - dyspnoea 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史確認
+          notes: 確認 aspirin 或含水楊酸產品暴露與劑量。計算 mg/kg
+        - name: 血清水楊酸濃度
+          notes: 可定量確認。犬毒性濃度 >50 mg/dL，貓 >30 mg/dL
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 血液氣體（代謝性酸中毒 +/- 呼吸性鹼中毒）
+        - 腎功能（BUN、creatinine）
+        - 肝功能
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 去汙染（早期）
+        - 矯正酸鹼平衡
+        - 消化道保護
+ddxSource: auto-generated

@@ -3,21 +3,26 @@ nameEn: Rat Pituitary Adenoma
 nameZh: 大鼠腦下垂體腺瘤
 bodySystem: neurology
 description: 大鼠腦下垂體良性腫瘤，為老年大鼠 (尤其雌性) 常見的致命性顱內疾病，腫瘤雖良性但因顱內佔位導致進行性神經症狀，多數為泌乳素分泌型，預後嚴峻。
-
 aliases:
-  - { alias: 大鼠腦垂腺瘤, language: zh }
-  - { alias: 大鼠腦下垂體腫瘤, language: zh }
-  - { alias: 大鼠泌乳素瘤, language: zh }
-  - { alias: Rat pituitary tumor, language: en }
-  - { alias: Rat pituitary gland adenoma, language: en }
-  - { alias: Rat prolactinoma, language: en }
-
+  - alias: 大鼠腦垂腺瘤
+    language: zh
+  - alias: 大鼠腦下垂體腫瘤
+    language: zh
+  - alias: 大鼠泌乳素瘤
+    language: zh
+  - alias: Rat pituitary tumor
+    language: en
+  - alias: Rat pituitary gland adenoma
+    language: en
+  - alias: Rat prolactinoma
+    language: en
 species:
   - speciesCommon: rat
     speciesScientific: Rattus norvegicus
     prevalence: common
-    notes: 老年雌性大鼠 (>18 月齡) 盛行率可達 30-40%。雄性較少但亦可見。多數為泌乳素分泌型 (prolactinoma)。良性腫瘤但因顱腔空間有限，壓迫腦組織造成進行性不可逆損傷。為老年大鼠第二常見的致死原因 (僅次於呼吸道疾病)。
-
+    notes: >-
+      老年雌性大鼠 (>18 月齡) 盛行率可達 30-40%。雄性較少但亦可見。多數為泌乳素分泌型 (prolactinoma)。良性腫瘤但因顱腔空間有限，壓迫腦組織造成進行性不可逆損傷。為老年大鼠第二常見的致死原因
+      (僅次於呼吸道疾病)。
 etiology:
   categories:
     - name: 腫瘤性
@@ -33,7 +38,6 @@ etiology:
         - 未絕育
         - 遺傳易感性 (品系差異大)
         - 高雌激素環境
-
 clinicalSigns:
   early:
     - 輕度頭側傾
@@ -56,24 +60,22 @@ clinicalSigns:
     - 昏迷
     - 嚴重消瘦
     - 呼吸困難 (腦幹壓迫)
-
 diagnosis:
   primaryTests:
     - name: 臨床表徵
-      notes: "老年雌性大鼠 + 漸進性神經症狀 (共濟失調、握力消失、眼突) 即高度懷疑。為排除性診斷 (排除中耳炎等其他神經疾病)"
+      notes: 老年雌性大鼠 + 漸進性神經症狀 (共濟失調、握力消失、眼突) 即高度懷疑。為排除性診斷 (排除中耳炎等其他神經疾病)
     - name: 神經學檢查
-      notes: "前肢握力測試 (早期敏感指標)。瞳孔反射。步態評估。翻正反射"
+      notes: 前肢握力測試 (早期敏感指標)。瞳孔反射。步態評估。翻正反射
   imaging:
     - name: 頭部 MRI
-      notes: "確診金標準 (如可及)。腦下垂體區域佔位性腫塊。壓迫效應評估。但大鼠體型小 MRI 可及性受限"
+      notes: 確診金標準 (如可及)。腦下垂體區域佔位性腫塊。壓迫效應評估。但大鼠體型小 MRI 可及性受限
     - name: 頭部 CT
-      notes: "替代 MRI。可見蝶鞍區域腫塊。解析度不如 MRI"
+      notes: 替代 MRI。可見蝶鞍區域腫塊。解析度不如 MRI
   additional:
     - 血漿泌乳素 (升高支持 prolactinoma)
     - 耳鏡檢查 + 鼓室泡 X 光 (排除中耳炎)
     - CBC/生化 (全身狀態評估)
     - 屍檢確診 (組織病理學)
-
 treatment:
   principles:
     - 手術不可行 (解剖位置與大鼠體型限制)
@@ -83,16 +85,16 @@ treatment:
     - 不可逆神經損傷時討論安樂死
   medications:
     - name: Cabergoline
-      dose: "0.6 mg/kg PO 每週 2 次"
+      dose: 0.6 mg/kg PO 每週 2 次
       notes: 長效多巴胺 D2 致效劑。抑制泌乳素分泌並可能縮小腫瘤。泌乳素型腺瘤效果最佳。起效需 1-2 週。部分病例可顯著改善
     - name: Bromocriptine
-      dose: "0.5-5 mg/kg PO BID"
+      dose: 0.5-5 mg/kg PO BID
       notes: 替代 cabergoline 的多巴胺致效劑。需每日給藥。副作用可能較多 (食慾下降、嗜睡)
     - name: Prednisolone
-      dose: "0.5-1 mg/kg PO SID"
+      dose: 0.5-1 mg/kg PO SID
       notes: 減輕腫瘤周圍水腫。暫時緩解壓迫症狀。非長期解決方案
     - name: Meloxicam
-      dose: "1-2 mg/kg PO/SC SID"
+      dose: 1-2 mg/kg PO/SC SID
       notes: 抗發炎止痛。舒適度改善
   general:
     - Cabergoline 或 bromocriptine 治療開始後 1-2 週評估反應
@@ -104,43 +106,95 @@ treatment:
     - 輔助餵食 (無法自主進食時)
     - 定期神經學評估
     - 生活品質評估 (嚴重不可逆神經損傷時安樂死)
-
-prognosis: 整體預後差至嚴峻。多巴胺致效劑 (cabergoline) 對泌乳素型腺瘤部分病例可顯著改善 (存活延長數週至數月)。無治療反應者通常在神經症狀出現後 2-6 週惡化至需安樂死。手術不可行。為老年雌性大鼠常見的自然死因。早期絕育可能降低發生率。
-
+prognosis: >-
+  整體預後差至嚴峻。多巴胺致效劑 (cabergoline) 對泌乳素型腺瘤部分病例可顯著改善 (存活延長數週至數月)。無治療反應者通常在神經症狀出現後 2-6
+  週惡化至需安樂死。手術不可行。為老年雌性大鼠常見的自然死因。早期絕育可能降低發生率。
 guidelineRefs:
   - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
     title: Neurologic Diseases of Small Mammals
     url: https://pubmed.ncbi.nlm.nih.gov/30717895/
     type: review
-    pmid: "30717895"
+    pmid: '30717895'
   - sourceOrg: Lab Animal
-    title: "Pituitary tumors in aging rats: diagnosis and management"
+    title: 'Pituitary tumors in aging rats: diagnosis and management'
     url: https://pubmed.ncbi.nlm.nih.gov/26567747/
     type: review
-    pmid: "26567747"
+    pmid: '26567747'
   - sourceOrg: International journal of endocrinology
-    title: "Oxidative Phosphorylation in Silent Pituitary Adenomas: A Multiomics Perspective."
+    title: 'Oxidative Phosphorylation in Silent Pituitary Adenomas: A Multiomics Perspective.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12849212/
     type: research
-    pmid: "41613784"
+    pmid: '41613784'
     relevance: supporting
   - sourceOrg: Endocrine
-    title: "MicroRNA signatures of invasiveness in PitNETs: a focus on miR-186-5p, miR-191-5p, miR-454-3p, and miR-590-5p."
+    title: 'MicroRNA signatures of invasiveness in PitNETs: a focus on miR-186-5p, miR-191-5p, miR-454-3p, and miR-590-5p.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12572101/
     type: research
-    pmid: "41051622"
+    pmid: '41051622'
     relevance: supporting
   - sourceOrg: Annals of translational medicine
     title: Artesunate exerts anti-prolactinoma activity by inhibiting mitochondrial metabolism and inducing apoptosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7396798/
     type: research
-    pmid: "32793702"
+    pmid: '32793702'
     relevance: supporting
 pubmedQueries:
-  - query: '"rat" AND ("pituitary adenoma" OR "pituitary tumor" OR "prolactinoma") AND ("treatment" OR "cabergoline" OR "diagnosis")'
+  - query: >-
+      "rat" AND ("pituitary adenoma" OR "pituitary tumor" OR "prolactinoma") AND ("treatment" OR "cabergoline" OR
+      "diagnosis")
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "END"
-  sectionTitle: "THE PITUITARY GLAND"
+  chapter: END
+  sectionTitle: THE PITUITARY GLAND
   pdfPage: 583
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 大鼠腦下垂體腺瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - dyspnoea 相關症狀
+        - paresis-paralysis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床表徵
+          notes: 老年雌性大鼠 + 漸進性神經症狀 (共濟失調、握力消失、眼突) 即高度懷疑。為排除性診斷 (排除中耳炎等其他神經疾病)
+        - name: 神經學檢查
+          notes: 前肢握力測試 (早期敏感指標)。瞳孔反射。步態評估。翻正反射
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 血漿泌乳素 (升高支持 prolactinoma)
+        - 耳鏡檢查 + 鼓室泡 X 光 (排除中耳炎)
+        - CBC/生化 (全身狀態評估)
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術不可行 (解剖位置與大鼠體型限制)
+        - 藥物治療可能暫時緩解 (泌乳素型)
+        - 多巴胺致效劑為首選藥物
+ddxSource: auto-generated

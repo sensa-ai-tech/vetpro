@@ -3,12 +3,13 @@ nameEn: Pneumoperitoneum
 nameZh: 氣腹
 bodySystem: emergency
 description: 氣腹 (pneumoperitoneum) 為腹腔內存在游離氣體的狀態。最重要的原因為消化道穿孔（胃腸道破裂），為外科急症。其他原因包括腹腔手術後、穿透性腹部傷口與產氣細菌感染。腹部 X-ray 見游離氣體為經典發現。
-
 aliases:
-  - { alias: 腹腔積氣, language: zh }
-  - { alias: Free Abdominal Air, language: en }
-  - { alias: Free Peritoneal Gas, language: en }
-
+  - alias: 腹腔積氣
+    language: zh
+  - alias: Free Abdominal Air
+    language: en
+  - alias: Free Peritoneal Gas
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓氣腹較犬少見。線狀異物引起腸穿孔為貓特有原因。
-
 etiology:
   categories:
     - name: 消化道穿孔（最重要原因）
@@ -31,7 +31,6 @@ etiology:
         - 穿透性腹部傷口
         - 腹腔穿刺後
         - 產氣細菌腹膜炎
-
 clinicalSigns:
   early:
     - 腹痛
@@ -43,7 +42,6 @@ clinicalSigns:
     - 發燒或低體溫
     - 敗血症（心搏過速、低血壓、發紺）
     - 休克
-
 diagnosis:
   primaryTests:
     - name: 腹部 X-ray
@@ -56,7 +54,6 @@ diagnosis:
     - CBC、生化
     - 乳酸
     - 腹腔液培養
-
 treatment:
   principles:
     - 消化道穿孔為外科急症
@@ -74,36 +71,93 @@ treatment:
     - 術後禁食 24-48 小時
     - 術後持續 IV 抗生素
     - 監測敗血症征象
-
 prognosis: 消化道穿孔引起氣腹需緊急手術，存活率約 50-80%（視穿孔時間與腹膜炎嚴重度）。手術後 48-72 小時內的氣腹為正常。敗血性腹膜炎致死率約 30-50%。早期手術介入改善預後。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
-    title: "Pneumoperitoneum in Veterinary Laparoscopy: A Review."
+    title: 'Pneumoperitoneum in Veterinary Laparoscopy: A Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7356543/
     type: review
-    pmid: "32408554"
+    pmid: '32408554'
   - sourceOrg: Veterinary sciences
-    title: Comparison of Cardiorespiratory Effects of Two Balanced Anesthesia Protocols in Baboons (Papio hamadryas) Undergoing Laparoscopic Salpingectomy.
+    title: >-
+      Comparison of Cardiorespiratory Effects of Two Balanced Anesthesia Protocols in Baboons (Papio hamadryas)
+      Undergoing Laparoscopic Salpingectomy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12737332/
     type: research
-    pmid: "41472114"
+    pmid: '41472114'
   - sourceOrg: Veterinary sciences
-    title: Use of Laryngeal Mask and Anesthetic Management in Hamadryas Baboons (Papio hamadryas) Undergoing Laparoscopic Salpingectomy-A Case Series.
+    title: >-
+      Use of Laryngeal Mask and Anesthetic Management in Hamadryas Baboons (Papio hamadryas) Undergoing Laparoscopic
+      Salpingectomy-A Case Series.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9965857/
     type: research
-    pmid: "36851462"
+    pmid: '36851462'
   - sourceOrg: Veterinary sciences
-    title: Complications in Laparoscopic Access in Standing Horses Using Cannula and Trocar Units Developed for Human Medicine.
+    title: >-
+      Complications in Laparoscopic Access in Standing Horses Using Cannula and Trocar Units Developed for Human
+      Medicine.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9863198/
     type: research
-    pmid: "36669062"
+    pmid: '36669062'
   - sourceOrg: Bioactive materials
     title: Minimally invasive bioprinting for in situ liver regeneration.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10073993/
     type: research
-    pmid: "37035761"
+    pmid: '37035761'
 pubmedQueries:
-  - query: '"pneumoperitoneum" AND (veterinary OR canine OR feline) AND ("treatment" OR "gastrointestinal perforation" OR "surgery")'
+  - query: >-
+      "pneumoperitoneum" AND (veterinary OR canine OR feline) AND ("treatment" OR "gastrointestinal perforation" OR
+      "surgery")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 氣腹 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - abdominal-distension 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - dehydration 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部 X-ray
+          notes: 右側臥位見肝臟與膈肌間游離氣體。站立位見膈肌下游離氣體（氣液面）
+        - name: 臨床評估
+          notes: 非手術後患畜見氣腹 = 消化道穿孔直到排除
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - AFAST 超音波（腹腔游離液體）
+        - 腹腔穿刺液分析（細菌、食物顆粒）
+        - CBC、生化
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 消化道穿孔為外科急症
+        - 穩定後緊急手術探查
+        - 腹膜炎管理
+ddxSource: auto-generated

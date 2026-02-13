@@ -3,11 +3,11 @@ nameEn: Hemorrhage Control
 nameZh: 出血控制
 bodySystem: emergency
 description: 快速控制活動性出血以避免失血性休克。包括直接加壓、止血帶及手術介入。
-
 aliases:
-  - { alias: 止血處理, language: zh }
-  - { alias: Bleeding Control, language: en }
-
+  - alias: 止血處理
+    language: zh
+  - alias: Bleeding Control
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,29 +17,25 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 同犬
-
 etiology:
   categories:
     - name: 出血類型
       examples:
         - 外出血、內出血、腔室出血
-
 clinicalSigns:
   early:
     - 活動性出血
     - 心搏過速、蒼白黏膜
   progressive:
     - 休克、意識喪失
-
 diagnosis:
   primaryTests:
     - name: 出血評估
-      notes: "辨識出血部位及嚴重度"
+      notes: 辨識出血部位及嚴重度
     - name: PCV/TP
-      notes: "評估失血程度"
+      notes: 評估失血程度
   differentialDiagnoses:
     - 凝血功能異常
-
 treatment:
   medical:
     - 直接加壓止血(5-10分鐘)
@@ -47,42 +43,67 @@ treatment:
     - 靜脈輸液復甦
     - 輸血(PCV<20%)
     - 手術探查止血(若需要)
-
 prognosis:
-  general: "及時止血及輸液復甦預後良好。嚴重內出血需手術。"
-
+  general: 及時止血及輸液復甦預後良好。嚴重內出血需手術。
 prevention:
   - 避免創傷
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Volume Resuscitation in the Acutely Hemorrhaging Patient: Historic Use to Current Applications."
+    title: 'Volume Resuscitation in the Acutely Hemorrhaging Patient: Historic Use to Current Applications.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8357988/
     type: review
-    pmid: "34395568"
+    pmid: '34395568'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
-    title: "Lessons Learned From the Battlefield and Applicability to Veterinary Medicine-Part 1: Hemorrhage Control."
+    title: 'Lessons Learned From the Battlefield and Applicability to Veterinary Medicine-Part 1: Hemorrhage Control.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7841008/
     type: review
-    pmid: "33521075"
+    pmid: '33521075'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
-    title: "Resuscitative Endovascular Balloon Occlusion of the Aorta: Review of the Literature and Applications to Veterinary Emergency and Critical Care."
+    title: >-
+      Resuscitative Endovascular Balloon Occlusion of the Aorta: Review of the Literature and Applications to Veterinary
+      Emergency and Critical Care.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6594359/
     type: review
-    pmid: "31275952"
+    pmid: '31275952'
     relevance: supporting
   - sourceOrg: Theranostics
-    title: Injectable hydrogels based on mussel-inspired nanocomposite microspheres for non-compressible intra-abdominal hemorrhage control.
+    title: >-
+      Injectable hydrogels based on mussel-inspired nanocomposite microspheres for non-compressible intra-abdominal
+      hemorrhage control.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12374639/
     type: research
-    pmid: "40860142"
+    pmid: '40860142'
     relevance: supporting
   - sourceOrg: Bioactive materials
-    title: A self-hygroscopic, rapidly self-gelling polysaccharide-based sponge with robust wet adhesion for non-compressible hemorrhage control and infected wounds healing.
+    title: >-
+      A self-hygroscopic, rapidly self-gelling polysaccharide-based sponge with robust wet adhesion for non-compressible
+      hemorrhage control and infected wounds healing.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11732608/
     type: research
-    pmid: "39811462"
+    pmid: '39811462'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+diagnosticAlgorithm:
+  title: 出血控制 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - coma-stupor 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 出血評估
+          notes: 辨識出血部位及嚴重度
+        - name: PCV/TP
+          notes: 評估失血程度
+ddxSource: auto-generated

@@ -3,18 +3,18 @@ nameEn: British Shorthair Hemophilia B
 nameZh: 英國短毛貓B型血友病
 bodySystem: hematology
 description: 英國短毛貓的遺傳性凝血因子IX缺陷,X染色體隱性遺傳,雄貓發病。表現為自發性出血、關節腔出血,需終生管理。
-
 aliases:
-  - { alias: B型血友病, language: zh }
-  - { alias: Factor IX Deficiency, language: en }
-  - { alias: Christmas Disease, language: en }
-
+  - alias: B型血友病
+    language: zh
+  - alias: Factor IX Deficiency
+    language: en
+  - alias: Christmas Disease
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 英國短毛貓,X染色體隱性遺傳
-
 etiology:
   categories:
     - name: 遺傳性凝血障礙
@@ -22,7 +22,6 @@ etiology:
         - F9基因突變
         - 凝血因子IX缺陷
         - X染色體隱性遺傳(雄貓發病)
-
 clinicalSigns:
   early:
     - 幼貓期出血傾向
@@ -33,28 +32,44 @@ clinicalSigns:
     - 肌肉血腫
     - 嚴重內出血
     - 貧血
-
 diagnosis:
   primaryTests:
     - name: 凝血功能檢查
-      notes: "APTT延長,PT正常,因子IX活性<5%"
+      notes: APTT延長,PT正常,因子IX活性<5%
     - name: 基因檢測
-      notes: "F9基因突變"
+      notes: F9基因突變
   differentialDiagnoses:
     - 血友病A
     - 老鼠藥中毒
     - 肝病
-
 treatment:
   medical:
     - 新鮮冷凍血漿輸注(急性出血)
     - 全血輸血
     - 避免創傷
     - 止血劑(Tranexamic acid)
-
 prognosis:
-  general: "需終生小心管理,嚴重出血事件危及生命。預防性照護可延長壽命。"
-
+  general: 需終生小心管理,嚴重出血事件危及生命。預防性照護可延長壽命。
 prevention:
   - 雌性帶因者不應繁殖
   - 基因檢測
+associatedSymptoms:
+  - symptomId: petechiae-ecchymoses
+    frequency: common
+diagnosticAlgorithm:
+  title: 英國短毛貓B型血友病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - petechiae-ecchymoses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 凝血功能檢查
+          notes: APTT延長,PT正常,因子IX活性<5%
+        - name: 基因檢測
+          notes: F9基因突變
+ddxSource: auto-generated

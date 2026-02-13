@@ -3,12 +3,13 @@ nameEn: Grain Free Diet Controversy
 nameZh: 無穀飲食爭議
 bodySystem: metabolic
 description: 無穀犬糧與擴張性心肌病(DCM)的關聯性爭議。FDA調查發現某些無穀配方(特別是含豌豆、扁豆、馬鈴薯為主成分)可能增加DCM風險。
-
 aliases:
-  - { alias: 無穀飼料爭議, language: zh }
-  - { alias: Grain Free DCM, language: en }
-  - { alias: Boutique Exotic Diet DCM, language: en }
-
+  - alias: 無穀飼料爭議
+    language: zh
+  - alias: Grain Free DCM
+    language: en
+  - alias: Boutique Exotic Diet DCM
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓為肉食性，DCM與牛磺酸缺乏關聯較明確
-
 etiology:
   categories:
     - name: 疑似機轉
@@ -33,7 +33,6 @@ etiology:
         - Exotic蛋白質
         - Grain-free無穀配方
         - 豆類為前5大成分
-
 clinicalSigns:
   early:
     - 初期可能無症狀
@@ -45,23 +44,21 @@ clinicalSigns:
     - 昏厥
     - 心律不整
     - 猝死
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波
-      notes: "左心室擴大、收縮功能下降(FS<25%)"
+      notes: 左心室擴大、收縮功能下降(FS<25%)
     - name: 血液牛磺酸濃度
-      notes: "全血牛磺酸<200 nmol/mL為低"
+      notes: 全血牛磺酸<200 nmol/mL為低
     - name: 胸部X光
-      notes: "心臟擴大、肺水腫"
+      notes: 心臟擴大、肺水腫
     - name: 飲食史詳細調查
-      notes: "品牌、成分、餵食時間"
+      notes: 品牌、成分、餵食時間
   differentialDiagnoses:
     - 飲食相關性DCM
     - 遺傳性DCM
     - 甲狀腺功能低下
     - 心絲蟲病
-
 treatment:
   medical:
     - 立即更換飲食
@@ -75,12 +72,42 @@ treatment:
     - Furosemide利尿劑
     - ACE抑制劑
     - 定期追蹤：心臟超音波、牛磺酸濃度
-
 prognosis:
-  general: "早期發現並更換飲食+牛磺酸補充，部分犬隻心臟功能可改善；晚期DCM預後不良"
-
+  general: 早期發現並更換飲食+牛磺酸補充，部分犬隻心臟功能可改善；晚期DCM預後不良
 prevention:
   - 選擇經WSAVA認證的大廠牌飼料
   - 避免無穀或豆類為主配方(除非醫療需求)
   - 定期健康檢查(特別是易感品種)
   - 易感品種：黃金獵犬、杜賓犬、大丹犬、拳師犬等
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: syncope
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 無穀飲食爭議 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - syncope 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波
+          notes: 左心室擴大、收縮功能下降(FS<25%)
+        - name: 血液牛磺酸濃度
+          notes: 全血牛磺酸<200 nmol/mL為低
+        - name: 胸部X光
+          notes: 心臟擴大、肺水腫
+ddxSource: auto-generated

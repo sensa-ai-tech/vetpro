@@ -3,11 +3,11 @@ nameEn: Osteomyelitis
 nameZh: 骨髓炎
 bodySystem: orthopedic
 description: 骨骼的感染性發炎疾病，可累及骨髓、骨皮質與骨膜。常因開放性骨折、骨科手術術後感染或血行性播散引起。Staphylococcus 為最常見致病菌。
-
 aliases:
-  - { alias: "Bone Infection", language: en }
-  - { alias: "骨感染", language: zh }
-
+  - alias: Bone Infection
+    language: en
+  - alias: 骨感染
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓偶見。咬傷感染可致骨髓炎。
-
 etiology:
   categories:
     - name: 感染性
@@ -24,7 +23,6 @@ etiology:
         - 開放性骨折
         - 血行性播散
         - 咬傷穿透
-
 clinicalSigns:
   early:
     - 術後持續疼痛
@@ -35,14 +33,12 @@ clinicalSigns:
     - 骨折不癒合
     - 植入物鬆脫
     - 慢性反覆感染
-
 diagnosis:
   primaryTests:
     - name: X 光
       notes: 骨質溶解、骨膜反應、植入物周圍透亮區
     - name: 細菌培養（骨組織）
       notes: 深層取材做好氧 + 厭氧培養。Staphylococcus 最常見
-
 treatment:
   principles:
     - 長期抗生素
@@ -54,36 +50,86 @@ treatment:
     - 清創
     - 穩定骨折（外固定架）
     - 嚴重慢性：截肢
-
 prognosis: 急性適當治療預後中等。慢性骨髓炎治療困難，復發率高。移除感染植入物可提高成功率。
-
-
 guidelineRefs:
   - sourceOrg: Microorganisms
-    title: "A Journey into Animal Models of Human Osteomyelitis: A Review."
+    title: 'A Journey into Animal Models of Human Osteomyelitis: A Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9228829/
     type: review
-    pmid: "35744653"
-  - sourceOrg: "Journal of orthopaedic research : official publication of the Orthopaedic Research Society"
+    pmid: '35744653'
+  - sourceOrg: 'Journal of orthopaedic research : official publication of the Orthopaedic Research Society'
     title: Review of immunological plasma markers for longitudinal analysis of inflammation and infection in rat models.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9106877/
     type: review
-    pmid: "35315119"
+    pmid: '35315119'
   - sourceOrg: Frontiers in veterinary science
     title: The Evidence for a Causal Link Between Disease and Damaging Behavior in Pigs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8828939/
     type: review
-    pmid: "35155642"
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Paenibacillus amylolyticus osteomyelitis in a Poodle dog: case report and literature review."
+    pmid: '35155642'
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: 'Paenibacillus amylolyticus osteomyelitis in a Poodle dog: case report and literature review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9266492/
     type: review
-    pmid: "35673775"
+    pmid: '35673775'
   - sourceOrg: Animal models and experimental medicine
-    title: "Innovations in osteomyelitis research: A review of animal models."
+    title: 'Innovations in osteomyelitis research: A review of animal models.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7954837/
     type: review
-    pmid: "33738438"
+    pmid: '33738438'
 pubmedQueries:
   - query: '"osteomyelitis" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 骨髓炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估骨感染症狀和風險因子
+      findings:
+        - 受累肢體疼痛和腫脹
+        - 跛行（可能嚴重不願負重）
+        - 發熱
+        - 開放性骨折或手術植入物史
+    - step: 2
+      action: 影像學檢查
+      details: 進行X光評估骨骼變化
+      findings:
+        - 骨溶解和不規則骨破壞
+        - 骨膜反應
+        - 死骨形成
+        - 植入物周圍溶解
+    - step: 3
+      action: 細菌培養
+      details: 進行深層組織或骨培養確認病原
+      findings:
+        - 骨活檢組織培養
+        - 最常見：Staphylococcus spp.
+        - 厭氧菌培養
+        - 抗生素藥敏試驗
+    - step: 4
+      action: 進階評估
+      details: 評估骨髓炎範圍和手術需求
+      findings:
+        - CT評估骨破壞範圍
+        - 排除真菌性骨髓炎
+        - 評估植入物移除需求
+        - 組織病理學排除腫瘤
+clinicalPearls:
+  - 骨培養需從手術取得的深部組織進行，表面拭子培養常受汙染菌干擾
+  - X 光改變通常在感染後 10-14 天才出現，早期可能正常
+  - 慢性骨髓炎中的 sequestrum 必須手術移除，單靠抗生素無法治癒
+  - Clindamycin 對骨組織穿透性極佳，是骨髓炎抗生素的良好選擇
+monitoringItems:
+  - X 光每 4-6 週追蹤骨癒合和感染控制
+  - CRP/SAA 每 1-2 週監測炎症趨勢
+  - 引流竇口的分泌物量和性質
+  - 抗生素療程結束後 4 週追蹤 X 光和血檢確認
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: common
+ddxSource: book

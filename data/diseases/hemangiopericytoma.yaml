@@ -3,12 +3,13 @@ nameEn: Hemangiopericytoma
 nameZh: 血管外皮瘤
 bodySystem: dermatology
 description: 血管周細胞（pericyte）來源的軟組織腫瘤。目前歸類為周邊神經鞘瘤/軟組織肉瘤。生長緩慢、局部侵犯性、轉移率低但復發率高。犬四肢常見。
-
 aliases:
-  - { alias: "Perivascular Wall Tumor", language: en }
-  - { alias: "Peripheral Nerve Sheath Tumor", language: en }
-  - { alias: "血管周細胞瘤", language: zh }
-
+  - alias: Perivascular Wall Tumor
+    language: en
+  - alias: Peripheral Nerve Sheath Tumor
+    language: en
+  - alias: 血管周細胞瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,14 +17,12 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 腫瘤性
       examples:
         - 血管周細胞/周邊神經鞘細胞增生
         - 確切病因不明
-
 clinicalSigns:
   early:
     - 四肢皮下堅實腫塊
@@ -33,14 +32,12 @@ clinicalSigns:
     - 腫塊增大固定
     - 侵犯周圍肌肉筋膜
     - 潰瘍
-
 diagnosis:
   primaryTests:
     - name: 組織病理
       notes: 確診需切除活檢。典型漩渦狀（whorling）排列
     - name: CT / MRI
       notes: 評估侵犯範圍規劃手術
-
 treatment:
   principles:
     - 廣範圍手術切除
@@ -49,21 +46,49 @@ treatment:
     - 廣範圍切除（2-3 cm 邊緣）
     - 不完全切除考慮放射治療
     - 化療效果有限
-
 prognosis: 廣範圍切除後局部復發率約 30%。轉移率低（< 15%）。放射治療可降低復發率。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary and comparative oncology
-    title: "The controversial histologic classification of canine subcutaneous whorling tumours: The path to perivascular wall tumours."
+    title: >-
+      The controversial histologic classification of canine subcutaneous whorling tumours: The path to perivascular wall
+      tumours.
     url: https://pubmed.ncbi.nlm.nih.gov/31778274/
     type: review
-    pmid: "31778274"
+    pmid: '31778274'
   - sourceOrg: Journal of the American Veterinary Medical Association
     title: Use of a frameless computed tomography-guided stereotactic biopsy system for nasal biopsy in five dogs.
     url: https://pubmed.ncbi.nlm.nih.gov/27031420/
     type: research
-    pmid: "27031420"
+    pmid: '27031420'
 pubmedQueries:
   - query: '"hemangiopericytoma" OR "perivascular wall tumor" AND (veterinary OR canine) AND ("surgery" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: failure-to-grow
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 血管外皮瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - failure-to-grow 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 組織病理
+          notes: 確診需切除活檢。典型漩渦狀（whorling）排列
+        - name: CT / MRI
+          notes: 評估侵犯範圍規劃手術
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 廣範圍手術切除
+        - 不完全切除復發率高
+ddxSource: auto-generated

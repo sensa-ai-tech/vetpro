@@ -3,22 +3,20 @@ nameEn: Guinea Pig Corneal Ulcer
 nameZh: 天竺鼠角膜潰瘍
 bodySystem: ophthalmology
 description: 天竺鼠角膜上皮缺損，常因乾草碎片刺傷或同伴抓傷引起。需及時以局部抗生素治療避免感染惡化。
-
 aliases:
-  - { alias: "天竺鼠角膜潰瘍", language: zh }
-  - { alias: "Guinea Pig Corneal Ulcer", language: en }
-
+  - alias: 天竺鼠角膜潰瘍
+    language: zh
+  - alias: Guinea Pig Corneal Ulcer
+    language: en
 species:
   - speciesCommon: guinea pig
     prevalence: uncommon
     notes: 天竺鼠可受此疾病影響。
-
 etiology:
   categories:
     - name: 病因
       examples:
         - 詳見臨床文獻
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -27,14 +25,12 @@ clinicalSigns:
   progressive:
     - 症狀加重
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 完整理學檢查與病史評估。
     - name: 實驗室檢查
       notes: CBC/生化排除系統性疾病。
-
 treatment:
   principles:
     - 治療基礎病因
@@ -44,16 +40,48 @@ treatment:
     - 依病因治療
     - 支持性照護
     - 定期追蹤
-
 prognosis: 預後取決於疾病嚴重度與治療時效。早期診斷與適當治療可改善預後。
-
-
 guidelineRefs:
-  - sourceOrg: "Investigative ophthalmology &amp; visual science"
+  - sourceOrg: Investigative ophthalmology &amp; visual science
     title: In vivo performance of melimine as an antimicrobial coating for contact lenses in models of CLARE and CLPU.
     url: https://pubmed.ncbi.nlm.nih.gov/19710414/
     type: research
-    pmid: "19710414"
+    pmid: '19710414'
 pubmedQueries:
   - query: '"Guinea Pig Corneal Ulcer" AND (veterinary OR "guinea pig") AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 天竺鼠角膜潰瘍 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 完整理學檢查與病史評估。
+        - name: 實驗室檢查
+          notes: CBC/生化排除系統性疾病。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 支持性照護
+        - 監測恢復進度
+ddxSource: auto-generated

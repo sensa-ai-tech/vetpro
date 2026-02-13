@@ -2,13 +2,16 @@ slug: salmon-poisoning-disease
 nameEn: Salmon Poisoning Disease
 nameZh: 鮭魚中毒病
 bodySystem: toxicology
-description: 鮭魚中毒病是由蠕蟲新立克次體(Neorickettsia helminthoeca)引起的急性致命性疾病,犬隻食入含感染期吸蟲(Nanophyetus salmincola)的生鮭魚或鱒魚後感染。此病主要分布於北美太平洋西北部,特徵為高燒、嚴重腹瀉及全身淋巴結腫大,未治療死亡率高達90%。
-
+description: >-
+  鮭魚中毒病是由蠕蟲新立克次體(Neorickettsia helminthoeca)引起的急性致命性疾病,犬隻食入含感染期吸蟲(Nanophyetus
+  salmincola)的生鮭魚或鱒魚後感染。此病主要分布於北美太平洋西北部,特徵為高燒、嚴重腹瀉及全身淋巴結腫大,未治療死亡率高達90%。
 aliases:
-  - { alias: SPD, language: en }
-  - { alias: 鮭魚病, language: zh }
-  - { alias: Salmon Fluke Fever, language: en }
-
+  - alias: SPD
+    language: en
+  - alias: 鮭魚病
+    language: zh
+  - alias: Salmon Fluke Fever
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓對Neorickettsia helminthoeca具天然抵抗力,極少發病
-
 etiology:
   categories:
     - name: 立克次體感染(食源性)
@@ -27,7 +29,6 @@ etiology:
         - 吸蟲囊幼攜帶Neorickettsia helminthoeca立克次體
         - 吸蟲在小腸釋放立克次體後侵犯淋巴系統
         - 不經蜱蟲傳播,僅經食入生魚傳播
-
 clinicalSigns:
   early:
     - 食入生魚後5-7天出現症狀(潛伏期1-14天)
@@ -42,26 +43,24 @@ clinicalSigns:
     - 消瘦、虛弱、塌陷
     - 神經症狀(震顫、癲癇)
     - 未治療者7-10天內死亡
-
 diagnosis:
   primaryTests:
     - name: 糞便檢查
-      notes: "檢出Nanophyetus salmincola蟲卵(小型橢圓形,76-97 x 35-55 μm),但可能陰性(症狀早期)"
+      notes: 檢出Nanophyetus salmincola蟲卵(小型橢圓形,76-97 x 35-55 μm),但可能陰性(症狀早期)
     - name: 淋巴結細針抽吸細胞學
-      notes: "組織巨噬細胞內可見立克次體包涵體(診斷性發現)"
+      notes: 組織巨噬細胞內可見立克次體包涵體(診斷性發現)
     - name: PCR檢測
-      notes: "淋巴組織或血液N. helminthoeca DNA檢測(快速確診)"
+      notes: 淋巴組織或血液N. helminthoeca DNA檢測(快速確診)
     - name: 血液學檢查
-      notes: "白血球減少、血小板減少、貧血"
+      notes: 白血球減少、血小板減少、貧血
     - name: 生化檢查
-      notes: "低白蛋白血症(<2.5 g/dL)、電解質異常、肝酵素升高"
+      notes: 低白蛋白血症(<2.5 g/dL)、電解質異常、肝酵素升高
   differentialDiagnoses:
     - Elokomin吸蟲熱(N. elokominica,症狀較輕)
     - 犬瘟熱
     - 犬小病毒腸炎
     - 犬艾利希體病
     - 萊普托螺旋體病
-
 treatment:
   medical:
     - 抗立克次體藥物:Doxycycline 10 mg/kg PO/IV BID x 7-10天(救命治療)
@@ -72,13 +71,66 @@ treatment:
     - 胃腸道保護:Sucralfate 0.5-1 g PO TID
     - 營養支持:鼻胃管餵食或靜脈營養
     - 輸血(嚴重貧血或低白蛋白血症)
-
 prognosis:
-  general: "未治療死亡率90%。早期診斷並使用Doxycycline治療,存活率可達95%以上,多數病例治療後24-48小時內症狀改善,5-7天康復。延遲治療(症狀出現>3天)預後不良。康復犬隻產生持久免疫。"
-
+  general: 未治療死亡率90%。早期診斷並使用Doxycycline治療,存活率可達95%以上,多數病例治療後24-48小時內症狀改善,5-7天康復。延遲治療(症狀出現>3天)預後不良。康復犬隻產生持久免疫。
 prevention:
   - 絕對禁止餵食生鮭魚、鱒魚及其他太平洋西北部淡水魚
   - 煮熟魚肉(內部溫度達63°C以上)可殺死吸蟲及立克次體
   - 冷凍魚肉(-20°C x 24小時以上)可殺死吸蟲囊幼
   - 流行區犬隻避免飲用溪流水或撿食河邊魚屍
   - 症狀出現立即就醫(勿延誤治療黃金時間)
+diagnosticAlgorithm:
+  title: 鮭魚中毒症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 詢問是否有食入生鮭魚或鱒魚的病史，評估急性發熱、嘔吐、血便及淋巴結腫大
+      findings:
+        - 急性高熱（40-42°C）
+        - 嚴重出血性腹瀉
+        - 全身性淋巴結顯著腫大
+    - step: 2
+      action: 糞便與淋巴結檢查
+      details: 進行糞便沉澱檢查尋找吸蟲卵，淋巴結細針抽吸尋找Neorickettsia helminthoeca
+      findings:
+        - 糞便發現Nanophyetus salmincola蟲卵
+        - 淋巴結抹片發現立克次體包涵體
+    - step: 3
+      action: 確診與分級
+      details: 結合流行病學、臨床表現及實驗室檢查綜合確診，PCR可進一步確認
+      findings:
+        - 臨床表現與流行病學高度吻合
+        - PCR確認Neorickettsia helminthoeca
+clinicalPearls:
+  - 鮭魚中毒症幾乎100%致死但100%可治癒——doxycycline是救命藥
+  - 地理分布極度限制——僅美國太平洋西北部（吸蟲中間宿主蝸牛的分布範圍）
+  - 糞便中發現N. salmincola蟲卵是簡單快速的診斷線索
+  - 充分烹煮或冷凍（-20°C > 7天）可殺死囊蚴，預防感染
+  - 全身淋巴結腫大+生鮭魚攝入史在太平洋西北部高度提示本病
+monitoringItems:
+  - 體溫每日監測（應在24-72小時內退燒）
+  - 脫水狀態和電解質
+  - 糞便品質
+  - 血小板計數
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: pallor-cyanosis
+    frequency: rare
+  - symptomId: dehydration
+    frequency: rare
+  - symptomId: hypothermia-sign
+    frequency: rare
+ddxSource: book

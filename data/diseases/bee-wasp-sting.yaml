@@ -3,15 +3,19 @@ nameEn: Bee and Wasp Sting
 nameZh: 蜂螫傷
 bodySystem: emergency
 description: 蜜蜂或胡蜂螫傷引起的局部或全身性過敏反應。多數為輕微局部腫脹，但部分動物可發生嚴重過敏性休克（anaphylaxis），需緊急處理。多處螫傷可導致直接毒素效應。
-
 aliases:
-  - { alias: 蜜蜂螫傷, language: zh }
-  - { alias: 胡蜂螫傷, language: zh }
-  - { alias: 蟲螫過敏, language: zh }
-  - { alias: Hymenoptera Sting, language: en }
-  - { alias: Insect Sting Hypersensitivity, language: en }
-  - { alias: Anaphylaxis from Insect Sting, language: en }
-
+  - alias: 蜜蜂螫傷
+    language: zh
+  - alias: 胡蜂螫傷
+    language: zh
+  - alias: 蟲螫過敏
+    language: zh
+  - alias: Hymenoptera Sting
+    language: en
+  - alias: Insect Sting Hypersensitivity
+    language: en
+  - alias: Anaphylaxis from Insect Sting
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -21,7 +25,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓較少見但仍可發生。貓的過敏性休克主要影響呼吸道（支氣管痙攣與肺水腫）。
-
 etiology:
   categories:
     - name: 蜜蜂毒素
@@ -41,7 +44,6 @@ etiology:
         - 肥大細胞脫顆粒釋放組織胺
         - 先前致敏為過敏性休克的前提
         - 多處螫傷可導致直接毒素效應（與過敏無關）
-
 clinicalSigns:
   early:
     - 螫傷部位腫脹、紅腫
@@ -60,22 +62,20 @@ clinicalSigns:
     - 多處螫傷可致急性腎損傷、橫紋肌溶解
     - DIC
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 臨床診斷
-      notes: "主要依據暴露史與臨床表現診斷。尋找螫傷部位與蜂針殘留"
+      notes: 主要依據暴露史與臨床表現診斷。尋找螫傷部位與蜂針殘留
     - name: 血壓監測
-      notes: "過敏性休克時低血壓為主要問題"
+      notes: 過敏性休克時低血壓為主要問題
   imaging:
     - name: 胸腔 X 光
-      notes: "懷疑呼吸道受累時評估。貓可見支氣管型態改變或肺水腫"
+      notes: 懷疑呼吸道受累時評估。貓可見支氣管型態改變或肺水腫
   additional:
     - CBC (嗜酸性球可能升高)
     - 生化 (多處螫傷時監測腎功能、CK)
     - 凝血功能 (多處螫傷時排除 DIC)
     - 心電圖 (嚴重過敏反應時)
-
 treatment:
   principles:
     - 輕微局部反應以對症治療為主
@@ -92,21 +92,66 @@ treatment:
     - 嚴重喉頭水腫需緊急氣管插管或氣管切開
     - 冷敷螫傷局部
     - 多處螫傷需住院監測腎功能與凝血
-
-prognosis: 輕微局部反應預後極佳。過敏性休克若及時使用 epinephrine 預後良好。延遲治療的過敏性休克可致死。多處螫傷（>20 處）預後取決於器官損傷程度。曾發生過敏性休克的動物再次暴露風險極高，建議飼主備有 epinephrine 急救包。
-
+prognosis: >-
+  輕微局部反應預後極佳。過敏性休克若及時使用 epinephrine 預後良好。延遲治療的過敏性休克可致死。多處螫傷（>20 處）預後取決於器官損傷程度。曾發生過敏性休克的動物再次暴露風險極高，建議飼主備有 epinephrine
+  急救包。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
-    title: "Anaphylaxis in dogs and cats"
+    title: Anaphylaxis in dogs and cats
     url: https://pubmed.ncbi.nlm.nih.gov/25845993/
     type: review
-    pmid: "25845993"
+    pmid: '25845993'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Massive bee envenomation in dogs"
+    title: Massive bee envenomation in dogs
     url: https://pubmed.ncbi.nlm.nih.gov/15900939/
     type: case-series
-    pmid: "15900939"
-
+    pmid: '15900939'
 pubmedQueries:
-  - query: '"bee sting" OR "wasp sting" OR "hymenoptera" AND (dog OR cat OR canine OR feline) AND ("anaphylaxis" OR "treatment")'
+  - query: >-
+      "bee sting" OR "wasp sting" OR "hymenoptera" AND (dog OR cat OR canine OR feline) AND ("anaphylaxis" OR
+      "treatment")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: common
+diagnosticAlgorithm:
+  title: 蜂螫傷 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - dehydration 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床診斷
+          notes: 主要依據暴露史與臨床表現診斷。尋找螫傷部位與蜂針殘留
+        - name: 血壓監測
+          notes: 過敏性休克時低血壓為主要問題
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC (嗜酸性球可能升高)
+        - 生化 (多處螫傷時監測腎功能、CK)
+        - 凝血功能 (多處螫傷時排除 DIC)
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 輕微局部反應以對症治療為主
+        - 過敏性休克需立即 epinephrine
+        - 維持氣道通暢
+ddxSource: auto-generated

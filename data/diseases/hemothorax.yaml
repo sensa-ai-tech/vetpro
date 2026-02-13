@@ -3,11 +3,11 @@ nameEn: Hemothorax
 nameZh: 血胸
 bodySystem: respiratory
 description: 血胸為胸腔內血液積聚，可由創傷、凝血障礙、腫瘤破裂或醫源性原因導致。創傷性血胸在犬隻最常見（交通事故、咬傷）。大量血胸可導致低血容量休克與呼吸衰竭。需迅速鑑別與處理。
-
 aliases:
-  - { alias: 胸腔積血, language: zh }
-  - { alias: Thoracic Hemorrhage, language: en }
-
+  - alias: 胸腔積血
+    language: zh
+  - alias: Thoracic Hemorrhage
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻血胸可因高處墜落創傷、凝血障礙或腫瘤引起。
-
 etiology:
   categories:
     - name: 創傷性
@@ -29,7 +28,6 @@ etiology:
         - 肺或胸腔腫瘤破裂（hemangiosarcoma）
         - 凝血因子缺乏（von Willebrand disease、hemophilia）
         - 肺動脈高壓伴血管破裂
-
 clinicalSigns:
   early:
     - 呼吸急促
@@ -41,14 +39,12 @@ clinicalSigns:
     - 低血壓
     - 休克徵象（四肢冰冷、CRT 延長）
     - 虛脫
-
 diagnosis:
   primaryTests:
     - name: 胸腔穿刺（Thoracocentesis）
       notes: 抽取血性胸水確診。PCV 接近周邊血液 PCV 提示活動性出血。不凝固的血液提示已經在胸腔內一段時間。
     - name: 胸腔 X 光/超音波
       notes: 胸腔積液（TFAST 超音波可快速偵測）。X 光在引流後評估肺實質與胸壁損傷。
-
 treatment:
   principles:
     - 穩定血流動力學為首要
@@ -57,40 +53,104 @@ treatment:
   general:
     - 胸腔穿刺引流（thoracocentesis）
     - 靜脈輸液與血漿擴張劑穩定循環
-    - "輸血：pRBC（PCV <20%）± FFP（凝血障礙時）"
-    - "抗凝血劑中毒：Vitamin K1 2.5-5 mg/kg PO/SC q12h"
+    - 輸血：pRBC（PCV <20%）± FFP（凝血障礙時）
+    - 抗凝血劑中毒：Vitamin K1 2.5-5 mg/kg PO/SC q12h
     - 持續出血：探查性開胸手術（exploratory thoracotomy）
     - 自體血液回輸（autotransfusion）可作為緊急措施
-
 prognosis: 預後取決於出血原因與嚴重程度。創傷性血胸在適當支持治療下預後中等至良好。抗凝血劑中毒在及時 Vitamin K1 治療下預後良好。腫瘤破裂引起的血胸預後不良。大量失血導致休克者需積極復甦。
-
-
 guidelineRefs:
   - sourceOrg: Prehospital emergency care
-    title: Proportional Versus Fixed Chest Compression Depth for Guideline-Compliant Resuscitation of Infant Asphyxial Cardiac Arrest.
+    title: >-
+      Proportional Versus Fixed Chest Compression Depth for Guideline-Compliant Resuscitation of Infant Asphyxial
+      Cardiac Arrest.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12018585/
     type: guideline
-    pmid: "39374029"
+    pmid: '39374029'
   - sourceOrg: International journal of molecular sciences
     title: A Novel Rabbit Model of Retained Hemothorax with Pleural Organization.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10779131/
     type: research
-    pmid: "38203639"
+    pmid: '38203639'
   - sourceOrg: International journal of molecular sciences
     title: Intrapleural Fibrinolytic Interventions for Retained Hemothoraces in Rabbits.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11354762/
     type: research
-    pmid: "39201465"
+    pmid: '39201465'
   - sourceOrg: Nan fang yi ke da xue xue bao = Journal of Southern Medical University
-    title: "[Evaluation of the performance of a minimally invasive thoracic drainage tube in a rabbit model of hemothorax]."
+    title: '[Evaluation of the performance of a minimally invasive thoracic drainage tube in a rabbit model of hemothorax].'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6765714/
     type: research
-    pmid: "29997085"
-  - sourceOrg: "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology"
-    title: "Pulmonary artery dissection causing haemothorax in a cat: potential role of&#xa0;Dirofilaria immitis infection and literature review."
+    pmid: '29997085'
+  - sourceOrg: 'Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology'
+    title: >-
+      Pulmonary artery dissection causing haemothorax in a cat: potential role of&#xa0;Dirofilaria immitis infection and
+      literature review.
     url: https://pubmed.ncbi.nlm.nih.gov/27780697/
     type: review
-    pmid: "27780697"
+    pmid: '27780697'
 pubmedQueries:
   - query: '"hemothorax" AND (veterinary OR canine OR feline) AND ("trauma" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 膿胸 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估呼吸窘迫程度與全身感染徵象
+      findings:
+        - 呼吸困難與呼吸急促
+        - 發燒與精神極度沉鬱
+        - 脫水與食慾廢絕
+        - 腹側胸部叩診濁音
+    - step: 2
+      action: 影像學與胸腔穿刺
+      details: 胸腔X光/超音波確認積液，穿刺取樣
+      findings:
+        - 雙側胸腔積液常見
+        - 超音波見高回音積液或纖維蛋白沉積
+        - 穿刺抽出混濁惡臭液體
+        - 液體呈乳白至黃綠色
+    - step: 3
+      action: 積液分析
+      details: 積液細胞學、生化分析、需氧及厭氧培養與藥敏
+      findings:
+        - 大量退化性嗜中性球
+        - 細胞內外細菌
+        - 蛋白質大於3g/dL
+        - 葡萄糖偏低乳酸偏高
+    - step: 4
+      action: 病因調查與治療
+      details: 確認感染來源，建立胸管引流
+      findings:
+        - 穿透性異物（植物種子/草芒）
+        - 食道穿孔
+        - 肺膿腫破裂
+        - 血行性播散
+clinicalPearls:
+  - 胸腔積液中見到細菌即可確診
+  - 厭氧菌培養需特殊採樣和送檢條件
+  - 草芒異物是犬膿胸的重要原因，CT可幫助定位
+  - 貓膿胸常與打架咬傷相關
+  - 早期積極引流比僅靠抗生素效果更好
+monitoringItems:
+  - 胸管引流量和性狀
+  - 體溫
+  - 胸部X光追蹤
+  - 白血球計數
+  - 積液培養追蹤
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

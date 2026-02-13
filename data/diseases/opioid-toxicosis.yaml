@@ -3,11 +3,11 @@ nameEn: Opioid Toxicosis
 nameZh: 鴉片類藥物中毒
 bodySystem: toxicology
 description: 鴉片類藥物(如芬太尼、嗎啡、tramadol)過量可引起呼吸抑制、鎮靜及瞳孔縮小。芬太尼毒性極強,微量即可致命。
-
 aliases:
-  - { alias: 類鴉片中毒, language: zh }
-  - { alias: Fentanyl Toxicity, language: en }
-
+  - alias: 類鴉片中毒
+    language: zh
+  - alias: Fentanyl Toxicity
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 對鴉片類更敏感
-
 etiology:
   categories:
     - name: 處方藥物
@@ -26,7 +25,6 @@ etiology:
     - name: 非法藥物
       examples:
         - 海洛因、非法芬太尼
-
 clinicalSigns:
   early:
     - 瞳孔極度縮小(針尖狀)
@@ -37,36 +35,62 @@ clinicalSigns:
     - 心搏過緩、低血壓
     - 昏迷
     - 死亡(呼吸停止)
-
 diagnosis:
   primaryTests:
     - name: 暴露史
-      notes: "確認鴉片類藥物接觸"
+      notes: 確認鴉片類藥物接觸
     - name: 臨床三聯徵
-      notes: "瞳孔縮小+呼吸抑制+意識改變"
+      notes: 瞳孔縮小+呼吸抑制+意識改變
     - name: Naloxone反應
-      notes: "給予後症狀快速逆轉確診"
+      notes: 給予後症狀快速逆轉確診
   differentialDiagnoses:
     - 其他鎮靜劑過量
     - 頭部創傷
-
 treatment:
   medical:
     - Naloxone(解毒劑,關鍵):
-      - 0.01-0.04 mg/kg IV/IM/IN(鼻內)
-      - 效果快速(1-2分鐘),但持續時間短(30-90分鐘)
-      - 可能需重複給藥或持續輸注
+        - 0.01-0.04 mg/kg IV/IM/IN(鼻內)
+        - 效果快速(1-2分鐘),但持續時間短(30-90分鐘)
+        - 可能需重複給藥或持續輸注
     - 呼吸支持:
-      - 100%氧氣
-      - 人工呼吸或機械通氣(若呼吸停止)
+        - 100%氧氣
+        - 人工呼吸或機械通氣(若呼吸停止)
     - 移除芬太尼貼片(若仍附著),清洗皮膚
     - 靜脈輸液支持
     - 密集監測呼吸及意識24-72小時(芬太尼效果可能反覆)
-
 prognosis:
-  general: "即時給予Naloxone預後良好。延遲治療或芬太尼高劑量可能致命。芬太尼半衰期長,可能需長時間監護。"
-
+  general: 即時給予Naloxone預後良好。延遲治療或芬太尼高劑量可能致命。芬太尼半衰期長,可能需長時間監護。
 prevention:
   - 妥善存放所有鴉片類藥物
   - 使用後的芬太尼貼片立即丟棄(仍含藥物)
   - 避免寵物接觸用藥區域
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: coma-stupor
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 鴉片類藥物中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+        - dehydration 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 暴露史
+          notes: 確認鴉片類藥物接觸
+        - name: 臨床三聯徵
+          notes: 瞳孔縮小+呼吸抑制+意識改變
+        - name: Naloxone反應
+          notes: 給予後症狀快速逆轉確診
+ddxSource: auto-generated

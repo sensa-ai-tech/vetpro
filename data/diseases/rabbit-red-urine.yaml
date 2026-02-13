@@ -3,16 +3,15 @@ nameEn: Rabbit Red Urine
 nameZh: 兔紅色尿液
 bodySystem: gastrointestinal
 description: 兔排出紅色或橘色尿液為常見就診原因，多數為飲食中的植物色素（porphyrins）排泄所致的良性現象，但需排除血尿（hematuria）等病理原因。
-
 aliases:
-  - { alias: "兔紅色尿液", language: zh }
-  - { alias: "Rabbit Red Urine", language: en }
-
+  - alias: 兔紅色尿液
+    language: zh
+  - alias: Rabbit Red Urine
+    language: en
 species:
   - speciesCommon: rabbit
     prevalence: uncommon
     notes: 兔可受此疾病影響。
-
 etiology:
   categories:
     - name: 生理性（良性）
@@ -26,7 +25,6 @@ etiology:
         - 泌尿道結石
         - 子宮腺癌（未絕育母兔）
         - 腎病
-
 clinicalSigns:
   early:
     - 尿液呈紅色/橘色
@@ -37,14 +35,12 @@ clinicalSigns:
     - 頻尿
     - 尿中血塊
     - 嗜睡/食慾下降
-
 diagnosis:
   primaryTests:
     - name: 試紙尿檢
       notes: 尿液試紙潛血反應：陽性提示真正血尿，陰性提示色素性紅尿。
     - name: 尿液沉渣/培養
       notes: 顯微鏡檢查紅血球。細菌培養排除感染。
-
 treatment:
   principles:
     - 區分色素尿與血尿為首要
@@ -54,41 +50,77 @@ treatment:
     - 色素尿：不需治療，飼主衛教安心
     - 血尿：依病因治療（抗生素、結石手術、絕育）
     - 未絕育母兔血尿需排除子宮腺癌
-
 prognosis: 色素性紅尿為良性，無需擔憂。病理性血尿預後取決於基礎原因（感染→良好，子宮腺癌→早期絕育預後佳，晚期轉移預後差）。
-
-
 guidelineRefs:
   - sourceOrg: The journal of venomous animals and toxins including tropical diseases
-    title: "Acute phase reactions in Daboia siamensis venom and fraction-induced acute kidney injury: the role of oxidative stress and inflammatory pathways in in vivo rabbit and ex vivo rabbit kidney models."
+    title: >-
+      Acute phase reactions in Daboia siamensis venom and fraction-induced acute kidney injury: the role of oxidative
+      stress and inflammatory pathways in in vivo rabbit and ex vivo rabbit kidney models.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11131233/
     type: research
-    pmid: "38808074"
+    pmid: '38808074'
     relevance: supporting
   - sourceOrg: JMA journal
     title: In Vivo Vortex Imaging of Bladder.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10834176/
     type: research
-    pmid: "38314418"
+    pmid: '38314418'
     relevance: supporting
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Assessment of Biostimulation Methods Based on Chemical Communication in Female Doe Reproduction.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8833788/
     type: research
-    pmid: "35158632"
+    pmid: '35158632'
     relevance: supporting
   - sourceOrg: ACS omega
-    title: Development of a Lateral-Flow Immunochromatographic Strip for the Detection of Oxytetracycline Residues in Biological Fluids.
+    title: >-
+      Development of a Lateral-Flow Immunochromatographic Strip for the Detection of Oxytetracycline Residues in
+      Biological Fluids.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10552086/
     type: research
-    pmid: "37810669"
+    pmid: '37810669'
     relevance: supporting
   - sourceOrg: BMC urology
     title: Construction of a novel rabbit model of ureteral calculi implanted with flowable resin.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9295447/
     type: research
-    pmid: "35850713"
+    pmid: '35850713'
     relevance: supporting
 pubmedQueries:
   - query: '"Rabbit Red Urine" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: haematuria
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: pollakiuria
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔紅色尿液 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - haematuria 相關症狀
+        - anorexia 相關症狀
+        - pollakiuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 試紙尿檢
+          notes: 尿液試紙潛血反應：陽性提示真正血尿，陰性提示色素性紅尿。
+        - name: 尿液沉渣/培養
+          notes: 顯微鏡檢查紅血球。細菌培養排除感染。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 區分色素尿與血尿為首要
+        - 色素尿不需治療
+        - 血尿需找出並治療病因
+ddxSource: auto-generated

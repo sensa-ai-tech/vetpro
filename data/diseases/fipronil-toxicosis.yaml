@@ -3,12 +3,13 @@ nameEn: Fipronil Toxicosis
 nameZh: 芬普尼中毒
 bodySystem: toxicology
 description: 芬普尼為廣效殺蟲劑,常見於寵物除蚤產品。過量暴露可引起神經毒性,導致顫抖、癲癇發作及中樞神經抑制。貓對芬普尼特別敏感。
-
 aliases:
-  - { alias: 芬普尼殺蟲劑中毒, language: zh }
-  - { alias: Fipronil Poisoning, language: en }
-  - { alias: Frontline Toxicity, language: en }
-
+  - alias: 芬普尼殺蟲劑中毒
+    language: zh
+  - alias: Fipronil Poisoning
+    language: en
+  - alias: Frontline Toxicity
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 對芬普尼敏感性較高,使用犬用產品易中毒
-
 etiology:
   categories:
     - name: 劑量過量
@@ -29,7 +29,6 @@ etiology:
       examples:
         - 舔舐剛施用藥物的皮毛
         - 攝入芬普尼餌劑
-
 clinicalSigns:
   early:
     - 流涎、嘔吐
@@ -39,18 +38,16 @@ clinicalSigns:
     - 全身性癲癇發作
     - 呼吸困難、體溫過低
     - 昏迷
-
 diagnosis:
   primaryTests:
     - name: 臨床病史與理學檢查
-      notes: "確認芬普尼產品接觸史及神經症狀"
+      notes: 確認芬普尼產品接觸史及神經症狀
     - name: 血液生化檢查
-      notes: "評估肝腎功能,排除其他中毒或代謝異常"
+      notes: 評估肝腎功能,排除其他中毒或代謝異常
   differentialDiagnoses:
     - 有機磷中毒
     - 擬除蟲菊酯中毒
     - 癲癇
-
 treatment:
   medical:
     - 立即以溫和清潔劑(如洗碗精)清洗皮膚,避免吸收
@@ -58,19 +55,51 @@ treatment:
     - 活性碳 1-2 g/kg PO,減少腸道吸收
     - 癲癇控制: Diazepam 0.5-1 mg/kg IV 或 Midazolam 0.1-0.3 mg/kg IV/IM
     - 支持性療法: 靜脈輸液、體溫維持、氧氣治療
-
 prognosis:
-  general: "輕度暴露預後良好,多數於24-72小時內恢復。嚴重神經症狀或延遲治療可能導致永久性神經損傷或死亡。"
-
+  general: 輕度暴露預後良好,多數於24-72小時內恢復。嚴重神經症狀或延遲治療可能導致永久性神經損傷或死亡。
 prevention:
   - 嚴格依照產品標示使用,切勿將犬用產品用於貓
   - 施藥後隔離動物,避免相互舔舐
   - 妥善保存除蚤產品,避免寵物接觸
-
-
 guidelineRefs:
   - sourceOrg: Open veterinary journal
     title: Successful management of fipronil toxicosis in two pet rabbits.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9473373/
     type: case-report
-    pmid: "36118720"
+    pmid: '36118720'
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: trembling
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+diagnosticAlgorithm:
+  title: 芬普尼中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - ataxia 相關症狀
+        - trembling 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床病史與理學檢查
+          notes: 確認芬普尼產品接觸史及神經症狀
+        - name: 血液生化檢查
+          notes: 評估肝腎功能,排除其他中毒或代謝異常
+ddxSource: auto-generated

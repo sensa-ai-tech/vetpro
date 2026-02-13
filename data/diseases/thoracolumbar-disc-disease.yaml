@@ -2,13 +2,16 @@ slug: thoracolumbar-disc-disease
 nameEn: Thoracolumbar Disc Disease
 nameZh: 胸腰椎椎間盤疾病
 bodySystem: neurology
-description: 胸腰椎椎間盤疾病為 T3-L3（通常 T11-L2）椎間盤突出導致脊髓壓迫的最常見犬隻脊髓疾病。Dachshund 為最好發品種（風險為其他品種 10-12 倍）。臨床表現從輕度疼痛到完全後肢癱瘓並喪失深層痛覺。深層痛覺喪失為重要預後指標。
-
+description: >-
+  胸腰椎椎間盤疾病為 T3-L3（通常 T11-L2）椎間盤突出導致脊髓壓迫的最常見犬隻脊髓疾病。Dachshund 為最好發品種（風險為其他品種 10-12
+  倍）。臨床表現從輕度疼痛到完全後肢癱瘓並喪失深層痛覺。深層痛覺喪失為重要預後指標。
 aliases:
-  - { alias: 胸腰椎椎間盤突出, language: zh }
-  - { alias: Thoracolumbar IVDD, language: en }
-  - { alias: TL-IVDD, language: en }
-
+  - alias: 胸腰椎椎間盤突出
+    language: zh
+  - alias: Thoracolumbar IVDD
+    language: en
+  - alias: TL-IVDD
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻胸腰椎 IVDD 少見。偶有報告。
-
 etiology:
   categories:
     - name: Hansen Type I
@@ -36,7 +38,6 @@ etiology:
         - Grade 3：不能行走、可自主排尿
         - Grade 4：不能行走、不能自主排尿
         - Grade 5：深層痛覺喪失
-
 clinicalSigns:
   early:
     - 背部疼痛（弓背、不願活動）
@@ -47,36 +48,68 @@ clinicalSigns:
     - 後肢癱瘓（paraplegia）
     - 排尿功能障礙（尿滯留）
     - 深層痛覺喪失（最嚴重，Grade 5）
-
 diagnosis:
   primaryTests:
     - name: MRI
       notes: 確診金標準。精確顯示椎間盤突出位置與脊髓壓迫程度。T2 高訊號提示脊髓損傷。可評估多節段病變。
     - name: 神經學檢查
       notes: 神經定位（UMN vs LMN 後肢）。深層痛覺評估（Grade 5 鑑別）。膀胱功能評估。分級系統指導治療決策。
-
 treatment:
   principles:
     - Grade 1-2 可保守治療
     - Grade 3-5 建議手術
     - Grade 5 深層痛覺喪失 >48 小時預後差
   general:
-    - "保守治療（Grade 1-2）：嚴格籠舍休息 4-6 週 + 疼痛管理（Gabapentin + NSAID）"
+    - 保守治療（Grade 1-2）：嚴格籠舍休息 4-6 週 + 疼痛管理（Gabapentin + NSAID）
     - 手術減壓：hemilaminectomy（半椎板切除術）或 mini-hemilaminectomy
     - 術後物理治療與復健
-    - "膀胱管理（Grade 3-5）：每日 3-4 次手動壓迫排尿或導尿"
+    - 膀胱管理（Grade 3-5）：每日 3-4 次手動壓迫排尿或導尿
     - Grade 5 >48 小時無深層痛覺：手術成功率下降至 <50%
-
-prognosis: Grade 1-2 保守治療成功率約 50-80%。Grade 1-3 手術成功率約 85-95%。Grade 4 手術成功率約 85-90%。Grade 5 有深層痛覺者手術成功率約 50-60%。Grade 5 深層痛覺喪失 >48 小時成功率 <50%。Dachshund 復發率約 15-20%。
-
-
+prognosis: >-
+  Grade 1-2 保守治療成功率約 50-80%。Grade 1-3 手術成功率約 85-95%。Grade 4 手術成功率約 85-90%。Grade 5 有深層痛覺者手術成功率約 50-60%。Grade 5 深層痛覺喪失 >48
+  小時成功率 <50%。Dachshund 復發率約 15-20%。
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Prophylactic Effect of Fenestration on the Recurrence of Thoracolumbar Intervertebral Disc Disease in Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9559642/
     type: review
-    pmid: "36230341"
+    pmid: '36230341'
     relevance: primary
 pubmedQueries:
-  - query: '"thoracolumbar disc disease" OR "thoracolumbar IVDD" AND (veterinary OR canine) AND ("hemilaminectomy" OR "treatment" OR "prognosis")'
+  - query: >-
+      "thoracolumbar disc disease" OR "thoracolumbar IVDD" AND (veterinary OR canine) AND ("hemilaminectomy" OR
+      "treatment" OR "prognosis")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 胸腰椎椎間盤疾病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - paresis-paralysis 相關症狀
+        - ataxia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: MRI
+          notes: 確診金標準。精確顯示椎間盤突出位置與脊髓壓迫程度。T2 高訊號提示脊髓損傷。可評估多節段病變。
+        - name: 神經學檢查
+          notes: 神經定位（UMN vs LMN 後肢）。深層痛覺評估（Grade 5 鑑別）。膀胱功能評估。分級系統指導治療決策。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - Grade 1-2 可保守治療
+        - Grade 3-5 建議手術
+        - Grade 5 深層痛覺喪失 >48 小時預後差
+ddxSource: auto-generated

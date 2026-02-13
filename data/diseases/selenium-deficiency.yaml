@@ -2,14 +2,18 @@ slug: selenium-deficiency
 nameEn: Selenium Deficiency
 nameZh: 硒缺乏症
 bodySystem: metabolic
-description: 硒為谷胱甘肽過氧化酶（glutathione peroxidase）的必需組成，與維生素 E 協同保護細胞免受氧化損傷。缺乏可導致白肌病（white muscle disease）及心肌退化，犬貓食用商業飼料時罕見，但自製飲食或硒貧乏地區可能發生。
-
+description: >-
+  硒為谷胱甘肽過氧化酶（glutathione peroxidase）的必需組成，與維生素 E 協同保護細胞免受氧化損傷。缺乏可導致白肌病（white muscle
+  disease）及心肌退化，犬貓食用商業飼料時罕見，但自製飲食或硒貧乏地區可能發生。
 aliases:
-  - { alias: 缺硒, language: zh }
-  - { alias: 白肌病, language: zh }
-  - { alias: Selenium Deficiency Myopathy, language: en }
-  - { alias: White Muscle Disease, language: en }
-
+  - alias: 缺硒
+    language: zh
+  - alias: 白肌病
+    language: zh
+  - alias: Selenium Deficiency Myopathy
+    language: en
+  - alias: White Muscle Disease
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓硒缺乏罕見。常與維生素 E 缺乏同時發生。
-
 etiology:
   categories:
     - name: 攝入不足
@@ -28,7 +31,6 @@ etiology:
       examples:
         - 高不飽和脂肪酸飲食（增加氧化壓力）
         - 維生素 E 同時缺乏
-
 clinicalSigns:
   early:
     - 肌肉僵硬
@@ -40,14 +42,12 @@ clinicalSigns:
     - 吞嚥困難（咽喉肌受累）
     - 心肌病（心臟擴大、心衰）
     - 猝死（心肌壞死）
-
 diagnosis:
   primaryTests:
     - name: 血清硒濃度
       notes: 低於正常參考值。全血硒較血清硒更能反映長期硒狀態。
     - name: 肌酸激酶（CK）
       notes: CK 及 AST 升高反映肌肉損傷。
-
 treatment:
   principles:
     - 硒與維生素 E 合併補充
@@ -58,41 +58,73 @@ treatment:
     - 口服硒酵母補充
     - 同時補充維生素 E
     - 轉換至含適量硒的商業飼料
-
 prognosis: 輕至中度缺乏經補充後預後良好。嚴重心肌壞死可能不可逆。白肌病幼犬若及時治療多數可恢復。硒補充劑量範圍窄，過量可致中毒。
-
-
 guidelineRefs:
   - sourceOrg: The veterinary quarterly
-    title: "Ferroptosis in veterinary medicine: mechanisms, therapies, and unmet challenges."
+    title: 'Ferroptosis in veterinary medicine: mechanisms, therapies, and unmet challenges.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12551015/
     type: review
-    pmid: "41059538"
+    pmid: '41059538'
     relevance: primary
   - sourceOrg: Reproduction in domestic animals = Zuchthygiene
-    title: "Selenium as a Modulator of Reproductive Immunity: Molecular Insights and Translational Potential in Livestock."
+    title: 'Selenium as a Modulator of Reproductive Immunity: Molecular Insights and Translational Potential in Livestock.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12635905/
     type: review
-    pmid: "41268629"
+    pmid: '41268629'
     relevance: primary
   - sourceOrg: Poultry science
     title: Research progress on the biological regulatory mechanisms of selenium on skeletal muscle in broilers.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10978542/
     type: review
-    pmid: "38520938"
+    pmid: '38520938'
     relevance: primary
   - sourceOrg: Biological trace element research
-    title: "Detoxification of Selenium Yeast on Mycotoxins and Heavy Metals: a Review."
+    title: 'Detoxification of Selenium Yeast on Mycotoxins and Heavy Metals: a Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9854417/
     type: review
-    pmid: "36662349"
+    pmid: '36662349'
     relevance: primary
   - sourceOrg: Journal of animal science and biotechnology
-    title: "The health benefits of selenium in food animals: a review."
+    title: 'The health benefits of selenium in food animals: a review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9101896/
     type: review
-    pmid: "35550013"
+    pmid: '35550013'
     relevance: primary
 pubmedQueries:
   - query: '"Selenium Deficiency" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 硒缺乏症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dysphagia 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清硒濃度
+          notes: 低於正常參考值。全血硒較血清硒更能反映長期硒狀態。
+        - name: 肌酸激酶（CK）
+          notes: CK 及 AST 升高反映肌肉損傷。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 硒與維生素 E 合併補充
+        - 矯正飲食
+        - 避免過量補充（硒中毒致命）
+ddxSource: auto-generated

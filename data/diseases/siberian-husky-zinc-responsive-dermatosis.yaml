@@ -3,18 +3,18 @@ nameEn: Siberian Husky Zinc Responsive Dermatosis
 nameZh: 西伯利亞哈士奇鋅反應性皮膚病
 bodySystem: dermatology
 description: 西伯利亞哈士奇及阿拉斯加雪橇犬好發的鋅缺乏或吸收障礙相關皮膚病。主要表現為臉部、四肢末端對稱性結痂性皮膚炎,鋅補充治療反應良好,需終生補充。
-
 aliases:
-  - { alias: 鋅反應性皮膚病, language: zh }
-  - { alias: Zinc-Responsive Dermatosis Type 1, language: en }
-  - { alias: ZRD, language: en }
-
+  - alias: 鋅反應性皮膚病
+    language: zh
+  - alias: Zinc-Responsive Dermatosis Type 1
+    language: en
+  - alias: ZRD
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 西伯利亞哈士奇、阿拉斯加雪橇犬、薩摩耶為高風險品種
-
 etiology:
   categories:
     - name: 鋅代謝異常
@@ -22,7 +22,6 @@ etiology:
         - 遺傳性鋅吸收障礙
         - 腸道鋅吸收缺陷
         - 高鈣或植酸干擾鋅吸收
-
 clinicalSigns:
   early:
     - 眼周、口鼻周圍紅斑、脫毛
@@ -33,32 +32,53 @@ clinicalSigns:
     - 厚痂皮形成、裂縫
     - 繼發性細菌或酵母菌感染
     - 輕度搔癢
-
 diagnosis:
   primaryTests:
     - name: 血清鋅濃度
-      notes: "可能正常或降低(不可靠指標)"
+      notes: 可能正常或降低(不可靠指標)
     - name: 皮膚活檢
-      notes: "瀰漫性表皮角化過度、海綿變性、副角化不全"
+      notes: 瀰漫性表皮角化過度、海綿變性、副角化不全
     - name: 鋅補充試驗性治療
-      notes: "2-4週內臨床改善為診斷依據"
+      notes: 2-4週內臨床改善為診斷依據
   differentialDiagnoses:
     - 脂漏性皮膚炎
     - 天疱瘡
     - 毛囊炎
     - 皮黴菌感染
-
 treatment:
   medical:
     - 口服鋅補充劑(Zinc sulfate 2-3 mg/kg元素鋅 PO q24h 或 Zinc methionine 1.5-2 mg/kg PO q24h)
     - 飲食調整(高品質蛋白、低鈣)
     - 繼發性感染治療(抗生素或抗真菌藥)
     - 終生補充維持治療
-
 prognosis:
-  general: "鋅補充治療反應良好,2-6週內明顯改善。需終生補充維持,停藥後症狀復發。預後佳,不影響壽命。"
-
+  general: 鋅補充治療反應良好,2-6週內明顯改善。需終生補充維持,停藥後症狀復發。預後佳,不影響壽命。
 prevention:
   - 高風險品種使用含鋅補充劑食品
   - 避免高鈣飲食
   - 定期皮膚檢查
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: uncommon
+  - symptomId: alopecia
+    frequency: common
+diagnosticAlgorithm:
+  title: 西伯利亞哈士奇鋅反應性皮膚病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清鋅濃度
+          notes: 可能正常或降低(不可靠指標)
+        - name: 皮膚活檢
+          notes: 瀰漫性表皮角化過度、海綿變性、副角化不全
+        - name: 鋅補充試驗性治療
+          notes: 2-4週內臨床改善為診斷依據
+ddxSource: auto-generated

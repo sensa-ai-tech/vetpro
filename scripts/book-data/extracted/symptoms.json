@@ -1,0 +1,623 @@
+[
+  {
+    "id": "polyuria-polydipsia",
+    "zhName": "多尿/多渴",
+    "enName": "Polyuria / Polydipsia",
+    "section": "1.1",
+    "sectionName": "全身性／系統性／代謝",
+    "description": "飲水量與排尿量異常增加。犬正常飲水量約 50-60 mL/kg/day，貓約 45 mL/kg/day；超過此值應懷疑 PU/PD。",
+    "differentialCount": 13
+  },
+  {
+    "id": "weight-loss",
+    "zhName": "體重減輕",
+    "enName": "Weight Loss",
+    "section": "1.1",
+    "sectionName": "全身性／系統性／代謝",
+    "description": "非刻意的體重下降，通常超過正常體重的 10% 即有臨床意義。需區分食慾正常或降低。",
+    "differentialCount": 13
+  },
+  {
+    "id": "weight-gain",
+    "zhName": "體重增加",
+    "enName": "Weight Gain",
+    "section": "1.1",
+    "sectionName": "全身性／系統性／代謝",
+    "description": "非預期的體重增加。需區分真正的脂肪堆積與液體蓄積（腹水、水腫）。",
+    "differentialCount": 7
+  },
+  {
+    "id": "polyphagia",
+    "zhName": "多食",
+    "enName": "Polyphagia",
+    "section": "1.1",
+    "sectionName": "全身性／系統性／代謝",
+    "description": "食慾異常亢進，進食量明顯超過正常。需區分是否伴隨體重減輕或增加。",
+    "differentialCount": 7
+  },
+  {
+    "id": "anorexia",
+    "zhName": "厭食/食慾不振",
+    "enName": "Anorexia / Inappetence",
+    "section": "1.1",
+    "sectionName": "全身性／系統性／代謝",
+    "description": "食慾部分或完全喪失。為最常見的非特異性臨床症狀之一，幾乎所有系統性疾病均可導致。貓超過 3 天未進食需警惕肝脂肪沉積。",
+    "differentialCount": 10
+  },
+  {
+    "id": "failure-to-grow",
+    "zhName": "生長遲滯",
+    "enName": "Failure to Grow",
+    "section": "1.1",
+    "sectionName": "全身性／系統性／代謝",
+    "description": "幼年動物未能達到預期的體型與體重。需與同窩/同品種幼畜比較。",
+    "differentialCount": 7
+  },
+  {
+    "id": "syncope",
+    "zhName": "昏厥/虛脫",
+    "enName": "Syncope / Collapse",
+    "section": "1.1",
+    "sectionName": "全身性／系統性／代謝",
+    "description": "突發性、暫時性的意識喪失或全身無力倒下。需與癲癇發作區分：昏厥通常恢復迅速且無後發性混亂。",
+    "differentialCount": 9
+  },
+  {
+    "id": "weakness",
+    "zhName": "虛弱/無力",
+    "enName": "Weakness",
+    "section": "1.1",
+    "sectionName": "全身性／系統性／代謝",
+    "description": "運動耐受力下降或全身性無力。可為持續性或間歇性。需與跛行、共濟失調區分。",
+    "differentialCount": 9
+  },
+  {
+    "id": "ptyalism",
+    "zhName": "流涎/唾液分泌過多",
+    "enName": "Ptyalism / Hypersalivation",
+    "section": "1.2",
+    "sectionName": "消化道／腹腔",
+    "description": "唾液分泌異常增多或因吞嚥障礙導致口水外溢。需區分真性分泌過多與假性流涎（無法吞嚥）。",
+    "differentialCount": 7
+  },
+  {
+    "id": "vomiting",
+    "zhName": "嘔吐",
+    "enName": "Vomiting",
+    "section": "1.2",
+    "sectionName": "消化道／腹腔",
+    "description": "胃內容物的主動排出。需與反流（regurgitation，被動、無腹部收縮）區分。急性 vs 慢性嘔吐的鑑別方向不同。",
+    "differentialCount": 14
+  },
+  {
+    "id": "diarrhoea",
+    "zhName": "腹瀉",
+    "enName": "Diarrhoea",
+    "section": "1.2",
+    "sectionName": "消化道／腹腔",
+    "description": "糞便次數增加、含水量增加或量增加。需區分小腸型與大腸型腹瀉，有助於縮小鑑別範圍。",
+    "differentialCount": 11
+  },
+  {
+    "id": "coughing",
+    "zhName": "咳嗽",
+    "enName": "Coughing",
+    "section": "1.3",
+    "sectionName": "呼吸道",
+    "description": "突然、強力的空氣排出以清除呼吸道。犬較常見，貓咳嗽常被誤認為嘔吐動作。需區分乾咳 vs 濕咳、日間 vs 夜間。",
+    "differentialCount": 8
+  },
+  {
+    "id": "dyspnoea",
+    "zhName": "呼吸困難",
+    "enName": "Dyspnoea",
+    "section": "1.3",
+    "sectionName": "呼吸道",
+    "description": "呼吸費力或呼吸窘迫。為緊急臨床情況，需迅速評估。觀察呼吸模式有助於定位：吸氣性（上呼吸道）vs 呼氣性（下呼吸道）。",
+    "differentialCount": 9
+  },
+  {
+    "id": "skin-pruritus",
+    "zhName": "搔癢（皮膚）",
+    "enName": "Pruritus",
+    "section": "1.4",
+    "sectionName": "皮膚",
+    "description": "持續性搔抓、舔舐、啃咬皮膚。犬貓最常見的皮膚問題主訴之一。需評估分布區域、季節性、對治療的反應。",
+    "differentialCount": 10
+  },
+  {
+    "id": "lameness",
+    "zhName": "跛行",
+    "enName": "Lameness",
+    "section": "1.7",
+    "sectionName": "肌肉骨骼",
+    "description": "步態異常，表現為某一肢或多肢負重異常。需區分承重性跛行 vs 懸盪性跛行、前肢 vs 後肢、急性 vs 慢性。",
+    "differentialCount": 10
+  },
+  {
+    "id": "seizures",
+    "zhName": "癲癇發作",
+    "enName": "Seizures",
+    "section": "1.5",
+    "sectionName": "神經系統",
+    "description": "大腦皮質異常放電導致的陣發性、非自主性活動。需記錄發作型態、持續時間、頻率、發作前後行為。",
+    "differentialCount": 10
+  },
+  {
+    "id": "polyarthritis",
+    "zhName": "多發性關節炎/關節腫脹",
+    "enName": "Polyarthritis",
+    "section": "1.7",
+    "sectionName": "肌肉骨骼",
+    "description": "多個關節同時出現發炎、腫脹、疼痛。可為感染性或非感染性（免疫介導性）。",
+    "differentialCount": 4
+  },
+  {
+    "id": "gagging",
+    "zhName": "乾嘔/作嘔",
+    "enName": "Gagging / Retching",
+    "section": "1.2",
+    "sectionName": "消化道／腹腔",
+    "description": "反覆作嘔但未產生嘔吐物。需與真正的嘔吐及咳嗽區分。可能涉及咽喉、食道或呼吸道疾病。",
+    "differentialCount": 7
+  },
+  {
+    "id": "dysphagia",
+    "zhName": "吞嚥困難",
+    "enName": "Dysphagia",
+    "section": "1.2",
+    "sectionName": "消化道／腹腔",
+    "description": "進食或飲水時出現吞嚥困難。可分為口腔期、咽期及食道期吞嚥困難。",
+    "differentialCount": 8
+  },
+  {
+    "id": "regurgitation",
+    "zhName": "反流/逆流",
+    "enName": "Regurgitation",
+    "section": "1.2",
+    "sectionName": "消化道／腹腔",
+    "description": "被動地將未消化食物從食道排出，不伴隨腹部用力。需與嘔吐區分：反流無前兆噁心，食物未消化且多為管狀。",
+    "differentialCount": 8
+  },
+  {
+    "id": "melaena",
+    "zhName": "黑便",
+    "enName": "Melaena",
+    "section": "1.2",
+    "sectionName": "消化道／腹腔",
+    "description": "排出黑色柏油狀糞便，代表上消化道（胃或小腸前段）出血。血液經胃酸消化後變黑。",
+    "differentialCount": 8
+  },
+  {
+    "id": "haematemesis",
+    "zhName": "吐血",
+    "enName": "Haematemesis",
+    "section": "1.2",
+    "sectionName": "消化道／腹腔",
+    "description": "嘔吐物含血。鮮血代表近期活動性出血；咖啡渣樣（digested blood）代表血液已被胃酸部分消化。",
+    "differentialCount": 7
+  },
+  {
+    "id": "haematochezia",
+    "zhName": "血便（鮮血便）",
+    "enName": "Haematochezia",
+    "section": "1.2",
+    "sectionName": "消化道／腹腔",
+    "description": "糞便中含鮮紅色血液，表示下消化道（結腸、直腸、肛門區域）出血。",
+    "differentialCount": 8
+  },
+  {
+    "id": "constipation",
+    "zhName": "便秘/糞便嵌塞",
+    "enName": "Constipation / Obstipation",
+    "section": "1.2",
+    "sectionName": "消化道／腹腔",
+    "description": "排便困難或無法排便。Obstipation 指嚴重的頑固性便秘。貓比犬更常見。",
+    "differentialCount": 9
+  },
+  {
+    "id": "faecal-tenesmus",
+    "zhName": "排便裏急後重",
+    "enName": "Faecal Tenesmus / Dyschezia",
+    "section": "1.2",
+    "sectionName": "消化道／腹腔",
+    "description": "排便時持續用力但排出量少或無法排出。常伴隨疼痛表現。需與泌尿系統的裏急後重區分。",
+    "differentialCount": 7
+  },
+  {
+    "id": "faecal-incontinence",
+    "zhName": "糞便失禁",
+    "enName": "Faecal Incontinence",
+    "section": "1.2",
+    "sectionName": "消化道／腹腔",
+    "description": "無法控制排便。可分為肛門括約肌功能不全及儲存型失禁。",
+    "differentialCount": 6
+  },
+  {
+    "id": "flatulence",
+    "zhName": "脹氣/腸鳴音",
+    "enName": "Flatulence / Borborygmus",
+    "section": "1.2",
+    "sectionName": "消化道／腹腔",
+    "description": "排氣增加或腸蠕動音增強。常與飲食或消化功能相關。",
+    "differentialCount": 5
+  },
+  {
+    "id": "sneezing",
+    "zhName": "噴嚏/鼻分泌物",
+    "enName": "Sneezing / Nasal Discharge",
+    "section": "1.3",
+    "sectionName": "心血管／呼吸",
+    "description": "反覆打噴嚏及/或鼻腔分泌物（漿液性、黏液性、膿性或血性）。需區分單側或雙側。",
+    "differentialCount": 8
+  },
+  {
+    "id": "epistaxis",
+    "zhName": "鼻出血",
+    "enName": "Epistaxis",
+    "section": "1.3",
+    "sectionName": "心血管／呼吸",
+    "description": "鼻腔出血。需區分單側（多為局部病因）或雙側（可能為全身性凝血問題）。",
+    "differentialCount": 8
+  },
+  {
+    "id": "haemoptysis",
+    "zhName": "咳血",
+    "enName": "Haemoptysis",
+    "section": "1.3",
+    "sectionName": "心血管／呼吸",
+    "description": "咳出含血的分泌物。需與吐血及鼻出血區分。代表下呼吸道或肺實質出血。",
+    "differentialCount": 7
+  },
+  {
+    "id": "exercise-intolerance",
+    "zhName": "運動不耐",
+    "enName": "Exercise Intolerance",
+    "section": "1.3",
+    "sectionName": "心血管／呼吸",
+    "description": "運動能力下降，容易疲累。可能與心血管、呼吸、代謝或神經肌肉疾病相關。",
+    "differentialCount": 9
+  },
+  {
+    "id": "trembling",
+    "zhName": "顫抖/發抖",
+    "enName": "Trembling / Shivering",
+    "section": "1.5",
+    "sectionName": "神經系統",
+    "description": "不自主的節律性肌肉運動。需與癲癇發作區分。可為生理性（寒冷、恐懼）或病理性。",
+    "differentialCount": 8
+  },
+  {
+    "id": "ataxia",
+    "zhName": "共濟失調",
+    "enName": "Ataxia",
+    "section": "1.5",
+    "sectionName": "神經系統",
+    "description": "運動協調障礙。可分為前庭性（頭歪斜、眼球震顫）、小腦性（意向性震顫、過度測距）及本體感覺性（踩棉花感）。",
+    "differentialCount": 9
+  },
+  {
+    "id": "paresis-paralysis",
+    "zhName": "輕癱/癱瘓",
+    "enName": "Paresis / Paralysis",
+    "section": "1.5",
+    "sectionName": "神經系統",
+    "description": "自主運動能力部分喪失（輕癱）或完全喪失（癱瘓）。依據受影響範圍分為單肢、雙前肢、雙後肢或四肢。",
+    "differentialCount": 10
+  },
+  {
+    "id": "coma-stupor",
+    "zhName": "昏迷/嗜睡",
+    "enName": "Coma / Stupor",
+    "section": "1.5",
+    "sectionName": "神經系統",
+    "description": "意識程度嚴重降低。嗜睡可被強刺激短暫喚醒；昏迷完全無反應。需緊急處理。",
+    "differentialCount": 7
+  },
+  {
+    "id": "blindness",
+    "zhName": "失明/視力障礙",
+    "enName": "Blindness / Visual Impairment",
+    "section": "1.6",
+    "sectionName": "眼科",
+    "description": "部分或完全喪失視力。可為突發或漸進性。需區分眼球疾病與神經性原因。",
+    "differentialCount": 7
+  },
+  {
+    "id": "vaginal-discharge",
+    "zhName": "陰道分泌物",
+    "enName": "Vaginal / Vulval Discharge",
+    "section": "1.8",
+    "sectionName": "生殖系統",
+    "description": "陰道或外陰的異常分泌物。需區分類型及是否與發情周期相關。",
+    "differentialCount": 5
+  },
+  {
+    "id": "pollakiuria",
+    "zhName": "頻尿/排尿困難",
+    "enName": "Pollakiuria / Dysuria / Stranguria",
+    "section": "1.9",
+    "sectionName": "泌尿系統",
+    "description": "排尿頻率增加、排尿疼痛或排尿時過度用力。通常代表下泌尿道疾病。",
+    "differentialCount": 7
+  },
+  {
+    "id": "haematuria",
+    "zhName": "血尿",
+    "enName": "Haematuria",
+    "section": "1.9",
+    "sectionName": "泌尿系統",
+    "description": "尿液含血。需區分全程血尿、初段或末段血尿以定位出血位置。",
+    "differentialCount": 6
+  },
+  {
+    "id": "urinary-incontinence",
+    "zhName": "尿失禁",
+    "enName": "Urinary Incontinence",
+    "section": "1.9",
+    "sectionName": "泌尿系統",
+    "description": "無法自主控制排尿。母犬絕育後最常見。",
+    "differentialCount": 5
+  },
+  {
+    "id": "hyperthermia",
+    "zhName": "體溫過高/發燒",
+    "enName": "Hyperthermia / Pyrexia",
+    "section": "2.1",
+    "sectionName": "一般理學檢查",
+    "description": "體溫高於正常值（犬/貓 > 39.2°C）。需區分發燒（調節中樞重設）與非發燒性高體溫（中暑）。",
+    "differentialCount": 8
+  },
+  {
+    "id": "lymphadenopathy",
+    "zhName": "淋巴結腫大",
+    "enName": "Enlarged Lymph Nodes",
+    "section": "2.1",
+    "sectionName": "一般理學檢查",
+    "description": "體表或內臟淋巴結觸診增大。可為局部或全身性。",
+    "differentialCount": 5
+  },
+  {
+    "id": "jaundice",
+    "zhName": "黃疸",
+    "enName": "Jaundice / Icterus",
+    "section": "2.2",
+    "sectionName": "消化道理學檢查",
+    "description": "皮膚、黏膜及鞏膜黃染。分為溶血前性、肝性及阻塞性。",
+    "differentialCount": 8
+  },
+  {
+    "id": "abdominal-distension",
+    "zhName": "腹部膨大",
+    "enName": "Abdominal Distension",
+    "section": "2.2",
+    "sectionName": "消化道理學檢查",
+    "description": "腹部外觀增大。器官腫大、液體蓄積、氣體、腫瘤或肌肉張力降低均可引起。",
+    "differentialCount": 7
+  },
+  {
+    "id": "ascites",
+    "zhName": "腹水",
+    "enName": "Ascites",
+    "section": "2.3",
+    "sectionName": "心肺理學檢查",
+    "description": "腹腔液體異常蓄積。需穿刺取液分析以區分漏出液、修正漏出液、滲出液。",
+    "differentialCount": 7
+  },
+  {
+    "id": "heart-murmur",
+    "zhName": "心雜音",
+    "enName": "Heart Murmur",
+    "section": "2.3",
+    "sectionName": "心肺理學檢查",
+    "description": "聽診異常心音。需記錄等級（I-VI）、時相、最響點。",
+    "differentialCount": 11
+  },
+  {
+    "id": "alopecia",
+    "zhName": "脫毛",
+    "enName": "Alopecia",
+    "section": "2.4",
+    "sectionName": "皮膚理學檢查",
+    "description": "毛髮部分或完全脫落。對稱性常為內分泌原因；不對稱常為感染、免疫、腫瘤。",
+    "differentialCount": 7
+  },
+  {
+    "id": "red-eye",
+    "zhName": "紅眼",
+    "enName": "Red Eye",
+    "section": "2.6",
+    "sectionName": "眼科理學檢查",
+    "description": "眼球表面或周圍發紅。需區分結膜充血、鞏膜注射、角膜新血管及前房出血。",
+    "differentialCount": 6
+  },
+  {
+    "id": "abdominal-pain",
+    "zhName": "急性腹痛",
+    "enName": "Acute Abdominal Pain",
+    "section": "1.2",
+    "sectionName": "消化道／腹腔",
+    "description": "腹部觸診疼痛，表現為弓背、不願移動、腹部緊繃。急性腹痛為急診最常見主訴之一。",
+    "differentialCount": 1686
+  },
+  {
+    "id": "head-tilt",
+    "zhName": "頭歪斜",
+    "enName": "Head Tilt",
+    "section": "1.5",
+    "sectionName": "神經系統",
+    "description": "頭部持續歪向一側。前庭系統異常典型表現，需區分周邊型與中樞型。",
+    "differentialCount": 16
+  },
+  {
+    "id": "pallor-cyanosis",
+    "zhName": "蒼白/發紺",
+    "enName": "Pallor / Cyanosis",
+    "section": "2.1",
+    "sectionName": "一般理學檢查",
+    "description": "黏膜蒼白或發藍。蒼白指向貧血、休克；發紺指向嚴重低血氧。",
+    "differentialCount": 122
+  },
+  {
+    "id": "nystagmus",
+    "zhName": "眼球震顫",
+    "enName": "Nystagmus",
+    "section": "1.5",
+    "sectionName": "神經系統",
+    "description": "眼球不自主節律性運動。水平/旋轉型多為周邊前庭；垂直/方向變化型多為中樞。",
+    "differentialCount": 9
+  },
+  {
+    "id": "stertor-stridor",
+    "zhName": "喘鳴/吸氣音異常",
+    "enName": "Stertor / Stridor",
+    "section": "1.3",
+    "sectionName": "心血管／呼吸",
+    "description": "Stertor：鼻咽部低沉鼾聲。Stridor：喉部高亢哨音。定位上呼吸道阻塞。",
+    "differentialCount": 13
+  },
+  {
+    "id": "petechiae-ecchymoses",
+    "zhName": "瘀斑/點狀出血",
+    "enName": "Petechiae / Ecchymoses",
+    "section": "2.1",
+    "sectionName": "一般理學檢查",
+    "description": "皮膚或黏膜出血點或出血斑。直接指向血小板或血管異常。",
+    "differentialCount": 30
+  },
+  {
+    "id": "halitosis-stomatitis",
+    "zhName": "口臭/口炎",
+    "enName": "Halitosis / Stomatitis",
+    "section": "1.2",
+    "sectionName": "消化道／腹腔",
+    "description": "口腔異味或口腔黏膜發炎。可提示口腔或全身性疾病。",
+    "differentialCount": 32
+  },
+  {
+    "id": "peripheral-oedema",
+    "zhName": "水腫",
+    "enName": "Peripheral Oedema",
+    "section": "2.1",
+    "sectionName": "一般理學檢查",
+    "description": "皮下組織液體蓄積。可為局部或全身性。",
+    "differentialCount": 67
+  },
+  {
+    "id": "otitis-externa",
+    "zhName": "外耳炎",
+    "enName": "Otitis Externa",
+    "section": "2.4",
+    "sectionName": "皮膚理學檢查",
+    "description": "外耳道發炎。門診最常見主訴之一。反覆外耳炎需查找原發過敏病因。",
+    "differentialCount": 5
+  },
+  {
+    "id": "tachycardia-bradycardia",
+    "zhName": "心搏過速/心搏過緩",
+    "enName": "Tachycardia / Bradycardia",
+    "section": "2.3",
+    "sectionName": "心肺理學檢查",
+    "description": "心率異常增快或減慢。犬正常60-140bpm，貓正常140-220bpm。",
+    "differentialCount": 119
+  },
+  {
+    "id": "horner-syndrome",
+    "zhName": "Horner 症候群",
+    "enName": "Horner Syndrome",
+    "section": "1.5",
+    "sectionName": "神經系統",
+    "description": "交感神經傳導損傷。縮瞳+眼球內陷+第三眼瞼突出+上眼瞼下垂。",
+    "differentialCount": 4
+  },
+  {
+    "id": "oliguria-anuria",
+    "zhName": "少尿/無尿",
+    "enName": "Oliguria / Anuria",
+    "section": "1.9",
+    "sectionName": "泌尿系統",
+    "description": "尿量顯著減少或完全無尿。與「頻尿」完全不同。需緊急處理。",
+    "differentialCount": 10
+  },
+  {
+    "id": "cutaneous-masses",
+    "zhName": "皮膚腫塊",
+    "enName": "Cutaneous Masses",
+    "section": "2.4",
+    "sectionName": "皮膚理學檢查",
+    "description": "皮膚或皮下可觸及的腫塊。飼主就診最常見原因之一。",
+    "differentialCount": 85
+  },
+  {
+    "id": "facial-nerve-paralysis",
+    "zhName": "顏面神經麻痺",
+    "enName": "Facial Nerve Paralysis",
+    "section": "1.5",
+    "sectionName": "神經系統",
+    "description": "第七對腦神經損傷。無法閉眼、唇下垂、耳下垂。",
+    "differentialCount": 4
+  },
+  {
+    "id": "cachexia-muscle-wasting",
+    "zhName": "肌肉萎縮/惡病質",
+    "enName": "Cachexia / Muscle Wasting",
+    "section": "1.1",
+    "sectionName": "全身性／系統性／代謝",
+    "description": "肌肉量進行性減少。與單純體重減輕不同，著重蛋白質代謝異常。",
+    "differentialCount": 41
+  },
+  {
+    "id": "dehydration",
+    "zhName": "脫水",
+    "enName": "Dehydration",
+    "section": "1.1",
+    "sectionName": "全身性／系統性／代謝",
+    "description": "體液不足的臨床徵象，包含皮膚帳篷試驗延長、黏膜乾燥、眼窩凹陷、心搏過速、CRT延長等。",
+    "differentialCount": 117
+  },
+  {
+    "id": "hepatomegaly",
+    "zhName": "肝臟腫大",
+    "enName": "Hepatomegaly",
+    "section": "1.2",
+    "sectionName": "消化道／腹腔",
+    "description": "肝臟體積增大，可經腹部觸診或影像學檢查發現。可能原因包含鬱血性心衰、肝臟腫瘤、脂肪肝、代謝性肝病、感染性肝炎等。",
+    "differentialCount": 28
+  },
+  {
+    "id": "splenomegaly",
+    "zhName": "脾臟腫大",
+    "enName": "Splenomegaly",
+    "section": "1.2",
+    "sectionName": "消化道／腹腔",
+    "description": "脾臟體積增大，可經腹部觸診或影像學檢查發現。常見原因包含反應性增生、充血、浸潤性病變等。",
+    "differentialCount": 37
+  },
+  {
+    "id": "behaviour-change",
+    "zhName": "行為改變",
+    "enName": "Behaviour Change",
+    "section": "1.5",
+    "sectionName": "神經系統",
+    "description": "精神狀態或行為模式的異常改變，包含攻擊性增加、嗜睡、迷惘、恐懼、壓頭行為、漫無目的遊走等。",
+    "differentialCount": 23
+  },
+  {
+    "id": "mydriasis",
+    "zhName": "瞳孔散大",
+    "enName": "Mydriasis",
+    "section": "1.6",
+    "sectionName": "眼科",
+    "description": "單側或雙側瞳孔異常擴大且對光反射減弱或消失。可能原因包含視網膜疾病、視神經病變、中毒、顱內壓升高等。",
+    "differentialCount": 22
+  },
+  {
+    "id": "hypothermia-sign",
+    "zhName": "低體溫",
+    "enName": "Hypothermia",
+    "section": "1.1",
+    "sectionName": "全身性／系統性／代謝",
+    "description": "核心體溫低於正常範圍。可能原因包含環境暴露、休克、嚴重敗血症、內分泌低下、中毒等。",
+    "differentialCount": 22
+  }
+]

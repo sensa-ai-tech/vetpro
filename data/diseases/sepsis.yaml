@@ -3,28 +3,38 @@ nameEn: Sepsis
 nameZh: 敗血症
 bodySystem: emergency
 description: 宿主對感染的失調性免疫反應導致危及生命的器官功能障礙。由全身性炎症反應症候群 (SIRS) 進展至敗血症，嚴重者可發展為敗血性休克與多器官功能障礙症候群 (MODS)，為加護病房最常見的死亡原因之一。
-
 aliases:
-  - { alias: Septicemia, language: en }
-  - { alias: Systemic Inflammatory Response Syndrome, language: en }
-  - { alias: SIRS, language: en }
-  - { alias: Septic Shock, language: en }
-  - { alias: Multiple Organ Dysfunction Syndrome, language: en }
-  - { alias: MODS, language: en }
-  - { alias: 全身性炎症反應症候群, language: zh }
-  - { alias: 敗血性休克, language: zh }
-  - { alias: 多器官功能障礙症候群, language: zh }
-
+  - alias: Septicemia
+    language: en
+  - alias: Systemic Inflammatory Response Syndrome
+    language: en
+  - alias: SIRS
+    language: en
+  - alias: Septic Shock
+    language: en
+  - alias: Multiple Organ Dysfunction Syndrome
+    language: en
+  - alias: MODS
+    language: en
+  - alias: 全身性炎症反應症候群
+    language: zh
+  - alias: 敗血性休克
+    language: zh
+  - alias: 多器官功能障礙症候群
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: uncommon
-    notes: 敗血症常見於嚴重感染性疾病。敗血性腹膜炎（腸穿孔、子宮破裂）、化膿性子宮炎、吸入性肺炎、深部傷口感染、嚴重泌尿道感染為常見來源。犬 SIRS 標準：體溫 >39.7°C 或 <37.8°C，心率 >140 bpm，呼吸 >30 次/min，WBC >19,500 或 <5,000/μL 或 band >3%（符合 ≥2 項）。
+    notes: >-
+      敗血症常見於嚴重感染性疾病。敗血性腹膜炎（腸穿孔、子宮破裂）、化膿性子宮炎、吸入性肺炎、深部傷口感染、嚴重泌尿道感染為常見來源。犬 SIRS 標準：體溫 >39.7°C 或 <37.8°C，心率 >140 bpm，呼吸 >30
+      次/min，WBC >19,500 或 <5,000/μL 或 band >3%（符合 ≥2 項）。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: uncommon
-    notes: 貓敗血症常見來源包括 pyothorax、咬傷膿瘍、FIP 併發、泌尿道阻塞合併感染。貓 SIRS 標準不同於犬：體溫 >40.0°C 或 <37.8°C，心率 >225 bpm 或 <140 bpm，呼吸 >40 次/min，WBC >19,500 或 <5,000/μL 或 band >5%（符合 ≥3 項，因貓常有應激性反應干擾）。
-
+    notes: >-
+      貓敗血症常見來源包括 pyothorax、咬傷膿瘍、FIP 併發、泌尿道阻塞合併感染。貓 SIRS 標準不同於犬：體溫 >40.0°C 或 <37.8°C，心率 >225 bpm 或 <140 bpm，呼吸 >40
+      次/min，WBC >19,500 或 <5,000/μL 或 band >5%（符合 ≥3 項，因貓常有應激性反應干擾）。
 etiology:
   categories:
     - name: 腹腔內感染
@@ -53,7 +63,7 @@ etiology:
         - 手術後感染
     - name: 常見致病菌
       examples:
-        - "Escherichia coli（最常見）"
+        - Escherichia coli（最常見）
         - Staphylococcus spp.
         - Streptococcus spp.
         - Enterococcus spp.
@@ -61,9 +71,11 @@ etiology:
         - Pseudomonas aeruginosa
         - Bacteroides spp.（厭氧菌）
         - 混合感染常見
-
-pathophysiology: 感染觸發宿主免疫系統過度活化 — 先天免疫識別 PAMPs（病原體相關分子模式，如 LPS/lipoteichoic acid）與 DAMPs（損傷相關分子模式），經 TLR/NF-κB 路徑大量釋放促發炎細胞因子（TNF-α、IL-1β、IL-6）。正常的促發炎與抗發炎反應失衡 → 免疫失調性 (dysregulated) 宿主反應。全身性血管內皮活化 → 血管通透性增加（capillary leak）+ 微血管血栓形成 + NO 介導的血管擴張 → 分布性休克。心肌抑制因子 → 敗血性心肌病變 → 心輸出量下降。組織氧輸送障礙（供給不足 + 利用障礙）→ 組織缺氧 → 乳酸酸中毒。凝血系統活化 + 抗凝機制耗竭（AT、Protein C 降低）→ DIC。若器官灌流持續不足 → MODS（腎衰竭、肝衰竭、ARDS、DIC、腦病變）。免疫麻痹 (immunoparalysis) 可在後期出現，增加繼發感染風險。
-
+pathophysiology: >-
+  感染觸發宿主免疫系統過度活化 — 先天免疫識別 PAMPs（病原體相關分子模式，如 LPS/lipoteichoic acid）與 DAMPs（損傷相關分子模式），經 TLR/NF-κB
+  路徑大量釋放促發炎細胞因子（TNF-α、IL-1β、IL-6）。正常的促發炎與抗發炎反應失衡 → 免疫失調性 (dysregulated) 宿主反應。全身性血管內皮活化 → 血管通透性增加（capillary leak）+
+  微血管血栓形成 + NO 介導的血管擴張 → 分布性休克。心肌抑制因子 → 敗血性心肌病變 → 心輸出量下降。組織氧輸送障礙（供給不足 + 利用障礙）→ 組織缺氧 → 乳酸酸中毒。凝血系統活化 + 抗凝機制耗竭（AT、Protein C
+  降低）→ DIC。若器官灌流持續不足 → MODS（腎衰竭、肝衰竭、ARDS、DIC、腦病變）。免疫麻痹 (immunoparalysis) 可在後期出現，增加繼發感染風險。
 clinicalSigns:
   early:
     - SIRS 表現（符合 ≥2 項標準）
@@ -93,22 +105,21 @@ clinicalSigns:
     - 心律不整
     - 低血糖（肝糖儲備耗竭 + 細菌消耗）
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: SIRS 標準評估
-      notes: "犬：體溫 >39.7°C 或 <37.8°C、HR >140、RR >30、WBC >19,500 或 <5,000 或 band >3%（≥2 項）。SIRS + 已知/疑似感染源 = 敗血症"
+      notes: 犬：體溫 >39.7°C 或 <37.8°C、HR >140、RR >30、WBC >19,500 或 <5,000 或 band >3%（≥2 項）。SIRS + 已知/疑似感染源 = 敗血症
     - name: CBC
-      notes: "白血球增多伴左移（桿狀核 >3%），或退化性左移（WBC 低 + 大量 band — 預後差）。毒性變化嗜中性球。血小板減少（DIC 消耗）"
+      notes: 白血球增多伴左移（桿狀核 >3%），或退化性左移（WBC 低 + 大量 band — 預後差）。毒性變化嗜中性球。血小板減少（DIC 消耗）
     - name: 生化/電解質
-      notes: "低血糖（重要！）。低白蛋白（capillary leak + 負急性期反應蛋白）。BUN/Creatinine 升高（腎損傷）。膽紅素升高（肝損傷/膽汁淤積）。電解質失衡"
+      notes: 低血糖（重要！）。低白蛋白（capillary leak + 負急性期反應蛋白）。BUN/Creatinine 升高（腎損傷）。膽紅素升高（肝損傷/膽汁淤積）。電解質失衡
     - name: 乳酸
-      notes: "升高反映組織灌流不足。>2.5 mmol/L 為異常。連續監測乳酸清除率比單次數值更有預後意義。6 小時內乳酸未降 >50% 為不良預後"
+      notes: 升高反映組織灌流不足。>2.5 mmol/L 為異常。連續監測乳酸清除率比單次數值更有預後意義。6 小時內乳酸未降 >50% 為不良預後
   imaging:
     - name: 胸腹腔 X 光
-      notes: "尋找感染來源。腹腔游離氣體（腸穿孔）、胸腔積液（膿胸）、肺浸潤（肺炎/ARDS）"
+      notes: 尋找感染來源。腹腔游離氣體（腸穿孔）、胸腔積液（膿胸）、肺浸潤（肺炎/ARDS）
     - name: 腹部超音波 (AFAST/TFAST)
-      notes: "腹腔積液、子宮異常、肝脾膿瘍、胰臟周圍炎症。AFAST 快速評估腹腔積液"
+      notes: 腹腔積液、子宮異常、肝脾膿瘍、胰臟周圍炎症。AFAST 快速評估腹腔積液
   additional:
     - 血液培養（抗生素前採集 — 2 套需氧 + 厭氧）
     - 凝血功能（PT/APTT、D-dimer、AT 活性、纖維蛋白原 — DIC 評估）
@@ -117,7 +128,6 @@ diagnosis:
     - 尿液分析與培養
     - 腹腔積液分析與培養（敗血性腹膜炎）
     - PCT (Procalcitonin — 研究中用於犬，尚未廣泛臨床應用)
-
 treatment:
   principles:
     - 早期目標導向治療 (Early Goal-Directed Therapy, EGDT)
@@ -127,22 +137,22 @@ treatment:
     - 器官支持治療
   medications:
     - name: IV 晶體液 (LRS 或 Plasmalyte)
-      dose: "犬：初始 bolus 10-20 mL/kg over 15-20 min，可重複至 60-80 mL/kg；貓：5-10 mL/kg bolus"
+      dose: 犬：初始 bolus 10-20 mL/kg over 15-20 min，可重複至 60-80 mL/kg；貓：5-10 mL/kg bolus
       notes: 第一時間積極容量復甦。監測灌流指標（乳酸、血壓、尿量、CRT）。過度輸液增加肺水腫/ARDS 風險 — 需反覆評估容量反應性
     - name: 廣效靜脈抗生素
-      dose: "經驗性三聯：Ampicillin-Sulbactam 30 mg/kg IV TID + Enrofloxacin 5-10 mg/kg IV SID + Metronidazole 10-15 mg/kg IV BID"
+      dose: 經驗性三聯：Ampicillin-Sulbactam 30 mg/kg IV TID + Enrofloxacin 5-10 mg/kg IV SID + Metronidazole 10-15 mg/kg IV BID
       notes: 血培養後 1 小時內給予。覆蓋 G(+)/G(-)/厭氧菌。每延遲 1 小時抗生素死亡率增加約 7%。48-72 小時後根據培養結果降階
     - name: Norepinephrine
-      dose: "0.1-1 μg/kg/min CRI"
+      dose: 0.1-1 μg/kg/min CRI
       notes: 敗血性休克首選升壓藥。用於充分輸液後仍低血壓者 (MAP <65 mmHg)。需中心靜脈管路（周邊外滲致組織壞死）
     - name: Vasopressin
-      dose: "0.5-5 mU/kg/min CRI"
+      dose: 0.5-5 mU/kg/min CRI
       notes: Norepinephrine 反應不佳時的第二線升壓藥。敗血症晚期內源性 vasopressin 耗竭
     - name: Dobutamine
-      dose: "2-10 μg/kg/min CRI"
+      dose: 2-10 μg/kg/min CRI
       notes: 敗血性心肌病變（心輸出量低、心肌收縮力差）時使用
     - name: Hydrocortisone
-      dose: "1-2 mg/kg IV，後 0.5-1 mg/kg IV q6-8h"
+      dose: 1-2 mg/kg IV，後 0.5-1 mg/kg IV q6-8h
       notes: 僅用於難治性敗血性休克（充分輸液 + 升壓藥仍低血壓）。不推薦常規使用類固醇
   general:
     - 感染源控制 — 手術清創/引流（腹膜炎 → 開腹探查、膿瘍引流、壞死組織清除）
@@ -153,38 +163,42 @@ treatment:
     - 疼痛管理（Fentanyl CRI 2-5 μg/kg/hr 或 Methadone）
     - 持續 ECG、血壓、SpO₂ 監測
     - 連續乳酸監測（每 2-6 小時，評估治療反應）
-
-emergencyNotes: 敗血症/敗血性休克的黃金治療時間為前 3-6 小時。處理：(1) 識別 SIRS + 疑似感染源；(2) 血培養 → 1 小時內給予廣效 IV 抗生素；(3) 積極容量復甦（初始 bolus + 評估反應 + 重複）；(4) MAP <65 mmHg 且充分輸液後 → Norepinephrine CRI；(5) 低血糖立即矯正；(6) 乳酸連續監測；(7) 儘速安排感染源控制手術；(8) DIC → FFP；(9) 入 ICU 持續監測。貓注意輸液量較犬保守（心臟負荷較敏感）。
-
-prognosis: 犬敗血症總死亡率約 20-68%，取決於感染源、併發症嚴重度與治療時效。敗血性休克死亡率約 50-70%。敗血性腹膜炎（尤其腸穿孔）死亡率最高（可達 50-80%）。MODS 受累器官數越多預後越差。乳酸清除率為重要預後指標 — 6 小時內下降 >50% 存活率較高。低血糖、低體溫、退化性左移、低白蛋白為不良預後因子。早期積極介入（抗生素 + 輸液 + 感染源控制）是改善預後的關鍵。
-
+emergencyNotes: >-
+  敗血症/敗血性休克的黃金治療時間為前 3-6 小時。處理：(1) 識別 SIRS + 疑似感染源；(2) 血培養 → 1 小時內給予廣效 IV 抗生素；(3) 積極容量復甦（初始 bolus + 評估反應 + 重複）；(4) MAP
+  <65 mmHg 且充分輸液後 → Norepinephrine CRI；(5) 低血糖立即矯正；(6) 乳酸連續監測；(7) 儘速安排感染源控制手術；(8) DIC → FFP；(9) 入 ICU
+  持續監測。貓注意輸液量較犬保守（心臟負荷較敏感）。
+prognosis: >-
+  犬敗血症總死亡率約 20-68%，取決於感染源、併發症嚴重度與治療時效。敗血性休克死亡率約 50-70%。敗血性腹膜炎（尤其腸穿孔）死亡率最高（可達 50-80%）。MODS 受累器官數越多預後越差。乳酸清除率為重要預後指標 — 6
+  小時內下降 >50% 存活率較高。低血糖、低體溫、退化性左移、低白蛋白為不良預後因子。早期積極介入（抗生素 + 輸液 + 感染源控制）是改善預後的關鍵。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
-    title: "Surviving sepsis in veterinary medicine: an evidence-based approach"
+    title: 'Surviving sepsis in veterinary medicine: an evidence-based approach'
     url: https://pubmed.ncbi.nlm.nih.gov/28493462/
     type: review
-    pmid: "28493462"
+    pmid: '28493462'
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: Outcome and prognostic indicators in dogs with septic peritonitis
     url: https://pubmed.ncbi.nlm.nih.gov/12892300/
     type: research
-    pmid: "12892300"
+    pmid: '12892300'
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
-    title: "SIRS criteria in veterinary patients: current concepts and future directions"
+    title: 'SIRS criteria in veterinary patients: current concepts and future directions'
     url: https://pubmed.ncbi.nlm.nih.gov/11542065/
     type: review
-    pmid: "11542065"
+    pmid: '11542065'
   - sourceOrg: JAMA
     title: International Consensus Criteria for Pediatric Sepsis and Septic Shock.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10900966/
     type: consensus
-    pmid: "38245889"
+    pmid: '38245889'
     relevance: primary
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
-    title: 2022 Update of the Consensus on the Rational Use of Antithrombotics and Thrombolytics in Veterinary Critical Care (CURATIVE) Domain 1- Defining populations at risk.
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
+    title: >-
+      2022 Update of the Consensus on the Rational Use of Antithrombotics and Thrombolytics in Veterinary Critical Care
+      (CURATIVE) Domain 1- Defining populations at risk.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9322658/
     type: consensus
-    pmid: "35499966"
+    pmid: '35499966'
     relevance: primary
 pubmedQueries:
   - query: '"sepsis" AND (dog OR canine) AND ("SIRS" OR "MODS" OR "septic shock" OR "prognosis")'
@@ -193,6 +207,64 @@ pubmedQueries:
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "EXL"
-  sectionTitle: "Viral Hemorrhagic Septicemia: Viral"
+  chapter: EXL
+  sectionTitle: 'Viral Hemorrhagic Septicemia: Viral'
   pdfPage: 1803
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: hypothermia-sign
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: oliguria-anuria
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: petechiae-ecchymoses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 敗血症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - dyspnoea 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: SIRS 標準評估
+          notes: 犬：體溫 >39.7°C 或 <37.8°C、HR >140、RR >30、WBC >19,500 或 <5,000 或 band >3%（≥2 項）。SIRS + 已知/疑似感染源 = 敗血症
+        - name: CBC
+          notes: 白血球增多伴左移（桿狀核 >3%），或退化性左移（WBC 低 + 大量 band — 預後差）。毒性變化嗜中性球。血小板減少（DIC 消耗）
+        - name: 生化/電解質
+          notes: 低血糖（重要！）。低白蛋白（capillary leak + 負急性期反應蛋白）。BUN/Creatinine 升高（腎損傷）。膽紅素升高（肝損傷/膽汁淤積）。電解質失衡
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 血液培養（抗生素前採集 — 2 套需氧 + 厭氧）
+        - 凝血功能（PT/APTT、D-dimer、AT 活性、纖維蛋白原 — DIC 評估）
+        - 血氣分析（代謝性酸中毒、乳酸酸中毒、氧合評估）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 早期目標導向治療 (Early Goal-Directed Therapy, EGDT)
+        - 感染源控制為核心（手術/引流 + 抗生素）
+        - 積極容量復甦（first 3-6 hours 最關鍵）
+ddxSource: auto-generated

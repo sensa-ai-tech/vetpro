@@ -1,0 +1,96 @@
+slug: keratitis
+nameEn: Keratitis
+nameZh: 角膜炎
+description: 角膜的發炎性疾病，依是否有上皮缺損分為潰瘍性角膜炎和非潰瘍性角膜炎。犬最常見的原因為乾眼症（KCS）和外傷；貓則以皰疹病毒感染為首要原因。未及時治療可導致角膜穿孔和永久性視力喪失。
+bodySystem: infectious
+species:
+  - speciesCommon: dog
+  - speciesCommon: cat
+etiology:
+  categories:
+    - name: Risk Factors
+      examples:
+        - 犬：乾眼症（KCS）、短頭犬種（眼球突出、瞬目不完全）、外傷
+        - 貓：皰疹病毒第一型（FHV-1，超過90%貓攜帶）
+        - 眼瞼異常（內翻、外翻、睫毛異位）
+        - 角膜暴露（面神經麻痺、眼球突出）
+clinicalSigns:
+  early:
+    - 眨眼頻繁或閉眼（疼痛）
+    - 流淚或黏液膿性分泌物
+    - 眼睛發紅
+    - 角膜外觀混濁或有白斑
+    - 光敏感
+  progressive:
+    - 角膜混濁（水腫或瘢痕）
+    - 角膜新生血管（表淺或深層）
+    - 螢光素染色陽性（潰瘍性）或陰性（非潰瘍性）
+    - 結膜充血
+    - 眼分泌物（漿液性至膿性）
+    - Schirmer淚液試驗可能偏低（KCS相關）
+diagnosis:
+  primaryTests:
+    - 螢光素染色（Fluorescein staining）
+    - Schirmer淚液試驗（STT，正常犬 >15 mm/min）
+    - 裂隙燈檢查（評估角膜各層）
+    - 眼壓測量（排除青光眼）
+  additional:
+    - 角膜細胞學刮片（感染性角膜炎）
+    - 細菌/真菌培養和藥敏試驗
+    - FHV-1 PCR（貓）
+    - 角膜共聚焦顯微鏡
+treatment:
+  principles:
+    - 潰瘍性：廣譜抗生素眼藥水（Tobramycin或Ofloxacin q4-6h）
+    - 止痛：Atropine 1% 眼藥水（睫狀體鬆弛、止痛）
+    - 溶解性潰瘍：自體血清眼藥水（抑制MMP）+ 緊急角膜移植
+    - 貓FHV-1：Famciclovir 40-90 mg/kg PO q8-12h
+  general:
+    - KCS：Cyclosporine 0.2% 或 Tacrolimus 0.02% 眼藥水q12h（終身）
+    - 免疫性角膜炎：Cyclosporine + 短期類固醇（確認無潰瘍後）
+    - 人工淚液補充（KCS）
+    - 矯正眼瞼異常（手術）
+prognosis: >-
+  表淺性潰瘍在適當治療下通常5-7天癒合，預後良好。深層或溶解性潰瘍需積極治療，可能導致角膜穿孔和眼球喪失。KCS需終身管理但控制良好時視力可維持。貓FHV-1角膜炎容易復發（壓力誘發），但多數發作可控制。免疫性角膜炎需長期治療但預後合理。
+diagnosticAlgorithm:
+  title: 角膜炎 診斷流程
+  steps:
+    - step: 1
+      action: 螢光素染色
+      details: 評估角膜上皮完整性，區分潰瘍性vs非潰瘍性
+      findings:
+        - 染色陽性=潰瘍性
+        - 染色陰性=非潰瘍性
+    - step: 2
+      action: 淚液試驗
+      details: Schirmer試驗測量淚液產量
+      findings:
+        - <15 mm/min=KCS
+        - 正常>15 mm/min
+    - step: 3
+      action: 裂隙燈+眼壓
+      details: 評估角膜深度、新生血管類型，測量眼壓
+      findings:
+        - 新生血管型態提示急性vs慢性
+        - 眼壓排除青光眼
+    - step: 4
+      action: 病因鑑別
+      details: 根據種別、染色結果和STT確定治療方案
+      findings:
+        - 犬KCS→免疫調節治療
+        - 貓FHV-1→抗病毒治療
+clinicalPearls:
+  - 角膜有螢光素著色=潰瘍——禁用類固醇眼藥水（會抑制癒合並促進感染和穿孔）
+  - 貓的角膜炎——假設是疱疹病毒（FHV-1）直到證明不是，因為>90%的貓攜帶此病毒
+  - Schirmer試驗<15 mm/min（犬）= KCS——這是犬角膜炎最常見的潛在原因
+monitoringItems:
+  - 螢光素複染（潰瘍：q3-5天直至癒合）
+  - Schirmer試驗（KCS：q1-3月評估治療反應）
+  - 裂隙燈追蹤（角膜透明度和新生血管變化）
+  - 眼壓定期測量（特別是前葡萄膜炎繼發者）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: common
+ddxSource: book-only

@@ -3,11 +3,11 @@ nameEn: Duodenal Ulcer
 nameZh: 十二指腸潰瘍
 bodySystem: gastrointestinal
 description: 十二指腸黏膜糜爛或潰瘍,可能因 NSAIDs、類固醇、胰臟炎或腫瘤引起。症狀包含嘔吐、腹痛及黑便。
-
 aliases:
-  - { alias: 十二指腸糜爛, language: zh }
-  - { alias: Duodenal Erosion, language: en }
-
+  - alias: 十二指腸糜爛
+    language: zh
+  - alias: Duodenal Erosion
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 可能因肥大細胞瘤或腎衰竭
-
 etiology:
   categories:
     - name: 藥物性
@@ -29,7 +28,6 @@ etiology:
         - 肥大細胞瘤
         - 胰臟炎
         - 腎衰竭
-
 clinicalSigns:
   early:
     - 嘔吐
@@ -38,59 +36,87 @@ clinicalSigns:
     - 黑便
     - 貧血
     - 穿孔 (嚴重時)
-
 diagnosis:
   primaryTests:
     - name: 內視鏡檢查
-      notes: "直視潰瘍"
+      notes: 直視潰瘍
     - name: 血液檢查
-      notes: "貧血、低蛋白血症"
+      notes: 貧血、低蛋白血症
     - name: 腹部超音波
-      notes: "評估腸壁增厚"
+      notes: 評估腸壁增厚
   differentialDiagnoses:
     - 胃潰瘍
     - 腸道異物
     - 發炎性腸病
-
 treatment:
   medical:
     - Omeprazole 0.5-1 mg/kg PO q12-24h
     - Sucralfate 0.5-1 g/dog PO q8-12h
     - 停用 NSAIDs 或類固醇
     - 治療原發病因
-
 prognosis:
-  general: "預後良好至謹慎;停用致病藥物及治療原發病因後多數改善;穿孔預後不良"
-
+  general: 預後良好至謹慎;停用致病藥物及治療原發病因後多數改善;穿孔預後不良
 prevention:
   - 謹慎使用 NSAIDs 及類固醇
   - 併用 PPI 保護胃腸
   - 早期診斷及治療原發疾病
-
-
 guidelineRefs:
   - sourceOrg: Pharmaceuticals (Basel, Switzerland)
-    title: "From Selye's and Szabo's Cysteamine-Duodenal Ulcer in Rats to Dopamine in the Stomach: Therapy Significance and Possibilities."
+    title: >-
+      From Selye's and Szabo's Cysteamine-Duodenal Ulcer in Rats to Dopamine in the Stomach: Therapy Significance and
+      Possibilities.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10748240/
     type: review
-    pmid: "38139825"
-  - sourceOrg: "Evidence-based complementary and alternative medicine : eCAM"
-    title: "Antiulcerogenic Activity of Li-Zhong Decoction on Duodenal Ulcers Induced by Indomethacin in Rats: Involvement of TLR-2/MyD88 Signaling Pathway."
+    pmid: '38139825'
+  - sourceOrg: 'Evidence-based complementary and alternative medicine : eCAM'
+    title: >-
+      Antiulcerogenic Activity of Li-Zhong Decoction on Duodenal Ulcers Induced by Indomethacin in Rats: Involvement of
+      TLR-2/MyD88 Signaling Pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6996687/
     type: research
-    pmid: "32063985"
+    pmid: '32063985'
   - sourceOrg: Pharmaceuticals (Basel, Switzerland)
-    title: (-)-Fenchone Prevents Cysteamine-Induced Duodenal Ulcers and Accelerates Healing Promoting Re-Epithelialization of Gastric Ulcers in Rats via Antioxidant and Immunomodulatory Mechanisms.
+    title: >-
+      (-)-Fenchone Prevents Cysteamine-Induced Duodenal Ulcers and Accelerates Healing Promoting Re-Epithelialization of
+      Gastric Ulcers in Rats via Antioxidant and Immunomodulatory Mechanisms.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11124074/
     type: research
-    pmid: "38794211"
-  - sourceOrg: "Ulusal travma ve acil cerrahi dergisi = Turkish journal of trauma &amp; emergency surgery : TJTES"
-    title: "Comparison of 'primary repair' and 'placing a drain without repair' methods in duodenum perforations."
+    pmid: '38794211'
+  - sourceOrg: 'Ulusal travma ve acil cerrahi dergisi = Turkish journal of trauma &amp; emergency surgery : TJTES'
+    title: Comparison of 'primary repair' and 'placing a drain without repair' methods in duodenum perforations.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10315930/
     type: research
-    pmid: "37278083"
-  - sourceOrg: "Journal of clinical and diagnostic research : JCDR"
+    pmid: '37278083'
+  - sourceOrg: 'Journal of clinical and diagnostic research : JCDR'
     title: Antiulcer Activity of Ethanolic Extract of Salvadora indica (W.) Leaves on Albino Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5071962/
     type: research
-    pmid: "27790462"
+    pmid: '27790462'
+associatedSymptoms:
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: melaena
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+diagnosticAlgorithm:
+  title: 十二指腸潰瘍 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - vomiting 相關症狀
+        - melaena 相關症狀
+        - abdominal-pain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 內視鏡檢查
+          notes: 直視潰瘍
+        - name: 血液檢查
+          notes: 貧血、低蛋白血症
+        - name: 腹部超音波
+          notes: 評估腸壁增厚
+ddxSource: auto-generated

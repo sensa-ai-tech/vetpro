@@ -3,18 +3,18 @@ nameEn: Maine Coon Hip Dysplasia
 nameZh: 緬因貓髖關節發育不良
 bodySystem: orthopedic
 description: 緬因貓為貓中罹患髖關節發育不良高風險品種,與大型體型有關。髖臼及股骨頭發育異常導致關節不穩定,逐漸發展為退化性關節炎。
-
 aliases:
-  - { alias: 髖關節發育不良, language: zh }
-  - { alias: Hip Dysplasia, language: en }
-  - { alias: CHD, language: en }
-
+  - alias: 髖關節發育不良
+    language: zh
+  - alias: Hip Dysplasia
+    language: en
+  - alias: CHD
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 緬因貓、波斯貓等大型品種,多基因遺傳
-
 etiology:
   categories:
     - name: 遺傳性骨骼發育異常
@@ -23,7 +23,6 @@ etiology:
         - 髖臼發育不全
         - 股骨頭球形度異常
         - 關節鬆弛
-
 clinicalSigns:
   early:
     - 活動力下降
@@ -34,18 +33,16 @@ clinicalSigns:
     - 後肢肌肉萎縮
     - 疼痛、不願活動
     - 理毛困難
-
 diagnosis:
   primaryTests:
     - name: 髖關節X光檢查
-      notes: "髖臼淺平、股骨頭覆蓋不全、關節間隙增寬、骨關節炎變化"
+      notes: 髖臼淺平、股骨頭覆蓋不全、關節間隙增寬、骨關節炎變化
     - name: OFA或PennHIP評估
-      notes: "量化髖關節鬆弛度"
+      notes: 量化髖關節鬆弛度
   differentialDiagnoses:
     - 骨關節炎(其他原因)
     - 髕骨脫位
     - 腰薦椎病變
-
 treatment:
   medical:
     - 體重控制
@@ -53,11 +50,37 @@ treatment:
     - 關節保健品(Glucosamine、Chondroitin)
     - 物理復健
     - 股骨頭頸切除術(FHO,嚴重病例)
-
 prognosis:
-  general: "輕中度透過體重控制及藥物可維持良好生活品質。嚴重病例手術後預後尚可。早期診斷及管理關鍵。"
-
+  general: 輕中度透過體重控制及藥物可維持良好生活品質。嚴重病例手術後預後尚可。早期診斷及管理關鍵。
 prevention:
   - 繁殖前髖關節X光篩檢
   - 輕度以上不應繁殖
   - 維持健康體重
+associatedSymptoms:
+  - symptomId: weakness
+    frequency: common
+  - symptomId: failure-to-grow
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 緬因貓髖關節發育不良 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weakness 相關症狀
+        - failure-to-grow 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 髖關節X光檢查
+          notes: 髖臼淺平、股骨頭覆蓋不全、關節間隙增寬、骨關節炎變化
+        - name: OFA或PennHIP評估
+          notes: 量化髖關節鬆弛度
+ddxSource: auto-generated

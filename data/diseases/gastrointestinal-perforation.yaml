@@ -3,11 +3,11 @@ nameEn: Gastrointestinal Perforation
 nameZh: 胃腸道穿孔
 bodySystem: gastrointestinal
 description: 胃腸道壁破裂,內容物漏至腹腔引起敗血性腹膜炎。為緊急狀況,需立即手術,死亡率高。
-
 aliases:
-  - { alias: 消化道穿孔, language: zh }
-  - { alias: GI Rupture, language: en }
-
+  - alias: 消化道穿孔
+    language: zh
+  - alias: GI Rupture
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 常因異物、線性異物、潰瘍
-
 etiology:
   categories:
     - name: 異物性
@@ -29,7 +28,6 @@ etiology:
     - name: 醫源性
       examples:
         - 內視鏡檢查、手術
-
 clinicalSigns:
   early:
     - 急性腹痛
@@ -39,20 +37,18 @@ clinicalSigns:
     - 發燒
     - 休克
     - 腹膜炎徵象
-
 diagnosis:
   primaryTests:
     - name: 腹部 X 光
-      notes: "氣腹 (free air)、腹腔積液"
+      notes: 氣腹 (free air)、腹腔積液
     - name: 腹水穿刺分析
-      notes: "敗血性滲出液、細菌"
+      notes: 敗血性滲出液、細菌
     - name: 探查性開腹
-      notes: "確診及治療"
+      notes: 確診及治療
   differentialDiagnoses:
     - 急性腹膜炎其他原因
     - 胰臟炎
     - 腸套疊
-
 treatment:
   medical:
     - 緊急外科修補或切除
@@ -60,39 +56,71 @@ treatment:
     - 積極補液及電解質矯正
     - 疼痛控制
     - 腹腔沖洗
-
 prognosis:
-  general: "預後不良;死亡率 30-50%;早期診斷及手術可能改善預後"
-
+  general: 預後不良;死亡率 30-50%;早期診斷及手術可能改善預後
 prevention:
   - 避免餵食骨頭或尖銳物
   - 謹慎使用 NSAIDs
   - 早期診斷及治療潰瘍或異物
-
-
 guidelineRefs:
   - sourceOrg: Veterinary medicine and science
-    title: "Pathogenesis, Surgical Treatment and Postoperative Outcome of Rabbits (Oryctolagus cuniculus) With Intraabdominal Abscess: 12 Cases (2017-2023)."
+    title: >-
+      Pathogenesis, Surgical Treatment and Postoperative Outcome of Rabbits (Oryctolagus cuniculus) With Intraabdominal
+      Abscess: 12 Cases (2017-2023).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12244258/
     type: research
-    pmid: "40638540"
+    pmid: '40638540'
   - sourceOrg: International journal of immunopathology and pharmacology
-    title: Blocking leukotriene receptors improve experimentally induced gastric ulcers in rats by inhibiting inflammation and apoptosis.
+    title: >-
+      Blocking leukotriene receptors improve experimentally induced gastric ulcers in rats by inhibiting inflammation
+      and apoptosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12182629/
     type: research
-    pmid: "40542712"
+    pmid: '40542712'
   - sourceOrg: DEN open
-    title: Preclinical Evaluation of the Safety of the Dedicated Gel for Gel Immersion Endoscopy With Gastrointestinal Perforation and Peritoneal Leakage.
+    title: >-
+      Preclinical Evaluation of the Safety of the Dedicated Gel for Gel Immersion Endoscopy With Gastrointestinal
+      Perforation and Peritoneal Leakage.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12684772/
     type: research
-    pmid: "41368650"
+    pmid: '41368650'
   - sourceOrg: Biomedicines
     title: Regeneration of the Gastrointestinal Tract After Using a Small Intestine Submucosa Patch-A Rat Model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12561014/
     type: research
-    pmid: "41153680"
+    pmid: '41153680'
   - sourceOrg: Immunity, inflammation and disease
-    title: "The Improvement of Experimentally Induced Gastric Ulcers in Rats by Inhibiting Vascularization Through the Blocking of the TNF-&#x3b1; Type 1 Receptor."
+    title: >-
+      The Improvement of Experimentally Induced Gastric Ulcers in Rats by Inhibiting Vascularization Through the
+      Blocking of the TNF-&#x3b1; Type 1 Receptor.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12521869/
     type: research
-    pmid: "41090239"
+    pmid: '41090239'
+associatedSymptoms:
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+diagnosticAlgorithm:
+  title: 胃腸道穿孔 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - hyperthermia 相關症狀
+        - vomiting 相關症狀
+        - abdominal-pain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部 X 光
+          notes: 氣腹 (free air)、腹腔積液
+        - name: 腹水穿刺分析
+          notes: 敗血性滲出液、細菌
+        - name: 探查性開腹
+          notes: 確診及治療
+ddxSource: auto-generated

@@ -3,11 +3,11 @@ nameEn: High Output Heart Failure
 nameZh: 高輸出量心臟衰竭
 bodySystem: cardiac
 description: 心臟輸出量正常或增加但仍無法滿足組織代謝需求，常見於貧血、甲狀腺功能亢進或動靜脈廔管。心臟結構可能正常但負荷過重。
-
 aliases:
-  - { alias: 高心輸出量衰竭, language: zh }
-  - { alias: High Cardiac Output Failure, language: en }
-
+  - alias: 高心輸出量衰竭
+    language: zh
+  - alias: High Cardiac Output Failure
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 甲狀腺功能亢進為主要原因
-
 etiology:
   categories:
     - name: 內分泌疾病
@@ -29,7 +28,6 @@ etiology:
     - name: 血管異常
       examples:
         - 動靜脈廔管
-
 clinicalSigns:
   early:
     - 心跳過速
@@ -40,62 +38,98 @@ clinicalSigns:
     - 虛弱
     - 心雜音
     - 脈搏跳動強烈
-
 diagnosis:
   primaryTests:
     - name: 全血計數
-      notes: "評估貧血程度"
+      notes: 評估貧血程度
     - name: 甲狀腺功能檢查
-      notes: "T4, fT4 (貓)"
+      notes: T4, fT4 (貓)
     - name: 心臟超音波
-      notes: "心臟結構可能正常，但心輸出量增加"
+      notes: 心臟結構可能正常，但心輸出量增加
   differentialDiagnoses:
     - 原發性心肌病變
     - 瓣膜性心臟病
     - 敗血症
-
 treatment:
   medical:
     - 治療原發病因 (輸血、甲狀腺藥物、修補廔管)
     - 支持性照護
     - 必要時給予利尿劑 (小心使用，避免惡化貧血)
-
 prognosis:
-  general: "取決於原發病因；貧血或甲狀腺功能亢進若能治療預後良好；廔管需外科修補"
-
+  general: 取決於原發病因；貧血或甲狀腺功能亢進若能治療預後良好；廔管需外科修補
 prevention:
   - 定期健康檢查 (老年貓甲狀腺篩檢)
   - 早期診斷及治療貧血或內分泌疾病
-
-
 guidelineRefs:
   - sourceOrg: Basic research in cardiology
-    title: Peripheral chemoreceptors sustain central chemoreflex potentiation and cardiorespiratory abnormalities in high-output heart failure.
+    title: >-
+      Peripheral chemoreceptors sustain central chemoreflex potentiation and cardiorespiratory abnormalities in
+      high-output heart failure.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12804341/
     type: research
-    pmid: "41449201"
+    pmid: '41449201'
     relevance: supporting
-  - sourceOrg: "Naunyn-Schmiedeberg's archives of pharmacology"
-    title: The treatment with sGC stimulator improves survival of hypertensive rats in response to volume-overload induced by aorto-caval fistula.
+  - sourceOrg: Naunyn-Schmiedeberg's archives of pharmacology
+    title: >-
+      The treatment with sGC stimulator improves survival of hypertensive rats in response to volume-overload induced by
+      aorto-caval fistula.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10643302/
     type: research
-    pmid: "37338578"
+    pmid: '37338578'
     relevance: supporting
   - sourceOrg: Scientific reports
-    title: AT1 receptor blocker, but not an ACE inhibitor, prevents kidneys from hypoperfusion during congestive heart failure in normotensive and hypertensive rats.
+    title: >-
+      AT1 receptor blocker, but not an ACE inhibitor, prevents kidneys from hypoperfusion during congestive heart
+      failure in normotensive and hypertensive rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7896062/
     type: research
-    pmid: "33608612"
+    pmid: '33608612'
     relevance: supporting
   - sourceOrg: Biomedicines
-    title: "Effects of Renal Denervation on the Enhanced Renal Vascular Responsiveness to Angiotensin II in High-Output Heart Failure: Angiotensin II Receptor Binding Assessment and Functional Studies in Ren-2 Transgenic Hypertensive Rats."
+    title: >-
+      Effects of Renal Denervation on the Enhanced Renal Vascular Responsiveness to Angiotensin II in High-Output Heart
+      Failure: Angiotensin II Receptor Binding Assessment and Functional Studies in Ren-2 Transgenic Hypertensive Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8698780/
     type: research
-    pmid: "34944619"
+    pmid: '34944619'
     relevance: supporting
   - sourceOrg: Scientific reports
-    title: Cardiac remodeling and arrhythmogenesis are ameliorated by administration of Cx43 mimetic peptide Gap27 in heart failure rats.
+    title: >-
+      Cardiac remodeling and arrhythmogenesis are ameliorated by administration of Cx43 mimetic peptide Gap27 in heart
+      failure rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7181683/
     type: research
-    pmid: "32327677"
+    pmid: '32327677'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: heart-murmur
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 高輸出量心臟衰竭 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - pallor-cyanosis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 全血計數
+          notes: 評估貧血程度
+        - name: 甲狀腺功能檢查
+          notes: T4, fT4 (貓)
+        - name: 心臟超音波
+          notes: 心臟結構可能正常，但心輸出量增加
+ddxSource: auto-generated

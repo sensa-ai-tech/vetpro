@@ -3,12 +3,13 @@ nameEn: Enteral Feeding Protocol
 nameZh: 腸道營養餵食計畫
 bodySystem: metabolic
 description: 腸道營養支持的標準流程，包含熱量計算、餵食速率、食物選擇及併發症預防。早期腸道營養可改善預後。
-
 aliases:
-  - { alias: 管灌營養計畫, language: zh }
-  - { alias: Tube Feeding Protocol, language: en }
-  - { alias: Enteral Nutrition Support, language: en }
-
+  - alias: 管灌營養計畫
+    language: zh
+  - alias: Tube Feeding Protocol
+    language: en
+  - alias: Enteral Nutrition Support
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 脂肪肝預防及治療關鍵
-
 etiology:
   categories:
     - name: 腸道營養優點
@@ -34,7 +34,6 @@ etiology:
         - 無法自主進食
         - 營養不良
         - 重症疾病
-
 clinicalSigns:
   early:
     - 成功營養支持：體重穩定
@@ -42,16 +41,14 @@ clinicalSigns:
   progressive:
     - 疾病康復、恢復自主進食
     - 併發症(若發生)：嘔吐、腹瀉、吸入性肺炎
-
 diagnosis:
   primaryTests:
     - name: 營養評估
-      notes: "體重、BCS、白蛋白、總蛋白"
+      notes: 體重、BCS、白蛋白、總蛋白
     - name: 熱量需求計算
-      notes: "RER = 70 × (體重kg)^0.75"
+      notes: RER = 70 × (體重kg)^0.75
   differentialDiagnoses:
     - 需腸道營養支持的各種疾病
-
 treatment:
   medical:
     - 熱量計算
@@ -77,12 +74,33 @@ treatment:
     - 確認管路位置
     - 戴頭套防止移除
     - 監測體重、營養指標
-
 prognosis:
-  general: "早期腸道營養可顯著改善重症動物預後；優於靜脈營養"
-
+  general: 早期腸道營養可顯著改善重症動物預後；優於靜脈營養
 prevention:
   - 及早開始腸道營養
   - 逐步增加餵食量
   - 適當食物選擇
   - 預防併發症
+associatedSymptoms:
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 腸道營養餵食計畫 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - vomiting 相關症狀
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 營養評估
+          notes: 體重、BCS、白蛋白、總蛋白
+        - name: 熱量需求計算
+          notes: RER = 70 × (體重kg)^0.75
+ddxSource: auto-generated

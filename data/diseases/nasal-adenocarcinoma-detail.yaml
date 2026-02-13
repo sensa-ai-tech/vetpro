@@ -3,13 +3,15 @@ nameEn: Nasal Adenocarcinoma Detail
 nameZh: 鼻腔腺癌詳述
 bodySystem: oncology
 description: 犬鼻腔最常見的惡性腫瘤類型，起源於鼻腔黏膜腺上皮。長鼻型犬種好發。放射治療為主要治療手段，可顯著延長生存時間。
-
 aliases:
-  - { alias: 鼻腺癌, language: zh }
-  - { alias: 鼻腔惡性腫瘤, language: zh }
-  - { alias: Nasal Adenocarcinoma, language: en }
-  - { alias: Sinonasal Adenocarcinoma, language: en }
-
+  - alias: 鼻腺癌
+    language: zh
+  - alias: 鼻腔惡性腫瘤
+    language: zh
+  - alias: Nasal Adenocarcinoma
+    language: en
+  - alias: Sinonasal Adenocarcinoma
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓鼻腔腫瘤中淋巴瘤最常見，腺癌為第二常見。貓鼻腔腺癌生物學行為與犬相似。
-
 etiology:
   categories:
     - name: 腫瘤特性
@@ -33,7 +34,6 @@ etiology:
         - 城市環境（空氣污染）
         - 二手菸暴露
         - 化石燃料燃燒產物
-
 clinicalSigns:
   early:
     - 單側鼻出血 (epistaxis)
@@ -46,22 +46,20 @@ clinicalSigns:
     - 呼吸困難（鼻塞）
     - 眼球突出（腫瘤侵犯眼眶）
     - 神經症狀（腫瘤穿過篩板侵入腦部）
-
 diagnosis:
   primaryTests:
     - name: CT 或 MRI
-      notes: "CT 為首選影像學檢查，評估腫瘤範圍、骨骼破壞程度及篩板完整性。MRI 更適合評估軟組織侵犯及顱內延伸"
+      notes: CT 為首選影像學檢查，評估腫瘤範圍、骨骼破壞程度及篩板完整性。MRI 更適合評估軟組織侵犯及顱內延伸
     - name: 鼻腔鏡檢查及切片
-      notes: "直視下取得腫瘤組織進行病理確認。需注意出血風險"
+      notes: 直視下取得腫瘤組織進行病理確認。需注意出血風險
     - name: 胸腔 X 光
-      notes: "篩檢肺轉移（確診時約 10-15% 已有肺轉移）"
+      notes: 篩檢肺轉移（確診時約 10-15% 已有肺轉移）
   differentialDiagnoses:
     - 鼻腔淋巴瘤
     - 鼻腔軟骨肉瘤
     - 鼻曲黴菌感染
     - 異物性鼻炎
     - 牙根膿瘍
-
 treatment:
   medical:
     - 放射治療為標準治療（大分割或定位放射治療）
@@ -73,25 +71,62 @@ treatment:
     - 單純手術效果有限（中位生存時間僅 3-6 個月）
     - CT 引導下鼻甲骨切除可作為減積手術
     - 手術通常需合併放射治療
-
 prognosis:
-  general: "單純支持治療中位生存時間約 3-5 個月。放射治療可延長至 12-18 個月。合併放療與化療可能達 18-24 個月。篩板已穿透者預後較差。早期治療效果優於晚期。"
-
+  general: 單純支持治療中位生存時間約 3-5 個月。放射治療可延長至 12-18 個月。合併放療與化療可能達 18-24 個月。篩板已穿透者預後較差。早期治療效果優於晚期。
 prevention:
   - 單側鼻出血或慢性鼻分泌物應及早進行影像學檢查
   - 減少二手菸及空氣污染物暴露
-
-
 guidelineRefs:
   - sourceOrg: Journal of toxicologic pathology
-    title: "Pathogenesis of chemically induced nasal cavity tumors in rodents: contribution to adverse outcome pathway."
+    title: 'Pathogenesis of chemically induced nasal cavity tumors in rodents: contribution to adverse outcome pathway.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10811384/
     type: review
-    pmid: "38283373"
+    pmid: '38283373'
     relevance: primary
   - sourceOrg: Virus genes
     title: Enzootic nasal tumor virus type 2 envelope of goats acts as a retroviral oncogene in cell transformation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/1790125/
     type: research
-    pmid: "33151445"
+    pmid: '33151445'
     relevance: supporting
+diagnosticAlgorithm:
+  title: 鼻腔腺癌 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估慢性單側鼻出血、鼻分泌物和打噴嚏，注意面部變形等晚期表現
+      findings:
+        - 慢性單側鼻出血或黏膿性分泌物
+        - 面部對稱性喪失或腫脹
+        - 打噴嚏和呼吸困難
+    - step: 2
+      action: 影像學檢查
+      details: 進行鼻腔CT評估腫瘤範圍、骨骼破壞和顱內延伸
+      findings:
+        - CT顯示鼻腔內軟組織腫塊
+        - 鼻甲骨破壞
+        - 評估篩板完整性和顱內侵犯
+    - step: 3
+      action: 鼻腔鏡活檢確診
+      details: 進行鼻腔鏡檢查和活檢送組織病理學確診
+      findings:
+        - 鼻腔鏡見腫瘤組織
+        - 組織病理學確認腺癌類型
+        - 評估區域淋巴結和遠端轉移
+clinicalPearls:
+  - 單側鼻出血在中老年長鼻型犬種應高度懷疑鼻腔腫瘤，尤其是對抗生素治療無反應時
+  - CT是評估腫瘤範圍和制定放射治療計畫的金標準影像學檢查
+  - 鼻腔淋巴瘤在貓中與腺癌同樣常見，但治療方式和預後截然不同，組織學確診極為重要
+  - 環境因素（二手菸、都市污染）可能增加長鼻型犬的鼻腔腫瘤風險
+monitoringItems:
+  - 放射治療期間每週評估急性放射反應（口腔黏膜炎、皮膚反應）
+  - 治療後每2-3個月進行CT追蹤評估腫瘤反應
+  - 定期胸腔X光檢查監測肺轉移
+  - 監測鼻分泌物性質和鼻出血頻率
+  - 評估食慾、體重及生活品質
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: common
+ddxSource: book

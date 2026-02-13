@@ -3,12 +3,13 @@ nameEn: 5-Fluorouracil Toxicosis
 nameZh: 5-氟尿嘧啶中毒
 bodySystem: toxicology
 description: 5-Fluorouracil (5-FU) 為人類用抗癌藥物，亦用於外用乳膏治療日光性角化症與皮膚癌。犬對 5-FU 極度敏感，極少量即可致命。常見暴露途徑為犬誤食飼主外用 5-FU 乳膏（Efudex）。貓敏感度較犬低但仍可中毒。
-
 aliases:
-  - { alias: 氟尿嘧啶中毒, language: zh }
-  - { alias: 5-FU Toxicosis, language: en }
-  - { alias: Fluorouracil Poisoning, language: en }
-
+  - alias: 氟尿嘧啶中毒
+    language: zh
+  - alias: 5-FU Toxicosis
+    language: en
+  - alias: Fluorouracil Poisoning
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓較犬耐受但仍可中毒。暴露來源與犬類似。
-
 etiology:
   categories:
     - name: 毒性機制
@@ -30,7 +30,6 @@ etiology:
         - 人用外用乳膏（Efudex 5%、Fluoroplex）
         - 人用注射劑
         - 人用口服劑型
-
 clinicalSigns:
   early:
     - 嘔吐（1-6 小時內）
@@ -43,7 +42,6 @@ clinicalSigns:
     - 敗血症
     - 多器官衰竭
     - 死亡（可在 24 小時內）
-
 diagnosis:
   primaryTests:
     - name: 暴露史
@@ -54,7 +52,6 @@ diagnosis:
     - CBC（骨髓抑制追蹤，第 3-5 天最低點）
     - 生化（肝腎功能）
     - 凝血功能
-
 treatment:
   principles:
     - 立即去汙染
@@ -68,9 +65,53 @@ treatment:
     - 止吐（maropitant）
     - 骨髓抑制期：預防性抗生素、G-CSF 考慮
     - 住院密切監測 72 小時以上
-
 prognosis: 犬 5-FU 中毒預後極差，致死率極高（>50%）。攝入大量者即使積極治療仍常致命。存活者需度過骨髓抑制期（5-7 天）。早期催吐與癲癇控制為改善預後的關鍵。預防（妥善存放 5-FU 製劑）最為重要。
-
 pubmedQueries:
   - query: '"5-fluorouracil" AND (toxicosis OR poisoning) AND (veterinary OR canine OR feline)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: haematochezia
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 5-氟尿嘧啶中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - ptyalism 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 暴露史
+          notes: 確認接觸 5-FU 製劑。保留包裝確認劑量
+        - name: 臨床表現
+          notes: 急性嘔吐 + 癲癇 + 暴露史高度提示
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC（骨髓抑制追蹤，第 3-5 天最低點）
+        - 生化（肝腎功能）
+        - 凝血功能
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 立即去汙染
+        - 積極控制癲癇
+        - 骨髓抑制期支持療法
+ddxSource: auto-generated

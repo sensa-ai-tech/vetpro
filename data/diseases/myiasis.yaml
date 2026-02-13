@@ -2,15 +2,20 @@ slug: myiasis
 nameEn: Myiasis
 nameZh: 蠅蛆病
 bodySystem: dermatology
-description: 蠅蛆病 (myiasis) 為蠅類幼蟲（蛆）侵入動物活體組織的感染。犬貓常見的為傷口蛆病 (wound myiasis)，由麗蠅 (Calliphoridae) 或綠蠅 (Lucilia spp.) 產卵於傷口或潮濕皮膚引起。好發於行動不便、外傷或被毛潮濕的動物。
-
+description: >-
+  蠅蛆病 (myiasis) 為蠅類幼蟲（蛆）侵入動物活體組織的感染。犬貓常見的為傷口蛆病 (wound myiasis)，由麗蠅 (Calliphoridae) 或綠蠅 (Lucilia spp.)
+  產卵於傷口或潮濕皮膚引起。好發於行動不便、外傷或被毛潮濕的動物。
 aliases:
-  - { alias: 蛆蟲感染, language: zh }
-  - { alias: 傷口蛆病, language: zh }
-  - { alias: Fly Strike, language: en }
-  - { alias: Wound Myiasis, language: en }
-  - { alias: Maggot Infestation, language: en }
-
+  - alias: 蛆蟲感染
+    language: zh
+  - alias: 傷口蛆病
+    language: zh
+  - alias: Fly Strike
+    language: en
+  - alias: Wound Myiasis
+    language: en
+  - alias: Maggot Infestation
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -18,7 +23,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓蠅蛆病類似犬。老年貓、外傷貓及失禁貓風險高。肛周與外傷部位為好發處。
-
 etiology:
   categories:
     - name: 病原蠅種
@@ -34,7 +38,6 @@ etiology:
         - 行動不便（癱瘓、骨折）
         - 潮濕被毛
         - 溫暖季節
-
 clinicalSigns:
   early:
     - 傷口或潮濕皮膚區域可見蠅卵或小蛆
@@ -47,7 +50,6 @@ clinicalSigns:
     - 疼痛
     - 系統性毒血症（發燒、休克）
     - 敗血症
-
 diagnosis:
   primaryTests:
     - name: 臨床檢查
@@ -57,7 +59,6 @@ diagnosis:
   additional:
     - CBC 與生化（感染嚴重度評估）
     - 傷口培養（繼發細菌感染）
-
 treatment:
   principles:
     - 完整移除所有蛆蟲
@@ -74,36 +75,68 @@ treatment:
     - IV 輸液（毒血症/休克時）
     - Ivermectin 0.2 mg/kg SC 可殺殘留幼蟲
     - 預防：保持被毛乾燥清潔、傷口覆蓋、驅蠅措施
-
 prognosis: 輕度蠅蛆病（表淺、早期發現）清創後預後良好。嚴重廣泛組織壞死或已發展敗血症者預後較差。行動不便動物需持續預防照護以避免復發。
-
-
 guidelineRefs:
   - sourceOrg: International journal for parasitology. Parasites and wildlife
-    title: "Parasites of reptiles in Iran (1922-2023): A literature review."
+    title: 'Parasites of reptiles in Iran (1922-2023): A literature review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11422157/
     type: review
-    pmid: "39323908"
+    pmid: '39323908'
   - sourceOrg: Toxins
-    title: Behavioral, Physiological, Demographic and Ecological Impacts of Hematophagous and Endoparasitic Insects on an Arctic Ungulate.
+    title: >-
+      Behavioral, Physiological, Demographic and Ecological Impacts of Hematophagous and Endoparasitic Insects on an
+      Arctic Ungulate.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7290954/
     type: review
-    pmid: "32443701"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "An Update on Cephenemyiosis in the European Roe Deer: Emergent Myiasis in Spain."
+    pmid: '32443701'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'An Update on Cephenemyiosis in the European Roe Deer: Emergent Myiasis in Spain.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8697868/
     type: review
-    pmid: "34944159"
+    pmid: '34944159'
   - sourceOrg: PLoS neglected tropical diseases
-    title: "Human Chrysomya bezziana myiasis: A systematic review."
+    title: 'Human Chrysomya bezziana myiasis: A systematic review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6821133/
     type: review
-    pmid: "31618203"
-  - sourceOrg: "Parasites &amp; vectors"
-    title: "Myiasis in domestic cats: a global review."
+    pmid: '31618203'
+  - sourceOrg: Parasites &amp; vectors
+    title: 'Myiasis in domestic cats: a global review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6664729/
     type: review
-    pmid: "31358036"
+    pmid: '31358036'
 pubmedQueries:
   - query: '"myiasis" AND (veterinary OR canine OR feline) AND ("treatment" OR "wound management")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: hyperthermia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 蠅蛆病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床檢查
+          notes: 直接觀察到傷口或皮膚表面的蠅幼蟲（蛆）即可確診。評估侵犯範圍與深度
+        - name: 全身評估
+          notes: 評估潛在因素（傷口原因、行動能力、營養狀態）。評估是否有系統性感染徵象
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC 與生化（感染嚴重度評估）
+        - 傷口培養（繼發細菌感染）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 完整移除所有蛆蟲
+        - 傷口清創與護理
+        - 處理潛在因素
+ddxSource: auto-generated

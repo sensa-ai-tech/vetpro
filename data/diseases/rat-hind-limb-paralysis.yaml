@@ -3,20 +3,23 @@ nameEn: Rat Hind Limb Paralysis
 nameZh: 大鼠後肢癱瘓
 bodySystem: neurology
 description: 大鼠後肢癱瘓是老年大鼠常見的神經系統問題，最常見的原因為脊髓退行性變化與垂體腺瘤。表現為漸進性後肢無力至完全癱瘓，嚴重影響生活品質。需與其他可治療的原因（如椎間盤疾病、感染）進行鑑別。
-
 aliases:
-  - { alias: 大鼠後肢癱瘓, language: zh }
-  - { alias: 大鼠後肢無力, language: zh }
-  - { alias: 大鼠下半身麻痺, language: zh }
-  - { alias: Rat hind leg paralysis, language: en }
-  - { alias: Rat posterior paresis, language: en }
-  - { alias: Rat hind limb degeneration, language: en }
-
+  - alias: 大鼠後肢癱瘓
+    language: zh
+  - alias: 大鼠後肢無力
+    language: zh
+  - alias: 大鼠下半身麻痺
+    language: zh
+  - alias: Rat hind leg paralysis
+    language: en
+  - alias: Rat posterior paresis
+    language: en
+  - alias: Rat hind limb degeneration
+    language: en
 species:
   - speciesCommon: rat
     prevalence: common
     notes: 老年大鼠（>20 月齡）相當常見。雄鼠可能較常見。為影響老年大鼠生活品質的重要問題之一。
-
 etiology:
   categories:
     - name: 退行性疾病
@@ -33,7 +36,6 @@ etiology:
         - 脊髓血管病變
         - 外傷性脊髓損傷
         - 代謝性神經病變
-
 clinicalSigns:
   early:
     - 後肢步態輕微不協調
@@ -47,7 +49,6 @@ clinicalSigns:
     - 後肢肌肉萎縮
     - 排尿排便困難
     - 後肢皮膚磨損（拖行損傷）
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
@@ -56,7 +57,6 @@ diagnosis:
       notes: 評估椎體病變、椎間盤鈣化、脊柱畸形
     - name: 全身評估
       notes: 排除垂體腺瘤（頭部檢查）、代謝性疾病（血液生化）
-
 treatment:
   principles:
     - 確定並處理根本原因
@@ -71,41 +71,79 @@ treatment:
     - 每日清潔後肢與會陰部（預防尿灼傷）
     - 物理治療（輕柔被動活動後肢）
     - 監測排尿功能（手動膀胱排空若需要）
-
 prognosis: 預後取決於根本原因。退行性脊髓病為不可逆，但進展速度因個體而異。垂體腺瘤相關者若早期藥物治療可能部分改善。外傷性原因視損傷程度而定。嚴重後肢癱瘓伴排尿困難者生活品質顯著下降，需評估人道考量。
-
-
 guidelineRefs:
   - sourceOrg: Medicine and science in sports and exercise
-    title: Passive Cycle Training Promotes Bone Recovery after Spinal Cord Injury without Altering Resting-State Bone Perfusion.
+    title: >-
+      Passive Cycle Training Promotes Bone Recovery after Spinal Cord Injury without Altering Resting-State Bone
+      Perfusion.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10090357/
     type: research
-    pmid: "36728986"
+    pmid: '36728986'
     relevance: supporting
   - sourceOrg: Cells
-    title: Therapeutic Hypothermia after Cardiac Arrest Attenuates Hindlimb Paralysis and Damage of Spinal Motor Neurons and Astrocytes through Modulating Nrf2/HO-1 Signaling Pathway in Rats.
+    title: >-
+      Therapeutic Hypothermia after Cardiac Arrest Attenuates Hindlimb Paralysis and Damage of Spinal Motor Neurons and
+      Astrocytes through Modulating Nrf2/HO-1 Signaling Pathway in Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9913309/
     type: research
-    pmid: "36766758"
+    pmid: '36766758'
     relevance: supporting
   - sourceOrg: Biological research
-    title: "Protocol paper: kainic acid excitotoxicity-induced spinal cord injury paraplegia in Sprague-Dawley rats."
+    title: 'Protocol paper: kainic acid excitotoxicity-induced spinal cord injury paraplegia in Sprague-Dawley rats.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9733144/
     type: research
-    pmid: "36494836"
+    pmid: '36494836'
     relevance: supporting
   - sourceOrg: Journal of neurophysiology
     title: Formation of a novel supraspinal-spinal connectome that relearns the same motor task after complete paralysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8461828/
     type: research
-    pmid: "34406891"
+    pmid: '34406891'
     relevance: supporting
   - sourceOrg: Scientific reports
     title: Alpha-synuclein increases in rodent and human spinal cord injury and promotes inflammation and tissue loss.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8175699/
     type: research
-    pmid: "34083630"
+    pmid: '34083630'
     relevance: supporting
 pubmedQueries:
   - query: '"rat" AND ("hind limb paralysis" OR "posterior paresis" OR "hind leg weakness") AND (veterinary OR "pet rat")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: constipation
+    frequency: uncommon
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 大鼠後肢癱瘓 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - constipation 相關症狀
+        - paresis-paralysis 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 評估後肢反射（屈曲反射、膝反射）。判定為上運動神經元或下運動神經元病變
+        - name: 脊椎 X 光
+          notes: 評估椎體病變、椎間盤鈣化、脊柱畸形
+        - name: 全身評估
+          notes: 排除垂體腺瘤（頭部檢查）、代謝性疾病（血液生化）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 確定並處理根本原因
+        - 維持生活品質
+        - 預防二次性併發症
+ddxSource: auto-generated

@@ -3,12 +3,13 @@ nameEn: Afoxolaner Isoxazoline Toxicosis
 nameZh: 阿福拉納異噁唑啉類中毒
 bodySystem: toxicology
 description: 阿福拉納屬異噁唑啉類口服除蚤藥。雖安全範圍大,但過量或敏感個體可能出現神經毒性,包括顫抖、癲癇及共濟失調。
-
 aliases:
-  - { alias: NexGard中毒, language: zh }
-  - { alias: Isoxazoline Toxicity, language: en }
-  - { alias: Afoxolaner Poisoning, language: en }
-
+  - alias: NexGard中毒
+    language: zh
+  - alias: Isoxazoline Toxicity
+    language: en
+  - alias: Afoxolaner Poisoning
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓用劑型較少,誤用犬用產品可能中毒
-
 etiology:
   categories:
     - name: 劑量過量
@@ -29,7 +29,6 @@ etiology:
       examples:
         - MDR1基因突變犬隻
         - 癲癇病史動物
-
 clinicalSigns:
   early:
     - 嘔吐、腹瀉
@@ -39,20 +38,18 @@ clinicalSigns:
     - 癲癇發作(尤其有癲癇史者)
     - 虛弱、食慾不振
     - 皮膚搔癢(罕見)
-
 diagnosis:
   primaryTests:
     - name: 病史確認
-      notes: "詳細詢問用藥時間、劑量及產品名稱"
+      notes: 詳細詢問用藥時間、劑量及產品名稱
     - name: 神經學檢查
-      notes: "評估意識狀態、步態及反射"
+      notes: 評估意識狀態、步態及反射
     - name: 血液學檢查
-      notes: "排除肝腎功能異常或電解質失衡"
+      notes: 排除肝腎功能異常或電解質失衡
   differentialDiagnoses:
     - 特發性癲癇
     - 其他殺蟲劑中毒
     - 中樞神經系統感染
-
 treatment:
   medical:
     - 無特異性解毒劑,以支持性療法為主
@@ -61,12 +58,48 @@ treatment:
     - 癲癇控制: Levetiracetam 20 mg/kg IV/PO q8h 或 Diazepam 0.5-1 mg/kg IV
     - 靜脈輸液維持水分及電解質平衡
     - 監測神經症狀變化
-
 prognosis:
-  general: "多數輕度反應於48小時內自行緩解。癲癇發作通常可控制,長期預後良好。極少數嚴重案例可能需要長期抗癲癇治療。"
-
+  general: 多數輕度反應於48小時內自行緩解。癲癇發作通常可控制,長期預後良好。極少數嚴重案例可能需要長期抗癲癇治療。
 prevention:
   - 依體重精確計算藥物劑量
   - 有癲癇病史動物謹慎使用,考慮替代藥物
   - MDR1基因突變品種(如柯利犬)使用前諮詢獸醫
   - 妥善保存藥品,避免寵物誤食
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: trembling
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: skin-pruritus
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 阿福拉納異噁唑啉類中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - ataxia 相關症狀
+        - trembling 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史確認
+          notes: 詳細詢問用藥時間、劑量及產品名稱
+        - name: 神經學檢查
+          notes: 評估意識狀態、步態及反射
+        - name: 血液學檢查
+          notes: 排除肝腎功能異常或電解質失衡
+ddxSource: auto-generated

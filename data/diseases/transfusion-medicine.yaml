@@ -3,13 +3,15 @@ nameEn: Transfusion Medicine
 nameZh: 輸血醫學
 bodySystem: emergency
 description: 獸醫輸血醫學涵蓋血液製品的選擇、血型鑑定、交叉試驗及輸血反應監測等知識體系。正確的輸血程序可挽救急性失血或嚴重貧血動物的生命，但不當輸血可導致致命性溶血反應。
-
 aliases:
-  - { alias: 輸血療法, language: zh }
-  - { alias: 血液製品治療, language: zh }
-  - { alias: Blood Transfusion Therapy, language: en }
-  - { alias: Veterinary Transfusion, language: en }
-
+  - alias: 輸血療法
+    language: zh
+  - alias: 血液製品治療
+    language: zh
+  - alias: Blood Transfusion Therapy
+    language: en
+  - alias: Veterinary Transfusion
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓有 A、B、AB 三型，B 型貓有天然抗 A 抗體，首次接受 A 型血即可發生致命性急性溶血。務必血型鑑定。
-
 etiology:
   categories:
     - name: 輸血適應症
@@ -32,7 +33,6 @@ etiology:
         - 發燒性非溶血反應（最常見）
         - 過敏反應（蕁麻疹、血管性水腫）
         - 輸血相關急性肺損傷（TRALI）
-
 clinicalSigns:
   early:
     - 輸血中發燒（體溫上升 >1°C）
@@ -44,14 +44,12 @@ clinicalSigns:
     - 黃疸加重
     - 呼吸急促（TRALI 或容積過負荷）
     - 低血壓休克
-
 diagnosis:
   primaryTests:
     - name: 血型鑑定
       notes: 犬行 DEA 1.1 鑑定（最低要求），貓必須鑑定 A/B/AB 型。快速檢驗卡可於院內執行。
     - name: 交叉試驗
       notes: 主交叉（供血者紅血球 + 受血者血清）與次交叉。犬首次輸血可省略但建議執行，貓必須執行。
-
 treatment:
   principles:
     - 輸血前務必完成血型鑑定（貓為必要）
@@ -65,41 +63,79 @@ treatment:
     - 發生反應時立即停止輸血
     - 溶血反應：靜脈輸液維持腎灌流 + 類固醇
     - 過敏反應：抗組織胺 ± 腎上腺素
-
 prognosis: 正確執行的輸血程序安全有效，急性失血患者輸血後存活率顯著提高。輸血反應多數為輕微發燒反應，適當處理後預後良好。急性溶血反應罕見但可致命，尤其 B 型貓接受 A 型血時死亡率極高。
-
-
 guidelineRefs:
   - sourceOrg: Journal of extracellular vesicles
-    title: "Minimal information for studies of extracellular vesicles 2018 (MISEV2018): a position statement of the International Society for Extracellular Vesicles and update of the MISEV2014 guidelines."
+    title: >-
+      Minimal information for studies of extracellular vesicles 2018 (MISEV2018): a position statement of the
+      International Society for Extracellular Vesicles and update of the MISEV2014 guidelines.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6322352/
     type: guideline
-    pmid: "30637094"
+    pmid: '30637094'
     relevance: primary
   - sourceOrg: European journal of immunology
     title: Guidelines for the use of flow cytometry and cell sorting in immunological studies (second edition).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7350392/
     type: guideline
-    pmid: "31633216"
+    pmid: '31633216'
     relevance: primary
   - sourceOrg: European journal of immunology
     title: Guidelines for the use of flow cytometry and cell sorting in immunological studies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9165548/
     type: guideline
-    pmid: "29023707"
+    pmid: '29023707'
     relevance: primary
   - sourceOrg: Molecular therapy. Nucleic acids
-    title: "Off-target effects in CRISPR-Cas genome editing for human therapeutics: Progress and challenges."
+    title: 'Off-target effects in CRISPR-Cas genome editing for human therapeutics: Progress and challenges.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12329535/
     type: review
-    pmid: "40777742"
+    pmid: '40777742'
     relevance: primary
   - sourceOrg: Molecular therapy. Nucleic acids
-    title: "Progress and harmonization of gene editing to treat human diseases: Proceeding of COST Action CA21113 GenE-HumDi."
+    title: 'Progress and harmonization of gene editing to treat human diseases: Proceeding of COST Action CA21113 GenE-HumDi.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10685310/
     type: review
-    pmid: "38034032"
+    pmid: '38034032'
     relevance: primary
 pubmedQueries:
   - query: '"Transfusion Medicine" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: jaundice
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 輸血醫學 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - dehydration 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血型鑑定
+          notes: 犬行 DEA 1.1 鑑定（最低要求），貓必須鑑定 A/B/AB 型。快速檢驗卡可於院內執行。
+        - name: 交叉試驗
+          notes: 主交叉（供血者紅血球 + 受血者血清）與次交叉。犬首次輸血可省略但建議執行，貓必須執行。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 輸血前務必完成血型鑑定（貓為必要）
+        - 交叉試驗相容者優先選用
+        - 緩慢開始輸血並密切監測
+ddxSource: auto-generated

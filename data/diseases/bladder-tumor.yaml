@@ -3,12 +3,13 @@ nameEn: Bladder Tumor
 nameZh: 膀胱腫瘤
 bodySystem: oncology
 description: 膀胱的原發性腫瘤，犬以移行上皮細胞癌 (TCC) 最常見。好發於膀胱三角區 (trigone)，可能阻塞輸尿管開口或尿道。Scottish Terrier 為高風險品種。
-
 aliases:
-  - { alias: "Bladder Cancer", language: en }
-  - { alias: "Transitional Cell Carcinoma", language: en }
-  - { alias: "膀胱癌", language: zh }
-
+  - alias: Bladder Cancer
+    language: en
+  - alias: Transitional Cell Carcinoma
+    language: en
+  - alias: 膀胱癌
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 腫瘤性
@@ -24,7 +24,6 @@ etiology:
         - 膀胱移行上皮惡性增生
         - 品種遺傳傾向
         - 除草劑暴露可能為危險因子
-
 clinicalSigns:
   early:
     - 血尿
@@ -35,7 +34,6 @@ clinicalSigns:
     - 尿道阻塞
     - 水腎
     - 轉移（淋巴結、肺）
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
@@ -44,7 +42,6 @@ diagnosis:
       notes: 犬 TCC 高比例帶 BRAF V595E 突變。非侵入性篩檢
     - name: 膀胱鏡活檢
       notes: 組織病理確診
-
 treatment:
   principles:
     - 手術切除困難（三角區位置）
@@ -55,41 +52,102 @@ treatment:
     - Vinblastine
     - 尿道支架（阻塞時）
     - 手術切除（腫瘤不在三角區時可考慮）
-
 prognosis: Piroxicam + 化療中位存活 6-12 個月。單用 Piroxicam 中位存活 6 個月。不治療中位存活約 4 個月。
-
-
 guidelineRefs:
   - sourceOrg: Bladder cancer (Amsterdam, Netherlands)
-    title: "Orthotopic bladder cancer preclinical models: Comprehensive review and technique optimization."
+    title: 'Orthotopic bladder cancer preclinical models: Comprehensive review and technique optimization.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12722681/
     type: review
-    pmid: "41445566"
-  - sourceOrg: "Bioengineering &amp; translational medicine"
-    title: "(Nano)platforms in bladder cancer therapy: Challenges and opportunities."
+    pmid: '41445566'
+  - sourceOrg: Bioengineering &amp; translational medicine
+    title: '(Nano)platforms in bladder cancer therapy: Challenges and opportunities.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9842064/
     type: review
-    pmid: "36684065"
+    pmid: '36684065'
   - sourceOrg: Journal of clinical medicine
-    title: "Concomitant Endoscopic Surgery for Bladder Tumors and Prostatic Obstruction: Are We Safely Hitting Two Birds with One Stone? A Systematic Review and Meta-Analysis."
+    title: >-
+      Concomitant Endoscopic Surgery for Bladder Tumors and Prostatic Obstruction: Are We Safely Hitting Two Birds with
+      One Stone? A Systematic Review and Meta-Analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9604964/
     type: review
-    pmid: "36294528"
+    pmid: '36294528'
   - sourceOrg: Cancer cell international
     title: PA-MSHA induces apoptosis and suppresses metastasis by tumor associated macrophages in bladder cancer cells.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5561576/
     type: research
-    pmid: "28824336"
+    pmid: '28824336'
   - sourceOrg: Communications biology
     title: Micro-mechanical fingerprints of the rat bladder change in actinic cystitis and tumor presence.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9950451/
     type: research
-    pmid: "36823431"
+    pmid: '36823431'
   - sourceOrg: Frontiers in oncology
-    title: "High-grade non-muscle invasive urothelial carcinoma in dogs and humans share specific expression of integrin &#x3b1;5&#x3b2;1."
+    title: >-
+      High-grade non-muscle invasive urothelial carcinoma in dogs and humans share specific expression of integrin
+      &#x3b1;5&#x3b2;1.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12151783/
     type: research
-    pmid: "40502636"
+    pmid: '40502636'
 pubmedQueries:
   - query: '"bladder tumor" OR "transitional cell carcinoma" AND (veterinary OR canine) AND ("piroxicam" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 膀胱腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估慢性血尿與排尿困難
+      findings:
+        - 慢性反覆血尿
+        - 排尿困難
+        - 抗生素治療無效的「UTI」
+        - 中老年犬
+    - step: 2
+      action: 尿液分析與細胞學
+      details: 尿液評估
+      findings:
+        - 血尿
+        - 尿液細胞學（敏感度有限）
+        - BRAF突變檢測（尿液）
+        - 排除感染
+    - step: 3
+      action: 腹部超音波
+      details: 膀胱腫塊評估
+      findings:
+        - 膀胱壁不規則增厚腫塊
+        - 三角區好發
+        - 評估輸尿管阻塞
+        - 區域淋巴結評估
+    - step: 4
+      action: 切片與分期
+      details: 經導管或手術切片
+      findings:
+        - 組織病理確診（多為移行上皮癌/TCC）
+        - 胸腔X光分期
+        - 腹腔淋巴結CT評估
+        - COX-2抑制劑（Piroxicam）治療評估
+clinicalPearls:
+  - TCC好發膀胱三角區，手術切除困難
+  - BRAF V595E突變存在於約85%犬TCC
+  - 不建議經腹膀胱穿刺活檢（可能種植轉移）
+  - Piroxicam有直接抗腫瘤作用，不只是止痛
+  - 反覆「UTI」治療無效應懷疑膀胱腫瘤
+monitoringItems:
+  - 定期超聲（腫瘤大小）
+  - 尿液分析
+  - 胸腔X光（轉移）
+  - 生活品質評估
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: common
+ddxSource: book

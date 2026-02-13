@@ -3,19 +3,20 @@ nameEn: Canine Respiratory Coronavirus
 nameZh: 犬呼吸道冠狀病毒
 bodySystem: respiratory
 description: 犬呼吸道冠狀病毒 (CRCoV) 為犬傳染性呼吸道疾病複合體 (CIRDC) 的病原之一，屬於 Betacoronavirus。多數感染為輕度上呼吸道症狀，可與其他呼吸道病原共同感染加重病情。
-
 aliases:
-  - { alias: 犬呼吸道冠狀病毒感染, language: zh }
-  - { alias: CRCoV 感染, language: zh }
-  - { alias: CRCoV, language: en }
-  - { alias: Canine Respiratory Coronavirus Infection, language: en }
-
+  - alias: 犬呼吸道冠狀病毒感染
+    language: zh
+  - alias: CRCoV 感染
+    language: zh
+  - alias: CRCoV
+    language: en
+  - alias: Canine Respiratory Coronavirus Infection
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 群居犬環境（收容所、寄宿中心、犬展）盛行率高。單獨感染多為輕症，與百日咳桿菌或副流感病毒共感時病情加重。目前無針對 CRCoV 的疫苗。
-
 etiology:
   categories:
     - name: 病原特性
@@ -29,7 +30,6 @@ etiology:
         - 群居環境盛行率可達 50%
         - 為犬傳染性呼吸道疾病複合體的組成病原
         - 常與其他呼吸道病原混合感染
-
 clinicalSigns:
   early:
     - 輕度咳嗽
@@ -41,13 +41,12 @@ clinicalSigns:
     - 輕度發燒
     - 食慾稍減
     - 嗜睡
-
 diagnosis:
   primaryTests:
     - name: PCR 檢測
-      notes: "咽喉拭子或鼻拭子 RT-PCR 為確診方法。通常作為呼吸道病原多聯 PCR 面板的一部分"
+      notes: 咽喉拭子或鼻拭子 RT-PCR 為確診方法。通常作為呼吸道病原多聯 PCR 面板的一部分
     - name: 臨床診斷
-      notes: "群居環境中的急性呼吸道症狀高度提示 CIRDC，但無法區分特定病原"
+      notes: 群居環境中的急性呼吸道症狀高度提示 CIRDC，但無法區分特定病原
   differentialDiagnoses:
     - 犬副流感病毒
     - 犬腺病毒 2 型
@@ -55,7 +54,6 @@ diagnosis:
     - 百日咳桿菌感染
     - 支原體感染
     - 犬瘟熱
-
 treatment:
   medical:
     - 多數病例為自限性，支持治療為主
@@ -64,35 +62,61 @@ treatment:
     - 合併細菌感染時抗生素治療（Doxycycline 首選）
     - 止咳藥（嚴重持續咳嗽時）
     - 重症者支持性輸液及營養
-
 prognosis:
-  general: "單純 CRCoV 感染預後極佳，多在 1-2 週內自癒。合併其他呼吸道病原感染時病程可能延長。免疫抑制或幼犬可能發展為更嚴重的下呼吸道疾病。"
-
+  general: 單純 CRCoV 感染預後極佳，多在 1-2 週內自癒。合併其他呼吸道病原感染時病程可能延長。免疫抑制或幼犬可能發展為更嚴重的下呼吸道疾病。
 prevention:
   - 群居環境的通風及消毒管理
   - 新進犬隻隔離觀察
   - 目前無針對 CRCoV 的商用疫苗
   - CIRDC 核心疫苗（副流感、腺病毒 2 型、百日咳桿菌）可降低整體呼吸道疾病嚴重度
-
-
 guidelineRefs:
   - sourceOrg: Viruses
-    title: "Coronavirus Infections in Companion Animals: Virology, Epidemiology, Clinical and Pathologic Features."
+    title: 'Coronavirus Infections in Companion Animals: Virology, Epidemiology, Clinical and Pathologic Features.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7551689/
     type: review
-    pmid: "32933150"
+    pmid: '32933150'
   - sourceOrg: Journal of comparative pathology
     title: Aetiology of Canine Infectious Respiratory Disease Complex and Prevalence of its Pathogens in Europe.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7103302/
     type: review
-    pmid: "32359641"
+    pmid: '32359641'
   - sourceOrg: BMC veterinary research
-    title: Development and validation of nanoplate-based RT-dPCR assay for canine respiratory coronavirus detection in various clinical samples.
+    title: >-
+      Development and validation of nanoplate-based RT-dPCR assay for canine respiratory coronavirus detection in
+      various clinical samples.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12085003/
     type: research
-    pmid: "40382640"
+    pmid: '40382640'
   - sourceOrg: Nature
     title: Farmed fur animals harbour viruses with zoonotic spillover potential.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11741233/
     type: research
-    pmid: "39232170"
+    pmid: '39232170'
+associatedSymptoms:
+  - symptomId: sneezing
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+diagnosticAlgorithm:
+  title: 犬呼吸道冠狀病毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - sneezing 相關症狀
+        - weakness 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: PCR 檢測
+          notes: 咽喉拭子或鼻拭子 RT-PCR 為確診方法。通常作為呼吸道病原多聯 PCR 面板的一部分
+        - name: 臨床診斷
+          notes: 群居環境中的急性呼吸道症狀高度提示 CIRDC，但無法區分特定病原
+ddxSource: auto-generated

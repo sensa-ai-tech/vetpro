@@ -2,14 +2,18 @@ slug: trypanosomiasis
 nameEn: Trypanosomiasis
 nameZh: 錐蟲感染
 bodySystem: infectious
-description: 犬錐蟲感染 (trypanosomiasis) 在美洲主要由 Trypanosoma cruzi 引起（美洲錐蟲病/查加斯病），經親吻蟲 (triatomine bug) 傳播。可引起急性心肌炎或慢性擴張型心肌病變。為中南美洲及美國南部犬的重要疾病。
-
+description: >-
+  犬錐蟲感染 (trypanosomiasis) 在美洲主要由 Trypanosoma cruzi 引起（美洲錐蟲病/查加斯病），經親吻蟲 (triatomine bug)
+  傳播。可引起急性心肌炎或慢性擴張型心肌病變。為中南美洲及美國南部犬的重要疾病。
 aliases:
-  - { alias: 查加斯病, language: zh }
-  - { alias: 美洲錐蟲病, language: zh }
-  - { alias: Chagas Disease, language: en }
-  - { alias: Trypanosoma cruzi Infection, language: en }
-
+  - alias: 查加斯病
+    language: zh
+  - alias: 美洲錐蟲病
+    language: zh
+  - alias: Chagas Disease
+    language: en
+  - alias: Trypanosoma cruzi Infection
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓自然感染罕見但有報告。臨床表現可能較犬輕微。可能為亞臨床帶原者。
-
 etiology:
   categories:
     - name: 病原與傳播
@@ -32,7 +35,6 @@ etiology:
         - 急性期：心肌細胞破壞引起心肌炎
         - 慢性期：免疫介導性心肌損傷
         - 進展為擴張型心肌病
-
 clinicalSigns:
   early:
     - 急性期：嗜睡、食慾下降
@@ -45,7 +47,6 @@ clinicalSigns:
     - 充血性心衰竭（咳嗽、腹水）
     - 右心室擴張為主
     - 猝死
-
 diagnosis:
   primaryTests:
     - name: 血清學 (IFA/ELISA)
@@ -57,7 +58,6 @@ diagnosis:
     - 心臟超音波（評估心室擴張與功能）
     - 心電圖（心律不整偵測）
     - 胸腔 X-ray（心臟擴大）
-
 treatment:
   principles:
     - 目前無公認有效的抗蟲藥物治療
@@ -71,41 +71,92 @@ treatment:
     - 控制錐蝽蟲（殺蟲劑、居住環境改善）
     - 犬舍/犬窩裝設紗網
     - 避免犬接觸或攝食錐蝽蟲
-
 prognosis: 犬查加斯病預後不良。急性心肌炎幼犬可能猝死。慢性期進展為不可逆擴張型心肌病，中位存活數月至數年。心衰竭治療可延長存活但無法治癒。目前無確定有效的抗蟲治療。
-
-
 guidelineRefs:
-  - sourceOrg: "Parasites &amp; vectors"
-    title: "Geographical distribution of potential mechanical vectors implicated in Surra transmission in Spain: an entomological perspective."
+  - sourceOrg: Parasites &amp; vectors
+    title: >-
+      Geographical distribution of potential mechanical vectors implicated in Surra transmission in Spain: an
+      entomological perspective.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12305963/
     type: review
-    pmid: "40721831"
+    pmid: '40721831'
     relevance: primary
   - sourceOrg: Scientific reports
-    title: "Prevalence of African animal trypanosomiasis among livestock and domestic animals in Uganda: a systematic review and meta-regression analysis from 1980 to 2022."
+    title: >-
+      Prevalence of African animal trypanosomiasis among livestock and domestic animals in Uganda: a systematic review
+      and meta-regression analysis from 1980 to 2022.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10663568/
     type: review
-    pmid: "37990067"
+    pmid: '37990067'
     relevance: primary
   - sourceOrg: Pathogens (Basel, Switzerland)
-    title: "Sustainable Elimination (Zero Cases) of Sleeping Sickness: How Far Are We from Achieving This Goal?"
+    title: 'Sustainable Elimination (Zero Cases) of Sleeping Sickness: How Far Are We from Achieving This Goal?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6789789/
     type: review
-    pmid: "31470522"
+    pmid: '31470522'
     relevance: primary
-  - sourceOrg: "Parasites &amp; vectors"
-    title: "Global distribution, host range and prevalence of Trypanosoma vivax: a systematic review and meta-analysis."
+  - sourceOrg: Parasites &amp; vectors
+    title: 'Global distribution, host range and prevalence of Trypanosoma vivax: a systematic review and meta-analysis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7830052/
     type: review
-    pmid: "33494807"
+    pmid: '33494807'
     relevance: primary
-  - sourceOrg: "Parasites &amp; vectors"
+  - sourceOrg: Parasites &amp; vectors
     title: A meta-analysis of the prevalence of African animal trypanosomiasis in Nigeria from 1960 to 2017.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5930763/
     type: review
-    pmid: "29720251"
+    pmid: '29720251'
     relevance: supporting
 pubmedQueries:
   - query: '"trypanosomiasis" OR "Chagas disease" AND (canine OR veterinary) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: common
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: coughing
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 錐蟲感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - anorexia 相關症狀
+        - exercise-intolerance 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清學 (IFA/ELISA)
+          notes: 慢性期首選。商業快篩可用。需排除與其他錐蟲種的交叉反應
+        - name: PCR
+          notes: 敏感度高，可偵測低寄生蟲血症。急性與慢性期均可使用
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 血液抹片（急性期可見錐鞭毛體 trypomastigote）
+        - 心臟超音波（評估心室擴張與功能）
+        - 心電圖（心律不整偵測）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 目前無公認有效的抗蟲藥物治療
+        - 心衰竭管理為主
+        - 預防為最重要策略
+ddxSource: auto-generated

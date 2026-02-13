@@ -3,13 +3,15 @@ nameEn: Ureteral Stent Complications
 nameZh: 輸尿管支架併發症
 bodySystem: urinary
 description: 輸尿管支架植入後可能發生多種併發症，包括支架移位、結石附著、泌尿道感染和排尿困難 (pollakiuria)。在犬貓中併發症管理是支架長期成功的關鍵。
-
 aliases:
-  - { alias: 尿管支架問題, language: zh }
-  - { alias: 輸尿管支架相關併發症, language: zh }
-  - { alias: Double-J Stent Complications, language: en }
-  - { alias: Ureteral Stent-Related Issues, language: en }
-
+  - alias: 尿管支架問題
+    language: zh
+  - alias: 輸尿管支架相關併發症
+    language: zh
+  - alias: Double-J Stent Complications
+    language: en
+  - alias: Ureteral Stent-Related Issues
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓輸尿管支架併發症率較犬高（約40-50%），尤其排尿困難 (dysuria/stranguria) 在貓中很常見，影響生活品質。這也是 SUB 裝置在貓中漸取代支架的原因之一。
-
 etiology:
   categories:
     - name: 常見併發症
@@ -36,7 +37,6 @@ etiology:
         - 慢性泌尿道感染
         - 高鈣尿或草酸鈣結晶傾向
         - 膀胱端支架刺激三角區
-
 clinicalSigns:
   early:
     - 術後頻尿
@@ -48,19 +48,17 @@ clinicalSigns:
     - 支架阻塞導致腎水腫復發
     - 血尿加重
     - 腎功能惡化（支架失效時）
-
 diagnosis:
   primaryTests:
     - name: 腹部X光
-      notes: "確認支架位置（兩端捲曲在腎盂和膀胱內）。評估支架是否移位或結石附著。"
+      notes: 確認支架位置（兩端捲曲在腎盂和膀胱內）。評估支架是否移位或結石附著。
     - name: 腹部超音波
-      notes: "評估腎水腫是否復發（提示支架阻塞）。膀胱壁增厚（支架刺激）。泌尿道感染評估。"
+      notes: 評估腎水腫是否復發（提示支架阻塞）。膀胱壁增厚（支架刺激）。泌尿道感染評估。
   differentialDiagnoses:
     - 支架功能正常但膀胱刺激症狀
     - 支架阻塞
     - 新發泌尿道感染
     - 新發結石形成
-
 treatment:
   medical:
     - 排尿困難：Prazosin 0.25-0.5 mg/cat PO q12h（α-blocker 放鬆尿道/三角區）
@@ -72,13 +70,37 @@ treatment:
     - 支架結石附著或阻塞：更換支架
     - 嚴重耐受不良：移除支架改為 SUB 裝置（貓）
     - 定期支架更換（建議每3-6個月）
-
 prognosis:
-  general: "多數併發症可透過藥物管理或支架更換處理。貓的排尿困難併發症顯著影響生活品質，是許多獸醫師轉向使用 SUB 裝置的原因。犬對支架的耐受性較佳。長期預後取決於腎功能保護程度。"
-
+  general: 多數併發症可透過藥物管理或支架更換處理。貓的排尿困難併發症顯著影響生活品質，是許多獸醫師轉向使用 SUB 裝置的原因。犬對支架的耐受性較佳。長期預後取決於腎功能保護程度。
 prevention:
   - 選擇適當尺寸的支架
   - 定期影像學追蹤支架位置
   - 預防性抗生素（術後短期）
   - 定期支架更換避免結石附著
   - 增加水分攝取稀釋尿液
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 輸尿管支架併發症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pollakiuria 相關症狀
+        - haematuria 相關症狀
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部X光
+          notes: 確認支架位置（兩端捲曲在腎盂和膀胱內）。評估支架是否移位或結石附著。
+        - name: 腹部超音波
+          notes: 評估腎水腫是否復發（提示支架阻塞）。膀胱壁增厚（支架刺激）。泌尿道感染評估。
+ddxSource: auto-generated

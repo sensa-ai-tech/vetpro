@@ -3,18 +3,18 @@ nameEn: Abyssinian Cat Pyruvate Kinase Deficiency
 nameZh: 阿比西尼亞貓丙酮酸激酶缺乏症
 bodySystem: hematology
 description: 阿比西尼亞貓的遺傳性溶血性貧血,紅血球代謝酶缺陷導致紅血球壽命縮短。表現為間歇性貧血、黃疸,體染色體隱性遺傳。
-
 aliases:
-  - { alias: PK缺乏症, language: zh }
-  - { alias: PK Deficiency, language: en }
-  - { alias: Hemolytic Anemia, language: en }
-
+  - alias: PK缺乏症
+    language: zh
+  - alias: PK Deficiency
+    language: en
+  - alias: Hemolytic Anemia
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 阿比西尼亞、索馬利、孟加拉、緬因貓
-
 etiology:
   categories:
     - name: 遺傳性代謝酶缺陷
@@ -22,7 +22,6 @@ etiology:
         - PKLR基因突變
         - 紅血球能量代謝障礙
         - 體染色體隱性遺傳
-
 clinicalSigns:
   early:
     - 間歇性虛弱、嗜睡
@@ -33,30 +32,60 @@ clinicalSigns:
     - 黃疸
     - 脾腫大
     - 發育不良(幼貓)
-
 diagnosis:
   primaryTests:
     - name: 全血球計數
-      notes: "再生性貧血,網狀紅血球增多"
+      notes: 再生性貧血,網狀紅血球增多
     - name: PK酶活性測定
-      notes: "紅血球PK酶活性顯著降低"
+      notes: 紅血球PK酶活性顯著降低
     - name: PKLR基因檢測
-      notes: "確診及繁殖篩檢"
+      notes: 確診及繁殖篩檢
   differentialDiagnoses:
     - 免疫介導性溶血性貧血
     - Mycoplasma haemofelis感染
     - 中毒性溶血
-
 treatment:
   medical:
     - 無特效治療
     - 支持性治療(輸血,嚴重貧血時)
     - 避免氧化壓力(藥物、食物)
     - 定期監測貧血程度
-
 prognosis:
-  general: "變異大。輕症可正常壽命,中重症可能青年期死於貧血併發症。平均壽命5-12年。"
-
+  general: 變異大。輕症可正常壽命,中重症可能青年期死於貧血併發症。平均壽命5-12年。
 prevention:
   - 繁殖前基因檢測
   - 帶因者不應繁殖
+associatedSymptoms:
+  - symptomId: failure-to-grow
+    frequency: uncommon
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: splenomegaly
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: jaundice
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 阿比西尼亞貓丙酮酸激酶缺乏症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - failure-to-grow 相關症狀
+        - exercise-intolerance 相關症狀
+        - pallor-cyanosis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 全血球計數
+          notes: 再生性貧血,網狀紅血球增多
+        - name: PK酶活性測定
+          notes: 紅血球PK酶活性顯著降低
+        - name: PKLR基因檢測
+          notes: 確診及繁殖篩檢
+ddxSource: auto-generated

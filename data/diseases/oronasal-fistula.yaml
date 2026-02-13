@@ -3,11 +3,11 @@ nameEn: Oronasal Fistula
 nameZh: 口鼻瘻管
 bodySystem: dental
 description: 口腔與鼻腔之間的異常通道，多因上顎犬齒或切齒的牙周病嚴重破壞齒槽骨所致。食物與液體經瘻管進入鼻腔引起慢性鼻炎與打噴嚏。
-
 aliases:
-  - { alias: "Oronasal Communication", language: en }
-  - { alias: "口鼻廔管", language: zh }
-
+  - alias: Oronasal Communication
+    language: en
+  - alias: 口鼻廔管
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓偶見。慢性齒根膿瘍相關。
-
 etiology:
   categories:
     - name: 齒源性
@@ -23,7 +22,6 @@ etiology:
         - 嚴重牙周病骨質破壞
         - 拔牙後傷口未癒合
         - 齒根膿瘍穿透鼻腔底
-
 clinicalSigns:
   early:
     - 進食後打噴嚏
@@ -33,14 +31,12 @@ clinicalSigns:
     - 慢性鼻炎
     - 鼻出血
     - 食物從鼻孔排出
-
 diagnosis:
   primaryTests:
     - name: 口腔檢查（鎮靜下）
       notes: 探針探入牙周囊袋進入鼻腔
     - name: 口腔 X 光
       notes: 齒槽骨喪失與鼻腔底部骨缺損
-
 treatment:
   principles:
     - 手術修補瘻管
@@ -51,36 +47,83 @@ treatment:
     - 無張力縫合
     - 術後軟食 2 週
     - 抗生素預防感染
-
 prognosis: 手術修補成功率約 75-85%。大瘻管或反覆手術成功率較低。可能需多次手術。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in oral health
-    title: "Risk factors associated with the failure of secondary alveolar bone grafting with autologous iliac crest bone in patients with alveolar cleft defects: a systematic review."
+    title: >-
+      Risk factors associated with the failure of secondary alveolar bone grafting with autologous iliac crest bone in
+      patients with alveolar cleft defects: a systematic review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12644006/
     type: review
-    pmid: "41306261"
+    pmid: '41306261'
   - sourceOrg: Frontiers in cell and developmental biology
     title: Current insights in the preclinical study of palatal wound healing and oronasal fistula after cleft palate repair.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10601468/
     type: review
-    pmid: "37900273"
+    pmid: '37900273'
   - sourceOrg: Frontiers in veterinary science
-    title: "Surgical Margins for Ameloblastoma in Dogs: A Review With an Emphasis on the Future."
+    title: 'Surgical Margins for Ameloblastoma in Dogs: A Review With an Emphasis on the Future.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8980539/
     type: review
-    pmid: "35392113"
-  - sourceOrg: "Veterinary surgery : VS"
+    pmid: '35392113'
+  - sourceOrg: 'Veterinary surgery : VS'
     title: Sternohyoideus-sternothyroideus muscle flap to reconstruct oronasal fistulas due to maxillary cancer in four dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10107616/
     type: case-report
-    pmid: "36511296"
+    pmid: '36511296'
   - sourceOrg: Radiation research
-    title: Response of Spontaneous Oral Tumors in Canine Cancer Patients Treated with Stereotactic Body Radiation Therapy (SBRT).
+    title: >-
+      Response of Spontaneous Oral Tumors in Canine Cancer Patients Treated with Stereotactic Body Radiation Therapy
+      (SBRT).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12767549/
     type: research
-    pmid: "39478420"
+    pmid: '39478420'
 pubmedQueries:
   - query: '"oronasal fistula" AND (veterinary OR canine OR feline) AND ("flap" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 口鼻瘻管 診斷流程
+  steps:
+    - step: 1
+      action: 臨床評估
+      details: 評估鼻分泌物、打噴嚏史及口臭
+      findings:
+        - 慢性單側鼻分泌物
+        - 進食時打噴嚏
+        - 口臭
+    - step: 2
+      action: 麻醉下口腔檢查
+      details: 牙周探針探查上顎齒齦區域
+      findings:
+        - 瘻管開口可見
+        - 探針可通過至鼻腔
+        - 牙齒鬆動
+    - step: 3
+      action: 影像學檢查
+      details: 牙科放射線及/或CT評估
+      findings:
+        - 齒槽骨缺損
+        - 鼻腔內液體
+        - 鼻竇受累
+    - step: 4
+      action: 手術修復
+      details: 清創後以黏膜瓣無張力修復
+      findings:
+        - 瘻管成功關閉
+        - 需二次手術
+        - 需轉診
+clinicalPearls:
+  - 上顎犬齒區域是口鼻瘻管最常見的發生位置
+  - 修復的關鍵是無張力的黏膜瓣閉合和良好的血液供應
+  - 術前處理鼻腔感染可提高手術成功率
+monitoringItems:
+  - 術後48-72小時評估黏膜瓣存活
+  - 2週後拆線並評估癒合
+  - 1個月後確認瘻管完全關閉
+  - 持續監測鼻分泌物是否改善
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: halitosis-stomatitis
+    frequency: common
+ddxSource: book

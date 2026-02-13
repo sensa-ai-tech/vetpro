@@ -2,13 +2,16 @@ slug: sebaceous-gland-tumor
 nameEn: Sebaceous Gland Tumor
 nameZh: 皮脂腺腫瘤
 bodySystem: oncology
-description: 皮脂腺的良性或惡性腫瘤，包括皮脂腺瘤 (adenoma)、皮脂腺上皮瘤 (epithelioma) 與皮脂腺腺癌 (adenocarcinoma)。多數為良性。犬常見，尤其 Cocker Spaniel。典型表現為頭頸部疣狀或菜花狀突起。
-
+description: >-
+  皮脂腺的良性或惡性腫瘤，包括皮脂腺瘤 (adenoma)、皮脂腺上皮瘤 (epithelioma) 與皮脂腺腺癌 (adenocarcinoma)。多數為良性。犬常見，尤其 Cocker
+  Spaniel。典型表現為頭頸部疣狀或菜花狀突起。
 aliases:
-  - { alias: "Sebaceous Adenoma", language: en }
-  - { alias: "Sebaceous Epithelioma", language: en }
-  - { alias: "皮脂腺瘤", language: zh }
-
+  - alias: Sebaceous Adenoma
+    language: en
+  - alias: Sebaceous Epithelioma
+    language: en
+  - alias: 皮脂腺瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 良性/惡性增生
@@ -24,7 +26,6 @@ etiology:
         - 皮脂腺細胞增生
         - 確切病因不明
         - 品種遺傳傾向
-
 clinicalSigns:
   early:
     - 頭頸部疣狀或菜花狀突起
@@ -34,14 +35,12 @@ clinicalSigns:
     - 腫塊增大
     - 可能潰瘍出血
     - 皮脂腺癌局部侵犯
-
 diagnosis:
   primaryTests:
     - name: 細針穿刺細胞學
       notes: 見皮脂腺細胞（含脂滴空泡）
     - name: 組織病理
       notes: 確認良惡性
-
 treatment:
   principles:
     - 良性腫瘤手術切除即可
@@ -50,9 +49,47 @@ treatment:
     - 手術切除
     - 良性腫瘤切除邊緣不需太寬
     - 皮脂腺癌：廣範圍切除 + 分期檢查
-
 prognosis: 良性皮脂腺瘤切除後預後極佳。皮脂腺癌轉移率低，完全切除預後良好。
-
 pubmedQueries:
   - query: '"sebaceous gland tumor" AND (veterinary OR canine) AND ("treatment" OR "prognosis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 皮脂腺腺瘤 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 觀察腫塊外觀特徵
+      findings:
+        - 花椰菜樣或疣狀突起
+        - 皮膚表面有蒂或無蒂
+        - 老年犬常見
+        - 可能多發
+    - step: 2
+      action: 細針抽吸或切除
+      details: 細胞學確認腺體來源
+      findings:
+        - 皮脂腺細胞團
+        - 細胞質含脂質空泡
+        - 良性型態
+        - 排除皮脂腺癌
+    - step: 3
+      action: 治療決策
+      details: 根據位置與大小決定處理方式
+      findings:
+        - 良性通常不需治療
+        - 影響功能或美觀考慮切除
+        - 潰瘍出血考慮切除
+        - 冷凍治療或手術切除
+clinicalPearls:
+  - 老年犬頭部和眼瞼的疣狀腫塊最常見為皮脂腺腫瘤
+  - 多數不需治療，除非影響功能或反覆出血
+  - 與乳頭狀瘤的臨床外觀可能相似但治療方式不同
+  - 皮脂腺腺癌罕見但需組織病理排除
+monitoringItems:
+  - 觀察大小變化
+  - 出血或潰瘍
+  - 新發病變評估
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: common
+ddxSource: book

@@ -2,13 +2,16 @@ slug: high-rise-syndrome
 nameEn: High Rise Syndrome
 nameZh: 高樓症候群
 bodySystem: emergency
-description: 高樓症候群 (high-rise syndrome) 為貓從高處墜落（通常 >2 層樓）引起的特徵性多系統損傷。貓在墜落時的空中翻正反射 (righting reflex) 使其以四肢著地，但高速撞擊仍造成嚴重損傷。特徵性損傷包括面部外傷（下顎骨折、口裂）、氣胸、四肢骨折與膀胱破裂。
-
+description: >-
+  高樓症候群 (high-rise syndrome) 為貓從高處墜落（通常 >2 層樓）引起的特徵性多系統損傷。貓在墜落時的空中翻正反射 (righting reflex)
+  使其以四肢著地，但高速撞擊仍造成嚴重損傷。特徵性損傷包括面部外傷（下顎骨折、口裂）、氣胸、四肢骨折與膀胱破裂。
 aliases:
-  - { alias: 貓高處墜落, language: zh }
-  - { alias: Falling Cat Syndrome, language: en }
-  - { alias: High Rise Fall, language: en }
-
+  - alias: 貓高處墜落
+    language: zh
+  - alias: Falling Cat Syndrome
+    language: en
+  - alias: High Rise Fall
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓為高樓症候群的典型物種。多發生於公寓或大樓窗戶、陽台。存活率約 90%。7 層以上墜落因達終端速度，損傷型態改變（下顎與胸部損傷增加）。
-
 etiology:
   categories:
     - name: 損傷機制
@@ -32,7 +34,6 @@ etiology:
         - 前肢骨折（橈尺骨遠端、腕關節）
         - 膀胱破裂（充盈膀胱撞擊）
         - 後肢骨折（股骨、脛骨）
-
 clinicalSigns:
   early:
     - 呼吸困難（氣胸、肺挫傷）
@@ -45,7 +46,6 @@ clinicalSigns:
     - 氣胸惡化
     - 腹部膨脹（uroabdomen）
     - 脊椎損傷
-
 diagnosis:
   primaryTests:
     - name: 全身影像評估
@@ -58,7 +58,6 @@ diagnosis:
     - 頭部 X-ray（下顎骨折）
     - 脊椎 X-ray
     - 血壓
-
 treatment:
   principles:
     - ABC 穩定
@@ -74,31 +73,84 @@ treatment:
     - 口裂/下顎骨折：cerclage wire 固定
     - 膀胱破裂：手術修補
     - 多系統損傷分優先順序處理
-
 prognosis: 貓高樓症候群整體存活率約 90%。>7 層墜落存活率仍高但損傷更嚴重。面部損傷多可修復。多數骨折可成功治療。早期積極穩定為關鍵。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline Diaphyseal Fractures: Management and treatment options."
+    title: 'Feline Diaphyseal Fractures: Management and treatment options.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11107983/
     type: review
-    pmid: "35775308"
+    pmid: '35775308'
   - sourceOrg: Frontiers in veterinary science
-    title: "Retrospective evaluation of the agreement between thoracic point-of-care ultrasound and thoracic radiographs in cats with recent trauma: 111 cats."
+    title: >-
+      Retrospective evaluation of the agreement between thoracic point-of-care ultrasound and thoracic radiographs in
+      cats with recent trauma: 111 cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11234836/
     type: research
-    pmid: "38988977"
+    pmid: '38988977'
   - sourceOrg: Frontiers in veterinary science
     title: Surgical Treatment and Outcome of Acquired Midline Palate Defects in Cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9289611/
     type: research
-    pmid: "35859806"
-  - sourceOrg: "Veterinary and comparative orthopaedics and traumatology : V.C.O.T"
+    pmid: '35859806'
+  - sourceOrg: 'Veterinary and comparative orthopaedics and traumatology : V.C.O.T'
     title: Survival Rate of High-Rise Syndrome Cases Using Animal Trauma Triage Score in Cats.
     url: https://pubmed.ncbi.nlm.nih.gov/39089317/
     type: research
-    pmid: "39089317"
+    pmid: '39089317'
 pubmedQueries:
   - query: '"high-rise syndrome" OR "falling cat" AND (veterinary OR feline) AND ("treatment" OR "injury pattern")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 高樓墜落症候群 診斷流程
+  steps:
+    - step: 1
+      action: 緊急穩定
+      details: ABCDE急救流程穩定生命徵象
+      findings:
+        - 呼吸困難氣胸/肺挫傷
+        - 口鼻出血
+        - 休克徵象
+        - 意識評估
+    - step: 2
+      action: 典型損傷模式評估
+      details: 貓高樓墜落特有的損傷模式
+      findings:
+        - 硬顎裂開貓特徵性損傷
+        - 前肢骨折著地衝擊
+        - 氣胸
+        - 膀胱破裂
+    - step: 3
+      action: 全身影像學
+      details: 胸腹部X光與超音波
+      findings:
+        - 胸腔X光氣胸/肺挫傷
+        - 腹部超音波腹腔積液/膀胱破裂
+        - 四肢X光骨折評估
+        - 頜面X光硬顎評估
+    - step: 4
+      action: 延遲損傷監測
+      details: 部分損傷可能延遲出現
+      findings:
+        - 48-72小時內持續監測
+        - 肺挫傷可能延遲加重
+        - 泌尿道損傷延遲表現
+        - 腹壁疝氣評估
+clinicalPearls:
+  - 7層以上墜落不一定比低樓層嚴重（終端速度達到後衝擊力不再增加）
+  - 硬顎裂開是高樓墜落貓的特徵性損傷
+  - 約10%有膀胱破裂，所有病例應評估排尿功能
+  - 肺挫傷可能在24-48小時後才完全顯現
+monitoringItems:
+  - 呼吸功能（24-48小時）
+  - 排尿功能
+  - 神經功能
+  - 骨折癒合
+  - 疼痛評估
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+ddxSource: book

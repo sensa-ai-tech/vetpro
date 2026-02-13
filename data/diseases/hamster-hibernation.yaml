@@ -3,22 +3,20 @@ nameEn: Hamster Hibernation
 nameZh: 倉鼠假冬眠
 bodySystem: metabolic
 description: 倉鼠在環境溫度過低（<10°C）或光照時間過短時進入假冬眠（torpor）狀態，表現為不動、呼吸極慢、體溫降低。需與死亡區分，並緩慢回溫。
-
 aliases:
-  - { alias: "倉鼠假冬眠", language: zh }
-  - { alias: "Hamster Hibernation", language: en }
-
+  - alias: 倉鼠假冬眠
+    language: zh
+  - alias: Hamster Hibernation
+    language: en
 species:
   - speciesCommon: hamster
     prevalence: uncommon
     notes: 倉鼠可受此疾病影響。
-
 etiology:
   categories:
     - name: 病因
       examples:
         - 詳見臨床文獻
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -27,14 +25,12 @@ clinicalSigns:
   progressive:
     - 症狀加重
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 完整理學檢查與病史評估。
     - name: 實驗室檢查
       notes: CBC/生化排除系統性疾病。
-
 treatment:
   principles:
     - 治療基礎病因
@@ -44,38 +40,76 @@ treatment:
     - 依病因治療
     - 支持性照護
     - 定期追蹤
-
 prognosis: 預後取決於疾病嚴重度與治療時效。早期診斷與適當治療可改善預後。
-
-
 guidelineRefs:
   - sourceOrg: International journal of molecular sciences
-    title: "Temperature-Dependent Alternative Splicing of Precursor mRNAs and Its Biological Significance: A Review Focused on Post-Transcriptional Regulation of a Cold Shock Protein Gene in Hibernating Mammals."
+    title: >-
+      Temperature-Dependent Alternative Splicing of Precursor mRNAs and Its Biological Significance: A Review Focused on
+      Post-Transcriptional Regulation of a Cold Shock Protein Gene in Hibernating Mammals.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7590145/
     type: review
-    pmid: "33066638"
-  - sourceOrg: "FASEB journal : official publication of the Federation of American Societies for Experimental Biology"
-    title: Cold-Induced Suppression of Myogenesis in Skeletal Muscle Stem Cells Contributes to Delayed Muscle Regeneration During Hibernation.
+    pmid: '33066638'
+  - sourceOrg: 'FASEB journal : official publication of the Federation of American Societies for Experimental Biology'
+    title: >-
+      Cold-Induced Suppression of Myogenesis in Skeletal Muscle Stem Cells Contributes to Delayed Muscle Regeneration
+      During Hibernation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12668025/
     type: research
-    pmid: "41324489"
+    pmid: '41324489'
   - sourceOrg: PNAS nexus
     title: Targeted disruption of the aralkylamine N-acetyltransferase gene in a seasonal mammal, Mesocricetus auratus.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12130684/
     type: research
-    pmid: "40463803"
+    pmid: '40463803'
   - sourceOrg: Acta neuropathologica
-    title: "Reversible tau hyperphosphorylation in hibernation: a blood biomarker and brain tissue study."
+    title: 'Reversible tau hyperphosphorylation in hibernation: a blood biomarker and brain tissue study.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12479634/
     type: research
-    pmid: "41023457"
+    pmid: '41023457'
     relevance: supporting
   - sourceOrg: Proceedings. Biological sciences
-    title: Spontaneous recurrence of a summer-like diel rhythm in the body temperature of the Syrian hamster after hibernation.
+    title: >-
+      Spontaneous recurrence of a summer-like diel rhythm in the body temperature of the Syrian hamster after
+      hibernation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10581774/
     type: research
-    pmid: "37848068"
+    pmid: '37848068'
     relevance: supporting
 pubmedQueries:
   - query: '"Hamster Hibernation" AND (veterinary OR hamster) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 倉鼠假冬眠 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 完整理學檢查與病史評估。
+        - name: 實驗室檢查
+          notes: CBC/生化排除系統性疾病。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 支持性照護
+        - 監測恢復進度
+ddxSource: auto-generated

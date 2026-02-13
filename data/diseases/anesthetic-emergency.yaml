@@ -3,13 +3,15 @@ nameEn: Anesthetic Emergency
 nameZh: 麻醉急症
 bodySystem: other
 description: 麻醉期間或恢復期發生的危及生命的緊急情況,包括心跳停止、呼吸停止、惡性高熱、過敏反應等。需要立即識別和處理以挽救患者生命。
-
 aliases:
-  - { alias: 麻醉併發症, language: zh }
-  - { alias: 麻醉意外, language: zh }
-  - { alias: Anesthetic Complication, language: en }
-  - { alias: Anesthetic Crisis, language: en }
-
+  - alias: 麻醉併發症
+    language: zh
+  - alias: 麻醉意外
+    language: zh
+  - alias: Anesthetic Complication
+    language: en
+  - alias: Anesthetic Crisis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓對某些麻醉藥物代謝較慢,脫水和低血壓風險較高
-
 etiology:
   categories:
     - name: 藥物相關
@@ -42,7 +43,6 @@ etiology:
         - 惡性高熱
         - 低血糖或電解質異常
         - 體溫過低或過高
-
 clinicalSigns:
   early:
     - 心率或呼吸頻率異常變化
@@ -54,37 +54,33 @@ clinicalSigns:
     - 呼吸停止或嚴重呼吸窘迫
     - 意識不清或無法甦醒
     - 體溫急劇上升(惡性高熱)或下降
-
 diagnosis:
   primaryTests:
     - name: 生命徵象監測
-      notes: "持續監測心率、呼吸、血壓、SpO2、體溫、呼氣末CO2"
+      notes: 持續監測心率、呼吸、血壓、SpO2、體溫、呼氣末CO2
     - name: 心電圖監測
-      notes: "識別心律不整類型,指導治療"
+      notes: 識別心律不整類型,指導治療
     - name: 血氣分析
-      notes: "評估氧合、通氣和酸鹼平衡狀態"
+      notes: 評估氧合、通氣和酸鹼平衡狀態
     - name: 血糖和電解質檢測
-      notes: "排除代謝性原因"
+      notes: 排除代謝性原因
   differentialDiagnoses:
     - 術前既有心臟或呼吸系統疾病
     - 麻醉藥物劑量不當
     - 手術操作相關併發症
     - 惡性高熱(遺傳性肌肉病變)
-
 treatment:
   medical:
-    - "立即停止吸入麻醉藥,100%純氧供應"
-    - "心跳停止:立即CPR,Epinephrine 0.01 mg/kg IV,每3-5分鐘重複"
-    - "呼吸停止:人工通氣,Doxapram 1-2 mg/kg IV刺激呼吸(謹慎使用)"
-    - "低血壓:晶體液10-20 ml/kg快速輸注,Dopamine 5-10 μg/kg/min CRI"
-    - "惡性高熱:Dantrolene 2-3 mg/kg IV,積極降溫,高流量氧氣"
-    - "阿片類過量:Naloxone 0.04 mg/kg IV逆轉"
-    - "過敏反應:Epinephrine 0.01 mg/kg IV,Diphenhydramine 2-4 mg/kg IM"
-    - "喉痙攣:加深麻醉,Lidocaine噴霧,必要時重新插管"
-
+    - 立即停止吸入麻醉藥,100%純氧供應
+    - 心跳停止:立即CPR,Epinephrine 0.01 mg/kg IV,每3-5分鐘重複
+    - 呼吸停止:人工通氣,Doxapram 1-2 mg/kg IV刺激呼吸(謹慎使用)
+    - 低血壓:晶體液10-20 ml/kg快速輸注,Dopamine 5-10 μg/kg/min CRI
+    - 惡性高熱:Dantrolene 2-3 mg/kg IV,積極降溫,高流量氧氣
+    - 阿片類過量:Naloxone 0.04 mg/kg IV逆轉
+    - 過敏反應:Epinephrine 0.01 mg/kg IV,Diphenhydramine 2-4 mg/kg IM
+    - 喉痙攣:加深麻醉,Lidocaine噴霧,必要時重新插管
 prognosis:
-  general: "預後取決於緊急情況類型、識別速度和處理效率。心跳停止若能在2分鐘內開始有效CPR,存活率可達30-50%。呼吸道急症若及時處理預後良好。惡性高熱若延誤治療死亡率可達70%以上。"
-
+  general: 預後取決於緊急情況類型、識別速度和處理效率。心跳停止若能在2分鐘內開始有效CPR,存活率可達30-50%。呼吸道急症若及時處理預後良好。惡性高熱若延誤治療死亡率可達70%以上。
 prevention:
   - 術前完整評估(病史、理學檢查、必要時血檢和心電圖)
   - 麻醉前禁食時間適當(犬6-8小時,貓4-6小時)
@@ -93,3 +89,28 @@ prevention:
   - 準備完善的急救設備和藥物
   - 高風險患者考慮轉診專科醫院
   - 麻醉恢復期持續監測直到患者完全清醒
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: common
+diagnosticAlgorithm:
+  title: 麻醉急症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+        - pallor-cyanosis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 生命徵象監測
+          notes: 持續監測心率、呼吸、血壓、SpO2、體溫、呼氣末CO2
+        - name: 心電圖監測
+          notes: 識別心律不整類型,指導治療
+        - name: 血氣分析
+          notes: 評估氧合、通氣和酸鹼平衡狀態
+ddxSource: auto-generated

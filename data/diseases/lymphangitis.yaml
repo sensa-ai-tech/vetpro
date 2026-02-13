@@ -3,13 +3,15 @@ nameEn: Lymphangitis
 nameZh: 淋巴管炎
 bodySystem: vascular
 description: 淋巴管的感染性或非感染性炎症，導致患肢或受累區域水腫、疼痛及皮膚改變，常為局部傷口感染擴散至淋巴引流系統所致。
-
 aliases:
-  - { alias: 淋巴管發炎, language: zh }
-  - { alias: 淋巴管感染, language: zh }
-  - { alias: Lymphangitis, language: en }
-  - { alias: Lymphatic inflammation, language: en }
-
+  - alias: 淋巴管發炎
+    language: zh
+  - alias: 淋巴管感染
+    language: zh
+  - alias: Lymphangitis
+    language: en
+  - alias: Lymphatic inflammation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓淋巴管炎可與孢子絲菌症（Sporotrichosis）相關，表現為沿淋巴管分布的結節鏈。
-
 etiology:
   categories:
     - name: 感染性
@@ -33,7 +34,6 @@ etiology:
         - 異物反應
         - 腫瘤性淋巴管阻塞
         - 外傷後
-
 clinicalSigns:
   early:
     - 局部腫脹
@@ -46,21 +46,19 @@ clinicalSigns:
     - 瘻管形成與排膿
     - 發燒
     - 慢性纖維化與象皮病（elephantiasis）
-
 diagnosis:
   primaryTests:
     - name: 細胞學
-      notes: "分泌物或淋巴結穿刺。化膿性或肉芽腫性炎症。可能見到病原（孢子絲菌等）"
+      notes: 分泌物或淋巴結穿刺。化膿性或肉芽腫性炎症。可能見到病原（孢子絲菌等）
     - name: 培養
-      notes: "細菌與黴菌培養。分枝桿菌需特殊培養基"
+      notes: 細菌與黴菌培養。分枝桿菌需特殊培養基
     - name: 組織病理學
-      notes: "生檢受累組織。淋巴管壁炎症。肉芽腫反應（黴菌性）"
+      notes: 生檢受累組織。淋巴管壁炎症。肉芽腫反應（黴菌性）
   differentialDiagnoses:
     - 蜂窩織炎
     - 淋巴水腫
     - 軟組織腫瘤
     - 深部黴菌感染
-
 treatment:
   medical:
     - 細菌性——全身性抗生素（依培養藥敏，4-6 週）
@@ -72,44 +70,68 @@ treatment:
     - 膿瘍引流
     - 清創
     - 嚴重慢性病例——受累組織切除
-
 prognosis:
-  general: "細菌性經適當抗生素治療預後良好。深部黴菌感染需長期治療，預後謹慎。分枝桿菌感染治療困難。慢性淋巴管炎可能導致永久性淋巴水腫。"
-
+  general: 細菌性經適當抗生素治療預後良好。深部黴菌感染需長期治療，預後謹慎。分枝桿菌感染治療困難。慢性淋巴管炎可能導致永久性淋巴水腫。
 prevention:
   - 傷口適當清潔與治療
   - 深部黴菌流行區避免暴露
   - 早期治療局部感染
-
-
 guidelineRefs:
   - sourceOrg: One health (Amsterdam, Netherlands)
-    title: "Tick-borne diseases in Egypt: A one health perspective."
+    title: 'Tick-borne diseases in Egypt: A one health perspective.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9767813/
     type: review
-    pmid: "36561707"
+    pmid: '36561707'
     relevance: primary
   - sourceOrg: Open veterinary journal
     title: A comprehensive review of paratuberculosis in animals and its implications for public health.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11682747/
     type: review
-    pmid: "39737030"
+    pmid: '39737030'
     relevance: primary
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Pathophysiology, Diagnosis, and Management of Canine Intestinal Lymphangiectasia: A Comparative Review."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Pathophysiology, Diagnosis, and Management of Canine Intestinal Lymphangiectasia: A Comparative Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9597800/
     type: review
-    pmid: "36290177"
+    pmid: '36290177'
     relevance: primary
-  - sourceOrg: "Brazilian journal of microbiology : [publication of the Brazilian Society for Microbiology]"
-    title: "Current status of glanders in Brazil: recent advances and challenges."
+  - sourceOrg: 'Brazilian journal of microbiology : [publication of the Brazilian Society for Microbiology]'
+    title: 'Current status of glanders in Brazil: recent advances and challenges.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9679097/
     type: review
-    pmid: "36044120"
+    pmid: '36044120'
     relevance: primary
   - sourceOrg: Microorganisms
     title: The Transcriptional Regulatory Network of Corynebacterium pseudotuberculosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7923171/
     type: review
-    pmid: "33671149"
+    pmid: '33671149'
     relevance: primary
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 淋巴管炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - hyperthermia 相關症狀
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 細胞學
+          notes: 分泌物或淋巴結穿刺。化膿性或肉芽腫性炎症。可能見到病原（孢子絲菌等）
+        - name: 培養
+          notes: 細菌與黴菌培養。分枝桿菌需特殊培養基
+        - name: 組織病理學
+          notes: 生檢受累組織。淋巴管壁炎症。肉芽腫反應（黴菌性）
+ddxSource: auto-generated

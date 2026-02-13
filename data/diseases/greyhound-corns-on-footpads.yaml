@@ -3,18 +3,18 @@ nameEn: Greyhound Corns on Footpads
 nameZh: 靈緹犬足墊雞眼
 bodySystem: other
 description: 靈緹犬特有的足墊角質化病變,形成硬化的圓形或橢圓形病灶,壓迫底層組織引起疼痛及跛行。常見於賽犬退役後,與足墊持續受壓有關。
-
 aliases:
-  - { alias: 足墊雞眼, language: zh }
-  - { alias: Digital Keratoma, language: en }
-  - { alias: Footpad Corns, language: en }
-
+  - alias: 足墊雞眼
+    language: zh
+  - alias: Digital Keratoma
+    language: en
+  - alias: Footpad Corns
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 靈緹及惠比特為主要好發品種,尤其是賽犬
-
 etiology:
   categories:
     - name: 機械性壓力損傷
@@ -23,7 +23,6 @@ etiology:
         - 異常步態或站姿
         - 足墊創傷後癒合異常
         - 外來異物刺激
-
 clinicalSigns:
   early:
     - 足墊局部硬化病灶
@@ -34,18 +33,16 @@ clinicalSigns:
     - 持續性跛行
     - 觸診明顯疼痛
     - 多發性病灶(多個腳掌)
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
-      notes: "足墊中央或側邊圓形硬化病灶,壓痛明顯"
+      notes: 足墊中央或側邊圓形硬化病灶,壓痛明顯
     - name: X光檢查
-      notes: "排除底層骨骼病變或異物"
+      notes: 排除底層骨骼病變或異物
   differentialDiagnoses:
     - 足墊異物
     - 足墊腫瘤
     - 趾間囊腫
-
 treatment:
   medical:
     - 外科削除或切除(Hull technique)
@@ -54,12 +51,30 @@ treatment:
     - 足墊保護(軟墊、鞋套)
     - 疼痛控制(Carprofen 2-4 mg/kg PO q12h)
     - 減少硬地面活動
-
 prognosis:
-  general: "復發率高(50-70%),需持續管理。外科切除可暫時緩解,但可能需重複治療。保守治療需終生維護。"
-
+  general: 復發率高(50-70%),需持續管理。外科切除可暫時緩解,但可能需重複治療。保守治療需終生維護。
 prevention:
   - 避免長時間硬地面活動
   - 使用軟質護墊或鞋套
   - 定期足墊檢查及保養
   - 控制體重減少足墊負荷
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 靈緹犬足墊雞眼 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 足墊中央或側邊圓形硬化病灶,壓痛明顯
+        - name: X光檢查
+          notes: 排除底層骨骼病變或異物
+ddxSource: auto-generated

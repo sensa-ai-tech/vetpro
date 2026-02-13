@@ -3,12 +3,13 @@ nameEn: Whipworm Infection
 nameZh: 鞭蟲感染
 bodySystem: infectious
 description: 鞭蟲感染由 Trichuris vulpis（犬）引起，成蟲寄居於盲腸與結腸。蟲卵在環境中極為耐久（可存活數年）。引起大腸性腹瀉、血便及電解質異常。貓感染（T. serrata）極罕見。
-
 aliases:
-  - { alias: 犬鞭蟲病, language: zh }
-  - { alias: Trichuris Infection, language: en }
-  - { alias: Whipworm Disease, language: en }
-
+  - alias: 犬鞭蟲病
+    language: zh
+  - alias: Trichuris Infection
+    language: en
+  - alias: Whipworm Disease
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓鞭蟲 (T. serrata) 感染極罕見。臨床報告極少。
-
 etiology:
   categories:
     - name: 生活史
@@ -31,7 +31,6 @@ etiology:
         - 成蟲頭端鑽入腸黏膜
         - 引起大腸黏膜損傷與出血
         - 嚴重感染可引起類似 Addison 病的電解質異常（低鈉、高鉀）
-
 clinicalSigns:
   early:
     - 慢性間歇性大腸性腹瀉
@@ -43,7 +42,6 @@ clinicalSigns:
     - 脫水
     - 嚴重感染：低鈉高鉀血症（假性 Addison）
     - 慢性貧血
-
 diagnosis:
   primaryTests:
     - name: 糞便浮游法
@@ -53,7 +51,6 @@ diagnosis:
   additional:
     - CBC（嗜酸球增多、慢性貧血）
     - 糞便潛血
-
 treatment:
   principles:
     - 驅蟲藥物有效但需多次給藥
@@ -67,9 +64,54 @@ treatment:
     - 矯正電解質異常（IV 生理食鹽水）
     - 每月含 milbemycin 或 moxidectin 的廣效預防劑
     - 環境管理（清除糞便，但蟲卵難以消除）
-
 prognosis: 犬鞭蟲感染適當治療預後良好。電解質異常矯正後迅速改善。再感染常見（環境蟲卵持久），需持續每月預防。
-
 pubmedQueries:
   - query: '"whipworm" OR "Trichuris vulpis" AND (canine OR veterinary) AND ("treatment" OR "control")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 鞭蟲感染 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估大腸性腹瀉症狀，詢問環境史
+      findings:
+        - 大腸性腹瀉黏液血便
+        - 裡急後重
+        - 體重減輕
+        - 間歇性症狀
+    - step: 2
+      action: 糞便寄生蟲學檢查
+      details: 糞便浮游法需使用高比重浮游液
+      findings:
+        - 特徵性檸檬形雙蓋蟲卵
+        - 需高比重液
+        - 間歇性排卵需連續3天採樣
+        - 蟲卵量可能很少
+    - step: 3
+      action: 鑑別診斷
+      details: 排除其他大腸性腹瀉原因
+      findings:
+        - 排除大腸性IBD
+        - 排除腸道腫瘤
+        - 排除梭菌性腸炎
+        - 嚴重感染可致低鈉高鉀模擬Addison
+clinicalPearls:
+  - 鞭蟲感染可導致低鈉高鉀，臨床上模擬Addison病（假性Addison）
+  - 糞便單次檢查陰性不能排除感染（間歇性排卵）
+  - 蟲卵在土壤中可存活5-7年，環境控制困難
+  - 某些每月心絲蟲預防藥（含Milbemycin或Moxidectin）可同時預防鞭蟲
+  - 大腸性腹瀉在犬應考慮鞭蟲感染
+monitoringItems:
+  - 糞便檢查追蹤
+  - 腹瀉改善
+  - 電解質正常化
+  - 體重恢復
+  - 環境管理效果
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

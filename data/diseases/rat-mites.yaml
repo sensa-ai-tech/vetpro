@@ -3,19 +3,21 @@ nameEn: Rat Mites
 nameZh: 大鼠蟎蟲感染
 bodySystem: dermatology
 description: 大鼠蟎蟲感染是寵物大鼠常見的外寄生蟲疾病，主要由 Radfordia ensifera（毛囊蟎）與 Ornithonyssus bacoti（熱帶鼠蟎）引起。臨床表現為搔癢、脫毛與皮膚病變，嚴重感染可導致自我創傷與繼發性細菌感染。
-
 aliases:
-  - { alias: 大鼠蟎蟲, language: zh }
-  - { alias: 大鼠外寄生蟲, language: zh }
-  - { alias: Rat fur mites, language: en }
-  - { alias: Radfordia ensifera infection, language: en }
-  - { alias: Ornithonyssus bacoti in rats, language: en }
-
+  - alias: 大鼠蟎蟲
+    language: zh
+  - alias: 大鼠外寄生蟲
+    language: zh
+  - alias: Rat fur mites
+    language: en
+  - alias: Radfordia ensifera infection
+    language: en
+  - alias: Ornithonyssus bacoti in rats
+    language: en
 species:
   - speciesCommon: rat
     prevalence: common
     notes: 寵物大鼠常見外寄生蟲問題。Radfordia ensifera 為最常見的永久性寄生蟲。免疫力低下或緊迫時臨床症狀加重。
-
 etiology:
   categories:
     - name: 寄生蟲性
@@ -31,7 +33,6 @@ etiology:
         - 擁擠飼養
         - 新引入帶蟎個體
         - 老齡或疾病
-
 clinicalSigns:
   early:
     - 輕度搔癢（頻繁抓撓）
@@ -44,7 +45,6 @@ clinicalSigns:
     - 自我創傷（頸部、耳後抓傷出血）
     - 繼發性細菌感染（膿皮症）
     - 被毛粗糙
-
 diagnosis:
   primaryTests:
     - name: 皮膚刮片
@@ -53,7 +53,6 @@ diagnosis:
       notes: 使用透明膠帶黏貼患部毛髮，鏡檢可見蟎蟲或蟲卵
     - name: 臨床反應
       notes: 對蟎蟲治療的臨床反應可作為回顧性診斷依據
-
 treatment:
   principles:
     - 驅蟲治療（全群治療）
@@ -68,17 +67,46 @@ treatment:
     - 更換墊料
     - 繼發感染時給予抗生素
     - 改善飼養環境減少緊迫
-
 prognosis: 預後良好。正確驅蟲治療通常可完全清除蟎蟲。全群治療與環境清潔是成功關鍵。未治療同籠鼠會導致再感染。免疫力低下個體可能反覆感染需長期管理。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Distribution and Host Selection of Tropical Rat Mite, Ornithonyssus bacoti, in Yunnan Province of Southwest China.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7826691/
     type: research
-    pmid: "33430422"
+    pmid: '33430422'
     relevance: supporting
 pubmedQueries:
   - query: '"rat" AND ("mites" OR "Radfordia" OR "ectoparasite") AND (veterinary OR treatment)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: common
+  - symptomId: alopecia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 大鼠蟎蟲感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 皮膚刮片
+          notes: 淺層皮膚刮片可見蟎蟲或蟲卵。Radfordia 為毛囊蟎，需要在毛根處檢查
+        - name: 透明膠帶試驗
+          notes: 使用透明膠帶黏貼患部毛髮，鏡檢可見蟎蟲或蟲卵
+        - name: 臨床反應
+          notes: 對蟎蟲治療的臨床反應可作為回顧性診斷依據
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 驅蟲治療（全群治療）
+        - 環境清潔
+        - 處理繼發感染
+ddxSource: auto-generated

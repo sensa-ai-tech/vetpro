@@ -3,19 +3,21 @@ nameEn: French Bulldog Hemivertebra
 nameZh: 法國鬥牛犬半椎體畸形
 bodySystem: orthopedic
 description: 半椎體（Hemivertebra）是法國鬥牛犬極為常見的先天性脊椎畸形，椎體發育不對稱導致楔形或蝶形椎體，造成脊柱側彎或後彎。多數為無症狀的偶然發現，但嚴重者可壓迫脊髓導致後肢神經功能障礙。
-
 aliases:
-  - { alias: 法鬥半椎體, language: zh }
-  - { alias: 先天性脊椎畸形, language: zh }
-  - { alias: French Bulldog hemivertebrae, language: en }
-  - { alias: Butterfly vertebra, language: en }
-  - { alias: Wedge vertebra, language: en }
-
+  - alias: 法鬥半椎體
+    language: zh
+  - alias: 先天性脊椎畸形
+    language: zh
+  - alias: French Bulldog hemivertebrae
+    language: en
+  - alias: Butterfly vertebra
+    language: en
+  - alias: Wedge vertebra
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
     notes: 法國鬥牛犬幾乎全部有不同程度的半椎體。螺旋尾犬種（法鬥、英鬥、巴哥、波士頓梗）為高發群。胸椎（T5-T10）最常受累。
-
 etiology:
   categories:
     - name: 先天發育異常
@@ -29,7 +31,6 @@ etiology:
         - 品種選育導致的短脊柱表型
         - 多基因遺傳
         - 與短頭犬選育壓力相關
-
 clinicalSigns:
   early:
     - 多數無臨床症狀（偶然 X 光發現）
@@ -40,7 +41,6 @@ clinicalSigns:
     - 排尿排便異常
     - 後肢癱瘓（嚴重脊髓壓迫）
     - 疼痛（少數）
-
 diagnosis:
   primaryTests:
     - name: 脊椎 X 光
@@ -49,7 +49,6 @@ diagnosis:
       notes: 3D 重建評估椎體畸形詳細結構。術前規劃
     - name: MRI
       notes: 評估脊髓壓迫程度。有神經症狀者必須評估
-
 treatment:
   principles:
     - 無症狀者僅需監測
@@ -63,21 +62,53 @@ treatment:
     - 物理復健（術後或保守治療輔助）
     - 維持理想體重
     - 繁殖建議：嚴重半椎體犬不建議繁殖
-
 prognosis: 無症狀個體預後良好，多數終生不出現問題。有輕度神經症狀者保守治療通常可控制。嚴重脊髓壓迫經手術減壓後多數可改善。脊柱嚴重不穩定者預後較差。繁殖篩選可降低嚴重畸形的發生率。
-
-
 guidelineRefs:
   - sourceOrg: BMC veterinary research
     title: Evaluation of the influence of kyphosis and scoliosis on intervertebral disc extrusion in French bulldogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5756331/
     type: research
-    pmid: "29304802"
-  - sourceOrg: "Veterinary journal (London, England : 1997)"
-    title: "Vertebral and spinal malformations in small brachycephalic dog breeds: Current knowledge and remaining questions."
+    pmid: '29304802'
+  - sourceOrg: 'Veterinary journal (London, England : 1997)'
+    title: 'Vertebral and spinal malformations in small brachycephalic dog breeds: Current knowledge and remaining questions.'
     url: https://pubmed.ncbi.nlm.nih.gov/38458418/
     type: review
-    pmid: "38458418"
+    pmid: '38458418'
 pubmedQueries:
   - query: '"French Bulldog" AND ("hemivertebra" OR "vertebral malformation") AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: uncommon
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 法國鬥牛犬半椎體畸形 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+        - paresis-paralysis 相關症狀
+        - ataxia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 脊椎 X 光
+          notes: 可見楔形或蝶形椎體。評估脊柱彎曲程度。為常見偶然發現
+        - name: CT 掃描
+          notes: 3D 重建評估椎體畸形詳細結構。術前規劃
+        - name: MRI
+          notes: 評估脊髓壓迫程度。有神經症狀者必須評估
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 無症狀者僅需監測
+        - 有神經症狀者可能需手術
+        - 體重管理減輕脊柱負擔
+ddxSource: auto-generated

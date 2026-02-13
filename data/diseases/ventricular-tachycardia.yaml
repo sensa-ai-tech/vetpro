@@ -2,14 +2,18 @@ slug: ventricular-tachycardia
 nameEn: Ventricular Tachycardia
 nameZh: 心室頻脈
 bodySystem: cardiac
-description: 心室頻脈（VT）為起源於心室的快速心律不整，定義為連續三個以上的心室早期收縮（VPCs），心率通常 >160-180 bpm。VT 可導致心輸出量降低、低血壓、昏厥，甚至惡化為心室纖維顫動致突然死亡。犬隻中常見於 Boxer、Doberman Pinscher、German Shepherd 及心臟病患者。
-
+description: >-
+  心室頻脈（VT）為起源於心室的快速心律不整，定義為連續三個以上的心室早期收縮（VPCs），心率通常 >160-180 bpm。VT 可導致心輸出量降低、低血壓、昏厥，甚至惡化為心室纖維顫動致突然死亡。犬隻中常見於
+  Boxer、Doberman Pinscher、German Shepherd 及心臟病患者。
 aliases:
-  - { alias: VT, language: en }
-  - { alias: V-Tach, language: en }
-  - { alias: 室速, language: zh }
-  - { alias: 室性心動過速, language: zh }
-
+  - alias: VT
+    language: en
+  - alias: V-Tach
+    language: en
+  - alias: 室速
+    language: zh
+  - alias: 室性心動過速
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻較少見，可繼發於心肌病（HCM、RCM）或電解質異常。
-
 etiology:
   categories:
     - name: 結構性心臟病
@@ -33,7 +36,6 @@ etiology:
         - 嚴重電解質異常（低血鉀、低血鎂）
         - 創傷性心肌炎（交通事故後）
         - 藥物中毒（毛地黃中毒）
-
 clinicalSigns:
   early:
     - 心率加快且規則或略不規則
@@ -45,61 +47,106 @@ clinicalSigns:
     - 呼吸困難
     - 黏膜蒼白
     - 突然死亡（惡化為心室纖維顫動）
-
 diagnosis:
   primaryTests:
     - name: 心電圖（ECG）
-      notes: "確診必須。特徵：寬 QRS 波群（>0.06 秒犬），心率通常 >180 bpm，QRS 形態與正常竇性不同。分為單型性（monomorphic）與多型性（polymorphic）VT。"
+      notes: 確診必須。特徵：寬 QRS 波群（>0.06 秒犬），心率通常 >180 bpm，QRS 形態與正常竇性不同。分為單型性（monomorphic）與多型性（polymorphic）VT。
     - name: 24 小時 Holter 監測
       notes: 評估 VT 發作頻率與持續時間，偵測間歇性 VT。Boxer 與 Doberman 品種篩檢重要工具。
-
 treatment:
   principles:
     - 血流動力學不穩定的 VT 為急診
     - 治療基礎病因同時控制心律不整
     - 藥物選擇取決於 VT 類型與基礎疾病
   general:
-    - "急性穩定期：Lidocaine 2 mg/kg IV bolus（可重複至總量 8 mg/kg），後接 25-80 μg/kg/min CRI"
-    - "口服維持：Sotalol 1.5-3.5 mg/kg PO q12h（Boxer ARVC 首選）"
-    - "Mexiletine 5-8 mg/kg PO q8h（常與 Sotalol 合併使用）"
-    - "Amiodarone 10-15 mg/kg PO q12h × 7 天後減量（難治性 VT）"
+    - 急性穩定期：Lidocaine 2 mg/kg IV bolus（可重複至總量 8 mg/kg），後接 25-80 μg/kg/min CRI
+    - 口服維持：Sotalol 1.5-3.5 mg/kg PO q12h（Boxer ARVC 首選）
+    - Mexiletine 5-8 mg/kg PO q8h（常與 Sotalol 合併使用）
+    - Amiodarone 10-15 mg/kg PO q12h × 7 天後減量（難治性 VT）
     - 治療基礎病因（電解質矯正、腫瘤治療等）
     - 血流動力學不穩定時考慮電擊復律
-
-prognosis: 預後取決於基礎病因與 VT 嚴重程度。Boxer ARVC 合併 VT 在適當抗心律不整治療下，多數可維持良好生活品質數年。Doberman DCM 合併 VT 預後較差。非心臟性原因（如 GDV 術後）導致的 VT 在病因矯正後通常可自行消退。持續性多型性 VT 或極快速 VT 有突然死亡風險。
-
-
+prognosis: >-
+  預後取決於基礎病因與 VT 嚴重程度。Boxer ARVC 合併 VT 在適當抗心律不整治療下，多數可維持良好生活品質數年。Doberman DCM 合併 VT 預後較差。非心臟性原因（如 GDV 術後）導致的 VT
+  在病因矯正後通常可自行消退。持續性多型性 VT 或極快速 VT 有突然死亡風險。
 guidelineRefs:
   - sourceOrg: Frontiers in cardiovascular medicine
-    title: "Arrhythmias across the tree of life: comparative insights for human electrophysiology."
+    title: 'Arrhythmias across the tree of life: comparative insights for human electrophysiology.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12816241/
     type: review
-    pmid: "41567384"
+    pmid: '41567384'
     relevance: primary
   - sourceOrg: Therapeutic advances in endocrinology and metabolism
     title: Hypoglycaemia and cardiac arrhythmias in diabetes.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7238305/
     type: review
-    pmid: "32489579"
+    pmid: '32489579'
     relevance: primary
   - sourceOrg: Frontiers in cardiovascular medicine
     title: Multifocal ectopic purkinje-related premature contractions and related cardiomyopathy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10436533/
     type: review
-    pmid: "37600057"
+    pmid: '37600057'
     relevance: primary
   - sourceOrg: Circulation research
-    title: "Increased Intermembrane Space [Ca2+] Drives Mitochondrial Structural Damage in CPVT."
+    title: Increased Intermembrane Space [Ca2+] Drives Mitochondrial Structural Damage in CPVT.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12680285/
     type: research
-    pmid: "41127903"
+    pmid: '41127903'
     relevance: supporting
   - sourceOrg: Acta Cardiologica Sinica
     title: Empagliflozin Ameliorates Atrial and Ventricular Remodeling and Arrhythmogenesis in an Overweight Rabbit Model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11579691/
     type: research
-    pmid: "39582852"
+    pmid: '39582852'
     relevance: supporting
 pubmedQueries:
   - query: '"ventricular tachycardia" AND (veterinary OR canine OR feline) AND ("treatment" OR "antiarrhythmic")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 心室性心搏過速 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估急性虛弱、暈厥、猝死風險，注意潛在心臟病或全身性疾病
+      findings:
+        - 急性虛弱或暈厥
+        - 聽診心率極快且可能不規則
+        - 黏膜蒼白或發紺
+    - step: 2
+      action: 心電圖診斷
+      details: 進行心電圖確認寬QRS波群心搏過速，評估血流動力學穩定性
+      findings:
+        - 寬大畸形QRS波群（>0.06秒犬）
+        - 心率>160-180 bpm
+        - 房室分離（P波與QRS無關）
+    - step: 3
+      action: 病因評估與分級
+      details: 進行心臟超音波、電解質和心肌肌鈣蛋白檢測，尋找潛在病因
+      findings:
+        - 心臟超音波評估心肌病變
+        - 心肌肌鈣蛋白升高提示心肌損傷
+        - 排除電解質異常、脾臟腫瘤、胃扭轉等系統性原因
+clinicalPearls:
+  - 拳師犬出現昏厥應高度懷疑ARVC相關VT，需Holter評估
+  - GDV術後48小時內VT發生率高達40%，需持續ECG監測
+  - Lidocaine對貓效果差且有神經毒性風險，貓VT考慮atenolol或sotalol
+  - VPC>24小時Holter總數的15-20%可能導致心搏過速性心肌病
+  - 低鎂血症可降低抗心律不整藥物效果，應同時補充
+monitoringItems:
+  - 連續ECG監測（住院期間）
+  - 24小時Holter評估治療效果
+  - 心臟超音波定期追蹤
+  - 電解質監測
+  - Amiodarone使用時監測肝腎功能及甲狀腺功能
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+ddxSource: book

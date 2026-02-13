@@ -3,12 +3,13 @@ nameEn: Neonatal Toxic Milk Syndrome
 nameZh: 新生兒毒乳症候群
 bodySystem: toxicology
 description: 新生犬貓因母體乳腺炎或全身性感染，攝入含有毒素或細菌的母乳而出現急性中毒症狀。常見於產後乳腺炎未及時診治的母犬貓。
-
 aliases:
-  - { alias: 毒乳症, language: zh }
-  - { alias: Toxic Milk Syndrome, language: en }
-  - { alias: Mastitis-Associated Toxemia, language: en }
-
+  - alias: 毒乳症
+    language: zh
+  - alias: Toxic Milk Syndrome
+    language: en
+  - alias: Mastitis-Associated Toxemia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 母貓乳腺炎較犬少見但仍需警惕
-
 etiology:
   categories:
     - name: 母體因素
@@ -32,7 +32,6 @@ etiology:
         - 細菌內毒素
         - 發炎介質
         - 細菌本身(大腸桿菌、鏈球菌)
-
 clinicalSigns:
   early:
     - 突然停止吸乳或吸乳後哭鬧
@@ -45,23 +44,21 @@ clinicalSigns:
     - 虛弱、嗜睡
     - 低體溫
     - 死亡(若未及時處置)
-
 diagnosis:
   primaryTests:
     - name: 母體乳腺檢查
-      notes: "乳腺紅腫熱痛、乳汁異常(黃綠色、有血、惡臭)"
+      notes: 乳腺紅腫熱痛、乳汁異常(黃綠色、有血、惡臭)
     - name: 乳汁細菌培養
-      notes: "確認病原菌"
+      notes: 確認病原菌
     - name: 幼犬糞便檢查
-      notes: "綠色水樣便，pH偏酸"
+      notes: 綠色水樣便，pH偏酸
     - name: 母體血液檢查
-      notes: "白血球升高、發炎指標"
+      notes: 白血球升高、發炎指標
   differentialDiagnoses:
     - 病毒性腸炎
     - 細菌性腸炎
     - 寄生蟲感染
     - 食物不耐受
-
 treatment:
   medical:
     - 立即停止哺乳，改用代乳配方
@@ -73,28 +70,60 @@ treatment:
     - 抗生素(若有繼發性感染)
     - 母體治療：Cephalexin 22 mg/kg PO q12h或Amoxicillin-clavulanate 12.5-25 mg/kg q12h
     - 母體症狀改善且乳汁正常後可恢復哺乳
-
 prognosis:
-  general: "早期發現並停止哺乳預後良好；若已發生嚴重脫水或敗血症則預後謹慎"
-
+  general: 早期發現並停止哺乳預後良好；若已發生嚴重脫水或敗血症則預後謹慎
 prevention:
   - 產後密切監測母體乳腺狀態
   - 及早治療乳腺炎
   - 保持環境清潔
   - 避免乳頭受傷
   - 定期檢查幼犬糞便及活力
-
-
 guidelineRefs:
   - sourceOrg: Neuropharmacology
-    title: "The effects of buprenorphine and morphine during pregnancy: Impact of exposure length on maternal brain, behavior, and offspring neurodevelopment."
+    title: >-
+      The effects of buprenorphine and morphine during pregnancy: Impact of exposure length on maternal brain, behavior,
+      and offspring neurodevelopment.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11285462/
     type: research
-    pmid: "38960134"
+    pmid: '38960134'
     relevance: supporting
   - sourceOrg: BMC genomics
-    title: "Abstracts from the 3rd International Genomic Medicine Conference (3rd IGMC 2015) : Jeddah, Kingdom of Saudi Arabia. 30 November - 3 December 2015."
+    title: >-
+      Abstracts from the 3rd International Genomic Medicine Conference (3rd IGMC 2015) : Jeddah, Kingdom of Saudi
+      Arabia. 30 November - 3 December 2015.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4959372/
     type: research
-    pmid: "27454254"
+    pmid: '27454254'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: abdominal-distension
+    frequency: common
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 新生兒毒乳症候群 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - abdominal-distension 相關症狀
+        - hypothermia-sign 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 母體乳腺檢查
+          notes: 乳腺紅腫熱痛、乳汁異常(黃綠色、有血、惡臭)
+        - name: 乳汁細菌培養
+          notes: 確認病原菌
+        - name: 幼犬糞便檢查
+          notes: 綠色水樣便，pH偏酸
+ddxSource: auto-generated

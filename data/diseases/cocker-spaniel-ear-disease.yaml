@@ -3,18 +3,19 @@ nameEn: Cocker Spaniel Ear Disease
 nameZh: 可卡犬耳病
 bodySystem: ear
 description: 可卡犬為慢性外耳炎與中耳炎最高風險品種，長垂耳、耳道毛髮過多及皮脂腺過度分泌造成耳道環境潮濕，極易發生細菌與酵母菌感染。反覆感染可導致耳道增生、狹窄甚至需要手術治療。
-
 aliases:
-  - { alias: 可卡犬外耳炎, language: zh }
-  - { alias: 可卡犬慢性耳病, language: zh }
-  - { alias: Cocker Spaniel otitis, language: en }
-  - { alias: Cocker Spaniel chronic ear infection, language: en }
-
+  - alias: 可卡犬外耳炎
+    language: zh
+  - alias: 可卡犬慢性耳病
+    language: zh
+  - alias: Cocker Spaniel otitis
+    language: en
+  - alias: Cocker Spaniel chronic ear infection
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
     notes: 可卡犬為外耳炎最高發品種。英國可卡尤甚。皮脂腺過度分泌（原發性皮脂溢）為品種特徵。多數可卡犬一生中會經歷耳道問題。
-
 etiology:
   categories:
     - name: 品種解剖因素
@@ -33,7 +34,6 @@ etiology:
         - 過敏性皮膚炎（異位性皮膚炎、食物過敏）
         - 原發性皮脂溢
         - 甲狀腺功能低下
-
 clinicalSigns:
   early:
     - 搖頭甩耳
@@ -47,7 +47,6 @@ clinicalSigns:
     - 耳道狹窄（慢性增生）
     - 頭部傾斜（中耳炎）
     - 聽力下降
-
 diagnosis:
   primaryTests:
     - name: 耳鏡檢查
@@ -56,7 +55,6 @@ diagnosis:
       notes: 棉棒抹片染色見酵母菌、細菌、發炎細胞。指導治療選擇
     - name: 細菌培養與藥敏
       notes: 慢性反覆或 Pseudomonas 感染時需培養指導抗生素選擇
-
 treatment:
   principles:
     - 治療繼發感染
@@ -71,9 +69,36 @@ treatment:
     - 嚴重增生：全身性類固醇短期減腫
     - 耳道不可逆增生狹窄：全耳道切除術（TECA）
     - 定期清耳預防復發
-
 prognosis: 輕度外耳炎治療反應良好。慢性反覆性耳炎需找出基礎原因（過敏）才能有效控制。耳道嚴重增生不可逆者可能需要全耳道切除手術，術後效果通常良好。終生耳道維護是可卡犬飼主的重要工作。
-
 pubmedQueries:
   - query: '"Cocker Spaniel" AND ("otitis" OR "ear disease" OR "ear infection") AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: head-tilt
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 可卡犬耳病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - head-tilt 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 耳鏡檢查
+          notes: 評估耳道紅腫、分泌物、鼓膜完整性。慢性病例可見耳道增生狹窄
+        - name: 耳道分泌物細胞學
+          notes: 棉棒抹片染色見酵母菌、細菌、發炎細胞。指導治療選擇
+        - name: 細菌培養與藥敏
+          notes: 慢性反覆或 Pseudomonas 感染時需培養指導抗生素選擇
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療繼發感染
+        - 找出並控制基礎原因
+        - 維持耳道清潔
+ddxSource: auto-generated

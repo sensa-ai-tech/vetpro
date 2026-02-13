@@ -3,12 +3,13 @@ nameEn: Prescription Diet GI
 nameZh: 腸胃道處方飲食
 bodySystem: metabolic
 description: 專為急慢性腸胃道疾病設計的高消化性、低脂、適度纖維飲食。促進腸道健康、減輕腸胃負擔、改善消化吸收。
-
 aliases:
-  - { alias: 腸胃處方飼料, language: zh }
-  - { alias: Gastrointestinal Diet, language: en }
-  - { alias: Digestive Care Diet, language: en }
-
+  - alias: 腸胃處方飼料
+    language: zh
+  - alias: Gastrointestinal Diet
+    language: en
+  - alias: Digestive Care Diet
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 慢性腸胃炎、IBD使用
-
 etiology:
   categories:
     - name: 飲食特點
@@ -35,7 +35,6 @@ etiology:
         - 炎症性腸病(IBD)
         - 胰臟炎恢復期
         - 蛋白質流失性腸病
-
 clinicalSigns:
   early:
     - 腹瀉改善
@@ -46,23 +45,21 @@ clinicalSigns:
     - 體重恢復
     - 活力增加
     - 腸胃症狀完全緩解
-
 diagnosis:
   primaryTests:
     - name: 糞便檢查
-      notes: "排除寄生蟲、細菌、病毒"
+      notes: 排除寄生蟲、細菌、病毒
     - name: 血液檢查
-      notes: "評估白蛋白、總蛋白"
+      notes: 評估白蛋白、總蛋白
     - name: 影像學
-      notes: "腹部X光或超音波"
+      notes: 腹部X光或超音波
     - name: 內視鏡+切片
-      notes: "IBD確診"
+      notes: IBD確診
   differentialDiagnoses:
     - 急性腸胃炎
     - 炎症性腸病
     - 食物過敏
     - 胰臟炎
-
 treatment:
   medical:
     - 商業腸胃處方
@@ -78,12 +75,35 @@ treatment:
     - 免疫抑制劑(IBD)
     - 止瀉藥、止吐藥
     - 維生素B12補充(IBD)
-
 prognosis:
-  general: "急性腸胃炎使用腸胃處方快速改善；慢性IBD需長期配合飲食及藥物"
-
+  general: 急性腸胃炎使用腸胃處方快速改善；慢性IBD需長期配合飲食及藥物
 prevention:
   - 避免突然更換飲食
   - 避免高脂食物
   - 定期驅蟲
   - 壓力管理
+associatedSymptoms:
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 腸胃道處方飲食 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - vomiting 相關症狀
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便檢查
+          notes: 排除寄生蟲、細菌、病毒
+        - name: 血液檢查
+          notes: 評估白蛋白、總蛋白
+        - name: 影像學
+          notes: 腹部X光或超音波
+ddxSource: auto-generated

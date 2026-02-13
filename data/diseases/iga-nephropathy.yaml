@@ -3,13 +3,15 @@ nameEn: IgA Nephropathy
 nameZh: IgA 腎病
 bodySystem: renal
 description: IgA 腎病是以 IgA 免疫球蛋白沉積於腎絲球系膜區為特徵的腎絲球疾病。在犬中有報告但不如人類常見，表現為血尿和蛋白尿。
-
 aliases:
-  - { alias: IgA 腎絲球腎炎, language: zh }
-  - { alias: 系膜 IgA 沉積腎病, language: zh }
-  - { alias: Berger Disease, language: en }
-  - { alias: IgA Glomerulonephritis, language: en }
-
+  - alias: IgA 腎絲球腎炎
+    language: zh
+  - alias: 系膜 IgA 沉積腎病
+    language: zh
+  - alias: Berger Disease
+    language: en
+  - alias: IgA Glomerulonephritis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓 IgA 腎病極為罕見，文獻報告稀少。
-
 etiology:
   categories:
     - name: 病因機制
@@ -33,7 +34,6 @@ etiology:
         - 慢性黏膜感染（呼吸道、消化道）
         - 遺傳性免疫球蛋白異常
         - 自體免疫傾向
-
 clinicalSigns:
   early:
     - 血尿（肉眼或顯微鏡下）
@@ -44,19 +44,17 @@ clinicalSigns:
     - 高血壓
     - 腎功能逐漸衰退
     - 腎病症候群（少數病例）
-
 diagnosis:
   primaryTests:
     - name: 腎臟活檢（含免疫螢光）
-      notes: "確診需免疫螢光檢查證實系膜區 IgA 沉積為主。光學顯微鏡見系膜增生。電子顯微鏡見系膜電子緻密物。"
+      notes: 確診需免疫螢光檢查證實系膜區 IgA 沉積為主。光學顯微鏡見系膜增生。電子顯微鏡見系膜電子緻密物。
     - name: 尿液分析
-      notes: "血尿（紅血球管型、畸形紅血球提示腎絲球來源）和蛋白尿。UPC 升高。"
+      notes: 血尿（紅血球管型、畸形紅血球提示腎絲球來源）和蛋白尿。UPC 升高。
   differentialDiagnoses:
     - 膜增生性腎絲球腎炎
     - 膜性腎絲球腎炎
     - 急性腎絲球腎炎
     - 遺傳性腎炎
-
 treatment:
   medical:
     - ACE 抑制劑控制蛋白尿和高血壓
@@ -66,44 +64,62 @@ treatment:
     - 高血壓管理
   surgical:
     - 腎臟活檢（診斷性）
-
 prognosis:
-  general: "預後變異性大。輕度持續性血尿和蛋白尿者可能長期穩定。進行性蛋白尿加重和腎功能衰退者預後較差。犬 IgA 腎病的長期預後資料有限。"
-
+  general: 預後變異性大。輕度持續性血尿和蛋白尿者可能長期穩定。進行性蛋白尿加重和腎功能衰退者預後較差。犬 IgA 腎病的長期預後資料有限。
 prevention:
   - 無已知特異性預防措施
   - 定期尿液蛋白篩檢
   - 呼吸道和消化道感染的及時治療
-
-
 guidelineRefs:
   - sourceOrg: Kidney diseases (Basel, Switzerland)
-    title: "LRG1 Contributes to the Pathogenesis of Multiple Kidney Diseases: A Comprehensive Review."
+    title: 'LRG1 Contributes to the Pathogenesis of Multiple Kidney Diseases: A Comprehensive Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11126829/
     type: review
-    pmid: "38799248"
+    pmid: '38799248'
     relevance: primary
   - sourceOrg: Journal of toxicologic pathology
     title: MicroRNAs associated with the development of kidney diseases in humans and animals.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5820100/
     type: review
-    pmid: "29479137"
+    pmid: '29479137'
     relevance: primary
   - sourceOrg: Journal of clinical medicine
-    title: "The Contribution of Complement to the Pathogenesis of IgA Nephropathy: Are Complement-Targeted Therapies Moving from Rare Disorders to More Common Diseases?"
+    title: >-
+      The Contribution of Complement to the Pathogenesis of IgA Nephropathy: Are Complement-Targeted Therapies Moving
+      from Rare Disorders to More Common Diseases?
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8539100/
     type: review
-    pmid: "34682837"
+    pmid: '34682837'
     relevance: primary
   - sourceOrg: Pharmaceuticals (Basel, Switzerland)
-    title: "The Effects of Perilla frutescens Extracts on IgA Nephropathy: A Systematic Review and Meta-Analysis."
+    title: 'The Effects of Perilla frutescens Extracts on IgA Nephropathy: A Systematic Review and Meta-Analysis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10385934/
     type: review
-    pmid: "37513901"
+    pmid: '37513901'
     relevance: primary
-  - sourceOrg: "Cell communication and signaling : CCS"
+  - sourceOrg: 'Cell communication and signaling : CCS'
     title: IKZF1 as a potential therapeutic target for dendritic cell-mediated immunotherapy in IgA nephropathy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12057048/
     type: research
-    pmid: "40336063"
+    pmid: '40336063'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: haematuria
+    frequency: common
+diagnosticAlgorithm:
+  title: IgA 腎病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腎臟活檢（含免疫螢光）
+          notes: 確診需免疫螢光檢查證實系膜區 IgA 沉積為主。光學顯微鏡見系膜增生。電子顯微鏡見系膜電子緻密物。
+        - name: 尿液分析
+          notes: 血尿（紅血球管型、畸形紅血球提示腎絲球來源）和蛋白尿。UPC 升高。
+ddxSource: auto-generated

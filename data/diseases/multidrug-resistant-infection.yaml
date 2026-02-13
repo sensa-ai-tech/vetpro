@@ -3,12 +3,13 @@ nameEn: Multidrug Resistant Infection
 nameZh: 多重抗藥性感染
 bodySystem: infectious
 description: 多重抗藥性(MDR)感染是指細菌對三類或以上抗生素具抗性,包括MRSP、ESBL、AmpC產生菌及Carbapenem抗性菌等。此類感染治療選擇極為有限,常見於長期抗生素使用、住院或免疫低下動物,死亡率高,屬全球獸醫及人醫重大挑戰。
-
 aliases:
-  - { alias: MDR感染, language: en }
-  - { alias: 超級細菌感染, language: zh }
-  - { alias: Superbug Infection, language: en }
-
+  - alias: MDR感染
+    language: en
+  - alias: 超級細菌感染
+    language: zh
+  - alias: Superbug Infection
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓MDR感染較犬少見,但術後及慢性病貓隻風險增加
-
 etiology:
   categories:
     - name: 多重抗藥性細菌感染
@@ -28,10 +28,9 @@ etiology:
         - AmpC產生菌(Enterobacter、Pseudomonas)
         - Carbapenem抗性菌(CRE)
         - 不當抗生素使用、住院、免疫抑制為主要危險因子
-
 clinicalSigns:
   early:
-    - 依感染部位而異:
+    - 依感染部位而異: null
     - 皮膚:膿皮症、傷口感染
     - 泌尿道:膿尿、血尿、頻尿
     - 呼吸道:肺炎、膿胸
@@ -42,27 +41,25 @@ clinicalSigns:
     - 菌血症、敗血症:高燒、休克、DIC
     - 多重器官衰竭
     - 慢性難治性感染
-
 diagnosis:
   primaryTests:
     - name: 細菌培養及藥敏試驗
-      notes: "必須包含完整藥敏測試(≥10種抗生素),確認MDR(對≥3類抗生素抗性)"
+      notes: 必須包含完整藥敏測試(≥10種抗生素),確認MDR(對≥3類抗生素抗性)
     - name: 分子檢測
-      notes: "PCR檢測抗藥性基因(mecA、blaCTX-M、blaNDM等)"
+      notes: PCR檢測抗藥性基因(mecA、blaCTX-M、blaNDM等)
     - name: 組織或體液培養
-      notes: "深層感染需組織切片或體液培養"
+      notes: 深層感染需組織切片或體液培養
     - name: 藥敏試驗擴展檢測
-      notes: "包含最後防線抗生素(Carbapenem、Tigecycline、Colistin)"
+      notes: 包含最後防線抗生素(Carbapenem、Tigecycline、Colistin)
   differentialDiagnoses:
     - 單一抗藥性感染
     - 真菌性感染
     - 分枝桿菌感染
     - 無菌性炎症
-
 treatment:
   medical:
-    - 依據藥敏試驗個體化治療(療程通常6-12週):
-    - 聯合抗生素治療(提高療效、降低抗藥性):
+    - 依據藥敏試驗個體化治療(療程通常6-12週): null
+    - 聯合抗生素治療(提高療效、降低抗藥性): null
     - Imipenem 5 mg/kg IV TID + Amikacin 15 mg/kg IV SID(嚴重感染)
     - Rifampin 5-10 mg/kg PO BID + Chloramphenicol 50 mg/kg PO TID
     - Doxycycline 10 mg/kg PO BID + Pradofloxacin 5 mg/kg PO SID
@@ -72,10 +69,8 @@ treatment:
     - 外科清創、膿瘍引流
     - 免疫支持:營養、減少類固醇
     - 長期監測:腎肝功能、血球計數
-
 prognosis:
-  general: "預後不良至極不良。表淺感染經積極治療可能控制,但復發率極高(50-70%)。深層或播散性MDR感染死亡率可達40-60%。部分病例需考慮安樂死。"
-
+  general: 預後不良至極不良。表淺感染經積極治療可能控制,但復發率極高(50-70%)。深層或播散性MDR感染死亡率可達40-60%。部分病例需考慮安樂死。
 prevention:
   - 抗生素管理:避免濫用、依據培養結果用藥、完整療程
   - 感染控制:隔離、手部衛生、環境消毒
@@ -83,3 +78,31 @@ prevention:
   - 住院動物定期篩檢MDR菌
   - 人畜間避免交叉感染
   - 公共衛生教育:抗藥性威脅認知
+associatedSymptoms:
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: pollakiuria
+    frequency: common
+  - symptomId: haematuria
+    frequency: common
+diagnosticAlgorithm:
+  title: 多重抗藥性感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - hyperthermia 相關症狀
+        - pollakiuria 相關症狀
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 細菌培養及藥敏試驗
+          notes: 必須包含完整藥敏測試(≥10種抗生素),確認MDR(對≥3類抗生素抗性)
+        - name: 分子檢測
+          notes: PCR檢測抗藥性基因(mecA、blaCTX-M、blaNDM等)
+        - name: 組織或體液培養
+          notes: 深層感染需組織切片或體液培養
+ddxSource: auto-generated

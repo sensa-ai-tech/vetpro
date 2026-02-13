@@ -3,13 +3,15 @@ nameEn: Xylitol Hepatotoxicity
 nameZh: 木糖醇肝毒性
 bodySystem: toxicology
 description: 木糖醇肝毒性是犬攝入高劑量木糖醇後發生的急性肝壞死，通常在攝入後24-72小時出現。與低血糖機制不同，肝毒性可能與肝細胞ATP耗竭相關，死亡率高。
-
 aliases:
-  - { alias: 木糖醇致急性肝衰竭, language: zh }
-  - { alias: 木糖醇肝壞死, language: zh }
-  - { alias: Xylitol-Induced Hepatic Necrosis, language: en }
-  - { alias: Xylitol Liver Failure, language: en }
-
+  - alias: 木糖醇致急性肝衰竭
+    language: zh
+  - alias: 木糖醇肝壞死
+    language: zh
+  - alias: Xylitol-Induced Hepatic Necrosis
+    language: en
+  - alias: Xylitol Liver Failure
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓的木糖醇肝毒性報告極少，臨床意義不如犬明確。
-
 etiology:
   categories:
     - name: 毒性劑量
@@ -34,7 +35,6 @@ etiology:
         - 活性氧物質 (ROS) 產生增加
         - 急性彌漫性肝細胞壞死
         - 繼發 DIC 與多重器官衰竭
-
 clinicalSigns:
   early:
     - 低血糖症狀（攝入後10-60分鐘，可能已治療緩解）
@@ -48,19 +48,17 @@ clinicalSigns:
     - 出血傾向（瘀斑、血尿、消化道出血）
     - DIC
     - 肝性腦病
-
 diagnosis:
   primaryTests:
     - name: 肝功能監測
-      notes: "ALT、AST 每8-12小時監測。攝入後8-12小時開始升高，24-48小時達峰值。ALT >10,000 U/L 提示嚴重壞死。"
+      notes: ALT、AST 每8-12小時監測。攝入後8-12小時開始升高，24-48小時達峰值。ALT >10,000 U/L 提示嚴重壞死。
     - name: 凝血功能
-      notes: "PT、aPTT 延長。纖維蛋白原下降。D-dimer 升高提示 DIC。血小板計數可能下降。"
+      notes: PT、aPTT 延長。纖維蛋白原下降。D-dimer 升高提示 DIC。血小板計數可能下降。
   differentialDiagnoses:
     - 其他肝毒性物質中毒（Sago Palm、Amanita蘑菇）
     - 急性肝炎
     - 肝臟創傷
     - 急性膽管炎
-
 treatment:
   medical:
     - N-acetylcysteine (NAC) 140 mg/kg IV 首劑，後 70 mg/kg IV q6h × 7 次（抗氧化肝保護）
@@ -73,11 +71,39 @@ treatment:
     - 密集監護至少72小時
   surgical:
     - 通常不適用手術治療
-
 prognosis:
-  general: "肝毒性一旦發生預後謹慎至不良，死亡率約20-50%。早期給予 NAC 保護肝臟可改善預後。凝血功能嚴重異常或 DIC 者預後極差。存活者肝臟可能再生恢復。"
-
+  general: 肝毒性一旦發生預後謹慎至不良，死亡率約20-50%。早期給予 NAC 保護肝臟可改善預後。凝血功能嚴重異常或 DIC 者預後極差。存活者肝臟可能再生恢復。
 prevention:
   - 嚴格避免犬接觸含木糖醇產品
   - 飼主教育木糖醇來源與危險性
   - 所有含木糖醇產品安全存放
+associatedSymptoms:
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: haematuria
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: petechiae-ecchymoses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 木糖醇肝毒性 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weakness 相關症狀
+        - vomiting 相關症狀
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 肝功能監測
+          notes: ALT、AST 每8-12小時監測。攝入後8-12小時開始升高，24-48小時達峰值。ALT >10,000 U/L 提示嚴重壞死。
+        - name: 凝血功能
+          notes: PT、aPTT 延長。纖維蛋白原下降。D-dimer 升高提示 DIC。血小板計數可能下降。
+ddxSource: auto-generated

@@ -3,12 +3,13 @@ nameEn: Obesity Prevention Program
 nameZh: 肥胖預防計畫
 bodySystem: metabolic
 description: 犬貓肥胖的綜合預防策略。肥胖為最常見的營養性疾病,增加糖尿病、關節炎、心臟病等風險。預防重於治療,需結合飲食控制、運動增加及行為調整。
-
 aliases:
-  - { alias: 肥胖防治, language: zh }
-  - { alias: Obesity prevention, language: en }
-  - { alias: Weight management program, language: en }
-
+  - alias: 肥胖防治
+    language: zh
+  - alias: Obesity prevention
+    language: en
+  - alias: Weight management program
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 約50-60%室內貓過重或肥胖,結紮後風險顯著增加
-
 etiology:
   categories:
     - name: 肥胖危險因子
@@ -36,7 +36,6 @@ etiology:
         - 呼吸困難
         - 脂肪肝(貓)
         - 壽命縮短
-
 clinicalSigns:
   early:
     - BCS≥6,肋骨難觸摸
@@ -46,20 +45,18 @@ clinicalSigns:
     - 運動不耐,活動力降低
     - 呼吸急促
     - 關節僵硬或疼痛
-
 diagnosis:
   primaryTests:
     - name: 體態評分(BCS)
-      notes: "BCS≥6定義為過重,≥7為肥胖"
+      notes: BCS≥6定義為過重,≥7為肥胖
     - name: 理想體重計算
-      notes: "理想體重=目前體重×(5/目前BCS),例如BCS 7的犬:理想體重=目前體重×(5/7)"
+      notes: 理想體重=目前體重×(5/目前BCS),例如BCS 7的犬:理想體重=目前體重×(5/7)
     - name: 內分泌篩檢
-      notes: "排除甲狀腺功能低下(犬)、庫欣氏症等潛在疾病"
+      notes: 排除甲狀腺功能低下(犬)、庫欣氏症等潛在疾病
   differentialDiagnoses:
     - 內分泌疾病導致肥胖
     - 腹水
     - 懷孕
-
 treatment:
   medical:
     - 減重目標:每週減輕1-2%(犬)或0.5-1%(貓),目標達理想BCS 4-5
@@ -68,10 +65,8 @@ treatment:
     - 零食限制:<每日總熱量10%,使用低熱量替代品(蔬菜)
     - 增加運動:犬每日散步20-60分鐘,貓互動遊戲10-15分鐘×2-3次
     - 監測:每1-2週測量體重,每月評估BCS
-
 prognosis:
-  general: "成功減重可改善生活品質、降低疾病風險並延長壽命。減重需時間及持續努力,飼主配合度為成功關鍵。"
-
+  general: 成功減重可改善生活品質、降低疾病風險並延長壽命。減重需時間及持續努力,飼主配合度為成功關鍵。
 prevention:
   - 從幼年建立理想體態,避免過度餵食
   - 結紮後立即減少熱量攝取20-30%
@@ -80,12 +75,38 @@ prevention:
   - 維持規律運動習慣
   - 多寵物家庭分開餵食,避免競爭性過食
   - 避免自由採食(特別是貓)
-
-
 guidelineRefs:
   - sourceOrg: BMC public health
-    title: "Exploring parental preferences for childhood obesity prevention program in China: a discrete choice experiment."
+    title: 'Exploring parental preferences for childhood obesity prevention program in China: a discrete choice experiment.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11934767/
     type: research
-    pmid: "40128790"
+    pmid: '40128790'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: weight-gain
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肥胖預防計畫 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - weight-gain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 體態評分(BCS)
+          notes: BCS≥6定義為過重,≥7為肥胖
+        - name: 理想體重計算
+          notes: 理想體重=目前體重×(5/目前BCS),例如BCS 7的犬:理想體重=目前體重×(5/7)
+        - name: 內分泌篩檢
+          notes: 排除甲狀腺功能低下(犬)、庫欣氏症等潛在疾病
+ddxSource: auto-generated

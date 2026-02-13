@@ -3,11 +3,11 @@ nameEn: Testicular Torsion
 nameZh: 睪丸扭轉
 bodySystem: reproductive
 description: 睪丸軸向扭轉導致血流阻斷及組織缺血壞死。多見於隱睪、睪丸腫瘤。為急症，需緊急手術切除。
-
 aliases:
-  - { alias: 睪丸扭曲, language: zh }
-  - { alias: Testicular Twist, language: en }
-
+  - alias: 睪丸扭曲
+    language: zh
+  - alias: Testicular Twist
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓極罕見
-
 etiology:
   categories:
     - name: 危險因素
@@ -25,7 +24,6 @@ etiology:
         - 隱睪症（特別是腹腔隱睪）
         - 睪丸腫瘤（增加重量及活動度）
         - 外傷
-
 clinicalSigns:
   early:
     - 急性腹痛或陰囊疼痛
@@ -35,23 +33,21 @@ clinicalSigns:
     - 睪丸變硬、變色（紫黑色）
     - 全身性徵象（發燒、休克）
     - 壞死、敗血症
-
 diagnosis:
   primaryTests:
     - name: 睪丸觸診
-      notes: "腫脹、疼痛、位置異常"
+      notes: 腫脹、疼痛、位置異常
     - name: 超音波都卜勒
-      notes: "血流減少或消失"
+      notes: 血流減少或消失
     - name: 腹部超音波
-      notes: "隱睪扭轉"
+      notes: 隱睪扭轉
     - name: 剖腹探查
-      notes: "確診及治療"
+      notes: 確診及治療
   differentialDiagnoses:
     - 睪丸炎
     - 附睪炎
     - 睪丸腫瘤
     - 腹腔急症（隱睪扭轉）
-
 treatment:
   medical:
     - 緊急去勢手術
@@ -59,44 +55,72 @@ treatment:
     - 對側睪丸同時切除（預防）
     - 術後抗生素及止痛
     - 支持療法
-
 prognosis:
-  general: "早期診斷及手術預後良好。延遲可能壞死、敗血症甚至死亡。睪丸無法保留。"
-
+  general: 早期診斷及手術預後良好。延遲可能壞死、敗血症甚至死亡。睪丸無法保留。
 prevention:
   - 隱睪早期手術切除
   - 睪丸腫瘤早期治療
   - 定期檢查睪丸健康
-
-
 guidelineRefs:
   - sourceOrg: Reproduction in domestic animals = Zuchthygiene
-    title: "Advances in the ultrasound diagnosis in equine reproductive medicine: New approaches."
+    title: 'Advances in the ultrasound diagnosis in equine reproductive medicine: New approaches.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9796632/
     type: review
-    pmid: "35748405"
+    pmid: '35748405'
     relevance: primary
   - sourceOrg: Scientific reports
-    title: The synergistic activity of fisetin on quercetin improves testicular recover in ischemia-reperfusion injury in rats.
+    title: >-
+      The synergistic activity of fisetin on quercetin improves testicular recover in ischemia-reperfusion injury in
+      rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11978994/
     type: research
-    pmid: "40199993"
+    pmid: '40199993'
     relevance: supporting
   - sourceOrg: Turkish journal of medical sciences
     title: Effects of acetylsalicylic acid and ultrasound elastography on testicular torsion in rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10760537/
     type: research
-    pmid: "38813515"
+    pmid: '38813515'
     relevance: supporting
   - sourceOrg: Turkish journal of medical sciences
     title: The impact of bone marrow-derived mesenchymal stem cells on experimental testicular torsion in rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10381221/
     type: research
-    pmid: "38812980"
+    pmid: '38812980'
     relevance: supporting
-  - sourceOrg: "Ulusal travma ve acil cerrahi dergisi = Turkish journal of trauma &amp; emergency surgery : TJTES"
-    title: Comparison of hyperbaric oxygen and ozone treatment for ischemia/re-perfusion injury in an experimental testicular torsion model.
+  - sourceOrg: 'Ulusal travma ve acil cerrahi dergisi = Turkish journal of trauma &amp; emergency surgery : TJTES'
+    title: >-
+      Comparison of hyperbaric oxygen and ozone treatment for ischemia/re-perfusion injury in an experimental testicular
+      torsion model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10225826/
     type: research
-    pmid: "36880629"
+    pmid: '36880629'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+diagnosticAlgorithm:
+  title: 睪丸扭轉 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - hyperthermia 相關症狀
+        - vomiting 相關症狀
+        - abdominal-pain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 睪丸觸診
+          notes: 腫脹、疼痛、位置異常
+        - name: 超音波都卜勒
+          notes: 血流減少或消失
+        - name: 腹部超音波
+          notes: 隱睪扭轉
+ddxSource: auto-generated

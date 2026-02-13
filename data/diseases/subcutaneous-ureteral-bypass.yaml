@@ -3,13 +3,15 @@ nameEn: Subcutaneous Ureteral Bypass
 nameZh: 皮下輸尿管繞道系統
 bodySystem: urinary
 description: 皮下輸尿管繞道系統 (SUB) 是一種用於治療輸尿管阻塞的植入式醫療裝置，以人工管路繞過阻塞的輸尿管，將腎盂尿液直接引流至膀胱。在貓輸尿管結石的治療中日益普及。
-
 aliases:
-  - { alias: SUB 裝置, language: zh }
-  - { alias: 皮下尿管繞道, language: zh }
-  - { alias: SUB Device, language: en }
-  - { alias: Subcutaneous Ureteral Bypass Device, language: en }
-
+  - alias: SUB 裝置
+    language: zh
+  - alias: 皮下尿管繞道
+    language: zh
+  - alias: SUB Device
+    language: en
+  - alias: Subcutaneous Ureteral Bypass Device
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓是 SUB 裝置的主要適用對象。貓輸尿管直徑極小（~0.4mm），傳統手術併發症率高。SUB 已成為許多轉診中心治療貓輸尿管阻塞的首選方式。
-
 etiology:
   categories:
     - name: 適應症
@@ -35,7 +36,6 @@ etiology:
         - 膀胱導管（cystostomy catheter）
         - 皮下接口（subcutaneous port，供沖洗用）
         - 連接管路（繞過輸尿管的人工通道）
-
 clinicalSigns:
   early:
     - 術後疼痛管理期
@@ -46,18 +46,16 @@ clinicalSigns:
     - 管路移位或脫出
     - 感染（泌尿道感染或手術部位感染）
     - 管路周圍滲漏
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "術後監測：確認管路位置正確、腎水腫改善、腎盂導管在腎盂內位置。評估管路通暢性。"
+      notes: 術後監測：確認管路位置正確、腎水腫改善、腎盂導管在腎盂內位置。評估管路通暢性。
     - name: 腹部X光
-      notes: "確認 SUB 裝置各組件位置。評估管路是否移位。追蹤管路礦物化程度。"
+      notes: 確認 SUB 裝置各組件位置。評估管路是否移位。追蹤管路礦物化程度。
   differentialDiagnoses:
     - 管路阻塞 vs 新發輸尿管阻塞
     - 管路相關感染 vs 原發性泌尿道感染
     - 術後併發症 vs 疾病復發
-
 treatment:
   medical:
     - 定期管路沖洗（每3-6個月經皮下接口注射無菌生理食鹽水）
@@ -68,45 +66,69 @@ treatment:
     - 管路阻塞或移位時需手術修正或更換
     - 嚴重感染時可能需移除裝置
     - 定期皮下接口沖洗（可在門診執行）
-
 prognosis:
-  general: "SUB 裝置的1年存活率報告約85-92%，中位存活時間約2年以上。管路通暢性維護是長期成功的關鍵。主要併發症為管路阻塞（礦物化，約20%），可藉定期沖洗預防。腎功能能否改善取決於阻塞前腎臟損傷程度。"
-
+  general: SUB 裝置的1年存活率報告約85-92%，中位存活時間約2年以上。管路通暢性維護是長期成功的關鍵。主要併發症為管路阻塞（礦物化，約20%），可藉定期沖洗預防。腎功能能否改善取決於阻塞前腎臟損傷程度。
 prevention:
   - 定期沖洗接口預防管路阻塞（每3-6個月）
   - 增加水分攝取稀釋尿液
   - 定期腎功能監測與尿液培養
   - 預防泌尿道感染
-
-
 guidelineRefs:
   - sourceOrg: JFMS open reports
-    title: Reversible myelosuppression suspected to be secondary to linezolid in a cat with infected subcutaneous ureteral bypass systems.
+    title: >-
+      Reversible myelosuppression suspected to be secondary to linezolid in a cat with infected subcutaneous ureteral
+      bypass systems.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7691925/
     type: case-report
-    pmid: "33282333"
+    pmid: '33282333'
     relevance: supporting
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Long-Term Outcomes After Prophylactic Infusion of&#xa0;2% Tetrasodium Ethylenediaminetetraacetic Acid in 95&#xa0;Subcutaneous Ureteral Bypass Devices in 66 Cats With&#xa0;Benign Ureteral Obstructions."
+    title: >-
+      Long-Term Outcomes After Prophylactic Infusion of&#xa0;2% Tetrasodium Ethylenediaminetetraacetic Acid in
+      95&#xa0;Subcutaneous Ureteral Bypass Devices in 66 Cats With&#xa0;Benign Ureteral Obstructions.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11864850/
     type: research
-    pmid: "40011049"
+    pmid: '40011049'
     relevance: supporting
   - sourceOrg: Veterinary record open
     title: Analysis of lower urinary tract signs and bacteriuria in cats with subcutaneous ureteral bypass systems.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10393289/
     type: research
-    pmid: "37534374"
+    pmid: '37534374'
     relevance: supporting
   - sourceOrg: Journal of feline medicine and surgery
-    title: Use of the subcutaneous ureteral bypass device and urethral stenting for treatment of malignant urinary outflow tract obstructions in cats.
+    title: >-
+      Use of the subcutaneous ureteral bypass device and urethral stenting for treatment of malignant urinary outflow
+      tract obstructions in cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11459477/
     type: research
-    pmid: "39344788"
+    pmid: '39344788'
     relevance: supporting
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Evaluation of preoperative ultrasonographic parameters to predict renal recovery in long-term survivors after treatment of feline ureteral obstructions: 2012-2019."
+    title: >-
+      Evaluation of preoperative ultrasonographic parameters to predict renal recovery in long-term survivors after
+      treatment of feline ureteral obstructions: 2012-2019.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812247/
     type: research
-    pmid: "34124964"
+    pmid: '34124964'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: haematuria
+    frequency: common
+diagnosticAlgorithm:
+  title: 皮下輸尿管繞道系統 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 術後監測：確認管路位置正確、腎水腫改善、腎盂導管在腎盂內位置。評估管路通暢性。
+        - name: 腹部X光
+          notes: 確認 SUB 裝置各組件位置。評估管路是否移位。追蹤管路礦物化程度。
+ddxSource: auto-generated

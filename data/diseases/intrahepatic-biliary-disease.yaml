@@ -3,13 +3,15 @@ nameEn: Intrahepatic Biliary Disease
 nameZh: 肝內膽道疾病
 bodySystem: hepatic
 description: 肝內膽道疾病是指影響肝臟內部膽管系統的病變，包括肝內膽管炎、膽管發育不良、肝內膽石症及膽管纖維化等。在貓中尤其重要，是貓慢性肝病的主要原因之一。
-
 aliases:
-  - { alias: 肝內膽管疾病, language: zh }
-  - { alias: 肝內膽汁鬱滯, language: zh }
-  - { alias: Intrahepatic Cholestasis, language: en }
-  - { alias: Intrahepatic Biliary Tract Disease, language: en }
-
+  - alias: 肝內膽管疾病
+    language: zh
+  - alias: 肝內膽汁鬱滯
+    language: zh
+  - alias: Intrahepatic Cholestasis
+    language: en
+  - alias: Intrahepatic Biliary Tract Disease
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓肝內膽管炎（lymphocytic cholangitis）是貓常見肝臟疾病，與免疫介導機制相關，可進展為膽管纖維化。
-
 etiology:
   categories:
     - name: 炎症性
@@ -38,7 +39,6 @@ etiology:
         - 膽管硬化症
         - 膽管腫瘤（膽管細胞癌）
         - 肝吸蟲感染
-
 clinicalSigns:
   early:
     - 食慾波動
@@ -51,19 +51,17 @@ clinicalSigns:
     - 腹水（晚期）
     - 凝血功能障礙
     - 肝性腦病（終末期）
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "肝內膽管擴張、肝臟回音性變化、肝臟大小異常。可見肝內結石或囊性病變。"
+      notes: 肝內膽管擴張、肝臟回音性變化、肝臟大小異常。可見肝內結石或囊性病變。
     - name: 肝臟活檢
-      notes: "確診需組織病理學。區分淋巴球性與嗜中性球性膽管炎對治療選擇至關重要。"
+      notes: 確診需組織病理學。區分淋巴球性與嗜中性球性膽管炎對治療選擇至關重要。
   differentialDiagnoses:
     - 肝外膽管阻塞
     - 肝脂肪沉積症（貓）
     - 慢性肝炎
     - 肝臟腫瘤
-
 treatment:
   medical:
     - Ursodiol (UDCA) 10-15 mg/kg PO q24h
@@ -74,11 +72,43 @@ treatment:
   surgical:
     - 肝內膽管疾病通常以內科治療為主
     - 膽管囊腫或局限性病變可考慮手術
-
 prognosis:
-  general: "預後取決於病因類型。貓淋巴球性膽管炎對免疫抑制治療反應良好，中位存活時間約3年。嗜中性球性膽管炎若適當抗生素治療預後尚可。進展至膽管纖維化者預後謹慎。"
-
+  general: 預後取決於病因類型。貓淋巴球性膽管炎對免疫抑制治療反應良好，中位存活時間約3年。嗜中性球性膽管炎若適當抗生素治療預後尚可。進展至膽管纖維化者預後謹慎。
 prevention:
   - 無特異性預防措施
   - 膽管炎的早期診斷與治療防止纖維化進展
   - 定期肝功能監測
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: failure-to-grow
+    frequency: uncommon
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肝內膽道疾病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - failure-to-grow 相關症狀
+        - hepatomegaly 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 肝內膽管擴張、肝臟回音性變化、肝臟大小異常。可見肝內結石或囊性病變。
+        - name: 肝臟活檢
+          notes: 確診需組織病理學。區分淋巴球性與嗜中性球性膽管炎對治療選擇至關重要。
+ddxSource: auto-generated

@@ -3,25 +3,30 @@ nameEn: Dystocia
 nameZh: 難產
 bodySystem: reproductive
 description: 難產（Dystocia）是指分娩過程無法正常進行，需要醫療介入的產科急症。可分為母體性因素（子宮無力、產道狹窄）與胎兒性因素（胎位異常、胎兒過大）。犬貓難產若未及時處理可導致母體與胎兒死亡。
-
 aliases:
-  - { alias: Obstructed Labor, language: en }
-  - { alias: Difficult Birth, language: en }
-  - { alias: Birth Difficulty, language: en }
-  - { alias: 分娩困難, language: zh }
-  - { alias: 產程延遲, language: zh }
-  - { alias: 生產困難, language: zh }
-
+  - alias: Obstructed Labor
+    language: en
+  - alias: Difficult Birth
+    language: en
+  - alias: Birth Difficulty
+    language: en
+  - alias: 分娩困難
+    language: zh
+  - alias: 產程延遲
+    language: zh
+  - alias: 生產困難
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
-    notes: 犬難產發生率約 5-16%，短頭犬種（Bulldog、French Bulldog、Boston Terrier）發生率高達 80-100% 需剖腹產。Scottish Terrier、Pekingese、Chihuahua 亦為高風險品種。單胎妊娠（single pup syndrome）因缺乏足夠胎兒皮質醇啟動分娩而為難產高風險因子。
+    notes: >-
+      犬難產發生率約 5-16%，短頭犬種（Bulldog、French Bulldog、Boston Terrier）發生率高達 80-100% 需剖腹產。Scottish Terrier、Pekingese、Chihuahua
+      亦為高風險品種。單胎妊娠（single pup syndrome）因缺乏足夠胎兒皮質醇啟動分娩而為難產高風險因子。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓難產發生率約 3-6%。短頭品種（Persian、Himalayan）風險較高。貓分娩過程可自然中斷（interrupted labor），兩胎兒之間可間隔數小時至 24 小時，需與難產鑑別。
-
 etiology:
   categories:
     - name: 母體性因素（Maternal Dystocia）
@@ -46,7 +51,6 @@ etiology:
         - 單胎妊娠（single pup syndrome）
         - 雜交品種（公犬體型遠大於母犬）
         - 子宮感染或發炎
-
 clinicalSigns:
   early:
     - 妊娠超過 70 天（自配種日起算）仍未分娩
@@ -68,20 +72,19 @@ clinicalSigns:
     - 子宮破裂（急性腹痛、腹膜炎）
     - 敗血症（全身性感染）
     - 母體與胎兒死亡
-
 diagnosis:
   primaryTests:
     - name: 病史與產程評估
-      notes: "詳細記錄配種日期、預產期、產程進展、努責開始時間、已產出胎兒數。應用難產判斷準則：第一產程 >12 小時、強力努責 >30 分鐘無胎兒產出、兩胎間隔 >2-4 小時、綠色分泌物無胎兒"
+      notes: 詳細記錄配種日期、預產期、產程進展、努責開始時間、已產出胎兒數。應用難產判斷準則：第一產程 >12 小時、強力努責 >30 分鐘無胎兒產出、兩胎間隔 >2-4 小時、綠色分泌物無胎兒
     - name: 陰道指檢
-      notes: "評估子宮頸開放程度、產道通暢性、是否有胎兒卡在產道。可觸及胎兒姿態與位置。注意無菌操作"
+      notes: 評估子宮頸開放程度、產道通暢性、是否有胎兒卡在產道。可觸及胎兒姿態與位置。注意無菌操作
     - name: 腹部 X 光
-      notes: "確認胎兒數量、大小、胎位。評估胎兒骨骼發育（>44 天可見骨化）。胎兒腹腔內氣體提示胎兒死亡。骨盆/胎兒比例評估"
+      notes: 確認胎兒數量、大小、胎位。評估胎兒骨骼發育（>44 天可見骨化）。胎兒腹腔內氣體提示胎兒死亡。骨盆/胎兒比例評估
   imaging:
     - name: 腹部超音波
-      notes: "評估胎兒活力（心率正常 >180 bpm，<150 bpm 為窘迫）。胎兒數量。子宮壁完整性。胎盤分離評估"
+      notes: 評估胎兒活力（心率正常 >180 bpm，<150 bpm 為窘迫）。胎兒數量。子宮壁完整性。胎盤分離評估
     - name: 腹部 X 光
-      notes: "胎兒數量計算（骨盆與頭顱計數）。胎位評估。過大胎兒或畸形評估。骨盆測量"
+      notes: 胎兒數量計算（骨盆與頭顱計數）。胎位評估。過大胎兒或畸形評估。骨盆測量
   additional:
     - 血鈣測定（離子鈣——排除低鈣性子宮無力）
     - 血糖（排除低血糖）
@@ -94,7 +97,6 @@ diagnosis:
     - 子宮破裂 (Uterine Rupture)
     - 低血鈣性子宮無力 (Hypocalcemic Uterine Inertia)
     - 異位妊娠 (Ectopic Pregnancy，極罕見)
-
 treatment:
   principles:
     - 快速評估並決定內科處理或剖腹產
@@ -103,13 +105,15 @@ treatment:
     - 母體穩定優先——母體死亡則所有胎兒均無存活機會
   medications:
     - name: Oxytocin
-      dose: "犬：0.5-2 IU IV 或 IM（從低劑量起始）；貓：0.25-1 IU IV 或 IM。必要時 20-30 分鐘後重複，最多 3 次"
-      notes: "僅用於原發性子宮無力且確認無梗阻（X 光確認胎兒大小正常、子宮頸已開）。傳統文獻劑量較高（犬 3-20 IU、貓 2-5 IU IM），但現代建議從低劑量起始並可 20-30 分鐘後重複（最多 3 次）。禁忌：梗阻性難產（子宮破裂風險）。過量使用反而抑制子宮收縮（受體下調）"
+      dose: 犬：0.5-2 IU IV 或 IM（從低劑量起始）；貓：0.25-1 IU IV 或 IM。必要時 20-30 分鐘後重複，最多 3 次
+      notes: >-
+        僅用於原發性子宮無力且確認無梗阻（X 光確認胎兒大小正常、子宮頸已開）。傳統文獻劑量較高（犬 3-20 IU、貓 2-5 IU IM），但現代建議從低劑量起始並可 20-30 分鐘後重複（最多 3
+        次）。禁忌：梗阻性難產（子宮破裂風險）。過量使用反而抑制子宮收縮（受體下調）
     - name: 10% Calcium Gluconate
-      dose: "0.5-1 mL/kg IV 緩慢注射（10-15 分鐘），監測心率"
+      dose: 0.5-1 mL/kg IV 緩慢注射（10-15 分鐘），監測心率
       notes: 低鈣性子宮無力的關鍵治療。可與 Oxytocin 併用（鈣增強子宮肌肉對 Oxytocin 的反應性）。許多原發性子宮無力為相對性低血鈣
     - name: 50% Dextrose
-      dose: "0.5-1 mL/kg IV 稀釋後給予"
+      dose: 0.5-1 mL/kg IV 稀釋後給予
       notes: 低血糖矯正。小型犬泌乳末期常合併低血糖
   general:
     - 藥物促進分娩的條件：無梗阻（X 光確認）、子宮頸已開、胎兒存活且無窘迫、母體穩定
@@ -118,37 +122,41 @@ treatment:
     - 新生兒復甦：清除口鼻分泌物、摩擦刺激呼吸、保溫、確認臍帶結紮、必要時 Doxapram 1-2 滴舌下
     - 術後母體監測：疼痛管理（Methadone 或 Buprenorphine——泌乳安全性較佳）、子宮復舊、泌乳啟動
     - 預防性品種管理：已知需剖腹產品種（English Bulldog 等）應提前安排計畫性剖腹產（配種後 63 天或黃體素降至 <2 ng/mL 時）
-
-emergencyNotes: 難產為產科急症。處理順序：(1) 快速評估母體穩定性（ABC）；(2) 陰道指檢——排除卡在產道的胎兒；(3) 腹部 X 光——確認胎兒數量、大小、胎位；(4) 超音波——評估胎兒心率（<150 bpm = 窘迫）；(5) 若無梗阻且母體穩定：嘗試 Calcium Gluconate + Oxytocin；(6) 若有梗阻、胎兒窘迫或藥物無效 → 緊急剖腹產；(7) 綠色陰道分泌物 = 胎盤分離 → 30-60 分鐘內需產出胎兒或手術。每延遲 30 分鐘胎兒存活率顯著下降。
-
-prognosis: 及時適當處理下母體存活率 >95%。計畫性剖腹產的胎兒存活率約 85-95%，緊急剖腹產降至 60-80%。藥物促進分娩成功率約 30-60%（取決於病因）。短頭犬種計畫性剖腹產預後良好。延遲處理（>6 小時）的胎兒存活率顯著降低。子宮破裂或嚴重敗血症者母體預後轉為謹慎。
-
+emergencyNotes: >-
+  難產為產科急症。處理順序：(1) 快速評估母體穩定性（ABC）；(2) 陰道指檢——排除卡在產道的胎兒；(3) 腹部 X 光——確認胎兒數量、大小、胎位；(4) 超音波——評估胎兒心率（<150 bpm = 窘迫）；(5)
+  若無梗阻且母體穩定：嘗試 Calcium Gluconate + Oxytocin；(6) 若有梗阻、胎兒窘迫或藥物無效 → 緊急剖腹產；(7) 綠色陰道分泌物 = 胎盤分離 → 30-60 分鐘內需產出胎兒或手術。每延遲 30
+  分鐘胎兒存活率顯著下降。
+prognosis: >-
+  及時適當處理下母體存活率 >95%。計畫性剖腹產的胎兒存活率約 85-95%，緊急剖腹產降至 60-80%。藥物促進分娩成功率約 30-60%（取決於病因）。短頭犬種計畫性剖腹產預後良好。延遲處理（>6
+  小時）的胎兒存活率顯著降低。子宮破裂或嚴重敗血症者母體預後轉為謹慎。
 guidelineRefs:
   - sourceOrg: Theriogenology
-    title: "Dystocia in dogs and cats: a retrospective study of 1,853 cases"
+    title: 'Dystocia in dogs and cats: a retrospective study of 1,853 cases'
     url: https://pubmed.ncbi.nlm.nih.gov/20080300/
     type: research
-    pmid: "20080300"
+    pmid: '20080300'
   - sourceOrg: Veterinary Clinics of North America Small Animal Practice
     title: Emergency management of the small animal obstetric patient
     url: https://pubmed.ncbi.nlm.nih.gov/22381180/
     type: review
-    pmid: "22381180"
+    pmid: '22381180'
   - sourceOrg: Journal of Small Animal Practice
     title: Breed, age and body weight as risk factors for dystocia in the dog
     url: https://pubmed.ncbi.nlm.nih.gov/17217179/
     type: research
-    pmid: "17217179"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Clinical Experiences and Mechanism of Action with the Use of Oxytocin Injection at Parturition in Domestic Animals: Effect on the Myometrium and Fetuses."
+    pmid: '17217179'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Clinical Experiences and Mechanism of Action with the Use of Oxytocin Injection at Parturition in Domestic
+      Animals: Effect on the Myometrium and Fetuses.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9952595/
     type: review
-    pmid: "36830555"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Defining \"Normal\" in Pig Parturition."
+    pmid: '36830555'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: Defining "Normal" in Pig Parturition.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9597809/
     type: review
-    pmid: "36290140"
+    pmid: '36290140'
     relevance: primary
 pubmedQueries:
   - query: '"dystocia" AND (dog OR canine OR cat OR feline) AND ("caesarean" OR "oxytocin" OR "treatment")'
@@ -157,6 +165,54 @@ pubmedQueries:
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "REP"
-  sectionTitle: "DYSTOCIA"
+  chapter: REP
+  sectionTitle: DYSTOCIA
   pdfPage: 1436
+diagnosticAlgorithm:
+  title: 難產 診斷流程
+  steps:
+    - step: 1
+      action: 病史和理學檢查
+      details: 評估分娩進程和母體狀態
+      findings:
+        - 陣痛持續時間
+        - 胎兒間隔
+        - 陰道分泌物性質
+    - step: 2
+      action: 陰道指診
+      details: 評估產道和胎兒位置
+      findings:
+        - 子宮頸開放度
+        - 胎兒呈示部
+        - 產道阻塞
+    - step: 3
+      action: 影像學檢查
+      details: X光和超音波評估
+      findings:
+        - 胎兒數量和大小
+        - 胎兒心率
+        - 骨盆產道比例
+    - step: 4
+      action: 治療決策
+      details: 醫療催產 vs 剖腹產
+      findings:
+        - 非阻塞→嘗試醫療催產
+        - 阻塞或胎兒窘迫→剖腹產
+clinicalPearls:
+  - 子宮遲緩是最常見的難產原因，不是胎位不正
+  - 胎兒心率<160 bpm提示窘迫，需緊急介入
+  - 阻塞性難產禁用Oxytocin（可致子宮破裂）
+  - 綠色陰道分泌物代表胎盤分離，限時娩出
+monitoringItems:
+  - 分娩進程
+  - 胎兒心率
+  - 母體生命徵象
+  - 術後恢復和泌乳
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

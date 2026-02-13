@@ -3,13 +3,15 @@ nameEn: Ethylene Glycol Nephrotoxicity
 nameZh: 乙二醇腎毒性
 bodySystem: toxicology
 description: 乙二醇（防凍液主要成分）中毒引起的急性腎衰竭，是小動物最嚴重且常見的腎毒性中毒之一。乙二醇代謝產物草酸鈣結晶沉積於腎小管，導致不可逆的腎損傷。
-
 aliases:
-  - { alias: 防凍液中毒, language: zh }
-  - { alias: 乙二醇中毒腎損傷, language: zh }
-  - { alias: Antifreeze Poisoning, language: en }
-  - { alias: Ethylene Glycol Toxicosis, language: en }
-
+  - alias: 防凍液中毒
+    language: zh
+  - alias: 乙二醇中毒腎損傷
+    language: zh
+  - alias: Antifreeze Poisoning
+    language: en
+  - alias: Ethylene Glycol Toxicosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓對乙二醇極度敏感，最低致死劑量僅 1.4 mL/kg。貓可能因舔舐地上滲漏的防凍液而中毒。治療窗口更窄（攝入後3小時內）。
-
 etiology:
   categories:
     - name: 毒物來源
@@ -36,7 +37,6 @@ etiology:
         - 草酸與鈣結合形成草酸鈣結晶沉積於腎小管
         - 代謝性酸中毒（高 anion gap）
         - 急性腎小管壞死與阻塞性腎病
-
 clinicalSigns:
   early:
     - 第一階段（0.5-12小時）：類醉酒表現、步態不穩、多飲多尿、嘔吐
@@ -49,19 +49,17 @@ clinicalSigns:
     - 口腔潰瘍
     - 癲癇發作
     - 昏迷
-
 diagnosis:
   primaryTests:
     - name: 乙二醇檢測
-      notes: "血清乙二醇快速檢測試劑盒（犬 >50 mg/dL 為陽性）。但試劑盒可能與丙二醇交叉反應。攝入後越早檢測準確性越高。"
+      notes: 血清乙二醇快速檢測試劑盒（犬 >50 mg/dL 為陽性）。但試劑盒可能與丙二醇交叉反應。攝入後越早檢測準確性越高。
     - name: 尿液檢查
-      notes: "尿液沉渣中草酸鈣一水合物結晶（信封狀）或二水合物結晶（針狀）。Wood's lamp 照射尿液可見螢光（含螢光劑的防凍液）。"
+      notes: 尿液沉渣中草酸鈣一水合物結晶（信封狀）或二水合物結晶（針狀）。Wood's lamp 照射尿液可見螢光（含螢光劑的防凍液）。
   differentialDiagnoses:
     - 其他腎毒性物質中毒
     - 急性腎損傷（其他原因）
     - 代謝性酸中毒（其他原因）
     - 低鈣血症（其他原因）
-
 treatment:
   medical:
     - 解毒劑（越早越好）：Fomepizole (4-MP) 20 mg/kg IV 首劑，後 15 mg/kg IV q12h × 3 次（犬首選）
@@ -74,40 +72,79 @@ treatment:
     - 已發展腎衰竭者需血液透析
   surgical:
     - 通常不適用手術治療
-
 prognosis:
-  general: "攝入後8小時內（犬）或3小時內（貓）給予 fomepizole 治療預後良好。已發展至少尿性腎衰竭者預後極差，死亡率極高。血液透析可在部分病例挽救生命但可用性有限。早期診斷與快速治療是存活關鍵。"
-
+  general: 攝入後8小時內（犬）或3小時內（貓）給予 fomepizole 治療預後良好。已發展至少尿性腎衰竭者預後極差，死亡率極高。血液透析可在部分病例挽救生命但可用性有限。早期診斷與快速治療是存活關鍵。
 prevention:
   - 防凍液安全存放於動物無法觸及處
   - 立即清理洩漏的防凍液
   - 使用含丙二醇的低毒性防凍液替代品
   - 飼主教育防凍液中毒的危險性與緊急處理
-
-
 guidelineRefs:
-  - sourceOrg: "Food science &amp; nutrition"
-    title: "In Vivo and In Silico Evaluation of a Polyphenol Fraction Extracted From Argania spinosa L. Press-Cake Against Ethylene Glycol-Induced Calcium Oxalate Urolithiasis in Rats: Biochemical, Histopathological, and Molecular Modeling Analyses."
+  - sourceOrg: Food science &amp; nutrition
+    title: >-
+      In Vivo and In Silico Evaluation of a Polyphenol Fraction Extracted From Argania spinosa L. Press-Cake Against
+      Ethylene Glycol-Induced Calcium Oxalate Urolithiasis in Rats: Biochemical, Histopathological, and Molecular
+      Modeling Analyses.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12631542/
     type: research
-    pmid: "41280747"
+    pmid: '41280747'
   - sourceOrg: Clinical toxicology (Philadelphia, Pa.)
     title: Diethylene glycol produces nephrotoxic and neurotoxic effects in female rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9661884/
     type: research
-    pmid: "34278906"
+    pmid: '34278906'
   - sourceOrg: Clinical toxicology (Philadelphia, Pa.)
     title: Neurotoxic effects of nephrotoxic compound diethylene glycol.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8292454/
     type: research
-    pmid: "33475432"
+    pmid: '33475432'
   - sourceOrg: Pharmaceutical nanotechnology
     title: Pharmacokinetics and Renal Toxicity of Monomeric Amphotericin B in Rats after a Multiple Dose Regimen.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5070670/
     type: research
-    pmid: "27774409"
+    pmid: '27774409'
   - sourceOrg: Toxicology letters
-    title: "A toxicological review of the ethylene glycol series: Commonalities and differences in toxicity and modes of action."
+    title: >-
+      A toxicological review of the ethylene glycol series: Commonalities and differences in toxicity and modes of
+      action.
     url: https://pubmed.ncbi.nlm.nih.gov/28689762/
     type: review
-    pmid: "28689762"
+    pmid: '28689762'
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: trembling
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: oliguria-anuria
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 乙二醇腎毒性 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - trembling 相關症狀
+        - seizures 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 乙二醇檢測
+          notes: 血清乙二醇快速檢測試劑盒（犬 >50 mg/dL 為陽性）。但試劑盒可能與丙二醇交叉反應。攝入後越早檢測準確性越高。
+        - name: 尿液檢查
+          notes: 尿液沉渣中草酸鈣一水合物結晶（信封狀）或二水合物結晶（針狀）。Wood's lamp 照射尿液可見螢光（含螢光劑的防凍液）。
+ddxSource: auto-generated

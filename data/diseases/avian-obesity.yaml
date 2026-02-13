@@ -3,18 +3,19 @@ nameEn: Avian Obesity
 nameZh: 禽類肥胖症
 bodySystem: metabolic
 description: 禽類肥胖症是寵物鳥最常見的營養性疾病，尤其好發於高脂全種子飲食的鸚鵡類。肥胖導致脂肪肝、動脈硬化、關節問題及繁殖障礙等併發症，嚴重影響壽命與生活品質。
-
 aliases:
-  - { alias: 鳥類肥胖, language: zh }
-  - { alias: 鸚鵡過重, language: zh }
-  - { alias: Obesity in parrots, language: en }
-  - { alias: Avian overweight, language: en }
-
+  - alias: 鳥類肥胖
+    language: zh
+  - alias: 鸚鵡過重
+    language: zh
+  - alias: Obesity in parrots
+    language: en
+  - alias: Avian overweight
+    language: en
 species:
   - speciesCommon: bird
     prevalence: common
     notes: 亞馬遜鸚鵡、虎皮鸚鵡、玄鳳鸚鵡、金絲雀極為常見。全種子飲食與缺乏運動為主要原因。為多種疾病的風險因子。
-
 etiology:
   categories:
     - name: 飲食因素
@@ -33,7 +34,6 @@ etiology:
         - 甲狀腺功能低下
         - 遺傳傾向（品種差異）
         - 繁殖期激素變化
-
 clinicalSigns:
   early:
     - 體重超過理想體重 15% 以上
@@ -46,7 +46,6 @@ clinicalSigns:
     - 皮下脂肪瘤
     - 飛行能力下降
     - 繁殖障礙
-
 diagnosis:
   primaryTests:
     - name: 體重評估
@@ -55,7 +54,6 @@ diagnosis:
       notes: 龍骨嶺觸診困難（脂肪覆蓋）。腹部脂肪沉積。皮下脂肪瘤
     - name: 血液檢查
       notes: 膽固醇與三酸甘油酯升高。肝功能指標（評估脂肪肝）
-
 treatment:
   principles:
     - 漸進式飲食轉換
@@ -71,41 +69,79 @@ treatment:
     - 覓食豐富化（增加進食能量消耗）
     - 每週秤重監測
     - 甲狀腺功能低下者補充甲狀腺素
-
 prognosis: 預後取決於飼主配合度與飲食改善程度。漸進式飲食轉換配合增加運動通常可成功減重。併發症（脂肪肝、動脈硬化）的嚴重程度影響長期預後。持之以恆的飲食與運動管理為成功減重的關鍵。
-
-
 guidelineRefs:
   - sourceOrg: Diabetologia
-    title: "Comparative physiology and biomimetics in metabolic and environmental health: what can we learn from extreme animal phenotypes?"
+    title: >-
+      Comparative physiology and biomimetics in metabolic and environmental health: what can we learn from extreme
+      animal phenotypes?
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12779663/
     type: review
-    pmid: "41263971"
+    pmid: '41263971'
   - sourceOrg: Veterinary medicine and science
-    title: "A Spotlight on Archaea in Humans, Livestock and Poultry: A Review."
+    title: 'A Spotlight on Archaea in Humans, Livestock and Poultry: A Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11875071/
     type: review
-    pmid: "40028749"
+    pmid: '40028749'
   - sourceOrg: Nutrients
-    title: "Eggs: Healthy or Risky? A Review of Evidence from High Quality Studies on Hen's Eggs."
+    title: 'Eggs: Healthy or Risky? A Review of Evidence from High Quality Studies on Hen''s Eggs.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10304460/
     type: review
-    pmid: "37375561"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Farm Environmental Enrichments Improve the Welfare of Layer Chicks and Pullets: A Comprehensive Review."
+    pmid: '37375561'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Farm Environmental Enrichments Improve the Welfare of Layer Chicks and Pullets: A Comprehensive Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9559498/
     type: review
-    pmid: "36230351"
+    pmid: '36230351'
   - sourceOrg: Frontiers in cardiovascular medicine
     title: Endothelial Cells in Emerging Viral Infections.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7943456/
     type: review
-    pmid: "33718448"
+    pmid: '33718448'
   - sourceOrg: PLoS pathogens
-    title: N6-methyladenosine modification of the subgroup J avian leukosis viral RNAs attenuates host innate immunity via MDA5 signaling.
+    title: >-
+      N6-methyladenosine modification of the subgroup J avian leukosis viral RNAs attenuates host innate immunity via
+      MDA5 signaling.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12043233/
     type: research
-    pmid: "40198675"
+    pmid: '40198675'
 pubmedQueries:
   - query: '"obesity" AND (avian OR bird OR parrot) AND (management OR diet OR "weight loss")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: weight-gain
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類肥胖症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - weight-gain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 體重評估
+          notes: 與品種標準體重比較。定期秤重追蹤。體態評分（Body Condition Score）
+        - name: 觸診
+          notes: 龍骨嶺觸診困難（脂肪覆蓋）。腹部脂肪沉積。皮下脂肪瘤
+        - name: 血液檢查
+          notes: 膽固醇與三酸甘油酯升高。肝功能指標（評估脂肪肝）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 漸進式飲食轉換
+        - 增加活動量
+        - 定期監測體重
+ddxSource: auto-generated

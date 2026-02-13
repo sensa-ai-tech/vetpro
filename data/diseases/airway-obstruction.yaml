@@ -3,12 +3,13 @@ nameEn: Airway Obstruction
 nameZh: 呼吸道阻塞
 bodySystem: emergency
 description: 呼吸道阻塞為上呼吸道或下呼吸道部分或完全阻塞引起的呼吸困難。犬常見原因包括喉部麻痹、短頭犬呼吸道症候群 (BOAS)、異物與腫瘤。完全阻塞為分秒必爭的緊急狀態，需立即建立通暢氣道。
-
 aliases:
-  - { alias: 氣道阻塞, language: zh }
-  - { alias: Upper Airway Obstruction, language: en }
-  - { alias: Respiratory Obstruction, language: en }
-
+  - alias: 氣道阻塞
+    language: zh
+  - alias: Upper Airway Obstruction
+    language: en
+  - alias: Respiratory Obstruction
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓上呼吸道阻塞較犬少見。喉部腫瘤、polyp 與嚴重上呼吸道感染為主要原因。
-
 etiology:
   categories:
     - name: 上呼吸道
@@ -32,7 +32,6 @@ etiology:
         - 氣管內異物
         - 嚴重支氣管痙攣（貓哮喘）
         - 氣管腫瘤
-
 clinicalSigns:
   early:
     - 吸氣性喘鳴 (stridor)
@@ -44,7 +43,6 @@ clinicalSigns:
     - 頸部伸展
     - 意識喪失
     - 窒息死亡
-
 diagnosis:
   primaryTests:
     - name: 臨床表現
@@ -56,7 +54,6 @@ diagnosis:
     - 氣管鏡
     - CT（腫瘤評估）
     - 動脈血氣
-
 treatment:
   principles:
     - 緊急建立通暢氣道
@@ -73,41 +70,80 @@ treatment:
     - BOAS：手術矯正（軟顎切除、鼻孔擴大）
     - 喉部麻痹：lateralization 手術
     - 降溫（上呼吸道阻塞常伴高體溫）
-
 prognosis: 急性異物阻塞移除後預後極佳。BOAS 手術矯正改善顯著。喉部麻痹手術後預後佳但有吸入性肺炎風險。喉部腫瘤預後視腫瘤類型而定。
-
-
 guidelineRefs:
   - sourceOrg: Temperature (Austin, Tex.)
     title: Pathophysiology of heatstroke in dogs - revisited.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5800390/
     type: review
-    pmid: "29435477"
+    pmid: '29435477'
   - sourceOrg: Frontiers in veterinary science
     title: Clinical review of high-flow nasal oxygen therapy in human and veterinary patients.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10027015/
     type: review
-    pmid: "36950541"
+    pmid: '36950541'
   - sourceOrg: The veterinary quarterly
-    title: "Brachycephalic obstructive airway syndrome: much more than a surgical problem."
+    title: 'Brachycephalic obstructive airway syndrome: much more than a surgical problem.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9673814/
     type: review
-    pmid: "36342210"
+    pmid: '36342210'
   - sourceOrg: Frontiers in veterinary science
-    title: "Equine Asthma: Current Understanding and Future Directions."
+    title: 'Equine Asthma: Current Understanding and Future Directions.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7438831/
     type: review
-    pmid: "32903600"
+    pmid: '32903600'
   - sourceOrg: Journal of immunology research
     title: Immunopathology of Airway Surface Liquid Dehydration Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6664684/
     type: review
-    pmid: "31396541"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "The Microbiota and Equine Asthma: An Integrative View of the Gut-Lung Axis."
+    pmid: '31396541'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'The Microbiota and Equine Asthma: An Integrative View of the Gut-Lung Axis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812655/
     type: review
-    pmid: "38254421"
+    pmid: '38254421'
 pubmedQueries:
   - query: '"airway obstruction" AND (veterinary OR canine OR feline) AND ("treatment" OR "emergency" OR "tracheostomy")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: stertor-stridor
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 呼吸道阻塞 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - coma-stupor 相關症狀
+        - stertor-stridor 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床表現
+          notes: 吸氣性喘鳴 + 呼吸困難 = 上呼吸道阻塞。呼氣性喘鳴 = 下呼吸道
+        - name: 喉鏡檢查
+          notes: 輕度鎮靜下評估喉部功能（喉部麻痹、腫塊、異物）
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 頸部/胸部 X-ray
+        - 氣管鏡
+        - CT（腫瘤評估）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 緊急建立通暢氣道
+        - 氧氣補充
+        - 鎮靜（減少氧氣需求）
+ddxSource: auto-generated

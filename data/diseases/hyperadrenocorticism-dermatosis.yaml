@@ -3,11 +3,11 @@ nameEn: Hyperadrenocorticism Dermatosis
 nameZh: 腎上腺皮質功能亢進性皮膚病
 bodySystem: dermatology
 description: 皮質醇過量引起的皮膚表現。為犬第二常見的內分泌性皮膚病。皮質醇抑制毛囊生長週期，導致對稱性脫毛、皮膚變薄、鈣質沉積、繼發感染增加。
-
 aliases:
-  - { alias: "Cushing Dermatosis", language: en }
-  - { alias: "庫欣皮膚病", language: zh }
-
+  - alias: Cushing Dermatosis
+    language: en
+  - alias: 庫欣皮膚病
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。皮膚表現包括皮膚極度脆弱。
-
 etiology:
   categories:
     - name: 皮質醇過量
@@ -23,7 +22,6 @@ etiology:
         - 腦下垂體依賴型（PDH，最常見）
         - 腎上腺腫瘤
         - 醫源性（長期類固醇使用）
-
 clinicalSigns:
   early:
     - 雙側對稱性軀幹脫毛
@@ -34,14 +32,12 @@ clinicalSigns:
     - 反覆膿皮症
     - 皮膚色素沉著
     - comedones
-
 diagnosis:
   primaryTests:
     - name: ACTH 刺激試驗
       notes: 篩檢Cushing症候群
     - name: 低劑量 Dexamethasone 抑制試驗
       notes: 確認診斷與分型
-
 treatment:
   principles:
     - 治療根本 Cushing 症候群
@@ -50,31 +46,58 @@ treatment:
     - 醫源性：緩慢減停外源類固醇
     - 腎上腺腫瘤：手術切除
     - 皮膚繼發感染治療
-
 prognosis: Cushing 控制後皮膚逐漸恢復（3-6 個月）。需持續監控皮質醇濃度。醫源性停藥後預後佳。
-
-
 guidelineRefs:
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
     title: Update on the use of trilostane in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5855282/
     type: review
-    pmid: "29606727"
+    pmid: '29606727'
   - sourceOrg: BMC veterinary research
-    title: Analytical validation of an automated assay to measure calprotectin (S100A8/A9) in dog saliva and serum and changes in canine leishmaniasis, pyometra and hyperadrenocorticism.
+    title: >-
+      Analytical validation of an automated assay to measure calprotectin (S100A8/A9) in dog saliva and serum and
+      changes in canine leishmaniasis, pyometra and hyperadrenocorticism.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11841251/
     type: research
-    pmid: "39980018"
+    pmid: '39980018'
   - sourceOrg: Nature metabolism
-    title: "Pathogenic role of acyl coenzyme A binding protein (ACBP) in Cushing's syndrome."
+    title: Pathogenic role of acyl coenzyme A binding protein (ACBP) in Cushing's syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11659162/
     type: research
-    pmid: "39578649"
+    pmid: '39578649'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Peculiarities of feline hyperadrenocorticism: Update on diagnosis and treatment."
+    title: 'Peculiarities of feline hyperadrenocorticism: Update on diagnosis and treatment.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11128894/
     type: research
-    pmid: "28838299"
+    pmid: '28838299'
 pubmedQueries:
   - query: '"hyperadrenocorticism" AND "dermatosis" AND (veterinary OR canine) AND ("treatment" OR "skin")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: alopecia
+    frequency: uncommon
+  - symptomId: abdominal-distension
+    frequency: common
+diagnosticAlgorithm:
+  title: 腎上腺皮質功能亢進性皮膚病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - alopecia 相關症狀
+        - abdominal-distension 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: ACTH 刺激試驗
+          notes: 篩檢Cushing症候群
+        - name: 低劑量 Dexamethasone 抑制試驗
+          notes: 確認診斷與分型
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療根本 Cushing 症候群
+ddxSource: auto-generated

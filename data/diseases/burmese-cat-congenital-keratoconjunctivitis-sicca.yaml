@@ -3,25 +3,24 @@ nameEn: Burmese Cat Congenital Keratoconjunctivitis Sicca
 nameZh: 緬甸貓先天性乾眼症
 bodySystem: ophthalmology
 description: 緬甸貓的先天性淚液分泌不足,導致角膜乾燥、潰瘍及慢性結膜炎。需終生人工淚液及免疫調節治療。
-
 aliases:
-  - { alias: 乾眼症, language: zh }
-  - { alias: KCS, language: en }
-  - { alias: Dry Eye, language: en }
-
+  - alias: 乾眼症
+    language: zh
+  - alias: KCS
+    language: en
+  - alias: Dry Eye
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 緬甸貓,可能遺傳
-
 etiology:
   categories:
     - name: 淚腺發育不全
       examples:
         - 先天性淚腺功能不足
         - 可能遺傳
-
 clinicalSigns:
   early:
     - 眼分泌物黏稠
@@ -32,26 +31,42 @@ clinicalSigns:
     - 角膜潰瘍
     - 角膜色素沉著
     - 視力下降
-
 diagnosis:
   primaryTests:
     - name: Schirmer淚液測試
-      notes: "淚液分泌<10mm/min異常"
+      notes: 淚液分泌<10mm/min異常
     - name: 氟染色
-      notes: "評估角膜潰瘍"
+      notes: 評估角膜潰瘍
   differentialDiagnoses:
     - 結膜炎
     - 角膜炎
-
 treatment:
   medical:
     - Cyclosporine 0.2% 眼藥膏 q12h
     - Tacrolimus 0.02% 眼藥膏 q12h(替代)
     - 人工淚液 q4-6h
     - 抗生素眼藥(繼發感染)
-
 prognosis:
-  general: "需終生治療。早期治療預後尚可,未治療將導致角膜穿孔及失明。"
-
+  general: 需終生治療。早期治療預後尚可,未治療將導致角膜穿孔及失明。
 prevention:
   - 遺傳諮詢
+associatedSymptoms:
+  - symptomId: red-eye
+    frequency: common
+diagnosticAlgorithm:
+  title: 緬甸貓先天性乾眼症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - red-eye 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: Schirmer淚液測試
+          notes: 淚液分泌<10mm/min異常
+        - name: 氟染色
+          notes: 評估角膜潰瘍
+ddxSource: auto-generated

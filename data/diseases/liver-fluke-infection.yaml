@@ -3,14 +3,17 @@ nameEn: Liver Fluke Infection
 nameZh: 肝吸蟲感染
 bodySystem: infectious
 description: 肝吸蟲感染是由吸蟲類寄生蟲寄生於肝膽系統引起的疾病。犬貓中以 Opisthorchis、Clonorchis 和 Platynosomum 等屬最為重要，可引起膽管炎、膽管阻塞甚至膽管癌。
-
 aliases:
-  - { alias: 肝臟吸蟲病, language: zh }
-  - { alias: 膽管吸蟲感染, language: zh }
-  - { alias: Hepatic Trematode Infection, language: en }
-  - { alias: Liver Fluke Disease, language: en }
-  - { alias: Opisthorchiasis, language: en }
-
+  - alias: 肝臟吸蟲病
+    language: zh
+  - alias: 膽管吸蟲感染
+    language: zh
+  - alias: Hepatic Trematode Infection
+    language: en
+  - alias: Liver Fluke Disease
+    language: en
+  - alias: Opisthorchiasis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓可感染 Platynosomum fastosum（熱帶地區常見）和 Opisthorchis spp.。貓對 Platynosomum 較敏感，可引起嚴重膽管病變。
-
 etiology:
   categories:
     - name: 病原體
@@ -35,7 +37,6 @@ etiology:
         - 攝入含後囊蚴的壁虎或蜥蜴（Platynosomum）
         - 成蟲寄生於膽管內
         - 蟲卵隨糞便排出完成生活史
-
 clinicalSigns:
   early:
     - 輕度感染多無症狀
@@ -49,19 +50,17 @@ clinicalSigns:
     - 腹瀉
     - 膽管阻塞症狀
     - 嚴重感染可致肝衰竭
-
 diagnosis:
   primaryTests:
     - name: 糞便檢查
-      notes: "糞便沉澱法或福馬林-乙醚濃縮法檢測蟲卵。蟲卵小（約30×15μm）、有蓋、棕黃色。需與其他吸蟲卵鑑別。"
+      notes: 糞便沉澱法或福馬林-乙醚濃縮法檢測蟲卵。蟲卵小（約30×15μm）、有蓋、棕黃色。需與其他吸蟲卵鑑別。
     - name: 腹部超音波
-      notes: "膽管擴張、膽管壁增厚。偶爾可見膽管內蟲體回音。膽囊異常。"
+      notes: 膽管擴張、膽管壁增厚。偶爾可見膽管內蟲體回音。膽囊異常。
   differentialDiagnoses:
     - 膽管炎（細菌性）
     - 膽管腫瘤
     - 膽石症
     - 胰臟炎
-
 treatment:
   medical:
     - Praziquantel 20-40 mg/kg PO q24h × 3-5 天（首選驅蟲藥）
@@ -72,45 +71,77 @@ treatment:
   surgical:
     - 膽管阻塞嚴重者可能需手術引流
     - 慢性嚴重感染致膽管纖維化或膽管癌時的姑息性手術
-
 prognosis:
-  general: "輕度感染驅蟲治療後預後良好。慢性重度感染可導致膽管纖維化、膽管增生甚至膽管癌（尤其 Opisthorchis、Clonorchis），預後不良。Platynosomum 重度感染在貓可致嚴重肝衰竭。"
-
+  general: 輕度感染驅蟲治療後預後良好。慢性重度感染可導致膽管纖維化、膽管增生甚至膽管癌（尤其 Opisthorchis、Clonorchis），預後不良。Platynosomum 重度感染在貓可致嚴重肝衰竭。
 prevention:
   - 避免餵食生魚（預防 Opisthorchis、Clonorchis）
   - 限制貓捕食壁虎和蜥蜴（預防 Platynosomum）
   - 流行區動物定期糞便檢查
   - 適當的食物烹煮處理
-
-
 guidelineRefs:
-  - sourceOrg: "Parasites &amp; vectors"
-    title: "Genus Bithynia: morphological classification to molecular identification."
+  - sourceOrg: Parasites &amp; vectors
+    title: 'Genus Bithynia: morphological classification to molecular identification.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11608500/
     type: review
-    pmid: "39616387"
+    pmid: '39616387'
     relevance: primary
   - sourceOrg: Advances in parasitology
-    title: "Social Influence in Liver Fluke Transmission: Application of Social Network Analysis of Food Sharing in Thai Isaan Culture."
+    title: >-
+      Social Influence in Liver Fluke Transmission: Application of Social Network Analysis of Food Sharing in Thai Isaan
+      Culture.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7126829/
     type: review
-    pmid: "29907257"
+    pmid: '29907257'
     relevance: supporting
   - sourceOrg: Parasitology international
-    title: "The Lawa model: A sustainable, integrated opisthorchiasis control program using the EcoHealth approach in the Lawa Lake region of Thailand."
+    title: >-
+      The Lawa model: A sustainable, integrated opisthorchiasis control program using the EcoHealth approach in the Lawa
+      Lake region of Thailand.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5443708/
     type: review
-    pmid: "27890720"
+    pmid: '27890720'
     relevance: supporting
   - sourceOrg: Pathogens (Basel, Switzerland)
-    title: The EGFR Signaling Pathway Is Involved in the Biliary Intraepithelial Neoplasia Associated with Liver Fluke Infection.
+    title: >-
+      The EGFR Signaling Pathway Is Involved in the Biliary Intraepithelial Neoplasia Associated with Liver Fluke
+      Infection.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12298937/
     type: research
-    pmid: "40732668"
+    pmid: '40732668'
     relevance: supporting
   - sourceOrg: Current issues in molecular biology
     title: Plastoquinone-Derivative SkQ1 Improved the Biliary Intraepithelial Neoplasia during Liver Fluke Infection.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10887543/
     type: research
-    pmid: "38392221"
+    pmid: '38392221'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肝吸蟲感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - hepatomegaly 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便檢查
+          notes: 糞便沉澱法或福馬林-乙醚濃縮法檢測蟲卵。蟲卵小（約30×15μm）、有蓋、棕黃色。需與其他吸蟲卵鑑別。
+        - name: 腹部超音波
+          notes: 膽管擴張、膽管壁增厚。偶爾可見膽管內蟲體回音。膽囊異常。
+ddxSource: auto-generated

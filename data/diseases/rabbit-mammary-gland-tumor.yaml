@@ -3,16 +3,15 @@ nameEn: Rabbit Mammary Gland Tumor
 nameZh: 兔乳腺腫瘤
 bodySystem: oncology
 description: 未絕育母兔好發的乳腺腫瘤，多數為惡性（乳腺癌），可早期轉移至肺臟。早期絕育可顯著降低乳腺腫瘤風險。
-
 aliases:
-  - { alias: "兔乳腺腫瘤", language: zh }
-  - { alias: "Rabbit Mammary Gland Tumor", language: en }
-
+  - alias: 兔乳腺腫瘤
+    language: zh
+  - alias: Rabbit Mammary Gland Tumor
+    language: en
 species:
   - speciesCommon: rabbit
     prevalence: uncommon
     notes: 兔可受此疾病影響。
-
 etiology:
   categories:
     - name: 荷爾蒙相關
@@ -20,7 +19,6 @@ etiology:
         - 未絕育母兔（雌激素長期刺激）
         - 假懷孕頻繁者
         - 遺傳易感性
-
 clinicalSigns:
   early:
     - 乳腺區域可觸及小結節
@@ -30,14 +28,12 @@ clinicalSigns:
     - 潰瘍出血
     - 多發性結節
     - 呼吸困難（肺轉移）
-
 diagnosis:
   primaryTests:
     - name: 細針抽吸細胞學
       notes: 評估腫瘤細胞型態。確診需術後病理。
     - name: 胸腔 X 光
       notes: 排除肺轉移（術前分期必需）。
-
 treatment:
   principles:
     - 外科切除為首選
@@ -47,41 +43,74 @@ treatment:
     - 乳腺腫塊切除 + 同時絕育
     - 多發性腫塊：全乳腺切除
     - 無肺轉移者手術預後較佳
-
 prognosis: 早期無轉移的乳腺腫瘤完全切除後預後良好。高惡性度或已有肺轉移者預後差。早期絕育（6 月齡前）可大幅降低乳腺腫瘤發生率。
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
     title: Segmental aplasia of the paramesonephric duct in a New Zealand white rabbit and a review of the literature.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11529434/
     type: review
-    pmid: "38282435"
+    pmid: '38282435'
     relevance: primary
-  - sourceOrg: "Journal of visualized experiments : JoVE"
-    title: X-ray Visualization of Intraductal Ethanol-based Ablative Infusion for Prevention of Breast Cancer in Rabbit Models.
+  - sourceOrg: 'Journal of visualized experiments : JoVE'
+    title: >-
+      X-ray Visualization of Intraductal Ethanol-based Ablative Infusion for Prevention of Breast Cancer in Rabbit
+      Models.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12666884/
     type: research
-    pmid: "41021403"
+    pmid: '41021403'
     relevance: supporting
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: Common Diagnoses from Surgical Biopsies and Investigation of Leporipoxvirus in Pet Rabbits (Oryctolagus cuniculi) in Taiwan.
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Common Diagnoses from Surgical Biopsies and Investigation of Leporipoxvirus in Pet Rabbits (Oryctolagus cuniculi)
+      in Taiwan.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12071097/
     type: research
-    pmid: "40362049"
+    pmid: '40362049'
     relevance: supporting
   - sourceOrg: In vivo (Athens, Greece)
     title: Kv 11.1 Expression Is Associated With Malignancy of Canine Mammary Gland Tumors.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10905485/
     type: research
-    pmid: "38418114"
+    pmid: '38418114'
     relevance: supporting
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Immunohistochemical Detection of Indoleamine 2,3-Dioxygenase in Spontaneous Mammary Carcinomas of 96 Pet Rabbits.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11274320/
     type: research
-    pmid: "39061522"
+    pmid: '39061522'
     relevance: supporting
 pubmedQueries:
   - query: '"Rabbit Mammary Gland Tumor" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔乳腺腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 細針抽吸細胞學
+          notes: 評估腫瘤細胞型態。確診需術後病理。
+        - name: 胸腔 X 光
+          notes: 排除肺轉移（術前分期必需）。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 外科切除為首選
+        - 早期絕育預防
+        - 術前胸腔 X 光排除轉移
+ddxSource: auto-generated

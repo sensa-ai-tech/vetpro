@@ -3,13 +3,15 @@ nameEn: Babesia Canis
 nameZh: 犬巴貝西蟲病
 bodySystem: infectious
 description: 由Babesia canis原蟲經壁蝨傳播引起的血液寄生蟲病,破壞紅血球導致溶血性貧血、黃疸及器官衰竭。臨床表現從輕微到致命性不等,依亞種及宿主免疫狀態而異。
-
 aliases:
-  - { alias: 犬焦蟲病, language: zh }
-  - { alias: 犬梨形蟲病, language: zh }
-  - { alias: Canine Babesiosis, language: en }
-  - { alias: Canine Piroplasmosis, language: en }
-
+  - alias: 犬焦蟲病
+    language: zh
+  - alias: 犬梨形蟲病
+    language: zh
+  - alias: Canine Babesiosis
+    language: en
+  - alias: Canine Piroplasmosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少感染B. canis,但可能作為帶原者
-
 etiology:
   categories:
     - name: 病原亞種
@@ -33,7 +34,6 @@ etiology:
         - 輸血傳播
         - 垂直傳播(母犬至胎兒)
         - 咬傷傳播(犬隻打鬥)
-
 clinicalSigns:
   early:
     - 急性發燒(39.5-41°C),精神沉鬱
@@ -45,26 +45,24 @@ clinicalSigns:
     - 黃疸加劇,肝腎功能異常
     - 瀰漫性血管內凝血(DIC)
     - 多器官衰竭,休克,死亡
-
 diagnosis:
   primaryTests:
     - name: 血液抹片
-      notes: "紅血球內見梨形蟲體(1-5 μm),Giemsa或Diff-Quik染色"
+      notes: 紅血球內見梨形蟲體(1-5 μm),Giemsa或Diff-Quik染色
     - name: 全血球計數
-      notes: "再生性貧血,血小板減少,白血球增多"
+      notes: 再生性貧血,血小板減少,白血球增多
     - name: 血液生化
-      notes: "膽紅素升高(\">3 mg/dL\"),ALT/AST升高,BUN/Cr上升"
+      notes: 膽紅素升高(">3 mg/dL"),ALT/AST升高,BUN/Cr上升
     - name: PCR檢測
-      notes: "敏感度高,可鑑別亞種,慢性或低寄生蟲血症病例首選"
+      notes: 敏感度高,可鑑別亞種,慢性或低寄生蟲血症病例首選
     - name: 血清學(IFAT/ELISA)
-      notes: "抗體檢測,慢性感染或流行病學調查"
+      notes: 抗體檢測,慢性感染或流行病學調查
   differentialDiagnoses:
     - 其他血液寄生蟲(Babesia gibsoni, Hepatozoon)
     - 免疫介導性溶血性貧血(IMHA)
     - 洋蔥中毒或其他溶血毒物
     - 鉤端螺旋體病
     - 急性肝腎衰竭其他原因
-
 treatment:
   medical:
     - Imidocarb dipropionate 6.6 mg/kg IM或SC,2週後重複(首選)
@@ -75,41 +73,69 @@ treatment:
   supportive:
     - 壁蝨控制:Fipronil, Permethrin滴劑
     - 營養支持:高蛋白易消化飲食
-
 prognosis:
-  general: "預後取決於亞種及治療時機。B. c. vogeli及早期治療預後良好,治癒率>90%。B. c. rossi致死率可達10-20%,併發DIC或器官衰竭預後不良。慢性感染可能終身帶原,免疫抑制時復發。"
-
+  general: 預後取決於亞種及治療時機。B. c. vogeli及早期治療預後良好,治癒率>90%。B. c. rossi致死率可達10-20%,併發DIC或器官衰竭預後不良。慢性感染可能終身帶原,免疫抑制時復發。
 prevention:
   - 全年壁蝨預防:每月給予外寄生蟲預防藥
   - 流行區犬隻避免草叢及樹林
   - 每日檢查並及時移除壁蝨(24小時內)
   - 輸血前篩檢供血犬
   - 疫苗(歐洲有B. canis疫苗,台灣未上市)
-
-
 guidelineRefs:
-  - sourceOrg: "Parasites &amp; vectors"
+  - sourceOrg: Parasites &amp; vectors
     title: Non-zoonotic tick-borne pathogens in Western Balkan.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11907817/
     type: review
-    pmid: "40087740"
+    pmid: '40087740'
   - sourceOrg: Veterinary medicine and science
     title: A global systematic review and meta-analysis on the babesiosis in dogs with special reference to Babesia canis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11063922/
     type: review
-    pmid: "38695207"
+    pmid: '38695207'
   - sourceOrg: Frontiers in veterinary science
-    title: "Babesia Species of Domestic Cats: Molecular Characterization Has Opened Pandora's Box."
+    title: 'Babesia Species of Domestic Cats: Molecular Characterization Has Opened Pandora''s Box.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7118673/
     type: review
-    pmid: "32292793"
+    pmid: '32292793'
   - sourceOrg: Pathogens (Basel, Switzerland)
     title: The Diverse Pathogenicity of Various Babesia Parasite Species That Infect Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10746086/
     type: review
-    pmid: "38133320"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '38133320'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Babesia gibsoni Infection in Dogs-A European Perspective.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8944637/
     type: review
-    pmid: "35327127"
+    pmid: '35327127'
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: splenomegaly
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: jaundice
+    frequency: common
+diagnosticAlgorithm:
+  title: 犬巴貝西蟲病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - abdominal-pain 相關症狀
+        - pallor-cyanosis 相關症狀
+        - splenomegaly 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液抹片
+          notes: 紅血球內見梨形蟲體(1-5 μm),Giemsa或Diff-Quik染色
+        - name: 全血球計數
+          notes: 再生性貧血,血小板減少,白血球增多
+        - name: 血液生化
+          notes: 膽紅素升高(">3 mg/dL"),ALT/AST升高,BUN/Cr上升
+ddxSource: auto-generated

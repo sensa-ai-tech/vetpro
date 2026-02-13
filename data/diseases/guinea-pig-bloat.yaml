@@ -3,22 +3,20 @@ nameEn: Guinea Pig Bloat
 nameZh: 天竺鼠脹氣
 bodySystem: gastrointestinal
 description: 天竺鼠胃腸道異常脹氣，可因飲食不當、腸道菌群失衡或腸道阻塞引起。嚴重脹氣壓迫膈肌導致呼吸困難，為天竺鼠的急症。
-
 aliases:
-  - { alias: "天竺鼠脹氣", language: zh }
-  - { alias: "Guinea Pig Bloat", language: en }
-
+  - alias: 天竺鼠脹氣
+    language: zh
+  - alias: Guinea Pig Bloat
+    language: en
 species:
   - speciesCommon: guinea pig
     prevalence: uncommon
     notes: 天竺鼠可受此疾病影響。
-
 etiology:
   categories:
     - name: 病因
       examples:
         - 詳見臨床文獻
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -27,14 +25,12 @@ clinicalSigns:
   progressive:
     - 症狀加重
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 完整理學檢查與病史評估。
     - name: 實驗室檢查
       notes: CBC/生化排除系統性疾病。
-
 treatment:
   principles:
     - 治療基礎病因
@@ -44,26 +40,66 @@ treatment:
     - 依病因治療
     - 支持性照護
     - 定期追蹤
-
 prognosis: 預後取決於疾病嚴重度與治療時效。早期診斷與適當治療可改善預後。
-
-
 guidelineRefs:
   - sourceOrg: Open veterinary journal
     title: Jejuno-jejunal intussusception in a guinea pig (Cavia porcellus).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5633663/
     type: case-report
-    pmid: "29038782"
+    pmid: '29038782'
   - sourceOrg: Diamond and related materials
-    title: Electrochemical measurements of serotonin (5-HT) release from the guinea pig mucosa using continuous amperometry with a boron-doped diamond microelectrode.
+    title: >-
+      Electrochemical measurements of serotonin (5-HT) release from the guinea pig mucosa using continuous amperometry
+      with a boron-doped diamond microelectrode.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2832314/
     type: research
-    pmid: "20209031"
+    pmid: '20209031'
   - sourceOrg: Frontiers in neuroscience
-    title: "Reduced Responses of Submucous Neurons from Irritable Bowel Syndrome Patients to a Cocktail Containing Histamine, Serotonin, TNF&#x3b1;, and Tryptase (IBS-Cocktail)."
+    title: >-
+      Reduced Responses of Submucous Neurons from Irritable Bowel Syndrome Patients to a Cocktail Containing Histamine,
+      Serotonin, TNF&#x3b1;, and Tryptase (IBS-Cocktail).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4679876/
     type: research
-    pmid: "26733780"
+    pmid: '26733780'
 pubmedQueries:
   - query: '"Guinea Pig Bloat" AND (veterinary OR "guinea pig") AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: flatulence
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 天竺鼠脹氣 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 完整理學檢查與病史評估。
+        - name: 實驗室檢查
+          notes: CBC/生化排除系統性疾病。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 支持性照護
+        - 監測恢復進度
+ddxSource: auto-generated

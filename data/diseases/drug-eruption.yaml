@@ -3,13 +3,15 @@ nameEn: Drug Eruption
 nameZh: 藥物疹
 bodySystem: dermatology
 description: 藥物引起的皮膚不良反應的統稱，可表現為多種形態（丘疹、紅斑、蕁麻疹、水泡、脫屑）。機轉包括免疫媒介（過敏）與非免疫媒介（藥理毒性）。任何藥物皆可引起。
-
 aliases:
-  - { alias: "Drug Reaction", language: en }
-  - { alias: "Cutaneous Drug Reaction", language: en }
-  - { alias: "藥物反應", language: zh }
-  - { alias: "藥物性皮疹", language: zh }
-
+  - alias: Drug Reaction
+    language: en
+  - alias: Cutaneous Drug Reaction
+    language: en
+  - alias: 藥物反應
+    language: zh
+  - alias: 藥物性皮疹
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓偶見。
-
 etiology:
   categories:
     - name: 藥物反應
@@ -26,7 +27,6 @@ etiology:
         - 抗生素（Penicillin、Cephalosporin）
         - NSAIDs
         - 疫苗反應
-
 clinicalSigns:
   early:
     - 用藥 1-3 週後出現皮疹
@@ -37,14 +37,12 @@ clinicalSigns:
     - 丘疹膿皰
     - 水泡/潰瘍
     - 全身性反應（發燒、淋巴結腫大）
-
 diagnosis:
   primaryTests:
     - name: 藥物史回顧
       notes: 確認症狀與用藥時序的關聯
     - name: 皮膚活檢
       notes: 組織病理可見界面性皮膚炎或其他特徵性變化
-
 treatment:
   principles:
     - 停用可疑藥物為最重要步驟
@@ -54,9 +52,50 @@ treatment:
     - 抗組織胺（輕度蕁麻疹型）
     - 短期類固醇（嚴重時）
     - 紀錄過敏藥物避免再次使用
-
 prognosis: 停藥後多數在 1-3 週內改善。嚴重型（SJS/TEN）預後不良。紀錄過敏藥物避免復發至關重要。
-
 pubmedQueries:
   - query: '"drug eruption" AND (veterinary OR canine OR feline) AND ("adverse reaction" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 藥物疹/藥物不良反應 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 收集完整用藥史和皮膚病變特徵
+      findings:
+        - 用藥後1-3週內出現皮疹
+        - 病變形態多樣（斑疹、丘疹、蕁麻疹等）
+        - 對稱性分布
+        - 可能伴有發熱和精神沉鬱
+    - step: 2
+      action: 藥物時間關係評估
+      details: 建立藥物暴露和症狀發生的時間關係
+      findings:
+        - 確定可疑藥物和開始使用時間
+        - 常見致敏藥：磺胺類、頭孢菌素、NSAID
+        - 停藥後觀察改善
+        - 再暴露可能導致更嚴重反應
+    - step: 3
+      action: 組織病理學檢查
+      details: 進行皮膚活檢排除其他疾病
+      findings:
+        - 界面性皮膚炎
+        - 角質細胞凋亡
+        - 血管周圍炎症浸潤
+        - 排除自體免疫性皮膚病
+clinicalPearls:
+  - 停藥是最重要的治療步驟——藥物疹的鑑別診斷中，「最近開始或更換的藥物」是最關鍵的線索
+  - 磺胺類抗生素（TMP-sulfa）是犬最常見的引起嚴重藥物疹（SJS/TEN）的藥物
+  - 藥物疹可在給藥後數天到數週才出現，停藥後也可能短暫惡化
+  - 確診藥物疹後，應在病歷中永久記錄過敏藥物，並告知飼主避免未來再次使用
+monitoringItems:
+  - 停藥後每 3-7 天評估皮膚和黏膜病變的改善
+  - SJS/TEN 住院患者每日監測體表受累面積、體溫、感染徵象
+  - 肝腎功能追蹤（藥物可能已造成多器官損傷）
+  - 眼科追蹤（SJS/TEN 可導致角膜瘢痕和乾眼症）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+ddxSource: book

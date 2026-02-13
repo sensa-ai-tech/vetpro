@@ -3,11 +3,11 @@ nameEn: Fibrotic Myopathy
 nameZh: 纖維化肌病
 bodySystem: orthopedic
 description: 肌肉組織被纖維組織替代導致的永久性攣縮與步態異常。可累及任何肌群但最常見為後肢肌群（股薄肌、半腱肌、棘下肌）。為慢性退化性肌肉疾病。
-
 aliases:
-  - { alias: "Muscle Fibrosis", language: en }
-  - { alias: "肌肉纖維化", language: zh }
-
+  - alias: Muscle Fibrosis
+    language: en
+  - alias: 肌肉纖維化
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 退化性纖維化
@@ -23,7 +22,6 @@ etiology:
         - 反覆肌肉損傷後纖維替代
         - 免疫媒介性肌炎後
         - 品種遺傳傾向
-
 clinicalSigns:
   early:
     - 步態異常
@@ -33,14 +31,12 @@ clinicalSigns:
     - 永久性攣縮
     - 肌肉萎縮
     - 關節活動範圍減少
-
 diagnosis:
   primaryTests:
     - name: 觸診
       notes: 受累肌肉堅硬、觸診纖維帶
     - name: 超音波 / MRI
       notes: 肌肉內纖維化範圍評估
-
 treatment:
   principles:
     - 手術鬆解
@@ -50,21 +46,69 @@ treatment:
     - 物理治療維持活動度
     - 術後復發可能
     - 適度運動避免惡化
-
 prognosis: 手術可改善但復發常見。適當管理可維持可接受的生活品質。不危及生命。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Outcome of eight working dogs with fibrotic myopathy following extracorporeal shockwave and rehabilitation therapy: a case series."
+    title: >-
+      Outcome of eight working dogs with fibrotic myopathy following extracorporeal shockwave and rehabilitation
+      therapy: a case series.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10800511/
     type: research
-    pmid: "38260195"
+    pmid: '38260195'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Fibrotic myopathy and contracture of the caudal thigh musculature: a prospective study of 41 dogs (2019-2022)."
+    title: 'Fibrotic myopathy and contracture of the caudal thigh musculature: a prospective study of 41 dogs (2019-2022).'
     url: https://pubmed.ncbi.nlm.nih.gov/37468124/
     type: research
-    pmid: "37468124"
+    pmid: '37468124'
 pubmedQueries:
   - query: '"fibrotic myopathy" AND (veterinary OR canine) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 纖維性肌病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估機械性步態異常
+      findings:
+        - 特徵性步態（擺動相足部突然向後拉）
+        - 受累肌肉堅硬可觸及
+        - 股薄肌或半腱肌最常受累
+        - 德國牧羊犬好發
+    - step: 2
+      action: 觸診與肌肉評估
+      details: 進行受累肌肉的詳細觸診
+      findings:
+        - 肌肉內可觸及堅硬纖維化帶
+        - 關節被動活動範圍受限
+        - 肌肉萎縮
+        - 無疼痛反應
+    - step: 3
+      action: 影像學檢查
+      details: 進行超音波評估肌肉結構
+      findings:
+        - 超音波見肌肉纖維化和瘢痕組織
+        - 肌肉回音性增加
+        - 正常肌肉結構喪失
+        - MRI精確評估範圍
+    - step: 4
+      action: 組織病理學
+      details: 必要時進行肌肉活檢確認
+      findings:
+        - 成熟纖維結締組織取代正常肌肉
+        - 肌纖維萎縮和退化
+        - 排除腫瘤性病變
+        - 評估手術治療可行性
+clinicalPearls:
+  - German Shepherd 的特徵性「彈回」步態幾乎是病理特異性的
+  - 步態異常是機械性的（纖維帶限制），而非疼痛性的
+  - NSAIDs 通常對步態改善無效（非炎症性機制）
+  - 術後復發率高，飼主應有心理準備
+monitoringItems:
+  - 步態評估每月追蹤
+  - 術後物理治療和拉伸練習至少 8-12 週
+  - 患肢肌肉量和關節活動範圍定期評估
+  - 對側肢體發展纖維化的風險監測
+associatedSymptoms:
+  - symptomId: cachexia-muscle-wasting
+    frequency: common
+ddxSource: book

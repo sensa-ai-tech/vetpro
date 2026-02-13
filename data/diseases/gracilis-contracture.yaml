@@ -3,11 +3,11 @@ nameEn: Gracilis Contracture
 nameZh: 股薄肌攣縮
 bodySystem: orthopedic
 description: 股薄肌 (gracilis) 或半腱肌 (semitendinosus) 的纖維化攣縮，導致後肢步態異常。German Shepherd 品種好發。機轉為肌肉損傷後纖維化帶替代。
-
 aliases:
-  - { alias: "Gracilis-Semitendinosus Myopathy", language: en }
-  - { alias: "股薄肌纖維化", language: zh }
-
+  - alias: Gracilis-Semitendinosus Myopathy
+    language: en
+  - alias: 股薄肌纖維化
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓極罕見。
-
 etiology:
   categories:
     - name: 肌肉纖維化
@@ -23,7 +22,6 @@ etiology:
         - 肌肉損傷後纖維帶形成
         - 遺傳傾向（German Shepherd）
         - 反覆微損傷
-
 clinicalSigns:
   early:
     - 後肢步態僵硬
@@ -34,14 +32,12 @@ clinicalSigns:
     - 膝關節外翻
     - 飛節外翻
     - 觸診可摸到纖維帶
-
 diagnosis:
   primaryTests:
     - name: 觸診
       notes: 股薄肌/半腱肌區域可觸及堅硬纖維帶
     - name: 步態分析
       notes: 特徵性短步內旋步態
-
 treatment:
   principles:
     - 手術切除纖維帶
@@ -51,21 +47,46 @@ treatment:
     - 術後物理治療
     - 高復發率（50%+）
     - 保守管理（輕度病例）
-
 prognosis: 手術可暫時改善但復發率高（50% 以上）。不危及生命。輕度病例可保守管理。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Outcome of eight working dogs with fibrotic myopathy following extracorporeal shockwave and rehabilitation therapy: a case series."
+    title: >-
+      Outcome of eight working dogs with fibrotic myopathy following extracorporeal shockwave and rehabilitation
+      therapy: a case series.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10800511/
     type: research
-    pmid: "38260195"
+    pmid: '38260195'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Fibrotic myopathy and contracture of the caudal thigh musculature: a prospective study of 41 dogs (2019-2022)."
+    title: 'Fibrotic myopathy and contracture of the caudal thigh musculature: a prospective study of 41 dogs (2019-2022).'
     url: https://pubmed.ncbi.nlm.nih.gov/37468124/
     type: research
-    pmid: "37468124"
+    pmid: '37468124'
 pubmedQueries:
   - query: '"gracilis contracture" OR "gracilis myopathy" AND (veterinary OR canine) AND ("treatment" OR "German Shepherd")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 股薄肌攣縮 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 觸診
+          notes: 股薄肌/半腱肌區域可觸及堅硬纖維帶
+        - name: 步態分析
+          notes: 特徵性短步內旋步態
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術切除纖維帶
+        - 術後復發常見
+ddxSource: auto-generated

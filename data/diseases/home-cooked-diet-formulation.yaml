@@ -3,12 +3,13 @@ nameEn: Home Cooked Diet Formulation
 nameZh: 自製飲食配方設計
 bodySystem: metabolic
 description: 犬貓自製飲食的營養配方設計原則。需由獸醫營養師指導，確保營養均衡、避免缺乏或過量。不當自製飲食可導致嚴重營養性疾病。
-
 aliases:
-  - { alias: 自製鮮食, language: zh }
-  - { alias: Homemade Diet, language: en }
-  - { alias: Home Prepared Diet, language: en }
-
+  - alias: 自製鮮食
+    language: zh
+  - alias: Homemade Diet
+    language: en
+  - alias: Home Prepared Diet
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 專性肉食，配方需特別注意牛磺酸、精胺酸、維生素A
-
 etiology:
   categories:
     - name: 自製飲食常見缺陷
@@ -34,7 +34,6 @@ etiology:
         - 商業處方不接受
         - 飼主強烈偏好
         - 特殊醫療需求
-
 clinicalSigns:
   early:
     - 營養均衡：健康、活力、毛質佳
@@ -43,20 +42,18 @@ clinicalSigns:
     - 鈣缺乏：骨折、步態異常、疼痛
     - 牛磺酸缺乏(貓)：擴張性心肌病、失明
     - 維生素缺乏：各種臨床症狀
-
 diagnosis:
   primaryTests:
     - name: 飲食配方分析
-      notes: "營養師評估配方完整性"
+      notes: 營養師評估配方完整性
     - name: 血液檢查
-      notes: "鈣磷、白蛋白、牛磺酸、維生素D"
+      notes: 鈣磷、白蛋白、牛磺酸、維生素D
     - name: 生長曲線
-      notes: "幼犬貓生長監測"
+      notes: 幼犬貓生長監測
   differentialDiagnoses:
     - 營養性次發性副甲狀腺亢進
     - 牛磺酸缺乏性心肌病
     - 維生素缺乏症
-
 treatment:
   medical:
     - 自製飲食基本組成
@@ -76,12 +73,35 @@ treatment:
     - 烹調注意事項
     - 煮熟以減少細菌風險
     - 避免有毒食材(洋蔥、大蒜、葡萄、木糖醇)
-
 prognosis:
-  general: "由營養師設計的均衡自製飲食可滿足營養需求；不當配方可導致嚴重疾病"
-
+  general: 由營養師設計的均衡自製飲食可滿足營養需求；不當配方可導致嚴重疾病
 prevention:
   - 諮詢獸醫營養師
   - 使用經驗證配方
   - 添加適當營養補充品
   - 定期健康檢查及營養評估
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: uncommon
+  - symptomId: blindness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 自製飲食配方設計 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 飲食配方分析
+          notes: 營養師評估配方完整性
+        - name: 血液檢查
+          notes: 鈣磷、白蛋白、牛磺酸、維生素D
+        - name: 生長曲線
+          notes: 幼犬貓生長監測
+ddxSource: auto-generated

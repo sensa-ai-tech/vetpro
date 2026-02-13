@@ -2,19 +2,22 @@ slug: feline-coronavirus
 nameEn: Feline Coronavirus
 nameZh: 貓冠狀病毒感染
 bodySystem: infectious
-description: 貓冠狀病毒 (FCoV) 為一種常見的腸道 RNA 病毒，多貓家庭感染率可達 80-90%。多數感染為亞臨床或輕度腸胃炎。約 5-10% 感染貓體內病毒突變為致命的貓傳染性腹膜炎病毒 (FIPV)。GS-441524 抗病毒藥物已改變 FIP 的治療格局。
-
+description: >-
+  貓冠狀病毒 (FCoV) 為一種常見的腸道 RNA 病毒，多貓家庭感染率可達 80-90%。多數感染為亞臨床或輕度腸胃炎。約 5-10% 感染貓體內病毒突變為致命的貓傳染性腹膜炎病毒 (FIPV)。GS-441524 抗病毒藥物已改變
+  FIP 的治療格局。
 aliases:
-  - { alias: 貓腸道冠狀病毒, language: zh }
-  - { alias: FCoV, language: en }
-  - { alias: Feline Enteric Coronavirus, language: en }
-  - { alias: FECV, language: en }
-
+  - alias: 貓腸道冠狀病毒
+    language: zh
+  - alias: FCoV
+    language: en
+  - alias: Feline Enteric Coronavirus
+    language: en
+  - alias: FECV
+    language: en
 species:
   - speciesCommon: cat
     prevalence: common
     notes: 多貓環境感染率極高（80-90%）。多數為亞臨床腸道感染。約 5-10% 感染貓會發展為 FIP。幼貓（6 月齡至 2 歲）最易發展為 FIP。純種貓風險較高。
-
 etiology:
   categories:
     - name: 病原特性
@@ -29,7 +32,6 @@ etiology:
         - 多貓環境
         - 免疫抑制（FeLV 共感染、壓力）
         - 純種貓（Birman、Ragdoll、Bengal 等）
-
 clinicalSigns:
   early:
     - 多數無明顯症狀
@@ -40,7 +42,6 @@ clinicalSigns:
     - 持續性軟便（少數）
     - 慢性腸炎（罕見）
     - 發燒、食慾下降、體重減輕（FIP 前兆）
-
 diagnosis:
   primaryTests:
     - name: 糞便 RT-PCR
@@ -51,7 +52,6 @@ diagnosis:
     - Rivalta test（腹水初步篩檢 FIP）
     - 腹水或胸水 FCoV RT-PCR（若懷疑 FIP）
     - 白蛋白/球蛋白比值（A:G ratio <0.4 高度提示 FIP）
-
 treatment:
   principles:
     - 腸道型感染多為自限性
@@ -66,36 +66,80 @@ treatment:
     - 減少環境壓力
     - 新進貓隔離觀察
     - 若發展為 FIP，考慮 GS-441524 抗病毒治療
-
 prognosis: 單純 FCoV 腸道感染預後極佳，多數貓可自行清除病毒或成為無症狀攜帶者。約 5-10% 可能突變發展為 FIP。透過環境管理與壓力減少可降低 FIP 發生風險。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: Comparison of three blood transfusion guidelines applied to 31 feline donors to minimise the risk of transfusion-transmissible infections.
+    title: >-
+      Comparison of three blood transfusion guidelines applied to 31 feline donors to minimise the risk of
+      transfusion-transmissible infections.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11104146/
     type: guideline
-    pmid: "28840782"
+    pmid: '28840782'
   - sourceOrg: Pathogens (Basel, Switzerland)
-    title: "Efficacy of GS-441524 for Feline Infectious Peritonitis: A Systematic Review (2018-2024)."
+    title: 'Efficacy of GS-441524 for Feline Infectious Peritonitis: A Systematic Review (2018-2024).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12298711/
     type: review
-    pmid: "40732763"
+    pmid: '40732763'
   - sourceOrg: The Journal of general virology
-    title: "Coronaviruses in wild rodent and eulipotyphlan small mammals: a review of diversity, ecological implications and surveillance considerations."
+    title: >-
+      Coronaviruses in wild rodent and eulipotyphlan small mammals: a review of diversity, ecological implications and
+      surveillance considerations.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12282219/
     type: review
-    pmid: "40643565"
+    pmid: '40643565'
   - sourceOrg: Viruses
-    title: "Feline Infectious Peritonitis: European Advisory Board on Cat Diseases Guidelines."
+    title: 'Feline Infectious Peritonitis: European Advisory Board on Cat Diseases Guidelines.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10535984/
     type: review
-    pmid: "37766254"
+    pmid: '37766254'
   - sourceOrg: Virus research
-    title: "An updated review of feline coronavirus: mind the two biotypes."
+    title: 'An updated review of feline coronavirus: mind the two biotypes.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10194308/
     type: review
-    pmid: "36731629"
+    pmid: '36731629'
 pubmedQueries:
   - query: '"feline coronavirus" AND ("management" OR "prevention" OR "FIP" OR "GS-441524")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 貓腸道冠狀病毒感染 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估腸道症狀，通常為輕微自限性
+      findings:
+        - 輕度至中度腹瀉
+        - 幼貓較成貓症狀明顯
+        - 多貓環境常見
+        - 通常自限性，1-2天恢復
+    - step: 2
+      action: 糞便檢測
+      details: 進行糞便病毒檢測
+      findings:
+        - 糞便RT-PCR檢測冠狀病毒RNA
+        - 糞便抗原快速檢測
+        - 間歇性排毒使陰性結果不能完全排除
+        - 排除其他腸道病原
+    - step: 3
+      action: 血清學與鑑別
+      details: 進行冠狀病毒抗體檢測，與FIP鑑別
+      findings:
+        - 冠狀病毒抗體效價（無法區分FECV和FIPV）
+        - 高抗體效價不等於FIP
+        - Rivalta試驗（排除FIP）
+        - 全身性症狀缺如支持FECV而非FIP
+clinicalPearls:
+  - FCoV抗體陽性不等於FIP——大多數抗體陽性貓永遠不會發展為FIP
+  - 多貓環境中減少貓密度和增加貓砂盆數量可降低傳播
+  - 幼貓（<2歲）和緊迫（手術、搬家、收容所）是FECV突變為FIPV的風險因子
+  - 糞便PCR陽性僅代表排毒，對FIP診斷無直接意義
+monitoringItems:
+  - 多貓環境定期糞便PCR追蹤排毒狀態
+  - 抗體效價變化追蹤（升高不一定代表FIP）
+  - 觀察FIP早期症狀（持續發燒、體重下降、腹水）
+  - 新進貓隔離2-4週並檢測
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+ddxSource: book

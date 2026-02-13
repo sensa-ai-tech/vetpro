@@ -3,18 +3,18 @@ nameEn: Greyhound Neuropathy
 nameZh: 靈緹犬神經病變
 bodySystem: neurology
 description: 靈緹犬特有的多發性神經病變,通常在3-9歲發病。初期表現為聲音嘶啞、運動不耐,逐漸進展為四肢無力、肌肉萎縮,最終導致癱瘓。病因未明,可能與遺傳有關。
-
 aliases:
-  - { alias: 靈緹犬多發性神經病變, language: zh }
-  - { alias: Polyneuropathy of Greyhounds, language: en }
-  - { alias: Greyhound Polyradiculoneuropathy, language: en }
-
+  - alias: 靈緹犬多發性神經病變
+    language: zh
+  - alias: Polyneuropathy of Greyhounds
+    language: en
+  - alias: Greyhound Polyradiculoneuropathy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: rare
     notes: 靈緹犬特有疾病,可能有遺傳基礎
-
 etiology:
   categories:
     - name: 特發性神經病變
@@ -22,7 +22,6 @@ etiology:
         - 疑似遺傳性神經退化
         - 免疫介導性神經損傷
         - 代謝性神經病變
-
 clinicalSigns:
   early:
     - 吠叫聲音改變、嘶啞
@@ -34,22 +33,20 @@ clinicalSigns:
     - 吞嚥困難、嗆咳
     - 呼吸肌無力
     - 最終癱瘓
-
 diagnosis:
   primaryTests:
     - name: 肌電圖(EMG)
-      notes: "顯示神經源性肌肉變化、自發性電位"
+      notes: 顯示神經源性肌肉變化、自發性電位
     - name: 神經傳導速度檢查
-      notes: "傳導速度減慢"
+      notes: 傳導速度減慢
     - name: 神經/肌肉活檢
-      notes: "軸突退化、髓鞘脫失"
+      notes: 軸突退化、髓鞘脫失
     - name: 血液學檢查
-      notes: "排除代謝性或毒性原因"
+      notes: 排除代謝性或毒性原因
   differentialDiagnoses:
     - 重症肌無力
     - 脊髓病變
     - 甲狀腺功能低下症
-
 treatment:
   medical:
     - 無特效治療
@@ -57,18 +54,50 @@ treatment:
     - Azathioprine 2 mg/kg PO q24-48h(部分病例)
     - 支持性照護(營養支持、物理治療)
     - 生活品質評估
-
 prognosis:
-  general: "預後不良,多數病例進行性惡化。部分犬隻可能在早期穩定,但最終會發展為癱瘓。多數在診斷後6-12個月內因生活品質過差實施安樂死。"
-
+  general: 預後不良,多數病例進行性惡化。部分犬隻可能在早期穩定,但最終會發展為癱瘓。多數在診斷後6-12個月內因生活品質過差實施安樂死。
 prevention:
   - 受影響犬隻不應繁殖
   - 遺傳諮詢及品種健康監測
-
-
 guidelineRefs:
   - sourceOrg: BMC veterinary research
-    title: Cell and context-dependent sorting of neuropathy-associated protein NDRG1 - insights from canine tissues and primary Schwann cell cultures.
+    title: >-
+      Cell and context-dependent sorting of neuropathy-associated protein NDRG1 - insights from canine tissues and
+      primary Schwann cell cultures.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6487035/
     type: research
-    pmid: "31029158"
+    pmid: '31029158'
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: paresis-paralysis
+    frequency: common
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 靈緹犬神經病變 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dysphagia 相關症狀
+        - paresis-paralysis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 肌電圖(EMG)
+          notes: 顯示神經源性肌肉變化、自發性電位
+        - name: 神經傳導速度檢查
+          notes: 傳導速度減慢
+        - name: 神經/肌肉活檢
+          notes: 軸突退化、髓鞘脫失
+ddxSource: auto-generated

@@ -3,13 +3,15 @@ nameEn: House Soiling
 nameZh: 室內不當排泄
 bodySystem: behavioral
 description: 已受排泄訓練的犬貓在室內不當位置排泄（尿液或糞便），為犬貓行為門診常見就診原因且為飼主棄養的主要原因之一。需先排除泌尿道感染、腎病等醫學原因。
-
 aliases:
-  - { alias: "隨地便溺", language: zh }
-  - { alias: "如廁問題", language: zh }
-  - { alias: "Inappropriate Elimination", language: en }
-  - { alias: "Indoor Soiling", language: en }
-
+  - alias: 隨地便溺
+    language: zh
+  - alias: 如廁問題
+    language: zh
+  - alias: Inappropriate Elimination
+    language: en
+  - alias: Indoor Soiling
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓不當排泄為貓最常見的行為就診原因，需區分砂盆問題、標記行為及醫學原因。
-
 etiology:
   categories:
     - name: 醫學原因
@@ -35,7 +36,6 @@ etiology:
         - 分離焦慮
         - 環境壓力
         - 標記行為
-
 clinicalSigns:
   early:
     - 偶爾在不當位置排泄
@@ -45,14 +45,12 @@ clinicalSigns:
     - 頻繁在室內多處排泄
     - 排泄位置有特定偏好（柔軟表面、角落）
     - 伴隨其他行為異常
-
 diagnosis:
   primaryTests:
     - name: 完整醫學檢查
       notes: 尿液分析（感染、結晶）、CBC/生化（腎病、糖尿病）、T4（貓甲亢）。排除所有醫學原因為首要。
     - name: 行為評估
       notes: 詳細詢問排泄位置、時間、基質偏好、砂盆管理（貓）、如廁訓練史（犬）。
-
 treatment:
   principles:
     - 排除醫學原因為第一優先
@@ -65,31 +63,55 @@ treatment:
     - 貓：優化砂盆（足夠數量 N+1、清潔頻率、位置、砂質）
     - 酵素清潔劑徹底清除尿漬氣味
     - 焦慮相關：費洛蒙 + 行為修正 ± 藥物
-
 prognosis: 醫學原因治療後排泄問題常可解決。砂盆管理問題改善後多數貓恢復正常。犬如廁訓練不完全經重新訓練後預後良好。分離焦慮相關需同時處理焦慮問題。
-
-
 guidelineRefs:
   - sourceOrg: BMC veterinary research
     title: An unexpected cause of dysuria in a cat in Poland.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9652871/
     type: case-report
-    pmid: "36369015"
+    pmid: '36369015'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Surgical excision of P3 fragments in 86 declawed cats: case series (2013-2023)."
+    title: 'Surgical excision of P3 fragments in 86 declawed cats: case series (2013-2023).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11103313/
     type: research
-    pmid: "38660961"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '38660961'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Pain and Problem Behavior in Cats and Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7071134/
     type: research
-    pmid: "32085528"
+    pmid: '32085528'
   - sourceOrg: American journal of veterinary research
     title: Recent advances in diagnostic and therapeutic strategies for canine cognitive dysfunction.
     url: https://pubmed.ncbi.nlm.nih.gov/40300622/
     type: review
-    pmid: "40300622"
+    pmid: '40300622'
 pubmedQueries:
   - query: '"House Soiling" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: behaviour-change
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 室內不當排泄 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 完整醫學檢查
+          notes: 尿液分析（感染、結晶）、CBC/生化（腎病、糖尿病）、T4（貓甲亢）。排除所有醫學原因為首要。
+        - name: 行為評估
+          notes: 詳細詢問排泄位置、時間、基質偏好、砂盆管理（貓）、如廁訓練史（犬）。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 排除醫學原因為第一優先
+        - 不要懲罰（動物無法將懲罰與之前的排泄行為連結）
+        - 改善砂盆/排泄環境
+ddxSource: auto-generated

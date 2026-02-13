@@ -3,23 +3,21 @@ nameEn: Aelurostrongylus Abstrusus
 nameZh: 貓肺蟲感染
 bodySystem: respiratory
 description: 貓最常見的肺蟲感染,幼蟲寄生於肺泡及細支氣管。透過攝食中間宿主 (蝸牛、蛞蝓) 或轉續宿主 (鳥類、齧齒類) 感染。
-
 aliases:
-  - { alias: 貓肺線蟲, language: zh }
-  - { alias: Feline Lungworm, language: en }
-
+  - alias: 貓肺線蟲
+    language: zh
+  - alias: Feline Lungworm
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 戶外貓風險較高,幼貓較易出現症狀
-
 etiology:
   categories:
     - name: 寄生蟲感染
       examples:
         - Aelurostrongylus abstrusus (線蟲)
-
 clinicalSigns:
   early:
     - 輕度咳嗽
@@ -29,59 +27,85 @@ clinicalSigns:
     - 呼吸急促
     - 喘鳴
     - 運動不耐
-
 diagnosis:
   primaryTests:
     - name: 糞便 Baermann 檢查
-      notes: "檢測第一期幼蟲"
+      notes: 檢測第一期幼蟲
     - name: 胸部 X 光
-      notes: "間質或混合性肺部浸潤、結節"
+      notes: 間質或混合性肺部浸潤、結節
     - name: 支氣管肺泡灌洗
-      notes: "幼蟲、嗜酸性球增多"
+      notes: 幼蟲、嗜酸性球增多
   differentialDiagnoses:
     - 貓氣喘
     - 慢性支氣管炎
     - 心臟疾病
-
 treatment:
   medical:
     - Fenbendazole 50 mg/kg PO q24h x 10-14 天
     - Ivermectin 0.4 mg/kg SC (單次或每 2 週)
     - Emodepside/praziquantel (Profender®) 外用
     - 支氣管擴張劑 (若有症狀)
-
 prognosis:
-  general: "預後良好;多數病例經治療可完全康復;輕度感染可能自行清除"
-
+  general: 預後良好;多數病例經治療可完全康復;輕度感染可能自行清除
 prevention:
   - 室內飼養
   - 定期驅蟲 (含肺蟲預防)
   - 避免接觸中間宿主
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Feline Troglostrongylosis: Current Epizootiology, Clinical Features, and Therapeutic Options."
+    title: 'Feline Troglostrongylosis: Current Epizootiology, Clinical Features, and Therapeutic Options.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6019465/
     type: review
-    pmid: "29974053"
+    pmid: '29974053'
   - sourceOrg: Pathogens (Basel, Switzerland)
-    title: "Felid Cardiopulmonary Nematodes: Dilemmas Solved and New Questions Posed."
+    title: 'Felid Cardiopulmonary Nematodes: Dilemmas Solved and New Questions Posed.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7824321/
     type: review
-    pmid: "33401704"
+    pmid: '33401704'
   - sourceOrg: Pathogens (Basel, Switzerland)
-    title: "Cat Respiratory Nematodes: Current Knowledge, Novel Data and Warranted Studies on Clinical Features, Treatment and Control."
+    title: >-
+      Cat Respiratory Nematodes: Current Knowledge, Novel Data and Warranted Studies on Clinical Features, Treatment and
+      Control.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8069686/
     type: review
-    pmid: "33920104"
-  - sourceOrg: "Parasites &amp; vectors"
-    title: "Angiostrongylus vasorum and Aelurostrongylus abstrusus: Neglected and underestimated parasites in South America."
+    pmid: '33920104'
+  - sourceOrg: Parasites &amp; vectors
+    title: 'Angiostrongylus vasorum and Aelurostrongylus abstrusus: Neglected and underestimated parasites in South America.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5870519/
     type: review
-    pmid: "29587811"
-  - sourceOrg: "Parasites &amp; vectors"
+    pmid: '29587811'
+  - sourceOrg: Parasites &amp; vectors
     title: Updates on feline aelurostrongylosis and research priorities for the next decade.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4936016/
     type: review
-    pmid: "27387914"
+    pmid: '27387914'
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: stertor-stridor
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 貓肺蟲感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - coughing 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便 Baermann 檢查
+          notes: 檢測第一期幼蟲
+        - name: 胸部 X 光
+          notes: 間質或混合性肺部浸潤、結節
+        - name: 支氣管肺泡灌洗
+          notes: 幼蟲、嗜酸性球增多
+ddxSource: auto-generated

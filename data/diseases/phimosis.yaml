@@ -3,11 +3,11 @@ nameEn: Phimosis
 nameZh: 包莖
 bodySystem: reproductive
 description: 包莖 (phimosis) 為包皮開口狹窄導致陰莖無法正常伸出的狀態。犬為先天性或後天性（慢性感染、外傷後瘢痕）。輕度者可能無臨床症狀，嚴重者影響排尿與交配。手術矯正為主要治療方法。
-
 aliases:
-  - { alias: 包皮狹窄, language: zh }
-  - { alias: Preputial Stenosis, language: en }
-
+  - alias: 包皮狹窄
+    language: zh
+  - alias: Preputial Stenosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓包莖極罕見。
-
 etiology:
   categories:
     - name: 先天性
@@ -27,7 +26,6 @@ etiology:
         - 慢性包皮炎 (balanoposthitis) 後瘢痕
         - 外傷後瘢痕攣縮
         - 腫瘤
-
 clinicalSigns:
   early:
     - 陰莖無法從包皮伸出
@@ -38,7 +36,6 @@ clinicalSigns:
     - 排尿困難
     - 無法交配
     - 尿道阻塞（嚴重者）
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
@@ -48,7 +45,6 @@ diagnosis:
   additional:
     - 包皮沖洗液培養（感染評估）
     - 超音波（包皮腫塊排除）
-
 treatment:
   principles:
     - 手術矯正包皮開口
@@ -59,21 +55,52 @@ treatment:
     - 包皮感染：沖洗 + 局部抗生素
     - 嚴重排尿障礙：緊急手術
     - 術後照護：E-collar、傷口護理
-
 prognosis: 手術矯正後預後極佳。繁殖能力可恢復。術後偶有瘢痕再狹窄需二次手術。先天性包莖犬不建議繁殖（遺傳性）。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Advances in the Diagnosis of Reproductive Disorders in Male Camelids.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12523255/
     type: review
-    pmid: "41096526"
+    pmid: '41096526'
   - sourceOrg: JFMS open reports
-    title: Modified circumferential preputioplasty using a Keyes biopsy punch for treatment of type I phimosis in two kittens.
+    title: >-
+      Modified circumferential preputioplasty using a Keyes biopsy punch for treatment of type I phimosis in two
+      kittens.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11490962/
     type: case-report
-    pmid: "39431240"
+    pmid: '39431240'
 pubmedQueries:
   - query: '"phimosis" AND (veterinary OR canine) AND ("treatment" OR "surgery" OR "preputial")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 包莖 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pollakiuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 嘗試將陰莖推出包皮開口。包莖時無法推出或開口明顯狹窄
+        - name: 鎮靜下評估
+          notes: 完整評估包皮開口大小、黏連程度、陰莖狀態
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 包皮沖洗液培養（感染評估）
+        - 超音波（包皮腫塊排除）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術矯正包皮開口
+        - 治療繼發感染
+ddxSource: auto-generated

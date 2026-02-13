@@ -79,6 +79,10 @@ async function upsertDisease(data: DiseaseYaml): Promise<"added" | "updated" | "
       : null,
     stagingSystem: data.stagingSystem ? JSON.stringify(data.stagingSystem) : null,
     emergencyNotes: data.emergencyNotes ?? null,
+    diagnosticAlgorithm: data.diagnosticAlgorithm ? JSON.stringify(data.diagnosticAlgorithm) : null,
+    clinicalPearls: data.clinicalPearls ? JSON.stringify(data.clinicalPearls) : null,
+    monitoringItems: data.monitoringItems ? JSON.stringify(data.monitoringItems) : null,
+    ddxSource: data.ddxSource ?? null,
     updatedAt: now,
   };
 

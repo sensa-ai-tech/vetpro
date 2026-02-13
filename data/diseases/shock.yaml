@@ -3,30 +3,40 @@ nameEn: Shock
 nameZh: 休克
 bodySystem: emergency
 description: 組織氧輸送不足以滿足代謝需求的危及生命狀態，導致細胞缺氧與器官功能障礙。依病理機制分為四大類：低血容量性休克、分布性休克、心因性休克與阻塞性休克，各有不同的血流動力學特徵與治療策略。
-
 aliases:
-  - { alias: Circulatory Shock, language: en }
-  - { alias: Cardiovascular Collapse, language: en }
-  - { alias: Hypovolemic Shock, language: en }
-  - { alias: Distributive Shock, language: en }
-  - { alias: Cardiogenic Shock, language: en }
-  - { alias: Obstructive Shock, language: en }
-  - { alias: 循環衰竭, language: zh }
-  - { alias: 低血容量性休克, language: zh }
-  - { alias: 分布性休克, language: zh }
-  - { alias: 心因性休克, language: zh }
-  - { alias: 阻塞性休克, language: zh }
-
+  - alias: Circulatory Shock
+    language: en
+  - alias: Cardiovascular Collapse
+    language: en
+  - alias: Hypovolemic Shock
+    language: en
+  - alias: Distributive Shock
+    language: en
+  - alias: Cardiogenic Shock
+    language: en
+  - alias: Obstructive Shock
+    language: en
+  - alias: 循環衰竭
+    language: zh
+  - alias: 低血容量性休克
+    language: zh
+  - alias: 分布性休克
+    language: zh
+  - alias: 心因性休克
+    language: zh
+  - alias: 阻塞性休克
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
-    notes: 各類休克均常見。低血容量性休克（外傷、手術出血、GI 出血）最常見。分布性休克（敗血症、SIRS、anaphylaxis）為 ICU 常見。心因性休克（DCM、重度瓣膜病）較少但可見。阻塞性休克（心包積液/填塞、GDV、肺栓塞）為急診情境。犬休克劑量輸液 60-90 mL/kg/hr。
+    notes: >-
+      各類休克均常見。低血容量性休克（外傷、手術出血、GI 出血）最常見。分布性休克（敗血症、SIRS、anaphylaxis）為 ICU
+      常見。心因性休克（DCM、重度瓣膜病）較少但可見。阻塞性休克（心包積液/填塞、GDV、肺栓塞）為急診情境。犬休克劑量輸液 60-90 mL/kg/hr。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
     notes: 各類休克均可發生。貓休克表現不同於犬 — 貓常表現為心搏過緩（非過速）、低體溫、極度虛弱。貓休克劑量輸液 40-60 mL/kg/hr（較犬保守，因貓對容量過負荷敏感）。HCM 相關心因性休克/阻塞性休克為貓特有的重要考量。
-
 etiology:
   categories:
     - name: 低血容量性休克 (Hypovolemic)
@@ -55,9 +65,11 @@ etiology:
         - 張力性氣胸
         - 肺動脈栓塞 (PTE)
         - 主動脈血栓栓塞 (ATE — 貓 HCM)
-
-pathophysiology: 所有類型休克的共同路徑為組織氧輸送 (DO₂) 不足，導致細胞缺氧與能量代謝從有氧轉為無氧（乳酸堆積）。低血容量性：有效循環血量減少 → 靜脈回流降低 → 心輸出量下降。代償機制：交感神經活化（心搏過速、周邊血管收縮）、RAAS 活化（水鈉滯留）。分布性：全身性血管擴張 + 毛細血管通透性增加 → 有效循環血量相對不足。敗血性休克早期為高動力期（CO 增加、SVR 降低 → warm shock），後期為低動力期（心肌抑制 → cold shock）。心因性：心臟幫浦功能衰竭 → CO 降低。代償性容量超負荷反而加重充血性心衰竭。阻塞性：心室充盈或射血的機械性阻礙。共同終末路徑：組織灌流不足 → 細胞缺氧 → 無氧代謝 → 乳酸酸中毒 → 細胞損傷與凋亡 → 器官功能障礙 → MODS → 死亡。持續低灌流也導致腸道屏障破壞 → 細菌/內毒素移位 → SIRS 惡化，形成惡性循環。
-
+pathophysiology: >-
+  所有類型休克的共同路徑為組織氧輸送 (DO₂) 不足，導致細胞缺氧與能量代謝從有氧轉為無氧（乳酸堆積）。低血容量性：有效循環血量減少 → 靜脈回流降低 → 心輸出量下降。代償機制：交感神經活化（心搏過速、周邊血管收縮）、RAAS
+  活化（水鈉滯留）。分布性：全身性血管擴張 + 毛細血管通透性增加 → 有效循環血量相對不足。敗血性休克早期為高動力期（CO 增加、SVR 降低 → warm shock），後期為低動力期（心肌抑制 → cold
+  shock）。心因性：心臟幫浦功能衰竭 → CO 降低。代償性容量超負荷反而加重充血性心衰竭。阻塞性：心室充盈或射血的機械性阻礙。共同終末路徑：組織灌流不足 → 細胞缺氧 → 無氧代謝 → 乳酸酸中毒 → 細胞損傷與凋亡 →
+  器官功能障礙 → MODS → 死亡。持續低灌流也導致腸道屏障破壞 → 細菌/內毒素移位 → SIRS 惡化，形成惡性循環。
 clinicalSigns:
   early:
     - 代償期 (Compensatory)
@@ -89,22 +101,21 @@ clinicalSigns:
     - DIC
     - 多器官衰竭
     - 心搏停止
-
 diagnosis:
   primaryTests:
     - name: 理學檢查（快速評估）
-      notes: "ABC 評估。心率、脈搏品質、黏膜顏色、CRT、體溫、意識狀態。犬 4 種休克的典型表現不同：低血容量→蒼白/CRT 延長/細弱脈；分布性早期→充血/CRT 快速/洪脈；心因性→蒼白/靜脈怒張/肺囉音；阻塞性→取決於原因"
+      notes: ABC 評估。心率、脈搏品質、黏膜顏色、CRT、體溫、意識狀態。犬 4 種休克的典型表現不同：低血容量→蒼白/CRT 延長/細弱脈；分布性早期→充血/CRT 快速/洪脈；心因性→蒼白/靜脈怒張/肺囉音；阻塞性→取決於原因
     - name: 血壓測量
-      notes: "Doppler 或 oscillometric。收縮壓 <90 mmHg 或 MAP <65 mmHg 定義為低血壓。但代償期可維持正常血壓"
+      notes: Doppler 或 oscillometric。收縮壓 <90 mmHg 或 MAP <65 mmHg 定義為低血壓。但代償期可維持正常血壓
     - name: 乳酸測量
-      notes: "組織灌流不足的敏感指標。>2.5 mmol/L 為異常。連續監測乳酸清除率比單次數值更有意義"
+      notes: 組織灌流不足的敏感指標。>2.5 mmol/L 為異常。連續監測乳酸清除率比單次數值更有意義
   imaging:
     - name: AFAST/TFAST 超音波
-      notes: "床邊快速評估。腹腔/胸腔積液、心包積液、心臟功能初步評估、下腔靜脈直徑（容量狀態）"
+      notes: 床邊快速評估。腹腔/胸腔積液、心包積液、心臟功能初步評估、下腔靜脈直徑（容量狀態）
     - name: 心臟超音波
-      notes: "區分心因性 vs 非心因性休克。評估心臟收縮功能、瓣膜疾病、心包積液/填塞"
+      notes: 區分心因性 vs 非心因性休克。評估心臟收縮功能、瓣膜疾病、心包積液/填塞
     - name: 胸腹腔 X 光
-      notes: "肺水腫、氣胸、胸腔積液、心臟大小、腹腔出血/積液"
+      notes: 肺水腫、氣胸、胸腔積液、心臟大小、腹腔出血/積液
   additional:
     - CBC/生化/電解質（基線評估與器官功能）
     - 凝血功能（DIC 評估）
@@ -113,7 +124,6 @@ diagnosis:
     - PCV/TP（快速評估出血/蛋白丟失）
     - 血糖（低血糖可惡化休克）
     - 血型配對（若需輸血）
-
 treatment:
   principles:
     - 快速識別休克類型 — 治療策略截然不同
@@ -123,25 +133,25 @@ treatment:
     - 目標導向復甦（乳酸清除、血壓、尿量）
   medications:
     - name: IV 晶體液 (LRS / Plasmalyte)
-      dose: "犬休克劑量：10-20 mL/kg bolus，可重複至 60-90 mL/kg/hr；貓：5-10 mL/kg bolus，最高 40-60 mL/kg/hr"
+      dose: 犬休克劑量：10-20 mL/kg bolus，可重複至 60-90 mL/kg/hr；貓：5-10 mL/kg bolus，最高 40-60 mL/kg/hr
       notes: 低血容量性與分布性休克的第一線治療。分次 bolus + 反覆評估。心因性休克禁用大量輸液
     - name: 膠體液 (Hydroxyethyl starch 6% / Plasma)
-      dose: "犬 5 mL/kg bolus，最高 20 mL/kg/day；貓 2.5 mL/kg bolus"
+      dose: 犬 5 mL/kg bolus，最高 20 mL/kg/day；貓 2.5 mL/kg bolus
       notes: 嚴重低白蛋白或晶體液反應不足時考慮。FFP 同時提供凝血因子
     - name: 高張食鹽水 (7.5% NaCl)
-      dose: "3-5 mL/kg IV over 5-10 min"
+      dose: 3-5 mL/kg IV over 5-10 min
       notes: 快速小量容量擴張。創傷性腦損傷合併休克尤其適用。心臟病患禁用
     - name: Norepinephrine
-      dose: "0.1-1 μg/kg/min CRI"
+      dose: 0.1-1 μg/kg/min CRI
       notes: 分布性/敗血性休克首選升壓藥。充分輸液後仍低血壓時使用
     - name: Dobutamine
-      dose: "2-10 μg/kg/min CRI（犬）；1-5 μg/kg/min（貓）"
+      dose: 2-10 μg/kg/min CRI（犬）；1-5 μg/kg/min（貓）
       notes: 心因性休克的正性肌力藥首選。增加心輸出量
     - name: Epinephrine
-      dose: "0.01-0.1 μg/kg/min CRI（低劑量）；或 0.01 mg/kg IV bolus（心搏停止時）"
+      dose: 0.01-0.1 μg/kg/min CRI（低劑量）；或 0.01 mg/kg IV bolus（心搏停止時）
       notes: 嚴重過敏性休克首選。心搏停止時的 CPCR 藥物
     - name: 濃縮紅血球 (pRBC)
-      dose: "10-15 mL/kg IV"
+      dose: 10-15 mL/kg IV
       notes: 出血性休克合併嚴重貧血（PCV <20%）時使用
   general:
     - 低血容量性休克：止血（壓迫、手術）+ 容量復甦 + 輸血（必要時）
@@ -152,38 +162,40 @@ treatment:
     - 低血糖矯正（50% dextrose 0.5-1 mL/kg 稀釋後 IV）
     - 低體溫 → 主動加溫（加溫輸液、加溫墊 — 注意燒傷）
     - 疼痛管理（Fentanyl CRI 或 Methadone）
-
-emergencyNotes: 休克為最常見的獸醫急診情境。到院立即 ABC 評估 + 快速識別休克類型。處理：(1) 低血容量性：雙靜脈管路、bolus 輸液、止血、PCV/TP/blood type；(2) 分布性/敗血性：輸液 + 1 小時內 IV 抗生素 + 升壓藥（如需要）；(3) 心因性：氧氣 + Furosemide 2-4 mg/kg IV + Dobutamine CRI。禁用大量輸液；(4) 阻塞性 — 心包填塞：緊急心包穿刺；GDV：trocar 減壓 + 輸液。張力性氣胸：緊急胸腔穿刺。乳酸與血壓為最重要的監測指標。
-
-prognosis: 取決於休克類型、嚴重度與治療時效。低血容量性休克：若出血可控制，積極輸液/輸血後存活率 >80%。分布性/敗血性休克：死亡率 50-70%，需升壓藥者預後更差。心因性休克：取決於原發心臟病可治療性，DCM 預後較差，可逆性心律不整經治療後可恢復。阻塞性休克：解除阻塞後多可快速改善（心包穿刺、胸腔引流效果戲劇性），但原發疾病預後各異。所有類型：早期識別與積極治療為改善預後的關鍵。不可逆休克（晚期去代償期）的死亡率極高。
-
+emergencyNotes: >-
+  休克為最常見的獸醫急診情境。到院立即 ABC 評估 + 快速識別休克類型。處理：(1) 低血容量性：雙靜脈管路、bolus 輸液、止血、PCV/TP/blood type；(2) 分布性/敗血性：輸液 + 1 小時內 IV 抗生素 +
+  升壓藥（如需要）；(3) 心因性：氧氣 + Furosemide 2-4 mg/kg IV + Dobutamine CRI。禁用大量輸液；(4) 阻塞性 — 心包填塞：緊急心包穿刺；GDV：trocar 減壓 +
+  輸液。張力性氣胸：緊急胸腔穿刺。乳酸與血壓為最重要的監測指標。
+prognosis: >-
+  取決於休克類型、嚴重度與治療時效。低血容量性休克：若出血可控制，積極輸液/輸血後存活率 >80%。分布性/敗血性休克：死亡率 50-70%，需升壓藥者預後更差。心因性休克：取決於原發心臟病可治療性，DCM
+  預後較差，可逆性心律不整經治療後可恢復。阻塞性休克：解除阻塞後多可快速改善（心包穿刺、胸腔引流效果戲劇性），但原發疾病預後各異。所有類型：早期識別與積極治療為改善預後的關鍵。不可逆休克（晚期去代償期）的死亡率極高。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
-    title: "RECOVER evidence and knowledge gap analysis on veterinary CPR. Part 7: Clinical guidelines"
+    title: 'RECOVER evidence and knowledge gap analysis on veterinary CPR. Part 7: Clinical guidelines'
     url: https://pubmed.ncbi.nlm.nih.gov/22676148/
     type: guideline
-    pmid: "22676148"
+    pmid: '22676148'
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
     title: Fluid therapy in dogs and cats with sepsis
     url: https://pubmed.ncbi.nlm.nih.gov/29064135/
     type: review
-    pmid: "29064135"
+    pmid: '29064135'
   - sourceOrg: Veterinary Clinics of North America Small Animal Practice
     title: Shock syndromes in dogs and cats
     url: https://pubmed.ncbi.nlm.nih.gov/11487045/
     type: review
-    pmid: "11487045"
+    pmid: '11487045'
   - sourceOrg: JAMA
     title: International Consensus Criteria for Pediatric Sepsis and Septic Shock.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10900966/
     type: consensus
-    pmid: "38245889"
+    pmid: '38245889'
     relevance: primary
   - sourceOrg: PLoS biology
-    title: "The ARRIVE guidelines 2.0: Updated guidelines for reporting animal research."
+    title: 'The ARRIVE guidelines 2.0: Updated guidelines for reporting animal research.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7360023/
     type: guideline
-    pmid: "32663219"
+    pmid: '32663219'
     relevance: primary
 pubmedQueries:
   - query: '"shock" AND (dog OR canine) AND ("fluid resuscitation" OR "vasopressor" OR "hemodynamic" OR "lactate")'
@@ -192,6 +204,60 @@ pubmedQueries:
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "EMG"
-  sectionTitle: "Single shock, resume CPR"
+  chapter: EMG
+  sectionTitle: Single shock, resume CPR
   pdfPage: 1713
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: oliguria-anuria
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 休克 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - coma-stupor 相關症狀
+        - pallor-cyanosis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查（快速評估）
+          notes: >-
+            ABC 評估。心率、脈搏品質、黏膜顏色、CRT、體溫、意識狀態。犬 4 種休克的典型表現不同：低血容量→蒼白/CRT 延長/細弱脈；分布性早期→充血/CRT
+            快速/洪脈；心因性→蒼白/靜脈怒張/肺囉音；阻塞性→取決於原因
+        - name: 血壓測量
+          notes: Doppler 或 oscillometric。收縮壓 <90 mmHg 或 MAP <65 mmHg 定義為低血壓。但代償期可維持正常血壓
+        - name: 乳酸測量
+          notes: 組織灌流不足的敏感指標。>2.5 mmol/L 為異常。連續監測乳酸清除率比單次數值更有意義
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC/生化/電解質（基線評估與器官功能）
+        - 凝血功能（DIC 評估）
+        - 血氣分析（酸鹼狀態、氧合、乳酸）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 快速識別休克類型 — 治療策略截然不同
+        - 低血容量性/分布性：積極容量復甦
+        - 心因性：避免過度輸液！正性肌力藥 + 利尿
+ddxSource: auto-generated

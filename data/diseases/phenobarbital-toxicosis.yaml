@@ -3,12 +3,13 @@ nameEn: Phenobarbital Toxicosis
 nameZh: 苯巴比妥中毒
 bodySystem: toxicology
 description: 苯巴比妥 (phenobarbital) 為犬貓常用抗癲癇藥物，過量或長期累積可引起急性中樞神經抑制或慢性肝毒性。急性過量常因意外攝食（誤食整瓶藥物）或劑量計算錯誤。犬貓均可發生。
-
 aliases:
-  - { alias: 巴比妥中毒, language: zh }
-  - { alias: Phenobarbital Overdose, language: en }
-  - { alias: Barbiturate Toxicosis, language: en }
-
+  - alias: 巴比妥中毒
+    language: zh
+  - alias: Phenobarbital Overdose
+    language: en
+  - alias: Barbiturate Toxicosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓 phenobarbital 代謝較犬慢，累積風險較高。治療窗口較窄。
-
 etiology:
   categories:
     - name: 毒性機制
@@ -31,7 +31,6 @@ etiology:
         - 劑量計算錯誤（尤其體重估算不準）
         - 長期用藥累積（未監測血清濃度）
         - 藥物交互作用影響代謝
-
 clinicalSigns:
   early:
     - 嗜睡與過度鎮靜
@@ -43,7 +42,6 @@ clinicalSigns:
     - 低血壓
     - 低體溫
     - 慢性肝毒性：黃疸、肝腫大
-
 diagnosis:
   primaryTests:
     - name: 血清 phenobarbital 濃度
@@ -55,7 +53,6 @@ diagnosis:
     - 動脈血氣分析
     - 血壓監測
     - 體溫監測
-
 treatment:
   principles:
     - 支持呼吸功能
@@ -70,9 +67,59 @@ treatment:
     - 體溫維持（保暖）
     - 翻身預防褥瘡（昏迷期間）
     - Intralipid 20% 1.5 mL/kg IV（脂溶性藥物中毒可考慮）
-
 prognosis: Phenobarbital 急性過量在積極支持療法下預後可良好，藥物半衰期犬約 40-90 小時，需長時間支持。呼吸衰竭為主要死因。慢性肝毒性停藥或減量後多數可恢復。
-
 pubmedQueries:
   - query: '"phenobarbital" AND (toxicosis OR overdose) AND (veterinary OR canine OR feline) AND "treatment"'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: paresis-paralysis
+    frequency: common
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 苯巴比妥中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - paresis-paralysis 相關症狀
+        - ataxia 相關症狀
+        - dehydration 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清 phenobarbital 濃度
+          notes: 治療範圍 15-45 μg/mL（犬）。>45 μg/mL 為中毒風險。>80 μg/mL 嚴重中毒
+        - name: 暴露史
+          notes: 確認攝入量與時間
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 肝功能（ALT、ALP、膽汁酸）
+        - 動脈血氣分析
+        - 血壓監測
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 支持呼吸功能
+        - 維持心血管穩定
+        - 促進藥物排除
+ddxSource: auto-generated

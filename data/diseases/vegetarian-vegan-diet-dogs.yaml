@@ -3,12 +3,13 @@ nameEn: Vegetarian Vegan Diet Dogs
 nameZh: 犬素食與全素飲食
 bodySystem: metabolic
 description: 犬隻素食或全素飲食的營養學評估。犬為雜食性可適應素食，但需嚴謹配方設計及營養補充，貓為專性肉食不建議素食。
-
 aliases:
-  - { alias: 犬素食飲食, language: zh }
-  - { alias: Plant Based Diet Dogs, language: en }
-  - { alias: Vegan Dog Food, language: en }
-
+  - alias: 犬素食飲食
+    language: zh
+  - alias: Plant Based Diet Dogs
+    language: en
+  - alias: Vegan Dog Food
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 專性肉食，強烈不建議素食
-
 etiology:
   categories:
     - name: 素食飲食挑戰
@@ -35,7 +35,6 @@ etiology:
         - 無法轉換β-胡蘿蔔素為維生素A
         - 無法轉換亞麻酸為EPA/DHA
         - 需高蛋白飲食
-
 clinicalSigns:
   early:
     - 營養均衡：健康、活力正常
@@ -45,20 +44,18 @@ clinicalSigns:
     - 牛磺酸缺乏(貓)：DCM、失明
     - 維生素B12缺乏：貧血、神經症狀
     - 鈣磷失衡：骨骼疾病
-
 diagnosis:
   primaryTests:
     - name: 飲食配方分析
-      notes: "營養師評估配方完整性"
+      notes: 營養師評估配方完整性
     - name: 血液檢查
-      notes: "白蛋白、總蛋白、牛磺酸、維生素B12、D"
+      notes: 白蛋白、總蛋白、牛磺酸、維生素B12、D
     - name: 體態評估
-      notes: "BCS、肌肉質量評估"
+      notes: BCS、肌肉質量評估
   differentialDiagnoses:
     - 蛋白質-能量營養不良
     - 牛磺酸缺乏
     - 維生素缺乏症
-
 treatment:
   medical:
     - 犬素食飲食原則
@@ -77,33 +74,61 @@ treatment:
     - 定期健康檢查
     - 每6個月血檢及心臟超音波(監測DCM)
     - 營養評估
-
 prognosis:
-  general: "犬使用適當配方的素食可維持健康；貓素食風險高不建議，即使使用商業配方也需密切監測"
-
+  general: 犬使用適當配方的素食可維持健康；貓素食風險高不建議，即使使用商業配方也需密切監測
 prevention:
   - 犬：使用經驗證的商業素食配方
   - 貓：強烈建議使用動物蛋白飲食
   - 定期健康及營養評估
   - 諮詢獸醫營養師
-
-
 guidelineRefs:
   - sourceOrg: BMC veterinary research
-    title: Influence of number of ingredients, use of supplement and vegetarian or vegan preparation on the composition of homemade diets for dogs and cats.
+    title: >-
+      Influence of number of ingredients, use of supplement and vegetarian or vegan preparation on the composition of
+      homemade diets for dogs and cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8605502/
     type: research
-    pmid: "34798889"
+    pmid: '34798889'
     relevance: supporting
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: A Comparison of Key Essential Nutrients in Commercial Plant-Based Pet Foods Sold in Canada to American and European Canine and Feline Dietary Recommendations.
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      A Comparison of Key Essential Nutrients in Commercial Plant-Based Pet Foods Sold in Canada to American and
+      European Canine and Feline Dietary Recommendations.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8388700/
     type: research
-    pmid: "34438805"
+    pmid: '34438805'
     relevance: supporting
   - sourceOrg: PloS one
     title: Nutritional inadequacies in commercial vegan foods for dogs and cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6968870/
     type: research
-    pmid: "31951617"
+    pmid: '31951617'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: blindness
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 犬素食與全素飲食 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - blindness 相關症狀
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 飲食配方分析
+          notes: 營養師評估配方完整性
+        - name: 血液檢查
+          notes: 白蛋白、總蛋白、牛磺酸、維生素B12、D
+        - name: 體態評估
+          notes: BCS、肌肉質量評估
+ddxSource: auto-generated

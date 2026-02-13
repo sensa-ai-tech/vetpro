@@ -3,17 +3,16 @@ nameEn: Siamese Cat Nystagmus
 nameZh: 暹羅貓眼球震顫
 bodySystem: ophthalmology
 description: 暹羅貓常見的先天性眼球不自主節律性運動,與視覺通路發育異常有關。通常為水平型震顫,貓隻可適應,視力輕度受影響,無需治療。
-
 aliases:
-  - { alias: 眼球震顫, language: zh }
-  - { alias: Congenital Nystagmus, language: en }
-
+  - alias: 眼球震顫
+    language: zh
+  - alias: Congenital Nystagmus
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
     notes: 暹羅貓、色點品種,與白化基因相關
-
 etiology:
   categories:
     - name: 視覺系統發育異常
@@ -21,7 +20,6 @@ etiology:
         - 視交叉異常投射
         - 白化基因相關(cs/cs)
         - 視覺穩定反射異常
-
 clinicalSigns:
   early:
     - 雙眼水平或迴旋性震顫
@@ -31,21 +29,38 @@ clinicalSigns:
     - 震顫程度穩定
     - 視力輕度受影響
     - 貓隻可適應
-
 diagnosis:
   primaryTests:
     - name: 眼科檢查
-      notes: "雙眼節律性震顫,視網膜及視神經正常"
+      notes: 雙眼節律性震顫,視網膜及視神經正常
   differentialDiagnoses:
     - 前庭疾病
     - 小腦疾病
-
 treatment:
   medical:
     - 無需治療
-
 prognosis:
-  general: "良性品種特徵,不影響整體生活品質。"
-
+  general: 良性品種特徵,不影響整體生活品質。
 prevention:
   - 品種相關特徵
+associatedSymptoms:
+  - symptomId: nystagmus
+    frequency: uncommon
+  - symptomId: trembling
+    frequency: common
+diagnosticAlgorithm:
+  title: 暹羅貓眼球震顫 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - nystagmus 相關症狀
+        - trembling 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 眼科檢查
+          notes: 雙眼節律性震顫,視網膜及視神經正常
+ddxSource: auto-generated

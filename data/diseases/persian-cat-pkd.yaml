@@ -3,19 +3,21 @@ nameEn: Persian Cat PKD
 nameZh: 波斯貓多囊腎病
 bodySystem: urinary
 description: 多囊腎病（PKD）是波斯貓最重要的遺傳性腎臟疾病，由 PKD1 基因顯性突變引起。腎臟皮質與髓質形成進行性擴大的液體囊腫，逐漸取代正常腎組織導致慢性腎衰竭。約 36-49% 的波斯貓攜帶此突變。
-
 aliases:
-  - { alias: 波斯貓多囊性腎病, language: zh }
-  - { alias: 貓 PKD, language: zh }
-  - { alias: Persian cat polycystic kidney disease, language: en }
-  - { alias: Feline PKD1, language: en }
-  - { alias: AD-PKD in cats, language: en }
-
+  - alias: 波斯貓多囊性腎病
+    language: zh
+  - alias: 貓 PKD
+    language: zh
+  - alias: Persian cat polycystic kidney disease
+    language: en
+  - alias: Feline PKD1
+    language: en
+  - alias: AD-PKD in cats
+    language: en
 species:
   - speciesCommon: cat
     prevalence: common
     notes: 波斯貓為最高風險品種（攜帶率 36-49%）。異國短毛貓、英國短毛貓等波斯血統品種亦有風險。體染色體顯性遺傳（一個突變即發病）。
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -29,7 +31,6 @@ etiology:
         - 囊腫進行性擴大
         - 壓迫並取代正常腎組織
         - 最終導致慢性腎衰竭
-
 clinicalSigns:
   early:
     - 多數年輕貓無症狀
@@ -43,7 +44,6 @@ clinicalSigns:
     - 嗜睡
     - 被毛粗糙
     - 腎衰竭症狀（7-10 歲後常見）
-
 diagnosis:
   primaryTests:
     - name: 基因檢測
@@ -52,7 +52,6 @@ diagnosis:
       notes: 可見腎臟多發液體囊腫。10 月齡後靈敏度 >95%。評估囊腫大小與數量
     - name: 血液生化
       notes: BUN、肌酐、SDMA 評估腎功能。IRIS 分期
-
 treatment:
   principles:
     - 無法治癒或逆轉囊腫
@@ -68,21 +67,57 @@ treatment:
     - 止吐藥（嘔吐時）
     - 定期監測腎功能（IRIS 分期追蹤）
     - 基因檢測篩選繁殖
-
 prognosis: PKD 為進行性疾病，但進展速度個體差異大。部分貓可能到 10 歲以上才出現腎衰竭。早期腎臟支持治療可延緩進展。一旦進入 IRIS Stage III-IV 則中位存活數月至1-2 年。繁殖篩選（基因檢測）已顯著降低品種盛行率。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
-    title: "Feline Polycystic Kidney Disease: An Update."
+    title: 'Feline Polycystic Kidney Disease: An Update.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8625840/
     type: review
-    pmid: "34822642"
+    pmid: '34822642'
   - sourceOrg: Frontiers in veterinary science
-    title: "Case Report: Budd-Chiari-like syndrome in a cat with polycystic kidney and liver disease."
+    title: 'Case Report: Budd-Chiari-like syndrome in a cat with polycystic kidney and liver disease.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12884389/
     type: case-report
-    pmid: "41669239"
+    pmid: '41669239'
 pubmedQueries:
   - query: '"Persian" AND ("polycystic kidney" OR "PKD") AND (feline OR cat) AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 波斯貓多囊腎病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - polyuria-polydipsia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 基因檢測
+          notes: PKD1 基因突變 DNA 檢測。可在任何年齡進行。繁殖篩選金標準
+        - name: 腎臟超音波
+          notes: 可見腎臟多發液體囊腫。10 月齡後靈敏度 >95%。評估囊腫大小與數量
+        - name: 血液生化
+          notes: BUN、肌酐、SDMA 評估腎功能。IRIS 分期
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 無法治癒或逆轉囊腫
+        - 慢性腎病支持治療
+        - 延緩腎衰竭進展
+ddxSource: auto-generated

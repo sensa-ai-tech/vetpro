@@ -2,14 +2,18 @@ slug: campylobacteriosis-infectious
 nameEn: Campylobacteriosis Infectious
 nameZh: 彎曲桿菌感染
 bodySystem: infectious
-description: 彎曲桿菌感染 (campylobacteriosis) 由 Campylobacter jejuni 或 C. coli 引起的腸道感染，為重要人畜共通傳染病。犬貓多為無症狀帶原者，幼齡或免疫抑制動物可表現急性出血性腸炎。與其他腸道病原混合感染時症狀加重。
-
+description: >-
+  彎曲桿菌感染 (campylobacteriosis) 由 Campylobacter jejuni 或 C. coli
+  引起的腸道感染，為重要人畜共通傳染病。犬貓多為無症狀帶原者，幼齡或免疫抑制動物可表現急性出血性腸炎。與其他腸道病原混合感染時症狀加重。
 aliases:
-  - { alias: 曲狀桿菌感染, language: zh }
-  - { alias: 彎曲菌病, language: zh }
-  - { alias: Campylobacter Infection, language: en }
-  - { alias: Campylobacter Enteritis, language: en }
-
+  - alias: 曲狀桿菌感染
+    language: zh
+  - alias: 彎曲菌病
+    language: zh
+  - alias: Campylobacter Infection
+    language: en
+  - alias: Campylobacter Enteritis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓帶原率與犬相似。幼貓較易表現臨床症狀。糞便排菌可持續數週。
-
 etiology:
   categories:
     - name: 病原特性
@@ -32,7 +35,6 @@ etiology:
         - 收容所或犬舍環境
         - 免疫抑制
         - 與其他腸道病原混合感染
-
 clinicalSigns:
   early:
     - 水樣或黏液樣腹瀉
@@ -44,7 +46,6 @@ clinicalSigns:
     - 裡急後重 (tenesmus)
     - 發燒
     - 脫水（幼畜）
-
 diagnosis:
   primaryTests:
     - name: 糞便培養
@@ -55,7 +56,6 @@ diagnosis:
     - 糞便直接抹片暗視野顯微鏡（可見特徵性螺旋形運動）
     - 排除其他腸道病原（CPV、Giardia、寄生蟲）
     - CBC 與生化（脫水評估）
-
 treatment:
   principles:
     - 多數自限性，支持療法為主
@@ -68,41 +68,92 @@ treatment:
     - 替代：azithromycin 5-10 mg/kg PO SID × 5 天
     - 衛生防護措施（洗手、糞便處理）
     - Fluoroquinolone 抗藥性增加，不建議作為經驗性治療
-
 prognosis: 免疫正常犬貓預後良好，多數 5-10 天內自行恢復。幼齡或免疫抑制動物需較長恢復期。慢性帶原常見但通常無臨床意義。
-
-
 guidelineRefs:
   - sourceOrg: Life (Basel, Switzerland)
     title: Susceptibility of Lactobacillaceae Strains to Aminoglycoside Antibiotics in the Light of EFSA Guidelines.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12112790/
     type: guideline
-    pmid: "40430158"
+    pmid: '40430158'
   - sourceOrg: Heliyon
-    title: "Epidemiology and antimicrobial resistance of Campylobacter spp. in animals in Sub-Saharan Africa: A systematic review."
+    title: >-
+      Epidemiology and antimicrobial resistance of Campylobacter spp. in animals in Sub-Saharan Africa: A systematic
+      review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7063338/
     type: review
-    pmid: "32181402"
+    pmid: '32181402'
   - sourceOrg: Biomolecules
     title: Molecular Targets in Campylobacter Infections.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10046527/
     type: review
-    pmid: "36979344"
+    pmid: '36979344'
   - sourceOrg: Foodborne pathogens and disease
-    title: "Anti-Campylobacter Probiotics: Latest Mechanistic Insights."
+    title: 'Anti-Campylobacter Probiotics: Latest Mechanistic Insights.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9595622/
     type: review
-    pmid: "35905047"
+    pmid: '35905047'
   - sourceOrg: PloS one
-    title: A systematic review and meta-analysis reveal that Campylobacter spp. and antibiotic resistance are widespread in humans in sub-Saharan Africa.
+    title: >-
+      A systematic review and meta-analysis reveal that Campylobacter spp. and antibiotic resistance are widespread in
+      humans in sub-Saharan Africa.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7840040/
     type: review
-    pmid: "33503068"
+    pmid: '33503068'
   - sourceOrg: Epidemiology and infection
     title: A scoping review of factors associated with antimicrobial-resistant Campylobacter species infections in humans.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10311695/
     type: review
-    pmid: "37283142"
+    pmid: '37283142'
 pubmedQueries:
   - query: '"campylobacteriosis" AND (veterinary OR canine OR feline) AND ("treatment" OR "zoonosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: faecal-tenesmus
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: haematochezia
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 彎曲桿菌感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - faecal-tenesmus 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便培養
+          notes: 需使用特殊培養條件（微需氧環境、42°C、選擇性培養基）。陽性僅代表帶原，需結合臨床症狀判斷
+        - name: 糞便 PCR
+          notes: 敏感度高，可同時鑑定種別。較培養快速
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 糞便直接抹片暗視野顯微鏡（可見特徵性螺旋形運動）
+        - 排除其他腸道病原（CPV、Giardia、寄生蟲）
+        - CBC 與生化（脫水評估）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 多數自限性，支持療法為主
+        - 嚴重或持續性病例考慮抗生素
+        - 注意人畜共通風險
+ddxSource: auto-generated

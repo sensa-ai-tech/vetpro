@@ -3,17 +3,16 @@ nameEn: Rottweiler Parvoviral Enteritis Susceptibility
 nameZh: 羅威納犬小病毒腸炎易感性
 bodySystem: gastrointestinal
 description: 羅威納犬對犬小病毒(CPV-2)感染具有品種特異性高度易感性與高死亡率,病程較其他品種更嚴重。
-
 aliases:
-  - { alias: 羅威納犬腸炎病毒高危, language: zh }
-  - { alias: Rottweiler Parvo Susceptibility, language: en }
-
+  - alias: 羅威納犬腸炎病毒高危
+    language: zh
+  - alias: Rottweiler Parvo Susceptibility
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 羅威納、杜賓、拉布拉多、德國牧羊犬為高風險品種,幼犬(6週-6月齡)最易感
-
 etiology:
   categories:
     - name: 病毒感染
@@ -24,7 +23,6 @@ etiology:
       examples:
         - 羅威納犬免疫反應較弱
         - 可能涉及 MHC 或免疫基因多型性
-
 clinicalSigns:
   early:
     - 嗜睡,食慾廢絕
@@ -35,23 +33,21 @@ clinicalSigns:
     - 快速脫水,休克
     - 低體溫(<37.5°C,預後不良徵象)
     - 敗血症,多重器官衰竭
-
 diagnosis:
   primaryTests:
     - name: 糞便抗原快篩
-      notes: "ELISA 或 lateral flow assay,敏感度 80-90%"
+      notes: ELISA 或 lateral flow assay,敏感度 80-90%
     - name: 糞便 PCR
-      notes: "更高敏感度與特異性,可區分疫苗株與野生株"
+      notes: 更高敏感度與特異性,可區分疫苗株與野生株
     - name: 全血球計數
-      notes: "顯著白血球減少(<2000 cells/μL,羅威納常 <1000),貧血"
+      notes: 顯著白血球減少(<2000 cells/μL,羅威納常 <1000),貧血
     - name: 血液生化
-      notes: "低白蛋白,電解質失衡,氮血症(脫水)"
+      notes: 低白蛋白,電解質失衡,氮血症(脫水)
   differentialDiagnoses:
     - 冠狀病毒腸炎
     - 急性出血性腸胃炎(AHDS)
     - 鉤蟲感染
     - 腸套疊
-
 treatment:
   medical:
     - 積極靜脈輸液:晶體液(LRS 或 0.9% NaCl)80-120 mL/kg/day,維持水合與循環
@@ -63,12 +59,48 @@ treatment:
     - 疼痛控制:Buprenorphine 0.01-0.02 mg/kg IV q6-8h
     - 營養支持:鼻胃管或靜脈營養(若嘔吐控制後 3-5 天仍無法進食)
     - 免疫血清或單株抗體(若可取得,發病 24-48 小時內效果最佳)
-
 prognosis:
-  general: "羅威納幼犬預後保守至不良,死亡率 20-50%(一般品種 5-20%)。白血球 <500 cells/μL、低體溫、敗血症為負面預後因子。積極治療存活者通常於 5-7 天內康復,獲得終生免疫。"
-
+  general: 羅威納幼犬預後保守至不良,死亡率 20-50%(一般品種 5-20%)。白血球 <500 cells/μL、低體溫、敗血症為負面預後因子。積極治療存活者通常於 5-7 天內康復,獲得終生免疫。
 prevention:
   - 高風險品種嚴格遵守疫苗計畫:6, 9, 12, 16 週齡接種 MLV 疫苗
   - 未完成疫苗前避免接觸其他犬隻或污染環境
   - 環境消毒:Bleach(1:30 稀釋)或 Virkon-S
   - 繁殖場與收容所定期消毒與隔離管理
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: melaena
+    frequency: uncommon
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: haematochezia
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 羅威納犬小病毒腸炎易感性 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - melaena 相關症狀
+        - hypothermia-sign 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便抗原快篩
+          notes: ELISA 或 lateral flow assay,敏感度 80-90%
+        - name: 糞便 PCR
+          notes: 更高敏感度與特異性,可區分疫苗株與野生株
+        - name: 全血球計數
+          notes: 顯著白血球減少(<2000 cells/μL,羅威納常 <1000),貧血
+ddxSource: auto-generated

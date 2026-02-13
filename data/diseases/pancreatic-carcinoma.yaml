@@ -3,11 +3,11 @@ nameEn: Pancreatic Carcinoma
 nameZh: 胰臟癌
 bodySystem: oncology
 description: 胰臟外分泌腺的惡性腫瘤。犬貓均罕見但預後極差。診斷時多已轉移。臨床表現非特異性（嘔吐、食慾不振、體重下降）。
-
 aliases:
-  - { alias: "Pancreatic Adenocarcinoma", language: en }
-  - { alias: "胰腺癌", language: zh }
-
+  - alias: Pancreatic Adenocarcinoma
+    language: en
+  - alias: 胰腺癌
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,14 +15,12 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 腫瘤性
       examples:
         - 胰腺外分泌上皮惡性增生
         - 確切病因不明
-
 clinicalSigns:
   early:
     - 嘔吐
@@ -33,14 +31,12 @@ clinicalSigns:
     - 腹水
     - 惡病質
     - 腹痛
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
       notes: 胰臟腫塊。可能伴膽管擴張
     - name: CT
       notes: 評估侵犯範圍與轉移
-
 treatment:
   principles:
     - 手術切除（極少數可行）
@@ -51,36 +47,81 @@ treatment:
     - 支持性照護
     - 止痛管理
     - 營養支持
-
 prognosis: 預後極差。中位存活通常 < 3 個月。完全切除可略延長存活但罕見可行。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Cutaneous paraneoplastic syndromes in cats: a comparative clinical review."
+    title: 'Cutaneous paraneoplastic syndromes in cats: a comparative clinical review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12855766/
     type: review
-    pmid: "41607126"
+    pmid: '41607126'
   - sourceOrg: World journal of gastrointestinal oncology
     title: Recent advances in targeted therapy for pancreatic adenocarcinoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10134207/
     type: review
-    pmid: "37123059"
+    pmid: '37123059'
   - sourceOrg: Viruses
-    title: "H-1 Parvovirus as a Cancer-Killing Agent: Past, Present, and Future."
+    title: 'H-1 Parvovirus as a Cancer-Killing Agent: Past, Present, and Future.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6630270/
     type: review
-    pmid: "31216641"
+    pmid: '31216641'
   - sourceOrg: Cureus
-    title: "Genomic Analysis of Undifferentiated Carcinoma of the Pancreas with Squamous Differentiation: A Case Report."
+    title: 'Genomic Analysis of Undifferentiated Carcinoma of the Pancreas with Squamous Differentiation: A Case Report.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10980578/
     type: case-report
-    pmid: "38558649"
-  - sourceOrg: "Molecular therapy : the journal of the American Society of Gene Therapy"
+    pmid: '38558649'
+  - sourceOrg: 'Molecular therapy : the journal of the American Society of Gene Therapy'
     title: In situ blockade of TNF-TNFR2 axis via oncolytic adenovirus improves antitumor efficacy in solid tumors.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11853363/
     type: research
-    pmid: "39690741"
+    pmid: '39690741'
 pubmedQueries:
   - query: '"pancreatic carcinoma" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 外分泌胰腺腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估嘔吐、腹痛、黃疸和體重下降等非特異性表現，老年動物好發
+      findings:
+        - 嘔吐和食慾下降
+        - 腹痛（前腹部）
+        - 進行性黃疸（膽總管壓迫）
+    - step: 2
+      action: 影像學檢查
+      details: 進行腹部超音波和CT評估胰腺腫塊及周圍侵犯
+      findings:
+        - 超音波顯示胰腺區域腫塊
+        - CT精確評估腫塊範圍和血管侵犯
+        - 可能見腹膜播種結節
+    - step: 3
+      action: 細胞學/組織學確診
+      details: 進行超音波引導細針抽吸或手術活檢，送病理學檢查
+      findings:
+        - 細胞學或組織病理學確認腺癌或腺瘤
+        - 評估手術切除可能性
+        - 外分泌胰腺腺癌預後差，常已轉移
+clinicalPearls:
+  - 中老年犬貓出現不明原因的體重減輕、腹痛及黃疸三聯徵時，應考慮外分泌胰腺腫瘤
+  - 皮下結節性脂膜炎是胰腺腺癌的經典副腫瘤症候群，其出現可早於腫瘤的其他臨床表現
+  - 超音波引導FNA的細胞學陽性率較高，但需注意與胰臟炎的鑑別
+  - 胰臟腫瘤常與胰臟炎並存，單純影像學檢查可能難以區分兩者
+monitoringItems:
+  - 治療期間每1-2週監測血糖、肝指數及膽紅素
+  - 定期腹部超音波評估腫瘤大小變化及轉移
+  - 監測體重、食慾及疼痛評分
+  - 化療期間每週檢測全血球計數（監測骨髓抑制）
+  - 監測凝血功能（警惕DIC風險）
+  - 評估生活品質以決定是否繼續治療
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: cutaneous-masses
+    frequency: rare
+ddxSource: book

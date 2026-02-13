@@ -3,13 +3,15 @@ nameEn: Esophageal Stricture
 nameZh: 食道狹窄
 bodySystem: gastrointestinal
 description: 食道管腔因纖維化疤痕收縮而異常狹窄，導致食物通過困難。最常見原因為麻醉相關的胃食道逆流造成化學性食道炎後的疤痕性狹窄。反覆吐出未消化食物為典型表現。
-
 aliases:
-  - { alias: Esophageal Stenosis, language: en }
-  - { alias: Benign Esophageal Stricture, language: en }
-  - { alias: 食道狹窄症, language: zh }
-  - { alias: 食道疤痕性狹窄, language: zh }
-
+  - alias: Esophageal Stenosis
+    language: en
+  - alias: Benign Esophageal Stricture
+    language: en
+  - alias: 食道狹窄症
+    language: zh
+  - alias: 食道疤痕性狹窄
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 發生率與犬相當。麻醉後食道炎為最常見原因。貓隻給予口服 doxycycline 膠囊未配水亦可造成藥物性食道炎與狹窄。
-
 etiology:
   categories:
     - name: 麻醉相關（最常見）
@@ -43,7 +44,6 @@ etiology:
         - 食道腫瘤（鱗狀上皮細胞癌、平滑肌瘤）
         - 縱隔腫瘤外壓
         - Spirocerca lupi 肉芽腫（流行區域）
-
 clinicalSigns:
   early:
     - 吞嚥後數分鐘至數小時吐出未消化食物 (regurgitation)
@@ -61,26 +61,24 @@ clinicalSigns:
     - 吸入性肺炎（反覆逆流導致）
     - 食道近端擴張（狹窄上方）
     - 完全無法進食固體食物
-
 diagnosis:
   primaryTests:
     - name: 食道鋇劑造影
-      notes: "口服液態鋇劑（或鋇劑混合食物）X 光追蹤。可見鋇劑通過狹窄處時管腔明顯縮小，近端食道可見擴張。定位狹窄位置與數量"
+      notes: 口服液態鋇劑（或鋇劑混合食物）X 光追蹤。可見鋇劑通過狹窄處時管腔明顯縮小，近端食道可見擴張。定位狹窄位置與數量
     - name: 食道內視鏡
-      notes: "金標準。直接觀察狹窄程度、數量與位置。可同時行球囊擴張治療。評估黏膜狀態排除腫瘤"
+      notes: 金標準。直接觀察狹窄程度、數量與位置。可同時行球囊擴張治療。評估黏膜狀態排除腫瘤
     - name: 胸腔 X 光
-      notes: "可見食道近端擴張（含氣體或食物）、狹窄部位。評估是否合併吸入性肺炎"
+      notes: 可見食道近端擴張（含氣體或食物）、狹窄部位。評估是否合併吸入性肺炎
   imaging:
     - name: 食道鋇劑造影
-      notes: "首選篩檢。可識別狹窄位置、數量及嚴重程度。注意避免吸入鋇劑"
+      notes: 首選篩檢。可識別狹窄位置、數量及嚴重程度。注意避免吸入鋇劑
     - name: 胸腔 X 光
-      notes: "評估肺部是否有吸入性肺炎徵象（右中肺葉最常受影響）"
+      notes: 評估肺部是否有吸入性肺炎徵象（右中肺葉最常受影響）
   additional:
     - CBC、生化（評估營養狀態、感染指標）
     - 食道內視鏡切片（排除腫瘤性狹窄）
     - 麻醉紀錄回顧（確認是否有近期麻醉史）
     - CT（複雜或多發性狹窄時評估）
-
 treatment:
   principles:
     - 球囊擴張術為首選治療
@@ -89,16 +87,16 @@ treatment:
     - 吸入性肺炎需優先處理
   medications:
     - name: Omeprazole
-      dose: "1-2 mg/kg PO BID"
+      dose: 1-2 mg/kg PO BID
       notes: 質子幫浦抑制劑，減少胃酸反流對食道黏膜的持續損傷
     - name: Sucralfate
-      dose: "犬 0.5-1 g PO TID；貓 0.25 g PO TID"
+      dose: 犬 0.5-1 g PO TID；貓 0.25 g PO TID
       notes: 食道黏膜保護劑，形成保護膜覆蓋受損黏膜
     - name: Prednisolone
-      dose: "0.5-1 mg/kg PO BID × 2-3 週"
+      dose: 0.5-1 mg/kg PO BID × 2-3 週
       notes: 球囊擴張後使用，抑制纖維化與疤痕再形成。有助減少再狹窄
     - name: Mitomycin C（局部塗抹）
-      dose: "局部塗抹 0.4 mg/mL 溶液於擴張後狹窄處 × 2-5 分鐘"
+      dose: 局部塗抹 0.4 mg/mL 溶液於擴張後狹窄處 × 2-5 分鐘
       notes: 抗纖維化藥物，內視鏡下局部應用於頑固性狹窄。減少纖維母細胞增生
   general:
     - 內視鏡球囊擴張術（balloon dilation）：漸進式擴張，每次增加管徑不超過原管徑的 3 倍（rule of three 避免穿孔）
@@ -109,35 +107,35 @@ treatment:
     - 吸入性肺炎治療：廣效抗生素（Amoxicillin-Clavulanate 12.5-25 mg/kg PO BID）
     - 食道放置支架（stent）：頑固性狹窄的替代方案（併發症率較高）
     - 手術切除吻合：僅用於極頑固的短節段狹窄
-
-prognosis: 經球囊擴張治療，約 70-88% 的犬貓可達到良好至優良的長期結果。單一狹窄預後優於多發性狹窄。早期治療（症狀出現後 1-2 週內開始擴張）預後較佳。頑固性狹窄可能需要 5 次以上擴張。併發吸入性肺炎會增加死亡風險。腫瘤性狹窄預後取決於腫瘤類型。
-
+prognosis: >-
+  經球囊擴張治療，約 70-88% 的犬貓可達到良好至優良的長期結果。單一狹窄預後優於多發性狹窄。早期治療（症狀出現後 1-2 週內開始擴張）預後較佳。頑固性狹窄可能需要 5
+  次以上擴張。併發吸入性肺炎會增加死亡風險。腫瘤性狹窄預後取決於腫瘤類型。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: Balloon dilation of benign esophageal strictures in dogs and cats
     url: https://pubmed.ncbi.nlm.nih.gov/15715589/
     type: research
-    pmid: "15715589"
+    pmid: '15715589'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Esophageal strictures in cats and dogs: results of balloon dilation in 43 cases"
+    title: 'Esophageal strictures in cats and dogs: results of balloon dilation in 43 cases'
     url: https://pubmed.ncbi.nlm.nih.gov/16379210/
     type: research
-    pmid: "16379210"
+    pmid: '16379210'
   - sourceOrg: Veterinary Surgery
     title: Use of mitomycin C for treatment of recurrent esophageal strictures in dogs and cats
     url: https://pubmed.ncbi.nlm.nih.gov/30411804/
     type: research
-    pmid: "30411804"
+    pmid: '30411804'
   - sourceOrg: JFMS open reports
     title: Lower esophageal sphincter achalasia-like syndrome causing megaesophagus in a cat.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12207000/
     type: case-report
-    pmid: "40589725"
+    pmid: '40589725'
   - sourceOrg: World journal of gastroenterology
     title: Celastrol alleviates esophageal stricture in rats by inhibiting NLR family pyrin domain containing 3 activation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12188773/
     type: research
-    pmid: "40575338"
+    pmid: '40575338'
     relevance: supporting
 pubmedQueries:
   - query: '"esophageal stricture" AND (dog OR cat) AND ("balloon dilation" OR "bougienage" OR "treatment")'
@@ -146,6 +144,54 @@ pubmedQueries:
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "ESOPHAGEAL STRICTURES"
+  chapter: DIG
+  sectionTitle: ESOPHAGEAL STRICTURES
   pdfPage: 412
+diagnosticAlgorithm:
+  title: 食道狹窄 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估進食固體食物後反覆嘔吐（實為食道逆流），注意先前食道損傷（異物、腐蝕劑、麻醉逆流）病史
+      findings:
+        - 進食固體食物後數分鐘內逆流
+        - 能進食液體但固體食物困難
+        - 進行性體重下降
+    - step: 2
+      action: 影像學檢查
+      details: 進行胸腔X光和鋇劑吞嚥攝影評估食道狹窄位置和程度
+      findings:
+        - X光可能顯示食道狹窄前段擴張
+        - 鋇劑攝影明確顯示狹窄位置和程度
+        - 評估狹窄數量（單一或多處）
+    - step: 3
+      action: 內視鏡確診
+      details: 食道內視鏡檢查直接觀察狹窄程度，同時可進行球囊擴張治療
+      findings:
+        - 內視鏡確認狹窄位置和嚴重程度
+        - 評估黏膜狀態和纖維化程度
+        - 可同時進行球囊擴張治療
+clinicalPearls:
+  - 麻醉後反流是食道狹窄最常見的原因
+  - 貓口服doxycycline後務必給予水或食物確保藥片到達胃部
+  - 氣球擴張後局部注射類固醇可減少再狹窄
+  - 反流和嘔吐不同：反流為被動排出未消化食物，無腹部收縮
+monitoringItems:
+  - 吞嚥功能改善
+  - 體重恢復
+  - 反流頻率
+  - 吸入性肺炎徵象
+associatedSymptoms:
+  - symptomId: regurgitation
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+ddxSource: book

@@ -3,24 +3,22 @@ nameEn: Devon Rex Hereditary Myopathy
 nameZh: 德文Rex貓遺傳性肌病
 bodySystem: neurology
 description: Devon Rex與斯芬克斯貓共有的遺傳性肌肉疾病。幼貓期出現全身肌肉無力、巨食道,易發生吸入性肺炎,預後不良。
-
 aliases:
-  - { alias: 遺傳性肌病, language: zh }
-  - { alias: Congenital Myopathy, language: en }
-
+  - alias: 遺傳性肌病
+    language: zh
+  - alias: Congenital Myopathy
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: Devon Rex、斯芬克斯貓,體染色體隱性遺傳
-
 etiology:
   categories:
     - name: 遺傳性肌肉代謝異常
       examples:
         - 肌肉能量代謝缺陷
         - 體染色體隱性遺傳
-
 clinicalSigns:
   early:
     - 幼貓期全身無力
@@ -31,26 +29,48 @@ clinicalSigns:
     - 反覆吸入性肺炎
     - 呼吸困難
     - 多數數月內死亡
-
 diagnosis:
   primaryTests:
     - name: 肌肉活檢
-      notes: "肌纖維變性、糖原累積"
+      notes: 肌纖維變性、糖原累積
     - name: 食道X光
-      notes: "巨食道"
+      notes: 巨食道
   differentialDiagnoses:
     - 重症肌無力
     - 中毒性肌病
-
 treatment:
   medical:
     - 無治癒方法
     - 支持性照護
     - 營養管理
     - 預防感染
-
 prognosis:
-  general: "預後極差,多數幼貓在6月齡前死於吸入性肺炎或呼吸衰竭。"
-
+  general: 預後極差,多數幼貓在6月齡前死於吸入性肺炎或呼吸衰竭。
 prevention:
   - 受影響貓及親代不應繁殖
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 德文Rex貓遺傳性肌病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - dysphagia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 肌肉活檢
+          notes: 肌纖維變性、糖原累積
+        - name: 食道X光
+          notes: 巨食道
+ddxSource: auto-generated

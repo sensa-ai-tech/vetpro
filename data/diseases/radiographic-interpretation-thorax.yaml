@@ -3,12 +3,13 @@ nameEn: Radiographic Interpretation Thorax
 nameZh: 胸腔X光判讀
 bodySystem: other
 description: 犬貓胸腔X光影像的系統性判讀方法。包括心臟、肺臟、氣管、縱膈腔及胸壁評估。正確判讀胸腔X光為診斷心肺疾病的基礎技能,需標準化拍攝技術及系統性檢視流程。
-
 aliases:
-  - { alias: 胸部X光解讀, language: zh }
-  - { alias: Thoracic radiography, language: en }
-  - { alias: Chest X-ray interpretation, language: en }
-
+  - alias: 胸部X光解讀
+    language: zh
+  - alias: Thoracic radiography
+    language: en
+  - alias: Chest X-ray interpretation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓胸腔結構與犬不同,需熟悉正常解剖變異
-
 etiology:
   categories:
     - name: 標準拍攝體位
@@ -34,7 +34,6 @@ etiology:
         - 縱膈腔(淋巴結、腫塊)
         - 胸膜腔(積液、氣胸)
         - 胸壁及橫膈(骨折、疝氣)
-
 clinicalSigns:
   early:
     - X光為診斷工具,非疾病本身
@@ -42,33 +41,29 @@ clinicalSigns:
   progressive:
     - 咳嗽、呼吸困難、運動不耐
     - 心臟雜音或節律不整
-
 diagnosis:
   primaryTests:
     - name: 心血管比(VHS, Vertebral Heart Score)
-      notes: "測量心臟長軸及短軸,換算成胸椎節數。犬正常<10.5v,貓<8.0v"
+      notes: 測量心臟長軸及短軸,換算成胸椎節數。犬正常<10.5v,貓<8.0v
     - name: 肺野型態判讀
-      notes: "肺泡型(air bronchogram)、間質型(網狀/結節)、血管型(肺水腫)"
+      notes: 肺泡型(air bronchogram)、間質型(網狀/結節)、血管型(肺水腫)
     - name: 氣管評估
-      notes: "氣管塌陷、氣管位移、氣管異物"
+      notes: 氣管塌陷、氣管位移、氣管異物
     - name: 胸腔積液評估
-      notes: "心臟輪廓模糊、葉間裂積液、背側積液(DV位)"
+      notes: 心臟輪廓模糊、葉間裂積液、背側積液(DV位)
   differentialDiagnoses:
     - 心臟衰竭(肺水腫、心臟擴大)
     - 肺炎(肺泡型浸潤)
     - 腫瘤(肺結節、縱膈腫塊)
     - 胸腔積液(膿胸、血胸、乳糜胸)
     - 氣胸
-
 treatment:
   medical:
     - X光判讀為診斷工具,治療依診斷而定
     - 發現異常後進行後續檢查(超音波、CT、支氣管鏡檢等)
     - 定期追蹤X光評估治療反應
-
 prognosis:
-  general: "胸腔X光為非侵入性且資訊豐富的影像學工具。系統性判讀可提高診斷準確度,但需結合臨床症狀綜合判斷。"
-
+  general: 胸腔X光為非侵入性且資訊豐富的影像學工具。系統性判讀可提高診斷準確度,但需結合臨床症狀綜合判斷。
 prevention:
   - 標準化拍攝技術:正確定位、適當曝光
   - 至少兩個體位(側位+VD/DV)
@@ -76,12 +71,38 @@ prevention:
   - 與之前X光片比較評估變化
   - 疑似心臟病:左側位評估心臟最準確
   - 疑似轉移:三體位(右側+左側+VD)提高敏感度
-
-
 guidelineRefs:
-  - sourceOrg: "Veterinary research forum : an international quarterly journal"
+  - sourceOrg: 'Veterinary research forum : an international quarterly journal'
     title: Development and evaluation of methods for vertebral heart score determination in guinea pig (Cavia porcellus).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8576167/
     type: research
-    pmid: "34815848"
+    pmid: '34815848'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 胸腔X光判讀 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - coughing 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心血管比(VHS, Vertebral Heart Score)
+          notes: 測量心臟長軸及短軸,換算成胸椎節數。犬正常<10.5v,貓<8.0v
+        - name: 肺野型態判讀
+          notes: 肺泡型(air bronchogram)、間質型(網狀/結節)、血管型(肺水腫)
+        - name: 氣管評估
+          notes: 氣管塌陷、氣管位移、氣管異物
+ddxSource: auto-generated

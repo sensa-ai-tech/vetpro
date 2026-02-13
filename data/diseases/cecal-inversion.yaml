@@ -3,11 +3,11 @@ nameEn: Cecal Inversion
 nameZh: 盲腸內翻
 bodySystem: gastrointestinal
 description: 盲腸翻入結腸腔內,導致腸阻塞。罕見於犬,多為急性發作,需外科處理。
-
 aliases:
-  - { alias: 盲腸套疊, language: zh }
-  - { alias: Cecocolic Intussusception, language: en }
-
+  - alias: 盲腸套疊
+    language: zh
+  - alias: Cecocolic Intussusception
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 極罕見
-
 etiology:
   categories:
     - name: 腸道蠕動異常
       examples:
         - 腸道發炎
         - 寄生蟲感染
-
 clinicalSigns:
   early:
     - 嘔吐
@@ -33,29 +31,63 @@ clinicalSigns:
     - 血便
     - 腹部腫塊 (可能觸及)
     - 休克 (嚴重時)
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "靶心樣腸道腫塊"
+      notes: 靶心樣腸道腫塊
     - name: 腹部 X 光
-      notes: "腸阻塞徵兆"
+      notes: 腸阻塞徵兆
     - name: 探查性開腹
-      notes: "確診及治療"
+      notes: 確診及治療
   differentialDiagnoses:
     - 腸套疊
     - 腸道腫瘤
     - 異物阻塞
-
 treatment:
   medical:
     - 緊急外科整復或切除
     - 補液及電解質矯正
     - 抗生素
-
 prognosis:
-  general: "預後謹慎;早期手術預後較佳;延遲處理可能發生腸壞死及腹膜炎"
-
+  general: 預後謹慎;早期手術預後較佳;延遲處理可能發生腸壞死及腹膜炎
 prevention:
   - 早期診斷及治療腸道疾病
   - 定期驅蟲
+diagnosticAlgorithm:
+  title: 盲腸內翻 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估大腸性腹瀉和腹部不適
+      findings:
+        - 慢性或間歇性血便
+        - 裡急後重
+        - 嘔吐（部分病例）
+        - 體重減輕
+    - step: 2
+      action: 影像學檢查
+      details: 進行腹部超音波評估盲腸結腸區域
+      findings:
+        - 超音波見盲腸結腸交界處靶心徵
+        - 腸套疊樣表現
+        - 局部腸壁增厚
+        - 腹部X光可能見局部軟組織密度增加
+    - step: 3
+      action: 結腸鏡或手術確診
+      details: 進行結腸鏡或探查性剖腹術確認
+      findings:
+        - 結腸鏡見盲腸組織突入結腸腔
+        - 手術確認盲腸內翻入結腸
+        - 評估腸壁活力
+        - 盲腸切除術為確定性治療
+clinicalPearls:
+  - 犬的慢性大腸型腹瀉伴血便，若常規治療反應不佳，應考慮盲腸內翻的可能
+  - 腹部超音波的同心圓/靶環徵是套疊的特徵性影像表現
+  - 結腸鏡不僅能診斷還可以直接觀察套入的盲腸組織活力
+  - 盲腸固定術（cecopexy）可有效預防復位後的再發
+monitoringItems:
+  - 術後 24-72 小時密切監測腹膜炎和敗血症徵象
+  - 術後 2 週追蹤傷口癒合和腸道功能恢復
+  - 術後 1 個月腹部超音波確認無復發
+  - 長期追蹤糞便品質和大腸功能
+ddxSource: book

@@ -3,13 +3,15 @@ nameEn: Systemic Lupus Erythematosus
 nameZh: 全身性紅斑狼瘡
 bodySystem: immunology
 description: 一種多系統自體免疫疾病，以產生抗核抗體 (ANA) 與免疫複合物沉積為特徵，可影響皮膚、關節、腎臟、血液等多個器官系統。犬較貓常見。
-
 aliases:
-  - { alias: SLE, language: en }
-  - { alias: 狼瘡, language: zh }
-  - { alias: 紅斑性狼瘡, language: zh }
-  - { alias: Lupus, language: en }
-
+  - alias: SLE
+    language: en
+  - alias: 狼瘡
+    language: zh
+  - alias: 紅斑性狼瘡
+    language: zh
+  - alias: Lupus
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓極罕見，診斷困難。臨床表現與犬相似但文獻有限。
-
 etiology:
   categories:
     - name: 免疫病理機轉
@@ -35,7 +36,6 @@ etiology:
         - 病毒感染 (理論上可能觸發)
         - 藥物 (少數藥物可誘發類狼瘡症候群)
         - 荷爾蒙因素
-
 clinicalSigns:
   early:
     - 間歇性跛行（多發性關節炎，非糜爛性）
@@ -58,18 +58,17 @@ clinicalSigns:
     - 多漿膜炎（胸膜炎、腹水、心包積液）
     - 神經炎、腦膜炎、脊髓病變
     - 神經系統症狀（行為改變、癲癇——類似人類 SLE 精神症狀，動物亦可見）
-
 diagnosis:
   primaryTests:
     - name: 抗核抗體 (ANA) 測試
-      notes: "ANA 陽性為 SLE 的標誌性檢查，但非 100% 特異。需結合臨床表現判斷。效價 ≥1:160 通常有意義"
+      notes: ANA 陽性為 SLE 的標誌性檢查，但非 100% 特異。需結合臨床表現判斷。效價 ≥1:160 通常有意義
     - name: Coombs' test (直接抗球蛋白試驗)
-      notes: "評估免疫介導性溶血性貧血。SLE 患者常為陽性"
+      notes: 評估免疫介導性溶血性貧血。SLE 患者常為陽性
   imaging:
     - name: 關節 X 光
-      notes: "非糜爛性多發性關節炎，關節腫脹但無骨質破壞（與類風濕性關節炎不同）"
+      notes: 非糜爛性多發性關節炎，關節腫脹但無骨質破壞（與類風濕性關節炎不同）
     - name: 腹部超音波
-      notes: "評估腎臟形態、漿膜腔積液"
+      notes: 評估腎臟形態、漿膜腔積液
   additional:
     - CBC (非再生性或再生性貧血、血小板減少、白血球減少)
     - 尿液分析 (蛋白尿、管型)
@@ -85,7 +84,6 @@ diagnosis:
     - 感染性多發性關節炎 (Septic Polyarthritis)
     - 免疫介導性溶血性貧血 — 原發性 (Primary IMHA)
     - 免疫複合物性血管炎 (Immune Complex Vasculitis)
-
 treatment:
   principles:
     - 免疫抑制為治療核心
@@ -105,42 +103,108 @@ treatment:
     - 嚴重溶血性貧血可能需要輸血
     - 避免紫外線暴露 (防曬、限制戶外活動時間)
     - 定期監測 CBC、生化、UPC
-
-prognosis: SLE 為慢性復發性疾病，需終生管理。腎絲球腎炎為最重要的預後決定因子，嚴重蛋白尿與氮血症者預後差；貓 SLE 中腎絲球腎炎為主要致死性併發症。自體免疫性溶血性貧血與血小板減少為最常見的臨床表現，亦可能致命。對免疫抑制治療反應良好者（尤其免疫複合物型或自體抗體型為主者）可維持數年良好生活品質。藥物誘發性血管炎在停藥後通常可改善。整體中位存活時間約 1-5 年不等，取決於受累器官與治療反應。
-
+prognosis: >-
+  SLE 為慢性復發性疾病，需終生管理。腎絲球腎炎為最重要的預後決定因子，嚴重蛋白尿與氮血症者預後差；貓 SLE
+  中腎絲球腎炎為主要致死性併發症。自體免疫性溶血性貧血與血小板減少為最常見的臨床表現，亦可能致命。對免疫抑制治療反應良好者（尤其免疫複合物型或自體抗體型為主者）可維持數年良好生活品質。藥物誘發性血管炎在停藥後通常可改善。整體中位存活時間約
+  1-5 年不等，取決於受累器官與治療反應。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Internal Medicine
-    title: "Systemic lupus erythematosus in dogs: 65 cases"
+    title: 'Systemic lupus erythematosus in dogs: 65 cases'
     url: https://pubmed.ncbi.nlm.nih.gov/15058776/
     type: retrospective
-    pmid: "15058776"
+    pmid: '15058776'
   - sourceOrg: ACVIM
     title: ACVIM consensus statement on the treatment of immune-mediated hemolytic anemia in dogs
     url: https://pubmed.ncbi.nlm.nih.gov/30806491/
     type: consensus
-    pmid: "30806491"
+    pmid: '30806491'
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: Consensus recommendations for immunosuppressive treatment of dogs with glomerular disease
     url: https://pubmed.ncbi.nlm.nih.gov/24708069/
     type: consensus
-    pmid: "24708069"
+    pmid: '24708069'
   - sourceOrg: Frontiers in immunology
     title: MicroRNA-183/96/182 cluster in immunity and autoimmunity.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9986322/
     type: review
-    pmid: "36891312"
+    pmid: '36891312'
     relevance: primary
   - sourceOrg: Frontiers in immunology
     title: Promising Roles of Exosomal microRNAs in Systemic Lupus Erythematosus.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8710456/
     type: review
-    pmid: "34966383"
+    pmid: '34966383'
     relevance: primary
 pubmedQueries:
-  - query: '"systemic lupus erythematosus" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "diagnosis" OR "consensus")'
+  - query: >-
+      "systemic lupus erythematosus" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "diagnosis" OR
+      "consensus")
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "IMM"
-  sectionTitle: "Systemic Lupus Erythematosus (SL E):"
+  chapter: IMM
+  sectionTitle: 'Systemic Lupus Erythematosus (SL E):'
   pdfPage: 870
+diagnosticAlgorithm:
+  title: 全身性紅斑狼瘡 診斷流程
+  steps:
+    - step: 1
+      action: 臨床懷疑
+      details: 多系統症狀（關節+皮膚+血液+腎臟）
+      findings:
+        - 多關節炎
+        - 皮膚病變
+        - 發燒
+        - 蛋白尿
+    - step: 2
+      action: ANA篩檢
+      details: 抗核抗體檢測
+      findings:
+        - ANA陽性（高敏感度）
+        - ANA陰性→幾乎排除SLE
+    - step: 3
+      action: 器官評估
+      details: 評估各器官受累程度
+      findings:
+        - CBC（血液系統）
+        - 尿液分析（腎臟）
+        - 關節液（關節）
+        - 皮膚活檢
+    - step: 4
+      action: 確診標準
+      details: 需符合≥2個器官系統受累+ANA陽性
+      findings:
+        - 多系統受累確認
+        - 排除其他自體免疫疾病
+clinicalPearls:
+  - ANA陰性幾乎可排除SLE（陰性預測值>99%）
+  - SLE必須累及兩個以上器官系統才能確診
+  - 腎絲球腎炎是最嚴重的併發症和主要死因
+  - 與DLE不同，SLE累及全身多系統
+monitoringItems:
+  - CBC和血小板計數（每2-4週）
+  - 腎功能和尿蛋白定量
+  - 免疫抑制劑藥物副作用
+  - ANA效價追蹤
+associatedSymptoms:
+  - symptomId: polyarthritis
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: splenomegaly
+    frequency: common
+ddxSource: book

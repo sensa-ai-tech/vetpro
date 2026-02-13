@@ -3,13 +3,15 @@ nameEn: Ectopic Cilia
 nameZh: 異位睫毛
 bodySystem: ophthalmology
 description: 異常睫毛從眼瞼結膜面 (palpebral conjunctiva) 穿出，直接摩擦角膜表面造成劇烈疼痛與角膜潰瘍。與雙行睫不同，異位睫毛位於瞼板腺體內而非腺口，且幾乎總是引起症狀。年輕犬常見。
-
 aliases:
-  - { alias: Ectopic Cilium, language: en }
-  - { alias: Aberrant Cilia, language: en }
-  - { alias: 異位纖毛, language: zh }
-  - { alias: 異位眼睫毛, language: zh }
-
+  - alias: Ectopic Cilium
+    language: en
+  - alias: Aberrant Cilia
+    language: en
+  - alias: 異位纖毛
+    language: zh
+  - alias: 異位眼睫毛
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓極為罕見。
-
 etiology:
   categories:
     - name: 先天性
@@ -25,7 +26,6 @@ etiology:
         - 瞼板腺體內上皮異常分化
         - 品種遺傳傾向
         - 睫毛從瞼結膜面穿出
-
 clinicalSigns:
   early:
     - 劇烈疼痛 (嚴重 blepharospasm)
@@ -35,14 +35,12 @@ clinicalSigns:
     - 反覆角膜潰瘍 (典型線狀潰瘍)
     - 角膜水腫
     - 角膜新生血管
-
 diagnosis:
   primaryTests:
     - name: 裂隙燈放大檢查
       notes: 翻開上眼瞼在結膜面找到穿出的睫毛。常位於上眼瞼中央，顏色深而容易辨識。可能非常細小需仔細尋找
     - name: 螢光素染色
       notes: 角膜潰瘍，位置對應異位睫毛接觸處
-
 treatment:
   principles:
     - 手術切除為唯一有效治療
@@ -52,9 +50,33 @@ treatment:
     - 冷凍療法 (cryotherapy) 輔助
     - 術後抗生素眼藥水治療角膜潰瘍
     - 術後伊莉莎白頸圈
-
 prognosis: 手術切除後預後極佳。角膜潰瘍通常在 1 週內癒合。復發可能但不常見 (其他位置可能有新的異位睫毛)。不手術會持續反覆潰瘍。
-
 pubmedQueries:
   - query: '"ectopic cilia" AND (veterinary OR canine) AND ("surgery" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 異位睫毛 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 裂隙燈放大檢查
+          notes: 翻開上眼瞼在結膜面找到穿出的睫毛。常位於上眼瞼中央，顏色深而容易辨識。可能非常細小需仔細尋找
+        - name: 螢光素染色
+          notes: 角膜潰瘍，位置對應異位睫毛接觸處
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術切除為唯一有效治療
+        - 需完全移除含異常毛囊的結膜與腺體組織
+ddxSource: auto-generated

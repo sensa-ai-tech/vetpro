@@ -3,13 +3,15 @@ nameEn: Hyponatremia
 nameZh: 低鈉血症
 bodySystem: metabolic
 description: 血清鈉離子濃度低於正常值（犬 <140 mEq/L，貓 <149 mEq/L）的電解質異常。低鈉血症可導致細胞水腫，尤其腦水腫最為危險。糾正速度過快可能引發滲透性脫髓鞘症候群，需謹慎處理。
-
 aliases:
-  - { alias: 低血鈉, language: zh }
-  - { alias: 血鈉過低, language: zh }
-  - { alias: Low Sodium, language: en }
-  - { alias: Hyponatraemia, language: en }
-
+  - alias: 低血鈉
+    language: zh
+  - alias: 血鈉過低
+    language: zh
+  - alias: Low Sodium
+    language: en
+  - alias: Hyponatraemia
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓低鈉血症較犬少見，可見於慢性腎病、肝硬化或不當靜脈輸液。
-
 etiology:
   categories:
     - name: 容積耗損性（最常見）
@@ -31,7 +32,6 @@ etiology:
         - 肝硬化/腹水
         - 抗利尿激素分泌不當症候群（SIADH）
         - 心因性多飲
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -43,14 +43,12 @@ clinicalSigns:
     - 癲癇發作（嚴重低鈉 <120 mEq/L）
     - 昏迷
     - 腦幹疝脫（極嚴重時）
-
 diagnosis:
   primaryTests:
     - name: 血清電解質
       notes: 血清鈉 <140 mEq/L（犬）或 <149 mEq/L（貓）。需同時評估鉀、氯離子及血漿滲透壓。
     - name: 尿液分析
       notes: 尿鈉濃度與尿比重有助鑑別腎性 vs 腎外流失。低尿鈉提示腎外流失或有效循環容積不足。
-
 treatment:
   principles:
     - 鑑別並治療潛在病因為首要
@@ -63,36 +61,93 @@ treatment:
     - 嚴重有症狀（癲癇）：3% 高張食鹽水（1-2 mL/kg/hr），目標先升 4-6 mEq/L
     - Addison 病：類固醇 + 礦物皮質酮替代
     - 每 2-4 小時追蹤血清鈉直至穩定
-
 prognosis: 輕度低鈉血症經病因治療後預後良好。急性嚴重低鈉（<120 mEq/L）合併神經症狀需緊急處理，預後謹慎。糾正速度過快導致滲透性脫髓鞘症候群預後極差。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
-    title: "Equine Granulocytic Anaplasmosis: A Systematic Review and Meta-Analysis on Clinico-Pathological Findings, Diagnosis, and Therapeutic Management."
+    title: >-
+      Equine Granulocytic Anaplasmosis: A Systematic Review and Meta-Analysis on Clinico-Pathological Findings,
+      Diagnosis, and Therapeutic Management.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11209296/
     type: review
-    pmid: "38922016"
+    pmid: '38922016'
   - sourceOrg: Journal of medical primatology
-    title: "Uremic encephalopathy in a rhesus macaque (Macaca mulatta): A case report and a brief review of the veterinary literature."
+    title: >-
+      Uremic encephalopathy in a rhesus macaque (Macaca mulatta): A case report and a brief review of the veterinary
+      literature.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6202283/
     type: review
-    pmid: "29693270"
+    pmid: '29693270'
   - sourceOrg: Frontiers in veterinary science
     title: Intravenous and Oral Fluid Therapy in Neonatal Calves With Diarrhea or Sepsis and in Adult Cattle.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7873366/
     type: review
-    pmid: "33585594"
-  - sourceOrg: "Biomedicine &amp; pharmacotherapy = Biomedecine &amp; pharmacotherapie"
-    title: "Arginine vasopressin and pathophysiology of COVID-19: An innovative perspective."
+    pmid: '33585594'
+  - sourceOrg: Biomedicine &amp; pharmacotherapy = Biomedecine &amp; pharmacotherapie
+    title: 'Arginine vasopressin and pathophysiology of COVID-19: An innovative perspective.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8440235/
     type: review
-    pmid: "34543987"
+    pmid: '34543987'
   - sourceOrg: Veterinary medicine (Auckland, N.Z.)
-    title: "Management of hypoadrenocorticism (Addison's disease) in dogs."
+    title: Management of hypoadrenocorticism (Addison's disease) in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6055912/
     type: review
-    pmid: "30050862"
+    pmid: '30050862'
 pubmedQueries:
   - query: '"Hyponatremia" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 低鈉血症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估嗜睡、嘔吐、肌肉震顫和神經症狀，注意急性與慢性的區別
+      findings:
+        - 嗜睡和虛弱
+        - 嘔吐和食慾下降
+        - 嚴重時抽搐或昏迷
+    - step: 2
+      action: 實驗室檢查
+      details: 測量血清鈉濃度，同時評估血糖、血脂排除假性低鈉血症
+      findings:
+        - 血清鈉<140 mEq/L
+        - 血漿滲透壓降低
+        - 排除高血糖或高脂血症引起的假性低鈉
+    - step: 3
+      action: 病因分類與確診
+      details: 根據體液狀態和尿鈉濃度分類，尋找潛在病因
+      findings:
+        - 評估是否為腎上腺皮質功能低下（Addison's）
+        - 排除胃腸道大量流失（嘔吐腹瀉）
+        - 評估SIADH或水中毒可能性
+clinicalPearls:
+  - 犬低鈉血症+高鉀血症（Na/K比值小於27）：首先排除Addison病
+  - 矯正慢性低鈉過快可致滲透壓脫髓鞘症候群導致不可逆腦損傷
+  - 假性低鈉血症：嚴重高脂或高蛋白血症可影響鈉測量值
+  - 年輕雌犬加嘔吐加低鈉高鉀=典型Addison病表現
+  - 急性vs慢性低鈉血症的矯正策略完全不同
+monitoringItems:
+  - 血鈉每2-4小時監測（矯正期間）
+  - 神經學狀態
+  - 血鉀（特別是Addison病）
+  - 尿量
+  - 心電圖（電解質異常時）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+ddxSource: book

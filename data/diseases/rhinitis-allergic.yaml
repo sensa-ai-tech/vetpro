@@ -3,11 +3,11 @@ nameEn: Rhinitis Allergic
 nameZh: 過敏性鼻炎
 bodySystem: respiratory
 description: 鼻黏膜對環境過敏原的過敏反應,導致打噴嚏及水樣鼻分泌物。症狀通常季節性或持續性。
-
 aliases:
-  - { alias: 變應性鼻炎, language: zh }
-  - { alias: Hay Fever, language: en }
-
+  - alias: 變應性鼻炎
+    language: zh
+  - alias: Hay Fever
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 較少見
-
 etiology:
   categories:
     - name: 吸入性過敏原
       examples:
         - 花粉、塵蟎
         - 黴菌孢子
-
 clinicalSigns:
   early:
     - 打噴嚏
@@ -34,63 +32,101 @@ clinicalSigns:
     - 持續打噴嚏
     - 眼部分泌物
     - 可能皮膚搔癢
-
 diagnosis:
   primaryTests:
     - name: 臨床病史
-      notes: "季節性或環境相關"
+      notes: 季節性或環境相關
     - name: 過敏原測試
-      notes: "血清 IgE 或皮內測試"
+      notes: 血清 IgE 或皮內測試
     - name: 排除其他原因
-      notes: "鼻鏡、影像學"
+      notes: 鼻鏡、影像學
   differentialDiagnoses:
     - 感染性鼻炎
     - 異物
     - 鼻腫瘤
-
 treatment:
   medical:
     - 抗組織胺 (Cetirizine 1 mg/kg PO q12-24h)
     - 類固醇 (短期使用)
     - 減敏治療 (allergen immunotherapy)
     - 避免過敏原
-
 prognosis:
-  general: "預後良好;可長期控制,但通常無法治癒"
-
+  general: 預後良好;可長期控制,但通常無法治癒
 prevention:
   - 減少過敏原暴露
   - 環境控制 (空氣清淨機、定期清潔)
-
-
 guidelineRefs:
   - sourceOrg: Allergy
-    title: "Methodology for the Development of the Allergic Rhinitis and Its Impact on Asthma (ARIA)-EAACI 2024-2025 Guidelines: From Evidence-to-Decision Frameworks to Digitalised Shared Decision-Making Algorithms."
+    title: >-
+      Methodology for the Development of the Allergic Rhinitis and Its Impact on Asthma (ARIA)-EAACI 2024-2025
+      Guidelines: From Evidence-to-Decision Frameworks to Digitalised Shared Decision-Making Algorithms.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12862529/
     type: guideline
-    pmid: "41268627"
+    pmid: '41268627'
     relevance: primary
   - sourceOrg: Current allergy and asthma reports
-    title: "Minimizing Indoor Allergen Exposure: What Works?"
+    title: 'Minimizing Indoor Allergen Exposure: What Works?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12379700/
     type: review
-    pmid: "39535667"
+    pmid: '39535667'
     relevance: primary
   - sourceOrg: International journal of molecular sciences
     title: Treatment of Allergies to Fur Animals.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11241144/
     type: review
-    pmid: "39000328"
+    pmid: '39000328'
     relevance: primary
-  - sourceOrg: "Allergy, asthma &amp; immunology research"
-    title: "Dog and Cat Allergies: Current State of Diagnostic Approaches and Challenges."
+  - sourceOrg: Allergy, asthma &amp; immunology research
+    title: 'Dog and Cat Allergies: Current State of Diagnostic Approaches and Challenges.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5809771/
     type: review
-    pmid: "29411550"
+    pmid: '29411550'
     relevance: primary
   - sourceOrg: Allergy
     title: Advances and highlights in biomarkers of allergic diseases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9292545/
     type: review
-    pmid: "34519063"
+    pmid: '34519063'
     relevance: primary
+diagnosticAlgorithm:
+  title: 過敏性鼻炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估慢性噴嚏、漿液性或黏液性鼻分泌物、鼻部搔癢等症狀，注意季節性或環境相關性
+      findings:
+        - 反覆噴嚏發作
+        - 雙側漿液性鼻分泌物
+        - 鼻部搔癢和揉臉行為
+    - step: 2
+      action: 影像學與排除性檢查
+      details: 進行鼻腔X光或CT排除腫瘤、異物及真菌感染，鼻腔鏡檢查評估黏膜狀態
+      findings:
+        - X光/CT排除鼻腔腫塊
+        - 鼻腔鏡見黏膜充血水腫
+        - 排除鼻腔異物及真菌感染
+    - step: 3
+      action: 過敏原檢測與確診
+      details: 進行皮內過敏原試驗或血清特異性IgE檢測，鼻腔沖洗液細胞學確認嗜酸性球增多
+      findings:
+        - 皮內試驗或血清IgE陽性反應
+        - 鼻腔沖洗液嗜酸性球增多
+        - 臨床對抗組織胺或類固醇反應良好
+clinicalPearls:
+  - 犬貓過敏性鼻炎很少作為獨立診斷，多伴隨異位性皮膚炎
+  - 漿液性雙側鼻涕提示過敏性或非特異性炎症
+  - 單側鼻涕更應懷疑異物、牙根膿腫或腫瘤
+  - 必須排除鼻腔腫瘤等嚴重病因後才能歸為過敏性鼻炎
+monitoringItems:
+  - 鼻涕量和性狀
+  - 打噴嚏頻率
+  - 伴隨皮膚症狀
+  - 治療副作用
+associatedSymptoms:
+  - symptomId: sneezing
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+ddxSource: book

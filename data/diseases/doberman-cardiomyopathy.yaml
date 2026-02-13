@@ -2,18 +2,20 @@ slug: doberman-cardiomyopathy
 nameEn: Doberman Cardiomyopathy
 nameZh: 杜賓犬心肌病
 bodySystem: cardiac
-description: 杜賓犬心肌病為 Doberman Pinscher 品種特有的擴張性心肌病（DCM），具有獨特的病理與臨床特徵。疾病分為隱匿期（occult phase，僅有心律不整或超音波異常）與明顯臨床期。心室性心律不整為重要特徵，猝死風險高。盛行率約 45-63%，為該品種最重要的心臟病。
-
+description: >-
+  杜賓犬心肌病為 Doberman Pinscher 品種特有的擴張性心肌病（DCM），具有獨特的病理與臨床特徵。疾病分為隱匿期（occult
+  phase，僅有心律不整或超音波異常）與明顯臨床期。心室性心律不整為重要特徵，猝死風險高。盛行率約 45-63%，為該品種最重要的心臟病。
 aliases:
-  - { alias: Doberman DCM, language: en }
-  - { alias: 杜賓擴張性心肌病, language: zh }
-  - { alias: Doberman Pinscher Cardiomyopathy, language: en }
-
+  - alias: Doberman DCM
+    language: en
+  - alias: 杜賓擴張性心肌病
+    language: zh
+  - alias: Doberman Pinscher Cardiomyopathy
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
     notes: Doberman Pinscher 品種特有，盛行率 45-63%。常染色體顯性遺傳（PDK4 和 TTN 基因突變）。公犬發病較早，預後較差。
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -27,7 +29,6 @@ etiology:
         - 與人類致心律不整性右心室心肌病（ARVC）有相似病理
         - 左心室收縮功能進行性降低
         - 心室性心律不整（可在心室功能異常前出現）
-
 clinicalSigns:
   early:
     - 隱匿期可長達 2-4 年無臨床症狀
@@ -40,29 +41,68 @@ clinicalSigns:
     - 腹部膨大（腹水）
     - 昏厥
     - 猝死（約 30% 病例以猝死為首發表現）
-
 diagnosis:
   primaryTests:
     - name: 24 小時 Holter 監測
-      notes: "隱匿期篩檢最重要工具。>50 VPCs/24h 為陽性。>300 VPCs/24h 或出現 couplets/runs 提示高風險。建議每年篩檢。"
+      notes: 隱匿期篩檢最重要工具。>50 VPCs/24h 為陽性。>300 VPCs/24h 或出現 couplets/runs 提示高風險。建議每年篩檢。
     - name: 心臟超音波（Echocardiography）
-      notes: "隱匿期：EPSS >8mm、左心室內徑舒張期擴大。臨床期：嚴重左心室擴大（LVIDd >48-50mm），收縮功能降低（FS <20%，EF <30%）。Simpson's method 評估 EF 較準確。"
-
+      notes: 隱匿期：EPSS >8mm、左心室內徑舒張期擴大。臨床期：嚴重左心室擴大（LVIDd >48-50mm），收縮功能降低（FS <20%，EF <30%）。Simpson's method 評估 EF 較準確。
 treatment:
   principles:
     - 隱匿期開始治療可延緩疾病進展
     - Pimobendan 為隱匿期與臨床期核心藥物
     - 心室性心律不整需積極治療以降低猝死風險
   general:
-    - "隱匿期：Pimobendan 0.25 mg/kg PO q12h（PROTECT 試驗證實可延長隱匿期約 9 個月）"
-    - "心律不整控制：Sotalol 1.5-3.5 mg/kg PO q12h ± Mexiletine 5-8 mg/kg PO q8h"
-    - "臨床期心衰竭：Furosemide 2-4 mg/kg PO q8-12h + Pimobendan + ACE inhibitor"
-    - "Spironolactone 1-2 mg/kg PO q12h（抗纖維化）"
+    - 隱匿期：Pimobendan 0.25 mg/kg PO q12h（PROTECT 試驗證實可延長隱匿期約 9 個月）
+    - 心律不整控制：Sotalol 1.5-3.5 mg/kg PO q12h ± Mexiletine 5-8 mg/kg PO q8h
+    - 臨床期心衰竭：Furosemide 2-4 mg/kg PO q8-12h + Pimobendan + ACE inhibitor
+    - Spironolactone 1-2 mg/kg PO q12h（抗纖維化）
     - 基因檢測（PDK4）可作為篩檢輔助但非確診依據
     - 建議 3 歲以上每年 Holter + Echo 篩檢
-
 prognosis: 一旦進入臨床心衰竭期，中位存活時間約 3-6 個月。隱匿期使用 Pimobendan 可延長至臨床期的時間。公犬預後較母犬差。猝死為重要死因。合併心房顫動者預後更差。早期篩檢與治療介入是改善預後的關鍵。
-
 pubmedQueries:
   - query: '"Doberman" AND "cardiomyopathy" AND ("occult" OR "screening" OR "pimobendan")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: syncope
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 杜賓犬心肌病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - abdominal-distension 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 24 小時 Holter 監測
+          notes: 隱匿期篩檢最重要工具。>50 VPCs/24h 為陽性。>300 VPCs/24h 或出現 couplets/runs 提示高風險。建議每年篩檢。
+        - name: 心臟超音波（Echocardiography）
+          notes: 隱匿期：EPSS >8mm、左心室內徑舒張期擴大。臨床期：嚴重左心室擴大（LVIDd >48-50mm），收縮功能降低（FS <20%，EF <30%）。Simpson's method 評估 EF 較準確。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 隱匿期開始治療可延緩疾病進展
+        - Pimobendan 為隱匿期與臨床期核心藥物
+        - 心室性心律不整需積極治療以降低猝死風險
+ddxSource: auto-generated

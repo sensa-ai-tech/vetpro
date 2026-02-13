@@ -3,12 +3,13 @@ nameEn: Protein Requirements Critical Illness
 nameZh: 重症蛋白質需求
 bodySystem: metabolic
 description: 重症或疾病狀態下的蛋白質需求評估。重症動物常處於高分解代謝狀態，蛋白質需求增加以維持肌肉質量及免疫功能。
-
 aliases:
-  - { alias: 重症蛋白需求, language: zh }
-  - { alias: Critical Care Protein, language: en }
-  - { alias: Illness Protein Needs, language: en }
-
+  - alias: 重症蛋白需求
+    language: zh
+  - alias: Critical Care Protein
+    language: en
+  - alias: Illness Protein Needs
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓為專性肉食，蛋白需求更高
-
 etiology:
   categories:
     - name: 重症對蛋白代謝影響
@@ -37,7 +37,6 @@ etiology:
         - 犬：6-8 g/100 kcal
         - 貓：8-10 g/100 kcal
         - 燒傷/創傷：可能需更高
-
 clinicalSigns:
   early:
     - 適當蛋白：白蛋白穩定、肌肉質量維持
@@ -46,22 +45,20 @@ clinicalSigns:
   progressive:
     - 長期蛋白不足：嚴重肌肉萎縮、免疫功能低下
     - 適當蛋白：傷口癒合良好、免疫功能改善
-
 diagnosis:
   primaryTests:
     - name: 血清白蛋白
-      notes: "正常犬2.5-4.0 g/dL，貓2.5-3.9 g/dL"
+      notes: 正常犬2.5-4.0 g/dL，貓2.5-3.9 g/dL
     - name: 總蛋白
-      notes: "評估整體蛋白狀態"
+      notes: 評估整體蛋白狀態
     - name: BUN/Cr
-      notes: "監測腎功能(蛋白代謝)"
+      notes: 監測腎功能(蛋白代謝)
     - name: 肌肉質量評估
-      notes: "MCS評分"
+      notes: MCS評分
   differentialDiagnoses:
     - 蛋白質-能量營養不良
     - 低白蛋白血症
     - 肌肉萎縮
-
 treatment:
   medical:
     - 蛋白質需求計算
@@ -85,45 +82,67 @@ treatment:
     - 腎病：限制蛋白但保證高品質
     - 肝病：BCAA(支鏈胺基酸)為主
     - 燒傷/創傷：增加至8-10 g/100 kcal
-
 prognosis:
-  general: "適當蛋白質供應可維持肌肉質量、支持免疫功能、改善重症預後"
-
+  general: 適當蛋白質供應可維持肌肉質量、支持免疫功能、改善重症預後
 prevention:
   - 及早營養支持
   - 提供足夠高品質蛋白
   - 監測白蛋白及肌肉質量
   - 腎病時平衡蛋白需求與腎功能
-
-
 guidelineRefs:
   - sourceOrg: Clinical epigenetics
-    title: "Epigenetic regulation of inflammation in periodontitis: cellular mechanisms and therapeutic potential."
+    title: 'Epigenetic regulation of inflammation in periodontitis: cellular mechanisms and therapeutic potential.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7706209/
     type: review
-    pmid: "33256844"
+    pmid: '33256844'
     relevance: primary
   - sourceOrg: BMC veterinary research
-    title: "Evaluation of the modified quick sequential organ failure assessment scoring system for triage and prognostic assessment in canine emergency and critically ill patients: a retrospective study."
+    title: >-
+      Evaluation of the modified quick sequential organ failure assessment scoring system for triage and prognostic
+      assessment in canine emergency and critically ill patients: a retrospective study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11992716/
     type: research
-    pmid: "40221708"
+    pmid: '40221708'
     relevance: supporting
   - sourceOrg: Nature
     title: GWAS and meta-analysis identifies 49 genetic variants underlying critical COVID-19.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10208981/
     type: research
-    pmid: "37198478"
+    pmid: '37198478'
     relevance: supporting
   - sourceOrg: Critical care (London, England)
-    title: "36th International Symposium on Intensive Care and Emergency Medicine : Brussels, Belgium. 15-18 March 2016."
+    title: '36th International Symposium on Intensive Care and Emergency Medicine : Brussels, Belgium. 15-18 March 2016.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5493079/
     type: research
-    pmid: "27885969"
+    pmid: '27885969'
     relevance: supporting
   - sourceOrg: Molecules (Basel, Switzerland)
-    title: Plant-Derived Phenolic Acids Limit the Pathogenesis of Salmonella Typhimurium and Protect Intestinal Epithelial Cells during Their Interactions.
+    title: >-
+      Plant-Derived Phenolic Acids Limit the Pathogenesis of Salmonella Typhimurium and Protect Intestinal Epithelial
+      Cells during Their Interactions.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10976230/
     type: research
-    pmid: "38542999"
+    pmid: '38542999'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 重症蛋白質需求 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cachexia-muscle-wasting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清白蛋白
+          notes: 正常犬2.5-4.0 g/dL，貓2.5-3.9 g/dL
+        - name: 總蛋白
+          notes: 評估整體蛋白狀態
+        - name: BUN/Cr
+          notes: 監測腎功能(蛋白代謝)
+ddxSource: auto-generated

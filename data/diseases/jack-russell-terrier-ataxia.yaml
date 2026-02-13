@@ -3,19 +3,20 @@ nameEn: Jack Russell Terrier Ataxia
 nameZh: 傑克羅素㹴犬共濟失調
 bodySystem: neurology
 description: 傑克羅素㹴犬罕見的遺傳性神經退化疾病,因小腦皮層退化導致進行性共濟失調。幼犬期發病,表現為步態不穩與震顫,屬常染色體隱性遺傳,無有效治療。
-
 aliases:
-  - { alias: 傑克羅素小腦共濟失調, language: zh }
-  - { alias: JRT Hereditary Ataxia, language: en }
-  - { alias: 傑克羅素遺傳性運動失調, language: zh }
-  - { alias: Spinocerebellar Ataxia, language: en }
-
+  - alias: 傑克羅素小腦共濟失調
+    language: zh
+  - alias: JRT Hereditary Ataxia
+    language: en
+  - alias: 傑克羅素遺傳性運動失調
+    language: zh
+  - alias: Spinocerebellar Ataxia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: rare
     notes: 傑克羅素㹴特有遺傳病,常染色體隱性遺傳(CAPN1基因突變),發病年齡2-9個月
-
 etiology:
   categories:
     - name: 遺傳性神經退化
@@ -28,7 +29,6 @@ etiology:
         - 小腦顆粒層與Purkinje層細胞喪失
         - 脊髓腹角運動神經元退化
         - 進行性軸突變性
-
 clinicalSigns:
   early:
     - 2-6個月齡開始出現步態不穩
@@ -42,24 +42,22 @@ clinicalSigns:
     - 跌倒頻率增加
     - 嚴重病例:無法站立或行走
     - 智力與意識正常
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
-      notes: "小腦性共濟失調特徵:dysmetria、hypermetria、意向性震顫,感覺功能正常"
+      notes: 小腦性共濟失調特徵:dysmetria、hypermetria、意向性震顫,感覺功能正常
     - name: 基因檢測
-      notes: "CAPN1基因突變檢測,確診並用於繁殖篩檢"
+      notes: CAPN1基因突變檢測,確診並用於繁殖篩檢
     - name: MRI
-      notes: "可能見小腦萎縮,但早期可能正常"
+      notes: 可能見小腦萎縮,但早期可能正常
     - name: 腦脊髓液分析
-      notes: "正常,排除發炎性或感染性疾病"
+      notes: 正常,排除發炎性或感染性疾病
   differentialDiagnoses:
     - 小腦發育不全(cerebellar hypoplasia)
     - 儲積症(lysosomal storage disease)
     - 病毒性小腦炎(犬瘟熱)
     - 中毒(metaldehyde、鉛)
     - 前庭疾病
-
 treatment:
   medical:
     - 無治癒或減緩進展的方法
@@ -68,12 +66,38 @@ treatment:
     - 協助進食與飲水(穩定碗具)
     - 物理治療可能輕度改善肌力與協調
     - 生活品質嚴重下降時考慮安樂死
-
 prognosis:
-  general: "進行性疾病,無法治療。病程進展速度因個體差異,部分病例於1-2歲趨於穩定,部分持續惡化至無法行走。不影響智力,生活品質取決於共濟失調嚴重程度。"
-
+  general: 進行性疾病,無法治療。病程進展速度因個體差異,部分病例於1-2歲趨於穩定,部分持續惡化至無法行走。不影響智力,生活品質取決於共濟失調嚴重程度。
 prevention:
   - 繁殖前基因檢測(CAPN1突變)
   - 帶因者僅可與基因陰性個體配對
   - 患病犬隻與帶因者不應繁殖
   - 登錄家系資料,追蹤遺傳模式
+associatedSymptoms:
+  - symptomId: nystagmus
+    frequency: uncommon
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 傑克羅素㹴犬共濟失調 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - nystagmus 相關症狀
+        - trembling 相關症狀
+        - ataxia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 小腦性共濟失調特徵:dysmetria、hypermetria、意向性震顫,感覺功能正常
+        - name: 基因檢測
+          notes: CAPN1基因突變檢測,確診並用於繁殖篩檢
+        - name: MRI
+          notes: 可能見小腦萎縮,但早期可能正常
+ddxSource: auto-generated

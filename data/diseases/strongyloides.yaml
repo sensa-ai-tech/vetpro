@@ -2,13 +2,16 @@ slug: strongyloides
 nameEn: Strongyloides
 nameZh: 糞線蟲感染
 bodySystem: infectious
-description: 糞線蟲感染 (strongyloidosis) 由 Strongyloides stercoralis 引起，可經皮膚穿入或經乳汁傳播。幼犬為主要臨床宿主，可引起嚴重出血性腹瀉。具自體感染 (autoinfection) 能力，免疫抑制宿主可發展超級感染。為人畜共通寄生蟲。
-
+description: >-
+  糞線蟲感染 (strongyloidosis) 由 Strongyloides stercoralis 引起，可經皮膚穿入或經乳汁傳播。幼犬為主要臨床宿主，可引起嚴重出血性腹瀉。具自體感染 (autoinfection)
+  能力，免疫抑制宿主可發展超級感染。為人畜共通寄生蟲。
 aliases:
-  - { alias: 糞小桿線蟲感染, language: zh }
-  - { alias: Strongyloidosis, language: en }
-  - { alias: Threadworm Infection, language: en }
-
+  - alias: 糞小桿線蟲感染
+    language: zh
+  - alias: Strongyloidosis
+    language: en
+  - alias: Threadworm Infection
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓感染（S. felis 或 S. stercoralis）極少報告。臨床意義不明確。
-
 etiology:
   categories:
     - name: 傳播途徑
@@ -30,7 +32,6 @@ etiology:
         - 雌蟲寄居小腸黏膜產卵
         - 幼蟲移行引起腸道損傷
         - 超級感染時大量幼蟲播散至肺、肝等器官
-
 clinicalSigns:
   early:
     - 水樣腹瀉（幼犬）
@@ -42,7 +43,6 @@ clinicalSigns:
     - 體重減輕與營養不良
     - 皮膚炎（幼蟲穿入處）
     - 超級感染：呼吸困難、敗血症
-
 diagnosis:
   primaryTests:
     - name: 糞便 Baermann 法或直接抹片
@@ -52,7 +52,6 @@ diagnosis:
   additional:
     - CBC（嗜酸球增多）
     - 生化（低蛋白血症、電解質失衡）
-
 treatment:
   principles:
     - 驅蟲藥物有效
@@ -66,41 +65,87 @@ treatment:
     - 營養支持
     - 環境清潔消毒（保持乾燥）
     - 隔離感染幼犬
-
 prognosis: 適當治療後預後良好。幼犬嚴重感染需積極支持治療。超級感染（免疫抑制者）預後較差。環境管理可有效預防。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary research communications
     title: Systematic review of the prevalence of Gastrointestinal helminths in ruminants in Mexico.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12619764/
     type: review
-    pmid: "41240193"
+    pmid: '41240193'
     relevance: primary
   - sourceOrg: International journal for parasitology. Drugs and drug resistance
-    title: "Recent advances in intestinal helminth parasites of horses in the Asia-Pacific region: Current trends, challenges and future directions."
+    title: >-
+      Recent advances in intestinal helminth parasites of horses in the Asia-Pacific region: Current trends, challenges
+      and future directions.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12593687/
     type: review
-    pmid: "41135277"
+    pmid: '41135277'
     relevance: primary
-  - sourceOrg: "Parasites &amp; vectors"
-    title: "Global prevalence and epidemiology of Strongyloides stercoralis in dogs: a systematic review and meta-analysis."
+  - sourceOrg: Parasites &amp; vectors
+    title: 'Global prevalence and epidemiology of Strongyloides stercoralis in dogs: a systematic review and meta-analysis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8750836/
     type: review
-    pmid: "35012614"
+    pmid: '35012614'
     relevance: primary
   - sourceOrg: Infectious diseases of poverty
-    title: "Helminths of veterinary and zoonotic importance in Nigerian ruminants: a 46-year meta-analysis (1970-2016) of their prevalence and distribution."
+    title: >-
+      Helminths of veterinary and zoonotic importance in Nigerian ruminants: a 46-year meta-analysis (1970-2016) of
+      their prevalence and distribution.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5972411/
     type: review
-    pmid: "29807540"
+    pmid: '29807540'
     relevance: supporting
   - sourceOrg: Infectious diseases of poverty
-    title: "Prevalence and distribution of soil-transmitted helminth infections in Nigerian children: a systematic review and meta-analysis."
+    title: >-
+      Prevalence and distribution of soil-transmitted helminth infections in Nigerian children: a systematic review and
+      meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6036687/
     type: review
-    pmid: "29983115"
+    pmid: '29983115'
     relevance: supporting
 pubmedQueries:
   - query: '"Strongyloides" AND (veterinary OR canine) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 糞線蟲感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便 Baermann 法或直接抹片
+          notes: 新鮮糞便可見 L1 幼蟲（非蟲卵）。Baermann 法敏感度較高。需與鉤蟲幼蟲鑑別
+        - name: 糞便浮游法
+          notes: 偶可見薄殼含幼蟲胚的蟲卵。但幼蟲更常見於糞便中
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC（嗜酸球增多）
+        - 生化（低蛋白血症、電解質失衡）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 驅蟲藥物有效
+        - 環境衛生管理重要
+        - 免疫抑制者需注意超級感染
+ddxSource: auto-generated

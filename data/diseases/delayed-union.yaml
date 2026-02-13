@@ -3,11 +3,11 @@ nameEn: Delayed Union
 nameZh: Delayed Union
 bodySystem: orthopedic
 description: 骨骼肌肉系統疾病,影響運動功能。需骨科檢查與影像學評估確診並制定治療計劃。
-
 aliases:
-  - { alias: Delayed Union, language: zh }
-  - { alias: Delayed Union, language: en }
-
+  - alias: Delayed Union
+    language: zh
+  - alias: Delayed Union
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 外傷
       examples:
         - 退化性變化
         - 先天性異常
-
 clinicalSigns:
   early:
     - 跛行
@@ -32,56 +30,75 @@ clinicalSigns:
   progressive:
     - 肌肉萎縮
     - 關節畸形
-
 diagnosis:
   primaryTests:
     - name: 骨科檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: X光(多方位)
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 非類固醇消炎藥(Carprofen 2-4 mg/kg PO q12-24h)
     - 疼痛控制
   surgical:
     - name: 根據病況可能需手術治療(骨折固定、韌帶重建、關節置換等)
-      notes: "依病況評估"
-
+      notes: 依病況評估
 prognosis:
-  general: "預後取決於損傷嚴重度、治療方式與飼主配合度。早期適當治療可改善功能恢復。"
-
+  general: 預後取決於損傷嚴重度、治療方式與飼主配合度。早期適當治療可改善功能恢復。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: Bioengineering (Basel, Switzerland)
-    title: "Delayed Union and Nonunion: Current Concepts, Prevention, and Correction: A Review."
+    title: 'Delayed Union and Nonunion: Current Concepts, Prevention, and Correction: A Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11201148/
     type: review
-    pmid: "38927761"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '38927761'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Healing of Comminuted Fractures of Long Bones in Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11815741/
     type: research
-    pmid: "39943184"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '39943184'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Fracture Healing in 37 Dogs and Cats with Implant Failure after Surgery (2013-2018).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10177280/
     type: research
-    pmid: "37174586"
+    pmid: '37174586'
   - sourceOrg: Bioengineering (Basel, Switzerland)
-    title: Bone Morphogenetic Protein 2 Promotes Bone Formation in Bone Defects in Which Bone Remodeling Is Suppressed by Long-Term and High-Dose Zoledronic Acid.
+    title: >-
+      Bone Morphogenetic Protein 2 Promotes Bone Formation in Bone Defects in Which Bone Remodeling Is Suppressed by
+      Long-Term and High-Dose Zoledronic Acid.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9854702/
     type: research
-    pmid: "36671658"
-  - sourceOrg: "Veterinary surgery : VS"
+    pmid: '36671658'
+  - sourceOrg: 'Veterinary surgery : VS'
     title: Delayed union, non-union and mal-union in 442 dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9804201/
     type: research
-    pmid: "36053918"
+    pmid: '36053918'
+associatedSymptoms:
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: Delayed Union 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cachexia-muscle-wasting 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 骨科檢查
+          notes: 需詳細評估
+        - name: X光(多方位)
+          notes: 協助確診
+ddxSource: auto-generated

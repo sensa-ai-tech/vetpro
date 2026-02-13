@@ -3,13 +3,15 @@ nameEn: Caudal Vena Cava Thrombosis
 nameZh: 後腔靜脈血栓
 bodySystem: vascular
 description: 後腔靜脈（caudal vena cava）內的血栓形成，可導致後肢水腫、腹水及腎功能障礙，常與腎上腺腫瘤侵犯、腫瘤相關高凝血狀態或腎臟疾病相關。
-
 aliases:
-  - { alias: 下腔靜脈血栓, language: zh }
-  - { alias: 後大靜脈栓塞, language: zh }
-  - { alias: Inferior vena cava thrombosis, language: en }
-  - { alias: IVC thrombosis, language: en }
-
+  - alias: 下腔靜脈血栓
+    language: zh
+  - alias: 後大靜脈栓塞
+    language: zh
+  - alias: Inferior vena cava thrombosis
+    language: en
+  - alias: IVC thrombosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓後腔靜脈血栓罕見。
-
 etiology:
   categories:
     - name: 腫瘤侵犯
@@ -33,7 +34,6 @@ etiology:
         - 腎上腺皮質功能亢進
         - 腫瘤相關凝血異常
         - 免疫介導性溶血性貧血
-
 clinicalSigns:
   early:
     - 後肢輕度水腫
@@ -45,19 +45,17 @@ clinicalSigns:
     - 腎功能異常
     - 蛋白尿
     - 血栓延伸至肝靜脈或腎靜脈
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波（Doppler）
-      notes: "後腔靜脈內血栓直接觀察。Doppler 評估血流。腎上腺/腎臟腫塊評估"
+      notes: 後腔靜脈內血栓直接觀察。Doppler 評估血流。腎上腺/腎臟腫塊評估
     - name: CT 血管攝影
-      notes: "血栓範圍精確評估。腫瘤侵犯程度。手術計畫"
+      notes: 血栓範圍精確評估。腫瘤侵犯程度。手術計畫
   differentialDiagnoses:
     - 右心衰竭
     - Budd-Chiari syndrome
     - 腹腔腫塊壓迫
     - 門靜脈血栓
-
 treatment:
   medical:
     - 抗凝血——Enoxaparin 0.8-1 mg/kg SC q12h
@@ -67,18 +65,44 @@ treatment:
   surgical:
     - 腫瘤合併靜脈內血栓——靜脈切開取栓（venotomy + thrombectomy）
     - 腎上腺腫瘤切除合併 CVC 修復（高風險手術）
-
 prognosis:
-  general: "預後取決於基礎疾病與血栓範圍。腫瘤侵犯 CVC 者手術風險高但為唯一根治機會。高凝血狀態相關者治療基礎疾病後可能改善。"
-
+  general: 預後取決於基礎疾病與血栓範圍。腫瘤侵犯 CVC 者手術風險高但為唯一根治機會。高凝血狀態相關者治療基礎疾病後可能改善。
 prevention:
   - 高凝血狀態監測與預防性抗血栓治療
   - 腎上腺腫瘤定期超音波追蹤
-
-
 guidelineRefs:
   - sourceOrg: Open veterinary journal
-    title: "Production diseases in farm animals: A comprehensive and illustrated clinical, laboratory, and pathological overview."
+    title: >-
+      Production diseases in farm animals: A comprehensive and illustrated clinical, laboratory, and pathological
+      overview.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11910303/
     type: review
-    pmid: "40092187"
+    pmid: '40092187'
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: common
+diagnosticAlgorithm:
+  title: 後腔靜脈血栓 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - abdominal-pain 相關症狀
+        - ascites 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波（Doppler）
+          notes: 後腔靜脈內血栓直接觀察。Doppler 評估血流。腎上腺/腎臟腫塊評估
+        - name: CT 血管攝影
+          notes: 血栓範圍精確評估。腫瘤侵犯程度。手術計畫
+ddxSource: auto-generated

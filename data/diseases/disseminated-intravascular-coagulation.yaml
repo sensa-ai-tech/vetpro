@@ -3,14 +3,17 @@ nameEn: Disseminated Intravascular Coagulation
 nameZh: 瀰漫性血管內凝血
 bodySystem: hematology
 description: 瀰漫性血管內凝血（DIC）是一種嚴重的續發性凝血異常，特徵為凝血系統全身性過度活化，導致微血管內廣泛血栓形成與凝血因子消耗，最終引起矛盾性的多器官出血與缺血性器官損傷。DIC 永遠是其他嚴重疾病的併發症，非獨立疾病。
-
 aliases:
-  - { alias: DIC, language: en }
-  - { alias: Consumptive Coagulopathy, language: en }
-  - { alias: Defibrination Syndrome, language: en }
-  - { alias: 消耗性凝血病, language: zh }
-  - { alias: 血管內瀰漫性凝血, language: zh }
-
+  - alias: DIC
+    language: en
+  - alias: Consumptive Coagulopathy
+    language: en
+  - alias: Defibrination Syndrome
+    language: en
+  - alias: 消耗性凝血病
+    language: zh
+  - alias: 血管內瀰漫性凝血
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 較犬少見但同樣可發生，常見於 FIP、急性肝衰竭、敗血症及嚴重胰臟炎
-
 etiology:
   categories:
     - name: 感染性病因
@@ -45,7 +47,6 @@ etiology:
         - 急性胰臟炎
         - 熱中暑
         - 蛇毒中毒
-
 clinicalSigns:
   early:
     - 可能無明顯臨床表現（代償期/亞臨床 DIC）
@@ -64,28 +65,26 @@ clinicalSigns:
     - 四肢末端發紺或壞死（微血管血栓）
     - 休克與低血壓
     - 急性呼吸窘迫症候群（ARDS）
-
 diagnosis:
   primaryTests:
     - name: 凝血功能檢查
-      notes: "PT 與 aPTT 延長（通常超過正常值 25% 以上）；纖維蛋白原初期可升高（急性期反應蛋白），後期因消耗而降低"
+      notes: PT 與 aPTT 延長（通常超過正常值 25% 以上）；纖維蛋白原初期可升高（急性期反應蛋白），後期因消耗而降低
     - name: 血小板計數
-      notes: "血小板減少為 DIC 最敏感的指標之一；通常 < 100,000/μL，進行性下降更具診斷意義"
+      notes: 血小板減少為 DIC 最敏感的指標之一；通常 < 100,000/μL，進行性下降更具診斷意義
     - name: D-dimer 與纖維蛋白降解產物（FDP）
-      notes: "D-dimer 升高反映纖維蛋白溶解活化，為 DIC 敏感度最高的指標；FDP 升高同樣支持診斷"
+      notes: D-dimer 升高反映纖維蛋白溶解活化，為 DIC 敏感度最高的指標；FDP 升高同樣支持診斷
     - name: 抗凝血酶（AT）活性
-      notes: "AT 活性降低（< 80%）反映凝血因子消耗，是 DIC 的重要診斷與預後指標"
+      notes: AT 活性降低（< 80%）反映凝血因子消耗，是 DIC 的重要診斷與預後指標
   imaging:
     - name: 胸腹腔 X 光
-      notes: "評估原發疾病（腫塊、胸腔積液）及併發症（肺水腫、腹腔出血）"
+      notes: 評估原發疾病（腫塊、胸腔積液）及併發症（肺水腫、腹腔出血）
     - name: 腹部超音波
-      notes: "偵測原發病因（脾臟腫塊/血管肉瘤、肝臟病變）及腹腔積液"
+      notes: 偵測原發病因（脾臟腫塊/血管肉瘤、肝臟病變）及腹腔積液
   additional:
     - 血液抹片鏡檢（可見紅血球碎片/schistocytes，支持微血管內凝血）
     - 血栓彈力圖（TEG/ROTEM，動態評估凝血功能）
     - 全血計數與生化（評估多器官功能）
     - 血氣分析（評估酸鹼平衡）
-
 treatment:
   principles:
     - 治療原發疾病為最重要且最優先的步驟
@@ -102,35 +101,35 @@ treatment:
     - Tranexamic acid 15-25 mg/kg IV q8h（僅在出血為主要表現時謹慎使用）
     - 血小板輸注（若嚴重血小板減少合併活動性出血）
     - 持續監測凝血功能（每 6-12 小時重複檢測 PT/aPTT/血小板/D-dimer）
-
-prognosis: DIC 的預後取決於原發疾病的嚴重度與可治療性，整體死亡率為 50-78%。若原發病因可被有效控制（如手術切除、感染清除），預後較好。合併多器官功能衰竭的患畜預後極差。早期診斷與積極治療可改善存活率。血管肉瘤與嚴重敗血症相關的 DIC 預後最差。
-
+prognosis: >-
+  DIC 的預後取決於原發疾病的嚴重度與可治療性，整體死亡率為 50-78%。若原發病因可被有效控制（如手術切除、感染清除），預後較好。合併多器官功能衰竭的患畜預後極差。早期診斷與積極治療可改善存活率。血管肉瘤與嚴重敗血症相關的 DIC
+  預後最差。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
     title: Diagnosis and treatment of disseminated intravascular coagulation in dogs and cats
     url: https://pubmed.ncbi.nlm.nih.gov/25845995/
     type: review
-    pmid: "25845995"
+    pmid: '25845995'
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: A retrospective study of DIC in 68 dogs
     url: https://pubmed.ncbi.nlm.nih.gov/10225601/
     type: research
-    pmid: "10225601"
+    pmid: '10225601'
   - sourceOrg: Veterinary Clinical Pathology
     title: Thromboelastography in veterinary medicine
     url: https://pubmed.ncbi.nlm.nih.gov/24390120/
     type: review
-    pmid: "24390120"
+    pmid: '24390120'
   - sourceOrg: Thrombosis and haemostasis
-    title: "Handheld Point-of-Care Devices for Snakebite Coagulopathy: A Scoping Review."
+    title: 'Handheld Point-of-Care Devices for Snakebite Coagulopathy: A Scoping Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12040437/
     type: review
-    pmid: "39214143"
+    pmid: '39214143'
   - sourceOrg: Temperature (Austin, Tex.)
     title: Pathophysiology of heatstroke in dogs - revisited.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5800390/
     type: review
-    pmid: "29435477"
+    pmid: '29435477'
     relevance: primary
 pubmedQueries:
   - query: '"disseminated intravascular coagulation" AND (dog OR cat) AND ("diagnosis" OR "treatment" OR "prognosis")'
@@ -139,6 +138,71 @@ pubmedQueries:
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "SYNDROME"
+  chapter: DIG
+  sectionTitle: SYNDROME
   pdfPage: 337
+diagnosticAlgorithm:
+  title: 瀰漫性血管內凝血 診斷流程
+  steps:
+    - step: 1
+      action: 臨床警覺
+      details: 嚴重疾病患者出現異常出血
+      findings:
+        - 原有嚴重疾病
+        - 自發性出血
+        - 穿刺部位持續滲血
+    - step: 2
+      action: 凝血篩檢
+      details: CBC+凝血功能+D-dimer
+      findings:
+        - 血小板下降
+        - PT/aPTT延長
+        - D-dimer升高
+    - step: 3
+      action: 嚴重度評估
+      details: 評估器官損傷和出血程度
+      findings:
+        - 纖維蛋白原水平
+        - 抗凝血酶III活性
+        - 碎裂紅血球（微血管病）
+    - step: 4
+      action: 原發病因調查
+      details: 找出觸發DIC的原發疾病
+      findings:
+        - 敗血症來源
+        - 腫瘤篩檢
+        - 組織壞死評估
+clinicalPearls:
+  - DIC永遠是繼發性的，必須找出並治療原發疾病
+  - 血小板計數是最靈敏的DIC早期指標
+  - 出血不一定代表DIC已進入消耗期，早期DIC以高凝狀態為主
+  - 新鮮冷凍血漿是補充凝血因子的首選
+monitoringItems:
+  - 連續血小板計數（每4-8小時）
+  - 凝血功能追蹤
+  - 出血量和部位
+  - 原發疾病控制情況
+  - 器官功能監測
+associatedSymptoms:
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: petechiae-ecchymoses
+    frequency: uncommon
+  - symptomId: petechiae-ecchymoses
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+associatedLabFindings:
+  - labId: thrombocytopenia
+    frequency: uncommon
+  - labId: pt-prolonged
+    frequency: uncommon
+  - labId: aptt-prolonged
+    frequency: uncommon
+  - labId: fdp-ddimer-elevated
+    frequency: common
+ddxSource: book

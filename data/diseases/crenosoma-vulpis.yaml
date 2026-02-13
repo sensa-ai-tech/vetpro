@@ -3,23 +3,21 @@ nameEn: Crenosoma Vulpis
 nameZh: 狐狸肺蟲感染
 bodySystem: respiratory
 description: 線蟲寄生於犬支氣管及肺實質,引起慢性咳嗽及呼吸道症狀。透過攝食中間宿主 (蝸牛、蛞蝓) 感染。
-
 aliases:
-  - { alias: 狐狸肺線蟲, language: zh }
-  - { alias: Fox Lungworm, language: en }
-
+  - alias: 狐狸肺線蟲
+    language: zh
+  - alias: Fox Lungworm
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 歐洲較常見,幼犬易感
-
 etiology:
   categories:
     - name: 寄生蟲感染
       examples:
         - Crenosoma vulpis (線蟲)
-
 clinicalSigns:
   early:
     - 慢性咳嗽
@@ -29,59 +27,89 @@ clinicalSigns:
     - 呼吸急促
     - 運動不耐
     - 鼻分泌物
-
 diagnosis:
   primaryTests:
     - name: 糞便 Baermann 檢查
-      notes: "檢測第一期幼蟲 (尾部有棘)"
+      notes: 檢測第一期幼蟲 (尾部有棘)
     - name: 胸部 X 光
-      notes: "支氣管浸潤、間質性病變"
+      notes: 支氣管浸潤、間質性病變
     - name: 支氣管肺泡灌洗
-      notes: "幼蟲、嗜酸性球增多"
+      notes: 幼蟲、嗜酸性球增多
   differentialDiagnoses:
     - 犬傳染性氣管支氣管炎
     - 慢性支氣管炎
     - 其他肺蟲感染
-
 treatment:
   medical:
     - Fenbendazole 50 mg/kg PO q24h x 7-14 天
     - Ivermectin 0.2 mg/kg PO 每 2 週
     - Moxidectin/imidacloprid (Advocate®) 外用 每月
     - 支氣管擴張劑 (若有症狀)
-
 prognosis:
-  general: "預後良好;經適當驅蟲治療可完全康復"
-
+  general: 預後良好;經適當驅蟲治療可完全康復
 prevention:
   - 定期驅蟲 (含肺蟲預防)
   - 避免接觸中間宿主
   - 戶外犬隻定期糞檢
-
-
 guidelineRefs:
-  - sourceOrg: "Parasites &amp; vectors"
-    title: "Occurrence of Eucoleus aerophilus in wild and domestic animals: a systematic review and meta-analysis."
+  - sourceOrg: Parasites &amp; vectors
+    title: 'Occurrence of Eucoleus aerophilus in wild and domestic animals: a systematic review and meta-analysis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10360280/
     type: review
-    pmid: "37475031"
+    pmid: '37475031'
   - sourceOrg: Acta veterinaria Scandinavica
     title: Low intestinal parasite prevalence in Finnish pet dogs and cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11421109/
     type: research
-    pmid: "39313799"
-  - sourceOrg: "Parasites &amp; vectors"
-    title: Range of metastrongylids (superfamily Metastrongyloidea) of public health and veterinary concern present in livers of the endemic lizard Gallotia galloti of Tenerife, Canary Islands, Spain.
+    pmid: '39313799'
+  - sourceOrg: Parasites &amp; vectors
+    title: >-
+      Range of metastrongylids (superfamily Metastrongyloidea) of public health and veterinary concern present in livers
+      of the endemic lizard Gallotia galloti of Tenerife, Canary Islands, Spain.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9997015/
     type: research
-    pmid: "36890511"
-  - sourceOrg: "Parasites &amp; vectors"
-    title: "Prevalence of major digestive and respiratory helminths in dogs and cats in France: results of a multicenter study."
+    pmid: '36890511'
+  - sourceOrg: Parasites &amp; vectors
+    title: >-
+      Prevalence of major digestive and respiratory helminths in dogs and cats in France: results of a multicenter
+      study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9446561/
     type: research
-    pmid: "36068597"
-  - sourceOrg: "Parasites &amp; vectors"
-    title: Prevalence survey on lungworm (Angiostrongylus vasorum, Crenosoma vulpis, Eucoleus aerophilus) infections of wild red foxes (Vulpes vulpes) in central Germany.
+    pmid: '36068597'
+  - sourceOrg: Parasites &amp; vectors
+    title: >-
+      Prevalence survey on lungworm (Angiostrongylus vasorum, Crenosoma vulpis, Eucoleus aerophilus) infections of wild
+      red foxes (Vulpes vulpes) in central Germany.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5801722/
     type: research
-    pmid: "29409523"
+    pmid: '29409523'
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: sneezing
+    frequency: common
+  - symptomId: coughing
+    frequency: common
+diagnosticAlgorithm:
+  title: 狐狸肺蟲感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - sneezing 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便 Baermann 檢查
+          notes: 檢測第一期幼蟲 (尾部有棘)
+        - name: 胸部 X 光
+          notes: 支氣管浸潤、間質性病變
+        - name: 支氣管肺泡灌洗
+          notes: 幼蟲、嗜酸性球增多
+ddxSource: auto-generated

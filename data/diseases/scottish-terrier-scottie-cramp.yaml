@@ -3,18 +3,18 @@ nameEn: Scottish Terrier Scottie Cramp
 nameZh: 蘇格蘭㹴痙攣症
 bodySystem: neurology
 description: 蘇格蘭㹴特有的遺傳性運動障礙,由血清素代謝異常引起。通常在幼犬期發病,在興奮或運動時出現肌肉過度收縮、步態異常,但不影響意識。
-
 aliases:
-  - { alias: Scottie Cramp, language: en }
-  - { alias: 蘇格蘭㹴肌肉痙攣, language: zh }
-  - { alias: Hyperkinetic Episode, language: en }
-
+  - alias: Scottie Cramp
+    language: en
+  - alias: 蘇格蘭㹴肌肉痙攣
+    language: zh
+  - alias: Hyperkinetic Episode
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 蘇格蘭㹴品種特有疾病,體染色體隱性遺傳
-
 etiology:
   categories:
     - name: 神經傳導物質異常
@@ -22,7 +22,6 @@ etiology:
         - 血清素(5-HT)代謝缺陷
         - 神經肌肉接合處傳導異常
         - 體染色體隱性遺傳
-
 clinicalSigns:
   early:
     - 運動或興奮時後肢僵硬
@@ -33,31 +32,68 @@ clinicalSigns:
     - 無法行走或倒地
     - 發作後完全恢復正常
     - 發作頻率可能增加
-
 diagnosis:
   primaryTests:
     - name: 臨床症狀評估
-      notes: "運動誘發試驗,觀察特徵性步態異常"
+      notes: 運動誘發試驗,觀察特徵性步態異常
     - name: 神經學檢查
-      notes: "排除其他神經肌肉疾病"
+      notes: 排除其他神經肌肉疾病
     - name: 基因檢測
-      notes: "確認致病基因突變"
+      notes: 確認致病基因突變
   differentialDiagnoses:
     - 癲癇
     - 心因性跛行
     - 重症肌無力
-
 treatment:
   medical:
     - Diazepam 0.5-2 mg/kg PO q8-12h(發作控制)
     - Vitamin E 400-800 IU PO q24h(抗氧化)
     - Acetazolamide 5-10 mg/kg PO q8-12h(部分病例有效)
     - 避免過度興奮及劇烈運動
-
 prognosis:
-  general: "不影響壽命,多數病例可透過生活方式調整及藥物控制獲得良好生活品質。症狀不會進行性惡化,部分犬隻隨年齡增長發作頻率減少。"
-
+  general: 不影響壽命,多數病例可透過生活方式調整及藥物控制獲得良好生活品質。症狀不會進行性惡化,部分犬隻隨年齡增長發作頻率減少。
 prevention:
   - 受影響犬隻不應繁殖
   - 基因檢測篩除帶因者
   - 繁殖前遺傳諮詢
+diagnosticAlgorithm:
+  title: 蘇格蘭㹴痙攣症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 確認品種和發作特徵
+      findings:
+        - 蘇格蘭㹴品種
+        - 運動或興奮時誘發
+        - 四肢僵硬和過度屈曲
+        - 休息後症狀緩解
+    - step: 2
+      action: 神經學檢查
+      details: 靜息和運動時的神經學評估
+      findings:
+        - 靜息時神經學檢查正常
+        - 運動誘發步態異常
+        - 脊柱過度彎曲（弓背）
+        - 無意識喪失
+    - step: 3
+      action: 排除性診斷
+      details: 排除其他運動障礙和代謝性疾病
+      findings:
+        - 血液學和生化正常
+        - 肌電圖正常
+        - CK正常
+        - 基因檢測可能可用
+clinicalPearls:
+  - Scottie Cramp 最重要的鑑別是癲癇 — 此症發作時意識完全清醒且無自律神經症狀
+  - 飼主常將發作描述為「看起來像機器人在走路」或「後肢好像黏在一起」
+  - 繁殖犬應避免帶有此基因的配對
+  - 運動前給予小劑量地西泮可預防部分嚴重發作
+monitoringItems:
+  - 記錄發作頻率、持續時間及誘發因素
+  - 評估生活品質是否受影響
+  - 若有藥物治療，監測藥物副作用
+  - 遺傳諮詢（繁殖管理）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+ddxSource: book

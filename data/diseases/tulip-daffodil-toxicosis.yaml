@@ -3,12 +3,13 @@ nameEn: Tulip Daffodil Toxicosis
 nameZh: 鬱金香水仙花中毒
 bodySystem: toxicology
 description: 攝入鬱金香或水仙花引發的中毒,球茎含高濃度生物鹼和配糖體。水仙花含 lycorine,鬱金香含 tulipalin A/B,均可致嚴重胃腸道和神經症狀。
-
 aliases:
-  - { alias: 百合科球根中毒, language: zh }
-  - { alias: Narcissus Poisoning, language: en }
-  - { alias: 水仙鱗莖中毒, language: zh }
-
+  - alias: 百合科球根中毒
+    language: zh
+  - alias: Narcissus Poisoning
+    language: en
+  - alias: 水仙鱗莖中毒
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少接觸戶外球莖植物,但室內插花水仙亦有風險
-
 etiology:
   categories:
     - name: 植物毒素
@@ -26,7 +26,6 @@ etiology:
         - Lycorine 石蒜鹼(水仙)
         - Tulipalin A/B 鬱金香甙(鬱金香)
         - 多種生物鹼
-
 clinicalSigns:
   early:
     - 過度流涎
@@ -39,21 +38,19 @@ clinicalSigns:
     - 呼吸困難
     - 震顫或癲癇發作
     - 中樞神經抑制
-
 diagnosis:
   primaryTests:
     - name: 病史詢問
-      notes: "確認接觸鬱金香或水仙球莖,春季庭院活動史"
+      notes: 確認接觸鬱金香或水仙球莖,春季庭院活動史
     - name: 全血球計數
-      notes: "可見白血球增多,血球容積上升(脫水)"
+      notes: 可見白血球增多,血球容積上升(脫水)
     - name: 血液生化
-      notes: "電解質失衡,腎前性氮血症"
+      notes: 電解質失衡,腎前性氮血症
   differentialDiagnoses:
     - 其他植物中毒(百合、洋蔥)
     - 急性胰臟炎
     - 胃腸道異物
     - 出血性胃腸炎
-
 treatment:
   medical:
     - 去污染:催吐(攝入後 1-2 小時內且動物清醒)
@@ -64,12 +61,50 @@ treatment:
     - Pantoprazole 1 mg/kg IV 每24小時保護胃黏膜
     - Diazepam 0.5-1 mg/kg IV 控制癲癇發作
     - 監測心電圖和血壓
-
 prognosis:
-  general: "預後取決於攝入量和治療時機。少量接觸預後良好。大量攝入球莖(特別是水仙)可能致命。早期治療和積極支持療法可顯著改善預後。"
-
+  general: 預後取決於攝入量和治療時機。少量接觸預後良好。大量攝入球莖(特別是水仙)可能致命。早期治療和積極支持療法可顯著改善預後。
 prevention:
   - 種植球莖時防止寵物接觸新翻土壤
   - 儲存球莖於寵物無法進入的區域
   - 室內插花避免使用水仙,或放置高處
   - 庭院活動監督,防止挖掘行為
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: trembling
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 鬱金香水仙花中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - seizures 相關症狀
+        - ptyalism 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史詢問
+          notes: 確認接觸鬱金香或水仙球莖,春季庭院活動史
+        - name: 全血球計數
+          notes: 可見白血球增多,血球容積上升(脫水)
+        - name: 血液生化
+          notes: 電解質失衡,腎前性氮血症
+ddxSource: auto-generated

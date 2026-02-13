@@ -3,11 +3,11 @@ nameEn: Eucalyptus Oil Toxicosis
 nameZh: 尤加利精油中毒
 bodySystem: toxicology
 description: 尤加利油含桉油醇,可引起中樞神經抑制及胃腸道刺激。貓因代謝能力差而特別敏感。
-
 aliases:
-  - { alias: 桉樹油中毒, language: zh }
-  - { alias: Eucalyptol Poisoning, language: en }
-
+  - alias: 桉樹油中毒
+    language: zh
+  - alias: Eucalyptol Poisoning
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 極度敏感,吸入或接觸即可能中毒
-
 etiology:
   categories:
     - name: 吸入暴露
@@ -27,7 +26,6 @@ etiology:
       examples:
         - 舔舐塗抹部位
         - 誤食尤加利油產品
-
 clinicalSigns:
   early:
     - 流涎、嘔吐
@@ -36,23 +34,51 @@ clinicalSigns:
     - 呼吸抑制
     - 肌肉震顫、癲癇
     - 昏迷
-
 diagnosis:
   primaryTests:
     - name: 暴露史及臨床症狀
-      notes: "尤加利油特殊氣味+神經症狀"
+      notes: 尤加利油特殊氣味+神經症狀
   differentialDiagnoses:
     - 其他精油中毒
-
 treatment:
   medical:
     - 皮膚除污,避免進一步吸收
     - 支持性療法: 靜脈輸液、氧氣、抗癲癇藥
     - 監測呼吸及神經狀態
-
 prognosis:
-  general: "輕度暴露預後良好,多數24-48小時內恢復。"
-
+  general: 輕度暴露預後良好,多數24-48小時內恢復。
 prevention:
   - 避免在貓居住環境使用尤加利油
   - 確保通風良好
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+diagnosticAlgorithm:
+  title: 尤加利精油中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - trembling 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 暴露史及臨床症狀
+          notes: 尤加利油特殊氣味+神經症狀
+ddxSource: auto-generated

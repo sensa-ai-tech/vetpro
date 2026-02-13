@@ -3,11 +3,11 @@ nameEn: Granulosa Cell Tumor
 nameZh: 顆粒細胞瘤
 bodySystem: oncology
 description: 卵巢性索間質腫瘤，源自顆粒細胞。可分泌雌激素導致持續發情、子宮內膜增生及骨髓抑制。多為良性，切除後預後佳。
-
 aliases:
-  - { alias: 卵巢顆粒細胞瘤, language: zh }
-  - { alias: Ovarian Granulosa Cell Tumor, language: en }
-
+  - alias: 卵巢顆粒細胞瘤
+    language: zh
+  - alias: Ovarian Granulosa Cell Tumor
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓極罕見
-
 etiology:
   categories:
     - name: 細胞起源
@@ -25,7 +24,6 @@ etiology:
         - 顆粒細胞（卵泡壁細胞）
         - 自主性增生
         - 雌激素自主分泌
-
 clinicalSigns:
   early:
     - 持續或延長發情
@@ -37,25 +35,23 @@ clinicalSigns:
     - 乳腺發育
     - 骨髓抑制（雌激素過多）：貧血、血小板減少
     - 子宮內膜增生、子宮蓄膿風險
-
 diagnosis:
   primaryTests:
     - name: 血清雌激素檢測
-      notes: "顯著升高（>20 pg/mL）"
+      notes: 顯著升高（>20 pg/mL）
     - name: 腹部超音波
-      notes: "單側卵巢腫塊，實質或囊性"
+      notes: 單側卵巢腫塊，實質或囊性
     - name: 全血球計數
-      notes: "可能貧血、血小板減少（雌激素毒性）"
+      notes: 可能貧血、血小板減少（雌激素毒性）
     - name: 骨髓檢查
-      notes: "若嚴重骨髓抑制"
+      notes: 若嚴重骨髓抑制
     - name: 組織病理學
-      notes: "顆粒細胞增生、Call-Exner小體"
+      notes: 顆粒細胞增生、Call-Exner小體
   differentialDiagnoses:
     - 卵泡膜細胞瘤
     - 卵巢囊腫
     - 子宮蓄膿
     - 庫欣氏症（脫毛）
-
 treatment:
   medical:
     - 卵巢子宮切除術（治療首選）
@@ -63,38 +59,60 @@ treatment:
     - 骨髓抑制：術後支持療法（貧血、血小板輸血）
     - 化療：惡性或轉移（罕見）
     - 卡鉑（carboplatin）300 mg/m² IV q21d x 4-6次
-
 prognosis:
-  general: "良性腫瘤切除後預後極佳，雌激素及骨髓功能於數週內恢復。惡性轉移罕見（<5%）。"
-
+  general: 良性腫瘤切除後預後極佳，雌激素及骨髓功能於數週內恢復。惡性轉移罕見（<5%）。
 prevention:
   - 早期絕育
   - 定期生殖系統檢查（高齡未絕育母犬）
-
-
 guidelineRefs:
   - sourceOrg: Oncology letters
     title: New insights into testicular granulosa cell tumors.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7576989/
     type: review
-    pmid: "33101487"
+    pmid: '33101487'
   - sourceOrg: Biology of reproduction
-    title: "SMAD3 Activation: A Converging Point of Dysregulated TGF-Beta Superfamily Signaling and Genetic Aberrations in Granulosa Cell Tumor Development?"
+    title: >-
+      SMAD3 Activation: A Converging Point of Dysregulated TGF-Beta Superfamily Signaling and Genetic Aberrations in
+      Granulosa Cell Tumor Development?
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5178148/
     type: review
-    pmid: "27683263"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: Computed Tomographic and Ultrasonographic Features in Three Dogs with Infected Uterus Masculinus and Concurrent Genital Neoplasia.
+    pmid: '27683263'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Computed Tomographic and Ultrasonographic Features in Three Dogs with Infected Uterus Masculinus and Concurrent
+      Genital Neoplasia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12649571/
     type: case-report
-    pmid: "41302065"
+    pmid: '41302065'
   - sourceOrg: BMC veterinary research
     title: A case of giant panda ovarian cancer diagnosis and histopathology.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6186091/
     type: case-report
-    pmid: "30314476"
+    pmid: '30314476'
   - sourceOrg: Veterinary sciences
-    title: "Behavioral Disorders in Mares with Ovarian Disorders, Outcome after Laparoscopic Ovariectomy: A Case Series."
+    title: 'Behavioral Disorders in Mares with Ovarian Disorders, Outcome after Laparoscopic Ovariectomy: A Case Series.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10458155/
     type: research
-    pmid: "37624270"
+    pmid: '37624270'
+associatedSymptoms:
+  - symptomId: alopecia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 顆粒細胞瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清雌激素檢測
+          notes: 顯著升高（>20 pg/mL）
+        - name: 腹部超音波
+          notes: 單側卵巢腫塊，實質或囊性
+        - name: 全血球計數
+          notes: 可能貧血、血小板減少（雌激素毒性）
+ddxSource: auto-generated

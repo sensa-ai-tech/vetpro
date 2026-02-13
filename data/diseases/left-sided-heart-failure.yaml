@@ -3,12 +3,13 @@ nameEn: Left Sided Heart Failure
 nameZh: 左側心臟衰竭
 bodySystem: cardiac
 description: 左心功能衰竭導致肺靜脈鬱血，引起肺水腫及呼吸困難。常見於僧帽瓣閉鎖不全、擴張型心肌病變及主動脈瓣疾病。
-
 aliases:
-  - { alias: 左心衰竭, language: zh }
-  - { alias: Left Heart Failure, language: en }
-  - { alias: LHF, language: en }
-
+  - alias: 左心衰竭
+    language: zh
+  - alias: Left Heart Failure
+    language: en
+  - alias: LHF
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 肥厚型心肌病變為主要原因
-
 etiology:
   categories:
     - name: 瓣膜疾病
@@ -32,7 +32,6 @@ etiology:
     - name: 先天性異常
       examples:
         - 主動脈瓣下狹窄
-
 clinicalSigns:
   early:
     - 運動不耐
@@ -44,21 +43,19 @@ clinicalSigns:
     - 發紺
     - 端坐呼吸
     - 咳血
-
 diagnosis:
   primaryTests:
     - name: 胸部 X 光
-      notes: "評估左心房/左心室擴張、肺靜脈擴張、肺水腫"
+      notes: 評估左心房/左心室擴張、肺靜脈擴張、肺水腫
     - name: 心臟超音波
-      notes: "評估左心功能、瓣膜功能、心房大小"
+      notes: 評估左心功能、瓣膜功能、心房大小
     - name: NT-proBNP
-      notes: "心臟生物標記，區分心因性與非心因性呼吸困難"
+      notes: 心臟生物標記，區分心因性與非心因性呼吸困難
   differentialDiagnoses:
     - 肺炎
     - 氣喘
     - 呼吸道阻塞
     - 胸腔積液
-
 treatment:
   medical:
     - Furosemide 2-8 mg/kg IV/IM q1-8h (急性期高劑量)
@@ -66,26 +63,58 @@ treatment:
     - ACE 抑制劑 (enalapril 0.5 mg/kg PO q12-24h)
     - 氧氣治療
     - 限制活動及壓力
-
 prognosis:
-  general: "取決於原發病因及嚴重度；急性肺水腫需立即治療，長期需藥物控制，晚期預後不良"
-
+  general: 取決於原發病因及嚴重度；急性肺水腫需立即治療，長期需藥物控制，晚期預後不良
 prevention:
   - 高風險品種定期心臟超音波篩檢
   - 早期診斷及藥物介入
   - 控制體重及避免劇烈運動
-
-
 guidelineRefs:
   - sourceOrg: Biomolecules
-    title: "Right Ventricle Remodelling in Left-Sided Heart Failure in Rats: The Role of Calcium Signalling."
+    title: 'Right Ventricle Remodelling in Left-Sided Heart Failure in Rats: The Role of Calcium Signalling.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9687464/
     type: research
-    pmid: "36421728"
+    pmid: '36421728'
     relevance: supporting
   - sourceOrg: Molecular medicine reports
-    title: Protein kinase C isozyme expression in right ventricular hypertrophy induced by pulmonary hypertension in chronically hypoxic rats.
+    title: >-
+      Protein kinase C isozyme expression in right ventricular hypertrophy induced by pulmonary hypertension in
+      chronically hypoxic rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5647097/
     type: research
-    pmid: "28765942"
+    pmid: '28765942'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: haemoptysis
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 左側心臟衰竭 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - coughing 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸部 X 光
+          notes: 評估左心房/左心室擴張、肺靜脈擴張、肺水腫
+        - name: 心臟超音波
+          notes: 評估左心功能、瓣膜功能、心房大小
+        - name: NT-proBNP
+          notes: 心臟生物標記，區分心因性與非心因性呼吸困難
+ddxSource: auto-generated

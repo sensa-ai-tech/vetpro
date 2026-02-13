@@ -3,12 +3,13 @@ nameEn: Toxic Epidermal Necrolysis
 nameZh: 中毒性表皮壞死
 bodySystem: toxicology
 description: 最嚴重的藥物不良反應之一，表皮大面積壞死脫落（累及 > 30% 體表面積）。為多形性紅斑的最嚴重型態。因細胞毒性 T 細胞與 Fas-FasL 途徑大量攻擊角質細胞。死亡率高。
-
 aliases:
-  - { alias: "TEN", language: en }
-  - { alias: "Lyell Syndrome", language: en }
-  - { alias: "毒性表皮壞死症", language: zh }
-
+  - alias: TEN
+    language: en
+  - alias: Lyell Syndrome
+    language: en
+  - alias: 毒性表皮壞死症
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 藥物反應
@@ -25,7 +25,6 @@ etiology:
         - Cephalosporin
         - NSAIDs
         - 抗癲癇藥
-
 clinicalSigns:
   early:
     - 突然發燒
@@ -36,14 +35,12 @@ clinicalSigns:
     - Nikolsky sign 陽性（輕觸皮膚即脫落）
     - 黏膜潰瘍
     - 敗血症風險
-
 diagnosis:
   primaryTests:
     - name: 皮膚活檢
       notes: 全層表皮壞死。緊急活檢確診
     - name: 藥物史
       notes: 發病前 1-4 週用藥紀錄
-
 treatment:
   principles:
     - 立即停用所有可疑藥物
@@ -55,41 +52,89 @@ treatment:
     - 傷口照護（如燒傷病患管理）
     - 廣效抗生素預防敗血症
     - 營養支持
-
 prognosis: 預後極差。死亡率 30-50% 以上。早期診斷與停藥可能改善預後。存活者恢復期長。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline immune-mediated skin disorders: Part 1."
+    title: 'Feline immune-mediated skin disorders: Part 1.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12033501/
     type: review
-    pmid: "40219649"
+    pmid: '40219649'
     relevance: primary
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline immune-mediated skin disorders: Part 2."
+    title: 'Feline immune-mediated skin disorders: Part 2.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12033568/
     type: review
-    pmid: "40219647"
+    pmid: '40219647'
     relevance: primary
   - sourceOrg: Heliyon
     title: Clues of HLAs, metabolic SNPs, and epigenetic factors in T cell-mediated drug hypersensitivity reactions.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11296025/
     type: review
-    pmid: "39100437"
+    pmid: '39100437'
     relevance: primary
   - sourceOrg: Clinical pharmacology and therapeutics
     title: Research Directions in Genetic Predispositions to Stevens-Johnson Syndrome / Toxic Epidermal Necrolysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5805563/
     type: review
-    pmid: "29105735"
+    pmid: '29105735'
     relevance: supporting
-  - sourceOrg: "Journal of the European Academy of Dermatology and Venereology : JEADV"
-    title: "Toxic epidermal necrolysis and co-existent SARS-CoV-2 (COVID-19) treated with intravenous immunoglobulin: 'Killing 2 birds with one stone'."
+  - sourceOrg: 'Journal of the European Academy of Dermatology and Venereology : JEADV'
+    title: >-
+      Toxic epidermal necrolysis and co-existent SARS-CoV-2 (COVID-19) treated with intravenous immunoglobulin: 'Killing
+      2 birds with one stone'.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7461446/
     type: case-report
-    pmid: "32805059"
+    pmid: '32805059'
     relevance: supporting
 pubmedQueries:
   - query: '"toxic epidermal necrolysis" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 中毒性表皮壞死溶解症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 緊急評估皮膚脫落範圍和全身狀態
+      findings:
+        - 大面積皮膚紅斑和水疱
+        - 表皮剝脫（Nikolsky徵陽性）
+        - 黏膜受累（口腔、結膜等）
+        - 發熱和全身症狀
+    - step: 2
+      action: 藥物史回顧
+      details: 詳細回顧近期所有用藥
+      findings:
+        - 確認可疑致敏藥物
+        - 發病前1-3週內新使用的藥物
+        - 常見誘因：磺胺類、NSAID、頭孢菌素等
+        - 評估藥物時間關係
+    - step: 3
+      action: 組織病理學確診
+      details: 進行皮膚活檢確認全層表皮壞死
+      findings:
+        - 全層表皮壞死
+        - 表皮下水疱形成
+        - 稀疏淋巴球浸潤
+        - 與燙傷和天疱瘡鑑別
+    - step: 4
+      action: 支持治療與監測
+      details: 停用可疑藥物，監測敗血症等併發症
+      findings:
+        - 受累體表面積評估
+        - 感染風險監測
+        - 電解質和蛋白質流失
+        - 血液培養排除敗血症
+clinicalPearls:
+  - TEN是皮膚科急症，需如同嚴重燒傷患者般處理
+  - 最常見的觸發藥物為磺胺類（特別是trimethoprim-sulfonamide）、頭孢菌素、NSAIDs
+  - hIVIG為目前最有效的特異性治療，可阻斷Fas-FasL介導的角質細胞凋亡
+  - 類固醇的使用存在爭議，部分學者認為可能增加感染風險
+monitoringItems:
+  - 持續監測生命徵象和水合狀態
+  - 每日評估表皮剝離面積百分比
+  - 監測尿量以評估腎臟灌流
+  - 細菌培養監測繼發感染
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+ddxSource: book

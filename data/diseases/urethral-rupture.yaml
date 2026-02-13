@@ -3,11 +3,11 @@ nameEn: Urethral Rupture
 nameZh: 尿道破裂
 bodySystem: renal
 description: 尿道壁完全或部分撕裂,導致尿液外滲至周圍組織或皮下,常見於骨盆骨折、導尿創傷或嚴重尿道阻塞,為泌尿系統急症。
-
 aliases:
-  - { alias: 尿道斷裂, language: zh }
-  - { alias: Urethral tear, language: en }
-
+  - alias: 尿道斷裂
+    language: zh
+  - alias: Urethral tear
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 雄貓尿道阻塞後暴力排尿或不當導尿可致破裂,常發生於陰莖尿道
-
 etiology:
   categories:
     - name: 創傷性
@@ -35,7 +34,6 @@ etiology:
         - 慢性尿道阻塞致局部壁層壞死
         - 尿道腫瘤侵蝕穿孔
         - 嚴重尿道炎或膿瘍破潰
-
 clinicalSigns:
   early:
     - 無法排尿或僅有少量血尿滴出
@@ -46,21 +44,19 @@ clinicalSigns:
     - 皮下尿液滲出(觸診有捻髮音)
     - 氮血症症狀(嘔吐、沉鬱、厭食)
     - 休克、脫水
-
 diagnosis:
   primaryTests:
     - name: 對比劑尿道造影
-      notes: "顯示造影劑從尿道外滲至周圍組織,確定破裂位置"
+      notes: 顯示造影劑從尿道外滲至周圍組織,確定破裂位置
     - name: 腹部/會陰部超音波
-      notes: "可見皮下或骨盆腔積液、尿道壁不完整"
+      notes: 可見皮下或骨盆腔積液、尿道壁不完整
     - name: 血液生化
-      notes: "BUN、肌酐升高,鉀離子、磷離子升高"
+      notes: BUN、肌酐升高,鉀離子、磷離子升高
   differentialDiagnoses:
     - 膀胱破裂
     - 尿道完全阻塞
     - 會陰疝
     - 前列腺膿瘍破裂
-
 treatment:
   medical:
     - 緊急恢復尿液引流(膀胱造口術或會陰尿道造口)
@@ -69,26 +65,58 @@ treatment:
     - 廣效抗生素(Enrofloxacin 5-10 mg/kg IV/PO SID 或 Cefazolin 22 mg/kg IV TID)
     - 止痛治療(Buprenorphine 0.01-0.02 mg/kg IV/IM TID)
     - 留置導尿管或尿道支架2-3週
-
 prognosis:
-  general: "及時診斷並建立尿液引流者預後良好;延誤治療致嚴重氮血症、敗血症或尿道狹窄者預後保守。部分病例需永久性尿道造口。"
-
+  general: 及時診斷並建立尿液引流者預後良好;延誤治療致嚴重氮血症、敗血症或尿道狹窄者預後保守。部分病例需永久性尿道造口。
 prevention:
   - 導尿操作時使用適當尺寸導尿管並嚴格無菌技術
   - 及時處理尿道阻塞避免暴力排尿
   - 減少創傷風險(如車禍、墜落)
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Ongoing evolution of urinary tract disorders in dromedary camels (Camelus dromedarius): a comprehensive illustrated sonographic overview."
+    title: >-
+      Ongoing evolution of urinary tract disorders in dromedary camels (Camelus dromedarius): a comprehensive
+      illustrated sonographic overview.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12258294/
     type: review
-    pmid: "40661170"
+    pmid: '40661170'
     relevance: primary
   - sourceOrg: Therapeutic advances in urology
-    title: "The effects of docetaxel and/or captopril in expression of TGF-&#x3b2;1, MMP-1, CTGF, and PAI-1 as markers of anterior urethral stricture in an animal model."
+    title: >-
+      The effects of docetaxel and/or captopril in expression of TGF-&#x3b2;1, MMP-1, CTGF, and PAI-1 as markers of
+      anterior urethral stricture in an animal model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8842176/
     type: research
-    pmid: "35173811"
+    pmid: '35173811'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: common
+  - symptomId: oliguria-anuria
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 尿道破裂 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - vomiting 相關症狀
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 對比劑尿道造影
+          notes: 顯示造影劑從尿道外滲至周圍組織,確定破裂位置
+        - name: 腹部/會陰部超音波
+          notes: 可見皮下或骨盆腔積液、尿道壁不完整
+        - name: 血液生化
+          notes: BUN、肌酐升高,鉀離子、磷離子升高
+ddxSource: auto-generated

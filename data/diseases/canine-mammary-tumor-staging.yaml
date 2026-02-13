@@ -3,38 +3,38 @@ nameEn: Canine Mammary Tumor Staging
 nameZh: 犬乳腺腫瘤分期系統
 bodySystem: oncology
 description: 犬乳腺腫瘤採用修正版 WHO TNM 分期系統，依據腫瘤大小 (T)、淋巴結轉移 (N) 及遠端轉移 (M) 進行分期，為預後評估及治療計畫的重要依據。
-
 aliases:
-  - { alias: 犬乳腺腫瘤 TNM 分期, language: zh }
-  - { alias: 乳腺瘤分級分期, language: zh }
-  - { alias: CMT Staging, language: en }
-  - { alias: Canine Mammary Tumor TNM Classification, language: en }
-
+  - alias: 犬乳腺腫瘤 TNM 分期
+    language: zh
+  - alias: 乳腺瘤分級分期
+    language: zh
+  - alias: CMT Staging
+    language: en
+  - alias: Canine Mammary Tumor TNM Classification
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 犬乳腺腫瘤為母犬最常見的腫瘤。正確分期對於治療決策及預後判斷至關重要。所有乳腺腫瘤均建議完整分期檢查。
-
 etiology:
   categories:
     - name: TNM 分期標準
       examples:
-        - "T1：腫瘤最大直徑 <3 cm"
-        - "T2：腫瘤最大直徑 3-5 cm"
-        - "T3：腫瘤最大直徑 >5 cm"
-        - "N0：無區域淋巴結轉移"
-        - "N1：同側區域淋巴結轉移"
-        - "M0：無遠端轉移"
-        - "M1：有遠端轉移"
+        - T1：腫瘤最大直徑 <3 cm
+        - T2：腫瘤最大直徑 3-5 cm
+        - T3：腫瘤最大直徑 >5 cm
+        - N0：無區域淋巴結轉移
+        - N1：同側區域淋巴結轉移
+        - M0：無遠端轉移
+        - M1：有遠端轉移
     - name: 臨床分期
       examples:
-        - "第 I 期：T1N0M0"
-        - "第 II 期：T2N0M0"
-        - "第 III 期：T3N0M0"
-        - "第 IV 期：任何 T、N1、M0"
-        - "第 V 期：任何 T、任何 N、M1"
-
+        - 第 I 期：T1N0M0
+        - 第 II 期：T2N0M0
+        - 第 III 期：T3N0M0
+        - 第 IV 期：任何 T、N1、M0
+        - 第 V 期：任何 T、任何 N、M1
 clinicalSigns:
   early:
     - 乳腺可觸及結節或腫塊
@@ -46,66 +46,90 @@ clinicalSigns:
     - 區域淋巴結腫大
     - 全身性症狀（體重減輕、食慾下降）
     - 肺轉移相關呼吸症狀
-
 diagnosis:
   primaryTests:
     - name: 理學檢查與腫瘤測量
-      notes: "精確測量腫瘤三維大小。觸診所有乳腺及區域淋巴結（腋下及腹股溝）"
+      notes: 精確測量腫瘤三維大小。觸診所有乳腺及區域淋巴結（腋下及腹股溝）
     - name: 胸腔 X 光（三視圖）
-      notes: "篩檢肺轉移。建議所有乳腺腫瘤病例均需進行"
+      notes: 篩檢肺轉移。建議所有乳腺腫瘤病例均需進行
     - name: 腹部超音波
-      notes: "評估腹腔淋巴結及臟器轉移"
+      notes: 評估腹腔淋巴結及臟器轉移
     - name: 區域淋巴結 FNA
-      notes: "腋下（第 1-2 對乳腺引流）及腹股溝（第 4-5 對乳腺引流）淋巴結細胞學"
+      notes: 腋下（第 1-2 對乳腺引流）及腹股溝（第 4-5 對乳腺引流）淋巴結細胞學
   differentialDiagnoses:
     - 乳腺炎
     - 乳腺增生
     - 皮膚腫瘤（脂肪瘤、肥大細胞瘤）
     - 腹壁疝氣
-
 treatment:
   surgical:
-    - "第 I-III 期：手術切除為主（區域或鏈式乳腺切除）"
-    - "第 IV 期：手術 + 化療"
-    - "第 V 期：姑息治療為主"
+    - 第 I-III 期：手術切除為主（區域或鏈式乳腺切除）
+    - 第 IV 期：手術 + 化療
+    - 第 V 期：姑息治療為主
   medical:
     - 化療適用於高分級、淋巴血管侵犯或已轉移病例
     - Doxorubicin、Carboplatin 為常用方案
     - COX-2 抑制劑輔助
     - 術後絕育
-
 prognosis:
-  general: "分期為最重要的預後因子。第 I 期 2 年生存率約 90-100%。第 II 期約 70-80%。第 III 期約 40-60%。第 IV-V 期預後不良，中位生存時間 <12 個月。組織學分級同樣影響預後。"
-
+  general: 分期為最重要的預後因子。第 I 期 2 年生存率約 90-100%。第 II 期約 70-80%。第 III 期約 40-60%。第 IV-V 期預後不良，中位生存時間 <12 個月。組織學分級同樣影響預後。
 prevention:
   - 早期絕育為最有效預防措施
   - 定期乳腺觸診
   - 發現腫塊即完成全面分期評估
-
-
 guidelineRefs:
   - sourceOrg: Animal cells and systems
     title: Comparative epigenomics to clinical trials in human breast cancer and canine mammary tumor.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11924266/
     type: review
-    pmid: "40115961"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '40115961'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Diagnostic Imaging Features of Mammary Gland Tumors in Dogs and Cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12729881/
     type: review
-    pmid: "41463793"
+    pmid: '41463793'
   - sourceOrg: Medicine and pharmacy reports
-    title: "Exploring the contrasts: in-depth analysis of human and canine mammary tumors - discoveries at the frontier."
+    title: 'Exploring the contrasts: in-depth analysis of human and canine mammary tumors - discoveries at the frontier.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11090284/
     type: review
-    pmid: "38746025"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '38746025'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: The Importance of Ultrasonography in the Evaluation of Mammary Tumors in Bitches.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10252055/
     type: review
-    pmid: "37889644"
+    pmid: '37889644'
   - sourceOrg: Veterinary sciences
-    title: "Cytokine Expression in Canine Lymphoma, Osteosarcoma, Mammary Gland Tumour and Melanoma: Comparative Aspects."
+    title: 'Cytokine Expression in Canine Lymphoma, Osteosarcoma, Mammary Gland Tumour and Melanoma: Comparative Aspects.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6631657/
     type: review
-    pmid: "30987001"
+    pmid: '30987001'
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: uncommon
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 犬乳腺腫瘤分期系統 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查與腫瘤測量
+          notes: 精確測量腫瘤三維大小。觸診所有乳腺及區域淋巴結（腋下及腹股溝）
+        - name: 胸腔 X 光（三視圖）
+          notes: 篩檢肺轉移。建議所有乳腺腫瘤病例均需進行
+        - name: 腹部超音波
+          notes: 評估腹腔淋巴結及臟器轉移
+ddxSource: auto-generated

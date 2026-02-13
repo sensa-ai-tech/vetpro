@@ -3,13 +3,15 @@ nameEn: Optic Neuritis
 nameZh: 視神經炎
 bodySystem: ophthalmology
 description: 視神經的發炎性疾病，導致急性視力喪失。可為感染性、免疫媒介性或特發性。臨床表現為突然失明、瞳孔散大與瞳孔光反射消失。為犬貓急性失明的重要鑑別診斷之一。
-
 aliases:
-  - { alias: Papillitis, language: en }
-  - { alias: Retrobulbar Neuritis, language: en }
-  - { alias: 視神經發炎, language: zh }
-  - { alias: 視乳頭炎, language: zh }
-
+  - alias: Papillitis
+    language: en
+  - alias: Retrobulbar Neuritis
+    language: en
+  - alias: 視神經發炎
+    language: zh
+  - alias: 視乳頭炎
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓常見原因為 FIP、FeLV、Toxoplasmosis。
-
 etiology:
   categories:
     - name: 免疫媒介性
@@ -35,7 +36,6 @@ etiology:
       examples:
         - 視神經膠質瘤
         - 腦膜瘤壓迫
-
 clinicalSigns:
   early:
     - 急性視力喪失 (可為單側或雙側)
@@ -45,7 +45,6 @@ clinicalSigns:
     - 完全失明
     - 視神經乳頭水腫 (papilledema) 或萎縮
     - 可能伴隨其他神經症狀 (GME)
-
 diagnosis:
   primaryTests:
     - name: 眼底檢查
@@ -54,7 +53,6 @@ diagnosis:
       notes: 患眼直接光反射消失；對側間接光反射消失。Swinging flashlight test 陽性
     - name: MRI
       notes: 評估視神經增粗強化。排除腦部病變 (GME、腫瘤)
-
 treatment:
   principles:
     - 治療根本原因
@@ -65,36 +63,86 @@ treatment:
     - 感染性：針對病原治療
     - 全身性黴菌：長期抗黴菌治療
     - GME：多藥免疫抑制方案
-
 prognosis: 免疫媒介性視神經炎對類固醇反應可能良好。感染性病因及時治療部分可恢復視力。GME 預後謹慎至不良。視神經萎縮後視力喪失為永久性。
-
-
 guidelineRefs:
   - sourceOrg: Journal of current ophthalmology
     title: Update on Bartonella neuroretinitis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6742623/
     type: review
-    pmid: "31528758"
+    pmid: '31528758'
   - sourceOrg: Antioxidants (Basel, Switzerland)
     title: Oxidative Stress in Optic Neuropathies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8532958/
     type: review
-    pmid: "34679672"
+    pmid: '34679672'
   - sourceOrg: Clinical microbiology reviews
-    title: "Viral infections and pathogenesis of glaucoma: a comprehensive review."
+    title: 'Viral infections and pathogenesis of glaucoma: a comprehensive review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10870729/
     type: review
-    pmid: "37966199"
+    pmid: '37966199'
   - sourceOrg: Ocular immunology and inflammation
-    title: Can the Coronavirus Disease 2019 (COVID-19) Affect the Eyes? A Review of Coronaviruses and Ocular Implications in Humans and Animals.
+    title: >-
+      Can the Coronavirus Disease 2019 (COVID-19) Affect the Eyes? A Review of Coronaviruses and Ocular Implications in
+      Humans and Animals.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7103678/
     type: review
-    pmid: "32175797"
+    pmid: '32175797'
   - sourceOrg: International journal of molecular sciences
     title: Tissue Hypoxia and Associated Innate Immune Factors in Experimental Autoimmune Optic Neuritis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10932468/
     type: research
-    pmid: "38474322"
+    pmid: '38474322'
 pubmedQueries:
   - query: '"optic neuritis" AND (veterinary OR canine OR feline) AND ("treatment" OR "MRI")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 視神經炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估急性視力喪失和瞳孔反射異常
+      findings:
+        - 急性單側或雙側失明
+        - 瞳孔散大且對光反射遲鈍/消失
+        - 直接和間接瞳孔反射異常
+        - 可能伴有眼後疼痛
+    - step: 2
+      action: 眼底檢查
+      details: 進行直接和間接眼底鏡檢查
+      findings:
+        - 視神經乳頭水腫和充血
+        - 視神經乳頭出血
+        - 視網膜血管炎
+        - 球後視神經炎眼底可能正常
+    - step: 3
+      action: 進階影像與實驗室
+      details: 進行MRI和全面病因學篩檢
+      findings:
+        - MRI見視神經增粗和增強
+        - CSF分析排除腦膜腦炎
+        - 感染篩檢（弓漿蟲、真菌等）
+        - 壁蝨媒介疾病篩檢
+    - step: 4
+      action: 病因學確認
+      details: 確定視神經炎的基礎原因
+      findings:
+        - 感染性vs免疫介導性
+        - GME或MUE相關
+        - 腫瘤性病因排除
+        - 特發性（排除性診斷）
+clinicalPearls:
+  - 視神經炎是眼科急症，早期高劑量類固醇治療對挽救視力至關重要
+  - ERG（視網膜電圖）正常可排除SARDS，這是關鍵的鑑別診斷
+  - 雙側急性失明的鑑別診斷首要考慮：視神經炎、SARDS和視網膜剝離
+  - 視神經炎可能是肉芽腫性腦膜腦炎（GME）的首發表現
+monitoringItems:
+  - 治療後每1-2週追蹤視力和瞳孔反射
+  - MRI追蹤視神經變化
+  - 免疫抑制劑使用期間監測CBC和生化
+  - 長期監測視力功能和復發
+associatedSymptoms:
+  - symptomId: peripheral-oedema
+    frequency: common
+  - symptomId: mydriasis
+    frequency: common
+ddxSource: book

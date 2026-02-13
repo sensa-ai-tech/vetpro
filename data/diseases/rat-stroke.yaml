@@ -3,18 +3,19 @@ nameEn: Rat Stroke
 nameZh: 大鼠腦中風
 bodySystem: neurology
 description: 大鼠腦中風為腦血管意外所致的急性神經功能障礙，可分為出血性與缺血性。老年大鼠偶見，常與高血壓、腎臟疾病或垂體腺瘤相關。臨床表現為突發性頭部傾斜、運動失調或單側癱瘓。
-
 aliases:
-  - { alias: 大鼠腦血管意外, language: zh }
-  - { alias: 大鼠中風, language: zh }
-  - { alias: Rat cerebrovascular accident, language: en }
-  - { alias: Rat CVA, language: en }
-
+  - alias: 大鼠腦血管意外
+    language: zh
+  - alias: 大鼠中風
+    language: zh
+  - alias: Rat cerebrovascular accident
+    language: en
+  - alias: Rat CVA
+    language: en
 species:
   - speciesCommon: rat
     prevalence: uncommon
     notes: 老年大鼠偶見。常與慢性腎病所致高血壓或垂體腺瘤相關。急性發作需與內耳前庭疾病鑑別。
-
 etiology:
   categories:
     - name: 血管性因素
@@ -30,7 +31,6 @@ etiology:
       examples:
         - 凝血功能異常
         - 外傷
-
 clinicalSigns:
   early:
     - 突發性頭部傾斜
@@ -43,7 +43,6 @@ clinicalSigns:
     - 意識程度下降
     - 無法自主進食或飲水
     - 癲癇發作
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
@@ -52,7 +51,6 @@ diagnosis:
       notes: 評估是否有高血壓。大鼠正常收縮壓約 100-120 mmHg
     - name: 血液生化
       notes: 腎功能（BUN、肌酐）、血糖、凝血功能
-
 treatment:
   principles:
     - 穩定病患狀態
@@ -67,41 +65,83 @@ treatment:
     - 物理治療（輕柔活動患肢）
     - 每日監測神經功能改善情況
     - 防止褥瘡（柔軟墊料、定時翻身）
-
 prognosis: 預後視病變範圍與基礎疾病而定。輕度腦中風部分大鼠可在數天至數週內有顯著改善。嚴重神經功能缺損或與垂體腺瘤相關者預後較差。無法自主進食飲水者預後不良。部分患鼠可能遺留永久性神經功能障礙。
-
-
 guidelineRefs:
   - sourceOrg: Brain circulation
     title: Bone marrow-derived NCS-01 cells for ischemic stroke.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8057097/
     type: review
-    pmid: "34084978"
+    pmid: '34084978'
     relevance: primary
   - sourceOrg: Cells
     title: Stem Cell Repair of the Microvascular Damage in Stroke.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7563611/
     type: review
-    pmid: "32932814"
+    pmid: '32932814'
     relevance: primary
   - sourceOrg: Cell reports
     title: Effective cerebellar neuroprosthetic control after stroke.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12453015/
     type: research
-    pmid: "40694476"
+    pmid: '40694476'
     relevance: supporting
   - sourceOrg: Biomedical spectroscopy and imaging
     title: Stroke Onset Time Determination Using MRI Relaxation Times without Non-Ischaemic Reference in A Rat Stroke Model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5495158/
     type: research
-    pmid: "28685128"
+    pmid: '28685128'
     relevance: supporting
   - sourceOrg: Aging and disease
-    title: Progressive Disruption of Sphingosine-1-Phosphate Receptor 1 Correlates with Blood-Brain Barrier Leakage in A Rat Model of Chronic Hypoxic Hypoperfusion.
+    title: >-
+      Progressive Disruption of Sphingosine-1-Phosphate Receptor 1 Correlates with Blood-Brain Barrier Leakage in A Rat
+      Model of Chronic Hypoxic Hypoperfusion.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11964439/
     type: research
-    pmid: "38916732"
+    pmid: '38916732'
     relevance: supporting
 pubmedQueries:
   - query: '"rat" AND ("stroke" OR "cerebrovascular accident") AND (veterinary OR "pet rat")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: head-tilt
+    frequency: common
+  - symptomId: nystagmus
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: trembling
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 大鼠腦中風 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - seizures 相關症狀
+        - head-tilt 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 評估神經功能缺損的對稱性與定位。突發性起病為重要特徵
+        - name: 血壓測量
+          notes: 評估是否有高血壓。大鼠正常收縮壓約 100-120 mmHg
+        - name: 血液生化
+          notes: 腎功能（BUN、肌酐）、血糖、凝血功能
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 穩定病患狀態
+        - 支持性護理
+        - 控制基礎疾病
+ddxSource: auto-generated

@@ -3,14 +3,17 @@ nameEn: Corneal Dystrophy
 nameZh: 角膜營養不良
 bodySystem: ophthalmology
 description: 先天性遺傳性角膜非炎症性退化疾病，為雙側對稱性病變。依受累層分為上皮型、基質型與內皮型。基質型 (脂質/結晶沉積) 最常見，表現為角膜中央白色至灰色不透明沉積。
-
 aliases:
-  - { alias: Corneal Lipid Dystrophy, language: en }
-  - { alias: Stromal Dystrophy, language: en }
-  - { alias: Endothelial Dystrophy, language: en }
-  - { alias: 角膜退化, language: zh }
-  - { alias: 角膜脂質營養不良, language: zh }
-
+  - alias: Corneal Lipid Dystrophy
+    language: en
+  - alias: Stromal Dystrophy
+    language: en
+  - alias: Endothelial Dystrophy
+    language: en
+  - alias: 角膜退化
+    language: zh
+  - alias: 角膜脂質營養不良
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -18,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。Manx 品種有報告。
-
 etiology:
   categories:
     - name: 遺傳性
@@ -26,7 +28,6 @@ etiology:
         - 品種特異性遺傳突變
         - 脂質或結晶在基質異常沉積
         - 內皮細胞退化 (內皮型)
-
 clinicalSigns:
   early:
     - 角膜中央對稱性白色或灰色混濁
@@ -36,7 +37,6 @@ clinicalSigns:
     - 混濁範圍擴大
     - 內皮型：角膜水腫、水泡形成 (bullous keratopathy)
     - 內皮型可繼發角膜潰瘍
-
 diagnosis:
   primaryTests:
     - name: 裂隙燈檢查
@@ -45,7 +45,6 @@ diagnosis:
       notes: 內皮型角膜增厚
     - name: 血脂檢查
       notes: 排除高脂血症引起的脂質角膜病變
-
 treatment:
   principles:
     - 基質型通常不需治療
@@ -55,36 +54,80 @@ treatment:
     - 內皮型水泡性角膜病：高滲食鹽水眼藥水 (5% NaCl)
     - 角膜水泡潰瘍：熱灼術或結膜瓣
     - 嚴重內皮衰竭：角膜移植
-
 prognosis: 基質型預後良好，多數終生不顯著影響視力。內皮型進行性惡化，最終可能需角膜移植。受影響犬不建議繁殖。
-
-
 guidelineRefs:
   - sourceOrg: Progress in retinal and eye research
     title: Squishy matters - Corneal mechanobiology in health and disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11193890/
     type: review
-    pmid: "38176611"
+    pmid: '38176611'
   - sourceOrg: Annals of translational medicine
     title: Animal models of corneal endothelial dysfunction to facilitate development of novel therapies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421955/
     type: review
-    pmid: "34532408"
+    pmid: '34532408'
   - sourceOrg: Biomolecules
-    title: "The Cornea: No Difference in the Wound Healing Response to Injury Related to Whether, or Not, There's a Bowman's Layer."
+    title: >-
+      The Cornea: No Difference in the Wound Healing Response to Injury Related to Whether, or Not, There's a Bowman's
+      Layer.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10216545/
     type: review
-    pmid: "37238641"
-  - sourceOrg: "Journal of ocular pharmacology and therapeutics : the official journal of the Association for Ocular Pharmacology and Therapeutics"
-    title: "Topical Losartan: Practical Guidance for Clinical Trials in the Prevention and Treatment of Corneal Scarring Fibrosis and Other Eye Diseases and Disorders."
+    pmid: '37238641'
+  - sourceOrg: >-
+      Journal of ocular pharmacology and therapeutics : the official journal of the Association for Ocular Pharmacology
+      and Therapeutics
+    title: >-
+      Topical Losartan: Practical Guidance for Clinical Trials in the Prevention and Treatment of Corneal Scarring
+      Fibrosis and Other Eye Diseases and Disorders.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10079252/
     type: review
-    pmid: "36877777"
+    pmid: '36877777'
   - sourceOrg: Oxidative medicine and cellular longevity
     title: Nrf2, a Potential Therapeutic Target against Oxidative Stress in Corneal Diseases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5676473/
     type: review
-    pmid: "29209447"
+    pmid: '29209447'
 pubmedQueries:
   - query: '"corneal dystrophy" AND (veterinary OR canine OR feline) AND ("classification" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 角膜營養不良 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估角膜混濁特徵和品種背景
+      findings:
+        - 雙側對稱性角膜混濁
+        - 品種易感性（騎士查理王獵犬、哈士奇等）
+        - 通常無疼痛症狀
+        - 視力可能正常
+    - step: 2
+      action: 眼科檢查
+      details: 進行裂隙燈和其他眼科檢查
+      findings:
+        - 角膜基質結晶狀或白色沉積
+        - 病變位置（上皮型、基質型或內皮型）
+        - 螢光素染色通常陰性
+        - 眼壓正常
+    - step: 3
+      action: 分類與鑑別
+      details: 確定角膜營養不良類型並排除其他角膜疾病
+      findings:
+        - 上皮/前基質型：淺層沉積
+        - 基質型：脂質或膽固醇沉積
+        - 內皮型：角膜水腫
+        - 排除代謝性角膜沉積（高脂血症）
+clinicalPearls:
+  - 角膜營養不良與角膜退化不同——營養不良為遺傳性、雙側性、非發炎性；退化為後天的
+  - 基質性營養不良不一定需要治療，除非影響視力或繼發潰瘍
+  - 空腹血脂檢查是重要的鑑別步驟，高脂血症導致的脂質沉積可透過飲食控制改善
+  - 內皮性營養不良好發於老年小型犬，常伴隨白內障共存
+monitoringItems:
+  - 每6-12個月眼科檢查追蹤進展
+  - 監測角膜潰瘍的發生
+  - 內皮型需更頻繁追蹤角膜水腫程度
+  - 血脂定期監測（如有高脂血症）
+associatedSymptoms:
+  - symptomId: peripheral-oedema
+    frequency: common
+ddxSource: book

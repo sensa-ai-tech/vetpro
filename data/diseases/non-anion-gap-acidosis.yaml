@@ -3,11 +3,11 @@ nameEn: Non Anion Gap Acidosis
 nameZh: 非陰離子間隙性酸中毒
 bodySystem: electrolyte
 description: 代謝性酸中毒伴隨正常陰離子間隙（AG <20 mEq/L），常因碳酸氫根流失或氯離子累積引起。常見原因包括腹瀉、腎小管性酸中毒或高張性鹽水輸液。
-
 aliases:
-  - { alias: 高血氯性酸中毒, language: zh }
-  - { alias: Hyperchloremic Metabolic Acidosis, language: en }
-
+  - alias: 高血氯性酸中毒
+    language: zh
+  - alias: Hyperchloremic Metabolic Acidosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓常因腸胃道疾病或慢性腎臟病引起
-
 etiology:
   categories:
     - name: 碳酸氫根流失（腸胃道）
@@ -36,7 +35,6 @@ etiology:
     - name: 尿道轉向術後
       examples:
         - 尿液與腸道接觸（氯離子與碳酸氫根交換）
-
 clinicalSigns:
   early:
     - 輕度過度換氣
@@ -45,32 +43,53 @@ clinicalSigns:
     - 肌肉無力
     - 骨質疏鬆（慢性病例）
     - 生長遲緩（幼年動物）
-
 diagnosis:
   primaryTests:
     - name: 動脈血液氣體
-      notes: "pH <7.35, HCO3- <18 mEq/L"
+      notes: pH <7.35, HCO3- <18 mEq/L
     - name: 陰離子間隙
-      notes: "AG = (Na + K) - (Cl + HCO3-), AG <20 mEq/L（正常）"
+      notes: AG = (Na + K) - (Cl + HCO3-), AG <20 mEq/L（正常）
     - name: 尿 pH 及尿陰離子間隙
-      notes: "鑑別腎小管性酸中毒類型"
+      notes: 鑑別腎小管性酸中毒類型
   differentialDiagnoses:
     - 腹瀉
     - 腎小管性酸中毒
     - 高張性鹽水輸液過量
     - 尿道轉向術後
-
 treatment:
   medical:
     - 治療潛在病因（止瀉、調整輸液類型）
     - Sodium bicarbonate（HCO3- <12 或 pH <7.2）：1-2 mEq/kg PO or IV
     - 腎小管性酸中毒需長期口服鹼化劑
     - 監測血氣及電解質
-
 prognosis:
-  general: "預後良好,多數病例經治療潛在病因後可恢復。慢性腎小管性酸中毒需終生鹼化治療,但預後穩定。"
-
+  general: 預後良好,多數病例經治療潛在病因後可恢復。慢性腎小管性酸中毒需終生鹼化治療,但預後穩定。
 prevention:
   - 腸胃道疾病早期治療
   - 避免過量高張性鹽水輸液
   - 定期監測電解質（高風險患者）
+associatedSymptoms:
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 非陰離子間隙性酸中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weakness 相關症狀
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 動脈血液氣體
+          notes: pH <7.35, HCO3- <18 mEq/L
+        - name: 陰離子間隙
+          notes: AG = (Na + K) - (Cl + HCO3-), AG <20 mEq/L（正常）
+        - name: 尿 pH 及尿陰離子間隙
+          notes: 鑑別腎小管性酸中毒類型
+ddxSource: auto-generated

@@ -3,12 +3,13 @@ nameEn: Probiotics Veterinary Use
 nameZh: 益生菌獸醫應用
 bodySystem: metabolic
 description: 益生菌在犬貓腸胃道健康及疾病治療中的應用。可改善腸道菌叢平衡、增強免疫功能、減輕腹瀉症狀。
-
 aliases:
-  - { alias: 益生菌補充, language: zh }
-  - { alias: Probiotic Supplement, language: en }
-  - { alias: Gut Microbiome Support, language: en }
-
+  - alias: 益生菌補充
+    language: zh
+  - alias: Probiotic Supplement
+    language: en
+  - alias: Gut Microbiome Support
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 慢性腹瀉、IBD使用
-
 etiology:
   categories:
     - name: 常見益生菌株
@@ -43,7 +43,6 @@ etiology:
         - 增強腸道屏障功能
         - 調節免疫反應
         - 產生短鏈脂肪酸
-
 clinicalSigns:
   early:
     - 使用後：糞便成形改善、腹瀉減輕
@@ -51,18 +50,16 @@ clinicalSigns:
   progressive:
     - 長期使用：腸道健康維持、免疫功能改善
     - 副作用極少
-
 diagnosis:
   primaryTests:
     - name: 糞便檢查
-      notes: "排除寄生蟲、細菌、病毒"
+      notes: 排除寄生蟲、細菌、病毒
     - name: 臨床症狀評估
-      notes: "糞便品質、頻率"
+      notes: 糞便品質、頻率
   differentialDiagnoses:
     - 急慢性腹瀉
     - 炎症性腸病
     - 抗生素相關腹瀉
-
 treatment:
   medical:
     - 益生菌劑量
@@ -87,45 +84,65 @@ treatment:
     - 特殊情況
     - Saccharomyces boulardii：抗生素相關腹瀉特別有效
     - 多菌株配方：IBD使用
-
 prognosis:
-  general: "益生菌安全有效，可改善腸胃道健康；急性腹瀉緩解較快，慢性病需長期使用"
-
+  general: 益生菌安全有效，可改善腸胃道健康；急性腹瀉緩解較快，慢性病需長期使用
 prevention:
   - 選擇高品質產品
   - 確認活菌數足夠
   - 適當保存
   - 抗生素使用時同時給予
-
-
 guidelineRefs:
   - sourceOrg: Foods (Basel, Switzerland)
     title: Nutritional Guidelines and Fermented Food Frameworks.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5575640/
     type: guideline
-    pmid: "28783111"
+    pmid: '28783111'
     relevance: primary
-  - sourceOrg: "Cellular &amp; molecular immunology"
+  - sourceOrg: Cellular &amp; molecular immunology
     title: Type 2 immunity in allergic diseases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11868591/
     type: review
-    pmid: "39962262"
+    pmid: '39962262'
     relevance: primary
   - sourceOrg: Allergy
-    title: "Epithelial barrier dysfunction and associated diseases in companion animals: Differences and similarities between humans and animals and research needs."
+    title: >-
+      Epithelial barrier dysfunction and associated diseases in companion animals: Differences and similarities between
+      humans and animals and research needs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11657079/
     type: review
-    pmid: "39417247"
+    pmid: '39417247'
     relevance: primary
   - sourceOrg: Current issues in molecular biology
-    title: "The Integral Role of Diets Including Natural Products to Manage Rheumatoid Arthritis: A Narrative Review."
+    title: 'The Integral Role of Diets Including Natural Products to Manage Rheumatoid Arthritis: A Narrative Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10377866/
     type: review
-    pmid: "37504257"
+    pmid: '37504257'
     relevance: primary
   - sourceOrg: Molecular psychiatry
-    title: A systematic review of gut microbiota composition in observational studies of major depressive disorder, bipolar disorder and schizophrenia.
+    title: >-
+      A systematic review of gut microbiota composition in observational studies of major depressive disorder, bipolar
+      disorder and schizophrenia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9126816/
     type: review
-    pmid: "35194166"
+    pmid: '35194166'
     relevance: primary
+associatedSymptoms:
+  - symptomId: diarrhoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 益生菌獸醫應用 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便檢查
+          notes: 排除寄生蟲、細菌、病毒
+        - name: 臨床症狀評估
+          notes: 糞便品質、頻率
+ddxSource: auto-generated

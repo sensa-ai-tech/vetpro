@@ -3,13 +3,15 @@ nameEn: Hypertrophic Cardiomyopathy
 nameZh: 肥厚性心肌病
 bodySystem: cardiac
 description: 左心室壁異常肥厚的原發性心肌疾病，為貓最常見的心臟病，亦可見於犬。
-
 aliases:
-  - { alias: HCM, language: en }
-  - { alias: 肥厚型心肌症, language: zh }
-  - { alias: Hypertrophic Obstructive Cardiomyopathy, language: en }
-  - { alias: HOCM, language: en }
-
+  - alias: HCM
+    language: en
+  - alias: 肥厚型心肌症
+    language: zh
+  - alias: Hypertrophic Obstructive Cardiomyopathy
+    language: en
+  - alias: HOCM
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
@@ -19,7 +21,6 @@ species:
     speciesScientific: Canis lupus familiaris
     prevalence: rare
     notes: 犬少見。偶見於 GSD、Cavalier King Charles Spaniel。
-
 etiology:
   categories:
     - name: 原發性/遺傳性
@@ -33,7 +34,6 @@ etiology:
         - 全身性高血壓
         - 先天性主動脈瓣下狹窄
         - 肢端肥大症 (GH 分泌腫瘤)
-
 clinicalSigns:
   early:
     - 多為無症狀 (偶然發現心雜音或奔馬音)
@@ -50,26 +50,24 @@ clinicalSigns:
     - 後肢癱瘓與疼痛 (ATE)
     - 猝死
     - 心律不整
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波 (Echocardiography)
-      notes: "金標準。LV 壁厚 ≥6 mm (貓)。評估 SAM、LVOTO、LA 擴大、diastolic function"
+      notes: 金標準。LV 壁厚 ≥6 mm (貓)。評估 SAM、LVOTO、LA 擴大、diastolic function
     - name: proBNP (NT-proBNP)
-      notes: "篩檢工具。貓 >100 pmol/L 建議心超檢查。正常值不能排除輕度 HCM"
+      notes: 篩檢工具。貓 >100 pmol/L 建議心超檢查。正常值不能排除輕度 HCM
     - name: Cardiac Troponin I
-      notes: "心肌損傷標記，升高提示活動性心肌損傷"
+      notes: 心肌損傷標記，升高提示活動性心肌損傷
   imaging:
     - name: 胸腔 X 光
-      notes: "Valentine 心型 (貓)、肺水腫、胸水、左心房擴大"
+      notes: Valentine 心型 (貓)、肺水腫、胸水、左心房擴大
     - name: 心電圖 (ECG)
-      notes: "左心室肥厚、心律不整 (心房顫動、VPCs)。部分正常"
+      notes: 左心室肥厚、心律不整 (心房顫動、VPCs)。部分正常
   additional:
     - 血壓測量 (排除繼發性高血壓)
     - T4 (排除甲亢)
     - 基因檢測 (Maine Coon MYBPC3 A31P、Ragdoll MYBPC3 R820W)
     - Holter 監測 (評估心律不整風險)
-
 stagingSystem:
   name: ACVIM HCM Staging
   stages:
@@ -88,7 +86,6 @@ stagingSystem:
     - stage: D
       label: 難治性心衰竭
       description: 對標準治療反應不佳的終末期心衰竭
-
 treatment:
   principles:
     - 無症狀 HCM 治療仍有爭議
@@ -96,19 +93,19 @@ treatment:
     - ATE 預防為重要目標 (LA 擴大時)
   medications:
     - name: Furosemide
-      dose: "1-4 mg/kg IV/IM (急性 CHF)；1-2 mg/kg PO BID-TID (維持)"
+      dose: 1-4 mg/kg IV/IM (急性 CHF)；1-2 mg/kg PO BID-TID (維持)
       notes: CHF 治療基石。監測腎功能與電解質
     - name: Atenolol
-      dose: "6.25-12.5 mg/cat PO BID"
+      dose: 6.25-12.5 mg/cat PO BID
       notes: β-blocker，降低心率、改善舒張充盈。LVOTO 有益。急性 CHF 時禁用
     - name: Clopidogrel
-      dose: "18.75 mg/cat PO SID"
+      dose: 18.75 mg/cat PO SID
       notes: 抗血小板藥物，LA 擴大時預防 ATE。FAT CAT study 顯示優於 aspirin
     - name: Pimobendan
-      dose: "0.25 mg/kg PO BID"
+      dose: 0.25 mg/kg PO BID
       notes: ACVIM Stage B2 考慮使用。有 LVOTO 時謹慎使用
     - name: Benazepril
-      dose: "0.5-1 mg/kg PO SID"
+      dose: 0.5-1 mg/kg PO SID
       notes: ACEi，可能有助於心室重塑。證據仍有限
   general:
     - 急性 CHF：氧氣、furosemide、減少壓力
@@ -116,47 +113,116 @@ treatment:
     - ATE 治療：止痛 (buprenorphine/methadone)、抗凝血 (clopidogrel + heparin)
     - 限鈉飲食 (症狀性 CHF)
     - 居家呼吸速率監測 (resting respiratory rate，正常 <30 次/分)
-
 prognosis: 無症狀輕度 HCM 可存活數年。CHF 中位存活時間約 12-18 個月。ATE 預後極差，7 天存活率約 33-39%。LA/Ao ratio >2.0 為負面預後因子。
-
 ontologyMappings:
   - source: MONDO
-    code: "MONDO:0005045"
+    code: MONDO:0005045
     label: hypertrophic cardiomyopathy
     confidence: exact
-
 guidelineRefs:
   - sourceOrg: ACVIM
-    title: ACVIM Consensus Statement — Guidelines for the Classification, Diagnosis, and Management of Cardiomyopathies in Cats
+    title: >-
+      ACVIM Consensus Statement — Guidelines for the Classification, Diagnosis, and Management of Cardiomyopathies in
+      Cats
     url: https://pubmed.ncbi.nlm.nih.gov/32243682/
     type: consensus
-    pmid: "32243682"
+    pmid: '32243682'
   - sourceOrg: Journal of veterinary internal medicine
-    title: ACVIM consensus statement guidelines for the classification, diagnosis, and management of cardiomyopathies in cats.
+    title: >-
+      ACVIM consensus statement guidelines for the classification, diagnosis, and management of cardiomyopathies in
+      cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7255676/
     type: consensus
-    pmid: "32243654"
+    pmid: '32243654'
   - sourceOrg: Frontiers in veterinary science
-    title: Classification of feline hypertrophic cardiomyopathy-associated gene variants according to the American College of Medical Genetics and Genomics guidelines.
+    title: >-
+      Classification of feline hypertrophic cardiomyopathy-associated gene variants according to the American College of
+      Medical Genetics and Genomics guidelines.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10873919/
     type: guideline
-    pmid: "38371598"
+    pmid: '38371598'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Use of pimobendan in cats: a practical evidence-based review."
+    title: 'Use of pimobendan in cats: a practical evidence-based review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12701260/
     type: review
-    pmid: "41384556"
+    pmid: '41384556'
   - sourceOrg: Journal of feline medicine and surgery
     title: Dual therapy with clopidogrel and rivaroxaban in cats with thromboembolic disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8830184/
     type: research
-    pmid: "33966532"
+    pmid: '33966532'
     relevance: supporting
 pubmedQueries:
   - query: '"hypertrophic cardiomyopathy" AND (cat OR feline) AND ("consensus" OR "guidelines" OR "treatment")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "Hypertrophic Cardiomyopathy:"
+  chapter: DIG
+  sectionTitle: 'Hypertrophic Cardiomyopathy:'
   pdfPage: 158
+diagnosticAlgorithm:
+  title: 肥厚型心肌病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 聽診心雜音、評估呼吸狀態（貓）
+      findings:
+        - 收縮期心雜音
+        - 奔馬律
+        - 呼吸困難
+        - 後肢癱瘓（血栓）
+    - step: 2
+      action: 胸腔X光
+      details: 評估心臟輪廓及肺部
+      findings:
+        - 左心房擴大（Valentine形狀）
+        - 肺水腫
+        - 胸腔積液
+    - step: 3
+      action: 心臟超音波
+      details: 2D及M-mode詳細評估
+      findings:
+        - 左心室壁厚度>6mm（貓）
+        - 左心室流出道動態阻塞（SAM）
+        - 左心房擴大
+        - 自發性超音波對比（煙霧狀）
+    - step: 4
+      action: 生物標記與監測
+      details: NT-proBNP及基因檢測
+      findings:
+        - NT-proBNP升高
+        - cTnI升高
+        - Maine Coon和Ragdoll基因檢測
+        - 評估血栓風險
+clinicalPearls:
+  - 貓HCM是最常見的心臟病，但許多貓終生無症狀
+  - 心雜音不代表HCM，約1/3 HCM貓無雜音
+  - NT-proBNP可用於篩檢，但需結合超聲確診
+  - ATE是HCM最嚴重的併發症之一
+  - 應激可誘發急性失代償，處置時需溫和
+  - 繼發性肥厚（甲亢、高血壓）需排除並治療原因
+monitoringItems:
+  - 呼吸頻率（家中RRR<30）
+  - 心臟超聲（每6-12個月）
+  - T4
+  - 血壓
+  - 腎功能
+  - NT-proBNP
+associatedSymptoms:
+  - symptomId: heart-murmur
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+ddxSource: book

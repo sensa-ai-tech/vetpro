@@ -2,14 +2,18 @@ slug: pemphigus-complex
 nameEn: Pemphigus Complex
 nameZh: 天疱瘡複合症
 bodySystem: immunology
-description: 天疱瘡 (pemphigus) 為一組自體免疫性水疱性皮膚病，因自體抗體攻擊表皮細胞間連接蛋白 (desmoglein) 導致棘層鬆解 (acantholysis)。犬貓主要型態包括落葉型天疱瘡 (pemphigus foliaceus, PF) 與尋常型天疱瘡 (pemphigus vulgaris, PV)。PF 為犬貓最常見的自體免疫性皮膚病。
-
+description: >-
+  天疱瘡 (pemphigus) 為一組自體免疫性水疱性皮膚病，因自體抗體攻擊表皮細胞間連接蛋白 (desmoglein) 導致棘層鬆解 (acantholysis)。犬貓主要型態包括落葉型天疱瘡 (pemphigus
+  foliaceus, PF) 與尋常型天疱瘡 (pemphigus vulgaris, PV)。PF 為犬貓最常見的自體免疫性皮膚病。
 aliases:
-  - { alias: 天疱瘡, language: zh }
-  - { alias: Pemphigus, language: en }
-  - { alias: Pemphigus Foliaceus, language: en }
-  - { alias: Pemphigus Vulgaris, language: en }
-
+  - alias: 天疱瘡
+    language: zh
+  - alias: Pemphigus
+    language: en
+  - alias: Pemphigus Foliaceus
+    language: en
+  - alias: Pemphigus Vulgaris
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓亦以 PF 最常見。面部與耳介為好發部位。足墊病灶在貓亦常見。
-
 etiology:
   categories:
     - name: 致病機制
@@ -32,7 +35,6 @@ etiology:
         - Pemphigus vulgaris — 深層水疱、黏膜侵犯
         - Pemphigus erythematosus — PF 與 lupus 的交叉型
         - Paraneoplastic pemphigus — 腫瘤相關
-
 clinicalSigns:
   early:
     - 面部膿疱與痂皮（鼻鏡、耳介）
@@ -43,7 +45,6 @@ clinicalSigns:
     - PV：口腔潰瘍、黏膜糜爛
     - 繼發性細菌感染
     - 發燒、厭食、消瘦
-
 diagnosis:
   primaryTests:
     - name: 皮膚生檢
@@ -54,7 +55,6 @@ diagnosis:
     - 直接免疫螢光（細胞間 IgG 沉積）
     - 細菌培養（排除繼發感染）
     - ANA（排除 SLE）
-
 treatment:
   principles:
     - 免疫抑制療法
@@ -68,26 +68,65 @@ treatment:
     - 局部 tacrolimus（局灶性病灶）
     - 避免日曬（UV 可誘發）
     - 繼發感染時短期抗生素
-
 prognosis: 落葉型天疱瘡在適當免疫抑制下多數可控制，但需長期用藥。部分犬可達到緩解後停藥。尋常型天疱瘡預後較差。藥物副作用（免疫抑制相關感染、類固醇效應）為長期管理挑戰。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline immune-mediated skin disorders: Part 2."
+    title: 'Feline immune-mediated skin disorders: Part 2.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12033568/
     type: review
-    pmid: "40219647"
+    pmid: '40219647'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline immune-mediated skin disorders: Part 1."
+    title: 'Feline immune-mediated skin disorders: Part 1.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12033501/
     type: review
-    pmid: "40219649"
+    pmid: '40219649'
   - sourceOrg: BMC veterinary research
-    title: "Gonadectomy effects on the risk of immune disorders in the dog: a retrospective study."
+    title: 'Gonadectomy effects on the risk of immune disorders in the dog: a retrospective study.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5146839/
     type: research
-    pmid: "27931211"
+    pmid: '27931211'
 pubmedQueries:
   - query: '"pemphigus" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis" OR "immunosuppressive")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 天疱瘡複合症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - halitosis-stomatitis 相關症狀
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 皮膚生檢
+          notes: 組織病理學見棘層鬆解 (acantholysis) 與表皮內水疱。PF 在淺表顆粒層，PV 在基底上層
+        - name: 細胞學
+          notes: 膿疱內容抹片可見棘層鬆解角質細胞 (acantholytic keratinocytes) — 圓形深染核質細胞
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 直接免疫螢光（細胞間 IgG 沉積）
+        - 細菌培養（排除繼發感染）
+        - ANA（排除 SLE）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 免疫抑制療法
+        - 長期管理
+        - 預防感染併發症
+ddxSource: auto-generated

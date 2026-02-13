@@ -3,18 +3,19 @@ nameEn: Avian Egg Binding
 nameZh: 禽類蛋滯留
 bodySystem: reproductive
 description: 蛋滯留是母鳥無法在正常時間內產出蛋的急症，為寵物鳥常見的生殖急診。常因低血鈣、營養不良、輸卵管功能異常或蛋過大引起。若未及時處理可導致輸卵管壞死、泄殖腔脫垂甚至死亡。
-
 aliases:
-  - { alias: 鳥類難產, language: zh }
-  - { alias: 蛋阻塞, language: zh }
-  - { alias: Egg retention in birds, language: en }
-  - { alias: Dystocia in birds, language: en }
-
+  - alias: 鳥類難產
+    language: zh
+  - alias: 蛋阻塞
+    language: zh
+  - alias: Egg retention in birds
+    language: en
+  - alias: Dystocia in birds
+    language: en
 species:
   - speciesCommon: bird
     prevalence: common
     notes: 虎皮鸚鵡、玄鳳鸚鵡、金絲雀為高風險群。單隻飼養的母鳥也可能產蛋並發生蛋滯留。為鳥類急診中常見的急症。
-
 etiology:
   categories:
     - name: 營養性因素
@@ -34,7 +35,6 @@ etiology:
         - 缺乏運動（肌肉無力）
         - 過度繁殖
         - 環境緊迫
-
 clinicalSigns:
   early:
     - 蹲伏在籠底
@@ -49,7 +49,6 @@ clinicalSigns:
     - 排便減少或停止
     - 後肢癱瘓（坐骨神經壓迫）
     - 休克
-
 diagnosis:
   primaryTests:
     - name: 觸診
@@ -58,7 +57,6 @@ diagnosis:
       notes: 可見完整蛋體在輸卵管或泄殖腔內。評估蛋殼鈣化程度
     - name: 血鈣檢測
       notes: 評估離子鈣濃度。低血鈣是最常見誘因
-
 treatment:
   principles:
     - 穩定患者狀態（保溫、補液、補鈣）
@@ -73,41 +71,77 @@ treatment:
     - 無法自然排出時以潤滑劑輔助或人工碎蛋取出
     - 嚴重者需手術取蛋
     - 預防：補充鈣質、均衡飲食、減少產蛋刺激
-
 prognosis: 及時處理預後良好。大多數蛋滯留經保守治療（保溫、補鈣、補液）可成功排出。延遲處理者可能發生輸卵管破裂、腹膜炎，預後不良。反覆蛋滯留者建議藥物或手術抑制產蛋。
-
-
 guidelineRefs:
-  - sourceOrg: "Human vaccines &amp; immunotherapeutics"
+  - sourceOrg: Human vaccines &amp; immunotherapeutics
     title: IgY antibodies for the immunoprophylaxis and therapy of respiratory infections.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6363154/
     type: review
-    pmid: "30230944"
+    pmid: '30230944'
   - sourceOrg: International immunopharmacology
-    title: "An approach towards development of monoclonal IgY antibodies against SARS CoV-2 spike protein (S) using phage display method: A review."
+    title: >-
+      An approach towards development of monoclonal IgY antibodies against SARS CoV-2 spike protein (S) using phage
+      display method: A review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7266779/
     type: review
-    pmid: "32512271"
+    pmid: '32512271'
   - sourceOrg: Poultry science
     title: Proteomic investigation and understanding on IgY purification and product development.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10404759/
     type: research
-    pmid: "37329629"
+    pmid: '37329629'
   - sourceOrg: Viruses
     title: Antiviral Immunoglobulins of Chicken Egg Yolk for Potential Prevention of SARS-CoV-2 Infection.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9609661/
     type: research
-    pmid: "36298676"
+    pmid: '36298676'
   - sourceOrg: Viruses
     title: Hyperimmunized Chickens Produce Neutralizing Antibodies against SARS-CoV-2.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9318545/
     type: research
-    pmid: "35891490"
+    pmid: '35891490'
   - sourceOrg: Poultry science
     title: Domestic goose egg yolk vitelline membrane structure and protein characterization.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12163150/
     type: research
-    pmid: "40451076"
+    pmid: '40451076'
 pubmedQueries:
   - query: '"egg binding" AND (avian OR bird OR psittacine) AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: abdominal-distension
+    frequency: common
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類蛋滯留 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - abdominal-distension 相關症狀
+        - paresis-paralysis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 觸診
+          notes: 腹部觸診可能觸及硬質蛋體。需輕柔操作避免蛋破裂
+        - name: X 光
+          notes: 可見完整蛋體在輸卵管或泄殖腔內。評估蛋殼鈣化程度
+        - name: 血鈣檢測
+          notes: 評估離子鈣濃度。低血鈣是最常見誘因
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 穩定患者狀態（保溫、補液、補鈣）
+        - 促進自然排蛋
+        - 必要時人工取蛋
+ddxSource: auto-generated

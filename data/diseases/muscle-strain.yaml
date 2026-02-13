@@ -3,12 +3,13 @@ nameEn: Muscle Strain
 nameZh: 肌肉拉傷
 bodySystem: orthopedic
 description: 肌肉或肌腱因過度伸展或過度負荷導致的急性損傷，從微小纖維撕裂到完全斷裂。活動量大的犬（工作犬、敏捷犬、獵犬）好發。
-
 aliases:
-  - { alias: "Muscle Tear", language: en }
-  - { alias: "Muscular Injury", language: en }
-  - { alias: "肌肉撕裂", language: zh }
-
+  - alias: Muscle Tear
+    language: en
+  - alias: Muscular Injury
+    language: en
+  - alias: 肌肉撕裂
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓偶見。
-
 etiology:
   categories:
     - name: 運動傷害
@@ -25,7 +25,6 @@ etiology:
         - 跳躍或扭轉
         - 暖身不足
         - 過度使用
-
 clinicalSigns:
   early:
     - 突然跛行
@@ -36,14 +35,12 @@ clinicalSigns:
     - 肌肉痙攣
     - 功能受限
     - 嚴重撕裂可觸及缺損
-
 diagnosis:
   primaryTests:
     - name: 觸診
       notes: 特定肌群壓痛、腫脹。比較對側
     - name: 超音波
       notes: 評估肌肉纖維撕裂程度
-
 treatment:
   principles:
     - 急性期RICE原則
@@ -53,36 +50,62 @@ treatment:
     - 限制活動 2-4 週
     - 物理治療（按摩、被動運動）
     - 逐步恢復運動量
-
 prognosis: 輕度至中度拉傷預後極佳。完全撕裂可能需手術修復。恢復期適當管理可預防復發。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Advances in the Clinical Diagnostics to Equine Back Pain: A Review of Imaging and Functional Modalities."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Advances in the Clinical Diagnostics to Equine Back Pain: A Review of Imaging and Functional Modalities.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10930837/
     type: review
-    pmid: "38473083"
+    pmid: '38473083'
   - sourceOrg: The Journal of experimental biology
     title: The functional role of the rabbit digastric muscle during mastication.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11449450/
     type: research
-    pmid: "39297179"
+    pmid: '39297179'
   - sourceOrg: The Journal of experimental biology
     title: The interaction of in vivo muscle operating lengths and passive stiffness in rat hindlimbs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10984277/
     type: research
-    pmid: "38353270"
-  - sourceOrg: "Journal of applied physiology (Bethesda, Md. : 1985)"
+    pmid: '38353270'
+  - sourceOrg: 'Journal of applied physiology (Bethesda, Md. : 1985)'
     title: Supraspinatus muscle architecture and physiology in a rabbit model of tenotomy and repair.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8828274/
     type: research
-    pmid: "34647843"
+    pmid: '34647843'
   - sourceOrg: Muscles, ligaments and tendons journal
     title: Time to recovery of sciatic function index after induced tibialis anterior strain in rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5774934/
     type: research
-    pmid: "29387654"
+    pmid: '29387654'
 pubmedQueries:
   - query: '"muscle strain" AND (veterinary OR canine) AND ("rehabilitation" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肌肉拉傷 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+        - seizures 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 觸診
+          notes: 特定肌群壓痛、腫脹。比較對側
+        - name: 超音波
+          notes: 評估肌肉纖維撕裂程度
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 急性期RICE原則
+        - 逐步恢復活動
+ddxSource: auto-generated

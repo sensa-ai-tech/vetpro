@@ -2,14 +2,18 @@ slug: trigeminal-neuritis
 nameEn: Trigeminal Neuritis
 nameZh: 三叉神經炎
 bodySystem: neurology
-description: 三叉神經炎（idiopathic trigeminal neuropathy）為第五對顱神經（trigeminal nerve, CN V）的急性特發性炎症性病變，導致咀嚼肌（masseter、temporalis、pterygoid）癱瘓。犬隻最常見，表現為急性無法閉合下顎（dropped jaw）。為自限性疾病，多數在 2-4 週內自行恢復。
-
+description: >-
+  三叉神經炎（idiopathic trigeminal neuropathy）為第五對顱神經（trigeminal nerve, CN
+  V）的急性特發性炎症性病變，導致咀嚼肌（masseter、temporalis、pterygoid）癱瘓。犬隻最常見，表現為急性無法閉合下顎（dropped jaw）。為自限性疾病，多數在 2-4 週內自行恢復。
 aliases:
-  - { alias: 三叉神經病變, language: zh }
-  - { alias: Idiopathic Trigeminal Neuropathy, language: en }
-  - { alias: Trigeminal Nerve Paralysis, language: en }
-  - { alias: Dropped Jaw, language: en }
-
+  - alias: 三叉神經病變
+    language: zh
+  - alias: Idiopathic Trigeminal Neuropathy
+    language: en
+  - alias: Trigeminal Nerve Paralysis
+    language: en
+  - alias: Dropped Jaw
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻三叉神經炎極罕見。偶有報告。
-
 etiology:
   categories:
     - name: 特發性
@@ -31,7 +34,6 @@ etiology:
         - 腦幹病變（腫瘤、炎症）
         - 咀嚼肌炎（masticatory muscle myositis, MMM）
         - 狂犬病（dropped jaw 為鑑別之一）
-
 clinicalSigns:
   early:
     - 急性下顎下垂（dropped jaw）——無法閉合下顎
@@ -43,14 +45,12 @@ clinicalSigns:
     - 體重減輕（進食困難）
     - 面部感覺可能正常或減退
     - 通常不影響精神狀態
-
 diagnosis:
   primaryTests:
     - name: 臨床表現
       notes: 急性雙側下顎下垂為高度提示性。下顎可被動閉合（與 TMJ 骨折或脫臼鑑別）。面部感覺評估（corneal reflex、nasal sensation）。
     - name: 鑑別診斷
       notes: 排除咀嚼肌炎（MMM）：2M antibody test（MMM 陽性）。排除狂犬病（病史與疫苗接種狀態）。腦部 MRI（排除腫瘤，若症狀不典型或未改善）。EMG 顯示咀嚼肌去神經化。
-
 treatment:
   principles:
     - 支持性治療為主
@@ -64,9 +64,59 @@ treatment:
     - 下顎綁帶（muzzle/chin sling）幫助閉合下顎（部分飼主可操作）
     - 類固醇治療效果不確定
     - 監測體重與水分狀態
-
 prognosis: 預後良好。特發性三叉神經炎為自限性疾病，約 85-90% 在 2-4 週內自行恢復。恢復通常完全。復發罕見。營養支持在恢復期很重要。若 4-6 週無改善需重新評估（排除腫瘤等其他原因）。
-
 pubmedQueries:
   - query: '"trigeminal neuritis" OR "trigeminal neuropathy" AND (veterinary OR canine) AND ("dropped jaw" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 三叉神經炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估下頜下垂無法閉合
+      findings:
+        - 下頜下垂（bilateral最常見）
+        - 無法拾取食物
+        - 流涎
+        - 角膜感覺可能保留
+    - step: 2
+      action: 神經學檢查
+      details: 三叉神經功能評估
+      findings:
+        - 下頜張力喪失
+        - 咬肌萎縮
+        - 角膜反射（感覺支評估）
+        - 排除其他腦神經異常
+    - step: 3
+      action: 影像排除
+      details: MRI排除結構性病變
+      findings:
+        - 三叉神經根增粗強化
+        - 排除腦幹病灶
+        - 排除腫瘤
+        - 排除中耳疾病
+    - step: 4
+      action: 臨床管理
+      details: 支持性照護與預後評估
+      findings:
+        - 輔助餵食技術指導
+        - 2-4週觀察自然恢復
+        - 排除潛在免疫介導病因
+        - 大多數4-6週恢復
+clinicalPearls:
+  - 「下顎下垂但吞嚥功能正常」是典型特徵
+  - 必須排除狂犬病（尤其在疫區）
+  - 營養支持是治療關鍵
+  - 通常2-4週開始改善
+  - 咀嚼肌萎縮可能在恢復後仍存在
+  - 與咀嚼肌肌炎鑑別：肌炎會痛且不能張口
+monitoringItems:
+  - 體重
+  - 進食能力
+  - 下顎功能恢復
+  - 咀嚼肌萎縮程度
+  - 吸入性肺炎徵象
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+ddxSource: book

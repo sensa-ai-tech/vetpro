@@ -3,12 +3,13 @@ nameEn: Ventricular Fibrillation
 nameZh: 心室顫動
 bodySystem: cardiac
 description: 心室肌肉無序且快速的顫動，無有效心輸出。為心跳停止形式之一,需立即心肺復甦及電擊去顫。
-
 aliases:
-  - { alias: 心室纖維性顫動, language: zh }
-  - { alias: V-fib, language: en }
-  - { alias: VF, language: en }
-
+  - alias: 心室纖維性顫動
+    language: zh
+  - alias: V-fib
+    language: en
+  - alias: VF
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 罕見，多為心跳停止終端心律
-
 etiology:
   categories:
     - name: 心臟疾病
@@ -33,7 +33,6 @@ etiology:
       examples:
         - 嚴重低體溫
         - 電解質嚴重異常
-
 clinicalSigns:
   early:
     - 無意識
@@ -42,17 +41,15 @@ clinicalSigns:
   progressive:
     - 心跳停止
     - 猝死
-
 diagnosis:
   primaryTests:
     - name: 心電圖
-      notes: "不規則波形，無可辨識 QRS 波"
+      notes: 不規則波形，無可辨識 QRS 波
     - name: 臨床評估
-      notes: "無脈搏、無意識"
+      notes: 無脈搏、無意識
   differentialDiagnoses:
     - 心搏停止
     - 無脈性電氣活動
-
 treatment:
   medical:
     - CPR (立即開始)
@@ -60,44 +57,64 @@ treatment:
     - Epinephrine 0.01 mg/kg IV/IO (low dose) 或 0.1 mg/kg (high dose)
     - Amiodarone 5 mg/kg IV bolus
     - 治療可逆原因 (低體溫、電解質)
-
 prognosis:
-  general: "預後極差；即使成功復甦，神經學預後不良；存活率 < 5%"
-
+  general: 預後極差；即使成功復甦，神經學預後不良；存活率 < 5%
 prevention:
   - 避免觸發因子 (電擊、低體溫)
   - 高風險病患監測
   - 早期識別及治療心律不整
-
-
 guidelineRefs:
   - sourceOrg: Resuscitation plus
-    title: "A recommended preclinical extracorporeal cardiopulmonary resuscitation model for neurological outcomes: A scoping review."
+    title: >-
+      A recommended preclinical extracorporeal cardiopulmonary resuscitation model for neurological outcomes: A scoping
+      review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10500026/
     type: review
-    pmid: "37719942"
+    pmid: '37719942'
     relevance: primary
   - sourceOrg: International journal of molecular sciences
     title: iPSC-Cardiomyocyte Models of Brugada Syndrome-Achievements, Challenges and Future Perspectives.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8001521/
     type: review
-    pmid: "33802229"
+    pmid: '33802229'
     relevance: primary
   - sourceOrg: International journal of molecular sciences
     title: Experimental Models of Brugada syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6539778/
     type: review
-    pmid: "31032819"
+    pmid: '31032819'
     relevance: supporting
   - sourceOrg: Scientific reports
-    title: Development and evaluation of a mechanical chest compression device for standardized rodent cardiopulmonary resuscitation.
+    title: >-
+      Development and evaluation of a mechanical chest compression device for standardized rodent cardiopulmonary
+      resuscitation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12689703/
     type: research
-    pmid: "41360911"
+    pmid: '41360911'
     relevance: supporting
   - sourceOrg: Acta Cardiologica Sinica
     title: Empagliflozin Ameliorates Atrial and Ventricular Remodeling and Arrhythmogenesis in an Overweight Rabbit Model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11579691/
     type: research
-    pmid: "39582852"
+    pmid: '39582852'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 心室顫動 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心電圖
+          notes: 不規則波形，無可辨識 QRS 波
+        - name: 臨床評估
+          notes: 無脈搏、無意識
+ddxSource: auto-generated

@@ -61,6 +61,12 @@ export default function RootLayout({
                 瀏覽疾病
               </Link>
               <Link
+                href="/ddx"
+                className="text-muted transition-colors hover:text-foreground"
+              >
+                鑑別診斷
+              </Link>
+              <Link
                 href="/references"
                 className="text-muted transition-colors hover:text-foreground"
               >

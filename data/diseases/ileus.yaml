@@ -2,14 +2,18 @@ slug: ileus
 nameEn: Ileus
 nameZh: 腸麻痺
 bodySystem: gastrointestinal
-description: 腸麻痺（functional ileus 或 paralytic ileus）為腸道蠕動功能減少或停止而無機械性阻塞的狀態。犬貓常見於腹部手術後（postoperative ileus, POI）、腹膜炎、嚴重電解質異常或全身性疾病。導致腸腔內容物滯留、腹脹、嘔吐與腸道細菌移位風險增加。
-
+description: >-
+  腸麻痺（functional ileus 或 paralytic ileus）為腸道蠕動功能減少或停止而無機械性阻塞的狀態。犬貓常見於腹部手術後（postoperative ileus,
+  POI）、腹膜炎、嚴重電解質異常或全身性疾病。導致腸腔內容物滯留、腹脹、嘔吐與腸道細菌移位風險增加。
 aliases:
-  - { alias: 腸道麻痺, language: zh }
-  - { alias: Paralytic Ileus, language: en }
-  - { alias: Functional Ileus, language: en }
-  - { alias: Postoperative Ileus, language: en }
-
+  - alias: 腸道麻痺
+    language: zh
+  - alias: Paralytic Ileus
+    language: en
+  - alias: Functional Ileus
+    language: en
+  - alias: Postoperative Ileus
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓隻腸麻痺可見於腹部手術後、腹膜炎、嚴重全身性疾病。
-
 etiology:
   categories:
     - name: 術後腸麻痺
@@ -32,7 +35,6 @@ etiology:
         - 敗血症
         - 嚴重疼痛
         - 藥物（opioids、抗膽鹼藥）
-
 clinicalSigns:
   early:
     - 腹脹
@@ -45,14 +47,12 @@ clinicalSigns:
     - 脫水與電解質異常
     - 腸道細菌移位（敗血症風險）
     - 腹痛
-
 diagnosis:
   primaryTests:
     - name: 腹部 X 光
       notes: 腸道瀰漫性液體與氣體擴張。無機械性阻塞的證據（無固定擴張點）。排除機械性腸阻塞。
     - name: 腹部超音波
       notes: 評估腸道蠕動（消失或顯著減少）。排除機械性阻塞。評估腹水。
-
 treatment:
   principles:
     - 治療基礎病因
@@ -60,42 +60,80 @@ treatment:
     - 促進腸道蠕動
   general:
     - 矯正電解質異常（特別是低血鉀）
-    - "促腸蠕動：Metoclopramide 1-2 mg/kg/day CRI"
-    - "Cisapride 0.5-1 mg/kg PO q8h"
+    - 促腸蠕動：Metoclopramide 1-2 mg/kg/day CRI
+    - Cisapride 0.5-1 mg/kg PO q8h
     - 減少或停用 opioids（改用 Butorphanol 或 Buprenorphine）
     - 胃減壓（nasogastric tube）
     - 早期腸道營養（經鼻食管管少量餵食）
     - 治療腹膜炎或感染
-
 prognosis: 術後腸麻痺多為暫時性，通常 24-72 小時內恢復。嚴重低血鉀矯正後蠕動恢復。腹膜炎引起的腸麻痺預後取決於基礎疾病控制。長時間腸麻痺增加細菌移位與敗血症風險。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
     title: 2022 ISFM Consensus Guidelines on Management of the Inappetent Hospitalised Cat.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11107985/
     type: consensus
-    pmid: "35775307"
+    pmid: '35775307'
   - sourceOrg: Frontiers in veterinary science
-    title: "Postoperative Ileus: Comparative Pathophysiology and Future Therapies."
+    title: 'Postoperative Ileus: Comparative Pathophysiology and Future Therapies.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8473635/
     type: review
-    pmid: "34589533"
+    pmid: '34589533'
   - sourceOrg: Journal of veterinary internal medicine
-    title: Retrospective study on the use of lidocaine constant rate infusions for the treatment of ileus in ruminants and camelids.
+    title: >-
+      Retrospective study on the use of lidocaine constant rate infusions for the treatment of ileus in ruminants and
+      camelids.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8692198/
     type: review
-    pmid: "34514646"
+    pmid: '34514646'
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: "Equine duodenitis-proximal jejunitis: A review."
+    title: 'Equine duodenitis-proximal jejunitis: A review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5901841/
     type: review
-    pmid: "29904204"
-  - sourceOrg: "Veterinary surgery : VS"
-    title: "Roux-en-Y procedure to reconstruct the upper gastrointestinal tract in six dogs and five cats: A descriptive case series."
+    pmid: '29904204'
+  - sourceOrg: 'Veterinary surgery : VS'
+    title: >-
+      Roux-en-Y procedure to reconstruct the upper gastrointestinal tract in six dogs and five cats: A descriptive case
+      series.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12282040/
     type: research
-    pmid: "40165710"
+    pmid: '40165710'
 pubmedQueries:
   - query: '"ileus" AND (veterinary OR canine OR feline) AND ("postoperative" OR "prokinetic" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: abdominal-distension
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 腸麻痺 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - vomiting 相關症狀
+        - abdominal-distension 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部 X 光
+          notes: 腸道瀰漫性液體與氣體擴張。無機械性阻塞的證據（無固定擴張點）。排除機械性腸阻塞。
+        - name: 腹部超音波
+          notes: 評估腸道蠕動（消失或顯著減少）。排除機械性阻塞。評估腹水。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 矯正電解質異常
+        - 促進腸道蠕動
+ddxSource: auto-generated

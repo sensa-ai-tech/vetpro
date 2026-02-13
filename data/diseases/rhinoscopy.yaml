@@ -3,12 +3,13 @@ nameEn: Rhinoscopy
 nameZh: 鼻腔鏡檢查
 bodySystem: other
 description: 鼻腔內視鏡檢查,評估鼻道、鼻甲、鼻咽部。用於慢性鼻炎、鼻出血、腫塊或異物診斷治療。
-
 aliases:
-  - { alias: 鼻內視鏡, language: zh }
-  - { alias: Nasal endoscopy, language: en }
-  - { alias: 鼻鏡檢查, language: zh }
-
+  - alias: 鼻內視鏡
+    language: zh
+  - alias: Nasal endoscopy
+    language: en
+  - alias: 鼻鏡檢查
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓慢性鼻炎、隱球菌病
-
 etiology:
   categories:
     - name: 診斷適應症
@@ -31,7 +31,6 @@ etiology:
         - 異物取出
         - 真菌團塊移除
         - 組織活檢
-
 clinicalSigns:
   early:
     - 術後鼻出血(前24小時正常)
@@ -40,19 +39,17 @@ clinicalSigns:
   progressive:
     - 症狀改善(若異物或感染治療)
     - 組織病理確診
-
 diagnosis:
   primaryTests:
     - name: 鼻腔鏡視診
-      notes: "評估鼻甲、分泌物、腫塊、異物"
+      notes: 評估鼻甲、分泌物、腫塊、異物
     - name: 鼻咽鏡檢查
-      notes: "逆行評估鼻咽部(軟顎後方)"
+      notes: 逆行評估鼻咽部(軟顎後方)
     - name: 活檢及培養
-      notes: "組織病理、真菌/細菌培養"
+      notes: 組織病理、真菌/細菌培養
   differentialDiagnoses:
     - CT/MRI(非侵入但無組織診斷)
     - 盲目活檢(準確性低)
-
 treatment:
   medical:
     - 麻醉:全身麻醉+氣管插管(防血液吸入)
@@ -60,45 +57,77 @@ treatment:
     - 活檢:避開骨板直接取黏膜
     - 術後:冰敷鼻樑,頭部抬高
     - 止血:術後Tranexamic acid 10-15 mg/kg IV(若需要)
-
 prognosis:
-  general: "安全性高,診斷率顯著提升。鼻腫瘤早期診斷改善預後。異物取出成功率>95%。術後出血多數自限性,極少需填塞。"
-
+  general: 安全性高,診斷率顯著提升。鼻腫瘤早期診斷改善預後。異物取出成功率>95%。術後出血多數自限性,極少需填塞。
 prevention:
   - 術前凝血功能評估
   - CT定位病灶範圍
   - 無菌技術
   - 術後監控過度出血或吸入性肺炎
-
-
 guidelineRefs:
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: Calcium carbonate rhinolithiasis associated with chronic lymphocytic rhinitis in a pet rabbit (Oryctolagus cuniculus).
+    title: >-
+      Calcium carbonate rhinolithiasis associated with chronic lymphocytic rhinitis in a pet rabbit (Oryctolagus
+      cuniculus).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11265829/
     type: case-report
-    pmid: "39091480"
+    pmid: '39091480'
     relevance: supporting
-  - sourceOrg: "Veterinary radiology &amp; ultrasound : the official journal of the American College of Veterinary Radiology and the International Veterinary Radiology Association"
+  - sourceOrg: >-
+      Veterinary radiology &amp; ultrasound : the official journal of the American College of Veterinary Radiology and
+      the International Veterinary Radiology Association
     title: Radiographic Characteristics of Feline Nasopharyngeal Stenosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12352471/
     type: research
-    pmid: "40810694"
+    pmid: '40810694'
     relevance: supporting
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Primary and Secondary Sinonasal Aspergillosis in Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12524304/
     type: research
-    pmid: "41096475"
+    pmid: '41096475'
     relevance: supporting
   - sourceOrg: Frontiers in veterinary science
-    title: Impact of culture-based bacteriological examination on diagnosis and treatment in cats with chronic nasal disease - Insights from a case series of 25 cats.
+    title: >-
+      Impact of culture-based bacteriological examination on diagnosis and treatment in cats with chronic nasal disease
+      - Insights from a case series of 25 cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12615214/
     type: research
-    pmid: "41246262"
+    pmid: '41246262'
     relevance: supporting
   - sourceOrg: Journal of feline medicine and surgery
-    title: Rigid normograde rhinoscopy-assisted traction-avulsion removal of small middle ear polyps from the auditory tube in five cats.
+    title: >-
+      Rigid normograde rhinoscopy-assisted traction-avulsion removal of small middle ear polyps from the auditory tube
+      in five cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10811977/
     type: research
-    pmid: "37384389"
+    pmid: '37384389'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: sneezing
+    frequency: common
+  - symptomId: epistaxis
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 鼻腔鏡檢查 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - sneezing 相關症狀
+        - epistaxis 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 鼻腔鏡視診
+          notes: 評估鼻甲、分泌物、腫塊、異物
+        - name: 鼻咽鏡檢查
+          notes: 逆行評估鼻咽部(軟顎後方)
+        - name: 活檢及培養
+          notes: 組織病理、真菌/細菌培養
+ddxSource: auto-generated

@@ -3,12 +3,13 @@ nameEn: Swimmer Puppy Syndrome
 nameZh: 游泳幼犬症候群
 bodySystem: other
 description: 新生幼犬因肌肉或神經發育異常，無法正常站立而呈四肢外展趴臥姿勢，外觀似游泳動作。早期物理治療可改善預後。
-
 aliases:
-  - { alias: 幼犬四肢外展症候群, language: zh }
-  - { alias: Swimming Puppy Syndrome, language: en }
-  - { alias: Flat Puppy Syndrome, language: en }
-
+  - alias: 幼犬四肢外展症候群
+    language: zh
+  - alias: Swimming Puppy Syndrome
+    language: en
+  - alias: Flat Puppy Syndrome
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 罕見，但有報告(稱為flat kitten)
-
 etiology:
   categories:
     - name: 可能原因
@@ -33,7 +33,6 @@ etiology:
         - 獨生或小窩數
         - 缺乏運動刺激
         - 營養不均衡
-
 clinicalSigns:
   early:
     - 2-4週齡無法正常站立
@@ -45,21 +44,19 @@ clinicalSigns:
     - 肌肉萎縮
     - 關節攣縮
     - 無法正常行走
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
-      notes: "評估肌肉張力、關節活動度、姿勢"
+      notes: 評估肌肉張力、關節活動度、姿勢
     - name: 胸部X光
-      notes: "評估胸廓形狀、肋骨異常"
+      notes: 評估胸廓形狀、肋骨異常
     - name: 神經學檢查
-      notes: "排除神經肌肉疾病"
+      notes: 排除神經肌肉疾病
   differentialDiagnoses:
     - 肌肉營養不良症
     - 神經肌肉疾病
     - 代謝性肌病
     - 骨骼畸形
-
 treatment:
   medical:
     - 物理治療(最重要)：每日3-4次，每次10-15分鐘
@@ -71,12 +68,45 @@ treatment:
     - 鼓勵站立及行走練習
     - 胸部束帶矯正扁平胸廓
     - 通常需治療2-4週
-
 prognosis:
-  general: "早期發現(2-3週)並積極物理治療，80%以上可完全恢復正常；延遲治療預後較差"
-
+  general: 早期發現(2-3週)並積極物理治療，80%以上可完全恢復正常；延遲治療預後較差
 prevention:
   - 提供適當地面材質(防滑)
   - 適量餵食避免過度肥胖
   - 鼓勵幼犬活動及與手足互動
   - 避免有病史犬隻繁殖
+diagnosticAlgorithm:
+  title: 游泳犬症候群 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估2-3週齡幼犬無法站立、四肢向外張開呈蛙腿姿勢、胸腹扁平
+      findings:
+        - 四肢向外側展開（蛙腿姿勢）
+        - 無法正常站立或行走
+        - 胸廓和腹部背腹扁平
+    - step: 2
+      action: 骨骼與神經學評估
+      details: 進行X光檢查評估胸廓和四肢骨骼，神經學檢查排除神經肌肉疾病
+      findings:
+        - X光顯示胸廓背腹扁平
+        - 四肢骨骼結構正常（非先天骨骼畸形）
+        - 神經反射正常排除神經病變
+    - step: 3
+      action: 確診
+      details: 根據年齡、典型姿勢和體型特徵臨床確診，排除其他先天性骨骼或神經疾病
+      findings:
+        - 臨床表現典型即可確診
+        - 排除先天性骨骼發育異常
+        - 早期物理治療預後良好
+clinicalPearls:
+  - 粗糙地面是最簡單有效的預防和治療措施
+  - 早期介入是成功治療的關鍵
+  - 過度營養和光滑地面是最常見的可控風險因素
+  - 嚴重扁平胸可能壓迫心肺導致呼吸困難
+monitoringItems:
+  - 站立和行走能力進展
+  - 胸廓形狀恢復
+  - 體重增長（避免過重）
+  - 呼吸功能
+ddxSource: book

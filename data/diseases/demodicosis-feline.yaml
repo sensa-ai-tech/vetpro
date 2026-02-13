@@ -3,24 +3,22 @@ nameEn: Demodicosis Feline
 nameZh: Demodicosis Feline
 bodySystem: dermatology
 description: 皮膚疾病,可能影響皮膚完整性、毛髮生長或引起不適。需皮膚科檢查與實驗室診斷確定病因。
-
 aliases:
-  - { alias: Demodicosis Feline, language: zh }
-  - { alias: Demodicosis Feline, language: en }
-
+  - alias: Demodicosis Feline
+    language: zh
+  - alias: Demodicosis Feline
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 感染(細菌、真菌、寄生蟲)
       examples:
         - 過敏
         - 免疫介導
-
 clinicalSigns:
   early:
     - 搔癢
@@ -28,53 +26,67 @@ clinicalSigns:
   progressive:
     - 皮膚增厚
     - 色素沉著
-
 diagnosis:
   primaryTests:
     - name: 皮膚刮搔檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: 毛髮拔除檢查
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 局部治療(藥浴、藥膏)
     - 全身性抗生素或抗真菌藥
-
 prognosis:
-  general: "預後取決於根本病因。感染性疾病治療後多可痊癒,免疫或遺傳性疾病需長期管理。"
-
+  general: 預後取決於根本病因。感染性疾病治療後多可痊癒,免疫或遺傳性疾病需長期管理。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: "The most effective systemic treatment in cats with otodectic mange: A critically appraised topic."
+    title: 'The most effective systemic treatment in cats with otodectic mange: A critically appraised topic.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12152695/
     type: review
-    pmid: "40510273"
+    pmid: '40510273'
   - sourceOrg: Open veterinary journal
     title: Main mites associated with dermatopathies present in dogs and other members of the Canidae family.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10105784/
     type: review
-    pmid: "37073249"
+    pmid: '37073249'
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: "Sarolaner/selamectin spot-on: An effective treatment of generalized demodicosis due to Demodex cati in a cat."
+    title: 'Sarolaner/selamectin spot-on: An effective treatment of generalized demodicosis due to Demodex cati in a cat.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12330753/
     type: case-report
-    pmid: "40786743"
+    pmid: '40786743'
   - sourceOrg: Veterinary medicine and science
-    title: "Feline sarcoptic mange in Poland: A case series of three cats."
+    title: 'Feline sarcoptic mange in Poland: A case series of three cats.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11167402/
     type: case-report
-    pmid: "38864312"
+    pmid: '38864312'
   - sourceOrg: BMC veterinary research
     title: First case report of dermatitis associated with Leporacarus gibbus in cat.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7786979/
     type: case-report
-    pmid: "33407465"
+    pmid: '33407465'
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: common
+diagnosticAlgorithm:
+  title: Demodicosis Feline 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 皮膚刮搔檢查
+          notes: 需詳細評估
+        - name: 毛髮拔除檢查
+          notes: 協助確診
+ddxSource: auto-generated

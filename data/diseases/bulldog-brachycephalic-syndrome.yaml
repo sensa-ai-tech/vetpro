@@ -3,18 +3,19 @@ nameEn: Bulldog Brachycephalic Syndrome
 nameZh: 鬥牛犬短頭症候群
 bodySystem: respiratory
 description: 短頭症候群（BOAS）是鬥牛犬（英國鬥牛犬）最重要的健康問題，因顱骨短縮導致上呼吸道解剖結構異常。包括狹窄鼻孔、軟顎過長、喉囊外翻與氣管發育不全。嚴重影響呼吸功能、體溫調節與生活品質。
-
 aliases:
-  - { alias: 鬥牛犬呼吸道阻塞, language: zh }
-  - { alias: 短頭犬阻塞性呼吸道症候群, language: zh }
-  - { alias: Bulldog BOAS, language: en }
-  - { alias: Brachycephalic obstructive airway syndrome, language: en }
-
+  - alias: 鬥牛犬呼吸道阻塞
+    language: zh
+  - alias: 短頭犬阻塞性呼吸道症候群
+    language: zh
+  - alias: Bulldog BOAS
+    language: en
+  - alias: Brachycephalic obstructive airway syndrome
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
     notes: 英國鬥牛犬為最嚴重受影響品種之一。幾乎所有英鬥都有不同程度的 BOAS。法國鬥牛犬、巴哥犬亦高度好發。
-
 etiology:
   categories:
     - name: 解剖異常
@@ -29,7 +30,6 @@ etiology:
         - 喉門塌陷（晚期）
         - 食道功能異常
         - 胃食道逆流
-
 clinicalSigns:
   early:
     - 打鼾
@@ -44,7 +44,6 @@ clinicalSigns:
     - 睡眠呼吸中止
     - 嘔吐/反胃
     - 喉門塌陷（終末期）
-
 diagnosis:
   primaryTests:
     - name: 臨床檢查
@@ -53,7 +52,6 @@ diagnosis:
       notes: 麻醉下評估軟顎長度、喉囊外翻、喉門塌陷程度
     - name: 胸腔 X 光
       notes: 評估氣管直徑（TD/TI 比值）。排除肺部病變
-
 treatment:
   principles:
     - 早期手術矯正解剖異常
@@ -69,36 +67,74 @@ treatment:
     - 避免高溫環境
     - 使用胸背帶（避免頸部壓迫）
     - 嚴重者術後可能需暫時氣管切開
-
 prognosis: 早期手術（1-2 歲）預後較好，可顯著改善呼吸功能與生活品質。延遲手術且已有喉門塌陷者預後較差。氣管發育不全為不可逆的預後限制因素。中暑為重大風險，需終生避免過熱。繁殖改善（選擇較開放鼻孔的個體）為長期品種健康改善策略。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Dermatological Problems of Brachycephalic Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10294810/
     type: review
-    pmid: "37370526"
+    pmid: '37370526'
   - sourceOrg: The veterinary quarterly
-    title: "Brachycephalic obstructive airway syndrome: much more than a surgical problem."
+    title: 'Brachycephalic obstructive airway syndrome: much more than a surgical problem.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9673814/
     type: review
-    pmid: "36342210"
+    pmid: '36342210'
   - sourceOrg: Brazilian journal of veterinary medicine
     title: The prevalence of aberrant turbinates and nasal septum deviation in a Portuguese population of French bulldogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12616748/
     type: research
-    pmid: "41246251"
+    pmid: '41246251'
   - sourceOrg: Frontiers in veterinary science
     title: Challenges of transsphenoidal pituitary surgery in severe brachycephalic dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10318542/
     type: research
-    pmid: "37408830"
+    pmid: '37408830'
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: Radiographic tracheal dimensions in brachycephalic breeds before and after surgical treatment for brachycephalic airway syndrome.
+    title: >-
+      Radiographic tracheal dimensions in brachycephalic breeds before and after surgical treatment for brachycephalic
+      airway syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7424946/
     type: research
-    pmid: "32879523"
+    pmid: '32879523'
 pubmedQueries:
   - query: '"Bulldog" AND ("brachycephalic" OR "BOAS") AND (surgery OR treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: sneezing
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 鬥牛犬短頭症候群 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - sneezing 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床檢查
+          notes: 評估鼻孔狹窄程度。聽診上呼吸道雜音。BOAS 功能評估分級
+        - name: 喉部內視鏡
+          notes: 麻醉下評估軟顎長度、喉囊外翻、喉門塌陷程度
+        - name: 胸腔 X 光
+          notes: 評估氣管直徑（TD/TI 比值）。排除肺部病變
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 早期手術矯正解剖異常
+        - 體重管理
+        - 避免過熱與劇烈運動
+ddxSource: auto-generated

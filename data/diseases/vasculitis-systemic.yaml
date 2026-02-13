@@ -3,13 +3,15 @@ nameEn: Vasculitis Systemic
 nameZh: 全身性血管炎
 bodySystem: vascular
 description: 全身性血管壁的炎症性疾病，可累及多個器官系統的小至中型血管，導致組織缺血、壞死及器官功能障礙，病因包括免疫介導性、感染性及藥物反應。
-
 aliases:
-  - { alias: 系統性血管炎, language: zh }
-  - { alias: 多系統血管炎, language: zh }
-  - { alias: Systemic vasculitis, language: en }
-  - { alias: Polyarteritis, language: en }
-
+  - alias: 系統性血管炎
+    language: zh
+  - alias: 多系統血管炎
+    language: zh
+  - alias: Systemic vasculitis
+    language: en
+  - alias: Polyarteritis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓全身性血管炎罕見，可與 FIP（貓傳染性腹膜炎）相關。
-
 etiology:
   categories:
     - name: 免疫介導性
@@ -34,7 +35,6 @@ etiology:
         - 貓傳染性腹膜炎（FIP）
         - 細菌性心內膜炎
         - Rocky Mountain spotted fever
-
 clinicalSigns:
   early:
     - 發燒
@@ -48,22 +48,20 @@ clinicalSigns:
     - 腎功能異常
     - 多器官功能障礙
     - 水腫
-
 diagnosis:
   primaryTests:
     - name: 皮膚/組織生檢
-      notes: "組織病理學確診。典型表現為血管壁纖維素樣壞死、中性球浸潤（白血球碎裂性血管炎）"
+      notes: 組織病理學確診。典型表現為血管壁纖維素樣壞死、中性球浸潤（白血球碎裂性血管炎）
     - name: 壁蝨傳播疾病篩檢
-      notes: "4DX SNAP test + Ehrlichia/Rickettsia 定量 PCR"
+      notes: 4DX SNAP test + Ehrlichia/Rickettsia 定量 PCR
     - name: 血液學檢查
-      notes: "CBC、生化、尿液分析、ANA、類風濕因子、Coombs test"
+      notes: CBC、生化、尿液分析、ANA、類風濕因子、Coombs test
   differentialDiagnoses:
     - 瀰漫性血管內凝血（DIC）
     - 冷凝集素病
     - 壁蝨傳播疾病
     - 全身性紅斑狼瘡
     - 藥物反應
-
 treatment:
   medical:
     - 感染性——針對病原治療（Doxycycline 5-10 mg/kg PO BID 4-6 週）
@@ -75,20 +73,46 @@ treatment:
   surgical:
     - 壞死組織清創
     - 嚴重壞死——截肢或截趾
-
 prognosis:
-  general: "感染性血管炎經適當抗菌治療預後良好。免疫介導性需長期免疫抑制，多數可控制但可能復發。多器官受累者預後較差。"
-
+  general: 感染性血管炎經適當抗菌治療預後良好。免疫介導性需長期免疫抑制，多數可控制但可能復發。多器官受累者預後較差。
 prevention:
   - 壁蝨預防（定期使用驅蟲藥）
   - 監測藥物反應
   - 早期診斷與治療
-
-
 guidelineRefs:
   - sourceOrg: Rheumatology international
     title: Rat bite fever mimicking ANCA-associated vasculitis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10435600/
     type: review
-    pmid: "37450033"
+    pmid: '37450033'
     relevance: primary
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 全身性血管炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - weakness 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 皮膚/組織生檢
+          notes: 組織病理學確診。典型表現為血管壁纖維素樣壞死、中性球浸潤（白血球碎裂性血管炎）
+        - name: 壁蝨傳播疾病篩檢
+          notes: 4DX SNAP test + Ehrlichia/Rickettsia 定量 PCR
+        - name: 血液學檢查
+          notes: CBC、生化、尿液分析、ANA、類風濕因子、Coombs test
+ddxSource: auto-generated

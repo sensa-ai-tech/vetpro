@@ -3,22 +3,20 @@ nameEn: Chinchilla Vitamin Deficiency
 nameZh: 龍貓維生素缺乏症
 bodySystem: metabolic
 description: 龍貓飲食中維生素攝入不足導致的營養缺乏，包括維生素 A、E 及 B 群缺乏。主要見於飲食不均衡或品質差的顆粒飼料餵養者。
-
 aliases:
-  - { alias: "龍貓維生素缺乏症", language: zh }
-  - { alias: "Chinchilla Vitamin Deficiency", language: en }
-
+  - alias: 龍貓維生素缺乏症
+    language: zh
+  - alias: Chinchilla Vitamin Deficiency
+    language: en
 species:
   - speciesCommon: chinchilla
     prevalence: uncommon
     notes: 龍貓可受此疾病影響。
-
 etiology:
   categories:
     - name: 病因
       examples:
         - 詳見臨床文獻
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -27,14 +25,12 @@ clinicalSigns:
   progressive:
     - 症狀加重
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 完整理學檢查與病史評估。
     - name: 實驗室檢查
       notes: CBC/生化排除系統性疾病。
-
 treatment:
   principles:
     - 治療基礎病因
@@ -44,26 +40,62 @@ treatment:
     - 依病因治療
     - 支持性照護
     - 定期追蹤
-
 prognosis: 預後取決於疾病嚴重度與治療時效。早期診斷與適當治療可改善預後。
-
-
 guidelineRefs:
   - sourceOrg: The veterinary clinics of North America. Exotic animal practice
     title: Ocular Surface Disease in Rodents (Guinea Pigs, Mice, Rats, Chinchillas).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7110570/
     type: review
-    pmid: "30454759"
-  - sourceOrg: "Journal of bone and mineral research : the official journal of the American Society for Bone and Mineral Research"
-    title: "Calcifediol is superior to cholecalciferol in improving vitamin D status in postmenopausal women: a randomized trial."
+    pmid: '30454759'
+  - sourceOrg: 'Journal of bone and mineral research : the official journal of the American Society for Bone and Mineral Research'
+    title: >-
+      Calcifediol is superior to cholecalciferol in improving vitamin D status in postmenopausal women: a randomized
+      trial.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8597097/
     type: research
-    pmid: "34101900"
-  - sourceOrg: "Journal of bone and mineral research : the official journal of the American Society for Bone and Mineral Research"
-    title: "Long-Term Treatment and Effect of Discontinuation of Calcifediol in Postmenopausal Women with Vitamin D Deficiency: A Randomized Trial."
+    pmid: '34101900'
+  - sourceOrg: 'Journal of bone and mineral research : the official journal of the American Society for Bone and Mineral Research'
+    title: >-
+      Long-Term Treatment and Effect of Discontinuation of Calcifediol in Postmenopausal Women with Vitamin D
+      Deficiency: A Randomized Trial.
     url: https://pubmed.ncbi.nlm.nih.gov/36661855/
     type: research
-    pmid: "36661855"
+    pmid: '36661855'
 pubmedQueries:
   - query: '"Chinchilla Vitamin Deficiency" AND (veterinary OR chinchilla) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 龍貓維生素缺乏症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 完整理學檢查與病史評估。
+        - name: 實驗室檢查
+          notes: CBC/生化排除系統性疾病。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 支持性照護
+        - 監測恢復進度
+ddxSource: auto-generated

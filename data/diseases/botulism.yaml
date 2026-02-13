@@ -3,13 +3,15 @@ nameEn: Botulism
 nameZh: 肉毒桿菌中毒
 bodySystem: infectious
 description: 由肉毒桿菌（Clostridium botulinum）產生的神經毒素引起的急性下運動神經元癱瘓。毒素阻斷神經肌肉接合處乙醯膽鹼的釋放，導致進行性弛緩性麻痺。犬最常因攝食腐敗動物屍體或未煮熟食物而感染，貓極罕見。
-
 aliases:
-  - { alias: 肉毒桿菌毒素中毒, language: zh }
-  - { alias: 肉毒中毒, language: zh }
-  - { alias: Botulinum Toxicosis, language: en }
-  - { alias: Clostridial Neurotoxicosis, language: en }
-
+  - alias: 肉毒桿菌毒素中毒
+    language: zh
+  - alias: 肉毒中毒
+    language: zh
+  - alias: Botulinum Toxicosis
+    language: en
+  - alias: Clostridial Neurotoxicosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓對肉毒桿菌毒素的敏感度較犬低，臨床病例極為罕見。文獻僅有零星報告。
-
 etiology:
   categories:
     - name: 病原體與毒素
@@ -39,7 +40,6 @@ etiology:
         - 毒素結合周邊膽鹼能神經末梢突觸前膜
         - 毒素裂解 SNARE 蛋白，阻斷乙醯膽鹼囊泡的突觸融合與釋放
         - 導致骨骼肌、平滑肌與腺體功能障礙
-
 clinicalSigns:
   early:
     - 後肢無力（通常最先出現）
@@ -60,18 +60,19 @@ clinicalSigns:
     - 尿滯留
     - 便秘或腸蠕動停止
     - 繼發性吸入性肺炎
-
 diagnosis:
   primaryTests:
     - name: 臨床診斷為主
-      notes: "典型表現：攝食可疑食物後 12-72 小時出現急性、對稱性、上行性弛緩性癱瘓。意識清醒、感覺正常。脊椎反射減弱或消失。深部痛覺通常保留。"
+      notes: 典型表現：攝食可疑食物後 12-72 小時出現急性、對稱性、上行性弛緩性癱瘓。意識清醒、感覺正常。脊椎反射減弱或消失。深部痛覺通常保留。
     - name: 食物與糞便毒素檢測
-      notes: "小鼠生物試驗（mouse bioassay）為金標準但耗時（需送外部實驗室）。取可疑食物、嘔吐物或糞便樣本。ELISA 法可較快獲得結果但敏感度較低。"
+      notes: 小鼠生物試驗（mouse bioassay）為金標準但耗時（需送外部實驗室）。取可疑食物、嘔吐物或糞便樣本。ELISA 法可較快獲得結果但敏感度較低。
   imaging:
     - name: 胸腔 X 光
-      notes: "評估吸入性肺炎風險。可能見到 megaesophagus（食道擴張）。"
+      notes: 評估吸入性肺炎風險。可能見到 megaesophagus（食道擴張）。
     - name: 電生理學檢查
-      notes: "EMG 可見運動神經傳導速度正常但 CMAP 振幅降低。重複神經刺激可見遞減反應（decremental response），高頻刺激可能見到遞增現象（incremental response）。有助於與其他 LMN 疾病鑑別。"
+      notes: >-
+        EMG 可見運動神經傳導速度正常但 CMAP 振幅降低。重複神經刺激可見遞減反應（decremental response），高頻刺激可能見到遞增現象（incremental response）。有助於與其他 LMN
+        疾病鑑別。
   differentialDiagnoses:
     - 蜱癱瘓 (Tick Paralysis)
     - 急性多發性神經根炎 (Polyradiculoneuritis / Coonhound Paralysis)
@@ -82,7 +83,6 @@ diagnosis:
   additional:
     - CBC 與生化通常正常
     - CSF 分析正常（排除感染性疾病）
-
 treatment:
   principles:
     - 以支持性照護為主（毒素結合不可逆，需等待新突觸再生）
@@ -90,45 +90,47 @@ treatment:
     - 預防併發症（褥瘡、尿路感染、吸入性肺炎）
     - 營養支持
   general:
-    - "Type C 抗毒素：犬用 C. botulinum Type C antitoxin（如可取得），早期給予效果最佳（僅中和游離毒素）"
-    - "呼吸支持：嚴重呼吸肌無力時需機械通氣或氧氣補充"
-    - "靜脈輸液：維持水合狀態與電解質平衡"
-    - "營養支持：鼻胃管或食道造口管餵食（吞嚥困難時），避免強迫口服餵食以防吸入性肺炎"
-    - "護理照護：每 2-4 小時翻身（預防褥瘡）、軟墊床鋪、保持乾淨乾燥"
-    - "膀胱管理：定時膀胱觸診或擠壓；必要時放置尿導管"
-    - "吸入性肺炎預防與治療：Ampicillin-sulbactam 20 mg/kg IV q8h 或 Amoxicillin-clavulanate 12.5-25 mg/kg PO q12h"
-    - "物理治療：被動關節活動，維持肌肉與關節功能"
-    - "催吐或洗胃：僅在攝食可疑食物後短時間內（< 2 小時）考慮"
-    - "活性碳：1-2 g/kg PO（攝食後早期使用，減少毒素吸收）"
-
-prognosis: 輕至中度病例（仍可行走或僅癱臥但無呼吸障礙）預後良好，多數犬在 1-3 週內逐漸恢復。嚴重呼吸肌麻痺者預後較差，需長期加護照護。併發吸入性肺炎顯著增加死亡率。整體存活率約 60-80%（取決於嚴重程度與照護品質）。恢復過程可能需要 2-6 週，因為需等待新的神經末梢突觸再生。
-
+    - Type C 抗毒素：犬用 C. botulinum Type C antitoxin（如可取得），早期給予效果最佳（僅中和游離毒素）
+    - 呼吸支持：嚴重呼吸肌無力時需機械通氣或氧氣補充
+    - 靜脈輸液：維持水合狀態與電解質平衡
+    - 營養支持：鼻胃管或食道造口管餵食（吞嚥困難時），避免強迫口服餵食以防吸入性肺炎
+    - 護理照護：每 2-4 小時翻身（預防褥瘡）、軟墊床鋪、保持乾淨乾燥
+    - 膀胱管理：定時膀胱觸診或擠壓；必要時放置尿導管
+    - 吸入性肺炎預防與治療：Ampicillin-sulbactam 20 mg/kg IV q8h 或 Amoxicillin-clavulanate 12.5-25 mg/kg PO q12h
+    - 物理治療：被動關節活動，維持肌肉與關節功能
+    - 催吐或洗胃：僅在攝食可疑食物後短時間內（< 2 小時）考慮
+    - 活性碳：1-2 g/kg PO（攝食後早期使用，減少毒素吸收）
+prognosis: >-
+  輕至中度病例（仍可行走或僅癱臥但無呼吸障礙）預後良好，多數犬在 1-3 週內逐漸恢復。嚴重呼吸肌麻痺者預後較差，需長期加護照護。併發吸入性肺炎顯著增加死亡率。整體存活率約 60-80%（取決於嚴重程度與照護品質）。恢復過程可能需要
+  2-6 週，因為需等待新的神經末梢突觸再生。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Internal Medicine
-    title: "Botulism in dogs: a retrospective study of 20 cases"
+    title: 'Botulism in dogs: a retrospective study of 20 cases'
     url: https://pubmed.ncbi.nlm.nih.gov/16496924/
     type: review
-    pmid: "16496924"
+    pmid: '16496924'
   - sourceOrg: Veterinary Record
     title: Clinical presentation of dogs with suspected botulism
     url: https://pubmed.ncbi.nlm.nih.gov/30910828/
     type: research
-    pmid: "30910828"
+    pmid: '30910828'
   - sourceOrg: Neuromuscular Disorders
-    title: "Botulism: an update on the pathophysiology and treatment"
+    title: 'Botulism: an update on the pathophysiology and treatment'
     url: https://pubmed.ncbi.nlm.nih.gov/28732652/
     type: review
-    pmid: "28732652"
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Botulism in fish: a review."
+    pmid: '28732652'
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: 'Botulism in fish: a review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11110784/
     type: review
-    pmid: "38465871"
+    pmid: '38465871'
   - sourceOrg: Toxins
     title: Historical Perspectives and Guidelines for Botulinum Neurotoxin Subtype Nomenclature.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5308270/
     type: guideline
-    pmid: "28106761"
+    pmid: '28106761'
     relevance: primary
 pubmedQueries:
   - query: '"botulism" AND (dog OR canine) AND ("treatment" OR "diagnosis" OR "prognosis")'
@@ -137,6 +139,70 @@ pubmedQueries:
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "GEN"
-  sectionTitle: "BOTULISM"
+  chapter: GEN
+  sectionTitle: BOTULISM
   pdfPage: 646
+diagnosticAlgorithm:
+  title: 肉毒桿菌中毒 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估急性弛緩性麻痺與食物暴露史
+      findings:
+        - 急性對稱性下運動神經元麻痺
+        - 從後肢開始上行性癱瘓
+        - 吞嚥困難與發聲困難
+        - 腐敗食物或動物屍體攝食史
+    - step: 2
+      action: 神經學檢查
+      details: 詳細神經學評估
+      findings:
+        - 四肢弛緩性癱瘓
+        - 脊髓反射減弱或消失
+        - 顱神經功能異常（面部肌肉無力）
+        - 感覺功能保留
+    - step: 3
+      action: 排除性診斷
+      details: 排除其他神經肌肉疾病
+      findings:
+        - EMG可見傳導異常
+        - Tensilon試驗排除重症肌無力
+        - CSF分析通常正常
+        - 排除壁蝨麻痺
+    - step: 4
+      action: 確診
+      details: 毒素檢測確認（耗時且不易取得）
+      findings:
+        - 血清或糞便肉毒桿菌毒素檢測
+        - 小鼠生物測定法
+        - 嫌疑食物來源分析
+        - 臨床表現+暴露史推斷性診斷常用
+clinicalPearls:
+  - 肉毒桿菌中毒=弛緩性麻痺；破傷風=強直性痙攣——兩者都是梭菌毒素引起但機制和表現完全相反
+  - 蜱麻痺是最重要的鑑別診斷——所有弛緩性麻痺犬都必須仔細全身搜索蜱蟲
+  - 意識清楚但全身麻痺是肉毒桿菌中毒的特點（毒素不通過BBB）
+  - 恢復需時1-3週（新神經末梢再生）
+  - 攝入腐敗食物/動物屍體的病史是關鍵診斷線索
+monitoringItems:
+  - 呼吸頻率和努力程度持續監測（最關鍵——呼吸衰竭是主要死因）
+  - 每日神經功能評估追蹤恢復進程
+  - 褥瘡和泌尿道感染監測
+  - 營養攝入和體重
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: mydriasis
+    frequency: common
+ddxSource: book

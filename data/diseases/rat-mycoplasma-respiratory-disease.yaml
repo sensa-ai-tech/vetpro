@@ -3,22 +3,20 @@ nameEn: Rat Mycoplasma Respiratory Disease
 nameZh: 大鼠支原體呼吸道疾病
 bodySystem: respiratory
 description: 由 Mycoplasma pulmonis 引起的大鼠慢性呼吸道疾病，為家養大鼠最常見且最重要的疾病。終身帶原且無法根治，只能控制症狀。表現為打噴嚏、鼻分泌物及呼吸囉音。
-
 aliases:
-  - { alias: "大鼠支原體呼吸道疾病", language: zh }
-  - { alias: "Rat Mycoplasma Respiratory Disease", language: en }
-
+  - alias: 大鼠支原體呼吸道疾病
+    language: zh
+  - alias: Rat Mycoplasma Respiratory Disease
+    language: en
 species:
   - speciesCommon: rat
     prevalence: uncommon
     notes: 大鼠可受此疾病影響。
-
 etiology:
   categories:
     - name: 病因
       examples:
         - 詳見臨床文獻
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -27,14 +25,12 @@ clinicalSigns:
   progressive:
     - 症狀加重
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 完整理學檢查與病史評估。
     - name: 實驗室檢查
       notes: CBC/生化排除系統性疾病。
-
 treatment:
   principles:
     - 治療基礎病因
@@ -44,41 +40,81 @@ treatment:
     - 依病因治療
     - 支持性照護
     - 定期追蹤
-
 prognosis: 預後取決於疾病嚴重度與治療時效。早期診斷與適當治療可改善預後。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in microbiology
     title: The History of Mycoplasma pneumoniae Pneumonia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4801885/
     type: review
-    pmid: "27047477"
+    pmid: '27047477'
     relevance: supporting
   - sourceOrg: Scientific reports
-    title: Differences of respiratory tract flora and metabonomic characteristics of lung lavage fluid in pneumoconiosis model rats.
+    title: >-
+      Differences of respiratory tract flora and metabonomic characteristics of lung lavage fluid in pneumoconiosis
+      model rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12830854/
     type: research
-    pmid: "41436589"
+    pmid: '41436589'
     relevance: supporting
   - sourceOrg: PLoS pathogens
-    title: "Ureaplasma-driven inhibition of the epithelial Na+ transport in fetal alveolar cells: A novel mechanism of Ureaplasma-mediated preterm lung disease."
+    title: >-
+      Ureaplasma-driven inhibition of the epithelial Na+ transport in fetal alveolar cells: A novel mechanism of
+      Ureaplasma-mediated preterm lung disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12768415/
     type: research
-    pmid: "41460889"
+    pmid: '41460889'
     relevance: supporting
   - sourceOrg: Journal of translational medicine
-    title: The treatment of Qibai Pingfei Capsule on chronic obstructive pulmonary disease may be mediated by Th17/Treg balance and gut-lung axis microbiota.
+    title: >-
+      The treatment of Qibai Pingfei Capsule on chronic obstructive pulmonary disease may be mediated by Th17/Treg
+      balance and gut-lung axis microbiota.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9210581/
     type: research
-    pmid: "35729584"
+    pmid: '35729584'
     relevance: supporting
   - sourceOrg: Antimicrobial agents and chemotherapy
-    title: "Tissue Distribution of [14C]-Lefamulin into the Urogenital Tract in Rats."
+    title: Tissue Distribution of [14C]-Lefamulin into the Urogenital Tract in Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9380576/
     type: research
-    pmid: "35862748"
+    pmid: '35862748'
     relevance: supporting
 pubmedQueries:
   - query: '"Rat Mycoplasma Respiratory Disease" AND (veterinary OR rat) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: sneezing
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 大鼠支原體呼吸道疾病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 完整理學檢查與病史評估。
+        - name: 實驗室檢查
+          notes: CBC/生化排除系統性疾病。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 支持性照護
+        - 監測恢復進度
+ddxSource: auto-generated

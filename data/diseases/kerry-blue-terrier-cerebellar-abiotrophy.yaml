@@ -3,18 +3,18 @@ nameEn: Kerry Blue Terrier Cerebellar Abiotrophy
 nameZh: 凱利藍㹴小腦退化症
 bodySystem: other
 description: 凱利藍㹴的遺傳性小腦神經元進行性退化疾病。幼犬9-16週齡開始出現運動失調症狀,隨年齡逐漸惡化,最終嚴重影響行動能力。
-
 aliases:
-  - { alias: 小腦退化症, language: zh }
-  - { alias: Cerebellar Abiotrophy, language: en }
-  - { alias: Cerebellar Cortical Abiotrophy, language: en }
-
+  - alias: 小腦退化症
+    language: zh
+  - alias: Cerebellar Abiotrophy
+    language: en
+  - alias: Cerebellar Cortical Abiotrophy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 凱利藍㹴為主要好發品種,體染色體隱性遺傳
-
 etiology:
   categories:
     - name: 遺傳性神經退化
@@ -22,7 +22,6 @@ etiology:
         - 小腦浦金氏細胞(Purkinje cell)過早死亡
         - 體染色體隱性遺傳
         - 神經元代謝缺陷
-
 clinicalSigns:
   early:
     - 輕度運動失調(9-16週齡)
@@ -34,18 +33,16 @@ clinicalSigns:
     - 眼球震顫
     - 過度伸展步態
     - 12-18月齡時症狀最嚴重
-
 diagnosis:
   primaryTests:
     - name: MRI腦部掃描
-      notes: "小腦萎縮,尤其是小腦皮質,第四腦室擴大"
+      notes: 小腦萎縮,尤其是小腦皮質,第四腦室擴大
     - name: 神經學檢查
-      notes: "進行性小腦性運動失調,無意識或智力障礙"
+      notes: 進行性小腦性運動失調,無意識或智力障礙
   differentialDiagnoses:
     - 小腦發育不全
     - 小腦炎
     - 儲積症
-
 treatment:
   medical:
     - 無特效治療
@@ -53,11 +50,60 @@ treatment:
     - 營養支持(易於進食的食器)
     - 物理復健(延緩肌肉萎縮)
     - 生活品質評估
-
 prognosis:
-  general: "預後不良,症狀進行性惡化。多數犬隻在1-2歲時因生活品質過差而實施安樂死。無治癒方法。"
-
+  general: 預後不良,症狀進行性惡化。多數犬隻在1-2歲時因生活品質過差而實施安樂死。無治癒方法。
 prevention:
   - 受影響犬隻及其親代不應繁殖
   - 基因檢測篩除帶因者
   - 繁殖前遺傳諮詢
+diagnosticAlgorithm:
+  title: 小腦萎縮症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 收集品種和年齡資訊，評估小腦功能障礙症狀
+      findings:
+        - 幼年至青年期發病
+        - 品種易感性（澳洲牧羊犬、Kerry Blue Terrier等）
+        - 進行性共濟失調
+        - 意向性震顫
+    - step: 2
+      action: 神經學檢查
+      details: 進行完整神經學檢查確認小腦病變
+      findings:
+        - 過度測量步態（hypermetria）
+        - 寬基步態
+        - 頭部震顫
+        - 威脅反應缺失但視力正常
+    - step: 3
+      action: 進階影像學
+      details: 進行MRI評估小腦結構
+      findings:
+        - 小腦體積縮小
+        - 小腦溝加寬加深
+        - 小腦蚓部萎縮
+        - 排除其他結構性病變
+    - step: 4
+      action: 確診
+      details: 結合品種、年齡、臨床和影像學進行診斷
+      findings:
+        - 基因檢測（部分品種可用）
+        - 排除其他小腦疾病
+        - 確定性診斷需死後病理學
+        - 組織學見Purkinje細胞退化
+clinicalPearls:
+  - 小腦萎縮與小腦發育不全的關鍵鑑別：萎縮症為進行性惡化，發育不全為非進行性（穩定或可能輕微改善）
+  - 好發品種幼犬出現進行性共濟失調時應高度懷疑此診斷
+  - 基因檢測可用於繁殖管理 — 已知帶原犬不應繁殖
+  - 確診通常需要 MRI 及/或組織病理學，但品種 + 進行性小腦症狀的組合高度提示
+monitoringItems:
+  - 每 2-4 週評估神經學狀態及共濟失調嚴重程度
+  - 記錄功能性能力（自主進食、行走、站立能力）
+  - 評估生活品質指標
+  - 遺傳諮詢（建議飼主對繁殖犬進行基因檢測）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+ddxSource: book

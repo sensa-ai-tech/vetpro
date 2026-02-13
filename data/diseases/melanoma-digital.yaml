@@ -3,14 +3,17 @@ nameEn: Melanoma Digital
 nameZh: 趾部黑色素瘤
 bodySystem: oncology
 description: 發生於趾部的惡性黑色素瘤，犬的趾部黑色素瘤多為惡性，具高度侵襲性及轉移傾向。截趾為首選治療，建議合併系統性治療。
-
 aliases:
-  - { alias: 指（趾）黑色素瘤, language: zh }
-  - { alias: 足趾黑色素瘤, language: zh }
-  - { alias: Digital Melanoma, language: en }
-  - { alias: Subungual Melanoma, language: en }
-  - { alias: Nail Bed Melanoma, language: en }
-
+  - alias: 指（趾）黑色素瘤
+    language: zh
+  - alias: 足趾黑色素瘤
+    language: zh
+  - alias: Digital Melanoma
+    language: en
+  - alias: Subungual Melanoma
+    language: en
+  - alias: Nail Bed Melanoma
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓的趾部黑色素瘤極少見。貓的趾部腫瘤以鱗狀細胞癌更為常見。
-
 etiology:
   categories:
     - name: 腫瘤特性
@@ -33,7 +35,6 @@ etiology:
         - 深色被毛品種好發
         - 中老年犬（平均 10-12 歲）
         - 確切病因不明
-
 clinicalSigns:
   early:
     - 趾部腫脹
@@ -45,22 +46,20 @@ clinicalSigns:
     - 腫塊表面潰瘍出血
     - 區域淋巴結腫大
     - 遠端轉移症狀（咳嗽、呼吸困難）
-
 diagnosis:
   primaryTests:
     - name: X 光檢查
-      notes: "趾骨溶解為典型影像學發現。胸腔 X 光篩檢肺轉移"
+      notes: 趾骨溶解為典型影像學發現。胸腔 X 光篩檢肺轉移
     - name: 細針抽吸細胞學 (FNA)
-      notes: "腫瘤及區域淋巴結 FNA。含黑色素顆粒的圓形至紡錘狀細胞具診斷價值，但無色素型需組織學確認"
+      notes: 腫瘤及區域淋巴結 FNA。含黑色素顆粒的圓形至紡錘狀細胞具診斷價值，但無色素型需組織學確認
     - name: 組織病理學
-      notes: "截趾後組織確認分級、有絲分裂指數及手術邊緣"
+      notes: 截趾後組織確認分級、有絲分裂指數及手術邊緣
   differentialDiagnoses:
     - 鱗狀細胞癌 (SCC)
     - 甲床纖維肉瘤
     - 骨肉瘤
     - 肉芽腫性炎症
     - 趾部感染（真菌、細菌）
-
 treatment:
   surgical:
     - 截趾術為首選（至少截除至 P1 或掌/蹠骨遠端）
@@ -70,10 +69,40 @@ treatment:
     - Carboplatin 輔助化療
     - 放射治療（不完全切除或姑息情況）
     - 疼痛管理
-
 prognosis:
-  general: "單獨截趾後中位生存時間約 12 個月。合併免疫治療或化療可延長生存期。已有淋巴結或遠端轉移者預後差，中位生存時間約 3-6 個月。"
-
+  general: 單獨截趾後中位生存時間約 12 個月。合併免疫治療或化療可延長生存期。已有淋巴結或遠端轉移者預後差，中位生存時間約 3-6 個月。
 prevention:
   - 定期檢查趾部及甲床
   - 發現趾部腫脹或指甲異常應及早就醫
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 趾部黑色素瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - dyspnoea 相關症狀
+        - coughing 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: X 光檢查
+          notes: 趾骨溶解為典型影像學發現。胸腔 X 光篩檢肺轉移
+        - name: 細針抽吸細胞學 (FNA)
+          notes: 腫瘤及區域淋巴結 FNA。含黑色素顆粒的圓形至紡錘狀細胞具診斷價值，但無色素型需組織學確認
+        - name: 組織病理學
+          notes: 截趾後組織確認分級、有絲分裂指數及手術邊緣
+ddxSource: auto-generated

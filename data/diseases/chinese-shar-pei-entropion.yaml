@@ -3,18 +3,18 @@ nameEn: Chinese Shar-Pei Entropion
 nameZh: 中國沙皮犬眼瞼內翻
 bodySystem: ophthalmology
 description: 沙皮犬極常見的遺傳性眼瞼異常,過度皮膚皺褶導致眼瞼向內翻轉,睫毛摩擦角膜引起疼痛與損傷。幼犬即可發病,需手術矯正,品種特徵性疾病。
-
 aliases:
-  - { alias: 沙皮眼瞼內翻, language: zh }
-  - { alias: Shar-Pei Eyelid Inversion, language: en }
-  - { alias: 沙皮眼皮倒睫, language: zh }
-
+  - alias: 沙皮眼瞼內翻
+    language: zh
+  - alias: Shar-Pei Eyelid Inversion
+    language: en
+  - alias: 沙皮眼皮倒睫
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 沙皮犬幾乎100%發生,幼犬期即明顯,雙側發生,與品種標準皺褶皮膚直接相關
-
 etiology:
   categories:
     - name: 解剖性異常
@@ -30,7 +30,6 @@ etiology:
       examples:
         - 眼瞼痙攣加重內翻
         - 慢性發炎導致結膜瘢痕
-
 clinicalSigns:
   early:
     - 幼犬2-6週齡即可見眼瞼內翻
@@ -43,41 +42,62 @@ clinicalSigns:
     - 角膜色素沉著(慢性刺激)
     - 角膜血管增生
     - 嚴重病例:角膜穿孔、失明
-
 diagnosis:
   primaryTests:
     - name: 眼科檢查
-      notes: "直接觀察眼瞼向內翻轉,睫毛接觸角膜,通常上下眼瞼均受影響"
+      notes: 直接觀察眼瞼向內翻轉,睫毛接觸角膜,通常上下眼瞼均受影響
     - name: Fluorescein染色
-      notes: "檢查角膜潰瘍"
+      notes: 檢查角膜潰瘍
     - name: Schirmer淚液測試
-      notes: "評估淚液分泌(通常正常或增加)"
+      notes: 評估淚液分泌(通常正常或增加)
     - name: 眼壓測定
-      notes: "排除青光眼"
+      notes: 排除青光眼
   differentialDiagnoses:
     - 倒睫(distichiasis)
     - 異位睫毛(ectopic cilia)
     - 眼瞼痙攣(其他原因)
     - 角膜潰瘍(其他原因)
-
 treatment:
   medical:
     - 幼犬暫時性措施(3-6月齡前):
-      - 眼瞼皮膚暫時性釘合(tacking)
-      - 眼藥水保護角膜:人工淚液q4-6h
-      - 抗生素眼藥(若繼發感染):Terramycin眼藥膏q8h
+        - 眼瞼皮膚暫時性釘合(tacking)
+        - 眼藥水保護角膜:人工淚液q4-6h
+        - 抗生素眼藥(若繼發感染):Terramycin眼藥膏q8h
     - 6-12月齡後永久性手術矯正:
-      - Hotz-Celsus眼瞼成形術(切除多餘皮膚)
-      - 或眼瞼外翻矯正術
+        - Hotz-Celsus眼瞼成形術(切除多餘皮膚)
+        - 或眼瞼外翻矯正術
     - 術後護理:抗炎眼藥、伊莉莎白頸圈2週
     - 可能需多次手術(皮膚持續鬆弛)
     - 嚴重皺褶:面部皺褶整形手術
-
 prognosis:
-  general: "手術矯正成功率高,多數可恢復正常眼瞼位置與功能。未治療將導致慢性角膜損傷、色素沉著、視力受損。部分病例因皮膚持續變化需再次手術。"
-
+  general: 手術矯正成功率高,多數可恢復正常眼瞼位置與功能。未治療將導致慢性角膜損傷、色素沉著、視力受損。部分病例因皮膚持續變化需再次手術。
 prevention:
   - 育種選擇較少皺褶的個體
   - 幼犬早期眼科檢查
   - 及時手術矯正,避免角膜永久損傷
   - 品種標準與健康需求之平衡考量
+associatedSymptoms:
+  - symptomId: red-eye
+    frequency: uncommon
+  - symptomId: blindness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 中國沙皮犬眼瞼內翻 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - red-eye 相關症狀
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 眼科檢查
+          notes: 直接觀察眼瞼向內翻轉,睫毛接觸角膜,通常上下眼瞼均受影響
+        - name: Fluorescein染色
+          notes: 檢查角膜潰瘍
+        - name: Schirmer淚液測試
+          notes: 評估淚液分泌(通常正常或增加)
+ddxSource: auto-generated

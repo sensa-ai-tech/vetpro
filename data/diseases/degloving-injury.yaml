@@ -3,13 +3,15 @@ nameEn: Degloving Injury
 nameZh: 脫套傷
 bodySystem: emergency
 description: 皮膚與皮下組織從底層筋膜或骨骼大面積撕脫的嚴重創傷，常見於交通事故或被機械夾傷。脫套傷導致大面積軟組織暴露，血液供應中斷，需緊急外科處理以挽救組織存活性。
-
 aliases:
-  - { alias: 皮膚撕脫傷, language: zh }
-  - { alias: 剝脫傷, language: zh }
-  - { alias: Avulsion Injury, language: en }
-  - { alias: Shearing Injury, language: en }
-
+  - alias: 皮膚撕脫傷
+    language: zh
+  - alias: 剝脫傷
+    language: zh
+  - alias: Avulsion Injury
+    language: en
+  - alias: Shearing Injury
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 交通事故或高處墜落後常見尾部或肢體脫套傷。尾部脫套可能伴隨薦骨神經損傷。
-
 etiology:
   categories:
     - name: 外傷性
@@ -29,7 +30,6 @@ etiology:
       examples:
         - 大型犬攻擊小型犬造成皮膚撕脫
         - 野生動物攻擊
-
 clinicalSigns:
   early:
     - 大面積皮膚缺損，底層組織暴露
@@ -41,14 +41,12 @@ clinicalSigns:
     - 傷口感染
     - 嚴重腫脹
     - 肉芽組織形成（若開放性管理）
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 評估撕脫範圍、深度及皮瓣存活性（色澤、出血情況）。全身評估休克程度及併發損傷。
     - name: X 光檢查
       notes: 評估骨折、關節脫位或異物。遠端肢體脫套常伴骨骼暴露。
-
 treatment:
   principles:
     - 抗休克治療為首要任務
@@ -63,31 +61,58 @@ treatment:
     - 廣效性抗生素
     - 多模式止痛管理
     - 嚴重肢體脫套傷可能需考慮截肢
-
 prognosis: 預後取決於脫套範圍及組織存活性。局部脫套經適當外科重建後預後良至謹慎。大面積脫套需長期傷口管理，痊癒時間數週至數月。遠端肢體全周脫套合併骨骼暴露可能需截肢，但動物適應良好。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Segmental Posthetomy in a Four Stallions Case Series.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8072830/
     type: case-report
-    pmid: "33923837"
+    pmid: '33923837'
   - sourceOrg: Sisli Etfal Hastanesi tip bulteni
     title: Neutrophil Elastase Inhibitor Increases Flap Survival in Experimental Degloving Injuries.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7326670/
     type: research
-    pmid: "32617053"
+    pmid: '32617053'
   - sourceOrg: Acta orthopaedica et traumatologica turcica
     title: A comparison of rat degloving injury models.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6197594/
     type: research
-    pmid: "28454780"
-  - sourceOrg: "Ulusal travma ve acil cerrahi dergisi = Turkish journal of trauma &amp; emergency surgery : TJTES"
-    title: "Effects of dabigatran and fondaparinux on degloving injuries: An experimental study."
+    pmid: '28454780'
+  - sourceOrg: 'Ulusal travma ve acil cerrahi dergisi = Turkish journal of trauma &amp; emergency surgery : TJTES'
+    title: 'Effects of dabigatran and fondaparinux on degloving injuries: An experimental study.'
     url: https://pubmed.ncbi.nlm.nih.gov/32436968/
     type: research
-    pmid: "32436968"
+    pmid: '32436968'
 pubmedQueries:
   - query: '"Degloving Injury" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+diagnosticAlgorithm:
+  title: 脫套傷 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pallor-cyanosis 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 評估撕脫範圍、深度及皮瓣存活性（色澤、出血情況）。全身評估休克程度及併發損傷。
+        - name: X 光檢查
+          notes: 評估骨折、關節脫位或異物。遠端肢體脫套常伴骨骼暴露。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 抗休克治療為首要任務
+        - 保留所有可能存活的組織
+        - 分期手術處理（初期清創→後期重建）
+ddxSource: auto-generated

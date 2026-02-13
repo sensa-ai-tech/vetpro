@@ -2,13 +2,16 @@ slug: prostatitis
 nameEn: Prostatitis
 nameZh: 前列腺炎
 bodySystem: reproductive
-description: 前列腺炎 (prostatitis) 為犬前列腺的細菌感染，分為急性與慢性。常見致病菌為 E. coli（>70%），其次為 Staphylococcus、Streptococcus、Proteus。急性前列腺炎為緊急狀態。慢性前列腺炎可無明顯症狀但為反覆泌尿道感染的來源。
-
+description: >-
+  前列腺炎 (prostatitis) 為犬前列腺的細菌感染，分為急性與慢性。常見致病菌為 E. coli（>70%），其次為
+  Staphylococcus、Streptococcus、Proteus。急性前列腺炎為緊急狀態。慢性前列腺炎可無明顯症狀但為反覆泌尿道感染的來源。
 aliases:
-  - { alias: 前列腺感染, language: zh }
-  - { alias: Bacterial Prostatitis, language: en }
-  - { alias: Prostatic Infection, language: en }
-
+  - alias: 前列腺感染
+    language: zh
+  - alias: Bacterial Prostatitis
+    language: en
+  - alias: Prostatic Infection
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓前列腺炎極罕見。
-
 etiology:
   categories:
     - name: 致病機制
@@ -32,7 +34,6 @@ etiology:
         - Streptococcus spp.
         - Proteus spp.
         - Brucella canis（需特別注意，人畜共通）
-
 clinicalSigns:
   early:
     - 急性：發燒、嗜睡、厭食
@@ -42,7 +43,6 @@ clinicalSigns:
     - 急性：腹痛、後肢僵硬步態、嘔吐
     - 敗血症（嚴重急性）
     - 慢性：反覆泌尿道感染、血尿、繁殖力下降
-
 diagnosis:
   primaryTests:
     - name: 直腸觸診
@@ -54,7 +54,6 @@ diagnosis:
     - CBC（白血球增多）
     - 前列腺液培養（第三段分泌液）
     - Brucella canis 血清學（公犬繁殖問題時必做）
-
 treatment:
   principles:
     - 穿透前列腺屏障的抗生素
@@ -67,41 +66,89 @@ treatment:
     - 去勢（急性穩定後或慢性時）
     - 止痛（急性疼痛管理）
     - Brucella canis 感染：doxycycline + aminoglycoside 長療程（治癒率低）
-
 prognosis: 急性前列腺炎在適當抗生素 + 去勢後預後佳。慢性前列腺炎較難根治，抗生素 4-8 週 + 去勢可改善。Brucella canis 前列腺炎治癒率低且有公共衛生考量。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
     title: Negative impact of benign prostatic hyperplasia on fertility in dogs-a mini-review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12098538/
     type: review
-    pmid: "40417369"
+    pmid: '40417369'
     relevance: primary
   - sourceOrg: Antibiotics (Basel, Switzerland)
     title: Bacterial Biofilm and its Role in the Pathogenesis of Disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7167820/
     type: review
-    pmid: "32028684"
+    pmid: '32028684'
     relevance: primary
   - sourceOrg: Parasites, hosts and diseases
-    title: Inflammatory response to Trichomonas vaginalis in the pathogenesis of prostatitis and benign prostatic hyperplasia.
+    title: >-
+      Inflammatory response to Trichomonas vaginalis in the pathogenesis of prostatitis and benign prostatic
+      hyperplasia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10230662/
     type: review
-    pmid: "37170459"
+    pmid: '37170459'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
     title: A Review on Canine and Feline Prostate Pathology.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9201985/
     type: review
-    pmid: "35720846"
+    pmid: '35720846'
     relevance: primary
   - sourceOrg: Nutrients
     title: Are We Sentenced to Pharmacotherapy? Promising Role of Lycopene and Vitamin A in Benign Urologic Conditions.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8874554/
     type: review
-    pmid: "35215508"
+    pmid: '35215508'
     relevance: primary
 pubmedQueries:
   - query: '"prostatitis" AND (veterinary OR canine) AND ("treatment" OR "diagnosis" OR "bacterial")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 前列腺炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估泌尿生殖道和全身症狀
+      findings:
+        - 排尿困難或血尿
+        - 排便困難
+        - 發熱和精神沉鬱（急性）
+        - 會陰疼痛和步態僵硬
+    - step: 2
+      action: 前列腺檢查
+      details: 進行直腸觸診和影像學評估
+      findings:
+        - 直腸觸診前列腺腫大和疼痛
+        - 前列腺超音波見實質異常
+        - 可能見前列腺膿瘍
+        - 前列腺不對稱或結節
+    - step: 3
+      action: 實驗室檢查
+      details: 進行尿液和前列腺液分析
+      findings:
+        - 尿液分析見膿尿和菌尿
+        - 前列腺液培養分離細菌
+        - 全血計數見白血球增多
+        - C反應蛋白升高
+    - step: 4
+      action: 鑑別與治療評估
+      details: 與其他前列腺疾病鑑別
+      findings:
+        - 與前列腺增生鑑別
+        - 與前列腺腫瘤鑑別
+        - 去勢狀態評估
+        - 超音波引導穿刺排除膿瘍
+clinicalPearls:
+  - 急性前列腺炎禁止用力按摩前列腺，可能導致菌血症
+  - 結紮是治療和預防前列腺疾病的最佳方法
+  - 慢性前列腺炎抗生素必須選擇脂溶性、弱鹼性藥物（如 fluoroquinolones）
+  - 前列腺膿瘍破裂是急診，需立即手術
+monitoringItems:
+  - 抗生素治療 1 週後複驗尿液培養
+  - 完成療程後 1 週再次尿液培養確認清除
+  - 超音波追蹤前列腺大小變化
+  - 慢性病例每 3 個月追蹤
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+ddxSource: book

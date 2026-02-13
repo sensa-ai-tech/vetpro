@@ -3,12 +3,13 @@ nameEn: Essential Oil Toxicosis
 nameZh: 精油中毒
 bodySystem: toxicology
 description: 精油為濃縮植物萃取物,貓因缺乏葡萄糖醛酸轉移酶而對精油極度敏感。中毒可引起肝毒性、中樞神經症狀及皮膚刺激。
-
 aliases:
-  - { alias: 芳香精油中毒, language: zh }
-  - { alias: Essential Oil Poisoning, language: en }
-  - { alias: Aromatic Oil Toxicity, language: en }
-
+  - alias: 芳香精油中毒
+    language: zh
+  - alias: Essential Oil Poisoning
+    language: en
+  - alias: Aromatic Oil Toxicity
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 極度敏感,微量即可致毒
-
 etiology:
   categories:
     - name: 皮膚接觸
@@ -32,7 +32,6 @@ etiology:
     - name: 高毒性精油
       examples:
         - 茶樹油、薄荷油、尤加利油、肉桂油、丁香油
-
 clinicalSigns:
   early:
     - 流涎、嘔吐
@@ -43,46 +42,84 @@ clinicalSigns:
     - 肝酵素升高、黃疸(貓)
     - 低體溫
     - 癲癇、昏迷(嚴重)
-
 diagnosis:
   primaryTests:
     - name: 暴露史
-      notes: "確認精油使用史,包括種類及濃度"
+      notes: 確認精油使用史,包括種類及濃度
     - name: 臨床症狀
-      notes: "神經症狀+特殊氣味"
+      notes: 神經症狀+特殊氣味
     - name: 肝功能檢查
-      notes: "ALT、ALP升高(尤其貓)"
+      notes: ALT、ALP升高(尤其貓)
   differentialDiagnoses:
     - 其他植物中毒
     - 擬除蟲菊酯中毒(貓)
     - 肝病
-
 treatment:
   medical:
     - 皮膚除污: 溫和洗潔劑(如洗碗精)徹底清洗,避免吸收
     - 催吐(若口服2小時內且無神經症狀): 3% H2O2 1-2 mL/kg PO
     - 活性碳效果有限(精油為脂溶性)
     - 支持性療法:
-      - 靜脈輸液
-      - 保肝藥物: SAMe, Ursodeoxycholic acid(貓)
-      - 癲癇控制: Diazepam 0.5-1 mg/kg IV
+        - 靜脈輸液
+        - 保肝藥物: SAMe, Ursodeoxycholic acid(貓)
+        - 癲癇控制: Diazepam 0.5-1 mg/kg IV
     - 氧氣治療(若呼吸困難)
     - 體溫維持
     - 避免再次暴露
-
 prognosis:
-  general: "犬輕度暴露預後良好,24-48小時內恢復。貓因代謝能力差,可能發展為肝衰竭,需數日至數週治療。嚴重肝損傷可能致命。"
-
+  general: 犬輕度暴露預後良好,24-48小時內恢復。貓因代謝能力差,可能發展為肝衰竭,需數日至數週治療。嚴重肝損傷可能致命。
 prevention:
   - 貓家庭應避免使用精油產品
   - 犬使用需高度稀釋(<1%)且避開敏感部位
   - 擴香器置於寵物無法接觸處,確保通風
   - 切勿將精油直接塗於寵物皮膚或毛髮
-
-
 guidelineRefs:
   - sourceOrg: BMC veterinary research
-    title: "Acute tea tree oil intoxication in a pet cockatiel (Nymphicus hollandicus): a case report."
+    title: 'Acute tea tree oil intoxication in a pet cockatiel (Nymphicus hollandicus): a case report.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6995176/
     type: case-report
-    pmid: "32005244"
+    pmid: '32005244'
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: trembling
+    frequency: common
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: stertor-stridor
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+diagnosticAlgorithm:
+  title: 精油中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - ataxia 相關症狀
+        - trembling 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 暴露史
+          notes: 確認精油使用史,包括種類及濃度
+        - name: 臨床症狀
+          notes: 神經症狀+特殊氣味
+        - name: 肝功能檢查
+          notes: ALT、ALP升高(尤其貓)
+ddxSource: auto-generated

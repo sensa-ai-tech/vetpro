@@ -3,21 +3,24 @@ nameEn: Rabbit Encephalitozoonosis
 nameZh: 兔腦包子蟲症
 bodySystem: infectious
 description: 由 Encephalitozoon cuniculi 微孢子蟲引起的兔常見慢性感染症，主要侵犯腎臟、腦部及水晶體，為家兔最常見的神經系統疾病原因之一。
-
 aliases:
-  - { alias: E. cuniculi 感染, language: zh }
-  - { alias: 兔腦炎微孢子蟲症, language: zh }
-  - { alias: 兔歪頭症, language: zh }
-  - { alias: E. cuniculi infection, language: en }
-  - { alias: Encephalitozoon cuniculi, language: en }
-  - { alias: EC, language: en }
-
+  - alias: E. cuniculi 感染
+    language: zh
+  - alias: 兔腦炎微孢子蟲症
+    language: zh
+  - alias: 兔歪頭症
+    language: zh
+  - alias: E. cuniculi infection
+    language: en
+  - alias: Encephalitozoon cuniculi
+    language: en
+  - alias: EC
+    language: en
 species:
   - speciesCommon: rabbit
     speciesScientific: Oryctolagus cuniculus
     prevalence: common
     notes: 血清盛行率可高達 50-80%。多數感染兔為無症狀帶原者，免疫抑制或緊迫時可能發病。垂直傳播與水平傳播 (經口攝入含孢子的尿液) 皆可發生。
-
 etiology:
   categories:
     - name: 寄生蟲性 (微孢子蟲)
@@ -32,7 +35,6 @@ etiology:
         - 幼兔 (垂直感染)
         - 群養環境
         - 衛生條件不佳
-
 clinicalSigns:
   early:
     - 輕微頭部傾斜 (head tilt)
@@ -51,26 +53,24 @@ clinicalSigns:
     - 腎衰竭
     - 癲癇發作
     - 嚴重脫水與惡病質
-
 diagnosis:
   primaryTests:
     - name: E. cuniculi 抗體力價 (IgG/IgM)
-      notes: "IgM 陽性提示活動性感染；IgG 陽性僅代表曾暴露。配對血清 (間隔 2-4 週) IgG 四倍上升有診斷意義。高血清盛行率使單次 IgG 陽性解讀困難"
+      notes: IgM 陽性提示活動性感染；IgG 陽性僅代表曾暴露。配對血清 (間隔 2-4 週) IgG 四倍上升有診斷意義。高血清盛行率使單次 IgG 陽性解讀困難
     - name: 尿液 PCR
-      notes: "偵測尿液中 E. cuniculi DNA。特異性高但敏感度中等 (間歇性排孢子)"
+      notes: 偵測尿液中 E. cuniculi DNA。特異性高但敏感度中等 (間歇性排孢子)
     - name: CBC/生化
-      notes: "可見 BUN/Creatinine 升高 (腎臟受累)。白血球通常正常"
+      notes: 可見 BUN/Creatinine 升高 (腎臟受累)。白血球通常正常
   imaging:
     - name: 頭部 MRI
-      notes: "腦部肉芽腫病變、腦幹或大腦白質異常信號。為評估神經症狀的首選影像學"
+      notes: 腦部肉芽腫病變、腦幹或大腦白質異常信號。為評估神經症狀的首選影像學
     - name: 頭部 CT
-      notes: "敏感度不如 MRI，但可排除中耳/內耳疾病"
+      notes: 敏感度不如 MRI，但可排除中耳/內耳疾病
   additional:
     - 裂隙燈檢查 (水晶體內白色團塊，pathognomonic phacoclastic uveitis)
     - 眼內壓測量 (排除續發性青光眼)
     - 尿液分析 (等張尿、蛋白尿，腎小管功能異常)
     - 組織病理學 (確定診斷，需活檢或屍檢：腎臟/腦部肉芽腫性炎症與孢子)
-
 treatment:
   principles:
     - 長期抗微孢子蟲藥物治療 (至少 28 天)
@@ -79,16 +79,16 @@ treatment:
     - 水晶體受累時需眼科處理
   medications:
     - name: Fenbendazole
-      dose: "20 mg/kg PO SID，連續 28 天"
+      dose: 20 mg/kg PO SID，連續 28 天
       notes: 抗 E. cuniculi 首選藥物。可抑制微管蛋白聚合。安全性高
     - name: Meloxicam
-      dose: "0.3-0.5 mg/kg PO/SC SID"
+      dose: 0.3-0.5 mg/kg PO/SC SID
       notes: NSAID 抗炎止痛。腎功能不全時需謹慎使用或降低劑量
     - name: Dexamethasone (急性期)
-      dose: "0.1-0.2 mg/kg SC/IV，單次或短期"
+      dose: 0.1-0.2 mg/kg SC/IV，單次或短期
       notes: 僅用於嚴重急性前庭症狀初期減輕炎症反應。長期使用會加重免疫抑制
     - name: Meclizine
-      dose: "2-12 mg/kg PO BID"
+      dose: 2-12 mg/kg PO BID
       notes: 前庭抑制劑，減輕暈眩與噁心
   general:
     - 軟墊環境防止翻滾受傷 (毛巾捲固定)
@@ -97,43 +97,98 @@ treatment:
     - 隔離患兔 (減少孢子排出汙染)
     - 物理治療與復健 (慢性後肢無力者)
     - 水晶體誘發性葡萄膜炎考慮水晶體乳化摘除術
-
-prognosis: 預後差異極大，取決於症狀嚴重程度與受累器官。輕度前庭症狀經治療後多數可改善，但殘留輕度頭部傾斜常見。嚴重旋轉或癱瘓病例預後謹慎。腎臟受累為慢性進展性。phacoclastic uveitis 手術預後良好。整體而言，約 50% 的神經症狀病例可獲臨床改善。
-
+prognosis: >-
+  預後差異極大，取決於症狀嚴重程度與受累器官。輕度前庭症狀經治療後多數可改善，但殘留輕度頭部傾斜常見。嚴重旋轉或癱瘓病例預後謹慎。腎臟受累為慢性進展性。phacoclastic uveitis 手術預後良好。整體而言，約 50%
+  的神經症狀病例可獲臨床改善。
 guidelineRefs:
   - sourceOrg: Journal of Exotic Pet Medicine
-    title: "Encephalitozoon cuniculi in pet rabbits: diagnosis and optimal management"
+    title: 'Encephalitozoon cuniculi in pet rabbits: diagnosis and optimal management'
     url: https://pubmed.ncbi.nlm.nih.gov/32487381/
     type: review
-    pmid: "32487381"
+    pmid: '32487381'
   - sourceOrg: Veterinary Clinics of North America Exotic Animal Practice
     title: Neurologic Disease in Rabbits
     url: https://pubmed.ncbi.nlm.nih.gov/29655502/
     type: review
-    pmid: "29655502"
+    pmid: '29655502'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Encephalitozoon cuniculi infection in cats: European guidelines from the ABCD on prevention and management."
+    title: 'Encephalitozoon cuniculi infection in cats: European guidelines from the ABCD on prevention and management.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10814217/
     type: guideline
-    pmid: "33100172"
+    pmid: '33100172'
     relevance: primary
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Encephalitozoonosis in Pet Rabbits: Epidemiology, Pathogenesis, Immunology and Consensus on Clinical Management."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Encephalitozoonosis in Pet Rabbits: Epidemiology, Pathogenesis, Immunology and Consensus on Clinical Management.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12838174/
     type: review
-    pmid: "41594534"
+    pmid: '41594534'
     relevance: primary
   - sourceOrg: Parasitology research
     title: A multidisciplinary review about Encephalitozoon cuniculi in a One Health perspective.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9286959/
     type: review
-    pmid: "35840730"
+    pmid: '35840730'
     relevance: primary
 pubmedQueries:
   - query: '"Encephalitozoon cuniculi" AND ("rabbit" OR "Oryctolagus") AND ("treatment" OR "diagnosis" OR "management")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "INFECTION"
+  chapter: DIG
+  sectionTitle: INFECTION
   pdfPage: 525
+diagnosticAlgorithm:
+  title: 腦炎微孢子蟲感染 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估神經系統和腎臟症狀，常見於兔但也可感染犬
+      findings:
+        - 頭部傾斜和眼球震顫
+        - 後肢無力或癱瘓
+        - 腎功能不全
+        - 白內障或虹膜炎
+    - step: 2
+      action: 血清學檢查
+      details: 進行E. cuniculi抗體檢測
+      findings:
+        - IgG抗體效價升高
+        - IgM陽性提示活動性感染
+        - 配對血清效價上升有意義
+        - 單次高效價需結合臨床判斷
+    - step: 3
+      action: 輔助檢查
+      details: 進行尿液檢查和影像學評估
+      findings:
+        - 尿液PCR可能檢出孢子
+        - 尿液鏡檢可見微孢子蟲孢子
+        - MRI可能見腦部肉芽腫性病變
+        - 腎臟超音波可見腎皮質病變
+    - step: 4
+      action: 確診
+      details: 綜合血清學、PCR和臨床表現確診
+      findings:
+        - 確定性診斷需組織病理學
+        - 腎臟或腦組織內見微孢子蟲
+        - Gram染色陽性孢子
+        - 治療性診斷（fenbendazole反應）
+clinicalPearls:
+  - 與兔共養的犬貓出現神經症狀時應考慮E. cuniculi感染
+  - 血清抗體陽性不等於臨床疾病——很多動物為無症狀帶原
+  - Fenbendazole是目前最被接受的治療選擇，療程需足夠長（至少28天）
+  - 此為人畜共通傳染病，免疫抑制人群（HIV患者等）需特別注意
+monitoringItems:
+  - 神經症狀改善評估
+  - 腎功能追蹤
+  - 尿PCR追蹤孢子排出
+  - 抗體效價變化
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: head-tilt
+    frequency: rare
+  - symptomId: nystagmus
+    frequency: rare
+ddxSource: book

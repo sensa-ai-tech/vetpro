@@ -3,13 +3,15 @@ nameEn: Uterine Inertia
 nameZh: 子宮收縮無力
 bodySystem: reproductive
 description: 子宮收縮無力 (uterine inertia) 為分娩時子宮肌層收縮不足導致的難產原因。分為原發性（子宮肌本身功能障礙）與繼發性（長時間宮縮後疲乏）。為犬難產最常見的母體因素。及時辨識與處置攸關母犬與胎兒存活。
-
 aliases:
-  - { alias: 子宮無力, language: zh }
-  - { alias: 分娩無力, language: zh }
-  - { alias: Primary Uterine Inertia, language: en }
-  - { alias: Secondary Uterine Inertia, language: en }
-
+  - alias: 子宮無力
+    language: zh
+  - alias: 分娩無力
+    language: zh
+  - alias: Primary Uterine Inertia
+    language: en
+  - alias: Secondary Uterine Inertia
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓子宮收縮無力較犬少見。原因與犬類似。
-
 etiology:
   categories:
     - name: 原發性子宮收縮無力
@@ -33,7 +34,6 @@ etiology:
         - 長時間宮縮後肌肉疲乏
         - 產道阻塞（胎兒過大、胎位不正）未及時處理
         - 電解質不平衡
-
 clinicalSigns:
   early:
     - 原發性：預產日已到但無宮縮跡象
@@ -44,7 +44,6 @@ clinicalSigns:
     - 母犬疲倦
     - 胎兒窘迫（胎心率下降）
     - 未娩出胎兒可致死胎、子宮炎
-
 diagnosis:
   primaryTests:
     - name: 臨床評估
@@ -56,7 +55,6 @@ diagnosis:
     - 血糖
     - 血清黃體酮（<2 ng/mL 提示即將分娩）
     - 骨盆測量（排除產道狹窄）
-
 treatment:
   principles:
     - 藥物刺激宮縮（無阻塞性難產時）
@@ -70,35 +68,73 @@ treatment:
     - 對 oxytocin 無反應或阻塞性：緊急剖腹產
     - 繼發性：多數需剖腹產
     - 胎兒窘迫（胎心率 <180 bpm）：儘速手術
-
 prognosis: 原發性子宮收縮無力對 oxytocin + calcium 反應率約 30-50%，其餘需剖腹產。及時剖腹產母犬存活率高。胎兒存活取決於缺氧時間長短。有子宮收縮無力史的母犬再次妊娠復發率高。
-
-
 guidelineRefs:
   - sourceOrg: Acta veterinaria Scandinavica
     title: A retrospective study on dystocia in the cat, evaluation of 111 cases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11993979/
     type: research
-    pmid: "40221772"
+    pmid: '40221772'
     relevance: supporting
   - sourceOrg: Croatian medical journal
-    title: "The effects of estrogen on the &#x3b1;2-adrenergic receptor subtypes in rat uterine function in late pregnancy in vitro."
+    title: >-
+      The effects of estrogen on the &#x3b1;2-adrenergic receptor subtypes in rat uterine function in late pregnancy in
+      vitro.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4856191/
     type: research
-    pmid: "27106352"
+    pmid: '27106352'
     relevance: supporting
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Clinical and pathological findings for rabbits with dystocia: 10 cases (1996-2016)."
+    title: 'Clinical and pathological findings for rabbits with dystocia: 10 cases (1996-2016).'
     url: https://pubmed.ncbi.nlm.nih.gov/30938620/
     type: research
-    pmid: "30938620"
+    pmid: '30938620'
     relevance: supporting
   - sourceOrg: Pharmaceutical biology
-    title: Combining Sprague-Dawley rat uterus cell membrane chromatography with HPLC/MS to screen active components from Leonurus artemisia.
+    title: >-
+      Combining Sprague-Dawley rat uterus cell membrane chromatography with HPLC/MS to screen active components from
+      Leonurus artemisia.
     url: https://pubmed.ncbi.nlm.nih.gov/25858117/
     type: research
-    pmid: "25858117"
+    pmid: '25858117'
     relevance: supporting
 pubmedQueries:
   - query: '"uterine inertia" AND (veterinary OR canine OR feline) AND ("dystocia" OR "treatment" OR "oxytocin")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: vaginal-discharge
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 子宮收縮無力 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - vaginal-discharge 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床評估
+          notes: 妊娠足月無宮縮（原發性），或宮縮停止 >30 分鐘仍未產出胎兒（繼發性）
+        - name: 腹部影像
+          notes: X-ray 確認胎兒數量、大小與位置。超音波評估胎兒存活（胎心率）
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 血清鈣（低血鈣排除）
+        - 血糖
+        - 血清黃體酮（<2 ng/mL 提示即將分娩）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 藥物刺激宮縮（無阻塞性難產時）
+        - 阻塞性難產需剖腹產
+        - 及時決策避免胎兒死亡
+ddxSource: auto-generated

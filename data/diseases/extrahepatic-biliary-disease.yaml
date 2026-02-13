@@ -3,13 +3,15 @@ nameEn: Extrahepatic Biliary Disease
 nameZh: 肝外膽道疾病
 bodySystem: hepatic
 description: 肝外膽道疾病涵蓋影響膽囊、膽囊管、總膽管及十二指腸乳頭的各種病變，包括膽石症、膽囊炎、膽管炎及膽道腫瘤等。是犬貓阻塞性黃疸的重要原因。
-
 aliases:
-  - { alias: 肝外膽管疾病, language: zh }
-  - { alias: 膽道系統疾病, language: zh }
-  - { alias: EHBD, language: en }
-  - { alias: Extrahepatic Biliary Tract Disease, language: en }
-
+  - alias: 肝外膽管疾病
+    language: zh
+  - alias: 膽道系統疾病
+    language: zh
+  - alias: EHBD
+    language: en
+  - alias: Extrahepatic Biliary Tract Disease
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓常見膽管炎（neutrophilic 和 lymphocytic 類型），且常與胰臟炎和炎性腸病合併發生（三合一症）。
-
 etiology:
   categories:
     - name: 膽囊疾病
@@ -39,7 +40,6 @@ etiology:
         - 膽囊發育不良
         - 膽管囊腫 (Choledochal Cyst)
         - 膽囊雙重畸形
-
 clinicalSigns:
   early:
     - 間歇性食慾下降
@@ -52,19 +52,17 @@ clinicalSigns:
     - 發燒（感染時）
     - 體重減輕
     - 糞便顏色異常（灰白色）
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "評估膽囊形態（壁厚度、內容物、黏液囊腫特徵性星狀紋）、膽管直徑與通暢性。總膽管擴張提示遠端阻塞。"
+      notes: 評估膽囊形態（壁厚度、內容物、黏液囊腫特徵性星狀紋）、膽管直徑與通暢性。總膽管擴張提示遠端阻塞。
     - name: 血液生化
-      notes: "GGT、ALP 顯著升高提示膽汁鬱滯。總膽紅素升高。ALT 可中度升高。膽固醇常升高。"
+      notes: GGT、ALP 顯著升高提示膽汁鬱滯。總膽紅素升高。ALT 可中度升高。膽固醇常升高。
   differentialDiagnoses:
     - 肝內膽汁鬱滯
     - 肝實質性疾病
     - 胰臟炎
     - 十二指腸疾病
-
 treatment:
   medical:
     - Ursodiol (UDCA) 10-15 mg/kg PO q24h（利膽、細胞保護）
@@ -75,19 +73,49 @@ treatment:
     - 膽囊切除術（膽囊黏液囊腫、慢性膽囊炎）
     - 膽管切開取石術
     - 膽腸吻合術（膽管阻塞無法解除時）
-
 prognosis:
-  general: "預後取決於具體病因與治療時機。膽囊切除術後膽囊黏液囊腫的長期預後良好（存活率70-80%）。膽管阻塞合併敗血症者預後謹慎。腫瘤性病變預後不良。"
-
+  general: 預後取決於具體病因與治療時機。膽囊切除術後膽囊黏液囊腫的長期預後良好（存活率70-80%）。膽管阻塞合併敗血症者預後謹慎。腫瘤性病變預後不良。
 prevention:
   - 高膽固醇血症和甲狀腺功能減退的管理（膽囊黏液囊腫風險因素）
   - 好發品種定期腹部超音波檢查
   - 膽管炎的及時治療以防止慢性化
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Gallbladder Mucocele: Variables Associated with Outcome and the Utility of Ultrasonography to Identify Gallbladder Rupture in 219 Dogs (2007-2016)."
+    title: >-
+      Gallbladder Mucocele: Variables Associated with Outcome and the Utility of Ultrasonography to Identify Gallbladder
+      Rupture in 219 Dogs (2007-2016).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5787181/
     type: research
-    pmid: "29205503"
+    pmid: '29205503'
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: jaundice
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肝外膽道疾病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - abdominal-pain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 評估膽囊形態（壁厚度、內容物、黏液囊腫特徵性星狀紋）、膽管直徑與通暢性。總膽管擴張提示遠端阻塞。
+        - name: 血液生化
+          notes: GGT、ALP 顯著升高提示膽汁鬱滯。總膽紅素升高。ALT 可中度升高。膽固醇常升高。
+ddxSource: auto-generated

@@ -3,13 +3,15 @@ nameEn: Urethral Carcinoma
 nameZh: 尿道癌
 bodySystem: oncology
 description: 犬原發性尿道腫瘤以移行細胞癌最常見，母犬發生率高於公犬。常與膀胱三角區 TCC 同時存在或為其延伸。尿道阻塞為主要臨床問題。
-
 aliases:
-  - { alias: 尿道腫瘤, language: zh }
-  - { alias: 尿道移行細胞癌, language: zh }
-  - { alias: Urethral TCC, language: en }
-  - { alias: Urethral Transitional Cell Carcinoma, language: en }
-
+  - alias: 尿道腫瘤
+    language: zh
+  - alias: 尿道移行細胞癌
+    language: zh
+  - alias: Urethral TCC
+    language: en
+  - alias: Urethral Transitional Cell Carcinoma
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓的原發性尿道腫瘤極少見。與犬相比資料有限。
-
 etiology:
   categories:
     - name: 腫瘤類型
@@ -33,7 +34,6 @@ etiology:
         - 與膀胱 TCC 相同的危險因子
         - 慢性尿道炎症
         - 品種易感性
-
 clinicalSigns:
   early:
     - 排尿困難
@@ -46,25 +46,23 @@ clinicalSigns:
     - 尿失禁
     - 尿路感染反覆發作
     - 會陰或陰門區域可見/觸及腫塊
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "評估膀胱及近端尿道。檢查腎盂擴張及淋巴結腫大"
+      notes: 評估膀胱及近端尿道。檢查腎盂擴張及淋巴結腫大
     - name: 對比尿道攝影或 CT
-      notes: "評估尿道狹窄程度及腫瘤範圍"
+      notes: 評估尿道狹窄程度及腫瘤範圍
     - name: 尿道鏡檢查及切片
-      notes: "直視下取得組織樣本進行病理確認"
+      notes: 直視下取得組織樣本進行病理確認
   differentialDiagnoses:
     - 尿道結石
     - 尿道狹窄
     - 前列腺疾病
     - 膀胱 TCC 延伸
     - 尿道息肉
-
 treatment:
   medical:
-    - "Piroxicam 0.3 mg/kg PO SID"
+    - Piroxicam 0.3 mg/kg PO SID
     - 化療方案（同膀胱 TCC）
     - Mitoxantrone 或 Carboplatin 合併 Piroxicam
   surgical:
@@ -72,10 +70,38 @@ treatment:
     - 尿道部分切除（遠端尿道腫瘤）
     - 會陰尿道造口術（公犬）
     - 前庭尿道造口術（母犬）
-
 prognosis:
-  general: "預後謹慎至不良。尿道支架可有效緩解阻塞症狀，改善生活品質。中位生存時間約 6-12 個月。尿道完全阻塞或腎後性腎衰竭為常見死因。"
-
+  general: 預後謹慎至不良。尿道支架可有效緩解阻塞症狀，改善生活品質。中位生存時間約 6-12 個月。尿道完全阻塞或腎後性腎衰竭為常見死因。
 prevention:
   - 排尿異常或血尿應及早進行泌尿系統完整評估
   - 減少已知環境致癌物暴露
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: common
+  - symptomId: urinary-incontinence
+    frequency: uncommon
+  - symptomId: haematuria
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 尿道癌 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pollakiuria 相關症狀
+        - urinary-incontinence 相關症狀
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 評估膀胱及近端尿道。檢查腎盂擴張及淋巴結腫大
+        - name: 對比尿道攝影或 CT
+          notes: 評估尿道狹窄程度及腫瘤範圍
+        - name: 尿道鏡檢查及切片
+          notes: 直視下取得組織樣本進行病理確認
+ddxSource: auto-generated

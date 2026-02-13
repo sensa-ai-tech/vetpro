@@ -3,11 +3,11 @@ nameEn: Cardiac Rhabdomyoma
 nameZh: 心臟橫紋肌瘤
 bodySystem: cardiac
 description: 罕見的心臟良性腫瘤,起源於心肌細胞。可能導致心律不整、心流阻塞或心衰竭,視腫瘤大小及位置而定。
-
 aliases:
-  - { alias: 心臟橫紋肌腫瘤, language: zh }
-  - { alias: Cardiac Rhabdomyomatous Tumor, language: en }
-
+  - alias: 心臟橫紋肌腫瘤
+    language: zh
+  - alias: Cardiac Rhabdomyomatous Tumor
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 極罕見
-
 etiology:
   categories:
     - name: 先天性
@@ -26,7 +25,6 @@ etiology:
     - name: 後天性
       examples:
         - 原因不明
-
 clinicalSigns:
   early:
     - 可能無症狀
@@ -36,29 +34,50 @@ clinicalSigns:
     - 心衰竭症狀
     - 暈厥
     - 猝死
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波
-      notes: "心肌內或心腔內腫塊,回音性增強"
+      notes: 心肌內或心腔內腫塊,回音性增強
     - name: 心電圖
-      notes: "評估心律不整"
+      notes: 評估心律不整
     - name: 組織病理學
-      notes: "確診需組織切片 (手術或屍檢)"
+      notes: 確診需組織切片 (手術或屍檢)
   differentialDiagnoses:
     - 心臟血管肉瘤
     - 心臟淋巴瘤
     - 心臟血栓
-
 treatment:
   medical:
     - 支持性治療 (控制心律不整、心衰竭)
     - 外科切除 (若可行)
     - 化療無效 (良性腫瘤)
-
 prognosis:
-  general: "取決於腫瘤大小及位置;小型腫瘤可能無症狀存活;大型或阻塞性腫瘤預後不良"
-
+  general: 取決於腫瘤大小及位置;小型腫瘤可能無症狀存活;大型或阻塞性腫瘤預後不良
 prevention:
   - 無特定預防措施
   - 定期健康檢查
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: heart-murmur
+    frequency: common
+diagnosticAlgorithm:
+  title: 心臟橫紋肌瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+        - heart-murmur 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波
+          notes: 心肌內或心腔內腫塊,回音性增強
+        - name: 心電圖
+          notes: 評估心律不整
+        - name: 組織病理學
+          notes: 確診需組織切片 (手術或屍檢)
+ddxSource: auto-generated

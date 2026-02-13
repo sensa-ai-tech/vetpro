@@ -3,12 +3,13 @@ nameEn: Bulla Osteotomy Ventral
 nameZh: 腹側鼓泡切開術
 bodySystem: ear
 description: 經腹側入路進行的中耳鼓泡切開手術，提供良好的鼓泡腔內視野與引流，為中耳炎手術治療的標準入路，尤其適用於貓鼻咽息肉的完整移除。
-
 aliases:
-  - { alias: 腹側中耳切開術, language: zh }
-  - { alias: VBO, language: en }
-  - { alias: Ventral bulla osteotomy, language: en }
-
+  - alias: 腹側中耳切開術
+    language: zh
+  - alias: VBO
+    language: en
+  - alias: Ventral bulla osteotomy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓 VBO 為鼻咽息肉移除的首選手術。貓鼓泡分為兩腔室（需打開間隔以確保完整清除）。貓鼓泡壁薄，較易操作。
-
 etiology:
   categories:
     - name: 手術適應症
@@ -33,7 +33,6 @@ etiology:
         - 交感神經幹沿鼓泡壁走行（損傷致 Horner syndrome）
         - 顏面神經經鼓泡背側穿出
         - 貓鼓泡有中隔分兩腔室
-
 clinicalSigns:
   early:
     - 術後 Horner syndrome（暫時性，最常見併發症）
@@ -43,17 +42,15 @@ clinicalSigns:
     - 顏面神經損傷（罕見但可能）
     - 術後感染（引流不足）
     - 舌下神經損傷（罕見）
-
 diagnosis:
   primaryTests:
     - name: 術前 CT
-      notes: "鼓泡大小、壁厚度、內容物密度、骨溶解範圍。雙側評估。為手術計畫必備"
+      notes: 鼓泡大小、壁厚度、內容物密度、骨溶解範圍。雙側評估。為手術計畫必備
     - name: 術後追蹤影像
-      notes: "術後 4-6 週追蹤 CT 評估癒合與殘留病變"
+      notes: 術後 4-6 週追蹤 CT 評估癒合與殘留病變
   differentialDiagnoses:
     - 需 TECA-LBO（合併終末期外耳炎）
     - 需側方入路（合併外耳道手術）
-
 treatment:
   medical:
     - 術後抗生素 4-6 週（依術中培養藥敏）
@@ -66,38 +63,62 @@ treatment:
     - 刮匙清除鼓泡內感染物質
     - 沖洗並取樣培養
     - 引流管放置（可選）
-
 prognosis:
-  general: "手術成功率高。貓 VBO 後鼻咽息肉復發率 <5%。Horner syndrome 為最常見併發症但多為暫時性。術後適當抗生素治療下中耳炎清除率良好。"
-
+  general: 手術成功率高。貓 VBO 後鼻咽息肉復發率 <5%。Horner syndrome 為最常見併發症但多為暫時性。術後適當抗生素治療下中耳炎清除率良好。
 prevention:
   - 早期識別中耳疾病減少手術需求
   - 正確手術技術減少神經損傷風險
-
-
 guidelineRefs:
   - sourceOrg: JFMS open reports
     title: Middle ear cholesteatoma in two cats diagnosed with the aid of video-otoscopy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10540574/
     type: case-report
-    pmid: "37781725"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Anaesthetic Complications in Dogs Undergoing Total Ear Canal Ablation and Ventral Bulla Osteotomy: A Single-Centre Retrospective Study."
+    pmid: '37781725'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Anaesthetic Complications in Dogs Undergoing Total Ear Canal Ablation and Ventral Bulla Osteotomy: A Single-Centre
+      Retrospective Study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12108533/
     type: research
-    pmid: "40427278"
+    pmid: '40427278'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Clinical outcome of cats with suppurative otitis media and intact tympanum submitted to myringotomy: retrospective findings from 26 cases."
+    title: >-
+      Clinical outcome of cats with suppurative otitis media and intact tympanum submitted to myringotomy: retrospective
+      findings from 26 cases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11450789/
     type: research
-    pmid: "39344808"
+    pmid: '39344808'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "A Pandora's box in feline medicine: presenting signs and surgical outcomes in 58 previously hoarded cats with chronic otitis media-interna."
+    title: >-
+      A Pandora's box in feline medicine: presenting signs and surgical outcomes in 58 previously hoarded cats with
+      chronic otitis media-interna.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812028/
     type: research
-    pmid: "37728478"
+    pmid: '37728478'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Clinical features and short-term outcome of presumptive intracranial complications associated with otitis media/interna: a multi-center retrospective study of 19 cats (2009-2017)."
+    title: >-
+      Clinical features and short-term outcome of presumptive intracranial complications associated with otitis
+      media/interna: a multi-center retrospective study of 19 cats (2009-2017).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10814610/
     type: research
-    pmid: "29667535"
+    pmid: '29667535'
+associatedSymptoms:
+  - symptomId: head-tilt
+    frequency: common
+diagnosticAlgorithm:
+  title: 腹側鼓泡切開術 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - head-tilt 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 術前 CT
+          notes: 鼓泡大小、壁厚度、內容物密度、骨溶解範圍。雙側評估。為手術計畫必備
+        - name: 術後追蹤影像
+          notes: 術後 4-6 週追蹤 CT 評估癒合與殘留病變
+ddxSource: auto-generated

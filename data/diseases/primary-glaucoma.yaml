@@ -3,14 +3,17 @@ nameEn: Primary Glaucoma
 nameZh: 原發性青光眼
 bodySystem: ophthalmology
 description: 非繼發於其他眼內疾病的青光眼，因房水排出通路 (iridocorneal angle) 先天性發育異常導致眼壓升高。為犬常見的致盲性眼病，多為遺傳性，常雙側發病。急性發作為眼科急症。
-
 aliases:
-  - { alias: Primary Open Angle Glaucoma, language: en }
-  - { alias: Primary Closed Angle Glaucoma, language: en }
-  - { alias: Goniodysgenesis-related Glaucoma, language: en }
-  - { alias: 原發性開角型青光眼, language: zh }
-  - { alias: 原發性閉角型青光眼, language: zh }
-
+  - alias: Primary Open Angle Glaucoma
+    language: en
+  - alias: Primary Closed Angle Glaucoma
+    language: en
+  - alias: Goniodysgenesis-related Glaucoma
+    language: en
+  - alias: 原發性開角型青光眼
+    language: zh
+  - alias: 原發性閉角型青光眼
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -18,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓原發性青光眼罕見。Burmese、Siamese 偶有報告。貓多為續發性。
-
 etiology:
   categories:
     - name: 遺傳性房角發育異常
@@ -30,7 +32,6 @@ etiology:
       examples:
         - 開角型 (Open angle) — Beagle 品種
         - 閉角型 (Closed angle) — 多數品種
-
 clinicalSigns:
   early:
     - 眼壓升高 (> 25 mmHg)
@@ -42,7 +43,6 @@ clinicalSigns:
     - 瞳孔散大固定
     - 視力喪失
     - 眼球腫大 (buphthalmos，慢性)
-
 diagnosis:
   primaryTests:
     - name: 眼壓測量 (Tonometry)
@@ -51,7 +51,6 @@ diagnosis:
       notes: 評估虹膜角膜角形態。原發性閉角型見梳狀韌帶發育異常或融合
     - name: 眼底檢查
       notes: 評估視神經盤凹陷 (cupping) 與視網膜變化
-
 treatment:
   principles:
     - 急性發作為眼科急症，需緊急降壓
@@ -62,41 +61,79 @@ treatment:
     - 長期：前列腺素類似物 (Latanoprost) + 碳酸酐酶抑制劑 (Dorzolamide)
     - 手術：睫狀體冷凍/雷射破壞 (cyclophotocoagulation)
     - 失明眼：眼球摘除或義眼植入 (止痛)
-
 prognosis: 犬原發性青光眼預後謹慎。即使積極治療，多數犬最終仍會失明。早期診斷與積極治療可延緩視力喪失。對側眼預防性治療可延緩發作。貓原發性青光眼對藥物反應較犬好。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Role of Inflammation in Canine Primary Glaucoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10777923/
     type: review
-    pmid: "38200841"
+    pmid: '38200841'
     relevance: primary
   - sourceOrg: Veterinary ophthalmology
-    title: "Looking into the future: Gene and cell therapies for glaucoma."
+    title: 'Looking into the future: Gene and cell therapies for glaucoma.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7979454/
     type: review
-    pmid: "33411993"
+    pmid: '33411993'
     relevance: primary
   - sourceOrg: Veterinary ophthalmology
     title: The future of canine glaucoma therapy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6744300/
     type: review
-    pmid: "31106969"
+    pmid: '31106969'
     relevance: supporting
   - sourceOrg: Veterinary ophthalmology
-    title: Interexaminer agreement of gonioscopy examinations in dogs using the European College of Veterinary Ophthalmologists Hereditary Eye Diseases grading scheme.
+    title: >-
+      Interexaminer agreement of gonioscopy examinations in dogs using the European College of Veterinary
+      Ophthalmologists Hereditary Eye Diseases grading scheme.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12754580/
     type: research
-    pmid: "39482043"
+    pmid: '39482043'
     relevance: supporting
   - sourceOrg: Veterinary ophthalmology
-    title: Vision outcomes in dogs with primary glaucoma surgically treated with lensectomy and endolaser cyclophotocoagulation after an Ahmed valve gonioimplantation failure.
+    title: >-
+      Vision outcomes in dogs with primary glaucoma surgically treated with lensectomy and endolaser
+      cyclophotocoagulation after an Ahmed valve gonioimplantation failure.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11911994/
     type: research
-    pmid: "38059879"
+    pmid: '38059879'
     relevance: supporting
 pubmedQueries:
   - query: '"primary glaucoma" AND (veterinary OR canine OR feline) AND ("treatment" OR "goniodysgenesis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: blindness
+    frequency: uncommon
+  - symptomId: red-eye
+    frequency: common
+  - symptomId: mydriasis
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 原發性青光眼 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - blindness 相關症狀
+        - red-eye 相關症狀
+        - mydriasis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 眼壓測量 (Tonometry)
+          notes: IOP > 25 mmHg (犬)。急性發作可達 40-80 mmHg。Tonopen 或 Tonovet
+        - name: 房角鏡檢查 (Gonioscopy)
+          notes: 評估虹膜角膜角形態。原發性閉角型見梳狀韌帶發育異常或融合
+        - name: 眼底檢查
+          notes: 評估視神經盤凹陷 (cupping) 與視網膜變化
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 急性發作為眼科急症，需緊急降壓
+        - 長期控制眼壓保護視力
+        - 預防性治療對側眼
+ddxSource: auto-generated

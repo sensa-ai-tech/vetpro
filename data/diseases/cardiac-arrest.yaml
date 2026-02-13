@@ -2,13 +2,16 @@ slug: cardiac-arrest
 nameEn: Cardiac Arrest
 nameZh: 心臟停止
 bodySystem: cardiac
-description: 心臟停止 (cardiac arrest, CPA) 為心臟有效機械活動停止導致全身循環中斷的致命急症。犬貓 CPA 最常見的心律為無脈搏電氣活動 (PEA) 與心搏停止 (asystole)，而非可電擊節律。犬貓院內 CPR 成功恢復自發循環 (ROSC) 約 35-45%，出院率僅 5-10%。
-
+description: >-
+  心臟停止 (cardiac arrest, CPA) 為心臟有效機械活動停止導致全身循環中斷的致命急症。犬貓 CPA 最常見的心律為無脈搏電氣活動 (PEA) 與心搏停止 (asystole)，而非可電擊節律。犬貓院內 CPR
+  成功恢復自發循環 (ROSC) 約 35-45%，出院率僅 5-10%。
 aliases:
-  - { alias: 心跳停止, language: zh }
-  - { alias: CPA, language: en }
-  - { alias: Cardiopulmonary Arrest, language: en }
-
+  - alias: 心跳停止
+    language: zh
+  - alias: CPA
+    language: en
+  - alias: Cardiopulmonary Arrest
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,13 +19,12 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓 CPA 以 asystole 與 PEA 為主。貓 CPR 胸外壓迫力道較犬小。出院存活率略低於犬。
-
 etiology:
   categories:
     - name: 常見原因 (5H5T)
       examples:
-        - "5H：Hypovolemia、Hypoxia、Hydrogen ion (acidosis)、Hypo/Hyperkalemia、Hypothermia"
-        - "5T：Tension pneumothorax、Tamponade、Toxins、Thromboembolism、Trauma"
+        - 5H：Hypovolemia、Hypoxia、Hydrogen ion (acidosis)、Hypo/Hyperkalemia、Hypothermia
+        - 5T：Tension pneumothorax、Tamponade、Toxins、Thromboembolism、Trauma
     - name: 犬貓常見誘因
       examples:
         - 麻醉併發症
@@ -30,7 +32,6 @@ etiology:
         - 外傷
         - 藥物過量
         - 電解質嚴重異常
-
 clinicalSigns:
   early:
     - 突然倒下、無反應
@@ -42,7 +43,6 @@ clinicalSigns:
     - 無心搏（聽診）
     - 肌肉鬆弛
     - 體溫下降
-
 diagnosis:
   primaryTests:
     - name: 臨床評估
@@ -53,7 +53,6 @@ diagnosis:
     - ETCO₂（CPR 品質監測，>15 mmHg 為有效壓迫）
     - 血氣分析（ROSC 後）
     - 找出並矯正可逆原因 (5H5T)
-
 treatment:
   principles:
     - 遵循 RECOVER CPR 指引
@@ -69,41 +68,100 @@ treatment:
     - Atropine 0.04 mg/kg IV（迷走神經介導 CPA）
     - 2 分鐘不中斷壓迫週期
     - ROSC 後：穩定血壓、通氣、體溫管理、監測
-
 prognosis: 犬貓 CPR 後 ROSC 約 35-45%，但出院存活率僅 5-10%。麻醉相關 CPA 預後較佳。疾病末期 CPA 預後極差。ROSC 後再次 arrest 常見。CPR 持續 >20 分鐘未 ROSC 建議停止。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Prospective Evaluation of Cardiopulmonary Resuscitation Performed in Dogs and Cats According to the RECOVER Guidelines. Part 2: Patient Outcomes and CPR Practice Since Guideline Implementation."
+    title: >-
+      Prospective Evaluation of Cardiopulmonary Resuscitation Performed in Dogs and Cats According to the RECOVER
+      Guidelines. Part 2: Patient Outcomes and CPR Practice Since Guideline Implementation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6914737/
     type: guideline
-    pmid: "31921901"
+    pmid: '31921901'
   - sourceOrg: Frontiers in veterinary science
-    title: "The Compliance of Current Small Animal CPR Practice With RECOVER Guidelines: An Internet-Based Survey."
+    title: 'The Compliance of Current Small Animal CPR Practice With RECOVER Guidelines: An Internet-Based Survey.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6581025/
     type: guideline
-    pmid: "31245396"
+    pmid: '31245396'
   - sourceOrg: PloS one
-    title: "Prediction performance of scoring systems after out-of-hospital cardiac arrest: A systematic review and meta-analysis."
+    title: >-
+      Prediction performance of scoring systems after out-of-hospital cardiac arrest: A systematic review and
+      meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10833585/
     type: review
-    pmid: "38300929"
+    pmid: '38300929'
   - sourceOrg: Journal of thoracic disease
-    title: "Shenfu injection as treatment for critical illness: a narrative review of clinical trials."
+    title: 'Shenfu injection as treatment for critical illness: a narrative review of clinical trials.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10894405/
     type: review
-    pmid: "38410595"
+    pmid: '38410595'
   - sourceOrg: Resuscitation plus
     title: A systematic review of interventions for resuscitation following drowning.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10323217/
     type: review
-    pmid: "37424769"
+    pmid: '37424769'
   - sourceOrg: Resuscitation plus
-    title: "The impact of the SARS-CoV-2 pandemic on in-hospital cardiac arrest: A systematic review and meta-analysis."
+    title: 'The impact of the SARS-CoV-2 pandemic on in-hospital cardiac arrest: A systematic review and meta-analysis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11422769/
     type: review
-    pmid: "39323494"
+    pmid: '39323494'
 pubmedQueries:
-  - query: '"cardiac arrest" OR "cardiopulmonary resuscitation" AND (veterinary OR canine OR feline) AND ("RECOVER" OR "CPR" OR "treatment")'
+  - query: >-
+      "cardiac arrest" OR "cardiopulmonary resuscitation" AND (veterinary OR canine OR feline) AND ("RECOVER" OR "CPR"
+      OR "treatment")
     frequency: monthly
+diagnosticAlgorithm:
+  title: 心肺驟停 診斷流程
+  steps:
+    - step: 1
+      action: 立即辨識
+      details: 快速確認心肺驟停
+      findings:
+        - 無意識/無反應
+        - 無呼吸或瀕死呼吸
+        - 無可觸及脈搏
+        - 瞳孔散大
+    - step: 2
+      action: 啟動CPR同時評估
+      details: 立即開始胸部按壓同時評估心律
+      findings:
+        - ECG心搏停止/無脈電氣活動/心室纖維顫動
+        - 建立靜脈通路
+        - 氣管插管確保氣道
+        - 記錄驟停時間
+    - step: 3
+      action: 可逆原因篩查
+      details: CPR過程中快速排查可逆因素
+      findings:
+        - 低血容量出血
+        - 低氧血症
+        - 酸中毒
+        - 高血鉀或低血鉀
+    - step: 4
+      action: 自主循環恢復後評估
+      details: ROSC後全面評估
+      findings:
+        - 持續ECG監測
+        - 血壓與氧合監測
+        - 神經功能評估
+        - 原發病因處理
+clinicalPearls:
+  - ETCO2>15 mmHg提示有效CPR，ETCO2突然升高提示ROSC
+  - 犬貓最常見的停止心律為asystole和PEA，非VF
+  - 高劑量Epinephrine不建議使用
+  - 側臥按壓適用於大多數犬貓，桶狀胸犬可用仰臥位
+monitoringItems:
+  - ECG持續監測
+  - ETCO2（CPR品質指標）
+  - 動脈血壓（ROSC後）
+  - 神經功能評估
+  - 尿量
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: mydriasis
+    frequency: uncommon
+ddxSource: book

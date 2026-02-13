@@ -3,18 +3,18 @@ nameEn: Australian Shepherd Cataracts
 nameZh: 澳洲牧羊犬白內障
 bodySystem: ophthalmology
 description: 澳洲牧羊犬常見的遺傳性眼疾,水晶體混濁導致視力障礙。可為先天性或後天進行性,與HSF4基因突變相關,嚴重病例需手術治療恢復視力。
-
 aliases:
-  - { alias: 澳牧遺傳性白內障, language: zh }
-  - { alias: Australian Shepherd Hereditary Cataracts, language: en }
-  - { alias: 澳牧水晶體混濁, language: zh }
-
+  - alias: 澳牧遺傳性白內障
+    language: zh
+  - alias: Australian Shepherd Hereditary Cataracts
+    language: en
+  - alias: 澳牧水晶體混濁
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 澳洲牧羊犬為中高風險品種,HSF4基因突變為主要原因,發病年齡數月至數年不等
-
 etiology:
   categories:
     - name: 遺傳性因素
@@ -33,7 +33,6 @@ etiology:
         - 水晶體纖維蛋白變性
         - 水晶體混濁
         - 水晶體囊膜破裂(成熟期)
-
 clinicalSigns:
   early:
     - 瞳孔區可見白色或灰色混濁
@@ -45,23 +44,21 @@ clinicalSigns:
     - 成熟白內障:完全混濁,瞳孔反射消失
     - 過熟白內障:水晶體囊膜破裂,引發葡萄膜炎
     - 繼發性青光眼(晚期併發症)
-
 diagnosis:
   primaryTests:
     - name: 眼科檢查
-      notes: "裂隙燈與眼底鏡檢查,評估白內障位置、大小、成熟度"
+      notes: 裂隙燈與眼底鏡檢查,評估白內障位置、大小、成熟度
     - name: 基因檢測
-      notes: "HSF4基因突變檢測,確認遺傳性白內障,用於繁殖篩檢"
+      notes: HSF4基因突變檢測,確認遺傳性白內障,用於繁殖篩檢
     - name: 眼部超音波
-      notes: "成熟白內障無法透視眼底時,評估視網膜狀況"
+      notes: 成熟白內障無法透視眼底時,評估視網膜狀況
     - name: 視網膜電圖(ERG)
-      notes: "術前評估視網膜功能,確認手術價值"
+      notes: 術前評估視網膜功能,確認手術價值
   differentialDiagnoses:
     - 核硬化症(lenticular sclerosis,老年正常變化)
     - 眼內腫瘤
     - 角膜混濁
     - 玻璃體混濁
-
 treatment:
   medical:
     - 早期或不成熟白內障:定期監測,無需治療
@@ -70,13 +67,33 @@ treatment:
     - 術後護理:抗炎眼藥漸減,抗生素眼藥,伊莉莎白頸圈2-4週
     - 術後併發症監測:青光眼、視網膜剝離、葡萄膜炎
     - 未手術病例:環境調整,熟悉路線,移除障礙物
-
 prognosis:
-  general: "手術成功率80-90%,多數可恢復視力。併發PRA病例術後視力改善有限。未治療成熟白內障將完全失明,可能引發葡萄膜炎與青光眼。早期手術為最佳選擇。"
-
+  general: 手術成功率80-90%,多數可恢復視力。併發PRA病例術後視力改善有限。未治療成熟白內障將完全失明,可能引發葡萄膜炎與青光眼。早期手術為最佳選擇。
 prevention:
   - 繁殖前基因檢測(HSF4突變)
   - 避免繁殖患病犬隻
   - 定期眼科檢查(每年)
   - 控制糖尿病(預防繼發性白內障)
   - 育種計畫排除白內障家系
+associatedSymptoms:
+  - symptomId: blindness
+    frequency: common
+diagnosticAlgorithm:
+  title: 澳洲牧羊犬白內障 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 眼科檢查
+          notes: 裂隙燈與眼底鏡檢查,評估白內障位置、大小、成熟度
+        - name: 基因檢測
+          notes: HSF4基因突變檢測,確認遺傳性白內障,用於繁殖篩檢
+        - name: 眼部超音波
+          notes: 成熟白內障無法透視眼底時,評估視網膜狀況
+ddxSource: auto-generated

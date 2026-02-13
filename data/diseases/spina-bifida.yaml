@@ -3,11 +3,11 @@ nameEn: Spina Bifida
 nameZh: 脊柱裂
 bodySystem: neurology
 description: 脊柱裂為脊椎弓未完全閉合的先天畸形，導致脊髓與神經暴露或被薄膜覆蓋。英國鬥牛犬、曼島貓為高風險品種。嚴重者可伴隨脊髓膨出與神經功能障礙。
-
 aliases:
-  - { alias: 脊椎裂, language: zh }
-  - { alias: Neural tube defect, language: en }
-
+  - alias: 脊椎裂
+    language: zh
+  - alias: Neural tube defect
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 英國鬥牛犬、波士頓梗、曼島貓好發。尾椎區域最常見。
-
 etiology:
   categories:
     - name: 先天發育異常
@@ -23,7 +22,6 @@ etiology:
         - 椎弓閉合失敗
         - 神經管發育缺陷
         - 遺傳因素（螺旋尾品種）
-
 clinicalSigns:
   early:
     - 尾椎區域凹陷或毛髮異常
@@ -32,53 +30,79 @@ clinicalSigns:
     - 後肢無力
     - 排尿排便失禁
     - 會陰感覺缺失
-
 diagnosis:
   primaryTests:
     - name: 影像與臨床檢查
       notes: 脊椎 X 光見椎弓缺損。MRI 評估脊髓受累程度。
-
 treatment:
   principles:
     - 依嚴重程度決定保守或手術治療
     - 支持療法
   general:
     - 隱性脊柱裂多無需治療。嚴重者手術矯正。排尿管理（失禁者）。
-
 prognosis: 隱性脊柱裂預後良好。嚴重脊髓膨出型預後謹慎，可能需終生泌尿管理。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Lumbosacral (myelo) meningoceles in dogs, related tethered cord syndrome, and their surgical management: review of the literature and clinical experience."
+    title: >-
+      Lumbosacral (myelo) meningoceles in dogs, related tethered cord syndrome, and their surgical management: review of
+      the literature and clinical experience.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11975860/
     type: review
-    pmid: "40201081"
+    pmid: '40201081'
     relevance: primary
   - sourceOrg: Fetal diagnosis and therapy
     title: Evolution and Variations of the Ovine Model of Spina Bifida.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10757987/
     type: review
-    pmid: "37393899"
+    pmid: '37393899'
     relevance: primary
   - sourceOrg: Frontiers in molecular neuroscience
     title: Premature Neural Progenitor Cell Differentiation Into Astrocytes in Retinoic Acid-Induced Spina Bifida Rat Model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9249056/
     type: research
-    pmid: "35782393"
+    pmid: '35782393'
     relevance: supporting
   - sourceOrg: Cell proliferation
-    title: Intra-amniotic mesenchymal stem cell therapy improves the amniotic fluid microenvironment in rat spina bifida aperta fetuses.
+    title: >-
+      Intra-amniotic mesenchymal stem cell therapy improves the amniotic fluid microenvironment in rat spina bifida
+      aperta fetuses.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9890536/
     type: research
-    pmid: "36266504"
+    pmid: '36266504'
     relevance: supporting
   - sourceOrg: Metabolites
     title: Non-Targeted Metabolic Profiling of Cerebellum in Spina Bifida Fetal Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10223940/
     type: research
-    pmid: "37233711"
+    pmid: '37233711'
     relevance: supporting
 pubmedQueries:
   - query: '"Spina Bifida" AND (veterinary OR canine OR feline) AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 脊柱裂 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - paresis-paralysis 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 影像與臨床檢查
+          notes: 脊椎 X 光見椎弓缺損。MRI 評估脊髓受累程度。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 依嚴重程度決定保守或手術治療
+        - 支持療法
+ddxSource: auto-generated

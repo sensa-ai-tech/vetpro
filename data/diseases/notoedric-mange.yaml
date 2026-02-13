@@ -3,13 +3,15 @@ nameEn: Notoedric Mange
 nameZh: 貓疥癬
 bodySystem: dermatology
 description: 由 Notoedres cati 引起的貓高度傳染性皮膚寄生蟲病。蟎蟲鑽入表皮角質層產卵，引起劇烈搔癢。典型從頭面部開始蔓延，嚴重時可擴及全身。可暫時感染犬與人類。
-
 aliases:
-  - { alias: "Feline Scabies", language: en }
-  - { alias: "Notoedres cati", language: en }
-  - { alias: "貓疥蟎", language: zh }
-  - { alias: "頭疥", language: zh }
-
+  - alias: Feline Scabies
+    language: en
+  - alias: Notoedres cati
+    language: en
+  - alias: 貓疥蟎
+    language: zh
+  - alias: 頭疥
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓相對不常見但高度傳染。流浪貓與多貓家庭風險高。
-
 etiology:
   categories:
     - name: 寄生蟲
@@ -25,7 +26,6 @@ etiology:
         - Notoedres cati
         - 直接接觸傳播
         - 生活史約 3 週
-
 clinicalSigns:
   early:
     - 頭面部劇烈搔癢
@@ -36,12 +36,10 @@ clinicalSigns:
     - 皮膚增厚皺褶
     - 繼發感染
     - 全身消瘦
-
 diagnosis:
   primaryTests:
     - name: 淺層皮膚刮片
       notes: 痂皮區取材即可見大量蟎蟲與卵
-
 treatment:
   principles:
     - 殺蟎治療
@@ -52,36 +50,70 @@ treatment:
     - Ivermectin 皮下注射（每 2 週）
     - Isoxazoline 類藥物
     - 溫水浸泡去除痂皮
-
 prognosis: 適當治療預後極佳。2-4 週治療即可痊癒。同居動物需同時治療防止再感染。
-
-
 guidelineRefs:
   - sourceOrg: International journal for parasitology. Parasites and wildlife
-    title: Identification and molecular characterization of Notoedres spp. from notoedric mange cases in four species of mammals from Florida, USA.
+    title: >-
+      Identification and molecular characterization of Notoedres spp. from notoedric mange cases in four species of
+      mammals from Florida, USA.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12312068/
     type: research
-    pmid: "40746913"
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
+    pmid: '40746913'
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
     title: Causes of morbidity and mortality in wild cottontail rabbits in the eastern United States, 2013-2022.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11457750/
     type: research
-    pmid: "38853709"
+    pmid: '38853709'
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: Isoxazolines for treating canine and feline otodectic mange; feline demodicosis, lynxacariasis, lice infestation, and notoedric mange (scabies); demodicosis in hamsters; and sarcoptic and psoroptic manges in rabbits.
+    title: >-
+      Isoxazolines for treating canine and feline otodectic mange; feline demodicosis, lynxacariasis, lice infestation,
+      and notoedric mange (scabies); demodicosis in hamsters; and sarcoptic and psoroptic manges in rabbits.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10581354/
     type: research
-    pmid: "37915780"
+    pmid: '37915780'
   - sourceOrg: Proceedings. Biological sciences
     title: Urbanization and anticoagulant poisons promote immune dysfunction in bobcats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5805946/
     type: research
-    pmid: "29343604"
+    pmid: '29343604'
   - sourceOrg: Veterinary parasitology, regional studies and reports
     title: Notoedric mange (Notoedres centrifera) in two species of free-ranging rabbits from Florida, USA.
     url: https://pubmed.ncbi.nlm.nih.gov/35820720/
     type: research
-    pmid: "35820720"
+    pmid: '35820720'
 pubmedQueries:
   - query: '"Notoedres" OR "notoedric mange" AND (veterinary OR feline) AND ("treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: skin-pruritus
+    frequency: common
+  - symptomId: alopecia
+    frequency: common
+diagnosticAlgorithm:
+  title: 貓疥癬 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - skin-pruritus 相關症狀
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 淺層皮膚刮片
+          notes: 痂皮區取材即可見大量蟎蟲與卵
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 殺蟎治療
+        - 環境消毒
+        - 隔離與同居貓同時治療
+ddxSource: auto-generated

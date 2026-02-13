@@ -3,17 +3,16 @@ nameEn: Rabbit Dermatophytosis Trichophyton
 nameZh: 兔 毛癬菌皮癬病
 bodySystem: dermatology
 description: 兔 毛癬菌皮癬病是兔常見的皮膚疾病,需要及時診斷與治療以改善預後。
-
 aliases:
-  - { alias: 兔 毛癬菌皮癬疾病, language: zh }
-  - { alias: Rabbit Dermatophytosis Trichophyton, language: en }
-
+  - alias: 兔 毛癬菌皮癬疾病
+    language: zh
+  - alias: Rabbit Dermatophytosis Trichophyton
+    language: en
 species:
   - speciesCommon: rabbit
     speciesScientific: Oryctolagus cuniculus
     prevalence: moderate
     notes: 常見於寵物飼養群體,需注意早期症狀
-
 etiology:
   categories:
     - name: 多因素
@@ -21,7 +20,6 @@ etiology:
         - 遺傳因素
         - 環境因素
         - 營養因素
-
 clinicalSigns:
   early:
     - 精神食慾下降
@@ -31,20 +29,18 @@ clinicalSigns:
     - 症狀逐漸惡化
     - 可能出現併發症
     - 生活品質下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
-      notes: "基本身體評估及症狀確認"
+      notes: 基本身體評估及症狀確認
     - name: 血液學檢查
-      notes: "CBC及生化學檢查評估整體健康狀況"
+      notes: CBC及生化學檢查評估整體健康狀況
     - name: 影像學檢查
-      notes: "X光或超音波檢查輔助診斷"
+      notes: X光或超音波檢查輔助診斷
   differentialDiagnoses:
     - 其他相關疾病
     - 系統性疾病
     - 併發症
-
 treatment:
   medical:
     - 支持療法:輸液及營養支持
@@ -52,45 +48,63 @@ treatment:
     - 必要時使用抗生素或抗病毒藥物
   surgical:
     - 視病情需要考慮手術治療
-
 prognosis:
-  general: "預後取決於診斷時機、疾病嚴重程度及治療反應,早期診斷與積極治療預後較佳"
-
+  general: 預後取決於診斷時機、疾病嚴重程度及治療反應,早期診斷與積極治療預後較佳
 prevention:
   - 提供適當飲食與環境
   - 定期健康檢查
   - 注意疾病早期症狀
   - 維持良好衛生環境
-
-
 guidelineRefs:
   - sourceOrg: Microorganisms
-    title: "Global Dermatophyte Infections Linked to Human and Animal Health: A Scoping Review."
+    title: 'Global Dermatophyte Infections Linked to Human and Animal Health: A Scoping Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11945039/
     type: review
-    pmid: "40142467"
+    pmid: '40142467'
     relevance: primary
   - sourceOrg: The Journal of international medical research
-    title: "Severe tinea faciei mimicking favus-like lesions linked to rabbit exposure: A case report."
+    title: 'Severe tinea faciei mimicking favus-like lesions linked to rabbit exposure: A case report.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12144330/
     type: case-report
-    pmid: "40470782"
+    pmid: '40470782'
     relevance: supporting
   - sourceOrg: PeerJ
     title: Effects of Trichophyton mentagrophytes infection on the immune response of rabbits.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6756135/
     type: research
-    pmid: "31579583"
+    pmid: '31579583'
     relevance: supporting
   - sourceOrg: Veterinary medicine and science
     title: Descriptive epidemiology of dermatophytosis in rodents.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9857110/
     type: research
-    pmid: "36495207"
+    pmid: '36495207'
     relevance: supporting
   - sourceOrg: Open veterinary journal
     title: The development and use of an inactivated vaccine against animals trichophytosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10443827/
     type: research
-    pmid: "37614724"
+    pmid: '37614724'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+diagnosticAlgorithm:
+  title: 兔 毛癬菌皮癬病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 基本身體評估及症狀確認
+        - name: 血液學檢查
+          notes: CBC及生化學檢查評估整體健康狀況
+        - name: 影像學檢查
+          notes: X光或超音波檢查輔助診斷
+ddxSource: auto-generated

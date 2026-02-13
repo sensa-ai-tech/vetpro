@@ -3,12 +3,13 @@ nameEn: Multilobular Osteochondrosarcoma
 nameZh: 多葉骨軟骨肉瘤
 bodySystem: oncology
 description: 顱骨扁平骨的特殊惡性腫瘤，由多個軟骨與骨的小葉組成。好發於顱骨頂部、枕骨與硬顎。生長相對緩慢但可局部侵犯腦組織。
-
 aliases:
-  - { alias: "MLO", language: en }
-  - { alias: "Multilobular Tumor of Bone", language: en }
-  - { alias: "多葉骨瘤", language: zh }
-
+  - alias: MLO
+    language: en
+  - alias: Multilobular Tumor of Bone
+    language: en
+  - alias: 多葉骨瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,14 +17,12 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓極罕見。
-
 etiology:
   categories:
     - name: 腫瘤性
       examples:
         - 扁平骨軟骨與骨混合增生
         - 確切病因不明
-
 clinicalSigns:
   early:
     - 顱骨可觸及硬質腫塊
@@ -34,14 +33,12 @@ clinicalSigns:
     - 神經症狀（侵犯腦組織）
     - 眼球突出
     - 疼痛
-
 diagnosis:
   primaryTests:
     - name: X 光 / CT
       notes: 特徵性顆粒狀（popcorn pattern）鈣化腫塊
     - name: 活檢
       notes: 組織病理確診
-
 treatment:
   principles:
     - 手術切除
@@ -50,16 +47,41 @@ treatment:
     - 廣範圍手術切除
     - 術後放射治療
     - 化療效果有限
-
 prognosis: 完全切除後中位存活約 2-4 年。不完全切除復發率高。轉移率約 30-50%。生長較骨肉瘤緩慢。
-
-
 guidelineRefs:
   - sourceOrg: Topics in companion animal medicine
-    title: "Craniectomies for Dogs With Skull Multilobular Osteochondrosarcoma Using the Misonix Bone Scalpel: Cadaveric Evaluation and Retrospective Case Series."
+    title: >-
+      Craniectomies for Dogs With Skull Multilobular Osteochondrosarcoma Using the Misonix Bone Scalpel: Cadaveric
+      Evaluation and Retrospective Case Series.
     url: https://pubmed.ncbi.nlm.nih.gov/36990178/
     type: case-report
-    pmid: "36990178"
+    pmid: '36990178'
 pubmedQueries:
   - query: '"multilobular osteochondrosarcoma" AND (veterinary OR canine) AND ("surgery" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 多葉骨軟骨肉瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: X 光 / CT
+          notes: 特徵性顆粒狀（popcorn pattern）鈣化腫塊
+        - name: 活檢
+          notes: 組織病理確診
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術切除
+        - 放射治療
+ddxSource: auto-generated

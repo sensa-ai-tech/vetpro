@@ -3,11 +3,11 @@ nameEn: Papilledema
 nameZh: Papilledema
 bodySystem: ophthalmology
 description: 眼科疾病,可能影響視力或眼部舒適度。需專業眼科檢查與治療。
-
 aliases:
-  - { alias: Papilledema, language: zh }
-  - { alias: Papilledema, language: en }
-
+  - alias: Papilledema
+    language: zh
+  - alias: Papilledema
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 先天性異常
       examples:
         - 外傷
         - 感染
-
 clinicalSigns:
   early:
     - 眼部不適
@@ -32,61 +30,80 @@ clinicalSigns:
   progressive:
     - 視力喪失
     - 眼內壓異常
-
 diagnosis:
   primaryTests:
     - name: 眼科檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: 眼壓測量
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 眼藥水(抗生素或消炎)
     - 止痛藥
   surgical:
     - name: 根據病況可能需手術治療(角膜移植、青光眼閥膜植入、眼球摘除等)
-      notes: "依病況評估"
-
+      notes: 依病況評估
 prognosis:
-  general: "預後取決於疾病類型、嚴重度與治療時機。早期治療可改善預後並保存視力。"
-
+  general: 預後取決於疾病類型、嚴重度與治療時機。早期治療可改善預後並保存視力。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: IDCases
-    title: "Neuroangiostrongyliasis (Rat Lungworm Disease) in a Philippine Tertiary Center: Clinical experience, diagnostic challenges and review of literature."
+    title: >-
+      Neuroangiostrongyliasis (Rat Lungworm Disease) in a Philippine Tertiary Center: Clinical experience, diagnostic
+      challenges and review of literature.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12811520/
     type: case-report
-    pmid: "41551353"
+    pmid: '41551353'
     relevance: supporting
   - sourceOrg: The veterinary quarterly
-    title: "Neuro-ophthalmologic findings of hypovitaminosis a in beef cattle: a retrospective study."
+    title: 'Neuro-ophthalmologic findings of hypovitaminosis a in beef cattle: a retrospective study.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12351754/
     type: research
-    pmid: "40802981"
+    pmid: '40802981'
     relevance: supporting
   - sourceOrg: BMC neuroscience
     title: Intracranial pressure and optic disc changes in a rat model of obstructive hydrocephalus.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9128145/
     type: research
-    pmid: "35606718"
+    pmid: '35606718'
     relevance: supporting
   - sourceOrg: Molecular vision
     title: Neuroprotective effect of minocycline on rat retinal ischemia-reperfusion injury.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8279698/
     type: research
-    pmid: "34295142"
+    pmid: '34295142'
     relevance: supporting
   - sourceOrg: The American journal of pathology
     title: Inhibition of Atypical Protein Kinase C Reduces Inflammation-Induced Retinal Vascular Permeability.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6180272/
     type: research
-    pmid: "30220554"
+    pmid: '30220554'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+  - symptomId: blindness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: Papilledema 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - peripheral-oedema 相關症狀
+        - blindness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 眼科檢查
+          notes: 需詳細評估
+        - name: 眼壓測量
+          notes: 協助確診
+ddxSource: auto-generated

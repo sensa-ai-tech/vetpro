@@ -3,12 +3,13 @@ nameEn: Euthyroid Sick Syndrome
 nameZh: 正常甲狀腺病症候群
 bodySystem: endocrine
 description: 非甲狀腺疾病導致血清T4及T3下降但甲狀腺功能實際正常,為全身性疾病的適應性反應,不需甲狀腺素補充治療。
-
 aliases:
-  - { alias: 低T3症候群, language: zh }
-  - { alias: Non-thyroidal illness syndrome, language: en }
-  - { alias: Low T3 syndrome, language: en }
-
+  - alias: 低T3症候群
+    language: zh
+  - alias: Non-thyroidal illness syndrome
+    language: en
+  - alias: Low T3 syndrome
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓重症時常見,可能掩蓋甲狀腺亢進診斷
-
 etiology:
   categories:
     - name: 原發疾病
@@ -36,7 +36,6 @@ etiology:
         - 甲狀腺素結合蛋白減少
         - 細胞激素抑制甲狀腺軸
         - 為降低代謝率的適應性反應
-
 clinicalSigns:
   early:
     - 原發疾病症狀為主
@@ -45,25 +44,23 @@ clinicalSigns:
     - 嗜睡、虛弱(但與原發疾病相關)
     - 不會出現皮膚病變或對稱性脫毛
     - 原發疾病治癒後T4恢復正常
-
 diagnosis:
   primaryTests:
     - name: 血清總T4
-      notes: "低於正常(<10-15 nmol/L),但程度與原發疾病嚴重度相關"
+      notes: 低於正常(<10-15 nmol/L),但程度與原發疾病嚴重度相關
     - name: 游離T4 by ED
-      notes: "通常正常或輕度降低"
+      notes: 通常正常或輕度降低
     - name: TSH
-      notes: "正常範圍(與原發性甲狀腺功能低下的TSH升高不同)"
+      notes: 正常範圍(與原發性甲狀腺功能低下的TSH升高不同)
     - name: 抗甲狀腺球蛋白抗體(TgAA)
-      notes: "陰性(排除自體免疫性甲狀腺炎)"
+      notes: 陰性(排除自體免疫性甲狀腺炎)
     - name: 重複檢測
-      notes: "原發疾病治癒後T4恢復正常確診ESS"
+      notes: 原發疾病治癒後T4恢復正常確診ESS
   differentialDiagnoses:
     - 原發性甲狀腺功能低下
     - 繼發性甲狀腺功能低下
     - 藥物誘發甲狀腺功能低下(類固醇、phenobarbital)
     - 甲狀腺亢進(貓)合併ESS導致T4偽正常
-
 treatment:
   medical:
     - 不需甲狀腺素補充治療(ESS為適應性反應)
@@ -72,39 +69,64 @@ treatment:
     - 若誤給甲狀腺素可能增加代謝負擔惡化病情
     - 待原發疾病穩定後重新評估甲狀腺功能(4-8週後)
     - 僅當確診合併真正甲狀腺功能低下時才給予補充
-
 prognosis:
-  general: "預後取決於原發疾病,ESS本身不需治療且可逆。原發疾病治癒後甲狀腺功能恢復正常。"
-
+  general: 預後取決於原發疾病,ESS本身不需治療且可逆。原發疾病治癒後甲狀腺功能恢復正常。
 prevention:
   - 重症或住院動物檢測T4時需考慮ESS可能性
   - 避免在急性病期診斷甲狀腺功能低下
   - 若T4低但無典型症狀,待病情穩定後重新評估
-
-
 guidelineRefs:
   - sourceOrg: Drug design, development and therapy
-    title: "Cytokine Storm-Induced Thyroid Dysfunction in COVID-19: Insights into Pathogenesis and Therapeutic Approaches."
+    title: 'Cytokine Storm-Induced Thyroid Dysfunction in COVID-19: Insights into Pathogenesis and Therapeutic Approaches.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11421457/
     type: review
-    pmid: "39319193"
+    pmid: '39319193'
   - sourceOrg: Frontiers in veterinary science
-    title: Free thyroxine measured by chemiluminescence and equilibrium dialysis is frequently below the reference interval in known euthyroid dogs with nonthyroidal illness syndrome.
+    title: >-
+      Free thyroxine measured by chemiluminescence and equilibrium dialysis is frequently below the reference interval
+      in known euthyroid dogs with nonthyroidal illness syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12550367/
     type: research
-    pmid: "41142555"
+    pmid: '41142555'
   - sourceOrg: Journal of veterinary science
-    title: Retrospective evaluation of circulating thyroid hormones in critically ill dogs with systemic inflammatory response syndrome.
+    title: >-
+      Retrospective evaluation of circulating thyroid hormones in critically ill dogs with systemic inflammatory
+      response syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5746440/
     type: research
-    pmid: "28057899"
-  - sourceOrg: "Thyroid : official journal of the American Thyroid Association"
+    pmid: '28057899'
+  - sourceOrg: 'Thyroid : official journal of the American Thyroid Association'
     title: Myocardial Inactivation of Thyroid Hormones in Patients with Aortic Stenosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5749598/
     type: research
-    pmid: "28095748"
+    pmid: '28095748'
   - sourceOrg: Archives of endocrinology and metabolism
     title: Thyroxine increases Serca2 and Ryr2 gene expression in heart failure rats with euthyroid sick syndrome.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10522172/
     type: research
-    pmid: "27737323"
+    pmid: '27737323'
+associatedSymptoms:
+  - symptomId: alopecia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 正常甲狀腺病症候群 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - alopecia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清總T4
+          notes: 低於正常(<10-15 nmol/L),但程度與原發疾病嚴重度相關
+        - name: 游離T4 by ED
+          notes: 通常正常或輕度降低
+        - name: TSH
+          notes: 正常範圍(與原發性甲狀腺功能低下的TSH升高不同)
+ddxSource: auto-generated

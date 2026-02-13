@@ -3,13 +3,15 @@ nameEn: Mammary Carcinoma Complex Type
 nameZh: 乳腺複合型癌
 bodySystem: oncology
 description: 犬乳腺腫瘤中同時含有上皮及肌上皮兩種腫瘤成分的惡性腫瘤。複合型癌的預後通常優於單純型癌，因肌上皮成分可能抑制腫瘤侵襲。
-
 aliases:
-  - { alias: 乳腺複合型惡性腫瘤, language: zh }
-  - { alias: 混合型乳腺癌, language: zh }
-  - { alias: Complex Mammary Carcinoma, language: en }
-  - { alias: Mixed Mammary Carcinoma, language: en }
-
+  - alias: 乳腺複合型惡性腫瘤
+    language: zh
+  - alias: 混合型乳腺癌
+    language: zh
+  - alias: Complex Mammary Carcinoma
+    language: en
+  - alias: Mixed Mammary Carcinoma
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓乳腺腫瘤 85-90% 為惡性，但複合型較少見。貓乳腺癌多為單純型，生物學行為更具侵襲性。
-
 etiology:
   categories:
     - name: 腫瘤組織學特徵
@@ -33,7 +34,6 @@ etiology:
         - 黃體素暴露（外源性或內源性）
         - 肥胖（幼年期）
         - 遺傳易感性
-
 clinicalSigns:
   early:
     - 乳腺可觸及硬實結節
@@ -45,22 +45,20 @@ clinicalSigns:
     - 表面皮膚潰瘍
     - 區域淋巴結腫大
     - 呼吸困難（肺轉移時）
-
 diagnosis:
   primaryTests:
     - name: 細針抽吸細胞學 (FNA)
-      notes: "可初步判斷良惡性，但無法確定組織學亞型。需組織病理確認複合型分類"
+      notes: 可初步判斷良惡性，但無法確定組織學亞型。需組織病理確認複合型分類
     - name: 手術切除後組織病理學
-      notes: "確認腫瘤類型、分級、淋巴血管侵犯、手術邊緣。Ki-67 增殖指數有預後價值"
+      notes: 確認腫瘤類型、分級、淋巴血管侵犯、手術邊緣。Ki-67 增殖指數有預後價值
     - name: 分期檢查
-      notes: "胸腔 X 光三視圖、腹部超音波、區域淋巴結 FNA"
+      notes: 胸腔 X 光三視圖、腹部超音波、區域淋巴結 FNA
   differentialDiagnoses:
     - 乳腺單純型癌
     - 良性乳腺混合瘤
     - 乳腺炎性癌
     - 乳腺纖維腺瘤
     - 乳腺增生
-
 treatment:
   surgical:
     - 乳腺切除術為主要治療（區域或鏈式切除）
@@ -70,44 +68,74 @@ treatment:
     - 化療（Doxorubicin、Carboplatin）用於高分級或已轉移病例
     - COX-2 抑制劑（Piroxicam）輔助治療
     - 術後絕育可能降低新腫瘤發生率
-
 prognosis:
-  general: "複合型癌預後優於單純型癌。腫瘤大小 <3 cm、低分級、無淋巴血管侵犯者預後良好，2 年生存率可達 70-80%。已有淋巴結或遠端轉移者預後較差。"
-
+  general: 複合型癌預後優於單純型癌。腫瘤大小 <3 cm、低分級、無淋巴血管侵犯者預後良好，2 年生存率可達 70-80%。已有淋巴結或遠端轉移者預後較差。
 prevention:
   - 早期絕育（第一次發情前）為最有效預防措施
   - 避免使用外源性黃體素製劑
   - 定期乳腺觸診檢查
-
-
 guidelineRefs:
-  - sourceOrg: "Cell communication and signaling : CCS"
+  - sourceOrg: 'Cell communication and signaling : CCS'
     title: Interplay of oxidative stress, cellular communication and signaling pathways in cancer.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10763046/
     type: review
-    pmid: "38167159"
+    pmid: '38167159'
     relevance: primary
   - sourceOrg: International journal of molecular sciences
     title: Health Benefits of Coffee Consumption for Cancer and Other Diseases and Mechanisms of Action.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9916720/
     type: review
-    pmid: "36769029"
+    pmid: '36769029'
     relevance: primary
   - sourceOrg: mAbs
-    title: "Full-length recombinant antibodies from Escherichia coli: production, characterization, effector function (Fc) engineering, and clinical evaluation."
+    title: >-
+      Full-length recombinant antibodies from Escherichia coli: production, characterization, effector function (Fc)
+      engineering, and clinical evaluation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9423848/
     type: review
-    pmid: "36018829"
+    pmid: '36018829'
     relevance: primary
   - sourceOrg: BMC medicine
-    title: Genomic pathogenic alterations in the SWI/SNF complex compromise the outcomes of immunotherapy in Chinese patients with KRAS-mutant NSCLC by downregulating STING expression.
+    title: >-
+      Genomic pathogenic alterations in the SWI/SNF complex compromise the outcomes of immunotherapy in Chinese patients
+      with KRAS-mutant NSCLC by downregulating STING expression.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12781696/
     type: research
-    pmid: "41340120"
+    pmid: '41340120'
     relevance: supporting
   - sourceOrg: The FEBS journal
-    title: Enhancing therapeutic efficacy through degradation of endogenous extracellular matrix in primary breast tumor spheroids.
+    title: >-
+      Enhancing therapeutic efficacy through degradation of endogenous extracellular matrix in primary breast tumor
+      spheroids.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12220849/
     type: research
-    pmid: "40098313"
+    pmid: '40098313'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 乳腺複合型癌 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - dyspnoea 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 細針抽吸細胞學 (FNA)
+          notes: 可初步判斷良惡性，但無法確定組織學亞型。需組織病理確認複合型分類
+        - name: 手術切除後組織病理學
+          notes: 確認腫瘤類型、分級、淋巴血管侵犯、手術邊緣。Ki-67 增殖指數有預後價值
+        - name: 分期檢查
+          notes: 胸腔 X 光三視圖、腹部超音波、區域淋巴結 FNA
+ddxSource: auto-generated

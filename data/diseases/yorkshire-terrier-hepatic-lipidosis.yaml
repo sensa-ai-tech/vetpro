@@ -3,19 +3,20 @@ nameEn: Yorkshire Terrier Hepatic Lipidosis
 nameZh: 約克夏梗肝臟脂肪變性
 bodySystem: hepatic
 description: 約克夏梗肝臟脂肪變性是小型犬因脂肪代謝異常或長時間禁食導致肝細胞內大量脂肪蓄積的疾病。約克夏梗因體型小、肝糖儲備低而特別易感，尤其在厭食或手術禁食後。
-
 aliases:
-  - { alias: 約克夏肝脂肪變性, language: zh }
-  - { alias: 脂肪肝, language: zh }
-  - { alias: Yorkshire Terrier fatty liver, language: en }
-  - { alias: Hepatic lipidosis, language: en }
-
+  - alias: 約克夏肝脂肪變性
+    language: zh
+  - alias: 脂肪肝
+    language: zh
+  - alias: Yorkshire Terrier fatty liver
+    language: en
+  - alias: Hepatic lipidosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 約克夏梗因體型極小而好發。幼犬與成犬均可發生。禁食 12-24 小時即可能誘發低血糖與肝脂肪變性。
-
 etiology:
   categories:
     - name: 代謝因素
@@ -29,7 +30,6 @@ etiology:
         - 手術禁食
         - 壓力
         - 腸胃疾病導致進食減少
-
 clinicalSigns:
   early:
     - 厭食
@@ -42,21 +42,19 @@ clinicalSigns:
     - 凝血功能異常
     - 肝性腦病（嚴重時）
     - 腹水
-
 diagnosis:
   primaryTests:
     - name: 血液生化
-      notes: "ALT/ALP 升高。膽紅素升高。血糖降低。低白蛋白血症"
+      notes: ALT/ALP 升高。膽紅素升高。血糖降低。低白蛋白血症
     - name: 腹部超音波
-      notes: "肝臟瀰漫性回聲增強（脂肪浸潤）。肝臟可能腫大"
+      notes: 肝臟瀰漫性回聲增強（脂肪浸潤）。肝臟可能腫大
     - name: 肝臟細針穿刺
-      notes: "細胞學見肝細胞內大量脂肪空泡"
+      notes: 細胞學見肝細胞內大量脂肪空泡
   differentialDiagnoses:
     - 門脈系統分流
     - 慢性肝炎
     - 膽管阻塞
     - 銅儲積性肝病
-
 treatment:
   medical:
     - 靜脈輸液含葡萄糖（5% Dextrose）矯正低血糖
@@ -64,12 +62,46 @@ treatment:
     - 保肝劑（SAMe 20 mg/kg PO SID）
     - 肝素促進脂蛋白脂酶活性（爭議性）
     - 維生素 B 群補充
-
 prognosis:
-  general: "早期辨識與積極營養支持預後良好。延誤治療可進展至肝衰竭。約克夏梗飼主需了解禁食風險，術前與術後應盡速恢復進食。"
-
+  general: 早期辨識與積極營養支持預後良好。延誤治療可進展至肝衰竭。約克夏梗飼主需了解禁食風險，術前與術後應盡速恢復進食。
 prevention:
   - 避免長時間禁食（不超過 8-12 小時）
   - 術前術後儘速恢復進食
   - 維持規律餵食（少量多餐）
   - 厭食超過 24 小時應就醫
+associatedSymptoms:
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 約克夏梗肝臟脂肪變性 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - hepatomegaly 相關症狀
+        - anorexia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液生化
+          notes: ALT/ALP 升高。膽紅素升高。血糖降低。低白蛋白血症
+        - name: 腹部超音波
+          notes: 肝臟瀰漫性回聲增強（脂肪浸潤）。肝臟可能腫大
+        - name: 肝臟細針穿刺
+          notes: 細胞學見肝細胞內大量脂肪空泡
+ddxSource: auto-generated

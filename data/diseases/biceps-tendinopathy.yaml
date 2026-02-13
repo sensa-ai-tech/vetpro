@@ -3,11 +3,11 @@ nameEn: Biceps Tendinopathy
 nameZh: 二頭肌腱病變
 bodySystem: orthopedic
 description: 肩關節二頭肌肌腱（biceps brachii tendon）的慢性發炎或退化性病變。表現為前肢肩部疼痛與跛行。中大型犬與活躍犬好發。需與其他肩部疾病鑑別。
-
 aliases:
-  - { alias: "Bicipital Tenosynovitis", language: en }
-  - { alias: "二頭肌腱炎", language: zh }
-
+  - alias: Bicipital Tenosynovitis
+    language: en
+  - alias: 二頭肌腱炎
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 退化性/過度使用
@@ -23,7 +22,6 @@ etiology:
         - 反覆微損傷
         - 年齡相關退化
         - 不穩定性肩關節
-
 clinicalSigns:
   early:
     - 前肢間歇性跛行
@@ -34,14 +32,12 @@ clinicalSigns:
     - 肩部肌肉萎縮
     - 肩關節活動受限
     - 二頭肌腱鈣化
-
 diagnosis:
   primaryTests:
     - name: 肩關節觸診
       notes: 二頭肌腱區域壓痛。屈曲肩關節 + 內旋前臂誘發疼痛
     - name: 超音波 / MRI
       notes: 評估肌腱增厚、液體積聚、撕裂
-
 treatment:
   principles:
     - 控制發炎
@@ -51,16 +47,44 @@ treatment:
     - 限制活動 4-6 週
     - 物理治療
     - 關節鏡下肌腱鬆解或肌腱固定術（頑固病例）
-
 prognosis: 保守治療反應率約 50-70%。手術治療預後良好。多數犬功能恢復佳。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Ultrasonographic appearance of supraspinatus and biceps tendinopathy improves in dogs treated with low-intensity extracorporeal shock wave therapy: a retrospective study."
+    title: >-
+      Ultrasonographic appearance of supraspinatus and biceps tendinopathy improves in dogs treated with low-intensity
+      extracorporeal shock wave therapy: a retrospective study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10440432/
     type: research
-    pmid: "37609057"
+    pmid: '37609057'
 pubmedQueries:
   - query: '"biceps tendinopathy" AND (veterinary OR canine) AND ("arthroscopy" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 二頭肌腱病變 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cachexia-muscle-wasting 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 肩關節觸診
+          notes: 二頭肌腱區域壓痛。屈曲肩關節 + 內旋前臂誘發疼痛
+        - name: 超音波 / MRI
+          notes: 評估肌腱增厚、液體積聚、撕裂
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 控制發炎
+        - 逐步恢復功能
+ddxSource: auto-generated

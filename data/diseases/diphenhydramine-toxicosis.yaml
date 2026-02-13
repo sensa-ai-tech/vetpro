@@ -3,11 +3,11 @@ nameEn: Diphenhydramine Toxicosis
 nameZh: 苯海拉明中毒
 bodySystem: toxicology
 description: 苯海拉明為第一代抗組織胺,過量可引起抗膽鹼症候群、中樞神經興奮及心律不整。
-
 aliases:
-  - { alias: Benadryl中毒, language: zh }
-  - { alias: Diphenhydramine Overdose, language: en }
-
+  - alias: Benadryl中毒
+    language: zh
+  - alias: Diphenhydramine Overdose
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 較少使用
-
 etiology:
   categories:
     - name: 劑量過高
       examples:
         - 超過2-4 mg/kg建議劑量
         - 誤食大量藥錠
-
 clinicalSigns:
   early:
     - 初期鎮靜,後轉為興奮
@@ -34,14 +32,12 @@ clinicalSigns:
     - 肌肉震顫、癲癇
     - 心律不整
     - 高體溫
-
 diagnosis:
   primaryTests:
     - name: 暴露史
-      notes: "確認Diphenhydramine劑量"
+      notes: 確認Diphenhydramine劑量
   differentialDiagnoses:
     - 其他抗膽鹼藥物
-
 treatment:
   medical:
     - 催吐(若2小時內)
@@ -49,18 +45,40 @@ treatment:
     - 鎮靜(若需要)
     - 心律不整治療
     - 支持性療法
-
 prognosis:
-  general: "預後良好,多數24小時內恢復。"
-
+  general: 預後良好,多數24小時內恢復。
 prevention:
   - 依建議劑量使用
   - 避免複方感冒藥(可能含其他成分)
-
-
 guidelineRefs:
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Diphenhydramine exposure in dogs: 621 cases (2008-2013)."
+    title: 'Diphenhydramine exposure in dogs: 621 cases (2008-2013).'
     url: https://pubmed.ncbi.nlm.nih.gov/27308885/
     type: research
-    pmid: "27308885"
+    pmid: '27308885'
+associatedSymptoms:
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 苯海拉明中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - trembling 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 暴露史
+          notes: 確認Diphenhydramine劑量
+ddxSource: auto-generated

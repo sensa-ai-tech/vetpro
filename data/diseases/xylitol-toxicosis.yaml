@@ -3,13 +3,15 @@ nameEn: Xylitol Toxicosis
 nameZh: 木糖醇中毒
 bodySystem: toxicology
 description: 犬攝入木糖醇 (xylitol) 後引起嚴重低血糖與潛在肝衰竭的急性中毒症。犬對木糖醇極度敏感，微量攝入即可致命。
-
 aliases:
-  - { alias: 木糖醇中毒症, language: zh }
-  - { alias: 木糖醇毒性, language: zh }
-  - { alias: Birch Sugar Toxicosis, language: en }
-  - { alias: Xylitol Poisoning, language: en }
-
+  - alias: 木糖醇中毒症
+    language: zh
+  - alias: 木糖醇毒性
+    language: zh
+  - alias: Birch Sugar Toxicosis
+    language: en
+  - alias: Xylitol Poisoning
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓對木糖醇的敏感性較低，臨床報告極少。但仍建議避免接觸。
-
 etiology:
   categories:
     - name: 毒物來源
@@ -41,7 +42,6 @@ etiology:
         - 犬：xylitol 刺激胰島素大量釋放（比蔗糖強 2.5-7 倍）
         - 導致急性嚴重低血糖（攝入後 10-60 分鐘）
         - 高劑量引起急性肝壞死（機制未完全明瞭，可能與 ATP 耗竭相關）
-
 clinicalSigns:
   early:
     - 嘔吐（最早出現的症狀）
@@ -60,22 +60,20 @@ clinicalSigns:
     - 凝血障礙 (DIC)
     - 肝性腦病
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 病史確認
-      notes: "確認木糖醇產品種類、攝入量、攝入時間。產品標示木糖醇含量計算 mg/kg 劑量"
+      notes: 確認木糖醇產品種類、攝入量、攝入時間。產品標示木糖醇含量計算 mg/kg 劑量
     - name: 血糖監測
-      notes: "即時血糖測量為首要。低血糖 (<60 mg/dL) 需緊急處理。每 1-2 小時監測直至穩定"
+      notes: 即時血糖測量為首要。低血糖 (<60 mg/dL) 需緊急處理。每 1-2 小時監測直至穩定
   imaging:
     - name: 腹部超音波
-      notes: "肝臟可能出現急性腫脹、迴音變化。用於評估肝損傷程度"
+      notes: 肝臟可能出現急性腫脹、迴音變化。用於評估肝損傷程度
   additional:
     - 肝功能指數 (ALT、ALP、GGT、bilirubin)，攝入後 8-12 小時開始升高
     - 凝血功能 (PT、aPTT、fibrinogen)
     - 電解質（低血鉀常見）
     - CBC（血小板減少可能與 DIC 相關）
-
 treatment:
   principles:
     - 維持正常血糖為首要目標
@@ -92,26 +90,87 @@ treatment:
     - Vitamin K1 (若凝血功能異常，2.5-5 mg/kg SC/PO BID)
     - 血糖每 1-2 小時監測直至穩定 ≥12 小時
     - 肝指數每 12-24 小時追蹤至少 72 小時
-
 prognosis: 單純低血糖若及時治療預後良好。併發肝衰竭時預後謹慎至差，死亡率可達 20-50%。早期積極治療是關鍵。攝入超過 0.5 g/kg 需密集監測至少 72 小時。
-
 guidelineRefs:
   - sourceOrg: ASPCA APCC
-    title: "Xylitol toxicosis in dogs"
+    title: Xylitol toxicosis in dogs
     url: https://pubmed.ncbi.nlm.nih.gov/17397347/
     type: review
-    pmid: "17397347"
+    pmid: '17397347'
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
-    title: "Acute hepatic failure and coagulopathy associated with xylitol ingestion in eight dogs"
+    title: Acute hepatic failure and coagulopathy associated with xylitol ingestion in eight dogs
     url: https://pubmed.ncbi.nlm.nih.gov/16740317/
     type: case-series
-    pmid: "16740317"
-
+    pmid: '16740317'
 pubmedQueries:
   - query: '"xylitol" AND (dog OR canine) AND ("toxicosis" OR "poisoning" OR "hypoglycemia" OR "hepatic")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "TOX"
-  sectionTitle: "TOXICOSIS"
+  chapter: TOX
+  sectionTitle: TOXICOSIS
   pdfPage: 3128
+diagnosticAlgorithm:
+  title: 木糖醇中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史確認與劑量評估
+      details: 確認攝入量與時間，計算木糖醇劑量
+      findings:
+        - 確認含木糖醇產品（口香糖/糖果/烘焙品/牙膏）
+        - 計算攝入劑量
+        - 攝入時間
+        - 犬比貓更敏感
+    - step: 2
+      action: 急性低血糖評估
+      details: 攝入後30-60分鐘內可能發生低血糖
+      findings:
+        - 嘔吐（早期）
+        - 虛弱與共濟失調
+        - 血糖顯著下降
+        - 癲癇發作（嚴重低血糖）
+    - step: 3
+      action: 肝功能監測
+      details: 攝入後12-72小時監測肝功能
+      findings:
+        - ALT/AST持續升高
+        - 膽紅素升高
+        - 凝血功能異常PT/aPTT延長
+        - 高磷血症
+    - step: 4
+      action: 持續監測與併發症
+      details: 密切監測肝衰竭與DIC徵象
+      findings:
+        - 急性肝衰竭（大劑量）
+        - DIC發展
+        - 血糖持續監測每2-4小時
+        - 肝酶48-72小時追蹤
+clinicalPearls:
+  - 低血糖劑量>0.1 g/kg，肝毒性劑量>0.5 g/kg
+  - 一片無糖口香糖可能含0.3-1 g木糖醇，對小型犬即可致命
+  - 低血糖可在攝入後10-60分鐘內發生，需緊急處理
+  - 肝衰竭可延遲至12-72小時後出現
+  - 花生醬等意想不到的產品也可能含木糖醇
+  - 貓不易中毒因為貓較少攝入甜食
+monitoringItems:
+  - 血糖（每1-2小時監測直到穩定）
+  - 肝酵素（每12-24小時共72小時）
+  - 凝血功能
+  - 電解質
+  - 精神狀態
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+ddxSource: book

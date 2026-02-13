@@ -3,13 +3,15 @@ nameEn: Tympanic Membrane Rupture
 nameZh: 鼓膜破裂
 bodySystem: ear
 description: 鼓膜（tympanic membrane）的完整性喪失，多由慢性外耳炎感染侵蝕、外傷或醫源性清耳損傷所致，導致中耳腔暴露於外耳道環境並增加中耳炎風險。
-
 aliases:
-  - { alias: 鼓膜穿孔, language: zh }
-  - { alias: 耳膜破裂, language: zh }
-  - { alias: Ruptured eardrum, language: en }
-  - { alias: Tympanic membrane perforation, language: en }
-
+  - alias: 鼓膜穿孔
+    language: zh
+  - alias: 耳膜破裂
+    language: zh
+  - alias: Ruptured eardrum
+    language: en
+  - alias: Tympanic membrane perforation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓鼓膜破裂較犬少見，常與鼻咽息肉或嚴重外耳炎相關。
-
 etiology:
   categories:
     - name: 感染性
@@ -33,7 +34,6 @@ etiology:
         - 外傷（頭部撞擊、爆炸聲壓力波）
         - 異物穿刺
         - 氣壓性傷害
-
 clinicalSigns:
   early:
     - 突發耳部疼痛
@@ -45,18 +45,16 @@ clinicalSigns:
     - 前庭症狀（經破裂處感染內耳）
     - 顏面神經症狀
     - 慢性耳漏
-
 diagnosis:
   primaryTests:
     - name: 耳鏡檢查（鎮靜下）
-      notes: "直接觀察鼓膜完整性。穿孔處可見中耳腔黏膜。注意假陰性——大量分泌物遮蔽或鼓膜已癒合"
+      notes: 直接觀察鼓膜完整性。穿孔處可見中耳腔黏膜。注意假陰性——大量分泌物遮蔽或鼓膜已癒合
     - name: CT 影像
-      notes: "鼓膜缺損直接觀察困難，但中耳腔充填提示鼓膜破裂或中耳病變"
+      notes: 鼓膜缺損直接觀察困難，但中耳腔充填提示鼓膜破裂或中耳病變
   differentialDiagnoses:
     - 慢性外耳炎（無鼓膜破裂）
     - 中耳炎
     - 耳道腫瘤
-
 treatment:
   medical:
     - 耳道清潔（僅用溫生理食鹽水，避免耳毒性藥物）
@@ -67,26 +65,44 @@ treatment:
   surgical:
     - 持續未癒合——可能需手術修補（myringoplasty，罕見需要）
     - 合併中耳炎——鼓泡切開術
-
 prognosis:
-  general: "感染控制後鼓膜多可自行癒合，預後良好。合併中耳炎者需更積極治療。反覆破裂者需評估原發因素。"
-
+  general: 感染控制後鼓膜多可自行癒合，預後良好。合併中耳炎者需更積極治療。反覆破裂者需評估原發因素。
 prevention:
   - 正確清耳技術（避免過深或過度壓力）
   - 積極治療急性外耳炎防止進展
   - 勿使用棉花棒深入耳道
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in behavioral neuroscience
     title: Tympanic Membrane Rupture During Stereotaxic Surgery Disturbs the Normal Feeding Behavior in Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7735996/
     type: research
-    pmid: "33335480"
+    pmid: '33335480'
     relevance: supporting
   - sourceOrg: PloS one
-    title: Deletion of genes involved in the ketogluconate metabolism, Entner-Doudoroff pathway, and glucose dehydrogenase increase local and invasive virulence phenotypes in Streptococcus pneumoniae.
+    title: >-
+      Deletion of genes involved in the ketogluconate metabolism, Entner-Doudoroff pathway, and glucose dehydrogenase
+      increase local and invasive virulence phenotypes in Streptococcus pneumoniae.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6324787/
     type: research
-    pmid: "30620734"
+    pmid: '30620734'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: head-tilt
+    frequency: common
+diagnosticAlgorithm:
+  title: 鼓膜破裂 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - head-tilt 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 耳鏡檢查（鎮靜下）
+          notes: 直接觀察鼓膜完整性。穿孔處可見中耳腔黏膜。注意假陰性——大量分泌物遮蔽或鼓膜已癒合
+        - name: CT 影像
+          notes: 鼓膜缺損直接觀察困難，但中耳腔充填提示鼓膜破裂或中耳病變
+ddxSource: auto-generated

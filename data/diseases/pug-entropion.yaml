@@ -3,19 +3,20 @@ nameEn: Pug Entropion
 nameZh: 巴哥犬眼瞼內翻
 bodySystem: ophthalmology
 description: 巴哥犬眼瞼內翻是因短頭犬種面部結構導致的眼瞼畸形，內翻使睫毛與毛髮持續摩擦角膜。巴哥犬常合併內眥贅皮與色素性角膜病變，加重角膜損傷。
-
 aliases:
-  - { alias: 巴哥眼瞼內翻, language: zh }
-  - { alias: 巴哥內翻症, language: zh }
-  - { alias: Pug entropion, language: en }
-  - { alias: Pug eyelid inversion, language: en }
-
+  - alias: 巴哥眼瞼內翻
+    language: zh
+  - alias: 巴哥內翻症
+    language: zh
+  - alias: Pug entropion
+    language: en
+  - alias: Pug eyelid inversion
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 巴哥犬因短頭體態、眼球突出與面部皺褶而高度好發。常合併色素性角膜病變。下眼瞼內側最常受累。
-
 etiology:
   categories:
     - name: 結構因素
@@ -28,7 +29,6 @@ etiology:
         - 慢性結膜炎
         - 角膜疼痛引起痙攣性內翻
         - 老年面部肌肉鬆弛
-
 clinicalSigns:
   early:
     - 流淚增多
@@ -40,21 +40,19 @@ clinicalSigns:
     - 角膜血管新生
     - 慢性黏液性分泌物
     - 視力下降
-
 diagnosis:
   primaryTests:
     - name: 眼科理學檢查
-      notes: "直接觀察眼瞼內翻位置與程度。注意合併的內眥贅皮"
+      notes: 直接觀察眼瞼內翻位置與程度。注意合併的內眥贅皮
     - name: 螢光素染色
-      notes: "評估角膜潰瘍與摩擦區域"
+      notes: 評估角膜潰瘍與摩擦區域
     - name: Schirmer 淚液試驗
-      notes: "排除合併乾眼症"
+      notes: 排除合併乾眼症
   differentialDiagnoses:
     - 異位睫
     - 雙行睫
     - 角膜異物
     - 乾眼症
-
 treatment:
   medical:
     - 人工淚液保護角膜
@@ -63,11 +61,34 @@ treatment:
     - Hotz-Celsus 眼瞼成形術
     - 合併內眥贅皮切除
     - 可能需多次調整手術
-
 prognosis:
-  general: "手術矯正後預後良好。合併內眥切除可同時改善色素性角膜病變。術後需持續局部護理與定期眼科追蹤。"
-
+  general: 手術矯正後預後良好。合併內眥切除可同時改善色素性角膜病變。術後需持續局部護理與定期眼科追蹤。
 prevention:
   - 避免繁殖嚴重眼瞼內翻的個體
   - 減少極端短頭型選育
   - 幼犬期早期眼科評估
+associatedSymptoms:
+  - symptomId: red-eye
+    frequency: common
+  - symptomId: seizures
+    frequency: common
+diagnosticAlgorithm:
+  title: 巴哥犬眼瞼內翻 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - red-eye 相關症狀
+        - seizures 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 眼科理學檢查
+          notes: 直接觀察眼瞼內翻位置與程度。注意合併的內眥贅皮
+        - name: 螢光素染色
+          notes: 評估角膜潰瘍與摩擦區域
+        - name: Schirmer 淚液試驗
+          notes: 排除合併乾眼症
+ddxSource: auto-generated

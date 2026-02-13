@@ -3,16 +3,15 @@ nameEn: Rabbit Antibiotic Toxicity
 nameZh: 兔抗生素毒性
 bodySystem: toxicology
 description: 某些抗生素可破壞兔正常腸道菌群導致致死性腸毒血症（dysbiosis），為兔用藥的重要安全議題。口服含抗革蘭氏陽性菌譜的抗生素（如 Amoxicillin、Clindamycin、Lincomycin）在兔為禁忌。
-
 aliases:
-  - { alias: "兔抗生素毒性", language: zh }
-  - { alias: "Rabbit Antibiotic Toxicity", language: en }
-
+  - alias: 兔抗生素毒性
+    language: zh
+  - alias: Rabbit Antibiotic Toxicity
+    language: en
 species:
   - speciesCommon: rabbit
     prevalence: uncommon
     notes: 兔可受此疾病影響。
-
 etiology:
   categories:
     - name: 藥物相關
@@ -21,7 +20,6 @@ etiology:
         - 口服 Clindamycin/Lincomycin（兔禁忌）
         - 口服 Erythromycin
         - 過量或長期口服任何抗生素
-
 clinicalSigns:
   early:
     - 給藥後 24-72 小時出現厭食
@@ -33,14 +31,12 @@ clinicalSigns:
     - 低體溫
     - 敗血症
     - 猝死
-
 diagnosis:
   primaryTests:
     - name: 藥物使用史
       notes: 詢問近期是否有使用抗生素（尤其口服）。給藥後 1-5 天出現腸道症狀為關鍵線索。
     - name: 糞便檢查
       notes: 糞便培養可見 Clostridium spp. 過度生長。
-
 treatment:
   principles:
     - 立即停用致病抗生素
@@ -53,41 +49,79 @@ treatment:
     - 口服 Cholestyramine（結合 Clostridium 毒素）
     - 益生菌或健康兔糞便移植
     - 安全替代抗生素：Enrofloxacin、Trimethoprim-sulfa、Chloramphenicol
-
 prognosis: 輕度菌群失衡及時停藥並支持治療後預後良好。嚴重腸毒血症死亡率高。預防（了解兔禁用抗生素清單）為最佳策略。Amoxicillin 注射劑型在兔相對安全但口服劑型為禁忌。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in cellular and infection microbiology
-    title: "Thalidomide and Phosphodiesterase 4 Inhibitors as Host Directed Therapeutics for Tuberculous Meningitis: Insights From the Rabbit Model."
+    title: >-
+      Thalidomide and Phosphodiesterase 4 Inhibitors as Host Directed Therapeutics for Tuberculous Meningitis: Insights
+      From the Rabbit Model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6972508/
     type: review
-    pmid: "32010638"
+    pmid: '32010638'
     relevance: supporting
   - sourceOrg: PloS one
-    title: "Antibacterial and biocompatibility studies of triple antibiotics-impregnated external ventricular drainage: In vitro and in vivo evaluation."
+    title: >-
+      Antibacterial and biocompatibility studies of triple antibiotics-impregnated external ventricular drainage: In
+      vitro and in vivo evaluation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9815579/
     type: research
-    pmid: "36603010"
+    pmid: '36603010'
     relevance: supporting
-  - sourceOrg: "ACS applied materials &amp; interfaces"
+  - sourceOrg: ACS applied materials &amp; interfaces
     title: Mussel-Inspired Sonochemical Nanocomposite Coating on Catheters for Prevention of Urinary Infections.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11247429/
     type: research
-    pmid: "38916599"
+    pmid: '38916599'
     relevance: supporting
   - sourceOrg: International journal of molecular sciences
     title: Cabotegravir Exposure of Zebrafish (Danio rerio) Embryos Impacts on Neurodevelopment and Behavior.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9916638/
     type: research
-    pmid: "36768311"
+    pmid: '36768311'
     relevance: supporting
   - sourceOrg: International orthopaedics
-    title: "The tale of microencapsulated rifampicin: is it useful for the treatment of periprosthetic joint infection?"
+    title: 'The tale of microencapsulated rifampicin: is it useful for the treatment of periprosthetic joint infection?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8930928/
     type: research
-    pmid: "34988621"
+    pmid: '34988621'
     relevance: supporting
 pubmedQueries:
   - query: '"Rabbit Antibiotic Toxicity" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔抗生素毒性 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - abdominal-pain 相關症狀
+        - hypothermia-sign 相關症狀
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 藥物使用史
+          notes: 詢問近期是否有使用抗生素（尤其口服）。給藥後 1-5 天出現腸道症狀為關鍵線索。
+        - name: 糞便檢查
+          notes: 糞便培養可見 Clostridium spp. 過度生長。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 立即停用致病抗生素
+        - 積極支持性治療
+        - 恢復腸道菌群
+ddxSource: auto-generated

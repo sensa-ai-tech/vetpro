@@ -3,19 +3,20 @@ nameEn: Hepatitis Chronic Feline
 nameZh: 貓慢性肝炎
 bodySystem: hepatic
 description: 貓慢性肝炎是以肝臟持續性炎症為特徵的疾病，在貓中較犬少見。貓肝臟炎症疾病以膽管炎為主要表現，但亦可見門脈性或小葉性肝炎模式。
-
 aliases:
-  - { alias: 貓慢性活動性肝炎, language: zh }
-  - { alias: 貓肝臟炎症性疾病, language: zh }
-  - { alias: Feline Chronic Active Hepatitis, language: en }
-  - { alias: Feline Hepatic Inflammatory Disease, language: en }
-
+  - alias: 貓慢性活動性肝炎
+    language: zh
+  - alias: 貓肝臟炎症性疾病
+    language: zh
+  - alias: Feline Chronic Active Hepatitis
+    language: en
+  - alias: Feline Hepatic Inflammatory Disease
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓慢性肝炎較犬少見，但膽管炎相關的慢性肝臟炎症在貓中佔重要地位。中老年貓好發，無明確品種好發傾向。
-
 etiology:
   categories:
     - name: 炎症性
@@ -32,7 +33,6 @@ etiology:
       examples:
         - 自體免疫性肝炎（罕見）
         - 三合一症相關（膽管炎+胰臟炎+炎性腸病）
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -46,19 +46,17 @@ clinicalSigns:
     - 肝腫大或肝萎縮
     - 腹水
     - 肝性腦病（異常行為、流涎）
-
 diagnosis:
   primaryTests:
     - name: 肝臟穿刺活檢
-      notes: "確診需組織病理學。區分膽管炎類型（淋巴球性vs嗜中性球性）對治療選擇至關重要。評估纖維化程度。"
+      notes: 確診需組織病理學。區分膽管炎類型（淋巴球性vs嗜中性球性）對治療選擇至關重要。評估纖維化程度。
     - name: 血液生化
-      notes: "ALT 與 ALP 升高。貓 ALP 半衰期短（6小時），輕度升高即有臨床意義。膽紅素升高、低白蛋白血症。"
+      notes: ALT 與 ALP 升高。貓 ALP 半衰期短（6小時），輕度升高即有臨床意義。膽紅素升高、低白蛋白血症。
   differentialDiagnoses:
     - 肝脂肪沉積症 (Hepatic Lipidosis)
     - 膽管細胞癌
     - 貓傳染性腹膜炎
     - 淋巴瘤肝臟浸潤
-
 treatment:
   medical:
     - 淋巴球性膽管炎：Prednisolone 1-2 mg/kg PO q24h 漸減至最低有效劑量
@@ -70,45 +68,77 @@ treatment:
   surgical:
     - 肝臟活檢（超音波引導或腹腔鏡）
     - 膽管阻塞的手術解除
-
 prognosis:
-  general: "淋巴球性膽管炎對免疫抑制治療反應良好，中位存活時間約3年以上。嗜中性球性膽管炎若及時抗生素治療預後尚可，但易復發。進展至膽管纖維化或肝硬化者預後不良。"
-
+  general: 淋巴球性膽管炎對免疫抑制治療反應良好，中位存活時間約3年以上。嗜中性球性膽管炎若及時抗生素治療預後尚可，但易復發。進展至膽管纖維化或肝硬化者預後不良。
 prevention:
   - 無特異性預防措施
   - 消化道疾病的及時管理
   - 定期肝功能監測
   - 適當營養管理預防肝脂肪沉積
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
     title: Evaluation of urinary kidney injury molecule-1 in cats with chronic kidney disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12035179/
     type: research
-    pmid: "40231639"
+    pmid: '40231639'
     relevance: supporting
   - sourceOrg: PLoS pathogens
     title: Screening of different species reveals cat hepatocytes support HBV infection.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12333979/
     type: research
-    pmid: "40758741"
+    pmid: '40758741'
     relevance: supporting
   - sourceOrg: Journal of virology
     title: Identification of NTCP animal orthologs supporting hepatitis B virus binding and infection.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11998539/
     type: research
-    pmid: "40042307"
+    pmid: '40042307'
     relevance: supporting
   - sourceOrg: Viruses
     title: Prevalence and Genomic Sequence Analysis of Domestic Cat Hepadnavirus in the United States.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9607532/
     type: research
-    pmid: "36298647"
+    pmid: '36298647'
     relevance: supporting
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Domestic cat hepadnavirus associated with hepatopathy in cats: A retrospective study."
+    title: 'Domestic cat hepadnavirus associated with hepatopathy in cats: A retrospective study.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9511090/
     type: research
-    pmid: "36054642"
+    pmid: '36054642'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: hepatomegaly
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 貓慢性肝炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - hepatomegaly 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 肝臟穿刺活檢
+          notes: 確診需組織病理學。區分膽管炎類型（淋巴球性vs嗜中性球性）對治療選擇至關重要。評估纖維化程度。
+        - name: 血液生化
+          notes: ALT 與 ALP 升高。貓 ALP 半衰期短（6小時），輕度升高即有臨床意義。膽紅素升高、低白蛋白血症。
+ddxSource: auto-generated

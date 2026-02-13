@@ -3,17 +3,16 @@ nameEn: Irish Wolfhound Pneumonia
 nameZh: 愛爾蘭獵狼犬肺炎
 bodySystem: respiratory
 description: 愛爾蘭獵狼犬因免疫系統相對較弱與巨型體型,較易發生細菌性肺炎。吸入性肺炎與院內感染風險亦較高。
-
 aliases:
-  - { alias: 巨型犬肺炎, language: zh }
-  - { alias: Bacterial Pneumonia Irish Wolfhound, language: en }
-
+  - alias: 巨型犬肺炎
+    language: zh
+  - alias: Bacterial Pneumonia Irish Wolfhound
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 巨型犬種因麻醉風險與誤吸風險較高,肺炎發生率與死亡率較一般犬種高
-
 etiology:
   categories:
     - name: 細菌感染
@@ -28,7 +27,6 @@ etiology:
       examples:
         - 巨型犬種免疫功能相對較弱
         - 繼發於其他疾病或藥物
-
 clinicalSigns:
   early:
     - 咳嗽(濕性咳嗽,產痰音)
@@ -38,23 +36,21 @@ clinicalSigns:
     - 呼吸困難,呼吸急促
     - 鼻分泌物(膿性或黏液膿性)
     - 脫水,休克
-
 diagnosis:
   primaryTests:
     - name: 胸部 X 光
-      notes: "肺葉實質化,支氣管充氣徵,肺泡浸潤"
+      notes: 肺葉實質化,支氣管充氣徵,肺泡浸潤
     - name: 血液學檢查
-      notes: "白血球增多或減少,左移,CRP 升高"
+      notes: 白血球增多或減少,左移,CRP 升高
     - name: 氣管沖洗液細胞學與培養
-      notes: "確認致病菌,藥物敏感性試驗"
+      notes: 確認致病菌,藥物敏感性試驗
     - name: 動脈血氣分析
-      notes: "評估氧合狀態(PaO2 <80 mmHg 為低血氧)"
+      notes: 評估氧合狀態(PaO2 <80 mmHg 為低血氧)
   differentialDiagnoses:
     - 心因性肺水腫
     - 肺腫瘤
     - 真菌性肺炎
     - 肺蟲感染
-
 treatment:
   medical:
     - 廣效抗生素:Ampicillin-sulbactam 22 mg/kg IV q8h + Enrofloxacin 10 mg/kg IV q24h(經驗性治療)
@@ -65,12 +61,42 @@ treatment:
     - 霧化治療:生理食鹽水或 Acetylcysteine 霧化 q6-8h
     - 胸部物理治療:叩擊與姿勢引流(coupage)q6-8h
     - 營養支持(鼻胃管或食道胃管,若無法自主進食)
-
 prognosis:
-  general: "預後取決於病因與嚴重度。單純細菌性肺炎適當治療後預後良好,但巨型犬種肺炎死亡率較一般犬高(約 10-20%)。吸入性肺炎預後保守,尤其伴隨巨食道症者。"
-
+  general: 預後取決於病因與嚴重度。單純細菌性肺炎適當治療後預後良好,但巨型犬種肺炎死亡率較一般犬高(約 10-20%)。吸入性肺炎預後保守,尤其伴隨巨食道症者。
 prevention:
   - 巨食道症犬隻採直立進食,進食後維持直立 10-15 分鐘
   - 麻醉前禁食 12 小時,術中注意氣管插管保護
   - 免疫功能低下犬隻避免接觸犬舍咳患犬
   - 定期疫苗接種(包含 Bordetella)
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: common
+  - symptomId: coughing
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 愛爾蘭獵狼犬肺炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - weakness 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸部 X 光
+          notes: 肺葉實質化,支氣管充氣徵,肺泡浸潤
+        - name: 血液學檢查
+          notes: 白血球增多或減少,左移,CRP 升高
+        - name: 氣管沖洗液細胞學與培養
+          notes: 確認致病菌,藥物敏感性試驗
+ddxSource: auto-generated

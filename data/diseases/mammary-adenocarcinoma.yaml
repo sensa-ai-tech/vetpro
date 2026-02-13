@@ -3,11 +3,11 @@ nameEn: Mammary Adenocarcinoma
 nameZh: 乳腺腺癌
 bodySystem: oncology
 description: 乳腺上皮細胞的惡性腫瘤，為母犬最常見的惡性腫瘤之一。犬乳腺腫瘤約 50% 為惡性，貓則約 85% 以上為惡性。早期結紮可大幅降低風險。
-
 aliases:
-  - { alias: "Mammary Carcinoma", language: en }
-  - { alias: "乳腺癌", language: zh }
-
+  - alias: Mammary Carcinoma
+    language: en
+  - alias: 乳腺癌
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓乳腺腫瘤惡性率極高（> 85%）。Siamese 好發。
-
 etiology:
   categories:
     - name: 賀爾蒙相關
@@ -23,7 +22,6 @@ etiology:
         - 黃體素與雌激素暴露
         - 未結紮母犬風險高
         - 早期結紮大幅降低風險
-
 clinicalSigns:
   early:
     - 乳腺區可觸及腫塊
@@ -34,7 +32,6 @@ clinicalSigns:
     - 潰瘍
     - 區域淋巴結腫大
     - 肺轉移
-
 diagnosis:
   primaryTests:
     - name: 細針穿刺
@@ -43,7 +40,6 @@ diagnosis:
       notes: 肺轉移篩檢（三視位）
     - name: 腹部超音波
       notes: 淋巴結與腹腔臟器評估
-
 treatment:
   principles:
     - 手術切除為主要治療
@@ -53,36 +49,70 @@ treatment:
     - 腫瘤大於 3 cm（犬）或任何大小（貓）考慮化療
     - 化療（Doxorubicin 或 Carboplatin）
     - 同時結紮
-
 prognosis: 犬 < 3 cm 腫瘤完全切除預後良好（中位存活 > 2 年）。犬 > 5 cm 或有轉移預後不良。貓乳腺腺癌預後較犬差（中位存活 1 年）。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
-    title: "Clinical Trials of Cancer Immunogene Therapies in Companion Animals: An Update (2017-2024)."
+    title: 'Clinical Trials of Cancer Immunogene Therapies in Companion Animals: An Update (2017-2024).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12031495/
     type: review
-    pmid: "40284831"
+    pmid: '40284831'
   - sourceOrg: World journal of experimental medicine
     title: Recent clinical trials of cancer immunogene therapy in companion animals.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5439171/
     type: review
-    pmid: "28589078"
-  - sourceOrg: "Asian Pacific journal of cancer prevention : APJCP"
-    title: "Effect of Curcuma Longa Extract to Granzyme Expression and Tumor Mass Diameter of Mammary Adenocarcinoma with Chemotherapy Adriamycin Cyclophosphamide: An Animal Study in Rats."
+    pmid: '28589078'
+  - sourceOrg: 'Asian Pacific journal of cancer prevention : APJCP'
+    title: >-
+      Effect of Curcuma Longa Extract to Granzyme Expression and Tumor Mass Diameter of Mammary Adenocarcinoma with
+      Chemotherapy Adriamycin Cyclophosphamide: An Animal Study in Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12862418/
     type: research
-    pmid: "40952276"
+    pmid: '40952276'
   - sourceOrg: Pharmaceutics
-    title: PLGA-Quercetin Nano-Formulation Inhibits Cancer Progression via Mitochondrial Dependent Caspase-3,7 and Independent FoxO1 Activation with Concomitant PI3K/AKT Suppression.
+    title: >-
+      PLGA-Quercetin Nano-Formulation Inhibits Cancer Progression via Mitochondrial Dependent Caspase-3,7 and
+      Independent FoxO1 Activation with Concomitant PI3K/AKT Suppression.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9323198/
     type: research
-    pmid: "35890222"
+    pmid: '35890222'
   - sourceOrg: International journal of molecular sciences
-    title: Differentially Expressed Genes Induced by Erythropoietin Receptor Overexpression in Rat Mammary Adenocarcinoma RAMA 37-28 Cells.
+    title: >-
+      Differentially Expressed Genes Induced by Erythropoietin Receptor Overexpression in Rat Mammary Adenocarcinoma
+      RAMA 37-28 Cells.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10218110/
     type: research
-    pmid: "37239828"
+    pmid: '37239828'
 pubmedQueries:
   - query: '"mammary adenocarcinoma" AND (veterinary OR canine OR feline) AND ("surgery" OR "chemotherapy")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: common
+diagnosticAlgorithm:
+  title: 乳腺腺癌 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 細針穿刺
+          notes: 細胞學初步評估。確診需組織病理
+        - name: 胸腔 X 光
+          notes: 肺轉移篩檢（三視位）
+        - name: 腹部超音波
+          notes: 淋巴結與腹腔臟器評估
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術切除為主要治療
+        - 分期決定預後與後續治療
+ddxSource: auto-generated

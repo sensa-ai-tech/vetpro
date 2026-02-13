@@ -3,17 +3,16 @@ nameEn: Rabbit Spinal Cord Disease
 nameZh: 兔 脊髓疾病
 bodySystem: neurology
 description: 兔 脊髓疾病是兔常見的神經系統疾病,需要及時診斷與治療以改善預後。
-
 aliases:
-  - { alias: 兔 脊髓疾疾病, language: zh }
-  - { alias: Rabbit Spinal Cord Disorder, language: en }
-
+  - alias: 兔 脊髓疾疾病
+    language: zh
+  - alias: Rabbit Spinal Cord Disorder
+    language: en
 species:
   - speciesCommon: rabbit
     speciesScientific: Oryctolagus cuniculus
     prevalence: moderate
     notes: 常見於寵物飼養群體,需注意早期症狀
-
 etiology:
   categories:
     - name: 多因素
@@ -21,7 +20,6 @@ etiology:
         - 遺傳因素
         - 環境因素
         - 營養因素
-
 clinicalSigns:
   early:
     - 精神食慾下降
@@ -31,20 +29,18 @@ clinicalSigns:
     - 症狀逐漸惡化
     - 可能出現併發症
     - 生活品質下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
-      notes: "基本身體評估及症狀確認"
+      notes: 基本身體評估及症狀確認
     - name: 血液學檢查
-      notes: "CBC及生化學檢查評估整體健康狀況"
+      notes: CBC及生化學檢查評估整體健康狀況
     - name: 影像學檢查
-      notes: "X光或超音波檢查輔助診斷"
+      notes: X光或超音波檢查輔助診斷
   differentialDiagnoses:
     - 其他相關疾病
     - 系統性疾病
     - 併發症
-
 treatment:
   medical:
     - 支持療法:輸液及營養支持
@@ -52,45 +48,69 @@ treatment:
     - 必要時使用抗生素或抗病毒藥物
   surgical:
     - 視病情需要考慮手術治療
-
 prognosis:
-  general: "預後取決於診斷時機、疾病嚴重程度及治療反應,早期診斷與積極治療預後較佳"
-
+  general: 預後取決於診斷時機、疾病嚴重程度及治療反應,早期診斷與積極治療預後較佳
 prevention:
   - 提供適當飲食與環境
   - 定期健康檢查
   - 注意疾病早期症狀
   - 維持良好衛生環境
-
-
 guidelineRefs:
   - sourceOrg: JOR spine
-    title: "Preclinical models of vertebral osteomyelitis and associated infections: Current models and recommendations for study design."
+    title: >-
+      Preclinical models of vertebral osteomyelitis and associated infections: Current models and recommendations for
+      study design.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8313152/
     type: review
-    pmid: "34337331"
+    pmid: '34337331'
     relevance: primary
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Current Aspects Regarding the Clinical Relevance of Electroacupuncture in Dogs with Spinal Cord Injury: A Literature Review."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Current Aspects Regarding the Clinical Relevance of Electroacupuncture in Dogs with Spinal Cord Injury: A
+      Literature Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7831012/
     type: review
-    pmid: "33477408"
+    pmid: '33477408'
     relevance: primary
   - sourceOrg: Journal of leukocyte biology
     title: Proliferation of monocytes and macrophages in homeostasis, infection, injury, and disease.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10673715/
     type: review
-    pmid: "37555460"
+    pmid: '37555460'
     relevance: primary
   - sourceOrg: Journal of neuropathology and experimental neurology
     title: Histological Findings After Aortic Cross-Clamping in Preclinical Animal Models.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8783616/
     type: review
-    pmid: "34534333"
+    pmid: '34534333'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
-    title: Caretaker-reported quality of life, functionality, and complications associated with assistive mobility cart use in companion animals.
+    title: >-
+      Caretaker-reported quality of life, functionality, and complications associated with assistive mobility cart use
+      in companion animals.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11551849/
     type: research
-    pmid: "39529851"
+    pmid: '39529851'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+diagnosticAlgorithm:
+  title: 兔 脊髓疾病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 基本身體評估及症狀確認
+        - name: 血液學檢查
+          notes: CBC及生化學檢查評估整體健康狀況
+        - name: 影像學檢查
+          notes: X光或超音波檢查輔助診斷
+ddxSource: auto-generated

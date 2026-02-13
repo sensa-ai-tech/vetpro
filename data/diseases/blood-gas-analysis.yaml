@@ -3,11 +3,11 @@ nameEn: Blood Gas Analysis
 nameZh: 血液氣體分析
 bodySystem: other
 description: 犬貓血液氣體分析,評估酸鹼平衡、氧合狀態、電解質。為重症醫學及麻醉監測的重要工具,可即時評估呼吸及代謝功能,指導治療調整。
-
 aliases:
-  - { alias: 血氣分析, language: zh }
-  - { alias: Arterial blood gas, language: en }
-
+  - alias: 血氣分析
+    language: zh
+  - alias: Arterial blood gas
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓呼吸困難、代謝性酸中毒評估
-
 etiology:
   categories:
     - name: 血氣參數
@@ -32,66 +31,88 @@ etiology:
         - Na、K、Cl
         - iCa(游離鈣)
         - 血糖、乳酸
-
 clinicalSigns:
   early:
     - 血氣分析為診斷及監測工具
   progressive:
     - 呼吸困難、意識改變、休克
-
 diagnosis:
   primaryTests:
     - name: 酸鹼平衡判讀
-      notes: "pH<7.35酸血症,>7.45鹼血症。PaCO2>45呼吸性酸中毒,<35呼吸性鹼中毒"
+      notes: pH<7.35酸血症,>7.45鹼血症。PaCO2>45呼吸性酸中毒,<35呼吸性鹼中毒
     - name: 氧合評估
-      notes: "PaO2正常>80 mmHg,<60為低血氧"
+      notes: PaO2正常>80 mmHg,<60為低血氧
     - name: 代謝性評估
-      notes: "HCO3-<18代謝性酸中毒,>28代謝性鹼中毒"
+      notes: HCO3-<18代謝性酸中毒,>28代謝性鹼中毒
   differentialDiagnoses:
     - 呼吸性酸中毒或鹼中毒
     - 代謝性酸中毒或鹼中毒
     - 混合性酸鹼異常
-
 treatment:
   medical:
     - 血氣分析為診斷及監測工具
     - 氧氣治療(低血氧)
     - 通氣支持(高碳酸血症)
     - 碳酸氫鈉(嚴重代謝性酸中毒)
-
 prognosis:
-  general: "血氣分析為重症醫學黃金標準,可即時評估酸鹼及氧合狀態,指導治療。"
-
+  general: 血氣分析為重症醫學黃金標準,可即時評估酸鹼及氧合狀態,指導治療。
 prevention:
   - 動脈血採集(股動脈或背足動脈)
   - 肝素化注射器
   - 立即分析(<15分鐘)或冰浴保存
   - 避免氣泡影響結果
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Standardized protocols for blood collection and analysis in elasmobranchs: a practical guide for clinicians and researchers."
+    title: >-
+      Standardized protocols for blood collection and analysis in elasmobranchs: a practical guide for clinicians and
+      researchers.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12866614/
     type: research
-    pmid: "41640948"
+    pmid: '41640948'
   - sourceOrg: Frontiers in veterinary science
-    title: Reference intervals for hematology, serum biochemistry and blood gas parameters in Indian elephants (Elephas maximus indicus) under human care.
+    title: >-
+      Reference intervals for hematology, serum biochemistry and blood gas parameters in Indian elephants (Elephas
+      maximus indicus) under human care.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12301552/
     type: research
-    pmid: "40727269"
+    pmid: '40727269'
   - sourceOrg: BMC veterinary research
     title: Maize stover burning exposure accountable for remarkable environmental and health risk in broiler chickens.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11934768/
     type: research
-    pmid: "40128693"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '40128693'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Short-Term Effects of Heat Stress on Cow Behavior, Registered by Innovative Technologies and Blood Gas Parameters.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11350899/
     type: research
-    pmid: "39199924"
+    pmid: '39199924'
   - sourceOrg: Frontiers in veterinary science
     title: Utility of diagnostic tests in vomiting dogs presented to an internal medicine emergency service.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9933778/
     type: research
-    pmid: "36816199"
+    pmid: '36816199'
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 血液氣體分析 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - coma-stupor 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 酸鹼平衡判讀
+          notes: pH<7.35酸血症,>7.45鹼血症。PaCO2>45呼吸性酸中毒,<35呼吸性鹼中毒
+        - name: 氧合評估
+          notes: PaO2正常>80 mmHg,<60為低血氧
+        - name: 代謝性評估
+          notes: HCO3-<18代謝性酸中毒,>28代謝性鹼中毒
+ddxSource: auto-generated

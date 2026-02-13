@@ -3,13 +3,15 @@ nameEn: Hyperadrenocorticism
 nameZh: 腎上腺皮質功能亢進
 bodySystem: endocrine
 description: 皮質醇慢性過量所導致的多系統疾病，犬常見，貓罕見。又稱庫欣氏症候群。
-
 aliases:
-  - { alias: "Cushing's Syndrome", language: en }
-  - { alias: "Cushing's Disease", language: en }
-  - { alias: HAC, language: en }
-  - { alias: 庫欣氏症, language: zh }
-
+  - alias: Cushing's Syndrome
+    language: en
+  - alias: Cushing's Disease
+    language: en
+  - alias: HAC
+    language: en
+  - alias: 庫欣氏症
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓罕見。常與糖尿病並存且難以控制。約 80% 貓 HAC 同時有 DM。
-
 etiology:
   categories:
     - name: 腦下垂體依賴型 (PDH)
@@ -36,7 +37,6 @@ etiology:
       examples:
         - 長期外源性類固醇投予
         - 停藥後需逐步減量以避免 Addisonian crisis
-
 clinicalSigns:
   early:
     - 多尿多渴 (PU/PD，最常見首發症狀)
@@ -56,20 +56,19 @@ clinicalSigns:
     - 糖尿病 (胰島素阻抗)
     - 腦下垂體大腺瘤神經症狀 (行為改變、失明、走圈)
     - 韌帶斷裂 (膠原代謝異常)
-
 diagnosis:
   primaryTests:
     - name: UCCR (尿液皮質醇/肌酐比)
-      notes: "敏感度高 (>90%) 但特異度低。適合排除診斷。正常值排除 HAC"
+      notes: 敏感度高 (>90%) 但特異度低。適合排除診斷。正常值排除 HAC
     - name: LDDS (低劑量 dexamethasone 抑制試驗)
-      notes: "敏感度約 95%。Dex 0.01 mg/kg IV，0/4/8 hr 取樣。8hr cortisol >1.4 μg/dL 為陽性"
+      notes: 敏感度約 95%。Dex 0.01 mg/kg IV，0/4/8 hr 取樣。8hr cortisol >1.4 μg/dL 為陽性
     - name: ACTH 刺激試驗
-      notes: "特異度較高。Cosyntropin 5 μg/kg IV，0/1 hr。Post >22 μg/dL 為陽性。為醫源性 HAC 唯一檢測方法"
+      notes: 特異度較高。Cosyntropin 5 μg/kg IV，0/1 hr。Post >22 μg/dL 為陽性。為醫源性 HAC 唯一檢測方法
   imaging:
     - name: 腹部超音波
-      notes: "腎上腺大小 (犬 >7.4 mm 可疑)。PDH 雙側增生；ADH 單側腫瘤伴對側萎縮。肝腫大、膀胱結石"
+      notes: 腎上腺大小 (犬 >7.4 mm 可疑)。PDH 雙側增生；ADH 單側腫瘤伴對側萎縮。肝腫大、膀胱結石
     - name: 腹部 CT/MRI
-      notes: "腎上腺腫瘤侵犯範圍。腦下垂體 MRI 評估腫瘤大小 (>1 cm 為大腺瘤)"
+      notes: 腎上腺腫瘤侵犯範圍。腦下垂體 MRI 評估腫瘤大小 (>1 cm 為大腺瘤)
   additional:
     - HDDS (高劑量 dexamethasone 抑制試驗) — 區分 PDH vs ADH
     - 內源性 ACTH 濃度 — PDH 正常/升高；ADH 被抑制
@@ -77,7 +76,6 @@ diagnosis:
     - CBC (stress leukogram)
     - 尿液培養 (約 50% 有無症狀菌尿)
     - 血壓測量
-
 treatment:
   principles:
     - PDH 以藥物治療為主 (trilostane 首選)
@@ -86,13 +84,13 @@ treatment:
     - 治療後需密切監測 ACTH 刺激試驗
   medications:
     - name: Trilostane (Vetoryl)
-      dose: "初始 1-2 mg/kg PO SID (與食物)。根據 ACTH stim 調整"
+      dose: 初始 1-2 mg/kg PO SID (與食物)。根據 ACTH stim 調整
       notes: 3β-HSD 抑制劑。PDH 首選。4-6 hr post-pill ACTH stim 監測 (目標 post 1.5-5.4 μg/dL)
     - name: Mitotane (o,p'-DDD)
-      dose: "Loading 25-50 mg/kg/day PO × 7-10 天；維持 25-50 mg/kg/week 分 2-3 次"
+      dose: Loading 25-50 mg/kg/day PO × 7-10 天；維持 25-50 mg/kg/week 分 2-3 次
       notes: 腎上腺皮質破壞劑。副作用風險高。需與食物同服。已非首選
     - name: Cabergoline
-      dose: "用於腦下垂體大腺瘤的輔助治療"
+      dose: 用於腦下垂體大腺瘤的輔助治療
       notes: Dopamine agonist，部分腦下垂體腫瘤有反應
   general:
     - ADH 腺瘤：腎上腺切除術 (術後需補充 glucocorticoid + mineralocorticoid 數週至數月)
@@ -100,46 +98,126 @@ treatment:
     - 併存 DM：同時控制 (HAC 治療後胰島素需求可能下降)
     - 泌尿道感染治療
     - 高血壓管理
-
 prognosis: PDH 以 trilostane 治療中位存活約 2-2.5 年。腎上腺腺瘤手術切除後預後良好 (中位存活 >3 年)。腎上腺腺癌預後差 (中位存活 <1 年)。腦下垂體大腺瘤預後較差。
-
 ontologyMappings:
   - source: MONDO
-    code: "MONDO:0002528"
+    code: MONDO:0002528
     label: Cushing syndrome
     confidence: exact
-
 guidelineRefs:
   - sourceOrg: ACVIM
     title: ACVIM Consensus Statement on the Diagnosis and Treatment of Canine HAC
     url: https://pubmed.ncbi.nlm.nih.gov/34201482/
     type: consensus
-    pmid: "34201482"
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
-    title: 2022 Update of the Consensus on the Rational Use of Antithrombotics and Thrombolytics in Veterinary Critical Care (CURATIVE) Domain 1- Defining populations at risk.
+    pmid: '34201482'
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
+    title: >-
+      2022 Update of the Consensus on the Rational Use of Antithrombotics and Thrombolytics in Veterinary Critical Care
+      (CURATIVE) Domain 1- Defining populations at risk.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9322658/
     type: consensus
-    pmid: "35499966"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Trilostane: Beyond Cushing's Syndrome."
+    pmid: '35499966'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Trilostane: Beyond Cushing''s Syndrome.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11816184/
     type: review
-    pmid: "39943185"
+    pmid: '39943185'
   - sourceOrg: Veterinary world
-    title: Comparative occurrence of diabetes in canine, feline, and few wild animals and their association with pancreatic diseases and ketoacidosis with therapeutic approach.
+    title: >-
+      Comparative occurrence of diabetes in canine, feline, and few wild animals and their association with pancreatic
+      diseases and ketoacidosis with therapeutic approach.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5960778/
     type: review
-    pmid: "29805204"
+    pmid: '29805204'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline comorbidities: Recognition, diagnosis and management of the cushingoid diabetic."
+    title: 'Feline comorbidities: Recognition, diagnosis and management of the cushingoid diabetic.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11163885/
     type: review
-    pmid: "33403912"
+    pmid: '33403912'
 pubmedQueries:
   - query: '"hyperadrenocorticism" OR "Cushing" AND (dog OR canine) AND ("trilostane" OR "diagnosis" OR "consensus")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "END"
-  sectionTitle: "HYPERADRENOCORTICISM"
+  chapter: END
+  sectionTitle: HYPERADRENOCORTICISM
   pdfPage: 614
+diagnosticAlgorithm:
+  title: 腎上腺皮質功能亢進症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 詢問多喝多尿、腹部膨大、皮膚變化病史
+      findings:
+        - 多飲多尿
+        - 腹部膨大（壺腹狀）
+        - 對稱性脫毛
+        - 皮膚變薄
+    - step: 2
+      action: 血液生化篩檢
+      details: CBC、血清生化及尿液分析
+      findings:
+        - 鹼性磷酸酶顯著升高
+        - 膽固醇與三酸甘油酯升高
+        - 尿比重低
+        - 應激性白血球圖譜
+    - step: 3
+      action: 內分泌功能試驗
+      details: 低劑量地塞米松抑制試驗（LDDS）或ACTH刺激試驗
+      findings:
+        - LDDS 8小時皮質醇未抑制
+        - ACTH刺激後皮質醇過度升高
+        - 尿皮質醇/肌酐比值升高
+    - step: 4
+      action: 定位診斷
+      details: 腹部超音波及高劑量地塞米松抑制試驗區分垂體依賴型與腎上腺腫瘤型
+      findings:
+        - 雙側腎上腺腫大（垂體依賴型）
+        - 單側腎上腺腫瘤
+        - 對側腎上腺萎縮
+        - 腦部MRI評估垂體
+clinicalPearls:
+  - 85%為PDH，15%為AT
+  - Trilostane需定期ACTH刺激試驗監測
+  - 警惕醫源性Cushing（長期類固醇使用）
+  - 糖尿病是常見併發症
+monitoringItems:
+  - ACTH刺激試驗（治療開始後10-14天，之後定期）
+  - 電解質
+  - 臨床症狀
+  - 肝功能
+associatedSymptoms:
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: weight-gain
+    frequency: common
+  - symptomId: polyphagia
+    frequency: common
+  - symptomId: abdominal-distension
+    frequency: common
+  - symptomId: alopecia
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: common
+  - symptomId: hepatomegaly
+    frequency: common
+associatedLabFindings:
+  - labId: elevated-alt-alp
+    frequency: common
+  - labId: hyperglycaemia
+    frequency: common
+ddxSource: book

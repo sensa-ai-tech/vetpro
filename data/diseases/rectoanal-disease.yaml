@@ -3,11 +3,11 @@ nameEn: Rectoanal Disease
 nameZh: 直腸肛門疾病
 bodySystem: gastrointestinal
 description: 直腸及肛門區疾病總稱,包含息肉、腫瘤、狹窄、廔管等。症狀為血便、排便困難及裡急後重。
-
 aliases:
-  - { alias: 直肛疾病, language: zh }
-  - { alias: Anorectal Disease, language: en }
-
+  - alias: 直肛疾病
+    language: zh
+  - alias: Anorectal Disease
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 較少見,可能為便秘繼發
-
 etiology:
   categories:
     - name: 腫瘤性
@@ -32,7 +31,6 @@ etiology:
       examples:
         - 直腸狹窄
         - 會陰疝氣
-
 clinicalSigns:
   early:
     - 血便
@@ -41,37 +39,63 @@ clinicalSigns:
     - 裡急後重
     - 直腸脫垂
     - 體重減輕
-
 diagnosis:
   primaryTests:
     - name: 直腸觸診
-      notes: "評估腫塊、狹窄、疼痛"
+      notes: 評估腫塊、狹窄、疼痛
     - name: 結腸鏡檢查
-      notes: "直視病灶"
+      notes: 直視病灶
     - name: 組織切片
-      notes: "確診腫瘤或炎症"
+      notes: 確診腫瘤或炎症
   differentialDiagnoses:
     - 依原發病因分類
-
 treatment:
   medical:
     - 依原發病因治療
     - 外科切除 (腫瘤、息肉)
     - 抗發炎治療 (直腸炎)
     - 飲食管理
-
 prognosis:
-  general: "取決於原發病因;良性病變預後良好;惡性腫瘤預後謹慎至不良"
-
+  general: 取決於原發病因;良性病變預後良好;惡性腫瘤預後謹慎至不良
 prevention:
   - 定期健康檢查
   - 早期診斷及治療
-
-
 guidelineRefs:
   - sourceOrg: American journal of physiology. Gastrointestinal and liver physiology
-    title: "In vivo magnetofection: a novel approach for targeted topical delivery of nucleic acids for rectoanal motility disorders."
+    title: >-
+      In vivo magnetofection: a novel approach for targeted topical delivery of nucleic acids for rectoanal motility
+      disorders.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5866375/
     type: research
-    pmid: "29051187"
+    pmid: '29051187'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: constipation
+    frequency: common
+  - symptomId: faecal-tenesmus
+    frequency: uncommon
+  - symptomId: haematochezia
+    frequency: common
+diagnosticAlgorithm:
+  title: 直腸肛門疾病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - constipation 相關症狀
+        - faecal-tenesmus 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 直腸觸診
+          notes: 評估腫塊、狹窄、疼痛
+        - name: 結腸鏡檢查
+          notes: 直視病灶
+        - name: 組織切片
+          notes: 確診腫瘤或炎症
+ddxSource: auto-generated

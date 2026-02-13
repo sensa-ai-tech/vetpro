@@ -3,13 +3,15 @@ nameEn: Tympanic Bulla Osteotomy
 nameZh: 鼓泡切開術
 bodySystem: ear
 description: 以手術方式開啟中耳鼓泡以引流感染物質、移除腫塊或取得組織樣本的耳科手術，為中耳炎內科治療失敗後的重要手術選項，包括腹側及側方兩種入路。
-
 aliases:
-  - { alias: 鼓室切開術, language: zh }
-  - { alias: 中耳切開手術, language: zh }
-  - { alias: Bulla osteotomy, language: en }
-  - { alias: BO, language: en }
-
+  - alias: 鼓室切開術
+    language: zh
+  - alias: 中耳切開手術
+    language: zh
+  - alias: Bulla osteotomy
+    language: en
+  - alias: BO
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓鼓泡切開術常用於鼻咽息肉的完整移除、慢性中耳炎治療。貓鼓泡分為兩個腔室（需打開間隔）。
-
 etiology:
   categories:
     - name: 手術適應症
@@ -34,7 +35,6 @@ etiology:
         - 腹側入路（ventral approach）——最常用，視野好
         - 側方入路（lateral approach）——常與 TECA 合併
         - 全耳道切除合併側鼓泡切開（TECA-LBO）
-
 clinicalSigns:
   early:
     - 術前症狀——慢性耳部感染不愈
@@ -44,17 +44,15 @@ clinicalSigns:
     - 術後可能暫時性前庭症狀
     - 術後顏面神經損傷（暫時性或永久性）
     - Horner syndrome（暫時性）
-
 diagnosis:
   primaryTests:
     - name: CT 影像（術前必備）
-      notes: "評估鼓泡壁狀態、腔內病變範圍、骨溶解程度、對側鼓泡狀態。為手術計畫的關鍵"
+      notes: 評估鼓泡壁狀態、腔內病變範圍、骨溶解程度、對側鼓泡狀態。為手術計畫的關鍵
     - name: 術中培養
-      notes: "鼓泡內容物做細菌培養與藥敏，指導術後抗生素選擇"
+      notes: 鼓泡內容物做細菌培養與藥敏，指導術後抗生素選擇
   differentialDiagnoses:
     - 評估是否需要 TECA-LBO 而非單純鼓泡切開
     - 腫瘤性 vs 感染性病變
-
 treatment:
   medical:
     - 術後全身性抗生素（依培養藥敏，4-6 週以上）
@@ -65,10 +63,28 @@ treatment:
     - 腹側鼓泡切開術（VBO）——標準技術
     - 側方鼓泡切開術（LBO）——常與 TECA 合併
     - 貓需注意鼓泡間隔的處理
-
 prognosis:
-  general: "手術預後取決於原發疾病。感染性中耳炎手術後配合適當抗生素療程預後良好。貓鼻咽息肉 VBO 切除復發率較低（<5%）。術後顏面神經損傷多為暫時性（2-4 週恢復）。"
-
+  general: 手術預後取決於原發疾病。感染性中耳炎手術後配合適當抗生素療程預後良好。貓鼻咽息肉 VBO 切除復發率較低（<5%）。術後顏面神經損傷多為暫時性（2-4 週恢復）。
 prevention:
   - 早期積極治療中耳炎可減少需手術介入的機會
   - 慢性耳病定期影像學追蹤
+associatedSymptoms:
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 鼓泡切開術 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: CT 影像（術前必備）
+          notes: 評估鼓泡壁狀態、腔內病變範圍、骨溶解程度、對側鼓泡狀態。為手術計畫的關鍵
+        - name: 術中培養
+          notes: 鼓泡內容物做細菌培養與藥敏，指導術後抗生素選擇
+ddxSource: auto-generated

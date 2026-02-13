@@ -3,11 +3,11 @@ nameEn: Pathologic Fracture
 nameZh: 病理性骨折
 bodySystem: orthopedic
 description: 因骨骼本身疾病（腫瘤、感染、代謝性骨病）導致骨質弱化而在輕微或無明顯外力下發生的骨折。需同時治療骨折與根本骨骼病變。
-
 aliases:
-  - { alias: "Pathological Fracture", language: en }
-  - { alias: "骨病性骨折", language: zh }
-
+  - alias: Pathological Fracture
+    language: en
+  - alias: 骨病性骨折
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓常見原因為骨腫瘤。
-
 etiology:
   categories:
     - name: 骨骼腫瘤
@@ -28,7 +27,6 @@ etiology:
         - 骨髓炎
         - 代謝性骨病（腎性骨營養不良）
         - 甲狀旁腺功能亢進
-
 clinicalSigns:
   early:
     - 輕微外力後突然跛行
@@ -37,7 +35,6 @@ clinicalSigns:
     - 完全不負重
     - 骨折處不穩定
     - 原發疾病症狀
-
 diagnosis:
   primaryTests:
     - name: X 光
@@ -46,7 +43,6 @@ diagnosis:
       notes: 確認根本骨骼病變
     - name: 分期檢查
       notes: 腫瘤性需胸腔 X 光排除轉移
-
 treatment:
   principles:
     - 治療根本骨骼疾病
@@ -56,36 +52,67 @@ treatment:
     - 感染性：抗生素 + 固定
     - 代謝性：矯正代謝異常
     - 姑息性治療（止痛）
-
 prognosis: 取決於根本病因。骨肉瘤截肢 + 化療中位存活約 1 年。感染性適當治療預後中等。代謝性糾正後可癒合。
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Invasive spindle-cell rhabdomyosarcoma with osteolysis in a dog: case report and literature review."
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: 'Invasive spindle-cell rhabdomyosarcoma with osteolysis in a dog: case report and literature review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9999388/
     type: review
-    pmid: "36600502"
+    pmid: '36600502'
   - sourceOrg: JBMR plus
     title: Surgical periosteal resection changes bone geometry and strength in New Zealand white rabbits.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12319320/
     type: research
-    pmid: "40765624"
+    pmid: '40765624'
   - sourceOrg: Frontiers in veterinary science
-    title: Outcomes in dogs undergoing surgical stabilization and non-stereotactic radiation therapy for axial and appendicular bone tumors.
+    title: >-
+      Outcomes in dogs undergoing surgical stabilization and non-stereotactic radiation therapy for axial and
+      appendicular bone tumors.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10808726/
     type: research
-    pmid: "38274657"
+    pmid: '38274657'
   - sourceOrg: Veterinary medicine and science
-    title: "Fracture rate and time to fracture in dogs with appendicular osteosarcoma receiving finely fractionated compared to coarsely fractionated radiation therapy: A single institution study."
+    title: >-
+      Fracture rate and time to fracture in dogs with appendicular osteosarcoma receiving finely fractionated compared
+      to coarsely fractionated radiation therapy: A single institution study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9122396/
     type: research
-    pmid: "35263506"
+    pmid: '35263506'
   - sourceOrg: Clinical orthopaedics and related research
-    title: "External Beam Irradiation Preferentially Inhibits the Endochondral Pathway of Fracture Healing: A Rat Model."
+    title: 'External Beam Irradiation Preferentially Inhibits the Endochondral Pathway of Fracture Healing: A Rat Model.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6259865/
     type: research
-    pmid: "30024459"
+    pmid: '30024459'
 pubmedQueries:
   - query: '"pathologic fracture" AND (veterinary OR canine OR feline) AND ("osteosarcoma" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 病理性骨折 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: X 光
+          notes: 骨折處見溶骨性或增生性病灶。評估腫瘤特徵
+        - name: 活檢
+          notes: 確認根本骨骼病變
+        - name: 分期檢查
+          notes: 腫瘤性需胸腔 X 光排除轉移
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療根本骨骼疾病
+        - 骨折固定需考慮骨質狀態
+ddxSource: auto-generated

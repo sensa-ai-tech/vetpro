@@ -3,13 +3,15 @@ nameEn: Renal Tubular Necrosis
 nameZh: 腎小管壞死
 bodySystem: urinary
 description: 腎小管壞死 (ATN) 是腎小管上皮細胞因缺血或毒素直接損傷而發生的壞死，是急性腎損傷最常見的病理機制。及時治療腎小管上皮可再生恢復。
-
 aliases:
-  - { alias: 急性腎小管壞死, language: zh }
-  - { alias: 腎小管急性壞死, language: zh }
-  - { alias: Acute Tubular Necrosis, language: en }
-  - { alias: ATN, language: en }
-
+  - alias: 急性腎小管壞死
+    language: zh
+  - alias: 腎小管急性壞死
+    language: zh
+  - alias: Acute Tubular Necrosis
+    language: en
+  - alias: ATN
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓急性腎小管壞死常見原因包括百合中毒、NSAIDs 和術中低血壓。
-
 etiology:
   categories:
     - name: 缺血性
@@ -36,7 +37,6 @@ etiology:
         - NSAIDs
         - 重金屬
         - 化療藥物（cisplatin）
-
 clinicalSigns:
   early:
     - 尿量改變（初期可能多尿或正常）
@@ -49,19 +49,17 @@ clinicalSigns:
     - 嘔吐
     - 嗜睡至昏迷
     - 代謝性酸中毒
-
 diagnosis:
   primaryTests:
     - name: 腎功能指標
-      notes: "BUN/Creatinine 急速升高。SDMA 升高。肌酐上升速度反映損傷嚴重度。"
+      notes: BUN/Creatinine 急速升高。SDMA 升高。肌酐上升速度反映損傷嚴重度。
     - name: 尿液分析
-      notes: "尿液比重等張（1.008-1.012，失去濃縮能力）。顆粒管型和上皮管型。腎小管上皮細胞。蛋白尿。"
+      notes: 尿液比重等張（1.008-1.012，失去濃縮能力）。顆粒管型和上皮管型。腎小管上皮細胞。蛋白尿。
   differentialDiagnoses:
     - 腎前性氮血症（脫水）
     - 腎後性阻塞
     - 急性腎絲球腎炎
     - 急性腎盂腎炎
-
 treatment:
   medical:
     - 去除病因（停用腎毒性藥物、解毒劑）
@@ -74,45 +72,79 @@ treatment:
   surgical:
     - 通常不適用手術治療
     - 腎後性阻塞需解除阻塞
-
 prognosis:
-  general: "非少尿性 ATN 預後較佳。少尿性 ATN 預後謹慎至不良。腎小管上皮具有再生能力，若能度過急性期，腎功能可部分至完全恢復，恢復期約2-6週。缺血性 ATN 預後通常優於腎毒性 ATN。"
-
+  general: 非少尿性 ATN 預後較佳。少尿性 ATN 預後謹慎至不良。腎小管上皮具有再生能力，若能度過急性期，腎功能可部分至完全恢復，恢復期約2-6週。缺血性 ATN 預後通常優於腎毒性 ATN。
 prevention:
   - 術中維持適當血壓與腎灌流
   - 腎毒性藥物的谨慎使用
   - 充足水合狀態維持
   - 高風險手術中的尿量監測
-
-
 guidelineRefs:
   - sourceOrg: International journal of molecular sciences
-    title: Kidney Injuries and Evolution of Chronic Kidney Diseases Due to Neonatal Hyperoxia Exposure Based on Animal Studies.
+    title: >-
+      Kidney Injuries and Evolution of Chronic Kidney Diseases Due to Neonatal Hyperoxia Exposure Based on Animal
+      Studies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9369080/
     type: review
-    pmid: "35955627"
+    pmid: '35955627'
     relevance: primary
-  - sourceOrg: "BMC pharmacology &amp; toxicology"
-    title: Gallic acid lessens kidney injury induced by inorganic arsenic and zinc oxide nanoparticles in rats via controlling electrolyte balance, oxidative stress, and Nrf-2 and HSP-90 expression.
+  - sourceOrg: BMC pharmacology &amp; toxicology
+    title: >-
+      Gallic acid lessens kidney injury induced by inorganic arsenic and zinc oxide nanoparticles in rats via
+      controlling electrolyte balance, oxidative stress, and Nrf-2 and HSP-90 expression.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12670756/
     type: research
-    pmid: "41318635"
+    pmid: '41318635'
     relevance: supporting
   - sourceOrg: Biology
     title: Effect of Riociguat on Adenine-Induced Chronic Kidney Disease in Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11851967/
     type: research
-    pmid: "40001929"
+    pmid: '40001929'
     relevance: supporting
   - sourceOrg: PeerJ
-    title: Diclofenac toxicity in susceptible bird species results from a combination of reduced glomerular filtration and plasma flow with subsequent renal tubular necrosis.
+    title: >-
+      Diclofenac toxicity in susceptible bird species results from a combination of reduced glomerular filtration and
+      plasma flow with subsequent renal tubular necrosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8388555/
     type: research
-    pmid: "34513332"
+    pmid: '34513332'
     relevance: supporting
   - sourceOrg: Iranian journal of basic medical sciences
     title: Renoprotective effect of thymoquinone against rhabdomyolysis-induced acute kidney injury in the rat model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11017847/
     type: research
-    pmid: "38629092"
+    pmid: '38629092'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: oliguria-anuria
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 腎小管壞死 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - polyuria-polydipsia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腎功能指標
+          notes: BUN/Creatinine 急速升高。SDMA 升高。肌酐上升速度反映損傷嚴重度。
+        - name: 尿液分析
+          notes: 尿液比重等張（1.008-1.012，失去濃縮能力）。顆粒管型和上皮管型。腎小管上皮細胞。蛋白尿。
+ddxSource: auto-generated

@@ -3,12 +3,13 @@ nameEn: Fluoride Toxicosis
 nameZh: 氟化物中毒
 bodySystem: toxicology
 description: 氟化物 (fluoride) 急性中毒在犬貓中罕見，可因攝入含氟牙膏、殺蟲劑或工業廢棄物引起。急性過量引起消化道刺激、低鈣血症與心律不整。慢性低劑量暴露引起氟骨症（骨骼與牙齒損傷）。
-
 aliases:
-  - { alias: 氟中毒, language: zh }
-  - { alias: Fluoride Poisoning, language: en }
-  - { alias: Fluorosis, language: en }
-
+  - alias: 氟中毒
+    language: zh
+  - alias: Fluoride Poisoning
+    language: en
+  - alias: Fluorosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓氟化物中毒極罕見。暴露來源與犬類似。
-
 etiology:
   categories:
     - name: 毒性機制
@@ -30,7 +30,6 @@ etiology:
         - 人用含氟牙膏
         - 含 sodium fluoride 的殺蟲劑
         - 受汙染飲水（慢性暴露）
-
 clinicalSigns:
   early:
     - 嘔吐
@@ -41,7 +40,6 @@ clinicalSigns:
     - 心律不整
     - 虛弱
     - 慢性：牙齒斑駁、骨骼變形
-
 diagnosis:
   primaryTests:
     - name: 病史確認
@@ -52,7 +50,6 @@ diagnosis:
     - 心電圖
     - 尿液氟離子濃度
     - 骨骼 X-ray（慢性氟骨症）
-
 treatment:
   principles:
     - 矯正低鈣血症
@@ -65,16 +62,61 @@ treatment:
     - IV 輸液
     - 心律不整監測與管理
     - 消化道保護
-
 prognosis: 急性氟化物中毒及時矯正低鈣血症並去汙染後預後可良好。大劑量暴露致心律不整者預後較差。慢性氟骨症骨骼變化為不可逆。
-
-
 guidelineRefs:
-  - sourceOrg: "Anatomical record (Hoboken, N.J. : 2007)"
-    title: "Dental fluorosis in the European roe deer (Capreolus capreolus): A review of the pathological changes in the enamel of fluorotic cheek teeth and the abnormal pattern of dental wear in affected dentitions."
+  - sourceOrg: 'Anatomical record (Hoboken, N.J. : 2007)'
+    title: >-
+      Dental fluorosis in the European roe deer (Capreolus capreolus): A review of the pathological changes in the
+      enamel of fluorotic cheek teeth and the abnormal pattern of dental wear in affected dentitions.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12688017/
     type: review
-    pmid: "40170328"
+    pmid: '40170328'
 pubmedQueries:
   - query: '"fluoride toxicosis" AND (veterinary OR canine OR feline) AND ("treatment" OR "fluorosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 氟化物中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - trembling 相關症狀
+        - ptyalism 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史確認
+          notes: 確認氟化物暴露來源與量
+        - name: 血清鈣
+          notes: 急性中毒低鈣血症為關鍵發現
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 心電圖
+        - 尿液氟離子濃度
+        - 骨骼 X-ray（慢性氟骨症）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 矯正低鈣血症
+        - 消化道去汙染
+        - 支持心血管功能
+ddxSource: auto-generated

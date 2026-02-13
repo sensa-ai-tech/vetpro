@@ -2,14 +2,18 @@ slug: tetanus
 nameEn: Tetanus
 nameZh: 破傷風
 bodySystem: infectious
-description: 由破傷風梭菌（Clostridium tetani）產生的神經毒素 tetanospasmin 引起的嚴重神經肌肉疾病。毒素阻斷抑制性神經傳導物質（GABA 與 glycine）的釋放，導致持續性肌肉痙攣與強直。犬貓對破傷風毒素的抵抗力分別為馬的 600 倍與 7200 倍。
-
+description: >-
+  由破傷風梭菌（Clostridium tetani）產生的神經毒素 tetanospasmin 引起的嚴重神經肌肉疾病。毒素阻斷抑制性神經傳導物質（GABA 與
+  glycine）的釋放，導致持續性肌肉痙攣與強直。犬貓對破傷風毒素的抵抗力分別為馬的 600 倍與 7200 倍。
 aliases:
-  - { alias: 鎖口風, language: zh }
-  - { alias: 破傷風感染, language: zh }
-  - { alias: Lockjaw, language: en }
-  - { alias: Clostridial Tetanus, language: en }
-
+  - alias: 鎖口風
+    language: zh
+  - alias: 破傷風感染
+    language: zh
+  - alias: Lockjaw
+    language: en
+  - alias: Clostridial Tetanus
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓對破傷風毒素的抵抗力極高（為馬的 1/7200），發生率極低。臨床病例極為罕見，但文獻仍有報告。貓常表現為局部型。
-
 etiology:
   categories:
     - name: 病原體
@@ -41,7 +44,6 @@ etiology:
         - 阻斷突觸前膜釋放 GABA 與 glycine（抑制性神經傳導物質）
         - 導致α運動神經元去抑制化，引起持續性肌肉痙攣
         - 亦影響自主神經系統（交感神經過度興奮）
-
 clinicalSigns:
   early:
     - 傷口周圍局部肌肉僵硬（局部型）
@@ -61,24 +63,22 @@ clinicalSigns:
     - 自主神經功能障礙（心律不整、血壓不穩、排尿困難）
     - 高體溫（肌肉持續收縮產熱）
     - 吸入性肺炎
-
 diagnosis:
   primaryTests:
     - name: 臨床診斷為主
-      notes: "破傷風主要依據特徵性臨床表現診斷：外傷史 + 進行性肌肉僵硬與痙攣 + 對刺激過度敏感。實驗室確認困難且不可靠。"
+      notes: 破傷風主要依據特徵性臨床表現診斷：外傷史 + 進行性肌肉僵硬與痙攣 + 對刺激過度敏感。實驗室確認困難且不可靠。
     - name: 傷口檢查
-      notes: "仔細檢查全身尋找可能的傷口入口。注意傷口可能已癒合或極小不易發現。約 20-30% 病例找不到傷口。"
+      notes: 仔細檢查全身尋找可能的傷口入口。注意傷口可能已癒合或極小不易發現。約 20-30% 病例找不到傷口。
   imaging:
     - name: 胸腔 X 光
-      notes: "評估吸入性肺炎。嚴重病例監測肺部狀態。"
+      notes: 評估吸入性肺炎。嚴重病例監測肺部狀態。
     - name: 傷口影像
-      notes: "X 光或超音波評估深部傷口是否有異物殘留。"
+      notes: X 光或超音波評估深部傷口是否有異物殘留。
   additional:
     - 血清毒素測定（實務上不常用，結果耗時且敏感度低）
     - 傷口厭氧培養（陽性率低，且正常傷口亦可能有 C. tetani）
     - CBC 與生化通常正常（CK 可能因持續肌肉痙攣而升高）
     - 鑑別診斷排除：番木鼈鹼中毒（strychnine）、腦膜腦炎、masticatory muscle myositis
-
 treatment:
   principles:
     - 中和游離毒素（已結合神經的毒素無法中和）
@@ -86,47 +86,49 @@ treatment:
     - 控制肌肉痙攣
     - 支持性照護（營養、護理、呼吸支持）
   general:
-    - "抗毒素：Tetanus antitoxin (TAT) 100-1000 IU/kg IV 或 IM，僅中和游離毒素。先以 0.1 mL SC/ID 測試過敏反應（等待 30 分鐘）。"
-    - "Metronidazole 10-15 mg/kg PO/IV q8h × 10-14 天（首選抗生素，殺滅 C. tetani 營養體）"
-    - "傷口清創：徹底清創、沖洗、暴露於空氣中（需在給予抗毒素後進行，避免清創時釋放更多毒素）"
-    - "肌肉痙攣控制：Diazepam 0.5-2 mg/kg IV PRN 或 CRI 0.5 mg/kg/hr"
-    - "Methocarbamol 44-220 mg/kg IV（緩慢推注，不超過 330 mg/kg/day）用於嚴重肌肉痙攣"
-    - "Phenobarbital 2-6 mg/kg PO/IV q8-12h 用於持續痙攣控制"
-    - "低刺激環境：安靜、昏暗房間，減少聲光與觸摸刺激"
-    - "營養支持：放置鼻胃管或食道造口管餵食（吞嚥困難時）"
-    - "膀胱管理：尿導管（排尿困難時）"
-    - "物理治療：被動關節活動，預防肌肉攣縮"
-    - "嚴重呼吸衰竭：可能需要機械通氣"
-
-prognosis: 犬局部型破傷風預後良好，存活率 > 90%，恢復期約 2-4 週。全身型預後較謹慎，犬存活率約 50-90%（取決於嚴重程度與照護品質），恢復期可長達 3-4 週甚至更久。貓因病例稀少，文獻有限，但報告的存活率亦不差。早期診斷與積極支持性治療顯著改善預後。呼吸衰竭為主要死因。
-
+    - 抗毒素：Tetanus antitoxin (TAT) 100-1000 IU/kg IV 或 IM，僅中和游離毒素。先以 0.1 mL SC/ID 測試過敏反應（等待 30 分鐘）。
+    - Metronidazole 10-15 mg/kg PO/IV q8h × 10-14 天（首選抗生素，殺滅 C. tetani 營養體）
+    - 傷口清創：徹底清創、沖洗、暴露於空氣中（需在給予抗毒素後進行，避免清創時釋放更多毒素）
+    - 肌肉痙攣控制：Diazepam 0.5-2 mg/kg IV PRN 或 CRI 0.5 mg/kg/hr
+    - Methocarbamol 44-220 mg/kg IV（緩慢推注，不超過 330 mg/kg/day）用於嚴重肌肉痙攣
+    - Phenobarbital 2-6 mg/kg PO/IV q8-12h 用於持續痙攣控制
+    - 低刺激環境：安靜、昏暗房間，減少聲光與觸摸刺激
+    - 營養支持：放置鼻胃管或食道造口管餵食（吞嚥困難時）
+    - 膀胱管理：尿導管（排尿困難時）
+    - 物理治療：被動關節活動，預防肌肉攣縮
+    - 嚴重呼吸衰竭：可能需要機械通氣
+prognosis: >-
+  犬局部型破傷風預後良好，存活率 > 90%，恢復期約 2-4 週。全身型預後較謹慎，犬存活率約 50-90%（取決於嚴重程度與照護品質），恢復期可長達 3-4
+  週甚至更久。貓因病例稀少，文獻有限，但報告的存活率亦不差。早期診斷與積極支持性治療顯著改善預後。呼吸衰竭為主要死因。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Internal Medicine
-    title: "Tetanus in dogs: a review of 20 cases"
+    title: 'Tetanus in dogs: a review of 20 cases'
     url: https://pubmed.ncbi.nlm.nih.gov/14649602/
     type: review
-    pmid: "14649602"
+    pmid: '14649602'
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
-    title: "Tetanus in dogs and cats: a review"
+    title: 'Tetanus in dogs and cats: a review'
     url: https://pubmed.ncbi.nlm.nih.gov/27428874/
     type: review
-    pmid: "27428874"
+    pmid: '27428874'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Generalized tetanus in dogs: 13 cases (1982-2014)"
+    title: 'Generalized tetanus in dogs: 13 cases (1982-2014)'
     url: https://pubmed.ncbi.nlm.nih.gov/27078640/
     type: research
-    pmid: "27078640"
+    pmid: '27078640'
   - sourceOrg: BMJ global health
-    title: "Association of gross domestic product with equitable access to childhood vaccines in 195 countries: a systematic review and meta-analysis."
+    title: >-
+      Association of gross domestic product with equitable access to childhood vaccines in 195 countries: a systematic
+      review and meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11749592/
     type: review
-    pmid: "39828433"
+    pmid: '39828433'
     relevance: primary
   - sourceOrg: Vaccines
-    title: "Equids' Core Vaccines Guidelines in North America: Considerations and Prospective."
+    title: 'Equids'' Core Vaccines Guidelines in North America: Considerations and Prospective.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8955191/
     type: review
-    pmid: "35335029"
+    pmid: '35335029'
     relevance: primary
 pubmedQueries:
   - query: '"tetanus" AND (dog OR canine OR cat OR feline) AND ("treatment" OR "prognosis")'
@@ -135,6 +137,65 @@ pubmedQueries:
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "GEN"
-  sectionTitle: "TETANUS"
+  chapter: GEN
+  sectionTitle: TETANUS
   pdfPage: 652
+diagnosticAlgorithm:
+  title: 破傷風 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估肌肉僵硬與近期傷口史
+      findings:
+        - 全身肌肉僵硬與痙攣
+        - 鎖頜（張口困難）
+        - 耳朵豎立與瞬膜脫出
+        - 步態僵硬（木馬樣）
+    - step: 2
+      action: 神經學檢查
+      details: 評估肌張力異常與反射
+      findings:
+        - 四肢伸直僵硬
+        - 角弓反張
+        - 對聲光觸覺刺激過度反應
+        - 尾巴僵直
+    - step: 3
+      action: 尋找感染源
+      details: 檢查可能的傷口或手術部位
+      findings:
+        - 穿刺傷口或深部傷口
+        - 近期手術或去勢傷口
+        - 異物或壞死組織
+        - 傷口可能已表面癒合
+    - step: 4
+      action: 確診
+      details: 主要依靠臨床表現診斷
+      findings:
+        - 典型臨床表現即可確診
+        - 傷口厭氧培養可能分離C. tetani
+        - 排除士的寧中毒
+        - 犬較貓易感（貓相對抵抗）
+clinicalPearls:
+  - 破傷風的診斷是臨床診斷——鋸木馬姿勢+牙關緊閉+第三眼瞼突出三聯徵
+  - 毒素一旦與突觸結合即不可逆——TAT只能中和循環中的游離毒素
+  - metronidazole優於penicillin作為抗生素選擇（penicillin可能加重GABA阻斷）
+  - 安靜暗室環境非常重要——外部刺激可觸發致命性全身痙攣
+  - 貓對破傷風毒素天然抗性極高，感染極罕見
+monitoringItems:
+  - 肌肉張力和痙攣嚴重程度每日評估
+  - 呼吸頻率和呼吸努力（警惕呼吸衰竭）
+  - 體溫（肌肉持續痙攣可致高體溫）
+  - 營養和水合狀態
+  - 褥瘡預防
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: mydriasis
+    frequency: common
+ddxSource: book

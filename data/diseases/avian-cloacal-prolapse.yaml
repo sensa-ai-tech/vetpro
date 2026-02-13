@@ -3,18 +3,19 @@ nameEn: Avian Cloacal Prolapse
 nameZh: 禽類泄殖腔脫垂
 bodySystem: gastrointestinal
 description: 泄殖腔脫垂是泄殖腔組織從體外翻出的急症，可由慢性用力排便、蛋滯留、泄殖腔感染、腫瘤或營養不良引起。暴露的黏膜組織易受損傷與乾燥，需緊急處理復位。反覆脫垂者可能需手術固定。
-
 aliases:
-  - { alias: 泄殖腔脫出, language: zh }
-  - { alias: 鳥類脫肛, language: zh }
-  - { alias: Cloacal prolapse in birds, language: en }
-  - { alias: Vent prolapse, language: en }
-
+  - alias: 泄殖腔脫出
+    language: zh
+  - alias: 鳥類脫肛
+    language: zh
+  - alias: Cloacal prolapse in birds
+    language: en
+  - alias: Vent prolapse
+    language: en
 species:
   - speciesCommon: bird
     prevalence: uncommon
     notes: 鸚鵡類與家禽均可發生。慢性蛋滯留、慢性泄殖腔炎為常見誘因。幼鳥可因腸道寄生蟲或發育異常而發生。
-
 etiology:
   categories:
     - name: 機械性因素
@@ -29,7 +30,6 @@ etiology:
         - 營養不良
         - 肥胖
         - 泄殖腔感染或發炎
-
 clinicalSigns:
   early:
     - 泄殖腔區域紅腫
@@ -43,7 +43,6 @@ clinicalSigns:
     - 食慾下降
     - 嗜睡
     - 組織壞死（延遲處理時）
-
 diagnosis:
   primaryTests:
     - name: 視診
@@ -52,7 +51,6 @@ diagnosis:
       notes: X 光排除蛋滯留或腫瘤。血鈣檢測。糞便檢查排除寄生蟲
     - name: 組織評估
       notes: 評估脫出組織活力（顏色、水腫程度、壞死徵象）
-
 treatment:
   principles:
     - 緊急復位脫出組織
@@ -67,26 +65,62 @@ treatment:
     - 組織壞死時可能需手術切除
     - 反覆脫垂者考慮泄殖腔固定術
     - 抗生素預防感染
-
 prognosis: 首次脫垂經適當復位後預後良好。反覆脫垂者預後謹慎，可能需手術固定。組織嚴重壞死者預後不良。基礎原因能否糾正是長期預後的關鍵。過度產蛋引起者需荷爾蒙抑制產蛋。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary medicine and science
-    title: "Spontaneous Cloacal Prolapse in a Farm Ostrich (Struthio camelus): Case Management and Literature Review."
+    title: 'Spontaneous Cloacal Prolapse in a Farm Ostrich (Struthio camelus): Case Management and Literature Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11721477/
     type: review
-    pmid: "39792576"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Successful Treatment of an Acinar Pancreatic Carcinoma in an Inland Bearded Dragon (Pogona vitticeps): A Case Report."
+    pmid: '39792576'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Successful Treatment of an Acinar Pancreatic Carcinoma in an Inland Bearded Dragon (Pogona vitticeps): A Case
+      Report.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11240475/
     type: case-report
-    pmid: "38998088"
+    pmid: '38998088'
   - sourceOrg: The veterinary clinics of North America. Exotic animal practice
     title: Reproductive Medicine in Lizards.
     url: https://pubmed.ncbi.nlm.nih.gov/28169180/
     type: review
-    pmid: "28169180"
+    pmid: '28169180'
 pubmedQueries:
   - query: '"cloacal prolapse" AND (avian OR bird OR psittacine) AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: constipation
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類泄殖腔脫垂 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - constipation 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 視診
+          notes: 泄殖腔組織外翻突出即可診斷。需區分脫出組織（泄殖腔、輸卵管或腸道）
+        - name: 基礎原因評估
+          notes: X 光排除蛋滯留或腫瘤。血鈣檢測。糞便檢查排除寄生蟲
+        - name: 組織評估
+          notes: 評估脫出組織活力（顏色、水腫程度、壞死徵象）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 緊急復位脫出組織
+        - 保持組織濕潤
+        - 治療基礎原因
+ddxSource: auto-generated

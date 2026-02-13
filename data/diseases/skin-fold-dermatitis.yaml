@@ -3,13 +3,15 @@ nameEn: Skin Fold Dermatitis
 nameZh: 皮膚皺褶皮膚炎
 bodySystem: dermatology
 description: 皮膚皺褶處因潮濕、摩擦與微生物過度增生引起的表面膿皮症。好發於短頭品種的面部皺褶、唇褶、外陰皺褶與尾部皺褶。為品種構造性問題，需長期管理或手術矯正。
-
 aliases:
-  - { alias: "Intertrigo", language: en }
-  - { alias: "Fold Pyoderma", language: en }
-  - { alias: "皺褶性皮膚炎", language: zh }
-  - { alias: "擦爛", language: zh }
-
+  - alias: Intertrigo
+    language: en
+  - alias: Fold Pyoderma
+    language: en
+  - alias: 皺褶性皮膚炎
+    language: zh
+  - alias: 擦爛
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: Persian 等扁臉品種面部皺褶。肥胖貓外陰皺褶。
-
 etiology:
   categories:
     - name: 構造性
@@ -26,7 +27,6 @@ etiology:
         - 唇褶過深
         - 外陰皺褶（肥胖母犬）
         - 螺旋尾皺褶（Bulldog）
-
 clinicalSigns:
   early:
     - 皺褶區域潮濕
@@ -37,14 +37,12 @@ clinicalSigns:
     - 膿性滲出液
     - 皮膚糜爛
     - 疼痛
-
 diagnosis:
   primaryTests:
     - name: 臨床視診
       notes: 典型部位的表面膿皮症即可診斷
     - name: 細胞學
       notes: 壓片見細菌與/或 Malassezia 過度增生
-
 treatment:
   principles:
     - 保持皺褶乾燥清潔
@@ -54,17 +52,58 @@ treatment:
     - 局部抗菌藥膏
     - 保持乾燥（使用吸收粉）
     - 皺褶切除術（foldectomy）為根治方式
-
 prognosis: 藥物管理可控制但需終生維護。皺褶切除手術後預後極佳。體重管理可改善外陰皺褶型。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Dermatological Problems of Brachycephalic Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10294810/
     type: review
-    pmid: "37370526"
+    pmid: '37370526'
     relevance: primary
 pubmedQueries:
   - query: '"skin fold dermatitis" OR "intertrigo" AND (veterinary OR canine) AND ("treatment" OR "surgery")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 面部皺褶皮膚炎 診斷流程
+  steps:
+    - step: 1
+      action: 臨床評估
+      details: 評估皺褶深度、感染程度和角膜狀態
+      findings:
+        - 輕度紅腫
+        - 感染性分泌物
+        - 角膜刺激
+    - step: 2
+      action: 細胞學確認
+      details: 壓片檢查確認感染微生物
+      findings:
+        - 細菌（球菌）
+        - 酵母菌
+        - 混合感染
+    - step: 3
+      action: 排除其他病因
+      details: 皮膚刮片排除蠕形蟎，必要時活檢
+      findings:
+        - 單純皺褶感染
+        - 合併蟎蟲
+        - 自體免疫疾病
+    - step: 4
+      action: 治療決策
+      details: 保守管理或手術矯正
+      findings:
+        - 保守管理足夠
+        - 建議手術矯正
+        - 角膜需同時處理
+clinicalPearls:
+  - 皮膚皺褶切除術是唯一的根治方法，保守治療需要終身維護
+  - 面部皺褶可造成刺激性角膜炎，嚴重者需同時進行眼科評估
+  - 每日用含chlorhexidine的濕紙巾清潔皺褶是簡單有效的日常護理
+monitoringItems:
+  - 保守治療每2-4週追蹤感染控制
+  - 術後2週評估傷口癒合
+  - 角膜狀態定期追蹤
+  - 飼主護理技巧教育和遵從度評估
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+ddxSource: book

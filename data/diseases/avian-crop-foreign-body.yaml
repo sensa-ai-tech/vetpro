@@ -3,18 +3,19 @@ nameEn: Avian Crop Foreign Body
 nameZh: 禽類嗉囊異物
 bodySystem: gastrointestinal
 description: 禽類嗉囊異物為鳥類因好奇心或啄食習慣吞入非食物性異物（如布料、金屬、塑膠等）導致的消化道急症，可造成嗉囊阻塞、穿孔或中毒。
-
 aliases:
-  - { alias: 嗉囊異物阻塞, language: zh }
-  - { alias: 鳥吞異物, language: zh }
-  - { alias: Ingluvial foreign body, language: en }
-  - { alias: Crop foreign body ingestion, language: en }
-
+  - alias: 嗉囊異物阻塞
+    language: zh
+  - alias: 鳥吞異物
+    language: zh
+  - alias: Ingluvial foreign body
+    language: en
+  - alias: Crop foreign body ingestion
+    language: en
 species:
   - speciesCommon: bird
     prevalence: common
     notes: 鸚鵡因好奇心強與強壯的喙部最常見。幼鳥探索環境時風險尤高。常見異物包括線繩、布片、金屬碎片、塑膠片等。
-
 etiology:
   categories:
     - name: 常見異物類型
@@ -30,7 +31,6 @@ etiology:
         - 無監督的放飛時間
         - 幼鳥探索行為
         - 環境豐富化不足（以啄咬物品為替代行為）
-
 clinicalSigns:
   early:
     - 嗉囊觸診有硬物
@@ -43,21 +43,19 @@ clinicalSigns:
     - 體重減輕
     - 嗉囊壁壞死穿孔（尖銳異物）
     - 重金屬中毒症狀（金屬異物）
-
 diagnosis:
   primaryTests:
     - name: 觸診
-      notes: "嗉囊內可觸及異常硬物或不規則結構"
+      notes: 嗉囊內可觸及異常硬物或不規則結構
     - name: X光檢查
-      notes: "金屬異物或不透光異物直接可見。非不透光異物可用對比劑輔助"
+      notes: 金屬異物或不透光異物直接可見。非不透光異物可用對比劑輔助
     - name: 內視鏡檢查
-      notes: "直接觀察嗉囊內異物並可同時取出"
+      notes: 直接觀察嗉囊內異物並可同時取出
   differentialDiagnoses:
     - 嗉囊食物積塞
     - 嗉囊腫瘤
     - 甲狀腺腫壓迫
     - 嗉囊念珠菌感染
-
 treatment:
   medical:
     - 小型異物嘗試嗉囊灌洗排出
@@ -66,13 +64,39 @@ treatment:
     - 嗉囊切開取出異物（ingluviotomy）
     - 內視鏡引導下異物取出
     - 嗉囊壁損傷修補
-
 prognosis:
-  general: "及時取出異物後預後良好。金屬異物合併中毒需同步螯合治療。嗉囊穿孔或壞死需緊急手術處理。延遲處理可導致嚴重併發症。"
-
+  general: 及時取出異物後預後良好。金屬異物合併中毒需同步螯合治療。嗉囊穿孔或壞死需緊急手術處理。延遲處理可導致嚴重併發症。
 prevention:
   - 鳥類活動區域移除所有小型可吞入物品
   - 監督放飛時間
   - 提供安全的鳥類玩具
   - 定期檢查環境安全性
   - 提供適當環境豐富化減少異常啄食行為
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類嗉囊異物 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - abdominal-pain 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 觸診
+          notes: 嗉囊內可觸及異常硬物或不規則結構
+        - name: X光檢查
+          notes: 金屬異物或不透光異物直接可見。非不透光異物可用對比劑輔助
+        - name: 內視鏡檢查
+          notes: 直接觀察嗉囊內異物並可同時取出
+ddxSource: auto-generated

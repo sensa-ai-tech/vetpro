@@ -3,12 +3,13 @@ nameEn: Caffeine Toxicosis
 nameZh: 咖啡因中毒
 bodySystem: toxicology
 description: 咖啡因 (caffeine) 為甲基黃嘌呤類 (methylxanthine) 化合物，犬貓較人類敏感。來源包括咖啡、茶、能量飲料及含咖啡因藥物。引起中樞神經興奮、心動過速及肌肉震顫。嚴重者可致癲癇與心律不整。
-
 aliases:
-  - { alias: 甲基黃嘌呤中毒, language: zh }
-  - { alias: Caffeine Poisoning, language: en }
-  - { alias: Methylxanthine Toxicosis, language: en }
-
+  - alias: 甲基黃嘌呤中毒
+    language: zh
+  - alias: Caffeine Poisoning
+    language: en
+  - alias: Methylxanthine Toxicosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓咖啡因中毒罕見但毒性相似。貓代謝甲基黃嘌呤能力較犬差。
-
 etiology:
   categories:
     - name: 常見來源
@@ -31,7 +31,6 @@ etiology:
         - 拮抗 adenosine 受體
         - 增加 catecholamine 釋放
         - 刺激中樞神經與心臟
-
 clinicalSigns:
   early:
     - 不安與過度興奮
@@ -44,7 +43,6 @@ clinicalSigns:
     - 心律不整（室上性或室性）
     - 高燒
     - 低血壓（晚期）
-
 diagnosis:
   primaryTests:
     - name: 病史確認
@@ -56,7 +54,6 @@ diagnosis:
     - 血糖
     - 電解質
     - 尿液咖啡因檢測（非常規可用）
-
 treatment:
   principles:
     - 去汙染（攝入早期）
@@ -71,9 +68,55 @@ treatment:
     - 心律不整處理（beta-blocker 如 esmolol、lidocaine）
     - 肌肉震顫控制（methocarbamol）
     - 監測心電圖與血壓
-
 prognosis: 犬貓咖啡因中毒適當處理預後良好。輕至中度中毒多數 12-36 小時內恢復。大量攝入致癲癇或嚴重心律不整若未治療可能致命。半衰期犬約 4.5 小時。
-
 pubmedQueries:
   - query: '"caffeine toxicosis" AND (veterinary OR canine OR feline) AND ("treatment" OR "management")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 咖啡因中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - trembling 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - dehydration 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史確認
+          notes: 確認咖啡因來源與攝入量。計算 mg/kg 劑量
+        - name: 臨床表現
+          notes: 過度興奮、心動過速、震顫的組合
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 心電圖（心律不整監測）
+        - 血糖
+        - 電解質
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 去汙染（攝入早期）
+        - 控制神經症狀
+        - 心律不整管理
+ddxSource: auto-generated

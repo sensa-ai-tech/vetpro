@@ -3,16 +3,15 @@ nameEn: Rabbit Cutaneous Mass
 nameZh: 兔皮膚腫塊
 bodySystem: oncology
 description: 兔皮膚及皮下組織發生的各種腫塊，包括膿瘍、囊腫、脂肪瘤及惡性腫瘤（鱗狀細胞癌、纖維肉瘤等）。兔皮膚腫塊以膿瘍最為常見，但亦需排除腫瘤。
-
 aliases:
-  - { alias: "兔皮膚腫塊", language: zh }
-  - { alias: "Rabbit Cutaneous Mass", language: en }
-
+  - alias: 兔皮膚腫塊
+    language: zh
+  - alias: Rabbit Cutaneous Mass
+    language: en
 species:
   - speciesCommon: rabbit
     prevalence: uncommon
     notes: 兔可受此疾病影響。
-
 etiology:
   categories:
     - name: 感染性
@@ -25,7 +24,6 @@ etiology:
         - 纖維肉瘤
         - 皮脂腺腫瘤
         - 脂肪瘤
-
 clinicalSigns:
   early:
     - 皮膚下可觸及結節或腫塊
@@ -36,14 +34,12 @@ clinicalSigns:
     - 潰瘍/破潰
     - 食慾下降
     - 轉移（惡性腫瘤時）
-
 diagnosis:
   primaryTests:
     - name: 細針抽吸
       notes: 膿瘍抽出乳白色/黃色稠厚膿（兔膿質地類似牙膏）。腫瘤需細胞學評估。
     - name: 組織病理
       notes: 確定腫塊性質（膿瘍 vs 腫瘤 vs 囊腫）。
-
 treatment:
   principles:
     - 確診前不要假設都是膿瘍
@@ -53,41 +49,77 @@ treatment:
     - 膿瘍：完整囊壁摘除 + 抗生素
     - 腫瘤：廣邊緣切除
     - 術後病理確認性質及邊緣是否乾淨
-
 prognosis: 膿瘍完整摘除後預後良好，但可能復發。良性腫瘤切除後預後佳。惡性腫瘤預後取決於腫瘤類型與分期。
-
-
 guidelineRefs:
   - sourceOrg: The Journal of veterinary medical science
     title: A case of malignant melanoma, a possible primary site in the digit, with systemic metastasis in a mini-Rex.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9791239/
     type: research
-    pmid: "36223952"
+    pmid: '36223952'
     relevance: supporting
   - sourceOrg: International journal of nanomedicine
-    title: Preparation and in vitro and in vivo Study of Asiaticoside-Loaded Nanoemulsions and Nanoemulsions-Based Gels for Transdermal Delivery.
+    title: >-
+      Preparation and in vitro and in vivo Study of Asiaticoside-Loaded Nanoemulsions and Nanoemulsions-Based Gels for
+      Transdermal Delivery.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7210032/
     type: research
-    pmid: "32440114"
+    pmid: '32440114'
     relevance: supporting
   - sourceOrg: Vaccine
-    title: Non-pathogenic Borrelia burgdorferi expressing Treponema pallidum TprK and Tp0435 antigens as a novel approach to evaluate syphilis vaccine candidates.
+    title: >-
+      Non-pathogenic Borrelia burgdorferi expressing Treponema pallidum TprK and Tp0435 antigens as a novel approach to
+      evaluate syphilis vaccine candidates.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6414260/
     type: research
-    pmid: "30797635"
+    pmid: '30797635'
     relevance: supporting
   - sourceOrg: International wound journal
-    title: "Growth hormone-releasing peptide 6 prevents cutaneous hypertrophic scarring: early mechanistic data from a proteome study."
+    title: >-
+      Growth hormone-releasing peptide 6 prevents cutaneous hypertrophic scarring: early mechanistic data from a
+      proteome study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7949743/
     type: research
-    pmid: "29464859"
+    pmid: '29464859'
     relevance: supporting
   - sourceOrg: Analytical biochemistry
     title: Validated MALDI-TOF-MS method for anthrax lethal factor provides early diagnosis and evaluation of therapeutics.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7904043/
     type: research
-    pmid: "29224733"
+    pmid: '29224733'
     relevance: supporting
 pubmedQueries:
   - query: '"Rabbit Cutaneous Mass" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: failure-to-grow
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔皮膚腫塊 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - failure-to-grow 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 細針抽吸
+          notes: 膿瘍抽出乳白色/黃色稠厚膿（兔膿質地類似牙膏）。腫瘤需細胞學評估。
+        - name: 組織病理
+          notes: 確定腫塊性質（膿瘍 vs 腫瘤 vs 囊腫）。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 確診前不要假設都是膿瘍
+        - 完全切除為首選
+        - 兔膿瘍需完整摘除（不能單純引流）
+ddxSource: auto-generated

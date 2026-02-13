@@ -3,12 +3,13 @@ nameEn: Mediastinal Mass
 nameZh: 縱膈腔腫塊
 bodySystem: oncology
 description: 縱膈腔腫塊為位於胸腔中央縱膈空間的佔位性病變。犬貓常見原因包括淋巴瘤（最常見）、胸腺瘤、chemodectoma 及異位甲狀腺腫瘤。前縱膈腔腫塊為最常見位置。臨床表現取決於腫塊大小與壓迫結構。
-
 aliases:
-  - { alias: 縱膈腫瘤, language: zh }
-  - { alias: Mediastinal Tumor, language: en }
-  - { alias: Mediastinal Lymphoma, language: en }
-
+  - alias: 縱膈腫瘤
+    language: zh
+  - alias: Mediastinal Tumor
+    language: en
+  - alias: Mediastinal Lymphoma
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻縱膈腔淋巴瘤常見，特別是 FeLV 陽性年輕貓的前縱膈 T 細胞淋巴瘤。胸腺瘤亦有報告。
-
 etiology:
   categories:
     - name: 前縱膈（最常見）
@@ -30,7 +30,6 @@ etiology:
         - 心基底部腫瘤（chemodectoma）
         - 食道腫瘤
         - 淋巴結腫瘤
-
 clinicalSigns:
   early:
     - 輕度呼吸急促
@@ -42,55 +41,95 @@ clinicalSigns:
     - 前腔靜脈症候群（頭頸部水腫）
     - 吞嚥困難（食道壓迫）
     - 反芻（regurgitation）
-
 diagnosis:
   primaryTests:
     - name: 胸腔 X 光
       notes: 前縱膈腔密度增加，氣管背側偏移。心臟輪廓模糊。可伴隨胸腔積液。側位片可見前縱膈寬度增加。
     - name: 細針穿刺細胞學（FNA）
       notes: 超音波引導下穿刺。淋巴瘤可在胸水或 FNA 細胞學中確診。流式細胞儀確認免疫表型。胸腺瘤細胞學可見混合淋巴球與上皮細胞。
-
 treatment:
   principles:
     - 治療取決於腫塊類型
     - 淋巴瘤以化療為主
     - 胸腺瘤考慮手術切除
   general:
-    - "淋巴瘤：CHOP 化療方案（Prednisone 可迅速縮小腫塊）"
-    - "胸腺瘤：手術切除（median sternotomy）± 放射線治療"
+    - 淋巴瘤：CHOP 化療方案（Prednisone 可迅速縮小腫塊）
+    - 胸腺瘤：手術切除（median sternotomy）± 放射線治療
     - 胸腔積液引流改善呼吸
-    - "貓前縱膈淋巴瘤：COP 或 CHOP 方案"
+    - 貓前縱膈淋巴瘤：COP 或 CHOP 方案
     - FeLV 檢測（貓）
-
 prognosis: 預後取決於腫塊類型。犬隻縱膈淋巴瘤化療反應率高（>80%），中位存活時間約 6-12 個月。胸腺瘤手術切除後預後良好。貓隻 FeLV 陽性縱膈淋巴瘤預後較差。前腔靜脈症候群為不良預後因素。
-
-
 guidelineRefs:
   - sourceOrg: Mediastinum (Hong Kong, China)
-    title: "Mediastinal tumors: why, when, and how to biopsy?"
+    title: 'Mediastinal tumors: why, when, and how to biopsy?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12518595/
     type: review
-    pmid: "41098389"
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Thymoma-associated exfoliative dermatitis in a goat: case report and brief literature review."
+    pmid: '41098389'
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: 'Thymoma-associated exfoliative dermatitis in a goat: case report and brief literature review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6900714/
     type: review
-    pmid: "31650897"
+    pmid: '31650897'
   - sourceOrg: Journal of veterinary internal medicine
-    title: Multimodal Treatment of a Peripheral Primitive Neuroectodermal Tumor Originating From the Thoracic Cavity in a Dog.
+    title: >-
+      Multimodal Treatment of a Peripheral Primitive Neuroectodermal Tumor Originating From the Thoracic Cavity in a
+      Dog.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11912019/
     type: case-report
-    pmid: "40095239"
+    pmid: '40095239'
   - sourceOrg: Cureus
     title: Management of a Unique Subcarinal Bronchogenic Cyst with Robotic-Assisted Thoracic Surgery.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10847006/
     type: case-report
-    pmid: "38327959"
+    pmid: '38327959'
   - sourceOrg: Journal of cardiothoracic surgery
     title: Single-incision port robot-assisted surgery for thymic carcinoid tumor resection.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9066919/
     type: case-report
-    pmid: "35505364"
+    pmid: '35505364'
 pubmedQueries:
   - query: '"mediastinal mass" OR "mediastinal lymphoma" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: regurgitation
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 縱膈腔腫塊 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - dysphagia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸腔 X 光
+          notes: 前縱膈腔密度增加，氣管背側偏移。心臟輪廓模糊。可伴隨胸腔積液。側位片可見前縱膈寬度增加。
+        - name: 細針穿刺細胞學（FNA）
+          notes: 超音波引導下穿刺。淋巴瘤可在胸水或 FNA 細胞學中確診。流式細胞儀確認免疫表型。胸腺瘤細胞學可見混合淋巴球與上皮細胞。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療取決於腫塊類型
+        - 淋巴瘤以化療為主
+        - 胸腺瘤考慮手術切除
+ddxSource: auto-generated

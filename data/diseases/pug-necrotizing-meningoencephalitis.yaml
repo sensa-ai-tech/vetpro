@@ -3,19 +3,20 @@ nameEn: Pug Necrotizing Meningoencephalitis
 nameZh: 巴哥犬壞死性腦膜腦炎
 bodySystem: neurology
 description: 巴哥犬壞死性腦膜腦炎（NME）是一種嚴重的免疫介導性中樞神經系統疾病，以大腦皮質的壞死性發炎為特徵。與巴哥犬腦炎（PDE）為同一疾病，為該品種特有的致命性神經疾病。
-
 aliases:
-  - { alias: 巴哥 NME, language: zh }
-  - { alias: 壞死性腦炎, language: zh }
-  - { alias: Pug NME, language: en }
-  - { alias: Necrotizing meningoencephalitis in Pugs, language: en }
-
+  - alias: 巴哥 NME
+    language: zh
+  - alias: 壞死性腦炎
+    language: zh
+  - alias: Pug NME
+    language: en
+  - alias: Necrotizing meningoencephalitis in Pugs
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: rare
     notes: 巴哥犬特有疾病，與 PDE（Pug Dog Encephalitis）同義。NME 也見於馬爾濟斯、吉娃娃等小型犬。DLA class II 基因型為重要風險因子。
-
 etiology:
   categories:
     - name: 免疫因素
@@ -29,7 +30,6 @@ etiology:
         - 灰白質界面壞死
         - 多灶性液化性壞死
         - 腦水腫
-
 clinicalSigns:
   early:
     - 突發性癲癇
@@ -43,21 +43,19 @@ clinicalSigns:
     - 意識喪失
     - 快速神經功能退化
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: MRI
-      notes: "大腦皮質與皮質下白質多灶性壞死。T2WI 高訊號病灶。非對稱分佈"
+      notes: 大腦皮質與皮質下白質多灶性壞死。T2WI 高訊號病灶。非對稱分佈
     - name: 腦脊液分析
-      notes: "淋巴球性多形細胞增多、蛋白升高。需排除感染性病因"
+      notes: 淋巴球性多形細胞增多、蛋白升高。需排除感染性病因
     - name: 腦組織病理
-      notes: "確定診斷需死後病理。壞死性腦膜腦炎伴淋巴漿細胞浸潤"
+      notes: 確定診斷需死後病理。壞死性腦膜腦炎伴淋巴漿細胞浸潤
   differentialDiagnoses:
     - 肉芽腫性腦膜腦炎
     - 感染性腦炎
     - 腦腫瘤
     - 代謝性腦病
-
 treatment:
   medical:
     - 高劑量免疫抑制（Prednisolone 2 mg/kg 漸減）
@@ -65,26 +63,58 @@ treatment:
     - 抗癲癇藥（Levetiracetam + Phenobarbital/Zonisamide）
     - 甘露醇（急性腦水腫時）
     - 支持性護理
-
 prognosis:
-  general: "預後不良至極差。多數犬在確診後數週至數月死亡。積極免疫抑制可延長部分犬的存活至 6-12 個月。癲癇控制為主要挑戰。安樂死因生活品質考量常為最終選擇。"
-
+  general: 預後不良至極差。多數犬在確診後數週至數月死亡。積極免疫抑制可延長部分犬的存活至 6-12 個月。癲癇控制為主要挑戰。安樂死因生活品質考量常為最終選擇。
 prevention:
   - DLA 基因型篩選繁殖
   - 避免已知高風險家系繁殖
   - 目前無有效預防措施
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
     title: Breed-Specific Magnetic Resonance Imaging Characteristics of Necrotizing Encephalitis in Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5723069/
     type: review
-    pmid: "29255715"
+    pmid: '29255715'
     relevance: supporting
   - sourceOrg: Frontiers in veterinary science
-    title: "Case Report: Long-term surgical outcomes in pug dogs with articular facet dysplasia-associated thoracolumbar myelopathies."
+    title: >-
+      Case Report: Long-term surgical outcomes in pug dogs with articular facet dysplasia-associated thoracolumbar
+      myelopathies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12411195/
     type: case-report
-    pmid: "40919036"
+    pmid: '40919036'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: seizures
+    frequency: common
+  - symptomId: blindness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 巴哥犬壞死性腦膜腦炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - coma-stupor 相關症狀
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: MRI
+          notes: 大腦皮質與皮質下白質多灶性壞死。T2WI 高訊號病灶。非對稱分佈
+        - name: 腦脊液分析
+          notes: 淋巴球性多形細胞增多、蛋白升高。需排除感染性病因
+        - name: 腦組織病理
+          notes: 確定診斷需死後病理。壞死性腦膜腦炎伴淋巴漿細胞浸潤
+ddxSource: auto-generated

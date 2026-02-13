@@ -3,11 +3,11 @@ nameEn: Type I Disc Extrusion
 nameZh: 第一型椎間盤突出
 bodySystem: neurology
 description: 髓核急性破裂突出至椎管內壓迫脊髓,常見於軟骨營養不良品種(臘腸、比格犬),導致急性疼痛、癱瘓,需緊急手術減壓。
-
 aliases:
-  - { alias: Hansen Type I, language: en }
-  - { alias: 急性椎間盤突出, language: zh }
-
+  - alias: Hansen Type I
+    language: en
+  - alias: 急性椎間盤突出
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少見
-
 etiology:
   categories:
     - name: 軟骨營養不良性退化
@@ -30,7 +29,6 @@ etiology:
         - 跳躍、扭轉動作導致纖維環破裂
         - 髓核急性擠壓突出至椎管
         - 脊髓急性壓迫或挫傷
-
 clinicalSigns:
   early:
     - 急性背痛、不願活動
@@ -42,43 +40,69 @@ clinicalSigns:
     - 癱瘓(不能行走)
     - 深層痛覺喪失(最嚴重,預後差)
     - 尿失禁或尿滯留
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
-      notes: "定位病灶(胸腰椎、頸椎),評估分級(grade 1-5)"
+      notes: 定位病灶(胸腰椎、頸椎),評估分級(grade 1-5)
     - name: 脊椎X光
-      notes: "可見椎間盤鈣化、椎間隙變窄,但無法確診壓迫"
+      notes: 可見椎間盤鈣化、椎間隙變窄,但無法確診壓迫
     - name: MRI
-      notes: "金標準,顯示髓核突出位置、脊髓壓迫程度及水腫"
+      notes: 金標準,顯示髓核突出位置、脊髓壓迫程度及水腫
     - name: CT myelography
-      notes: "顯示脊髓壓迫,MRI不可用時替代選擇"
+      notes: 顯示脊髓壓迫,MRI不可用時替代選擇
   differentialDiagnoses:
     - 第二型椎間盤突出(慢性)
     - 第三型椎間盤突出(急性非壓迫性)
     - 脊椎骨折或脫位
     - 脊髓腫瘤
     - 纖維軟骨栓塞(FCE)
-
 treatment:
   medical:
     - 分級治療:
-      - Grade 1-2(疼痛、輕度無力):內科治療(嚴格籠休4-6週 + NSAIDs)
-      - Grade 3-4(癱瘓但有深層痛覺):緊急手術減壓(Hemilaminectomy)
-      - Grade 5(深層痛覺喪失):超緊急手術(<24小時,預後保守)
+        - Grade 1-2(疼痛、輕度無力):內科治療(嚴格籠休4-6週 + NSAIDs)
+        - Grade 3-4(癱瘓但有深層痛覺):緊急手術減壓(Hemilaminectomy)
+        - Grade 5(深層痛覺喪失):超緊急手術(<24小時,預後保守)
     - 手術方式:
-      - 胸腰椎:Hemilaminectomy
-      - 頸椎:Ventral slot
+        - 胸腰椎:Hemilaminectomy
+        - 頸椎:Ventral slot
     - 術後照護:
-      - 物理治療、水療
-      - 膀胱管理(導尿或擠壓)
-      - 翻身避免褥瘡
+        - 物理治療、水療
+        - 膀胱管理(導尿或擠壓)
+        - 翻身避免褥瘡
     - 疼痛控制(Gabapentin 10-20 mg/kg PO TID, Tramadol 2-5 mg/kg PO BID-TID)
-
 prognosis:
-  general: "有深層痛覺者手術後>90%恢復行走;深層痛覺喪失者僅50-60%恢復,且需數月復健。內科治療成功率約70-80%(輕症)。"
-
+  general: 有深層痛覺者手術後>90%恢復行走;深層痛覺喪失者僅50-60%恢復,且需數月復健。內科治療成功率約70-80%(輕症)。
 prevention:
   - 軟骨營養不良品種避免跳躍、劇烈運動
   - 維持理想體重減輕椎間盤負擔
   - 早期疼痛症狀出現時嚴格籠休
+associatedSymptoms:
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: urinary-incontinence
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 第一型椎間盤突出 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - ataxia 相關症狀
+        - urinary-incontinence 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 定位病灶(胸腰椎、頸椎),評估分級(grade 1-5)
+        - name: 脊椎X光
+          notes: 可見椎間盤鈣化、椎間隙變窄,但無法確診壓迫
+        - name: MRI
+          notes: 金標準,顯示髓核突出位置、脊髓壓迫程度及水腫
+ddxSource: auto-generated

@@ -3,11 +3,11 @@ nameEn: Acute Tumor Lysis Syndrome
 nameZh: 急性腫瘤溶解症候群
 bodySystem: oncology
 description: 化療後腫瘤細胞快速破壞釋放內容物,導致高尿酸、高磷、高鉀、低鈣及急性腎衰竭。
-
 aliases:
-  - { alias: TLS, language: zh }
-  - { alias: Tumor Lysis Syndrome, language: en }
-
+  - alias: TLS
+    language: zh
+  - alias: Tumor Lysis Syndrome
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,13 +17,11 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 同犬
-
 etiology:
   categories:
     - name: 高風險腫瘤
       examples:
         - 淋巴瘤、白血病、大量腫瘤負荷
-
 clinicalSigns:
   early:
     - 化療後12-72小時
@@ -32,27 +30,51 @@ clinicalSigns:
     - 少尿、氮血症
     - 心律不整(高鉀)
     - 癲癇(低鈣)
-
 diagnosis:
   primaryTests:
     - name: 血液生化
-      notes: "高鉀、高磷、高尿酸、低鈣、氮血症"
+      notes: 高鉀、高磷、高尿酸、低鈣、氮血症
   differentialDiagnoses:
     - 急性腎衰竭(其他原因)
-
 treatment:
   medical:
     - 預防性措施(高風險):
-      - 化療前24-48小時積極靜脈輸液
-      - Allopurinol 10 mg/kg PO q12h(降尿酸)
+        - 化療前24-48小時積極靜脈輸液
+        - Allopurinol 10 mg/kg PO q12h(降尿酸)
     - 治療:
-      - 積極輸液利尿
-      - 校正電解質
-      - 考慮透析(若嚴重)
-
+        - 積極輸液利尿
+        - 校正電解質
+        - 考慮透析(若嚴重)
 prognosis:
-  general: "預防勝於治療。發生後預後不良,腎衰竭可能不可逆。"
-
+  general: 預防勝於治療。發生後預後不良,腎衰竭可能不可逆。
 prevention:
   - 高風險患者化療前預防
   - 分次化療減少腫瘤溶解
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: oliguria-anuria
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 急性腫瘤溶解症候群 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+        - weakness 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液生化
+          notes: 高鉀、高磷、高尿酸、低鈣、氮血症
+ddxSource: auto-generated

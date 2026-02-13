@@ -3,18 +3,19 @@ nameEn: Avian Leg Fracture
 nameZh: 禽類腿部骨折
 bodySystem: musculoskeletal
 description: 禽類腿部骨折涉及股骨、脛跗骨或跗蹠骨的骨折，可因外傷、代謝性骨病或腫瘤導致。治療目標為恢復正常站立與行走功能。
-
 aliases:
-  - { alias: 鳥腿骨折, language: zh }
-  - { alias: 禽類下肢骨折, language: zh }
-  - { alias: Leg fracture in birds, language: en }
-  - { alias: Avian tibiotarsal fracture, language: en }
-
+  - alias: 鳥腿骨折
+    language: zh
+  - alias: 禽類下肢骨折
+    language: zh
+  - alias: Leg fracture in birds
+    language: en
+  - alias: Avian tibiotarsal fracture
+    language: en
 species:
   - speciesCommon: bird
     prevalence: common
     notes: 所有鳥種均可發生。腳趾纏繞線繩為小型鳥常見原因。代謝性骨病（鈣質不足）導致的病理性骨折在幼鳥常見。
-
 etiology:
   categories:
     - name: 外傷性
@@ -30,7 +31,6 @@ etiology:
         - 腎臟腫瘤侵犯（虎皮鸚鵡）
         - 骨髓炎
         - 營養性繼發甲狀旁腺功能亢進
-
 clinicalSigns:
   early:
     - 患肢不負重
@@ -43,20 +43,18 @@ clinicalSigns:
     - 腳趾缺血壞死（纏繞性損傷）
     - 無法站立於棲木
     - 精神沉鬱
-
 diagnosis:
   primaryTests:
     - name: X光檢查
-      notes: "確認骨折位置、類型與移位。評估骨質密度（代謝性骨病）"
+      notes: 確認骨折位置、類型與移位。評估骨質密度（代謝性骨病）
     - name: 血液生化
-      notes: "血鈣、磷、離子鈣檢測。評估代謝性骨病可能"
+      notes: 血鈣、磷、離子鈣檢測。評估代謝性骨病可能
   differentialDiagnoses:
     - 關節脫臼
     - 軟組織損傷
     - 痛風
     - 腎臟腫瘤壓迫坐骨神經
     - 趾蹠炎
-
 treatment:
   medical:
     - 止痛（Meloxicam 0.5-1 mg/kg PO SID）
@@ -68,41 +66,61 @@ treatment:
     - 外固定架
     - 微型骨板
     - 嚴重粉碎性骨折或壞死肢端可能需截肢
-
 prognosis:
-  general: "單純閉合性脛跗骨骨折預後良好。股骨骨折因深層肌肉包覆，手術難度較高。開放性骨折或合併血管損傷預後謹慎。代謝性骨病矯正後通常癒合良好。"
-
+  general: 單純閉合性脛跗骨骨折預後良好。股骨骨折因深層肌肉包覆，手術難度較高。開放性骨折或合併血管損傷預後謹慎。代謝性骨病矯正後通常癒合良好。
 prevention:
   - 移除環境中的線繩與細鏈
   - 適當棲木直徑
   - 均衡飲食確保鈣質充足
   - 適當日照或 UVB 照射
   - 監督放飛活動
-
-
 guidelineRefs:
   - sourceOrg: Poultry science
-    title: "Zinc Glycine supplementation improves bone quality in meat geese by modulating gut microbiota, SCFA's, and gut barrier function through Wnt10b/NF-&#x3ba;B axis."
+    title: >-
+      Zinc Glycine supplementation improves bone quality in meat geese by modulating gut microbiota, SCFA's, and gut
+      barrier function through Wnt10b/NF-&#x3ba;B axis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11926699/
     type: research
-    pmid: "40036933"
+    pmid: '40036933'
   - sourceOrg: PloS one
     title: Influence of perch provision during rearing on activity and musculoskeletal health of pullets.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11249234/
     type: research
-    pmid: "39008511"
+    pmid: '39008511'
   - sourceOrg: Poultry science
     title: The effect of salidroside on the bone and cartilage properties in broilers.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11417263/
     type: research
-    pmid: "39270480"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '39270480'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Impact of Perch Provision Timing on Activity and Musculoskeletal Health of Laying Hens.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812542/
     type: research
-    pmid: "38254433"
+    pmid: '38254433'
   - sourceOrg: Royal Society open science
-    title: Does wing use and disuse cause behavioural and musculoskeletal changes in domestic fowl (Gallus gallus domesticus)?
+    title: >-
+      Does wing use and disuse cause behavioural and musculoskeletal changes in domestic fowl (Gallus gallus
+      domesticus)?
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9874265/
     type: research
-    pmid: "36704252"
+    pmid: '36704252'
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 禽類腿部骨折 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: X光檢查
+          notes: 確認骨折位置、類型與移位。評估骨質密度（代謝性骨病）
+        - name: 血液生化
+          notes: 血鈣、磷、離子鈣檢測。評估代謝性骨病可能
+ddxSource: auto-generated

@@ -3,11 +3,11 @@ nameEn: Mucometra
 nameZh: 子宮黏液蓄積
 bodySystem: reproductive
 description: 子宮腔內黏液蓄積，無明顯感染。可能為子宮頸閉鎖或黃體素刺激所致。多數無症狀，超音波偶然發現。
-
 aliases:
-  - { alias: 子宮黏液症, language: zh }
-  - { alias: Cystic Endometrial Hyperplasia, language: en }
-
+  - alias: 子宮黏液症
+    language: zh
+  - alias: Cystic Endometrial Hyperplasia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少見
-
 etiology:
   categories:
     - name: 賀爾蒙因素
@@ -29,7 +28,6 @@ etiology:
       examples:
         - 外源性黃體素使用
         - 卵巢囊腫
-
 clinicalSigns:
   early:
     - 多數無症狀
@@ -37,44 +35,60 @@ clinicalSigns:
   progressive:
     - 腹部觸診子宮擴張
     - 可能進展為子宮蓄膿（細菌感染）
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "子宮腔液體蓄積，無膿樣內容物"
+      notes: 子宮腔液體蓄積，無膿樣內容物
     - name: 全血球計數及生化
-      notes: "通常正常（無感染）"
+      notes: 通常正常（無感染）
     - name: 陰道細胞學
-      notes: "評估發情週期"
+      notes: 評估發情週期
   differentialDiagnoses:
     - 子宮蓄膿
     - 懷孕早期
     - 假孕
-
 treatment:
   medical:
     - 無症狀：觀察或絕育
     - 卵巢子宮切除術（建議）
     - 保留繁殖能力：前列腺素（慎用，可能進展為蓄膿）
-
 prognosis:
-  general: "絕育後預後極佳。保守治療可能進展為子宮蓄膿。"
-
+  general: 絕育後預後極佳。保守治療可能進展為子宮蓄膿。
 prevention:
   - 早期絕育
   - 避免外源性黃體素
-
-
 guidelineRefs:
   - sourceOrg: Theriogenology
     title: Infertility in purebred cats - A review of the potential causes.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7521919/
     type: review
-    pmid: "33038819"
+    pmid: '33038819'
     relevance: primary
   - sourceOrg: Veterinary world
     title: Insights into bovine endometritis with special reference to phytotherapy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5771181/
     type: review
-    pmid: "29391697"
+    pmid: '29391697'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: abdominal-distension
+    frequency: common
+diagnosticAlgorithm:
+  title: 子宮黏液蓄積 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - abdominal-distension 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 子宮腔液體蓄積，無膿樣內容物
+        - name: 全血球計數及生化
+          notes: 通常正常（無感染）
+        - name: 陰道細胞學
+          notes: 評估發情週期
+ddxSource: auto-generated

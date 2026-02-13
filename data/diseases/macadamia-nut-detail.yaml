@@ -3,11 +3,11 @@ nameEn: Macadamia Nut Detail
 nameZh: 夏威夷果中毒詳述
 bodySystem: toxicology
 description: 夏威夷果對犬具毒性(貓不明),引起虛弱、震顫及暫時性後肢麻痺。毒性機轉不明,通常可自行恢復。
-
 aliases:
-  - { alias: 澳洲堅果中毒, language: zh }
-  - { alias: Macadamia Nut Poisoning, language: en }
-
+  - alias: 澳洲堅果中毒
+    language: zh
+  - alias: Macadamia Nut Poisoning
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 毒性未確認
-
 etiology:
   categories:
     - name: 誤食夏威夷果
       examples:
         - 直接攝入堅果
         - 含夏威夷果的餅乾或糕點
-
 clinicalSigns:
   early:
     - 12-48小時內發病
@@ -34,31 +32,59 @@ clinicalSigns:
     - 嘔吐、腹痛
     - 體溫升高(輕度)
     - 症狀持續12-48小時後自行緩解
-
 diagnosis:
   primaryTests:
     - name: 暴露史
-      notes: "確認夏威夷果攝入史"
+      notes: 確認夏威夷果攝入史
     - name: 神經學檢查
-      notes: "後肢無力但深部痛覺正常"
+      notes: 後肢無力但深部痛覺正常
   differentialDiagnoses:
     - 椎間盤疾病
     - 其他神經肌肉疾病
-
 treatment:
   medical:
     - 催吐(若2-4小時內)
     - 活性碳(效果有限)
     - 支持性療法:
-      - 靜脈輸液
-      - 止吐藥(若需要)
-      - 疼痛管理
+        - 靜脈輸液
+        - 止吐藥(若需要)
+        - 疼痛管理
     - 協助移動及排便
     - 多數自行恢復,無需特殊治療
-
 prognosis:
-  general: "預後良好,罕見死亡。症狀通常24-48小時內完全恢復,無後遺症。"
-
+  general: 預後良好,罕見死亡。症狀通常24-48小時內完全恢復,無後遺症。
 prevention:
   - 避免犬接觸夏威夷果及相關食品
   - 巧克力夏威夷果餅乾雙重危險
+associatedSymptoms:
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: trembling
+    frequency: common
+diagnosticAlgorithm:
+  title: 夏威夷果中毒詳述 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - hyperthermia 相關症狀
+        - ataxia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 暴露史
+          notes: 確認夏威夷果攝入史
+        - name: 神經學檢查
+          notes: 後肢無力但深部痛覺正常
+ddxSource: auto-generated

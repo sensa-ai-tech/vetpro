@@ -3,13 +3,15 @@ nameEn: Biotin Deficiency
 nameZh: 生物素缺乏症
 bodySystem: metabolic
 description: 生物素（維生素 B7/維生素 H）是參與脂肪酸合成、胺基酸代謝及糖質新生的輔酶，缺乏主要影響皮膚及毛髮健康。生蛋白中的 avidin 能結合生物素使其無法吸收，長期餵食生蛋白為最常見原因。
-
 aliases:
-  - { alias: 維生素B7缺乏, language: zh }
-  - { alias: 維生素H缺乏, language: zh }
-  - { alias: Vitamin B7 Deficiency, language: en }
-  - { alias: Vitamin H Deficiency, language: en }
-
+  - alias: 維生素B7缺乏
+    language: zh
+  - alias: 維生素H缺乏
+    language: zh
+  - alias: Vitamin B7 Deficiency
+    language: en
+  - alias: Vitamin H Deficiency
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓餵食生蛋白亦可導致。長期廣效抗生素抑制腸道菌群合成亦為風險因素。
-
 etiology:
   categories:
     - name: 攝入不足或拮抗
@@ -28,7 +29,6 @@ etiology:
       examples:
         - 長期抗生素使用（抑制腸道菌群合成）
         - 腸道吸收障礙
-
 clinicalSigns:
   early:
     - 毛髮乾燥無光澤
@@ -39,14 +39,12 @@ clinicalSigns:
     - 口周圍皮炎
     - 嗜睡
     - 生長遲緩
-
 diagnosis:
   primaryTests:
     - name: 飲食病史
       notes: 長期餵食生蛋白為關鍵線索。商業飼料餵食犬貓極少缺乏。
     - name: 治療性診斷
       notes: 補充生物素後症狀改善可回溯性確診。
-
 treatment:
   principles:
     - 停止餵食生蛋白
@@ -57,26 +55,57 @@ treatment:
     - 口服生物素補充
     - 轉換至營養均衡的商業飼料
     - 皮膚症狀數週內改善
-
 prognosis: 停止生蛋白餵食並補充生物素後預後極佳，皮膚及毛髮數週至數月內恢復正常。
-
-
 guidelineRefs:
-  - sourceOrg: "Cell stress &amp; chaperones"
-    title: Autophagy inhibition by biotin elicits endoplasmic reticulum stress to differentially regulate adipocyte lipid and protein synthesis.
+  - sourceOrg: Cell stress &amp; chaperones
+    title: >-
+      Autophagy inhibition by biotin elicits endoplasmic reticulum stress to differentially regulate adipocyte lipid and
+      protein synthesis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6439007/
     type: research
-    pmid: "30648232"
+    pmid: '30648232'
   - sourceOrg: The Journal of physiology
-    title: "Selective accumulation of biotin in arterial chemoreceptors: requirement for carotid body exocytotic dopamine secretion."
+    title: >-
+      Selective accumulation of biotin in arterial chemoreceptors: requirement for carotid body exocytotic dopamine
+      secretion.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5157066/
     type: research
-    pmid: "27570189"
+    pmid: '27570189'
   - sourceOrg: Journal of nutritional science and vitaminology
     title: Effects of Biotin Deficiency on Biotinylated Proteins and Biotin-Related Genes in the Rat Brain.
     url: https://pubmed.ncbi.nlm.nih.gov/27264091/
     type: research
-    pmid: "27264091"
+    pmid: '27264091'
 pubmedQueries:
   - query: '"Biotin Deficiency" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: alopecia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 生物素缺乏症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weakness 相關症狀
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 飲食病史
+          notes: 長期餵食生蛋白為關鍵線索。商業飼料餵食犬貓極少缺乏。
+        - name: 治療性診斷
+          notes: 補充生物素後症狀改善可回溯性確診。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 停止餵食生蛋白
+        - 補充生物素
+        - 轉換至均衡飲食
+ddxSource: auto-generated

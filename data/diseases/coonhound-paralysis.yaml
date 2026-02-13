@@ -3,13 +3,15 @@ nameEn: Coonhound Paralysis
 nameZh: 浣熊獵犬麻痺
 bodySystem: neurology
 description: 一種急性多發性神經根神經炎 (polyradiculoneuritis)，因犬接觸浣熊 (raccoon) 唾液後 7-14 天發生的免疫媒介性周邊神經病變。臨床表現為急性上行性四肢癱瘓，與特發性多發性神經根炎臨床上無法區分。
-
 aliases:
-  - { alias: Raccoon Paralysis, language: en }
-  - { alias: Acute Polyradiculoneuritis, language: en }
-  - { alias: 浣熊麻痺, language: zh }
-  - { alias: 浣熊型多發性神經根炎, language: zh }
-
+  - alias: Raccoon Paralysis
+    language: en
+  - alias: Acute Polyradiculoneuritis
+    language: en
+  - alias: 浣熊麻痺
+    language: zh
+  - alias: 浣熊型多發性神經根炎
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 極罕見，偶有報告。
-
 etiology:
   categories:
     - name: 免疫媒介性
@@ -25,7 +26,6 @@ etiology:
         - 浣熊唾液中抗原觸發免疫反應
         - 抗體攻擊周邊神經髓鞘
         - 接觸後 7-14 天潛伏期
-
 clinicalSigns:
   early:
     - 後肢虛弱 (最先出現)
@@ -36,7 +36,6 @@ clinicalSigns:
     - 四肢癱瘓 (tetraplegia)
     - 肌肉萎縮
     - 呼吸困難 (嚴重時)
-
 diagnosis:
   primaryTests:
     - name: 病史詢問
@@ -45,7 +44,6 @@ diagnosis:
       notes: 下運動神經元徵象：反射減弱、肌張力降低。深層痛覺通常保留
     - name: 肌電圖 (EMG)
       notes: 去神經電位出現於發病 5-7 天後
-
 treatment:
   principles:
     - 支持性照護為主
@@ -56,9 +54,46 @@ treatment:
     - 物理治療維持關節活動度
     - 監測呼吸功能
     - 確保營養與水分攝取
-
 prognosis: 大部分犬在 2-6 週開始恢復，完全恢復需數月。呼吸肌麻痺為主要致死併發症。復發常見 (再次接觸浣熊後)。避免浣熊接觸為最佳預防策略。
-
 pubmedQueries:
   - query: '"coonhound paralysis" AND (veterinary OR canine) AND ("treatment" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 浣熊獵犬麻痺 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - paresis-paralysis 相關症狀
+        - ataxia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史詢問
+          notes: 確認浣熊接觸史；發病前 7-14 天是否有被浣熊咬傷或舔舐
+        - name: 神經學檢查
+          notes: 下運動神經元徵象：反射減弱、肌張力降低。深層痛覺通常保留
+        - name: 肌電圖 (EMG)
+          notes: 去神經電位出現於發病 5-7 天後
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 支持性照護為主
+        - 預防次發性併發症
+        - 無特異性治療
+ddxSource: auto-generated

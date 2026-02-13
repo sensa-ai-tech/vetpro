@@ -3,18 +3,18 @@ nameEn: Devon Rex Malassezia Dermatitis
 nameZh: 德文Rex貓馬拉色菌皮膚炎
 bodySystem: dermatology
 description: Devon Rex及斯芬克斯貓因皮脂分泌旺盛,易發生馬拉色菌過度增生。表現為油性皮膚、紅斑、搔癢,需定期清潔及抗真菌治療。
-
 aliases:
-  - { alias: 馬拉色菌皮膚炎, language: zh }
-  - { alias: Malassezia Dermatitis, language: en }
-  - { alias: Yeast Dermatitis, language: en }
-
+  - alias: 馬拉色菌皮膚炎
+    language: zh
+  - alias: Malassezia Dermatitis
+    language: en
+  - alias: Yeast Dermatitis
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
     notes: Devon Rex、斯芬克斯、康沃爾Rex等無毛或少毛品種
-
 etiology:
   categories:
     - name: 真菌過度增生
@@ -22,7 +22,6 @@ etiology:
         - Malassezia pachydermatis
         - 皮脂分泌過度
         - 皮膚屏障功能異常
-
 clinicalSigns:
   early:
     - 皮膚油膩、褐色污垢
@@ -33,29 +32,45 @@ clinicalSigns:
     - 惡臭
     - 搔癢加劇
     - 繼發性細菌感染
-
 diagnosis:
   primaryTests:
     - name: 皮膚細胞學檢查
-      notes: "大量花生狀酵母菌"
+      notes: 大量花生狀酵母菌
     - name: Wood's lamp檢查
-      notes: "陰性(Malassezia不發光)"
+      notes: 陰性(Malassezia不發光)
   differentialDiagnoses:
     - 脂漏性皮膚炎
     - 細菌性皮膚炎
     - 過敏性皮膚炎
-
 treatment:
   medical:
     - 抗真菌藥浴(Miconazole+Chlorhexidine每3-7天)
     - 口服抗真菌藥(Itraconazole 5 mg/kg PO q24h × 2-4週)
     - 定期清潔(每週)
     - 維持性治療
-
 prognosis:
-  general: "治療反應良好,但需終生定期清潔維持。易復發。"
-
+  general: 治療反應良好,但需終生定期清潔維持。易復發。
 prevention:
   - 每週定期清潔
   - 皮膚保濕
   - 避免過度油膩飲食
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: common
+diagnosticAlgorithm:
+  title: 德文Rex貓馬拉色菌皮膚炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 皮膚細胞學檢查
+          notes: 大量花生狀酵母菌
+        - name: Wood's lamp檢查
+          notes: 陰性(Malassezia不發光)
+ddxSource: auto-generated

@@ -3,17 +3,16 @@ nameEn: Guinea Pig Streptococcus Pneumoniae
 nameZh: 天竺鼠 肺炎鏈球菌感染
 bodySystem: respiratory
 description: 天竺鼠 肺炎鏈球菌感染是天竺鼠常見的呼吸系統疾病,需要及時診斷與治療以改善預後。
-
 aliases:
-  - { alias: 天竺鼠 肺炎鏈球菌感染, language: zh }
-  - { alias: Guinea Pig Streptococcus Pneumoniae, language: en }
-
+  - alias: 天竺鼠 肺炎鏈球菌感染
+    language: zh
+  - alias: Guinea Pig Streptococcus Pneumoniae
+    language: en
 species:
   - speciesCommon: guinea pig
     speciesScientific: Cavia porcellus
     prevalence: moderate
     notes: 常見於寵物飼養群體,需注意早期症狀
-
 etiology:
   categories:
     - name: 多因素
@@ -21,7 +20,6 @@ etiology:
         - 遺傳因素
         - 環境因素
         - 營養因素
-
 clinicalSigns:
   early:
     - 精神食慾下降
@@ -31,20 +29,18 @@ clinicalSigns:
     - 症狀逐漸惡化
     - 可能出現併發症
     - 生活品質下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
-      notes: "基本身體評估及症狀確認"
+      notes: 基本身體評估及症狀確認
     - name: 血液學檢查
-      notes: "CBC及生化學檢查評估整體健康狀況"
+      notes: CBC及生化學檢查評估整體健康狀況
     - name: 影像學檢查
-      notes: "X光或超音波檢查輔助診斷"
+      notes: X光或超音波檢查輔助診斷
   differentialDiagnoses:
     - 其他相關疾病
     - 系統性疾病
     - 併發症
-
 treatment:
   medical:
     - 支持療法:輸液及營養支持
@@ -52,40 +48,64 @@ treatment:
     - 必要時使用抗生素或抗病毒藥物
   surgical:
     - 視病情需要考慮手術治療
-
 prognosis:
-  general: "預後取決於診斷時機、疾病嚴重程度及治療反應,早期診斷與積極治療預後較佳"
-
+  general: 預後取決於診斷時機、疾病嚴重程度及治療反應,早期診斷與積極治療預後較佳
 prevention:
   - 提供適當飲食與環境
   - 定期健康檢查
   - 注意疾病早期症狀
   - 維持良好衛生環境
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in microbiology
-    title: "Port d'Entr&#xe9;e for Respiratory Infections - Does the Influenza A Virus Pave the Way for Bacteria?"
+    title: Port d'Entr&#xe9;e for Respiratory Infections - Does the Influenza A Virus Pave the Way for Bacteria?
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5742597/
     type: review
-    pmid: "29312268"
+    pmid: '29312268'
   - sourceOrg: Journal of advanced veterinary and animal research
-    title: Development of a lateral flow device for rapid simultaneous multiple detections of some common bacterial causes of bovine mastitis.
+    title: >-
+      Development of a lateral flow device for rapid simultaneous multiple detections of some common bacterial causes of
+      bovine mastitis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10390667/
     type: research
-    pmid: "37534067"
-  - sourceOrg: "International journal of infectious diseases : IJID : official publication of the International Society for Infectious Diseases"
+    pmid: '37534067'
+  - sourceOrg: >-
+      International journal of infectious diseases : IJID : official publication of the International Society for
+      Infectious Diseases
     title: Characterization of antibodies in human immunoglobulin products from different regions worldwide.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7844383/
     type: research
-    pmid: "33524620"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '33524620'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Frequency of Owner-Reported Bacterial Infections in Pet Guinea Pigs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6770499/
     type: research
-    pmid: "31487781"
+    pmid: '31487781'
   - sourceOrg: mBio
-    title: An Infant Mouse Model of Influenza Virus Transmission Demonstrates the Role of Virus-Specific Shedding, Humoral Immunity, and Sialidase Expression by Colonizing Streptococcus pneumoniae.
+    title: >-
+      An Infant Mouse Model of Influenza Virus Transmission Demonstrates the Role of Virus-Specific Shedding, Humoral
+      Immunity, and Sialidase Expression by Colonizing Streptococcus pneumoniae.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6299224/
     type: research
-    pmid: "30563897"
+    pmid: '30563897'
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+diagnosticAlgorithm:
+  title: 天竺鼠 肺炎鏈球菌感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 基本身體評估及症狀確認
+        - name: 血液學檢查
+          notes: CBC及生化學檢查評估整體健康狀況
+        - name: 影像學檢查
+          notes: X光或超音波檢查輔助診斷
+ddxSource: auto-generated

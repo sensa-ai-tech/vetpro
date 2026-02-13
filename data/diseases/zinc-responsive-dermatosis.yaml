@@ -3,11 +3,11 @@ nameEn: Zinc Responsive Dermatosis
 nameZh: 鋅反應性皮膚病
 bodySystem: dermatology
 description: 因鋅缺乏或鋅代謝異常引起的皮膚病。分為兩型：第一型見於 Siberian Husky 與 Alaskan Malamute（鋅吸收遺傳缺陷），第二型見於快速生長幼犬（飲食鋅不足）。
-
 aliases:
-  - { alias: "Zinc Deficiency Dermatosis", language: en }
-  - { alias: "鋅缺乏性皮膚病", language: zh }
-
+  - alias: Zinc Deficiency Dermatosis
+    language: en
+  - alias: 鋅缺乏性皮膚病
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,14 +15,12 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 鋅代謝異常
       examples:
         - 遺傳性鋅吸收不良（第一型）
         - 飲食鋅不足或植酸過高影響吸收（第二型）
-
 clinicalSigns:
   early:
     - 眼周、口周皮膚結痂
@@ -32,7 +30,6 @@ clinicalSigns:
     - 厚痂皮
     - 脫毛
     - 繼發感染
-
 diagnosis:
   primaryTests:
     - name: 臨床表現 + 品種
@@ -41,7 +38,6 @@ diagnosis:
       notes: 表皮角化不全（parakeratosis）
     - name: 血清鋅濃度
       notes: 可能正常或偏低
-
 treatment:
   principles:
     - 終生鋅補充（第一型）
@@ -51,9 +47,42 @@ treatment:
     - 第一型需終生補充
     - 第二型調整飲食後多可痊癒
     - 嚴重時短期類固醇輔助
-
 prognosis: 第一型終生需鋅補充，控制良好預後佳。第二型飲食矯正後預後極佳。
-
 pubmedQueries:
   - query: '"zinc responsive dermatosis" AND (veterinary OR canine) AND ("treatment" OR "Siberian Husky")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 鋅反應性皮膚病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估皮膚病變分布，注意眼周、口周、耳廓及足墊的結痂和角化過度，區分I型（北方犬種）和II型（快速生長幼犬）
+      findings:
+        - 眼周和口周紅斑、結痂及鱗屑
+        - 耳廓邊緣角化過度
+        - 足墊過度角化龜裂
+    - step: 2
+      action: 血液與飲食評估
+      details: 檢測血清鋅濃度，評估飲食組成是否含過量植酸或鈣影響鋅吸收
+      findings:
+        - 血清鋅濃度低於正常範圍
+        - 飲食中植酸或鈣含量過高
+        - CBC可能顯示輕度貧血
+    - step: 3
+      action: 活檢確診與治療反應
+      details: 皮膚活檢確認特徵性組織病理學變化，鋅補充後臨床改善進一步支持診斷
+      findings:
+        - 活檢顯示表皮角化不全伴明顯角化過度
+        - 鋅補充2-4週後臨床顯著改善
+        - 確診為鋅反應性皮膚病
+clinicalPearls:
+  - 硫酸鋅空腹服用吸收最好但可能引起嘔吐
+  - 甲硫胺酸鋅的胃腸耐受性較好
+  - 治療反應通常在2-6週內可見
+  - 鈣質過量補充是第II型最常見的原因之一
+monitoringItems:
+  - 皮膚病變改善程度
+  - 鋅補充劑的胃腸耐受性
+  - 幼犬的生長狀態
+  - 繼發感染控制
+ddxSource: book

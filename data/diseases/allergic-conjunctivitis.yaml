@@ -3,13 +3,15 @@ nameEn: Allergic Conjunctivitis
 nameZh: 過敏性結膜炎
 bodySystem: ophthalmology
 description: 因過敏原接觸結膜引起的 I 型或 IV 型過敏反應，表現為結膜充血、水腫、搔癢與漿液性分泌物。常與異位性皮膚炎共同存在，為犬慢性結膜炎的常見原因。
-
 aliases:
-  - { alias: Atopic Conjunctivitis, language: en }
-  - { alias: Seasonal Conjunctivitis, language: en }
-  - { alias: 過敏性眼炎, language: zh }
-  - { alias: 異位性結膜炎, language: zh }
-
+  - alias: Atopic Conjunctivitis
+    language: en
+  - alias: Seasonal Conjunctivitis
+    language: en
+  - alias: 過敏性眼炎
+    language: zh
+  - alias: 異位性結膜炎
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓較少見。需與 FHV-1 及嗜酸性角膜炎鑑別。
-
 etiology:
   categories:
     - name: 環境過敏原
@@ -30,7 +31,6 @@ etiology:
         - 清潔劑或化學品
         - 眼藥水防腐劑 (benzalkonium chloride)
         - 塑膠食碗
-
 clinicalSigns:
   early:
     - 眼睛搔癢 (搓揉眼部)
@@ -41,7 +41,6 @@ clinicalSigns:
     - 黏液性分泌物增加
     - 眼周皮膚紅腫
     - 慢性色素沉著
-
 diagnosis:
   primaryTests:
     - name: 臨床表現與病史
@@ -50,7 +49,6 @@ diagnosis:
       notes: 嗜酸性球增加支持過敏性病因
     - name: 排除性診斷
       notes: 排除感染性結膜炎、KCS、角膜疾病
-
 treatment:
   principles:
     - 減少過敏原接觸
@@ -62,41 +60,79 @@ treatment:
     - 嚴重時短期局部類固醇 (確認無角膜潰瘍)
     - Cyclosporine 眼藥水 (長期控制)
     - 全身過敏治療 (Oclacitinib、免疫治療)
-
 prognosis: 預後良好但常為慢性復發性疾病。環境控制與持續治療可有效管理。季節性病例在非季節期可自行緩解。嚴重慢性病例需長期維持治療。
-
-
 guidelineRefs:
   - sourceOrg: International journal of molecular sciences
     title: Treatment of Allergies to Fur Animals.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11241144/
     type: review
-    pmid: "39000328"
+    pmid: '39000328'
   - sourceOrg: Japanese journal of ophthalmology
     title: Trans-eyelid distribution of epinastine to the conjunctiva following eyelid application in rabbits.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11420250/
     type: research
-    pmid: "38795193"
-  - sourceOrg: "Investigative ophthalmology &amp; visual science"
+    pmid: '38795193'
+  - sourceOrg: Investigative ophthalmology &amp; visual science
     title: Blocking Th2 Signaling Pathway Alleviates the Clinical Symptoms and Inflammation in Allergic Conjunctivitis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10382780/
     type: research
-    pmid: "37486293"
+    pmid: '37486293'
   - sourceOrg: Clinical ophthalmology (Auckland, N.Z.)
     title: Effectiveness of Subconjunctival Cyclosporine in Treatment of Acute Allergic Conjunctivitis in a Rat-Model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7025671/
     type: research
-    pmid: "32103889"
-  - sourceOrg: "Journal of ocular pharmacology and therapeutics : the official journal of the Association for Ocular Pharmacology and Therapeutics"
-    title: "Ocular Biodistribution of Once-Daily 0.6% Bilastine Eye Drops Reveals Highest Levels in Conjunctiva Up to 24&#x2009;h Postadministration."
+    pmid: '32103889'
+  - sourceOrg: >-
+      Journal of ocular pharmacology and therapeutics : the official journal of the Association for Ocular Pharmacology
+      and Therapeutics
+    title: >-
+      Ocular Biodistribution of Once-Daily 0.6% Bilastine Eye Drops Reveals Highest Levels in Conjunctiva Up to
+      24&#x2009;h Postadministration.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9700334/
     type: research
-    pmid: "36269652"
+    pmid: '36269652'
   - sourceOrg: Translational pediatrics
-    title: The distribution patterns and clinical significance of serum immunoglobulin E in children with chalazion in Hubei, China.
+    title: >-
+      The distribution patterns and clinical significance of serum immunoglobulin E in children with chalazion in Hubei,
+      China.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12163783/
     type: research
-    pmid: "40519721"
+    pmid: '40519721'
 pubmedQueries:
   - query: '"allergic conjunctivitis" AND (veterinary OR canine OR feline) AND ("treatment" OR "atopic")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: red-eye
+    frequency: uncommon
+  - symptomId: skin-pruritus
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 過敏性結膜炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - red-eye 相關症狀
+        - skin-pruritus 相關症狀
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床表現與病史
+          notes: 季節性、雙側、搔癢為主。常伴隨皮膚過敏症狀
+        - name: 結膜細胞學
+          notes: 嗜酸性球增加支持過敏性病因
+        - name: 排除性診斷
+          notes: 排除感染性結膜炎、KCS、角膜疾病
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 減少過敏原接觸
+        - 局部抗過敏治療
+        - 控制全身過敏狀態
+ddxSource: auto-generated

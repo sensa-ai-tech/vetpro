@@ -3,12 +3,13 @@ nameEn: Cyanide Toxicosis
 nameZh: 氰化物中毒
 bodySystem: toxicology
 description: 氰化物抑制細胞色素氧化酶,阻斷細胞呼吸,引起急性細胞缺氧。常見於攝入含氰苷植物(如蘋果籽、桃仁)或工業化學品。
-
 aliases:
-  - { alias: 氫氰酸中毒, language: zh }
-  - { alias: Cyanide Poisoning, language: en }
-  - { alias: Prussic Acid Toxicosis, language: en }
-
+  - alias: 氫氰酸中毒
+    language: zh
+  - alias: Cyanide Poisoning
+    language: en
+  - alias: Prussic Acid Toxicosis
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 較少暴露於氰化物來源
-
 etiology:
   categories:
     - name: 植物來源
@@ -29,7 +29,6 @@ etiology:
       examples:
         - 電鍍液、金屬處理液
         - 某些殺蟲劑
-
 clinicalSigns:
   early:
     - 急性發作(數分鐘內)
@@ -41,36 +40,66 @@ clinicalSigns:
     - 癲癇發作
     - 呼吸衰竭、紫紺
     - 心搏停止、猝死
-
 diagnosis:
   primaryTests:
     - name: 臨床表現
-      notes: "急性呼吸窘迫+鮮紅黏膜+苦杏仁味(嘔吐物或呼吸)"
+      notes: 急性呼吸窘迫+鮮紅黏膜+苦杏仁味(嘔吐物或呼吸)
     - name: 血液乳酸
-      notes: "乳酸>8 mmol/L(細胞無氧代謝)"
+      notes: 乳酸>8 mmol/L(細胞無氧代謝)
     - name: 血液氰化物濃度
-      notes: ">0.5 mg/L確診(但檢測緩慢,無法即時)"
+      notes: '>0.5 mg/L確診(但檢測緩慢,無法即時)'
   differentialDiagnoses:
     - 一氧化碳中毒
     - 硫化氫中毒
     - 呼吸道阻塞
-
 treatment:
   medical:
     - 立即氧氣治療(100%高流量)
     - 亞硝酸鈉-硫代硫酸鈉解毒劑:
-      - Sodium nitrite 10 mg/kg IV緩慢推注(10分鐘),誘導高鐵血紅蛋白
-      - 隨即 Sodium thiosulfate 30-40 mg/kg IV,轉換氰化物為硫氰酸鹽
+        - Sodium nitrite 10 mg/kg IV緩慢推注(10分鐘),誘導高鐵血紅蛋白
+        - 隨即 Sodium thiosulfate 30-40 mg/kg IV,轉換氰化物為硫氰酸鹽
     - 羥鈷胺(Hydroxocobalamin) 70 mg/kg IV(若可取得,較安全)
     - 催吐及活性碳(僅極早期且動物仍清醒)
     - 靜脈輸液支持
     - 碳酸氫鈉(若代謝性酸中毒)
     - 心肺復甦術(若心搏停止)
-
 prognosis:
-  general: "氰化物中毒進展極快,延遲數分鐘即可能致命。即時解毒劑治療存活率可達50-70%,否則死亡率>90%。存活者通常無後遺症。"
-
+  general: 氰化物中毒進展極快,延遲數分鐘即可能致命。即時解毒劑治療存活率可達50-70%,否則死亡率>90%。存活者通常無後遺症。
 prevention:
   - 避免寵物接觸大量果核或含氰苷植物
   - 妥善存放化學品
   - 懷疑暴露應立即急診,時間就是生命
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: ataxia
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: ptyalism
+    frequency: common
+diagnosticAlgorithm:
+  title: 氰化物中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - ataxia 相關症狀
+        - seizures 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床表現
+          notes: 急性呼吸窘迫+鮮紅黏膜+苦杏仁味(嘔吐物或呼吸)
+        - name: 血液乳酸
+          notes: 乳酸>8 mmol/L(細胞無氧代謝)
+        - name: 血液氰化物濃度
+          notes: '>0.5 mg/L確診(但檢測緩慢,無法即時)'
+ddxSource: auto-generated

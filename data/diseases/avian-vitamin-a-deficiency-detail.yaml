@@ -3,18 +3,18 @@ nameEn: Avian Vitamin A Deficiency Detail
 nameZh: 鳥類維生素A缺乏症詳論
 bodySystem: metabolic
 description: 維生素A缺乏症是種子飲食鳥類最常見的營養缺乏病,特徵為上皮組織鱗狀化生和免疫功能下降。臨床表現包括口腔白斑、鼻竇炎、趾底炎和反覆呼吸道感染,鸚鵡科特別常見。
-
 aliases:
-  - { alias: 維他命A缺乏, language: zh }
-  - { alias: Hypovitaminosis A, language: en }
-  - { alias: Vitamin A Deficiency Avian, language: en }
-
+  - alias: 維他命A缺乏
+    language: zh
+  - alias: Hypovitaminosis A
+    language: en
+  - alias: Vitamin A Deficiency Avian
+    language: en
 species:
   - speciesCommon: bird
     speciesScientific: Aves
     prevalence: common
     notes: 單純種子飲食的鸚鵡、亞馬遜鸚鵡和非洲灰鸚鵡最常見
-
 etiology:
   categories:
     - name: 飲食缺乏
@@ -27,7 +27,6 @@ etiology:
         - 肝臟疾病影響轉換
         - 消化道疾病
         - 脂肪吸收不良
-
 clinicalSigns:
   early:
     - 鼻孔周圍分泌物增加
@@ -43,23 +42,21 @@ clinicalSigns:
     - 結膜炎和眼瞼腫脹
     - 消化道黏膜受損導致下痢
     - 免疫力下降易併發二次感染
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
-      notes: "口腔視診可見白色乾酪樣斑塊,鼻竇觸診腫脹"
+      notes: 口腔視診可見白色乾酪樣斑塊,鼻竇觸診腫脹
     - name: 飲食史
-      notes: "長期單純種子飲食是主要線索"
+      notes: 長期單純種子飲食是主要線索
     - name: 血清維生素A濃度
-      notes: "正常值約300-800 IU/L,缺乏時<200 IU/L"
+      notes: 正常值約300-800 IU/L,缺乏時<200 IU/L
     - name: 口腔或鼻竇採樣
-      notes: "細胞學可見鱗狀化生上皮細胞"
+      notes: 細胞學可見鱗狀化生上皮細胞
   differentialDiagnoses:
     - 毛滴蟲感染(口腔病變)
     - 念珠菌感染
     - 慢性鼻竇炎(其他病因)
     - 曲霉菌感染
-
 treatment:
   medical:
     - 維生素A注射 5,000-10,000 IU/kg IM,每週一次,持續2-4週
@@ -69,13 +66,33 @@ treatment:
     - 口腔病變局部清潔和優碘消毒
     - 嚴重鼻竇炎需沖洗或手術引流
     - 支持療法包括保溫和強制餵食
-
 prognosis:
-  general: "早期診斷並補充維生素A預後良好,黏膜病變可在2-4週內改善。但已形成的鱗狀化生可能需數月恢復,慢性鼻竇炎可能終身需管理。最重要是長期飲食改善,否則易復發。"
-
+  general: 早期診斷並補充維生素A預後良好,黏膜病變可在2-4週內改善。但已形成的鱗狀化生可能需數月恢復,慢性鼻竇炎可能終身需管理。最重要是長期飲食改善,否則易復發。
 prevention:
   - 提供營養均衡滋養丸飲食
   - 每日供應深綠色蔬菜和橙黃色蔬果
   - 避免單純種子飲食
   - 定期口腔和鼻腔檢查
   - 必要時定期補充維生素A
+associatedSymptoms:
+  - symptomId: sneezing
+    frequency: common
+diagnosticAlgorithm:
+  title: 鳥類維生素A缺乏症詳論 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - sneezing 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 口腔視診可見白色乾酪樣斑塊,鼻竇觸診腫脹
+        - name: 飲食史
+          notes: 長期單純種子飲食是主要線索
+        - name: 血清維生素A濃度
+          notes: 正常值約300-800 IU/L,缺乏時<200 IU/L
+ddxSource: auto-generated

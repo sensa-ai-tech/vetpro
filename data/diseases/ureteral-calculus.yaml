@@ -3,14 +3,17 @@ nameEn: Ureteral Calculus
 nameZh: 輸尿管結石
 bodySystem: urinary
 description: 輸尿管結石是結石嵌頓於輸尿管引起的泌尿道急症，可導致單側或雙側尿路阻塞、腎水腫及急性腎損傷。在貓中以草酸鈣結石最為常見，是近年急速增加的泌尿道疾病。
-
 aliases:
-  - { alias: 輸尿管阻塞, language: zh }
-  - { alias: 尿管結石, language: zh }
-  - { alias: Ureteral Stone, language: en }
-  - { alias: Ureterolithiasis, language: en }
-  - { alias: Ureteral Obstruction, language: en }
-
+  - alias: 輸尿管阻塞
+    language: zh
+  - alias: 尿管結石
+    language: zh
+  - alias: Ureteral Stone
+    language: en
+  - alias: Ureterolithiasis
+    language: en
+  - alias: Ureteral Obstruction
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓輸尿管結石近年發生率顯著增加，約98%為草酸鈣結石。中老年貓好發。雙側阻塞可導致急性腎衰竭。
-
 etiology:
   categories:
     - name: 結石類型
@@ -36,7 +38,6 @@ etiology:
         - 低尿量
         - 腎結石下移
         - 慢性腎病
-
 clinicalSigns:
   early:
     - 急性腹部疼痛（可能不明顯，尤其貓）
@@ -50,20 +51,18 @@ clinicalSigns:
     - 腎盂積膿（合併感染時）
     - 電解質失衡
     - 尿毒症
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "腎盂擴張（腎水腫）為主要間接徵象。輸尿管擴張、近端輸尿管迂曲。結石可能因體積小而不易直接看到。"
+      notes: 腎盂擴張（腎水腫）為主要間接徵象。輸尿管擴張、近端輸尿管迂曲。結石可能因體積小而不易直接看到。
     - name: 腹部X光
-      notes: "草酸鈣結石為放射線不透明（radio-opaque），可在X光上看到。結石常位於腎盂輸尿管連接處或輸尿管遠端。"
+      notes: 草酸鈣結石為放射線不透明（radio-opaque），可在X光上看到。結石常位於腎盂輸尿管連接處或輸尿管遠端。
   differentialDiagnoses:
     - 腎結石（未阻塞）
     - 急性腎損傷（其他原因）
     - 輸尿管腫瘤
     - 輸尿管狹窄
     - 血塊阻塞
-
 treatment:
   medical:
     - 積極靜脈輸液
@@ -78,39 +77,71 @@ treatment:
     - 輸尿管新膀胱口吻合術 (Ureteral Reimplantation/Neoureterocystostomy)
     - 皮下輸尿管繞道系統 (SUB device，貓首選)
     - 輸尿管支架 (Ureteral Stent)
-
 prognosis:
-  general: "單側阻塞且及時手術者預後良好至謹慎。雙側阻塞為急症，延遲治療可致命。SUB 裝置在貓的長期預後資料持續改善。術後復發率不低（草酸鈣結石無法以飲食溶解），需長期預防管理。"
-
+  general: 單側阻塞且及時手術者預後良好至謹慎。雙側阻塞為急症，延遲治療可致命。SUB 裝置在貓的長期預後資料持續改善。術後復發率不低（草酸鈣結石無法以飲食溶解），需長期預防管理。
 prevention:
   - 增加水分攝取（濕食、飲水鼓勵）
   - 腎結石患者定期超音波追蹤
   - 避免高鈣飲食和補充品
   - 尿液稀釋（目標尿比重 <1.030）
-
-
 guidelineRefs:
   - sourceOrg: The veterinary quarterly
-    title: Ultrasound-guided percutaneous antegrade pyelography for suspected ureteral obstruction in 6 pet guinea pigs (Cavia porcellus).
+    title: >-
+      Ultrasound-guided percutaneous antegrade pyelography for suspected ureteral obstruction in 6 pet guinea pigs
+      (Cavia porcellus).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7476506/
     type: research
-    pmid: "32727315"
+    pmid: '32727315'
     relevance: supporting
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Comparison of nonenhanced computed tomography and ultrasonography for detection of ureteral calculi in cats: A prospective study."
+    title: >-
+      Comparison of nonenhanced computed tomography and ultrasonography for detection of ureteral calculi in cats: A
+      prospective study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8478021/
     type: research
-    pmid: "34258789"
+    pmid: '34258789'
     relevance: supporting
   - sourceOrg: Journal of the American Veterinary Medical Association
     title: Ureteroneocystostomy for treatment of struvite urolithiasis in a ferret.
     url: https://pubmed.ncbi.nlm.nih.gov/37217174/
     type: research
-    pmid: "37217174"
+    pmid: '37217174'
     relevance: supporting
-  - sourceOrg: "Kidney &amp; blood pressure research"
+  - sourceOrg: Kidney &amp; blood pressure research
     title: Cystatin C in Evaluating Renal Function in Ureteral Calculi Hydronephrosis in Adults.
     url: https://pubmed.ncbi.nlm.nih.gov/31801142/
     type: research
-    pmid: "31801142"
+    pmid: '31801142'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: oliguria-anuria
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 輸尿管結石 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - abdominal-pain 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 腎盂擴張（腎水腫）為主要間接徵象。輸尿管擴張、近端輸尿管迂曲。結石可能因體積小而不易直接看到。
+        - name: 腹部X光
+          notes: 草酸鈣結石為放射線不透明（radio-opaque），可在X光上看到。結石常位於腎盂輸尿管連接處或輸尿管遠端。
+ddxSource: auto-generated

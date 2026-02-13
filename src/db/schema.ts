@@ -16,6 +16,10 @@ export const diseases = sqliteTable("diseases", {
   prognosis: text("prognosis"),
   stagingSystem: text("staging_system"), // JSON string
   emergencyNotes: text("emergency_notes"),
+  diagnosticAlgorithm: text("diagnostic_algorithm"), // JSON string
+  clinicalPearls: text("clinical_pearls"), // JSON string
+  monitoringItems: text("monitoring_items"), // JSON string
+  ddxSource: text("ddx_source"), // book | auto-generated | book-only
   reviewStatus: text("review_status").notNull().default("draft"),
   createdAt: text("created_at").notNull().default(new Date().toISOString()),
   updatedAt: text("updated_at").notNull().default(new Date().toISOString()),
@@ -82,6 +86,78 @@ export const ontologyMappings = sqliteTable("ontology_mappings", {
   ontologyCode: text("ontology_code").notNull(),
   ontologyLabel: text("ontology_label"),
   confidence: text("confidence"), // exact | broad | narrow
+});
+
+// === 症狀定義表 ===
+export const symptoms = sqliteTable("symptoms", {
+  id: text("id").primaryKey(), // e.g., "vomiting"
+  zhName: text("zh_name").notNull(),
+  enName: text("en_name").notNull(),
+  section: text("section"), // e.g., "1.2"
+  sectionName: text("section_name"), // e.g., "消化道／腹腔"
+  description: text("description"),
+});
+
+// === 症狀-疾病關聯表（DDX 核心） ===
+export const symptomDiseases = sqliteTable("symptom_diseases", {
+  id: text("id").primaryKey(),
+  symptomId: text("symptom_id")
+    .notNull()
+    .references(() => symptoms.id),
+  diseaseId: text("disease_id")
+    .notNull()
+    .references(() => diseases.id, { onDelete: "cascade" }),
+  species: text("species").default("both"), // dog | cat | both
+  frequency: text("frequency").default("uncommon"), // common | uncommon | rare
+  category: text("category"), // 內分泌 | 感染 | 腫瘤 | ...
+  urgency: text("urgency").default("semi-urgent"), // emergency | urgent | semi-urgent | non-urgent
+  detail: text("detail"),
+});
+
+// === 實驗室指標表 ===
+export const labFindings = sqliteTable("lab_findings", {
+  id: text("id").primaryKey(), // e.g., "azotaemia"
+  zhName: text("zh_name").notNull(),
+  enName: text("en_name").notNull(),
+  category: text("category"), // 血液學 | 生化 | 凝血 | ...
+});
+
+// === 實驗室-疾病關聯表 ===
+export const labDiseases = sqliteTable("lab_diseases", {
+  id: text("id").primaryKey(),
+  labId: text("lab_id")
+    .notNull()
+    .references(() => labFindings.id),
+  diseaseId: text("disease_id")
+    .notNull()
+    .references(() => diseases.id, { onDelete: "cascade" }),
+  species: text("species").default("both"),
+  frequency: text("frequency").default("uncommon"),
+  category: text("category"),
+  urgency: text("urgency").default("semi-urgent"),
+  detail: text("detail"),
+});
+
+// === 症狀-實驗室交叉連結 ===
+export const symptomLabs = sqliteTable("symptom_labs", {
+  id: text("id").primaryKey(),
+  symptomId: text("symptom_id")
+    .notNull()
+    .references(() => symptoms.id),
+  labId: text("lab_id")
+    .notNull()
+    .references(() => labFindings.id),
+});
+
+// === 症狀間關聯 ===
+export const relatedSymptoms = sqliteTable("related_symptoms", {
+  id: text("id").primaryKey(),
+  symptomId: text("symptom_id")
+    .notNull()
+    .references(() => symptoms.id),
+  relatedSymptomId: text("related_symptom_id")
+    .notNull()
+    .references(() => symptoms.id),
 });
 
 // === 更新日誌 ===

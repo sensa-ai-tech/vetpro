@@ -3,17 +3,23 @@ nameEn: Hemophilia
 nameZh: 血友病
 bodySystem: hematology
 description: 血友病是一組X連鎖隱性遺傳的凝血因子缺乏症，以血友病 A（第 VIII 因子缺乏）與血友病 B（第 IX 因子缺乏）最為常見。患病動物表現為自發性或外傷後異常出血，嚴重程度取決於殘餘凝血因子活性。
-
 aliases:
-  - { alias: Hemophilia A, language: en }
-  - { alias: Hemophilia B, language: en }
-  - { alias: Factor VIII Deficiency, language: en }
-  - { alias: Factor IX Deficiency, language: en }
-  - { alias: Christmas Disease, language: en }
-  - { alias: 甲型血友病, language: zh }
-  - { alias: 乙型血友病, language: zh }
-  - { alias: 第八因子缺乏症, language: zh }
-
+  - alias: Hemophilia A
+    language: en
+  - alias: Hemophilia B
+    language: en
+  - alias: Factor VIII Deficiency
+    language: en
+  - alias: Factor IX Deficiency
+    language: en
+  - alias: Christmas Disease
+    language: en
+  - alias: 甲型血友病
+    language: zh
+  - alias: 乙型血友病
+    language: zh
+  - alias: 第八因子缺乏症
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -23,7 +29,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓隻罕見，血友病 A 與 B 皆有報告，無明顯品種偏好
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -37,7 +42,6 @@ etiology:
         - 內源性凝血途徑缺陷
         - 無法有效形成纖維蛋白凝塊
         - 嚴重度分級：輕度（>5% 因子活性）、中度（1-5%）、重度（<1%）
-
 clinicalSigns:
   early:
     - 新生幼犬剪臍帶或斷尾時異常出血
@@ -55,26 +59,24 @@ clinicalSigns:
     - 進行性貧血（慢性出血所致）
     - 關節永久性損傷與退化（反覆血腫性關節病）
     - 出血性休克（急性大量失血）
-
 diagnosis:
   primaryTests:
     - name: 凝血功能篩檢
-      notes: "aPTT（活化部分凝血酶原時間）延長為特徵性發現；PT（凝血酶原時間）正常；出血時間正常"
+      notes: aPTT（活化部分凝血酶原時間）延長為特徵性發現；PT（凝血酶原時間）正常；出血時間正常
     - name: 特異性凝血因子活性測定
-      notes: "確診必須測定 Factor VIII 或 Factor IX 活性百分比：重度 <1%、中度 1-5%、輕度 5-30%"
+      notes: 確診必須測定 Factor VIII 或 Factor IX 活性百分比：重度 <1%、中度 1-5%、輕度 5-30%
     - name: 基因檢測
-      notes: "可用於品種特異性突變篩檢與帶因者鑑定（如德國牧羊犬 F8 基因內含子 22 倒位）"
+      notes: 可用於品種特異性突變篩檢與帶因者鑑定（如德國牧羊犬 F8 基因內含子 22 倒位）
   imaging:
     - name: X 光檢查
-      notes: "評估關節腫脹（血腫性關節病）、胸腔或腹腔積液"
+      notes: 評估關節腫脹（血腫性關節病）、胸腔或腹腔積液
     - name: 腹部超音波
-      notes: "偵測腹腔內出血、腹膜後血腫、脾臟或肝臟血腫"
+      notes: 偵測腹腔內出血、腹膜後血腫、脾臟或肝臟血腫
   additional:
     - 全血計數（評估貧血程度與血小板計數——血友病血小板正常）
     - 血型鑑定與交叉試驗（輸血前準備）
     - von Willebrand 因子測定（鑑別診斷）
     - 口腔黏膜出血時間（BMBT，應正常）
-
 treatment:
   principles:
     - 急性出血以補充缺乏的凝血因子為首要目標
@@ -89,35 +91,35 @@ treatment:
     - 手術或拔牙前需預防性輸注凝血因子
     - 環境管理：避免劇烈運動與潛在外傷風險
     - 繁殖管理：患病雄性與帶因雌性不應繁殖
-
-prognosis: 預後取決於疾病嚴重度與飼主的管理能力。輕度血友病患犬在適當管理下可有接近正常的壽命。重度血友病（因子活性 <1%）預後謹慎，自發性出血風險高，需頻繁輸血支持。關節出血若反覆發生可導致永久性關節損傷。基因治療在犬隻模型中已顯示長期成效的潛力。
-
+prognosis: >-
+  預後取決於疾病嚴重度與飼主的管理能力。輕度血友病患犬在適當管理下可有接近正常的壽命。重度血友病（因子活性
+  <1%）預後謹慎，自發性出血風險高，需頻繁輸血支持。關節出血若反覆發生可導致永久性關節損傷。基因治療在犬隻模型中已顯示長期成效的潛力。
 guidelineRefs:
   - sourceOrg: Blood
     title: Gene therapy for hemophilia B in dogs
     url: https://pubmed.ncbi.nlm.nih.gov/12433676/
     type: research
-    pmid: "12433676"
+    pmid: '12433676'
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
     title: Transfusion medicine in small animals
     url: https://pubmed.ncbi.nlm.nih.gov/24112692/
     type: review
-    pmid: "24112692"
+    pmid: '24112692'
   - sourceOrg: Progress in molecular biology and translational science
     title: Animal models of hemophilia.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3713797/
     type: review
-    pmid: "22137432"
+    pmid: '22137432'
   - sourceOrg: Iranian journal of veterinary research
     title: Clinical and laboratorial description of the differential diagnoses of hemostatic disorders in the horse.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7183377/
     type: review
-    pmid: "32368218"
+    pmid: '32368218'
   - sourceOrg: Biotechnology advances
     title: Plant cell-made protein antigens for induction of Oral tolerance.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6842683/
     type: review
-    pmid: "31251968"
+    pmid: '31251968'
     relevance: supporting
 pubmedQueries:
   - query: '"hemophilia" AND (dog OR canine) AND ("factor VIII" OR "factor IX" OR "gene therapy")'
@@ -126,6 +128,66 @@ pubmedQueries:
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "CIR"
-  sectionTitle: "Factor VIII deficiency (hemophilia A)"
+  chapter: CIR
+  sectionTitle: Factor VIII deficiency (hemophilia A)
   pdfPage: 92
+diagnosticAlgorithm:
+  title: 血友病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 詢問出血史與家族史
+      findings:
+        - 深層出血關節/肌肉/體腔
+        - 手術後異常出血
+        - 幼年動物首次出血事件
+        - X連鎖遺傳公犬為主
+    - step: 2
+      action: 凝血篩檢
+      details: 基礎凝血功能評估
+      findings:
+        - aPTT明顯延長
+        - PT正常
+        - 血小板計數正常
+        - BMBT正常
+    - step: 3
+      action: 凝血因子定量
+      details: 特定凝血因子活性測定
+      findings:
+        - A型第VIII因子活性下降
+        - B型第IX因子活性下降
+        - 嚴重型因子活性小於1%
+        - 中度型因子活性1-5%
+    - step: 4
+      action: 基因檢測與繁殖建議
+      details: 確認攜帶者狀態
+      findings:
+        - 基因檢測確認突變
+        - 母犬攜帶者鑑定
+        - 繁殖建議
+        - 出血緊急處理計劃
+clinicalPearls:
+  - aPTT延長而PT正常是血友病的典型凝血特徵
+  - 血友病A比B常見約4-5倍
+  - 雌性純合子極罕見但理論上可發病
+  - DDAVP僅對輕度血友病A有短暫效果
+monitoringItems:
+  - 出血事件頻率
+  - 術前凝血功能檢查
+  - 關節功能評估
+  - 輸血反應監測
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: petechiae-ecchymoses
+    frequency: common
+associatedLabFindings:
+  - labId: aptt-prolonged
+    frequency: rare
+ddxSource: book

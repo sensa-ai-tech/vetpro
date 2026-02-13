@@ -3,11 +3,11 @@ nameEn: Balanoposthitis
 nameZh: 龜頭包皮炎
 bodySystem: reproductive
 description: 陰莖及包皮發炎，常為正常菌叢過度增生或外來刺激。多數為輕度、自限性。嚴重或持續者需治療潛在病因。
-
 aliases:
-  - { alias: 陰莖包皮炎, language: zh }
-  - { alias: Sheath Infection, language: en }
-
+  - alias: 陰莖包皮炎
+    language: zh
+  - alias: Sheath Infection
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較少見
-
 etiology:
   categories:
     - name: 正常菌叢過度增生
@@ -31,7 +30,6 @@ etiology:
         - 尿路感染
         - 腫瘤
         - 包皮過長
-
 clinicalSigns:
   early:
     - 包皮黃綠色分泌物（少量可能正常）
@@ -41,23 +39,21 @@ clinicalSigns:
     - 包皮開口紅腫
     - 陰莖外露困難
     - 疼痛、排尿困難
-
 diagnosis:
   primaryTests:
     - name: 包皮檢查
-      notes: "外露陰莖評估黏膜、分泌物、異物"
+      notes: 外露陰莖評估黏膜、分泌物、異物
     - name: 分泌物細胞學
-      notes: "評估炎症細胞、細菌"
+      notes: 評估炎症細胞、細菌
     - name: 細菌培養
-      notes: "嚴重或復發病例"
+      notes: 嚴重或復發病例
     - name: 排除潛在病因
-      notes: "尿液分析、超音波、組織切片（若疑腫瘤）"
+      notes: 尿液分析、超音波、組織切片（若疑腫瘤）
   differentialDiagnoses:
     - 尿道炎
     - 前列腺炎
     - 陰莖或包皮腫瘤
     - 包莖、陰莖嵌頓
-
 treatment:
   medical:
     - 輕度：無需治療或定期清洗
@@ -67,24 +63,44 @@ treatment:
     - 去除異物或潛在病因
     - 包皮狹窄：手術擴大開口
     - 絕育（降低復發）
-
 prognosis:
-  general: "生理性或輕度感染預後極佳。病理性原因需治療潛在病因。復發性病例考慮絕育。"
-
+  general: 生理性或輕度感染預後極佳。病理性原因需治療潛在病因。復發性病例考慮絕育。
 prevention:
   - 定期包皮清潔（避免過度）
   - 絕育降低發生率
   - 避免包皮外傷
-
-
 guidelineRefs:
   - sourceOrg: Open veterinary journal
-    title: "Infectious bovine rhinotracheitis: Unveiling the hidden threat to livestock productivity and global trade."
+    title: 'Infectious bovine rhinotracheitis: Unveiling the hidden threat to livestock productivity and global trade.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11560271/
     type: review
-    pmid: "39545192"
+    pmid: '39545192'
   - sourceOrg: Vaccines
-    title: A Multi-Epitope Recombinant Vaccine Candidate Against Bovine Alphaherpesvirus 1 and 5 Elicits Robust Immune Responses in Mice and Rabbits.
+    title: >-
+      A Multi-Epitope Recombinant Vaccine Candidate Against Bovine Alphaherpesvirus 1 and 5 Elicits Robust Immune
+      Responses in Mice and Rabbits.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12656785/
     type: research
-    pmid: "41295488"
+    pmid: '41295488'
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 龜頭包皮炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pollakiuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 包皮檢查
+          notes: 外露陰莖評估黏膜、分泌物、異物
+        - name: 分泌物細胞學
+          notes: 評估炎症細胞、細菌
+        - name: 細菌培養
+          notes: 嚴重或復發病例
+ddxSource: auto-generated

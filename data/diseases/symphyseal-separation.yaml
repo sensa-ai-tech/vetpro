@@ -3,12 +3,13 @@ nameEn: Symphyseal Separation
 nameZh: 聯合分離
 bodySystem: dental
 description: 聯合分離是指下頜骨聯合處(左右下頜骨中線連接)的分離,多因垂直撞擊力或咬咬張力過大造成。貓較犬常見,因貓的聯合為纖維連接而非骨性融合,治療需鋼絲結紮固定。
-
 aliases:
-  - { alias: 下頜聯合分離, language: zh }
-  - { alias: Mandibular Symphysis Separation, language: en }
-  - { alias: Symphyseal Fracture, language: en }
-
+  - alias: 下頜聯合分離
+    language: zh
+  - alias: Mandibular Symphysis Separation
+    language: en
+  - alias: Symphyseal Fracture
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
@@ -18,7 +19,6 @@ species:
     speciesScientific: Canis lupus familiaris
     prevalence: rare
     notes: 幼犬較成犬常見,成犬聯合已骨化
-
 etiology:
   categories:
     - name: 創傷性
@@ -27,7 +27,6 @@ etiology:
         - 車禍垂直撞擊
         - 咬咬過程中張力過大
         - 重物砸中下巴
-
 clinicalSigns:
   early:
     - 下頜中線不對稱
@@ -39,19 +38,17 @@ clinicalSigns:
     - 舌頭突出或下垂
     - 拒食
     - 下頜觸診可感覺異常活動度
-
 diagnosis:
   primaryTests:
     - name: 視診和觸診
-      notes: "下頜中線可見裂隙,兩側犬齒不對稱"
+      notes: 下頜中線可見裂隙,兩側犬齒不對稱
     - name: 口腔X光
-      notes: "聯合處骨縫增寬,可見分離間隙"
+      notes: 聯合處骨縫增寬,可見分離間隙
     - name: 評估合併損傷
-      notes: "檢查牙齒斷裂、下頜骨其他骨折"
+      notes: 檢查牙齒斷裂、下頜骨其他骨折
   differentialDiagnoses:
     - 下頜骨折
     - 顳頜關節脫位
-
 treatment:
   medical:
     - 鋼絲環紮固定:繞過兩側犬齒後方做8字形結紮
@@ -61,33 +58,54 @@ treatment:
     - 術後軟食或流質飲食
     - Meloxicam 0.1 mg/kg PO SID 3-5天
     - 必要時短期餵食管(貓易發生肝脂症)
-
 prognosis:
-  general: "預後優良,聯合分離經固定後癒合良好。貓的纖維連接會轉為纖維性癒合而非骨性融合,但功能完全恢復。關鍵是確保咬合對齊,避免永久性咬合不正。4-6週可完全癒合。"
-
+  general: 預後優良,聯合分離經固定後癒合良好。貓的纖維連接會轉為纖維性癒合而非骨性融合,但功能完全恢復。關鍵是確保咬合對齊,避免永久性咬合不正。4-6週可完全癒合。
 prevention:
   - 防止高處墜落
   - 避免垂直撞擊下巴
   - 安全環境設計
   - 貓窗戶加裝防護網
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Mandibular fracture repair techniques in cats: a dentist's perspective."
+    title: 'Mandibular fracture repair techniques in cats: a dentist''s perspective.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812066/
     type: review
-    pmid: "36744847"
+    pmid: '36744847'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
-    title: "Craniomaxillofacial Trauma in Dogs-Part II: Association Between Fracture Location, Morphology and Etiology."
+    title: 'Craniomaxillofacial Trauma in Dogs-Part II: Association Between Fracture Location, Morphology and Etiology.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7242568/
     type: research
-    pmid: "32478108"
+    pmid: '32478108'
     relevance: supporting
   - sourceOrg: Journal of feline medicine and surgery
     title: Location and distribution of craniomaxillofacial fractures in 45 cats presented for the treatment of head trauma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10814633/
     type: research
-    pmid: "29792378"
+    pmid: '29792378'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+diagnosticAlgorithm:
+  title: 聯合分離 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - ptyalism 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 視診和觸診
+          notes: 下頜中線可見裂隙,兩側犬齒不對稱
+        - name: 口腔X光
+          notes: 聯合處骨縫增寬,可見分離間隙
+        - name: 評估合併損傷
+          notes: 檢查牙齒斷裂、下頜骨其他骨折
+ddxSource: auto-generated

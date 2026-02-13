@@ -3,13 +3,15 @@ nameEn: Pyoderma
 nameZh: 膿皮症
 bodySystem: dermatology
 description: 皮膚的細菌感染，為犬最常見的皮膚病之一。常繼發於潛在疾病，需找出並治療根本原因。
-
 aliases:
-  - { alias: Bacterial Skin Infection, language: en }
-  - { alias: Superficial Pyoderma, language: en }
-  - { alias: Deep Pyoderma, language: en }
-  - { alias: 細菌性皮膚感染, language: zh }
-
+  - alias: Bacterial Skin Infection
+    language: en
+  - alias: Superficial Pyoderma
+    language: en
+  - alias: Deep Pyoderma
+    language: en
+  - alias: 細菌性皮膚感染
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓較少見，發生時需考慮免疫抑制 (FIV、FeLV)、糖尿病或腫瘤等潛在原因。
-
 etiology:
   categories:
     - name: 致病菌
@@ -40,7 +41,6 @@ etiology:
         - 皮膚屏障破損 (搔抓、潮濕環境)
         - 皮膚皺褶 (Shar-Pei、Bulldog)
         - 不當美容處理
-
 clinicalSigns:
   early:
     - 丘疹 (papules)
@@ -59,15 +59,14 @@ clinicalSigns:
     - 疼痛
     - 區域性淋巴結腫大
     - 全身性感染徵兆 (發燒、嗜睡)
-
 diagnosis:
   primaryTests:
     - name: 皮膚細胞學 (impression smear / tape cytology)
-      notes: "球菌 (cocci)、嗜中性球吞噬細菌。簡單快速的診斷工具"
+      notes: 球菌 (cocci)、嗜中性球吞噬細菌。簡單快速的診斷工具
     - name: 細菌培養與藥敏試驗
-      notes: "反覆發作、深層膿皮症、治療失敗時必須執行。注意 MRSP 盛行率上升"
+      notes: 反覆發作、深層膿皮症、治療失敗時必須執行。注意 MRSP 盛行率上升
     - name: 皮膚刮搔
-      notes: "排除毛囊蟲症 (Demodex)"
+      notes: 排除毛囊蟲症 (Demodex)
   imaging: []
   additional:
     - 黴菌培養 (排除皮癬菌)
@@ -75,7 +74,6 @@ diagnosis:
     - 腎上腺功能檢測 (若懷疑庫欣)
     - 食物排除試驗 (若懷疑食物過敏)
     - 皮膚活檢 (深層膿皮症、非典型表現、排除自體免疫)
-
 treatment:
   principles:
     - 找出並治療潛在病因 (最關鍵)
@@ -84,16 +82,16 @@ treatment:
     - 抗生素療程需足夠長 (症狀消退後至少再用 7-14 天)
   medications:
     - name: Cephalexin
-      dose: "22-30 mg/kg PO BID"
+      dose: 22-30 mg/kg PO BID
       notes: 表淺膿皮症一線經驗性用藥。療程至少 3-4 週
     - name: Amoxicillin-Clavulanate
-      dose: "12.5-25 mg/kg PO BID"
+      dose: 12.5-25 mg/kg PO BID
       notes: 一線替代選擇
     - name: Clindamycin
-      dose: "11 mg/kg PO SID-BID"
+      dose: 11 mg/kg PO SID-BID
       notes: 二線選擇，良好的皮膚穿透力
     - name: Fluoroquinolones (Enrofloxacin, Marbofloxacin)
-      dose: "依藥敏結果使用"
+      dose: 依藥敏結果使用
       notes: 僅在藥敏試驗支持且無其他選擇時使用。避免經驗性處方以減少抗藥性
   general:
     - 局部治療：含 chlorhexidine (2-4%) 或 benzoyl peroxide 洗劑，每週 2-3 次
@@ -101,46 +99,102 @@ treatment:
     - 皮膚皺褶清潔與乾燥
     - 控制潛在過敏性疾病
     - 避免不必要的抗生素使用 (抗藥性管理)
-
 prognosis: 表淺膿皮症在找到並控制潛在原因後預後良好。深層膿皮症療程較長且可能反覆。MRSP 感染治療更具挑戰性。未解決根本原因者復發率高。
-
 ontologyMappings:
   - source: MONDO
-    code: "MONDO:0006563"
+    code: MONDO:0006563
     label: pyoderma
     confidence: exact
-
 guidelineRefs:
   - sourceOrg: WAVD
     title: Antimicrobial Use Guidelines for Treatment of Superficial Bacterial Folliculitis in Dogs
     url: https://pubmed.ncbi.nlm.nih.gov/24720692/
     type: guideline
-    pmid: "24720692"
+    pmid: '24720692'
   - sourceOrg: Acta veterinaria Scandinavica
-    title: Cross-sectional survey on the use and impact of the Danish national antibiotic use guidelines for companion animal practice.
+    title: >-
+      Cross-sectional survey on the use and impact of the Danish national antibiotic use guidelines for companion animal
+      practice.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5725655/
     type: guideline
-    pmid: "29228960"
+    pmid: '29228960'
   - sourceOrg: Veterinary dermatology
-    title: Antimicrobial use guidelines for canine pyoderma by the International Society for Companion Animal Infectious Diseases (ISCAID).
+    title: >-
+      Antimicrobial use guidelines for canine pyoderma by the International Society for Companion Animal Infectious
+      Diseases (ISCAID).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12058580/
     type: review
-    pmid: "40338805"
+    pmid: '40338805'
   - sourceOrg: Veterinary dermatology
-    title: Synopsis of the antimicrobial use guidelines for canine pyoderma by the International Society for Companion Animal Infectious Diseases (ISCAID).
+    title: >-
+      Synopsis of the antimicrobial use guidelines for canine pyoderma by the International Society for Companion Animal
+      Infectious Diseases (ISCAID).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12420896/
     type: review
-    pmid: "40556037"
+    pmid: '40556037'
   - sourceOrg: Veterinary sciences
-    title: "Prevalence of Bacterial Pathogens Isolated from Canines with Pyoderma and Otitis Externa in Korea: A Systematic Review and Meta-Analysis."
+    title: >-
+      Prevalence of Bacterial Pathogens Isolated from Canines with Pyoderma and Otitis Externa in Korea: A Systematic
+      Review and Meta-Analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11680266/
     type: review
-    pmid: "39728996"
+    pmid: '39728996'
 pubmedQueries:
   - query: '"pyoderma" AND (dog OR canine) AND ("antimicrobial" OR "methicillin-resistant")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "INFECTION"
+  chapter: DIG
+  sectionTitle: INFECTION
   pdfPage: 525
+diagnosticAlgorithm:
+  title: 膿皮症 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估皮膚病灶深度、分佈及搔癢程度
+      findings:
+        - 丘疹膿疱
+        - 表皮環狀鱗屑（表淺型）
+        - 深部竇道及出血性分泌物（深層型）
+        - 搔癢程度不一
+    - step: 2
+      action: 皮膚細胞學
+      details: 膿疱或滲出物壓印抹片
+      findings:
+        - 嗜中性球吞噬細菌
+        - 球菌（葡萄球菌為主）
+        - 桿菌（深層或混合感染）
+        - 退化性嗜中性球
+    - step: 3
+      action: 細菌培養與藥敏
+      details: 深層或難治性病例進行培養
+      findings:
+        - Staphylococcus pseudintermedius
+        - 藥敏試驗指導抗生素選擇
+        - 耐甲氧西林葡萄球菌（MRSP）篩檢
+    - step: 4
+      action: 潛在病因調查
+      details: 尋找誘發膿皮症的基礎疾病
+      findings:
+        - 甲狀腺功能低下
+        - 庫欣氏症
+        - 過敏性皮膚病
+        - 皮膚刮片排除毛囊蟲
+clinicalPearls:
+  - 多數膿皮症有潛在原因（過敏最常見）
+  - 抗生素需用到病灶癒合後1-2週
+  - MRSP越來越常見
+  - 藥浴可減少抗生素需求
+monitoringItems:
+  - 病灶癒合
+  - 復發
+  - 潛在疾病控制
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: common
+ddxSource: book

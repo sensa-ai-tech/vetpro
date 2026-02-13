@@ -3,12 +3,13 @@ nameEn: Hip Luxation
 nameZh: 髖關節脫位
 bodySystem: orthopedic
 description: 股骨頭脫出髖臼的急性創傷性損傷。大部分為顱背側脫位（craniodorsal luxation）。需緊急復位以避免股骨頭缺血壞死。車禍為最常見原因。
-
 aliases:
-  - { alias: "Hip Dislocation", language: en }
-  - { alias: "Coxofemoral Luxation", language: en }
-  - { alias: "髖關節脫臼", language: zh }
-
+  - alias: Hip Dislocation
+    language: en
+  - alias: Coxofemoral Luxation
+    language: en
+  - alias: 髖關節脫臼
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓常見。車禍與高處墜落。
-
 etiology:
   categories:
     - name: 外傷性
@@ -24,7 +24,6 @@ etiology:
         - 車禍
         - 高處墜落
         - 急性外力
-
 clinicalSigns:
   early:
     - 突然後肢不負重
@@ -34,14 +33,12 @@ clinicalSigns:
     - 患肢外旋/內旋（取決於脫位方向）
     - 無法站立
     - 肌肉痙攣
-
 diagnosis:
   primaryTests:
     - name: 骨盆 X 光
       notes: 確認脫位方向與排除合併髖臼骨折
     - name: 觸診
       notes: 大轉子位移
-
 treatment:
   principles:
     - 及時閉合復位
@@ -51,26 +48,53 @@ treatment:
     - 復位失敗：手術（toggle pin、capsulorrhaphy）
     - 髖關節發育不良犬：FHO 或 THR
     - 止痛管理
-
 prognosis: 閉合復位成功率約 50-70%。手術固定預後良好。髖關節發育不良犬再脫位率高。
-
-
 guidelineRefs:
-  - sourceOrg: "Veterinary surgery : VS"
-    title: "Medium-term outcomes of hybrid total hip arthroplasty in cats: Cemented femoral stem and cementless acetabular cup in 17 hips (2020-2023)."
+  - sourceOrg: 'Veterinary surgery : VS'
+    title: >-
+      Medium-term outcomes of hybrid total hip arthroplasty in cats: Cemented femoral stem and cementless acetabular cup
+      in 17 hips (2020-2023).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12344218/
     type: research
-    pmid: "40474443"
+    pmid: '40474443'
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: Outcome and complications following modified prosthetic capsule technique for treatment of craniodorsal hip luxation in dogs.
+    title: >-
+      Outcome and complications following modified prosthetic capsule technique for treatment of craniodorsal hip
+      luxation in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10352040/
     type: research
-    pmid: "37529388"
+    pmid: '37529388'
   - sourceOrg: Journal of the American Veterinary Medical Association
     title: Dorsolateral approach to hip and pelvis ultrasound in dogs.
     url: https://pubmed.ncbi.nlm.nih.gov/40340838/
     type: research
-    pmid: "40340838"
+    pmid: '40340838'
 pubmedQueries:
   - query: '"hip luxation" AND (veterinary OR canine OR feline) AND ("reduction" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: seizures
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 髖關節脫位 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - seizures 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 骨盆 X 光
+          notes: 確認脫位方向與排除合併髖臼骨折
+        - name: 觸診
+          notes: 大轉子位移
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 及時閉合復位
+        - 復位失敗需手術
+ddxSource: auto-generated

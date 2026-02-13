@@ -3,12 +3,13 @@ nameEn: Hypertrophic Osteopathy
 nameZh: 肥大性骨病
 bodySystem: orthopedic
 description: 四肢長骨骨膜新生骨增生的副腫瘤症候群，幾乎總是繼發於胸腔內佔位性病變（原發性或轉移性肺腫瘤最常見）。機轉可能與異常神經反射或血管因子相關。
-
 aliases:
-  - { alias: "Hypertrophic Osteoarthropathy", language: en }
-  - { alias: "Marie Disease", language: en }
-  - { alias: "肥大性骨關節病", language: zh }
-
+  - alias: Hypertrophic Osteoarthropathy
+    language: en
+  - alias: Marie Disease
+    language: en
+  - alias: 肥大性骨關節病
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 副腫瘤性
@@ -24,7 +24,6 @@ etiology:
         - 原發性肺腫瘤
         - 肺轉移瘤
         - 其他胸腔佔位性病變（膿胸、肉芽腫）
-
 clinicalSigns:
   early:
     - 四肢遠端腫脹
@@ -35,14 +34,12 @@ clinicalSigns:
     - 嚴重疼痛
     - 行走困難
     - 發燒
-
 diagnosis:
   primaryTests:
     - name: 四肢 X 光
       notes: 長骨骨幹骨膜新生骨增生（palisading pattern）
     - name: 胸腔 X 光
       notes: 尋找胸腔佔位性病變。幾乎總有胸腔腫塊
-
 treatment:
   principles:
     - 治療根本胸腔病變
@@ -52,16 +49,64 @@ treatment:
     - 迷走神經切斷（vagotomy）可緩解症狀
     - NSAIDs 止痛
     - 姑息性治療
-
 prognosis: 切除胸腔腫塊後骨膜增生可消退，跛行改善。根本腫瘤的預後決定整體預後。不治療會進行性惡化。
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
     title: Hypertrophic osteopathy in 4 white-tailed deer, with a literature review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11803587/
     type: review
-    pmid: "39910747"
+    pmid: '39910747'
 pubmedQueries:
   - query: '"hypertrophic osteopathy" AND (veterinary OR canine) AND ("diagnosis" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 肥大性骨病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估四肢遠端腫脹和潛在胸腔病變
+      findings:
+        - 四肢遠端對稱性腫脹
+        - 觸診堅硬且疼痛
+        - 跛行和步態僵硬
+        - 可能伴有咳嗽或呼吸困難
+    - step: 2
+      action: 四肢X光
+      details: 進行四肢遠端X光確認骨膜增生
+      findings:
+        - 長骨骨幹骨膜新生骨
+        - 骨膜增生呈柵欄狀或層狀
+        - 掌骨/蹠骨最先受累
+        - 軟組織腫脹
+    - step: 3
+      action: 胸腹腔篩檢
+      details: 進行胸部X光和腹部超音波尋找原發病變
+      findings:
+        - 肺部腫塊（最常見原因）
+        - 胸腔積液
+        - 腹腔腫塊
+        - 食道病變
+    - step: 4
+      action: 原發病因確認
+      details: 確認原發病變的性質
+      findings:
+        - CT精確評估胸腔腫塊
+        - 細針抽吸或活檢確認腫瘤類型
+        - 原發性肺腫瘤最常見
+        - 治療原發病後骨膜變化可消退
+clinicalPearls:
+  - 四肢遠端對稱性骨膜增生的犬必須進行胸腔影像學檢查
+  - 原發腫瘤切除後 HO 可完全消退是重要的鑑別點
+  - 骨膜增生從遠端向近端進展是特徵性表現
+  - 罕見情況下腹腔腫瘤（膀胱、腎臟）也可引起 HO
+monitoringItems:
+  - 原發腫瘤治療後四肢 X 光每 4-6 週追蹤骨膜消退
+  - 胸腔 X 光每 2-3 個月追蹤腫瘤復發
+  - 疼痛評分每日監測
+  - 運動能力和生活品質評估
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+ddxSource: book

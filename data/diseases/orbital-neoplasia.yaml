@@ -3,13 +3,15 @@ nameEn: Orbital Neoplasia
 nameZh: 眶內腫瘤
 bodySystem: oncology
 description: 眼眶內發生的原發性或轉移性腫瘤，導致眼球突出 (exophthalmos)、眼球運動受限與視力障礙。犬以骨肉瘤、纖維肉瘤與腦膜瘤最常見，貓以鱗狀上皮細胞癌與淋巴瘤最常見。
-
 aliases:
-  - { alias: Orbital Tumor, language: en }
-  - { alias: Retrobulbar Tumor, language: en }
-  - { alias: 眼眶腫瘤, language: zh }
-  - { alias: 球後腫瘤, language: zh }
-
+  - alias: Orbital Tumor
+    language: en
+  - alias: Retrobulbar Tumor
+    language: en
+  - alias: 眼眶腫瘤
+    language: zh
+  - alias: 球後腫瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓以鱗狀上皮細胞癌 (鼻腔延伸) 和淋巴瘤最常見。
-
 etiology:
   categories:
     - name: 原發性
@@ -31,7 +32,6 @@ etiology:
         - 鼻腔腫瘤延伸 (鱗狀上皮細胞癌)
         - 遠端轉移 (乳腺瘤、黑色素瘤)
         - 淋巴瘤浸潤
-
 clinicalSigns:
   early:
     - 單側眼球突出 (exophthalmos)
@@ -42,7 +42,6 @@ clinicalSigns:
     - 視力喪失
     - 結膜充血水腫
     - 暴露性角膜炎
-
 diagnosis:
   primaryTests:
     - name: CT / MRI
@@ -51,7 +50,6 @@ diagnosis:
       notes: CT 引導下穿刺取樣做細胞學
     - name: 眼部超音波
       notes: 初步評估球後腫塊
-
 treatment:
   principles:
     - 多數需手術 (眶內容物摘除)
@@ -62,16 +60,51 @@ treatment:
     - 術後放射治療 (不完全切除)
     - 淋巴瘤：全身性化療
     - 姑息性治療 (無法手術者)
-
 prognosis: 整體預後謹慎至不良。手術切除邊緣乾淨者預後較佳。骨肉瘤中位存活 6-12 個月。淋巴瘤對化療反應較佳。鼻腔延伸型腫瘤預後不良。
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Tumours involving the retrobulbar space in cats: 37 cases."
+    title: 'Tumours involving the retrobulbar space in cats: 37 cases.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11104240/
     type: review
-    pmid: "35536054"
+    pmid: '35536054'
 pubmedQueries:
   - query: '"orbital neoplasia" OR "orbital tumor" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 眼眶腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估漸進性單側眼球突出、眼球運動受限和視力變化，注意病程緩慢（區別於膿腫的急性發作）
+      findings:
+        - 漸進性單側眼球突出
+        - 眼球運動受限或偏位
+        - 眼底檢查可見脈絡膜皺褶
+    - step: 2
+      action: 進階影像學檢查
+      details: 進行眼眶CT或MRI評估腫瘤位置、大小和侵犯範圍
+      findings:
+        - CT/MRI顯示眼眶內佔位性病變
+        - 評估骨骼侵蝕程度
+        - 評估腫瘤與周圍結構的關係
+    - step: 3
+      action: 活檢確診
+      details: 進行CT引導或超音波引導細針抽吸或切開活檢，送病理學及細胞學檢查
+      findings:
+        - 細胞學或組織病理學確認腫瘤類型
+        - 常見類型包括腺癌、淋巴瘤、骨肉瘤
+        - 評估轉移風險（胸腔X光、淋巴結檢查）
+clinicalPearls:
+  - 漸進性眼球突出（數週至數月）高度提示腫瘤，急性突出提示膿腫或出血
+  - CT是評估眼眶腫瘤範圍的最佳工具
+  - 貓眼眶淋巴瘤常與FeLV相關
+  - 鼻腔腫瘤直接侵犯眼眶是繼發性眼眶腫瘤的常見原因
+monitoringItems:
+  - 影像學追蹤腫瘤大小
+  - 對側眼睛狀態
+  - 全身轉移評估
+  - 化療副作用（血球計數）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+ddxSource: book

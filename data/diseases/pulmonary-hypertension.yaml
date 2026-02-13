@@ -3,14 +3,17 @@ nameEn: Pulmonary Hypertension
 nameZh: 肺動脈高壓
 bodySystem: vascular
 description: 肺動脈高壓（PH）是肺動脈壓力異常升高的狀態（收縮壓 > 30 mmHg 或平均壓 > 25 mmHg），可由多種原因引起，包括左心疾病、呼吸道疾病、血栓栓塞及心絲蟲感染等。持續性肺動脈高壓導致右心室壓力過負荷、右心衰竭與死亡。
-
 aliases:
-  - { alias: PH, language: en }
-  - { alias: PAH, language: en }
-  - { alias: 肺高壓, language: zh }
-  - { alias: 肺動脈高血壓, language: zh }
-  - { alias: Pulmonary Arterial Hypertension, language: en }
-
+  - alias: PH
+    language: en
+  - alias: PAH
+    language: en
+  - alias: 肺高壓
+    language: zh
+  - alias: 肺動脈高血壓
+    language: zh
+  - alias: Pulmonary Arterial Hypertension
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,16 +23,15 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓隻肺動脈高壓相對少見。可繼發於心絲蟲感染、心肌病變或慢性呼吸道疾病。
-
 etiology:
   categories:
     - name: WHO 功能分類
       examples:
-        - "Group 1：肺動脈高壓（PAH，原發性或特發性）"
-        - "Group 2：左心疾病相關（MMVD、DCM）"
-        - "Group 3：呼吸道疾病/低氧血症（慢性支氣管炎、肺纖維化）"
-        - "Group 4：血栓栓塞性（肺血栓、心絲蟲）"
-        - "Group 5：多因子或機制不明"
+        - Group 1：肺動脈高壓（PAH，原發性或特發性）
+        - Group 2：左心疾病相關（MMVD、DCM）
+        - Group 3：呼吸道疾病/低氧血症（慢性支氣管炎、肺纖維化）
+        - Group 4：血栓栓塞性（肺血栓、心絲蟲）
+        - Group 5：多因子或機制不明
     - name: 犬貓常見原因
       examples:
         - 心絲蟲感染
@@ -43,7 +45,6 @@ etiology:
         - 肺血管阻力增加
         - 右心室壓力過負荷與肥厚
         - 進行性右心衰竭
-
 clinicalSigns:
   early:
     - 運動不耐
@@ -61,25 +62,23 @@ clinicalSigns:
     - 發紺
     - 心律不整
     - 猝死
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波（Echocardiography）
-      notes: "三尖瓣反流峰值流速評估肺動脈收縮壓（PASP = 4V² + RAP）。右心室擴大與肥厚。心室中隔平坦化或向左偏移。右心房擴大。"
+      notes: 三尖瓣反流峰值流速評估肺動脈收縮壓（PASP = 4V² + RAP）。右心室擴大與肥厚。心室中隔平坦化或向左偏移。右心房擴大。
     - name: 胸腔 X 光
-      notes: "肺動脈主幹擴張。右心室擴大（反 D 字形心臟）。肺血管紋理可能增粗或減少（取決於病因）。"
+      notes: 肺動脈主幹擴張。右心室擴大（反 D 字形心臟）。肺血管紋理可能增粗或減少（取決於病因）。
   imaging:
     - name: 心電圖
-      notes: "右心室肥厚圖形。右軸偏移。P 肺型（P 波增高）。可能出現心律不整。"
+      notes: 右心室肥厚圖形。右軸偏移。P 肺型（P 波增高）。可能出現心律不整。
     - name: CT 血管造影
-      notes: "評估肺血栓栓塞。肺血管結構評估。非常規檢查。"
+      notes: 評估肺血栓栓塞。肺血管結構評估。非常規檢查。
   additional:
     - 心絲蟲抗原檢測
     - 動脈血氣分析（低 PaO2）
     - NT-proBNP（右心壓力負荷指標）
     - D-dimer（血栓栓塞評估）
     - 6 分鐘步行測試（功能評估）
-
 treatment:
   principles:
     - 治療基礎疾病為首要目標
@@ -87,45 +86,47 @@ treatment:
     - 右心衰竭需利尿與支持性治療
     - 避免劇烈運動與高海拔環境
   general:
-    - "Sildenafil 1-2 mg/kg PO q8-12h（PDE5 抑制劑，肺動脈血管擴張，一線藥物）"
-    - "Pimobendan 0.25 mg/kg PO q12h（正性肌力與血管擴張，用於右心功能不全）"
-    - "Furosemide 1-2 mg/kg PO q12h（右心衰竭伴腹水或水腫時）"
-    - "氧氣治療（低氧血症時）"
-    - "心絲蟲治療（若為心絲蟲性 PH）"
-    - "Tadalafil 1 mg/kg PO q24h（長效 PDE5 抑制劑，替代 sildenafil）"
-    - "限制運動強度，避免過度興奮"
-    - "抗血栓治療：Clopidogrel 1-2 mg/kg PO q24h（血栓栓塞風險時）"
-
-prognosis: 預後取決於基礎病因與嚴重程度。繼發於可治療疾病（如心絲蟲）者，治療基礎病因後 PH 可能改善。特發性 PAH 預後不良，中位存活時間約 2-12 個月。輕度至中度 PH 經 sildenafil 治療後臨床症狀可顯著改善。重度 PH 伴右心衰竭預後不良。暈厥為不良預後指標。
-
+    - Sildenafil 1-2 mg/kg PO q8-12h（PDE5 抑制劑，肺動脈血管擴張，一線藥物）
+    - Pimobendan 0.25 mg/kg PO q12h（正性肌力與血管擴張，用於右心功能不全）
+    - Furosemide 1-2 mg/kg PO q12h（右心衰竭伴腹水或水腫時）
+    - 氧氣治療（低氧血症時）
+    - 心絲蟲治療（若為心絲蟲性 PH）
+    - Tadalafil 1 mg/kg PO q24h（長效 PDE5 抑制劑，替代 sildenafil）
+    - 限制運動強度，避免過度興奮
+    - 抗血栓治療：Clopidogrel 1-2 mg/kg PO q24h（血栓栓塞風險時）
+prognosis: >-
+  預後取決於基礎病因與嚴重程度。繼發於可治療疾病（如心絲蟲）者，治療基礎病因後 PH 可能改善。特發性 PAH 預後不良，中位存活時間約 2-12 個月。輕度至中度 PH 經 sildenafil 治療後臨床症狀可顯著改善。重度 PH
+  伴右心衰竭預後不良。暈厥為不良預後指標。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Internal Medicine
-    title: "ACVIM consensus statement: guidelines for diagnosis and treatment of pulmonary hypertension in dogs"
+    title: 'ACVIM consensus statement: guidelines for diagnosis and treatment of pulmonary hypertension in dogs'
     url: https://pubmed.ncbi.nlm.nih.gov/33210311/
     type: consensus
-    pmid: "33210311"
+    pmid: '33210311'
   - sourceOrg: Journal of Veterinary Cardiology
     title: Sildenafil for treatment of pulmonary hypertension in dogs
     url: https://pubmed.ncbi.nlm.nih.gov/17627873/
     type: consensus
-    pmid: "17627873"
+    pmid: '17627873'
   - sourceOrg: Journal of veterinary internal medicine
-    title: ACVIM consensus statement guidelines for the diagnosis, classification, treatment, and monitoring of pulmonary hypertension in dogs.
+    title: >-
+      ACVIM consensus statement guidelines for the diagnosis, classification, treatment, and monitoring of pulmonary
+      hypertension in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7097566/
     type: consensus
-    pmid: "32065428"
+    pmid: '32065428'
     relevance: primary
   - sourceOrg: Journal of veterinary internal medicine
     title: ACVIM consensus guidelines for the diagnosis and treatment of myxomatous mitral valve disease in dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6524084/
     type: guideline
-    pmid: "30974015"
+    pmid: '30974015'
     relevance: primary
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Feline pulmonary hypertension: are we overlooking an important comorbidity?"
+    title: 'Feline pulmonary hypertension: are we overlooking an important comorbidity?'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812373/
     type: review
-    pmid: "36350715"
+    pmid: '36350715'
     relevance: primary
 pubmedQueries:
   - query: '"pulmonary hypertension" AND (dog OR canine) AND ("sildenafil" OR "treatment")'
@@ -134,6 +135,75 @@ pubmedQueries:
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "EXL"
-  sectionTitle: "Pulmonary Hypertension: The"
+  chapter: EXL
+  sectionTitle: 'Pulmonary Hypertension: The'
   pdfPage: 1955
+diagnosticAlgorithm:
+  title: 肺動脈高血壓 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估呼吸困難、運動不耐及昏厥
+      findings:
+        - 運動不耐
+        - 呼吸困難
+        - 昏厥
+        - 發紺
+    - step: 2
+      action: 胸腔X光
+      details: 評估心肺結構
+      findings:
+        - 右心擴大
+        - 主肺動脈段突出
+        - 肺動脈分支擴張
+        - 肺實質評估
+    - step: 3
+      action: 心臟超音波
+      details: 評估肺動脈壓力與右心功能
+      findings:
+        - 三尖瓣返流速度增加（>2.8 m/s）
+        - 估算肺動脈壓力
+        - 右心室擴大與功能下降
+        - 心室中隔扁平化
+    - step: 4
+      action: 病因調查
+      details: 尋找導致肺高壓的原因
+      findings:
+        - 心絲蟲抗原檢測
+        - 左心疾病評估
+        - 慢性呼吸道疾病
+        - 血栓栓塞篩檢
+clinicalPearls:
+  - 三尖瓣逆流速度>3 m/s提示肺動脈高血壓
+  - 心臟超聲估計的肺動脈壓可能低估實際壓力
+  - Sildenafil是目前獸醫最常用的肺血管擴張劑
+  - 心絲蟲是犬PH的重要且可預防的原因
+  - 昏厥在PH犬中常見且預後較差
+  - 需要尋找和治療潛在病因
+monitoringItems:
+  - 臨床症狀
+  - 心臟超聲（三尖瓣逆流速度、右心大小）
+  - 運動耐受度
+  - 血氧
+associatedSymptoms:
+  - symptomId: syncope
+    frequency: uncommon
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: hepatomegaly
+    frequency: common
+ddxSource: book

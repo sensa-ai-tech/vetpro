@@ -3,12 +3,13 @@ nameEn: Pseudomonas Infection
 nameZh: 綠膿桿菌感染
 bodySystem: infectious
 description: 綠膿桿菌 (Pseudomonas aeruginosa) 為重要的機會性革蘭氏陰性菌，常見於犬貓外耳炎、泌尿道感染及傷口感染。具天然多重抗藥性，生物膜 (biofilm) 形成能力強，使治療極具挑戰性。常為慢性或難治性感染的致病原。
-
 aliases:
-  - { alias: 綠膿桿菌病, language: zh }
-  - { alias: 假單胞菌感染, language: zh }
-  - { alias: Pseudomonas Aeruginosa Infection, language: en }
-
+  - alias: 綠膿桿菌病
+    language: zh
+  - alias: 假單胞菌感染
+    language: zh
+  - alias: Pseudomonas Aeruginosa Infection
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓 Pseudomonas 感染較犬少見。泌尿道感染與手術部位感染偶見。抗藥性同樣為治療挑戰。
-
 etiology:
   categories:
     - name: 病原特性
@@ -31,7 +31,6 @@ etiology:
         - 泌尿道感染
         - 手術部位/傷口感染
         - 肺炎（少見）
-
 clinicalSigns:
   early:
     - 外耳炎：耳道分泌物增多（黃綠色膿性）
@@ -42,7 +41,6 @@ clinicalSigns:
     - 中耳炎（外耳炎蔓延）
     - 敗血症（免疫抑制者）
     - 多重抗藥性感染
-
 diagnosis:
   primaryTests:
     - name: 細菌培養與藥敏試驗
@@ -53,7 +51,6 @@ diagnosis:
     - 影像學（外耳炎需 CT 評估中耳/鼓泡）
     - 尿液培養（泌尿道感染）
     - 血液培養（敗血症時）
-
 treatment:
   principles:
     - 必須依據藥敏結果選擇抗生素
@@ -61,42 +58,78 @@ treatment:
     - 生物膜破壞策略
     - 控制潛在因素
   general:
-    - "外耳炎：耳道清潔（Tris-EDTA 溶液破壞生物膜）+ 局部抗生素"
+    - 外耳炎：耳道清潔（Tris-EDTA 溶液破壞生物膜）+ 局部抗生素
     - 局部 polymyxin B、gentamicin 或 fluoroquinolone 滴耳劑
-    - "系統性感染：enrofloxacin 10-20 mg/kg PO SID 或 marbofloxacin"
+    - 系統性感染：enrofloxacin 10-20 mg/kg PO SID 或 marbofloxacin
     - 替代：gentamicin、amikacin（需監測腎毒性）
     - 嚴重感染考慮聯合用藥
     - 外耳炎同時處理潛在原因（過敏、內分泌疾病）
     - 治療期間定期培養追蹤
-
 prognosis: Pseudomonas 感染治療困難但並非不可治癒。外耳炎需長期管理，復發常見。根據藥敏結果治療可顯著改善成功率。多重抗藥性株預後較差。慢性外耳炎嚴重者最終可能需全耳道切除 (TECA)。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in microbiology
-    title: Assessment of Antibacterial and Anti-biofilm Effects of Vitamin C Against Pseudomonas aeruginosa Clinical Isolates.
+    title: >-
+      Assessment of Antibacterial and Anti-biofilm Effects of Vitamin C Against Pseudomonas aeruginosa Clinical
+      Isolates.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9163820/
     type: research
-    pmid: "35668756"
+    pmid: '35668756'
     relevance: supporting
   - sourceOrg: Journal of fungi (Basel, Switzerland)
-    title: "Bringing SEM and MSI Closer Than Ever Before: Visualizing Aspergillus and Pseudomonas Infection in the Rat Lungs."
+    title: 'Bringing SEM and MSI Closer Than Ever Before: Visualizing Aspergillus and Pseudomonas Infection in the Rat Lungs.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7711807/
     type: research
-    pmid: "33143040"
+    pmid: '33143040'
     relevance: supporting
-  - sourceOrg: "FASEB journal : official publication of the Federation of American Societies for Experimental Biology"
+  - sourceOrg: 'FASEB journal : official publication of the Federation of American Societies for Experimental Biology'
     title: Pseudomonas aeruginosa infection liberates transmissible, cytotoxic prion amyloids.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5471513/
     type: research
-    pmid: "28314768"
+    pmid: '28314768'
     relevance: supporting
-  - sourceOrg: "Burns : journal of the International Society for Burn Injuries"
+  - sourceOrg: 'Burns : journal of the International Society for Burn Injuries'
     title: Control of invasive Pseudomonas burn wound infection with mafenide acetate electrospun wound dressing.
     url: https://pubmed.ncbi.nlm.nih.gov/40939300/
     type: research
-    pmid: "40939300"
+    pmid: '40939300'
     relevance: supporting
 pubmedQueries:
   - query: '"Pseudomonas" AND (veterinary OR canine OR feline) AND ("otitis" OR "treatment" OR "antimicrobial resistance")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: pollakiuria
+    frequency: common
+  - symptomId: haematuria
+    frequency: common
+diagnosticAlgorithm:
+  title: 綠膿桿菌感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pollakiuria 相關症狀
+        - haematuria 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 細菌培養與藥敏試驗
+          notes: 必要檢查。Pseudomonas 在培養基上有特徵性綠色色素與果香氣味。藥敏試驗為選擇有效抗生素的關鍵
+        - name: 細胞學
+          notes: 分泌物抹片可見桿菌與嗜中性球。初步指導治療方向
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 影像學（外耳炎需 CT 評估中耳/鼓泡）
+        - 尿液培養（泌尿道感染）
+        - 血液培養（敗血症時）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 必須依據藥敏結果選擇抗生素
+        - 局部治療為外耳炎首選
+        - 生物膜破壞策略
+ddxSource: auto-generated

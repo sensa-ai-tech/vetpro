@@ -2,13 +2,16 @@ slug: ovarian-cyst
 nameEn: Ovarian Cyst
 nameZh: 卵巢囊腫
 bodySystem: reproductive
-description: 卵巢囊腫為犬貓卵巢內液體填充的囊性結構，包括濾泡囊腫（follicular cyst）、黃體囊腫（luteal cyst）與旁卵巢囊腫（paraovarian cyst）。濾泡囊腫因持續分泌雌激素引起持續發情或骨髓抑制。OHE 為根治方法。
-
+description: >-
+  卵巢囊腫為犬貓卵巢內液體填充的囊性結構，包括濾泡囊腫（follicular cyst）、黃體囊腫（luteal cyst）與旁卵巢囊腫（paraovarian cyst）。濾泡囊腫因持續分泌雌激素引起持續發情或骨髓抑制。OHE
+  為根治方法。
 aliases:
-  - { alias: 卵巢濾泡囊腫, language: zh }
-  - { alias: Follicular Cyst, language: en }
-  - { alias: Luteal Cyst, language: en }
-
+  - alias: 卵巢濾泡囊腫
+    language: zh
+  - alias: Follicular Cyst
+    language: en
+  - alias: Luteal Cyst
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓卵巢囊腫可引起持續發情行為。絕育貓如出現發情需排除卵巢殘留合併囊腫。
-
 etiology:
   categories:
     - name: 囊腫類型
@@ -30,7 +32,6 @@ etiology:
         - 持續性雌激素分泌→骨髓毒性（再生不良性貧血）
         - 子宮內膜增生 (CEH)
         - 乳腺增生
-
 clinicalSigns:
   early:
     - 持續發情或發情延長
@@ -42,7 +43,6 @@ clinicalSigns:
     - 乳腺增生
     - CEH/pyometra
     - 吸引公犬
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
@@ -53,7 +53,6 @@ diagnosis:
     - 陰道細胞學（雌激素效應）
     - CBC（骨髓抑制評估）
     - 腹部 X-ray
-
 treatment:
   principles:
     - OHE 為根治方法
@@ -66,36 +65,76 @@ treatment:
     - 骨髓抑制：停止雌激素來源 + 支持療法 + 輸血
     - Filgrastim（嚴重嗜中性球減少時）
     - 術後追蹤 CBC（骨髓恢復可能需數週）
-
 prognosis: OHE 後預後極佳。骨髓抑制嚴重者（全血球減少）預後較差，骨髓恢復可能需數週至數月。繁殖用犬藥物治療後囊腫可能復發。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Prevalence, Diagnosis, and Treatment of Ovarian Cysts in Bitches and Queens: A Meta-Analysis."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Prevalence, Diagnosis, and Treatment of Ovarian Cysts in Bitches and Queens: A Meta-Analysis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12524226/
     type: review
-    pmid: "41096394"
-  - sourceOrg: "CRSLS : MIS case reports from SLS"
-    title: "Mesonephric Cyst Endometrioma: Surgical Management of an Atypical Site Endometriosis."
+    pmid: '41096394'
+  - sourceOrg: 'CRSLS : MIS case reports from SLS'
+    title: 'Mesonephric Cyst Endometrioma: Surgical Management of an Atypical Site Endometriosis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10558092/
     type: review
-    pmid: "37808583"
+    pmid: '37808583'
   - sourceOrg: International journal of reproductive biomedicine
-    title: "Therapeutic potential of fennel essential oil and manganese in modulating steroidal hormonal imbalance and ovarian alterations in rats with polycystic ovarian syndrome: An experimental study."
+    title: >-
+      Therapeutic potential of fennel essential oil and manganese in modulating steroidal hormonal imbalance and ovarian
+      alterations in rats with polycystic ovarian syndrome: An experimental study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11966216/
     type: research
-    pmid: "40190454"
+    pmid: '40190454'
   - sourceOrg: Reproductive sciences (Thousand Oaks, Calif.)
-    title: "Lepidium Sativum&#xa0;Extract Alleviates Reproductive and Developmental Toxicity in&#xa0;Polycystic Ovary&#xa0;Syndrome&#xa0;Induced by Letrozole and High-Fat Diet in&#xa0;Rats."
+    title: >-
+      Lepidium Sativum&#xa0;Extract Alleviates Reproductive and Developmental Toxicity in&#xa0;Polycystic
+      Ovary&#xa0;Syndrome&#xa0;Induced by Letrozole and High-Fat Diet in&#xa0;Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11978546/
     type: research
-    pmid: "40048056"
+    pmid: '40048056'
   - sourceOrg: Journal of the Endocrine Society
-    title: High-Fat, High-Sugar Diet Disrupts the Preovulatory Hormone Surge and Induces Cystic Ovaries in Cycling Female Rats.
+    title: >-
+      High-Fat, High-Sugar Diet Disrupts the Preovulatory Hormone Surge and Induces Cystic Ovaries in Cycling Female
+      Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5740526/
     type: research
-    pmid: "29308444"
+    pmid: '29308444'
 pubmedQueries:
   - query: '"ovarian cyst" AND (veterinary OR canine OR feline) AND ("treatment" OR "diagnosis" OR "follicular")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: alopecia
+    frequency: uncommon
+  - symptomId: vaginal-discharge
+    frequency: common
+diagnosticAlgorithm:
+  title: 卵巢囊腫 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - alopecia 相關症狀
+        - vaginal-discharge 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 卵巢內無回音囊性結構。可評估大小與數量
+        - name: 血清雌二醇/黃體酮
+          notes: 濾泡囊腫：雌二醇升高。黃體囊腫：黃體酮升高
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 陰道細胞學（雌激素效應）
+        - CBC（骨髓抑制評估）
+        - 腹部 X-ray
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - OHE 為根治方法
+        - 繁殖用犬可考慮藥物治療
+        - 骨髓抑制需緊急處理
+ddxSource: auto-generated

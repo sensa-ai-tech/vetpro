@@ -3,13 +3,15 @@ nameEn: Pectus Excavatum
 nameZh: 漏斗胸
 bodySystem: respiratory
 description: 漏斗胸是一種先天性胸壁畸形，胸骨向脊柱方向凹陷，導致胸腔容積減少。此畸形可壓迫心肺結構，影響心肺功能。常見於短頭種犬與某些貓品種，輕微病例可能無臨床症狀。
-
 aliases:
-  - { alias: 凹胸, language: zh }
-  - { alias: 雞胸凹陷, language: zh }
-  - { alias: Funnel Chest, language: en }
-  - { alias: Cobbler's Chest, language: en }
-
+  - alias: 凹胸
+    language: zh
+  - alias: 雞胸凹陷
+    language: zh
+  - alias: Funnel Chest
+    language: en
+  - alias: Cobbler's Chest
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 緬甸貓可能有較高遺傳傾向。常於幼貓期發現，嚴重者需手術介入。
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -37,7 +38,6 @@ etiology:
         - 心臟被壓向左側或右側偏移
         - 肺葉膨脹受限
         - 嚴重者可導致限制性通氣障礙
-
 clinicalSigns:
   early:
     - 胸壁觸診可感覺胸骨凹陷
@@ -53,23 +53,21 @@ clinicalSigns:
     - 右心衰竭症狀（腹水、頸靜脈怒張）
     - 心律不整
     - 慢性缺氧
-
 diagnosis:
   primaryTests:
     - name: 胸壁觸診與視診
-      notes: "可直接觸摸到胸骨凹陷。評估凹陷程度與範圍。"
+      notes: 可直接觸摸到胸骨凹陷。評估凹陷程度與範圍。
     - name: 胸腔 X 光
-      notes: "側位片可見胸骨向背側凹陷，胸腔前後徑減少。腹背位片可見心臟偏移。可計算前胸指數（frontosagittal index）評估嚴重度。"
+      notes: 側位片可見胸骨向背側凹陷，胸腔前後徑減少。腹背位片可見心臟偏移。可計算前胸指數（frontosagittal index）評估嚴重度。
   imaging:
     - name: CT 掃描
-      notes: "精確評估胸骨凹陷程度、心臟位移程度及肺壓迫範圍。計算 Haller index（胸腔橫徑/前後徑）。"
+      notes: 精確評估胸骨凹陷程度、心臟位移程度及肺壓迫範圍。計算 Haller index（胸腔橫徑/前後徑）。
     - name: 心臟超音波
-      notes: "評估心臟功能及是否有繼發性功能異常。胸骨凹陷可能導致超音波視窗改變。"
+      notes: 評估心臟功能及是否有繼發性功能異常。胸骨凹陷可能導致超音波視窗改變。
   additional:
     - 動脈血氣分析（評估氧合狀態）
     - 心電圖（評估心律不整）
     - 呼吸功能評估
-
 treatment:
   principles:
     - 輕度無症狀病例可能不需治療
@@ -77,44 +75,92 @@ treatment:
     - 嚴重者需手術矯正
     - 合併呼吸或心臟功能障礙者應積極治療
   general:
-    - "外部夾板（External splinting）：適用於幼年動物（< 12 週齡），胸骨尚有可塑性時效果最佳"
-    - "手術矯正：胸骨翻轉術（sternal turnover）或胸骨提升術（sternal elevation with sutures）"
-    - "術後疼痛管理：Buprenorphine 0.01-0.02 mg/kg IV/IM q6-8h"
-    - "術後呼吸支持：必要時提供氧氣治療"
-    - "輕度病例：監測觀察，部分幼年動物可隨生長自行改善"
-    - "避免繁殖受影響動物"
-
+    - 外部夾板（External splinting）：適用於幼年動物（< 12 週齡），胸骨尚有可塑性時效果最佳
+    - 手術矯正：胸骨翻轉術（sternal turnover）或胸骨提升術（sternal elevation with sutures）
+    - 術後疼痛管理：Buprenorphine 0.01-0.02 mg/kg IV/IM q6-8h
+    - 術後呼吸支持：必要時提供氧氣治療
+    - 輕度病例：監測觀察，部分幼年動物可隨生長自行改善
+    - 避免繁殖受影響動物
 prognosis: 輕度無症狀病例預後良好，可維持正常生活品質。中度至重度病例經手術矯正後預後改善，但手術風險存在。幼年動物使用外部夾板矯正的成功率約 50-70%。早期介入預後優於延遲治療。未治療的嚴重病例預後不良，可能發展為心肺衰竭。
-
 guidelineRefs:
   - sourceOrg: Veterinary Surgery
-    title: "Pectus excavatum in dogs and cats: review of surgical techniques"
+    title: 'Pectus excavatum in dogs and cats: review of surgical techniques'
     url: https://pubmed.ncbi.nlm.nih.gov/18564276/
     type: consensus
-    pmid: "18564276"
+    pmid: '18564276'
   - sourceOrg: Journal of the American Veterinary Medical Association
     title: External splinting for pectus excavatum in kittens
     url: https://pubmed.ncbi.nlm.nih.gov/16579740/
     type: consensus
-    pmid: "16579740"
+    pmid: '16579740'
   - sourceOrg: Frontiers in medicine
-    title: "Imatinib, a New Adjuvant Medical Treatment for Multifocal Villonodular Synovitis Associated to Noonan Syndrome: A Case Report and Literature Review."
+    title: >-
+      Imatinib, a New Adjuvant Medical Treatment for Multifocal Villonodular Synovitis Associated to Noonan Syndrome: A
+      Case Report and Literature Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8802824/
     type: case-report
-    pmid: "35111788"
+    pmid: '35111788'
     relevance: supporting
   - sourceOrg: Experimental and therapeutic medicine
     title: Costal cartilage overgrowth does not induce pectus-like deformation in the chest wall of a rat model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8756389/
     type: research
-    pmid: "35069827"
+    pmid: '35069827'
     relevance: supporting
   - sourceOrg: International journal of molecular sciences
-    title: Novel Biodegradable 3D-Printed Analgesics-Eluting-Nanofibers Incorporated Nuss Bars for Therapy of Pectus Excavatum.
+    title: >-
+      Novel Biodegradable 3D-Printed Analgesics-Eluting-Nanofibers Incorporated Nuss Bars for Therapy of Pectus
+      Excavatum.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8878723/
     type: research
-    pmid: "35216381"
+    pmid: '35216381'
     relevance: supporting
 pubmedQueries:
   - query: '"pectus excavatum" AND (dog OR cat) AND ("surgery" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 漏斗胸 診斷流程
+  steps:
+    - step: 1
+      action: 視診+觸診
+      details: 評估胸骨凹陷程度和呼吸狀態
+      findings:
+        - 胸骨明顯凹陷
+        - 呼吸費力
+        - 發育遲緩
+    - step: 2
+      action: 胸部X光
+      details: 側位和腹背位X光評估
+      findings:
+        - 胸骨指數異常
+        - 心臟位移
+        - 肺壓迫
+    - step: 3
+      action: CT掃描
+      details: 精確測量凹陷程度和評估併發症
+      findings:
+        - Haller指數計算
+        - 心肺受壓程度
+    - step: 4
+      action: 心臟超音波
+      details: 排除先天性心臟病
+      findings:
+        - 心功能評估
+        - 排除結構性異常
+clinicalPearls:
+  - 手術矯正應在2-4月齡進行，越早越好
+  - 部分輕度病例可隨成長自行改善
+  - 嚴重漏斗胸需排除併發先天性心臟病
+monitoringItems:
+  - 術後夾板固定位置
+  - 呼吸功能改善追蹤
+  - 成長發育監測
+  - 術後6週移除夾板
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+ddxSource: book

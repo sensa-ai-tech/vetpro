@@ -3,15 +3,19 @@ nameEn: Hepatic Encephalopathy
 nameZh: 肝性腦病
 bodySystem: metabolic
 description: 嚴重肝臟疾病或門體分流導致腸源性神經毒素（尤其氨）無法被肝臟代謝而蓄積於體循環，引起的神經精神功能障礙。臨床表現從輕微行為改變到癲癇發作與昏迷不等。為肝臟疾病最嚴重的併發症之一。
-
 aliases:
-  - { alias: 肝腦病變, language: zh }
-  - { alias: 肝性腦病變, language: zh }
-  - { alias: 氨中毒性腦病, language: zh }
-  - { alias: HE, language: en }
-  - { alias: Hepatoencephalopathy, language: en }
-  - { alias: Porto-Systemic Encephalopathy, language: en }
-
+  - alias: 肝腦病變
+    language: zh
+  - alias: 肝性腦病變
+    language: zh
+  - alias: 氨中毒性腦病
+    language: zh
+  - alias: HE
+    language: en
+  - alias: Hepatoencephalopathy
+    language: en
+  - alias: Porto-Systemic Encephalopathy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -21,7 +25,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓較犬少見。先天性 PSS 與嚴重肝病均可發生。貓的特徵性表現為流涎（ptyalism）。肝臟脂肪變性（hepatic lipidosis）嚴重時亦可出現 HE。
-
 etiology:
   categories:
     - name: 門體分流（最常見原因）
@@ -42,7 +45,6 @@ etiology:
         - 氨→星形膠質細胞腫脹（Alzheimer type II astrocytosis）
         - 其他毒素：假性神經傳導物質、mercaptans、短鏈脂肪酸、GABA 增強
         - 促發因素：GI 出血、高蛋白飲食、便秘、感染、低鉀血症、脫水、鎮靜藥物
-
 clinicalSigns:
   early:
     - 間歇性行為改變（尤其飲食後）
@@ -65,18 +67,17 @@ clinicalSigns:
     - 去大腦姿勢
     - 嚴重低體溫
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 血氨測定
-      notes: "血氨升高為 HE 的關鍵實驗室發現。正常犬 <50 μg/dL。需注意：樣本必須立即冰浴送檢（室溫下假性升高）。血氨高低與臨床嚴重度不完全平行"
+      notes: 血氨升高為 HE 的關鍵實驗室發現。正常犬 <50 μg/dL。需注意：樣本必須立即冰浴送檢（室溫下假性升高）。血氨高低與臨床嚴重度不完全平行
     - name: 血清膽酸（空腹與餐後）
-      notes: "膽酸升高支持肝功能不全/PSS 診斷。空腹 >25 μmol/L 或餐後 >50 μmol/L 為異常。敏感度高"
+      notes: 膽酸升高支持肝功能不全/PSS 診斷。空腹 >25 μmol/L 或餐後 >50 μmol/L 為異常。敏感度高
   imaging:
     - name: 腹部超音波（含都卜勒）
-      notes: "評估肝臟大小（PSS 常肝臟偏小）、門靜脈血流方向、異常分流血管。腎臟可能高迴音（腎髓質鈣化）。後天性：門靜脈高壓、腹水"
+      notes: 評估肝臟大小（PSS 常肝臟偏小）、門靜脈血流方向、異常分流血管。腎臟可能高迴音（腎髓質鈣化）。後天性：門靜脈高壓、腹水
     - name: CT 血管攝影（CTA）
-      notes: "門體分流的定位金標準。清楚顯示分流血管走行。術前計畫必要"
+      notes: 門體分流的定位金標準。清楚顯示分流血管走行。術前計畫必要
   differentialDiagnoses:
     - 癲癇（原發性/特發性）(Idiopathic Epilepsy)
     - 低血糖腦病 (Hypoglycemic Encephalopathy)
@@ -91,7 +92,6 @@ diagnosis:
     - 尿液分析（尿酸銨結晶）
     - 蛋白 C 活性（PSS 時降低）
     - 腦部 MRI（排除其他腦部病變、T1W 蒼白球高信號為 HE 特徵）
-
 treatment:
   principles:
     - 降低血氨為急性期治療核心
@@ -100,56 +100,127 @@ treatment:
     - 找出並治療根本原因與促發因素
     - PSS 手術為根治方法
   general:
-    - "Lactulose 0.5 mL/kg PO q8-12h（調整劑量使每日排軟便 2-3 次）"
-    - "急性嚴重 HE：Lactulose 溫水灌腸 10-20 mL/kg（3 份 lactulose : 7 份溫水），以 Foley 導管留置 15-20 分鐘"
-    - "替代灌腸方案：10% povidone-iodine 溶液 20 mL/kg（留置 10-15 分鐘後充分沖洗）、neomycin 22 mg/kg 混水灌腸、或稀釋 metronidazole 7.5 mg/kg 混水 10-20 mL/kg 灌腸，每 8 小時重複至神經反應改善"
-    - "抗生素減少腸道產氨菌：Metronidazole 7.5 mg/kg PO q12h 或 Amoxicillin 20 mg/kg PO q12h"
-    - "Neomycin 22 mg/kg PO q8-12h（替代方案）：注意合併炎症性腸病時 neomycin 全身吸收增加，有腎毒性與耳毒性風險"
-    - "Metronidazole 不可超過 7.5 mg/kg q8h（口服 + 灌腸合計）：過量有醫源性神經毒性風險（初期表現為前庭症狀）"
-    - "Rifaximin 5 mg/kg PO BID（非吸收性抗生素，人醫 HE 標準用藥，獸醫使用增加中）"
-    - "低蛋白飲食：蛋白質限制至 14-18% DM（以高品質植物蛋白與乳製品蛋白為主）"
-    - "靜脈輸液：避免含乳酸林格氏液（乳酸需肝臟代謝，肝衰竭時可致乳酸酸中毒），使用 0.45% NaCl + 2.5% Dextrose 加 KCl 與維生素 B 群。須監測血漿滲透壓避免低滲性腦水腫"
-    - "矯正促發因素：補鉀（低鉀促進腎臟氨生成）、止血（GI 出血）、治療感染、矯正脫水/氮血症、停用可能加重 HE 的藥物（benzodiazepines、barbiturates、抗組織胺、有機磷）"
-    - "維持瘦體組織（肌肉量）：骨骼肌是肝臟以外最重要的氨代謝場所（glutamine 合成），肝功能不全動物必須避免過度蛋白質限制導致肌肉流失"
-    - "口服益生菌（Lactobacillus、Bifidobacterium 活菌製劑或活性優格）可協助競爭性抑制產氨腸道菌群，為輔助治療選項"
-    - "癲癇控制：Levetiracetam 20 mg/kg IV/PO q8h（避免 Phenobarbital——需肝臟代謝）"
-    - "Propofol CRI 0.1-0.6 mg/kg/min（嚴重癲癇持續狀態，短效不依賴肝臟代謝）"
-    - "PSS 手術矯正：Ameroid constrictor 或 Cellophane banding（先天性單一分流）"
-
-prognosis: 預後取決於根本原因與可逆性。PSS 手術後多數犬隻 HE 症狀完全消失，長期預後良好。急性 HE 發作經積極內科治療可逆轉。慢性肝病終末期的 HE 預後不良。僅內科管理的 PSS 中位存活時間約 2 年。促發因素的及時矯正可顯著改善急性發作的預後。反覆 HE 發作影響生活品質且可致永久性神經損傷。
-
+    - Lactulose 0.5 mL/kg PO q8-12h（調整劑量使每日排軟便 2-3 次）
+    - '急性嚴重 HE：Lactulose 溫水灌腸 10-20 mL/kg（3 份 lactulose : 7 份溫水），以 Foley 導管留置 15-20 分鐘'
+    - >-
+      替代灌腸方案：10% povidone-iodine 溶液 20 mL/kg（留置 10-15 分鐘後充分沖洗）、neomycin 22 mg/kg 混水灌腸、或稀釋 metronidazole 7.5 mg/kg 混水
+      10-20 mL/kg 灌腸，每 8 小時重複至神經反應改善
+    - 抗生素減少腸道產氨菌：Metronidazole 7.5 mg/kg PO q12h 或 Amoxicillin 20 mg/kg PO q12h
+    - Neomycin 22 mg/kg PO q8-12h（替代方案）：注意合併炎症性腸病時 neomycin 全身吸收增加，有腎毒性與耳毒性風險
+    - Metronidazole 不可超過 7.5 mg/kg q8h（口服 + 灌腸合計）：過量有醫源性神經毒性風險（初期表現為前庭症狀）
+    - Rifaximin 5 mg/kg PO BID（非吸收性抗生素，人醫 HE 標準用藥，獸醫使用增加中）
+    - 低蛋白飲食：蛋白質限制至 14-18% DM（以高品質植物蛋白與乳製品蛋白為主）
+    - 靜脈輸液：避免含乳酸林格氏液（乳酸需肝臟代謝，肝衰竭時可致乳酸酸中毒），使用 0.45% NaCl + 2.5% Dextrose 加 KCl 與維生素 B 群。須監測血漿滲透壓避免低滲性腦水腫
+    - 矯正促發因素：補鉀（低鉀促進腎臟氨生成）、止血（GI 出血）、治療感染、矯正脫水/氮血症、停用可能加重 HE 的藥物（benzodiazepines、barbiturates、抗組織胺、有機磷）
+    - 維持瘦體組織（肌肉量）：骨骼肌是肝臟以外最重要的氨代謝場所（glutamine 合成），肝功能不全動物必須避免過度蛋白質限制導致肌肉流失
+    - 口服益生菌（Lactobacillus、Bifidobacterium 活菌製劑或活性優格）可協助競爭性抑制產氨腸道菌群，為輔助治療選項
+    - 癲癇控制：Levetiracetam 20 mg/kg IV/PO q8h（避免 Phenobarbital——需肝臟代謝）
+    - Propofol CRI 0.1-0.6 mg/kg/min（嚴重癲癇持續狀態，短效不依賴肝臟代謝）
+    - PSS 手術矯正：Ameroid constrictor 或 Cellophane banding（先天性單一分流）
+prognosis: >-
+  預後取決於根本原因與可逆性。PSS 手術後多數犬隻 HE 症狀完全消失，長期預後良好。急性 HE 發作經積極內科治療可逆轉。慢性肝病終末期的 HE 預後不良。僅內科管理的 PSS 中位存活時間約 2
+  年。促發因素的及時矯正可顯著改善急性發作的預後。反覆 HE 發作影響生活品質且可致永久性神經損傷。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: ACVIM Consensus Statement on the Diagnosis and Treatment of Hepatic Encephalopathy in Dogs and Cats
     url: https://pubmed.ncbi.nlm.nih.gov/26507576/
     type: consensus
-    pmid: "26507576"
+    pmid: '26507576'
   - sourceOrg: Journal of Veterinary Internal Medicine
-    title: "Congenital portosystemic shunts in dogs and cats: clinical features, diagnosis, and management"
+    title: 'Congenital portosystemic shunts in dogs and cats: clinical features, diagnosis, and management'
     url: https://pubmed.ncbi.nlm.nih.gov/15595205/
     type: review
-    pmid: "15595205"
+    pmid: '15595205'
   - sourceOrg: Veterinary Clinics of North America Small Animal Practice
-    title: "Hepatic encephalopathy: pathophysiology, diagnosis, and treatment"
+    title: 'Hepatic encephalopathy: pathophysiology, diagnosis, and treatment'
     url: https://pubmed.ncbi.nlm.nih.gov/19932394/
     type: review
-    pmid: "19932394"
+    pmid: '19932394'
   - sourceOrg: International journal of surgery (London, England)
     title: Stem cell transplantation therapy for advanced liver damage-associated neurodegenerative disorders.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11573053/
     type: review
-    pmid: "39699862"
+    pmid: '39699862'
   - sourceOrg: Scientific reports
-    title: Revealing the protective potential of D-(-)-Quinic acid against thioacetamide-induced hepatic encephalopathy in rats.
+    title: >-
+      Revealing the protective potential of D-(-)-Quinic acid against thioacetamide-induced hepatic encephalopathy in
+      rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12381148/
     type: research
-    pmid: "40858982"
+    pmid: '40858982'
     relevance: supporting
 pubmedQueries:
-  - query: '"hepatic encephalopathy" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "lactulose" OR "portosystemic shunt")'
+  - query: >-
+      "hepatic encephalopathy" AND (dog OR cat OR canine OR feline) AND ("treatment" OR "lactulose" OR "portosystemic
+      shunt")
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "HEPATIC ENCEPHALOPATHY"
+  chapter: DIG
+  sectionTitle: HEPATIC ENCEPHALOPATHY
   pdfPage: 484
+diagnosticAlgorithm:
+  title: 肝性腦病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估神經行為異常與肝病關聯
+      findings:
+        - 進食後行為改變或精神異常
+        - 無目的遊走或壓頭
+        - 流涎貓常見
+        - 癲癇發作
+    - step: 2
+      action: 實驗室檢查
+      details: 肝功能與血氨測定
+      findings:
+        - 空腹血氨升高
+        - 飯後血氨更高
+        - 低白蛋白血症
+        - 低BUN尿素循環障礙
+    - step: 3
+      action: 肝臟影像與血管評估
+      details: 超音波評估肝臟大小與門靜脈系統
+      findings:
+        - 肝臟偏小
+        - 門脈分流血管偵測
+        - 腎結石/膀胱結石尿酸銨
+        - 膽汁酸刺激試驗異常
+    - step: 4
+      action: 病因確認
+      details: 區分先天性門脈分流與後天性肝病
+      findings:
+        - CT血管攝影確認門脈分流
+        - 肝臟活檢評估慢性肝病
+        - 年幼動物考慮先天性分流
+        - 老年動物考慮後天性肝硬化
+clinicalPearls:
+  - 幼犬幼貓的生長遲緩和進食後行為異常應考慮門體分流
+  - 貓肝性腦病特徵性表現為大量流涎
+  - Lactulose是長期管理的基石藥物
+  - 消化道出血是肝病患者急性肝性腦病的常見誘因
+  - 避免使用經肝臟代謝的鎮靜藥物
+monitoringItems:
+  - 血氨濃度
+  - 神經學狀態
+  - 膽汁酸
+  - 肝臟功能指標
+  - 體重和營養狀態
+associatedSymptoms:
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: uncommon
+  - symptomId: mydriasis
+    frequency: uncommon
+ddxSource: book

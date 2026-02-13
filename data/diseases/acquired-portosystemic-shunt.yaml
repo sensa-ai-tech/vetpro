@@ -2,14 +2,18 @@ slug: acquired-portosystemic-shunt
 nameEn: Acquired Portosystemic Shunt
 nameZh: 後天性門體分流
 bodySystem: hepatic
-description: 後天性門體分流為因長期門脈高壓導致的多發性門體側枝血管（multiple acquired portosystemic collaterals, MAPSC）開放。常見原因為慢性肝病（肝硬化、肝纖維化）、門脈血栓或先天性門脈發育不良。與先天性 PSS 不同，後天性分流為多發性且反映嚴重的基礎肝臟疾病。
-
+description: >-
+  後天性門體分流為因長期門脈高壓導致的多發性門體側枝血管（multiple acquired portosystemic collaterals,
+  MAPSC）開放。常見原因為慢性肝病（肝硬化、肝纖維化）、門脈血栓或先天性門脈發育不良。與先天性 PSS 不同，後天性分流為多發性且反映嚴重的基礎肝臟疾病。
 aliases:
-  - { alias: 後天性肝門脈分流, language: zh }
-  - { alias: Acquired PSS, language: en }
-  - { alias: Multiple Acquired Portosystemic Collaterals, language: en }
-  - { alias: MAPSC, language: en }
-
+  - alias: 後天性肝門脈分流
+    language: zh
+  - alias: Acquired PSS
+    language: en
+  - alias: Multiple Acquired Portosystemic Collaterals
+    language: en
+  - alias: MAPSC
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻後天性 PSS 少見，可見於嚴重慢性肝病。
-
 etiology:
   categories:
     - name: 門脈高壓原因
@@ -31,7 +34,6 @@ etiology:
         - 門脈壓力持續升高
         - 胚胎期側枝血管再開放
         - 多發性腹腔內血管分流
-
 clinicalSigns:
   early:
     - 慢性肝病的症狀（食慾下降、體重減輕）
@@ -43,36 +45,78 @@ clinicalSigns:
     - 黃疸
     - 消化道出血
     - 惡病質
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
       notes: 多發性扭曲側枝血管（常見於左腎區域與脾區域）。肝臟小且結構異常。門脈血流異常。腹水。
     - name: 血液生化 + 膽汁酸
       notes: 膽汁酸顯著升高。低白蛋白。肝指數升高。BUN 偏低。血氨升高。膽紅素可能升高。
-
 treatment:
   principles:
     - 治療基礎肝臟疾病為核心
     - 手術結紮通常不適用（多發性分流）
     - 內科管理肝性腦病與腹水
   general:
-    - "肝性腦病控制：Lactulose 0.5 mL/kg PO q8-12h"
-    - "抗生素：Metronidazole 7.5 mg/kg PO q12h 或 Amoxicillin"
+    - 肝性腦病控制：Lactulose 0.5 mL/kg PO q8-12h
+    - 抗生素：Metronidazole 7.5 mg/kg PO q12h 或 Amoxicillin
     - 低蛋白飲食（限制氨前驅物質）
-    - "腹水管理：Spironolactone 1-2 mg/kg PO q12h ± Furosemide"
+    - 腹水管理：Spironolactone 1-2 mg/kg PO q12h ± Furosemide
     - 治療基礎肝病（銅蓄積性肝病→D-Penicillamine、自體免疫性肝炎→免疫抑制劑）
-    - "肝保護：SAMe 20 mg/kg PO q24h + Vitamin E"
-
+    - 肝保護：SAMe 20 mg/kg PO q24h + Vitamin E
 prognosis: 預後取決於基礎肝臟疾病的嚴重度與可治療性。後天性 PSS 反映嚴重的門脈高壓，整體預後較先天性差。可治療的基礎疾病（如銅蓄積性肝病）若早期治療預後較好。肝硬化末期合併後天性分流預後不佳。
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Treatment of congenital extrahepatic portosystemic shunts in dogs: A systematic review and meta-analysis."
+    title: 'Treatment of congenital extrahepatic portosystemic shunts in dogs: A systematic review and meta-analysis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6766526/
     type: review
-    pmid: "31471995"
+    pmid: '31471995'
 pubmedQueries:
-  - query: '"acquired portosystemic shunt" OR "portosystemic collaterals" AND (veterinary OR canine OR feline) AND ("portal hypertension" OR "treatment")'
+  - query: >-
+      "acquired portosystemic shunt" OR "portosystemic collaterals" AND (veterinary OR canine OR feline) AND ("portal
+      hypertension" OR "treatment")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: failure-to-grow
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 後天性門體分流 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - failure-to-grow 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 多發性扭曲側枝血管（常見於左腎區域與脾區域）。肝臟小且結構異常。門脈血流異常。腹水。
+        - name: 血液生化 + 膽汁酸
+          notes: 膽汁酸顯著升高。低白蛋白。肝指數升高。BUN 偏低。血氨升高。膽紅素可能升高。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎肝臟疾病為核心
+        - 手術結紮通常不適用（多發性分流）
+        - 內科管理肝性腦病與腹水
+ddxSource: auto-generated

@@ -3,12 +3,13 @@ nameEn: Congenital Heart Disease Neonatal
 nameZh: 新生兒先天性心臟病
 bodySystem: cardiac
 description: 新生犬貓出生時即存在的心臟結構異常，包含心室或心房中隔缺損、動脈導管未閉、瓣膜異常等。嚴重者可能在新生期即出現症狀甚至死亡。
-
 aliases:
-  - { alias: 先天性心臟缺陷, language: zh }
-  - { alias: Congenital Heart Defects, language: en }
-  - { alias: CHD Neonatal, language: en }
-
+  - alias: 先天性心臟缺陷
+    language: zh
+  - alias: Congenital Heart Defects
+    language: en
+  - alias: CHD Neonatal
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 比犬少見
-
 etiology:
   categories:
     - name: 常見先天性心臟病
@@ -33,7 +33,6 @@ etiology:
         - 遺傳(品種易感性)
         - 孕期病毒感染
         - 孕期營養不良
-
 clinicalSigns:
   early:
     - 生長遲緩、體重不增
@@ -47,23 +46,21 @@ clinicalSigns:
     - 腹水、水腫
     - 昏厥
     - 猝死
-
 diagnosis:
   primaryTests:
     - name: 聽診
-      notes: "心雜音位置、時期、強度評估"
+      notes: 心雜音位置、時期、強度評估
     - name: 胸部X光
-      notes: "心臟輪廓、肺血管紋路、肺水腫"
+      notes: 心臟輪廓、肺血管紋路、肺水腫
     - name: 心電圖
-      notes: "心律不整、心室肥大"
+      notes: 心律不整、心室肥大
     - name: 心臟超音波
-      notes: "確診缺陷類型及嚴重程度(金標準)"
+      notes: 確診缺陷類型及嚴重程度(金標準)
   differentialDiagnoses:
     - 功能性心雜音(無病理意義)
     - 先天性心臟病各亞型
     - 新生兒肺炎
     - 先天性肺部疾病
-
 treatment:
   medical:
     - 輕微缺陷：觀察追蹤，限制劇烈運動
@@ -71,40 +68,80 @@ treatment:
     - 手術治療：PDA結紮、瓣膜修補、分流手術(視缺陷類型)
     - 手術時機：通常3-6月齡，視病情嚴重度
     - 支持性治療：營養支持、氧氣、限制活動
-
 prognosis:
-  general: "輕微缺陷(小型VSD、輕度PS)可能自行改善；嚴重缺陷(法洛氏四合症、大型PDA)未手術預後不良"
-
+  general: 輕微缺陷(小型VSD、輕度PS)可能自行改善；嚴重缺陷(法洛氏四合症、大型PDA)未手術預後不良
 prevention:
   - 避免有心臟病史犬隻繁殖
   - 基因篩檢(某些品種)
   - 孕期健康管理
   - 新生兒聽診篩檢
-
-
 guidelineRefs:
   - sourceOrg: The Journal of thoracic and cardiovascular surgery
-    title: "Consensus statement on heart xenotransplantation in children: Toward clinical translation."
+    title: 'Consensus statement on heart xenotransplantation in children: Toward clinical translation.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10124772/
     type: consensus
-    pmid: "36184321"
-  - sourceOrg: "International journal of hyperthermia : the official journal of European Society for Hyperthermic Oncology, North American Hyperthermia Group"
-    title: "Insights from in&#xa0;vivo preclinical cancer studies with histotripsy."
+    pmid: '36184321'
+  - sourceOrg: >-
+      International journal of hyperthermia : the official journal of European Society for Hyperthermic Oncology, North
+      American Hyperthermia Group
+    title: Insights from in&#xa0;vivo preclinical cancer studies with histotripsy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11102041/
     type: review
-    pmid: "38214171"
+    pmid: '38214171'
   - sourceOrg: American journal of physiology. Lung cellular and molecular physiology
     title: Congenital heart disease-associated pulmonary dysplasia and its underlying mechanisms.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9925164/
     type: research
-    pmid: "36472329"
+    pmid: '36472329'
   - sourceOrg: Acta biomaterialia
-    title: Pentagalloyl glucose-stabilized decellularized bovine jugular vein valved conduits as pulmonary conduit replacement.
+    title: >-
+      Pentagalloyl glucose-stabilized decellularized bovine jugular vein valved conduits as pulmonary conduit
+      replacement.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10592392/
     type: research
-    pmid: "37619898"
-  - sourceOrg: "Cell &amp; bioscience"
+    pmid: '37619898'
+  - sourceOrg: Cell &amp; bioscience
     title: A neonatal rat model of pulmonary vein stenosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10278335/
     type: research
-    pmid: "37337290"
+    pmid: '37337290'
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: heart-murmur
+    frequency: common
+  - symptomId: syncope
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: coughing
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 新生兒先天性心臟病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - heart-murmur 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 聽診
+          notes: 心雜音位置、時期、強度評估
+        - name: 胸部X光
+          notes: 心臟輪廓、肺血管紋路、肺水腫
+        - name: 心電圖
+          notes: 心律不整、心室肥大
+ddxSource: auto-generated

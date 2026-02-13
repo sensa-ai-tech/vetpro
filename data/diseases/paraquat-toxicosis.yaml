@@ -3,12 +3,13 @@ nameEn: Paraquat Toxicosis
 nameZh: 巴拉刈中毒
 bodySystem: toxicology
 description: 攝入巴拉刈(paraquat)除草劑引發的嚴重中毒,為聯吡啶類除草劑,透過氧化損傷導致多器官衰竭。肺臟為主要標的器官,進行性肺纖維化常致死,目前無特效解毒劑,預後極差。
-
 aliases:
-  - { alias: Paraquat 中毒, language: en }
-  - { alias: 對位喹中毒, language: zh }
-  - { alias: Gramoxone Poisoning, language: en }
-
+  - alias: Paraquat 中毒
+    language: en
+  - alias: 對位喹中毒
+    language: zh
+  - alias: Gramoxone Poisoning
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,14 +19,12 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓對巴拉刈極度敏感,死亡率接近 100%
-
 etiology:
   categories:
     - name: 聯吡啶類除草劑
       examples:
         - Paraquat dichloride
         - Paraquat dimethyl sulfate
-
 clinicalSigns:
   early:
     - 嘔吐
@@ -41,28 +40,26 @@ clinicalSigns:
     - 肺水腫後轉為肺纖維化
     - 多器官衰竭
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 病史詢問
-      notes: "**關鍵**:確認巴拉刈接觸史,此為致命性急症"
+      notes: '**關鍵**:確認巴拉刈接觸史,此為致命性急症'
     - name: 胸部 X 光
-      notes: "早期正常,數日後出現瀰漫性間質浸潤和肺纖維化"
+      notes: 早期正常,數日後出現瀰漫性間質浸潤和肺纖維化
     - name: 血液生化
-      notes: "腎功能惡化(BUN, 肌酐升高)、肝酶升高"
+      notes: 腎功能惡化(BUN, 肌酐升高)、肝酶升高
     - name: 血氣分析
-      notes: "進行性低氧血症、呼吸性鹼中毒後轉為酸中毒"
+      notes: 進行性低氧血症、呼吸性鹼中毒後轉為酸中毒
     - name: 尿液 Paraquat 定性檢測
-      notes: "Dithionite 試驗(尿液變藍色為陽性)"
+      notes: Dithionite 試驗(尿液變藍色為陽性)
   differentialDiagnoses:
     - Diquat 中毒(無肺纖維化)
     - 其他除草劑中毒
     - 急性呼吸窘迫症候群(其他原因)
     - 急性腎衰竭(其他原因)
-
 treatment:
   medical:
-    - "**關鍵**:避免氧氣治療(加速肺纖維化),僅在嚴重低氧(<60 mmHg)時最低濃度給氧"
+    - '**關鍵**:避免氧氣治療(加速肺纖維化),僅在嚴重低氧(<60 mmHg)時最低濃度給氧'
     - 立即去污染:催吐或洗胃(攝入後 30 分鐘內)
     - Fuller's earth 30% suspension 2-4 g/kg PO 或 Bentonite 7% suspension(特異性吸附劑)
     - 活性碳 1-4 g/kg PO 每 2-4 小時重複
@@ -73,12 +70,46 @@ treatment:
     - 考慮血液透析或血液灌流(但效果有限)
     - Dexamethasone 0.5-2 mg/kg IV 每12小時(減緩纖維化,證據不足)
     - 密集監護,持續監測呼吸和腎功能
-
 prognosis:
-  general: "預後極差,死亡率極高(>90%)。即使積極治療,進行性肺纖維化通常致命。存活動物可能遺留永久性肺功能損傷。攝入量是預後關鍵因素,任何可測量的攝入量均可能致命。"
-
+  general: 預後極差,死亡率極高(>90%)。即使積極治療,進行性肺纖維化通常致命。存活動物可能遺留永久性肺功能損傷。攝入量是預後關鍵因素,任何可測量的攝入量均可能致命。
 prevention:
   - 許多國家已禁用巴拉刈,避免購買或使用
   - 若環境中存在,必須儲存於高度安全的上鎖區域
   - 絕不將巴拉刈轉裝至飲料瓶(人畜誤飲主因)
   - 立即處理溢出物並隔離寵物
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: ptyalism
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 巴拉刈中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - ptyalism 相關症狀
+        - vomiting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 病史詢問
+          notes: '**關鍵**:確認巴拉刈接觸史,此為致命性急症'
+        - name: 胸部 X 光
+          notes: 早期正常,數日後出現瀰漫性間質浸潤和肺纖維化
+        - name: 血液生化
+          notes: 腎功能惡化(BUN, 肌酐升高)、肝酶升高
+ddxSource: auto-generated

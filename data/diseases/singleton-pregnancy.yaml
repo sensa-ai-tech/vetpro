@@ -3,11 +3,11 @@ nameEn: Singleton Pregnancy
 nameZh: 單胎妊娠
 bodySystem: reproductive
 description: 僅懷單一胎兒之妊娠。胎兒易過度生長，且缺乏多胎機械性刺激可能導致產程延遲。難產風險高，常需剖腹產。
-
 aliases:
-  - { alias: 單胞胎懷孕, language: zh }
-  - { alias: Single Puppy Syndrome, language: en }
-
+  - alias: 單胞胎懷孕
+    language: zh
+  - alias: Single Puppy Syndrome
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓罕見
-
 etiology:
   categories:
     - name: 受孕因素
@@ -25,7 +24,6 @@ etiology:
         - 配種時機不當（僅一卵受精）
         - 高齡母體受孕率降低
         - 早期胚胎吸收（原多胎）
-
 clinicalSigns:
   early:
     - 妊娠期正常或延長
@@ -35,46 +33,66 @@ clinicalSigns:
     - 預產期無產兆（黃體素持續高）
     - 過期妊娠（>65天）
     - 巨大胎兒難產
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "確認胎兒數量、大小"
+      notes: 確認胎兒數量、大小
     - name: 腹部X光
-      notes: "妊娠45天後評估胎兒大小"
+      notes: 妊娠45天後評估胎兒大小
     - name: 黃體素檢測
-      notes: "監測產程啟動"
+      notes: 監測產程啟動
   differentialDiagnoses:
     - 多胎妊娠（早期）
     - 假孕
     - 腹腔腫瘤
-
 treatment:
   medical:
     - 黃體素監測：<2 ng/mL時引產或剖腹產
     - 計劃性剖腹產（多數病例）
     - 引產：前列腺素或催產素（需謹慎評估）
     - 監測胎兒健康（每日超音波）
-
 prognosis:
-  general: "及時剖腹產預後良好。過期妊娠可能胎兒窘迫或死亡、母體併發症。"
-
+  general: 及時剖腹產預後良好。過期妊娠可能胎兒窘迫或死亡、母體併發症。
 prevention:
   - 最佳配種時機（黃體素監測）
   - 產前超音波確認胎兒數
   - 高危病例計劃性剖腹產
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in genetics
-    title: "Performance of expanded non-invasive prenatal testing for fetal aneuploidies and copy number variations: A prospective study from a single center in Jiangxi province, China."
+    title: >-
+      Performance of expanded non-invasive prenatal testing for fetal aneuploidies and copy number variations: A
+      prospective study from a single center in Jiangxi province, China.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9880269/
     type: research
-    pmid: "36712884"
+    pmid: '36712884'
     relevance: supporting
   - sourceOrg: Journal of perinatal medicine
-    title: Birth tears after spontaneous and vacuum-assisted births with different vacuum cup systems - a retrospective cohort study.
+    title: >-
+      Birth tears after spontaneous and vacuum-assisted births with different vacuum cup systems - a retrospective
+      cohort study.
     url: https://pubmed.ncbi.nlm.nih.gov/32333651/
     type: research
-    pmid: "32333651"
+    pmid: '32333651'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: abdominal-distension
+    frequency: common
+diagnosticAlgorithm:
+  title: 單胎妊娠 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - abdominal-distension 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 確認胎兒數量、大小
+        - name: 腹部X光
+          notes: 妊娠45天後評估胎兒大小
+        - name: 黃體素檢測
+          notes: 監測產程啟動
+ddxSource: auto-generated

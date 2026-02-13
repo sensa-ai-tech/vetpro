@@ -3,13 +3,15 @@ nameEn: Lactic Acidosis
 nameZh: 乳酸性酸中毒
 bodySystem: metabolic
 description: 血液乳酸濃度異常升高（>2.5 mmol/L）導致的代謝性酸中毒。乳酸為無氧代謝的產物，其升高反映組織灌流不足或氧氣利用障礙，為休克嚴重程度及預後的重要指標。
-
 aliases:
-  - { alias: 高乳酸血症, language: zh }
-  - { alias: 乳酸酸中毒, language: zh }
-  - { alias: Hyperlactatemia, language: en }
-  - { alias: Lactic Acidaemia, language: en }
-
+  - alias: 高乳酸血症
+    language: zh
+  - alias: 乳酸酸中毒
+    language: zh
+  - alias: Hyperlactatemia
+    language: en
+  - alias: Lactic Acidaemia
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓乳酸升高常見於心因性休克、尿道阻塞及敗血症。貓正常乳酸值較犬略高。
-
 etiology:
   categories:
     - name: A 型（組織灌流不足，最常見）
@@ -31,7 +32,6 @@ etiology:
         - 腫瘤（副腫瘤症候群、大腫瘤無氧代謝）
         - 藥物/毒物（乙二醇、Metformin）
         - 肝衰竭（乳酸清除下降）
-
 clinicalSigns:
   early:
     - 心搏過速
@@ -44,14 +44,12 @@ clinicalSigns:
     - 低體溫
     - 多器官功能障礙
     - 無尿
-
 diagnosis:
   primaryTests:
     - name: 血液乳酸
       notes: 正常犬 <2.5 mmol/L，貓 <2.5-3.0 mmol/L。>4 mmol/L 為顯著升高。>6 mmol/L 為嚴重。手持式乳酸儀可快速床邊檢測。
     - name: 血氣分析
       notes: 代謝性酸中毒（pH 下降、HCO3- 降低）。陰離子間隙升高型代謝性酸中毒。
-
 treatment:
   principles:
     - 恢復組織灌流為根本治療（補液、升壓劑）
@@ -65,36 +63,76 @@ treatment:
     - 氧氣支持
     - 嚴重貧血需輸血
     - 每 2-4 小時追蹤乳酸值（乳酸清除率 >50%/6hr 為良好指標）
-
 prognosis: 乳酸值為急重症預後的強力預測因子。入院乳酸 <2.5 mmol/L 預後較佳。6 小時內乳酸清除率 >50% 存活率顯著提高。持續性高乳酸或乳酸再升高預後不良。GDV 犬入院乳酸 >6 mmol/L 死亡率明顯增加。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "The D-lactate enigma: exploring the inflammatory influence of D-lactate in cattle."
+    title: 'The D-lactate enigma: exploring the inflammatory influence of D-lactate in cattle.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11688252/
     type: review
-    pmid: "39744722"
+    pmid: '39744722'
   - sourceOrg: Biochimica et biophysica acta. Molecular basis of disease
-    title: Regulating mitochondrial metabolism by targeting pyruvate dehydrogenase with dichloroacetate, a metabolic messenger.
+    title: >-
+      Regulating mitochondrial metabolism by targeting pyruvate dehydrogenase with dichloroacetate, a metabolic
+      messenger.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10776176/
     type: review
-    pmid: "37263447"
+    pmid: '37263447'
   - sourceOrg: Cells
     title: Is Type 2 Diabetes a Primary Mitochondrial Disorder?
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9140179/
     type: review
-    pmid: "35626654"
+    pmid: '35626654'
   - sourceOrg: Renal failure
-    title: Protective effects of adenosine triphosphate, thiamin, thiamin pyrophosphate, and their combination against linezolid-induced renal injury and lactic acidosis in rats.
+    title: >-
+      Protective effects of adenosine triphosphate, thiamin, thiamin pyrophosphate, and their combination against
+      linezolid-induced renal injury and lactic acidosis in rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12833895/
     type: research
-    pmid: "41582010"
+    pmid: '41582010'
   - sourceOrg: Intensive care medicine experimental
-    title: "Sex- and age-related differences in LPS-induced lung injury: establishing a mouse intensive care unit."
+    title: 'Sex- and age-related differences in LPS-induced lung injury: establishing a mouse intensive care unit.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12055714/
     type: research
-    pmid: "40327214"
+    pmid: '40327214'
 pubmedQueries:
   - query: '"Lactic Acidosis" AND (veterinary OR canine OR feline) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: uncommon
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+  - symptomId: oliguria-anuria
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 乳酸性酸中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - pallor-cyanosis 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液乳酸
+          notes: 正常犬 <2.5 mmol/L，貓 <2.5-3.0 mmol/L。>4 mmol/L 為顯著升高。>6 mmol/L 為嚴重。手持式乳酸儀可快速床邊檢測。
+        - name: 血氣分析
+          notes: 代謝性酸中毒（pH 下降、HCO3- 降低）。陰離子間隙升高型代謝性酸中毒。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 恢復組織灌流為根本治療（補液、升壓劑）
+        - 治療基礎病因
+        - 碳酸氫鈉僅在 pH <7.1 時考慮（爭議性）
+ddxSource: auto-generated

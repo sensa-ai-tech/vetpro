@@ -3,16 +3,15 @@ nameEn: Rabbit Gastric Dilation
 nameZh: 兔急性胃擴張
 bodySystem: gastrointestinal
 description: 兔胃部急性異常擴張，為兔的急症之一。可因腸道阻塞（真正阻塞或功能性停滯）導致氣體與液體蓄積於胃部。兔無法嘔吐，胃擴張可快速惡化導致休克與死亡。
-
 aliases:
-  - { alias: "兔急性胃擴張", language: zh }
-  - { alias: "Rabbit Gastric Dilation", language: en }
-
+  - alias: 兔急性胃擴張
+    language: zh
+  - alias: Rabbit Gastric Dilation
+    language: en
 species:
   - speciesCommon: rabbit
     prevalence: uncommon
     notes: 兔可受此疾病影響。
-
 etiology:
   categories:
     - name: 機械性阻塞
@@ -25,7 +24,6 @@ etiology:
         - GI stasis 惡化
         - 腸道菌群失衡產氣
         - 術後腸道麻痺
-
 clinicalSigns:
   early:
     - 突然厭食
@@ -37,14 +35,12 @@ clinicalSigns:
     - 休克（心搏過速、黏膜蒼白）
     - 低體溫
     - 死亡（可在數小時內）
-
 diagnosis:
   primaryTests:
     - name: 腹部 X 光
       notes: 胃嚴重擴張（充滿氣體或液體）。評估腸道是否有明確阻塞點。
     - name: 理學檢查
       notes: 腹部膨脹、觸診緊繃。評估休克程度。
-
 treatment:
   principles:
     - 緊急處置（鎮痛、輸液）
@@ -58,35 +54,75 @@ treatment:
     - 胃管減壓（鎮靜下置入）
     - 機械性阻塞需外科探查
     - 促蠕動劑（排除阻塞後）
-
 prognosis: 急性胃擴張為緊急狀況，未治療可在數小時內死亡。功能性原因經積極內科治療後預後謹慎至良好。機械性阻塞需手術，兔腸道手術死亡率約 50-70%。
-
-
 guidelineRefs:
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
     title: Gastric dilatation and volvulus in a 5-year-old intact female Holland lop rabbit.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12548677/
     type: case-report
-    pmid: "41142972"
+    pmid: '41142972'
     relevance: supporting
   - sourceOrg: BMC veterinary research
-    title: "Assessment of effects of methylene blue on intestinal ischemia and reperfusion in a rabbit model: hemodynamic, histological and immunohistochemical study."
+    title: >-
+      Assessment of effects of methylene blue on intestinal ischemia and reperfusion in a rabbit model: hemodynamic,
+      histological and immunohistochemical study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7014715/
     type: research
-    pmid: "32050965"
+    pmid: '32050965'
     relevance: supporting
   - sourceOrg: American journal of veterinary research
-    title: Rabbits with liver lobe torsion commonly exhibit gastric dilation, a rounded right hepatic silhouette, and peritoneal fluid on radiographs.
+    title: >-
+      Rabbits with liver lobe torsion commonly exhibit gastric dilation, a rounded right hepatic silhouette, and
+      peritoneal fluid on radiographs.
     url: https://pubmed.ncbi.nlm.nih.gov/41587537/
     type: research
-    pmid: "41587537"
+    pmid: '41587537'
     relevance: supporting
   - sourceOrg: Journal of the American Veterinary Medical Association
     title: Surgical treatment and resolution of gastric dilatation and volvulus in a rabbit (Oryctolagus cuniculus).
     url: https://pubmed.ncbi.nlm.nih.gov/39919375/
     type: research
-    pmid: "39919375"
+    pmid: '39919375'
     relevance: supporting
 pubmedQueries:
   - query: '"Rabbit Gastric Dilation" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: abdominal-distension
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: hypothermia-sign
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 兔急性胃擴張 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - abdominal-distension 相關症狀
+        - pallor-cyanosis 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部 X 光
+          notes: 胃嚴重擴張（充滿氣體或液體）。評估腸道是否有明確阻塞點。
+        - name: 理學檢查
+          notes: 腹部膨脹、觸診緊繃。評估休克程度。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 緊急處置（鎮痛、輸液）
+        - 胃減壓
+        - 區分機械性 vs 功能性原因
+ddxSource: auto-generated

@@ -3,13 +3,15 @@ nameEn: Eosinophilic Bronchopneumopathy
 nameZh: 嗜酸性球性支氣管肺病
 bodySystem: respiratory
 description: 嗜酸性球性支氣管肺病（EBP）為犬隻呼吸道嗜酸性球浸潤性疾病，特徵為支氣管黏膜與肺實質嗜酸性球浸潤。臨床表現為慢性咳嗽、呼吸困難與運動不耐。與人類嗜酸性球性肺炎類似。需排除寄生蟲感染作為鑑別診斷。
-
 aliases:
-  - { alias: EBP, language: en }
-  - { alias: Pulmonary Infiltrates with Eosinophils, language: en }
-  - { alias: PIE, language: en }
-  - { alias: 嗜酸性肺浸潤, language: zh }
-
+  - alias: EBP
+    language: en
+  - alias: Pulmonary Infiltrates with Eosinophils
+    language: en
+  - alias: PIE
+    language: en
+  - alias: 嗜酸性肺浸潤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻嗜酸性球性呼吸道疾病多歸類為貓哮喘（feline asthma）而非 EBP。
-
 etiology:
   categories:
     - name: 過敏/免疫機轉
@@ -30,7 +31,6 @@ etiology:
         - 肺蟲感染（Aelurostrongylus、Oslerus）
         - 心絲蟲感染
         - 寄生蟲幼蟲遷移（Toxocara）
-
 clinicalSigns:
   early:
     - 慢性咳嗽
@@ -42,14 +42,12 @@ clinicalSigns:
     - 呼氣性喘鳴
     - 食慾下降
     - 體重減輕
-
 diagnosis:
   primaryTests:
     - name: 支氣管肺泡灌洗液（BAL）分析
-      notes: "確診金標準。BAL 液嗜酸性球比例顯著增高（>20%，通常 >40%）。需排除寄生蟲感染。細胞學可見大量嗜酸性球與少量嗜中性球。"
+      notes: 確診金標準。BAL 液嗜酸性球比例顯著增高（>20%，通常 >40%）。需排除寄生蟲感染。細胞學可見大量嗜酸性球與少量嗜中性球。
     - name: 胸腔 X 光
       notes: 支氣管型或混合型間質浸潤。支氣管壁增厚。肺門淋巴結腫大。可見瀰漫性或局部性肺泡型浸潤。
-
 treatment:
   principles:
     - 排除寄生蟲後以免疫抑制治療為主
@@ -57,25 +55,78 @@ treatment:
     - 治療反應良好但可能需長期治療
   general:
     - 先進行廣效驅蟲排除寄生蟲
-    - "Prednisolone 1-2 mg/kg PO q12h × 2 週後漸減"
-    - "難治性：Cyclosporine 5 mg/kg PO q12h"
+    - Prednisolone 1-2 mg/kg PO q12h × 2 週後漸減
+    - 難治性：Cyclosporine 5 mg/kg PO q12h
     - 吸入型皮質類固醇（Fluticasone MDI + spacer）長期維持
     - 環境過敏原控制
-
 prognosis: 多數犬隻對皮質類固醇反應良好，症狀可顯著改善。但疾病常為慢性，可能需要長期低劑量維持治療。停藥後復發率高。部分病例可在長期治療後達到緩解。
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
-    title: "Canine eosinophilic pulmonary granulomatosis: case report and literature review."
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
+    title: 'Canine eosinophilic pulmonary granulomatosis: case report and literature review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7081515/
     type: review
-    pmid: "32180541"
+    pmid: '32180541'
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Bronchoscopy, Imaging, and Concurrent Diseases in Dogs with Bronchiectasis: (2003-2014)."
+    title: 'Bronchoscopy, Imaging, and Concurrent Diseases in Dogs with Bronchiectasis: (2003-2014).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4913641/
     type: research
-    pmid: "26682874"
+    pmid: '26682874'
 pubmedQueries:
   - query: '"eosinophilic bronchopneumopathy" AND (veterinary OR canine) AND ("treatment" OR "bronchoalveolar lavage")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 嗜酸性支氣管肺病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估慢性咳嗽、運動不耐受和鼻分泌物，注意年輕犬更常見
+      findings:
+        - 慢性咳嗽伴呼吸困難
+        - 黏液膿性鼻分泌物
+        - 運動不耐受
+    - step: 2
+      action: 血液與影像檢查
+      details: 進行CBC評估嗜酸性球計數，胸腔X光評估肺部病變模式
+      findings:
+        - 周邊血液嗜酸性球顯著增多
+        - X光顯示支氣管間質性和肺泡性浸潤
+        - 可能見肺門淋巴結腫大
+    - step: 3
+      action: BAL分析與確診
+      details: 進行支氣管肺泡灌洗液分析確認嗜酸性球浸潤，排除寄生蟲和真菌感染
+      findings:
+        - BAL嗜酸性球>20%
+        - 糞便浮游法排除肺蟲感染
+        - 排除真菌感染後確診
+clinicalPearls:
+  - BAL嗜酸性球>20%是EBP診斷的關鍵指標
+  - 開始類固醇治療前務必先驅蟲——寄生蟲病例用類固醇可能惡化
+  - 哈士奇及阿拉斯加雪橇犬為好發品種
+  - 周邊血嗜酸性球可能正常——BAL才是金標準
+  - 年輕犬出現慢性咳嗽應將EBP列入鑑別診斷前列
+monitoringItems:
+  - 臨床症狀改善程度
+  - BAL追蹤（評估嗜酸性球比例變化）
+  - 胸腔X光追蹤
+  - 類固醇副作用監測（PU/PD、肝指數）
+  - 糞便寄生蟲複查
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: stertor-stridor
+    frequency: common
+ddxSource: book

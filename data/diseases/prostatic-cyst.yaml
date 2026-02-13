@@ -2,13 +2,16 @@ slug: prostatic-cyst
 nameEn: Prostatic Cyst
 nameZh: 前列腺囊腫
 bodySystem: reproductive
-description: 前列腺囊腫分為腺體內囊腫（intraprostatic cyst，與 BPH 相關的腺管擴張）與旁前列腺囊腫（paraprostatic cyst，源自前列腺旁的胚胎殘留結構）。腺體內囊腫隨去勢可消退，旁前列腺囊腫常需手術切除。犬為主要受影響物種。
-
+description: >-
+  前列腺囊腫分為腺體內囊腫（intraprostatic cyst，與 BPH 相關的腺管擴張）與旁前列腺囊腫（paraprostatic
+  cyst，源自前列腺旁的胚胎殘留結構）。腺體內囊腫隨去勢可消退，旁前列腺囊腫常需手術切除。犬為主要受影響物種。
 aliases:
-  - { alias: 前列腺旁囊腫, language: zh }
-  - { alias: Paraprostatic Cyst, language: en }
-  - { alias: Prostatic Retention Cyst, language: en }
-
+  - alias: 前列腺旁囊腫
+    language: zh
+  - alias: Paraprostatic Cyst
+    language: en
+  - alias: Prostatic Retention Cyst
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓前列腺囊腫極罕見。
-
 etiology:
   categories:
     - name: 囊腫類型
@@ -29,7 +31,6 @@ etiology:
         - 未結紮公犬
         - BPH
         - 高齡
-
 clinicalSigns:
   early:
     - 多數初期無症狀
@@ -41,7 +42,6 @@ clinicalSigns:
     - 嚴重便秘
     - 後肢水腫（壓迫靜脈回流）
     - 繼發感染（發燒、疼痛）
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
@@ -53,7 +53,6 @@ diagnosis:
     - CT（評估囊腫與周圍結構關係）
     - 尿液分析
     - 直腸觸診
-
 treatment:
   principles:
     - 腺體內囊腫：去勢常可消退
@@ -66,17 +65,58 @@ treatment:
     - Omentalization（囊壁無法完整切除時）
     - 長療程抗生素（感染囊腫）
     - 術後影像追蹤
-
 prognosis: 腺體內囊腫去勢後預後極佳。旁前列腺囊腫手術完整切除後預後佳。囊壁殘留者復發率較高。感染囊腫處理較複雜，預後與前列腺膿瘍相似。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Alcoholization as an Alternative Treatment for Prostatic Cyst and Abscess in Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12189533/
     type: research
-    pmid: "40564367"
+    pmid: '40564367'
     relevance: supporting
 pubmedQueries:
   - query: '"prostatic cyst" OR "paraprostatic cyst" AND (veterinary OR canine) AND ("treatment" OR "surgery")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: constipation
+    frequency: common
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: regurgitation
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 前列腺囊腫 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - constipation 相關症狀
+        - abdominal-distension 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 前列腺內或旁的無回音液性腔室。旁前列腺囊腫可延伸至腹腔
+        - name: 腹部 X-ray
+          notes: 骨盆入口或腹腔內巨大軟組織/液性密度腫塊
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 超音波引導穿刺（囊液分析、排除膿瘍）
+        - CT（評估囊腫與周圍結構關係）
+        - 尿液分析
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 腺體內囊腫：去勢常可消退
+        - 旁前列腺囊腫：手術切除 + 去勢
+        - 感染囊腫同前列腺膿瘍處理
+ddxSource: auto-generated

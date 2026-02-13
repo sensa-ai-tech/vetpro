@@ -3,12 +3,13 @@ nameEn: Generalized Demodicosis
 nameZh: 全身性蠕形蟎症
 bodySystem: dermatology
 description: 蠕形蟎（Demodex canis/cati）在全身多處皮膚過度增生引起的嚴重皮膚病。定義為累及 5 個以上病灶或累及 2 個以上體區。常因免疫功能不全（幼犬免疫發育不成熟或成犬免疫抑制）導致蟎蟲失控增生。
-
 aliases:
-  - { alias: "Generalized Demodectic Mange", language: en }
-  - { alias: "泛發性蠕形蟎症", language: zh }
-  - { alias: "全身性毛囊蟲症", language: zh }
-
+  - alias: Generalized Demodectic Mange
+    language: en
+  - alias: 泛發性蠕形蟎症
+    language: zh
+  - alias: 全身性毛囊蟲症
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓較少見。Demodex cati 或 D. gatoi。常與 FIV/FeLV 或免疫抑制相關。
-
 etiology:
   categories:
     - name: 寄生蟲過度增生
@@ -24,7 +24,6 @@ etiology:
         - Demodex canis（犬）/ D. cati（貓）
         - 幼犬免疫系統未成熟
         - 成犬免疫抑制（腫瘤、化療、Cushing）
-
 clinicalSigns:
   early:
     - 多處脫毛（斑塊狀）
@@ -35,14 +34,12 @@ clinicalSigns:
     - 嚴重繼發性膿皮症
     - 皮膚增厚苔蘚化
     - 淋巴結腫大
-
 diagnosis:
   primaryTests:
     - name: 深層皮膚刮片
       notes: 多處取樣。大量成蟲、幼蟲與卵確診
     - name: 毛髮拔取（trichogram）
       notes: 輔助診斷，足部等難刮部位適用
-
 treatment:
   principles:
     - 殺蟎治療
@@ -53,26 +50,55 @@ treatment:
     - 繼發膿皮症：全身性抗生素
     - 定期皮膚刮片追蹤
     - 成犬型：排查甲狀腺功能低下、Cushing、腫瘤
-
 prognosis: 幼犬型使用 Isoxazoline 類藥物預後極佳（治癒率 > 95%）。成犬型預後取決於免疫抑制原因。
-
-
 guidelineRefs:
   - sourceOrg: BMC veterinary research
     title: Critically appraised topic for the most effective and safe treatment for canine generalised demodicosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6323682/
     type: review
-    pmid: "30616591"
+    pmid: '30616591'
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: "Sarolaner/selamectin spot-on: An effective treatment of generalized demodicosis due to Demodex cati in a cat."
+    title: 'Sarolaner/selamectin spot-on: An effective treatment of generalized demodicosis due to Demodex cati in a cat.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12330753/
     type: case-report
-    pmid: "40786743"
+    pmid: '40786743'
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: Oral fluralaner as a treatment for Demodex aurati and Demodex criceti in a golden (Syrian) hamster (Mesocricetus auratus).
+    title: >-
+      Oral fluralaner as a treatment for Demodex aurati and Demodex criceti in a golden (Syrian) hamster (Mesocricetus
+      auratus).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6973213/
     type: case-report
-    pmid: "32020929"
+    pmid: '32020929'
 pubmedQueries:
   - query: '"generalized demodicosis" AND (veterinary OR canine OR feline) AND ("isoxazoline" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: lymphadenopathy
+    frequency: uncommon
+  - symptomId: alopecia
+    frequency: common
+diagnosticAlgorithm:
+  title: 全身性蠕形蟎症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lymphadenopathy 相關症狀
+        - alopecia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 深層皮膚刮片
+          notes: 多處取樣。大量成蟲、幼蟲與卵確診
+        - name: 毛髮拔取（trichogram）
+          notes: 輔助診斷，足部等難刮部位適用
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 殺蟎治療
+        - 控制繼發感染
+        - 成犬型排查免疫抑制原因
+ddxSource: auto-generated

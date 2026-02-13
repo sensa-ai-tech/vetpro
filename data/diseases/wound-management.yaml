@@ -3,15 +3,19 @@ nameEn: Wound Management
 nameZh: 傷口管理
 bodySystem: other
 description: 犬貓皮膚與軟組織創傷的評估、清創與治療的系統性方法。傷口可分為清潔傷（surgical）、清潔污染傷、污染傷與感染傷。正確的傷口管理是促進癒合、預防感染與減少瘢痕的基礎。
-
 aliases:
-  - { alias: 傷口處理, language: zh }
-  - { alias: 創傷管理, language: zh }
-  - { alias: 傷口照護, language: zh }
-  - { alias: Wound Care, language: en }
-  - { alias: Wound Healing, language: en }
-  - { alias: Wound Therapy, language: en }
-
+  - alias: 傷口處理
+    language: zh
+  - alias: 創傷管理
+    language: zh
+  - alias: 傷口照護
+    language: zh
+  - alias: Wound Care
+    language: en
+  - alias: Wound Healing
+    language: en
+  - alias: Wound Therapy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -21,7 +25,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓的咬傷（cat bite wounds）因牙齒細長，易造成深部穿刺傷與膿瘍。貓咬傷的感染率高達 50-80%。Pasteurella multocida 為貓咬傷最常見致病菌。外出貓的打鬥傷口是常見的急診原因。
-
 etiology:
   categories:
     - name: 創傷類型
@@ -53,7 +56,6 @@ etiology:
         - 尿毒症（減緩肉芽組織形成並導致膠原品質下降）
         - 肥胖（皮下脂肪層血供差且縫合固定力不足）
         - 溫度因素（理想癒合溫度約 30°C，降至 12°C 可使傷口抗張強度下降 20%）
-
 clinicalSigns:
   early:
     - 出血（程度依傷口深度與血管損傷而異）
@@ -73,18 +75,17 @@ clinicalSigns:
     - 傷口裂開（dehiscence）
     - 慢性不癒合傷口（chronic non-healing wound）
     - 瘢痕攣縮
-
 diagnosis:
   primaryTests:
     - name: 傷口評估
-      notes: "系統性評估：傷口位置、大小、深度、組織活力、污染程度、異物存在。評估傷口分類（清潔至感染傷）。評估周圍組織灌流。需全身麻醉或鎮靜下進行完整探查。"
+      notes: 系統性評估：傷口位置、大小、深度、組織活力、污染程度、異物存在。評估傷口分類（清潔至感染傷）。評估周圍組織灌流。需全身麻醉或鎮靜下進行完整探查。
     - name: 細菌培養與敏感性試驗
-      notes: "感染傷口或治療反應不佳時送檢。取深層組織樣本（非表面拭子）。需氧與厭氧培養均需執行。犬咬傷常見菌：Pasteurella、Staphylococcus、Streptococcus、厭氧菌。"
+      notes: 感染傷口或治療反應不佳時送檢。取深層組織樣本（非表面拭子）。需氧與厭氧培養均需執行。犬咬傷常見菌：Pasteurella、Staphylococcus、Streptococcus、厭氧菌。
   imaging:
     - name: X 光
-      notes: "評估骨折、異物（金屬、礫石）、皮下氣腫（提示產氣菌感染或穿透性損傷）。"
+      notes: 評估骨折、異物（金屬、礫石）、皮下氣腫（提示產氣菌感染或穿透性損傷）。
     - name: 超音波
-      notes: "偵測深部膿瘍、液體蓄積、非金屬異物（木刺、植物碎片）。"
+      notes: 偵測深部膿瘍、液體蓄積、非金屬異物（木刺、植物碎片）。
   differentialDiagnoses:
     - 皮膚腫瘤 (Cutaneous Neoplasia) — 慢性不癒合傷口需排除
     - 真菌性皮膚感染 (Fungal Skin Infection)
@@ -96,7 +97,6 @@ diagnosis:
     - 生化（白蛋白、血糖、腎功能，影響癒合因素）
     - 凝血功能（大量出血或疑似凝血異常時）
     - 細胞學檢查（傷口印片/壓片，快速評估細菌與發炎細胞）
-
 treatment:
   principles:
     - 初級處置：止血、清潔、穩定患者
@@ -104,50 +104,52 @@ treatment:
     - 根據傷口分類選擇閉合策略
     - 適當的疼痛管理
   general:
-    - "初步處理：無菌水溶性潤滑劑填充傷口 → 剃毛周圍區域 → 沖洗"
-    - "傷口沖洗：大量溫熱生理食鹽水或 LRS 沖洗（7 psi 壓力，18G 針頭 + 35 mL 注射器）。嚴重污染傷口需 500-1000 mL 以上。"
-    - "0.05% Chlorhexidine 溶液沖洗（可用於污染傷口，避免使用於開放關節或體腔）"
-    - "清創術：銳利清創（scalpel 或剪刀移除壞死與失活組織）。分層清創保留有活力組織。"
-    - "傷口閉合策略：一期閉合（< 6 小時清潔傷）、延遲一期閉合（3-5 天後閉合）、二期癒合（肉芽組織填充）、二期閉合（肉芽床上閉合）"
-    - "濕潤傷口敷料：Hydrogel（乾燥傷口保濕）、Calcium alginate（滲出液多的傷口）、Foam（中度滲出）、Honey-based dressing（抗菌促癒合）"
-    - "負壓傷口治療（NPWT/VAC）：-75 至 -125 mmHg 持續或間歇負壓，促進大面積或複雜傷口肉芽組織生長"
-    - "疼痛管理：Methadone 0.1-0.5 mg/kg IM/IV q4-6h 或 Buprenorphine 0.02 mg/kg IV/IM q6-8h"
-    - "NSAID（術後穩定患者）：Meloxicam 0.1 mg/kg SC 首劑，後 0.05 mg/kg PO SID（貓）"
-    - "抗生素（感染傷口）：Amoxicillin-clavulanate 12.5-25 mg/kg PO q12h（咬傷首選）或 Cefazolin 22 mg/kg IV q8h（住院嚴重感染）"
-    - "清潔傷口通常不需預防性抗生素；污染或感染傷口需要"
-    - "傷口癒合三階段：(1) 炎症期（止血→嗜中性球→巨噬細胞為主，巨噬細胞為癒合必要細胞）；(2) 增殖期（成纖維細胞於傷後約 3 天出現，分泌基質與膠原；微血管入侵形成肉芽組織）；(3) 重塑期（膠原纖維沿張力線重組，可持續長達 2 年，多數傷口最終強度僅恢復原組織的 80-85%）"
-    - "上皮化（Epithelialization）：基底上皮細胞在傷後數小時內即開始遷移。正確閉合的手術傷口可在 48 小時內完成上皮覆蓋。開放傷口需在健康肉芽組織床上方才能進行上皮化。乾燥環境會延緩上皮化"
-    - "Elizabeth collar 防止舔咬傷口"
-
-prognosis: 預後取決於傷口類型、大小、污染程度及處理時機。特殊組織如膀胱與骨骼癒合後可恢復 100% 原始強度，但多數軟組織傷口最終僅恢復 80-85% 的原始抗張強度。大多數正確管理的急性傷口癒合良好。貓咬傷膿瘍經切開引流與抗生素治療後預後佳。撕脫傷（degloving）可能需要多次手術與長期照護。慢性不癒合傷口需排除基礎疾病（如內分泌異常）。筋膜壞死性感染為嚴重併發症，死亡率高。營養狀態良好且傷口護理正確的動物癒合最佳。
-
+    - 初步處理：無菌水溶性潤滑劑填充傷口 → 剃毛周圍區域 → 沖洗
+    - 傷口沖洗：大量溫熱生理食鹽水或 LRS 沖洗（7 psi 壓力，18G 針頭 + 35 mL 注射器）。嚴重污染傷口需 500-1000 mL 以上。
+    - 0.05% Chlorhexidine 溶液沖洗（可用於污染傷口，避免使用於開放關節或體腔）
+    - 清創術：銳利清創（scalpel 或剪刀移除壞死與失活組織）。分層清創保留有活力組織。
+    - 傷口閉合策略：一期閉合（< 6 小時清潔傷）、延遲一期閉合（3-5 天後閉合）、二期癒合（肉芽組織填充）、二期閉合（肉芽床上閉合）
+    - 濕潤傷口敷料：Hydrogel（乾燥傷口保濕）、Calcium alginate（滲出液多的傷口）、Foam（中度滲出）、Honey-based dressing（抗菌促癒合）
+    - 負壓傷口治療（NPWT/VAC）：-75 至 -125 mmHg 持續或間歇負壓，促進大面積或複雜傷口肉芽組織生長
+    - 疼痛管理：Methadone 0.1-0.5 mg/kg IM/IV q4-6h 或 Buprenorphine 0.02 mg/kg IV/IM q6-8h
+    - NSAID（術後穩定患者）：Meloxicam 0.1 mg/kg SC 首劑，後 0.05 mg/kg PO SID（貓）
+    - 抗生素（感染傷口）：Amoxicillin-clavulanate 12.5-25 mg/kg PO q12h（咬傷首選）或 Cefazolin 22 mg/kg IV q8h（住院嚴重感染）
+    - 清潔傷口通常不需預防性抗生素；污染或感染傷口需要
+    - >-
+      傷口癒合三階段：(1) 炎症期（止血→嗜中性球→巨噬細胞為主，巨噬細胞為癒合必要細胞）；(2) 增殖期（成纖維細胞於傷後約 3 天出現，分泌基質與膠原；微血管入侵形成肉芽組織）；(3) 重塑期（膠原纖維沿張力線重組，可持續長達
+      2 年，多數傷口最終強度僅恢復原組織的 80-85%）
+    - 上皮化（Epithelialization）：基底上皮細胞在傷後數小時內即開始遷移。正確閉合的手術傷口可在 48 小時內完成上皮覆蓋。開放傷口需在健康肉芽組織床上方才能進行上皮化。乾燥環境會延緩上皮化
+    - Elizabeth collar 防止舔咬傷口
+prognosis: >-
+  預後取決於傷口類型、大小、污染程度及處理時機。特殊組織如膀胱與骨骼癒合後可恢復 100% 原始強度，但多數軟組織傷口最終僅恢復 80-85%
+  的原始抗張強度。大多數正確管理的急性傷口癒合良好。貓咬傷膿瘍經切開引流與抗生素治療後預後佳。撕脫傷（degloving）可能需要多次手術與長期照護。慢性不癒合傷口需排除基礎疾病（如內分泌異常）。筋膜壞死性感染為嚴重併發症，死亡率高。營養狀態良好且傷口護理正確的動物癒合最佳。
 guidelineRefs:
   - sourceOrg: Veterinary Surgery
     title: Principles of wound management and reconstruction
     url: https://pubmed.ncbi.nlm.nih.gov/28146288/
     type: review
-    pmid: "28146288"
+    pmid: '28146288'
   - sourceOrg: Veterinary Clinics of North America Small Animal Practice
-    title: "Wound management: approach to acute traumatic wounds"
+    title: 'Wound management: approach to acute traumatic wounds'
     url: https://pubmed.ncbi.nlm.nih.gov/16564070/
     type: review
-    pmid: "16564070"
+    pmid: '16564070'
   - sourceOrg: Journal of Small Animal Practice
     title: Negative pressure wound therapy in small animal practice
     url: https://pubmed.ncbi.nlm.nih.gov/24372240/
     type: review
-    pmid: "24372240"
+    pmid: '24372240'
   - sourceOrg: Veterinary sciences
-    title: "Negative-Pressure Wound Therapy (NPWT) in Horses: A Scoping Review."
+    title: 'Negative-Pressure Wound Therapy (NPWT) in Horses: A Scoping Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10458497/
     type: review
-    pmid: "37624295"
+    pmid: '37624295'
     relevance: primary
   - sourceOrg: Molecules (Basel, Switzerland)
     title: Biodegradable Polymers in Veterinary Medicine-A Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10892962/
     type: review
-    pmid: "38398635"
+    pmid: '38398635'
     relevance: primary
 pubmedQueries:
   - query: '"wound management" AND (dog OR cat OR canine OR feline) AND ("debridement" OR "wound healing")'
@@ -156,6 +158,43 @@ pubmedQueries:
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "EMG"
-  sectionTitle: "WOUND HEALING"
+  chapter: EMG
+  sectionTitle: WOUND HEALING
   pdfPage: 1743
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 傷口管理 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 傷口評估
+          notes: 系統性評估：傷口位置、大小、深度、組織活力、污染程度、異物存在。評估傷口分類（清潔至感染傷）。評估周圍組織灌流。需全身麻醉或鎮靜下進行完整探查。
+        - name: 細菌培養與敏感性試驗
+          notes: 感染傷口或治療反應不佳時送檢。取深層組織樣本（非表面拭子）。需氧與厭氧培養均需執行。犬咬傷常見菌：Pasteurella、Staphylococcus、Streptococcus、厭氧菌。
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC（白血球計數與分類，評估感染嚴重程度）
+        - 生化（白蛋白、血糖、腎功能，影響癒合因素）
+        - 凝血功能（大量出血或疑似凝血異常時）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 初級處置：止血、清潔、穩定患者
+        - 清創是傷口管理的基石（debridement）
+        - 根據傷口分類選擇閉合策略
+ddxSource: auto-generated

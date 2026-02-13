@@ -3,11 +3,11 @@ nameEn: Dermatophyte Culture Interpretation
 nameZh: Dermatophyte Culture Interpretation
 bodySystem: dermatology
 description: 皮膚疾病,可能影響皮膚完整性、毛髮生長或引起不適。需皮膚科檢查與實驗室診斷確定病因。
-
 aliases:
-  - { alias: Dermatophyte Culture Interpretation, language: zh }
-  - { alias: Dermatophyte Culture Interpretation, language: en }
-
+  - alias: Dermatophyte Culture Interpretation
+    language: zh
+  - alias: Dermatophyte Culture Interpretation
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 感染(細菌、真菌、寄生蟲)
       examples:
         - 過敏
         - 免疫介導
-
 clinicalSigns:
   early:
     - 搔癢
@@ -32,53 +30,73 @@ clinicalSigns:
   progressive:
     - 皮膚增厚
     - 色素沉著
-
 diagnosis:
   primaryTests:
     - name: 皮膚刮搔檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: 毛髮拔除檢查
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 局部治療(藥浴、藥膏)
     - 全身性抗生素或抗真菌藥
-
 prognosis:
-  general: "預後取決於根本病因。感染性疾病治療後多可痊癒,免疫或遺傳性疾病需長期管理。"
-
+  general: 預後取決於根本病因。感染性疾病治療後多可痊癒,免疫或遺傳性疾病需長期管理。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: Pathogens (Basel, Switzerland)
     title: Current Topics in Dermatophyte Classification and Clinical Diagnosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9502385/
     type: review
-    pmid: "36145389"
+    pmid: '36145389'
   - sourceOrg: BMC veterinary research
-    title: "Chrysosporium articulatum mimicking Trichophyton spp. infection in a cat: a case presentation and literature review."
+    title: >-
+      Chrysosporium articulatum mimicking Trichophyton spp. infection in a cat: a case presentation and literature
+      review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11316419/
     type: review
-    pmid: "39127672"
+    pmid: '39127672'
   - sourceOrg: Journal of fungi (Basel, Switzerland)
-    title: Towards a Standardized Procedure for the Production of Infective Spores to Study the Pathogenesis of Dermatophytosis.
+    title: >-
+      Towards a Standardized Procedure for the Production of Infective Spores to Study the Pathogenesis of
+      Dermatophytosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8709344/
     type: research
-    pmid: "34947011"
+    pmid: '34947011'
   - sourceOrg: Frontiers in cellular and infection microbiology
     title: Identification of Zoophilic Dermatophytes Using MALDI-TOF Mass Spectrometry.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8113951/
     type: research
-    pmid: "33996620"
+    pmid: '33996620'
   - sourceOrg: International journal of environmental research and public health
-    title: Arthroderma tuberculatum and Arthroderma multifidum Isolated from Soils in Rook (Corvus frugilegus) Colonies as Producers of Keratinolytic Enzymes and Mineral Forms of N and S.
+    title: >-
+      Arthroderma tuberculatum and Arthroderma multifidum Isolated from Soils in Rook (Corvus frugilegus) Colonies as
+      Producers of Keratinolytic Enzymes and Mineral Forms of N and S.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7763491/
     type: research
-    pmid: "33302453"
+    pmid: '33302453'
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: common
+diagnosticAlgorithm:
+  title: Dermatophyte Culture Interpretation 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 皮膚刮搔檢查
+          notes: 需詳細評估
+        - name: 毛髮拔除檢查
+          notes: 協助確診
+ddxSource: auto-generated

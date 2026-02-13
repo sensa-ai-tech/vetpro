@@ -3,17 +3,16 @@ nameEn: Norwegian Forest Cat Pyruvate Kinase Deficiency
 nameZh: 挪威森林貓丙酮酸激酶缺乏症
 bodySystem: hematology
 description: 挪威森林貓的遺傳性溶血性貧血,與阿比西尼亞貓相同的PKLR基因突變。紅血球壽命縮短導致間歇性貧血,變異度大。
-
 aliases:
-  - { alias: PK缺乏症, language: zh }
-  - { alias: PK Deficiency, language: en }
-
+  - alias: PK缺乏症
+    language: zh
+  - alias: PK Deficiency
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 挪威森林貓,體染色體隱性遺傳
-
 etiology:
   categories:
     - name: 遺傳性酶缺陷
@@ -21,7 +20,6 @@ etiology:
         - PKLR基因突變
         - 紅血球代謝障礙
         - 體染色體隱性遺傳
-
 clinicalSigns:
   early:
     - 間歇性虛弱
@@ -31,25 +29,51 @@ clinicalSigns:
     - 溶血性貧血
     - 黃疸
     - 脾腫大
-
 diagnosis:
   primaryTests:
     - name: 全血球計數
-      notes: "再生性貧血"
+      notes: 再生性貧血
     - name: PKLR基因檢測
-      notes: "確診"
+      notes: 確診
   differentialDiagnoses:
     - IMHA
     - 感染性貧血
-
 treatment:
   medical:
     - 支持性治療
     - 輸血(嚴重時)
     - 定期監測
-
 prognosis:
-  general: "變異大,輕症可正常壽命,重症可能早期死亡。"
-
+  general: 變異大,輕症可正常壽命,重症可能早期死亡。
 prevention:
   - 基因檢測
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: splenomegaly
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: jaundice
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 挪威森林貓丙酮酸激酶缺乏症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - pallor-cyanosis 相關症狀
+        - splenomegaly 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 全血球計數
+          notes: 再生性貧血
+        - name: PKLR基因檢測
+          notes: 確診
+ddxSource: auto-generated

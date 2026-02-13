@@ -3,12 +3,13 @@ nameEn: Pulmonary Metastasis
 nameZh: 肺轉移
 bodySystem: gastrointestinal
 description: 肺轉移為惡性腫瘤經血行途徑擴散至肺部的繼發性腫瘤。肺臟因血流豐富為最常見的遠處轉移器官。犬隻常見原發腫瘤包括骨肉瘤、血管肉瘤、乳腺瘤、甲狀腺癌及黑色素瘤。肺轉移的發現通常代表晚期疾病。
-
 aliases:
-  - { alias: 肺部轉移瘤, language: zh }
-  - { alias: Lung Metastasis, language: en }
-  - { alias: Metastatic Lung Disease, language: en }
-
+  - alias: 肺部轉移瘤
+    language: zh
+  - alias: Lung Metastasis
+    language: en
+  - alias: Metastatic Lung Disease
+    language: en
 species:
   - speciesCommon: dog
     prevalence: common
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓隻常見原發腫瘤包括乳腺癌、鱗狀細胞癌、fibrosarcoma。肺指轉移（lung-digit syndrome）為貓隻特有現象。
-
 etiology:
   categories:
     - name: 常見原發腫瘤（犬）
@@ -32,7 +32,6 @@ etiology:
         - 乳腺腺癌
         - 鱗狀細胞癌
         - 肺指轉移（lung-digit syndrome，原發肺癌轉移至指端）
-
 clinicalSigns:
   early:
     - 多數早期無呼吸道症狀
@@ -45,14 +44,12 @@ clinicalSigns:
     - 呼吸困難
     - 體重減輕
     - 胸水（部分病例）
-
 diagnosis:
   primaryTests:
     - name: 三視角胸腔 X 光
       notes: 多發性圓形結節性病變（cannon ball lesions）為典型表現。單一大型轉移結節亦可見。瀰漫性間質型浸潤（lymphangitic spread）較少見。
     - name: 胸腔 CT
       notes: 較 X 光更敏感，可偵測 <3mm 的微小結節。用於手術計劃（單一轉移灶評估切除可行性）。引導經皮細針穿刺。
-
 treatment:
   principles:
     - 肺轉移通常代表晚期疾病
@@ -64,41 +61,77 @@ treatment:
     - 化療（依原發腫瘤類型選擇方案）
     - 姑息性治療：止痛、抗咳嗽
     - 安樂死評估（嚴重呼吸困難影響生活品質時）
-
 prognosis: 預後取決於原發腫瘤類型、轉移灶數量與大小。骨肉瘤肺轉移後中位存活時間約 2-4 個月。單一轉移灶切除後可延長存活時間。瀰漫性轉移預後極差。貓隻肺指轉移預後不良。
-
-
 guidelineRefs:
-  - sourceOrg: "Cancer immunology, immunotherapy : CII"
+  - sourceOrg: 'Cancer immunology, immunotherapy : CII'
     title: Fighting breast cancer stem cells through the immune-targeting of the xCT cystine-glutamate antiporter.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11028170/
     type: review
-    pmid: "29947961"
+    pmid: '29947961'
     relevance: supporting
   - sourceOrg: Journal of toxicologic pathology
     title: Case report of pulmonary metastasis in a male Wistar rat glioblastoma model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7890164/
     type: case-report
-    pmid: "33627949"
+    pmid: '33627949'
     relevance: supporting
   - sourceOrg: Journal of toxicologic pathology
     title: A spontaneous basal cell carcinoma with pulmonary metastasis in a 6-week-old SD rat.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5660954/
     type: case-report
-    pmid: "29097842"
+    pmid: '29097842'
     relevance: supporting
   - sourceOrg: Revista do Colegio Brasileiro de Cirurgioes
-    title: "A comparative cost analysis study of pulmonary robotic and video-assisted lobectomy: results of a randomized controlled trial (BRAVO Study)."
+    title: >-
+      A comparative cost analysis study of pulmonary robotic and video-assisted lobectomy: results of a randomized
+      controlled trial (BRAVO Study).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12401107/
     type: research
-    pmid: "40834224"
+    pmid: '40834224'
     relevance: supporting
   - sourceOrg: Materials today. Bio
-    title: "Emulsifying Lipiodol with pH-sensitive DOX@HmA nanoparticles for hepatocellular carcinoma TACE treatment eliminate metastasis."
+    title: >-
+      Emulsifying Lipiodol with pH-sensitive DOX@HmA nanoparticles for hepatocellular carcinoma TACE treatment eliminate
+      metastasis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10750100/
     type: research
-    pmid: "38149018"
+    pmid: '38149018'
     relevance: supporting
 pubmedQueries:
   - query: '"pulmonary metastasis" AND (veterinary OR canine OR feline) AND ("prognosis" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: exercise-intolerance
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肺轉移 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 三視角胸腔 X 光
+          notes: 多發性圓形結節性病變（cannon ball lesions）為典型表現。單一大型轉移結節亦可見。瀰漫性間質型浸潤（lymphangitic spread）較少見。
+        - name: 胸腔 CT
+          notes: 較 X 光更敏感，可偵測 <3mm 的微小結節。用於手術計劃（單一轉移灶評估切除可行性）。引導經皮細針穿刺。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 肺轉移通常代表晚期疾病
+        - 治療以原發腫瘤化療為主
+        - 單一轉移灶可考慮手術切除
+ddxSource: auto-generated

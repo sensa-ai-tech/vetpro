@@ -3,11 +3,11 @@ nameEn: Mediastinal Lymphoma
 nameZh: 縱膈淋巴瘤
 bodySystem: oncology
 description: 原發於前縱膈（胸腺或縱膈淋巴結）的淋巴瘤。貓較犬常見。多為 T 細胞型。年輕 FeLV 陽性貓好發。可造成胸腔積液與呼吸困難。
-
 aliases:
-  - { alias: "Thymic Lymphoma", language: en }
-  - { alias: "前縱膈淋巴瘤", language: zh }
-
+  - alias: Thymic Lymphoma
+    language: en
+  - alias: 前縱膈淋巴瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: common
     notes: 貓常見。年輕 FeLV 陽性貓好發。Siamese 品種傾向。
-
 etiology:
   categories:
     - name: 腫瘤性
@@ -23,7 +22,6 @@ etiology:
         - 胸腺淋巴球惡性增生
         - FeLV 相關（貓）
         - 多為 T 細胞型
-
 clinicalSigns:
   early:
     - 呼吸困難（最常見主訴）
@@ -34,7 +32,6 @@ clinicalSigns:
     - 前肢/面部水腫（前腔靜脈壓迫）
     - 吞嚥困難
     - 高鈣血症
-
 diagnosis:
   primaryTests:
     - name: 胸腔 X 光
@@ -43,7 +40,6 @@ diagnosis:
       notes: 惡性淋巴球
     - name: FeLV/FIV 檢測（貓）
       notes: 預後與治療規劃相關
-
 treatment:
   principles:
     - 化療為主要治療
@@ -53,36 +49,76 @@ treatment:
     - 化療（CHOP 或 COP 方案）
     - FeLV 陽性貓化療反應率較低
     - Prednisolone 作為初始穩定
-
 prognosis: 犬中位存活 6-12 個月（化療）。FeLV 陰性貓化療反應良好（中位存活 9-12 個月）。FeLV 陽性貓預後較差。高鈣血症為負面預後因子。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary and animal science
-    title: Feline lymphoma associated with feline leukemia virus (FeLV) and feline immunodeficiency virus (FIV) infections in Brazil- Systematic review.
+    title: >-
+      Feline lymphoma associated with feline leukemia virus (FeLV) and feline immunodeficiency virus (FIV) infections in
+      Brazil- Systematic review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12529507/
     type: review
-    pmid: "41111634"
+    pmid: '41111634'
   - sourceOrg: Iranian journal of veterinary research
     title: Use of a depot steroid formulation with CHOP-based protocol in the treatment of mediastinal lymphoma in cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6056137/
     type: case-report
-    pmid: "30046327"
+    pmid: '30046327'
   - sourceOrg: Veterinary sciences
-    title: "Feline Lymphoma in Focus: Examining the Patterns and Types in Croatia's Pathological Records."
+    title: 'Feline Lymphoma in Focus: Examining the Patterns and Types in Croatia''s Pathological Records.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12567832/
     type: research
-    pmid: "41150128"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: Effectiveness and Adverse Events of Cyclophosphamide, Vincristine, and Prednisolone Chemotherapy in Feline Mediastinal Lymphoma Naturally Infected with Feline Leukemia Virus.
+    pmid: '41150128'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Effectiveness and Adverse Events of Cyclophosphamide, Vincristine, and Prednisolone Chemotherapy in Feline
+      Mediastinal Lymphoma Naturally Infected with Feline Leukemia Virus.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8997098/
     type: research
-    pmid: "35405890"
+    pmid: '35405890'
   - sourceOrg: Brazilian journal of veterinary medicine
-    title: "Retrospective study of retroviruses by immunoenzymatic test on cats in Grande Vit&#xf3;ria (ES, Brazil) and associated neoplasms."
+    title: >-
+      Retrospective study of retroviruses by immunoenzymatic test on cats in Grande Vit&#xf3;ria (ES, Brazil) and
+      associated neoplasms.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9179204/
     type: research
-    pmid: "35749085"
+    pmid: '35749085'
 pubmedQueries:
   - query: '"mediastinal lymphoma" AND (veterinary OR canine OR feline) AND ("chemotherapy" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 胸腺淋巴瘤 診斷流程
+  steps:
+    - step: 1
+      action: 胸部影像
+      details: 胸部X光確認前縱膈腫塊和胸腔積液
+      findings:
+        - 前縱膈腫塊
+        - 胸腔積液
+    - step: 2
+      action: 穿刺細胞學
+      details: 超音波引導FNA或胸水細胞學
+      findings:
+        - 大量淋巴母細胞
+        - 流式細胞術確認T/B分型
+    - step: 3
+      action: FeLV/FIV+分期
+      details: FeLV/FIV檢測、血液生化、骨髓穿刺
+      findings:
+        - FeLV狀態
+        - 高鈣血症（犬較常見）
+    - step: 4
+      action: 開始化療
+      details: 穩定患者後開始CHOP或改良方案化療
+      findings:
+        - 化療反應評估
+        - 胸部X光追蹤
+clinicalPearls:
+  - 年輕貓+前縱膈腫塊+胸腔積液=首先排除FeLV相關淋巴瘤
+  - 胸腺淋巴瘤（化療治療）vs 胸腺上皮腫瘤（手術治療）的鑑別至關重要——細胞學或流式細胞術可區分
+  - 化療反應通常非常迅速——呼吸困難可在開始Prednisolone後24-48小時內改善
+monitoringItems:
+  - 胸部X光（化療期間q2-4週評估腫瘤縮小和積液）
+  - CBC（化療前每次確認白血球足夠）
+  - 血清鈣濃度（犬，監測副腫瘤高鈣血症）
+  - FeLV病毒載量（貓，評估預後）
+ddxSource: book

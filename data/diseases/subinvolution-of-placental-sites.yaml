@@ -2,13 +2,16 @@ slug: subinvolution-of-placental-sites
 nameEn: Subinvolution of Placental Sites
 nameZh: 胎盤附著部位退化不全
 bodySystem: reproductive
-description: 胎盤附著部位退化不全 (subinvolution of placental sites, SIPS) 為產後子宮胎盤附著處正常復原過程延遲或不完全，導致持續性子宮出血。好發於年輕初產母犬。正常產後出血（惡露）通常 1-3 週停止，SIPS 者持續超過 3 週。多數為自限性。
-
+description: >-
+  胎盤附著部位退化不全 (subinvolution of placental sites, SIPS) 為產後子宮胎盤附著處正常復原過程延遲或不完全，導致持續性子宮出血。好發於年輕初產母犬。正常產後出血（惡露）通常 1-3
+  週停止，SIPS 者持續超過 3 週。多數為自限性。
 aliases:
-  - { alias: 胎盤部位退化不全, language: zh }
-  - { alias: SIPS, language: en }
-  - { alias: Postpartum Hemorrhage, language: en }
-
+  - alias: 胎盤部位退化不全
+    language: zh
+  - alias: SIPS
+    language: en
+  - alias: Postpartum Hemorrhage
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓 SIPS 罕見。產後持續出血需排除子宮炎與凝血障礙。
-
 etiology:
   categories:
     - name: 致病機制
@@ -30,7 +32,6 @@ etiology:
         - 年輕初產母犬（<3 歲）
         - 大胎窩
         - 品種傾向（未明確證實）
-
 clinicalSigns:
   early:
     - 產後惡露持續超過 3 週
@@ -41,7 +42,6 @@ clinicalSigns:
     - 嚴重者貧血（蒼白、心搏過速）
     - 多數無發燒或全身性病徵
     - 罕見：大量出血需緊急處理
-
 diagnosis:
   primaryTests:
     - name: 病史與臨床表現
@@ -53,7 +53,6 @@ diagnosis:
     - 腹部超音波（子宮壁胎盤附著部位增厚、排除蓄膿）
     - 凝血功能（排除凝血障礙）
     - 陰道細胞學（與感染鑑別）
-
 treatment:
   principles:
     - 多數自限性，觀察為主
@@ -67,9 +66,52 @@ treatment:
     - OHE（嚴重持續出血或不需繁殖者為根治方法）
     - 鐵劑補充（慢性失血性貧血）
     - 監測活動力、食慾、黏膜顏色
-
 prognosis: SIPS 預後極佳，絕大多數在 7-12 週內自行消退。嚴重貧血者需支持但存活率高。OHE 可根治。再次妊娠後復發風險存在。多數母犬不影響下次繁殖。
-
 pubmedQueries:
   - query: '"subinvolution of placental sites" AND (veterinary OR canine) AND ("treatment" OR "postpartum" OR "hemorrhage")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 胎盤附著部位退化不全 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估產後持續性陰道出血
+      findings:
+        - 產後超過4-6週仍有陰道出血
+        - 年輕母犬首次生產多見
+        - 全身狀態通常良好
+        - 出血量通常不大
+    - step: 2
+      action: 鑑別診斷
+      details: 排除其他產後出血原因
+      findings:
+        - 超音波排除子宮蓄膿
+        - 排除胎盤滯留
+        - 排除凝血功能障礙
+        - 排除子宮腫瘤
+    - step: 3
+      action: 確診
+      details: 通常為排除性診斷或組織學確認
+      findings:
+        - 組織學見胎盤附著處滋養層細胞殘存
+        - 子宮壁血管正常退化不全
+        - 通常自行消退
+        - 持續性出血可能需要卵巢子宮切除術
+clinicalPearls:
+  - SIPS 的關鍵特徵：持續出血但母犬整體狀況良好（無發燒、無疼痛）
+  - 與子宮蓄膿鑑別：SIPS 分泌物為血性非膿性，且無全身感染徵兆
+  - 年輕初產母犬產後持續出血，首先考慮 SIPS
+  - 組織病理學可見滋養層細胞侵入子宮肌層為確診依據
+monitoringItems:
+  - 每 1-2 週 PCV 監測評估貧血程度
+  - 出血量和分泌物性質變化
+  - 定期超音波追蹤子宮大小變化
+  - 體重和整體狀況評估
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+ddxSource: book

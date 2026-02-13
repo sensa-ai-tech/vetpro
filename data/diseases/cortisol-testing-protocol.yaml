@@ -3,11 +3,11 @@ nameEn: Cortisol Testing Protocol
 nameZh: 皮質醇檢測方案
 bodySystem: other
 description: 犬貓皮質醇檢測方案,包括基礎皮質醇、ACTH刺激試驗、dexamethasone抑制試驗。用於診斷庫欣氏症、愛迪生氏症、醫源性腎上腺抑制等。
-
 aliases:
-  - { alias: 皮質醇檢查, language: zh }
-  - { alias: Cortisol testing, language: en }
-
+  - alias: 皮質醇檢查
+    language: zh
+  - alias: Cortisol testing
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓腎上腺疾病罕見
-
 etiology:
   categories:
     - name: 腎上腺疾病
@@ -25,64 +24,91 @@ etiology:
         - 庫欣氏症(皮質醇過多)
         - 愛迪生氏症(皮質醇不足)
         - 醫源性腎上腺抑制
-
 clinicalSigns:
   early:
     - 皮質醇檢測為診斷工具
   progressive:
     - 庫欣:多飲多尿、腹部膨大、脫毛
     - 愛迪生:虛弱、嘔吐、低血糖
-
 diagnosis:
   primaryTests:
     - name: ACTH刺激試驗
-      notes: "診斷愛迪生氏症及醫源性腎上腺抑制,監測庫欣治療"
+      notes: 診斷愛迪生氏症及醫源性腎上腺抑制,監測庫欣治療
     - name: 低劑量dexamethasone抑制試驗(LDDST)
-      notes: "庫欣氏症篩檢,敏感度高"
+      notes: 庫欣氏症篩檢,敏感度高
     - name: 高劑量dexamethasone抑制試驗(HDDST)
-      notes: "區分腦下垂體或腎上腺源性庫欣"
+      notes: 區分腦下垂體或腎上腺源性庫欣
   differentialDiagnoses:
     - 庫欣氏症(腦下垂體或腎上腺)
     - 愛迪生氏症
     - 醫源性腎上腺抑制
-
 treatment:
   medical:
     - 庫欣:trilostane或mitotane
     - 愛迪生:prednisone + fludrocortisone
-
 prognosis:
-  general: "腎上腺疾病需長期管理,定期監測皮質醇濃度。"
-
+  general: 腎上腺疾病需長期管理,定期監測皮質醇濃度。
 prevention:
   - 遵循標準化檢測流程
   - ACTH刺激前後採血
   - 定期監測調整藥物
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Testing the Level of Cortisol in Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12070829/
     type: review
-    pmid: "40362012"
+    pmid: '40362012'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Hypoadrenocorticism in cats: a 40-year update."
+    title: 'Hypoadrenocorticism in cats: a 40-year update.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11437538/
     type: review
-    pmid: "39325772"
+    pmid: '39325772'
   - sourceOrg: Scientific reports
     title: Salivary cortisol is an unreliable correlate of serum cortisol in adult pet dogs and assistance dog puppies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12062208/
     type: research
-    pmid: "40341056"
+    pmid: '40341056'
   - sourceOrg: BMC veterinary research
-    title: "Feasibility and usefulness of in-hospital and at-home salivary sampling in healthy dogs and trilostane-treated dogs with Cushing's syndrome: a prospective observational study."
+    title: >-
+      Feasibility and usefulness of in-hospital and at-home salivary sampling in healthy dogs and trilostane-treated
+      dogs with Cushing's syndrome: a prospective observational study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12548268/
     type: research
-    pmid: "41131585"
+    pmid: '41131585'
   - sourceOrg: BMC veterinary research
     title: A pilot study on alternative blood sampling methods in pigs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12093905/
     type: research
-    pmid: "40400004"
+    pmid: '40400004'
+associatedSymptoms:
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: alopecia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 皮質醇檢測方案 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - abdominal-distension 相關症狀
+        - polyuria-polydipsia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: ACTH刺激試驗
+          notes: 診斷愛迪生氏症及醫源性腎上腺抑制,監測庫欣治療
+        - name: 低劑量dexamethasone抑制試驗(LDDST)
+          notes: 庫欣氏症篩檢,敏感度高
+        - name: 高劑量dexamethasone抑制試驗(HDDST)
+          notes: 區分腦下垂體或腎上腺源性庫欣
+ddxSource: auto-generated

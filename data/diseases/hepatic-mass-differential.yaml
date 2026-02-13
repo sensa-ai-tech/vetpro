@@ -3,11 +3,11 @@ nameEn: Hepatic Mass Differential
 nameZh: 肝腫塊鑑別診斷
 bodySystem: oncology
 description: 肝臟腫塊的系統性鑑別診斷,需區分良性或惡性、原發或轉移性。常見於老年犬貓的超音波偶發現。
-
 aliases:
-  - { alias: 肝臟腫瘤鑑別, language: zh }
-  - { alias: Liver Mass Workup, language: en }
-
+  - alias: 肝臟腫瘤鑑別
+    language: zh
+  - alias: Liver Mass Workup
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 常見膽管細胞癌、轉移性腫瘤、淋巴瘤
-
 etiology:
   categories:
     - name: 良性
@@ -32,7 +31,6 @@ etiology:
     - name: 非腫瘤性
       examples:
         - 肝膿瘍、肉芽腫
-
 clinicalSigns:
   early:
     - 可能無症狀 (偶發現)
@@ -42,65 +40,95 @@ clinicalSigns:
     - 體重減輕
     - 腹水
     - 黃疸 (膽道阻塞)
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
-      notes: "腫塊大小、數量、回音性、血管浸潤"
+      notes: 腫塊大小、數量、回音性、血管浸潤
     - name: 胸部 X 光
-      notes: "評估肺轉移"
+      notes: 評估肺轉移
     - name: 腹部 CT
-      notes: "評估腫瘤範圍及可切除性"
+      notes: 評估腫瘤範圍及可切除性
     - name: 細針抽吸或組織切片
-      notes: "確診腫瘤類型"
+      notes: 確診腫瘤類型
     - name: 凝血功能檢查
-      notes: "術前評估"
+      notes: 術前評估
   differentialDiagnoses:
     - 依組織病理學確診
-
 treatment:
   medical:
     - 外科切除 (若可行,單發性腫瘤)
     - 化療 (淋巴瘤、某些肉瘤)
     - 姑息性照護
     - 監測 (良性病變)
-
 prognosis:
-  general: "取決於腫瘤類型;良性病變預後良好;肝細胞癌若能完全切除預後尚可;血管肉瘤或轉移性腫瘤預後不良"
-
+  general: 取決於腫瘤類型;良性病變預後良好;肝細胞癌若能完全切除預後尚可;血管肉瘤或轉移性腫瘤預後不良
 prevention:
   - 定期健康檢查
   - 早期診斷及治療
-
-
 guidelineRefs:
   - sourceOrg: Journal of lipid research
-    title: "Geranylgeranoic acid, a bioactive and endogenous fatty acid in mammals: a review."
+    title: 'Geranylgeranoic acid, a bioactive and endogenous fatty acid in mammals: a review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10320608/
     type: review
-    pmid: "37247782"
+    pmid: '37247782'
     relevance: primary
   - sourceOrg: Scientific reports
     title: Metabolomic profiling of serum alterations and biomarker discovery in feline hepatic liposis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11885465/
     type: research
-    pmid: "40050321"
+    pmid: '40050321'
     relevance: supporting
   - sourceOrg: Scientific reports
-    title: Application of rapid evaporative ionization mass spectrometry in preclinical and clinical analyses of steatotic liver tissues and cells.
+    title: >-
+      Application of rapid evaporative ionization mass spectrometry in preclinical and clinical analyses of steatotic
+      liver tissues and cells.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11914079/
     type: research
-    pmid: "40097529"
+    pmid: '40097529'
     relevance: supporting
-  - sourceOrg: "Stem cell research &amp; therapy"
-    title: Human spindle-shaped urine-derived stem cell exosomes alleviate severe fatty liver ischemia-reperfusion injury by inhibiting ferroptosis via GPX4.
+  - sourceOrg: Stem cell research &amp; therapy
+    title: >-
+      Human spindle-shaped urine-derived stem cell exosomes alleviate severe fatty liver ischemia-reperfusion injury by
+      inhibiting ferroptosis via GPX4.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11846247/
     type: research
-    pmid: "39985001"
+    pmid: '39985001'
     relevance: supporting
   - sourceOrg: iScience
     title: Differential effects of bariatric surgery and caloric restriction on hepatic one-carbon and fatty acid metabolism.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10300224/
     type: research
-    pmid: "37389181"
+    pmid: '37389181'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: jaundice
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 肝腫塊鑑別診斷 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - jaundice 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 腫塊大小、數量、回音性、血管浸潤
+        - name: 胸部 X 光
+          notes: 評估肺轉移
+        - name: 腹部 CT
+          notes: 評估腫瘤範圍及可切除性
+ddxSource: auto-generated

@@ -3,11 +3,11 @@ nameEn: Chondrosarcoma
 nameZh: 軟骨肉瘤
 bodySystem: oncology
 description: 軟骨組織的惡性腫瘤，為犬第二常見的原發性骨腫瘤（僅次於骨肉瘤）。扁平骨（肋骨、鼻腔、骨盆）比長骨更常見。轉移率低於骨肉瘤。
-
 aliases:
-  - { alias: "Cartilage Sarcoma", language: en }
-  - { alias: "軟骨惡性腫瘤", language: zh }
-
+  - alias: Cartilage Sarcoma
+    language: en
+  - alias: 軟骨惡性腫瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,14 +15,12 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 腫瘤性
       examples:
         - 軟骨細胞惡性增生
         - 確切病因不明
-
 clinicalSigns:
   early:
     - 局部腫脹
@@ -33,14 +31,12 @@ clinicalSigns:
     - 劇烈疼痛
     - 鼻腔型：鼻出血/打噴嚏
     - 肋骨型：胸壁腫塊
-
 diagnosis:
   primaryTests:
     - name: X 光 / CT
       notes: 溶骨性或混合性病灶。鑑別骨肉瘤
     - name: 活檢
       notes: 組織病理確診與分級
-
 treatment:
   principles:
     - 廣範圍手術切除
@@ -50,36 +46,88 @@ treatment:
     - 肋骨型：胸壁切除重建
     - 鼻腔型：放射治療
     - 化療效果有限
-
 prognosis: 完全切除後預後優於骨肉瘤。中位存活 > 2 年（完全切除）。不完全切除復發率高。鼻腔型預後較差。
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Roles of Parathyroid Hormone-Related Protein (PTHrP) and Its Receptor (PTHR1) in Normal and Tumor Tissues: Focus on Their Roles in Osteosarcoma."
+    title: >-
+      Roles of Parathyroid Hormone-Related Protein (PTHrP) and Its Receptor (PTHR1) in Normal and Tumor Tissues: Focus
+      on Their Roles in Osteosarcoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8008073/
     type: review
-    pmid: "33796580"
+    pmid: '33796580'
   - sourceOrg: Journal of advanced research
-    title: "Quercitrin alleviates cartilage extracellular matrix degradation and delays ACLT rat osteoarthritis development: An in vivo and in vitro study."
+    title: >-
+      Quercitrin alleviates cartilage extracellular matrix degradation and delays ACLT rat osteoarthritis development:
+      An in vivo and in vitro study.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7753236/
     type: research
-    pmid: "33364061"
+    pmid: '33364061'
   - sourceOrg: BMC musculoskeletal disorders
-    title: MiR-99a alleviates apoptosis and extracellular matrix degradation in experimentally induced spine osteoarthritis by targeting FZD8.
+    title: >-
+      MiR-99a alleviates apoptosis and extracellular matrix degradation in experimentally induced spine osteoarthritis
+      by targeting FZD8.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9487131/
     type: research
-    pmid: "36127685"
+    pmid: '36127685'
   - sourceOrg: International journal of molecular sciences
-    title: Possible Repositioning of an Oral Anti-Osteoporotic Drug, Ipriflavone, for Treatment of Inflammatory Arthritis via Inhibitory Activity of KIAA1199, a Novel Potent Hyaluronidase.
+    title: >-
+      Possible Repositioning of an Oral Anti-Osteoporotic Drug, Ipriflavone, for Treatment of Inflammatory Arthritis via
+      Inhibitory Activity of KIAA1199, a Novel Potent Hyaluronidase.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9030858/
     type: research
-    pmid: "35456905"
+    pmid: '35456905'
   - sourceOrg: Oncoimmunology
     title: Description of the immune microenvironment of chondrosarcoma and contribution to progression.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5353901/
     type: research
-    pmid: "28344871"
+    pmid: '28344871'
 pubmedQueries:
   - query: '"chondrosarcoma" AND (veterinary OR canine) AND ("surgery" OR "prognosis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 軟骨肉瘤 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估骨骼或鼻腔局部腫脹，注意好發部位（扁平骨、鼻腔、肋骨），大型犬多見
+      findings:
+        - 局部堅硬腫脹和疼痛
+        - 鼻腔型可見鼻出血和面部變形
+        - 漸進性跛行（四肢骨型）
+    - step: 2
+      action: 影像學檢查
+      details: 進行X光和CT評估骨骼病變特徵和範圍
+      findings:
+        - X光顯示溶骨性和成骨性混合病變
+        - 軟骨基質鈣化（點狀或環狀鈣化）
+        - CT評估腫瘤侵犯範圍
+    - step: 3
+      action: 活檢確診與分期
+      details: 進行骨活檢送組織病理學檢查，胸腔X光評估轉移
+      findings:
+        - 組織病理學確認軟骨肉瘤及分級
+        - 胸腔X光評估肺轉移
+        - 軟骨肉瘤轉移率低於骨肉瘤
+clinicalPearls:
+  - 犬第二常見的原發性骨腫瘤，佔骨腫瘤的5-10%
+  - 與骨肉瘤的鑑別需組織學——軟骨肉瘤預後明顯較好
+  - 轉移率較低（20-30%），但局部復發率可能較高若切除不完全
+  - 鼻腔軟骨肉瘤的X光可見典型點狀鈣化（stippled calcification）
+  - 化療對軟骨肉瘤的效果遠不如骨肉瘤，手術為關鍵
+monitoringItems:
+  - 術後每2-3個月胸腔X光（肺轉移篩檢）
+  - 術後局部影像追蹤復發
+  - 截肢後功能評估
+  - 疼痛評估
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: common
+ddxSource: book

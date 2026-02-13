@@ -3,11 +3,11 @@ nameEn: Near Drowning Freshwater
 nameZh: 淡水溺水
 bodySystem: ear
 description: 淡水吸入引起肺泡表面張力素破壞及低張性溶血。可導致ARDS、電解質異常及DIC。
-
 aliases:
-  - { alias: 淡水溺水急救, language: zh }
-  - { alias: Freshwater Submersion, language: en }
-
+  - alias: 淡水溺水急救
+    language: zh
+  - alias: Freshwater Submersion
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,13 +17,11 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 較少見
-
 etiology:
   categories:
     - name: 淡水吸入
       examples:
         - 游泳意外、落水
-
 clinicalSigns:
   early:
     - 呼吸困難、咳嗽
@@ -32,16 +30,14 @@ clinicalSigns:
     - ARDS、肺水腫
     - 低血鈉、溶血
     - 心律不整
-
 diagnosis:
   primaryTests:
     - name: 胸部X光
-      notes: "肺水腫、浸潤"
+      notes: 肺水腫、浸潤
     - name: 電解質
-      notes: "低血鈉、低氯"
+      notes: 低血鈉、低氯
   differentialDiagnoses:
     - 海水溺水、吸入性肺炎
-
 treatment:
   medical:
     - 氧氣治療或機械通氣
@@ -50,10 +46,36 @@ treatment:
     - 校正電解質
     - 抗生素(預防次發感染)
     - 監測溶血、腎功能
-
 prognosis:
-  general: "輕度吸入預後良好。嚴重ARDS可能致命。"
-
+  general: 輕度吸入預後良好。嚴重ARDS可能致命。
 prevention:
   - 監督寵物游泳
   - 避免冰冷水域
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 淡水溺水 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - tachycardia-bradycardia 相關症狀
+        - coughing 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸部X光
+          notes: 肺水腫、浸潤
+        - name: 電解質
+          notes: 低血鈉、低氯
+ddxSource: auto-generated

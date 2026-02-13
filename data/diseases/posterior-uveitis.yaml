@@ -3,13 +3,15 @@ nameEn: Posterior Uveitis
 nameZh: 後葡萄膜炎
 bodySystem: ophthalmology
 description: 脈絡膜 (choroid) 發炎，常伴隨視網膜炎 (chorioretinitis)。與前葡萄膜炎不同，後葡萄膜炎通常無明顯外觀異常，需眼底檢查才能發現。常與全身性感染或免疫疾病相關。
-
 aliases:
-  - { alias: Choroiditis, language: en }
-  - { alias: Chorioretinitis, language: en }
-  - { alias: 脈絡膜炎, language: zh }
-  - { alias: 脈絡膜視網膜炎, language: zh }
-
+  - alias: Choroiditis
+    language: en
+  - alias: Chorioretinitis
+    language: en
+  - alias: 脈絡膜炎
+    language: zh
+  - alias: 脈絡膜視網膜炎
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓常見原因包括 FIP、FeLV、FIV、toxoplasmosis、全身性黴菌感染。
-
 etiology:
   categories:
     - name: 感染性
@@ -34,7 +35,6 @@ etiology:
       examples:
         - 眼內淋巴瘤
         - 轉移性腫瘤
-
 clinicalSigns:
   early:
     - 外觀可能正常
@@ -44,7 +44,6 @@ clinicalSigns:
     - 視網膜剝離 (滲出性)
     - 玻璃體混濁
     - 視力喪失
-
 diagnosis:
   primaryTests:
     - name: 間接眼底鏡 / 眼底攝影
@@ -53,7 +52,6 @@ diagnosis:
       notes: CBC/生化、蜱傳疾病篩檢、黴菌抗原/抗體、Toxoplasma IgM/IgG
     - name: 眼部超音波
       notes: 評估視網膜剝離與玻璃體混濁
-
 treatment:
   principles:
     - 治療根本全身性疾病
@@ -64,41 +62,92 @@ treatment:
     - 全身性類固醇或 NSAIDs (免疫媒介性)
     - 局部抗炎眼藥水
     - 定期眼底追蹤
-
 prognosis: 取決於根本原因。感染性病因若及時治療預後中等至良好。全身性黴菌感染需長期治療。免疫媒介性需長期免疫抑制。視網膜剝離若未及時處理可能永久失明。
-
-
 guidelineRefs:
   - sourceOrg: BMC ophthalmology
-    title: "Rabbit hunter uveitis: case report of tularemia uveitis."
+    title: 'Rabbit hunter uveitis: case report of tularemia uveitis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5009509/
     type: case-report
-    pmid: "27585457"
+    pmid: '27585457'
     relevance: supporting
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Treatment With Remdesivir Alone or in Combination With GS-441524 in Cats With Ocular Involvement of Feline Infectious Peritonitis: An Observational Case Series."
+    title: >-
+      Treatment With Remdesivir Alone or in Combination With GS-441524 in Cats With Ocular Involvement of Feline
+      Infectious Peritonitis: An Observational Case Series.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12489177/
     type: research
-    pmid: "41035288"
+    pmid: '41035288'
     relevance: supporting
   - sourceOrg: International journal of molecular sciences
-    title: "Targeting Oxidative Stress and Inflammation in the Eye: Insights from a New Model of Experimental Autoimmune Uveitis."
+    title: >-
+      Targeting Oxidative Stress and Inflammation in the Eye: Insights from a New Model of Experimental Autoimmune
+      Uveitis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11641703/
     type: research
-    pmid: "39684616"
+    pmid: '39684616'
     relevance: supporting
   - sourceOrg: Nanomaterials (Basel, Switzerland)
-    title: "In Situ Gel of Triamcinolone Acetonide-Loaded Solid Lipid Nanoparticles for Improved Topical Ocular Delivery: Tear Kinetics and Ocular Disposition Studies."
+    title: >-
+      In Situ Gel of Triamcinolone Acetonide-Loaded Solid Lipid Nanoparticles for Improved Topical Ocular Delivery: Tear
+      Kinetics and Ocular Disposition Studies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6358857/
     type: research
-    pmid: "30591688"
+    pmid: '30591688'
     relevance: supporting
   - sourceOrg: Equine veterinary journal
-    title: Penetration of topically administered dexamethasone disodium phosphate and prednisolone acetate into the normal equine ocular fluids.
+    title: >-
+      Penetration of topically administered dexamethasone disodium phosphate and prednisolone acetate into the normal
+      equine ocular fluids.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9545554/
     type: research
-    pmid: "34706129"
+    pmid: '34706129'
     relevance: supporting
 pubmedQueries:
   - query: '"posterior uveitis" OR "chorioretinitis" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "treatment")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 脈絡膜視網膜炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估視覺障礙和眼底異常
+      findings:
+        - 視力減退
+        - 可能無症狀（偶然發現）
+        - 單側或雙側受累
+        - 可能伴有前葡萄膜炎
+    - step: 2
+      action: 眼底檢查
+      details: 進行詳細眼底檢查評估病變
+      findings:
+        - 視網膜下積液或水腫
+        - 灰白色視網膜下浸潤灶
+        - 活動性病灶邊界模糊
+        - 舊病灶呈色素沉著瘢痕
+    - step: 3
+      action: 病因學篩檢
+      details: 進行全面感染和免疫學篩檢
+      findings:
+        - 弓漿蟲血清學和PCR
+        - 壁蝨媒介疾病篩檢
+        - 真菌感染篩檢
+        - FeLV/FIV（貓）
+    - step: 4
+      action: 確診與分類
+      details: 確定病因並制定治療計劃
+      findings:
+        - 感染性vs免疫介導性vs腫瘤性
+        - 全身性疾病評估
+        - 雙側受累提示全身性病因
+        - 視網膜電圖評估功能
+clinicalPearls:
+  - 脈絡膜視網膜炎常為全身性疾病的眼部表現，必須進行全身性感染篩查
+  - 貓的脈絡膜視網膜炎需優先排除弓蟲症、FIP和真菌感染
+  - 犬瘟熱病毒可引起特徵性的「金牌」樣視網膜病變
+  - 感染性病因確認前不應使用免疫抑制劑量的類固醇
+monitoringItems:
+  - 每1-2週眼底檢查追蹤病變消退
+  - 監測基礎疾病的治療反應
+  - 視力功能評估
+  - 感染指標追蹤
+ddxSource: book

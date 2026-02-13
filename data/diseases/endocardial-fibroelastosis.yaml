@@ -3,12 +3,13 @@ nameEn: Endocardial Fibroelastosis
 nameZh: 心內膜纖維彈性組織增生
 bodySystem: cardiac
 description: 心內膜纖維彈性組織增生（EFE）為罕見的先天性或後天性心臟病，特徵為心室（主要為左心室）心內膜異常增厚，由膠原與彈性纖維增生所致。可導致心室充盈障礙與收縮功能低下，最終發展為限制性或擴張性心肌病表現。多見於幼齡動物。
-
 aliases:
-  - { alias: EFE, language: en }
-  - { alias: 心內膜彈力纖維增生症, language: zh }
-  - { alias: Endocardial Fibrosis, language: en }
-
+  - alias: EFE
+    language: en
+  - alias: 心內膜彈力纖維增生症
+    language: zh
+  - alias: Endocardial Fibrosis
+    language: en
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻極為罕見，多為個案報告。Burmese 和 Siamese 有零星報告。
-
 etiology:
   categories:
     - name: 先天性因素
@@ -29,7 +29,6 @@ etiology:
         - 慢性血流動力學壓力（左心室流出道阻塞）
         - 先天性心臟病伴發（如主動脈瓣狹窄）
         - 心肌炎後遺症
-
 clinicalSigns:
   early:
     - 幼齡動物生長遲緩
@@ -41,34 +40,68 @@ clinicalSigns:
     - 咳嗽（肺水腫）
     - 腹部膨大（腹水）
     - 突然死亡
-
 diagnosis:
   primaryTests:
     - name: 心臟超音波（Echocardiography）
       notes: 可見左心室心內膜明顯增厚（高回聲帶），左心室擴大與收縮功能降低，或限制性充盈模式。需與擴張性心肌病及限制性心肌病鑑別。
     - name: 胸腔 X 光
       notes: 心臟擴大（左心或全心擴大），可見肺水腫或胸水。
-
 treatment:
   principles:
     - 無根治性治療，以控制心衰竭症狀為主
     - 治療策略類似擴張性心肌病
     - 預後通常不良
   general:
-    - "Furosemide 2-4 mg/kg PO q8-12h 控制充血症狀"
-    - "Pimobendan 0.25 mg/kg PO q12h 改善心肌收縮力"
-    - "ACE inhibitor（Enalapril 0.5 mg/kg PO q12h）減輕心臟後負荷"
+    - Furosemide 2-4 mg/kg PO q8-12h 控制充血症狀
+    - Pimobendan 0.25 mg/kg PO q12h 改善心肌收縮力
+    - ACE inhibitor（Enalapril 0.5 mg/kg PO q12h）減輕心臟後負荷
     - 限制鈉攝取與控制活動量
-
 prognosis: 預後不良。多數病例在診斷後數週至數月內因進行性心衰竭而死亡或安樂死。幼齡動物病程進展通常較快。對內科治療的反應有限。
-
-
 guidelineRefs:
   - sourceOrg: Pediatric research
     title: Mechanical strain triggers endothelial-to-mesenchymal transition of the endocardium in the immature heart.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9133271/
     type: research
-    pmid: "34837068"
+    pmid: '34837068'
 pubmedQueries:
   - query: '"endocardial fibroelastosis" AND (veterinary OR canine OR feline) AND ("diagnosis" OR "pathology")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: abdominal-distension
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: uncommon
+  - symptomId: ascites
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 心內膜纖維彈性組織增生 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - exercise-intolerance 相關症狀
+        - dyspnoea 相關症狀
+        - abdominal-distension 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 心臟超音波（Echocardiography）
+          notes: 可見左心室心內膜明顯增厚（高回聲帶），左心室擴大與收縮功能降低，或限制性充盈模式。需與擴張性心肌病及限制性心肌病鑑別。
+        - name: 胸腔 X 光
+          notes: 心臟擴大（左心或全心擴大），可見肺水腫或胸水。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 無根治性治療，以控制心衰竭症狀為主
+        - 治療策略類似擴張性心肌病
+        - 預後通常不良
+ddxSource: auto-generated

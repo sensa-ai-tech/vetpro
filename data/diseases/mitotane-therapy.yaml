@@ -3,11 +3,12 @@ nameEn: Mitotane Therapy
 nameZh: Mitotane治療
 bodySystem: endocrine
 description: Mitotane(o,p'-DDD)為腎上腺皮質細胞毒性藥物,選擇性破壞zona fasciculata及reticularis,用於犬庫興氏症治療,需密切監測避免腎上腺功能不全。
-
 aliases:
-  - { alias: Lysodren治療, language: zh }
-  - { alias: o,p'-DDD, language: en }
-
+  - alias: Lysodren治療
+    language: zh
+  - alias: o
+    p'-DDD: null
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +18,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓對Mitotane敏感性差,不建議使用
-
 etiology:
   categories:
     - name: 作用機制
@@ -31,7 +31,6 @@ etiology:
         - 垂體依賴性庫興氏症(PDH)
         - 功能性腎上腺癌(包含轉移病例)
         - Trilostane無效或不耐受病例
-
 clinicalSigns:
   early:
     - 厭食、嘔吐、腹瀉(常見副作用)
@@ -41,20 +40,18 @@ clinicalSigns:
     - 低皮質醇症症狀(厭食、嘔吐、虛弱、休克)
     - 腹圍縮小、毛髮再生(治療有效)
     - 腎上腺危象(若過量破壞腎上腺)
-
 diagnosis:
   primaryTests:
     - name: ACTH刺激試驗(治療監測)
-      notes: "loading phase每週監測,目標post-ACTH皮質醇27-140 nmol/L(1-5 μg/dL)"
+      notes: loading phase每週監測,目標post-ACTH皮質醇27-140 nmol/L(1-5 μg/dL)
     - name: 電解質
-      notes: "監測鈉鉀比值,<27:1 提示腎上腺功能不全"
+      notes: 監測鈉鉀比值,<27:1 提示腎上腺功能不全
     - name: 臨床症狀
-      notes: "監測食慾、活力、多渴多尿改善情況"
+      notes: 監測食慾、活力、多渴多尿改善情況
   differentialDiagnoses:
     - Mitotane過量(腎上腺功能不全)
     - Mitotane劑量不足(症狀未改善)
     - 胃腸道不耐受
-
 treatment:
   medical:
     - Loading phase: 50 mg/kg PO SID 連續7-10天(與高脂食物一起給予)
@@ -64,21 +61,49 @@ treatment:
     - 出現副作用(厭食、嘔吐)時立即停藥,給予prednisolone 0.2-0.5 mg/kg PO SID支持
     - 若發生腎上腺危象: prednisolone 0.5-1 mg/kg IV + 靜脈輸液 + 電解質補充
     - 重病或手術時額外補充糖皮質激素
-
 prognosis:
-  general: "約70-80%犬對Mitotane有反應,但副作用較Trilostane多且需更密集監測。中位存活時間約2年。約5-10%犬會發生永久性腎上腺功能不全需終生補充類固醇。"
-
+  general: 約70-80%犬對Mitotane有反應,但副作用較Trilostane多且需更密集監測。中位存活時間約2年。約5-10%犬會發生永久性腎上腺功能不全需終生補充類固醇。
 prevention:
   - Loading phase密集監測ACTH刺激試驗避免過度破壞
   - 與高脂食物給予增加吸收
   - 飼主教育識別低皮質醇症狀
   - 定期監測電解質及腎上腺功能
-
-
 guidelineRefs:
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Peculiarities of feline hyperadrenocorticism: Update on diagnosis and treatment."
+    title: 'Peculiarities of feline hyperadrenocorticism: Update on diagnosis and treatment.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11128894/
     type: research
-    pmid: "28838299"
+    pmid: '28838299'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: diarrhoea
+    frequency: common
+diagnosticAlgorithm:
+  title: Mitotane治療 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - polyuria-polydipsia 相關症狀
+        - anorexia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: ACTH刺激試驗(治療監測)
+          notes: loading phase每週監測,目標post-ACTH皮質醇27-140 nmol/L(1-5 μg/dL)
+        - name: 電解質
+          notes: 監測鈉鉀比值,<27:1 提示腎上腺功能不全
+        - name: 臨床症狀
+          notes: 監測食慾、活力、多渴多尿改善情況
+ddxSource: auto-generated

@@ -3,11 +3,11 @@ nameEn: Status Epilepticus Emergency Protocol
 nameZh: 癲癇重積狀態緊急處理
 bodySystem: emergency
 description: 持續性癲癇發作(>5分鐘)或連續發作無恢復期。屬神經急症,需立即控制以避免腦損傷。
-
 aliases:
-  - { alias: 癲癇持續狀態, language: zh }
-  - { alias: SE Protocol, language: en }
-
+  - alias: 癲癇持續狀態
+    language: zh
+  - alias: SE Protocol
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,59 +17,79 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 較少見
-
 etiology:
   categories:
     - name: 常見原因
       examples:
         - 特發性癲癇、中毒、腦炎、肝腦病變
-
 clinicalSigns:
   early:
     - 持續全身性癲癇>5分鐘
   progressive:
     - 高體溫、腦水腫、腦損傷
-
 diagnosis:
   primaryTests:
     - name: 臨床診斷
-      notes: "持續癲癇發作"
+      notes: 持續癲癇發作
     - name: 血糖、電解質
-      notes: "排除代謝原因"
+      notes: 排除代謝原因
   differentialDiagnoses:
     - 暈厥、震顫
-
 treatment:
   medical:
     - 第一線: Diazepam 0.5-1 mg/kg IV/直腸
     - 第二線(10-15分鐘後仍發作):
-      - Midazolam 0.1-0.3 mg/kg IV/IM/鼻內
-      - Levetiracetam 60 mg/kg IV
+        - Midazolam 0.1-0.3 mg/kg IV/IM/鼻內
+        - Levetiracetam 60 mg/kg IV
     - 第三線(難治性):
-      - Phenobarbital 20 mg/kg IV緩慢
-      - Propofol 4-8 mg/kg IV誘導,持續CRI
+        - Phenobarbital 20 mg/kg IV緩慢
+        - Propofol 4-8 mg/kg IV誘導,持續CRI
     - 降溫、氧氣
     - 治療根本病因
     - ICU監護
-
 prognosis:
-  general: "及早控制預後較佳。持續>60分鐘可能永久性腦損傷或死亡。"
-
+  general: 及早控制預後較佳。持續>60分鐘可能永久性腦損傷或死亡。
 prevention:
   - 癲癇患者規律服藥
   - 避免突然停藥
-
-
 guidelineRefs:
-  - sourceOrg: "Cellular and molecular life sciences : CMLS"
-    title: Modulation of epileptogenesis through transplantation of human mesenchymal stem cells with or without GDNF release.
+  - sourceOrg: 'Cellular and molecular life sciences : CMLS'
+    title: >-
+      Modulation of epileptogenesis through transplantation of human mesenchymal stem cells with or without GDNF
+      release.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12370614/
     type: research
-    pmid: "40839114"
+    pmid: '40839114'
     relevance: supporting
   - sourceOrg: Frontiers in veterinary science
     title: Analysis of Early Assessable Risk Factors for Poor Outcome in Dogs With Cluster Seizures and Status Epilepticus.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7581674/
     type: research
-    pmid: "33195572"
+    pmid: '33195572'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 癲癇重積狀態緊急處理 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - seizures 相關症狀
+        - hyperthermia 相關症狀
+        - peripheral-oedema 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床診斷
+          notes: 持續癲癇發作
+        - name: 血糖、電解質
+          notes: 排除代謝原因
+ddxSource: auto-generated

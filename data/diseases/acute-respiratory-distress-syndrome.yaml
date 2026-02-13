@@ -3,25 +3,30 @@ nameEn: Acute Respiratory Distress Syndrome
 nameZh: 急性呼吸窘迫症候群
 bodySystem: emergency
 description: 急性、瀰漫性、炎症性肺損傷導致的嚴重低血氧性呼吸衰竭。以非心因性肺水腫、肺順應性降低與嚴重低血氧為特徵，為多種嚴重疾病的共同終末路徑，死亡率極高。
-
 aliases:
-  - { alias: ARDS, language: en }
-  - { alias: Acute Lung Injury, language: en }
-  - { alias: ALI, language: en }
-  - { alias: Non-Cardiogenic Pulmonary Edema, language: en }
-  - { alias: 急性肺損傷, language: zh }
-  - { alias: 非心因性肺水腫, language: zh }
-
+  - alias: ARDS
+    language: en
+  - alias: Acute Lung Injury
+    language: en
+  - alias: ALI
+    language: en
+  - alias: Non-Cardiogenic Pulmonary Edema
+    language: en
+  - alias: 急性肺損傷
+    language: zh
+  - alias: 非心因性肺水腫
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: uncommon
-    notes: 犬 ARDS 常為其他嚴重疾病的併發症。敗血症為最常見誘因（約 30-40%），其他包括吸入性肺炎、嚴重外傷、胰臟炎、中暑、近溺水、煙霧吸入。犬 ARDS 診斷標準（VetALI/VetARDS 定義）：急性發病、已知風險因子、PaO₂/FiO₂ <300 (ALI) 或 <200 (ARDS)、雙側肺浸潤、排除心因性肺水腫。
+    notes: >-
+      犬 ARDS 常為其他嚴重疾病的併發症。敗血症為最常見誘因（約 30-40%），其他包括吸入性肺炎、嚴重外傷、胰臟炎、中暑、近溺水、煙霧吸入。犬 ARDS 診斷標準（VetALI/VetARDS
+      定義）：急性發病、已知風險因子、PaO₂/FiO₂ <300 (ALI) 或 <200 (ARDS)、雙側肺浸潤、排除心因性肺水腫。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓較犬少見但可發生。常見誘因包括嚴重敗血症、吸入性肺炎、輸血反應 (TRALI)。貓的臨床研究資料有限。
-
 etiology:
   categories:
     - name: 直接肺損傷 (Pulmonary/Direct)
@@ -42,9 +47,11 @@ etiology:
         - DIC
         - 蛇毒中毒
         - 再灌流損傷（GDV 術後、腸繫膜扭轉）
-
-pathophysiology: 初始損傷（感染、創傷、毒素）活化肺泡巨噬細胞與上皮細胞 → 釋放促發炎因子（TNF-α、IL-1β、IL-8）→ 嗜中性球大量湧入肺泡腔 → 釋放蛋白酶、活性氧自由基與中性球胞外陷阱 (NETs) → 肺泡上皮與毛細血管內皮屏障破壞。屏障破壞導致富含蛋白質的液體湧入肺泡腔（非心因性肺水腫）。肺泡表面活性劑 (surfactant) 功能障礙 → 肺泡塌陷 → 肺不張。通氣/灌流失衡 + 肺內分流 → 嚴重且難以矯正的低血氧（對純氧反應差）。肺順應性急遽下降 → 呼吸做功大幅增加。病理分期：(1) 滲出期 (exudative, 1-7 天) — 瀰漫性肺泡損傷、透明膜形成；(2) 增殖期 (proliferative, 7-21 天) — II 型肺泡細胞增殖、早期纖維化；(3) 纖維化期 (fibrotic, >21 天) — 肺泡結構重塑、永久性肺功能損害。
-
+pathophysiology: >-
+  初始損傷（感染、創傷、毒素）活化肺泡巨噬細胞與上皮細胞 → 釋放促發炎因子（TNF-α、IL-1β、IL-8）→ 嗜中性球大量湧入肺泡腔 → 釋放蛋白酶、活性氧自由基與中性球胞外陷阱 (NETs) →
+  肺泡上皮與毛細血管內皮屏障破壞。屏障破壞導致富含蛋白質的液體湧入肺泡腔（非心因性肺水腫）。肺泡表面活性劑 (surfactant) 功能障礙 → 肺泡塌陷 → 肺不張。通氣/灌流失衡 + 肺內分流 →
+  嚴重且難以矯正的低血氧（對純氧反應差）。肺順應性急遽下降 → 呼吸做功大幅增加。病理分期：(1) 滲出期 (exudative, 1-7 天) — 瀰漫性肺泡損傷、透明膜形成；(2) 增殖期 (proliferative, 7-21
+  天) — II 型肺泡細胞增殖、早期纖維化；(3) 纖維化期 (fibrotic, >21 天) — 肺泡結構重塑、永久性肺功能損害。
 clinicalSigns:
   early:
     - 急性發作的呼吸急促/呼吸困難（原發疾病後 6-72 小時）
@@ -66,22 +73,21 @@ clinicalSigns:
     - 多器官衰竭（ARDS 常為 MODS 的一部分）
     - 心搏停止
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 動脈血氣分析
-      notes: "PaO₂/FiO₂ ratio 為定義嚴重度的核心指標。ALI：PaO₂/FiO₂ <300；ARDS：PaO₂/FiO₂ <200。室溫空氣下 PaO₂ <60 mmHg 為嚴重低血氧"
+      notes: PaO₂/FiO₂ ratio 為定義嚴重度的核心指標。ALI：PaO₂/FiO₂ <300；ARDS：PaO₂/FiO₂ <200。室溫空氣下 PaO₂ <60 mmHg 為嚴重低血氧
     - name: 胸腔 X 光
-      notes: "雙側瀰漫性肺泡浸潤（bilateral diffuse infiltrates）。早期可能以間質型態為主，後期進展為瀰漫性肺泡實質化。與心因性肺水腫區別：ARDS 分布較周邊/不均勻、無心臟擴大、無肺靜脈充血"
+      notes: 雙側瀰漫性肺泡浸潤（bilateral diffuse infiltrates）。早期可能以間質型態為主，後期進展為瀰漫性肺泡實質化。與心因性肺水腫區別：ARDS 分布較周邊/不均勻、無心臟擴大、無肺靜脈充血
     - name: 脈搏血氧儀 (Pulse Oximetry)
-      notes: "SpO₂ <90% 即為嚴重低血氧。SpO₂/FiO₂ ratio 可作為 PaO₂/FiO₂ 的替代評估"
+      notes: SpO₂ <90% 即為嚴重低血氧。SpO₂/FiO₂ ratio 可作為 PaO₂/FiO₂ 的替代評估
   imaging:
     - name: 胸腔 X 光
-      notes: "連續追蹤肺部浸潤進展。排除氣胸、胸腔積液等併發症"
+      notes: 連續追蹤肺部浸潤進展。排除氣胸、胸腔積液等併發症
     - name: 肺部超音波
-      notes: "B-lines 增多（間質/肺泡水腫）、實質化區域、肺滑動消失（氣胸排除）。優點：床邊即時評估、可重複、無輻射"
+      notes: B-lines 增多（間質/肺泡水腫）、實質化區域、肺滑動消失（氣胸排除）。優點：床邊即時評估、可重複、無輻射
     - name: 心臟超音波 (Echocardiography)
-      notes: "排除心因性肺水腫。評估左心功能、LA/Ao ratio"
+      notes: 排除心因性肺水腫。評估左心功能、LA/Ao ratio
   additional:
     - 排除心因性肺水腫（NT-proBNP、心臟超音波）
     - 確認潛在誘因/風險因子
@@ -89,7 +95,6 @@ diagnosis:
     - 凝血功能（DIC 評估）
     - 乳酸（組織灌流）
     - 氣管灌洗液分析（嗜中性球性炎症為主）
-
 treatment:
   principles:
     - 治療原發疾病為最重要步驟
@@ -99,16 +104,16 @@ treatment:
     - 目前無針對 ARDS 的特異性藥物
   medications:
     - name: 氧氣治療
-      dose: "Flow-by、氧氣面罩、鼻導管 (50-100 mL/kg/min)、氧氣籠。目標 SpO₂ >90%、PaO₂ >60 mmHg"
+      dose: Flow-by、氧氣面罩、鼻導管 (50-100 mL/kg/min)、氧氣籠。目標 SpO₂ >90%、PaO₂ >60 mmHg
       notes: 第一線支持。嚴重 ARDS 對純氧反應差（因肺內分流為主）。長期高濃度氧（FiO₂ >60% 超過 24-48 小時）可導致氧中毒加重肺損傷
     - name: 機械通氣 (Mechanical Ventilation)
-      dose: "肺保護性策略：潮氣量 6-8 mL/kg；PEEP 5-10 cmH₂O（逐步調升）；限制 Plateau Pressure <30 cmH₂O"
+      dose: 肺保護性策略：潮氣量 6-8 mL/kg；PEEP 5-10 cmH₂O（逐步調升）；限制 Plateau Pressure <30 cmH₂O
       notes: 嚴重 ARDS（氧療無反應）的支持治療。需全身麻醉/深度鎮靜。獸醫重症加護設備與人力需求高，可及性受限
     - name: 保守性輸液管理
-      dose: "維持最低有效循環血量。避免正平衡過多。利尿劑 (Furosemide 1-2 mg/kg IV) 可在非低血容量狀態下謹慎使用"
+      dose: 維持最低有效循環血量。避免正平衡過多。利尿劑 (Furosemide 1-2 mg/kg IV) 可在非低血容量狀態下謹慎使用
       notes: 過多輸液直接加重肺泡水腫。需平衡灌流需求與肺水腫風險
     - name: 針對原發病因的治療
-      dose: "敗血症→抗生素；胰臟炎→支持治療；中暑→降溫"
+      dose: 敗血症→抗生素；胰臟炎→支持治療；中暑→降溫
       notes: 控制原發疾病是 ARDS 恢復的前提
   general:
     - 密切監測氧合狀態（連續 SpO₂、間斷動脈血氣）
@@ -118,45 +123,98 @@ treatment:
     - 避免不必要的搬動與壓力（增加氧耗）
     - 監測續發感染（呼吸器相關肺炎 VAP）
     - 目前 corticosteroids 用於 ARDS 的證據在獸醫界不充分，不常規推薦
-
-emergencyNotes: ARDS 為危及生命的呼吸急症。處理：(1) 立即氧療（目標 SpO₂ >90%）；(2) 動脈血氣確認低血氧嚴重度與 PaO₂/FiO₂ ratio；(3) 胸腔 X 光 + 心臟超音波排除心因性肺水腫；(4) 建立靜脈通路但保守輸液；(5) 積極治療原發疾病；(6) 氧療無反應 → 考慮機械通氣（需 ICU 等級設備）；(7) 與飼主溝通預後嚴峻。
-
-prognosis: 犬 ARDS 死亡率極高，約 50-100%（多數報告 >80%）。獸醫界因機械通氣可及性有限，死亡率高於人醫。預後取決於原發疾病是否可控制、低血氧嚴重度與進展速度。PaO₂/FiO₂ <100 者預後極差。合併 MODS 者幾乎不可能存活。少數存活者可能有殘留肺纖維化。早期識別與積極治療原發疾病為改善預後的唯一可靠策略。
-
+emergencyNotes: >-
+  ARDS 為危及生命的呼吸急症。處理：(1) 立即氧療（目標 SpO₂ >90%）；(2) 動脈血氣確認低血氧嚴重度與 PaO₂/FiO₂ ratio；(3) 胸腔 X 光 + 心臟超音波排除心因性肺水腫；(4)
+  建立靜脈通路但保守輸液；(5) 積極治療原發疾病；(6) 氧療無反應 → 考慮機械通氣（需 ICU 等級設備）；(7) 與飼主溝通預後嚴峻。
+prognosis: >-
+  犬 ARDS 死亡率極高，約 50-100%（多數報告 >80%）。獸醫界因機械通氣可及性有限，死亡率高於人醫。預後取決於原發疾病是否可控制、低血氧嚴重度與進展速度。PaO₂/FiO₂ <100 者預後極差。合併 MODS
+  者幾乎不可能存活。少數存活者可能有殘留肺纖維化。早期識別與積極治療原發疾病為改善預後的唯一可靠策略。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
     title: Consensus definitions for acute lung injury and acute respiratory distress syndrome in veterinary medicine
     url: https://pubmed.ncbi.nlm.nih.gov/17391357/
     type: consensus
-    pmid: "17391357"
+    pmid: '17391357'
   - sourceOrg: Journal of Veterinary Internal Medicine
-    title: "Acute respiratory distress syndrome in dogs and cats: a review of clinical findings and pathophysiology"
+    title: 'Acute respiratory distress syndrome in dogs and cats: a review of clinical findings and pathophysiology'
     url: https://pubmed.ncbi.nlm.nih.gov/23869495/
     type: review
-    pmid: "23869495"
+    pmid: '23869495'
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
     title: Mechanical ventilation and acute lung injury in veterinary patients
     url: https://pubmed.ncbi.nlm.nih.gov/24119143/
     type: review
-    pmid: "24119143"
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
+    pmid: '24119143'
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
     title: Acute Respiratory Distress Syndrome in Veterinary Medicine-The ARDSVet Definitions.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12491761/
     type: consensus
-    pmid: "40838381"
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
-    title: Clinical Applications of the ARDSVet (Acute Respiratory Distress Syndromes in Veterinary Medicine) Definitions in Small and Large Animal Patients.
+    pmid: '40838381'
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
+    title: >-
+      Clinical Applications of the ARDSVet (Acute Respiratory Distress Syndromes in Veterinary Medicine) Definitions in
+      Small and Large Animal Patients.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12491756/
     type: research
-    pmid: "40932464"
+    pmid: '40932464'
     relevance: supporting
 pubmedQueries:
-  - query: '"acute respiratory distress syndrome" AND (dog OR canine) AND ("mechanical ventilation" OR "treatment" OR "prognosis")'
+  - query: >-
+      "acute respiratory distress syndrome" AND (dog OR canine) AND ("mechanical ventilation" OR "treatment" OR
+      "prognosis")
     frequency: monthly
   - query: '"ARDS" AND (veterinary) AND ("lung protective ventilation" OR "outcome")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "EXL"
-  sectionTitle: "Edwardsiella: Edwardsiella ictaluri"
+  chapter: EXL
+  sectionTitle: 'Edwardsiella: Edwardsiella ictaluri'
   pdfPage: 1850
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: peripheral-oedema
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 急性呼吸窘迫症候群 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - coma-stupor 相關症狀
+        - tachycardia-bradycardia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 動脈血氣分析
+          notes: PaO₂/FiO₂ ratio 為定義嚴重度的核心指標。ALI：PaO₂/FiO₂ <300；ARDS：PaO₂/FiO₂ <200。室溫空氣下 PaO₂ <60 mmHg 為嚴重低血氧
+        - name: 胸腔 X 光
+          notes: 雙側瀰漫性肺泡浸潤（bilateral diffuse infiltrates）。早期可能以間質型態為主，後期進展為瀰漫性肺泡實質化。與心因性肺水腫區別：ARDS 分布較周邊/不均勻、無心臟擴大、無肺靜脈充血
+        - name: 脈搏血氧儀 (Pulse Oximetry)
+          notes: SpO₂ <90% 即為嚴重低血氧。SpO₂/FiO₂ ratio 可作為 PaO₂/FiO₂ 的替代評估
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 排除心因性肺水腫（NT-proBNP、心臟超音波）
+        - 確認潛在誘因/風險因子
+        - CBC/生化（評估全身狀態與併發症）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療原發疾病為最重要步驟
+        - 支持性氧療與機械通氣
+        - 肺保護性通氣策略（低潮氣量）
+ddxSource: auto-generated

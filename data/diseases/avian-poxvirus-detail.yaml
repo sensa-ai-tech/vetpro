@@ -3,19 +3,21 @@ nameEn: Avian Poxvirus Detail
 nameZh: 禽痘病毒感染詳論
 bodySystem: infectious
 description: 禽痘（Avian Pox）由 Avipoxvirus 屬雙鏈 DNA 病毒引起，可表現為皮膚型（乾痘）或黏膜型（濕痘），為鳥類常見的病毒性疾病。蚊蟲為主要傳播媒介。
-
 aliases:
-  - { alias: 禽痘, language: zh }
-  - { alias: 鳥痘病毒感染, language: zh }
-  - { alias: Avian pox, language: en }
-  - { alias: Fowl pox, language: en }
-  - { alias: Avipoxvirus infection, language: en }
-
+  - alias: 禽痘
+    language: zh
+  - alias: 鳥痘病毒感染
+    language: zh
+  - alias: Avian pox
+    language: en
+  - alias: Fowl pox
+    language: en
+  - alias: Avipoxvirus infection
+    language: en
 species:
   - speciesCommon: bird
     prevalence: common
     notes: 幾乎所有鳥種均可感染。鸚鵡、金絲雀、雀科鳥類、猛禽、家禽均有報告。不同鳥種由不同 Avipoxvirus 基因型感染。蚊蟲多的季節發病率增加。
-
 etiology:
   categories:
     - name: 病原體
@@ -29,7 +31,6 @@ etiology:
         - 直接接觸感染鳥或其痂皮
         - 汙染的環境器具
         - 氣溶膠（濕痘）
-
 clinicalSigns:
   early:
     - 皮膚無羽毛區出現小丘疹（乾痘）
@@ -42,21 +43,19 @@ clinicalSigns:
     - 進食困難
     - 呼吸困難（濕痘嚴重時）
     - 繼發細菌感染
-
 diagnosis:
   primaryTests:
     - name: 臨床表現
-      notes: "典型皮膚結節或口腔偽膜即可高度懷疑。結合季節性與蚊蟲暴露史"
+      notes: 典型皮膚結節或口腔偽膜即可高度懷疑。結合季節性與蚊蟲暴露史
     - name: 組織病理學
-      notes: "表皮角質層增生、細胞質內嗜酸性包涵體（Bollinger bodies）為特徵性"
+      notes: 表皮角質層增生、細胞質內嗜酸性包涵體（Bollinger bodies）為特徵性
     - name: PCR 檢測
-      notes: "痂皮或病灶組織 PCR 確認病毒存在"
+      notes: 痂皮或病灶組織 PCR 確認病毒存在
   differentialDiagnoses:
     - 念珠菌感染（口腔型）
     - 維生素 A 缺乏（口腔病變）
     - 毛滴蟲感染（口腔型）
     - 皮膚細菌感染
-
 treatment:
   medical:
     - 無特效抗病毒治療
@@ -66,41 +65,71 @@ treatment:
     - 輔助餵食（進食困難時）
     - 治療繼發性細菌或真菌感染
     - 維生素 A 補充促進黏膜修復
-
 prognosis:
-  general: "乾痘型預後良好，多數 2-4 週自癒。濕痘型預後較差，可因呼吸道阻塞或繼發感染死亡。混合型預後謹慎。康復後產生終生免疫。"
-
+  general: 乾痘型預後良好，多數 2-4 週自癒。濕痘型預後較差，可因呼吸道阻塞或繼發感染死亡。混合型預後謹慎。康復後產生終生免疫。
 prevention:
   - 防蚊措施（紗網、蚊帳）
   - 減少蚊蟲孳生環境
   - 隔離感染個體
   - 家禽可接種禽痘疫苗
   - 環境消毒
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in immunology
-    title: Transgene expression knock-down in recombinant Modified Vaccinia virus Ankara vectors improves genetic stability and sustained transgene maintenance across multiple passages.
+    title: >-
+      Transgene expression knock-down in recombinant Modified Vaccinia virus Ankara vectors improves genetic stability
+      and sustained transgene maintenance across multiple passages.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10877035/
     type: research
-    pmid: "38380318"
+    pmid: '38380318'
   - sourceOrg: PloS one
     title: Whole-genome based strain identification of fowlpox virus directly from cutaneous tissue and propagated virus.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8675702/
     type: research
-    pmid: "34914770"
+    pmid: '34914770'
   - sourceOrg: Transboundary and emerging diseases
-    title: "Epidemic of cutaneous fowlpox in a na&#xef;ve population of chickens and turkeys in Austria: Detailed phylogenetic analysis indicates co-evolution of fowlpox virus with reticuloendotheliosis virus."
+    title: >-
+      Epidemic of cutaneous fowlpox in a na&#xef;ve population of chickens and turkeys in Austria: Detailed phylogenetic
+      analysis indicates co-evolution of fowlpox virus with reticuloendotheliosis virus.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9787674/
     type: research
-    pmid: "34974640"
+    pmid: '34974640'
   - sourceOrg: PloS one
-    title: Efficient and stable production of Modified Vaccinia Ankara virus in two-stage semi-continuous and in continuous stirred tank cultivation systems.
+    title: >-
+      Efficient and stable production of Modified Vaccinia Ankara virus in two-stage semi-continuous and in continuous
+      stirred tank cultivation systems.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5570375/
     type: research
-    pmid: "28837572"
+    pmid: '28837572'
   - sourceOrg: Planta medica
-    title: "Antiviral Medicinal Plants of Veterinary Importance: A Literature Review."
+    title: 'Antiviral Medicinal Plants of Veterinary Importance: A Literature Review.'
     url: https://pubmed.ncbi.nlm.nih.gov/32777833/
     type: review
-    pmid: "32777833"
+    pmid: '32777833'
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽痘病毒感染詳論 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - dysphagia 相關症狀
+        - cutaneous-masses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床表現
+          notes: 典型皮膚結節或口腔偽膜即可高度懷疑。結合季節性與蚊蟲暴露史
+        - name: 組織病理學
+          notes: 表皮角質層增生、細胞質內嗜酸性包涵體（Bollinger bodies）為特徵性
+        - name: PCR 檢測
+          notes: 痂皮或病灶組織 PCR 確認病毒存在
+ddxSource: auto-generated

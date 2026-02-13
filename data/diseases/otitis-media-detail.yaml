@@ -3,13 +3,15 @@ nameEn: Otitis Media Detail
 nameZh: 中耳炎詳解
 bodySystem: ear
 description: 中耳腔（鼓室）的感染或炎症，多數為慢性外耳炎經鼓膜延伸所致，少數經耳咽管上行感染。可導致聽力損失、前庭症狀及顏面神經損傷。
-
 aliases:
-  - { alias: 中耳感染, language: zh }
-  - { alias: 鼓室炎, language: zh }
-  - { alias: Middle ear infection, language: en }
-  - { alias: Tympanic bulla infection, language: en }
-
+  - alias: 中耳感染
+    language: zh
+  - alias: 鼓室炎
+    language: zh
+  - alias: Middle ear infection
+    language: en
+  - alias: Tympanic bulla infection
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 貓中耳炎常與鼻咽息肉或上呼吸道感染相關。幼貓鼻咽息肉延伸至中耳為常見原因。
-
 etiology:
   categories:
     - name: 感染途徑
@@ -34,7 +35,6 @@ etiology:
         - Streptococcus spp.
         - Malassezia pachydermatis
         - Pasteurella multocida（貓）
-
 clinicalSigns:
   early:
     - 慢性外耳炎對治療反應不良
@@ -47,22 +47,20 @@ clinicalSigns:
     - 顏面神經麻痺（嘴唇下垂、眼瞼閉合不全）
     - 乾眼症（KCS，面神經損傷所致）
     - 前庭症狀（眼球震顫、失衡）
-
 diagnosis:
   primaryTests:
     - name: 耳鏡檢查（鎮靜下）
-      notes: "評估鼓膜完整性、透明度、膨隆。鼓膜破裂可見中耳腔分泌物。鼓膜完整不排除中耳炎"
+      notes: 評估鼓膜完整性、透明度、膨隆。鼓膜破裂可見中耳腔分泌物。鼓膜完整不排除中耳炎
     - name: 影像學（CT 或 MRI）
-      notes: "CT 為評估鼓泡的金標準。鼓泡壁增厚、腔內軟組織密度增加、骨溶解為典型發現"
+      notes: CT 為評估鼓泡的金標準。鼓泡壁增厚、腔內軟組織密度增加、骨溶解為典型發現
     - name: 中耳沖洗取樣
-      notes: "鼓膜穿刺或經破裂處取樣做細菌培養與藥敏。指導治療"
+      notes: 鼓膜穿刺或經破裂處取樣做細菌培養與藥敏。指導治療
   differentialDiagnoses:
     - 內耳炎
     - 鼻咽息肉（貓）
     - 中耳膽脂瘤
     - 中耳腫瘤
     - 特發性前庭症候群
-
 treatment:
   medical:
     - 全身性抗生素（依培養藥敏，療程 6-8 週以上）
@@ -73,33 +71,59 @@ treatment:
   surgical:
     - 鼓泡切開術（ventral bulla osteotomy）——內科治療無效時
     - 全耳道切除合併側鼓泡切開術（TECA-LBO）——合併終末期外耳炎
-
 prognosis:
-  general: "早期診斷與適當抗生素治療預後良好。慢性中耳炎合併骨骼重塑需手術介入。Pseudomonas 感染較難治療。顏面神經麻痺可能為永久性。"
-
+  general: 早期診斷與適當抗生素治療預後良好。慢性中耳炎合併骨骼重塑需手術介入。Pseudomonas 感染較難治療。顏面神經麻痺可能為永久性。
 prevention:
   - 積極治療急性外耳炎防止進展至中耳
   - 慢性外耳炎病例定期影像學監測
   - 適當清耳技術（避免深部沖洗損傷鼓膜）
   - 貓——早期處理鼻咽息肉
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in microbiology
     title: Antimicrobial and Antibiofilm Effects of Human Amniotic/Chorionic Membrane Extract on Streptococcus pneumoniae.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5641382/
     type: research
-    pmid: "29089928"
+    pmid: '29089928'
     relevance: supporting
-  - sourceOrg: "Molecular &amp; cellular proteomics : MCP"
-    title: Comprehensive Proteomic and Metabolomic Signatures of Nontypeable Haemophilus influenzae-Induced Acute Otitis Media Reveal Bacterial Aerobic Respiration in an Immunosuppressed Environment.
+  - sourceOrg: 'Molecular &amp; cellular proteomics : MCP'
+    title: >-
+      Comprehensive Proteomic and Metabolomic Signatures of Nontypeable Haemophilus influenzae-Induced Acute Otitis
+      Media Reveal Bacterial Aerobic Respiration in an Immunosuppressed Environment.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4813693/
     type: research
-    pmid: "26711468"
+    pmid: '26711468'
     relevance: supporting
   - sourceOrg: International journal of pediatric otorhinolaryngology
-    title: "PANEL 3: Otitis media animal models, cell culture, tissue regeneration &amp; pathophysiology."
+    title: 'PANEL 3: Otitis media animal models, cell culture, tissue regeneration &amp; pathophysiology.'
     url: https://pubmed.ncbi.nlm.nih.gov/38101097/
     type: review
-    pmid: "38101097"
+    pmid: '38101097'
     relevance: primary
+associatedSymptoms:
+  - symptomId: head-tilt
+    frequency: uncommon
+  - symptomId: nystagmus
+    frequency: uncommon
+  - symptomId: trembling
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 中耳炎詳解 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - head-tilt 相關症狀
+        - nystagmus 相關症狀
+        - trembling 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 耳鏡檢查（鎮靜下）
+          notes: 評估鼓膜完整性、透明度、膨隆。鼓膜破裂可見中耳腔分泌物。鼓膜完整不排除中耳炎
+        - name: 影像學（CT 或 MRI）
+          notes: CT 為評估鼓泡的金標準。鼓泡壁增厚、腔內軟組織密度增加、骨溶解為典型發現
+        - name: 中耳沖洗取樣
+          notes: 鼓膜穿刺或經破裂處取樣做細菌培養與藥敏。指導治療
+ddxSource: auto-generated

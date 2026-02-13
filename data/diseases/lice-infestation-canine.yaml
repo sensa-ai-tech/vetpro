@@ -3,24 +3,22 @@ nameEn: Lice Infestation Canine
 nameZh: Lice Infestation Canine
 bodySystem: dermatology
 description: 外寄生蟲感染,導致皮膚刺激與繼發性病變。需使用適當殺蟲劑並處理環境。
-
 aliases:
-  - { alias: Lice Infestation Canine, language: zh }
-  - { alias: Lice Infestation Canine, language: en }
-
+  - alias: Lice Infestation Canine
+    language: zh
+  - alias: Lice Infestation Canine
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 感染(細菌、真菌、寄生蟲)
       examples:
         - 過敏
         - 免疫介導
-
 clinicalSigns:
   early:
     - 搔癢
@@ -28,46 +26,66 @@ clinicalSigns:
   progressive:
     - 皮膚增厚
     - 色素沉著
-
 diagnosis:
   primaryTests:
     - name: 皮膚刮搔檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: 毛髮拔除檢查
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 局部治療(藥浴、藥膏)
     - 全身性抗生素或抗真菌藥
-
 prognosis:
-  general: "預後取決於根本病因。感染性疾病治療後多可痊癒,免疫或遺傳性疾病需長期管理。"
-
+  general: 預後取決於根本病因。感染性疾病治療後多可痊癒,免疫或遺傳性疾病需長期管理。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
-  - sourceOrg: "Parasites &amp; vectors"
-    title: "Dipylidium caninum in the twenty-first century: epidemiological studies and reported cases in companion animals and humans."
+  - sourceOrg: Parasites &amp; vectors
+    title: >-
+      Dipylidium caninum in the twenty-first century: epidemiological studies and reported cases in companion animals
+      and humans.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9088078/
     type: review
-    pmid: "35534908"
+    pmid: '35534908'
     relevance: primary
   - sourceOrg: Journal of veterinary pharmacology and therapeutics
-    title: "Surface distribution of pyrethroids following topical application to veterinary species: Implications for lateral transport."
+    title: >-
+      Surface distribution of pyrethroids following topical application to veterinary species: Implications for lateral
+      transport.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7821121/
     type: review
-    pmid: "32910498"
+    pmid: '32910498'
     relevance: primary
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: Isoxazolines for treating canine and feline otodectic mange; feline demodicosis, lynxacariasis, lice infestation, and notoedric mange (scabies); demodicosis in hamsters; and sarcoptic and psoroptic manges in rabbits.
+    title: >-
+      Isoxazolines for treating canine and feline otodectic mange; feline demodicosis, lynxacariasis, lice infestation,
+      and notoedric mange (scabies); demodicosis in hamsters; and sarcoptic and psoroptic manges in rabbits.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10581354/
     type: research
-    pmid: "37915780"
+    pmid: '37915780'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: skin-pruritus
+    frequency: common
+diagnosticAlgorithm:
+  title: Lice Infestation Canine 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - skin-pruritus 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 皮膚刮搔檢查
+          notes: 需詳細評估
+        - name: 毛髮拔除檢查
+          notes: 協助確診
+ddxSource: auto-generated

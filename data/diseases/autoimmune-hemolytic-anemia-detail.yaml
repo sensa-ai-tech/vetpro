@@ -3,11 +3,11 @@ nameEn: Autoimmune Hemolytic Anemia Detail
 nameZh: 自體免疫性溶血性貧血詳述
 bodySystem: hematology
 description: 抗體攻擊自身紅血球引起溶血。可能為原發性或次發性(藥物、感染、腫瘤)。屬急症,需積極免疫抑制治療。
-
 aliases:
-  - { alias: AIHA, language: zh }
-  - { alias: Immune-Mediated Hemolytic Anemia, language: en }
-
+  - alias: AIHA
+    language: zh
+  - alias: Immune-Mediated Hemolytic Anemia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 較少見,預後較差
-
 etiology:
   categories:
     - name: 原發性
@@ -26,7 +25,6 @@ etiology:
     - name: 次發性
       examples:
         - 藥物(頭孢菌素)、感染(Babesia)、腫瘤
-
 clinicalSigns:
   early:
     - 黏膜蒼白、虛弱
@@ -35,32 +33,56 @@ clinicalSigns:
     - 嚴重貧血(PCV<15%)
     - 血栓栓塞
     - 多器官衰竭
-
 diagnosis:
   primaryTests:
     - name: CBC
-      notes: "再生性貧血,球形紅血球"
+      notes: 再生性貧血,球形紅血球
     - name: Coombs test
-      notes: "陽性(但可能偽陰性)"
+      notes: 陽性(但可能偽陰性)
     - name: 血液抹片
-      notes: "自體凝集、球形紅血球"
+      notes: 自體凝集、球形紅血球
   differentialDiagnoses:
     - 其他溶血性貧血
-
 treatment:
   medical:
     - Prednisolone 2-4 mg/kg/day PO
     - 輔助免疫抑制:
-      - Azathioprine 2 mg/kg/day PO(犬)
-      - Cyclosporine 5 mg/kg PO q12h
-      - Mycophenolate 10 mg/kg PO q12h
+        - Azathioprine 2 mg/kg/day PO(犬)
+        - Cyclosporine 5 mg/kg PO q12h
+        - Mycophenolate 10 mg/kg PO q12h
     - 抗血栓: Clopidogrel 1-2 mg/kg/day PO
     - 輸血(PCV<15%或症狀性)
     - 監測PCV、血栓併發症
-
 prognosis:
-  general: "死亡率30-70%。血栓栓塞為主要死因。存活者需長期治療。"
-
+  general: 死亡率30-70%。血栓栓塞為主要死因。存活者需長期治療。
 prevention:
   - 無法預防原發性
   - 避免已知誘發藥物
+associatedSymptoms:
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: jaundice
+    frequency: common
+diagnosticAlgorithm:
+  title: 自體免疫性溶血性貧血詳述 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - pallor-cyanosis 相關症狀
+        - weakness 相關症狀
+        - jaundice 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: CBC
+          notes: 再生性貧血,球形紅血球
+        - name: Coombs test
+          notes: 陽性(但可能偽陰性)
+        - name: 血液抹片
+          notes: 自體凝集、球形紅血球
+ddxSource: auto-generated

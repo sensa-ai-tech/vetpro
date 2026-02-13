@@ -3,18 +3,19 @@ nameEn: Siamese Cat Megaesophagus
 nameZh: 暹羅貓巨食道症
 bodySystem: gastrointestinal
 description: 暹羅貓為貓巨食道症（Megaesophagus）的品種好發者，食道因先天性或後天性神經肌肉功能障礙導致擴張與蠕動功能喪失。食物無法正常輸送至胃部，導致反流、吸入性肺炎及營養不良。
-
 aliases:
-  - { alias: 暹羅貓食道擴張, language: zh }
-  - { alias: 貓巨食道, language: zh }
-  - { alias: Siamese megaesophagus, language: en }
-  - { alias: Feline esophageal dilatation, language: en }
-
+  - alias: 暹羅貓食道擴張
+    language: zh
+  - alias: 貓巨食道
+    language: zh
+  - alias: Siamese megaesophagus
+    language: en
+  - alias: Feline esophageal dilatation
+    language: en
 species:
   - speciesCommon: cat
     prevalence: rare
     notes: 暹羅貓與相關東方品種為巨食道症較高風險的貓品種。先天型在斷奶期開始出現症狀。後天型中年貓可能發生。
-
 etiology:
   categories:
     - name: 先天性
@@ -28,7 +29,6 @@ etiology:
         - 自主神經病變
         - 食道炎後狹窄
         - 鉛中毒
-
 clinicalSigns:
   early:
     - 進食後被動性反流（區別於嘔吐：無腹部用力）
@@ -42,7 +42,6 @@ clinicalSigns:
     - 頸部食道觸診膨大
     - 飲水後反流
     - 反覆肺炎
-
 diagnosis:
   primaryTests:
     - name: 胸腔 X 光
@@ -51,7 +50,6 @@ diagnosis:
       notes: 確認食道蠕動障礙與擴張範圍。液態鋇劑見食道滯留
     - name: 肌無力篩檢
       notes: 乙醯膽鹼受體抗體（AChR Ab）排除重症肌無力
-
 treatment:
   principles:
     - 姿勢性餵食為核心管理
@@ -67,9 +65,48 @@ treatment:
     - 吸入性肺炎時積極抗生素治療
     - 血管環異常者手術矯正
     - 營養支持（胃管餵食在嚴重病例）
-
 prognosis: 先天性巨食道症預後謹慎。少數幼貓可能隨成長改善。後天性原因（如重症肌無力）若可治療則預後較好。吸入性肺炎為主要致死原因。姿勢性餵食需飼主極高配合度。嚴重者生活品質受限。
-
 pubmedQueries:
   - query: '"megaesophagus" AND (feline OR cat OR Siamese) AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: common
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+diagnosticAlgorithm:
+  title: 暹羅貓巨食道症 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - dysphagia 相關症狀
+        - weight-loss 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 胸腔 X 光
+          notes: 食道明顯擴大充氣或充食。正位與側位片評估。吸入性肺炎徵象
+        - name: 鋇劑吞嚥
+          notes: 確認食道蠕動障礙與擴張範圍。液態鋇劑見食道滯留
+        - name: 肌無力篩檢
+          notes: 乙醯膽鹼受體抗體（AChR Ab）排除重症肌無力
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 姿勢性餵食為核心管理
+        - 預防吸入性肺炎
+        - 營養支持
+ddxSource: auto-generated

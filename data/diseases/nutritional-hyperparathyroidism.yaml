@@ -2,14 +2,18 @@ slug: nutritional-hyperparathyroidism
 nameEn: Nutritional Hyperparathyroidism
 nameZh: 營養性副甲狀腺功能亢進
 bodySystem: endocrine
-description: 營養性副甲狀腺功能亢進為因飲食鈣磷比例失衡（高磷低鈣或絕對鈣缺乏）導致的繼發性副甲狀腺功能亢進。最常見於餵食全肉飲食（all-meat diet）的幼犬幼貓，因肉類富含磷但鈣含量極低。PTH 持續升高導致骨鈣釋出，引起全身性骨質疏鬆與病理性骨折。
-
+description: >-
+  營養性副甲狀腺功能亢進為因飲食鈣磷比例失衡（高磷低鈣或絕對鈣缺乏）導致的繼發性副甲狀腺功能亢進。最常見於餵食全肉飲食（all-meat diet）的幼犬幼貓，因肉類富含磷但鈣含量極低。PTH
+  持續升高導致骨鈣釋出，引起全身性骨質疏鬆與病理性骨折。
 aliases:
-  - { alias: 營養性繼發性副甲狀腺功能亢進, language: zh }
-  - { alias: Nutritional Secondary Hyperparathyroidism, language: en }
-  - { alias: Rubber Jaw, language: en }
-  - { alias: Nutritional Osteodystrophy, language: en }
-
+  - alias: 營養性繼發性副甲狀腺功能亢進
+    language: zh
+  - alias: Nutritional Secondary Hyperparathyroidism
+    language: en
+  - alias: Rubber Jaw
+    language: en
+  - alias: Nutritional Osteodystrophy
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +21,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻營養性副甲狀腺功能亢進多見於餵食全肉或全魚飲食的幼貓。
-
 etiology:
   categories:
     - name: 飲食因素
@@ -31,7 +34,6 @@ etiology:
         - 低鈣攝入→低血鈣→PTH 持續升高
         - 高磷攝入→高磷血症→進一步刺激 PTH
         - PTH 促進骨鈣釋出→骨質疏鬆
-
 clinicalSigns:
   early:
     - 跛行
@@ -44,14 +46,12 @@ clinicalSigns:
     - 骨骼彎曲變形
     - 後肢無力
     - 脊椎壓迫性骨折導致神經症狀（後肢癱瘓）
-
 diagnosis:
   primaryTests:
     - name: 飲食史 + X 光
       notes: 飲食史為診斷關鍵（全肉飲食、無鈣補充）。X 光：全身性骨密度降低。皮質骨變薄。病理性骨折。折疊骨折（folding fracture）為特徵性。
     - name: 血液生化
       notes: 血鈣可能正常低值（PTH 代償）。血磷正常或升高。PTH 升高。ALP 升高（骨代謝增加）。
-
 treatment:
   principles:
     - 立即矯正飲食為核心
@@ -59,14 +59,47 @@ treatment:
     - 鈣磷補充
   general:
     - 立即更換為營養均衡的商業飼料（幼犬/幼貓配方）
-    - "鈣補充：Calcium carbonate 100-200 mg/kg/day（分次隨餐）× 2-4 週"
+    - 鈣補充：Calcium carbonate 100-200 mg/kg/day（分次隨餐）× 2-4 週
     - 嚴格限制活動（籠舍休息）預防病理性骨折
     - 骨折處理（保守治療為主，骨骼品質差不適合手術固定）
     - 疼痛管理
     - Vitamin D 補充（通常不需要額外補充，商業飼料已含足量）
-
 prognosis: 預後良好（若無嚴重脊椎骨折）。飲食矯正後骨密度通常在數週至數月內改善。幼齡動物骨骼再礦化能力強。病理性長骨骨折多數可癒合。脊椎壓迫性骨折伴神經症狀者預後較差。飼主教育（均衡飲食的重要性）是預防關鍵。
-
 pubmedQueries:
-  - query: '"nutritional hyperparathyroidism" OR "nutritional secondary hyperparathyroidism" AND (veterinary OR canine OR feline) AND ("treatment" OR "diet")'
+  - query: >-
+      "nutritional hyperparathyroidism" OR "nutritional secondary hyperparathyroidism" AND (veterinary OR canine OR
+      feline) AND ("treatment" OR "diet")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 營養性副甲狀腺功能亢進 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - paresis-paralysis 相關症狀
+        - weakness 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 飲食史 + X 光
+          notes: 飲食史為診斷關鍵（全肉飲食、無鈣補充）。X 光：全身性骨密度降低。皮質骨變薄。病理性骨折。折疊骨折（folding fracture）為特徵性。
+        - name: 血液生化
+          notes: 血鈣可能正常低值（PTH 代償）。血磷正常或升高。PTH 升高。ALP 升高（骨代謝增加）。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 立即矯正飲食為核心
+        - 限制活動預防骨折
+        - 鈣磷補充
+ddxSource: auto-generated

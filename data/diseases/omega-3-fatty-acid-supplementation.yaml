@@ -3,12 +3,13 @@ nameEn: Omega 3 Fatty Acid Supplementation
 nameZh: Omega-3脂肪酸補充
 bodySystem: metabolic
 description: EPA及DHA等Omega-3脂肪酸的獸醫臨床應用。具抗發炎、心血管保護、皮膚健康、腎臟保護及認知功能支持等多重效益。
-
 aliases:
-  - { alias: 魚油補充, language: zh }
-  - { alias: Fish Oil Supplementation, language: en }
-  - { alias: EPA DHA Supplement, language: en }
-
+  - alias: 魚油補充
+    language: zh
+  - alias: Fish Oil Supplementation
+    language: en
+  - alias: EPA DHA Supplement
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 慢性腎病、皮膚病常用
-
 etiology:
   categories:
     - name: Omega-3類型
@@ -42,7 +42,6 @@ etiology:
         - 降低三酸甘油酯
         - 支持神經功能
         - 皮膚屏障功能
-
 clinicalSigns:
   early:
     - 適當補充：皮膚毛質改善、關節症狀減輕
@@ -50,16 +49,14 @@ clinicalSigns:
   progressive:
     - 長期使用：慢性病症狀控制、生活品質改善
     - 維生素E缺乏(若未同時補充)
-
 diagnosis:
   primaryTests:
     - name: 臨床症狀評估
-      notes: "皮膚、關節、認知功能"
+      notes: 皮膚、關節、認知功能
     - name: 凝血功能
-      notes: "高劑量時監測"
+      notes: 高劑量時監測
   differentialDiagnoses:
     - 各種發炎性疾病
-
 treatment:
   medical:
     - Omega-3劑量(EPA+DHA總量)
@@ -82,45 +79,67 @@ treatment:
     - 可與食物一起給予
     - 需2-4週見效
     - 手術前1週停用(抗凝血作用)
-
 prognosis:
-  general: "Omega-3補充安全有效，可改善多種慢性疾病症狀及生活品質"
-
+  general: Omega-3補充安全有效，可改善多種慢性疾病症狀及生活品質
 prevention:
   - 選擇高品質產品
   - 適當劑量
   - 同時補充維生素E
   - 手術前停用
-
-
 guidelineRefs:
   - sourceOrg: Iranian Red Crescent medical journal
-    title: "Effects of Fish Oil Supplementation on Gestational Diabetes Mellitus (GDM): A Systematic Review."
+    title: 'Effects of Fish Oil Supplementation on Gestational Diabetes Mellitus (GDM): A Systematic Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5292136/
     type: review
-    pmid: "28191333"
+    pmid: '28191333'
     relevance: supporting
   - sourceOrg: Nutrients
-    title: Synergistic Effects of Omega-3 Fatty Acids and Physical Activity on Oxidative Stress Markers and Antioxidant Mechanisms in Aged Rats.
+    title: >-
+      Synergistic Effects of Omega-3 Fatty Acids and Physical Activity on Oxidative Stress Markers and Antioxidant
+      Mechanisms in Aged Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11723026/
     type: research
-    pmid: "39796529"
+    pmid: '39796529'
     relevance: supporting
   - sourceOrg: Molecular psychiatry
-    title: Perinatal omega-3 sex-selectively mitigates neuropsychiatric impacts of prenatal THC in the cortico-striatal-hippocampal circuit.
+    title: >-
+      Perinatal omega-3 sex-selectively mitigates neuropsychiatric impacts of prenatal THC in the
+      cortico-striatal-hippocampal circuit.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12532601/
     type: research
-    pmid: "40721894"
+    pmid: '40721894'
     relevance: supporting
-  - sourceOrg: "Food science &amp; nutrition"
+  - sourceOrg: Food science &amp; nutrition
     title: Omega-3 supplementation attenuates doxorubicin-induced cardiotoxicity but is not related to the ceramide pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11606900/
     type: research
-    pmid: "39620015"
+    pmid: '39620015'
     relevance: supporting
   - sourceOrg: Nutrients
-    title: Omega-3 Fatty Acids Weaken Lymphocyte Inflammatory Features and Improve Glycemic Control in Nonobese Diabetic Goto-Kakizaki Rats.
+    title: >-
+      Omega-3 Fatty Acids Weaken Lymphocyte Inflammatory Features and Improve Glycemic Control in Nonobese Diabetic
+      Goto-Kakizaki Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11644024/
     type: research
-    pmid: "39683500"
+    pmid: '39683500'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: diarrhoea
+    frequency: common
+diagnosticAlgorithm:
+  title: Omega-3脂肪酸補充 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床症狀評估
+          notes: 皮膚、關節、認知功能
+        - name: 凝血功能
+          notes: 高劑量時監測
+ddxSource: auto-generated

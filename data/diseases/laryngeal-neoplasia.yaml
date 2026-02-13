@@ -3,11 +3,11 @@ nameEn: Laryngeal Neoplasia
 nameZh: 喉腫瘤
 bodySystem: oncology
 description: 喉部原發或轉移性腫瘤,導致氣道阻塞及聲音改變。犬貓罕見,多為惡性腫瘤。
-
 aliases:
-  - { alias: 喉癌, language: zh }
-  - { alias: Laryngeal Tumor, language: en }
-
+  - alias: 喉癌
+    language: zh
+  - alias: Laryngeal Tumor
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 罕見,多為淋巴瘤或鱗狀細胞癌
-
 etiology:
   categories:
     - name: 惡性腫瘤
@@ -29,7 +28,6 @@ etiology:
       examples:
         - 息肉
         - 乳突瘤
-
 clinicalSigns:
   early:
     - 聲音改變
@@ -39,39 +37,65 @@ clinicalSigns:
     - 吞嚥困難
     - 咳嗽
     - 體重減輕
-
 diagnosis:
   primaryTests:
     - name: 喉鏡檢查
-      notes: "直視腫瘤,取組織切片"
+      notes: 直視腫瘤,取組織切片
     - name: CT/MRI
-      notes: "評估腫瘤範圍及轉移"
+      notes: 評估腫瘤範圍及轉移
     - name: 組織病理學
-      notes: "確診腫瘤類型"
+      notes: 確診腫瘤類型
   differentialDiagnoses:
     - 喉麻痺
     - 喉炎
     - 異物
-
 treatment:
   medical:
     - 外科切除 (若可行)
     - 放射治療
     - 化療 (淋巴瘤)
     - 永久氣切 (姑息性)
-
 prognosis:
-  general: "預後不良;惡性腫瘤中位存活時間 3-6 個月;淋巴瘤對化療反應較佳"
-
+  general: 預後不良;惡性腫瘤中位存活時間 3-6 個月;淋巴瘤對化療反應較佳
 prevention:
   - 無特定預防措施
   - 早期診斷及治療
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
     title: Computed tomographic appearance of laryngeal lesions in 7 dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12444889/
     type: research
-    pmid: "40979371"
+    pmid: '40979371'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: dysphagia
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: uncommon
+  - symptomId: stertor-stridor
+    frequency: common
+diagnosticAlgorithm:
+  title: 喉腫瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - dyspnoea 相關症狀
+        - dysphagia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 喉鏡檢查
+          notes: 直視腫瘤,取組織切片
+        - name: CT/MRI
+          notes: 評估腫瘤範圍及轉移
+        - name: 組織病理學
+          notes: 確診腫瘤類型
+ddxSource: auto-generated

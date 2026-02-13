@@ -3,11 +3,11 @@ nameEn: Cold Agglutinin Disease
 nameZh: 冷凝集素病
 bodySystem: immunology
 description: 低溫下活化的抗體引起紅血球凝集及溶血。暴露於寒冷環境會加劇症狀。
-
 aliases:
-  - { alias: 冷抗體溶血, language: zh }
-  - { alias: Cold Antibody AIHA, language: en }
-
+  - alias: 冷抗體溶血
+    language: zh
+  - alias: Cold Antibody AIHA
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 極罕見
-
 etiology:
   categories:
     - name: 原發性
@@ -26,23 +25,20 @@ etiology:
     - name: 次發性
       examples:
         - 感染、淋巴瘤
-
 clinicalSigns:
   early:
     - 暴露寒冷後貧血惡化
     - 肢端紫紺(紅血球凝集)
   progressive:
     - 黃疸、溶血
-
 diagnosis:
   primaryTests:
     - name: 冷凝集試驗
-      notes: "4°C下紅血球凝集,37°C消散"
+      notes: 4°C下紅血球凝集,37°C消散
     - name: Coombs test
-      notes: "冷抗體陽性(4°C)"
+      notes: 冷抗體陽性(4°C)
   differentialDiagnoses:
     - 溫抗體AIHA
-
 treatment:
   medical:
     - 避免寒冷暴露
@@ -50,9 +46,58 @@ treatment:
     - Prednisolone(效果有限)
     - 輸血時加溫
     - 考慮Rituximab(人用藥,昂貴)
-
 prognosis:
-  general: "慢性病程。避免寒冷可控制症狀。嚴重案例預後不良。"
-
+  general: 慢性病程。避免寒冷可控制症狀。嚴重案例預後不良。
 prevention:
   - 保持溫暖環境
+diagnosticAlgorithm:
+  title: 冷凝集素病 診斷流程
+  steps:
+    - step: 1
+      action: 臨床懷疑
+      details: 貧血+末梢壞死+寒冷加重
+      findings:
+        - 末梢發紺/壞死
+        - 黏膜蒼白
+        - 寒冷暴露後惡化
+    - step: 2
+      action: 凝集試驗
+      details: 室溫vs 37°C對照
+      findings:
+        - 室溫血液凝集
+        - 加溫至37°C凝集消失
+        - 確認冷反應性抗體
+    - step: 3
+      action: 溶血評估
+      details: 評估溶血嚴重度
+      findings:
+        - PCV下降
+        - 膽紅素升高
+        - 血紅素尿
+    - step: 4
+      action: 病因調查
+      details: 排除繼發性原因
+      findings:
+        - 淋巴瘤篩檢
+        - Mycoplasma PCR
+        - 腹部超音波
+clinicalPearls:
+  - 室溫凝集+加溫消失是冷凝集素病的特徵性診斷
+  - 保暖是最基本也最重要的治療措施
+  - 末梢壞死（耳尖、尾尖）提示冷型IMHA
+  - 應排除淋巴瘤等繼發性原因
+monitoringItems:
+  - 環境溫度管理
+  - PCV追蹤
+  - 末梢組織狀態
+  - 冷凝集素效價
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: pallor-cyanosis
+    frequency: rare
+  - symptomId: splenomegaly
+    frequency: rare
+ddxSource: book

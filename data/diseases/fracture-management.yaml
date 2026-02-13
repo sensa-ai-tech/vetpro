@@ -3,14 +3,17 @@ nameEn: Fracture Management
 nameZh: 骨折處理
 bodySystem: orthopedic
 description: 骨骼完整性中斷的診斷與治療，涵蓋從簡單閉鎖性骨折到複雜開放性粉碎性骨折的分類、固定方式選擇與術後復健，為小動物骨科最常見的臨床問題。
-
 aliases:
-  - { alias: Bone Fracture, language: en }
-  - { alias: Fracture Repair, language: en }
-  - { alias: Orthopedic Fracture Fixation, language: en }
-  - { alias: 骨折修復, language: zh }
-  - { alias: 骨折固定, language: zh }
-
+  - alias: Bone Fracture
+    language: en
+  - alias: Fracture Repair
+    language: en
+  - alias: Orthopedic Fracture Fixation
+    language: en
+  - alias: 骨折修復
+    language: zh
+  - alias: 骨折固定
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 高樓症候群 (high-rise syndrome) 為貓常見骨折原因。骨盆骨折、股骨骨折、下顎骨折最常見。貓骨折癒合通常較犬快速。
-
 etiology:
   categories:
     - name: 外傷性 (最常見)
@@ -40,7 +42,6 @@ etiology:
       examples:
         - 反覆微創傷 (賽犬)
         - 骨質疏鬆合併輕微外力
-
 clinicalSigns:
   early:
     - 急性跛行或不負重
@@ -61,20 +62,19 @@ clinicalSigns:
     - 惡性癒合 (malunion — 錯位癒合)
     - 骨髓炎 (尤其開放性骨折)
     - 肌肉萎縮與關節僵硬
-
 diagnosis:
   primaryTests:
     - name: 理學/骨科檢查
-      notes: "輕柔觸診評估疼痛部位、腫脹、異常活動度、捻髮音。神經血管評估 (遠端脈搏、深部痛覺)。注意多發性創傷患者可能有多處骨折"
+      notes: 輕柔觸診評估疼痛部位、腫脹、異常活動度、捻髮音。神經血管評估 (遠端脈搏、深部痛覺)。注意多發性創傷患者可能有多處骨折
     - name: X 光 (至少兩個正交方位)
-      notes: "骨折診斷金標準。必須包含相鄰關節。正位 (AP/craniocaudal) + 側位 (lateral) 兩個方位。評估骨折類型、碎片數量、移位程度"
+      notes: 骨折診斷金標準。必須包含相鄰關節。正位 (AP/craniocaudal) + 側位 (lateral) 兩個方位。評估骨折類型、碎片數量、移位程度
     - name: 全身性創傷評估 (TFAST/AFAST)
-      notes: "車禍等多發性創傷：胸腔 X 光 (氣胸、肺挫傷)、腹部超音波 (腹腔出血)、神經學檢查。骨折處理不是最優先 — 穩定生命徵象為先"
+      notes: 車禍等多發性創傷：胸腔 X 光 (氣胸、肺挫傷)、腹部超音波 (腹腔出血)、神經學檢查。骨折處理不是最優先 — 穩定生命徵象為先
   imaging:
     - name: X 光 (骨折分類)
-      notes: "分類：閉鎖/開放、橫向/斜向/螺旋/粉碎、骨幹/骨骺/關節內。Salter-Harris 分類 (生長板骨折)"
+      notes: 分類：閉鎖/開放、橫向/斜向/螺旋/粉碎、骨幹/骨骺/關節內。Salter-Harris 分類 (生長板骨折)
     - name: CT 掃描
-      notes: "複雜關節內骨折、骨盆骨折、脊椎骨折的精確評估。術前計畫"
+      notes: 複雜關節內骨折、骨盆骨折、脊椎骨折的精確評估。術前計畫
   differentialDiagnoses:
     - 關節脫位/半脫位 (Luxation/Subluxation)
     - 韌帶撕裂 (Ligament Rupture)
@@ -88,7 +88,6 @@ diagnosis:
     - 血型與交叉配血 (嚴重出血需輸血)
     - 乳酸 (休克評估)
     - 細菌培養 (開放性骨折)
-
 treatment:
   principles:
     - 先穩定患者生命徵象 (ABC)，再處理骨折
@@ -97,68 +96,112 @@ treatment:
     - 開放性骨折為急症，需盡快清創與固定
   medications:
     - name: Opioid 止痛 (Methadone / Hydromorphone)
-      dose: "Methadone 0.2-0.5 mg/kg IV/IM Q4-6H；Hydromorphone 0.05-0.1 mg/kg IV/IM"
+      dose: Methadone 0.2-0.5 mg/kg IV/IM Q4-6H；Hydromorphone 0.05-0.1 mg/kg IV/IM
       notes: 急性創傷止痛為第一優先。充分止痛可減輕休克與應激反應
     - name: NSAIDs (Meloxicam / Carprofen)
-      dose: "Meloxicam 犬 0.2 mg/kg SC/PO 首劑後 0.1 mg/kg SID；Carprofen 4 mg/kg SC/PO 後 2 mg/kg BID"
+      dose: Meloxicam 犬 0.2 mg/kg SC/PO 首劑後 0.1 mg/kg SID；Carprofen 4 mg/kg SC/PO 後 2 mg/kg BID
       notes: 穩定後的止痛維持。與 opioid 多模式止痛。腎功能確認正常後使用
     - name: 廣效抗生素 (開放性骨折)
-      dose: "Cefazolin 22 mg/kg IV Q8H (一線)；合併 Enrofloxacin 10 mg/kg IV SID (嚴重汙染)"
+      dose: Cefazolin 22 mg/kg IV Q8H (一線)；合併 Enrofloxacin 10 mg/kg IV SID (嚴重汙染)
       notes: 開放性骨折需立即抗生素。依 Gustilo-Anderson 分級調整。培養結果回報後調整
     - name: Gabapentin (術後)
-      dose: "5-10 mg/kg PO BID-TID"
+      dose: 5-10 mg/kg PO BID-TID
       notes: 術後慢性疼痛輔助止痛
   general:
-    - "緊急穩定：臨時外固定 (Robert Jones bandage 或夾板) 防止進一步損傷"
-    - "開放性骨折：清創、沖洗 (生理食鹽水)、暫時覆蓋、盡快內固定"
-    - "手術固定方式 — 內固定：骨板螺釘 (bone plate/screw，最常用)、髓內釘 (intramedullary pin)、互鎖釘 (interlocking nail)、環形外固定器 (circular external fixator)"
-    - "手術固定方式 — 外固定：Type I/II/III 外固定器 (external skeletal fixator, ESF)，適用於開放性骨折與軟組織損傷嚴重者"
-    - "保守治療 (外固定/石膏)：穩定、非移位的遠端肢骨折。幼犬不完全骨折"
-    - "骨折評估分數（Fracture Assessment Score）：根據動物年齡、健康狀態、骨折類型與位置綜合評分，決定固定方式的選擇與穩定性需求"
-    - "生物學骨固定原則（Biological Osteosynthesis）：複雜粉碎性骨折不追求每個碎片的解剖復位，而是恢復骨長度、軸線與旋轉對位，保留碎片血供促進間接癒合"
-    - "骨移植（Bone Graft）：自體松質骨移植適用於骨缺損 >3 cm 或不癒合/延遲癒合病例，最常取自肱骨近端或脛骨近端"
+    - 緊急穩定：臨時外固定 (Robert Jones bandage 或夾板) 防止進一步損傷
+    - 開放性骨折：清創、沖洗 (生理食鹽水)、暫時覆蓋、盡快內固定
+    - >-
+      手術固定方式 — 內固定：骨板螺釘 (bone plate/screw，最常用)、髓內釘 (intramedullary pin)、互鎖釘 (interlocking nail)、環形外固定器 (circular
+      external fixator)
+    - 手術固定方式 — 外固定：Type I/II/III 外固定器 (external skeletal fixator, ESF)，適用於開放性骨折與軟組織損傷嚴重者
+    - 保守治療 (外固定/石膏)：穩定、非移位的遠端肢骨折。幼犬不完全骨折
+    - 骨折評估分數（Fracture Assessment Score）：根據動物年齡、健康狀態、骨折類型與位置綜合評分，決定固定方式的選擇與穩定性需求
+    - 生物學骨固定原則（Biological Osteosynthesis）：複雜粉碎性骨折不追求每個碎片的解剖復位，而是恢復骨長度、軸線與旋轉對位，保留碎片血供促進間接癒合
+    - 骨移植（Bone Graft）：自體松質骨移植適用於骨缺損 >3 cm 或不癒合/延遲癒合病例，最常取自肱骨近端或脛骨近端
     - 術後 X 光追蹤 (術後立即、4-6 週、8-12 週)
     - 物理復健 (被動關節活動、水中跑步機、治療性超音波)
     - 營養支持 (充足蛋白質與鈣磷平衡)
     - 活動限制 (籠內休息 4-8 週)
-
-emergencyNotes: "多發性創傷患者：先穩定 ABC，處理危及生命的問題 (氣胸→胸腔引流、腹腔出血→輸液/輸血)。骨折非最優先但需臨時固定 (夾板/繃帶) 以減輕疼痛與防止進一步損傷。開放性骨折需盡快 (<6 小時) 清創與抗生素覆蓋。股骨骨折出血量可達體重 5-10%。"
-
-prognosis: 多數簡單骨折經適當固定後癒合良好 (4-12 週依年齡與部位)。幼犬骨折癒合最快 (3-4 週)。小型犬橈骨/尺骨遠端骨折不癒合率較高 (可達 18%)。開放性粉碎性骨折併發症風險較高 (骨髓炎、不癒合)。關節內骨折即使良好復位仍可能續發退化性關節炎。病理性骨折 (骨肉瘤) 預後取決於腫瘤本身。
-
+emergencyNotes: >-
+  多發性創傷患者：先穩定 ABC，處理危及生命的問題 (氣胸→胸腔引流、腹腔出血→輸液/輸血)。骨折非最優先但需臨時固定 (夾板/繃帶) 以減輕疼痛與防止進一步損傷。開放性骨折需盡快 (<6 小時)
+  清創與抗生素覆蓋。股骨骨折出血量可達體重 5-10%。
+prognosis: >-
+  多數簡單骨折經適當固定後癒合良好 (4-12 週依年齡與部位)。幼犬骨折癒合最快 (3-4 週)。小型犬橈骨/尺骨遠端骨折不癒合率較高 (可達 18%)。開放性粉碎性骨折併發症風險較高
+  (骨髓炎、不癒合)。關節內骨折即使良好復位仍可能續發退化性關節炎。病理性骨折 (骨肉瘤) 預後取決於腫瘤本身。
 guidelineRefs:
   - sourceOrg: Veterinary Surgery
     title: Complications of fracture repair in companion animals
     url: https://pubmed.ncbi.nlm.nih.gov/15032938/
     type: review
-    pmid: "15032938"
+    pmid: '15032938'
   - sourceOrg: Veterinary and Comparative Orthopaedics and Traumatology
     title: Principles of fracture fixation in small animal surgery
     url: https://pubmed.ncbi.nlm.nih.gov/19546870/
     type: review
-    pmid: "19546870"
+    pmid: '19546870'
   - sourceOrg: Journal of the American Veterinary Medical Association
     title: Fracture-assessment score for selection of fracture treatment in dogs and cats
     url: https://pubmed.ncbi.nlm.nih.gov/15900951/
     type: review
-    pmid: "15900951"
-  - sourceOrg: "Veterinary surgery : VS"
+    pmid: '15900951'
+  - sourceOrg: 'Veterinary surgery : VS'
     title: A review of minimally invasive fracture stabilization in dogs and cats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9292778/
     type: review
-    pmid: "34309048"
+    pmid: '34309048'
     relevance: primary
   - sourceOrg: International journal of surgery case reports
     title: Secondary mandibular osteomyelitis complicated with a pathological fracture.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11283122/
     type: case-report
-    pmid: "38964230"
+    pmid: '38964230'
     relevance: supporting
 pubmedQueries:
-  - query: '"fracture" AND (dog OR cat OR canine OR feline) AND ("fixation" OR "treatment" OR "bone plate" OR "external fixator")'
+  - query: >-
+      "fracture" AND (dog OR cat OR canine OR feline) AND ("fixation" OR "treatment" OR "bone plate" OR "external
+      fixator")
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "EXL"
-  sectionTitle: "MANAGEMENT"
+  chapter: EXL
+  sectionTitle: MANAGEMENT
   pdfPage: 1897
+associatedSymptoms:
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 骨折處理 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cachexia-muscle-wasting 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學/骨科檢查
+          notes: 輕柔觸診評估疼痛部位、腫脹、異常活動度、捻髮音。神經血管評估 (遠端脈搏、深部痛覺)。注意多發性創傷患者可能有多處骨折
+        - name: X 光 (至少兩個正交方位)
+          notes: 骨折診斷金標準。必須包含相鄰關節。正位 (AP/craniocaudal) + 側位 (lateral) 兩個方位。評估骨折類型、碎片數量、移位程度
+        - name: 全身性創傷評估 (TFAST/AFAST)
+          notes: 車禍等多發性創傷：胸腔 X 光 (氣胸、肺挫傷)、腹部超音波 (腹腔出血)、神經學檢查。骨折處理不是最優先 — 穩定生命徵象為先
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - CBC + 生化 (術前基線、創傷後評估)
+        - 凝血功能 (多發性創傷/大量出血)
+        - 血型與交叉配血 (嚴重出血需輸血)
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 先穩定患者生命徵象 (ABC)，再處理骨折
+        - 骨折固定方式取決於骨折類型、位置、動物大小、併發傷與經濟考量
+        - 目標：解剖復位、穩定固定、保留血供、早期功能恢復
+ddxSource: auto-generated

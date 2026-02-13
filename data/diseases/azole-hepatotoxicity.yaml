@@ -3,13 +3,15 @@ nameEn: Azole Hepatotoxicity
 nameZh: 唑類抗黴菌藥肝毒性
 bodySystem: toxicology
 description: 唑類抗黴菌藥肝毒性是使用 ketoconazole、itraconazole、fluconazole 等唑類抗黴菌藥物後引起的藥物性肝損傷。在犬貓中以 ketoconazole 肝毒性報告最多。
-
 aliases:
-  - { alias: 抗黴菌藥肝損傷, language: zh }
-  - { alias: 唑類藥物肝毒性, language: zh }
-  - { alias: Antifungal Hepatotoxicity, language: en }
-  - { alias: Azole Antifungal Liver Injury, language: en }
-
+  - alias: 抗黴菌藥肝損傷
+    language: zh
+  - alias: 唑類藥物肝毒性
+    language: zh
+  - alias: Antifungal Hepatotoxicity
+    language: en
+  - alias: Azole Antifungal Liver Injury
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓唑類藥物肝毒性報告較犬少。Itraconazole 在貓中使用較多，偶見肝酵素升高。
-
 etiology:
   categories:
     - name: 常見相關藥物（肝毒性風險由高至低）
@@ -35,7 +36,6 @@ etiology:
         - 膽汁鬱滯
         - 特異體質反應
         - 與其他經肝代謝藥物交互作用增加風險
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -48,19 +48,17 @@ clinicalSigns:
     - 體重減輕
     - 腹部不適
     - 嚴重者可發展為急性肝衰竭
-
 diagnosis:
   primaryTests:
     - name: 血液生化監測
-      notes: "ALT 升高為主要指標。建議用藥前取得基線值，用藥後每2-4週監測。ALT >正常上限3倍應考慮停藥。"
+      notes: ALT 升高為主要指標。建議用藥前取得基線值，用藥後每2-4週監測。ALT >正常上限3倍應考慮停藥。
     - name: 用藥史評估
-      notes: "確認唑類藥物種類、劑量與使用時間。評估併用藥物的交互作用風險。"
+      notes: 確認唑類藥物種類、劑量與使用時間。評估併用藥物的交互作用風險。
   differentialDiagnoses:
     - 原發性肝臟疾病
     - 其他藥物性肝損傷
     - 深部黴菌感染肝臟累及
     - 膽道疾病
-
 treatment:
   medical:
     - 停用引起肝毒性的唑類藥物
@@ -71,41 +69,75 @@ treatment:
     - 肝功能恢復後再評估抗黴菌策略
   surgical:
     - 通常不適用手術治療
-
 prognosis:
-  general: "早期停藥者多數肝功能可恢復，預後良好。Ketoconazole 引起的嚴重肝損傷偶見報告。Itraconazole 與 fluconazole 肝毒性通常較輕微且可逆。需要長期抗黴菌治療者應選擇肝毒性較低的藥物。"
-
+  general: 早期停藥者多數肝功能可恢復，預後良好。Ketoconazole 引起的嚴重肝損傷偶見報告。Itraconazole 與 fluconazole 肝毒性通常較輕微且可逆。需要長期抗黴菌治療者應選擇肝毒性較低的藥物。
 prevention:
   - 優先選擇肝毒性較低的唑類藥物（fluconazole > itraconazole > ketoconazole）
   - 用藥前檢測基線肝功能
   - 每2-4週監測肝酵素
   - 避免與其他肝代謝藥物不必要的併用
   - ALT >正常上限2-3倍時考慮停藥或換藥
-
-
 guidelineRefs:
   - sourceOrg: Journal of nanobiotechnology
-    title: Erythrocyte membrane camouflaged celastrol and bilirubin self-assembly for rheumatoid arthritis immunotherapy based on STING inhibition and RONS clearance.
+    title: >-
+      Erythrocyte membrane camouflaged celastrol and bilirubin self-assembly for rheumatoid arthritis immunotherapy
+      based on STING inhibition and RONS clearance.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12032812/
     type: research
-    pmid: "40287703"
+    pmid: '40287703'
   - sourceOrg: Environmental science and pollution research international
-    title: Evaluation of therapeutic effects of camel milk against the hepatotoxicity and nephrotoxicity induced by fipronil and lead acetate and their mixture.
+    title: >-
+      Evaluation of therapeutic effects of camel milk against the hepatotoxicity and nephrotoxicity induced by fipronil
+      and lead acetate and their mixture.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10076416/
     type: research
-    pmid: "36697983"
+    pmid: '36697983'
   - sourceOrg: International journal of molecular sciences
     title: Comparison of Efavirenz and Doravirine Developmental Toxicity in an Embryo Animal Model.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10380689/
     type: research
-    pmid: "37511423"
+    pmid: '37511423'
   - sourceOrg: Molecules (Basel, Switzerland)
-    title: Protective Effects of Omega-3 Supplementation against Doxorubicin-Induced Deleterious Effects on the Liver and Kidneys of Rats.
+    title: >-
+      Protective Effects of Omega-3 Supplementation against Doxorubicin-Induced Deleterious Effects on the Liver and
+      Kidneys of Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10096317/
     type: research
-    pmid: "37049766"
+    pmid: '37049766'
   - sourceOrg: International journal of molecular sciences
     title: Effects of Exercise Preconditioning on Doxorubicin-Induced Liver and Kidney Toxicity in Male and Female Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10298992/
     type: research
-    pmid: "37373368"
+    pmid: '37373368'
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+  - symptomId: vomiting
+    frequency: common
+  - symptomId: jaundice
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 唑類抗黴菌藥肝毒性 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - abdominal-pain 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液生化監測
+          notes: ALT 升高為主要指標。建議用藥前取得基線值，用藥後每2-4週監測。ALT >正常上限3倍應考慮停藥。
+        - name: 用藥史評估
+          notes: 確認唑類藥物種類、劑量與使用時間。評估併用藥物的交互作用風險。
+ddxSource: auto-generated

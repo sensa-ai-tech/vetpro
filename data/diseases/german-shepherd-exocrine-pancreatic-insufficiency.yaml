@@ -3,19 +3,20 @@ nameEn: German Shepherd Exocrine Pancreatic Insufficiency
 nameZh: 德國牧羊犬外分泌胰腺功能不全
 bodySystem: gastrointestinal
 description: 德國牧羊犬外分泌胰腺功能不全（EPI）是該品種最常見的消化系統遺傳疾病，由胰腺腺泡細胞萎縮導致消化酶分泌不足。患犬出現慢性腹瀉、消瘦與多食。為體染色體隱性遺傳。
-
 aliases:
-  - { alias: 德牧 EPI, language: zh }
-  - { alias: 胰腺腺泡萎縮, language: zh }
-  - { alias: German Shepherd EPI, language: en }
-  - { alias: Pancreatic acinar atrophy, language: en }
-
+  - alias: 德牧 EPI
+    language: zh
+  - alias: 胰腺腺泡萎縮
+    language: zh
+  - alias: German Shepherd EPI
+    language: en
+  - alias: Pancreatic acinar atrophy
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 德國牧羊犬佔所有犬 EPI 病例的 60-70%。通常 1-5 歲發病。體染色體隱性遺傳，攜帶率估計約 15-20%。
-
 etiology:
   categories:
     - name: 遺傳因素
@@ -28,7 +29,6 @@ etiology:
         - 淋巴細胞浸潤胰腺腺泡
         - 腺泡細胞進行性破壞
         - 消化酶（脂肪酶、蛋白酶、澱粉酶）分泌不足
-
 clinicalSigns:
   early:
     - 慢性小腸型腹瀉
@@ -42,21 +42,19 @@ clinicalSigns:
     - 腸胃脹氣
     - 維生素 B12 缺乏
     - 小腸細菌過度增生（SIBO）
-
 diagnosis:
   primaryTests:
     - name: 血清 TLI（胰蛋白酶免疫反應性）
-      notes: "金標準。空腹 12 小時後採血。TLI <2.5 μg/L 確診 EPI"
+      notes: 金標準。空腹 12 小時後採血。TLI <2.5 μg/L 確診 EPI
     - name: 血清 cobalamin 與 folate
-      notes: "Cobalamin 常低，folate 可能升高（提示 SIBO）"
+      notes: Cobalamin 常低，folate 可能升高（提示 SIBO）
     - name: 糞便消化試驗
-      notes: "顯微鏡下見大量未消化脂肪球與肌纖維"
+      notes: 顯微鏡下見大量未消化脂肪球與肌纖維
   differentialDiagnoses:
     - 炎症性腸病
     - 小腸淋巴瘤
     - 腸道寄生蟲
     - 乳糜瀉
-
 treatment:
   medical:
     - 胰臟酵素替代（粉劑混入每餐食物，終生使用）
@@ -64,11 +62,39 @@ treatment:
     - 低脂高消化率飲食
     - 抗生素治療 SIBO（Tylosin 25 mg/kg PO BID 或 Metronidazole）
     - 維生素 E 補充
-
 prognosis:
-  general: "經適當的酵素替代治療，預後良好。多數犬可恢復體重並維持正常生活品質。需終生酵素補充與飲食管理。少數犬對治療反應不佳，需調整配方或排除併發症。"
-
+  general: 經適當的酵素替代治療，預後良好。多數犬可恢復體重並維持正常生活品質。需終生酵素補充與飲食管理。少數犬對治療反應不佳，需調整配方或排除併發症。
 prevention:
   - 繁殖犬基因篩選
   - 受影響犬不應繁殖
   - 早期辨識症狀可減少營養耗損
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: common
+  - symptomId: polyphagia
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: flatulence
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 德國牧羊犬外分泌胰腺功能不全 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - polyphagia 相關症狀
+        - diarrhoea 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血清 TLI（胰蛋白酶免疫反應性）
+          notes: 金標準。空腹 12 小時後採血。TLI <2.5 μg/L 確診 EPI
+        - name: 血清 cobalamin 與 folate
+          notes: Cobalamin 常低，folate 可能升高（提示 SIBO）
+        - name: 糞便消化試驗
+          notes: 顯微鏡下見大量未消化脂肪球與肌纖維
+ddxSource: auto-generated

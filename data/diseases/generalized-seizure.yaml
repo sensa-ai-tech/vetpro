@@ -3,11 +3,11 @@ nameEn: Generalized Seizure
 nameZh: Generalized Seizure
 bodySystem: neurology
 description: 癲癇發作的一種類型,神經元異常放電導致的臨床症狀。需完整評估找出潛在病因,並根據發作頻率與嚴重度決定抗癲癇治療策略。
-
 aliases:
-  - { alias: Generalized Seizure, language: zh }
-  - { alias: Generalized Seizure, language: en }
-
+  - alias: Generalized Seizure
+    language: zh
+  - alias: Generalized Seizure
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,14 +17,12 @@ species:
     speciesScientific: Felis catus
     prevalence: common
     notes: 可見於此物種
-
 etiology:
   categories:
     - name: 神經元異常放電
       examples:
         - 髓鞘或軸突病變
         - 腦血管疾病
-
 clinicalSigns:
   early:
     - 神經功能輕度異常
@@ -32,53 +30,75 @@ clinicalSigns:
   progressive:
     - 神經缺損加重
     - 癱瘓或意識障礙
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
-      notes: "需詳細評估"
+      notes: 需詳細評估
     - name: MRI或CT
-      notes: "協助確診"
+      notes: 協助確診
   differentialDiagnoses:
     - 其他相關疾病1
     - 其他相關疾病2
-
 treatment:
   medical:
     - 抗癲癇藥物(Phenobarbital 2-3 mg/kg PO q12h)
     - 支持性治療
-
 prognosis:
-  general: "預後取決於根本病因與治療反應。早期診斷與適當治療可改善預後。"
-
+  general: 預後取決於根本病因與治療反應。早期診斷與適當治療可改善預後。
 prevention:
   - 定期健康檢查
   - 避免相關風險因子
-
-
 guidelineRefs:
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Feline Temporal Lobe Epilepsy: Review of the Experimental Literature."
+    title: 'Feline Temporal Lobe Epilepsy: Review of the Experimental Literature.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5435036/
     type: review
-    pmid: "28382749"
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
+    pmid: '28382749'
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
     title: Delayed Zinc Phosphide Toxicosis in a Dog.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12322358/
     type: case-report
-    pmid: "40566877"
+    pmid: '40566877'
   - sourceOrg: Scientific reports
     title: Inhibiting astrocyte calcium dynamics terminates status epilepticus via wireless septal stimulation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12263835/
     type: research
-    pmid: "40664874"
+    pmid: '40664874'
   - sourceOrg: Epilepsia open
-    title: "A spike is a spike: On the universality of spike features in four epilepsy models."
+    title: 'A spike is a spike: On the universality of spike features in four epilepsy models.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11633703/
     type: research
-    pmid: "39381982"
+    pmid: '39381982'
   - sourceOrg: Epilepsia open
-    title: "Type 2 diabetes mellitus facilitates status epilepticus in adult rats: Seizure severity, neurodegeneration, and oxidative stress."
+    title: >-
+      Type 2 diabetes mellitus facilitates status epilepticus in adult rats: Seizure severity, neurodegeneration, and
+      oxidative stress.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10984310/
     type: research
-    pmid: "38321819"
+    pmid: '38321819'
+associatedSymptoms:
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: Generalized Seizure 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - seizures 相關症狀
+        - behaviour-change 相關症狀
+        - paresis-paralysis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 需詳細評估
+        - name: MRI或CT
+          notes: 協助確診
+ddxSource: auto-generated

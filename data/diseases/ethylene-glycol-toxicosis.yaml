@@ -3,14 +3,17 @@ nameEn: Ethylene Glycol Toxicosis
 nameZh: 乙二醇中毒
 bodySystem: toxicology
 description: 攝入乙二醇（汽車防凍液的主要成分）後經代謝產生有毒代謝物（乙醇醛、乙醛酸、草酸），導致嚴重代謝性酸中毒與急性腎小管壞死。甜味吸引犬貓攝入，為最致命的小動物中毒之一。
-
 aliases:
-  - { alias: 防凍液中毒, language: zh }
-  - { alias: 乙二醇毒性, language: zh }
-  - { alias: Antifreeze Poisoning, language: en }
-  - { alias: EG Toxicosis, language: en }
-  - { alias: Ethylene Glycol Poisoning, language: en }
-
+  - alias: 防凍液中毒
+    language: zh
+  - alias: 乙二醇毒性
+    language: zh
+  - alias: Antifreeze Poisoning
+    language: en
+  - alias: EG Toxicosis
+    language: en
+  - alias: Ethylene Glycol Poisoning
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 貓致死劑量更低（約 1.5 mL/kg），經毛髮沾染後舔毛即可攝入致死量。貓的預後通常比犬更差。
-
 etiology:
   categories:
     - name: 毒物來源
@@ -33,15 +35,14 @@ etiology:
         - 含乙二醇的外用產品（貓可經皮膚吸收中毒）
     - name: 毒性劑量
       examples:
-        - "犬最低致死量：約 4.4-6.6 mL/kg（未稀釋防凍液）"
-        - "貓最低致死量：約 1.5 mL/kg（未稀釋防凍液）"
+        - 犬最低致死量：約 4.4-6.6 mL/kg（未稀釋防凍液）
+        - 貓最低致死量：約 1.5 mL/kg（未稀釋防凍液）
         - 極少量即可致命（一隻 4 kg 貓僅需約 6 mL）
     - name: 毒性機制（三階段）
       examples:
         - 第一階段 (0.5-12 hr)：乙二醇本身造成中樞神經抑制（類似酒醉）
         - 第二階段 (12-24 hr)：代謝物乙醇醛、乙醛酸造成嚴重代謝性酸中毒
         - 第三階段 (24-72 hr)：草酸鈣結晶沉積於腎小管→急性腎小管壞死
-
 clinicalSigns:
   early:
     - 類似酒醉的步態不穩 (ataxia)，攝入後 30 分鐘至 12 小時
@@ -67,20 +68,19 @@ clinicalSigns:
     - 下痢
     - 癲癇發作
     - 昏迷與死亡
-
 diagnosis:
   primaryTests:
     - name: 乙二醇快速檢測
-      notes: "商業檢測試紙 (EGT test kit) 可在攝入後 1-12 小時內偵測。犬敏感度約 96%。注意：propylene glycol（丙二醇）可造成偽陽性。丙二醇毒性較低但可引起類似急性期症狀"
+      notes: 商業檢測試紙 (EGT test kit) 可在攝入後 1-12 小時內偵測。犬敏感度約 96%。注意：propylene glycol（丙二醇）可造成偽陽性。丙二醇毒性較低但可引起類似急性期症狀
     - name: 尿液鏡檢
-      notes: "偏光顯微鏡下可見草酸鈣一水合物結晶（啞鈴形或信封形）。攝入後 3-6 小時（貓）或 6-8 小時（犬）可見。高度特異性"
+      notes: 偏光顯微鏡下可見草酸鈣一水合物結晶（啞鈴形或信封形）。攝入後 3-6 小時（貓）或 6-8 小時（犬）可見。高度特異性
     - name: 血氣分析
-      notes: "嚴重代謝性酸中毒（pH <7.2）、高陰離子間隙 (>25 mEq/L)、高滲透壓間隙"
+      notes: 嚴重代謝性酸中毒（pH <7.2）、高陰離子間隙 (>25 mEq/L)、高滲透壓間隙
   imaging:
     - name: 腹部超音波
-      notes: "腎臟皮質迴音增強（草酸鈣結晶沉積）、腎臟腫大。高度特徵性表現"
+      notes: 腎臟皮質迴音增強（草酸鈣結晶沉積）、腎臟腫大。高度特徵性表現
     - name: 腹部 X 光
-      notes: "腎臟腫大"
+      notes: 腎臟腫大
   differentialDiagnoses:
     - 乙醇中毒 (Ethanol Intoxication)
     - 丙二醇中毒 (Propylene Glycol Toxicosis)
@@ -95,7 +95,6 @@ diagnosis:
     - 尿液分析（等張尿或低比重尿、蛋白尿、糖尿、管型）
     - 血清鈣（低血鈣，草酸鈣消耗）
     - 乙二醇血清濃度（部分實驗室可測，但結果通常來不及指導即時治療）
-
 treatment:
   principles:
     - 時間是關鍵——越早治療預後越好
@@ -105,16 +104,16 @@ treatment:
     - 一旦出現無尿性腎衰竭，預後極差
   medications:
     - name: Fomepizole (4-methylpyrazole, 4-MP)
-      dose: "犬：20 mg/kg IV loading dose，後 15 mg/kg IV 於 12 hr 與 24 hr，10 mg/kg IV 於 36 hr"
-      notes: "首選解毒劑。競爭性抑制 alcohol dehydrogenase，阻止乙二醇代謝為有毒代謝物。犬效果極佳。須在腎損傷發生前使用（犬攝入後 8-12 小時內）"
+      dose: 犬：20 mg/kg IV loading dose，後 15 mg/kg IV 於 12 hr 與 24 hr，10 mg/kg IV 於 36 hr
+      notes: 首選解毒劑。競爭性抑制 alcohol dehydrogenase，阻止乙二醇代謝為有毒代謝物。犬效果極佳。須在腎損傷發生前使用（犬攝入後 8-12 小時內）
     - name: Fomepizole（貓劑量）
-      dose: "貓：125 mg/kg IV loading dose，後 31.25 mg/kg IV q12h × 3 次"
+      dose: 貓：125 mg/kg IV loading dose，後 31.25 mg/kg IV q12h × 3 次
       notes: 貓需要比犬高得多的劑量。4-MP 貓許可證資料有限，但為目前推薦。須在攝入後 3 小時內開始
     - name: Ethanol (20%)
-      dose: "犬：5.5 mL/kg IV q4h × 5 次，後 q6h × 4 次。貓：5 mL/kg IV q6h × 5 次"
+      dose: 犬：5.5 mL/kg IV q4h × 5 次，後 q6h × 4 次。貓：5 mL/kg IV q6h × 5 次
       notes: Fomepizole 不可得時的替代。同樣競爭性抑制 alcohol dehydrogenase。副作用較多（中樞神經抑制、低血糖、脫水加重）。需密切監測
     - name: Sodium bicarbonate
-      dose: "1-2 mEq/kg IV 緩慢給予，依血氣結果調整"
+      dose: 1-2 mEq/kg IV 緩慢給予，依血氣結果調整
       notes: 矯正嚴重代謝性酸中毒（pH <7.1-7.2）
   general:
     - 催吐（攝入後 1-2 小時內且無症狀時）
@@ -125,37 +124,112 @@ treatment:
     - 腎功能每 12-24 小時追蹤
     - 發展為無尿性腎衰竭考慮血液透析
     - 住院監測至少 48-72 小時
-
 emergencyNotes: 乙二醇中毒為最緊急的小動物中毒之一。犬須在攝入後 8-12 小時內開始 fomepizole，貓須在 3 小時內。延遲治療使腎損傷不可逆。一旦出現無尿（草酸鈣結晶已沉積腎小管），即使透析預後亦極差。疑似暴露即應開始治療，不需等待確認。
-
-prognosis: 攝入後 5 小時內（犬）或 3 小時內（貓）開始 fomepizole 治療預後良好至極佳。延遲超過 8-12 小時（犬）或 6 小時（貓）預後差。出現寡尿/無尿者即使透析死亡率仍 >50%。未治療者死亡率接近 100%。預後與治療開始的時間直接相關。
-
+prognosis: >-
+  攝入後 5 小時內（犬）或 3 小時內（貓）開始 fomepizole 治療預後良好至極佳。延遲超過 8-12 小時（犬）或 6 小時（貓）預後差。出現寡尿/無尿者即使透析死亡率仍 >50%。未治療者死亡率接近
+  100%。預後與治療開始的時間直接相關。
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
     title: Ethylene glycol intoxication in dogs and cats
     url: https://pubmed.ncbi.nlm.nih.gov/16740317/
     type: review
-    pmid: "16740317"
+    pmid: '16740317'
   - sourceOrg: Journal of the American Veterinary Medical Association
     title: Fomepizole for the treatment of ethylene glycol poisoning in dogs
     url: https://pubmed.ncbi.nlm.nih.gov/9436071/
     type: research
-    pmid: "9436071"
+    pmid: '9436071'
   - sourceOrg: American Journal of Veterinary Research
     title: Fomepizole for treatment of ethylene glycol intoxication in cats
     url: https://pubmed.ncbi.nlm.nih.gov/11131581/
     type: research
-    pmid: "11131581"
+    pmid: '11131581'
   - sourceOrg: Acta veterinaria Scandinavica
     title: Ethylene glycol toxicosis in milk-fed dairy calves.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8944023/
     type: case-report
-    pmid: "35331297"
+    pmid: '35331297'
 pubmedQueries:
-  - query: '"ethylene glycol" AND (dog OR cat OR canine OR feline) AND ("toxicosis" OR "fomepizole" OR "antifreeze" OR "nephrotoxicity")'
+  - query: >-
+      "ethylene glycol" AND (dog OR cat OR canine OR feline) AND ("toxicosis" OR "fomepizole" OR "antifreeze" OR
+      "nephrotoxicity")
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "TOX"
-  sectionTitle: "TOXICOSIS"
+  chapter: TOX
+  sectionTitle: TOXICOSIS
   pdfPage: 3128
+diagnosticAlgorithm:
+  title: 乙二醇中毒 診斷流程
+  steps:
+    - step: 1
+      action: 病史與早期症狀
+      details: 確認抗凍液接觸史，評估神經症狀
+      findings:
+        - 已知或疑似抗凍液攝入
+        - 類似醉酒的共濟失調
+        - 多飲多尿
+        - 嘔吐
+    - step: 2
+      action: 急診實驗室檢查
+      details: 血液生化與尿液分析
+      findings:
+        - 嚴重代謝性酸中毒高陰離子間隙
+        - 血清滲透壓間隙升高
+        - 尿液見草酸鈣結晶
+        - Wood燈尿液螢光
+    - step: 3
+      action: 乙二醇快篩與確認
+      details: 乙二醇快速檢測或定量
+      findings:
+        - 乙二醇快篩陽性
+        - 丙二醇可致假陽性
+        - 攝入後6-12小時內檢測最敏感
+        - 血清鈣降低草酸結合鈣
+    - step: 4
+      action: 腎功能與預後監測
+      details: 監測急性腎損傷發展
+      findings:
+        - BUN/Creatinine升高24-72小時
+        - 寡尿或無尿
+        - 腎臟超音波腎皮質回音增強
+        - 晚期治療預後差
+clinicalPearls:
+  - 時間是最關鍵因素——越早治療越好
+  - Fomepizole對犬效果極佳但對貓效果較差（貓仍建議乙醇治療）
+  - 尿液中草酸鈣結晶（信封形二水合物或啞鈴形一水合物）是重要發現
+  - 伍德氏燈照射尿液可能見螢光（部分防凍液含螢光素鈉）
+  - 最小致死劑量貓僅1.5 mL/kg（約一茶匙）
+  - 預防重於治療——使用含丙二醇的安全防凍液
+monitoringItems:
+  - 尿量（每小時）
+  - 血氣和酸鹼狀態
+  - BUN和Creatinine（每6-12小時）
+  - 電解質（鈣、鉀）
+  - 尿液分析和結晶
+  - 精神狀態
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: oliguria-anuria
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+associatedLabFindings:
+  - labId: anion-gap-high
+    frequency: uncommon
+ddxSource: book

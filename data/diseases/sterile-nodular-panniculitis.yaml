@@ -3,12 +3,13 @@ nameEn: Sterile Nodular Panniculitis
 nameZh: 無菌性結節性脂膜炎
 bodySystem: dermatology
 description: 非感染性的免疫媒介性皮下脂肪發炎疾病。表現為多發性皮下結節，可破潰排出無菌油脂性分泌物。可為特發性或繼發於全身性疾病（胰臟炎、SLE）。
-
 aliases:
-  - { alias: "Sterile Panniculitis", language: en }
-  - { alias: "Idiopathic Panniculitis", language: en }
-  - { alias: "無菌性脂膜炎", language: zh }
-
+  - alias: Sterile Panniculitis
+    language: en
+  - alias: Idiopathic Panniculitis
+    language: en
+  - alias: 無菌性脂膜炎
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓偶見。
-
 etiology:
   categories:
     - name: 免疫媒介性
@@ -25,7 +25,6 @@ etiology:
         - 胰臟炎相關
         - 全身性紅斑性狼瘡
         - 藥物反應
-
 clinicalSigns:
   early:
     - 多發性皮下結節
@@ -36,14 +35,12 @@ clinicalSigns:
     - 發燒
     - 食慾下降
     - 瘢痕形成
-
 diagnosis:
   primaryTests:
     - name: 楔形皮膚活檢
       notes: 脂肪組織壞死伴肉芽腫性或嗜中性球性發炎。培養陰性
     - name: CBC / 生化 / 脂肪酶
       notes: 排除胰臟炎與全身性疾病
-
 treatment:
   principles:
     - 免疫抑制治療
@@ -53,9 +50,53 @@ treatment:
     - Cyclosporine（類固醇抗性病例）
     - Vitamin E 補充
     - 治療潛在胰臟炎
-
 prognosis: 對免疫抑制治療反應良好。復發常見，可能需長期低劑量維持。特發性者預後優於繼發性。
-
 pubmedQueries:
   - query: '"sterile nodular panniculitis" AND (veterinary OR canine OR feline) AND ("treatment" OR "immunosuppression")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 無菌性結節性脂膜炎 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估皮下結節的分布、大小及是否有瘻管形成，注意全身性症狀如發熱和嗜睡
+      findings:
+        - 單發或多發皮下結節
+        - 結節可能潰破排出油性分泌物
+        - 間歇性發熱與嗜睡
+    - step: 2
+      action: 細胞學與細菌培養
+      details: 進行結節細針抽吸細胞學檢查，同時送細菌及真菌培養排除感染性原因
+      findings:
+        - 細胞學顯示脂肪壞死伴巨噬細胞浸潤
+        - 細菌培養陰性
+        - 真菌培養陰性
+    - step: 3
+      action: 活檢確診
+      details: 進行皮下結節切除活檢送病理學檢查，確認為無菌性脂膜炎
+      findings:
+        - 組織病理學顯示脂肪小葉壞死
+        - 以巨噬細胞和中性球為主的炎性浸潤
+        - 無微生物感染證據確認無菌性
+clinicalPearls:
+  - 切片必須包含足夠的皮下脂肪組織
+  - 組織培養陰性是確診的必要條件
+  - 胰臟炎相關型需特別注意
+  - 腊腸犬有品種傾向且預後較差
+monitoringItems:
+  - 結節數量和大小
+  - 全身性症狀（發燒、食慾）
+  - 免疫抑制劑副作用
+  - 胰臟功能（相關病例）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: common
+ddxSource: book

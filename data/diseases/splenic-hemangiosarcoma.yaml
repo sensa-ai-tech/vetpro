@@ -3,11 +3,11 @@ nameEn: Splenic Hemangiosarcoma
 nameZh: 脾臟血管肉瘤
 bodySystem: oncology
 description: 脾臟血管內皮細胞的高度惡性腫瘤。犬最常見的脾臟惡性腫瘤。常在脾臟腫塊破裂出血時急診發現。轉移率極高（肝臟、心臟、肺）。German Shepherd 與 Golden Retriever 好發。
-
 aliases:
-  - { alias: "Splenic HSA", language: en }
-  - { alias: "脾臟血管肉瘤", language: zh }
-
+  - alias: Splenic HSA
+    language: en
+  - alias: 脾臟血管肉瘤
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: common
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓罕見。
-
 etiology:
   categories:
     - name: 腫瘤性
@@ -23,7 +22,6 @@ etiology:
         - 血管內皮細胞惡性增生
         - 高度惡性，早期血行轉移
         - 品種遺傳傾向
-
 clinicalSigns:
   early:
     - 可能無症狀
@@ -34,7 +32,6 @@ clinicalSigns:
     - 蒼白黏膜
     - 心跳加速
     - 虛脫休克
-
 diagnosis:
   primaryTests:
     - name: 腹部超音波
@@ -43,7 +40,6 @@ diagnosis:
       notes: 評估出血程度
     - name: 分期（胸腔 X 光 + 心臟超音波）
       notes: 排除心臟與肺轉移
-
 treatment:
   principles:
     - 緊急穩定後脾臟切除
@@ -53,41 +49,82 @@ treatment:
     - 脾臟切除術
     - 術後化療（Doxorubicin ± Cyclophosphamide）
     - 分期確認轉移狀態
-
 prognosis: 預後不良。僅脾臟切除中位存活 1-3 個月。脾臟切除 + 化療中位存活 4-6 個月。診斷時多數已有微轉移。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary sciences
     title: Histopathological Grading, Clinical Staging and CD 31 Expression of Canine Splenic Hemangiosarcoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10054225/
     type: case-report
-    pmid: "36977229"
+    pmid: '36977229'
     relevance: supporting
-  - sourceOrg: "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc"
+  - sourceOrg: >-
+      Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary
+      Laboratory Diagnosticians, Inc
     title: Identification of the environmental source of infection for a domestic ferret with cryptococcosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6900720/
     type: case-report
-    pmid: "31551015"
+    pmid: '31551015'
     relevance: supporting
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: Tumor Immune Microenvironment and Its Clinicopathological and Prognostic Associations in Canine Splenic Hemangiosarcoma.
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Tumor Immune Microenvironment and Its Clinicopathological and Prognostic Associations in Canine Splenic
+      Hemangiosarcoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11047608/
     type: research
-    pmid: "38672372"
+    pmid: '38672372'
     relevance: supporting
   - sourceOrg: Veterinary sciences
-    title: Analysis of the Prevalence of Canine Splenic Mass Lesions in Republic of Korea via Histopathological Diagnosis with Immunohistochemistry.
+    title: >-
+      Analysis of the Prevalence of Canine Splenic Mass Lesions in Republic of Korea via Histopathological Diagnosis
+      with Immunohistochemistry.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10143242/
     type: research
-    pmid: "37104402"
+    pmid: '37104402'
     relevance: supporting
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: Retrospective evaluation of thrombocytopenia and tumor stage as prognostic indicators in dogs with splenic hemangiosarcoma.
+    title: >-
+      Retrospective evaluation of thrombocytopenia and tumor stage as prognostic indicators in dogs with splenic
+      hemangiosarcoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8559062/
     type: research
-    pmid: "33683962"
+    pmid: '33683962'
     relevance: supporting
 pubmedQueries:
   - query: '"splenic hemangiosarcoma" AND (veterinary OR canine) AND ("splenectomy" OR "chemotherapy")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+  - symptomId: abdominal-distension
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 脾臟血管肉瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - tachycardia-bradycardia 相關症狀
+        - weakness 相關症狀
+        - abdominal-distension 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 腹部超音波
+          notes: 脾臟腫塊。血腹
+        - name: 緊急 PCV/TS
+          notes: 評估出血程度
+        - name: 分期（胸腔 X 光 + 心臟超音波）
+          notes: 排除心臟與肺轉移
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 緊急穩定後脾臟切除
+        - 輔助化療延長存活
+ddxSource: auto-generated

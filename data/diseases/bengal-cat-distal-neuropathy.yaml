@@ -3,24 +3,22 @@ nameEn: Bengal Cat Distal Neuropathy
 nameZh: 孟加拉貓遠端神經病變
 bodySystem: neurology
 description: 孟加拉貓的遺傳性周邊神經病變,影響遠端神經導致後肢無力、步態異常。通常在1歲內發病,症狀進展緩慢,多數可適應。
-
 aliases:
-  - { alias: 遠端神經病變, language: zh }
-  - { alias: Distal Polyneuropathy, language: en }
-
+  - alias: 遠端神經病變
+    language: zh
+  - alias: Distal Polyneuropathy
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 孟加拉貓特有,可能遺傳
-
 etiology:
   categories:
     - name: 遺傳性神經疾病
       examples:
         - 遺傳基礎未明
         - 周邊神經軸突或髓鞘病變
-
 clinicalSigns:
   early:
     - 後肢輕度無力(1歲內)
@@ -31,27 +29,51 @@ clinicalSigns:
     - 蹲坐姿勢異常
     - 症狀進展緩慢
     - 前肢通常不受影響
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
-      notes: "後肢遠端反射減弱、肌肉萎縮"
+      notes: 後肢遠端反射減弱、肌肉萎縮
     - name: 肌電圖
-      notes: "神經源性變化"
+      notes: 神經源性變化
   differentialDiagnoses:
     - 脊髓病變
     - 其他神經病變
     - 肌病
-
 treatment:
   medical:
     - 無特效治療
     - 支持性照護
     - 環境調整
     - 物理治療
-
 prognosis:
-  general: "進展緩慢,多數可適應並維持可接受生活品質。不影響壽命。"
-
+  general: 進展緩慢,多數可適應並維持可接受生活品質。不影響壽命。
 prevention:
   - 遺傳諮詢
+associatedSymptoms:
+  - symptomId: lameness
+    frequency: uncommon
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 孟加拉貓遠端神經病變 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - lameness 相關症狀
+        - paresis-paralysis 相關症狀
+        - cachexia-muscle-wasting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 後肢遠端反射減弱、肌肉萎縮
+        - name: 肌電圖
+          notes: 神經源性變化
+ddxSource: auto-generated

@@ -3,13 +3,15 @@ nameEn: Brachial Plexus Avulsion
 nameZh: 臂神經叢撕脫傷
 bodySystem: neurology
 description: 臂神經叢根部從脊髓撕脫或嚴重牽拉損傷，常因嚴重外傷 (車禍、高處墜落) 導致前肢與肩部外展過度所致。依受損神經根不同分為顱側型 (C6-C7) 與尾側型 (C7-T2)，完全型則累及所有根部。
-
 aliases:
-  - { alias: Brachial Plexus Injury, language: en }
-  - { alias: Brachial Plexus Neuropathy, language: en }
-  - { alias: 臂叢損傷, language: zh }
-  - { alias: 臂神經叢損傷, language: zh }
-
+  - alias: Brachial Plexus Injury
+    language: en
+  - alias: Brachial Plexus Neuropathy
+    language: en
+  - alias: 臂叢損傷
+    language: zh
+  - alias: 臂神經叢損傷
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -17,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓多因高處墜落或車禍所致，後果與犬相似。
-
 etiology:
   categories:
     - name: 外傷性
@@ -29,7 +30,6 @@ etiology:
       examples:
         - 手術中過度牽拉
         - 不當體位擺放
-
 clinicalSigns:
   early:
     - 患肢拖行 (knuckling)
@@ -40,7 +40,6 @@ clinicalSigns:
     - 痛覺喪失 (深層痛覺缺失預後極差)
     - 同側 Horner 症候群 (T1-T3 受損)
     - 自殘性潰瘍 (因感覺喪失)
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
@@ -49,7 +48,6 @@ diagnosis:
       notes: 受傷 5-7 天後出現去神經電位。幫助定位損傷範圍與嚴重程度
     - name: MRI
       notes: 評估神經根撕脫部位與脊髓損傷範圍
-
 treatment:
   principles:
     - 早期保守治療觀察神經恢復
@@ -60,41 +58,75 @@ treatment:
     - 物理治療維持關節活動度
     - 深層痛覺喪失 6 個月未恢復建議截肢
     - 自殘嚴重者需提前截肢
-
 prognosis: 取決於損傷範圍與深層痛覺是否保留。部分撕脫 (尤其顱側型) 預後較佳，可能在數週至數月恢復。完全撕脫伴深層痛覺喪失預後極差，多數需截肢。三腳動物適應能力通常良好。
-
-
 guidelineRefs:
   - sourceOrg: Brain and behavior
     title: Curcumin Promotes the Recovery of Motor Function After Brachial Plexus Avulsion Injury in Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12321955/
     type: research
-    pmid: "40760806"
+    pmid: '40760806'
   - sourceOrg: Current neuropharmacology
-    title: Quercetin Ameliorates Neuropathic Pain after Brachial Plexus Avulsion via Suppressing Oxidative Damage through Inhibition of PKC/MAPK/ NOX Pathway.
+    title: >-
+      Quercetin Ameliorates Neuropathic Pain after Brachial Plexus Avulsion via Suppressing Oxidative Damage through
+      Inhibition of PKC/MAPK/ NOX Pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10556381/
     type: research
-    pmid: "37533160"
+    pmid: '37533160'
   - sourceOrg: Developmental neuroscience
-    title: miR-506-3p Relieves Neuropathic Pain following Brachial Plexus Avulsion via Mitigating Microglial Activation through Targeting the CCL2-CCR2 Axis.
+    title: >-
+      miR-506-3p Relieves Neuropathic Pain following Brachial Plexus Avulsion via Mitigating Microglial Activation
+      through Targeting the CCL2-CCR2 Axis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10129035/
     type: research
-    pmid: "36470227"
+    pmid: '36470227'
   - sourceOrg: International journal of molecular sciences
-    title: Early Intervention of Cold-Water Swimming on Functional Recovery and Spinal Pain Modulation Following Brachial Plexus Avulsion in Rats.
+    title: >-
+      Early Intervention of Cold-Water Swimming on Functional Recovery and Spinal Pain Modulation Following Brachial
+      Plexus Avulsion in Rats.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8835039/
     type: research
-    pmid: "35163098"
+    pmid: '35163098'
   - sourceOrg: Journal of neuroinflammation
-    title: Motor neuron survival is associated with reduced neuroinflammation and increased autophagy after brachial plexus avulsion injury in aldose reductase-deficient mice.
+    title: >-
+      Motor neuron survival is associated with reduced neuroinflammation and increased autophagy after brachial plexus
+      avulsion injury in aldose reductase-deficient mice.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9648007/
     type: research
-    pmid: "36352421"
-  - sourceOrg: "Veterinary surgery : VS"
+    pmid: '36352421'
+  - sourceOrg: 'Veterinary surgery : VS'
     title: C8 cross transfer for the treatment of caudal brachial plexus avulsion in three dogs.
     url: https://pubmed.ncbi.nlm.nih.gov/28052417/
     type: case-report
-    pmid: "28052417"
+    pmid: '28052417'
 pubmedQueries:
   - query: '"brachial plexus avulsion" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 臂神經叢撕脫傷 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cachexia-muscle-wasting 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 評估脊髓反射 (二頭肌反射 C6-C8、三頭肌反射 C7-T1、撓骨反射)。深層痛覺喪失為完全撕脫指標
+        - name: 肌電圖 (EMG)
+          notes: 受傷 5-7 天後出現去神經電位。幫助定位損傷範圍與嚴重程度
+        - name: MRI
+          notes: 評估神經根撕脫部位與脊髓損傷範圍
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 早期保守治療觀察神經恢復
+        - 預防自殘與二次損傷
+        - 嚴重完全撕脫可能需截肢
+ddxSource: auto-generated

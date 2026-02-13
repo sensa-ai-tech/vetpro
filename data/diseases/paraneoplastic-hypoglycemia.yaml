@@ -3,14 +3,17 @@ nameEn: Paraneoplastic Hypoglycemia
 nameZh: 副腫瘤性低血糖
 bodySystem: oncology
 description: 非胰島素瘤的惡性腫瘤引起的低血糖，通常由大型間葉腫瘤分泌類胰島素生長因子 (IGF-II) 所致。肝腫瘤、平滑肌肉瘤及血管肉瘤為常見原因。
-
 aliases:
-  - { alias: 腫瘤相關低血糖, language: zh }
-  - { alias: 非胰島素瘤性低血糖, language: zh }
-  - { alias: Non-islet Cell Tumor Hypoglycemia, language: en }
-  - { alias: NICTH, language: en }
-  - { alias: Paraneoplastic Hypoglycemia, language: en }
-
+  - alias: 腫瘤相關低血糖
+    language: zh
+  - alias: 非胰島素瘤性低血糖
+    language: zh
+  - alias: Non-islet Cell Tumor Hypoglycemia
+    language: en
+  - alias: NICTH
+    language: en
+  - alias: Paraneoplastic Hypoglycemia
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -20,7 +23,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓副腫瘤性低血糖較少報導。肝腫瘤及胰島素瘤為貓低血糖的主要腫瘤性原因。
-
 etiology:
   categories:
     - name: 機制
@@ -37,7 +39,6 @@ etiology:
         - 肝細胞腺瘤
         - 口腔黑色素瘤
         - 肺癌
-
 clinicalSigns:
   early:
     - 間歇性虛弱
@@ -49,15 +50,14 @@ clinicalSigns:
     - 肌肉震顫
     - 後肢癱瘓
     - 昏迷
-
 diagnosis:
   primaryTests:
     - name: 血糖與胰島素同步測量
-      notes: "低血糖伴正常或低胰島素值（與胰島素瘤的不當高胰島素不同）。此為與胰島素瘤鑑別的關鍵"
+      notes: 低血糖伴正常或低胰島素值（與胰島素瘤的不當高胰島素不同）。此為與胰島素瘤鑑別的關鍵
     - name: IGF-II 測量
-      notes: "IGF-II 升高或 IGF-II/IGF-I 比值增高具診斷價值（檢測可及性有限）"
+      notes: IGF-II 升高或 IGF-II/IGF-I 比值增高具診斷價值（檢測可及性有限）
     - name: 腹部影像學
-      notes: "超音波或 CT 尋找原發腫瘤。大型腹腔腫塊為典型發現"
+      notes: 超音波或 CT 尋找原發腫瘤。大型腹腔腫塊為典型發現
   differentialDiagnoses:
     - 胰島素瘤
     - 肝衰竭
@@ -65,21 +65,52 @@ diagnosis:
     - 腎上腺皮質功能低下
     - 藥物性低血糖
     - 新生犬/幼犬低血糖
-
 treatment:
   surgical:
     - 原發腫瘤切除為首選（若可手術）
     - 完全切除後低血糖通常可迅速緩解
   medical:
     - 少量多餐（高蛋白、複合碳水化合物）
-    - "緊急低血糖：50% 葡萄糖 0.5-1 mL/kg IV 稀釋緩注"
-    - "Prednisone 1-2 mg/kg PO BID（促進糖質新生）"
-    - "Diazoxide（抑制胰島素分泌，對非胰島素瘤性低血糖效果有限）"
+    - 緊急低血糖：50% 葡萄糖 0.5-1 mL/kg IV 稀釋緩注
+    - Prednisone 1-2 mg/kg PO BID（促進糖質新生）
+    - Diazoxide（抑制胰島素分泌，對非胰島素瘤性低血糖效果有限）
     - 避免長時間禁食
-
 prognosis:
-  general: "預後取決於原發腫瘤的可切除性。腫瘤完全切除後低血糖可緩解，預後較好。無法手術或已轉移者以內科管理為主，中位生存時間視腫瘤類型而定。"
-
+  general: 預後取決於原發腫瘤的可切除性。腫瘤完全切除後低血糖可緩解，預後較好。無法手術或已轉移者以內科管理為主，中位生存時間視腫瘤類型而定。
 prevention:
   - 反覆性低血糖伴正常胰島素應積極尋找原發腫瘤
   - 腹腔大型腫塊患畜應監測血糖
+associatedSymptoms:
+  - symptomId: paresis-paralysis
+    frequency: uncommon
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: trembling
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 副腫瘤性低血糖 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - paresis-paralysis 相關症狀
+        - ataxia 相關症狀
+        - trembling 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血糖與胰島素同步測量
+          notes: 低血糖伴正常或低胰島素值（與胰島素瘤的不當高胰島素不同）。此為與胰島素瘤鑑別的關鍵
+        - name: IGF-II 測量
+          notes: IGF-II 升高或 IGF-II/IGF-I 比值增高具診斷價值（檢測可及性有限）
+        - name: 腹部影像學
+          notes: 超音波或 CT 尋找原發腫瘤。大型腹腔腫塊為典型發現
+ddxSource: auto-generated

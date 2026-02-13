@@ -2,13 +2,16 @@ slug: juvenile-nephropathy
 nameEn: Juvenile Nephropathy
 nameZh: 幼年型腎病
 bodySystem: urinary
-description: 幼年型腎病（juvenile nephropathy / renal dysplasia）為腎臟發育異常或早發性退化性腎病，導致年輕動物（通常 <2 歲）出現慢性腎衰竭。多為遺傳性。犬隻好發品種包括 Shih Tzu、Lhasa Apso、Soft-Coated Wheaten Terrier、Cocker Spaniel。腎臟病理顯示不成熟的腎絲球與腎小管結構。
-
+description: >-
+  幼年型腎病（juvenile nephropathy / renal dysplasia）為腎臟發育異常或早發性退化性腎病，導致年輕動物（通常 <2 歲）出現慢性腎衰竭。多為遺傳性。犬隻好發品種包括 Shih Tzu、Lhasa
+  Apso、Soft-Coated Wheaten Terrier、Cocker Spaniel。腎臟病理顯示不成熟的腎絲球與腎小管結構。
 aliases:
-  - { alias: 腎發育不良, language: zh }
-  - { alias: Renal Dysplasia, language: en }
-  - { alias: Juvenile Renal Disease, language: en }
-
+  - alias: 腎發育不良
+    language: zh
+  - alias: Renal Dysplasia
+    language: en
+  - alias: Juvenile Renal Disease
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻幼年型腎病少見。波斯貓的多囊腎（PKD）為不同疾病。
-
 etiology:
   categories:
     - name: 遺傳性
@@ -32,7 +34,6 @@ etiology:
         - Cocker Spaniel
         - Golden Retriever
         - Standard Poodle
-
 clinicalSigns:
   early:
     - 多飲多尿
@@ -46,14 +47,12 @@ clinicalSigns:
     - 貧血
     - 高血壓
     - 終末期腎衰竭
-
 diagnosis:
   primaryTests:
     - name: 血液生化與尿液分析
       notes: 年輕動物（<2 歲）出現氮質血症（BUN、Creatinine 升高）。尿液比重持續稀釋（<1.030）。SDMA 升高。蛋白尿可能存在。
     - name: 腎臟活檢
       notes: 確診金標準。腎發育不良特徵：不成熟腎絲球（fetal glomeruli）、不成熟腎小管、持續性間葉組織（persistent mesenchyme）。不成熟結構與正常結構並存。
-
 treatment:
   principles:
     - 不可逆病變，治療為支持性
@@ -61,15 +60,48 @@ treatment:
     - 延緩進展
   general:
     - 腎臟處方飲食（低磷、適量蛋白質）
-    - "磷結合劑：Aluminum hydroxide 30-90 mg/kg/day（控制高磷血症）"
-    - "高血壓管理：Amlodipine 0.1-0.25 mg/kg PO q24h"
-    - "蛋白尿管理：Benazepril 0.5 mg/kg PO q12-24h"
+    - 磷結合劑：Aluminum hydroxide 30-90 mg/kg/day（控制高磷血症）
+    - 高血壓管理：Amlodipine 0.1-0.25 mg/kg PO q24h
+    - 蛋白尿管理：Benazepril 0.5 mg/kg PO q12-24h
     - 皮下輸液維持水分
     - 貧血管理（Darbepoetin、鐵補充）
     - 止吐與食慾刺激劑
-
 prognosis: 預後不佳。幼年型腎病為不可逆且進行性。多數犬隻在 1-3 歲內進展至終末期腎衰竭。早期診斷與積極腎病管理可延長存活時間。好發品種的繁殖管理很重要（不應用於繁殖）。
-
 pubmedQueries:
   - query: '"juvenile nephropathy" OR "renal dysplasia" AND (veterinary OR canine) AND ("treatment" OR "prognosis")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: uncommon
+  - symptomId: halitosis-stomatitis
+    frequency: uncommon
+  - symptomId: polyuria-polydipsia
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 幼年型腎病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - halitosis-stomatitis 相關症狀
+        - polyuria-polydipsia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血液生化與尿液分析
+          notes: 年輕動物（<2 歲）出現氮質血症（BUN、Creatinine 升高）。尿液比重持續稀釋（<1.030）。SDMA 升高。蛋白尿可能存在。
+        - name: 腎臟活檢
+          notes: 確診金標準。腎發育不良特徵：不成熟腎絲球（fetal glomeruli）、不成熟腎小管、持續性間葉組織（persistent mesenchyme）。不成熟結構與正常結構並存。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 不可逆病變，治療為支持性
+        - 慢性腎病標準管理
+        - 延緩進展
+ddxSource: auto-generated

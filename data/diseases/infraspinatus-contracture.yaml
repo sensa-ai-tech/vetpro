@@ -3,11 +3,11 @@ nameEn: Infraspinatus Contracture
 nameZh: 棘下肌攣縮
 bodySystem: orthopedic
 description: 棘下肌 (infraspinatus) 纖維化攣縮導致前肢外旋與肩關節活動受限。通常為急性棘下肌損傷後纖維化替代所致。活躍中大型犬好發。
-
 aliases:
-  - { alias: "Infraspinatus Fibrosis", language: en }
-  - { alias: "棘下肌纖維化", language: zh }
-
+  - alias: Infraspinatus Fibrosis
+    language: en
+  - alias: 棘下肌纖維化
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: rare
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓極罕見。
-
 etiology:
   categories:
     - name: 外傷後纖維化
@@ -23,7 +22,6 @@ etiology:
         - 急性棘下肌損傷後肌肉纖維化
         - 肌肉被纖維組織替代
         - 導致永久性攣縮
-
 clinicalSigns:
   early:
     - 前肢外旋步態
@@ -33,14 +31,12 @@ clinicalSigns:
     - 前肢明顯外旋固定
     - elbow 外翻
     - 肌肉萎縮
-
 diagnosis:
   primaryTests:
     - name: 步態分析
       notes: 特徵性前肢外旋迴旋步態（circumduction）
     - name: 觸診
       notes: 棘下肌僵硬纖維化。肩關節內旋受限
-
 treatment:
   principles:
     - 手術鬆解為治療方式
@@ -48,16 +44,43 @@ treatment:
     - 棘下肌肌腱切斷術（tenotomy）
     - 術後物理治療恢復活動度
     - 術後恢復快
-
 prognosis: 手術鬆解後預後極佳。多數犬術後數天即恢復正常步態。
-
-
 guidelineRefs:
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Fibrotic Contracture of the Infraspinatus Muscle with or without Contracture of the Teres Minor Muscle: A Retrospective Study in Eight Dogs."
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: >-
+      Fibrotic Contracture of the Infraspinatus Muscle with or without Contracture of the Teres Minor Muscle: A
+      Retrospective Study in Eight Dogs.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11393924/
     type: review
-    pmid: "39272374"
+    pmid: '39272374'
 pubmedQueries:
   - query: '"infraspinatus contracture" AND (veterinary OR canine) AND ("tenotomy" OR "treatment")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: cachexia-muscle-wasting
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+diagnosticAlgorithm:
+  title: 棘下肌攣縮 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - cachexia-muscle-wasting 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 步態分析
+          notes: 特徵性前肢外旋迴旋步態（circumduction）
+        - name: 觸診
+          notes: 棘下肌僵硬纖維化。肩關節內旋受限
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 手術鬆解為治療方式
+ddxSource: auto-generated

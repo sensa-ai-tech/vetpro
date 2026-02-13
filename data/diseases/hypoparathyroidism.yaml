@@ -3,15 +3,19 @@ nameEn: Hypoparathyroidism
 nameZh: 副甲狀腺功能低下
 bodySystem: endocrine
 description: 副甲狀腺功能低下是指副甲狀腺荷爾蒙（PTH）分泌不足導致低鈣血症與高磷血症的疾病。可為原發性（免疫介導性副甲狀腺破壞最常見）或醫源性（甲狀腺/副甲狀腺手術後）。臨床上以神經肌肉興奮性增加引起的肌肉痙攣與癲癇為主要表現。
-
 aliases:
-  - { alias: 副甲狀腺功能不足, language: zh }
-  - { alias: 副甲狀腺低下症, language: zh }
-  - { alias: 低副甲狀腺素血症, language: zh }
-  - { alias: Primary Hypoparathyroidism, language: en }
-  - { alias: HypoPTH, language: en }
-  - { alias: Parathyroid Hormone Deficiency, language: en }
-
+  - alias: 副甲狀腺功能不足
+    language: zh
+  - alias: 副甲狀腺低下症
+    language: zh
+  - alias: 低副甲狀腺素血症
+    language: zh
+  - alias: Primary Hypoparathyroidism
+    language: en
+  - alias: HypoPTH
+    language: en
+  - alias: Parathyroid Hormone Deficiency
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -21,7 +25,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓隻原發性副甲狀腺功能低下極為罕見。醫源性（甲狀腺切除術後）低鈣血症為貓隻較常見的低 PTH 狀態。
-
 etiology:
   categories:
     - name: 原發性（免疫介導性）
@@ -47,7 +50,6 @@ etiology:
         - PTH 不足導致腎臟磷排泄減少（高磷血症）
         - PTH 不足導致腎臟 1,25-(OH)2D3 合成減少
         - 低鈣血症導致神經肌肉細胞膜去極化閾值下降
-
 clinicalSigns:
   early:
     - 面部搔抓或摩擦
@@ -69,23 +71,21 @@ clinicalSigns:
     - 喉頭痙攣（呼吸困難）
     - 心律不整（低鈣血症影響心肌）
     - 白內障（長期低鈣血症）
-
 diagnosis:
   primaryTests:
     - name: 血清離子鈣與 PTH
-      notes: "低離子鈣（< 1.0 mmol/L）伴 PTH 低值或無法偵測（< 0.5 pmol/L）為確診標準。總鈣降低（< 6.5 mg/dL 犬隻）。PTH 在低鈣血症時應代償性升高，PTH 不適當偏低即支持診斷。"
+      notes: 低離子鈣（< 1.0 mmol/L）伴 PTH 低值或無法偵測（< 0.5 pmol/L）為確診標準。總鈣降低（< 6.5 mg/dL 犬隻）。PTH 在低鈣血症時應代償性升高，PTH 不適當偏低即支持診斷。
     - name: 血液生化
-      notes: "高磷血症（因 PTH 不足致磷排泄減少）。BUN/Creatinine 正常（排除腎衰竭性低鈣血症）。鎂可能正常或偏低。白蛋白正常（排除低白蛋白性假性低鈣血症）。"
+      notes: 高磷血症（因 PTH 不足致磷排泄減少）。BUN/Creatinine 正常（排除腎衰竭性低鈣血症）。鎂可能正常或偏低。白蛋白正常（排除低白蛋白性假性低鈣血症）。
   imaging:
     - name: 頸部超音波
-      notes: "評估副甲狀腺大小。原發性副甲狀腺功能低下時副甲狀腺可能萎縮或無法偵測。排除副甲狀腺佔位病變。"
+      notes: 評估副甲狀腺大小。原發性副甲狀腺功能低下時副甲狀腺可能萎縮或無法偵測。排除副甲狀腺佔位病變。
   additional:
     - 心電圖：QT 間期延長、心律不整
     - 25-OH Vitamin D：評估維生素 D 狀態
     - 全血球計數：通常正常
     - 尿液分析：通常無特異性變化
     - 眼科檢查：評估白內障（長期低鈣血症）
-
 treatment:
   principles:
     - 急性低鈣血症性癲癇/痙攣為急症，需靜脈注射鈣劑
@@ -93,45 +93,45 @@ treatment:
     - 目標維持血鈣在低正常範圍（避免高鈣血症與腎鈣化）
     - 終生治療
   general:
-    - "急性低鈣血症處置：10% Calcium gluconate 0.5-1.5 mL/kg IV 緩慢推注（10-20 分鐘），同時心電圖監測"
-    - "急性期後：10% Calcium gluconate 5-15 mL/kg/day CRI 加入輸液中"
-    - "長期維生素 D 治療：Calcitriol (1,25-dihydroxyvitamin D3) 20-30 ng/kg PO q24h（起始劑量）"
-    - "替代方案：Dihydrotachysterol 0.01-0.02 mg/kg PO q24h（作用較慢但較便宜）"
-    - "口服鈣補充：Calcium carbonate 25-50 mg/kg elemental calcium PO q8-12h（隨餐給予）"
-    - "維持目標：血清總鈣 8-10 mg/dL（低正常範圍），避免 > 11 mg/dL"
-    - "初期每週監測血鈣，穩定後每 2-3 個月監測"
-    - "長期穩定後可逐漸減少口服鈣劑（部分患者可僅靠 Calcitriol 維持）"
-    - "避免高鈣血症導致腎鈣化：定期監測 BUN/Creatinine 與尿液鈣/肌酸酐比值"
-
-prognosis: 原發性副甲狀腺功能低下經適當長期治療後預後良好，多數犬隻可維持正常生活品質。需終生口服 Calcitriol 與鈣補充。治療監測依從性佳者長期存活率高。急性低鈣血症性癲癇/痙攣若未及時治療可致命。長期低鈣血症可導致白內障形成。醫源性副甲狀腺功能低下部分為暫時性（殘存副甲狀腺組織代償），但部分需永久治療。
-
+    - 急性低鈣血症處置：10% Calcium gluconate 0.5-1.5 mL/kg IV 緩慢推注（10-20 分鐘），同時心電圖監測
+    - 急性期後：10% Calcium gluconate 5-15 mL/kg/day CRI 加入輸液中
+    - 長期維生素 D 治療：Calcitriol (1,25-dihydroxyvitamin D3) 20-30 ng/kg PO q24h（起始劑量）
+    - 替代方案：Dihydrotachysterol 0.01-0.02 mg/kg PO q24h（作用較慢但較便宜）
+    - 口服鈣補充：Calcium carbonate 25-50 mg/kg elemental calcium PO q8-12h（隨餐給予）
+    - 維持目標：血清總鈣 8-10 mg/dL（低正常範圍），避免 > 11 mg/dL
+    - 初期每週監測血鈣，穩定後每 2-3 個月監測
+    - 長期穩定後可逐漸減少口服鈣劑（部分患者可僅靠 Calcitriol 維持）
+    - 避免高鈣血症導致腎鈣化：定期監測 BUN/Creatinine 與尿液鈣/肌酸酐比值
+prognosis: >-
+  原發性副甲狀腺功能低下經適當長期治療後預後良好，多數犬隻可維持正常生活品質。需終生口服 Calcitriol
+  與鈣補充。治療監測依從性佳者長期存活率高。急性低鈣血症性癲癇/痙攣若未及時治療可致命。長期低鈣血症可導致白內障形成。醫源性副甲狀腺功能低下部分為暫時性（殘存副甲狀腺組織代償），但部分需永久治療。
 guidelineRefs:
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Primary hypoparathyroidism in dogs: 17 cases (1990-1996)"
+    title: 'Primary hypoparathyroidism in dogs: 17 cases (1990-1996)'
     url: https://pubmed.ncbi.nlm.nih.gov/10384800/
     type: research
-    pmid: "10384800"
+    pmid: '10384800'
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: Hypoparathyroidism and other causes of hypocalcemia in dogs
     url: https://pubmed.ncbi.nlm.nih.gov/22092611/
     type: review
-    pmid: "22092611"
+    pmid: '22092611'
   - sourceOrg: Journal of the American Animal Hospital Association
-    title: "Primary hypoparathyroidism in dogs and cats: a review"
+    title: 'Primary hypoparathyroidism in dogs and cats: a review'
     url: https://pubmed.ncbi.nlm.nih.gov/16822768/
     type: review
-    pmid: "16822768"
+    pmid: '16822768'
   - sourceOrg: Frontiers in veterinary science
     title: Challenges in establishing animal models for studying osteoimmunology of hypoparathyroidism.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10169642/
     type: review
-    pmid: "37180074"
+    pmid: '37180074'
     relevance: primary
   - sourceOrg: Advanced science (Weinheim, Baden-Wurttemberg, Germany)
     title: Induced Pluripotent Stem Cell-Derived Parathyroid Organoids Resemble Parathyroid Morphology and Function.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11578294/
     type: research
-    pmid: "39331961"
+    pmid: '39331961'
     relevance: supporting
 pubmedQueries:
   - query: '"hypoparathyroidism" AND (dog OR canine) AND ("treatment" OR "calcitriol" OR "calcium")'
@@ -140,6 +140,68 @@ pubmedQueries:
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "MUS"
-  sectionTitle: "HYPOPARATHYROIDISM"
+  chapter: MUS
+  sectionTitle: HYPOPARATHYROIDISM
   pdfPage: 1098
+diagnosticAlgorithm:
+  title: 副甲狀腺功能低下 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估低血鈣神經肌肉症狀
+      findings:
+        - 肌肉顫搐痙攣
+        - 面部搔癢（貓）
+        - 癲癇發作
+        - 甲狀腺手術後
+    - step: 2
+      action: 血鈣與PTH
+      details: 確認低鈣低PTH
+      findings:
+        - 離子鈣降低
+        - PTH不適當偏低
+        - 磷升高
+        - 鎂離子正常
+    - step: 3
+      action: 心電圖
+      details: 低鈣心臟影響
+      findings:
+        - QT間期延長
+        - 心律不整風險
+        - 連續監測
+    - step: 4
+      action: 治療與維持
+      details: 鈣與維生素D補充
+      findings:
+        - 急性期靜脈鈣劑
+        - 維持期口服鈣與活性維生素D
+        - 定期離子鈣監測
+        - 劑量調整
+clinicalPearls:
+  - 醫源性是最常見原因 - 甲狀腺手術後需密切監測
+  - 離子鈣比總鈣更準確
+  - Calcitriol因半衰期短是首選維生素D
+  - 過度補充導致的高鈣血症和腎鈣化需警惕
+  - 目標維持鈣在正常低限，不需要正常化
+  - 急性時避免碳酸鈣（吸收不夠快）
+monitoringItems:
+  - 初期：血鈣每週測量直到穩定
+  - 穩定後：每2-4個月
+  - 腎功能和尿比重（腎鈣化風險）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+associatedLabFindings:
+  - labId: calcium-low
+    frequency: uncommon
+ddxSource: book

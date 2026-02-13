@@ -2,13 +2,16 @@ slug: clostridium-difficile-infection
 nameEn: Clostridium Difficile Infection
 nameZh: 困難梭狀桿菌感染
 bodySystem: infectious
-description: 困難梭狀桿菌感染為 Clostridioides difficile（原 Clostridium difficile）產毒株引起的腸道感染。犬隻可為急性或慢性腹瀉，通常與抗生素使用後腸道菌群失調相關。C. difficile 產生的毒素 A（腸毒素）與毒素 B（細胞毒素）為致病關鍵。
-
+description: >-
+  困難梭狀桿菌感染為 Clostridioides difficile（原 Clostridium difficile）產毒株引起的腸道感染。犬隻可為急性或慢性腹瀉，通常與抗生素使用後腸道菌群失調相關。C. difficile 產生的毒素
+  A（腸毒素）與毒素 B（細胞毒素）為致病關鍵。
 aliases:
-  - { alias: C. diff 感染, language: zh }
-  - { alias: CDI, language: en }
-  - { alias: Clostridioides difficile Infection, language: en }
-
+  - alias: C. diff 感染
+    language: zh
+  - alias: CDI
+    language: en
+  - alias: Clostridioides difficile Infection
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +19,6 @@ species:
   - speciesCommon: cat
     prevalence: uncommon
     notes: 貓隻帶菌率類似。臨床感染不常報告。
-
 etiology:
   categories:
     - name: 病原體
@@ -31,7 +33,6 @@ etiology:
         - 住院環境
         - 免疫抑制
         - 腸道手術後
-
 clinicalSigns:
   early:
     - 水樣至黏液性腹瀉
@@ -42,14 +43,12 @@ clinicalSigns:
     - 發燒
     - 嚴重脫水
     - 大腸性腹瀉（頻繁少量帶黏液）
-
 diagnosis:
   primaryTests:
     - name: 糞便毒素檢測
       notes: C. difficile 毒素 A/B ELISA 或 PCR。單純培養陽性不能區分產毒株與非產毒株。毒素 PCR 偵測 tcdA 與 tcdB 基因。
     - name: 糞便培養
       notes: 厭氧培養可分離 C. difficile，但需搭配毒素檢測。環境汙染可能造成假陽性。
-
 treatment:
   principles:
     - 停用當前抗生素（如可能）
@@ -57,40 +56,84 @@ treatment:
     - 恢復腸道菌群
   general:
     - 停用觸發的抗生素
-    - "Metronidazole 10-15 mg/kg PO q12h × 10-14 天（首選）"
-    - "嚴重者：Vancomycin PO（不被腸道吸收，在腸腔內直接作用）"
+    - Metronidazole 10-15 mg/kg PO q12h × 10-14 天（首選）
+    - 嚴重者：Vancomycin PO（不被腸道吸收，在腸腔內直接作用）
     - 益生菌輔助（Saccharomyces boulardii 有初步證據）
     - 糞便微生物群移植（FMT，難治性或復發性病例）
-
 prognosis: 多數犬隻 C. difficile 腸炎在停用觸發抗生素與 Metronidazole 治療後預後良好。復發率約 10-20%。糞便微生物群移植對復發性 CDI 有良好效果。
-
-
 guidelineRefs:
   - sourceOrg: Life (Basel, Switzerland)
-    title: Any Future for Faecal Microbiota Transplantation as a Novel Strategy for Gut Microbiota Modulation in Human and Veterinary Medicine?
+    title: >-
+      Any Future for Faecal Microbiota Transplantation as a Novel Strategy for Gut Microbiota Modulation in Human and
+      Veterinary Medicine?
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9146664/
     type: review
-    pmid: "35629390"
+    pmid: '35629390'
   - sourceOrg: Gut microbes
     title: MICROBIOTA INSIGHTS IN CLOSTRIDIUM DIFFICILE INFECTION AND INFLAMMATORY BOWEL DISEASE.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7524151/
     type: review
-    pmid: "32129694"
+    pmid: '32129694'
   - sourceOrg: Equine veterinary education
-    title: "Equine faecal microbiota transplant: Current knowledge, proposed guidelines and future directions."
+    title: 'Equine faecal microbiota transplant: Current knowledge, proposed guidelines and future directions.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7159401/
     type: review
-    pmid: "32313396"
+    pmid: '32313396'
   - sourceOrg: Microorganisms
-    title: "Clostridioides (Clostridium) Difficile in Food-Producing Animals, Horses and Household Pets: A Comprehensive Review."
+    title: >-
+      Clostridioides (Clostridium) Difficile in Food-Producing Animals, Horses and Household Pets: A Comprehensive
+      Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6955671/
     type: review
-    pmid: "31835413"
+    pmid: '31835413'
   - sourceOrg: Frontiers in microbiology
-    title: Targeting Clostridium difficile Surface Components to Develop Immunotherapeutic Strategies Against Clostridium difficile Infection.
+    title: >-
+      Targeting Clostridium difficile Surface Components to Develop Immunotherapeutic Strategies Against Clostridium
+      difficile Infection.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5974105/
     type: review
-    pmid: "29875742"
+    pmid: '29875742'
 pubmedQueries:
-  - query: '"Clostridium difficile" OR "Clostridioides difficile" AND (veterinary OR canine OR feline) AND ("treatment" OR "antibiotic")'
+  - query: >-
+      "Clostridium difficile" OR "Clostridioides difficile" AND (veterinary OR canine OR feline) AND ("treatment" OR
+      "antibiotic")
     frequency: monthly
+associatedSymptoms:
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: common
+  - symptomId: haematochezia
+    frequency: uncommon
+  - symptomId: dehydration
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 困難梭狀桿菌感染 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - anorexia 相關症狀
+        - abdominal-pain 相關症狀
+        - hyperthermia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 糞便毒素檢測
+          notes: C. difficile 毒素 A/B ELISA 或 PCR。單純培養陽性不能區分產毒株與非產毒株。毒素 PCR 偵測 tcdA 與 tcdB 基因。
+        - name: 糞便培養
+          notes: 厭氧培養可分離 C. difficile，但需搭配毒素檢測。環境汙染可能造成假陽性。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 停用當前抗生素（如可能）
+        - 特異性抗 C. difficile 治療
+        - 恢復腸道菌群
+ddxSource: auto-generated

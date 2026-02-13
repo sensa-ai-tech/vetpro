@@ -3,18 +3,18 @@ nameEn: Akita Autoimmune Diseases
 nameZh: 秋田犬自體免疫疾病
 bodySystem: immunology
 description: 秋田犬為多種自體免疫疾病高風險品種,包括葡萄膜皮膚症候群、自體免疫性溶血性貧血、免疫介導性血小板減少症等。遺傳易感性導致免疫系統攻擊自身組織。
-
 aliases:
-  - { alias: 自體免疫疾病, language: zh }
-  - { alias: Autoimmune Disorders, language: en }
-  - { alias: Immune-Mediated Diseases, language: en }
-
+  - alias: 自體免疫疾病
+    language: zh
+  - alias: Autoimmune Disorders
+    language: en
+  - alias: Immune-Mediated Diseases
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
     notes: 秋田犬、西伯利亞哈士奇、德國牧羊犬為高風險品種
-
 etiology:
   categories:
     - name: 免疫系統失調
@@ -22,7 +22,6 @@ etiology:
         - 遺傳性免疫調節異常
         - T細胞或B細胞功能失調
         - 自體抗體產生
-
 clinicalSigns:
   early:
     - 依疾病類型而異
@@ -34,20 +33,18 @@ clinicalSigns:
     - 進行性惡化
     - 復發性症狀
     - 全身性虛弱
-
 diagnosis:
   primaryTests:
     - name: 全血球計數
-      notes: "貧血、血小板減少或白血球異常"
+      notes: 貧血、血小板減少或白血球異常
     - name: 免疫學檢查
-      notes: "Coombs test、抗核抗體(ANA)、抗血小板抗體"
+      notes: Coombs test、抗核抗體(ANA)、抗血小板抗體
     - name: 特異性檢查
-      notes: "依疾病類型:眼科、皮膚活檢、骨髓檢查"
+      notes: 依疾病類型:眼科、皮膚活檢、骨髓檢查
   differentialDiagnoses:
     - 感染性疾病
     - 腫瘤性疾病
     - 中毒
-
 treatment:
   medical:
     - 免疫抑制劑(Prednisone 2-4 mg/kg PO q12h,漸減)
@@ -55,34 +52,57 @@ treatment:
     - Cyclosporine 5 mg/kg PO q12h(依疾病調整)
     - Mycophenolate 10 mg/kg PO q12h(難治性病例)
     - 支持性治療(輸血、抗生素)
-
 prognosis:
-  general: "依疾病類型及嚴重程度而異。早期診斷及積極治療預後較佳。多數需終生免疫抑制治療。復發風險高。"
-
+  general: 依疾病類型及嚴重程度而異。早期診斷及積極治療預後較佳。多數需終生免疫抑制治療。復發風險高。
 prevention:
   - 受影響犬隻不應繁殖
   - 定期健康檢查
   - 早期診斷早期治療
-
-
 guidelineRefs:
   - sourceOrg: Journal of diabetes research
     title: Experimental Diabetes Mellitus in Different Animal Models.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4993915/
     type: review
-    pmid: "27595114"
+    pmid: '27595114'
   - sourceOrg: The Journal of biological chemistry
     title: Cell surface expression of 78-kDa glucose-regulated protein (GRP78) mediates diabetic nephropathy.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6514638/
     type: research
-    pmid: "30914477"
+    pmid: '30914477'
   - sourceOrg: Kidney international
-    title: Pigment epithelium-derived factor, a noninhibitory serine protease inhibitor, is renoprotective by inhibiting the Wnt pathway.
+    title: >-
+      Pigment epithelium-derived factor, a noninhibitory serine protease inhibitor, is renoprotective by inhibiting the
+      Wnt pathway.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5313326/
     type: research
-    pmid: "27914705"
+    pmid: '27914705'
   - sourceOrg: Endocrinology
     title: Insulin Inhibits Nrf2 Gene Expression via Heterogeneous Nuclear Ribonucleoprotein F/K in Diabetic Mice.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5460794/
     type: research
-    pmid: "28324005"
+    pmid: '28324005'
+associatedSymptoms:
+  - symptomId: weakness
+    frequency: common
+  - symptomId: petechiae-ecchymoses
+    frequency: common
+diagnosticAlgorithm:
+  title: 秋田犬自體免疫疾病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weakness 相關症狀
+        - petechiae-ecchymoses 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 全血球計數
+          notes: 貧血、血小板減少或白血球異常
+        - name: 免疫學檢查
+          notes: Coombs test、抗核抗體(ANA)、抗血小板抗體
+        - name: 特異性檢查
+          notes: 依疾病類型:眼科、皮膚活檢、骨髓檢查
+ddxSource: auto-generated

@@ -3,11 +3,11 @@ nameEn: Vasopressor Therapy
 nameZh: 升壓劑治療
 bodySystem: emergency
 description: 液體復甦後仍持續低血壓時使用血管收縮劑。常用藥物包括去甲腎上腺素、多巴胺、血管加壓素。
-
 aliases:
-  - { alias: 血管升壓藥, language: zh }
-  - { alias: Vasopressor Support, language: en }
-
+  - alias: 血管升壓藥
+    language: zh
+  - alias: Vasopressor Support
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,69 +17,79 @@ species:
     speciesScientific: Felis catus
     prevalence: moderate
     notes: 同犬
-
 etiology:
   categories:
     - name: 適應症
       examples:
         - 敗血性休克、分布性休克、液體復甦後仍低血壓
-
 clinicalSigns:
   early:
     - 持續低血壓(MAP<60 mmHg)
   progressive:
     - 多器官灌流不足
-
 diagnosis:
   primaryTests:
     - name: 血壓監測
-      notes: "MAP<60 mmHg需升壓劑"
+      notes: MAP<60 mmHg需升壓劑
   differentialDiagnoses:
     - 無
-
 treatment:
   medical:
     - 去甲腎上腺素(Norepinephrine):
-      - 0.05-1 μg/kg/min IV CRI
-      - 第一線升壓劑
+        - 0.05-1 μg/kg/min IV CRI
+        - 第一線升壓劑
     - 多巴胺(Dopamine):
-      - 5-20 μg/kg/min IV CRI
+        - 5-20 μg/kg/min IV CRI
     - 血管加壓素(Vasopressin):
-      - 0.0005-0.002 units/kg/min IV CRI
+        - 0.0005-0.002 units/kg/min IV CRI
     - 持續血壓監測
     - 目標MAP>65 mmHg
     - 改善後逐步減量
-
 prognosis:
-  general: "可改善血壓,但需治療根本病因。長期使用可能組織缺血。"
-
+  general: 可改善血壓,但需治療根本病因。長期使用可能組織缺血。
 prevention:
   - 充分液體復甦後再使用
   - 監測末梢灌流
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
     title: Fluid Therapy in Dogs and Cats With Sepsis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7947228/
     type: review
-    pmid: "33718468"
+    pmid: '33718468'
     relevance: primary
   - sourceOrg: Veterinary sciences
-    title: "Norepinephrine Versus Dopamine as a First-Line Vasopressor in Dogs with Hypotension: A Pilot Study."
+    title: 'Norepinephrine Versus Dopamine as a First-Line Vasopressor in Dogs with Hypotension: A Pilot Study.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12474381/
     type: research
-    pmid: "41012757"
+    pmid: '41012757'
     relevance: supporting
   - sourceOrg: Intensive care medicine experimental
     title: Development of a model for anemia of inflammation that is relevant to critical care.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6658638/
     type: research
-    pmid: "31346819"
+    pmid: '31346819'
     relevance: supporting
   - sourceOrg: Intensive care medicine experimental
-    title: "Fluid sparing and norepinephrine use in a rat model of resuscitated haemorrhagic shock: end-organ impact."
+    title: 'Fluid sparing and norepinephrine use in a rat model of resuscitated haemorrhagic shock: end-organ impact.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6232186/
     type: research
-    pmid: "30421022"
+    pmid: '30421022'
     relevance: supporting
+associatedSymptoms:
+  - symptomId: dehydration
+    frequency: common
+diagnosticAlgorithm:
+  title: 升壓劑治療 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dehydration 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 血壓監測
+          notes: MAP<60 mmHg需升壓劑
+ddxSource: auto-generated

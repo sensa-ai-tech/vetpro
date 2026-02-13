@@ -3,18 +3,18 @@ nameEn: Bengal Cat Flat Chested Kitten Syndrome
 nameZh: 孟加拉貓扁平胸症候群
 bodySystem: other
 description: 孟加拉貓幼貓的先天性胸廓發育異常,胸骨背腹向扁平導致呼吸困難。多數在2-3週齡明顯,輕症可隨成長改善,重症預後不良。
-
 aliases:
-  - { alias: 扁平胸症候群, language: zh }
-  - { alias: FCKS, language: en }
-  - { alias: Swimmer Syndrome, language: en }
-
+  - alias: 扁平胸症候群
+    language: zh
+  - alias: FCKS
+    language: en
+  - alias: Swimmer Syndrome
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 孟加拉貓、緬因貓等大型品種
-
 etiology:
   categories:
     - name: 先天性骨骼發育異常
@@ -22,7 +22,6 @@ etiology:
         - 遺傳因素(可能)
         - 營養不良(母貓)
         - 胸廓軟骨發育異常
-
 clinicalSigns:
   early:
     - 胸部背腹向扁平(2-3週齡)
@@ -33,28 +32,47 @@ clinicalSigns:
     - 發紺
     - 生長遲緩
     - 繼發性肺炎
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
-      notes: "胸廓明顯扁平,肋骨外翻"
+      notes: 胸廓明顯扁平,肋骨外翻
     - name: 胸腔X光
-      notes: "胸廓扁平,肺野壓縮"
+      notes: 胸廓扁平,肺野壓縮
   differentialDiagnoses:
     - 肋骨骨折
     - 胸腔積液
     - 橫膈疝氣
-
 treatment:
   medical:
     - 胸廓物理治療(輕柔按摩、擺位)
     - 胸帶固定(部分病例)
     - 營養支持
     - 預防繼發性感染
-
 prognosis:
-  general: "輕中度病例多數在8-12週齡自發改善,預後良好。重度呼吸窘迫者預後不良,多數早期死亡。"
-
+  general: 輕中度病例多數在8-12週齡自發改善,預後良好。重度呼吸窘迫者預後不良,多數早期死亡。
 prevention:
   - 母貓孕期營養充足
   - 避免近親繁殖
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 孟加拉貓扁平胸症候群 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - pallor-cyanosis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 胸廓明顯扁平,肋骨外翻
+        - name: 胸腔X光
+          notes: 胸廓扁平,肺野壓縮
+ddxSource: auto-generated

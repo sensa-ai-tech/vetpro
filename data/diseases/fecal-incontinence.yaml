@@ -3,11 +3,11 @@ nameEn: Fecal Incontinence
 nameZh: 大便失禁
 bodySystem: gastrointestinal
 description: 無法自主控制排便,導致不自覺排便。可能因肛門括約肌損傷、神經疾病或認知障礙引起。
-
 aliases:
-  - { alias: 糞便失禁, language: zh }
-  - { alias: Bowel Incontinence, language: en }
-
+  - alias: 糞便失禁
+    language: zh
+  - alias: Bowel Incontinence
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,7 +17,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 罕見,可能因薦椎骨折
-
 etiology:
   categories:
     - name: 神經性
@@ -30,7 +29,6 @@ etiology:
     - name: 老化
       examples:
         - 認知功能障礙
-
 clinicalSigns:
   early:
     - 偶發性不自覺排便
@@ -38,58 +36,81 @@ clinicalSigns:
     - 頻繁失禁
     - 肛門張力降低
     - 尾部無力
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
-      notes: "評估肛門反射、尾部運動"
+      notes: 評估肛門反射、尾部運動
     - name: 直腸觸診
-      notes: "評估肛門括約肌張力"
+      notes: 評估肛門括約肌張力
     - name: 腰薦椎 X 光 / MRI
-      notes: "評估脊椎疾病"
+      notes: 評估脊椎疾病
   differentialDiagnoses:
     - 腹瀉
     - 認知功能障礙
     - 行為問題
-
 treatment:
   medical:
     - 治療原發神經疾病
     - 飲食管理 (規律排便)
     - 外科修補括約肌 (若損傷)
     - 支持性照護
-
 prognosis:
-  general: "取決於原發病因;神經性損傷預後謹慎;括約肌損傷可能部分改善"
-
+  general: 取決於原發病因;神經性損傷預後謹慎;括約肌損傷可能部分改善
 prevention:
   - 謹慎會陰手術技術
   - 早期診斷及治療脊椎疾病
-
-
 guidelineRefs:
   - sourceOrg: Frontiers in veterinary science
-    title: "Lumbosacral (myelo) meningoceles in dogs, related tethered cord syndrome, and their surgical management: review of the literature and clinical experience."
+    title: >-
+      Lumbosacral (myelo) meningoceles in dogs, related tethered cord syndrome, and their surgical management: review of
+      the literature and clinical experience.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11975860/
     type: review
-    pmid: "40201081"
+    pmid: '40201081'
   - sourceOrg: Bioengineering (Basel, Switzerland)
     title: Novel Bionics Assessment of Anorectal Mechanosensory Physiology.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7712164/
     type: review
-    pmid: "33202610"
+    pmid: '33202610'
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: "Spinal subarachnoid diverticula in dogs: A review."
+    title: 'Spinal subarachnoid diverticula in dogs: A review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7560765/
     type: review
-    pmid: "33149353"
+    pmid: '33149353'
   - sourceOrg: Frontiers in veterinary science
     title: Bladder and Bowel Management in Dogs With Spinal Cord Injury.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7686579/
     type: review
-    pmid: "33263015"
+    pmid: '33263015'
   - sourceOrg: Frontiers in veterinary science
-    title: "Case Report: Long-term surgical outcomes in pug dogs with articular facet dysplasia-associated thoracolumbar myelopathies."
+    title: >-
+      Case Report: Long-term surgical outcomes in pug dogs with articular facet dysplasia-associated thoracolumbar
+      myelopathies.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12411195/
     type: case-report
-    pmid: "40919036"
+    pmid: '40919036'
+associatedSymptoms:
+  - symptomId: faecal-incontinence
+    frequency: uncommon
+  - symptomId: weakness
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 大便失禁 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - faecal-incontinence 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 神經學檢查
+          notes: 評估肛門反射、尾部運動
+        - name: 直腸觸診
+          notes: 評估肛門括約肌張力
+        - name: 腰薦椎 X 光 / MRI
+          notes: 評估脊椎疾病
+ddxSource: auto-generated

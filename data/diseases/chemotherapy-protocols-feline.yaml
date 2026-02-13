@@ -3,35 +3,35 @@ nameEn: Chemotherapy Protocols Feline
 nameZh: 貓化學治療方案
 bodySystem: oncology
 description: 貓腫瘤化學治療方案概述，涵蓋貓特有的藥物敏感性、劑量限制及常見腫瘤的化療策略。貓對部分化療藥物的耐受性與犬不同，需特別注意腎毒性。
-
 aliases:
-  - { alias: 貓化療方案, language: zh }
-  - { alias: 貓腫瘤化療, language: zh }
-  - { alias: Feline Chemotherapy, language: en }
-  - { alias: Feline Cancer Chemotherapy Protocols, language: en }
-
+  - alias: 貓化療方案
+    language: zh
+  - alias: 貓腫瘤化療
+    language: zh
+  - alias: Feline Chemotherapy
+    language: en
+  - alias: Feline Cancer Chemotherapy Protocols
+    language: en
 species:
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: common
     notes: 貓化療需特別注意物種差異。Cisplatin 對貓禁忌（致死性肺水腫）。Doxorubicin 對貓腎毒性較犬高。5-FU 對貓禁忌（致死性神經毒性）。劑量計算以體重（非BSA）為基礎。
-
 etiology:
   categories:
     - name: 貓禁忌化療藥物
       examples:
-        - "Cisplatin：貓禁忌（致死性肺水腫）"
-        - "5-Fluorouracil (5-FU)：貓禁忌（致死性神經毒性）"
+        - Cisplatin：貓禁忌（致死性肺水腫）
+        - 5-Fluorouracil (5-FU)：貓禁忌（致死性神經毒性）
         - 以上兩藥在任何情況下均不可用於貓
     - name: 貓常用化療方案
       examples:
-        - "COP：Cyclophosphamide + Vincristine + Prednisolone（淋巴瘤）"
-        - "CHOP 修正方案：使用 Doxorubicin 需監測腎功能"
-        - "Lomustine (CCNU)：淋巴瘤、肥大細胞瘤"
-        - "Chlorambucil + Prednisolone：低度淋巴瘤、小細胞淋巴瘤"
-        - "Carboplatin：注射部位肉瘤、多種實質腫瘤"
-        - "Metronomic Chlorambucil：慢性維持治療"
-
+        - COP：Cyclophosphamide + Vincristine + Prednisolone（淋巴瘤）
+        - CHOP 修正方案：使用 Doxorubicin 需監測腎功能
+        - Lomustine (CCNU)：淋巴瘤、肥大細胞瘤
+        - Chlorambucil + Prednisolone：低度淋巴瘤、小細胞淋巴瘤
+        - Carboplatin：注射部位肉瘤、多種實質腫瘤
+        - Metronomic Chlorambucil：慢性維持治療
 clinicalSigns:
   early:
     - 暫時性食慾下降
@@ -43,61 +43,89 @@ clinicalSigns:
     - 腎功能惡化（Doxorubicin 腎毒性）
     - 體重減輕
     - 鬚鬚脫落（常見但無臨床意義）
-
 diagnosis:
   primaryTests:
     - name: 化療前評估
-      notes: "CBC、完整生化（特別注意 BUN、Creatinine）、尿液分析。FeLV/FIV 檢測。心臟超音波（Doxorubicin 前）"
+      notes: CBC、完整生化（特別注意 BUN、Creatinine）、尿液分析。FeLV/FIV 檢測。心臟超音波（Doxorubicin 前）
     - name: 化療中監測
-      notes: "每次化療前 CBC 及腎功能。Doxorubicin 使用期間密切監測腎功能。嗜中性球 >1,500/μL 方可進行"
+      notes: 每次化療前 CBC 及腎功能。Doxorubicin 使用期間密切監測腎功能。嗜中性球 >1,500/μL 方可進行
   differentialDiagnoses:
     - 手術治療
     - 放射治療
     - 免疫治療
     - 姑息治療
-
 treatment:
   medical:
-    - "Doxorubicin 貓劑量：1 mg/kg IV（非以 BSA 計算），每 3 週一次"
-    - "Doxorubicin 貓累積劑量上限：約 5-6 次（腎毒性限制）"
-    - "Carboplatin 200-240 mg/m² IV 每 3-4 週"
-    - "Chlorambucil 2 mg PO 每 48-72 小時（慢性淋巴瘤）"
-    - "Lomustine 50-60 mg/m² PO 每 4-6 週"
+    - Doxorubicin 貓劑量：1 mg/kg IV（非以 BSA 計算），每 3 週一次
+    - Doxorubicin 貓累積劑量上限：約 5-6 次（腎毒性限制）
+    - Carboplatin 200-240 mg/m² IV 每 3-4 週
+    - Chlorambucil 2 mg PO 每 48-72 小時（慢性淋巴瘤）
+    - Lomustine 50-60 mg/m² PO 每 4-6 週
     - 止吐預防（Maropitant）
     - 食慾刺激劑（Mirtazapine 1.88 mg 經皮每 48 小時）
-
 prognosis:
-  general: "貓淋巴瘤（高分級）CHOP 方案中位生存時間約 6-9 個月。小細胞淋巴瘤以 Chlorambucil + Prednisolone 治療中位生存時間可達 2-3 年。注射部位肉瘤術後化療可延長無疾病間期。"
-
+  general: 貓淋巴瘤（高分級）CHOP 方案中位生存時間約 6-9 個月。小細胞淋巴瘤以 Chlorambucil + Prednisolone 治療中位生存時間可達 2-3 年。注射部位肉瘤術後化療可延長無疾病間期。
 prevention:
   - 嚴格遵守貓禁忌藥物清單
   - 密切監測腎功能
   - 化療排泄物安全處理
-
-
 guidelineRefs:
-  - sourceOrg: "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)"
-    title: "2022 Update of the Consensus on the Rational Use of Antithrombotics and Thrombolytics in Veterinary Critical Care (CURATIVE) Domain 6: Defining rational use of thrombolytics."
+  - sourceOrg: 'Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)'
+    title: >-
+      2022 Update of the Consensus on the Rational Use of Antithrombotics and Thrombolytics in Veterinary Critical Care
+      (CURATIVE) Domain 6: Defining rational use of thrombolytics.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9544803/
     type: consensus
-    pmid: "35881647"
+    pmid: '35881647'
   - sourceOrg: Pathogens (Basel, Switzerland)
-    title: "Efficacy of GS-441524 for Feline Infectious Peritonitis: A Systematic Review (2018-2024)."
+    title: 'Efficacy of GS-441524 for Feline Infectious Peritonitis: A Systematic Review (2018-2024).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12298711/
     type: review
-    pmid: "40732763"
+    pmid: '40732763'
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Hypoadrenocorticism in cats: a 40-year update."
+    title: 'Hypoadrenocorticism in cats: a 40-year update.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11437538/
     type: review
-    pmid: "39325772"
+    pmid: '39325772'
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: "Anesthesia update - Incorporating methadone into companion animal anesthesia and analgesic protocols: A narrative review."
+    title: >-
+      Anesthesia update - Incorporating methadone into companion animal anesthesia and analgesic protocols: A narrative
+      review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10581351/
     type: review
-    pmid: "37915778"
+    pmid: '37915778'
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
-    title: "In-hospital medical management of feline urethral obstruction: A review of recent clinical research."
+    title: 'In-hospital medical management of feline urethral obstruction: A review of recent clinical research.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7236633/
     type: review
-    pmid: "32675811"
+    pmid: '32675811'
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+  - symptomId: vomiting
+    frequency: uncommon
+  - symptomId: diarrhoea
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 貓化學治療方案 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - weakness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 化療前評估
+          notes: CBC、完整生化（特別注意 BUN、Creatinine）、尿液分析。FeLV/FIV 檢測。心臟超音波（Doxorubicin 前）
+        - name: 化療中監測
+          notes: 每次化療前 CBC 及腎功能。Doxorubicin 使用期間密切監測腎功能。嗜中性球 >1,500/μL 方可進行
+ddxSource: auto-generated

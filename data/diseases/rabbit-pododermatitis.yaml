@@ -3,16 +3,15 @@ nameEn: Rabbit Pododermatitis
 nameZh: 兔足底皮膚炎
 bodySystem: dermatology
 description: 兔後足跗關節蹠面因壓力、摩擦或不當底材導致的慢性皮膚損傷與發炎。從輕微脫毛到嚴重潰瘍性蜂窩織炎不等，為籠養兔極為常見的問題，肥胖兔與雷克斯品種尤其好發。
-
 aliases:
-  - { alias: "兔足底皮膚炎", language: zh }
-  - { alias: "Rabbit Pododermatitis", language: en }
-
+  - alias: 兔足底皮膚炎
+    language: zh
+  - alias: Rabbit Pododermatitis
+    language: en
 species:
   - speciesCommon: rabbit
     prevalence: uncommon
     notes: 兔可受此疾病影響。
-
 etiology:
   categories:
     - name: 壓力性/機械性
@@ -27,7 +26,6 @@ etiology:
         - 大型品種
         - 後肢肌肉量不足（活動少）
         - 指甲過長改變足部力學
-
 clinicalSigns:
   early:
     - 足底脫毛
@@ -39,14 +37,12 @@ clinicalSigns:
     - 蜂窩織炎（腫脹、發熱）
     - 深層感染（骨髓炎）
     - 跛行
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 依嚴重度分級（I-V 級）。I 級脫毛/輕微紅→V 級深層骨髓炎。
     - name: X 光
       notes: 嚴重病例排除骨髓炎。
-
 treatment:
   principles:
     - 改善底材環境為首要
@@ -60,41 +56,79 @@ treatment:
     - 繃帶保護（嚴重者）
     - 減重計畫
     - 全身性抗生素（深層感染時）
-
 prognosis: 輕度（I-II 級）經環境改善與局部治療預後良好。III 級需較長期治療。IV-V 級合併深層感染或骨髓炎預後差，可能需截肢。肥胖兔減重為長期關鍵。
-
-
 guidelineRefs:
   - sourceOrg: Veterinary medicine international
-    title: A Randomized, Placebo-Controlled, Blinded Clinical Trial Evaluating PCSO-524 as an Adjunctive Therapy for Noninfectious Pododermatitis in Rabbits.
+    title: >-
+      A Randomized, Placebo-Controlled, Blinded Clinical Trial Evaluating PCSO-524 as an Adjunctive Therapy for
+      Noninfectious Pododermatitis in Rabbits.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12767454/
     type: research
-    pmid: "41497368"
+    pmid: '41497368'
     relevance: supporting
   - sourceOrg: Frontiers in veterinary science
-    title: Staphylococcus aureus characterization in commercial rabbit farms reveals high genetic diversity and widespread antimicrobial resistance.
+    title: >-
+      Staphylococcus aureus characterization in commercial rabbit farms reveals high genetic diversity and widespread
+      antimicrobial resistance.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12613231/
     type: research
-    pmid: "41246276"
+    pmid: '41246276'
     relevance: supporting
-  - sourceOrg: "Animals : an open access journal from MDPI"
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Investigations on the Influence of Floor Design on Dirtiness and Foot Pad Lesions in Growing Rabbits.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6617535/
     type: research
-    pmid: "31197098"
+    pmid: '31197098'
     relevance: supporting
   - sourceOrg: International journal of paleopathology
-    title: "Pathological and sub-pathological changes in European rabbit bones: Two reference cases to be applied to the analysis of archaeological assemblages."
+    title: >-
+      Pathological and sub-pathological changes in European rabbit bones: Two reference cases to be applied to the
+      analysis of archaeological assemblages.
     url: https://pubmed.ncbi.nlm.nih.gov/34218136/
     type: research
-    pmid: "34218136"
+    pmid: '34218136'
     relevance: supporting
   - sourceOrg: Preventive veterinary medicine
     title: Progression and risk factors of pododermatitis in part-time group housed rabbit does in Switzerland.
     url: https://pubmed.ncbi.nlm.nih.gov/30935506/
     type: research
-    pmid: "30935506"
+    pmid: '30935506'
     relevance: supporting
 pubmedQueries:
   - query: '"Rabbit Pododermatitis" AND (veterinary OR rabbit) AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-gain
+    frequency: uncommon
+  - symptomId: hyperthermia
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: uncommon
+  - symptomId: alopecia
+    frequency: common
+diagnosticAlgorithm:
+  title: 兔足底皮膚炎 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-gain 相關症狀
+        - hyperthermia 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 依嚴重度分級（I-V 級）。I 級脫毛/輕微紅→V 級深層骨髓炎。
+        - name: X 光
+          notes: 嚴重病例排除骨髓炎。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 改善底材環境為首要
+        - 依嚴重度分級治療
+        - 控制體重
+ddxSource: auto-generated

@@ -3,23 +3,26 @@ nameEn: Canine Hypothyroidism
 nameZh: 犬甲狀腺功能低下
 bodySystem: endocrine
 description: 甲狀腺荷爾蒙分泌不足導致的代謝功能低下疾病，為犬最常見的內分泌疾病，主要由淋巴球性甲狀腺炎或特發性甲狀腺萎縮引起。
-
 aliases:
-  - { alias: Hypothyroidism, language: en }
-  - { alias: Underactive Thyroid, language: en }
-  - { alias: 甲低, language: zh }
-  - { alias: 甲狀腺低下, language: zh }
-
+  - alias: Hypothyroidism
+    language: en
+  - alias: Underactive Thyroid
+    language: en
+  - alias: 甲低
+    language: zh
+  - alias: 甲狀腺低下
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
-    notes: 犬最常見的內分泌疾病。好發中年至老年犬 (4-10 歲)。好發品種 — Golden Retriever、Labrador Retriever、Doberman Pinscher、Irish Setter、Cocker Spaniel、Dachshund、Boxer、Great Dane。中大型犬較好發。
+    notes: >-
+      犬最常見的內分泌疾病。好發中年至老年犬 (4-10 歲)。好發品種 — Golden Retriever、Labrador Retriever、Doberman Pinscher、Irish Setter、Cocker
+      Spaniel、Dachshund、Boxer、Great Dane。中大型犬較好發。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓自發性甲低極罕見。醫源性甲低可見於甲亢治療後 (放射碘或手術後)。
-
 etiology:
   categories:
     - name: 原發性甲狀腺功能低下 (>95%)
@@ -36,9 +39,10 @@ etiology:
         - 甲狀腺發育不全
         - 甲狀腺荷爾蒙合成障礙 (dyshormonogenesis)
         - 先天性呆小症 (Cretinism — 幼犬，罕見)
-
-pathophysiology: 原發性甲低中，淋巴球性甲狀腺炎為 T 細胞介導的自體免疫反應，抗甲狀腺球蛋白抗體 (TgAA) 可偵測到。進行性破壞甲狀腺濾泡，當 >75% 甲狀腺組織被破壞時才出現臨床症狀。甲低導致全身代謝率降低：基礎代謝率下降→體重增加；皮膚代謝減緩→被毛脫落、皮膚增厚 (黏液水腫)；脂質代謝異常→高膽固醇與高三酸甘油酯；心血管→心搏過緩、心輸出量下降；神經肌肉→周邊神經病變、肌無力。甲狀腺荷爾蒙對幾乎所有器官系統均有影響，因此甲低表現多樣且非特異性。
-
+pathophysiology: >-
+  原發性甲低中，淋巴球性甲狀腺炎為 T 細胞介導的自體免疫反應，抗甲狀腺球蛋白抗體 (TgAA) 可偵測到。進行性破壞甲狀腺濾泡，當 >75%
+  甲狀腺組織被破壞時才出現臨床症狀。甲低導致全身代謝率降低：基礎代謝率下降→體重增加；皮膚代謝減緩→被毛脫落、皮膚增厚
+  (黏液水腫)；脂質代謝異常→高膽固醇與高三酸甘油酯；心血管→心搏過緩、心輸出量下降；神經肌肉→周邊神經病變、肌無力。甲狀腺荷爾蒙對幾乎所有器官系統均有影響，因此甲低表現多樣且非特異性。
 clinicalSigns:
   early:
     - 嗜睡/活動力下降
@@ -60,28 +64,26 @@ clinicalSigns:
     - 嚴重心搏過緩與心律不整
     - 角膜脂質沉積
     - 不孕/異常發情週期
-
 diagnosis:
   primaryTests:
     - name: 總 T4 (Total T4)
-      notes: "篩檢首選。低 T4 提示甲低但不能確診 (非甲狀腺疾病低下症候群 Euthyroid Sick Syndrome/NTIS 可造成假性低下)。正常 T4 基本排除甲低"
+      notes: 篩檢首選。低 T4 提示甲低但不能確診 (非甲狀腺疾病低下症候群 Euthyroid Sick Syndrome/NTIS 可造成假性低下)。正常 T4 基本排除甲低
     - name: 游離 T4 (Free T4 by Equilibrium Dialysis)
-      notes: "較 T4 準確，較不受 NTIS 影響。T4 低但臨床不典型時追加。確診參考"
+      notes: 較 T4 準確，較不受 NTIS 影響。T4 低但臨床不典型時追加。確診參考
     - name: TSH (犬 TSH)
-      notes: "原發性甲低時升高 (陰性回饋喪失)。但約 20-40% 甲低犬 TSH 正常 (敏感度不足)。T4 低 + TSH 高 = 確診把握最高"
+      notes: 原發性甲低時升高 (陰性回饋喪失)。但約 20-40% 甲低犬 TSH 正常 (敏感度不足)。T4 低 + TSH 高 = 確診把握最高
     - name: 抗甲狀腺球蛋白抗體 (TgAA)
-      notes: "陽性支持淋巴球性甲狀腺炎診斷。但不能單獨用於確診。可用於品種篩檢"
+      notes: 陽性支持淋巴球性甲狀腺炎診斷。但不能單獨用於確診。可用於品種篩檢
   imaging:
     - name: 頸部超音波
-      notes: "甲狀腺萎縮 (體積縮小、低回音)。排除甲狀腺腫塊"
+      notes: 甲狀腺萎縮 (體積縮小、低回音)。排除甲狀腺腫塊
     - name: 心電圖
-      notes: "竇性心搏過緩、低電壓"
+      notes: 竇性心搏過緩、低電壓
   additional:
     - 生化 (高膽固醇、高三酸甘油酯 — 約 75% 甲低犬)
     - CBC (輕度非再生性貧血 — 約 30%)
     - 皮膚切片 (非特異性：角化過度、毛囊萎縮、黏液沉積)
     - 神經學檢查 (周邊神經病變評估)
-
 treatment:
   principles:
     - Levothyroxine (合成 T4) 終身口服替代治療
@@ -90,10 +92,10 @@ treatment:
     - 正確診斷至關重要 (避免 NTIS 誤診)
   medications:
     - name: Levothyroxine Sodium (Soloxine, Thyro-Tabs)
-      dose: "0.02 mg/kg (20 μg/kg) PO BID (起始)。大型犬可從 0.01 mg/kg BID 開始。最大起始劑量 0.8 mg/dose"
+      dose: 0.02 mg/kg (20 μg/kg) PO BID (起始)。大型犬可從 0.01 mg/kg BID 開始。最大起始劑量 0.8 mg/dose
       notes: 唯一推薦治療藥物。大多數犬 BID 較佳，部分穩定後可轉 SID。與食物同服可能降低吸收 (但一致性比空腹更重要)。品牌製劑較學名藥穩定
     - name: Liothyronine (T3)
-      dose: "4-6 μg/kg PO TID"
+      dose: 4-6 μg/kg PO TID
       notes: 極少使用。僅在 T4 轉換為 T3 障礙的罕見情況 (無確實證據)。半衰期短需 TID 給藥
   general:
     - 治療後 4-6 週抽血複檢 (給藥後 4-6 小時 peak T4)
@@ -102,11 +104,12 @@ treatment:
     - 穩定後每 6-12 個月複檢
     - 體重管理 (低卡飲食搭配漸進增加運動)
     - 心臟病犬從低劑量開始 (0.005 mg/kg BID)，漸增
-
-emergencyNotes: 黏液水腫昏迷 (Myxedema Coma) 為極罕見但致命急症 — 表現為嚴重低體溫、意識改變/昏迷、心搏過緩、低血壓、低通氣。治療：Levothyroxine 靜脈注射 (5 μg/kg IV q12h)、保暖 (緩慢回溫)、靜脈輸液、皮質類固醇 (Dexamethasone 0.1 mg/kg IV — 排除腎上腺危象)、呼吸支持。
-
-prognosis: 預後極佳。Levothyroxine 替代治療下犬可恢復正常生活品質與壽命。治療為終身性。嗜睡與活力改善最快 (1-2 週)。皮膚與被毛完全恢復可能需數月。神經症狀多數可恢復但可能需數週至數月。淋巴球性甲狀腺炎犬的對側甲狀腺最終也可能受累。
-
+emergencyNotes: >-
+  黏液水腫昏迷 (Myxedema Coma) 為極罕見但致命急症 — 表現為嚴重低體溫、意識改變/昏迷、心搏過緩、低血壓、低通氣。治療：Levothyroxine 靜脈注射 (5 μg/kg IV q12h)、保暖
+  (緩慢回溫)、靜脈輸液、皮質類固醇 (Dexamethasone 0.1 mg/kg IV — 排除腎上腺危象)、呼吸支持。
+prognosis: >-
+  預後極佳。Levothyroxine 替代治療下犬可恢復正常生活品質與壽命。治療為終身性。嗜睡與活力改善最快 (1-2
+  週)。皮膚與被毛完全恢復可能需數月。神經症狀多數可恢復但可能需數週至數月。淋巴球性甲狀腺炎犬的對側甲狀腺最終也可能受累。
 guidelineRefs:
   - sourceOrg: ACVIM
     title: ACVIM Consensus Statement — Diagnosis and Treatment of Canine Hypothyroidism
@@ -117,25 +120,101 @@ guidelineRefs:
     url: https://www.ecvim-ca.org
     type: guideline
   - sourceOrg: Journal of veterinary internal medicine
-    title: "Recombinant human thyrotropin in veterinary medicine: current use and future perspectives."
+    title: 'Recombinant human thyrotropin in veterinary medicine: current use and future perspectives.'
     url: https://pubmed.ncbi.nlm.nih.gov/22676297/
     type: review
-    pmid: "22676297"
+    pmid: '22676297'
   - sourceOrg: The Veterinary clinics of North America. Small animal practice
     title: Epidemiology of thyroid diseases of dogs and cats.
     url: https://pubmed.ncbi.nlm.nih.gov/8053107/
     type: review
-    pmid: "8053107"
+    pmid: '8053107'
   - sourceOrg: Open veterinary journal
-    title: "Scales in a dog after levothyroxine sodium treatment: A case report."
+    title: 'Scales in a dog after levothyroxine sodium treatment: A case report.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11560264/
     type: case-report
-    pmid: "39545197"
+    pmid: '39545197'
 pubmedQueries:
   - query: '"hypothyroidism" AND (dog OR canine) AND ("diagnosis" OR "levothyroxine" OR "treatment")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "END"
-  sectionTitle: "HYPOTHYROIDISM"
+  chapter: END
+  sectionTitle: HYPOTHYROIDISM
   pdfPage: 594
+diagnosticAlgorithm:
+  title: 甲狀腺功能低下 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估皮膚變化、體重增加及精神狀態
+      findings:
+        - 體重增加
+        - 對稱性非搔癢性脫毛
+        - 皮膚增厚（黏液水腫）
+        - 精神遲鈍
+    - step: 2
+      action: 甲狀腺功能檢測
+      details: 測量血清總T4、游離T4及TSH
+      findings:
+        - 血清總T4降低
+        - 游離T4降低
+        - TSH升高
+        - 抗甲狀腺球蛋白抗體陽性
+    - step: 3
+      action: 血液生化輔助
+      details: CBC及血清生化檢查尋找支持證據
+      findings:
+        - 輕度非再生性貧血
+        - 高膽固醇血症
+        - 高三酸甘油酯血症
+        - 肌酸激酶輕度升高
+    - step: 4
+      action: 鑑別排除
+      details: 排除非甲狀腺疾病造成的低T4
+      findings:
+        - 排除藥物影響（類固醇、磺胺類）
+        - 排除嚴重全身性疾病（病態甲狀腺症候群）
+        - 甲狀腺補充試驗性治療反應評估
+clinicalPearls:
+  - 「低T4綜合症」：其他疾病可假性降低T4
+  - TSH+T4同時測定更準確
+  - 治療後精神狀態通常首先改善
+  - 心肌病變和神經症狀治療後可改善
+monitoringItems:
+  - T4（給藥後4-6小時）
+  - TSH
+  - 臨床症狀
+  - 體重
+associatedSymptoms:
+  - symptomId: weight-gain
+    frequency: common
+  - symptomId: regurgitation
+    frequency: common
+  - symptomId: constipation
+    frequency: common
+  - symptomId: exercise-intolerance
+    frequency: common
+  - symptomId: alopecia
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: rare
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: head-tilt
+    frequency: uncommon
+  - symptomId: peripheral-oedema
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: rare
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: facial-nerve-paralysis
+    frequency: uncommon
+ddxSource: book

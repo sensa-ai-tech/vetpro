@@ -3,18 +3,19 @@ nameEn: Avian Teflon Fume Fever
 nameZh: 禽類鐵氟龍煙霧熱
 bodySystem: toxicology
 description: 鐵氟龍煙霧熱為鳥類吸入加熱 PTFE 塗層釋放的有毒氣體後發生的急性致死性中毒反應。鳥類獨特的高效呼吸系統使其較哺乳動物敏感數百倍。
-
 aliases:
-  - { alias: 鳥類鐵氟龍熱, language: zh }
-  - { alias: PTFE 煙霧熱, language: zh }
-  - { alias: Teflon fume intoxication in birds, language: en }
-  - { alias: PTFE thermal decomposition toxicity, language: en }
-
+  - alias: 鳥類鐵氟龍熱
+    language: zh
+  - alias: PTFE 煙霧熱
+    language: zh
+  - alias: Teflon fume intoxication in birds
+    language: en
+  - alias: PTFE thermal decomposition toxicity
+    language: en
 species:
   - speciesCommon: bird
     prevalence: moderate
     notes: 所有鳥種均極度敏感。鳥類肺部的交叉流氣體交換與氣囊系統使有毒氣體快速且廣泛接觸呼吸上皮。家庭中飼養在廚房附近的鳥最高風險。
-
 etiology:
   categories:
     - name: 暴露情境
@@ -29,7 +30,6 @@ etiology:
         - 碳醯氟（COF2）
         - 氟化氫（HF）
         - 超微粒子（<100nm）直接損傷肺泡
-
 clinicalSigns:
   early:
     - 突然死亡（最常見的「症狀」）
@@ -42,20 +42,18 @@ clinicalSigns:
     - 從棲木跌落
     - 痙攣
     - 數分鐘內死亡
-
 diagnosis:
   primaryTests:
     - name: 暴露史與環境調查
-      notes: "詢問烹飪活動、使用的鍋具種類、通風狀況。多隻鳥同時發病或死亡高度提示"
+      notes: 詢問烹飪活動、使用的鍋具種類、通風狀況。多隻鳥同時發病或死亡高度提示
     - name: 剖檢病理
-      notes: "雙側肺嚴重充血水腫、出血。氣囊充血。其他器官通常無明顯病變"
+      notes: 雙側肺嚴重充血水腫、出血。氣囊充血。其他器官通常無明顯病變
   differentialDiagnoses:
     - 一氧化碳中毒
     - 其他有毒氣體吸入
     - 急性感染
     - 心臟性猝死
     - 農藥中毒
-
 treatment:
   medical:
     - 立即移至通風良好的新鮮空氣區域
@@ -64,13 +62,37 @@ treatment:
     - Furosemide 0.1-0.15 mg/kg IM（減少肺水腫）
     - Butorphanol 1-2 mg/kg IM（止痛鎮靜）
     - 保溫與最小化處置應激
-
 prognosis:
-  general: "預後極差。絕大多數病例在發現前已死亡。存活者可能有永久性肺部損傷。唯一有效策略是預防暴露。"
-
+  general: 預後極差。絕大多數病例在發現前已死亡。存活者可能有永久性肺部損傷。唯一有效策略是預防暴露。
 prevention:
   - 禁止在有鳥類的家庭使用 PTFE 塗層廚具
   - 改用不鏽鋼、鑄鐵、陶瓷鍋具
   - 鳥類飼養空間必須遠離廚房
   - 維持良好通風
   - 告知所有家庭成員 PTFE 的危險性
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: seizures
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類鐵氟龍煙霧熱 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - dyspnoea 相關症狀
+        - seizures 相關症狀
+        - pallor-cyanosis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 暴露史與環境調查
+          notes: 詢問烹飪活動、使用的鍋具種類、通風狀況。多隻鳥同時發病或死亡高度提示
+        - name: 剖檢病理
+          notes: 雙側肺嚴重充血水腫、出血。氣囊充血。其他器官通常無明顯病變
+ddxSource: auto-generated

@@ -3,12 +3,13 @@ nameEn: Lung Lobe Torsion
 nameZh: 肺葉扭轉
 bodySystem: respiratory
 description: 肺葉沿其支氣管血管蒂發生旋轉，導致靜脈回流受阻、肺葉充血壞死及胸腔積液。為需要緊急外科介入的胸腔急症。深胸犬種 (如阿富汗獵犬) 及存在胸腔積液的犬貓為高風險族群。
-
 aliases:
-  - { alias: LLT, language: en }
-  - { alias: Pulmonary Lobe Torsion, language: en }
-  - { alias: 肺扭轉, language: zh }
-
+  - alias: LLT
+    language: en
+  - alias: Pulmonary Lobe Torsion
+    language: en
+  - alias: 肺扭轉
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -18,7 +19,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓罕見，但可發生。通常繼發於胸腔積液或膈疝。
-
 etiology:
   categories:
     - name: 原發性 (自發性)
@@ -39,7 +39,6 @@ etiology:
         - 靜脈回流受阻 → 肺葉充血、水腫
         - 動脈供血初期維持 → 肺葉出血性壞死
         - 支氣管阻塞 → 肺葉不張後充血
-
 clinicalSigns:
   early:
     - 急性呼吸困難
@@ -59,26 +58,24 @@ clinicalSigns:
     - 咳血 (hemoptysis)
     - 敗血症 (肺葉壞死繼發)
     - 休克
-
 diagnosis:
   primaryTests:
     - name: 胸腔 X 光
-      notes: "特徵性表現：不透明肺葉伴 vesicular pattern (肺泡氣體滯留)、支氣管截斷征 (bronchial cutoff)、肺葉位移、胸腔積液。受累肺葉呈均勻不透明且體積可能增大"
+      notes: 特徵性表現：不透明肺葉伴 vesicular pattern (肺泡氣體滯留)、支氣管截斷征 (bronchial cutoff)、肺葉位移、胸腔積液。受累肺葉呈均勻不透明且體積可能增大
     - name: 胸腔超音波
-      notes: "偵測胸腔積液、肺葉實變。受累肺葉呈肝化 (hepatization) 樣回音"
+      notes: 偵測胸腔積液、肺葉實變。受累肺葉呈肝化 (hepatization) 樣回音
     - name: 胸腔積液分析
-      notes: "通常為血性或血清血性變性漏出液。可含大量紅血球及反應性間皮細胞"
+      notes: 通常為血性或血清血性變性漏出液。可含大量紅血球及反應性間皮細胞
   imaging:
     - name: 胸腔 CT (增強)
-      notes: "金標準影像。可見支氣管扭轉、受累肺葉無增強或異常增強模式。明確定位受累肺葉"
+      notes: 金標準影像。可見支氣管扭轉、受累肺葉無增強或異常增強模式。明確定位受累肺葉
     - name: 支氣管鏡
-      notes: "可見支氣管腔扭轉閉塞。但通常 CT 或手術直視即可確診"
+      notes: 可見支氣管腔扭轉閉塞。但通常 CT 或手術直視即可確診
   additional:
     - CBC (嗜中性球增多、左移)
     - 生化 (評估全身狀態)
     - 凝血功能 (術前評估)
     - 抽液後重拍 X 光 (更清楚顯示受累肺葉)
-
 treatment:
   principles:
     - 肺葉扭轉為外科急症，確診後應儘速手術
@@ -87,13 +84,13 @@ treatment:
     - 術前穩定患者、矯正凝血異常
   medications:
     - name: 廣效抗生素
-      dose: "Ampicillin-Sulbactam 30 mg/kg IV TID + Enrofloxacin 5 mg/kg IV SID"
+      dose: Ampicillin-Sulbactam 30 mg/kg IV TID + Enrofloxacin 5 mg/kg IV SID
       notes: 預防壞死肺組織繼發感染及敗血症
     - name: 止痛
-      dose: "Methadone 0.1-0.3 mg/kg IV q4h 或 Fentanyl CRI 2-5 μg/kg/h"
+      dose: Methadone 0.1-0.3 mg/kg IV q4h 或 Fentanyl CRI 2-5 μg/kg/h
       notes: 術前及術後疼痛管理
     - name: 輸液治療
-      dose: "Lactated Ringer's solution 依脫水及休克程度調整"
+      dose: Lactated Ringer's solution 依脫水及休克程度調整
       notes: 維持循環穩定。避免過量輸液加重胸腔積液
   general:
     - 術前胸腔穿刺引流積液 (緩解呼吸窘迫)
@@ -103,44 +100,89 @@ treatment:
     - 術後胸管引流 12-24 小時
     - 術後監測：呼吸、X 光追蹤、併發症觀察
     - 處理原發病因 (胸腔積液根本原因)
-
 emergencyNotes: 肺葉扭轉為外科急症。呼吸窘迫時先行胸腔穿刺引流積液穩定。切勿延遲手術。術前備血。嚴重凝血異常需先矯正再手術。壞死肺葉復位可導致致命性再灌流損傷，禁止嘗試。
-
 prognosis: 及時手術治療預後良好至佳，存活率約 55-70%。原發性 (自發性) 扭轉手術後預後優於繼發性。術後併發症包括出血、繼發性肺葉扭轉 (對側)、膿胸。延遲手術、合併敗血症或 DIC 預後較差。阿富汗獵犬有對側肺葉扭轉的風險需長期追蹤。
-
 guidelineRefs:
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Lung lobe torsion in dogs: 22 cases (1981-1999)"
+    title: 'Lung lobe torsion in dogs: 22 cases (1981-1999)'
     url: https://pubmed.ncbi.nlm.nih.gov/11497043/
     type: research
-    pmid: "11497043"
+    pmid: '11497043'
   - sourceOrg: Veterinary Surgery
     title: Lung lobe torsion in 35 dogs and 4 cats
     url: https://pubmed.ncbi.nlm.nih.gov/27859461/
     type: research
-    pmid: "27859461"
+    pmid: '27859461'
   - sourceOrg: Journal of Veterinary Internal Medicine
-    title: "Lung lobe torsion in dogs and cats: 24 cases (2000-2017)"
+    title: 'Lung lobe torsion in dogs and cats: 24 cases (2000-2017)'
     url: https://pubmed.ncbi.nlm.nih.gov/30645777/
     type: research
-    pmid: "30645777"
-  - sourceOrg: "Animals : an open access journal from MDPI"
-    title: "Point-of-Care Lung Ultrasound in Small Animal Emergency and Critical Care Medicine: A Clinical Review."
+    pmid: '30645777'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
+    title: 'Point-of-Care Lung Ultrasound in Small Animal Emergency and Critical Care Medicine: A Clinical Review.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11718948/
     type: review
-    pmid: "39795049"
+    pmid: '39795049'
     relevance: primary
   - sourceOrg: Journal of feline medicine and surgery
-    title: "Clinical characteristics and long-term outcome of lung lobe torsions in cats: a review of 10 cases (2000-2021)."
+    title: 'Clinical characteristics and long-term outcome of lung lobe torsions in cats: a review of 10 cases (2000-2021).'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10812318/
     type: review
-    pmid: "34719995"
+    pmid: '34719995'
     relevance: primary
 pubmedQueries:
   - query: '"lung lobe torsion" AND (dog OR canine OR cat OR feline) AND ("surgery" OR "lobectomy" OR "diagnosis")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "DIG"
-  sectionTitle: "Hepatic Lobe Torsion"
+  chapter: DIG
+  sectionTitle: Hepatic Lobe Torsion
   pdfPage: 391
+diagnosticAlgorithm:
+  title: 肺葉扭轉 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估急性呼吸困難、咳嗽和精神沉鬱，注意大型深胸犬（阿富汗獵犬）和巴哥犬好發
+      findings:
+        - 急性或亞急性呼吸困難
+        - 非生產性咳嗽
+        - 精神沉鬱和食慾下降
+    - step: 2
+      action: 影像學檢查
+      details: 進行胸腔X光評估肺葉位置和充氣狀態，注意胸腔積液
+      findings:
+        - 受累肺葉不透明度增加伴氣管偏移
+        - 胸腔積液
+        - 受累肺葉支氣管走向異常
+    - step: 3
+      action: 進階影像與確診
+      details: CT血管造影或支氣管鏡確認肺葉扭轉，胸腔積液分析
+      findings:
+        - CT顯示受累肺葉血管中斷和扭轉
+        - 支氣管鏡見支氣管阻塞或扭曲
+        - 胸腔積液為血性或乳糜樣
+clinicalPearls:
+  - 右中葉（right middle lobe）是犬最常發生扭轉的肺葉，因為其蒂部較長且纖細
+  - 胸腔積液引流後呼吸仍未顯著改善是高度提示肺葉扭轉的臨床線索
+  - 手術中必須先結紮血管蒂再解除扭轉，避免再灌注損傷和毒素釋放導致全身性反應
+  - Afghan Hound 發生自發性肺葉扭轉的風險特別高，飼主教育很重要
+  - Pug 雖為小型犬，但在報告中肺葉扭轉的發生率並不低，臨床上不應因體型而排除此診斷
+monitoringItems:
+  - 術後密切監測呼吸速率和型態、血氧飽和度（SpO2）
+  - 胸腔引流管的引流量、性質和氣密性
+  - 術後 24-72 小時重複胸部 X 光評估殘餘肺葉膨脹情形
+  - CBC 和生化追蹤：評估感染控制和器官功能恢復
+  - 長期追蹤：定期胸部 X 光監測有無復發（尤其高風險品種）
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: common
+  - symptomId: tachycardia-bradycardia
+    frequency: common
+  - symptomId: dehydration
+    frequency: common
+ddxSource: book

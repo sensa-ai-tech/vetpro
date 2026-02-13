@@ -3,18 +3,19 @@ nameEn: Avian Bumblefoot
 nameZh: 禽類趾瘤病
 bodySystem: dermatology
 description: 趾瘤病（Bumblefoot）是禽類足底的慢性壓力性皮膚炎與感染，正式名稱為足底皮膚炎（Pododermatitis）。常因不適當的棲木、肥胖或活動不足導致足底壓力異常，繼發細菌感染後形成膿腫。
-
 aliases:
-  - { alias: 足底皮膚炎, language: zh }
-  - { alias: 足底膿腫, language: zh }
-  - { alias: Pododermatitis, language: en }
-  - { alias: Footpad dermatitis, language: en }
-
+  - alias: 足底皮膚炎
+    language: zh
+  - alias: 足底膿腫
+    language: zh
+  - alias: Pododermatitis
+    language: en
+  - alias: Footpad dermatitis
+    language: en
 species:
   - speciesCommon: bird
     prevalence: common
     notes: 猛禽、鸚鵡類、家禽均常見。棲木材質不當、肥胖、活動不足為主要風險因子。大型鳥類發病率較高。
-
 etiology:
   categories:
     - name: 機械性因素
@@ -29,7 +30,6 @@ etiology:
         - Staphylococcus aureus（最常見繼發感染菌）
         - 其他細菌感染
         - 真菌感染（少見）
-
 clinicalSigns:
   early:
     - 足底皮膚發紅、輕度腫脹（Grade I）
@@ -42,7 +42,6 @@ clinicalSigns:
     - 關節腫脹（深部感染擴散）
     - 腱鞘炎
     - 全身性敗血症（嚴重者）
-
 diagnosis:
   primaryTests:
     - name: 足底視診
@@ -51,7 +50,6 @@ diagnosis:
       notes: 膿液培養確認病原菌並指導抗生素選擇
     - name: X 光
       notes: 評估是否侵犯骨骼與關節（骨髓炎）
-
 treatment:
   principles:
     - 分級治療（依嚴重程度）
@@ -67,41 +65,81 @@ treatment:
     - 體重管理
     - 維生素 A 補充
     - 長期棲木環境改善
-
 prognosis: 早期（Grade I-II）預後良好，環境改善即可控制。中度（Grade III）治療後可改善但易復發。重度（Grade IV-V）預後謹慎，深部感染與骨髓炎治療困難。慢性反覆發作需持續環境管理。預防勝於治療。
-
-
 guidelineRefs:
   - sourceOrg: The veterinary quarterly
     title: Review on skeletal disorders caused by Staphylococcus spp. in poultry.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8843168/
     type: review
-    pmid: "35076352"
+    pmid: '35076352'
   - sourceOrg: Infection and drug resistance
-    title: "Methicillin-Resistant Staphylococcus aureus (MRSA): One Health Perspective Approach to the Bacterium Epidemiology, Virulence Factors, Antibiotic-Resistance, and Zoonotic Impact."
+    title: >-
+      Methicillin-Resistant Staphylococcus aureus (MRSA): One Health Perspective Approach to the Bacterium Epidemiology,
+      Virulence Factors, Antibiotic-Resistance, and Zoonotic Impact.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7519829/
     type: review
-    pmid: "33061472"
-  - sourceOrg: "Animals : an open access journal from MDPI"
+    pmid: '33061472'
+  - sourceOrg: 'Animals : an open access journal from MDPI'
     title: Silicone Shoes for the Treatment of Foot Pad Dermatitis (Bumblefoot) in Pet Chickens-A Retrospective Case Series.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11394303/
     type: case-report
-    pmid: "39272366"
+    pmid: '39272366'
   - sourceOrg: Veterinary sciences
-    title: The Comparative Anatomy of the Metatarsal Foot Pad in Eight Species of Birds of Prey and Owls with Regard to the Development of Pododermatitis.
+    title: >-
+      The Comparative Anatomy of the Metatarsal Foot Pad in Eight Species of Birds of Prey and Owls with Regard to the
+      Development of Pododermatitis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12115593/
     type: research
-    pmid: "40431591"
+    pmid: '40431591'
   - sourceOrg: PloS one
     title: AA-Amyloidosis in the Eurasian stone-curlew (Burhinus oedicnemus).
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12404442/
     type: research
-    pmid: "40892784"
+    pmid: '40892784'
   - sourceOrg: Poultry science
-    title: Impact of feeding a high fiber diet and roughage on stress and clinical welfare indicators in fast-growing broiler breeder pullets.
+    title: >-
+      Impact of feeding a high fiber diet and roughage on stress and clinical welfare indicators in fast-growing broiler
+      breeder pullets.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12547728/
     type: research
-    pmid: "41077033"
+    pmid: '41077033'
 pubmedQueries:
   - query: '"bumblefoot" OR "pododermatitis" AND (avian OR bird OR raptor) AND (treatment OR management)'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: polyarthritis
+    frequency: uncommon
+  - symptomId: weight-gain
+    frequency: uncommon
+  - symptomId: lameness
+    frequency: common
+  - symptomId: cutaneous-masses
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 禽類趾瘤病 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - polyarthritis 相關症狀
+        - weight-gain 相關症狀
+        - lameness 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 足底視診
+          notes: 分級評估（Grade I-V）。評估腫脹程度、潰瘍深度、結痂範圍
+        - name: 細菌培養與藥敏
+          notes: 膿液培養確認病原菌並指導抗生素選擇
+        - name: X 光
+          notes: 評估是否侵犯骨骼與關節（骨髓炎）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 分級治療（依嚴重程度）
+        - 改善飼養環境
+        - 減輕足底壓力
+ddxSource: auto-generated

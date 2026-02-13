@@ -3,13 +3,15 @@ nameEn: Nasal Chondrosarcoma
 nameZh: 鼻腔軟骨肉瘤
 bodySystem: oncology
 description: 起源於鼻腔或副鼻竇軟骨組織的惡性腫瘤，為犬鼻腔腫瘤中第二常見的間葉組織腫瘤。局部侵襲性強但轉移率低於腺癌，放射治療預後相對較好。
-
 aliases:
-  - { alias: 鼻軟骨肉瘤, language: zh }
-  - { alias: 鼻竇軟骨肉瘤, language: zh }
-  - { alias: Nasal Chondrosarcoma, language: en }
-  - { alias: Sinonasal Chondrosarcoma, language: en }
-
+  - alias: 鼻軟骨肉瘤
+    language: zh
+  - alias: 鼻竇軟骨肉瘤
+    language: zh
+  - alias: Nasal Chondrosarcoma
+    language: en
+  - alias: Sinonasal Chondrosarcoma
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓鼻腔軟骨肉瘤少見。貓鼻腔腫瘤仍以淋巴瘤及上皮性腫瘤為主。
-
 etiology:
   categories:
     - name: 腫瘤特性
@@ -29,10 +30,9 @@ etiology:
         - 可產生軟骨基質（X 光上可見鈣化灶）
     - name: 分級
       examples:
-        - "分級 I（低度惡性）：分化良好，轉移率低"
-        - "分級 II（中度惡性）：中等分化"
-        - "分級 III（高度惡性）：低分化，行為更具侵襲性"
-
+        - 分級 I（低度惡性）：分化良好，轉移率低
+        - 分級 II（中度惡性）：中等分化
+        - 分級 III（高度惡性）：低分化，行為更具侵襲性
 clinicalSigns:
   early:
     - 單側鼻分泌物
@@ -44,20 +44,18 @@ clinicalSigns:
     - 硬顎變形（腫瘤向腹側生長）
     - 眼球突出
     - 腫瘤侵犯篩板後出現神經症狀
-
 diagnosis:
   primaryTests:
     - name: CT
-      notes: "可見鼻腔內軟組織密度腫塊伴鈣化灶。評估骨骼破壞及篩板完整性"
+      notes: 可見鼻腔內軟組織密度腫塊伴鈣化灶。評估骨骼破壞及篩板完整性
     - name: 組織切片病理學
-      notes: "鼻腔鏡引導下切片或 CT 引導穿刺切片。確認軟骨肉瘤分級"
+      notes: 鼻腔鏡引導下切片或 CT 引導穿刺切片。確認軟骨肉瘤分級
   differentialDiagnoses:
     - 鼻腔腺癌
     - 鼻腔骨肉瘤
     - 鼻曲黴菌感染
     - 鼻腔淋巴瘤
     - 多發性軟骨瘤
-
 treatment:
   medical:
     - 放射治療為主要治療手段
@@ -67,10 +65,31 @@ treatment:
     - 鼻甲骨切除可作為減積手術
     - 單純手術難以達到完全切除
     - 通常需合併放射治療
-
 prognosis:
-  general: "整體預後優於鼻腔腺癌。放射治療後中位生存時間約 18-24 個月。低分級軟骨肉瘤預後更佳。轉移率較低為有利預後因子。"
-
+  general: 整體預後優於鼻腔腺癌。放射治療後中位生存時間約 18-24 個月。低分級軟骨肉瘤預後更佳。轉移率較低為有利預後因子。
 prevention:
   - 慢性單側鼻症狀應及早影像學檢查
   - 早期診斷與治療可改善預後
+associatedSymptoms:
+  - symptomId: sneezing
+    frequency: common
+  - symptomId: epistaxis
+    frequency: common
+diagnosticAlgorithm:
+  title: 鼻腔軟骨肉瘤 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - sneezing 相關症狀
+        - epistaxis 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: CT
+          notes: 可見鼻腔內軟組織密度腫塊伴鈣化灶。評估骨骼破壞及篩板完整性
+        - name: 組織切片病理學
+          notes: 鼻腔鏡引導下切片或 CT 引導穿刺切片。確認軟骨肉瘤分級
+ddxSource: auto-generated

@@ -3,11 +3,11 @@ nameEn: Chronic Lymphocytic Leukemia
 nameZh: 慢性淋巴細胞白血病
 bodySystem: hematology
 description: 慢性淋巴細胞白血病（CLL）為小型成熟淋巴球在骨髓中緩慢增殖並進入周邊血液的低度惡性血液腫瘤。犬隻 CLL 以 T 細胞型較常見。病程緩慢，多數病例在確診時為偶然發現（routine CBC），可長期無臨床症狀。預後較急性白血病顯著好。
-
 aliases:
-  - { alias: CLL, language: en }
-  - { alias: 慢性淋巴性白血病, language: zh }
-
+  - alias: CLL
+    language: en
+  - alias: 慢性淋巴性白血病
+    language: zh
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -15,7 +15,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓隻 CLL 較犬少見。可能與 FeLV 感染相關。
-
 etiology:
   categories:
     - name: 腫瘤來源
@@ -28,7 +27,6 @@ etiology:
         - 骨髓浸潤程度較低（<20% blast）
         - 周邊血液淋巴球計數升高但多為成熟型
         - 緩慢進展
-
 clinicalSigns:
   early:
     - 多數無臨床症狀（偶然 CBC 發現）
@@ -40,54 +38,106 @@ clinicalSigns:
     - 體重減輕
     - 晚期可能出現骨髓衰竭（貧血、感染、出血）
     - 免疫介導性併發症（IMHA、ITP）
-
 diagnosis:
   primaryTests:
     - name: 全血球計數（CBC）與血液抹片
       notes: 持續性淋巴球增多（通常 >20,000/μL），以小型成熟淋巴球為主。區別於 ALL（大型不成熟 blast 細胞）。其他血球系列通常正常。
     - name: 流式細胞儀
       notes: 確認單克隆淋巴球群體，免疫表型（T 細胞 vs B 細胞）。PARR 亦可確認克隆性。
-
 treatment:
   principles:
     - 無症狀時可「觀察等待」（watch and wait）
     - 出現臨床症狀或血球減少時開始治療
     - 化療方案溫和，副作用低
   general:
-    - "觀察等待：無症狀且其他血球正常時定期監測（每 2-3 個月 CBC）"
-    - "開始治療指征：淋巴球 >60,000/μL、貧血、血小板減少、淋巴結顯著腫大、臨床症狀"
-    - "Chlorambucil 4-6 mg/m² PO q48h + Prednisolone 1-2 mg/kg/day（漸減）"
-    - "Cyclophosphamide 50 mg/m² PO q48h 為替代選擇"
-
-prognosis: 犬隻 CLL 預後良好，中位存活時間 1-3 年（部分可超過 5 年）。多數對 Chlorambucil + Prednisolone 反應良好。T 細胞型與 B 細胞型預後相當。轉化為高度惡性（Richter 轉化）罕見但預後差。晚期骨髓衰竭為主要死因。
-
-
+    - 觀察等待：無症狀且其他血球正常時定期監測（每 2-3 個月 CBC）
+    - 開始治療指征：淋巴球 >60,000/μL、貧血、血小板減少、淋巴結顯著腫大、臨床症狀
+    - Chlorambucil 4-6 mg/m² PO q48h + Prednisolone 1-2 mg/kg/day（漸減）
+    - Cyclophosphamide 50 mg/m² PO q48h 為替代選擇
+prognosis: >-
+  犬隻 CLL 預後良好，中位存活時間 1-3 年（部分可超過 5 年）。多數對 Chlorambucil + Prednisolone 反應良好。T 細胞型與 B 細胞型預後相當。轉化為高度惡性（Richter
+  轉化）罕見但預後差。晚期骨髓衰竭為主要死因。
 guidelineRefs:
   - sourceOrg: The British journal of radiology
-    title: "18F-FDG PET or PET/CT in detecting high-grade transformation of chronic lymphocytic leukaemia and indolent lymphomas: a systematic review and meta-analysis."
+    title: >-
+      18F-FDG PET or PET/CT in detecting high-grade transformation of chronic lymphocytic leukaemia and indolent
+      lymphomas: a systematic review and meta-analysis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12012375/
     type: review
-    pmid: "39933018"
-  - sourceOrg: "Cellular &amp; molecular biology letters"
-    title: "Exosome application in treatment and diagnosis of B-cell disorders: leukemias, multiple sclerosis, and arthritis rheumatoid."
+    pmid: '39933018'
+  - sourceOrg: Cellular &amp; molecular biology letters
+    title: >-
+      Exosome application in treatment and diagnosis of B-cell disorders: leukemias, multiple sclerosis, and arthritis
+      rheumatoid.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9446857/
     type: review
-    pmid: "36064322"
+    pmid: '36064322'
   - sourceOrg: Frontiers in medicine
     title: Bruton Tyrosine Kinase Inhibition and Its Role as an Emerging Treatment in Pemphigus.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8382970/
     type: review
-    pmid: "34447768"
+    pmid: '34447768'
   - sourceOrg: Frontiers in oncology
     title: The Genetic and Molecular Basis for Canine Models of Human Leukemia and Lymphoma.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6992561/
     type: review
-    pmid: "32038991"
+    pmid: '32038991'
   - sourceOrg: OncoTargets and therapy
-    title: "Immune checkpoint blockade: the role of PD-1-PD-L axis in lymphoid malignancies."
+    title: 'Immune checkpoint blockade: the role of PD-1-PD-L axis in lymphoid malignancies.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5417656/
     type: review
-    pmid: "28496333"
+    pmid: '28496333'
 pubmedQueries:
   - query: '"chronic lymphocytic leukemia" AND (veterinary OR canine OR feline) AND ("treatment" OR "prognosis")'
     frequency: monthly
+diagnosticAlgorithm:
+  title: 慢性淋巴球性白血病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估漸進性症狀和血液學異常
+      findings:
+        - 多數偶然發現（常規血檢）
+        - 漸進性虛弱和體重減輕
+        - 脾臟或肝臟腫大
+        - 淋巴結可能正常或輕度腫大
+    - step: 2
+      action: 血液學檢查
+      details: 進行全血計數和血液抹片評估
+      findings:
+        - 持續性成熟淋巴球增多（>20,000/μL）
+        - 淋巴球形態成熟
+        - 可能伴貧血或血小板減少
+        - 籃球細胞（basket cells）
+    - step: 3
+      action: 免疫分型
+      details: 進行流式細胞術確認淋巴球類型
+      findings:
+        - T細胞型或B細胞型分類
+        - 表面標記分析
+        - B-CLL CD21+、CD79a+
+        - T-CLL CD3+、CD5+或CD8+
+    - step: 4
+      action: 骨髓與分期
+      details: 進行骨髓穿刺和全身分期
+      findings:
+        - 骨髓淋巴球浸潤（>20%）
+        - 腹部超音波評估肝脾
+        - 胸部X光
+        - 區別於第V期淋巴瘤（白血球性）
+clinicalPearls:
+  - CLL 是犬中預後最好的白血病類型
+  - 與 ALL 鑑別關鍵：CLL 為成熟小淋巴球，ALL 為大型不成熟母細胞
+  - 無症狀的 CLL 可先觀察不治療（watch and wait 策略）
+  - B-CLL 伴單克隆球蛋白血症時需注意高黏滯症候群
+monitoringItems:
+  - CBC 每 2-4 週直至穩定，後每 2-3 個月
+  - 化療期間每 2 週檢查 CBC 監測骨髓抑制
+  - 血清蛋白電泳追蹤 monoclonal peak（B-CLL）
+  - 淋巴結和脾臟大小定期評估
+associatedSymptoms:
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: splenomegaly
+    frequency: common
+ddxSource: book

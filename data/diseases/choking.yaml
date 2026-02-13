@@ -3,12 +3,13 @@ nameEn: Choking
 nameZh: 噎塞
 bodySystem: emergency
 description: 噎塞為食物或異物阻塞咽喉或上呼吸道引起的急性窒息。犬常因快速進食、啃咬球類或骨頭碎片引起。完全阻塞可在數分鐘內致命。飼主急救（類似 Heimlich 手法）與緊急獸醫處置為關鍵。
-
 aliases:
-  - { alias: 異物噎塞, language: zh }
-  - { alias: Foreign Body Choking, language: en }
-  - { alias: Pharyngeal Obstruction, language: en }
-
+  - alias: 異物噎塞
+    language: zh
+  - alias: Foreign Body Choking
+    language: en
+  - alias: Pharyngeal Obstruction
+    language: en
 species:
   - speciesCommon: dog
     prevalence: uncommon
@@ -16,7 +17,6 @@ species:
   - speciesCommon: cat
     prevalence: rare
     notes: 貓噎塞較犬少見。線狀異物（縫線、緞帶）更常引起消化道問題而非窒息。
-
 etiology:
   categories:
     - name: 常見異物
@@ -32,7 +32,6 @@ etiology:
         - 不適當大小的球類玩具
         - 無人監督啃咬骨頭
         - 競爭性進食環境
-
 clinicalSigns:
   early:
     - 突然用前爪扒嘴
@@ -44,7 +43,6 @@ clinicalSigns:
     - 發紺
     - 意識喪失
     - 窒息死亡（數分鐘內）
-
 diagnosis:
   primaryTests:
     - name: 臨床表現
@@ -54,59 +52,108 @@ diagnosis:
   additional:
     - 頸部 X-ray（異物定位）
     - 喉鏡（異物無法直視時）
-
 treatment:
   principles:
     - 飼主現場急救
     - 緊急異物移除
     - 維持氣道通暢
   general:
-    - "飼主急救（完全阻塞時）："
+    - 飼主急救（完全阻塞時）：
     - 打開口腔嘗試手動移除可見異物
     - 犬 Heimlich 手法：雙手握拳置於腹部肋下緣，向上快速擠壓
     - 小型犬：頭朝下拍擊肩胛間
-    - "獸醫處置："
+    - 獸醫處置：
     - 鎮靜下口腔探查與異物移除（Kelly 鉗、Magill 鉗）
     - 氣管插管繞過阻塞點
     - 緊急氣管切開（異物無法移除時）
     - 異物移除後評估口腔/咽喉黏膜損傷
     - 氧氣補充
     - 軟食數日（黏膜損傷恢復）
-
 prognosis: 及時移除異物預後極佳。完全阻塞超過 3-4 分鐘致缺氧性腦損傷風險高。預防（適當大小玩具、監督進食、避免碎骨）為關鍵。
-
-
 guidelineRefs:
   - sourceOrg: JPGN reports
-    title: "Achalasia in Klinefelter syndrome: A suspected pediatric case as well as prevalence analysis suggesting increased risk in this population."
+    title: >-
+      Achalasia in Klinefelter syndrome: A suspected pediatric case as well as prevalence analysis suggesting increased
+      risk in this population.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11322015/
     type: case-report
-    pmid: "39149173"
+    pmid: '39149173'
   - sourceOrg: Cureus
-    title: "Achalasia in an Eight-Week-Old Infant Successfully Managed by CRE Balloon Dilatation: A Case Report and Literature Review."
+    title: >-
+      Achalasia in an Eight-Week-Old Infant Successfully Managed by CRE Balloon Dilatation: A Case Report and Literature
+      Review.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11482536/
     type: case-report
-    pmid: "39416532"
+    pmid: '39416532'
   - sourceOrg: Forensic science international
     title: A UK-based retrospective study of fatal non-drowning asphyxia cases in dogs and cats.
     url: https://pubmed.ncbi.nlm.nih.gov/40381336/
     type: research
-    pmid: "40381336"
+    pmid: '40381336'
   - sourceOrg: Brain, behavior, and immunity
-    title: "Pathophysiology, blood biomarkers, and functional deficits after intimate partner violence-related brain injury: Insights from emergency department patients and a new rat model."
+    title: >-
+      Pathophysiology, blood biomarkers, and functional deficits after intimate partner violence-related brain injury:
+      Insights from emergency department patients and a new rat model.
     url: https://pubmed.ncbi.nlm.nih.gov/39349286/
     type: research
-    pmid: "39349286"
-  - sourceOrg: "European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences"
+    pmid: '39349286'
+  - sourceOrg: >-
+      European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical
+      Sciences
     title: Do Thickening Agents Used in Dysphagia Diet Affect Drug Bioavailability?
     url: https://pubmed.ncbi.nlm.nih.gov/35489612/
     type: research
-    pmid: "35489612"
+    pmid: '35489612'
   - sourceOrg: Brazilian journal of veterinary medicine
     title: Tracheal mast cell tumor in a dog - surgical approach and diagnosis.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12379833/
     type: case-report
-    pmid: "40874194"
+    pmid: '40874194'
 pubmedQueries:
   - query: '"choking" OR "foreign body" AND "pharyngeal" AND (veterinary OR canine OR feline) AND ("treatment" OR "emergency")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: coma-stupor
+    frequency: uncommon
+  - symptomId: coughing
+    frequency: common
+  - symptomId: stertor-stridor
+    frequency: common
+  - symptomId: gagging
+    frequency: common
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: dyspnoea
+    frequency: common
+diagnosticAlgorithm:
+  title: 噎塞 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - coma-stupor 相關症狀
+        - coughing 相關症狀
+        - stertor-stridor 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 臨床表現
+          notes: 突發性作嘔/咳嗽 + 呼吸困難。完全阻塞時無法發聲
+        - name: 口腔視診
+          notes: 打開口腔視診是否可見異物
+    - step: 3
+      action: 進階影像與特殊檢查
+      details: 根據初步結果進一步確認
+      findings:
+        - 頸部 X-ray（異物定位）
+        - 喉鏡（異物無法直視時）
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 飼主現場急救
+        - 緊急異物移除
+        - 維持氣道通暢
+ddxSource: auto-generated

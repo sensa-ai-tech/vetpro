@@ -3,18 +3,18 @@ nameEn: Perineal Fistula Detail
 nameZh: 會陰廔管詳述
 bodySystem: gastrointestinal
 description: 會陰區皮膚至直腸或肛門腺的異常通道,常因慢性發炎、感染或免疫介導。德國狼犬好發,治療困難。
-
 aliases:
-  - { alias: 肛門周圍廔管, language: zh }
-  - { alias: Perianal Fistula, language: en }
-  - { alias: 肛門瘻, language: zh }
-
+  - alias: 肛門周圍廔管
+    language: zh
+  - alias: Perianal Fistula
+    language: en
+  - alias: 肛門瘻
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: moderate
     notes: 德國狼犬強烈好發,中老年犬
-
 etiology:
   categories:
     - name: 免疫介導
@@ -26,7 +26,6 @@ etiology:
     - name: 感染性
       examples:
         - 肛門腺感染
-
 clinicalSigns:
   early:
     - 舔舐肛門
@@ -36,20 +35,18 @@ clinicalSigns:
     - 血便
     - 排便困難
     - 惡臭分泌物
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
-      notes: "會陰區潰瘍、廔管開口"
+      notes: 會陰區潰瘍、廔管開口
     - name: 直腸觸診
-      notes: "評估直腸受損程度"
+      notes: 評估直腸受損程度
     - name: 組織病理學
-      notes: "排除腫瘤"
+      notes: 排除腫瘤
   differentialDiagnoses:
     - 肛門腺腫瘤
     - 會陰疝氣
     - 直腸腫瘤
-
 treatment:
   medical:
     - Cyclosporine 5 mg/kg PO q12-24h (首選)
@@ -57,10 +54,33 @@ treatment:
     - 抗生素 (繼發感染)
     - 外科切除 (嚴重病例,併發症高)
     - 飲食管理 (高纖、易消化)
-
 prognosis:
-  general: "預後謹慎;免疫抑制治療反應率 60-80%,需長期治療;外科治療併發症高 (失禁、復發)"
-
+  general: 預後謹慎;免疫抑制治療反應率 60-80%,需長期治療;外科治療併發症高 (失禁、復發)
 prevention:
   - 德國狼犬避免繁殖
   - 早期診斷及治療肛門腺疾病
+associatedSymptoms:
+  - symptomId: constipation
+    frequency: uncommon
+  - symptomId: haematochezia
+    frequency: uncommon
+diagnosticAlgorithm:
+  title: 會陰廔管詳述 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - constipation 相關症狀
+        - haematochezia 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 會陰區潰瘍、廔管開口
+        - name: 直腸觸診
+          notes: 評估直腸受損程度
+        - name: 組織病理學
+          notes: 排除腫瘤
+ddxSource: auto-generated

@@ -3,23 +3,26 @@ nameEn: Degenerative Myelopathy
 nameZh: 退化性脊髓病
 bodySystem: neurology
 description: 進行性且不可逆的脊髓白質退化疾病，與 SOD1 基因突變高度相關，臨床表現類似人類肌萎縮性側索硬化症 (ALS)。
-
 aliases:
-  - { alias: DM, language: en }
-  - { alias: Chronic Degenerative Radiculomyelopathy, language: en }
-  - { alias: CDRM, language: en }
-  - { alias: 退行性脊髓病變, language: zh }
-
+  - alias: DM
+    language: en
+  - alias: Chronic Degenerative Radiculomyelopathy
+    language: en
+  - alias: CDRM
+    language: en
+  - alias: 退行性脊髓病變
+    language: zh
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
     prevalence: common
-    notes: 好發品種：German Shepherd (最經典)、Pembroke Welsh Corgi、Boxer、Rhodesian Ridgeback、Chesapeake Bay Retriever、Bernese Mountain Dog。通常 8 歲以上發病。SOD1 基因突變純合子 (A/A) 為高風險。
+    notes: >-
+      好發品種：German Shepherd (最經典)、Pembroke Welsh Corgi、Boxer、Rhodesian Ridgeback、Chesapeake Bay Retriever、Bernese
+      Mountain Dog。通常 8 歲以上發病。SOD1 基因突變純合子 (A/A) 為高風險。
   - speciesCommon: cat
     speciesScientific: Felis catus
     prevalence: rare
     notes: 貓極罕見報告，文獻有限。
-
 etiology:
   categories:
     - name: 遺傳性
@@ -33,7 +36,6 @@ etiology:
         - 脊髓白質進行性脫髓鞘與軸突變性
         - 首先影響胸段脊髓，逐步上行性擴展
         - 上運動神經元與下運動神經元均受累
-
 clinicalSigns:
   early:
     - 後肢本體感覺喪失 (趾背翻正反應延遲)
@@ -51,26 +53,24 @@ clinicalSigns:
     - 前肢受累 (上行性進展)
     - 四肢癱瘓
     - 吞嚥困難與呼吸肌無力 (末期)
-
 diagnosis:
   primaryTests:
     - name: 神經學檢查
-      notes: "典型表現：後肢上運動神經元徵象 (痙攣性癱瘓)、本體感覺喪失。初期無疼痛為重要特徵"
+      notes: 典型表現：後肢上運動神經元徵象 (痙攣性癱瘓)、本體感覺喪失。初期無疼痛為重要特徵
     - name: SOD1 基因檢測
-      notes: "口腔黏膜拭子或血液。純合突變 (A/A) 為高風險，但非 100% 發病"
+      notes: 口腔黏膜拭子或血液。純合突變 (A/A) 為高風險，但非 100% 發病
     - name: MRI
-      notes: "主要用於排除壓迫性脊髓疾病 (IVDD、腫瘤)。DM 的 MRI 通常正常或僅見輕微 T2W 信號增強"
+      notes: 主要用於排除壓迫性脊髓疾病 (IVDD、腫瘤)。DM 的 MRI 通常正常或僅見輕微 T2W 信號增強
   imaging:
     - name: 脊髓 MRI
-      notes: "排除其他脊髓壓迫性疾病。DM 為排除性診斷"
+      notes: 排除其他脊髓壓迫性疾病。DM 為排除性診斷
     - name: CT / CT myelography
-      notes: "排除壓迫性病變的替代影像"
+      notes: 排除壓迫性病變的替代影像
   additional:
     - 腦脊髓液分析 (通常正常或蛋白輕微升高)
     - 肌電圖 EMG (晚期可見去神經電位)
     - CBC/生化 (排除代謝性疾病)
     - 確定診斷需死後脊髓組織病理學
-
 treatment:
   principles:
     - 目前無治癒方法
@@ -79,13 +79,13 @@ treatment:
     - 輔助器具維持活動能力
   medications:
     - name: Aminocaproic acid
-      dose: "500 mg PO TID (大型犬)"
+      dose: 500 mg PO TID (大型犬)
       notes: 部分臨床醫師使用，但缺乏強力證據支持療效
     - name: N-Acetylcysteine
-      dose: "70 mg/kg PO BID"
+      dose: 70 mg/kg PO BID
       notes: 抗氧化劑，理論上減少氧化應激。證據有限
     - name: 維生素 E + C + B 群
-      dose: "依體重調整"
+      dose: 依體重調整
       notes: 抗氧化補充，作為輔助療法
   general:
     - 積極物理復健 (水中跑步機、游泳、平衡訓練)
@@ -95,41 +95,102 @@ treatment:
     - 褥瘡預防 (翻身、軟墊)
     - 膀胱管理 (尿失禁時定時擠壓)
     - 定期評估生活品質，適時討論安樂死
-
 prognosis: 預後不佳，為進行性且不可逆的疾病。從初始症狀到無法行走通常 6-12 個月。積極物理復健可延緩進展。多數犬在 1-3 年內因生活品質嚴重下降而選擇安樂死。
-
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Internal Medicine
     title: Degenerative myelopathy in 18 Pembroke Welsh Corgi dogs
     url: https://pubmed.ncbi.nlm.nih.gov/17539238/
     type: research
-    pmid: "17539238"
+    pmid: '17539238'
   - sourceOrg: Proceedings of the National Academy of Sciences
     title: A canine model of familial ALS — SOD1 mutation in degenerative myelopathy of dogs
     url: https://pubmed.ncbi.nlm.nih.gov/19208814/
     type: research
-    pmid: "19208814"
+    pmid: '19208814'
   - sourceOrg: Veterinary Pathology
     title: Canine degenerative myelopathy — a review
     url: https://pubmed.ncbi.nlm.nih.gov/21149845/
     type: review
-    pmid: "21149845"
+    pmid: '21149845'
   - sourceOrg: Frontiers in veterinary science
     title: Canine Models of Inherited Musculoskeletal and Neurodegenerative Diseases.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7078110/
     type: review
-    pmid: "32219101"
+    pmid: '32219101'
   - sourceOrg: Veterinary sciences
-    title: Overview of the Current Literature on the Most Common Neurological Diseases in Dogs with a Particular Focus on Rehabilitation.
+    title: >-
+      Overview of the Current Literature on the Most Common Neurological Diseases in Dogs with a Particular Focus on
+      Rehabilitation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9414583/
     type: review
-    pmid: "36006344"
+    pmid: '36006344'
     relevance: primary
 pubmedQueries:
   - query: '"degenerative myelopathy" AND dog AND ("SOD1" OR "rehabilitation" OR "review")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "NER"
-  sectionTitle: "Degenerative Myelopathy of Dogs:"
+  chapter: NER
+  sectionTitle: 'Degenerative Myelopathy of Dogs:'
   pdfPage: 1287
+diagnosticAlgorithm:
+  title: 退化性脊髓病 診斷流程
+  steps:
+    - step: 1
+      action: 初步評估
+      details: 評估漸進性後肢無力（大型犬）
+      findings:
+        - 漸進性後肢共濟失調
+        - 本體感覺缺失
+        - 無疼痛表現
+        - 中老年大型犬（德國牧羊犬）
+    - step: 2
+      action: 神經學檢查
+      details: 詳細神經學定位
+      findings:
+        - 上運動神經元後肢徵象
+        - 本體感覺明顯缺失
+        - 脊髓反射正常或亢進
+        - 排除下運動神經元疾病
+    - step: 3
+      action: 影像排除
+      details: MRI排除其他脊髓壓迫
+      findings:
+        - MRI無明顯壓迫性病灶
+        - 排除椎間盤疾病
+        - 排除脊髓腫瘤
+        - 可能見脊髓萎縮
+    - step: 4
+      action: 基因檢測與臨床診斷
+      details: SOD1基因突變檢測
+      findings:
+        - SOD1基因突變（純合子）
+        - 臨床排除診斷
+        - 確診需死後病理
+        - 與物理復健計畫
+clinicalPearls:
+  - DM是排除性診斷，確診需要病理
+  - SOD1基因檢測：純合子突變=高風險，但非所有都會發病
+  - 與IVDD Type II鑑別：DM非疼痛性，兩側對稱
+  - 保持運動是目前最佳「治療」
+  - 類似人類ALS，是重要的研究模型
+  - 早期MRI可能正常或僅見脊髓輕度萎縮
+monitoringItems:
+  - 定期神經功能評估
+  - 肌肉量
+  - 生活品質評估
+  - 膀胱功能（晚期）
+associatedSymptoms:
+  - symptomId: faecal-incontinence
+    frequency: common
+  - symptomId: ataxia
+    frequency: common
+  - symptomId: paresis-paralysis
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: abdominal-pain
+    frequency: common
+  - symptomId: cachexia-muscle-wasting
+    frequency: common
+ddxSource: book

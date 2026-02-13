@@ -3,11 +3,11 @@ nameEn: Return of Spontaneous Circulation
 nameZh: 自發性循環恢復
 bodySystem: emergency
 description: 心肺復甦成功恢復自發性心跳及血壓。需後續密集監護以維持穩定及預防再次心搏停止。
-
 aliases:
-  - { alias: ROSC, language: zh }
-  - { alias: Post-Cardiac Arrest Care, language: en }
-
+  - alias: ROSC
+    language: zh
+  - alias: Post-Cardiac Arrest Care
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -17,27 +17,23 @@ species:
     speciesScientific: Felis catus
     prevalence: rare
     notes: 同犬
-
 etiology:
   categories:
     - name: 心跳停止原因
       examples:
         - 麻醉意外、創傷、電解質異常
-
 clinicalSigns:
   early:
     - 恢復脈搏及血壓
     - 可能仍昏迷
   progressive:
     - 腦缺氧後症候群
-
 diagnosis:
   primaryTests:
     - name: 持續監測
-      notes: "心電圖、血壓、血氧"
+      notes: 心電圖、血壓、血氧
   differentialDiagnoses:
     - 無
-
 treatment:
   medical:
     - 持續氧氣治療
@@ -46,42 +42,64 @@ treatment:
     - 治療根本病因
     - 監測心律、腎功能、神經狀態
     - 預防再次心搏停止
-
 prognosis:
-  general: "ROSC不等於存活。24小時存活率<10%。腦損傷為主要死因。"
-
+  general: ROSC不等於存活。24小時存活率<10%。腦損傷為主要死因。
 prevention:
   - 預防心跳停止
-
-
 guidelineRefs:
   - sourceOrg: Prehospital emergency care
-    title: Proportional Versus Fixed Chest Compression Depth for Guideline-Compliant Resuscitation of Infant Asphyxial Cardiac Arrest.
+    title: >-
+      Proportional Versus Fixed Chest Compression Depth for Guideline-Compliant Resuscitation of Infant Asphyxial
+      Cardiac Arrest.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12018585/
     type: guideline
-    pmid: "39374029"
+    pmid: '39374029'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
-    title: "Prospective Evaluation of Cardiopulmonary Resuscitation Performed in Dogs and Cats According to the RECOVER Guidelines. Part 2: Patient Outcomes and CPR Practice Since Guideline Implementation."
+    title: >-
+      Prospective Evaluation of Cardiopulmonary Resuscitation Performed in Dogs and Cats According to the RECOVER
+      Guidelines. Part 2: Patient Outcomes and CPR Practice Since Guideline Implementation.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6914737/
     type: guideline
-    pmid: "31921901"
+    pmid: '31921901'
     relevance: primary
   - sourceOrg: Frontiers in veterinary science
-    title: "Prospective Evaluation of Cardiopulmonary Resuscitation Performed in Dogs and Cats According to the RECOVER Guidelines. Part 1: Prognostic Factors According to Utstein-Style Reporting."
+    title: >-
+      Prospective Evaluation of Cardiopulmonary Resuscitation Performed in Dogs and Cats According to the RECOVER
+      Guidelines. Part 1: Prognostic Factors According to Utstein-Style Reporting.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6854014/
     type: guideline
-    pmid: "31788482"
+    pmid: '31788482'
     relevance: primary
   - sourceOrg: The Journal of veterinary medical science
-    title: Clinical outcome of canine cardiopulmonary resuscitation following the RECOVER clinical guidelines at a Japanese nighttime animal hospital.
+    title: >-
+      Clinical outcome of canine cardiopulmonary resuscitation following the RECOVER clinical guidelines at a Japanese
+      nighttime animal hospital.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5880836/
     type: guideline
-    pmid: "29375087"
+    pmid: '29375087'
     relevance: primary
   - sourceOrg: Resuscitation plus
-    title: "The impact of the SARS-CoV-2 pandemic on in-hospital cardiac arrest: A systematic review and meta-analysis."
+    title: 'The impact of the SARS-CoV-2 pandemic on in-hospital cardiac arrest: A systematic review and meta-analysis.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11422769/
     type: review
-    pmid: "39323494"
+    pmid: '39323494'
     relevance: primary
+associatedSymptoms:
+  - symptomId: coma-stupor
+    frequency: common
+diagnosticAlgorithm:
+  title: 自發性循環恢復 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - coma-stupor 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 持續監測
+          notes: 心電圖、血壓、血氧
+ddxSource: auto-generated

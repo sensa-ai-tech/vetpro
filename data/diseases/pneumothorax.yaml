@@ -3,13 +3,15 @@ nameEn: Pneumothorax
 nameZh: 氣胸
 bodySystem: respiratory
 description: 氣胸是胸膜腔內異常積氣，導致肺臟塌陷與通氣功能障礙。可分為外傷性、自發性與醫源性三類。張力性氣胸（tension pneumothorax）為最危急的形式，空氣只進不出形成單向閥效應，可迅速導致心肺衰竭與死亡。
-
 aliases:
-  - { alias: 氣胸症, language: zh }
-  - { alias: 胸腔積氣, language: zh }
-  - { alias: Collapsed Lung, language: en }
-  - { alias: Tension Pneumothorax, language: en }
-
+  - alias: 氣胸症
+    language: zh
+  - alias: 胸腔積氣
+    language: zh
+  - alias: Collapsed Lung
+    language: en
+  - alias: Tension Pneumothorax
+    language: en
 species:
   - speciesCommon: dog
     speciesScientific: Canis lupus familiaris
@@ -19,7 +21,6 @@ species:
     speciesScientific: Felis catus
     prevalence: uncommon
     notes: 外傷性（車禍、高處墜落）為最常見原因。自發性氣胸在貓隻中極為罕見。
-
 etiology:
   categories:
     - name: 外傷性
@@ -39,7 +40,6 @@ etiology:
         - 胸腔穿刺或活檢併發症
         - 氣管插管或正壓通氣併發症
         - 胸腔手術後
-
 clinicalSigns:
   early:
     - 呼吸急促與呼吸困難
@@ -56,23 +56,21 @@ clinicalSigns:
     - 休克（胸腔內壓增高影響靜脈回流）
     - 心血管衰竭
     - 死亡
-
 diagnosis:
   primaryTests:
     - name: 胸腔 X 光
-      notes: "確診方法。可見肺臟與胸壁之間的透亮區域（無肺紋理）。肺臟塌陷回縮至肺門。心臟可能向未受影響側偏移。站立呼氣位最敏感。"
+      notes: 確診方法。可見肺臟與胸壁之間的透亮區域（無肺紋理）。肺臟塌陷回縮至肺門。心臟可能向未受影響側偏移。站立呼氣位最敏感。
     - name: 胸腔聽診
-      notes: "患側呼吸音減弱或消失。叩診呈鼓音（過度共鳴）。心音可能偏移。"
+      notes: 患側呼吸音減弱或消失。叩診呈鼓音（過度共鳴）。心音可能偏移。
   imaging:
     - name: 胸部超音波（TFAST）
-      notes: "急診床旁快速評估。正常滑動徵（sliding sign）消失。A 線存在但無 B 線。可迅速確認是否需要緊急減壓。"
+      notes: 急診床旁快速評估。正常滑動徵（sliding sign）消失。A 線存在但無 B 線。可迅速確認是否需要緊急減壓。
     - name: CT 掃描
-      notes: "自發性氣胸時評估肺泡囊腫位置與數量。術前計畫用。非急診使用。"
+      notes: 自發性氣胸時評估肺泡囊腫位置與數量。術前計畫用。非急診使用。
   additional:
     - 動脈血氣分析（低 PaO2）
     - 脈搏血氧飽和度
     - 血液學檢查（外傷評估）
-
 treatment:
   principles:
     - 張力性氣胸需立即減壓
@@ -80,51 +78,108 @@ treatment:
     - 反復或持續性氣胸需手術探查
     - 外傷性需評估並處理合併損傷
   general:
-    - "緊急胸腔穿刺減壓：使用 18-20G 針頭或導管於第 7-9 肋間進行胸腔穿刺排氣"
-    - "胸管留置：持續性氣胸需放置胸管接水封引流或持續抽吸"
-    - "氧氣治療：鼻導管、氧氣籠或面罩供氧"
-    - "開放性氣胸：立即封閉胸壁傷口（三邊固定法或密封敷料）"
-    - "自發性復發性氣胸：手術探查與肺泡囊腫切除（partial lung lobectomy 或 stapling）"
-    - "術後疼痛管理：Buprenorphine 0.01-0.02 mg/kg IV q6-8h"
-    - "肋骨骨折穩定（嚴重時）"
-    - "輕度創傷性氣胸：限制活動、監測，多數 3-5 天自行吸收"
-
+    - 緊急胸腔穿刺減壓：使用 18-20G 針頭或導管於第 7-9 肋間進行胸腔穿刺排氣
+    - 胸管留置：持續性氣胸需放置胸管接水封引流或持續抽吸
+    - 氧氣治療：鼻導管、氧氣籠或面罩供氧
+    - 開放性氣胸：立即封閉胸壁傷口（三邊固定法或密封敷料）
+    - 自發性復發性氣胸：手術探查與肺泡囊腫切除（partial lung lobectomy 或 stapling）
+    - 術後疼痛管理：Buprenorphine 0.01-0.02 mg/kg IV q6-8h
+    - 肋骨骨折穩定（嚴重時）
+    - 輕度創傷性氣胸：限制活動、監測，多數 3-5 天自行吸收
 prognosis: 外傷性氣胸經適當治療後預後良好，多數在 3-5 天內恢復。自發性氣胸預後取決於基礎病因，肺泡囊腫手術切除後復發率低。張力性氣胸若即時減壓預後可接受，延遲處理預後極差。合併嚴重多發性創傷者預後取決於整體損傷嚴重度。
-
 guidelineRefs:
   - sourceOrg: Journal of Veterinary Emergency and Critical Care
-    title: "Spontaneous pneumothorax in dogs: clinical findings and outcomes"
+    title: 'Spontaneous pneumothorax in dogs: clinical findings and outcomes'
     url: https://pubmed.ncbi.nlm.nih.gov/17259891/
     type: consensus
-    pmid: "17259891"
+    pmid: '17259891'
   - sourceOrg: Journal of the American Veterinary Medical Association
-    title: "Traumatic pneumothorax in dogs and cats: prognosis"
+    title: 'Traumatic pneumothorax in dogs and cats: prognosis'
     url: https://pubmed.ncbi.nlm.nih.gov/19228364/
     type: consensus
-    pmid: "19228364"
+    pmid: '19228364'
   - sourceOrg: Frontiers in veterinary science
     title: Expanding the role of ultrasonography in cardiopulmonary assessment in dromedary camels.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12509741/
     type: review
-    pmid: "41078488"
+    pmid: '41078488'
     relevance: primary
   - sourceOrg: Open veterinary journal
-    title: "Partial lung lobectomy with the Caiman&#xae; Seal &amp; Cut device in a dog with spontaneous pneumothorax: Case report."
+    title: >-
+      Partial lung lobectomy with the Caiman&#xae; Seal &amp; Cut device in a dog with spontaneous pneumothorax: Case
+      report.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9805754/
     type: review
-    pmid: "36650868"
+    pmid: '36650868'
     relevance: primary
   - sourceOrg: The Canadian veterinary journal = La revue veterinaire canadienne
     title: Pneumothorax suspected secondary to continuous glucose monitor placement in a dog.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11705176/
     type: case-report
-    pmid: "39781420"
+    pmid: '39781420'
     relevance: supporting
 pubmedQueries:
   - query: '"pneumothorax" AND (dog OR cat) AND ("treatment" OR "chest tube")'
     frequency: monthly
 merckManualRef:
   edition: 11
-  chapter: "EMG"
-  sectionTitle: "Pneumothorax: A penetrating chest"
+  chapter: EMG
+  sectionTitle: 'Pneumothorax: A penetrating chest'
   pdfPage: 1758
+diagnosticAlgorithm:
+  title: 氣胸 診斷流程
+  steps:
+    - step: 1
+      action: 緊急評估
+      details: 快速評估呼吸窘迫程度，進行胸部聽診與叩診
+      findings:
+        - 急性呼吸困難
+        - 胸部聽診背側呼吸音減弱
+        - 叩診過度共鳴音
+        - 限制性呼吸型態
+    - step: 2
+      action: 影像學檢查
+      details: 胸腔X光確認氣胸，評估嚴重程度
+      findings:
+        - 肺葉後縮離胸壁
+        - 胸腔內透亮區無肺紋理
+        - 心臟輪廓與肺葉間距增加
+        - 張力性氣胸：縱膈移位
+    - step: 3
+      action: 胸腔穿刺與分類
+      details: 治療性胸腔穿刺抽氣，區分開放性/閉鎖性/張力性
+      findings:
+        - 抽出大量空氣
+        - 穿刺後呼吸改善程度
+        - 持續漏氣需胸管引流
+        - 分類：外傷性/自發性/醫源性
+    - step: 4
+      action: 病因調查
+      details: 確認氣胸原因，評估手術需求
+      findings:
+        - 外傷史（肋骨骨折/穿透傷）
+        - 自發性：肺大泡破裂
+        - 腫瘤相關氣胸
+        - 持續漏氣超過3-5天考慮手術
+clinicalPearls:
+  - 張力性氣胸是急診，不應等待X光確認再治療
+  - 胸部超音波可床邊快速評估（無滑動徵）
+  - 自發性氣胸的犬應積極排查肺腫瘤
+  - 小量氣胸可能自行吸收，但需密切觀察
+  - 雙側氣胸比單側更危急
+monitoringItems:
+  - 呼吸速率和型態
+  - 胸管引流量和是否有持續漏氣
+  - 胸部X光追蹤
+  - 脈搏血氧飽和度
+  - 有無皮下氣腫擴大
+associatedSymptoms:
+  - symptomId: dyspnoea
+    frequency: uncommon
+  - symptomId: abdominal-pain
+    frequency: uncommon
+  - symptomId: pallor-cyanosis
+    frequency: uncommon
+  - symptomId: tachycardia-bradycardia
+    frequency: uncommon
+ddxSource: book

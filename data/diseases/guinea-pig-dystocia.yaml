@@ -3,22 +3,20 @@ nameEn: Guinea Pig Dystocia
 nameZh: 天竺鼠難產
 bodySystem: reproductive
 description: 天竺鼠分娩困難，母天竺鼠若超過 7-8 月齡才首次懷孕，恥骨聯合無法充分張開，導致嚴重難產，可能需緊急剖腹產。
-
 aliases:
-  - { alias: "天竺鼠難產", language: zh }
-  - { alias: "Guinea Pig Dystocia", language: en }
-
+  - alias: 天竺鼠難產
+    language: zh
+  - alias: Guinea Pig Dystocia
+    language: en
 species:
   - speciesCommon: guinea pig
     prevalence: uncommon
     notes: 天竺鼠可受此疾病影響。
-
 etiology:
   categories:
     - name: 病因
       examples:
         - 詳見臨床文獻
-
 clinicalSigns:
   early:
     - 食慾下降
@@ -27,14 +25,12 @@ clinicalSigns:
   progressive:
     - 症狀加重
     - 體重下降
-
 diagnosis:
   primaryTests:
     - name: 理學檢查
       notes: 完整理學檢查與病史評估。
     - name: 實驗室檢查
       notes: CBC/生化排除系統性疾病。
-
 treatment:
   principles:
     - 治療基礎病因
@@ -44,26 +40,60 @@ treatment:
     - 依病因治療
     - 支持性照護
     - 定期追蹤
-
 prognosis: 預後取決於疾病嚴重度與治療時效。早期診斷與適當治療可改善預後。
-
-
 guidelineRefs:
   - sourceOrg: Brazilian journal of veterinary medicine
-    title: "Fetal dystocia in guinea pigs: A case report."
+    title: 'Fetal dystocia in guinea pigs: A case report.'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11244642/
     type: case-report
-    pmid: "39006122"
+    pmid: '39006122'
   - sourceOrg: Veterinary medicine and science
-    title: "Assessing Pubic Symphysis Evolution in Guinea Pigs (Cavia procellus): Insights From Computer Tomography on Primiparous and Non-Breeding Females."
+    title: >-
+      Assessing Pubic Symphysis Evolution in Guinea Pigs (Cavia procellus): Insights From Computer Tomography on
+      Primiparous and Non-Breeding Females.
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11494921/
     type: research
-    pmid: "39436159"
+    pmid: '39436159'
   - sourceOrg: Birth defects research. Part B, Developmental and reproductive toxicology
     title: Species differences in developmental toxicity of epoxiconazole and its relevance to humans.
     url: https://pubmed.ncbi.nlm.nih.gov/23630118/
     type: research
-    pmid: "23630118"
+    pmid: '23630118'
 pubmedQueries:
   - query: '"Guinea Pig Dystocia" AND (veterinary OR "guinea pig") AND ("guidelines" OR "consensus")'
     frequency: monthly
+associatedSymptoms:
+  - symptomId: weight-loss
+    frequency: uncommon
+  - symptomId: anorexia
+    frequency: common
+  - symptomId: behaviour-change
+    frequency: common
+  - symptomId: weakness
+    frequency: common
+diagnosticAlgorithm:
+  title: 天竺鼠難產 診斷流程
+  steps:
+    - step: 1
+      action: 病史與理學檢查
+      details: 詳細問診包括發病經過、用藥史、環境暴露史
+      findings:
+        - weight-loss 相關症狀
+        - anorexia 相關症狀
+        - behaviour-change 相關症狀
+    - step: 2
+      action: 基本檢驗
+      details: CBC、生化全套、尿液分析
+      findings:
+        - name: 理學檢查
+          notes: 完整理學檢查與病史評估。
+        - name: 實驗室檢查
+          notes: CBC/生化排除系統性疾病。
+    - step: 4
+      action: 確診與治療
+      details: 根據檢查結果啟動特異性治療
+      findings:
+        - 治療基礎病因
+        - 支持性照護
+        - 監測恢復進度
+ddxSource: auto-generated
