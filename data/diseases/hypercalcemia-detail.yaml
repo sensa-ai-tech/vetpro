@@ -1,0 +1,82 @@
+slug: hypercalcemia-detail
+nameEn: Hypercalcemia Detail
+nameZh: 高血鈣症（詳細）
+bodySystem: electrolyte
+description: 血清離子鈣濃度高於正常範圍（犬貓 >1.4 mmol/L 或 >5.6 mg/dL），最常見原因為惡性腫瘤（淋巴瘤、肛門囊腺癌）及副甲狀腺機能亢進。嚴重高血鈣可導致腎衰竭、心律不整及死亡。
+
+aliases:
+  - { alias: 血鈣過高, language: zh }
+  - { alias: Hypercalcaemia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 常見於淋巴瘤、肛門囊腺癌、原發性副甲狀腺機能亢進
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓常因特發性高血鈣症、淋巴瘤或慢性腎臟病引起
+
+etiology:
+  categories:
+    - name: 惡性腫瘤（最常見）
+      examples:
+        - 淋巴瘤（產生 PTHrP）
+        - 肛門囊腺癌
+        - 多發性骨髓瘤
+    - name: 副甲狀腺疾病
+      examples:
+        - 原發性副甲狀腺機能亢進
+        - 副甲狀腺腺瘤或腺癌
+    - name: 慢性腎臟病
+      examples:
+        - 腎性副甲狀腺機能亢進
+        - 特發性高血鈣症（貓）
+    - name: 其他
+      examples:
+        - 維生素 D 中毒
+        - 愛迪生氏症
+        - 骨溶解性疾病
+
+clinicalSigns:
+  early:
+    - 多尿多渴（PU/PD）
+    - 食慾減退、體重減輕
+  progressive:
+    - 嘔吐、便秘、脫水
+    - 肌肉無力、嗜睡
+    - 腎衰竭（腎鈣沉積）
+    - 心律不整（QT 間期縮短）
+    - 癲癇、昏迷
+
+diagnosis:
+  primaryTests:
+    - name: 血清離子鈣及總鈣
+      notes: "離子鈣 >1.4 mmol/L（>5.6 mg/dL），總鈣 >12 mg/dL"
+    - name: 副甲狀腺素（PTH）及 PTHrP
+      notes: "PTH 升高提示副甲狀腺疾病，PTHrP 升高提示惡性腫瘤"
+    - name: 影像學（胸腹腔 X 光、超音波）
+      notes: "尋找腫瘤或副甲狀腺腫大"
+  differentialDiagnoses:
+    - 惡性腫瘤（淋巴瘤、肛門囊腺癌）
+    - 原發性副甲狀腺機能亢進
+    - 慢性腎臟病
+    - 維生素 D 中毒
+    - 愛迪生氏症
+
+treatment:
+  medical:
+    - 積極靜脈輸液（0.9% NaCl 100-150 mL/kg/day）促進鈣排泄
+    - Furosemide 2-4 mg/kg IV BID（利尿，增加鈣排泄）
+    - Prednisolone 1-2 mg/kg PO BID（用於淋巴瘤）
+    - Calcitonin 4-8 IU/kg SC q8-12h（快速降鈣，短期使用）
+    - 治療潛在病因（化療、手術切除副甲狀腺或腫瘤）
+
+prognosis:
+  general: "預後取決於潛在病因。副甲狀腺腺瘤手術切除預後良好，但惡性腫瘤相關高血鈣預後保留（中位存活期 2-6 個月）。嚴重高血鈣（>18 mg/dL）可能導致急性腎衰竭或心律不整致死。"
+
+prevention:
+  - 定期健檢監測血鈣（老年動物）
+  - 腫瘤患者定期追蹤血鈣
+  - 避免過量維生素 D 補充

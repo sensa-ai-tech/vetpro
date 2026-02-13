@@ -1,0 +1,97 @@
+slug: high-risk-patient-anesthesia
+nameEn: High Risk Patient Anesthesia
+nameZh: 高風險患者麻醉
+bodySystem: emergency
+description: 針對罹患心臟病、腎病、肝病、呼吸道疾病、內分泌異常等系統性疾病的患者制定的麻醉管理策略。需要更詳細的術前評估、客製化麻醉方案和加強監測。
+
+aliases:
+  - { alias: 危重患者麻醉, language: zh }
+  - { alias: 特殊患者麻醉管理, language: zh }
+  - { alias: Anesthesia for Compromised Patients, language: en }
+  - { alias: Critical Patient Anesthesia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 老年犬(>8歲)、短鼻犬種、大型犬種(麻醉死亡率較高)需特別注意
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓隱藏心臟病(HCM)盛行率高,術前超音波篩檢對高風險品種很重要
+
+etiology:
+  categories:
+    - name: 心臟病患者
+      examples:
+        - 術前穩定心衰(利尿劑、ACEI)至少1-2週
+        - 避免心肌抑制藥物(高濃度Isoflurane)
+        - 使用Etomidate或Alfaxalone誘導
+    - name: 腎病患者
+      examples:
+        - 術前至少輸液2-4小時改善腎灌流
+        - 避免NSAIDs,選擇阿片類鎮痛
+        - 監測尿液生成(>1-2 ml/kg/hr)
+    - name: 肝病患者
+      examples:
+        - 降低藥物劑量(肝代謝藥物延長作用時間)
+        - 避免Acepromazine(低血壓風險高)
+        - 補充Vitamin K(凝血功能異常)
+    - name: 呼吸道疾病
+      examples:
+        - 術前氧氣補充至少10-15分鐘
+        - 盡早氣管插管,延遲拔管
+        - 術後密切監測呼吸功能
+
+clinicalSigns:
+  early:
+    - 術前病情穩定(心衰控制、腎指數改善)
+    - 麻醉誘導平順無嚴重心律不整或低血壓
+    - 術中生命徵象維持在可接受範圍
+  progressive:
+    - 術後順利甦醒無嚴重併發症
+    - 原有疾病未惡化
+    - 恢復飲食和正常活動
+
+diagnosis:
+  primaryTests:
+    - name: "術前血檢(必須)"
+      notes: "CBC、生化、電解質評估系統功能"
+    - name: 心臟評估
+      notes: "心電圖、胸部X光、超音波(心臟病患者)"
+    - name: 凝血功能
+      notes: "PT、aPTT(肝病、凝血異常病史)"
+    - name: 血壓監測
+      notes: "術中每5-10分鐘,維持MAP >60 mmHg"
+    - name: 血氧監測
+      notes: "SpO2持續監測,維持>95%"
+    - name: 呼氣末CO2
+      notes: "EtCO2維持35-45 mmHg,評估通氣功能"
+  differentialDiagnoses:
+    - 麻醉誘發的併發症(低血壓、心律不整)
+    - 原有疾病急性惡化
+    - 藥物不良反應或劑量過高
+
+treatment:
+  medical:
+    - "心臟病方案:Butorphanol 0.2 mg/kg IM → Etomidate 1-2 mg/kg IV → Isoflurane最低有效濃度"
+    - "腎病方案:術前LRS 5-10 ml/kg/hr × 2-4hr → Alfaxalone 2-3 mg/kg IV → 避免NSAIDs"
+    - "肝病方案:降低藥物劑量30-50% → 避免長效Benzodiazepines → Propofol 4-6 mg/kg IV"
+    - "糖尿病方案:術前血糖150-250 mg/dL → 胰島素減量50% → 術中監測血糖q30-60min"
+    - "低血壓治療:快速輸液10-20 ml/kg → Dopamine 5-10 μg/kg/min CRI或Norepinephrine 0.05-0.3 μg/kg/min"
+    - "心律不整治療:Lidocaine 2 mg/kg IV bolus + 50 μg/kg/min CRI(心室性) → Atropine 0.02-0.04 mg/kg IV(心搏過緩)"
+    - "術後監測:至少24小時住院觀察,持續心電圖和血氧監測"
+
+prognosis:
+  general: "麻醉相關死亡率健康動物約0.05-0.1%,高風險患者增加至0.5-2%。心臟病患者風險最高,尤其未控制的心衰或嚴重心律不整。腎病患者若術前充分輸液大多可安全完成手術。肝病晚期患者(白蛋白<2 g/dL,凝血異常)風險顯著增加。完善的術前準備和術中監測可降低併發症發生率50%以上。術後第一個24小時是關鍵期,大多數嚴重併發症在此期間發生。"
+
+prevention:
+  - 徹底術前評估(病史、理學檢查、血檢、影像)
+  - 延期非緊急手術直到病情穩定
+  - 選擇心肺抑制最小的麻醉藥物組合
+  - 術前禁食但維持水分攝取(避免脫水)
+  - 術前靜脈輸液改善血流動力學穩定性
+  - 使用多模式鎮痛減少麻醉藥需求
+  - 準備急救藥物和設備(升壓劑、抗心律不整藥物)
+  - 術後加護照顧至少24小時
+  - 高風險患者考慮轉診專科醫院或配備加護設備的醫院

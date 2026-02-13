@@ -1,0 +1,73 @@
+slug: ketoconazole-toxicosis
+nameEn: Ketoconazole Toxicosis
+nameZh: 酮康唑中毒
+bodySystem: toxicology
+description: 酮康唑為廣效抗黴菌藥,長期或過量使用可能導致肝毒性、內分泌抑制(尤其腎上腺皮質醇合成)及胃腸道反應。
+
+aliases:
+  - { alias: 酮康唑肝毒性, language: zh }
+  - { alias: Ketoconazole Hepatotoxicity, language: en }
+  - { alias: Nizoral Toxicity, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 常用於治療黴菌感染及庫欣氏症
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓對酮康唑耐受性較差,較少使用
+
+etiology:
+  categories:
+    - name: 劑量過高
+      examples:
+        - 超過建議劑量(>10 mg/kg/day 長期使用)
+        - 肝功能不全動物未調整劑量
+    - name: 藥物交互作用
+      examples:
+        - 與CYP3A4抑制劑併用
+        - 與肝毒性藥物併用
+
+clinicalSigns:
+  early:
+    - 食慾不振、嘔吐
+    - 腹瀉、腹痛
+    - 嗜睡
+  progressive:
+    - 黃疸、肝腫大
+    - 出血傾向(凝血功能異常)
+    - 腎上腺功能低下症狀(虛弱、低血糖)
+
+diagnosis:
+  primaryTests:
+    - name: 血液生化檢查
+      notes: "ALT、ALP、總膽紅素升高,白蛋白降低"
+    - name: 腎上腺功能檢查
+      notes: "ACTH刺激試驗評估皮質醇反應"
+    - name: 凝血功能檢查
+      notes: "PT/PTT延長,評估肝臟凝血因子合成"
+  differentialDiagnoses:
+    - 其他藥物性肝炎
+    - 特發性肝炎
+    - 庫欣氏症
+    - 愛迪生氏症
+
+treatment:
+  medical:
+    - 立即停用酮康唑
+    - 保肝藥物: S-adenosylmethionine (SAMe) 20 mg/kg PO q24h, Ursodeoxycholic acid 10-15 mg/kg PO q24h
+    - 維生素K1 0.5-1.5 mg/kg SC/PO(若凝血異常)
+    - 腎上腺功能低下: Prednisolone 0.2-0.5 mg/kg PO q12h
+    - 支持性療法: 靜脈輸液、止吐藥、營養支持
+    - 監測肝功能指數及電解質
+
+prognosis:
+  general: "早期發現並停藥,多數肝功能可於數週內恢復。嚴重肝衰竭或腎上腺抑制可能需長期治療,少數可能不可逆。"
+
+prevention:
+  - 使用最低有效劑量,避免長期高劑量
+  - 定期監測肝功能(每2-4週)
+  - 肝病或腎上腺疾病動物避免使用
+  - 考慮其他毒性較低的抗黴菌藥(如氟康唑)

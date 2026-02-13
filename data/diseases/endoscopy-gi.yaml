@@ -1,0 +1,71 @@
+slug: endoscopy-gi
+nameEn: Endoscopy GI
+nameZh: 消化道內視鏡
+bodySystem: other
+description: 上消化道(食道、胃、十二指腸)或下消化道(結腸)內視鏡檢查。用於診斷慢性嘔吐、腹瀉、異物取出及組織活檢。
+
+aliases:
+  - { alias: 胃鏡, language: zh }
+  - { alias: Gastroscopy/Colonoscopy, language: en }
+  - { alias: 腸胃內視鏡, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 慢性腸病、IBD診斷標準工具
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓IBD、淋巴瘤、異物常見適應症
+
+etiology:
+  categories:
+    - name: 診斷適應症
+      examples:
+        - 慢性嘔吐或腹瀉
+        - 消化道出血
+        - 蛋白流失性腸病
+    - name: 治療適應症
+      examples:
+        - 異物取出
+        - 息肉切除
+        - 擴張狹窄處
+
+clinicalSigns:
+  early:
+    - 術後輕微不適
+    - 短暫腹脹(氣體灌注)
+    - 當日可恢復進食
+  progressive:
+    - 組織病理結果指引治療
+    - 症狀改善(若異物取出)
+
+diagnosis:
+  primaryTests:
+    - name: 內視鏡視診
+      notes: "評估黏膜顏色、厚度、潰瘍、腫塊"
+    - name: 多點活檢
+      notes: "胃、十二指腸至少5-8點取樣"
+    - name: 術前影像學
+      notes: "X光排除穿孔或阻塞"
+  differentialDiagnoses:
+    - 剖腹探查(更侵入)
+    - 超音波導引活檢(腸壁評估限制)
+
+treatment:
+  medical:
+    - 麻醉:全身麻醉+氣管插管
+    - 禁食:12-24小時(上消化道),灌腸準備(下消化道)
+    - 活檢鉗:每點2-3片組織
+    - 術後:6-12小時禁食後少量給水
+    - 併發症監控:穿孔(罕見<0.5%)
+
+prognosis:
+  general: "安全性高,診斷準確率>80%。多數病例當日出院。穿孔風險極低,出血多自行止血。組織病理為IBD最終診斷依據。"
+
+prevention:
+  - 術前完整病史及檢查排除禁忌症
+  - 適當鎮靜避免器械損傷
+  - 活檢避開潰瘍深處
+  - 術後監控腹痛或發燒徵象

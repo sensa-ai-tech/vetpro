@@ -1,0 +1,90 @@
+slug: adrenal-hemorrhage
+nameEn: Adrenal Hemorrhage
+nameZh: 腎上腺出血
+bodySystem: urinary
+description: 腎上腺內急性出血,可為單側或雙側,導致腎上腺功能不全、腹痛及休克,常見於外傷、凝血功能異常或腫瘤破裂。
+
+aliases:
+  - { alias: 腎上腺血腫, language: zh }
+  - { alias: Adrenal hematoma, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 多見於腎上腺腫瘤(嗜鉻細胞瘤)破裂或嚴重外傷
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓罕見,外傷或凝血異常時可能發生
+
+etiology:
+  categories:
+    - name: 外傷性
+      examples:
+        - 車禍或高處墜落
+        - 腹部鈍挫傷
+        - 醫源性(手術、穿刺)
+    - name: 腫瘤相關
+      examples:
+        - 嗜鉻細胞瘤破裂出血(最常見)
+        - 腎上腺皮質腺瘤或癌破裂
+        - 血管豐富腫瘤壞死出血
+    - name: 凝血功能異常
+      examples:
+        - 抗凝血藥中毒(老鼠藥)
+        - 瀰漫性血管內凝血(DIC)
+        - 血小板減少症
+        - 血友病
+
+clinicalSigns:
+  early:
+    - 急性腹痛、腹部緊張
+    - 虛弱、沉鬱
+    - 黏膜蒼白(貧血)
+  progressive:
+    - 休克症狀(心搏過速、低血壓)
+    - 腹圍增大(腹腔積血)
+    - 虛脫、昏迷
+    - 雙側出血可能導致急性腎上腺功能不全(低鈉、高鉀)
+
+diagnosis:
+  primaryTests:
+    - name: 腹部超音波
+      notes: "腎上腺腫大、不規則,周圍積液,腹腔積血"
+    - name: 腹腔穿刺
+      notes: "抽出不凝血(腹腔積血),PCV高於周邊血提示新鮮出血"
+    - name: 血液常規
+      notes: "貧血(PCV/Hb下降),血小板可能降低"
+    - name: 凝血功能檢查
+      notes: "PT/aPTT延長(凝血異常),D-dimer升高(DIC)"
+    - name: 電解質
+      notes: "若雙側出血:低鈉、高鉀(腎上腺功能不全)"
+  differentialDiagnoses:
+    - 脾臟破裂出血
+    - 肝臟腫瘤破裂
+    - 腹腔內其他腫瘤出血
+    - 腹腔動脈瘤破裂
+
+treatment:
+  medical:
+    - 緊急輸液復甦(Lactated Ringer's 或晶體液 80-90 mL/kg/hr)
+    - 輸血(若PCV <20%,全血或濃縮紅血球)
+    - 手術探查止血(若持續出血或血壓不穩定)
+      - 腎上腺切除術(腫瘤破裂)
+      - 結紮出血血管
+    - 凝血功能異常處理:
+      - 老鼠藥中毒:維生素K1 5 mg/kg SC/PO SID
+      - DIC:新鮮冷凍血漿輸注
+    - 雙側出血導致腎上腺功能不全:
+      - Dexamethasone 0.5-1 mg/kg IV
+      - 糖皮質激素及鹽皮質激素補充
+    - 監測PCV、血壓、電解質、腹圍
+
+prognosis:
+  general: "預後保守至不良,取決於出血量及原因。嗜鉻細胞瘤破裂預後差,死亡率高。外傷性單側出血經止血處理預後尚可。雙側出血致急性腎上腺功能不全極危險。"
+
+prevention:
+  - 腎上腺腫瘤早期手術切除避免破裂
+  - 外傷動物密切監測腹腔出血徵兆
+  - 凝血功能異常動物避免外傷

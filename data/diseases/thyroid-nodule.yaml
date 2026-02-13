@@ -1,0 +1,87 @@
+slug: thyroid-nodule
+nameEn: Thyroid Nodule
+nameZh: 甲狀腺結節
+bodySystem: endocrine
+description: 甲狀腺局部腫塊或結節,可為良性腺瘤、增生性結節、囊腫或惡性癌症,貓常見功能性腺瘤導致甲狀腺亢進。
+
+aliases:
+  - { alias: 甲狀腺腫塊, language: zh }
+  - { alias: Thyroid mass, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 犬甲狀腺腫瘤約30-50%為惡性癌,多為非功能性
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓甲狀腺結節常見,多為功能性良性腺瘤導致甲狀腺亢進
+
+etiology:
+  categories:
+    - name: 良性病變
+      examples:
+        - 功能性腺瘤(貓甲狀腺亢進主因)
+        - 非功能性腺瘤
+        - 增生性結節
+        - 囊腫
+    - name: 惡性病變
+      examples:
+        - 甲狀腺癌(犬較常見,侵襲性強)
+        - 濾泡癌
+        - 未分化癌
+    - name: 危險因素
+      examples:
+        - 老年(貓狗皆好發)
+        - 碘攝取異常(貓,爭議性)
+
+clinicalSigns:
+  early:
+    - 頸部可觸及腫塊
+    - 功能性腺瘤(貓):體重減輕、多食、多動
+    - 非功能性:可能無症狀
+  progressive:
+    - 甲狀腺亢進症狀(功能性,貓):嘔吐、腹瀉、心搏過速
+    - 大型腫塊壓迫症狀:吞嚥困難、呼吸困難、咳嗽
+    - 惡性腫瘤:轉移(肺、淋巴結)
+
+diagnosis:
+  primaryTests:
+    - name: 觸診
+      notes: "頸部可觸及單側或雙側腫塊"
+    - name: 血清T4
+      notes: "功能性腺瘤時升高(貓>50 nmol/L),非功能性正常或低"
+    - name: 頸部超音波
+      notes: "評估腫塊大小、血管侵犯、淋巴結轉移"
+    - name: 細針抽吸細胞學
+      notes: "初步區分良惡性,但確診需組織病理"
+    - name: 胸腔X光或CT
+      notes: "評估肺部轉移(惡性腫瘤)"
+  differentialDiagnoses:
+    - 良性甲狀腺腺瘤
+    - 甲狀腺癌
+    - 甲狀腺囊腫
+    - 頸部淋巴結腫大
+    - 唾液腺腫瘤
+
+treatment:
+  medical:
+    - 功能性腺瘤(貓):
+      - 放射碘治療(I-131, 治癒率>95%)
+      - 手術切除(單側或雙側甲狀腺切除術)
+      - 內科治療(Methimazole 2.5-5 mg PO BID 終生)
+    - 非功能性良性腺瘤:定期監測或手術切除
+    - 犬甲狀腺癌:
+      - 手術切除(若可切除,雙側甲狀腺切除+淋巴結清除)
+      - 放射治療(術後輔助或姑息性)
+      - 化療(Doxorubicin,效果有限)
+      - 術後甲狀腺素補充(Levothyroxine 0.02 mg/kg PO BID)
+
+prognosis:
+  general: "貓功能性腺瘤經放射碘治療預後優良;犬甲狀腺癌預後保守,中位存活時間6-24個月,視腫瘤侵襲性及轉移程度而定。"
+
+prevention:
+  - 中老年貓犬定期頸部觸診檢查
+  - 貓定期監測T4(>7歲每年檢測)
+  - 早期發現結節時評估功能性及良惡性

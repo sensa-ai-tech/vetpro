@@ -1,0 +1,60 @@
+slug: cortisol-testing-protocol
+nameEn: Cortisol Testing Protocol
+nameZh: 皮質醇檢測方案
+bodySystem: other
+description: 犬貓皮質醇檢測方案,包括基礎皮質醇、ACTH刺激試驗、dexamethasone抑制試驗。用於診斷庫欣氏症、愛迪生氏症、醫源性腎上腺抑制等。
+
+aliases:
+  - { alias: 皮質醇檢查, language: zh }
+  - { alias: Cortisol testing, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 庫欣氏症及愛迪生氏症診斷
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓腎上腺疾病罕見
+
+etiology:
+  categories:
+    - name: 腎上腺疾病
+      examples:
+        - 庫欣氏症(皮質醇過多)
+        - 愛迪生氏症(皮質醇不足)
+        - 醫源性腎上腺抑制
+
+clinicalSigns:
+  early:
+    - 皮質醇檢測為診斷工具
+  progressive:
+    - 庫欣:多飲多尿、腹部膨大、脫毛
+    - 愛迪生:虛弱、嘔吐、低血糖
+
+diagnosis:
+  primaryTests:
+    - name: ACTH刺激試驗
+      notes: "診斷愛迪生氏症及醫源性腎上腺抑制,監測庫欣治療"
+    - name: 低劑量dexamethasone抑制試驗(LDDST)
+      notes: "庫欣氏症篩檢,敏感度高"
+    - name: 高劑量dexamethasone抑制試驗(HDDST)
+      notes: "區分腦下垂體或腎上腺源性庫欣"
+  differentialDiagnoses:
+    - 庫欣氏症(腦下垂體或腎上腺)
+    - 愛迪生氏症
+    - 醫源性腎上腺抑制
+
+treatment:
+  medical:
+    - 庫欣:trilostane或mitotane
+    - 愛迪生:prednisone + fludrocortisone
+
+prognosis:
+  general: "腎上腺疾病需長期管理,定期監測皮質醇濃度。"
+
+prevention:
+  - 遵循標準化檢測流程
+  - ACTH刺激前後採血
+  - 定期監測調整藥物

@@ -1,0 +1,88 @@
+slug: analgesia-protocols
+nameEn: Analgesia Protocols
+nameZh: 鎮痛方案
+bodySystem: emergency
+description: 系統性疼痛管理策略,結合多種藥物和技術達到最佳鎮痛效果並減少副作用。基於多模式鎮痛(Multimodal Analgesia)概念,針對不同疼痛強度和手術類型制定個體化方案。
+
+aliases:
+  - { alias: 疼痛管理方案, language: zh }
+  - { alias: 多模式鎮痛, language: zh }
+  - { alias: Pain Management Protocol, language: en }
+  - { alias: Multimodal Analgesia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 需根據品種、年齡、體重和手術類型調整方案,短鼻犬種需謹慎使用阿片類藥物
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓對NSAIDs代謝較慢,需特別注意劑量和給藥間隔,Buprenorphine是最安全的阿片類選擇
+
+etiology:
+  categories:
+    - name: 輕度疼痛手術
+      examples:
+        - 絕育手術、皮膚腫塊切除、牙齒清潔
+        - NSAIDs + 局部麻醉
+        - 術前Meloxicam 0.2 mg/kg SC
+    - name: 中度疼痛手術
+      examples:
+        - 骨折固定、軟組織腫瘤切除、腹腔手術
+        - 阿片類 + NSAIDs + 局部麻醉/神經阻斷
+        - Morphine 0.2-0.5 mg/kg IM + Carprofen 4 mg/kg SC
+    - name: 重度疼痛手術
+      examples:
+        - 脊椎手術、大範圍骨科手術、胸腔手術
+        - 阿片類 + NSAIDs + 硬膜外麻醉 + CRI
+        - Fentanyl 2-5 μg/kg/hr CRI + Lidocaine 50 μg/kg/min CRI + Ketamine 10 μg/kg/min CRI (MLK)
+
+clinicalSigns:
+  early:
+    - 疼痛評分降低(使用Glasgow疼痛量表)
+    - 患者安靜休息,無躁動或哀鳴
+    - 心率和呼吸頻率接近正常範圍
+    - 願意接觸和互動
+  progressive:
+    - 術後恢復良好,食慾正常
+    - 活動度逐漸增加
+    - 傷口無過度舔咬行為
+    - 睡眠品質良好
+
+diagnosis:
+  primaryTests:
+    - name: "疼痛評分系統(Glasgow CMPS)"
+      notes: "每2-4小時評估,分數>5/20需額外鎮痛"
+    - name: 生理參數監測
+      notes: "心率、呼吸頻率、血壓變化可能反映疼痛"
+    - name: 行為觀察
+      notes: "姿勢、活動度、發聲、食慾、互動意願"
+  differentialDiagnoses:
+    - 鎮痛不足(藥物劑量不足或代謝過快)
+    - 藥物副作用(鎮靜過度、噁心、便秘)
+    - 其他併發症(感染、出血、手術相關問題)
+
+treatment:
+  medical:
+    - "術前給藥:Morphine 0.2-0.5 mg/kg IM或Hydromorphone 0.05-0.1 mg/kg IM"
+    - "NSAIDs:Carprofen 4 mg/kg SC/PO q24h,或Meloxicam犬0.2 mg/kg SC首次後0.1 mg/kg PO q24h,貓0.3 mg/kg SC單次"
+    - "阿片類持續輸注:Fentanyl 2-10 μg/kg/hr CRI,或Morphine 0.1-0.3 mg/kg/hr CRI"
+    - "MLK方案:Morphine 0.3 mg/kg/hr + Lidocaine 50 μg/kg/min + Ketamine 10 μg/kg/min混合CRI"
+    - "Gabapentin:犬10-20 mg/kg PO q8-12h,貓5-10 mg/kg PO q8-12h(術前1-2天開始)"
+    - "Tramadol:犬3-5 mg/kg PO q8h,貓(療效有限,不建議常規使用)"
+    - "局部麻醉:切口浸潤Bupivacaine 1-2 mg/kg或神經阻斷"
+    - "非藥物方法:冰敷(術後24小時)、熱敷(24-72小時後)、雷射治療、針灸"
+
+prognosis:
+  general: "適當的多模式鎮痛方案可顯著改善術後恢復,減少住院時間20-30%。大多數患者在術後24-72小時內疼痛可控制在輕度範圍。持續性疼痛罕見,通常與手術併發症或慢性疼痛症候群相關。副作用大多輕微且可管理,嚴重阿片類或NSAIDs毒性罕見。"
+
+prevention:
+  - 術前即開始鎮痛(預防性鎮痛優於反應性治療)
+  - 使用疼痛評分系統標準化評估
+  - 避免單一藥物依賴,採用多模式組合
+  - 根據手術類型和預期疼痛強度調整方案
+  - NSAIDs使用前確認腎功能和水合狀態正常
+  - 阿片類藥物術後逐漸減量避免戒斷
+  - 準備急救藥物(Naloxone逆轉阿片類,Maropitant治療噁心)
+  - 出院時提供充足的居家鎮痛藥物和清楚指示

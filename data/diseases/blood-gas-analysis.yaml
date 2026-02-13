@@ -1,0 +1,69 @@
+slug: blood-gas-analysis
+nameEn: Blood Gas Analysis
+nameZh: 血液氣體分析
+bodySystem: other
+description: 犬貓血液氣體分析,評估酸鹼平衡、氧合狀態、電解質。為重症醫學及麻醉監測的重要工具,可即時評估呼吸及代謝功能,指導治療調整。
+
+aliases:
+  - { alias: 血氣分析, language: zh }
+  - { alias: Arterial blood gas, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 重症、呼吸衰竭、麻醉監測
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓呼吸困難、代謝性酸中毒評估
+
+etiology:
+  categories:
+    - name: 血氣參數
+      examples:
+        - pH(酸鹼度)
+        - PaCO2(二氧化碳分壓)
+        - PaO2(氧分壓)
+        - HCO3-(碳酸氫根)
+        - BE(鹼剩餘)
+    - name: 電解質
+      examples:
+        - Na、K、Cl
+        - iCa(游離鈣)
+        - 血糖、乳酸
+
+clinicalSigns:
+  early:
+    - 血氣分析為診斷及監測工具
+  progressive:
+    - 呼吸困難、意識改變、休克
+
+diagnosis:
+  primaryTests:
+    - name: 酸鹼平衡判讀
+      notes: "pH<7.35酸血症,>7.45鹼血症。PaCO2>45呼吸性酸中毒,<35呼吸性鹼中毒"
+    - name: 氧合評估
+      notes: "PaO2正常>80 mmHg,<60為低血氧"
+    - name: 代謝性評估
+      notes: "HCO3-<18代謝性酸中毒,>28代謝性鹼中毒"
+  differentialDiagnoses:
+    - 呼吸性酸中毒或鹼中毒
+    - 代謝性酸中毒或鹼中毒
+    - 混合性酸鹼異常
+
+treatment:
+  medical:
+    - 血氣分析為診斷及監測工具
+    - 氧氣治療(低血氧)
+    - 通氣支持(高碳酸血症)
+    - 碳酸氫鈉(嚴重代謝性酸中毒)
+
+prognosis:
+  general: "血氣分析為重症醫學黃金標準,可即時評估酸鹼及氧合狀態,指導治療。"
+
+prevention:
+  - 動脈血採集(股動脈或背足動脈)
+  - 肝素化注射器
+  - 立即分析(<15分鐘)或冰浴保存
+  - 避免氣泡影響結果

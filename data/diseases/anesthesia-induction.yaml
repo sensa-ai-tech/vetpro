@@ -1,0 +1,70 @@
+slug: anesthesia-induction
+nameEn: Anesthesia Induction
+nameZh: 麻醉誘導
+bodySystem: emergency
+description: 從清醒或鎮靜狀態進入全身麻醉的過程。使用靜脈或吸入誘導劑,目標為快速、平穩、安全地達到氣管插管深度。
+
+aliases:
+  - { alias: 麻醉導入, language: zh }
+  - { alias: Induction of anesthesia, language: en }
+  - { alias: 全麻誘導, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 靜脈誘導為標準
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓誘導需更溫和避免喉痙攣
+
+etiology:
+  categories:
+    - name: 靜脈誘導劑
+      examples:
+        - Propofol(最常用)
+        - Alfaxalone(貓友善)
+        - Ketamine-Diazepam組合
+    - name: 吸入誘導
+      examples:
+        - Isoflurane/Sevoflurane面罩或箱
+        - 用於小動物或靜脈困難個體
+
+clinicalSigns:
+  early:
+    - 意識喪失、眼球腹側轉
+    - 下顎鬆弛、吞嚥反射消失
+    - 適合氣管插管深度
+  progressive:
+    - 氣管插管完成
+    - 轉換吸入麻醉維持
+    - 監控麻醉深度
+
+diagnosis:
+  primaryTests:
+    - name: 術前靜脈留置
+      notes: "確保順利給藥"
+    - name: 誘導深度評估
+      notes: "下顎張力、眼瞼反射、喉反射"
+  differentialDiagnoses:
+    - 肌肉注射誘導(不建議,吸收慢)
+    - 吸入誘導(應激大、污染環境)
+
+treatment:
+  medical:
+    - Propofol:4-6 mg/kg IV緩慢推注至效果(30-60秒)
+    - Alfaxalone:2-3 mg/kg IV緩慢推注(貓首選)
+    - Ketamine 5 mg/kg + Diazepam 0.5 mg/kg IV混合
+    - 誘導後立即氣管插管
+    - 氧氣流量:200 mL/kg/min初期,維持50-100 mL/kg/min
+
+prognosis:
+  general: "適當誘導安全性極高。Propofol可能短暫呼吸暫停需補充氧氣。Alfaxalone心血管影響小更適合心臟病患。誘導失敗需等待恢復後重新評估。"
+
+prevention:
+  - 術前適當鎮靜減少誘導劑量
+  - 氧氣預給3-5分鐘(面罩或流by)
+  - 緩慢推注避免呼吸抑制
+  - 備妥插管設備及緊急藥物
+  - 監控心率、呼吸、黏膜顏色

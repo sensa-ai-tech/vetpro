@@ -1,0 +1,88 @@
+slug: neonatal-hypothermia
+nameEn: Neonatal Hypothermia
+nameZh: 新生兒低體溫症
+bodySystem: other
+description: 新生犬貓因體溫調節能力不成熟，暴露於低溫環境或疾病狀態下體溫降至正常值以下(<35°C)。可導致代謝異常、免疫功能下降及死亡。
+
+aliases:
+  - { alias: 新生動物失溫, language: zh }
+  - { alias: Neonatal Cold Stress, language: en }
+  - { alias: Hypothermia in Neonates, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 出生後前3週體溫調節能力差，需外部熱源
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 與犬類似，尤其小型品種及早產兒
+
+etiology:
+  categories:
+    - name: 生理因素
+      examples:
+        - 體溫調節中樞未成熟
+        - 皮下脂肪缺乏
+        - 體表面積/體重比高
+        - 顫抖反射尚未發展
+    - name: 環境因素
+      examples:
+        - 環境溫度過低(<28°C)
+        - 濕度過高導致蒸發散熱
+        - 母體照顧不足
+        - 與手足分離
+    - name: 疾病因素
+      examples:
+        - 敗血症
+        - 低血糖
+        - 脫水
+        - 先天性疾病
+
+clinicalSigns:
+  early:
+    - 輕度低溫(34-35°C)：活力下降、吸乳減少
+    - 皮膚冰涼、四肢末端蒼白
+    - 心跳及呼吸變慢
+  progressive:
+    - 中重度低溫(<34°C)：嚴重嗜睡、昏迷
+    - 肌肉僵硬
+    - 心律不整
+    - 呼吸抑制
+    - 代謝性酸中毒
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 直腸溫度測量
+      notes: "正常範圍：第1週35-37°C，第2週36-38°C，第3週後37-39°C"
+    - name: 血糖測量
+      notes: "常合併低血糖"
+    - name: 血液氣體分析
+      notes: "評估酸鹼平衡"
+  differentialDiagnoses:
+    - 低血糖症
+    - 敗血症
+    - 休克
+    - 先天性疾病
+
+treatment:
+  medical:
+    - 緩慢復溫(每小時升高0.5-1°C)
+    - 輕度低溫：放回母體身邊、熱墊、毛毯包裹
+    - 中重度低溫：保溫箱(30-32°C)、溫熱輸液(37-38°C)
+    - 葡萄糖補充(5-10%葡萄糖1-2 mL口服或皮下)
+    - 避免快速加熱(易造成休克)
+    - 治療潛在疾病(抗生素、補液)
+    - 復溫後才可餵食(低溫時腸胃蠕動停止)
+
+prognosis:
+  general: "輕度低溫經適當處置預後良好；體溫<32°C且合併低血糖或敗血症者預後不佳"
+
+prevention:
+  - 產房溫度控制(30-32°C，前2週)
+  - 提供保溫燈或加熱墊
+  - 確保與母體及手足接觸
+  - 避免潮濕環境
+  - 每日監測體溫

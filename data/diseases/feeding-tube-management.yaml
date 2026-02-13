@@ -1,0 +1,90 @@
+slug: feeding-tube-management
+nameEn: Feeding Tube Management
+nameZh: 餵食管管理
+bodySystem: metabolic
+description: 各類餵食管(鼻胃管、食道管、胃造口管)的置放、照護及營養配方選擇。為無法自主進食動物提供營養支持的重要工具。
+
+aliases:
+  - { alias: 營養管灌, language: zh }
+  - { alias: Enteral Nutrition, language: en }
+  - { alias: Tube Feeding, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 厭食、手術後、神經疾病常需要
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 脂肪肝、慢性疾病厭食常需要
+
+etiology:
+  categories:
+    - name: 餵食管類型
+      examples:
+        - 鼻胃管/鼻食道管(短期，<7天)
+        - 食道造口管(中期，數週至數月)
+        - 胃造口管PEG(長期，數月至數年)
+        - 空腸造口管(特殊情況)
+    - name: 適應症
+      examples:
+        - 厭食>3天(貓)或>5天(犬)
+        - 口腔/食道疾病無法進食
+        - 神經疾病無法吞嚥
+        - 嚴重創傷或手術後
+        - 肝性腦病變恢復期
+
+clinicalSigns:
+  early:
+    - 成功營養支持：體重穩定、白蛋白改善
+    - 活力改善
+  progressive:
+    - 持續營養支持：疾病康復、體重恢復
+    - 併發症(若發生)：管路阻塞、感染、吸入性肺炎
+
+diagnosis:
+  primaryTests:
+    - name: 營養評估
+      notes: "體重、BCS、肌肉質量、白蛋白"
+    - name: 熱量需求計算
+      notes: "RER = 70 × (體重kg)^0.75"
+    - name: 管路確認
+      notes: "X光確認鼻胃管位置"
+  differentialDiagnoses:
+    - 厭食症
+    - 營養不良
+    - 各種原發疾病
+
+treatment:
+  medical:
+    - 鼻胃管/鼻食道管
+    - 局部麻醉下置放
+    - 需頭套防止移除
+    - 流質配方(商業液態營養品)
+    - 食道造口管(E-tube)
+    - 簡易手術置放
+    - 可給予泥狀食物
+    - 照護相對簡單
+    - 胃造口管(PEG tube)
+    - 內視鏡或手術置放
+    - 長期使用首選
+    - 可給予多種食物
+    - 營養配方
+    - 商業液態營養品(CliniCare、Rebound等)
+    - 商業罐頭打泥
+    - 自製流質食物
+    - 餵食原則
+    - 從RER的50%開始，逐步增加
+    - 少量多餐(每4-6小時)
+    - 餵食前抽氣確認胃排空
+    - 餵食後沖洗管路
+
+prognosis:
+  general: "適當使用餵食管可有效提供營養支持，改善疾病預後；併發症罕見"
+
+prevention:
+  - 及早置放餵食管(厭食早期)
+  - 適當管路照護
+  - 頭套防止自行移除
+  - 避免過快餵食(引起嘔吐)

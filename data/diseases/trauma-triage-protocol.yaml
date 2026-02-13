@@ -1,0 +1,55 @@
+slug: trauma-triage-protocol
+nameEn: Trauma Triage Protocol
+nameZh: 創傷分類處理流程
+bodySystem: emergency
+description: 系統性評估創傷患者,依生命威脅程度分類優先處理。使用ABCDE方法快速辨識危急狀況。
+
+aliases:
+  - { alias: 創傷檢傷, language: zh }
+  - { alias: Trauma Assessment, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 急診常見創傷評估
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 同犬
+
+etiology:
+  categories:
+    - name: ABCDE評估
+      examples:
+        - Airway氣道、Breathing呼吸、Circulation循環、Disability神經、Exposure暴露
+
+clinicalSigns:
+  early:
+    - 意識評估、呼吸型態
+    - 黏膜顏色、CRT
+  progressive:
+    - 依傷勢分級處理
+
+diagnosis:
+  primaryTests:
+    - name: 初級評估
+      notes: "ABCDE快速檢查,辨識立即威脅生命問題"
+    - name: 次級評估
+      notes: "全身詳細檢查,影像學評估"
+  differentialDiagnoses:
+    - 無(此為評估流程)
+
+treatment:
+  medical:
+    - 確保氣道通暢
+    - 氧氣治療
+    - 靜脈輸液復甦
+    - 止血、疼痛管理
+    - 依傷勢優先處理
+
+prognosis:
+  general: "系統性檢傷可提高存活率,優先處理威脅生命問題。"
+
+prevention:
+  - 預防創傷發生

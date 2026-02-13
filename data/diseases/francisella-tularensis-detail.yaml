@@ -1,0 +1,85 @@
+slug: francisella-tularensis-detail
+nameEn: Francisella Tularensis Detail
+nameZh: 兔熱病桿菌詳述
+bodySystem: infectious
+description: 兔熱病(Tularemia)是由兔熱病桿菌(Francisella tularensis)引起的高度傳染性人畜共通疾病,主要經蜱蟲叮咬、接觸感染齧齒類/兔類動物或食入污染肉類傳播。貓較犬易感,表現為高燒、淋巴結腫大及肝脾腫大,對人類具高傳染性,屬法定傳染病。
+
+aliases:
+  - { alias: 兔熱病, language: zh }
+  - { alias: Tularemia, language: en }
+  - { alias: Rabbit Fever, language: en }
+  - { alias: 鹿蠅熱, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬對F. tularensis具相對抵抗力,多數感染輕微或無症狀,但可作為帶菌蜱蟲運輸宿主
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓高度易感,戶外狩獵貓風險最高,可發展為嚴重敗血症並傳染給人類
+
+etiology:
+  categories:
+    - name: 細菌性感染(人畜共通)
+      examples:
+        - 蜱蟲叮咬傳播(主要媒介:Dermacentor、Amblyomma)
+        - 食入感染的兔類、齧齒類動物
+        - 接觸感染動物體液、組織(經皮膚傷口)
+        - 吸入含菌氣溶膠(處理屍體時)
+
+clinicalSigns:
+  early:
+    - 突發高燒(40-41°C)
+    - 精神極度沉鬱、厭食
+    - 淋巴結腫大、疼痛(下頜、咽喉、腹股溝)
+    - 口腔潰瘍、舌炎(貓常見)
+  progressive:
+    - 腺型:淋巴結化膿、破潰
+    - 肝脾腫大、黃疸
+    - 敗血症:DIC、休克
+    - 肺型:呼吸困難、咳嗽
+    - 嘔吐、腹瀉
+    - 皮膚潰瘍(接觸部位)
+    - 未治療死亡率30-60%
+
+diagnosis:
+  primaryTests:
+    - name: 細菌培養
+      notes: "淋巴結吸出物、血液F. tularensis培養(需特殊培養基,BSL-3實驗室,高傳染風險)"
+    - name: PCR檢測
+      notes: "血液、淋巴結、組織F. tularensis DNA檢測(快速診斷首選)"
+    - name: 血清學檢查
+      notes: "凝集試驗或ELISA檢測抗F. tularensis抗體(效價≥1:160有診斷意義)"
+    - name: 血液學檢查
+      notes: "白血球增多或減少、血小板減少、貧血"
+    - name: 生化檢查
+      notes: "肝酵素升高、黃疸指數升高、低白蛋白血症"
+  differentialDiagnoses:
+    - 鼠疫(Yersinia pestis)
+    - 貓抓病(Bartonella henselae)
+    - 嚴重細菌性淋巴結炎
+    - 淋巴瘤
+    - 敗血症(其他病原)
+
+treatment:
+  medical:
+    - 立即隔離並通報動物防疫機關(法定傳染病)
+    - 抗生素(首選):Gentamicin 5-8 mg/kg IV/IM SID x 14天或Doxycycline 5-10 mg/kg PO BID x 14-21天
+    - 替代抗生素:Enrofloxacin 5-10 mg/kg PO SID x 14-21天或Chloramphenicol 50 mg/kg PO TID x 14天
+    - 支持性照護:靜脈輸液、營養支持
+    - 淋巴結膿瘍引流(需在嚴格防護下進行)
+    - 人員防護:全套PPE(口罩、手套、隔離衣、護目鏡)
+    - 環境消毒:10%漂白水
+
+prognosis:
+  general: "預後謹慎。早期診斷及抗生素治療,存活率約70-80%。敗血型及肺型預後較差,死亡率可達30-60%。貓對人類傳染風險極高,需嚴格隔離。康復後可能產生長期免疫。"
+
+prevention:
+  - 蜱蟲防治:全年使用殺蜱藥物
+  - 避免貓狗接觸野生兔類、齧齒類動物或其屍體
+  - 流行區限制貓戶外狩獵活動
+  - 處理野生動物屍體時戴手套、口罩
+  - 人員暴露後預防:Doxycycline 100 mg PO BID x 14天或Ciprofloxacin 500 mg PO BID x 14天
+  - 環境滅蜱及齧齒類控制

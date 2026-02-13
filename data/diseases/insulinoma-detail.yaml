@@ -1,0 +1,84 @@
+slug: insulinoma-detail
+nameEn: Insulinoma Detail
+nameZh: 胰島素瘤詳述
+bodySystem: endocrine
+description: 胰臟 beta 細胞功能性腫瘤，持續分泌過量胰島素導致低血糖。犬較常見，症狀與低血糖嚴重程度相關。手術切除為首選，部分切除後可合併內科管理。
+
+aliases:
+  - { alias: 胰島細胞瘤, language: zh }
+  - { alias: 胰臟 beta 細胞瘤, language: zh }
+  - { alias: Insulinoma, language: en }
+  - { alias: Pancreatic Beta Cell Tumor, language: en }
+  - { alias: Insulin-secreting Tumor, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 犬最常見的胰臟內分泌腫瘤。中大型犬好發（愛爾蘭塞特犬、德國牧羊犬、金毛獵犬、拉布拉多）。中老年犬（平均 9-10 歲）。多數為惡性，約 50% 確診時已轉移。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓胰島素瘤極少見。臨床表現與犬相似，但診斷經驗及治療資料有限。
+
+etiology:
+  categories:
+    - name: 病理生理學
+      examples:
+        - Beta 細胞腫瘤不受正常回饋機制調控
+        - 持續分泌過量胰島素
+        - 導致持續性或反覆性低血糖
+        - 大部分為惡性（腺癌），少數為良性腺瘤
+    - name: 轉移模式
+      examples:
+        - 區域淋巴結為最常見轉移部位
+        - 肝臟轉移常見
+        - 確診時約 50% 已有轉移
+
+clinicalSigns:
+  early:
+    - 間歇性虛弱或無力
+    - 餐前或運動後症狀加重
+    - 肌肉震顫
+    - 共濟失調
+  progressive:
+    - 癲癇發作（低血糖引起）
+    - 意識改變
+    - 後肢癱瘓（周邊神經病變）
+    - 體重增加（胰島素促進合成代謝）
+    - 昏迷
+
+diagnosis:
+  primaryTests:
+    - name: 空腹血糖與胰島素同步測量
+      notes: "低血糖（<60 mg/dL）伴不當升高的胰島素值（正常或升高）為診斷關鍵。修正胰島素比值 (AIGR) 可輔助診斷"
+    - name: 腹部超音波
+      notes: "可偵測胰臟腫塊（常 <2 cm，偵測率約 30-75%）。評估肝臟及淋巴結轉移"
+    - name: CT 增強掃描
+      notes: "增強 CT 對小型胰島素瘤的偵測率優於超音波"
+  differentialDiagnoses:
+    - 肝臟疾病（肝衰竭、肝腫瘤）
+    - 腎上腺皮質功能低下症
+    - 敗血症
+    - 藥物性低血糖
+    - 副腫瘤性低血糖（其他腫瘤）
+
+treatment:
+  surgical:
+    - 胰臟部分切除術為首選
+    - 術中仔細探查整個胰臟及腹腔
+    - 可見轉移灶儘量切除
+  medical:
+    - "少量多餐（高蛋白、低單醣飲食）"
+    - "Prednisone 0.25-0.5 mg/kg PO BID（促進糖質新生）"
+    - "Diazoxide 5-30 mg/kg PO BID（抑制胰島素分泌）"
+    - "Octreotide 10-40 mcg SC BID-TID（生長抑素類似物）"
+    - 避免長時間禁食及劇烈運動
+    - 緊急低血糖時靜注葡萄糖（避免大量 bolus，防止反彈性胰島素釋放）
+
+prognosis:
+  general: "手術切除後中位生存時間約 12-18 個月。僅內科管理約 6-12 個月。無轉移且完全切除者預後最佳（可達 2-3 年）。已轉移者預後較差但內科管理仍可維持生活品質。"
+
+prevention:
+  - 反覆性低血糖發作應系統性排除胰島素瘤
+  - 中老年犬出現不明原因虛弱或癲癇應檢測空腹血糖

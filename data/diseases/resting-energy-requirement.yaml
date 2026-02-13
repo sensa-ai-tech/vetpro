@@ -1,0 +1,79 @@
+slug: resting-energy-requirement
+nameEn: Resting Energy Requirement
+nameZh: 靜息能量需求
+bodySystem: metabolic
+description: 動物在靜息狀態下維持基本生理功能所需的最低熱量。為所有營養計算的基礎，疾病狀態通常使用RER而非MER。
+
+aliases:
+  - { alias: RER, language: zh }
+  - { alias: Basal Energy Requirement, language: en }
+  - { alias: BER, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: RER為營養計算基礎
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 計算方式相同
+
+etiology:
+  categories:
+    - name: RER定義
+      examples:
+        - 熱中性環境下靜息狀態的能量需求
+        - 維持基本生理功能(呼吸、循環、代謝)
+        - 不包含活動、生長、繁殖需求
+    - name: RER計算公式
+      examples:
+        - 標準公式：RER = 70 × (體重kg)^0.75
+        - 簡化公式：RER = 30 × 體重kg + 70(2-45kg)
+        - 極小型(<2kg)：RER = 體重kg × 70
+        - 極大型(>45kg)：使用標準公式
+
+clinicalSigns:
+  early:
+    - 適當RER：體重穩定、營養指標正常
+    - 低於RER：體重減輕、能量不足
+    - 超過RER需求：視疾病狀態而定
+  progressive:
+    - 長期低於RER：嚴重營養不良
+    - 疾病恢復：可增加至RER以上
+
+diagnosis:
+  primaryTests:
+    - name: 體重測量
+      notes: "精確體重(kg)"
+    - name: 營養評估
+      notes: "BCS、白蛋白"
+  differentialDiagnoses:
+    - 各種需營養支持的疾病狀態
+
+treatment:
+  medical:
+    - RER計算範例
+    - 5kg貓：RER = 70 × 5^0.75 = 234 kcal/day
+    - 10kg犬：RER = 70 × 10^0.75 = 394 kcal/day
+    - 25kg犬：RER = 70 × 25^0.75 = 742 kcal/day
+    - 簡化公式驗證(10kg)
+    - RER = 30 × 10 + 70 = 370 kcal/day(誤差6%)
+    - 疾病狀態使用RER
+    - 住院動物：從RER的25-50%開始
+    - 重症：逐步增加至RER
+    - 通常不超過RER(避免再餵食症候群)
+    - 手術恢復：RER × 1.0-1.25
+    - RER vs MER
+    - MER = RER × 活動係數(1.2-3.0)
+    - 健康維持使用MER
+    - 疾病/住院使用RER
+
+prognosis:
+  general: "RER為營養計算的基礎，正確計算對營養支持至關重要"
+
+prevention:
+  - 使用精確體重
+  - 選擇適當公式
+  - 疾病狀態從低熱量開始
+  - 根據反應調整

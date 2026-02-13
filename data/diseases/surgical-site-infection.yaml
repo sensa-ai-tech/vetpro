@@ -1,0 +1,75 @@
+slug: surgical-site-infection
+nameEn: Surgical Site Infection
+nameZh: 手術部位感染
+bodySystem: infectious
+description: 手術後切口或深層組織的細菌感染。分為表淺切口、深層切口及器官/腔室感染。早期識別及治療可避免嚴重併發症。
+
+aliases:
+  - { alias: SSI, language: en }
+  - { alias: 術後感染, language: zh }
+  - { alias: 切口感染, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 發生率2-5%(清潔手術)至15-20%(污染手術)
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓感染率略低於犬
+
+etiology:
+  categories:
+    - name: 危險因子
+      examples:
+        - 手術時間過長(>90分鐘)
+        - 污染或髒污手術
+        - 低體溫、低血壓
+        - 免疫抑制(糖尿病、庫興氏症)
+    - name: 常見病原
+      examples:
+        - Staphylococcus intermedius/pseudintermedius
+        - E. coli
+        - Streptococcus spp.
+
+clinicalSigns:
+  early:
+    - 切口紅腫、溫度升高
+    - 化膿性分泌物
+    - 疼痛增加、舔舐
+  progressive:
+    - 傷口裂開
+    - 全身性發燒、嗜睡
+    - 深層感染:膿瘍或敗血症
+
+diagnosis:
+  primaryTests:
+    - name: 切口檢查
+      notes: "發炎徵象、分泌物性質"
+    - name: 細菌培養及敏感性
+      notes: "深部組織或膿液培養"
+    - name: 血液檢查
+      notes: "白血球升高、左移"
+  differentialDiagnoses:
+    - 縫線反應(無菌性炎症)
+    - 血清腫
+    - 正常癒合反應
+
+treatment:
+  medical:
+    - 抗生素:經驗性Cephalexin 22-30 mg/kg PO q12h,依培養調整
+    - 切口管理:移除縫線促進引流,每日清潔
+    - 嚴重感染:靜脈抗生素Ampicillin 20-40 mg/kg IV q6-8h
+    - 深層感染:手術清創及沖洗
+    - 止痛:Carprofen 2.2 mg/kg PO q12h
+
+prognosis:
+  general: "表淺感染經治療預後良好。深層或器官感染需積極處理,可能延長恢復期數週。MRSA感染治療困難,預後較差。"
+
+prevention:
+  - 術前抗生素:Cefazolin 22 mg/kg IV術前30-60分鐘
+  - 嚴格無菌技術及手術室規範
+  - 縮短手術時間、溫和組織操作
+  - 維持術中正常體溫及血壓
+  - 術後適當傷口照護及伊莉莎白項圈

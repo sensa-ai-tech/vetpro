@@ -1,0 +1,77 @@
+slug: graft-versus-host-disease
+nameEn: Graft Versus Host Disease
+nameZh: 移植物抗宿主疾病
+bodySystem: immunology
+description: 骨髓或造血幹細胞移植後，供體淋巴球攻擊受體組織之免疫反應。罕見於犬貓，主要發生於異基因骨髓移植或輸血。
+
+aliases:
+  - { alias: GVHD, language: en }
+  - { alias: 移植抗宿主反應, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 骨髓移植罕見，輸血相關GVHD極罕見
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓FeLV治療骨髓移植曾有案例報告
+
+etiology:
+  categories:
+    - name: 異基因骨髓移植
+      examples:
+        - HLA不匹配供體
+        - 免疫抑制不足
+        - 供體T細胞活化
+    - name: 輸血相關
+      examples:
+        - 未照射之全血或濃厚紅血球
+        - 免疫功能低下受體
+        - 供體淋巴球植入
+
+clinicalSigns:
+  early:
+    - 急性期（移植後30天內）：發燒、腹瀉、皮膚紅疹
+    - 肝功能異常
+    - 血球減少
+  progressive:
+    - 慢性期（>100天）：皮膚硬化、色素改變
+    - 慢性腹瀉、體重減輕
+    - 肝纖維化
+    - 免疫功能低下、感染
+
+diagnosis:
+  primaryTests:
+    - name: 臨床分期系統
+      notes: "評估皮膚、肝臟、腸道受累程度"
+    - name: 皮膚組織切片
+      notes: "基底細胞液化變性、衛星細胞壞死"
+    - name: 肝功能檢查
+      notes: "膽紅素、ALT、ALP上升"
+    - name: 供體嵌合體分析
+      notes: "確認供體細胞存在"
+  differentialDiagnoses:
+    - 藥物反應
+    - 感染性疾病
+    - 原發性免疫疾病
+    - 炎症性腸病
+
+treatment:
+  medical:
+    - 第一線：增加免疫抑制
+    - 甲基潑尼松龍 2 mg/kg IV q12h
+    - 環孢素 10-15 mg/kg PO q12h
+    - 黴酚酸酯（mycophenolate）10 mg/kg PO q12h
+    - 支持療法：營養支持、抗生素（預防感染）
+    - 難治型：抗胸腺細胞球蛋白（ATG）
+
+prognosis:
+  general: "預後保留至不良。急性嚴重GVHD死亡率高。慢性GVHD需長期免疫抑制，生活品質受影響。"
+
+prevention:
+  - 骨髓移植前HLA配型
+  - 供體血液照射（25-50 Gy）去除淋巴球
+  - 預防性免疫抑制（環孢素、甲胺蝶呤）
+  - 避免對免疫低下動物輸注未處理血品

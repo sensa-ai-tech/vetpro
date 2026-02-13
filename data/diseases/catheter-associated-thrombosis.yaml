@@ -1,0 +1,87 @@
+slug: catheter-associated-thrombosis
+nameEn: Catheter Associated Thrombosis
+nameZh: 導管相關血栓
+bodySystem: vascular
+description: 因靜脈導管留置引起的血管內血栓形成，為住院動物常見的醫源性併發症，可導致靜脈阻塞、感染及血栓栓塞等嚴重後果。
+
+aliases:
+  - { alias: 導管相關血栓性靜脈炎, language: zh }
+  - { alias: 靜脈留置針血栓, language: zh }
+  - { alias: Catheter-related thrombophlebitis, language: en }
+  - { alias: IV catheter thrombosis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬靜脈導管相關血栓為住院犬最常見的血管併發症。中央靜脈導管風險高於周邊靜脈導管。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓血管較細，導管相關損傷風險相對較高。長期住院輸液治療時需密切監測。
+
+etiology:
+  categories:
+    - name: 導管相關因素
+      examples:
+        - 血管內膜機械性損傷
+        - 導管材質刺激
+        - 留置時間過長
+        - 導管管徑過大
+    - name: 患者因素
+      examples:
+        - 高凝血狀態
+        - 脫水
+        - 低血壓
+        - 全身性炎症反應
+    - name: 輸液因素
+      examples:
+        - 高滲溶液
+        - 化療藥物
+        - pH 值極端的藥物
+        - 不適當的沖洗
+
+clinicalSigns:
+  early:
+    - 導管部位腫脹
+    - 輸液速率下降
+    - 導管沖洗阻力增加
+    - 局部紅腫
+  progressive:
+    - 靜脈硬化條索狀
+    - 患肢水腫
+    - 發燒（合併感染）
+    - 導管完全阻塞
+
+diagnosis:
+  primaryTests:
+    - name: 臨床評估
+      notes: "導管部位視診與觸診。靜脈充盈度評估。腫脹與疼痛程度"
+    - name: 超音波
+      notes: "確認血栓存在與範圍。Doppler 評估血流"
+  differentialDiagnoses:
+    - 導管部位感染（無血栓）
+    - 藥物外滲
+    - 蜂窩織炎
+    - 靜脈炎（無血栓）
+
+treatment:
+  medical:
+    - 立即移除導管
+    - 溫敷促進再通
+    - 嚴重或高風險病例——抗凝血（Enoxaparin）
+    - 合併感染——全身性抗生素
+    - 替代靜脈通路建立
+    - 止痛
+  surgical: []
+
+prognosis:
+  general: "移除導管後多數血栓自行再通，預後良好。感染性血栓性靜脈炎需適當抗菌治療。血栓脫落造成肺栓塞極罕見但可致命。"
+
+prevention:
+  - 無菌技術置放導管
+  - 定期沖洗維護導管通暢
+  - 導管留置時間最小化（周邊每 72 小時更換）
+  - 選擇適當管徑導管
+  - 每日評估導管部位
+  - 避免經同一靜脈反覆穿刺

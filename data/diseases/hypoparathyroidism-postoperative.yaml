@@ -1,0 +1,81 @@
+slug: hypoparathyroidism-postoperative
+nameEn: Hypoparathyroidism Postoperative
+nameZh: 術後副甲狀腺功能低下
+bodySystem: endocrine
+description: 甲狀腺或副甲狀腺手術後副甲狀腺誤切除、損傷或血液供應受損,導致副甲狀腺激素(PTH)分泌不足,引發低血鈣危象。
+
+aliases:
+  - { alias: 醫源性副甲狀腺功能低下, language: zh }
+  - { alias: Iatrogenic hypoparathyroidism, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 甲狀腺腫瘤切除術後常見併發症
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓雙側甲狀腺切除術後高風險,發生率可達10-30%
+
+etiology:
+  categories:
+    - name: 手術損傷
+      examples:
+        - 副甲狀腺誤切除(與甲狀腺緊密相連)
+        - 副甲狀腺血液供應損傷
+        - 雙側甲狀腺切除時副甲狀腺同時移除
+        - 副甲狀腺腫瘤切除術
+    - name: 暫時性功能低下
+      examples:
+        - 手術創傷導致副甲狀腺暫時性休克
+        - 術後水腫壓迫副甲狀腺
+        - 通常於數週至數月恢復
+
+clinicalSigns:
+  early:
+    - 術後12-72小時出現症狀
+    - 焦躁不安、過度喘息
+    - 肌肉震顫、抽搐
+  progressive:
+    - 強直性痙攣、癲癇發作
+    - 面部搔癢(低血鈣刺激感覺神經)
+    - 發熱、心律不整
+    - 嚴重低血鈣致死
+
+diagnosis:
+  primaryTests:
+    - name: 血清總鈣
+      notes: "顯著降低(<7 mg/dL 或 <1.75 mmol/L),<6 mg/dL時高危"
+    - name: 離子鈣
+      notes: "更準確反映低血鈣(<0.8 mmol/L)"
+    - name: PTH
+      notes: "抑制或不可測(正常應為升高以代償低血鈣)"
+    - name: 磷
+      notes: "升高(PTH不足時腎臟無法排磷)"
+  differentialDiagnoses:
+    - 原發性副甲狀腺功能低下(罕見)
+    - 低白蛋白血症導致總鈣下降(離子鈣正常)
+    - 腎衰竭(磷升高但PTH升高)
+    - 急性胰臟炎(鈣皂化)
+
+treatment:
+  medical:
+    - 緊急治療(離子鈣<0.8 mmol/L 或癲癇):
+      - 10% calcium gluconate 0.5-1.5 mL/kg IV緩慢注射(10-30分鐘)
+      - 監測心律,若心搏過緩立即停止
+    - CRI維持(calcium gluconate 0.5-1.5 mL/kg/hr IV稀釋於生理食鹽水)
+    - 口服鈣補充(calcium carbonate 25-50 mg/kg PO TID,與食物給予)
+    - 維生素D補充(Calcitriol 0.02-0.06 μg/kg PO SID,促進鈣吸收)
+    - 監測血鈣每4-12小時,調整補充劑量
+    - 暫時性功能低下可能於數週後恢復,逐步減停補充
+    - 永久性功能低下需終生補充
+
+prognosis:
+  general: "暫時性功能低下預後良好,多於1-3個月內恢復;永久性功能低下需終生補充,適當治療可維持正常生活品質。"
+
+prevention:
+  - 甲狀腺手術時仔細辨識並保留副甲狀腺
+  - 保護副甲狀腺血液供應
+  - 術後密切監測血鈣(每日檢測連續3-5天)
+  - 高危手術(雙側甲狀腺切除)術後預防性補充鈣

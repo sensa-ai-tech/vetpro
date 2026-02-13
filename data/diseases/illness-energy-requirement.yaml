@@ -1,0 +1,96 @@
+slug: illness-energy-requirement
+nameEn: Illness Energy Requirement
+nameZh: 疾病狀態能量需求
+bodySystem: metabolic
+description: 重症或疾病狀態下的能量需求計算。與健康動物不同，疾病狀態通常使用RER且需謹慎增加以避免再餵食症候群。
+
+aliases:
+  - { alias: 重症能量需求, language: zh }
+  - { alias: Critical Illness Energy, language: en }
+  - { alias: Hospitalized Animal Nutrition, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 重症照護常見
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓對營養不足特別敏感
+
+etiology:
+  categories:
+    - name: 疾病對代謝的影響
+      examples:
+        - 重症通常增加代謝率
+        - 但過度餵食有害(高血糖、肝功能負擔)
+        - 目標：提供RER而非增加熱量
+    - name: 再餵食症候群風險
+      examples:
+        - 長期厭食後突然大量餵食
+        - 導致電解質嚴重失衡
+        - 低磷、低鉀、低鎂
+        - 可致命
+    - name: 疾病狀態能量需求
+      examples:
+        - 住院/重症：RER × 1.0
+        - 手術恢復：RER × 1.0-1.25
+        - 創傷：RER × 1.0-1.5
+        - 敗血症：RER × 1.0-1.25
+        - 燒傷：RER × 1.25-2.0
+
+clinicalSigns:
+  early:
+    - 適當營養：體重穩定、白蛋白改善
+    - 過度餵食：高血糖、肝酵素升高
+    - 不足：體重持續下降
+  progressive:
+    - 再餵食症候群：嚴重虛弱、心律不整、呼吸衰竭
+    - 適當營養：疾病恢復
+
+diagnosis:
+  primaryTests:
+    - name: 營養評估
+      notes: "體重、BCS、白蛋白、總蛋白"
+    - name: 電解質監測
+      notes: "特別注意磷、鉀、鎂"
+    - name: 血糖監測
+      notes: "避免高血糖"
+  differentialDiagnoses:
+    - 再餵食症候群
+    - 過度餵食併發症
+    - 營養不足
+
+treatment:
+  medical:
+    - 疾病狀態餵食原則
+    - 1. 計算RER：70 × (體重kg)^0.75
+    - 2. 第1天從RER的25-33%開始
+    - 3. 逐步增加至RER(3-5天)
+    - 4. 通常不超過RER
+    - 5. 監測電解質、血糖
+    - 範例(10kg重症犬)
+    - RER = 394 kcal/day
+    - 第1天：394 × 0.25 = 98 kcal
+    - 第2天：394 × 0.50 = 197 kcal
+    - 第3天：394 × 0.75 = 295 kcal
+    - 第4天：394 × 1.0 = 394 kcal
+    - 再餵食症候群預防
+    - 緩慢增加餵食量
+    - 監測電解質(特別是磷)
+    - 補充電解質(若低下)
+    - 維生素B群補充
+    - 特殊情況調整
+    - 敗血症：RER × 1.0-1.25
+    - 多重創傷：RER × 1.25-1.5
+    - 嚴重燒傷：RER × 1.5-2.0
+
+prognosis:
+  general: "謹慎的營養支持可改善重症動物預後；過度餵食或過快增加有害"
+
+prevention:
+  - 從低熱量開始
+  - 逐步增加
+  - 密切監測電解質
+  - 避免過度餵食

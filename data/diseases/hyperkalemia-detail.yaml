@@ -1,0 +1,76 @@
+slug: hyperkalemia-detail
+nameEn: Hyperkalemia Detail
+nameZh: 高血鉀症（詳細）
+bodySystem: electrolyte
+description: 血清鉀離子濃度高於正常範圍（犬貓 >5.5 mEq/L），常因急性腎損傷、尿路阻塞或愛迪生氏症引起。嚴重高血鉀可導致致命性心律不整，需緊急處理。
+
+aliases:
+  - { alias: 血鉀過高, language: zh }
+  - { alias: Hyperpotassemia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 常見於急性腎損傷、尿路阻塞或愛迪生氏症
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓尿道阻塞（FLUTD）最常見原因，可迅速致命
+
+etiology:
+  categories:
+    - name: 腎臟排泄減少
+      examples:
+        - 急性腎損傷（AKI）
+        - 尿路阻塞（貓 FLUTD）
+        - 無尿或少尿
+    - name: 內分泌異常
+      examples:
+        - 愛迪生氏症（低腎上腺皮質功能）
+        - 糖尿病酮酸中毒
+    - name: 細胞外轉移
+      examples:
+        - 腫瘤溶解症候群
+        - 嚴重溶血或橫紋肌溶解
+        - 代謝性酸中毒
+
+clinicalSigns:
+  early:
+    - 肌肉無力、嗜睡
+    - 心搏過緩
+  progressive:
+    - 嚴重心律不整（心室顫動、心室停止）
+    - 虛脫、休克
+    - 呼吸抑制、麻痺
+
+diagnosis:
+  primaryTests:
+    - name: 血清電解質
+      notes: "K >5.5 mEq/L（輕度 5.5-6.5, 中度 6.5-8.0, 嚴重 >8.0）"
+    - name: 心電圖
+      notes: "P 波消失、QRS 波增寬、尖峰 T 波、心搏過緩"
+    - name: 血液氣體分析
+      notes: "評估酸鹼平衡及腎功能"
+  differentialDiagnoses:
+    - 假性高血鉀（溶血、血小板增多）
+    - 愛迪生氏症
+    - 急性腎損傷
+    - 尿路阻塞
+
+treatment:
+  medical:
+    - 緊急處理（K >7.0 或有心電圖異常）：
+      - Calcium gluconate 10% 0.5-1 mL/kg IV slowly（保護心肌，不降鉀）
+      - Regular insulin 0.1-0.25 U/kg IV + Dextrose 1-2 g/U insulin（促進鉀進入細胞）
+      - Sodium bicarbonate 1-2 mEq/kg IV（糾正酸中毒）
+    - 利尿或透析排除鉀（若腎功能許可）
+    - 治療潛在病因（解除尿路阻塞、補充腎上腺皮質素）
+
+prognosis:
+  general: "預後取決於潛在病因及治療時機。尿路阻塞或愛迪生氏症經治療後預後良好，但急性腎損傷預後保留。嚴重高血鉀（>8.5 mEq/L）未及時治療可能數小時內死於心律不整。"
+
+prevention:
+  - 尿路疾病患者定期監測血鉀
+  - 愛迪生氏症患者終生補充激素
+  - 急性腎損傷早期積極治療

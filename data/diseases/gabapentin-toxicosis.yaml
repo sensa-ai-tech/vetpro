@@ -1,0 +1,64 @@
+slug: gabapentin-toxicosis
+nameEn: Gabapentin Toxicosis
+nameZh: 加巴噴丁中毒
+bodySystem: toxicology
+description: 加巴噴丁為神經痛及抗癲癇藥,安全範圍大,但過量可引起嗜睡、共濟失調及呼吸抑制。液體製劑含木糖醇需特別注意。
+
+aliases:
+  - { alias: 加巴噴丁過量, language: zh }
+  - { alias: Gabapentin Overdose, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 常見於劑量過高或誤食
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 較少使用高劑量
+
+etiology:
+  categories:
+    - name: 劑量過高
+      examples:
+        - 超過建議劑量(>50 mg/kg)
+    - name: 液體製劑含木糖醇
+      examples:
+        - 人用Gabapentin液可能含木糖醇(對犬致命)
+
+clinicalSigns:
+  early:
+    - 嗜睡、共濟失調
+    - 過度鎮靜
+  progressive:
+    - 呼吸抑制
+    - 低血壓
+    - 若液體製劑含木糖醇: 低血糖、肝衰竭
+
+diagnosis:
+  primaryTests:
+    - name: 暴露史
+      notes: "確認Gabapentin劑量及劑型"
+    - name: 血糖檢測
+      notes: "若液體製劑,緊急檢測血糖"
+  differentialDiagnoses:
+    - 其他鎮靜劑過量
+
+treatment:
+  medical:
+    - 無特異解毒劑
+    - 支持性療法: 靜脈輸液、氧氣
+    - 若液體製劑含木糖醇:
+      - 葡萄糖IV治療低血糖
+      - 保肝治療
+    - 監測呼吸及意識狀態
+    - 多數12-24小時內恢復
+
+prognosis:
+  general: "單純Gabapentin過量預後良好。若含木糖醇則視肝損傷程度,可能致命。"
+
+prevention:
+  - 精確計算劑量
+  - 犬避免使用人用液體製劑(可能含木糖醇)
+  - 使用獸醫專用膠囊劑型

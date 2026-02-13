@@ -1,0 +1,77 @@
+slug: methomyl-toxicosis
+nameEn: Methomyl Toxicosis
+nameZh: 滅必蝨中毒
+bodySystem: toxicology
+description: 滅必蝨為氨基甲酸酯類殺蟲劑,抑制乙醯膽鹼酯酶,引起膽鹼能症候群。與有機磷類似但作用可逆,恢復較快。
+
+aliases:
+  - { alias: 氨基甲酸酯中毒, language: zh }
+  - { alias: Carbamate Poisoning, language: en }
+  - { alias: Lannate Toxicity, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 誤食農藥或污染食物
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 舔舐污染毛髮或接觸噴灑區域
+
+etiology:
+  categories:
+    - name: 直接攝入
+      examples:
+        - 誤食殺蟲劑顆粒
+        - 攝入污染食物或水
+    - name: 皮膚吸收
+      examples:
+        - 接觸高濃度農藥
+        - 舔舐噴灑後的皮毛
+
+clinicalSigns:
+  early:
+    - 毒蕈鹼型症狀: 流涎、嘔吐、腹瀉、瞳孔縮小
+    - 支氣管收縮、呼吸困難
+    - 心搏過緩
+  progressive:
+    - 尼古丁型症狀: 肌肉震顫、虛弱、麻痺
+    - 癲癇發作
+    - 呼吸衰竭、昏迷
+    - 死亡(嚴重案例)
+
+diagnosis:
+  primaryTests:
+    - name: 臨床症狀評估
+      notes: "膽鹼能症候群(SLUDDE: 流涎、流淚、尿失禁、腹瀉、消化障礙、興奮)"
+    - name: 紅血球膽鹼酯酶活性
+      notes: "活性降低<50%提示氨基甲酸酯中毒(但恢復快,可能正常)"
+    - name: 阿托品反應試驗
+      notes: "0.04 mg/kg IV,症狀改善支持診斷"
+  differentialDiagnoses:
+    - 有機磷中毒(作用不可逆,持續時間較長)
+    - 新菸鹼類中毒
+    - 毒蕈中毒
+
+treatment:
+  medical:
+    - 皮膚除污: 溫水及洗潔劑徹底清洗
+    - 催吐(若口服1-2小時內且無嚴重症狀): 3% H2O2 1-2 mL/kg PO
+    - 活性碳 1-2 g/kg PO
+    - 阿托品(Atropine)治療毒蕈鹼型症狀:
+      - 初始劑量 0.2-0.4 mg/kg IV(1/4 IV,其餘SC/IM)
+      - 依症狀調整,每3-6小時重複
+      - 以黏膜乾燥、心率正常為目標
+    - 禁用Pralidoxime(2-PAM),對氨基甲酸酯無效且可能有害
+    - 癲癇控制: Diazepam 0.5-1 mg/kg IV
+    - 氧氣治療、靜脈輸液
+    - 監測呼吸及心律
+
+prognosis:
+  general: "因作用可逆,預後優於有機磷中毒。及時治療24-48小時內多可恢復。延遲治療或大量暴露可能致命。"
+
+prevention:
+  - 依標示使用殺蟲劑,避免過量
+  - 施藥後隔離寵物至少24-48小時
+  - 妥善存放農藥,防止寵物接觸

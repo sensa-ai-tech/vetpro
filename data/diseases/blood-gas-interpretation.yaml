@@ -1,0 +1,54 @@
+slug: blood-gas-interpretation
+nameEn: Blood Gas Interpretation
+nameZh: 血液氣體分析判讀
+bodySystem: other
+description: 評估酸鹼平衡、氧合及通氣狀態。包括pH、PaCO2、PaO2、HCO3、BE、乳酸等參數判讀。
+
+aliases:
+  - { alias: 血氣分析, language: zh }
+  - { alias: ABG Analysis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 重症監護常規檢查
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 同犬
+
+etiology:
+  categories:
+    - name: 酸鹼異常類型
+      examples:
+        - 代謝性酸中毒、代謝性鹼中毒、呼吸性酸中毒、呼吸性鹼中毒
+
+clinicalSigns:
+  early:
+    - 依病因不同
+  progressive:
+    - 嚴重酸鹼失衡可能致命
+
+diagnosis:
+  primaryTests:
+    - name: 血液氣體分析
+      notes: "動脈血採樣,評估pH、PCO2、PO2、HCO3、BE"
+    - name: 判讀步驟
+      notes: "1.評估pH 2.判斷主要異常(代謝或呼吸) 3.評估代償 4.評估氧合"
+  differentialDiagnoses:
+    - 依病因而異
+
+treatment:
+  medical:
+    - 治療根本病因
+    - 代謝性酸中毒: 碳酸氫鈉(pH<7.1)
+    - 呼吸性酸中毒: 改善通氣
+    - 氧合不足: 氧氣治療或機械通氣
+    - 監測治療反應
+
+prognosis:
+  general: "及時糾正酸鹼及氧合異常可改善預後。"
+
+prevention:
+  - 監測高危患者

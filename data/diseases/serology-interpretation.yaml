@@ -1,0 +1,56 @@
+slug: serology-interpretation
+nameEn: Serology Interpretation
+nameZh: 血清學檢查判讀
+bodySystem: other
+description: 犬貓血清學檢查判讀,偵測抗體或抗原評估感染或免疫狀態。包括病毒、細菌、寄生蟲血清學檢測,需了解急性期及恢復期抗體變化。
+
+aliases:
+  - { alias: 血清抗體檢測, language: zh }
+  - { alias: Serological testing, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 艾利希體、焦蟲、萊姆病等診斷
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: FeLV/FIV、弓形蟲、冠狀病毒抗體
+
+etiology:
+  categories:
+    - name: 血清學類型
+      examples:
+        - 抗原檢測(FeLV、心絲蟲)
+        - 抗體檢測(FIV、艾利希體、萊姆病)
+        - 力價測定(狂犬病、疫苗抗體)
+
+clinicalSigns:
+  early:
+    - 血清學為診斷工具
+  progressive:
+    - 依感染而定
+
+diagnosis:
+  primaryTests:
+    - name: 急性期抗體
+      notes: "感染早期IgM抗體出現"
+    - name: 恢復期抗體
+      notes: "IgG抗體升高,力價上升4倍以上提示急性感染"
+    - name: SNAP test
+      notes: "快速抗原/抗體檢測(心絲蟲、FeLV/FIV、艾利希體等)"
+  differentialDiagnoses:
+    - 各類感染性疾病
+
+treatment:
+  medical:
+    - 血清學為診斷工具
+
+prognosis:
+  general: "血清學提供感染及免疫狀態資訊,需了解檢測時機影響結果。"
+
+prevention:
+  - 血清採集
+  - 急性期及恢復期配對檢測
+  - 結合臨床症狀判讀

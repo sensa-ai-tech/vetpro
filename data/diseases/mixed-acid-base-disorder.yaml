@@ -1,0 +1,72 @@
+slug: mixed-acid-base-disorder
+nameEn: Mixed Acid Base Disorder
+nameZh: 混合性酸鹼失衡
+bodySystem: electrolyte
+description: 同時存在兩種或以上酸鹼失衡（如代謝性酸中毒合併呼吸性鹼中毒），常見於複雜疾病狀態。需詳細評估病史、血液氣體分析及電解質以釐清各成分。
+
+aliases:
+  - { alias: 複雜性酸鹼異常, language: zh }
+  - { alias: Complex Acid-Base Disturbance, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 常見於危重症、多重器官衰竭或複雜內科疾病
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓常因腎臟病合併嘔吐或呼吸疾病引起
+
+etiology:
+  categories:
+    - name: 代謝性酸中毒 + 呼吸性鹼中毒
+      examples:
+        - 敗血症合併過度換氣
+        - 急性腎損傷合併疼痛（喘氣）
+    - name: 代謝性鹼中毒 + 呼吸性酸中毒
+      examples:
+        - 嘔吐合併肺水腫或肺炎
+        - 利尿劑過量合併呼吸衰竭
+    - name: 代謝性酸中毒 + 代謝性鹼中毒
+      examples:
+        - 糖尿病酮酸中毒合併嘔吐
+        - 腎衰竭合併幽門阻塞
+
+clinicalSigns:
+  early:
+    - 症狀取決於主導失衡類型
+    - 可能部分代償而症狀不明顯
+  progressive:
+    - 呼吸型態異常（過度換氣或換氣不足）
+    - 電解質紊亂（低鉀、低氯）
+    - 意識改變、休克
+
+diagnosis:
+  primaryTests:
+    - name: 動脈血液氣體分析
+      notes: "pH、PaCO2、HCO3- 同時評估,計算預期代償值判斷是否為混合失衡"
+    - name: 血清電解質及陰離子間隙
+      notes: "評估代謝成分及電解質異常"
+    - name: 病史及臨床評估
+      notes: "釐清可能同時存在的病因（如嘔吐 + 呼吸疾病）"
+  differentialDiagnoses:
+    - 單純性酸鹼失衡
+    - 代償性酸鹼失衡
+    - 實驗室誤差
+
+treatment:
+  medical:
+    - 分別治療各個酸鹼失衡成分
+    - 代謝性酸中毒：治療潛在病因、必要時 Sodium bicarbonate
+    - 代謝性鹼中毒：補充氯離子（0.9% NaCl）、治療嘔吐
+    - 呼吸性異常：改善通氣（氧氣、機械通氣）
+    - 監測血氣及電解質,避免過度矯正
+
+prognosis:
+  general: "預後取決於潛在疾病嚴重程度及器官功能。混合性酸鹼失衡常見於危重症,死亡率較單純失衡高。需積極治療潛在病因及支持性照護。"
+
+prevention:
+  - 危重症患者定期監測血氣
+  - 早期識別及治療潛在病因
+  - 避免單一成分過度矯正

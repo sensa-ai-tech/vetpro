@@ -1,0 +1,61 @@
+slug: malignant-hyperthermia
+nameEn: Malignant Hyperthermia
+nameZh: 惡性高體溫
+bodySystem: emergency
+description: 麻醉誘發的遺傳性肌肉代謝異常,導致快速高體溫、肌肉僵硬及代謝性酸中毒。需緊急處理。
+
+aliases:
+  - { alias: MH, language: zh }
+  - { alias: Anesthetic Hyperthermia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 某些品種易感(如鬥牛犬)
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 極罕見
+
+etiology:
+  categories:
+    - name: 誘發藥物
+      examples:
+        - 吸入麻醉劑(異氟烷、七氟烷)、琥珀膽鹼
+
+clinicalSigns:
+  early:
+    - 麻醉中快速發作
+    - 心搏過速、高體溫(>40°C)
+    - 肌肉僵硬
+  progressive:
+    - 極高體溫(>43°C)
+    - 代謝性酸中毒、高鉀
+    - 心律不整、死亡
+
+diagnosis:
+  primaryTests:
+    - name: 臨床診斷
+      notes: "麻醉中快速高體溫+肌肉僵硬"
+    - name: ETCO2
+      notes: "快速升高"
+  differentialDiagnoses:
+    - 其他麻醉併發症
+
+treatment:
+  medical:
+    - 立即停止吸入麻醉
+    - Dantrolene 2-5 mg/kg IV(特異性解毒劑)
+    - 積極降溫
+    - 過度換氣降低CO2
+    - 碳酸氫鈉(若酸中毒)
+    - 治療高鉀、心律不整
+    - 監測24-48小時
+
+prognosis:
+  general: "無Dantrolene死亡率>70%。有Dantrolene存活率改善。"
+
+prevention:
+  - 高風險品種避免吸入麻醉
+  - 備有Dantrolene

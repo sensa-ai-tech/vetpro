@@ -1,0 +1,76 @@
+slug: hypophosphatemia-detail
+nameEn: Hypophosphatemia Detail
+nameZh: 低血磷症（詳細）
+bodySystem: electrolyte
+description: 血清磷濃度低於正常範圍（犬貓 <2.5 mg/dL），可能因再餵食症候群、糖尿病酮酸中毒治療或原發性副甲狀腺機能亢進引起。嚴重低血磷可導致溶血、橫紋肌溶解及呼吸衰竭。
+
+aliases:
+  - { alias: 血磷過低, language: zh }
+  - { alias: Hypophosphataemia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 常見於糖尿病酮酸中毒治療後、肝臟疾病或營養不良
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓常因肝脂肪變性或再餵食症候群引起
+
+etiology:
+  categories:
+    - name: 細胞內轉移
+      examples:
+        - 再餵食症候群
+        - 糖尿病酮酸中毒治療（胰島素）
+        - 鹼血症
+    - name: 腎臟或腸道流失
+      examples:
+        - 原發性副甲狀腺機能亢進
+        - 范可尼症候群
+        - 磷結合劑過量使用
+    - name: 攝取不足
+      examples:
+        - 長期厭食
+        - 營養不良
+        - 肝脂肪變性
+
+clinicalSigns:
+  early:
+    - 肌肉無力、嗜睡
+    - 食慾減退
+  progressive:
+    - 溶血性貧血（紅血球 ATP 耗竭）
+    - 橫紋肌溶解（肌紅蛋白尿）
+    - 呼吸衰竭（呼吸肌無力）
+    - 癲癇、昏迷（嚴重病例）
+
+diagnosis:
+  primaryTests:
+    - name: 血清磷
+      notes: "P <2.5 mg/dL（輕度 2.0-2.5, 中度 1.5-2.0, 嚴重 <1.5）"
+    - name: 血液學
+      notes: "溶血性貧血、網狀紅血球增加"
+    - name: 肌酸激酶（CK）
+      notes: "橫紋肌溶解時顯著升高"
+  differentialDiagnoses:
+    - 再餵食症候群
+    - 糖尿病酮酸中毒治療後
+    - 原發性副甲狀腺機能亢進
+    - 肝脂肪變性
+
+treatment:
+  medical:
+    - 輕度（P 2.0-2.5）：口服補充 Potassium phosphate 0.01-0.03 mmol/kg PO BID-TID
+    - 中重度（P <2.0）：靜脈補充 Potassium phosphate 0.01-0.03 mmol/kg/hr IV（最大速率 0.06 mmol/kg/hr）
+    - 監測血磷、鈣、鎂及腎功能（避免高血磷或低血鈣）
+    - 治療潛在病因、緩慢恢復餵食（再餵食症候群）
+
+prognosis:
+  general: "預後取決於嚴重程度及治療時機。輕中度低血磷經補充後預後良好,但嚴重低血磷（<1.0 mg/dL）伴隨溶血或橫紋肌溶解死亡率高（30-50%）。再餵食症候群需謹慎預防。"
+
+prevention:
+  - 厭食動物恢復餵食需緩慢進行
+  - 糖尿病酮酸中毒治療時監測血磷
+  - 營養支持時預防性補充磷

@@ -1,0 +1,68 @@
+slug: fluid-therapy-maintenance
+nameEn: Fluid Therapy Maintenance
+nameZh: 維持性輸液治療
+bodySystem: electrolyte
+description: 提供動物每日基本水分及電解質需求的輸液治療,用於無法正常飲水或進食的患者。計算公式為每日維持量 = 體重(kg) × 50-60 mL/kg/day。
+
+aliases:
+  - { alias: 基礎輸液療法, language: zh }
+  - { alias: Maintenance Fluid Therapy, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 住院患者常規使用,計算公式適用於各體型犬隻
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓維持量通常為 50 mL/kg/day,需監測尿量避免過度輸液
+
+etiology:
+  categories:
+    - name: 適應症
+      examples:
+        - 厭食或無法自主飲水
+        - 麻醉或手術周期
+        - 住院支持性照護
+        - 腸胃道疾病（嘔吐、腹瀉前）
+
+clinicalSigns:
+  early:
+    - 患者無法自主飲水或進食
+    - 需維持水合狀態及電解質平衡
+  progressive:
+    - 未提供維持輸液可能導致脫水或電解質失衡
+
+diagnosis:
+  primaryTests:
+    - name: 體重及水合狀態評估
+      notes: "評估脫水程度、皮膚彈性、黏膜濕潤度"
+    - name: 尿量監測
+      notes: "正常尿量 1-2 mL/kg/hr,評估腎功能及輸液適當性"
+    - name: 血清電解質
+      notes: "監測鈉、鉀、氯平衡"
+  differentialDiagnoses:
+    - 脫水需補充性輸液
+    - 過度水合需減少輸液
+    - 電解質失衡需調整輸液成分
+
+treatment:
+  medical:
+    - 每日維持量計算：
+      - 犬貓：50-60 mL/kg/day
+      - 或使用公式：132 × BW(kg)^0.75 mL/day
+    - 輸液類型選擇：
+      - 0.45% NaCl + 2.5% Dextrose（低張維持液）
+      - Lactated Ringer's Solution（等張晶體液）
+      - Normosol-R 或 Plasma-Lyte（平衡晶體液）
+    - 補充鉀離子：KCl 20-40 mEq/L（視血鉀濃度調整）
+    - 持續監測體重、尿量、電解質
+
+prognosis:
+  general: "維持性輸液為支持性治療,預後取決於潛在疾病。適當維持輸液可維持水合狀態及電解質平衡,降低併發症風險。"
+
+prevention:
+  - 住院患者每日評估輸液需求
+  - 監測體重變化及尿量
+  - 定期檢測電解質避免失衡

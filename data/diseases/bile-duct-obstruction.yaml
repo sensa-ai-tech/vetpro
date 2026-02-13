@@ -1,0 +1,88 @@
+slug: bile-duct-obstruction
+nameEn: Bile Duct Obstruction
+nameZh: 膽管阻塞
+bodySystem: hepatic
+description: 膽管阻塞是指肝外或肝內膽管因各種原因導致膽汁流通受阻的疾病。常見原因包括胰臟炎、膽石症、腫瘤和炎症性膽管病變。阻塞性黃疸是主要臨床表現。
+
+aliases:
+  - { alias: 膽道阻塞, language: zh }
+  - { alias: 阻塞性黃疸, language: zh }
+  - { alias: Biliary Obstruction, language: en }
+  - { alias: Obstructive Jaundice, language: en }
+  - { alias: Extrahepatic Bile Duct Obstruction, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 犬膽管阻塞最常見原因為胰臟炎引起的十二指腸乳頭水腫、膽石症及膽管或十二指腸腫瘤。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓膽管阻塞與胰臟炎、膽管炎、炎性腸病（三合一症）密切相關。膽管結石在貓較犬少見。
+
+etiology:
+  categories:
+    - name: 炎症性
+      examples:
+        - 胰臟炎致十二指腸乳頭腫脹
+        - 膽管炎（neutrophilic 或 lymphocytic）
+        - 十二指腸炎
+    - name: 機械性
+      examples:
+        - 膽石 (cholelith) 嵌頓於總膽管
+        - 膽管腫瘤（膽管細胞癌）
+        - 胰臟頭部腫瘤壓迫
+        - 十二指腸腫瘤
+    - name: 其他
+      examples:
+        - 膽管黏液囊腫
+        - 膽管狹窄（先天性或後天性）
+        - 膽管寄生蟲（肝吸蟲）
+
+clinicalSigns:
+  early:
+    - 食慾下降
+    - 間歇性嘔吐
+    - 輕度黃疸
+    - 糞便色淡
+  progressive:
+    - 明顯黃疸（鞏膜、耳廓、牙齦）
+    - 深色尿液（膽紅素尿）
+    - 灰白色糞便（陶土色便）
+    - 體重減輕
+    - 脂溶性維生素吸收障礙
+    - 凝血功能異常（維生素 K 缺乏）
+
+diagnosis:
+  primaryTests:
+    - name: 腹部超音波
+      notes: "總膽管擴張（犬 >3mm、貓 >4mm）為主要影像學發現。可見膽囊擴張、膽管結石、胰臟腫脹或腫塊。"
+    - name: 血液生化
+      notes: "阻塞性黃疸特徵：總膽紅素顯著升高（以直接膽紅素為主）、GGT 與 ALP 明顯升高、ALT 中度升高。"
+  differentialDiagnoses:
+    - 肝實質性黃疸（肝炎、肝硬化）
+    - 溶血性黃疸
+    - 膽囊黏液囊腫
+    - 肝內膽汁鬱滯
+
+treatment:
+  medical:
+    - 針對病因治療（如胰臟炎的內科處理）
+    - 維生素 K1 補充（1-5 mg/kg SC q12h，手術前至少24小時給予）
+    - Ursodiol (UDCA) 10-15 mg/kg PO q24h 利膽
+    - 廣效抗生素預防膽管感染
+    - 支持性輸液治療
+  surgical:
+    - 膽管阻塞超過7天或內科治療無效者需手術介入
+    - 膽囊十二指腸吻合術 (cholecystoduodenostomy) 或膽囊空腸吻合術
+    - 膽管切開取石術
+    - 腫瘤相關阻塞的姑息性膽管引流
+
+prognosis:
+  general: "預後取決於病因。胰臟炎引起的暫時性阻塞內科治療後預後良好。膽石症手術治療後預後佳。腫瘤相關阻塞預後不良。長期阻塞可導致繼發性膽汁性肝硬化。"
+
+prevention:
+  - 胰臟炎的及時治療以預防繼發性膽管阻塞
+  - 膽管炎的積極治療
+  - 定期監測已知膽道疾病患者

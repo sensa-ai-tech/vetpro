@@ -1,0 +1,76 @@
+slug: potassium-supplementation-protocol
+nameEn: Potassium Supplementation Protocol
+nameZh: 鉀離子補充方案
+bodySystem: metabolic
+description: 針對低血鉀症的鉀離子補充治療方案,包括口服及靜脈途徑。靜脈補充最大速率為0.5 mEq/kg/hr,需持續監測心電圖及血鉀濃度,避免高血鉀或心律不整。
+
+aliases:
+  - { alias: 低血鉀治療方案, language: zh }
+  - { alias: Hypokalemia Treatment Protocol, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 常用於慢性腎臟病、利尿劑使用或腸胃道疾病
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓慢性腎臟病常需長期口服鉀補充
+
+etiology:
+  categories:
+    - name: 適應症
+      examples:
+        - 低血鉀症（K <3.5 mEq/L）
+        - 慢性腎臟病
+        - 利尿劑使用
+        - 腸胃道流失（嘔吐、腹瀉）
+
+clinicalSigns:
+  early:
+    - 血鉀濃度 3.0-3.5 mEq/L（輕度）
+    - 血鉀濃度 2.5-3.0 mEq/L（中度）
+  progressive:
+    - 血鉀濃度 <2.5 mEq/L（重度）
+    - 肌肉無力、頸部下垂（貓多肌病）
+    - 心律不整
+
+diagnosis:
+  primaryTests:
+    - name: 血清鉀濃度
+      notes: "輕度3.0-3.5, 中度2.5-3.0, 重度<2.5 mEq/L"
+    - name: 心電圖
+      notes: "監測U波、ST段下降、T波異常"
+    - name: 血清鎂濃度
+      notes: "低鎂會影響鉀補充效果"
+  differentialDiagnoses:
+    - 輕度低血鉀（口服補充）
+    - 中重度低血鉀（靜脈補充）
+
+treatment:
+  medical:
+    - 輕度低血鉀（K 3.0-3.5）：
+      - 口服 Potassium gluconate 2-6 mEq/cat/day
+      - 或添加於食物：Tumil-K gel 或粉劑
+    - 中度低血鉀（K 2.5-3.0）：
+      - KCl 添加於靜脈輸液 20-40 mEq/L
+      - 最大速率 0.5 mEq/kg/hr
+    - 重度低血鉀（K <2.5）：
+      - KCl 添加於靜脈輸液 60-80 mEq/L
+      - 持續心電圖監測
+      - 每2-4小時檢測血鉀
+    - 補充鎂離子（若低鎂血症）
+    - KCl 濃度計算表（依血鉀濃度）：
+      - K 3.5-3.0：20 mEq/L
+      - K 3.0-2.5：30 mEq/L
+      - K 2.5-2.0：40 mEq/L
+      - K <2.0：60 mEq/L
+
+prognosis:
+  general: "預後良好,適當補充鉀離子後多數患者可恢復正常血鉀。慢性腎臟病患者可能需終生口服補充。嚴重低血鉀（<2.0）未及時治療可能致命。"
+
+prevention:
+  - 慢性腎臟病患者定期監測血鉀
+  - 使用利尿劑時監測電解質
+  - 腸胃道疾病早期補充電解質

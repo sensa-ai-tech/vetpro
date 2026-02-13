@@ -1,0 +1,69 @@
+slug: pulmonary-parasitic-disease
+nameEn: Pulmonary Parasitic Disease
+nameZh: 肺寄生蟲病
+bodySystem: respiratory
+description: 寄生蟲感染肺部組織或支氣管,引起咳嗽、呼吸困難及肺部病變。常見於犬貓的肺蟲感染。
+
+aliases:
+  - { alias: 肺蟲病, language: zh }
+  - { alias: Lungworm Disease, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 常見 Oslerus osleri, Crenosoma vulpis, Angiostrongylus vasorum
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 常見 Aelurostrongylus abstrusus
+
+etiology:
+  categories:
+    - name: 線蟲
+      examples:
+        - Aelurostrongylus abstrusus (貓)
+        - Oslerus osleri (犬)
+        - Crenosoma vulpis (犬)
+    - name: 吸蟲
+      examples:
+        - Paragonimus kellicotti
+
+clinicalSigns:
+  early:
+    - 慢性咳嗽
+    - 運動不耐
+  progressive:
+    - 呼吸困難
+    - 喘鳴
+    - 氣喘樣症狀
+
+diagnosis:
+  primaryTests:
+    - name: 糞便檢查
+      notes: "Baermann 技術檢測肺蟲幼蟲"
+    - name: 胸部 X 光
+      notes: "間質或肺泡浸潤、結節"
+    - name: 支氣管肺泡灌洗
+      notes: "檢測幼蟲、嗜酸性球增多"
+    - name: 氣管鏡檢查
+      notes: "可見蟲體結節 (Oslerus osleri)"
+  differentialDiagnoses:
+    - 氣喘
+    - 慢性支氣管炎
+    - 嗜酸性肺炎
+
+treatment:
+  medical:
+    - Fenbendazole 50 mg/kg PO q24h x 10-14 天
+    - Ivermectin 0.2-0.4 mg/kg PO q7-14d (Aelurostrongylus)
+    - Praziquantel 25 mg/kg PO q8h x 3 天 (Paragonimus)
+    - 支持性照護 (支氣管擴張劑、類固醇)
+
+prognosis:
+  general: "預後良好;多數病例經適當驅蟲治療可完全康復"
+
+prevention:
+  - 定期驅蟲
+  - 避免接觸中間宿主 (蝸牛、蛞蝓、淡水螺)
+  - 避免生食螃蟹或蝦 (Paragonimus)

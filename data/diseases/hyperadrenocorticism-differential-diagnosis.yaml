@@ -1,0 +1,87 @@
+slug: hyperadrenocorticism-differential-diagnosis
+nameEn: Hyperadrenocorticism Differential Diagnosis
+nameZh: 庫興氏症鑑別診斷
+bodySystem: endocrine
+description: 系統性評估可能導致類似庫興氏症臨床症狀的疾病,包括垂體依賴性、腎上腺腫瘤、醫源性及其他內分泌或代謝性疾病的鑑別。
+
+aliases:
+  - { alias: 庫興氏症鑑別, language: zh }
+  - { alias: Cushing's syndrome differential, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 中老年犬常見,需仔細鑑別多種可能原因
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓庫興氏症罕見,糖尿病更常見
+
+etiology:
+  categories:
+    - name: 內源性庫興氏症
+      examples:
+        - 垂體依賴性(PDH, 80-85%病例)
+        - 腎上腺腫瘤(功能性腺瘤或癌, 15-20%)
+        - 異位ACTH症候群(極罕見)
+    - name: 醫源性
+      examples:
+        - 長期口服或注射糖皮質激素
+        - 局部使用類固醇吸收(眼藥水、耳藥水)
+    - name: 模擬庫興氏症疾病
+      examples:
+        - 糖尿病(多渴多尿、腹部膨大)
+        - 甲狀腺功能低下(對稱性脫毛、嗜睡)
+        - 慢性肝病(腹水、肝腫大)
+        - 腎臟病(多渴多尿、肌肉萎縮)
+        - 生長激素過多症(肢端肥大症)
+
+clinicalSigns:
+  early:
+    - 多渴、多尿、多食
+    - 腹部膨大(pot-bellied外觀)
+    - 對稱性脫毛、皮膚變薄
+  progressive:
+    - 肌肉萎縮、虛弱
+    - 喘息、運動不耐
+    - 皮膚鈣化、感染
+    - 神經症狀(垂體巨腺瘤壓迫)
+
+diagnosis:
+  primaryTests:
+    - name: ACTH刺激試驗
+      notes: "區分內源性(過度反應)vs.醫源性(反應抑制)庫興氏症"
+    - name: 低劑量地塞米松抑制試驗(LDDST)
+      notes: "篩檢庫興氏症,部分可區分PDH vs.腎上腺腫瘤"
+    - name: 高劑量地塞米松抑制試驗(HDDST)
+      notes: "區分PDH(抑制)vs.腎上腺腫瘤(不抑制)"
+    - name: 內源性ACTH濃度
+      notes: "PDH時升高或正常,腎上腺腫瘤時抑制(<5 pg/mL)"
+    - name: 腹部超音波或CT
+      notes: "評估腎上腺大小(雙側腫大PDH,單側腫大腎上腺腫瘤)"
+    - name: 排除性檢查
+      notes: "甲狀腺功能(T4)、血糖、肝腎功能、尿液分析"
+  differentialDiagnoses:
+    - 垂體依賴性庫興氏症(PDH)
+    - 腎上腺腫瘤(功能性)
+    - 醫源性庫興氏症
+    - 糖尿病
+    - 甲狀腺功能低下
+    - 慢性肝病
+    - 慢性腎臟病
+
+treatment:
+  medical:
+    - 確診PDH後使用Trilostane 1-2 mg/kg PO SID-BID
+    - 腎上腺腫瘤考慮手術切除(單側腎上腺切除術)
+    - 醫源性庫興氏症逐步減停外源性類固醇
+    - 治療模擬疾病(胰島素治療糖尿病,甲狀腺素補充等)
+
+prognosis:
+  general: "正確鑑別診斷是成功治療的關鍵。PDH經Trilostane治療預後良好,腎上腺腫瘤手術切除預後視腫瘤良惡性而定。"
+
+prevention:
+  - 避免長期不當使用糖皮質激素
+  - 定期監測接受類固醇治療動物的腎上腺功能
+  - 中老年犬定期健康檢查

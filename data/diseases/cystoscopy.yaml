@@ -1,0 +1,71 @@
+slug: cystoscopy
+nameEn: Cystoscopy
+nameZh: 膀胱鏡檢查
+bodySystem: other
+description: 經尿道或恥骨前膀胱內視鏡檢查。用於血尿、慢性膀胱炎、結石、腫瘤診斷及異位輸尿管評估。
+
+aliases:
+  - { alias: 膀胱內視鏡, language: zh }
+  - { alias: Urethrocystoscopy, language: en }
+  - { alias: 尿道膀胱鏡, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 母犬經尿道途徑可行,公犬需恥骨前
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓尿道狹窄,多需恥骨前途徑
+
+etiology:
+  categories:
+    - name: 診斷適應症
+      examples:
+        - 持續或反覆血尿
+        - 懷疑膀胱腫瘤
+        - 異位輸尿管
+    - name: 治療適應症
+      examples:
+        - 小結石取出(<5mm)
+        - 息肉切除
+        - 輸尿管支架置入
+
+clinicalSigns:
+  early:
+    - 術後短暫血尿或頻尿
+    - 輕微排尿不適
+    - 公犬恥骨前途徑有小切口
+  progressive:
+    - 血尿24-48小時內消失
+    - 症狀改善(若治療性操作)
+
+diagnosis:
+  primaryTests:
+    - name: 膀胱鏡視診
+      notes: "評估黏膜、腫塊、結石、輸尿管開口"
+    - name: 組織活檢
+      notes: "可疑腫塊活檢確診"
+    - name: 螢光素試驗
+      notes: "異位輸尿管定位(IV螢光素觀察)"
+  differentialDiagnoses:
+    - 超音波檢查(非侵入但細節有限)
+    - CT尿路造影
+
+treatment:
+  medical:
+    - 麻醉:全身麻醉
+    - 母犬:經尿道置入內視鏡(2.7-5mm)
+    - 公犬:恥骨前小切口置入內視鏡
+    - 灌流:無菌生理食鹽水
+    - 術後:抗生素Enrofloxacin 5-10 mg/kg PO q24h×3-5天
+
+prognosis:
+  general: "併發症少,診斷準確率高。膀胱腫瘤活檢確診率>90%。異位輸尿管診斷為黃金標準。小結石取出避免開腹手術。"
+
+prevention:
+  - 術前尿培養排除活動性感染
+  - 溫和操作避免尿道或膀胱損傷
+  - 術後抗生素預防感染
+  - 監控血尿持續時間

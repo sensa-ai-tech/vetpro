@@ -1,0 +1,71 @@
+slug: peritoneal-dialysis
+nameEn: Peritoneal Dialysis
+nameZh: 腹膜透析
+bodySystem: renal
+description: 利用腹膜作為半透膜進行透析治療,用於急性腎損傷或慢性腎臟病末期患者,透析液注入腹腔後移除代謝廢物及過多水分。
+
+aliases:
+  - { alias: 腹透, language: zh }
+  - { alias: PD, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 用於急性腎損傷搶救或等待血液透析,需專業設備及護理
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓體型小腹腔容積有限,操作難度較高
+
+etiology:
+  categories:
+    - name: 適應症
+      examples:
+        - 急性腎損傷合併嚴重氮血症
+        - 藥物中毒需快速移除毒素(如乙二醇中毒)
+        - 嚴重電解質紊亂(高鉀血症、代謝性酸中毒)
+        - 無法進行血液透析時的替代治療
+
+clinicalSigns:
+  early:
+    - 嚴重氮血症(BUN >100 mg/dL, 肌酐 >8 mg/dL)
+    - 嘔吐、厭食、沉鬱
+    - 無尿或少尿
+    - 高鉀血症心律不整
+  progressive:
+    - 尿毒症昏迷
+    - 代謝性酸中毒
+    - 肺水腫或胸腔積液
+    - 低體溫、休克
+
+diagnosis:
+  primaryTests:
+    - name: 血液生化
+      notes: "BUN、肌酐、鉀、磷顯著升高,評估透析需求"
+    - name: 血氣分析
+      notes: "代謝性酸中毒(pH <7.2, HCO3 <12 mmol/L)"
+    - name: 心電圖
+      notes: "監測高鉀血症心律變化(T波高尖、QRS波增寬)"
+  differentialDiagnoses:
+    - 血液透析
+    - 內科支持性治療
+    - 慢性腎臟病末期安樂死
+
+treatment:
+  medical:
+    - 腹腔置入透析導管(外科手術或經皮穿刺)
+    - 使用溫熱透析液(37-38°C, 1.5-2% dextrose, 30-50 mL/kg)
+    - 每次透析循環: 灌入15-20分鐘 → 留置30-60分鐘 → 引流15-20分鐘
+    - 每日4-6次透析循環,持續2-5天
+    - 監測血液生化、電解質、體重、腹腔液體外觀
+    - 廣效抗生素預防腹膜炎(Cefazolin 22 mg/kg IV TID)
+    - 支持性治療(止吐藥、輸液、營養支持)
+
+prognosis:
+  general: "急性腎損傷且腎功能可恢復者預後尚可;慢性腎臟病末期或合併多器官衰竭者預後不良。成功率約30-50%。"
+
+prevention:
+  - 及早識別並治療急性腎損傷
+  - 毒物中毒時儘早洗胃及支持治療
+  - 維持充足水合狀態及電解質平衡

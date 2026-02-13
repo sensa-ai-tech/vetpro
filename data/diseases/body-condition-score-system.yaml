@@ -1,0 +1,68 @@
+slug: body-condition-score-system
+nameEn: Body Condition Score System
+nameZh: 體態評分系統
+bodySystem: other
+description: 犬貓體態評分(BCS)的標準化評估系統,用於客觀評估動物的體脂肪量及營養狀態。常用9分制,理想分數為4-5分。BCS為監測體重管理及營養狀態的重要工具。
+
+aliases:
+  - { alias: 體態評分, language: zh }
+  - { alias: BCS, language: en }
+  - { alias: Body condition scoring, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 所有犬隻都應定期評估BCS,用於體重管理及營養監測
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓BCS評估標準與犬略有不同,特別注意腹部脂肪墊
+
+etiology:
+  categories:
+    - name: 9分制BCS評分標準
+      examples:
+        - BCS 1-3:過瘦,肋骨、脊椎、骨盆明顯可見,無脂肪覆蓋
+        - BCS 4-5:理想,肋骨易觸摸但不明顯可見,腰線清楚,腹部適度上收
+        - BCS 6-7:過重,肋骨難以觸摸,腰線不明顯,腹部圓潤
+        - BCS 8-9:肥胖,肋骨無法觸摸,無腰線,腹部明顯下垂,頸部及四肢基部脂肪沉積
+
+clinicalSigns:
+  early:
+    - BCS評估為非侵入性視診及觸診
+    - 理想體態應可輕易觸摸到肋骨
+  progressive:
+    - 過高BCS:肥胖相關疾病風險增加
+    - 過低BCS:營養不良、肌肉流失
+
+diagnosis:
+  primaryTests:
+    - name: 視診評估
+      notes: "從側面及上方觀察,評估腰線及腹部輪廓"
+    - name: 觸診評估
+      notes: "輕柔觸摸肋骨、脊椎、骨盆區域,評估脂肪覆蓋程度"
+    - name: 體重測量
+      notes: "結合BCS與實際體重,計算理想體重及減重/增重目標"
+  differentialDiagnoses:
+    - 腹水(可能誤判為肥胖)
+    - 肌肉萎縮(可能掩蓋肥胖)
+    - 懷孕(腹部膨大)
+
+treatment:
+  medical:
+    - BCS 1-3(過瘦):增加熱量攝取至1.2-1.8×RER,頻繁餵食,排除潛在疾病
+    - BCS 4-5(理想):維持目前飲食及熱量,定期監測
+    - BCS 6-7(過重):減少熱量至1.0-1.2×RER,增加運動
+    - BCS 8-9(肥胖):減重計畫,目標每週減重1-2%(犬)或0.5-1%(貓),熱量0.8-1.0×RER
+
+prognosis:
+  general: "BCS為簡單有效的營養評估工具。理想體態可降低多種疾病風險,延長壽命及改善生活品質。"
+
+prevention:
+  - 每次獸醫就診都應評估BCS
+  - 飼主可學習在家評估BCS,每月記錄
+  - 依BCS變化及時調整飲食
+  - 幼年建立理想體態,避免肥胖
+  - 結紮後監測體重變化(代謝率降低)
+  - 老年動物同時評估肌肉狀況評分(MCS)

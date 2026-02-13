@@ -1,0 +1,86 @@
+slug: epidural-anesthesia
+nameEn: Epidural Anesthesia
+nameZh: 硬膜外麻醉
+bodySystem: emergency
+description: 將局部麻醉藥或鎮痛藥注射至硬膜外腔,阻斷脊髓神經根傳導的區域麻醉技術。常用於後肢、骨盆、會陰、腹部下半部手術,提供優異的術中和術後鎮痛效果。
+
+aliases:
+  - { alias: 硬脊膜外麻醉, language: zh }
+  - { alias: 腰椎硬膜外注射, language: zh }
+  - { alias: Extradural Anesthesia, language: en }
+  - { alias: Peridural Anesthesia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 常用於骨科手術(髖關節、膝關節)、會陰手術、剖腹產,可減少吸入麻醉藥用量30-50%
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓的硬膜外腔較小,藥物劑量需精確計算,常用於骨盆骨折、股骨手術
+
+etiology:
+  categories:
+    - name: 注射部位
+      examples:
+        - 腰薦椎間隙(L7-S1最常用,觸診髂骨翼定位)
+        - 胸腰椎間隙(僅限專科醫師操作)
+    - name: 常用藥物組合
+      examples:
+        - Morphine 0.1 mg/kg + Bupivacaine 0.5% 1 ml/4.5 kg(犬)
+        - Morphine 0.1 mg/kg單獨使用(純鎮痛,無運動阻斷)
+        - Lidocaine 2% + Bupivacaine 0.5%混合(快速起效+長效維持)
+    - name: 適應症
+      examples:
+        - 骨盆或後肢骨科手術
+        - 會陰疝修補、肛門囊切除
+        - 剖腹產、絕育手術、膀胱手術
+
+clinicalSigns:
+  early:
+    - 注射後10-20分鐘後肢運動功能減弱
+    - 尾部、會陰、後肢痛覺消失
+    - 心率和血壓輕度下降(交感神經阻斷)
+  progressive:
+    - 術中吸入麻醉需求量顯著減少
+    - 術後4-24小時持續鎮痛(依藥物而定)
+    - 恢復期後肢協調功能逐漸恢復
+
+diagnosis:
+  primaryTests:
+    - name: "懸吊試驗(Hanging Drop)"
+      notes: "針尖進入硬膜外腔時針座液滴被吸入,確認正確位置"
+    - name: 針刺反應測試
+      notes: "注射後15-20分鐘測試會陰和後肢痛覺"
+    - name: 運動功能評估
+      notes: "後肢肌張力降低或無法站立(局麻藥效果)"
+    - name: Horner氏症候群觀察
+      notes: "過量藥物前移至頸胸椎可引起瞳孔縮小、眼瞼下垂"
+  differentialDiagnoses:
+    - 注射至肌肉層(無鎮痛效果)
+    - 穿刺硬膜至蛛網膜下腔(脊髓麻醉,效果強但風險高)
+    - 血管內注射(全身毒性)
+
+treatment:
+  medical:
+    - "犬標準配方:Morphine 0.1 mg/kg + Bupivacaine 0.25% 1 ml/4.5 kg(總量≤6 ml)"
+    - "貓標準配方:Morphine 0.1 mg/kg + Bupivacaine 0.25% 0.1 ml/kg(總量≤1.5 ml)"
+    - "純鎮痛無運動阻斷:Morphine 0.1 mg/kg稀釋至0.3 ml/kg"
+    - "快速起效配方:Lidocaine 2% 1 ml/4.5 kg + Morphine 0.1 mg/kg"
+    - "操作技術:患者側臥或胸骨臥位,L7-S1間隙垂直進針,確認針尖位置後緩慢注射"
+    - "術後監測:每2-4小時評估後肢運動功能、排尿能力、疼痛評分"
+    - "導尿管放置:若手術時間超過4小時或預期術後運動障礙超過12小時"
+
+prognosis:
+  general: "技術正確時安全有效,可提供6-24小時優異鎮痛。最常見併發症為短暫後肢運動障礙(通常12-24小時內恢復)。嚴重併發症罕見但包括感染、神經損傷(<1%)、呼吸抑制(阿片類藥物前移至頸椎,發生率<5%)。低血壓發生率約10-20%,通常輕微且可用輸液治療。"
+
+prevention:
+  - 嚴格無菌操作(剃毛、消毒、無菌手套和針頭)
+  - 正確解剖定位(髂骨翼連線與脊椎中線交點下一椎間隙)
+  - 藥物總量不超過最大劑量(Bupivacaine犬2 mg/kg,貓1 mg/kg)
+  - 緩慢注射(超過60秒)避免藥物快速前移
+  - 術前排空膀胱或放置導尿管(預防尿瀦留)
+  - 術後監測呼吸頻率(Morphine可能引起呼吸抑制)
+  - 凝血功能異常或感染部位禁忌使用
+  - 準備逆轉藥物(Naloxone治療阿片類過量)

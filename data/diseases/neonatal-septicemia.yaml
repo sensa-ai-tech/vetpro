@@ -1,0 +1,92 @@
+slug: neonatal-septicemia
+nameEn: Neonatal Septicemia
+nameZh: 新生兒敗血症
+bodySystem: infectious
+description: 新生犬貓因免疫系統尚未成熟，細菌經由臍帶、口腔或皮膚侵入血流引發全身性感染。是新生動物死亡的主要原因之一，需立即診斷及治療。
+
+aliases:
+  - { alias: 新生動物菌血症, language: zh }
+  - { alias: Neonatal Sepsis, language: en }
+  - { alias: Puppy Septicemia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 初乳攝取不足或環境衛生不良時高風險
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 與犬類似，尤其多貓環境
+
+etiology:
+  categories:
+    - name: 細菌病原
+      examples:
+        - Escherichia coli(大腸桿菌)
+        - Streptococcus spp.(鏈球菌)
+        - Staphylococcus spp.(葡萄球菌)
+        - Klebsiella spp.(克雷伯氏菌)
+    - name: 感染途徑
+      examples:
+        - 臍帶感染(最常見)
+        - 吸入性肺炎
+        - 經口感染
+        - 皮膚傷口
+    - name: 風險因素
+      examples:
+        - 初乳攝取不足
+        - 環境不潔
+        - 早產或低體重
+        - 母體乳腺炎
+
+clinicalSigns:
+  early:
+    - 活力下降、不吸乳
+    - 體溫不穩(過低或發燒)
+    - 黃疸
+    - 臍帶紅腫或有分泌物
+  progressive:
+    - 嚴重脫水
+    - 呼吸困難
+    - 出血傾向(瘀斑、血便)
+    - 休克、昏迷
+    - 快速死亡
+
+diagnosis:
+  primaryTests:
+    - name: 血液培養
+      notes: "確診病原菌，需於抗生素使用前採樣"
+    - name: 全血計數
+      notes: "白血球過高或過低、左移、血小板減少"
+    - name: 生化檢查
+      notes: "低血糖、酸中毒、肝腎功能異常"
+    - name: C-反應蛋白
+      notes: "發炎指標升高"
+  differentialDiagnoses:
+    - 病毒性感染
+    - 低血糖症
+    - 先天性心臟病
+    - 新生兒溶血
+
+treatment:
+  medical:
+    - 廣效抗生素立即使用(靜脈給予)
+    - Ampicillin 20-40 mg/kg IV q6-8h + Gentamicin 2-4 mg/kg IV q24h
+    - 或Cefotaxime 50 mg/kg IV q8h
+    - 支持性輸液(溫熱生理食鹽水或林格氏液)
+    - 葡萄糖補充(維持血糖>60 mg/dL)
+    - 保溫(環境溫度30-32°C)
+    - 氧氣治療
+    - 臍帶局部清創及消毒
+    - 補充餵食(管餵或靜脈營養)
+
+prognosis:
+  general: "早期診斷及積極治療存活率約50-60%；若出現休克或DIC則預後極差(<20%存活)"
+
+prevention:
+  - 接生環境消毒
+  - 臍帶剪斷後立即優碘消毒
+  - 確保初乳攝取(提供被動免疫)
+  - 母體乳腺炎及早治療
+  - 隔離病犬避免交叉感染

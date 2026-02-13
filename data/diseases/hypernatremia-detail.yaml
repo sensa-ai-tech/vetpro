@@ -1,0 +1,73 @@
+slug: hypernatremia-detail
+nameEn: Hypernatremia Detail
+nameZh: 高血鈉症（詳細）
+bodySystem: electrolyte
+description: 血清鈉離子濃度高於正常範圍（犬貓 >155 mEq/L），多因水分流失或攝取不足引起。嚴重高血鈉可導致神經損傷、腦出血及死亡。
+
+aliases:
+  - { alias: 血鈉過高, language: zh }
+  - { alias: Hypernatraemia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 常見於中樞性尿崩症、熱衰竭或無法自主飲水
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓常因腎臟濃縮功能障礙或飲水不足引起
+
+etiology:
+  categories:
+    - name: 水分流失過多
+      examples:
+        - 中樞性或腎性尿崩症
+        - 滲透性利尿（糖尿病）
+        - 腹瀉、嘔吐、熱衰竭
+    - name: 水分攝取不足
+      examples:
+        - 無法自主飲水（神經疾病、昏迷）
+        - 水源不足
+    - name: 鈉攝取過量
+      examples:
+        - 高張性鹽水誤食
+        - 海水攝入
+
+clinicalSigns:
+  early:
+    - 口渴、多尿
+    - 黏膜乾燥、皮膚彈性降低
+  progressive:
+    - 嚴重神經症狀：共濟失調、肌肉顫抖、癲癇
+    - 腦細胞脫水、腦出血
+    - 昏迷、死亡
+
+diagnosis:
+  primaryTests:
+    - name: 血清電解質
+      notes: "Na >155 mEq/L（輕度 155-165, 中度 165-175, 嚴重 >175）"
+    - name: 血清滲透壓
+      notes: "通常 >320 mOsm/kg，反映高滲透壓狀態"
+    - name: 尿比重及尿滲透壓
+      notes: "尿崩症尿比重 <1.008，腎性尿崩症 DDAVP 試驗無反應"
+  differentialDiagnoses:
+    - 中樞性尿崩症
+    - 腎性尿崩症
+    - 糖尿病失控
+    - 熱衰竭
+
+treatment:
+  medical:
+    - 緩慢補充水分（0.45% NaCl 或 5% Dextrose in water）
+    - 矯正速度：<0.5 mEq/L/hr，避免腦水腫
+    - 治療潛在病因（DDAVP 用於中樞性尿崩症 1-2 µg SC BID）
+    - 監測血鈉、神經症狀及尿量
+
+prognosis:
+  general: "預後取決於高血鈉嚴重程度及矯正速度。慢性高血鈉經緩慢矯正預後良好，但急性嚴重高血鈉（>180 mEq/L）死亡率高（>50%）。過快矯正可引發腦水腫致死。"
+
+prevention:
+  - 確保充足飲水供應
+  - 尿崩症患者定期監測血鈉
+  - 熱天避免長時間曝曬

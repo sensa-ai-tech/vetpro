@@ -1,0 +1,76 @@
+slug: hypermagnesemia-detail
+nameEn: Hypermagnesemia Detail
+nameZh: 高血鎂症（詳細）
+bodySystem: electrolyte
+description: 血清鎂離子濃度高於正常範圍（犬貓 >2.5 mg/dL），罕見,多因腎衰竭合併過量鎂攝取或醫源性補充過量引起。嚴重高血鎂可導致肌肉無力、呼吸抑制及心跳停止。
+
+aliases:
+  - { alias: 血鎂過高, language: zh }
+  - { alias: Hypermagnesaemia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 罕見,多見於急性腎損傷合併鎂補充過量
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓極罕見,可能與腎衰竭或含鎂藥物使用相關
+
+etiology:
+  categories:
+    - name: 腎臟排泄減少
+      examples:
+        - 急性腎損傷
+        - 慢性腎臟病末期
+        - 尿路阻塞
+    - name: 醫源性鎂過量
+      examples:
+        - 靜脈鎂補充過量
+        - 含鎂瀉劑過量（Magnesium sulfate）
+        - 含鎂制酸劑過量
+    - name: 內分泌異常
+      examples:
+        - 愛迪生氏症
+        - 甲狀腺機能低下
+
+clinicalSigns:
+  early:
+    - 嗜睡、肌肉無力
+    - 深部肌腱反射減弱
+  progressive:
+    - 嚴重肌肉無力、麻痺
+    - 低血壓、心搏過緩
+    - 呼吸抑制
+    - 心跳停止（Mg >12 mg/dL）
+
+diagnosis:
+  primaryTests:
+    - name: 血清鎂
+      notes: "Mg >2.5 mg/dL（中度 2.5-5.0, 嚴重 >5.0）"
+    - name: 心電圖
+      notes: "PR 間期及 QT 間期延長、心搏過緩"
+    - name: 腎功能
+      notes: "評估 BUN、Creatinine、尿量"
+  differentialDiagnoses:
+    - 急性腎損傷
+    - 醫源性鎂過量
+    - 愛迪生氏症
+    - 神經肌肉疾病
+
+treatment:
+  medical:
+    - 立即停止鎂補充
+    - 靜脈輸液（0.9% NaCl）促進腎臟排泄（腎功能正常者）
+    - Calcium gluconate 10% 0.5-1 mL/kg IV slowly（拮抗鎂的心臟及神經肌肉效應）
+    - Furosemide 2-4 mg/kg IV（增加鎂排泄,腎功能許可）
+    - 嚴重病例：血液透析
+
+prognosis:
+  general: "預後取決於腎功能及高血鎂嚴重程度。腎功能正常者經停藥及輸液治療預後良好,但腎衰竭合併嚴重高血鎂（>10 mg/dL）預後極差,可能需透析。"
+
+prevention:
+  - 腎功能不全患者避免含鎂藥物
+  - 鎂補充時定期監測血鎂
+  - 含鎂瀉劑謹慎使用於腎病患者

@@ -1,0 +1,75 @@
+slug: mitotane-therapy
+nameEn: Mitotane Therapy
+nameZh: Mitotane治療
+bodySystem: endocrine
+description: Mitotane(o,p'-DDD)為腎上腺皮質細胞毒性藥物,選擇性破壞zona fasciculata及reticularis,用於犬庫興氏症治療,需密切監測避免腎上腺功能不全。
+
+aliases:
+  - { alias: Lysodren治療, language: zh }
+  - { alias: o,p'-DDD, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 曾為犬庫興氏症主要治療,現多被Trilostane取代但仍有使用
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓對Mitotane敏感性差,不建議使用
+
+etiology:
+  categories:
+    - name: 作用機制
+      examples:
+        - 選擇性破壞腎上腺皮質zona fasciculata/reticularis
+        - 誘導腎上腺細胞粒線體功能障礙
+        - 抑制皮質醇合成
+        - 造成不可逆腎上腺萎縮
+    - name: 適應症
+      examples:
+        - 垂體依賴性庫興氏症(PDH)
+        - 功能性腎上腺癌(包含轉移病例)
+        - Trilostane無效或不耐受病例
+
+clinicalSigns:
+  early:
+    - 厭食、嘔吐、腹瀉(常見副作用)
+    - 嗜睡、虛弱
+    - 多渴多尿減少
+  progressive:
+    - 低皮質醇症症狀(厭食、嘔吐、虛弱、休克)
+    - 腹圍縮小、毛髮再生(治療有效)
+    - 腎上腺危象(若過量破壞腎上腺)
+
+diagnosis:
+  primaryTests:
+    - name: ACTH刺激試驗(治療監測)
+      notes: "loading phase每週監測,目標post-ACTH皮質醇27-140 nmol/L(1-5 μg/dL)"
+    - name: 電解質
+      notes: "監測鈉鉀比值,<27:1 提示腎上腺功能不全"
+    - name: 臨床症狀
+      notes: "監測食慾、活力、多渴多尿改善情況"
+  differentialDiagnoses:
+    - Mitotane過量(腎上腺功能不全)
+    - Mitotane劑量不足(症狀未改善)
+    - 胃腸道不耐受
+
+treatment:
+  medical:
+    - Loading phase: 50 mg/kg PO SID 連續7-10天(與高脂食物一起給予)
+    - 每週監測ACTH刺激試驗直至post-ACTH皮質醇<140 nmol/L
+    - 達標後改為maintenance phase: 50 mg/kg PO 每週1-2次
+    - 每3-6個月監測ACTH刺激試驗
+    - 出現副作用(厭食、嘔吐)時立即停藥,給予prednisolone 0.2-0.5 mg/kg PO SID支持
+    - 若發生腎上腺危象: prednisolone 0.5-1 mg/kg IV + 靜脈輸液 + 電解質補充
+    - 重病或手術時額外補充糖皮質激素
+
+prognosis:
+  general: "約70-80%犬對Mitotane有反應,但副作用較Trilostane多且需更密集監測。中位存活時間約2年。約5-10%犬會發生永久性腎上腺功能不全需終生補充類固醇。"
+
+prevention:
+  - Loading phase密集監測ACTH刺激試驗避免過度破壞
+  - 與高脂食物給予增加吸收
+  - 飼主教育識別低皮質醇症狀
+  - 定期監測電解質及腎上腺功能

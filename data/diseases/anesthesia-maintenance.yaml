@@ -1,0 +1,70 @@
+slug: anesthesia-maintenance
+nameEn: Anesthesia Maintenance
+nameZh: 麻醉維持
+bodySystem: emergency
+description: 手術期間維持適當麻醉深度,使用吸入麻醉或靜脈麻醉。需持續監控生理參數確保安全。
+
+aliases:
+  - { alias: 麻醉維護, language: zh }
+  - { alias: Maintenance of anesthesia, language: en }
+  - { alias: 術中麻醉, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 吸入麻醉為標準維持方式
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓對Isoflurane濃度需求略低
+
+etiology:
+  categories:
+    - name: 吸入麻醉
+      examples:
+        - Isoflurane(最常用,MAC犬1.3%, 貓1.6%)
+        - Sevoflurane(誘導快、刺激小)
+    - name: 靜脈麻醉
+      examples:
+        - Propofol CRI(0.2-0.4 mg/kg/min)
+        - Alfaxalone CRI(較少用)
+
+clinicalSigns:
+  early:
+    - 適當深度:下顎張力適中、眼球中央
+    - 規律自主呼吸或輔助通氣
+    - 生理參數穩定
+  progressive:
+    - 手術刺激時可能需增加濃度
+    - 接近結束時逐漸降低
+    - 準備恢復階段
+
+diagnosis:
+  primaryTests:
+    - name: 麻醉深度評估
+      notes: "下顎張力、眼位、瞳孔大小、反射"
+    - name: 生理監控
+      notes: "心率、呼吸、血壓、SpO2, ETCO2, 體溫"
+  differentialDiagnoses:
+    - 過淺:吞嚥、移動、心率上升
+    - 過深:呼吸抑制、低血壓、瞳孔散大
+
+treatment:
+  medical:
+    - Isoflurane:1-2.5% vaporizer設定,依個體調整
+    - Sevoflurane:2-4% vaporizer設定
+    - 氧氣流量:50-100 mL/kg/min
+    - 靜脈輸液:5-10 mL/kg/hr晶體溶液
+    - 保溫:加熱墊、暖空氣毯維持體溫>37°C
+    - 血壓維持:MAP>60 mmHg
+
+prognosis:
+  general: "適當監控下吸入麻醉極安全。過深或過淺皆可快速調整。術中低體溫、低血壓為常見可預防併發症。現代監控設備大幅提升安全性。"
+
+prevention:
+  - 持續監控並記錄生理參數
+  - 麻醉深度隨手術進展調整
+  - 積極保溫預防低體溫
+  - 輸液維持血壓及組織灌流
+  - 備妥緊急藥物及設備

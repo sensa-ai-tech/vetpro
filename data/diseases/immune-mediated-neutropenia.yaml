@@ -1,0 +1,59 @@
+slug: immune-mediated-neutropenia
+nameEn: Immune Mediated Neutropenia
+nameZh: 免疫介導性嗜中性球減少症
+bodySystem: hematology
+description: 抗體攻擊嗜中性球導致嚴重減少(<1000/μL)。增加感染風險,需免疫抑制及抗生素治療。
+
+aliases:
+  - { alias: IMN, language: zh }
+  - { alias: Immune Neutropenia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 可能與IMTP或AIHA併發
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 極罕見
+
+etiology:
+  categories:
+    - name: 原發性
+      examples:
+        - 特發性IMN
+    - name: 次發性
+      examples:
+        - 藥物(如trimethoprim-sulfa)、感染
+
+clinicalSigns:
+  early:
+    - 發燒、嗜睡
+    - 次發性感染
+  progressive:
+    - 敗血症、多器官衰竭
+
+diagnosis:
+  primaryTests:
+    - name: CBC
+      notes: "嗜中性球<1000/μL"
+    - name: 骨髓檢查
+      notes: "排除產生不足"
+  differentialDiagnoses:
+    - 骨髓疾病、藥物毒性
+
+treatment:
+  medical:
+    - Prednisolone 2-4 mg/kg/day PO
+    - 廣效抗生素(預防感染):
+      - Enrofloxacin 5 mg/kg PO q24h
+    - G-CSF(Filgrastim) 5 μg/kg SC(若需要)
+    - 隔離避免感染
+    - 監測CBC恢復
+
+prognosis:
+  general: "預後視感染控制。嚴重敗血症可能致命。"
+
+prevention:
+  - 避免藥物誘發

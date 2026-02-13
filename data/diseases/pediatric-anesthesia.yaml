@@ -1,0 +1,88 @@
+slug: pediatric-anesthesia
+nameEn: Pediatric Anesthesia
+nameZh: 幼齡動物麻醉
+bodySystem: emergency
+description: 針對6月齡以下幼犬幼貓的麻醉管理。幼齡動物生理機能未成熟,包括肝腎代謝能力、體溫調節、血糖穩定性和藥物反應,需要特殊的麻醉方案和密集監測。
+
+aliases:
+  - { alias: 幼犬幼貓麻醉, language: zh }
+  - { alias: 新生兒麻醉, language: zh }
+  - { alias: Neonatal Anesthesia, language: en }
+  - { alias: Puppy Kitten Anesthesia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 8週齡以下幼犬肝酶系統未成熟,藥物代謝時間延長2-3倍
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 幼貓體脂肪少,體溫快速流失,麻醉期間需積極保溫
+
+etiology:
+  categories:
+    - name: 生理特性
+      examples:
+        - 肝腎功能未成熟(藥物代謝能力降低)
+        - 體表面積/體重比高(散熱快,易低體溫)
+        - 肝醣儲存少(易低血糖)
+        - 血腦障壁通透性高(中樞藥物敏感性增加)
+    - name: 麻醉風險
+      examples:
+        - 藥物作用時間延長
+        - 低血糖(禁食>4小時即可能發生)
+        - 低體溫(體溫<37°C顯著增加麻醉死亡率)
+        - 脫水(體液儲備少)
+
+clinicalSigns:
+  early:
+    - 術前活潑有精神(健康幼齡動物)
+    - 麻醉誘導平順但恢復時間可能延長
+    - 需積極維持體溫和血糖
+  progressive:
+    - 術後逐漸恢復活動力
+    - 24小時內恢復正常進食
+    - 無低血糖或低體溫併發症
+
+diagnosis:
+  primaryTests:
+    - name: 血糖監測
+      notes: "術前、術中每30-60分鐘、術後,維持>80 mg/dL"
+    - name: 體溫監測
+      notes: "持續監測,維持38-39°C"
+    - name: 心率監測
+      notes: "幼犬正常心率120-160 bpm,幼貓160-220 bpm"
+    - name: 血壓監測
+      notes: "MAP維持>60 mmHg"
+  differentialDiagnoses:
+    - 正常幼齡動物生理反應
+    - 低血糖(嗜睡、虛弱、癲癇)
+    - 低體溫(恢復延遲、心律不整)
+
+treatment:
+  medical:
+    - "術前禁食:3-4小時(較成年動物短),禁水不超過1小時"
+    - "術前血糖:若<80 mg/dL,給予5% Dextrose 2-5 ml/kg PO"
+    - "誘導藥物:Propofol 4-6 mg/kg IV或Alfaxalone 3-5 mg/kg IV(劑量與成年相同)"
+    - "維持麻醉:Isoflurane或Sevoflurane 1-1.5%(濃度較成年略低)"
+    - "術中輸液:LRS或Hartmann's + 2.5-5% Dextrose,速率5-10 ml/kg/hr"
+    - "保溫措施:循環溫水墊、強制溫風機、溫暖輸液(37°C)、減少暴露面積"
+    - "術中血糖:每30-60分鐘測量,若<60 mg/dL給予25% Dextrose 0.5-1 ml/kg IV稀釋後緩慢推注"
+    - "術後恢復:保溫箱或加熱墊,提供5% Dextrose水或糖漿水"
+    - "及早恢復進食:清醒後1-2小時即可少量多餐"
+
+prognosis:
+  general: "健康幼齡動物耐受麻醉良好,短期絕育手術死亡率<0.1%。最常見併發症為低體溫(30-50%未保溫病例)和低血糖(10-15%)。這兩種併發症若及早發現和治療預後良好。恢復時間可能較成年動物延長50-100%,需耐心等待。嚴重併發症(呼吸停止、心跳停止)罕見(<0.5%),主要見於衰弱、寄生蟲重度感染或先天異常個體。"
+
+prevention:
+  - 確認幼齡動物健康狀況良好才執行非緊急手術
+  - 術前驅蟲和疫苗接種狀況評估
+  - 縮短禁食時間(3-4小時足夠)
+  - 術中積極保溫(目標體溫38.5-39°C)
+  - 定期監測血糖(每30-60分鐘)
+  - 使用加溫輸液和保溫設備
+  - 縮短手術時間(盡量<60分鐘)
+  - 術後立即提供熱源和食物
+  - 延遲釋放直到完全清醒且體溫正常
+  - 8週齡以下或體重<1 kg幼齡動物考慮延期非緊急手術

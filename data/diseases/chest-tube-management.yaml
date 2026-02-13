@@ -1,0 +1,72 @@
+slug: chest-tube-management
+nameEn: Chest Tube Management
+nameZh: 胸腔引流管理
+bodySystem: other
+description: 胸腔引流管置入及照護,用於氣胸、膿胸、血胸或乳糜胸治療。適當管理可促進肺擴張並預防感染併發症。
+
+aliases:
+  - { alias: 胸管照護, language: zh }
+  - { alias: Thoracostomy tube, language: en }
+  - { alias: 胸腔導管, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 外傷、膿胸常見適應症
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓膿胸、乳糜胸常需長期引流
+
+etiology:
+  categories:
+    - name: 適應症
+      examples:
+        - 張力性氣胸
+        - 膿胸或血胸
+        - 乳糜胸
+    - name: 管路類型
+      examples:
+        - 單向活瓣系統
+        - 連續抽吸系統
+        - 間歇性引流
+
+clinicalSigns:
+  early:
+    - 置管後呼吸改善
+    - 引流液體積及性質監測
+    - 管路固定處需密封
+  progressive:
+    - 引流量逐漸減少
+    - 胸腔X光顯示肺擴張
+    - 移除指標:引流<2 mL/kg/day持續24小時
+
+diagnosis:
+  primaryTests:
+    - name: 胸腔X光
+      notes: "確認管路位置及肺擴張程度"
+    - name: 引流液分析
+      notes: "細胞計數、蛋白質、細菌培養"
+    - name: 胸腔超音波
+      notes: "評估殘餘積液分布"
+  differentialDiagnoses:
+    - 間歇性胸腔穿刺
+    - 手術治療(如乳糜胸結紮)
+
+treatment:
+  medical:
+    - 置管:局部麻醉+鎮靜,第8-10肋間置入
+    - 固定:中國指套縫合固定+繃帶包紮
+    - 引流:每4-6小時抽吸或連續負壓(-5 to -10 cmH2O)
+    - 沖洗:膿胸每日Heparinized saline沖洗
+    - 抗生素:依培養結果(膿胸常見Pasteurella, Bacteroides)
+
+prognosis:
+  general: "適當管理下多數病例可成功治療。膿胸需7-14天引流,乳糜胸可能需數週。併發症包括皮下氣腫、管路阻塞、感染。"
+
+prevention:
+  - 無菌技術置管及照護
+  - 固定確實防止脫出
+  - 每日評估移除時機
+  - 監控呼吸狀態及引流量

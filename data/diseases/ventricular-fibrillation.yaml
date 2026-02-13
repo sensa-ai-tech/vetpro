@@ -1,0 +1,70 @@
+slug: ventricular-fibrillation
+nameEn: Ventricular Fibrillation
+nameZh: 心室顫動
+bodySystem: cardiac
+description: 心室肌肉無序且快速的顫動，無有效心輸出。為心跳停止形式之一,需立即心肺復甦及電擊去顫。
+
+aliases:
+  - { alias: 心室纖維性顫動, language: zh }
+  - { alias: V-fib, language: en }
+  - { alias: VF, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 心跳停止、嚴重心臟疾病、電擊、低體溫
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 罕見，多為心跳停止終端心律
+
+etiology:
+  categories:
+    - name: 心臟疾病
+      examples:
+        - 嚴重心肌缺血
+        - 擴張型心肌病變
+    - name: 創傷
+      examples:
+        - 電擊
+        - 胸部鈍傷
+    - name: 全身性
+      examples:
+        - 嚴重低體溫
+        - 電解質嚴重異常
+
+clinicalSigns:
+  early:
+    - 無意識
+    - 無脈搏
+    - 無呼吸或喘息樣呼吸
+  progressive:
+    - 心跳停止
+    - 猝死
+
+diagnosis:
+  primaryTests:
+    - name: 心電圖
+      notes: "不規則波形，無可辨識 QRS 波"
+    - name: 臨床評估
+      notes: "無脈搏、無意識"
+  differentialDiagnoses:
+    - 心搏停止
+    - 無脈性電氣活動
+
+treatment:
+  medical:
+    - CPR (立即開始)
+    - 電擊去顫 (defibrillation): 4-6 J/kg
+    - Epinephrine 0.01 mg/kg IV/IO (low dose) 或 0.1 mg/kg (high dose)
+    - Amiodarone 5 mg/kg IV bolus
+    - 治療可逆原因 (低體溫、電解質)
+
+prognosis:
+  general: "預後極差；即使成功復甦，神經學預後不良；存活率 < 5%"
+
+prevention:
+  - 避免觸發因子 (電擊、低體溫)
+  - 高風險病患監測
+  - 早期識別及治療心律不整

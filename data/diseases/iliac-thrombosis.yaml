@@ -1,0 +1,84 @@
+slug: iliac-thrombosis
+nameEn: Iliac Thrombosis
+nameZh: 髂動脈血栓
+bodySystem: vascular
+description: 髂動脈或主動脈分叉處（aortic bifurcation）的血栓形成或栓塞，導致後肢急性缺血性疼痛、麻痺及脈搏消失，貓最常見的形式為動脈血栓栓塞（ATE），與心肌病密切相關。
+
+aliases:
+  - { alias: 髂動脈栓塞, language: zh }
+  - { alias: 馬鞍血栓, language: zh }
+  - { alias: Saddle thrombus, language: en }
+  - { alias: Aortic thromboembolism, language: en }
+  - { alias: ATE, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬髂動脈血栓較貓少見，可與蛋白質流失性腎病、腎上腺皮質功能亢進或腫瘤相關的高凝血狀態相關。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓動脈血栓栓塞為心肌病最嚴重的併發症之一。約 90% ATE 發生於主動脈分叉處。肥大型心肌病為最常見基礎疾病。
+
+etiology:
+  categories:
+    - name: 心源性栓塞
+      examples:
+        - 肥大型心肌病（HCM）——貓最常見原因
+        - 擴張型心肌病（DCM）
+        - 限制型心肌病（RCM）
+        - 左心房擴大導致血液淤滯與血栓形成
+    - name: 非心源性
+      examples:
+        - 蛋白質流失性腎病（高凝血狀態）
+        - 腫瘤相關高凝血
+        - 腎上腺皮質功能亢進
+        - 免疫介導性溶血性貧血
+
+clinicalSigns:
+  early:
+    - 突發性後肢癱瘓或跛行
+    - 劇烈疼痛與嚎叫
+    - 後肢冰冷
+    - 後肢脈搏消失
+  progressive:
+    - 後肢肌肉僵硬
+    - 後肢肉墊蒼白或發紺
+    - 呼吸急促（合併心衰或疼痛）
+    - 低體溫
+    - 腓腸肌腫脹
+
+diagnosis:
+  primaryTests:
+    - name: 理學檢查
+      notes: "5P 評估——Pain（疼痛）、Pulselessness（無脈搏）、Pallor（蒼白）、Paralysis（癱瘓）、Poikilothermia（變溫）"
+    - name: 心臟超音波
+      notes: "評估基礎心臟疾病。左心房自發性顯影（smoke）。左心房血栓。心肌病分型"
+    - name: 血管超音波
+      notes: "直接觀察血栓位置與範圍"
+  differentialDiagnoses:
+    - 脊髓疾病（椎間盤突出）
+    - 脊髓纖維軟骨栓塞
+    - 外傷
+    - 腫瘤
+
+treatment:
+  medical:
+    - 止痛——多模式止痛（Buprenorphine 0.01-0.03 mg/kg IV/IM 貓；Fentanyl CRI）
+    - 抗血栓——Clopidogrel 18.75 mg PO SID（貓）或 Aspirin 81 mg PO q72h（貓）
+    - 輸液支持（謹慎——心衰患者避免容量過負荷）
+    - 心衰治療（利尿劑、ACE inhibitors）
+    - tPA 溶栓治療（風險高，出血併發症常見）
+    - 低分子量肝素（Enoxaparin 1 mg/kg SC q12h）
+  surgical:
+    - 手術取栓（embolectomy）——風險極高，少用
+    - 再灌注損傷風險
+
+prognosis:
+  general: "貓 ATE 急性死亡率約 30-40%。存活者中位生存時間約 77-345 天。體溫過低、雙側後肢受累、合併充血性心衰預後較差。Clopidogrel 可降低復發率。"
+
+prevention:
+  - 心肌病患者長期使用 Clopidogrel 預防血栓
+  - 定期心臟超音波監測高風險貓
+  - 左心房嚴重擴大者啟動預防性抗血栓治療

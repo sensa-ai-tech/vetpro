@@ -1,0 +1,60 @@
+slug: point-of-care-testing
+nameEn: Point of Care Testing
+nameZh: 即時檢驗
+bodySystem: other
+description: 獸醫即時檢驗(POCT)為診間或床邊快速檢測,提供立即結果指導治療。包括血糖、電解質、血氣、凝血、快速抗原/抗體檢測等,為急症及重症醫學重要工具。
+
+aliases:
+  - { alias: 床邊檢測, language: zh }
+  - { alias: POCT, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 急症評估、重症監測
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 糖尿病監測、急症評估
+
+etiology:
+  categories:
+    - name: 常用POCT
+      examples:
+        - 血糖儀
+        - 血氣分析儀(iSTAT)
+        - 快速檢測(SNAP test)
+        - PCV/TP折射儀
+        - 凝血時間(ACT)
+
+clinicalSigns:
+  early:
+    - POCT為快速診斷工具
+  progressive:
+    - 急症立即評估
+
+diagnosis:
+  primaryTests:
+    - name: 血糖監測
+      notes: "糖尿病、低血糖快速評估"
+    - name: 電解質/血氣
+      notes: "iSTAT提供Na、K、Ca、pH、血氣等"
+    - name: SNAP test
+      notes: "心絲蟲、FeLV/FIV、艾利希體、胰臟炎等"
+    - name: PCV/TP
+      notes: "評估貧血、脫水、低蛋白"
+  differentialDiagnoses:
+    - 各類急症疾病快速評估
+
+treatment:
+  medical:
+    - POCT提供立即資訊指導治療
+
+prognosis:
+  general: "POCT提供快速結果,為急症及重症醫學不可或缺工具。"
+
+prevention:
+  - 定期校正及品管
+  - 了解檢測限制
+  - 必要時實驗室檢測確認

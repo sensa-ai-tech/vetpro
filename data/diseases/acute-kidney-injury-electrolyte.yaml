@@ -1,0 +1,75 @@
+slug: acute-kidney-injury-electrolyte
+nameEn: Acute Kidney Injury Electrolyte
+nameZh: 急性腎損傷電解質異常
+bodySystem: urinary
+description: 急性腎損傷（AKI）常見電解質異常包括高血鉀、高血磷、代謝性酸中毒及低血鈣。嚴重高血鉀可導致心律不整致死,需緊急處理。
+
+aliases:
+  - { alias: AKI電解質失衡, language: zh }
+  - { alias: AKI Electrolyte Abnormalities, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 常見於乙二醇中毒、葡萄中毒或腎毒性藥物
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓常因百合花中毒或尿路阻塞引起
+
+etiology:
+  categories:
+    - name: AKI相關電解質異常
+      examples:
+        - 高血鉀（腎臟排泄減少）
+        - 高血磷（腎臟排泄減少）
+        - 代謝性酸中毒（酸排泄障礙）
+        - 低血鈣（高血磷導致）
+
+clinicalSigns:
+  early:
+    - 少尿或無尿
+    - 高血鉀症狀（肌肉無力、心搏過緩）
+  progressive:
+    - 嚴重高血鉀（>7.0 mEq/L）心律不整
+    - 代謝性酸中毒（過度換氣）
+    - 低血鈣（肌肉顫抖）
+    - 尿毒症（嘔吐、意識改變）
+
+diagnosis:
+  primaryTests:
+    - name: 血清電解質
+      notes: "高血鉀（>5.5 mEq/L）、高血磷（>6.0 mg/dL）、低血鈣（<8.0 mg/dL）"
+    - name: 血液氣體分析
+      notes: "代謝性酸中毒（pH <7.35, HCO3- <18, AG升高）"
+    - name: 腎功能
+      notes: "BUN、Creatinine 顯著升高,尿量減少"
+  differentialDiagnoses:
+    - 高血鉀症
+    - 代謝性酸中毒
+    - 尿毒症
+
+treatment:
+  medical:
+    - 高血鉀治療（K >7.0 或有心電圖異常）：
+      - Calcium gluconate 10% 0.5-1 mL/kg IV slowly（保護心肌）
+      - Regular insulin 0.1-0.25 U/kg IV + Dextrose 1-2 g/U（促進鉀進入細胞）
+      - Sodium bicarbonate 1-2 mEq/kg IV（矯正酸中毒）
+      - 利尿或透析排除鉀（若腎功能許可）
+    - 高血磷治療：
+      - 磷結合劑 Aluminum hydroxide 30-90 mg/kg PO TID
+      - 血液透析（嚴重病例）
+    - 代謝性酸中毒：
+      - Sodium bicarbonate（pH <7.1 或 HCO3- <12）
+    - 低血鈣（有症狀）：
+      - Calcium gluconate 10% 0.5-1 mL/kg IV slowly
+    - 積極輸液利尿（少尿期後）或血液透析
+
+prognosis:
+  general: "預後取決於AKI原因及嚴重程度。適當電解質管理可改善存活率,但嚴重AKI合併高血鉀或代謝性酸中毒死亡率高（50-70%）。血液透析可顯著改善預後。"
+
+prevention:
+  - AKI患者密集監測電解質及腎功能
+  - 早期識別及治療高血鉀
+  - 必要時考慮血液透析

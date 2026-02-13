@@ -1,0 +1,80 @@
+slug: ototoxicity
+nameEn: Ototoxicity
+nameZh: 耳毒性
+bodySystem: toxicology
+description: 藥物或化學物質對內耳結構（耳蝸及/或前庭器官）造成的毒性損傷，導致感覺神經性聽力喪失及/或前庭功能障礙，氨基糖苷類抗生素為最常見的致病藥物。
+
+aliases:
+  - { alias: 藥物性耳毒性, language: zh }
+  - { alias: 耳毒性損傷, language: zh }
+  - { alias: Drug-induced ototoxicity, language: en }
+  - { alias: Aminoglycoside ototoxicity, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 犬耳毒性最常見於全身性使用 aminoglycosides 或鼓膜破裂時局部使用含 gentamicin/neomycin 耳藥。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓對 aminoglycosides 的耳毒性可能更敏感。局部或全身性使用均需謹慎。
+
+etiology:
+  categories:
+    - name: 常見耳毒性藥物
+      examples:
+        - Aminoglycosides（gentamicin, amikacin, neomycin, tobramycin）
+        - Chlorhexidine（局部用於破裂鼓膜的中耳時）
+        - Cisplatin
+        - 環利尿劑（furosemide，尤其與 aminoglycosides 併用）
+        - Polymyxin B（高濃度局部使用時）
+    - name: 風險因素
+      examples:
+        - 鼓膜破裂時局部使用耳毒性藥物
+        - 腎功能不全（藥物蓄積）
+        - 長期用藥
+        - 高劑量
+        - 合併使用多種耳毒性藥物
+
+clinicalSigns:
+  early:
+    - 聽力下降
+    - 對聲音反應遲鈍
+    - 輕度失衡
+  progressive:
+    - 嚴重感覺神經性聽力喪失
+    - 前庭症狀（頭歪斜、眼球震顫）
+    - 共濟失調
+    - 完全耳聾
+
+diagnosis:
+  primaryTests:
+    - name: BAER 檢測
+      notes: "確認感覺神經性聽力喪失。與用藥史相關聯"
+    - name: 藥物暴露史
+      notes: "詳細記錄用藥種類、劑量、療程及鼓膜狀態"
+  differentialDiagnoses:
+    - 特發性前庭症候群
+    - 內耳炎
+    - 老年性聽力喪失
+    - 先天性耳聾
+
+treatment:
+  medical:
+    - 立即停用致病藥物
+    - 前庭症狀支持療法（止吐、止暈）
+    - 聽力喪失多為不可逆——無有效逆轉治療
+    - 腎功能評估（aminoglycosides 同時有腎毒性）
+    - 替代抗生素選擇
+  surgical: []
+
+prognosis:
+  general: "藥物性耳蝸毒性（聽力喪失）通常為永久性。前庭毒性可能部分恢復（中樞代償）。早期停藥可限制損傷程度。預防重於治療。"
+
+prevention:
+  - 鼓膜破裂時避免使用耳毒性藥物（aminoglycosides、chlorhexidine）
+  - 使用 aminoglycosides 時監測腎功能與藥物血中濃度
+  - 避免 aminoglycosides 與環利尿劑併用
+  - 使用最短有效療程
+  - 破裂鼓膜僅用生理食鹽水或 Tris-EDTA 沖洗

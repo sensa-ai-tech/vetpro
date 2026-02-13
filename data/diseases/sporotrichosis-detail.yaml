@@ -1,0 +1,83 @@
+slug: sporotrichosis-detail
+nameEn: Sporotrichosis Detail
+nameZh: 孢子絲菌病詳述
+bodySystem: infectious
+description: 孢子絲菌病是由申克孢子絲菌(Sporothrix schenckii複合群)引起的皮下真菌感染,主要經皮膚傷口接觸污染土壤、植物或有機物質傳播。此病表現為多發性皮下結節、潰瘍及淋巴管炎,貓較犬易感且可傳染給人類,屬人畜共通傳染病。
+
+aliases:
+  - { alias: 孢子絲菌症, language: zh }
+  - { alias: Rose Gardener Disease, language: en }
+  - { alias: 玫瑰園丁病, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬感染相對罕見,多為局部性皮膚病變,戶外活動犬風險較高
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓高度易感,巴西、南美為高流行區,未絕育雄貓風險最高,可經抓咬傳染給人類
+
+etiology:
+  categories:
+    - name: 皮下真菌感染
+      examples:
+        - Sporothrix schenckii複合群(包括S. brasiliensis、S. schenckii)
+        - 經皮膚傷口(抓傷、咬傷、植物刺傷)接觸污染土壤、植物
+        - 貓抓咬傷(貓為重要傳染源)
+        - 高風險環境:園藝、草叢、腐爛木材
+
+clinicalSigns:
+  early:
+    - 皮下結節(堅硬、無痛)
+    - 好發部位:頭部、四肢、尾巴基部
+    - 淋巴管炎:沿淋巴管分布的串珠狀結節
+  progressive:
+    - 結節潰瘍、滲出膿液或血樣物
+    - 局部淋巴結腫大
+    - 脫毛、色素改變
+    - 播散型(罕見):肺炎、骨髓炎、多重器官侵犯
+    - 貓可能發燒、精神沉鬱
+
+diagnosis:
+  primaryTests:
+    - name: 細胞學檢查
+      notes: "病灶吸出物可見雪茄狀酵母(貓常見,犬罕見)"
+    - name: 真菌培養
+      notes: "組織或滲出物培養(需1-3週),25°C培養呈菌絲型,37°C呈酵母型"
+    - name: 組織病理切片
+      notes: "化膿性肉芽腫性皮膚炎,PAS或GMS染色可見酵母"
+    - name: PCR檢測
+      notes: "組織樣本Sporothrix DNA檢測及菌種鑑定"
+    - name: 血清學檢查
+      notes: "抗Sporothrix抗體檢測(可用於流行病學調查)"
+  differentialDiagnoses:
+    - 非典型分枝桿菌感染
+    - 隱球菌病
+    - 細菌性肉芽腫
+    - 異物反應
+    - 腫瘤(肥大細胞瘤、淋巴瘤)
+
+treatment:
+  medical:
+    - 貓(首選):Itraconazole 10 mg/kg PO SID或50-100 mg/cat PO SID x 3-6個月(直至病灶消失後再延長1個月)
+    - 犬:Itraconazole 5-10 mg/kg PO BID x 3-6個月
+    - 替代藥物:
+    - Potassium iodide(KI)40-50 mg/kg PO BID x 3-6個月(貓較不耐受)
+    - Fluconazole 5-10 mg/kg PO SID x 6-12個月
+    - Terbinafine 10-30 mg/kg PO SID x 3-6個月
+    - 局部外科切除(單發病灶)
+    - 熱敷(Sporotrichosis對熱敏感,40-42°C x 15-20分鐘/日)
+    - 人員防護:處理病貓時戴手套,避免抓咬傷
+    - 監測:每月臨床評估,治療結束後培養確認清除
+
+prognosis:
+  general: "預後良好至佳。皮膚型經Itraconazole治療,治癒率約80-95%,貓可能需較長療程。播散型預後謹慎至不良。復發率約10-20%。人畜共通風險高,需嚴格防護。"
+
+prevention:
+  - 避免貓戶外活動,減少打鬥及狩獵
+  - 園藝工作時戴手套
+  - 及時處理皮膚傷口
+  - 流行區病貓隔離治療,避免人畜接觸
+  - 無有效疫苗

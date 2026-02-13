@@ -1,0 +1,85 @@
+slug: diabetic-hyperosmolar-syndrome
+nameEn: Diabetic Hyperosmolar Syndrome
+nameZh: 糖尿病高滲透壓症候群
+bodySystem: endocrine
+description: 嚴重高血糖(通常>600 mg/dL)合併高血漿滲透壓但無明顯酮酸中毒,導致脫水、電解質紊亂及意識改變,為糖尿病急症。
+
+aliases:
+  - { alias: 高滲透壓性非酮酸性昏迷, language: zh }
+  - { alias: HHS, language: en }
+  - { alias: HONK, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 較少見,多發生於第二型糖尿病或嚴重脫水病例
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓偶見,常伴隨其他嚴重疾病
+
+etiology:
+  categories:
+    - name: 誘發因素
+      examples:
+        - 嚴重脫水(飲水不足、嘔吐、腹瀉)
+        - 併發感染或敗血症
+        - 急性疾病(胰臟炎、腎衰竭)
+        - 藥物誘發(類固醇、利尿劑)
+    - name: 病理機制
+      examples:
+        - 胰島素相對不足但仍抑制脂肪分解(故不產生酮體)
+        - 極度高血糖導致滲透性利尿
+        - 嚴重脫水致血漿滲透壓升高(>350 mOsm/kg)
+        - 腦細胞脫水導致神經症狀
+
+clinicalSigns:
+  early:
+    - 極度多渴但無法飲水
+    - 嚴重脫水(皮膚彈性極差)
+    - 精神沉鬱、虛弱
+  progressive:
+    - 意識改變(昏睡、昏迷)
+    - 癲癇發作
+    - 低體溫
+    - 休克症狀(黏膜蒼白、微血管再充填延遲)
+    - 可能無酮味呼吸
+
+diagnosis:
+  primaryTests:
+    - name: 血糖
+      notes: "極度升高,通常>600 mg/dL,可達800-1000 mg/dL以上"
+    - name: 血漿滲透壓
+      notes: ">350 mOsm/kg(計算公式: 2×[Na+K] + 葡萄糖/18 + BUN/2.8)"
+    - name: 血氣分析
+      notes: "通常無明顯代謝性酸中毒(pH >7.3, HCO3 >15 mmol/L)"
+    - name: 尿液分析
+      notes: "尿糖陽性,酮體陰性或弱陽性"
+    - name: 電解質
+      notes: "可能高鈉血症、低鉀血症、低磷血症"
+  differentialDiagnoses:
+    - 糖尿病酮酸中毒
+    - 其他原因高滲透壓狀態(高鈉血症)
+    - 尿毒症
+    - 敗血性休克
+
+treatment:
+  medical:
+    - 緩慢靜脈輸液復水(0.45% NaCl 或 0.9% NaCl,依血鈉濃度選擇)
+    - 初始輸液速率: 休克劑量減半(30-40 mL/kg第1小時,後續5-10 mL/kg/hr)
+    - 低劑量胰島素點滴(Regular insulin 0.05-0.1 U/kg/hr IV CRI)
+    - 血糖下降速度不超過50-75 mg/dL/hr(避免腦水腫)
+    - 電解質補充(鉀 20-40 mEq/L於輸液中,磷補充需謹慎)
+    - 血糖降至250 mg/dL後改用5% dextrose輸液
+    - 治療原發疾病(感染、胰臟炎等)
+    - 密集監測(每1-2小時血糖、電解質、神經狀態)
+
+prognosis:
+  general: "預後保守至不良,死亡率可達40-60%。併發腦水腫、癲癇、多器官衰竭者預後極差。存活者需長期糖尿病管理。"
+
+prevention:
+  - 糖尿病患者維持充足飲水
+  - 早期識別並治療併發疾病
+  - 定期監測血糖避免極度失控
+  - 避免使用可能誘發高血糖藥物(類固醇)

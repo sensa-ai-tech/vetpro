@@ -1,0 +1,81 @@
+slug: doxorubicin-cardiotoxicity
+nameEn: Doxorubicin Cardiotoxicity
+nameZh: 多柔比星心臟毒性
+bodySystem: toxicology
+description: 多柔比星(小紅莓)為蒽環類化療藥,可引起劑量累積性心肌病變,導致擴張性心肌病及心衰竭。
+
+aliases:
+  - { alias: 小紅莓心臟毒性, language: zh }
+  - { alias: Adriamycin Cardiotoxicity, language: en }
+  - { alias: Anthracycline Cardiomyopathy, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 淋巴瘤及血管肉瘤常用,累積劑量>180-240 mg/m²風險增加
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓較少使用多柔比星,心臟毒性風險較低
+
+etiology:
+  categories:
+    - name: 累積劑量
+      examples:
+        - 總劑量>180-240 mg/m²(犬)
+        - 快速輸注增加急性毒性
+    - name: 個體易感性
+      examples:
+        - 既有心臟病
+        - 小型犬品種(如杜賓)
+
+clinicalSigns:
+  early:
+    - 運動不耐、疲倦
+    - 輕微咳嗽
+    - 心率增加
+  progressive:
+    - 充血性心衰竭(呼吸困難、腹水)
+    - 肺水腫、胸水
+    - 昏厥、心律不整
+    - 心因性休克
+
+diagnosis:
+  primaryTests:
+    - name: 心臟超音波
+      notes: "左心室收縮分率(FS)<25%或射血分率(EF)<40%提示心肌病變"
+    - name: 心電圖
+      notes: "心律不整、QRS波低電壓"
+    - name: 胸部X光
+      notes: "心臟擴大、肺水腫、胸水"
+    - name: 心臟生物標記
+      notes: "Troponin I升高(>0.2 ng/mL)提示心肌損傷"
+  differentialDiagnoses:
+    - 擴張性心肌病(特發性)
+    - 瓣膜性心臟病
+    - 肺高壓
+    - 腫瘤相關心包積液
+
+treatment:
+  medical:
+    - 立即停止多柔比星化療
+    - 心衰竭治療:
+      - Furosemide 2-4 mg/kg IV/PO q8-12h(肺水腫)
+      - Pimobendan 0.25-0.3 mg/kg PO q12h(改善收縮力)
+      - Enalapril 0.5 mg/kg PO q12-24h(後負荷降低)
+    - 心律不整: 依類型選用抗心律不整藥
+    - 氧氣治療(若呼吸困難)
+    - 限制鈉攝取
+    - 定期監測心臟功能
+
+prognosis:
+  general: "早期心肌病變停藥後可能部分恢復,但多為不可逆。充血性心衰竭預後不良,中位存活期數月。預防勝於治療。"
+
+prevention:
+  - 化療前心臟超音波基線評估
+  - 嚴格控制累積劑量(<180 mg/m²)
+  - 緩慢輸注(15-20分鐘以上)
+  - 考慮使用右雷佐生(Dexrazoxane)心臟保護劑
+  - 既有心臟病動物避免使用
+  - 定期監測心臟功能(每2-3次化療後)

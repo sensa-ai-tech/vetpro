@@ -1,0 +1,73 @@
+slug: hypochloremia
+nameEn: Hypochloremia
+nameZh: 低血氯症
+bodySystem: electrolyte
+description: 血清氯離子濃度低於正常範圍（犬貓 <105 mEq/L），常與低血鈉症或代謝性鹼中毒並存。多因腸胃道流失、利尿劑使用或醛固酮過多引起。
+
+aliases:
+  - { alias: 血氯過低, language: zh }
+  - { alias: Hypochloraemia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 常見於嘔吐、幽門阻塞或利尿劑使用
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓常因腸胃道疾病或腎臟病引起
+
+etiology:
+  categories:
+    - name: 腸胃道流失
+      examples:
+        - 嘔吐（尤其幽門阻塞）
+        - 腹瀉
+        - 胃液抽吸
+    - name: 腎臟流失
+      examples:
+        - 利尿劑（Furosemide）
+        - 原發性醛固酮增多症
+    - name: 代謝性鹼中毒
+      examples:
+        - 低血鉀性鹼中毒
+        - 醛固酮過多
+
+clinicalSigns:
+  early:
+    - 多數無特異性症狀
+    - 食慾減退、嗜睡
+  progressive:
+    - 肌肉無力
+    - 代謝性鹼中毒症狀（呼吸抑制）
+    - 脫水
+
+diagnosis:
+  primaryTests:
+    - name: 血清電解質
+      notes: "Cl <105 mEq/L，常伴隨低鈉或低鉀"
+    - name: 血液氣體分析
+      notes: "評估代謝性鹼中毒（HCO3- 升高，pH >7.45）"
+    - name: 尿氯濃度
+      notes: "鑑別腎性或腎外流失"
+  differentialDiagnoses:
+    - 代謝性鹼中毒
+    - 幽門阻塞
+    - 利尿劑過量
+    - 原發性醛固酮增多症
+
+treatment:
+  medical:
+    - 治療潛在病因（止吐、調整利尿劑劑量）
+    - 0.9% NaCl 靜脈輸液補充
+    - 補充鉀離子（KCl 20-40 mEq/L IV）
+    - 監測電解質及酸鹼平衡
+
+prognosis:
+  general: "預後良好，多數病例經治療潛在病因及補充電解質後可完全恢復。嚴重低血氯合併嚴重代謝性鹼中毒需積極處理。"
+
+prevention:
+  - 腸胃道疾病早期治療
+  - 使用利尿劑時定期電解質檢查
+  - 補充電解質溶液於嘔吐或腹瀉患者

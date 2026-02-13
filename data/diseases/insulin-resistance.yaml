@@ -1,0 +1,86 @@
+slug: insulin-resistance
+nameEn: Insulin Resistance
+nameZh: 胰島素阻抗
+bodySystem: endocrine
+description: 組織對胰島素反應性降低,導致血糖控制不佳,需要更高劑量胰島素才能達到治療效果,常見於肥胖、內分泌疾病或藥物使用。
+
+aliases:
+  - { alias: 胰島素抗性, language: zh }
+  - { alias: Insulin insensitivity, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 常見於肥胖犬、庫興氏症或發情期/懷孕母犬
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 肥胖貓極常見,是第二型糖尿病主要病理機制
+
+etiology:
+  categories:
+    - name: 內分泌疾病
+      examples:
+        - 庫興氏症(糖皮質激素過多)
+        - 肢端肥大症(生長激素過多)
+        - 甲狀腺亢進(貓)
+        - 黃體期黃體酮升高(發情母犬)
+    - name: 肥胖相關
+      examples:
+        - 脂肪組織分泌發炎細胞激素
+        - 游離脂肪酸升高
+        - 脂肪肝
+    - name: 藥物誘發
+      examples:
+        - 糖皮質激素(Prednisone, Dexamethasone)
+        - 孕激素(Megestrol acetate)
+        - 某些利尿劑
+    - name: 其他因素
+      examples:
+        - 慢性胰臟炎
+        - 感染或發炎性疾病
+        - 胰島澱粉樣沉積(貓)
+
+clinicalSigns:
+  early:
+    - 糖尿病控制不良(血糖持續>250 mg/dL)
+    - 需要高劑量胰島素(犬>2 U/kg/dose, 貓>1.5 U/kg/dose)
+    - 持續多渴、多尿
+  progressive:
+    - 體重增加或難以減重
+    - 反覆低血糖事件(高劑量胰島素)
+    - 併發疾病症狀(如庫興氏症的腹部膨大、多渴多尿)
+
+diagnosis:
+  primaryTests:
+    - name: 血糖曲線
+      notes: "胰島素注射後血糖下降幅度小,最低點仍>150-200 mg/dL"
+    - name: 內分泌功能檢查
+      notes: "ACTH刺激試驗(庫興氏症)、IGF-1(肢端肥大症)、T4(甲狀腺)"
+    - name: 果糖胺
+      notes: "持續升高(>500 μmol/L)顯示長期血糖控制不佳"
+  differentialDiagnoses:
+    - 胰島素注射技術不當或失效
+    - 索莫吉效應(反彈性高血糖)
+    - 胰島素抗體形成
+    - 併發感染或發炎
+
+treatment:
+  medical:
+    - 治療原發性內分泌疾病(Trilostane 用於庫興氏症, Methimazole 用於甲狀腺亢進)
+    - 減重計畫(高蛋白低碳水化合物飲食,目標減重1-2%/週)
+    - 停用誘發藥物(類固醇、孕激素)
+    - 更換胰島素種類(如從NPH改用Glargine或Detemir)
+    - 增加胰島素劑量(謹慎調整,監測低血糖)
+    - 口服降血糖藥輔助(貓可考慮Glipizide 2.5 mg PO BID)
+    - 治療併發感染(抗生素)
+
+prognosis:
+  general: "若能找出並治療原發病因(如庫興氏症、肥胖),胰島素阻抗可改善;無法矯正原因者需持續高劑量胰島素治療,預後保守。"
+
+prevention:
+  - 維持理想體重,避免肥胖
+  - 避免長期使用糖皮質激素
+  - 早期診斷並治療內分泌疾病
+  - 定期監測糖尿病控制狀況

@@ -1,0 +1,96 @@
+slug: protein-requirements-critical-illness
+nameEn: Protein Requirements Critical Illness
+nameZh: 重症蛋白質需求
+bodySystem: metabolic
+description: 重症或疾病狀態下的蛋白質需求評估。重症動物常處於高分解代謝狀態，蛋白質需求增加以維持肌肉質量及免疫功能。
+
+aliases:
+  - { alias: 重症蛋白需求, language: zh }
+  - { alias: Critical Care Protein, language: en }
+  - { alias: Illness Protein Needs, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 重症照護常見
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓為專性肉食，蛋白需求更高
+
+etiology:
+  categories:
+    - name: 重症對蛋白代謝影響
+      examples:
+        - 高分解代謝狀態
+        - 肌肉蛋白分解增加
+        - 急性期蛋白合成增加
+        - 傷口癒合需蛋白質
+    - name: 蛋白質需求(健康)
+      examples:
+        - 成犬：最低18%(乾物質)
+        - 成貓：最低26%(乾物質)
+        - 或4-6 g蛋白/100 kcal
+    - name: 蛋白質需求(重症)
+      examples:
+        - 犬：6-8 g/100 kcal
+        - 貓：8-10 g/100 kcal
+        - 燒傷/創傷：可能需更高
+
+clinicalSigns:
+  early:
+    - 適當蛋白：白蛋白穩定、肌肉質量維持
+    - 蛋白不足：低白蛋白血症、肌肉流失
+    - 蛋白過量：氮血症(腎病時)
+  progressive:
+    - 長期蛋白不足：嚴重肌肉萎縮、免疫功能低下
+    - 適當蛋白：傷口癒合良好、免疫功能改善
+
+diagnosis:
+  primaryTests:
+    - name: 血清白蛋白
+      notes: "正常犬2.5-4.0 g/dL，貓2.5-3.9 g/dL"
+    - name: 總蛋白
+      notes: "評估整體蛋白狀態"
+    - name: BUN/Cr
+      notes: "監測腎功能(蛋白代謝)"
+    - name: 肌肉質量評估
+      notes: "MCS評分"
+  differentialDiagnoses:
+    - 蛋白質-能量營養不良
+    - 低白蛋白血症
+    - 肌肉萎縮
+
+treatment:
+  medical:
+    - 蛋白質需求計算
+    - 1. 計算每日熱量需求(RER)
+    - 2. 蛋白質g/100 kcal
+    - 3. 總蛋白質g = (RER/100) × g蛋白/100 kcal
+    - 範例(10kg重症犬)
+    - RER = 394 kcal/day
+    - 需6 g蛋白/100 kcal
+    - 總蛋白 = (394/100) × 6 = 23.6 g/day
+    - 範例(5kg重症貓)
+    - RER = 234 kcal/day
+    - 需8 g蛋白/100 kcal
+    - 總蛋白 = (234/100) × 8 = 18.7 g/day
+    - 蛋白質來源
+    - 動物性蛋白(高生物價)：肉類、魚、蛋
+    - 商業營養品：高蛋白配方
+    - 腸道營養：高蛋白罐頭
+    - 靜脈營養：胺基酸溶液
+    - 特殊情況調整
+    - 腎病：限制蛋白但保證高品質
+    - 肝病：BCAA(支鏈胺基酸)為主
+    - 燒傷/創傷：增加至8-10 g/100 kcal
+
+prognosis:
+  general: "適當蛋白質供應可維持肌肉質量、支持免疫功能、改善重症預後"
+
+prevention:
+  - 及早營養支持
+  - 提供足夠高品質蛋白
+  - 監測白蛋白及肌肉質量
+  - 腎病時平衡蛋白需求與腎功能

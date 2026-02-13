@@ -1,0 +1,85 @@
+slug: renal-tubular-necrosis
+nameEn: Renal Tubular Necrosis
+nameZh: 腎小管壞死
+bodySystem: urinary
+description: 腎小管壞死 (ATN) 是腎小管上皮細胞因缺血或毒素直接損傷而發生的壞死，是急性腎損傷最常見的病理機制。及時治療腎小管上皮可再生恢復。
+
+aliases:
+  - { alias: 急性腎小管壞死, language: zh }
+  - { alias: 腎小管急性壞死, language: zh }
+  - { alias: Acute Tubular Necrosis, language: en }
+  - { alias: ATN, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 犬急性腎小管壞死常見於術中低血壓、腎毒性藥物使用或中毒事件後。近端腎小管最易受損。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓急性腎小管壞死常見原因包括百合中毒、NSAIDs 和術中低血壓。
+
+etiology:
+  categories:
+    - name: 缺血性
+      examples:
+        - 術中低血壓
+        - 休克（失血性、敗血性）
+        - 腎動脈栓塞
+        - 嚴重脫水
+    - name: 腎毒性
+      examples:
+        - 乙二醇
+        - 胺基糖苷類抗生素
+        - 百合（貓）
+        - NSAIDs
+        - 重金屬
+        - 化療藥物（cisplatin）
+
+clinicalSigns:
+  early:
+    - 尿量改變（初期可能多尿或正常）
+    - BUN/Creatinine 急速上升
+    - 食慾下降
+  progressive:
+    - 少尿或無尿
+    - 嚴重氮血症
+    - 電解質失衡（高鉀、高磷、低鈣）
+    - 嘔吐
+    - 嗜睡至昏迷
+    - 代謝性酸中毒
+
+diagnosis:
+  primaryTests:
+    - name: 腎功能指標
+      notes: "BUN/Creatinine 急速升高。SDMA 升高。肌酐上升速度反映損傷嚴重度。"
+    - name: 尿液分析
+      notes: "尿液比重等張（1.008-1.012，失去濃縮能力）。顆粒管型和上皮管型。腎小管上皮細胞。蛋白尿。"
+  differentialDiagnoses:
+    - 腎前性氮血症（脫水）
+    - 腎後性阻塞
+    - 急性腎絲球腎炎
+    - 急性腎盂腎炎
+
+treatment:
+  medical:
+    - 去除病因（停用腎毒性藥物、解毒劑）
+    - 積極靜脈輸液恢復腎灌流
+    - 維持尿量：Furosemide 2-4 mg/kg IV 或 Mannitol 0.5-1 g/kg IV
+    - 電解質矯正（特別是高鉀血症）
+    - 代謝性酸中毒矯正
+    - 嚴重少尿性腎衰竭：透析
+    - 營養支持
+  surgical:
+    - 通常不適用手術治療
+    - 腎後性阻塞需解除阻塞
+
+prognosis:
+  general: "非少尿性 ATN 預後較佳。少尿性 ATN 預後謹慎至不良。腎小管上皮具有再生能力，若能度過急性期，腎功能可部分至完全恢復，恢復期約2-6週。缺血性 ATN 預後通常優於腎毒性 ATN。"
+
+prevention:
+  - 術中維持適當血壓與腎灌流
+  - 腎毒性藥物的谨慎使用
+  - 充足水合狀態維持
+  - 高風險手術中的尿量監測

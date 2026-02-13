@@ -1,0 +1,76 @@
+slug: vaccination-protocol-canine-core
+nameEn: Vaccination Protocol Canine Core
+nameZh: 犬核心疫苗方案
+bodySystem: other
+description: 犬隻核心疫苗接種方案,包括犬瘟熱、犬小病毒、犬腺病毒(CAV-2)和狂犬病疫苗。所有犬隻無論生活環境或地理位置都應接種核心疫苗以預防致命性疾病。
+
+aliases:
+  - { alias: 犬基礎疫苗, language: zh }
+  - { alias: 狗核心疫苗, language: zh }
+  - { alias: Canine Core Vaccines, language: en }
+  - { alias: Essential Dog Vaccines, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 所有犬隻都應接種核心疫苗,免疫力可持續3年以上
+
+etiology:
+  categories:
+    - name: 核心疫苗包含疾病
+      examples:
+        - 犬瘟熱(Canine Distemper Virus, CDV)
+        - 犬小病毒腸炎(Canine Parvovirus, CPV-2)
+        - 犬腺病毒2型(Canine Adenovirus-2, CAV-2,預防傳染性肝炎和犬舍咳)
+        - 狂犬病(Rabies)
+    - name: 疫苗類型
+      examples:
+        - 改良活毒疫苗(MLV,免疫力較強較持久)
+        - 不活化疫苗(狂犬病)
+        - 重組疫苗(新型技術)
+
+clinicalSigns:
+  early:
+    - 接種後24-48小時可能輕度嗜睡或食慾降低
+    - 注射部位輕微腫脹或疼痛
+    - 輕度發燒(<39.5°C)
+  progressive:
+    - 大多數症狀48-72小時內自行緩解
+    - 成功免疫後可產生保護性抗體
+
+diagnosis:
+  primaryTests:
+    - name: "抗體力價檢測(可選)"
+      notes: "接種後3-4週測量CDV、CPV、CAV抗體,確認免疫成功"
+    - name: 疫苗不良反應監測
+      notes: "記錄任何異常反應,下次接種前告知獸醫"
+  differentialDiagnoses:
+    - 正常疫苗反應(輕微症狀<72小時)
+    - 疫苗不良反應(持續或嚴重症狀)
+    - 疫苗失敗(抗體未產生,需重新接種)
+
+treatment:
+  medical:
+    - "幼犬初次免疫:6-8週齡第1劑 → 10-12週齡第2劑 → 14-16週齡第3劑(DHPP疫苗)"
+    - "狂犬病疫苗:12-16週齡首次接種,1年後補強,之後每1-3年(依當地法規)"
+    - "成犬補強:初次免疫完成後1年補強DHPP,之後每3年一次"
+    - "成年未接種犬:初次2劑間隔3-4週,1年後補強,之後每3年"
+    - "DHPP組合疫苗:Distemper + Hepatitis(Adenovirus) + Parvovirus + Parainfluenza"
+    - "分開接種:若擔心不良反應,可將狂犬病和DHPP間隔2-3週接種"
+    - "高風險環境:收容所、繁殖場可能需要更頻繁接種(每年一次)"
+
+prognosis:
+  general: "核心疫苗安全有效,保護力可達95%以上。正確接種的犬隻極少罹患核心疫苗預防的疾病。不良反應發生率<5%,大多為輕微且自限性。嚴重過敏反應(Anaphylaxis)極罕見(<0.01%),通常在接種後30分鐘內發生。抗體力價可維持3年以上,但狂犬病疫苗仍需依法定間隔接種。"
+
+prevention:
+  - 遵循WSAVA全球犬貓疫苗指引
+  - 幼犬在16週齡前完成至少3劑核心疫苗
+  - 避免在6週齡前接種(母源抗體干擾)
+  - 記錄疫苗廠牌、批號、接種日期
+  - 接種後觀察30分鐘(監測急性過敏反應)
+  - 小型犬(<5 kg)考慮分開接種減少不良反應
+  - 免疫抑制疾病或正在服用免疫抑制劑的犬隻諮詢獸醫
+  - 懷孕犬避免接種改良活毒疫苗
+  - 使用抗體力價檢測評估免疫狀態(替代過度接種)
+  - 病犬延期接種直到康復

@@ -1,0 +1,81 @@
+slug: amitraz-toxicosis
+nameEn: Amitraz Toxicosis
+nameZh: Amitraz 中毒
+bodySystem: toxicology
+description: 攝入或過量使用 amitraz(雙甲脒)殺蟎劑引發的中毒,α2-腎上腺素受體促效劑作用導致鎮靜、低血壓、心搏過緩和高血糖。常見於誤用農業用高濃度產品或寵物過量接觸。
+
+aliases:
+  - { alias: 雙甲脒中毒, language: zh }
+  - { alias: Amitraz Overdose, language: en }
+  - { alias: Mitaban Toxicity, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 犬用於治療毛囊蟲症時過量或舔舐塗藥部位,小型犬更易中毒
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓對 amitraz 極度敏感,不建議使用,誤用可致嚴重中毒
+
+etiology:
+  categories:
+    - name: α2-腎上腺素受體促效劑
+      examples:
+        - Amitraz(雙甲脒)
+        - 作用機轉:中樞和周邊 α2-受體促效
+
+clinicalSigns:
+  early:
+    - 鎮靜、嗜睡
+    - 共濟失調
+    - 低體溫
+    - 過度流涎(貓特別明顯)
+  progressive:
+    - 心搏過緩(明顯)
+    - 低血壓
+    - 高血糖(α2-受體抑制胰島素釋放)
+    - 呼吸抑制
+    - 多尿(抗利尿激素抑制)
+    - 腸蠕動減慢、脹氣
+    - 昏迷(嚴重病例)
+
+diagnosis:
+  primaryTests:
+    - name: 病史詢問
+      notes: "確認 amitraz 產品使用史,特別是高濃度農業用或寵物用 Mitaban®"
+    - name: 臨床症候群
+      notes: "鎮靜+心搏過緩+高血糖為特徵性組合"
+    - name: 血糖測定
+      notes: "顯著高血糖常見(可達 200-400 mg/dL),為診斷線索"
+    - name: 血壓和心律監測
+      notes: "低血壓、心搏過緩(<60 bpm)"
+  differentialDiagnoses:
+    - Xylazine 或其他 α2-agonist 藥物中毒(臨床相似)
+    - 有機磷中毒(亦有心搏過緩但伴 SLUD 症狀)
+    - 其他鎮靜劑過量
+    - 低體溫症(其他原因)
+
+treatment:
+  medical:
+    - 去污染:皮膚徹底清洗(戴手套),口服中毒考慮催吐(若清醒)
+    - 活性碳 1-4 g/kg PO(口服中毒)
+    - "**α2-拮抗劑特效解毒**:"
+    - Atipamezole 50-200 μg/kg IM(半劑量 IV 可加快效果),可於 3-4 小時後重複
+    - Yohimbine 0.1-0.2 mg/kg IV 緩慢(替代選擇,但半衰期短)
+    - 保溫(低體溫時)
+    - 靜脈輸液支持血壓(避免快速大量,可能加重肺水腫)
+    - Atropine 0.02-0.04 mg/kg IV 治療症狀性心搏過緩(若 α2-拮抗劑無效時)
+    - 高血糖通常無需治療,α2-拮抗劑使用後會快速恢復
+    - 監測 24-48 小時,症狀可能反覆
+
+prognosis:
+  general: "使用 atipamezole 後預後通常良好,多數犬在 1-6 小時內症狀明顯改善。未使用拮抗劑時恢復較慢(24-72 小時)。貓對 amitraz 極度敏感,預後較犬差。嚴重低血壓或呼吸抑制未及時處理可能致命。"
+
+prevention:
+  - 嚴格遵循 amitraz 產品標示的劑量和使用頻率
+  - 絕不使用農業用高濃度 amitraz 於寵物
+  - 塗藥後使用伊莉莎白項圈防止舔舐
+  - 貓禁用 amitraz 產品
+  - 考慮使用更安全的毛囊蟲治療替代方案(如 moxidectin, fluralaner)

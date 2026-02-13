@@ -1,0 +1,84 @@
+slug: otitis-media-detail
+nameEn: Otitis Media Detail
+nameZh: 中耳炎詳解
+bodySystem: ear
+description: 中耳腔（鼓室）的感染或炎症，多數為慢性外耳炎經鼓膜延伸所致，少數經耳咽管上行感染。可導致聽力損失、前庭症狀及顏面神經損傷。
+
+aliases:
+  - { alias: 中耳感染, language: zh }
+  - { alias: 鼓室炎, language: zh }
+  - { alias: Middle ear infection, language: en }
+  - { alias: Tympanic bulla infection, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 約 50-80% 慢性外耳炎犬合併中耳炎。可卡犬尤其好發。鼓膜完整不代表無中耳炎（原發性中耳炎或鼓膜癒合後殘留感染）。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓中耳炎常與鼻咽息肉或上呼吸道感染相關。幼貓鼻咽息肉延伸至中耳為常見原因。
+
+etiology:
+  categories:
+    - name: 感染途徑
+      examples:
+        - 經鼓膜延伸（慢性外耳炎最常見途徑）
+        - 經耳咽管上行感染
+        - 血行性感染（罕見）
+    - name: 常見病原
+      examples:
+        - Staphylococcus spp.
+        - Pseudomonas aeruginosa
+        - Streptococcus spp.
+        - Malassezia pachydermatis
+        - Pasteurella multocida（貓）
+
+clinicalSigns:
+  early:
+    - 慢性外耳炎對治療反應不良
+    - 觸壓耳根疼痛
+    - 搖頭不止
+    - 聽力下降
+  progressive:
+    - 頭歪斜（head tilt）
+    - Horner syndrome（瞳孔縮小、眼瞼下垂、第三眼瞼突出）
+    - 顏面神經麻痺（嘴唇下垂、眼瞼閉合不全）
+    - 乾眼症（KCS，面神經損傷所致）
+    - 前庭症狀（眼球震顫、失衡）
+
+diagnosis:
+  primaryTests:
+    - name: 耳鏡檢查（鎮靜下）
+      notes: "評估鼓膜完整性、透明度、膨隆。鼓膜破裂可見中耳腔分泌物。鼓膜完整不排除中耳炎"
+    - name: 影像學（CT 或 MRI）
+      notes: "CT 為評估鼓泡的金標準。鼓泡壁增厚、腔內軟組織密度增加、骨溶解為典型發現"
+    - name: 中耳沖洗取樣
+      notes: "鼓膜穿刺或經破裂處取樣做細菌培養與藥敏。指導治療"
+  differentialDiagnoses:
+    - 內耳炎
+    - 鼻咽息肉（貓）
+    - 中耳膽脂瘤
+    - 中耳腫瘤
+    - 特發性前庭症候群
+
+treatment:
+  medical:
+    - 全身性抗生素（依培養藥敏，療程 6-8 週以上）
+    - 經驗性首選——Fluoroquinolone（Enrofloxacin 5-10 mg/kg PO SID）或 Cephalosporin
+    - 中耳沖洗（鎮靜下以溫生理食鹽水沖洗中耳腔）
+    - 局部治療（鼓膜破裂時避免耳毒性藥物——禁用 aminoglycosides、chlorhexidine）
+    - 止痛（Meloxicam 0.1 mg/kg PO SID）
+  surgical:
+    - 鼓泡切開術（ventral bulla osteotomy）——內科治療無效時
+    - 全耳道切除合併側鼓泡切開術（TECA-LBO）——合併終末期外耳炎
+
+prognosis:
+  general: "早期診斷與適當抗生素治療預後良好。慢性中耳炎合併骨骼重塑需手術介入。Pseudomonas 感染較難治療。顏面神經麻痺可能為永久性。"
+
+prevention:
+  - 積極治療急性外耳炎防止進展至中耳
+  - 慢性外耳炎病例定期影像學監測
+  - 適當清耳技術（避免深部沖洗損傷鼓膜）
+  - 貓——早期處理鼻咽息肉

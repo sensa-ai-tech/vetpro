@@ -1,0 +1,71 @@
+slug: bone-marrow-biopsy
+nameEn: Bone Marrow Biopsy
+nameZh: 骨髓切片
+bodySystem: other
+description: 經骨髓穿刺針取得骨髓組織或抽吸液,用於診斷血液系統疾病、骨髓增生性疾病或腫瘤轉移評估。
+
+aliases:
+  - { alias: 骨髓活檢, language: zh }
+  - { alias: Bone marrow aspirate, language: en }
+  - { alias: 骨髓穿刺, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 常用於不明原因貧血、血小板低下診斷
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓白血病、骨髓發育不良診斷
+
+etiology:
+  categories:
+    - name: 診斷適應症
+      examples:
+        - 不明原因全血球低下
+        - 懷疑白血病或骨髓增生性疾病
+        - 淋巴瘤分期
+    - name: 取樣部位
+      examples:
+        - 髂骨翼(最常用)
+        - 股骨近端
+        - 肱骨近端
+
+clinicalSigns:
+  early:
+    - 此為診斷操作,非疾病
+    - 操作後穿刺點輕微疼痛
+    - 極少出血或瘀血
+  progressive:
+    - 正常恢復:24小時內疼痛消失
+    - 併發症:感染或骨折(極罕見)
+
+diagnosis:
+  primaryTests:
+    - name: 骨髓抽吸液
+      notes: "評估細胞型態、M:E比值、異常細胞"
+    - name: 骨髓核心切片
+      notes: "評估骨髓增生程度、纖維化、架構"
+    - name: 周邊血液抹片
+      notes: "配合骨髓結果綜合判讀"
+  differentialDiagnoses:
+    - 單純血液檢查(非侵入但資訊不足)
+    - 影像學骨髓評估(MRI)
+
+treatment:
+  medical:
+    - 鎮靜:Dexmedetomidine 10 μg/kg IM + Hydromorphone 0.1 mg/kg IM
+    - 局部麻醉:Lidocaine 2% 1-3 mL局部浸潤
+    - 抽吸:Jamshidi針或Illinois針,抽取0.5-1 mL骨髓液
+    - 核心切片:同針具取得骨髓芯(<1cm長度)
+    - 術後:壓迫穿刺點5分鐘,無需特殊照護
+
+prognosis:
+  general: "安全性高,併發症極罕見(<1%)。診斷準確率視操作技術及病理判讀,提供血液疾病明確診斷及預後資訊。"
+
+prevention:
+  - 術前評估凝血功能
+  - 無菌技術避免骨髓炎
+  - 適當鎮靜確保動物不動
+  - 樣本立即製作抹片並適當固定

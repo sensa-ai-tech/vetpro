@@ -1,0 +1,71 @@
+slug: vaccine-adverse-reaction
+nameEn: Vaccine Adverse Reaction
+nameZh: 疫苗不良反應
+bodySystem: other
+description: 疫苗接種後出現的不良反應,從輕微的注射部位反應到嚴重的過敏性休克。多數反應為輕度且自限性,但需識別並妥善處理嚴重反應以確保動物安全。
+
+aliases:
+  - { alias: 疫苗副作用, language: zh }
+  - { alias: Vaccine side effects, language: en }
+  - { alias: Vaccine hypersensitivity, language: en }
+  - { alias: Anaphylaxis post-vaccination, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 小型犬及多價疫苗風險較高,發生率約0.5-1%
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓疫苗不良反應較犬少見,但注射部位肉瘤風險需注意
+
+etiology:
+  categories:
+    - name: 免疫相關反應
+      examples:
+        - 第一型過敏反應(IgE介導)
+        - 疫苗成分過敏(佐劑、賦形劑)
+    - name: 注射部位反應
+      examples:
+        - 局部發炎反應
+        - 疫苗相關肉瘤(貓)
+
+clinicalSigns:
+  early:
+    - 注射部位腫脹、疼痛(24小時內)
+    - 輕度發燒、嗜睡
+    - 食慾降低
+  progressive:
+    - 臉部腫脹、蕁麻疹
+    - 嘔吐、腹瀉
+    - 呼吸困難、虛脫(過敏性休克)
+    - 注射部位持續腫塊>3週(貓)
+
+diagnosis:
+  primaryTests:
+    - name: 臨床症狀評估
+      notes: "判斷反應嚴重程度及類型"
+    - name: 注射部位細針抽吸(FNA)
+      notes: "持續性腫塊需排除肉瘤"
+  differentialDiagnoses:
+    - 急性感染性疾病
+    - 其他過敏原引起反應
+    - 注射部位感染或膿瘍
+
+treatment:
+  medical:
+    - 輕度反應:觀察,必要時給予diphenhydramine 1-2 mg/kg IM/PO
+    - 中度反應:dexamethasone 0.1-0.2 mg/kg IV/IM + 抗組織胺
+    - 過敏性休克:立即給予epinephrine 0.01 mg/kg IM/IV + 靜脈輸液 + 氧氣治療
+    - 持續性腫塊(貓):3週以上腫塊>2cm需考慮手術切除並送檢
+
+prognosis:
+  general: "輕度反應預後良好,通常24-48小時內自行緩解。嚴重過敏反應若及時處理預後亦佳。貓疫苗相關肉瘤預後謹慎。"
+
+prevention:
+  - 高風險動物接種前30分鐘給予抗組織胺
+  - 避免同時接種多種疫苗(小型犬)
+  - 貓疫苗應接種於四肢遠端而非肩胛間
+  - 接種後觀察30分鐘
+  - 記錄所有不良反應,下次接種調整方案

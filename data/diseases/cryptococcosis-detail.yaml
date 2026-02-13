@@ -1,0 +1,83 @@
+slug: cryptococcosis-detail
+nameEn: Cryptococcosis Detail
+nameZh: 隱球菌病詳述
+bodySystem: infectious
+description: 隱球菌病是由新型隱球菌(Cryptococcus neoformans)及格特隱球菌(C. gattii)引起的全身性真菌感染,主要經吸入鳥糞(特別是鴿糞)污染環境中的孢子感染。此病侵犯上呼吸道、中樞神經系統及眼睛,貓較犬易感,表現為鼻腔肉芽腫、腦膜炎及視網膜炎,需長期抗真菌治療。
+
+aliases:
+  - { alias: 隱球菌症, language: zh }
+  - { alias: Crypto, language: en }
+  - { alias: 歐洲芽生菌病, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬感染相對罕見,多為播散型,中樞神經及眼部侵犯常見
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓為最易感動物,FIV/FeLV陽性貓風險最高,鼻腔型最常見
+
+etiology:
+  categories:
+    - name: 全身性真菌感染
+      examples:
+        - 吸入Cryptococcus neoformans孢子(鴿糞、鳥糞污染土壤)
+        - C. gattii(樹木棲息,如桉樹)
+        - 全球分布,都市環境常見(鴿子聚集處)
+        - FIV/FeLV陽性、免疫低下為危險因子
+
+clinicalSigns:
+  early:
+    - 鼻腔型(貓最常見):單側或雙側鼻分泌物(黏液或血樣)
+    - 打噴嚏、鼻塞、鼻樑腫脹
+    - 上呼吸道雜音
+  progressive:
+    - 鼻腔肉芽腫:鼻樑隆起、變形、潰瘍
+    - 中樞神經型:癲癇、共濟失調、頭部傾斜、盲目
+    - 眼部:前葡萄膜炎、視網膜剝離、視神經炎、失明
+    - 皮膚:結節、潰瘍(罕見)
+    - 淋巴結腫大
+    - 全身播散:肺炎、骨髓炎
+
+diagnosis:
+  primaryTests:
+    - name: 細胞學檢查
+      notes: "鼻腔分泌物、淋巴結吸出物可見厚莢膜酵母(5-20 μm,窄基底出芽)"
+    - name: 墨汁染色
+      notes: "莢膜在墨汁襯托下呈透明暈圈(診斷性發現)"
+    - name: 血清或CSF隱球菌抗原檢測
+      notes: "Latex agglutination test(LAT)或ELISA(敏感性>90%,效價>1:1有診斷意義)"
+    - name: 真菌培養
+      notes: "鼻腔分泌物、CSF或組織培養(需1-2週)"
+    - name: 胸部X光/CT
+      notes: "鼻腔肉芽腫、鼻甲骨溶解、肺結節(播散型)"
+    - name: MRI
+      notes: "中樞神經型可見腦膜增厚、隱球菌瘤"
+  differentialDiagnoses:
+    - 鼻腔淋巴瘤
+    - 鼻腔腺癌
+    - 慢性鼻炎(細菌、真菌)
+    - 腦膜腦炎(其他病因)
+    - 弓形蟲病
+
+treatment:
+  medical:
+    - 輕中度鼻腔型:Fluconazole 50-100 mg/cat PO SID或5-10 mg/kg PO SID(犬)x 6-12個月
+    - 中樞神經型:Fluconazole 100-200 mg/cat PO SID(穿透BBB較佳)x 12-18個月
+    - 重症或治療失敗:Amphotericin B 0.5-1 mg/kg IV隔日x 8-12次+Fluconazole
+    - 替代藥物:Itraconazole 5-10 mg/kg PO BID x 6-12個月(鼻腔型)
+    - 眼部治療:全身抗真菌+局部抗真菌(Natamycin 5%)
+    - 監測:血清抗原效價每月檢測(下降至<1:4可考慮停藥)
+    - 支持性照護:營養、氧氣、抗癲癇藥物(中樞神經型)
+    - 療程:抗原陰性後再延長2-3個月,最少6個月
+
+prognosis:
+  general: "預後謹慎。鼻腔型經治療存活率約70-85%,中樞神經型預後較差(存活率40-60%),眼部侵犯可能永久失明。FIV/FeLV陽性貓預後不良。復發率約10-20%,需長期監測。"
+
+prevention:
+  - 避免接觸鴿糞或鳥糞污染環境
+  - FIV/FeLV篩檢及疫苗接種(貓)
+  - 免疫低下動物減少戶外活動
+  - 無有效疫苗

@@ -1,0 +1,75 @@
+slug: myocardial-infarction
+nameEn: Myocardial Infarction
+nameZh: 心肌梗塞
+bodySystem: cardiac
+description: 冠狀動脈血流中斷導致心肌缺血壞死。犬貓罕見 (無顯著冠狀動脈粥狀硬化),多因栓塞、血栓或嚴重貧血。
+
+aliases:
+  - { alias: 心肌梗死, language: zh }
+  - { alias: MI, language: en }
+  - { alias: Heart Attack, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 罕見,可能因細菌性心內膜炎栓塞、主動脈血栓
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 罕見,可能因肥厚型心肌病變繼發血栓
+
+etiology:
+  categories:
+    - name: 栓塞性
+      examples:
+        - 細菌性心內膜炎
+        - 心臟腫瘤
+    - name: 血栓性
+      examples:
+        - 肥厚型心肌病變 (貓)
+        - 免疫介導血栓
+    - name: 低灌流
+      examples:
+        - 嚴重貧血
+        - 休克
+
+clinicalSigns:
+  early:
+    - 急性虛弱
+    - 呼吸急促
+    - 疼痛表現
+  progressive:
+    - 肺水腫
+    - 心律不整
+    - 心因性休克
+    - 猝死
+
+diagnosis:
+  primaryTests:
+    - name: 心電圖
+      notes: "ST 段變化、Q 波、心律不整"
+    - name: Cardiac troponin I
+      notes: "顯著升高 (> 10 ng/ml)"
+    - name: 心臟超音波
+      notes: "區域性壁運動異常、心肌回音性改變"
+  differentialDiagnoses:
+    - 心肌炎
+    - 擴張型心肌病變
+    - 敗血症性心肌病變
+
+treatment:
+  medical:
+    - 氧氣治療
+    - 抗心律不整藥物
+    - Aspirin 0.5-5 mg/kg PO q24-72h (犬, 抗血栓)
+    - Clopidogrel 18.75 mg/cat PO q24h (貓)
+    - 支持性照護
+
+prognosis:
+  general: "預後不良;急性期死亡率高;存活者可能發展為心衰竭或慢性心律不整"
+
+prevention:
+  - 早期診斷及治療心內膜炎
+  - 血栓預防 (高風險貓)
+  - 避免嚴重貧血

@@ -1,0 +1,64 @@
+slug: diabetic-emergency-management
+nameEn: Diabetic Emergency Management
+nameZh: 糖尿病急症處理
+bodySystem: emergency
+description: 包括糖尿病酮酸中毒(DKA)及高滲透壓高血糖症候群(HHS)。需積極輸液、胰島素及電解質校正。
+
+aliases:
+  - { alias: DKA處理, language: zh }
+  - { alias: DKA Management, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 糖尿病常見併發症
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: DKA較少見,HHS較常見
+
+etiology:
+  categories:
+    - name: DKA
+      examples:
+        - 未控制糖尿病、感染、胰臟炎
+    - name: HHS
+      examples:
+        - 嚴重脫水、高血糖無酮酸
+
+clinicalSigns:
+  early:
+    - 嘔吐、食慾廢絕
+    - 脫水、虛弱
+  progressive:
+    - 代謝性酸中毒、昏迷
+
+diagnosis:
+  primaryTests:
+    - name: 血糖
+      notes: ">250-300 mg/dL"
+    - name: 尿酮
+      notes: "陽性(DKA)"
+    - name: 血液生化
+      notes: "代謝性酸中毒、電解質異常"
+  differentialDiagnoses:
+    - 其他代謝性酸中毒
+
+treatment:
+  medical:
+    - 靜脈輸液復甦: 0.9% NaCl 60-90 mL/kg/day
+    - 胰島素治療(IM protocol):
+      - 0.2 units/kg IM初劑量
+      - 0.1 units/kg IM q1h直至血糖<250 mg/dL
+    - 電解質校正:
+      - 鉀補充(常低鉀)
+      - 磷補充(若需要)
+    - 治療根本病因
+    - 轉換至皮下胰島素
+
+prognosis:
+  general: "積極治療存活率70-80%。併發症(胰臟炎、腎衰竭)影響預後。"
+
+prevention:
+  - 糖尿病規律監測及治療

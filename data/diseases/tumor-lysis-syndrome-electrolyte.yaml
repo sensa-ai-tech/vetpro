@@ -1,0 +1,76 @@
+slug: tumor-lysis-syndrome-electrolyte
+nameEn: Tumor Lysis Syndrome Electrolyte
+nameZh: 腫瘤溶解症候群電解質異常
+bodySystem: oncology
+description: 惡性腫瘤快速分解（化療後或自發性）釋放大量細胞內容物,導致高血鉀、高血磷、高尿酸及低血鈣。可能引發急性腎損傷、心律不整及死亡,需積極預防及治療。
+
+aliases:
+  - { alias: 腫瘤溶解代謝異常, language: zh }
+  - { alias: TLS, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 高風險腫瘤包括淋巴瘤（尤其T細胞型）、白血病
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓淋巴瘤化療後偶見,需密切監測
+
+etiology:
+  categories:
+    - name: 高風險族群
+      examples:
+        - 高腫瘤負荷淋巴瘤
+        - 白血病
+        - 化療開始後24-72小時
+    - name: 病理機轉
+      examples:
+        - 腫瘤細胞快速分解
+        - 釋放鉀、磷、核酸
+        - 尿酸結晶沉積腎臟
+
+clinicalSigns:
+  early:
+    - 化療後24-72小時出現
+    - 食慾減退、嘔吐
+  progressive:
+    - 少尿或無尿（急性腎損傷）
+    - 心律不整（高血鉀）
+    - 肌肉顫抖、癲癇（低血鈣）
+    - 虛弱、昏迷
+
+diagnosis:
+  primaryTests:
+    - name: 血清電解質
+      notes: "高血鉀（>6.0 mEq/L）、高血磷（>6.0 mg/dL）、低血鈣（<8.0 mg/dL）"
+    - name: 腎功能
+      notes: "BUN、Creatinine 升高,尿量減少"
+    - name: 尿酸
+      notes: "尿酸升高（犬貓不如人類明顯）"
+  differentialDiagnoses:
+    - 急性腎損傷
+    - 高血鉀症
+    - 低血鈣症
+
+treatment:
+  medical:
+    - 預防策略（化療前）：
+      - 積極靜脈輸液（150-200 mL/kg/day）利尿
+      - Allopurinol 10 mg/kg PO BID（降低尿酸,化療前24小時開始）
+      - 監測電解質、腎功能
+    - 治療已發生TLS：
+      - 持續靜脈輸液
+      - 高血鉀治療：Calcium gluconate, Insulin + Dextrose, Sodium bicarbonate
+      - 高血磷治療：磷結合劑（Aluminum hydroxide 30-90 mg/kg PO TID）
+      - 低血鈣治療：Calcium gluconate IV
+      - 必要時血液透析
+
+prognosis:
+  general: "預後取決於早期識別及治療。預防性輸液及監測可降低發生率。已發生TLS且合併急性腎損傷預後保留,死亡率高（40-60%）。"
+
+prevention:
+  - 高風險腫瘤化療前積極輸液
+  - 預防性使用 Allopurinol
+  - 化療後24-72小時密集監測電解質及腎功能

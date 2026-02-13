@@ -1,0 +1,57 @@
+slug: blast-injury
+nameEn: Blast Injury
+nameZh: 爆炸傷
+bodySystem: emergency
+description: 爆炸引起的複合性創傷,包括衝擊波損傷、穿刺傷、燒傷及擠壓傷。常見肺、耳、腹部損傷。
+
+aliases:
+  - { alias: 爆震傷, language: zh }
+  - { alias: Explosion Trauma, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 意外、戰區
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 同犬
+
+etiology:
+  categories:
+    - name: 損傷類型
+      examples:
+        - 初級(衝擊波)、次級(碎片)、三級(拋擲)、四級(燒傷/吸入)
+
+clinicalSigns:
+  early:
+    - 多重創傷、出血
+    - 呼吸困難、耳聾
+  progressive:
+    - 肺挫傷、氣胸
+    - 腹腔內出血
+
+diagnosis:
+  primaryTests:
+    - name: 全身創傷評估
+      notes: "ABCDE評估"
+    - name: 影像學
+      notes: "胸腹部X光/超音波"
+  differentialDiagnoses:
+    - 其他複合性創傷
+
+treatment:
+  medical:
+    - 系統性創傷處理
+    - 氧氣、輸液復甦
+    - 外傷止血
+    - 胸管(若氣胸)
+    - 手術(若需要)
+    - 燒傷處理
+
+prognosis:
+  general: "預後視傷勢嚴重度。多重器官損傷預後不良。"
+
+prevention:
+  - 避免危險環境

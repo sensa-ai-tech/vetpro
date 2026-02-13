@@ -1,0 +1,73 @@
+slug: atrial-standstill
+nameEn: Atrial Standstill
+nameZh: 心房靜止
+bodySystem: cardiac
+description: 心房無電氣活性，心電圖無 P 波。可為高血鉀引起 (暫時性) 或心房肌病變 (永久性)。為緊急狀況。
+
+aliases:
+  - { alias: 心房停頓, language: zh }
+  - { alias: Atrial Paralysis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 常因高血鉀 (尿道阻塞、愛迪生氏病) 或英國跳犬遺傳性心房肌病變
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 多因尿道阻塞導致高血鉀
+
+etiology:
+  categories:
+    - name: 高血鉀
+      examples:
+        - 尿道阻塞
+        - 愛迪生氏病
+        - 腎衰竭
+    - name: 遺傳性
+      examples:
+        - 英國跳犬心房肌病變
+    - name: 心肌病變
+      examples:
+        - 擴張型心肌病變晚期
+
+clinicalSigns:
+  early:
+    - 虛弱
+    - 嗜睡
+  progressive:
+    - 心搏過緩
+    - 暈厥
+    - 休克
+    - 猝死風險
+
+diagnosis:
+  primaryTests:
+    - name: 心電圖
+      notes: "無 P 波，心室率 40-60 bpm (交界性或心室性逃脫律)"
+    - name: 血液檢查
+      notes: "電解質 (鉀)、腎功能"
+    - name: ACTH 刺激測試
+      notes: "若懷疑愛迪生氏病"
+  differentialDiagnoses:
+    - 高度房室傳導阻滯
+    - 交界性心律
+    - 病態竇房結症候群
+
+treatment:
+  medical:
+    - 高血鉀緊急處理:
+      - Calcium gluconate 10% 0.5-1 ml/kg IV slow
+      - Regular insulin 0.1-0.25 U/kg IV + dextrose 1-2 g/U
+      - Sodium bicarbonate (若酸中毒)
+    - 解除尿道阻塞
+    - 永久性: Pacemaker
+
+prognosis:
+  general: "暫時性 (高血鉀) 預後良好若能迅速處理；永久性需 pacemaker，預後謹慎"
+
+prevention:
+  - 早期診斷及治療下泌尿道疾病
+  - 監測腎功能及電解質
+  - 遺傳篩檢 (英國跳犬)

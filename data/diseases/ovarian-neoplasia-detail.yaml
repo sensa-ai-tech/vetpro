@@ -1,0 +1,80 @@
+slug: ovarian-neoplasia-detail
+nameEn: Ovarian Neoplasia Detail
+nameZh: 卵巢腫瘤詳述
+bodySystem: oncology
+description: 卵巢腫瘤包括上皮性、生殖細胞及性索間質腫瘤。罕見於犬貓，多為良性。顆粒細胞瘤最常見，可能分泌雌激素。
+
+aliases:
+  - { alias: 卵巢癌, language: zh }
+  - { alias: Ovarian Tumor, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 中老年母犬，占生殖系統腫瘤約6%
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓極罕見
+
+etiology:
+  categories:
+    - name: 性索間質腫瘤
+      examples:
+        - 顆粒細胞瘤（最常見）
+        - 卵泡膜瘤
+        - 萊狄希細胞瘤（罕見）
+    - name: 生殖細胞腫瘤
+      examples:
+        - 畸胎瘤
+        - 胚胎癌（極罕見）
+    - name: 上皮性腫瘤
+      examples:
+        - 腺癌
+        - 乳頭狀囊腺瘤
+
+clinicalSigns:
+  early:
+    - 多數無症狀
+    - 意外於絕育或超音波發現
+    - 腹部觸診發現腫塊
+  progressive:
+    - 雌激素分泌：持續發情、外陰腫脹、對稱性脫毛
+    - 腹部膨大
+    - 體重減輕、食慾下降
+    - 腹水（惡性或破裂）
+
+diagnosis:
+  primaryTests:
+    - name: 腹部超音波/CT
+      notes: "卵巢腫塊，評估轉移"
+    - name: 血清雌激素檢測
+      notes: "功能性腫瘤可能升高"
+    - name: 胸腔X光
+      notes: "評估肺轉移"
+    - name: 腹水細胞學
+      notes: "若有腹水"
+    - name: 組織病理學
+      notes: "手術切除後確診"
+  differentialDiagnoses:
+    - 卵巢囊腫
+    - 腎上腺腫瘤
+    - 腹腔其他腫瘤
+    - 子宮蓄膿
+
+treatment:
+  medical:
+    - 手術：卵巢子宮切除術（首選）
+    - 完整分期（探查腹腔、淋巴結、對側卵巢、肝臟）
+    - 化療：惡性腫瘤或轉移
+    - 卡鉑（carboplatin）300 mg/m² IV q21d
+    - 紫杉醇（paclitaxel）130-150 mg/m² IV q21d
+    - 預後保留腫瘤：單純切除，避免化療
+
+prognosis:
+  general: "良性腫瘤切除後預後極佳。顆粒細胞瘤多為良性。惡性腫瘤預後保留，中位存活時間6-12個月。"
+
+prevention:
+  - 早期絕育降低風險
+  - 定期腹部超音波檢查（高齡母犬）

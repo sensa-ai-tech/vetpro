@@ -1,0 +1,80 @@
+slug: extended-spectrum-beta-lactamase-infection
+nameEn: Extended Spectrum Beta-Lactamase Infection
+nameZh: 超廣效β-內醯胺酶感染
+bodySystem: infectious
+description: 超廣效β-內醯胺酶(ESBL)產生菌是多重抗藥性腸道細菌(主要為大腸桿菌、克雷伯氏菌),可水解大多數β-內醯胺類抗生素。此類細菌主要引起泌尿道感染、術後傷口感染及菌血症,人畜間可相互傳播,治療選擇有限,屬全球公共衛生重大威脅。
+
+aliases:
+  - { alias: ESBL感染, language: zh }
+  - { alias: 多重抗藥性大腸桿菌, language: zh }
+  - { alias: Multidrug Resistant E. coli, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 泌尿道感染犬隻ESBL檢出率約5-15%,抗生素使用史為主要危險因子
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓ESBL感染較犬少見,但慢性泌尿道疾病貓隻風險較高
+
+etiology:
+  categories:
+    - name: 多重抗藥性細菌感染
+      examples:
+        - 主要菌種:E. coli、Klebsiella pneumoniae、Proteus mirabilis
+        - 產生ESBL酶(CTX-M、TEM、SHV型)
+        - 不當抗生素使用選擇抗藥性菌株
+        - 人畜間、醫院環境傳播
+
+clinicalSigns:
+  early:
+    - 泌尿道感染:頻尿、血尿、排尿困難
+    - 術後傷口感染:紅腫、化膿、滲出
+    - 腹瀉(腸道ESBL定植)
+  progressive:
+    - 腎盂腎炎:發燒、腰痛、嘔吐
+    - 菌血症、敗血症:高燒、休克
+    - 腹腔感染:腹痛、腹水
+    - 慢性復發性感染
+    - 多重器官衰竭(嚴重敗血症)
+
+diagnosis:
+  primaryTests:
+    - name: 細菌培養及藥敏試驗
+      notes: "分離細菌並檢測對Cephalosporin類抗性(Ceftazidime、Cefotaxime)"
+    - name: ESBL確認試驗
+      notes: "雙紙片擴散法或Etest確認ESBL產生(加入Clavulanic acid後抑菌圈擴大)"
+    - name: 分子檢測
+      notes: "PCR檢測ESBL基因(blaCTX-M、blaTEM、blaSHV)"
+    - name: 尿液分析
+      notes: "膿尿、血尿、細菌尿(泌尿道感染)"
+  differentialDiagnoses:
+    - 非ESBL大腸桿菌感染
+    - 其他多重抗藥性菌(MRSP、AmpC產生菌)
+    - 真菌性感染
+    - 無菌性膿尿
+
+treatment:
+  medical:
+    - 依據藥敏試驗選擇抗生素(療程3-6週):
+    - Carbapenem類(最後防線):Imipenem 5 mg/kg IV TID或Meropenem 8-24 mg/kg IV TID
+    - Amikacin 15-30 mg/kg IV SID(監測腎功能)
+    - Nitrofurantoin 4 mg/kg PO TID(僅限下泌尿道感染)
+    - Fosfomycin 50 mg/kg PO TID(實驗性)
+    - 避免使用:所有β-內醯胺類(Amoxicillin、Cephalexin等)無效
+    - 積極靜脈輸液(腎盂腎炎、敗血症)
+    - 傷口清創及引流
+    - 尿道沖洗(慢性泌尿道感染)
+
+prognosis:
+  general: "預後謹慎。下泌尿道感染經適當治療預後尚可,但復發率高(30-40%)。腎盂腎炎或敗血症預後不良,死亡率可達20-30%。慢性帶菌難以根除。"
+
+prevention:
+  - 合理使用抗生素,避免濫用Cephalosporin類
+  - 完整抗生素療程,依據培養結果調整用藥
+  - 醫院感染控制:手部衛生、隔離、消毒
+  - 治療結束後複查培養確認清除
+  - 慢性帶菌犬貓定期監測
+  - 人畜間避免交叉感染(糞便處理後洗手)

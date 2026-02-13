@@ -1,0 +1,71 @@
+slug: anesthesia-premedication
+nameEn: Anesthesia Premedication
+nameZh: 麻醉前給藥
+bodySystem: emergency
+description: 麻醉誘導前給予鎮靜、止痛及抗膽鹼藥物。目的為減少焦慮、降低誘導劑量、提供術前鎮痛並減少副作用。
+
+aliases:
+  - { alias: 麻醉前藥, language: zh }
+  - { alias: Preanesthetic medication, language: en }
+  - { alias: 麻前鎮靜, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 標準麻醉流程必要步驟
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓對某些藥物反應不同需調整
+
+etiology:
+  categories:
+    - name: 目的
+      examples:
+        - 減少焦慮及應激
+        - 降低誘導劑量30-50%
+        - 提供術前鎮痛
+        - 平穩誘導及恢復
+    - name: 藥物類別
+      examples:
+        - 鎮靜劑(Acepromazine, Dexmedetomidine)
+        - 鴉片類(Butorphanol, Hydromorphone)
+        - 抗膽鹼(Atropine, Glycopyrrolate, 選擇性使用)
+
+clinicalSigns:
+  early:
+    - 給藥後10-20分鐘鎮靜效果
+    - 心率輕微下降(α2受體劑)
+    - 動物平靜、肌肉放鬆
+  progressive:
+    - 誘導順利、劑量減少
+    - 術中穩定維持
+    - 恢復平穩無興奮
+
+diagnosis:
+  primaryTests:
+    - name: 術前評估
+      notes: "ASA分級、心肺功能、病史"
+    - name: 藥物選擇
+      notes: "依患者狀況及手術類型"
+  differentialDiagnoses:
+    - 無前給藥(高風險、劑量大)
+    - 口服鎮靜(吸收不穩定)
+
+treatment:
+  medical:
+    - 犬標準方案:Acepromazine 0.01-0.05 mg/kg IM + Butorphanol 0.2-0.4 mg/kg IM
+    - 貓標準方案:Dexmedetomidine 5-15 μg/kg IM + Butorphanol 0.2-0.4 mg/kg IM
+    - 心臟病:避免Acepromazine,選用Butorphanol單獨或低劑量Dexmedetomidine
+    - 老年犬貓:劑量減少30-50%
+    - 給藥途徑:IM最常用,15-30分鐘後誘導
+
+prognosis:
+  general: "適當前給藥顯著改善麻醉安全性及品質。減少誘導劑用量及應激反應。極少副作用,多數可藥物逆轉(α2拮抗劑)。"
+
+prevention:
+  - 術前禁食8-12小時(犬)、6-8小時(貓)
+  - 評估心肺功能選擇適當藥物
+  - 監控鎮靜深度避免過度
+  - 備妥逆轉劑(Atipamezole逆轉Dexmedetomidine)

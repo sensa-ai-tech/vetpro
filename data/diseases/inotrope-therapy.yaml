@@ -1,0 +1,55 @@
+slug: inotrope-therapy
+nameEn: Inotrope Therapy
+nameZh: 強心劑治療
+bodySystem: emergency
+description: 增強心肌收縮力以改善心輸出量。常用於心衰竭、心肌病變及休克。主要藥物為Pimobendan、Dobutamine。
+
+aliases:
+  - { alias: 正性肌力藥, language: zh }
+  - { alias: Inotropic Support, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 心衰竭、擴張性心肌病
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 肥厚性心肌病、心衰竭
+
+etiology:
+  categories:
+    - name: 適應症
+      examples:
+        - 心衰竭、心因性休克、心肌病變
+
+clinicalSigns:
+  early:
+    - 心輸出不足、低血壓
+  progressive:
+    - 肺水腫、心因性休克
+
+diagnosis:
+  primaryTests:
+    - name: 心臟超音波
+      notes: "評估收縮功能,FS<25%考慮強心劑"
+  differentialDiagnoses:
+    - 無
+
+treatment:
+  medical:
+    - Pimobendan:
+      - 0.25-0.3 mg/kg PO q12h
+      - 口服強心劑,兼具血管擴張效果
+    - Dobutamine:
+      - 2-20 μg/kg/min IV CRI
+      - 靜脈強心劑,短期使用
+    - 監測血壓、心率、心律
+    - 避免心律不整
+
+prognosis:
+  general: "可改善心輸出及臨床症狀。Pimobendan可延長存活期。"
+
+prevention:
+  - 心臟病早期診斷治療

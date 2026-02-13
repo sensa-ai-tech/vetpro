@@ -1,0 +1,63 @@
+slug: urine-culture-interpretation
+nameEn: Urine Culture Interpretation
+nameZh: 尿液培養判讀
+bodySystem: other
+description: 犬貓尿液培養及抗生素敏感性試驗判讀。為確診泌尿道感染、選擇適當抗生素的黃金標準。需無菌採集尿液,正確判讀菌量及污染可能性。
+
+aliases:
+  - { alias: 尿培養, language: zh }
+  - { alias: Urine culture and sensitivity, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 反覆性泌尿道感染需尿培養
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓泌尿道感染較少見,培養前需排除FLUTD其他原因
+
+etiology:
+  categories:
+    - name: 常見致病菌
+      examples:
+        - E. coli(最常見)
+        - Staphylococcus spp.
+        - Proteus spp.
+        - Enterococcus spp.
+
+clinicalSigns:
+  early:
+    - 尿培養為診斷工具
+  progressive:
+    - 頻尿、血尿、排尿疼痛
+
+diagnosis:
+  primaryTests:
+    - name: 菌量判讀
+      notes: "膀胱穿刺:>1,000 CFU/mL有意義。導尿:>10,000 CFU/mL。自然排尿:>100,000 CFU/mL"
+    - name: 抗生素敏感性
+      notes: "選擇敏感(S)抗生素,避免抗藥性(R)"
+    - name: 污染判定
+      notes: "多種菌生長提示污染,需重新採集"
+  differentialDiagnoses:
+    - 細菌性膀胱炎
+    - 腎盂腎炎
+    - 前列腺炎(公犬)
+    - 污染
+
+treatment:
+  medical:
+    - 依敏感性試驗選擇抗生素
+    - E. coli通常對amoxicillin-clavulanate、enrofloxacin敏感
+    - 療程通常7-14天(膀胱炎)或4-6週(腎盂腎炎/前列腺炎)
+
+prognosis:
+  general: "尿培養為泌尿道感染確診及抗生素選擇的黃金標準。正確採集及判讀至關重要。"
+
+prevention:
+  - 膀胱穿刺採集最佳(無菌)
+  - 導尿次之
+  - 避免自然排尿培養(污染率高)
+  - 立即送檢或冷藏保存

@@ -1,0 +1,85 @@
+slug: nsaid-nephrotoxicity
+nameEn: NSAID Nephrotoxicity
+nameZh: 非類固醇消炎藥腎毒性
+bodySystem: toxicology
+description: 非類固醇消炎藥 (NSAID) 腎毒性是因 NSAIDs 抑制前列腺素合成，導致腎臟血流量減少而引起的急性腎損傷。在脫水、低血壓或腎功能已受損的動物中風險尤高。
+
+aliases:
+  - { alias: NSAID 腎損傷, language: zh }
+  - { alias: 消炎藥腎毒性, language: zh }
+  - { alias: NSAID-Induced Nephropathy, language: en }
+  - { alias: Prostaglandin Inhibition Nephrotoxicity, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 犬使用 NSAIDs 的腎毒性風險因素包括脫水、同時使用類固醇或利尿劑、術後低血壓和既存腎臟疾病。老年犬風險更高。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓因葡萄糖醛酸化代謝能力低下，對 NSAIDs 更敏感。慢性腎病貓使用 NSAID 需格外謹慎。Meloxicam 長期低劑量使用需密切監測。
+
+etiology:
+  categories:
+    - name: 機制
+      examples:
+        - 抑制 COX-1/COX-2 減少腎臟前列腺素合成
+        - 前列腺素 (PGE2、PGI2) 維持腎臟入球小動脈擴張
+        - 前列腺素缺乏導致腎血流量 (RBF) 下降
+        - 腎小球濾過率 (GFR) 降低
+    - name: 高危因素
+      examples:
+        - 脫水或低血容量
+        - 既存慢性腎臟疾病
+        - 同時使用 ACE 抑制劑或利尿劑
+        - 術後低血壓
+        - 多種 NSAIDs 或 NSAID + 類固醇併用
+        - 老年動物
+
+clinicalSigns:
+  early:
+    - BUN/Creatinine 輕度上升
+    - 尿量減少
+    - 食慾下降
+    - 嗜睡
+  progressive:
+    - 少尿或無尿
+    - 嚴重氮血症
+    - 嘔吐
+    - 脫水
+    - 電解質失衡
+    - 腹部疼痛
+
+diagnosis:
+  primaryTests:
+    - name: 腎功能監測
+      notes: "BUN/Creatinine 用藥前基線與用藥後比較。IRIS 分期評估。SDMA 可能較早反映腎功能下降。"
+    - name: 尿液分析
+      notes: "尿液比重下降、管型尿、蛋白尿。尿量監測。"
+  differentialDiagnoses:
+    - 脫水性腎前性氮血症
+    - 急性腎損傷（其他原因）
+    - 胺基糖苷類腎毒性
+    - 泌尿道阻塞
+
+treatment:
+  medical:
+    - 立即停用所有 NSAIDs
+    - 積極靜脈輸液恢復腎灌流（以2-3倍維持量開始）
+    - 監測尿量（>2 mL/kg/h 為目標）
+    - 電解質監測與矯正
+    - 必要時給予 mannitol（促進腎灌流）
+    - 嚴重者考慮透析
+  surgical:
+    - 通常不適用手術治療
+
+prognosis:
+  general: "早期停藥並恢復腎灌流者預後良好，多數腎功能可恢復。已有既存腎臟疾病者恢復可能不完全。關鍵在於及時辨識風險因素與早期干預。"
+
+prevention:
+  - 使用 NSAIDs 前確認腎功能與水合狀態
+  - 術中維持適當血壓與腎灌流
+  - 避免在脫水或低血壓狀態下使用 NSAIDs
+  - 老年動物與腎病動物謹慎用藥或選擇替代止痛方案
+  - 避免 NSAID + 類固醇或 NSAID + ACEi 三重打擊

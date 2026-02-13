@@ -1,0 +1,83 @@
+slug: australian-shepherd-mdr1-sensitivity
+nameEn: Australian Shepherd MDR1 Sensitivity
+nameZh: 澳洲牧羊犬MDR1藥物敏感
+bodySystem: toxicology
+description: 澳洲牧羊犬常見的遺傳性藥物敏感疾病,因多重抗藥性基因突變導致多種藥物嚴重神經毒性。常見於牧羊犬系品種,需終生避免禁用藥物,基因檢測可確診。
+
+aliases:
+  - { alias: 澳牧伊維菌素敏感, language: zh }
+  - { alias: Australian Shepherd Ivermectin Sensitivity, language: en }
+  - { alias: 澳牧MDR1基因缺陷, language: zh }
+  - { alias: Multi-Drug Resistance Mutation, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 澳洲牧羊犬50-60%為帶因者或患病,體染色體不完全顯性遺傳(ABCB1-1Δ突變),終生風險
+
+etiology:
+  categories:
+    - name: 遺傳性基因突變
+      examples:
+        - ABCB1-1Δ基因突變(MDR1基因)
+        - P-糖蛋白(P-glycoprotein)功能缺失
+        - 血腦屏障藥物外排障礙
+    - name: 病理生理機轉
+      examples:
+        - 中樞神經藥物累積
+        - 神經毒性閾值降低
+        - 正常劑量即可致命
+
+clinicalSigns:
+  early:
+    - 暴露禁用藥物後數小時至1-2天發病
+    - 共濟失調,步態不穩
+    - 嗜睡,意識改變
+  progressive:
+    - 瞳孔散大,對光反射消失
+    - 盲目,震顫
+    - 流涎,嘔吐
+    - 昏迷
+    - 癲癇發作
+    - 呼吸抑制,死亡
+
+diagnosis:
+  primaryTests:
+    - name: 基因檢測
+      notes: "ABCB1-1Δ突變檢測,分為clear(正常)、carrier(帶因)、affected(雙突變)"
+    - name: 病史
+      notes: "近期使用ivermectin、loperamide或其他MDR1敏感藥物"
+    - name: 血液檢查
+      notes: "排除其他中毒或代謝異常"
+    - name: 神經學檢查
+      notes: "中樞神經抑制症狀,瞳孔散大,意識障礙"
+  differentialDiagnoses:
+    - 其他藥物中毒
+    - 腦炎
+    - 低血糖
+    - 肝性腦病變
+    - 癲癇
+
+treatment:
+  medical:
+    - 立即停用可疑藥物
+    - 支持性照護為主(無特異解毒劑)
+    - 靜脈輸液維持血壓與腎功能
+    - 控制癲癇:Diazepam 0.5-1 mg/kg IV
+    - 脂肪乳劑(Intralipid)可能幫助脂溶性藥物排除(實驗性)
+    - 重症監護:氧氣、呼吸支持
+    - 恢復時間因藥物與劑量而異(數天至數週)
+    - 預後取決於暴露劑量與治療時機
+
+prognosis:
+  general: "早期識別與支持治療,輕中度中毒預後尚可。嚴重中毒(高劑量ivermectin)可能致命或遺留永久神經損傷。預防為最佳策略:基因檢測與避免禁用藥物。"
+
+prevention:
+  - 繁殖前基因檢測,避免affected×affected配對
+  - 終生避免MDR1敏感藥物:
+    - Ivermectin(高劑量)、Loperamide、Acepromazine
+    - Butorphanol、Doxorubicin、Vinblastine、Vincristine
+    - Milbemycin、Moxidectin、Selamectin(謹慎使用)
+  - 獸醫就診時告知MDR1狀態
+  - 隨身攜帶基因檢測報告

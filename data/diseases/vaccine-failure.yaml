@@ -1,0 +1,79 @@
+slug: vaccine-failure
+nameEn: Vaccine Failure
+nameZh: 疫苗失效
+bodySystem: other
+description: 已完成疫苗接種的動物仍然感染疫苗所針對的疾病。可能原因包括疫苗儲存不當、母源抗體干擾、免疫功能不全或病毒株變異等。需區分真正失效與不當接種。
+
+aliases:
+  - { alias: 疫苗保護失敗, language: zh }
+  - { alias: Vaccination failure, language: en }
+  - { alias: Vaccine non-response, language: en }
+  - { alias: Breakthrough infection, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬小病毒及犬瘟熱疫苗失效偶見,多與接種時機或儲存問題相關
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓疫苗失效罕見,FIP疫苗效果原本就有爭議
+
+etiology:
+  categories:
+    - name: 疫苗相關因素
+      examples:
+        - 疫苗儲存或運輸不當(溫度過高)
+        - 疫苗過期或變質
+        - 疫苗病毒株與流行株不符
+    - name: 宿主相關因素
+      examples:
+        - 母源抗體干擾(過早接種)
+        - 免疫抑制疾病(FIV、FeLV、淋巴瘤等)
+        - 遺傳性免疫不全
+    - name: 接種相關因素
+      examples:
+        - 接種劑量不足或途徑錯誤
+        - 未完成完整接種療程
+        - 接種間隔不當
+
+clinicalSigns:
+  early:
+    - 出現疫苗所針對疾病的典型症狀
+    - 症狀可能較未接種者輕微
+  progressive:
+    - 病程發展與一般感染相似
+    - 可能因免疫功能問題而更嚴重
+
+diagnosis:
+  primaryTests:
+    - name: 疫苗接種史詳細回顧
+      notes: "確認疫苗種類、廠牌、接種日期及完整性"
+    - name: 抗體力價檢測
+      notes: "測定疫苗誘導的保護性抗體濃度"
+    - name: 病原體檢測
+      notes: "PCR、抗原檢測或病毒分離確認感染"
+    - name: 免疫功能評估
+      notes: "CBC、生化、FeLV/FIV檢測等排除免疫抑制"
+  differentialDiagnoses:
+    - 從未接種疫苗
+    - 接種後尚未產生免疫力(接種後2週內)
+    - 非疫苗涵蓋之其他疾病
+
+treatment:
+  medical:
+    - 針對實際感染疾病進行支持治療
+    - 處理免疫抑制的根本原因(如有)
+    - 康復後考慮補強疫苗(需評估個體免疫反應能力)
+    - 評估是否需要改用不同疫苗品牌或類型
+
+prognosis:
+  general: "預後取決於感染疾病的嚴重程度及宿主免疫狀態。免疫功能正常者即使疫苗失效,症狀通常較輕。"
+
+prevention:
+  - 確保疫苗冷鏈運輸及儲存(2-8°C)
+  - 遵循建議的接種時程及補強間隔
+  - 母源抗體高峰期避免接種(犬:14-16週齡前;貓:12-16週齡前)
+  - 免疫功能不全動物考慮抗體力價監測
+  - 記錄疫苗批號以利追蹤品管問題

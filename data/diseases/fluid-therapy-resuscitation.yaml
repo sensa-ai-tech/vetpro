@@ -1,0 +1,79 @@
+slug: fluid-therapy-resuscitation
+nameEn: Fluid Therapy Resuscitation
+nameZh: 復甦性輸液治療
+bodySystem: electrolyte
+description: 針對休克或嚴重低血容的緊急輸液治療,目標快速恢復組織灌流及血壓。犬使用震盪劑量(shock dose)為晶體液90 mL/kg/hr,貓為60 mL/kg/hr,分次給予並評估反應。
+
+aliases:
+  - { alias: 休克輸液治療, language: zh }
+  - { alias: Shock Fluid Therapy, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬震盪劑量為 90 mL/kg/hr（1/4量快速給予,評估反應後重複）
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓震盪劑量為 60 mL/kg/hr（貓對過度輸液敏感,需謹慎）
+
+etiology:
+  categories:
+    - name: 低血容性休克
+      examples:
+        - 出血（創傷、手術、腫瘤破裂）
+        - 嚴重脫水（嘔吐、腹瀉）
+        - 第三空間流失（腹膜炎、胰臟炎）
+    - name: 分佈性休克
+      examples:
+        - 敗血症
+        - 過敏性休克
+    - name: 心因性休克
+      examples:
+        - 嚴重心臟病（需謹慎輸液）
+
+clinicalSigns:
+  early:
+    - 心搏過速、脈搏微弱
+    - 黏膜蒼白或發紺
+    - 微血管回充時間（CRT）延長 >2秒
+  progressive:
+    - 低血壓（收縮壓 <90 mmHg）
+    - 意識改變、嗜睡
+    - 四肢冰冷、尿量減少
+    - 器官灌流不足
+
+diagnosis:
+  primaryTests:
+    - name: 血壓測量
+      notes: "收縮壓 <90 mmHg 為低血壓"
+    - name: 灌流參數評估
+      notes: "CRT、黏膜顏色、心搏、脈搏品質、四肢溫度"
+    - name: 乳酸濃度
+      notes: "乳酸 >2.5 mmol/L 提示組織灌流不足"
+  differentialDiagnoses:
+    - 低血容性休克
+    - 敗血性休克
+    - 心因性休克
+    - 分佈性休克
+
+treatment:
+  medical:
+    - 犬震盪劑量：晶體液 90 mL/kg/hr（分次給予 1/4 量 = 22.5 mL/kg over 15 min）
+    - 貓震盪劑量：晶體液 60 mL/kg/hr（分次給予 1/4 量 = 15 mL/kg over 15 min）
+    - 評估反應（心搏、血壓、CRT、乳酸）後決定是否重複
+    - 輸液類型：
+      - 等張晶體液（LRS, 0.9% NaCl, Plasma-Lyte）
+      - 膠體液（Hetastarch 5-10 mL/kg,用於晶體液反應不佳者）
+      - 輸血（PCV <20% 或急性失血）
+    - 心因性休克需謹慎輸液,避免肺水腫
+    - 持續監測血壓、心搏、尿量、乳酸
+
+prognosis:
+  general: "預後取決於休克原因及治療時機。低血容性休克早期治療預後良好,但敗血性休克或心因性休克死亡率高。過度輸液可能導致肺水腫或稀釋性凝血病變。"
+
+prevention:
+  - 早期識別休克徵象
+  - 積極治療潛在病因
+  - 監測輸液反應避免過度輸液

@@ -1,0 +1,70 @@
+slug: fetal-malposition
+nameEn: Fetal Malposition
+nameZh: 胎位不正
+bodySystem: reproductive
+description: 胎兒位置、姿勢或方向異常導致難產。正常為頭部或後肢先出，頭部朝向產道。異常胎位需人工矯正或剖腹產。
+
+aliases:
+  - { alias: 胎兒姿勢異常, language: zh }
+  - { alias: Fetal Malpresentation, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 難產常見原因之一
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓較犬易自行調整
+
+etiology:
+  categories:
+    - name: 異常姿勢
+      examples:
+        - 側頭姿勢（頭轉向側面）
+        - 前肢彎曲
+        - 臀位（臀部先出）
+    - name: 異常方向
+      examples:
+        - 橫位（垂直於產道）
+        - 背位（背部朝向產道）
+
+clinicalSigns:
+  early:
+    - 第二產程延長（>30-60分鐘無胎兒產出）
+    - 強力陣痛但無進展
+    - 陰道可觸及異常胎兒部位
+  progressive:
+    - 母體疲憊
+    - 綠色陰道分泌物（胎盤早剝）
+    - 胎兒窘迫或死亡
+
+diagnosis:
+  primaryTests:
+    - name: 陰道觸診
+      notes: "確認胎兒部位及方向"
+    - name: 腹部X光
+      notes: "評估胎兒數量、大小及位置"
+    - name: 超音波
+      notes: "胎兒活力評估"
+  differentialDiagnoses:
+    - 胎兒過大
+    - 子宮無力
+    - 骨盆狹窄
+
+treatment:
+  medical:
+    - 人工矯正（若可行）：
+    - 潤滑、輕柔調整胎兒位置
+    - 僅限部分可及且母體產道足夠病例
+    - 剖腹產（多數病例、矯正失敗或胎兒窘迫）
+    - 催產素（僅矯正成功後）
+
+prognosis:
+  general: "早期識別及處理預後良好。延遲可能導致胎兒死亡及母體併發症。"
+
+prevention:
+  - 產前X光評估胎兒數量及大小
+  - 密切監測產程
+  - 高危品種計劃性剖腹產

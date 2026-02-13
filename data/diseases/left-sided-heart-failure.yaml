@@ -1,0 +1,76 @@
+slug: left-sided-heart-failure
+nameEn: Left Sided Heart Failure
+nameZh: 左側心臟衰竭
+bodySystem: cardiac
+description: 左心功能衰竭導致肺靜脈鬱血，引起肺水腫及呼吸困難。常見於僧帽瓣閉鎖不全、擴張型心肌病變及主動脈瓣疾病。
+
+aliases:
+  - { alias: 左心衰竭, language: zh }
+  - { alias: Left Heart Failure, language: en }
+  - { alias: LHF, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 小型犬常因僧帽瓣黏液樣變性；大型犬多為擴張型心肌病變
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 肥厚型心肌病變為主要原因
+
+etiology:
+  categories:
+    - name: 瓣膜疾病
+      examples:
+        - 僧帽瓣閉鎖不全
+        - 主動脈瓣疾病
+    - name: 心肌病變
+      examples:
+        - 擴張型心肌病變
+        - 肥厚型心肌病變
+    - name: 先天性異常
+      examples:
+        - 主動脈瓣下狹窄
+
+clinicalSigns:
+  early:
+    - 運動不耐
+    - 夜間咳嗽
+    - 呼吸略為急促
+  progressive:
+    - 嚴重呼吸困難
+    - 肺水腫
+    - 發紺
+    - 端坐呼吸
+    - 咳血
+
+diagnosis:
+  primaryTests:
+    - name: 胸部 X 光
+      notes: "評估左心房/左心室擴張、肺靜脈擴張、肺水腫"
+    - name: 心臟超音波
+      notes: "評估左心功能、瓣膜功能、心房大小"
+    - name: NT-proBNP
+      notes: "心臟生物標記，區分心因性與非心因性呼吸困難"
+  differentialDiagnoses:
+    - 肺炎
+    - 氣喘
+    - 呼吸道阻塞
+    - 胸腔積液
+
+treatment:
+  medical:
+    - Furosemide 2-8 mg/kg IV/IM q1-8h (急性期高劑量)
+    - Pimobendan 0.25-0.3 mg/kg PO q12h
+    - ACE 抑制劑 (enalapril 0.5 mg/kg PO q12-24h)
+    - 氧氣治療
+    - 限制活動及壓力
+
+prognosis:
+  general: "取決於原發病因及嚴重度；急性肺水腫需立即治療，長期需藥物控制，晚期預後不良"
+
+prevention:
+  - 高風險品種定期心臟超音波篩檢
+  - 早期診斷及藥物介入
+  - 控制體重及避免劇烈運動

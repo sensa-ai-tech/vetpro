@@ -1,0 +1,57 @@
+slug: addisonian-crisis
+nameEn: Addisonian Crisis
+nameZh: 愛迪生氏危象
+bodySystem: emergency
+description: 急性腎上腺皮質功能不全導致的致命性休克。低血鈉、高血鉀、低血糖為特徵,需緊急類固醇治療。
+
+aliases:
+  - { alias: 腎上腺危象, language: zh }
+  - { alias: Acute Hypoadrenocorticism, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 愛迪生氏症常見
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 較少見
+
+etiology:
+  categories:
+    - name: 原因
+      examples:
+        - 原發性愛迪生氏症、突然停用類固醇、雙側腎上腺壞死
+
+clinicalSigns:
+  early:
+    - 虛弱、嘔吐、腹瀉
+    - 脫水、低血壓
+  progressive:
+    - 休克、虛脫、昏迷
+
+diagnosis:
+  primaryTests:
+    - name: 電解質
+      notes: "低血鈉(<140 mEq/L)、高血鉀(>5.5 mEq/L)、Na:K<27:1"
+    - name: ACTH刺激試驗
+      notes: "確診,但危象時先治療"
+  differentialDiagnoses:
+    - 其他休克、胃腸炎
+
+treatment:
+  medical:
+    - 立即靜脈輸液: 0.9% NaCl 60-90 mL/kg IV
+    - Dexamethasone 0.5-1 mg/kg IV(診斷前)或Hydrocortisone
+    - 校正低血糖: 葡萄糖 IV
+    - 監測電解質、血糖
+    - 穩定後改口服類固醇維持
+    - Fludrocortisone 0.01-0.02 mg/kg/day PO
+
+prognosis:
+  general: "及時治療預後良好。延遲可能致命。需終身類固醇補充。"
+
+prevention:
+  - 愛迪生氏症規律服藥
+  - 避免突然停用類固醇

@@ -1,0 +1,74 @@
+slug: cardiac-ultrasound-echocardiography
+nameEn: Cardiac Ultrasound Echocardiography
+nameZh: 心臟超音波檢查
+bodySystem: cardiac
+description: 犬貓心臟超音波(超音波心動圖)檢查,評估心臟結構、功能、血流動力學。為診斷心臟病、評估嚴重程度及預後的黃金標準,可測量心室功能、瓣膜功能、心輸出量等。
+
+aliases:
+  - { alias: 超音波心動圖, language: zh }
+  - { alias: Echocardiography, language: en }
+  - { alias: Cardiac ultrasound, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬心臟病(瓣膜疾病、擴張型心肌病)診斷必要檢查
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓肥厚型心肌病診斷需心臟超音波確診
+
+etiology:
+  categories:
+    - name: 檢查模式
+      examples:
+        - 2D模式(結構評估)
+        - M模式(測量心室壁厚度、功能)
+        - 彩色都卜勒(血流方向、逆流)
+        - 脈衝波都卜勒(血流速度)
+        - 連續波都卜勒(高速血流、壓力差)
+    - name: 評估項目
+      examples:
+        - 心室大小及功能(LVEF、FS%)
+        - 瓣膜結構及功能(逆流程度)
+        - 心肌厚度
+        - 心輸出量
+        - 肺動脈壓
+
+clinicalSigns:
+  early:
+    - 心臟超音波為診斷工具
+  progressive:
+    - 對應心臟病症狀(咳嗽、運動不耐、昏厥)
+
+diagnosis:
+  primaryTests:
+    - name: 左心室功能評估
+      notes: "FS%(fractional shortening)正常犬>25%,貓>30%"
+    - name: 瓣膜逆流評估
+      notes: "彩色都卜勒評估逆流嚴重程度(輕/中/重度)"
+    - name: 心肌病診斷
+      notes: "HCM:左心室壁厚度>6mm(貓);DCM:左心室擴大+FS%降低(犬)"
+    - name: 肺動脈壓評估
+      notes: "經三尖瓣逆流速度計算,正常<30 mmHg"
+  differentialDiagnoses:
+    - 瓣膜性心臟病(二尖瓣閉鎖不全)
+    - 擴張型心肌病(DCM)
+    - 肥厚型心肌病(HCM)
+    - 先天性心臟病
+    - 心包積液
+
+treatment:
+  medical:
+    - 心臟超音波為診斷及監測工具
+    - 依診斷給予適當心臟藥物
+    - 定期追蹤超音波評估病程進展及治療反應
+
+prognosis:
+  general: "心臟超音波為心臟病診斷黃金標準,可準確評估嚴重程度及預後。需專業訓練及經驗。"
+
+prevention:
+  - 心臟雜音或心律不整應進行心臟超音波評估
+  - 高風險品種(如大丹、都柏文、緬因貓等)篩檢
+  - 定期追蹤評估疾病進展

@@ -1,0 +1,58 @@
+slug: infectious-disease-pcr-testing
+nameEn: Infectious Disease PCR Testing
+nameZh: 傳染病PCR檢測
+bodySystem: infectious
+description: 犬貓傳染病PCR(聚合酶鏈反應)檢測,快速偵測病原體DNA/RNA。高敏感度及特異性,用於診斷病毒、細菌、寄生蟲感染,為分子診斷重要工具。
+
+aliases:
+  - { alias: PCR檢測, language: zh }
+  - { alias: PCR testing, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬小病毒、犬瘟熱、鉤端螺旋體等診斷
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: FIP、貓瘟、貓皰疹病毒診斷
+
+etiology:
+  categories:
+    - name: 常用PCR檢測
+      examples:
+        - 犬小病毒(糞便)
+        - 犬瘟熱(血液、結膜分泌物)
+        - FIP冠狀病毒(胸腹水、組織)
+        - 貓皰疹病毒(結膜、口腔拭子)
+        - 貓白血病病毒、貓免疫不全病毒
+
+clinicalSigns:
+  early:
+    - PCR為診斷工具
+  progressive:
+    - 依感染疾病而定
+
+diagnosis:
+  primaryTests:
+    - name: PCR陽性
+      notes: "偵測到病原體核酸"
+    - name: 定量PCR
+      notes: "測量病毒載量,評估感染嚴重度"
+    - name: 偽陽性偽陰性
+      notes: "採樣時機、部位、保存影響結果"
+  differentialDiagnoses:
+    - 各類病毒性傳染病
+
+treatment:
+  medical:
+    - PCR為診斷工具
+
+prognosis:
+  general: "PCR為快速敏感的診斷工具,但需正確採樣及判讀。"
+
+prevention:
+  - 適當檢體採集及保存
+  - 急性期採樣
+  - 結合臨床症狀及其他檢查

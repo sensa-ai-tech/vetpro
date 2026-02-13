@@ -1,0 +1,59 @@
+slug: hypoglycemia-emergency
+nameEn: Hypoglycemia Emergency
+nameZh: 低血糖急症
+bodySystem: metabolic
+description: 血糖<60 mg/dL引起中樞神經症狀。常見於胰島素過量、敗血症、肝衰竭。需立即補充葡萄糖。
+
+aliases:
+  - { alias: 低血糖危象, language: zh }
+  - { alias: Hypoglycemic Crisis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 胰島素瘤、幼犬
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 胰島素過量
+
+etiology:
+  categories:
+    - name: 常見原因
+      examples:
+        - 胰島素過量、胰島素瘤、敗血症、肝衰竭、xylitol中毒
+
+clinicalSigns:
+  early:
+    - 虛弱、嗜睡
+    - 共濟失調
+  progressive:
+    - 癲癇發作
+    - 昏迷
+
+diagnosis:
+  primaryTests:
+    - name: 血糖
+      notes: "<60 mg/dL,嚴重<40 mg/dL"
+  differentialDiagnoses:
+    - 其他代謝異常
+
+treatment:
+  medical:
+    - 立即靜脈葡萄糖:
+      - 0.25-0.5 g/kg IV bolus(25-50% dextrose稀釋)
+      - 持續CRI: 2.5-5% dextrose IV
+    - 口服葡萄糖(若意識清楚):
+      - 玉米糖漿、蜂蜜塗於牙齦
+    - 頻繁監測血糖(q30-60min)
+    - 治療根本病因
+    - 調整胰島素劑量(若過量)
+
+prognosis:
+  general: "及時補充葡萄糖預後良好。延遲可能腦損傷。"
+
+prevention:
+  - 精確胰島素劑量
+  - 規律餵食
+  - 監測血糖

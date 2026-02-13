@@ -164,12 +164,68 @@ const CATEGORY_TO_BODY_SYSTEM: Record<string, string> = {
   congenital: "other",
   surgery: "other",
   pain_rehab: "other",
+  // Wave 2 categories
+  breed_specific_dog_w2: "other",
+  breed_specific_cat_w2: "other",
+  cardiac_w2: "cardiac",
+  respiratory_w2: "respiratory",
+  gastrointestinal_w2: "gastrointestinal",
+  hepatic_w2: "hepatic",
+  renal_w2: "renal",
+  endocrine_w2: "endocrine",
+  neurology_w2: "neurology",
+  ophthalmology_w2: "ophthalmology",
+  orthopedic_w2: "orthopedic",
+  dermatology_w2: "dermatology",
+  oncology_w2: "oncology",
+  infectious_w2: "infectious",
+  toxicology_w2: "toxicology",
+  emergency_w2: "emergency",
+  immunology_w2: "immunology",
+  reproductive_w2: "reproductive",
+  behavioral_w2: "behavioral",
+  ear_w2: "ear",
+  vascular_w2: "vascular",
+  electrolyte_w2: "electrolyte",
+  rabbit_w2: "gastrointestinal",
+  guinea_pig_w2: "gastrointestinal",
+  hamster_w2: "gastrointestinal",
+  ferret_w2: "endocrine",
+  chinchilla_w2: "gastrointestinal",
+  rat_w2: "respiratory",
+  avian_w2: "respiratory",
+  dental_w2: "dental",
+  surgery_w2: "other",
+  preventive_w2: "other",
+  diagnostic_w2: "other",
+  neonatal_w2: "other",
+  nutrition_w2: "metabolic",
 };
 
 // Refine exotic bodySystem based on disease name keywords
 function refineBodySystem(name: string, category: string): string {
   const n = name.toLowerCase();
-  if (n.includes("dental") || n.includes("malocclusion") || n.includes("teeth")) return "dental";
+  // Breed-specific refinement: orthopedic keywords
+  if (n.includes("dysplasia") && (n.includes("hip") || n.includes("elbow"))) return "orthopedic";
+  if (n.includes("patellar luxation") || n.includes("legg calve") || n.includes("osteochondri") || n.includes("cruciate")) return "orthopedic";
+  if (n.includes("myopathy") || n.includes("myositis") || n.includes("muscular dystrophy") || n.includes("myasthenia")) return "neurology";
+  if (n.includes("portosystemic shunt")) return "hepatic";
+  if (n.includes("tracheal collapse") || n.includes("brachycephalic")) return "respiratory";
+  if (n.includes("hydrocephalus") || n.includes("encephalitis") || n.includes("meningitis") || n.includes("epilepsy") || n.includes("ataxia") || n.includes("neuropathy") || n.includes("neuronal ceroid") || n.includes("ivdd") || n.includes("hemivertebra") || n.includes("spondyl") || n.includes("intervertebral disc") || n.includes("shaker syndrome") || n.includes("cramp") || n.includes("collapse") || n.includes("rage syndrome") || n.includes("spinal") || n.includes("degenerative myelopathy")) return "neurology";
+  if (n.includes("cherry eye") || n.includes("entropion") || n.includes("ectropion") || n.includes("keratitis") || n.includes("keratoconjunctivitis") || n.includes("retinal") || n.includes("cataracts") || n.includes("corneal dystrophy") || n.includes("pigmentary keratopathy") || n.includes("strabismus") || n.includes("nystagmus")) return "ophthalmology";
+  if (n.includes("hemolytic anemia") || n.includes("hemophilia") || n.includes("von willebrand") || n.includes("thrombocytopenia") || n.includes("coagulopathy") || n.includes("pk deficiency") || n.includes("pyruvate kinase") || n.includes("phosphofructokinase") || n.includes("neutropenia") || n.includes("neutrophil")) return "hematology";
+  if (n.includes("ichthyosis") || n.includes("sebaceous adenitis") || n.includes("dermatomyositis") || n.includes("furunculosis") || n.includes("acne") || n.includes("acanthosis") || n.includes("pattern baldness") || n.includes("alopecia x") || n.includes("cutaneous mucinosis") || n.includes("lethal acrodermatitis") || n.includes("zinc responsive dermatosis")) return "dermatology";
+  if (n.includes("hyperuricosuria") || n.includes("stone disease") || n.includes("cystinuria") || n.includes("fanconi") || n.includes("renal dysplasia") || n.includes("familial nephropathy") || n.includes("polycystic kidney") || n.includes("pkd")) return "urinary";
+  if (n.includes("deafness")) return "ear";
+  if (n.includes("uveodermatologic") || n.includes("immunodeficiency") || n.includes("autoimmune") || n.includes("immunoproliferative")) return "immunology";
+  if (n.includes("hypertrophic cardiomyopathy") || n.includes("dilated cardiomyopathy") || n.includes("subaortic") || n.includes("subvalvular") || n.includes("tricuspid valve") || n.includes("heart disease")) return "cardiac";
+  if (n.includes("osteosarcoma") || n.includes("histiocytic sarcoma") || n.includes("hemangiosarcoma") || n.includes("mast cell tumor") || n.includes("bladder cancer")) return "oncology";
+  if (n.includes("ivermectin sensit") || n.includes("mdr1") || n.includes("hepatotoxicity")) return "toxicology";
+  if (n.includes("hypoglycemia")) return "metabolic";
+  if (n.includes("glycogen storage") || n.includes("amyloidosis") || n.includes("hyperlipidemia") || n.includes("obesity") || n.includes("hypokalemic polymyopathy")) return "metabolic";
+  if (n.includes("exocrine pancreatic") || n.includes("gluten sensitive") || n.includes("enteropathy")) return "gastrointestinal";
+  if (n.includes("ear disease") || n.includes("ear infection")) return "ear";
+  if (n.includes("dental") || n.includes("malocclusion") || n.includes("teeth") || n.includes("stomatitis") || n.includes("gingivitis")) return "dental";
   if (n.includes("respiratory") || n.includes("pneumonia") || n.includes("rhinitis")) return "respiratory";
   if (n.includes("gi ") || n.includes("gastric") || n.includes("intestin") || n.includes("stasis") || n.includes("enterit") || n.includes("bloat") || n.includes("colon") || n.includes("crop") || n.includes("cecal")) return "gastrointestinal";
   if (n.includes("dermat") || n.includes("skin") || n.includes("alopecia") || n.includes("mange") || n.includes("mite") || n.includes("bumblefoot") || n.includes("pododermatitis") || n.includes("fur ") || n.includes("lice")) return "dermatology";
@@ -192,6 +248,14 @@ function refineBodySystem(name: string, category: string): string {
   if (n.includes("atherosclerosis")) return "cardiac";
   if (n.includes("liver") || n.includes("hepat")) return "hepatic";
 
+  // Additional keywords for Wave 2 categories
+  if (n.includes("anesthesia") || n.includes("sedation") || n.includes("analgesia") || n.includes("nerve block")) return "emergency";
+  if (n.includes("vaccination") || n.includes("vaccine") || n.includes("wellness") || n.includes("prevention") || n.includes("deworming") || n.includes("microchip")) return "other";
+  if (n.includes("radiograph") || n.includes("ultrasound") || n.includes("ct scan") || n.includes("mri ") || n.includes("cytology") || n.includes("histopath") || n.includes("blood gas") || n.includes("urinalysis") || n.includes("cbc ") || n.includes("chemistry panel") || n.includes("snap test") || n.includes("pcr test") || n.includes("titer") || n.includes("cortisol") || n.includes("acth ") || n.includes("dexamethasone") || n.includes("fructosamine") || n.includes("glucose curve") || n.includes("coombs") || n.includes("ana test") || n.includes("serology") || n.includes("scintigraphy") || n.includes("fluoroscopy") || n.includes("endoscopy") || n.includes("bronchoscopy") || n.includes("rhinoscopy") || n.includes("cystoscopy") || n.includes("arthroscopy") || n.includes("laparoscopy") || n.includes("thoracoscopy")) return "other";
+  if (n.includes("neonatal") || n.includes("neonat") || n.includes("orphan puppy") || n.includes("orphan kitten") || n.includes("fading puppy") || n.includes("fading kitten") || n.includes("swimmer puppy") || n.includes("flat chested kitten") || n.includes("puppy strangles") || n.includes("bottle feeding")) return "other";
+  if (n.includes("diet") || n.includes("nutrition") || n.includes("feeding tube") || n.includes("parenteral nutrition") || n.includes("enteral feeding") || n.includes("caloric") || n.includes("supplementation") || n.includes("probiotics") || n.includes("prebiotics") || n.includes("omega 3") || n.includes("glucosamine")) return "metabolic";
+  if (n.includes("ovariohysterectomy") || n.includes("ovariectomy") || n.includes("castration") || n.includes("cryptorchid surg") || n.includes("cesarean") || n.includes("mastectomy") || n.includes("splenectomy") || n.includes("biopsy") || n.includes("aspirate") || n.includes("wound debride") || n.includes("wound vacuum") || n.includes("wound healing") || n.includes("surgical site") || n.includes("surgical drain") || n.includes("chest tube")) return "other";
+
   return CATEGORY_TO_BODY_SYSTEM[category] || "other";
 }
 
@@ -199,17 +263,36 @@ function refineBodySystem(name: string, category: string): string {
 function getSpecies(category: string, name: string): string[] {
   const n = name.toLowerCase();
   switch (category) {
-    case "rabbit": return ["rabbit"];
-    case "guinea_pig": return ["guinea pig"];
-    case "hamster": return ["hamster"];
-    case "ferret": return ["ferret"];
-    case "chinchilla": return ["chinchilla"];
-    case "rat": return ["rat"];
-    case "avian": return ["bird"];
+    case "rabbit": case "rabbit_w2": return ["rabbit"];
+    case "guinea_pig": case "guinea_pig_w2": return ["guinea pig"];
+    case "hamster": case "hamster_w2": return ["hamster"];
+    case "ferret": case "ferret_w2": return ["ferret"];
+    case "chinchilla": case "chinchilla_w2": return ["chinchilla"];
+    case "rat": case "rat_w2": return ["rat"];
+    case "avian": case "avian_w2": return ["bird"];
     default: {
       // Check name for species hints
       if (n.includes("feline") || n.includes("cat ") || n.includes("cat)") || n.includes("in cats")) return ["cat"];
       if (n.includes("canine") || n.includes("dog ") || n.includes("dog)")) return ["dog"];
+      // Cat breed names
+      const catBreeds = ["persian", "siamese", "maine coon", "ragdoll", "bengal", "abyssinian",
+        "burmese", "scottish fold", "sphynx", "devon rex", "cornish rex", "norwegian forest",
+        "british shorthair", "birman", "manx", "somali", "oriental shorthair", "tonkinese",
+        "russian blue", "chartreux", "himalayan", "exotic shorthair"];
+      if (catBreeds.some(b => n.includes(b))) return ["cat"];
+      // Dog breed names
+      const dogBreeds = ["labrador", "golden retriever", "german shepherd", "bulldog", "pug",
+        "boston terrier", "yorkshire", "maltese", "chihuahua", "pomeranian", "poodle",
+        "dachshund", "jack russell", "shih tzu", "cavalier", "beagle", "border collie",
+        "australian shepherd", "cocker spaniel", "springer spaniel", "staffordshire",
+        "bull terrier", "basenji", "shar-pei", "shar pei", "dalmatian", "great dane",
+        "newfoundland", "saint bernard", "irish wolfhound", "bernese", "weimaraner",
+        "rottweiler", "doberman", "westie", "west highland", "cairn terrier",
+        "scottish terrier", "airedale", "kerry blue", "greyhound", "whippet",
+        "siberian husky", "akita", "collie", "shetland", "belgian malinois", "belgian tervuren",
+        "schnauzer", "irish setter", "shiba inu", "bichon", "havanese", "papillon",
+        "chinese crested", "lhasa apso", "rhodesian ridgeback"];
+      if (dogBreeds.some(b => n.includes(b))) return ["dog"];
       // Default: both dog and cat for general diseases
       return ["dog", "cat"];
     }

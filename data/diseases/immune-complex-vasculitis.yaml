@@ -1,0 +1,84 @@
+slug: immune-complex-vasculitis
+nameEn: Immune Complex Vasculitis
+nameZh: 免疫複合物性血管炎
+bodySystem: immunology
+description: 由抗原-抗體免疫複合物沉積於血管壁引發的第三型過敏反應（Arthus 反應），導致補體活化、中性球浸潤及血管壁損傷，為犬貓多種血管炎的共同病理機轉。
+
+aliases:
+  - { alias: 免疫複合體血管炎, language: zh }
+  - { alias: 第三型過敏反應性血管炎, language: zh }
+  - { alias: Type III hypersensitivity vasculitis, language: en }
+  - { alias: Immune-mediated vasculitis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬免疫複合物性血管炎可與全身性紅斑狼瘡、感染、疫苗或藥物反應相關。表現為皮膚、腎絲球及關節等多器官受累。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓免疫複合物血管炎罕見，FIP 的血管炎成分涉及免疫複合物沉積。
+
+etiology:
+  categories:
+    - name: 抗原來源
+      examples:
+        - 感染性抗原（細菌、病毒）
+        - 藥物半抗原
+        - 疫苗成分
+        - 腫瘤相關抗原
+        - 自身抗原（自體免疫疾病）
+    - name: 病理機轉
+      examples:
+        - 循環免疫複合物沉積於血管壁
+        - 補體活化（C3a, C5a）
+        - 中性球趨化與浸潤
+        - 蛋白水解酵素釋放損傷血管壁
+        - 血管壁纖維素樣壞死
+
+clinicalSigns:
+  early:
+    - 發燒
+    - 關節腫脹疼痛
+    - 皮膚紫斑或紅斑
+    - 嗜睡
+  progressive:
+    - 皮膚壞死與潰瘍
+    - 腎絲球腎炎（蛋白尿）
+    - 多發性關節炎
+    - 淋巴結腫大
+    - 多器官功能障礙
+
+diagnosis:
+  primaryTests:
+    - name: 組織病理學
+      notes: "生檢受累組織。白血球碎裂性血管炎（leukocytoclastic vasculitis）為典型發現。免疫組織化學染色可見免疫複合物沉積"
+    - name: 免疫學檢查
+      notes: "ANA、循環免疫複合物、補體濃度（C3, C4 可能下降）、Coombs test"
+    - name: 尿液分析
+      notes: "蛋白尿（腎絲球受累）。UPC 比值"
+  differentialDiagnoses:
+    - 壁蝨傳播疾病
+    - 全身性紅斑狼瘡
+    - 藥物反應
+    - DIC
+    - 感染性心內膜炎
+
+treatment:
+  medical:
+    - 移除/治療抗原來源（停藥、治療感染）
+    - Prednisolone 2 mg/kg PO SID 漸減
+    - 嚴重病例——加用 Azathioprine（犬 2 mg/kg PO SID）或 Mycophenolate
+    - Pentoxifylline 10-15 mg/kg PO BID-TID
+    - 腎絲球腎炎——ACE inhibitors、低蛋白飲食
+    - 支持療法
+  surgical: []
+
+prognosis:
+  general: "可辨識抗原來源並移除者預後較佳。特發性者需長期免疫抑制，多數可控制。合併腎絲球腎炎者預後較差。需定期監測腎功能與蛋白尿。"
+
+prevention:
+  - 避免已知致敏藥物
+  - 壁蝨預防
+  - 監測疫苗反應

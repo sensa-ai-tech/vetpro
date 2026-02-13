@@ -1,0 +1,82 @@
+slug: renal-vascular-disease
+nameEn: Renal Vascular Disease
+nameZh: 腎血管疾病
+bodySystem: urinary
+description: 影響腎臟血管的疾病，包括腎動脈血栓栓塞、腎靜脈血栓及腎臟梗塞等，導致急性或慢性腎功能損傷，常與全身性高凝血狀態或心臟疾病相關。
+
+aliases:
+  - { alias: 腎動脈栓塞, language: zh }
+  - { alias: 腎梗塞, language: zh }
+  - { alias: Renal infarction, language: en }
+  - { alias: Renal artery thrombosis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬腎血管疾病可與腎上腺皮質功能亢進、蛋白質流失性腎病、心內膜炎或腫瘤相關。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓腎動脈血栓可為心肌病相關全身性血栓栓塞的一部分。腎梗塞可導致急性腎損傷。
+
+etiology:
+  categories:
+    - name: 動脈性
+      examples:
+        - 心源性栓塞（心肌病，貓）
+        - 感染性心內膜炎栓塞（犬）
+        - 腫瘤栓塞
+        - 原位血栓
+    - name: 靜脈性
+      examples:
+        - 腎靜脈血栓（蛋白質流失性腎病）
+        - 後腔靜脈血栓延伸
+        - 腎腫瘤侵犯
+
+clinicalSigns:
+  early:
+    - 急性腰痛
+    - 血尿
+    - 食慾下降
+    - 嘔吐
+  progressive:
+    - 急性腎損傷（肌酐/BUN 上升）
+    - 少尿或無尿
+    - 高血壓
+    - 蛋白尿加劇
+    - 雙側腎梗塞——急性腎衰竭
+
+diagnosis:
+  primaryTests:
+    - name: 腎臟超音波（Doppler）
+      notes: "腎臟灌流評估。楔形低回音區域（梗塞灶）。Doppler 腎動脈/靜脈血流"
+    - name: CT 血管攝影
+      notes: "腎臟灌流缺損。血栓直接觀察。梗塞範圍評估"
+    - name: 血液學
+      notes: "BUN、肌酐、電解質。凝血功能。尿液分析"
+  differentialDiagnoses:
+    - 急性腎損傷（其他原因）
+    - 腎盂腎炎
+    - 腎臟腫瘤
+    - 腎結石
+
+treatment:
+  medical:
+    - 抗凝血——Enoxaparin 0.8-1 mg/kg SC q12h
+    - 輸液治療維持腎灌流
+    - 降壓治療（Amlodipine 0.1-0.25 mg/kg PO SID）
+    - 止痛
+    - 治療基礎疾病
+    - 透析（雙側嚴重梗塞致急性腎衰竭時）
+  surgical:
+    - 取栓術（極少執行）
+    - 腎切除（單側完全梗塞，對側功能正常時）
+
+prognosis:
+  general: "單側部分梗塞經適當治療後腎功能可能恢復。雙側嚴重梗塞預後不良。基礎疾病控制為關鍵。慢性腎損傷需長期管理。"
+
+prevention:
+  - 高凝血狀態的預防性抗血栓治療
+  - 心肌病患者使用 Clopidogrel 預防
+  - 蛋白質流失性腎病的抗血栓預防

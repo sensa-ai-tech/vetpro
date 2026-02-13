@@ -1,0 +1,67 @@
+slug: coagulation-panel-interpretation
+nameEn: Coagulation Panel Interpretation
+nameZh: 凝血功能檢查判讀
+bodySystem: other
+description: 犬貓凝血功能檢查判讀,評估凝血因子功能及血小板功能。包括PT、aPTT、纖維蛋白原、D-dimer等,用於診斷凝血異常、DIC、抗凝血劑中毒等。
+
+aliases:
+  - { alias: 凝血檢查, language: zh }
+  - { alias: Coagulation profile, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 術前評估、出血傾向、鼠藥中毒診斷
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓凝血功能異常較少見
+
+etiology:
+  categories:
+    - name: 凝血檢查項目
+      examples:
+        - PT(prothrombin time,外源性路徑)
+        - aPTT(activated partial thromboplastin time,內源性路徑)
+        - 纖維蛋白原
+        - D-dimer(纖維蛋白溶解產物)
+        - 血小板數及功能
+
+clinicalSigns:
+  early:
+    - 凝血功能檢查為診斷工具
+  progressive:
+    - 出血傾向、瘀斑、血腫
+
+diagnosis:
+  primaryTests:
+    - name: PT延長
+      notes: "維生素K缺乏、鼠藥中毒、肝病、DIC"
+    - name: aPTT延長
+      notes: "血友病、肝病、DIC"
+    - name: PT及aPTT皆延長
+      notes: "DIC、嚴重肝病、抗凝血劑中毒"
+    - name: D-dimer升高
+      notes: "DIC、血栓形成、腫瘤"
+  differentialDiagnoses:
+    - 抗凝血劑中毒(鼠藥)
+    - 瀰漫性血管內凝血(DIC)
+    - 血友病
+    - 肝功能衰竭
+
+treatment:
+  medical:
+    - 凝血功能檢查為診斷工具
+    - 維生素K(鼠藥中毒)
+    - 新鮮冷凍血漿(補充凝血因子)
+    - 治療DIC根本原因
+
+prognosis:
+  general: "凝血功能檢查為評估出血風險及凝血異常的重要工具。需正確採集及判讀。"
+
+prevention:
+  - 檸檬酸鈉藍頭管採血
+  - 避免溶血
+  - 立即送檢或分離血漿冷凍
+  - 術前高風險動物篩檢

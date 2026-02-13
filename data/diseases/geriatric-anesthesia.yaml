@@ -1,0 +1,93 @@
+slug: geriatric-anesthesia
+nameEn: Geriatric Anesthesia
+nameZh: 老年動物麻醉
+bodySystem: emergency
+description: 針對老年犬貓(犬>8歲,貓>10歲)的麻醉管理。老年動物器官功能衰退,藥物代謝能力下降,常合併慢性疾病,麻醉風險顯著增加,需要完整術前評估和客製化麻醉方案。
+
+aliases:
+  - { alias: 高齡動物麻醉, language: zh }
+  - { alias: 老年犬貓麻醉, language: zh }
+  - { alias: Senior Pet Anesthesia, language: en }
+  - { alias: Elderly Animal Anesthesia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 大型犬8歲以上,小型犬10歲以上視為老年,麻醉死亡率較中年犬增加2-3倍
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 10歲以上貓視為老年,90%患有骨關節炎,85%有慢性腎病
+
+etiology:
+  categories:
+    - name: 器官功能衰退
+      examples:
+        - 腎功能下降(GFR降低,藥物排除延長)
+        - 肝功能下降(藥物代謝能力降低)
+        - 心臟功能下降(心輸出量減少,儲備功能降低)
+        - 肺功能下降(肺活量減少,氧合能力降低)
+    - name: 常見併發症
+      examples:
+        - 心臟病(慢性瓣膜疾病、心肌病)
+        - 慢性腎病(貓85%,犬40%)
+        - 內分泌疾病(糖尿病、甲狀腺疾病、庫欣氏症)
+        - 骨關節炎和疼痛
+
+clinicalSigns:
+  early:
+    - 術前可能有隱藏性器官功能不全
+    - 麻醉誘導反應較慢
+    - 對麻醉藥物敏感性增加
+  progressive:
+    - 恢復時間延長(藥物代謝慢)
+    - 術後可能出現認知功能障礙
+    - 傷口癒合較慢
+
+diagnosis:
+  primaryTests:
+    - name: "術前血檢(必須)"
+      notes: "CBC、全套生化(腎功能、肝功能、電解質、血糖)"
+    - name: 尿液檢查
+      notes: "評估腎功能,檢測隱藏性腎病或泌尿道感染"
+    - name: 胸部X光
+      notes: "評估心臟大小、肺臟狀況"
+    - name: 心電圖
+      notes: "檢測心律不整"
+    - name: 血壓測量
+      notes: "術前基礎血壓,高血壓或低血壓需調整麻醉方案"
+    - name: 甲狀腺功能
+      notes: "老年貓檢測T4排除甲狀腺亢進"
+  differentialDiagnoses:
+    - 單純老化相關生理變化
+    - 隱藏性器官疾病(心臟、腎臟、肝臟)
+    - 內分泌異常(甲狀腺、腎上腺)
+
+treatment:
+  medical:
+    - "術前輸液:至少2-4小時,LRS或Hartmann's 5 ml/kg/hr"
+    - "誘導藥物(降低劑量):Propofol 3-4 mg/kg IV或Alfaxalone 2-3 mg/kg IV(較標準劑量減少25-30%)"
+    - "維持麻醉:Isoflurane或Sevoflurane最低有效濃度(0.8-1.2%)"
+    - "術中輸液:晶體液5 ml/kg/hr,避免過量(心臟負荷)"
+    - "血壓支持:MAP<60 mmHg時,Dopamine 5-10 μg/kg/min CRI或降低麻醉深度"
+    - "多模式鎮痛:阿片類 + 局部麻醉/神經阻斷,避免NSAIDs(腎病患者)"
+    - "體溫維持:積極保溫,老年動物體溫調節能力差"
+    - "術後監測:延長監測時間至完全恢復正常活動,至少6-12小時"
+    - "腎病方案:術後持續輸液24-48小時,監測尿液生成和腎指數"
+
+prognosis:
+  general: "麻醉相關死亡率老年犬0.5-1%,老年貓0.3-0.8%(較中年動物高2-3倍)。術前詳細評估可降低風險50%。最常見併發症為術後腎功能惡化(10-15%,大多可逆)、低血壓(20-30%)、恢復期譫妄(5-10%)。合併嚴重器官疾病(心衰、腎衰)的患者風險顯著增加(死亡率2-5%)。大多數健康老年動物可安全完成麻醉手術,術後恢復良好。"
+
+prevention:
+  - 完整術前評估(理學檢查、血檢、影像學)
+  - 延期非緊急手術直到慢性疾病穩定控制
+  - 選擇心肺抑制最小的麻醉藥物
+  - 降低藥物劑量並延長給藥間隔
+  - 術前充分輸液改善器官灌流
+  - 使用多模式鎮痛減少麻醉藥需求
+  - 術中持續監測生命徵象(心電圖、血壓、血氧、體溫)
+  - 術後延長監測時間和住院觀察
+  - 準備急救藥物和設備
+  - 高風險患者(ASA分級III-IV)考慮轉診專科
+  - 術後追蹤腎功能和整體恢復狀況

@@ -1,0 +1,76 @@
+slug: non-anion-gap-acidosis
+nameEn: Non Anion Gap Acidosis
+nameZh: 非陰離子間隙性酸中毒
+bodySystem: electrolyte
+description: 代謝性酸中毒伴隨正常陰離子間隙（AG <20 mEq/L），常因碳酸氫根流失或氯離子累積引起。常見原因包括腹瀉、腎小管性酸中毒或高張性鹽水輸液。
+
+aliases:
+  - { alias: 高血氯性酸中毒, language: zh }
+  - { alias: Hyperchloremic Metabolic Acidosis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 常見於腹瀉、腎小管性酸中毒或醫源性高張性鹽水輸液
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓常因腸胃道疾病或慢性腎臟病引起
+
+etiology:
+  categories:
+    - name: 碳酸氫根流失（腸胃道）
+      examples:
+        - 腹瀉（尤其小腸性）
+        - 腸道引流或瘻管
+    - name: 腎小管性酸中毒
+      examples:
+        - 近端腎小管性酸中毒（RTA type 2）
+        - 遠端腎小管性酸中毒（RTA type 1）
+        - 范可尼症候群
+    - name: 醫源性
+      examples:
+        - 0.9% NaCl 或 KCl 過量輸液
+        - 碳酸酐酶抑制劑使用
+    - name: 尿道轉向術後
+      examples:
+        - 尿液與腸道接觸（氯離子與碳酸氫根交換）
+
+clinicalSigns:
+  early:
+    - 輕度過度換氣
+    - 食慾減退、嗜睡
+  progressive:
+    - 肌肉無力
+    - 骨質疏鬆（慢性病例）
+    - 生長遲緩（幼年動物）
+
+diagnosis:
+  primaryTests:
+    - name: 動脈血液氣體
+      notes: "pH <7.35, HCO3- <18 mEq/L"
+    - name: 陰離子間隙
+      notes: "AG = (Na + K) - (Cl + HCO3-), AG <20 mEq/L（正常）"
+    - name: 尿 pH 及尿陰離子間隙
+      notes: "鑑別腎小管性酸中毒類型"
+  differentialDiagnoses:
+    - 腹瀉
+    - 腎小管性酸中毒
+    - 高張性鹽水輸液過量
+    - 尿道轉向術後
+
+treatment:
+  medical:
+    - 治療潛在病因（止瀉、調整輸液類型）
+    - Sodium bicarbonate（HCO3- <12 或 pH <7.2）：1-2 mEq/kg PO or IV
+    - 腎小管性酸中毒需長期口服鹼化劑
+    - 監測血氣及電解質
+
+prognosis:
+  general: "預後良好,多數病例經治療潛在病因後可恢復。慢性腎小管性酸中毒需終生鹼化治療,但預後穩定。"
+
+prevention:
+  - 腸胃道疾病早期治療
+  - 避免過量高張性鹽水輸液
+  - 定期監測電解質（高風險患者）

@@ -1,0 +1,57 @@
+slug: continuous-rate-infusion-protocols
+nameEn: Continuous Rate Infusion Protocols
+nameZh: 持續輸注流程
+bodySystem: emergency
+description: 持續靜脈輸注藥物以維持穩定血中濃度。常用於止痛、鎮靜、升壓、抗心律不整。
+
+aliases:
+  - { alias: CRI流程, language: zh }
+  - { alias: CRI Protocols, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 重症常用
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 同犬
+
+etiology:
+  categories:
+    - name: 常用CRI藥物
+      examples:
+        - Fentanyl(止痛)、Ketamine(止痛)、Dexmedetomidine(鎮靜)、Dobutamine(強心)
+
+clinicalSigns:
+  early:
+    - 依適應症
+  progressive:
+    - 無
+
+diagnosis:
+  primaryTests:
+    - name: 臨床評估
+      notes: "確認需CRI藥物"
+  differentialDiagnoses:
+    - 無
+
+treatment:
+  medical:
+    - 止痛CRI:
+      - Fentanyl 2-10 μg/kg/hr
+      - Ketamine 2-10 μg/kg/min
+      - Lidocaine 25-75 μg/kg/min(犬)
+    - 鎮靜CRI:
+      - Dexmedetomidine 0.5-3 μg/kg/hr
+    - 計算公式: (劑量 × 體重 × 60) / (藥物濃度 × 1000) = mL/hr
+    - 輸液幫浦精確控制
+    - 定期評估效果調整劑量
+
+prognosis:
+  general: "可提供穩定藥物濃度。注意藥物蓄積及副作用。"
+
+prevention:
+  - 精確計算劑量
+  - 密切監測臨床反應

@@ -1,0 +1,74 @@
+slug: epistaxis
+nameEn: Epistaxis
+nameZh: 鼻出血
+bodySystem: respiratory
+description: 鼻腔出血,可能單側或雙側。病因包含凝血障礙、鼻腔疾病、全身性疾病或高血壓。
+
+aliases:
+  - { alias: 流鼻血, language: zh }
+  - { alias: Nosebleed, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 常見原因包含鼠藥中毒、鼻腫瘤、真菌感染
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 常見原因包含凝血障礙、高血壓、鼻腫瘤
+
+etiology:
+  categories:
+    - name: 凝血障礙
+      examples:
+        - 鼠藥中毒
+        - 免疫介導血小板減少
+        - 血友病
+    - name: 鼻腔疾病
+      examples:
+        - 鼻腫瘤
+        - 真菌性鼻炎
+        - 異物
+    - name: 全身性
+      examples:
+        - 高血壓
+        - 血管炎
+
+clinicalSigns:
+  early:
+    - 打噴嚏帶血
+    - 鼻孔滴血
+  progressive:
+    - 大量鼻出血
+    - 黏膜蒼白
+    - 虛弱
+
+diagnosis:
+  primaryTests:
+    - name: 凝血功能檢查
+      notes: "PT, aPTT, 血小板計數"
+    - name: 血壓測量
+      notes: "排除高血壓"
+    - name: 鼻鏡檢查
+      notes: "評估鼻腔病灶"
+    - name: 頭部 CT
+      notes: "評估腫瘤或真菌感染"
+  differentialDiagnoses:
+    - 依原發病因分類
+
+treatment:
+  medical:
+    - 治療原發病因
+    - Vitamin K1 (鼠藥中毒)
+    - 降血壓藥物 (高血壓)
+    - 局部止血 (冰敷、鼻塞填充)
+    - 輸血 (嚴重貧血)
+
+prognosis:
+  general: "取決於原發病因;凝血障礙若能糾正預後良好;鼻腫瘤預後不良"
+
+prevention:
+  - 避免接觸鼠藥
+  - 定期血壓監測 (老年貓)
+  - 早期診斷及治療鼻腔疾病

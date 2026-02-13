@@ -1,0 +1,73 @@
+slug: hyperchloremia
+nameEn: Hyperchloremia
+nameZh: 高血氯症
+bodySystem: electrolyte
+description: 血清氯離子濃度高於正常範圍（犬貓 >120 mEq/L），常與高血鈉症或代謝性酸中毒並存。多因水分流失、高張性鹽水輸液或腎小管性酸中毒引起。
+
+aliases:
+  - { alias: 血氯過高, language: zh }
+  - { alias: Hyperchloraemia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 常見於腹瀉、高張性鹽水輸液或腎小管性酸中毒
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓常因脫水或代謝性酸中毒引起
+
+etiology:
+  categories:
+    - name: 水分流失（相對性高血氯）
+      examples:
+        - 腹瀉、嘔吐
+        - 糖尿病失控
+        - 尿崩症
+    - name: 醫源性
+      examples:
+        - 0.9% NaCl 過量輸液
+        - KCl 補充過量
+    - name: 代謝性酸中毒
+      examples:
+        - 腎小管性酸中毒
+        - 慢性腎臟病
+        - 乙二醇中毒
+
+clinicalSigns:
+  early:
+    - 多數無特異性症狀
+    - 脫水徵象
+  progressive:
+    - 代謝性酸中毒症狀（過度換氣）
+    - 肌肉無力
+
+diagnosis:
+  primaryTests:
+    - name: 血清電解質
+      notes: "Cl >120 mEq/L，評估陰離子間隙（AG）"
+    - name: 血液氣體分析
+      notes: "非陰離子間隙性代謝性酸中毒（HCO3- 降低，AG 正常）"
+    - name: 尿氯及尿 pH
+      notes: "評估腎小管性酸中毒"
+  differentialDiagnoses:
+    - 脫水
+    - 腎小管性酸中毒
+    - 高張性鹽水輸液過量
+    - 慢性腎臟病
+
+treatment:
+  medical:
+    - 治療潛在病因
+    - 脫水患者補充等張或低張性輸液
+    - 代謝性酸中毒：Sodium bicarbonate 1-2 mEq/kg IV
+    - 停止高張性鹽水輸液
+
+prognosis:
+  general: "預後良好，多數病例為脫水或輸液相關，經矯正後可恢復。腎小管性酸中毒需長期管理。"
+
+prevention:
+  - 避免過量高張性鹽水輸液
+  - 脫水患者監測電解質
+  - 慢性腎臟病患者定期電解質檢查

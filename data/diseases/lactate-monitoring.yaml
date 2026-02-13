@@ -1,0 +1,57 @@
+slug: lactate-monitoring
+nameEn: Lactate Monitoring
+nameZh: 乳酸監測
+bodySystem: emergency
+description: 監測組織灌流及氧合狀態。乳酸升高提示組織缺氧或代謝異常,為預後指標。
+
+aliases:
+  - { alias: 乳酸檢測, language: zh }
+  - { alias: Lactate Measurement, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 休克、胃扭轉常用
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 同犬
+
+etiology:
+  categories:
+    - name: 乳酸升高原因
+      examples:
+        - 休克、胃扭轉、敗血症、癲癇、肝衰竭
+
+clinicalSigns:
+  early:
+    - 乳酸2.5-5 mmol/L:輕度升高
+    - 休克徵兆
+  progressive:
+    - 乳酸>5 mmol/L:嚴重組織缺氧
+
+diagnosis:
+  primaryTests:
+    - name: 血液乳酸
+      notes: "正常<2.5 mmol/L,>5 mmol/L預後不良"
+    - name: 連續監測
+      notes: "評估復甦效果,乳酸下降為佳"
+  differentialDiagnoses:
+    - 無
+
+treatment:
+  medical:
+    - 治療根本病因
+    - 改善組織灌流:
+      - 靜脈輸液復甦
+      - 升壓劑(若需要)
+      - 改善氧合
+    - 連續監測乳酸變化
+    - 乳酸清除率>10%/hr為佳
+
+prognosis:
+  general: "乳酸>5 mmol/L死亡率增加。乳酸下降提示復甦成功。"
+
+prevention:
+  - 及早辨識並治療休克

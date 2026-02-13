@@ -1,0 +1,76 @@
+slug: ascites-differential-diagnosis
+nameEn: Ascites Differential Diagnosis
+nameZh: 腹水鑑別診斷
+bodySystem: gastrointestinal
+description: 腹腔積液的系統性鑑別診斷,需依積液性質 (滲出液或漏出液) 及原發病因分類。常見原因包含心衰竭、肝病、低蛋白血症及腹膜炎。
+
+aliases:
+  - { alias: 腹水鑑別, language: zh }
+  - { alias: Abdominal Effusion Differential, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 常見原因包含心衰竭、肝病、腫瘤
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 常見原因包含 FIP、心衰竭、腫瘤
+
+etiology:
+  categories:
+    - name: 純漏出液 (蛋白 < 2.5 g/dL)
+      examples:
+        - 低蛋白血症、門脈高壓
+    - name: 改良漏出液 (蛋白 2.5-5 g/dL)
+      examples:
+        - 右心衰竭、肝病、腫瘤
+    - name: 滲出液 (蛋白 > 3 g/dL)
+      examples:
+        - FIP、腹膜炎、腫瘤
+    - name: 血性
+      examples:
+        - 腫瘤破裂、凝血障礙、創傷
+    - name: 尿性
+      examples:
+        - 膀胱或輸尿管破裂
+    - name: 膽汁性
+      examples:
+        - 膽囊或膽管破裂
+
+clinicalSigns:
+  early:
+    - 腹圍增大
+    - 體重增加
+  progressive:
+    - 腹部膨脹
+    - 呼吸困難
+    - 食慾下降
+
+diagnosis:
+  primaryTests:
+    - name: 腹水穿刺分析
+      notes: "蛋白、細胞計數、細胞學"
+    - name: 血液檢查
+      notes: "白蛋白、球蛋白、肝腎功能"
+    - name: 腹部超音波
+      notes: "評估肝臟、心臟、腫瘤"
+    - name: 心臟超音波
+      notes: "評估右心功能"
+  differentialDiagnoses:
+    - 依積液性質及原發病因分類
+
+treatment:
+  medical:
+    - 治療原發病因
+    - 腹水引流 (症狀性)
+    - 利尿劑 (若為心因性或肝因性)
+    - 低鈉飲食
+
+prognosis:
+  general: "取決於原發病因;心衰竭或低蛋白血症若能控制預後較佳;FIP 或惡性腫瘤預後不良"
+
+prevention:
+  - 早期診斷及治療心臟疾病、肝病
+  - 適當營養管理

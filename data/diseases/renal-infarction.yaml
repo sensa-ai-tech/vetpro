@@ -1,0 +1,82 @@
+slug: renal-infarction
+nameEn: Renal Infarction
+nameZh: 腎梗塞
+bodySystem: urinary
+description: 腎梗塞是腎動脈或其分支血流中斷導致的腎組織缺血性壞死。通常由血栓栓塞引起，可為局灶性或彌漫性，是多種全身性疾病的併發症。
+
+aliases:
+  - { alias: 腎臟梗塞, language: zh }
+  - { alias: 腎動脈栓塞, language: zh }
+  - { alias: Renal Thromboembolism, language: en }
+  - { alias: Kidney Infarction, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬腎梗塞多與高凝狀態相關，如蛋白喪失性腎病、腎上腺皮質功能亢進、免疫介導溶血性貧血等。常為屍檢偶然發現。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓腎梗塞可與心臟病相關的動脈血栓栓塞 (ATE) 同時發生，但以後肢動脈栓塞更常見。
+
+etiology:
+  categories:
+    - name: 血栓栓塞來源
+      examples:
+        - 心源性（心臟腫瘤、感染性心內膜炎、心肌病）
+        - 全身性高凝狀態（蛋白喪失性腎病、Cushing's）
+        - 腫瘤相關高凝狀態
+        - 免疫介導疾病（IMHA）
+    - name: 其他原因
+      examples:
+        - 腎動脈損傷或創傷
+        - 手術中血管夾傷
+        - DIC
+        - 腎動脈纖維肌性發育不良
+
+clinicalSigns:
+  early:
+    - 急性腹部疼痛（腎區）
+    - 嘔吐
+    - 血尿
+    - 發燒
+  progressive:
+    - 持續性腎區疼痛
+    - 急性腎損傷（單側或雙側）
+    - 少尿或無尿（雙側大面積梗塞時）
+    - 高血壓（腎素-血管緊張素系統活化）
+    - 蛋白尿
+
+diagnosis:
+  primaryTests:
+    - name: 腹部超音波（含都卜勒）
+      notes: "受影響腎區回音性改變（急性期低回音，慢性期高回音萎縮）。彩色都卜勒可顯示血流缺損區域。腎臟大小不對稱。"
+    - name: 血液檢查
+      notes: "BUN/Creatinine 升高（雙側或單側嚴重梗塞時）。LDH 升高。凝血功能評估。尋找潛在高凝狀態（尿蛋白/肌酐比、抗凝血酶 III）。"
+  differentialDiagnoses:
+    - 急性腎盂腎炎
+    - 腎臟腫瘤
+    - 腎臟創傷
+    - 輸尿管阻塞
+
+treatment:
+  medical:
+    - 抗凝血治療：Unfractionated heparin 200-300 IU/kg SC q6-8h 或 Low molecular weight heparin (dalteparin 150 IU/kg SC q8-12h)
+    - 長期抗血栓：Clopidogrel 1-2 mg/kg PO q24h
+    - 止痛（opioid 類止痛劑）
+    - 靜脈輸液支持
+    - 高血壓管理（amlodipine 0.1-0.25 mg/kg PO q24h）
+    - 治療潛在高凝狀態病因
+  surgical:
+    - 急性大血管栓塞理論上可手術取栓但實際應用極有限
+    - 嚴重損傷的腎臟可考慮腎切除（對側功能正常時）
+
+prognosis:
+  general: "預後取決於梗塞範圍與潛在病因。單側局灶性梗塞預後良好，對側腎臟可代償。雙側大面積梗塞或潛在病因無法控制者預後不良。需長期抗血栓治療預防復發。"
+
+prevention:
+  - 高凝狀態疾病的積極管理
+  - 蛋白喪失性腎病患者預防性抗血栓治療
+  - 心臟病患者的抗血栓策略
+  - 定期監測凝血功能

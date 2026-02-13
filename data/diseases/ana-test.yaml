@@ -1,0 +1,55 @@
+slug: ana-test
+nameEn: ANA Test
+nameZh: 抗核抗體檢測
+bodySystem: other
+description: 抗核抗體(ANA)檢測用於診斷自體免疫疾病。陽性提示系統性紅斑狼瘡(SLE)或其他自體免疫病可能,需結合臨床症狀及其他檢查綜合判斷。
+
+aliases:
+  - { alias: 抗核抗體, language: zh }
+  - { alias: Antinuclear antibody test, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: SLE及多系統免疫疾病診斷
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓自體免疫疾病罕見
+
+etiology:
+  categories:
+    - name: 相關疾病
+      examples:
+        - 系統性紅斑狼瘡(SLE)
+        - 免疫溶血性貧血
+        - 免疫血小板減少症
+        - 多發性關節炎
+
+clinicalSigns:
+  early:
+    - ANA為診斷工具
+  progressive:
+    - 多系統症狀:皮膚、關節、腎臟
+
+diagnosis:
+  primaryTests:
+    - name: ANA陽性
+      notes: "力價≥1:40或1:80陽性"
+    - name: SLE診斷
+      notes: "需符合多項臨床及實驗室標準"
+  differentialDiagnoses:
+    - 系統性紅斑狼瘡
+    - 其他自體免疫疾病
+
+treatment:
+  medical:
+    - ANA為診斷工具
+
+prognosis:
+  general: "ANA陽性需結合臨床症狀判斷,健康動物也可能陽性。"
+
+prevention:
+  - 血清採集
+  - 結合臨床症狀及其他檢查判斷

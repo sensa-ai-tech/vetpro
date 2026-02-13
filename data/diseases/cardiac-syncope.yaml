@@ -1,0 +1,74 @@
+slug: cardiac-syncope
+nameEn: Cardiac Syncope
+nameZh: 心因性暈厥
+bodySystem: cardiac
+description: 因心律不整、心輸出量驟降或血流阻塞導致腦部短暫缺血而突然失去意識。與神經性或血管性暈厥不同，心因性暈厥具潛在致命性。
+
+aliases:
+  - { alias: 心源性昏厥, language: zh }
+  - { alias: Cardiogenic Syncope, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 常見於擴張型心肌病變、主動脈瓣下狹窄、嚴重心律不整
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 罕見，多因肥厚型心肌病變或動脈血栓
+
+etiology:
+  categories:
+    - name: 心律不整
+      examples:
+        - 心室性心搏過速
+        - 心房顫動
+        - 房室傳導阻滯
+    - name: 阻塞性病變
+      examples:
+        - 主動脈瓣下狹窄
+        - 肥厚型心肌病變
+    - name: 心輸出量降低
+      examples:
+        - 擴張型心肌病變
+        - 心包填塞
+
+clinicalSigns:
+  early:
+    - 運動時虛弱
+    - 短暫後肢無力
+  progressive:
+    - 突然失去意識
+    - 倒地
+    - 可能伴隨抽搐
+    - 快速恢復意識 (數秒至數分鐘)
+
+diagnosis:
+  primaryTests:
+    - name: 心電圖
+      notes: "評估心律不整"
+    - name: 24 小時 Holter 監測
+      notes: "捕捉間歇性心律不整"
+    - name: 心臟超音波
+      notes: "評估結構性心臟病、心輸出量"
+  differentialDiagnoses:
+    - 癲癇
+    - 血管迷走性暈厥
+    - 低血糖
+    - 呼吸道阻塞
+
+treatment:
+  medical:
+    - 治療原發心律不整 (抗心律不整藥物)
+    - Atenolol 0.25-1 mg/kg PO q12-24h (室上性心搏過速)
+    - Mexiletine 5-8 mg/kg PO q8h (心室性心律不整)
+    - Pacemaker (嚴重傳導阻滯)
+
+prognosis:
+  general: "取決於原發病因；心律不整若能藥物控制預後尚可；嚴重結構性心臟病或惡性心律不整預後不良，有猝死風險"
+
+prevention:
+  - 高風險品種定期心臟檢查
+  - 避免劇烈運動 (主動脈瓣下狹窄)
+  - 早期診斷及治療心臟疾病

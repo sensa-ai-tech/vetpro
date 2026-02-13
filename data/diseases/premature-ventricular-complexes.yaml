@@ -1,0 +1,79 @@
+slug: premature-ventricular-complexes
+nameEn: Premature Ventricular Complexes
+nameZh: 心室早期收縮
+bodySystem: cardiac
+description: 心室異位起搏點提前發出電脈衝導致不規則心跳。可為良性或提示潛在心臟疾病、電解質異常或全身性疾病。
+
+aliases:
+  - { alias: 心室性期前收縮, language: zh }
+  - { alias: Ventricular Premature Contractions, language: en }
+  - { alias: VPCs, language: en }
+  - { alias: PVCs, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 常見於拳師犬 (ARVC)、杜賓犬 (DCM)、德國狼犬
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 多因心肌病變或全身性疾病
+
+etiology:
+  categories:
+    - name: 心臟疾病
+      examples:
+        - 擴張型心肌病變
+        - 心肌炎
+        - 心內膜炎
+    - name: 全身性疾病
+      examples:
+        - 脾臟腫瘤
+        - 胃擴張扭轉
+        - 敗血症
+    - name: 電解質異常
+      examples:
+        - 低血鉀
+        - 低血鎂
+
+clinicalSigns:
+  early:
+    - 心跳不規則
+    - 無明顯症狀
+  progressive:
+    - 虛弱
+    - 暈厥
+    - 運動不耐
+    - 猝死 (嚴重時)
+
+diagnosis:
+  primaryTests:
+    - name: 心電圖
+      notes: "確認 VPCs 頻率、形態 (單形或多形)、R-on-T 現象"
+    - name: 24 小時 Holter 監測
+      notes: "評估 VPC 負荷量 (> 300-500/24h 需治療)"
+    - name: 心臟超音波
+      notes: "排除結構性心臟病"
+    - name: 血液檢查
+      notes: "電解質、troponin I"
+  differentialDiagnoses:
+    - 竇性心律不整
+    - 心房早期收縮
+    - 房室傳導阻滯
+
+treatment:
+  medical:
+    - 治療原發病因
+    - Sotalol 1-3 mg/kg PO q12h (頻繁或有症狀 VPCs)
+    - Mexiletine 5-8 mg/kg PO q8h
+    - 電解質補充 (低血鉀)
+    - 緊急情況: Lidocaine 2-4 mg/kg IV bolus
+
+prognosis:
+  general: "取決於原發病因及 VPC 嚴重度；良性 VPCs 預後良好；頻繁或多形 VPCs 提示嚴重疾病，預後謹慎"
+
+prevention:
+  - 高風險品種定期心臟篩檢
+  - 避免全身麻醉前未評估
+  - 早期診斷及治療心臟疾病

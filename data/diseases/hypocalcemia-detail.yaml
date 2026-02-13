@@ -1,0 +1,80 @@
+slug: hypocalcemia-detail
+nameEn: Hypocalcemia Detail
+nameZh: 低血鈣症（詳細）
+bodySystem: electrolyte
+description: 血清離子鈣濃度低於正常範圍（犬貓 <1.0 mmol/L 或 <4 mg/dL），可能因副甲狀腺功能低下、低白蛋白血症或急性胰臟炎引起。嚴重低血鈣可導致肌肉痙攣、癲癇及心律不整。
+
+aliases:
+  - { alias: 血鈣過低, language: zh }
+  - { alias: Hypocalcaemia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 常見於產後低血鈣症（小型犬）、急性胰臟炎或副甲狀腺切除術後
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓常因甲狀腺手術後醫源性副甲狀腺損傷引起
+
+etiology:
+  categories:
+    - name: 副甲狀腺功能低下
+      examples:
+        - 甲狀腺或副甲狀腺手術後
+        - 特發性副甲狀腺功能低下
+        - 低鎂血症（抑制 PTH 分泌）
+    - name: 低白蛋白血症（假性低血鈣）
+      examples:
+        - 肝臟疾病
+        - 腎病症候群
+        - 營養不良
+    - name: 急性疾病
+      examples:
+        - 產後低血鈣症（產乳熱）
+        - 急性胰臟炎
+        - 乙二醇中毒
+
+clinicalSigns:
+  early:
+    - 肌肉顫抖、過度興奮
+    - 焦慮不安、喘氣
+  progressive:
+    - 強直性肌肉痙攣、僵硬步態
+    - 癲癇發作、昏迷
+    - 體溫過高（產乳熱）
+    - 心律不整（QT 間期延長）
+
+diagnosis:
+  primaryTests:
+    - name: 血清離子鈣
+      notes: "離子鈣 <1.0 mmol/L（<4 mg/dL），需與總鈣及白蛋白一併評估"
+    - name: 副甲狀腺素（PTH）
+      notes: "低下或不當正常值提示副甲狀腺功能低下"
+    - name: 血清鎂、磷、白蛋白
+      notes: "評估電解質平衡及排除假性低血鈣"
+  differentialDiagnoses:
+    - 假性低血鈣（低白蛋白血症）
+    - 副甲狀腺功能低下
+    - 產乳熱
+    - 急性胰臟炎
+    - 乙二醇中毒
+
+treatment:
+  medical:
+    - 急性症狀（癲癇、強直）：
+      - 10% Calcium gluconate 0.5-1.5 mL/kg IV slowly over 10-30 min（監測心電圖）
+      - 持續輸液補充 10% Calcium gluconate 60-90 mg/kg/day
+    - 慢性維持：
+      - Oral calcium carbonate 25-50 mg/kg PO BID-TID
+      - Calcitriol 0.02-0.03 µg/kg PO SID（活性維生素 D）
+    - 治療潛在病因、補充鎂離子
+
+prognosis:
+  general: "預後取決於潛在病因。產乳熱或急性胰臟炎相關低血鈣經治療後預後良好，但副甲狀腺功能低下需終生補充鈣及維生素 D。嚴重低血鈣未及時治療可能致命。"
+
+prevention:
+  - 懷孕後期及泌乳期母犬補充鈣質（小型犬）
+  - 甲狀腺手術小心保護副甲狀腺
+  - 定期監測血鈣（高風險患者）

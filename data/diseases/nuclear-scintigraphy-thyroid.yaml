@@ -1,0 +1,64 @@
+slug: nuclear-scintigraphy-thyroid
+nameEn: Nuclear Scintigraphy Thyroid
+nameZh: 甲狀腺核醫掃描
+bodySystem: endocrine
+description: 甲狀腺核醫掃描使用放射性碘或鎝同位素評估甲狀腺功能及定位異常組織。為貓甲狀腺機能亢進診斷及碘131治療前評估的重要工具,可區分單側或雙側病變、異位組織。
+
+aliases:
+  - { alias: 甲狀腺閃爍攝影, language: zh }
+  - { alias: Thyroid scintigraphy, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬甲狀腺腫瘤評估用
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓甲狀腺機能亢進診斷及碘131治療前必要檢查
+
+etiology:
+  categories:
+    - name: 放射性同位素
+      examples:
+        - Tc-99m pertechnetate(最常用,便宜快速)
+        - I-123(更佳但昂貴)
+    - name: 檢查目的
+      examples:
+        - 確認甲狀腺機能亢進診斷
+        - 定位異常甲狀腺組織
+        - 區分單側或雙側病變
+        - 偵測異位甲狀腺組織或轉移
+
+clinicalSigns:
+  early:
+    - 核醫掃描為診斷工具,無侵入性
+  progressive:
+    - 對應甲狀腺疾病症狀(體重減輕、多食、過動)
+
+diagnosis:
+  primaryTests:
+    - name: 核醫掃描判讀
+      notes: "正常:雙側對稱甲狀腺攝取。亢進:單側或雙側攝取增強,抑制唾液腺攝取"
+    - name: 甲狀腺腫瘤評估
+      notes: "冷結節(低攝取)提示惡性腫瘤可能"
+    - name: 異位組織偵測
+      notes: "胸腔內異位甲狀腺組織"
+  differentialDiagnoses:
+    - 甲狀腺機能亢進(單側或雙側腺瘤)
+    - 甲狀腺癌(犬較常見)
+
+treatment:
+  medical:
+    - 核醫掃描為診斷工具
+    - 貓甲亢可用碘131治療(依掃描結果計算劑量)
+    - 單側病變可考慮手術切除
+
+prognosis:
+  general: "甲狀腺核醫掃描為功能性影像,提供解剖學及功能資訊。為碘131治療前必要評估。"
+
+prevention:
+  - 需專門核醫設施
+  - 輕度鎮靜或無鎮靜即可進行
+  - 與血液T4檢測互補使用

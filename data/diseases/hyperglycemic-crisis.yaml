@@ -1,0 +1,55 @@
+slug: hyperglycemic-crisis
+nameEn: Hyperglycemic Crisis
+nameZh: 高血糖危象
+bodySystem: emergency
+description: 嚴重高血糖(>600 mg/dL)伴脫水及電解質異常。包括DKA及HHS,需積極治療。
+
+aliases:
+  - { alias: 高血糖急症, language: zh }
+  - { alias: Severe Hyperglycemia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 未控制糖尿病
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: HHS較常見
+
+etiology:
+  categories:
+    - name: 原因
+      examples:
+        - 未診斷糖尿病、胰島素劑量不足、嚴重感染
+
+clinicalSigns:
+  early:
+    - 多尿、多渴
+    - 嘔吐、脫水
+  progressive:
+    - 昏迷、休克
+
+diagnosis:
+  primaryTests:
+    - name: 血糖
+      notes: ">600 mg/dL"
+    - name: 滲透壓
+      notes: "HHS: >350 mOsm/kg"
+  differentialDiagnoses:
+    - DKA
+
+treatment:
+  medical:
+    - 積極靜脈輸液
+    - 胰島素治療
+    - 電解質校正
+    - 緩慢降低血糖(避免腦水腫)
+    - 治療併發症
+
+prognosis:
+  general: "HHS死亡率較DKA高。及時治療可改善。"
+
+prevention:
+  - 糖尿病規律治療

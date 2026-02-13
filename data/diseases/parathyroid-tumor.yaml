@@ -1,0 +1,83 @@
+slug: parathyroid-tumor
+nameEn: Parathyroid Tumor
+nameZh: 副甲狀腺腫瘤
+bodySystem: oncology
+description: 副甲狀腺腫瘤以腺瘤最常見，導致原發性副甲狀腺機能亢進症。過量副甲狀腺素分泌引起高鈣血症，可損害腎臟及其他器官。手術切除為標準治療。
+
+aliases:
+  - { alias: 副甲狀腺腺瘤, language: zh }
+  - { alias: 原發性副甲狀腺機能亢進, language: zh }
+  - { alias: Parathyroid Adenoma, language: en }
+  - { alias: Primary Hyperparathyroidism, language: en }
+  - { alias: PHPT, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 犬原發性副甲狀腺機能亢進症約 85-90% 由單一腺瘤引起。奇豪瓦犬、拉布拉多、德國牧羊犬有品種好發傾向。中老年犬好發。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓原發性副甲狀腺機能亢進症較少見，但隨診斷技術進步有增加趨勢。老年貓好發。
+
+etiology:
+  categories:
+    - name: 腫瘤類型
+      examples:
+        - 副甲狀腺腺瘤（85-90%，單一腺體）
+        - 副甲狀腺增生（多腺體）
+        - 副甲狀腺腺癌（<5%，極少見）
+    - name: 病理生理學
+      examples:
+        - PTH 過量分泌導致持續性高鈣血症
+        - 促進骨骼鈣釋放及腸道鈣吸收
+        - 增加腎臟鈣重吸收
+        - 長期高鈣血症損害腎臟
+
+clinicalSigns:
+  early:
+    - 多飲多尿
+    - 食慾下降
+    - 嗜睡
+  progressive:
+    - 肌肉無力
+    - 嘔吐
+    - 便秘
+    - 泌尿道結石（鈣質結石）
+    - 腎臟鈣化
+    - 腎功能衰退
+    - 骨骼脫礦化
+
+diagnosis:
+  primaryTests:
+    - name: 血清鈣及離子鈣
+      notes: "持續性高鈣血症（離子鈣 >1.4 mmol/L）為診斷基礎"
+    - name: PTH 測量
+      notes: "不當升高的 PTH 值（高鈣血症時 PTH 應被抑制）。PTH 正常高值伴高鈣血症即具診斷意義"
+    - name: 頸部超音波
+      notes: "可偵測腫大的副甲狀腺結節（正常副甲狀腺超音波不可見）"
+  differentialDiagnoses:
+    - 惡性腫瘤相關高鈣血症（淋巴瘤、肛門囊腺癌）
+    - 維生素 D 中毒
+    - 腎性繼發性副甲狀腺機能亢進
+    - Addison 病
+    - 肉芽腫性疾病
+
+treatment:
+  surgical:
+    - 受累副甲狀腺切除為標準治療
+    - 超音波引導經皮熱消融術 (RFA) 為微創替代方案
+    - 超音波引導乙醇注射為另一微創選項
+  medical:
+    - 術前高鈣血症急性處理（生理食鹽水輸液、Furosemide）
+    - 術後監測低鈣血症（對側副甲狀腺萎縮期間）
+    - "術後低鈣血症治療：Calcitriol 及口服鈣補充"
+    - 維生素 D 補充（短期）
+
+prognosis:
+  general: "手術切除後預後極佳，治癒率 >90%。術後需密切監測血鈣 5-7 天（低鈣血症風險）。腺癌罕見但預後較差。腎功能損傷可能不可逆。"
+
+prevention:
+  - 偶然發現高鈣血症應進一步檢查副甲狀腺
+  - 反覆性泌尿道結石應評估鈣代謝

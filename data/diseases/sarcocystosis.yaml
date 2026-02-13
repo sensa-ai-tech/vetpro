@@ -1,0 +1,91 @@
+slug: sarcocystosis
+nameEn: Sarcocystosis
+nameZh: 住肉孢子蟲病
+bodySystem: infectious
+description: 由Sarcocystis屬原蟲引起的人畜共通寄生蟲病,犬貓通常為終宿主排出孢囊,臨床症狀輕微。草食動物為中間宿主,肌肉組織中形成包囊。
+
+aliases:
+  - { alias: 肉孢子蟲病, language: zh }
+  - { alias: 住囊蟲病, language: zh }
+  - { alias: Sarcocystis Infection, language: en }
+  - { alias: Sarcosporidiosis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 多數無症狀,攝食生肉後糞便排出孢囊,盛行率可達30-60%
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓較犬少見,攝食齧齒類或鳥類後感染
+
+etiology:
+  categories:
+    - name: 犬相關蟲種
+      examples:
+        - Sarcocystis cruzi (牛為中間宿主)
+        - Sarcocystis tenella (羊為中間宿主)
+        - Sarcocystis miescheriana (豬為中間宿主)
+    - name: 貓相關蟲種
+      examples:
+        - Sarcocystis muris (鼠為中間宿主)
+        - Sarcocystis neurona (可能引起馬EPM)
+    - name: 感染途徑
+      examples:
+        - 攝食含包囊的生肉或內臟
+        - 包囊在腸道釋放孢子,完成有性生殖,排出孢囊
+
+clinicalSigns:
+  early:
+    - 多數無臨床症狀
+    - 輕度腹瀉或軟便(攝食後1-2週)
+    - 輕微嘔吐
+    - 食慾略減
+  progressive:
+    - 罕見嚴重症狀
+    - 大量感染可能造成出血性腸炎
+    - 體重減輕(慢性感染)
+    - 免疫抑制個體可能播散性感染(極罕見)
+
+diagnosis:
+  primaryTests:
+    - name: 糞便檢查
+      notes: "飽和鹽水浮游法見孢囊(12-20 μm),類似Isospora但較大"
+    - name: 糞便PCR
+      notes: "可鑑定蟲種,區分Sarcocystis與Toxoplasma/Neospora"
+    - name: 組織切片
+      notes: "肌肉切片見包囊(中間宿主),PAS染色陽性"
+    - name: 血清學
+      notes: "臨床應用有限,主要用於流行病學調查"
+  differentialDiagnoses:
+    - Cystoisospora(Isospora)感染
+    - Toxoplasma gondii
+    - Neospora caninum(犬)
+    - 細菌性或病毒性腸炎
+    - 食物不耐受
+
+treatment:
+  medical:
+    - 多數無需治療,自限性疾病
+    - 症狀性治療:
+      - 止瀉藥(Metronidazole 10-15 mg/kg PO q12h,5-7天)
+      - 腸道保護劑(Kaolin/Pectin)
+    - 嚴重病例:
+      - Trimethoprim-sulfadiazine 15-30 mg/kg PO q12h,7-10天
+      - Ponazuril 20 mg/kg PO q24h,3-5天
+    - 支持療法:輸液,電解質補充
+  prevention:
+    - 避免餵食生肉或未煮熟肉類
+    - 冷凍肉品(-20°C,24小時以上)可殺死包囊
+    - 糞便及時清理,避免污染環境
+
+prognosis:
+  general: "預後極佳,絕大多數自然痊癒,無長期後遺症。孢囊排出持續1-2週後自然停止。健康犬貓無需治療,症狀性支持即可。重複感染不會引起免疫,但也不會造成嚴重疾病。人畜共通風險低,主要公共衛生考量為避免污染草食動物飼料。"
+
+prevention:
+  - 不餵食生肉,特別是牛羊豬內臟
+  - 商業寵物食品冷凍或加熱處理
+  - 糞便衛生管理,避免污染畜牧環境
+  - 獵犬避免攝食野生動物內臟
+  - 定期糞檢,特別是自製鮮食犬貓

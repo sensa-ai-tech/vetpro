@@ -1,0 +1,75 @@
+slug: hyponatremia-detail
+nameEn: Hyponatremia Detail
+nameZh: 低血鈉症（詳細）
+bodySystem: electrolyte
+description: 血清鈉離子濃度低於正常範圍（犬貓 <140 mEq/L），可能因水過量、鈉流失或稀釋性低血鈉引起。嚴重低血鈉可導致腦水腫、癲癇及昏迷。
+
+aliases:
+  - { alias: 血鈉過低, language: zh }
+  - { alias: Hyponatraemia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 常見於愛迪生氏症、腸胃道流失或心臟衰竭
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓常因腸胃道疾病或低腎上腺皮質功能引起
+
+etiology:
+  categories:
+    - name: 低容積性低血鈉（鈉流失 > 水流失）
+      examples:
+        - 愛迪生氏症
+        - 腸胃道流失（嘔吐、腹瀉）
+        - 利尿劑過量
+    - name: 高容積性低血鈉（水滯留）
+      examples:
+        - 充血性心臟衰竭
+        - 腎病症候群
+        - 肝硬化腹水
+    - name: 正常容積性低血鈉（水過量）
+      examples:
+        - 抗利尿激素分泌異常（SIADH）
+        - 心因性多渴
+
+clinicalSigns:
+  early:
+    - 輕度嗜睡、食慾減退
+    - 肌肉無力
+  progressive:
+    - 嚴重神經症狀：共濟失調、癲癇、昏迷
+    - 腦水腫（急性低血鈉）
+    - 休克、低血壓
+
+diagnosis:
+  primaryTests:
+    - name: 血清電解質
+      notes: "Na <140 mEq/L（輕度 130-140, 中度 120-130, 嚴重 <120）"
+    - name: 血清滲透壓
+      notes: "評估真性或假性低血鈉（高血糖、高血脂）"
+    - name: 尿鈉濃度及尿滲透壓
+      notes: "鑑別腎性或腎外鈉流失"
+  differentialDiagnoses:
+    - 假性低血鈉（高血糖、高血脂）
+    - 愛迪生氏症
+    - 充血性心臟衰竭
+    - SIADH
+
+treatment:
+  medical:
+    - 治療潛在病因（補充腎上腺皮質素、控制心衰竭）
+    - 低容積性：0.9% NaCl 靜脈輸液補充
+    - 高容積性：限制水分攝取、利尿劑
+    - 慢性低血鈉：緩慢補充鈉（<0.5 mEq/L/hr），避免滲透性脫髓鞘症候群
+    - 嚴重症狀性低血鈉：3% Hypertonic saline 1-2 mL/kg IV slowly
+
+prognosis:
+  general: "預後取決於潛在病因及矯正速度。慢性低血鈉經緩慢矯正預後良好，但急性嚴重低血鈉（<115 mEq/L）可能導致永久性腦損傷。過快矯正鈉濃度可引發滲透性脫髓鞘症候群。"
+
+prevention:
+  - 愛迪生氏症患者定期監測電解質
+  - 腸胃道疾病早期補充電解質
+  - 避免過度飲水或靜脈輸液

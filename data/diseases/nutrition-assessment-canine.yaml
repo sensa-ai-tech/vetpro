@@ -1,0 +1,68 @@
+slug: nutrition-assessment-canine
+nameEn: Nutrition Assessment Canine
+nameZh: 犬營養評估
+bodySystem: metabolic
+description: 犬隻的綜合營養狀態評估,包括體態評分、肌肉狀況評分、飲食史分析及營養需求計算。正確的營養評估為制定個別化飲食計畫的基礎,對健康維持及疾病管理至關重要。
+
+aliases:
+  - { alias: 犬營養狀態評估, language: zh }
+  - { alias: Canine nutritional assessment, language: en }
+  - { alias: Dog nutrition evaluation, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 所有犬隻都應接受定期營養評估,特別是幼犬、老年犬及疾病個體
+
+etiology:
+  categories:
+    - name: 評估項目
+      examples:
+        - 體態評分(BCS, Body Condition Score 1-9分)
+        - 肌肉狀況評分(MCS, Muscle Condition Score)
+        - 飲食史及飲食習慣
+        - 熱量需求計算(RER及DER)
+        - 特殊營養需求評估
+
+clinicalSigns:
+  early:
+    - 理想體態:可觸摸到肋骨但不明顯可見,腰線明顯
+    - 正常肌肉量:脊椎及骨盆骨骼不突出
+  progressive:
+    - 過瘦:肋骨、脊椎明顯可見(BCS 1-3)
+    - 過重:肋骨難以觸摸,無腰線(BCS 7-9)
+    - 肌肉流失:脊椎及骨盆骨骼突出
+
+diagnosis:
+  primaryTests:
+    - name: 體態評分(BCS)
+      notes: "1-9分制,理想為4-5分。評估肋骨、腰線、腹部輪廓"
+    - name: 肌肉狀況評分(MCS)
+      notes: "評估顳肌、肩胛、脊椎、骨盆肌肉量,分為正常/輕度/中度/重度流失"
+    - name: 飲食史問診
+      notes: "飼料品牌、每日餵食量、零食、餐次、食慾變化"
+    - name: 熱量需求計算
+      notes: "RER(靜息能量需求)=70×(體重kg)^0.75,DER依活動量及生理狀態調整"
+  differentialDiagnoses:
+    - 肥胖
+    - 營養不良
+    - 肌肉萎縮性疾病
+
+treatment:
+  medical:
+    - 理想體態維持:DER=1.6×RER(成犬)
+    - 減重計畫:1.0-1.2×RER,目標每週減輕1-2%體重
+    - 增重計畫:1.2-1.8×RER,增加餵食頻率
+    - 老年犬:高品質蛋白質,控制熱量避免肥胖
+    - 生長期幼犬:2-3×RER,幼犬專用飼料
+
+prognosis:
+  general: "正確的營養評估及調整可有效管理體重、支持生長發育及疾病治療,改善生活品質及壽命。"
+
+prevention:
+  - 每次就診進行BCS及MCS評估
+  - 定期記錄體重變化趨勢
+  - 依生命階段及活動量調整飲食
+  - 避免過度餵食零食(應<每日熱量10%)
+  - 幼犬及老年犬更頻繁評估

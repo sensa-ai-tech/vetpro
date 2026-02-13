@@ -1,0 +1,57 @@
+slug: acth-stimulation-test
+nameEn: ACTH Stimulation Test
+nameZh: ACTH刺激試驗
+bodySystem: other
+description: ACTH刺激試驗為評估腎上腺皮質儲備功能的標準檢查。給予合成ACTH後測量皮質醇反應,診斷愛迪生氏症、監測庫欣氏症治療、評估醫源性腎上腺抑制。
+
+aliases:
+  - { alias: ACTH刺激測試, language: zh }
+  - { alias: ACTH stimulation test, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 愛迪生氏症診斷、庫欣治療監測
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓很少使用此檢查
+
+etiology:
+  categories:
+    - name: 檢查適應症
+      examples:
+        - 愛迪生氏症診斷
+        - 庫欣氏症trilostane治療監測
+        - 醫源性腎上腺抑制評估
+
+clinicalSigns:
+  early:
+    - ACTH刺激試驗為診斷工具
+  progressive:
+    - 愛迪生症狀或庫欣治療中
+
+diagnosis:
+  primaryTests:
+    - name: 試驗流程
+      notes: "基礎皮質醇採血→IM或IV注射ACTH→1小時後採血測皮質醇"
+    - name: 愛迪生氏症
+      notes: "刺激後皮質醇<2 μg/dL診斷愛迪生"
+    - name: 庫欣治療監測
+      notes: "刺激後皮質醇1.45-5.4 μg/dL為理想治療範圍"
+  differentialDiagnoses:
+    - 愛迪生氏症
+    - 過度治療庫欣(醫源性愛迪生)
+
+treatment:
+  medical:
+    - ACTH刺激試驗為診斷及監測工具
+
+prognosis:
+  general: "ACTH刺激試驗為腎上腺功能評估黃金標準。"
+
+prevention:
+  - 使用合成ACTH(cosyntropin)
+  - 犬5 μg/kg IV或IM(最高250 μg)
+  - 正確時間採血(1小時)

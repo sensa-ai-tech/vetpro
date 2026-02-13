@@ -1,0 +1,88 @@
+slug: sedation-protocols
+nameEn: Sedation Protocols
+nameZh: 鎮靜方案
+bodySystem: emergency
+description: 使用藥物誘導可逆性意識降低和肌肉放鬆狀態,用於影像檢查、小型處置、緊張動物保定等。需達到足夠鎮靜深度同時維持呼吸和循環功能穩定。
+
+aliases:
+  - { alias: 鎮靜麻醉方案, language: zh }
+  - { alias: 化學保定, language: zh }
+  - { alias: Chemical Restraint, language: en }
+  - { alias: Conscious Sedation, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 需根據個性、品種和操作類型選擇方案,短鼻犬種需避免深度鎮靜
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓對Alpha-2促效劑反應良好,但心血管抑制較明顯,需監測血壓
+
+etiology:
+  categories:
+    - name: 輕度鎮靜(影像檢查、理學檢查)
+      examples:
+        - Acepromazine 0.01-0.03 mg/kg IM/IV
+        - Dexmedetomidine 5-10 μg/kg IM + Butorphanol 0.2 mg/kg IM
+        - Gabapentin 10-20 mg/kg PO術前2小時(貓特別有效)
+    - name: 中度鎮靜(超音波、小型手術縫合)
+      examples:
+        - Dexmedetomidine 10-15 μg/kg IM + Hydromorphone 0.05-0.1 mg/kg IM
+        - Acepromazine 0.02 mg/kg + Morphine 0.3 mg/kg IM
+        - Alfaxalone 2-3 mg/kg IM(貓)
+    - name: 深度鎮靜(牙科X光、骨髓採樣)
+      examples:
+        - Dexmedetomidine 15-20 μg/kg IM + Ketamine 5 mg/kg IM
+        - Propofol 4-6 mg/kg IV緩慢推注
+        - Alfaxalone 1-2 mg/kg IV + Midazolam 0.2 mg/kg IV
+
+clinicalSigns:
+  early:
+    - 輕度鎮靜:患者安靜但可喚醒,輕度共濟失調
+    - 中度鎮靜:側臥休息,對刺激反應遲鈍,吞嚥反射存在
+    - 深度鎮靜:不易喚醒,肌肉完全放鬆,可能需呼吸道支持
+  progressive:
+    - 鎮靜效果持續20分鐘至數小時(依藥物種類)
+    - 恢復期可能出現躁動或體溫過低
+    - 使用逆轉劑可快速恢復清醒
+
+diagnosis:
+  primaryTests:
+    - name: 意識評估
+      notes: "測試對聲音、觸摸、疼痛刺激的反應"
+    - name: 呼吸功能監測
+      notes: "呼吸頻率、節律、SpO2持續監測"
+    - name: 心血管監測
+      notes: "心率、血壓、黏膜顏色、CRT評估"
+    - name: 體溫監測
+      notes: "Alpha-2促效劑可能引起低體溫"
+  differentialDiagnoses:
+    - 鎮靜不足(劑量不足或代謝過快)
+    - 鎮靜過深(呼吸抑制、低血壓風險)
+    - 異常反應(興奮性反應,尤其貓對Ketamine)
+
+treatment:
+  medical:
+    - "犬標準方案:Dexmedetomidine 10 μg/kg + Butorphanol 0.3 mg/kg IM"
+    - "貓標準方案:Dexmedetomidine 10-15 μg/kg + Butorphanol 0.2 mg/kg IM"
+    - "短效深度鎮靜:Propofol 4-6 mg/kg IV,可重複給予1-2 mg/kg維持"
+    - "貓友善方案:Alfaxalone 3-5 mg/kg IM,20-30分鐘起效"
+    - "緊急逆轉Alpha-2:Atipamezole(劑量為Dexmedetomidine的5-10倍)IM"
+    - "逆轉Benzodiazepine:Flumazenil 0.01-0.02 mg/kg IV"
+    - "逆轉阿片類:Naloxone 0.04 mg/kg IV(但會同時逆轉鎮痛效果)"
+    - "配合氧氣供應:流鼻導管或面罩100% O2,流速100-200 ml/kg/min"
+
+prognosis:
+  general: "大多數健康動物耐受良好,鎮靜相關嚴重併發症罕見(<1%)。最常見副作用為嘔吐(10-15%,尤其阿片類藥物)、低血壓(Alpha-2促效劑,20-30%)、體溫過低(長時間鎮靜)。老年患者或心肺疾病動物需降低劑量並加強監測。使用逆轉劑可快速恢復,但需監測再鎮靜現象(逆轉劑代謝快於原藥物)。"
+
+prevention:
+  - 術前禁食4-6小時(貓)或6-8小時(犬)減少嘔吐風險
+  - 術前評估心肺功能,高風險患者考慮降低劑量
+  - 提供安靜昏暗環境減少刺激
+  - 持續監測生命徵象直到患者完全恢復
+  - 保溫措施(加熱墊、毛毯)預防低體溫
+  - 準備急救設備(氧氣、氣管插管、靜脈導管)
+  - 準備逆轉劑(Atipamezole、Naloxone、Flumazenil)
+  - 鎮靜後至少監測2小時確認穩定後才釋放回家

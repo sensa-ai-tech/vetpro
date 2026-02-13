@@ -1,0 +1,76 @@
+slug: fluid-therapy-replacement
+nameEn: Fluid Therapy Replacement
+nameZh: 補充性輸液治療
+bodySystem: electrolyte
+description: 補充已流失的體液及電解質,用於脫水患者。計算公式為脫水補充量 = 體重(kg) × 脫水百分比(%) × 1000 mL,通常於24小時內補足。
+
+aliases:
+  - { alias: 脫水矯正輸液, language: zh }
+  - { alias: Rehydration Therapy, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 常見於腸胃道疾病、熱衰竭或多尿疾病
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓常因慢性腎臟病、糖尿病或厭食導致脫水
+
+etiology:
+  categories:
+    - name: 腸胃道流失
+      examples:
+        - 嘔吐、腹瀉
+        - 腸阻塞
+    - name: 腎臟流失
+      examples:
+        - 慢性腎臟病
+        - 糖尿病
+        - 尿崩症
+    - name: 其他流失
+      examples:
+        - 熱衰竭
+        - 燒燙傷
+        - 第三空間積液
+
+clinicalSigns:
+  early:
+    - 輕度脫水（5%）：皮膚彈性稍差
+    - 中度脫水（7-8%）：皮膚回彈延遲、黏膜略乾
+  progressive:
+    - 嚴重脫水（10-12%）：皮膚回彈明顯延遲、眼窩凹陷、黏膜乾燥、心搏過速
+    - 極重度脫水（>12%）：休克、意識改變、器官灌流不足
+
+diagnosis:
+  primaryTests:
+    - name: 脫水程度評估
+      notes: "皮膚彈性、黏膜濕潤度、眼窩飽滿度、心搏及血壓"
+    - name: 血球容積比（PCV）及血清總蛋白
+      notes: "脫水時 PCV 及 TP 升高"
+    - name: 血清電解質及腎功能
+      notes: "評估電解質失衡及腎前性氮血症"
+  differentialDiagnoses:
+    - 輕度脫水（5%）
+    - 中度脫水（7-8%）
+    - 嚴重脫水（10-12%）
+    - 休克狀態
+
+treatment:
+  medical:
+    - 脫水補充量計算：體重(kg) × 脫水%(例如0.08) × 1000 = mL
+    - 輸液速率：總量 ÷ 24小時 + 維持量 + 持續流失量
+    - 輸液類型：
+      - 等張晶體液（LRS, 0.9% NaCl）為首選
+      - 低張液用於高血鈉性脫水
+    - 電解質補充（依血檢結果）
+    - 監測脫水改善、尿量、體重、電解質
+
+prognosis:
+  general: "預後良好,多數脫水經適當補充性輸液後可恢復。嚴重脫水或合併電解質嚴重失衡需密切監測。過快補充可能導致過度水合或電解質紊亂。"
+
+prevention:
+  - 早期治療腸胃道或腎臟疾病
+  - 確保充足飲水供應
+  - 定期監測水合狀態（高風險患者）

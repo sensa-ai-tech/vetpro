@@ -1,0 +1,72 @@
+slug: wound-debridement
+nameEn: Wound Debridement
+nameZh: 傷口清創術
+bodySystem: other
+description: 移除壞死組織、異物及污染物以促進傷口癒合。包括手術清創、酵素清創、自體清創等方法。
+
+aliases:
+  - { alias: 清創手術, language: zh }
+  - { alias: Surgical debridement, language: en }
+  - { alias: 壞死組織移除, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 創傷、咬傷、壓瘡常需清創
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓咬傷、脫套傷常見
+
+etiology:
+  categories:
+    - name: 適應症
+      examples:
+        - 污染或感染傷口
+        - 壞死組織存在
+        - 異物嵌入
+    - name: 清創方法
+      examples:
+        - 手術清創(最快速有效)
+        - 濕敷清創
+        - 酵素清創(少用)
+
+clinicalSigns:
+  early:
+    - 傷口壞死組織、膿液或異物
+    - 惡臭、顏色變化
+    - 癒合停滯
+  progressive:
+    - 清創後肉芽組織生長
+    - 分泌物減少
+    - 傷口縮小
+
+diagnosis:
+  primaryTests:
+    - name: 傷口評估
+      notes: "範圍、深度、感染徵象"
+    - name: 組織培養
+      notes: "深部組織培養指引抗生素"
+    - name: 影像學
+      notes: "評估深層異物或骨髓炎"
+  differentialDiagnoses:
+    - 保守性濕敷治療
+    - 負壓傷口治療(NPWT)
+
+treatment:
+  medical:
+    - 鎮靜/麻醉:視範圍選擇局部或全身麻醉
+    - 清創:銳利移除所有壞死組織至健康出血組織
+    - 沖洗:大量無菌生理食鹽水(35 mL/kg壓力沖洗)
+    - 敷料:濕性敷料(如水膠體或藻酸鹽)
+    - 抗生素:Amoxicillin-Clavulanate 12.5-25 mg/kg PO q12h
+
+prognosis:
+  general: "適當清創大幅縮短癒合時間。可能需多次清創直至健康肉芽組織形成。感染控制及血液供應為癒合關鍵。"
+
+prevention:
+  - 早期清創(黃金6-8小時)
+  - 完整移除壞死組織避免殘留
+  - 適當抗生素覆蓋
+  - 定期換藥評估進展

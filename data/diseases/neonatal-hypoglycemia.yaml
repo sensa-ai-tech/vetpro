@@ -1,0 +1,88 @@
+slug: neonatal-hypoglycemia
+nameEn: Neonatal Hypoglycemia
+nameZh: 新生兒低血糖症
+bodySystem: metabolic
+description: 新生犬貓因肝醣儲存不足、糖質新生能力差，且能量需求高，容易發生血糖過低(<60 mg/dL)。可導致神經學損傷甚至死亡，需立即處理。
+
+aliases:
+  - { alias: 新生動物低血糖, language: zh }
+  - { alias: Neonatal Hypoglycemia, language: en }
+  - { alias: Puppy Hypoglycemia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 小型品種、早產兒、弱勢幼犬高風險
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 比犬少見但仍需注意
+
+etiology:
+  categories:
+    - name: 生理性原因
+      examples:
+        - 肝醣儲存量低
+        - 糖質新生能力不足
+        - 高代謝率
+        - 體溫調節耗能
+    - name: 攝食不足
+      examples:
+        - 母乳不足
+        - 吸乳能力差
+        - 與手足競爭失敗
+        - 唇顎裂
+    - name: 病理性原因
+      examples:
+        - 敗血症
+        - 低體溫
+        - 先天性代謝疾病
+        - 門脈分流
+
+clinicalSigns:
+  early:
+    - 虛弱、嗜睡
+    - 吸乳減少或拒食
+    - 顫抖、肌肉抽搐
+    - 低體溫
+  progressive:
+    - 癲癇發作
+    - 昏迷
+    - 呼吸抑制
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 血糖測量
+      notes: "正常值>60 mg/dL；<40 mg/dL為危急值"
+    - name: 生化檢查
+      notes: "評估肝腎功能"
+    - name: 先天性疾病篩檢
+      notes: "若反覆發作需考慮代謝性疾病"
+  differentialDiagnoses:
+    - 敗血症
+    - 低體溫症
+    - 先天性門脈分流
+    - 胰島素瘤(罕見)
+
+treatment:
+  medical:
+    - 即刻給予葡萄糖
+    - 意識清楚：5-10%葡萄糖溶液1-2 mL口服
+    - 昏迷或癲癇：25-50%葡萄糖0.5-1 mL/kg緩慢靜脈注射
+    - 持續輸液：2.5-5%葡萄糖靜脈滴注
+    - 每1-2小時監測血糖
+    - 保溫(維持體溫>35°C)
+    - 頻繁餵食(每2-4小時)
+    - 治療潛在疾病
+
+prognosis:
+  general: "早期發現並治療預後良好；若已發生癲癇或昏迷可能有永久性神經損傷"
+
+prevention:
+  - 確保充足初乳及頻繁餵食
+  - 監測弱勢幼犬並補充餵食
+  - 環境保溫減少能量消耗
+  - 每日體重監測
+  - 高風險個體預防性補充葡萄糖

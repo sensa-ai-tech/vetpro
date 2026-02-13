@@ -1,0 +1,70 @@
+slug: hammondia-infection
+nameEn: Hammondia Infection
+nameZh: 哈蒙原蟲感染
+bodySystem: infectious
+description: 由Hammondia屬原蟲引起的輕微腸道感染,犬貓為終宿主。臨床症狀罕見,主要透過糞便檢查發現孢囊,需與Toxoplasma區分。齧齒動物為中間宿主。
+
+aliases:
+  - { alias: 哈蒙蟲病, language: zh }
+  - { alias: Hammondia heydorni, language: zh }
+  - { alias: Hammondia hammondi, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: H. heydorni,攝食齧齒類或牛肉後感染,多無症狀
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: H. hammondi,形態類似Toxoplasma,但無人畜共通風險
+
+etiology:
+  categories:
+    - name: 病原體
+      examples:
+        - Hammondia heydorni (犬終宿主)
+        - Hammondia hammondi (貓終宿主)
+    - name: 生活史
+      examples:
+        - 攝食中間宿主(齧齒類、牛)組織包囊
+        - 腸道有性生殖,排出孢囊
+        - 孢囊形態與Toxoplasma幾乎相同
+
+clinicalSigns:
+  early:
+    - 絕大多數無臨床症狀
+    - 偶見輕微軟便
+  progressive:
+    - 無進展性症狀
+    - 不侵犯腸道外組織
+
+diagnosis:
+  primaryTests:
+    - name: 糞便檢查
+      notes: "飽和鹽水浮游法見孢囊(10-13 μm),形態與Toxoplasma無法區分"
+    - name: 糞便PCR
+      notes: "唯一可靠鑑別方法,區分Hammondia、Toxoplasma、Neospora"
+    - name: 生物試驗
+      notes: "研究用,Hammondia孢囊不感染小鼠,Toxoplasma可感染"
+  differentialDiagnoses:
+    - Toxoplasma gondii (貓)
+    - Neospora caninum (犬)
+    - Besnoitia darlingi
+    - Cystoisospora species
+
+treatment:
+  medical:
+    - 通常無需治療
+    - 若有症狀:Trimethoprim-sulfadiazine 15 mg/kg PO q12h,5-7天
+  prevention:
+    - 避免攝食生肉或齧齒類
+    - 糞便衛生管理
+
+prognosis:
+  general: "預後極佳,無臨床意義。主要重要性在於與Toxoplasma鑑別診斷,避免誤判人畜共通風險。孢囊排出1-2週後自然停止,無需治療。"
+
+prevention:
+  - 不餵食生肉
+  - 貓隻室內飼養,避免捕食齧齒類
+  - 糞便PCR確認蟲種,排除Toxoplasma風險

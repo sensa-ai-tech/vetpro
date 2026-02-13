@@ -1,0 +1,80 @@
+slug: cancer-staging-systems
+nameEn: Cancer Staging Systems
+nameZh: 腫瘤分期系統
+bodySystem: oncology
+description: 獸醫腫瘤學使用修正版 WHO TNM 分期系統及腫瘤特異性分期標準，評估腫瘤範圍、預測預後並指導治療決策。完整分期為所有腫瘤患畜的標準照護程序。
+
+aliases:
+  - { alias: 腫瘤 TNM 分期, language: zh }
+  - { alias: 癌症分期, language: zh }
+  - { alias: TNM Staging, language: en }
+  - { alias: Veterinary Cancer Staging, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬腫瘤分期系統已建立多種腫瘤特異性標準（淋巴瘤、肥大細胞瘤、乳腺腫瘤、口腔腫瘤等）。正確分期直接影響治療決策及預後評估。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓多數腫瘤亦採用修正版 WHO 分期系統。淋巴瘤分期對治療反應預測尤其重要。
+
+etiology:
+  categories:
+    - name: TNM 系統
+      examples:
+        - "T (Tumor)：原發腫瘤大小及局部侵犯程度"
+        - "N (Node)：區域淋巴結轉移狀態"
+        - "M (Metastasis)：遠端轉移有無"
+        - 各腫瘤類型有特定的 T、N、M 定義
+    - name: 腫瘤特異性分期
+      examples:
+        - "犬淋巴瘤：WHO 第 I-V 期 + a/b 臨床亞分期"
+        - "犬肥大細胞瘤：Patnaik (I-III) 或 Kiupel (high/low) 分級"
+        - "犬口腔黑色素瘤：WHO 第 I-IV 期（依腫瘤直徑）"
+        - "犬骨肉瘤：依 ALP 及腫瘤位置"
+
+clinicalSigns:
+  early:
+    - 依原發腫瘤類型及位置而異
+    - 可觸及的腫塊
+    - 非特異性全身症狀
+  progressive:
+    - 區域淋巴結腫大
+    - 體重減輕
+    - 呼吸症狀（肺轉移時）
+    - 全身性衰弱
+
+diagnosis:
+  primaryTests:
+    - name: 理學檢查
+      notes: "精確測量腫瘤大小。觸診所有可及淋巴結。完整體況評分"
+    - name: 影像學分期
+      notes: "胸腔 X 光三視圖（肺轉移篩檢）。腹部超音波（腹腔臟器及淋巴結）。CT 用於更精確的分期"
+    - name: 組織病理學
+      notes: "確認腫瘤類型及分級。組織學分級與臨床分期共同決定預後"
+    - name: 最小分期資料庫
+      notes: "CBC、生化、尿液分析。區域淋巴結 FNA（即使大小正常）。骨髓檢查（特定腫瘤類型）"
+  differentialDiagnoses:
+    - 感染性疾病
+    - 免疫介導性疾病
+    - 良性腫瘤
+    - 轉移性疾病
+
+treatment:
+  medical:
+    - 分期結果決定治療策略（根治性 vs 姑息性）
+    - 低分期疾病通常採積極根治性治療
+    - 高分期疾病可能更適合姑息性或合併治療
+    - 分期用於監測治療反應及偵測復發
+  surgical:
+    - 分期影響手術切除範圍決策
+    - 淋巴結轉移狀態決定是否需要淋巴結清除
+
+prognosis:
+  general: "分期為最重要的預後因子之一。早期（低分期）疾病預後通常優於晚期。組織學分級提供額外預後資訊。分期同時用於不同研究間的結果比較。"
+
+prevention:
+  - 所有確診腫瘤均應完成最低限度分期檢查
+  - 治療後定期追蹤分期以監測復發

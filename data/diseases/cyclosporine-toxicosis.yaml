@@ -1,0 +1,75 @@
+slug: cyclosporine-toxicosis
+nameEn: Cyclosporine Toxicosis
+nameZh: 環孢素中毒
+bodySystem: toxicology
+description: 環孢素為免疫抑制劑,用於治療免疫介導性疾病及角膜炎。過量或長期使用可能導致胃腸道反應、牙齦增生、腎毒性及感染風險增加。
+
+aliases:
+  - { alias: 環孢靈毒性, language: zh }
+  - { alias: Cyclosporine Toxicity, language: en }
+  - { alias: Atopica Overdose, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 常用於異位性皮膚炎及免疫性疾病
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 主要用於角膜炎及炎症性腸病
+
+etiology:
+  categories:
+    - name: 劑量過高
+      examples:
+        - 超過建議劑量(>5 mg/kg/day)
+        - 長期高劑量使用
+    - name: 藥物代謝異常
+      examples:
+        - 與CYP3A4抑制劑併用(如酮康唑)
+        - 肝功能不全
+
+clinicalSigns:
+  early:
+    - 嘔吐、腹瀉(常見於口服劑型)
+    - 食慾不振
+    - 牙齦增生(長期使用)
+  progressive:
+    - 多毛症、皮膚疣狀增生
+    - 機會性感染(細菌、黴菌、寄生蟲)
+    - 蛋白尿、腎功能惡化
+    - 高血壓
+
+diagnosis:
+  primaryTests:
+    - name: 血清環孢素濃度
+      notes: "谷底濃度(給藥前)目標100-600 ng/mL,>1000 ng/mL提示毒性"
+    - name: 血液生化
+      notes: "肌酸酐、BUN、尿蛋白評估腎功能"
+    - name: 血壓測量
+      notes: "監測高血壓風險"
+  differentialDiagnoses:
+    - 其他免疫抑制劑副作用
+    - 腎臟疾病
+    - 口腔增生性病變
+
+treatment:
+  medical:
+    - 暫時停藥或減量至最低有效劑量
+    - 調整給藥時間: 與食物併服減少胃腸道反應
+    - 止吐藥: Maropitant 1 mg/kg SC/PO q24h
+    - 治療機會性感染: 依病原選擇抗生素、抗黴菌藥
+    - 牙齦增生: 改善口腔衛生,必要時外科切除
+    - 腎功能監測及支持性療法
+    - 血壓控制: Amlodipine 0.1-0.25 mg/kg PO q24h(若高血壓)
+
+prognosis:
+  general: "停藥或減量後,多數胃腸道症狀於數日內改善。牙齦增生及皮膚改變可能需數月恢復。腎損傷可能不可逆。"
+
+prevention:
+  - 使用最低有效劑量
+  - 定期監測血清濃度(尤其前3個月)
+  - 每3-6個月檢查腎功能及血壓
+  - 避免與CYP3A4抑制劑併用
+  - 注意感染徵兆,及早治療

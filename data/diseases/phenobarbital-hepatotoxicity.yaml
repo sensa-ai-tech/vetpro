@@ -1,0 +1,84 @@
+slug: phenobarbital-hepatotoxicity
+nameEn: Phenobarbital Hepatotoxicity
+nameZh: 苯巴比妥肝毒性
+bodySystem: toxicology
+description: 苯巴比妥肝毒性是長期使用苯巴比妥控制癲癇時可能發生的慢性肝損傷。苯巴比妥是犬癲癇的一線抗癲癇藥物，但長期使用可導致肝臟酵素誘導、膽汁鬱滯甚至嚴重肝衰竭。
+
+aliases:
+  - { alias: 苯巴比妥致肝損傷, language: zh }
+  - { alias: 苯巴比妥性肝病, language: zh }
+  - { alias: Phenobarbital-Induced Liver Injury, language: en }
+  - { alias: Phenobarbitone Hepatotoxicity, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 長期使用苯巴比妥的癲癇犬約有6-14%發生明顯肝損傷。血清濃度持續 >35 μg/mL 風險增加。使用超過6個月需定期監測肝功能。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓使用苯巴比妥較少，肝毒性報告亦少。貓更常使用其他抗癲癇藥物。
+
+etiology:
+  categories:
+    - name: 藥物因素
+      examples:
+        - 長期高劑量使用（血清濃度 >35 μg/mL）
+        - 使用超過6個月
+        - 與其他肝代謝藥物併用
+    - name: 毒性機制
+      examples:
+        - 肝臟 CYP450 酵素誘導（ALP 升高為酵素誘導效應，非必然肝損傷）
+        - 活性代謝物直接肝細胞毒性
+        - 膽汁鬱滯
+        - 慢性進展至肝纖維化與肝硬化
+        - 特異體質反應（idiosyncratic）偶見
+
+clinicalSigns:
+  early:
+    - ALP 升高（酵素誘導效應，常見且可能良性）
+    - GGT 輕度升高
+    - 多飲多尿
+    - 多食
+  progressive:
+    - ALT 持續升高（提示真正肝損傷）
+    - 膽紅素升高
+    - 低白蛋白血症
+    - 食慾下降
+    - 體重減輕
+    - 黃疸
+    - 腹水
+    - 凝血功能異常
+
+diagnosis:
+  primaryTests:
+    - name: 血液生化監測
+      notes: "區分酵素誘導（僅 ALP 升高）與真正肝損傷（ALT 同步升高、低白蛋白、膽紅素升高）。每6個月監測一次。"
+    - name: 苯巴比妥血清濃度
+      notes: "治療範圍 15-35 μg/mL。谷濃度（給藥前採血）。>35 μg/mL 肝毒性風險增加。"
+  differentialDiagnoses:
+    - 原發性慢性肝炎
+    - 銅儲積性肝病
+    - 肝臟腫瘤
+    - 腎上腺皮質功能亢進（Cushing's disease，ALP 亦升高）
+
+treatment:
+  medical:
+    - 輕度酵素誘導：繼續用藥但加強監測
+    - 明確肝損傷：逐漸減量並轉換至其他抗癲癇藥（如 levetiracetam、zonisamide）
+    - 切勿突然停藥（有癲癇重積風險）
+    - SAMe 20 mg/kg PO q24h（肝保護）
+    - Ursodiol (UDCA) 10-15 mg/kg PO q24h
+    - Silymarin (milk thistle) 作為輔助肝保護
+  surgical:
+    - 不適用手術治療
+
+prognosis:
+  general: "早期發現並轉換藥物者預後良好，肝功能可部分或完全恢復。已進展至肝硬化者預後不良。ALP 單獨升高多為良性酵素誘導效應，ALT 同步持續升高才需積極處理。"
+
+prevention:
+  - 使用最低有效劑量控制癲癇
+  - 每6個月監測肝功能（ALT、ALP、白蛋白）與苯巴比妥血清濃度
+  - 血清濃度維持在 15-30 μg/mL
+  - 考慮肝保護劑（SAMe）預防性使用

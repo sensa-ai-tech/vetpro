@@ -1,0 +1,97 @@
+slug: caloric-requirement-calculation
+nameEn: Caloric Requirement Calculation
+nameZh: 熱量需求計算
+bodySystem: metabolic
+description: 犬貓每日熱量需求的計算方法，包含靜息能量需求(RER)、維持能量需求(MER)及疾病狀態的調整係數。
+
+aliases:
+  - { alias: 卡路里需求, language: zh }
+  - { alias: Energy Requirements, language: en }
+  - { alias: Calorie Calculation, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 熱量需求計算為營養管理基礎
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓計算方式相同
+
+etiology:
+  categories:
+    - name: RER計算公式
+      examples:
+        - 精確公式：RER = 70 × (體重kg)^0.75
+        - 簡化公式：RER = 30 × 體重kg + 70
+        - 適用範圍：2-45 kg
+    - name: MER計算(健康動物)
+      examples:
+        - 成犬：RER × 1.6-1.8
+        - 成貓：RER × 1.2-1.4
+        - 幼犬(<4月)：RER × 3
+        - 幼貓：RER × 2.5
+        - 絕育犬：RER × 1.6
+        - 絕育貓：RER × 1.2
+        - 肥胖傾向：RER × 1.0-1.2
+    - name: 疾病狀態調整
+      examples:
+        - 重症/住院：RER × 1.0-1.2
+        - 手術恢復：RER × 1.25
+        - 生長期：RER × 2.0-3.0
+        - 懷孕後期：RER × 1.5-2.0
+        - 哺乳期：RER × 2.0-4.0
+
+clinicalSigns:
+  early:
+    - 適當熱量：體重穩定、活力正常
+    - 熱量不足：體重減輕、肌肉流失
+    - 熱量過多：體重增加、肥胖
+  progressive:
+    - 長期熱量不足：營養不良
+    - 長期熱量過多：肥胖相關疾病
+
+diagnosis:
+  primaryTests:
+    - name: 體重監測
+      notes: "每週或每兩週秤重"
+    - name: 體態評分
+      notes: "BCS 1-9分，理想4-5分"
+    - name: 肌肉質量評估
+      notes: "MCS評分"
+  differentialDiagnoses:
+    - 營養不足
+    - 營養過剩
+    - 代謝性疾病
+
+treatment:
+  medical:
+    - 熱量計算步驟
+    - 1. 計算RER：70 × (體重kg)^0.75
+    - 2. 選擇適當係數
+    - 3. 計算總熱量需求
+    - 4. 根據體重變化調整
+    - 範例(10kg成犬)
+    - RER = 70 × 10^0.75 = 394 kcal/day
+    - MER(活動犬)= 394 × 1.6 = 630 kcal/day
+    - 範例(5kg成貓)
+    - RER = 70 × 5^0.75 = 234 kcal/day
+    - MER(絕育貓)= 234 × 1.2 = 281 kcal/day
+    - 住院/重症動物
+    - 從RER的25-50%開始
+    - 逐步增加至RER(不超過)
+    - 監測體重、營養指標
+    - 減重計畫
+    - 使用理想體重計算RER
+    - RER × 0.8-1.0作為減重熱量
+    - 目標：每週減重1-2%(犬)或0.5-1%(貓)
+
+prognosis:
+  general: "適當熱量管理為營養支持成功的關鍵"
+
+prevention:
+  - 定期體重監測
+  - 根據體態評分調整
+  - 避免過度餵食
+  - 定期重新計算需求

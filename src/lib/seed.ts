@@ -32,7 +32,15 @@ export async function seedDiseases(dataDir: string) {
   for (const file of files) {
     const filePath = path.join(diseasesDir, file);
     const content = fs.readFileSync(filePath, "utf-8");
-    const data = yaml.load(content) as DiseaseYaml;
+
+    let data: DiseaseYaml;
+    try {
+      data = yaml.load(content) as DiseaseYaml;
+    } catch (e: unknown) {
+      const msg = e instanceof Error ? e.message.split("\n")[0] : String(e);
+      console.warn(`Skipping ${file}: YAML parse error — ${msg}`);
+      continue;
+    }
 
     if (!data.slug || !data.nameEn || !data.bodySystem) {
       console.warn(`Skipping ${file}: missing required fields (slug, nameEn, bodySystem)`);
@@ -64,7 +72,11 @@ async function upsertDisease(data: DiseaseYaml): Promise<"added" | "updated" | "
     clinicalSigns: data.clinicalSigns ? JSON.stringify(data.clinicalSigns) : null,
     diagnosis: data.diagnosis ? JSON.stringify(data.diagnosis) : null,
     treatment: data.treatment ? JSON.stringify(data.treatment) : null,
-    prognosis: data.prognosis ?? null,
+    prognosis: data.prognosis
+      ? typeof data.prognosis === "object"
+        ? JSON.stringify(data.prognosis)
+        : data.prognosis
+      : null,
     stagingSystem: data.stagingSystem ? JSON.stringify(data.stagingSystem) : null,
     emergencyNotes: data.emergencyNotes ?? null,
     updatedAt: now,

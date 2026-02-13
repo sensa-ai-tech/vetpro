@@ -1,0 +1,80 @@
+slug: endometritis
+nameEn: Endometritis
+nameZh: 子宮內膜炎
+bodySystem: reproductive
+description: 子宮內膜細菌感染及炎症，可為急性或慢性。常見於產後、配種後或子宮頸開放期。可能影響生育能力。
+
+aliases:
+  - { alias: 子宮炎, language: zh }
+  - { alias: Metritis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 產後母犬常見
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓較少見
+
+etiology:
+  categories:
+    - name: 產後感染
+      examples:
+        - 胎盤滯留
+        - 難產後
+        - 產道損傷
+    - name: 配種相關
+      examples:
+        - 配種時細菌引入
+        - 人工授精污染
+    - name: 其他
+      examples:
+        - 子宮頸開放期上行感染
+        - 免疫功能低下
+
+clinicalSigns:
+  early:
+    - 陰道分泌物（膿性、血性或褐色）
+    - 發燒
+    - 食慾下降
+  progressive:
+    - 嘔吐、腹瀉
+    - 脫水
+    - 敗血症（急性產後子宮炎）
+    - 不孕或反覆流產（慢性）
+
+diagnosis:
+  primaryTests:
+    - name: 陰道檢查
+      notes: "膿性分泌物、子宮頸開放"
+    - name: 陰道分泌物細菌培養
+      notes: "E. coli、Streptococcus等"
+    - name: 腹部超音波
+      notes: "子宮壁增厚、內容物蓄積"
+    - name: 全血球計數
+      notes: "白血球增多、中性球左移"
+  differentialDiagnoses:
+    - 子宮蓄膿
+    - 陰道炎
+    - 產後正常惡露
+    - 流產
+
+treatment:
+  medical:
+    - 廣效抗生素：amoxicillin-clavulanate 20 mg/kg PO q12h 至少14天
+    - 前列腺素（促進子宮收縮排出內容物，慎用）
+    - PGF2α 0.1-0.2 mg/kg SC q12-24h
+    - 支持療法：IV輸液、止吐
+    - 嚴重或慢性：卵巢子宮切除術
+    - 保留繁殖：積極抗生素治療
+
+prognosis:
+  general: "急性感染早期治療預後佳。慢性子宮內膜炎可能影響生育。嚴重產後子宮炎可能致命。"
+
+prevention:
+  - 產後監測（體溫、分泌物）
+  - 配種及人工授精無菌操作
+  - 胎盤滯留早期處理
+  - 產後子宮收縮劑（催產素）

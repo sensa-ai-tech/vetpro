@@ -1,0 +1,73 @@
+slug: surgical-drain-management
+nameEn: Surgical Drain Management
+nameZh: 手術引流管理
+bodySystem: other
+description: 手術引流管置放及照護,用於預防血清腫、膿瘍或死腔。包括被動引流(Penrose)及主動引流(Jackson-Pratt)系統。
+
+aliases:
+  - { alias: 引流管照護, language: zh }
+  - { alias: Drain placement, language: en }
+  - { alias: 術後引流, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 大型手術或大死腔常需引流
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓較少需要但膿瘍引流常用
+
+etiology:
+  categories:
+    - name: 適應症
+      examples:
+        - 大面積死腔(如腫瘤切除後)
+        - 污染傷口
+        - 高風險血清腫形成
+    - name: 引流類型
+      examples:
+        - Penrose被動引流(毛細作用)
+        - Jackson-Pratt主動負壓引流
+        - 胸腔或腹腔引流管
+
+clinicalSigns:
+  early:
+    - 引流管置放處有滲液
+    - 引流液量及性質監測
+    - 周圍皮膚可能輕微紅腫
+  progressive:
+    - 引流量逐漸減少
+    - 移除指標:<0.2 mL/kg/day持續24小時
+    - 移除後小傷口快速癒合
+
+diagnosis:
+  primaryTests:
+    - name: 引流液量測
+      notes: "每日記錄總量"
+    - name: 引流液分析
+      notes: "顏色、濁度、細胞計數"
+    - name: 傷口評估
+      notes: "周圍感染徵象"
+  differentialDiagnoses:
+    - 無引流管(可能形成血清腫)
+    - 閉合式抽吸(不使用引流管)
+
+treatment:
+  medical:
+    - 置放:引流管遠離主切口獨立出口
+    - 固定:縫線固定於皮膚,預防脫出
+    - 照護:每日清潔出口,監測引流量
+    - Penrose:每1-2天縮短長度
+    - 移除:引流量極少時快速拔除
+
+prognosis:
+  general: "適當使用引流可降低血清腫及感染。過早移除可能導致積液,過晚移除增加逆行感染風險。多數引流管3-7天內可移除。"
+
+prevention:
+  - 適當病例選擇避免濫用
+  - 無菌技術置放
+  - 固定確實防止脫出或移位
+  - 伊莉莎白項圈防止動物拔除
+  - 定期評估移除時機

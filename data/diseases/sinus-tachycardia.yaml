@@ -1,0 +1,71 @@
+slug: sinus-tachycardia
+nameEn: Sinus Tachycardia
+nameZh: 竇性心搏過速
+bodySystem: cardiac
+description: 竇房結發出的電脈衝頻率增快，心跳超過正常範圍。通常為生理或病理性代償反應，非原發性心律不整。
+
+aliases:
+  - { alias: 竇性心動過速, language: zh }
+  - { alias: Sinus Tachyarrhythmia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 常因疼痛、發燒、脫水、貧血或興奮
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 壓力、疼痛、甲狀腺功能亢進
+
+etiology:
+  categories:
+    - name: 生理性
+      examples:
+        - 興奮、恐懼
+        - 運動
+    - name: 病理性
+      examples:
+        - 疼痛、發燒
+        - 脫水、貧血
+        - 心衰竭代償
+    - name: 內分泌
+      examples:
+        - 甲狀腺功能亢進 (貓)
+        - 嗜鉻細胞瘤
+
+clinicalSigns:
+  early:
+    - 心跳快速 (犬 > 160 bpm, 貓 > 220 bpm)
+    - 可能無其他症狀
+  progressive:
+    - 依原發病因表現
+    - 心悸
+    - 虛弱
+
+diagnosis:
+  primaryTests:
+    - name: 心電圖
+      notes: "確認竇性 P 波存在，心室率增快"
+    - name: 血液檢查
+      notes: "CBC, 生化, T4 (貓), cortisol"
+    - name: 胸部 X 光
+      notes: "評估心臟大小、肺部"
+  differentialDiagnoses:
+    - 室上性心搏過速
+    - 心房顫動
+    - 心房撲動
+
+treatment:
+  medical:
+    - 治療原發病因 (補液、退燒、止痛)
+    - 控制甲狀腺功能 (methimazole 2.5-5 mg/cat PO q12h)
+    - β-blockers (僅在原發病因控制後且仍有症狀時)
+
+prognosis:
+  general: "取決於原發病因；生理性或可逆病因預後良好；心衰竭代償性心搏過速預後依心臟疾病而定"
+
+prevention:
+  - 減少壓力
+  - 充足補液
+  - 早期診斷及治療原發疾病

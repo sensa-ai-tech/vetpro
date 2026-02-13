@@ -1,0 +1,74 @@
+slug: testicular-neoplasia-detail
+nameEn: Testicular Neoplasia Detail
+nameZh: 睪丸腫瘤詳述
+bodySystem: oncology
+description: 犬常見生殖系統腫瘤，包括塞氏細胞瘤、間質細胞瘤及精原細胞瘤。隱睪症風險極高。多為良性，手術切除預後佳。
+
+aliases:
+  - { alias: 睪丸癌, language: zh }
+  - { alias: Testicular Cancer, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 老年未絕育公犬常見，隱睪症風險高13.6倍
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓極罕見
+
+etiology:
+  categories:
+    - name: 腫瘤類型
+      examples:
+        - 間質細胞瘤（最常見，40%）
+        - 塞氏細胞瘤（Sertoli cell tumor, 30-40%）
+        - 精原細胞瘤（seminoma, 20-30%）
+    - name: 危險因素
+      examples:
+        - 隱睪症（風險增13.6倍）
+        - 高齡（平均10歲）
+        - 未絕育
+
+clinicalSigns:
+  early:
+    - 單側或雙側睪丸腫大、硬化
+    - 多數無症狀
+  progressive:
+    - 塞氏細胞瘤：雌激素分泌→對稱性脫毛、乳腺發育、骨髓抑制
+    - 間質細胞瘤：睪固酮分泌→前列腺增生、會陰疝
+    - 轉移（罕見，<10%）
+
+diagnosis:
+  primaryTests:
+    - name: 睪丸觸診
+      notes: "腫大、不對稱、硬化"
+    - name: 細針抽吸細胞學
+      notes: "初步分型"
+    - name: 腹部超音波
+      notes: "隱睪腫瘤、轉移評估"
+    - name: 胸腔X光
+      notes: "肺轉移篩檢"
+    - name: 組織病理學
+      notes: "確診及分型"
+  differentialDiagnoses:
+    - 睪丸炎
+    - 睪丸扭轉
+    - 睪丸囊腫
+
+treatment:
+  medical:
+    - 去勢手術（治療首選）
+    - 雙側切除（預防對側腫瘤）
+    - 腹部隱睪：剖腹探查切除
+    - 化療：惡性或轉移（罕見）
+    - 卡鉑（carboplatin）300 mg/m² IV q21d
+
+prognosis:
+  general: "間質細胞瘤及局限性精原細胞瘤切除後預後極佳。塞氏細胞瘤多良性，骨髓抑制術後可恢復。轉移罕見（<10%）。"
+
+prevention:
+  - 早期絕育
+  - 隱睪早期手術切除
+  - 定期睪丸觸診（老年犬）

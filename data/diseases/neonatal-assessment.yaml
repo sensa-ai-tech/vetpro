@@ -1,0 +1,71 @@
+slug: neonatal-assessment
+nameEn: Neonatal Assessment
+nameZh: 新生兒評估
+bodySystem: other
+description: 新生犬貓出生後即時性的健康狀態評估，包含Apgar評分、生命徵象測量及先天異常篩檢。是確保新生動物存活及早期識別高風險個體的關鍵步驟。
+
+aliases:
+  - { alias: 新生動物健檢, language: zh }
+  - { alias: Puppy Kitten Evaluation, language: en }
+  - { alias: Neonatal Health Check, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 出生後立即評估，特別注意品種特定缺陷
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 評估項目與犬類似，需注意品種遺傳疾病
+
+etiology:
+  categories:
+    - name: 評估時機
+      examples:
+        - 出生後即刻(1-5分鐘)
+        - 出生後24小時內
+        - 每日體重監測
+
+clinicalSigns:
+  early:
+    - 正常：呼吸規律、心跳強勁、主動吸乳
+    - 正常：黏膜粉紅、體溫穩定
+    - 異常：呼吸困難、發紺、反應遲鈍
+  progressive:
+    - 體重穩定增加(每日5-10%)
+    - 睡眠時間逐漸減少
+    - 運動協調性改善
+
+diagnosis:
+  primaryTests:
+    - name: Apgar評分
+      notes: "評估項目：心跳、呼吸、肌肉張力、反射、黏膜顏色(0-10分)"
+    - name: 體重測量
+      notes: "初生體重記錄，每日監測是否增加"
+    - name: 體溫測量
+      notes: "正常範圍35-37°C(第一週)，逐漸上升至38°C"
+    - name: 理學檢查
+      notes: "檢查顎裂、臍疝、肢體畸形、心雜音、先天性缺陷"
+  differentialDiagnoses:
+    - 先天性心臟病
+    - 唇顎裂
+    - 臍疝
+    - 肢體畸形
+
+treatment:
+  medical:
+    - 正常新生兒：保溫、確保吸收初乳
+    - 低體重兒：補充餵食、額外保溫
+    - 先天畸形：轉診專科評估手術可行性
+    - 每日體重監測，記錄成長曲線
+    - 臍帶護理(優碘消毒)
+
+prognosis:
+  general: "Apgar評分7-10分預後佳；4-6分需密切監測；0-3分需立即復甦處置。體重穩定增加者預後良好"
+
+prevention:
+  - 母體產前健康檢查
+  - 遺傳疾病篩檢(品種特定)
+  - 準備完善的接生環境
+  - 確保初乳攝取

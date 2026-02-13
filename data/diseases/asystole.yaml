@@ -1,0 +1,72 @@
+slug: asystole
+nameEn: Asystole
+nameZh: 心搏停止
+bodySystem: cardiac
+description: 心臟完全無電氣活性,心電圖呈一直線。為心跳停止的最終階段,預後極差,需立即心肺復甦。
+
+aliases:
+  - { alias: 心臟停搏, language: zh }
+  - { alias: Cardiac Arrest, language: en }
+  - { alias: Flatline, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 心跳停止終端心律、麻醉意外、嚴重疾病
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 同上
+
+etiology:
+  categories:
+    - name: 心跳停止
+      examples:
+        - 心室顫動未治療
+        - 嚴重低氧
+    - name: 麻醉相關
+      examples:
+        - 迷走反射
+        - 藥物過量
+    - name: 全身性
+      examples:
+        - 嚴重低血容
+        - 高血鉀
+
+clinicalSigns:
+  early:
+    - 無意識
+    - 無脈搏
+    - 無呼吸
+  progressive:
+    - 黏膜發紺
+    - 瞳孔放大
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 心電圖
+      notes: "平直線，無電氣活性 (確認導線連接正常)"
+    - name: 臨床評估
+      notes: "無脈搏、無意識、無呼吸"
+  differentialDiagnoses:
+    - 心室顫動
+    - 無脈性電氣活動
+    - 導線脫落 (排除)
+
+treatment:
+  medical:
+    - CPR (立即開始，100-120 次/分鐘胸外按壓)
+    - Epinephrine 0.01 mg/kg IV/IO (每 3-5 分鐘)
+    - Atropine 0.04 mg/kg IV/IO (若高迷走相關)
+    - 插管及正壓通氣
+    - 治療可逆原因 (5H5T)
+
+prognosis:
+  general: "預後極差；存活率 < 2%；即使恢復自主循環，多數在 24 小時內死亡"
+
+prevention:
+  - 麻醉中密切監測
+  - 早期識別及治療危急病患
+  - CPR 訓練

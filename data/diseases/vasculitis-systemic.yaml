@@ -1,0 +1,85 @@
+slug: vasculitis-systemic
+nameEn: Vasculitis Systemic
+nameZh: 全身性血管炎
+bodySystem: vascular
+description: 全身性血管壁的炎症性疾病，可累及多個器官系統的小至中型血管，導致組織缺血、壞死及器官功能障礙，病因包括免疫介導性、感染性及藥物反應。
+
+aliases:
+  - { alias: 系統性血管炎, language: zh }
+  - { alias: 多系統血管炎, language: zh }
+  - { alias: Systemic vasculitis, language: en }
+  - { alias: Polyarteritis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬全身性血管炎可為免疫介導性、感染性（壁蝨傳播疾病 Ehrlichia, Rickettsia）或藥物反應。比格犬有品種相關的多動脈炎。
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓全身性血管炎罕見，可與 FIP（貓傳染性腹膜炎）相關。
+
+etiology:
+  categories:
+    - name: 免疫介導性
+      examples:
+        - 第三型過敏反應（免疫複合物沉積）
+        - 全身性紅斑狼瘡
+        - 類風濕性關節炎
+        - 藥物反應
+    - name: 感染性
+      examples:
+        - 壁蝨傳播疾病（Ehrlichia, Rickettsia, Anaplasma）
+        - 貓傳染性腹膜炎（FIP）
+        - 細菌性心內膜炎
+        - Rocky Mountain spotted fever
+
+clinicalSigns:
+  early:
+    - 發燒
+    - 食慾下降
+    - 嗜睡
+    - 關節疼痛
+  progressive:
+    - 皮膚壞死與潰瘍
+    - 肢端壞死
+    - 耳尖壞死
+    - 腎功能異常
+    - 多器官功能障礙
+    - 水腫
+
+diagnosis:
+  primaryTests:
+    - name: 皮膚/組織生檢
+      notes: "組織病理學確診。典型表現為血管壁纖維素樣壞死、中性球浸潤（白血球碎裂性血管炎）"
+    - name: 壁蝨傳播疾病篩檢
+      notes: "4DX SNAP test + Ehrlichia/Rickettsia 定量 PCR"
+    - name: 血液學檢查
+      notes: "CBC、生化、尿液分析、ANA、類風濕因子、Coombs test"
+  differentialDiagnoses:
+    - 瀰漫性血管內凝血（DIC）
+    - 冷凝集素病
+    - 壁蝨傳播疾病
+    - 全身性紅斑狼瘡
+    - 藥物反應
+
+treatment:
+  medical:
+    - 感染性——針對病原治療（Doxycycline 5-10 mg/kg PO BID 4-6 週）
+    - 免疫介導性——Prednisolone 2 mg/kg PO SID 漸減
+    - 嚴重病例——加用 Azathioprine 2 mg/kg PO SID（犬）或 Chlorambucil（貓）
+    - Pentoxifylline 10-15 mg/kg PO BID-TID（改善微循環）
+    - 支持療法（輸液、止痛、傷口護理）
+    - 停用可疑致病藥物
+  surgical:
+    - 壞死組織清創
+    - 嚴重壞死——截肢或截趾
+
+prognosis:
+  general: "感染性血管炎經適當抗菌治療預後良好。免疫介導性需長期免疫抑制，多數可控制但可能復發。多器官受累者預後較差。"
+
+prevention:
+  - 壁蝨預防（定期使用驅蟲藥）
+  - 監測藥物反應
+  - 早期診斷與治療

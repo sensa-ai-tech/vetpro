@@ -1,0 +1,75 @@
+slug: methotrexate-toxicosis
+nameEn: Methotrexate Toxicosis
+nameZh: 甲氨蝶呤中毒
+bodySystem: toxicology
+description: 甲氨蝶呤為葉酸拮抗劑,用於化療及免疫抑制。中毒可引起骨髓抑制、胃腸道黏膜損傷及肝腎毒性。
+
+aliases:
+  - { alias: 甲胺喋呤毒性, language: zh }
+  - { alias: Methotrexate Poisoning, language: en }
+  - { alias: MTX Toxicity, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 主要用於淋巴瘤化療,劑量過高或腎功能不全易中毒
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 較少使用,對骨髓抑制更敏感
+
+etiology:
+  categories:
+    - name: 劑量累積
+      examples:
+        - 腎功能不全導致藥物蓄積
+        - 高劑量化療方案
+    - name: 藥物交互作用
+      examples:
+        - 與NSAIDs併用增加毒性
+        - 與其他骨髓抑制藥物併用
+
+clinicalSigns:
+  early:
+    - 嚴重嘔吐、腹瀉(常為血便)
+    - 食慾廢絕
+    - 口腔潰瘍
+  progressive:
+    - 全血球減少(白血球、紅血球、血小板)
+    - 敗血症、發燒
+    - 黃疸、肝腎衰竭
+    - 出血傾向
+
+diagnosis:
+  primaryTests:
+    - name: 全血球計數(CBC)
+      notes: "白血球<2000/μL,血小板<50000/μL,貧血"
+    - name: 血液生化
+      notes: "肌酸酐、BUN、ALT升高"
+    - name: 血清甲氨蝶呤濃度
+      notes: "濃度>10 μmol/L(24小時後)提示毒性風險"
+  differentialDiagnoses:
+    - 其他化療藥物毒性
+    - 骨髓疾病
+    - 胰臟炎
+    - 敗血症
+
+treatment:
+  medical:
+    - 葉酸救援療法(Leucovorin rescue): Leucovorin 3-5 mg/m² IV/PO q6h,直至甲氨蝶呤濃度<0.05 μmol/L
+    - 鹼化尿液: 碳酸氫鈉靜脈輸液,維持尿液pH>7.0,促進藥物排泄
+    - 積極靜脈輸液,維持腎臟灌流
+    - 廣效抗生素(若白血球<1000/μL): Enrofloxacin 5 mg/kg IV q24h
+    - 止吐藥: Maropitant 1 mg/kg SC q24h
+    - 血小板輸血(若血小板<20000/μL或出血)
+    - 集落刺激因子(G-CSF): Filgrastim 5 μg/kg SC q24h(嚴重中性球減少)
+
+prognosis:
+  general: "若及早葉酸救援,預後尚可。嚴重骨髓抑制或敗血症死亡率高(>50%)。恢復期需2-3週。"
+
+prevention:
+  - 化療前評估腎功能,調整劑量
+  - 避免與NSAIDs或其他腎毒性藥物併用
+  - 高劑量化療方案必須配合葉酸救援
+  - 定期監測CBC及腎功能

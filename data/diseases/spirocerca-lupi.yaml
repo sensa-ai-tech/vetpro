@@ -1,0 +1,86 @@
+slug: spirocerca-lupi
+nameEn: Spirocerca Lupi
+nameZh: 犬食道線蟲病
+bodySystem: infectious
+description: 由Spirocerca lupi線蟲經甲蟲中間宿主傳播的食道寄生蟲病,主要見於熱帶及亞熱帶。成蟲寄生於食道壁形成結節,可能惡性轉化為骨肉瘤。
+
+aliases:
+  - { alias: 食道蟲病, language: zh }
+  - { alias: 犬旋尾線蟲病, language: zh }
+  - { alias: Esophageal Worm, language: en }
+  - { alias: Spirocercosis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 中東、非洲、南美洲高流行,台灣罕見
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓極少感染
+
+etiology:
+  categories:
+    - name: 病原體
+      examples:
+        - Spirocerca lupi成蟲(雌5-8 cm,雄3-5 cm,紅色螺旋狀)
+    - name: 生活史
+      examples:
+        - 中間宿主:甲蟲(糞金龜、象鼻蟲)
+        - 副終宿主:蛙類、蛇類、鳥類、齧齒類
+        - 犬攝食感染宿主→幼蟲穿透胃壁→移行至主動脈→食道壁(3-6個月成熟)
+        - 成蟲在食道結節內產卵,蟲卵隨糞便排出
+
+clinicalSigns:
+  early:
+    - 吞嚥困難、流涎
+    - 進食後嘔吐或反流
+    - 慢性咳嗽
+    - 體重減輕,食慾下降
+  progressive:
+    - 食道阻塞:完全吞嚥困難、吸入性肺炎
+    - 主動脈動脈瘤破裂:急性死亡(血胸)
+    - 骨肉瘤轉化:惡病質、肺轉移
+    - 肥厚性骨病(HOD):四肢疼痛、骨膜增生
+    - 脊髓壓迫:後肢無力、癱瘓
+
+diagnosis:
+  primaryTests:
+    - name: 糞便檢查
+      notes: "飽和鹽水浮游法見典型蟲卵(30-37 × 11-15 μm,兩端塞子)"
+    - name: 食道X光或透視
+      notes: "食道後縱隔見軟組織腫塊(結節),可能鈣化"
+    - name: 胸部X光
+      notes: "主動脈擴張或動脈瘤,肺轉移(若惡性轉化)"
+    - name: 食道鏡檢查
+      notes: "直視見食道腔內結節性腫塊,中央可能有瘻管開口"
+    - name: 骨骼X光
+      notes: "肥厚性骨病:長骨骨膜增生,呈「流蠟」樣"
+  differentialDiagnoses:
+    - 食道異物
+    - 食道腫瘤(鱗狀細胞癌、纖維肉瘤)
+    - 食道狹窄或瘢痕
+    - 巨食道症
+    - 縱隔腫瘤
+
+treatment:
+  medical:
+    - Doramectin 400 μg/kg SC,每週1次,連續4-6週
+    - 或 Milbemycin oxime 0.5-2 mg/kg PO,每週1次,4-6週
+    - Imidacloprid/Moxidectin topical,每2週1次,連續數月
+    - NSAIDs緩解肥厚性骨病疼痛:Carprofen 2-4 mg/kg PO q12h
+    - 軟食或流質飲食,少量多餐
+    - 抗生素預防繼發感染:Amoxicillin-clavulanate 12.5-25 mg/kg PO q12h
+  surgical:
+    - 大型結節阻塞食道:外科切除(風險高,可能穿孔或出血)
+    - 惡性轉化:不建議手術,預後極差
+
+prognosis:
+  general: "預後取決於併發症。單純食道結節經驅蟲治療預後尚可,但完全治癒困難,結節可能永久存在。主動脈瘤破裂致死率100%。骨肉瘤轉化預後極差,中位生存期<3個月。肥厚性骨病在驅蟲後數月可能改善。"
+
+prevention:
+  - 每月預防藥:Moxidectin或Milbemycin
+  - 避免攝食甲蟲、糞便或腐肉
+  - 流行區每年糞便檢查
+  - 控制環境中甲蟲數量

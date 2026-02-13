@@ -1,0 +1,75 @@
+slug: nasal-discharge-differential
+nameEn: Nasal Discharge Differential
+nameZh: 鼻分泌物鑑別診斷
+bodySystem: respiratory
+description: 鼻分泌物為常見症狀,需依分泌物性質 (漿液性、黏液性、化膿性、血性)、單側或雙側及伴隨症狀進行鑑別診斷。
+
+aliases:
+  - { alias: 鼻漏鑑別, language: zh }
+  - { alias: Rhinorrhea Differential, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 常見原因包含感染、異物、腫瘤、牙科疾病
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 常見原因包含上呼吸道感染、鼻炎
+
+etiology:
+  categories:
+    - name: 感染性
+      examples:
+        - 病毒性鼻炎
+        - 細菌性鼻竇炎
+        - 真菌性鼻炎
+    - name: 異物
+      examples:
+        - 草籽、異物
+    - name: 腫瘤
+      examples:
+        - 鼻腺癌
+        - 淋巴瘤
+    - name: 牙科疾病
+      examples:
+        - 口鼻廔管
+
+clinicalSigns:
+  early:
+    - 打噴嚏
+    - 鼻分泌物 (性質依病因)
+  progressive:
+    - 鼻出血 (腫瘤、真菌)
+    - 臉部變形 (腫瘤)
+    - 呼吸困難
+
+diagnosis:
+  primaryTests:
+    - name: 理學檢查
+      notes: "評估分泌物性質、單側或雙側、牙科檢查"
+    - name: 鼻鏡檢查
+      notes: "直視鼻腔、取組織切片"
+    - name: 頭部 X 光 / CT
+      notes: "評估鼻腔結構、腫瘤、異物"
+    - name: 鼻沖洗液
+      notes: "細胞學、培養、真菌培養"
+  differentialDiagnoses:
+    - 依分泌物性質及檢查結果確認
+
+treatment:
+  medical:
+    - 依原發病因治療
+    - 抗生素 (細菌性)
+    - 抗真菌藥 (真菌性)
+    - 移除異物
+    - 腫瘤治療 (手術、放療)
+
+prognosis:
+  general: "取決於原發病因;感染性預後良好;腫瘤預後不良"
+
+prevention:
+  - 疫苗接種
+  - 定期牙科照護
+  - 避免異物吸入

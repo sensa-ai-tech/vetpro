@@ -1,0 +1,79 @@
+slug: refeeding-syndrome
+nameEn: Refeeding Syndrome
+nameZh: 再餵食症候群
+bodySystem: electrolyte
+description: 長期厭食或營養不良動物快速恢復餵食後,因胰島素分泌及細胞內電解質轉移導致嚴重低血磷、低血鉀及低血鎂。可能引發溶血、橫紋肌溶解、心律不整甚至死亡。
+
+aliases:
+  - { alias: 重新餵食症候群, language: zh }
+  - { alias: Refeeding Hypophosphatemia, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 高風險族群包括長期厭食、肝脂肪變性或惡病質
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓肝脂肪變性極易發生再餵食症候群,需特別謹慎
+
+etiology:
+  categories:
+    - name: 高風險族群
+      examples:
+        - 長期厭食（>5-7天）
+        - 肝脂肪變性
+        - 惡病質或惡液質
+        - 糖尿病酮酸中毒治療中
+    - name: 病理機轉
+      examples:
+        - 胰島素分泌增加
+        - 磷、鉀、鎂進入細胞內
+        - 血清電解質驟降
+
+clinicalSigns:
+  early:
+    - 恢復餵食後24-72小時出現症狀
+    - 肌肉無力、嗜睡
+  progressive:
+    - 溶血性貧血（低血磷 <1.5 mg/dL）
+    - 橫紋肌溶解（肌紅蛋白尿）
+    - 癲癇、心律不整
+    - 呼吸衰竭（呼吸肌無力）
+
+diagnosis:
+  primaryTests:
+    - name: 血清電解質
+      notes: "低血磷（<2.0 mg/dL）、低血鉀（<3.0 mEq/L）、低血鎂（<1.5 mg/dL）"
+    - name: 血液學
+      notes: "溶血性貧血、網狀紅血球增加"
+    - name: 肌酸激酶（CK）
+      notes: "橫紋肌溶解時顯著升高"
+  differentialDiagnoses:
+    - 低血磷症
+    - 低血鉀症
+    - 溶血性貧血
+    - 橫紋肌溶解
+
+treatment:
+  medical:
+    - 預防策略（高風險患者）：
+      - 緩慢恢復餵食（RER的25-50%開始,每1-2天增加25%）
+      - 預防性補充磷、鉀、鎂
+      - 餵食前及餵食後24-72小時監測電解質
+    - 治療已發生再餵食症候群：
+      - 立即停止或減少餵食
+      - 靜脈補充 Potassium phosphate 0.01-0.03 mmol/kg/hr
+      - 補充鉀及鎂離子
+      - 監測電解質每4-6小時
+      - 症狀緩解後極緩慢恢復餵食
+
+prognosis:
+  general: "預後取決於嚴重程度及預防措施。預防性緩慢餵食及電解質補充可避免多數病例。嚴重再餵食症候群（低血磷<1.0 mg/dL）死亡率高（30-50%）。"
+
+prevention:
+  - 高風險患者緩慢恢復餵食（RER的25%開始）
+  - 餵食前監測基礎電解質
+  - 預防性補充磷、鉀、鎂
+  - 餵食後24-72小時密集監測電解質

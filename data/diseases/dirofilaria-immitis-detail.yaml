@@ -1,0 +1,93 @@
+slug: dirofilaria-immitis-detail
+nameEn: Dirofilaria Immitis Detail
+nameZh: 犬心絲蟲病詳論
+bodySystem: infectious
+description: 由Dirofilaria immitis線蟲經蚊子傳播的心肺血管寄生蟲病,成蟲寄生於肺動脈及右心,引起肺高壓、右心衰竭。為犬最重要寄生蟲病之一,貓亦可感染但臨床表現不同。
+
+aliases:
+  - { alias: 心絲蟲症, language: zh }
+  - { alias: 犬惡絲蟲病, language: zh }
+  - { alias: Heartworm Disease, language: en }
+  - { alias: Canine Dirofilariasis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 全球熱帶及亞熱帶流行,台灣未預防犬隻陽性率20-40%
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓感染率為犬的5-20%,常呈現急性呼吸道症狀(HARD)
+
+etiology:
+  categories:
+    - name: 病原體
+      examples:
+        - Dirofilaria immitis成蟲(雌12-30 cm,雄12-16 cm)
+        - 微絲蟲(microfilaria,300 μm)
+    - name: 生活史
+      examples:
+        - 蚊子叮咬傳播L3幼蟲
+        - 皮下組織發育(L3→L4→L5,3-4個月)
+        - 進入血管→肺動脈(6個月成熟,開始產微絲蟲)
+
+clinicalSigns:
+  early:
+    - 慢性咳嗽,運動不耐
+    - 呼吸急促,特別是運動後
+    - 輕度體重減輕
+    - 犬:多數無症狀(早期)
+  progressive:
+    - 右側充血性心衰竭:腹水、胸水、頸靜脈怒張
+    - 肺動脈栓塞:急性呼吸困難、咳血、昏厥
+    - 腔靜脈症候群(Caval syndrome):溶血、血紅素尿、急性虛脫
+    - 貓:急性死亡或慢性呼吸道症狀(HARD)
+
+diagnosis:
+  primaryTests:
+    - name: 抗原檢測(ELISA)
+      notes: "檢測成蟲抗原,敏感度95%(犬),貓敏感度較低(50-60%)"
+    - name: 微絲蟲檢查
+      notes: "Knott's test或濾膜法,新鮮血液,但隱性感染(30%)可能陰性"
+    - name: 胸部X光
+      notes: "肺動脈擴張、右心擴大、肺野混濁(早期可能正常)"
+    - name: 心臟超音波
+      notes: "右心擴大、三尖瓣逆流、肺動脈內可見成蟲(高回音線狀)"
+    - name: 抗體檢測
+      notes: "貓首選(抗原檢測不可靠),但陽性不代表目前感染"
+  differentialDiagnoses:
+    - 其他心臟病(二尖瓣閉鎖不全、擴張型心肌病)
+    - 慢性支氣管炎或氣喘(貓)
+    - 肺腫瘤或轉移
+    - 血栓栓塞症
+    - 慢性肺部疾病(肺纖維化)
+
+treatment:
+  medical:
+    - 犬成蟲殺滅(Adulticide):
+      - Melarsomine 2.5 mg/kg IM深層注射,第1天及30天後連續2天(3劑法,首選)
+      - 治療前stabilization:Doxycycline 10 mg/kg PO q24h,30天(殺Wolbachia共生菌)
+      - Prednisolone 0.5 mg/kg PO q12h,1-2週(減少栓塞風險)
+    - 微絲蟲殺滅:
+      - Ivermectin 6-12 μg/kg PO或Milbemycin 0.5 mg/kg PO,每月1次
+    - 支持療法:
+      - ACE抑制劑(Enalapril 0.5 mg/kg PO q12-24h)
+      - 利尿劑(Furosemide 1-2 mg/kg PO q12h,若心衰)
+      - 限制運動至少治療後3個月
+    - 貓:多數不建議成蟲殺滅(風險高),支持療法為主
+  surgical:
+    - 腔靜脈症候群:緊急手術移除成蟲(經頸靜脈)
+
+prognosis:
+  general: "犬預後取決於蟲體負荷及肺動脈病變程度。輕至中度感染經治療預後良好,治癒率>95%。重度感染或併發症(肺栓塞、腔靜脈症候群)預後保留,死亡率10-30%。貓預後不可預測,可能自發性清除或急性死亡。"
+
+prevention:
+  - 全年每月預防藥:
+    - Ivermectin 6-12 μg/kg PO
+    - Milbemycin oxime 0.5 mg/kg PO
+    - Selamectin 6-12 mg/kg topical
+    - Moxidectin 2.5-3 μg/kg PO或topical
+  - 每年抗原篩檢(犬)
+  - 蚊蟲控制:驅蚊、室內飼養
+  - 疫苗研發中,尚未商品化

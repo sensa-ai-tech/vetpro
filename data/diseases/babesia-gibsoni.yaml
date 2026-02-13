@@ -1,0 +1,87 @@
+slug: babesia-gibsoni
+nameEn: Babesia Gibsoni
+nameZh: 吉氏巴貝西蟲病
+bodySystem: infectious
+description: 由Babesia gibsoni原蟲引起的小型巴貝西蟲感染,主要經鬥犬咬傷傳播。比B. canis難治療,常導致慢性感染及復發,美國比特犬高風險。
+
+aliases:
+  - { alias: 小型巴貝西蟲病, language: zh }
+  - { alias: 吉氏焦蟲病, language: zh }
+  - { alias: Small Babesia Infection, language: en }
+  - { alias: Pit Bull Babesiosis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 美國比特犬及鬥犬品種高風險,亞洲及美國流行
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓極少感染,僅有零星病例報告
+
+etiology:
+  categories:
+    - name: 病原體
+      examples:
+        - Babesia gibsoni (小型蟲體,1-2.5 μm)
+    - name: 傳播途徑
+      examples:
+        - 咬傷傳播(鬥犬主要途徑)
+        - 壁蝨叮咬(Haemaphysalis, Rhipicephalus)
+        - 輸血傳播
+        - 可能垂直傳播
+
+clinicalSigns:
+  early:
+    - 間歇性發燒,精神不佳
+    - 輕至中度貧血,黏膜蒼白
+    - 脾腫大,淋巴結腫大
+    - 體重減輕,食慾下降
+  progressive:
+    - 持續性溶血性貧血(PCV 15-25%)
+    - 黃疸,深色尿
+    - 血小板減少,出血傾向
+    - 慢性消耗,肌肉萎縮
+    - 免疫介導併發症
+
+diagnosis:
+  primaryTests:
+    - name: PCR檢測
+      notes: "最敏感方法,慢性或低寄生蟲血症首選,敏感度>95%"
+    - name: 血液抹片
+      notes: "小型環狀或雙梨形蟲體(1-2.5 μm),檢出率僅30-50%"
+    - name: 全血球計數
+      notes: "再生性或非再生性貧血,血小板減少(常<100,000/μL)"
+    - name: 血清學
+      notes: "ELISA或IFAT,IgG抗體,慢性感染或流行病學調查"
+    - name: Coombs test
+      notes: "10-30%病例陽性,鑑別免疫介導性溶血併發症"
+  differentialDiagnoses:
+    - Babesia canis感染
+    - 免疫介導性溶血性貧血(IMHA)
+    - 免疫介導性血小板減少症(ITP)
+    - Mycoplasma haemocanis
+    - 慢性炎症性疾病
+
+treatment:
+  medical:
+    - Atovaquone 13.3 mg/kg PO q8h + Azithromycin 10 mg/kg PO q24h,持續10天(首選)
+    - Atovaquone + Azithromycin治療後,Azithromycin單獨續用4-8週預防復發
+    - Diminazene aceturate 3-5 mg/kg IM單次(亞洲使用,神經毒性風險)
+    - Imidocarb 6.6 mg/kg IM/SC(對B. gibsoni效果不佳,不推薦單獨使用)
+    - 免疫抑制治療:若Coombs陽性,加用Prednisolone 1-2 mg/kg PO q12h
+    - 輸血:PCV<15%或臨床症狀嚴重
+  supportive:
+    - 監測血球計數及寄生蟲血症(治療後每2-4週)
+
+prognosis:
+  general: "預後謹慎保留。即使治療,仍可能終身慢性帶原,復發率30-50%。Atovaquone+Azithromycin療法改善預後,但完全清除困難。慢性感染可能導致免疫介導性疾病,需長期監測。治療成功犬隻不建議作為供血犬。"
+
+prevention:
+  - 避免鬥犬活動及犬隻打鬥
+  - 壁蝨預防控制
+  - 輸血前PCR篩檢
+  - 流行區新引進犬隻應篩檢
+  - 陽性犬隻隔離,避免咬傷傳播
+  - 無有效疫苗

@@ -1,0 +1,83 @@
+slug: euglycemic-diabetic-ketoacidosis
+nameEn: Euglycemic Diabetic Ketoacidosis
+nameZh: 正常血糖性糖尿病酮酸中毒
+bodySystem: endocrine
+description: 糖尿病患者出現酮酸中毒症狀及代謝性酸中毒,但血糖濃度正常或僅輕度升高(<250 mg/dL),診斷容易被延誤,為罕見但危險的併發症。
+
+aliases:
+  - { alias: 正常血糖性DKA, language: zh }
+  - { alias: euDKA, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 極少見,多發生於使用SGLT2抑制劑或禁食狀態
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓罕見,可能於厭食合併糖尿病時發生
+
+etiology:
+  categories:
+    - name: 誘發機制
+      examples:
+        - 胰島素治療下持續禁食或厭食
+        - 嘔吐、腹瀉導致碳水化合物攝取不足
+        - 肝醣耗盡但脂肪分解持續
+        - SGLT2抑制劑使用(降低血糖但促進酮體生成)
+    - name: 病理過程
+      examples:
+        - 胰島素不足刺激脂肪分解
+        - 酮體(β-羥基丁酸、乙醯乙酸)大量生成
+        - 血糖因胰島素治療或禁食而未明顯升高
+        - 酮酸中毒導致代謝性酸中毒
+
+clinicalSigns:
+  early:
+    - 厭食、嘔吐
+    - 精神沉鬱、虛弱
+    - 呼吸有酮味(甜水果味)
+  progressive:
+    - 深快呼吸(Kussmaul呼吸)
+    - 脫水
+    - 意識改變、昏睡
+    - 休克症狀
+    - 電解質紊亂症狀
+
+diagnosis:
+  primaryTests:
+    - name: 血糖
+      notes: "正常或輕度升高(<250 mg/dL),易被誤認為非糖尿病急症"
+    - name: 血氣分析
+      notes: "代謝性酸中毒(pH <7.3, HCO3 <15 mmol/L),陰離子間隙升高"
+    - name: 血酮或尿酮
+      notes: "β-羥基丁酸升高(>3 mmol/L)或尿酮強陽性"
+    - name: 電解質
+      notes: "可能低鉀、低磷、低鈉血症"
+  differentialDiagnoses:
+    - 典型糖尿病酮酸中毒(高血糖)
+    - 其他原因代謝性酸中毒(乳酸酸中毒、尿毒症)
+    - 飢餓性酮症(無明顯酸中毒)
+    - 敗血症合併酸中毒
+
+treatment:
+  medical:
+    - 靜脈輸液復水(Lactated Ringer's solution 或 0.9% NaCl)
+    - 低劑量胰島素點滴(Regular insulin 0.05-0.1 U/kg/hr IV CRI)
+    - 立即補充葡萄糖(2.5-5% dextrose加入輸液中,避免低血糖)
+    - 電解質補充(鉀 20-40 mEq/L,磷酸鹽 0.01-0.03 mmol/kg/hr)
+    - 碳酸氫鈉僅用於嚴重酸中毒(pH <7.0, HCO3 <8 mmol/L)
+    - 治療原發誘因(感染、胰臟炎等)
+    - 密集監測(每1-2小時血糖、血酮、電解質、酸鹼)
+    - 酮體清除後轉換為皮下胰島素治療
+
+prognosis:
+  general: "及早診斷並治療預後尚可;延誤診斷或併發嚴重電解質紊亂、休克者預後保守。存活率約70-80%。"
+
+prevention:
+  - 糖尿病患者禁食時仍需繼續胰島素治療(減量50%)
+  - 厭食或嘔吐時及早就診
+  - 避免長時間禁食
+  - 監測血酮(尤其厭食或生病時)
+  - 獸醫慎用SGLT2抑制劑(人醫常見誘因,獸醫較少用)

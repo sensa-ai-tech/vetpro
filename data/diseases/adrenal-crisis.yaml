@@ -1,0 +1,87 @@
+slug: adrenal-crisis
+nameEn: Adrenal Crisis
+nameZh: 腎上腺危象
+bodySystem: urinary
+description: 急性腎上腺皮質功能不全導致嚴重低皮質醇及醛固酮缺乏,引發循環衰竭、電解質紊亂及休克,為內分泌急症需立即治療。
+
+aliases:
+  - { alias: 愛迪生氏危象, language: zh }
+  - { alias: Addisonian crisis, language: en }
+  - { alias: Acute adrenal insufficiency, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 可見於愛迪生氏症急性發作或庫興氏症治療過度
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓罕見,多為醫源性(類固醇突然停藥)
+
+etiology:
+  categories:
+    - name: 原發性腎上腺功能不全
+      examples:
+        - 愛迪生氏症(自體免疫性腎上腺皮質破壞)
+        - 腎上腺出血或梗塞
+        - 雙側腎上腺切除術後
+        - Mitotane或Trilostane過量
+    - name: 繼發性腎上腺功能不全
+      examples:
+        - 長期類固醇治療後突然停藥
+        - 垂體功能低下(ACTH分泌不足)
+    - name: 誘發因素
+      examples:
+        - 壓力事件(手術、麻醉、感染)
+        - 胃腸道疾病導致脫水
+        - 外傷
+
+clinicalSigns:
+  early:
+    - 厭食、嘔吐、腹瀉
+    - 精神沉鬱、虛弱
+    - 脫水
+  progressive:
+    - 嚴重休克(黏膜蒼白、微血管再充填延遲)
+    - 心搏過緩(高鉀血症)
+    - 低體溫
+    - 虛脫、昏迷
+    - 心律不整
+
+diagnosis:
+  primaryTests:
+    - name: 電解質
+      notes: "低鈉(<140 mEq/L)、高鉀(>5.5 mEq/L)、Na:K <27:1(典型<23:1)"
+    - name: 血液生化
+      notes: "低血糖、氮血症(BUN/肌酐升高)、低白蛋白、高鈣"
+    - name: ACTH刺激試驗
+      notes: "基礎及post-ACTH皮質醇均低(<55 nmol/L 或 <2 μg/dL),但緊急時不等結果先治療"
+    - name: 心電圖
+      notes: "高鉀血症:T波高尖、P波消失、QRS波增寬、心搏過緩"
+  differentialDiagnoses:
+    - 胃腸道疾病(嘔吐腹瀉)
+    - 腎衰竭(也有高鉀、氮血症)
+    - 敗血性休克
+    - 低血容性休克
+
+treatment:
+  medical:
+    - 立即靜脈輸液復甦(0.9% NaCl 80-90 mL/kg/hr 第1小時,後續維持)
+    - 糖皮質激素替代(Dexamethasone 0.5-1 mg/kg IV 或 Hydrocortisone 5 mg/kg IV)
+    - 葡萄糖補充(若低血糖,2.5-5% dextrose)
+    - 高鉀血症處理(若K>7 mEq/L):
+      - Regular insulin 0.1-0.25 U/kg IV + 1-2 g glucose/U insulin
+      - 10% calcium gluconate 0.5-1 mL/kg IV緩慢注射(保護心臟)
+    - 穩定後改為口服類固醇(Prednisolone 0.5-1 mg/kg PO BID)
+    - 確診後長期補充鹽皮質激素(Fludrocortisone 0.01-0.02 mg/kg PO SID-BID)
+    - 密集監測(電解質、血糖、血壓每2-4小時)
+
+prognosis:
+  general: "及時診斷並治療預後良好,多數犬可迅速穩定;延誤治療或嚴重併發症(心律不整、腎衰竭)者預後保守。需終生激素補充。"
+
+prevention:
+  - 愛迪生氏症犬避免壓力事件
+  - 長期類固醇治療勿突然停藥(需逐步減量)
+  - 庫興氏症治療定期監測ACTH刺激試驗
+  - 手術或重病時補充額外糖皮質激素

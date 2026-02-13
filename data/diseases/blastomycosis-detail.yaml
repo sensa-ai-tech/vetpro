@@ -1,0 +1,82 @@
+slug: blastomycosis-detail
+nameEn: Blastomycosis Detail
+nameZh: 芽生菌病詳述
+bodySystem: infectious
+description: 芽生菌病是由皮炎芽生菌(Blastomyces dermatitidis)引起的全身性真菌感染,主要經吸入土壤中的孢子感染,侵犯肺臟、皮膚、眼睛及骨骼。此病主要分布於北美中西部及東南部河流流域,犬較貓易感,未治療死亡率極高,需長期抗真菌治療。
+
+aliases:
+  - { alias: 芽生菌症, language: zh }
+  - { alias: Blasto, language: en }
+  - { alias: Gilchrist病, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 流行區(美國中西部、東南部)年輕大型犬、戶外活動犬風險最高,運動型犬種易感
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓感染較犬少見,但病情通常更嚴重,死亡率更高
+
+etiology:
+  categories:
+    - name: 全身性真菌感染
+      examples:
+        - 吸入Blastomyces dermatitidis孢子(土壤、腐植質、水邊環境)
+        - 孢子在肺部轉為酵母型並播散
+        - 流行區:北美中西部(威斯康辛、密西根)、東南部河流流域
+        - 高風險環境:河岸、湖邊、森林土壤
+
+clinicalSigns:
+  early:
+    - 肺部:咳嗽、呼吸困難、運動不耐
+    - 發燒、精神沉鬱、食慾下降
+    - 體重減輕
+  progressive:
+    - 皮膚:多發性結節、潰瘍、滲出(常見於鼻樑、趾間)
+    - 眼睛:前葡萄膜炎、視網膜剝離、失明
+    - 骨骼:跛行、骨溶解性病灶
+    - 淋巴結腫大
+    - 中樞神經:癲癇、共濟失調(罕見)
+    - 呼吸衰竭、ARDS
+
+diagnosis:
+  primaryTests:
+    - name: 細胞學檢查
+      notes: "淋巴結、皮膚病灶吸出物可見典型厚壁芽生酵母(8-20 μm,寬基底出芽)"
+    - name: 胸部X光
+      notes: "肺間質或結節狀浸潤(彌漫性、軍粒狀或結節性)"
+    - name: 尿液抗原檢測
+      notes: "Blastomyces抗原ELISA(敏感性85-90%,可用於診斷及監測治療)"
+    - name: 血清學檢查
+      notes: "抗體檢測(敏感性低,不建議單獨用於診斷)"
+    - name: 真菌培養
+      notes: "組織或體液培養(需2-4週,BSL-3實驗室)"
+    - name: 組織病理
+      notes: "化膿性肉芽腫性炎症,PAS或GMS染色可見酵母"
+  differentialDiagnoses:
+    - 其他全身性真菌病(組織胞漿菌病、球黴菌病)
+    - 肺腫瘤
+    - 細菌性肺炎
+    - 淋巴瘤
+    - 結核病
+
+treatment:
+  medical:
+    - 輕中度病例:Itraconazole 5-10 mg/kg PO BID(與食物一起服用)x 3-6個月
+    - 重症或中樞神經侵犯:Amphotericin B 0.5-1 mg/kg IV緩慢輸注,隔日給藥x 8-12次,後改Itraconazole
+    - 替代藥物:Fluconazole 5-10 mg/kg PO BID x 3-6個月(中樞神經侵犯較佳)
+    - 支持性照護:氧氣支持、靜脈輸液、營養支持
+    - 眼部治療:局部類固醇(Prednisolone acetate 1%每6-8小時)+全身抗真菌
+    - 監測:尿液抗原每月檢測(下降表示有效)、肝腎功能
+    - 療程:症狀消失後再延長1-2個月,最少3個月
+
+prognosis:
+  general: "預後謹慎。早期診斷及治療,存活率約70-80%。中樞神經侵犯、ARDS或眼部病變預後較差,死亡率可達40-60%。即使治療成功,復發率約20-30%,需長期監測。"
+
+prevention:
+  - 流行區避免犬貓在河岸、湖邊挖掘土壤
+  - 無有效疫苗
+  - 流行區出現呼吸道症狀立即就醫
+  - 環境無法有效消毒(真菌孢子抵抗力強)

@@ -1,0 +1,90 @@
+slug: insecticide-toxicosis-general
+nameEn: Insecticide Toxicosis General
+nameZh: 殺蟲劑中毒總論
+bodySystem: toxicology
+description: 攝入或接觸各類殺蟲劑引發的中毒反應總論,涵蓋有機磷、氨基甲酸酯、擬除蟲菊酯、新煙鹼類等多種化學類別。臨床表現和治療策略依殺蟲劑類型而異,正確辨識產品類別為治療關鍵。
+
+aliases:
+  - { alias: 農藥中毒, language: zh }
+  - { alias: Pesticide Poisoning, language: en }
+  - { alias: 殺蟲劑毒性, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬常因環境噴灑、跳蚤滴劑誤用或舔舐污染毛髮而中毒
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 貓對擬除蟲菊酯極度敏感,誤用犬用產品為常見致命原因
+
+etiology:
+  categories:
+    - name: 有機磷類
+      examples:
+        - Chlorpyrifos, Diazinon, Malathion
+        - 作用機轉:不可逆性膽鹼酯酶抑制
+    - name: 氨基甲酸酯類
+      examples:
+        - Carbaryl, Propoxur, Aldicarb
+        - 作用機轉:可逆性膽鹼酯酶抑制
+    - name: 擬除蟲菊酯類
+      examples:
+        - Permethrin, Cypermethrin, Deltamethrin
+        - 作用機轉:鈉離子通道延長開放
+    - name: 新煙鹼類
+      examples:
+        - Imidacloprid, Acetamiprid
+        - 作用機轉:菸鹼型乙醯膽鹼受體促效劑
+
+clinicalSigns:
+  early:
+    - 過度流涎
+    - 嘔吐
+    - 瞳孔變化(縮小或放大,依類型)
+    - 肌肉顫動
+  progressive:
+    - 有機磷/氨基甲酸酯:SLUD 症候群(流涎、淚液分泌、排尿、排便)、縮瞳、心搏過緩
+    - 擬除蟲菊酯:震顫、過度興奮、癲癇發作、體溫過高
+    - 新煙鹼類:嗜睡或興奮、共濟失調
+    - 呼吸困難、虛脫
+
+diagnosis:
+  primaryTests:
+    - name: 病史詢問
+      notes: "**關鍵**:確認殺蟲劑產品名稱、活性成分、接觸途徑和時間"
+    - name: 臨床症候群辨識
+      notes: "膽鹼性症狀(有機磷/氨基甲酸酯) vs 興奮性症狀(擬除蟲菊酯)"
+    - name: 全血膽鹼酯酶活性
+      notes: "有機磷/氨基甲酸酯中毒時顯著下降(<50% 正常值)"
+    - name: Atropine 反應測試
+      notes: "有機磷中毒對 atropine 反應良好,可作診斷性治療"
+  differentialDiagnoses:
+    - 不同類別殺蟲劑中毒需鑑別
+    - 其他膽鹼性中毒(蕈類、尼古丁)
+    - 震顫毒素中毒(黴菌毒素)
+    - 癲癇疾病
+
+treatment:
+  medical:
+    - 去污染:皮膚徹底清洗(戴手套避免人員接觸),催吐(口服中毒)
+    - 活性碳 1-4 g/kg PO
+    - "**有機磷/氨基甲酸酯**:"
+    - Atropine 0.2-2 mg/kg IV,1/4 劑量 IV 測試,後依反應調整至黏膜乾燥
+    - Pralidoxime (2-PAM) 20 mg/kg IV 緩慢,每8-12小時(僅有機磷,氨基甲酸酯禁用)
+    - "**擬除蟲菊酯(特別是貓)**:"
+    - Methocarbamol 50-220 mg/kg IV 緩慢控制震顫
+    - 體溫管理,靜脈脂質乳劑 1.5 mL/kg IV bolus(嚴重病例)
+    - Diazepam 控制癲癇
+    - 支持治療:靜脈輸液、抗嘔吐藥、密集監護
+
+prognosis:
+  general: "預後取決於殺蟲劑類型、劑量、治療時機。有機磷中毒及時治療預後尚可,貓誤用高濃度 permethrin 預後保留。氨基甲酸酯預後較有機磷佳(可逆性)。"
+
+prevention:
+  - 絕不使用犬用擬除蟲菊酯產品於貓
+  - 遵循產品標示的物種、體重和使用頻率
+  - 殺蟲劑儲存於寵物無法接觸處
+  - 環境噴灑後確保安全等待期
+  - 諮詢獸醫師選擇適當的體外寄生蟲防治產品

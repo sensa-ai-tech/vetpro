@@ -1,0 +1,84 @@
+slug: thyroid-storm
+nameEn: Thyroid Storm
+nameZh: 甲狀腺風暴
+bodySystem: endocrine
+description: 甲狀腺亢進急性惡化導致極度甲狀腺素過多,引發高熱、心跳過速、神經症狀及多器官衰竭,為罕見但致命的內分泌急症。
+
+aliases:
+  - { alias: 甲狀腺危象, language: zh }
+  - { alias: Thyrotoxic crisis, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬甲狀腺亢進罕見,thyroid storm極少見
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓甲狀腺亢進常見但thyroid storm罕見,多發生於未治療或治療中斷病例
+
+etiology:
+  categories:
+    - name: 誘發因素
+      examples:
+        - 甲狀腺亢進未治療或治療突然中斷
+        - 甲狀腺手術或放射碘治療後甲狀腺素突然釋放
+        - 壓力事件(手術、麻醉、感染、外傷)
+        - 碘攝取過多
+    - name: 病理機制
+      examples:
+        - 極度甲狀腺素過多導致高代謝狀態
+        - 心血管系統過度刺激
+        - 體溫調節失控
+        - 多器官代償失調
+
+clinicalSigns:
+  early:
+    - 極度心跳過速(>240 bpm貓,>180 bpm犬)
+    - 高熱(>40°C)
+    - 極度焦躁不安、過動
+  progressive:
+    - 呼吸窘迫、喘息
+    - 嘔吐、腹瀉
+    - 神經症狀(震顫、癲癇、昏迷)
+    - 心律不整、心衰竭
+    - 休克、多器官衰竭
+    - 死亡
+
+diagnosis:
+  primaryTests:
+    - name: 血清T4
+      notes: "極度升高(>100 nmol/L 或 >8 μg/dL),但緊急時依臨床判斷不等報告"
+    - name: 心電圖
+      notes: "竇性心搏過速、心律不整、心室性心搏過速"
+    - name: 血液生化
+      notes: "肝酶升高、低鉀血症、高血糖、氮血症"
+    - name: 血壓
+      notes: "可能高血壓或低血壓(休克期)"
+  differentialDiagnoses:
+    - 敗血性休克
+    - 中暑
+    - 中毒(交感神經興奮劑)
+    - 嗜鉻細胞瘤危象
+
+treatment:
+  medical:
+    - 抗甲狀腺藥物高劑量(Methimazole 5-10 mg PO/IV 每8小時)
+    - β-blocker控制心跳(Propranolol 0.02-0.06 mg/kg IV緩慢注射 或 0.2-1 mg/kg PO TID)
+    - 降溫(涼水浴、風扇、酒精擦拭),目標<39.5°C
+    - 靜脈輸液復甦(Lactated Ringer's solution避免過快)
+    - 糖皮質激素(Dexamethasone 0.1-0.2 mg/kg IV,抑制T4轉為T3)
+    - 心律不整處理(Esmolol 0.05-0.1 mg/kg IV CRI)
+    - 氧氣治療
+    - 監測體溫、心率、血壓、電解質每1-2小時
+    - 治療誘發因素(感染、脫水等)
+
+prognosis:
+  general: "預後不良,死亡率極高(人醫10-30%)。存活取決於早期識別、積極治療及多器官支持。延誤治療常致死。"
+
+prevention:
+  - 甲狀腺亢進犬貓定期服藥不可中斷
+  - 手術或麻醉前先穩定甲狀腺功能
+  - 避免壓力事件
+  - 定期監測T4確保控制良好

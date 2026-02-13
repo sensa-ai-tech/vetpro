@@ -1,0 +1,73 @@
+slug: illicit-drug-exposure
+nameEn: Illicit Drug Exposure
+nameZh: 非法藥物暴露
+bodySystem: toxicology
+description: 寵物可能意外暴露於大麻、安非他命、古柯鹼等非法藥物,引起從鎮靜到過度興奮的廣泛症狀。需緊急處理。
+
+aliases:
+  - { alias: 毒品暴露, language: zh }
+  - { alias: Recreational Drug Toxicity, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 誤食或二手煙暴露
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 較少暴露
+
+etiology:
+  categories:
+    - name: 大麻(Marijuana)
+      examples:
+        - 誤食食品、菸草或濃縮製品
+    - name: 興奮劑
+      examples:
+        - 安非他命、甲基安非他命、古柯鹼
+    - name: 鴉片類
+      examples:
+        - 海洛因、芬太尼
+
+clinicalSigns:
+  early:
+    - 大麻: 共濟失調、嗜睡、尿失禁
+    - 興奮劑: 過度興奮、心搏過速、高血壓
+    - 鴉片: 瞳孔縮小、呼吸抑制、鎮靜
+  progressive:
+    - 大麻: 癲癇(高劑量)、昏迷
+    - 興奮劑: 高體溫、癲癇、心律不整
+    - 鴉片: 呼吸衰竭、死亡
+
+diagnosis:
+  primaryTests:
+    - name: 暴露史(若飼主願意提供)
+      notes: "詢問可能接觸的物質"
+    - name: 尿液藥物篩檢
+      notes: "檢測THC、安非他命、鴉片代謝物"
+  differentialDiagnoses:
+    - 其他中樞神經系統疾病
+
+treatment:
+  medical:
+    - 大麻:
+      - 支持性療法,靜脈輸液
+      - 活性碳(若口服2小時內)
+      - 抗癲癇藥(若需要)
+    - 興奮劑:
+      - 降溫(若體溫>40°C)
+      - Acepromazine鎮靜
+      - 控制心律不整及血壓
+    - 鴉片:
+      - Naloxone 0.01-0.04 mg/kg IV(解毒劑)
+      - 呼吸支持
+    - 所有案例: 密集監護24-72小時
+
+prognosis:
+  general: "大麻中毒預後良好,罕見死亡。興奮劑及鴉片類可能致命,尤其芬太尼劑量極小即可致死。"
+
+prevention:
+  - 妥善存放所有物質
+  - 避免寵物暴露於二手煙
+  - 懷疑暴露應立即就醫

@@ -1,0 +1,76 @@
+slug: anesthesia-complications
+nameEn: Anesthesia Complications
+nameZh: 麻醉併發症
+bodySystem: emergency
+description: 麻醉相關的不良事件,包括心血管、呼吸、代謝及其他系統併發症。早期識別及處理可降低死亡率。
+
+aliases:
+  - { alias: 麻醉風險, language: zh }
+  - { alias: Anesthetic adverse events, language: en }
+  - { alias: 麻醉意外, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 整體死亡率0.1-0.2%(健康犬)
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓麻醉死亡率略高於犬(0.2-0.4%)
+
+etiology:
+  categories:
+    - name: 心血管併發症
+      examples:
+        - 低血壓(MAP<60 mmHg)
+        - 心律不整
+        - 心跳停止
+    - name: 呼吸併發症
+      examples:
+        - 呼吸抑制或暫停
+        - 氣道阻塞
+        - 低氧血症
+    - name: 其他
+      examples:
+        - 低體溫(<36°C)
+        - 惡性高熱(罕見)
+        - 喉痙攣(貓)
+
+clinicalSigns:
+  early:
+    - 低血壓:黏膜蒼白、毛細管再充盈時間延長
+    - 呼吸抑制:SpO2下降、ETCO2異常
+    - 低體溫:體溫<37°C、恢復延遲
+  progressive:
+    - 組織灌流不足:乳酸上升、尿量減少
+    - 嚴重低氧:發紺、心律不整
+    - 心跳停止
+
+diagnosis:
+  primaryTests:
+    - name: 持續監控
+      notes: "心電圖、血壓、SpO2, ETCO2, 體溫"
+    - name: 血液檢查
+      notes: "血氣、乳酸、電解質"
+  differentialDiagnoses:
+    - 正常麻醉變化
+    - 器械故障或讀值錯誤
+
+treatment:
+  medical:
+    - 低血壓:增加靜脈輸液10-20 mL/kg快速,Dopamine 5-10 μg/kg/min CRI
+    - 呼吸抑制:輔助通氣、減少麻醉深度、Doxapram 1-2 mg/kg IV
+    - 低體溫:強制暖空氣、溫暖輸液
+    - 心跳停止:CPR(胸外按壓100-120/min、Epinephrine 0.01 mg/kg IV)
+    - 喉痙攣:Propofol小劑量IV、Lidocaine噴霧喉頭
+
+prognosis:
+  general: "早期發現及處理多數併發症可逆。心跳停止復甦成功率<10%。高風險患者(ASA III-V)併發症率顯著增加。適當監控及準備為關鍵。"
+
+prevention:
+  - 術前完整評估及ASA分級
+  - 適當監控設備
+  - 訓練有素的麻醉監控人員
+  - 備妥急救藥物及設備
+  - 高風險患者增加監控頻率

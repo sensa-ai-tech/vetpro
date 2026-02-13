@@ -1,0 +1,87 @@
+slug: adrenal-pheochromocytoma-detail
+nameEn: Adrenal Pheochromocytoma Detail
+nameZh: 腎上腺嗜鉻細胞瘤詳論
+bodySystem: urinary
+description: 腎上腺髓質嗜鉻細胞腫瘤,分泌過量兒茶酚胺(腎上腺素、正腎上腺素)導致高血壓、心律不整及代謝異常,手術風險極高需謹慎麻醉管理。
+
+aliases:
+  - { alias: 嗜鉻細胞瘤, language: zh }
+  - { alias: Pheochromocytoma, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 中老年犬,約50%為惡性,常侵犯後腔靜脈或轉移
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 極罕見
+
+etiology:
+  categories:
+    - name: 腫瘤特性
+      examples:
+        - 起源於腎上腺髓質嗜鉻細胞
+        - 分泌兒茶酚胺(腎上腺素、正腎上腺素)
+        - 約50%為惡性(可轉移至肺、肝、淋巴結)
+        - 可能侵犯後腔靜脈形成血栓
+    - name: 病理生理
+      examples:
+        - 兒茶酚胺過多導致α及β腎上腺素受體過度刺激
+        - 血管收縮致高血壓
+        - 心肌β受體刺激致心律不整
+        - 代謝亢進(高血糖、脂肪分解)
+
+clinicalSigns:
+  early:
+    - 間歇性虛弱、虛脫
+    - 喘息、呼吸困難
+    - 多渴多尿(可能)
+  progressive:
+    - 持續性高血壓(>180 mmHg收縮壓)
+    - 心律不整(心房顫動、心室性心搏過速)
+    - 腹部腫塊(大型腫瘤)
+    - 腫瘤破裂:急性腹痛、虛脫、休克
+    - 眼底出血(高血壓視網膜病變)
+
+diagnosis:
+  primaryTests:
+    - name: 血壓測量
+      notes: "持續性高血壓(收縮壓>180 mmHg),但約30%病例血壓正常"
+    - name: 腹部超音波或CT
+      notes: "腎上腺腫塊(通常>2 cm),評估後腔靜脈侵犯及轉移"
+    - name: 血漿兒茶酚胺
+      notes: "正腎上腺素或腎上腺素升高(>2000 pg/mL),但敏感性有限"
+    - name: 尿VMA或Metanephrines
+      notes: "兒茶酚胺代謝產物升高,但獸醫常不可測"
+    - name: 胸腔X光或CT
+      notes: "評估肺部轉移"
+  differentialDiagnoses:
+    - 腎上腺皮質腫瘤
+    - 其他原因高血壓(腎臟病、庫興氏症)
+    - 心臟病引起心律不整
+    - 甲狀腺亢進(貓)
+
+treatment:
+  medical:
+    - 術前準備(至少1-2週):
+      - α-blocker(Phenoxybenzamine 0.25-1 mg/kg PO BID,逐步增量)
+      - β-blocker(Propranolol 0.2-1 mg/kg PO TID,僅在α-blocker後使用)
+      - 目標血壓<160/95 mmHg
+    - 手術腎上腺切除術:
+      - 麻醉中密集監測血壓(動脈導管)
+      - 術中備Nitroprusside(高血壓危象)及Norepinephrine(低血壓)
+      - 小心操作避免腫瘤擠壓釋放兒茶酚胺
+    - 惡性或轉移病例:
+      - 姑息性治療(α/β-blocker長期控制)
+      - 化療(Doxorubicin)效果有限
+    - 術後監測血壓及電解質(對側腎上腺功能)
+
+prognosis:
+  general: "良性且完全切除者預後尚可,中位存活>2年;惡性或轉移者預後不良,中位存活<1年。手術死亡率約10-30%,術中高血壓危象或心律不整為主要風險。"
+
+prevention:
+  - 中老年犬定期健康檢查包含血壓測量
+  - 腎上腺腫塊偶然發現時評估功能性
+  - 手術前充分術前準備降低風險

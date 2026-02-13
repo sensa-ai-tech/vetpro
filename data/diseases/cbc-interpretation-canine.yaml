@@ -1,0 +1,64 @@
+slug: cbc-interpretation-canine
+nameEn: CBC Interpretation Canine
+nameZh: 犬全血球計數判讀
+bodySystem: other
+description: 犬全血球計數(CBC)的系統性判讀,包括紅血球、白血球、血小板數量及型態評估。為診斷貧血、感染、發炎、凝血異常的基礎檢查,需結合臨床症狀及其他檢查綜合判斷。
+
+aliases:
+  - { alias: 犬血球計數, language: zh }
+  - { alias: Complete blood count dog, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 所有疾病犬隻都應進行CBC評估
+
+etiology:
+  categories:
+    - name: 紅血球評估
+      examples:
+        - 紅血球數(RBC)、血紅素(Hb)、血比容(HCT/PCV)
+        - MCV、MCH、MCHC(紅血球指數)
+        - 網狀紅血球(再生性評估)
+    - name: 白血球評估
+      examples:
+        - 白血球總數(WBC)
+        - 白血球分類(嗜中性球、淋巴球、單核球、嗜酸性球、嗜鹼性球)
+        - 左移(band cells增加)
+
+clinicalSigns:
+  early:
+    - CBC為診斷工具
+  progressive:
+    - 貧血症狀、感染症狀、凝血異常
+
+diagnosis:
+  primaryTests:
+    - name: 貧血評估
+      notes: "PCV正常犬37-55%,<30%為中度貧血,<20%為重度"
+    - name: 再生性評估
+      notes: "網狀紅血球>60,000/μL為再生性"
+    - name: 白血球異常
+      notes: "白血球增多(感染/發炎)或減少(病毒感染/骨髓抑制)"
+    - name: 血小板評估
+      notes: "正常150-400×10^3/μL,<50×10^3風險出血"
+  differentialDiagnoses:
+    - 貧血(再生性/非再生性)
+    - 感染或發炎
+    - 白血病
+    - 血小板減少症
+
+treatment:
+  medical:
+    - CBC為診斷工具
+    - 依診斷結果治療(輸血、抗生素、化療等)
+
+prognosis:
+  general: "CBC為基礎但重要的血液檢查,提供全身健康概況。需系統性判讀並結合臨床症狀。"
+
+prevention:
+  - 正確採血技術避免溶血
+  - EDTA紫頭管採血
+  - 血液抹片評估細胞型態
+  - 定期追蹤評估治療反應

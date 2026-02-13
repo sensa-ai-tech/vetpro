@@ -1,0 +1,68 @@
+slug: idioventricular-rhythm
+nameEn: Idioventricular Rhythm
+nameZh: 心室自主性心律
+bodySystem: cardiac
+description: 心室異位起搏點控制心跳，心室率緩慢且不規則。通常提示嚴重心臟疾病或高度房室傳導阻滯。
+
+aliases:
+  - { alias: 特發性心室節律, language: zh }
+  - { alias: Ventricular Escape Rhythm, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 嚴重心臟疾病、高血鉀、Digoxin 毒性
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 罕見，多為嚴重疾病
+
+etiology:
+  categories:
+    - name: 高度房室傳導阻滯
+      examples:
+        - 完全性房室阻滯
+    - name: 電解質異常
+      examples:
+        - 高血鉀
+    - name: 藥物毒性
+      examples:
+        - Digoxin 中毒
+
+clinicalSigns:
+  early:
+    - 心跳緩慢且不規則
+    - 虛弱
+  progressive:
+    - 嚴重虛弱
+    - 暈厥
+    - 猝死風險
+
+diagnosis:
+  primaryTests:
+    - name: 心電圖
+      notes: "寬大 QRS 波 (> 0.08 秒)，心室率 < 40 bpm，P 波與 QRS 無關"
+    - name: 血液檢查
+      notes: "電解質 (鉀)、digoxin 濃度"
+    - name: 心臟超音波
+      notes: "評估結構性心臟病"
+  differentialDiagnoses:
+    - 完全性房室阻滯
+    - 嚴重竇性心搏過緩
+    - 心室性心搏過速
+
+treatment:
+  medical:
+    - 緊急: Atropine 0.04 mg/kg IV
+    - Calcium gluconate 10% 0.5-1 ml/kg IV slow (高血鉀)
+    - 停用 digoxin
+    - Pacemaker (definitive treatment)
+
+prognosis:
+  general: "預後不良；為嚴重心臟疾病或高度傳導阻滯的表現，需緊急處理及 pacemaker"
+
+prevention:
+  - 監測 digoxin 濃度
+  - 早期診斷及治療傳導阻滯
+  - 謹慎使用心跳抑制藥物

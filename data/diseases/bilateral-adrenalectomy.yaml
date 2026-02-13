@@ -1,0 +1,75 @@
+slug: bilateral-adrenalectomy
+nameEn: Bilateral Adrenalectomy
+nameZh: 雙側腎上腺切除術
+bodySystem: urinary
+description: 手術移除雙側腎上腺,用於治療雙側腎上腺腫瘤或嚴重垂體依賴性庫興氏症,術後需終生糖皮質激素及鹽皮質激素補充治療。
+
+aliases:
+  - { alias: 雙側腎上腺摘除, language: zh }
+  - { alias: Bilateral adrenal gland removal, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 罕見手術,通常用於內科治療無效的嚴重庫興氏症
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 極罕見,貓庫興氏症本身就少見
+
+etiology:
+  categories:
+    - name: 適應症
+      examples:
+        - 雙側腎上腺腫瘤
+        - 垂體依賴性庫興氏症內科治療失敗
+        - 嚴重庫興氏症併發症(難控制的糖尿病、血栓等)
+    - name: 手術風險
+      examples:
+        - 術中大出血(後腔靜脈損傷)
+        - 術後急性腎上腺功能不全
+        - 麻醉風險(庫興氏症犬併發症多)
+
+clinicalSigns:
+  early:
+    - 術後立即出現腎上腺功能不全症狀(若激素補充不足)
+    - 厭食、嘔吐、虛弱
+  progressive:
+    - 低血壓、休克(若未適當補充激素)
+    - 電解質紊亂(低鈉、高鉀)
+    - 低血糖
+    - 庫興氏症症狀消失(多渴多尿、腹部膨大改善)
+
+diagnosis:
+  primaryTests:
+    - name: 術前評估
+      notes: "ACTH刺激試驗、影像學確認雙側病變、全身健康評估"
+    - name: 術後監測
+      notes: "電解質(每4-8小時)、血糖、血壓、臨床症狀"
+    - name: ACTH刺激試驗
+      notes: "術後基礎及post-ACTH皮質醇均應極低,確認腎上腺切除完全"
+  differentialDiagnoses:
+    - 單側腎上腺切除(若僅單側病變)
+    - 內科治療(Trilostane或Mitotane)
+    - 垂體照射治療(PDH)
+
+treatment:
+  medical:
+    - 術前準備: Trilostane或Mitotane控制庫興氏症症狀數週
+    - 術中: Hydrocortisone 5 mg/kg IV 或 Dexamethasone 1 mg/kg IV
+    - 術後立即: Hydrocortisone 5 mg/kg IV 每6小時,持續24-48小時
+    - 轉為口服: Prednisolone 0.5-1 mg/kg PO BID(生理替代劑量)
+    - 鹽皮質激素補充: Fludrocortisone 0.01-0.02 mg/kg PO SID-BID
+    - 監測電解質並調整Fludrocortisone劑量(目標Na:K = 30-35:1)
+    - 壓力狀況時增加Prednisolone劑量1.5-2倍
+    - 靜脈輸液支持及密集監護
+    - 終生激素補充治療
+
+prognosis:
+  general: "手術死亡率約10-20%,存活者術後生活品質改善。需終生仔細監測激素補充劑量,預後取決於術前併發症嚴重程度及術後照護品質。"
+
+prevention:
+  - 優先考慮內科治療(Trilostane),手術為最後選擇
+  - 術前優化全身狀況(控制庫興氏症、糖尿病、高血壓等)
+  - 術後密集監測及激素補充

@@ -1,0 +1,71 @@
+slug: bronchoscopy
+nameEn: Bronchoscopy
+nameZh: 支氣管鏡檢查
+bodySystem: other
+description: 下呼吸道內視鏡檢查,評估氣管、支氣管結構及取樣。用於慢性咳嗽、氣道塌陷、腫塊或異物診斷治療。
+
+aliases:
+  - { alias: 支氣管內視鏡, language: zh }
+  - { alias: Tracheobronchoscopy, language: en }
+  - { alias: 氣管鏡, language: zh }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 慢性支氣管炎、氣管塌陷、異物常見
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓氣喘、腫瘤、異物評估
+
+etiology:
+  categories:
+    - name: 診斷適應症
+      examples:
+        - 慢性咳嗽原因不明
+        - 氣道狹窄或塌陷
+        - 懷疑腫瘤或異物
+    - name: 治療適應症
+      examples:
+        - 異物取出
+        - 支氣管肺泡灌洗(BAL)
+        - 氣道擴張或支架置入
+
+clinicalSigns:
+  early:
+    - 術後短暫咳嗽增加
+    - 輕微喘鳴
+    - 少量血絲痰(活檢後)
+  progressive:
+    - 症狀改善(若異物取出或治療)
+    - BAL結果指引治療
+
+diagnosis:
+  primaryTests:
+    - name: 支氣管鏡視診
+      notes: "評估氣道塌陷程度、黏膜、分泌物"
+    - name: 支氣管肺泡灌洗
+      notes: "細胞學、培養、PCR分析"
+    - name: 組織活檢
+      notes: "可疑腫塊或黏膜異常處"
+  differentialDiagnoses:
+    - 胸腔CT(非侵入但無細胞學)
+    - 經皮肺活檢(氣胸風險)
+
+treatment:
+  medical:
+    - 麻醉:全身麻醉,短效肌鬆劑避免咳嗽
+    - 氧氣供應:經內視鏡通道或側孔給氧
+    - BAL技術:無菌食鹽水1-2 mL/kg分次灌洗
+    - 術後:氧氣支持,監控呼吸窘迫
+    - 抗生素:依培養結果
+
+prognosis:
+  general: "安全性高,嚴重併發症罕見。BAL診斷率60-80%。氣道塌陷可量化評估。異物取出成功率>90%,避免開胸手術。"
+
+prevention:
+  - 術前胸腔X光評估
+  - 麻醉監控氧合及通氣
+  - 無菌技術避免醫源性感染
+  - 術後監控氣道痙攣或出血

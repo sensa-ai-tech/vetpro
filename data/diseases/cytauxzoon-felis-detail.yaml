@@ -1,0 +1,89 @@
+slug: cytauxzoon-felis-detail
+nameEn: Cytauxzoon Felis Detail
+nameZh: 貓細胞蟲病詳論
+bodySystem: infectious
+description: 由Cytauxzoon felis原蟲經壁蝨傳播的致命性血液寄生蟲病,主要見於美國南部。病原體侵犯單核球及紅血球,引起血管阻塞、多器官衰竭及高死亡率。
+
+aliases:
+  - { alias: 貓細胞原蟲病, language: zh }
+  - { alias: 致死性貓焦蟲病, language: zh }
+  - { alias: Cytauxzoonosis, language: en }
+  - { alias: Bobcat Fever, language: en }
+
+species:
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 僅見於北美洲,家貓感染後死亡率曾高達90%以上
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: rare
+    notes: 犬不易感染,野生山貓(Bobcat)為天然宿主
+
+etiology:
+  categories:
+    - name: 病原體
+      examples:
+        - Cytauxzoon felis原蟲
+    - name: 傳播途徑
+      examples:
+        - 壁蝨叮咬(Dermacentor variabilis, Amblyomma americanum)
+        - 山貓(Bobcat)為保蟲宿主,家貓為偶發宿主
+    - name: 致病機轉
+      examples:
+        - 裂殖體期侵犯血管內皮及單核球,阻塞微血管
+        - 紅血球期破壞紅血球,引起溶血
+
+clinicalSigns:
+  early:
+    - 急性高燒(40-41.5°C),精神極度沉鬱
+    - 食慾廢絕,脫水
+    - 呼吸困難,張口呼吸
+    - 黏膜蒼白或黃疸
+  progressive:
+    - 體溫過低(<37°C),休克
+    - 多器官衰竭(肝腎肺)
+    - DIC,出血傾向
+    - 昏迷,死亡(通常發病後3-7天)
+
+diagnosis:
+  primaryTests:
+    - name: 血液抹片
+      notes: "紅血球內見印戒型蟲體(1-2 μm),裂殖體期見於單核球"
+    - name: 全血球計數
+      notes: "貧血(PCV 10-25%),血小板減少,白血球增多或減少"
+    - name: 血液生化
+      notes: "膽紅素升高(\">5 mg/dL\"),ALT/AST顯著升高,氮血症"
+    - name: PCR檢測
+      notes: "確診及早期診斷,死後組織亦可檢測"
+    - name: 組織切片
+      notes: "肺、肝、脾、淋巴結見大量裂殖體阻塞血管"
+  differentialDiagnoses:
+    - 其他血液寄生蟲(Babesia, Mycoplasma)
+    - 敗血症或毒血症
+    - 急性肝腎衰竭其他原因
+    - 貓傳染性腹膜炎(FIP)
+    - 嚴重脫水或熱衰竭
+
+treatment:
+  medical:
+    - Atovaquone 15 mg/kg PO q8h + Azithromycin 10 mg/kg PO q24h,盡早開始(首選)
+    - Imidocarb 2-3 mg/kg SC q14天,2-3次(早期有效,單獨使用死亡率仍高)
+    - 積極支持療法:
+      - 靜脈輸液(LRS 60-80 mL/kg/day),糾正脫水及電解質
+      - 輸血:PCV<15%,給予全血或濃縮紅血球
+      - 氧氣治療,維持SpO2>95%
+      - 抗凝治療:Heparin 100-200 IU/kg SC q8h(預防DIC)
+    - Enrofloxacin 5 mg/kg IV/PO q24h預防繼發細菌感染
+  critical:
+    - 重症照護:24小時監測,溫控,營養管灌
+
+prognosis:
+  general: "歷史上死亡率>90%,近年早期積極治療(Atovaquone+Azithromycin)存活率提升至60%。存活關鍵在於24小時內開始治療。存活貓隻可能成為慢性帶原者,PCR可能持續陽性數月至數年。"
+
+prevention:
+  - 美國南部家貓全年壁蝨預防(Fluralaner, Selamectin)
+  - 室內飼養,避免接觸野生山貓
+  - 壁蝨流行季節(春夏)加強檢查
+  - 發燒貓隻立即就醫,提早診斷治療
+  - 無有效疫苗

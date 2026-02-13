@@ -1,0 +1,58 @@
+slug: polytrauma-management
+nameEn: Polytrauma Management
+nameZh: 多重創傷管理
+bodySystem: emergency
+description: 多重創傷涉及多個身體系統損傷,需系統性評估及優先處理威脅生命的問題。遵循ABCDE原則進行初步穩定。
+
+aliases:
+  - { alias: 複合性創傷, language: zh }
+  - { alias: Multiple Trauma Protocol, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 車禍、高處墜落常見
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: common
+    notes: 高樓症候群、車禍
+
+etiology:
+  categories:
+    - name: 創傷機轉
+      examples:
+        - 車禍傷、高處墜落、動物攻擊
+
+clinicalSigns:
+  early:
+    - 休克、意識改變
+    - 呼吸困難、出血
+  progressive:
+    - 多器官衰竭
+    - 凝血異常、DIC
+
+diagnosis:
+  primaryTests:
+    - name: ABCDE評估
+      notes: "氣道、呼吸、循環、神經、暴露檢查"
+    - name: FAST超音波
+      notes: "快速評估腹腔/胸腔積液"
+    - name: 全身X光
+      notes: "胸部、腹部、骨骼"
+  differentialDiagnoses:
+    - 單一系統創傷
+
+treatment:
+  medical:
+    - 氣道確保及氧氣
+    - 止血及靜脈輸液復甦
+    - 疼痛管理
+    - 依傷勢優先手術處理
+    - 密集監護
+
+prognosis:
+  general: "視傷勢嚴重度,及時處理可提高存活率。"
+
+prevention:
+  - 避免放養、高處開窗

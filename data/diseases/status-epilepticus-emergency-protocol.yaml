@@ -1,0 +1,60 @@
+slug: status-epilepticus-emergency-protocol
+nameEn: Status Epilepticus Emergency Protocol
+nameZh: 癲癇重積狀態緊急處理
+bodySystem: emergency
+description: 持續性癲癇發作(>5分鐘)或連續發作無恢復期。屬神經急症,需立即控制以避免腦損傷。
+
+aliases:
+  - { alias: 癲癇持續狀態, language: zh }
+  - { alias: SE Protocol, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 特發性癲癇、中毒
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 較少見
+
+etiology:
+  categories:
+    - name: 常見原因
+      examples:
+        - 特發性癲癇、中毒、腦炎、肝腦病變
+
+clinicalSigns:
+  early:
+    - 持續全身性癲癇>5分鐘
+  progressive:
+    - 高體溫、腦水腫、腦損傷
+
+diagnosis:
+  primaryTests:
+    - name: 臨床診斷
+      notes: "持續癲癇發作"
+    - name: 血糖、電解質
+      notes: "排除代謝原因"
+  differentialDiagnoses:
+    - 暈厥、震顫
+
+treatment:
+  medical:
+    - 第一線: Diazepam 0.5-1 mg/kg IV/直腸
+    - 第二線(10-15分鐘後仍發作):
+      - Midazolam 0.1-0.3 mg/kg IV/IM/鼻內
+      - Levetiracetam 60 mg/kg IV
+    - 第三線(難治性):
+      - Phenobarbital 20 mg/kg IV緩慢
+      - Propofol 4-8 mg/kg IV誘導,持續CRI
+    - 降溫、氧氣
+    - 治療根本病因
+    - ICU監護
+
+prognosis:
+  general: "及早控制預後較佳。持續>60分鐘可能永久性腦損傷或死亡。"
+
+prevention:
+  - 癲癇患者規律服藥
+  - 避免突然停藥

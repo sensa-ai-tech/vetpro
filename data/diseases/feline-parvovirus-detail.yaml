@@ -1,0 +1,77 @@
+slug: feline-parvovirus-detail
+nameEn: Feline Parvovirus Detail
+nameZh: 貓小病毒詳述
+bodySystem: infectious
+description: 貓小病毒(Feline Parvovirus, FPV)又稱貓泛白血球減少症病毒,是高度致命的病毒性疾病,主要侵犯快速分裂的細胞如骨髓、腸道上皮及胎兒組織。此病毒抵抗力極強,可在環境中存活數月至數年,經糞口傳播或垂直感染,未接種疫苗的幼貓死亡率可達75-90%。
+
+aliases:
+  - { alias: 貓泛白血球減少症, language: zh }
+  - { alias: Feline Panleukopenia, language: en }
+  - { alias: 貓瘟, language: zh }
+  - { alias: FPV, language: en }
+
+species:
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 未接種疫苗的幼貓(6週-4月齡)最易感且病情嚴重,成貓接種率高地區發病率已顯著降低
+
+etiology:
+  categories:
+    - name: 病毒性感染
+      examples:
+        - 貓小病毒(FPV)直接感染
+        - 糞口傳播(接觸感染貓糞便、嘔吐物)
+        - 垂直傳播(懷孕母貓傳染胎兒)
+        - 環境污染物接觸(病毒可存活數年)
+
+clinicalSigns:
+  early:
+    - 急性精神沉鬱、厭食
+    - 高燒(40-41.5°C)
+    - 嘔吐(初期可能僅吐黃水)
+    - 腹痛(弓背姿勢)
+  progressive:
+    - 嚴重水樣或血樣腹瀉
+    - 脫水、休克
+    - 白血球極度減少(<2000/μL)
+    - 繼發性敗血症
+    - 小腦發育不全(子宮內感染)
+    - 視網膜病變
+
+diagnosis:
+  primaryTests:
+    - name: 血液學檢查
+      notes: "嚴重白血球減少(<2000/μL),血小板減少,淋巴球及嗜中性球顯著下降"
+    - name: 糞便快篩
+      notes: "FPV抗原ELISA快篩(注意可能與疫苗交叉反應)"
+    - name: PCR檢測
+      notes: "糞便或血液FPV核酸檢測,可區分野生株與疫苗株"
+    - name: 生化檢查
+      notes: "低白蛋白、電解質失衡(低鉀、低鈉)"
+  differentialDiagnoses:
+    - 貓白血病病毒(FeLV)
+    - 貓免疫缺陷病毒(FIV)
+    - 沙門氏菌腸炎
+    - 貓傳染性腹膜炎(FIP)
+    - 急性中毒
+
+treatment:
+  medical:
+    - 積極靜脈輸液:LRS或Hartmann's 60-80 mL/kg/day,依脫水程度調整
+    - 止吐藥:Maropitant 1 mg/kg SC SID、Ondansetron 0.5 mg/kg IV BID
+    - 廣效抗生素預防敗血症:Cefovecin 8 mg/kg SC(長效)或Ampicillin 22 mg/kg IV TID
+    - 止瀉藥:Metronidazole 10-15 mg/kg PO BID
+    - 營養支持:鼻胃管或食道管餵食(禁食超過3天)
+    - 干擾素α(實驗性):106 IU/kg SC SID x 3-5天
+    - 血漿輸注(嚴重低白蛋白):10-20 mL/kg IV
+
+prognosis:
+  general: "預後謹慎至不良。幼貓(<12週)死亡率75-90%,成年貓經積極治療存活率可達50-80%。存活關鍵在於早期診斷、支持治療及防止繼發性敗血症。康復貓產生終身免疫,但可能短期排毒。"
+
+prevention:
+  - 常規接種FPV疫苗:幼貓6-8週齡開始,間隔3-4週補強至16週齡
+  - 成貓每年或每三年加強接種
+  - 隔離病貓至症狀消失後至少14天
+  - 環境嚴格消毒:使用次氯酸鈉(1:32稀釋)或過氧化氫消毒劑
+  - 新進貓隻隔離觀察2週並確認疫苗接種史

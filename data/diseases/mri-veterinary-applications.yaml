@@ -1,0 +1,70 @@
+slug: mri-veterinary-applications
+nameEn: MRI Veterinary Applications
+nameZh: 磁振造影應用
+bodySystem: other
+description: 獸醫臨床磁振造影(MRI)應用。MRI提供最佳軟組織對比,為腦部、脊髓疾病診斷黃金標準,也用於關節軟組織、腫瘤評估。無輻射,但需長時間麻醉且成本高。
+
+aliases:
+  - { alias: MRI掃描, language: zh }
+  - { alias: Magnetic resonance imaging, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: moderate
+    notes: 腦脊髓疾病診斷首選,關節軟組織評估
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: moderate
+    notes: 貓腦部腫瘤、脊髓病變診斷
+
+etiology:
+  categories:
+    - name: MRI優勢
+      examples:
+        - 最佳軟組織對比
+        - 無輻射暴露
+        - 多平面影像(橫切、矢切、冠切)
+        - 血管攝影(MRA)
+    - name: 主要應用
+      examples:
+        - 腦部疾病(腫瘤、腦炎、梗塞)
+        - 脊髓疾病(椎間盤、腫瘤、脊髓炎)
+        - 關節軟組織(韌帶斷裂、半月板)
+        - 鼻腔及副鼻竇疾病
+        - 肌肉骨骼腫瘤
+
+clinicalSigns:
+  early:
+    - MRI為診斷工具,需長時間全身麻醉(30-90分鐘)
+  progressive:
+    - 用於複雜神經系統疾病診斷
+
+diagnosis:
+  primaryTests:
+    - name: T1加權影像
+      notes: "解剖細節佳,脂肪高訊號"
+    - name: T2加權影像
+      notes: "水分高訊號,發炎水腫明顯"
+    - name: 對比劑增強(Gd-DTPA)
+      notes: "評估血腦障壁破壞、腫瘤血流"
+    - name: FLAIR序列
+      notes: "抑制腦脊液訊號,腦實質病變更清楚"
+  differentialDiagnoses:
+    - 腦部腫瘤(膠質瘤、腦膜瘤、淋巴瘤)
+    - 腦炎(GME、壞死性腦膜腦炎)
+    - 椎間盤突出(Hansen I/II型)
+    - 脊髓腫瘤
+
+treatment:
+  medical:
+    - MRI為診斷工具
+    - 依診斷結果決定治療方向(手術、放療、化療、支持治療)
+
+prognosis:
+  general: "MRI為神經系統疾病診斷黃金標準,提供最佳軟組織對比。需長時間麻醉,成本高,但診斷價值極高。"
+
+prevention:
+  - 需長時間全身麻醉,術前評估重要
+  - 金屬植入物可能禁忌或造成偽影
+  - 對比劑安全性高,腎功能不全慎用

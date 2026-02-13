@@ -1,0 +1,55 @@
+slug: coombs-test
+nameEn: Coombs Test
+nameZh: 庫氏試驗
+bodySystem: other
+description: 庫氏試驗(Coombs test)檢測紅血球表面抗體,診斷免疫溶血性貧血(IMHA)。直接庫氏試驗偵測紅血球表面IgG或補體,為IMHA診斷重要工具。
+
+aliases:
+  - { alias: 直接抗球蛋白試驗, language: zh }
+  - { alias: Direct Coombs test, language: en }
+  - { alias: DAT, language: en }
+
+species:
+  - speciesCommon: dog
+    speciesScientific: Canis lupus familiaris
+    prevalence: common
+    notes: 犬IMHA診斷
+  - speciesCommon: cat
+    speciesScientific: Felis catus
+    prevalence: rare
+    notes: 貓IMHA較少見
+
+etiology:
+  categories:
+    - name: 檢查原理
+      examples:
+        - 偵測紅血球表面抗體或補體
+
+clinicalSigns:
+  early:
+    - 庫氏試驗為診斷工具
+  progressive:
+    - 溶血性貧血症狀
+
+diagnosis:
+  primaryTests:
+    - name: 直接庫氏試驗陽性
+      notes: "紅血球表面有IgG、IgM或補體(C3)"
+    - name: IMHA診斷
+      notes: "再生性貧血+球形紅血球+庫氏試驗陽性"
+    - name: 偽陽性
+      notes: "某些疾病或藥物可致陽性"
+  differentialDiagnoses:
+    - 免疫溶血性貧血(IMHA)
+    - 藥物誘發溶血
+
+treatment:
+  medical:
+    - 庫氏試驗為診斷工具
+
+prognosis:
+  general: "庫氏試驗為IMHA診斷重要工具,但陰性不能排除IMHA。"
+
+prevention:
+  - EDTA血液採集
+  - 與血液抹片、網狀紅血球併用判讀
