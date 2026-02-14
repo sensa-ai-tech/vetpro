@@ -14,6 +14,8 @@ import { eq } from "drizzle-orm";
 import StagingTable from "@/components/StagingTable";
 import ReferenceList from "@/components/ReferenceList";
 
+// ─── 安全型別轉換工具 ────────────────────────────────────────
+
 function parseJson(val: string | null) {
   if (!val) return null;
   try {
@@ -23,18 +25,49 @@ function parseJson(val: string | null) {
   }
 }
 
-/** Safely convert any value to a renderable string */
+/** 任何值 → 可渲染字串（防止物件進入 JSX） */
 function toStr(val: unknown): string {
+  if (val == null) return "";
   if (typeof val === "string") return val;
-  if (val && typeof val === "object") {
+  if (typeof val === "number" || typeof val === "boolean") return String(val);
+  if (typeof val === "object") {
     const obj = val as Record<string, unknown>;
+    // {name, notes} pattern
     if (obj.name) {
       return obj.notes ? `${obj.name} — ${obj.notes}` : String(obj.name);
     }
+    // {general: "..."} pattern (prognosis)
+    if (obj.general && typeof obj.general === "string") return obj.general;
+    // key-value single entry like {"low dose": "sedation"}
+    const keys = Object.keys(obj);
+    if (keys.length === 1) return `${keys[0]}: ${obj[keys[0]]}`;
     return JSON.stringify(val);
   }
-  return String(val ?? "");
+  return String(val);
 }
+
+/** 確保值是陣列；單一字串 → 包成陣列；null → [] */
+function toArray(val: unknown): unknown[] {
+  if (val == null) return [];
+  if (Array.isArray(val)) return val;
+  if (typeof val === "string") return val.split(/[。；;]\s*/).filter(Boolean);
+  return [val];
+}
+
+/** 確保 diagnosis test 是 {name, notes?} 格式 */
+function toTestObj(val: unknown): { name: string; notes?: string } {
+  if (typeof val === "string") return { name: val };
+  if (val && typeof val === "object") {
+    const obj = val as Record<string, unknown>;
+    return {
+      name: String(obj.name ?? ""),
+      notes: obj.notes ? String(obj.notes) : undefined,
+    };
+  }
+  return { name: String(val ?? "") };
+}
+
+// ─── 資料查詢 ────────────────────────────────────────────────
 
 function getDisease(slug: string) {
   const disease = db
@@ -91,6 +124,8 @@ function getDisease(slug: string) {
   };
 }
 
+// ─── Metadata ────────────────────────────────────────────────
+
 export async function generateMetadata({
   params,
 }: {
@@ -104,6 +139,8 @@ export async function generateMetadata({
     description: disease.description || undefined,
   };
 }
+
+// ─── Page Component ──────────────────────────────────────────
 
 import {
   SPECIES_LABELS,
@@ -134,6 +171,12 @@ export default async function DiseasePage({
   const diagnosticAlgorithm = parseJson(disease.diagnosticAlgorithm);
   const clinicalPearls = parseJson(disease.clinicalPearls);
   const monitoringItems = parseJson(disease.monitoringItems);
+
+  // 安全取得 prognosis（DB 中可能是純字串或 JSON 如 '{"general":"..."}' ）
+  const prognosisRaw = disease.prognosis
+    ? parseJson(disease.prognosis) ?? disease.prognosis
+    : null;
+  const prognosisText = prognosisRaw ? toStr(prognosisRaw) : null;
 
   const siteUrl =
     process.env.NEXT_PUBLIC_SITE_URL || "https://vetpro.example.com";
@@ -221,7 +264,7 @@ export default async function DiseasePage({
           <h3 className="flex items-center gap-2 font-semibold text-danger">
             <span>⚠️</span> 急診注意
           </h3>
-          <p className="mt-1 text-sm">{disease.emergencyNotes}</p>
+          <p className="mt-1 text-sm">{toStr(disease.emergencyNotes)}</p>
         </div>
       )}
 
@@ -229,19 +272,20 @@ export default async function DiseasePage({
       <div className="grid gap-8 lg:grid-cols-3">
         <div className="space-y-8 lg:col-span-2">
           {/* Etiology */}
-          {etiology && (
+          {etiology && etiology.categories?.length > 0 && (
             <Section title="病因 Etiology">
-              {etiology.categories?.map(
-                (
-                  cat: { name: string; examples: string[] },
-                  i: number
-                ) => (
+              {etiology.categories.map(
+                (cat: { name: unknown; examples: unknown }, i: number) => (
                   <div key={i} className="mb-3">
-                    <h4 className="mb-1 text-sm font-semibold">{cat.name}</h4>
+                    <h4 className="mb-1 text-sm font-semibold">
+                      {toStr(cat.name)}
+                    </h4>
                     <ul className="list-inside list-disc space-y-0.5 text-sm text-muted">
-                      {cat.examples.map((ex: string, j: number) => (
-                        <li key={j}>{ex}</li>
-                      ))}
+                      {toArray(cat.examples).map(
+                        (ex: unknown, j: number) => (
+                          <li key={j}>{toStr(ex)}</li>
+                        )
+                      )}
                     </ul>
                   </div>
                 )
@@ -253,24 +297,24 @@ export default async function DiseasePage({
           {clinicalSigns && (
             <Section title="臨床症狀 Clinical Signs">
               <div className="grid gap-4 sm:grid-cols-3">
-                {clinicalSigns.early && (
+                {clinicalSigns.early?.length > 0 && (
                   <SignColumn
                     title="早期"
-                    signs={clinicalSigns.early}
+                    signs={toArray(clinicalSigns.early).map(toStr)}
                     color="text-accent"
                   />
                 )}
-                {clinicalSigns.progressive && (
+                {clinicalSigns.progressive?.length > 0 && (
                   <SignColumn
                     title="進展期"
-                    signs={clinicalSigns.progressive}
+                    signs={toArray(clinicalSigns.progressive).map(toStr)}
                     color="text-warning"
                   />
                 )}
-                {clinicalSigns.late && (
+                {clinicalSigns.late?.length > 0 && (
                   <SignColumn
                     title="晚期"
-                    signs={clinicalSigns.late}
+                    signs={toArray(clinicalSigns.late).map(toStr)}
                     color="text-danger"
                   />
                 )}
@@ -281,63 +325,63 @@ export default async function DiseasePage({
           {/* Diagnosis */}
           {diagnosis && (
             <Section title="診斷 Diagnosis">
-              {diagnosis.primaryTests && (
+              {diagnosis.primaryTests?.length > 0 && (
                 <div className="mb-3">
                   <h4 className="mb-1 text-sm font-semibold">主要檢測</h4>
                   <div className="space-y-2">
-                    {diagnosis.primaryTests.map(
-                      (
-                        t: { name: string; notes?: string },
-                        i: number
-                      ) => (
-                        <div
-                          key={i}
-                          className="rounded border border-border/50 bg-card px-3 py-2 text-sm"
-                        >
-                          <span className="font-medium">{t.name}</span>
-                          {t.notes && (
-                            <span className="ml-2 text-muted">
-                              — {t.notes}
-                            </span>
-                          )}
-                        </div>
-                      )
+                    {toArray(diagnosis.primaryTests).map(
+                      (t: unknown, i: number) => {
+                        const test = toTestObj(t);
+                        return (
+                          <div
+                            key={i}
+                            className="rounded border border-border/50 bg-card px-3 py-2 text-sm"
+                          >
+                            <span className="font-medium">{test.name}</span>
+                            {test.notes && (
+                              <span className="ml-2 text-muted">
+                                — {test.notes}
+                              </span>
+                            )}
+                          </div>
+                        );
+                      }
                     )}
                   </div>
                 </div>
               )}
-              {diagnosis.imaging && diagnosis.imaging.length > 0 && (
+              {diagnosis.imaging?.length > 0 && (
                 <div className="mb-3">
                   <h4 className="mb-1 text-sm font-semibold">影像學</h4>
                   <div className="space-y-2">
-                    {diagnosis.imaging.map(
-                      (
-                        t: { name: string; notes?: string },
-                        i: number
-                      ) => (
-                        <div
-                          key={i}
-                          className="rounded border border-border/50 bg-card px-3 py-2 text-sm"
-                        >
-                          <span className="font-medium">{t.name}</span>
-                          {t.notes && (
-                            <span className="ml-2 text-muted">
-                              — {t.notes}
-                            </span>
-                          )}
-                        </div>
-                      )
+                    {toArray(diagnosis.imaging).map(
+                      (t: unknown, i: number) => {
+                        const test = toTestObj(t);
+                        return (
+                          <div
+                            key={i}
+                            className="rounded border border-border/50 bg-card px-3 py-2 text-sm"
+                          >
+                            <span className="font-medium">{test.name}</span>
+                            {test.notes && (
+                              <span className="ml-2 text-muted">
+                                — {test.notes}
+                              </span>
+                            )}
+                          </div>
+                        );
+                      }
                     )}
                   </div>
                 </div>
               )}
-              {diagnosis.additional && diagnosis.additional.length > 0 && (
+              {diagnosis.additional?.length > 0 && (
                 <div>
                   <h4 className="mb-1 text-sm font-semibold">其他</h4>
                   <ul className="list-inside list-disc text-sm text-muted">
-                    {diagnosis.additional.map(
-                      (item: string, i: number) => (
-                        <li key={i}>{item}</li>
+                    {toArray(diagnosis.additional).map(
+                      (item: unknown, i: number) => (
+                        <li key={i}>{toStr(item)}</li>
                       )
                     )}
                   </ul>
@@ -362,9 +406,11 @@ export default async function DiseasePage({
                     治療原則
                   </h4>
                   <ul className="list-inside list-disc text-sm">
-                    {treatment.principles.map((p: string, i: number) => (
-                      <li key={i}>{p}</li>
-                    ))}
+                    {toArray(treatment.principles).map(
+                      (p: unknown, i: number) => (
+                        <li key={i}>{toStr(p)}</li>
+                      )
+                    )}
                   </ul>
                 </div>
               )}
@@ -372,34 +418,32 @@ export default async function DiseasePage({
                 <div className="mb-3">
                   <h4 className="mb-2 text-sm font-semibold">藥物</h4>
                   <div className="space-y-2">
-                    {treatment.medications.map(
-                      (
-                        med: {
-                          name: string;
-                          dose?: string;
-                          notes?: string;
-                        },
-                        i: number
-                      ) => (
-                        <div
-                          key={i}
-                          className="rounded border border-border/50 bg-card px-3 py-2 text-sm"
-                        >
-                          <span className="font-semibold text-primary">
-                            {med.name}
-                          </span>
-                          {med.dose && (
-                            <span className="ml-2 font-mono text-xs">
-                              {med.dose}
+                    {toArray(treatment.medications).map(
+                      (med: unknown, i: number) => {
+                        const m = toTestObj(med);
+                        return (
+                          <div
+                            key={i}
+                            className="rounded border border-border/50 bg-card px-3 py-2 text-sm"
+                          >
+                            <span className="font-semibold text-primary">
+                              {m.name}
                             </span>
-                          )}
-                          {med.notes && (
-                            <p className="mt-0.5 text-xs text-muted">
-                              {med.notes}
-                            </p>
-                          )}
-                        </div>
-                      )
+                            {(med as Record<string, unknown>)?.dose ? (
+                              <span className="ml-2 font-mono text-xs">
+                                {String(
+                                  (med as Record<string, unknown>).dose
+                                )}
+                              </span>
+                            ) : null}
+                            {m.notes && (
+                              <p className="mt-0.5 text-xs text-muted">
+                                {m.notes}
+                              </p>
+                            )}
+                          </div>
+                        );
+                      }
                     )}
                   </div>
                 </div>
@@ -412,9 +456,9 @@ export default async function DiseasePage({
                         {formatStageName(stage)}
                       </h4>
                       <ul className="list-inside list-disc text-sm text-muted">
-                        {(items as string[]).map(
-                          (item: string, i: number) => (
-                            <li key={i}>{item}</li>
+                        {toArray(items).map(
+                          (item: unknown, i: number) => (
+                            <li key={i}>{toStr(item)}</li>
                           )
                         )}
                       </ul>
@@ -425,9 +469,11 @@ export default async function DiseasePage({
                 <div>
                   <h4 className="mb-1 text-sm font-semibold">一般處理</h4>
                   <ul className="list-inside list-disc text-sm text-muted">
-                    {treatment.general.map((item: string, i: number) => (
-                      <li key={i}>{item}</li>
-                    ))}
+                    {toArray(treatment.general).map(
+                      (item: unknown, i: number) => (
+                        <li key={i}>{toStr(item)}</li>
+                      )
+                    )}
                   </ul>
                 </div>
               )}
@@ -435,28 +481,28 @@ export default async function DiseasePage({
           )}
 
           {/* Prognosis */}
-          {disease.prognosis && (
+          {prognosisText && (
             <Section title="預後 Prognosis">
-              <p className="text-sm">{disease.prognosis}</p>
+              <p className="text-sm">{prognosisText}</p>
             </Section>
           )}
 
           {/* Diagnostic Algorithm */}
           {diagnosticAlgorithm && diagnosticAlgorithm.steps?.length > 0 && (
             <Section title="診斷流程 Diagnostic Algorithm">
-              {diagnosticAlgorithm.title && (
+              {diagnosticAlgorithm.title ? (
                 <p className="mb-3 text-sm font-medium text-muted">
-                  {diagnosticAlgorithm.title}
+                  {toStr(diagnosticAlgorithm.title)}
                 </p>
-              )}
+              ) : null}
               <div className="space-y-3">
                 {diagnosticAlgorithm.steps.map(
                   (
                     step: {
-                      step: number;
+                      step: unknown;
                       action: unknown;
                       details: unknown;
-                      findings: unknown[];
+                      findings: unknown;
                     },
                     i: number
                   ) => (
@@ -465,53 +511,58 @@ export default async function DiseasePage({
                       className="relative rounded-lg border border-border bg-card p-3 pl-12"
                     >
                       <span className="absolute left-3 top-3 flex h-6 w-6 items-center justify-center rounded-full bg-primary text-xs font-bold text-white">
-                        {step.step}
+                        {typeof step.step === "number" ? step.step : i + 1}
                       </span>
-                      <h4 className="text-sm font-semibold">{toStr(step.action)}</h4>
+                      <h4 className="text-sm font-semibold">
+                        {toStr(step.action)}
+                      </h4>
                       {step.details ? (
                         <p className="mt-1 text-xs text-muted">
                           {toStr(step.details)}
                         </p>
                       ) : null}
-                      {step.findings?.length > 0 && (
+                      {toArray(step.findings).length > 0 && (
                         <div className="mt-2 flex flex-wrap gap-1.5">
-                          {step.findings.map((f: unknown, j: number) => (
-                            <span
-                              key={j}
-                              className="rounded-full bg-accent-light/40 px-2 py-0.5 text-xs text-accent"
-                            >
-                              {toStr(f)}
-                            </span>
-                          ))}
+                          {toArray(step.findings).map(
+                            (f: unknown, j: number) => (
+                              <span
+                                key={j}
+                                className="rounded-full bg-accent-light/40 px-2 py-0.5 text-xs text-accent"
+                              >
+                                {toStr(f)}
+                              </span>
+                            )
+                          )}
                         </div>
                       )}
                     </div>
                   )
                 )}
               </div>
-              {disease.ddxSource && (
+              {disease.ddxSource ? (
                 <p className="mt-2 text-xs text-muted">
                   來源：
-                  {disease.ddxSource === "book"
+                  {disease.ddxSource === "book" ||
+                  disease.ddxSource === "book-only"
                     ? "專家審閱"
-                    : disease.ddxSource === "book-only"
-                      ? "專家審閱"
-                      : "自動產生"}
+                    : "自動產生"}
                 </p>
-              )}
+              ) : null}
             </Section>
           )}
 
           {/* Clinical Pearls */}
-          {clinicalPearls && clinicalPearls.length > 0 && (
+          {clinicalPearls && toArray(clinicalPearls).length > 0 && (
             <Section title="臨床重點 Clinical Pearls">
               <div className="space-y-2">
-                {clinicalPearls.map((pearl: unknown, i: number) => (
+                {toArray(clinicalPearls).map((pearl: unknown, i: number) => (
                   <div
                     key={i}
                     className="flex items-start gap-2 rounded-lg bg-yellow-50 px-3 py-2 text-sm dark:bg-yellow-900/10"
                   >
-                    <span className="mt-0.5 shrink-0 text-yellow-500">💡</span>
+                    <span className="mt-0.5 shrink-0 text-yellow-500">
+                      💡
+                    </span>
                     <span>{toStr(pearl)}</span>
                   </div>
                 ))}
@@ -520,14 +571,11 @@ export default async function DiseasePage({
           )}
 
           {/* Monitoring Items */}
-          {monitoringItems && monitoringItems.length > 0 && (
+          {monitoringItems && toArray(monitoringItems).length > 0 && (
             <Section title="追蹤監控 Monitoring">
               <ul className="space-y-1.5">
-                {monitoringItems.map((item: unknown, i: number) => (
-                  <li
-                    key={i}
-                    className="flex items-start gap-2 text-sm"
-                  >
+                {toArray(monitoringItems).map((item: unknown, i: number) => (
+                  <li key={i} className="flex items-start gap-2 text-sm">
                     <span className="mt-0.5 shrink-0 text-primary">📋</span>
                     <span>{toStr(item)}</span>
                   </li>
@@ -584,6 +632,8 @@ export default async function DiseasePage({
     </div>
   );
 }
+
+// ─── Sub-components ──────────────────────────────────────────
 
 function Section({
   title,
