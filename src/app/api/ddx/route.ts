@@ -30,9 +30,10 @@ export async function GET(request: Request) {
 
   // Build SQL query: find diseases matching ANY of the given symptoms
   // Score = number of matched symptoms
+  // 物種篩選使用 species_affected 表（不是 symptom_diseases.species，因為後者 97% 都是 'both'）
   const placeholders = symptomIds.map(() => "?").join(",");
-  const speciesFilter = species && species !== "both"
-    ? `AND (sd.species = ? OR sd.species = 'both')`
+  const speciesJoin = species && species !== "both"
+    ? `JOIN species_affected sa ON sa.disease_id = d.id AND sa.species_common = ?`
     : "";
 
   const params: (string | number)[] = [...symptomIds];
@@ -58,8 +59,8 @@ export async function GET(request: Request) {
                  ELSE 1 END) as max_freq_score
        FROM symptom_diseases sd
        JOIN diseases d ON d.id = sd.disease_id
+       ${speciesJoin}
        WHERE sd.symptom_id IN (${placeholders})
-       ${speciesFilter}
        GROUP BY d.id
        ORDER BY match_count DESC, max_freq_score DESC, max_urgency_score DESC
        LIMIT 50`
