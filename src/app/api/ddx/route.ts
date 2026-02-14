@@ -36,8 +36,10 @@ export async function GET(request: Request) {
     ? `JOIN species_affected sa ON sa.disease_id = d.id AND sa.species_common = ?`
     : "";
 
-  const params: (string | number)[] = [...symptomIds];
+  // 參數順序必須與 SQL 中 ? 出現順序一致：先 JOIN 裡的 species，再 WHERE IN 的 symptomIds
+  const params: (string | number)[] = [];
   if (species && species !== "both") params.push(species);
+  params.push(...symptomIds);
 
   const results = sqlite
     .prepare(
