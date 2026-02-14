@@ -23,6 +23,19 @@ function parseJson(val: string | null) {
   }
 }
 
+/** Safely convert any value to a renderable string */
+function toStr(val: unknown): string {
+  if (typeof val === "string") return val;
+  if (val && typeof val === "object") {
+    const obj = val as Record<string, unknown>;
+    if (obj.name) {
+      return obj.notes ? `${obj.name} — ${obj.notes}` : String(obj.name);
+    }
+    return JSON.stringify(val);
+  }
+  return String(val ?? "");
+}
+
 function getDisease(slug: string) {
   const disease = db
     .select()
@@ -441,9 +454,9 @@ export default async function DiseasePage({
                   (
                     step: {
                       step: number;
-                      action: string;
-                      details: string;
-                      findings: string[];
+                      action: unknown;
+                      details: unknown;
+                      findings: unknown[];
                     },
                     i: number
                   ) => (
@@ -454,20 +467,20 @@ export default async function DiseasePage({
                       <span className="absolute left-3 top-3 flex h-6 w-6 items-center justify-center rounded-full bg-primary text-xs font-bold text-white">
                         {step.step}
                       </span>
-                      <h4 className="text-sm font-semibold">{step.action}</h4>
-                      {step.details && (
+                      <h4 className="text-sm font-semibold">{toStr(step.action)}</h4>
+                      {step.details ? (
                         <p className="mt-1 text-xs text-muted">
-                          {step.details}
+                          {toStr(step.details)}
                         </p>
-                      )}
+                      ) : null}
                       {step.findings?.length > 0 && (
                         <div className="mt-2 flex flex-wrap gap-1.5">
-                          {step.findings.map((f: string, j: number) => (
+                          {step.findings.map((f: unknown, j: number) => (
                             <span
                               key={j}
                               className="rounded-full bg-accent-light/40 px-2 py-0.5 text-xs text-accent"
                             >
-                              {f}
+                              {toStr(f)}
                             </span>
                           ))}
                         </div>
@@ -493,13 +506,13 @@ export default async function DiseasePage({
           {clinicalPearls && clinicalPearls.length > 0 && (
             <Section title="臨床重點 Clinical Pearls">
               <div className="space-y-2">
-                {clinicalPearls.map((pearl: string, i: number) => (
+                {clinicalPearls.map((pearl: unknown, i: number) => (
                   <div
                     key={i}
                     className="flex items-start gap-2 rounded-lg bg-yellow-50 px-3 py-2 text-sm dark:bg-yellow-900/10"
                   >
                     <span className="mt-0.5 shrink-0 text-yellow-500">💡</span>
-                    <span>{pearl}</span>
+                    <span>{toStr(pearl)}</span>
                   </div>
                 ))}
               </div>
@@ -510,13 +523,13 @@ export default async function DiseasePage({
           {monitoringItems && monitoringItems.length > 0 && (
             <Section title="追蹤監控 Monitoring">
               <ul className="space-y-1.5">
-                {monitoringItems.map((item: string, i: number) => (
+                {monitoringItems.map((item: unknown, i: number) => (
                   <li
                     key={i}
                     className="flex items-start gap-2 text-sm"
                   >
                     <span className="mt-0.5 shrink-0 text-primary">📋</span>
-                    <span>{item}</span>
+                    <span>{toStr(item)}</span>
                   </li>
                 ))}
               </ul>
