@@ -3,6 +3,19 @@
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 
+const SPECIES_FILTER_OPTIONS = [
+  { value: "both", label: "全部", icon: "🐾" },
+  { value: "dog", label: "犬", icon: "🐕" },
+  { value: "cat", label: "貓", icon: "🐈" },
+  { value: "rabbit", label: "兔", icon: "🐰" },
+  { value: "ferret", label: "雪貂", icon: "🦡" },
+  { value: "guinea pig", label: "天竺鼠", icon: "🐹" },
+  { value: "hamster", label: "倉鼠", icon: "🐀" },
+  { value: "chinchilla", label: "絨鼠", icon: "🐿️" },
+  { value: "rat", label: "大鼠", icon: "🐁" },
+  { value: "bird", label: "鳥", icon: "🐦" },
+] as const;
+
 interface Symptom {
   id: string;
   zhName: string;
@@ -78,6 +91,19 @@ export default function DdxPage() {
     );
   };
 
+  // 物種英文名 → 中文標籤 + emoji 映射
+  const speciesLabelMap = Object.fromEntries(
+    SPECIES_FILTER_OPTIONS.filter((o) => o.value !== "both").map((o) => [
+      o.value,
+      { label: o.label, icon: o.icon },
+    ])
+  );
+
+  const getSpeciesLabel = (sp: string) => {
+    const info = speciesLabelMap[sp];
+    return info ? `${info.icon} ${info.label}` : sp;
+  };
+
   const filteredSymptoms = searchTerm
     ? symptoms.filter(
         (s) =>
@@ -126,21 +152,18 @@ export default function DdxPage() {
           {/* Species filter */}
           <div className="rounded-lg border border-border bg-card p-3">
             <label className="block text-sm font-medium mb-2">物種篩選</label>
-            <div className="flex gap-2">
-              {[
-                { value: "both", label: "犬貓皆可" },
-                { value: "dog", label: "犬" },
-                { value: "cat", label: "貓" },
-              ].map((opt) => (
+            <div className="flex flex-wrap gap-1.5">
+              {SPECIES_FILTER_OPTIONS.map((opt) => (
                 <button
                   key={opt.value}
                   onClick={() => setSpecies(opt.value)}
-                  className={`rounded-full px-3 py-1 text-sm transition-colors ${
+                  className={`rounded-full px-2.5 py-1 text-sm transition-colors ${
                     species === opt.value
                       ? "bg-primary text-white"
                       : "bg-muted/20 text-muted hover:bg-muted/30"
                   }`}
                 >
+                  <span className="mr-0.5">{opt.icon}</span>
                   {opt.label}
                 </button>
               ))}
@@ -298,7 +321,7 @@ export default function DdxPage() {
                               key={sp}
                               className="rounded-full bg-muted/20 px-2 py-0.5 text-xs text-muted"
                             >
-                              {sp}
+                              {getSpeciesLabel(sp)}
                             </span>
                           ))}
                           {r.ddxSource === "book" && (
